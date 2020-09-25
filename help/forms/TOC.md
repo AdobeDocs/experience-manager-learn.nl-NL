@@ -1,0 +1,205 @@
+---
+sub-product: formulieren
+audience: developer
+user-guide-title: AEM Forms-video's en -Tutorials
+user-guide-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers.
+breadcrumb-title: AEM Forms Tutorials
+index: y
+translation-type: tm+mt
+source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 1%
+
+---
+
+
+# AEM Forms-video&#39;s en -Tutorials {#forms}
+
++ [Overzicht](overview.md)
++ [Aanbevolen procedures](adaptive-forms/best-practices-adaptive-forms.md)
++ [OKTA-verificatie instellen met AEM-auteur](adaptive-forms/single-sign-on-with-okta.md)
++ Uw eerste adaptieve formulier maken {#creating-your-first-adaptive-form}
+   + [Inleiding en installatie](creating-your-first-adaptive-form/introduction-and-setup.md)
+   + [Adaptief formuliersjabloon maken](creating-your-first-adaptive-form/create-adaptive-form-template.md)
+   + [Formulierfragment maken](creating-your-first-adaptive-form/create-form-fragment.md)
+   + [Adaptief formulier maken](creating-your-first-adaptive-form/create-adaptive-form.md)
+   + [Hoofddeelvenster configureren en onderliggende deelvensters toevoegen](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
+   + [Componenten toevoegen aan het deelvenster Personen](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
+   + [Tabel toevoegen aan paneel Inkomsten](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
+   + [Deelvenster Elementen configureren](creating-your-first-adaptive-form/configuring-assets-panel.md)
+   + [Aangepaste functies en code-editor gebruiken](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
++ Formulierverzendingen verwerken {#handling-af-form-submissions}
+   + [Een revisiewerkstroom maken](handling-form-submissions/create-workflow-to-review.md)
+   + [Aangepast formulier configureren om workflow te activeren](handling-form-submissions/trigger-workflow-on-form-submission.md)
+   + [De pagina Bedankt weergeven](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
+   + [Verzenden naar extern eindpunt](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
+   + [E-mail verzenden](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
+   + [Adaptief formulier configureren om AEM workflow te activeren - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+   + [PTO AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
+   + [Taakmelding toewijzen aanpassen](handling-form-submissions/customize-assign-task-notification.md)
+
++ Adaptieve Forms {#adaptive-forms}
+   + [AEM Forms installeren in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
+   + [Prefill-service in adaptieve Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
+   + [Aangepast verzenden in adaptieve Forms](adaptive-forms/custom-submit-aem-forms-article.md)
+   + [Captcha in Adaptive Forms](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Het gebruiken van Vastgestelde Waarde in XML in Werkschema OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
+   + [Ingestelde waarde gebruiken in JSON in OSGI-workflow](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
+   + [E-mailcomponent verzenden in AEM Forms-workflow](adaptive-forms/email-step-aem-workflow-video-use.md)
+   + [DocumentOfRecord genereren met API](adaptive-forms/document-of-record-api-tutorial-use.md)
+   + [Inline-afbeeldingen weergeven](adaptive-forms/inline-images-adaptive-forms.md)
+   + [GeoLocation-API gebruiken](adaptive-forms/using-geolocation-api-in-aem-forms-article.md)
+   + [Transactierapportering gebruiken](adaptive-forms/transaction-reporting-aem-forms-article-use.md)
+   + [Integratie van gebruikersprofielgegevens in AEM Forms](adaptive-forms/user-profile-data-integration-feature-video-use.md)
+   + [Microsoft Dynamics met AEM Forms](adaptive-forms/using-ms-dynamics-with-aem-forms.md)
+   + [Verbeteringen voor regeleditor](adaptive-forms/rule-editor-improvements-feature-video-use.md)
+   + [De toegang tot de Redacteur van de Regel beperken](adaptive-forms/restricting-rule-editor-aem-forms-technical-video-use.md)
+   + [Verbeteringen aan de Thema-editor](adaptive-forms/theme-editor-improvements-feature-video-use.md)
+   + [Verbeteringen in de formuliereditor](adaptive-forms/form-editor-improvements-feature-video-use.md)
+   + [Automatisch testen van adaptieve Forms-video](adaptive-forms/calvin-sdk-test-adaptive-forms-feature-video.md)
+   + [Automatisch testen van adaptieve Forms](adaptive-forms/calvin-sdk-test-adaptive-forms-article-use.md)
+   + [LDAP integreren met AEM Forms](adaptive-forms/aem-forms-workflow-with-ldap-article-use.md)
+   + [Service-gebruiker gebruiken in AEM Forms](adaptive-forms/service-user-tutorial-develop.md)
+   + [DoR voor labelen en opslaan op adaptieve formulierverzending](adaptive-forms/tagging-and-saving-document-of-record-in-dam-article-use.md)
+   + [Bezig met vullen van tabel met de resultaten van Inroeping van de service Form Data Model](adaptive-forms/populatetable.md)
+   + [Opmerkingen over werkstromen vastleggen](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
+   + [Ingediende formuliergegevens opslaan in DB](adaptive-forms/storing-adaptive-form-data-in-db.md)
+   + [Formuliergegevensmodelservice in AEM 6.4-workflow](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
+   + [Foutberichten verwerken in de stap Service Model van formuliergegevens](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
+   + [Formuliergegevensmodelservice in AEM 6.5.1-workflow](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+   + [Formuliergegevensmodel zonder gegevensbron](adaptive-forms/form-data-model-without-data-source-feature-video-use.md)
+   + [Model-element voor berekende formuliergegevens](adaptive-forms/computed-form-data-model-elements-aem-forms-feature-video.md)
+   + [JDBC-gegevensbron instellen in AEM Forms](adaptive-forms/data-integration-technical-video-setup.md)
+   + [Op JDBC gebaseerd formuliergegevensmodel](adaptive-forms/jdbc-data-model-technical-video-use.md)
+   + [Koppelingen maken tussen 2 entiteiten in formuliergegevensmodel](adaptive-forms/association-data-model-technical-video-use.md)
+   + [De aanroepservice van het formuliergegevensmodel gebruiken in de regeleditor](adaptive-forms/service-data-model-technical-video-use.md)
+   + [Binaire gegevens naar DAM AEM met formuliergegevensmodel](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [Opnieuw bruikbare workflowmodellen maken](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
+   + [Aangepaste processtap AEM workflow](adaptive-forms/custom-process-step-aem-workflow.md)
+   + [Gegevensbronconfiguratie wijzigen](adaptive-forms/modify-data-source-configuration-settings-article.md)
+   + [HTML5 Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
+   + [Formuliergegevensmodel met Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
+   + [Items dynamisch aan keuzeselectie-component toevoegen](adaptive-forms/choice-group-items-adding-dynamically-article.md)
++ Aangepast formulier vooraf invullen met behulp van formuliergegevensmodel{#prefill-fdm-db}
+   + [Inleiding](prefill-fdm-db/introduction.md)
+   + [Databasetabellen maken](prefill-fdm-db/create-database-tables.md)
+   + [Formuliergegevensmodel configureren](prefill-fdm-db/configuring-form-data-model.md)
+   + [Request-parameter ophalen](prefill-fdm-db/get-request-parameter.md)
+   + [adaptief formulier maken](prefill-fdm-db/create-adaptive-form.md)
++ Aanpassing van Postvak IN{#inbox-customization}
+   + [Inleiding](inbox-customization/introduction.md)
+   + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
+   + [Sweeksjabloon gebruiken](inbox-customization/use-sightly-template.md)
+
+
++ Verzendgegevens exporteren in CSV-indeling{#export-submitted-data-csv-format}
+   + [Verzonden gegevens exporteren](export-submitted-data-csv-format/export-submitted-data-csv.md)
++ HTML5 Forms{#html5-forms}
+   + [HTML5-formulier maken](html5-forms/create-html5-form.md)
+   + [HTML5-formulierverzending verwerken](html5-forms/handle-html5-form-submission.md)
++ AEM Forms en Adobe Sign{#forms-and-sign}
+   + [Inleiding](aem-forms-and-adobe-sign/introduction.md)
+   + [SSL instellen](aem-forms-and-adobe-sign/set-up-ssl.md)
+   + [Adobe Sign API-toepassing maken](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
+   + [Adobe Sign Cloud-configuratie maken](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
+   + [Workflow maken om document te verzenden voor ondertekening](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
+   + [Adaptief formulier maken en configureren](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
+   + [Adaptief formulier configureren voor één ondertekenaar](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
+   + [Adaptief formulier configureren voor twee ondertekenaars](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
+   + [Automated Forms Conversion Service configureren](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [PDF-formulier converteren naar adaptief formulier](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
+   + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
+   + [XDP-sjablonen gebruiken met Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
++ Variabelen in AEM workflow{#variables-aem-workflow}
+   + [Inleiding - Variabelen in workflow](variables-aem-workflow/introduction.md)
+   + [XML-variabelen](variables-aem-workflow/part1.md)
+   + [JSON-variabelen](variables-aem-workflow/part2.md)
+   + [Documentvariabelen](variables-aem-workflow/part3.md)
+   + [ArrayList-variabele](variables-aem-workflow/part4.md)
+   + [Regeleditor in AEM workflow](variables-aem-workflow/part5.md)
++ Formuliergegevens opslaan en ophalen in MySQL DB{#storing-and-retrieving-form-data}
+   + [Inleiding](storing-retrieving-form-data/introduction.md)
+   + [Gegevensbron configureren](storing-retrieving-form-data/part1.md)
+   + [Servlet voor het opslaan van gegevens](storing-retrieving-form-data/part2.md)
+   + [Service voor het ophalen van gegevens](storing-retrieving-form-data/part3.md)
+   + [Clientbibliotheek](storing-retrieving-form-data/part4.md)
+   + [Adaptief formuliersjabloon](storing-retrieving-form-data/part5.md)
+   + [Voorbeeldelementen implementeren](storing-retrieving-form-data/part6.md)
++ Triggerend AEM Workflow van het indienen van mobiele formulieren{#offline-mobile-form-submission}
+   + [Inleiding](offline-mobile-form-submission/introduction.md)
+   + [Aangepast profiel](offline-mobile-form-submission/part-one.md)
+   + [PDF-verzending verwerken](offline-mobile-form-submission/part-two.md)
+   + [PDF reviseren](offline-mobile-form-submission/part-three.md)
+   + [Implementeren op uw systeem](offline-mobile-form-submission/part-four.md)
++ Ingediende gegevens opvragen{#querying-submitted-data}
+   + [Inleiding](querying-submitted-data/introduction.md)
+   + [Formulier maken op basis van JSON-schema](querying-submitted-data/part1.md)
+   + [De verzonden gegevens opslaan](querying-submitted-data/part2.md)
+   + [Sla het JSON-schema op](querying-submitted-data/part3.md)
+   + [De verzonden gegevens opvragen](querying-submitted-data/part4.md)
++ Aangepaste elementtypen weergeven in Forms Portal{#listing-custom-asset-types}
+   + [Deel 1-Aangepaste elementtypen registreren](listing-custom-asset-types/part1.md)
+   + [Part2 - Aangepaste sjabloon maken](listing-custom-asset-types/part2.md)
++ AEM Forms met Marketo{#aem-forms-with-marketo}
+   + [Deel 1 - Inleiding](aem-forms-with-marketo/part1.md)
+   + [Part2 - Aangepaste verificatie](aem-forms-with-marketo/part2.md)
+   + [Deel3 - Gegevensbron](aem-forms-with-marketo/part3.md)
+   + [Deel4 - Alles bijeenbrengen](aem-forms-with-marketo/part4.md)
+
++ AEM Forms met Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
+   + [Inleiding](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
+   + [Deel 1 - Tokens genereren](aem-forms-with-adobe-campaign/partone.md)
+   + [Deel 2 - ACS-profiel maken op formulierverzending](aem-forms-with-adobe-campaign/parttwo.md)
+   + [Deel 3 - Formulier vooraf invullen met ACS-profielinformatie](aem-forms-with-adobe-campaign/partthree.md)
+   + [Part4 - Create ACS Profile using Form Data Model](aem-forms-with-adobe-campaign/partfour.md)
+
++ Document Services {#document-services}
+   + [Assembler Service gebruiken in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
+   + [Controlemap gebruiken in AEM Forms](document-services/watched-folders-document-services-article-use.md)
+   + [Streepjescodeservice gebruiken in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
+   + [PDFG-service gebruiken in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
+   + [Uitvoer- en Forms-service gebruiken in AEM Forms](document-services/output-and-forms-services-article-develop.md)
+   + [Meerdere PDF&#39;s genereren op basis van één gegevensbestand](document-services/generate-multi-record-pdf.md)
+   + [PDF genereren op mobiele formulierverzending](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Interactieve PDF genereren van mobiel formulier](document-services/render-interactive-form-using-api.md)
+   + [Gebruiksrechten toepassen op PDF bij XDP-uitvoering](document-services/rendering-and-reader-extending-xdp-templates-article.md)
+   + [Gebruiksrechten toepassen op geüploade PDF](document-services/apply-reader-extension-rights-to-pdf.md)
+   + [Documenten certificeren](document-services/certifying-documents-aem-forms-tutorial.md)
++ Interactieve communicatie voor afdrukkanaal {#ic-print-channel-tutorial}
+   + [Inleiding](ic-print-channel-tutorial/introduction.md)
+   + [Tomcat instellen](ic-print-channel-tutorial/partone.md)
+   + [Gegevensbron maken](ic-print-channel-tutorial/parttwo.md)
+   + [Formuliergegevensmodel maken](ic-print-channel-tutorial/partthree.md)
+   + [XDP-lay-out maken met Forms Designer](ic-print-channel-tutorial/partfour.md)
+   + [Documentfragment maken](ic-print-channel-tutorial/partfive.md)
+   + [Afdrukkanaaldocument maken](ic-print-channel-tutorial/partsix.md)
+   + [Inhoud toevoegen aan doelgebieden](ic-print-channel-tutorial/partseven.md)
+   + [Lijndiagram configureren](ic-print-channel-tutorial/parteight.md)
+   + [Tabel toevoegen aan afdrukkanaal](ic-print-channel-tutorial/partnine.md)
+   + [Controlemap gebruiken om documenten af te drukken](ic-print-channel-tutorial/partten.md)
+   + [Gebruikersinterface van agent openen bij verzenden formulier](ic-print-channel-tutorial/parteleven.md)
++ Interactieve communicatie {#interactive-communications}
+   + [Batch-API gebruiken](interactive-communications/batch-generation-interactive-communications.md)
+   + [Diagrammen uit meerdere reeksen](interactive-communications/multiseriescharts.md)
+   + [Kanaaldocumenten afdrukken op basis van verzonden gegevens](interactive-communications/merge-data-with-ic-template.md)
+   + [Minder functies gebruiken](interactive-communications/reducer-functions-in-charts-aem-forms-video-use.md)
+   + [Twee kolommen in kanaaldocumenten afdrukken](interactive-communications/two-column-layout-aem-forms-article-use.md)
+   + [Tabelcomponent gebruiken in AEM Forms Print Channel-document](interactive-communications/table-in-print-channel-documents-video-use.md)
+   + [Interactief communicatiedocument voor afdrukkanaal genereren met controlemappen](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+
++ Interactieve communicatie voor webkanaal {#ic-web-channel-tutorial}
+   + [Inleiding](ic-web-channel-tutorial/introduction.md)
+   + [Tomcat instellen](ic-web-channel-tutorial/partone.md)
+   + [Gegevensbron maken](ic-web-channel-tutorial/parttwo.md)
+   + [Formuliergegevensmodel maken](ic-web-channel-tutorial/partthree.md)
+   + [Webkanaaldocumentsjabloon maken](ic-web-channel-tutorial/partfour.md)
+   + [Documentfragment maken](ic-web-channel-tutorial/partfive.md)
+   + [Interactief communicatiedocument maken](ic-web-channel-tutorial/partsix.md)
+   + [Tekst en afbeeldingen toevoegen](ic-web-channel-tutorial/partseven.md)
+   + [Regeldiagram configureren](ic-web-channel-tutorial/parteight.md)
+   + [Tabel configureren](ic-web-channel-tutorial/partnine.md)
+   + [Kolomdiagram configureren](ic-web-channel-tutorial/partten.md)
+   + [Schijfdiagram configureren](ic-web-channel-tutorial/parteleven.md)
+   + [Aflevering van webkanaaldocument](ic-web-channel-tutorial/parttwelve.md)
+   + [E-maillevering van webkanaaldocument](interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
