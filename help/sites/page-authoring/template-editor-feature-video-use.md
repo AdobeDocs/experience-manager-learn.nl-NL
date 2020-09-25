@@ -1,0 +1,44 @@
+---
+title: Bewerkbare paginasjablonen gebruiken met AEM Sites
+seo-title: Bewerkbare paginasjablonen gebruiken met Adobe Experience Manager Sites
+description: Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties met AEM Sites beheren.
+seo-description: Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties met Adobe Experience Manager Sites beheren.
+feature: template-editor
+topics: authoring
+audience: all
+doc-type: feature video
+activity: use
+version: 6.3, 6.4, 6.5
+kt: 193
+translation-type: tm+mt
+source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 0%
+
+---
+
+
+# Bewerkbare paginasjablonen gebruiken{#using-template-editor-with-aem-sites}
+
+Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties beheren met Adobe Experience Manager-sites (AEM).
+
+>[!VIDEO](https://video.tv.adobe.com/v/17455/?quality=9&learn=on)
+
+Bewerkbare sjablonen zijn de aanbevelingen voor het bouwen van nieuwe AEM Sites.
+
+**Consistente ontwerpervaring** - Verbeteringen in het ontwerpen van AEM Sites worden overgedragen naar Sjabloonbewerking, waaronder de inline-lay-outmodus en het deelvenster Inhoudsstructuur.
+
+**Geavanceerde beleidsconfiguraties** - In het volgende voorbeeld worden enkele geavanceerde beleidsconfiguraties gemarkeerd die beschikbaar zijn gesteld met Bewerkbare sjablonen:
+
+* **Lay-outcontainer** : mogelijkheid om toegestane componenten te configureren, de toewijzing van middelen voor slepen en neerzetten en kolommen voor responsieve rasters te beheren.
+* **De Component** van de tekst - capaciteit om de Insteekmodules van de Redacteur van de RTF met een nieuwe UI te vormen en het beleid van RTE over malplaatjes opnieuw te gebruiken.
+* **Afbeeldingscomponent** - de mogelijkheid om functies zoals uitsnijden, het uploaden van een bureaubladbestand met een nieuwe gebruikersinterface in of uit te schakelen en het afbeeldingsbeleid te hergebruiken voor alle sjablonen.
+
+Bewerkbare sjablonen vindt u onder **Gereedschappen** `>` Algemene ****`>` sjablonen ****.\
+Bewerkbare URL voor sjablonen (lokale AEM): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+
+## Aanvullende bronnen {#additional-resources}
+
+* [Bewerkbare paginasjablonen - Documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+* [Bezig met maken van paginasjablonen - Documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/templates.html)
