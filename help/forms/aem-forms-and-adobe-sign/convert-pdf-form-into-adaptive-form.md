@@ -1,0 +1,25 @@
+---
+title: PDF-formulier converteren naar adaptief formulier
+feature: adaptive-forms
+topics: development
+audience: developer
+doc-type: article
+activity: implement
+thumbnail: 39495.jpg
+kt: 6115
+translation-type: tm+mt
+source-git-commit: f262cca1cc23c12e61595a0cc9e3f5020c25dcb5
+workflow-type: tm+mt
+source-wordcount: '78'
+ht-degree: 0%
+
+---
+
+# PDF-formulier converteren naar adaptief formulier
+
+AEM Forms Automated Forms Conversion Service, aangedreven door Adobe Sensei, zet uw PDF forms automatisch om in apparaatvriendelijke en responsieve adaptieve formulieren. Of u nu niet-interactieve PDF forms, Acro Forms of op XFA gebaseerde PDF forms gebruikt, de Automated Forms Conversion-service kan deze formulieren eenvoudig converteren naar adaptieve formulieren.
+
+In de volgende video worden de stappen uitgelegd die nodig zijn om het PDF-formulier te converteren naar een adaptief formulier met de Automated Forms Conversion Service
+
+>[!VIDEO](https://video.tv.adobe.com/v/39495/?quality=9&learn=on)
+
