@@ -1,0 +1,50 @@
+---
+title: E-mail verzenden bij verzenden van adaptief formulier
+seo-title: E-mail verzenden bij verzenden van adaptief formulier
+description: E-mail met bevestiging verzenden bij het verzenden van het adaptieve formulier met het onderdeel E-mail verzenden
+seo-description: E-mail met bevestiging verzenden bij het verzenden van het adaptieve formulier met het onderdeel E-mail verzenden
+uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
+feature: adaptive-forms
+topics: authoring, integrations
+audience: developer
+doc-type: article
+activity: use
+discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
+translation-type: tm+mt
+source-git-commit: 272e43ee4aeb756a3a1fd0ce55eaca94a9553fa4
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
+
+---
+
+
+# E-mail verzenden bij verzenden van adaptief formulier {#sending-email-on-adaptive-form-submission}
+
+Een van de gebruikelijke acties is het sturen van een bevestigingsbericht naar de indiener bij een geslaagde verzending van het adaptieve formulier. Hiervoor selecteren we de actie E-mail verzenden als verzendactie.
+
+U kunt e-mailsjabloon gebruiken of alleen de tekst van het e-mailbericht typen, zoals hieronder in deze schermafbeelding wordt weergegeven.
+
+U ziet de syntaxis voor het invoegen van waarden voor formuliervelden in de e-mail. U kunt ook formulierbijlagen in de e-mail opnemen door het selectievakje Bijlagen opnemen in de configuratie-eigenschappen in te schakelen.
+
+Wanneer het adaptieve formulier wordt verzonden, ontvangt de ontvanger een e-mail.
+
+![SendEmail](assets/sendemailaction.gif)
+
+## Benodigde configuraties {#configurations-needed}
+
+U moet de CQ-mailservice op dag configureren. Dit kan worden gevormd door uw browser aan de Manager van de Configuratie van [Felix te richten](http://localhost:4502/system/console/configMgr)
+
+In de schermafbeelding ziet u de configuratie-eigenschappen voor de Adobe-mailserver.
+
+![mailservice](assets/mailservice.png)
+
+Volg de onderstaande instructies om dit op uw server te proberen:
+
+* [Importeer de aan dit artikel gekoppelde elementen](assets/timeoffrequest.zip) in AEM met de pakketbeheer.
+
+* Open het [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+
+* Vul de gegevens in.Geef een geldig e-mailadres op in het veld E-mail.
+
+* Verzend het formulier.
