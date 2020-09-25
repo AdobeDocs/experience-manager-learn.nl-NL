@@ -1,0 +1,45 @@
+---
+title: Maak opnieuw bruikbare AEM Forms-workflowmodellen.
+seo-title: Maak opnieuw bruikbare AEM Forms-workflowmodellen.
+description: workflowmodellen onafhankelijk van Adaptive Forms.
+seo-description: Workflowmodellen onafhankelijk van Adaptive Forms.
+feature: workflow
+topics: development
+audience: developer
+doc-type: article
+activity: setup
+version: 6.5
+uuid: 3a082743-3e56-42f4-a44b-24fa34165926
+discoiquuid: 9f18c314-39d1-4c82-b1bc-d905ea472451
+translation-type: tm+mt
+source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 0%
+
+---
+
+
+# Herbruikbare AEM Forms-workflowmodellen maken{#create-re-usable-aem-forms-workflow-models}
+
+Vanaf AEM Forms 6.5 kunnen we nu workflowmodellen maken die niet zijn gekoppeld aan een specifiek adaptief formulier. Met deze functie kunt u nu één workflowmodel maken dat kan worden aangeroepen voor verschillende adaptieve formulierverzendingen. Met deze functie kunt u een algemene workflow gebruiken voor het verwerken van alle aangepaste formulierverzendingen voor revisie en goedkeuring.
+
+Voer de volgende stappen uit om een dergelijke workflow te ontwerpen
+
+1. Aanmelden bij AEM
+1. Wijs uw browser naar het [workflowmodel](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Klik op Maken | Model maken om workflowmodel toe te voegen
+1. Geef de juiste naam en titel op voor het workflowmodel en klik op Gereed
+1. Het nieuwe model openen in de bewerkingsmodus
+1. De belemmering en laat vallen wijst de component van de Taak op uw werkschemamodel toe
+1. Open de de configuratieeigenschappen van de component van de Taak toewijzen
+1. Tab naar het tabblad Forms en Documenten
+1. Selecteer het type Adaptief formulier of Alleen-lezen adaptief formulier.
+
+Er zijn drie manieren waarop het formulierpad kan worden opgegeven
+
+1. Beschikbaar op een absoluut pad - Dit betekent dat de workflow nauw gekoppeld is aan een adaptief formulier. Dat is niet wat wij hier willen
+1. **Verzenden naar de werkstroom** - Dit betekent dat wanneer het adaptieve formulier wordt verzonden, de werkstroomengine de naam van het formulier uit de verzonden gegevens haalt. Dit is de optie die moet worden geselecteerd
+1. Beschikbaar op een pad in een variabele - Dit betekent dat het adaptieve formulier wordt opgehaald uit de werkstroomvariabeleIn de volgende schermafbeelding ziet u de juiste optie die u moet kiezen voor de ontkoppelde werkstroom uit een adaptief formulier
+
+![workflowmodel](assets/workflomodel.PNG)
