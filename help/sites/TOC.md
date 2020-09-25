@@ -4,9 +4,9 @@ user-guide-description: A collection of videos and tutorials for Adobe Experienc
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: e13a5171fbeb9e1eb5f78d1c691bc8b4b896a998
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '412'
 ht-degree: 3%
 
 ---
@@ -96,6 +96,8 @@ ht-degree: 3%
       + [AEM verbinden met Starten met Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Een Cloud Service starten maken](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Fouten opsporen in een opstartimplementatie](integrations/experience-platform-launch/debug-launch-implementation.md)
+   + Gegevenslaag Adobe-client {#adobe-client-data-layer}
+      + [De gegevenslaag van de Adobe-client gebruiken](integrations/adobe-client-data-layer/data-layer-overview.md)
    + Analyse {#analytics}
       + [Paginagegevens verzamelen met Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Aangeklikte component bijhouden met Adobe Analytics](integrations/analytics/track-clicked-component.md)
