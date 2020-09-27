@@ -10,9 +10,9 @@ doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -37,18 +37,4 @@ Na voltooiing van deze zelfstudie hebt u het volgende geleerd:
 * Documentfragmenten maken
 * Tabellen en grafieken configureren
 * Gecontroleerde mappen gebruiken om documenten te genereren in de batchmodus
-
-## Zelfstudie
-
-* [Tomcat instellen](partone.md)
-* [Gegevensbron maken](parttwo.md)
-* [Formuliergegevensmodel maken](partthree.md)
-* [XDP-lay-out maken met Forms Designer](partfour.md)
-* [Documentfragment maken](partfive.md)
-* [Afdrukkanaaldocument maken](partsix.md)
-* [Inhoud toevoegen aan doelgebieden](partseven.md)
-* [Lijndiagram configureren](parteight.md)
-* [Tabel toevoegen aan afdrukkanaal](partnine.md)
-* [Controlemap gebruiken om documenten af te drukken](partten.md)
-* [Gebruikersinterface van agent openen bij verzenden formulier](parteleven.md)
 
