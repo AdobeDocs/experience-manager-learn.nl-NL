@@ -10,7 +10,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -110,7 +110,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Volg de onderstaande instructies om dit op uw lokale systeem te testen:**
 
-* Setup Tomcat zoals beschreven in dit [artikel.](/help/forms/ic-print-channel-tutorial/partone.md) Tomcat heeft het oorlogsdossier dat de steekproefgegevens produceert.
+* Setup Tomcat zoals beschreven in dit [artikel.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat heeft het oorlogsdossier dat de steekproefgegevens produceert.
 * Stel de service-alias systeemgebruiker in zoals beschreven in dit [artikel](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
 Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop heeft. Om de toestemmingen login aan [gebruikersbeheerder](https://localhost:4502/useradmin) te geven en naar de gebruiker &quot;gegevens&quot;van het systeem te zoeken en de leestoestemmingen op de volgende knoop te geven door aan het toestemmingenlusje te wijzen
    * /content/dam/formsanddocuments
