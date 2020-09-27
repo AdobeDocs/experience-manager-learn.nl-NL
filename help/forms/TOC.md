@@ -6,9 +6,9 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 9f8c858197e44de020ab195373f30e3d38dfd2cc
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '836'
 ht-degree: 1%
 
 ---
@@ -30,16 +30,17 @@ ht-degree: 1%
    + [Deelvenster Elementen configureren](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [Aangepaste functies en code-editor gebruiken](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + Formulierverzendingen verwerken {#handling-af-form-submissions}
-   + [Een revisiewerkstroom maken](handling-form-submissions/create-workflow-to-review.md)
-   + [Aangepast formulier configureren om workflow te activeren](handling-form-submissions/trigger-workflow-on-form-submission.md)
+   + [Een revisiewerkstroom maken](handling-form-submissions/creating-a-review-workflow.md)
+   + [Aangepast formulier configureren om workflow te activeren](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [De pagina Bedankt weergeven](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
    + [Verzenden naar extern eindpunt](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [E-mail verzenden](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
+   + [Workflow voor betaalde tijd uit aanvraag](handling-form-submissions/paid-time-off-request-workflow.md)
    + [Adaptief formulier configureren om AEM workflow te activeren - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
-   + [PTO AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
    + [Taakmelding toewijzen aanpassen](handling-form-submissions/customize-assign-task-notification.md)
 + Nuttige integratie{#some-useful-integrations}
    + [Verificatie met twee factoren](some-useful-integrations/two-factor-authentication.md)
+
 + Adaptieve Forms {#adaptive-forms}
    + [AEM Forms installeren in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Prefill-service in adaptieve Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
@@ -169,17 +170,17 @@ ht-degree: 1%
    + [Documenten certificeren](document-services/certifying-documents-aem-forms-tutorial.md)
 + Interactieve communicatie voor afdrukkanaal {#ic-print-channel-tutorial}
    + [Inleiding](ic-print-channel-tutorial/introduction.md)
-   + [Tomcat instellen](ic-print-channel-tutorial/partone.md)
-   + [Gegevensbron maken](ic-print-channel-tutorial/parttwo.md)
-   + [Formuliergegevensmodel maken](ic-print-channel-tutorial/partthree.md)
-   + [XDP-lay-out maken met Forms Designer](ic-print-channel-tutorial/partfour.md)
-   + [Documentfragment maken](ic-print-channel-tutorial/partfive.md)
-   + [Afdrukkanaaldocument maken](ic-print-channel-tutorial/partsix.md)
-   + [Inhoud toevoegen aan doelgebieden](ic-print-channel-tutorial/partseven.md)
-   + [Lijndiagram configureren](ic-print-channel-tutorial/parteight.md)
-   + [Tabel toevoegen aan afdrukkanaal](ic-print-channel-tutorial/partnine.md)
-   + [Controlemap gebruiken om documenten af te drukken](ic-print-channel-tutorial/partten.md)
-   + [Gebruikersinterface van agent openen bij verzenden formulier](ic-print-channel-tutorial/parteleven.md)
+   + [Tomcat instellen](ic-print-channel-tutorial/set-up-tomcat.md)
+   + [Gegevensbron maken](ic-print-channel-tutorial/create-data-source.md)
+   + [Formuliergegevensmodel maken](ic-print-channel-tutorial/create-form-data-model.md)
+   + [XDP-lay-out maken met Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
+   + [Documentfragment maken](ic-print-channel-tutorial/create-document-fragment.md)
+   + [Afdrukkanaaldocument maken](ic-print-channel-tutorial/create-print-channel-document.md)
+   + [Inhoud toevoegen aan doelgebieden](ic-print-channel-tutorial/add-content-to-target-areas.md)
+   + [Lijndiagram configureren](ic-print-channel-tutorial/configuring-line-chart.md)
+   + [Tabel toevoegen aan afdrukkanaal](ic-print-channel-tutorial/adding-table-to-print-channel.md)
+   + [Controlemap gebruiken om documenten te genereren](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
+   + [Gebruikersinterface van agent openen bij verzenden formulier](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + Interactieve communicatie {#interactive-communications}
    + [Batch-API gebruiken](interactive-communications/batch-generation-interactive-communications.md)
    + [Diagrammen uit meerdere reeksen](interactive-communications/multiseriescharts.md)
