@@ -10,9 +10,9 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,17 @@ ht-degree: 0%
 # Variabelen van het type JSON in AEM Workflow
 
 Vanaf AEM Forms 6.5 kunnen we nu variabelen van het type JSON in AEM Workflow maken. Gewoonlijk zult u variabelen van type JSON tot stand brengen als u Adaptief Forms op basis van het schema JSON aan een AEMWerkstroom indient of u de resultaten van een de Invoke verrichting van het Model van de Gegevens van het Vorm wilt opslaan. In de volgende video worden de stappen doorlopen die nodig zijn om een variabele van het type JSON te maken en te gebruiken in AEM workflow
->[!NOTE]
 
 **Als u AEM Forms 6.5.0 gebruikt**
 
 Wanneer u een variabele van het type JSON creeert om de voorgelegde gegevens in uw werkschemamodel te vangen, te associëren gelieve niet het schema JSON met de variabele. Dit komt doordat de verzonden gegevens niet compatibel zijn met het JSON-schema wanneer u een adaptief JSON-schema verzendt. De JSON-schemagegevens zijn ingesloten in het element afData.afBoundData.data.
 
+>[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
+
+
 **Als u AEM Forms 6.5.1 en hoger gebruikt**
 
 U kunt het schema met de variabele van type JSON in uw werkschemamodel in kaart brengen. U kunt de schemabrowser dan gebruiken om de schemaelementen met uw koord/aantalvariabelen in uw werkschemamodel in kaart te brengen
-
->[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
-
-**De capaciteit om schemaelementen neer te boren en het schemaelement aan werkschemavariabele in kaart te brengen is slechts beschikbaar met AEM Forms 6.5.1 vanaf.**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
 
