@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -133,7 +133,7 @@ Aangezien wij het voorwerp van het Document gebruiken dat voor AEM Forms specifi
 
 #### Samenstellen en implementeren
 
-[Bouw de bundel zoals hier](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[wordt beschreven Zorg ervoor de bundel en in actieve staat wordt opgesteld](http://localhost:450/system/console/bundles)
+[Bouw de bundel zoals hier](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[wordt beschreven Zorg ervoor de bundel en in actieve staat wordt opgesteld](http://localhost:4502/system/console/bundles)
 
 Maak een workflowmodel. De stap van het proces van de belemmering en van het dalingsproces in het werkschemamodel. Koppel de processtap aan &quot;Aangepaste formulierbijlagen opslaan naar bestandssysteem&quot;.
 
