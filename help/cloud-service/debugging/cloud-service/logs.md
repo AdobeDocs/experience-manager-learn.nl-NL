@@ -10,9 +10,9 @@ audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
 translation-type: tm+mt
-source-git-commit: 1eb15af3d9d2904856218aaad4d5c52233603a71
+source-git-commit: 7fd232d6821f91c342dd04fcdd04b9b505cb7250
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '990'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,12 @@ Pod Ids wordt verstrekt in elke logboekverklaring, en het toestaan van het filtr
 
 + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
 + Voorbeeld: `cm-p12345-e56789-aem-author-abcdefabde-98765`
+
+## Aangepaste logbestanden
+
+AEM als Cloud Services steunt geen dossiers van het douanelogboek, nochtans steunt het douane registreren.
+
+Java-logboeken zijn alleen beschikbaar in AEM als Cloud Service (via [Cloud Manager](#cloud-manager) of [Adobe I/O CLI](#aio)) als aangepaste loginstructies zijn geschreven in de `error.log`. Logboeken die naar aangepaste benoemde logboeken worden geschreven, zoals `example.log`, zijn niet toegankelijk vanaf AEM als Cloud Service.
 
 ## Logboeken van AEM-auteur- en publicatieservice
 
@@ -54,7 +60,7 @@ Alleen AEM Publish Dispatcher biedt logboeken van Apache-webservers en Dispatche
    + Werkgebied: `WARN`
    + Productie: `ERROR`
 
-## Cloud Manager
+## Cloud Manager{#cloud-manager}
 
 Met Adobe Cloud Manager kunt u logbestanden overdag downloaden via de handeling Logbestanden downloaden van een omgeving.
 
@@ -62,7 +68,7 @@ Met Adobe Cloud Manager kunt u logbestanden overdag downloaden via de handeling 
 
 Deze logbestanden kunnen worden gedownload en geïnspecteerd met behulp van alle programma&#39;s voor loganalyse.
 
-## Adobe I/O CLI met insteekmodule Cloud Manager
+## Adobe I/O CLI met insteekmodule Cloud Manager{#aio}
 
 Adobe Cloud Manager biedt ondersteuning voor het openen van AEM als een Cloud Service-logbestand via de [Adobe I/O-CLI](https://github.com/adobe/aio-cli) met de insteekmodule [Cloud Manager voor de Adobe I/O-CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
