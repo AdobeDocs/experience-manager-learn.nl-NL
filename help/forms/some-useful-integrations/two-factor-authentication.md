@@ -9,7 +9,7 @@ activity: use
 version: 6.4,6.5
 kt: 6317
 translation-type: tm+mt
-source-git-commit: 9f8c858197e44de020ab195373f30e3d38dfd2cc
+source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -67,7 +67,9 @@ Voer de volgende stappen uit als u de voorbeeldbestanden met uw API-toetsen wilt
 * Download het voorbeeldadaptieve formulier dat u hier kunt [downloaden](assets/sms-2fa-verification-af.zip). In dit voorbeeldformulier worden de serviceaanroepen van het formuliergegevensmodel gebruikt die als onderdeel van dit artikel worden aangeboden.
 * Het formulier importeren in AEM vanuit de gebruikersinterface van [Forms en Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Open het formulier in de bewerkingsmodus. De regeleditor voor het volgende veld openen
-   ![sms-send](assets/check-sms.PNG)
+
+![sms-send](assets/check-sms.PNG)
+
 * Bewerk de regel die aan het veld is gekoppeld. Geef uw juiste API-sleutels op
 * Het formulier opslaan
 * [Een voorbeeld van het formulier](http://localhost:4502/content/dam/formsanddocuments/sms-2fa-verification/jcr:content?wcmmode=disabled) bekijken en de functionaliteit testen
