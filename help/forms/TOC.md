@@ -6,9 +6,9 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '840'
 ht-degree: 1%
 
 ---
@@ -119,6 +119,7 @@ ht-degree: 1%
    + [JSON-variabelen](variables-aem-workflow/part2.md)
    + [Documentvariabelen](variables-aem-workflow/part3.md)
    + [ArrayList-variabele](variables-aem-workflow/part4.md)
+   + [Formuliergegevensmodelvariabele](variables-aem-workflow/form-data-model.md)
    + [Regeleditor in AEM workflow](variables-aem-workflow/part5.md)
 + Formuliergegevens opslaan en ophalen in MySQL DB{#storing-and-retrieving-form-data}
    + [Inleiding](storing-retrieving-form-data/introduction.md)
