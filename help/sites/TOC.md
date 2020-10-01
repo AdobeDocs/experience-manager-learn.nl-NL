@@ -4,9 +4,9 @@ user-guide-description: A collection of videos and tutorials for Adobe Experienc
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: e13a5171fbeb9e1eb5f78d1c691bc8b4b896a998
+source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '457'
 ht-degree: 3%
 
 ---
@@ -101,3 +101,12 @@ ht-degree: 3%
    + Analyse {#analytics}
       + [Paginagegevens verzamelen met Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Aangeklikte component bijhouden met Adobe Analytics](integrations/analytics/track-clicked-component.md)
+   + Adobe Target {#target}
+      + [Overzicht](integrations/adobe-target/overview.md)
+      + [Doelextensie toevoegen aan Starteigenschap](integrations/adobe-target/add-target-launch-extension.md)
+      + [Een doelaanroep laden en in werking stellen](integrations/adobe-target/load-and-fire-target.md)
+      + [Adobe Target Cloud Service-account maken](integrations/adobe-target/setup-aem-target-cloud-service.md)
+      + [Exportervaringsfragment naar Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Doelactiviteit maken met behulp van Experience Fragment-aanbiedingen](integrations/adobe-target/create-target-activity.md)
+      + [Personalisatie met behulp van Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
+      + [Aanpassing van de volledige webpaginabeleving](integrations/adobe-target/personalization-web-page.md)
