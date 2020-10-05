@@ -4,7 +4,7 @@ seo-title: Personalisatie met Adobe Experience Manager (AEM) Experience Fragment
 description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager Experience Fragments en Adobe Target.
 seo-description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager Experience Fragments en Adobe Target.
 translation-type: tm+mt
-source-git-commit: 1209064fd81238d4611369b8e5b517365fc302e3
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 0%
@@ -52,9 +52,9 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
       * **Tekst**: &quot;Aanmelden voor de Audition&quot;
       * **Knop**: &quot;Gebeurtenisdetails&quot; die naar de WKND SkateFest-pagina verwijzen
       * **WKND SkateFest Page**: een nieuwe pagina met gebeurtenisdetails, met inbegrip van de auditieplaats, datum, en tijd.
-2. Op basis van de vereisten maakt AEM Content Editor een Experience Fragment voor het inhoudsblok en exporteert het als een voorstel naar Adobe Target. Om gepersonaliseerde inhoud voor alle staten in de Verenigde Staten te dienen, kan de inhoudontwerper één master variatie van het Fragment van de Ervaring tot stand brengen en dan 50 andere variaties, één voor elke staat creëren. Inhoud voor elke statusvariatie met relevante afbeeldingen en tekst kan vervolgens handmatig worden bewerkt. Bij het ontwerpen van een Experience Fragment hebben inhoudseditors via de optie Asset Finder snel toegang tot alle elementen die in AEM Assets beschikbaar zijn. Wanneer een Experience Fragment naar Adobe Target wordt geëxporteerd, worden alle variaties ook als aanbiedingen naar Adobe Target overgebracht.
+1. Op basis van de vereisten maakt AEM Content Editor een Experience Fragment voor het inhoudsblok en exporteert het als een voorstel naar Adobe Target. Om gepersonaliseerde inhoud voor alle staten in de Verenigde Staten te dienen, kan de inhoudontwerper één master variatie van het Fragment van de Ervaring tot stand brengen en dan 50 andere variaties, één voor elke staat creëren. Inhoud voor elke statusvariatie met relevante afbeeldingen en tekst kan vervolgens handmatig worden bewerkt. Bij het ontwerpen van een Experience Fragment hebben inhoudseditors via de optie Asset Finder snel toegang tot alle elementen die in AEM Assets beschikbaar zijn. Wanneer een Experience Fragment naar Adobe Target wordt geëxporteerd, worden alle variaties ook als aanbiedingen naar Adobe Target overgebracht.
 
-3. Nadat het Fragment van de Ervaring van AEM naar Adobe Target als Voorstellen, kunnen de marketers tot Activiteiten in Doel leiden gebruikend deze Voorstellen. Op basis van de WKND-campagne SkateFest-site moet de marketeter een persoonlijke ervaring maken en leveren aan bezoekers van de WKND-site vanuit elke staat. Om een Ervaring tot stand te brengen richtend activiteit, moet de marktmeter het publiek identificeren. Voor onze WKND SkateFest-campagne moeten we 50 verschillende soorten publiek maken, gebaseerd op hun locatie waar ze de WKND-website bezoeken.
+1. Nadat het Fragment van de Ervaring van AEM naar Adobe Target als Voorstellen, kunnen de marketers tot Activiteiten in Doel leiden gebruikend deze Voorstellen. Op basis van de WKND-campagne SkateFest-site moet de marketeter een persoonlijke ervaring maken en leveren aan bezoekers van de WKND-site vanuit elke staat. Om een Ervaring tot stand te brengen richtend activiteit, moet de marktmeter het publiek identificeren. Voor onze WKND SkateFest-campagne moeten we 50 verschillende soorten publiek maken, gebaseerd op hun locatie waar ze de WKND-website bezoeken.
    * [Het publiek](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) bepaalt het doel voor uw activiteit en wordt gebruikt overal waar het richten beschikbaar is. Doelpubliek is een gedefinieerde set bezoekerscriteria. Aanbiedingen kunnen worden gericht op specifieke doelgroepen (of segmenten). Alleen bezoekers die bij dat publiek horen, zien de ervaring die voor hen is bedoeld.  U kunt bijvoorbeeld een aanbieding doen aan een publiek dat is samengesteld uit bezoekers die een bepaalde browser gebruiken of van een specifieke geo-locatie.
    * Een [voorstel](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) is de inhoud die tijdens campagnes of activiteiten op uw webpagina&#39;s wordt weergegeven. Wanneer u uw webpagina&#39;s test, meet u het succes van elke ervaring met verschillende aanbiedingen op uw locaties. Een voorstel kan verschillende typen inhoud bevatten, zoals:
       * Afbeelding
@@ -77,27 +77,27 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 ### Een publiek maken met geo-gerichte {#marketer-audience}
 
 1. Ga naar uw organisaties, [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.ExperienceCloud.adobe.com)
-2. Meld u aan met uw Adobe ID en zorg ervoor dat u zich in de juiste organisatie bevindt.
-3. Klik vanuit de oplossingsschakelaar op **Doel** en **start** Adobe Target.
+1. Meld u aan met uw Adobe ID en zorg ervoor dat u zich in de juiste organisatie bevindt.
+1. Klik vanuit de oplossingsschakelaar op **Doel** en **start** Adobe Target.
 
    ![Experience Cloud- Adobe Target](assets/personalization-use-case-1/exp-cloud-adobe-target.png)
 
-4. Navigeer naar het tabblad **Aanbiedingen** en zoek naar WKND-aanbiedingen. U moet de lijst met Experience Fragments-variaties kunnen bekijken, geëxporteerd van AEM als HTML-aanbiedingen. Elke aanbieding komt overeen met een status. Bijvoorbeeld, *WKND SkateFest Californië* is de aanbieding die aan een bezoeker van de Plaats van WKND uit Californië wordt gediend.
+1. Navigeer naar het tabblad **Aanbiedingen** en zoek naar WKND-aanbiedingen. U moet de lijst met Experience Fragments-variaties kunnen bekijken, geëxporteerd van AEM als HTML-aanbiedingen. Elke aanbieding komt overeen met een status. Bijvoorbeeld, *WKND SkateFest Californië* is de aanbieding die aan een bezoeker van de Plaats van WKND uit Californië wordt gediend.
 
    ![Experience Cloud- Adobe Target](assets/personalization-use-case-1/html-offers.png)
 
-5. Klik in de hoofdnavigatie op **Soorten publiek**.
+1. Klik in de hoofdnavigatie op **Soorten publiek**.
 
    Een Marketer moet 50 verschillende soorten publiek creëren voor bezoekers van de WKND-site die uit elk land in de Verenigde Staten van Amerika komen.
 
-6. Als u een publiek wilt maken, klikt u op de knop Publiek **** maken en geeft u een naam op voor uw publiek.
+1. Als u een publiek wilt maken, klikt u op de knop Publiek **** maken en geeft u een naam op voor uw publiek.
 
    **Indeling Audience Name: WKND-\&lt;*state*\>**
 
    ![Experience Cloud- Adobe Target](assets/personalization-use-case-1/audience-target-1.png)
 
-7. Klik op Regel **toevoegen > Geo**.
-8. Klik op **Selecteren** en selecteer een van de volgende opties:
+1. Klik op Regel **toevoegen > Geo**.
+1. Klik op **Selecteren** en selecteer een van de volgende opties:
    * Land
    * **Staat** *(Uitgezochte Staat voor de Campagne van de SkateFest van de Plaats WKND)*
    * Plaats
@@ -112,14 +112,14 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
    >[!NOTE]
    >IP van een bezoeker adres wordt overgegaan met een brievenbusverzoek, eens per bezoek (zitting), om geo richtende parameters voor die bezoeker op te lossen.
 
-9. Selecteer de operator als **overeenkomend** en geef een geschikte waarde op (bijvoorbeeld (Californië) en **Sla** uw wijzigingen op. Geef in ons geval de naam van het frame op.
+1. Selecteer de operator als **overeenkomend** en geef een geschikte waarde op (bijvoorbeeld (Californië) en **Sla** uw wijzigingen op. Geef in ons geval de naam van het frame op.
 
    ![Adobe Target- Geo-regel](assets/personalization-use-case-1/audience-geo-rule.png)
 
    >[!NOTE]
    >U kunt veelvoudige regels hebben die aan een publiek worden toegewezen.
 
-10. Herhaal stap 6-9 om een publiek voor de andere staten te maken.
+1. Herhaal stap 6-9 om een publiek voor de andere staten te maken.
 
    ![Adobe Target- WKND-publiek](assets/personalization-use-case-1/adobe-target-audiences-50.png)
 
@@ -128,44 +128,60 @@ Op dit moment hebben we met succes een publiek gemaakt voor alle bezoekers van d
 ### Een activiteit maken met Geo-gerichte
 
 1. Navigeer vanuit uw Adobe Target-venster naar het tabblad **Activiteiten** .
-2. Klik op Activiteit **** maken en selecteer het type activiteit **bij** beleving.
-3. Selecteer het **kanaal van het Web** en kies de **Visuele Composer** van de Ervaring.
-4. Ga URL **van de** Activiteit in en klik **daarna** om Visual Experience Composer te openen.
+1. Klik op Activiteit **** maken en selecteer het type activiteit **bij** beleving.
+1. Selecteer het **kanaal van het Web** en kies de **Visuele Composer** van de Ervaring.
+1. Ga URL **van de** Activiteit in en klik **daarna** om Visual Experience Composer te openen.
 
    Introductiepagina van WKND-site: http://localhost:4503/content/wknd/en.html
+
    ![Gericht op ervaring](assets/personalization-use-case-1/target-activity.png)
-5. Om Composer **van** Visuele Ervaring te laden, laat **Toestaan de Onveilige manuscripten** van de Lading op uw browser toe en laadt uw pagina opnieuw.
+
+1. Om Composer **van** Visuele Ervaring te laden, laat **Toestaan de Onveilige manuscripten** van de Lading op uw browser toe en laadt uw pagina opnieuw.
+
    ![Gericht op ervaring](assets/personalization-use-case-1/load-unsafe-scripts.png)
-6. Merk op de WKND homepage van de Plaats open in de redacteur van Composer van de Visuele Ervaring.
+
+1. Merk op de WKND homepage van de Plaats open in de redacteur van Composer van de Visuele Ervaring.
+
    ![VEC](assets/personalization-use-case-1/vec.png)
-7. Als u een publiek aan uw VEC wilt toevoegen, klikt u op Ervaring **toevoegen die gericht** is onder Soorten publiek, selecteert u het WKND-Californië-publiek en klikt u op **Volgende**.
+
+1. Als u een publiek aan uw VEC wilt toevoegen, klikt u op Ervaring **toevoegen die gericht** is onder Soorten publiek, selecteert u het WKND-Californië-publiek en klikt u op **Volgende**.
+
    ![VEC](assets/personalization-use-case-1/vec-select-audience.png)
-8. Klik op de WKND-sitepagina in VEC, selecteer het HTML-element om de aanbieding voor WKND-Californië-publiek toe te voegen, kies **Vervangen door** optie en selecteer vervolgens de **HTML-aanbieding**.
+
+1. Klik op de WKND-sitepagina in VEC, selecteer het HTML-element om de aanbieding voor WKND-Californië-publiek toe te voegen, kies **Vervangen door** optie en selecteer vervolgens de **HTML-aanbieding**.
+
    ![Gericht op ervaring](assets/personalization-use-case-1/vec-selecting-div.png)
-9. Selecteer de **WKND SkateFest California** HTML-aanbieding voor het **WKND-Californische** publiek in de aanbieding, selecteer UI en klik op **Gereed**.
-10. Nu moet u de **WKND SkateFest California** HTML-aanbieding kunnen zien die aan uw WKND-sitepagina is toegevoegd voor het WKND-Californische publiek.
-11. Herhaal stap 7-10 om de Ervaring die voor de andere staten richt toe te voegen en de overeenkomstige aanbieding van HTML te kiezen.
-12. Klik op **Volgende** om door te gaan en u ziet een toewijzing voor Soorten publiek aan Ervaringen.
-13. Klik op **Volgende** om naar Doelstellingen en instellingen te gaan.
-14. Kies uw rapporteringsbron en identificeer een primair doel voor uw activiteit. Voor ons Scenario, selecteren de Rapporterende Bron als **Adobe Target**, die activiteit als **Omzetting**, actie zoals bekeken een pagina, en URL die aan de pagina van Details WKND SkateFest richten meten.
+
+1. Selecteer de **WKND SkateFest California** HTML-aanbieding voor het **WKND-Californische** publiek in de aanbieding, selecteer UI en klik op **Gereed**.
+1. Nu moet u de **WKND SkateFest California** HTML-aanbieding kunnen zien die aan uw WKND-sitepagina is toegevoegd voor het WKND-Californische publiek.
+1. Herhaal stap 7-10 om de Ervaring die voor de andere staten richt toe te voegen en de overeenkomstige aanbieding van HTML te kiezen.
+1. Klik op **Volgende** om door te gaan en u ziet een toewijzing voor Soorten publiek aan Ervaringen.
+1. Klik op **Volgende** om naar Doelstellingen en instellingen te gaan.
+1. Kies uw rapporteringsbron en identificeer een primair doel voor uw activiteit. Voor ons Scenario, selecteren de Rapporterende Bron als **Adobe Target**, die activiteit als **Omzetting**, actie zoals bekeken een pagina, en URL die aan de pagina van Details WKND SkateFest richten meten.
+
    ![Doel en doel - Doel](assets/personalization-use-case-1/goal-metric-target.png)
 
    >[!NOTE]
    >U kunt ook Adobe Analytics kiezen als rapportagebron.
 
-15. Houd de muisaanwijzer boven de huidige naam van de activiteit en u kunt de naam ervan wijzigen in **WKND SkateFest - VS**. Vervolgens **slaat en sluit** u de wijzigingen op.
-16. Zorg ervoor dat u uw activiteit **activeert** via het scherm Activiteitsgegevens.
+1. Houd de muisaanwijzer boven de huidige naam van de activiteit en u kunt de naam ervan wijzigen in **WKND SkateFest - VS**. Vervolgens **slaat en sluit** u de wijzigingen op.
+1. Zorg ervoor dat u uw activiteit **activeert** via het scherm Activiteitsgegevens.
+
    ![Activiteit activeren](assets/personalization-use-case-1/activate-activity.png)
-17. Uw WKND SkateFest-campagne is nu live voor alle bezoekers van de WKND-site.
-18. Navigeer naar de startpagina [van de](http://localhost:4503/content/wknd/en.html)WKND-site en u zou de WKND SkateFest-aanbieding moeten kunnen zien die is gebaseerd op uw geo-locatie (*status: Californië*).
+
+1. Uw WKND SkateFest-campagne is nu live voor alle bezoekers van de WKND-site.
+1. Navigeer naar de startpagina [van de](http://localhost:4503/content/wknd/en.html)WKND-site en u zou de WKND SkateFest-aanbieding moeten kunnen zien die is gebaseerd op uw geo-locatie (*status: Californië*).
+
    ![Activiteit QA](assets/personalization-use-case-1/wknd-california.png)
 
 ### Doelactiviteit QA
 
 1. Onder de Details van de **Activiteit > het lusje van het Overzicht** , klik op de knoop van QA **van de** Activiteit, en u kunt de directe verbinding QA aan al uw ervaringen krijgen.
+
    ![Activiteit QA](assets/personalization-use-case-1/activity-qa.png)
-2. Navigeer naar de startpagina [van de](http://localhost:4503/content/wknd/en.html)WKND-site en u zou de WKND SkateFest-aanbieding moeten kunnen zien op basis van uw geo-locatie (status).
-3. Bekijk de onderstaande video om te begrijpen hoe een aanbieding op uw pagina wordt geleverd, hoe u de reactietkens kunt aanpassen en hoe u een kwaliteitscontrole kunt uitvoeren.
+
+1. Navigeer naar de startpagina [van de](http://localhost:4503/content/wknd/en.html)WKND-site en u zou de WKND SkateFest-aanbieding moeten kunnen zien op basis van uw geo-locatie (status).
+1. Bekijk de onderstaande video om te begrijpen hoe een aanbieding op uw pagina wordt geleverd, hoe u de reactietkens kunt aanpassen en hoe u een kwaliteitscontrole kunt uitvoeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28658?quality=12&learn=on)
 
