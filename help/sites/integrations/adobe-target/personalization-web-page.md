@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,40 +29,40 @@ De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun h
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
 1. Aanmelden bij Adobe Target en navigeren naar het tabblad Activiteiten
-2. Klik op de knop Activiteit **** maken en kies vervolgens **A/B-testactiviteit**
+1. Klik op de knop Activiteit **** maken en kies vervolgens **A/B-testactiviteit**
 
    ![A/B-activiteit](assets/ab-target-activity.png)
 
-3. Selecteer de optie **Visual Experience Composer** , geef de Activiteit-URL op en klik op **Volgende**
+1. Selecteer de optie **Visual Experience Composer** , geef de Activiteit-URL op en klik op **Volgende**
 
    ![URL van activiteit](assets/ab-test-url.png)
 
-4. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaar A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door de **Add knoop van de Ervaring** te gebruiken.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaar A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door de **Add knoop van de Ervaring** te gebruiken.
 
    ![Ervingopties](assets/experience-options.png)
 
-5. De opties van de mening beschikbaar voor Ervaring A, selecteren dan **Redirect aan optie URL** en verstrekken een URL voor de nieuwe homepage van de Plaats WKND.
+1. De opties van de mening beschikbaar voor Ervaring A, selecteren dan **Redirect aan optie URL** en verstrekken een URL voor de nieuwe homepage van de Plaats WKND.
 
    ![URL omleiden](assets/redirect-url.png)
 
-6. Naam *Ervaring A* wijzigen in *Nieuwe WKND-startpagina* en *Ervaring B* naar *WKND-startpagina*
+1. Naam *Ervaring A* wijzigen in *Nieuwe WKND-startpagina* en *Ervaring B* naar *WKND-startpagina*
 
    ![avonturen](assets/new-experiences.png)
 
-7. Klik op **Volgende** om over te schakelen naar gericht en een handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te behouden.
+1. Klik op **Volgende** om over te schakelen naar gericht en een handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te behouden.
 
    ![Doelstelling](assets/targeting.png)
 
-8. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
+1. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
 
    ![Doelen](assets/goals.png)
 
-9. Geef een naam op voor uw activiteiten en sla deze op.
-10. Activeer je opgeslagen activiteit om je wijzigingen live te zetten.
+1. Geef een naam op voor uw activiteiten en sla deze op.
+1. Activeer je opgeslagen activiteit om je wijzigingen live te zetten.
 
    ![Doelen](assets/activate.png)
 
-11. Open uw sitepagina (Activiteit URL van stap 3) op een nieuw tabblad en u moet een van de ervaringen (WKND-startpagina of Nieuwe WKND-startpagina) kunnen bekijken vanaf onze testactiviteit A/B. `us/en.html` omleidingen naar `us/home.html`.
+1. Open uw sitepagina (Activiteit URL van stap 3) op een nieuw tabblad en u moet een van de ervaringen (WKND-startpagina of Nieuwe WKND-startpagina) kunnen bekijken vanaf onze testactiviteit A/B. `us/en.html` omleidingen naar `us/home.html`.
 
    ![Doelen](assets/redirect-test.png)
 
