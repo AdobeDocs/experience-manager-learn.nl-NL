@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,45 +30,45 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste manier om
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
 1. Aanmelden bij Adobe Target en navigeren naar het tabblad Activiteiten
-2. Klik op de knop Activiteit **** maken en kies vervolgens **A/B-testactiviteit**
+1. Klik op de knop Activiteit **** maken en kies vervolgens **A/B-testactiviteit**
 
    ![A/B-activiteit](assets/ab-target-activity.png)
 
-3. Selecteer de optie **Visual Experience Composer** , geef de Activiteit-URL op en klik op **Volgende**
+1. Selecteer de optie **Visual Experience Composer** , geef de Activiteit-URL op en klik op **Volgende**
 
    ![URL van activiteit](assets/ab-test-url.png)
 
-4. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaar A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door de **Add knoop van de Ervaring** te gebruiken.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaar A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door de **Add knoop van de Ervaring** te gebruiken.
 
    ![Ervaring A](assets/experience.png)
 
-5. Selecteer een afbeelding of tekst op de pagina die u wilt wijzigen of gebruik de code-editor om het element te selecteren en te HTML.
+1. Selecteer een afbeelding of tekst op de pagina die u wilt wijzigen of gebruik de code-editor om het element te selecteren en te HTML.
 
    ![Element](assets/select-element.png)
 
-6. Wijzig de tekst van *Camping in Western Australia* in *Adventures of Australia*. Een lijst van veranderingen die aan een Ervaring worden toegevoegd zal onder Wijzigingen worden getoond. U kunt op het gewijzigde item klikken en dit bewerken om de CSS-kiezer weer te geven en de nieuwe inhoud die eraan is toegevoegd.
+1. Wijzig de tekst van *Camping in Western Australia* in *Adventures of Australia*. Een lijst van veranderingen die aan een Ervaring worden toegevoegd zal onder Wijzigingen worden getoond. U kunt op het gewijzigde item klikken en dit bewerken om de CSS-kiezer weer te geven en de nieuwe inhoud die eraan is toegevoegd.
 
    ![avonturen](assets/adventures.png)
 
-7. Naam *Ervaring A* wijzigen in *avontuur*
-8. Werk ook de tekst over *Experience B* van *Camping in West-Australië* bij om de Australische wilde natuur *te* ontdekken.
+1. Naam *Ervaring A* wijzigen in *avontuur*
+1. Werk ook de tekst over *Experience B* van *Camping in West-Australië* bij om de Australische wilde natuur *te* ontdekken.
 
    ![Verkennen](assets/explore.png)
 
-9. Klik op **Volgende** om naar Targeting te gaan en zorg ervoor dat het verkeer tussen de twee ervaringen handmatig wordt toegewezen aan een snelheid van 50-50.
+1. Klik op **Volgende** om naar Targeting te gaan en zorg ervoor dat het verkeer tussen de twee ervaringen handmatig wordt toegewezen aan een snelheid van 50-50.
 
    ![Doelstelling](assets/targeting.png)
 
-10. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
+1. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
 
    ![Doelen](assets/goals.png)
 
-11. Geef een naam op voor uw activiteiten en sla deze op.
-12. Activeer je opgeslagen activiteit om je wijzigingen live te zetten.
+1. Geef een naam op voor uw activiteiten en sla deze op.
+1. Activeer je opgeslagen activiteit om je wijzigingen live te zetten.
 
    ![Doelen](assets/activate.png)
 
-13. Open uw sitepagina (Activiteit URL van stap 3) in een nieuw tabblad en u zou één van beide ervaringen (avontuur of Onderzoek) van onze testactiviteit A/B moeten kunnen bekijken.
+1. Open uw sitepagina (Activiteit URL van stap 3) in een nieuw tabblad en u zou één van beide ervaringen (avontuur of Onderzoek) van onze testactiviteit A/B moeten kunnen bekijken.
 
    ![Doelen](assets/publish.png)
 
