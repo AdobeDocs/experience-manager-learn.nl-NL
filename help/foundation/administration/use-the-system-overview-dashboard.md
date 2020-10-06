@@ -9,7 +9,7 @@ audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: c9a11bcb01a5ec9f7390deab68e6d0e1dec273de
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) [!UICONTROL System Overview] biedt vanaf één da
 
 1. Het Overzicht van het Systeem kan van worden betreden: **Start** AEM > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL System Overview]**
 
-   Direct om **[!DNL <server-host>/libs/granite/operations/content/systemoverview.html]**
+   Direct om **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
 1. De informatie van de [!UICONTROL System Overview] kan worden uitgevoerd door de [!UICONTROL Download] knoop te klikken. De informatie wordt ook via het volgende [!DNL REST] eindpunt blootgesteld:
 1. Hieronder ziet u een voorbeelduitvoer van de JSON die wordt geëxporteerd uit de [!UICONTROL System Overview]:
