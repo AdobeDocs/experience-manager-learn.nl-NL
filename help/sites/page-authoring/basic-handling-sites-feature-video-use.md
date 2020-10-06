@@ -12,7 +12,7 @@ version: 6.3, 6.4, 6.5, cloud-service
 kt: 4495
 thumbnail: 31784.jpg
 translation-type: tm+mt
-source-git-commit: d3e2595bf189c937b1023881d84eb1a9739750b6
+source-git-commit: 26760a76cfa523d28399c8e44c8db070cac49496
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 4%
@@ -32,48 +32,15 @@ In deze video worden de volgende mogelijkheden of functies behandeld:
 * Het algemene navigatievenster bestaat uit:
    * Navigatie - Vertegenwoordigd door een kompas
 
-      <table> 
-    <thead> 
-      <tr> 
-      <th> <p>Console</p> </th>
-      <th> <p>Doel</p> </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-      <td> <p>Assets</p> </td>
-      <td> <p>Met deze consoles kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video's, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd</p> </td>
-      </tr>
-      <tr>
-      <td> <p>Gemeenschappen</p> </td>
-      <td> <p>Met deze console kunt u gemeenschapssites maken en beheren voor betrokkenheid en activering</p> </td>
-      </tr>
-      <tr>
-      <td> <p>Handel</p> </td>
-      <td> <p>Op deze manier kunt u producten, productcatalogi en bestellingen beheren die betrekking hebben op uw handelsites</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Ervaringsfragmenten</p> </td>
-      <td> <p>Een ervaringsfragment is een stand-alone ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan bevatten, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Forms</p> </td>
-      <td> <p>Met deze console kunt u formulieren en documenten maken, beheren en verwerken</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Personalisatie</p> </td>
-      <td> <p>Deze console biedt een raamwerk van gereedschappen voor het ontwerpen van gerichte inhoud en het presenteren van gepersonaliseerde ervaringen</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Projecten</p> </td>
-      <td> <p>De console van Projecten geeft u directe toegang tot uw projecten. Projecten zijn virtuele dashboards. Zij kunnen worden gebruikt om een team te bouwen, dan dat teamtoegang tot middelen, werkschema's en taken te geven, die mensen toestaan om aan een gemeenschappelijk doel te werken</p> </td>
-      </tr>
-      <tr> 
-      <td> <p>Sites</p> </td>
-      <td> <p>Met de Sites-consoles kunt u websites maken, weergeven en beheren die op uw AEM worden uitgevoerd. Via deze consoles kunt u websitepagina's maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina's publiceren</p> </td>
-      </tr>
-    </tbody>
-    </table>
+      | Console | Doel |
+      |---|---|
+      | Assets | Met deze consoles kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd | Gemeenschappen | Met deze console kunt u gemeenschapssites maken en beheren voor betrokkenheid en activering | Handel | Op deze manier kunt u producten, productcatalogi en bestellingen beheren die betrekking hebben op uw handelsites |
+      | Ervaringsfragmenten | Een ervaringsfragment is een stand-alone ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan bevatten, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard |
+      | Forms | Met deze console kunt u formulieren en documenten maken, beheren en verwerken |
+      | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor het ontwerpen van gerichte inhoud en het presenteren van gepersonaliseerde ervaringen |
+      | Projecten | De console van Projecten geeft u directe toegang tot uw projecten. Projecten zijn virtuele dashboards. Zij kunnen worden gebruikt om een team te bouwen, dan dat teamtoegang tot middelen, werkschema&#39;s en taken te geven, die mensen toestaan om aan een gemeenschappelijk doel te werken |
+      | Sites | Met de Sites-consoles kunt u websites maken, weergeven en beheren die op uw AEM worden uitgevoerd. Via deze consoles kunt u websitepagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren |
+
    * Gereedschappen - vertegenwoordigd door een hamer
 * Universeel zoeken
 * Oplossingswisselaar
