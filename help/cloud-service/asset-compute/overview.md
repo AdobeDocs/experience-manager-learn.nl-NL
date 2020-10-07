@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: ecee5f83dc778b016b6d236c1e3bcc4919ee55a7
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Deze zelfstudie doorloopt het maken van een eenvoudige worker Asset Compute die 
 
 Leer hoe te om behoorlijk voor te bereiden voor de uitbreiding van de arbeiders van de Compute van Activa, en te begrijpen welke diensten en rekeningen moeten worden provisioned en worden gevormd, en software plaatselijk voor ontwikkeling wordt geïnstalleerd.
 
-### Account en service-provisioning
+### Account en service-provisioning{#accounts-and-services}
 
 De volgende accounts en services vereisen provisioning en toegang tot Adobe Project Firefly en Microsoft Azure Blob Storage om de zelfstudie te voltooien, AEM als een Cloud Service Dev-omgeving of Sandbox-programma.
 
@@ -50,13 +50,13 @@ De volgende accounts en services vereisen provisioning en toegang tot Adobe Proj
 
 ### Lokale ontwikkelomgeving
 
-Voor de lokale ontwikkeling van toepassingen voor Asset Compute is een specifieke set ontwikkelaars nodig die verschilt van de traditionele AEM ontwikkeling, waaronder: Microsoft Visual Studio Code, de Desktop van de Dokker, Node.js en het steunen npm modules.
+Voor de lokale ontwikkeling van Asset Compute-projecten is een specifieke set ontwikkelaars nodig die verschilt van de traditionele AEM-ontwikkeling, waaronder: Microsoft Visual Studio Code, de Desktop van de Dokker, Node.js en het steunen npm modules.
 
 + [Lokale ontwikkelomgeving instellen](./set-up/development-environment.md)
 
 ### Adobe Project Firefly
 
-De projecten van de Compute van middelen zijn speciaal bepaalde Adobe Project Firefly toepassingen, en als dusdanig, vereisen toegang tot het Project van de Adobe in de Console van de Ontwikkelaar van de Adobe om hen op te zetten en op te stellen.
+De projecten van de Compute van middelen zijn speciaal bepaalde projecten van het Project van Adobe Vuurwerk, en als dusdanig, vereisen toegang tot het Project van Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
 
 + [Adobe-project probleemloos instellen](./set-up/firefly.md)
 
@@ -66,7 +66,7 @@ Leer hoe u een project Asset Compute maakt en configureert en vervolgens een aan
 
 ### Een nieuw project voor het berekenen van bedrijfsmiddelen maken
 
-De de toepassingsprojecten van de Compute van activa, die één of meerdere arbeiders van de Compute van Activa bevatten, worden geproduceerd gebruikend interactieve Adobe I/O CLI. De toepassingen van de Compute van middelen zijn speciaal gestructureerde Adobe Project Firefly toepassingen, die op hun beurt toepassingen Node.js zijn.
+De projecten van de Compute van activa, die één of meerdere arbeiders van de Rekenmachine van Activa bevatten, worden geproduceerd gebruikend interactieve Adobe I/O CLI. De projecten van de Activa Compute zijn speciaal gestructureerde projecten van het Project van de Adobe Firefly, die op hun beurt projecten Node.js zijn.
 
 + [Een nieuw project voor het berekenen van bedrijfsmiddelen maken](./develop/project.md)
 
@@ -78,7 +78,7 @@ Omgevingsvariabelen worden in het `.env` bestand bewaard voor lokale ontwikkelin
 
 ### Vorm manifest.yml
 
-De toepassingen van de Compute van activa bevatten manifests die alle arbeiders bepalen van de Verwerking van Activa binnen het project, evenals welke middelen zij wanneer opgesteld aan Adobe I/O Runtime voor uitvoering beschikbaar hebben.
+De projecten van de Compute van activa bevatten manifests die alle arbeiders bepalen van de Verwerking van Activa binnen het project, evenals welke middelen zij wanneer opgesteld aan Adobe I/O Runtime voor uitvoering beschikbaar hebben.
 
 + [Vorm manifest.yml](./develop/manifest.md)
 
@@ -106,7 +106,7 @@ Asset Compute biedt een testkader voor het maken van testreeksen voor workers, w
 
 ### Fouten opsporen in een worker
 
-De toepassingen van de Compute van activa verstrekken diverse niveaus van het zuiveren van traditionele `console.log(..)` output, aan integratie met de Code __van__ VS en __wskdebug__, toestaand ontwikkelaars stap door arbeiderscode aangezien het in echt - tijd uitvoert.
+De arbeiders van de Compute van activa verstrekken diverse niveaus van het zuiveren van traditionele `console.log(..)` output, aan integratie met de Code __van__ VS en __wskdebug__, toestaand ontwikkelaars stap door arbeiderscode aangezien het in echt - tijd uitvoert.
 
 + [Fouten opsporen in een worker](./test-debug/debug.md)
 
@@ -125,6 +125,14 @@ De arbeiders van de Compute van activa moeten aan Adobe I/O Runtime worden opges
 Zodra de medewerkers van Asset Compute zijn geïmplementeerd in Adobe I/O Runtime, kunnen deze in AEM worden geregistreerd als Cloud Service via [middelenverwerkingsprofielen](../../assets/configuring/processing-profiles.md). Verwerkingsprofielen worden op hun beurt toegepast op de mappen Middelen die op de elementen daarin van toepassing zijn.
 
 + [Integreren met AEM verwerkingsprofielen](./deploy/processing-profiles.md)
+
+## Lesbestand met codebase op Github
+
+De zelfstudiecodebase is beschikbaar op Github op:
+
++ [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ master vertakking
+
+De broncode bevat niet de vereiste `.env` of `config.json` bestanden. Deze moeten worden toegevoegd en gevormd gebruikend uw [rekeningen en de dienstinformatie](#accounts-and-services) .
 
 ## Aanvullende bronnen
 
