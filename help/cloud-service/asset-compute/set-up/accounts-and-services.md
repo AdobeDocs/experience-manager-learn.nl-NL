@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Alle services van de Adobe moeten toegankelijk zijn via dezelfde Adobe Org, die 
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-Toegang tot een AEM als een Cloud Service-omgeving is vereist om AEM Assets-verwerkingsprofielen te configureren voor het aanroepen van de toepassing voor het berekenen van aangepaste bedrijfsmiddelen.
+Toegang tot een AEM als een Cloud Service-omgeving is vereist om AEM Assets Processing Profiles te configureren voor het aanroepen van de aangepaste Asset Compute-worker.
 
 In het ideale geval is een sandboxprogramma of een ontwikkelomgeving zonder sandbox beschikbaar voor gebruik.
 
@@ -47,7 +47,7 @@ Merk op dat een lokale AEM SDK ontoereikend is om deze zelfstudie te voltooien, 
 
 ## Adobe Project Firefly{#adobe-project-firefly}
 
-Het framework [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) wordt gebruikt voor het ontwikkelen en implementeren van aangepaste toepassingen op Adobe I/O Runtime, een platform zonder Adobe. AEM toepassingen voor Asset Compute zijn speciaal gebouwde Firefly-toepassingen die met AEM Assets integreren via Process Profiles, en die de mogelijkheid bieden om toegang te krijgen tot binaire bestanden met middelen en deze te verwerken.
+Het [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) -framework wordt gebruikt voor het bouwen en implementeren van aangepaste acties op Adobe I/O Runtime, een platform zonder Adobe. AEM Asset Compute-projecten zijn speciaal gebouwde Firefly-projecten die met AEM Assets integreren via Process Profiles, en die de mogelijkheid bieden om toegang te krijgen tot en gebruik te maken van binaire bestanden met middelen.
 
 Meld u aan voor de voorvertoning om probleemloos toegang te krijgen tot het project.
 
@@ -57,9 +57,9 @@ Meld u aan voor de voorvertoning om probleemloos toegang te krijgen tot het proj
 
 ## Cloud-opslag
 
-Cloudopslag is vereist voor de lokale ontwikkeling van toepassingen voor Asset Compute.
+De opslag van de wolk wordt vereist voor lokale ontwikkeling van Activa Compute projecten.
 
-Wanneer toepassingen voor Asset Compute op de Adobe I/O Runtime worden geïmplementeerd voor direct gebruik door AEM als Cloud Service, is deze cloudopslag niet strikt vereist, omdat AEM de cloudopslag biedt van waaruit het middel wordt gelezen en waarnaar wordt geschreven.
+Wanneer workers voor Asset Compute naar de Adobe I/O Runtime worden geïmplementeerd voor direct gebruik door AEM als Cloud Service, is deze cloudopslag niet strikt vereist, omdat AEM de cloudopslag biedt van waaruit het middel wordt gelezen en waarnaar wordt geschreven.
 
 ### Microsoft Azure Blob-opslag{#azure-blob-storage}
 
