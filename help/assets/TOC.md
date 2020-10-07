@@ -5,9 +5,9 @@ breadcrumb-title: AEM Assets Tutorials
 sub-product: elementen
 team: TM
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '239'
 ht-degree: 10%
 
 ---
@@ -47,10 +47,11 @@ ht-degree: 10%
    + [Zoekopdracht](./search-and-discovery/search-boost.md)
 
 + Geavanceerde mogelijkheden{#advanced}
-   + [Machtigingen (CUG&#39;s)](./advanced/closed-user-groups.md)
-   + [Elementen rapporteren](./advanced/asset-reports.md)
-   + [Asset Insights ](./advanced/asset-insights-launch-tutorial.md)
    + [PDF-uitvoer van notities](./advanced/customizing-annotations-pdf-output.md)
+   + [Asset Insights ](./advanced/asset-insights-launch-tutorial.md)
+   + [Elementen rapporteren](./advanced/asset-reports.md)
+   + [Machtigingen (CUG&#39;s)](./advanced/closed-user-groups.md)
+   + [Watermerken](./advanced/watermarks.md)
 
 + Geavanceerd metagegevensbeheer{#metadata}
    + [Trapsgewijze metagegevens](metadata/cascade-metadata-feature-video-use.md)
