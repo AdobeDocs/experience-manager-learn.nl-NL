@@ -5,9 +5,9 @@ description: Een verzameling video's en zelfstudies voor Adobe Experience Manage
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Assets
 sub-product: elementen, dynamische media
 translation-type: tm+mt
-source-git-commit: a2772bd8dd65e8bcb4caf660709f6aceb6e28eb4
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 3%
 
 ---
@@ -18,6 +18,11 @@ ht-degree: 3%
 Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale middelen op AEM Platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een gegevensopslagruimte op internet. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
 
 ## Wat is er nieuw?
+
+* **[Watermerken (video)](./advanced/watermarks.md)**
+
+   <br>
+   *Leer hoe u elementen in AEM als Cloud Service kunt voorzien van watermerken*
 
 * **[Basislijnmachtigingen (video)](./configuring/baseline-permissions.md)**
 
@@ -38,12 +43,6 @@ Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale m
 
    <br>
    *Ontdek hoe verzamelingen in AEM Assets nieuwe manieren bieden om elementen te organiseren en te ontdekken*
-
-* **[Revisietaak gebruiken (video)](./collaboration/review-task.md)**
-
-   <br>
-   *Gebruik de werkstroom Revisietaak om snel en eenvoudig middelen goed te keuren (of af te wijzen)*
-
 
 ## Personeelspictogrammen
 
@@ -91,7 +90,7 @@ Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale m
 
 ## Aanvullende bronnen
 
-* [Experience League - Ontdek AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Verken AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Assets-documentatie](https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html)
 * [AEM als Cloud Service Tutorials](/help/cloud-service/overview.md)
 * [AEM Sites Tutorials](/help/sites/overview.md)
