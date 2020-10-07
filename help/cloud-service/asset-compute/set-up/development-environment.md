@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
 translation-type: tm+mt
-source-git-commit: 53e4235c55d890765e9f13ffeb37a2c805fb307b
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Lokale ontwikkelomgeving instellen
 
-Adobe Asset Compute-toepassingen kunnen niet worden geïntegreerd met de lokale AEM-runtime die wordt geleverd door de AEM SDK en worden ontwikkeld met behulp van hun eigen gereedschapsketen, apart van de toepassingen die AEM op basis van het AEM Maven-projectarchetype vereist.
+Adobe Asset Compute-projecten kunnen niet worden geïntegreerd met de lokale AEM-runtime die wordt geleverd door de AEM SDK en worden ontwikkeld met behulp van hun eigen gereedschapsketen, apart van de toepassingen die AEM op basis van het AEM Maven-projectarchetype vereist.
 
 Om de microservices van Asset Compute uit te breiden, moeten de volgende gereedschappen op de lokale ontwikkelaarscomputer zijn geïnstalleerd.
 
@@ -46,7 +46,7 @@ Hier volgt een korte set-upinstructies. Nadere bijzonderheden over deze ontwikke
 
 ## Visual Studio-code installeren{#vscode}
 
-[De Code](https://code.visualstudio.com/download) van Microsoft Visual Studio wordt gebruikt voor het ontwikkelen van en het zuiveren van de toepassingen van de Verwerking van Activa. Terwijl andere [JavaScript-compatibele winde](../../local-development-environment/development-tools.md#set-up-the-development-ide) kan worden gebruikt om de toepassing te ontwikkelen, slechts kan de Code van Visual Studio worden geïntegreerd om de toepassingen van de Compute van Activa te [zuiveren](../test-debug/debug.md) .
+[De Code](https://code.visualstudio.com/download) van Microsoft Visual Studio wordt gebruikt voor het ontwikkelen van en het zuiveren de arbeiders van de Verwerking van Activa. Terwijl andere [JavaScript-compatibele winde](../../local-development-environment/development-tools.md#set-up-the-development-ide) kan worden gebruikt om de arbeider te ontwikkelen, slechts kan de Code van Visual Studio worden geïntegreerd om de worker van de Verwerking van Activa te [zuiveren](../test-debug/debug.md) .
 
 _Visual Studio Code 1.48.x+ wordt vereist voor[WebDebug](#wskdebug)om te werken._
 
@@ -67,7 +67,7 @@ Ontwikkelaars op Windows-computers moeten ervoor zorgen dat ze Linux-containers 
 
 ## Node.js (en npm) installeren{#node-js}
 
-De arbeiders van de Compute van activa zijn [Node.js](https://nodejs.org/) toepassingen, en vereisen daarom Node.js 10+ (en npm) om te ontwikkelen en te bouwen.
+De arbeiders van de Compute van activa zijn op [Node.js](https://nodejs.org/)-Gebaseerd, en vereisen daarom Node.js 10+ (en npm) om te ontwikkelen en te bouwen.
 
 + [Installeer Node.js (en npm)](../../local-development-environment/development-tools.md#node-js) op de zelfde manier zoals voor traditionele AEM ontwikkeling.
 
@@ -89,7 +89,7 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 ## Webfoutopsporing installeren{#wskdebug}
 
-Download en installeer de [Apache OpenWhisk-module voor foutopsporing](https://www.npmjs.com/package/@openwhisk/wskdebug) van de npm om lokale foutopsporing van de toepassingen Asset Compute te vergemakkelijken.
+Download en installeer de [Apache OpenWhisk-module voor foutopsporing](https://www.npmjs.com/package/@openwhisk/wskdebug) van Npm om lokale foutopsporing van Asset Compute-workers te vergemakkelijken.
 
 _Visual Studio Code 1.48.x+ wordt vereist voor[WebDebug](#wskdebug)om te werken._
 
@@ -99,7 +99,7 @@ $ npm install -g @openwhisk/wskdebug
 
 ## Installeer de extensie{#ngrok}
 
-Download en installeer de [npm-module van Ngrok](https://www.npmjs.com/package/ngrok) , die het publiek toegang biedt tot uw lokale ontwikkelcomputer, om lokale foutopsporing van toepassingen voor Asset Compute te vergemakkelijken.
+Download en installeer de [npm-module Ngrok](https://www.npmjs.com/package/ngrok) , die het publiek toegang biedt tot uw lokale ontwikkelcomputer, om lokale foutopsporing van de workers Asset Compute te vergemakkelijken.
 
 ```
 $ npm install -g ngrok --unsafe-perm=true
