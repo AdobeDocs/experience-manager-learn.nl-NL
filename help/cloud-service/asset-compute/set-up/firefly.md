@@ -1,6 +1,6 @@
 ---
 title: Adobe-project veilig instellen voor de rekbaarheid van middelen
-description: De toepassingen van de Compute van activa zijn speciaal bepaalde Adobe Project Firefly toepassingen, en als dusdanig vereisen toegang tot het Project van de Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
+description: De projecten van de Compute van middelen zijn speciaal bepaalde projecten van het Project van Adobe Vuurwerk, en als dusdanig, vereisen toegang tot het Project van Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Adobe-project probleemloos instellen
 
-De toepassingen van de Compute van activa zijn speciaal bepaalde Adobe Project Firefly toepassingen, en als dusdanig vereisen toegang tot het Project van de Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
+De projecten van de Compute van middelen zijn speciaal bepaalde projecten van het Project van Adobe Vuurwerk, en als dusdanig, vereisen toegang tot het Project van Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
 
 ## Adobe-project veilig maken en instellen in Adobe Developer Console{#set-up}
 
@@ -34,8 +34,8 @@ _Doorklikken voor probleemloos instellen van Adobe-project (geen audio)_
 
    + __Titel__ van project: `WKND AEM Asset Compute`
    + __Toepassingsnaam__: `wkndAemAssetCompute<YourName>`
-      + De naam __van de__ app moet uniek zijn in alle Firefly-toepassingen en kan later niet worden gewijzigd. Het voorschrijven van de naam van uw bedrijf of organisatie en het achteraf plaatsen met een zinvol achtervoegsel is een goede aanpak, zoals: `wkndAemAssetCompute`.
-      + Voor zelf-enablement is het vaak best om uw naam aan de naam __van de__ App, zoals te postfix `wkndAemAssetComputeJaneDoe` om botsingen met andere toepassingen van het Project te vermijden Frefly.
+      + De naam __van de__ app moet uniek zijn in alle projecten van Firefly en kan later niet worden gewijzigd. Het voorschrijven van de naam van uw bedrijf of organisatie en het achteraf plaatsen met een zinvol achtervoegsel is een goede aanpak, zoals: `wkndAemAssetCompute`.
+      + Voor zelf-enablement is het vaak best om uw naam aan de naam __van de__ App, zoals te postfix `wkndAemAssetComputeJaneDoe` om botsingen met andere projecten van het Project te vermijden Frefly.
    + Voeg onder __Werkruimten__ een nieuwe omgeving toe met de naam `Development`
    + Zorg ervoor dat onder __Adobe I/O Runtime__ de optie Runtime __opnemen bij elke werkruimte__ is ingeschakeld
    + Tik op __Opslaan__ om het project op te slaan
@@ -58,7 +58,7 @@ Bij het instellen van de integratie [van de API voor](#set-up) middelenberekenin
 
 ## Controleer de referenties van de serviceaccount (JWT)
 
-De referenties van dit Adobe I/O-project worden gebruikt door het lokale [Asset Compute Development Tool](../develop/development-tool.md) voor interactie met Adobe I/O Runtime en moeten worden opgenomen in het Asset Compute Application-project. Verken uzelf met de JWT-referenties (Service Account).
+De referenties van dit Adobe I/O-project worden gebruikt door het lokale [Asset Compute Development Tool](../develop/development-tool.md) voor interactie met Adobe I/O Runtime en moeten worden opgenomen in het Asset Compute-project. Verken uzelf met de JWT-referenties (Service Account).
 
 ![Accountgegevens van Adobe Developer Service](./assets/firefly/service-account.png)
 
