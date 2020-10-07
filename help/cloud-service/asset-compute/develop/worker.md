@@ -1,6 +1,6 @@
 ---
 title: Een worker Asset Compute ontwikkelen
-description: De arbeiders van de Compute van activa zijn de kern van een toepassing van de Compute van Activa zoals verstrekt douanefunctionaliteit die, of orchestrates, het werk uitvoert dat op activa wordt uitgevoerd om een nieuwe vertoning tot stand te brengen.
+description: De arbeiders van de Compute van activa zijn de kern van projecten van de Compute van Activa zoals verstrekt douanefunctionaliteit die, of orchestraten, het werk uitvoert op activa om een nieuwe vertoning tot stand te brengen.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -20,26 +20,28 @@ ht-degree: 0%
 
 # Een worker Asset Compute ontwikkelen
 
-De arbeiders van de Compute van activa zijn de kern van een toepassing van de Compute van Activa zoals verstrekt douanefunctionaliteit die, of orchestrates, het werk uitvoert dat op activa wordt uitgevoerd om een nieuwe vertoning tot stand te brengen.
+De arbeiders van de Compute van activa zijn de kern van een project van de Compute van Activa zoals verstrekt douanefunctionaliteit die, of orchestraten, het werk uitvoert op activa om een nieuwe vertoning tot stand te brengen.
 
 Met het project Asset Compute wordt automatisch een eenvoudige worker gegenereerd die het oorspronkelijke binaire getal van het element kopieert naar een benoemde uitvoering, zonder transformaties. In deze zelfstudie zullen we deze worker aanpassen om een interessantere uitvoering te maken, om de kracht van Asset Compute-workers te illustreren.
 
-We maken een worker voor het berekenen van bedrijfsmiddelen die een nieuwe horizontale afbeeldingsuitvoering genereert die lege ruimte aan de linkerkant en rechterkant van de uitvoering van het element dekt met een vervaagde versie van het element. De breedte, hoogte en vervaging van de uiteindelijke uitvoering worden geparametereerd.
+We maken een worker Asset Compute die een nieuwe horizontale afbeeldingsuitvoering genereert die lege ruimte links en rechts van de uitvoering van het element dekt met een vervaagde versie van het element. De breedte, hoogte en vervaging van de uiteindelijke uitvoering worden geparametereerd.
 
-## De uitvoering van een worker Asset Compute
+## Logische stroom van de aanroeping van een worker Asset Compute
 
-Workers voor Asset Compute implementeren het Asset Compute SDK-API-contract:
+Workers voor Asset Compute implementeren het API-contract voor de worker van Asset Compute SDK in de `renditionCallback(...)` functie, die conceptueel is:
 
 + __Invoer:__ Het binaire element en de parameters van een AEM element
 + __Uitvoer:__ Een of meer uitvoeringen die aan het AEM-element moeten worden toegevoegd
 
-![Uitvoerstroom van worker berekenen](./assets/worker/execution-flow.png)
+![Logische stroom van de worker Asset Compute](./assets/worker/logical-flow.png)
 
 1. Wanneer een worker Asset Compute wordt aangeroepen vanuit de AEM Auteur-service, is deze tegen een AEM middel via een verwerkingsprofiel. Het originele binaire binaire getal van het element __(1a)__ wordt doorgegeven aan de worker via de `source` parameter van de callback-functie van de renditie en __(1b)__ alle parameters die in het verwerkingsprofiel via een `rendition.instructions` parameterset zijn gedefinieerd.
-1. De de arbeiderscode van het Activum compute transformeert het bronbinaire verstrekt in __(1a)__ op om het even welke parameters die door __(1b)__ worden verstrekt om een vertoning van het bronbinaire getal te produceren.
+1. De laag van SDK van de Compute van Activa keurt het verzoek van het verwerkingsprofiel goed, en organiseert de uitvoering van de `renditionCallback(...)` functie van de arbeider van de Compute van het douaneMiddel, die het bronbinaire getal in __(1a)__ omzet die op om het even welke die parameters wordt verstrekt door __(1b)__ wordt verstrekt om een vertoning van het bronbinaire getal te produceren.
    + In dit leerprogramma wordt de vertoning &quot;in proces&quot;gecreeerd, betekenend de worker de vertoning samenstelt, nochtans kan het bronbinaire getal naar andere dienst APIs van het Web voor vertoningsgeneratie eveneens worden verzonden.
 1. De worker Asset Compute slaat de binaire representatie van de uitvoering op, `rendition.path` waarmee deze kan worden opgeslagen in de AEM-auteurservice.
-1. Na voltooiing, worden de binaire gegevens die aan `rendition.path` worden geschreven blootgesteld via de AEM AuteurDienst als vertoning voor het AEM activa de worker van de Compute van het Activum werd aangehaald.
+1. Na voltooiing, `rendition.path` worden de binaire gegevens die aan worden geschreven vervoerd via de Asset Compute SDK en via de AEM Auteur Service als vertoning beschikbaar in AEM UI blootgesteld.
+
+In het bovenstaande diagram worden de bekommernissen over het berekenen van bedrijfsmiddelen voor ontwikkelaars en de logische stroom naar de oproep van de worker Asset Compute (Asset Compute) verwoord. Voor de nieuwsgierigheid zijn de [interne details van de uitvoering](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) van Asset Compute beschikbaar, maar alleen de openbare contracten van SDK API voor Asset Compute moeten afhangen.
 
 ## Anatomie van een worker
 
@@ -106,7 +108,7 @@ Dit is het JavaScript-bestand van de worker dat we in deze zelfstudie zullen wij
 
 ## Ondersteunende npm-modules installeren en importeren
 
-Naarmate Node.js-toepassingen worden gebruikt, profiteren de Asset Compute-toepassingen van het robuuste [npm-moduleecosysteem](https://npmjs.com). Om npm modules te hefboomwerking moeten wij hen eerst in ons de toepassingsproject van de Compute van Activa installeren.
+Omdat op Node.js gebaseerd, de projecten van de Activa berekenen profiteren van het robuuste [npm modulecosysteem](https://npmjs.com). Om npm modules te hefboomwerking moeten wij hen eerst in ons project van de Compute van Activa installeren.
 
 In deze worker gebruiken we de [jimp](https://www.npmjs.com/package/jimp) om de vertoningsafbeelding rechtstreeks in de code Node.js te maken en te bewerken.
 
@@ -380,6 +382,12 @@ Deze worden in de worker gelezen `index.js` via:
    ![Parameterized PNG rendition](./assets/worker/parameterized-rendition.png)
 
 1. Upload andere afbeeldingen naar het vervolgkeuzemenu voor het __bronbestand__ en probeer de worker met andere parameters uit te voeren.
+
+## Worker index.js op Github
+
+De finale `index.js` is beschikbaar op Github op:
+
++ [aem-guides-wknd-asset-compute/actions/worker/index.js](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/actions/worker/index.js)
 
 ## Problemen oplossen
 
