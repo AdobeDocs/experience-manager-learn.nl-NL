@@ -1,6 +1,6 @@
 ---
 title: Een project voor het berekenen van bedrijfsmiddelen maken voor de rekbaarheid van bedrijfsmiddelen
-description: De toepassingen van de Compute van activa zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service worden geïntegreerd.
+description: De projecten van de Compute van activa zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service worden geïntegreerd.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: a71c61304bbc9d54490086b3313c823225fbe2e0
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Een project voor het berekenen van bedrijfsmiddelen maken
 
-De toepassingen van de Compute van activa zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur hangen die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service worden geïntegreerd. Één enkel project van de Verwerking van Activa kan één of meerdere arbeiders van de Verwerking van Activa bevatten, met elk die een discrete eindpunt van HTTP van een AEM als Profiel van de Verwerking van de Cloud Service van verwijzingen voorzien.
+De projecten van de Compute van activa zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service worden geïntegreerd. Één enkel project van de Verwerking van Activa kan één of meerdere arbeiders van de Verwerking van Activa bevatten, met elk die een discrete eindpunt van HTTP van een AEM als Profiel van de Verwerking van de Cloud Service van verwijzingen voorzien.
 
 ## Een project genereren
 
@@ -51,7 +51,7 @@ Gebruik de [Adobe I/O CLI-insteekmodule](../set-up/development-environment.md#ai
 
 ## De anatomie van het project evalueren
 
-Het geproduceerde project van de Verwerking van Activa is een project Node.js voor een gespecialiseerde toepassing van het Project van Adobe Frefly, is het volgende idiosyncratic aan het project van de Verwerking van Activa:
+Het geproduceerde project van de Verwerking van Activa is een project Node.js voor een gespecialiseerd project van het Project van Adobe Frefly, is het volgende idiosyncratic aan het project van de Verwerking van Activa:
 
 + `/actions` bevat submappen en elke submap definieert een worker Asset Compute.
    + `/actions/<worker-name>/index.js` definieert de JavaScript die wordt uitgevoerd om het werk van deze worker uit te voeren.
@@ -65,6 +65,14 @@ Het geproduceerde project van de Verwerking van Activa is een project Node.js vo
 + `/.env` definieert omgevingsvariabelen in een `key=value` syntaxis en bevat geheimen die niet mogen worden gedeeld. Om deze geheimen te beschermen, zou dit dossier NIET in Git moeten worden gecontroleerd en via het standaard `.gitignore` dossier van het project genegeerd.
    + Variabelen die in dit bestand worden gedefinieerd, kunnen worden overschreven door variabelen [op de opdrachtregel te](../deploy/runtime.md) exporteren.
 
-Voor meer details over de overzicht van de projectstructuur, herzie de [Anatomie van een Adobe Project Firefly toepassing](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
+Voor meer details over de overzicht van de projectstructuur, herzie de [Anatomie van een project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)van het Project van de Adobe.
 
 Het grootste deel van de ontwikkeling vindt plaats in de `/actions` `/test/asset-compute` omslag die arbeidersimplementaties ontwikkelt, en schriftelijk tests voor de arbeiders van de Compute van de douaneMiddelen.
+
+## Asset Compute-project op Github
+
+Het definitieve project Asset Compute is beschikbaar op Github op:
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, d.w.z.`.env`,`.config.json`of`.aio`._
