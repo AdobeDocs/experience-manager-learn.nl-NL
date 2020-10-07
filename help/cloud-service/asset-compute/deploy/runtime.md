@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Omdat dit project is gegenereerd `aio app init` met behulp van de `Development` 
 
 Om op te stellen aan de werkruimte die in het `.env` projectdossier wordt bepaald:
 
-1. Open de bevellijn in de wortel van het de toepassingsproject van de Compute van Activa
+1. Open de bevellijn in de wortel van het Element Compute project
 1. De opdracht uitvoeren `aio app deploy`
 1. Voer de opdracht uit `aio app get-url` om de URL van de worker te verkrijgen voor gebruik in de AEM als een Cloud Service-verwerkingsprofiel om naar deze aangepaste worker Asset Compute te verwijzen. Als het project meerdere workers bevat, worden afzonderlijke URL&#39;s voor elke worker weergegeven.
 
@@ -54,7 +54,7 @@ Als u echte omgevingsvariabelen instelt, worden de waarden voor dezelfde variabe
 De algemene aanpak, die doorgaans door een CI/CD-systeem wordt geautomatiseerd, voor de implementatie in werkgebied- en productieomgevingen is:
 
 1. Zorg ervoor dat de [Adobe I/O CLI npm-module en de Asset Compute-plug-in](../set-up/development-environment.md#aio) zijn geïnstalleerd
-1. Ontdek de toepassing Asset Compute voor implementatie vanaf Git
+1. Ontdek het project Asset Compute dat vanaf Git moet worden geïmplementeerd
 1. De omgevingsvariabelen instellen met de waarden die overeenkomen met de doelwerkruimte (werkgebied of productie)
    + De twee vereiste variabelen zijn `AIO_runtime_namespace` en worden per werkruimte verkregen in de Adobe I/O-ontwikkelaarsconsole via de functie Alles `AIO_runtime_auth` ____ downloaden van Workspace.
 
@@ -74,7 +74,7 @@ Als uw workers voor Asset Compute andere variabelen nodig hebben, zoals cloudops
 1. De worker-URL(&#39;s) waarnaar de AEM verwijst als een Cloud Service-verwerkingsprofiel is ook beschikbaar via:
    + `aio app get-url`.
 
-Als de versie van de toepassing Asset Compute de URL&#39;s van de worker wijzigt, wordt deze ook aangepast aan de nieuwe versie. De URL moet dan worden bijgewerkt in de verwerkingsprofielen.
+Als de projectversie van Asset Compute de URL&#39;s van de worker wijzigt en de nieuwe versie weerspiegelt, moet de URL worden bijgewerkt in de verwerkingsprofielen.
 
 ## Workspace API-provisioning{#workspace-api-provisioning}
 
