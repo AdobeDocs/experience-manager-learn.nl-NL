@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: 59bfc9ae08acca6c41234f23eaa60f56e2eda890
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,14 @@ Maak eerst een nieuw verwerkingsprofiel dat de worker aanroept met de configuree
 ## Voltooid!
 
 Gefeliciteerd! U hebt de [zelfstudie](../overview.md) over het uitbreiden van AEM als Cloud Service Asset Compute microservices voltooid! U zou nu de capaciteit moeten hebben om de arbeiders van de Compute van de douane van Activa voor gebruik door uw AEM als dienst van de Auteur van de Cloud Service te vestigen, te ontwikkelen, te testen, te zuiveren en op te stellen.
+
+### Bekijk de volledige broncode van het project op Github
+
+Het definitieve project Asset Compute is beschikbaar op Github op:
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, d.w.z.`.env`,`.config.json`of`.aio`._
 
 ## Problemen oplossen
 
