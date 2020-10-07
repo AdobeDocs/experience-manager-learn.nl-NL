@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: a71c61304bbc9d54490086b3313c823225fbe2e0
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Het Asset Compute Development Tool is een lokaal webkanaal waarmee ontwikkelaars
 
 ## Het hulpprogramma voor het berekenen van bedrijfsmiddelen uitvoeren
 
-Het hulpmiddel van de Ontwikkeling van de Verkoop van Activa kan van de wortel van het de toepassingsproject van de Verwerking van Activa via het eindbevel worden in werking gesteld:
+Het hulpmiddel van de Ontwikkeling van de Verkoop van Activa kan van de wortel van het project van de Verkoop van Activa via het eindbevel worden in werking gesteld:
 
 ```
 $ aio app run
@@ -42,9 +42,9 @@ Hiermee start u het hulpprogramma voor ontwikkeling op __http://localhost:9000__
 1. __Definitie van profiel voor middelenberekening:__ Definieert de worker Asset Compute die moet worden uitgevoerd inclusief parameters: inclusief het URL-eindpunt van de worker, de naam van de resulterende uitvoering en eventuele parameters
 1. __Uitvoeren:__ Met de knop Uitvoeren wordt het profiel Asset Compute uitgevoerd, zoals gedefinieerd in de configuratieprofieleditor voor Asset Compute
 1. __Afbreken:__ Met de knop Afbreken annuleert u een uitvoering die is gestart nadat u op de knop Uitvoeren hebt getikt
-1. __Verzoek/antwoord:__ Verstrekt de HTTP- verzoek en reactie aan/van de toepassing van de Berekening van Activa die in Runtime van Adobe lopen. Dit kan nuttig zijn voor foutopsporing
-1. __Activeringslogbestanden:__ De logboeken die de uitvoering van de toepassing Asset Compute beschrijven, samen met eventuele fouten. Deze informatie is ook beschikbaar in de `aio app run` standaardversie
-1. __Uitvoeringen:__ Hiermee worden alle uitvoeringen weergegeven die zijn gegenereerd door de uitvoering van de toepassing Asset Compute
+1. __Verzoek/antwoord:__ Verstrekt de HTTP- verzoek en reactie aan/van de worker Asset Compute die in Adobe I/O Runtime wordt uitgevoerd. Dit kan nuttig zijn voor foutopsporing
+1. __Activeringslogbestanden:__ De logboeken waarin de uitvoering van de worker Asset Compute wordt beschreven, evenals eventuele fouten. Deze informatie is ook beschikbaar in de `aio app run` standaardversie
+1. __Uitvoeringen:__ Hiermee worden alle uitvoeringen weergegeven die zijn gegenereerd door de uitvoering van de worker Asset Compute
 1. __devToolToken, queryparameter:__ Voor het token Asset Compute Development Tool moet een geldige `devToolToken` queryparameter aanwezig zijn. Deze token wordt automatisch gegenereerd wanneer een nieuw ontwikkelingsprogramma wordt gemaaid
 
 ### Een aangepaste worker uitvoeren
@@ -89,9 +89,9 @@ Het hulpmiddel van de Ontwikkeling van de Compute van activa kan een staat ingaa
 
 + __Fout:__ In het vervolgkeuzemenu Bronbestand worden onjuiste items weergegeven.
 + __Oorzaak:__ De browserstatus van Stale in cache veroorzaakt de
-+ __Resolutie:__ In uw browser ontruimen volledig de de toepassingsstaat van het browser lusje, het browser geheime voorgeheugen, lokale opslag en de dienstarbeider.
++ __Resolutie:__ In uw browser ontruimen volledig de browser staat van het lusje van de browser, het browser geheime voorgeheugen, lokale opslag en de dienstarbeider.
 
-### Ontbrekende devToolToken-queryparameter{#troubleshooting__devtooltoken}
+### Ontbrekende of ongeldige devToolToken-queryparameter{#troubleshooting__devtooltoken}
 
 + __Fout:__ Melding van &quot;onbevoegd&quot; in Asset Compute Development Tool
 + __Oorzaak:__ `devToolToken` ontbreekt of is ongeldig
@@ -101,6 +101,6 @@ Het hulpmiddel van de Ontwikkeling van de Compute van activa kan een staat ingaa
 
 + __Fout:__ Er is geen manier om toegevoegde brondossiers uit de UI van Hulpmiddelen van de Ontwikkeling te verwijderen
 + __Oorzaak:__ Deze functionaliteit is niet geïmplementeerd
-+ __Resolutie:__ Meld u aan bij uw leverancier voor cloudopslag met de referenties die zijn gedefinieerd in `.env`. Zoek de container die wordt gebruikt door de ontwikkelingsprogramma&#39;s (ook opgegeven in `.env`), navigeer naar de __bronmap__ en verwijder bronafbeeldingen. Mogelijk moet u de stappen uitvoeren die worden beschreven in het vervolgkeuzemenu [Bronbestanden onjuist](#troubleshooting__dev-tool-application-cache) als de verwijderde bronbestanden in het vervolgkeuzemenu worden weergegeven, omdat ze mogelijk lokaal in het cachegeheugen zijn opgeslagen in de toepassingsstatus van Ontwikkelingsgereedschappen.
++ __Resolutie:__ Meld u aan bij uw leverancier voor cloudopslag met de referenties die zijn gedefinieerd in `.env`. Zoek de container die wordt gebruikt door de ontwikkelingsprogramma&#39;s (ook opgegeven in `.env`), navigeer naar de __bronmap__ en verwijder bronafbeeldingen. Mogelijk moet u de stappen uitvoeren die worden beschreven in het vervolgkeuzemenu [Bronbestanden onjuist](#troubleshooting__dev-tool-application-cache) als de verwijderde bronbestanden in het vervolgkeuzemenu worden weergegeven, omdat ze mogelijk lokaal in het cachegeheugen zijn opgeslagen in de &quot;toepassingsstatus&quot; van Ontwikkelingsgereedschappen.
 
    ![Microsoft Azure Blob-opslag](./assets/development-tool/troubleshooting__remove-source-files.png)
