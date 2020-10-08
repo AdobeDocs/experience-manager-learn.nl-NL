@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 # Aanpassing van volledige webpaginabeleving {#personalization-fpe}
 
 Leer hoe u een activiteit maakt om uw sitepagina&#39;s die op AEM worden gehost, om te leiden naar een nieuwe pagina met Adobe Target.
+
+Voordat u een activiteit in Doel maakt, moet u de volgende instellingen uitvoeren:
+
+1. [Experience Platform Launch en AEM integreren](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
 ## Overzicht van scenario
 
