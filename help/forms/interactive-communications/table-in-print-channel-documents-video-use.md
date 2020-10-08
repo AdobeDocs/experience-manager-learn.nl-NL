@@ -9,7 +9,7 @@ doc-type: technical video
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -26,7 +26,8 @@ In de volgende video worden de stappen doorlopen die zijn vereist om tabelcompon
 Tabellen worden gebruikt om gegevens in tabelvorm weer te geven. De rijen in de lijst moeten afhankelijk van de gegevens groeien of krimpen die door de gegevensbron zijn teruggekeerd. Als u een tabel wilt gebruiken in een document met afdrukkanalen, moet u een lay-outbestand (xdp-bestand) maken met AEM Forms Designer. In dit lay-outdossier, voegen wij de lijst met het vereiste aantal kolommen toe. Zorg ervoor dat het objecttype van het kolomveld, afhankelijk van uw vereisten, TextField of Numeriek veld is. Voor elke kolom zorgen de velden ervoor dat de gegevensbinding is ingesteld op Naam gebruiken.
 
 >[!NOTE]
-Als u een tabel dynamisch wilt maken, moet u de rij als herhalend hebben gemarkeerd.
+>
+>Als u een tabel dynamisch wilt maken, moet u de rij als herhalend hebben gemarkeerd.
 
 **Probeer het op uw eigen server**
 
