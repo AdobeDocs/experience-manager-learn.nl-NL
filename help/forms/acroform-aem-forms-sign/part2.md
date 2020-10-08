@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1ba56ad44df4dc327cf37d39ac72539b5c7af4a2
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
@@ -32,4 +32,5 @@ De volgende stap bestaat uit het maken van een schema op basis van het Acrobat-f
 Deze demo werkt alleen op uw systeem als u een map maakt met de naam `acroforms` AEM Assets. Upload het formulier naar deze `acroforms` map.
 
 >[!NOTE]
-De voorbeeldcode zoekt naar het acroform in deze map. Het acroform is nodig om de verzonden gegevens van het adaptieve formulier samen te voegen.
+>
+>De voorbeeldcode zoekt naar het acroform in deze map. Het acroform is nodig om de verzonden gegevens van het adaptieve formulier samen te voegen.
