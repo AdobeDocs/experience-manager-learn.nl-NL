@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -45,6 +45,7 @@ Deze logboekverklaringen zijn beschikbaar voor overzicht verschillend gebaseerd 
 De [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, steunt het vastmaken van debugger aan de arbeiders van de Compute van Activa, met inbegrip van de capaciteit om breekpunten in de Code van VS te plaatsen en door de code te stappen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383/?quality=12&learn=on)
+
 _Doorklikken voor foutopsporing in een worker voor het berekenen van bedrijfsmiddelen met behulp van wskdebug (geen audio)_
 
 1. Zorg ervoor dat [wskdebug](../set-up/development-environment.md#wskdebug) - en [ngrok](../set-up/development-environment.md#ngork) -npm-modules zijn geïnstalleerd
