@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -50,6 +50,7 @@ Hiermee start u het hulpprogramma voor ontwikkeling op __http://localhost:9000__
 ### Een aangepaste worker uitvoeren
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
+
 _Doorklikken voor het uitvoeren van een Asset Compute-werk in Development Tool (geen audio)_
 
 1. Zorg ervoor dat het hulpprogramma voor de ontwikkeling van Asset Compute (Asset Compute Development) is gestart vanuit de hoofdmap van het project met behulp van de `aio app run` opdracht.
