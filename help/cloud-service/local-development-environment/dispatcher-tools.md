@@ -11,7 +11,7 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '1508'
 ht-degree: 1%
@@ -74,6 +74,7 @@ De versie van Dispatcher Tools verschilt van die van de AEM SDK. Zorg ervoor dat
 Merk op dat alle hieronder uitgegeven bevelen veronderstellen de huidige het werk folder de het uitbreiden inhoud van de Hulpmiddelen van de Verzender bevat.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
+
 *Deze video gebruikt macOS voor illustratieve doeleinden. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken*
 
 ## De Dispatcher-configuratiebestanden begrijpen
@@ -86,6 +87,7 @@ De Dispatcher Tools biedt een set Apache HTTP Web-server- en Dispatcher-configur
 Deze dossiers zijn bedoeld om in een Experience Manager Maven project aan de `dispatcher/src` omslag worden gekopieerd, als zij niet reeds in de Experience Manager Maven project bestaan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30602/?quality=12&learn=on)
+
 *Deze video gebruikt macOS voor illustratieve doeleinden. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken*
 
 Een volledige beschrijving van de configuratiebestanden is beschikbaar in de onverpakte Dispatcher Tools als `dispatcher-sdk-x.x.x/docs/Config.html`.
@@ -142,6 +144,7 @@ Om de Hulpmiddelen van de Verzender tegen de configuratie van de Verzender van e
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30603/?quality=12&learn=on)
+
 *Deze video gebruikt macOS voor illustratieve doeleinden. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken*
 
 ## Logboeken voor Dispatcher Tools
@@ -177,6 +180,7 @@ Een of meer parameters, die kunnen worden doorgegeven aan `docker_run`
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
+
 *Deze video gebruikt macOS voor illustratieve doeleinden. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken*
 
 ## Wanneer werkt u de Dispatcher Tools bij{#dispatcher-tools-version}
