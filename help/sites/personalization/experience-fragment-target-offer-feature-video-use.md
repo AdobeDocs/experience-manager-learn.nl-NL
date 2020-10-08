@@ -13,9 +13,9 @@ version: 6.4, 6.5
 uuid: 7b91f65d-5a35-419a-8cf7-be850165dd33
 discoiquuid: 45fc8d83-73fb-42e5-9c92-ce588c085ed4
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -52,6 +52,5 @@ In Adobe Experience Manager 6.4 wordt de personalisatieworkflow tussen AEM en Ta
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Vloeiende Personalisatie - AEM Ervaar Fragmenten in Adobe Target](https://www.youtube.com/watch?v=ohvKDjCb1yM)
 * [Documentatie over fragmenten voor ervaring](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
 * [Ervaringsfragmenten gebruiken](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)
