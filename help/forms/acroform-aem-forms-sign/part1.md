@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -38,8 +38,12 @@ Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. U kunt een geheel
 [Adobe Sign Text Tags Document](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
-Zorg ervoor dat de bestandsnaam van het acroformulier geen spaties bevat. In de huidige voorbeeldcode worden spaties niet afgehandeld.
-De namen van formuliervelden mogen alleen het volgende bevatten
-* enkele spatie
-* enkel onderstrepingsteken
-* alfanumerieke tekens
+>
+>Zorg ervoor dat de bestandsnaam van het acroformulier geen spaties bevat. In de huidige voorbeeldcode worden spaties niet afgehandeld.
+>
+>De namen van formuliervelden mogen alleen het volgende bevatten:
+>
+>* enkele spatie
+>* enkel onderstrepingsteken
+>* alfanumerieke tekens
+
