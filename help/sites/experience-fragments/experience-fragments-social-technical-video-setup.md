@@ -9,7 +9,7 @@ doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -22,6 +22,7 @@ ht-degree: 0%
 Met ervaringsfragmenten kunnen marketers ervaringen die in AEM zijn gemaakt, op sociale-mediaplatforms plaatsen. In de onderstaande video ziet u de instellingen en configuratie die nodig zijn om Experience Fragments te publiceren naar Facebook en Pinterest.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20592/?quality=9&learn=on)
+
 *[Ervaar Fragments]- Opstelling en configuratie aan sociale post aan Facebook en Pinterest*
 
 ## Checklist voor het configureren van Experience Fragments voor post naar Facebook en Pinterest
