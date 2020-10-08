@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -129,7 +129,8 @@ Lijnen 24-26 - Get ResourceResolver en dan het middel die aan gehechtheidFilePat
 De rest van de code leidt tot de voorwerpen van het Document door het kindvoorwerp van de middel te herhalen die aan attachéFilePath richten gebruikend API. Dit documentobject is specifiek voor AEM Forms. Vervolgens wordt de methode copyToFile van het documentobject gebruikt om het documentobject op te slaan.
 
 >[!NOTE]
-Aangezien wij het voorwerp van het Document gebruiken dat voor AEM Forms specifiek is, wordt het vereist dat u aemfd-cliënt-sdk gebiedsdeel in uw beven project omvat. De groep-id is com.adobe.aemfd en de artifact-id is aemfd-client-sdk.
+>
+>Aangezien wij het voorwerp van het Document gebruiken dat voor AEM Forms specifiek is, wordt het vereist dat u aemfd-cliënt-sdk gebiedsdeel in uw beven project omvat. De groep-id is com.adobe.aemfd en de artifact-id is aemfd-client-sdk.
 
 #### Samenstellen en implementeren
 
