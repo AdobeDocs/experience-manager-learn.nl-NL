@@ -12,7 +12,7 @@ doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 11%
@@ -30,7 +30,7 @@ Verstrekt geleidelijke instructies om Adobe Experience Manager (AEM) met de Slim
 
 >[!NOTE]
 >
-> Als u Smart Content Service wilt instellen, hebt u een Adobe ID-account nodig met beheerdersrechten voor de organisatie waarvoor Smart Content Service is ingeschakeld.
+>Als u Smart Content Service wilt instellen, hebt u een Adobe ID-account nodig met beheerdersrechten voor de organisatie waarvoor Smart Content Service is ingeschakeld.
 
 De videodetails uit de volgende zeer belangrijke taken die worden vereist om de Slimme Dienst van de Inhoud te vormen.
 
