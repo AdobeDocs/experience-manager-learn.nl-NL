@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -49,8 +49,10 @@ U kunt uw eigen OSGi-bundel schrijven en de AEM Forms Client SDK gebruiken om ee
 * [Documentservice-API gebruiken](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 U kunt de voorbeeldbundel ook gebruiken als onderdeel van deze zelfstudie-elementen.
+
 >[!NOTE]
-De voorbeeldbundel gebruikt de alias &quot;ares&quot; om de documenten te certificeren. Zorg er dus voor dat uw alias &quot;ares&quot; wordt genoemd wanneer u deze bundel gebruikt
+>
+>De voorbeeldbundel gebruikt de alias &quot;ares&quot; om de documenten te certificeren. Zorg er dus voor dat uw alias &quot;ares&quot; wordt genoemd wanneer u deze bundel gebruikt
 
 ## Het voorbeeld op uw lokale systeem testen
 
