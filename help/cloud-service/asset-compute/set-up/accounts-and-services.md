@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -68,6 +68,7 @@ Als u nog geen toegang hebt tot Microsoft Azure Blob Storage, meldt u zich aan v
 Deze zelfstudie maakt gebruik van Azure Blob Storage, maar [Amazon S3](#amazon-s3) kan ook worden gebruikt voor kleine wijzigingen in de zelfstudie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+
 _Doorklikken van provisioning Azure Blob Storage (Geen audio)_
 
 
