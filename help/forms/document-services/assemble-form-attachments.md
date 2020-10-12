@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
 translation-type: tm+mt
-source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
+source-git-commit: a9fbd73f128998bb201ef8715e5e725e94ee1ede
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Hier volgt de structuur van de payload-map nadat de formulierbijlagen zijn samen
 * Download het formulier [](assets/assemble-form-attachments-af.zip) Formulierbijlagen samenstellen naar uw lokale systeem.
 * Importeer het formulier van[de pagina Formulieren en documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) .
 * Download de [workflow](assets/assemble-form-attachments.zip) en importeer deze in AEM met pakketbeheer.
-* Download de aangepaste bundel (assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* De [aangepaste bundel downloaden](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * De bundel implementeren en starten met de [webconsole](http://localhost:4502/system/console/bundles)
 * Wijs de browser aan het formulier [Bijlagen samenstellen](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Voeg een bijlage in het ID-document en een paar pdf-documenten toe aan de sectie met bankafschriften
