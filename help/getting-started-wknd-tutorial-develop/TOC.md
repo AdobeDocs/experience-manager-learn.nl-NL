@@ -6,14 +6,14 @@ doc-type: tutorial
 activity: develop
 audience: developer
 user-guide-title: Aan de slag met AEM Sites - WKND-zelfstudie
-user-guide-description: A multi-part tutorial for developers new to AEM. Implement an AEM site for a fictitious lifestyle brand, the WKND.
+user-guide-description: Een meerdelige zelfstudie voor ontwikkelaars die nog niet zijn AEM. Implementeer een AEM site voor een fictief levensstijlmerk, de WKND.
 breadcrumb-title: AEM Sites WKND Tutorials
 index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 6%
+source-wordcount: '56'
+ht-degree: 3%
 
 ---
 
