@@ -2,13 +2,13 @@
 sub-product: formulieren
 audience: developer
 user-guide-title: AEM Forms-video's en -Tutorials
-user-guide-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers.
+user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
 source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
