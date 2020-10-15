@@ -1,13 +1,13 @@
 ---
 user-guide-title: AEM Sites-video's en -Tutorials
-user-guide-description: A collection of videos and tutorials for Adobe Experience Manager Sites.
+user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites.
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sites
 translation-type: tm+mt
 source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 3%
+source-wordcount: '471'
+ht-degree: 2%
 
 ---
 
@@ -50,8 +50,8 @@ ht-degree: 3%
    + [Projectarchetype AEM](developing/aem-project-archetype.md)
    + [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Aan de slag met AEM headless](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-   + [Begonnen het worden met AEM Redacteur van het KUUROORD en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Aan de slag met AEM redacteur van het KUUROORD en Hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Aan de slag met AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+   + [Aan de slag met AEM SPA Editor en hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [Pagina-eigenschappen uitbreiden](developing/page-properties-technical-video-develop.md)
    + [Ontwikkelen met het Stijlsysteem](developing/style-system-technical-video-understand.md)
    + [Aanbevolen werkwijzen voor stijlsystemen](developing/style-organization-style-system-understand-article.md)
@@ -65,10 +65,10 @@ ht-degree: 3%
    + [Experience Fragments gebruiken met Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub instellen](personalization/context-hub-technical-video-setup.md)
 + Toepassingen voor één pagina {#spa-editor}
-   + [Het gebruiken van de Redacteur van het KUUROORD](spa-editor/spa-editor-framework-feature-video-use.md)
+   + [De SPA Editor gebruiken](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Lesbestand Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
-   + [Begonnen het worden met AEM Redacteur van het KUUROORD en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Aan de slag met AEM redacteur van het KUUROORD en Hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Aan de slag met AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+   + [Aan de slag met AEM SPA Editor en hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
 + Beheer van meerdere sites {#multi-site-management}
    + [Inleiding tot het kopiëren van talen](./multi-site-management/language-copy-overview.md)
    + [Live kopiëren en vervagen](./multi-site-management/live-copy-and-blueprint.md)
