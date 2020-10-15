@@ -22,8 +22,8 @@ ht-degree: 4%
 + Tutorials met meerdere stappen {#multi}
    + [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Aan de slag met AEM headless](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-   + [Begonnen het worden met AEM Redacteur van het KUUROORD en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Aan de slag met AEM redacteur van het KUUROORD en Hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Aan de slag met AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+   + [Aan de slag met AEM SPA Editor en hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [Aan de slag met AEM en Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Zelfstudie AEM Dispatcher Cache](https://docs.adobe.com/content/help/en/experience-manager-learn/dispatcher-tutorial/overview.html)
    + [Zelfstudie over dynamische mediaclassieke aanbevolen werkwijzen](https://docs.adobe.com/content/help/en/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)
