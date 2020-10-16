@@ -10,9 +10,9 @@ version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2414'
 ht-degree: 1%
 
 ---
@@ -271,6 +271,10 @@ Voeg vervolgens de extensie Analytics toe aan de eigenschap Launch. We moeten de
    >
    >We raden u aan de optie *Bibliotheek voor mij* beheren te gebruiken als instelling voor Bibliotheekbeheer, omdat de `AppMeasurement.js` bibliotheek hierdoor veel gemakkelijker up-to-date kan worden gehouden.
 
+1. Schakel het selectievakje in om Activity Map **** gebruiken in te schakelen.
+
+   ![Activity Map voor gebruik inschakelen](assets/track-clicked-component/analytic-track-click.png)
+
 1. Voer onder **Algemeen** > **Trackingserver** de trackingserver in, bijvoorbeeld `tmd.sc.omtrdc.net`. Voer uw SSL-traceringsserver in als uw site ondersteuning biedt `https://`
 
    ![De trackingservers invoeren](assets/collect-data-analytics/analytics-config-trackingServer.png)
@@ -342,7 +346,7 @@ Nu de **Pagina Geladen** regel het baken van de Analyse verzendt, zou u de varia
 
 1. Open de [WKND-site](https://wknd.site/us/en.html) in uw browser.
 1. Klik op het pictogram Foutopsporing op het pictogram Foutopsporing van ![het ervaringsplatform](assets/collect-data-analytics/experience-cloud-debugger.png) om Foutopsporing op Experience Platform te openen.
-1. Zorg ervoor Debugger het bezit van de Lancering aan *uw* milieu van de Ontwikkeling in kaart brengt, zoals vroeger beschreven en het Registreren van de **Console** wordt gecontroleerd.
+1. Zorg ervoor Debugger het bezit van de Lancering aan *uw* milieu van de Ontwikkeling in kaart brengt, zoals vroeger beschreven en het Registreren **van de** Console wordt gecontroleerd.
 1. Open het menu Analytics en controleer of de rapportsuite is ingesteld op *uw* rapportsuite. De paginanaam moet ook worden ingevuld:
 
    ![Foutopsporing op het tabblad Analyse](assets/collect-data-analytics/analytics-tab-debugger.png)
