@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1831'
 ht-degree: 1%
 
 ---
@@ -255,9 +255,13 @@ Momenteel voert de **CTA geklikte** regel eenvoudig een consoleverklaring uit. G
 
    * `evar8` - `%Component ID%`
    * `prop8` - `%Component ID%`
-   * `event8` - `CTA Clicked`
+   * `event8`
 
    ![Prop en gebeurtenissen voor eVar instellen](assets/track-clicked-component/set-evar-prop-event.png)
+
+   >[!NOTE]
+   >
+   > Hier `%Component ID%` wordt gebruikt aangezien het een uniek herkenningsteken voor CTA zal verzekeren dat werd geklikt. Een potentieel nadeel van het gebruik `%Component ID%` is dat het rapport Analytics waarden als `button-2e6d32893a`zal bevatten. Het gebruiken `%Component Title%` zou een mensvriendelijkere naam maar de waarde zou niet uniek kunnen zijn.
 
 1. Voeg vervolgens een aanvullende handeling toe aan de rechterkant van de **Adobe Analytics - Variabelen** instellen door op het **plusteken** te tikken:
 
@@ -265,9 +269,11 @@ Momenteel voert de **CTA geklikte** regel eenvoudig een consoleverklaring uit. G
 
 1. Stel het **extensietype** in op **Adobe Analytics** en stel het **actietype** in op **Verzendbaken**.
 1. Onder **Volgen** stelt u het keuzerondje in op **`s.tl()`**.
-1. Kies bij **Koppelingstype** de optie **Aangepaste koppeling** en stel bij Naam **** koppeling de waarde in op de titel **van de** component van het gegevenselement:
+1. Kies voor **Koppelingstype** de optie **Aangepaste koppeling** en stel voor **Koppelingsnaam** de waarde in op: **`%Component Title%: CTA Clicked`**:
 
    ![Configuratie voor het baken van de Verbinding verzenden](assets/track-clicked-component/analytics-send-beacon-link-track.png)
+
+   Dit zal de dynamische variabele van de Titel **van de** Component van het gegevenselement combineren en statische koord **CTA geklikt**.
 
 1. Sla de wijzigingen op. De **CTA geklikt** regel zou nu de volgende configuratie moeten hebben:
 
@@ -286,7 +292,7 @@ Nu de **CTA geklikte** regel het baken van Analytics verzendt, zou u de variabel
 
 1. Open de [WKND-site](https://wknd.site/us/en.html) in uw browser.
 1. Klik op het pictogram Foutopsporing op het pictogram Foutopsporing van ![het ervaringsplatform](assets/track-clicked-component/experience-cloud-debugger.png) om Foutopsporing op Experience Platform te openen.
-1. Zorg ervoor Debugger het bezit van de Lancering aan *uw* milieu van de Ontwikkeling in kaart brengt, zoals vroeger beschreven en het Registreren van de **Console** wordt gecontroleerd.
+1. Zorg ervoor Debugger het bezit van de Lancering aan *uw* milieu van de Ontwikkeling in kaart brengt, zoals vroeger beschreven en het Registreren **van de** Console wordt gecontroleerd.
 1. Open het menu Analytics en controleer of de rapportsuite is ingesteld op *uw* rapportsuite.
 
    ![Foutopsporing op het tabblad Analyse](assets/track-clicked-component/analytics-tab-debugger.png)
