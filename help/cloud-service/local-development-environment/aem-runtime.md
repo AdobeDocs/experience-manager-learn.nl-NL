@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: ecbd4d21c5f41b2bc6db3b409767b767f00cc5d1
+source-git-commit: 4cfbf975919eb38413be8446b70b107bbfebb845
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,6 @@ ht-degree: 0%
 Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de AEM als QuickStart Jar van een Cloud Service-SDK. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie en inhoud te testen alvorens het aan broncontrole vast te leggen, en het op te stellen aan een AEM als milieu van de Cloud Service.
 
 Merk op dat `~` als steno voor de Folder van de Gebruiker wordt gebruikt. In Windows is dit het equivalent van `%HOMEPATH%`.
-
->[!VIDEO](https://video.tv.adobe.com/v/32551/?quality=12&learn=on)
-
->[!NOTE]
->
-> In deze video ziet u hoe u een lokale versie van Adobe Experience Manager binnen een paar minuten kunt installeren en uitvoeren met de lokale snelstartfunctie van de AEM SDK. In deze video wordt getoond hoe u de lokale snelstartfunctie van de AEM SDK kunt starten door te dubbelklikken op het Jar-bestand met de snelstartserver. Dit werkt echter niet in Java 8 en is geïnstalleerd op de computer. U kunt ook de lokale snelstart van de AEM SDK starten vanaf de opdrachtregel met de `java -jar ...` opdracht zoals [beschreven op deze pagina](#set-up-local-aem-author-service).
 
 ## Java installeren
 
@@ -55,9 +49,6 @@ De AEM als Cloud Service SDK, of AEM SDK, bevat de Quickstart Jar die wordt gebr
 ## Haal de QuickStart Jar uit het ZIP van de AEM SDK
 
 1. Het gedownloade `aem-sdk-XXX.zip` bestand uitpakken
-1. Zorg ervoor dat het bestand __license.properties__ voor uw Experience Manager-ontwikkelaars beschikbaar is
-
-Let op: dezelfde QuickStart Jar- en license.properties-bestanden worden gebruikt om _zowel_ AEM Author als Publish Services te starten.
 
 ## Lokale AEM-auteurservice instellen{#set-up-local-aem-author-service}
 
@@ -65,7 +56,6 @@ De lokale AEM Author Service biedt ontwikkelaars een lokale ervaring met auteurs
 
 1. De map maken `~/aem-sdk/author`
 1. Kopieer het JAR __-bestand voor__ QuickStart naar `~/aem-sdk/author` en wijzig de naam van het bestand in `aem-author-p4502.jar`
-1. Kopieer het bestand __license.properties__ naar  `~/aem-sdk/author`
 1. Start de lokale AEM-auteurservice door het volgende uit te voeren vanaf de opdrachtregel:
    + `java -jar aem-author-p4502.jar`
       + Geef het beheerderswachtwoord op als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert zijn om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
@@ -78,7 +68,6 @@ Windows:
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\author
 $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
-$ copy ../license.properties c:\Users\<My User>\aem-sdk\author
 $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
@@ -88,7 +77,6 @@ macOS / Linux:
 ```shell
 $ mkdir -p ~/aem-sdk/author
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
-$ cp ../license.properties ~/aem-sdk/author
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
@@ -99,7 +87,6 @@ De lokale AEM-publicatieservice biedt ontwikkelaars de lokale ervaring die eindg
 
 1. De map maken `~/aem-sdk/publish`
 1. Kopieer het JAR __-bestand voor__ QuickStart naar `~/aem-sdk/publish` en wijzig de naam van het bestand in `aem-publish-p4503.jar`
-1. Kopieer het bestand __license.properties__ naar  `~/aem-sdk/publish`
 1. Start de lokale AEM-publicatieservice door het volgende vanaf de opdrachtregel uit te voeren:
    + `java -jar aem-publish-p4503.jar`
       + Geef het beheerderswachtwoord op als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert zijn om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
@@ -112,7 +99,6 @@ Windows:
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\publish
 $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
-$ copy ../license.properties c:\Users\<My User>\aem-sdk\publish
 $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
@@ -122,7 +108,6 @@ macOS / Linux:
 ```shell
 $ mkdir -p ~/aem-sdk/publish
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
-$ cp ../license.properties ~/aem-sdk/publish
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
