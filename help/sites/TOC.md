@@ -4,9 +4,9 @@ user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experi
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '476'
 ht-degree: 2%
 
 ---
@@ -101,6 +101,7 @@ ht-degree: 2%
    + Analyse {#analytics}
       + [Paginagegevens verzamelen met Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Aangeklikte component bijhouden met Adobe Analytics](integrations/analytics/track-clicked-component.md)
+      + [Gegevens analyseren met Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [Overzicht](integrations/adobe-target/overview.md)
       + [Doelextensie toevoegen aan Starteigenschap](integrations/adobe-target/add-target-launch-extension.md)
