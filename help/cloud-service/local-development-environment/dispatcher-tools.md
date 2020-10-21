@@ -11,9 +11,9 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 1b4a927a68d24eeb08d0ee244e85519323482910
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1534'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,8 @@ De Verzender van Adobe Experience Manager (AEM) is een Apache HTTP-webservermodu
 De AEM als Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools, waarmee u Dispatcher lokaal kunt configureren, valideren en simuleren. Dispatcher Tools bestaat uit:
 
 + een basislijnset van Apache HTTP Web-server en Dispatcher-configuratiebestanden in `.../dispatcher-sdk-x.x.x/src`
-+ een CLI-hulpprogramma voor configuratievalidatie, dat zich bevindt op `.../dispatcher-sdk-x.x.x/bin/validator`
++ een CLI-hulpprogramma voor configuratievalidatie, dat zich bevindt op `.../dispatcher-sdk-x.x.x/bin/validate` (Dispatcher SDK 2.0.29+)
++ een hulpmiddel van de configuratiegeneratie CLI, dat bij wordt gevestigd `.../dispatcher-sdk-x.x.x/bin/validator`
 + een hulpmiddel van de configuratieplaatsing CLI, dat bij wordt gevestigd `.../dispatcher-sdk-x.x.x/bin/docker_run`
 + een Docker-afbeelding die Apache HTTP Web-server uitvoert met de module Dispatcher
 
@@ -39,7 +40,7 @@ Merk op dat `~` als steno voor de Folder van de Gebruiker wordt gebruikt. In Win
 ## Vereisten
 
 1. Windows-gebruikers moeten Windows 10 Professional gebruiken
-1. Installeer [Experience Manager Publish QuickStart](./aem-runtime.md) op de lokale ontwikkelcomputer.
+1. Installeer [Experience Manager Publish QuickStart Jar](./aem-runtime.md) op de lokale ontwikkelcomputer.
    + U kunt desgewenst de nieuwste [AEM referentiewebsite](https://github.com/adobe/aem-guides-wknd/releases) installeren op de lokale AEM-publicatieservice. Deze website wordt in deze zelfstudie gebruikt om een werkende Dispatcher te visualiseren.
 1. Installeer en start de nieuwste versie van [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) op de lokale ontwikkelcomputer.
 
@@ -49,13 +50,10 @@ De AEM als Cloud Service SDK, of AEM SDK, bevat de Dispatcher Tools die worden g
 
 Als de AEM als Cloud Service SDK al is gedownload om de lokale AEM-runtime [in te](./aem-runtime.md)stellen, hoeft deze niet opnieuw te worden gedownload.
 
-1. Meld u aan bij [Experience.adobe.com/#/download](https://experience.adobe.com/#/downloads) met uw Adobe ID
-   + Merk op dat uw organisatie van de Adobe voor AEM als Cloud Service __moet__ worden provisioned om de AEM als Cloud Service SDK te downloaden.
-1. Ga naar het __AEM als tabblad Cloud Service__
-1. Sorteren op __gepubliceerde datum__ in __aflopende__ volgorde
-1. Klik op de meest recente __AEM SDK__ -resultaatrij
-1. Controleer en accepteer de EULA en tik op de knop __Downloaden__
-1. Controleer of AEM Dispatcher Tools v2.0.21+ van SDK wordt gebruikt
+1. Meld u aan bij [Experience.adobe.com/#/download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=1) met uw Adobe ID
+   + Uw organisatie van de Adobe __moet__ voor AEM als Cloud Service worden provisioned om de AEM als Cloud Service SDK te downloaden
+1. Klik op de laatste __AEM SDK__ -resultaatrij die u wilt downloaden
+   + Zorg ervoor dat AEM Dispatcher Tools v2.0.29+ van SDK is opgenomen in de downloadbeschrijving
 
 ## De Dispatcher Tools extraheren uit het ZIP-bestand van de AEM SDK
 
@@ -92,20 +90,25 @@ Deze dossiers zijn bedoeld om in een Experience Manager Maven project aan de `di
 
 Een volledige beschrijving van de configuratiebestanden is beschikbaar in de onverpakte Dispatcher Tools als `dispatcher-sdk-x.x.x/docs/Config.html`.
 
+## Configuraties valideren
+
+Naar keuze, kunnen de Dispatcher en Apache de serverconfiguraties van het Web (via `httpd -t`) worden bevestigd gebruikend het `validate` manuscript (niet om met uitvoerbaar `validator` te worden verward).
+
++ Gebruik:
+   + Windows: `bin\validate src`
+   + macOS / Linux: `./bin/validate ./src`
+
 ## Verzending lokaal uitvoeren
 
-Om de Dispatcher plaatselijk in werking te stellen, moeten de de configuratiedossiers van de Verzender worden gebruikt om het te vormen, worden bevestigd gebruikend het hulpmiddel `validator` CLI van de Hulpmiddelen van de Verzender.
+Om de Verzender plaatselijk in werking te stellen, moeten de de configuratiedossiers van de Verzender worden geproduceerd gebruikend het hulpmiddel `validator` CLI van de Hulpmiddelen van de Verzender.
 
 + Gebruik:
    + Windows: `bin\validator full -d out src`
    + macOS / Linux: `./bin/validator full -d ./out ./src`
 
-De validatie heeft een tweeledig doel:
+Dit bevel transpileert de configuraties in een dossier-reeks compatibel met de Server van het Web van Apache HTTP van de container van de Docker.
 
-+ Valideert de Apache HTTP Web server en de Dispatcher configuratiedossiers voor correctheid
-+ Transpiles de configuraties in een dossier-reeks compatibel met de Server van het Web van Apache HTTP van de container van de Dokker.
-
-Zodra bevestigd, worden de getranspileerde configuraties gebruikt in werking stellen plaatselijk Verzender in de container van het Dok. Het is belangrijk dat de nieuwste configuraties zijn gevalideerd __en uitgevoerd met__ de `-d` optie van de validator.
+Zodra geproduceerd, worden de getranspileerde configuraties gebruikt in werking gestelde Verzender plaatselijk in de container van het Dok. Het is belangrijk dat u ervoor zorgt dat de nieuwste configuraties zijn gevalideerd met behulp van de `validate` optie van de validator __en zijn uitgevoerd__ `-d` .
 
 + Gebruik:
    + Windows: `bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
