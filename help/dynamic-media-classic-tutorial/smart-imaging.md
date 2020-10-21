@@ -8,9 +8,9 @@ topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: 317fb625e7af57b7ad0079014c341eab9adda376
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Slimme afbeeldingen werken met afbeeldingen die via HTTP, HTTPS en HTTP/2 worden
 
 Smart Imaging is inbegrepen bij uw bestaande vergunning van Dynamic Media Classic. Er zijn geen extra kosten voor deze functie. Om van het voordeel te zijn, moet u aan twee vereisten voldoen: hebben een Adobe-gebundelde CDN en een specifiek domein. Vervolgens moet u deze voor uw account inschakelen, omdat deze functie niet automatisch wordt ingeschakeld.
 
-Als u Smart Imaging inschakelt, wordt begonnen met het verzenden van technische ondersteuning via e-mail van [s7support@adobe.com](mailto:s7support@adobe.com). Zij zullen met u aan opstelling werken een douanedomein dat u met Slimme Beelden zult associëren. U gaat één parameter met betrekking tot caching (Tijd te leven, of TTL) veranderen en de steun zal het geheime voorgeheugen ontruimen. U kunt desgewenst ook een optionele stapsgewijze stap uitvoeren voordat u naar de productie gaat. Als Smart Imaging vervolgens is ingeschakeld, levert u kleinere afbeeldingen op maat voor klanten, maar met dezelfde kwaliteit als u had gevraagd. Dat betekent dat ze sneller pagina&#39;s laden. Dit gebeurt allemaal automatisch omdat Adobe Sensei de meest efficiënte grootte kan kiezen.
+Als u Smart Imaging inschakelt, begint u met het verzenden van een verzoek om technische ondersteuning door |tot instelling van een ondersteuningszaak| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De steun zal met u aan opstelling werken een douanedomein dat u met Slimme Beelden zult associëren. U gaat één parameter met betrekking tot caching (Tijd te leven, of TTL) veranderen en de steun zal het geheime voorgeheugen ontruimen. U kunt desgewenst ook een optionele stapsgewijze stap uitvoeren voordat u naar de productie gaat. Als Smart Imaging vervolgens is ingeschakeld, levert u kleinere afbeeldingen op maat voor klanten, maar met dezelfde kwaliteit als u had gevraagd. Dat betekent dat ze sneller pagina&#39;s laden. Dit gebeurt allemaal automatisch omdat Adobe Sensei de meest efficiënte grootte kan kiezen.
 
 Als u Smart Imaging hebt ingeschakeld, wilt u controleren of het werkt zoals u had verwacht.
 
