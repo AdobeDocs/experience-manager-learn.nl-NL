@@ -5,10 +5,10 @@ breadcrumb-title: AEM Assets Tutorials
 sub-product: elementen
 team: TM
 translation-type: tm+mt
-source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
+source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 10%
+ht-degree: 7%
 
 ---
 
@@ -55,10 +55,9 @@ ht-degree: 10%
 
 + Geavanceerd metagegevensbeheer{#metadata}
    + [Trapsgewijze metagegevens](metadata/cascade-metadata-feature-video-use.md)
-   + [Overzicht van slimme tags](metadata/smart-tags-feature-video-use.md)
-   + [De functie Smart Tags configureren ](metadata/smart-tags-technical-video-setup.md)
-   + [Verbeterde slimme tags](metadata/enhanced-smart-tags-feature-video-use.md)
-   + [Verbeterde slimme tags configureren](metadata/enhanced-smart-tags-technical-video-setup.md)
+   + [Slimme tags voor afbeeldingen](metadata/image-smart-tags.md)
+   + [Aangepaste slimme tags voor afbeeldingen](metadata/custom-smart-tags.md)
+   + [Slimme tags voor video&#39;s](metadata/video-smart-tags.md)
    + [Metagegevens importeren en exporteren](metadata/metadata-import-feature-video-use.md)
 
 + Delen en distributie{#sharing}
