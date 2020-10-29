@@ -8,9 +8,9 @@ doc-type: technical video
 activity: setup
 version: 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScrip
 
 ## De Configuratie van de plaats en Segmenten ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt de Javascript API gebruiken om opgeloste segmenten [te](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments)bepalen. Laat de segmenten ContextHub voor uw plaats onder toe [!UICONTROL Configuration Browser].
+ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt de Javascript API gebruiken om opgeloste segmenten [te](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments)bepalen. Laat de segmenten ContextHub voor uw plaats onder toe [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html).
 
 ## Segmenten maken {#create-segments}
 
