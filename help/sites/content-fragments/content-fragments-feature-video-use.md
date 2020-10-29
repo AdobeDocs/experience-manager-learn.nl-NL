@@ -9,9 +9,9 @@ doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Meer inf
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM de Modellen van de Fragmenten van de Inhoud, de gegevensschema&#39;s van de Fragmenten van de Inhoud, moeten via AEM worden toegelaten [!UICONTROL Configuration Browser], die de Modellen van het Fragment van de Inhoud om op een per configuratiebasis toestaat worden bepaald.
+AEM de Modellen van de Fragmenten van de Inhoud, de gegevensschema&#39;s van de Fragmenten van de Inhoud, moeten via AEM worden toegelaten [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html), die de Modellen van het Fragment van de Inhoud om op een per configuratiebasis toestaat worden bepaald.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
