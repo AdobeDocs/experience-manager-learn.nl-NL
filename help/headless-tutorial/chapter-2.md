@@ -4,9 +4,9 @@ seo-title: Aan de slag met AEM Content Services - Hoofdstuk 2 - Modellen voor ge
 description: Hoofdstuk 2 van de AEM zelfstudie zonder koppen omvat het inschakelen en definiëren van modellen van inhoudsfragmenten die worden gebruikt om een genormaliseerde gegevensstructuur en ontwerpinterface te definiëren voor het maken van gebeurtenissen.
 seo-description: Hoofdstuk 2 van de AEM zelfstudie zonder koppen omvat het inschakelen en definiëren van modellen van inhoudsfragmenten die worden gebruikt om een genormaliseerde gegevensstructuur en ontwerpinterface te definiëren voor het maken van gebeurtenissen.
 translation-type: tm+mt
-source-git-commit: 885e30dea2a21dff789c98bdc5beb2f758b806f3
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '863'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ In dit hoofdstuk wordt beschreven hoe u modellen van inhoudsfragmenten kunt insc
 
 ## Modellen van inhoudsfragmenten inschakelen
 
-Modellen van inhoudsfragmenten **moeten** via **AEM zijn ingeschakeld[!UICONTROL Configuration Browser]**.
+Modellen van inhoudsfragmenten **moeten** via **[AEM zijn ingeschakeld [!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
 Als Modellen van het Fragment van de Inhoud **niet** voor een configuratie worden toegelaten, zal de **[!UICONTROL Create]>[!UICONTROL Content Fragment]** knoop niet voor de relevante AEM configuratie verschijnen.
 
@@ -36,10 +36,12 @@ Als Modellen van het Fragment van de Inhoud **niet** voor een configuratie worde
 >Opdat een configuratie een inhoudshiërarchie beïnvloedt, moet de configuratie via het `cq:conf` bezit op die inhoudshiërarchie worden van verwijzingen voorzien. (Dit wordt bereikt voor de [!DNL WKND Mobile] configuratie in **Stap 5** hieronder).
 >
 >Wanneer de `global` configuratie wordt gebruikt, is de configuratie op alle inhoud van toepassing, en te hoeven niet `cq:conf` worden geplaatst.
+>
+>Raadpleeg de [[!UICONTROL Configuration Browser] documentatie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) voor meer informatie.
 
 1. Meld u aan bij AEM-auteur als een gebruiker met de juiste machtigingen om de relevante configuratie te wijzigen.
    * Voor deze zelfstudie kan de gebruiker van de **beheerder** worden gebruikt.
-1. Ga naar **[!UICONTROL Tool]>[!UICONTROL General]>[!UICONTROL Configuration Browser]**
+1. Ga naar **[!UICONTROL Tool]> [!UICONTROL General] >[!UICONTROL Configuration Browser]**
 1. Tik op het **mappictogram** naast **[!DNL WKND Mobile]** het pictogram en tik vervolgens linksboven op de **[!UICONTROL Edit]knop** .
 1. Selecteer **[!UICONTROL Content Fragment Models]** en tik **[!UICONTROL Save & Close]** in de rechterbovenhoek.
 
@@ -58,7 +60,7 @@ Als Modellen van het Fragment van de Inhoud **niet** voor een configuratie worde
 
 1. Pas de **[!DNL WKND Mobile]** configuratie toe op de **[!DNL WKND Mobile]middelenmap** om toe te staan dat inhoudsfragmenten uit modellen van inhoudsfragmenten worden gemaakt in de maphiërarchie Elementen:
 
-   1. Ga naar **[!UICONTROL AEM]>[!UICONTROL Assets]>[!UICONTROL Files]**
+   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Assets] >[!UICONTROL Files]**
    1. Selecteer de **[!UICONTROL WKND Mobile]map**
    1. Tik op de **[!UICONTROL Properties]** knop in de bovenste actiebalk om deze te openen [!UICONTROL Folder Properties]
    1. Tik in [!UICONTROL Folder Properties]op de **[!UICONTROL Cloud Services]** tab
@@ -79,7 +81,7 @@ Met de toewijzing kunnen we inhoudsfragment definiëren dat wordt gebruikt om de
 
 ## Het model van het inhoudsfragment maken
 
-1. Ga naar **[!UICONTROL Tools]>[!UICONTROL Assets]>[!UICONTROL Content Fragment Models]**.
+1. Ga naar **[!UICONTROL Tools]> [!UICONTROL Assets] >[!UICONTROL Content Fragment Models]**.
 1. Tik op de **[!DNL WKND Mobile]** map die u wilt openen.
 1. Tik **[!UICONTROL Create]** om de ontwerpwizard Inhoudsfragmentmodel te openen.
 1. Voer **[!DNL Event]** de velden in als **[!UICONTROL Model Title]** (beschrijving is optioneel) *en tik op* **[!UICONTROL Create]** om op te slaan.
@@ -88,7 +90,7 @@ Met de toewijzing kunnen we inhoudsfragment definiëren dat wordt gebruikt om de
 
 ## De structuur van het inhoudsfragmentmodel definiëren
 
-1. Ga naar **[!UICONTROL Tools]>[!UICONTROL Assets]>[!UICONTROL Content Fragment Models]>[!DNL WKND]**.
+1. Ga naar **[!UICONTROL Tools]> [!UICONTROL Assets] > [!UICONTROL Content Fragment Models] >[!DNL WKND]**.
 1. Selecteer het **[!DNL Event]** **[!UICONTROL Edit]** inhoudsfragmentmodel en tik in de bovenste actiebalk.
 1. Sleep de **[!UICONTROL Data Types]tab** aan de rechterkant naar de linkerdropzone om het **[!UICONTROL Single line text input]** **[!DNL Question]** veld te definiëren.
 1. Controleer of het nieuwe bestand links **[!UICONTROL Single line text input]** is geselecteerd en of het **[!UICONTROL Properties]tabblad** rechts is geselecteerd. Vul de velden Eigenschappen als volgt in:
