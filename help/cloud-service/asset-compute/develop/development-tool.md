@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Hiermee start u het hulpprogramma voor ontwikkeling op __http://localhost:9000__
 1. __Bronbestand:__ De selectie van het bronbestand wordt gebruikt om:
    + Geselecteerde activa binair die het `source` binaire getal zal zijn dat tot de worker van de Verwerking van Activa wordt overgegaan
    + Bronbestanden uploaden
-1. __Definitie van profiel voor middelenberekening:__ Definieert de worker Asset Compute die moet worden uitgevoerd inclusief parameters: inclusief het URL-eindpunt van de worker, de naam van de resulterende uitvoering en eventuele parameters
+1. __Definitie van profiel(en) voor middelenberekening:__ Definieert de worker Asset Compute die moet worden uitgevoerd inclusief parameters: inclusief het URL-eindpunt van de worker, de naam van de resulterende uitvoering en eventuele parameters
 1. __Uitvoeren:__ Met de knop Uitvoeren wordt het profiel Asset Compute uitgevoerd, zoals gedefinieerd in de configuratieprofieleditor voor Asset Compute
 1. __Afbreken:__ Met de knop Afbreken annuleert u een uitvoering die is gestart nadat u op de knop Uitvoeren hebt getikt
 1. __Verzoek/antwoord:__ Verstrekt de HTTP- verzoek en reactie aan/van de worker Asset Compute die in Adobe I/O Runtime wordt uitgevoerd. Dit kan nuttig zijn voor foutopsporing
@@ -84,24 +84,10 @@ Als u codewijzigingen aanbrengt in de code van de worker terwijl het Development
 
 ## Problemen oplossen
 
-### Vervolgkeuzelijst voor bronbestanden is onjuist{#troubleshooting__dev-tool-application-cache}
-
-Het hulpmiddel van de Ontwikkeling van de Compute van activa kan een staat ingaan waar het stapelgegevens ophaalt, en het merkbaarst in het __Brondossier__ dropdown tonend onjuiste punten is.
-
-+ __Fout:__ In het vervolgkeuzemenu Bronbestand worden onjuiste items weergegeven.
-+ __Oorzaak:__ De browserstatus van Stale in cache veroorzaakt de
-+ __Resolutie:__ In uw browser ontruimen volledig de browser staat van het lusje van de browser, het browser geheime voorgeheugen, lokale opslag en de dienstarbeider.
-
-### Ontbrekende of ongeldige devToolToken-queryparameter{#troubleshooting__devtooltoken}
-
-+ __Fout:__ Melding van &quot;onbevoegd&quot; in Asset Compute Development Tool
-+ __Oorzaak:__ `devToolToken` ontbreekt of is ongeldig
-+ __Resolutie:__ Sluit het de browser van het Hulpmiddel van de Ontwikkeling van Activa Compute, beëindigt om het even welke lopende processen van het Hulpmiddel van de Ontwikkeling die via het `aio app run` bevel worden in werking gesteld, en herstart het Hulpmiddel van de Ontwikkeling (gebruikend `aio app run`).
-
-### Kan bronbestanden niet verwijderen{#troubleshooting__remove-source-files}
-
-+ __Fout:__ Er is geen manier om toegevoegde brondossiers uit de UI van Hulpmiddelen van de Ontwikkeling te verwijderen
-+ __Oorzaak:__ Deze functionaliteit is niet geïmplementeerd
-+ __Resolutie:__ Meld u aan bij uw leverancier voor cloudopslag met de referenties die zijn gedefinieerd in `.env`. Zoek de container die wordt gebruikt door de ontwikkelingsprogramma&#39;s (ook opgegeven in `.env`), navigeer naar de __bronmap__ en verwijder bronafbeeldingen. Mogelijk moet u de stappen uitvoeren die worden beschreven in het vervolgkeuzemenu [Bronbestanden onjuist](#troubleshooting__dev-tool-application-cache) als de verwijderde bronbestanden in het vervolgkeuzemenu worden weergegeven, omdat ze mogelijk lokaal in het cachegeheugen zijn opgeslagen in de &quot;toepassingsstatus&quot; van Ontwikkelingsgereedschappen.
-
-   ![Microsoft Azure Blob-opslag](./assets/development-tool/troubleshooting__remove-source-files.png)
++ [Onjuiste JAML-inspringing](../troubleshooting.md#incorrect-yaml-indentation)
++ [memorySize limit is set to low](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [Development Tool kan niet worden gestart omdat private.key ontbreekt](../troubleshooting.md#missing-private-key)
++ [Vervolgkeuzelijst voor bronbestanden is onjuist](../troubleshooting.md#source-files-dropdown-incorrect)
++ [Ontbrekende of ongeldige devToolToken-queryparameter](../troubleshooting.md#missing-or-invalid-devtooltoken-query-parameter)
++ [Kan bronbestanden niet verwijderen](../troubleshooting.md#unable-to-remove-source-files)
++ [Gedeeltelijk getekende/beschadigde vertoning geretourneerd](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
