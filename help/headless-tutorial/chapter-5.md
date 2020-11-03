@@ -2,7 +2,7 @@
 title: Hoofdstuk 5 - Pagina's met inhoudsservices ontwerpen
 description: Hoofdstuk 5 van de AEM zelfstudie zonder koptekst behandelt het maken van de pagina's van de sjablonen die zijn gedefinieerd in hoofdstuk 4. Deze pagina's fungeren als eindpunten voor JSON HTTP.
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Hoofdstuk 5 van de AEM zelfstudie zonder koptekst behandelt het maken van de pag
 
 ## De API-pagina voor gebeurtenissen maken
 
-1. Ga naar **[!UICONTROL AEM]>[!UICONTROL Sites]>[!DNL WKND Mobile]>[!DNL English]>[!DNL API]**.
+1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**.
 1. **Tik op het label van de API-pagina**, tik vervolgens op de knop **Maken** in de bovenste actiebalk en maak een nieuwe API-pagina voor gebeurtenissen onder de API-pagina.
    1. Tik op **Maken** in de bovenste actiebalk
    1. Sjabloon voor **API** voor gebeurtenissen selecteren
@@ -44,7 +44,7 @@ Hoofdstuk 5 van de AEM zelfstudie zonder koptekst behandelt het maken van de pag
 1. Voeg **labellijn** toe om boven de gebeurtenissen weer te geven.
    1. De **component Text** bewerken
    1. Voer de tekst in:
-      1. `The WKND is here.`
+      * `The WKND is here.`
 
 1. Selecteer de **gebeurtenissen** die u wilt weergeven:
    1. Stel de volgende configuratie in op het tabblad **Eigenschappen** :
