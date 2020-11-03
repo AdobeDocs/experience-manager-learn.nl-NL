@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM als de microservices van Asset Compute van de Cloud Service ondersteunen de ontwikkeling en implementatie van aangepaste workers die worden gebruikt om binaire gegevens van elementen die zijn opgeslagen in AEM te lezen en te manipuleren, meestal om aangepaste elementuitvoeringen te maken.
 
-Terwijl in AEM 6.x de processen van het AEM van het Werkschema werden gebruikt om, activa te lezen om te transformeren en terug te schrijven uitvoeringen, in AEM als de arbeiders van de Compute van Activa van de Cloud Service aan deze behoefte voldoen.
+Terwijl in AEM 6.x de processen van het AEMWerkschema werden gebruikt om, activa te lezen om te transformeren en terug te schrijven vertoningen, in AEM als de arbeiders van de Rekenmachine van de Activa van de Cloud Service aan deze behoefte voldoen.
 
 ## Wat u gaat doen
 
@@ -112,7 +112,7 @@ De arbeiders van de Compute van activa verstrekken diverse niveaus van het zuive
 
 ## Implementeren
 
-Leer hoe te om de arbeiders van de Compute van de douaneactiva met AEM als Cloud Service te integreren, door hen eerst in Adobe I/O Runtime op te stellen en dan van AEM als Auteur van de Cloud Service via de Profiles van de Verwerking van AEM Assets aan te halen.
+Leer hoe u workers voor het samenstellen van aangepaste middelen als Cloud Service integreert met AEM, door deze eerst te implementeren in Adobe I/O Runtime en vervolgens bij AEM aan te roepen als Cloud Service Auteur via de verwerkingsprofielen van AEM Assets.
 
 ### Distribueren naar Adobe I/O Runtime
 
@@ -122,13 +122,19 @@ De arbeiders van de Compute van activa moeten aan Adobe I/O Runtime worden opges
 
 ### Workers integreren via AEM verwerkingsprofielen
 
-Zodra de medewerkers van Asset Compute zijn geïmplementeerd in Adobe I/O Runtime, kunnen deze in AEM worden geregistreerd als Cloud Service via [middelenverwerkingsprofielen](../../assets/configuring/processing-profiles.md). Verwerkingsprofielen worden op hun beurt toegepast op de mappen Middelen die op de elementen daarin van toepassing zijn.
+Zodra de medewerkers van Asset Compute zijn geïmplementeerd in Adobe I/O Runtime, kunnen deze in AEM worden geregistreerd als Cloud Service via [middelenverwerkingsprofielen](../../assets/configuring/processing-profiles.md). Verwerkingsprofielen worden op hun beurt toegepast op de mappen met elementen die op de elementen ervan van toepassing zijn.
 
 + [Integreren met AEM verwerkingsprofielen](./deploy/processing-profiles.md)
 
-## Lesbestand met codebase op Github
+## Geavanceerd
 
-De zelfstudiecodebase is beschikbaar op Github op:
+Deze verkorte zelfstudies behandelen geavanceerdere gebruiksgevallen, voortbouwend op basiskennis die in de voorgaande hoofdstukken is vastgelegd.
+
++ [Ontwikkelen van een worker](./advanced/metadata.md) voor het berekenen van metagegevens van bedrijfsmiddelen die metagegevens naar de
+
+## Codebase op Github
+
+De zelfstudie is beschikbaar op Github op:
 
 + [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ master vertakking
 
@@ -142,14 +148,13 @@ Hieronder volgen verschillende bronnen van Adobe die meer informatie en nuttige 
 
 + [Asset Compute Service-documentatie](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
 + [Leesmij van het Hulpmiddel van de Ontwikkeling van de Verwerking van de Activa](https://github.com/adobe/asset-compute-devtool)
-
-### Andere codevoorbeelden
-
 + [Voorbeeldworkers van Asset Compute](https://github.com/adobe/asset-compute-example-workers)
 
 ### API&#39;s en SDK&#39;s
 
 + [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk)
    + [Commentaar voor het berekenen van bedrijfsmiddelen](https://github.com/adobe/asset-compute-commons)
+   + [XMP voor middelenboekhouding](https://github.com/adobe/asset-compute-xmp#readme)
 + [Adobe Cloud Blobstore Wrapper library](https://github.com/adobe/node-cloud-blobstore-wrapper)
 + [Adobe Node Fetch, bibliotheek opnieuw proberen](https://github.com/adobe/node-fetch-retry)
++ [Voorbeeldworkers van Asset Compute](https://github.com/adobe/asset-compute-example-workers)
