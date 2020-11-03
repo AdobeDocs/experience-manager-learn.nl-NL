@@ -10,10 +10,10 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 0%
+source-wordcount: '630'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Maak eerst een nieuw verwerkingsprofiel dat de worker aanroept met de configuree
    + __Extensie:__ `png`
       + De extensie van de vertoning die wordt gegenereerd. Stel dit in op de ondersteunde uitvoerindeling die door de webservice van de worker wordt ondersteund. Dit resulteert in een transparante achtergrond achter de uitgesneden cirkel. `png`
    + __Eindpunt:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
-      + Dit is de URL naar de worker die via `aio app get-url`deze URL is verkregen. Zorg ervoor dat de URL-punten zich op de juiste werkruimte bevinden, op basis van de AEM als een Cloud Service-omgeving waarin het verwerkingsprofiel is geconfigureerd. Dit subdomein komt overeen met de `development` werkruimte.
+      + Dit is de URL naar de worker die via `aio app get-url`deze URL is verkregen. Zorg ervoor dat de URL-punten zich in de juiste werkruimte bevinden, op basis van de AEM als een Cloud Service-omgeving.
       + Controleer of de URL van de worker naar de juiste werkruimte verwijst. AEM als werkgebied van de Cloud Service zou werkruimte URL van het Stadium moeten gebruiken, en AEM als Productie zou de werkruimte URL van de Productie moeten gebruiken.
    + __Serviceparameters__
       + Tik op parameter __toevoegen__
@@ -54,7 +54,7 @@ Maak eerst een nieuw verwerkingsprofiel dat de worker aanroept met de configuree
       + Deze sleutel-/waardeparen worden doorgegeven aan de worker Asset Compute en zijn beschikbaar via het `rendition.instructions` JavaScript-object.
    + __MIME-typen__
       + __Omvat:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
-         + Deze MIME-typen zijn de enige die door de webservice van de worker worden ondersteund. Hierdoor wordt beperkt welke elementen door de aangepaste worker kunnen worden verwerkt.
+         + Deze MIME-typen zijn de enige typen van de npm-modules van de worker. In deze lijst wordt beperkt welke elementen door de aangepaste worker worden verwerkt.
       + __Omvat niet:__ `Leave blank`
          + Verwerk nooit activa met deze Types MIME gebruikend deze de dienstconfiguratie. In dit geval gebruiken we alleen een lijst van gewenste personen.
 1. Tik op __Opslaan__ rechtsboven
@@ -83,26 +83,9 @@ Het definitieve project Asset Compute is beschikbaar op Github op:
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, d.w.z.`.env`,`.config.json`of`.aio`._
+_Github bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, d.w.z. `.env`, `.config.json` of `.aio`._
 
 ## Problemen oplossen
 
-### Aangepaste uitvoering ontbreekt in element
-
-+ __Fout:__ Nieuwe en opnieuw verwerkte elementen worden verwerkt, maar de aangepaste uitvoering ontbreekt
-
-#### Profiel verwerken dat niet is toegepast op de bovenliggende map
-
-+ __Oorzaak:__ Het element bestaat niet in een map met het verwerkingsprofiel dat de aangepaste worker gebruikt
-+ __Resolutie:__ Pas het verwerkingsprofiel toe op een bovenliggende map van het element
-
-#### Bezig met verwerken van profiel vervangen door lager verwerkingsprofiel
-
-+ __Oorzaak:__ Het middel bestaat onder een omslag met het toegepaste Profiel van de de arbeidersverwerking van de douane, nochtans een verschillend Profiel van de Verwerking dat niet de klantenarbeider gebruikt is toegepast tussen die omslag en het middel.
-+ __Resolutie:__ De twee verwerkingsprofielen combineren of op een andere manier afstemmen en het tussentijdse verwerkingsprofiel verwijderen
-
-### Verwerking van element mislukt
-
-+ __Fout:__ Asset Processing Failed badge displayed on asset
-+ __Oorzaak:__ Er is een fout opgetreden bij de uitvoering van de aangepaste worker
-+ __Resolutie:__ Volg de instructies op het [zuiveren van de activering](../test-debug/debug.md#aio-app-logs) van Adobe I/O Runtime gebruikend `aio app logs`.
++ [Aangepaste uitvoering ontbreekt in element in AEM](../troubleshooting.md#custom-rendition-missing-from-asset)
++ [Verwerking van middelen mislukt in AEM](../troubleshooting.md#asset-processing-fails)
