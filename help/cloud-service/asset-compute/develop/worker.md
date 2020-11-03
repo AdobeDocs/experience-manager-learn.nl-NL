@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -30,18 +30,20 @@ We maken een worker Asset Compute die een nieuwe horizontale afbeeldingsuitvoeri
 
 Workers voor Asset Compute implementeren het API-contract voor de worker van Asset Compute SDK in de `renditionCallback(...)` functie, die conceptueel is:
 
-+ __Invoer:__ Het binaire element en de parameters van een AEM element
++ __Invoer:__ De oorspronkelijke binaire en verwerkingsprofielparameters van een AEM element
 + __Uitvoer:__ Een of meer uitvoeringen die aan het AEM-element moeten worden toegevoegd
 
 ![Logische stroom van de worker Asset Compute](./assets/worker/logical-flow.png)
 
-1. Wanneer een worker Asset Compute wordt aangeroepen vanuit de AEM Auteur-service, is deze tegen een AEM middel via een verwerkingsprofiel. Het originele binaire binaire getal van het element __(1a)__ wordt doorgegeven aan de worker via de `source` parameter van de callback-functie van de renditie en __(1b)__ alle parameters die in het verwerkingsprofiel via een `rendition.instructions` parameterset zijn gedefinieerd.
-1. De laag van SDK van de Compute van Activa keurt het verzoek van het verwerkingsprofiel goed, en organiseert de uitvoering van de `renditionCallback(...)` functie van de arbeider van de Compute van het douaneMiddel, die het bronbinaire getal in __(1a)__ omzet die op om het even welke die parameters wordt verstrekt door __(1b)__ wordt verstrekt om een vertoning van het bronbinaire getal te produceren.
-   + In dit leerprogramma wordt de vertoning &quot;in proces&quot;gecreeerd, betekenend de worker de vertoning samenstelt, nochtans kan het bronbinaire getal naar andere dienst APIs van het Web voor vertoningsgeneratie eveneens worden verzonden.
-1. De worker Asset Compute slaat de binaire representatie van de uitvoering op, `rendition.path` waarmee deze kan worden opgeslagen in de AEM-auteurservice.
-1. Na voltooiing, `rendition.path` worden de binaire gegevens die aan worden geschreven vervoerd via de Asset Compute SDK en via de AEM Auteur Service als vertoning beschikbaar in AEM UI blootgesteld.
+1. De dienst van de Auteur AEM roept de worker Asset Compute aan, die de oorspronkelijke binaire __(1a)__ binaire (`source` parameter) van het element verstrekt, en __(1b)__ om het even welke parameters die in het Profiel van de Verwerking (`rendition.instructions` parameter) worden bepaald.
+1. De Asset Compute SDK organiseert de uitvoering van de `renditionCallback(...)` functie van de worker voor het berekenen van metagegevens van aangepaste elementen, waarbij een nieuwe binaire uitvoering wordt gegenereerd op basis van de oorspronkelijke binaire binaire __(1a)__ en alle parameters __(1b)__.
 
-In het bovenstaande diagram worden de bekommernissen over het berekenen van bedrijfsmiddelen voor ontwikkelaars en de logische stroom naar de oproep van de worker Asset Compute (Asset Compute) verwoord. Voor de nieuwsgierigheid zijn de [interne details van de uitvoering](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) van Asset Compute beschikbaar, maar alleen de openbare contracten van SDK API voor Asset Compute moeten afhangen.
+   + In dit leerprogramma wordt de vertoning &quot;in proces&quot;gecreeerd, betekenend de worker de vertoning samenstelt, nochtans kan het bronbinaire getal naar andere dienst APIs van het Web voor vertoningsgeneratie eveneens worden verzonden.
+
+1. De worker Asset Compute slaat de binaire gegevens van de nieuwe uitvoering op `rendition.path`.
+1. De binaire gegevens waarnaar wordt geschreven, `rendition.path` worden via Asset Compute SDK naar AEM Author Service verzonden en worden als __(4a)__ een tekstuitvoering aangeboden en __(4b)__ aan het metagegevensknooppunt van het element vastgehouden.
+
+In het bovenstaande diagram worden de bekommernissen over het berekenen van bedrijfsmiddelen voor ontwikkelaars en de logische stroom naar de oproep van de worker Asset Compute (Asset Compute) verwoord. Voor de nieuwsgierigheid zijn de [interne details van de uitvoering](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) van Asset Compute beschikbaar, maar alleen de openbare contracten van SDK API voor Asset Compute kunnen hiervan afhangen.
 
 ## Anatomie van een worker
 
@@ -316,7 +318,7 @@ class RenditionInstructionsError extends ClientError {
 Nu de arbeiderscode volledig is, en eerder in [manifest.yml](./manifest.md)geregistreerd en gevormd, kan het worden uitgevoerd gebruikend het lokale Hulpmiddel van de Ontwikkeling van de Compute van Activa om de resultaten te zien.
 
 1. Van de wortel van het project van de Verwerking van Activa
-1. Uitvoeren `app aio run`
+1. Uitvoeren `aio app run`
 1. Wacht tot Asset Compute Development Tool in een nieuw venster wordt geopend
 1. In het dialoogvenster Een bestand __selecteren...__ een voorbeeldafbeelding selecteren die u wilt verwerken
    + Selecteer een voorbeeldafbeeldingsbestand dat u wilt gebruiken als binair bronelement
@@ -391,11 +393,4 @@ De finale `index.js` is beschikbaar op Github op:
 
 ## Problemen oplossen
 
-### Vertoning wordt gedeeltelijk getekend geretourneerd
-
-+ __Fout__: Uitvoering wordt onvolledig gerenderd, wanneer het bestand voor de totale uitvoering groot is
-
-   ![Problemen oplossen - Vertoning wordt gedeeltelijk teruggestuurd](./assets/worker/troubleshooting__await.png)
-
-+ __Oorzaak__: De functie van de worker `renditionCallback` wordt afgesloten voordat de uitvoering volledig kan worden uitgevoerd `rendition.path`.
-+ __Resolutie__: Controleer de code van de douanearbeider en zorg ervoor alle asynchrone vraag synchroon wordt gemaakt.
++ [Gedeeltelijk getekende/beschadigde vertoning geretourneerd](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
