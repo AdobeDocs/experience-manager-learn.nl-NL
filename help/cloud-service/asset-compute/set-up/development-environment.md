@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,8 @@ Hier volgt een korte set-upinstructies. Nadere bijzonderheden over deze ontwikke
 1. [Docker Desktop](https://www.docker.com/products/docker-desktop) installeren en de vereiste Docker-afbeeldingen ophalen:
 
    ```
-   $ docker pull openwhisk/action-nodejs-v10:latest
-   $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
+   $ docker pull openwhisk/action-nodejs-v12:latest
+   $ docker pull adobeapiplatform/adobe-action-nodejs-v12:latest
    ```
 
 1. [Visual Studio-code installeren](https://code.visualstudio.com/download)
@@ -44,11 +44,13 @@ Hier volgt een korte set-upinstructies. Nadere bijzonderheden over deze ontwikke
    && aio plugins:install @adobe/aio-cli-plugin-asset-compute
    ```
 
+Lees de onderstaande secties voor meer informatie over de instructies voor een verkorte installatie.
+
 ## Visual Studio-code installeren{#vscode}
 
 [De Code](https://code.visualstudio.com/download) van Microsoft Visual Studio wordt gebruikt voor het ontwikkelen van en het zuiveren de arbeiders van de Verwerking van Activa. Terwijl andere [JavaScript-compatibele winde](../../local-development-environment/development-tools.md#set-up-the-development-ide) kan worden gebruikt om de arbeider te ontwikkelen, slechts kan de Code van Visual Studio worden geïntegreerd om de worker van de Verwerking van Activa te [zuiveren](../test-debug/debug.md) .
 
-_Visual Studio Code 1.48.x+ wordt vereist voor[WebDebug](#wskdebug)om te werken._
+_Visual Studio Code 1.48.x+ wordt vereist voor [WebDebug](#wskdebug) om te werken._
 
 Dit leerprogramma veronderstelt het gebruik van de Code van Visual Studio aangezien het de beste ontwikkelaarervaring voor het uitbreiden van Activa voorziet Compute.
 
@@ -59,7 +61,7 @@ Download en installeer de nieuwste, stabiele [Docker Desktop](https://www.docker
 Nadat u Docker Desktop hebt geïnstalleerd, start u deze en installeert u de volgende Docker-afbeeldingen vanaf de opdrachtregel:
 
 ```
-$ docker pull openwhisk/action-nodejs-v10:latest
+$ docker pull openwhisk/action-nodejs-v12:latest
 $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 ```
 
@@ -91,7 +93,7 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 Download en installeer de [Apache OpenWhisk-module voor foutopsporing](https://www.npmjs.com/package/@openwhisk/wskdebug) van Npm om lokale foutopsporing van Asset Compute-workers te vergemakkelijken.
 
-_Visual Studio Code 1.48.x+ wordt vereist voor[WebDebug](#wskdebug)om te werken._
+_Visual Studio Code 1.48.x+ wordt vereist voor [WebDebug](#wskdebug) om te werken._
 
 ```
 $ npm install -g @openwhisk/wskdebug
