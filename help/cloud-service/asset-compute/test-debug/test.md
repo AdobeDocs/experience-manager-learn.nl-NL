@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ De structuur van tests in een project Asset Compute is als volgt:
 ...
 /test/
   asset-compute/
-    <worker-name>/           <--- Test suite for the worker
+    <worker-name>/           <--- Test suite for the worker, must match the yaml key for this worker in manifest.yml
         <test-case-1>/       <--- Specific test case 
             file.jpg         <--- Input file (ie. `source.path` or `source.url`)
             params.json      <--- Parameters (ie. `rendition.instructions`)
@@ -118,21 +118,5 @@ De laatste testcase is beschikbaar op Github op:
 
 ## Problemen oplossen
 
-### Geen uitvoering gegenereerd
-
-Testcase mislukt zonder uitvoering.
-
-+ __Fout:__ Fout: Geen uitvoering gegenereerd.
-+ __Oorzaak:__ De worker kan geen uitvoering genereren vanwege een onverwachte fout, zoals een JavaScript-syntaxisfout.
-+ __Resolutie:__ Controleer de uitvoering van de test `test.log` op `/build/test-results/test-worker/test.log`. Zoek de sectie in dit bestand die overeenkomt met de testcase voor mislukken en controleer of er fouten zijn opgetreden.
-
-   ![Problemen oplossen - Geen uitvoering gegenereerd](./assets/test/troubleshooting__no-rendition-generated.png)
-
-### Test genereert onjuiste uitvoering
-
-Testcase genereert geen onjuiste uitvoering.
-
-+ __Fout:__ Fout: Vertoning &#39;rendition.xxx&#39; is niet zoals verwacht.
-+ __Oorzaak:__ De worker voert een uitvoering uit die anders is dan de uitvoering die in het testgeval is `rendition.<extension>` opgegeven.
-   + Als het verwachte `rendition.<extension>` bestand niet op dezelfde manier wordt gemaakt als de lokaal gegenereerde vertoning in het testgeval, kan de test mislukken omdat er een verschil in de bits kan zijn. Als de verwachte vertoning in het testgeval van het Hulpmiddel van de Ontwikkeling wordt bewaard, die in Adobe I/O Runtime wordt geproduceerd, kunnen de beetjes technisch verschillend zijn, veroorzakend de test om te ontbreken, zelfs als uit menselijk perspectief de verwachte en daadwerkelijke vertoningsdossiers identiek zijn.
-+ __Resolutie:__ Bekijk de uitvoer van de vertoning van de test door naar `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`te navigeren en deze te vergelijken met het verwachte vertoningsbestand in het testgeval.
++ [Geen uitvoering gegenereerd tijdens de uitvoering van de test](../troubleshooting.md#test-no-rendition-generated)
++ [Test genereert onjuiste uitvoering](../troubleshooting.md#tests-generates-incorrect-rendition)
