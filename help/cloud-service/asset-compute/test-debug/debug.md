@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -103,40 +103,9 @@ _Doorklikken voor foutopsporing in een worker voor het berekenen van bedrijfsmid
 
 ## Problemen oplossen
 
-### Foutopsporing wordt niet gekoppeld
-
-+ __Fout__: Fout bij verwerken start: Fout: Kan geen verbinding maken met foutopsporingsdoel op..
-+ __Oorzaak__: Docker Desktop wordt niet uitgevoerd op het lokale systeem. Verifieer dit door de Console van de Foutopsporing van de Code van VS (Mening > Debug Console) te herzien, bevestigend deze fout wordt gemeld.
-+ __Resolutie__: Start [Docker Desktop en bevestig dat de vereiste Docker-images zijn geïnstalleerd](../set-up/development-environment.md#docker).
-
-### Onderbrekingspunten worden niet gepauzeerd
-
-+ __Fout__: Wanneer het runnen van de worker van Asset Compute van het hulpprogramma voor foutopsporing, onderbreekt de VS-code niet bij onderbrekingspunten.
-
-#### Foutopsporing VS-code is niet gekoppeld
-
-+ __Oorzaak:__ Foutopsporing van de Code van VS werd tegengehouden/losgemaakt.
-+ __Resolutie:__ Start de VS-foutopsporing opnieuw en controleer of deze is aangesloten via de VS Code Debug Output Console (Weergave > Foutopsporingsconsole)
-
-#### Foutopsporing voor VS-code gekoppeld nadat uitvoering van worker is gestart
-
-+ __Oorzaak:__ Foutopsporing van de Code van VS verbond niet voorafgaand aan het tikken __Looppas__ in het Hulpmiddel van de Ontwikkeling.
-+ __Resolutie:__ Verzeker debugger door de Foutopsporingsconsole van de Code van VS te herzien (Mening > zuivert Console), en dan de worker van de Compute van Activa van het Hulpmiddel van de Ontwikkeling opnieuw in werking te stellen.
-
-### Worker-time-out tijdens foutopsporing
-
-+ __Fout__: Foutopsporingsconsole rapporteert &quot;Action will timeout in -XXX milliseconds&quot; of de voorvertoning van de uitvoering van het hulpprogramma [Asset Compute Development wordt](../develop/development-tool.md) eindeloos gecentreerd of
-+ __Oorzaak__: De time-out van de worker, zoals gedefinieerd in [manifest.yml](../develop/manifest.md) , wordt tijdens foutopsporing overschreden.
-+ __Resolutie__: Verhoog tijdelijk de time-out van de worker in het bestand [manifest.yml](../develop/manifest.md) of versnel de foutopsporingsactiviteiten.
-
-### Kan foutopsporingsproces niet beëindigen
-
-+ __Fout__: `Ctrl-C` op de bevellijn beëindigt niet het debugger proces (`npx adobe-asset-compute devtool`).
-+ __Oorzaak__: Een fout in `@adobe/aio-cli-plugin-asset-compute` 1.3.x, resulteert in `Ctrl-C` niet herkend als beëindigend bevel.
-+ __Resolutie__: Bijwerken `@adobe/aio-cli-plugin-asset-compute` naar versie 1.4.1+
-
-   ```
-   $ aio update
-   ```
-
-   ![Problemen oplossen - AIR-update](./assets/debug/troubleshooting__terminate.png)
++ [Foutopsporing wordt niet gekoppeld](../troubleshooting.md#debugger-does-not-attach)
++ [Onderbrekingspunten worden niet gepauzeerd](../troubleshooting.md#breakpoints-no-pausing)
++ [Foutopsporing VS-code niet gekoppeld](../troubleshooting.md#vs-code-debugger-not-attached)
++ [Foutopsporing voor VS-code gekoppeld nadat uitvoering van worker is gestart](../troubleshooting.md#vs-code-debugger-attached-after-worker-execution-began)
++ [Worker-time-out tijdens foutopsporing](../troubleshooting.md#worker-times-out-while-debugging)
++ [Kan foutopsporingsproces niet beëindigen](../troubleshooting.md#cannot-terminate-debugger-process)
