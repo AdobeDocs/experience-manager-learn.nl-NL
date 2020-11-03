@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -122,14 +122,5 @@ Om het Hulpmiddel van de Ontwikkeling van de Verwerking van Activa voor het proj
 
 ## Problemen oplossen
 
-### Onjuiste JAML-inspringing
-
-+ __Fout:__ YAMLException: ongeldige inspringing van een toewijzingsitem op regel X, kolom Y: (via standaard uit `aio app run` opdracht)
-+ __Oorzaak:__ Bij bestanden met witruimte is de inspringing waarschijnlijk onjuist.
-+ __Resolutie:__ Controleer uw `manifest.yml` en controleer of alle inspringingen correct zijn.
-
-### memorySize limit is set to low
-
-+ __Fout:__  Lokale Dev Server OpenWhiskError: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Geretourneerde HTTP 400 (Ongeldig verzoek) —> &quot;De aanvraaginhoud is onjuist geformuleerd:vereiste is mislukt: geheugen 64 MB onder de toegestane drempel van 134217728 B&quot;
-+ __Oorzaak:__ Een `memorySize` limiet in het manifest is ingesteld onder de minimaal toegestane drempel, zoals gerapporteerd door het foutbericht in bytes.
-+ __Resolutie:__  Controleer de `memorySize` limieten in het `manifest.yml` en zorg ervoor dat ze allemaal groter zijn dan de minimaal toegestane drempel.
++ [Onjuiste JAML-inspringing](../troubleshooting.md#incorrect-yaml-indentation)
++ [memorySize limit is set to low](../troubleshooting.md#memorysize-limit-is-set-too-low)
