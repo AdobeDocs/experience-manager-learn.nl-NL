@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6270
 thumbnail: KT-6270.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -113,8 +113,4 @@ Om het Hulpmiddel van de Ontwikkeling van de Verwerking van Activa voor het proj
 
 ## Problemen oplossen
 
-### De tools voor lokale ontwikkeling van Asset Compute kunnen niet worden gestart omdat private.key ontbreekt
-
-+ __Fout:__ Lokale Dev ServerError: Vereiste bestanden ontbreken bij validatePrivateKeyFile.... (via standaard uit van `aio app run` opdracht)
-+ __Oorzaak:__ De `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` waarde in het `.env` bestand verwijst niet naar `private.key` of `private.key` is niet leesbaar voor de huidige gebruiker.
-+ __Resolutie:__ Controleer de `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` waarde in het `.env` bestand en controleer of het volledige, absolute pad naar het bestand `private.key` op het bestandssysteem is opgenomen.
++ [Development Tool kan niet worden gestart omdat private.key ontbreekt](../troubleshooting.md#missing-private-key)
