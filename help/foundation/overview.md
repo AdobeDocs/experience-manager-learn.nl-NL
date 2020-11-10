@@ -4,7 +4,7 @@ seo-title: Video's en Tutorials AEM
 description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Manager Foundation. '
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Foundation
 translation-type: tm+mt
-source-git-commit: e19e177589df7ce6a56c0be3f9d590cbca2f8ce7
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%
@@ -19,22 +19,15 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 ## Wat is er nieuw?
 
 * **[Workflowbeheer gebruiken in AEM (video)](./workflow/use-workflow-management.md)**
-
-   <br>
-   *AEM zorgt voor zichtbaarheid in het uitvoeren van workflows en vereenvoudigt het beheer van[!DNL Workflow]definities.*
+   *AEM zorgt voor zichtbaarheid in het uitvoeren van workflows en vereenvoudigt het beheer van [!DNL Workflow] definities.*
 
 * **[Cloud Manager voor AEM begrijpen (video)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   <br>
-
    *Cloud Manager voor AEM maakt eenvoudig beheer, controle en zelfbediening van AEM omgevingen mogelijk.*
 
 * **[Openbare en persoonlijke sleutels instellen voor gebruik met Adobe I/O (zelfstudie)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   <br>
-   *Leer hoe sleutels en sleutelarchieven worden geproduceerd gebruikend[!DNL openssl]dat met AEM en Adobe I/O werkt.*
+   *Leer hoe sleutels en sleutelarchieven worden geproduceerd gebruikend [!DNL openssl] dat met AEM en Adobe I/O werkt.*
 
 * **[Cloud Manager CI/CD Pipeline (video) gebruiken](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-   <br>
-
    *Leer hoe u de CI/CD-pijplijn van Cloud Manager kunt gebruiken voor een veilige en consistente implementatie.*
 
 ## Personeelspictogrammen
@@ -85,7 +78,7 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 
 ## Aanvullende bronnen
 
-* [Experience League - Ontdek AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Verken AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM als Cloud Service Tutorials](/help/cloud-service/overview.md)
 * [AEM Sites-video&#39;s en -Tutorials](/help/sites/overview.md)
 * [AEM Assets-video&#39;s en -Tutorials](/help/assets/overview.md)
