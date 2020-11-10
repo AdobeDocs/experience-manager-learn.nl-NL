@@ -5,7 +5,7 @@ description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Mana
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites
 sub-product: sites, content-services
 translation-type: tm+mt
-source-git-commit: 2325132bc5fecf6637d6c105b66d4455e7edf485
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 1%
@@ -19,35 +19,29 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 
 ## Wat is er nieuw?
 
-* **[Aan de slag met AEM redacteur van het KUUROORD en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)(Zelfstudie)**
+* **[Aan de slag met AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html) (zelfstudie)**
 
-   <br>
-   *Begonnen gids voor ontwikkelaars om één enkele paginatoepassingen (SPA) met AEM te integreren die Reageren gebruiken*
+   *Een gids Aan de slag voor ontwikkelaars om één enkele paginatoepassingen (SPA) met AEM te integreren gebruikend Reageren*
 
-* **[Aan de slag met AEM redacteur van het KUUROORD en Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)(Zelfstudie)**
+* **[Aan de slag met AEM SPA Editor en hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) (zelfstudie)**
 
-   <br>
-   *Een gids aan de slag voor ontwikkelaars om één enkele paginatoepassingen (SPA) met AEM te integreren gebruikend Hoekig*
+   *Een gids Aan de slag voor ontwikkelaars om één enkele paginatoepassingen (SPA) met AEM te integreren gebruikend Hoek*
 
 * **[Aan de slag met AEM headless (zelfstudie)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
 
-   <br>
    *In een CMS-scenario zonder kop onthullen hoe u inhoud van AEM kunt blootstellen die door een systeemeigen mobiele app wordt verbruikt.*
 
 * **[Ervingfragmenten gebruiken (videoreeks)](./experience-fragments/experience-fragments-feature-video-use.md)**
 
-   <br>
    *Leer AEM Ervaring Fragments voor het bevorderen van inhoud over kanalen.*
 
 * **[Inhoudsfragmenten gebruiken (videoreeks)](./content-fragments/content-fragments-feature-video-use.md)**
 
-   <br>
    *Inhoudsfragmenten zijn akoestische stukken inhoud die opnieuw kunnen worden gebruikt.*
 
-* **[Het gebruiken van de Redacteur van het KUUROORD (Video)](./spa-editor/spa-editor-framework-feature-video-use.md)**
+* **[De SPA Editor (video) gebruiken](./spa-editor/spa-editor-framework-feature-video-use.md)**
 
-   <br>
-   *Leer over AEM het uitgeven mogelijkheden voor enige paginatoepassingen (SPA).*
+   *Meer informatie over AEM bewerkingsmogelijkheden voor toepassingen op één pagina (SPA).*
 
 ## Personeelspictogrammen
 
@@ -81,15 +75,15 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
   </td>
   <td>
     <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
-      <img alt="Begonnen het worden met AEM Redacteur van het KUUROORD" src="./assets/aem-wknd-spa-editor-tutorial.png" />
+      <img alt="Aan de slag met AEM SPA Editor" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
       <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
-        <strong>Begonnen het worden met AEM Redacteur van het KUUROORD</strong>
+        <strong>Aan de slag met AEM SPA Editor</strong>
       </a>
     </div>
     <p>
-    <em>Een gids aan de slag voor ontwikkelaars om één enkele paginatoepassingen (SPA) met AEM te integreren.</em>
+    <em>Een gids Aan de slag voor ontwikkelaars om één enkele paginatoepassingen (SPA) met AEM te integreren.</em>
     <p>
   </td>
 </tr>
@@ -97,7 +91,7 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 
 ## Aanvullende bronnen
 
-* [Experience League - Ontdek AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Verken AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Sites Authoring Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [AEM Sites Developing Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [AEM Sites-beheerdocumentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
