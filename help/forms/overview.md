@@ -5,7 +5,7 @@ description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ont
 seo-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
 sub-product: formulieren
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 1%
@@ -21,18 +21,15 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 * **[Foutberichten verwerken in de stap Formuliergegevensmodel aanroepen](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
-   <br>
    *Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype*
 
 * **[Diagrammen uit meerdere reeksen in interactieve communicatiedocumenten (video)](./interactive-communications/multiseriescharts.md)**
 
-   <br>
    *Plot meer dan één reeks in de zelfde grafiek.De veelvoudige reeksengrafieken worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom.*
 
 * **[Opnieuw te gebruiken workflowmodellen maken](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
-   <br>
-   _Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld_
+   *Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld*
 
 ## Personeelspictogrammen
 
@@ -82,7 +79,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 ## Aanvullende bronnen
 
-* [Experience League - Ontdek AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Verken AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Sites Authoring Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [AEM Sites Developing Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [AEM Sites-beheerdocumentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
