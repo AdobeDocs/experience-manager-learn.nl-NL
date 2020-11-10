@@ -1,13 +1,11 @@
 ---
 title: AEM Assets-video's en -Tutorials
-seo-title: AEM Assets-video's en -Tutorials
 description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Assets
-seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Assets
 sub-product: elementen, dynamische media
 translation-type: tm+mt
-source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '228'
 ht-degree: 3%
 
 ---
@@ -21,27 +19,22 @@ Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale m
 
 * **[Watermerken (video)](./advanced/watermarks.md)**
 
-   <br>
    *Leer hoe u elementen in AEM als Cloud Service kunt voorzien van watermerken*
 
 * **[Basislijnmachtigingen (video)](./configuring/baseline-permissions.md)**
 
-   <br>
    *Leer hoe, en waarom het belangrijk is, om AEM Assets met basislijntoestemmingen te vormen*
 
 * **[Workflows automatisch starten (video)](./configuring/auto-start-workflows.md)**
 
-   <br>
    *Ontdek hoe AEM workflow automatisch kan worden aangeroepen bij geüploade of opnieuw verwerkte middelen*
 
 * **[Profielen verwerken (video)](./configuring/processing-profiles.md)**
 
-   <br>
    *Onderzoek hoe te om de microdiensten van Activa aan vertoningsactiva aan te halen*
 
 * **[Elementenverzamelingen gebruiken (video)](./search-and-discovery/collections.md)**
 
-   <br>
    *Ontdek hoe verzamelingen in AEM Assets nieuwe manieren bieden om elementen te organiseren en te ontdekken*
 
 ## Personeelspictogrammen
