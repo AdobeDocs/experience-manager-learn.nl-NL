@@ -1,0 +1,42 @@
+---
+title: Formuliergegevens opslaan en ophalen met bijlagen uit MySQL-database
+description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens met bijlagen
+feature: adaptive-forms
+topics: development
+audience: developer
+doc-type: tutorial
+activity: implement
+version: 6.4,6.5
+kt: 6593
+thumbnail: 327122.jpg
+translation-type: tm+mt
+source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
+
+---
+
+
+# Adaptieve formuliergegevens opslaan en ophalen met 2FA
+
+In deze zelfstudie worden de stappen beschreven die nodig zijn voor het opslaan en ophalen van adaptieve formuliergegevens met bijlagen in 2FA. Deze zelfstudie gebruikte MySQL-database voor het opslaan van adaptieve formuliergegevens. Het gegevensbestand van uw keus kan worden gebruikt om de gegevens op te slaan zolang u de gegevensbestand specifieke bestuurders in AEM hebt opgesteld. Op hoog niveau zijn de volgende stappen nodig om het gebruiksgeval te bereiken:
+
+* Gebruik de GuideBridge-API om toegang te krijgen tot de Adaptief-formuliergegevens
+
+* Maak een POST vraag aan een servlet. Deze servlet slaat de gegevens in het gegevensbestand en de vormgehechtheid in de bewaarplaats CRX op. De opgeslagen gegevens in het gegevensbestand worden geassocieerd met een GUID.
+
+* Wanneer u het Aangepaste Vorm met de opgeslagen gegevens wilt bevolken, wint u de gegevens verbonden aan GUID terug en bevolkt de AanpassingsVorm gebruikend de **request.setAttribute** methode.
+
+## Bewijs van de gebruikszaak
+
+>[!VIDEO](https://video.tv.adobe.com/v/327122?quality=9&learn=on)
+
+## Vereisten
+
+Het publiek van deze inhoud heeft naar verwachting enige ervaring op de volgende gebieden:
+
+* Adaptief formulier
+* Formuliergegevensmodel
+* OSGi-diensten/onderdelen
+* Clientbibliotheken AEM
