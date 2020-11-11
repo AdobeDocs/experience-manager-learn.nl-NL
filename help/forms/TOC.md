@@ -6,9 +6,9 @@ user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AE
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
+source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '898'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,18 @@ ht-degree: 1%
    + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
    + [Sweeksjabloon gebruiken](inbox-customization/use-sightly-template.md)
 
-
++ Adaptief formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
+   + [Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
+   + [Gegevensbron configureren](store-and-retrieve-af-with-2fa/configure-data-source.md)
+   + [Formulierbijlagen opslaan](store-and-retrieve-af-with-2fa/store-form-attachments.md)
+   + [Formuliergegevens opslaan](store-and-retrieve-af-with-2fa/store-form-data.md)
+   + [Servlet maken](store-and-retrieve-af-with-2fa/create-servlet.md)
+   + [Formulier renderen met opgeslagen gegevens](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
+   + [Clientbibliotheek maken](store-and-retrieve-af-with-2fa/create-client-lib.md)
+   + [Integreer met de Dienst OTP](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
+   + [Het hoofdformulier maken](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
+   + [Het MyAccount-formulier maken](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
+   + [Het voorbeeld implementeren](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + Verzendgegevens exporteren in CSV-indeling{#export-submitted-data-csv-format}
    + [Verzonden gegevens exporteren](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
@@ -109,7 +120,7 @@ ht-degree: 1%
    + [Adaptief formulier maken en configureren](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Adaptief formulier configureren voor één ondertekenaar](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Adaptief formulier configureren voor twee ondertekenaars](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Automated Forms Conversion Service configureren](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Automatede form conversion-service configureren](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF-formulier converteren naar adaptief formulier](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [XDP-sjablonen gebruiken met Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
