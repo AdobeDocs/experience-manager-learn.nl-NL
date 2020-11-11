@@ -1,0 +1,59 @@
+---
+title: Gegevensbron configureren
+description: Gegevensbron maken die naar de MySQL-database verwijst
+feature: adaptive-forms
+topics: development
+audience: developer
+doc-type: tutorial
+activity: implement
+version: 6.4,6.5
+kt: 6541
+thumbnail: 6541.jpg
+translation-type: tm+mt
+source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 0%
+
+---
+
+
+# Gegevensbron configureren
+
+Er zijn vele manieren waarmee AEM integratie met externe gegevensbestand toelaat. Één van de gemeenschappelijkste &amp; standaardpraktijk van gegevensbestandintegratie is door Apache het Verdelen van Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [configMgr](http://localhost:4502/system/console/configMgr)te gebruiken.
+De eerste stap bestaat uit het downloaden en implementeren van de juiste [MySQL-stuurprogramma](https://mvnrepository.com/artifact/mysql/mysql-connector-java) &#39;s voor AEM.
+Stel vervolgens de specifieke eigenschappen voor de gegevensbron van de verzamelverbinding in. In de volgende schermafbeelding ziet u de instellingen die voor deze zelfstudie worden gebruikt. Het databaseschema wordt als onderdeel van deze zelfstudie-elementen aan u verstrekt.
+
+![gegevensbron](assets/data-source.JPG)
+
+
+* JDBC-stuurprogramma-klasse: `com.mysql.cj.jdbc.Driver`
+* URI JDBC-verbinding: `jdbc:mysql://localhost:3306/aemformstutorial`
+
+>[!NOTE]
+>Gelieve te zorgen u uw gegevensbron noemt `StoreAndRetrieveAfData` aangezien dit de naam in de dienst OSGi wordt gebruikt.
+
+
+## Database maken
+
+
+De volgende database is gebruikt voor dit gebruiksgeval. De database heeft één tabel die wordt aangeroepen `formdatawithattachments` met de vier kolommen, zoals hieronder in de schermafbeelding wordt weergegeven.
+![gegevensbank](assets/table-schema.JPG)
+
+* De kolom **afdata** bevat de adaptieve formuliergegevens.
+* De kolom **attachmentsInfo** bevat de informatie over de formulierbijlagen.
+* De kolommen **phoneNumber** bevatten het mobiele nummer van de persoon die het formulier invult.
+
+Maak de database door het [databaseschema](assets/data-base-schema.sql)te importeren met MySQL Workbench.
+
+## Formuliergegevensmodel maken
+
+Creeer het model van vormgegevens en baseer het op de gegevensbron die in de vorige stap wordt gecreeerd.
+Configureer de **get** -service van dit formuliergegevensmodel, zoals wordt weergegeven in de onderstaande schermafbeelding.
+Zorg ervoor u geen serie in de **get** dienst terugkeert.
+
+Deze **get** service wordt gebruikt om het telefoonnummer op te halen dat aan toepassings-id is gekoppeld.
+
+![getService](assets/get-service.JPG)
+
+Dit formuliergegevensmodel wordt vervolgens gebruikt in het **MyAccountForm** om het telefoonnummer op te halen dat aan de toepassings-id is gekoppeld.
