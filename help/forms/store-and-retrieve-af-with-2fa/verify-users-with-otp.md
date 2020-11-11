@@ -1,0 +1,59 @@
+---
+title: Verifieer gebruikers met OTP
+description: Verifieer het mobiele aantal verbonden aan het toepassingsaantal gebruikend OTP.
+feature: integrations
+topics: adaptive forms
+audience: developer
+doc-type: article
+activity: use
+version: 6.4,6.5
+kt: 6594
+thumbnail: 6594.jpg
+translation-type: tm+mt
+source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 0%
+
+---
+
+
+
+# Verifieer gebruikers met OTP
+
+SMS Two Factor Authentication (Dual Factor Authentication) is een veiligheidsverificatieprocedure, die wordt geactiveerd door een gebruiker die zich aanmeldt bij een website, software of toepassing. Tijdens het aanmeldingsproces wordt de gebruiker automatisch een SMS-bericht naar zijn mobiele nummer gestuurd dat een unieke numerieke code bevat.
+
+Er zijn een aantal organisaties die deze service aanbieden en zolang deze beschikken over goed gedocumenteerde REST API&#39;s kunt u AEM Forms eenvoudig integreren met de mogelijkheden voor gegevensintegratie van AEM Forms. In het kader van deze zelfstudie heb ik [Nexmo](https://developer.nexmo.com/verify/overview) gebruikt om de SMS 2FA-gebruikszaak aan te tonen.
+
+De volgende stappen werden gevolgd om SMS 2FA met AEM Forms uit te voeren gebruikend de dienst van Nexmo Verify.
+
+## Ontwikkelaarsaccount maken
+
+Maak een ontwikkelaarsaccount met [Nexmo](https://dashboard.nexmo.com/sign-in). Noteer de API-sleutel en de API-beveiligingssleutel. Deze toetsen zijn nodig om REST API&#39;s van de Nexmo-service aan te roepen.
+
+## Swagger/OpenAPI-bestand maken
+
+De OpenAPI-specificatie (voorheen Swagger Specification) is een API-beschrijvingsindeling voor REST API&#39;s. Met een OpenAPI-bestand kunt u de volledige API beschrijven, inclusief:
+
+* Beschikbare eindpunten (/gebruikers) en verrichtingen op elk eindpunt (GET /users, POST /users)
+* Operatieparameters Invoer en uitvoer voor elke bewerkingsverificatiemethoden
+* Contactgegevens, licentie, gebruiksvoorwaarden en andere informatie.
+* API-specificaties kunnen worden geschreven in YAML of JSON. De indeling is gemakkelijk te leren en kan zowel voor mensen als voor machines worden gelezen.
+
+Volg de documentatie van [OpenAPI om uw eerste wagger/OpenAPI-bestand te maken](https://swagger.io/docs/specification/2-0/basic-structure/)
+
+>[!NOTE]
+> AEM Forms biedt ondersteuning voor OpenAPI Specification versie 2.0 (fka Swagger).
+
+Met de [wagereditor](https://editor.swagger.io/) kunt u uw wagerbestand maken om de bewerkingen te beschrijven die OTP-code verzenden en verifiëren die met SMS is verzonden. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide wagerbestand kan [hier worden gedownload](assets/two-factore-authentication-swagger.zip)
+
+## Gegevensbron maken
+
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [REST gebaseerde gegevensbron gebruiken gebruikend het wagerdossier](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten. De voltooide gegevensbron wordt verstrekt aan u als deel van deze cursusactiva.
+
+## Formuliergegevensmodel maken
+
+AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met [formuliergegevensmodellen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
+Het ingevulde formuliergegevensmodel kan hier worden [gedownload](assets/sms-2fa-fdm.zip)
+
+![fdm](assets/2FA-fdm.PNG)
