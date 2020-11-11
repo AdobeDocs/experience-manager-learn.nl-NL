@@ -1,0 +1,72 @@
+---
+title: Clientbibliotheken maken
+description: Clientbibliotheek maken om de klikgebeurtenis van de knop "Opslaan en afsluiten" af te handelen
+feature: adaptive-forms
+topics: development
+audience: developer
+doc-type: tutorial
+activity: implement
+version: 6.4,6.5
+kt: 6597
+thumbnail: 6597.pg
+translation-type: tm+mt
+source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 0%
+
+---
+
+# Clientbibliotheek maken
+
+Maak een [clientbibliotheek](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) die de code bevat om de methode `doAjaxSubmitWithFileAttachment` van de `guideBridge` API aan te roepen op de klikgebeurtenis van de knop die wordt aangegeven door de **opslagknop** voor de CSS-klasse.  We geven de adaptieve formuliergegevens door, `fileMap`en het `mobileNumber` naar het eindpunt luisteren op `**/bin/storeafdatawithattachments`
+
+Nadat de formuliergegevens zijn opgeslagen, wordt een unieke toepassings-id gegenereerd en in een dialoogvenster aan de gebruiker getoond. Als de gebruiker het dialoogvenster sluit, wordt hij naar het formulier geleid waarmee hij het opgeslagen adaptieve formulier kan ophalen met de unieke toepassings-id.
+
+```java
+$(document).ready(function () {
+  
+  $(".savebutton").click(function () {
+    var tel = guideBridge.resolveNode(
+      "guide[0].guide1[0].guideRootPanel[0].contactInformation[0].basicContact[0].telephoneNumber[0]"
+    );
+    var telephoneNumber = tel.value;
+    guideBridge.getFormDataString({
+      success: function (data) {
+        var map = guideBridge._getFileAttachmentMapForSubmit();
+        guideBridge.doAjaxSubmitWithFileAttachment(
+          "/bin/storeafdatawithattachments",
+          {
+            data: data.data,
+            fileMap: map,
+            mobileNumber: telephoneNumber,
+          },
+          {
+            success: function (x) {
+              bootbox.alert(
+                "This is your reference number.<br>" +
+                  x.data.path +
+                  " <br>You will need this to retrieve your application",
+                function () {
+                  console.log(
+                    "This was logged in the callback! After the ok button was pressed"
+                  );
+                  window.location.href =
+                    "http://localhost:4502/content/dam/formsanddocuments/myaccountform/jcr:content?wcmmode=disabled";
+                }
+              );
+              console.log(x.data.path);
+            },
+          },
+          guideBridge._getFileAttachmentsList()
+        );
+      },
+    });
+  });
+});
+```
+
+>[!NOTE]
+> We hebben de javascript-bibliotheek [van](http://bootboxjs.com/examples.html) bootbox gebruikt om het dialoogvenster weer te geven
+
+De clientbibliotheken die in dit voorbeeld worden gebruikt, kunnen hier worden [gedownload](assets/client-libraries.zip)
