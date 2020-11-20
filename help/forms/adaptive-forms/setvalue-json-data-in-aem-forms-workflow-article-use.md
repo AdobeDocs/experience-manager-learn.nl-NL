@@ -12,7 +12,7 @@ activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
 translation-type: tm+mt
-source-git-commit: f07680e73316efb859a675f4b2212d8c3e03f6a0
+source-git-commit: 233ad7184cb48098253a78c07a3913356ac9e774
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -46,7 +46,7 @@ De elementen op uw lokale systeem implementeren:
 
 * [DevelopingWithServiceUserBundle downloaden en implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-*[Download en implementeer de setvalue-bundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden JSON-gegevens kunt instellen.
+* [Download en implementeer de setvalue-bundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden JSON-gegevens kunt instellen.
 
 * [De inhoud van het ZIP-bestand downloaden en uitpakken](assets/set-value-jsondata.zip)
    * De browser naar [pakketbeheer sturen](http://localhost:4502/crx/packmgr/index.jsp)
@@ -63,10 +63,8 @@ De elementen op uw lokale systeem implementeren:
 * De velden in het eerste deelvenster zijn uitgeschakeld.
 * U ziet dat het deelvenster voor het goedkeuren of afwijzen van de aanvraag nu zichtbaar is.
 
-
-
 >[!NOTE]
-
+>
 >Aangezien het adaptieve formulier al wordt ingevuld met een gebruikersprofiel, moet u de gegevens van het [gebruikersprofiel van de beheerder controleren ](http://localhost:4502/security/users.html). Zorg er minimaal voor dat u de veldwaarden FirstName, LastName en Email hebt ingesteld.
 >U kunt registratie van foutopsporing inschakelen door logger voor com.aemforms.setvalue.core.SetValueInJson [vanaf hier in te schakelen](http://localhost:4502/system/console/slinglog)
 
