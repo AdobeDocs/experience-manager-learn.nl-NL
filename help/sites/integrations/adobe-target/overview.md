@@ -1,6 +1,6 @@
 ---
 title: Overzicht van AEM en Adobe Target
-description: Leer hoe u persoonlijke ervaringen kunt maken en leveren met Adobe Experience Manager als Cloud Service en Adobe Target
+description: Leer hoe u persoonlijke ervaringen kunt maken en leveren met Adobe Experience Manager als Cloud Service en Adobe Target.
 feature: launch, experience-fragments, core-components, data-layer
 topics: integrations, personalization, administration, development
 audience: all
@@ -10,27 +10,40 @@ version: cloud-service
 kt: 6043
 thumbnail: 41241.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
 
-# Overzicht van AEM en Adobe Target {#overview-aem-target}
+# AEM en Adobe Target
 
-AEM en Target zijn beide krachtige oplossingen met schijnbaar overlappende mogelijkheden. Klanten hebben soms moeite om te begrijpen hoe en wanneer ze deze producten samen moeten gebruiken om persoonlijke ervaring te bieden. Om optimale ervaring voor elke eindgebruiker te bieden, zouden de verschillende teams binnen uw organisatie nauw moeten samenwerken en bepalen wie wat doet.
+Adobe Experience Manager (AEM) en Adobe Target zijn krachtige oplossingen met complementaire mogelijkheden die verkeerd kunnen worden geïnterpreteerd als concurrerende oplossingen. Klanten hebben soms moeite om te begrijpen hoe en wanneer ze deze producten samen moeten gebruiken om persoonlijke ervaring te bieden. Om optimale ervaring voor elke eindgebruiker te bieden, zouden de verschillende teams binnen uw organisatie nauw moeten samenwerken en bepalen wie wat doet.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41241?quality=12&learn=on)
 
-In deze video behandelen wij drie verschillende scenario&#39;s voor AEM en Doel, wat u helpt begrijpen wat het beste voor uw organisatie werkt.
+In deze video bespreken we drie benaderingen voor het gebruik van AEM en Doel, en helpen u te begrijpen wat het beste werkt voor uw organisatie.
 
-* Scenario 1 : Personalisatie met AEM Experience Fragments
-* Scenario 2: Personalisatie met behulp van Visual Experience Composer
-* Scenario 3: Aanpassing van de volledige webpaginamogelijkheden
+* __Scenario 1:__ Personalisatie met AEM Experience Fragment-aanbiedingen
 
-**Om dit scenario uit te voeren, moet u:**
+   1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
+   1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
+   1. [AEM Author Service integreren met Adobe Target](./setup-aem-target-cloud-service.md)
+   1. [Exporteer AEM ervaringsfragmenten naar Adobe Target](./export-experience-fragment-target.md)
+   1. [Een deel van een webpagina aanpassen met de functie Gepresenteerde fragmentatieaanbiedingen](./create-target-activity.md)
 
-* AEM en Adobe Target integreren met Launch en Adobe I/O
-* AEM en Adobe Target met behulp van verouderde Cloud Services
+* __Scenario 2:__ Personalisatie met behulp van Visual Experience Composer (VEC)
+
+   1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
+   1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
+   1. [Een deel van een webpagina personaliseren met behulp van Visual Experience Composer](./personalization-using-vec.md)
+
+* __Scenario 3:__ Aanpassing van volledige webpaginabelessen
+
+   1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
+   1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
+   1. [De volledige webpaginabeleving aanpassen](./personalization-web-page.md)
+
+
