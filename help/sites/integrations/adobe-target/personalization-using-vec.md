@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,12 @@ ht-degree: 0%
 
 Leer hoe te om een Activiteit van het Doel van de Test te creëren A/B gebruikend Visuele Composer van de Ervaring (VEC).
 
-Voordat u een activiteit in Doel maakt, moet u de volgende instellingen uitvoeren:
+## Vereisten
 
-1. [Experience Platform Launch en AEM integreren](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-2. [Adobe Experience Manager met Adobe Target integreren met behulp van Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/target/setup-aem-target-cloud-service.html)
+Om VEC op een AEM website te kunnen gebruiken, moet de volgende instelling zijn voltooid:
+
+1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
+1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
 
 ## Overzicht van scenario
 
@@ -33,7 +35,10 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste manier om
 
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
-1. Aanmelden bij Adobe Target en navigeren naar het tabblad Activiteiten
+1. Aanmelden bij [Adobe Experience Cloud](https://experience.adobe.com/), tikken op __Doel__, navigeren naar het tabblad __Activiteiten__
+
+   + Als u geen __Doel__ op het dashboard van de Experience Cloud ziet, zorg ervoor de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat u de gebruiker toegang tot Doel in [Adobe Admin Console](https://adminconsole.adobe.com/)is verleend.
+
 1. Klik op de knop Activiteit **** maken en kies vervolgens **A/B-testactiviteit**
 
    ![A/B-activiteit](assets/ab-target-activity.png)
@@ -82,5 +87,5 @@ In dit hoofdstuk, kon een teller een ervaring tot stand brengen gebruikend Visua
 
 ## Ondersteunende koppelingen
 
-* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
