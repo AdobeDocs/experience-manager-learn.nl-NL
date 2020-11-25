@@ -4,7 +4,7 @@ user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experi
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 2%
@@ -107,7 +107,7 @@ ht-degree: 2%
       + [Doelextensie toevoegen aan Starteigenschap](integrations/adobe-target/add-target-launch-extension.md)
       + [Een doelaanroep laden en in werking stellen](integrations/adobe-target/load-and-fire-target.md)
       + [Adobe Target Cloud Service-account maken](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Exportervaringsfragment naar Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Fragmenten voor ervaring exporteren naar Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Doelactiviteit maken met behulp van Experience Fragment-aanbiedingen](integrations/adobe-target/create-target-activity.md)
       + [Personalisatie met behulp van Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Aanpassing van de volledige webpaginabeleving](integrations/adobe-target/personalization-web-page.md)
