@@ -1,6 +1,6 @@
 ---
 title: Aanpassing van volledige webpaginabeleving
-description: Leer hoe u een activiteit maakt om uw sitepagina's die op AEM worden gehost, om te leiden naar een nieuwe pagina met Adobe Target.
+description: Leer hoe u een doelactiviteit maakt om uw AEM webpagina's met Adobe Target om te leiden naar nieuwe pagina's.
 feature: targeting
 topics: integrations, authoring, personalization, activity, offers
 audience: all
@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,12 @@ ht-degree: 0%
 
 Leer hoe u een activiteit maakt om uw sitepagina&#39;s die op AEM worden gehost, om te leiden naar een nieuwe pagina met Adobe Target.
 
-Voordat u een activiteit in Doel maakt, moet u de volgende instellingen uitvoeren:
+## Vereisten
 
-1. [Experience Platform Launch en AEM integreren](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+Om volledige pagina&#39;s van een AEM website te personaliseren, moet de volgende opstelling worden voltooid:
+
+1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
+1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
 
 ## Overzicht van scenario
 
