@@ -1,5 +1,5 @@
 ---
-title: Exportervaringsfragment naar Adobe Target
+title: Fragmenten voor ervaring exporteren naar Adobe Target
 description: Leer hoe u AEM Experience Fragment publiceert en exporteert als Adobe Target-aanbiedingen.
 feature: experience-fragments
 topics: integrations, authoring
@@ -10,10 +10,10 @@ version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 0%
+source-wordcount: '192'
+ht-degree: 1%
 
 ---
 
@@ -26,9 +26,34 @@ Leer hoe u AEM Ervaring Fragment als Adobe Target-aanbiedingen exporteert.
 
 ## Volgende stappen
 
-1. [Een doelactiviteit maken met behulp van de fragmentatieaanbiedingen van de ervaring](./create-target-activity.md)
++ [Een doelactiviteit maken met behulp van de fragmentatieaanbiedingen van de ervaring](./create-target-activity.md)
+
+## Problemen oplossen
+
+### Exporteren van ervaringsfragmenten naar doel mislukt
+
+#### Fout
+
+Als u het fragment Experience naar Adobe Target exporteert zonder de juiste machtigingen in Adobe Admin Console, treedt de volgende fout op bij de AEM Author-service:
+
+    ![UI-fout doel-API](assets/error-target-offer.png)
+
+... en de volgende logberichten in het `aemerror` logboek:
+
+    ![Fout doelAPI-console](assets/target-console-error.png)
+
+#### Resolutie
+
+1. Aanmelden bij [Admin Console](https://adminconsole.adobe.com/) met beheerrechten voor het gebruikte Adobe Target-productprofiel, maar AEM integratie
+2. Selecteer __Producten > Adobe Target > Productprofiel__
+3. Selecteer op het tabblad __Integraties__ de integratie voor uw AEM als een Cloud Service-omgeving (dezelfde naam als het Adobe I/O-project)
+4. De rol __Editor__ of __fiatteur__ toewijzen
+
+   ![DoelAPI-fout](assets/target-permissions.png)
+
+Als u de juiste machtigingen toevoegt aan de Adobe Target-integratie, wordt deze fout opgelost.
 
 ## Ondersteunende koppelingen
 
-* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
