@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Kopie plaatsen {#place-copy}
+# Kopie {#place-copy} plaatsen
 
 Leer hoe u elementen van AEM Assets kunt gebruiken met de bewerking Kopie plaatsen.
 
