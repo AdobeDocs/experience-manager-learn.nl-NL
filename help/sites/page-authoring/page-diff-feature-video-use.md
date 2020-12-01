@@ -25,7 +25,7 @@ ht-degree: 1%
 
 De mogelijkheden van het paginaverschil van de Plaatsen van AEM tonen een snelle, kleur-gecodeerde mening van welke inhoud in een pagina (versie, levende exemplaar, lanceert, taalexemplaar) is veranderd.
 
-## Paginaversies vergelijken {#comparing-page-versions}
+## Paginaversies {#comparing-page-versions} vergelijken
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=9&learn=on)
 
