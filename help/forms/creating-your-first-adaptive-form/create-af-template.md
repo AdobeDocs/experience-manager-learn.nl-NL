@@ -25,9 +25,9 @@ In de volgende video ziet u het basisproces voor het maken van een adaptieve for
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-Raadpleeg de documentatie bij [de](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) aangepaste formuliersjabloon voor meer informatie
+Raadpleeg de documentatie van [adaptieve formuliersjablonen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) voor meer informatie
 
-Indien nodig kunt u de [aangepaste formuliersjabloon](assets/peak-application-template.zip) downloaden en in AEM importeren met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+Indien nodig kunt u de [adaptieve formuliersjabloon](assets/peak-application-template.zip) downloaden en naar AEM importeren met de [pakketmanager](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
