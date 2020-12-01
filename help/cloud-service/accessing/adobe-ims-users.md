@@ -20,7 +20,7 @@ ht-degree: 6%
 
 # Adobe IMS-gebruikers
 
-De gebruikers die toegang tot de dienst van de Auteur vereisen worden beheerd als gebruikers [van](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) Adobe IMS in [Adobe](https://adminconsole.adobe.com). Leer over welke gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden beheerd.
+Gebruikers die toegang tot de AEM-auteurservice nodig hebben, worden beheerd als [Adobe IMS-gebruikers](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [Adobe](https://adminconsole.adobe.com). Leer over welke gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden beheerd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39149/?quality=12&learn=on)
 
