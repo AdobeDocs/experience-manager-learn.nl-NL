@@ -24,4 +24,4 @@ In de video worden de verschillende stappen uitgelegd die nodig zijn om een adap
 
 Elementen die betrekking hebben op deze video kunnen worden gedownload via de volgende koppeling
 
-* [Wijziging van de vorm van de begunstigde ](assets/change-of-beneficiary-form.zip)
+* [Wijziging van de vorm van de begunstigde  ](assets/change-of-beneficiary-form.zip)
