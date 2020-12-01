@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Taalkopie maken {#create-language-copy}
+# Een taalkopie maken {#create-language-copy}
 
 Ontdek hoe u een taalkopie voor uw AEM site kunt maken met de wizard Taalkopie maken.
 
