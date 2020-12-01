@@ -32,7 +32,7 @@ Open de 401KStatement in bewerkingsmodus.
 
 AEM Forms 6.4 heeft het vrij eenvoudig gemaakt om gegevens te tonen gebruikend diverse types van grafieken. We gaan een Line-grafiek gebruiken om de balans per jaar weer te geven.
 
-Tik rechts op het doelgebied **Accountvoortgang** en klik op het pictogram &quot;+&quot; om het dialoogvenster Component invoegen te openen.
+Tik op het **Accountvoortgang** doelgebied aan de rechterkant en klik op het pictogram &quot;+&quot; om het dialoogvenster voor de invoegcomponent weer te geven.
 
 Selecteer Diagram om de diagramcomponent in te voegen.
 
