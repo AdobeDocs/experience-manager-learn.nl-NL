@@ -28,12 +28,12 @@ De volgende aspecten van het workflowbeheer, die in AEM 6.5 zijn geïntroduceerd
 + Enable Workflow metadata under list view settings.
 + Eenvoudige navigatie naar werkstroomtijdlijn vanuit de lijstweergave
 + Kopieer en plak een bestaande OOTB-workflow om de standaardfunctionaliteit aan te passen of te overschrijven
-+ Snel publiceren voor [!DNL Workflow Models] en [!DNL Launchers]
++ Snel publiceren uitvoeren voor [!DNL Workflow Models] en [!DNL Launchers]
 + Publicatie beheren voor [!DNL Workflow Models] en [!DNL Launchers].
 + Gebruikers op de hoogte stellen van een waarschuwingsknopinfo wanneer ze een OOTB Workflow Model of Launcher proberen te bewerken.
 + Mogelijkheid om wijzigingen door te voeren die zijn aangebracht in een OOTB-workflowmodel of in opstarters.
 
-Deze video gebruikt [!DNL Workflow models] om deze reeks mogelijkheden aan te tonen, maar ze zijn ook van toepassing op [!DNL AEM Launchers].
+Deze video gebruikt [!DNL Workflow models] om deze reeks mogelijkheden aan te tonen, maar zij zijn ook van toepassing op [!DNL AEM Launchers].
 
 
 >[!NOTE]
