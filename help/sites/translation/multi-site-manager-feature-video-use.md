@@ -22,15 +22,15 @@ ht-degree: 1%
 
 # Beheer van meerdere sites gebruiken {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Live Copy Overview] en [!UICONTROL Blueprint Configuration Manager] zijn AEM-auteur-interfaces voor het werken met de functie Multi-Site Manager van Adobe Experience Manager Sites.
+[!UICONTROL Live Copy Overview] en  [!UICONTROL Blueprint Configuration Manager] zijn AEM Author-interfaces voor het werken met de functie Multi-Site Manager van Adobe Experience Manager Sites.
 
 ## Overzicht van live kopiëren {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054/?quality=9&learn=on)
 
-*Het overzicht van Actieve kopie is een interface van Touch die wordt gebruikt voor het beheer van live kopieën en hun respectievelijke blauwdrukken. Deze functie, die is geïntroduceerd in AEM 6.3, vervangt het klassieke UI-centrum voor de controle van blauwdrukken.*
+*Het overzicht van Actieve kopie is een interface van Touch die wordt gebruikt voor het beheer van live kopieën en hun respectievelijke blauwdrukken. Deze functie, die is geïntroduceerd in AEM 6.3, vervangt het klassieke UI Blueprint Control Center.*
 
-## Blueprint Configuration Manager - Touch UI {#blueprint-config-mgr}
+## Configuratiebeheer van blauwdruk - Aanraakinterface {#blueprint-config-mgr}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17056/?quality=9&learn=on)
 
