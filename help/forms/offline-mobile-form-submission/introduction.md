@@ -27,7 +27,7 @@ Voor dit gebruiksgeval moeten de volgende stappen worden uitgevoerd:
 * PDF-verzending vanuit Acrobat/Reader verwerken
 * De Adobe Experience Manager-workflow (AEM) activeren om de verzonden PDF te reviseren
 
-Deze zelfstudie doorloopt de stappen die nodig zijn om het bovenstaande gebruiksgeval te voltooien. Hier zijn voorbeeldcode en elementen [beschikbaar die betrekking hebben op deze zelfstudie.](part-four.md)
+Deze zelfstudie doorloopt de stappen die nodig zijn om het bovenstaande gebruiksgeval te voltooien. Voorbeeldcode en elementen die betrekking hebben op deze zelfstudie zijn [hier beschikbaar.](part-four.md)
 
 In de volgende video ziet u een overzicht van het gebruik
 
