@@ -26,7 +26,7 @@ In deze zelfstudie worden de stappen beschreven die nodig zijn voor het opslaan 
 
 * Maak een POST vraag aan een servlet. Deze servlet slaat de gegevens in het gegevensbestand en de vormgehechtheid in de bewaarplaats CRX op. De opgeslagen gegevens in het gegevensbestand worden geassocieerd met een GUID.
 
-* Wanneer u het Aangepaste Vorm met de opgeslagen gegevens wilt bevolken, wint u de gegevens verbonden aan GUID terug en bevolkt de AanpassingsVorm gebruikend de **request.setAttribute** methode.
+* Wanneer u de Aangepaste Vorm met de opgeslagen gegevens wilt bevolken, wint u de gegevens verbonden aan GUID terug en bevolkt de Aanpassende Vorm gebruikend **request.setAttribute** methode.
 
 ## Bewijs van de gebruikszaak
 
