@@ -29,7 +29,7 @@ Om de voorgelegde gegevens in gegevensbestand op te slaan, zullen wij een servle
 
 We hebben een aangepaste verzending gemaakt voor de verzending van het formulier. In deze aangepaste submit&#39;s post.POST.jsp sturen we het verzoek door naar onze servlet.
 
-Lees dit [artikel voor meer informatie over Aangepast verzenden](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Lees voor meer informatie over aangepaste verzendverzoeken dit [artikel](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmission&quot;,null,null);
 
