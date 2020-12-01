@@ -20,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# De pagina-editor gebruiken {#using-page-editor-with-aem-sites}
+# De pagina-editor {#using-page-editor-with-aem-sites} gebruiken
 
 AEM de Pagina-editor van de site is een krachtig hulpmiddel voor het maken en bewerken van webinhoud. De gereedschappen en mogelijkheden van de Pagina-editor zijn toegankelijk via de werkbalk UI van de Pagina-editor.
 
