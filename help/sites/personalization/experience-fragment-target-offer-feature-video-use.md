@@ -21,7 +21,7 @@ ht-degree: 1%
 ---
 
 
-# Geniet van fragmentatieaanbiedingen in Adobe Target{#using-experience-fragment-offers-within-adobe-target}
+# Het gebruiken van de Aanbiedingen van het Fragment van de Ervaring binnen Adobe Target{#using-experience-fragment-offers-within-adobe-target}
 
 In Adobe Experience Manager 6.4 wordt de personalisatieworkflow tussen AEM en Target vernieuwd. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden geleverd als HTML-aanbiedingen. Hiermee kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
 
