@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Adaptief formulier maken {#creating-adaptive-form}
+# Adaptief formulier {#creating-adaptive-form} maken
 
 In Deel1 zullen wij Aangepast Vorm creëren dat op het malplaatje wordt gebaseerd dat in de vroegere les wordt gecreeerd, en zullen toolbar met aangewezen knopen vormen.
 
