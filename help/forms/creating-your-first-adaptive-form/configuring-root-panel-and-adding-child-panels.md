@@ -24,7 +24,7 @@ ht-degree: 0%
 
 # Onderliggende deelvensters toevoegen aan hoofdvenster {#adding-child-panels-to-root-panel}
 
-Wanneer u onderliggende deelvensters aan het hoofddeelvenster toevoegt, moet u **ervoor zorgen dat u in de bewerkingsmodus werkt. De bewerkknop bevindt zich rechtsboven in de browser.**
+**Zorg dat u in de bewerkingsmodus werkt wanneer u onderliggende deelvensters toevoegt aan het hoofddeelvenster. De bewerkingsknop bevindt zich rechtsboven in de browser.**
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=9&learn=on)
