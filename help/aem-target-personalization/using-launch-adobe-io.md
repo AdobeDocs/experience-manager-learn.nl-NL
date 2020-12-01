@@ -1,8 +1,8 @@
 ---
-title: Adobe Experience Manager integreren met Adobe Target door Experience Platform Launch en Adobe I/O te gebruiken
-seo-title: Adobe Experience Manager integreren met Adobe Target door Experience Platform Launch en Adobe I/O te gebruiken
-description: Stap voor stap doorlopen op hoe u Adobe Experience Manager met Adobe Target kunt integreren met behulp van Experience Platform Launch en Adobe I/O
-seo-description: Stap voor stap doorlopen op hoe u Adobe Experience Manager met Adobe Target kunt integreren met behulp van Experience Platform Launch en Adobe I/O
+title: Adobe Experience Manager integreren met Adobe Target met behulp van Experience Platform Launch en Adobe I/O
+seo-title: Adobe Experience Manager integreren met Adobe Target met behulp van Experience Platform Launch en Adobe I/O
+description: Stap voor stap door hoe u Adobe Experience Manager met Adobe Target kunt integreren met behulp van Experience Platform Launch en Adobe I/O
+seo-description: Stap voor stap door hoe u Adobe Experience Manager met Adobe Target kunt integreren met behulp van Experience Platform Launch en Adobe I/O
 translation-type: tm+mt
 source-git-commit: 1209064fd81238d4611369b8e5b517365fc302e3
 workflow-type: tm+mt
@@ -12,24 +12,24 @@ ht-degree: 1%
 ---
 
 
-# Adobe Experience Platform Launch gebruiken via Adobe I/O-console
+# Adobe Experience Platform Launch gebruiken via Adobe I/O Console
 
 ## Vereisten
 
-* [AEM auteur- en publicatieexemplaar](./implementation.md#set-up-aem) dat wordt uitgevoerd op respectievelijk localhost-poort 4502 en 4503
+* [AEM auteur en publiceer ](./implementation.md#set-up-aem) instormsessies op respectievelijk localhost port 4502 en 4503
 * **Experience Cloud**
-   * Toegang tot uw organisaties Adobe Experience Cloud - <https://>`<yourcompany>`.experienceCloud.adobe.com
+   * Toegang tot uw organisaties Adobe Experience Cloud - <https://>`<yourcompany>`.ExperienceCloud.adobe.com
    * Experience Cloud voorzien van de volgende oplossingen
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Adobe I/O-console](https://console.adobe.io)
+      * [Adobe I/O Console](https://console.adobe.io)
 
       >[!NOTE]
-      >U moet over de juiste machtigingen beschikken om in Launch omgevingen te ontwikkelen, goed te keuren, te publiceren, te beheren en te beheren. Als u geen van deze stappen kunt uitvoeren omdat de gebruikersinterfaceopties niet beschikbaar zijn, vraagt u de beheerder van de Experience Cloud om toegang. Raadpleeg de documentatie [](https://docs.adobelaunch.com/administration/user-permissions)voor meer informatie over opstartmachtigingen.
+      >U moet over de juiste machtigingen beschikken om in Launch omgevingen te ontwikkelen, goed te keuren, te publiceren, te beheren en te beheren. Als u geen van deze stappen kunt uitvoeren omdat de gebruikersinterfaceopties niet beschikbaar zijn, vraagt u de beheerder van de Experience Cloud om toegang. Voor meer informatie over de toestemmingen van de Lancering, [zie de documentatie](https://docs.adobelaunch.com/administration/user-permissions).
 
 
 * **Browserplug-ins**
-   * Adobe Experience Cloud Debugger ([Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj))
+   * Adobe Experience Cloud-foutopsporing ([Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj))
    * Starten en DTM-switch ([Chrome](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk))
 
 ## Betrokken gebruikers
@@ -63,20 +63,20 @@ In deze sectie zouden de volgende integratiestappen worden behandeld:
 
 Een eigenschap is een container die u vult met extensies, regels, gegevenselementen en bibliotheken wanneer u tags op uw site implementeert.
 
-1. Ga naar uw organisaties, [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.ExperienceCloud.adobe.com)
+1. Navigeer naar uw organisaties [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.ExperienceCloud.adobe.com)
 2. Meld u aan met uw Adobe ID en zorg ervoor dat u zich in de juiste organisatie bevindt.
-3. Klik vanuit de oplossingsschakelaar op **Starten** en selecteer vervolgens de knop **Ga naar starten** .
+3. Van de oplossingsschakelaar, klik op **Lancering** en selecteer dan **Ga naar Lancering** knoop.
 
    ![Experience Cloud - Starten](assets/using-launch-adobe-io/exc-cloud-launch.png)
 
 4. Zorg ervoor u in de juiste organisatie bent en ga dan met het creëren van een bezit van de Lancering te werk.
    ![Experience Cloud - Starten](assets/using-launch-adobe-io/launch-create-property.png)
 
-   *Zie[Een eigenschap](https://docs.adobelaunch.com/administration/companies-and-properties#create-a-property)maken in de productdocumentatie voor meer informatie over het maken van eigenschappen.*
+   *Zie  [Eigenschappen maken in de ](https://docs.adobelaunch.com/administration/companies-and-properties#create-a-property) productdocumentatie voor meer informatie over het maken van eigenschappen.*
 5. Klik op de knop **Nieuwe eigenschap**
-6. Geef een naam op voor uw eigenschap (bijvoorbeeld *AEM zelfstudie* over het doel)
-7. Als domein, ga *localhost.com* in aangezien dit het domein is waar de WKND demo plaats loopt. Hoewel het veld &#39;*Domein*&#39; is vereist, werkt de eigenschap Launch op elk domein waar het is geïmplementeerd. Het primaire doel van dit gebied is menuopties in de Bouwer van de Regel vooraf in te vullen.
-8. Klik op de knop **Opslaan** .
+6. Geef een naam op voor uw eigenschap (bijvoorbeeld *AEM Zelfstudie doel*)
+7. Als domein, ga *localhost.com* in aangezien dit het domein is waar de WKND demo plaats loopt. Hoewel het &quot;*Domein*&quot;gebied wordt vereist, zal het bezit van de Lancering aan om het even welk domein werken waar het wordt uitgevoerd. Het primaire doel van dit gebied is menuopties in de Bouwer van de Regel vooraf in te vullen.
+8. Klik op de knop **Opslaan**.
 
    ![Starten - Nieuwe eigenschap](assets/using-launch-adobe-io/exc-launch-property.png)
 
@@ -84,7 +84,7 @@ Een eigenschap is een container die u vult met extensies, regels, gegevenselemen
 
 #### Doelextensie toevoegen
 
-De Adobe Target-extensie ondersteunt client-side implementaties met Target JavaScript SDK voor het moderne web, `at.js`. Klanten die nog steeds gebruikmaken van de oudere bibliotheek Target, `mbox.js`moeten een upgrade uitvoeren naar at.js [](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/upgrading-from-atjs-1x-to-atjs-20.html) om Launch te gebruiken.
+De Adobe Target-extensie ondersteunt client-side implementaties met de Target JavaScript SDK voor het moderne web, `at.js`. Klanten die nog gebruikmaken van de oudere bibliotheek Target, `mbox.js`, [dienen een upgrade uit te voeren naar at.js](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/upgrading-from-atjs-1x-to-atjs-20.html) om Launch te gebruiken.
 
 De doelextensie bestaat uit twee hoofdonderdelen:
 
@@ -95,17 +95,17 @@ De doelextensie bestaat uit twee hoofdonderdelen:
    * Params toevoegen aan Global Mbox
    * Globale standaardmap
 
-1. Onder **Uitbreidingen** ziet u de lijst Extensies die al zijn geïnstalleerd voor de eigenschap Launch. ([Experience Platform Launch Core Extension](https://exchange.adobe.com/experiencecloud.details.100223.adobe-launch-core-extension.html) is standaard geïnstalleerd)
-2. Klik op de optie **Extensiecatalogus** en zoek naar Doel in het filter.
-3. Selecteer de meest recente versie van Adobe Target in.js en klik op de optie **Installeren** .
+1. Onder **Extensies**, kunt u de lijst zien van Uitbreidingen die reeds voor uw bezit van de Lancering geïnstalleerd zijn. ([Experience Platform Launch Core Extension](https://exchange.adobe.com/experiencecloud.details.100223.adobe-launch-core-extension.html) is standaard geïnstalleerd)
+2. Klik op de optie **Extension Catalog** en zoek naar Doel in het filter.
+3. Selecteer de nieuwste versie van Adobe Target at.js en klik op **Install** optie.
    ![Starten - Nieuwe eigenschap](assets/using-launch-adobe-io/launch-target-extension.png)
 
-4. Klik op de knop **Configureren** en u ziet dat het configuratievenster met de geïmporteerde referenties van uw doelaccount en de versie at.js voor deze extensie.
+4. Klik op **Configure** knoop, en u kunt het configuratievenster opmerken met uw ingevoerde de rekeningsgeloofsbrieven van het Doel, en de versie at.js voor deze uitbreiding.
    ![Doel - Extension Config](assets/using-launch-adobe-io/launch-target-extension-2.png)
 
-   Wanneer Doel wordt geïmplementeerd via asynchrone insluitcodes voor Starten, moet u een voorverborgen fragment op uw pagina&#39;s vóór de insluitcodes voor Starten hard coderen om het flikkeren van de inhoud te beheren. We zullen later meer leren over de voorverborgen snipper. U kunt het voorverborgen fragment [hier downloaden](assets/using-launch-adobe-io/prehiding.js)
+   Wanneer Doel wordt geïmplementeerd via asynchrone insluitcodes voor Starten, moet u een voorverborgen fragment op uw pagina&#39;s vóór de insluitcodes voor Starten hard coderen om het flikkeren van de inhoud te beheren. We zullen later meer leren over de voorverborgen snipper. U kunt het voorverborgen fragment [hier](assets/using-launch-adobe-io/prehiding.js) downloaden
 
-5. Klik op **Opslaan** om het toevoegen van de extensie Doel aan de eigenschap Starten te voltooien. U moet nu de doelextensie kunnen zien in de lijst **Geïnstalleerde** extensies.
+5. Klik **Save** om het toevoegen van de uitbreiding van het Doel aan uw bezit van de Lancering te voltooien, en u zou de uitbreiding van het Doel nu moeten kunnen zien onder **Geïnstalleerde** uitbreidingslijst wordt vermeld die.
 
 6. Herhaal bovenstaande stappen om te zoeken naar de extensie &quot;Experience Cloud ID Service&quot; en installeer deze.
    ![Extension - Experience Cloud ID-service](assets/using-launch-adobe-io/launch-extension-experience-cloud.png)
@@ -118,14 +118,14 @@ De doelextensie bestaat uit twee hoofdonderdelen:
 
 #### Samenstellen en publiceren
 
-1. Klik op het tabblad **Publiceren** voor uw site-eigenschap en maak een bibliotheek om onze wijzigingen (gegevenselementen, regels) te maken en in te voeren in een ontwikkelomgeving.
+1. Klik op het **Publiceren** lusje voor uw plaatseigenschap, en laten wij een bibliotheek tot stand brengen om te bouwen, en onze veranderingen (gegevenselementen, regels) in een ontwikkelomgeving op te stellen.
    >[!VIDEO](https://video.tv.adobe.com/v/28412?quality=12&learn=on)
 2. Publiceer uw veranderingen van de Ontwikkeling aan een het Opvoeren milieu.
    >[!VIDEO](https://video.tv.adobe.com/v/28419?quality=12&learn=on)
-3. Voer de optie **Samenstellen voor Staging uit**.
-4. Zodra de bouwstijl volledig is, stel **Goedkeuren voor het Publiceren**in werking, die uw veranderingen van een het Opvoeren milieu aan een milieu van de Productie beweegt.
+3. Voer **Build for Staging option** uit.
+4. Zodra de bouwstijl volledig is, stel **goed voor het Publiceren** in werking, die uw veranderingen van een het Opvoeren milieu aan een milieu van de Productie beweegt.
    ![Staging naar productie](assets/using-launch-adobe-io/build-staging.png)
-5. Tot slot stel de optie **Bouwstijl en Publiceren aan productie** in werking om uw veranderingen in productie te duwen.
+5. Tot slot stel **Bouwen en publiceren aan productie** optie in werking om uw veranderingen in productie te duwen.
    ![Samenstellen en publiceren naar productie](assets/using-launch-adobe-io/build-and-publish.png)
 
 ### Adobe Experience Manager
@@ -134,16 +134,16 @@ De doelextensie bestaat uit twee hoofdonderdelen:
 
 >[!NOTE]
 >
-> Verleen de Adobe I/O integratie de toegang tot uitgezochte werkruimten met de aangewezen [rol om een centraal team toe te staan API-gedreven veranderingen in slechts een paar werkruimten](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html)aan te brengen.
+> Verleen de integratie van Adobe I/O de toegang tot uitgezochte werkruimten met de aangewezen [rol om een centraal team toe te staan om API-gedreven veranderingen in slechts een paar werkruimten aan te brengen](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
 
 1. Maak IMS-integratie in AEM met behulp van referenties van Adobe I/O. (01:12 t/m 03:55)
-2. Maak in Experience Platform Launch een eigenschap. ( [hierboven](#create-launch-property)behandeld)
+2. Maak in Experience Platform Launch een eigenschap. (bedekt [boven](#create-launch-property))
 3. Gebruikend de integratie IMS van Stap 1, creeer de integratie van het Experience Platform Launch om uw bezit van de Lancering in te voeren.
 4. Wijs in AEM de integratie van het Experience Platform Launch aan een plaats toe gebruikend browser configuratie. (05:28 t/m 06:14)
 5. Integratie handmatig valideren. (06:15 t/m 06:33)
 6. Insteekmodule voor Starten/DTM-browser gebruiken. (06:34 t/m 06:50)
 7. Adobe Experience Cloud Debugger-browserplug-in gebruiken. (06:51 t/m 07:22)
 
-U hebt nu [AEM met Adobe Target geïntegreerd met Adobe Experience Platform Launch](./using-aem-cloud-services.md#integrating-aem-target-options) , zoals beschreven in Optie 1.
+U hebt [AEM nu geïntegreerd met Adobe Target met Adobe Experience Platform Launch](./using-aem-cloud-services.md#integrating-aem-target-options) zoals beschreven in Option 1.
 
 Voor het gebruiken van AEM de aanbiedingen van het Fragment van de Ervaring om u verpersoonlijkingsactiviteiten te drijven, laat aan het volgende hoofdstuk verdergaan, en AEM met Adobe Target integreren gebruikend de erfeniswolkendiensten.
