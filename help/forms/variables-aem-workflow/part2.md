@@ -37,7 +37,7 @@ U kunt het schema met de variabele van type JSON in uw werkschemamodel in kaart 
 Voer de volgende stappen uit om de middelen op uw systeem te laten werken:
 
 * [Elementen downloaden en importeren in AEM met pakketbeheer](assets/jsonandstringvariable.zip)
-* [Het workflowmodel](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) verkennen om inzicht te krijgen in de variabelen die worden gebruikt in de workflow
+* [Ontdek het ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) workflowmodel om te begrijpen welke variabelen worden gebruikt in de workflow
 * [De e-mailservice configureren](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Het adaptieve formulier openen](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * De gegevens invullen en het formulier verzenden
