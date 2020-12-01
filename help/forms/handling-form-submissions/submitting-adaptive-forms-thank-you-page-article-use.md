@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Verzenden naar pagina Hartelijk dank {#submitting-to-thank-you-page}
+# Verzenden naar pagina {#submitting-to-thank-you-page}
 
 Verzenden naar de eindpuntoptie REST geeft de gegevens die in het formulier zijn ingevuld door aan een geconfigureerde bevestigingspagina als onderdeel van de HTTP-aanvraag. U kunt de naam toevoegen van de velden die u wilt aanvragen. De indeling van het verzoek is:
 
@@ -39,8 +39,8 @@ U kunt ook naar het externe eindpunt verzenden via POST. Om dat te verwezenlijke
 
 Volg de onderstaande instructies om deze mogelijkheid op uw server te testen:
 
-* Importeer het [elementbestand dat aan dit artikel is gekoppeld via pakketbeheer in AEM](assets/submittingtorestendpoint.zip)
-* De browser naar het formulier [Time-off (Aanvraag voor time-out) sturen](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Importeer het [elementbestand dat aan dit artikel is gekoppeld in AEM met pakketbeheer](assets/submittingtorestendpoint.zip)
+* Wijs uw browser aan [Time-off aanvraagformulier](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Vul het vereiste veld in en verzend het formulier
 * Je moet een pagina voor bedankt openen waarop je gegevens op de pagina zijn ingevuld
 
