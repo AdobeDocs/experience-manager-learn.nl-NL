@@ -49,8 +49,8 @@ De URL voor de bovenstaande afbeeldingsset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/image-set-url-1.png)
 
-- Leer meer over de Reeksen van het Beeld met het Snelle Begin aan de Reeksen [](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/quick-start-image-sets.html)van het Beeld.
-- Leer hoe u een afbeeldingsset [maakt](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
+- Meer informatie over Afbeeldingssets vindt u in [Snel starten naar afbeeldingssets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
+- Leer hoe u [Een afbeeldingsset maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
 
 ### Staalset
 
@@ -68,8 +68,8 @@ De URL voor de bovenstaande stalenset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/image-set_url.png)
 
-- Meer informatie over staalsets vindt u in Staalsets [Snel starten naar stalensets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
-- Leer hoe u een stalenset [maakt](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
+- Meer informatie over Staalsets vindt u in [Snel starten naar stalensets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
+- Leer hoe u [Een stalenset maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
 
 ### Set draaien
 
@@ -85,8 +85,8 @@ De URL voor de bovenstaande centrifugeset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/spin-set.png)
 
-- Meer informatie over centrifuges vindt u in het dialoogvenster [Snel aan de slag gaan met centrifuges](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
-- Leer hoe u een [centrifugeset](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set)maakt.
+- Meer informatie over centreert Reeksen met [Snelle Begin om Reeksen ](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html) te draaien.
+- Leer hoe te [creeer een Reeks van de Draai](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
 
 ## Gemengde mediaset
 
@@ -100,9 +100,9 @@ De URL voor de bovenstaande gemengde mediaset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/image-set-url-1.png)
 
-- Meer informatie over gemengde Mediasets met het [Snel starten naar gemengde mediasets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
+- Meer informatie over gemengde Mediasets met [Snel starten naar gemengde mediasets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
 
-- Leer hoe u een gemengde mediaset [maakt](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
+- Leer hoe te om [een Gemengde Reeks van Media te creëren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
 Als u een afbeelding wilt weergeven voor zoomen, een set of een video op uw website, roept u deze aan in een Dynamic Media Classic &#39;viewer&#39;. Dynamic Media Classic bevat viewers voor rich-media-elementen, zoals stalensets, centrifugesets, video en vele andere.
 
@@ -123,17 +123,17 @@ Een eenvoudige naamgevingsconventie is eerder voorgesteld, zodat u deze eenvoudi
 
 Voorinstellingen voor batchsets worden alleen tijdens het uploaden toegepast; ze kunnen niet worden uitgevoerd nadat de afbeeldingen zijn geüpload. Daarom is het belangrijk dat u de naamgevingsconventie indeelt en een voorinstelling maakt voordat u al uw afbeeldingen gaat laden.
 
-Zodra vooraf instelt zijn gecreeerd, kan de Beheerder van het Bedrijf kiezen of zij actief of inactief zijn. Actief betekent dat deze onder **Taakopties** op de uploadpagina worden weergegeven, terwijl inactieve voorinstellingen verborgen blijven.
+Zodra vooraf instelt zijn gecreeerd, kan de Beheerder van het Bedrijf kiezen of zij actief of inactief zijn. Actief betekent dat deze voorinstellingen worden weergegeven op de uploadpagina onder **Taakopties**, terwijl inactieve voorinstellingen verborgen blijven.
 
-Leer hoe u een voorinstelling [voor een batchset](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset)maakt.
+Leer hoe u [Een voorinstelling voor een batchset maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
 
 ### Batchvoorinstellingen gebruiken bij uploaden
 
 Hieronder wordt beschreven hoe u voorinstellingen voor batchsets gebruikt bij het uploaden nadat deze zijn gemaakt:
 
-1. Klik op **Uploaden** en kies **Van bureaublad** of **Via FTP**.
-2. Klik op **Taakopties**.
-3. Open de optie Voorinstellingen **** batchset en schakel de voorinstelling in of uit om deze te gebruiken tijdens het uploaden.
+1. Klik **Upload** en kies **Van Desktop** of **Via FTP**.
+2. Klik **Taakopties**.
+3. Open de optie **Voorinstellingen batchset** en schakel de voorinstelling in of uit om deze te gebruiken tijdens het uploaden.
 4. Nadat het uploaden is voltooid, kijkt u in uw map naar de voltooide sets.
 
-Meer informatie over voorinstellingen voor [batchsets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
+Meer informatie over [Voorinstellingen batchset](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
