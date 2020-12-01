@@ -1,6 +1,6 @@
 ---
-title: Een SPA integreren | Aan de slag met de AEM SPA Editor en Reageren
-description: Begrijp hoe de broncode voor een Enige die Toepassing van de Pagina (SPA) in React wordt geschreven met een Project van Adobe Experience Manager (AEM) kan worden geïntegreerd. Leer om moderne front-end hulpmiddelen, zoals een webpack dev server, te gebruiken om SPA tegen het modelAPI van AEM JSON snel te ontwikkelen.
+title: Een SPA integreren | Aan de slag met de AEM SPA Editor en reageren
+description: Begrijp hoe de broncode voor een toepassing van de Enige Pagina (SPA) die in React wordt geschreven met een Project van Adobe Experience Manager (AEM) kan worden geïntegreerd. Leer om moderne front-end hulpmiddelen, zoals een webpack dev server, te gebruiken om de SPA tegen AEM JSON model API snel te ontwikkelen.
 sub-product: sites
 feature: maven-archetype, SPA Editor
 topics: development
@@ -18,23 +18,23 @@ ht-degree: 0%
 ---
 
 
-# Een SPA integreren {#integrate-spa}
+# Een SPA {#integrate-spa} integreren
 
-Begrijp hoe de broncode voor een Enige die Toepassing van de Pagina (SPA) in React wordt geschreven met een Project van Adobe Experience Manager (AEM) kan worden geïntegreerd. Leer om moderne front-end hulpmiddelen, zoals een webpack dev server, te gebruiken om SPA tegen het modelAPI van AEM JSON snel te ontwikkelen.
+Begrijp hoe de broncode voor een toepassing van de Enige Pagina (SPA) die in React wordt geschreven met een Project van Adobe Experience Manager (AEM) kan worden geïntegreerd. Leer om moderne front-end hulpmiddelen, zoals een webpack dev server, te gebruiken om de SPA tegen AEM JSON model API snel te ontwikkelen.
 
 ## Doelstelling
 
-1. Begrijp hoe het project van het KUUROORD met AEM met cliënt-zijbibliotheken geïntegreerd is.
+1. Begrijp hoe het SPA project met AEM met cliënt-zijbibliotheken geïntegreerd is.
 2. Leer hoe u een webpack-ontwikkelingsserver gebruikt voor speciale front-end ontwikkeling.
-3. Het gebruik van een **proxy** en een statisch **mock** -bestand verkennen voor ontwikkeling met behulp van de AEM JSON-model-API
+3. Het gebruik van een **proxy** en een statisch **mock** bestand verkennen voor ontwikkeling met behulp van de AEM JSON-model-API
 
 ## Wat u gaat maken
 
-Dit hoofdstuk zal een eenvoudige `Header` component aan SPA toevoegen. In het proces om deze statische `Header` component uit te bouwen zullen verscheidene benaderingen van AEM ontwikkeling van het KUUROORD worden gebruikt.
+In dit hoofdstuk wordt een eenvoudige `Header`-component aan de SPA toegevoegd. Tijdens het ontwikkelen van deze statische `Header`-component zullen verschillende benaderingen voor AEM SPA ontwikkeling worden gebruikt.
 
 ![Nieuwe koptekst in AEM](./assets/integrate-spa/final-header-component.png)
 
-*Het KUUROORD wordt uitgebreid om een statische`Header`component toe te voegen*
+*De SPA wordt uitgebreid om een statische  `Header` component toe te voegen*
 
 ## Vereisten
 
@@ -56,37 +56,37 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Als u [AEM 6.x](overview.md#compatibility) gebruikt, voegt u het `classic` profiel toe:
+   Als u [AEM 6.x](overview.md#compatibility) gebruikt, voegt u het profiel `classic` toe:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/integrate-spa-solution) altijd bekijken of de code plaatselijk controleren door aan de tak te schakelen `React/integrate-spa-solution`.
+U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/integrate-spa-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `React/integrate-spa-solution` te schakelen.
 
 ## Integratiebenadering {#integration-approach}
 
 In het kader van het AEM-project werden twee modules gemaakt: `ui.apps` en `ui.frontend`.
 
-De `ui.frontend` module is een [webpack](https://webpack.js.org/) project dat alle broncode van het KUUROORD bevat. Een meerderheid van de ontwikkeling en het testen van SPA zal in het webpack project worden gedaan. Wanneer een productie bouwt wordt teweeggebracht, wordt het KUUROORD gebouwd en gecompileerd gebruikend webpack. De gecompileerde artefacten (CSS en Javascript) worden gekopieerd in de `ui.apps` module die dan aan AEM runtime wordt opgesteld.
+De `ui.frontend` module is een [webpack](https://webpack.js.org/) project dat alle SPA broncode bevat. Het grootste deel van de SPA ontwikkeling en tests zal worden uitgevoerd in het webpack-project. Wanneer een productiebouwstijl wordt teweeggebracht, wordt het SPA gebouwd en gecompileerd gebruikend webpack. De gecompileerde artefacten (CSS en Javascript) worden gekopieerd in `ui.apps` module die dan aan AEM runtime wordt opgesteld.
 
 ![ui.frontend architectuur op hoog niveau](assets/integrate-spa/ui-frontend-architecture.png)
 
-*Een afbeelding op hoog niveau van de integratie van SPA.*
+*Een afbeelding op hoog niveau van de SPA integratie.*
 
-Hier [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html)vindt u aanvullende informatie over de front-end build.
+Aanvullende informatie over de front-end build kan [hier worden gevonden](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-## Inspect de SPA-integratie {#inspect-spa-integration}
+## Inspect de SPA integratie {#inspect-spa-integration}
 
-Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door het [AEM archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html)van het Project auto-geproduceerd is.
+Vervolgens inspecteert u de module `ui.frontend` om te begrijpen welke SPA automatisch is gegenereerd door het [AEM Project archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-1. In winde van uw keus open omhoog het AEM Project voor het KND SPA. Dit leerprogramma zal IDE van de Code van [Visual Studio gebruiken](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+1. In winde van uw keus open omhoog het AEM Project voor de SPA WKND. Deze zelfstudie zal [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code) gebruiken.
 
    ![VSCode - AEM WKND SPA Project](./assets/integrate-spa/vscode-ide-openproject.png)
 
-2. Vouw de `ui.frontend` map uit en inspecteer deze. Open the file `ui.frontend/package.json`
+2. Vouw de map `ui.frontend` uit en inspecteer deze. Het bestand `ui.frontend/package.json` openen
 
-3. Onder de `dependencies` dosis ziet u een aantal dingen die te maken hebben met `react` inclusief `react-scripts`
+3. Onder `dependencies` moet u verschillende verwant zien aan `react` inclusief `react-scripts`
 
    ```json
    "react": "^16.12.0",
@@ -96,7 +96,7 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
    "react-scripts": "3.4.1"
    ```
 
-   Het `ui.frontend` is een React toepassing die op Create React App [](https://create-react-app.dev/) of CRA voor kort wordt gebaseerd. De `react-scripts` versie geeft aan welke versie van CRA wordt gebruikt.
+   `ui.frontend` is een React toepassing die op [Create React App](https://create-react-app.dev/) of CRA voor kort wordt gebaseerd. De `react-scripts` versie wijst op welke versie van CRA wordt gebruikt.
 
 4. Er zijn ook drie gebiedsdelen vooraf bepaald met `@adobe`:
 
@@ -106,9 +106,9 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
    "@adobe/aem-spa-page-model-manager": "^1.0.0",
    ```
 
-   De bovengenoemde modules maken omhoog de [AEM Redacteur JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) van het KUUROORD en verstrekken de functionaliteit om het mogelijk te maken om de Componenten van het KUUROORD aan AEM Componenten in kaart te brengen.
+   De bovenstaande modules vormen de [AEM redacteur JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) en verstrekken de functionaliteit om het mogelijk te maken om SPA Componenten aan AEM Componenten in kaart te brengen.
 
-5. In het `package.json` bestand zijn er verschillende `scripts` gedefinieerde:
+5. In het `package.json`-bestand zijn verschillende `scripts` gedefinieerd:
 
    ```json
    "scripts": {
@@ -119,17 +119,17 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
    }
    ```
 
-   Dit zijn standaardconstructiescripts die [beschikbaar](https://create-react-app.dev/docs/available-scripts) worden gesteld in de Create React App.
+   Dit zijn standaard bouwstijlmanuscripten die [beschikbaar](https://create-react-app.dev/docs/available-scripts) door Create React App worden gemaakt.
 
-   Het enige verschil is de toevoeging van `&& clientlib` het `build` script. Deze extra instructie is verantwoordelijk voor het kopiëren van het gecompileerde KUUROORD in de `ui.apps` module als cliënt-zijbibliotheek tijdens een bouwstijl.
+   Het enige verschil is de toevoeging van `&& clientlib` aan het `build` manuscript. Deze extra instructie is verantwoordelijk voor het kopiëren van de gecompileerde SPA naar de `ui.apps`-module als client-side bibliotheek tijdens een build.
 
    De npm module [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) wordt gebruikt om dit te vergemakkelijken.
 
 6. Inspect het bestand `ui.frontend/clientlib.config.js`. Dit configuratiedossier wordt gebruikt door [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) om te bepalen hoe te om de cliëntbibliotheek te produceren.
 
-7. Inspect het bestand `ui.frontend/pom.xml`. Dit bestand transformeert de `ui.frontend` map naar een [Maven-module](http://maven.apache.org/guides/mini/guide-multiple-modules.html). Het `pom.xml` dossier is bijgewerkt om [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) te gebruiken om het KUUROORD tijdens een Maven bouwt te **testen** en te **bouwen** .
+7. Inspect het bestand `ui.frontend/pom.xml`. Dit bestand transformeert de map `ui.frontend` naar een [Gemaakt module](http://maven.apache.org/guides/mini/guide-multiple-modules.html). Het `pom.xml`-bestand is bijgewerkt en gebruikt de [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) om **test** en **build** de SPA tijdens een Maven-build te gebruiken.
 
-8. Inspect het bestand `index.js` op `ui.frontend/src/index.js`:
+8. Inspect het bestand `index.js` om `ui.frontend/src/index.js`:
 
    ```js
    //ui.frontend/src/index.js
@@ -154,14 +154,14 @@ Daarna, inspecteer de `ui.frontend` module om het KUUROORD te begrijpen dat door
    });
    ```
 
-   `index.js` is het ingangspunt van de SPA. `ModelManager` wordt verstrekt door de AEM redacteur van het KUUROORD JS SDK. Het is verantwoordelijk voor het aanroepen en injecteren van de `pageModel` (JSON-inhoud) in de toepassing.
+   `index.js` is het ingangspunt van de SPA. `ModelManager` wordt geleverd door de AEM SPA Editor JS SDK. Het is verantwoordelijk voor het aanroepen en injecteren van `pageModel` (de JSON-inhoud) in de toepassing.
 
-## Een koptekstcomponent toevoegen {#header-component}
+## Een koptekstcomponent {#header-component} toevoegen
 
-Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lokale AEM instantie op.
+Voeg vervolgens een nieuwe component aan de SPA toe en implementeer de wijzigingen in een lokale AEM.
 
-1. Maak in de `ui.frontend` module hieronder `ui.frontend/src/components` een nieuwe map met de naam `Header`.
-2. Maak een bestand met de naam `Header.js` onder de `Header` map.
+1. In `ui.frontend` module, onder `ui.frontend/src/components` creeer een nieuwe omslag genoemd `Header`.
+2. Maak een bestand met de naam `Header.js` onder de map `Header`.
 
    ![Map en bestand Koptekst](assets/integrate-spa/header-folder-js.png)
 
@@ -187,8 +187,8 @@ Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lo
 
    Hierboven bevindt zich een standaardcomponent React die een statische tekstreeks uitvoert.
 
-4. Open the file `ui.frontend/src/App.js`. Dit is het ingangspunt van de toepassing.
-5. Voer de volgende updates uit `App.js` om het statische element op te nemen `Header`:
+4. Open het bestand `ui.frontend/src/App.js`. Dit is het ingangspunt van de toepassing.
+5. Voer de volgende updates van `App.js` uit om de statische `Header` op te nemen:
 
    ```diff
      import { Page, withModel } from '@adobe/aem-react-editable-components';
@@ -206,7 +206,7 @@ Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lo
         </div>
    ```
 
-6. Open een nieuwe terminal en navigeer in de `ui.frontend` map en voer de `npm run build` opdracht uit:
+6. Open een nieuwe terminal, navigeer in de `ui.frontend` omslag en stel `npm run build` bevel in werking:
 
    ```shell
    $ cd aem-guides-wknd-spa
@@ -223,11 +223,11 @@ Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lo
    451 B              build/static/css/main.e57bbe8a.chunk.css
    ```
 
-7. Navigate to the `ui.apps` folder. Onder `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-react` u zou moeten zien de gecompileerde dossiers van het KUUROORD van de omslag zijn gekopieerd`ui.frontend/build` .
+7. Navigeer naar de map `ui.apps`. Onder `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-react` zou u moeten zien de gecompileerde SPA dossiers van `ui.frontend/build` omslag zijn gekopieerd.
 
    ![Clientbibliotheek gegenereerd in ui.apps](./assets/integrate-spa/compiled-spa-uiapps.png)
 
-8. Ga terug naar de terminal en navigeer in de `ui.apps` map. Voer het volgende Geweven bevel uit:
+8. Ga terug naar de terminal en navigeer in de `ui.apps` omslag. Voer het volgende Geweven bevel uit:
 
    ```shell
    $ cd ../ui.apps
@@ -241,19 +241,19 @@ Daarna, voeg een nieuwe component aan SPA toe en stel de veranderingen in een lo
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Hiermee wordt het `ui.apps` pakket geïmplementeerd in een lokale actieve instantie van AEM.
+   Hiermee wordt het `ui.apps`-pakket geïmplementeerd op een lokale actieve instantie van AEM.
 
-9. Open een browsertabblad en navigeer naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). U zou nu de inhoud van de `Header` component moeten zien die in het KUUROORD wordt getoond.
+9. Open een browsertabblad en navigeer naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). U zou nu de inhoud van de `Header` component moeten zien die in de SPA wordt getoond.
 
    ![Eerste koptekstimplementatie](./assets/integrate-spa/initial-header-implementation.png)
 
-   Stappen 6-8 worden automatisch uitgevoerd wanneer het teweegbrengen van een Geleiende bouwstijl van de wortel van het project (d.w.z. `mvn clean install -PautoInstallSinglePackage`). U zou nu de grondbeginselen van de integratie tussen het KUUROORD en AEM cliënt-zijbibliotheken moeten begrijpen. U kunt `Text` componenten nog steeds bewerken en toevoegen in AEM onder de statische `Header` component.
+   De stappen 6-8 worden automatisch uitgevoerd wanneer het teweegbrengen van een Geleiende bouwstijl van de wortel van het project (d.w.z. `mvn clean install -PautoInstallSinglePackage`). U zou nu de grondbeginselen van de integratie tussen de SPA en AEM cliënt-zijbibliotheken moeten begrijpen. U kunt `Text`-componenten nog steeds bewerken en toevoegen AEM onder de statische `Header`-component.
 
 ## Webpack Dev Server - Proxy de JSON API {#proxy-json}
 
-Zoals u in de vorige oefeningen ziet, duurt het maken van een build en het synchroniseren van de clientbibliotheek naar een lokale AEM enkele minuten. Dit is aanvaardbaar voor het definitieve testen, maar is niet ideaal voor de meerderheid van de ontwikkeling van SPA.
+Zoals u in de vorige oefeningen ziet, duurt het maken van een build en het synchroniseren van de clientbibliotheek naar een lokale AEM enkele minuten. Dit is acceptabel voor de uiteindelijke test, maar niet ideaal voor het grootste deel van de SPA ontwikkeling.
 
-Een [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan worden gebruikt om SPA snel te ontwikkelen. Het KUUROORD wordt gedreven door een model JSON dat door AEM wordt geproduceerd. In deze oefening zal de inhoud JSON van een lopende instantie van AEM **proxied** in de ontwikkelingsserver zijn.
+Een [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan worden gebruikt om de SPA snel te ontwikkelen. De SPA wordt aangedreven door een JSON-model dat door AEM wordt gegenereerd. In deze oefening zal de inhoud JSON van een lopende instantie van AEM **proxied** in de ontwikkelingsserver zijn.
 
 1. Ga terug naar winde en open het dossier `ui.frontend/package.json`.
 
@@ -263,9 +263,9 @@ Een [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan w
    "proxy": "http://localhost:4502",
    ```
 
-   De [Create React App](https://create-react-app.dev/docs/proxying-api-requests-in-development) verstrekt een gemakkelijk mechanisme aan volmacht API verzoeken. Alle onbekende aanvragen worden doorlopen, `localhost:4502`de lokale AEM quickstart.
+   [Create React App](https://create-react-app.dev/docs/proxying-api-requests-in-development) verstrekt een gemakkelijk mechanisme aan volmacht API verzoeken. Alle onbekende aanvragen worden opnieuw bekeken via `localhost:4502`, de lokale AEM quickstart.
 
-2. Open een terminalvenster en navigeer naar de `ui.frontend` map. Voer de opdracht uit `npm start`:
+2. Open een terminalvenster en navigeer naar de map `ui.frontend`. Voer de opdracht `npm start` uit:
 
    ```shell
    $ cd ui.frontend
@@ -282,7 +282,7 @@ Een [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan w
    To create a production build, use npm run build.
    ```
 
-3. Open een nieuw browsertabblad (indien nog niet geopend) en ga naar [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html).
+3. Open een nieuw browsertabblad (indien nog niet geopend) en navigeer naar [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html).
 
    ![Webpack-ontwikkelserver - proxyjson](./assets/integrate-spa/webpack-dev-server-1.png)
 
@@ -292,19 +292,19 @@ Een [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan w
    >
    > Vanwege de beveiligingsvereisten voor AEM moet u zich in dezelfde browser maar op een ander tabblad aanmelden bij de lokale AEM (http://localhost:4502).
 
-4. Keer terug naar winde en creeer een nieuwe omslag genoemd `media` bij `ui.frontend/src/media`.
-5. Download en voeg het volgende WKND-logo toe aan de `media` map:
+4. Ga terug naar winde en creeer een nieuwe omslag genoemd `media` bij `ui.frontend/src/media`.
+5. Download en voeg het volgende WKND-logo toe aan de map `media`:
 
    ![WKND-logo](./assets/integrate-spa/wknd-logo-dk.png)
 
-6. Openen `Header.js` bij `ui.frontend/src/components/Header/Header.js` en het logo importeren:
+6. Open `Header.js` op `ui.frontend/src/components/Header/Header.js` en importeer het logo:
 
    ```diff
      import React, {Component} from 'react';
    + import wkndLogoDark from '../../media/wknd-logo-dk.png';
    ```
 
-7. Voer de volgende updates uit `Header.js` om het logo op te nemen in de koptekst:
+7. Voer de volgende updates uit naar `Header.js` om het logo op te nemen als onderdeel van de koptekst:
 
    ```js
     export default class Header extends Component {
@@ -335,26 +335,26 @@ Een [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan w
 
    ![Logo toegevoegd aan koptekst](./assets/integrate-spa/added-logo-localhost.png)
 
-   U kunt doorgaan met het uitvoeren van content-updates in AEM en deze weergeven in **webpack-dev-server**, omdat we de inhoud proxying.
+   U kunt doorgaan met het uitvoeren van content-updates in AEM en deze weergeven in **webpack-dev-server**, aangezien we de inhoud proxying.
 
-9. Stop de webpack dev server met `ctrl+c` in de terminal.
+9. Stop de webpack-ontwikkelserver met `ctrl+c` in de terminal.
 
 ## Webpack Dev Server - Mock JSON API {#mock-json}
 
 Een andere manier om snel te ontwikkelen is het gebruik van een statisch JSON-bestand als JSON-model. Door de JSON te &#39;rokken&#39; verwijderen we de afhankelijkheid van een lokale AEM. Het staat ook een front-end ontwikkelaar toe om het model JSON bij te werken om functionaliteit te testen en veranderingen in JSON API te drijven die dan door een achterste-eindontwikkelaar zou worden uitgevoerd.
 
-Voor de eerste configuratie van het model-JSON is **wel een lokale AEM-instantie** vereist.
+Voor de eerste configuratie van het model-JSON is **een lokale AEM-instantie** vereist.
 
 1. Navigeer in de browser naar [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json).
 
    Dit is de JSON die wordt geëxporteerd door AEM die de toepassing stuurt. Kopieer de JSON-uitvoer.
 
-2. Terugkeer aan winde navigeert aan `ui.frontend/public` en voegt een nieuwe omslag genoemd toe `mock-content`.
-3. Maak een nieuw bestand met de naam `mock.model.json` eronder `ui.frontend/public/mock-content`. Plak de JSON-uitvoer uit **stap 1** hier.
+2. Keer terug naar winde navigeer aan `ui.frontend/public` en voeg een nieuwe omslag genoemd `mock-content` toe.
+3. Maak een nieuw bestand met de naam `mock.model.json` onder `ui.frontend/public/mock-content`. Plak de JSON-uitvoer van **Stap 1** hier.
 
    ![JSON-bestand Mock Model](./assets/integrate-spa/mock-model-json-created.png)
 
-4. Open het bestand `index.html` om `ui.frontend/public/index.html`. Werk het meta-gegevensbezit voor het AEM paginamodel bij om aan een variabele te richten `%REACT_APP_PAGE_MODEL_PATH%`:
+4. Open het bestand `index.html` om `ui.frontend/public/index.html`. Werk het meta-gegevensbezit voor het AEM paginamodel bij om aan een variabele `%REACT_APP_PAGE_MODEL_PATH%` te richten:
 
    ```html
        <!-- AEM page model -->
@@ -364,9 +364,9 @@ Voor de eerste configuratie van het model-JSON is **wel een lokale AEM-instantie
        />
    ```
 
-   Door een variabele voor de waarde van de eigenschap te gebruiken, `cq:pagemodel_root_url` kunt u gemakkelijker schakelen tussen de proxy en het model van de modeljson.
+   Door een variabele voor de waarde van het `cq:pagemodel_root_url` te gebruiken, kunt u gemakkelijker schakelen tussen het proxymodel en het mock json-model.
 
-5. Open het bestand `ui.frontend/.env.development` en voer de volgende updates uit om een opmerking te maken over de vorige waarde voor `REACT_APP_PAGE_MODEL_PATH`:
+5. Open het bestand `ui.frontend/.env.development` en voer de volgende updates uit om de vorige waarde voor `REACT_APP_PAGE_MODEL_PATH` toe te voegen:
 
    ```plain
    PUBLIC_URL=/
@@ -377,22 +377,22 @@ Voor de eerste configuratie van het model-JSON is **wel een lokale AEM-instantie
    REACT_APP_ROOT=/content/wknd-spa-react/us/en/home.html
    ```
 
-6. Als deze actief is, stopt u de **webpack-dev-server**. Start de **webpack-dev-server** vanaf de terminal:
+6. Als deze functie momenteel wordt uitgevoerd, moet u de **webpack-dev-server** stoppen. Start de **webpack-dev-server** vanaf de terminal:
 
    ```shell
    $ cd ui.frontend
    $ npm start
    ```
 
-   Navigeer aan [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html) en u zou het KUUROORD met de zelfde inhoud moeten zien die in volmachtsjson wordt gebruikt **** .
+   Navigeer naar [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html) en u zou de SPA met de zelfde inhoud moeten zien die in **volmacht** json wordt gebruikt.
 
-7. Breng een kleine wijziging aan in het eerder gemaakte `mock.model.json` bestand. De bijgewerkte inhoud wordt direct weergegeven in de **webpack-dev-server**.
+7. Breng een kleine wijziging aan in het `mock.model.json` dossier vroeger werd gecreeerd. De bijgewerkte inhoud wordt direct weergegeven in de **webpack-dev-server**.
 
    ![model json-update](./assets/integrate-spa/webpack-mock-model.gif)
 
-Als u het JSON-model kunt manipuleren en de effecten op een live-SPA kunt zien, kan een ontwikkelaar de JSON-model-API beter begrijpen. Het maakt ook zowel front-end als back-end ontwikkeling mogelijk.
+Door het JSON-model te kunnen manipuleren en de effecten op een live SPA te kunnen bekijken, kan een ontwikkelaar de JSON-model-API beter begrijpen. Het maakt ook zowel front-end als back-end ontwikkeling mogelijk.
 
-U kunt nu schakelen tussen de locatie waar de JSON-inhoud moet worden gebruikt door de items in het `env.development` bestand in en uit te schakelen:
+U kunt nu schakelen waar u de JSON-inhoud wilt verbruiken door de items in het `env.development`-bestand in en uit te schakelen:
 
 ```plain
 # JSON API via proxy to AEM
@@ -404,28 +404,28 @@ REACT_APP_PAGE_MODEL_PATH=/mock-content/mock.model.json
 
 ## Stijlen met klasse toevoegen
 
-De beste manier om te reageren is elke component modulair en zelfstandig te houden. Een algemene aanbeveling is om te voorkomen dat dezelfde CSS-klassenaam wordt gebruikt in verschillende componenten, waardoor het gebruik van preprocessoren minder krachtig is. In dit project wordt [Sass](https://sass-lang.com/) gebruikt voor enkele nuttige functies, zoals variabelen. Dit project zal ook losjes [SUIT CSS noemende overeenkomsten](https://github.com/suitcss/suit/blob/master/doc/components.md)volgen. SUIT is een variatie van BEM-notatie, Block Element Modifier, die wordt gebruikt om consistente CSS-regels te maken.
+De beste manier om te reageren is elke component modulair en zelfstandig te houden. Een algemene aanbeveling is om te voorkomen dat dezelfde CSS-klassenaam wordt gebruikt in verschillende componenten, waardoor het gebruik van preprocessoren minder krachtig is. Dit project zal [Sass](https://sass-lang.com/) voor een paar nuttige eigenschappen zoals variabelen gebruiken. Dit project volgt ook losjes [SUIT CSS-naamgevingsconventies](https://github.com/suitcss/suit/blob/master/doc/components.md). SUIT is een variatie van BEM-notatie, Block Element Modifier, die wordt gebruikt om consistente CSS-regels te maken.
 
-1. Open een terminalvenster en stop de **webpack-dev-server** als deze wordt gestart. Voer vanuit de `ui.frontend` map de volgende opdracht in om Sass te [installeren](https://create-react-app.dev/docs/adding-a-sass-stylesheet):
+1. Open een terminalvenster en stop **webpack-dev-server** indien deze wordt gestart. Voer vanuit de map `ui.frontend` de volgende opdracht in voor [Sass](https://create-react-app.dev/docs/adding-a-sass-stylesheet) installeren:
 
    ```shell
    $ cd ui.frontend
    $ npm install node-sass --save
    ```
 
-   Installeren `sass` als peer-afhankelijkheid:
+   `sass` installeren als peer-afhankelijkheid:
 
    ```shell
    $ npm install sass --save
    ```
 
-2. Installeren `normalize-scss` om de stijlen in verschillende browsers te normaliseren:
+2. Installeer `normalize-scss` om de stijlen in verschillende browsers te normaliseren:
 
    ```shell
    $ npm install normalize-scss
    ```
 
-3. Start de **webpack-dev-server** zodat we de stijlen in real-time kunnen zien bijwerken:
+3. Start de **webpack-dev-server** zodat we de stijlen in real-time kunnen zien worden bijgewerkt:
 
    ```shell
    $ npm start
@@ -433,8 +433,8 @@ De beste manier om te reageren is elke component modulair en zelfstandig te houd
 
    Gebruik een van de methoden Proxy of Mock voor de verwerking van de JSON-model-API.
 
-4. Keer terug naar winde en creeer onderaan een nieuwe omslag genoemd `ui.frontend/src` `styles`.
-5. Maak een nieuw bestand onder de `ui.frontend/src/styles` naam `_variables.scss` en vult het met de volgende variabelen:
+4. Terugkeer aan winde en onder `ui.frontend/src` creeer een nieuwe omslag genoemd `styles`.
+5. Maak een nieuw bestand onder `ui.frontend/src/styles` met de naam `_variables.scss` en voeg de volgende variabelen toe aan het bestand:
 
    ```scss
    //_variables.scss
@@ -478,7 +478,7 @@ De beste manier om te reageren is elke component modulair en zelfstandig te houd
    $gutter-padding: 12px;
    ```
 
-6. Wijzig de naam van de extensie van het bestand `index.css` bij `ui.frontend/src/index.css` naar **`index.scss`**. Vervang de inhoud door:
+6. Wijzig de naam van de extensie van het bestand `index.css` om `ui.frontend/src/index.css` in **`index.scss`**. Vervang de inhoud door:
 
    ```scss
    /* index.scss * /
@@ -505,7 +505,7 @@ De beste manier om te reageren is elke component modulair en zelfstandig te houd
    }
    ```
 
-7. Bijwerken `ui.frontend/src/index.js` om de opnieuw benoemde `index.scss`:
+7. `ui.frontend/src/index.js` bijwerken om de opnieuw benoemde `index.scss` op te nemen:
 
    ```diff
     ...
@@ -514,7 +514,7 @@ De beste manier om te reageren is elke component modulair en zelfstandig te houd
     ....
    ```
 
-8. Maak een nieuw bestand met de naam `Header.scss` eronder `ui.frontend/src/components/Header`. Vul het bestand met het volgende:
+8. Maak een nieuw bestand met de naam `Header.scss` onder `ui.frontend/src/components/Header`. Vul het bestand met het volgende:
 
    ```scss
    @import '../../styles/variables';
@@ -549,7 +549,7 @@ De beste manier om te reageren is elke component modulair en zelfstandig te houd
    }
    ```
 
-9. Opnemen `Header.scss` door bijwerken `Header.js`:
+9. `Header.scss` opnemen door `Header.js` bij te werken:
 
    ```js
    import React, {Component} from 'react';
@@ -563,24 +563,24 @@ De beste manier om te reageren is elke component modulair en zelfstandig te houd
 
    ![Opgemaakte koptekst - webpack-ontwikkelserver](./assets/integrate-spa/styled-header.png)
 
-   De bijgewerkte stijlen worden nu toegevoegd aan de `Header` component.
+   De bijgewerkte stijlen worden nu toegevoegd aan de component `Header`.
 
-## Implementeer SPA-updates voor AEM
+## SPA updates voor AEM implementeren
 
-De wijzigingen die in het bestand zijn aangebracht, `Header` zijn momenteel alleen zichtbaar via de **webpack-dev-server**. Stel het bijgewerkte KUUROORD op om de veranderingen te AEM te zien.
+De wijzigingen die in de `Header` zijn aangebracht, zijn momenteel alleen zichtbaar via de **webpack-dev-server**. Implementeer de bijgewerkte SPA om de wijzigingen te AEM.
 
-1. Navigeer aan de wortel van het project (`aem-guides-wknd-spa`) en stel het project in om AEM te gebruiken Maven:
+1. Navigeer naar de hoofdmap van het project (`aem-guides-wknd-spa`) en implementeer het project om het te AEM met Maven:
 
    ```shell
    $ cd ..
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. Ga naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). De update `Header` met het logo en de toegepaste stijlen wordt weergegeven.
+2. Navigeer naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). De bijgewerkte `Header` met het toegepaste logo en de toegepaste stijlen worden weergegeven.
 
    ![Bijgewerkte koptekst in AEM](./assets/integrate-spa/final-header-component.png)
 
-   Nu het bijgewerkte KUUROORD in AEM is, kan het ontwerpen verdergaan.
+   Nu de bijgewerkte SPA in AEM is, kan het ontwerpen worden voortgezet.
 
 ## Fout bij oplossen van problemen in knooppuntklasse
 
@@ -591,12 +591,12 @@ Error: Missing binding aem-guides-wknd-spa/ui.frontend/node_modules/node-sass/ve
 Node Sass could not find a binding for your current environment: macOS 64-bit with Node.js 12.x
 ```
 
-Dit kan voorkomen wanneer de lokale versie van **Node.js** en **npm** verschillend zijn dan wat door de [frontend-beven-stop](https://github.com/eirslett/frontend-maven-plugin)wordt gebruikt. Als u de opdracht uitvoert, `npm rebuild node-sass` kunt u het probleem tijdelijk verhelpen of de `ui.frontend/node_modules` map verwijderen en opnieuw installeren.
+Dit kan voorkomen wanneer de lokale versie van **Node.js** en **npm** verschillend zijn dan wat door [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) wordt gebruikt. Als u de opdracht `npm rebuild node-sass` uitvoert, kan het probleem tijdelijk worden verholpen of kan de map `ui.frontend/node_modules` worden verwijderd en opnieuw worden geïnstalleerd.
 
 Er zijn ook een paar manieren om dit op een meer permanente manier aan te pakken.
 
-* Zorg ervoor dat de lokale versie van npm en Node.js de versies aanpast die door [Maven worden gebruikt bouwt](https://github.com/adobe/aem-guides-wknd-spa/blob/React/latest/pom.xml#L118)
-* Voeg de volgende uitvoeringsstap toe aan de `ui.frontend/pom.xml` voor de `npm run build` stap:
+* Zorg ervoor dat de lokale versie van npm en Node.js de versies aanpast die door [Maven bouwen](https://github.com/adobe/aem-guides-wknd-spa/blob/React/latest/pom.xml#L118) worden gebruikt
+* Voeg de volgende uitvoeringsstap toe aan `ui.frontend/pom.xml` vóór de stap `npm run build`:
 
    ```xml
    <execution>
@@ -612,10 +612,10 @@ Er zijn ook een paar manieren om dit op een meer permanente manier aan te pakken
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, u hebt het KUUROORD bijgewerkt en de integratie met AEM onderzocht! U kent nu twee verschillende benaderingen voor het ontwikkelen van het KUUROORD tegen AEM JSON model API gebruikend een **webpack-dev-server**.
+Gefeliciteerd, u hebt de SPA bijgewerkt en de integratie met AEM onderzocht! U kent nu twee verschillende benaderingen voor het ontwikkelen van de SPA tegen de AEM JSON-model-API met behulp van een **webpack-dev-server**.
 
-U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/integrate-spa-solution) altijd bekijken of de code plaatselijk controleren door aan de tak te schakelen `React/integrate-spa-solution`.
+U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/integrate-spa-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `React/integrate-spa-solution` te schakelen.
 
 ### Volgende stappen {#next-steps}
 
-[De componenten van het KUUROORD van de kaart aan AEM componenten](map-components.md) - Leer hoe te om componenten van het Reageren aan de componenten van Adobe Experience Manager (AEM) met de AEM Redacteur JS SDK van het KUUROORD in kaart te brengen. De afbeelding van de component laat gebruikers toe om dynamische updates aan de componenten van het KUUROORD binnen de AEM Redacteur van het KUUROORD, gelijkend op traditioneel AEM te maken.
+[SPA componenten toewijzen aan AEM componenten](map-components.md)  - Leer hoe u React-componenten kunt toewijzen aan Adobe Experience Manager-componenten (AEM) met de AEM Editor JS SDK SPA. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen.
