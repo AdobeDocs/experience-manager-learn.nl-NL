@@ -28,15 +28,15 @@ Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cac
 
 ## Logboeken voor Dispatcher Tools
 
-Logbestanden met de verzendingsgereedschappen zijn beschikbaar via de `stdout` opdracht of de `bin/docker_run` opdracht, of met meer details, beschikbaar in de Docker-container op `/etc/https/logs`.
+Logboeken voor Dispatcher Tools zijn beschikbaar via de opdracht `stdout` of `bin/docker_run`, of met meer details, beschikbaar in de Docker-container op `/etc/https/logs`.
 
-Zie Logboeken [van de](./logs.md#dispatcher-logs) Verzender voor instructies op hoe te om tot de logboeken van de container van de Dokker van de Hulpmiddelen van de Verzender rechtstreeks toegang te hebben.
+Zie [Dispatcher logs](./logs.md#dispatcher-logs) voor instructies op hoe te om tot de logboeken van de Docker van de container van de Hulpmiddelen van de Verzender rechtstreeks toegang te hebben.
 
 ## Cache van Dispatcher Tools
 
 ### De toegang tot van logboeken in de container van de Dokker
 
-De Dispatcher-cache kan rechtstreeks worden geopend in de Docker-container op ` /mnt/var/www/html`.
+Het cachegeheugen van de Dispatcher kan rechtstreeks toegang krijgen tot de Docker-container op ` /mnt/var/www/html`.
 
 ```shell
 $ docker ps
@@ -56,7 +56,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd
 
-De logboekbestanden van de verzender kunnen met uw favoriete gereedschappen uit de Docker-container `/mnt/var/www/html` naar het lokale bestandssysteem worden gekopieerd. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan het geheime voorgeheugen verstrekt.
+De logboekregistraties van de verzender kunnen uit de container van de Dokker bij `/mnt/var/www/html` aan het lokale dossiersysteem voor inspectie worden gekopieerd gebruikend uw favoriete hulpmiddelen. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan het geheime voorgeheugen verstrekt.
 
 ```shell
 $ docker ps
