@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Gegevensmodellen van de Vereniging met AEM Forms gebruiken{#using-association-data-models-with-aem-forms}
+# Het gebruiken van de Modellen van Gegevens van de Vereniging met AEM Forms{#using-association-data-models-with-aem-forms}
 
 Koppelingen maken tussen 2 entiteiten in het formuliergegevensmodel
 
