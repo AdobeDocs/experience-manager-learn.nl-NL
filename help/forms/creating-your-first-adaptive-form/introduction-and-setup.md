@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Aan de slag met Adaptive Forms {#getting-started-with-adaptive-forms}
+# Aan de slag met adaptieve Forms {#getting-started-with-adaptive-forms}
 
 In deze zelfstudie worden de stappen besproken die nodig zijn voor het maken van adaptief formulier met meerdere tabbladen. U zult leren om Lijsten, de Lay-out van de Accordeon, en de Redacteur van de Regel aan auteur bedrijfsregels te gebruiken.
 
@@ -36,7 +36,7 @@ U hebt het volgende nodig:
 
 * **Aangenomen wordt dat u AEM Forms versie 6.4 of hoger uitvoert op localhost:4502.**
 
-* [Download het client-libs-and-logo](assets/client-libs-and-logo.zip) en [gestarte fragment](assets/getting-started-fragment.zip) naar uw vaste schijf.
+* [Download de client-libs-and-](assets/client-libs-and-logo.zip) load- [started-](assets/getting-started-fragment.zip) fragmentto uw harde schijf.
 
 * ZIP-bestanden importeren in AEM met [pakketbeheer ](http://localhost:4502/crx/packmgr/index.jsp)
 
