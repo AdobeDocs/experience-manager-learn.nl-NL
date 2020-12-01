@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Inleiding tot auteur- en publicatiereeks {#introduction-author-publish}
+# Inleiding tot Auteur en publicatiereeks {#introduction-author-publish}
 
 Een inleiding aan de Auteur en publicatieniveaus als deel van de architectuur in Adobe Experience Manager.
 
