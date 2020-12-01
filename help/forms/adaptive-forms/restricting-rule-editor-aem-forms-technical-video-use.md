@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# De Rule Editor beperken tot specifieke groepen in AEM Forms {#restricting-the-rule-editor-to-specific-groups-in-aem-forms}
+# Beperken van de Redacteur van de Regel tot specifieke groepen in AEM Forms {#restricting-the-rule-editor-to-specific-groups-in-aem-forms}
 
 De aangepaste formulierregeleditor beperken tot specifieke groepen in AEM
 
