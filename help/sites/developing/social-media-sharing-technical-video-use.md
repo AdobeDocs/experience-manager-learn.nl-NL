@@ -16,28 +16,28 @@ ht-degree: 3%
 ---
 
 
-# Delen via sociale media gebruiken {#using-social-media-sharing-in-aem-sites}
+# Delen van sociale media gebruiken {#using-social-media-sharing-in-aem-sites}
 
 Ontdek het instellen en gebruiken van de component Sociale media delen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18897/?quality=9&learn=on)
 
-In deze video worden de volgende mogelijkheden van de component voor sociale media delen (onderdeel van [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)) besproken met de voorbeeldwebsite [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) .
+In deze video worden de volgende faciliteiten van de component voor sociale media-uitwisseling (onderdeel van [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)) besproken met de voorbeeldwebsite [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail).
 
 * 0:00 - De component voor sociale media delen toevoegen en configureren
 * 1:00 - Delen op Facebook
 * 3:10 - Delen naar Pinterest
 * 6:25 - De component Sociale media delen gebruiken op een productpagina
 
-## ExternalAlizer instellen {#externalizer-setup}
+## Setup van externe alizer {#externalizer-setup}
 
 ![Day CQ Link ExternalAlizer](assets/externalizer.png)
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[AEM externalizer](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) moet zowel voor AEM-auteur als voor AEM-publicatie worden ingesteld, zodat de publicatiemodus wordt toegewezen aan het openbaar toegankelijke domein dat wordt gebruikt voor toegang tot AEM-publicatie.
+[AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) extern moet worden ingesteld op zowel AEM Auteur als AEM Publish, om de publicatierunmode toe te wijzen aan het openbaar toegankelijke domein dat wordt gebruikt om toegang te krijgen tot AEM Publish.
 
-In deze video gebruiken we `/etc/hosts` naar spoof *www.example.com* om op te lossen naar localhost en gebruiken we een [standaard AEM Dispatcher-configuratie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) om www.example.com voor AEM Publish te laten zien.
+In deze video gebruiken wij `/etc/hosts` aan spoof *www.example.com* om aan localhost op te lossen, en gebruiken een [basis AEM Dispatcher configuratie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) om www.example.com toe te staan om te publiceren AEM.
 
 ## Ondersteunende materialen {#supporting-materials}
 
