@@ -24,7 +24,7 @@ ht-degree: 0%
 
 In dit artikel worden de stappen doorlopen die nodig zijn voor het genereren van PDF-bestanden via het verzenden van een HTML5-formulier (ook bekend als Mobile Forms). In deze demo worden ook de stappen uitgelegd die nodig zijn om een afbeelding toe te voegen aan HTML5-formulier en de afbeelding samen te voegen in de uiteindelijke PDF.
 
-Ga naar de [voorbeeldserver](https://forms.enablementadobe.com/content/samples/samples.html?query=0) en zoek naar &quot;Mobiel formulier naar PDF&quot; om deze mogelijkheid live te demonstreren.
+Voor een live demonstratie van deze mogelijkheid gaat u naar de [voorbeeldserver](https://forms.enablementadobe.com/content/samples/samples.html?query=0) en zoekt u naar &quot;Mobiel formulier naar PDF&quot;.
 
 Om de voorgelegde gegevens in het xdp malplaatje samen te voegen doen wij het volgende
 
@@ -121,7 +121,7 @@ Voer de volgende stappen uit om deze mogelijkheid op uw eigen server te testen:
 
 * [Download en installeer het pakket dat aan dit artikel is gekoppeld.](assets/pdf-from-mobile-form-submission.zip)
 
-* Zorg ervoor dat het verzendURL- en HTML-renderprofiel correct zijn ingesteld door de eigenschappenpagina van het [xdp weer te geven](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Zorg ervoor dat het verzendURL- en HTML-renderprofiel correct zijn ingesteld door de eigenschappenpagina van [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp) te bekijken
 
 * [Voorvertoning van de XDP weergeven als HTML](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
