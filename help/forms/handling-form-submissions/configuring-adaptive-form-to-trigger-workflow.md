@@ -27,14 +27,14 @@ Het voorbeeldformulier dat in deze workflow wordt gebruikt, is gebaseerd op een 
 
 ### De adaptieve formuliersjablonen ophalen
 
-* Adaptief [formuliersjabloon downloaden](assets/af-form-template.zip)
+* [Adaptief formuliersjabloon](assets/af-form-template.zip) downloaden
 * [De sjabloon importeren met pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 * De sjabloon Adaptief formulier uploaden en installeren
 
 ### Het voorbeeldformulier Adaptief ophalen
 
-* Adaptief [formulier downloaden](assets/peak-application-form.zip)
-* Bladeren naar [formulier en documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Adaptief formulier](assets/peak-application-form.zip) downloaden
+* Bladeren naar [Formulier en documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op Maken -> Bestand uploaden
 * Het voorbeeldadaptieve formulier wordt geplaatst in een map met de naam [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
