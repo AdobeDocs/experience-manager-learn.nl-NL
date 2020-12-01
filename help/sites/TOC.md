@@ -15,7 +15,7 @@ ht-degree: 2%
 # AEM Sites-video&#39;s en -Tutorials {#sites}
 
 + [Overzicht](overview.md)
-+ Pagina&#39;s ontwerpen {#page-authoring}
++ Pagina-ontwerp {#page-authoring}
    + [Overzicht van ontwerpen](page-authoring/aem-sites-authoring-overview.md)
    + [Basisnavigatie en -verwerking in AEM Sites](page-authoring/basic-handling-sites-feature-video-use.md)
    + [Inhoudshiërarchie in AEM Sites](page-authoring/content-hierarchy-feature-video-use.md)
@@ -64,7 +64,7 @@ ht-degree: 2%
    + [Fragmenten voor Setup-ervaring en Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Experience Fragments gebruiken met Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub instellen](personalization/context-hub-technical-video-setup.md)
-+ Toepassingen voor één pagina {#spa-editor}
++ Toepassingen {#spa-editor} voor één pagina
    + [De SPA Editor gebruiken](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Lesbestand Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Aan de slag met AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
@@ -96,7 +96,7 @@ ht-degree: 2%
       + [AEM verbinden met Starten met Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Een Cloud Service starten maken](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Fouten opsporen in een opstartimplementatie](integrations/experience-platform-launch/debug-launch-implementation.md)
-   + Gegevenslaag Adobe-client {#adobe-client-data-layer}
+   + Adobe-gegevenslaag client {#adobe-client-data-layer}
       + [De gegevenslaag van de Adobe-client gebruiken](integrations/adobe-client-data-layer/data-layer-overview.md)
    + Analyse {#analytics}
       + [Paginagegevens verzamelen met Adobe Analytics](integrations/analytics/collect-data-analytics.md)
