@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Overerving van live kopiëren op een pagina beheren {#manage-live-copy-page}
+# Overerving van Actieve kopie op een pagina beheren {#manage-live-copy-page}
 
 Leer hoe u overerving tussen een actieve kopie en de bijbehorende blauwdruk op paginaniveau beheert.
 >[!VIDEO](https://video.tv.adobe.com/v/36679?quality=12&learn=on)
