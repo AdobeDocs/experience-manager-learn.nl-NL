@@ -40,7 +40,7 @@ ht-degree: 0%
 
 * Selecteer het pictogram &#39;Potlood&#39; om de standaardtekst te bewerken.
 
-* Vervang de standaardtekst door &quot;**Uw Vooruitzichten van het Inkomen van de Ouder&quot;**
+* Vervang de standaardtekst met &quot;**Uw Vooruitzichten van het Inkomens van de Ouder&quot;**
 
 **Doelgebied van RightPanel configureren**
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 * Vervang de standaardtekst door &quot;**Geschatte maandelijkse pensioeninkomsten&quot;**
 
-## Outlook-documentfragment voor inkomens verhogen {#add-retirement-income-outlook-document-fragment}
+## Outlook-documentfragment voor inkomens aftrekken toevoegen {#add-retirement-income-outlook-document-fragment}
 
 * Klik op het middelenpictogram en pas het filter toe om elementen van het type &quot;Documentfragmenten&quot; weer te geven. Sleep RetirementIncomeOutlook-documentfragment naar het doelgebied van het linkerdeelvenster.
 
-* U kunt [naar deze pagina](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) verwijzen wanneer u documentfragment toevoegt aan inhoudsgebieden.
+* U kunt [naar deze pagina ](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) verwijzen bij het toevoegen van documentfragment aan inhoudsgebieden.
 
-## Geschatte maandelijkse inkomensgrafiek toevoegen {#adding-estimated-monthly-income-chart}
+## Schatting van het maandelijkse inkomen {#adding-estimated-monthly-income-chart}
 
 * Klik op het doelgebied van RightPanel aan de rechterkant. Klik op het pictogram &quot;+&quot; om de diagramcomponent in te voegen. We gebruiken een kolomdiagram om het geschatte maandinkomen weer te geven. Tik zachtjes op de nieuw ingevoegde diagramcomponent. Selecteer het pictogram &quot;Sleutel&quot;om de configuratie eigenschappen sheet te openen.Vorm de grafiek met de volgende eigenschappen zoals aangetoond in het hieronder screenshot.
 
