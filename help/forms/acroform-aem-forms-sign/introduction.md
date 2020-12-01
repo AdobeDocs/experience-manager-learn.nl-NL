@@ -22,7 +22,7 @@ Organisaties hebben een grote verscheidenheid aan formulieren. Sommige van deze 
 
 >[!NOTE]
 >
->Als u AEM Forms 6.5 gebruikt, moet u de functie voor automatische Forms-omzetting gebruiken.
+>Als u AEM Forms 6.5 gebruikt, moet u de Automatede form conversion gebruiken.
 
 ## Vereisten
 
@@ -32,14 +32,14 @@ Organisaties hebben een grote verscheidenheid aan formulieren. Sommige van deze 
 
 ### Hieronder vindt u de volgende vereisten om deze functie op uw systeem te laten werken
 
-* De bundels downloaden en implementeren met de [Felix-webconsole](http://localhost:4502/system/console/bundles)
+* De bundels downloaden en implementeren met de [Felix Web Console](http://localhost:4502/system/console/bundles)
 * [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
 * [Download en importeer dit pakket in AEM](assets/acro-form-aem-form.zip). Dit pakket bevat de voorbeeldworkflow en de HTML-pagina om XSD te maken op basis van acroform
 * Open [configMgr](http://localhost:4502/system/console/configMgr)
    * Zoek naar &#39;Apache Sling Service User Mapper Service&#39; en klik om de eigenschappen te openen
-   * Klik op het `+` pictogram (plus) om de volgende servicetoewijzing toe te voegen
+   * Klik op het pictogram `+` (plus) om de volgende servicetoewijzing toe te voegen
       * `DevelopingWithServiceUser.core:getresourceresolver=data`
       * `DevelopingWithServiceUser.core:getformsresourceresolver=fd-service`
    * Klik op Opslaan
