@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Bepaal de structuur van uw map en de naamgevingsconventie voor bestanden {#folder-structure-filenaming}
+# Bepaal uw Omslagstructuur en Overeenkomst {#folder-structure-filenaming} van het Noemen van het Dossier
 
 Voordat u naar binnen gaat en al uw inhoud gaat uploaden, is het verstandig om rekening te houden met de mapstructuur die u gebruikt en met name met de naamgevingsconventie voor bestanden. Het zal u waarschijnlijk tijd besparen en het moeten taken later opnieuw doen. Het is beter om deze besluiten over alle groepen te coördineren.
 
@@ -30,7 +30,7 @@ Maphiërarchie is alleen voor u en uw bedrijf van belang voor organisatorische d
 
 Een andere belangrijke overweging is het aantal elementen of mappen dat in elke map moet worden opgeslagen. Als veel elementen in een map zijn opgeslagen, nemen de prestaties af bij het weergeven van elementen in Dynamic Media Classic. Sla duizenden bestanden niet op in een map. In plaats daarvan ontwikkelt u een organisatiehiërarchie met minder dan ongeveer 500 elementen of mappen binnen een bepaalde tak van uw hiërarchie. Dit is geen strikte eis, maar het zal helpen om aanvaardbare reactietijden te handhaven wanneer het bekijken van of het zoeken van activa. In feite is de aanbeveling om hiërarchieën te creëren die breed en oppervlakkig zijn in plaats van smal en diep.
 
-U kunt uw mappen het gemakkelijkst maken door de volledige mapstructuur te uploaden met behulp van FTP en de optie Submappen **** opnemen in te schakelen. Met deze optie maakt Dynamic Media Classic de mapstructuur op de FTP-site opnieuw in Dynamic Media Classic.
+De eenvoudigste manier om uw mappen te maken, is om de volledige mapstructuur te uploaden met behulp van FTP en de optie **Submappen opnemen** in te schakelen. Met deze optie maakt Dynamic Media Classic de mapstructuur op de FTP-site opnieuw in Dynamic Media Classic.
 
 Voordat u met het uploaden van al uw bestanden begint, moet u rekening houden met de mapstructuur. Het is namelijk veel gemakkelijker om uw bestanden en mappen lokaal op uw computer te ordenen en te beheren dan in Dynamic Media Classic. U kunt bijvoorbeeld alleen bestanden, maar niet volledige mappen, slepen en neerzetten in Dynamic Media Classic.
 
@@ -46,7 +46,7 @@ Overweeg voor uw mapstrategie wat voor uw organisatie zinnig is. Hier volgen een
 
 Hoe u verkiest om uw dossiers te noemen is misschien het belangrijkste vroege besluit u met betrekking tot Dynamische Klassieke Media zult nemen. Dit komt doordat alle elementen in Dynamic Media Classic unieke namen moeten hebben, ongeacht de locatie van de elementen in de account.
 
-Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een element-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. Bijvoorbeeld, krijgt _896649.jpg_ activa _ID 896649_.
+Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een element-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. _896649.jpg_ krijgt bijvoorbeeld element _ID 896649_.
 
 Regels betreffende ID&#39;s van activa:
 
@@ -78,7 +78,7 @@ Dit is een heel eenvoudig systeem, en goed als u bescheiden behoeften hebt. Het 
 | AA123 | Alt-weergaven | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |  | Gekleurde weergaven | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
 |  | Stalen | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | Afbeeldingsset of stalenset |  | AA123 of AA123_SET | -- |
+|  | Afbeeldingsset of stalenset |  | AA123 of AA123_SET | — |
 
 Wanneer u werkt met ingestelde verzamelingen, zoals Afbeeldingssets en Staalsets, moet de set zelf ook een unieke naam hebben. In dit geval kan de set dus de basis-SKU als naam krijgen, of de SKU met de extensie &quot;_SET&quot;.
 
