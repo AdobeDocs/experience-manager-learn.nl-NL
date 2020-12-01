@@ -27,7 +27,7 @@ Vanaf AEM Forms 6.5 kunnen we nu workflowmodellen maken die niet zijn gekoppeld 
 Voer de volgende stappen uit om een dergelijke workflow te ontwerpen
 
 1. Aanmelden bij AEM
-1. Wijs uw browser naar het [workflowmodel](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Wijs uw browser aan [workflowmodel](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
 1. Klik op Maken | Model maken om workflowmodel toe te voegen
 1. Geef de juiste naam en titel op voor het workflowmodel en klik op Gereed
 1. Het nieuwe model openen in de bewerkingsmodus
@@ -39,7 +39,8 @@ Voer de volgende stappen uit om een dergelijke workflow te ontwerpen
 Er zijn drie manieren waarop het formulierpad kan worden opgegeven
 
 1. Beschikbaar op een absoluut pad - Dit betekent dat de workflow nauw gekoppeld is aan een adaptief formulier. Dat is niet wat wij hier willen
-1. **Verzenden naar de werkstroom** - Dit betekent dat wanneer het adaptieve formulier wordt verzonden, de werkstroomengine de naam van het formulier uit de verzonden gegevens haalt. Dit is de optie die moet worden geselecteerd
-1. Beschikbaar op een pad in een variabele - Dit betekent dat het adaptieve formulier wordt opgehaald uit de werkstroomvariabeleIn de volgende schermafbeelding ziet u de juiste optie die u moet kiezen voor de ontkoppelde werkstroom uit een adaptief formulier
+1. **Verzenden naar de werkstroom**  - Dit betekent dat wanneer het adaptieve formulier wordt verzonden, de werkstroomengine de naam van het formulier uit de verzonden gegevens haalt. Dit is de optie die moet worden geselecteerd
+1. Beschikbaar op een pad in een variabele - Dit betekent dat het aangepaste formulier wordt opgehaald uit de werkstroomvariabele
+In de volgende schermafbeelding ziet u de juiste optie die u moet kiezen voor de ontkoppelingsworkflow in een adaptief formulier
 
 ![workflowmodel](assets/workflomodel.PNG)
