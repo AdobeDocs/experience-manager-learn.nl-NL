@@ -31,32 +31,32 @@ Om volledige pagina&#39;s van een AEM website te personaliseren, moet de volgend
 
 ## Overzicht van scenario
 
-De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun huidige homepage omleiden naar de nieuwe homepage. Tegelijkertijd moet u ook begrijpen hoe de vernieuwde homepage de betrokkenheid en inkomsten van gebruikers helpt verbeteren. Als markeerteken hebt u de taak gekregen om een activiteit te maken om de bezoekers om te leiden naar de nieuwe startpagina. Laten we de homepage van de WKND-site bekijken en leren hoe we een activiteit maken met Adobe Target.
+De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun huidige homepage omleiden naar de nieuwe homepage. Tegelijkertijd moet u ook begrijpen hoe de vernieuwde homepage de betrokkenheid en inkomsten van gebruikers helpt verbeteren. Als markeerteken hebt u de taak gekregen om een activiteit te maken om de bezoekers om te leiden naar de nieuwe startpagina. Laten we de homepage van de WKND-site verkennen en leren hoe we een activiteit kunnen maken met Adobe Target.
 
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
 1. Aanmelden bij Adobe Target en navigeren naar het tabblad Activiteiten
-1. Klik op de knop Activiteit **** maken en kies vervolgens **A/B-testactiviteit**
+1. Klik op **Activiteit maken** en kies vervolgens **A/B Test** activiteit
 
    ![A/B-activiteit](assets/ab-target-activity.png)
 
-1. Selecteer de optie **Visual Experience Composer** , geef de Activiteit-URL op en klik op **Volgende**
+1. Selecteer de optie **Visual Experience Composer**, geef de activiteit-URL op en klik op **Volgende**
 
    ![URL van activiteit](assets/ab-test-url.png)
 
-1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaar A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door de **Add knoop van de Ervaring** te gebruiken.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Beleef A* en *Beleef B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door **Add Ervaring** te gebruiken knoop.
 
    ![Ervingopties](assets/experience-options.png)
 
-1. De opties van de mening beschikbaar voor Ervaring A, selecteren dan **Redirect aan optie URL** en verstrekken een URL voor de nieuwe homepage van de Plaats WKND.
+1. De opties van de mening beschikbaar voor Ervaring A en selecteren dan **Omleiden aan URL** optie en verstrekken een URL voor de nieuwe homepage van de Plaats WKND.
 
    ![URL omleiden](assets/redirect-url.png)
 
-1. Naam *Ervaring A* wijzigen in *Nieuwe WKND-startpagina* en *Ervaring B* naar *WKND-startpagina*
+1. Naam wijzigen *Ervaar A* in *Nieuwe WKND-startpagina* en *Beleving B* in *WKND-startpagina*
 
    ![avonturen](assets/new-experiences.png)
 
-1. Klik op **Volgende** om over te schakelen naar gericht en een handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te behouden.
+1. Klik **Volgende** om zich aan het richten te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
    ![Doelstelling](assets/targeting.png)
 
@@ -69,7 +69,7 @@ De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun h
 
    ![Doelen](assets/activate.png)
 
-1. Open uw sitepagina (Activiteit URL van stap 3) op een nieuw tabblad en u moet een van de ervaringen (WKND-startpagina of Nieuwe WKND-startpagina) kunnen bekijken vanaf onze testactiviteit A/B. `us/en.html` omleidingen naar `us/home.html`.
+1. Open uw sitepagina (Activiteit URL van stap 3) op een nieuw tabblad en u moet een van de ervaringen (WKND-startpagina of Nieuwe WKND-startpagina) kunnen bekijken vanaf onze testactiviteit A/B. `us/en.html` omleidingen naar  `us/home.html`.
 
    ![Doelen](assets/redirect-test.png)
 
