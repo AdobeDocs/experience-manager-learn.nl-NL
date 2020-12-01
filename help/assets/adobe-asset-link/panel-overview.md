@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Overzicht van het deelvenster Adobe-itemkoppeling {#adobe-asset-link-panel-overview}
+# Overzicht van het deelvenster Koppeling van Adobe-element {#adobe-asset-link-panel-overview}
 
 Adobe Asset Link biedt creatieve gebruikers de mogelijkheid om te bladeren naar in AEM Assets opgeslagen middelen, deze te zoeken, uit te checken en in te checken via het deelvenster in de app in InDesign, Photoshop en Illustrator. Maak kennis met de gebruikersinterface en mogelijkheden van het deelvenster Adobe Asset Link.
 
