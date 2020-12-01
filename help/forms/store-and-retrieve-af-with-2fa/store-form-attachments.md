@@ -31,7 +31,7 @@ Hier volgt de FileMap die naar de servlet wordt verzonden. De sleutel is het ada
 }
 ```
 
-Hier volgt de code die de bijlagen uit de aanvraag extraheert en deze opslaat in de map **/content/bijlagen** .
+Hier volgt de code die de bijlagen uit de aanvraag extraheert en deze opslaat in de map **/content/afattachments**
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
