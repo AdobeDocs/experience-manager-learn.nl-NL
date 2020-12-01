@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Alleen voor vertoning (FPO){#for-placement-only-rendition}
+# Alleen voor vertoning (FPO) Vertoning{#for-placement-only-rendition}
 
 Ontdek hoe u een FPO-uitvoering (For Placement Only) voor AEM elementen kunt maken en gebruiken.
 
