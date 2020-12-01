@@ -76,7 +76,7 @@ Het spreekt vanzelf dat de eerste configuratie van de systemen Dispatcher en Pub
 
 In een verleden project hebben we een andere truc gebruikt om een publicatiesysteem te verwijderen uit taakverdeling zonder directe toegang tot het taakverdelingsmechanisme zelf.
 
-Het taakverdelingsmechanisme pingelt gewoonlijk, een bepaalde pagina om te zien of is de server in gebruik. Een triviale keuze is meestal het pingelen van de homepage. Maar als u wilt gebruiken pingel om lading-balancer te signaleren niet verkeer in evenwicht te brengen zou u iets anders kiezen. U creeert een specifieke malplaatje of servlet die kan worden gevormd om met `"up"` of `"down"` (in het lichaam of als code van de HTTP- reactie) te antwoorden. De reactie van die pagina moet natuurlijk niet in de verzender in het voorgeheugen worden opgeslagen - zodat wordt het altijd vers opgehaald van het publicatiesysteem. Nu als u het taakverdelingsmechanisme configureert om deze sjabloon of servlet te controleren, kunt u de functie Publiceren gemakkelijk &quot;doen alsof&quot; inschakelen. Het maakt geen deel uit van de taakverdeling en kan worden bijgewerkt.
+Het taakverdelingsmechanisme pingelt gewoonlijk, een bepaalde pagina om te zien of is de server in gebruik. Een triviale keuze is meestal het pingelen van de homepage. Maar als u wilt gebruiken pingel om lading-balancer te signaleren niet verkeer in evenwicht te brengen zou u iets anders kiezen. U creeert een specifieke malplaatje of servlet die kan worden gevormd om met `"up"` of `"down"` (in het lichaam of als code van de http reactie) te antwoorden. De reactie van die pagina moet natuurlijk niet in de verzender in het voorgeheugen worden opgeslagen - zodat wordt het altijd vers opgehaald van het publicatiesysteem. Nu als u het taakverdelingsmechanisme configureert om deze sjabloon of servlet te controleren, kunt u de functie Publiceren gemakkelijk &quot;doen alsof&quot; inschakelen. Het maakt geen deel uit van de taakverdeling en kan worden bijgewerkt.
 
 #### Wereldwijd distribueren
 
@@ -92,7 +92,7 @@ Zelfs in een lokaal datacenter heeft een &quot;schaal uit&quot;topologie die vee
 
 #### Beperkingen van de Topologie van de Schaal uit
 
-Het toevoegen van proxyservers zou normaal de prestaties moeten verhogen. Er zijn echter scenario&#39;s waarin het toevoegen van servers de prestaties kan verminderen. Hoe? Neem bijvoorbeeld een nieuwsportal, waar u elke minuut nieuwe artikelen en pagina&#39;s introduceert. Een Dispatcher maakt de validatie ongedaan door &quot;automatisch annuleren&quot;: Wanneer een pagina wordt gepubliceerd, worden alle pagina&#39;s in de cache op dezelfde site ongeldig gemaakt. Dit is een nuttige functie - we hebben dit besproken in [Hoofdstuk 1](chapter-1.md) van deze reeks - maar het betekent ook dat wanneer u regelmatig wijzigingen op uw website hebt aangebracht, u de cache vrij vaak ongeldig maakt. Als u per instantie Publiceren slechts één Dispatcher hebt, activeert de eerste bezoeker die een pagina aanvraagt, een nieuwe caching van die pagina. De tweede bezoeker krijgt reeds de caching versie.
+Het toevoegen van proxyservers zou normaal de prestaties moeten verhogen. Er zijn echter scenario&#39;s waarin het toevoegen van servers de prestaties kan verminderen. Hoe? Neem bijvoorbeeld een nieuwsportal, waar u elke minuut nieuwe artikelen en pagina&#39;s introduceert. Een Dispatcher maakt de validatie ongedaan door &quot;automatisch annuleren&quot;: Wanneer een pagina wordt gepubliceerd, worden alle pagina&#39;s in de cache op dezelfde site ongeldig gemaakt. Dit is een handige functie - we hebben dit behandeld in [Hoofdstuk 1](chapter-1.md) van deze reeks - maar het betekent ook dat wanneer u regelmatig wijzigingen op uw website hebt aangebracht, u de cache vrij vaak ongeldig maakt. Als u per instantie Publiceren slechts één Dispatcher hebt, activeert de eerste bezoeker die een pagina aanvraagt, een nieuwe caching van die pagina. De tweede bezoeker krijgt reeds de caching versie.
 
 Als u twee Dispatcher hebt, heeft de tweede bezoeker een kans van 50% dat de pagina niet in het voorgeheugen ondergebracht is, en dan zou hij een grotere latentie ervaren wanneer die pagina opnieuw wordt teruggegeven. Door nog meer Dispatchers per Publish wordt het nog erger. Wat er gebeurt, is dat de publicatieserver meer belasting ontvangt omdat deze de pagina voor elke Dispatcher afzonderlijk opnieuw moet renderen.
 
@@ -108,11 +108,11 @@ U kunt overwegen een centrale gedeelde opslag te gebruiken voor alle Dispatchers
 
 We hebben enkele experimenten met NFS uitgevoerd - maar NFS introduceert enorme prestatieproblemen door het vergrendelen van inhoud. Dit heeft de algehele prestaties verminderd.
 
-**Conclusie** - Het delen van een gemeenschappelijk bestandssysteem onder verschillende verzenders is GEEN aanbevolen aanpak.
+**Conclusie**  - Het delen van een gemeenschappelijk bestandssysteem onder verschillende verzenders is GEEN aanbevolen aanpak.
 
 Als u problemen ondervindt met de prestaties, schaalt u de schaal voor publiceren en verzenden even groot om piekbelasting op de instanties van Publisher te voorkomen. Er is geen gouden regel voor de verhouding Publiceren/Verzenden, die sterk afhankelijk is van de verspreiding van de aanvragen en de frequentie van publicaties en cachevervalsingen.
 
-Als u zich ook zorgen maakt over de latentie die een bezoeker ervaart, kunt u overwegen een netwerk voor het leveren van inhoud te gebruiken, cache opnieuw op te halen, de opwarming van het cachegeheugen te voorkomen, een uitvaltijd in te stellen zoals beschreven in [Hoofdstuk 1](chapter-1.md) van deze reeks of naar enkele geavanceerde ideeën van [Deel 3](chapter-3.md)te verwijzen.
+Als u zich ook zorgen maakt over de latentie die een bezoeker ervaart, kunt u overwegen een netwerk voor het leveren van inhoud te gebruiken, cache opnieuw op te halen, preventieve cache op te warmen, een respijttijd in te stellen zoals beschreven in [Hoofdstuk 1](chapter-1.md) van deze reeks of naar enkele geavanceerde ideeën van [Deel 3](chapter-3.md) te verwijzen.
 
 ### De instelling &quot;Cross Connected&quot;
 
