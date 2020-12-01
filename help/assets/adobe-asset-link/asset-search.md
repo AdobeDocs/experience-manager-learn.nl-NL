@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Zoeken in middelen {#asset-search}
+# Asset Search {#asset-search}
 
 Met het deelvenster Adobe Asset Link kunnen creatieve gebruikers zoeken naar elementen die in AEM Assets zijn opgeslagen met behulp van trefwoorden of een zoekopdracht uitvoeren onder een specifieke locatie. Naast de basiszoekopties kunt u met de Adobe Asset Link ook via een middel zoeken naar visueel vergelijkbare resultaten in AEM Assets. De visuele zoekopdracht is gebaseerd op machinaal leren met Adobe Sensei en geeft resultaten weer met esthetische kenmerken die betrekking hebben op de doelafbeelding.
 
