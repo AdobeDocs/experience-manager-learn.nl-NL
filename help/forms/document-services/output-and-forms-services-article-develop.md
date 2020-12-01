@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Ontwikkelen met Output and Forms Services in AEM Forms{#developing-with-output-and-forms-services-in-aem-forms}
+# Ontwikkelen met Output en Forms Services in AEM Forms{#developing-with-output-and-forms-services-in-aem-forms}
 
 Uitvoer- en Forms Service-API in AEM Forms gebruiken
 
@@ -29,7 +29,7 @@ In dit artikel zullen we het volgende bekijken:
 * Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de Xdp-sjabloon of pdf om samengevoegde pdf te genereren
 * FormsService - Dit is een zeer veelzijdige service waarmee u gegevens uit en naar PDF-bestanden kunt exporteren/importeren
 
-De officiële javadoc voor de AEM Forms API wordt [hier weergegeven](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+De officiële javadoc voor de AEM Forms API wordt [hier](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html) vermeld
 
 Het volgende codefragment exporteert gegevens uit een PDF-bestand
 
@@ -67,10 +67,16 @@ Regel 6 exporteert de xmlGegevens uit het PDF-bestand
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Zoeken naar het filter Verticale verwijzing
-1. Schakel het selectievakje Lege toestaan in. (Deze instelling moet alleen voor testdoeleinden worden gebruikt)Er zijn verschillende manieren om de voorbeeldcode te testen. De snelste en eenvoudigste oplossing is het gebruik van de Postman-app. Met Postman kunt u POSTEN aanvragen bij de server. Installeer de Postman-app op uw systeem.
+1. Schakel het selectievakje Lege toestaan in. (Deze instelling mag alleen voor testdoeleinden worden gebruikt)
+U kunt de voorbeeldcode op verschillende manieren testen. De snelste en eenvoudigste oplossing is het gebruik van de Postman-app. Met Postman kunt u POSTEN aanvragen bij de server. Installeer de Postman-app op uw systeem.
 Start de app en voer de volgende URL in om de API voor exportgegevens te testen
 
-Zorg ervoor dat u &quot;POST&quot; hebt geselecteerd in de vervolgkeuzelijsthttp://localhost:4502/content/AemFormsSamples/exportdata.htmlZorg dat u &quot;Autorisatie&quot; opgeeft als &quot;Basisauth&quot;. Geef de gebruikersnaam en het wachtwoord voor de AEM Server op. Navigeer naar het tabblad Body en geef de aanvraagparameters op, zoals in de onderstaande![afbeelding voor exporteren](assets/postexport.png). Klik vervolgens op de knop Verzenden
+Controleer of u &quot;POST&quot; hebt geselecteerd in de vervolgkeuzelijst
+http://localhost:4502/content/AemFormsSamples/exportdata.html
+Zorg ervoor dat u &quot;Autorisatie&quot; opgeeft als &quot;Basic Auth&quot;. Geef de gebruikersnaam en het wachtwoord voor AEM server op
+Navigeer naar het tabblad Body en geef de aanvraagparameters op, zoals in de onderstaande afbeelding wordt getoond
+![export](assets/postexport.png)
+Klik vervolgens op de knop Verzenden
 
 De verpakking bevat 3 monsters. De volgende paragrafen verklaren wanneer om de outputdienst of de Dienst van Forms, de url van de dienst, inputparameters te gebruiken die elke dienst verwacht
 
