@@ -21,11 +21,11 @@ ht-degree: 0%
 # Adaptief formulier maken op basis van JSON-schema
 
 
-De mogelijkheid om adaptieve Forms te maken op basis van JSON-schema is geïntroduceerd met AEM Forms 6.3-release. De details over het maken van Adaptive Forms met JSON-schema worden gedetailleerd uitgelegd in dit [artikel](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
+De mogelijkheid om adaptieve Forms te maken op basis van JSON-schema is geïntroduceerd met AEM Forms 6.3-release. De details over het maken van Adaptive Forms met JSON-schema worden in dit [artikel](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html) gedetailleerd uitgelegd.
 
 Als u een adaptief formulier hebt gemaakt op basis van het JSON-schema, moet u de verzonden gegevens in de database opslaan. Hiervoor gebruiken we het nieuwe JSON-gegevenstype dat door verschillende databaseleveranciers is geïntroduceerd. Voor dit artikel zullen wij MySql 8 gegevensbestand gebruiken om de voorgelegde gegevens op te slaan.
 
-MySql 8 database is gebruikt voor dit artikel. MySQL introduceerde een nieuw gegevenstype genaamd [JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html). Hierdoor is het gemakkelijker om JSON-objecten op te slaan en te zoeken. Wij zullen de voorgelegde gegevens in een kolom van type JSON in ons gegevensbestand opslaan.
+MySql 8 database is gebruikt voor dit artikel. MySQL introduceerde een nieuw gegevenstype genoemd [JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html). Hierdoor is het gemakkelijker om JSON-objecten op te slaan en te zoeken. Wij zullen de voorgelegde gegevens in een kolom van type JSON in ons gegevensbestand opslaan.
 
 De volgende schermafbeelding toont de verzonden formuliergegevens die zijn opgeslagen in het gegevenstype JSON. De kolom &quot;formdata&quot; is van het type JSON. We hebben ook de naam opgeslagen van het formulier dat is gekoppeld aan de gegevens in de naam van de kolomnotatie
 
