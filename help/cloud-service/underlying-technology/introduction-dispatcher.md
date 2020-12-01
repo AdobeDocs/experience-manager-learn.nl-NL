@@ -18,9 +18,9 @@ ht-degree: 27%
 ---
 
 
-# Introduction to [!DNL Dispatcher] {#introduction-dispatcher}
+# Inleiding tot [!DNL Dispatcher] {#introduction-dispatcher}
 
-Een inleiding op de mogelijkheden en eigenschappen van het [!DNL dispatcher] als deel van de AEM architectuur.
+Een inleiding tot de mogelijkheden en eigenschappen van [!DNL dispatcher] als deel van de AEM architectuur.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32029/?quality=12&learn=on)
 
