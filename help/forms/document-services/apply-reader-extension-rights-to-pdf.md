@@ -22,10 +22,10 @@ ht-degree: 0%
 # Reader-extensies toepassen
 
 Met Reader Extensions kunt u gebruiksrechten voor PDF-documenten manipuleren. Gebruiksrechten hebben betrekking op functionaliteit die wel beschikbaar is in Acrobat, maar niet in Adobe Reader. De functionaliteit die wordt beheerd door Reader Extensions omvat de mogelijkheid om opmerkingen toe te voegen aan een document, formulieren in te vullen en het document op te slaan. PDF-documenten waaraan gebruiksrechten zijn toegevoegd, worden documenten waarvoor rechten zijn ingesteld genoemd. Een gebruiker die een PDF-document met ingeschakelde rechten opent in Adobe Reader, kan de bewerkingen uitvoeren die voor dat document zijn ingeschakeld.
-U kunt deze mogelijkheid testen door deze [koppeling](https://forms.enablementadobe.com/content/samples/samples.html?query=0)te proberen. De voorbeeldnaam is &quot;Render XDP with RE&quot;
+Om dit vermogen te testen, kunt u dit [verbinding](https://forms.enablementadobe.com/content/samples/samples.html?query=0) proberen. De voorbeeldnaam is &quot;Render XDP with RE&quot;
 
 Voor dit gebruiksgeval moeten we het volgende doen:
-* Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. De stappen om de credentie van de Uitbreidingen van de Reader toe te voegen zijn [hier vermeld](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. De stappen om de credentie van de Uitbreidingen van de Reader toe te voegen zijn vermeld [hier](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
 
 * Creeer de douaneOSGi dienst die gebruiksrechten op de documenten zal toepassen. De code om dit te bereiken wordt hieronder vermeld
 
@@ -67,12 +67,12 @@ public Document applyUsageRights(Document pdfDocument,UsageRights usageRights) {
 }
 ```
 
-## Servlet maken om de PDF te streamen {#create-servlet-to-stream-the-pdf}
+## Servlet maken om de PDF te stroomden {#create-servlet-to-stream-the-pdf}
 
 De volgende stap bestaat uit het maken van een servlet met een methode van de POST om de lezer uitgebreide PDF aan de gebruiker terug te geven. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn bestandssysteem. De reden hiervoor is dat de PDF wordt gerenderd als dynamische PDF en de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
 
-Hier volgt de code voor de servlet. De servlet wordt aangeroepen vanuit de **aangepaste verzendactie** van het adaptieve formulier.
-Servlet maakt een object UsageRights en stelt dit object in op basis van de waarden die de gebruiker heeft ingevoerd in het adaptieve formulier. servlet roept dan de **applyUsageRights** methode van de dienst die voor dit doel wordt gecreeerd.
+Hier volgt de code voor de servlet. De servlet wordt aangeroepen vanuit de handeling **customsubmit** van Adaptief formulier.
+Servlet maakt een object UsageRights en stelt dit object in op basis van de waarden die de gebruiker heeft ingevoerd in het adaptieve formulier. De servlet roept dan **applyUsageRights** methode van de dienst die voor dit doel wordt gecreeerd.
 
 ```java
 package com.aemforms.ares.core.servlets;
