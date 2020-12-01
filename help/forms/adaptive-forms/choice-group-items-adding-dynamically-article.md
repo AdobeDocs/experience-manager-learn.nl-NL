@@ -23,12 +23,12 @@ ht-degree: 0%
 
 In AEM Forms 6.5 is de mogelijkheid geïntroduceerd om items dynamisch toe te voegen aan een adaptieve Forms-keuzerondjesgroepcomponent, zoals CheckBox, Radio Button en Afbeeldingslijst.
 
-[Dit vermogen is beschikbaar live op de Server](https://forms.enablementadobe.com/content/samples/samples.html?query=0)van Steekproeven. Zoeken naar kaart met dynamische selectievakjes en klikken op &quot;Try It&quot;
+[Dit vermogen is beschikbaar live op de Server](https://forms.enablementadobe.com/content/samples/samples.html?query=0) van Steekproeven. Zoeken naar kaart met dynamische selectievakjes en klikken op &quot;Try It&quot;
 
 
 U kunt punten toevoegen gebruikend de visuele redacteur evenals de coderedacteur afhankelijk van uw gebruiksgeval.
 
-**De visuele editor gebruiken:** U kunt de punten van de keuzegroep van de resultaten van een functievraag of de dienstvraag bevolken. U kunt bijvoorbeeld de items van de keuzegroep instellen door de reactie van een REST API-aanroep te verbruiken.
+**De visuele editor gebruiken:** u kunt de items van de keuzegroep vullen met de resultaten van een functieaanroep of serviceaanroep. U kunt bijvoorbeeld de items van de keuzegroep instellen door de reactie van een REST API-aanroep te verbruiken.
 
 In het onderstaande schermafbeelding stellen we de opties voor de periode(jaren) van de lening in op de resultaten van een serviceoproep met de naam getLoanPeriods.
 
