@@ -1,6 +1,6 @@
 ---
-title: Element voor computerontwikkeling
-description: Het Asset Compute Development Tool is een lokaal webkanaal waarmee ontwikkelaars de workers Asset Computer lokaal kunnen configureren en uitvoeren, buiten de context van de AEM SDK om, tegen de bronnen Asset Compute in Adobe I/O Runtime.
+title: asset compute-ontwikkelingsinstrument
+description: Het Hulpmiddel van de Ontwikkeling van de Asset compute is een lokaal Webkanaal dat ontwikkelaars toestaat om de arbeiders van de Computer van Activa plaatselijk, buiten de context van AEM SDK tegen de middelen van de Asset compute in Adobe I/O Runtime te vormen en uit te voeren.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -18,48 +18,48 @@ ht-degree: 0%
 ---
 
 
-# Element voor computerontwikkeling
+# asset compute-ontwikkelingsinstrument
 
-Het Asset Compute Development Tool is een lokaal webkanaal waarmee ontwikkelaars de workers Asset Computer lokaal kunnen configureren en uitvoeren, buiten de context van de AEM SDK om, tegen de bronnen Asset Compute in Adobe I/O Runtime.
+Het Hulpmiddel van de Ontwikkeling van de Asset compute is een lokaal Webkanaal dat ontwikkelaars toestaat om de arbeiders van de Computer van Activa plaatselijk, buiten de context van AEM SDK tegen de middelen van de Asset compute in Adobe I/O Runtime te vormen en uit te voeren.
 
-## Het hulpprogramma voor het berekenen van bedrijfsmiddelen uitvoeren
+## Het Asset compute Development Tool uitvoeren
 
-Het hulpmiddel van de Ontwikkeling van de Verkoop van Activa kan van de wortel van het project van de Verkoop van Activa via het eindbevel worden in werking gesteld:
+Het Hulpmiddel van de Ontwikkeling van de Asset compute kan van de wortel van het project van de Asset compute via het eindbevel worden in werking gesteld:
 
 ```
 $ aio app run
 ```
 
-Hiermee start u het hulpprogramma voor ontwikkeling op __http://localhost:9000__ en opent u het automatisch in een browservenster. Om het Hulpmiddel van de Ontwikkeling in werking te stellen, moet [een geldig, auto-geproduceerd devToolToken via een vraagparameter](#troubleshooting__devtooltoken)worden verstrekt.
+Dit zal het Hulpmiddel van de Ontwikkeling bij __http://localhost:9000__ beginnen, en zal het automatisch in een browser venster openen. Om het Hulpmiddel van de Ontwikkeling in werking te stellen, [moet een geldig, auto-geproduceerd devToolToken via een vraagparameter worden verstrekt](#troubleshooting__devtooltoken).
 
-## De interface Asset Compute Development Tools begrijpen{#interface}
+## Begrijp de interface van de Hulpmiddelen van de Ontwikkeling van de Asset compute{#interface}
 
-![Element voor computerontwikkeling](./assets/development-tool/asset-compute-dev-tool.png)
+![asset compute-ontwikkelingsinstrument](./assets/development-tool/asset-compute-dev-tool.png)
 
 1. __Bronbestand:__ De selectie van het bronbestand wordt gebruikt om:
-   + Geselecteerde activa binair die het `source` binaire getal zal zijn dat tot de worker van de Verwerking van Activa wordt overgegaan
+   + Geselecteerd element binair dat `source` binair zal zijn die tot de Asset compute worker wordt overgegaan
    + Bronbestanden uploaden
-1. __Definitie van profiel(en) voor middelenberekening:__ Definieert de worker Asset Compute die moet worden uitgevoerd inclusief parameters: inclusief het URL-eindpunt van de worker, de naam van de resulterende uitvoering en eventuele parameters
-1. __Uitvoeren:__ Met de knop Uitvoeren wordt het profiel Asset Compute uitgevoerd, zoals gedefinieerd in de configuratieprofieleditor voor Asset Compute
-1. __Afbreken:__ Met de knop Afbreken annuleert u een uitvoering die is gestart nadat u op de knop Uitvoeren hebt getikt
-1. __Verzoek/antwoord:__ Verstrekt de HTTP- verzoek en reactie aan/van de worker Asset Compute die in Adobe I/O Runtime wordt uitgevoerd. Dit kan nuttig zijn voor foutopsporing
-1. __Activeringslogbestanden:__ De logboeken waarin de uitvoering van de worker Asset Compute wordt beschreven, evenals eventuele fouten. Deze informatie is ook beschikbaar in de `aio app run` standaardversie
-1. __Uitvoeringen:__ Hiermee worden alle uitvoeringen weergegeven die zijn gegenereerd door de uitvoering van de worker Asset Compute
-1. __devToolToken, queryparameter:__ Voor het token Asset Compute Development Tool moet een geldige `devToolToken` queryparameter aanwezig zijn. Deze token wordt automatisch gegenereerd wanneer een nieuw ontwikkelingsprogramma wordt gemaaid
+1. __Definitie profiel(en) van asset compute:__ definieert de Asset compute-worker die moet worden uitgevoerd, inclusief parameters: inclusief het URL-eindpunt van de worker, de naam van de resulterende uitvoering en eventuele parameters
+1. __Uitvoeren:__ de knoop van de Looppas voert het profiel van de Asset compute zoals die in de redacteur van het de configuratieprofiel van de Asset compute wordt bepaald uit
+1. __Afbreken:Met__ de knop Afbreken annuleert u een uitvoering die is gestart nadat u op de knop Uitvoeren hebt getikt
+1. __Request/Response:__ Verstrekt de HTTP- verzoek en reactie aan/van de Asset compute worker die in Adobe I/O Runtime loopt. Dit kan nuttig zijn voor foutopsporing
+1. __Activatielogboeken:__ de logboeken waarin de uitvoering van de Asset compute worker wordt beschreven, samen met eventuele fouten. Deze informatie is ook beschikbaar in de `aio app run`-standaard
+1. __Uitvoeringen:__ geeft alle uitvoeringen weer die zijn gegenereerd door de uitvoering van de Asset compute worker
+1. __devToolToken queryparameter:__ Voor het token van het hulpprogramma voor Asset compute-ontwikkeling moet een geldige  `devToolToken` queryparameter aanwezig zijn. Deze token wordt automatisch gegenereerd wanneer een nieuw ontwikkelingsprogramma wordt gemaaid
 
 ### Een aangepaste worker uitvoeren
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
 
-_Doorklikken voor het uitvoeren van een Asset Compute-werk in Development Tool (geen audio)_
+_Doorklikken voor het uitvoeren van een Asset compute in Development Tool (Geen audio)_
 
-1. Zorg ervoor dat het hulpprogramma voor de ontwikkeling van Asset Compute (Asset Compute Development) is gestart vanuit de hoofdmap van het project met behulp van de `aio app run` opdracht.
-1. Upload of selecteer een bestand met een [voorbeeldafbeelding in het Hulpprogramma voor het berekenen van bedrijfsmiddelen](../assets/samples/sample-file.jpg)
-   + Controleer of het bestand is geselecteerd in het vervolgkeuzemenu __Bronbestand__ .
-1. Het tekstgebied voor de definitie __van het profiel__ Asset Compute controleren
-   + De `worker` sleutel bepaalt URL aan de opgestelde worker van de Compute van Activa
-   + De `name` sleutel definieert de naam van de vertoning die moet worden gegenereerd
-   + Andere sleutel/waarden kunnen in dit JSON-object worden opgegeven en zijn beschikbaar in de worker onder het `rendition.instructions` object
+1. Verzeker het Hulpmiddel van de Ontwikkeling van de Asset compute van uw projectwortel gebruikend het `aio app run` bevel is begonnen.
+1. Upload of selecteer een [voorbeeldafbeeldingsbestand](../assets/samples/sample-file.jpg) in het Asset compute Development Tool
+   + Zorg ervoor dat het bestand is geselecteerd in het vervolgkeuzemenu __Bronbestand__
+1. Bekijk de __definitie van het profiel van de Asset compute__ tekstgebied
+   + Met de `worker`-toets wordt de URL voor de geïmplementeerde Asset compute-worker gedefinieerd
+   + De `name`-toets definieert de naam van de vertoning die moet worden gegenereerd
+   + Andere sleutel/waarden kunnen in dit JSON-object worden opgegeven en zijn beschikbaar in de worker onder het `rendition.instructions`-object
       + Voeg desgewenst waarden toe voor `size`, `contrast` en `brightness`:
 
          ```json
@@ -77,7 +77,7 @@ _Doorklikken voor het uitvoeren van een Asset Compute-werk in Development Tool (
          ```
 
 1. Tik op de knop __Uitvoeren__
-1. De sectie ____ Uitvoeringen wordt gevuld met een tijdelijke aanduiding voor een vertoning
+1. In de sectie __Uitvoeringen__ wordt een tijdelijke aanduiding voor een vertoning ingevuld
 1. Nadat de worker is voltooid, wordt de gegenereerde uitvoering weergegeven in de tijdelijke aanduiding voor de uitvoering
 
 Als u codewijzigingen aanbrengt in de code van de worker terwijl het Development Tool wordt uitgevoerd, worden de wijzigingen &#39;warm&#39; geïmplementeerd. Het &quot;hete opstellen&quot;neemt verscheidene seconden in, zodat staat opstellen toe om te voltooien alvorens de arbeider van het Hulpmiddel van de Ontwikkeling opnieuw in werking te stellen.
