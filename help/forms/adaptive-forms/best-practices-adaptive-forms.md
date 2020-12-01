@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Best practices voor
 
-Met Adobe Experience Manager (AEM)-formulieren kunt u complexe transacties transformeren in eenvoudige, prachtige digitale ervaringen. In het volgende document worden enkele aanvullende aanbevolen procedures beschreven die moeten worden gevolgd bij de ontwikkeling van Adaptive Forms. Dit document is bedoeld voor gebruik in combinatie met [dit document](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+Met Adobe Experience Manager (AEM)-formulieren kunt u complexe transacties transformeren in eenvoudige, prachtige digitale ervaringen. In het volgende document worden enkele aanvullende aanbevolen procedures beschreven die moeten worden gevolgd bij de ontwikkeling van Adaptive Forms. Dit document moet worden gebruikt in combinatie met [dit document](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
 ## Naamgevingsconventies
 
@@ -33,10 +33,10 @@ Met Adobe Experience Manager (AEM)-formulieren kunt u complexe transacties trans
    * Namen kunnen letters, cijfers, onderstrepingstekens en dollartekens bevatten.
    * Namen moeten beginnen met een letter
    * Namen zijn hoofdlettergevoelig
-   * Gereserveerde woorden (zoals JavaScript-trefwoorden) kunnen niet als namen worden gebruikt. Kijk uit voor andere AF-specifieke gereserveerde woorden zoals &quot;panel&quot;, &quot;name&quot;.
+   * Gereserveerde woorden (zoals JavaScript-trefwoorden) kunnen niet als namen worden gebruikt. Kijk uit voor andere af-specifieke gereserveerde woorden zoals   als &quot;paneel&quot;,&quot;naam&quot;.
    * Geen streepjes &quot;-&quot; in uw namen opnemen
 * **Forms ontwikkelen**
-   * Formulierfragmenten moeten in overweging worden genomen bij het ontwikkelen van grote vormen. Het laden van formulierfragmenten versnellen
+   * Formulierfragmenten moeten in overweging worden genomen bij het ontwikkelen van grote vormen. Uitgestelde laden van formulierfragmenten inschakelen voor sneller laden   keer
    * **DataModel**
       * Aangepast gegevensmodel koppelen aan adaptief formulier wordt aanbevolen
    * **Objectgebeurtenissen**
