@@ -27,7 +27,7 @@ AEM Dynamic Media-videospeler die gebruikmaakte van de Flash-runtime voor de ond
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
-## Snel zoeken naar niet-Flash videospeler {#quick-look-into-non-flash-video-player}
+## Snel zoeken naar niet-Flash-videospeler {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
@@ -48,12 +48,12 @@ De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers ku
    <td> <p>Progressieve download</p> </td>
   </tr>
   <tr>
-   <td> <p>X</p> </td>
+   <td> <p>Desktop</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
    <td> <p>HLS-videostreaming</p> </td>
   </tr>
   <tr>
-   <td> <p>X</p> </td>
+   <td> <p>Desktop</p> </td>
    <td> <p>Firefox 23-44</p> </td>
    <td> <p>Progressieve download</p> </td>
   </tr>
