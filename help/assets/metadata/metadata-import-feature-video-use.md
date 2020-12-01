@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Metagegevens importeren en exporteren in AEM Assets gebruiken{#using-metadata-import-and-export-in-aem-assets}
+# Metagegevens importeren en exporteren gebruiken in AEM Assets{#using-metadata-import-and-export-in-aem-assets}
 
 Met de AEM Assets-mogelijkheden voor het importeren en exporteren van metagegevens voor metagegevens van inhoud kunnen auteurs van inhoud metagegevens van elementen eenvoudig in en uit AEM verplaatsen en de mogelijkheden van Microsoft Excel benutten om metagegevens op schaal te manipuleren, waardoor de metagegevens van bulkupdates voor bestaande elementen in AEM worden vereenvoudigd.
 
@@ -31,9 +31,9 @@ Met de AEM Assets-mogelijkheden voor het importeren en exporteren van metagegeve
 
 >[!VIDEO](https://video.tv.adobe.com/v/21374/?quality=9&learn=on)
 
-Winkelsportmap [downloaden](assets/we-retail-sports.zip)
+Download [WeRetail sportmap](assets/we-retail-sports.zip)
 
-Metagegevenspakket [voor element downloaden](assets/we-retail-sports-asset-metadata.zip)
+[Metagegevenspakket van element](assets/we-retail-sports-asset-metadata.zip) downloaden
 
 ## Bestandsindeling metagegevens {#metadata-file-format}
 
@@ -42,7 +42,7 @@ Metagegevenspakket [voor element downloaden](assets/we-retail-sports-asset-metad
 #### Eerste rij
 
 * De eerste rij van het CSV-bestand definieert het metagegevensschema.
-* De eerste kolom heeft standaard de waarde `assetPath`, die het absolute JCR Path voor een element bevat.
+* De eerste kolom heeft standaard de waarde `assetPath`, die het absolute JCR-pad voor een element bevat.
 
 * De volgende kolommen in de eerste rij wijzen naar andere meta-gegevenseigenschappen van een element.
 
@@ -61,7 +61,7 @@ Metagegevenspakket [voor element downloaden](assets/we-retail-sports-asset-metad
 * Type eigenschap is niet hoofdlettergevoelig
 * Alle geldige [JCR-eigenschapstypen](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden ondersteund
 
-* Opmaak Multi-Value-eigenschap - `<metadata property name> {{<property type : MULTI }}`
+* Opmaak eigenschap van meerdere waarden - `<metadata property name> {{<property type : MULTI }}`
 
 #### Tweede rij naar N rijen
 
