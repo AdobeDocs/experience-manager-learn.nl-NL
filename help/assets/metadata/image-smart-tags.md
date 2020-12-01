@@ -31,12 +31,12 @@ Met Slimme tags voor afbeeldingen van AEM-elementen wordt het zoeken in AEM-elem
 
 >[!VIDEO](https://video.tv.adobe.com/v/17023/?quality=12&learn=on)
 
-Voordat u de service Slimme inhoud kunt gebruiken, moet u het volgende doen om een integratie in de Adobe I/O te maken:
+Voordat u de Smart Content Service kunt gebruiken, moet u het volgende doen om een integratie te maken in Adobe I/O:
 
 * Een Adobe ID-account met beheerdersrechten voor de organisatie
 * De service Smart Content Service is ingeschakeld voor uw organisatie
 
-In de video worden de volgende taken beschreven die nodig zijn om de service voor Adobe I/O Smart Content die wordt gebruikt voor Smart Tag-afbeeldingen te configureren.
+In de video worden de volgende taken beschreven die vereist zijn om de service met slimme inhoud van Adobe I/O te configureren die wordt gebruikt voor slimme-tagafbeeldingen.
 
 * Creeer een Slimme configuratie van de Dienst van de Inhoud in AEM om een openbare sleutel te produceren. Verkrijg een openbaar certificaat voor OAuth-integratie.
 * Maak een integratie in Adobe I/O en upload de gegenereerde openbare sleutel.
