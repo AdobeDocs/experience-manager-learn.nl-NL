@@ -29,11 +29,11 @@ Nadat u het afdrukkanaaldocument hebt gemaakt en getest, hebt u een mechanisme n
 
 Wanneer u een gecontroleerde omslag in AEM vormt, associeert u een manuscript ECMA of Java code die wordt uitgevoerd wanneer een dossier in de gelete op omslag wordt gelaten vallen. In dit artikel richten we ons op het ECMA-script dat afdrukkanaaldocumenten genereert en opslaat in het bestandssysteem.
 
-De gecontroleerde omslagconfiguratie en het manuscript ECMA maken deel uit van de activa u aan het [begin van dit leerprogramma invoerde](introduction.md)
+De gecontroleerde omslagconfiguratie en het manuscript ECMA maken deel uit van de activa u bij [begin van dit leerprogramma](introduction.md) invoerde
 
 Het invoerbestand dat in de controlemap wordt neergezet, heeft de volgende structuur. Met ECMA-script worden de accountnummers gelezen en wordt een document met het afdrukkanaal voor elk van deze accounts gegenereerd.
 
-Raadpleeg dit artikel voor meer informatie over het ECMA-script voor het genereren van documenten [](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+[Raadpleeg dit artikel](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md) voor meer informatie over het ECMA-script voor het genereren van documenten
 
 ```xml
 <accountnumbers>
