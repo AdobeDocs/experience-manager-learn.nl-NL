@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Inleiding tot het kopiëren van talen {#introduction-language-copy}
+# Inleiding tot taalkopie {#introduction-language-copy}
 
 Bekijk een overzicht van hoe u een meertalige site kunt maken met Taalkopie in AEM Sites.
 
