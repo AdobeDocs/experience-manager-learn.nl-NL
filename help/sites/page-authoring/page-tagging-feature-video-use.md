@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Pagina&#39;s labelen {#using-page-tagging-with-aem-sites}
+# Pagina&#39;s {#using-page-tagging-with-aem-sites} labelen
 
 Leer hoe u uw webpagina&#39;s in Adobe Experience Manager kunt onderhouden en ordenen met tags.
 
