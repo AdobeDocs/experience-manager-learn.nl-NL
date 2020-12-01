@@ -25,7 +25,7 @@ ht-degree: 0%
 # Tabel toevoegen aan de sectie Bijdragen
 
 In dit deel zullen wij een tabel toevoegen aan de afdeling Bijdragen.
-Raadpleeg Tabellen [gebruiken in het afdrukkanaal](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) voor meer informatie over het gebruik van tabellen in het document met afdrukkanalen.
+Raadpleeg [Tabellen gebruiken in afdrukkanaal](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) voor meer informatie over het gebruik van tabellen in afdrukkanaaldocumenten.
 
 Meld u aan bij AEM Forms en navigeer naar Adobe Experience Manager > Forms > Forms &amp; Documents.
 
