@@ -29,7 +29,7 @@ Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. U kunt een geheel
 
 >[!NOTE]
 >
->Als u het invulbare formulier wilt verzenden voor ondertekening met Adobe Sign, geef de velden een overeenkomstige naam. U kunt bijvoorbeeld een veld **Sig_es_:signer1:signature** noemen. Dit is de syntaxis die Adobe Sign begrijpt.
+>Als u het invulbare formulier wilt verzenden voor ondertekening met Adobe Sign, geef de velden een overeenkomstige naam. U kunt bijvoorbeeld een veld **Sig_es_:signer1:signature** een naam geven. Dit is de syntaxis die Adobe Sign begrijpt.
 
 >[!NOTE]
 >
