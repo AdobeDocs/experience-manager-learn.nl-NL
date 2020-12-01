@@ -26,11 +26,11 @@ Een veelvoorkomend geval is het renderen van xdp naar PDF en het toepassen van R
 
 Als een gebruiker bijvoorbeeld op XDP klikt in de portal Formulieren van AEM Forms, kunnen we XDP weergeven als PDF en de PDF door Reader uitbreiden.
 
-U kunt deze mogelijkheid testen door deze [koppeling](https://forms.enablementadobe.com/content/samples/samples.html?query=0)te proberen. De voorbeeldnaam is &quot;Render XDP with RE&quot;
+Om dit vermogen te testen, kunt u dit [verbinding](https://forms.enablementadobe.com/content/samples/samples.html?query=0) proberen. De voorbeeldnaam is &quot;Render XDP with RE&quot;
 
 Voor dit gebruiksgeval moeten we het volgende doen.
 
-* Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. De stappen om de credentie van de Uitbreidingen van de Reader toe te voegen zijn [hier vermeld](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. De stappen om de credentie van de Uitbreidingen van de Reader toe te voegen zijn vermeld [hier](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
 
 * Creeer de douanedienst OSGi die gebruiksrechten zal teruggeven en toepassen. De code om dit te bereiken wordt hieronder vermeld
 
@@ -123,7 +123,7 @@ public @interface DocSvcConfiguration {
 }
 ```
 
-## Servlet maken om de PDF te streamen {#create-servlet-to-stream-the-pdf}
+## Servlet maken om de PDF te stroomden {#create-servlet-to-stream-the-pdf}
 
 De volgende stap bestaat uit het maken van een servlet met een methode GET om de voor lezer uitgebreide PDF naar de gebruiker te retourneren. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn bestandssysteem. De reden hiervoor is dat de PDF wordt gerenderd als dynamische PDF en de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
 
@@ -203,7 +203,7 @@ Voer de volgende stappen uit om dit op uw lokale server te testen
 1. [De aan dit artikel gerelateerde elementen downloaden en importeren in AEM met behulp van pakketbeheer](assets/renderandextendxdp.zip)
    * Dit pakket bevat voorbeeldportal en xdp-bestand
 1. Certificaat van extensies voor Readers toevoegen aan gebruiker van het type fd-service
-1. Webpagina&#39;s [porteren naar uw browser](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. Wijs uw browser aan [portalwebpagina](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Klik op het pdf-pictogram om de xdp te renderen en pdf te krijgen die Reader Extended is
 
 
