@@ -23,7 +23,7 @@ AEM 6.3 introduceert de mogelijkheid om inhoudsfragmenten te vertalen. Elementen
 
 >[!VIDEO](https://video.tv.adobe.com/v/18131/?quality=9&learn=on)
 
-## Gebruik hoofdletters/kleine letters voor het omzetten van inhoudsfragmenten {#content-fragment-translation-use-cases}
+## Gebruik Gevallen {#content-fragment-translation-use-cases} voor het omzetten van inhoudsfragmenten
 
 Inhoudsfragmenten zijn herkende inhoudsfragmenten die AEM uitpakken voor verzending naar een externe vertaalservice. Verschillende gebruiksgevallen worden vanuit het vak ondersteund:
 
@@ -34,7 +34,7 @@ Inhoudsfragmenten zijn herkende inhoudsfragmenten die AEM uitpakken voor verzend
 
 ## Opties voor vertaalconfiguratie {#translation-config-options}
 
-In de vertaalconfiguratie in het vak kunt u kiezen uit verschillende opties voor het vertalen van inhoudsfragmenten. Standaard worden inline media-elementen en bijbehorende elementen NIET vertaald. Navigeer naar [http://localhost:4502/etc/cloudservices/translation/default_translation.html](http://localhost:4502/etc/cloudservices/translation/default_translation.html)om de vertaalconfiguratie bij te werken.
+In de vertaalconfiguratie in het vak kunt u kiezen uit verschillende opties voor het vertalen van inhoudsfragmenten. Standaard worden inline media-elementen en bijbehorende elementen NIET vertaald. Als u de vertaalconfiguratie wilt bijwerken, navigeert u naar [http://localhost:4502/etc/cloudservices/translation/default_translation.html](http://localhost:4502/etc/cloudservices/translation/default_translation.html).
 
 Er zijn vier opties voor het omzetten van Content Fragment-elementen:
 
