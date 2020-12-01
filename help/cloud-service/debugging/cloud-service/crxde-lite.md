@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Foutopsporing AEM als Cloud Service met CRXDE Lite
 
-CRXDE Lite is __SLECHTS__ beschikbaar op AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service (evenals lokale AEM SDK).
+CRXDE Lite is __ONLY__ beschikbaar op AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service (evenals lokale AEM SDK).
 
 ## CRXDE Lite benaderen op AEM-auteur
 
-CRXDE Lite is __slechts__ toegankelijk op AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service, en is __niet__ beschikbaar op het Stadium of de milieu&#39;s van de Productie.
+CRXDE Lite is __alleen__ toegankelijk op AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service, en is __not__ beschikbaar op Stadium of de milieu&#39;s van de Productie.
 
 CRXDE Lite openen op AEM-auteur:
 
@@ -37,7 +37,7 @@ Hiermee wordt CRXDE Lite geopend met de referenties en machtigingen waarmee u zi
 
 CRXDE Lite biedt directe toegang tot het JCR. De inhoud die zichtbaar is via CRXDE Lite, wordt beperkt door de machtigingen die aan uw gebruiker zijn verleend. Dit houdt in dat u mogelijk niet alles in het JCR kunt zien of wijzigen, afhankelijk van uw toegang.
 
-Merk op dat `/apps`, `/libs` en `/oak:index` zijn onveranderlijk, betekenend zij niet bij runtime door enige gebruiker kunnen worden veranderd. Deze locaties in het JCR kunnen alleen worden gewijzigd via code-implementaties.
+`/apps`, `/libs` en `/oak:index` zijn onveranderlijk, wat betekent dat zij niet bij runtime door enige gebruiker kunnen worden veranderd. Deze locaties in het JCR kunnen alleen worden gewijzigd via code-implementaties.
 
 + U kunt met het linkernavigatievenster navigeren door de JCR-structuur en deze manipuleren
 + Wanneer u een knooppunt in het navigatievenster aan de linkerkant selecteert, wordt de eigenschap node in het onderste deelvenster beschikbaar gemaakt.
@@ -48,7 +48,7 @@ Merk op dat `/apps`, `/libs` en `/oak:index` zijn onveranderlijk, betekenend zij
 ![CRXDE Lite - Fouten opsporen in inhoud](./assets/crxde-lite/debugging-content.png)
 
 Het aanbrengen van veranderingen in veranderbare inhoud bij runtime in AEM als milieu van de Cloud Service via CRXDE Lite moet met zorg worden gedaan.
-Wijzigingen die rechtstreeks via CRXDE Lite aan AEM worden aangebracht, kunnen moeilijk te volgen en te besturen zijn. Zorgt ervoor dat wijzigingen die via CRXDE Lite zijn aangebracht, terugkeren naar de veranderbare inhoudspakketten (`ui.content`) van het AEM-project en zich ertoe verbinden aan Git, zodat het probleem wordt opgelost. In het ideale geval komen alle wijzigingen in de toepassingsinhoud van de codebasis en gaan deze via implementaties in AEM, in plaats van rechtstreeks wijzigingen aan te brengen in de AEM via CRXDE Lite.
+Wijzigingen die rechtstreeks via CRXDE Lite aan AEM worden aangebracht, kunnen moeilijk te volgen en te besturen zijn. Indien van toepassing, zorg ervoor dat de veranderingen die via CRXDE Lite worden aangebracht hun weg terug naar de veranderbare inhoudspakketten van het AEM project (`ui.content`) maken en aan Git worden geëngageerd, om de kwestie te verzekeren wordt opgelost. In het ideale geval komen alle wijzigingen in de toepassingsinhoud van de codebasis en gaan deze via implementaties in AEM, in plaats van rechtstreeks wijzigingen aan te brengen in de AEM via CRXDE Lite.
 
 ### Toegangsbesturingselementen voor foutopsporing
 
@@ -66,18 +66,18 @@ Om tot de console van het Toegangsbeheer van de Test in CRXDE Lite toegang te he
 
 De resultaten worden hieronder weergegeven:
 
-+ __Het weg__ herhaalt de weg die werd geëvalueerd
-+ __De principal__ herhaalt de gebruiker of de groep waarvoor de weg werd geëvalueerd
-+ __Principals__ maakt een lijst van alle principes het geselecteerde hoofd deel van uitmaakt.
++ __Het__ geëvalueerde pad
++ ____ Principe wijst de gebruiker of groep er nogmaals op dat het pad is geëvalueerd
++ ____ Principalslists alle principes waarvan de geselecteerde principal deel uitmaakt.
    + Dit is nuttig om de transitieve groepslidmaatschappen te begrijpen die toestemmingen via overerving kunnen verstrekken
-+ __De voorrechten bij Weg__ maakt een lijst van alle JCR toestemmingen het geselecteerde hoofd op de geëvalueerde weg heeft
++ __Bevoegdheden bij__ Pathlists alle JCR-machtigingen die de geselecteerde principal op het geëvalueerde pad heeft
 
 ### Niet-ondersteunde foutopsporingsactiviteiten
 
-Het volgende is het zuiveren activiteiten die __niet__ in CRXDE Lite kunnen worden uitgevoerd.
+Het volgende is het zuiveren activiteiten die __not__ in CRXDE Lite kunnen worden uitgevoerd.
 
 ### Fouten opsporen in OSGi-configuraties
 
-De opgestelde configuraties OSGi kunnen niet via CRXDE Lite worden herzien. De configuraties OSGi worden gehandhaafd in het `ui.apps` codepakket van het AEM Project bij `/apps/example/config.xxx`, echter op plaatsing aan AEM als Cloud Service milieu&#39;s, worden de OSGi configuratiemiddelen niet voortgeduurd aan JCR, daarom niet zichtbaar via CRXDE Lite.
+De opgestelde configuraties OSGi kunnen niet via CRXDE Lite worden herzien. De configuraties OSGi worden gehandhaafd in het de codepakket van het AEM Project `ui.apps` bij `/apps/example/config.xxx`, nochtans bij plaatsing aan AEM als Cloud Service milieu&#39;s, worden de OSGi configuratiemiddelen niet voortgeduurd aan JCR, daarom niet zichtbaar via CRXDE Lite.
 
-Gebruik in plaats daarvan de [Developer Console > Configurations](./developer-console.md#configurations) om geïmplementeerde OSGi-configuraties te controleren.
+Gebruik in plaats daarvan [Developer Console > Configurations](./developer-console.md#configurations) om geïmplementeerde OSGi-configuraties te controleren.
