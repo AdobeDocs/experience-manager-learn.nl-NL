@@ -23,7 +23,7 @@ Met ervaringsfragmenten kunnen marketers ervaringen die in AEM zijn gemaakt, op 
 
 >[!VIDEO](https://video.tv.adobe.com/v/20592/?quality=9&learn=on)
 
-*[Ervaar Fragments]- Opstelling en configuratie aan sociale post aan Facebook en Pinterest*
+*[Geniet van fragmenten]  - Setup and configuration to social post to Facebook and Pinterest*
 
 ## Checklist voor het configureren van Experience Fragments voor post naar Facebook en Pinterest
 
