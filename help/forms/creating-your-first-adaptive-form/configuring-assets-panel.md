@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Componenten toevoegen aan de sectie Middelen {#adding-components-to-assets-section}
+# Componenten toevoegen aan de sectie Elementen {#adding-components-to-assets-section}
 
 Configureer de accordeonlay-out voor het deelvenster Elementen. De accordeonlay-out biedt een betere ervaring voor de eindgebruiker bij het toevoegen van herhaalbare secties.
 
