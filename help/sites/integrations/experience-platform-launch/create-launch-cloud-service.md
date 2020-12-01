@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Configuratie van Cloud Service starten maken {#create-launch-cloud-service}
+# Configuratie {#create-launch-cloud-service} van Cloud Service starten maken
 
 Leer hoe u een nieuwe configuratie voor Cloud Services starten maakt in Adobe Experience Manager. AEM de configuratie van de Cloud Service van de Lancering kan dan op een bestaande Plaats worden toegepast en de bibliotheken van de Lancering kunnen ladend in zowel auteur als Publish milieu&#39;s worden waargenomen.
 
