@@ -20,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# Responsieve lay-out begrijpen {#understanding-responsive-layout-with-aem-sites}
+# Responsieve lay-out {#understanding-responsive-layout-with-aem-sites}
 
 Adobe Experience Manager Sites stelt een auteur in staat de breedte van een component te beheren op basis van de apparaatbreedte om een responsief siteontwerp mogelijk te maken. Met de lay-outmodus en de container voor lay-out kunnen gebruikers responsieve inhoud voor verschillende apparaten maken en een voorvertoning van de gebruikerservaring weergeven, zonder de AEM-interface te verlaten.
 
