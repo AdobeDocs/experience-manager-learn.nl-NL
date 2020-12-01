@@ -22,7 +22,7 @@ Met de gebruikersinterface van de vertaalconfiguratie kan een gebruiker regels v
 
 >[!NOTE]
 >
-> De video hieronder is opgenomen op AEM 6.3. AEM 6.4+ introduceert een nieuwe opslagplaats voor het opslaan van het dossier van XML van vertaalregels. Wanneer het gebruiken van de UI van de Configuratie van de Vertaling in AEM 6.4+ worden de regels bewaard aan de plaats `/conf/global/settings/translation/rules/translation_rules.xml`. Zie [Inhoud identificeren om te vertalen](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) voor meer informatie.
+> De video hieronder is opgenomen op AEM 6.3. AEM 6.4+ introduceert een nieuwe opslagplaats voor het opslaan van het dossier van XML van vertaalregels. Wanneer het gebruiken van de UI van de Configuratie van de Vertaling in AEM 6.4+ worden de regels bewaard aan de plaats `/conf/global/settings/translation/rules/translation_rules.xml`. Zie [Inhoud identificeren voor vertaling](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) voor meer informatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135/?quality=9&learn=on)
 
@@ -36,7 +36,7 @@ De redacteur van vertaalregels die het vertaling xml- dossier zal bijwerken. De 
 
 Toegang tot de gebruikersinterface van de vertaalconfiguratie:
 
-* **[!UICONTROL AEM Start Menu]>[!UICONTROL Tools]>[!UICONTROL General]>[[!UICONTROL Translation Configuration]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
+* **[!UICONTROL AEM Start Menu]>  [!UICONTROL Tools] >  [!UICONTROL General] >  [[!UICONTROL Translation Configuration]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
 ## Vóór AEM 6.3 {#prior-to-aem}
 
