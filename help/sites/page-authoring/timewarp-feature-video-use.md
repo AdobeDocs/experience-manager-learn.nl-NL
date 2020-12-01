@@ -20,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# Tijdverdraaiing gebruiken {#using-timewarp-with-aem-sites}
+# Tijdverdraaiing {#using-timewarp-with-aem-sites} gebruiken
 
 Timewarp is een eigenschap van Adobe Experience Manager Sites die auteurs een snelle manier verstrekt om de staat van een pagina op specifieke tijd in het verleden te herzien.
 
