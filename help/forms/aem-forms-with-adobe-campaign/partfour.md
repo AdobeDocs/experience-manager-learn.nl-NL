@@ -105,7 +105,7 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 }
 ```
 
-## Gegevensbron maken {#create-data-source}
+## Gegevensbron {#create-data-source} maken
 
 De eerste stap bestaat uit het maken van het wagerbestand. Het waggerbestand definieert de REST API die wordt gebruikt om een profiel te maken in Adobe Campaign Standard. In het kwikbestand worden de invoerparameters en de uitvoerparameters van de REST API gedefinieerd.
 
@@ -113,12 +113,13 @@ Er wordt een gegevensbron gemaakt met behulp van het wagerbestand. Wanneer u een
 
 Voorbeeldwagerbestand wordt aan u gegeven als onderdeel van het element dat betrekking heeft op dit artikel.**Zorg ervoor u de gastheer en basePath in het wagerdossier verandert om uw ACS instantie aan te passen**
 
-## De oplossing testen {#test-the-solution}
+## De oplossing {#test-the-solution} testen
 
 Volg de volgende stappen om de oplossing te testen:
 * [Controleer of u de hier beschreven stappen hebt uitgevoerd](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Download en decomprimeer dit bestand om het wagerbestand op te halen](assets/create-acs-profile-swagger-file.zip)
-* Gegevensbron maken met behulp van wagerbestandMaak een formuliergegevensmodel en baseer dit op de gegevensbron die u in de vorige stap hebt gemaakt
+* Gegevensbron maken met behulp van het wagerbestand
+Formuliergegevensmodel maken en dit baseren op de gegevensbron die in de vorige stap is gemaakt
 * Maak een adaptief formulier op basis van het formuliergegevensmodel dat u eerder hebt gemaakt.
 * Sleep de volgende elementen van het tabblad Gegevensbronnen naar het adaptieve formulier.
 
