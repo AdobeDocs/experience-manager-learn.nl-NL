@@ -82,12 +82,12 @@ return isMarried(inboxItem);
 * [Aanmelden bij AEM webconsole](http://localhost:4502/system/console/bundles)
 * [Aanpassingsbundel inbox implementeren en starten](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [De inbox openen](http://localhost:4502/aem/inbox)
-* Open Beheer door op het pictogram _Lijstweergave_ naast de knop _Maken_ te klikken
+* Open Beheer door op _Lijstweergave_ te klikken naast de knop _Maken_
 * Gehuwde kolom toevoegen aan Postvak IN en uw wijzigingen opslaan
 * [Naar interface FormsAndDocuments gaan](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importeer het voorbeeldformulier](assets/snap-form.zip) door _Bestand uploaden_ te selecteren in het menu _Maken_
+* [Importeer de voorbeeldindeling ](assets/snap-form.zip) door  _Bestand_ uploaden te selecteren in  __ Createmenu
 * [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selecteer de _burgerlijke staat_ en verzend het formulier
+* Selecteer de _huwelijksstatus_ en verzend het formulier
    [inbox weergeven](http://localhost:4502/aem/inbox)
 
 Als u het formulier verzendt, wordt de workflow geactiveerd en wordt een taak toegewezen aan de gebruiker van de &quot;beheerder&quot;. U zou een waarde onder de Getrouwde kolom zoals aangetoond in dit het schermschot moeten zien
