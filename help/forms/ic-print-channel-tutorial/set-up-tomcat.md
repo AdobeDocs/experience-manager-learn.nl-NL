@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Tomcat installeren en configureren {#install-and-configure-tomcat}
+# Tomcat {#install-and-configure-tomcat} installeren en configureren
 
 In dit deel, zullen wij TOMCAT installeren en het sampleRest.war- dossier in TOMCAT opstellen. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld zal de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm zijn.
 
@@ -34,12 +34,12 @@ Volg de volgende instructies om Tomcat in te stellen:
 3. Download [tomcat](https://tomcat.apache.org/). Dit oorlogsbestand is getest met Tomcat versie 8.5.x en 9.0.x.
 4. Download de nieuwste versie van uw voorkeur. U kunt de 64-bits Windows zip downloaden onder de kernsectie.
 5. Pak de inhoud uit op c:\tomcat.
-6. U zou iets als dit in uw aandrijving van c **c:\tomcat\apache-tomcat-8.5.27** afhankelijk van de versie van uw tomcat moeten zien
+6. U zou iets als dit in uw aandrijving van c **c:\tomcat\apache-tomcat-8.5.27** afhankelijk van de versie van uw kat moeten zien
 7. Maak een omgevingsvariabele met de naam &quot;CATALINA_HOME&quot; en stel de waarde ervan in op het voorbeeld van de map voor tomcat-installatie c:\tomcat\apache- tomcat-8.5.27
 8. Kopieer het bestand SampleRest.war naar de map webapps van uw Tomcat-installatie
 9. Nieuw opdrachtpromptvenster starten.
 10. Navigeer naar &lt;tomcat install folder>\bin en voer het start.bat uit
-11. Zodra uw tomcat is begonnen, test het eindpunt dat door het Dossier van WAR door [hier te klikken wordt blootgesteld](http://localhost:8080/SampleRest/webapi/getStatement/9586)
+11. Zodra uw tomcat is begonnen, test het eindpunt dat door het Dossier van WAR door [klikkend hier](http://localhost:8080/SampleRest/webapi/getStatement/9586) wordt blootgesteld
 12. U zou steekproefgegevens als resultaat van deze vraag moeten krijgen.
 
 Gefeliciteerd!!! U kunt het bestand SampleRest.war instellen en implementeren.
