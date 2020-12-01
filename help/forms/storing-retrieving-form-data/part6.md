@@ -8,9 +8,9 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 787a79663472711b78d467977d633e3d410803e5
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -23,18 +23,28 @@ ht-degree: 0%
 >Hieronder vindt u de volgende vereisten om dit op uw systeem uit te voeren
 >
 >* AEM Forms (versie 6.3 of hoger)
->* MYSQL-database
+>* MySql-database
 
 
 Voer de volgende stappen uit om deze mogelijkheid te testen op uw AEM Forms-exemplaar
 
-* Download en decomprimeer de [lesbestanden](assets/store-retrieve-form-data.zip) naar uw lokale systeem
-* Implementeer en start de bundels techmarketingdemos.jar en mysqldriver.jar met behulp van de [Felix-webconsole](http://localhost:4502/system/console/configMgr)
-* Importeer het bestand aemformstutorial.sql met MYSQL Workbench. Dit zal tot het noodzakelijke schema en de lijsten in uw gegevensbestand voor dit leerprogramma leiden te werken.
-* Import StoreAndRetrieve.zip using [AEM package manager.](http://localhost:4502/crx/packmgr/index.jsp) Dit pakket bevat de adaptieve formuliersjabloon, de client lib van de paginacomponent en een voorbeeldconfiguratie voor adaptieve formulieren en gegevensbronnen.
-* Meld u aan bij [configMgr.](http://localhost:4502/system/console/configMgr) Zoek naar &quot;Apache Sling Connection Pooled DataSource. Open de gegevensbroningang verbonden aan een modelstudie en ga de gebruikersbenaming en het wachtwoord in specifiek voor uw gegevensbestandinstantie.
-* Het [adaptieve formulier openen](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
-* Vul enkele details in en klik op de knop &quot;Opslaan en verdergaan&quot;
+* Download en implementeer de [MySql Driver Jar](assets/mysqldriver.jar)-bestanden met de [felix webconsole](http://localhost:4502/system/console/bundles)
+* Download en implementeer de [OSGi-bundel](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) met de [felix webconsole](http://localhost:4502/system/console/bundles)
+* Download en installeer het [pakket met client lib, adaptieve formuliersjabloon en de aangepaste pagina component](assets/store-and-fetch-af-with-data.zip) met behulp van [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* Importeer het [voorbeeld adaptief formulier](assets/sample-adaptive-form.zip) met behulp van de interface [FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+
+* Importeer de [form-data-db.sql](assets/form-data-db.sql) met MySql Workbench. Dit zal tot het noodzakelijke schema en de lijsten in uw gegevensbestand voor dit leerprogramma leiden te werken.
+* Meld u aan bij [configMgr.](http://localhost:4502/system/console/configMgr) Zoek naar &quot;Apache Sling Connection Pooled DataSource. Maak een nieuw item voor de gegevensbron van Apache Sling Connection met de naam **SaveAndContinue** met de volgende eigenschappen:
+
+| Eigenschapnaam | Waarde |
+------------------------|---------------------------------------
+| Naam gegevensbron | Opslaan en doorgaan |
+| JDBC-stuurprogramma, klasse | com.mysql.cj.jdbc.Driver |
+| JDBC-verbindingsuri | jdbc:mysql://localhost:3306/aemformstutorial |
+
+
+* Open het [Aangepaste formulier](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
+* Vul enkele details in en klik op de knop &quot;Opslaan en verdergaan&quot;.
 * U zou terug een URL met een GUID in het moeten krijgen.
-* Kopieer de URL en plak deze in een nieuw browsertabblad. **Zorg ervoor dat er geen lege ruimte aan het einde van de URL is**
-* Het adaptieve formulier moet worden gevuld met de gegevens uit de vorige stap
+* Kopieer de URL en plak deze in een nieuw browsertabblad. **Zorg ervoor dat er geen lege ruimte aan het einde van de URL is.**
+* Het adaptieve formulier moet worden gevuld met de gegevens uit de vorige stap.
