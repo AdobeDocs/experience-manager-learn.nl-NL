@@ -26,7 +26,7 @@ In dit artikel bekijken we de volgende service
 
 * FormsService - Dit is een zeer veelzijdige service waarmee u gegevens kunt exporteren/importeren vanuit en naar een PDF-bestand en waarmee u ook interactieve PDF-bestanden kunt genereren door XML-gegevens samen te voegen tot een xdp-sjabloon
 
-De officiële javadoc voor de AEM Forms API wordt [hier weergegeven](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+De officiële javadoc voor de AEM Forms API wordt [hier](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html) vermeld
 
 Het volgende codefragment geeft interactief pdf terug gebruikend de renderPDFForm verrichting van FormsService. Het bestand schengen.xdp wordt gebruikt om de XML-gegevens samen te voegen.
 
@@ -63,10 +63,10 @@ Regel 11: Hiermee wordt de gegenereerde interactieve PDF naar de opvragende toep
 1. Het volgende pad toevoegen aan de uitgesloten secties en opslaan
 1. /bin/generateinteractivepdf
 1. [Het mobiele formulier openen](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Vul een paar gebieden in en klik dan de ***Download en vult....*** button
+1. Vul een paar gebieden in en klik dan ***Download en vul...*** button
 1. De interactieve pdf moet naar uw lokale systeem worden gedownload
 
 
-Het voorbeeldpakket bevat het aangepaste profiel dat is gekoppeld aan het mobiele formulier. Bekijk het bestand [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) . Deze JSP haalt de gegevens uit het mobiele formulier en vraagt een POST om serlet die op het pad ***/bin/generateinteractivepdf*** is gemonteerd. De servlet keert interactieve pdf aan de roepende toepassing terug. De code in customtoolbar.jsp downloadt dan het dossier aan uw lokaal systeem
+Het voorbeeldpakket bevat het aangepaste profiel dat is gekoppeld aan het mobiele formulier. Bekijk het bestand [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Dit jsp haalt de gegevens uit het mobiele formulier en doet een verzoek van de POST aan servlet gemonteerd op ***/bin/generateinteractivepdf*** weg. De servlet keert interactieve pdf aan de roepende toepassing terug. De code in customtoolbar.jsp downloadt dan het dossier aan uw lokaal systeem
 
 
