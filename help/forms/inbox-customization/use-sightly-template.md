@@ -18,13 +18,14 @@ ht-degree: 1%
 
 # Het gebruiken van sightmalplaatje om inbox gegevens te tonen
 
-U kunt een hechte sjabloon gebruiken om de gegevens op te maken die in kolommen in het postvak moeten worden weergegeven. In dit voorbeeld worden koraal-ui-pictogrammen weergegeven afhankelijk van de waarde van de inkomenskolom. In het volgende screenshot ziet u het gebruik van pictogrammen in de kolom![met inkomens.](assets/income-column.PNG)
+U kunt een hechte sjabloon gebruiken om de gegevens op te maken die in kolommen in het postvak moeten worden weergegeven. In dit voorbeeld worden koraal-ui-pictogrammen weergegeven afhankelijk van de waarde van de inkomenskolom. Het volgende screenshot toont het gebruik van pictogrammen in de inkomenskolom
+![inkomstenpictogrammen](assets/income-column.PNG)
 
-[Het secundaire sjabloon](assets/sightly-template.zip) dat wordt gebruikt voor het weergeven van de aangepaste corale ui-pictogrammen, wordt als onderdeel van dit artikel verschaft.
+[De ](assets/sightly-template.zip) sjabloon voor de weergave van aangepaste corale ui-pictogrammen is onderdeel van dit artikel.
 
 ## Correcte sjabloon
 
-Na is het sibleke malplaatje. De code in het malplaatje toont pictogram afhankelijk van het inkomen. De pictogrammen zijn beschikbaar als onderdeel van de pictogrambibliotheek [van de](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) koraal-ui die bij AEM wordt geleverd.
+Na is het sibleke malplaatje. De code in het malplaatje toont pictogram afhankelijk van het inkomen. De pictogrammen zijn beschikbaar als deel van [koral ui pictogrambibliotheek](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) die met AEM komt.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -78,7 +79,7 @@ return val;
 
 >[!NOTE]
 >
->In dit artikel wordt ervan uitgegaan dat u de [voorbeeldworkflow](assets/review-workflow.zip) en het [voorbeeldformulier](assets/snap-form.zip) uit het [vorige artikel](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) in deze reeks hebt geïnstalleerd.
+>In dit artikel wordt ervan uitgegaan dat u de [voorbeeldworkflow](assets/review-workflow.zip) en [voorbeeldformulier](assets/snap-form.zip) van [vorig artikel](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) in deze reeks hebt geïnstalleerd.
 
 * [Aanmelden als beheerder bij crx](http://localhost:4502/crx/de/index.jsp)
 * [sightsjabloon importeren](assets/sightly-template.zip)
@@ -88,7 +89,7 @@ return val;
 * Beheer beheren openen door te klikken op Lijstweergave naast de knop Maken
 * Kolom Inkomen toevoegen aan Postvak In en uw wijzigingen opslaan
 * [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selecteer de _burgerlijke staat_ en verzend het formulier
+* Selecteer de _huwelijksstatus_ en verzend het formulier
 * [Inbox weergeven](http://localhost:4502/aem/inbox)
 
 Als u het formulier verzendt, wordt de workflow geactiveerd en wordt een taak toegewezen aan de gebruiker van de &quot;beheerder&quot;. U moet het juiste pictogram zien onder de inkomenskolom
