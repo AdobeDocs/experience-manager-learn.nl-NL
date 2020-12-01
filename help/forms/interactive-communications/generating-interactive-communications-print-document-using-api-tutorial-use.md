@@ -28,17 +28,17 @@ Wanneer u een bestand neerzet in de controlemap, wordt een script uitgevoerd dat
 
 Het bestand dat naar de gecontroleerde map is neergezet, heeft de volgende structuur. De code genereert instructies voor alle accountnummers die in het XML-document worden vermeld.
 
-&lt;accountnummers>
+&lt;accountnumbers>
 
-&lt;accountnummer>509840&lt;/accountnummer>
+&lt;accountnumber>509840&lt;/accountnumber>
 
-&lt;accountnummer>948576&lt;/accountnummer>
+&lt;accountnumber>948576&lt;/accountnumber>
 
-&lt;accountnummer>398762&lt;/accountnummer>
+&lt;accountnumber>398762&lt;/accountnumber>
 
-&lt;accountnummer>291723&lt;/accountnummer>
+&lt;accountnumber>291723&lt;/accountnumber>
 
-&lt;/accountnummers>
+&lt;/accountnumbers>
 
 In de onderstaande code wordt het volgende gedaan:
 
@@ -111,8 +111,8 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 **Volg de onderstaande instructies om dit op uw lokale systeem te testen:**
 
 * Setup Tomcat zoals beschreven in dit [artikel.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat heeft het oorlogsdossier dat de steekproefgegevens produceert.
-* Stel de service-alias systeemgebruiker in zoals beschreven in dit [artikel](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop heeft. Om de toestemmingen login aan [gebruikersbeheerder](https://localhost:4502/useradmin) te geven en naar de gebruiker &quot;gegevens&quot;van het systeem te zoeken en de leestoestemmingen op de volgende knoop te geven door aan het toestemmingenlusje te wijzen
+* Stel de service ook systeemgebruiker in zoals beschreven in dit [artikel](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop heeft. Om de toestemmingslogin aan [gebruiker te geven admin](https://localhost:4502/useradmin) en naar de &quot;gegevens&quot;van de systeemgebruiker te zoeken en de leestoestemmingen op de volgende knoop te geven door aan het toestemmingenlusje te lusjes
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
