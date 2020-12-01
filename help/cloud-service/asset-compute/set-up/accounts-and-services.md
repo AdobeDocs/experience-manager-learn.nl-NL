@@ -1,6 +1,6 @@
 ---
-title: Accounts en services instellen voor de rekbaarheid van Asset Compute
-description: Voor het ontwikkelen van workers voor Asset Compute is toegang vereist tot accounts en services, waaronder AEM als Cloud Service, Adobe Project Firefly en cloudopslag van Microsoft of Amazon.
+title: Rekeningen en diensten voor uitbreidbaarheid van de Asset compute instellen
+description: Voor het ontwikkelen van Asset compute-workers hebt u toegang tot accounts en services nodig, waaronder AEM als Cloud Service, Adobe Project Firefly en cloudopslag die door Microsoft of Amazon wordt geleverd.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -39,33 +39,33 @@ Alle services van de Adobe moeten toegankelijk zijn via dezelfde Adobe Org, die 
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-Toegang tot een AEM als een Cloud Service-omgeving is vereist om AEM Assets Processing Profiles te configureren voor het aanroepen van de aangepaste Asset Compute-worker.
+Toegang tot een AEM als een Cloud Service-omgeving is vereist om AEM Assets Processing Profiles te configureren om de aangepaste Asset compute-worker aan te roepen.
 
 In het ideale geval is een sandboxprogramma of een ontwikkelomgeving zonder sandbox beschikbaar voor gebruik.
 
-Merk op dat een lokale AEM SDK ontoereikend is om deze zelfstudie te voltooien, aangezien de lokale AEM SDK niet kan communiceren met de microservices van Asset Compute, in plaats daarvan een waar AEM als Cloud Service-omgeving is vereist.
+Merk op dat een lokale AEM SDK ontoereikend is om deze zelfstudie te voltooien, aangezien de lokale AEM SDK niet met de microservices van de Asset compute kan communiceren, in plaats daarvan een waar AEM als Cloud Service-omgeving is vereist.
 
-## Adobe Project Firefly{#adobe-project-firefly}
+## Adobe Project firefly{#adobe-project-firefly}
 
-Het [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) -framework wordt gebruikt voor het bouwen en implementeren van aangepaste acties op Adobe I/O Runtime, een platform zonder Adobe. AEM Asset Compute-projecten zijn speciaal gebouwde Firefly-projecten die met AEM Assets integreren via Process Profiles, en die de mogelijkheid bieden om toegang te krijgen tot en gebruik te maken van binaire bestanden met middelen.
+Het &lt;a0>Adobe Project Firefly[-framework wordt gebruikt voor het bouwen en implementeren van aangepaste acties op Adobe I/O Runtime, een Adobe zonder server. ](https://www.adobe.io/apis/experienceplatform/project-firefly.html) AEM projecten van de Asset compute zijn speciaal gebouwde Vuurwerk projecten die met AEM Assets via het Profielen van de Verwerking integreren, en de capaciteit verstrekken om activa tot binaire getallen toegang te hebben en te verwerken.
 
 Meld u aan voor de voorvertoning om probleemloos toegang te krijgen tot het project.
 
-1. [Meld u aan voor een probleemloze voorvertoning](https://adobeio.typeform.com/to/obqgRm)van het project.
+1. [Meld u aan voor een probleemloze voorvertoning](https://adobeio.typeform.com/to/obqgRm) van het project.
 1. Wacht ongeveer 2 - 10 dagen tot u via e-mail op de hoogte wordt gebracht dat u provisioned bent alvorens met het leerprogramma verder te gaan.
-   + Als u niet zeker bent of u provisioned bent geweest, ga met de volgende stappen verder en als u niet een project van het __Project kunt tot stand brengen Firefly__ in de Console [van de Ontwikkelaar van](https://console.adobe.io) Adobe hebt u nog niet provisioned.
+   + Als u niet zeker bent of u provisioned bent, ga met de volgende stappen verder en als u niet kunt om een __Project Firefly__ project in [Adobe Console van de Ontwikkelaar ](https://console.adobe.io) te creëren u nog niet provisioned bent.
 
 ## Cloud-opslag
 
-De opslag van de wolk wordt vereist voor lokale ontwikkeling van Activa Compute projecten.
+Opslag in de cloud is vereist voor lokale ontwikkeling van Asset compute-projecten.
 
-Wanneer workers voor Asset Compute naar de Adobe I/O Runtime worden geïmplementeerd voor direct gebruik door AEM als Cloud Service, is deze cloudopslag niet strikt vereist, omdat AEM de cloudopslag biedt van waaruit het middel wordt gelezen en waarnaar wordt geschreven.
+Wanneer medewerkers van de Asset compute naar de Adobe I/O Runtime worden geïmplementeerd voor rechtstreeks gebruik door AEM als Cloud Service, is deze cloudopslag niet strikt vereist, omdat AEM de cloudopslag biedt van waaruit het middel wordt gelezen en waarnaar wordt geschreven.
 
-### Microsoft Azure Blob-opslag{#azure-blob-storage}
+### Microsoft Azure Blob Storage{#azure-blob-storage}
 
-Als u nog geen toegang hebt tot Microsoft Azure Blob Storage, meldt u zich aan voor een [gratis account](https://azure.microsoft.com/en-us/free/)van 12 maanden.
+Als u nog geen toegang hebt tot Microsoft Azure Blob Storage, meldt u zich aan voor een [gratis account van 12 maanden](https://azure.microsoft.com/en-us/free/).
 
-Deze zelfstudie maakt gebruik van Azure Blob Storage, maar [Amazon S3](#amazon-s3) kan ook worden gebruikt voor kleine wijzigingen in de zelfstudie.
+Deze zelfstudie maakt gebruik van Azure Blob Storage, maar [Amazon S3](#amazon-s3) kan ook worden gebruikt als slechts een kleine wijziging van de zelfstudie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
 
@@ -73,20 +73,20 @@ _Doorklikken van provisioning Azure Blob Storage (Geen audio)_
 
 
 1. Meld u aan bij uw [Microsoft Azure-account](https://azure.microsoft.com/en-us/account/).
-1. Navigeer naar de sectie __Storage Accounts__ Azure Services
-1. Tik __+ Toevoegen__ om een nieuwe Blob Storage-account te maken
-1. Maak zo nodig een nieuwe __bronnengroep__ , bijvoorbeeld: `aem-as-a-cloud-service`
-1. Geef bijvoorbeeld de naam __van een__ opslagaccount op: `aemguideswkndassetcomput`
-   + De naam __van de__ opslagaccount wordt gebruikt voor het [configureren van cloudopslag](../develop/environment-variables.md) voor het lokale hulpprogramma voor het berekenen van bedrijfsmiddelen
-   + De __toegangstoetsen__ die aan de opslagaccount zijn gekoppeld, zijn ook vereist bij het [configureren van cloudopslag](../develop/environment-variables.md).
-1. Laat alle andere opties standaard staan en tik op de knop __Revisie + maken__
-   + Selecteer desgewenst de __locatie__ die u dicht bij u ligt.
-1. Controleer de inrichtingsaanvraag voor de juistheid en tik op de knop __Maken__ als u tevreden bent
+1. Navigeer naar de sectie __Opslagaccounts__ Azure-services
+1. Tik __+ Add__ om een nieuwe Blob Storage-account te maken
+1. Maak zo nodig een nieuwe __Brongroep__, bijvoorbeeld: `aem-as-a-cloud-service`
+1. Geef een __Naam opslagaccount__ op, bijvoorbeeld: `aemguideswkndassetcomput`
+   + De __Naam van opslagaccount__ wordt gebruikt voor [het configureren van cloudopslag](../develop/environment-variables.md) voor het ontwikkelingsprogramma voor lokale Asset compute
+   + De __Toegangstoetsen__ verbonden aan de opslagrekening worden ook vereist wanneer [het vormen van wolkenopslag](../develop/environment-variables.md).
+1. Laat alle andere opties standaard staan en tik op de knop __Revisie + create__
+   + Selecteer desgewenst de __locatie__ dicht bij u.
+1. Controleer het inrichtingsverzoek voor juistheid, en tik __Create__ knoop indien tevreden
 
 ### Amazon S3{#amazon-s3}
 
 Het gebruik van [Microsoft Azure Blob Storage](#azure-blob-storage) wordt aanbevolen voor het voltooien van deze zelfstudie, maar [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card) kan ook worden gebruikt.
 
-Als u Amazon S3-opslag gebruikt, geeft u de gegevens voor de Amazon S3-cloudopslag op bij het [configureren van de omgevingsvariabelen](../develop/environment-variables.md#amazon-s3)van het project.
+Als u Amazon S3-opslag gebruikt, geeft u de gegevens voor de Amazon S3-cloudopslag op wanneer u de omgevingsvariabelen van het project [configureert.](../develop/environment-variables.md#amazon-s3)
 
-Als u cloudopslag speciaal voor deze zelfstudie nodig hebt, raden we u aan [Azure Blob Storage](#azure-blob-storage)te gebruiken.
+Als u cloudopslag speciaal voor deze zelfstudie nodig hebt, raden we u aan om [Azure Blob Storage](#azure-blob-storage) te gebruiken.
