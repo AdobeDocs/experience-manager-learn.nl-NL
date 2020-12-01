@@ -23,7 +23,7 @@ ht-degree: 19%
    + [Inleiding tot verkoop](./underlying-technology/introduction-sling.md)
    + [Inleiding tot auteur- en publicatiereeks](./underlying-technology/introduction-author-publish.md)
    + [Inleiding tot Dispatcher](./underlying-technology/introduction-dispatcher.md)
-+ Lokale ontwikkelomgeving instellen {#local-development-environment-set-up}
++ Lokale ontwikkelomgeving ingesteld {#local-development-environment-set-up}
    + [Overzicht](./local-development-environment/overview.md)
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
    + [Lokale AEM](./local-development-environment/aem-runtime.md)
@@ -51,14 +51,14 @@ ht-degree: 19%
    + [Toegang tot AEM doorlopen configureren](./accessing/walk-through.md)
 + Migratie {#migration}
    + [De tool Content Transfer](./migration/content-transfer-tool.md)
-+ Rekbaarheid van middelen{#asset-compute}
++ Uitbreidbaarheid asset compute{#asset-compute}
    + [Overzicht](./asset-compute/overview.md)
    + Instellen{#set-up}
       + [Account en service-provisioning](./asset-compute/set-up/accounts-and-services.md)
       + [Lokale ontwikkelomgeving](./asset-compute/set-up/development-environment.md)
       + [Adobe Project Firefly](./asset-compute/set-up/firefly.md)
    + Ontwikkelen{#develop}
-      + [Een project voor het berekenen van bedrijfsmiddelen maken](./asset-compute/develop/project.md)
+      + [Een Asset compute-project maken](./asset-compute/develop/project.md)
       + [Omgevingsvariabelen configureren](./asset-compute/develop/environment-variables.md)
       + [Vorm manifest.yml](./asset-compute/develop/manifest.md)
       + [Een worker ontwikkelen](./asset-compute/develop/worker.md)
