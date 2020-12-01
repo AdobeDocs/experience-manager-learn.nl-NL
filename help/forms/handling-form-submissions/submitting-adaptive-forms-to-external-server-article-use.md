@@ -28,7 +28,7 @@ Klanten willen de formuliergegevens meestal naar een externe server verzenden vo
 
 Als u gegevens naar een interne server wilt posten, geeft u een pad naar de bron op. De gegevens worden gepost de weg van het middel. Bijvoorbeeld &lt;/content/restEndPoint> . Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
 
-Geef een URL op om gegevens naar een externe server te posten. The format of the URL is <http://host:port/path_to_rest_end_point>. Zorg ervoor dat u de weg hebt gevormd om het verzoek van de POST anoniem te behandelen.
+Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is <http://host:port/path_to_rest_end_point>. Zorg ervoor dat u de weg hebt gevormd om het verzoek van de POST anoniem te behandelen.
 
 In het kader van dit artikel heb ik een eenvoudig oorlogsdossier geschreven dat op uw exemplaar van de tomcat kan worden opgesteld. Ervan uitgaande dat uw tomcat op poort 8080 wordt uitgevoerd, zal de POST-URL
 
@@ -52,13 +52,14 @@ String data = request.getParameter(paramName);System.out.println("The data  is "
 }
 ```
 
-![Formulierverzending](assets/formsubmission.gif)Om dit op uw server te testen, doe het volgende
+![](assets/formsubmission.gif)
+FormulierverzendingGa als volgt te werk om dit op uw server te testen
 
 1. Installeer Tomcat als u dit nog niet hebt. [Hier zijn instructies voor het installeren van tomcat beschikbaar](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
-1. Download het [ZIP-bestand](assets/aemformsenablement.zip) dat aan dit artikel is gekoppeld. Pak het bestand uit om het oorlogsbestand op te halen.
+1. Download het [zip-bestand](assets/aemformsenablement.zip) dat aan dit artikel is gekoppeld. Pak het bestand uit om het oorlogsbestand op te halen.
 1. Implementeer het oorlogsbestand in uw tomcat-server.
 1. Maak een eenvoudig adaptief formulier met de component Bestandsbijlage en configureer de verzendactie zoals in de bovenstaande schermafbeelding wordt getoond. De POST-URL is <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Als uw AEM en tomcat niet worden uitgevoerd op localhost, wijzigt u de URL dienovereenkomstig.
 1. Als u het verzenden van formuliergegevens via meerdere delen wilt inschakelen, voegt u het volgende kenmerk toe aan het contextelement van de &lt;tomcatInstallDir>\conf\context.xml en start u de Tomcat-server opnieuw.
-1. **&lt;Context allowCasualMultipartParsing=&quot;true&quot;>**
+1. **&lt;context allowCasualMultipartParsing=&quot;true&quot;>**
 1. Geef een voorbeeld van het adaptieve formulier weer, voeg een bijlage toe en verzend deze. Controleer het venster van de tomcat console voor berichten.
 
