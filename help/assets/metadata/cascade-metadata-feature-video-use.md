@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Cascading Metadata in AEM Assets gebruiken{#using-cascading-metadata-in-aem-assets}
+# Cascading Metadata in AEM Assets{#using-cascading-metadata-in-aem-assets} gebruiken
 
 Met geavanceerd metagegevensbeheer kunnen gebruikers trapsgewijze veldregels maken om contextuele relaties tussen metagegevens in AEM Assets te vormen. In de onderstaande video ziet u nieuwe dynamische regels voor veldvereisten, zichtbaarheid en contextuele keuzes. In de video worden ook de stappen beschreven die een beheerder nodig heeft om deze regels toe te passen op een aangepast metagegevensschema.
 
@@ -37,7 +37,7 @@ Er zijn drie dynamische regelsets die voor een bepaald metagegevensveld kunnen w
 >
 >Cascading rules can only be created based on the value(s) of a dropdown field. Het is mogelijk om alle drie regelreeksen op het zelfde meta-gegevensgebied toe te passen maar als beste praktijk wordt het geadviseerd om elke regelreeks afhankelijk van de zelfde meta-gegevensdrop-down te maken.
 
-Aangepast [metagegevenspakket downloaden](assets/cascade-metadata-values-001.zip)
+[Aangepast metagegevenspakket](assets/cascade-metadata-values-001.zip) downloaden
 
 ## Aanvullende bronnen{#additional-resources}
 
