@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Inhoudsstructuur en -hiërarchie {#content-hierarchy}
+# Inhoudsstructuur en hiërarchie {#content-hierarchy}
 
 Leer hoe u de sitepagina&#39;s van uw organisatie kunt maken en ordenen in AEM Sites.
 
