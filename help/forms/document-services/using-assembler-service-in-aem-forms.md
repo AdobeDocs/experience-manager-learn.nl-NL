@@ -107,19 +107,19 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Om deze functie te laten werken op uw AEM
 
-* Download het bestand [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) naar uw lokale systeem.
-* Het pakket uploaden en installeren met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Pakket[met aangepaste documentservices downloaden](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Download [Developing with Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* De bundels implementeren en starten met de [felix-webconsole](http://localhost:4502/system/console/bundles)
-* Wijs de browser aan [PDF&#39;s samenstellen.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* Download [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) naar uw lokale systeem.
+* Upload en installeer het pakket met behulp van [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* Download[Custom Document Services Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Download [Ontwikkelen met servicetoedieningspakket](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* De bundels implementeren en starten met de [felix webconsole](http://localhost:4502/system/console/bundles)
+* Wijs uw browser aan [Pdfs samenstellen.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
 * Enkele bestanden van PDF-bestanden slepen en neerzetten
 
 >[!NOTE]
 >
 >Zorg ervoor dat de AEM Forms-installatie is voltooid. Alle bundels moeten actief zijn.
 >
->Zorg ervoor u hebt toegevoegd - de bibliotheken van RSA en BouncyCastle van de de Vraag van de Leiding zoals vermeld in dit [Installeren van AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Zorg ervoor u hebt toegevoegd - de bibliotheken van de Vraag RSA en BouncyCastle zoals vermeld in dit [Installeren van AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Voorzorgsmaatregelen voor deze demo**
 >
