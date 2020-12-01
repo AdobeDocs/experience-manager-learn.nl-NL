@@ -31,16 +31,18 @@ Om het bovengenoemde gebruikscase te verwezenlijken, zult u typisch een dienst O
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemodelleerd project met het juiste type Adobe Maven Archetype. De gedetailleerde stappen worden weergegeven in dit [artikel](https://helpx.adobe.com/experience-manager/using/maven_arch13.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemodelleerd project met het juiste type Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [artikel](https://helpx.adobe.com/experience-manager/using/maven_arch13.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
 
-Open het beproefde project in uw eclipse winde. Vouw **projectnaam** > **kernmap** uit. Vouw de map src/main/java uit. U moet een pakket zien dat eindigt met &quot;core&quot;. Maak een Java-klasse die WorkflowProcess in dit pakket implementeert. U moet de uitvoeringsmethode overschrijven. De handtekening van de uitvoeringsmethode is als volgt: execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowExceptionDe methode execute geeft toegang tot de volgende drie variabelen
+Open het beproefde project in uw eclipse winde. Breid **projectnaam** > **core** omslag uit. Vouw de map src/main/java uit. U moet een pakket zien dat eindigt met &quot;core&quot;. Maak een Java-klasse die WorkflowProcess in dit pakket implementeert. U moet de uitvoeringsmethode overschrijven. De handtekening van de uitvoeringsmethode is als volgt
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)genereert WorkflowException
+De methode execute geeft toegang tot de volgende drie variabelen
 
-**WorkItem**: De variabele workItem geeft toegang tot gegevens die betrekking hebben op de workflow. De openbare API-documentatie is [hier beschikbaar.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**: De variabele workItem geeft toegang tot gegevens die betrekking hebben op de workflow. De openbare API documentatie is beschikbaar [hier.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Deze workflowSession-variabele geeft u de mogelijkheid om de workflow te beheren. De openbare API-documentatie is [hier beschikbaar](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**: Deze workflowSession-variabele geeft u de mogelijkheid om de workflow te beheren. De openbare API-documentatie is [hier](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html) beschikbaar
 
 **MetaDataMap**: Alle metagegevens die aan de workflow zijn gekoppeld. Alle procesargumenten die aan de processtap worden doorgegeven, zijn beschikbaar via het object MetaDataMap.[API-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -134,7 +136,8 @@ De rest van de code leidt tot de voorwerpen van het Document door het kindvoorwe
 
 #### Samenstellen en implementeren
 
-[Bouw de bundel zoals hier](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[wordt beschreven Zorg ervoor de bundel en in actieve staat wordt opgesteld](http://localhost:4502/system/console/bundles)
+[Bouw de bundel zoals ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)
+[hier beschrevenZorg ervoor de bundel en in actieve staat wordt opgesteld](http://localhost:4502/system/console/bundles)
 
 Maak een workflowmodel. De stap van het proces van de belemmering en van het dalingsproces in het werkschemamodel. Koppel de processtap aan &quot;Aangepaste formulierbijlagen opslaan naar bestandssysteem&quot;.
 
