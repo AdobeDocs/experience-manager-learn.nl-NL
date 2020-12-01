@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Geolocatie-API&#39;s gebruiken in Adaptive Forms{#using-geolocation-api-s-in-adaptive-forms}
 
-Ga naar de voorbeeldpagina [van](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms voor een koppeling naar een live demo over deze mogelijkheid.
+Ga naar de pagina [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) voor een koppeling naar een live demo van deze mogelijkheid.
 
 In dit artikel bekijken we hoe we de Geolocation-API van Google kunnen gebruiken om velden van een adaptief formulier in te vullen. Dit wordt vaak gebruikt wanneer u de huidige adresvelden op een formulier wilt vullen.
 
 De volgende stappen zijn uitgevoerd voor het gebruik van de Geolocation API in Adaptive Forms.
 
-1. [Haal de API-sleutel](https://developers.google.com/maps/documentation/javascript/get-api-key) van Google op om het Google Maps-platform te gebruiken. U kunt een proefsleutel ophalen die 1 jaar geldig is.
+1. [Haal API ](https://developers.google.com/maps/documentation/javascript/get-api-key) Keyfrom Google op om het Google Maps-platform te gebruiken. U kunt een proefsleutel ophalen die 1 jaar geldig is.
 
 1. Het adaptief formulierfragment is gemaakt met velden voor het huidige adres
 
@@ -102,7 +102,7 @@ Voer de volgende stappen uit om deze functie op uw server te plaatsen
 * AEM Forms-server installeren en starten.
 
 >!![NOTE] Deze mogelijkheid is getest op AEM Forms 6.3 en hoger
-* [Google API-sleutel](https://developers.google.com/maps/documentation/javascript/get-api-key)ophalen.
+* [Google API-sleutel](https://developers.google.com/maps/documentation/javascript/get-api-key) ophalen.
 * [Importeer de aan dit artikel gerelateerde elementen in AEM.](assets/geolocationapi.zip)
 * [Open het fragment Adaptief formulier in de bewerkingsmodus.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Open de regeleditor voor de component Afbeeldingskeuze.
