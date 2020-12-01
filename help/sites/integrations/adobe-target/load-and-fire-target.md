@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Een doelaanroep laden en in werking stellen {#load-fire-target}
+# Een doelaanroep {#load-fire-target} laden en in brand steken
 
 Leer hoe te om, parameters tot paginaverzoek over te brengen, en een vraag van het Doel van uw plaatspagina in werking te stellen gebruikend een Regel van de Lancering. De informatie van de Web-pagina wordt teruggewonnen en overgegaan als parameters gebruikend de Laag van Gegevens van de Cliënt van de Adobe die u gegevens over de ervaring van bezoekers op een webpagina laat verzamelen en opslaan en dan het gemakkelijk maken om tot deze gegevens toegang te hebben.
 
@@ -26,19 +26,19 @@ Leer hoe te om, parameters tot paginaverzoek over te brengen, en een vraag van h
 
 ## Regel bij laden van pagina
 
-De gegevenslaag van de Cliënt van Adobe is een gebeurtenis gedreven gegevenslaag. Wanneer de gegevenslaag AEM pagina wordt geladen, wordt een gebeurtenis geactiveerd `cmp:show` . In de video wordt de `Launch Library Loaded` regel aangeroepen met behulp van een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
+De gegevenslaag van de Cliënt van Adobe is een gebeurtenis gedreven gegevenslaag. Wanneer de gegevenslaag AEM pagina is geladen, wordt een gebeurtenis `cmp:show` geactiveerd. In de video wordt de `Launch Library Loaded`-regel aangeroepen met behulp van een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
 
 ### Aangepaste weergegeven pagina-gebeurtenis{#page-event}
 
 ![Pagina weergegeven gebeurtenisconfiguratie en aangepaste code](assets/load-and-fire-target-call.png)
 
-In het bezit van de Lancering, voeg een nieuwe **Gebeurtenis** aan de **Regel toe**
+In het bezit van de Lancering, voeg nieuw **Gebeurtenis** aan **Regel** toe
 
-+ __Extensie:__ Kern
-+ __Type gebeurtenis:__ Aangepaste code
-+ __Naam:__ Pagina weergeven, gebeurtenishandler (of iets beschrijends)
++ __extensie:__ Core
++ __gebeurtenistype:__ aangepaste code
++ __Naam:Gebeurtenishandler__ voor paginaweergave (of iets beschrijends)
 
-Tik op de knop __Editor__ openen en plak in het volgende codefragment. Deze code __moet__ worden toegevoegd aan de Configuratie __van de__ Gebeurtenis en een verdere __Actie__.
+Tik op de knop __Editor openen__ en plak in het volgende codefragment. Deze code __must__ moet worden toegevoegd aan __Gebeurtenisconfiguratie__ en een volgende __Actie__.
 
 ```javascript
 // Define the event handler function
@@ -78,20 +78,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Een douanefunctie bepaalt `pageShownEventHandler`, en luistert naar gebeurtenissen die door AEM Componenten van de Kern worden uitgegeven, leidt de relevante informatie tot de Component van de Kern af, verpakt het in een gebeurtenisvoorwerp, en brengt de Gebeurtenis van de Lancering met afgeleide gebeurtenisinfo bij zijn lading teweeg.
+Een douanefunctie bepaalt `pageShownEventHandler`, en luistert naar gebeurtenissen die door AEM Componenten van de Kern worden uitgegeven, leidt de relevante informatie tot de Component van de Kern af, verpakt het in een gebeurtenisvoorwerp, en brengt de Gebeurtenis van de Lancering met de afgeleide gebeurtenisinfo bij zijn lading teweeg.
 
-De regel van de Lancering wordt teweeggebracht gebruikend de `trigger(...)` functie van de Lancering die __slechts__ van binnen de de codefragmentdefinitie van de Code van de Gebeurtenis van de Regel van de Douane beschikbaar is.
+De regel van de Lancering wordt teweeggebracht gebruikend de functie `trigger(...)` van de Lancering die __only__ van binnen de de codefragmentdefinitie van de Code van de Gebeurtenis van een Regel beschikbaar is.
 
-De `trigger(...)` functie neemt een gebeurtenisvoorwerp als parameter die beurtelings in de Elementen van Gegevens van de Lancering, door een andere gereserveerde naam in Launch genoemd wordt blootgesteld `event`. Data Elements in Launch kan nu met dezelfde syntaxis verwijzen naar gegevens van dit gebeurtenisobject van het `event` object `event.component['someKey']`.
+De functie `trigger(...)` neemt een gebeurtenisvoorwerp als parameter die beurtelings in de Elementen van Gegevens van de Lancering, door een andere gereserveerde naam in Lancering genoemd `event` wordt blootgesteld. Data Elements in Launch kan nu met behulp van syntaxis zoals `event.component['someKey']` verwijzen naar gegevens van dit gebeurtenisobject van het `event`-object.
 
-Als `trigger(...)` buiten de context van het gebeurtenistype van de Code van de Douane van een Gebeurtenis (bijvoorbeeld, in een Actie) wordt gebruikt, `trigger is undefined` wordt de fout JavaScript geworpen op de Website die met het bezit van de Lancering wordt geïntegreerd.
+Als `trigger(...)` buiten de context van het gebeurtenistype van de Code van de Douane van een Gebeurtenis (bijvoorbeeld, in een Actie) wordt gebruikt, wordt de fout JavaScript `trigger is undefined` geworpen op de Website die met het bezit van de Lancering wordt geïntegreerd.
 
 
 ### Gegevenselementen
 
 ![Gegevenselementen](assets/data-elements.png)
 
-Adobe De Elementen van Gegevens van de Lancering van de brengen de gegevens van het gebeurtenisvoorwerp in [teweeggebracht in de douane Pagina getoonde gebeurtenis](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van het Element van de Gegevens van de Code van de uitbreiding van de Kern in kaart.
+Adobe De Elementen van Gegevens van de Lancering van de brengen de gegevens van het gebeurtenisvoorwerp [teweeggebracht in de douanePagina getoonde gebeurtenis ](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van het Element van de Gegevens van de Code van de uitbreiding van de Kern in kaart.
 
 #### Pagina-ID-gegevenselement
 
@@ -140,7 +140,7 @@ Deze code retourneert de titel van de AEM pagina.
 #### Oplossing
 
 Doelklanten gebruiken soms cloudgebaseerde instanties met Target voor testdoeleinden of eenvoudige concepttest. Deze domeinen, en vele anderen, maken deel uit van de Openbare Lijst van het Achtervoegsel.
-In moderne browsers worden cookies niet opgeslagen als u deze domeinen gebruikt, tenzij u de `cookieDomain` instelling aanpast met `targetGlobalSettings()`.
+Moderne browsers slaan cookies niet op als u deze domeinen gebruikt, tenzij u de instelling `cookieDomain` aanpast met `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
