@@ -30,7 +30,7 @@ In dit artikel worden de stappen beschreven die nodig zijn voor het opslaan en o
 * [Capability Demonstratie](#capability-demo)
 * [Distribueren op uw server](#deploy-on-your-server)
 
-## Gegevensbron configureren {#Configure-Data-Source}
+## Gegevensbron {#Configure-Data-Source} configureren
 
 Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar de database die wordt gebruikt om de Adaptive Form-gegevens op te slaan. Het volgende schermafbeelding toont de configuratie voor mijn instantie. De volgende eigenschappen kunnen worden gekopieerd en geplakt
 
@@ -42,7 +42,7 @@ Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar
 
 ![connectionpool](assets/storingdata.PNG)
 
-### Servlet maken {#create-servlet}
+### Servlet {#create-servlet} maken
 
 Hier volgt de code van de servlet die Adaptieve formuliergegevens in de database invoegt/bijwerkt. De Apache Sling Connection Pooled DataSource wordt geconfigureerd met de AEM ConfigMgr en er wordt in regel 26 naar verwezen. De rest van de code is vrij eenvoudig. De code voegt een nieuwe rij in de database in of werkt een bestaande rij bij. De opgeslagen Adaptieve gegevens van de Vorm worden geassocieerd met een GUID. Dezelfde GUID wordt vervolgens gebruikt om de formuliergegevens bij te werken.
 
@@ -212,7 +212,7 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 }
 ```
 
-## OSGI-service maken voor het ophalen van gegevens {#create-osgi-service}
+## OSGI-service maken om gegevens te zoeken {#create-osgi-service}
 
 De volgende code is geschreven om de opgeslagen gegevens van het Adaptieve formulier op te halen. Een eenvoudige vraag wordt gebruikt om de Adaptieve gegevens van de Vorm te halen verbonden aan een bepaalde GUID. De opgehaalde gegevens worden vervolgens geretourneerd aan de aanroepende toepassing. Dezelfde gegevensbron gemaakt in de eerste stap waarnaar in deze code wordt verwezen.
 
@@ -405,16 +405,16 @@ $(document).ready(function()
 });
 ```
 
-## Aangepaste formuliersjabloon en paginacomponent maken {#form-template-and-page-component}
+## Aangepaste formuliersjabloon en paginacomponent {#form-template-and-page-component} maken
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=9&learn=on)
 
-### Bewijs van de bekwaamheid {#capability-demo}
+### Bewijs van de mogelijkheid {#capability-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/27829?quality=9&learn=on)
 
-#### Distribueren op uw server {#deploy-on-your-server}
+#### Implementeren op uw server {#deploy-on-your-server}
 
 Voer de volgende stappen uit om deze mogelijkheid te testen op uw AEM Forms-exemplaar
 
