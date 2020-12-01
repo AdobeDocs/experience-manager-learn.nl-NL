@@ -1,6 +1,6 @@
 ---
 title: AEM verbinden met Starten met Adobe I/O
-description: Leer hoe u een IMS-configuratie maakt met Adobe I/O om AEM te verifiëren met de opstartAPI. Zodra deze integratie is geïnstalleerd, kan AEM via de API voor starten communiceren om toegang te krijgen tot de eigenschappen van Launch.
+description: Leer hoe u een IMS-configuratie met Adobe I/O maakt om AEM te verifiëren met de opstartAPI. Zodra deze integratie is geïnstalleerd, kan AEM via de API voor starten communiceren om toegang te krijgen tot de eigenschappen van Launch.
 feature: launch
 topics: integrations
 audience: administrator
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM verbinden met Starten met Adobe I/O {#connect-aem-launch-adobe-io}
 
-Leer hoe u een IMS-configuratie maakt met Adobe I/O om AEM te verifiëren met de opstartAPI. Zodra deze integratie is geïnstalleerd, kan AEM via de API voor starten communiceren om toegang te krijgen tot de eigenschappen van Launch.
+Leer hoe u een IMS-configuratie met Adobe I/O maakt om AEM te verifiëren met de opstartAPI. Zodra deze integratie is geïnstalleerd, kan AEM via de API voor starten communiceren om toegang te krijgen tot de eigenschappen van Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38555?quality=12&learn=on)
 
