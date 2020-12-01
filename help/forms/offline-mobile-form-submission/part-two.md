@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # PDF-verzending verwerken
 
-In dit deel maken we een eenvoudige servlet die wordt uitgevoerd op AEM Publish en die de PDF-verzending vanuit Acrobat/Reader afhandelt. Deze servlet zal op zijn beurt een HTTP-POST aanvragen bij een servlet die in een AEM auteur-instantie wordt uitgevoerd die verantwoordelijk is voor het opslaan van de verzonden gegevens als een `nt:file` knooppunt in de gegevensopslagruimte van AEM Author.
+In dit deel maken we een eenvoudige servlet die wordt uitgevoerd op AEM Publish en die de PDF-verzending vanuit Acrobat/Reader afhandelt. Deze servlet zal beurtelings, een verzoek van de POST van HTTP aan servlet doen die in een AEM auteursinstantie loopt verantwoordelijk voor het opslaan van de voorgelegde gegevens als `nt:file` knoop in de bewaarplaats van de Auteur van AEM.
 
-Hier volgt de code van de server die de PDF-verzending afhandelt. In deze servlet doen wij een POST vraag aan een servlet op **/bin/startworkflow** in een instantie van de Auteur AEM. Deze server slaat de formuliergegevens op in de gegevensopslagruimte van de AEM-auteur.
+Hier volgt de code van de server die de PDF-verzending afhandelt. In deze servlet doen wij een POST vraag aan een servlet op **/bin/startworkflow** in een instantie van de Auteur AEM wordt opgezet. Deze server slaat de formuliergegevens op in de gegevensopslagruimte van de AEM-auteur.
 
 
 ## AEM Publish servlet
@@ -102,7 +102,7 @@ public class HandlePDFSubmission extends SlingAllMethodsServlet {
 
 ## AEM Author servlet
 
-De volgende stap bestaat uit het opslaan van de verzonden gegevens in de gegevensopslagruimte van de AEM-auteur. De servlet op `/bin/startworkflow` slaat de voorgelegde gegevens op.
+De volgende stap bestaat uit het opslaan van de verzonden gegevens in de gegevensopslagruimte van de AEM-auteur. De serlet die op `/bin/startworkflow` wordt gemonteerd bewaart de voorgelegde gegevens.
 
 ```java
 import java.io.BufferedReader;
@@ -200,7 +200,7 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 }
 ```
 
-Een AEM werkschemalancerer wordt gevormd om teweeg te brengen telkens als een nieuw middel van type `nt:file` onder de `/content/pdfsubmissions` knoop wordt gecreeerd. Met deze workflow worden niet-interactieve of statische PDF&#39;s gemaakt door de verzonden gegevens samen te voegen met de xdp-sjabloon. Het gegenereerde PDF-bestand wordt vervolgens ter controle en goedkeuring aan een gebruiker toegewezen.
+Een AEM werkschemalancerer wordt gevormd om teweeg te brengen telkens als een nieuwe middel van type `nt:file` onder `/content/pdfsubmissions` knoop wordt gecreeerd. Met deze workflow worden niet-interactieve of statische PDF&#39;s gemaakt door de verzonden gegevens samen te voegen met de xdp-sjabloon. Het gegenereerde PDF-bestand wordt vervolgens ter controle en goedkeuring aan een gebruiker toegewezen.
 
-Om de voorgelegde gegevens onder `/content/pdfsubmissions` knoop op te slaan, maken wij gebruik van de dienst `GetResolver` OSGi staat ons toe om de voorgelegde gegevens te bewaren gebruikend de `fd-service` systeemgebruiker die in elke installatie van AEM Forms beschikbaar is.
+Om de voorgelegde gegevens onder `/content/pdfsubmissions` knoop op te slaan, maken wij gebruik van de dienst `GetResolver` OSGi staat ons toe om de voorgelegde gegevens te bewaren gebruikend `fd-service` systeemgebruiker die in elke installatie van AEM Forms beschikbaar is.
 
