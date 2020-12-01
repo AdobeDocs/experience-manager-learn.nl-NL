@@ -33,7 +33,7 @@ Voorbeelden van gebruiksgevallen voor aangepaste bronnenstatusproviders zijn:
 
 ![Overzicht van de bronstatus van AEM editor](assets/sample-editor-resource-status-screenshot.png)
 
-## Resource Status Provider Framework {#resource-status-provider-framework}
+## Framework {#resource-status-provider-framework}
 
 Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikkelingswerk samengesteld uit:
 
@@ -42,19 +42,19 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
 
    ![bronstatusarchitectuur](assets/sample-editor-resource-status-application-architecture.png)
 
-3. De statusbron die als onderdeel van de editors Pagina, Ervingsfragment en Sjabloon wordt opgegeven, krijgt een type via de eigenschap &#39;[!DNL statusType]&#39; resources.
+3. De statusbron die als onderdeel van de redacteurs van de Pagina, het Fragment van de Ervaring en van het Malplaatje wordt verstrekt wordt gegeven een type via het bezit &quot;[!DNL statusType]&quot;van middelen.
 
    * Pagina-editor: `editor`
    * Experience Fragment Editor: `editor`
    * Sjablooneditor: `template-editor`
 
-4. Het middel van de status `statusType` wordt aangepast aan geregistreerd `CompositeStatusType` OSGi gevormd `name` bezit.
+4. De `statusType` van het statusmiddel wordt aangepast aan geregistreerd `CompositeStatusType` OSGi gevormd `name` bezit.
 
-   Voor alle overeenkomsten, worden de `CompositeStatusType's` types verzameld, en gebruikt om de `ResourceStatusProvider` implementaties te verzamelen die dit type, via `ResourceStatusProvider.getType()`. hebben.
+   Voor alle overeenkomsten, worden de `CompositeStatusType's` types verzameld, en gebruikt om `ResourceStatusProvider` implementaties te verzamelen die dit type, via `ResourceStatusProvider.getType()` hebben.
 
-5. De overeenkomst `ResourceStatusProvider` wordt overgegaan `resource` in de redacteur, en bepaalt als de status om `resource` heeft te tonen. Als de status nodig is, is deze implementatie verantwoordelijk voor bouw 0 of velen `ResourceStatuses` om terug te keren, elk die een status aan vertoning vertegenwoordigen.
+5. De overeenkomst `ResourceStatusProvider` wordt overgegaan `resource` in de redacteur, en bepaalt als `resource` status heeft om worden getoond. Als de status nodig is, is deze implementatie verantwoordelijk voor de bouw 0 of vele `ResourceStatuses` om terug te keren, elk die een status aan vertoning vertegenwoordigen.
 
-   Doorgaans `ResourceStatusProvider` retourneert een waarde 0 of 1 `ResourceStatus` per `resource`.
+   Doorgaans retourneert een `ResourceStatusProvider` 0 of 1 `ResourceStatus` per `resource`.
 
 6. ResourceStatus is een interface die door de klant kan worden uitgevoerd, of nuttig `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` kan worden gebruikt om een status te construeren. Een status bestaat uit:
 
@@ -66,7 +66,7 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
    * Acties
    * Data
 
-7. Als dit `Actions` wel het geval is voor het `ResourceStatus` object, moeten ondersteunende clientlibs de functionaliteit binden aan de actiekoppelingen op de statusbalk.
+7. Als `Actions` optioneel voor het `ResourceStatus` voorwerp wordt verstrekt, wordt de ondersteunende cliëntlibs vereist om functionaliteit aan de actieverbindingen in de statusbar te binden.
 
    ```js
    (function(jQuery, document) {
@@ -85,7 +85,7 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
    * Categorie Experience Fragment Editor: `cq.authoring.editor.sites.page`
    * Categorie Sjablooneditor: `cq.authoring.editor.sites.template`
 
-## De code weergeven {#view-the-code}
+## De code {#view-the-code} weergeven
 
 [Zie code op GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
 
