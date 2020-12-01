@@ -22,15 +22,15 @@ In deze zelfstudie behandelen wij drie verschillende scenario&#39;s voor AEM en 
 * Scenario 2: Personalisatie met behulp van Visual Experience Composer
 * Scenario 3: Aanpassing van de volledige webpaginamogelijkheden
 
-## Personalisatie met AEM Experience Fragments {#personalization-using-aem-experience-fragment}
+## Personalisatie met AEM ervaringsfragmenten {#personalization-using-aem-experience-fragment}
 
-Voor dit scenario zullen wij AEM en Doel gebruiken. Het is duidelijk dat beide producten hun eigen sterke punten hebben en wanneer het gaat om het aanbieden van persoonlijke ervaringen aan gebruikers van uw site, hebt u **gepersonaliseerde inhoud (inhoud van AEM)** en een **intelligente manier (Doel)** nodig om deze inhoud te bedienen op basis van een specifieke gebruiker.
+Voor dit scenario zullen wij AEM en Doel gebruiken. Het is duidelijk dat beide producten hun eigen sterke punten hebben en wanneer het gaat om het bieden van gepersonaliseerde ervaringen aan de gebruikers van uw site, hebt u **gepersonaliseerde inhoud (inhoud van AEM)** en een **intelligente manier (Doel)** nodig om deze inhoud te dienen op basis van een specifieke gebruiker.
 
 AEM helpt u persoonlijke inhoud te maken, waarbij al uw inhoud en middelen op een centrale locatie worden samengebracht om uw strategie voor personalisatie te voeden. Met AEM kunt u eenvoudig inhoud voor desktops, tablets en mobiele apparaten op één locatie maken zonder dat u code hoeft te schrijven. Het is niet nodig om pagina&#39;s te maken voor elk apparaat. AEM past automatisch elke ervaring aan met uw inhoud. U kunt de inhoud ook van AEM naar Adobe Target exporteren als aanbiedingen met een druk op een knop.
 
 We hebben nu persoonlijke inhoud in de vorm van voorstellen van AEM in Target. Met Doel kunt u deze aanbiedingen op schaal aanbieden op basis van een combinatie van op regels gebaseerde en door AI gestuurde methoden voor het leren van machines die gedrags-, context- en offlinevariabelen bevatten.  Met Doel kunt u eenvoudig A/B- en MVT-activiteiten (Multivariate) instellen en uitvoeren om de beste aanbiedingen, inhoud en ervaringen te bepalen.
 
-**De fragmenten** van de ervaring vertegenwoordigen een enorme stap voorwaarts om de inhoud/ervaring creators aan de verpersoonlijkingsberoeps te verbinden die bedrijfsresultaten gebruikend Doel drijven.
+**De** fragmenten van de ervaring vormen een enorme stap voorwaarts om de inhoud/ervaring creators aan de verpersoonlijkingsberoeps te verbinden die bedrijfsresultaten gebruikend Doel drijven.
 
 * AEM auteurs van inhoudeditors gepersonaliseerde inhoud als Fragmenten van de Ervaring en zijn variaties
 * AEM exporteert Experience Fragment HTML naar Doel &#x200B;
@@ -44,7 +44,7 @@ We hebben nu persoonlijke inhoud in de vorm van voorstellen van AEM in Target. M
 * [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM en Adobe Target met behulp van verouderde Cloud Services](./implementation.md#integrating-aem-target-options)
 
-***Na het uitvoeren van de bovengenoemde integraties, laat het[scenario in detail](./personalization-use-case-1.md)onderzoeken.***
+***Na het uitvoeren van de bovengenoemde integraties, laat het  [scenario in detail](./personalization-use-case-1.md) onderzoeken.***
 
 ## Personalisatie met behulp van Visual Experience Composer
 
@@ -64,7 +64,7 @@ VEC is een van de belangrijkste kenmerken van Adobe Target. Met VEC kunnen marke
 
 * [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Na het uitvoeren van de bovengenoemde integratie, laat het[scenario in detail onderzoeken.](./personalization-use-case-3.md)***
+***Na het uitvoeren van de bovengenoemde integratie, laat het  [scenario in detail onderzoeken.](./personalization-use-case-3.md)***
 
 ## Aanpassing van de volledige webpaginamogelijkheden
 
@@ -82,4 +82,4 @@ Door Adobe Experience Manager te integreren met Adobe Target kunt u uw sitegebru
 
 * [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Na het uitvoeren van de bovengenoemde integratie, laat het[scenario in detail onderzoeken.](./personalization-use-case-2.md)***
+***Na het uitvoeren van de bovengenoemde integratie, laat het  [scenario in detail onderzoeken.](./personalization-use-case-2.md)***
