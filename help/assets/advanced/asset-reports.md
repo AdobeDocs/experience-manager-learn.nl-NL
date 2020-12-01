@@ -23,7 +23,7 @@ AEM Assets biedt een rapportagekader op bedrijfsniveau dat schaalt voor grote op
 
 >[!VIDEO](https://video.tv.adobe.com/v/22140/?quality=12&learn=on)
 
-## Microsoft Excel-indelingen {#excel-formulas}
+## Microsoft Excel-formules {#excel-formulas}
 
 De volgende formules worden gebruikt in de video om de Middelen door de grafiek van de Grootte in Microsoft Excel te produceren.
 
@@ -62,4 +62,4 @@ De volgende formules worden gebruikt in de video om de Middelen door de grafiek 
 
 ## Aanvullende bronnen{#additional-resources}
 
-Alle [middelen Excel-bestand met diagram downloaden](./assets/asset-reports/all-assets.xlsx)
+Download [All Assets Excel File with Chart](./assets/asset-reports/all-assets.xlsx)
