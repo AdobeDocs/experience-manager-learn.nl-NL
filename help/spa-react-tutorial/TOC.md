@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Aan de slag met de AEM SPA Editor en Reageren {#spa-react-tutorial}
+# Aan de slag met de AEM SPA Editor en reageren {#spa-react-tutorial}
 
 + [Overzicht](overview.md)
 + [SPA Editor-project](create-project.md)
