@@ -20,7 +20,7 @@ ht-degree: 2%
 ---
 
 
-# Getting Started with AEM Sites - WKND Tutorial {#introduction}
+# Aan de slag met AEM Sites - WKND-zelfstudie {#introduction}
 
 Welkom bij een meerdelige zelfstudie die is ontworpen voor nieuwe ontwikkelaars in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een AEM site voor een fictieve levensstijl, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, cliënt-zijbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
 
@@ -30,7 +30,7 @@ Het doel van deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe hij 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-De zelfstudie is ontworpen om met **AEM als Cloud Service** te werken en is achterwaarts compatibel met **AEM 6.5+** en **AEM 6.4.2+**. De site wordt geïmplementeerd met:
+De zelfstudie is ontworpen om te werken met **AEM als een Cloud Service** en is achterwaarts compatibel met **AEM 6.5+** en **AEM 6.4.2+**. De site wordt geïmplementeerd met:
 
 * [Maven AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
@@ -41,13 +41,13 @@ De zelfstudie is ontworpen om met **AEM als Cloud Service** te werken en is acht
 
 *Schat 1-2 uur om elk onderdeel van de zelfstudie te doorlopen.*
 
-## Over de zelfstudie {#about-tutorial}
+## Informatie over de zelfstudie {#about-tutorial}
 
 De WKND is een fictief online tijdschrift en blog dat zich concentreert op het nachtleven, activiteiten en gebeurtenissen in verschillende internationale steden.
 
 ### Adobe XD UI-kit
 
-Om deze zelfstudie dichter bij een werkelijk scenario te brengen maakten de getalenteerde ontwerpers van UX de modellen voor de plaats gebruikend [Adobe XD](https://www.adobe.com/products/xd.html). In de loop van de zelfstudie worden verschillende onderdelen van de ontwerpen geïmplementeerd in een volledig voor de auteur geschikte AEM. In het bijzonder dank ik **Lorenzo Buosi** en **Kilian Amendola** die het prachtige ontwerp voor de WKND-site hebben gemaakt.
+Om deze zelfstudie dichter bij een werkelijk scenario te brengen hebben de getalenteerde ontwerpers van UX de modellen voor de plaats gebruikend [Adobe XD](https://www.adobe.com/products/xd.html) gecreeerd. In de loop van de zelfstudie worden verschillende onderdelen van de ontwerpen geïmplementeerd in een volledig voor de auteur geschikte AEM. Met name dankzij **Lorenzo Buosi** en **Kilian Amendola** die het prachtige ontwerp voor de WKND-site hebben gemaakt.
 
 Download de XD UI-kits:
 
@@ -66,47 +66,47 @@ Bovendien heeft elk deel van het leerprogramma zijn eigen tak in GitHub. Een geb
 
 >[!NOTE]
 >
-> Als u met de vorige versie van dit leerprogramma werkte, kunt u nog de [oplossingspakketten](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) en de [code](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) op GitHub vinden.
+> Als u met de vorige versie van dit leerprogramma werkte, kunt u [oplossingspakketten](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) en [code](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) op GitHub nog vinden.
 
 ## Lokale ontwikkelomgeving {#local-dev-environment}
 
 Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Schermafbeeldingen en video worden vastgelegd met de AEM als Cloud Service-SDK die wordt uitgevoerd in een Mac OS-omgeving. Opdrachten en code moeten onafhankelijk zijn van het lokale besturingssysteem, tenzij anders aangegeven.
 
-**Nieuw bij AEM als Cloud Service?** Raadpleeg de [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Nieuw bij AEM als Cloud Service?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-**Nieuw bij AEM 6.5?** Raadpleeg de [volgende handleiding voor het instellen van een lokale ontwikkelomgeving](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+**Nieuw bij AEM 6.5?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ### Vereiste software
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-* [AEM als Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) of [AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/technical-requirements.html) of [AEM 6.4 + SP2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
-* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html) (alleen AEM 6.5+)
-* [Apache Maven](https://maven.apache.org/) (3.3.9 of hoger)
+* [AEM als Cloud Service ](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) SDKor  [AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/technical-requirements.html) of  [AEM 6.4 + SP2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)  (alleen AEM 6.5+)
+* [Apache Maven](https://maven.apache.org/)  (3.3.9 of hoger)
 * [Node.js v10+](https://nodejs.org/en/)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
 
 ### Geïntegreerde ontwikkelomgeving (IDE)
 
-Deze zelfstudie gebruikt [Eclipse](https://www.eclipse.org/) met de [AEM Insteekmodule](https://eclipse.adobe.com/aem/dev-tools/) van het Hulpmiddel van de Ontwikkelaar als winde, nochtans om het even welke winde die steun voor Java en Gemaakt projecten heeft kan worden gebruikt. Het vertrouwen op specifieke eigenschappen van winde in dit leerprogramma is minimaal.
+Deze zelfstudie gebruikt [Eclipse](https://www.eclipse.org/) met [AEM de Insteekmodule van het Hulpmiddel van de Ontwikkelaar](https://eclipse.adobe.com/aem/dev-tools/) als winde, nochtans om het even welke winde die steun voor Java en Gemaakt projecten heeft kan worden gebruikt. Het vertrouwen op specifieke eigenschappen van winde in dit leerprogramma is minimaal.
 
-Voor gedetailleerde stappen voor het gebruiken van Verduistering of andere IDEs zoals de Code [of](https://code.visualstudio.com/) IntelliJ [van](https://www.jetbrains.com/idea/)Visual Studio, [controleer de volgende gids](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+Voor gedetailleerde stappen voor het gebruiken van Verduistering of andere IDEs zoals [Visual Studio Code](https://code.visualstudio.com/) of [IntelliJ](https://www.jetbrains.com/idea/), [controleer de volgende gids](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## Referentiesite {#reference-site}
 
 Een voltooide versie van de WKND-site is ook beschikbaar als referentie: [https://wknd.site/](https://wknd.site/)
 
-De zelfstudie behandelt de belangrijkste ontwikkelingsvaardigheden die een AEM ontwikkelaar nodig heeft, maar bouwt *niet* de volledige site van begin tot eind. De voltooide verwijzingsplaats is een andere grote middel om meer van AEM uit de doosmogelijkheden te onderzoeken en te zien.
+De zelfstudie behandelt de belangrijkste ontwikkelingsvaardigheden die nodig zijn voor een AEM ontwikkelaar, maar *niet* bouwt de volledige site van begin tot eind. De voltooide verwijzingsplaats is een andere grote middel om meer van AEM uit de doosmogelijkheden te onderzoeken en te zien.
 
-Om de recentste code te testen alvorens in het leerprogramma te springen, download en installeer de **[recentste versie van GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
+Om de recentste code te testen alvorens in het leerprogramma te springen, download en installeer **[recentste versie van GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
 
 ### Powered by Adobe Stock
 
-Veel van de afbeeldingen op de WKND Reference-website zijn afkomstig uit [Adobe Stock](https://stock.adobe.com/) en zijn materiaal van derden zoals gedefinieerd in de aanvullende voorwaarden voor demo-middelen op [https://www.adobe.com/legal/terms.html](https://www.adobe.com/legal/terms.html). Als u een Adobe Stock-afbeelding wilt gebruiken voor andere doeleinden dan het weergeven van deze demo-website, zoals het weergeven op een website of in marketingmaterialen, kunt u een licentie aanschaffen op Adobe Stock.
+Veel van de afbeeldingen op de WKND Reference-website zijn afkomstig van [Adobe Stock](https://stock.adobe.com/) en zijn materiaal van derden zoals gedefinieerd in de aanvullende voorwaarden voor demo-middelen op [https://www.adobe.com/legal/terms.html](https://www.adobe.com/legal/terms.html). Als u een Adobe Stock-afbeelding wilt gebruiken voor andere doeleinden dan het weergeven van deze demo-website, zoals het weergeven op een website of in marketingmaterialen, kunt u een licentie aanschaffen op Adobe Stock.
 
 Met Adobe Stock hebt u toegang tot meer dan 140 miljoen hoogwaardige, royaltyvrije afbeeldingen, zoals foto&#39;s, afbeeldingen, video&#39;s en sjablonen om uw creatieve projecten snel te starten.
 
 ## Volgende stappen {#next-steps}
 
-Waar wacht u op?! Begin het leerprogramma door aan het hoofdstuk van de Opstelling [van het](project-setup.md) Project te navigeren en te leren hoe te om een nieuw project van Adobe Experience Manager te produceren gebruikend het Archetype van het Project van de AEM.
+Waar wacht u op?! Begin het leerprogramma door aan [het hoofdstuk van de Opstelling van het Project ](project-setup.md) te navigeren en te leren hoe te om een nieuw project van Adobe Experience Manager te produceren gebruikend het AEM Project Archetype.
