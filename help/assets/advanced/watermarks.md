@@ -26,7 +26,7 @@ AEM als de watermarkeringsmogelijkheden van een Cloud Service, kunnen aangepaste
 
 ## OSGi-configuratie
 
-De volgende OSGi configuratiestub kan worden bijgewerkt en aan het `ui.config` subproject van uw AEM project worden toegevoegd.
+De volgende OSGi configuratiestub kan aan `ui.config` subproject van uw AEM worden bijgewerkt en worden toegevoegd.
 
 `/apps/example/osgiconfig/config.author/com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`
 
