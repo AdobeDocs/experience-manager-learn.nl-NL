@@ -13,7 +13,7 @@ ht-degree: 3%
 ---
 
 
-# Video&#39;s en Tutorials AEM {#foundation}
+# AEM Foundation-video&#39;s en -Tutorials {#foundation}
 
 + [Overzicht](./overview.md)
 + Beheer {#administration}
