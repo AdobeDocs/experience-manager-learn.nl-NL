@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Campagneprofiel maken bij het verzenden van adaptieve formulieren {#creating-campaign-profile-on-adaptive-form-submission}
+# Campagneprofiel maken bij adaptieve formulierverzending {#creating-campaign-profile-on-adaptive-form-submission}
 
 In dit artikel worden de stappen beschreven die nodig zijn om een profiel te maken in Adobe Campaign Standard op basis van een Adaptief formulier-verzending. Bij dit proces wordt gebruikgemaakt van een aangepast verzendmechanisme voor de verzending van het adaptieve formulier.
 
@@ -30,7 +30,7 @@ In deze zelfstudie worden de stappen doorlopen voor het maken van een Campagnepr
 * Een aangepaste verzendactie maken voor de verwerking van Aangepaste formulierverzendingen
 * Roep de createProfile-methode van CampaignService aan
 
-## AEM maken {#create-aem-service}
+## AEM service {#create-aem-service} maken
 
 Maak AEM service om een Adobe Campaign-profiel te maken. Deze AEM dienst zal de geloofsbrieven van Adobe Campaign van de configuratie ophalen OSGI. Zodra de campagnegeloofsbrieven worden verkregen wordt het toegangstoken geproduceerd en het gebruiken van het toegangstoken de vraag van HTTP Post gemaakt om het profiel in Adobe Campaign tot stand te brengen. Hier volgt de code voor het maken van profielen.
 
@@ -249,7 +249,7 @@ return null;
 
 Maak een aangepaste verzendhandler voor het verwerken van het verzenden van adaptieve formulieren. In deze douane verzend manager zullen wij een vraag aan de createProfile methode van CampaignService maken. De methode createProfile accepteert een JSONObject dat het profiel vertegenwoordigt dat moet worden gemaakt.
 
-Als u meer wilt weten over de aangepaste verzendhandler in AEM Forms, volgt u deze [koppeling](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Als u meer wilt weten over de aangepaste verzendhandler in AEM Forms, volgt u deze [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 Hier volgt de code in Aangepast verzenden
 
@@ -264,13 +264,13 @@ profile.addProperty("mobilePhone",request.getParameter("phone"));
 String pkey = addNewProfile.createProfile(profile);
 ```
 
-## De oplossing testen {#test-the-solution}
+## De oplossing {#test-the-solution} testen
 
 Zodra wij de dienst en de douane hebben bepaald voorlegt actie, zijn wij bereid om onze oplossing te testen. Voer de volgende stappen uit om de oplossing te testen
 
 
 * [Controleer of u de hier beschreven stappen hebt uitgevoerd](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Importeer Adaptief formulier en Aangepast verzendhandler met pakketbeheer](assets/create-acs-profile-on-af-submission.zip). Dit pakket bevat adaptief formulier dat is geconfigureerd voor verzending naar aangepaste verzendactie.
-* Preview the [form](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* Voorvertoning van het [formulier](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Alle velden invullen en verzenden
 * Een nieuw profiel zal in uw instantie ACS worden gecreeerd
