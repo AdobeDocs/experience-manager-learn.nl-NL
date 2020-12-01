@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Verbonden elementen gebruiken met AEM Assets{#using-connected-assets-with-aem-assets}
+# Aangesloten elementen gebruiken met AEM Assets{#using-connected-assets-with-aem-assets}
 
 Met de functie Connected Assets kan een AEM Sites-auteur naadloos digitale elementen delen die worden gehost op een andere AEM.
 
@@ -28,4 +28,4 @@ Met de functie Connected Assets kan een AEM Sites-auteur naadloos digitale eleme
 * 03:30 — Een afbeelding uit de aangesloten elementen gebruiken
 * 04:42 — Beheerdersconfiguraties om de functie Verbonden elementen in te schakelen
 
-Controleer de [ondersteunde implementaties voor Connected Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) om te zien of uw AEM ondersteuning biedt voor Connected Assets.
+Raadpleeg de [ondersteunde implementaties voor Connected Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) om te begrijpen of uw AEM implementatie Connected Assets kan ondersteunen.
