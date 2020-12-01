@@ -30,14 +30,14 @@ Aangepaste slimme tags of Uitgebreide slimme tags kunnen vervolgens worden gebru
 >[!NOTE]
 > Aangepaste slimme tags voor afbeeldingen worden automatisch ingesteld voor AEM als Cloud Service.
 
-Voor aangepaste slimme tags voor afbeeldingen moeten [slimme tags zijn ingesteld](./image-smart-tags.md#set-up).
+Voor aangepaste slimme tags voor afbeeldingen zijn [slimme tags vereist voor het instellen van afbeeldingen](./image-smart-tags.md#set-up).
 
-Leer hoe u de training voor slimme tags in AEM Assets configureert met behulp van de Smart Content Service en Adobe I/O. Aangepaste slimme tags voor afbeeldingen
+Leer hoe u de training voor slimme tags in AEM Assets configureert met de Smart Content Service en Adobe I/O. Aangepaste slimme tags voor afbeeldingen
 
 >[!VIDEO](https://video.tv.adobe.com/v/23405/?quality=12&learn=on)
 
 ## Aanvullende bronnen
 
-* AEM 6.4 vereist het [nieuwste Service Pack](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 vereist [nieuwste Service Pack](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
 
 
