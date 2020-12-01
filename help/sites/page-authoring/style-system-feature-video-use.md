@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Het stijlsysteem gebruiken {#using-the-style-system-with-aem-sites}
+# Het gebruiken van het Systeem van de Stijl {#using-the-style-system-with-aem-sites}
 
 Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
 
@@ -28,7 +28,7 @@ Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van compo
 
 Deze video laat zien hoe het Stijlsysteem kan worden gebruikt om sterk verschillende visuele weergaven te maken voor één component, met alleen CSS.
 
-De weergegeven stijlen worden geleverd door de [WKND-toepassing](https://github.com/adobe/aem-guides-wknd). Deze stijlen worden gedefinieerd als CSS en hoeven niet te worden gewijzigd in de backendlogica van de component, het HTML-script of het Sling Model.
+De getoonde stijlen worden verstrekt door [WKND toepassing](https://github.com/adobe/aem-guides-wknd). Deze stijlen worden gedefinieerd als CSS en hoeven niet te worden gewijzigd in de backendlogica van de component, het HTML-script of het Sling Model.
 
 ## Aanvullende bronnen {#additional-resources}
 
