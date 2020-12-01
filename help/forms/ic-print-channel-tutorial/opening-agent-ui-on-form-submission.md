@@ -61,11 +61,11 @@ Deze mogelijkheid testen op uw server
 
 * [Importeer en installeer de aan dit artikel gerelateerde elementen met gebruik van pakketbeheer.](assets/launch-agent-ui.zip)
 * [Aanmelden bij configMgr](http://localhost:4502/system/console/configMgr)
-* Zoeken naar _Adobe Granite CSRF-filter_
-* Voeg _/inhoud/getprintkanaal_ toe aan de uitgesloten paden
+* Zoeken naar _Adobe granite CSRF-filter_
+* _/content/getprintchannel_ toevoegen in de uitgesloten paden
 * Sla uw wijzigingen op.
 * [Open POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Zorg ervoor dat de tekenreeks die aan FormFieldRequestParameter is doorgegeven, geldig documentId is.(regel 19).
-* [Open de webpagina](http://localhost:4502/content/OpenPrintChannel.html) , voer het accountnummer in en verzend het formulier.
+* [Open de ](http://localhost:4502/content/OpenPrintChannel.html) webpagina, voer het accountnummer in en verzend het formulier.
 * De interface van de agent UI zou met de gegevens moeten openen pre-bevolkt specifiek voor het rekeningsaantal ingegaan in de vorm.
 
 >[!NOTE]
