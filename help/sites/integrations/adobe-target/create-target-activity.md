@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Target-activiteit maken met Experience Fragment-aanbiedingen {#target-activity-experience-fragment}
+# Adobe Target-activiteit maken met behulp van Experience Fragment-aanbiedingen {#target-activity-experience-fragment}
 
 Leer hoe u een Adobe Target-activiteit maakt en test met AEM Experience Fragment-aanbiedingen.
 
