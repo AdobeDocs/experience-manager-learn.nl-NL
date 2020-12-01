@@ -63,7 +63,7 @@ ht-degree: 7%
 + Delen en distributie{#sharing}
    + [Middelen downloaden](./sharing/download.md)
    + [Brand Portal](./sharing/brand-portal.md)
-   + Delen van middelen{#assets-share}
+   + Asset Share{#assets-share}
       + [Commentaar voor het delen van bedrijfsmiddelen](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM](./sharing/asset-share-commons-technical-video-setup.md)
       + [Commentaar voor het delen van elementen](./sharing/asset-share-commons-feature-video-theming.md)
@@ -108,7 +108,7 @@ ht-degree: 7%
    + [Smart Translation Search](translation/smart-translation-search-feature-video-use.md)
    + [Zoeken naar slimme vertaling instellen](translation/smart-translation-search-technical-video-setup.md)
 
-+ Elementsjablonen{#asset-templates}
++ Asset Templates{#asset-templates}
    + [Elementsjablonen](asset-templates/asset-templates-tutorial-understand.md)
    + [Elementsjablonen gebruiken](asset-templates/asset-templates-feature-video-use.md)
    + [Elementsjablonen instellen](asset-templates/asset-templates-technical-video-setup.md)
