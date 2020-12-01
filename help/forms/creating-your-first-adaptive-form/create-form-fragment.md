@@ -26,9 +26,9 @@ Een fragment is een herbruikbaar onderdeel van een formulier. Een fragment kan b
 
 
 
-Raadpleeg de documentatie bij [de](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) aangepaste formuliersjabloon voor meer informatie
+Raadpleeg de documentatie van [adaptieve formuliersjablonen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) voor meer informatie
 
-Indien nodig kunt u het fragment [met de details van de echtgenoot downloaden ](assets/spouse-details-fragment.zip) en naar AEM importeren via [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+Indien nodig kunt u het [Spouse-details-fragment ](assets/spouse-details-fragment.zip) downloaden en in AEM importeren met de [pakketmanager](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
