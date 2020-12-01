@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Clientbibliotheek maken
 
-Maak een [clientbibliotheek](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) die de code bevat om de methode `doAjaxSubmitWithFileAttachment` van de `guideBridge` API aan te roepen op de klikgebeurtenis van de knop die wordt aangegeven door de **opslagknop** voor de CSS-klasse.  We geven de adaptieve formuliergegevens door, `fileMap`en het `mobileNumber` naar het eindpunt luisteren op `**/bin/storeafdatawithattachments`
+Maak [client lib](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) die de code bevat om de methode `doAjaxSubmitWithFileAttachment` van de `guideBridge`-API aan te roepen op de klikgebeurtenis van de knop die wordt aangeduid door de CSS-klasse **savebutton**.  We geven de adaptieve formuliergegevens `fileMap` en `mobileNumber` door aan het eindpunt dat luistert op `**/bin/storeafdatawithattachments`
 
 Nadat de formuliergegevens zijn opgeslagen, wordt een unieke toepassings-id gegenereerd en in een dialoogvenster aan de gebruiker getoond. Als de gebruiker het dialoogvenster sluit, wordt hij naar het formulier geleid waarmee hij het opgeslagen adaptieve formulier kan ophalen met de unieke toepassings-id.
 
@@ -67,6 +67,6 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> We hebben de javascript-bibliotheek [van](http://bootboxjs.com/examples.html) bootbox gebruikt om het dialoogvenster weer te geven
+> We hebben [bootbox javascript library](http://bootboxjs.com/examples.html) gebruikt om het dialoogvenster weer te geven
 
-De clientbibliotheken die in dit voorbeeld worden gebruikt, kunnen hier worden [gedownload](assets/client-libraries.zip)
+De clientbibliotheken die in dit voorbeeld worden gebruikt, kunnen [hier worden gedownload](assets/client-libraries.zip)
