@@ -38,21 +38,21 @@ In deze video wordt het instellen van de pijplijn voor het programma in Cloud Ma
 
 ## Een mislukte uitvoering van een pijpleiding
 
-In deze video wordt de uitvoering van de CI/CD Pipeline besproken met behulp van code die de vereiste kwaliteitscontroles van Cloud Manager mislukt, waarbij de **[!DNL yellow]** opslagplaats wordt gebruikt.
+In deze video wordt de uitvoering van de CI/CD Pipeline besproken met behulp van code die de vereiste kwaliteitscontroles van Cloud Manager mislukt. Hierbij wordt de opslaglocatie **[!DNL yellow]** gebruikt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12&learn=on)
 
 ## Een geslaagde pijpleiding uitvoeren
 
-In deze video wordt de succesvolle uitvoering van de CI/CD Pipeline onderzocht met behulp van code die de vereiste kwaliteitscontroles van Cloud Manager doorgeeft, waarbij de **[!DNL master]** opslagplaats wordt gebruikt.
+In deze video wordt de succesvolle uitvoering van de CI/CD Pipeline onderzocht met behulp van code die de vereiste kwaliteitscontroles van Cloud Manager doorgeeft, met behulp van de opbergvak **[!DNL master]**.
 
-Deze video raakt ook op de [!UICONTROL Activity] console in Cloud Manager, die re-entry in actieve uitvoeringen, of overzicht van voltooide of ontbroken uitvoeringen toestaat.
+Deze video raakt ook op de [!UICONTROL Activity]-console in Cloud Manager, die hertoegang tot actieve uitvoeringen toestaat, of revisie van voltooide of mislukte uitvoeringen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
 
 ## Ondersteunende materialen
 
 * [Gebruikershandleiding voor Cloud Manager](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)
-* [Regels voor [!DNL SonarQube] het scannen van code downloaden](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
+* [Regels voor  [!DNL SonarQube] het scannen van code downloaden](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
    * *XLSX beschikbaar onder aan de gekoppelde sectie*
 * [[!DNL SonarQube] Index met Java-regels](https://rules.sonarsource.com/java/)
