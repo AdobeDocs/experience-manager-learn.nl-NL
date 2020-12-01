@@ -25,47 +25,47 @@ In dit hoofdstuk wordt beschreven hoe u modellen van inhoudsfragmenten kunt insc
 
 ## Modellen van inhoudsfragmenten inschakelen
 
-Modellen van inhoudsfragmenten **moeten** via **[AEM zijn ingeschakeld [!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)**.
+Content Fragment Models **must** moet via **[AEM [!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)** worden ingeschakeld.
 
-Als Modellen van het Fragment van de Inhoud **niet** voor een configuratie worden toegelaten, zal de **[!UICONTROL Create]>[!UICONTROL Content Fragment]** knoop niet voor de relevante AEM configuratie verschijnen.
+Als de Modellen van het Fragment van de Inhoud **niet** voor een configuratie worden toegelaten, **[!UICONTROL Create]>[!UICONTROL Content Fragment]** zal niet voor de relevante AEM configuratie verschijnen.
 
 >[!NOTE]
 >
->AEM configuraties vertegenwoordigen een reeks [context-bewuste huurdersconfiguraties](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) die onder worden opgeslagen `/conf`. AEM configuraties correleren doorgaans met een bepaalde website die wordt beheerd in AEM Sites of een bedrijfseenheid die verantwoordelijk is voor een subset met inhoud (elementen, pagina&#39;s, enz.) in AEM.
+>AEM configuraties vertegenwoordigen een reeks van [context-bewuste huurdersconfiguraties](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) die onder `/conf` worden opgeslagen. AEM configuraties correleren doorgaans met een bepaalde website die wordt beheerd in AEM Sites of een bedrijfseenheid die verantwoordelijk is voor een subset met inhoud (elementen, pagina&#39;s, enz.) in AEM.
 >
->Opdat een configuratie een inhoudshiërarchie beïnvloedt, moet de configuratie via het `cq:conf` bezit op die inhoudshiërarchie worden van verwijzingen voorzien. (Dit wordt bereikt voor de [!DNL WKND Mobile] configuratie in **Stap 5** hieronder).
+>Om een configuratie een inhoudshiërarchie te beïnvloeden, moet de configuratie via het `cq:conf` bezit op die inhoudshiërarchie worden van verwijzingen voorzien. (Dit wordt bereikt voor de [!DNL WKND Mobile] configuratie in **Stap 5** hieronder).
 >
->Wanneer de `global` configuratie wordt gebruikt, is de configuratie op alle inhoud van toepassing, en te hoeven niet `cq:conf` worden geplaatst.
+>Wanneer de `global` configuratie wordt gebruikt, is de configuratie op alle inhoud van toepassing, en `cq:conf` te hoeven niet worden geplaatst.
 >
 >Raadpleeg de [[!UICONTROL Configuration Browser] documentatie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) voor meer informatie.
 
 1. Meld u aan bij AEM-auteur als een gebruiker met de juiste machtigingen om de relevante configuratie te wijzigen.
-   * Voor deze zelfstudie kan de gebruiker van de **beheerder** worden gebruikt.
+   * Voor deze zelfstudie kan de **admin**-gebruiker worden gebruikt.
 1. Ga naar **[!UICONTROL Tool]> [!UICONTROL General] >[!UICONTROL Configuration Browser]**
-1. Tik op het **mappictogram** naast **[!DNL WKND Mobile]** het pictogram en tik vervolgens linksboven op de **[!UICONTROL Edit]knop** .
+1. Tik op het **mappictogram** naast **[!DNL WKND Mobile]** om te selecteren en tik vervolgens op de **[!UICONTROL Edit]knop** linksboven.
 1. Selecteer **[!UICONTROL Content Fragment Models]** en tik **[!UICONTROL Save & Close]** in de rechterbovenhoek.
 
-   Dit laat van Modellen van het Fragment van de Inhoud op de inhoudbomen van de Omslag van Activa toe die de toegepaste [!DNL WKND Mobile] configuratie hebben.
+   Dit laat van Modellen van het Fragment van de Inhoud op de inhoudbomen van de Omslag van Activa toe die de [!DNL WKND Mobile] configuratie hebben toegepast.
 
    >[!NOTE]
    >
-   >Deze configuratieverandering is niet omkeerbaar van het [!UICONTROL AEM Configuration] Web UI. Deze configuratie ongedaan maken:
+   >Deze configuratieverandering is niet omkeerbaar van [!UICONTROL AEM Configuration] Web UI. Deze configuratie ongedaan maken:
    >    
-   >    1. Open [CRXDE Lite](http://localhost:4502/crx/de)
+   >    1. [CRXDE Lite](http://localhost:4502/crx/de) openen
    >    1. Ga naar `/conf/wknd-mobile/settings/dam/cfm`
-   >    1. Het `models` knooppunt verwijderen
+   >    1. Het knooppunt `models` verwijderen
 
    >    
    >Eventuele bestaande modellen van inhoudsfragmenten die in deze configuratie zijn gemaakt, worden verwijderd en de bijbehorende definities worden opgeslagen onder `/conf/wknd-mobile/settings/dam/cfm/models`.
 
-1. Pas de **[!DNL WKND Mobile]** configuratie toe op de **[!DNL WKND Mobile]middelenmap** om toe te staan dat inhoudsfragmenten uit modellen van inhoudsfragmenten worden gemaakt in de maphiërarchie Elementen:
+1. Pas de **[!DNL WKND Mobile]** configuratie op **[!DNL WKND Mobile]de Omslag van Activa** toe om Inhoudsfragmenten van de Modellen van het Fragment van de Inhoud toe te laten om binnen die de omslaghiërarchie van Middelen worden gecreeerd:
 
    1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Assets] >[!UICONTROL Files]**
-   1. Selecteer de **[!UICONTROL WKND Mobile]map**
-   1. Tik op de **[!UICONTROL Properties]** knop in de bovenste actiebalk om deze te openen [!UICONTROL Folder Properties]
-   1. Tik in [!UICONTROL Folder Properties]op de **[!UICONTROL Cloud Services]** tab
-   1. Controleren of het **[!UICONTROL Cloud Configuration]** veld is ingesteld op **/conf/wknd-mobile**
-   1. Tik **[!UICONTROL Save & Close]** rechtsboven om de wijzigingen aan te houden
+   1. Selecteer de map **[!UICONTROL WKND Mobile]**
+   1. Tik op de knop **[!UICONTROL Properties]** in de bovenste actiebalk om [!UICONTROL Folder Properties] te openen
+   1. Tik in [!UICONTROL Folder Properties] op de tab **[!UICONTROL Cloud Services]**
+   1. Controleer of het veld **[!UICONTROL Cloud Configuration]** is ingesteld op **/conf/wknd-mobile**
+   1. Tik **[!UICONTROL Save & Close]** in de rechterbovenhoek om de wijzigingen aan te houden
 
 >[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
 
@@ -82,24 +82,24 @@ Met de toewijzing kunnen we inhoudsfragment definiëren dat wordt gebruikt om de
 ## Het model van het inhoudsfragment maken
 
 1. Ga naar **[!UICONTROL Tools]> [!UICONTROL Assets] >[!UICONTROL Content Fragment Models]**.
-1. Tik op de **[!DNL WKND Mobile]** map die u wilt openen.
-1. Tik **[!UICONTROL Create]** om de ontwerpwizard Inhoudsfragmentmodel te openen.
-1. Voer **[!DNL Event]** de velden in als **[!UICONTROL Model Title]** (beschrijving is optioneel) *en tik op* **[!UICONTROL Create]** om op te slaan.
+1. Tik op de map **[!DNL WKND Mobile]** om deze te openen.
+1. Tik op **[!UICONTROL Create]** om de wizard voor het maken van het inhoudsfragmentmodel te openen.
+1. Typ **[!DNL Event]** als **[!UICONTROL Model Title]** *(beschrijving is optioneel)* en tik **[!UICONTROL Create]** om op te slaan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
 
 ## De structuur van het inhoudsfragmentmodel definiëren
 
 1. Ga naar **[!UICONTROL Tools]> [!UICONTROL Assets] > [!UICONTROL Content Fragment Models] >[!DNL WKND]**.
-1. Selecteer het **[!DNL Event]** **[!UICONTROL Edit]** inhoudsfragmentmodel en tik in de bovenste actiebalk.
-1. Sleep de **[!UICONTROL Data Types]tab** aan de rechterkant naar de linkerdropzone om het **[!UICONTROL Single line text input]** **[!DNL Question]** veld te definiëren.
-1. Controleer of het nieuwe bestand links **[!UICONTROL Single line text input]** is geselecteerd en of het **[!UICONTROL Properties]tabblad** rechts is geselecteerd. Vul de velden Eigenschappen als volgt in:
+1. Selecteer **[!DNL Event]** Inhoudsfragmentmodel en tik **[!UICONTROL Edit]** in de bovenste actiebalk.
+1. Van **[!UICONTROL Data Types]tabel** op het recht, sleep **[!UICONTROL Single line text input]** in de linkerdrop-zone om het **[!DNL Question]** gebied te bepalen.
+1. Zorg ervoor dat de nieuwe **[!UICONTROL Single line text input]** links is geselecteerd en dat de **[!UICONTROL Properties]tab** rechts is geselecteerd. Vul de velden Eigenschappen als volgt in:
 
    * [!UICONTROL Render As] : `textfield`
-   * [!UICONTROL Field Label] : `Event Title`
-   * [!UICONTROL Property Name] : `eventTitle`
+   * [!UICONTROL Field Label] :  `Event Title`
+   * [!UICONTROL Property Name] :  `eventTitle`
    * [!UICONTROL Max Length] : 25
-   * [!UICONTROL Required] : `Yes`
+   * [!UICONTROL Required] :  `Yes`
 
 Herhaal deze stappen met de invoerdefinities die hieronder zijn gedefinieerd om de rest van het gebeurtenisinhoudsfragmentmodel te maken.
 
@@ -109,64 +109,64 @@ Herhaal deze stappen met de invoerdefinities die hieronder zijn gedefinieerd om 
 
 ### Gebeurtenisbeschrijving
 
-* [!UICONTROL Data Type] : `Multi-line text`
-* [!UICONTROL Field Label] : `Event Description`
-* [!UICONTROL Property Name] : `eventDescription`
-* [!UICONTROL Default Type] : `Rich text`
+* [!UICONTROL Data Type] :  `Multi-line text`
+* [!UICONTROL Field Label] :  `Event Description`
+* [!UICONTROL Property Name] :  `eventDescription`
+* [!UICONTROL Default Type] :  `Rich text`
 
 ### Datum en tijd van gebeurtenis
 
-* [!UICONTROL Data Type] : `Date and time`
-* [!UICONTROL Field Label] : `Event Date and Time`
-* [!UICONTROL Property Name] : `eventDateAndTime`
-* [!UICONTROL Required] : `Yes`
+* [!UICONTROL Data Type] :  `Date and time`
+* [!UICONTROL Field Label] :  `Event Date and Time`
+* [!UICONTROL Property Name] :  `eventDateAndTime`
+* [!UICONTROL Required] :  `Yes`
 
 ### Type gebeurtenis
 
-* [!UICONTROL Data Type] : `Enumeration`
-* [!UICONTROL Field Label] : `Event Type`
-* [!UICONTROL Property Name] : `eventType`
-* [!UICONTROL Options] : `Art,Music,Performance,Photography`
+* [!UICONTROL Data Type] :  `Enumeration`
+* [!UICONTROL Field Label] :  `Event Type`
+* [!UICONTROL Property Name] :  `eventType`
+* [!UICONTROL Options] :  `Art,Music,Performance,Photography`
 
 ### Ticketprijs
 
-* [!UICONTROL Data Type] : `Number`
-* [!UICONTROL Render As] : `numberfield`
-* [!UICONTROL Field Label] : `Ticket Price`
-* [!UICONTROL Property Name] : `eventPrice`
-* [!UICONTROL Type] : `Integer`
-* [!UICONTROL Required] : `Yes`
+* [!UICONTROL Data Type] :  `Number`
+* [!UICONTROL Render As] :  `numberfield`
+* [!UICONTROL Field Label] :  `Ticket Price`
+* [!UICONTROL Property Name] :  `eventPrice`
+* [!UICONTROL Type] :  `Integer`
+* [!UICONTROL Required] :  `Yes`
 
 ### Afbeelding van gebeurtenis
 
-* [!UICONTROL Data Type] : `Content Reference`
-* [!UICONTROL Render As] : `contentreference`
-* [!UICONTROL Field Label] : `Event Image`
-* [!UICONTROL Property Name] : `eventImage`
-* [!UICONTROL Root Path] : `/content/dam/wknd-mobile/images`
-* [!UICONTROL Required] : `Yes`
+* [!UICONTROL Data Type] :  `Content Reference`
+* [!UICONTROL Render As] :  `contentreference`
+* [!UICONTROL Field Label] :  `Event Image`
+* [!UICONTROL Property Name] :  `eventImage`
+* [!UICONTROL Root Path] :  `/content/dam/wknd-mobile/images`
+* [!UICONTROL Required] :  `Yes`
 
 ### Naam van doel
 
-* [!UICONTROL Data Type] : `Single-line text`
-* [!UICONTROL Render As] : `textfield`
-* [!UICONTROL Field Label] : `Venue Name`
-* [!UICONTROL Property Name] : `venueName`
+* [!UICONTROL Data Type] :  `Single-line text`
+* [!UICONTROL Render As] :  `textfield`
+* [!UICONTROL Field Label] :  `Venue Name`
+* [!UICONTROL Property Name] :  `venueName`
 * [!UICONTROL Max Length] : 20
-* [!UICONTROL Required] : `Yes`
+* [!UICONTROL Required] :  `Yes`
 
 ### Plaats van bestemming
 
-* [!UICONTROL Data Type] : `Enumeration`
-* [!UICONTROL Field Label] : `Venue City`
-* [!UICONTROL Property Name] : `venueCity`
-* [!UICONTROL Options] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
+* [!UICONTROL Data Type] :  `Enumeration`
+* [!UICONTROL Field Label] :  `Venue City`
+* [!UICONTROL Property Name] :  `venueCity`
+* [!UICONTROL Options] :  `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
 >[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
 
 >[!NOTE]
 >
->In de **[!UICONTROL Property Name]** code wordt de naam van de JCR-eigenschap **zowel** aangegeven waar deze waarde wordt opgeslagen als de sleutel in het JSON-bestand. Dit moet een semantische naam zijn die niet wordt gewijzigd tijdens de levensduur van het inhoudsfragmentmodel.
+>De **[!UICONTROL Property Name]** geeft de naam van de JCR-eigenschap **both** aan waar deze waarde wordt opgeslagen, evenals de sleutel in het JSON-bestand. Dit moet een semantische naam zijn die niet wordt gewijzigd tijdens de levensduur van het inhoudsfragmentmodel.
 
 Nadat u het inhoudsfragmentmodel hebt gemaakt, krijgt u een definitie die er als volgt uitziet:
 
@@ -175,6 +175,6 @@ Nadat u het inhoudsfragmentmodel hebt gemaakt, krijgt u een definitie die er als
 
 ## Volgende stap
 
-U kunt desgewenst het inhoudspakket [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) op AEM Author installeren via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit gedeelte van de zelfstudie worden beschreven.
+Installeer desgewenst het inhoudspakket [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) op AEM Author via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit gedeelte van de zelfstudie worden beschreven.
 
 * [Hoofdstuk 3 - Inhoudsfragmenten voor gebeurtenissen ontwerpen](./chapter-3.md)
