@@ -13,7 +13,7 @@ discoiquuid: 9e666741-0f76-43c9-ab79-1ef149884686
 translation-type: tm+mt
 source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Adobe Experience Manager SSL opstellingstovenaar om het gemakkelijker te maken o
 
 ## Persoonlijke sleutel en zelfondertekende certificaatdownload
 
-Het volgende ZIP-bestand bevat [!DNL DER] en [!DNL CRT] bestanden die vereist zijn voor het instellen van AEM SSL op localhost en die alleen bedoeld zijn voor lokale ontwikkelingsdoeleinden.
+Het volgende ZIP-bestand bevat [!DNL DER]- en [!DNL CRT]-bestanden die vereist zijn voor het instellen van AEM SSL op localhost en die alleen bedoeld zijn voor lokale ontwikkelingsdoeleinden.
 
-De [!DNL DER] bestanden en [!DNL CERT] bestanden worden voor het gemak geleverd en gegenereerd met de stappen die worden beschreven in de sectie Persoonlijke sleutel genereren en Zelfondertekend certificaat hieronder.
+De [!DNL DER] en [!DNL CERT] dossiers worden verstrekt voor gemak en geproduceerd gebruikend de stappen die in de Generate Privé Sleutel en Zelfondertekende sectie van het Certificaat hieronder worden geschetst.
 
 Indien nodig, is de uitdrukking van de certificaatpas **admin**.
 
@@ -45,7 +45,7 @@ localhost - persoonlijke sleutel en zelfondertekend certificate.zip (verloopt in
 
 ## Persoonlijke sleutel en zelfondertekende certificaatgeneratie
 
-In de video hierboven worden de installatie en configuratie van SSL op een AEM auteurinstantie met zelfondertekende certificaten weergegeven. Met de onderstaande opdrachten met [[!DNL OpenSSL]](https://www.openssl.org/) kunt u een persoonlijke sleutel en certificaat genereren voor gebruik in stap 2 van de wizard.
+In de video hierboven worden de installatie en configuratie van SSL op een AEM auteurinstantie met zelfondertekende certificaten weergegeven. Met de onderstaande opdrachten met behulp van [[!DNL OpenSSL]](https://www.openssl.org/) kunt u een persoonlijke sleutel en certificaat genereren voor gebruik in stap 2 van de wizard.
 
 ```shell
 ### Create Private Key
