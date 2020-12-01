@@ -21,7 +21,7 @@ ht-degree: 1%
 ---
 
 
-# Inleiding tot Thema&#39;s in Commons voor het Aandeel van Activa {#asset-share-commons-theme}
+# Inleiding tot Thema in Commons van het Aandeel van Activa {#asset-share-commons-theme}
 
 Een korte inleiding op het thema in Asset Share Commons. De video doorloopt het proces voor het maken van een nieuw thema met een aangepast kleurenschema.
 
@@ -80,7 +80,7 @@ In deze video wordt een nieuw thema gemaakt op basis van het donkere thema Commo
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Thema [aangepaste clientbibliotheek downloaden](assets/asc-theme-demo.zip)
+[Aangepast clientbibliotheekthema](assets/asc-theme-demo.zip) downloaden
 
 ## Aanvullende bronnen{#additional-resources}
 
