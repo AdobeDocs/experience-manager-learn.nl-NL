@@ -26,7 +26,7 @@ Bij het verzenden van een formulier stelt u in dat de formulierbijlagen één PD
 
 ## Creeer component OSGi die WorkflowProcess interface uitvoert
 
-Maak een OSGi-component die de [com.adobe.granite.workflow.exec.WorkflowProcess-interface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html)implementeert. De code in deze component kan aan de component van de processtap in het AEM werkschema worden geassocieerd. De methode execute van de interface com.adobe.granite.workflow.exec.WorkflowProcess wordt geïmplementeerd in deze component.
+Creeer een component OSGi die [com.adobe.granite.workflow.exec.WorkflowProcess interface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html) uitvoert. De code in deze component kan aan de component van de processtap in het AEM werkschema worden geassocieerd. De methode execute van de interface com.adobe.granite.workflow.exec.WorkflowProcess wordt geïmplementeerd in deze component.
 
 Wanneer een adaptief formulier wordt verzonden om een AEM workflow te activeren, worden de verzonden gegevens opgeslagen in het opgegeven bestand onder de payload-map. Dit is bijvoorbeeld het ingediende gegevensbestand. We moeten de bijlagen samenstellen die in de tag idcard en bankstatements zijn gespecificeerd.
 ![ingediende gegevens](assets/submitted-data.JPG).
@@ -45,7 +45,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### DDX maken van de bijlagenamen
 
-Vervolgens moet u XML-document ( [Document Description XML, DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) maken dat door de Assembler-service wordt gebruikt om documenten samen te stellen. Het volgende is DDX die van de procesargumenten werd gecreeerd. De PDF-bronelementen bevinden zich in de juiste volgorde zoals is opgegeven in de procesargumenten.
+Vervolgens moeten we [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf)-document maken dat door de Assembler-service wordt gebruikt om documenten samen te stellen. Het volgende is DDX die van de procesargumenten werd gecreeerd. De PDF-bronelementen bevinden zich in de juiste volgorde zoals is opgegeven in de procesargumenten.
 
 ![ddx-xml](assets/ddx-xml.JPG)
 
@@ -134,12 +134,12 @@ Hier volgt de structuur van de payload-map nadat de formulierbijlagen zijn samen
 
 ### Om deze functie te laten werken op uw AEM
 
-* Download het formulier [](assets/assemble-form-attachments-af.zip) Formulierbijlagen samenstellen naar uw lokale systeem.
-* Importeer het formulier van[de pagina Formulieren en documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) .
-* Download de [workflow](assets/assemble-form-attachments.zip) en importeer deze in AEM met pakketbeheer.
-* De [aangepaste bundel downloaden](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Download [Formulierbijlagen samenstellen Formulier](assets/assemble-form-attachments-af.zip) naar uw lokale systeem.
+* Importeer het formulier van de pagina[Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Download [workflow](assets/assemble-form-attachments.zip) en importeer in AEM met pakketbeheer.
+* Download de [aangepaste bundel](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * De bundel implementeren en starten met de [webconsole](http://localhost:4502/system/console/bundles)
-* Wijs de browser aan het formulier [Bijlagen samenstellen](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
+* Wijs uw browser aan [Formulier voor bijlagen samenstellen](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Voeg een bijlage in het ID-document en een paar pdf-documenten toe aan de sectie met bankafschriften
 * Het formulier verzenden om de workflow te activeren
 * Controleer de [payload-map van de workflow in de crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) voor de geassembleerde pdf
