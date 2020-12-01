@@ -22,14 +22,14 @@ De volgende stap bestaat uit het maken van een schema op basis van het Acrobat-f
 
 1. Aanmelden bij [CRXDE Lite](http://localhost:4502/crx/de)
 2. Openen naar het bestand `/apps/AemFormsSamples/components/createxsd/POST.jsp`
-3. Wijzig de map `saveLocation` in een geschikte map op de vaste schijf. Zorg ervoor dat de map waarin u opslaat, al is gemaakt.
-4. Wijs in uw browser naar de XSD [-pagina](http://localhost:4502/content/DocumentServices/CreateXsd.html) maken die wordt gehost op AEM.
+3. Wijzig `saveLocation` in een geschikte map op de vaste schijf. Zorg ervoor dat de map waarin u opslaat, al is gemaakt.
+4. Wijs uw browser aan [XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) pagina creëren die op AEM wordt ontvangen.
 5. Sleep de Acroform.
 6. Controleer de map die in Stap 3 is opgegeven. Het schemabestand wordt opgeslagen op deze locatie.
 
 ## Acroform uploaden
 
-Deze demo werkt alleen op uw systeem als u een map maakt met de naam `acroforms` AEM Assets. Upload het formulier naar deze `acroforms` map.
+Deze demo werkt alleen op uw systeem als u in AEM Assets een map met de naam `acroforms` maakt. Upload het formulier Acroform naar deze `acroforms`-map.
 
 >[!NOTE]
 >
