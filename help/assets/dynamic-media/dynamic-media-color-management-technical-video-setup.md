@@ -29,11 +29,11 @@ In deze video bekijken we Dynamic Media Color Management en hoe u deze kunt gebr
 
 >[!NOTE]
 >
->[Schakel Dynamische media](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) in AEM in om deze functie te gebruiken.
+>[Schakel Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Mediain AEM in om deze functie te gebruiken.
 
 Deze functie is beschikbaar voor AEM 6.1- en 6.2-versies als een Feature Pack.
 
-## XML-sjabloon voor het configuratieknooppunt voor kleurbeheer {#xml-template-for-the-color-management-configuration-node}
+## XML-sjabloon voor het kleurbeheerconfiguratieknooppunt {#xml-template-for-the-color-management-configuration-node}
 
 Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit malplaatje van XML kan in het AEM ontwikkelingsproject worden gekopieerd en met de project-aangewezen configuraties worden gevormd.
 
@@ -91,7 +91,7 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 />
 ```
 
-### Lijst met standaardkleurprofielen voor Adobe wordt hieronder weergegeven {#list-of-default-adobe-color-profiles-are-listed-below}
+### Lijst met standaardkleurprofielen voor Adobe wordt onder {#list-of-default-adobe-color-profiles-are-listed-below} weergegeven
 
 | Naam | Kleurruimte | Beschrijving |
 | ------------------- | ---------- | ------------------------------------- |
@@ -115,7 +115,7 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | ProPhoto RGB |
 | PS4Default | CMYK | Photoshop 4 standaard CMYK |
-| PS5Default | CMYK | Photoshop 5 standaard CMYK |
+| PS5Standaard | CMYK | Photoshop 5 standaard CMYK |
 | SheetfedCoated | CMYK | U.S. Sheetfed Coated v2 |
 | SheetfedUncoated | CMYK | U.S. Sheetfed Uncoated v2 |
 | SMPTE | RGB | SMPTE-C |
