@@ -20,19 +20,19 @@ ht-degree: 0%
 ---
 
 
-# Het produceren van het Token van het Web JSON en het Token van de Toegang {#generating-json-web-token-and-access-token}
+# Genereren van JSON-webtoken en toegangstoken {#generating-json-web-token-and-access-token}
 
 In dit artikel wordt uitgelegd welke code nodig is om JWT en Access Token te genereren die nodig zijn voor het uitvoeren van REST-oproepen naar Adobe Campaign Standard
 
-## JSON-webtoken genereren {#generate-json-web-token}
+## JSON-webtoken {#generate-json-web-token} genereren
 
-De eerste stap bij het gebruik van de Adobe Campaign API is het genereren van JWT. Er zijn talrijke codesteekproeven op hoe te om JWT voor ACS te produceren. U kunt dit [Java-codevoorbeeld](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) volgen om JWT te genereren.
+De eerste stap bij het gebruik van de Adobe Campaign API is het genereren van JWT. Er zijn talrijke codesteekproeven op hoe te om JWT voor ACS te produceren. U kunt dit [java-codevoorbeeld](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) volgen om JWT te genereren.
 
 Om ACS API met AEM Forms te gebruiken, moeten wij JWT binnen een bundel OSGi tot stand brengen. Het volgende codefragment is gebruikt om JWT te genereren in deze voorbeeldbundel OSGI. De details over de instantie ACS worden gehaald van eigenschappen van de configuratie OSGI die zoals hierboven getoond worden geplaatst.
 
 ![configuratie](assets/campaignconfiguration.gif)
 
-**A.** De hier weergegeven waarden zijn dummywaarden
+**A.** De hier getoonde waarden zijn dummywaarden
 
 De volgende code haalt de details over de Server van Adobe Campaign van de configuratie OSGI. We maken een persoonlijke sleutel van de lijnen 80 tot en met 104.
 
@@ -245,6 +245,6 @@ public class CampaignServiceImpl implements CampaignService {
  }
 ```
 
-## Toegangstoken genereren {#generate-access-token}
+## Toegangstoken {#generate-access-token} genereren
 
 Wij ruilen dan geproduceerde JWT voor een Token van de Toegang door een vraag van de POST te maken. Dit Token van de Toegang zal dan als sleutel van de Vergunning in de Kopbal van HTTP voor verdere vraag REST worden verzonden
