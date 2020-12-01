@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Microsoft Dynamics gebruiken met AEM Forms{#using-microsoft-dynamics-with-aem-forms}
+# Werken met Microsoft Dynamics met AEM Forms{#using-microsoft-dynamics-with-aem-forms}
 
 Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. Het volgende wordt gesteund uit-van-de-doos. Met weinig aanpassing kunt u echter ook andere gegevensbronnen integreren.
 
