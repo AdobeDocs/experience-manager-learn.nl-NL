@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Introduction to [!DNL OSGi] {#introduction-osgi}
+# Inleiding tot [!DNL OSGi] {#introduction-osgi}
 
 Een inleiding tot [!DNL OSGi], een dynamische modulaire architectuur voor [!DNL Java] toepassingen die de basis voor Adobe Experience Manager is.
 
