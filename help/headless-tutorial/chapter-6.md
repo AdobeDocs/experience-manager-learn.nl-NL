@@ -23,36 +23,42 @@ Omdat AEM Content Services is samengesteld uit Configuration (Content Fragment M
 * Workflow voor revisie en verwerking
 * en activering/deactivering voor het doordrukken en ophalen van inhoud uit de eindpunten van de AEM Content Services van AEM Publish
 
-1. Zorg ervoor dat de **[!DNL WKND Mobile]toepassingspakketten**, die in [hoofdstuk 1](./chapter-1.md#wknd-mobile-application-packages)worden vermeld, zijn geïnstalleerd op de **AEM-publicatie** met behulp van [!UICONTROL Package Manager].
+1. Zorg ervoor dat **[!DNL WKND Mobile]Toepassingspakketten**, vermeld in [Hoofdstuk 1](./chapter-1.md#wknd-mobile-application-packages), zijn geïnstalleerd op **AEM-publicatie** met [!UICONTROL Package Manager].
    * [http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
 
-1. De **[!DNL WKND Mobile Events API]bewerkbare sjabloon publiceren**
-   1. Ga naar **[!UICONTROL AEM]>[!UICONTROL Tools]>[!UICONTROL General]>[!UICONTROL Templates]>[!DNL WKND Mobile]**
-   1. Select the **[!DNL Event API]** template
+1. De bewerkbare sjabloon **[!DNL WKND Mobile Events API]publiceren**
+   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Tools] > [!UICONTROL General] > [!UICONTROL Templates] >[!DNL WKND Mobile]**
+   1. Selecteer de sjabloon **[!DNL Event API]**
    1. Tik **[!UICONTROL Publish]** in de bovenste actiebalk
-   1. Publiceer het **malplaatje** en **alle verwijzingen** (inhoudsbeleid, inhoudspolitieke afbeeldingen, en malplaatjes)
+   1. Publiceer **malplaatje** en **alle verwijzingen** (inhoudsbeleid, inhoudspolitieke afbeeldingen, en malplaatjes)
 
 1. Publiceer de **[!DNL WKND Mobile Events]inhoudsfragmenten**.
 
 Dit is vereist omdat de API voor gebeurtenissen de component Lijst met inhoudsfragmenten gebruikt, die niet specifiek verwijst naar inhoudsfragmenten.
-1. Ga naar **[!UICONTROL AEM]>[!UICONTROL Assets]>[!UICONTROL Files]>[!DNL WKND Mobile]>[!DNL English]>[!DNL Events]** 1. Selecteer alle **[!DNL Event]** inhoudsfragmenten1. Tik op de knop **[!UICONTROL Manage Publication]** in de bovenste actiebalk1. Als u de standaardactie **Publiceren** ongewijzigd laat, tikt u op **[!UICONTROL Next]** de bovenste actiebalk1. Selecteer **alle** inhoudsfragmenten1. Tik **[!UICONTROL Publish]** op de bovenste actiebalk* *Het[!DNL Events]inhoudsfragmentmodel en de verwijzingen naar gebeurtenisafbeeldingen worden automatisch samen met de inhoudsfragmenten gepubliceerd.*
+1. Navigeer naar **[!UICONTROL AEM]> [!UICONTROL Assets] > [!UICONTROL Files] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**
+1. Alle **[!DNL Event]**-inhoudsfragmenten selecteren
+1. Tik op **[!UICONTROL Manage Publication]** in de bovenste actiebalk
+1. Als u de standaardactie **Publiceren** ongewijzigd laat, tikt u op **[!UICONTROL Next]** in de bovenste actiebalk
+1. **alle** inhoudsfragmenten selecteren
+1. Tik **[!UICONTROL Publish]** in de bovenste actiebalk
+* *Het [!DNL Events] Content Fragment Model and references Event Images will automatically be publish together with the content fragments.*
 
-1. Publiceer de **[!DNL Events API]pagina**.
-   1. Ga naar **[!UICONTROL AEM]>[!UICONTROL Sites]>[!DNL WKND Mobile]>[!DNL English]>[!DNL API]**
-   1. Selecteer de **[!DNL Events]** pagina
-   1. Tik op de knop **[!UICONTROL Manage Publication]** in de bovenste actiebalk
-   1. Tik op de bovenste actiebalk terwijl u de standaardactie **Publiceren** **[!UICONTROL Next]** ongewijzigd laat
-   1. Selecteer de **[!DNL Events]** pagina
+1. Publiceer **[!DNL Events API]pagina**.
+   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**
+   1. De pagina **[!DNL Events]** selecteren
+   1. Tik op **[!UICONTROL Manage Publication]** in de bovenste actiebalk
+   1. Als u de standaardactie **Publiceren** ongewijzigd laat, tikt u op **[!UICONTROL Next]** in de bovenste actiebalk
+   1. De pagina **[!DNL Events]** selecteren
    1. Tik **[!DNL Publish]** in de bovenste actiebalk
 
 >[!VIDEO](https://video.tv.adobe.com/v/28343/?quality=12&learn=on)
 
 ## Publiceren van AEM controleren
 
-1. In nieuwe browser van het Web, zorg ervoor u van AEM wordt het programma geopend publiceer en verzoek volgende URLs (substituerend `http://localhost:4503` voor wat gastheer:havenAEM publiceert loopt).
+1. In een nieuwe browser van het Web, zorg ervoor u uit AEM wordt geregistreerd publiceer en verzoek volgende URLs (die `http://localhost:4503` voor om het even welke gastheer vervangen:havenAEM publiceert).
 
    * [http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
-   Deze verzoeken moeten dezelfde JSON-reactie retourneren als wanneer de overeenkomstige eindpunten van de AEM-auteur werden herzien. Als dat niet het geval is, zorgt u ervoor dat alle publicaties zijn geslaagd (controleer de Replication-wachtrijen), wordt het [!DNL WKND Mobile] pakket geïnstalleerd in AEM Publish en controleert u het `ui.apps` `error.log` voor AEM Publish.
+   Deze verzoeken moeten dezelfde JSON-reactie retourneren als wanneer de overeenkomstige eindpunten van de AEM-auteur werden herzien. Als dat niet het geval is, zorgt u ervoor dat alle publicaties zijn geslaagd (controleer de Replication-wachtrijen), wordt het [!DNL WKND Mobile] `ui.apps`-pakket geïnstalleerd in AEM Publish en controleert u `error.log` voor AEM Publish.
 
 ## Volgende stap
 
