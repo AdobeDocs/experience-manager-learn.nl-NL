@@ -1,6 +1,6 @@
 ---
-title: Vorm manifest.yml van een project van de Verwerking van Activa
-description: Met Asset Compute wordt manifest.yml van het project beschreven welke workers in dit project moeten worden geïmplementeerd.
+title: Vorm manifest.yml van een project van de Asset compute
+description: manifest.yml van het project van de Asset compute, beschrijft alle arbeiders in dit project dat moet worden opgesteld.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -20,17 +20,17 @@ ht-degree: 0%
 
 # Vorm manifest.yml
 
-In `manifest.yml`de hoofdmap van het project Asset Compute worden alle workers in dit project beschreven die moeten worden geïmplementeerd.
+`manifest.yml`, die in de wortel van het project van de Asset compute wordt gevestigd, beschrijft alle arbeiders in dit project dat moet worden opgesteld.
 
 ![manifest.yml](./assets/manifest/manifest.png)
 
 ## Standaarddefinitie van worker
 
-Workers worden gedefinieerd als Adobe I/O Runtime-handelingangen onder `actions`en samengesteld uit een set configuraties.
+Workers worden gedefinieerd als Adobe I/O Runtime-actitems onder `actions` en bestaan uit een set configuraties.
 
-Workers die andere Adobe I/O-integraties gebruiken, moeten de `annotations -> require-adobe-auth` eigenschap instellen op `true` omdat deze de Adobe I/O-gegevens [van de worker via het](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) object `params.auth` toegankelijk maakt. Dit is doorgaans vereist wanneer de worker API&#39;s van Adobe I/O aanroept, zoals de Adobe Photoshop-, Lightroom- of Sensei-API&#39;s, en deze API&#39;s kunnen per worker in- en uitschakelen.
+Workers die andere Adobe I/O-integraties willen gebruiken, moeten de `annotations -> require-adobe-auth`-eigenschap instellen op `true` omdat [de Adobe I/O-referenties van de worker via het `params.auth`-object beschikbaar worden gemaakt. ](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) Dit is doorgaans vereist wanneer de worker API&#39;s van Adobe I/O, zoals de Adobe Photoshop-, Lightroom- of Sensei-API&#39;s, aanroept en per worker in- en uitschakelen kan.
 
-1. Open en bekijk de automatisch gegenereerde worker `manifest.yml`. Projecten die meerdere workers voor middelenberekening bevatten, moeten een vermelding definiëren voor elke worker onder de `actions` array.
+1. Open en bekijk de automatisch gegenereerde worker `manifest.yml`. Projecten die meerdere workers in de Asset compute bevatten, moeten een item definiëren voor elke worker onder de array `actions`.
 
 ```yml
 packages:
@@ -49,11 +49,11 @@ packages:
 
 ## Limieten definiëren
 
-Elke worker kan de [limieten](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) voor de uitvoeringscontext in Adobe I/O Runtime configureren. Deze waarden moeten zodanig worden ingesteld dat de worker een optimale grootte krijgt op basis van het volume, de snelheid en het type elementen dat de worker berekent, en het type werk dat de worker uitvoert.
+Elke worker kan de [limits](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) configureren voor de uitvoeringscontext in Adobe I/O Runtime. Deze waarden moeten zodanig worden ingesteld dat de worker een optimale grootte krijgt op basis van het volume, de snelheid en het type elementen dat de worker berekent, en het type werk dat de worker uitvoert.
 
-Lees de [Adobe-richtlijnen](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#sizing-workers) voordat u limieten instelt. Workers van Asset Compute hebben bij het verwerken van middelen mogelijk onvoldoende geheugen, waardoor de uitvoering van Adobe I/O Runtime wordt gedood. Zo weet u zeker dat de grootte van de worker correct is aangepast aan de afhandeling van alle kandidaat-middelen.
+Raadpleeg [Richtlijnen voor het wijzigen van de grootte van de Adobe voordat u limieten instelt. ](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#sizing-workers) De arbeiders van de asset compute kunnen uit geheugen opraken wanneer het verwerken van activa, resulterend in de uitvoering van Adobe I/O Runtime die wordt gedood, zodat wordt de arbeider aangepast aangepast om alle kandidaatactiva te behandelen.
 
-1. Voeg een `inputs` sectie toe aan het nieuwe item voor `wknd-asset-compute` handelingen. Hierdoor kan de algemene prestaties en de toewijzing van bronnen van de worker Asset Compute worden afgesteld.
+1. Voeg een `inputs` sectie aan de nieuwe `wknd-asset-compute` actiesingang toe. Dit staat het stemmen van de algemene prestaties van de Asset compute arbeider en middeltoewijzing toe.
 
 ```yml
 packages:
@@ -75,7 +75,7 @@ packages:
 
 ## Het voltooide manifest.yml
 
-De uiteindelijke `manifest.yml` vormgeving ziet er als volgt uit:
+De uiteindelijke `manifest.yml` ziet er als volgt uit:
 
 ```yml
 packages:
@@ -96,29 +96,29 @@ packages:
 
 ## manifest.yml op Github
 
-De finale `.manifest.yml` is beschikbaar op Github op:
+De uiteindelijke `.manifest.yml` is beschikbaar op Github op:
 
 + [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
 
 
 ## manifest.yml valideren
 
-Nadat het gegenereerde Asset Compute-programma `manifest.yml` is bijgewerkt, voert u het programma voor lokale ontwikkeling uit en zorgt u ervoor dat het programma met succes begint met de bijgewerkte `manifest.yml` instellingen.
+Nadat de gegenereerde Asset compute `manifest.yml` is bijgewerkt, voert u het programma voor lokale ontwikkeling uit en zorgt u ervoor dat het programma correct begint met de bijgewerkte instellingen `manifest.yml`.
 
-Om het Hulpmiddel van de Ontwikkeling van de Verwerking van Activa voor het project van de Verwerking van Activa te beginnen:
+Om het Hulpmiddel van de Ontwikkeling van de Asset compute voor het project van de Asset compute te beginnen:
 
-1. Open een bevellijn in het Activum Compute projectwortel (in de Code van VS kan dit direct in winde via Terminal > Nieuwe Terminal) worden geopend, en voer het bevel uit:
+1. Open een bevellijn in de het projectwortel van de Asset compute (in de Code van VS kan dit direct in winde via Terminal > Nieuwe Terminal) worden geopend, en voer het bevel uit:
 
    ```
    $ aio app run
    ```
 
-1. Het lokale Hulpmiddel van de Ontwikkeling van het Vermogen van Activa zal in uw standaardbrowser van het Web op __http://localhost:9000__ openen.
+1. Het lokale Hulpmiddel van de Ontwikkeling van de Asset compute zal in uw standaardbrowser van het Web op __http://localhost:9000__ openen.
 
    ![AIR-app uitgevoerd](assets/environment-variables/aio-app-run.png)
 
 1. Bekijk de uitvoer van de opdrachtregel en de webbrowser voor foutberichten terwijl het hulpprogramma Ontwikkeling wordt geïnitialiseerd.
-1. Tik in het venster dat is uitgevoerd om het proces te beëindigen `Ctrl-C` `aio app run` om het Asset Compute Development Tool te stoppen.
+1. Tik `Ctrl-C` in het venster dat `aio app run` heeft uitgevoerd om het proces te beëindigen om het Asset compute Development Tool te stoppen.
 
 ## Problemen oplossen
 
