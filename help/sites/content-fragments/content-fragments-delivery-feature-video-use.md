@@ -21,33 +21,33 @@ ht-degree: 1%
 ---
 
 
-# Inhoudsfragmenten leveren {#delivering-content-fragments}
+# Inhoudsfragmenten {#delivering-content-fragments} leveren
 
 Adobe Experience Manager (AEM) Content Fragments zijn tekstgebaseerde redactionele inhoud die bepaalde gestructureerde gegevenselementen kan bevatten die zijn gekoppeld, maar die wordt beschouwd als zuivere inhoud zonder ontwerp- of layoutinformatie. Inhoudsfragmenten worden doorgaans gemaakt als agnostische inhoud voor kanalen, die bestemd is voor gebruik en hergebruik via kanalen, waardoor de inhoud zelf wordt verpakt in een contextspecifieke ervaring.
 
 Inhoudsfragmenten, onafhankelijk van de lay-out, kunnen direct in AEM Sites met Core Components worden gebruikt of kunnen zonder kop aan downstreamkanalen worden geleverd.
 
-Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmenten van de Inhoud. Hier [vindt u meer informatie over het definiëren en](content-fragments-feature-video-use.md)ontwerpen van inhoudsfragmenten.
+Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmenten van de Inhoud. Hier vindt u details over het definiëren en [ontwerpen van inhoudsfragmenten](content-fragments-feature-video-use.md).
 
 1. Inhoudsfragmenten op webpagina&#39;s gebruiken
 2. Inhoudsfragmenten beschikbaar maken als JSON met AEM Content Services
 3. De HTTP-API voor middelen gebruiken
 
-## Inhoudsfragmenten op webpagina&#39;s gebruiken {#using-content-fragments-in-web-pages}
+## Inhoudsfragmenten gebruiken in webpagina&#39;s {#using-content-fragments-in-web-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-Inhoudsfragmenten kunnen op AEM Sites-pagina&#39;s worden gebruikt, of op een vergelijkbare manier Experience Fragments, met behulp van de [inhoudsfragmentcomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)van AEM WCM Core-componenten.
+Inhoudsfragmenten kunnen op AEM Sites-pagina&#39;s worden gebruikt, of op een vergelijkbare manier op Experience Fragments, met behulp van de AEM WCM Core Components&#39; [Inhoudsfragmentcomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html).
 
 Componenten van inhoudsfragmenten kunnen zo nodig worden opgemaakt met AEM stijlsysteem.
 
-## Inhoudsfragmenten beschikbaar maken als JSON {#exposing-content-fragments-as-json}
+## Inhoudsfragmenten zichtbaar maken als JSON {#exposing-content-fragments-as-json}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22448/?quality=12&learn=on)
 
 AEM Content Services vereenvoudigt het maken van AEM op pagina gebaseerde HTTP-eindpunten waarmee inhoud wordt weergegeven in een genormaliseerde JSON-indeling.
 
-In de bovenstaande video wordt de component [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) Inhoudsfragment gebruikt om afzonderlijke inhoudsfragmenten zichtbaar te maken. De component [Lijst van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) inhoudsfragmenten is een nieuwe component waarmee een auteur een query kan definiëren waarmee de pagina dynamisch wordt gevuld met een lijst met inhoudsfragmenten. De component Lijst met inhoudsfragmenten heeft de voorkeur wanneer meerdere inhoudsfragmenten moeten worden weergegeven.
+In de bovenstaande video wordt de [Inhoudsfragmentcomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) gebruikt om afzonderlijke inhoudsfragmenten zichtbaar te maken. De [Component van de Lijst van het Fragment van de Inhoud ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) is een nieuwe component die een auteur toestaat om een vraag te bepalen die de pagina dynamisch met een lijst van Inhoudsfragmenten zal bevolken. De component Lijst met inhoudsfragmenten heeft de voorkeur wanneer meerdere inhoudsfragmenten moeten worden weergegeven.
 
 *Voorbeeld van JSON-nuttige last voor inhoudsservices:*\
 **[atleten.json](assets/athletes.json)**
