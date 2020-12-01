@@ -20,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# Aan de slag met AEM headless{#getting-started-with-aem-headless}
+# Aan de slag met AEM Headless{#getting-started-with-aem-headless}
 
 + [Overzicht](./overview.md)
 + [1 - Lesbestanden instellen](./chapter-1.md)
