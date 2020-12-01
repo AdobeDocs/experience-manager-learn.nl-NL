@@ -22,7 +22,7 @@ Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en lev
 
 >[!NOTE]
 >
->Voor stappen bij het vormen van InDesign Server gelieve te herzien [Opstelling de Malplaatjes van Activa met InDesign Server](asset-templates-technical-video-setup.md).
+>Voor stappen bij het vormen van InDesign Server te herzien gelieve [de Malplaatjes van Activa van de Opstelling met InDesign Server](asset-templates-technical-video-setup.md).
 
 ## Overzicht {#overview}
 
