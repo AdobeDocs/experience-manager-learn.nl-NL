@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # HTML5 Forms vooraf vullen met gegevenskenmerk {#prepopulate-html-forms-using-data-attribute}
 
-Ga naar de voorbeeldpagina [van](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms voor een koppeling naar een live demo over deze mogelijkheid.
+Ga naar de pagina [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) voor een koppeling naar een live demo van deze mogelijkheid.
 
 XDP-sjablonen die worden gerenderd in HTML-indeling met AEM Forms, worden HTML5 of Mobile Forms genoemd. Deze formulieren worden vaak ingevuld wanneer ze worden gegenereerd.
 
@@ -38,7 +38,7 @@ slingRequest.setAttribute(&quot;data&quot;, content);
 
 In dit voorbeeld stellen we het gegevenskenmerk in met de inhoud. De inhoud vertegenwoordigt de gegevens waarmee u het formulier vooraf wilt invullen. Typisch zou u de &quot;inhoud&quot;door een REST vraag aan de interne dienst halen.
 
-Voor dit gebruiksgeval moet u een aangepast profiel maken. De details over het maken van een aangepast profiel worden hier [duidelijk beschreven in de documentatie van](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html)AEM Forms.
+Voor dit gebruiksgeval moet u een aangepast profiel maken. De details over het maken van een aangepast profiel worden duidelijk beschreven in [AEM Forms-documentatie hier](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
 
 Zodra u uw douaneprofiel creeert, zult u dan een JSP dossier creëren dat de gegevens door vraag aan uw achterste deelsysteem zal halen. Nadat de gegevens zijn opgehaald, gebruikt u de slingRequest.setAttribute(&quot;data&quot;, content); om het formulier vooraf in te vullen
 
@@ -49,7 +49,8 @@ Wanneer XDP wordt teruggegeven, kunt u in sommige parameters tot xdp ook overgaa
 JSP die u schrijft zal toegang tot de naamparameter door request.getParameter (&quot;naam&quot;) hebben. Vervolgens kunt u de waarde van deze parameter doorgeven aan uw back-endproces om de vereiste gegevens op te halen.
 Volg de onderstaande stappen om deze functie aan uw systeem te laten werken:
 
-* [Download en importeer de middelen in AEM met behulp van pakketbeheer](assets/prepopulatemobileform.zip). Het pakket installeert de volgende
+* [Download en importeer de middelen in AEM met ](assets/prepopulatemobileform.zip)
+pakketbeheer. Het pakket installeert de volgende
 
    * CustomProfile
    * Voorbeeld XDP
