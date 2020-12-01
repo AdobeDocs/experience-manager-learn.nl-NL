@@ -30,19 +30,19 @@ Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse
 >Smart Translation Search moet worden ingesteld voor elke AEM die dit nodig heeft.
 
 1. Download en installeer de OSGi-bundel van Oak Search Machine Translation
-   * [Download de OSGi-bundel](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) Oak Search Machine Translation die overeenkomt met AEM Oak-versie.
+   * [Download de Oak Search Machine Translation OSGi-](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) bundel die overeenkomt met AEM Oak-versie.
    * Installeer de gedownloade OSGi-bundel voor Oak Search Machine Translation in AEM via [ `/system/console/bundles`](http://localhost:4502/system/console/bundles).
 
 2. Apache Joshua-taalpakketten downloaden en bijwerken
    * Download en decomprimeer de gewenste [Apache Joshua-taalpakketten](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs).
-   * Bewerk het `joshua.config` bestand en becommentariëer de twee regels die beginnen met:
+   * Bewerk het `joshua.config`-bestand en voeg de volgende twee regels toe:
 
       ```
       feature-function = LanguageModel ...
       ```
 
    * Bepaal en registreer de grootte van de modelomslag van het taalpak, aangezien dit beïnvloedt hoeveel extra heapruimte AEM zal vereisen.
-   * Verplaats de niet-gecomprimeerde Apache Joshua-taalpakketmap (met de `joshua.config` bewerkingen) naar
+   * Verplaats de niet-gecomprimeerde Apache Joshua taalpakketmap (met de `joshua.config` bewerkingen) naar
 
       ```
       .../crx-quickstart/opt/<source_language-target_language>
@@ -61,7 +61,7 @@ Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse
       * AEM heapgrootte vóór het taalgebrek + de grootte van de modeldirectory afgerond naar de dichtstbijzijnde 2 GB
       * Bijvoorbeeld: Als de pre-taalpakken de AEM installatie 8 GB van hoop vereist om te lopen, en de modelomslag van het taalpak is niet samengedrukt 3.8 GB, is de nieuwe heapgrootte:
 
-         Het origineel `8GB` + ( `3.75GB` afgerond naar de dichtstbijzijnde `2GB`, hetgeen `4GB`) voor een totaal van `12GB`
+         Het origineel `8GB` + ( `3.75GB` afgerond naar de dichtstbijzijnde `2GB`, die `4GB` is) voor een totaal van `12GB`
    * Controleer of de computer over deze hoeveelheid extra beschikbaar geheugen beschikt.
    * AEM opstartscripts bijwerken om deze aan te passen aan de nieuwe heapgrootte
 
@@ -73,20 +73,20 @@ Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse
    >De vereiste heapruimte voor taalpakketten kan groter worden, vooral wanneer meerdere taalpakketten worden gebruikt.
    >
    >
-   >Zorg altijd ervoor dat **de instantie voldoende geheugen** heeft om de toename van toegewezen heapruimte te compenseren.
+   >Zorg altijd dat **de instantie voldoende geheugen heeft** om de toename in toegewezen heapruimte te compenseren.
    >
    >
    >De **basisheap moet altijd worden berekend om acceptabele prestaties te ondersteunen zonder dat taalpakketten** zijn geïnstalleerd.
 
 4. Registreer de taalpakken via Apache Jackrabbit Oak Machine Translation Full-text Query Terms Provider OSGi configuraties
 
-   * Voor elk taalpak, [creeer een nieuw Apache Jackrabbit Oak Machine Translation Full-text de Leverancier OSGi van de Vraag van de Leverancier van de Termen](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderFactory) via de Manager van de Configuratie van de Console van het AEM Web.
+   * Voor elk taalpak, [creeer een nieuwe Apache Jackrabbit Oak Machine Translation Full-text de Leverancier OSGi van de Vraag OSGi configuratie](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderFactory) via de Manager van de Configuratie van de AEM Console van het Web.
 
       * `Joshua Config Path` is de absolute weg aan het joshua.config- dossier. Het AEM moet alle bestanden in de map van het taalpakket kunnen lezen.
       * `Node types` zijn de types van kandidaatknoop waarvan full-text onderzoek dit taalpak voor vertaling zal in dienst nemen.
       * `Minimum score` is de minimale betrouwbaarheidsscore voor een vertaalde term die moet worden gebruikt.
 
-         * Hombre (Spaans voor &quot;man&quot;) kan bijvoorbeeld naar het Engelse woord &quot;man&quot; vertalen met een betrouwbaarheidsscore van `0.9` en ook naar het Engelse woord &quot;human&quot; vertalen met een betrouwbaarheidsscore `0.2`. Als de minimumscore op `0.3`wordt ingesteld, blijft de vertaling &#39;hombre&#39; behouden in &#39;man&#39;, maar wordt het &#39;hombre&#39; genegeerd in &#39;human&#39; vertaling, omdat deze vertaalscore van `0.2` minder is dan de minimumscore van `0.3`.
+         * Hombre (Spaans voor &quot;man&quot;) kan bijvoorbeeld worden vertaald naar het Engelse woord &quot;man&quot; met een betrouwbaarheidsscore van `0.9` en ook naar het Engelse woord &quot;human&quot; met een betrouwbaarheidsscore `0.2`. Als de minimumscore wordt ingesteld op `0.3`, blijft de &#39;hombre&#39; behouden in &#39;man&#39; vertaling, maar wordt de &#39;hombre&#39; genegeerd in &#39;human&#39; vertaling omdat deze vertaalscore van `0.2` lager is dan de minimumscore van `0.3`.
 
 5. Een zoekopdracht in volledige tekst uitvoeren op elementen
    * Omdat dam:Asset het knooptype is dit taalpak opnieuw wordt geregistreerd, moeten wij naar AEM Assets zoeken gebruikend full-text onderzoek om dit te bevestigen.
@@ -101,11 +101,11 @@ Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse
    * Als AEM geen nieuw begin vereist, dan moeten de relevante Apache Jackrabbit Oak Machine Translation Fulltext Query Terms Provider OSGi configuratie(s) die tot het bijgewerkte taalpak(s) behoren opnieuw worden opgeslagen zodat AEM de bijgewerkte bestanden verwerkt.
 
 
-## damAssetLucene Index bijwerken {#updating-damassetlucene-index}
+## damAssetLucene Index {#updating-damassetlucene-index} bijwerken
 
-Om ervoor te zorgen dat [AEM Slimme Markeringen](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) door AEM Slimme Vertaling worden beïnvloed, AEM `/oak   :index  /damAssetLucene` index moet worden bijgewerkt om de predictedTags (de systeemnaam voor &quot;Slimme Markeringen&quot;) te markeren als onderdeel van de samengestelde Lucene-index van het Element.
+Als u wilt dat [AEM Slimme tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) wordt beïnvloed door AEM slimme omzetting, moet AEM `/oak   :index  /damAssetLucene` index worden bijgewerkt om de predictedTags (de systeemnaam voor &quot;Slimme tags&quot;) te markeren als onderdeel van de samengestelde Lucene-index van het element.
 
-Controleer `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predicatedTags`onder of de configuratie als volgt is:
+Controleer onder `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predicatedTags` of de configuratie als volgt is:
 
 ```xml
  <damAssetLucene jcr:primaryType="oak:QueryIndexDefinition">
