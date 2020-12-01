@@ -15,11 +15,11 @@ ht-degree: 0%
 ---
 
 
-# Zoeken in Books met metagegevens van element {#search-boost-asset}
+# Zoeken in Booleaanse waarde met metagegevens van element {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
 
-## Zoekopdrachten in AEM Assets begrijpen{#understanding-search-boosting-in-aem-assets}
+## Meer informatie over zoeken in AEM Assets{#understanding-search-boosting-in-aem-assets}
 
 Een diepgaande blik op AEM Assets onderzoek het opvoeren en hoe het in de bredere context van AEM werkt.
 
