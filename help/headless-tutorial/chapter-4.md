@@ -20,7 +20,7 @@ Hoofdstuk 4 van de AEM zelfstudie zonder titel behandelt de rol van AEM bewerkba
 
 AEM Bewerkbare sjablonen worden gebruikt om de HTTP-eindpunten te definiëren die worden benaderd om de Event-inhoud beschikbaar te maken als JSON.
 
-Traditioneel AEM Bewerkbare Malplaatjes worden gebruikt om Web-pagina&#39;s te bepalen, nochtans is dit gebruik eenvoudig conventie. Bewerkbare sjablonen kunnen worden gebruikt om **een** set inhoud samen te stellen; hoe die inhoud wordt benaderd: als HTML in browser, aangezien JSON door JavaScript (AEM redacteur van het KUUROORD) of een Mobiele App wordt verbruikt een functie van hoe die pagina wordt gevraagd.
+Traditioneel AEM Bewerkbare Malplaatjes worden gebruikt om Web-pagina&#39;s te bepalen, nochtans is dit gebruik eenvoudig conventie. Bewerkbare sjablonen kunnen worden gebruikt om **elke**-set met inhoud samen te stellen; hoe die inhoud wordt benaderd: als HTML in een browser, zoals JSON wordt verbruikt door JavaScript (AEM SPA Editor) of een mobiele toepassing, is een functie van de manier waarop die pagina wordt opgevraagd.
 
 In AEM Content Services worden bewerkbare sjablonen gebruikt om te definiëren hoe de JSON-gegevens worden weergegeven.
 
@@ -35,36 +35,36 @@ Om te begrijpen hoe te om ons API eindpunt samen te stellen, en te begrijpen wel
 Zoals we kunnen zien, hebben we drie logische sets met inhoud die aan de mobiele app moeten worden geleverd.
 
 1. Het **logo**
-2. De **taglijn**
-3. De lijst met **gebeurtenissen**
+2. De **Taglijn**
+3. De lijst met **Gebeurtenissen**
 
 Om dit te doen, kunnen wij deze vereisten aan AEM Componenten (en in ons geval, AEM de Componenten van de Kern WCM) in kaart brengen om de vereiste inhoud als JSON bloot te stellen.
 
-1. Het **logo** wordt via een **afbeeldingscomponent weergegeven**
-2. De **labellijn** wordt omgeven door een **tekstcomponent**
-3. De lijst met **gebeurtenissen** wordt weergegeven via een component **Lijst met** inhoudsfragmenten die op hun beurt verwijst naar een set met Content Fragments voor gebeurtenissen.
+1. Het **Logo** wordt omringd via een **Image-component**
+2. De **Taglijn** wordt omringd via een **Tekstcomponent**
+3. De lijst van **Gebeurtenissen** zal via een **component van de Lijst van het Fragment van de Inhoud** worden bedekt die beurtelings, verwijzingen een reeks Fragmenten van de Inhoud van de Gebeurtenis.
 
 >[!NOTE]
 >
->Om de JSON-export van pagina&#39;s en componenten van AEM Content Service te ondersteunen, moeten de pagina&#39;s en onderdelen **afkomstig zijn van AEM WCM Core-componenten**.
+>Om de JSON-export van Pagina&#39;s en Componenten van AEM Content Service te ondersteunen, moeten de pagina&#39;s en componenten zijn afgeleid van AEM WCM Core Components **.**
 >
->[AEM WCM Core Components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components) hebben ingebouwde functionaliteit om een genormaliseerd JSON schema van uitgevoerde Pagina&#39;s en Componenten te steunen. Alle mobiele WKND-componenten die in deze zelfstudie worden gebruikt (pagina, afbeelding, tekst en lijst met inhoudsfragmenten), zijn afgeleid van AEM WCM Core-componenten.
+>[AEM ingebouwde functionaliteit van de ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components) Componenten van de Kern WCM om een genormaliseerd JSON schema van uitgevoerde Pagina&#39;s en Componenten te steunen. Alle mobiele WKND-componenten die in deze zelfstudie worden gebruikt (pagina, afbeelding, tekst en lijst met inhoudsfragmenten), zijn afgeleid van AEM WCM Core-componenten.
 
 ## De API-sjabloon voor gebeurtenissen definiëren
 
-1. Ga naar **[!UICONTROL Tools]>[!UICONTROL General]>[!UICONTROL Templates]>[!DNL WKND Mobile]**.
+1. Ga naar **[!UICONTROL Tools]> [!UICONTROL General] > [!UICONTROL Templates] >[!DNL WKND Mobile]**.
 
-1. Maak de **[!DNL Events API]** sjabloon:
+1. Maak de sjabloon **[!DNL Events API]**:
 
    1. Tik **[!UICONTROL Create]** in de bovenste actiebalk
-   1. Select the **[!DNL WKND Mobile - Empty Page]** template
+   1. Selecteer de sjabloon **[!DNL WKND Mobile - Empty Page]**
    1. Tik **[!UICONTROL Next]** in de bovenste actiebalk
-   1. Voer **[!DNL Events API]** in het [!UICONTROL Template Title] veld in
+   1. **[!DNL Events API]** invoeren in het veld [!UICONTROL Template Title]
    1. Tik **[!UICONTROL Create]** in de bovenste actiebalk
-   1. Tik op de nieuwe sjabloon om deze te bewerken **[!UICONTROL Open]**
+   1. Tik **[!UICONTROL Open]** om de nieuwe sjabloon te openen en te bewerken
 
-1. Ten eerste staan we de drie geïdentificeerde AEM componenten toe die we nodig hebben om de inhoud te modelleren door de [!UICONTROL Policy] hoofdmap te bewerken [!UICONTROL Layout Container]. Zorg ervoor dat de **[!UICONTROL Structure]** modus actief is, selecteer de modus **[!DNL Layout Container \[Root\]]** en tik op de **[!UICONTROL Policy]** knop.
-1. Onder **[!UICONTROL Properties]>[!UICONTROL Allowed Components]** Zoeken naar **[!DNL WKND Mobile]**. Sta de volgende componenten van de [!DNL WKND Mobile] componentengroep toe zodat zij op de [!DNL Events] API pagina kunnen worden gebruikt.
+1. Eerst, staan wij de drie geïdentificeerde AEM Componenten toe wij de inhoud door [!UICONTROL Policy] van de Wortel [!UICONTROL Layout Container] te bewerken moeten modelleren. Zorg ervoor dat de modus **[!UICONTROL Structure]** actief is, selecteer **[!DNL Layout Container \[Root\]]** en tik op de knop **[!UICONTROL Policy]**.
+1. Onder **[!UICONTROL Properties]>[!UICONTROL Allowed Components]** zoek naar **[!DNL WKND Mobile]**. Sta de volgende componenten van de [!DNL WKND Mobile] componentengroep toe zodat kunnen zij op de [!DNL Events] API pagina worden gebruikt.
 
    * **[!DNL WKND Mobile > Image]**
 
@@ -78,15 +78,15 @@ Om dit te doen, kunnen wij deze vereisten aan AEM Componenten (en in ons geval, 
 
 
 
-1. Tik na voltooiing op het **[!UICONTROL Done]** vinkje in de rechterbovenhoek.
-1. **Vernieuw** [!UICONTROL Allowed Components] het browservenster om de nieuwe lijst weer te geven in de linkertrack.
+1. Tik op het vinkje **[!UICONTROL Done]** in de rechterbovenhoek wanneer dit is voltooid.
+1. **Vernieuw** het browservenster om de nieuwe  [!UICONTROL Allowed Components] lijst weer te geven in de linkertrack.
 1. Sleep vanuit de Finder Componenten in de linkerspoorstaaf in de volgende AEM Componenten:
    1. **[!DNL Image]** voor het logo
    2. **[!DNL Text]** voor de taglijn
    3. **[!DNL Content Fragment List]** voor de gebeurtenissen
-1. **Selecteer de componenten** voor elk van de bovenstaande componenten en druk op de **knop Ontgrendelen** .
-1. Zorg er echter voor dat de **layoutcontainer** is **vergrendeld** om te voorkomen dat andere componenten worden toegevoegd of dat deze drie componenten worden verwijderd.
-1. Tik **[!UICONTROL Page Information]>[!UICONTROL View in Admin]** om terug te keren naar de [!DNL WKND Mobile] lijst met sjablonen. Selecteer de nieuwe **[!DNL Events API]** sjabloon en tik op **[!UICONTROL Enable]** de bovenste actiebalk.
+1. **Selecteer de componenten** voor elk van de bovenstaande componenten en druk op  **** unlockbutton.
+1. Zorg er echter voor dat de **layout container** **locked** is om te voorkomen dat andere componenten worden toegevoegd of dat deze drie componenten worden verwijderd.
+1. Tik op **[!UICONTROL Page Information]>[!UICONTROL View in Admin]** om terug te keren naar de lijst met [!DNL WKND Mobile] sjablonen. Selecteer de nieuwe **[!DNL Events API]**-sjabloon en tik **[!UICONTROL Enable]** in de bovenste actiebalk.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28342/?quality=12&learn=on)
 
@@ -96,6 +96,6 @@ Om dit te doen, kunnen wij deze vereisten aan AEM Componenten (en in ons geval, 
 
 ## Volgende stappen
 
-U kunt desgewenst het inhoudspakket [com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) op AEM Author installeren via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
+Installeer desgewenst het inhoudspakket [com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) op AEM Author via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
 
 * [Hoofdstuk 5 - Pagina&#39;s met inhoudsservices ontwerpen](./chapter-5.md)
