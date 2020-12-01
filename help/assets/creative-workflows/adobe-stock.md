@@ -24,7 +24,7 @@ AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks 
 
 >[!NOTE]
 >
->De integratie vereist een [ondernemingsAdobe Stock plan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.4 met minstens Service Pack 2 opgesteld. Voor AEM 6.4 de details van het de dienstpak, zie deze [versienota&#39;s](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html).
+>Voor de integratie is een [Adobe Stock-ondernemingsplan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.4 vereist, waarbij ten minste Service Pack 2 is geïmplementeerd. Voor AEM 6.4 de details van het de dienstpak, zie [versienota&#39;s](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html).
 
 Dankzij de Adobe Stock- en AEM Assets-integratie kunnen auteurs en marketers van content eenvoudig een licentie voor en gebruik van stock assets maken voor creatieve of marketingdoeleinden. U kunt een zoekopdracht voor Stock-elementen uitvoeren met Omni Search, door het locatiefilter toe te voegen als Adobe Stock of door door de belangrijkste navigatie van AEM Assets te navigeren en op het UI-pictogram Zoeken in Adobe Stock Coral te klikken.
 
@@ -60,11 +60,11 @@ Dankzij de Adobe Stock- en AEM Assets-integratie kunnen auteurs en marketers van
 ### Toegangsbeheer
 
 * Beheerders kunnen bepaalde gebruikers/groepen machtigingen verlenen om tijdens het instellen van de Adobe Stock-configuratie voor cloudservices een licentie voor stockmiddelen te maken.
-* Als een specifieke gebruiker/groep geen machtiging heeft om een licentie te verlenen voor activa in de vorm van aandelenbezit, wordt de mogelijkheid om *aandelenactiva te zoeken/te licentiëren* uitgeschakeld.
+* Als een specifieke gebruiker/groep geen machtiging heeft om een licentie te verlenen voor activa in de vorm van een stock asset search/Asset licensing *, wordt de* mogelijkheid om een licentie te verkrijgen voor de activa in de categorie Stock Asset Search/Asset Licensing&lt;a1/> uitgeschakeld.
 
 ## Adobe Stock instellen met AEM Assets{#set-up-adobe-stock-with-aem-assets}
 
-AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks vanuit AEM te zoeken, voor te vertonen, op te slaan en in licentie te geven. In deze video wordt uitgelegd hoe u Adobe-bestanden met AEM Assets kunt instellen met Adobe I/O-console.
+AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks vanuit AEM te zoeken, voor te vertonen, op te slaan en in licentie te geven. In deze video wordt uitgelegd hoe u met Adobe I/O Console Adobe-bestanden kunt instellen met AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25043/?quality=12&learn=on)
 
@@ -74,17 +74,17 @@ AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks 
 
 >[!NOTE]
 >
->De integratie vereist een [ondernemingsAdobe Stock plan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.4 met minstens [Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) opgesteld. Voor AEM 6.4 de details van het de dienstpak, zie deze [versienota&#39;s](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). U hebt ook beheerdersmachtigingen voor [Adobe I/O-console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) en Adobe Experience Manager nodig om de integratie in te stellen.
+>De integratie vereist een [Adobe Stock-ondernemingsplan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.4 met minstens [Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) geïmplementeerd. Voor AEM 6.4 de details van het de dienstpak, zie [versienota&#39;s](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). U hebt ook beheerdersmachtigingen voor [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) en Adobe Experience Manager nodig om de integratie in te stellen.
 
 ### Installatie {#installations}
 
-* Voor AEM 6.4 moet u het [AEM Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) installeren en vervolgens het ZIP-bestand cq-dam-stock-integration-content-1.0.4.zip opnieuw installeren.
-* Zorg ervoor dat u beheerdersmachtigingen hebt voor [Adobe I/O-console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) en Adobe Experience Manager om de integratie in te stellen.
+* Voor AEM 6.4 moet u [AEM Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) installeren en vervolgens het bestand cq-dam-stock-integration-content-1.0.4.zip opnieuw installeren.
+* Zorg ervoor dat u beheerdersmachtigingen hebt voor [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) en Adobe Experience Manager om de integratie in te stellen.
 
 #### Adobe IMS-configuratie instellen met Adobe I/O-console {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
 
-1. Een Adobe IMS Technical Account Configuration maken via **Tools > Security**
-2. Selecteer de *Cloud-oplossing* als *Adobe Stock* en maak een nieuw certificaat of gebruik een bestaand certificaat voor de configuratie opnieuw.
+1. Een Adobe IMS Technical Account Configuration maken onder **Tools > Security**
+2. Selecteer *Cloud Solution* als *Adobe Stock* en maak een nieuw certificaat of gebruik een bestaand certificaat voor de configuratie opnieuw.
 3. Navigeer naar de Adobe I/O-console en maak een nieuwe integratie voor serviceaccounts voor *Adobe Stock*.
 4. Upload het certificaat van Stap2 naar uw integratie van de Adobe Stock Service Account.
 5. Kies de vereiste Adobe Stock-profielconfiguratie en voltooi de service-integratie.
@@ -95,11 +95,11 @@ AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks 
 
 #### Adobe Stock-Cloud Services instellen {#set-up-adobe-stock-cloud-services}
 
-1. Maak een nieuwe cloudserviceconfiguratie voor Adobe Stock onder **Opties > Cloud Services.**
-2. Selecteer de *Adobe IMS-configuratie* die in de bovenstaande sectie voor uw *Adobe Stock Cloud* -configuratie is gemaakt
+1. Maak een nieuwe cloudserviceconfiguratie voor Adobe Stock onder **Gereedschappen > Cloud Services.**
+2. Selecteer de *Adobe IMS-configuratie* die in de bovenstaande sectie is gemaakt voor uw *Adobe Stock Cloud*-configuratie
 
-3. Zorg ervoor dat u de **OMGEVING** als PROD selecteert. De testomgeving wordt niet ondersteund en wordt verwijderd in de volgende versie van AEM.
-4. **Onder /content/dam kan het pad** van het goedgekeurde element naar elke directory worden verwezen. Functieondersteuning voor dit veld wordt toegevoegd in de volgende release van AEM
+3. Zorg ervoor u **MILIEU** als PROD selecteert. De testomgeving wordt niet ondersteund en wordt verwijderd in de volgende versie van AEM.
+4. **Onder /content/dam** kan het goedgekeurde assetpad naar elke directory worden verwezen. Functieondersteuning voor dit veld wordt toegevoegd in de volgende release van AEM
 5. Selecteer de landinstelling en voer de installatie uit.
 6. U kunt ook gebruikers/groepen toevoegen aan uw Adobe Stock Cloud-service om toegang voor specifieke gebruikers of groepen in te schakelen.
 
@@ -110,5 +110,5 @@ AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks 
 * [Enterprise Stock Plan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
 * [Opmerkingen bij de release AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 * [AEM en Adobe Stock integreren](https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html#IntegrateAEMandAdobeStock)
-* [API voor integratie van Adobe I/O-console](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
+* [Adobe I/O Console Integration-API](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Adobe Stock API-documenten](https://www.adobe.io/apis/creativecloud/stock/docs.html)
