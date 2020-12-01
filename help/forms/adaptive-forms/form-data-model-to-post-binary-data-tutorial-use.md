@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Binaire gegevens verzenden met het formuliergegevensmodel{#using-form-data-model-to-post-binary-data}
+# Formuliergegevensmodel gebruiken om binaire gegevens te posten{#using-form-data-model-to-post-binary-data}
 
 Vanaf AEM Forms 6.4 kunnen we nu de service Formuliergegevensmodel aanroepen als een stap in AEM workflow. In dit artikel wordt een voorbeeld van een gebruiksgeval getoond voor het posten van een document met gebruik van de service Formuliergegevensmodel.
 
@@ -46,24 +46,24 @@ Service-invoer
 
 >[!NOTE]
 >
->Tips voor het oplossen van problemen - Als het bestand DOR.pdf om een of andere reden niet in DAM is gemaakt, kunt u de instellingen voor gegevensbronverificatie opnieuw instellen door [hier](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam)te klikken. Dit zijn de instellingen voor AEM verificatie, die standaard admin/admin zijn.
+>Tips voor het oplossen van problemen - Als de DOR.pdf om een of andere reden niet in DAM wordt gemaakt, stelt u de instellingen voor gegevensbronverificatie opnieuw in door [hier](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam) te klikken. Dit zijn de instellingen voor AEM verificatie, die standaard admin/admin zijn.
 
 Volg onderstaande stappen om deze mogelijkheid op uw server te testen:
 
-1.[Implementeer de DevelopingWithService-gebruikersbundel](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1.[De DevelopingWithService-gebruikerbundel implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
 1. [Download en implementeer de setvalue-bundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Deze aangepaste OSGI-bundel wordt gebruikt om metagegevenseigenschap te maken en de waarde ervan in te stellen op basis van de verzonden formuliergegevens.
 
-1. [Importeer de aan dit artikel gekoppelde elementen](assets/postdortodam.zip) in AEM met behulp van pakketbeheer. U krijgt het volgende
+1. [Importeer de aan dit artikel gekoppelde ](assets/postdortodam.zip) elementen in AEM via pakketbeheer. U krijgt de volgende opties
 
    1. Workflowmodel
    1. Adaptief formulier geconfigureerd voor verzending naar de AEM-workflow
    1. Gegevensbron geconfigureerd voor gebruik van het bestand PostToDam.JSON
    1. Formuliergegevensmodel dat gebruikmaakt van de gegevensbron
 
-1. Het adaptieve formulier openen in de [browser](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+1. Wijs uw [browser aan om de Aangepaste Vorm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled) te openen
 1. Vul het formulier in en verzend het.
 1. Controleer de toepassing Middelen als het Document of Record is gemaakt en opgeslagen.
 
 
-[Het wisselaarbestand](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) dat wordt gebruikt bij het maken van de gegevensbron is beschikbaar ter referentie
+[Voor uw referentie is een ](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) bestand beschikbaar dat wordt gebruikt bij het maken van de gegevensbron
