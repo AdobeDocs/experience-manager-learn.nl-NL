@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Dynamische media Klassieke hoofdworkflow en voorvertoningselementen {#main-workflow}
+# Dynamic Media Classic HoofdWorkflow en het voorvertonen van elementen {#main-workflow}
 
 Dynamische media ondersteunt het workflowproces Maken (en uploaden), Auteur (en Publiceren) en Leveren. U begint door activa te uploaden, dan iets met die activa te doen zoals het bouwen van een Reeks van het Beeld, en tenslotte te publiceren om hen levend te maken. De stap Build is optioneel voor bepaalde workflows. Als het bijvoorbeeld uw doel is om alleen dynamisch in te zoomen op afbeeldingen of video om te zetten en te publiceren voor streaming, zijn er geen benodigde stappen voor het maken van een build.
 
@@ -32,7 +32,7 @@ De workflow in Dynamic Media Classic-oplossingen bestaat uit drie hoofdstappen:
 
 Dit is het begin van de workflow. In deze stap verzamelt of maakt u de broninhoud die past in de workflow die u gebruikt en uploadt u deze naar Dynamic Media Classic. Het systeem ondersteunt meerdere bestandstypen voor afbeeldingen, video en lettertypen, maar ook voor PDF, Adobe Illustrator en Adobe InDesign.
 
-Zie de volledige lijst met [ondersteunde bestandstypen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
+Zie de volledige lijst met [Ondersteunde bestandstypen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 U kunt broninhoud op verschillende manieren uploaden:
 
@@ -45,7 +45,7 @@ De standaardmodus is Van bureaublad, waar u naar bestanden op uw lokale netwerk 
 
 >[!TIP]
 >
->Voeg niet handmatig uw mappen toe. Voer in plaats daarvan een upload uit via FTP en gebruik de optie **Inclusief submappen** om de mapstructuur opnieuw te maken in Dynamic Media Classic.
+>Voeg niet handmatig uw mappen toe. Voer in plaats daarvan een upload uit via FTP en gebruik de optie **Submappen opnemen** om de mapstructuur opnieuw te maken in Dynamic Media Classic.
 
 De twee belangrijkste uploadopties worden toegelaten door gebrek - **Teken voor Publish**, die wij eerder hebben besproken, en **Overschrijf**. Overschrijven betekent dat als het bestand dat wordt geüpload dezelfde naam heeft als een bestand dat al in het systeem staat, het nieuwe bestand de bestaande versie vervangt. Als u deze optie uitschakelt, wordt het bestand mogelijk niet geüpload.
 
@@ -53,23 +53,23 @@ De twee belangrijkste uploadopties worden toegelaten door gebrek - **Teken voor 
 
 Er zijn vier variaties van de optie Afbeelding overschrijven die u voor het hele bedrijf kunt instellen. Deze variaties worden vaak verkeerd begrepen. Kortom, u stelt de regels zodanig in dat elementen met dezelfde naam vaker moeten worden overschreven of dat overschrijvingen minder vaak moeten plaatsvinden (in dat geval krijgt de nieuwe afbeelding een andere naam met de extensie &quot;-1&quot; of &quot;-2&quot;).
 
-- **Overschrijf in de huidige map dezelfde naam/extensie**voor de basisafbeelding.
+- **Overschrijf in de huidige map dezelfde naam/extensie** voor de basisafbeelding.
 Deze optie is de strengste regel voor vervanging. Hiervoor moet u de vervangende afbeelding uploaden naar dezelfde map als het origineel en moet de vervangende afbeelding dezelfde bestandsnaamextensie hebben als het origineel. Als niet aan deze vereisten wordt voldaan, wordt een dubbel gecreeerd.
 
 - **Overschrijven in huidige map, dezelfde naam van basiselement, ongeacht de extensie**.
 U moet de vervangende afbeelding uploaden naar dezelfde map als het origineel, maar de bestandsnaamextensie kan afwijken van het origineel. bijvoorbeeld stoel.tif vervangt stoel.jpg.
 
-- **Overschrijf in een willekeurige map dezelfde naam/extensie**voor basiselementen.
+- **Overschrijf in een willekeurige map dezelfde naam/extensie** voor basiselementen.
 Vereist dat de vervangende afbeelding dezelfde bestandsnaamextensie heeft als de oorspronkelijke afbeelding (bijvoorbeeld stoel.jpg moet de naam stoel.jpg vervangen, niet stoel.tif ). U kunt de vervangende afbeelding echter naar een andere map uploaden dan het origineel. De bijgewerkte afbeelding staat in de nieuwe map; het bestand kan niet meer op de oorspronkelijke locatie worden gevonden.
 
 - **Overschrijf in elke map dezelfde naam voor basiselementen, ongeacht de extensie**.
 Deze optie is de meest inclusieve vervangingsregel. U kunt een vervangende afbeelding uploaden naar een andere map dan het origineel, een bestand met een andere bestandsnaamextensie uploaden en het oorspronkelijke bestand vervangen. Als het oorspronkelijke bestand zich in een andere map bevindt, bevindt de vervangende afbeelding zich in de nieuwe map waarnaar het is geüpload.
 
-Meer informatie over de optie [Afbeeldingen overschrijven](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
+Meer informatie over [Afbeeldingen overschrijven Option](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
 Hoewel dit niet verplicht is, kunt u tijdens het uploaden met een van de twee bovenstaande methoden taakopties voor die specifieke upload opgeven, bijvoorbeeld om een terugkerende upload te plannen, opties voor uitsnijden bij het uploaden instellen en vele andere. Deze kunnen voor sommige werkschema&#39;s waardevol zijn, zodat is het de moeite waard om te overwegen of zij voor van u kunnen zijn.
 
-Meer informatie over [taakopties](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+Meer informatie over [Taakopties](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
 Uploaden is de eerste noodzakelijke stap in een workflow, omdat Dynamic Media Classic niet kan werken met inhoud die zich nog niet in het systeem bevindt. Achter de schermen tijdens het uploaden registreert het systeem elk geüploade element met de gecentraliseerde Dynamic Media Classic-database, wijst een id toe en kopieert het naar opslag. Bovendien zet het systeem afbeeldingsbestanden om in een indeling waarmee u op dynamische wijze kunt vergroten/verkleinen en zoomen en zet het videobestanden om in de webvriendelijke indeling van MP4.
 
@@ -98,7 +98,7 @@ Op dezelfde manier kunt u uw master bronvideo uploaden naar Dynamic Media Classi
 
 **Hoewel er geen minimale afbeeldingsgrootte is, raden we u niet aan gigantische afbeeldingen te uploaden.** Een gigantische afbeelding kan worden beschouwd als meer dan 4000 pixels. Bij het uploaden van afbeeldingen van deze grootte kunnen mogelijke onvolkomenheden optreden, zoals stofkorrels of haren in de afbeelding. Zulke afbeeldingen nemen ook meer ruimte in beslag op de Dynamic Media Classic-server, waardoor u uw contractueel vastgelegde opslaglimiet kunt overschrijden.
 
-Meer informatie over het [uploaden van bestanden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+Meer informatie over [Bestanden uploaden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
 ## Stap 2: Auteur (en publiceren)
 
@@ -140,18 +140,18 @@ Nieuw geüploade en gepubliceerde elementen worden meteen zichtbaar, terwijl bij
 
 Dit is doorgaans geen probleem, tenzij er een fout is opgetreden en de afbeelding/het element dezelfde naam heeft als de eerder gepubliceerde versie, maar er is een probleem met de afbeelding. U hebt bijvoorbeeld per ongeluk een versie met een lage resolutie geüpload of uw art director heeft de afbeelding niet goedgekeurd. In dit geval wilt u de oorspronkelijke afbeelding terugroepen en deze vervangen door een nieuwe versie met dezelfde element-id.
 
-Leer hoe u de cache [handmatig kunt wissen voor de URL&#39;s die moeten worden bijgewerkt](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+Leer hoe te om [manueel het Geheime voorgeheugen voor URLs te ontruimen die moeten worden bijgewerkt](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
 >[!TIP]
 >
 >Om problemen met caching vertraging te vermijden, werk altijd vooruit — een avond, een dag, twee weken, enz. Stel uw werk in op tijd voor QA/acceptatie voor interne partijen voordat u het openbaar maakt. Zelfs als je een avond eerder werkt, kun je wijzigingen aanbrengen en die avond opnieuw publiceren. &#39;s Ochtends is de 10 uur verstreken en wordt de cache bijgewerkt met de juiste afbeelding.
 
-- Meer informatie over het [maken van een publicatietaak](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
-- Meer weten over [publiceren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html)?
+- Meer informatie over [Een publicatietaak maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- Meer informatie over [Publiceren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Stap 3: Leveren
 
-Vergeet niet dat het uiteindelijke product van een Klassieke Dynamic Media-workflow een URL is die naar het element verwijst. De URL verwijst mogelijk naar een afzonderlijke afbeelding, een Afbeeldingsset, een Spin-set of een andere verzameling of video in de Afbeeldingsset. U moet die URL nemen en er iets mee doen, zoals uw HTML bewerken zodat de `<IMG>` tags verwijzen naar de Klassieke afbeelding van Dynamic Media in plaats van naar een afbeelding die van uw huidige site afkomstig is.
+Vergeet niet dat het uiteindelijke product van een Klassieke Dynamic Media-workflow een URL is die naar het element verwijst. De URL verwijst mogelijk naar een afzonderlijke afbeelding, een Afbeeldingsset, een Spin-set of een andere verzameling of video in de Afbeeldingsset. U moet die URL nemen en er iets mee doen, zoals uw HTML bewerken zodat de `<IMG>`-tags verwijzen naar de Dynamic Media Classic-afbeelding in plaats van naar een afbeelding die van uw huidige site afkomstig is.
 
 In de stap Afleveren moet u deze URL&#39;s integreren in uw website, mobiele app, e-mailcampagne of een ander digitaal aanraakpunt waarop u het element wilt weergeven.
 
@@ -175,14 +175,14 @@ Voorbeeld van een koppeling (in rood) waarmee een afbeeldingsset in een viewer w
 
 ## Elementen voorvertonen
 
-U zult waarschijnlijk de activa willen voorproef u hebt geupload of creeert of uitgeeft om ervoor te zorgen zij verschijnen aangezien u wilt wanneer uw klanten hen bekijken. U hebt toegang tot het voorvertoningsvenster door op een van de **voorvertoningsknoppen** te klikken (op de miniatuur van het element, boven in het deelvenster **Bladeren/Samenstellen) of door naar** Bestand > Voorvertoning **** te gaan. In een browservenster wordt een voorvertoning weergegeven van het element dat zich momenteel in het deelvenster bevindt. Dit kan een afbeelding, video of samengesteld element zijn, zoals een Afbeeldingsset.
+U zult waarschijnlijk de activa willen voorproef u hebt geupload of creeert of uitgeeft om ervoor te zorgen zij verschijnen aangezien u wilt wanneer uw klanten hen bekijken. U kunt tot het venster van de Voorproef toegang hebben door om het even welke **knoop van de Voorproef**, of op de duimnagel van de activa, bij de bovenkant **te klikken doorbladert/bouwt Comité**, of door te gaan naar **Dossier > Voorproef**. In een browservenster wordt een voorvertoning weergegeven van het element dat zich momenteel in het deelvenster bevindt. Dit kan een afbeelding, video of samengesteld element zijn, zoals een Afbeeldingsset.
 
 ### Dynamische voorvertoning van grootte (voorinstellingen afbeelding)
 
-U kunt een voorvertoning van uw afbeeldingen in meerdere formaten weergeven met de voorvertoning **Grootte** . Hiermee wordt een lijst geladen met de beschikbare voorinstellingen voor afbeeldingen. We bespreken de voorinstellingen voor afbeeldingen later, maar beschouwen deze als &#39;recepten&#39; voor het laden van uw afbeelding op een benoemde grootte met specifieke mate van verscherping en afbeeldingskwaliteit.
+U kunt een voorvertoning van uw afbeeldingen in meerdere formaten weergeven met de voorvertoning **Grootte**. Hiermee wordt een lijst geladen met de beschikbare voorinstellingen voor afbeeldingen. We bespreken de voorinstellingen voor afbeeldingen later, maar beschouwen deze als &#39;recepten&#39; voor het laden van uw afbeelding op een benoemde grootte met specifieke mate van verscherping en afbeeldingskwaliteit.
 
 ### Voorvertoning zoomen
 
 U kunt de optie **Zoomen** ook gebruiken om een voorvertoning van uw afbeelding weer te geven in een van de vele vooraf gebouwde zoomvoorinstellingen, die zijn gebaseerd op verschillende inbegrepen zoomviewers.
 
-Meer weten over [voorvertoningen van middelen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html)?
+Meer informatie over [Elementen voorvertonen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
