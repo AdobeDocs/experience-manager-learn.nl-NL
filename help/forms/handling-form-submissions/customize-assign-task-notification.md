@@ -22,16 +22,16 @@ ht-degree: 0%
 # Taakmelding toewijzen aanpassen
 
 De taakcomponent toewijzen wordt gebruikt om taken toe te wijzen aan workflowdeelnemers. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of groepsleden.
-Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Deze dynamische gegevens worden opgehaald met de door het systeem gegenereerde [metagegevenseigenschappen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
+Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Deze dynamische gegevens worden opgehaald met het systeem [metagegevenseigenschappen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) worden gegenereerd.
 Als u waarden uit de verzonden formuliergegevens wilt opnemen in het e-mailbericht, moet u een eigenschap voor aangepaste metagegevens maken en deze eigenschappen voor aangepaste metagegevens in de e-mailsjabloon gebruiken
 
 
 
 ## Aangepaste metagegevenseigenschap maken
 
-De geadviseerde benadering is een component te creëren OSGI die de methode getUserMetadata van [WorkitemUserMetadataService uitvoert](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+De aanbevolen aanpak is het maken van een OSGI-component die de methode getUserMetadata van de [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--) implementeert
 
-De volgende code maakt 4 eigenschappen van metagegevens (_firstName_,_lastName_,_reason_ en _amountRequested_) en stelt de waarde ervan in op basis van de verzonden gegevens. De waarde van de eigenschap metadata _firstName_ wordt bijvoorbeeld ingesteld op de waarde van het element firstName uit de verzonden gegevens. De volgende code gaat ervan uit dat de verzonden gegevens van het adaptieve formulier de XML-indeling hebben. Adaptieve Forms op basis van JSON-schema of formuliergegevensmodel genereert gegevens in JSON-indeling.
+De volgende code maakt 4 metagegevenseigenschappen (_firstName_,_lastName_,_reason_ en _amountRequested_) en stelt de waarde ervan in op basis van de verzonden gegevens. Bijvoorbeeld, wordt het meta-gegevensbezit _firstName_ waarde geplaatst aan de waarde van het element genoemd firstName van de voorgelegde gegevens. De volgende code gaat ervan uit dat de verzonden gegevens van het adaptieve formulier de XML-indeling hebben. Adaptieve Forms op basis van JSON-schema of formuliergegevensmodel genereert gegevens in JSON-indeling.
 
 
 ```java
@@ -113,7 +113,7 @@ return customMetadataMap;
 
 ## De aangepaste eigenschappen voor metagegevens in de e-mailsjabloon voor taakmeldingen gebruiken
 
-In de e-mailsjabloon kunt u de eigenschap metadata opnemen door de volgende syntaxis te gebruiken waarbij amountRequested de eigenschap metadata is `${amountRequested}`
+In de e-mailsjabloon kunt u de eigenschap metadata opnemen door de volgende syntaxis te gebruiken waarbij amountRequested de eigenschap metadata `${amountRequested}` is
 
 ## Taak toewijzen om eigenschap voor aangepaste metagegevens te gebruiken
 
@@ -129,10 +129,10 @@ Nadat de component OSGi wordt gebouwd en in AEM server wordt opgesteld, vorm de 
 ## Om dit op uw server te proberen
 
 * [CQ-mailservice op dag configureren](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* Een geldige e-mailid koppelen aan een [beheerder](http://localhost:4502/security/users.html)
-* Download en installeer de [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) met behulp van [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Download het [adaptieve formulier](assets/request-travel-authorization.zip) en importeer het in AEM van de [formulieren en documenten ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* De [aangepaste bundel](assets/work-items-user-service-bundle.jar) implementeren en starten met de [webconsole](http://localhost:4502/system/console/bundles)
+* Een geldige e-mailid koppelen aan [admin-gebruiker](http://localhost:4502/security/users.html)
+* Download en installeer [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) met behulp van [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* Download [Adaptief formulier](assets/request-travel-authorization.zip) en importeer in AEM van de [formulieren en documenten ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* De [Aangepaste bundel](assets/work-items-user-service-bundle.jar) implementeren en starten met de [webconsole](http://localhost:4502/system/console/bundles)
 * [Een voorbeeld van het formulier bekijken en het formulier verzenden](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 Bij het verzenden van een formulier wordt het toewijzingsbericht verzonden naar de e-mailid die is gekoppeld aan de beheerder. De volgende schermafbeelding laat u het voorbeeld van een taaktoewijzingsmelding zien
