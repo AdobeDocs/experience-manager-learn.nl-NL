@@ -45,7 +45,7 @@ Homebrew is een opensource-pakketbeheer voor MacOS, Windows en Linux. Alle onder
 1. Controleer of Homebrew al is geïnstalleerd door de opdracht uit te voeren: `brew --version`.
 1. Als Homebrew niet is geïnstalleerd, installeert u Homebrew
    + [Homebrew installeren op macOS](https://brew.sh/)
-      + Voor Homebrew op MacOS zijn [Xcode](https://apps.apple.com/us/app/xcode/id497799835) - of [opdrachtregelprogramma](https://developer.apple.com/download/more/)&#39;s vereist die u via de opdracht kunt installeren:
+      + Voor HomeBrew op macOS is [Xcode](https://apps.apple.com/us/app/xcode/id497799835) of [Opdrachtregelprogramma&#39;s](https://developer.apple.com/download/more/) vereist, die u kunt installeren via de opdracht:
          + `xcode-select --install`
    + [Homebrew installeren op Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
    + [Homebrew installeren in Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
@@ -53,11 +53,11 @@ Homebrew is een opensource-pakketbeheer voor MacOS, Windows en Linux. Alle onder
 
 ![Homebrew](./assets/development-tools/homebrew.png)
 
-Als u Homebrew gebruikt, volgt u de instructies bij __Installeren met behulp van Homebrew__ in de onderstaande secties. Als u Homebrew __niet__ gebruikt, installeert u de gereedschappen met behulp van de OS-specifieke koppelingen.
+Als u Homebrew gebruikt, volgt u de __installatie met behulp van Homebrew__ instructies in de onderstaande secties. Als u __niet__ gebruikend Homebrew bent, installeer de hulpmiddelen gebruikend OS-specifieke verbindingen.
 
 ## Installatiegit
 
-[Git](https://git-scm.com/) is het bronbeheersysteem dat wordt gebruikt door [Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/source-code-repository.html)en is dus vereist voor ontwikkeling.
+[](https://git-scm.com/) Bitis het bronbeheersysteem dat door  [Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/source-code-repository.html) wordt gebruikt, en is dus vereist voor ontwikkeling.
 
 + Git installeren met Homebrew
    1. Open uw Eind/Herinnering van het Bevel
@@ -70,9 +70,9 @@ Als u Homebrew gebruikt, volgt u de instructies bij __Installeren met behulp van
 
 ![Git](./assets/development-tools/git.png)
 
-## Node.js (en npm) installeren{#node-js}
+## Node.js (en npm){#node-js} installeren
 
-[Node.js](https://nodejs.org) is een runtimeomgeving van JavaScript die wordt gebruikt om met de front-end activa van het __ui.frontend__ subproject van een AEM project te werken. Node.js wordt gedistribueerd met [npm](https://www.npmjs.com/), is de facto Node.js pakketmanager, die wordt gebruikt om JavaScript gebiedsdelen te beheren.
+[Node.](https://nodejs.org) jsis een runtimeomgeving van JavaScript die wordt gebruikt om met de front-end activa van het  __ui.__ frontendsubproject van een AEM project te werken. Node.js wordt gedistribueerd met [npm](https://www.npmjs.com/), is de facto Node.js pakketmanager, die wordt gebruikt om JavaScript gebiedsdelen te beheren.
 
 + Node.js installeren met Homebrew
    1. Open uw Eind/Herinnering van het Bevel
@@ -111,49 +111,49 @@ Apache Maven is het opensource Java-opdrachtregelprogramma dat wordt gebruikt om
 
 ## Adobe I/O CLI instellen{#aio-cli}
 
-De [Adobe I/O CLI](https://github.com/adobe/aio-cli), of `aio`, verleent bevellijntoegang tot een verscheidenheid van de diensten van Adobe, met inbegrip van de Manager [van de](https://github.com/adobe/aio-cli-plugin-cloudmanager) Wolk en [Activa Compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O CLI speelt een integrale rol in ontwikkeling op AEM als Cloud Service aangezien het ontwikkelaars de capaciteit verleent om:
+De [Adobe I/O CLI](https://github.com/adobe/aio-cli), of `aio`, verleent bevellijntoegang tot een verscheidenheid van de diensten van de Adobe, met inbegrip van [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) en [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O CLI speelt een integrale rol in ontwikkeling op AEM als Cloud Service aangezien het ontwikkelaars de capaciteit verleent om:
 
 + Logboeken van AEM als Cloud Services
 + Cloud Manager-pijpleidingen beheren vanuit de CLI
 
-### De Adobe I/O CLI installeren
+### Adobe I/O CLI installeren
 
-1. Zorg ervoor dat [Node.js is geïnstalleerd](#node-js) als Adobe I/O CLI een npm-module is
-   + Uitvoeren `node --version` om te bevestigen
-1. Uitvoeren `npm install -g @adobe/aio-cli` om de `aio` npm module globaal te installeren
+1. Zorg ervoor dat [Node.js is geïnstalleerd](#node-js) omdat de Adobe I/O CLI een npm-module is
+   + `node --version` uitvoeren om te bevestigen
+1. `npm install -g @adobe/aio-cli` uitvoeren om de `aio` npm module globaal te installeren
 
-### De plug-in Adobe I/O CLI Cloud Manager instellen{#aio-cloud-manager}
+### Insteekmodule Adobe I/O CLI Cloud Manager{#aio-cloud-manager} instellen
 
-Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI via de `aio cloudmanager` opdracht communiceren met Adobe Cloud Manager.
+Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI communiceren met Adobe Cloud Manager via de opdracht `aio cloudmanager`.
 
-1. Uitvoeren `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` om de insteekmodule [AIR Cloud Manager te installeren](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+1. `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` uitvoeren om de [insteekmodule voor AIR Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) te installeren.
 
-### De plug-in Adobe I/O CLI Asset Compute instellen{#aio-asset-compute}
+### De Adobe I/O CLI Asset compute-insteekmodule instellen{#aio-asset-compute}
 
-Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI workers Asset Compute genereren en uitvoeren via de `aio asset-compute` opdracht.
+Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI Asset compute-workers genereren en uitvoeren via de opdracht `aio asset-compute`.
 
-1. Voer uit `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` om de insteekmodule [AIR Asset Compute](https://github.com/adobe/aio-cli-plugin-asset-compute)te installeren.
+1. `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` uitvoeren om de [Asset compute plug-in](https://github.com/adobe/aio-cli-plugin-asset-compute) te installeren.
 
-### De Adobe I/O CLI-verificatie instellen
+### Adobe I/O CLI-verificatie instellen
 
-De Adobe I/O-CLI kan alleen communiceren met Cloud Manager als er een integratie met Cloud Manager is gemaakt in de Adobe I/O-console en als de gegevens zijn verkregen voor verificatie.
+De Adobe I/O CLI kan alleen communiceren met Cloud Manager als er in de Adobe I/O-console een integratie met Cloud Manager is gemaakt en als de gegevens zijn verkregen voor verificatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35094?quality=12&learn=on)
 
 1. Aanmelden bij [console.adobe.io](https://console.adobe.io)
 1. Zorg ervoor dat uw organisatie die het product Cloud Manager bevat waarmee verbinding moet worden gemaakt, actief is in de Adobe Org-switch
-1. Een nieuw of bestaand [Adobe I/O-programma maken](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md)
-   + Adobe I/O Console-programma&#39;s zijn eenvoudigweg organisatorische groepen integratie, maken of gebruiken en bestaande programma&#39;s op basis van hoe u uw integratie wilt beheren
+1. Nieuw of bestaand [Adobe I/O-programma](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) openen
+   + Adobe I/O Console-programma&#39;s zijn eenvoudigweg organisatiegroepen voor integratie, maken of gebruiken en bestaande programma&#39;s op basis van hoe u uw integratie wilt beheren
    + Als u een nieuw project maakt, selecteert u &quot;Leeg project&quot; indien hierom wordt gevraagd (vs. Maken op basis van sjabloon)
-   + Adobe I/O Console-programma&#39;s zijn verschillende concepten voor programma&#39;s van Cloud Manager
+   + Adobe I/O Console-programma&#39;s zijn verschillende concepten voor Cloud Manager-programma&#39;s
 1. Maak een nieuwe API-integratie voor Cloud Manager met het profiel &quot;Developer - Cloud Service&quot;
-1. Verkrijg de geloofsbrieven van de Rekening van de Dienst (JWT) moet Adobe I/O CLI [config.json bevolken](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication)
-1. Het `config.json` bestand in de Adobe I/O CLI laden
+1. Verkrijg de geloofsbrieven van de Rekening van de Dienst (JWT) moet Adobe I/O CLI [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) bevolken
+1. Het `config.json`-bestand in de Adobe I/O CLI laden
    + `$ aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
-1. Het `private.key` bestand in de Adobe I/O CLI laden
+1. Het `private.key`-bestand in de Adobe I/O CLI laden
    + `$ aio config:set jwt-auth.jwt_private_key PATH_TO_PRIVATE_KEY_FILE --file`
 
-Start [met het uitvoeren van opdrachten](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) voor Cloud Manager via de Adobe I/O CLI.
+Start [het uitvoeren van opdrachten](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) voor Cloud Manager via de Adobe I/O CLI.
 
 ## De ontwikkelings-IDE instellen
 
@@ -161,7 +161,7 @@ AEM ontwikkeling bestaat voornamelijk uit de ontwikkeling van Java en Front-end 
 
 ### IntelliJ IDEA
 
-__[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ is een krachtige IDE voor de ontwikkeling van Java. IntelliJ IDEA bestaat uit twee smaken, een gratis editie van de Gemeenschap en een commerciële (betaalde) ultieme versie. De gratis versie van de Gemeenschap is voldoende voor AEM ontwikkeling, maar de Ultimate [breidt haar mogelijkheden](https://www.jetbrains.com/idea/download)uit.
+__[IntelliJ ](https://www.jetbrains.com/idea/)__ IDEA is een krachtige IDE voor de ontwikkeling van Java. IntelliJ IDEA bestaat uit twee smaken, een gratis editie van de Gemeenschap en een commerciële (betaalde) ultieme versie. De gratis versie van de Gemeenschap is voldoende voor AEM ontwikkeling, maar de Ultimate [breidt zijn capaciteitenset](https://www.jetbrains.com/idea/download) uit.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26089/?quality=12&learn=on)
 
@@ -170,9 +170,9 @@ __[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ is een krachtige IDE voor d
 
 ### Microsoft Visual Studio-code
 
-__[De Code](https://code.visualstudio.com/)__ van Visual Studio (de Code van VS) is een vrij, open-bronhulpmiddel voor front-end ontwikkelaars. De Code van Visual Studio kan opstelling zijn om inhoudssynchronisatie met AEM met behulp van een hulpmiddel van Adobe te integreren, __[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)__.
+__[Visual Studio Code](https://code.visualstudio.com/)__  (de Code van VS) is een vrij, open-bronhulpmiddel voor front-end ontwikkelaars. De Code van Visual Studio kan opstelling zijn om inhoudssynchronisatie met AEM met behulp van een hulpmiddel van de Adobe te integreren, __[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)__.
 
-De Code van Visual Studio is de ideale keus voor front-end ontwikkelaars hoofdzakelijk die front-end code creëren; JavaScript, CSS en HTML. Terwijl de Code van VS steun Java via [uitbreidingen](https://code.visualstudio.com/docs/java/java-tutorial)heeft, kan het sommige geavanceerde eigenschappen missen die door meer Java-specifiek worden verstrekt.
+De Code van Visual Studio is de ideale keus voor front-end ontwikkelaars hoofdzakelijk die front-end code creëren; JavaScript, CSS en HTML. Terwijl de Code van VS steun van Java via [extensions](https://code.visualstudio.com/docs/java/java-tutorial) heeft, kan het sommige geavanceerde eigenschappen missen die door meer Java-specifiek worden verstrekt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
@@ -183,7 +183,7 @@ De Code van Visual Studio is de ideale keus voor front-end ontwikkelaars hoofdza
 
 ### Eclipse
 
-__[Eclipse IDE](https://www.eclipse.org/ide/)__ is een populaire IDEs voor de ontwikkeling van Java, en steunt de __[AEM stop van Hulpmiddelen](https://eclipse.adobe.com/aem/dev-tools/)__ van de Ontwikkelaar die door Adobe wordt verstrekt, die een in-IDE GUI voor creatie verstrekken en JCR inhoud met een lokale AEM instantie synchroniseren.
+__[Eclipse ](https://www.eclipse.org/ide/)__ IDE is een populaire IDEs voor ontwikkeling Java, en steunt   __[AEM ](https://eclipse.adobe.com/aem/dev-tools/)__ Toolsplug-in van de Ontwikkelaar die door Adobe wordt verstrekt, die een in-IDE GUI voor creatie verstrekken en JCR inhoud met een lokale AEM instantie synchroniseren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
