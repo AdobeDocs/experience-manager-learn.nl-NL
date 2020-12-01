@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Waarde van JSON-gegevenselement instellen in AEM Forms-workflow {#setting-value-of-json-data-element-in-aem-forms-workflow}
+# Waarde instellen van JSON-gegevenselement in AEM Forms-workflow {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
 Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in AEM workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier reviseert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
 
@@ -49,24 +49,24 @@ De elementen op uw lokale systeem implementeren:
 * [Download en implementeer de setvalue-bundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden JSON-gegevens kunt instellen.
 
 * [De inhoud van het ZIP-bestand downloaden en uitpakken](assets/set-value-jsondata.zip)
-   * De browser naar [pakketbeheer sturen](http://localhost:4502/crx/packmgr/index.jsp)
+   * Wijs uw browser aan [pakketmanager](http://localhost:4502/crx/packmgr/index.jsp)
       * Importeer en installeer de SetValueOfElementInJSONDataWorkflow.zip.This het pakket heeft het model van de steekproefwerkstroom en het Model van de Gegevens van de Vorm verbonden aan de vorm.
 
-* De browser naar [Forms en Documenten sturen](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Wijs uw browser aan [Forms en Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op Maken | Bestand uploaden
 * Het bestand TimeOffRequestForm.zip uploaden
    **Dit formulier is gemaakt met AEM Forms 6.4. Controleer of je op AEM Forms 6.4 of hoger bent**
-* Het [formulier openen](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
+* Open het [formulier](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Vul de begin- en einddatum in en verzend het formulier.
-* Ga naar [&quot;Postvak IN&quot;](http://localhost:4502/aem/inbox)
+* Naar [&quot;Inbox&quot;](http://localhost:4502/aem/inbox)
 * Open het formulier dat aan de taak is gekoppeld.
 * De velden in het eerste deelvenster zijn uitgeschakeld.
 * U ziet dat het deelvenster voor het goedkeuren of afwijzen van de aanvraag nu zichtbaar is.
 
 >[!NOTE]
 >
->Aangezien het adaptieve formulier al wordt ingevuld met een gebruikersprofiel, moet u de gegevens van het [gebruikersprofiel van de beheerder controleren ](http://localhost:4502/security/users.html). Zorg er minimaal voor dat u de veldwaarden FirstName, LastName en Email hebt ingesteld.
->U kunt registratie van foutopsporing inschakelen door logger voor com.aemforms.setvalue.core.SetValueInJson [vanaf hier in te schakelen](http://localhost:4502/system/console/slinglog)
+>Aangezien het adaptieve formulier al wordt ingevuld met behulp van een gebruikersprofiel, moet u de [gegevens van het gebruikersprofiel ](http://localhost:4502/security/users.html) beheren. Zorg er minimaal voor dat u de veldwaarden FirstName, LastName en Email hebt ingesteld.
+>U kunt registratie van foutopsporing inschakelen door logger voor com.aemforms.setvalue.core.SetValueInJson [hier](http://localhost:4502/system/console/slinglog) in te schakelen
 
 >[!NOTE]
 >
