@@ -23,7 +23,7 @@ AEM ondersteunt het aanpassen van de uitvoer van de annotatie naar PDF.
 
 ## PDF-annotatie instellen:definitie van OsgiConfig
 
-Als u PDF-annotaties wilt aanpassen, maakt u een **sling:OsgiConfig** -knooppunt in het AEM project onder
+Als u PDF-annotaties wilt aanpassen, maakt u een **sling:OsgiConfig**-knooppunt in het AEM project onder
 
 `/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml` en pas zo nodig de waarden aan:
 
