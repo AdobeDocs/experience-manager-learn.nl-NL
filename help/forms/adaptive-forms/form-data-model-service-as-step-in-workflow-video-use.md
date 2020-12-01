@@ -29,16 +29,16 @@ Vanaf AEM Forms 6.4 kunnen we nu het formuliergegevensmodel gebruiken als onderd
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen
 * [Download en implementeer de setvalue-bundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee eigenschappen van metagegevens worden ingesteld.
->!![NOTE]In AEM Forms 6.5 en hoger is deze mogelijkheid beschikbaar buiten het vak, zoals hier [beschreven](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+>!![NOTE]In AEM Forms 6.5 en hoger is deze mogelijkheid beschikbaar buiten het vak, zoals hier  [beschreven](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
-* Setup tomcat met SampleRest.war-bestand zoals [hier](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)beschreven. Het oorlogsbestand dat in Tomcat wordt geïmplementeerd, heeft de code om de creditscore van de aanvrager te retourneren. De creditscore is een willekeurig getal tussen 200 en 800
+* Setup tomcat met SampleRest.war-bestand zoals beschreven [hier](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).Het oorlogsbestand dat in Tomcat wordt geïmplementeerd, heeft de code om de creditscore van de aanvrager te retourneren. De creditscore is een willekeurig getal tussen 200 en 800
 
 * [Importeer de elementen in AEM met behulp van pakketbeheer](assets/invoke-fdm-as-service-step.zip). Het pakket bevat het volgende:
 
    * Workflowmodel dat gebruikmaakt van FDM-stap.
    * Formuliergegevensmodel dat wordt gebruikt in de FDM-stap.
    * Aangepast formulier om de workflow bij verzending te activeren.
-* Open het [MortgaugeApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Vul de gegevens in en verzend deze. Bij het verzenden van het formulier wordt de workflow [van de](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) toepassing geactiveerd.
+* Open [MortgaugeApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Vul de gegevens in en verzend deze. Bij het verzenden van het formulier wordt de [werkstroom van de leningtoepassing](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) geactiveerd.
 
-![ workflow ](assets/fdm-as-service-step-workflow.PNG).
+![ workflow  ](assets/fdm-as-service-step-workflow.PNG).
 De workflow gebruikt de component Splitsen of Splitsen om de toepassing naar de beheerder te leiden als de creditscore hoger is dan 500. Als de creditscore lager is dan 500, wordt de toepassing gerouteerd naar cavery
