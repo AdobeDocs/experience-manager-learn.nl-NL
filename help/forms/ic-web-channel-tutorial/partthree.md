@@ -34,6 +34,6 @@ Het Model van de Gegevens van de vorm is afhankelijk van een correct gevormde Ge
 
 Het Model van de Gegevens van de vorm is de basis voor al uw Interactieve Mededelingen. Met de bewerking Ophalen/lezen van het formuliergegevensmodel worden de gegevens opgehaald van de gegevensbron van de back-end en wordt het document Interactieve communicatie gevuld.
 
-Voor meer informatie over het vormen van Gegevensbronnen gelieve deze [verbinding te volgen.&quot;](parttwo.md)
+Voor meer informatie over het vormen van Gegevensbronnen gelieve dit [link`](parttwo.md) te volgen
 
 Nadat u het formuliergegevensmodel hebt gemaakt, kunt u het gebruiken als basis voor het maken van documentfragmenten en interactieve communicatiedocumenten.
