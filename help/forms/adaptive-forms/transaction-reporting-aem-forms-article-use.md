@@ -20,11 +20,11 @@ ht-degree: 0%
 ---
 
 
-# Transactierapportage in AEM Forms gebruiken{#using-transaction-reporting-in-aem-forms}
+# Transactierapportering gebruiken in AEM Forms{#using-transaction-reporting-in-aem-forms}
 
 Transactierapporten om het aantal verzonden formulieren, het weergeven van documenten met behulp van documentservices en het weergeven van interactieve communicatie (web- en afdrukkanalen) vast te leggen, zijn geïntroduceerd in AEM Forms 6.4.1. Deze mogelijkheid is vooral bedoeld voor klanten die een licentie voor de software willen verkrijgen op basis van het aantal verzonden formulieren en/of documenten. Deze mogelijkheid is momenteel alleen beschikbaar in AEM Forms OSGI-stapels.
 
-## Transactierapportage inschakelen {#enabling-transaction-reporting}
+## Transactierapportage {#enabling-transaction-reporting} inschakelen
 
 Standaard is het opnemen van transacties uitgeschakeld. Volg onderstaande stappen om het opnemen van transacties in te schakelen:
 
@@ -35,13 +35,13 @@ Standaard is het opnemen van transacties uitgeschakeld. Volg onderstaande stappe
 
 Zodra transactierapportage is ingeschakeld, kunt u Adaptief Forms verzenden, documenten genereren met behulp van documentservices of Interactieve communicatiedocumenten genereren om transactierapportering in actie te zien.
 
-## Transactierapport bekijken {#viewing-transaction-report}
+## Transactierapport {#viewing-transaction-report} weergeven
 
 Meld u aan bij AEM Forms als beheerder om het transactierapport weer te geven. Alleen leden van de groep fd-beheerder kunnen het transactierapport weergeven.
 
 Gereedschappen selecteren | Forms | Transactierapport weergeven
 
-of bekijk het transactierapport door [hier te klikken](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+of bekijk het transactierapport door [hier](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html) te klikken
 
 ![TransctionReporting](assets/transactionreporting.gif)
 
@@ -53,5 +53,5 @@ Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruike
 
 Als u het transactierapport over de auteursinstantie bekijkt, zorg ervoor de omgekeerde replicatie op alle publiceer instanties wordt gevormd.
 
-Klik hier voor meer informatie over transactierapporten [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Voor meer informatie over transactierapporteren [klik hier](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
 
