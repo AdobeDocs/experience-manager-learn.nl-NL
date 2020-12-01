@@ -203,5 +203,5 @@ public class MarketoConfigurationService {
 ```
 
 1. De bundel op uw AEM server bouwen en implementeren.
-1. [Verwijs uw browser aan configMgr](http://localhost:4502/system/console/configMgr) en onderzoek naar de Configuratie van de Dienst van de Credentials van de Marketo
+1. [Verwijs uw browser aan ](http://localhost:4502/system/console/configMgr) configMGrand onderzoek naar de Configuratie van de Dienst van de Credentials van de Marketo
 1. Geef de juiste eigenschappen op die specifiek zijn voor uw Marketo-instantie
