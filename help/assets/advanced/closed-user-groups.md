@@ -36,7 +36,7 @@ Gesloten gebruikersgroepen (CUG&#39;s) is een functie die wordt gebruikt om de t
 
 We.Retail-leden Group toegevoegd als een gesloten gebruikersgroep aan de map: /content/dam/we-retail/nl/beta-products
 
-Een combinatie van **rep:CugMixin** wordt toegepast op de map **/content/dam/we-retail/en/beta-products** . Een knoop van **rep:cugPolicy** wordt toegevoegd onder de omslag en wij-kleinhandelsleden wordt gespecificeerd als hoofd. Een andere combinatie van **graniet:AuthenticationRequired** wordt toegepast op de map beta-products en de eigenschap* granite:loginPath** geeft aan welke aanmeldingspagina moet worden gebruikt als een gebruiker niet is geverifieerd en probeert een element aan te vragen onder de map **beta-products** .
+Er wordt een mengsel van **rep:CugMixin** toegepast op de map **/content/dam/we-retail/en/beta-products**. Een knoop van **rep:cugPolicy** wordt toegevoegd onder de omslag en wij-kleinhandelsleden wordt gespecificeerd als hoofd. Een andere combinatie van **granite:AuthenticationRequired** wordt toegepast op de map beta-products en de eigenschap** granite:loginPath** geeft aan welke aanmeldingspagina moet worden gebruikt als een gebruiker niet is geverifieerd en probeert een element aan te vragen onder de map **bètaproducten**.
 
 Beschrijving van JCR hieronder:
 
@@ -56,7 +56,7 @@ Zowel worden de Gesloten Groepen van de Gebruiker (KUG) als de Lijsten van het T
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Beoogd gebruik | Configureer en pas machtigingen voor inhoud toe op de **huidige** AEM. | Configureer CUG-beleid voor inhoud op AEM **auteurinstantie** . CUG-beleid toepassen op inhoud op AEM **publicatie** -instantie(s). |
+| Beoogd gebruik | Vorm en pas toestemmingen voor inhoud op de **huidige** AEM instantie toe. | Configureer CUG-beleid voor inhoud op AEM **auteur**-instantie. CUG-beleid toepassen op inhoud op AEM **publish**-instantie(s). |
 | Machtigingsniveaus | Bepaalt verleende/ontkende toestemmingen voor gebruikers/groepen voor alle niveaus: Lees, wijzig, creeer, schrap, leest ACL, geef ACL uit, herhaal. | Subsidies lezen toegang tot een set gebruikers/groepen. Weigert leestoegang tot alle andere gebruikers/groepen. |
 | Replicatie | ACLs wordt niet herhaald met inhoud. | CUG-beleid wordt gerepliceerd met inhoud. |
 
