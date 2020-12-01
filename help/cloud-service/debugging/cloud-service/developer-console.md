@@ -26,12 +26,12 @@ Elke AEM als Cloud Service heeft zijn eigen Developer Console.
 
 ## Toegang tot ontwikkelaarsconsole
 
-Om tot de Console van de Ontwikkelaar toegang te hebben en te gebruiken moeten de volgende toestemmingen aan de ontwikkelaar Adobe ID via [Adobe Admin Console](https://adminconsole.adobe.com)worden gegeven.
+Om tot de Console van de Ontwikkelaar toegang te hebben en te gebruiken moeten de volgende toestemmingen aan de Adobe ID van de ontwikkelaar via [Adobe Admin Console](https://adminconsole.adobe.com) worden gegeven.
 
 1. Zorg ervoor dat de Adobe Org die Cloud Manger en AEM als producten van de Cloud Service heeft aangetast, actief is in de Adobe Org-switch.
-1. De ontwikkelaar moet lid zijn van het productprofiel voor __ontwikkelaars en Cloud Servicen__ van Cloud Manager.
+1. De ontwikkelaar moet lid zijn van het productprofiel __Developer - Cloud Service__ van Cloud Manager.
    + Als dit lidmaatschap niet bestaat, kan de ontwikkelaar zich niet aanmelden bij de Developer Console.
-1. De ontwikkelaar moet lid zijn van het productprofiel van AEM-auteur en -publicatieservice __AEM Beheerders__ .
+1. De ontwikkelaar moet lid zijn van het __AEM Beheerders__ Productprofiel van de AEM-auteur en -publicatieservice.
    + Als dit lidmaatschap niet bestaat, zal de [status](#status) dumps onderbreking met een 401 Onbevoegde fout.
 
 ### Toegang tot ontwikkelaarsconsole voor probleemoplossing
@@ -72,7 +72,7 @@ Status biedt opties voor het uitvoeren van specifieke AEM runtime status in teks
 
 ### Bundels
 
-Bij bundels worden alle OSGi-bundels in AEM weergegeven. Deze functionaliteit is vergelijkbaar met de lokale OSGi-bundels [van](http://localhost:4502/system/console/bundles) AEM SDK bij `/system/console/bundles`.
+Bij bundels worden alle OSGi-bundels in AEM weergegeven. Deze functionaliteit is vergelijkbaar met de lokale OSGi Bundles](http://localhost:4502/system/console/bundles) van [AEM SDK op `/system/console/bundles`.
 
 Bundels helpen bij het opsporen van fouten door:
 
@@ -82,7 +82,7 @@ Bundels helpen bij het opsporen van fouten door:
 
 ### Onderdelen
 
-De componenten maken een lijst van alle componenten OSGi in AEM. Deze functionaliteit is vergelijkbaar met de lokale OSGi Components [van](http://localhost:4502/system/console/components) AEM SDK bij `/system/console/components`.
+De componenten maken een lijst van alle componenten OSGi in AEM. Deze functionaliteit is vergelijkbaar met [AEM de lokale QuickStart-componenten van OSGi Components](http://localhost:4502/system/console/components) op `/system/console/components`.
 
 Componenten helpen bij het opsporen van fouten door:
 
@@ -93,7 +93,7 @@ Componenten helpen bij het opsporen van fouten door:
 
 ### Configuraties
 
-De configuraties maken een lijst van alle configuraties van de component OSGi (eigenschappen OSGi en waarden). Deze functionaliteit is gelijkaardig aan de lokale Manager [van de Configuratie van](http://localhost:4502/system/console/configMgr) AEM SDK van de QuickStart OSGi bij `/system/console/configMgr`.
+De configuraties maken een lijst van alle configuraties van de component OSGi (eigenschappen OSGi en waarden). Deze functionaliteit is gelijkaardig aan [AEM de lokale QuickStart Manager van de Configuratie OSGi van SDK](http://localhost:4502/system/console/configMgr) bij `/system/console/configMgr`.
 
 Configuraties helpen bij het opsporen van fouten door:
 
@@ -102,7 +102,7 @@ Configuraties helpen bij het opsporen van fouten door:
 
 ### eiken indexen
 
-De indexen van de eiken verstrekken een stortplaats van de hieronder bepaalde knopen `/oak:index`. Onthoud dat hier geen samengevoegde indexen worden weergegeven, die optreden wanneer een AEM index wordt gewijzigd.
+De indexen van de eiken verstrekken een stortplaats van de knopen onder `/oak:index` worden bepaald. Onthoud dat hier geen samengevoegde indexen worden weergegeven, die optreden wanneer een AEM index wordt gewijzigd.
 
 De Indexen van het eiken helpen in het zuiveren door:
 
@@ -110,7 +110,7 @@ De Indexen van het eiken helpen in het zuiveren door:
 
 ### OSGi Services
 
-De componenten maken een lijst van alle diensten OSGi. Deze functionaliteit is gelijkaardig aan [AEM lokale Quickstart van de Diensten](http://localhost:4502/system/console/services) OSGi van SDK bij `/system/console/services`.
+De componenten maken een lijst van alle diensten OSGi. Deze functionaliteit is vergelijkbaar met [AEM de lokale QuickStart OSGi Services van SDK](http://localhost:4502/system/console/services) op `/system/console/services`.
 
 De hulp van OSGi Services in het zuiveren door:
 
@@ -118,7 +118,7 @@ De hulp van OSGi Services in het zuiveren door:
 
 ### Verkooptaken
 
-De het verkopen Banen maakt een lijst van alle het Verschuiven Banen rijen. Deze functionaliteit is vergelijkbaar met de lokale QuickStart-taken [van](http://localhost:4502/system/console/slingevent) AEM SDK op `/system/console/slingevent`.
+De het verkopen Banen maakt een lijst van alle het Verschuiven Banen rijen. Deze functionaliteit is vergelijkbaar met [AEM lokale QuickStart&#39;s Jobs](http://localhost:4502/system/console/slingevent) op `/system/console/slingevent`.
 
 Het verkopen van Banen helpt in het zuiveren door:
 
@@ -127,7 +127,7 @@ Het verkopen van Banen helpt in het zuiveren door:
 
 ## Java-pakketten
 
-Met Java Packages kan worden gecontroleerd of een Java-pakket en -versie beschikbaar zijn voor gebruik in AEM als Cloud Service. Deze functionaliteit is hetzelfde als de lokale Quickstart-zoeker [van](http://localhost:4502/system/console/depfinder) AEM SDK bij `/system/console/depfinder`.
+Met Java Packages kan worden gecontroleerd of een Java-pakket en -versie beschikbaar zijn voor gebruik in AEM als Cloud Service. Deze functionaliteit is het zelfde als [AEM lokale kwickstart&#39;s Vinder van de Afhankelijkheid ](http://localhost:4502/system/console/depfinder) bij `/system/console/depfinder`.
 
 ![Developer Console - Java Packages](./assets/developer-console/java-packages.png)
 
@@ -136,11 +136,11 @@ Java Packages wordt gebruikt om problemen op te lossen met bundels die niet word
 + Zorg ervoor dat de AEM API van uw project in overeenstemming is met de versie van de AEM van de omgeving (en werk indien mogelijk alles bij naar de meest recente versie).
 + Als de extra Geweven gebiedsdelen in het Maven project worden gebruikt
    + Bepaal of in plaats daarvan een alternatieve API kan worden gebruikt die wordt geleverd door de AEM-API-afhankelijkheid.
-   + Als de extra afhankelijkheid wordt vereist, zorg ervoor het als bundel OSGi (eerder dan a gewone Jar) verstrekt en het in het codepakket van uw project, (`ui.apps`), gelijkend op hoe de kernOSGi- Bundel in het `ui.apps` pakket wordt ingebed.
+   + Als de extra afhankelijkheid wordt vereist, zorg ervoor het als bundel OSGi (eerder dan gewone Jar) verstrekt en het in het codepakket van uw project, (`ui.apps`), gelijkend op hoe de kernOSGi- Bundel in `ui.apps` pakket wordt ingebed.
 
 ## Servlets
 
-De servers worden gebruikt om inzicht te verstrekken over hoe AEM een URL aan een servlet of manuscript van Java (HTML, JSP) oplost die uiteindelijk het verzoek behandelt. Deze functionaliteit is hetzelfde als de lokale QuickStart-oplosser [van](http://localhost:4502/system/console/servletresolver) SDK voor Sling Servlet bij `/system/console/servletresolver`.
+De servers worden gebruikt om inzicht te verstrekken over hoe AEM een URL aan een servlet of manuscript van Java (HTML, JSP) oplost die uiteindelijk het verzoek behandelt. Deze functionaliteit is het zelfde als [AEM lokale QuickStart van SDK Sling Servlet Resolver](http://localhost:4502/system/console/servletresolver) bij `/system/console/servletresolver`.
 
 ![Ontwerpconsole - Servlets](./assets/developer-console/servlets.png)
 
@@ -151,7 +151,7 @@ Servlets helpt bij het bepalen van foutopsporing:
 
 ## Zoekopdrachten
 
-Zoekopdrachten helpen u inzicht te verschaffen in wat en hoe zoekopdrachten worden uitgevoerd op AEM. Deze functionaliteit is hetzelfde als de lokale QuickStart-tools > Query Performance- [console van ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) AEM SDK.
+Zoekopdrachten helpen u inzicht te verschaffen in wat en hoe zoekopdrachten worden uitgevoerd op AEM. Deze functionaliteit is hetzelfde als de lokale QuickStart-tools > Query Performance ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)-console van [AEM SDK.
 
 Zoekopdrachten werken alleen wanneer een specifieke pod is geselecteerd, omdat deze de webconsole van Query Performance van die pod opent, waarbij de ontwikkelaar toegang moet hebben om zich aan te melden bij de AEM.
 
