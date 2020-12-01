@@ -32,7 +32,7 @@ In dit deel, zullen wij cirkelgrafieken toevoegen om de huidige en modelinvester
 
 * We voegen twee schijfgrafieken toe die de huidige en modelinvesteringsmix van de rekeninghouder weergeven.
 
-## Huidige middelenmix {#current-asset-mix}
+## Huidige assetmix {#current-asset-mix}
 
 * Tik op het deelvenster &quot;CurrentAssetMix&quot; aan de rechterkant en selecteer het pictogram &quot;+&quot; en voeg tekstcomponent in. Wijzig de standaardtekst in &quot;Huidige assetmix&quot;.
 
