@@ -88,7 +88,7 @@ public class PrefillAdaptiveForm implements DataProvider {
 Voer het volgende uit om deze mogelijkheid op uw server te testen
 
 * [Download en extraheer de inhoud van het ZIP-bestand naar uw computer](assets/prefillservice.zip)
-* Controleer of de profielgegevens [van de aangemelde](http://localhost:4502/libs/granite/security/content/useradmin) gebruiker volledig zijn ingevuld. Dit is een vereiste voor het voorbeeld. Het voorbeeld bevat geen foutcontrole voor ontbrekende eigenschappen van gebruikersprofielen.
+* Zorg ervoor het het programma geopende [gebruikersprofiel](http://localhost:4502/libs/granite/security/content/useradmin) informatie volledig wordt ingevuld. Dit is een vereiste voor het voorbeeld. Het voorbeeld bevat geen foutcontrole voor ontbrekende eigenschappen van gebruikersprofielen.
 * De bundel implementeren met de [AEM webconsole](http://localhost:4502/system/console/bundles)
 * Adaptief formulier maken met de XSD
 * &quot;Custom Aem Form Pre Fill Service&quot; koppelen als de vooraf ingevulde service voor uw adaptieve formulier
@@ -99,5 +99,5 @@ Voer het volgende uit om deze mogelijkheid op uw server te testen
 >
 >Als het adaptieve formulier is gebaseerd op XSD, moet u ervoor zorgen dat het XML-document dat door de Prefill-service wordt geretourneerd, overeenkomt met de XSD waarop het adaptieve formulier is gebaseerd.
 >
->Als het adaptieve formulier niet is gebaseerd op XSD, moet u de velden handmatig binden. Als u bijvoorbeeld een adaptief formulierveld bindt aan een naamelement in de XML-gegevens die u gebruikt `/data/fname` in de bindverwijzing van het adaptieve formulierveld.
+>Als het adaptieve formulier niet is gebaseerd op XSD, moet u de velden handmatig binden. Als u bijvoorbeeld een adaptief formulierveld bindt aan een naamelement in de XML-gegevens die u `/data/fname` gebruikt in de bindingsverwijzing van het adaptieve formulierveld.
 
