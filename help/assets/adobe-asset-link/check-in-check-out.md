@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Uitchecken van inchecken {#check-in-check-out}
+# Uitchecken {#check-in-check-out}
 
 Met Adobe Asset kunt u AEM Assets rechtstreeks uitchecken vanuit de creatieve app waaraan u werkt en kunt u direct beginnen met het maken van bewerkingen. U kunt middelen eenvoudig terugchecken naar AEM Assets met de juiste versie en opmerkingen nadat u ze hebt bewerkt in uw Creative Cloud-app.
 
