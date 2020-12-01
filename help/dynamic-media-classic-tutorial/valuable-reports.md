@@ -42,7 +42,7 @@ We hopen dat u de inhoud in deze handleiding met best practices hebt gevonden om
 
 Als u meer wilt weten over Dynamic Media Classic, bekijkt u de volgende bronnen:
 
-- [Dynamic Media Classic op Experience League - Profiteer van waarde](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic op Experience League - Ophalen tot waarde](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic op Experience League - Meer doen](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [Dynamische media-nieuwsbrieven archiveren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Subscription Page in Dynamic Media Newsletter](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
