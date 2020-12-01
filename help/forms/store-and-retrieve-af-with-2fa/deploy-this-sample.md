@@ -33,11 +33,11 @@ In dit voorbeeld wordt de MySQL-database gebruikt om de adaptieve formuliergegev
 
 ## Gegevensbron maken
 
-U moet een gegevensbron tot stand brengen genoemd **StoreAndRetrieveAfData**. De code in de bundel OSGi gebruikt deze datasource naam
+U moet een gegevensbron creëren genoemd **StoreAndRetrieveAfData**. De code in de bundel OSGi gebruikt deze datasource naam
 
 ## Formuliergegevensmodel maken
 
-Het Model van de Gegevens van de vorm moet op deze gegevensbron worden gecreeerd genoemd **StoreAndRetrieveAfData**. Dit formuliergegevensmodel wordt gebruikt om het mobiele-telefoonnummer op te halen dat aan de toepassings-id is gekoppeld. Het formuliergegevensmodel kan hier worden [gedownload.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
+Het Model van de Gegevens van de vorm moet op deze gegevensbron worden gecreeerd genoemd **StoreAndRetrieveAfData**. Dit formuliergegevensmodel wordt gebruikt om het mobiele-telefoonnummer op te halen dat aan de toepassings-id is gekoppeld. Het formuliergegevensmodel kan [hier worden gedownload.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
 
 ## Ontwikkelaarsaccount maken met nexmo
 
@@ -45,7 +45,8 @@ Maak een ontwikkelaarsaccount met [Nexmo](https://dashboard.nexmo.com/) voor het
 
 ## De volgende OSGi-bundels implementeren
 
-Stel de bundel op die de [code heeft om gegevens van gegevensbestand](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)op te slaan en te halen stelt het [DevelopingWithServiceUser Bundel](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)op.
+Implementeer de bundel die de [code bevat om gegevens uit de database op te slaan en op te halen](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+Implementeer [DevelopingWithServiceUser Bundle](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 
 ## De clientbibliotheek implementeren
 
@@ -53,17 +54,18 @@ In het voorbeeld worden twee clientbibliotheken gebruikt. Importeer deze [client
 
 ## De aangepaste adaptieve formuliersjabloon importeren
 
-De voorbeeldformulieren die in deze demo worden gebruikt, zijn gebaseerd op een aangepaste sjabloon. De [aangepaste sjabloon importeren in AEM](assets/custom-template-with-page-component.zip)
+De voorbeeldformulieren die in deze demo worden gebruikt, zijn gebaseerd op een aangepaste sjabloon. Importeer de [aangepaste sjabloon in AEM](assets/custom-template-with-page-component.zip)
 
 ## De adaptieve voorbeeldformulieren importeren
 
-De twee formulieren waaruit dit voorbeeld bestaat, moeten in AEM worden geïmporteerd. De voorbeeldformulieren kunnen hier worden [gedownload](assets/sample-forms.zip)
+De twee formulieren waaruit dit voorbeeld bestaat, moeten in AEM worden geïmporteerd. De voorbeeldformulieren kunnen [hier worden gedownload](assets/sample-forms.zip)
 
-Open the [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in edit mode. Geef de waarden voor de API-sleutel en het API-geheim op in de desbetreffende velden in het adaptieve formulier.
+Open [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in bewerkingsmodus. Geef de waarden voor de API-sleutel en het API-geheim op in de desbetreffende velden in het adaptieve formulier.
 
 ## De oplossing testen
 
-Geef een voorvertoning weer van de [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)Voer uw mobiele nummer in, inclusief de landcode, vul uw gebruikersgegevens in en voeg enkele bijlagen toe. Klik op de knop &quot;Opslaan en afsluiten&quot; om het aangepaste formulier en de bijbehorende bijlagen op te slaan
+Voorvertoning van de [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
+Voer uw mobiele nummer in, inclusief de landcode, vul uw gebruikersgegevens in en voeg enkele bijlagen toe. Klik op de knop &quot;Opslaan en afsluiten&quot; om het aangepaste formulier en de bijbehorende bijlagen op te slaan
 
 
 ## Bewijs van de gebruikszaak
