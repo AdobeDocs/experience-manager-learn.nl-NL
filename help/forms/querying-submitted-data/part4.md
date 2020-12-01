@@ -23,9 +23,9 @@ ht-degree: 0%
 
 De volgende stap is de voorgelegde gegevens te vragen en de resultaten in tabelvorm te tonen. Hiervoor gebruiken we de volgende software
 
-[QueryBuilder](https://querybuilder.js.org/) - UI-component om query&#39;s te maken
+[De component van QueryBuilder](https://querybuilder.js.org/)  - UI om vragen tot stand te brengen
 
-[De Lijsten](https://datatables.net/)van gegevens - om de vraagresultaten in tabelvorm te tonen.
+[De Lijsten](https://datatables.net/) van gegevens - om de vraagresultaten in tabelvorm te tonen.
 
 De volgende UI werd gebouwd om het vragen van de voorgelegde gegevens toe te laten. Alleen de elementen die zijn gemarkeerd als vereist in het JSON-schema, worden beschikbaar gesteld voor query. In het onderstaande screenshot vragen we om alle inzendingen waar de bezorgpref SMS is.
 
@@ -37,7 +37,7 @@ De steekproef UI om de voorgelegde gegevens te vragen gebruikt niet alle geavanc
 >
 >De huidige versie van deze zelfstudie ondersteunt het opvragen van meerdere kolommen niet.
 
-Wanneer u een formulier selecteert om uw query uit te voeren, wordt een GET-aanroep naar **/bin/getdatakeysfromschema** uitgevoerd. Deze aanroep van GET retourneert de vereiste velden die zijn gekoppeld aan het schema van het formulier. De vereiste gebieden worden dan bevolkt in de drop-down lijst van QueryBuilder voor u om de vraag te bouwen.
+Wanneer u een vorm selecteert om uw vraag uit te voeren wordt een vraag van de GET gemaakt aan **/bin/getdatakeysfromschema**. Deze aanroep van GET retourneert de vereiste velden die zijn gekoppeld aan het schema van het formulier. De vereiste gebieden worden dan bevolkt in de drop-down lijst van QueryBuilder voor u om de vraag te bouwen.
 
 Het volgende codefragment maakt een vraag aan de methode getRequiredColumnsFromSchema van de dienst JSONSchemaOperations. Wij gaan de eigenschappen en de vereiste elementen van het schema tot deze methodevraag over. De serie die door deze functievraag is teruggekeerd wordt dan gebruikt om de drop-down lijst van de vraagbouwer te bevolken
 
@@ -75,6 +75,6 @@ Voer de volgende stappen uit om dit voorbeeld op uw lokale systeem uit te voeren
 1. Een adaptief formulier maken met het JSON-voorbeeldschema
 1. Configureer het adaptieve formulier voor verzending naar de aangepaste verzendactie &quot;custom submit&quot;
 1. Het formulier invullen en verzenden
-1. De browser naar [dashboard.html verwijzen](http://localhost:4502/content/AemForms/dashboard.html)
+1. Wijs uw browser aan [dashboard.html](http://localhost:4502/content/AemForms/dashboard.html)
 1. Selecteer het formulier en voer een eenvoudige query uit
 
