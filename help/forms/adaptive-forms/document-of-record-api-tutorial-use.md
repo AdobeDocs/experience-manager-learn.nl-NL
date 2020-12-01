@@ -20,11 +20,11 @@ ht-degree: 0%
 ---
 
 
-# API gebruiken om een document met records te genereren in AEM Forms {#using-api-to-generate-document-of-record-with-aem-forms}
+# API gebruiken om het Document van Verslag in AEM Forms {#using-api-to-generate-document-of-record-with-aem-forms} te produceren
 
 Document met opnamen (DOR) programmatisch genereren
 
-Dit artikel illustreert het gebruik van het `com.adobe.aemds.guide.addon.dor.DoRService API` om **Document van Verslag** programmatically te produceren. [Document of Record](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) is een PDF-versie van de gegevens die zijn vastgelegd in Adaptief formulier.
+Dit artikel illustreert het gebruik van `com.adobe.aemds.guide.addon.dor.DoRService API` om **Document van Verslag** programmatically te produceren. [Document of ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) Recordis een PDF-versie van de gegevens die zijn vastgelegd in adaptief formulier.
 
 1. Hier volgt het codefragment. De eerste regel krijgt de DOR-service.
 1. Stel de DoROptions in.
@@ -45,10 +45,10 @@ com.adobe.aemds.guide.addon.dor.DoROptions dorOptions =  new com.adobe.aemds.gui
 Voer de volgende stappen uit om dit op uw lokale systeem te proberen
 
 1. [Artikelelementen downloaden en installeren met pakketbeheer](assets/dor-with-api.zip)
-1. Controleer of u de bundel DevelopingWithServiceUser hebt geïnstalleerd en gestart die als onderdeel van het [artikel Servicegebruiker maken is meegeleverd](service-user-tutorial-develop.md)
+1. Zorg ervoor dat u de DevelopingWithServiceUser-bundel hebt geïnstalleerd en gestart die deel uitmaakt van [Servicegebruikersartikel maken](service-user-tutorial-develop.md)
 1. [Aanmelden bij configMgr](http://localhost:4502/system/console/configMgr)
 1. Zoeken naar Apache Sling Service User Mapper Service
-1. Zorg ervoor u de volgende ingang _DevelopingWithServiceUser.core:getformsresourceresolver=fd-dienst_ in de sectie van de Toewijzingen van de Dienst ervoor
+1. Zorg ervoor u de volgende ingang _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ in de sectie van de Toewijzingen van de Dienst ervoor
 1. [Het formulier openen](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
 1. Vul het formulier in en klik op PDF weergeven
 1. U moet DOR zien op een nieuw tabblad in uw browser
@@ -59,7 +59,7 @@ Voer de volgende stappen uit om dit op uw lokale systeem te proberen
 PDF wordt niet weergegeven op het tabblad Nieuwe browser:
 
 1. Let erop dat u pop-ups in uw browser niet blokkeert
-1. Zorg dat u de stappen hebt uitgevoerd die in dit [artikel worden beschreven](service-user-tutorial-develop.md)
-1. Zorg ervoor de bundel &#39;DevelopingWithServiceUser&#39; in *actieve staat is*
+1. Maak dat u de stappen hebt gevolgd die in dit [artikel](service-user-tutorial-develop.md) worden beschreven
+1. Zorg ervoor dat de bundel &#39;DevelopingWithServiceUser&#39; zich in *actieve status* bevindt
 1. Zorg ervoor dat de gegevens &#39; van de systeemgebruiker &#39; lees-, wijzigen- en aanmaakmachtigingen hebben voor het volgende knooppunt `/content/usergenerated/content/aemformsenablement`
 
