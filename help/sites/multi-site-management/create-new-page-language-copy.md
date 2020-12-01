@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Een pagina Taalkopieën maken {#create-language-copy-page}
+# Een pagina voor het kopiëren van talen maken {#create-language-copy-page}
 
 Leer hoe u een pagina maakt in een bestaande taalkopie en de inhoud vervolgens vertaalt naar een andere taalkopie.
 
