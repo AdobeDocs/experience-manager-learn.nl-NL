@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Regeldiagram voor uw eerste interactieve communicatiedocument configureren {#configuring-line-chart-for-your-first-interactive-communication-document}
+# Het vormen lijngrafiek voor uw eerste interactieve communicatie document {#configuring-line-chart-for-your-first-interactive-communication-document}
 
 In dit deel, zullen wij een grafiek van de Lijn toevoegen om het rekeningssaldo te tonen.
 
