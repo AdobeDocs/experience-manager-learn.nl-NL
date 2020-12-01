@@ -1,6 +1,6 @@
 ---
-title: Een project voor het berekenen van bedrijfsmiddelen maken voor de rekbaarheid van bedrijfsmiddelen
-description: De projecten van de Compute van activa zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service worden geïntegreerd.
+title: Creeer een project van de Asset compute voor de rekbaarheid van de Asset compute
+description: De projecten van de asset compute zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service geïntegreerd.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -18,29 +18,29 @@ ht-degree: 0%
 ---
 
 
-# Een project voor het berekenen van bedrijfsmiddelen maken
+# Een Asset compute-project maken
 
-De projecten van de Compute van activa zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service worden geïntegreerd. Één enkel project van de Verwerking van Activa kan één of meerdere arbeiders van de Verwerking van Activa bevatten, met elk die een discrete eindpunt van HTTP van een AEM als Profiel van de Verwerking van de Cloud Service van verwijzingen voorzien.
+De projecten van de asset compute zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service geïntegreerd. Één enkel project van de Asset compute kan één of meerdere arbeiders van de Asset compute bevatten, met elk die een discrete eindpuntverwijzing van HTTP van een AEM als Profiel van de Verwerking van de Cloud Service hebben.
 
 ## Een project genereren
 
 >[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
 
-_Doorklikken voor het genereren van een project Asset Compute (geen audio)_
+_Doorklikken voor het genereren van een Asset compute-project (geen audio)_
 
 
-Gebruik de [Adobe I/O CLI-insteekmodule](../set-up/development-environment.md#aio-cli) Asset Compute om een nieuw, leeg project Asset Compute te genereren.
+Gebruik [Adobe I/O CLI Asset compute plugin](../set-up/development-environment.md#aio-cli) om een nieuw, leeg project van de Asset compute te produceren.
 
 1. Navigeer vanaf de opdrachtregel naar de map waarin u het project wilt plaatsen.
-1. Van de bevellijn, voer uit `aio app init` om met de interactieve projectgeneratie CLI te beginnen.
-   + Dit kan browser van het Web die voor authentificatie aan Adobe I/O ertoe aanzetten. Als het, uw geloofsbrieven van de Adobe verbonden aan de [vereiste diensten en de producten](../set-up/accounts-and-services.md)van de Adobe verstrekt. Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+1. Van de bevellijn, voer `aio app init` uit om met de interactieve projectgeneratie CLI te beginnen.
+   + Dit kan een browser van het Web werpen die voor authentificatie aan Adobe I/O ertoe aanzet. Als het, uw geloofsbrieven van de Adobe verbonden aan [vereiste de diensten en producten van de Adobe ](../set-up/accounts-and-services.md) verstrekt. Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Org selecteren__
    + Selecteer de Adobe Org die als Cloud Service heeft AEM, Project Firefly wordt geregistreerd aan
 1. __Project selecteren__
-   + Zoek en selecteer het project. Dit is de titel [van het](../set-up/firefly.md) Project die van het Firefly projectmalplaatje wordt gecreeerd, in dit geval `WKND AEM Asset Compute`
+   + Zoek en selecteer het project. Dit is de [Titel van project](../set-up/firefly.md) gecreeerd van het Firefly projectmalplaatje, in dit geval `WKND AEM Asset Compute`
 1. __Werkruimte selecteren__
-   + De `Development` werkruimte selecteren
-1. __Welke I/O App-functies van Adobe wilt u inschakelen voor dit project? Te gebruiken componenten selecteren__
+   + De werkruimte `Development` selecteren
+1. __Welke Adobe I/O App-functies wilt u inschakelen voor dit project? Selecteer de onderdelen die u wilt opnemen__
    + Selecteer `Actions: Deploy runtime actions`
    + Gebruik de pijltoetsen om de selectie op te heffen en ruimte om de selectie ongedaan te maken/te selecteren en druk op Enter om de selectie te bevestigen
 1. __Selecteer het type acties dat u wilt genereren__
@@ -52,43 +52,43 @@ Gebruik de [Adobe I/O CLI-insteekmodule](../set-up/development-environment.md#ai
 
 ## Console.json genereren
 
-Van de wortel van het pas gecreëerde Project van de Verwerking van Activa, stel het volgende bevel in werking om een `console.json`te produceren.
+Van de wortel van het nieuwe gecreeerde project van de Asset compute, stel het volgende bevel in werking om `console.json` te produceren.
 
 ```
 $ aio app use
 ```
 
-Verifieer de huidige werkruimtemetails correct zijn, en vrij `Y` of ingaan om een `console.json`te produceren. Als `.env` en `.aio` worden ontdekt zoals reeds bestaand, tik `x` om hun verwezenlijking over te slaan.
+Verifieer de huidige werkruimtedetails correct zijn, en behoorlijk `Y` of ingaan om `console.json` te produceren. Als `.env` en `.aio` als reeds bestaand worden ontdekt, tik `x` om hun verwezenlijking over te slaan.
 
 ## De anatomie van het project evalueren
 
-Het geproduceerde project van de Verwerking van Activa is een project Node.js voor een gespecialiseerd project van het Project van Adobe Frefly, is het volgende idiosyncratic aan het project van de Verwerking van Activa:
+Het geproduceerde project van de Asset compute is een project Node.js voor een gespecialiseerd project van het Project van de Adobe Firefly, is het volgende idiosyncratic aan het project van de Asset compute:
 
-+ `/actions` bevat submappen en elke submap definieert een worker Asset Compute.
++ `/actions` bevat submappen en elke submap definieert een Asset compute-worker.
    + `/actions/<worker-name>/index.js` definieert de JavaScript die wordt uitgevoerd om het werk van deze worker uit te voeren.
-      + De mapnaam `worker` is standaard en kan alles zijn, zolang deze maar is geregistreerd in het `manifest.yml`bestand.
-      + Er kunnen meerdere arbeidersmappen worden gedefinieerd onder `/actions` de opgegeven naam, maar deze moeten wel zijn geregistreerd in het `manifest.yml`bestand.
-+ `/test/asset-compute` bevat de testreeksen voor elke worker. Net als in de `/actions` map `/test/asset-compute` kunnen er meerdere submappen zijn die elk overeenkomen met de worker die door de map wordt getest.
+      + De mapnaam `worker` is standaard en kan alles zijn, zolang deze maar is geregistreerd in `manifest.yml`.
+      + Indien nodig kunnen meerdere arbeidersmappen worden gedefinieerd onder `/actions`, maar deze moeten worden geregistreerd in `manifest.yml`.
++ `/test/asset-compute` bevat de testreeksen voor elke worker. Net als in de map `/actions` kan `/test/asset-compute` meerdere submappen bevatten, die elk overeenkomen met de worker die wordt getest.
    + `/test/asset-compute/worker`, die een testsuite voor een specifieke worker vertegenwoordigt, bevat submappen die een specifiek testcase vertegenwoordigen, samen met de invoer, parameters en verwachte uitvoer van de test.
-+ `/build` bevat de uitvoer, logboeken en artefacten van de testcase van Asset Compute.
-+ `/manifest.yml` bepaalt welke arbeiders van de Compute van Activa het project verstrekt. Elke worker-implementatie moet in dit bestand worden opgesomd om deze beschikbaar te maken voor AEM als Cloud Service.
++ `/build` bevat de output, de logboeken, en de artefacten van Asset compute testcase executions.
++ `/manifest.yml` bepaalt welke Asset compute arbeiders het project verstrekt. Elke worker-implementatie moet in dit bestand worden opgesomd om deze beschikbaar te maken voor AEM als Cloud Service.
 + `/console.json` definieert Adobe I/O-configuraties
-   + Dit bestand kan met de `aio app use` opdracht worden gegenereerd/bijgewerkt.
+   + Dit bestand kan worden gegenereerd/bijgewerkt met de opdracht `aio app use`.
 + `/.aio` bevat configuraties die door het hulpmiddel CLI van de AIR worden gebruikt.
-   + Dit bestand kan met de `aio app use` opdracht worden gegenereerd/bijgewerkt.
-+ `/.env` definieert omgevingsvariabelen in een `key=value` syntaxis en bevat geheimen die niet mogen worden gedeeld. Dit kan worden geproduceerd of om deze geheimen te beschermen, zou dit dossier NIET in Git moeten worden gecontroleerd en via het standaard `.gitignore` dossier van het project genegeerd.
-   + Dit bestand kan met de `aio app use` opdracht worden gegenereerd/bijgewerkt.
-   + Variabelen die in dit bestand worden gedefinieerd, kunnen worden overschreven door variabelen [op de opdrachtregel te](../deploy/runtime.md) exporteren.
+   + Dit bestand kan worden gegenereerd/bijgewerkt met de opdracht `aio app use`.
++ `/.env` definieert omgevingsvariabelen in een  `key=value` syntaxis en bevat geheimen die niet mogen worden gedeeld. Dit kan worden geproduceerd of om deze geheimen te beschermen, zou dit dossier NIET in Git moeten worden gecontroleerd en via het standaard `.gitignore` dossier van het project worden genegeerd.
+   + Dit bestand kan worden gegenereerd/bijgewerkt met de opdracht `aio app use`.
+   + Variabelen die in dit bestand worden gedefinieerd, kunnen worden overschreven door [variabelen exporteren](../deploy/runtime.md) op de opdrachtregel.
 
-Voor meer details over de overzicht van de projectstructuur, herzie de [Anatomie van een project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)van het Project van de Adobe.
+Voor meer details over de overzicht van de projectstructuur, herzie [Anatomie van een project van het Project van Adobe Firefly](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
 
-Het grootste deel van de ontwikkeling vindt plaats in de `/actions` `/test/asset-compute` omslag die arbeidersimplementaties ontwikkelt, en schriftelijk tests voor de arbeiders van de Compute van de douaneMiddelen.
+Het grootste deel van de ontwikkeling vindt plaats in de map `/actions` waarin workers worden geïmplementeerd en in `/test/asset-compute` tests voor aangepaste Asset computen worden geschreven.
 
-## Asset Compute-project op Github
+## asset compute van Github
 
-Het definitieve project Asset Compute is beschikbaar op Github op:
+Het definitieve project voor de Asset compute is beschikbaar op Github op:
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, d.w.z. `.env`, `console.json` of `.aio`._
+_Github bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, d.w.z. `.env`,  `console.json` of  `.aio`._
 
