@@ -24,9 +24,9 @@ HTML5-formulieren kunnen worden verzonden naar servlet die wordt gehost in AEM. 
 
 ## Verzendhandler maken
 
-U kunt een eenvoudige servlet maken voor het verzenden van HTML5-formulieren. De ingediende gegevens kunnen vervolgens worden geëxtraheerd met de volgende code. Dit [servlet](assets/html5-submit-handler.zip) wordt beschikbaar gemaakt als onderdeel van deze zelfstudie. Installeer de [servlet](assets/html5-submit-handler.zip) met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+U kunt een eenvoudige servlet maken voor het verzenden van HTML5-formulieren. De ingediende gegevens kunnen vervolgens worden geëxtraheerd met de volgende code. Dit [servlet](assets/html5-submit-handler.zip) wordt ter beschikking gesteld aan u als deel van dit leerprogramma. Installeer [servlet](assets/html5-submit-handler.zip) met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 
-De code van lijn 9 kan worden gebruikt om J2EE proces aan te halen. Gelieve te zorgen u hebt gevormd de Configuratie [van SDK van de Cliënt van](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) Adobe LiveCycle als u van plan bent de code te gebruiken om J2EE proces aan te halen.
+De code van lijn 9 kan worden gebruikt om J2EE proces aan te halen. Zorg ervoor dat u [Adobe LiveCycle client SDK Configuration](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) hebt geconfigureerd als u de code wilt gebruiken om J2EE-proces aan te roepen.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -62,12 +62,12 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 * Tik op de xdp en klik op _Eigenschappen_->_Geavanceerd_
 * http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html kopiëren en plakken in het tekstveld URL verzenden
-* Klik op de knop _Opslaan en sluiten_ .
+* Klik _SaveAndClose_ knoop.
 
 ### Item toevoegen in Paden uitsluiten
 
 * Navigeer naar [configMgr](http://localhost:4502/system/console/configMgr).
-* Zoeken naar _Adobe Granite CSRF-filter_
+* Zoeken naar _Adobe granite CSRF-filter_
 * De volgende vermelding toevoegen in de sectie Uitgesloten paden
 * _/content/AemFormsSamples/handlehml5formsubmission_
 * Uw wijzigingen opslaan
@@ -81,7 +81,7 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### Extra lezingen
 
-Dit [artikel](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) over het genereren van een PDF van het verzenden van HTML5-formulieren wordt ook aanbevolen.
+Dit [artikel](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) over het genereren van PDF van het verzenden van HTML5-formulieren wordt ook aanbevolen.
 
 
 
