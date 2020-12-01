@@ -20,7 +20,7 @@ ht-degree: 2%
 ---
 
 
-# Basispaginabewerkingen {#basic-page-operations-aem-sites}
+# Standaardpaginabewerkingen {#basic-page-operations-aem-sites}
 
 Leer hoe u basisbewerkingen voor paginabeheer uitvoert voor een Adobe Experience Manager Sites-pagina.
 
