@@ -23,7 +23,8 @@ Hier volgt een schermafbeelding van een XML-bestand dat meerdere records bevat.
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Dit XML-bestand wordt doorgegeven aan de methode [OutputService](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) generatePDFOutputBatch waarvan we een lijst met PDF-documenten (één per record) krijgen. De handtekening van de methode generatePDFOutputBatch heeft de volgende parameters
+Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Deze xml wordt doorgegeven aan de OutputService [generatePDFOutputBatch-methode](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) we krijgen een lijst met PDF-documenten (één per record)
+Voor de handtekening van de methode generatePDFOutputBatch worden de volgende parameters gebruikt
 
 * sjablonen - kaart met de sjabloon, geïdentificeerd door een sleutel
 * data - Map met XML-gegevensdocumenten, geïdentificeerd door sleutel
@@ -32,13 +33,13 @@ Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-elem
 
 >[!NOTE]
 >
->Dit gebruiksgeval is beschikbaar als live voorbeeld op deze [website](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
+>Dit gebruiksgeval is beschikbaar als levend voorbeeld op deze [website](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
 
-## Details kwestie gebruiken{#use-case-details}
+## Hoofdletterdetails gebruiken{#use-case-details}
 
 In dit geval zullen we een eenvoudige webinterface beschikbaar stellen om de sjabloon en het bestand data(xml) te uploaden. Nadat het uploaden van de bestanden is voltooid en het verzoek van de POST naar AEM servlet is verzonden. Deze servlet haalt de documenten uit en roept de methode generatePDFOutputBatch van OutputService aan. De gegenereerde PDF&#39;s worden gecomprimeerd in een ZIP-bestand en beschikbaar gesteld aan de eindgebruiker om te downloaden vanuit de webbrowser.
 
-## Servlet-code{#servlet-code}
+## Servlet Code{#servlet-code}
 
 Hier volgt het codefragment van het servlet. Code extraheert de sjabloon(xdp) en het gegevensbestand(xml) uit de aanvraag. Sjabloonbestand wordt opgeslagen in het bestandssysteem. Twee kaarten worden gecreeerd - templateMap en dataFileMap die het malplaatje en xml(gegevens) dossiers respectievelijk bevatten. Een vraag wordt dan gemaakt aan generateMultipleRecords methode van de dienst DocumentServices.
 
@@ -73,7 +74,7 @@ Document zippedDocument = documentServices.generateMultiplePdfs(templateMap, dat
 ....
 ```
 
-### Interfaceimplementatiecode{#Interface-Implementation-Code}
+### Code interfaceimplementatie{#Interface-Implementation-Code}
 
 De volgende code genereert meerdere pdf&#39;s met behulp van generatePDFOutputBatch van de OutputService en retourneert een ZIP-bestand met de pdf-bestanden naar het aanroepende servlet
 
@@ -124,7 +125,7 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 }
 ```
 
-### Distribueren op uw server{#Deploy-on-your-server}
+### Implementeren op uw server{#Deploy-on-your-server}
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen:
 
