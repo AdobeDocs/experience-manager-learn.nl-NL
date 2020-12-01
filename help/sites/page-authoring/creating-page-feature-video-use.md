@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Een pagina maken {#creating-page-aem-sites}
+# Een pagina {#creating-page-aem-sites} maken
 
 Leer hoe u in Adobe Experience Manager sitepagina&#39;s maakt met behulp van paginasjablonen.
 
