@@ -28,7 +28,7 @@ Een veelvoorkomend verzoek is om de opmerkingen die de taakcontroleur heeft inge
 
 Om aan dit vereiste te voldoen, wordt een bundel van steekproef OSGi verstrekt die kan worden gebruikt om commentaren vast te leggen en deze commentaren op te slaan als werkschemabezit.
 
-De volgende schermafbeelding laat zien hoe u processtap in [AEM Workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) gebruikt om opmerkingen vast te leggen en deze op te slaan als eigenschap metadata. De &quot;Commentaar van het Werkschema van de Vangst&quot;is de naam van de klasse java die in de processtap moet worden gebruikt. U moet de naam van de metagegevenseigenschap doorgeven die de opmerkingen bevat. In de onderstaande schermafbeelding is managerComments de eigenschap metadata waarin de opmerkingen worden opgeslagen.
+Het volgende schermafbeelding laat zien hoe u processtap in [AEM Workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) kunt gebruiken om opmerkingen vast te leggen en deze op te slaan als eigenschap metadata. De &quot;Commentaar van het Werkschema van de Vangst&quot;is de naam van de klasse java die in de processtap moet worden gebruikt. U moet de naam van de metagegevenseigenschap doorgeven die de opmerkingen bevat. In de onderstaande schermafbeelding is managerComments de eigenschap metadata waarin de opmerkingen worden opgeslagen.
 
 ![workflowcomments1](assets/workflowcomments1.gif)
 
@@ -39,7 +39,7 @@ Voer de volgende stappen uit om deze mogelijkheid op uw systeem te testen:
 
 * [Implementeer de SetValue-bundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Deze bundel bevat de voorbeeldcode voor het vastleggen van de opmerkingen en het opslaan als een eigenschap voor metagegevens
 
-* [Download en decomprimeer de elementen die aan dit artikel zijn gerelateerd naar uw bestandssysteem](assets/capturecomments.zip) . De elementen bevatten workflowmodel en voorbeeld Adaptief formulier.
+* [Download en decomprimeer de elementen die aan dit artikel zijn gerelateerd naar uw bestandssysteem. ](assets/capturecomments.zip) De elementen bevatten workflowmodel en voorbeeld Adaptief formulier.
 
 * De 2 zip-bestanden met pakketbeheer in AEM importeren
 
