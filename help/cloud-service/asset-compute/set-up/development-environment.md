@@ -1,6 +1,6 @@
 ---
-title: Een lokale ontwikkelomgeving instellen voor de uitbreidbaarheid van Asset Compute
-description: Het ontwikkelen van de arbeiders van de Verwerking van Activa, die toepassingen Node.js JavaScript zijn, vereist specifieke ontwikkelingshulpmiddelen die van traditionele AEM ontwikkeling verschillen, die zich van Node.js en diverse npm modules aan de Desktop van de Docker en Code van Microsoft Visual Studio uitstrekken.
+title: Een lokale ontwikkelomgeving instellen voor uitbreidbaarheid van de Asset compute
+description: Het ontwikkelen van de arbeiders van de Asset compute, die toepassingen Node.js JavaScript zijn, vereist specifieke ontwikkelingshulpmiddelen die van traditionele AEM ontwikkeling verschillen, die zich van Node.js en diverse npm modules aan de Desktop van de Docker en Code van Microsoft Visual Studio uitstrekken.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 # Lokale ontwikkelomgeving instellen
 
-Adobe Asset Compute-projecten kunnen niet worden geïntegreerd met de lokale AEM-runtime die wordt geleverd door de AEM SDK en worden ontwikkeld met behulp van hun eigen gereedschapsketen, apart van de toepassingen die AEM op basis van het AEM Maven-projectarchetype vereist.
+De projecten van de Asset compute van Adobe kunnen niet met lokale AEM runtime worden geïntegreerd die door AEM SDK wordt verstrekt en worden ontwikkeld gebruikend hun eigen hulpmiddelketting, los van die die door AEM toepassingen wordt vereist die op het AEM Maven projectarchetype worden gebaseerd.
 
-Om de microservices van Asset Compute uit te breiden, moeten de volgende gereedschappen op de lokale ontwikkelaarscomputer zijn geïnstalleerd.
+Als u de Asset compute-microservices wilt uitbreiden, moeten de volgende gereedschappen zijn geïnstalleerd op de lokale ontwikkelaarscomputer.
 
 ## Verkorte instructies voor het instellen
 
 Hier volgt een korte set-upinstructies. Nadere bijzonderheden over deze ontwikkelingstools worden hieronder in afzonderlijke secties beschreven.
 
-1. [Docker Desktop](https://www.docker.com/products/docker-desktop) installeren en de vereiste Docker-afbeeldingen ophalen:
+1. [Installeer Docker ](https://www.docker.com/products/docker-desktop) Desktop en trek de vereiste Docker-afbeeldingen:
 
    ```
    $ docker pull openwhisk/action-nodejs-v12:latest
@@ -46,17 +46,17 @@ Hier volgt een korte set-upinstructies. Nadere bijzonderheden over deze ontwikke
 
 Lees de onderstaande secties voor meer informatie over de instructies voor een verkorte installatie.
 
-## Visual Studio-code installeren{#vscode}
+## Visual Studio Code{#vscode} installeren
 
-[De Code](https://code.visualstudio.com/download) van Microsoft Visual Studio wordt gebruikt voor het ontwikkelen van en het zuiveren de arbeiders van de Verwerking van Activa. Terwijl andere [JavaScript-compatibele winde](../../local-development-environment/development-tools.md#set-up-the-development-ide) kan worden gebruikt om de arbeider te ontwikkelen, slechts kan de Code van Visual Studio worden geïntegreerd om de worker van de Verwerking van Activa te [zuiveren](../test-debug/debug.md) .
+[Microsoft Visual Studio ](https://code.visualstudio.com/download) Codeis die voor het ontwikkelen en het zuiveren van de arbeiders van de Asset compute wordt gebruikt. Terwijl andere [JavaScript-compatibele winde](../../local-development-environment/development-tools.md#set-up-the-development-ide) kan worden gebruikt om de worker te ontwikkelen, kan alleen Visual Studio-code worden geïntegreerd in [debug](../test-debug/debug.md) Asset compute-worker.
 
-_Visual Studio Code 1.48.x+ wordt vereist voor [WebDebug](#wskdebug) om te werken._
+_Visual Studio Code 1.48.x+ wordt vereist voor  [](#wskdebug) wskdebugto werken._
 
-Dit leerprogramma veronderstelt het gebruik van de Code van Visual Studio aangezien het de beste ontwikkelaarervaring voor het uitbreiden van Activa voorziet Compute.
+Dit leerprogramma veronderstelt het gebruik van de Code van Visual Studio aangezien het de beste ontwikkelaarervaring voor het uitbreiden van Asset compute verstrekt.
 
 ## Docker-bureaublad installeren{#docker}
 
-Download en installeer de nieuwste, stabiele [Docker Desktop](https://www.docker.com/products/docker-desktop), omdat dit vereist is om projecten voor het lokaal verwerken van bedrijfsmiddelen te [testen](../test-debug/test.md) en [fouten erin op te sporen](../test-debug/debug.md) .
+Download en installeer de nieuwste, stabiele [Docker Desktop](https://www.docker.com/products/docker-desktop), aangezien dit vereist is voor [test](../test-debug/test.md) en [debug](../test-debug/debug.md) Asset compute projecten lokaal.
 
 Nadat u Docker Desktop hebt geïnstalleerd, start u deze en installeert u de volgende Docker-afbeeldingen vanaf de opdrachtregel:
 
@@ -65,25 +65,25 @@ $ docker pull openwhisk/action-nodejs-v12:latest
 $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 ```
 
-Ontwikkelaars op Windows-computers moeten ervoor zorgen dat ze Linux-containers gebruiken voor de bovenstaande afbeeldingen. De stappen om op de containers van Linux te schakelen worden beschreven in [Docker voor de documentatie](https://docs.docker.com/docker-for-windows/)van Vensters.
+Ontwikkelaars op Windows-computers moeten ervoor zorgen dat ze Linux-containers gebruiken voor de bovenstaande afbeeldingen. De stappen om op de containers van Linux te schakelen worden beschreven in [Docker voor de documentatie van Vensters](https://docs.docker.com/docker-for-windows/).
 
-## Node.js (en npm) installeren{#node-js}
+## Node.js (en npm){#node-js} installeren
 
-De arbeiders van de Compute van activa zijn op [Node.js](https://nodejs.org/)-Gebaseerd, en vereisen daarom Node.js 10+ (en npm) om te ontwikkelen en te bouwen.
+De arbeiders van de asset compute zijn [Node.js](https://nodejs.org/)-Gebaseerd, en vereisen daarom Node.js 10+ (en npm) om te ontwikkelen en te bouwen.
 
 + [Installeer Node.js (en npm)](../../local-development-environment/development-tools.md#node-js) op de zelfde manier zoals voor traditionele AEM ontwikkeling.
 
-## Adobe I/O CLI installeren{#aio}
+## Adobe I/O CLI{#aio} installeren
 
-[Installeer de Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli), of __de lucht__ is een bevel-lijn (CLI) npm module die gebruik van en interactie met Adobe I/O technologieën vergemakkelijkt, en voor zowel produceert als plaatselijk ontwikkelt de arbeiders van de Compute van de Douane van Activa gebruikt.
+[Installeer Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli), of  ____ aiois een bevel-lijn (CLI) npm module die het gebruik van en de interactie met de technologieën van Adobe I/O vergemakkelijkt, en voor zowel produceert als plaatselijk ontwikkelt de arbeiders van de aangepaste Asset compute gebruikt.
 
 ```
 $ npm install -g @adobe/aio-cli
 ```
 
-## De plug-in Adobe I/O CLI Asset Compute installeren{#aio-asset-compute}
+## De Adobe I/O CLI Asset compute-insteekmodule installeren{#aio-asset-compute}
 
-De plug-in [Adobe I/O CLI Asset Compute](https://github.com/adobe/aio-cli-plugin-asset-compute)
+De [Adobe I/O CLI Asset compute plugin](https://github.com/adobe/aio-cli-plugin-asset-compute)
 
 ```
 $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
@@ -91,17 +91,17 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 ## Webfoutopsporing installeren{#wskdebug}
 
-Download en installeer de [Apache OpenWhisk-module voor foutopsporing](https://www.npmjs.com/package/@openwhisk/wskdebug) van Npm om lokale foutopsporing van Asset Compute-workers te vergemakkelijken.
+Download en installeer de [Apache OpenWhisk-module voor foutopsporing](https://www.npmjs.com/package/@openwhisk/wskdebug) npm om lokale foutopsporing van Asset compute-workers te vergemakkelijken.
 
-_Visual Studio Code 1.48.x+ wordt vereist voor [WebDebug](#wskdebug) om te werken._
+_Visual Studio Code 1.48.x+ wordt vereist voor  [](#wskdebug) wskdebugto werken._
 
 ```
 $ npm install -g @openwhisk/wskdebug
 ```
 
-## Installeer de extensie{#ngrok}
+## Ingrot{#ngrok} installeren
 
-Download en installeer de [npm-module Ngrok](https://www.npmjs.com/package/ngrok) , die het publiek toegang biedt tot uw lokale ontwikkelcomputer, om lokale foutopsporing van de workers Asset Compute te vergemakkelijken.
+Download en installeer de [ngrok](https://www.npmjs.com/package/ngrok) npm module, die het publiek toegang tot uw lokale ontwikkelingsmachine verleent, om lokaal het zuiveren van de arbeiders van de Asset compute te vergemakkelijken.
 
 ```
 $ npm install -g ngrok --unsafe-perm=true
