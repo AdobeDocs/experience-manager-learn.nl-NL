@@ -28,6 +28,6 @@ In deze zelfstudie worden de volgende onderwerpen behandeld:
 
 ## GitHub-project
 
-De broncode, en inhoudspakketten zijn beschikbaar op de [AEM Gidsen - het Project](https://github.com/adobe/aem-guides-wknd-mobile)van GitHub van WKND Mobile.
+De broncode, en inhoudspakketten zijn beschikbaar op [AEM Gidsen - het Project van WKND Mobile GitHub](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Als u een kwestie met het leerprogramma of de code vindt, gelieve een kwestie [te verlaten](https://github.com/adobe/aem-guides-wknd-mobile/issues)GitHub.
+Als u een kwestie met het leerprogramma of de code vindt, gelieve een [GitHub kwestie](https://github.com/adobe/aem-guides-wknd-mobile/issues) te verlaten.
