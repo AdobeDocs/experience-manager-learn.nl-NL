@@ -33,4 +33,4 @@ Aangepaste AEM Assets-videominiaturen bieden auteurs de mogelijkheid een geschik
 
 >[!NOTE]
 >
->U moet de [AEM-instantie uitvoeren in de modus Dynamische media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html)
+>U zou uw [AEM instantie in Dynamische Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html) wijze moeten in werking stellen
