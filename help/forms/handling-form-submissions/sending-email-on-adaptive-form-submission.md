@@ -33,7 +33,7 @@ Wanneer het adaptieve formulier wordt verzonden, ontvangt de ontvanger een e-mai
 
 ## Benodigde configuraties {#configurations-needed}
 
-U moet de CQ-mailservice op dag configureren. Dit kan worden gevormd door uw browser aan de Manager van de Configuratie van [Felix te richten](http://localhost:4502/system/console/configMgr)
+U moet de CQ-mailservice op dag configureren. Dit kan worden gevormd door uw browser aan [Felix de Manager van de Configuratie ](http://localhost:4502/system/console/configMgr) te richten
 
 In de schermafbeelding ziet u de configuratie-eigenschappen voor de Adobe-mailserver.
 
@@ -41,9 +41,9 @@ In de schermafbeelding ziet u de configuratie-eigenschappen voor de Adobe-mailse
 
 Volg de onderstaande instructies om dit op uw server te proberen:
 
-* [Importeer de aan dit artikel gekoppelde elementen](assets/timeoffrequest.zip) in AEM met de pakketbeheer.
+* [Importeer de aan dit artikel gekoppelde ](assets/timeoffrequest.zip) elementen in AEM met de pakketmanager.
 
-* Open het [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* Open [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
 * Vul de gegevens in.Geef een geldig e-mailadres op in het veld E-mail.
 
