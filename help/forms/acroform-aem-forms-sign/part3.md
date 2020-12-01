@@ -18,7 +18,8 @@ ht-degree: 1%
 
 # Deze mogelijkheid testen op uw systeem
 
-[Download en importeer dit pakket naar AEM](assets/acro-form-aem-form.zip)This package contains the sample workflow and the html page which allows you create the schema from the uploaded Acrobat.
+[Download en importeer dit pakket naar ](assets/acro-form-aem-form.zip)
+AEMTit pakket bevat de voorbeeldworkflow en de HTML-pagina waarmee u het schema van de geüploade Acrobat kunt maken.
 
 ## Workflow configureren
 
@@ -33,7 +34,7 @@ ht-degree: 1%
 1. Maak een adaptief formulier met het schema dat u in de vorige stap hebt gemaakt.
 2. Sleep een aantal schemaelementen naar het adaptieve formulier.
 3. Configureer de verzendactie van het adaptieve formulier voor verzending naar AEM workflow (MergeAcroformData).
-4. **Zorg ervoor dat u het pad naar het gegevensbestand opgeeft als &quot;Data.xml&quot;. Dit is zeer belangrijk aangezien de steekproefcode naar een dossier genoemd Data.xml in het werkschemalading zoekt.**
+4. **Zorg ervoor dat u het pad naar het gegevensbestand opgeeft als &quot;Data.xml&quot;. Dit is zeer belangrijk aangezien de steekproefcode naar een dossier genoemd Data.xml in de werkschemalading zoekt.**
 5. Geef een voorbeeld van een adaptief formulier weer en vul het formulier in en verzend het.
 6. U ziet PDF met de gegevens samengevoegd bewaard aan de omslag die in stap 4 onder vormt werkschema wordt gespecificeerd
 
