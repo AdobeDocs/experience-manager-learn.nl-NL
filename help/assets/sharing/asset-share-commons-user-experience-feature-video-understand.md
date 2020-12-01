@@ -21,7 +21,7 @@ ht-degree: 1%
 ---
 
 
-# Werken met de gebruikerservaring van de Commentaar voor het delen van bedrijfsmiddelen{#understanding-asset-share-commons}
+# De gebruikerservaring van de Commons van het Aandeel van Activa{#understanding-asset-share-commons} begrijpen
 
 Een cursieve inleiding aan de gebruiker en het auteurservaring van het Aandeel van Activa.
 
