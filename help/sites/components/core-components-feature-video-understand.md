@@ -18,7 +18,7 @@ ht-degree: 10%
 ---
 
 
-# Kernonderdelen{#understanding-core-components}
+# Kerncomponenten{#understanding-core-components}
 
 AEM Core Components is een standaardset onderdelen die met Adobe Experience Manager worden gebruikt. De Core Components is gebouwd met de best practices en standaarden van Adobe en biedt een basislijnset functionaliteit voor elke implementatie van Sites.
 
