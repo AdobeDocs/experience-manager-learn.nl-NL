@@ -47,7 +47,7 @@ Verklaar de Vraag wordt gevestigd bij:
 
 ![QueryBuilder-foutopsporing](./assets/other-tools/query-debugger.png)
 
-Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvragen zuiveren en begrijpen gebruikend AEM syntaxis [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) .
+Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvragen zuiveren en begrijpen gebruikend AEM [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) syntaxis.
 
 Foutopsporing van QueryBuilder bevindt zich op de volgende locatie:
 
@@ -57,9 +57,9 @@ Foutopsporing van QueryBuilder bevindt zich op de volgende locatie:
 
 ![Sling Log Tracer en AEM Chrome plug-in](./assets/other-tools/log-tracer.png)
 
-[Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), die wordt geleverd met AEM lokale QuickStart van SDK, maakt het mogelijk om HTTP-verzoeken grondig te traceren, waarbij diepgaande foutopsporingsinformatie per aanvraag wordt weergegeven. De configuratie OSGi van de Traceur van het [Logboek moet worden gevormd](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) om deze eigenschap toe te laten.
+[Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), die wordt geleverd met AEM lokale QuickStart van SDK, maakt het mogelijk om HTTP-verzoeken grondig te traceren, waarbij diepgaande foutopsporingsinformatie per aanvraag wordt weergegeven. De [configuratie OSGi van de Traceur van het Logboek moet ](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) worden gevormd om deze eigenschap toe te laten.
 
-De open-source [AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) voor de [Google Chrome-webbrowser](https://www.google.com/chrome/), wordt geïntegreerd met Log Tracer en geeft de foutopsporingsinformatie rechtstreeks weer in de Dev Tools van Chrome.
+De opensource [AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) voor de [Google Chrome-webbrowser](https://www.google.com/chrome/), integreert met Log Tracer, zodat de foutopsporingsinformatie rechtstreeks beschikbaar komt in de Dev Tools van Chrome.
 
 _De AEM Chrome-plug-in is een opensource-programma en Adobe biedt hiervoor geen ondersteuning._
 
