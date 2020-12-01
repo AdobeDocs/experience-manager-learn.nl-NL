@@ -22,24 +22,24 @@ ht-degree: 0%
 ---
 
 
-# Aangepaste functies en code-editor gebruiken {#using-functions-and-code-editor}
+# Aangepaste functies en code-editor {#using-functions-and-code-editor} gebruiken
 
 In dit deel, zullen wij douanefuncties en de coderedacteur aan auteur bedrijfsregels gebruiken.
 
-u hebt [ClientLib met douanefunctie](assets/client-libs-and-logo.zip) eerder in dit leerprogramma geïnstalleerd.
+u hebt [ClientLib met douanefunctie](assets/client-libs-and-logo.zip) eerder in deze zelfstudie geïnstalleerd.
 
 Een clientbibliotheek bestaat meestal uit CSS- en JavaScript-bestanden. Deze clientbibliotheek bevat een javascript-bestand waarin een functie voor het invullen van vervolgkeuzelijstwaarden beschikbaar wordt gemaakt.
 
 
-## Functie om vervolgkeuzelijst te vullen {#function-to-populate-drop-down-list}
+## Functie om vervolgkeuzelijst {#function-to-populate-drop-down-list} te vullen
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
 
-### Samenvattingstitel van deelvenster instellen {#set-the-summary-title-of-panels}
+### Samenvattingstitel van deelvenster {#set-the-summary-title-of-panels} instellen
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
-#### Deelvenster Valideren {#validate-panels-using-rule-editor}
+#### Deelvenster {#validate-panels-using-rule-editor} valideren
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
 
