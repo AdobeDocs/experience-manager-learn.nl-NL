@@ -24,26 +24,26 @@ ht-degree: 0%
 
 ## Samenvatting
 
-Dit artikel verhelpt een aantal recente en oude kwetsbaarheden die onlangs in AEM zijn gemeld. Merk op dat de meeste geïdentificeerde kwetsbaarheden bekende problemen voor het AEM product waren en dat mitigatie eerder is geïdentificeerd, is een nieuwe versie van de verzender beschikbaar voor de nieuwe kwetsbaarheden. Adobe dringt er ook bij klanten op aan de [AEM checklist](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) voor beveiliging te voltooien en de relevante richtlijnen te volgen.
+Dit artikel verhelpt een aantal recente en oude kwetsbaarheden die onlangs in AEM zijn gemeld. Merk op dat de meeste geïdentificeerde kwetsbaarheden bekende problemen voor het AEM product waren en dat mitigatie eerder is geïdentificeerd, is een nieuwe versie van de verzender beschikbaar voor de nieuwe kwetsbaarheden. Adobe spoort klanten ook aan om de [AEM Beveiligingschecklist](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) te voltooien en de relevante richtlijnen te volgen.
 
 ## Actie vereist
 
 * AEM implementaties moeten beginnen met de nieuwste versie van Dispatcher.
 * De de veiligheidsregels van de verzender moeten worden toegepast zoals op de geadviseerde configuratie.
-* De [AEM Checklist](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) van de Veiligheid zou voor AEM plaatsingen moeten worden voltooid.
+* De [AEM Beveiligingschecklist](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) moet worden ingevuld voor AEM implementaties.
 
 ## Kwetsbaarheid en resoluties
 
 | Probleem | Resolutie | Koppelingen |
 |-------|------------|-------|
-| Het omzeilen van AEM Dispatcher-regels | Installeer de nieuwste versie van Dispatcher(4.3.1) en volg de aanbevolen configuratie van de verzender. | Zie Opmerkingen bij de release [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) en Dispatcher [configureren](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html). |
-| Een kwetsbaarheid met betrekking tot het omzeilen van URL-filters die kan worden gebruikt om verzendingsregels te omzeilen - CVE-2016-0957 | Dit is opgelost in een oudere versie van Dispatcher, maar nu wordt u aangeraden de nieuwste versie van Dispatcher (4.3.1) te installeren en de aanbevolen configuratie voor Dispatcher te volgen. | Zie Opmerkingen bij de release [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) en Dispatcher [configureren](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html). |
+| Het omzeilen van AEM Dispatcher-regels | Installeer de nieuwste versie van Dispatcher(4.3.1) en volg de aanbevolen configuratie van de verzender. | Zie [Opmerkingen bij de release AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) en [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) configureren. |
+| Een kwetsbaarheid met betrekking tot het omzeilen van URL-filters die kan worden gebruikt om verzendingsregels te omzeilen - CVE-2016-0957 | Dit is opgelost in een oudere versie van Dispatcher, maar nu wordt u aangeraden de nieuwste versie van Dispatcher (4.3.1) te installeren en de aanbevolen configuratie voor Dispatcher te volgen. | Zie [Opmerkingen bij de release AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) en [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) configureren. |
 | XSS-kwetsbaarheid met betrekking tot opgeslagen SWF-bestanden | Dit probleem is opgelost met eerder vrijgegeven beveiligingsoplossingen. | Zie [AEM beveiligingsbulletin APSB18-10](https://helpx.adobe.com/security/products/experience-manager/apsb18-10.html). |
-| Explosies met betrekking tot wachtwoorden | Volg aanbeveling in checklist van de Veiligheid voor sterkere wachtwoorden. | Zie [AEM Beveiligingscontrolelijst](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) |
+| Explosies met betrekking tot wachtwoorden | Volg aanbeveling in checklist van de Veiligheid voor sterkere wachtwoorden. | Zie [Beveiligingschecklist AEM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) |
 | Blootstelling aan schijfgebruik voor anonieme gebruikers | Dit probleem is opgelost voor AEM 6.1 en hoger, want AEM 6.0 kunnen de machtigingen voor de out van de box worden gewijzigd om restrictiever te zijn. | Zie [releaseopmerkingen](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)voor AEM 6.1 en ouder. |
 | Belichting van de Open Sociale Volmacht voor anonieme gebruikers | Dit is opgelost in versies die van 6.0 SP2 beginnen. | Zie [releaseopmerkingen](https://helpx.adobe.com/experience-manager/aem-previous-versions.html) voor AEM 6.1 en ouder. |
-| CRX Explorer Access op productieinstanties | Het beheren van toegang van de Ontdekkingsreiziger van CRX is reeds behandeld in de Controlelijst van de Veiligheid, zou de Ontdekkingsreiziger CRX uit productieauteur moeten worden verwijderd en publiceren en de veiligheidsgezondheidscontrole meldt het als niet verwijderd. | Zie [AEM lijst](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security-checklist.html)met beveiligingscontroles. |
-| BGServlets wordt weergegeven | Dit is opgelost sinds AEM 6.2. | Zie [AEM 6.2 Opmerkingen bij de release](https://helpx.adobe.com/experience-manager/6-2/release-notes.html) |
+| CRX Explorer Access op productieinstanties | Het beheren van toegang van de Ontdekkingsreiziger van CRX is reeds behandeld in de Controlelijst van de Veiligheid, zou de Ontdekkingsreiziger CRX uit productieauteur moeten worden verwijderd en publiceren en de veiligheidsgezondheidscontrole meldt het als niet verwijderd. | Zie [Beveiligingschecklist](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security-checklist.html) AEM. |
+| BGServlets wordt weergegeven | Dit is opgelost sinds AEM 6.2. | Zie [Opmerkingen bij de release AEM 6.2](https://helpx.adobe.com/experience-manager/6-2/release-notes.html) |
 
 >[!MORELIKETHIS]
 >
