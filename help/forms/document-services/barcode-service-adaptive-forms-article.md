@@ -31,7 +31,7 @@ Dit artikel toont het gebruik van de streepjescodeservice voor het invullen van 
 
 De volgende code decodeert de streepjescode en vult een JSON-object met de gedecodeerde waarden. De servlet retourneert vervolgens het JSON-object in zijn reactie op de aanroepende toepassing.
 
-U kunt deze mogelijkheid live zien, bezoek de [voorbeeldportal](https://forms.enablementadobe.com/content/samples/samples.html?query=0) en zoek naar demo voor streepjescodeservice
+U kunt deze mogelijkheid live zien, bezoek dan de [portal samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) en zoek naar de demo van de streepjescodeservice
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -146,11 +146,11 @@ Regel 23 - Roep de methode DocumentServices extractBarCode aan om het JSON-objec
 
 Voer de volgende stappen uit om dit op uw systeem uit te voeren
 
-1. [Download BarcodeService.zip](assets/barcodeservice.zip) en importeer in AEM met de pakketmanager
+1. [Download BarcodeService.](assets/barcodeservice.zip) zip en importeer in AEM met behulp van pakketbeheer
 1. [De aangepaste DocumentServices-bundel downloaden en installeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Het PDF-voorbeeldformulier downloaden](assets/barcode.pdf)
-1. De browser naar het aangepaste [voorbeeldformulier sturen](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Wijs uw browser naar het [voorbeeldadaptieve formulier](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Het voorbeeld-PDF uploaden
 1. De formulieren worden gevuld met gegevens
 
