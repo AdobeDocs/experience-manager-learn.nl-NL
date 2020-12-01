@@ -40,14 +40,14 @@ ht-degree: 0%
 >* Microsoft Visual C++ 2013 redistributable (vanaf 6.5)
 
 
-We raden u echter aan de [officiële documentatie](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) voor de installatie van AEM Forms te volgen. U kunt de volgende stappen volgen om AEM Forms in Windows-omgeving te installeren en configureren:
+Hoewel we het volgende aanbevelen in de [officiële documentatie](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) voor het installeren van AEM Forms. U kunt de volgende stappen volgen om AEM Forms in Windows-omgeving te installeren en configureren:
 
 * Zorg ervoor dat de juiste JDK is geïnstalleerd
    * AEM 6.2 hebt u nodig: Oracle SE 8 JDK 1.8.x (64-bits)
 * 
    * AEM 6.3 en AEM 6.4 hebt u nodig: Oracle SE 8 JDK 1.8.x (64-bits)
 * AEM 6.5 hebt u JDK 8 of JDK 11 nodig
-* [Officiële JDK-vereisten](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) worden hier weergegeven
+* [Officiële JDK-](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) vereisten worden hier vermeld
 * Zorg ervoor JAVA_HOME wordt geplaatst om aan JDK te richten u hebt geïnstalleerd.
    * Volg onderstaande stappen om de JAVA_HOME-variabele in vensters te maken:
       * Klik met de rechtermuisknop op Deze computer en selecteer Eigenschappen
@@ -70,7 +70,7 @@ We raden u echter aan de [officiële documentatie](https://helpx.adobe.com/exper
 * Als het opstarten is voltooid, opent u het bestand sling.properties. U vindt deze in c:\AEMForms\crx-quickstart\conf folder.
 
 * Kopieer de volgende twee regels naar de onderkant van het bestand
-   * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*****sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.***
+   * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.***
 * Deze twee eigenschappen zijn vereist voor documentservices om te kunnen werken
 * Het bestand sling.properties opslaan
 
@@ -78,7 +78,7 @@ We raden u echter aan de [officiële documentatie](https://helpx.adobe.com/exper
 
    * U hebt Adobe-id nodig om u aan te melden voor delen van pakket
    * Zoeken naar AEM Forms Add in een pakket dat geschikt is voor uw versie van AEM Forms en besturingssysteem
-   * Of [u kunt het juiste addon-pakket voor formulieren downloaden](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+   * Of [u kunt het juiste formulieraddon-pakket downloaden](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
    * Nadat u de add-on hebt geïnstalleerd, moeten de volgende stappen worden uitgevoerd
 
       * **Zorg ervoor dat alle bundels actief zijn. (Met uitzondering van de bundel voor AEMFD-handtekeningen).**
@@ -90,8 +90,8 @@ We raden u echter aan de [officiële documentatie](https://helpx.adobe.com/exper
 
    1. Felix-webconsole openen in uw [browservenster](http://localhost:4502/system/console/configMgr)
    2. Configuratie van firewall voor zoeken en openen: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-   3. Toevoegen `sun.util.calendar` als nieuw item onder `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
+   3. `sun.util.calendar` toevoegen als een nieuw item onder `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
    4. Sla de wijzigingen op.
 
 Gefeliciteerd!! U hebt nu AEM Forms op uw systeem geïnstalleerd en geconfigureerd.
-Afhankelijk van uw behoeften kunt u [Reader Extensions](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) of [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) op uw server configureren
+Afhankelijk van uw behoeften kunt u [Reader-extensies configureren](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) of [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) op uw server
