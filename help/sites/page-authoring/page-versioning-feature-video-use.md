@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Paginaversies maken {#creating-page-versions-aem-sites}
+# Paginaversies {#creating-page-versions-aem-sites} maken
 
 Met paginaversiebeheer kunnen auteurs van inhoud de wijzigingen bijhouden die aan een pagina zijn gekoppeld door een paginaversie te maken. Bovendien beschikt u over een optie om een voorvertoning van een versie weer te geven, een versie te herstellen en een versie te vergelijken met de huidige versie van een pagina.
 
