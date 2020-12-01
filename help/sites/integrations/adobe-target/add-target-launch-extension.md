@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Doelextensie toevoegen aan een opstarteigenschap {#adobe-target-extension}
 
-Als u deze video wilt volgen, moet u al Experience Platform Launch met AEM [hebben](../experience-platform-launch/overview.md)geïntegreerd.
+Als u deze video wilt volgen, moet u al [geïntegreerd Experience Platform Launch met AEM](../experience-platform-launch/overview.md) hebben.
 
 Leer hoe u Adobe Target via Experience Platform Launch instelt op uw AEM website.
 
