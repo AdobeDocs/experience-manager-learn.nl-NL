@@ -22,16 +22,16 @@ De Masters van het project vereenvoudigen zeer gebruiker en teambeheer met [!DNL
 
 >[!VIDEO](https://video.tv.adobe.com/v/17740/?quality=9&learn=on)
 
-Beheerders kunnen nu een project maken **[!DNL Master Project]** en gebruikers toewijzen aan rollen/machtigingen als onderdeel van een projectteam. De projecten kunnen van een Master Project worden gecreeerd en zullen automatisch het lidmaatschap van het Team erven. Dit biedt verschillende voordelen:
+Beheerders kunnen nu een **[!DNL Master Project]** maken en gebruikers toewijzen aan rollen/machtigingen als onderdeel van een projectteam. De projecten kunnen van een Master Project worden gecreeerd en zullen automatisch het lidmaatschap van het Team erven. Dit biedt verschillende voordelen:
 
 * Bestaande teams opnieuw gebruiken in meerdere projecten
 * Versnelt projectverwezenlijking aangezien de Teams niet moeten opnieuw worden gecreeerd met de hand
 * Teamlidmaatschap beheren vanaf een centrale locatie en eventuele updates voor Teams worden automatisch overgeërfd door projecten
 * vermijdt verwezenlijking van dubbele ACLs die prestatieskwesties kan veroorzaken
 
-[!DNL Master Projects] kan onder de [!UICONTROL Masters] omslag onder worden gecreeerd [!UICONTROL AEM Projects]. Zodra een [!DNL Master Project] wordt gecreeerd zal het als optie naast beschikbare malplaatjes in de tovenaar tonen wanneer de nieuwe Projecten worden gecreeerd.
+[!DNL Master Projects] kan onder de  [!UICONTROL Masters] omslag onder worden gecreeerd  [!UICONTROL AEM Projects]. Zodra [!DNL Master Project] wordt gecreeerd zal het als optie naast beschikbare malplaatjes in de tovenaar tonen wanneer de nieuwe Projecten worden gecreeerd.
 
-[!DNL Project Masters] URL (lokale instantie AEM-auteur): [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
+[!DNL Project Masters] URL (lokale instantie AEM-auteur):  [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
 
 ## Verwijderen [!DNL Project Masters]
 
@@ -39,13 +39,13 @@ Het schrappen van een master project resulteert in onbruikbaar afgeleide project
 
 Alvorens een master project te schrappen, zorg ervoor alle afgeleide projecten worden gebeëindigd en uit AEM verwijderd. Zorg ervoor om het even welke vereiste projectgegevens te bewaren alvorens de afgeleide projecten te verwijderen. Zodra alle afgeleide projecten uit AEM worden verwijderd, kan het master project veilig worden geschrapt.
 
-## Markeren [!DNL Project Masters] als inactief
+## [!DNL Project Masters] markeren als inactief
 
 Door de status van het master project in inactief in de eigenschappen van het project te veranderen, verdwijnen de inactieve master projecten uit de lijst van master projecten.
 
 Als u niet-actieve master projecten wilt weergeven, schakelt u de filterknop &quot;actief tonen&quot; in de bovenste balk in of uit (naast de weergaveknop van de lijst). Om het inactieve project actief te maken opnieuw, selecteer eenvoudig het inactieve master project, geef projecteigenschappen uit, en plaats het opnieuw om actief te zijn.
 
-## Begrijpen [!DNL Project Masters]
+## [!DNL Project Masters] begrijpen
 
 ![Technische weergave van projectmeesters](assets/use-project-masters/project-masters-architecture.png)
 
