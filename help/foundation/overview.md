@@ -19,13 +19,13 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 ## Wat is er nieuw?
 
 * **[Workflowbeheer gebruiken in AEM (video)](./workflow/use-workflow-management.md)**
-   *AEM zorgt voor zichtbaarheid in het uitvoeren van workflows en vereenvoudigt het beheer van [!DNL Workflow] definities.*
+   *AEM zorgt voor zichtbaarheid in het uitvoeren van workflows en vereenvoudigt het beheer van  [!DNL Workflow] definities.*
 
 * **[Cloud Manager voor AEM begrijpen (video)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *Cloud Manager voor AEM maakt eenvoudig beheer, controle en zelfbediening van AEM omgevingen mogelijk.*
 
 * **[Openbare en persoonlijke sleutels instellen voor gebruik met Adobe I/O (zelfstudie)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Leer hoe sleutels en sleutelarchieven worden geproduceerd gebruikend [!DNL openssl] dat met AEM en Adobe I/O werkt.*
+   *Leer hoe sleutels en sleutelarchieven worden geproduceerd gebruikend  [!DNL openssl] dat met AEM en Adobe I/O werkt.*
 
 * **[Cloud Manager CI/CD Pipeline (video) gebruiken](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Leer hoe u de CI/CD-pijplijn van Cloud Manager kunt gebruiken voor een veilige en consistente implementatie.*
