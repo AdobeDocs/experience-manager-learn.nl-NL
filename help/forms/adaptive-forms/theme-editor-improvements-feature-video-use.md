@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Verbeteringen in de Thema-editor in AEM Forms{#theme-editor-improvements-in-aem-forms}
+# Verbeteringen aan de Thema-editor in AEM Forms{#theme-editor-improvements-in-aem-forms}
 
 Verbeteringen in de Thema-editor voor adaptieve formulieren in AEM 6.3
 
