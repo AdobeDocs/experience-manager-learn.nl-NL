@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Mogelijkheid om configuratie-instellingen gegevensbron te wijzigen{#ability-to-modify-data-source-configuration-settings}
+# Mogelijkheid om configuratie-instellingen voor gegevensbron te wijzigen{#ability-to-modify-data-source-configuration-settings}
 
 Tot de versie van AEM Forms 6.4, zodra een gegevensbron werd gevormd kon u geen regeling, Gastheer, de Weg van de Basis voor de dienst RESTful veranderen. Dit was problematisch als u uw gegevensbronnen tegen verschillende milieu&#39;s wilde testen.
 
@@ -30,5 +30,7 @@ De onderstaande schermafbeeldingen tonen de configuratie-instellingen voor de ge
 
 **Configuratie gegevensbron in AEM 6.4**
 
-![64DataSource Configuration](assets/64release.gif)**Editable Data Source Configuration in AEM 6.5 en hoger**![65DataSource Configuration](assets/modifiabledatasource.jfif)
+![64DataSource ](assets/64release.gif)
+**ConfigurationEditable Data Source Configuration in AEM 6.5 en hoger**
+![65DataSource Configuration](assets/modifiabledatasource.jfif)
 
