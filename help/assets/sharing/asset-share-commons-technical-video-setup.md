@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM {#setup-asset-share-commons}
+# Commentaar voor het delen van bedrijfsmiddelen instellen op lokale AEM {#setup-asset-share-commons}
 
 Een korte gids voor het krijgen van de Commons van het Aandeel van Activa die op een lokale AEM instantie lopen.
 
