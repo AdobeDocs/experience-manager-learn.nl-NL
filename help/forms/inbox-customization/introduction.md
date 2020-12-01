@@ -19,7 +19,8 @@ ht-degree: 0%
 # AEM Postvak IN
 
 AEM Inbox consolideert meldingen en taken uit diverse AEM, waaronder Forms-workflows. Wanneer een formulierwerkstroom met een taakstap Toewijzen wordt geactiveerd, wordt de bijbehorende toepassing weergegeven als een taak in het Postvak In van de ontvanger.
-De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parametersU kunt een Experience Manager Inbox aanpassen om de standaardtitel van een kolom te wijzigen, de positie van een kolom te wijzigen en extra kolommen weer te geven op basis van de gegevens van een workflow
+De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters
+U kunt een Experience Manager Inbox aanpassen om de standaardtitel van een kolom te wijzigen, de positie van een kolom opnieuw te ordenen en extra kolommen weer te geven op basis van de gegevens van een werkstroom
 
 
 >[!NOTE]
@@ -28,7 +29,8 @@ De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te
 
 ## Kolomaanpassing
 
-[Start AEM inbox](http://localhost:4502/aem/inbox)Open Beheer door op het pictogram _Lijstweergave_ te klikken en vervolgens _Beheer_ te selecteren zoals wordt weergegeven in de onderstaande schermafbeelding
+[Start AEM ](http://localhost:4502/aem/inbox)
+inboxOpen de beheerderscontrole door op het pictogram  _Lijstweergave_ te klikken en vervolgens  _Beheerder-_ controle te selecteren zoals wordt weergegeven in de onderstaande schermafbeelding
 
 ![beheer](assets/open-customization.png)
 
