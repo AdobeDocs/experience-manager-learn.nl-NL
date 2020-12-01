@@ -47,15 +47,15 @@ Volg onderstaande stappen om de middelen op uw lokale systeem te implementeren:
 * [Implementeer de monsterbundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden XML-gegevens kunt instellen
 
 * [De inhoud van het ZIP-bestand downloaden en uitpakken](assets/setvalueassets.zip)
-* De browser naar [pakketbeheer sturen](http://localhost:4502/crx/packmgr/index.jsp)
+* Wijs uw browser aan [pakketmanager](http://localhost:4502/crx/packmgr/index.jsp)
 * Importeer en installeer de setValueWorkflow.zip. Dit heeft het model van het steekproefwerkschema.
-* De browser naar [Forms en Documenten sturen](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Wijs uw browser aan [Forms en Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op Maken | Bestand uploaden
 * De tijdOfRequestForm.zip uploaden
-* Open het formulier [TimeOff](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Open [TimeOffRequest](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Vul de 3 vereiste velden in en verzend
 * Meld u aan als &#39;admin&#39; in bij AEM (als u dat nog niet hebt gedaan)
-* Ga naar [&quot;AEM Postvak IN&quot;](http://localhost:4502/aem/inbox)
+* Naar [&quot;AEM Inbox&quot;](http://localhost:4502/aem/inbox)
 * Open het formulier &quot;Verzoek om een revisie op tijd uit&quot;
 * De velden in het eerste deelvenster zijn uitgeschakeld. De reden hiervoor is dat het formulier wordt geopend door de controleur. U ziet ook dat het deelvenster voor het goedkeuren of afwijzen van de aanvraag nu zichtbaar is
 
