@@ -25,28 +25,28 @@ Het formulier **MyAccountForm** wordt gebruikt om het gedeeltelijk ingevulde ada
 
 ![Mijn rekeningformulier](assets/6599.JPG)
 
-Wanneer de gebruiker de toepassings-id invoert en op de knop **FetchApplication** klikt, wordt het mobiele nummer dat aan de toepassings-id is gekoppeld, opgehaald uit de database met de functie Ophalen van het formuliergegevensmodel.
+Wanneer de gebruiker toepassingsidentiteitskaart ingaat en **FetchApplication** knoop klikt, wordt het mobiele aantal verbonden aan toepassings identiteitskaart opgehaald uit het gegevensbestand gebruikend de Get verrichting van het model van vormgegevens.
 
-In dit formulier wordt gebruikgemaakt van de aanroep van de POST van het formuliergegevensmodel om het mobiele nummer te verifiëren met OTP. De verzendactie van het formulier wordt geactiveerd wanneer het mobiele nummer met de volgende code is geverifieerd. We activeren de klikgebeurtenis van de verzendknop met de naam **submitForm**.
+In dit formulier wordt gebruikgemaakt van de aanroep van de POST van het formuliergegevensmodel om het mobiele nummer te verifiëren met OTP. De verzendactie van het formulier wordt geactiveerd wanneer het mobiele nummer met de volgende code is geverifieerd. We activeren de gebeurtenis click van de verzendknop met de naam **submitForm**.
 
 >[!NOTE]
-> U moet de API-sleutel en de API-geheime waarden die specifiek zijn voor uw [Nexmo](https://dashboard.nexmo.com/) -account opgeven in de desbetreffende velden van het MyAccountForm
+> U moet de API-sleutel en de API-geheime waarden opgeven die specifiek zijn voor uw [Nexmo](https://dashboard.nexmo.com/)-account in de betreffende velden van het MyAccountForm
 
 ![trigger-submit](assets/trigger-submit.JPG)
 
 
 
-Dit formulier is gekoppeld aan een aangepaste verzendactie waarmee de formulierverzending wordt doorgestuurd naar het servlet dat is geïnstalleerd op **/bin/renderaf**
+Dit formulier is gekoppeld aan een aangepaste verzendactie die de formulierverzending doorstuurt naar het servlet dat is gemonteerd op **/bin/renderaf**
 
 ```java
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/renderaf",null,null);
 ```
 
-De code in het servlet op **/bin/renderaf** stuurt de aanvraag door om de opslagbestandsbijlagen adaptief formulier te genereren dat vooraf is ingevuld met de opgeslagen gegevens.
+De code in het servlet op **/bin/renderaf** stuurt het verzoek door om de storeafwithattachments adaptieve vorm terug te geven die met de bewaarde gegevens vooraf wordt bevolkt.
 
 
-* Het MyAccountForm kan hier worden [gedownload](assets/my-account-form.zip)
+* MyAccountForm kan [worden gedownload van hier](assets/my-account-form.zip)
 
-* Voorbeeldformulieren zijn gebaseerd op een [aangepaste formuliersjabloon](assets/custom-template-with-page-component.zip) dat naar AEM moet worden geïmporteerd om de voorbeeldformulieren correct te kunnen weergeven.
+* Voorbeeldformulieren zijn gebaseerd op aangepaste formuliersjablonen [ die naar AEM moeten worden geïmporteerd om de voorbeeldformulieren correct te kunnen weergeven.](assets/custom-template-with-page-component.zip)
 
-* [Aangepaste verzendhandler](assets/custom-submit-my-account-form.zip) die aan de MyAccountForm-verzending is gekoppeld, moet in AEM worden geïmporteerd.
+* [Aangepaste verzendhandler ](assets/custom-submit-my-account-form.zip) die is gekoppeld aan de MyAccountForm-verzending moet worden geïmporteerd in AEM.
