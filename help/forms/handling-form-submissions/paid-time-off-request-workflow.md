@@ -27,7 +27,7 @@ In dit artikel bekijken we een eenvoudige workflow die wordt gebruikt voor het a
 * Admin opent het formulier. Beheerders mogen de door de indiener ingevulde gegevens niet bewerken.
 * De sectie Fiatteur moet zichtbaar zijn voor de fiatteur (In dit geval is dit de AEM gebruiker).
 
-Voor het uitvoeren van bovenstaande vereiste gebruiken we een verborgen veld met de naam **eerste stap** in het formulier. De standaardwaarde is ingesteld op Ja. Wanneer het formulier wordt verzonden, stelt de eerste stap in de workflow de waarde van de eerste stap in op Nee. Het formulier bevat bedrijfsregels voor het verbergen en weergeven van de juiste secties op basis van de beginstapwaarde.
+Om het bovenstaande vereiste te verwezenlijken, gebruiken wij een verborgen gebied genoemd **initialstep** in de vorm en zijn standaardwaarde wordt geplaatst aan ja.Wanneer de vorm wordt voorgelegd, plaatst de eerste stap in het werkschema de waarde van aanvankelijke stap aan Nr. Het formulier bevat bedrijfsregels voor het verbergen en weergeven van de juiste secties op basis van de beginstapwaarde.
 
 **Formulier configureren voor activering AEM workflow**
 
@@ -51,8 +51,8 @@ Volg onderstaande stappen om deze workflow op uw systeem te testen:
 * [DevelopingWithServiceUserBundle downloaden en implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [De SetValue Custom OSGI-bundel downloaden en implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
 * [De aan dit artikel gerelateerde elementen importeren in AEM](assets/helpxworkflow.zip)
-* Open het formulier [Time-off](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Open het [Verzoek om tijd uit formulier](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Vul de details in en verzend
-* Open de [inbox](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Er moet een nieuwe taak worden toegewezen. Open het formulier. De gegevens van de indiener moeten alleen-lezen zijn en er moet een nieuwe fiatteur-sectie zichtbaar zijn.
-* Het [workflowmodel verkennen](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
+* Open [inbox](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Er moet een nieuwe taak worden toegewezen. Open het formulier. De gegevens van de indiener moeten alleen-lezen zijn en er moet een nieuwe fiatteur-sectie zichtbaar zijn.
+* Ontdek het [workflowmodel](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
 * Verken de processtap. Dit is de stap die de waarde van eerste stap op Nee instelt.
