@@ -27,15 +27,15 @@ Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken e
 
 Bewerkbare sjablonen zijn de aanbevelingen voor het bouwen van nieuwe AEM Sites.
 
-**Consistente ontwerpervaring** - Verbeteringen in het ontwerpen van AEM Sites worden overgedragen naar Sjabloonbewerking, waaronder de inline-lay-outmodus en het deelvenster Inhoudsstructuur.
+**Consistente auteurservaring**  - Verbeteringen in het ontwerpen van AEM Sites worden overgedragen naar Sjabloonbewerking, waaronder de inline-lay-outmodus en het deelvenster Inhoudsstructuur.
 
-**Geavanceerde beleidsconfiguraties** - In het volgende voorbeeld worden enkele geavanceerde beleidsconfiguraties gemarkeerd die beschikbaar zijn gesteld met Bewerkbare sjablonen:
+**Geavanceerde beleidsconfiguraties** : in het volgende voorbeeld worden enkele geavanceerde beleidsconfiguraties gemarkeerd die beschikbaar zijn gesteld met Bewerkbare sjablonen:
 
-* **Lay-outcontainer** : mogelijkheid om toegestane componenten te configureren, de toewijzing van middelen voor slepen en neerzetten en kolommen voor responsieve rasters te beheren.
-* **De Component** van de tekst - capaciteit om de Insteekmodules van de Redacteur van de RTF met een nieuwe UI te vormen en het beleid van RTE over malplaatjes opnieuw te gebruiken.
-* **Afbeeldingscomponent** - de mogelijkheid om functies zoals uitsnijden, het uploaden van een bureaubladbestand met een nieuwe gebruikersinterface in of uit te schakelen en het afbeeldingsbeleid te hergebruiken voor alle sjablonen.
+* **Lay-outcontainer** : mogelijkheid om toegestane componenten te configureren, de toewijzing Slepen + neerzetten van elementen en kolommen voor responsief raster te beheren.
+* **De Component**  van de tekst - capaciteit om de Insteekmodules van de Redacteur van de RTF met een nieuwe UI te vormen en het beleid van RTE over malplaatjes opnieuw te gebruiken.
+* **Afbeeldingscomponent** : mogelijkheden om functies zoals uitsnijden, het uploaden van bureaubladbestanden met een nieuwe gebruikersinterface in of uit te schakelen en het afbeeldingsbeleid te hergebruiken in sjablonen.
 
-Bewerkbare sjablonen vindt u onder **Gereedschappen** `>` Algemene ****`>` sjablonen ****.\
+Bewerkbare sjablonen vindt u onder **Gereedschappen** `>` **Algemeen** `>` **Sjablonen**.\
 Bewerkbare URL voor sjablonen (lokale AEM): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Aanvullende bronnen {#additional-resources}
