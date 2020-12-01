@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Formuliergegevensmodellen op basis van JDBC gebruiken met AEM Forms {#using-jdbc-based-form-data-models-with-aem-forms}
+# Op JDBC gebaseerde modellen van formuliergegevens gebruiken met AEM Forms {#using-jdbc-based-form-data-models-with-aem-forms}
 
 In deze video ziet u hoe u een formuliergegevensmodel maakt op basis van een JDBC-gegevensbron, een adaptief formulier op basis van het formuliergegevensmodel en hoe u de bewerking INSERT gebruikt met het formuliergegevensmodel.
 
@@ -28,5 +28,5 @@ In deze video ziet u hoe u een formuliergegevensmodel maakt op basis van een JDB
 
 >[!NOTE]
 >
->Elke RDBMS-gegevensbron kan worden gebruikt, zolang de vereiste databasestuurprogramma&#39;s als een OSGi-bundel worden AEM. De vestiging een gegevensbron RDBMS in AEM wordt behandeld in de Integratie van de Gegevens van de [Opstelling met AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>Elke RDBMS-gegevensbron kan worden gebruikt, zolang de vereiste databasestuurprogramma&#39;s als een OSGi-bundel worden AEM. De vestiging een gegevensbron RDBMS in AEM wordt behandeld in [de Integratie van Gegevens van de Opstelling met AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
 
