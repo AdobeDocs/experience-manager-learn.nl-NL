@@ -31,5 +31,5 @@ In deze video&#39;s worden de hooglichten van AEM Inbox besproken.
 * Workflow Info-console
 * Ad-hoctaken maken
 * Zichtbaarheid van taken en werkitems
-* [!DNL Inbox] en [!DNL Omnisearch] integratie
-* [!DNL Inbox] en [!DNL AEM Projects] integratie
+* [!DNL Inbox] en  [!DNL Omnisearch] integratie
+* [!DNL Inbox] en  [!DNL AEM Projects] integratie
