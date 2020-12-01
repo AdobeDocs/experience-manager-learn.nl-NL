@@ -35,19 +35,19 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste manier om
 
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
-1. Aanmelden bij [Adobe Experience Cloud](https://experience.adobe.com/), tikken op __Doel__, navigeren naar het tabblad __Activiteiten__
+1. Aanmelden bij [Adobe Experience Cloud](https://experience.adobe.com/), tikken op __Doel__, navigeer naar het tabblad __Activiteiten__
 
-   + Als u geen __Doel__ op het dashboard van de Experience Cloud ziet, zorg ervoor de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat u de gebruiker toegang tot Doel in [Adobe Admin Console](https://adminconsole.adobe.com/)is verleend.
+   + Als u __Doel__ op het dashboard van de Experience Cloud niet ziet, zorg ervoor de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat u de gebruiker toegang tot Doel in [Adobe Admin Console](https://adminconsole.adobe.com/) is verleend.
 
-1. Klik op de knop Activiteit **** maken en kies vervolgens **A/B-testactiviteit**
+1. Klik op **Activiteit maken** en kies vervolgens **A/B Test** activiteit
 
    ![A/B-activiteit](assets/ab-target-activity.png)
 
-1. Selecteer de optie **Visual Experience Composer** , geef de Activiteit-URL op en klik op **Volgende**
+1. Selecteer de optie **Visual Experience Composer**, geef de activiteit-URL op en klik op **Volgende**
 
    ![URL van activiteit](assets/ab-test-url.png)
 
-1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaar A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door de **Add knoop van de Ervaring** te gebruiken.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Beleef A* en *Beleef B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door **Add Ervaring** te gebruiken knoop.
 
    ![Ervaring A](assets/experience.png)
 
@@ -59,12 +59,12 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste manier om
 
    ![avonturen](assets/adventures.png)
 
-1. Naam *Ervaring A* wijzigen in *avontuur*
-1. Werk ook de tekst over *Experience B* van *Camping in West-Australië* bij om de Australische wilde natuur *te* ontdekken.
+1. Naam wijzigen *Ervaring A* in *Adventure*
+1. Werk de tekst op *Experience B* bij van *Camping in Western Australia* tot *De Australische wilde natuur ontdekken*.
 
    ![Verkennen](assets/explore.png)
 
-1. Klik op **Volgende** om naar Targeting te gaan en zorg ervoor dat het verkeer tussen de twee ervaringen handmatig wordt toegewezen aan een snelheid van 50-50.
+1. Klik **Volgende** om zich aan het richten te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
    ![Doelstelling](assets/targeting.png)
 
