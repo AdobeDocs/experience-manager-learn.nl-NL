@@ -28,4 +28,4 @@ In dit deel maken we een REST-gegevensbron.  De volgende video doorloopt de stap
 
 >[!VIDEO](https://video.tv.adobe.com/v/27765/?quality=9&learn=on)
 
-Gebruik het wagerbestand dat u ontvangt als onderdeel van de elementen die aan deze zelfstudie zijn gekoppeld. De middelen zijn beschikbaar in [inleiding](introduction.md) van deze zelfstudie.
+Gebruik het wagerbestand dat u ontvangt als onderdeel van de elementen die aan deze zelfstudie zijn gekoppeld. De elementen zijn beschikbaar in [inleiding](introduction.md) van deze zelfstudie.
