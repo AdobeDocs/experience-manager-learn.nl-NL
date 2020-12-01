@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Interactieve communicatie is nieuw voor AEM Forms 6.4. In dit document worden de stappen doorlopen die nodig zijn om een interactieve communicatie voor het afdrukkanaal te maken.
 
-Ga naar de voorbeeldpagina [van](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms voor een koppeling naar een live demo over deze mogelijkheid.
+Ga naar de pagina [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) voor een koppeling naar een live demo van deze mogelijkheid.
 
 ## Vereisten {#prerequistes}
 
