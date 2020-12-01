@@ -39,7 +39,7 @@ In dit deel, zullen wij Interactieve Communicatie voor het Kanaal van het Web to
 
    1. Schakel het selectievakje Kanaal afdrukken uit. Het document wordt niet gemaakt voor het afdrukkanaal.
    1. Web: Selecteer deze optie om het document voor het webkanaal te genereren
-   1. Interactieve communicatie: Sjabloon: **global>** RetirementAccountStatement(Dit is de sjabloon die in de vorige stap is gemaakt)
+   1. Interactieve communicatie: Sjabloon: **global>RetirementAccountStatemen** t(Dit is de sjabloon die in de vorige stap is gemaakt)
    1. Thema:** Referentiethema ->Canvas 2.0**
 
 1. Tik maken
