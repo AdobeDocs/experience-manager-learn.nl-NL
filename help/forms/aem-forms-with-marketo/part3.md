@@ -39,7 +39,7 @@ Het Type van authentificatie is douane en de Implementatie van de Authentificati
 
 Na, vormend de gegevensbron is de volgende stap een Model van de Gegevens van de Vorm te creëren dat op de gegevensbron gebaseerd is die in de vroegere stap wordt gevormd. Voer de volgende stappen uit om een formuliergegevensmodel te maken:
 
-Wijs uw browser naar de pagina voor [gegevensintegratie.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Dit maakt een lijst van alle gegevensintegratie die op uw AEM instantie wordt gecreeerd.
+Wijs uw browser naar de pagina [gegevensintegratie.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Dit maakt een lijst van alle gegevensintegratie die op uw AEM instantie wordt gecreeerd.
 
 1. Klik op Maken | Formuliergegevensmodel
 1. Geef een betekenisvolle titel op, zoals FormsAndMarketo, en klik op Volgende
