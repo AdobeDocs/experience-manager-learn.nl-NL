@@ -34,9 +34,9 @@ Wegens deze directe lading van CSS eerder dan het gebruiken van een categorie va
 
 Dit heeft het voordeel om deze de stijloverschrijvingen van douanestijlen toe te staan om huurspecifiek te zijn.
 
-### Maak de ontwerpende clientlib klaar {#prepare-the-authoring-clientlib}
+### Maak de ontwerpclientlib {#prepare-the-authoring-clientlib} klaar
 
-Verzeker het bestaan van een `authoring` clientlib voor uw project bij `/apps/my-project/clientlib/authoring.`
+Zorg voor het bestaan van een `authoring` client-lib voor uw project op `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -47,7 +47,7 @@ Verzeker het bestaan van een `authoring` clientlib voor uw project bij `/apps/my
 
 ### Aangepaste CSS opgeven {#provide-the-custom-css}
 
-Voeg toe aan `authoring` clientlib van het project `css.txt` dat aan minder dossier richt dat de met voeten tredende stijlen zal verstrekken. [Minder](https://lesscss.org/) wordt de voorkeur gegeven vanwege de vele handige functies, waaronder klassenomloop, die in dit voorbeeld wordt gebruikt.
+Voeg toe aan `authoring` clientlib a `css.txt` dat aan minder dossier richt dat de met voeten tredende stijlen zal verstrekken. [De ](https://lesscss.org/) voorkeur gaat uit naar Minder vanwege de vele handige functies, waaronder klasseomloop, die in dit voorbeeld wordt gebruikt.
 
 ```shell
 base=./css
@@ -55,7 +55,7 @@ base=./css
 htmldiff.less
 ```
 
-Maak het `less` bestand met de stijloverschrijvingen `/apps/my-project/clientlibs/authoring/css/htmldiff.less`en geef desgewenst de overtrekstijlen op.
+Maak het `less`-bestand dat de stijloverschrijvingen bij `/apps/my-project/clientlibs/authoring/css/htmldiff.less` bevat en geef desgewenst de overtrekstijlen op.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -103,9 +103,9 @@ body {
 
 ### De CSS van de ontwerpclient opnemen via de paginacomponent {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Neem de categorie client-pc&#39;s voor het schrijven van programmacode `/apps/my-project/components/structure/page/customheaderlibs.html` direct vóór de `</head>` tag op in de basispagina van het project om ervoor te zorgen dat de stijlen worden geladen.
+Neem de categorie client-clients voor het schrijven op in de basispagina van het project `/apps/my-project/components/structure/page/customheaderlibs.html` direct vóór de tag `</head>` om ervoor te zorgen dat de stijlen worden geladen.
 
-Deze stijlen moeten worden beperkt tot de modi [!UICONTROL Edit] en [!UICONTROL preview] WCM.
+Deze stijlen moeten worden beperkt tot de WCM-modi [!UICONTROL Edit] en [!UICONTROL preview].
 
 ```xml
 <head>
