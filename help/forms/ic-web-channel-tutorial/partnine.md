@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Tabel toevoegen aan het venster Balans account{#adding-table-to-account-balance-panel}
+# Tabel toevoegen aan het venster voor de rekeningsaldo{#adding-table-to-account-balance-panel}
 
 In dit deel voegen we een tabel toe aan het venster Rekenbalans.
 
