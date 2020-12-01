@@ -20,7 +20,7 @@ ht-degree: 6%
 ---
 
 
-# Pagina&#39;s ontwerpen {#authoring-page-aem-sites}
+# Een pagina {#authoring-page-aem-sites} ontwerpen
 
 Leer hoe u een pagina in Adobe Experience Manager Sites ontwerpt met de gebruikersinterface van de Site Editor.
 
