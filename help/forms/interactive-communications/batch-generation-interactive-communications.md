@@ -26,8 +26,8 @@ Dit artikel bevat voorbeeldelementen voor het genereren van interactieve communi
 
 ## Batchgeneratie met gecontroleerde map
 
-* Importeer de sjabloon [](assets/Beneficiaries-confirmation.zip) Interactieve communicatie naar uw AEM Forms-server.
-* Importeer de [controlemapconfiguratie](assets/batch-generation-api.zip). Hiermee wordt een map gemaakt die `batchAPI` in het station C wordt aangeroepen.
+* Importeer de [Interactieve communicatiesjabloon](assets/Beneficiaries-confirmation.zip) naar uw AEM Forms-server.
+* Importeer de [gecontroleerde mapconfiguratie](assets/batch-generation-api.zip). Hierdoor wordt een map met de naam `batchAPI` in uw C-station gemaakt.
 
 **Als u AEM Forms uitvoert op een ander besturingssysteem dan Windows, voert u de volgende drie stappen uit:**
 
@@ -37,14 +37,14 @@ Dit artikel bevat voorbeeldelementen voor het genereren van interactieve communi
 
 ![path](assets/watched-folder-batch-api-basic.PNG)
 
-* Download en extraheer de inhoud van het [ZIP-bestand](assets/jsonfile.zip). Het ZIP-bestand bevat een map met de naam `jsonfile` die het `beneficiaries.json` bestand bevat. Dit bestand bevat de gegevens die moeten worden gegenereerd in 3 documenten.
+* Download en extraheer de inhoud van [zip file](assets/jsonfile.zip). Het ZIP-bestand bevat een map met de naam `jsonfile` die `beneficiaries.json` bestand bevat. Dit bestand bevat de gegevens die moeten worden gegenereerd in 3 documenten.
 
-* Zet de `jsonfile` map neer in de invoermap van de gecontroleerde map.
+* Plaats de map `jsonfile` in de invoermap van de gecontroleerde map.
 * Als de map is opgepikt voor verwerking, controleert u de resultatenmap van de gecontroleerde map. 3 PDF-bestanden genereren
 
 ## Batchgeneratie met REST-verzoeken
 
-U kunt de [Batch-API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) activeren via REST-aanvragen. U kunt REST-eindpunten voor andere toepassingen toegankelijk maken om de API aan te roepen om documenten te genereren.
+U kunt [Batch API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) door REST verzoeken aanhalen. U kunt REST-eindpunten voor andere toepassingen toegankelijk maken om de API aan te roepen om documenten te genereren.
 De verstrekte steekproefactiva stellen REST eindpunt voor het produceren van Interactieve Communicatie documenten bloot. De servlet accepteert de volgende parameters:
 
 * fileName - Locatie van het gegevensbestand op het dossiersysteem.
@@ -53,12 +53,13 @@ De verstrekte steekproefactiva stellen REST eindpunt voor het produceren van Int
 * channelType - Print,Web of beide
 * recordId - JSON-pad naar element om naam in te stellen voor een interactieve communicatie
 
-De volgende schermafbeelding toont de parameters en de voorbeeldaanvraag voor de waarden![ervan](assets/generate-ic-batch-servlet.PNG)
+De volgende schermafbeelding toont de parameters en de bijbehorende waarden
+![voorbeeldverzoek](assets/generate-ic-batch-servlet.PNG)
 
 ## Stel steekproefactiva op uw server op
 
-* ICT- [sjabloon](assets/ICTemplate.zip) importeren met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Handler [Aangepast verzenden](assets/BatchAPICustomSubmit.zip) importeren met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Adaptief [formulier](assets/BatchGenerationAPIAF.zip) importeren met de interface [Forms en Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Aangepaste OSGI-bundel [implementeren en starten met](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) [Felix-webconsole](http://localhost:4502/system/console/bundles)
+* Importeer [ICTemplate](assets/ICTemplate.zip) met behulp van [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* Importeren [Aangepaste verzendhandler](assets/BatchAPICustomSubmit.zip) met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* Importeer [Adaptief formulier](assets/BatchGenerationAPIAF.zip) met de [Forms- en Document-interface](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Aangepaste OSGI-bundel](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) implementeren en starten met [Felix-webconsole](http://localhost:4502/system/console/bundles)
 * [Batchgeneratie activeren door het formulier te verzenden](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)
