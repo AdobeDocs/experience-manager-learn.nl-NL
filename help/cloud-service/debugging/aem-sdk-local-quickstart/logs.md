@@ -27,25 +27,25 @@ Toegang tot de logboeken van de AEM SDK, of de lokale QuickStart Jar of Dispatch
 
 De logboeken handelen als frontline voor het zuiveren AEM toepassingen, maar zijn afhankelijk van het adequate registreren in de opgestelde AEM toepassing. Adobe adviseert het houden van lokale ontwikkeling en AEM als Cloud Service Dev registrerende configuraties zoals mogelijk, aangezien het logboekzicht op lokale QuickStart van AEM SDK en AEM als milieu&#39;s van de Ontwikkelaar van een Cloud Service normaliseert, die configuratie het tweelingt en re-plaatsing verminderen.
 
-Het [AEM Archetype](https://github.com/adobe/aem-project-archetype) van het Project vormt registreren op het niveau van DEBUG voor de pakketten van Java van uw AEM toepassing voor lokale ontwikkeling via de Sling Logger OSGi configuratie die bij
+Met [AEM Projectarchetype](https://github.com/adobe/aem-project-archetype) wordt registratie op DEBUG-niveau geconfigureerd voor Java-pakketten van uw AEM toepassing voor lokale ontwikkeling via de OSGi-configuratie van Sling Logger gevonden op
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
-die zich aanmeldt bij de `error.log`.
+die aan `error.log` registreert.
 
-Als het standaard registreren voor lokale ontwikkeling ontoereikend is, kan het ad hoc registreren via de lokale het Webconsole van de Steun van het Logboek van SDK van AEM lokale QuickStart, bij ([/systeem/console/slinglog](http://localhost:4502/system/console/slinglog)) worden gevormd, nochtans wordt het niet geadviseerd ad hoc veranderingen aan Git worden voortgeduurd tenzij deze zelfde logboekconfiguraties op AEM ook als milieu&#39;s van de Cloud Service Dev nodig zijn. Wijzigingen via de Log Support-console blijven rechtstreeks doorgevoerd in de lokale opslagruimte van de AEM SDK.
+Als het standaard registreren voor lokale ontwikkeling ontoereikend is, kan het ad hoc registreren via de lokale het Webconsole van de Steun van het Logboek van SDK van AEM lokale QuickStart, bij ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)) worden gevormd, nochtans wordt het niet geadviseerd ad hoc veranderingen aan Git worden voortgeduurd tenzij deze zelfde logboekconfiguraties op AEM ook als milieu&#39;s van de Cloud Service Dev worden vereist. Wijzigingen via de Log Support-console blijven rechtstreeks doorgevoerd in de lokale opslagruimte van de AEM SDK.
 
-Java-loginstructies kunnen worden weergegeven in het `error.log` bestand:
+Java-loginstructies kunnen worden weergegeven in het bestand `error.log`:
 
 ```
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 ```
 
-Vaak is het handig om de uitvoer naar de terminal te &#39;staart&#39; `error.log` .
+Vaak is het handig om de `error.log` die de uitvoer naar de terminal stroomt, te &quot;staart&quot;.
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ De vensters vereist toepassingen [van de](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) derdestaart of het gebruik van het bevel [van](https://stackoverflow.com/a/46444596/133936)Powershell krijgen-Inhoud.
++ Voor Windows is [toepassingen van externe leveranciers](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) of het gebruik van [Ophalen-Inhoud van PowerShell-opdracht](https://stackoverflow.com/a/46444596/133936) vereist.
 
 ## Logboeken voor verzending
 
@@ -53,7 +53,7 @@ De logboeken van de afzender zijn output aan stdout wanneer `bin/docker_run` wor
 
 ### De toegang tot van logboeken in de container van de Dokker
 
-De logboekregistraties van de verzender kunnen direct tot in de container van de Dokker bij `/etc/httpd/logs`. toegang hebben.
+De logboekregistraties van de verzender kunnen direct tot in de container van de Dokker bij `/etc/httpd/logs` toegang hebben.
 
 ```shell
 $ docker ps
@@ -75,7 +75,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd
 
-De logboekregistraties van de afzender kunnen uit de container van de Dokker bij `/etc/httpd/logs` het lokale dossiersysteem voor inspectie worden gekopieerd gebruikend uw favoriete hulpmiddel van de logboekanalyse. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan de logboeken verstrekt.
+De logboekregistraties van de verzender kunnen uit de container van de Dokker bij `/etc/httpd/logs` aan het lokale dossiersysteem voor inspectie worden gekopieerd gebruikend uw favoriete hulpmiddel van de logboekanalyse. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan de logboeken verstrekt.
 
 ```shell
 $ docker ps
