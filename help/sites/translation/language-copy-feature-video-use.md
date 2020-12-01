@@ -15,7 +15,7 @@ ht-degree: 3%
 ---
 
 
-# Taalkopie gebruiken {#using-language-copy}
+# Taalkopie {#using-language-copy} gebruiken
 
 Met AEM 6.3 kunnen gebruikers een taalkopie van de wizard Taalkopie maken door de site-vertaling te verbeteren, zonder dat ze een hoofdpagina hoeven te maken.
 
