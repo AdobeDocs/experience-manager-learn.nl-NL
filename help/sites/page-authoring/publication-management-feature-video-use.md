@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Publishing pages {#using-publication-management-with-aem-sites}
+# Pagina&#39;s {#using-publication-management-with-aem-sites} publiceren
 
 AEM Sites biedt verschillende opties voor het publiceren en niet publiceren van inhoud. In deze video worden de verschillende methoden en hun mogelijkheden besproken.
 
