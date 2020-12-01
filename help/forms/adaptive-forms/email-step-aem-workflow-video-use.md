@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# E-mailstap verzenden van Forms Workflow gebruiken {#using-send-email-step-of-forms-workflow}
+# Het gebruiken verzendt E-mailStap van Forms Workflow {#using-send-email-step-of-forms-workflow}
 
 De stap E-mail verzenden is geïntroduceerd in AEM Forms 6.4. Met deze stap kunnen we bedrijfsprocessen of een workflow maken waarmee u e-mailberichten met of zonder bijlagen kunt verzenden. De volgende video doorloopt de stappen voor het vormen van verzendt e-mailcomponent.
 
@@ -32,7 +32,7 @@ Als onderdeel van dit artikel doorlopen we de volgende gebruikszaak:
 1. Bij het verzenden van formulieren wordt AEM workflow geactiveerd
 1. De AEM-workflow gebruikt de component E-mail verzenden om een e-mail met de servicevoorwaarden als bijlage te verzenden
 
-Voordat u de stap E-mail verzenden gebruikt, moet u de Day CQ Mail Service vanuit [configMgr](http://localhost:4502/system/console/configMgr)configureren. Geef de waarden op die specifiek zijn voor uw omgeving
+Voordat u de stap E-mail verzenden gebruikt, moet u de Day CQ Mail Service configureren vanuit [configMgr](http://localhost:4502/system/console/configMgr). Geef de waarden op die specifiek zijn voor uw omgeving
 
 ![CQ-mailservice op dag configureren](assets/mailservice.png)
 
@@ -52,7 +52,7 @@ Ga als volgt te werk om het voorbeeld op uw systeem uit te voeren:
 1. Start het [adaptieve formulier](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Vul de vereiste velden in en verzend deze.
 1. U moet een e-mail ontvangen met DocumentOfRecord als bijlage
 
-Het [workflowmodel verkennen](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
+Ontdek het [workflowmodel](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
 
 Bekijk de processtap van de workflow. De aangepaste code die aan de processtap is gekoppeld, maakt eigenschapnamen voor metagegevens en stelt de waarden ervan in op basis van de verzonden gegevens. Deze waarden worden vervolgens gebruikt door de component send email.
 
@@ -60,5 +60,6 @@ Bekijk de processtap van de workflow. De aangepaste code die aan de processtap i
 >
 >In AEM Forms 6.5 en hoger hebt u deze aangepaste code niet nodig om eigenschappen van metagegevens te maken. Gebruik de functie voor variabelen in AEM workflow
 
-Controleer of het tabblad Bijlagen van de component E-mail verzenden is geconfigureerd volgens de onderstaande![schermafbeelding E-mailbijlage verzenden](assets/sendemailcomponentconfigure.jpg)TabDe waarde &quot;DOR.pdf&quot; moet overeenkomen met de waarde die is opgegeven in het pad Document of Record die is opgegeven in de verzendopties van het aangepaste formulier.
+Controleer of het tabblad Bijlagen van de component E-mail verzenden is geconfigureerd volgens de onderstaande schermopname
+![Tabblad E-mailbijlage verzenden](assets/sendemailcomponentconfigure.jpg)De waarde &quot;DOR.pdf&quot; moet overeenkomen met de waarde die is opgegeven in het pad Document of Record die is opgegeven in de verzendopties van het adaptieve formulier.
 
