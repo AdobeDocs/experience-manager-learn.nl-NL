@@ -22,13 +22,13 @@ ht-degree: 0%
 
 Het formuliergegevensmodel kan worden gebaseerd op RDBMS-, RESTfull-, SOAP- of OData-bronnen. De focus van deze cursus ligt op het vooraf instellen van een adaptief formulier met behulp van een formuliergegevensmodel dat wordt ondersteund door de RDBMS-gegevensbron. Voor deze zelfstudie werd MYSQL-database gebruikt. We hebben de volgende twee tabellen gemaakt om het gebruiksgeval aan te tonen
 
-* **nieuwe** tabel - In deze tabel worden de nieuwe gegevens opgeslagen
+* **** newhiretable - Deze lijst slaat de nieuwe informatie op
 
    ![newheren](assets/newhire-table.png)
 
 
-* **tabel met begunstigden** - Hiermee worden de begunstigden opgeslagen
+* **Begunstigd -** Deze slaat de begunstigden op
 
    ![begunstigden](assets/beneficiaries-table.png)
 
-U kunt het [sql- dossier](assets/db-schema.sql) invoeren gebruikend MySQL werkbank om aan lijsten met sommige steekproefgegevens tot stand te brengen.
+U kunt het [sql dossier](assets/db-schema.sql) invoeren gebruikend werkbank MySQL om aan lijsten met sommige steekproefgegevens tot stand te brengen.
