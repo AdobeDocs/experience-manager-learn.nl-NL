@@ -26,7 +26,7 @@ In dit artikel bekijken we e-mail als een leveringsmechanisme voor webkanaaldocu
 
 Laten we eens kijken naar het volgende codefragment. Deze code maakt deel uit van GET.jsp die wordt geactiveerd wanneer de gebruiker op de koppeling in de e-mail klikt om het document met het webkanaal weer te geven. We krijgen de aangemelde gebruiker met behulp van de speciale gebruikersbeheer. Zodra wij de het programma geopende gebruiker krijgen, krijgen wij de waarde van het accountNumber bezit verbonden aan het profiel van de gebruiker.
 
-Vervolgens koppelen we de waarde accountNumber aan een sleutel met de naam accountnummer op de kaart. Het sleutelaccountnummer **** wordt in het formuliergegevensmodaal gedefinieerd als een aanvraagkenmerk. De waarde van dit kenmerk wordt als een invoerparameter doorgegeven aan de leesservicemethode Formuliergegevensmodule.
+Vervolgens koppelen we de waarde accountNumber aan een sleutel met de naam accountnummer op de kaart. De sleutel **accountnummer** wordt in het modaal van de formuliergegevens gedefinieerd als een aanvraagkenmerk. De waarde van dit kenmerk wordt als een invoerparameter doorgegeven aan de leesservicemethode Formuliergegevensmodule.
 
 Regel 7: Wij verzenden het ontvangen verzoek naar een andere server, die op het middeltype wordt gebaseerd dat door Interactive Communication Document url wordt geïdentificeerd. De reactie die door deze tweede servlet wordt geretourneerd, is opgenomen in de eerste servlet-reactie.
 
