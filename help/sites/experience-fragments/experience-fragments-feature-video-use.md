@@ -56,5 +56,5 @@ AEM 6.5 ondersteunt nu full-text zoekmogelijkheden voor Experience Fragments.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27720/?quality=9&learn=on)
 
-* **Inhoudsauteurs** (intern zoeken) kunnen nu zoeken naar een tekstonderdeel in een ervaringsfragment. Het resultaat hiervan zijn onder andere de ervaringsfragmenten met de tekst en de pagina die naar het ervaringsfragment verwijst.
-* **Sitegebruikers** (extern zoeken) kunnen nu een volledige-tekstzoekopdracht uitvoeren met de zoekcomponent en het resultaat bevat sitepagina&#39;s die verwijzen naar het ervaringsfragment dat het zoektrefwoord bevat.
+* **Inhoudsauteurs**  (intern zoeken) kunnen nu zoeken naar een tekstonderdeel in een ervaringsfragment. Het resultaat hiervan zijn onder andere de ervaringsfragmenten met de tekst en de pagina die naar het ervaringsfragment verwijst.
+* **Sitegebruikers**  (extern zoeken) kunnen nu een volledige-tekstzoekopdracht uitvoeren met de zoekcomponent en het resultaat zijn sitepagina&#39;s die verwijzen naar het ervaringsfragment dat het zoektrefwoord bevat.
