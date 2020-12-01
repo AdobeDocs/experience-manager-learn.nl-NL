@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Werken met AEM ervaringsfragmenten{#understanding-aem-experience-fragments}
+# Werken met AEM-fragmenten{#understanding-aem-experience-fragments}
 
 Het productbeheer van Adobe biedt een overzicht van wat er nieuw is met Experience Fragments in de AEM 6.3 release.
 
