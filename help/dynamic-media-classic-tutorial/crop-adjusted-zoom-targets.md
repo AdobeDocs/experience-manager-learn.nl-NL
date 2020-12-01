@@ -22,9 +22,9 @@ Een van de belangrijkste sterke punten van het concept van de master afbeelding 
 
 Aan het einde van deze sectie van de zelfstudie leert u hoe u het volgende kunt doen:
 
-- Afbeeldingen uitsnijden in Dynamic Media Classic en opslaan als nieuwe master bestanden of als virtuele afbeeldingen. [Meer](https://docs.adobe.com/help/en/dynamic-media-classic/using/master-files/cropping-image.html)informatie.
-- Sla virtuele aangepaste afbeeldingen op en gebruik deze in plaats van master elementen. [Meer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/adjusting-image.html)informatie.
-- Maak Zoomdoelen op uw afbeeldingen om de hooglichten van de afbeeldingen te tonen. [Meer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html)informatie.
+- Afbeeldingen uitsnijden in Dynamic Media Classic en opslaan als nieuwe master bestanden of als virtuele afbeeldingen. [Meer](https://docs.adobe.com/help/en/dynamic-media-classic/using/master-files/cropping-image.html) informatie.
+- Sla virtuele aangepaste afbeeldingen op en gebruik deze in plaats van master elementen. [Meer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/adjusting-image.html) informatie.
+- Maak Zoomdoelen op uw afbeeldingen om de hooglichten van de afbeeldingen te tonen. [Meer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html) informatie.
 
 ## Uitsnijden
 
@@ -41,10 +41,10 @@ Dynamische media Klassiek beschikt over een aantal gereedschappen voor het bewer
 
 ### Het gereedschap Uitsnijden gebruiken
 
-U kunt het gereedschap Uitsnijden openen in Dynamische media Klassiek vanaf de pagina Details voor een element of door op de knop **Bewerken** te klikken. U kunt het gereedschap op twee manieren uitsnijden:
+U kunt het hulpmiddel van het Gewas in Dynamische Klassiek van Media van de pagina van Details voor een middel of door de **Edit** knoop te klikken toegang hebben. U kunt het gereedschap op twee manieren uitsnijden:
 
-- De standaarduitsnijdmodus waarin u de grepen van het uitsnijdvenster of de tekstwaarden in het vak Grootte sleept. Leer hoe u [handmatig uitsnijdt](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Bijsnijden. Gebruik deze optie om extra witruimte rond de afbeelding te verwijderen door het aantal pixels te berekenen dat niet overeenkomt met de afbeelding. Leer hoe u kunt [uitsnijden door bijsnijden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- De standaarduitsnijdmodus waarin u de grepen van het uitsnijdvenster of de tekstwaarden in het vak Grootte sleept. Leer hoe u [Handmatig uitsnijden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
+- Bijsnijden. Gebruik deze optie om extra witruimte rond de afbeelding te verwijderen door het aantal pixels te berekenen dat niet overeenkomt met de afbeelding. Leer hoe u [Uitsnijden door bijsnijden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Handmatig uitsnijden_
 
@@ -64,19 +64,19 @@ De afbeelding aan de rechterkant wordt veel prominent gemaakt door de extra ruim
 
 >[!NOTE]
 >
->Met Verkleinen wordt er geen transparantie rond de afbeelding gemaakt. Hiervoor moet u een uitknippad insluiten in de afbeelding en de optie Masker **maken van uitknippad** gebruiken.
+>Met Verkleinen wordt er geen transparantie rond de afbeelding gemaakt. Hiervoor moet u een uitknippad insluiten in de afbeelding en de uploadoptie **Masker maken van uitknippad** gebruiken.
 >
->Als u de oorspronkelijke staat van een afbeelding wilt herstellen nadat u de afbeelding hebt bijgesneden toen u de optie **Opslaan** hebt gebruikt, geeft u de afbeelding weer in het scherm Uitsnijdeditor en selecteert u de knop **Herstellen** .
+>Ook, om een beeld aan zijn originele staat te herstellen nadat u het hebt bijgesneden wanneer u **sparen** optie hebt gebruikt, toon het beeld in het scherm van de Redacteur van het Gewas en selecteer **Terugstellen** knoop.
 
 ### _Uitsnijden bij uploaden_
 
-Zoals eerder vermeld, kunt u de afbeeldingen ook uitsnijden terwijl u ze uploadt. Als u bijsnijden tijdens het uploaden wilt gebruiken, klikt u op de knop **Taakopties** en kiest u **Bijsnijden** onder Opties voor uitsnijden.
+Zoals eerder vermeld, kunt u de afbeeldingen ook uitsnijden terwijl u ze uploadt. Als u uitsnijden bij uploaden wilt gebruiken, klikt u op de knop **Taakopties** en kiest u **Bijsnijden** onder Opties voor uitsnijden.
 
 Dynamic Media Classic onthoudt deze optie voor de volgende upload. Hoewel u afbeeldingen voor deze upload wilt uitsnijden, wilt u ze mogelijk niet voor elke upload bijsnijden. Een andere mogelijkheid is om een speciale geplande FTP-uploadtaak in te stellen en de uitsnijdopties daar te plaatsen. Op die manier voert u de taak alleen uit als u de afbeeldingen wilt uitsnijden.
 
 >[!IMPORTANT]
 >
->Als u een uitsnijding instelt voor het uploaden, plaatst Dynamic Media Classic een cookie om die instelling de volgende keer te onthouden. Als beste praktijken, klik het **Terugstellen aan de Standaardwaarden** van het Bedrijf vóór uw volgende upload om het even welke gewassenopties te wissen die over van laatste upload worden verlaten; anders zou u per ongeluk de volgende reeks afbeeldingen kunnen uitsnijden.
+>Als u een uitsnijding instelt voor het uploaden, plaatst Dynamic Media Classic een cookie om die instelling de volgende keer te onthouden. Als beste praktijken, klik **Terugstellen aan BedrijfsGebreken** knoop vóór uw volgende upload om het even welke gewassenopties te ontruimen die over van laatste upload worden verlaten; anders zou u per ongeluk de volgende reeks afbeeldingen kunnen uitsnijden.
 
 ### Uitsnijden op URL
 
@@ -84,7 +84,8 @@ Hoewel dit niet voor de hand ligt in Dynamic Media Classic, kunt u ook puur uits
 
 Wanneer u het gereedschap Uitsnijden gebruikt, ziet u onder in het veld URL-waarden. U kunt deze waarden als URL-wijzigingstoetsen rechtstreeks op een afbeelding toepassen.
 
-![de opdracht Afbeelding](assets/crop-adjusted-zoom-targets/cropping-by-url.png)Uitsnijden _verandert onder aan de Editor voor uitsnijden_
+![De opdracht ](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
+_imageCrop wijzigt de optietoetsen onder aan de Editor voor uitsnijden_
 
 ![afbeelding](assets/crop-adjusted-zoom-targets/uncropped-cropped.png)
 
@@ -94,7 +95,8 @@ Omdat de grootte per afbeelding moet worden berekend wanneer u bijsnijden door b
 
 Voorinstellingen afbeelding hebben een veld waarin u opdrachten voor het leveren van extra afbeeldingen kunt toevoegen. Als u dezelfde uitsnijding als hierboven aan uw voorinstelling voor afbeeldingen wilt toevoegen, bewerkt u de voorinstelling en plakt of typt u de waarden in het veld URL-wijzigingstoetsen en slaat u deze op en publiceert u ze.
 
-![image](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)_Add crop commands (of any command) to the URL Modifiers of the Image Preset._
+![](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
+_imageVoeg uitsnijdopdrachten (of een opdracht) toe aan de URL-wijzigingstoetsen van de voorinstelling Afbeelding._
 
 Het uitsnijden maakt nu deel uit van de voorinstelling Afbeelding en wordt automatisch toegepast telkens wanneer het wordt gebruikt. Natuurlijk hangt deze methode af van alle afbeeldingen die dezelfde hoeveelheid uitsnijding nodig hebben. Als niet alle afbeeldingen op dezelfde manier zijn opgenomen, werkt deze methode niet voor u.
 
@@ -116,13 +118,14 @@ Een aangepaste afbeelding gebruikt geen schijfruimte, omdat deze alleen bestaat 
 
 Gewoonlijk maakt u aangepaste afbeeldingen met het gereedschap Uitsnijden. deze kunnen echter ook worden gemaakt met de andere afbeeldingseditors, de gereedschappen Aanpassen en Verscherpen.
 
-Voor aangepaste afbeeldingen hebt u een unieke element-id nodig. Wanneer ze worden gepubliceerd (u moet publiceren zoals elk ander element), fungeren ze als elke andere afbeelding en worden ze via hun element-id op een URL aangeroepen. Op de detailpagina kunt u de aangepaste afbeeldingen die aan een master afbeelding zijn gekoppeld, weergeven op het tabblad **Samengesteld en derivaten** .
+Voor aangepaste afbeeldingen hebt u een unieke element-id nodig. Wanneer ze worden gepubliceerd (u moet publiceren zoals elk ander element), fungeren ze als elke andere afbeelding en worden ze via hun element-id op een URL aangeroepen. Op de detailpagina kunt u de aangepaste afbeeldingen die zijn gekoppeld aan een master afbeelding bekijken onder het tabblad **Samengesteld &amp; derivaten**.
 
-![afbeelding](assets/crop-adjusted-zoom-targets/derivatives.jpg)_Aangepaste weergaven voor master afbeelding ASIAN_BR_MAIN_
+![](assets/crop-adjusted-zoom-targets/derivatives.jpg)
+_afbeeldingAangepaste weergaven voor master afbeelding ASIAN_BR_MAIN_
 
 ## Zoomdoelen
 
-Zoomdoelen vindt u ook op de pagina&#39;s **Bewerken** en **Details** van een afbeelding. Hiermee kunt u &quot;hotspots&quot; instellen om specifieke merchandising-functies van een zoomafbeelding te markeren. In plaats van afzonderlijke afbeeldingen te maken door een groot master uit te snijden, kan de zoomviewer de details boven op de afbeelding weergeven, samen met een kort label dat u maakt.
+Zoomdoelen vindt u ook op de pagina **Bewerken** en **Details** van een afbeelding. Hiermee kunt u &quot;hotspots&quot; instellen om specifieke merchandising-functies van een zoomafbeelding te markeren. In plaats van afzonderlijke afbeeldingen te maken door een groot master uit te snijden, kan de zoomviewer de details boven op de afbeelding weergeven, samen met een kort label dat u maakt.
 
 ![afbeelding](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
@@ -132,7 +135,7 @@ Het proces is heel eenvoudig: klik op de functie, geef deze een beschrijvende na
 
 U kunt ook zelf bepalen of u Zoomdoelen wilt gebruiken. Niet alle viewertypen kunnen zoomdoelen weergeven (deze worden bijvoorbeeld niet ondersteund door de uitvlieger).
 
-Leer hoe u zoomdoelen [maakt](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
+Leer hoe u [Zoomdoelen maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
 
 ![afbeelding](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 
@@ -145,10 +148,10 @@ Hier volgt de workflow voor het maken van doelen in Dynamic Media Classic.
 3. Verplaats het rode vak met de muis en klik om een nieuw doel te maken.
 
    - Het rode vak is het doelgebied. Wanneer een gebruiker op dat doel klikt, wordt ingezoomd op het gebied binnen het vak.
-   - De doelgrootte wordt bepaald door de weergavegrootte binnen de voorinstelling van de viewer. Hiermee bepaalt u de grootte van de hoofdzoomafbeelding. Zie De weergavegrootte __ instellen hieronder.
+   - De doelgrootte wordt bepaald door de weergavegrootte binnen de voorinstelling van de viewer. Hiermee bepaalt u de grootte van de hoofdzoomafbeelding. Zie _Weergavegrootte instellen_, verderop.
 
 4. U ziet het doel dat u net hebt gemaakt blauw worden en rechts ziet u een miniatuurversie van dat doel en de standaardnaam &quot;target-0&quot;.
-5. Als u de naam van het doel wilt wijzigen, klikt u op de bijbehorende miniatuur, typt u een nieuwe **naam** en klikt u op **Enter** of **Tab** . Als u gewoon wegklikt, wordt uw naam niet opgeslagen.
+5. Als u de naam van het doel wilt wijzigen, klikt u op de bijbehorende miniatuur, typt u een nieuwe **Naam** en klikt u op **Enter** of **Tab** — als u gewoon wegklikt, wordt uw naam niet opgeslagen.
 6. Als het doel is geselecteerd, bevat het vak groene onderbroken lijnen en kunt u het formaat en de verplaatsing wijzigen. Sleep de hoeken om het formaat te wijzigen of sleep het doelvak om het te verplaatsen.
 
    - Hiermee wordt de afbeelding geladen in de standaard aangepaste zoomviewer. Zorg ervoor dat de voorinstelling van de viewer zoomdoelen ondersteunt. In het algemeen zijn alle standaardvoorinstellingen met het woord &#39;-Met instructies&#39; ontworpen voor gebruik met zoomdoelen. Als u de doelen wilt gebruiken, houdt u de muisaanwijzer boven de doelminiatuur (of het hotspot-pictogram) om het label weer te geven en klikt u erop om te zien hoe de viewer in die functie inzoomt.
@@ -156,9 +159,9 @@ Hier volgt de workflow voor het maken van doelen in Dynamic Media Classic.
 
       ![afbeelding](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
-7. Als u een doel wilt verwijderen, selecteert u het door op de bijbehorende miniatuur te klikken en op de knop Doel **** verwijderen te drukken of op de toets DELETE op het toetsenbord te drukken.
+7. Als u een doel moet verwijderen, selecteert u het door op de bijbehorende miniatuur te klikken en op de knop **Doel verwijderen** te drukken of op de toets DELETE op het toetsenbord te drukken.
 8. Ga door met klikken om nieuwe doelen toe te voegen, de naam te wijzigen en/of het formaat te wijzigen nadat u een doel hebt toegevoegd.
-9. Als u klaar bent, klikt u op de knop **Opslaan** en vervolgens op **Voorvertoning**.
+9. Wanneer u wordt gedaan, klik **sparen** knoop, en dan **Voorproef**.
 
 ### De weergavegrootte instellen in de voorinstelling Zoomviewer
 
@@ -178,7 +181,7 @@ U ziet dat de ingebouwde voorinstelling een grootte van 900 x 550 heeft, wat bet
 
 Als u de weergavegrootte wilt instellen, maakt of bewerkt u een voorinstelling voor de viewer die Zoomdoelen ondersteunt.
 
-1. Ga in de Voorinstelling Viewer naar de optie **Zoominstellingen** .
+1. Ga in de Voorinstelling Viewer naar de optie **Zoominstellingen**.
 2. Stel een breedte en hoogte in.
 3. Sla de voorinstelling op en sluit deze af. Als u die voorinstelling op uw livesite wilt gebruiken, moet u deze later ook publiceren.
 4. Ga naar het gereedschap Zoomdoel en kies de voorinstelling die u linksonder hebt bewerkt. De nieuwe weergavegrootte wordt meteen weerspiegeld in uw doelen.
