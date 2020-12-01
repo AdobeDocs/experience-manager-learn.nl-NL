@@ -42,7 +42,7 @@ In deze handleiding bespreken we de volgende kernmogelijkheden van Dynamic Media
 - **Video.** Upload definitieve video&#39;s, publiceer ze en download ze progressief naar configureerbare videoviewers.
 - **Smart Imaging.** Technologie die gebruikmaakt van Adobe Sensei AI-mogelijkheden en met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de beeldlevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
-Om extra mogelijkheden van de oplossing te ontdekken, bezoek de [Documentatie voor Dynamische Klassieke](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html)Media.
+Om extra mogelijkheden van de oplossing te ontdekken, bezoek [Documentatie voor Dynamische Klassieke Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
 
 ## De dynamische Klassieke Gebruikersinterface van Media (UI)
 
@@ -64,7 +64,7 @@ _Dynamische Klassieke UI voor media_
 
 >[!IMPORTANT]
 >
->Naast elke Element-id bevindt zich de **Mark for Publish** -switch. Wanneer de schakeloptie is ingeschakeld (groen), geeft dat aan dat het element is gemarkeerd voor publicatie.
+>Naast elke element-id bevindt zich de **Mark for Publish**-switch. Wanneer de schakeloptie is ingeschakeld (groen), geeft dat aan dat het element is gemarkeerd voor publicatie.
 
 ![afbeelding](assets/overview/overview-mark-for-publish.png)
 
@@ -72,4 +72,4 @@ _Dynamische Klassieke UI voor media_
 >
 >Schakel het selectievakje **Publiceren na uploaden** in het dialoogvenster Uploaden in om elementen automatisch te publiceren tijdens het uploaden.
 
-Meer informatie over [navigeren in de gebruikersinterface van Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Meer informatie over [Navigeren door de interface van Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
