@@ -38,9 +38,9 @@ De adaptieve formuliergegevens worden opgeslagen onder het gegevenselement, zoal
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0** - Wanneer u een variabele van het type XML creeert om de voorgelegde gegevens in uw werkschemamodel te vangen, te associëren gelieve XSD niet met de variabele. Dit komt omdat de verzonden gegevens niet voldoen aan de XSD-standaard wanneer u een adaptief XSD-formulier verzendt. De XSD klachtengegevens zijn ingesloten in /afData/afBoundData/ element.
+>**AEM Forms 6.5.0**  - Wanneer u een variabele van het type XML creeert om de voorgelegde gegevens in uw werkschemamodel te vangen, te associëren gelieve XSD niet met de variabele. Dit komt omdat de verzonden gegevens niet voldoen aan de XSD-standaard wanneer u een adaptief XSD-formulier verzendt. De XSD klachtengegevens zijn ingesloten in /afData/afBoundData/ element.
 >
->**AEM Forms 6.5.1** - Als u XSD aan uw variabele van XML associeert kunt u de schemaelementen doorbladeren om de veranderlijke afbeelding te doen. U hebt geen toegang tot formuliergegevens die niet zijn gebonden aan schema-elementen. Als uw gebruiksgeval tot gegevens moet toegang hebben verbindend aan schemaelementen evenals unbound gegevens, dan bindt niet schema met uw variabele van XML in het werkschema.U zult de aangewezen uitdrukking van XPath moeten gebruiken om aan de gegevens te krijgen die u nodig hebt
+>**AEM Forms 6.5.1**  - Als u XSD aan uw variabele van XML associeert kunt u de schemaelementen doorbladeren om de veranderlijke afbeelding te doen. U hebt geen toegang tot formuliergegevens die niet zijn gebonden aan schema-elementen. Als uw gebruiksgeval tot gegevens moet toegang hebben verbindend aan schemaelementen evenals unbound gegevens, dan bindt niet schema met uw variabele van XML in het werkschema.U zult de aangewezen uitdrukking van XPath moeten gebruiken om aan de gegevens te krijgen die u nodig hebt
 
 ## XML-variabelen maken
 
@@ -48,7 +48,7 @@ De adaptieve formuliergegevens worden opgeslagen onder het gegevenselement, zoal
 
 ### Schema gebruiken met XML-variabele
 
-**Een XML-variabele toewijzen aan een schema. Gebruik deze functie voor AEM Forms 6.5.1 en hoger**
+**Een XML-variabele toewijzen aan een schema. Gebruik deze mogelijkheid met AEM Forms 6.5.1 en hoger**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=9&learn=on)
 
@@ -59,7 +59,7 @@ De adaptieve formuliergegevens worden opgeslagen onder het gegevenselement, zoal
 Voer de volgende stappen uit om de middelen op uw systeem te laten werken:
 
 * [Elementen downloaden en importeren in AEM met pakketbeheer](assets/xmlandstringvariable.zip)
-* [Het workflowmodel](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) verkennen om inzicht te krijgen in de variabelen die worden gebruikt in de workflow
+* [Ontdek het ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) workflowmodel om te begrijpen welke variabelen worden gebruikt in de workflow
 * [De e-mailservice configureren](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Het adaptieve formulier openen](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Vul de gegevens in en verzend het formulier.
