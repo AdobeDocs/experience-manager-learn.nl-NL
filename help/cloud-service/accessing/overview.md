@@ -24,22 +24,22 @@ AEM als Cloud Service is de cloud-native manier om de AEM toepassingen te benutt
 
 ## Adobe IMS-gebruikers
 
-Gebruikers die toegang tot de AEM-auteurservice nodig hebben, worden als [Adobe IMS-gebruikers](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) beheerd in [AdminConsole](https://adminconsole.adobe.com)van AEM-Adobe. Leer over welke gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden beheerd.
+Gebruikers die toegang tot de AEM-auteurservice nodig hebben, worden beheerd als [Adobe IMS-gebruikers](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [Adobe AdminConsole](https://adminconsole.adobe.com). Leer over welke gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden beheerd.
 
 [Meer informatie over Adobe IMS-gebruikers](./adobe-ims-users.md)
 
 ## Adobe IMS-gebruikersgroepen
 
-Gebruikers die toegang krijgen tot de AEM-auteurservice, moeten in logische groepen worden ingedeeld met gebruik van [Adobe IMS-gebruikersgroepen](https://helpx.adobe.com/enterprise/using/user-groups.html) in [Adobe AdminConsole](https://adminconsole.adobe.com). Adobe IMS-gebruikersgroepen bieden geen directe machtigingen of toegang tot AEM (dit is de taak van [Adobe IMS-productprofielen](#adobe-ims-product-profiles)), maar ze vormen een goede manier om logische gebruikersgroepen te definiëren die op hun beurt kunnen worden vertaald naar specifieke toegangsniveaus in de AEM-auteurservice, met behulp van AEM groepen en machtigingen.
+Gebruikers die toegang krijgen tot de AEM-auteurservice moeten in logische groepen worden ingedeeld met [Adobe IMS-gebruikersgroepen](https://helpx.adobe.com/enterprise/using/user-groups.html) in [Adobe AdminConsole](https://adminconsole.adobe.com). Adobe IMS-gebruikersgroepen bieden geen directe machtigingen of toegang tot AEM (dit is de taak van [Adobe IMS-productprofielen](#adobe-ims-product-profiles)), maar zijn een goede manier om logische groepen gebruikers te definiëren die op hun beurt kunnen worden vertaald naar specifieke toegangsniveaus in de AEM-auteurservice, met behulp van AEM groepen en machtigingen.
 
 [Meer informatie over Adobe IMS-gebruikersgroepen](./adobe-ims-user-groups.md)
 
 ## Adobe IMS-productprofielen
 
-[Adobe IMS-productprofielen](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html), beheerd in [Adobe AdminConsole](https://adminconsole.adobe.com), zijn het mechanisme dat gebruikers [van](#adobe-ims-users) Adobe IMS toegang biedt tot aanmelding bij AEM Author-service met een basistoegangsniveau.
+[Adobe IMS-productprofielen](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html), beheerd in  [Adobe AdminConsole](https://adminconsole.adobe.com), zijn het mechanisme dat  [Adobe IMS-](#adobe-ims-users) gebruikers toegang biedt tot aanmelding bij AEM Author-service met een basistoegangsniveau.
 
-+ Het __AEM gebruikersprofiel__ biedt gebruikers alleen-lezen toegang tot AEM via lidmaatschap in AEM groep Medewerkers.
-+ Het __AEM Beheerders__ -productprofiel biedt gebruikers volledige, beheerbare toegang tot AEM.
++ Met het productprofiel __AEM Users__ kunnen gebruikers alleen-lezen toegang krijgen tot AEM via lidmaatschap van AEM groep Medewerkers.
++ Met het productprofiel __AEM Beheerders__ hebben gebruikers volledig beheerbare toegang tot AEM.
 
 [Meer informatie over Adobe IMS-productprofielen](./adobe-ims-product-profiles.md)
 
@@ -57,7 +57,7 @@ Een verkorte analyse die Adobe IMS gebruikers, gebruikersgroepen en productprofi
 
 ## Aanvullende Adobe Admin Console-bronnen
 
-De volgende documentatie heeft betrekking op [Adobe Admin Console](https://adminconsole.adobe.com)-specifieke details en problemen die kunnen helpen bij een beter inzicht in de Adobe Admin Console en het gebruik ervan voor het beheer van gebruikers en toegang tot verschillende Experience Cloud-producten.
+De volgende documentatie behandelt [Adobe Admin Console](https://adminconsole.adobe.com)-specifieke details en zorgen die kunnen helpen bij een beter inzicht in de Adobe Admin Console en het gebruiken van het om gebruikers en toegang over de producten van Experience Cloud te beheren.
 
 + [Adobe Admin Console-identiteitsoverzicht](https://helpx.adobe.com/enterprise/using/identity.html)
 + [Adobe Admin Console Admin-rollen](https://helpx.adobe.com/enterprise/using/admin-roles.html)
