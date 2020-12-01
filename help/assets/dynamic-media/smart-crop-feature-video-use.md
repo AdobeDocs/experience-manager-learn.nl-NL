@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Smart Crop gebruiken met AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
+# Slim uitsnijden gebruiken met AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
 Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare taken van het uitsnijden van inhoud voor een responsief ontwerp te elimineren.
 
