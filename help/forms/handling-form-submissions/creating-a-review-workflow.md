@@ -31,7 +31,7 @@ In de volgende video wordt uitgelegd hoe u de workflow Revisie en Goedkeuring ku
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
 
 
-Als u om een of andere reden de workflow niet kunt samenstellen, kunt u de voltooide workflow [hier](assets/review-submitted-data-workflow.zip) downloaden en hetzelfde importeren met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp) in uw AEM.
+Als u om een of andere reden de workflow niet kunt samenstellen, kunt u de voltooide workflow downloaden van [here](assets/review-submitted-data-workflow.zip) en dezelfde workflow importeren met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp) in uw AEM-instantie.
 
 
 
