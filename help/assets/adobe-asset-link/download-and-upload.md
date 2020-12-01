@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Downloaden en uploaden {#download-and-upload}
+# {#download-and-upload} downloaden en uploaden
 
 Leer hoe u elementbestanden kunt downloaden van en uploaden naar AEM Assets via het deelvenster Asset Link.
 
