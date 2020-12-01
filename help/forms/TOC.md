@@ -6,9 +6,9 @@ user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AE
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 787a79663472711b78d467977d633e3d410803e5
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
    + [Tabel toevoegen aan paneel Inkomsten](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
    + [Deelvenster Elementen configureren](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [Aangepaste functies en code-editor gebruiken](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
-+ Formulierverzendingen verwerken {#handling-af-form-submissions}
++ Formulierverzendingen {#handling-af-form-submissions} verwerken
    + [Een revisiewerkstroom maken](handling-form-submissions/creating-a-review-workflow.md)
    + [Aangepast formulier configureren om workflow te activeren](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [De pagina Bedankt weergeven](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
@@ -83,7 +83,7 @@ ht-degree: 1%
    + [HTML5 Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Formuliergegevensmodel met Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Items dynamisch aan keuzeselectie-component toevoegen](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ Aangepast formulier vooraf invullen met behulp van formuliergegevensmodel{#prefill-fdm-db}
++ Aangepast formulier vooraf invullen met formuliergegevensmodel{#prefill-fdm-db}
    + [Inleiding](prefill-fdm-db/introduction.md)
    + [Databasetabellen maken](prefill-fdm-db/create-database-tables.md)
    + [Formuliergegevensmodel configureren](prefill-fdm-db/configuring-form-data-model.md)
@@ -94,7 +94,7 @@ ht-degree: 1%
    + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
    + [Sweeksjabloon gebruiken](inbox-customization/use-sightly-template.md)
 
-+ Adaptief formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
++ Aangepast formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
    + [Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
    + [Gegevensbron configureren](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [Formulierbijlagen opslaan](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -106,7 +106,7 @@ ht-degree: 1%
    + [Het hoofdformulier maken](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [Het MyAccount-formulier maken](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [Het voorbeeld implementeren](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
-+ Verzendgegevens exporteren in CSV-indeling{#export-submitted-data-csv-format}
++ Ingediende gegevens exporteren in CSV-indeling{#export-submitted-data-csv-format}
    + [Verzonden gegevens exporteren](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
    + [HTML5-formulier maken](html5-forms/create-html5-form.md)
@@ -124,7 +124,7 @@ ht-degree: 1%
    + [PDF-formulier converteren naar adaptief formulier](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [XDP-sjablonen gebruiken met Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-+ Variabelen in AEM workflow{#variables-aem-workflow}
++ Variabelen in AEM Workflow{#variables-aem-workflow}
    + [Inleiding - Variabelen in workflow](variables-aem-workflow/introduction.md)
    + [XML-variabelen](variables-aem-workflow/part1.md)
    + [JSON-variabelen](variables-aem-workflow/part2.md)
@@ -132,15 +132,15 @@ ht-degree: 1%
    + [ArrayList-variabele](variables-aem-workflow/part4.md)
    + [Formuliergegevensmodelvariabele](variables-aem-workflow/form-data-model.md)
    + [Regeleditor in AEM workflow](variables-aem-workflow/part5.md)
-+ Formuliergegevens opslaan en ophalen in MySQL DB{#storing-and-retrieving-form-data}
++ Het opslaan van en het Ophalen van de Gegevens van de Vorm in DB MySQL{#storing-and-retrieving-form-data}
    + [Inleiding](storing-retrieving-form-data/introduction.md)
    + [Gegevensbron configureren](storing-retrieving-form-data/part1.md)
-   + [Servlet voor het opslaan van gegevens](storing-retrieving-form-data/part2.md)
-   + [Service voor het ophalen van gegevens](storing-retrieving-form-data/part3.md)
+   + [Service voor het opslaan van gegevens](storing-retrieving-form-data/part3.md)
+   + [Servlet maken](storing-retrieving-form-data/part2.md)
    + [Clientbibliotheek](storing-retrieving-form-data/part4.md)
    + [Adaptief formuliersjabloon](storing-retrieving-form-data/part5.md)
    + [Voorbeeldelementen implementeren](storing-retrieving-form-data/part6.md)
-+ Triggerend AEM Workflow van het indienen van mobiele formulieren{#offline-mobile-form-submission}
++ Het teweegbrengen van AEM Workflow van Mobiele Verzending van het Vorm{#offline-mobile-form-submission}
    + [Inleiding](offline-mobile-form-submission/introduction.md)
    + [Aangepast profiel](offline-mobile-form-submission/part-one.md)
    + [PDF-verzending verwerken](offline-mobile-form-submission/part-two.md)
@@ -155,7 +155,7 @@ ht-degree: 1%
 + Aangepaste elementtypen weergeven in Forms Portal{#listing-custom-asset-types}
    + [Deel 1-Aangepaste elementtypen registreren](listing-custom-asset-types/part1.md)
    + [Part2 - Aangepaste sjabloon maken](listing-custom-asset-types/part2.md)
-+ AEM Forms met Marketo{#aem-forms-with-marketo}
++ AEM Forms met markeerteken{#aem-forms-with-marketo}
    + [Deel 1 - Inleiding](aem-forms-with-marketo/part1.md)
    + [Part2 - Aangepaste verificatie](aem-forms-with-marketo/part2.md)
    + [Deel3 - Gegevensbron](aem-forms-with-marketo/part3.md)
