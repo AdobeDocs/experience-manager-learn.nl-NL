@@ -28,14 +28,14 @@ Leer hoe te om individuele stijlen uit te voeren en de Componenten van de Kern t
 
 Controleer de vereiste gereedschappen en instructies voor het instellen van een [lokale ontwikkelomgeving](overview.md#local-dev-environment).
 
-Het wordt ook geadviseerd om de [cliënt-zijBibliotheken en het Voorste-eind](client-side-libraries.md) leerprogramma van het Werkschema te herzien om de grondbeginselen van cliënt-zijbibliotheken en de diverse front-end hulpmiddelen te begrijpen die in het AEM project worden gebouwd.
+Het wordt ook geadviseerd om de [Client-side Bibliotheken en het Voorste-eind Werkschema](client-side-libraries.md) leerprogramma te herzien om de grondbeginselen van cliënt-zijbibliotheken en de diverse front-end hulpmiddelen te begrijpen die in het AEM project worden gebouwd.
 
 ### Starter-project
 
 Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
 
 1. Clone the [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd) repository.
-1. De `style-system/start` vertakking uitchecken
+1. De `style-system/start`-vertakking uitchecken
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
@@ -50,7 +50,7 @@ Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd/tree/style-system/solution) altijd bekijken of de code plaatselijk controleren door aan de tak te schakelen `style-system/solution`.
+U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd/tree/style-system/solution) altijd bekijken of de code plaatselijk controleren door aan de tak `style-system/solution` te schakelen.
 
 ## Doelstelling
 
@@ -58,9 +58,9 @@ U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wkn
 1. Leer meer over BEM-notatie en hoe u deze kunt gebruiken om stijlen zorgvuldig in bereik te brengen.
 1. Geavanceerde beleidsconfiguraties toepassen met bewerkbare sjablonen.
 
-## Wat u gaat maken {#what-you-will-build}
+## Wat u {#what-you-will-build} wilt maken
 
-In dit hoofdstuk gebruiken wij de eigenschap [van het Systeem van de](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) Stijl om verscheidene variaties van componenten tot stand te brengen die op de pagina van het Artikel worden gebruikt. Met het Stijlsysteem kunt u ook variaties maken voor structuurelementen zoals Koptekst/Voettekst en Container layout.
+In dit hoofdstuk gebruiken wij [de eigenschap van het Systeem van de Stijl](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) om verscheidene variaties van componenten tot stand te brengen die op de pagina van het Artikel worden gebruikt. Met het Stijlsysteem kunt u ook variaties maken voor structuurelementen zoals Koptekst/Voettekst en Container layout.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30386/?quality=12&learn=on)
 
@@ -70,11 +70,11 @@ Met het [Stijlsysteem](https://docs.adobe.com/content/help/en/experience-manager
 
 Het algemene idee met het Stijlsysteem is dat ontwerpers verschillende stijlen kunnen kiezen van hoe een component eruit moet zien. De &quot;stijlen&quot; worden ondersteund door extra CSS-klassen die in de buitenste div van een component worden geïnjecteerd. In de clientbibliotheken worden CSS-regels toegevoegd op basis van deze stijlklassen, zodat de vormgeving van de component verandert.
 
-Hier [vindt u](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html)gedetailleerde documentatie voor het Stijlsysteem. Er is ook een geweldige [technische video voor het begrijpen van het Stijlsysteem](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+U kunt [gedetailleerde documentatie voor het Systeem van de Stijl hier](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html) vinden. Er is ook een grote [technische video voor het begrijpen van het Systeem van de Stijl](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
-## Stijl van component Title {#title-component}
+## Stijl van titelcomponent {#title-component}
 
-Op dit punt is de component [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/title.html) Title uitgebreid naar het project onder `/apps/wknd/components/content/title` als onderdeel van de module **ui.apps** . De standaardstijlen van Kop-elementen (`H1`, `H2`, `H3`...) zijn al geïmplementeerd in de module **ui.frontend** in het `_elements.scss` bestand `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
+Op dit punt is de [Titel Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/title.html) in het project onder `/apps/wknd/components/content/title` als deel van **ui.apps** module proxied. De standaardstijlen van Kop-elementen (`H1`, `H2`, `H3`...) zijn al geïmplementeerd in de **ui.frontend** module in het `_elements.scss`-bestand onder `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
 
 ### Onderstrepingsstijl
 
@@ -86,7 +86,7 @@ De [WKND-artikelontwerpen](assets/pages-templates/wknd-article-design.xd) bevatt
 
 Als front-end ontwikkelaar is de eerste stap aan het stileren van een Component van de Kern de prijsverhoging te begrijpen die door de component wordt geproduceerd.
 
-Als deel van het geproduceerde project, het archetype ingebedde project van de Voorbeelden **van de Component van de** Kern. Voor ontwikkelaars en makers van inhoud bevat dit een eenvoudige referentie die inzicht biedt in alle functies die beschikbaar zijn met Core Components. Er is ook een live versie [beschikbaar](https://opensource.adobe.com/aem-core-wcm-components/library.html).
+Als deel van het geproduceerde project, ingebed archetype **de Voorbeelden van de Component van de Kern** project. Voor ontwikkelaars en makers van inhoud bevat dit een eenvoudige referentie die inzicht biedt in alle functies die beschikbaar zijn met Core Components. Een live versie is ook [beschikbaar](https://opensource.adobe.com/aem-core-wcm-components/library.html).
 
 1. Open een nieuwe browser en bekijk de component Titel:
 
@@ -121,9 +121,9 @@ Als deel van het geproduceerde project, het archetype ingebedde project van de V
 
 ### Implementeer de onderstrepingsstijl - ui.frontend
 
-Vervolgens implementeren we de onderstrepingsstijl met behulp van de module **ui.frontend** van ons project. We gebruiken de ontwikkelserver voor webpakketten die is meegeleverd bij de module **ui.frontend** om een voorvertoning van de stijlen weer te geven *voordat* u deze implementeert naar een lokale versie van AEM.
+Vervolgens implementeren we de onderstrepingsstijl met de module **ui.frontend** van ons project. Wij zullen de webpack ontwikkelingsserver gebruiken die met **ui.frontend** module wordt gebundeld om de stijlen *before* aan een lokale instantie van AEM voor te vertonen.
 
-1. Start de webpack-ontwikkelserver met de volgende opdracht vanuit de module **ui.frontend** :
+1. Start de webpack Dev-server met de volgende opdracht vanuit de module **ui.frontend**:
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
@@ -141,8 +141,8 @@ Vervolgens implementeren we de onderstrepingsstijl met behulp van de module **ui
 
    ![Webpack-ontwikkelingsserver](assets/style-system/static-webpack-server.png)
 
-1. Open het bestand in Eclipse of de IDE van uw keuze `index.html` op: `ui.frontend/src/main/webpack/static/index.html`. Dit is de statische prijsverhoging die door de webpack ontwikkelingsserver wordt gebruikt.
-1. Zoek in `index.html` het document naar een instantie van de component Title waaraan u de onderstrepingsstijl wilt toevoegen door te zoeken naar *cmp-title*. Kies de component van de Titel met de tekst *&quot;Vans van het Vuurspark van de muur&quot;* (lijn 218). Voeg de klasse toe `cmp-title--underline` aan de omringende div:
+1. Open in Eclipse of IDE van uw keuze het bestand `index.html` dat zich bevindt op: `ui.frontend/src/main/webpack/static/index.html`. Dit is de statische prijsverhoging die door de webpack ontwikkelingsserver wordt gebruikt.
+1. Zoek in `index.html` een instantie van de component Title waaraan u de onderstrepingsstijl wilt toevoegen door in het document te zoeken naar *cmp-title*. Kies de component van de Titel met de tekst *&quot;Vans van het Wandskatepark&quot;* (lijn 218). Voeg de klasse `cmp-title--underline` aan omringende div toe:
 
    ```html
     <!-- before -->
@@ -163,7 +163,7 @@ Vervolgens implementeren we de onderstrepingsstijl met behulp van de module **ui
    ```
 
 1. Ga terug naar de browser en controleer of de extra klasse wordt weerspiegeld in de markering.
-1. Ga terug naar de module **ui.frontend** en werk het bestand bij `title.scss` in: `ui.frontend/src/main/webpack/components/content/title/scss/title.scss`:
+1. Ga terug naar de **ui.frontend** module en werk het bestand `title.scss` bij dat zich bevindt op: `ui.frontend/src/main/webpack/components/content/title/scss/title.scss`:
 
    ```css
    /* Add Title Underline Style */
@@ -188,7 +188,7 @@ Vervolgens implementeren we de onderstrepingsstijl met behulp van de module **ui
    >
    >Het wordt beschouwd als beste praktijken om werkingsgebiedstijlen aan de doelcomponent altijd strak te maken. Dit zorgt ervoor dat extra stijlen andere gebieden van de pagina niet beïnvloeden.
    >
-   >Alle kerncomponenten voldoen aan de **[BEM-notatie](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. Het wordt aanbevolen de buitenste CSS-klasse als doel in te stellen wanneer u een standaardstijl voor een component maakt. Een andere beste manier is om klassennamen te richten die door de aantekening van de Component BEM van de Kern eerder dan de elementen van HTML worden gespecificeerd.
+   >Alle kerncomponenten voldoen aan **[BEM-notatie](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. Het wordt aanbevolen de buitenste CSS-klasse als doel in te stellen wanneer u een standaardstijl voor een component maakt. Een andere beste manier is om klassennamen te richten die door de aantekening van de Component BEM van de Kern eerder dan de elementen van HTML worden gespecificeerd.
 
 1. Keer opnieuw naar browser en u zou de onderstreepte stijl moeten zien worden toegevoegd:
 
@@ -207,34 +207,34 @@ Vervolgens moet een nieuw beleid voor de componenten Titel worden toegevoegd, zo
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Navigeer naar de sjabloon voor **artikelpagina** op: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Navigeer naar **Article Page Template** op de locatie: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. In de modus **Structuur** selecteert u in de **container** van de hoofdlayout het pictogram **Beleid** naast de component **Titel** onder *Toegestane componenten*:
+1. In **Structuur** wijze, in de belangrijkste **Lay-outcontainer**, selecteer **Beleid** pictogram naast **Title** component die onder *Toegestane Componenten* wordt vermeld:
 
    ![Titelbeleid configureren](assets/style-system/article-template-title-policy-icon.png)
 
 1. Maak een nieuw beleid voor de component Title met de volgende waarden:
 
-   *Beleidstitel **: **WKND-titel**
+   *Beleidstitel **:  **WKND-titel**
 
-   *Eigenschappen* > tabblad *Stijlen* > Een nieuwe stijl *toevoegen*
+   *Eigenschappen*  > tabblad  *Stijlen*  > Een nieuwe stijl  *toevoegen*
 
-   **Onderstrepen** : `cmp-title--underline`
+   **Onderstrepen** :  `cmp-title--underline`
 
    ![Stijlbeleidsconfiguratie voor titel](assets/style-system/title-style-policy.gif)
 
-   Klik op **Gereed** om de wijzigingen in het titelbeleid op te slaan.
+   Klik **Done** om de wijzigingen in het titelbeleid op te slaan.
 
    >[!NOTE]
    >
-   > De waarde komt overeen met de CSS-klasse die we eerder als doel hadden tijdens het ontwikkelen in de module `cmp-title--underline` ui.frontend **** .
+   > De waarde `cmp-title--underline` komt overeen met de CSS-klasse die we eerder als doel hadden tijdens de ontwikkeling in de module **ui.frontend**.
 
 ### De stijl Onderstrepen toepassen
 
 Tot slot kunnen wij als auteur ervoor kiezen om de onderstrepingsstijl toe te passen op bepaalde componenten van de Titel.
 
-1. Navigeer naar het artikel **La Skateparks** in de AEM Sites-editor op: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. Kies in de modus **Bewerken** een component Titel. Klik op het pictogram van het **penseel** en selecteer de stijl **Onderstrepen** :
+1. Navigeer naar het artikel **La Skateparks** in de redacteur van AEM Sites bij: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. Kies in de modus **Bewerken** een component Title. Klik op het pictogram **Tekenpenseel** en selecteer de stijl **Onderstrepen**:
 
    ![De stijl Onderstrepen toepassen](assets/style-system/apply-underline-style-title.png)
 
@@ -244,15 +244,15 @@ Tot slot kunnen wij als auteur ervoor kiezen om de onderstrepingsstijl toe te pa
 
    ![Weergeven als gepubliceerd](assets/style-system/view-as-published.png)
 
-   Gebruik de browsergereedschappen om te controleren of de markering rondom de component Title de CSS-klasse heeft `cmp-title--underline` toegepast op de buitenste div.
+   Gebruik de browsergereedschappen om te controleren of de markering rondom de component Title de CSS-klasse `cmp-title--underline` heeft toegepast op de buitenste div.
 
 ## Stijl van tekstcomponent {#text-component}
 
-Vervolgens worden vergelijkbare stappen herhaald om een unieke stijl toe te passen op de [tekstcomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html). De component Text is uitgebreid naar het project onder `/apps/wknd/components/content/text` als onderdeel van de module **ui.apps** . De standaardstijlen van alinea-elementen zijn al geïmplementeerd in de module **ui.frontend** in het `_elements.scss` bestand `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
+Vervolgens herhalen we vergelijkbare stappen om een unieke stijl toe te passen op de [Tekstcomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html). De component van de Tekst is proxied in het project onder `/apps/wknd/components/content/text` als deel van **ui.apps** module. De standaardstijlen van alinea-elementen zijn al geïmplementeerd in de module **ui.frontend** in het bestand `_elements.scss` onder `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
 
 ### Stijl prijsblok
 
-Het [WKND-artikelontwerp](assets/pages-templates/wknd-article-design.xd) bevat een unieke stijl voor de component Text met een aanhalingsteken:
+De [WKND-artikelontwerpen](assets/pages-templates/wknd-article-design.xd) bevatten een unieke stijl voor de component Text met een aanhalingsteken:
 
 ![Blokstijl prijsopgave - Tekstcomponent](assets/style-system/quote-block-style.png)
 
@@ -296,9 +296,9 @@ Lokale AEM: [http://localhost:4502/editor.html/content/core-components-examples/
 
 ### Implementeer de stijl voor het aanhalingsteken - ui.frontend
 
-Daarna zullen wij de stijl van het Blok van het Citaat uitvoeren gebruikend de module **ui.frontend** van ons project.
+Daarna zullen wij de stijl van het Blok van het Citaat uitvoeren gebruikend **ui.frontend** module van ons project.
 
-1. Start de webpack-ontwikkelserver met de volgende opdracht vanuit de module **ui.frontend** :
+1. Start de webpack Dev-server met de volgende opdracht vanuit de module **ui.frontend**:
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
@@ -308,8 +308,8 @@ Daarna zullen wij de stijl van het Blok van het Citaat uitvoeren gebruikend de m
    > webpack-dev-server --open --config ./webpack.dev.js
    ```
 
-1. Open het bestand in Eclipse of de IDE van uw keuze `index.html` op: `ui.frontend/src/main/webpack/static/index.html`. Dit is de statische prijsverhoging die door de webpack ontwikkelingsserver wordt gebruikt.
-1. Zoek in `index.html` een instantie van de tekstcomponent naar de tekst *&quot;Jacob Wester&quot;* (regel 210). Voeg de klasse toe `cmp-text--quote` aan de omringende div:
+1. Open in Eclipse of IDE van uw keuze het bestand `index.html` dat zich bevindt op: `ui.frontend/src/main/webpack/static/index.html`. Dit is de statische prijsverhoging die door de webpack ontwikkelingsserver wordt gebruikt.
+1. Zoek in `index.html` een instantie van de tekstcomponent door te zoeken naar de tekst *&quot;Jacob Wester&quot;* (regel 210). Voeg de klasse `cmp-text--quote` aan omringende div toe:
 
    ```html
     <!-- before -->
@@ -332,7 +332,7 @@ Daarna zullen wij de stijl van het Blok van het Citaat uitvoeren gebruikend de m
    ```
 
 1. Ga terug naar de browser en controleer of de extra klasse wordt weerspiegeld in de markering.
-1. Ga terug naar de module **ui.frontend** en werk het bestand bij `text.scss` in: `ui.frontend/src/main/webpack/components/content/text/scss/text.scss`:
+1. Ga terug naar de **ui.frontend** module en werk het bestand `text.scss` bij dat zich bevindt op: `ui.frontend/src/main/webpack/components/content/text/scss/text.scss`:
 
    ```css
    /* WKND Text Quote style */
@@ -391,36 +391,36 @@ Voeg vervolgens een nieuw beleid toe voor de tekstcomponenten.
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Navigeer naar de sjabloon voor **artikelpagina** op: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Navigeer naar **Article Page Template** op de locatie: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. Selecteer in de modus **Structuur** in de **container** van de hoofdlayout het pictogram **Beleid** naast de **component Text** die onder *Toegestane componenten* wordt weergegeven:
+1. In **Structuur** wijze, in de belangrijkste **Lay-outcontainer**, selecteer **Beleid** pictogram naast **Tekst** component die onder *Toegestane Componenten* wordt vermeld:
 
    ![Tekstbeleid configureren](assets/style-system/article-template-text-policy-icon.png)
 
 1. Maak een nieuw beleid voor de component Text met de volgende waarden:
 
-   *Beleidstitel **: **WKND-tekst**
+   *Beleidstitel **:  **WKND-tekst**
 
-   *Insteekmodules* > *Alineastijlen* > Alineastijlen *inschakelen*
+   *Plugins*  >  *Alineastijlen*  > Alineastijlen  *inschakelen*
 
-   *Tabblad* Stijlen > *Een nieuwe stijl toevoegen*
+   *Tab*  Stijlen >  *Een nieuwe stijl toevoegen*
 
-   **Offerteblok** : `cmp-text--quote`
+   **Offerteblok** :  `cmp-text--quote`
 
    ![Beleid tekstcomponent](assets/style-system/text-policy-enable-paragraphstyles.png)
 
    ![Beleid voor tekstcomponenten 2](assets/style-system/text-policy-enable-quotestyle.png)
 
-   Klik op **Gereed** om de wijzigingen in het tekstbeleid op te slaan.
+   Klik **Done** om de wijzigingen in het tekstbeleid op te slaan.
 
 ### De stijl voor het aanhalingsteken toepassen
 
-1. Navigeer naar het artikel **La Skateparks** in de AEM Sites-editor op: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. Navigeer naar het artikel **La Skateparks** in de redacteur van AEM Sites bij: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 1. Kies in de modus **Bewerken** een tekstcomponent. Bewerk de component om een aanhalingsteken te plaatsen:
 
    ![Configuratie van tekstcomponent](assets/style-system/configure-text-component.png)
 
-1. Selecteer de tekstcomponent, klik op het pictogram van het **penseel** en selecteer de stijl van het Blok **van het** Citaat:
+1. Selecteer de tekstcomponent en klik op het pictogram **Penseel** en selecteer de stijl **Citaatblok**:
 
    ![De stijl voor het aanhalingsteken toepassen](assets/style-system/quote-block-style-applied.png)
 
@@ -430,25 +430,25 @@ Voeg vervolgens een nieuw beleid toe voor de tekstcomponenten.
 
 Layoutcontainers zijn gebruikt om de basisstructuur van het sjabloon voor artikelpagina te maken en om de neerzetzones voor auteurs van inhoud te bieden om inhoud aan een pagina toe te voegen. Layoutcontainers kunnen ook gebruikmaken van het Stijlsysteem, zodat de auteur van inhoud nog meer opties heeft voor het ontwerpen van lay-outs.
 
-Momenteel wordt een CSS-regel toegepast op de gehele pagina die een vaste breedte afdwingt. In plaats daarvan is het flexibeler om een stijl met een **vaste breedte** te maken die de auteur van de inhoud kan in- en uitschakelen.
+Momenteel wordt een CSS-regel toegepast op de gehele pagina die een vaste breedte afdwingt. In plaats daarvan is een flexibelere aanpak het maken van een stijl **Fixed Width** die de auteurs van inhoud in- en uitschakelen.
 
 ### De stijl Vaste breedte implementeren - ui.frontend
 
 We gaan de stijl Vaste breedte implementeren in de module **ui.frontend** van ons project.
 
-1. Start de webpack-ontwikkelserver met de volgende opdracht vanuit de module **ui.frontend** :
+1. Start de webpack Dev-server met de volgende opdracht vanuit de module **ui.frontend**:
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm start
    ```
 
-1. Open het bestand `index.html` op: `ui.frontend/src/main/webpack/static/index.html`.
-1. We willen het hoofdgedeelte van het sjabloon voor artikelpagina een vaste breedte geven, zodat de koptekst en voettekst breder kunnen worden. Daarom willen wij de tweede `<div class='responsivegrid aem-GridColumn aem-GridColumn--default--12'` (container van de Lay-out) in tussen de twee ervaringsfragmenten richten (lijn 136)
+1. Open het bestand `index.html` dat zich bevindt op: `ui.frontend/src/main/webpack/static/index.html`.
+1. We willen het hoofdgedeelte van het sjabloon voor artikelpagina een vaste breedte geven, zodat de koptekst en voettekst breder kunnen worden. Daarom willen wij de tweede `<div class='responsivegrid aem-GridColumn aem-GridColumn--default--12'` (de Container van de Lay-out) binnen tussen de twee ervaringsFragments richten (lijn 136)
 
    ![Div Container hoofdtekst](assets/style-system/main-body-layoutContainer.png)
 
-1. Voeg de klasse toe `cmp-layout-container--fixed` aan de `div` klasse die in de vorige stap is geïdentificeerd.
+1. Voeg de klasse `cmp-layout-container--fixed` aan `div` toe die in de vorige reeks wordt geïdentificeerd.
 
    ```html
    <!-- Experience Fragment Header -->
@@ -465,7 +465,7 @@ We gaan de stijl Vaste breedte implementeren in de module **ui.frontend** van on
    </div>
    ```
 
-1. Werk het bestand bij `container.scss` op: `ui.frontend/src/main/webpack/components/content/container/scss/container.scss`:
+1. Werk het bestand `container.scss` bij dat zich bevindt op: `ui.frontend/src/main/webpack/components/content/container/scss/container.scss`:
 
    ```css
    /* WKND Layout Container - Fixed Width */
@@ -482,7 +482,7 @@ We gaan de stijl Vaste breedte implementeren in de module **ui.frontend** van on
    }
    ```
 
-1. Werk het bestand bij `_elements.scss` op: `ui.frontend/src/main/webpack/base/sass/_elements.scss` en wijzig de `.root` regel zodat een nieuwe maximumbreedte wordt ingesteld op de variabele `$max-body-width`.
+1. Werk het bestand `_elements.scss` bij dat zich bevindt op: `ui.frontend/src/main/webpack/base/sass/_elements.scss` en wijzig de `.root`-regel om een nieuwe maximumbreedte in te stellen op de variabele `$max-body-width`.
 
    ```css
     /* Before */
@@ -529,27 +529,27 @@ Vervolgens voegen we de stijl Vaste breedte toe door het beleid voor de containe
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Navigeer naar de sjabloon voor **artikelpagina** op: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Navigeer naar **Article Page Template** op de locatie: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. Selecteer in de modus **Structuur** de hoofdcontainer **voor** lay-out (tussen de koptekst en voettekst van het fragment van de ervaring) en selecteer het pictogram **Beleid** .
+1. Selecteer in de modus **Structuur** de hoofdcontainer **Lay-out** (tussen de koptekst en voettekst van fragmentfragment van ervaring) en selecteer het pictogram **Beleid**.
 
    ![Het containerbeleid voor de hoofdtekstopmaak configureren](assets/style-system/layout-container-article-template-policy-icon.png)
 
-1. Werk het standaardbeleid voor **WKND-site** bij en voeg een extra stijl voor **Vaste breedte** toe met de waarde `cmp-layout-container--fixed`:
+1. Werk het beleid **Standaard WKND-site** bij om een extra stijl voor **Vaste breedte** met een waarde van `cmp-layout-container--fixed` op te nemen:
 
-   ![Standaardbeleid WKND-site bijwerken ](assets/style-system/wknd-site-default-policy-update-fixed-width.png)
+   ![Standaardbeleid WKND-site bijwerken  ](assets/style-system/wknd-site-default-policy-update-fixed-width.png)
 
    Sla uw wijzigingen op en verwijs naar de pagina Sjabloon artikelpagina.
 
-1. Selecteer opnieuw de hoofdcontainer voor **lay-out** (tussen de koptekst en voettekst van het fragment van de ervaring). Dit keer wordt het **pictogram van het penseel** weergegeven en kunt u **Vaste breedte** selecteren in de vervolgkeuzelijst Stijl.
+1. Selecteer opnieuw de hoofdcontainer **Lay-outcontainer** (tussen de koptekst en voettekst van het fragment van de Ervaring). Dit keer zou het **schilderpenseel** pictogram moeten verschijnen en u kunt **Vaste breedte** van de stijldaling selecteren.
 
    ![Container voor lay-out met vaste breedte toepassen](assets/style-system/apply-fixed-width-layout-container.png)
 
    U moet de stijlen in- en uitschakelen.
 
-1. Navigeer naar het artikel **La Skateparks** in de AEM Sites-editor op: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). De container met vaste breedte moet in actie worden gebracht.
+1. Navigeer naar het artikel **La Skateparks** in de redacteur van AEM Sites bij: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). De container met vaste breedte moet in actie worden gebracht.
 
-## Koptekst/voettekst - Ervaar fragment {#experience-fragment}
+## Koptekst/voettekst - Ervaring met fragment {#experience-fragment}
 
 Vervolgens voegen we stijlen toe aan de koptekst en voettekst om de sjabloon voor artikelpagina te voltooien. Zowel zijn de Kopbal als de Voettekst uitgevoerd als Fragment van de Ervaring, dat een groepering van componenten binnen een container is. We kunnen een unieke CSS-klasse toepassen op Experience Fragment-componenten, net als andere Core Components-componenten met het Stijlsysteem.
 
@@ -557,16 +557,16 @@ Vervolgens voegen we stijlen toe aan de koptekst en voettekst om de sjabloon voo
 
 De componenten in de component Header zijn al zo opgemaakt dat ze overeenkomen met de [AdobeXD-ontwerpen](assets/pages-templates/wknd-article-design.xd). Er zijn slechts enkele kleine wijzigingen in de layout nodig.
 
-1. Start de webpack-ontwikkelserver met de volgende opdracht vanuit de module **ui.frontend** :
+1. Start de webpack Dev-server met de volgende opdracht vanuit de module **ui.frontend**:
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm start
    ```
 
-1. Open het bestand `index.html` op: `ui.frontend/src/main/webpack/static/index.html`.
-1. Zoek de **eerste** instantie van de component Experience Fragment naar *class=&quot;experience* (regel 48).
-1. Voeg de klasse toe `cmp-experiencefragment--header` aan de `div` klasse die in de vorige stap is geïdentificeerd.
+1. Open het bestand `index.html` dat zich bevindt op: `ui.frontend/src/main/webpack/static/index.html`.
+1. Zoek de **first**-instantie van de Experience Fragment-component door te zoeken naar *class=&quot;experience* (regel 48).
+1. Voeg de klasse `cmp-experiencefragment--header` aan `div` toe die in de vorige reeks wordt geïdentificeerd.
 
    ```html
        ...
@@ -578,7 +578,7 @@ De componenten in de component Header zijn al zo opgemaakt dat ze overeenkomen m
                ...
    ```
 
-1. Open het bestand `experiencefragment.scss` op: `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. Voeg de volgende stijlen toe aan het bestand:
+1. Open het bestand `experiencefragment.scss` dat zich bevindt op: `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. Voeg de volgende stijlen toe aan het bestand:
 
    ```css
    /* Header Style */
@@ -623,18 +623,18 @@ De componenten in de component Header zijn al zo opgemaakt dat ze overeenkomen m
 
 De voettekst in de [AdobeXD-ontwerpen](assets/pages-templates/wknd-article-design.xd) bevat een zwarte achtergrond met lichte tekst. We moeten de inhoud opmaken in onze Experience Fragment Footer om dit te weerspiegelen.
 
-1. Open het bestand `index.html` op: `ui.frontend/src/main/webpack/static/index.html`.
+1. Open het bestand `index.html` dat zich bevindt op: `ui.frontend/src/main/webpack/static/index.html`.
 
-1. Zoek de **tweede** instantie van de component Experience Fragment naar *class=&quot;experience* (regel 385).
+1. Zoek de **second**-instantie van de Experience Fragment-component door te zoeken naar *class=&quot;experience* (regel 385).
 
-1. Voeg de klasse toe `cmp-experiencefragment--footer` aan de `div` klasse die in de vorige stap is geïdentificeerd.
+1. Voeg de klasse `cmp-experiencefragment--footer` aan `div` toe die in de vorige reeks wordt geïdentificeerd.
 
    ```html
    <!-- add cmp-experiencefragment--footer -->
    <div class="experiencefragment cmp-experiencefragment--footer aem-GridColumn aem-GridColumn--default--12">
    ```
 
-1. Open het bestand `experiencefragment.scss` op: `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. **Voeg** de volgende stijlen toe aan het bestand:
+1. Open het bestand `experiencefragment.scss` dat zich bevindt op: `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. **Voeg de volgende stijlen** toe aan het bestand:
 
    ```css
    /* Footer Style */
@@ -704,13 +704,13 @@ Vervolgens voegen we de stijlen Koptekst en Voettekst toe door het componentbele
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Navigeer naar de sjabloon voor **artikelpagina** op: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Navigeer naar **Article Page Template** op de locatie: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. Selecteer in de modus **Structuur** de optie **Fragment** voor koptekstervaring en selecteer het pictogram **Beleid** .
+1. Selecteer in de modus **Structuur** de optie Koptekst **Fragment ervaren** en selecteer het pictogram **Beleid**.
 
    ![Beleid voor ervaringsfragmenten configureren](assets/style-system/experience-fragment-click-policy.png)
 
-1. Werk het fragment van de Ervaring van de **Plaats WKND - het beleid van de Kopbal** bij om een **StandaardCSS Klasse** met een waarde van toe te voegen `cmp-experiencefragment--header`:
+1. Werk het **WKND-siteervaringsfragment - Koptekst**-beleid bij om een **Standaard CSS-klasse** met de waarde `cmp-experiencefragment--header` toe te voegen:
 
    ![WKND-siteervaringsfragment - koptekstupdate](assets/style-system/experience-fragment-header-policy-configure.png)
 
@@ -720,9 +720,9 @@ Vervolgens voegen we de stijlen Koptekst en Voettekst toe door het componentbele
    >
    > Aangezien de koptekststijl alleen in de sjabloon hoeft te worden gebruikt, kunnen we deze eenvoudig instellen als de standaard-CSS-stijl.
 
-1. Selecteer vervolgens het fragment **Voettekstervaring en klik op het pictogram** Beleid **** om de beleidsconfiguratie te openen.
+1. Selecteer vervolgens Voettekst **Fragment ervaren** en klik op het pictogram **Beleid** om de beleidsconfiguratie te openen.
 
-1. Werk het Fragment van de Ervaring van de **Plaats WKND bij - het beleid van de Voettekst** om een **StandaardCSS Klasse** met een waarde van toe te voegen `cmp-experiencefragment--footer`:
+1. Werk het beleid **WKND-siteervaringsfragment - Voettekst** bij om een **Standaard CSS-klasse** met de waarde `cmp-experiencefragment--footer` toe te voegen:
 
    ![WKND Site Experience Fragment - Voettekst-update](assets/style-system/experience-fragment-footer-policy-configure.png)
 
@@ -730,9 +730,9 @@ Vervolgens voegen we de stijlen Koptekst en Voettekst toe door het componentbele
 
    ![WKND-artikelsjabloon - Eindstijlen](assets/style-system/final-header-footer-applied.png)
 
-1. Navigeer naar het artikel **La Skateparks** in de AEM Sites-editor op: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). De bijgewerkte kop- en voettekst moet worden toegepast.
+1. Navigeer naar het artikel **La Skateparks** in de redacteur van AEM Sites bij: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). De bijgewerkte kop- en voettekst moet worden toegepast.
 
-## Controleren {#review}
+## Revisie {#review}
 
 Bekijk de stijlen en functies die als onderdeel van het hoofdstuk zijn geïmplementeerd.
 
@@ -744,9 +744,9 @@ Gefeliciteerd, de artikelpagina is bijna volledig vormgegeven en u hebt praktijk
 
 ### Volgende stappen {#next-steps}
 
-Leer de stappen van begin tot eind om een [douane AEM Component](custom-component.md) tot stand te brengen die inhoud toont authored in een Dialoog, en verkent het ontwikkelen van een het Verkopen Model om bedrijfslogica in te kapselen die HTML van de component bevolkt.
+Leer de stappen van begin tot eind om een [douane AEM Component](custom-component.md) tot stand te brengen die inhoud toont authored in een Dialoog, en verkent het ontwikkelen van een het Verzamelen Model om bedrijfslogica in te kapselen die HTML van de component bevolkt.
 
-Bekijk de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de schakelaar van de Git in `style-system/solution`.
+Bekijk de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de schakelaar van de Git `style-system/solution` op.
 
 1. Clone the [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) repository.
 1. Bekijk de `style-system/solution` vertakking.
