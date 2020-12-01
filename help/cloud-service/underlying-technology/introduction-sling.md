@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Introduction to [!DNL Sling] {#introduction-sling}
+# Inleiding tot [!DNL Sling] {#introduction-sling}
 
-Een inleiding tot [!DNL Sling], een open-source [!DNL RESTful] webframework dat deel uitmaakt van de onderliggende technologiestapel van Adobe Experience Manager.
+Een inleiding tot [!DNL Sling], een open-source [!DNL RESTful]-webframework dat deel uitmaakt van de onderliggende technologiestack van Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32032/?quality=12&learn=on)
