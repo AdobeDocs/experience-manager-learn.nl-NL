@@ -93,4 +93,4 @@ Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen
     </tbody>
 </table>
 
-⁕ *verstrekt via gemeenschapsprojecten, maar niet rechtstreeks ondersteund door Adobe.*
+⁕ *Wordt geleverd via gemeenschapsprojecten, maar niet rechtstreeks ondersteund door Adobe.*
