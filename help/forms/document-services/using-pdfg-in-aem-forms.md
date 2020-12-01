@@ -34,10 +34,10 @@ Voer de volgende stappen uit om de demo-elementen te installeren
 1. Configureer PDFG zoals vermeld in dit document [hier](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
 1. Volg de desbetreffende documentatie voor uw AEM Forms-versie.
 1. [Importeer en installeer elementen die verwant zijn aan dit artikel met gebruik van pakketbeheer.](assets/createpdfgdemov2.zip)
-1. [Navigeer naar post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) in uw CRX
+1. [Navigeer naar post.](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) jspin uw CRX
 1. De opslaglocatie naar uw voorkeur wijzigen (regel 9)
 1. Sla uw wijzigingen op.
-1. Open de [ HTML-pagina](http://localhost:4502/content/DocumentServices/CreatePDFG.html) voor het slepen en neerzetten van bestanden voor conversie.
+1. Open de HTML-pagina [ voor het slepen en neerzetten van bestanden voor conversie.](http://localhost:4502/content/DocumentServices/CreatePDFG.html)
 1. Zet een tekstbestand of JPG neer in de neerzetzone.
 1. Het invoerdocument wordt geconverteerd naar PDF en opgeslagen op dezelfde locatie als opgegeven in punt 4.
 
