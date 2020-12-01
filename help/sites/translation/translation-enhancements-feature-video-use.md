@@ -26,11 +26,11 @@ AEM robuust vertaalframework kan AEM inhoud naadloos worden vertaald door onders
 
 AEM 6.5 vertaalverbeteringen zijn onder meer:
 
-**Vertaaltaken** automatisch goedkeuren: De goedkeuringsvlag in de vertaalbaan is een binair bezit. Het bestuurt niet of integreert niet met uit-van-de-doos overzicht en goedkeuringswerkschema&#39;s. Als u het aantal stappen in een vertaaltaak minimaal wilt houden, is de standaardinstelling &quot;automatisch goedkeuren&quot; in [!UICONTROL Advanced Properties] een vertaalproject ingesteld. Als uw organisatie goedkeuring voor een vertaalbaan vereist, kunt u de optie &quot;automatisch goedkeuren&quot;in [!UICONTROL Advanced Properties] een Vertaalproject schrappen.
+**Vertaaltaken** automatisch goedkeuren: De goedkeuringsvlag in de vertaalbaan is een binair bezit. Het bestuurt niet of integreert niet met uit-van-de-doos overzicht en goedkeuringswerkschema&#39;s. Als u het aantal stappen in een vertaaltaak minimaal wilt houden, wordt Standaard ingesteld op &quot;automatisch goedkeuren&quot; in [!UICONTROL Advanced Properties] van een vertaalproject. Als uw organisatie goedkeuring voor een vertaalbaan vereist, kunt u de optie &quot;automatisch goedkeuren&quot;in [!UICONTROL Advanced Properties] van een Vertaalproject schrappen.
 
 **Start** vertaling automatisch verwijderen: In plaats van na het feit de lanceringen van vertalingen handmatig te verwijderen in Launches Admin, is het nu mogelijk om gelanceerde vertalingen automatisch te verwijderen nadat deze zijn gepromoveerd.
 
-**Vertaalobjecten exporteren in JSON-indeling**: AEM 6.4 en eerdere versies ondersteunen XML- en XLIFF-indelingen van omzettingsobjecten. U kunt de exportindeling nu configureren naar de JSON-indeling met behulp van uw systeemconsole [!UICONTROL Config Manager]. Zoek [!UICONTROL Translation Platform Configuration]en selecteer vervolgens de exportindeling als JSON.
+**Vertaalobjecten exporteren in JSON-indeling**: AEM 6.4 en eerdere versies ondersteunen XML- en XLIFF-indelingen van omzettingsobjecten. U kunt de exportindeling nu configureren naar de JSON-indeling met behulp van uw systeemconsole [!UICONTROL Config Manager]. Zoek [!UICONTROL Translation Platform Configuration] en selecteer vervolgens de exportindeling als JSON.
 
 **Vertaalde AEM-inhoud bijwerken in TMS**: lokale auteur die geen toegang tot AEM heeft, kan updates uitvoeren voor vertaalde inhoud, die al in AEM werd opgenomen, rechtstreeks in de TM (Vertaalgeheugen, in TMS) en de vertalingen in AEM bijwerken door de vertaalbaan van TMS aan AEM opnieuw op te nemen
 
