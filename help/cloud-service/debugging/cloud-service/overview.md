@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Foutopsporing AEM als Cloud Service
 
-AEM als Cloud Service is de native manier om de AEM toepassingen te benutten. AEM als Cloud Service loopt op zelfbediening, scalable, wolkeninfrastructuur, die AEM ontwikkelaars vereist om te begrijpen en te zuiveren diverse facetten van AEM als Cloud Service, van bouwt en opstelt tot het verkrijgen van details van het runnen van AEM toepassingen.
+AEM als Cloud Service is de &#39;cloud-native&#39; manier om de AEM toepassingen te benutten. AEM als Cloud Service loopt op zelfbediening, scalable, wolkeninfrastructuur, die AEM ontwikkelaars vereist om te begrijpen en te zuiveren diverse facetten van AEM als Cloud Service, van bouwt en opstelt tot het verkrijgen van details van het runnen van AEM toepassingen.
 
 ## Logboeken
 
