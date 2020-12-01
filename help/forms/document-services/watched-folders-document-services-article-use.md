@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resultaatbestand opgeslagen in een opgegeven uitvoermap. Voor meer informatie over werkschema, de dienst, en manuscript.
 
-Klik hier voor meer informatie over het maken van een controlemap. [](https://helpx.adobe.com/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
+Als u meer wilt weten over het maken van een gecontroleerde map, [klikt u hier](https://helpx.adobe.com/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
 
 Gecontroleerde mappen worden gebruikt om documenten te genereren in de batchmodus. Met het gecontroleerde mapmechanisme kunt u interactieve communicatie voor het afdrukkanaal genereren of de uitvoerservice gebruiken om gegevens samen te voegen met de sjabloon.
 
@@ -32,7 +32,7 @@ In dit artikel wordt beschreven hoe gegevens via het mechanisme voor gecontrolee
 
 De dienst van de output is de dienst OSGi die deel van AEM Diensten van het Document uitmaakt. De uitvoerservice ondersteunt verschillende uitvoerindelingen en functies voor het ontwerpen van uitvoer van AEM Forms Designer. De uitvoerservice kan XFA-sjablonen en XML-gegevens converteren om afdrukdocumenten in verschillende indelingen te genereren.
 
-Klik [hier](https://helpx.adobe.com/aem-forms/6/output-service.html)voor meer informatie over de uitvoerservice.
+[Klik hier](https://helpx.adobe.com/aem-forms/6/output-service.html) voor meer informatie over de uitvoerservice.
 Volg onderstaande stappen om een gecontroleerde map op uw systeem in te stellen:
 * [Download en extraheer de inhoud van het ZIP-bestand](assets/outputservicewatchedfolderkt.zip). Dit ZIP-bestand bevat een pakket voor het maken van gecontroleerde mappen en voorbeeldbestanden om de uitvoerservice te testen met behulp van het mechanisme voor gecontroleerde mappen
    * Windows-systeem
