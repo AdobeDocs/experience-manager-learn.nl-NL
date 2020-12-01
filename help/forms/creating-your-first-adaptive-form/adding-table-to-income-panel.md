@@ -34,7 +34,7 @@ Er wordt een tabel toegevoegd aan het paneel Inkomen. Vorm de lijstrijen en gebr
 
 ## De inkomstentabel dynamisch maken {#make-the-income-table-dynamic}
 
-**Zorg ervoor dat u in de bewerkingsmodus werkt. De bewerkknop bevindt zich rechtsboven in de browser.**
+**Zorg ervoor dat u in de bewerkingsmodus werkt. De bewerkingsknop bevindt zich rechtsboven in de browser.**
 
 * Als u een tabel invoegt in Adaptief formulier, is de tabel standaard niet dynamisch. Dit betekent dat u tijdens runtime geen nieuwe rijen aan de tabel kunt toevoegen.
 
