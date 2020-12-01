@@ -25,11 +25,12 @@ Na voltooiing van deze cursus zult u het volgende geleerd hebben.
 
 * Formuliergegevensmodel maken met RDBMS-ondersteuning
 * Koppeling maken tussen 2 entiteiten
-* Tabel vullen met gegevens die worden geretourneerd door _get_ service of Form Data Model
+* Tabel vullen met gegevens die worden geretourneerd door _get_-service van het formuliergegevensmodel
 * Aanvraagkenmerk van formuliergegevensmodel gebruiken
 
 
-[Klik hier om de mogelijkheden](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207)live te demonstreren In de volgende video ziet u een overzicht van de cursus
+[Klik hier om de ](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207)
+mogelijkheden live te demonstreren. De volgende video geeft u een overzicht van de cursus
 >[!VIDEO](https://video.tv.adobe.com/v/36387/quality=9)
 
 ## Vereisten
