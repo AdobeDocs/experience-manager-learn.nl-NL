@@ -35,7 +35,7 @@ Het gebruiksscenario is dat een AEM workflow wordt geactiveerd voor het verzende
    * Zoek naar &quot;Pool van de Verbinding JDBC&quot;. Maak een nieuwe dag gemeenschappelijke JDBC-verbindingspool. Geef de specifieke instellingen voor uw database op.
 
    * ![jdbc-verbindingspool](assets/jdbc-connection-pool.png)
-   * Zoeken naar &quot;Formuliergegevens **invoegen in DB**&quot;
+   * Zoeken naar &quot;**Formuliergegevens invoegen in DB**&quot;
    * Geef de specifieke eigenschappen voor uw database op.
       * DataSourceName:Naam van de gegevensbron u eerder vormde.
       * TableName - Naam van de lijst waarin u de Gegevens van AF wilt opslaan
