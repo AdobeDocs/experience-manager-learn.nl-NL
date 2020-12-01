@@ -1,6 +1,6 @@
 ---
 seo: Set up public and private keys for use with AEM and Adobe I/O
-description: 'AEM gebruikt openbare/privé zeer belangrijke paren om veilig met Adobe I/O en andere Webdiensten te communiceren. Deze korte zelfstudie laat zien hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het openssl-opdrachtregelprogramma dat zowel met AEM als met I/O van Adobe werkt. '
+description: 'AEM gebruikt paren met openbare/persoonlijke sleutels om veilig te communiceren met Adobe I/O en andere webservices. Deze korte zelfstudie laat zien hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het openssl-opdrachtregelprogramma dat zowel met AEM als met Adobe I/O werkt. '
 version: 6.4, 6.5
 feature: authentication
 topics: authentication, integrations
@@ -11,7 +11,7 @@ kt: 2450
 translation-type: tm+mt
 source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,21 @@ ht-degree: 0%
 
 # Openbare en persoonlijke sleutels instellen voor gebruik met Adobe I/O
 
-AEM gebruikt openbare/privé zeer belangrijke paren om veilig met Adobe I/O en andere Webdiensten te communiceren. Deze korte zelfstudie illustreert hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het [!DNL openssl] opdrachtregelprogramma dat zowel met AEM als met Adobe I/O werkt.
+AEM gebruikt paren met openbare/persoonlijke sleutels om veilig te communiceren met Adobe I/O en andere webservices. Deze korte zelfstudie laat zien hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het opdrachtregelprogramma [!DNL openssl] dat zowel met AEM als met Adobe I/O werkt.
 
 >[!CAUTION]
 >
 >Deze handleiding maakt zelfondertekende toetsen die handig zijn voor ontwikkeling en gebruik in lagere omgevingen. In productiescenario&#39;s, worden de sleutels typisch geproduceerd en beheerd door het de veiligheidsteam van IT van een organisatie.
 
-## Het paar openbare/persoonlijke sleutels genereren {#generate-the-public-private-key-pair}
+## Het openbare/persoonlijke sleutelpaar {#generate-the-public-private-key-pair} genereren
 
-Met de [[!DNL openssl]](https://www.openssl.org/docs/man1.0.2/man1/openssl.html) -opdracht [[!DNL req] ](https://www.openssl.org/docs/man1.0.2/man1/req.html) van het opdrachtregelgereedschap kunt u een sleutelpaar genereren dat compatibel is met Adobe I/O en Adobe Experience Manager.
+Met de [[!DNL openssl]](https://www.openssl.org/docs/man1.0.2/man1/openssl.html) opdrachtregelprogramma&#39;s [[!DNL req] command](https://www.openssl.org/docs/man1.0.2/man1/req.html) kunt u een sleutelpaar genereren dat compatibel is met Adobe I/O en Adobe Experience Manager.
 
 ```shell
 $ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate.crt
 ```
 
-Als u de [!DNL openssl generate] opdracht wilt voltooien, geeft u de certificaatgegevens op wanneer u hierom wordt gevraagd. Adobe I/O en AEM geven niet om wat deze waarden zijn, maar ze moeten wel uitlijnen en uw sleutel beschrijven.
+Als u de opdracht [!DNL openssl generate] wilt voltooien, geeft u de certificaatgegevens op wanneer u hierom wordt gevraagd. Adobe I/O en AEM geven niet om wat deze waarden zijn, maar ze moeten wel worden uitgelijnd en uw sleutel beschrijven.
 
 ```
 Generating a 2048 bit RSA private key
@@ -59,7 +59,7 @@ Email Address []:me@example.com
 
 ## Sleutelpaar toevoegen aan een nieuw sleutelarchief {#add-key-pair-to-a-new-keystore}
 
-U kunt sleutelparen toevoegen aan een nieuw [!DNL PKCS12] sleutelarchief. Als onderdeel van de [[!DNL openssl]'s [!DNL pcks12] opdracht worden](https://www.openssl.org/docs/man1.0.2/man1/pkcs12.html) de naam van het sleutelarchief (via `-  caname`), de naam van de sleutel (via `-name`) en het wachtwoord van het sleutelarchief (via `-  passout`) gedefinieerd.
+De zeer belangrijke paren kunnen aan nieuw [!DNL PKCS12] keystore worden toegevoegd. Als deel van [[!DNL openssl]'s [!DNL pcks12] bevel, ](https://www.openssl.org/docs/man1.0.2/man1/pkcs12.html) worden de naam van keystore (via `-  caname`), de naam van de sleutel (via `-name`) en het keystore wachtwoord (via `-  passout`) bepaald.
 
 Deze waarden zijn vereist om het sleutelarchief en de sleutels in AEM te laden.
 
@@ -67,15 +67,15 @@ Deze waarden zijn vereist om het sleutelarchief en de sleutels in AEM te laden.
 $ openssl pkcs12 -export -caname my-keystore -in certificate.crt -name my-key -inkey private.key -out keystore.p12 -passout pass:my-password
 ```
 
-De uitvoer van deze opdracht is een `keystore.p12` bestand.
+De uitvoer van deze opdracht is een `keystore.p12`-bestand.
 
 >[!NOTE]
 >
->De parameterwaarden van **[!DNL my-keystore]**, **[!DNL my-key]** en **[!DNL my-password]** moeten door uw eigen waarden worden vervangen.
+>De parameterwaarden **[!DNL my-keystore]**, **[!DNL my-key]** en **[!DNL my-password]** moeten door uw eigen waarden worden vervangen.
 
-## De inhoud van het sleutelarchief controleren {#verify-the-keystore-contents}
+## Verifieer de keystore inhoud {#verify-the-keystore-contents}
 
-Het Java- [[!DNL keytool] opdrachtregelprogramma](https://docs.oracle.com/middleware/1213/wls/SECMG/keytool-summary-appx.htm#SECMG818) biedt zichtbaarheid in een sleutelarchief om ervoor te zorgen dat de sleutels correct worden geladen in het sleutelarchiefbestand ([!DNL keystore.p12]).
+Het Java [[!DNL keytool] opdrachtregelprogramma](https://docs.oracle.com/middleware/1213/wls/SECMG/keytool-summary-appx.htm#SECMG818) biedt zichtbaarheid in een sleutelarchief om ervoor te zorgen dat de sleutels correct worden geladen in het sleutelarchiefbestand ([!DNL keystore.p12]).
 
 ```shell
 $ keytool -keystore keystore.p12 -list
@@ -97,48 +97,51 @@ Certificate fingerprint (SHA1): 7C:6C:25:BD:52:D3:3B:29:83:FD:A2:93:A8:53:91:6A:
 
 AEM gebruikt de gegenereerde **persoonlijke sleutel** om veilig te communiceren met Adobe I/O en andere webservices. De persoonlijke sleutel is alleen toegankelijk voor AEM als deze is geïnstalleerd in het sleutelarchief van een AEM gebruiker.
 
-Navigeer naar **AEM >[!UICONTROL Tools]>[!UICONTROL Security]>[!UICONTROL Users]** en **bewerk de gebruiker** waaraan de persoonlijke sleutel moet worden gekoppeld.
+Navigeer naar **AEM > [!UICONTROL Tools] > [!UICONTROL Security] >[!UICONTROL Users]** en **bewerk de gebruiker** waaraan de persoonlijke sleutel moet worden gekoppeld.
 
 ### Een AEM sleutelarchief maken {#create-an-aem-keystore}
 
-![KeyStore maken in AEM](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--create-keystore.png)*AEM >[!UICONTROL Tools]>[!UICONTROL Security]>[!UICONTROL Users]> Gebruiker bewerken*
+![KeyStore maken in ](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--create-keystore.png)
+*AEMAEM >  [!UICONTROL Tools] >  [!UICONTROL Security] >  [!UICONTROL Users] > Gebruiker bewerken*
 
-Als u wordt gevraagd een sleutelarchief te maken, doet u dat. Dit sleutelarchief bestaat alleen in AEM en is NIET het sleutelarchief dat via openssl is gemaakt. Het wachtwoord kan om het even wat zijn en moet niet het zelfde zijn als het wachtwoord dat in het [!DNL openssl] bevel wordt gebruikt.
+Als u wordt gevraagd een sleutelarchief te maken, doet u dat. Dit sleutelarchief bestaat alleen in AEM en is NIET het sleutelarchief dat via openssl is gemaakt. Het wachtwoord kan om het even wat zijn en moet niet het zelfde zijn als het wachtwoord dat in [!DNL openssl] bevel wordt gebruikt.
 
 ### De persoonlijke sleutel installeren via het sleutelarchief {#install-the-private-key-via-the-keystore}
 
-![Persoonlijke sleutel toevoegen in AEM](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--add-private-key.png)*[!UICONTROL User]>[!UICONTROL Keystore]>[!UICONTROL Add private key from keystore]*
+![Persoonlijke sleutel toevoegen in AEM](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--add-private-key.png)
+*[!UICONTROL User]>  [!UICONTROL Keystore] >[!UICONTROL Add private key from keystore]*
 
-Klik in de sleutelarchiefconsole van de gebruiker op de volgende informatie **[!UICONTROL Add Private Key form KeyStore file]** en voeg deze toe:
+Klik in de sleutelarchiefconsole van de gebruiker op **[!UICONTROL Add Private Key form KeyStore file]** en voeg de volgende informatie toe:
 
 * **[!UICONTROL New Alias]**: de alias van de sleutel in AEM. Dit kan om het even wat zijn en moet niet met de naam van keystore beantwoorden die met het open bevel wordt gecreeerd.
 * **[!UICONTROL Keystore File]**: de uitvoer van de opdracht openssl pkcs12 (keystore.p12)
-* **[!UICONTROL Private Key Alias]**: Het wachtwoord dat via `-  passout` argument in de opdracht openssl pkcs12 is ingesteld.
+* **[!UICONTROL Private Key Alias]**: Het wachtwoord dat via  `-  passout` argument in de opdracht openssl pkcs12 is ingesteld.
 
-* **[!UICONTROL Private Key Password]**: Het wachtwoord dat via `-  passout` argument in de opdracht openssl pkcs12 is ingesteld.
+* **[!UICONTROL Private Key Password]**: Het wachtwoord dat via  `-  passout` argument in de opdracht openssl pkcs12 is ingesteld.
 
-### Controleren of de persoonlijke sleutel in het AEM sleutelarchief is geladen {#verify-the-private-key-is-loaded-into-the-aem-keystore}
+### Controleer of de persoonlijke sleutel is geladen in het AEM sleutelarchief {#verify-the-private-key-is-loaded-into-the-aem-keystore}
 
-![Persoonlijke sleutel verifiëren in AEM](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--keystore.png)*[!UICONTROL User]>[!UICONTROL Keystore]*
+![Persoonlijke sleutel verifiëren in AEM](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--keystore.png)
+*[!UICONTROL User]>[!UICONTROL Keystore]*
 
 Wanneer de persoonlijke sleutel van het verstrekte sleutelarchief in AEM sleutelarchief met succes wordt geladen, worden de meta-gegevens van de privé sleutel getoond in de keystore console van de gebruiker.
 
 ## De openbare sleutel toevoegen aan Adobe I/O {#adding-the-public-key-to-adobe-i-o}
 
-De overeenkomstige openbare sleutel moet aan Adobe I/O worden geupload om de AEM de dienstgebruiker toe te staan, die de overeenkomstige privé van de openbare sleutel heeft om veilig te communiceren.
+De overeenkomende openbare sleutel moet naar Adobe I/O worden geüpload om de gebruiker van de AEM service te kunnen toestaan, die de overeenkomende persoonlijke sleutel van de openbare sleutel heeft om veilig te kunnen communiceren.
 
-### Nieuwe Adobe I/O-integratie maken {#create-a-adobe-i-o-new-integration}
+### Een nieuwe Adobe I/O-integratie maken {#create-a-adobe-i-o-new-integration}
 
 ![Nieuwe Adobe I/O-integratie maken](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
 
-*[[!UICONTROL Create Adobe I/O Integration]](https://console.adobe.io/)>[!UICONTROL New Integration]*
+*[[!UICONTROL Create Adobe I/O Integration]](https://console.adobe.io/) >[!UICONTROL New Integration]*
 
-Voor het maken van een nieuwe integratie in Adobe I/O moet u een openbaar certificaat uploaden. Upload het **certificate.crt** dat door de `openssl req` opdracht wordt gegenereerd.
+Voor een nieuwe integratie in Adobe I/O moet u een openbaar certificaat uploaden. Upload **certificate.crt** die door het `openssl req` bevel wordt geproduceerd.
 
 ### Controleren of de openbare sleutels zijn geladen in Adobe I/O {#verify-the-public-keys-are-loaded-in-adobe-i-o}
 
 ![Openbare sleutels in Adobe I/O verifiëren](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
 
-De geïnstalleerde openbare sleutels en hun vervaldatums zijn vermeld in de [!UICONTROL Integrations] console op Adobe I/O. U kunt meerdere openbare sleutels toevoegen via de **[!UICONTROL Add a public key]** knop.
+De geïnstalleerde openbare sleutels en hun vervaldatums zijn vermeld in [!UICONTROL Integrations] console op Adobe I/O. U kunt meerdere openbare sleutels toevoegen via de knop **[!UICONTROL Add a public key]**.
 
-AEM de persoonlijke sleutel vast en de Adobe I/O-integratie bevat nu de overeenkomstige openbare sleutel, zodat AEM veilig met Adobe I/O kunnen communiceren.
+AEM houden nu de persoonlijke sleutel en de integratie van Adobe I/O houdt de overeenkomstige openbare sleutel, die AEM toestaat om veilig met Adobe I/O te communiceren.
