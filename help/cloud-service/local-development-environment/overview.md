@@ -28,9 +28,9 @@ Deze zelfstudie doorloopt het opzetten van een lokale ontwikkelomgeving voor Ado
 
 De lokale ontwikkelomgeving voor AEM kan worden opgesplitst in drie logische groepen:
 
-+ Het __AEM Project__ bevat de aangepaste code, configuratie en inhoud die de aangepaste AEM toepassing is.
-+ De __lokale AEM Runtime__ die een lokale versie van de auteur en van de Publicatie AEM plaatselijk in werking stelt.
-+ De __lokale Dispatcher Runtime__ die een lokale versie van Apache HTTP Web Server en Dispatcher in werking stelt.
++ Het __AEM Project__ bevat de douanecode, de configuratie en de inhoud die de AEM toepassing van de douane is.
++ De __Lokale AEM Runtime__ die een lokale versie van AEM de Auteur en de Publicatie diensten plaatselijk in werking stelt.
++ De __Local Dispatcher Runtime__ die een lokale versie van Apache HTTP Web Server en Dispatcher uitvoert.
 
 Dit leerprogramma analyseert hoe te om de benadrukte punten in het bovengenoemde diagram te installeren en te plaatsen, die een stabiele lokale ontwikkelomgeving voor AEM ontwikkeling verstrekken.
 
@@ -52,34 +52,34 @@ Het AEM project is de basis van de douanecode die de code, de configuratie en de
 
 In dit gedeelte van de zelfstudie wordt getoond hoe u:
 
-+ Installeren [!DNL Java]
-+ Installeren [!DNL Node.js] (en npm)
-+ Installeren [!DNL Maven]
-+ Installeren [!DNL Git]
++ [!DNL Java] installeren
++ [!DNL Node.js] (en npm) installeren
++ [!DNL Maven] installeren
++ [!DNL Git] installeren
 
 [Ontwikkelingshulpmiddelen instellen voor AEM projecten](./development-tools.md)
 
 ## Lokale AEM
 
-De AEM als Cloud Service SDK verstrekt een [!DNL QuickStart Jar] die een lokale versie van AEM in werking stelt. U [!DNL QuickStart Jar] kunt de AEM-auteurservice of de AEM-publicatieservice lokaal uitvoeren. Let op: hoewel de software een lokale ontwikkelervaring [!DNL QuickStart Jar] biedt, worden niet alle functies die in AEM als Cloud Service beschikbaar zijn, opgenomen in de [!DNL QuickStart Jar]code.
+De AEM als Cloud Service SDK verstrekt [!DNL QuickStart Jar] die een lokale versie van AEM in werking stelt. Met de [!DNL QuickStart Jar] kunt u de AEM-auteurservice of de AEM-publicatieservice lokaal uitvoeren. Hoewel [!DNL QuickStart Jar] een lokale ontwikkelervaring biedt, worden niet alle functies die in AEM als Cloud Service beschikbaar zijn, opgenomen in [!DNL QuickStart Jar].
 
 In dit gedeelte van de zelfstudie wordt getoond hoe u:
 
-+ Installeren [!DNL Java]
++ [!DNL Java] installeren
 + De AEM SDK downloaden
-+ Voer de [!DNL AEM Author Service]
-+ Voer de [!DNL AEM Publish Service]
++ [!DNL AEM Author Service] uitvoeren
++ [!DNL AEM Publish Service] uitvoeren
 
 [De lokale AEM-runtime instellen](./aem-runtime.md)
 
-## Lokale [!DNL Dispatcher] runtime
+## Lokale [!DNL Dispatcher] Runtime
 
-AEM als Dispatcher Tools van een Cloud Service SDK verstrekt alles vereist om lokale [!DNL Dispatcher] runtime te opstelling. [!DNL Dispatcher] De hulpmiddelen zijn [!DNL Docker]-gebaseerd en verstrekt de hulpmiddelen van de bevellijn om de Server van het [!DNL Apache HTTP] Web en de [!DNL Dispatcher] configuratiedossiers in een compatibele formaten te transpileren en hen op te stellen om in de [!DNL Dispatcher] container te [!DNL Docker] lopen.
+AEM als Dispatcher Tools van een Cloud Service SDK verstrekt alles vereist om lokale [!DNL Dispatcher] runtime te opstelling. [!DNL Dispatcher] De hulpmiddelen zijn  [!DNL Docker]-gebaseerd en verstrekt de hulpmiddelen van de bevellijn om de Server en de  [!DNL Apache HTTP] configuratiedossiers van het  [!DNL Dispatcher] Web in een compatibele formaten te transpileren en hen op te stellen aan  [!DNL Dispatcher] lopend in de  [!DNL Docker] container.
 
 In dit gedeelte van de zelfstudie wordt getoond hoe u:
 
 + De AEM SDK downloaden
-+ Installatieprogramma&#39; [!DNL Dispatcher] s
-+ De lokale [!DNL Dispatcher] runtime uitvoeren
++ [!DNL Dispatcher]-gereedschappen installeren
++ De lokale [!DNL Dispatcher]-runtime uitvoeren
 
-[De [!DNL Dispatcher] LocalRuntime instellen](./dispatcher-tools.md)
+[De  [!DNL Dispatcher] LocalRuntime instellen](./dispatcher-tools.md)
