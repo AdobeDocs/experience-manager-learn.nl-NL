@@ -40,23 +40,23 @@ U kunt een voorbeeld van de xdp bekijken in de HTML5-indeling of in de PDF-indel
 * Tik op de zojuist geüploade xdp en klik op _Voorvertoning -> Voorvertoning als HTML_. De xdp wordt weergegeven als HTML5
 
 >[!NOTE]
->Als u de optie _Voorvertoning als PDF_ selecteert, wordt het gerenderde PDF-bestand niet weergegeven in de browser omdat AEM Forms dynamische PDF&#39;s rendert waarvoor Acrobat-insteekmodule is vereist. U moet de PDF downloaden en openen met Adobe Acrobat/Reader om het bestand te kunnen weergeven
+>Als u de optie _Voorvertonen als PDF_ selecteert, wordt het weergegeven PDF-bestand niet weergegeven in de browser omdat AEM Forms dynamische PDF&#39;s rendert waarvoor Acrobat-insteekmodule is vereist. U moet de PDF downloaden en openen met Adobe Acrobat/Reader om het bestand te kunnen weergeven
 
 
 ## Voorvertonen met gegevens
 
 Ga als volgt te werk om een voorvertoning van de xdp in HTML5-indeling met het gegevensbestand weer te geven:
 
-* Tik op de zojuist geüploade xdp en klik op _Voorvertoning -> Voorvertoning met gegevens_. Blader naar het gegevensbestand, selecteer het en klik op _Voorvertoning_.
+* Tik op de zojuist geüploade xdp en klik op _Voorvertoning -> Voorvertoning met gegevens_. Blader en selecteer het gegevensbestand en klik op _Voorvertoning_.
 * De sjabloon moet worden weergegeven in de HTML5-indeling die vooraf is gevuld met de gegevens
 
 ## Geavanceerde eigenschappen van de XDP-sjabloon verkennen
 
-Met de geavanceerde eigenschappen van de xdp-sjabloon kunt u de publicatiedatum opgeven, de verzendhandler, het profiel voor het formulier weergeven, de service Prefill enzovoort. Tik op de xdp en klik op _eigenschappen -> Geavanceerd_ om de geavanceerde eigenschappen van de sjabloon weer te geven. Hier vindt u een aantal eigenschappen. Enkele van deze eigenschappen worden hier behandeld.
+Met de geavanceerde eigenschappen van de xdp-sjabloon kunt u de publicatiedatum opgeven, de verzendhandler, het profiel voor het formulier weergeven, de service Prefill enzovoort. Tik op de xdp om de geavanceerde eigenschappen van de sjabloon weer te geven en klik op _eigenschappen -> Geavanceerd_. Hier vindt u een aantal eigenschappen. Enkele van deze eigenschappen worden hier behandeld.
 
-**URL** verzenden - Dit is de URL die uw HTML5-formulier verzendt. In de volgende les zullen we dit behandelen. Als hier geen verzendURL is opgegeven, wordt de standaardverzendhandler aangeroepen die de formuliergegevens retourneert naar de browser.
+**URL**  verzenden - Dit is de URL die uw HTML5-formulier verzendt. In de volgende les zullen we dit behandelen. Als hier geen verzendURL is opgegeven, wordt de standaardverzendhandler aangeroepen die de formuliergegevens retourneert naar de browser.
 
-**HTML-renderprofiel** - HTML5-formulieren hebben het idee van profielen die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het standaardrenderprofiel niet aan uw behoeften voldoet, kan een [aangepast profiel](https://docs.adobe.com/content/help/en/experience-manager-64/forms/html5-forms/custom-profile.html) worden gemaakt en aan het formulier worden gekoppeld.
+**HTML-renderprofiel**  - HTML5-formulieren hebben het idee van profielen die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het standaardrenderprofiel niet aan uw behoeften voldoet, kan een [aangepast profiel](https://docs.adobe.com/content/help/en/experience-manager-64/forms/html5-forms/custom-profile.html) worden gemaakt en aan het formulier worden gekoppeld.
 
-**Prefill-service** - De service Prefill wordt doorgaans gebruikt om uw formulier te vullen met gegevens die worden opgehaald van een gegevensbron met een back-end.
+**De vooraf ingevulde Dienst**  - de vooraf ingevulde dienst wordt typisch gebruikt om uw vorm met gegevens te bevolken die van een achterste gegevensbron worden opgehaald.
 
