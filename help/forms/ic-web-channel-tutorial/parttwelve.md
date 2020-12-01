@@ -71,4 +71,4 @@ Meld u aan bij AEM Forms.
 
 >[!NOTE]
 >
->Bekijk het bestand **/apps/AEMForms/fetchad/GET.jsp** in crx. Zorg ervoor dat de tekenreeksvariabele webChannelDocument naar een geldig communicatiedocumentpad verwijst.
+>Bekijk het **/apps/AEMForms/fetchad/GET.jsp** bestand in crx. Zorg ervoor dat de tekenreeksvariabele webChannelDocument naar een geldig communicatiedocumentpad verwijst.
