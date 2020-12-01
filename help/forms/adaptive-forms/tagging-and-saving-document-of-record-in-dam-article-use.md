@@ -54,12 +54,12 @@ Volg onderstaande stappen om dit voorbeeld op uw systeem te laten werken:
 
 * Klik op Maken | Bestand uploaden en voorbeeldAdaptiveform.zip uploaden
 
-* [Artikelelementen](assets/tag-and-store-in-dam-assets.zip) importeren met AEM pakketbeheer
-* Open het [voorbeeldformulier in de voorbeeldmodus](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Vul de sectie Personen in en verzend het formulier.
+* [Artikelelementen importeren met ](assets/tag-and-store-in-dam-assets.zip) behulp van AEM pakketbeheer
+* Open het voorbeeldformulier [in de voorbeeldmodus](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Vul de sectie Personen in en verzend het formulier.
 * [Navigeer naar de map Peak in DAM](http://localhost:4502/assets.html/content/dam/Peak). U zou DoR in de Piek omslag moeten zien. Controleer de eigenschappen van het document. Het moet op passende wijze worden gelabeld.
 Gefeliciteerd! U hebt het voorbeeld op uw systeem geïnstalleerd
 
-* Laten we de [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) verkennen die wordt geactiveerd bij het verzenden van formulieren.
+* We verkennen de [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) die wordt geactiveerd bij het verzenden van formulieren.
 * De eerste stap in de workflow maakt een unieke bestandsnaam door de naam van de aanvrager en het land van verblijf samen te voegen.
 * De tweede stap van de workflow gaat over de taghiërarchie en de formulierveldelementen die moeten worden gecodeerd. De processtap extraheert de waarde uit de verzonden gegevens en bouwt de codetitel die het document moet labelen.
 * Als u DoR in een verschillende omslag in DAM wilt opslaan, specificeert u de omslagplaats gebruikend de configuratieeigenschappen zoals die in het hieronder screenshot worden gespecificeerd.
