@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Werken met Forms Testen met AEM Forms{#understanding-automated-forms-testing-with-aem-forms}
+# Werken met geautomatiseerde Forms-tests met AEM Forms{#understanding-automated-forms-testing-with-aem-forms}
 
 AEM 6.3 Forms introduceert de mogelijkheid om gebruikers testgevallen te laten maken binnen AEM voor Adaptive Forms met gebruik van Calvin SDK die bovenop het framework hobbes.js is gebouwd.
 
