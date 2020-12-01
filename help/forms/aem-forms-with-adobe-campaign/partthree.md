@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ---
 
-# Adaptief formulier vooraf invullen met ACS-profiel {#prefilling-adaptive-form-using-acs-profile}
+# Aangepast formulier vooraf invullen met ACS-profiel {#prefilling-adaptive-form-using-acs-profile}
 
 In dit deel, zullen wij Adaptief Vorm met profielinformatie vooraf vullen die van ACS wordt gehaald. AEM Forms beschikt over deze krachtige mogelijkheden om adaptieve formulieren vooraf in te vullen.
 
-Lees deze [zelfstudie](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html)voor meer informatie over het vooraf invullen van adaptieve formulieren.
+Lees voor meer informatie over het vooraf invullen van adaptieve formulieren deze [zelfstudie](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 Om Aangepast Vorm vooraf in te vullen door gegevens van ACS te halen, zullen wij veronderstellen dat er profiel in ACS is dat de zelfde e-mail zoals het programma geopende AEM gebruiker heeft. Bijvoorbeeld, als e-mailidentiteitskaart van de persoon die in AEM wordt geregistreerd csimms@adobe.com is, verwachten wij om een profiel in ACS te vinden waarvan e-mail csimms@adobe.com is.
 
