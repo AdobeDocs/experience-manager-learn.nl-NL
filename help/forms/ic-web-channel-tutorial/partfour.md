@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Webkanaaldocumentsjabloon AEM Forms maken {#creating-web-channel-document-template-aem-forms}
+# Webkanaaldocumentsjabloon AEM Forms {#creating-web-channel-document-template-aem-forms} maken
 
 In dit deel maken we een sjabloon voor een webkanaaldocument.
 Webkanaaldocumentsjabloon maken in AEM Forms 6.4
