@@ -26,7 +26,7 @@ Tot nu toe hebben we het volgende gecreëerd:
 * Gevormde Apache Sling Connection Pooled DataSource
 * Op RDBMS gebaseerd formuliergegevensmodel
 
-De volgende stap bestaat uit het maken en configureren van een adaptief formulier voor het gebruik van het formuliergegevensmodel.  Als u het begin wilt beginnen, kunt u het voorbeeldformulier [downloaden en importeren](assets/fdm-demo-af.zip) . Het voorbeeldformulier bevat een sectie waarin de werknemersgegevens worden weergegeven en een ander gedeelte waarin de begunstigden van de werknemers worden vermeld.
+De volgende stap bestaat uit het maken en configureren van een adaptief formulier voor het gebruik van het formuliergegevensmodel.  Als u het begin van de kop wilt ophalen, kunt u [voorbeeldformulier downloaden en importeren](assets/fdm-demo-af.zip). Het voorbeeldformulier bevat een sectie waarin de werknemersgegevens worden weergegeven en een ander gedeelte waarin de begunstigden van de werknemers worden vermeld.
 
 ## Formulier koppelen aan formuliergegevensmodel
 
@@ -42,10 +42,10 @@ Het voorbeeldformulier dat bij deze cursus wordt geleverd, is niet gekoppeld aan
 
 De eerste stap bestaat uit het koppelen van de vooraf ingevulde service voor het formulier. Volg de onderstaande stappen om vooraf ingevulde services te koppelen
 
-* Selecteer het `FDMDemo` formulier
+* Selecteer het formulier `FDMDemo`
 * Klik op _Bewerken_ om het formulier te openen in de bewerkingsmodus
 * Selecteer Formuliercontainer in de inhoudshiërarchie en klik op het moersleutelpictogram om het eigenschappenblad te openen
-* Selecteer vooraf ingevulde service __ Formuliergegevensmodel in de vervolgkeuzelijst Prefill Service
+* Selecteer _Vooraf ingevulde service Formuliergegevensmodel_ in de vervolgkeuzelijst Prefill-service
 * Klik op blauwe ☑ om uw wijzigingen op te slaan
 
 * ![Prefill-service](assets/fdm-prefill.png)
@@ -71,7 +71,7 @@ De volgende stap is de begunstigden van de werknemer in tabelvorm te tonen. Het 
 * Open het formulier in de bewerkingsmodus.
 * Hoofdvenster uitvouwen->Uw begunstigden->Tabel
 * Selecteer Rij1 en klik op het moersleutelpictogram om het eigenschappenblad te openen.
-* De bindingsverwijzing instellen op **/newhire/GetEmployeeBeneficiaries**
+* Stel de bindingsverwijzing in op **/newhire/GetEmployeeBeneficiaries**
 * Stel Herhalingsinstellingen - Minimum aantal in op 1 en Maximum aantal op 5.
 * Uw configuratie Row1 zou als het scherm moeten kijken dat hieronder wordt ontsproten
    ![row-configure](assets/configure-row.PNG)
@@ -95,7 +95,9 @@ Tot slot moeten wij de cellen van de Rij aan de Modelelementen van de Gegevens v
 
 ## Uw formulier testen
 
-We moeten het formulier nu openen met de juiste empID in de URL. Met de volgende twee koppelingen worden formulieren gevuld met informatie uit het databaseformulier[met empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)[Form met empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
+We moeten het formulier nu openen met de juiste empID in de URL. De volgende twee koppelingen vullen formulieren met informatie uit de database
+[Formulier met empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
+[Formulier met empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
 ## Problemen oplossen
 
