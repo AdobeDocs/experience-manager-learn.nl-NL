@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 64d88ef98ec1fe3e2dbe727fc59b350bb0a2134b
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,6 @@ In deze zelfstudie worden de volgende onderwerpen behandeld:
 * Onderzoek hoe de Fragments van de Inhoud in AEM kunnen worden betwist gebruikend het geïntegreerde ontwikkelingshulpmiddel GraphiQL.
 * AEM GraphQL-API&#39;s uit een voorbeeld-WKND GraphQL React-app gebruiken
 * Geavanceerde gegevensmodellering uitvoeren met fragmentverwijzingen
-
-## Overzicht van GraphQL
-
-In de onderstaande video wordt een overzicht gegeven van de GraphQL API die in AEM is geïmplementeerd. De GraphQL-API in AEM is vooral ontworpen voor het leveren van fragmentgegevens van inhoud aan downstreamtoepassingen als onderdeel van een headless-implementatie.
-
->[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
 ## Overzicht van GraphQL
 
