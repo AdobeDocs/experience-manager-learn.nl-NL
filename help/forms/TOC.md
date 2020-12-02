@@ -6,10 +6,10 @@ user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AE
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: c0db84f25334106c798d555c754d550113e91eac
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 1%
    + [Taakmelding toewijzen aanpassen](handling-form-submissions/customize-assign-task-notification.md)
 + Nuttige integratie{#some-useful-integrations}
    + [Verificatie met twee factoren](some-useful-integrations/two-factor-authentication.md)
+   + [OCR-gegevensextractie](some-useful-integrations/ocr-data-extraction.md)
 
 + Adaptieve Forms {#adaptive-forms}
    + [AEM Forms installeren in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
