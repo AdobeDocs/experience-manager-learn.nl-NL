@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 64d88ef98ec1fe3e2dbe727fc59b350bb0a2134b
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -208,40 +208,40 @@ Daarna, wijzigen wij React app om geparameterized, filtrerende vragen uit te voe
 1. Open het bestand in uw IDE: `src/components/Adventures.js`. Dit dossier vertegenwoordigt de avonturencomponent van de huiservaring, die naar de kaarten van avonturen zoekt en toont.
 1. Inspect de functie `filterQuery(activity)`, die ongebruikt is, maar bereid is om een vraag te formuleren GraphQL die avonturen door `activity` filtreert.
 
-Merk op dat parameter `activity` in de vraag GraphQL als deel van `filter` op het `adventureActivity` gebied wordt ingespoten, die de waarde van dat gebied vereisen om de waarde van de parameter aan te passen.
+   Merk op dat parameter `activity` in de vraag GraphQL als deel van `filter` op het `adventureActivity` gebied wordt ingespoten, die de waarde van dat gebied vereisen om de waarde van de parameter aan te passen.
 
-    &quot;
-    javascriptfunction filterQuery(activity) {
-    return ` 
-    {
-    avontures (filter: {
-    adventureActivity: {
-    _Expressies: [
-    {
-    value: &quot;${activity}&quot;
-    }
-    ]
-    }
-    ){
-    items {
-    _
-    
-    
-    
-    pathadventureTitleadventurePriceadventureTripLengthadventurePrimaryImage {
-    .. on ImageRef {
-    _
-    
-    
-    pathmimeTypeWidthheight
-    }
-    }
-    }
-    }
-    `;
-    &quot;
-     
-    
+   ```javascript
+   function filterQuery(activity) {
+       return `
+           {
+           adventures (filter: {
+               adventureActivity: {
+               _expressions: [
+                   {
+                   value: "${activity}"
+                   }
+                 ]
+               }
+           }){
+               items {
+               _path
+               adventureTitle
+               adventurePrice
+               adventureTripLength
+               adventurePrimaryImage {
+               ... on ImageRef {
+                   _path
+                   mimeType
+                   width
+                   height
+               }
+               }
+             }
+         }
+       }
+       `;
+   }
+   ```
 
 1. Werk de React verklaring `return` van de Adventures van de component bij om knopen toe te voegen die nieuw geparameterized `filterQuery(activity)` aanhalen om de avonturen aan lijst te verstrekken.
 
