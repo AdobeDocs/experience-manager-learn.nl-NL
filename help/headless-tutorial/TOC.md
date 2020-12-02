@@ -2,7 +2,7 @@
 user-guide-title: Aan de slag met AEM headless
 user-guide-description: Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met AEM headless.
 breadcrumb-title: Zelfstudie voor AEM zonder koptekst
-version: 6.5
+version: cloud-service
 sub-product: content-services
 doc-type: tutorial
 feature: content-fragment, core-components
@@ -12,21 +12,31 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 1%
+source-wordcount: '94'
+ht-degree: 2%
 
 ---
 
 
 # Aan de slag met AEM Headless{#getting-started-with-aem-headless}
 
-+ [Overzicht](./overview.md)
-+ [1 - Lesbestanden instellen](./chapter-1.md)
-+ [2 - Fragmentmodellen voor gebeurtenisinhoud definiëren](./chapter-2.md)
-+ [3 - Inhoudsfragmenten voor gebeurtenissen ontwerpen](./chapter-3.md)
-+ [4 - Templates voor inhoudsservices definiëren](./chapter-4.md)
-+ [5 - Pagina&#39;s met inhoudsservices ontwerpen](./chapter-5.md)
-+ [6 - De inhoud beschikbaar maken op AEM-publicaties voor levering](./chapter-6.md)
-+ [7 - AEM Content Services gebruiken vanuit een mobiele app](./chapter-7.md)
++ [Overzicht van AEM headless](./overview.md)
++ Content Services {#content-services}
+   + [Overzicht](./content-services/overview.md)
+   + [1 - Lesbestanden instellen](./content-services/chapter-1.md)
+   + [2 - Fragmentmodellen voor gebeurtenisinhoud definiëren](./content-services/chapter-2.md)
+   + [3 - Inhoudsfragmenten voor gebeurtenissen ontwerpen](./content-services/chapter-3.md)
+   + [4 - Templates voor inhoudsservices definiëren](./content-services/chapter-4.md)
+   + [5 - Pagina&#39;s met inhoudsservices ontwerpen](./content-services/chapter-5.md)
+   + [6 - De inhoud beschikbaar maken op AEM-publicaties voor levering](./content-services/chapter-6.md)
+   + [7 - AEM Content Services gebruiken vanuit een mobiele app](./content-services/chapter-7.md)
++ GraphQL {#graphql}
+   + [Overzicht](./graphql/overview.md)
+   + [1 - Snelle installatie](./graphql/setup.md)
+   + [2 - Modellen voor inhoudsfragmenten definiëren](./graphql/content-fragment-models.md)
+   + [3 - Inhoudsfragmenten ontwerpen](./graphql/author-content-fragments.md)
+   + [4 - GraphQL API&#39;s verkennen](./graphql/explore-graphql-api.md)
+   + [5 - Een query uitvoeren vanuit een externe app](./graphql/graphql-and-external-app.md)
+   + [6 - Geavanceerde gegevensmodellering met fragmentverwijzingen](./graphql/fragment-references.md)
