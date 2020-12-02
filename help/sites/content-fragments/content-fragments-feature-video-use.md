@@ -7,11 +7,11 @@ topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: cloud-service
 translation-type: tm+mt
-source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
+source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '372'
 ht-degree: 2%
 
 ---
@@ -20,11 +20,6 @@ ht-degree: 2%
 # Inhoudsfragmenten {#authoring-content-fragments} ontwerpen
 
 Inhoudsfragmenten zijn een inhoudsabstractie in AEM waarmee op tekst gebaseerde inhoud onafhankelijk van de kanalen die deze ondersteunt kan worden gemaakt en beheerd.
-
->[!NOTE]
->
->De AEM functionaliteit van het Fragment van de Inhoud die in deze video&#39;s wordt behandeld werd eerst geïntroduceerd in [AEM 6.3 + FP 19008 en FP19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html).
-
 
 AEM Inhoudsfragmenten zijn tekstgebaseerde redactionele inhoud die bepaalde gestructureerde gegevenselementen kan bevatten die zijn gekoppeld, maar die wordt beschouwd als zuivere inhoud zonder ontwerp- of layoutinformatie. Inhoudsfragmenten worden doorgaans gemaakt als agnostische inhoud voor kanalen, die bestemd is voor gebruik en hergebruik via kanalen, waardoor de inhoud zelf wordt verpakt in een contextspecifieke ervaring.
 
