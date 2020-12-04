@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 2e0352b051bf25a491b67468a76522084e53a71f
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1553'
 ht-degree: 0%
 
 ---
@@ -109,27 +109,15 @@ Voorbeeldinhoud van de WKND Reference-site wordt geïnstalleerd om de zelfstudie
 >
 > Als het gebruiken van een milieu van de Cloud Service zie de documentatie voor hoe te [een codebasis zoals de plaats van de Verwijzing WKND aan een milieu van de Cloud Service opstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying).
 
-## GrafiekQL-aanvragen toestaan
+## GraphQL-eindpunten installeren{#graphql-endpoint}
 
-AEM, die standaard beveiligd zijn, blokkeert aanvragen van verschillende oorsprong, zodat onbevoegde toepassingen geen verbinding kunnen maken met de inhoud en de inhoud ervan kunnen surfen.
+De eindpunten van GraphQL moeten worden gevormd. Dit geeft projectflexibiliteit in het bepalen van het nauwkeurige eindpunt dat GraphQL API wordt blootgesteld. Een [CORS](#cors-config) is ook nodig om toegang tot een externe toepassing te verlenen. Om de zelfstudie te versnellen, is een pakket vooraf gemaakt.
 
-Om React app van deze zelfstudie toe te staan om met AEM eindpunten van GraphQL API in wisselwerking te staan, wordt een het delen van middelen van oorsprong het delen configuratie bepaald.
+1. Download het pakket [aem-guides-wknd-graphql.all-1.0.0-SNAPSHOT.zip](./assets/setup/aem-guides-wknd-graphql.all-1.0.0-SNAPSHOT.zip).
+1. Navigeer in het menu **AEM Start** naar **Extra** > **Implementatie** > **Pakketten**.
+1. Klik **Pakket uploaden** en kies het pakket dat in de vorige stap is gedownload. Klik **Installeren** om het pakket te installeren.
 
-![Configuratie voor het delen van bronnen tussen verschillende bronnen](./assets/setup/cross-origin-resource-sharing-configuration.png)
-
-1. Navigeer naar AEM webconsole van SDK op **Tools** > **Operations** > **Webconsole**
-1. Klik op de rij met het label **Adobe Granite Cross-Origin Resource Sharing Policy** om een nieuwe configuratie te maken
-1. Werk de volgende velden bij en laat de andere de standaardwaarden staan:
-   * Toegestane oorsprong: `localhost:3000`
-   * Toegestane oorsprong (Regex): `.* `
-   * Toegestane paden: `/content/graphql/endpoint.gql`
-   * Toegestane methoden: `GET`, `HEAD`, `POST`
-      * Slechts `POST` wordt vereist voor GraphQL nochtans kunnen de andere methodes nuttig zijn wanneer het in wisselwerking staan met AEM op headless manier.
-   * Ondersteunt referenties: `Yes`
-      * Dit is vereist omdat onze React-app zal communiceren met de beveiligde GraphQL-eindpunten op de AEM-auteurservice.
-1. Klik **Opslaan**
-
-Met deze configuratie zijn HTTP-aanvragen van `POST` afkomstig van `localhost:3000` naar de AEM-auteurservice op pad `/content/graphql/endpoint.gql` toegestaan.
+Het bovenstaande pakket bevat ook het [GraphiQL-gereedschap](https://github.com/graphql/graphiql) dat in latere hoofdstukken wordt gebruikt. Meer informatie over de configuratie CORS kan [hieronder worden gevonden](#cors-config).
 
 ## Voorbeeldtoepassing installeren{#sample-app}
 
@@ -209,3 +197,29 @@ Gefeliciteerd, u hebt nu een externe toepassing die AEM inhoud met GraphQL verbr
 ## Volgende stappen {#next-steps}
 
 In het volgende hoofdstuk, [Defining Content Fragment Models](content-fragment-models.md), leert hoe te om inhoud te modelleren en een schema met **Content Fragment Models** te bouwen. U controleert bestaande modellen en maakt een nieuw model. U zult ook over de verschillende gegevenstypes leren die kunnen worden gebruikt om een schema als deel van het model te bepalen.
+
+## (Bonus) CORS-configuratie {#cors-config}
+
+AEM, die standaard beveiligd zijn, blokkeert aanvragen van verschillende oorsprong, zodat onbevoegde toepassingen geen verbinding kunnen maken met de inhoud en de inhoud ervan kunnen surfen.
+
+Om React app van deze zelfstudie toe te staan om met AEM eindpunten van GraphQL API in wisselwerking te staan, is een dwars-oorsprong middel delende configuratie bepaald in het eindpuntpakket GraphQL.
+
+![Configuratie voor het delen van bronnen tussen verschillende bronnen](./assets/setup/cross-origin-resource-sharing-configuration.png)
+
+Dit handmatig configureren:
+
+1. Navigeer naar AEM webconsole van SDK op **Tools** > **Operations** > **Webconsole**
+1. Klik op de rij met het label **Adobe Granite Cross-Origin Resource Sharing Policy** om een nieuwe configuratie te maken
+1. Werk de volgende velden bij en laat de andere de standaardwaarden staan:
+   * Toegestane oorsprong: `localhost:3000`
+   * Toegestane oorsprong (Regex): `.* `
+   * Toegestane paden: `/content/graphql/endpoint.gql`
+   * Toegestane methoden: `GET`, `HEAD`, `POST`
+      * Slechts `POST` wordt vereist voor GraphQL nochtans kunnen de andere methodes nuttig zijn wanneer het in wisselwerking staan met AEM op headless manier.
+   * Ondersteunt referenties: `Yes`
+      * Dit is vereist omdat onze React-app zal communiceren met de beveiligde GraphQL-eindpunten op de AEM-auteurservice.
+1. Klik **Opslaan**
+
+Met deze configuratie zijn HTTP-aanvragen van `POST` afkomstig van `localhost:3000` naar de AEM-auteurservice op pad `/content/graphql/endpoint.gql` toegestaan.
+
+Deze configuratie en eindpunten GraphQL worden geproduceerd van een AEM Project. [Bekijk hier](https://github.com/adobe/aem-guides-wknd-graphql/tree/master/aem-project) de details.
