@@ -4,10 +4,10 @@ user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experi
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: 16c73d19584eefff3c9551d2a3174b5b8ed6d427
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 2%
+source-wordcount: '441'
+ht-degree: 4%
 
 ---
 
@@ -16,36 +16,36 @@ ht-degree: 2%
 
 + [Overzicht](overview.md)
 + Pagina-ontwerp {#page-authoring}
-   + [Overzicht van ontwerpen](page-authoring/aem-sites-authoring-overview.md)
-   + [Basisnavigatie en -verwerking in AEM Sites](page-authoring/basic-handling-sites-feature-video-use.md)
-   + [Inhoudshiërarchie in AEM Sites](page-authoring/content-hierarchy-feature-video-use.md)
-   + [Pagina&#39;s ontwerpen in AEM Sites](page-authoring/page-authoring-overview-feature-video-use.md)
-   + [Een nieuwe pagina maken](page-authoring/creating-page-feature-video-use.md)
-   + [De pagina-editor gebruiken](page-authoring/page-editor-feature-video-use.md)
-   + [Responsieve lay-out begrijpen](page-authoring/responsive-layout-feature-video-understand.md)
-   + [Paginalabels in AEM Sites](page-authoring/page-tagging-feature-video-use.md)
+   + [Authoring](page-authoring/aem-sites-authoring-overview.md)
+   + [Navigatie](page-authoring/basic-handling-sites-feature-video-use.md)
+   + [Sitestructuur](page-authoring/content-hierarchy-feature-video-use.md)
+   + [Pagina maken](page-authoring/creating-page-feature-video-use.md)
+   + [Pagina&#39;s ontwerpen](page-authoring/page-authoring-overview-feature-video-use.md)
+   + [Pagina-editor](page-authoring/page-editor-feature-video-use.md)
+   + [Paginalabels](page-authoring/page-tagging-feature-video-use.md)
    + [Paginaversie](page-authoring/page-versioning-feature-video-use.md)
-   + [Paginaversies vergelijken](page-authoring/page-diff-feature-video-use.md)
+   + [Vergelijking van paginaseversies](page-authoring/page-diff-feature-video-use.md)
    + [Pagina-eigenschappen](page-authoring/page-properties-feature-video-understand.md)
-   + [Basispaginabewerkingen](page-authoring/page-operations-feature-video-use.md)
-   + [Pagina&#39;s publiceren](page-authoring/publication-management-feature-video-use.md)
-   + [Bewerkbare paginasjablonen gebruiken](page-authoring/template-editor-feature-video-use.md)
-   + [Het stijlsysteem gebruiken](page-authoring/style-system-feature-video-use.md)
-   + [Tijdverdraaiing gebruiken](page-authoring/timewarp-feature-video-use.md)
+   + [Paginabewerkingen](page-authoring/page-operations-feature-video-use.md)
+   + [Lay-outmodus](page-authoring/responsive-layout-feature-video-understand.md)
+   + [Publiceren](page-authoring/publication-management-feature-video-use.md)
+   + [Bewerkbare sjablonen](page-authoring/template-editor-feature-video-use.md)
+   + [Stijlsysteem](page-authoring/style-system-feature-video-use.md)
+   + [Timewarp](page-authoring/timewarp-feature-video-use.md)
 + Onderdelen {#components}
    + [Component Development](components/component-development.md)
    + [Kernonderdelen](components/core-components-feature-video-understand.md)
-   + [De componentenconsole gebruiken](components/components-console-feature-video-use.md)
+   + [Onderdelenconsole](components/components-console-feature-video-use.md)
 + Contentfragmenten {#content-fragments}
    + [Inhoudsfragmenten ontwerpen](content-fragments/content-fragments-feature-video-use.md)
    + [Inhoudsfragmenten leveren](content-fragments/content-fragments-delivery-feature-video-use.md)
-   + [Vertaling gebruiken met inhoudsfragmenten](content-fragments/content-fragments-translation-feature-video-use.md)
-   + [Inhoudsfragmenten begrijpen in vergelijking met ervaringsfragmenten](content-fragments/understand-content-fragments-and-experience-fragments.md)
+   + [Vertalen met inhoudsfragmenten](content-fragments/content-fragments-translation-feature-video-use.md)
+   + [Content Fragments vs. Experience Fragments](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + Ervaringsfragmenten {#experience-fragments}
    + [Ervaringsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
    + [Werken met ervaringsfragmenten](experience-fragments/experience-fragments-feature-video-understand.md)
    + [Sociale post instellen met ervaringsfragmenten](experience-fragments/experience-fragments-social-technical-video-setup.md)
-   + [Inhoudsfragmenten begrijpen in vergelijking met ervaringsfragmenten](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + [Content Fragments vs. Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Ontwikkeling {#developing}
    + [Projectarchetype AEM](developing/aem-project-archetype.md)
    + [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
