@@ -8,12 +8,12 @@ doc-type: tutorial
 activity: develop
 audience: developer
 mini-toc-levels: 1
-kt: null
-thumbnail: null
+kt: 6386
+thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: 2e0352b051bf25a491b67468a76522084e53a71f
+source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,10 @@ Deze zelfstudie gebruikt de [AEM als Cloud Service SDK](https://experienceleague
 1. Geef een beheerderswachtwoord op als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert zijn om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
 1. Na een paar minuten wordt de AEM-instantie geïnstalleerd en wordt een nieuw browservenster geopend op [http://localhost:4502](http://localhost:4502).
 1. Meld u aan met de gebruikersnaam `admin` en het wachtwoord `admin`.
+
+>[!CAUTION]
+>
+> Om de opstelling voort te zetten, moet de Eigenschap GraphQL nu manueel op de SDK van QuickStart worden toegelaten. Neem contact op met uw Adobe contact voor verdere instructies. Deze handmatige stap is alleen nodig tot de functie in 2021 wordt uitgebracht.
 
 ## Voorbeeldinhoud installeren{#wknd-site}
 
