@@ -5,9 +5,9 @@ breadcrumb-title: AEM Assets Tutorials
 sub-product: elementen
 team: TM
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: aa349fba9e0f1df97316105ada62ff9b32501573
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '257'
 ht-degree: 7%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 7%
    + [Zoeken in middelen](./adobe-asset-link/asset-search.md)
 
 +  Dynamic Media {#dynamic-media}
-   + [Dynamisch mediaoverzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
+   + [Dynamic Media - Overzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Slim uitsnijden](dynamic-media/smart-crop-feature-video-use.md)
    + [Ervaringsfragmenten](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [Interactieve video](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
@@ -99,9 +99,10 @@ ht-degree: 7%
    + [Viewers](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
    + [Panoramische en verticale beeldviewers](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
    + [Viewers met Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
-   + [Dynamic Media Classic-bureaubladtoepassing](dynamic-media/dynamic-media-classic-desktop-application.md)
-   + [Dynamische media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + [Video over SmartCrop van dynamische media](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Dynamic Media Classic Desktop-toepassing](dynamic-media/dynamic-media-classic-desktop-application.md)
+   + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
+   + [Dynamic Media Smart Crop Video](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Dynamic Media Core-componenten](dynamic-media/dynamic-media-core-components.md)
 
 + Vertaling {#translation}
    + [Bronbestandsomzetting](translation/source-file-translation-feature-video-use.md)
