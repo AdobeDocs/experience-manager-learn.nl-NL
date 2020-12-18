@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
 translation-type: tm+mt
-source-git-commit: e13a5171fbeb9e1eb5f78d1c691bc8b4b896a998
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -174,6 +174,8 @@ Het is aan te raden aangepaste code te activeren op basis van een gebeurtenis ui
 ## Volgende stappen
 
 Bekijk de volgende zelfstudie om te leren hoe u de gebeurtenisgestuurde Adobe Client Data-laag kunt gebruiken om paginagegevens te verzamelen en naar Adobe Analytics[ te verzenden.](../analytics/collect-data-analytics.md)
+
+Of leer hoe te om [de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten ](./data-layer-customize.md) aan te passen
 
 
 ## Aanvullende bronnen {#additional-resources}
