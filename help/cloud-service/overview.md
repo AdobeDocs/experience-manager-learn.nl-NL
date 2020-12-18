@@ -4,10 +4,10 @@ description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) als
 sub-product: sites, cloudbeheer, stichting, middelen
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +20,14 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 
 ## Wat is er nieuw?
 
+* **[Bulk importeren (video)](./migration/bulk-import.md)**
+
+   *Leer hoe u importmiddelen in AEM kunt bulken van Azure Blob Storage of Amazon S3*
+
+* **[asset compute metadata worker (zelfstudie)](./asset-compute/advanced/metadata.md)**
+
+   *Leer hoe u metagegevens van elementen van een Asset compute naar AEM schrijft*
+
 * **[Uitbreidbaarheid van microservices voor asset compute (zelfstudie)](./asset-compute/overview.md)**
 
    *Leer hoe u Asset compute-workers kunt ontwikkelen om aangepaste asset-uitvoeringen te genereren*
@@ -31,14 +39,6 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 * **[Fouten opsporen in AEM als Cloud Service (zelfstudie)](./debugging/cloud-service/overview.md)**
 
    *Onderzoek hoe te om AEM als Cloud Service te zuiveren*
-
-* **[Foutopsporing AEM SDK (zelfstudie)](./debugging/aem-sdk-local-quickstart/overview.md)**
-
-   *Onderzoek de diverse hulpmiddelen die worden gebruikt om uw toepassing op het AEM als lokale snelle start van een Cloud Service SDK te zuiveren*
-
-* **[Local Development Environment Setup (zelfstudie)](./local-development-environment/overview.md)**
-
-   *Leer hoe u uw lokale ontwikkelcomputer instelt voor AEM als ontwikkeling voor Cloud Servicen*
 
 ## Personeelspictogrammen
 
