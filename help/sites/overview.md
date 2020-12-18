@@ -5,9 +5,9 @@ description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Mana
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites
 sub-product: sites, content-services
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '337'
 ht-degree: 1%
 
 ---
@@ -19,21 +19,13 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 
 ## Wat is er nieuw?
 
-* **[Aan de slag met AEM SPA Editor en React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)  (zelfstudie)**
+* **[De gegevenslaag voor de Adobe-client aanpassen met AEM componenten](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
-   *Een gids Aan de slag voor ontwikkelaars om één enkele paginatoepassingen (SPA) met AEM te integreren gebruikend Reageren*
+   *Leer hoe u de gegevenslaag voor de Adobe-client kunt bijwerken met inhoud van aangepaste AEM Componenten.*
 
-* **[Aan de slag met AEM SPA Editor en hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)  (zelfstudie)**
+* **[Aan de slag met AEM headless GraphQL (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
-   *Een gids Aan de slag voor ontwikkelaars om één enkele paginatoepassingen (SPA) met AEM te integreren gebruikend Hoek*
-
-* **[Aan de slag met AEM headless (zelfstudie)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
-
-   *In een CMS-scenario zonder kop onthullen hoe u inhoud van AEM kunt blootstellen die door een systeemeigen mobiele app wordt verbruikt.*
-
-* **[Ervingfragmenten gebruiken (videoreeks)](./experience-fragments/experience-fragments-feature-video-use.md)**
-
-   *Leer AEM Ervaring Fragments voor het bevorderen van inhoud over kanalen.*
+   *Hoe u inhoud van AEM toegankelijk maakt voor gebruik door een systeemeigen mobiele app met behulp van AEM GraphQL-API&#39;s.*
 
 * **[Inhoudsfragmenten gebruiken (videoreeks)](./content-fragments/content-fragments-feature-video-use.md)**
 
