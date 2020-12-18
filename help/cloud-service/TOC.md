@@ -5,10 +5,10 @@ breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 19%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -51,6 +51,7 @@ ht-degree: 19%
    + [Toegang tot AEM doorlopen configureren](./accessing/walk-through.md)
 + Migratie {#migration}
    + [De tool Content Transfer](./migration/content-transfer-tool.md)
+   + [Bulkimport van activa](./migration/bulk-import.md)
 + Uitbreidbaarheid asset compute{#asset-compute}
    + [Overzicht](./asset-compute/overview.md)
    + Instellen{#set-up}
