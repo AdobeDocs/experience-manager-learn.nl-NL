@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: 46936876de355de9923f7a755aa6915a13cca354
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2027'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,8 @@ Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eers
 1. Voeg de volgende instructies voor importeren toe aan het begin van het bestand:
 
    ```java
+   import java.util.HashMap;
+   import java.util.Map;
    import org.apache.sling.api.resource.Resource;
    import com.fasterxml.jackson.core.JsonProcessingException;
    import com.fasterxml.jackson.databind.ObjectMapper;
@@ -163,17 +165,6 @@ Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eers
 
    `ObjectMapper` wordt gebruikt om de eigenschappen in series te vervaardigen en een koord van JSON terug te keren. Deze JSON-tekenreeks kan vervolgens in de gegevenslaag worden geïnjecteerd.
 
-1. Open het bestand `package-info.java` op `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` en werk de versie bij van `1.0` naar `2.0`:
-
-   ```java
-   @Version("2.0")
-   package com.adobe.aem.guides.wknd.core.models;
-   
-   import org.osgi.annotation.versioning.Version;
-   ```
-
-   Aangezien de interface `Byline.java` is gewijzigd, moet de Java-pakketversie worden bijgewerkt.
-
 1. Open een terminalvenster. Bouw en stel enkel de `core` module gebruikend uw Maven vaardigheden op:
 
    ```shell
@@ -194,13 +185,11 @@ Een speciaal gegevensattribuut `data-cmp-data-layer` op elke AEMComponent wordt 
 
 1. `byline.html` bijwerken om het `data-cmp-data-layer` attribuut op te nemen:
 
-   ```html
-    <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
+   ```diff
+     <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
        data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
        data-sly-test.hasContent="${!byline.empty}"
-       <!--/* Add the data-cmp-data-layer */-->
-       data-cmp-data-layer="${byline.data}"
-   
+   +   data-cmp-data-layer="${byline.data}"
        class="cmp-byline">
        ...
    ```
@@ -256,8 +245,11 @@ De klikbare elementen zijn gewoonlijk een knoop CTA of een navigatiekoppeling. J
 
 1. `byline.html` bijwerken om het `data-cmp-clickable`-kenmerk op te nemen in het **name**-element van de Naamregel:
 
-   ```html
-   <h2 class="cmp-byline__name" data-cmp-clickable>${byline.name}</h2>
+   ```diff
+     <h2 class="cmp-byline__name" 
+   +    data-cmp-clickable="${byline.data ? true : false}">
+        ${byline.name}
+     </h2>
    ```
 
 1. Open een nieuwe terminal. Bouw en stel enkel de `ui.apps` module gebruikend uw Maven vaardigheden op:
@@ -289,7 +281,7 @@ De klikbare elementen zijn gewoonlijk een knoop CTA of een navigatiekoppeling. J
 
    ```javascript
    window.adobeDataLayer.push(function (dl) {
-        dl.addEventListener("cmp:show", bylineClickHandler);
+        dl.addEventListener("cmp:click", bylineClickHandler);
    });
    ```
 
@@ -419,6 +411,13 @@ Een hulpprogrammaklasse, `DataLayerBuilder`, bestaat om het grootste deel van he
    ```
 
    Merk op dat er nu een `image` voorwerp binnen de `byline` componenteningang is. Dit heeft veel meer informatie over de activa in de DAM. Merk ook op dat `@type` en unieke identiteitskaart (in dit geval `byline-136073cfcb`) automatisch bevolkt zijn, evenals `repo:modifyDate` die erop wijst toen de component werd gewijzigd.
+
+## Aanvullende voorbeelden {#additional-examples}
+
+1. Een ander voorbeeld om de gegevenslaag uit te breiden kan worden bekeken door de `ImageList` component in de WKND codebasis te inspecteren:
+   * `ImageList.java` - Java-interface in de  `core` module.
+   * `ImageListImpl.java` - Verkoopmodel in de  `core` module.
+   * `image-list.html` - HTML-sjabloon in de  `ui.apps` module.
 
    >[!NOTE]
    >
