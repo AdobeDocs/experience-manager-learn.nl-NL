@@ -6,10 +6,10 @@ user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AE
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: c0db84f25334106c798d555c754d550113e91eac
+source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '902'
+ht-degree: 1%
 
 ---
 
@@ -182,6 +182,7 @@ ht-degree: 0%
    + [Gebruiksrechten toepassen op geüploade PDF](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Documenten certificeren](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Formulierbijlagen samenstellen](document-services/assemble-form-attachments.md)
+   + [Nuttige hulpprogramma&#39;s](document-services/useful-utility-services.md)
 + Interactieve communicatie voor afdrukkanaal
 {#ic-print-channel-tutorial}
    + [Inleiding](ic-print-channel-tutorial/introduction.md)
