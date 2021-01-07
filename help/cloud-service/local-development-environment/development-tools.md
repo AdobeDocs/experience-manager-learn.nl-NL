@@ -10,7 +10,7 @@ audience: developer
 kt: 4267
 thumbnail: 25907.jpg
 translation-type: tm+mt
-source-git-commit: cb5f3c323c433c9321ba26ac1194be0cd225a405
+source-git-commit: debf13d8e376979548bcbf55f71661d8cb8eb823
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI communiceren met Ado
 
 Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI Asset compute-workers genereren en uitvoeren via de opdracht `aio asset-compute`.
 
-1. `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` uitvoeren om de [Asset compute plug-in](https://github.com/adobe/aio-cli-plugin-asset-compute) te installeren.
+1. `aio plugins:install @adobe/aio-cli-plugin-asset-compute` uitvoeren om de [Asset compute plug-in](https://github.com/adobe/aio-cli-plugin-asset-compute) te installeren.
 
 ### Adobe I/O CLI-verificatie instellen
 
