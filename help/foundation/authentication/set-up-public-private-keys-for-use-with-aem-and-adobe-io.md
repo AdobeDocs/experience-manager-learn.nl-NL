@@ -9,9 +9,9 @@ audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
 translation-type: tm+mt
-source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
+source-git-commit: 3f973e36531a2d04cbaf6bb8dd70b39fef7d8b2f
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -114,10 +114,14 @@ Als u wordt gevraagd een sleutelarchief te maken, doet u dat. Dit sleutelarchief
 Klik in de sleutelarchiefconsole van de gebruiker op **[!UICONTROL Add Private Key form KeyStore file]** en voeg de volgende informatie toe:
 
 * **[!UICONTROL New Alias]**: de alias van de sleutel in AEM. Dit kan om het even wat zijn en moet niet met de naam van keystore beantwoorden die met het open bevel wordt gecreeerd.
-* **[!UICONTROL Keystore File]**: de uitvoer van de opdracht openssl pkcs12 (keystore.p12)
-* **[!UICONTROL Private Key Alias]**: Het wachtwoord dat via  `-  passout` argument in de opdracht openssl pkcs12 is ingesteld.
+* **[!UICONTROL KeyStore File]**: de uitvoer van de opdracht openssl pkcs12 (keystore.p12)
+* **[!UICONTROL KeyStore File Password]**: Het wachtwoord dat via  `-passout` argument in de opdracht openssl pkcs12 is ingesteld.
+* **[!UICONTROL Private Key Alias]**: De waarde die aan het  `-name` argument wordt verstrekt in de opdracht openssl pkcs12 hierboven (d.w.z.  `my-key`).
+* **[!UICONTROL Private Key Password]**: Het wachtwoord dat via  `-passout` argument in de opdracht openssl pkcs12 is ingesteld.
 
-* **[!UICONTROL Private Key Password]**: Het wachtwoord dat via  `-  passout` argument in de opdracht openssl pkcs12 is ingesteld.
+>[!CAUTION]
+>
+>Het wachtwoord voor sleutelarchief-bestanden en het wachtwoord voor persoonlijke sleutels zijn voor beide invoer hetzelfde. Als u een niet-overeenkomend wachtwoord invoert, wordt de sleutel niet geïmporteerd.
 
 ### Controleer of de persoonlijke sleutel is geladen in het AEM sleutelarchief {#verify-the-private-key-is-loaded-into-the-aem-keystore}
 
