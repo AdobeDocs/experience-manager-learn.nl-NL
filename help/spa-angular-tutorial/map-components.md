@@ -11,7 +11,7 @@ audience: developer
 kt: 5311
 thumbnail: 5311-spa-angular.jpg
 translation-type: tm+mt
-source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
+source-git-commit: 28b5522e094a41d81116acb923dc0390478e2308
 workflow-type: tm+mt
 source-wordcount: '2385'
 ht-degree: 0%
@@ -481,7 +481,7 @@ De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Vi
 
    ![VSCode-importsjabloon](assets/map-components/import-aem-servervscode.png)
 
-4. Herhaal de stappen voor het importeren van inhoud, maar selecteer de map **policies** op `/conf/wknd-spa-angular/settings/wcm/templates/policies`.
+4. Herhaal de stappen voor het importeren van inhoud, maar selecteer de map **policies** op `/conf/wknd-spa-angular/settings/wcm/policies`.
 
 5. Inspect het `filter.xml`-bestand op `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
