@@ -4,7 +4,7 @@ seo-title: Aan de slag met AEM Content Services - Hoofdstuk 1 - Lesbestanden ins
 description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
 seo-description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 52824c178ddf930df134608ecb01bb661d6c514c
 workflow-type: tm+mt
 source-wordcount: '17502'
 ht-degree: 0%
@@ -599,7 +599,7 @@ Nogmaals, dit is gebaseerd op echte ervaring. We hebben al die patronen in het w
 >
 >Dit is een antipatroon. Niet gebruiken. Altijd.
 
-Hebt u ooit vraagparameters zoals `?ck=398547283745` gezien? Ze worden &#39;cache-killer&#39; genoemd. Het idee is, dat als u om het even welke vraagparameter toevoegt het middel niet in de cache zal worden geplaatst. Als u bovendien een willekeurig getal toevoegt als waarde van de parameter (zoals &quot;398547283745&quot;), wordt de URL uniek en zorgt u ervoor dat er geen andere cache is tussen het AEM en het scherm. Meestal zouden tussenliggende verdachten een &quot;Varnish&quot;geheime voorgeheugen voor de Verzender, een CDN of zelfs het browser geheime voorgeheugen zijn. Opnieuw: Doe dat niet. U wilt dat uw bronnen zo veel en zo lang mogelijk in cache worden opgeslagen. De cache is je vriend. Geen vrienden doden.
+Hebt u ooit vraagparameters zoals `?ck=398547283745` gezien? Ze worden &#39;cache-killer&#39; genoemd. Het idee is, dat als u om het even welke vraagparameter toevoegt het middel niet in het voorgeheugen onder wordt gebracht. Als u bovendien een willekeurig getal toevoegt als waarde van de parameter (zoals &quot;398547283745&quot;), wordt de URL uniek en zorgt u ervoor dat er geen andere cache is tussen het AEM en het scherm. Meestal zouden tussenliggende verdachten een &quot;Varnish&quot;geheime voorgeheugen voor de Verzender, een CDN of zelfs het browser geheime voorgeheugen zijn. Opnieuw: Doe dat niet. U wilt dat uw bronnen zo veel en zo lang mogelijk in cache worden opgeslagen. De cache is je vriend. Geen vrienden doden.
 
 #### Automatische validatie
 
@@ -1144,7 +1144,7 @@ Geen ideale situatie. Als u deze instelt op _3_, werkt automatische ongeldigmaki
 
 Als u deze instelt op _2_, betekent dit dat u `/canada/en` en `/canada/fr` afhankelijk declareert, wat ze mogelijk niet zijn. Elke ongeldigmaking in `/en` zou dus ook `/fr` ongeldig maken. Dit leidt tot een iets lagere aanraaksnelheid voor cache, maar is nog steeds beter dan het leveren van inhoud in een verouderde cache.
 
-De beste oplossing is natuurlijk om de wortels van alle sites even diep te maken:
+De beste oplossing is natuurlijk om alle wortels van sites even diep te maken:
 
 ```
 /content/tiny-local-brand/finland/fi/home
