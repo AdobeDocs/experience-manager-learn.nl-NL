@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: 4cfbf975919eb38413be8446b70b107bbfebb845
+source-git-commit: 398b9f855556fc425b034986a7f21159297dcba5
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,39 @@ $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
 
+## Inhoudsdistributie simuleren {#content-distribution}
+
+In een ware milieu van de Cloud Service wordt de inhoud van de Auteur aan de Publish Dienst verdeeld gebruikend [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) en de Pijpleiding van de Adobe. De [Adobe Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution) is een geïsoleerde microservice die alleen beschikbaar is in de cloud-omgeving.
+
+Tijdens de ontwikkeling, kan het wenselijk zijn om de distributie van inhoud te simuleren gebruikend de lokale auteur en de Publish dienst. Dit kan worden bereikt door de agenten van de erfenisReplicatie toe te laten.
+
+>[!NOTE]
+>
+> De agenten van de replicatie zijn slechts beschikbaar aan gebruik in lokale QuickStart JAR en verstrekken slechts een simulatie van inhoudsdistributie.
+
+1. Meld u aan bij de **Auteur**-service en navigeer naar [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
+1. Klik **StandaardAgent (publiceren)** om de standaardagent van de Replicatie te openen.
+1. Klik **uitgeven** om de configuratie van de agent te openen.
+1. Werk de volgende velden bij onder het tabblad **Instellingen**:
+
+   + **Ingeschakeld**  - true controleren
+   + **Gebruiker-id**  agent - dit veld leeg laten
+
+   ![Configuratie van replicatieagent - instellingen](assets/aem-runtime/settings-config.png)
+
+1. Werk onder het tabblad **Vervoer** de volgende velden bij:
+
+   + **URI** -  `http://localhost:4503/bin/receive?sling:authRequestLogin=1`
+   + **Gebruiker** -  `admin`
+   + **Wachtwoord** -  `admin`
+
+   ![Configuratie replicatieagent - Vervoer](assets/aem-runtime/transport-config.png)
+
+1. Klik **Ok** om de configuratie op te slaan en de **Default** Replication Agent in te schakelen.
+1. U kunt nu wijzigingen aanbrengen in de inhoud van de service Auteur en deze publiceren naar de service Publiceren.
+
+![Pagina publiceren](assets/aem-runtime/publish-page-changes.png)
+
 ## Snelstartmodi voor Jar
 
 De naam van de QuickStart-jar `aem-<tier>_<environment>-p<port number>.jar` geeft aan hoe deze wordt gestart. Wanneer AEM zoals begonnen in een specifieke rij, auteur of publiceert, kan het niet in de afwisselende rij worden veranderd. Hiervoor moet de `crx-Quickstart`-map die tijdens de eerste uitvoering is gegenereerd, worden verwijderd en moet QuickStart Jar opnieuw worden uitgevoerd. Het milieu en de Havens kunnen worden veranderd, nochtans vereisen zij einde/begin van de lokale AEM instantie.
@@ -156,7 +189,7 @@ Werk de AEM SDK ten minste maandelijks bij op of kort na de laatste donderdag va
 >
 > Als u de QuickStart-jar wilt bijwerken naar een nieuwe versie, moet u de volledige lokale ontwikkelomgeving vervangen. Dit leidt tot verlies van alle code, configuratie en inhoud in de lokale AEM. Zorg ervoor dat om het even welke code, config of inhoud die niet zou moeten worden vernietigd veilig aan Git wordt begaan, of uit de lokale AEM instantie als AEM Pakketten wordt uitgevoerd.
 
-### Hoe te vermijden inhoudsverlies wanneer het bevorderen van de AEM SDK
+### Hoe te om inhoudsverlies te vermijden wanneer het bevorderen van de AEM SDK
 
 Door de upgrade van de AEM SDK wordt in feite een geheel nieuwe AEM-runtime gemaakt, waaronder een nieuwe opslagplaats. Dit betekent dat eventuele wijzigingen in de opslagplaats van een eerdere AEM SDK verloren gaan. Hieronder volgen levensvatbare strategieën voor het ondersteunen van blijvende inhoud tussen AEM SDK-upgrades en u kunt deze op discrete wijze of in overleg gebruiken:
 
