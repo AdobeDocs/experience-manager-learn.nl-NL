@@ -5,10 +5,10 @@ breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
 translation-type: tm+mt
-source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
+source-git-commit: 81c704240f163ccd151a61643f589f825a288705
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '218'
+ht-degree: 20%
 
 ---
 
@@ -23,6 +23,12 @@ ht-degree: 0%
    + [Inleiding tot verkoop](./underlying-technology/introduction-sling.md)
    + [Inleiding tot auteur- en publicatiereeks](./underlying-technology/introduction-author-publish.md)
    + [Inleiding tot Dispatcher](./underlying-technology/introduction-dispatcher.md)
++ Cloud Manager {#cloud-manager}
+   + [Programma&#39;s](./cloud-manager/programs.md)
+   + [Omgevingen](./cloud-manager/environments.md)
+   + [Productiepijpleiding CI/CD](./cloud-manager/cicd-production-pipeline.md)
+   + [Niet-productiepijpleiding CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
+   + [Activiteit](./cloud-manager/activity.md)
 + Lokale ontwikkelomgeving ingesteld {#local-development-environment-set-up}
    + [Overzicht](./local-development-environment/overview.md)
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
