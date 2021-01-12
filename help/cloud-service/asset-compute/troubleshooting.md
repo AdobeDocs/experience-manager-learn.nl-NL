@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 649d971ecaa67c0d1dd2636f3c212bfee3d13561
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,15 @@ Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de
 + __Resolutie__: Controleer de code van de douanearbeider en zorg ervoor alle asynchrone vraag synchroon wordt gemaakt gebruikend  `await`.
 
 ## Development Tool{#development-tool}
+
+### Het bestand Console.json ontbreekt in het Asset compute-project{#missing-console-json}
+
++ __Fout:__ fout: Vereiste bestanden ontbreken bij validatie (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) bij async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __Oorzaak:__ het  `console.json` bestand ontbreekt in de hoofdmap van het Asset compute-project
++ __Resolutie:__ een nieuw  `console.json` formulier downloaden voor uw Adobe I/O-project
+   1. In console.adobe.io, open het project van Adobe I/O het project van de Asset compute wordt gevormd om te gebruiken
+   1. Tik op de knop __Downloaden__ rechtsboven
+   1. Sla het gedownloade bestand op in de hoofdmap van het Asset compute-project met de bestandsnaam `console.json`
 
 ### Onjuiste YAML-inspringing in manifest.yml{#incorrect-yaml-indentation}
 
@@ -95,7 +104,6 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
    + U kunt ook het bestand dat tijdens de test is gegenereerd op `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>` valideren, controleren of het bestand juist is en gebruiken als het verwachte weergavebestand
 
 ## Foutopsporing
-
 
 ### Foutopsporing voegt geen{#debugger-does-not-attach} toe
 
