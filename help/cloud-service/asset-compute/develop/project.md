@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 676d4bfceaaec3ae8d4feb9f66294ec04e1ecd2b
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ De projecten van de asset compute zijn projecten Node.js, die gebruikend Adobe I
 >[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
 
 _Doorklikken voor het genereren van een Asset compute-project (geen audio)_
-
 
 Gebruik [Adobe I/O CLI Asset compute plugin](../set-up/development-environment.md#aio-cli) om een nieuw, leeg project van de Asset compute te produceren.
 
@@ -58,7 +57,21 @@ Van de wortel van het nieuwe gecreeerde project van de Asset compute, stel het v
 $ aio app use
 ```
 
-Verifieer de huidige werkruimtedetails correct zijn, en behoorlijk `Y` of ingaan om `console.json` te produceren. Als `.env` en `.aio` als reeds bestaand worden ontdekt, tik `x` om hun verwezenlijking over te slaan.
+Controleer of de huidige werkruimtegegevens correct zijn. Druk op `Y` of voer de gegevens in om een `console.json` te genereren. Als `.env` en `.aio` als reeds bestaand worden ontdekt, tik `x` om hun verwezenlijking over te slaan.
+
+Als u nieuwe `.env` maakt of overschrijft, voegt u ontbrekende toetsen/waarden opnieuw toe aan het nieuwe `.env`:
+
+```
+## please provide the following environment variables for the Asset Compute devtool. You can use AWS or Azure, not both:
+#ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
+#S3_BUCKET=
+#AWS_ACCESS_KEY_ID=
+#AWS_SECRET_ACCESS_KEY=
+#AWS_REGION=
+#AZURE_STORAGE_ACCOUNT=
+#AZURE_STORAGE_KEY=
+#AZURE_STORAGE_CONTAINER_NAME=
+```
 
 ## De anatomie van het project evalueren
 
