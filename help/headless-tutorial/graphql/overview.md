@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> De AEM GraphQL API voor het leveren van inhoudsfragmenten wordt begin 2021 gepubliceerd.
-> De bijbehorende documentatie is beschikbaar voor voorbeelddoeleinden.
+> De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
+> Neem contact op met de Adobe Support om de API voor uw AEM in te schakelen als een Cloud Service-programma.
 
 Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met behulp van AEM GraphQL API&#39;s en die door een externe toepassing wordt verbruikt, in een headless CMS-scenario.
 
