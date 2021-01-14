@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> De AEM GraphQL API voor het leveren van inhoudsfragmenten wordt begin 2021 gepubliceerd.
-> De bijbehorende documentatie is beschikbaar voor voorbeelddoeleinden.
+> De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
+> Neem contact op met de Adobe Support om de API voor uw AEM in te schakelen als een Cloud Service-programma.
 
 In dit hoofdstuk leert u hoe u inhoud modelleert en een schema bouwt met **Content Fragment Models**. U controleert bestaande modellen en maakt een nieuw model. U zult ook over de verschillende gegevenstypes leren die kunnen worden gebruikt om een schema als deel van het model te bepalen.
 
