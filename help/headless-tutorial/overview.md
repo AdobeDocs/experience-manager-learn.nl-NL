@@ -2,9 +2,9 @@
 title: Zelfstudies zonder koppen AEM
 description: Een verzameling zelfstudies voor het gebruik van Adobe Experience Manager als een CMS zonder koptekst.
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ Adobe Experience Manager heeft meerdere opties om eindpunten zonder kop te defin
 
 >[!CAUTION]
 >
-> De AEM GraphQL API voor het leveren van inhoudsfragmenten wordt begin 2021 gepubliceerd.
-> De bijbehorende documentatie is beschikbaar voor voorbeelddoeleinden.
+> De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
+> Neem contact op met de Adobe Support om de API voor uw AEM in te schakelen als een Cloud Service-programma.
 
 GrafiekQL APIs voor Inhoudsfragmenten AEM
 ondersteunt CMS-scenario&#39;s zonder kop waarbij externe clienttoepassingen ervaringen renderen met inhoud die in AEM wordt beheerd.
