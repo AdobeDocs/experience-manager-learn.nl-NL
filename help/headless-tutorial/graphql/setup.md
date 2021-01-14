@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1599'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> De AEM GraphQL API voor het leveren van inhoudsfragmenten wordt begin 2021 gepubliceerd.
-> De bijbehorende documentatie is beschikbaar voor voorbeelddoeleinden.
+> De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
+> Neem contact op met de Adobe Support om de API voor uw AEM in te schakelen als een Cloud Service-programma.
 
 Dit hoofdstuk biedt een snelle opstelling van een lokale milieu om een externe toepassing te zien die inhoud van AEM gebruikend AEM GraphQL APIs verbruikt. De recentere hoofdstukken in het leerprogramma zullen van deze opstelling bouwen.
 
