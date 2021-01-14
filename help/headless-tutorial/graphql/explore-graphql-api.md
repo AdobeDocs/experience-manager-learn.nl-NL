@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> De AEM GraphQL API voor het leveren van inhoudsfragmenten wordt begin 2021 gepubliceerd.
-> De bijbehorende documentatie is beschikbaar voor voorbeelddoeleinden.
+> De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
+> Neem contact op met de Adobe Support om de API voor uw AEM in te schakelen als een Cloud Service-programma.
 
 De GraphQL API van AEM verstrekt een krachtige vraagtaal om gegevens van de Fragmenten van de Inhoud aan stroomafwaartse toepassingen bloot te stellen. De modellen van het Fragment van de inhoud bepalen het gegevensschema dat door de Fragmenten van de Inhoud wordt gebruikt. Wanneer een model van het Fragment van de Inhoud wordt gecreeerd of bijgewerkt, wordt het schema vertaald en toegevoegd aan de &quot;grafiek&quot;die omhoog GraphQL API maakt.
 
