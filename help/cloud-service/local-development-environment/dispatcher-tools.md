@@ -11,9 +11,9 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: 1b4a927a68d24eeb08d0ee244e85519323482910
+source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1566'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ Naar keuze, kunnen de Dispatcher en Apache de serverconfiguraties van het Web (v
 
 + Gebruik:
    + Windows: `bin\validate src`
-   + macOS / Linux: `./bin/validate ./src`
+   + macOS / Linux: `./bin/validate.sh ./src`
 
 ## Verzending lokaal uitvoeren
 
@@ -185,6 +185,13 @@ Een of meer parameters kunnen worden doorgegeven aan `docker_run`
 >[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
 
 *Deze video gebruikt macOS voor illustratieve doeleinden. De gelijkwaardige bevelen Windows/Linux kunnen worden gebruikt om gelijkaardige resultaten te bereiken*
+
+### Toegang tot logbestanden
+
+Logbestanden van Apache-webservers en AEM Dispatcher kunnen rechtstreeks worden geopend in de Docker-container:
+
++ [De toegang tot van logboeken in de container van de Dokker](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-access-logs)
++ [De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-copy-logs)
 
 ## Wanneer moet u de Dispatcher Tools{#dispatcher-tools-version} bijwerken?
 
