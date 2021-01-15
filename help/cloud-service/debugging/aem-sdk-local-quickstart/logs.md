@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5252
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Vaak is het handig om de `error.log` die de uitvoer naar de terminal stroomt, te
 
 De logboeken van de afzender zijn output aan stdout wanneer `bin/docker_run` wordt aangehaald, nochtans kunnen de logboeken rechtstreeks tot in Docker toegang hebben bevatten.
 
-### De toegang tot van logboeken in de container van de Dokker
+### De toegang tot van logboeken in de container van de Dokker{#dispatcher-tools-access-logs}
 
 De logboekregistraties van de verzender kunnen direct tot in de container van de Dokker bij `/etc/httpd/logs` toegang hebben.
 
@@ -73,7 +73,10 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-### De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd
+_De  `<CONTAINER ID>` insteekmodule  `docker exec -it <CONTAINER ID> /bin/sh` moet worden vervangen met de doelDocker CONTAINER-id die wordt vermeld via de  `docker ps` opdracht._
+
+
+### Het kopiëren van de logboeken van de Docker aan het lokale filesystem{#dispatcher-tools-copy-logs}
 
 De logboekregistraties van de verzender kunnen uit de container van de Dokker bij `/etc/httpd/logs` aan het lokale dossiersysteem voor inspectie worden gekopieerd gebruikend uw favoriete hulpmiddel van de logboekanalyse. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan de logboeken verstrekt.
 
@@ -90,3 +93,4 @@ $ ls
     dispatcher.log          healthcheck_access_log  httpd_access.log        httpd_error.log
 ```
 
+_De  `<CONTAINER_ID>` insteekmodule  `docker cp <CONTAINER_ID>:/var/log/apache2 ./` moet worden vervangen met de doelDocker CONTAINER-id die wordt vermeld via de  `docker ps` opdracht._
