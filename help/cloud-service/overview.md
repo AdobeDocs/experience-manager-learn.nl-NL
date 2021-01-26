@@ -4,10 +4,10 @@ description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) als
 sub-product: sites, cloudbeheer, stichting, middelen
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '277'
+ht-degree: 8%
 
 ---
 
@@ -19,6 +19,10 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
 ## Wat is er nieuw?
+
+* **[Verifiëren voor AEM als Cloud Service van een externe toepassing (zelfstudie)](../headless-tutorial/authentication/overview.md)**
+
+   *Leer hoe te om op teken-gebaseerde authentificatie te gebruiken om met AEM als Cloud Service over HTTP in wisselwerking te staan*
 
 * **[Bulk importeren (video)](./migration/bulk-import.md)**
 
@@ -36,9 +40,6 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 
    *Leer hoe u IMS-gebruikers in Adobe Admin Console configureert voor toegang tot AEM*
 
-* **[Fouten opsporen in AEM als Cloud Service (zelfstudie)](./debugging/cloud-service/overview.md)**
-
-   *Onderzoek hoe te om AEM als Cloud Service te zuiveren*
 
 ## Personeelspictogrammen
 
