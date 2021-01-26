@@ -3,9 +3,9 @@ title: AEM Assets-video's en -Tutorials
 description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Assets
 sub-product: elementen, dynamische media
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '227'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 3%
 Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale middelen op AEM Platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een gegevensopslagruimte op internet. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
 
 ## Wat is er nieuw?
+
+
+* **[Elementen publiceren (video)](./sharing/publish.md)**
+
+   *Leer de in- en uiteinden van het publiceren van elementen van AEM Author to AEM Publish*
 
 * **[Watermerken (video)](./advanced/watermarks.md)**
 
@@ -32,10 +37,6 @@ Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale m
 * **[Profielen verwerken (video)](./configuring/processing-profiles.md)**
 
    *Onderzoek hoe te om de microdiensten van Activa aan vertoningsactiva aan te halen*
-
-* **[Elementenverzamelingen gebruiken (video)](./search-and-discovery/collections.md)**
-
-   *Ontdek hoe verzamelingen in AEM Assets nieuwe manieren bieden om elementen te organiseren en te ontdekken*
 
 ## Personeelspictogrammen
 
@@ -68,15 +69,15 @@ Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale m
 </td>
 <td>
    <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Dynamisch mediaoverzicht" src="./assets/overview/dynamic-media.png" />
+   <img alt="Dynamic Media - Overzicht" src="./assets/overview/dynamic-media.png" />
    </a>
    <div>
       <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Dynamisch mediaoverzicht</strong>
+      <strong>Dynamic Media - Overzicht</strong>
       </a>
    </div>
    <p>
-      <em>Media-inhoud beheren en openen met behulp van Dynamic Media</em>
+      <em>Media-inhoud beheren en openen met Dynamic Media</em>
    <p>
 </td>
 </table>
