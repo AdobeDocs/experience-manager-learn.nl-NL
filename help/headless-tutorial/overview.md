@@ -2,9 +2,9 @@
 title: Zelfstudies zonder koppen AEM
 description: Een verzameling zelfstudies voor het gebruik van Adobe Experience Manager als een CMS zonder koptekst.
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,13 @@ Een moderne API voor het leveren van inhoud is essentieel voor de efficiëntie e
 
 Om deze uitdagingen te overwinnen verstrekt GraphQL op vraag-gebaseerde API die cliënten toestaat om AEM voor slechts de inhoud te vragen het vereist, en het gebruiken van één enkele API vraag te ontvangen.
 
-* Leer hoe te om AEM APIs te gebruiken GraphQL nemen [Aan de slag met AEM APIs GraphQL leerprogramma](./graphql/overview.md)
+* Leer hoe te om AEM APIs te gebruiken GraphQL in [Aan de slag met AEM APIs GraphQL leerprogramma](./graphql/overview.md)
+
+## Zelfstudie over verificatie op basis van token
+
+AEM stelt een verscheidenheid van eindpunten van HTTP bloot die met op een headless manier, van GraphQL, AEM de Diensten van de Inhoud aan Activa HTTP API kunnen worden in wisselwerking staan. Vaak moeten deze gebruikers zonder kop zich op AEM verifiëren om toegang te krijgen tot beveiligde inhoud of handelingen. Om dit te vergemakkelijken, steunt AEM symbolisch-gebaseerde authentificatie van HTTP- verzoeken van externe toepassingen, diensten of systemen.
+
+* Leer hoe te om over HTTP voor authentiek te verklaren gebruikend toegangstokens in [voor authentiek te verklaren om als Cloud Service van een externe toepassingsleerprogramma](./authentication/overview.md) te AEM
 
 ## Zelfstudie AEM Content Services
 
@@ -39,7 +45,7 @@ AEM Content Services maakt gebruik van traditionele AEM Pagina&#39;s om eindpunt
 
 AEM Content Services biedt dezelfde inhoudsabstracties die worden gebruikt voor het ontwerpen van webpagina&#39;s in AEM Sites, om de inhoud en schema&#39;s van deze HTTP API&#39;s te definiëren. Door het gebruik van AEM Pagina&#39;s en AEM Componenten kunnen marketers snel flexibele JSON API&#39;s samenstellen en bijwerken die elke toepassing van stroom kunnen voorzien.
 
-* Leer hoe te om AEM de Diensten van de Inhoud te gebruiken [Aan de slag met de AEM Zelfstudie van de Diensten van de Inhoud](./content-services/overview.md)
+* Leer hoe te om AEM de Diensten van de Inhoud in [Aan de slag met de zelfstudie van de Diensten van de Inhoud van de AEM te gebruiken](./content-services/overview.md)
 
 ## AEM GraphQL vs. AEM Content Services
 
