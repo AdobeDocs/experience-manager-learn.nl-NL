@@ -11,7 +11,7 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: bfcc9dbb70753f985a2e47f329dbb9f43f5805e2
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Een algemene vereiste zal zijn om voor veelvoudige Fragments van de Inhoud te vr
 
    `fullName` en  `occupation` zijn eenvoudige eigenschappen. Herhaal uit het hoofdstuk [Modellen van inhoudsfragmenten definiëren](./content-fragment-models.md) dat `fullName` en `occupation` de waarden zijn die worden gebruikt bij het definiëren van de **Eigenschapnaam** van de respectievelijke velden.
 
-1. `pictureReference` en complexere velden  `biography` vertegenwoordigen. Werk de vraag met het volgende bij om gegevens over de `pictureReference` en `biography` gebieden terug te keren.
+1. `pictureReference` en complexere velden  `biographyText` vertegenwoordigen. Werk de vraag met het volgende bij om gegevens over de `pictureReference` en `biographyText` gebieden terug te keren.
 
    ```graphql
    {
@@ -82,7 +82,7 @@ Een algemene vereiste zal zijn om voor veelvoudige Fragments van de Inhoud te vr
          _path
          fullName
          occupation
-         biography {
+         biographyText {
            html
          }
          pictureReference {
@@ -97,7 +97,7 @@ Een algemene vereiste zal zijn om voor veelvoudige Fragments van de Inhoud te vr
    }
    ```
 
-   `biography` is een tekstveld met meerdere regels en met de GraphQL API kunnen we verschillende indelingen kiezen voor de resultaten zoals  `html`,  `markdown`of  `json`   `plaintext`.
+   `biographyText` is een tekstveld met meerdere regels en met de GraphQL API kunnen we verschillende indelingen kiezen voor de resultaten zoals  `html`,  `markdown`of  `json`   `plaintext`.
 
    `pictureReference` is een inhoudsverwijzing en het wordt verwacht een afbeelding te zijn, daarom wordt een ingebouwd  `ImageRef` object gebruikt. Hierdoor kunnen we aanvullende gegevens opvragen over de afbeelding waarnaar wordt verwezen, zoals `width` en `height`.
 
