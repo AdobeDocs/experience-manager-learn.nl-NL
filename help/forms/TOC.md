@@ -6,9 +6,9 @@ user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AE
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
+source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '938'
 ht-degree: 1%
 
 ---
@@ -125,6 +125,18 @@ ht-degree: 1%
    + [PDF-formulier converteren naar adaptief formulier](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [XDP-sjablonen gebruiken met Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
++ Meerdere Forms ondertekenen{#sign-multiple-documents}
+   + [Inleiding](sign-multiple-documents/introduction.md)
+   + [Gegevensbron configureren](sign-multiple-documents/configure-data-source.md)
+   + [OSGi-service maken](sign-multiple-documents/create-osgi-service.md)
+   + [Hoofdwerkstroom maken](sign-multiple-documents/create-main-workflow.md)
+   + [Workflow Handtekeningstatus bijwerken](sign-multiple-documents/update-signature-status.md)
+   + [Samenvattingscomponent aanpassen](sign-multiple-documents/customize-summary-component.md)
+   + [Clientbibliotheek maken](sign-multiple-documents/create-client-lib.md)
+   + [Formuliersjabloon maken](sign-multiple-documents/create-af-template.md)
+   + [Oorspronkelijk formulier maken](sign-multiple-documents/create-initial-form.md)
+   + [Forms maken voor ondertekening](sign-multiple-documents/create-forms-for-signing.md)
+   + [De oplossing testen](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Variabelen in AEM Workflow{#variables-aem-workflow}
    + [Inleiding - Variabelen in workflow](variables-aem-workflow/introduction.md)
    + [XML-variabelen](variables-aem-workflow/part1.md)
