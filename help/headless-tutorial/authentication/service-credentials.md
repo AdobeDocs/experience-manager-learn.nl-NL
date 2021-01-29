@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330519.jpg
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1824'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,11 @@ Integraties met AEM als Cloud Service moeten veilig kunnen worden geverifieerd o
 
 De Referenties van de dienst kunnen gelijkaardig [Lokale Tokens van de Toegang van de Ontwikkeling ](./local-development-access-token.md) verschijnen maar zijn verschillend op een paar zeer belangrijke manieren:
 
-+ De Verantwoordelijkheden van de dienst zijn _niet_ toegangstokens, eerder zijn zij geloofsbrieven die worden gebruikt om toegangstokens te verkrijgen.
-+ De Verantwoordelijkheden van de dienst zijn permanent, en veranderen niet tenzij ingetrokken, terwijl de Tokens van de Toegang van de Lokale Ontwikkeling dagelijks verlopen.
-+ De Verantwoordelijkheden van de dienst voor een AEM als milieukaart van de Cloud Service aan één enkele AEM gebruiker, terwijl de Lokale Tokens van de Toegang van de Ontwikkeling voor authentiek verklaren als AEM gebruiker die het toegangstoken produceerde.
++ Servicedetecties zijn _geen_ toegangstokens, maar zijn referenties die worden gebruikt om _access tokens te verkrijgen_.
++ De Verantwoordelijkheden van de dienst zijn duurder (verlopen om de 365 dagen), en veranderen niet tenzij ingetrokken, terwijl de Lokale Tokens van de Toegang van de Ontwikkeling dagelijks verlopen.
++ De Verantwoordelijkheden van de dienst voor een AEM als milieukaart van de Cloud Service aan één enkele AEM technische rekeningsgebruiker, terwijl de Lokale Tokens van de Toegang van de Ontwikkeling voor authentiek verklaren als AEM gebruiker die het toegangstoken produceerde.
+
+Zowel dienen de Verantwoordelijkheden van de Dienst en de toegangstoken zij produceren, evenals de Tokens van de Toegang van de Lokale Ontwikkeling geheim worden gehouden, aangezien alle drie kunnen worden gebruikt om toegang tot hun respectieve AEM als Cloud Service milieu&#39;s te verkrijgen
 
 ## Servicekredieten genereren
 
@@ -39,7 +41,7 @@ Het genereren van servicekredieten wordt in twee stappen opgedeeld:
 
 ### Initialisatie van servicekredieten
 
-De Verantwoordelijkheden van de dienst, in tegenstelling tot de Tokens van de Toegang van de Lokale Ontwikkeling, vereisen eenmalig initialisering door uw beheerder van Adobe Org IMS alvorens zij kunnen worden gedownload.
+De Verantwoordelijkheden van de dienst, in tegenstelling tot de Tokens van de Toegang van de Lokale Ontwikkeling, vereisen een _eenmalige initialisering_ door uw beheerder van Adobe Org IMS alvorens zij kunnen worden gedownload.
 
 ![Servicekredieten initialiseren](assets/service-credentials/initialize-service-credentials.png)
 
@@ -55,7 +57,7 @@ __Dit is een eenmalige initialisatie per AEM als een Cloud Service-omgeving__
 
 ![AEM Developer Console - Integratie - Inschrijvingen voor service](./assets/service-credentials/developer-console.png)
 
-Zodra de AEM als Referentials van de Dienst van het milieu van de Cloud Service zijn geïnitialiseerd, kunnen andere gebruikers hen downloaden.
+Zodra de AEM als de Referentials van de Dienst van het milieu van de Cloud Service zijn geïnitialiseerd, kunnen andere AEM ontwikkelaars in uw Adobe IMS Org hen downloaden.
 
 ### Referenties van service downloaden
 
@@ -71,7 +73,7 @@ Voor het downloaden van de servicekredieten gelden dezelfde stappen als voor de 
 1. Tik op de tab __Integraties__
 1. Tik __Servicedesentials ophalen__-knop
 1. Tik op de downloadknop in de linkerbovenhoek om het JSON-bestand met de waarde Servicekredieten te downloaden en het bestand op een veilige locatie op te slaan.
-   + _Als deze Service Credentials aangetast zijn, neemt u onmiddellijk contact op met de Adobe Support om deze gegevens in te trekken_
+   + _Als de Credentials van de Dienst worden gecompromitteerd, contacteer onmiddellijk de Steun van Adobe om hen te hebben herroepen_
 
 ## De servicereferenties installeren
 
@@ -137,38 +139,38 @@ Deze voorbeeldtoepassing is gebaseerd op Node.js, dus is het beter om [@adobe/jw
 
 1. Werk `getAccessToken(..)` bij om de JSON dossierinhoud te inspecteren en te bepalen als het een Lokaal Token van de Toegang van de Ontwikkeling of de Referenties van de Dienst vertegenwoordigt. Dit kan gemakkelijk worden bereikt door het bestaan van het `.accessToken` bezit te controleren, dat slechts voor de Token JSON van de Toegang van de Lokale Ontwikkeling bestaat.
 
-Als Service Credentials is opgegeven, genereert de toepassing een JWT en ruilt deze met Adobe IMS voor een toegangstoken. We gebruiken de [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) functie die een JWT genereert en deze in één functieaanroep ruilt voor een toegangstoken.  `auth(...)`  De parameters voor `auth(..)` zijn een [JSON-object dat bestaat uit specifieke informatie](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) die beschikbaar is via de Service Credentials JSON, zoals hieronder in de code wordt beschreven.
+   Als Service Credentials is opgegeven, genereert de toepassing een JWT en ruilt deze met Adobe IMS voor een toegangstoken. We gebruiken de [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) functie die een JWT genereert en deze in één functieaanroep ruilt voor een toegangstoken.  `auth(...)`  De parameters voor `auth(..)` zijn een [JSON-object dat bestaat uit specifieke informatie](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) die beschikbaar is via de Service Credentials JSON, zoals hieronder in de code wordt beschreven.
 
-```javascript
- async function getAccessToken(developerConsoleCredentials) {
+   ```javascript
+    async function getAccessToken(developerConsoleCredentials) {
+   
+        if (developerConsoleCredentials.accessToken) {
+            // This is a Local Development access token
+            return developerConsoleCredentials.accessToken;
+        } else {
+            // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
+            let serviceCredentials = developerConsoleCredentials.integration;
+   
+            // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
+            // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
+            let { access_token } = await auth({
+                clientId: serviceCredentials.technicalAccount.clientId, // Client Id
+                technicalAccountId: serviceCredentials.id,              // Technical Account Id
+                orgId: serviceCredentials.org,                          // Adobe IMS Org Id
+                clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
+                privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
+                metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
+                ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
+            });
+   
+            return access_token;
+        }
+    }
+   ```
 
-     if (developerConsoleCredentials.accessToken) {
-         // This is a Local Development access token
-         return developerConsoleCredentials.accessToken;
-     } else {
-         // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
-         let serviceCredentials = developerConsoleCredentials.integration;
+   Afhankelijk van welk JSON-bestand (het Local Development Access Token JSON of de Service Credentials JSON) wordt doorgegeven via die opdrachtregelparameter `file`, leidt de toepassing een toegangstoken af.
 
-         // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
-         // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
-         let { access_token } = await auth({
-             clientId: serviceCredentials.technicalAccount.clientId, // Client Id
-             technicalAccountId: serviceCredentials.id,              // Technical Account Id
-             orgId: serviceCredentials.org,                          // Adobe IMS Org Id
-             clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
-             privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
-             metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
-             ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
-         });
-
-         return access_token;
-     }
- }
-```
-
-    Afhankelijk van welk JSON-bestand (de Local Development Access Token JSON of de Service Credentials JSON) wordt doorgegeven via de opdrachtregelparameter &#39;file`, leidt de toepassing een toegangstoken af.
-    
-    Herinner me, dat terwijl de Referenties van de Dienst niet verlopen, JWT en het overeenkomstige toegangstoken doen, en 12 uren van de uitgifte moeten worden verfrist. Dit kan door ` te gebruiken verfrist_token ` [verstrekt door Adobe IMS] (https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
+   Herinner me, dat terwijl de Referenties van de Dienst niet verlopen, JWT en het overeenkomstige toegangstoken doen, en moeten worden verfrist alvorens zij verlopen. Dit kan worden gedaan door `refresh_token` [te gebruiken die door Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens) wordt verstrekt.
 
 1. Als deze wijzigingen zijn aangebracht en de Service Credentials JSON is gedownload van de AEM Developer Console (en voor de eenvoud is deze opgeslagen als `service_token.json` dezelfde map als deze `index.js`), voert u de toepassing uit waarbij de opdrachtregelparameter `file` wordt vervangen door `service_token.json` en werkt u `propertyValue` bij naar een nieuwe waarde zodat de effecten zichtbaar zijn in AEM.
 
@@ -241,11 +243,6 @@ De output aan de terminal zal als kijken:
 1. Controleer de waarde van de bijgewerkte eigenschap, bijvoorbeeld __Copyright__ die is toegewezen aan de bijgewerkte JCR-eigenschap `metadata/dc:rights`, die nu de waarde weerspiegelt die is opgegeven in de parameter `propertyValue`, bijvoorbeeld __Beperkt gebruik WKND__
 
 ![Update van metagegevens voor beperkt gebruik van WKND](./assets/service-credentials/asset-metadata.png)
-
-## Intrekking van servicekredieten
-
-
-
 
 ## Gefeliciteerd!
 
