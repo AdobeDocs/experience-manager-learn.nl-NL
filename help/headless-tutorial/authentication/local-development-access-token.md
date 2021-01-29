@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330477.jpg
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Ontwikkelaars die integraties bouwen die programmatische toegang tot AEM als Clo
 
 ![Token voor lokale ontwikkelingstoegang ophalen](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-Het token Local Development Access biedt toegang tot de services AEM Author and Publish als de gebruiker die het token heeft gegenereerd, samen met zijn machtigingen. Hoewel dit een ontwikkelingstoken is, deel deze token niet.
+Het token Local Development Access biedt toegang tot de services AEM Author and Publish als de gebruiker die het token heeft gegenereerd, samen met zijn machtigingen. Ondanks dat dit een ontwikkelingstoken is, deel dit teken niet, of opslag in broncontrole.
 
 1. In [Adobe AdminConsole](https://adminconsole.adobe.com/) zorg ervoor u, de ontwikkelaar, een lid van bent:
    + __Cloud Manager -__ DeveloperIMS-productprofiel (verleent toegang tot AEM Developer Console)
@@ -44,7 +44,7 @@ Het token Local Development Access biedt toegang tot de services AEM Author and 
 
 ![AEM Developer Console - Integratie - Token voor lokale ontwikkeling ophalen](./assets/local-development-access-token/developer-console.png)
 
-## Download het token Local Development Access{#download-local-development-access-token}
+## Gebruikt het Lokale Token van de Toegang van de Ontwikkeling{#use-local-development-access-token}
 
 ![Token voor toegang tot lokale ontwikkeling - externe toepassing](assets/local-development-access-token/local-development-access-token-external-application.png)
 
@@ -55,11 +55,11 @@ Het token Local Development Access biedt toegang tot de services AEM Author and 
 1. De externe toepassing construeert HTTP- verzoeken om als Cloud Service te AEM, toevoegend het Lokale Token van de Toegang van de Ontwikkeling als teken van de Drager aan de kopbal van de Vergunning van HTTP- verzoeken
 1. AEM als Cloud Service ontvangt het HTTP- verzoek, verklaart het verzoek voor authentiek, en voert het werk uit dat door het HTTP- verzoek wordt gevraagd, en keert een reactie van HTTP terug naar de Externe Toepassing
 
-### De externe toepassing
+### De externe voorbeeldtoepassing
 
 We maken een eenvoudige externe JavaScript-toepassing om te illustreren hoe AEM via HTTPS via programmacode via HTTPS via het toegangstoken voor lokale ontwikkelaars kan worden benaderd. Dit illustreert hoe _om het even welk_ toepassing of systeem dat buiten AEM, ongeacht kader of taal loopt, het toegangstoken kan gebruiken programmatically voor authentiek verklaren aan, en toegang, AEM als Cloud Service. In [volgende sectie](./service-credentials.md) zullen wij deze toepassingscode bijwerken om de benadering te steunen voor het produceren van een teken voor productiegebruik.
 
-Deze toepassing wordt uitgevoerd vanaf de opdrachtregel en werkt metagegevens AEM elementen bij met behulp van AEM Assets HTTP-API&#39;s. Hierbij wordt de volgende stroom gebruikt:
+Deze voorbeeldtoepassing wordt uitgevoerd vanaf de opdrachtregel en werkt metagegevens AEM elementen bij met behulp van AEM Assets HTTP-API&#39;s. Hierbij wordt de volgende stroom gebruikt:
 
 1. Leest in parameters van de bevellijn (`getCommandLineParams()`)
 1. Verkrijgt het toegangstoken wordt gebruikt om aan AEM als Cloud Service voor authentiek te verklaren (`getAccessToken(...)`)
@@ -208,11 +208,11 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
    }
    ```
 
-   Controleer de `fetch(..)` aanroepen in `listAssetsByFolder(...)` en `updateMetadata(...)`, en merk `headers` de `Authorization` HTTP- verzoekkopbal met een waarde van `Bearer <ACCESS TOKEN>` bepalen. Zo wordt de HTTP-aanvraag die afkomstig is van de externe toepassing geverifieerd voor AEM als Cloud Service.
+   Controleer de `fetch(..)` aanroepen in `listAssetsByFolder(...)` en `updateMetadata(...)`, en merk `headers` de `Authorization` HTTP- verzoekkopbal met een waarde van `Bearer ACCESS_TOKEN` bepalen. Zo wordt de HTTP-aanvraag die afkomstig is van de externe toepassing geverifieerd voor AEM als Cloud Service.
 
    ```javascript
    ...
-   return fetch(`${params.aem}${ASSETS_HTTP_API}${folder}.json?configid=ims`, {
+   return fetch(`${params.aem}${ASSETS_HTTP_API}${folder}.json`, {
                method: 'get',
                headers: { 
                    'Content-Type': 'application/json',
@@ -267,4 +267,6 @@ Controleer of de metagegevens zijn bijgewerkt door u aan te melden bij de AEM al
 
 ## Volgende stappen
 
-Nu wij programmatically AEM als Cloud Service gebruikend het lokale ontwikkelingstoken hebben betreden, moeten wij de code aan bijwerken.
+Nu wij programmatically AEM als Cloud Service gebruikend het lokale ontwikkelingstoken hebben betreden, moeten wij de toepassing bijwerken om het gebruiken van de Verantwoordelijkheden van de Dienst te behandelen, zodat kan deze toepassing in een productiecontext worden gebruikt.
+
++ [Hoe te om de Referenties van de Dienst te gebruiken](./service-credentials.md)
