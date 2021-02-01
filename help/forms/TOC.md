@@ -6,9 +6,9 @@ user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AE
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 48060b4d8c4b502e0c099ae8081695f97b423037
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '943'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 1%
 + [Overzicht](overview.md)
 + [Aanbevolen procedures](adaptive-forms/best-practices-adaptive-forms.md)
 + [OKTA-verificatie instellen met AEM-auteur](adaptive-forms/single-sign-on-with-okta.md)
++ [Maak uw eerste OSGi-bundel](adaptive-forms/create-your-first-osgi-bundle.md)
 + Uw eerste adaptieve formulier maken {#creating-your-first-adaptive-form}
    + [Inleiding en installatie](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Adaptief formuliersjabloon maken](creating-your-first-adaptive-form/create-adaptive-form-template.md)
