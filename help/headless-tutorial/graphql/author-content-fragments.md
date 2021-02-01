@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
 
 # Inhoudsfragment {#authoring-content-fragments} ontwerpen
-
->[!CAUTION]
->
-> De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
-> Neem contact op met de Adobe Support om de API voor uw AEM in te schakelen als een Cloud Service-programma.
 
 In dit hoofdstuk maakt en bewerkt u een nieuw inhoudsfragment op basis van het [net gedefinieerde Contribute-inhoudsfragmentmodel](./content-fragment-models.md). U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
 
