@@ -1,5 +1,6 @@
 ---
 title: PDF-formulier converteren naar adaptief formulier
+description: AEM Forms Automatede form conversion Service, aangedreven door Adobe Sensei, zet uw PDF forms automatisch om in apparaatvriendelijke en responsieve adaptieve formulieren. Of u nu niet-interactieve PDF forms, Acro Forms of op XFA gebaseerde PDF forms gebruikt, de service Automatede form conversion kan deze formulieren eenvoudig converteren naar adaptieve formulieren.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,9 +9,9 @@ activity: implement
 thumbnail: 39495.jpg
 kt: 6115
 translation-type: tm+mt
-source-git-commit: f262cca1cc23c12e61595a0cc9e3f5020c25dcb5
+source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
