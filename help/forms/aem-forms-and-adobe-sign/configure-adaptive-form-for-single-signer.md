@@ -1,5 +1,6 @@
 ---
 title: Adaptief formulier met één ondertekenaar
+description: Adaptief formulier met één ondertekenaar. In de video worden de verschillende stappen uitgelegd die nodig zijn om een adaptief formulier te configureren met één ondertekenaar.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,9 +9,9 @@ activity: implement
 thumbnail: 39475.jpg
 kt: 6103
 translation-type: tm+mt
-source-git-commit: f262cca1cc23c12e61595a0cc9e3f5020c25dcb5
+source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '61'
 ht-degree: 0%
 
 ---
