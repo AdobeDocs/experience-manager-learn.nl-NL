@@ -1,5 +1,6 @@
 ---
 title: automatede form conversion Service
+description: automatede form conversion Service. In dit artikel wordt beschreven hoe een AEM beheerder de service Automatede form conversion kan configureren om de conversie van zijn PDF forms naar adaptieve formulieren te automatiseren. Deze hulp is voor IT en AEM beheerders bij uw organisatie.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,9 +9,9 @@ activity: implement
 thumbnail: 39493.jpg
 kt: 6114
 translation-type: tm+mt
-source-git-commit: f262cca1cc23c12e61595a0cc9e3f5020c25dcb5
+source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
