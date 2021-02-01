@@ -1,5 +1,6 @@
 ---
 title: Documenten ter ondertekening verzenden met behulp van workflow
+description: Documenten ter ondertekening verzenden met behulp van workflow. Maak een AEM workflow met de component Sign document. Gebruik automatisch gegenereerde DoR om handtekeningen te verzenden met de component sign. In de video worden de verschillende stappen uitgelegd die nodig zijn om een effectieve workflow te maken voor het verzenden van documenten ter ondertekening.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,9 +9,9 @@ activity: implement
 thumbnail: 38182.jpg
 kt: 6035
 translation-type: tm+mt
-source-git-commit: 0b48ae445f4b32deeec08bcb68f805bf19992c9e
+source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '90'
 ht-degree: 0%
 
 ---
