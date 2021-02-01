@@ -10,10 +10,10 @@ user-guide-description: Een meerdelige zelfstudie voor ontwikkelaars die nog nie
 breadcrumb-title: AEM Sites WKND Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 3%
 # Aan de slag met AEM Sites - WKND-zelfstudie {#getting-started-wknd-tutorial-develop}
 
 + [Overzicht van WKND-zelfstudie](overview.md)
-+ [Projectinstelling](project-setup.md)
-+ [Basisbeginselen van componenten](component-basics.md)
-+ [Pagina&#39;s en sjablonen](pages-templates.md)
-+ [Client-Side bibliotheken](client-side-libraries.md)
-+ [Stijlsysteem](style-system.md)
-+ [Aangepaste component](custom-component.md)
-+ [Eenheid testen](unit-testing.md)
++ [1 - Projectinstelling](project-setup.md)
++ [2 - Basisbeginselen van componenten](component-basics.md)
++ [3 - Pagina&#39;s en sjablonen](pages-templates.md)
++ [4 - Client-Side bibliotheken](client-side-libraries.md)
++ [5 - Stijlsysteem](style-system.md)
++ [6 - Aangepaste component](custom-component.md)
++ [7 - Eenheid testen](unit-testing.md)
