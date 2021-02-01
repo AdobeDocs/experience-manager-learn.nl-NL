@@ -12,9 +12,9 @@ mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
 translation-type: tm+mt
-source-git-commit: 69c1767098cc9da8ec0ae2bd83d25417d330f393
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '873'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Het doel van deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe hij 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-De zelfstudie is ontworpen om te werken met **AEM als een Cloud Service** en is achterwaarts compatibel met **AEM 6.5+** en **AEM 6.4.2+**. De site wordt geïmplementeerd met:
+De zelfstudie is ontworpen om te werken met **AEM als een Cloud Service** en is achterwaarts compatibel met **AEM 6.5.5.0+** en **AEM 6.4.8.1+**. De site wordt geïmplementeerd met:
 
 * [Maven AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
@@ -40,6 +40,27 @@ De zelfstudie is ontworpen om te werken met **AEM als een Cloud Service** en is 
 * [Stijlsysteem](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *Schat 1-2 uur om elk onderdeel van de zelfstudie te doorlopen.*
+
+## Lokale ontwikkelomgeving {#local-dev-environment}
+
+Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Schermafbeeldingen en video worden vastgelegd met behulp van de AEM als Cloud Service SDK die wordt uitgevoerd in een Mac OS-omgeving met [Visual Studio Code](https://code.visualstudio.com/) als IDE. Opdrachten en code moeten onafhankelijk zijn van het lokale besturingssysteem, tenzij anders aangegeven.
+
+### Vereiste software
+
+Het volgende moet lokaal worden geïnstalleerd:
+
+* Lokale AEM **Auteur** instantie (Cloud Service SDK, 6.5.5+ of 6.4.8.1+)
+* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+* [Apache Maven](https://maven.apache.org/)  (3.3.9 of hoger)
+* [Node.js](https://nodejs.org/en/) (LTS - langdurige ondersteuning)
+* [npm 6+](https://www.npmjs.com/)
+* [Git](https://git-scm.com/)
+
+>[!NOTE]
+>
+> **Nieuw bij AEM als Cloud Service?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+>
+> **Nieuw bij AEM 6.5?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## Informatie over de zelfstudie {#about-tutorial}
 
@@ -67,31 +88,6 @@ Bovendien heeft elk deel van het leerprogramma zijn eigen tak in GitHub. Een geb
 >[!NOTE]
 >
 > Als u met de vorige versie van dit leerprogramma werkte, kunt u [oplossingspakketten](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) en [code](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) op GitHub nog vinden.
-
-## Lokale ontwikkelomgeving {#local-dev-environment}
-
-Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Schermafbeeldingen en video worden vastgelegd met de AEM als Cloud Service-SDK die wordt uitgevoerd in een Mac OS-omgeving. Opdrachten en code moeten onafhankelijk zijn van het lokale besturingssysteem, tenzij anders aangegeven.
-
-**Nieuw bij AEM als Cloud Service?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
-
-**Nieuw bij AEM 6.5?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
-
-### Vereiste software
-
-Het volgende moet lokaal worden geïnstalleerd:
-
-* [AEM als Cloud Service ](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) SDKor  [AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/technical-requirements.html) of  [AEM 6.4 + SP2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
-* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)  (alleen AEM 6.5+)
-* [Apache Maven](https://maven.apache.org/)  (3.3.9 of hoger)
-* [Node.js v10+](https://nodejs.org/en/)
-* [npm 6+](https://www.npmjs.com/)
-* [Git](https://git-scm.com/)
-
-### Geïntegreerde ontwikkelomgeving (IDE)
-
-Deze zelfstudie gebruikt [Eclipse](https://www.eclipse.org/) met [AEM de Insteekmodule van het Hulpmiddel van de Ontwikkelaar](https://eclipse.adobe.com/aem/dev-tools/) als winde, nochtans om het even welke winde die steun voor Java en Gemaakt projecten heeft kan worden gebruikt. Het vertrouwen op specifieke eigenschappen van winde in dit leerprogramma is minimaal.
-
-Voor gedetailleerde stappen voor het gebruiken van Verduistering of andere IDEs zoals [Visual Studio Code](https://code.visualstudio.com/) of [IntelliJ](https://www.jetbrains.com/idea/), [controleer de volgende gids](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## Referentiesite {#reference-site}
 
