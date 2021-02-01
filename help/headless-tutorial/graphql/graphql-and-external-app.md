@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1397'
 ht-degree: 0%
 
 ---
 
 
 # Query AEM uitvoeren met GraphQL van een externe toepassing
-
->[!CAUTION]
->
-> De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
-> Neem contact op met de Adobe Support om de API voor uw AEM in te schakelen als een Cloud Service-programma.
 
 In dit hoofdstuk, onderzoeken wij hoe AEM APIs GraphQL kan worden gebruikt om de ervaring in een externe toepassing te drijven.
 
