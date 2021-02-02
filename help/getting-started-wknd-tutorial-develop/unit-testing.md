@@ -206,9 +206,9 @@ Eenheidstests wijzen doorgaans 1-op-1 toe met Java-klassen. In dit hoofdstuk, zu
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-2. U kunt echter ook het testbestand onderscheiden    Het achtervoegsel `Test` in het eenheidstestbestand, `BylineImplTest.java` is een conventie die ons in staat stelt
-1. Identificeer het gemakkelijk als testdossier _for_ `BylineImpl.java`
-2. U kunt echter ook het testbestand _onderscheiden van_ de klasse die wordt getest, `BylineImpl.java`
+   U kunt echter ook het testbestand onderscheiden    Het achtervoegsel `Test` in het eenheidstestbestand, `BylineImplTest.java` is een conventie die ons in staat stelt
+      1. Identificeer het gemakkelijk als testdossier _for_ `BylineImpl.java`
+      2. U kunt echter ook het testbestand _onderscheiden van_ de klasse die wordt getest, `BylineImpl.java`
 
 ## BylineImplTest.java {#reviewing-bylineimpltest-java} reviseren
 
