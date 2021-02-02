@@ -5,9 +5,9 @@ breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
 translation-type: tm+mt
-source-git-commit: 81c704240f163ccd151a61643f589f825a288705
+source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '270'
 ht-degree: 20%
 
 ---
@@ -16,24 +16,48 @@ ht-degree: 20%
 # Tutorials voor Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Overzicht](./overview.md)
++ Inleiding tot AEM as a Cloud Service{#introduction}
+   + [Wat is AEM als Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [Evolutie](./introduction/evolution.md)
+   + [Architectuur](./introduction/architecture.md)
+   + [Cloud Manager](./introduction/cloud-manager.md)
 + Onderliggende technologie {#underlying-technology}
-   + [Inleiding tot AEM architectuur](./underlying-technology/introduction-architecture.md)
-   + [Inleiding tot OSGi](./underlying-technology/introduction-osgi.md)
-   + [Inleiding tot Java Content Repository](./underlying-technology/introduction-jcr.md)
-   + [Inleiding tot verkoop](./underlying-technology/introduction-sling.md)
-   + [Inleiding tot auteur- en publicatiereeks](./underlying-technology/introduction-author-publish.md)
-   + [Inleiding tot Dispatcher](./underlying-technology/introduction-dispatcher.md)
+   + [AEM architectuur](./underlying-technology/introduction-architecture.md)
+   + [OSGi](./underlying-technology/introduction-osgi.md)
+   + [Java Content Repository](./underlying-technology/introduction-jcr.md)
+   + [Sling](./underlying-technology/introduction-sling.md)
+   + [Auteur- en publicatieservices](./underlying-technology/introduction-author-publish.md)
+   + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Cloud Manager {#cloud-manager}
    + [Programma&#39;s](./cloud-manager/programs.md)
    + [Omgevingen](./cloud-manager/environments.md)
    + [Productiepijpleiding CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Niet-productiepijpleiding CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activiteit](./cloud-manager/activity.md)
+   + OPS ontwikkelen{#devops}
+      + [Code implementeren](./cloud-manager/devops/deploy-code.md)
+      + [Projecten samenvoegen](./cloud-manager/devops/merge-projects.md)
+      + [Pijpleidingen configureren](./cloud-manager/devops/configure-pipelines.md)
+      + [Continue integratie](./cloud-manager/devops/continuous-integration.md)
+      + [Testresultaten analyseren](./cloud-manager/devops/analyze-test-results.md)
+      + [Dispatcher Configurations](./cloud-manager/devops/dispatcher-configurations.md)
+      + [Cloud Manager-API&#39;s](./cloud-manager/devops/cloud-manager-apis.md)
 + Lokale ontwikkelomgeving ingesteld {#local-development-environment-set-up}
    + [Overzicht](./local-development-environment/overview.md)
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
    + [Lokale AEM](./local-development-environment/aem-runtime.md)
    + [Lokale verzendprogramma&#39;s](./local-development-environment/dispatcher-tools.md)
++ Ontwikkeling{#developing}
+   + Grondbeginselen van ontwikkeling{#basics}
+      + [AEM SDK](./developing/basics/aem-sdk.md)
+      + [Lokale ontwikkelomgeving](./developing/basics/local-development-environment.md)
+      + [Projectarchetype AEM](./developing/basics/aem-project-archetype.md)
+      + [AEM-projectstructuur](./developing/basics/project-structure.md)
+      + [Mutable versus Immuable Content](./developing/basics/mutable-immutable.md)
+      + [Structuurpakket opslagplaats](./developing/basics/repository-structure-package.md)
+      + [Inhoud publiceren](./developing/basics/content-publishing.md)
+      + [OSGi-configuraties](./developing/basics/osgi-configurations.md)
+      + [Migratie van Dispatcher Configuration](./developing/basics/dispatcher-configuration.md)
 + Foutopsporing AEM{#debugging}
    + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
       + [Overzicht](./debugging/aem-sdk-local-quickstart/overview.md)
