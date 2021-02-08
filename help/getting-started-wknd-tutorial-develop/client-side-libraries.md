@@ -10,9 +10,9 @@ audience: developer
 kt: 4083
 thumbnail: 30359.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3291'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Clientbibliotheken hebben enkele beperkingen wat betreft de ondersteuning van ta
 
    Elk bestand wordt toegewezen aan een kerncomponent, zoals de [Accordeoncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). Elke Core-component is gebouwd met de notatie [Element modifier](https://getbem.com/) of BEM blokkeren om het eenvoudiger te maken om specifieke CSS-klassen met stijlregels als doel in te stellen. De bestanden onder `/components` zijn door het AEM Projectarchetype met de verschillende BEM-regels voor elke component uitgestald.
 
-1. Download de WKND-basisstijlen **[wknd-base-styles-src.zip](./assets/client-side-libraries/wknd-base-styles-src.zip)** en **unzip** het bestand.
+1. Download de WKND-basisstijlen **[wknd-base-styles-src.zip](./assets/client-side-libraries/wknd-base-styles-srcv2.zip)** en **unzip** het bestand.
 
    ![WKND-basisstijlen](assets/client-side-libraries/wknd-base-styles-unzipped.png)
 
@@ -307,6 +307,10 @@ Daarna, herzien hoe de clientlibs in de Pagina van de AEM van verwijzingen worde
    ...
    </body>
    ```
+
+   >[!NOTE]
+   >
+   > Als deze op 6.5/6.4 volgen, worden de bibliotheken aan de clientzijde niet automatisch geminificeerd. Raadpleeg de documentatie bij [HTML-bibliotheekbeheer om mijnopruiming in te schakelen (aanbevolen)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
 
    >[!WARNING]
    >
