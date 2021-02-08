@@ -13,9 +13,9 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '3072'
 ht-degree: 0%
 
 ---
@@ -94,6 +94,66 @@ Maak vervolgens een nieuwe sjabloon in AEM die overeenkomt met de structuur van 
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
+Stappen op hoog niveau voor de onderstaande video:
+
+### Structuurconfiguraties
+
+1. Maak een nieuwe sjabloon met de naam **Paginasjabloontype**, **Artikelpagina**.
+1. Schakel over naar de modus **Structuur**.
+1. Voeg een **Ervaar Fragment** component toe om als **Kopbal** bij de bovenkant van het malplaatje te dienst te doen.
+   * Vorm de component om aan `/content/experience-fragments/wknd/us/en/site/header/master` te richten.
+   * Stel het beleid in op **Paginakop** en zorg ervoor dat **Standaardelement** is ingesteld op `header`. Het `header`element zal met CSS in het volgende hoofdstuk worden gericht.
+1. Voeg een **Ervaar Fragment** component toe om als **Voettekst** bij de bodem van het malplaatje te dienst te doen.
+   * Vorm de component om aan `/content/experience-fragments/wknd/us/en/site/footer/master` te richten.
+   * Stel het beleid in op **Paginavoettekst** en zorg ervoor dat **Standaardelement** is ingesteld op `footer`. Het `footer` element zal met CSS in het volgende hoofdstuk worden gericht.
+1. Vergrendel de **main** container die was opgenomen toen de sjabloon voor het eerst werd gemaakt.
+   * Stel het beleid in op **Page Main** en zorg ervoor dat **Default Element** is ingesteld op `main`. Het `main` element zal met CSS in het volgende hoofdstuk worden gericht.
+1. Voeg een **Image** component aan **main** container toe.
+   * Ontgrendel de **component Image**.
+1. Voeg een **Breadcrumb**-component onder de **Image**-component in de hoofdcontainer toe.
+   * Maak een nieuw beleid voor de **Breadcrumb**-component met de naam **Article Page - Breadcrumb**. Stel **Navigatiebeginniveau** in op **4**.
+1. Voeg een **Container** component onder de **Breadcrumb** component en binnen de **main** container toe. Dit zal als **Inhoudscontainer** voor het malplaatje dienst doen.
+   * Ontgrendel de container **Content**.
+   * Stel het beleid in op **Pagina-inhoud**.
+1. Voeg een andere **Container** component onder **Inhoudscontainer** toe. Dit zal als **Zijspoor** container voor het malplaatje dienst doen.
+   * Ontgrendel de **Zijspoor** container.
+   * Maak een nieuw beleid met de naam **Article Page - Side Rail**.
+   * Configureer **Toegestane componenten** onder **WKND-siteproject - Inhoud** om op te nemen: **Button**, **Download**, **Image**, **List**, **Scheidingsteken**, **Sociale media delen**, &lt;a1 6/>Tekst **en** Titel **.**
+1. Werk het beleid van de container van de Wortel van de Pagina bij. Dit is de buitenste container op de sjabloon. Stel het beleid in op **Basispagina**.
+   * Stel onder **Containerinstellingen** de **Layout** in op **Responsief raster**.
+1. Modus Lay-out inschakelen voor de **Inhoudscontainer**. Sleep de greep van rechts naar links en maak de container kleiner tot 8 kolommen breed.
+1. Modus Lay-out inschakelen voor de **container voor zijspoor**. Sleep de greep van rechts naar links en krimpt de container in tot 4 kolommen breed. Vervolgens sleept u de linkergreep van links naar rechts 1 kolom om de container 3 kolommen breed te maken en een gat van 1 kolom tussen de **Inhoudscontainer** te laten.
+1. Open de mobiele emulator en schakel over naar een mobiel onderbrekingspunt. Schakel de lay-outmodus opnieuw in en maak de **Content container** en de **Side Rail container** de volledige breedte van de pagina. Hierdoor worden de containers verticaal in het mobiele breekpunt gestapeld.
+1. Werk het beleid van **Text** component in **Inhoudscontainer** bij.
+   * Stel het beleid in op **Inhoudstekst**.
+   * Selecteer **Insteekmodules** > **Alineastijlen**, schakel **Alineastijlen inschakelen** in en controleer of **Offerteblok** is ingeschakeld.
+
+### Aanvankelijke inhoudsconfiguraties
+
+1. Schakel over naar de modus **Eerste inhoud**.
+1. Voeg een **Title** component aan **Content container** toe. Dit is de titel van artikel. Als de pagina leeg blijft, wordt automatisch de titel van de huidige pagina weergegeven.
+1. Voeg een tweede **Title** component onder de eerste component van de Titel toe.
+   * Configureer de component met de tekst: &quot;Door auteur&quot;. Dit wordt een tijdelijke aanduiding voor tekst.
+   * Stel het type in op `H4`.
+1. Voeg een **Text** component onder **Door Auteur** component van de Titel toe.
+1. Voeg een **Title**-component toe aan de **Side Rail Container**.
+   * Configureer de component met de tekst: &quot;Dit artikel delen&quot;.
+   * Stel het type in op `H5`.
+1. Voeg een **Delen van sociale media**-component onder de **Deel dit artikel** Titelcomponent.
+1. Voeg een **Scheidingsteken** component onder **Sociale media die** component delen toe.
+1. Voeg een **Download** component onder **Scheidingsteken** component toe.
+1. Voeg een **component List** onder de **component Download** toe.
+1. Werk **Initiële pagina-eigenschappen** voor de sjabloon bij.
+   * Onder **Sociale media** > **Sociale media delen**, controleer **Facebook** en **Pinterest**
+
+### De sjabloon inschakelen en een miniatuur toevoegen
+
+1. Bekijk het malplaatje in de console van het Malplaatje door aan [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd) te navigeren
+1. **De sjabloon voor de artikelpagina** inschakelen.
+1. Bewerk de eigenschappen van de sjabloon Artikelpagina en upload de volgende miniatuur om snel pagina&#39;s te identificeren die zijn gemaakt met de sjabloon Artikelpagina:
+
+   ![Miniatuur van artikelpaginasjabloon](assets/pages-templates/article-page-template-thumbnail.png)
+
 ## Koptekst en voettekst bijwerken met ervaringsfragmenten {#experience-fragments}
 
 Bij het maken van algemene inhoud, zoals een kop- of voettekst, wordt vaak gebruikgemaakt van een [Experience Fragment](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Met de functie Fragmenten van ervaring kunnen gebruikers meerdere componenten combineren om één component te maken die geschikt is voor referentie. De Fragmenten van de ervaring hebben het voordeel om multi-site beheer en [localization](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure) te steunen.
@@ -102,13 +162,73 @@ Het AEM Projectarchetype produceerde een Kopbal en Voettekst. Werk vervolgens de
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
-Download en installeer het pakket met voorbeeldinhoud **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
+Stappen op hoog niveau voor de onderstaande video:
+
+1. Download het pakket met voorbeeldinhoud **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
+1. Upload en installeer het inhoudspakket met Package Manager op [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
+1. Werk het malplaatje van de Variatie van het Web bij, dat het malplaatje voor de Fragmenten van de Ervaring in [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html) wordt gebruikt
+   * Werk het beleid de **Container** component op het malplaatje bij.
+   * Stel het beleid in op **XF Root**.
+   * Selecteer onder **Toegestane componenten** de componentengroep **WKND-siteproject - Structuur** om **Taalnavigatie**, **Navigatie** en **Snel zoeken**-componenten op te nemen.
+
+### Fragment voor koptekstervaring bijwerken
+
+1. Open het fragment van de Ervaring dat de Kopbal op [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html) teruggeeft
+1. Configureer de hoofdmap **Container** van het fragment. Dit is de buitenste meest **Container**.
+   * **Layout** instellen op **Responsief raster**
+1. Voeg het **Donker WKND-logo** toe als een afbeelding boven aan de **Container**. Het logo is opgenomen in het pakket dat in een vorige stap is geïnstalleerd.
+   * Wijzig de lay-out van **Donker Logo WKND** om **2** kolommen breed te zijn. Sleep de handgrepen van rechts naar links.
+   * Configureer het logo met **Alternatieve tekst** van &quot;WKND-logo&quot;.
+   * Vorm het embleem aan **Verbinding** aan `/content/wknd/us/en` de Homepage.
+1. Configureer de **Navigatie**-component die al op de pagina is geplaatst.
+   * Stel **Hoofdniveaus uitsluiten** in op **1**.
+   * Stel de **Navigatiestructuurdiepte** in op **1**.
+   * Wijzig de lay-out van de **Navigation** component om **8** kolommen breed te zijn. Sleep de handgrepen van rechts naar links.
+1. Verwijder de **Taalnavigatie** component.
+1. Wijzig de lay-out van de **Search** component om **2** kolommen breed te zijn. Sleep de handgrepen van rechts naar links. Alle componenten moeten nu horizontaal op één rij worden uitgelijnd.
+
+### Fragment Voettekstervaring bijwerken
+
+1. Open het fragment Experience dat de voettekst weergeeft op [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html)
+1. Configureer de hoofdmap **Container** van het fragment. Dit is de buitenste meest **Container**.
+   * **Layout** instellen op **Responsief raster**
+1. Voeg het **WKND-lichtlogo** toe als een afbeelding boven aan de **Container**. Het logo is opgenomen in het pakket dat in een vorige stap is geïnstalleerd.
+   * Wijzig de lay-out van het **WKND Licht Logo** om **2** kolommen breed te zijn. Sleep de handgrepen van rechts naar links.
+   * Configureer het logo met **Alternatieve tekst** van &quot;WKND-logolicht&quot;.
+   * Vorm het embleem aan **Verbinding** aan `/content/wknd/us/en` de Homepage.
+1. Voeg een **Navigatie** component onder het embleem toe. Configureer de **Navigation** component:
+   * Stel **Hoofdniveaus uitsluiten** in op **1**.
+   * Schakel **Alle onderliggende pagina&#39;s verzamelen** uit.
+   * Stel de **Navigatiestructuurdiepte** in op **1**.
+   * Wijzig de lay-out van de **Navigation** component om **8** kolommen breed te zijn. Sleep de handgrepen van rechts naar links.
 
 ## Een artikelpagina maken
 
 Maak vervolgens een nieuwe pagina met de sjabloon Artikelpagina. Maak de inhoud van de pagina zodat deze overeenkomt met de sitemakken. Voer de stappen in de onderstaande video uit:
 
 >[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
+
+Stappen op hoog niveau voor de onderstaande video:
+
+1. Navigeer naar de Sites-console op [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
+1. Maak een nieuwe pagina onder **WKND** > **US** > **EN** > **Magazine**.
+   * Kies de sjabloon **Artikel pagina**.
+   * Onder **Eigenschappen** stelt **Titel** in op &quot;Ultimate Guide to LA Skateparks&quot;
+   * **Naam** instellen op &quot;guide-la-skateparks&quot;
+1. Vervang **Door auteur** Titel door de tekst &quot;Door Stacey Roswells&quot;.
+1. Werk de **component Text** bij om een alinea op te nemen om het artikel te vullen. U kunt het volgende tekstbestand als kopie gebruiken: [la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt).
+1. Voeg een andere **component Text** toe.
+   * Werk de component bij om het citaat te omvatten: &quot;Er is geen betere plek om te delen dan Los Angeles.&quot;
+   * Bewerk de Rich Text Editor in de modus Volledig scherm en wijzig het bovenstaande citaat om het element **Citaatblok** te gebruiken.
+1. Blijf de tekst van het artikel vullen om deze aan te passen aan de modellen.
+1. Configureer de component **Download** om een PDF-versie van het artikel te gebruiken.
+   * Klik onder **Download** > **Eigenschappen** op het selectievakje om de titel op te halen uit het DAM-element **.**
+   * Stel de **Beschrijving** in op: &quot;Get the full Story&quot;.
+   * Stel de **Action Text** in op: &quot;PDF downloaden&quot;.
+1. Configureer de component **List**.
+   * Onder **Lijstinstellingen** > **Lijst samenstellen met** selecteert u **Onderliggende pagina&#39;s**.
+   * Stel de **Bovenliggende pagina** in op `/content/wknd/us/en/magazine`.
+   * Onder **Iteminstellingen** schakelt u **Items koppelen** in en schakelt u **Datum tonen** in.
 
 ## Inspect the node structure {#node-structure}
 
