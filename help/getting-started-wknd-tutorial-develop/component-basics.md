@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ In dit hoofdstuk zullen wij de onderliggende technologie van een Component van d
 ## Vereisten {#prerequisites}
 
 Controleer de vereiste gereedschappen en instructies voor het instellen van een [lokale ontwikkelomgeving](overview.md#local-dev-environment).
+
+winde die in de video&#39;s wordt gebruikt is [Visual Studio Code](https://code.visualstudio.com/) en [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) stop.
 
 ## Doel {#objective}
 
@@ -110,7 +112,7 @@ Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden u
 
 1. Schakelaar aan winde en open het project aan `ui.apps` module.
 1. Open het `helloworld.html` dossier en breng een verandering in de Prijsverhoging van HTML aan.
-1. Gebruik de hulpmiddelen van winde om de dossierverandering met de lokale AEM instantie te synchroniseren.
+1. Gebruik de hulpmiddelen van winde zoals [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) om de dossierverandering met de lokale AEM instantie te synchroniseren.
 1. Ga terug naar de browser en bekijk hoe de component is gerenderd.
 1. Open het `.content.xml`-bestand dat het dialoogvenster definieert voor de `HelloWorld`-component op:
 
@@ -209,14 +211,14 @@ Daarna, zullen wij sommige updates aan `HelloWorldModel` het Verkopen Model om w
        ...
    
        @ValueMapValue
-       protected String title;
+       private String title;
    
        @ValueMapValue
-       protected String text;
+       private String text;
    
-           @PostConstruct
-           protected void init() {
-               ...
+       @PostConstruct
+       protected void init() {
+           ...
    ```
 
 1. Voeg de volgende methode `getTitle()` aan `HelloWorldModel` klasse toe, die de waarde van het bezit genoemd `title` terugkeert. Deze methode voegt de extra logica toe om een waarde van het Koord van &quot;StandaardWaarde hier terug te keren!&quot; als de eigenschap `title` null of leeg is:
@@ -254,7 +256,7 @@ Daarna, zullen wij sommige updates aan `HelloWorldModel` het Verkopen Model om w
    >
    > Als u AEM 6.4/6.5 gebruikt `mvn clean install -PautoInstallBundle -Pclassic`
 
-1. Werk het bestand `helloworld.html` om `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` bij om de nieuw gemaakte methoden van het `HelloWorld`-model te gebruiken:
+1. Werk het bestand `helloworld.html` om `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` bij om de nieuwe methoden van het `HelloWorld`-model te gebruiken:
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld"
@@ -349,6 +351,10 @@ Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden u
    ```
 
 1. Implementeer de wijzigingen in een lokale versie van AEM met de plug-in voor ontwikkelaars of met behulp van uw Maven-vaardigheden.
+
+   >[!NOTE]
+   >
+   > CSS en JavaScript worden vaak in cache geplaatst door de browser vanwege de prestaties. Als u niet onmiddellijk de verandering voor de cliëntbibliotheek ziet voer hard uit verfrist zich en ontruim browser geheim voorgeheugen. Het kan handig zijn om een incognitovenster te gebruiken voor een nieuwe cache.
 
 ## Gefeliciteerd! {#congratulations}
 
