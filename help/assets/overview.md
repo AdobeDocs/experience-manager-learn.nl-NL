@@ -3,9 +3,9 @@ title: AEM Assets-video's en -Tutorials
 description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Assets
 sub-product: elementen, dynamische media
 translation-type: tm+mt
-source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '230'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,9 @@ Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale m
 
 ## Wat is er nieuw?
 
+* **[Releren en niet-gerelateerd (video)](./authoring/relate-unrelate.md)**
+
+   *Leer hoe u relaties tussen middelen in AEM tot stand brengt en beheert*
 
 * **[Elementen publiceren (video)](./sharing/publish.md)**
 
@@ -33,10 +36,6 @@ Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale m
 * **[Workflows automatisch starten (video)](./configuring/auto-start-workflows.md)**
 
    *Ontdek hoe AEM workflow automatisch kan worden aangeroepen bij geüploade of opnieuw verwerkte middelen*
-
-* **[Profielen verwerken (video)](./configuring/processing-profiles.md)**
-
-   *Onderzoek hoe te om de microdiensten van Activa aan vertoningsactiva aan te halen*
 
 ## Personeelspictogrammen
 
