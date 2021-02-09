@@ -6,9 +6,9 @@ user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AE
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 48060b4d8c4b502e0c099ae8081695f97b423037
+source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '947'
 ht-degree: 1%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 1%
 + [Overzicht](overview.md)
 + [Aanbevolen procedures](adaptive-forms/best-practices-adaptive-forms.md)
 + [OKTA-verificatie instellen met AEM-auteur](adaptive-forms/single-sign-on-with-okta.md)
-+ [Maak uw eerste OSGi-bundel](adaptive-forms/create-your-first-osgi-bundle.md)
-+ Uw eerste adaptieve formulier maken {#creating-your-first-adaptive-form}
++ [Uw eerste OSGi-bundel maken](adaptive-forms/create-your-first-osgi-bundle.md)
++ Uw eerste adaptieve vorm maken {#creating-your-first-adaptive-form}
    + [Inleiding en installatie](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Adaptief formuliersjabloon maken](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [Formulierfragment maken](creating-your-first-adaptive-form/create-form-fragment.md)
@@ -91,12 +91,12 @@ ht-degree: 1%
    + [Formuliergegevensmodel configureren](prefill-fdm-db/configuring-form-data-model.md)
    + [Request-parameter ophalen](prefill-fdm-db/get-request-parameter.md)
    + [adaptief formulier maken](prefill-fdm-db/create-adaptive-form.md)
-+ Aanpassing van Postvak IN{#inbox-customization}
++ Inbox{#inbox-customization} aanpassen
    + [Inleiding](inbox-customization/introduction.md)
    + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
    + [Sweeksjabloon gebruiken](inbox-customization/use-sightly-template.md)
 
-+ Aangepast formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
++ Adaptief formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
    + [Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
    + [Gegevensbron configureren](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [Formulierbijlagen opslaan](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -183,6 +183,7 @@ ht-degree: 1%
    + [Part4 - Create ACS Profile using Form Data Model](aem-forms-with-adobe-campaign/partfour.md)
 
 + Document Services {#document-services}
+   + [Typen PDF forms](document-services/pdf-forms-and-documents.md)
    + [Assembler Service gebruiken in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Controlemap gebruiken in AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Streepjescodeservice gebruiken in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
