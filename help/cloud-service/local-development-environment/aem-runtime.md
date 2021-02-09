@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: 398b9f855556fc425b034986a7f21159297dcba5
+source-git-commit: 39ea3dd6133477a52fd91ee696936cd226fce5ea
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -180,6 +180,10 @@ Het wijzigen van deze instellingen kan aanpassingen in AEM SDK-configuraties ver
 ## Een lokale AEM-runtime stoppen
 
 Als u een lokale AEM-runtime wilt stoppen, opent u het opdrachtregelvenster dat is gebruikt om de AEM-runtime te starten, en tikt u op `Ctrl-C`. Wacht tot AEM is afgesloten. Wanneer het sluitingsproces volledig is, zal de herinnering van de bevellijn beschikbaar zijn.
+
+## Optionele lokale AEM-runtime instellingstaken
+
++ __De variabelen van het OSGi- configuratiemilieu en geheime__ variabelen worden  [speciaal geplaatst voor AEM lokale runtime](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development), eerder dan het beheren van hen die de lucht CLI gebruiken.
 
 ## Wanneer werkt u de QuickStart-jar bij
 
