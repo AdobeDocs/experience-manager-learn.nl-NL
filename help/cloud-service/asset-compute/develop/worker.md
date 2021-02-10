@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 2d7ae5e46acb25eaaf7a1a35d9bbf20f7c14042e
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ In deze worker gebruiken we [jimp](https://www.npmjs.com/package/jimp) om de ver
 
 >[!WARNING]
 >
->Niet alle npm-modules voor het manipuleren van elementen worden ondersteund door Asset compute. npm-modules die afhankelijk zijn van de bestaande toepassingen van andere toepassingen, zoals ImageMagick of OS-afhankelijke bibliotheken. U kunt het gebruik van alleen JavaScript-npm-modules het beste beperken.
+>Niet alle npm-modules voor het manipuleren van elementen worden ondersteund door Asset compute. npm-modules die afhankelijk zijn van het bestaan van toepassingen zoals ImageMagick of andere OS-afhankelijke bibliotheken, worden niet ondersteund. U kunt het gebruik van alleen JavaScript-npm-modules het beste beperken.
 
 1. Open de bevellijn in de wortel van uw project van de Asset compute (dit kan in de Code van VS via __Terminal > Nieuwe Terminal__) worden gedaan en voer het bevel uit:
 
