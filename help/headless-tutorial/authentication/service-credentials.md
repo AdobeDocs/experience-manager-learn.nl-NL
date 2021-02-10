@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330519.jpg
 translation-type: tm+mt
-source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
+source-git-commit: 0b1150cd7ca32382cfaa880f9f956b55bfb65a33
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Integraties met AEM als Cloud Service moeten veilig kunnen worden geverifieerd op AEM. AEM Developer Console biedt toegang tot servicerecertificaten, die worden gebruikt om externe toepassingen, systemen en services te helpen programmatisch te communiceren met AEM Author Publish-services via HTTP.
 
->[!VIDEO](https://video.tv.adobe.com/v/330460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
 
 De Referenties van de dienst kunnen gelijkaardig [Lokale Tokens van de Toegang van de Ontwikkeling ](./local-development-access-token.md) verschijnen maar zijn verschillend op een paar zeer belangrijke manieren:
 
