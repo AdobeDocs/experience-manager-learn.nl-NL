@@ -10,9 +10,9 @@ audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
 translation-type: tm+mt
-source-git-commit: a405cf14d3f71bf51e32e50c828c3216d29aa253
+source-git-commit: b9fb3cb0c12afcabf4a92ded3d7d330ac9d229d6
 workflow-type: tm+mt
-source-wordcount: '2517'
+source-wordcount: '2537'
 ht-degree: 0%
 
 ---
@@ -232,6 +232,7 @@ Om deze kwestie te bevestigen is de oorzaak van het falende gedrag:
    1. Als de `/var` middelen niet noodzakelijk zijn verwijdert om het even welke middelen onder `/var` uit inhoudspakketten die als deel van uw toepassing worden opgesteld.
    2. Als de `/var` middelen noodzakelijk zijn, bepaal de knoopstructuren gebruikend [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Scripts die opnieuw worden toegewezen, kunnen via OSGi-runmodi worden toegewezen aan AEM-auteur, AEM-publicatie of beide.
    3. Als de `/var`-bronnen alleen vereist zijn op AEM auteur en redelijkerwijs niet kunnen worden gemodelleerd met [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), verplaatst u ze naar een apart inhoudspakket dat alleen op AEM-auteur wordt geïnstalleerd door [insluiten](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) in het `all`-pakket in een runmode-map van AEM-auteur (`<target>/apps/example-packages/content/install.author</target>`).
+   4. Verstrek aangewezen ACLs aan de `sling-distribution-importer` de dienstgebruiker zoals die in dit [Adobe KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html) wordt beschreven.
 
 ### Een Adobe Support-case maken
 
