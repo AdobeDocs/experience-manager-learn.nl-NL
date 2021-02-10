@@ -5,7 +5,7 @@ breadcrumb-title: AEM Assets Tutorials
 sub-product: elementen
 team: TM
 translation-type: tm+mt
-source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
+source-git-commit: d302444e74f8c2a548d2e08b5ec2991cc7347324
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 7%
@@ -33,7 +33,7 @@ ht-degree: 7%
    + [Basisbewerkingen](./authoring/basic-operations.md)
    + [Metagegevens](./authoring/metadata.md)
    + [Uitvoeringen](./authoring/renditions.md)
-   + [Releren en niet-gerelateerd](./authoring/relate-unrelate.md)
+   + [Relatief en niet-gerelateerd](./authoring/relate-unrelate.md)
 
 + Samenwerking{#collaboration}
    + [Tijdlijn en Postvak IN](./collaboration/timeline-and-inbox.md)
