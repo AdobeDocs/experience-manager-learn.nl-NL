@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: 676d4bfceaaec3ae8d4feb9f66294ec04e1ecd2b
+source-git-commit: 23c91551673197cebeb517089e5ab6591f084846
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ De projecten van de asset compute zijn projecten Node.js, die gebruikend Adobe I
 
 _Doorklikken voor het genereren van een Asset compute-project (geen audio)_
 
-Gebruik [Adobe I/O CLI Asset compute plugin](../set-up/development-environment.md#aio-cli) om een nieuw, leeg project van de Asset compute te produceren.
+Gebruik [Adobe I/O CLI Asset compute stop-in](../set-up/development-environment.md#aio-cli) om een nieuw, leeg project van de Asset compute te produceren.
 
 1. Navigeer vanaf de opdrachtregel naar de map waarin u het project wilt plaatsen.
 1. Van de bevellijn, voer `aio app init` uit om met de interactieve projectgeneratie CLI te beginnen.
-   + Dit kan een browser van het Web werpen die voor authentificatie aan Adobe I/O ertoe aanzet. Als het, uw geloofsbrieven van de Adobe verbonden aan [vereiste de diensten en producten van de Adobe ](../set-up/accounts-and-services.md) verstrekt. Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Met deze opdracht wordt mogelijk een webbrowser weergegeven die vraagt om verificatie naar Adobe I/O. Als het, uw geloofsbrieven van de Adobe verbonden aan [vereiste de diensten en producten van de Adobe ](../set-up/accounts-and-services.md) verstrekt. Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Org selecteren__
-   + Selecteer de Adobe Org die als Cloud Service heeft AEM, Project Firefly wordt geregistreerd aan
+   + Selecteer de Adobe Org die als Cloud Service heeft AEM, Project Firefly wordt geregistreerd met
 1. __Project selecteren__
    + Zoek en selecteer het project. Dit is de [Titel van project](../set-up/firefly.md) gecreeerd van het Firefly projectmalplaatje, in dit geval `WKND AEM Asset Compute`
 1. __Werkruimte selecteren__
@@ -51,34 +51,30 @@ Gebruik [Adobe I/O CLI Asset compute plugin](../set-up/development-environment.m
 
 ## Console.json genereren
 
-Van de wortel van het nieuwe gecreeerde project van de Asset compute, stel het volgende bevel in werking om `console.json` te produceren.
+Voor het hulpprogramma voor ontwikkelaars is een bestand met de naam `console.json` vereist dat de vereiste gegevens bevat om verbinding te maken met Adobe I/O. Dit bestand wordt gedownload vanaf de Adobe I/O-console.
 
-```
-$ aio app use
-```
+1. Open het [Adobe I/O](https://console.adobe.io)-project van de Asset compute worker
+1. Selecteer de projectwerkruimte waar u de `console.json`-referenties voor wilt downloaden. Selecteer in dit geval `Development`
+1. Ga naar de basis van het Adobe I/O-project en tik __Alles downloaden__ in de rechterbovenhoek.
+1. Een bestand wordt gedownload als een `.json`-bestand dat vooraf met het project en de werkruimte is ingesteld, bijvoorbeeld: `wkndAemAssetCompute-81368-Development.json`
+1. U kunt
+   + Wijzig de naam van het bestand in `config.json` en verplaats het bestand in de hoofdmap van het Asset compute-arbeidersproject. Dit is de aanpak in deze zelfstudie.
+   + Verplaats het naar een willekeurige map EN verwijs naar die map vanuit het `.env`-bestand met een configuratievermelding `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. Het bestandspad kan absoluut of relatief zijn ten opzichte van de hoofdmap van uw project. Bijvoorbeeld:
+      + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`
 
-Controleer of de huidige werkruimtegegevens correct zijn. Druk op `Y` of voer de gegevens in om een `console.json` te genereren. Als `.env` en `.aio` als reeds bestaand worden ontdekt, tik `x` om hun verwezenlijking over te slaan.
+      of
+      + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=../../secrets/wkndAemAssetCompute-81368-Development.json.json`
 
-Als u nieuwe `.env` maakt of overschrijft, voegt u ontbrekende toetsen/waarden opnieuw toe aan het nieuwe `.env`:
 
-```
-## please provide the following environment variables for the Asset Compute devtool. You can use AWS or Azure, not both:
-#ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
-#S3_BUCKET=
-#AWS_ACCESS_KEY_ID=
-#AWS_SECRET_ACCESS_KEY=
-#AWS_REGION=
-#AZURE_STORAGE_ACCOUNT=
-#AZURE_STORAGE_KEY=
-#AZURE_STORAGE_CONTAINER_NAME=
-```
+> OPMERKING
+> Het bestand bevat referenties. Als u het dossier binnen uw project opslaat, zorg ervoor om het aan uw `.gitignore` dossier toe te voegen om te verhinderen worden gedeeld. Hetzelfde geldt voor het `.env`-bestand — Deze aanmeldingsbestanden mogen niet worden gedeeld of opgeslagen in Git.
 
 ## De anatomie van het project evalueren
 
-Het geproduceerde project van de Asset compute is een project Node.js voor een gespecialiseerd project van het Project van de Adobe Firefly, is het volgende idiosyncratic aan het project van de Asset compute:
+Het geproduceerde project van de Asset compute is een project Node.js voor gebruik als gespecialiseerd project van het Project van de Adobe Firefly. De volgende elementen zijn specifiek voor het project Asset compute:
 
 + `/actions` bevat submappen en elke submap definieert een Asset compute-worker.
-   + `/actions/<worker-name>/index.js` definieert de JavaScript die wordt uitgevoerd om het werk van deze worker uit te voeren.
+   + `/actions/<worker-name>/index.js` definieert het JavaScript dat wordt gebruikt om het werk van deze worker uit te voeren.
       + De mapnaam `worker` is standaard en kan alles zijn, zolang deze maar is geregistreerd in `manifest.yml`.
       + Indien nodig kunnen meerdere arbeidersmappen worden gedefinieerd onder `/actions`, maar deze moeten worden geregistreerd in `manifest.yml`.
 + `/test/asset-compute` bevat de testreeksen voor elke worker. Net als in de map `/actions` kan `/test/asset-compute` meerdere submappen bevatten, die elk overeenkomen met de worker die wordt getest.
@@ -89,7 +85,7 @@ Het geproduceerde project van de Asset compute is een project Node.js voor een g
    + Dit bestand kan worden gegenereerd/bijgewerkt met de opdracht `aio app use`.
 + `/.aio` bevat configuraties die door het hulpmiddel CLI van de AIR worden gebruikt.
    + Dit bestand kan worden gegenereerd/bijgewerkt met de opdracht `aio app use`.
-+ `/.env` definieert omgevingsvariabelen in een  `key=value` syntaxis en bevat geheimen die niet mogen worden gedeeld. Dit kan worden geproduceerd of om deze geheimen te beschermen, zou dit dossier NIET in Git moeten worden gecontroleerd en via het standaard `.gitignore` dossier van het project worden genegeerd.
++ `/.env` definieert omgevingsvariabelen in een  `key=value` syntaxis en bevat geheimen die niet mogen worden gedeeld. Om deze geheimen te beschermen, zou dit dossier NIET in Git moeten worden gecontroleerd en via het standaard `.gitignore` dossier van het project worden genegeerd.
    + Dit bestand kan worden gegenereerd/bijgewerkt met de opdracht `aio app use`.
    + Variabelen die in dit bestand worden gedefinieerd, kunnen worden overschreven door [variabelen exporteren](../deploy/runtime.md) op de opdrachtregel.
 
@@ -97,11 +93,11 @@ Voor meer details over de overzicht van de projectstructuur, herzie [Anatomie va
 
 Het grootste deel van de ontwikkeling vindt plaats in de map `/actions` waarin workers worden geïmplementeerd en in `/test/asset-compute` tests voor aangepaste Asset computen worden geschreven.
 
-## asset compute van Github
+## asset compute project op GitHub
 
-Het definitieve project voor de Asset compute is beschikbaar op Github op:
+Het definitieve project van de Asset compute is beschikbaar op GitHub bij:
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, d.w.z. `.env`,  `console.json` of  `.aio`._
+_GitHub bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, namelijk  `.env`,  `console.json` of  `.aio`._
 
