@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 doc-type: tutorial
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: c657eefa69b383c1b1a9e2845276245d3db00e6f
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Distributieconfiguratie {#dispatcher-configuration}
 
-Om het in cache plaatsen en het dienen van [!DNL CORS] kopballen op caching inhoud toe te staan, voeg de volgende configuratie aan allen die AEM toe publiceer `dispatcher.any` dossiers.
+Om het in cache plaatsen en het dienen van kopballen CORS op caching inhoud toe te staan, voeg het volgende [/clientheaders configuratie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) aan allen die AEM toe publiceer `dispatcher.any` dossiers.
 
 ```
 /cache { 
   ...
-  /headers {
+  /clientheaders {
       "Access-Control-Allow-Origin",
       "Access-Control-Expose-Headers",
       "Access-Control-Max-Age",
@@ -115,7 +115,7 @@ Om het in cache plaatsen en het dienen van [!DNL CORS] kopballen op caching inho
 
 **Start de** toepassing van de webserver opnieuw nadat u wijzigingen in het  `dispatcher.any` bestand hebt aangebracht.
 
-Waarschijnlijk wordt het cachegeheugen volledig gewist om ervoor te zorgen dat de koppen op de juiste wijze in het cachegeheugen worden opgeslagen op het volgende verzoek na een `/headers` configuratieupdate.
+Waarschijnlijk wordt het cachegeheugen volledig gewist om ervoor te zorgen dat de koppen op de juiste wijze in het cachegeheugen worden opgeslagen op het volgende verzoek na een `/clientheaders` configuratieupdate.
 
 ## Ondersteunende materialen {#supporting-materials}
 
