@@ -10,7 +10,7 @@ version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -133,9 +133,13 @@ Deze code retourneert de titel van de AEM pagina.
 
 ### Waarom worden mijn dozen niet op mijn webpagina&#39;s geactiveerd?
 
-#### Foutbericht wanneer mboxDisable cookie niet is ingesteld**
+#### Foutbericht wanneer cookie niet is ingesteld
 
 ![Fout doelcookie](assets/target-cookie-error.png)
+
+```
+> AT: [page-init] Adobe Target content delivery is disabled. Ensure that you can save cookies to your current domain, there is no "mboxDisable" cookie and there is no "mboxDisable" parameter in the query string.
+```
 
 #### Oplossing
 
