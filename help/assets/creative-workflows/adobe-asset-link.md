@@ -8,9 +8,9 @@ doc-type: feature video
 activity: use
 version: 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Adobe Asset Link v1.1 biedt nu ondersteuning voor InDesign direct koppelen tusse
 
 >[!NOTE]
 >
->Gebruik alleen de Adobe Creative Cloud-Enterprise ID of -Federated ID. Zorg ervoor u [vorm AEM voor de Verbinding van Activa van Adobe ](https://helpx.adobe.com/enterprise/using/configure-aem-for-aal-prerelease.html).
+>Gebruik alleen de Adobe Creative Cloud-Enterprise ID of -Federated ID. Zorg ervoor u [vorm AEM voor de Verbinding van Activa van Adobe ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
 
 
 ### Adobe Asset Link Capabilities
@@ -73,8 +73,6 @@ FPO-uitvoeringen zijn lichte vervangingen van de oorspronkelijke activa. Ze hebb
 * BMP
 
 Als een FPO-uitvoering niet beschikbaar is voor een specifiek element in AEM Assets, wordt in plaats daarvan verwezen naar het oorspronkelijke middel met hoge resolutie. Voor FPO-afbeeldingen wordt de status FPO weergegeven in het deelvenster Koppelingen InDesign.
-
-
 
 ## De authentificatie van de Verbinding van Adobe-activa met AEM Assets{#understanding-adobe-asset-link-authentication-with-aem-assets}
 
