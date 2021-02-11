@@ -9,7 +9,7 @@ activity: understand
 audience: architect, developer
 doc-type: article
 translation-type: tm+mt
-source-git-commit: ecbd4d21c5f41b2bc6db3b409767b767f00cc5d1
+source-git-commit: bc14783840a47fb79ddf1876aca1ef44729d097e
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
@@ -139,12 +139,12 @@ Als u het in cache plaatsen van CORS-headers wilt toestaan, voegt u de volgende 
 ```
 /cache { 
   ...
-  /headers {
-      "Access-Control-Allow-Origin",
-      "Access-Control-Expose-Headers",
-      "Access-Control-Max-Age",
-      "Access-Control-Allow-Credentials",
-      "Access-Control-Allow-Methods",
+  /clientheaders {
+      "Access-Control-Allow-Origin"
+      "Access-Control-Expose-Headers"
+      "Access-Control-Max-Age"
+      "Access-Control-Allow-Credentials"
+      "Access-Control-Allow-Methods"
       "Access-Control-Allow-Headers"
   }
   ...
@@ -153,7 +153,7 @@ Als u het in cache plaatsen van CORS-headers wilt toestaan, voegt u de volgende 
 
 **Start de webservertoepassing opnieuw** nadat u wijzigingen hebt aangebracht in het `dispatcher.any`-bestand.
 
-Het zal waarschijnlijk het geheime voorgeheugen volledig worden ontruimd zal worden vereist om de kopballen geschikt in het voorgeheugen onder te brengen op het volgende verzoek na een `/headers` configuratiestupdate.
+Het zal waarschijnlijk het geheime voorgeheugen volledig worden ontruimd zal worden vereist om de kopballen geschikt in het voorgeheugen onder te brengen op het volgende verzoek na een `/clientheaders` configuratiestupdate.
 
 ## Problemen met CORS oplossen
 
@@ -168,7 +168,7 @@ Logboekregistratie is beschikbaar onder `com.adobe.granite.cors`:
 * Verifieer of het verzoek door de manager CORS en niet door de authentificatie, het symbolische filter CSRF, verzenders filters, of andere veiligheidslagen werd ontkend
    * Als de manager van CORS met 200 antwoordt, maar `Access-Control-Allow-Origin` kopbal in de reactie ontbreekt, herzie de logboeken voor ontkenning onder [!DNL DEBUG] in `com.adobe.granite.cors`
 * Als de verzender caching van [!DNL CORS] verzoeken wordt toegelaten
-   * Controleer of de `/headers`-configuratie is toegepast op `dispatcher.any` en of de webserver opnieuw is gestart
+   * Controleer of de `/clientheaders`-configuratie is toegepast op `dispatcher.any` en of de webserver opnieuw is gestart
    * Zorg ervoor dat de cache juist is gewist nadat de configuratie van OSGi of dispatcher.any is gewijzigd.
 * Controleer, indien nodig, de aanwezigheid van verificatiegegevens op het verzoek.
 
