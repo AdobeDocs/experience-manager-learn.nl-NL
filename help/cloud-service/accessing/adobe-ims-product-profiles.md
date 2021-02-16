@@ -10,15 +10,21 @@ doc-type: feature video
 kt: 5000
 thumbnail: 39156.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 2%
+source-wordcount: '148'
+ht-degree: 6%
 
 ---
 
 
 # Adobe IMS-productprofielen
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_adobeims_productprofiles"
+>title="Adobe IMS-productprofielen"
+>abstract="Met Adobe IMS-productprofielen kunnen gebruikers zich aanmelden bij een AEM-auteurservice en een basislijn voor toegang bieden, afhankelijk van het productprofiel waarvan ze lid zijn. Meer informatie over Adobe IMS-productprofielen."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction" text="Producten en gebruikerstoegang beheren in Admin Console"
 
 Met Adobe IMS-productprofielen kunnen gebruikers zich aanmelden bij een AEM-auteurservice en een basislijn voor toegang bieden, afhankelijk van het productprofiel waarvan ze lid zijn.
 
