@@ -10,15 +10,20 @@ doc-type: feature video
 kt: 4999
 thumbnail: 39150.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
 
 # Adobe IMS-gebruikersgroepen
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_adobeims_usergroups"
+>title="Adobe IMS-gebruikersgroepen"
+>abstract="Adobe IMS gebruikersgroepen vestigen logische reeksen gebruikers die aan AEM worden blootgesteld, waar zij kunnen worden leveraged om toestemmingen aan AEM gebruikers te bepalen."
 
  Adobe IMS gebruikersgroepen vestigen logische reeksen gebruikers die aan AEM worden blootgesteld, waar zij kunnen worden leveraged om toestemmingen aan AEM gebruikers te bepalen.
 
