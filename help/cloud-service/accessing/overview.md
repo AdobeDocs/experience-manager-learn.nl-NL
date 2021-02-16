@@ -10,15 +10,20 @@ doc-type: article
 kt: 5882
 thumbnail: KT-5882.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
 
 # Toegang tot AEM configureren als Cloud Service
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_adobeims_overview"
+>title="Inleiding tot Adobe IMS"
+>abstract="AEM als Cloud Service gebruikt Adobe IMS (Identity Management System) om het aanmelden van zijn gebruikers, zowel beheerders als gewone gebruikers, naar de AEM Author-service te vergemakkelijken. Leer hoe Adobe IMS-gebruikers, -groepen en -productprofielen samen met AEM groepen en machtigingen worden gebruikt om fijngeoriënteerde toegang tot de AEM Author-service te bieden."
 
 AEM als Cloud Service is de cloud-native manier om de AEM toepassingen te benutten, en maakt als zodanig gebruik van Adobe IMS (Identity Management System) om het aanmelden van gebruikers, zowel beheerders als gewone gebruikers, bij AEM Author Service te vergemakkelijken. Leer hoe Adobe IMS-gebruikers, -groepen en -productprofielen samen met AEM groepen en machtigingen worden gebruikt om fijngeoriënteerde toegang tot de AEM Author-service te bieden.
 
