@@ -5,9 +5,9 @@ description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Mana
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites
 sub-product: sites, content-services
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 
 ## Wat is er nieuw?
 
-* **[De gegevenslaag voor de Adobe-client aanpassen met AEM componenten](./integrations/adobe-client-data-layer/data-layer-customize.md)**
+* **[Starten gebruiken met AEM Sites (video)](./spa-editor/spa-editor-framework-feature-video-use.md)**
+
+   *Meer informatie over het starten van AEM-sites en hoe u deze kunt gebruiken om inhoud van websites voor te bereiden voor toekomstige release.*
+
+* **[De Adobe Client Data Layer aanpassen met AEM componenten (zelfstudie)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
    *Leer hoe u de gegevenslaag voor de Adobe-client kunt bijwerken met inhoud van aangepaste AEM Componenten.*
 
