@@ -5,10 +5,10 @@ breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 20%
+source-wordcount: '282'
+ht-degree: 17%
 
 ---
 
@@ -103,5 +103,11 @@ ht-degree: 20%
    + Geavanceerd{#advanced}
       + [Metagegevensworkers](./asset-compute/advanced/metadata.md)
    + [Problemen oplossen](./asset-compute/troubleshooting.md)
++ Meerdere stappen voor Tutorials{#multi-step-tutorials}
+   + [AEM Sites-ontwikkeling](./develop-wknd-tutorial.md)
+   + [GraphQL](../headless-tutorial/graphql/overview.md)
+   + [SPA Editor (reageren)](../spa-react-tutorial/overview.md)
+   + [SPA Editor (hoekig)](../spa-angular-tutorial/overview.md)
+   + [AEM Sites en Adobe Target](../aem-target-personalization/overview.md)
+   + [Op token gebaseerde verificatie](../headless-tutorial/authentication/overview.md)
 
-+ [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](./develop-wknd-tutorial.md)
