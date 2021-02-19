@@ -5,10 +5,10 @@ breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
 translation-type: tm+mt
-source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
+source-git-commit: 91399ff4ab26655de27bbecab4ff773f6666d86a
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 17%
+source-wordcount: '320'
+ht-degree: 15%
 
 ---
 
@@ -104,10 +104,10 @@ ht-degree: 17%
       + [Metagegevensworkers](./asset-compute/advanced/metadata.md)
    + [Problemen oplossen](./asset-compute/troubleshooting.md)
 + Meerdere stappen voor Tutorials{#multi-step-tutorials}
-   + [AEM Sites-ontwikkeling](./develop-wknd-tutorial.md)
-   + [GraphQL](../headless-tutorial/graphql/overview.md)
-   + [SPA Editor (reageren)](../spa-react-tutorial/overview.md)
-   + [SPA Editor (hoekig)](../spa-angular-tutorial/overview.md)
-   + [AEM Sites en Adobe Target](../aem-target-personalization/overview.md)
-   + [Op token gebaseerde verificatie](../headless-tutorial/authentication/overview.md)
+   + [AEM Sites-ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
+   + [SPA Editor (reageren)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
+   + [SPA Editor (hoekig)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [AEM Sites en Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
+   + [Op token gebaseerde verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
 
