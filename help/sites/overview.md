@@ -5,7 +5,7 @@ description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Mana
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites
 sub-product: sites, content-services
 translation-type: tm+mt
-source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
+source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 
 ## Wat is er nieuw?
 
-* **[Starten gebruiken met AEM Sites (video)](./spa-editor/spa-editor-framework-feature-video-use.md)**
+* **[Starten gebruiken met AEM Sites (video)](./page-authoring/launches.md)**
 
    *Meer informatie over het starten van AEM-sites en hoe u deze kunt gebruiken om inhoud van websites voor te bereiden voor toekomstige release.*
 
