@@ -1,16 +1,17 @@
 ---
-title: Inbox in AEM gebruiken
+title: Hoe wordt Inbox gebruikt in AEM
 description: AEM inbox vergemakkelijkt grotere samenwerking en zichtbaarheid in taken en werkschema.
-version: 6.3, 6.4, 6.5
-feature: inbox
-topics: collaboration, governance
-activity: use
-audience: author, analyst
-doc-type: feature video
+version: 6.3, 6.4, 6.5, cloud-service
+topic: Samenwerking
+feature: Inbox
+role: Zakelijke praktiserer
+level: Intermediair
+kt: 159
+thumbnail: 16827.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '81'
 ht-degree: 0%
 
 ---
@@ -18,18 +19,6 @@ ht-degree: 0%
 
 # Inbox in AEM gebruiken
 
-AEM inbox vergemakkelijkt grotere samenwerking en zichtbaarheid in taken en werkschema.
+AEM Inbox vergemakkelijkt grotere samenwerking en zichtbaarheid in taken en workflow. De Agenda van Inbox volgt projecten en taken in een op tijd-gebaseerde mening voor gemakkelijker projectbeheer en het plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16827/?quality=12&learn=on)
-
-In deze video&#39;s worden de hooglichten van AEM Inbox besproken.
-
-* Kolom Inbox
-* Taak- en workflowworkitems
-* Taakbeheer (hiermee verbonden inhoud bewerken, toewijzen, weergeven)
-* Werkitembeheer (voltooid, stap terug, delegeren, opmerkingen)
-* Workflow Info-console
-* Ad-hoctaken maken
-* Zichtbaarheid van taken en werkitems
-* [!DNL Inbox] en  [!DNL Omnisearch] integratie
-* [!DNL Inbox] en  [!DNL AEM Projects] integratie
