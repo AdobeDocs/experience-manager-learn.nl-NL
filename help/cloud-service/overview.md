@@ -4,9 +4,9 @@ description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) als
 sub-product: sites, cloudbeheer, stichting, middelen
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '275'
 ht-degree: 8%
 
 ---
@@ -20,9 +20,13 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 
 ## Wat is er nieuw?
 
-* **[Tokengebaseerde verificatie (zelfstudie)](../headless-tutorial/authentication/overview.md)**
+* **[Tokengebaseerde verificatie (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
    *Leer hoe te om op teken-gebaseerde authentificatie te gebruiken om met AEM als Cloud Service over HTTP in wisselwerking te staan*
+
+* **[Headless GraphQL (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+
+   *Leer hoe u AEM GraphQL API&#39;s kunt gebruiken om ervaringen in een externe toepassing aan te zwengelen.*
 
 * **[Bulk importeren (video)](./migration/bulk-import.md)**
 
@@ -35,11 +39,6 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 * **[Uitbreidbaarheid van microservices voor asset compute (zelfstudie)](./asset-compute/overview.md)**
 
    *Leer hoe u Asset compute-workers kunt ontwikkelen om aangepaste asset-uitvoeringen te genereren*
-
-* **[Toegang tot AEM configureren als Cloud Service (zelfstudie)](./accessing/overview.md)**
-
-   *Leer hoe u IMS-gebruikers in Adobe Admin Console configureert voor toegang tot AEM*
-
 
 ## Personeelspictogrammen
 
