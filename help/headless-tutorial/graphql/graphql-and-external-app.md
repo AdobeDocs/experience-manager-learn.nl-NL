@@ -11,7 +11,7 @@ mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 0%
@@ -68,7 +68,7 @@ De aanvang van React app wordt gedetailleerd geschetst in [Snelle Opstelling](./
 
 1. Reviseer de app op [http://localhost:3000/](http://localhost:3000/). De voorbeeldtoepassing React bestaat uit twee hoofdonderdelen:
 
-   * De huiservaring doet dienst als index van avonturen WKND, maar het vragen van __Adventure__ de Fragments van de Inhoud in AEM gebruikend GraphQL. In dit hoofdstuk, zullen wij deze mening wijzigen om het filtreren van avonturen door activiteit te steunen.
+   * De huiservaring doet dienst als index van avonturen WKND, door __Adventure__ de Fragments van de Inhoud in AEM het gebruiken van GraphQL te vragen. In dit hoofdstuk, zullen wij deze mening wijzigen om het filtreren van avonturen door activiteit te steunen.
 
       ![WKND GraphQL React app - Home Experience](./assets/graphql-and-external-app/react-home-view.png)
 
