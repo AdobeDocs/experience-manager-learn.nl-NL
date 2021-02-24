@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -133,13 +133,13 @@ Maak vervolgens een nieuw model voor een **Contributor**. Dit is het gegevensmod
 
 ## Enable the Contributor Model
 
-Modellen van inhoudsfragment worden standaard ingesteld op de status **Concept** wanneer deze voor het eerst wordt gemaakt. Hierdoor kunnen gebruikers het Content Fragment Model **before** verfijnen, zodat auteurs het kunnen gebruiken. Rappel dat het wijzigen van **de Naam van het Bezit** van een gebied in het model het onderliggende gegevensschema verandert en significante stroomafwaartse gevolgen op bestaande fragmenten en externe toepassingen kan hebben. Het wordt aanbevolen de naamgevingsconventie die wordt gebruikt voor de **Eigenschapnaam** van velden zorgvuldig te plannen.
+Modellen van inhoudsfragmenten moeten **Ingeschakeld** zijn voordat de auteurs van de inhoud het kunnen gebruiken. Het is mogelijk om **een model van het Fragment van de Inhoud onbruikbaar te maken**, waarbij auteurs worden verhinderd het te gebruiken. Rappel dat het wijzigen van **de Naam van het Bezit** van een gebied in het model het onderliggende gegevensschema verandert en significante stroomafwaartse gevolgen op bestaande fragmenten en externe toepassingen kan hebben. U wordt aangeraden de naamgevingsconventie die wordt gebruikt voor de **Eigenschapnaam** van velden zorgvuldig te plannen voordat u het inhoudsfragmentmodel voor gebruikers inschakelt.
 
-1. Merk op dat het **Contributor** model momenteel in een **Laag** staat is.
+1. Zorg ervoor dat het **Contributor** model momenteel in een **Enabled** staat is.
 
-1. Schakel het **Contribute-model** in door de muisaanwijzer op de kaart te plaatsen en op het pictogram **Inschakelen** te klikken:
+   ![Ingeschakeld bijdragemodel](assets/content-fragment-models/enable-contributor-model.png)
 
-   ![Enable the Contributor Model](assets/content-fragment-models/enable-contributor-model.png)
+   U kunt de status van een inhoudsfragmentmodel in- of uitschakelen door de muisaanwijzer op de kaart te plaatsen en op het pictogram **Uitschakelen** / **Inschakelen** te klikken.
 
 ## Gefeliciteerd! {#congratulations}
 
