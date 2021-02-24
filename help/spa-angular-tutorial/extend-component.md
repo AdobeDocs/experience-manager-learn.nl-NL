@@ -1,5 +1,5 @@
 ---
-title: Een component uitbreiden | Aan de slag met de AEM SPA Editor en hoekig
+title: Een component uitbreiden | Aan de slag met de AEM SPA Editor en Angular
 description: Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van de SPA van de AEM moet worden gebruikt. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden. Leer om het delegatiepatroon te gebruiken voor het uitbreiden van Sling Models en eigenschappen van het Verkopen van Middel.
 sub-product: sites
 feature: SPA Editor
@@ -13,7 +13,7 @@ thumbnail: 5871-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '1986'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het begi
 
 6. In de schakelaar van winde aan de `ui.frontend` module, navigerend aan `ui.frontend/src/app/components/card`:
 
-   ![Begin hoekcomponent](assets/extend-component/angular-card-component-start.png)
+   ![Start angular-component](assets/extend-component/angular-card-component-start.png)
 
 7. Inspect het bestand `card.component.ts`.
 
@@ -139,7 +139,7 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het begi
    MapTo('wknd-spa-angular/components/card')(CardComponent, CardEditConfig);
    ```
 
-   Controleer de drie `@Input` parameters in de klasse voor `src`, `alt`, en `title`. Dit zijn verwachte JSON-waarden van de AEM component die aan de hoekcomponent worden toegewezen.
+   Controleer de drie `@Input` parameters in de klasse voor `src`, `alt`, en `title`. Deze worden JSON-waarden verwacht van de AEM component die aan de component Angular wordt toegewezen.
 
 8. Open het bestand `card.component.html`:
 
@@ -149,7 +149,7 @@ De begincode van het hoofdstuk bevat een eerste kaartcomponent. Inspect het begi
    </div>
    ```
 
-   In dit voorbeeld hebben we ervoor gekozen de bestaande hoekafbeeldingscomponent `app-image` opnieuw te gebruiken door de parameters `@Input` vanuit `card.component.ts` door te geven. Later in de zelfstudie worden aanvullende eigenschappen toegevoegd en weergegeven.
+   In dit voorbeeld hebben we ervoor gekozen om de bestaande Angular Image-component `app-image` opnieuw te gebruiken door de `@Input`-parameters vanuit `card.component.ts` door te geven. Later in de zelfstudie worden aanvullende eigenschappen toegevoegd en weergegeven.
 
 ## Sjabloonbeleid bijwerken
 
@@ -199,7 +199,7 @@ Vervolgens ontwerpt u de `Card`-component met de AEM SPA Editor.
 
 6. Werk het tabblad **Metagegevens van element** bij om waarden toe te voegen voor **Alternatieve tekst** en **Bijschrift**.
 
-   Er worden momenteel geen aanvullende wijzigingen weergegeven na het bijwerken van het dialoogvenster. Om de nieuwe gebieden aan de Hoekcomponent bloot te stellen moeten wij het het Verdelen Model voor de `Card` component bijwerken.
+   Er worden momenteel geen aanvullende wijzigingen weergegeven na het bijwerken van het dialoogvenster. Om de nieuwe gebieden aan de Component van de Angular bloot te stellen moeten wij het het Verdelen Model voor de `Card` component bijwerken.
 
 7. Open een nieuw tabblad en navigeer naar [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-angular/us/en/home/jcr%3Acontent/root/responsivegrid/card). Inspect de inhoudsknooppunten onder `/content/wknd-spa-angular/us/en/home/jcr:content/root/responsivegrid` om de inhoud van de `Card`-component te zoeken.
 
@@ -209,7 +209,7 @@ Vervolgens ontwerpt u de `Card`-component met de AEM SPA Editor.
 
 ## Model voor kaartverkoop bijwerken
 
-Als u uiteindelijk de waarden van het dialoogvenster met componenten toegankelijk wilt maken voor de hoekcomponent, moet u het Sling-model bijwerken dat de JSON voor de component `Card` vult. Wij hebben ook de kans om twee stukken bedrijfslogica uit te voeren:
+Om uiteindelijk de waarden van de componentendialoog aan de component van de Angular bloot te stellen moeten wij het het Verdelen Model bijwerken dat JSON voor de `Card` component bevolkt. Wij hebben ook de kans om twee stukken bedrijfslogica uit te voeren:
 
 * Als `titleFromPage` naar **true** gaat, wordt de titel van de pagina die is opgegeven door `cardPath` geretourneerd, anders wordt de waarde van `cardTitle` textfield geretourneerd.
 * Retourneer de laatste gewijzigde datum van de pagina die is opgegeven door `cardPath`.
@@ -258,7 +258,7 @@ Keer aan winde van uw keus terug en open `core` module.
    }
    ```
 
-   Deze methoden worden beschikbaar gesteld via de JSON-model-API en doorgegeven aan de hoekcomponent.
+   Deze methoden worden beschikbaar gemaakt via de JSON-model-API en doorgegeven aan de Angular-component.
 
 3. Open `CardImpl.java`. Dit is de implementatie van `Card.java` interface. Deze implementatie is al gedeeltelijk stopgezet om de zelfstudie te versnellen.  Let op het gebruik van de `@Model`- en `@Exporter`-annotaties om ervoor te zorgen dat het Sling Model kan worden geserialiseerd als JSON via de Sling Model Exporter.
 
@@ -379,9 +379,9 @@ Keer aan winde van uw keus terug en open `core` module.
 
    U ziet dat het JSON-model wordt bijgewerkt met extra sleutel-/waardeparen nadat de methoden in het `CardImpl` Sling-model zijn bijgewerkt.
 
-## Hoekcomponent bijwerken
+## Angular-component bijwerken
 
-Nu het JSON-model is gevuld met nieuwe eigenschappen voor `ctaLinkURL`, `ctaText`, `cardTitle` en `cardLastModified`, kunnen we de hoekcomponent bijwerken en deze weergeven.
+Nu het JSON-model is gevuld met nieuwe eigenschappen voor `ctaLinkURL`, `ctaText`, `cardTitle` en `cardLastModified` kunnen we de Angular-component bijwerken en deze weergeven.
 
 1. Keer aan winde terug en open `ui.frontend` module. Start eventueel de webpack-ontwikkelserver vanuit een nieuw terminalvenster om de wijzigingen in real-time te zien:
 
@@ -449,7 +449,7 @@ Nu het JSON-model is gevuld met nieuwe eigenschappen voor `ctaLinkURL`, `ctaText
 
    >[!NOTE]
    >
-   > U kunt de voltooide [Code van de hoekpuntcomponent hier](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card) bekijken.
+   > U kunt de gebeëindigde [de componentencode van de kaart van de Angular hier](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card) bekijken.
 
 5. Implementeer de volledige wijzigingen in AEM vanuit de hoofdmap van het project met Maven:
 
