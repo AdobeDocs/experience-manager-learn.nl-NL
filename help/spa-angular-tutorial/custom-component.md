@@ -1,5 +1,5 @@
 ---
-title: Een aangepaste component maken | Aan de slag met de AEM SPA Editor en hoekig
+title: Een aangepaste component maken | Aan de slag met de AEM SPA Editor en Angular
 description: Leer hoe u een aangepaste component maakt die wordt gebruikt met de AEM SPA Editor. Leer hoe u dialoogvensters met auteurs en Sling Models ontwikkelt om het JSON-model uit te breiden en een aangepaste component te vullen.
 sub-product: sites
 feature: SPA Editor
@@ -13,7 +13,7 @@ thumbnail: 5831-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: 1fd4d31770a4eac37a88a7c6960fd51845601bee
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1507'
 ht-degree: 0%
 
 ---
@@ -204,7 +204,7 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
    static final String RESOURCE_TYPE = "wknd-spa-angular/components/custom-component";
    ```
 
-   Het middeltype van de component is wat het Schuine model aan de AEM component zal binden en uiteindelijk aan de Hoekcomponent in kaart zal worden gebracht.
+   Het middeltype van de component is wat het Sling Model aan de AEM component zal binden en uiteindelijk aan de component van de Angular in kaart zal worden gebracht.
 
 6. Voeg de `getExportedType()` methode aan `CustomComponentImpl` klasse toe om het type van componentenmiddel terug te keren:
 
@@ -215,7 +215,7 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
    }
    ```
 
-   Deze methode wordt vereist wanneer het uitvoeren van de `ComponentExporter` interface en zal het middeltype blootstellen dat de afbeelding aan de Hoekcomponent toestaat.
+   Deze methode wordt vereist wanneer het uitvoeren van de `ComponentExporter` interface en zal het middeltype blootstellen dat de afbeelding aan de component van de Angular toestaat.
 
 7. Werk de methode `getMessage()` bij om de waarde van het `message` bezit te retourneren dat door de auteursdialoog wordt voortgeduurd. Gebruik de `@ValueMap`-annotatie om de JCR-waarde `message` toe te wijzen aan een Java-variabele:
 
@@ -238,9 +238,9 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
    >
    > U kunt [gebeëindigde CustomComponentImpl.java hier](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java) bekijken.
 
-## De hoekcomponent bijwerken
+## De component Angular bijwerken
 
-De hoekcode voor de aangepaste component is al gemaakt. Voer vervolgens een aantal updates uit om de hoekcomponent aan de AEM toe te wijzen.
+De code van de Angular voor de Component van de Douane is reeds gecreeerd. Voer vervolgens een aantal updates uit om de component Angular toe te wijzen aan de AEM.
 
 1. Open in de module `ui.frontend` het bestand `ui.frontend/src/app/components/custom/custom.component.ts`
 2. Neem de `@Input() message: string;` lijn waar. Verwacht wordt dat de getransformeerde hoofdletterwaarde aan deze variabele wordt toegewezen.
