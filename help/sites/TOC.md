@@ -4,9 +4,9 @@ user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experi
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
+source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '447'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 4%
    + [Content Fragments vs. Experience Fragments](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + Ervaringsfragmenten {#experience-fragments}
    + [Ervaringsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
-   + [Werken met ervaringsfragmenten](experience-fragments/experience-fragments-feature-video-understand.md)
+   + [Bouwstenen](experience-fragments/building-blocks.md)
    + [Sociale post instellen met ervaringsfragmenten](experience-fragments/experience-fragments-social-technical-video-setup.md)
    + [Content Fragments vs. Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Ontwikkeling {#developing}
@@ -52,7 +52,7 @@ ht-degree: 4%
    + [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Aan de slag met AEM headless](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Aan de slag met AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Aan de slag met AEM SPA Editor en hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Aan de slag met AEM SPA Editor en Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [Pagina-eigenschappen uitbreiden](developing/page-properties-technical-video-develop.md)
    + [Ontwikkelen met het Stijlsysteem](developing/style-system-technical-video-understand.md)
    + [Aanbevolen werkwijzen voor stijlsystemen](developing/style-organization-style-system-understand-article.md)
@@ -69,7 +69,7 @@ ht-degree: 4%
    + [De SPA Editor gebruiken](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Lesbestand Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Aan de slag met AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Aan de slag met AEM SPA Editor en hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Aan de slag met AEM SPA Editor en Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
 + Beheer van meerdere sites {#multi-site-management}
    + [Inleiding tot het kopiëren van talen](./multi-site-management/language-copy-overview.md)
    + [Live kopiëren en vervagen](./multi-site-management/live-copy-and-blueprint.md)
