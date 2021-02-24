@@ -1,6 +1,6 @@
 ---
-title: Aan de slag met de AEM SPA Editor en hoekig
-description: Maak de eerste hoekige toepassing voor één pagina (SPA) die in Adobe Experience Manager kan worden bewerkt, AEM met de WKND-SPA. Leer hoe u een SPA maakt met behulp van het Hoekse JS-framework met AEM SPA Editor. Deze meerdelige zelfstudie doorloopt de implementatie van een hoekige toepassing voor een fictief levensstijlmerk, de WKND. In de zelfstudie wordt het einde van de SPA en de integratie met AEM besproken.
+title: Aan de slag met de AEM SPA Editor en Angular
+description: Maak uw eerste Angular Single Page Application (SPA) die in Adobe Experience Manager kan worden bewerkt, AEM met de WKND-SPA. Leer hoe te om een SPA tot stand te brengen gebruikend het Angular JS kader met AEM SPA Redacteur. Deze meerdelige zelfstudie doorloopt de implementatie van een Angular-aanvraag voor een fictieve levensstijl, de WKND. In de zelfstudie wordt het einde van de SPA en de integratie met AEM besproken.
 sub-product: sites
 topics: development
 version: cloud-service
@@ -18,9 +18,9 @@ ht-degree: 2%
 ---
 
 
-# Maak uw eerste hoekige SPA in AEM {#introduction}
+# Maak uw eerste Angular SPA in AEM {#introduction}
 
-Welkom bij een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog niet vertrouwd zijn met de functie **SPA Editor** in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een hoekige toepassing voor een fictief levensstijlmerk, de WKND. De hoekige app wordt ontwikkeld en ontworpen voor implementatie met AEM SPA Editor, die hoekcomponenten toewijst aan AEM componenten. De voltooide SPA, die aan AEM worden opgesteld, kan dynamisch met traditionele in-line het uitgeven hulpmiddelen van AEM worden ontworpen.
+Welkom bij een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog niet vertrouwd zijn met de functie **SPA Editor** in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een Angular-aanvraag voor een fictieve levensstijl, de WKND. De Angular-app wordt ontwikkeld en ontworpen voor implementatie met AEM SPA Editor, die Angular-componenten aan AEM componenten toewijst. De voltooide SPA, die aan AEM worden opgesteld, kan dynamisch met traditionele in-line het uitgeven hulpmiddelen van AEM worden ontworpen.
 
 ![Laatste SPA geïmplementeerd](assets/wknd-spa-implementation.png)
 
@@ -28,14 +28,14 @@ Welkom bij een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog
 
 ## Info
 
-Het doel van deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe te om een Hoektoepassing uit te voeren om met de eigenschap van de SPARedacteur van AEM te werken. In een real-world scenario worden de ontwikkelingsactiviteiten uitgesplitst door persoonlijkheid, die vaak een **Voorste ontwikkelaar van het Eind** en een **Achtereind ontwikkelaar** impliceert. Wij geloven het voor om het even welke ontwikkelaar die aan een AEM SPARedacteur project zal worden betrokken om deze zelfstudie te voltooien.
+Het doel voor deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe te om een toepassing van de Angular uit te voeren om met de eigenschap van de SPARedacteur van AEM te werken. In een real-world scenario worden de ontwikkelingsactiviteiten uitgesplitst door persoonlijkheid, die vaak een **Voorste ontwikkelaar van het Eind** en een **Achtereind ontwikkelaar** impliceert. Wij geloven het voor om het even welke ontwikkelaar die aan een AEM SPARedacteur project zal worden betrokken om deze zelfstudie te voltooien.
 
 De zelfstudie is ontworpen om te werken met **AEM als een Cloud Service** en is achterwaarts compatibel met **AEM 6.5.4+** en **AEM 6.4.8+**. De SPA wordt geïmplementeerd met:
 
 * [Maven AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
 * [AEM SPA Editor](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
 * [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Hoekig](https://angular.io/)
+* [Angular](https://angular.io/)
 
 *Schat 1-2 uur om elk onderdeel van de zelfstudie te doorlopen.*
 
@@ -50,7 +50,7 @@ De [nieuwste codebasis](https://github.com/adobe/aem-guides-wknd-spa/releases) i
 Voordat u deze zelfstudie start, hebt u het volgende nodig:
 
 * Basiskennis van HTML, CSS en JavaScript
-* Basiskennis van [Hoekig](https://angular.io/)
+* Basiskennis van [Angular](https://angular.io/)
 * [AEM als Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk),  [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65) of  [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/)  (3.3.9 of hoger)
