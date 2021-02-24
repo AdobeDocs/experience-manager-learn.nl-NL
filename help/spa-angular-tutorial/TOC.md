@@ -5,9 +5,9 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-user-guide-title: Aan de slag met de AEM SPA Editor en hoekig
-user-guide-description: Maak de eerste hoekige toepassing voor één pagina (SPA) die AEM met de WKND-SPA kan worden bewerkt.
-breadcrumb-title: AEM SPA Editor en hoekige zelfstudie
+user-guide-title: Aan de slag met de AEM SPA Editor en Angular
+user-guide-description: Maak uw eerste Angular Single Page Application (SPA) die in AEM met de WKND-SPA kan worden bewerkt.
+breadcrumb-title: Zelfstudie voor SPA en Angular AEM
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Aan de slag met de AEM SPA Editor en hoekig {#spa-angular-tutorial}
+# Aan de slag met de AEM SPA Editor en Angular {#spa-angular-tutorial}
 
 + [Overzicht](overview.md)
 + [SPA Editor-project](create-project.md)
