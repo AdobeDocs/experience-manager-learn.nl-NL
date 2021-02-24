@@ -1,19 +1,17 @@
 ---
-title: Workflowbeheer gebruiken
+title: Hoe te om Werkschema in AEM te beheren
 description: 'AEM workflowbeheer biedt een gebruiker meer inzicht in de inhoud onder de workflow en maakt een eenvoudiger beheer van workflowmodeldefinities mogelijk. '
-seo-title: Workflowbeheer in AEM gebruiken
-seo-description: EM Workflowbeheer biedt een gebruiker meer inzicht in de inhoud van de workflow en maakt het mogelijk om de definities van workflowmodellen eenvoudiger te beheren.
-version: 6.5
-sub-product: stichting, sites, middelen
-feature: workflow
-topics: governance, collaboration
-activity: use
-audience: administrator
-doc-type: feature video
+version: 6.5, cloud-service
+feature: Workflow
+topic: Inhoudsbeheer
+role: Beheerder
+level: Intermediair
+kt: 2557
+thumbnail: 27848.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 46dead200ec61acf9fdf537f18818f5bb60dbc90
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
@@ -23,19 +21,18 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27848/?quality=12&learn=on)
 
-De volgende aspecten van het workflowbeheer, die in AEM 6.5 zijn geïntroduceerd, worden in deze video besproken:
+In deze video worden de volgende aspecten van workflowbeheer besproken:
 
-+ Enable Workflow metadata under list view settings.
-+ Eenvoudige navigatie naar werkstroomtijdlijn vanuit de lijstweergave
-+ Kopieer en plak een bestaande OOTB-workflow om de standaardfunctionaliteit aan te passen of te overschrijven
-+ Snel publiceren uitvoeren voor [!DNL Workflow Models] en [!DNL Launchers]
-+ Publicatie beheren voor [!DNL Workflow Models] en [!DNL Launchers].
-+ Gebruikers op de hoogte stellen van een waarschuwingsknopinfo wanneer ze een OOTB Workflow Model of Launcher proberen te bewerken.
-+ Mogelijkheid om wijzigingen door te voeren die zijn aangebracht in een OOTB-workflowmodel of in opstarters.
++ Workflowmetagegevens inschakelen onder de weergave-instellingen van de lijst.
++ Navigeren naar de tijdlijn van de workflow voor inhoud in AEM
++ Een workflow aanpassen die wordt geleverd door AEM
++ Snel publiceren voor [!DNL Workflow Models] en [!DNL Launchers]
++ Publicatie beheren voor [!DNL Workflow Models] en [!DNL Launchers]
++ Wijzigingen die zijn aangebracht in een workflowmodel of opstarters herstellen
 
-Deze video gebruikt [!DNL Workflow models] om deze reeks mogelijkheden aan te tonen, maar zij zijn ook van toepassing op [!DNL AEM Launchers].
+Deze video gebruikt [!DNL Workflow Models] om deze reeks mogelijkheden aan te tonen, maar zij zijn ook van toepassing op [!DNL AEM Launchers].
 
 
 >[!NOTE]
 >
-> De video gebruikt AEM Sites UI om het de meta-gegevensvermogen van de werkschemastatus te tonen. Metagegevens over workflowstatus zijn ook van toepassing op de gebruikersinterface van AEM Assets. Selecteer de lijstweergave om de metagegevens voor de workflowstatus in te schakelen in de gebruikersinterface.
+> Video gebruikt AEM Sites om de metagegevensmogelijkheid voor de workflowstatus aan te tonen. Metagegevens over workflowstatus zijn ook van toepassing op AEM Assets. Als u de workflowstatus op elementen wilt zien, zorgt u ervoor dat de lijstweergave is ingeschakeld.
