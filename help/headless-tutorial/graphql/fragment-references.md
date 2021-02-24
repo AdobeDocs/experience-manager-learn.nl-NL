@@ -1,6 +1,6 @@
 ---
 title: Geavanceerde gegevensmodellen met fragmentverwijzingen - Aan de slag met AEM zonder kop - GraphQL
-description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u de functie Fragmentverwijzing gebruikt voor geavanceerde gegevensmodellering en om een relatie tussen twee verschillende inhoudsfragmenten te maken. Leer hoe te om een vraag te wijzigen GraphQL om gebied van een referenced model te omvatten.
+description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u de functie Fragmentverwijzing gebruikt voor geavanceerde gegevensmodellering en hoe u een relatie tussen twee verschillende inhoudsfragmenten maakt. Leer hoe te om een vraag te wijzigen GraphQL om gebied van een referenced model te omvatten.
 sub-product: elementen
 topics: headless
 version: cloud-service
@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -234,13 +234,10 @@ Werk vervolgens de query&#39;s bij die door de React-toepassing worden gebruikt 
 
    ![Medewerker toegevoegd in de app](assets/fragment-references/contributor-added-detail.png)
 
-## Aanvullende bronnen
-
-Voor meer details over de Fragmenten van de Inhoud en GraphQL zie de volgende middelen:
-
-* [Aflevering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-* [AEM GraphQL API voor gebruik met Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-
 ## Gefeliciteerd!{#congratulations}
 
 Gefeliciteerd! U hebt een bestaand model van het Fragment van de Inhoud bijgewerkt om naar een genestelde Fragment van de Inhoud te verwijzen gebruikend het **gebied van de Verwijzing van het Fragment**. U leerde ook hoe te om een vraag te wijzigen GraphQL om gebieden van een referenced model te omvatten.
+
+## Volgende stappen {#next-steps}
+
+In het volgende hoofdstuk, [De plaatsing van de productie gebruikend een Publish milieu ](./production-deployment.md) van AEM, leert over auteur en publiceer de diensten van AEM en het geadviseerde plaatsingspatroon voor headless toepassingen. U zult een bestaande toepassing bijwerken om omgevingsvariabelen te gebruiken om een eindpunt GraphQL dynamisch te veranderen dat op het doelmilieu wordt gebaseerd. U zult ook leren hoe te om behoorlijk AEM voor het middel het delen van de Cross-Origin (CORS) te vormen.
