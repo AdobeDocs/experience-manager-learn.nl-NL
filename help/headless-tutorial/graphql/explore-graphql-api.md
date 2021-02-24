@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 De GraphQL API van AEM verstrekt een krachtige vraagtaal om gegevens van de Fragmenten van de Inhoud aan stroomafwaartse toepassingen bloot te stellen. De modellen van het Fragment van de inhoud bepalen het gegevensschema dat door de Fragmenten van de Inhoud wordt gebruikt. Wanneer een model van het Fragment van de Inhoud wordt gecreeerd of bijgewerkt, wordt het schema vertaald en toegevoegd aan de &quot;grafiek&quot;die omhoog GraphQL API maakt.
 
-In dit hoofdstuk, zullen wij enkele gemeenschappelijke vragen GraphQL onderzoeken om inhoud te verzamelen. Ingebouwd in AEM is winde genoemd [GraphiQL](https://github.com/graphql/graphiql). Met GraphiQL IDE kunt u snel de geretourneerde query&#39;s en gegevens testen en verfijnen. GraphiQL biedt ook eenvoudige toegang tot de documentatie, waardoor u gemakkelijk kunt leren welke methoden beschikbaar zijn en begrijpen.
+In dit hoofdstuk, zullen wij sommige gemeenschappelijke vragen GraphQL onderzoeken om inhoud te verzamelen gebruikend winde genoemd [GraphiQL](https://github.com/graphql/graphiql). Met GraphiQL IDE kunt u snel de geretourneerde query&#39;s en gegevens testen en verfijnen. GraphiQL biedt ook eenvoudige toegang tot de documentatie, waardoor u gemakkelijk kunt leren welke methoden beschikbaar zijn en begrijpen.
 
 ## Vereisten {#prerequisites}
 
@@ -36,6 +36,23 @@ Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de stappen die wo
 * Leer hoe u specifieke gegevenskenmerken kunt filteren en aanvragen.
 * Leer hoe u een variatie van een inhoudsfragment kunt opvragen.
 * Leer hoe u verbinding maakt met een query voor meerdere modellen van inhoudsfragmenten
+
+## Het gereedschap GraphiQL {#install-graphiql} installeren
+
+GrahiQL winde is een ontwikkelingshulpmiddel en nodig slechts op laag-vlakke milieu&#39;s zoals een ontwikkeling of lokale instantie. Daarom is het niet opgenomen in het AEM-project, maar als een afzonderlijk pakket dat op ad-hocbasis kan worden geïnstalleerd.
+
+1. Navigeer naar **[Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM als Cloud Service**.
+1. Zoek naar &quot;GraphiQL&quot;(ben zeker om **i** in **GraphiQL** te omvatten.
+1. Download de nieuwste **GraphiQL Content Package v.x.x.x**
+
+   ![GraphiQL-pakket downloaden](assets/explore-graphql-api/software-distribution.png)
+
+   Het ZIP-bestand is een AEM pakket dat rechtstreeks kan worden geïnstalleerd.
+
+1. Navigeer in het menu **AEM Start** naar **Extra** > **Implementatie** > **Pakketten**.
+1. Klik **Pakket uploaden** en kies het pakket dat in de vorige stap is gedownload. Klik **Installeren** om het pakket te installeren.
+
+   ![GraphiQL-pakket installeren](assets/explore-graphql-api/install-graphiql-package.png)
 
 ## Vraag een lijst van Inhoudsfragmenten {#query-list-cf}
 
@@ -181,7 +198,7 @@ Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragmen
        item {
          _path
          fullName
-         biography {
+         biographyText {
            html
          }
        }
@@ -205,7 +222,7 @@ Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragmen
        item {
          _path
          fullName
-         biography {
+         biographyText {
            html
          }
        }
