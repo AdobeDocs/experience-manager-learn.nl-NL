@@ -5,9 +5,9 @@ user-guide-description: 'Een verzameling video''s en zelfstudies voor Adobe Expe
 sub-product: stichting
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '147'
 ht-degree: 3%
 
 ---
@@ -46,6 +46,5 @@ ht-degree: 3%
 + Workflow {#workflow}
    + [De Workfloweditor gebruiken](./workflow/use-the-workflow-editor.md)
    + [Workflowbeheer gebruiken](./workflow/use-workflow-management.md)
-   + [Gebruik de Mening van de Kalender met AEM Projecten en Inbox](./workflow/use-the-calendar-view-with-aem-projects-and-inbox.md)
    + [Inbox gebruiken](./workflow/use-the-inbox.md)
 
