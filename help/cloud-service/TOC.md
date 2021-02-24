@@ -5,10 +5,10 @@ breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
 translation-type: tm+mt
-source-git-commit: 91399ff4ab26655de27bbecab4ff773f6666d86a
+source-git-commit: c7b3a6e408e46338a6a540c6403601be8c0893e2
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 15%
+source-wordcount: '329'
+ht-degree: 14%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 15%
       + [Testresultaten analyseren](./cloud-manager/devops/analyze-test-results.md)
       + [Dispatcher Configurations](./cloud-manager/devops/dispatcher-configurations.md)
       + [Cloud Manager-API&#39;s](./cloud-manager/devops/cloud-manager-apis.md)
-+ Lokale ontwikkelomgeving ingesteld {#local-development-environment-set-up}
++ Local Development Environment Setup {#local-development-environment-setup}
    + [Overzicht](./local-development-environment/overview.md)
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
    + [Lokale AEM](./local-development-environment/aem-runtime.md)
@@ -58,6 +58,7 @@ ht-degree: 15%
       + [Inhoud publiceren](./developing/basics/content-publishing.md)
       + [OSGi-configuraties](./developing/basics/osgi-configurations.md)
       + [Migratie van Dispatcher Configuration](./developing/basics/dispatcher-configuration.md)
+   + [AEM SDK API JavaDocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)
 + Foutopsporing AEM{#debugging}
    + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
       + [Overzicht](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -107,7 +108,7 @@ ht-degree: 15%
    + [AEM Sites-ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [SPA Editor (reageren)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [SPA Editor (hoekig)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [SPA Editor (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites en Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Op token gebaseerde verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
 
