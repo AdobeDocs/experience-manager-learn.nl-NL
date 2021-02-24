@@ -1,6 +1,6 @@
 ---
-title: SPA componenten toewijzen aan AEM componenten | Aan de slag met de AEM SPA Editor en hoekig
-description: Leer hoe u hoekcomponenten aan Adobe Experience Manager (AEM)-componenten toewijst met de AEM SPA Editor JS SDK. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen.
+title: SPA componenten toewijzen aan AEM componenten | Aan de slag met de AEM SPA Editor en Angular
+description: Leer hoe u Angulars aan Adobe Experience Manager-componenten (AEM) toewijst met de AEM SPA Editor JS SDK. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen.
 sub-product: sites
 feature: SPA Editor
 topics: development
@@ -13,7 +13,7 @@ thumbnail: 5311-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: 28b5522e094a41d81116acb923dc0390478e2308
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 # SPA componenten toewijzen aan AEM componenten {#map-components}
 
-Leer hoe u hoekcomponenten aan Adobe Experience Manager (AEM)-componenten toewijst met de AEM SPA Editor JS SDK. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen.
+Leer hoe u Angulars aan Adobe Experience Manager-componenten (AEM) toewijst met de AEM SPA Editor JS SDK. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen.
 
-In dit hoofdstuk wordt dieper ingegaan op de AEM JSON-model-API en wordt uitgelegd hoe de JSON-inhoud die door een AEM wordt blootgesteld, automatisch als props in een hoekcomponent kan worden geïnjecteerd.
+In dit hoofdstuk wordt dieper ingegaan op de AEM JSON-model-API en wordt uitgelegd hoe de JSON-inhoud die door een AEM wordt aangeboden, automatisch als props in een Angular-component kan worden geïnjecteerd.
 
 ## Doelstelling
 
 1. Leer hoe u AEM componenten kunt toewijzen aan SPA Componenten.
 2. Begrijp het verschil tussen **Container** componenten en **Content** componenten.
-3. Maak een nieuwe hoekcomponent die is toegewezen aan een bestaande AEM.
+3. Maak een nieuwe Angular die aan een bestaande AEM wordt toegewezen.
 
 ## Wat u gaat maken
 
@@ -69,9 +69,9 @@ U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wkn
 
 Het basisconcept is om een SPA Component aan een AEM Component in kaart te brengen. AEM componenten, voer server-kant in, voer inhoud als deel van JSON model API uit. De JSON-inhoud wordt door de SPA verbruikt en wordt in de browser op de client uitgevoerd. Er wordt een 1:1-toewijzing gemaakt tussen SPA componenten en een AEM component.
 
-![Overzicht op hoog niveau van het toewijzen van een AEM component aan een hoekcomponent](./assets/map-components/high-level-approach.png)
+![Overzicht op hoog niveau van het toewijzen van een AEM component aan een component van de Angular](./assets/map-components/high-level-approach.png)
 
-*Overzicht op hoog niveau van het toewijzen van een AEM component aan een hoekcomponent*
+*Overzicht op hoog niveau van het toewijzen van een AEM component aan een component van de Angular*
 
 ## De tekstcomponent Inspect
 
@@ -109,7 +109,7 @@ Laten we eens kijken hoe de component werkt.
 
 3. In winde van uw keus open omhoog het AEM Project voor de SPA WKND. Breid `ui.frontend` module uit en open het dossier **text.component.ts** onder `ui.frontend/src/app/components/text/text.component.ts`:
 
-   ![Text.js Angular Component Source Code](assets/map-components/vscode-ide-text-js.png)
+   ![Broncode van Angular Text.js](assets/map-components/vscode-ide-text-js.png)
 
 4. Het eerste te inspecteren gebied is `class TextComponent` bij ~line 35:
 
@@ -132,7 +132,7 @@ Laten we eens kijken hoe de component werkt.
 
    [@Input()-](https://angular.io/api/core/Input) decorator wordt gebruikt om velden te declareren die de waarden via het toegewezen JSON-object hebben ingesteld, die eerder zijn gecontroleerd.
 
-   `@HostBinding('innerHtml') get content()` is een methode die de geschreven tekstinhoud van de waarde van  `this.text`. Als de inhoud tekst met opmaak is (bepaald door de markering `this.richText`), wordt de ingebouwde beveiliging van Angular omzeild. De [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer) van hoeken wordt gebruikt om ruwe HTML &quot;te &quot;verfijnen&quot;en kwetsbaarheid van Scripting over de hele site te verhinderen. De methode is gebonden aan het `innerHtml` bezit gebruikend [@HostBinding](https://angular.io/api/core/HostBinding) decorator.
+   `@HostBinding('innerHtml') get content()` is een methode die de geschreven tekstinhoud van de waarde van  `this.text`. Als de inhoud tekst met opmaak is (bepaald door de ingebouwde beveiliging van de Angular `this.richText`), wordt deze genegeerd. Angular [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer) wordt gebruikt om de onbewerkte HTML &quot;te schrobben&quot;en kwetsbaarheid van Scripting over de hele site te verhinderen. De methode is gebonden aan het `innerHtml` bezit gebruikend [@HostBinding](https://angular.io/api/core/HostBinding) decorator.
 
 5. Controleer `TextEditConfig` nu op ~line 24:
 
@@ -199,7 +199,7 @@ Laten we eens kijken hoe de component werkt.
 
 ## De afbeeldingscomponent maken
 
-Maak vervolgens een `Image` hoekige component die is toegewezen aan de AEM [Afbeeldingscomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html). De `Image` component is een ander voorbeeld van een **content** component.
+Maak vervolgens een `Image`-Angular-component die is toegewezen aan de AEM [Image-component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html). De `Image` component is een ander voorbeeld van een **content** component.
 
 ### Inspect the JSON
 
@@ -253,7 +253,7 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
 ### De component Image implementeren
 
 1. Stop **webpack dev server** indien gestart.
-2. Creeer een nieuwe component van het Beeld door de HoekCLI `ng generate component` bevel van binnen `ui.frontend` in werking te stellen omslag:
+2. Creeer een nieuwe component van het Beeld door de Angular CLI `ng generate component` bevel van binnen `ui.frontend` omslag in werking te stellen:
 
    ```shell
    $ ng generate component components/image
@@ -373,11 +373,11 @@ De `ImageComponent`-component is alleen zichtbaar in de **webpack-ontwikkelserve
 
    ![Layoutcontainerbeleid](./assets/map-components/layout-container-policy.png)
 
-4. Onder **Toegestane componenten** > **WKND SPA Hoekig - Inhoud** > controleer de **Image** component:
+4. Onder **Toegestane componenten** > **WKND SPA Angular - Inhoud** > controleer de **Image** component:
 
    ![Afbeeldingscomponent geselecteerd](assets/map-components/check-image-component.png)
 
-   Onder **Standaardcomponenten** > **Toewijzing toevoegen** en kies de **Afbeelding - WKND SPA Hoek - Inhoud** component:
+   Onder **Standaardcomponenten** > **Toewijzing toevoegen** en kies de **Afbeelding - WKND SPA Angular - Inhoud** component:
 
    ![Standaardcomponenten instellen](assets/map-components/default-components.png)
 
@@ -463,7 +463,7 @@ U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wkn
 
 ### Volgende stappen {#next-steps}
 
-[Navigatie en het Verpletteren](navigation-routing.md)  - Leer hoe de veelvoudige meningen in de SPA door afbeelding aan AEM Pagina&#39;s met SPA Redacteur SDK kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend Hoekrouter en toegevoegd aan een bestaande component van de Kopbal.
+[Navigatie en het Verpletteren](navigation-routing.md)  - Leer hoe de veelvoudige meningen in de SPA door afbeelding aan AEM Pagina&#39;s met SPA Redacteur SDK kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend de Router van de Angular en toegevoegd aan een bestaande component van de Kopbal.
 
 ## Bonus - configuraties aan broncontrole blijven {#bonus}
 
