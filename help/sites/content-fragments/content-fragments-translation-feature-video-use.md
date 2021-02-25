@@ -1,46 +1,41 @@
 ---
-title: Vertaling gebruiken met AEM inhoudsfragmenten
-description: AEM 6.3 introduceert de mogelijkheid om inhoudsfragmenten te vertalen. Elementen met gemengde media en verzamelingen van middelen die bij een inhoudsfragment horen, kunnen ook worden geëxtraheerd en vertaald.
-sub-product: sites, activa, inhoudsdiensten
-feature: content-fragments, multi-site-manager
-topics: localization, content-architecture
-audience: all
-doc-type: feature video
-activity: use
-version: 6.3, 6.4, 6.5
+title: Ondersteuning voor vertaling van AEM Content Fragments
+description: Leer hoe u Content Fragments kunt lokaliseren en vertalen met Adobe Experience Manager. Elementen met gemengde media die aan een inhoudsfragment zijn gekoppeld, kunnen ook worden geëxtraheerd en vertaald.
+feature: Inhoudsfragmenten, beheer voor meerdere sites
+topics: Localization
+role: Zakelijke praktiserer
+level: Intermediair
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 201
+thumbnail: 18131.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 4620acc18a08d71994753903b79247a8ed3fd8f5
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
 
 
-# Vertaling gebruiken met AEM inhoudsfragmenten{#using-translation-with-aem-content-fragments}
+# Ondersteuning voor vertaling van AEM Content Fragments {#translation-support-content-fragments}
 
-AEM 6.3 introduceert de mogelijkheid om inhoudsfragmenten te vertalen. Elementen met gemengde media en verzamelingen van middelen die bij een inhoudsfragment horen, kunnen ook worden geëxtraheerd en vertaald.
+Leer hoe u Content Fragments kunt lokaliseren en vertalen met Adobe Experience Manager. Elementen met gemengde media die aan een inhoudsfragment zijn gekoppeld, kunnen ook worden geëxtraheerd en vertaald.
 
->[!VIDEO](https://video.tv.adobe.com/v/18131/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18131/?quality=12&learn=on)
 
 ## Gebruik Gevallen {#content-fragment-translation-use-cases} voor het omzetten van inhoudsfragmenten
 
-Inhoudsfragmenten zijn herkende inhoudsfragmenten die AEM uitpakken voor verzending naar een externe vertaalservice. Verschillende gebruiksgevallen worden vanuit het vak ondersteund:
+Inhoudsfragmenten zijn een herkend inhoudstype dat extracten AEM die naar een externe vertaalservice moeten worden verzonden. Verschillende gebruiksgevallen worden vanuit het vak ondersteund:
 
 1. Een inhoudsfragment kan rechtstreeks in de middelenconsole worden geselecteerd voor het kopiëren en vertalen van talen
 2. Inhoudsfragmenten waarnaar op een sitepagina wordt verwezen, worden gekopieerd naar de juiste taalmap en geëxtraheerd voor vertaling wanneer de sitepagina is geselecteerd voor een taalkopie
 3. Inline media-elementen die zijn ingesloten in een inhoudsfragment, kunnen worden geëxtraheerd en vertaald.
 4. Verzamelingen van middelen die aan een inhoudsfragment zijn gekoppeld, kunnen worden geëxtraheerd en vertaald
 
-## Opties voor vertaalconfiguratie {#translation-config-options}
+## Redacteur van de Regels van de vertaling {#translation-rules-editor}
 
-In de vertaalconfiguratie in het vak kunt u kiezen uit verschillende opties voor het vertalen van inhoudsfragmenten. Standaard worden inline media-elementen en bijbehorende elementen NIET vertaald. Als u de vertaalconfiguratie wilt bijwerken, navigeert u naar [http://localhost:4502/etc/cloudservices/translation/default_translation.html](http://localhost:4502/etc/cloudservices/translation/default_translation.html).
+Het vertaalgedrag van de Experience Manager kan worden bijgewerkt door **Redacteur van de Regels van de Vertaling** te gebruiken. Als u de vertaling wilt bijwerken, navigeert u naar **Tools** > **General** > **Translation Configuration** op [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
 
-Er zijn vier opties voor het omzetten van Content Fragment-elementen:
+Uit de doos van de configuraties verwijzingsInhoudsfragmenten bij `fragmentPath` met een middeltype van `core/wcm/components/contentfragment/v1/contentfragment`. Alle componenten die van `v1/contentfragment` erven worden erkend door de standaardconfiguratie.
 
-1. **Niet vertalen (standaard)**
-2. **Alleen inline-media-elementen**
-3. **Alleen gekoppelde Asset Collections**
-4. **Inline-media-elementen en bijbehorende verzamelingen**
-
-![Config. omzetten](assets/classic-ui-dialog.png)
+![Editor voor omzettingsregels](assets/translation-configuration.png)
