@@ -4,9 +4,9 @@ user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experi
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: 4620acc18a08d71994753903b79247a8ed3fd8f5
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '446'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 4%
 + Contentfragmenten {#content-fragments}
    + [Inhoudsfragmenten ontwerpen](content-fragments/content-fragments-feature-video-use.md)
    + [Inhoudsfragmenten leveren](content-fragments/content-fragments-delivery-feature-video-use.md)
-   + [Vertalen met inhoudsfragmenten](content-fragments/content-fragments-translation-feature-video-use.md)
+   + [Inhoudsfragmenten omzetten](content-fragments/content-fragments-translation-feature-video-use.md)
    + [Content Fragments vs. Experience Fragments](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + Ervaringsfragmenten {#experience-fragments}
    + [Ervaringsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
