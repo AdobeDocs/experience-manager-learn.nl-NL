@@ -1,20 +1,17 @@
 ---
 title: Tijdlijn verdraaien gebruiken met AEM Sites
-seo-title: Tijdlijn verdraaien gebruiken met Adobe Experience Manager Sites
 description: Timewarp is een eigenschap van Adobe Experience Manager Sites die auteurs een snelle manier verstrekt om de staat van een pagina op specifieke tijd in het verleden te herzien.
-seo-description: Timewarp is een eigenschap van Adobe Experience Manager Sites die auteurs een snelle manier verstrekt om de staat van een pagina op specifieke tijd in het verleden te herzien.
-feature: timewarp
-topics: authoring
-audience: all
-doc-type: feature video
-activity: use
-version: 6.3, 6.4, 6.5
-uuid: f1bcb8ae-db14-4f3d-b52e-48f589470aec
-discoiquuid: dec419ba-233e-4ba5-9eb8-837035f4b4b8
+topic: Inhoudsbeheer
+feature: Authoring
+role: Zakelijke praktiserer
+level: Intermediair
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 3307
+thumbnail: 17453.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d1578e1c6fb6208f04953454354e1ed23566e450
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '86'
 ht-degree: 1%
 
 ---
@@ -24,8 +21,8 @@ ht-degree: 1%
 
 Timewarp is een eigenschap van Adobe Experience Manager Sites die auteurs een snelle manier verstrekt om de staat van een pagina op specifieke tijd in het verleden te herzien.
 
->[!VIDEO](https://video.tv.adobe.com/v/17453/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17453/?quality=12&learn=on)
 
-## Aanvullende bronnen {#additional-resources}
+## Meer bronnen {#more-resources}
 
-* [Werken met paginaversies - Tijdlijn verdraaien](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/working-with-page-versions.html#Timewarp)
+* [Werken met paginaversies - Tijdlijn verdraaien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html)
