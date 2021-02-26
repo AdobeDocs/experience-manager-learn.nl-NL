@@ -1,26 +1,22 @@
 ---
-title: Zoekopdracht
-description: Een diepgaande blik op AEM Assets onderzoek het opvoeren en hoe het in de bredere context van AEM werkt.
-topics: metadata, search
-audience: all
-doc-type: feature video
-activity: understand
-version: 6.3, 6.4, 6.5
+title: Wat is Search Boost in AEM Assets?
+description: Leer hoe u trefwoorden en woordgroepen toevoegt om de zoekrelevantie van middelen in Adobe Experience Manager te vergroten.
+topic: Inhoudsbeheer
+feature: Zoeken
+role: Zakelijke praktiserer
+level: Intermediair
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 103
+thumbnail: 16766.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7a06a9ae0c57669578e1c11fa035f80583c90dd8
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 0%
+source-wordcount: '33'
+ht-degree: 3%
 
 ---
 
 
-# Zoeken in Booleaanse waarde met metagegevens van element {#search-boost-asset}
+# Zoekopdracht
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
-
-## Meer informatie over zoeken in AEM Assets{#understanding-search-boosting-in-aem-assets}
-
-Een diepgaande blik op AEM Assets onderzoek het opvoeren en hoe het in de bredere context van AEM werkt.
-
->[!VIDEO](https://video.tv.adobe.com/v/16770/?quality=12&learn=on)
