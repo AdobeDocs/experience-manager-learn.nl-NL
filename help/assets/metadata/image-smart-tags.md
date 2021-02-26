@@ -1,18 +1,17 @@
 ---
 title: Slimme tags voor afbeeldingen met AEM Assets
 description: Slimme tags voor afbeeldingen vergroten AEM zoekmogelijkheden door automatisch en intelligent metagegevenstags toe te voegen aan afbeeldingselementen op basis van de inhoud van de afbeelding.
-feature: smart-tags
-topics: metadata, search
-audience: all
-doc-type: feature video
-activity: understand
-version: 6.3, 6.4, 6.5
-kt: 5244
+topic: Inhoudsbeheer
+feature: Slimme tags
+role: Zakelijke praktiserer
+level: Intermediair
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 645
 thumbnail: 17019.jpg
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: a5fb96275194ddc46169832c0fb79a2587833564
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '225'
 ht-degree: 11%
 
 ---
@@ -31,12 +30,12 @@ Met Slimme tags voor afbeeldingen van AEM-elementen wordt het zoeken in AEM-elem
 
 >[!VIDEO](https://video.tv.adobe.com/v/17023/?quality=12&learn=on)
 
-Voordat u de Smart Content Service kunt gebruiken, moet u het volgende doen om een integratie te maken in Adobe I/O:
+Voordat u de service Slimme inhoud kunt gebruiken, moet u het volgende doen om een integratie op Adobe I/O te maken:
 
 * Een Adobe ID-account met beheerdersrechten voor de organisatie
 * De service Smart Content Service is ingeschakeld voor uw organisatie
 
-In de video worden de volgende taken beschreven die vereist zijn om de service met slimme inhoud van Adobe I/O te configureren die wordt gebruikt voor slimme-tagafbeeldingen.
+In de video worden de volgende taken beschreven die nodig zijn om de service Adobe I/O Smart Content (Slimme inhoud) te configureren die wordt gebruikt voor slimme-tagafbeeldingen.
 
 * Creeer een Slimme configuratie van de Dienst van de Inhoud in AEM om een openbare sleutel te produceren. Verkrijg een openbaar certificaat voor OAuth-integratie.
 * Maak een integratie in Adobe I/O en upload de gegenereerde openbare sleutel.
@@ -45,4 +44,4 @@ In de video worden de volgende taken beschreven die vereist zijn om de service m
 
 ## Aanvullende bronnen
 
-* [Documentatie over slimme AEM Assets-tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)
+* [Documentatie over slimme AEM Assets-tags](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
