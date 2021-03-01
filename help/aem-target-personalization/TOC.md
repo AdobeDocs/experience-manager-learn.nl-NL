@@ -6,7 +6,7 @@ version: 6.5
 sub-product: sites
 audience: author, marketer, administrator, architect, developer
 doc-type: tutorial
-feature: experience-fragments
+feature: ervaringsfragmenten
 topics: personalization, activities, experiences, integrations, offers
 activity: develop, understand
 index: y
@@ -14,7 +14,7 @@ kt: 2214
 translation-type: tm+mt
 source-git-commit: bdb62b3361f20a0d0f27f5818cb82276980755d1
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '66'
 ht-degree: 3%
 
 ---
@@ -28,5 +28,5 @@ ht-degree: 3%
 + [Aanpassing van de volledige webpaginamogelijkheden](./personalization-use-case-2.md)
 + Implementatie {#aem-target-implementation}
    + [Inleiding](./implementation.md)
-   + [AEM en Adobe Target met Launch en Adobe I/O](./using-launch-adobe-io.md)
+   + [AEM en Adobe Target met Launch and Adobe I/O](./using-launch-adobe-io.md)
    + [AEM en Adobe Target met behulp van verouderde Cloud Services](./using-aem-cloud-services.md)
