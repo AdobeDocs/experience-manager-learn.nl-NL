@@ -7,7 +7,7 @@ activity: develop
 audience: developer
 user-guide-title: Inleiding tot Dynamic Media Classic
 user-guide-description: Deze zelfstudie laat zien hoe u met Dynamic Media Classic rijke media-inhoud kunt maken, ontwerpen en leveren.
-breadcrumb-title: Dynamische media Klassieke Tutorials
+breadcrumb-title: Dynamic Media Classic Tutorials
 index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
