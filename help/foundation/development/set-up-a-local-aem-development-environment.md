@@ -7,9 +7,9 @@ topics: development
 activity: develop
 audience: developer
 translation-type: tm+mt
-source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
+source-git-commit: 947ffbfcc64f0e2e010a0515c8e6cf1530ec4ea9
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -188,6 +188,20 @@ Alle AEM projecten zouden van de recentste versie van **[!DNL AEM Project Archet
 Een geïntegreerde ontwikkelomgeving of IDE is een toepassing waarin een teksteditor, syntaxisondersteuning en buildtools worden gecombineerd. Afhankelijk van het type van ontwikkeling u doet, zou één winde boven een andere kunnen verkiezen. Ongeacht winde, zal het belangrijk zijn om ***push*** code aan een lokale AEM instantie periodiek te kunnen testen om het te testen. Het zal ook belangrijk zijn om af en toe ***pull*** configuraties van een lokale AEM instantie in uw AEM project aan een bron-controle beheerssysteem zoals Git voort te zetten.
 
 Hieronder staan een paar populairdere IDEs die met AEM ontwikkeling met overeenkomstige video&#39;s worden gebruikt die de integratie met een lokale AEM instantie tonen.
+
+>[!NOTE]
+>
+> Het WKND-project is standaard bijgewerkt om als Cloud Service aan AEM te werken. Het is bijgewerkt om [achterwaarts compatibel met 6.5/6.4](https://github.com/adobe/aem-guides-wknd#building-for-aem-6xx) te zijn. Als u AEM 6.5 of 6.4 gebruikt, voegt u het `classic`-profiel toe aan alle Maven-opdrachten.
+
+```shell
+$ mvn clean install -PautoInstallSinglePackage -Pclassic
+```
+
+Wanneer het gebruiken van winde gelieve te controleren `classic` in uw Gemaakt lusje van het Profiel.
+
+![Tabblad Geweven profiel](assets/set-up-a-local-aem-development-environment/intelliJMavenProfiles.png)
+
+*IntelliJ Maven Profile*
 
 ### [!DNL Eclipse] IDE
 
