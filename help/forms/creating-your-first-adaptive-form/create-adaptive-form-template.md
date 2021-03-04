@@ -1,17 +1,20 @@
 ---
 title: Aangepaste formuliersjabloon maken
 description: De sjabloon definieert de structuur en initiële inhoud van het adaptieve formulier.
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 thumbnail: 37324.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
