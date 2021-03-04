@@ -1,16 +1,19 @@
 ---
 title: OKTA configureren met AEM
 description: Begrijp diverse configuratiemontages voor het gebruiken van enig teken-binnen gebruikend okta
-feature: administratie
+feature: Adaptieve Forms
 topics: development, authentication, security
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.5
+topic: Beheer
+role: Beheerder
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
