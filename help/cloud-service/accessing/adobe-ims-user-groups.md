@@ -1,7 +1,7 @@
 ---
 title: Adobe IMS-gebruikersgroepen en -AEM
 description:  Adobe IMS gebruikersgroepen vestigen logische reeksen gebruikers die aan AEM worden blootgesteld, waar zij kunnen worden leveraged om toestemmingen aan AEM gebruikers te bepalen.
-feature: users-and-groups
+feature: 'Gebruikers en groepen '
 topics: authentication
 version: cloud-service
 activity: setup
@@ -9,11 +9,14 @@ audience: administrator
 doc-type: feature video
 kt: 4999
 thumbnail: 39150.jpg
+topic: Beheer, beveiliging
+role: Beheerder
+level: Begin
 translation-type: tm+mt
-source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 0%
+source-wordcount: '99'
+ht-degree: 3%
 
 ---
 
