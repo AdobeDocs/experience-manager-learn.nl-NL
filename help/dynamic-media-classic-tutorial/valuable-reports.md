@@ -1,16 +1,19 @@
 ---
 title: Waardevolle rapporten voor beheerders
-description: Ontdek twee waardevolle rapporten dat de beheerders van Dynamische Klassieke Media opstelling zouden moeten overwegen.
+description: Ontdek twee waardevolle rapporten die beheerders van Dynamic Media Classic zouden moeten overwegen vestiging te vestigen.
 sub-product: dynamic-media, elementen
-feature: reports
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, reports
 audience: all
 activity: use
+topic: Inhoudsbeheer
+role: Beheerder
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: ac603e55308f306305482dfdee31a591274c164a
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -40,11 +43,11 @@ _Rapport Afbeeldingsfout._
 
 We hopen dat u de inhoud in deze handleiding met best practices hebt gevonden om aan de slag te gaan met of meer uit uw krachtige, rijke mediaoplossing te halen.
 
-Als u meer wilt weten over Dynamic Media Classic, bekijkt u de volgende bronnen:
+Raadpleeg de volgende bronnen voor meer informatie over Dynamic Media Classic:
 
-- [Dynamic Media Classic op Experience League - Ophalen tot waarde](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic op Experience League - Ophalen voor waarde](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic op Experience League - Meer doen](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Dynamische media-nieuwsbrieven archiveren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Subscription Page in Dynamic Media Newsletter](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
-- [Dynamische Klassieke documentatie van Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
+- [De Dynamic Media-nieuwsbrieven archiveren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Abonnementspagina voor Dynamic Media Newsletter](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
+- [Klassieke Dynamic Media-documentatie](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
 - [Blogberichten op rijke media](https://theblog.adobe.com/tag/dynamic-media)
