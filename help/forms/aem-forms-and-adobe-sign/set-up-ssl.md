@@ -1,7 +1,7 @@
 ---
 title: SSL inschakelen voor AEM
 description: Met de installatiewizard van Adobe Experience Manager SSL kunt u een AEM instellen die via HTTPS wordt uitgevoerd.
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 17993.jpg
 kt: 6046
+topic: Ontwikkeling
+role: Beheerder
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 0%
+source-wordcount: '85'
+ht-degree: 1%
 
 ---
 
