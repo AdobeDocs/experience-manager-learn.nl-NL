@@ -4,17 +4,20 @@ seo-title: Streepjescodeservice met adaptieve Forms
 description: Streepjescodeservice gebruiken om streepjescode te decoderen en formuliervelden te vullen met de geëxtraheerde gegevens
 seo-description: Streepjescodeservice gebruiken om streepjescode te decoderen en formuliervelden te vullen met de geëxtraheerde gegevens
 uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: barcoded-forms
+feature: streepjescode-formulieren
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
