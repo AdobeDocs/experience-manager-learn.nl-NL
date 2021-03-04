@@ -5,10 +5,14 @@ description: Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken verni
 seo-description: Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken vernieuwen? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën.
 content-type: reference
 topic-tags: introduction
+feature: Projectarchetype AEM, kerncomponenten, Pagina-editor, bewerkbare sjablonen
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '366'
 ht-degree: 6%
 
 ---
@@ -42,4 +46,4 @@ De video toont hoe het project van de Plaats WKND kan zijn:
 2. Wordt gespoeld naar een stroomopwaartse Adobe Cloud Manager Git-opslagplaats die is geregistreerd bij een AEM als Cloud Service Program
 3. Distribueren via leidingen van Cloud Manager naar AEM als een Cloud Service-omgeving
 
-Voor een volledig overzicht van hoe te om AEM project in te voeren om als dienst van de Wolk te AEM, bekijk de videoreeks over hoe te om Git met de Manager van de Adobe Cloud [ te integreren.](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)
+Voor een volledig overzicht van hoe te om AEM project in te voeren om als dienst van de Wolk te AEM, bekijk de videoreeks over hoe te om Git met de Manager van de Adobe Cloud ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html) te integreren.[
