@@ -1,7 +1,7 @@
 ---
 title: Stel de arbeiders van de Asset compute aan Adobe I/O Runtime voor gebruik met AEM als Cloud Service op
 description: 'De projecten van de asset compute, en de werknemers die zij bevatten, moeten in Adobe I/O Runtime worden ingezet om door AEM als Cloud Service te worden gebruikt. '
-feature: asset-compute
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -53,7 +56,7 @@ Als u werkelijke omgevingsvariabelen instelt, overschrijft u de waarden voor dez
 
 De algemene aanpak, die doorgaans door een CI/CD-systeem wordt geautomatiseerd, voor de implementatie in werkgebied- en productieomgevingen is:
 
-1. Controleer of de [Adobe I/O CLI npm-module en de Asset compute-insteekmodule](../set-up/development-environment.md#aio) zijn geïnstalleerd
+1. Zorg ervoor dat de [Adobe I/O CLI npm-module en de Asset compute-insteekmodule](../set-up/development-environment.md#aio) zijn geïnstalleerd
 1. Controle uit het project van de Asset compute om van Git op te stellen
 1. De omgevingsvariabelen instellen met de waarden die overeenkomen met de doelwerkruimte (werkgebied of productie)
    + De twee vereiste variabelen zijn `AIO_runtime_namespace` en `AIO_runtime_auth` en worden verkregen per werkruimte in de Console van de Ontwikkelaar van Adobe I/O via de functie __Alle__ van de Werkruimte downloaden.
@@ -78,6 +81,6 @@ Als de projectversie van de Asset compute verandert, veranderen de worker-URL&#3
 
 ## Werkruimte-API-provisioning{#workspace-api-provisioning}
 
-Toen [het Adobe Project Firefly-project in Adobe I/O](../set-up/firefly.md) werd opgezet om lokale ontwikkeling te steunen, werd een nieuwe werkruimte van de Ontwikkeling gecreeerd en __Asset compute, I/O Gebeurtenissen__ en __I/O Gebeurtenisbeheer APIs__ werden toegevoegd aan het.
+Toen [het project van Adobe Firefly in Adobe I/O {a1/> oprichtte om lokale ontwikkeling te steunen, werd een nieuwe werkruimte van de Ontwikkeling gecreeerd en __Asset compute, I/O Gebeurtenissen__ en __I/O het Beheer APIs van Gebeurtenissen__ werden toegevoegd aan het.](../set-up/firefly.md)
 
 De API&#39;s __Asset compute, I/O Events__ en __I/O Events Management worden alleen expliciet toegevoegd aan de werkruimten die worden gebruikt voor lokale ontwikkeling.__ Voor werkruimten die (uitsluitend) met AEM als een Cloud Service-omgeving integreren, is __niet__ vereist dat deze API&#39;s expliciet worden toegevoegd omdat de API&#39;s van nature beschikbaar worden gemaakt voor AEM als Cloud Service.
