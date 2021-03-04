@@ -5,16 +5,19 @@ description: Dit is onderdeel 6 van een zelfstudie met meerdere stappen voor het
 seo-description: Dit is onderdeel 6 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel, zullen wij Interactieve Communicatie voor het Kanaal van het Web tot stand brengen.
 uuid: a1b29c5b-a323-4bda-aa99-5fb98614b690
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
-feature: interactieve communicatie
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
