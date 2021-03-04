@@ -4,21 +4,18 @@ seo-title: Geolocatie-API's gebruiken in Adaptive Forms
 description: Adresvelden op het formulier vullen met de API's voor geolocatie
 seo-description: Adresvelden op het formulier vullen met de API's voor geolocatie
 uuid: 5a461659-6873-4ea1-9f37-8296e5a9d895
-feature: Adaptieve Forms
+feature: adaptieve vormen,
 topics: integrations
 audience: developer
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
 discoiquuid: 3400251b-aee0-4d69-994b-e1643fabc868
-topic: Ontwikkeling
-role: Developer
-level: Ervaren
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 1%
+source-wordcount: '430'
+ht-degree: 0%
 
 ---
 
