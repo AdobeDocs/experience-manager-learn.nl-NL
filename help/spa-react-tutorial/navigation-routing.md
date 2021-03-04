@@ -2,17 +2,20 @@
 title: Navigatie en routering toevoegen | Aan de slag met de AEM SPA Editor en reageren
 description: Leer hoe meerdere weergaven in de SPA kunnen worden ondersteund door aan AEM Pagina's toe te wijzen met de SPA Editor SDK. De dynamische navigatie wordt uitgevoerd gebruikend React Router en toegevoegd aan een bestaande component van de Kopbal.
 sub-product: sites
-feature: maven-archetype, SPA Editor
+feature: SPA Editor
 topics: development
 version: cloud-service
 activity: develop
 audience: developer
 kt: 4988
 thumbnail: 4988-spa-react.jpg
+topic: SPA
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2117'
 ht-degree: 0%
 
 ---
@@ -103,7 +106,7 @@ In vorige hoofdstukken werd de component `Header` toegevoegd als een zuivere Rea
 
    De AEM `Header` component erft alle functionaliteit van [Navigation Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html) via het `sling:resourceSuperType` bezit.
 
-## Koptekst toevoegen aan sjabloon {#add-header-template}
+## De koptekst toevoegen aan de sjabloon {#add-header-template}
 
 1. Open browser en login aan AEM, [http://localhost:4502/](http://localhost:4502/). De begincodebasis zou reeds moeten worden opgesteld.
 1. Navigeer naar **SPA Paginasjabloon**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
@@ -353,7 +356,7 @@ Implementeer vervolgens het navigatiemenu als onderdeel van de `Header`. We kunn
    ...
    ```
 
-   Zoals eerder vermeld, in plaats van de navigatie binnen `Header` uit te voeren zullen wij de meerderheid van de logica in `Navigation` component uitvoeren.  De eigenschappen van de `Header` omvatten de JSON-structuur die nodig is om het menu te maken. We geven alle profielen door.
+   Zoals eerder vermeld, zullen wij in plaats van het uitvoeren van de navigatie binnen `Header` de meerderheid van de logica in `Navigation` component uitvoeren.  De eigenschappen van de `Header` omvatten de JSON-structuur die nodig is om het menu te maken. We geven alle profielen door.
 1. Open het bestand `Navigation.js` om `ui.frontend/src/components/Navigation/Navigation.js`.
 1. Implementeer de methode `renderGroupNav(children)`:
 
