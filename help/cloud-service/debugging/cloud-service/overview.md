@@ -1,17 +1,20 @@
 ---
 title: Foutopsporing AEM als Cloud Service
 description: op zelfbediening, scalable, wolkeninfrastructuur, wat vereist AEM ontwikkelaars om te begrijpen en te zuiveren diverse facetten van AEM als Cloud Service, van bouw en implementatie aan het verkrijgen van details van het runnen van AEM toepassingen.
-feature: null
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5346
+topic: Ontwikkeling
+role: Developer
+level: Begin, tussenliggend
 translation-type: tm+mt
-source-git-commit: debb65a218ae0b9e5105c3f63018358902330b34
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '314'
 ht-degree: 1%
 
 ---
