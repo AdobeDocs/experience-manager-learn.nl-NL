@@ -1,12 +1,14 @@
 ---
-title: Hoofdstuk 1 - Lesbestanden instellen en downloaden
-seo-title: Aan de slag met AEM Content Services - Hoofdstuk 1 - Lesbestanden instellen
-description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
-seo-description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
+title: '"Hoofdstuk 1 - Concepten, patronen en antipatronen van de verzender"'
+description: In dit hoofdstuk wordt een korte inleiding gegeven over de geschiedenis en de mechanica van de Dispatcher en wordt besproken hoe dit van invloed is op hoe een AEM ontwikkelaar zijn componenten zou ontwerpen.
+feature: Dispatcher
+topic: Architectuur
+role: Architect
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '17502'
+source-wordcount: '17489'
 ht-degree: 0%
 
 ---
@@ -305,7 +307,7 @@ Ongeldigmaking is zo eenvoudig: Een eenvoudig verzoek van de GET naar een specia
 
 Dat is in ons geval voldoende. Als een middel is veranderd, kunnen wij veilig veronderstellen, dat alle vertoningen van dat middel ook zijn veranderd. In ons voorbeeld wordt een nieuwe miniatuur weergegeven als de afbeelding is gewijzigd.
 
-De Dispatcher kan de bron veilig verwijderen met alle uitvoeringen die in de cache zijn opgeslagen. Het zal iets doen als:
+De Dispatcher kan de bron veilig verwijderen met alle uitvoeringen die in het cachegeheugen zijn opgeslagen. Het zal iets doen als:
 
 `$ rm /content/dam/path/to/image.*`
 
