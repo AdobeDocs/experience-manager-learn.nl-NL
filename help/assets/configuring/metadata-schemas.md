@@ -2,18 +2,17 @@
 title: Metagegevensschema's
 description: De schema's van meta-gegevens bepalen de interfacegebruikers met activa in AEM interactie, en hun definitie en toepassing aan activa zijn kritiek aan digitaal activabeheer.
 sub-product: elementen
-feature: metadata-schemas
-topics: configuring, content-architecture, metadata
-audience: administrator, implementer
-doc-type: feature video
-activity: use
+feature: Metagegevens
 version: cloud-service
 kt: 4981
 thumbnail: 33696.jpg
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 0d4d1140dd226bbb02de0b19942b55495e3e2b2c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '55'
+source-wordcount: '61'
 ht-degree: 0%
 
 ---
