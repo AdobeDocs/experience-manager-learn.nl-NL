@@ -1,10 +1,12 @@
 ---
 title: Hoofdstuk 3 - Geavanceerde onderwerpen in cache
+seo-title: AEM Dispatcher Cache demystified - Chapter 3 - Advanced Caching Topics
 description: Hoofdstuk 3 van het Gedemystificeerde leerprogramma van het Geheime voorgeheugen van de AEM van de Verzender behandelt hoe te om de beperkingen te overwinnen die in Hoofdstuk 2 worden besproken.
+seo-description: Hoofdstuk 3 van het Gedemystificeerde leerprogramma van het Geheime voorgeheugen van de AEM van de Verzender behandelt hoe te om de beperkingen te overwinnen die in Hoofdstuk 2 worden besproken.
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '6162'
+source-wordcount: '6187'
 ht-degree: 0%
 
 ---
