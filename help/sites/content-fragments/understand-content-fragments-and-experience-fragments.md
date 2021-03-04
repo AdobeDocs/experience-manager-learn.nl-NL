@@ -2,16 +2,19 @@
 title: Inhoudsfragmenten en ervaringsfragmenten begrijpen
 description: Adobe Experience Manager Content Fragments and Experience Fragments kunnen er ongeveer hetzelfde uitzien op het oppervlak, maar elk speelt een sleutelrol in verschillende gebruiksgevallen. Leer hoe de Fragmenten van de Inhoud en de Fragmenten van de Ervaring gelijkaardig zijn, verschillend, en wanneer en hoe te om elk te gebruiken.
 sub-product: activa, sites, inhoudsdiensten
-feature: content fragments, experience fragments
+feature: Inhoudsfragmenten, ervaringsfragmenten
 topics: headless
 version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 03db12de4d95ced8fabf36b8dc328581ec7a2749
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -147,7 +150,7 @@ Het volgende diagram illustreert de algemene architectuur voor AEM Inhoudsfragme
 + Inhoudsfragment **variaties** houden zich aan het Inhoudsfragmentmodel, maar hebben variaties in inhoud.
 + Inhoudsfragmenten kunnen worden belicht/verbruikt door:
    + Inhoudsfragmenten gebruiken op **AEM Sites** (of AEM Screens) via de inhoudsfragmentcomponent van AEM WCM Core Components&#39;.
-   + Insluiten van een inhoudsfragment in een **Ervaar fragment** via de inhoudsfragmentcomponent van AEM WCM Core-componenten, voor gebruik in elke Gebruiksscenario van het Fragment van de Ervaring.
+   + Insluiten van een inhoudsfragment in een **Ervaar fragment** via de inhoudsfragmentcomponent van AEM WCM Core-componenten, voor gebruik in elke Gebruikszaak van het Fragment van de Ervaring.
    + Door de inhoud van een inhoudsfragment toegankelijk te maken als JSON via **AEM Content Services** en API-pagina&#39;s voor alleen-lezen gebruik.
    + Inhoud van inhoudsfragment (alle variaties) rechtstreeks beschikbaar maken als JSON via directe aanroepen naar AEM Assets via de **AEM Assets HTTP API** voor CRUD-gebruiksgevallen.
 
