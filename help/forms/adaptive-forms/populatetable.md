@@ -3,16 +3,19 @@ title: 'Aangepaste formuliertabel vullen '
 seo-title: Aangepaste formuliertabel vullen
 description: De tabel Adaptief formulier vullen met de resultaten van de serviceaanroepen van het formuliergegevensmodel
 seo-description: De tabel Adaptief formulier vullen met de resultaten van de serviceaanroepen van het formuliergegevensmodel
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Ontwikkeling
+role: Zakelijke praktiserer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
