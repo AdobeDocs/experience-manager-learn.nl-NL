@@ -1,10 +1,12 @@
 ---
 title: Hoofdstuk 2 - Fragmentmodellen voor gebeurtenisinhoud definiëren
+seo-title: Aan de slag met AEM Content Services - Hoofdstuk 2 - Modellen voor gebeurteniscontentfragmenten definiëren
 description: Hoofdstuk 2 van de AEM zelfstudie zonder koppen omvat het inschakelen en definiëren van modellen van inhoudsfragmenten die worden gebruikt om een genormaliseerde gegevensstructuur en ontwerpinterface te definiëren voor het maken van gebeurtenissen.
+seo-description: Hoofdstuk 2 van de AEM zelfstudie zonder koppen omvat het inschakelen en definiëren van modellen van inhoudsfragmenten die worden gebruikt om een genormaliseerde gegevensstructuur en ontwerpinterface te definiëren voor het maken van gebeurtenissen.
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1917'
 ht-degree: 0%
 
 ---
