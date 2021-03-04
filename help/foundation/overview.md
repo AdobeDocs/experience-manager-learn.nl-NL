@@ -3,12 +3,10 @@ title: Video's en Tutorials AEM
 seo-title: Video's en Tutorials AEM
 description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Manager Foundation. '
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Foundation
-role: '"Leader, Architect, Developer, Administrator, Business Practitioner"'
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
