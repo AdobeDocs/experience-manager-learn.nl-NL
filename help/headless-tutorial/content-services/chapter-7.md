@@ -1,10 +1,14 @@
 ---
 title: Hoofdstuk 7 - AEM Inhoudsservices van een mobiele app gebruiken - Inhoudsservices
 description: In Hoofdstuk 7 van de zelfstudie wordt de Android Mobile-app uitgevoerd om geschreven inhoud van AEM Content Services te verbruiken.
+feature: '"Inhoudsfragmenten, API''s"'
+topic: '"Headless, Content Management"'
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -47,7 +51,7 @@ Als AEM-publicatie niet wordt uitgevoerd op **http://localhost:4503**, kunnen de
 1. Download en installeer de [Android Studio](https://developer.android.com/studio/install) om de Android-emulator te installeren.
 1. **Het** Android- [!DNL APK] bestand  [GitHub > Middelen > wknd-mobile.x.x.xapk downloaden](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 1. **Android Studio** openen
-   * Bij de eerste keer dat Android Studio wordt gestart, wordt gevraagd [!DNL Android SDK] te installeren. Accepteer de standaardinstellingen en voltooi de installatie.
+   * Bij de eerste keer dat Android Studio wordt gestart, wordt u gevraagd [!DNL Android SDK] te installeren. Accepteer de standaardinstellingen en voltooi de installatie.
 1. Open Android Studio en selecteer **Profiel of Foutopsporing APK**
 1. Selecteer het APK-bestand (**wknd-mobile.x.x.apk**) dat u in stap 2 hebt gedownload en klik op **OK**
    * Als ertoe aangezet om **een Nieuwe Omslag te creëren**, of **Bestaande gebruiken**, uitgezocht **Bestaande gebruiken**.
