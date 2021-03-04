@@ -2,16 +2,19 @@
 title: Tabelcomponent gebruiken in AEM Forms Print Channel-document
 seo-title: Tabelcomponent gebruiken in AEM Forms Print Channel-document
 description: In de volgende video worden de stappen doorlopen die zijn vereist om tabelcomponent te gebruiken in Interactieve communicatie voor documenten met afdrukkanalen.
-feature: interactieve communicatie
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
