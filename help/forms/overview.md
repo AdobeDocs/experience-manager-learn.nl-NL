@@ -4,11 +4,13 @@ seo-title: AEM Forms-Tutorials en -video's
 description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
 seo-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
 sub-product: formulieren
+topic: Ontwikkeling
+role: Developer
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 1%
+source-wordcount: '305'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +60,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     </div>
     <p>
-    <em>De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing post, rekeningen, en welkomstkits.  </em>
+    <em>De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits.  </em>
     <p>
   </td>
   <td>
