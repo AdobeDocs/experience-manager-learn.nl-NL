@@ -3,7 +3,7 @@ title: Aan de slag met AEM Sites - Pagina's en sjablonen
 seo-title: Aan de slag met AEM Sites - Pagina's en sjablonen
 description: Leer over de verhouding tussen een component van de basispagina en editable malplaatjes. Begrijp hoe de Componenten van de Kern in het project proxied zijn en geavanceerde beleidsconfiguraties van editable malplaatjes leren om een goed-gestructureerd malplaatje van de Pagina van het Artikel te bouwen dat op een model van Adobe XD wordt gebaseerd.
 sub-product: sites
-feature: template-editor, core-components
+feature: '"Core Components, Editable Templates"'
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -12,10 +12,13 @@ audience: developer
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
+topic: '"Inhoudsbeheer, ontwikkeling"'
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3072'
+source-wordcount: '3081'
 ht-degree: 0%
 
 ---
@@ -110,7 +113,7 @@ Stappen op hoog niveau voor de onderstaande video:
    * Stel het beleid in op **Page Main** en zorg ervoor dat **Default Element** is ingesteld op `main`. Het `main` element zal met CSS in het volgende hoofdstuk worden gericht.
 1. Voeg een **Image** component aan **main** container toe.
    * Ontgrendel de **component Image**.
-1. Voeg een **Breadcrumb**-component onder de **Image**-component in de hoofdcontainer toe.
+1. Voeg een **Breadcrumb**-component toe onder de **Image**-component in de hoofdcontainer.
    * Maak een nieuw beleid voor de **Breadcrumb**-component met de naam **Article Page - Breadcrumb**. Stel **Navigatiebeginniveau** in op **4**.
 1. Voeg een **Container** component onder de **Breadcrumb** component en binnen de **main** container toe. Dit zal als **Inhoudscontainer** voor het malplaatje dienst doen.
    * Ontgrendel de container **Content**.
@@ -316,7 +319,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
 In veel gevallen, vooral aan het begin van een AEM project is het waardevol om configuraties, zoals malplaatjes en verwant inhoudsbeleid, aan broncontrole voort te zetten. Dit zorgt ervoor dat alle ontwikkelaars tegen de zelfde reeks inhoud en configuraties werken en extra consistentie tussen milieu&#39;s kunnen verzekeren. Wanneer een project een bepaald ontwikkelingsniveau heeft bereikt, kan het beheren van sjablonen worden overgedragen aan een speciale groep van energiegebruikers.
 
-Momenteel behandelen wij de malplaatjes als andere stukken van code en synchroniseren **Sjabloon van de Pagina van het Artikel** neer als deel van het project. Tot nu toe hebben wij **geduwde** code van ons AEM project aan een lokale instantie van AEM. **Artikelpaginasjabloon** is rechtstreeks gemaakt op een lokaal AEM. Daarom moeten we de sjabloon **importeren** in ons AEM project plaatsen. De **ui.content** module is inbegrepen in het AEM project voor dit specifieke doel.
+Momenteel behandelen wij de malplaatjes als andere stukken van code en synchroniseren **Sjabloon van de Pagina van het Artikel** neer als deel van het project. Tot nu toe hebben wij **geduwde** code van ons AEM project aan een lokale instantie van AEM. **Article Page Template** werd gecreeerd direct op een lokaal geval van AEM, zodat moeten wij **import** het malplaatje in ons AEM project. De **ui.content** module is inbegrepen in het AEM project voor dit specifieke doel.
 
 De volgende paar stappen zullen plaatsvinden gebruikend winde VSCode gebruikend [VSCode AEM de stop van Synchronisatie](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview) maar zouden kunnen doen gebruikend om het even welke winde die u aan **import** hebt gevormd of inhoud van een lokale instantie van AEM invoeren.
 
