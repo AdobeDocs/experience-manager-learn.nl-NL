@@ -3,16 +3,19 @@ title: AEM Forms met JSON-schema en -gegevens[Deel2]
 seo-title: AEM Forms met JSON-schema en -gegevens[Deel2]
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
 seo-description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
