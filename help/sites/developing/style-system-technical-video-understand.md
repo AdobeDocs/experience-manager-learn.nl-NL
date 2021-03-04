@@ -1,16 +1,19 @@
 ---
 title: Begrijpen hoe u code kunt schrijven voor het systeem AEM
 description: In deze video bekijken we de anatomie van de CSS (of LESS) en JavaScript die wordt gebruikt om de component van de Titel van Adobe Experience Manage te stijlen met behulp van het Stijlsysteem, en hoe deze stijlen worden toegepast op de HTML en DOM.
-feature: style-system
+feature: Stijlsysteem
 topics: development, components, front-end-development
 audience: developer, implementer
 doc-type: technical video
 activity: understand
 version: 6.4, 6.5
+topic: Ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 664d3964df796d508973067f8fa4fe5ef83c5fec
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
