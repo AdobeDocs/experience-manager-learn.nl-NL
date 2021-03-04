@@ -1,7 +1,7 @@
 ---
 title: Variabelen van het type formuliergegevensmodel
 description: Variabelen van het type gegevensmodel in een AEM werkstroom gebruiken.
-feature: werkstroom
+feature: Workflow
 topics: development
 audience: developer
 doc-type: technical video
@@ -9,11 +9,14 @@ activity: understand
 version: 6.5
 kt: 6347
 thumbnail: 41238.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 0%
+source-wordcount: '65'
+ht-degree: 4%
 
 ---
 
