@@ -4,19 +4,16 @@ seo-title: Ontwikkelen met servicegebruikers in AEM Forms
 description: In dit artikel wordt u door het proces geleid voor het maken van een servicegebruiker in AEM Forms
 seo-description: In dit artikel wordt u door het proces geleid voor het maken van een servicegebruiker in AEM Forms
 uuid: 996f30df-3fc5-4232-a104-b92e1bee4713
-feature: Adaptieve Forms
+feature: adaptieve vormen
 topics: development,administration
 audience: implementer,developer
 doc-type: article
 activity: setup
 discoiquuid: 65bd4695-e110-48ba-80ec-2d36bc53ead2
-topic: Ontwikkeling
-role: Developer
-level: Ervaren
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
