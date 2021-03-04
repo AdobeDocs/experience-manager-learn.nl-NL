@@ -1,16 +1,19 @@
 ---
 title: Batch-API gebruiken voor het genereren van interactieve communicatiedocumenten
 description: Voorbeeldelementen voor het genereren van documenten voor afdrukkanalen met batch-API
-feature: interactive-communication
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 3dc1bd3f2f7b6324c53640f01a263fa0728d439c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
