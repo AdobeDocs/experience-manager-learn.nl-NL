@@ -1,7 +1,7 @@
 ---
 title: Projectarchetype AEM
 description: 'Met het AEM Project Archetype maakt u een minimaal Adobe Experience Manager-project op basis van best practices als uitgangspunt voor uw eigen AEM. '
-feature: maven-archetype
+feature: Projectarchetype AEM
 topics: development
 audience: developer
 doc-type: technical video
@@ -9,11 +9,14 @@ activity: understand
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4675
 thumbnail: 32550.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 2%
+source-wordcount: '83'
+ht-degree: 4%
 
 ---
 
