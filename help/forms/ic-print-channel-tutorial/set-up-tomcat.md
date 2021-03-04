@@ -4,7 +4,7 @@ seo-title: Tomcat installeren en configureren
 description: Dit is een onderdeel van de zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit onderdeel wordt TOMCAT geïnstalleerd en wordt het bestand sampleRest.war in TOMCAT geïmplementeerd. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld zal de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm zijn.
 seo-description: Dit is een onderdeel van de zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit onderdeel wordt TOMCAT geïnstalleerd en wordt het bestand sampleRest.war in TOMCAT geïmplementeerd. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld zal de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm zijn.
 uuid: 835e2342-82b6-4f0c-9a6b-467bbbd8527a
-feature: interactive-communication
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,10 +12,13 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 37815.jpg
 discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
