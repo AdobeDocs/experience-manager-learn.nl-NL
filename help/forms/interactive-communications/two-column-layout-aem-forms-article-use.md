@@ -3,17 +3,20 @@ title: Twee kolomlay-outs maken voor documenten met afdrukkanalen
 seo-title: Twee kolomlay-outs maken voor documenten met afdrukkanalen
 description: Twee kolomlay-outs maken voor een document met een afdrukkanaal
 seo-description: Twee kolomlay-outs maken voor een document met een afdrukkanaal
-feature: interactive-communication
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 314f798f7a80f9c554e5bea052f8a64ae397d0de
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 0%
+source-wordcount: '243'
+ht-degree: 1%
 
 ---
 
