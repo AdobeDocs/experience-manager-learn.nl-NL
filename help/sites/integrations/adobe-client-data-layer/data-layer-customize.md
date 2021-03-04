@@ -1,7 +1,7 @@
 ---
 title: De gegevenslaag voor de Adobe-client aanpassen met AEM componenten
 description: Leer hoe u de gegevenslaag Adobe Client aanpast met inhoud van aangepaste AEM Componenten. Leer hoe u API's van AEM Core Components kunt gebruiken om de gegevenslaag uit te breiden en aan te passen.
-feature: core-component
+feature: Adobe Client Data Layer, Core-component
 topics: integrations
 audience: developer
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: use
 version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
+topic: Integrations
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 46936876de355de9923f7a755aa6915a13cca354
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2037'
 ht-degree: 0%
 
 ---
