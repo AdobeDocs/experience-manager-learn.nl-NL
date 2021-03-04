@@ -1,16 +1,14 @@
 ---
 title: 'Werken met InDesign-bestanden en Asset Templates in AEM Assets '
 description: In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overwegingen gedefinieerd voor gebruik in de functie Asset Templates van AEM Assets.
-feature: catalogs, asset-templates
-topics: authoring, renditions, documents
-audience: all
-doc-type: tutorial
-activity: understand
 version: 6.3, 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
