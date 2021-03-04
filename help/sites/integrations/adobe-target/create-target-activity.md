@@ -1,7 +1,7 @@
 ---
 title: Een doelactiviteit maken met behulp van de fragmentatieaanbiedingen van de ervaring
 description: Leer hoe u een Adobe Target-activiteit maakt en test met AEM Experience Fragment-aanbiedingen.
-feature: targeting, experience-fragments
+feature: Ervaringsfragmenten
 topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
@@ -9,11 +9,14 @@ activity: use
 version: cloud-service
 kt: 6351
 thumbnail: 41246.jpg
+topic: Integrations
+role: Zakelijke praktiserer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 0%
+source-wordcount: '124'
+ht-degree: 3%
 
 ---
 
