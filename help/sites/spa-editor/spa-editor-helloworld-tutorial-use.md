@@ -1,17 +1,20 @@
 ---
 title: Ontwikkelen met de AEM SPA Editor - Hello World-zelfstudie
-description: AEM SPA Editor biedt ondersteuning voor contextbewerkingen van een toepassing of SPA van één pagina. Deze zelfstudie is een inleiding op SPA ontwikkeling die moet worden gebruikt met AEM SPA Editor JS SDK. De zelfstudie breidt de app We.Retail Journal uit door een aangepaste Hello World-component toe te voegen. Gebruikers kunnen de zelfstudie voltooien met Reageren of Hoekframes.
+description: AEM SPA Editor biedt ondersteuning voor contextbewerkingen van een toepassing of SPA van één pagina. Deze zelfstudie is een inleiding op SPA ontwikkeling die moet worden gebruikt met AEM SPA Editor JS SDK. De zelfstudie breidt de app We.Retail Journal uit door een aangepaste Hello World-component toe te voegen. Gebruikers kunnen de zelfstudie voltooien met Reageren of Angulars.
 sub-product: sites, content-services
-feature: spa-editor
+feature: Spa-editor
 topics: development, single-page-applications
 audience: developer
 doc-type: tutorial
 activity: use
 version: 6.3, 6.4, 6.5
+topic: SPA
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3148'
 ht-degree: 0%
 
 ---
@@ -21,25 +24,25 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> Deze zelfstudie is **afgekeurd**. Het wordt aanbevolen om: [Aan de slag met de AEM SPA Editor en hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) of [Aan de slag met de AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+> Deze zelfstudie is **afgekeurd**. Het wordt aanbevolen om: [Aan de slag met de AEM SPA Editor en Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) of [Aan de slag met de AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
-AEM SPA Editor biedt ondersteuning voor contextbewerkingen van een toepassing of SPA van één pagina. Deze zelfstudie is een inleiding op SPA ontwikkeling die moet worden gebruikt met AEM SPA Editor JS SDK. De zelfstudie breidt de app We.Retail Journal uit door een aangepaste Hello World-component toe te voegen. Gebruikers kunnen de zelfstudie voltooien met Reageren of Hoekframes.
+AEM SPA Editor biedt ondersteuning voor contextbewerkingen van een toepassing of SPA van één pagina. Deze zelfstudie is een inleiding op SPA ontwikkeling die moet worden gebruikt met AEM SPA Editor JS SDK. De zelfstudie breidt de app We.Retail Journal uit door een aangepaste Hello World-component toe te voegen. Gebruikers kunnen de zelfstudie voltooien met Reageren of Angulars.
 
 >[!NOTE]
 >
 > De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
 >
-> De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+> De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## Vereiste lezen {#prereq}
 
-Deze zelfstudie is bedoeld om de stappen te benadrukken die nodig zijn om een SPA component toe te wijzen aan een AEM component om in-context het uitgeven toe te laten. Gebruikers die deze zelfstudie starten, moeten vertrouwd zijn met de basisconcepten van ontwikkeling met Adobe Experience Manager, AEM en zich ontwikkelen met React of Angular frameworks. De zelfstudie behandelt zowel back-end als front-end ontwikkelingstaken.
+Deze zelfstudie is bedoeld om de stappen te benadrukken die nodig zijn om een SPA component toe te wijzen aan een AEM component om in-context het uitgeven toe te laten. Gebruikers die deze zelfstudie starten, moeten vertrouwd zijn met de basisbeginselen van ontwikkeling met Adobe Experience Manager, AEM en met React of Angular frameworks. De zelfstudie behandelt zowel back-end als front-end ontwikkelingstaken.
 
 U wordt aangeraden de volgende bronnen te controleren voordat u deze zelfstudie start:
 
 * [SPA de Video](spa-editor-framework-feature-video-use.md)  van de Eigenschap van de Redacteur van de Redacteur - een videooverzicht van de SPA Redacteur en de app van het Dagboek.
 * [Zelfstudie](https://reactjs.org/tutorial/tutorial.html)  React.js - Een inleiding tot ontwikkeling met het React-kader.
-* [Hoekzelfstudie](https://angular.io/tutorial)  - Een inleiding tot ontwikkeling met hoekige vormgeving
+* [Zelfstudie](https://angular.io/tutorial)  over angular - Een inleiding tot ontwikkeling met Angular
 
 ## Lokale ontwikkelomgeving {#local-dev}
 
@@ -75,7 +78,7 @@ Het basisconcept is om een SPA Component aan een AEM Component in kaart te breng
 
 ![Componenttoewijzing SPA](assets/spa-editor-helloworld-tutorial-use/mapto.png)
 
-Populaire frameworks [React JS](https://reactjs.org/) en [Angular](https://angular.io/) worden vanuit de box ondersteund. Gebruikers kunnen deze zelfstudie onder de hoek of Reageren voltooien, afhankelijk van welk framework ze het prettigst zijn.
+Populaire frameworks [React JS](https://reactjs.org/) en [Angular](https://angular.io/) worden vanuit de box ondersteund. Gebruikers kunnen deze zelfstudie voltooien in Angular of Reageren, afhankelijk van welk raamwerk ze het prettigst vinden.
 
 ## Projectinstelling {#project-setup}
 
@@ -115,7 +118,7 @@ Het doel van deze zelfstudie is om de Web.Retail App met een nieuwe component ui
    * `ui.apps`: bevat de /apps-onderdelen van het project, dat wil zeggen JS &amp; CSS-clientlibs, componenten, specifieke configuraties voor de runmode.
    * `ui.content`: bevat structurele inhoud en configuraties (`/content`,  `/conf`)
    * `react-app`: Wij.Retail Journal React-toepassing. Dit is zowel een module Maven als een webpack project.
-   * `angular-app`: Wij.Retail Journal-toepassing. Dit is zowel een [!DNL Maven] module als een webpack project.
+   * `angular-app`: Wij.Retail Journal Angular application. Dit is zowel een [!DNL Maven] module als een webpack project.
 
 1. Open een nieuw terminalvenster en voer de volgende opdracht uit om de volledige app te maken en te implementeren in een lokale AEM-instantie die wordt uitgevoerd op [http://localhost:4502](http://localhost:4502).
 
@@ -399,7 +402,7 @@ Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL H
    >
    > De methodenaam `getDisplayMessage` is belangrijk. Wanneer [!DNL Sling Model] met [!DNL Jackson Exporter] wordt geserialiseerd zal het als bezit JSON worden blootgesteld: `displayMessage`. [!DNL Jackson Exporter] zal alle `getter` methodes serialiseren en blootstellen die geen parameter (tenzij uitdrukkelijk duidelijk om) nemen te negeren. Later in de app React / Angular lezen we deze eigenschapswaarde en geven deze weer als onderdeel van de toepassing.
 
-   De methode `getExportedType` is ook belangrijk. De waarde van de component `resourceType` wordt gebruikt om de JSON-gegevens toe te wijzen aan de front-end component (Angular / React). We zullen dit in de volgende sectie onderzoeken.
+   De methode `getExportedType` is ook belangrijk. De waarde van de component `resourceType` wordt gebruikt om de JSON-gegevens toe te wijzen aan de front-end component (Angular/React). We zullen dit in de volgende sectie onderzoeken.
 
 1. Voer de methode `getExportedType()` uit om het middeltype van `HelloWorld` component terug te keren.
 
@@ -436,7 +439,7 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
 
 >[!NOTE]
 >
-> U kunt deze sectie zonder problemen overslaan als u alleen geïnteresseerd bent in [Hoekontwikkeling](#angular-component).
+> U kunt deze sectie overslaan als u alleen geïnteresseerd bent in de ontwikkeling van [Angulars](#angular-component).
 
 1. In de `react-app` omslag navigeer aan zijn src omslag. Vouw de componentenmap uit om de bestaande React-componentbestanden weer te geven.
 
@@ -567,7 +570,7 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
    > **app.** jsis de gebundelde React-app. De code is niet meer leesbaar voor mensen. De opdracht `npm run build` heeft een geoptimaliseerde build geactiveerd die gecompileerde JavaScript-code uitvoert die door moderne browsers kan worden geïnterpreteerd.
 
 
-## Hoekcomponent maken {#angular-component}
+## Angular-component maken {#angular-component}
 
 **Persona: Front End Developer**
 
@@ -575,11 +578,11 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
 >
 > U kunt deze sectie overslaan als u alleen geïnteresseerd bent in React-ontwikkeling.
 
-Vervolgens wordt de hoekcomponent gemaakt. Open de **angular-app** module (`<src>/aem-sample-we-retail-journal/angular-app`) gebruikend de redacteur van uw keus.
+Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`<src>/aem-sample-we-retail-journal/angular-app`) gebruikend de redacteur van uw keus.
 
-1. In de `angular-app` omslag navigeer aan zijn `src` omslag. Breid de componentenomslag uit om de bestaande Hoekcomponentendossiers te bekijken.
+1. In de `angular-app` omslag navigeer aan zijn `src` omslag. Breid de componentenomslag uit om de bestaande de componentendossiers van de Angular te bekijken.
 
-   ![Hoekbestandsstructuur](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
+   ![Bestandsstructuur van angular](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
 
 1. Voeg een nieuwe omslag onder de componentenomslag genoemd `helloworld` toe. Voeg onder de map `helloworld` nieuwe bestanden met de naam `helloworld.component.css, helloworld.component.html, helloworld.component.ts` toe.
 
@@ -594,7 +597,7 @@ Vervolgens wordt de hoekcomponent gemaakt. Open de **angular-app** module (`<src
    +                    helloworld.component.ts
    ```
 
-1. Open `helloworld.component.ts`. Voeg een importinstructie toe om de klassen Angular `Component` en `Input` te importeren. Maak een nieuwe component en wijs `styleUrls` en `templateUrl` aan `helloworld.component.css` en `helloworld.component.html` aan. Exporteer ten slotte de klasse `HelloWorldComponent` met de verwachte invoer van `displayMessage`.
+1. Open `helloworld.component.ts`. Voeg een importinstructie toe om de klassen `Component` en `Input` van de Angular te importeren. Maak een nieuwe component en wijs `styleUrls` en `templateUrl` aan `helloworld.component.css` en `helloworld.component.html` aan. Exporteer ten slotte de klasse `HelloWorldComponent` met de verwachte invoer van `displayMessage`.
 
    ```js
    //helloworld.component.ts
@@ -615,7 +618,7 @@ Vervolgens wordt de hoekcomponent gemaakt. Open de **angular-app** module (`<src
 
    >[!NOTE]
    >
-   > Als u [!DNL Sling Model] eerder gecreeerd herinnert, was er een methode **getDisplayMessage ()**. De geserialiseerde JSON van deze methode is **displayMessage**, die we nu in de hoekige app lezen.
+   > Als u [!DNL Sling Model] eerder gecreeerd herinnert, was er een methode **getDisplayMessage ()**. De geserialiseerde JSON van deze methode zal **displayMessage** zijn, die wij nu in Angular app lezen.
 
 1. Open `helloworld.component.html` om een `h1`-tag op te nemen die de eigenschap `displayMessage` zal afdrukken:
 
@@ -673,7 +676,7 @@ Vervolgens wordt de hoekcomponent gemaakt. Open de **angular-app** module (`<src
    });
    ```
 
-1. Volgende update `src/components/mapping.ts` om `HelloWorldComponent` te omvatten. Voeg een `HelloWorldEditConfig` toe die placeholder in de AEM redacteur zal merken alvorens de component is gevormd. Voeg ten slotte een lijn toe om de AEM component aan de hoekcomponent met de `MapTo` helper in kaart te brengen.
+1. Volgende update `src/components/mapping.ts` om `HelloWorldComponent` te omvatten. Voeg een `HelloWorldEditConfig` toe die placeholder in de AEM redacteur zal merken alvorens de component is gevormd. Voeg ten slotte een lijn toe om de AEM component aan de component van de Angular met `MapTo` helper in kaart te brengen.
 
    ```js
    // src/components/mapping.ts
@@ -696,7 +699,7 @@ Vervolgens wordt de hoekcomponent gemaakt. Open de **angular-app** module (`<src
    MapTo('we-retail-journal/components/helloworld')(HelloWorldComponent, HelloWorldEditConfig);
    ```
 
-   De volledige code voor [**mapping.ts** kan hier worden gevonden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/mapping.ts)
+   De volledige code voor [**mapping.ts** is hier te vinden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/mapping.ts)
 
 1. `src/app.module.ts` bijwerken om **NgModule** bij te werken. Voeg **`HelloWorldComponent`** als **verklaring** toe die tot **AppModule** behoort. Voeg ook `HelloWorldComponent` als **entryComponent** toe zodat het wordt gecompileerd en dynamisch in app wordt omvat aangezien het model JSON wordt verwerkt.
 
@@ -744,17 +747,17 @@ Vervolgens wordt de hoekcomponent gemaakt. Open de **angular-app** module (`<src
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-1. Open `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js). Voer snel een onderzoek naar **HelloWorld** in `main.js` uit om de Hoekcomponent te verifiëren is inbegrepen.
+1. Open `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js). Voer een snelle onderzoek naar **HelloWorld** in `main.js` uit om te verifiëren de component van de Angular is inbegrepen.
 
    >[!NOTE]
    >
-   > **main.** jsis de gebundelde hoekige app. De code is niet meer leesbaar voor mensen. De npm run build-opdracht heeft een geoptimaliseerde build geactiveerd die gecompileerde JavaScript uitvoert die door moderne browsers kan worden geïnterpreteerd.
+   > **main.** jsis de gebundelde Angular-app. De code is niet meer leesbaar voor mensen. De npm run build-opdracht heeft een geoptimaliseerde build geactiveerd die gecompileerde JavaScript uitvoert die door moderne browsers kan worden geïnterpreteerd.
 
 ## Sjabloon {#template-update} bijwerken
 
-1. Navigeer naar de bewerkbare sjabloon voor de reactieversie en/of hoekversie:
+1. Navigeer naar de bewerkbare sjabloon voor de reactieversie en/of Angular-versie:
 
-   * (Hoekig) [http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html)
+   * (Angular) [http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html)
    * (Reageren) [http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html)
 
 1. Selecteer het hoofd [!UICONTROL Layout Container] en selecteer het [!UICONTROL Policy] pictogram om zijn beleid te openen:
@@ -779,7 +782,7 @@ Vervolgens wordt de hoekcomponent gemaakt. Open de **angular-app** module (`<src
 
 ## Alles samenvoegen {#putting-together}
 
-1. Navigeer naar de pagina&#39;s Hoekig of Reageren:
+1. Navigeer naar de pagina&#39;s Angular of Reageren:
 
    * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
    * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
@@ -829,7 +832,7 @@ Als niet aan een AEM-afhankelijkheid wordt voldaan, geeft dit aan dat SPA Editor
 
 ### Component wordt niet weergegeven
 
-**Fout**: Zelfs na een geslaagde implementatie en na het controleren of de gecompileerde versies van React/Hoekige apps de bijgewerkte  `helloworld` component hebben, wordt mijn component niet weergegeven wanneer ik deze naar de pagina sleep. Ik kan de component in AEM UI zien.
+**Fout**: Zelfs na een geslaagde implementatie en het controleren of de gecompileerde versies van React/Angular-apps de bijgewerkte  `helloworld` component hebben, wordt mijn component niet weergegeven wanneer ik deze naar de pagina versleep. Ik kan de component in AEM UI zien.
 
 **Resolutie**: Wis de browsergeschiedenis/cache en/of open een nieuwe browser of gebruik de incognitomodus. Als dat niet werkt, maakt u de cache van de clientbibliotheek op de lokale AEM ongeldig. AEM probeert grote clientbibliotheken in cache te plaatsen om efficiënt te zijn. Soms is het handmatig ongeldig maken van de cache nodig om problemen op te lossen waarbij verouderde code in de cache wordt geplaatst.
 
