@@ -1,27 +1,22 @@
 ---
-title: Aangepaste videominiatuur gebruiken met AEM dynamische media
-seo-title: Aangepaste videominiatuur gebruiken met AEM dynamische media
+title: Aangepaste videominiatuur gebruiken met AEM Dynamic Media
 description: Aangepaste AEM Assets-videominiaturen bieden auteurs de mogelijkheid een geschikte miniatuur te selecteren uit een set gegenereerde miniaturen. Het aantal miniaturen dat voor een video wordt gegenereerd, kan eenvoudig worden aangepast.
-seo-description: Aangepaste AEM Assets-videominiaturen bieden auteurs de mogelijkheid een geschikte miniatuur te selecteren uit een set gegenereerde miniaturen. Het aantal miniaturen dat voor een video wordt gegenereerd, kan eenvoudig worden aangepast.
-uuid: 1559b1bc-daca-49e9-b6de-0b93798658a8
-discoiquuid: 5e168b37-2906-4ab5-9840-086ae7efa281
 sub-product: dynamic-media
-feature: media-player, video-profiles
-topics: videos, renditions, authoring, best-practices
-doc-type: feature video
-audience: all
-activity: use
+feature: Videoprofielen
 version: 6.3, 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 0%
+source-wordcount: '112'
+ht-degree: 1%
 
 ---
 
 
-# Aangepaste videominiatuur gebruiken met AEM dynamische media{#using-custom-video-thumbnail-with-aem-dynamic-media}
+# Aangepaste videominiatuur gebruiken met AEM Dynamic Media{#using-custom-video-thumbnail-with-aem-dynamic-media}
 
 Aangepaste AEM Assets-videominiaturen bieden auteurs de mogelijkheid een geschikte miniatuur te selecteren uit een set gegenereerde miniaturen. Het aantal miniaturen dat voor een video wordt gegenereerd, kan eenvoudig worden aangepast.
 
@@ -33,4 +28,4 @@ Aangepaste AEM Assets-videominiaturen bieden auteurs de mogelijkheid een geschik
 
 >[!NOTE]
 >
->U zou uw [AEM instantie in Dynamische Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html) wijze moeten in werking stellen
+>U zou uw [AEM instantie in Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html) wijze moeten in werking stellen
