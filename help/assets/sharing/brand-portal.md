@@ -1,19 +1,15 @@
 ---
 title: Merkportal gebruiken
-seo-title: Brand Portal gebruiken met AEM Assets
 description: Videodoorlopen van de integratie van AEM Author en AEM Assets Brand Portal.
-seo-description: Videodoorlopen van de integratie van AEM Author en AEM Assets Brand Portal.
-feature: brand-portal
-topics: authoring, sharing, collaboration, search, integrations, publishing, metadata, images, renditions, administration
-audience: all
-doc-type: feature video
-activity: use
+feature: Brand Portal
 version: 6.3, 6.4, 6.5
-team: tm
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1788'
+source-wordcount: '1777'
 ht-degree: 0%
 
 ---
@@ -84,19 +80,19 @@ De gedeelde mappen worden in de desbetreffende directory&#39;s in virtuele mappe
 
 De standaardminiatuur van de virtuele mappen is de miniatuurafbeelding van de eerste gedeelde map.
 
-### Ondersteuning voor dynamische media-video-uitvoeringen
+### Ondersteuning voor Dynamic Media-video-uitvoeringen
 
-Gebruikers van wie de AEM-auteur-instantie zich in de hybride modus Dynamische media bevindt, kunnen naast de originele videobestanden ook een voorvertoning van de dynamische media-uitvoeringen weergeven en deze downloaden.
+Gebruikers van wie de AEM-auteur-instantie zich in de hybride Dynamic Media-modus bevindt, kunnen naast de originele videobestanden ook een voorvertoning van de dynamische media-uitvoeringen weergeven en deze downloaden.
 
-Om voorproef en download van dynamische media vertoningen op specifieke huurdersrekeningen toe te staan, moeten de beheerders Dynamische Configuratie van Media (videodienst URL (DM-Gateway URL) en registratie identiteitskaart specificeren om de dynamische video) in Videoconfiguratie van admin hulpmiddelenpaneel te halen.
+Om voorproef en download van dynamische media vertoningen op specifieke huurdersrekeningen toe te staan, moeten de beheerders de Configuratie van Dynamic Media (videodienst URL (DM-Gateway URL) en registratie identiteitskaart specificeren om de dynamische video) in Videoconfiguratie van admin hulpmiddelenpaneel te halen.
 
-Dynamische mediavideo&#39;s kunnen worden voorvertoond op:
+Dynamic Media-video&#39;s kunnen worden voorvertoond op:
 
 * Pagina met elementgegevens
 * Weergave van de kaart van het element
 * Voorvertoningspagina voor delen koppelen
 
-Dynamische videocodes voor media kunnen worden gedownload van:
+Dynamic Media Video-codering kan worden gedownload van:
 
 * Brand Portal
 * Gedeelde koppeling
@@ -159,9 +155,9 @@ Er worden zes nieuwe configuraties toegevoegd voor beheerders om de volgende fun
 * *Pad met maphiërarchie op kaart- en lijstweergaven* : hiermee kunnen gebruikers de locatie weten van de mappen die in een Brand Portal-instantie zijn opgeslagen. Hiermee kunnen gebruikers mappen met dezelfde naam onderscheiden in verschillende maphiërarchie.
 * *Overzichtsoptie* : biedt gebruikers die geen beheerder zijn, metagegevens over het element of de map door het element of de map te selecteren en vervolgens de overzichtsoptie op de werkbalk te selecteren. Op dit moment worden titel, datum en pad weergegeven
 
-### Adobe I/O Hosts-gebruikersinterface voor het configureren van Auth-integratie
+### Adobe I/O Gastheren UI om Auth Integrations te vormen
 
-Brand Portal gebruikt de Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/)-interface om JWT-toepassing te maken. Hierdoor kunnen Auth-integratie worden geconfigureerd om AEM Assets-integratie met Brand Portal mogelijk te maken. Eerder werd de interface voor het configureren van OAuth-integratie gehost in `https://marketing.adobe.com/developer/`. Raadpleeg [AEM Assets-integratie configureren met Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html) voor meer informatie over het integreren van AEM Assets met Brand Portal voor het publiceren van middelen en verzamelingen naar Brand Portal.
+Brand Portal gebruikt Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) interface om JWT toepassing tot stand te brengen, die het vormen van de Integraties van Auth toelaat om de integratie van AEM Assets met het Portaal van het Merk toe te staan. Eerder werd de interface voor het configureren van OAuth-integratie gehost in `https://marketing.adobe.com/developer/`. Raadpleeg [AEM Assets-integratie configureren met Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html) voor meer informatie over het integreren van AEM Assets met Brand Portal voor het publiceren van middelen en verzamelingen naar Brand Portal.
 
 ## Brand Portal februari 2018 Functie en verbeteringen{#brand-portal-features-and-enhancements-632}
 
