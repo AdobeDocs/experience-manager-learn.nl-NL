@@ -3,16 +3,19 @@ title: Items toevoegen aan keuzegroep
 seo-title: Items toevoegen aan keuzegroep
 description: Items dynamisch toevoegen aan keuzerondjesgroepcomponent
 seo-description: Items dynamisch toevoegen aan keuzerondjesgroepcomponent
-feature: adaptieve vormen
+feature: Adaptieve Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
+topic: Ontwikkeling
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
