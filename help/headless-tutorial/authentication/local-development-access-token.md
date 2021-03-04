@@ -4,15 +4,18 @@ description: AEM de Tokens van de Toegang van de Lokale Ontwikkeling worden gebr
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: APIs
+feature: API's
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330477.jpg
+topic: '"Headless, Integrations"'
+role: Developer
+level: '"Intermediair, ervaren"'
 translation-type: tm+mt
-source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -259,7 +262,7 @@ Controleer of de metagegevens zijn bijgewerkt door u aan te melden bij de AEM al
 1. Log in de AEM als een Cloud Service-omgeving waarmee de externe toepassing interactie heeft gehad (gebruik dezelfde host als in de opdrachtregelparameter `aem`)
 1. Navigeer naar __Middelen__ > __Bestanden__
 1. Navigeer in de elementenmap die wordt aangegeven door de opdrachtregelparameter `folder`, bijvoorbeeld __WKND__ > __English__ > __Adventures__ > __Napa Wine Tasting__
-1. Open __Eigenschappen__ voor elk element (niet-inhoudfragment) in de map
+1. Open __Eigenschappen__ voor elk element (niet-inhoudsfragment) in de map
 1. Tik op de tab __Geavanceerd__
 1. Controleer de waarde van de bijgewerkte eigenschap, bijvoorbeeld __Copyright__ die is toegewezen aan de bijgewerkte JCR-eigenschap `metadata/dc:rights`, die de waarde weerspiegelt die wordt opgegeven in de parameter `propertyValue`, bijvoorbeeld __WKND Limited Use__
 
