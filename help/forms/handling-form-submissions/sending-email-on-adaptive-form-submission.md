@@ -4,16 +4,19 @@ seo-title: E-mail verzenden bij verzenden van adaptief formulier
 description: E-mail met bevestiging verzenden bij het verzenden van het adaptieve formulier met het onderdeel E-mail verzenden
 seo-description: E-mail met bevestiging verzenden bij het verzenden van het adaptieve formulier met het onderdeel E-mail verzenden
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 272e43ee4aeb756a3a1fd0ce55eaca94a9553fa4
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
