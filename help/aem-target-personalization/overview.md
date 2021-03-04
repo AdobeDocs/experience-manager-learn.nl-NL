@@ -3,10 +3,14 @@ title: Aan de slag met AEM en Adobe Target
 seo-title: Aan de slag met AEM en Adobe Target
 description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager en Adobe Target. In deze zelfstudie leert u ook over verschillende personen die betrokken zijn bij het proces van het begin tot het einde en hoe zij met elkaar samenwerken
 seo-description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager en Adobe Target. In deze zelfstudie leert u ook over verschillende personen die betrokken zijn bij het proces van het begin tot het einde en hoe zij met elkaar samenwerken
+feature: Ervaringsfragmenten
+topic: Personalisatie
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: c4ddafe392f74be8401f3ef6e07fc9d463d7620a
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
