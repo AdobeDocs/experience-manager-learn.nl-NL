@@ -1,16 +1,19 @@
 ---
 title: Video-overzicht
-description: Dynamic Media Classic wordt geleverd met automatische conversie van video tijdens het uploaden, videostreaming naar desktop- en mobiele apparaten en adaptieve videosets die zijn geoptimaliseerd voor afspelen op basis van apparaat en bandbreedte. Leer meer over video in Dynamische Media Classic en krijg een primer op videoconcepten en terminologie. Daarna leert u diep hoe u video kunt uploaden en coderen, videovoorinstellingen kunt kiezen voor het uploaden, toevoegen of bewerken van een videovoorinstelling, video's voorvertonen in een videoviewer, video kunt implementeren op websites en mobiele sites, bijschriften en hoofdstukmarkeringen aan video kunt toevoegen en videoviewers kunt publiceren voor gebruikers op het bureaublad en in mobiele apparaten.
+description: Dynamic Media Classic wordt geleverd met automatische conversie van video tijdens het uploaden, videostreaming naar desktop- en mobiele apparaten en adaptieve videosets die zijn geoptimaliseerd voor afspelen op basis van apparaat en bandbreedte. Meer informatie over video in Dynamic Media Classic en meer informatie over videoconcepten en terminologie. Daarna leert u diep hoe u video kunt uploaden en coderen, videovoorinstellingen kunt kiezen voor het uploaden, toevoegen of bewerken van een videovoorinstelling, video's voorvertonen in een videoviewer, video kunt implementeren op websites en mobiele sites, bijschriften en hoofdstukmarkeringen aan video kunt toevoegen en videoviewers kunt publiceren voor gebruikers op het bureaublad en in mobiele apparaten.
 sub-product: dynamic-media
-feature: Viewer Presets
+feature: Dynamic Media Classic, videoprofielen, Viewer Presets
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6234'
 ht-degree: 0%
 
 ---
@@ -34,9 +37,9 @@ Aan het einde van deze sectie van de zelfstudie leert u hoe u het volgende kunt 
 >
 >Alle URL&#39;s in dit hoofdstuk dienen slechts ter illustratie; het zijn geen live links .
 
-## Overzicht van de Klassieke Video van Dynamische Media
+## Overzicht van Dynamic Media Classic Video
 
-Laten we eerst een beter inzicht krijgen in de mogelijkheden voor video met gebruik van Dynamic Media Classic.
+Laten we eerst een beter idee krijgen van de mogelijkheden voor video met Dynamic Media Classic.
 
 ### Functies en mogelijkheden
 
@@ -44,15 +47,15 @@ Het Dynamic Media Classic-videoplatform biedt alle onderdelen van de video-oplos
 
 Zo kunt u eenvoudig Adaptieve video van hoge kwaliteit publiceren voor streaming op meerdere schermen, zoals desktopcomputers, iOS, Android, Blackberry en mobiele Windows-apparaten. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. De desktopcomputer of het mobiele apparaat detecteert de beschikbare bandbreedte.
 
-Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwerkomstandigheden veranderen op het bureaublad of op het mobiele apparaat. Als een klant de modus Volledig scherm op een desktopcomputer inschakelt, reageert de Adaptive Video Set met een betere resolutie, waardoor de kijkervaring van de klant wordt verbeterd. Het gebruik van Adaptieve videosets biedt u de best mogelijke weergave voor klanten die Dynamic Media Classic-video afspelen op meerdere schermen en apparaten.
+Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwerkomstandigheden veranderen op het bureaublad of op het mobiele apparaat. Als een klant de modus Volledig scherm op een desktopcomputer inschakelt, reageert de Adaptive Video Set met een betere resolutie, waardoor de kijkervaring van de klant wordt verbeterd. Met Adaptieve videosets kunt u de best mogelijke weergave bieden voor klanten die Dynamic Media Classic-video op meerdere schermen en apparaten afspelen.
 
 ### Videobeheer
 
-Het werken met video kan complexer zijn dan het werken met stilstaande digitale beelden. Bij video hebt u te maken met een groot aantal indelingen en standaarden en met de onzekerheid of uw publiek de clips kan afspelen. Met Dynamic Media Classic kunt u eenvoudig met video werken en beschikt u over veel krachtige gereedschappen &quot;onder de kap&quot;, maar kunt u de complexiteit van het werken met deze gereedschappen verminderen.
+Het werken met video kan complexer zijn dan het werken met stilstaande digitale beelden. Bij video hebt u te maken met een groot aantal indelingen en standaarden en met de onzekerheid of uw publiek de clips kan afspelen. Met Dynamic Media Classic kunt u eenvoudig met video werken en beschikt u over veel krachtige gereedschappen &quot;onder de kap&quot;, maar kunt u de complexiteit van het werken met deze gereedschappen wegwerken.
 
-Dynamic Media Classic herkent en kan werken met veel verschillende beschikbare bronindelingen. Het lezen van de video is echter slechts een deel van de moeite — u moet de video ook converteren naar een webvriendelijke indeling. Dynamic Media Classic verzorgt dit door het mogelijk te maken video om te zetten in H.264-video.
+Dynamic Media Classic herkent en kan werken met veel verschillende beschikbare bronindelingen. Het lezen van de video is echter slechts een deel van de moeite — u moet de video ook converteren naar een webvriendelijke indeling. Dynamic Media Classic zorgt hiervoor doordat u video kunt omzetten in H.264-video.
 
-Het omzetten van de video zelf kan zeer ingewikkeld worden met de vele professionele en liefdesgereedschappen die beschikbaar zijn. Met Dynamic Media Classic blijft dit eenvoudig dankzij eenvoudige voorinstellingen die zijn geoptimaliseerd voor verschillende kwaliteitsinstellingen. Als u echter iets meer wilt aanpassen, kunt u ook uw eigen voorinstellingen maken.
+Het omzetten van de video zelf kan zeer ingewikkeld worden met de vele professionele en liefdesgereedschappen die beschikbaar zijn. Met Dynamic Media Classic kunt u dit eenvoudig houden door eenvoudige voorinstellingen te bieden die zijn geoptimaliseerd voor verschillende kwaliteitsinstellingen. Als u echter iets meer wilt aanpassen, kunt u ook uw eigen voorinstellingen maken.
 
 Als u veel video hebt, zult u begrijpen dat u al uw middelen samen met uw afbeeldingen en andere media kunt beheren in Dynamic Media Classic. U kunt uw elementen, waaronder video-elementen, ordenen, catalogiseren en doorzoeken met robuuste ondersteuning voor XMP metagegevens.
 
@@ -60,13 +63,13 @@ Als u veel video hebt, zult u begrijpen dat u al uw middelen samen met uw afbeel
 
 Net als bij het probleem van het converteren van video om deze webvriendelijk en toegankelijk te maken, is het probleem van het implementeren en implementeren van video op uw site. U kunt kiezen of u een speler wilt aanschaffen of zelf een speler wilt maken, zodat deze compatibel is voor verschillende apparaten en schermen en u uw spelers daarna gewoon kunt onderhouden.
 
-De benadering van Dynamic Media Classic is ook dat u de voorinstelling en viewer kunt kiezen die aan uw behoeften voldoen. U hebt veel verschillende viewerkeuzen en een bibliotheek met vele voorinstellingen beschikbaar.
+Ook hier is de aanpak van Dynamic Media Classic zodanig dat u de voorinstelling en viewer kunt kiezen die aan uw behoeften voldoen. U hebt veel verschillende viewerkeuzen en een bibliotheek met vele voorinstellingen beschikbaar.
 
-U kunt gemakkelijk video leveren aan het web en mobiele apparaten, aangezien Dynamic Media Classic HTML5-video ondersteunt. Dit betekent dat u gebruikers met verschillende browsers en gebruikers van Android- en iOS-platforms als doel kunt instellen. Streaming video maakt een vloeiende weergave van langere of HD-inhoud mogelijk, terwijl voor progressieve HTML5-video voorinstellingen zijn geoptimaliseerd voor een klein scherm.
+U kunt gemakkelijk video leveren aan het web en mobiele apparaten, aangezien Dynamic Media Classic HTML5-video ondersteunt. Dit betekent dat u gebruikers met verschillende browsers en Android- en iOS-platformgebruikers kunt besturen. Streaming video maakt een vloeiende weergave van langere of HD-inhoud mogelijk, terwijl voor progressieve HTML5-video voorinstellingen zijn geoptimaliseerd voor een klein scherm.
 
 Voorinstellingen voor viewers voor video kunnen gedeeltelijk worden geconfigureerd, afhankelijk van het viewertype.
 
-Net als alle andere viewers verloopt de integratie via één URL voor Dynamic Media Classic per viewer of video.
+Net als alle viewers verloopt de integratie via één klassieke Dynamic Media-URL per viewer of video.
 
 >[!NOTE]
 >
@@ -80,7 +83,7 @@ Meer informatie over [Video in Dynamic Media Classic](https://docs.adobe.com/con
 
 ### Basisvideoconcepten en -terminologie
 
-Voordat we aan de slag gaan, bespreken we enkele termen waarmee u vertrouwd moet zijn om met video te werken. Deze concepten zijn niet specifiek voor Dynamic Media Classic. Als u video&#39;s gaat beheren voor een professionele website, zou het goed zijn om verder onderwijs over dit onderwerp te krijgen. We raden enkele bronnen aan het einde van deze sectie aan.
+Voordat we aan de slag gaan, bespreken we enkele termen waarmee u vertrouwd moet zijn om met video te werken. Deze concepten zijn niet specifiek voor Dynamic Media Classic. Als u video&#39;s gaat beheren voor een professionele website, zou u er goed aan doen om wat verder te leren over dit onderwerp. We raden enkele bronnen aan het einde van deze sectie aan.
 
 - **Coderen/transcoderen.** Codering is het proces waarbij videocompressie wordt toegepast om onbewerkte, niet-gecomprimeerde videogegevens om te zetten in een indeling waarmee u gemakkelijker kunt werken. Transcodering heeft, hoewel vergelijkbaar, betrekking op de conversie van de ene coderingsmethode naar de andere.
 
@@ -98,7 +101,7 @@ Voordat we aan de slag gaan, bespreken we enkele termen waarmee u vertrouwd moet
    - Een videobestand bevat meestal meerdere tracks (een videotrack (zonder audio) en een of meer audiotracks (zonder video) die met elkaar verweven en gesynchroniseerd zijn.
    - De videobestandsindeling bepaalt hoe deze verschillende gegevenstracks en metagegevens worden ingedeeld.
 
-- **Codec.** Een videocodec beschrijft het algoritme waardoor een video door het gebruiken van compressie wordt gecodeerd. Audio wordt ook gecodeerd via een audiocodec.
+- **Codec.** Een videocodec beschrijft het algoritme waardoor een video door het gebruik van compressie wordt gecodeerd. Audio wordt ook gecodeerd via een audiocodec.
 
    - Met codecs minimaliseert u de hoeveelheid informatie die nodig is om video af te spelen. In plaats van informatie over elk afzonderlijk frame wordt alleen informatie over de verschillen tussen het ene frame en het volgende opgeslagen.
    - Omdat de meeste video&#39;s weinig van het ene frame naar het andere veranderen, maken codecs hoge compressiesnelheden mogelijk, wat resulteert in kleinere bestanden.
@@ -125,10 +128,10 @@ Voordat we aan de slag gaan, bespreken we enkele termen waarmee u vertrouwd moet
 - **Framesnelheid (frames per seconde of FPS).** Het aantal frames, of stilstaande beelden, voor elke seconde van de video. Noord-Amerikaanse tv (NTSC) wordt doorgaans uitgezonden in 29,97 FPS; Europese en Aziatische tv (PAL) wordt uitgezonden in 25 FPS; en film (analoog en digitaal) hebben doorgaans een FPS-indeling van 24 (23,976).
 
    - Om dingen verwarrender te maken, zijn er ook progressieve en geïnterlinieerde kaders. Elk progressief frame bevat een volledig afbeeldingsframe, terwijl geïnterlinieerde frames elke andere rij pixels in een afbeeldingsframe bevatten. De frames worden dan heel snel afgespeeld en lijken te overvloeien. Film gebruikt een progressieve scanmethode, terwijl digitale video doorgaans geïnterlinieerd is.
-   - Over het algemeen maakt het niet uit of uw bronbeeldmateriaal geïnterlinieerd is of niet. Met Dynamic Media Classic blijft de scanmethode in de omgezette video behouden.
+   - Over het algemeen maakt het niet uit of uw bronbeeldmateriaal geïnterlinieerd is. Dynamic Media Classic behoudt de scanmethode in de omgezette video.
    - Streaming/progressieve levering. Videostreaming is het verzenden van media in een continue stream die kan worden afgespeeld wanneer deze wordt ontvangen, terwijl progressief gedownloade video wordt gedownload zoals elk ander bestand van een server en lokaal in de browser wordt opgeslagen.
 
-Hopelijk helpt deze primer u de diverse opties begrijpen betrokken bij het gebruiken van de Dynamische Klassieke video van Media.
+Hopelijk helpt deze primer u de verschillende opties te begrijpen die betrokken zijn bij het gebruik van Dynamic Media Classic-video.
 
 ## Videoworkflow
 
@@ -136,29 +139,29 @@ Wanneer u met video werkt in Dynamic Media Classic, volgt u een standaardworkflo
 
 ![afbeelding](assets/video-overview/video-overview-2.png)
 
-1. Start door videobestanden te uploaden naar Dynamic Media Classic. Hiertoe opent u het **menu Extra** onder aan het deelvenster Dynamische media Klassieke extensie en kiest u **Uploaden naar Dynamic Media Classic > Bestanden naar mapnaam**, of **Uploaden naar Dynamic Media Classic > Mappen naar mapnaam**. De map &#39;Mapnaam&#39; is de map waarin u momenteel bladert met de extensie. Videobestanden kunnen groot zijn, dus raden we u aan om FTP te gebruiken voor het uploaden van grote bestanden. Als onderdeel van het uploaden kiest u een of meer videovoorinstellingen voor het coderen van uw video&#39;s. Video kan tijdens het uploaden naar MP4-video worden getranscodeerd. Zie het onderwerp Voorinstellingen video hieronder voor meer informatie over het gebruik en het maken van coderingsvoorinstellingen. Meer informatie over [Video&#39;s uploaden en coderen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
+1. Start door videobestanden te uploaden naar Dynamic Media Classic. Hiervoor opent u het **menu Extra** onder aan het deelvenster Klassieke Dynamic Media-extensie en kiest u **Uploaden naar Dynamic Media Classic > Bestanden naar mapnaam** of **Uploaden naar Dynamic Media Classic > Mappen naar mapnaam**. De map &#39;Mapnaam&#39; is de map waarin u momenteel bladert met de extensie. Videobestanden kunnen groot zijn, dus raden we u aan om FTP te gebruiken voor het uploaden van grote bestanden. Als onderdeel van het uploaden kiest u een of meer videovoorinstellingen voor het coderen van uw video&#39;s. Video kan tijdens het uploaden naar MP4-video worden getranscodeerd. Zie het onderwerp Voorinstellingen video hieronder voor meer informatie over het gebruik en het maken van coderingsvoorinstellingen. Meer informatie over [Video&#39;s uploaden en coderen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
 2. Selecteer of selecteer en wijzig een videovoorinstelling van de viewer en bekijk een voorvertoning van uw video. U kunt een vooraf gebouwde voorinstelling voor de viewer kiezen of uw eigen voorinstelling aanpassen. Als u zich richt op mobiele gebruikers, hoeft u hier niets te doen omdat voor mobiele platforms geen viewer of voorinstelling is vereist. Meer informatie over het [voorvertonen van video&#39;s in een video-viewer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) en [Een voorinstelling voor een video-viewer toevoegen of bewerken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset).
 3. Voer een video-publicatie uit, krijg de URL en integreer de video. Het belangrijkste verschil tussen deze stap voor de videoworkflow en de afbeeldingsworkflow is dat u een speciale publicatie van video uitvoert in plaats van (of misschien ook) de standaardpublicatie van Image Serving. De integratie van de videoviewer op het bureaublad werkt precies zoals de integratie van de beeldviewer, maar voor mobiele apparaten is het nog eenvoudiger — u hebt alleen de URL naar de video zelf nodig.
 
 ### Transcodering
 
-Transcodering is eerder gedefinieerd als het converteren van de ene coderingsmethode naar de andere. In het geval van Dynamic Media Classic is dit het proces waarbij uw bronvideo van de huidige indeling naar MP4 wordt geconverteerd. Dit is vereist voordat uw video wordt weergegeven in de desktopbrowser of op een mobiel apparaat.
+Transcodering is eerder gedefinieerd als het converteren van de ene coderingsmethode naar de andere. In het geval van Dynamic Media Classic wordt uw bronvideo van de huidige indeling naar MP4 geconverteerd. Dit is vereist voordat uw video wordt weergegeven in de desktopbrowser of op een mobiel apparaat.
 
-Dynamic Media Classic kan alle transcodering voor u verwerken, een groot voordeel. U kunt de video zelf transcoderen en de bestanden uploaden die al zijn geconverteerd naar MP4, maar dat kan een complex proces zijn waarvoor geavanceerde software nodig is. Tenzij u weet wat u doet, zult u typisch geen goede resultaten op uw eerste poging krijgen.
+Dynamic Media Classic kan alle transcodering voor u afhandelen, een groot voordeel. U kunt de video zelf transcoderen en de bestanden uploaden die al zijn geconverteerd naar MP4, maar dat kan een complex proces zijn waarvoor geavanceerde software nodig is. Tenzij u weet wat u doet, zult u typisch geen goede resultaten op uw eerste poging krijgen.
 
-Met Dynamic Media Classic worden de bestanden niet alleen voor u omgezet, maar kunt u ook eenvoudig voorinstellingen gebruiken. Je hoeft echt niet veel te weten over de technische kant van dit proces. Je zou alleen maar moeten weten dat je grofweg de uiteindelijke grootte(s) hebt die je uit het systeem wilt halen en een idee van de bandbreedte die je eindgebruikers hebben.
+Niet alleen zet Dynamic Media Classic de bestanden voor u om, het maakt het ook eenvoudig door het aanbieden van gebruiksvriendelijke voorinstellingen. Je hoeft echt niet veel te weten over de technische kant van dit proces. Je zou alleen maar moeten weten dat je grofweg de uiteindelijke grootte(s) hebt die je uit het systeem wilt halen en een idee van de bandbreedte die je eindgebruikers hebben.
 
 Hoewel de vooraf gebouwde voorinstellingen handig zijn en aan de meeste behoeften voldoen, wilt u soms iets meer aan uw wensen aanpassen. In dat geval kunt u uw eigen coderingsvoorinstelling maken. In Dynamic Media Classic wordt een coderingsvoorinstelling een videovoorinstelling genoemd. Dit zal later in dit hoofdstuk worden uitgelegd.
 
 ### Informatie over streaming
 
-Een andere belangrijke functie die het vermelden waard is, is videostreaming, een standaardfunctie van het Dynamic Media Classic videoplatform. Streaming media worden voortdurend ontvangen door en gepresenteerd aan een eindgebruiker terwijl ze worden geleverd. Dit is om een aantal redenen belangrijk en wenselijk.
+Een andere belangrijke functie die het vermelden waard is, is videostreaming, een standaardfunctie van het Dynamic Media Classic-videoplatform. Streaming media worden voortdurend ontvangen door en gepresenteerd aan een eindgebruiker terwijl ze worden geleverd. Dit is om een aantal redenen belangrijk en wenselijk.
 
-Streaming vereist doorgaans minder bandbreedte dan progressief downloaden, omdat alleen het gedeelte van de video dat wordt bekeken, daadwerkelijk wordt geleverd. De Dynamic Media Classic-videostreamingserver en de kijkers gebruiken automatische bandbreedtedetectie om de best mogelijke stream te leveren voor de internetverbinding van een gebruiker.
+Streaming vereist doorgaans minder bandbreedte dan progressief downloaden, omdat alleen het gedeelte van de video dat wordt bekeken, daadwerkelijk wordt geleverd. De klassieke Dynamic Media-videostreamingserver en -viewers gebruiken automatische bandbreedtedetectie om de best mogelijke stream te leveren voor de internetverbinding van een gebruiker.
 
 Bij streaming begint de video eerder te spelen dan bij gebruik van andere methoden. Het maakt ook efficiënter gebruik van netwerkmiddelen omdat slechts de delen van de video die worden bekeken naar de cliënt worden verzonden.
 
-De andere leveringsmethode is progressieve download. In vergelijking met streaming video is er slechts één consistent voordeel voor progressief downloaden: u hebt geen streamingserver nodig om de video te leveren. Dit is natuurlijk waar Dynamic Media Classic in komt — Dynamic Media Classic heeft een streamingserver die in het platform is ingebouwd, dus je hebt niet de gedoe of extra kosten nodig om dit speciale stuk hardware te onderhouden.
+De andere leveringsmethode is progressieve download. In vergelijking met streaming video is er slechts één consistent voordeel voor progressief downloaden: u hebt geen streamingserver nodig om de video te leveren. En dit is natuurlijk waar Dynamic Media Classic binnenkomt — Dynamic Media Classic heeft een streamingserver ingebouwd in het platform, dus je hebt niet de gedoe of extra kosten nodig om dit speciale stuk hardware te onderhouden.
 
 De progressieve downloadvideo kan van om het even welke normale Webserver worden gediend. Hoewel dit handig en potentieel kosteneffectief kan zijn, moet u er rekening mee houden dat progressieve downloads beperkte zoek- en navigatiemogelijkheden hebben en dat gebruikers toegang hebben tot uw inhoud en deze opnieuw kunnen gebruiken. In sommige situaties, zoals playback achter zeer strikte netwerkfirewalls, kan het stromen levering worden geblokkeerd; in deze gevallen kan het wenselijk zijn terug te keren naar progressieve levering .
 
@@ -191,7 +194,7 @@ Wanneer u een voorinstelling kiest, moet u zowel het publiek als het bronbeeldma
 
 Welke resolutie is uw video? Als u een voorinstelling kiest die groter is dan het origineel, krijgt u mogelijk een wazige of gepixeleerde video. De optie is alleen beschikbaar als uw video groter is dan de voorinstelling, maar u geen voorinstelling kiest die groter is dan uw bronvideo.
 
-Wat is de hoogte-breedteverhouding? Als u zwarte balken rond de omgezette video ziet, kiest u de verkeerde hoogte-breedteverhouding. Dynamic Media Classic kan deze instellingen niet automatisch detecteren omdat het bestand eerst moet worden onderzocht voordat het wordt geüpload.
+Wat is de hoogte-breedteverhouding? Als u zwarte balken rond de omgezette video ziet, kiest u de verkeerde hoogte-breedteverhouding. Dynamic Media Classic kan deze instellingen niet automatisch detecteren omdat het bestand eerst moet worden onderzocht voordat het kan worden geüpload.
 
 ### Onderverdeling video-opties
 
@@ -207,7 +210,7 @@ Met videovoorinstellingen bepaalt u hoe uw video wordt gecodeerd door deze inste
 
 ### De gegevenssnelheid of bitsnelheid voor uw video bepalen
 
-Het berekenen van de bitsnelheid voor uw video is een van de minst begrepen factoren voor het weergeven van video op het web, maar mogelijk wel de belangrijkste omdat dit van directe invloed is op de gebruikerservaring. Als u de bitsnelheid te hoog instelt, hebt u een hoge videokwaliteit, maar slechte prestaties. Gebruikers met een tragere internetverbinding moeten wachten totdat de video tijdens het afspelen voortdurend wordt gepauzeerd. Maar als u het te laag stelt, zal de kwaliteit afnemen. Binnen Video vooraf ingesteld, stelt de Dynamische Klassieke van Media een waaier van gegevens afhankelijk van uw doelbandbreedte voor. Dat is een goede plek om te beginnen.
+Het berekenen van de bitsnelheid voor uw video is een van de minst begrepen factoren voor het weergeven van video op het web, maar mogelijk wel de belangrijkste omdat dit van directe invloed is op de gebruikerservaring. Als u de bitsnelheid te hoog instelt, hebt u een hoge videokwaliteit, maar slechte prestaties. Gebruikers met een tragere internetverbinding moeten wachten totdat de video tijdens het afspelen voortdurend wordt gepauzeerd. Maar als u het te laag stelt, zal de kwaliteit afnemen. In de Voorinstelling Video stelt Dynamic Media Classic een gegevensbereik voor afhankelijk van uw doelbandbreedte. Dat is een goede plek om te beginnen.
 
 Nochtans als u het zelf wilt uitzoeken, zult u een calculator van het beetjetarief nodig hebben. Dit is een gereedschap dat veel wordt gebruikt door videoprofessionals en enthousiaste personen om te bepalen hoeveel gegevens in een bepaalde stream of mediaspeler (zoals een dvd) passen.
 
@@ -227,7 +230,7 @@ Soms hebt u een speciale voorinstelling voor video nodig die niet overeenkomt me
 3. Klik op de knop **Toevoegen** om een aangepaste voorinstelling te maken. Hiermee wordt het deelvenster Voorinstelling video toevoegen geopend. Het proces is hier vergelijkbaar met het maken van een voorinstelling voor afbeeldingen.
 4. Geef de voorinstelling eerst de naam **Naam voorinstelling** om deze weer te geven in de lijst met voorinstellingen. In het bovenstaande voorbeeld is deze voorinstelling bedoeld voor video&#39;s van schermopnamen.
 5. De **Beschrijving** is optioneel, maar geeft uw gebruikers knopinfo waarin het doel van deze voorinstelling wordt beschreven.
-6. Het achtervoegsel **Encode File** wordt toegevoegd aan het einde van de naam van de video die u hier maakt. Herinner dat u een Master Video evenals deze gecodeerde video zult hebben, die een derivaat van master is, en dat geen twee activa in Dynamic Media Classic de zelfde identiteitskaart van Activa kan hebben.
+6. Het achtervoegsel **Encode File** wordt toegevoegd aan het einde van de naam van de video die u hier maakt. Onthoud dat u zowel een Master video als deze gecodeerde video zult hebben, die een derivaat van de master video is, en dat geen twee activa in de Klassiek van Dynamic Media de zelfde identiteitskaart van Activa kunnen hebben.
 7. **Afspeelapparaten** waarop u de gewenste videobestandsindeling kiest (Computer, Mobiel of Tablet). Houd er rekening mee dat Mobile en Tablet dezelfde MP4-indeling hebben. Dynamic Media Classic moet alleen weten in welke categorie de voorinstelling wordt geplaatst. het theoretische verschil is echter dat voorinstellingen voor tablets doorgaans zijn bedoeld voor een snellere internetverbinding omdat alle toepassingen WiFi ondersteunen.
 8. **De doelgegevensratio** moet u voor uzelf uitzoeken, maar u ziet hieronder een voorgesteld bereik in de afbeelding. U kunt de schuifregelaar ook naar de doelbandbreedte bij benadering slepen. Voor een preciezere figuur, gebruik een calculator van het beetjetarief. Het gaat om een beetje vallen en opstaan.
 
@@ -235,14 +238,14 @@ Soms hebt u een speciale voorinstelling voor video nodig die niet overeenkomt me
 
 9. Stel de **Verhouding** van het bronbestand in. Deze instelling is rechtstreeks gekoppeld aan de onderstaande grootte. Als u _Aangepast_ kiest, zult u zowel breedte als hoogte manueel moeten ingaan.
 10. Als u een hoogte-breedteverhouding kiest, stelt u één waarde in voor **Resolutie-grootte** en Dynamic Media Classic vult de andere waarde automatisch in. Voor een aangepaste hoogte-breedteverhouding moet u beide waarden echter invullen. De grootte moet overeenkomen met de gegevenssnelheid. Als u een zeer lage gegevenssnelheid en een groot formaat instelt, verwacht u dat de kwaliteit slecht is.
-11. Klik op **Opslaan** om de voorinstelling op te slaan. In tegenstelling tot elke andere voorinstelling hoeft u op dit punt geen voorinstellingen te publiceren, omdat deze alleen zijn bedoeld voor het uploaden van bestanden. Later moet u de gecodeerde video&#39;s publiceren, maar de voorinstellingen zijn alleen bedoeld voor intern gebruik van Dynamic Media Classic.
+11. Klik op **Opslaan** om de voorinstelling op te slaan. In tegenstelling tot elke andere voorinstelling hoeft u op dit punt geen voorinstellingen te publiceren, omdat deze alleen zijn bedoeld voor het uploaden van bestanden. Later moet u de gecodeerde video&#39;s publiceren, maar de voorinstellingen zijn alleen bedoeld voor intern gebruik door Dynamic Media Classic.
 12. Als u wilt controleren of de videovoorinstelling in de uploadlijst staat, gaat u naar **Uploaden**.Kies **Taakopties** en vouwt u **Video-opties** uit. De voorinstelling wordt vermeld in de categorie voor het afspeelapparaat dat u hebt gekozen (Computer, Mobiel of Tablet).
 
 Meer informatie over [Een videovoorinstelling toevoegen of bewerken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset).
 
 ## Bijschriften toevoegen aan uw video
 
-In sommige gevallen is het handig om bijschriften aan uw video toe te voegen, bijvoorbeeld wanneer u de video in meerdere talen aan gebruikers moet leveren, maar u de audio niet in een andere taal wilt dupliceren of de video opnieuw in afzonderlijke talen wilt opnemen. Bovendien biedt het toevoegen van ondertitels een betere toegankelijkheid voor slechthorenden en gebruikers van ondertiteling. Met Dynamic Media Classic kunt u gemakkelijk bijschriften toevoegen aan uw video&#39;s.
+In sommige gevallen is het handig om bijschriften aan uw video toe te voegen, bijvoorbeeld wanneer u de video in meerdere talen aan gebruikers moet leveren, maar u de audio niet in een andere taal wilt dupliceren of de video opnieuw in afzonderlijke talen wilt opnemen. Bovendien biedt het toevoegen van ondertitels een betere toegankelijkheid voor slechthorenden en gebruikers van ondertiteling. Met Dynamic Media Classic kunt u eenvoudig bijschriften toevoegen aan uw video&#39;s.
 
 Leer hoe te [Bijschriften aan Video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-captions-video.html) toevoegen.
 
@@ -256,13 +259,13 @@ Leer hoe te [Voeg de Markeringen van het Hoofdstuk aan Video](https://docs.adobe
 
 ### URL publiceren en kopiëren
 
-De laatste stap in de Dynamic Media Classic-workflow is het publiceren van uw video-inhoud. Video heeft echter een eigen publicatietaak, genaamd Video Server publish, die u kunt vinden onder Geavanceerd.
+De laatste stap in de Klassieke Dynamic Media-workflow is het publiceren van uw video-inhoud. Video heeft echter een eigen publicatietaak, genaamd Video Server publish, die u kunt vinden onder Geavanceerd.
 
 ![afbeelding](assets/video-overview/video-overview-6.jpg)
 
 Leer hoe u [Uw video kunt publiceren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
 
-Wanneer u een video-publicatie hebt uitgevoerd, kunt u een URL ophalen om toegang te krijgen tot uw video&#39;s en eventuele externe dynamische Media Classic Viewer-voorinstellingen in een webbrowser. Nochtans als u aanpast of uw eigen Vooraf ingestelde VideoKijker creeert, zult u nog een afzonderlijke publicatie van de Server van het Beeld moeten in werking stellen.
+Wanneer u een video-publicatie hebt uitgevoerd, kunt u een URL ophalen voor toegang tot uw video&#39;s en alle externe Dynamic Media Classic Viewer-voorinstellingen in een webbrowser. Nochtans als u aanpast of uw eigen Vooraf ingestelde VideoKijker creeert, zult u nog een afzonderlijke publicatie van de Server van het Beeld moeten in werking stellen.
 
 - Leer hoe te [een URL met een Mobiele Plaats of een Website ](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website) verbinden.
 - Leer hoe u [Video-viewer insluiten op een webpagina](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
@@ -285,26 +288,26 @@ Het proces voor het selecteren en aanpassen van een voorinstelling voor viewers 
 
 ## Optimalisatie van de zoekmachine voor video
 
-SEO (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s) is het proces waarbij de zichtbaarheid van een website of webpagina in zoekprogramma&#39;s wordt verbeterd. Terwijl zoekmachines uitblinken in het verzamelen van informatie over op tekst gebaseerde inhoud, kunnen ze geen informatie over video adequaat verkrijgen tenzij deze informatie aan hen wordt verstrekt. Met Dynamic Media Classic Video SEO kunt u metagegevens gebruiken om zoekprogramma&#39;s beschrijvingen van uw video&#39;s te bieden. Met de functie Video SEO kunt u video-items en Media RSS-feeds (mRSS) maken.
+SEO (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s) is het proces waarbij de zichtbaarheid van een website of webpagina in zoekprogramma&#39;s wordt verbeterd. Terwijl zoekmachines uitblinken in het verzamelen van informatie over op tekst gebaseerde inhoud, kunnen ze geen informatie over video adequaat verkrijgen tenzij deze informatie aan hen wordt verstrekt. Met Dynamic Media Classic Video SEO kunt u metagegevens gebruiken om zoekprogramma&#39;s beschrijvingen van uw video&#39;s te geven. Met de functie Video SEO kunt u video-items en Media RSS-feeds (mRSS) maken.
 
 - **Video Sitemap**. Hiermee wordt Google precies aangegeven waar en wat de video-inhoud op een site is. Daarom kunnen video&#39;s volledig worden doorzocht op Google. Een videositemap kan bijvoorbeeld de actieve tijd en de categorieën video&#39;s opgeven.
 - **mRSS-feed**. Wordt gebruikt door uitgevers van inhoud om mediabestanden naar Yahoo te sturen! Video zoeken. Google ondersteunt zowel het Video Sitemap- als Media RSS-feed (mRSS) voor het verzenden van informatie naar zoekmachines.
 
 Wanneer u videositemaps en mRSS-feeds maakt, bepaalt u welke metagegevensvelden van videobestanden moeten worden opgenomen. Op deze manier beschrijft u uw video&#39;s aan zoekmachines zodat zoekprogramma&#39;s het verkeer naar video&#39;s op uw website nauwkeuriger kunnen sturen.
 
-Nadat de Sitemap of feed is gemaakt, kunt u deze automatisch laten publiceren via Dynamic Media Classic, deze handmatig publiceren of een bestand genereren dat u later kunt bewerken. Bovendien kan Dynamic Media Classic dit bestand elke dag automatisch genereren en publiceren.
+Nadat de Sitemap of feed is gemaakt, kunt u deze automatisch laten publiceren in Dynamic Media Classic, handmatig publiceren of gewoon een bestand genereren dat u later kunt bewerken. Bovendien kan Dynamic Media Classic dit bestand elke dag automatisch genereren en publiceren.
 
-Aan het einde van het proces verzendt u het bestand of de URL naar uw zoekprogramma. Deze taak wordt gedaan buiten Dynamic Media Classic; wij zullen het echter hieronder kort bespreken .
+Aan het einde van het proces verzendt u het bestand of de URL naar uw zoekprogramma. Deze taak wordt uitgevoerd buiten Dynamic Media Classic; wij zullen het echter hieronder kort bespreken .
 
 ### Vereisten voor Sitemap/mRSS-bestanden
 
-Google en andere zoekprogramma&#39;s kunnen uw bestanden alleen afwijzen als ze de juiste indeling hebben en bepaalde gegevens bevatten. Dynamic Media Classic genereert een bestand met de juiste indeling; als de informatie echter niet beschikbaar is voor sommige van uw video&#39;s, worden deze niet opgenomen in het bestand.
+Google en andere zoekprogramma&#39;s kunnen uw bestanden alleen afwijzen als ze de juiste indeling hebben en bepaalde gegevens bevatten. Dynamic Media Classic genereert een bestand met de juiste indeling. als de informatie echter niet beschikbaar is voor sommige van uw video&#39;s, worden deze niet opgenomen in het bestand.
 
 De vereiste velden zijn Openingspagina (de URL voor de pagina die de video weergeeft, niet de URL naar de video zelf), Titel en Beschrijving. Elke video moet een item voor deze items hebben, anders wordt deze niet opgenomen in het gegenereerde bestand. Optionele velden zijn Tags en Categorie.
 
-Er zijn twee andere vereiste velden: de inhoud-URL, de URL naar het video-element zelf en de miniatuur, een URL naar een miniatuurafbeelding van de video. Dynamische media-klassieke velden vullen deze waarden echter automatisch in.
+Er zijn nog twee verplichte velden: de URL van de inhoud, de URL naar het video-element zelf en de miniatuur, een URL naar een miniatuurafbeelding van de video. Deze waarden worden echter automatisch door Dynamic Media Classic ingevuld.
 
-De aanbevolen workflow is om deze gegevens in uw video&#39;s in te sluiten voordat ze worden geüpload met XMP metagegevens. Tijdens het uploaden wordt de gegevens door Dynamic Media Classic uitgepakt. Met een toepassing als Adobe Bridge, die bij alle Adobe Creative Cloud-toepassingen wordt geleverd, kunt u de gegevens invullen in standaardmetagegevensvelden.
+De aanbevolen workflow bestaat uit het insluiten van deze gegevens in uw video&#39;s voordat ze worden geüpload met XMP metagegevens. Dynamic Media Classic haalt deze gegevens uit tijdens het uploaden. Met een toepassing als Adobe Bridge, die bij alle Adobe Creative Cloud-toepassingen wordt geleverd, kunt u de gegevens invullen in standaardmetagegevensvelden.
 
 Als u deze methode volgt, hoeft u deze gegevens niet handmatig in te voeren met Dynamic Media Classic. U kunt echter ook Metagegevensvoorinstellingen gebruiken in Dynamic Media Classic als een snelle manier om dezelfde gegevens telkens in te voeren.
 
@@ -325,8 +328,8 @@ Als u Video-SEO instelt, begint u met het kiezen van het gewenste type indeling,
 1. Ga naar **Setup > Application Setup > Video SEO > Settings**.
 2. Kies in het menu **Generatiemodus** een bestandsindeling. De standaardwaarde is Uit, zodat om het in te schakelen, kiest u Video Sitemap, mRSS of Beide.
 3. Kies of u automatisch of handmatig wilt genereren. Voor eenvoud, adviseren wij u het aan **Automatische Wijze** plaatsen. Als u Automatisch kiest, stelt u ook de optie **Markeren voor publiceren** in, anders gaan de bestanden niet live. De Sitemap- en RSS-bestanden zijn typen in een XML-document en moeten net als andere elementen worden gepubliceerd. Gebruik een van de modi Handmatig als u niet alle informatie nu klaar hebt of slechts een eenmalige generatie wilt uitvoeren.
-4. Vul de metagegevenstags in die in de bestanden worden gebruikt. Deze stap is niet optioneel. U dient minimaal de drie velden met een sterretje (\*) op te nemen: **Landing Page**, **Title** en **Description**. Als u de metagegevens voor deze taken wilt gebruiken, sleept u de velden vanuit het deelvenster Metagegevens aan de rechterkant naar een bijbehorend veld op het formulier. Met Dynamic Media Classic wordt het veld voor plaatsaanduidingen automatisch gevuld met de feitelijke gegevens van elke video. U hoeft geen metagegevensvelden te gebruiken. In plaats daarvan kunt u hier statische tekst typen, maar voor elke video wordt dezelfde tekst weergegeven.
-5. Nadat u informatie hebt ingevoerd in de drie vereiste velden, schakelt Dynamic Media Classic de knoppen **Opslaan** en **Opslaan en genereren** in. Klik op een pictogram om de instellingen op te slaan. Gebruik **Opslaan** als u in Automatische modus werkt en u wilt dat Dynamic Media Classic de bestanden later kan genereren. Gebruik **Opslaan en genereren** om het bestand direct te maken.
+4. Vul de metagegevenstags in die in de bestanden worden gebruikt. Deze stap is niet optioneel. U dient minimaal de drie velden met een sterretje (\*) op te nemen: **Landing Page**, **Title** en **Description**. Als u de metagegevens voor deze taken wilt gebruiken, sleept u de velden vanuit het deelvenster Metagegevens aan de rechterkant naar een bijbehorend veld op het formulier. Dynamic Media Classic vult het veld voor plaatsaanduidingen automatisch met de feitelijke gegevens van elke video. U hoeft geen metagegevensvelden te gebruiken. In plaats daarvan kunt u hier statische tekst typen, maar voor elke video wordt dezelfde tekst weergegeven.
+5. Nadat u informatie hebt ingevoerd in de drie vereiste velden, schakelt Dynamic Media Classic de knoppen **Opslaan** en **Opslaan en genereren** in. Klik op een pictogram om de instellingen op te slaan. Gebruik **Opslaan** als u in de automatische modus werkt en u wilt dat Dynamic Media Classic de bestanden later kan genereren. Gebruik **Opslaan en genereren** om het bestand direct te maken.
 
 ### Uw videositemap, mRSS-feed of beide bestanden testen en publiceren
 
@@ -348,21 +351,21 @@ Voorbeeld:
 
 De laatste stap van het proces is het verzenden van uw bestanden en/of URL&#39;s naar zoekprogramma&#39;s. Dynamic Media Classic kan deze stap niet voor u uitvoeren. als u echter de URL verzendt en niet het XML-bestand zelf, moet uw feed worden bijgewerkt wanneer het bestand de volgende keer wordt gegenereerd en er een publicatie plaatsvindt.
 
-De methode voor het verzenden naar uw zoekmachine verschilt, maar voor Google gebruikt u Google Webmaster Tools. Als dat het geval is, gaat u naar **Site-configuratie > Sitemaps** en klikt u op **Sitemap** verzenden. Hier kunt u de Klassieke URL van de Dynamische Media aan uw dossier(s) SEO plaatsen.
+De methode voor het verzenden naar uw zoekmachine verschilt, maar voor Google gebruikt u Google Webmaster Tools. Als dat het geval is, gaat u naar **Site-configuratie > Sitemaps** en klikt u op **Sitemap** verzenden. Hier kunt u de klassieke Dynamic Media-URL plaatsen naar uw SEO-bestand(en).
 
 ### Video SEO-rapport
 
-Dynamic Media Classic levert een rapport waarin u kunt zien hoeveel video&#39;s met succes in de bestanden zijn opgenomen, en nog belangrijker, die niet zijn opgenomen als gevolg van fouten. Ga naar **Setup > Application Setup > Video SEO > Report** om het rapport te openen.
+Dynamic Media Classic levert een rapport waarin u kunt zien hoeveel video&#39;s succesvol zijn opgenomen in de bestanden, en belangrijker nog, die niet zijn opgenomen als gevolg van fouten. Ga naar **Setup > Application Setup > Video SEO > Report** om het rapport te openen.
 
 ![afbeelding](assets/video-overview/video-overview-9.jpg)
 
 ## Mobiele implementatie voor MP4-video
 
-Dynamic Media Classic bevat geen voorinstellingen voor viewers voor mobiele apparaten, omdat viewers video niet hoeven af te spelen op ondersteunde mobiele apparaten. Zolang u codeert naar de H.264 MP4-indeling (door het uploaden te activeren of door het vooraf coderen op uw bureaublad), kunnen ondersteunde tablets en smartphones uw video&#39;s afspelen zonder dat u een viewer nodig hebt. Dit wordt ondersteund op Android- en iOS-apparaten (iPhone en iPad).
+Dynamic Media Classic bevat geen viewervoorinstellingen voor mobiele apparaten, omdat viewers video niet hoeven af te spelen op ondersteunde mobiele apparaten. Zolang u codeert naar de H.264 MP4-indeling (door het uploaden te activeren of door het vooraf coderen op uw bureaublad), kunnen ondersteunde tablets en smartphones uw video&#39;s afspelen zonder dat u een viewer nodig hebt. Dit wordt ondersteund op Android- en iOS-apparaten (iPhone en iPad).
 
 Er is geen viewer vereist omdat beide platforms native H.264-ondersteuning hebben. U kunt de video insluiten in een HTML5-webpagina of de video insluiten in de toepassing zelf. De besturingssystemen Android en iOS bieden een controller voor het afspelen van de video.
 
-Daarom geeft Dynamic Media Classic u geen URL naar een viewer voor mobiele apparaten, maar geeft deze rechtstreeks een URL naar de video. In het voorvertoningsvenster voor een MP4-video zijn er koppelingen beschikbaar voor Desktop en Mobile. De URL voor mobiele apparaten verwijst naar de gepubliceerde video.
+Daarom geeft Dynamic Media Classic u geen URL naar een viewer voor mobiele apparaten, maar geeft u rechtstreeks een URL naar de video. In het voorvertoningsvenster voor een MP4-video zijn er koppelingen beschikbaar voor Desktop en Mobile. De URL voor mobiele apparaten verwijst naar de gepubliceerde video.
 
 Een belangrijk aspect van gepubliceerde video is dat in de URL het volledige pad naar de video wordt vermeld en niet alleen de element-id. Wanneer u werkt met afbeeldingen, roept u de afbeelding aan met de element-id, ongeacht de mapstructuur. Voor video moet u echter ook de mapstructuur opgeven. In de bovenstaande URL&#39;s wordt de video opgeslagen in het pad:
 
@@ -386,4 +389,4 @@ U kunt ook de Dynamic Media Classic MP4-video insluiten in uw mobiele toepassing
 
 ## Aanvullende bronnen
 
-Bekijk de [Dynamic Media Skill Builder: Video in Dynamic Media Classic](https://seminars.adobeconnect.com/p2ueiaswkuze) on-demand webinar om te leren hoe u de videofuncties in Dynamic Media Classic kunt gebruiken.
+Bekijk de [Dynamic Media Skill Builder: Video in Dynamic Media Classic](https://seminars.adobeconnect.com/p2ueiaswkuze) on-demand webinar voor meer informatie over het gebruik van de videofuncties in Dynamic Media Classic.
