@@ -2,16 +2,19 @@
 title: Adobe IMS-verificatie begrijpen met AEM op Adobe Managed Services
 description: Adobe Experience Manager introduceert ondersteuning voor Admin Consoles voor AEM instanties en op Adobe IMS (Identity Management System) gebaseerde verificatie voor AEM op Managed Services.   Dankzij deze integratie kunnen AEM Managed Services-klanten alle Experience Cloud-gebruikers beheren in één geïntegreerde webconsole. Gebruikers en groepen kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat centraal beheerde toegang tot de specifieke AEM-instanties wordt verleend.
 version: 6.4, 6.5
-feature: verificatie
+feature: 'Gebruikers en groepen '
 topics: authentication, security
 activity: understand
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 kt: 781
+topic: Architectuur
+role: Architect
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
