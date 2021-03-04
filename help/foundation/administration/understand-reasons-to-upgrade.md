@@ -7,10 +7,13 @@ topics: best-practices, upgrade
 audience: all
 activity: understand
 doc-type: article
+topic: Upgrade
+role: '"Leader, Architect, Developer, Administrator, Business Practitioner"'
+level: Begin
 translation-type: tm+mt
-source-git-commit: 1519856731758ece2860615c06fc0d64edb104a5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3540'
+source-wordcount: '3548'
 ht-degree: 1%
 
 ---
@@ -55,7 +58,7 @@ AEM Assets blijft voortbouwen op zijn rijke reeks mogelijkheden voor vermogensbe
 + **Dankzij de Adobe** Stockintegration hebt u rechtstreeks vanuit de AEM Assets-ervaring toegang tot Adobe Stock-afbeeldingen, zodat u naadloze content kunt detecteren.
 + **AEM Desktop** Appreleases versie 2.0 en re-envisioning zelf terwijl het verbeteren van prestaties en stabiliteit.
 + **Connected** Assets ondersteunt afzonderlijke AEM Sites-instanties voor naadloze toegang tot en gebruik van middelen van een andere AEM Assets-instantie.
-+ Bijgewerkte videoondersteuning in **Dynamische media**, inclusief **360 Video** en **Aangepaste videominiaturen**.
++ Bijgewerkte videoondersteuning in **Dynamic Media**, inclusief **360 Video** en **Aangepaste videominiaturen**.
 
 ### Inhoudsinformatie
 
@@ -492,7 +495,7 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">SPA Editor</a>:</strong>
-            Maak authorabele webervaringen met behulp van SPA-frameworks (Single Page Application) die zijn gebaseerd op React of Angular.</td>
+            Maak een authorabele webervaringen met behulp van SPA-frameworks (Single Page Application) die zijn gebaseerd op React of Angular.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -895,7 +898,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
 <table>
     <thead>
         <tr>
-            <td>Dynamische mediafunctie</td>
+            <td>Dynamic Media-functie</td>
             <td>5,6 x</td>
             <td>6,0</td>
             <td>6,1</td>
@@ -964,7 +967,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">Levering</a>:</strong>
-            Flexibele opties voor het koppelen of insluiten van dynamische media-inhoud en levering via HTTP/2-protocol.</td>
+            Flexibele opties voor het koppelen of insluiten van Dynamic Media-inhoud en levering via HTTP/2-protocol.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -975,7 +978,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         </tr>
         <tr>
             <td><strong>Upgrade van Scene7 naar Dynamic Media:</strong>
-            mogelijkheid om master elementen te migreren en door te gaan met het gebruik van bestaande S7-URL's.</td>
+            mogelijkheid om master middelen te migreren en bestaande S7-URL's te blijven gebruiken.</td>
             <td> </td>
             <td> </td>
             <td> </td>
