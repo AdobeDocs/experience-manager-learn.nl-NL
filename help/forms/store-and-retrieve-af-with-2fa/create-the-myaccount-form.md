@@ -1,7 +1,7 @@
 ---
 title: Het MyAccountForm maken
 description: Maak het mijnaccountformulier om het gedeeltelijk ingevulde formulier op te halen na geslaagde verificatie van de toepassings-id en het telefoonnummer.
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: implement
 version: 6.4,6.5
 kt: 6599
 thumbnail: 6599.jpg
+topic: Ontwikkeling
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -47,6 +50,6 @@ De code in het servlet op **/bin/renderaf** stuurt het verzoek door om de storea
 
 * MyAccountForm kan [worden gedownload van hier](assets/my-account-form.zip)
 
-* Voorbeeldformulieren zijn gebaseerd op aangepaste formuliersjablonen [ die naar AEM moeten worden geïmporteerd om de voorbeeldformulieren correct te kunnen weergeven.](assets/custom-template-with-page-component.zip)
+* Voorbeeldformulieren zijn gebaseerd op aangepaste formuliersjablonen ](assets/custom-template-with-page-component.zip) die naar AEM moeten worden geïmporteerd om de voorbeeldformulieren correct te kunnen weergeven.[
 
 * [Aangepaste verzendhandler ](assets/custom-submit-my-account-form.zip) die is gekoppeld aan de MyAccountForm-verzending moet worden geïmporteerd in AEM.
