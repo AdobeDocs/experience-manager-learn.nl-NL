@@ -1,19 +1,15 @@
 ---
 title: Smart Translation Search instellen met AEM Assets
-seo-title: Smart Translation Search instellen met AEM Assets
 description: Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse inhoud op te lossen. Om AEM in te stellen voor Smart Translation Search, moet de Apache OSGi-bundel voor zoekmachines voor zoekmachines worden geïnstalleerd en geconfigureerd, evenals de relevante gratis en open-source Apache Joshua-taalpakketten die de vertaalregels bevatten.
-seo-description: Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse inhoud op te lossen. Om AEM in te stellen voor Smart Translation Search, moet de Apache OSGi-bundel voor zoekmachines voor zoekmachines worden geïnstalleerd en geconfigureerd, evenals de relevante gratis en open-source Apache Joshua-taalpakketten die de vertaalregels bevatten.
-uuid: b0e8dab2-6bc4-4158-91a1-4b9811359798
-discoiquuid: 4db1b4db-74f4-4646-b5de-cb891612cc90
-topics: authoring, search, metadata, localization
-audience: administrator, developer
-doc-type: technical video
-activity: setup
 version: 6.3, 6.4, 6.5
+feature: Zoeken
+topic: Inhoudsbeheer
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
@@ -59,7 +55,7 @@ Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse
    * De nieuwe vereiste heapgrootte voor AEM bepalen
 
       * AEM heapgrootte vóór het taalgebrek + de grootte van de modeldirectory afgerond naar de dichtstbijzijnde 2 GB
-      * Bijvoorbeeld: Als de pre-taalpakken de AEM installatie 8 GB van hoop vereist om te lopen, en de modelomslag van het taalpak is niet samengedrukt 3.8 GB, is de nieuwe heapgrootte:
+      * Bijvoorbeeld: Als de prelanguage-pakketten de AEM installatie 8 GB van hoop vereisen te lopen, en de modelomslag van het taalpak niet gecomprimeerd is 3.8 GB, is de nieuwe heapgrootte:
 
          Het origineel `8GB` + ( `3.75GB` afgerond naar de dichtstbijzijnde `2GB`, die `4GB` is) voor een totaal van `12GB`
    * Controleer of de computer over deze hoeveelheid extra beschikbaar geheugen beschikt.
