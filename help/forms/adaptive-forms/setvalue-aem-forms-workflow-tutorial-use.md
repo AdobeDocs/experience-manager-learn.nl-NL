@@ -4,19 +4,16 @@ seo-title: SetValue gebruiken in AEM Forms Workflow
 description: Waarde van element instellen in door Adaptive Forms ingediende gegevens in AEM Forms OSGI
 seo-description: Waarde van element instellen in door Adaptive Forms ingediende gegevens in AEM Forms OSGI
 uuid: fe431e48-f05b-4b23-94d2-95d34d863984
-feature: Adaptieve Forms
+feature: adaptieve formulieren, workflow
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 discoiquuid: dbd87302-f770-4e61-b5ad-3fc5831b4613
-topic: Ontwikkeling
-role: Developer
-level: Ervaren
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
