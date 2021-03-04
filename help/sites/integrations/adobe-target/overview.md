@@ -1,7 +1,7 @@
 ---
 title: Overzicht van AEM en Adobe Target
 description: Leer hoe u persoonlijke ervaringen kunt maken en leveren met Adobe Experience Manager als Cloud Service en Adobe Target.
-feature: launch, experience-fragments, core-components, data-layer
+feature: Ervaring Fragments, de Componenten van de Kern, de Laag van de Gegevens van de Adobe Cliënt
 topics: integrations, personalization, administration, development
 audience: all
 doc-type: feature video
@@ -9,10 +9,13 @@ activity: use
 version: cloud-service
 kt: 6043
 thumbnail: 41241.jpg
+topic: Integrations
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -32,7 +35,7 @@ In deze video bespreken we drie benaderingen voor het gebruik van AEM en Doel, e
    1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
    1. [AEM Author Service integreren met Adobe Target](./setup-aem-target-cloud-service.md)
    1. [Exporteer AEM ervaringsfragmenten naar Adobe Target](./export-experience-fragment-target.md)
-   1. [Een deel van een webpagina aanpassen met de functie Gepresenteerde fragmentatieaanbiedingen](./create-target-activity.md)
+   1. [Een deel van een webpagina aanpassen met Gepresenteerde fragmentatieaanbiedingen](./create-target-activity.md)
 
 * __Scenario 2:__ Personalisatie die Visual Experience Composer (VEC) gebruikt
 
