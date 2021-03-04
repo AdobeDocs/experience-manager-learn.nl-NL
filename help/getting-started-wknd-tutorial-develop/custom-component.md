@@ -2,7 +2,7 @@
 title: Aangepaste component
 description: Omvat het einde tot eind verwezenlijking van een component van de douanebylijn die authored inhoud toont. Omvat het ontwikkelen van een het Verschuiven Model om bedrijfslogica in te kapselen om de bylinecomponent en overeenkomstige HTML te bevolken om de component terug te geven.
 sub-product: sites
-feature: sling-models
+feature: '"Core Components, APIs"'
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,10 +11,13 @@ audience: developer
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+topic: '"Inhoudsbeheer, ontwikkeling"'
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3961'
+source-wordcount: '3969'
 ht-degree: 0%
 
 ---
@@ -680,7 +683,7 @@ Wij kiezen voor de **second**-benadering. De eerste aanpak is waarschijnlijk vol
 
    Vergeet niet dat het gebruik van `@Self Image image` om het Core Component Image Sling Model te injecteren hierboven een optie was - de `@Self`-annotatie probeert het aanpasbare object te injecteren (in ons geval een SlingHttpServletRequest) en zich aan te passen aan het type annotatieveld. Aangezien het model voor het instellen van kerncomponentafbeeldingen kan worden aangepast aan SlingHttpServletRequest-objecten, zou dit hebben gewerkt en is het minder code dan onze meer verkennende aanpak.
 
-   Nu hebben we de variabelen geïnjecteerd die nodig zijn om ons afbeeldingsmodel te instantiëren via de ModelFactory-API. We gebruiken de annotatie **[@PostConstruct](https://sling.apache.org/documentation/bundles/models.html#postconstruct-methods)** om dit object te verkrijgen nadat het Sling-model is geïnstantieerd.
+   Nu hebben wij de variabelen nodig geïnjecteerd om ons model van het Beeld via ModelFactory API te concretiseren. We gebruiken de annotatie **[@PostConstruct](https://sling.apache.org/documentation/bundles/models.html#postconstruct-methods)** om dit object te verkrijgen nadat het Sling-model is geïnstantieerd.
 
    `@PostConstruct` is ongelooflijk nuttig en handelt in een zelfde hoedanigheid als aannemer, echter, wordt het aangehaald nadat de klasse wordt geconcretiseerd en alle geannoteerde gebieden van Java worden geïnjecteerd. Terwijl andere annotaties van het Model van het Sling aan de klassengebieden van Java (variabelen) annoteert, `@PostConstruct` een leegte, nulparametermethode annoteert, typisch genoemd `init()` (maar kan om het even wat worden genoemd).
 
@@ -876,7 +879,7 @@ De [Use block statement](https://github.com/adobe/htl-spec/blob/master/SPECIFICA
 
 `data-sly-use.byline="com.adobe.aem.guides.wknd.models.Byline"` gebruikt de interface Byline (com.adobe.aem.guides.wknd.models.Byline) die door BylineImpl wordt uitgevoerd en past het huidige SlingHttpServletRequest aan het aan, en het resultaat wordt opgeslagen in een de veranderlijke naam van HTML byline (  `data-sly-use.<variable-name>`).
 
-1. Werk de buitenste `div` bij om **Byline** het Verschuiven Model door zijn openbare interface van verwijzingen te voorzien:
+1. Werk de buitenste `div` bij om **Byline** het Verdelen Model door zijn openbare interface te verwijzen:
 
    ```xml
    <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
