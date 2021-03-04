@@ -1,7 +1,7 @@
 ---
 title: Verifieer gebruikers met OTP
 description: Verifieer het mobiele aantal verbonden aan het toepassingsaantal gebruikend OTP.
-feature: integrations
+feature: Adaptieve Forms
 topics: adaptive forms
 audience: developer
 doc-type: article
@@ -9,10 +9,13 @@ activity: use
 version: 6.4,6.5
 kt: 6594
 thumbnail: 6594.jpg
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -54,7 +57,7 @@ Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [REST gebaseerd
 
 ## Formuliergegevensmodel maken
 
-AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen[. ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html) Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
+AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). [ Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
 Het ingevulde formuliergegevensmodel kan [hier worden gedownload](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
