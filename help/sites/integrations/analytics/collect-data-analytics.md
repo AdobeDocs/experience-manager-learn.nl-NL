@@ -1,7 +1,7 @@
 ---
 title: Paginagegevens verzamelen met Adobe Analytics
 description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om gegevens over gebruikersactiviteit te verzamelen op een website die is gemaakt met Adobe Experience Manager. Leer hoe u regels in Experience Platform Launch gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics-rapportenpakket te verzenden.
-feature: analytics
+feature: analyse
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: setup
 version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
+topic: Integrations
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 64c167ec1d625fdd8be1bc56f7f5e59460b8fed3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2415'
+source-wordcount: '2419'
 ht-degree: 1%
 
 ---
@@ -92,7 +95,7 @@ Het [WKND project van de Verwijzing](https://github.com/adobe/aem-guides-wknd) w
    ```json
    page-2eee4f8914:
        @type: "wknd/components/page"
-       dc:description: "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world."
+       dc:description: WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.
        dc:title: "WKND Adventures and Travel"
        repo:modifyDate: "2020-08-31T21:02:21Z"
        repo:path: "/content/wknd/us/en.html"
@@ -233,7 +236,7 @@ Gegevenselementen worden toegewezen aan de eigenschappen `@type`, `dc:title` en 
 ### Paginasjabloon
 
 1. Klik **Gegevenselement toevoegen**.
-1. Typ **Paginasjabloon** voor **Naam**.
+1. Voer voor **Naam** **Paginasjabloon** in.
 1. Voor **Gegevenselement Type** selecteert **Aangepaste code**.
 1. Klik op **Editor openen** en voer het volgende in de aangepaste code-editor in:
 
@@ -342,7 +345,7 @@ Momenteel voert de **Geladen Pagina** regel eenvoudig een consoleverklaring uit.
 
 ## Valideer de oproep Beacon en Analytics voor paginaweergave
 
-Nu de **Pagina Geladen** regel het baken van de Analyse verzendt, zou u de variabelen moeten kunnen zien die van Analytics gebruikend Foutopsporing van het Experience Platform volgen.
+Nu de **Pagina Geladen** regel het baken van Analytics verzendt, zou u de variabelen moeten kunnen zien die van Analytics gebruikend Foutopsporing van het Experience Platform volgen.
 
 1. Open [WKND Site](https://wknd.site/us/en.html) in uw browser.
 1. Klik op het pictogram Foutopsporing ![Ervaar het pictogram Foutopsporing op platform](assets/collect-data-analytics/experience-cloud-debugger.png) om Foutopsporing op Experience Platform te openen.
@@ -377,4 +380,4 @@ U hebt net de gebeurtenisgestuurde Adobe Client Data Layer en het Experience Pla
 
 ### Volgende stappen
 
-Bekijk de volgende zelfstudie om te leren hoe u de gebeurtenisgestuurde Adobe Client Data-laag kunt gebruiken om kliks van specifieke-componenten op een Adobe Experience Manager-site [ bij te houden.](track-clicked-component.md)
+Bekijk de volgende zelfstudie om te leren hoe u de gebeurtenisgestuurde Adobe Client Data-laag kunt gebruiken om kliks van specifieke-componenten op een Adobe Experience Manager-site ](track-clicked-component.md) bij te houden.[
