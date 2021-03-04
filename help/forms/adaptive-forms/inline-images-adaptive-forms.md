@@ -3,19 +3,16 @@ title: Inline-afbeeldingen weergeven in Adaptive Forms
 seo-title: Inline-afbeeldingen weergeven in Adaptive Forms
 description: Geüploade afbeeldingen inline weergeven in Adaptive Forms
 seo-description: Geüploade afbeeldingen inline weergeven in Adaptive Forms
-feature: Adaptieve Forms
+feature: adaptieve vormen
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: Ontwikkeling
-role: Developer
-level: Ervaren
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
