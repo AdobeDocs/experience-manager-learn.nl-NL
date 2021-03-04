@@ -3,19 +3,16 @@ title: Aflevering van interactief communicatiedocument - Web Channel AEM Forms
 seo-title: Aflevering van interactief communicatiedocument - Web Channel AEM Forms
 description: Het webkanaaldocument via de link in e-mail verzenden
 seo-description: Het webkanaaldocument via de link in e-mail verzenden
-feature: Interactieve communicatie
+feature: interactieve communicatie
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
