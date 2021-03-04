@@ -3,7 +3,7 @@ title: De Pagina-editor gebruiken met AEM Sites
 seo-title: De Pagina-editor gebruiken met Adobe Experience Manager Sites
 description: In de volgende video worden verschillende van de belangrijkste functies van de Touch-UI Sites-editor in Adobe Experience Manager benadrukt.
 seo-description: In de volgende video worden verschillende van de belangrijkste functies van de Touch-UI Sites-editor in Adobe Experience Manager benadrukt.
-feature: page-editor
+feature: Pagina-editor
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -11,10 +11,13 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4248
 thumbnail: 32011.jpg
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '249'
 ht-degree: 1%
 
 ---
