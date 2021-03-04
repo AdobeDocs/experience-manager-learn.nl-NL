@@ -1,18 +1,16 @@
 ---
 title: Connected Assets gebruiken met AEM Sites
 description: Met de functie Connected Assets kan een AEM Sites-auteur naadloos digitale elementen delen die worden gehost op een andere AEM.
-feature: connected-assets
-topics: authoring, operations, sharing, publishing
-audience: all
-doc-type: feature video
-activity: use
+feature: Gekoppelde assets
 version: 6.5
-redirect-from: https://docs.adobe.com
+topic: Inhoudsbeheer
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 0%
+source-wordcount: '109'
+ht-degree: 2%
 
 ---
 
