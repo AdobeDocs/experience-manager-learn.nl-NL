@@ -1,25 +1,22 @@
 ---
 title: Dynamic Media Viewers gebruiken met Adobe Analytics en Adobe Launch
-seo-title: Dynamic Media Viewers gebruiken met Adobe Analytics en Adobe Launch
-description: Met de extensie Dynamic Media Viewers voor het starten van Adobe en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van Adobe.
-seo-description: 'Met de extensie Dynamic Media Viewers voor het starten van Adobe en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van Adobe. '
-sub-product: dynamic-media, analyse
-feature: asset-insights, media-player
-topics: images, videos, renditions, authoring, integrations, publishing
-doc-type: feature video
-audience: all
-activity: use
+description: Met de Dynamic Media Viewers-extensie voor het starten van Adobe en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van Adobe.
+sub-product: ' Dynamic Media '
+feature: 'Asset Insights '
 version: 6.3, 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 2%
+source-wordcount: '367'
+ht-degree: 4%
 
 ---
 
 
-# Dynamische mediaviewers gebruiken met Adobe Analytics en Adobe starten{#using-dynamic-media-viewers-adobe-analytics-launch}
+# Dynamic Media Viewers gebruiken met Adobe Analytics en Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
 
 Voor klanten met Dynamic Media en Adobe Analytics kunt u nu het gebruik van Dynamic Media Viewers op uw website bijhouden met de Dynamic Media Viewer Extension.
 
@@ -27,15 +24,15 @@ Voor klanten met Dynamic Media en Adobe Analytics kunt u nu het gebruik van Dyna
 
 >[!NOTE]
 >
-> Adobe Experience Manager uitvoeren in Dynamic Media Scene7-modus voor deze functionaliteit. U moet ook [Adobe Experience Platform Launch integreren met uw AEM instantie](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
+> Adobe Experience Manager uitvoeren in de Dynamic Media Scene7-modus voor deze functionaliteit. U moet ook [Adobe Experience Platform Launch integreren met uw AEM instantie](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
 
-Met de introductie van de Dynamic Media Viewer-extensie biedt Adobe Experience Manager nu geavanceerde analyseondersteuning voor elementen die worden geleverd met Dynamic Media Viewer (5.13). Hierdoor hebt u meer gedetailleerde controle over het bijhouden van gebeurtenissen wanneer een Dynamic Media Viewer wordt gebruikt op een sitepagina.
+Met de introductie van de Dynamic Media Viewer-extensie biedt Adobe Experience Manager nu geavanceerde analyseondersteuning voor elementen die worden geleverd met Dynamic Media-viewers (5.13). Hierdoor hebt u meer gedetailleerde controle over het bijhouden van gebeurtenissen wanneer een Dynamic Media Viewer wordt gebruikt op een sitepagina.
 
 Als u AEM Assets en Sites al hebt, kunt u uw eigenschap Launch integreren met de AEM auteur-instantie. Nadat de startintegratie aan uw website is gekoppeld, kunt u dynamische mediacomponenten aan uw pagina toevoegen met gebeurtenistracering voor viewers ingeschakeld.
 
 Voor klanten met alleen AEM Assets of Dynamic Media Classic kunnen gebruikers de insluitcode voor een viewer ophalen en deze aan de pagina toevoegen. De bibliotheken van het Manuscript van de lancering kunnen dan manueel aan de pagina voor kijker gebeurtenis worden toegevoegd volgen.
 
-In de volgende tabel worden de gebeurtenissen van de Dynamic Media Viewer en de ondersteunde argumenten weergegeven:
+De volgende tabel bevat een lijst met Dynamic Media Viewer-gebeurtenissen en de argumenten die hiervoor worden ondersteund:
 
 <table>
    <tbody>
