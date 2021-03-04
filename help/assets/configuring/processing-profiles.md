@@ -2,19 +2,18 @@
 title: Profielen verwerken
 description: Met verwerkingsprofielen worden de uitvoeringen gedefinieerd die voor elementen in AEM als Cloud Service moeten worden gemaakt.
 sub-product: elementen
-feature: processing-profiles
-topics: renditions
-audience: administrator, implementer
-doc-type: feature-video
-activity: use
+feature: asset compute microservices
 version: cloud-service
 kt: 4993
 thumbnail: 35597.jpg
+topic: Integrations
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: c258b679b335070bbfe1b78489b5730052ee7971
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 10%
+source-wordcount: '43'
+ht-degree: 13%
 
 ---
 
