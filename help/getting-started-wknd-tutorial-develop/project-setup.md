@@ -3,7 +3,7 @@ title: Aan de slag met AEM Sites - Projectinstellingen
 seo-title: Aan de slag met AEM Sites - Projectinstellingen
 description: Omvat de verwezenlijking van een Maven Multimoduleproject om de code en de configuraties voor een AEM Plaats te beheren.
 sub-product: sites
-feature: maven-archetype
+feature: Projectarchetype AEM
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -12,10 +12,13 @@ audience: developer
 mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
+topic: '"Inhoudsbeheer, ontwikkeling"'
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -183,7 +186,7 @@ Bouw en stel de projectcode aan een lokaal geval van AEM op.
 
 1. Navigeer naar de Sites-console: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). De WKND-site wordt een van de sites. Dit omvat een sitestructuur met een hiërarchie voor Amerikaanse en taalmeesters. Deze sitehiërarchie is gebaseerd op de waarden voor `language_country` en `isSingleCountryWebsite` bij het genereren van het project met het archetype.
 
-1. Open de pagina **US** `>` **English** door de pagina te selecteren en op de knop **Edit** op de menubalk te klikken:
+1. Open de pagina **US** `>` **English** door de pagina te selecteren en op de knop **Edit** in de menubalk te klikken:
 
    ![siteconsole](assets/project-setup/aem-sites-console.png)
 
@@ -276,7 +279,7 @@ De **[core](https://docs.adobe.com/content/help/en/experience-manager-core-compo
 
 ### UI.apps en modules Ui.content {#apps-content-module}
 
-De **[ui.apps](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uiapps.html)** gemaakte module bevat alle renderingcode die nodig is voor de site onder `/apps`. Dit omvat CSS/JS die in een AEM formaat genoemd [clientlibs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/clientlibs.html) zal worden opgeslagen. Dit omvat ook [HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)-scripts voor het renderen van dynamische HTML. U kunt de **ui.apps** module als kaart aan de structuur in JCR maar in een formaat denken dat op een dossiersysteem kan worden opgeslagen en aan broncontrole wordt geëngageerd. De module **ui.apps** bevat alleen code.
+De gemaakte module **[ui.apps](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uiapps.html)** bevat alle renderingcode die nodig is voor de site onder `/apps`. Dit omvat CSS/JS die in een AEM formaat genoemd [clientlibs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/clientlibs.html) zal worden opgeslagen. Dit omvat ook [HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)-scripts voor het renderen van dynamische HTML. U kunt de **ui.apps** module als kaart aan de structuur in JCR maar in een formaat denken dat op een dossiersysteem kan worden opgeslagen en aan broncontrole wordt geëngageerd. De module **ui.apps** bevat alleen code.
 
 Om enkel deze module te bouwen:
 
