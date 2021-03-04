@@ -1,16 +1,19 @@
 ---
 title: Afbeeldings-, staal-, centrifuge- en gemengde-mediasets
-description: Een van de meest nuttige en krachtige mogelijkheden van Dynamic Media Classic is de ondersteuning voor het maken van rich-mediasets, zoals Afbeelding, Staal, Draaien en Gemengde-mediasets. Leer wat elke rijke mediaset is en hoe u elk type maakt in Dynamic Media Classic. Meer informatie over voorinstellingen Batch-set, waarmee het maken van rich media-sets tijdens het uploaden wordt geautomatiseerd.
+description: Een van de nuttigste en krachtigste mogelijkheden van Dynamic Media Classic is de ondersteuning voor het maken van rich-mediasets, zoals Afbeelding, Staal, Draaien en Gemengde-mediasets. Leer wat elke rijke mediaset is en hoe u elk type maakt in Dynamic Media Classic. Meer informatie over voorinstellingen Batch-set, waarmee het maken van rich media-sets tijdens het uploaden wordt geautomatiseerd.
 sub-product: dynamic-media
-feature: sets
+feature: Dynamic Media Classic, afbeeldingssets, gemengde mediasets, centrifuges
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: e7a02900b0582fe9b329e5f9bd568f3c54d8d63d
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1471'
 ht-degree: 0%
 
 ---
@@ -18,7 +21,7 @@ ht-degree: 0%
 
 # Afbeeldings-, staal-, centrifuge- en gemengde-mediasets {#media-sets}
 
-Dynamische Media Classic-verzamelingen die verder gaan dan enkele afbeeldingen en die u wilt gebruiken voor dynamisch vergroten of verkleinen, zorgen voor een rijkere online ervaring. In dit gedeelte van de zelfstudie wordt uitgelegd hoe u de volgende rijke mediasets kunt maken in Dynamic Media Classic:
+Met Dynamic Media Classic set-verzamelingen die verder gaan dan enkele afbeeldingen en die u wilt verplaatsen voor dynamisch vergroten of verkleinen en zoomen, beschikt u over een rijkere online ervaring. In dit gedeelte van de zelfstudie wordt uitgelegd hoe u de volgende rijke mediasets kunt maken in Dynamic Media Classic:
 
 - Afbeeldingsset
 - Staalset
@@ -29,7 +32,7 @@ Er wordt ook uitgelegd hoe u Voorinstellingen batchset kunt gebruiken om het mak
 
 ## Alles wat u altijd over sets wilde weten
 
-Naast het standaard dynamische aanpassen van grootte en zoomen zijn sets waarschijnlijk het meest gebruikte Dynamic Media Classic-subproduct. Sets zijn in wezen &quot;virtuele&quot; elementen die geen werkelijke afbeeldingen bevatten, maar bestaan uit een reeks relaties met andere afbeeldingen en/of video. De belangrijkste aantrekkingskracht van sets is dat het mini-toepassingen zijn die klaar zijn &quot;van de plank.&quot; Door dat betekenen wij dat elke vastgestelde kijker zijn eigen logica en interface bevat zodat u slechts moet doen is vraag aan hen op de plaats. Bovendien vereisen ze alleen dat u één id voor middelen per set bijhoudt, in plaats van dat u zelf alle elementen en relaties van de leden moet beheren.
+Naast de standaard dynamische grootten en zoomen zijn sets waarschijnlijk het meest gebruikte Dynamic Media Classic-subproduct. Sets zijn in wezen &quot;virtuele&quot; elementen die geen werkelijke afbeeldingen bevatten, maar bestaan uit een reeks relaties met andere afbeeldingen en/of video. De belangrijkste aantrekkingskracht van sets is dat het mini-toepassingen zijn die klaar zijn &quot;van de plank.&quot; Door dat betekenen wij dat elke vastgestelde kijker zijn eigen logica en interface bevat zodat u slechts moet doen is vraag aan hen op de plaats. Bovendien vereisen ze alleen dat u één id voor middelen per set bijhoudt, in plaats van dat u zelf alle elementen en relaties van de leden moet beheren.
 
 Wanneer u een set maakt, wordt die set beheerd als een afzonderlijk element dat moet worden gemarkeerd voor publiceren en gepubliceerd voordat deze via een URL kan worden verzonden. Alle activa van zijn leden moeten ook worden gepubliceerd.
 
@@ -104,13 +107,13 @@ De URL voor de bovenstaande gemengde mediaset kan er als volgt uitzien:
 
 - Leer hoe te om [een Gemengde Reeks van Media te creëren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
-Als u een afbeelding wilt weergeven voor zoomen, een set of een video op uw website, roept u deze aan in een Dynamic Media Classic &#39;viewer&#39;. Dynamic Media Classic bevat viewers voor rich-media-elementen, zoals stalensets, centrifugesets, video en vele andere.
+Als u een afbeelding wilt weergeven voor zoomen, een set of een video op uw website, roept u deze aan in een klassieke Dynamic Media-viewer. Dynamic Media Classic bevat viewers voor rich-media-elementen, zoals stalensets, centrifuges, video en vele andere.
 
 Meer informatie over [Viewers voor AEM Assets en Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
 ## Voorinstellingen batchset
 
-Tot nu toe hebben wij besproken hoe te om reeksen manueel te bouwen gebruikend de Dynamische Klassieke functie van Media bouwen. Het is echter mogelijk om het maken van afbeeldingssets en centrifuges te automatiseren met behulp van een voorinstelling voor batchset, zolang u een standaardnaamgevingsconventie hebt.
+Tot nu toe hebben wij besproken hoe te om reeksen manueel te bouwen gebruikend de Klassieke functie van Dynamic Media bouwt. Het is echter mogelijk om het maken van afbeeldingssets en centrifuges te automatiseren met behulp van een voorinstelling voor batchset, zolang u een standaardnaamgevingsconventie hebt.
 
 Elke voorinstelling is een unieke, op zichzelf staande verzameling instructies die definiëren hoe de set moet worden samengesteld met afbeeldingen die overeenkomen met de gedefinieerde naamgevingsconventies. In de voorinstelling definieert u eerst naamgevingsconventies voor de elementen die u in een set wilt groeperen. Vervolgens kunt u een voorinstelling Batch maken die naar deze afbeeldingen verwijst.
 
