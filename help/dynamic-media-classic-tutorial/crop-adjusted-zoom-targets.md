@@ -1,16 +1,19 @@
 ---
 title: Uitsnijden, Aangepaste afbeeldingen en Zoomdoelen
-description: De master afbeelding van Dynamic Media Classic ondersteunt het maken van afzonderlijke uitgesneden versies van elke afbeelding om details weer te geven of voor stalen zonder dat u afzonderlijke uitgesneden versies van elke afbeelding hoeft te maken. Leer hoe u afbeeldingen uitsnijdt in Dynamic Media Classic en opslaat als een nieuw master bestand of een virtuele afbeelding, virtuele aangepaste afbeeldingen opslaat en deze gebruikt in plaats van master elementen, en zoomdoelen maakt voor uw afbeeldingen om de gemarkeerde details weer te geven.
+description: De master afbeelding van Dynamic Media Classic ondersteunt het maken van afzonderlijke uitgesneden versies van elke afbeelding om details weer te geven of voor stalen zonder dat u afzonderlijke uitgesneden versies van elke afbeelding hoeft te maken. Leer hoe u afbeeldingen uitsnijdt in Dynamic Media Classic en opslaat als een nieuw master bestand of een virtuele afbeelding, virtuele aangepaste afbeeldingen opslaat en deze gebruikt in plaats van master elementen, en zoomdoelen maakt in uw afbeeldingen om de gemarkeerde details weer te geven.
 sub-product: dynamic-media
-feature: smart-crop
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -18,7 +21,7 @@ ht-degree: 0%
 
 # Uitsnijden, Aangepaste afbeeldingen en Zoomdoelen {#crop-adjusted-zoom-targets}
 
-Een van de belangrijkste sterke punten van het concept van de master afbeelding Dynamic Media Classic is dat u het afbeeldingselement voor veel toepassingen kunt gebruiken. Traditioneel moet u afzonderlijke, bijgesneden versies van elke afbeelding maken om details of stalen weer te geven. Wanneer u Dynamic Media Classic gebruikt, kunt u dezelfde taken uitvoeren op uw enkele master server en deze bijgesneden versies opslaan als nieuwe fysieke bestanden of als virtuele derivaten die geen opslagruimte innemen.
+Een van de belangrijkste sterke punten van het Dynamic Media Classic-concept voor master afbeeldingen is dat u het afbeeldingselement voor veel toepassingen kunt hergebruiken. Traditioneel moet u afzonderlijke, bijgesneden versies van elke afbeelding maken om details of stalen weer te geven. Wanneer u Dynamic Media Classic gebruikt, kunt u dezelfde taken uitvoeren op uw master computer en deze bijgesneden versies opslaan als nieuwe fysieke bestanden of als virtuele derivaten die geen opslagruimte innemen.
 
 Aan het einde van deze sectie van de zelfstudie leert u hoe u het volgende kunt doen:
 
@@ -28,12 +31,12 @@ Aan het einde van deze sectie van de zelfstudie leert u hoe u het volgende kunt 
 
 ## Uitsnijden
 
-Dynamische media Klassiek beschikt over een aantal gereedschappen voor het bewerken van afbeeldingen die handig beschikbaar zijn in de gebruikersinterface, waaronder het gereedschap Uitsnijden. U kunt uw master afbeelding om een aantal redenen uitsnijden in Dynamic Media Classic. Bijvoorbeeld:
+Dynamic Media Classic beschikt over enkele gereedschappen voor het bewerken van afbeeldingen die gemakkelijk in de gebruikersinterface beschikbaar zijn, waaronder het gereedschap Uitsnijden. U kunt uw master afbeelding om verschillende redenen uitsnijden in Dynamic Media Classic. Bijvoorbeeld:
 
 - U hebt geen toegang tot het oorspronkelijke bestand. U wilt de afbeelding weergeven met een andere uitsnede of hoogte-breedteverhouding, maar u hebt het originele bestand niet op uw computer of u werkt thuis. In dit geval kunt u naar Dynamic Media Classic gaan, de afbeelding zoeken, uitsnijden en opslaan of deze opslaan als een nieuwe versie.
 - Te veel witruimte verwijderen. De afbeelding is gefotografeerd met te veel witruimte, waardoor het product er klein uitziet. U wilt dat uw miniatuurafbeeldingen het canvas zoveel mogelijk vullen.
 - Voor het maken van aangepaste afbeeldingen nemen virtuele kopieën van afbeeldingen zonder schijfruimte in beslag. Sommige bedrijven hebben bedrijfsregels die hen vereisen om afzonderlijke exemplaren van het zelfde beeld, maar met een verschillende naam te houden. Of misschien wilt u een bijgesneden en niet-bijgesneden versie van dezelfde afbeelding.
-- Nieuwe afbeeldingen maken van een bronafbeelding. U kunt bijvoorbeeld kleurstalen of een detail van de hoofdafbeelding maken. U kunt dit in Adobe Photoshop doen en afzonderlijk uploaden of het gereedschap Uitsnijden in Dynamic Media Classic gebruiken.
+- Nieuwe afbeeldingen maken van een bronafbeelding. U kunt bijvoorbeeld kleurstalen of een detail van de hoofdafbeelding maken. U kunt dit in Adobe Photoshop doen en het gereedschap Uitsnijden afzonderlijk uploaden of het gereedschap Uitsnijden in Dynamic Media Classic gebruiken.
 
 >[!NOTE]
 >
@@ -41,16 +44,16 @@ Dynamische media Klassiek beschikt over een aantal gereedschappen voor het bewer
 
 ### Het gereedschap Uitsnijden gebruiken
 
-U kunt het hulpmiddel van het Gewas in Dynamische Klassiek van Media van de pagina van Details voor een middel of door de **Edit** knoop te klikken toegang hebben. U kunt het gereedschap op twee manieren uitsnijden:
+U kunt het gereedschap Uitsnijden openen in Dynamic Media Classic vanaf de pagina Details voor een element of door op de knop **Bewerken** te klikken. U kunt het gereedschap op twee manieren uitsnijden:
 
 - De standaarduitsnijdmodus waarin u de grepen van het uitsnijdvenster of de tekstwaarden in het vak Grootte sleept. Leer hoe u [Handmatig uitsnijden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
 - Bijsnijden. Gebruik deze optie om extra witruimte rond de afbeelding te verwijderen door het aantal pixels te berekenen dat niet overeenkomt met de afbeelding. Leer hoe u [Uitsnijden door bijsnijden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Handmatig uitsnijden_
 
-Als u een handmatig bijgesneden versie opslaat, wordt de afbeelding permanent bijgesneden. Met Dynamic Media Classic verbergt u de pixels door een interne URL-optie toe te voegen om de afbeelding bij te snijden. Wanneer u publiceert, ziet u dat de afbeelding is uitgesneden. U kunt echter terugkeren naar de Crop Editor en de uitsnijding later verwijderen.
+Als u een handmatig bijgesneden versie opslaat, wordt de afbeelding permanent bijgesneden. Dynamic Media Classic verbergt de pixels door een interne URL-optie toe te voegen om de afbeelding bij te snijden. Wanneer u publiceert, ziet u dat de afbeelding is uitgesneden. U kunt echter terugkeren naar de Crop Editor en de uitsnijding later verwijderen.
 
-Vervolgens kunt u kiezen of u de afbeelding wilt opslaan als een nieuwe Master afbeelding of als een aanvullende weergave van de master afbeelding. Een nieuw master bestand is een nieuw fysiek bestand (zoals een TIFF- of JPEG-bestand) dat opslagruimte in beslag neemt. Een extra weergave is een virtuele afbeelding die geen serverruimte inneemt. We raden u niet aan Origineel vervangen te kiezen, omdat dat uw master overschrijft en het uitsnijden blijvend maakt. Als u opslaat als een nieuwe master of aanvullende weergave, moet u een nieuwe element-id kiezen. Net als andere id&#39;s van middelen moet deze een unieke naam zijn in Dynamic Media Classic.
+Vervolgens kunt u kiezen of u de afbeelding wilt opslaan als een nieuwe Master afbeelding of als een aanvullende weergave van de master afbeelding. Een nieuw master bestand is een nieuw fysiek bestand (zoals een TIFF- of JPEG-bestand) dat opslagruimte in beslag neemt. Een extra weergave is een virtuele afbeelding die geen serverruimte inneemt. We raden u niet aan Origineel vervangen te kiezen, omdat dat uw master overschrijft en het uitsnijden blijvend maakt. Als u opslaat als een nieuwe master of aanvullende weergave, moet u een nieuwe element-id kiezen. Net als andere id&#39;s voor bedrijfsmiddelen moet deze een unieke naam zijn in Dynamic Media Classic.
 
 ### _Uitsnijden bijsnijden_
 
@@ -102,7 +105,7 @@ Het uitsnijden maakt nu deel uit van de voorinstelling Afbeelding en wordt autom
 
 ## Aangepaste afbeeldingen
 
-Als u het gereedschap Uitsnijden gebruikt, kunt u **Opslaan als extra weergave van Master**. Als u het bestand opslaat, wordt er een nieuw soort Dynamisch medium Klassiek-element gemaakt: een aangepaste afbeelding. Een aangepaste afbeelding, ook wel een derivaat genoemd, is een virtuele afbeelding. Het is eigenlijk geen beeld; het is een gegevensbestandverwijzing (als een alias of een kortere weg) aan het fysieke master beeld.
+Als u het gereedschap Uitsnijden gebruikt, kunt u **Opslaan als extra weergave van Master**. Als u het bestand opslaat, wordt er een nieuw soort Klassiek Dynamic Media-element gemaakt: een aangepaste afbeelding. Een aangepaste afbeelding, ook wel een derivaat genoemd, is een virtuele afbeelding. Het is eigenlijk geen beeld; het is een gegevensbestandverwijzing (als een alias of een kortere weg) aan het fysieke master beeld.
 
 ### Zal de echte afbeelding opstaan`?`
 
@@ -110,7 +113,7 @@ Kunt u zien welke master afbeelding is en welke aangepaste afbeelding?
 
 ![afbeelding](assets/crop-adjusted-zoom-targets/real-image-stand-up.png)
 
-U zou niet moeten kunnen vertellen zonder het bekijken van Dynamische Klassiek van Media en het activatype van &quot;Aangepast Beeld&quot;voor SBR_MAIN2 te zien.
+U zou niet moeten kunnen vertellen zonder Dynamic Media Klassiek te bekijken en het activatype van &quot;Aangepast Beeld&quot;voor SBR_MAIN2 te zien.
 
 Een aangepaste afbeelding gebruikt geen schijfruimte, omdat deze alleen bestaat als een regelitem in de database. Het is ook permanent verbonden met het oorspronkelijke actief; als het origineel wordt verwijderd, wordt de aangepaste afbeelding ook verwijderd. Het kan bestaan uit een volledige, niet-uitgesneden afbeelding of slechts een deel van een afbeelding (uitsnijden).
 
@@ -131,7 +134,7 @@ Zoomdoelen vindt u ook op de pagina **Bewerken** en **Details** van een afbeeldi
 
 Omdat de Streefcijfers van het Gezoem hoofdzakelijk een verkoopsveranderende eigenschap zijn en kennis van de verkooppunten van een product vereisen, zouden zij typisch door een persoon in het Merchandising of team van het Product bij een bedrijf worden gecreeerd.
 
-Het proces is heel eenvoudig: klik op de functie, geef deze een beschrijvende naam en sla deze op. Doelen kunnen van de ene afbeelding naar de andere worden gekopieerd als ze op elkaar lijken, maar het proces is handmatig. Dynamic Media Classic kan het maken van Zoomdoelen niet automatiseren, omdat elke afbeelding anders is en andere functies heeft.
+Het proces is heel eenvoudig: klik op de functie, geef deze een beschrijvende naam en sla deze op. Doelen kunnen van de ene afbeelding naar de andere worden gekopieerd als ze op elkaar lijken, maar het proces is handmatig. In Dynamic Media Classic is het niet mogelijk om het maken van Zoomdoelen te automatiseren, omdat elke afbeelding anders is en andere functies heeft.
 
 U kunt ook zelf bepalen of u Zoomdoelen wilt gebruiken. Niet alle viewertypen kunnen zoomdoelen weergeven (deze worden bijvoorbeeld niet ondersteund door de uitvlieger).
 
@@ -155,7 +158,7 @@ Hier volgt de workflow voor het maken van doelen in Dynamic Media Classic.
 6. Als het doel is geselecteerd, bevat het vak groene onderbroken lijnen en kunt u het formaat en de verplaatsing wijzigen. Sleep de hoeken om het formaat te wijzigen of sleep het doelvak om het te verplaatsen.
 
    - Hiermee wordt de afbeelding geladen in de standaard aangepaste zoomviewer. Zorg ervoor dat de voorinstelling van de viewer zoomdoelen ondersteunt. In het algemeen zijn alle standaardvoorinstellingen met het woord &#39;-Met instructies&#39; ontworpen voor gebruik met zoomdoelen. Als u de doelen wilt gebruiken, houdt u de muisaanwijzer boven de doelminiatuur (of het hotspot-pictogram) om het label weer te geven en klikt u erop om te zien hoe de viewer in die functie inzoomt.
-   - Net als bij alle andere werkzaamheden die u uitvoert in Dynamic Media Classic, moet u zoomdoelen publiceren om live te kunnen gaan op het web. Als u al een viewer gebruikt die doelen ondersteunt, worden deze direct weergegeven (nadat de cache is gewist). Als u echter geen zoomdoelviewer gebruikt, blijven deze verborgen.
+   - Net als bij alle andere werkzaamheden die u in Dynamic Media Classic uitvoert, moet u uw zoomdoelen publiceren om live te gaan op het web. Als u al een viewer gebruikt die doelen ondersteunt, worden deze direct weergegeven (nadat de cache is gewist). Als u echter geen zoomdoelviewer gebruikt, blijven deze verborgen.
 
       ![afbeelding](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
