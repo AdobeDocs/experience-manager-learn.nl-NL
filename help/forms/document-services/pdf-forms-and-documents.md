@@ -3,17 +3,17 @@ title: De verschillende typen PDF forms en documenten begrijpen
 description: PDF is in feite een reeks bestandsindelingen. In dit artikel worden de typen PDF's beschreven die belangrijk en relevant zijn voor formulierontwikkelaars.
 solution: Experience Manager Forms
 product: aem
-type: Documentation
+type: Documentatie
 role: Developer
-level: Beginner,Intermediate
+level: Begin,tussenliggend
 version: 6.3,6.4,6.5
 feature: Document Services
-topic: development
+topic: Ontwikkeling
 kt: 7071
 translation-type: tm+mt
-source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ De statische PDF forms XFA veranderen niet hun lay-out bij runtime, maar zij kun
 * Statische formulieren ondersteunen de gereedschappen Opmerkingen en Markeringen van Acrobat.
 * Met statische formulieren kunt u Acrobat-opmerkingen importeren en exporteren.
 * Statische formulieren ondersteunen subsets van lettertypen. Dit is een techniek die op een AEM Forms-server kan worden uitgevoerd.
-* Statische formulieren kunnen worden gegenereerd met de ingebouwde PDF-viewer die bij moderne browsers wordt geleverd.
+* Statische formulieren kunnen worden weergegeven met de ingebouwde PDF-viewer die bij moderne browsers wordt geleverd.
 
 >[!NOTE]
 > U kunt statische PDF&#39;s maken met AEM Forms Designer door de XDP op te slaan als Adobe statisch PDF-formulier
