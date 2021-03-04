@@ -1,7 +1,7 @@
 ---
 title: De ontwikkelingstools voor AEM instellen als een Cloud Service-ontwikkeling
 description: Stel een lokale ontwikkelcomputer in met alle basislijngereedschappen die nodig zijn om zich te ontwikkelen in AEM lokale omgeving.
-feature: null
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: debf13d8e376979548bcbf55f71661d8cb8eb823
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -28,7 +31,7 @@ Merk op dat `~` als steno voor de Folder van de Gebruiker wordt gebruikt. In Win
 
 Experience Manager is een Java-toepassing en vereist daarom dat de Java SDK de ontwikkeling en de AEM als Cloud Service SDK ondersteunt.
 
-1. [Download en installeer de nieuwste versie van Java 11 SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. [Download en installeer de nieuwste versie van Java 11 SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 1. Controleer of de Java 11 SDK is geïnstalleerd met de opdracht:
    + Windows: `java -version`
    + macOS / Linux: `java --version`
@@ -116,36 +119,36 @@ De [Adobe I/O CLI](https://github.com/adobe/aio-cli), of `aio`, verleent bevelli
 + Logboeken van AEM als Cloud Services
 + Cloud Manager-pijpleidingen beheren vanuit de CLI
 
-### Adobe I/O CLI installeren
+### De Adobe I/O CLI installeren
 
-1. Zorg ervoor dat [Node.js is geïnstalleerd](#node-js) omdat de Adobe I/O CLI een npm-module is
+1. Zorg ervoor dat [Node.js is geïnstalleerd](#node-js) omdat Adobe I/O CLI een npm-module is
    + `node --version` uitvoeren om te bevestigen
 1. `npm install -g @adobe/aio-cli` uitvoeren om de `aio` npm module globaal te installeren
 
-### Insteekmodule Adobe I/O CLI Cloud Manager{#aio-cloud-manager} instellen
+### De Adobe I/O CLI Cloud Manager-insteekmodule instellen{#aio-cloud-manager}
 
 Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI communiceren met Adobe Cloud Manager via de opdracht `aio cloudmanager`.
 
 1. `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` uitvoeren om de [insteekmodule voor AIR Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) te installeren.
 
-### De Adobe I/O CLI Asset compute-insteekmodule instellen{#aio-asset-compute}
+### De Adobe I/O CLI-Asset compute insteekmodule instellen{#aio-asset-compute}
 
 Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI Asset compute-workers genereren en uitvoeren via de opdracht `aio asset-compute`.
 
 1. `aio plugins:install @adobe/aio-cli-plugin-asset-compute` uitvoeren om de [Asset compute plug-in](https://github.com/adobe/aio-cli-plugin-asset-compute) te installeren.
 
-### Adobe I/O CLI-verificatie instellen
+### De Adobe I/O CLI-verificatie instellen
 
-De Adobe I/O CLI kan alleen communiceren met Cloud Manager als er in de Adobe I/O-console een integratie met Cloud Manager is gemaakt en als de gegevens zijn verkregen voor verificatie.
+De Adobe I/O CLI kan alleen communiceren met Cloud Manager als er een integratie met Cloud Manager is gemaakt in de Adobe I/O Console en als de gegevens zijn verkregen voor verificatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35094?quality=12&learn=on)
 
 1. Aanmelden bij [console.adobe.io](https://console.adobe.io)
 1. Zorg ervoor dat uw organisatie die het product Cloud Manager bevat waarmee verbinding moet worden gemaakt, actief is in de Adobe Org-switch
-1. Nieuw of bestaand [Adobe I/O-programma](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) openen
-   + Adobe I/O Console-programma&#39;s zijn eenvoudigweg organisatiegroepen voor integratie, maken of gebruiken en bestaande programma&#39;s op basis van hoe u uw integratie wilt beheren
+1. Een nieuw programma maken of een bestaand [Adobe I/O-programma](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) openen
+   + De programma&#39;s van de Console van Adobe I/O zijn eenvoudig organisatorische groeperingen van integratie, creeer of gebruik en bestaand programma gebaseerd op hoe u uw integratie wilt beheren
    + Als u een nieuw project maakt, selecteert u &quot;Leeg project&quot; indien hierom wordt gevraagd (vs. Maken op basis van sjabloon)
-   + Adobe I/O Console-programma&#39;s zijn verschillende concepten voor Cloud Manager-programma&#39;s
+   + Adobe I/O Console-programma&#39;s zijn verschillende concepten voor programma&#39;s van Cloud Manager
 1. Maak een nieuwe API-integratie voor Cloud Manager met het profiel &quot;Developer - Cloud Service&quot;
 1. Verkrijg de geloofsbrieven van de Rekening van de Dienst (JWT) moet Adobe I/O CLI [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) bevolken
 1. Het `config.json`-bestand in de Adobe I/O CLI laden
