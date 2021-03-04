@@ -3,15 +3,18 @@ title: Exporteurs van verkoopmodellen ontwikkelen in AEM
 description: Deze technische wandeling door het instellen van AEM voor gebruik met Sling Model Exporter, het verbeteren van een bestaand Sling Model met behulp van het Exporter-framework voor uitvoering als JSON, en hoe u Exporter-opties en Jackson-annotaties gebruikt om de uitvoer verder aan te passen.
 version: 6.3, 6.4, 6.5
 sub-product: stichting, inhouddiensten
-feature: sling-models, sling-model-exporter
+feature: API's
 topics: content-delivery, development, headless
 activity: develop
 audience: developer
 doc-type: technical video
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
