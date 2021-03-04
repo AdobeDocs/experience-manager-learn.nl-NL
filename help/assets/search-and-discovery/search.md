@@ -1,19 +1,18 @@
 ---
 title: Zoeken
 description: Leer hoe u AEM Omnissearch kunt gebruiken om snel middelen te zoeken.
-feature: omnisearch
-topics: authoring, search
-audience: author
-doc-type: feature video
-activity: use
+feature: Zoeken
 version: cloud-service
 kt: 4312
 thumbnail: 32054.jpg
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '22'
-ht-degree: 9%
+source-wordcount: '28'
+ht-degree: 10%
 
 ---
 
