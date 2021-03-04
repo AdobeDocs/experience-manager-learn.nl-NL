@@ -3,10 +3,14 @@ title: Hoofdstuk 4 - Templates voor inhoudsservices definiëren - Inhoudsservice
 seo-title: Aan de slag met AEM zonder kop - Hoofdstuk 4 - Templates voor inhoudsservices definiëren
 description: Hoofdstuk 4 van de AEM zelfstudie zonder titel behandelt de rol van AEM bewerkbare sjablonen in de context van AEM Content Services. Bewerkbare sjablonen worden gebruikt om de JSON-inhoudsstructuur te definiëren AEM Content Services uiteindelijk zichtbaar wordt.
 seo-description: Hoofdstuk 4 van de AEM zelfstudie zonder titel behandelt de rol van AEM bewerkbare sjablonen in de context van AEM Content Services. Bewerkbare sjablonen worden gebruikt om de JSON-inhoudsstructuur te definiëren AEM Content Services uiteindelijk zichtbaar wordt.
+feature: Inhoudsfragmenten, API's
+topic: Koploos, inhoudsbeheer
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
