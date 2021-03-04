@@ -3,20 +3,17 @@ title: Uw eerste interactieve communicatie voor het webkanaal maken
 seo-title: Uw eerste interactieve communicatie voor het webkanaal maken
 description: Interactieve communicatie is nieuw voor AEM Forms 6.4. In dit document worden de stappen doorlopen die nodig zijn om een interactieve communicatie voor het webkanaal te maken.
 seo-description: Interactieve communicatie is nieuw voor AEM Forms 6.4. In dit document worden de stappen doorlopen die nodig zijn om een interactieve communicatie voor het webkanaal te maken.
-feature: Interactieve communicatie
+feature: interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 1%
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
 
