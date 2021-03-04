@@ -4,18 +4,21 @@ seo-title: Servicedeskundellen gebruiken met AEM Forms
 description: Met de regeleditor van de AEM Adaptive Forms kunt u de services benutten die in het formuliergegevensmodel zijn gemaakt.
 seo-description: Met de regeleditor van de AEM Adaptive Forms kunt u de services benutten die in het formuliergegevensmodel zijn gemaakt.
 uuid: fb4a331f-231a-4864-9325-6dceb288ad75
-feature: adaptive-forms, form-data-model
+feature: '"Adaptive Forms, Form Data Model"'
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: e3ff47c3-9ab3-41cb-83ba-38f3eb7b2299
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 0%
+source-wordcount: '77'
+ht-degree: 2%
 
 ---
 
