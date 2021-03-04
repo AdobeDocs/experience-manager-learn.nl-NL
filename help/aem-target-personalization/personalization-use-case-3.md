@@ -3,11 +3,15 @@ title: Personalisatie met Adobe Target Visual Experience Composer
 seo-title: Personalisatie met Adobe Target Visual Experience Composer (VEC)
 description: Een end-to-end zelfstudie die toont om gepersonaliseerde ervaring tot stand te brengen en te leveren gebruikend Adobe Target Visual Experience Composer (VEC).
 seo-description: Een end-to-end zelfstudie die toont om gepersonaliseerde ervaring tot stand te brengen en te leveren gebruikend Adobe Target Visual Experience Composer (VEC).
+feature: Ervaringsfragmenten
+topic: Personalisatie
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 0443c8ff42e773021ff8b6e969f5c1c31eea3ae4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 0%
+source-wordcount: '615'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +58,7 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
       ![Gericht op ervaring](assets/personalization-use-case-1/load-unsafe-scripts.png)
    6. Merk op de WKND homepage van de Plaats open in de redacteur van Composer van de Visuele Ervaring.
       ![VEC](assets/personalization-use-case-2/vec.png)
-   7. **Ervaring** biedt de standaard WKND-startpagina en laten we de inhoudslay-out voor  **Experience B** bewerken.
+   7. **De ervaring** verstrekt de standaardWKND Homepage, en laten wij de inhoudslay-out voor  **Ervaring B** uitgeven.
       ![Ervaring B](assets/personalization-use-case-3/use-case3-experience-b.png)
    8. Klik op een van de kaartlay-outcontainers (*Beste roasters*) en selecteer **Herschikken** optie.
       ![Containerselectie](assets/personalization-use-case-3/container-selection.png)
