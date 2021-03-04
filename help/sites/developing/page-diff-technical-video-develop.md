@@ -1,17 +1,20 @@
 ---
 title: Ontwikkelen voor paginaverschil in AEM Sites
 description: In deze video ziet u hoe u aangepaste stijlen voor de functionaliteit Paginaverschil van AEM-sites kunt gebruiken.
-feature: page-diff
+feature: Authoring
 topics: development
 audience: developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 0%
+source-wordcount: '295'
+ht-degree: 1%
 
 ---
 
