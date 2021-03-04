@@ -4,7 +4,7 @@ seo-title: Gebruikersinterface van POST openen bij verzenden
 description: Dit is onderdeel 11 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel starten we de gebruikersinterface van de agent voor het maken van ad-hoccorrespondentie over het verzenden van formulieren.
 seo-description: Dit is onderdeel 11 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel starten we de gebruikersinterface van de agent voor het maken van ad-hoccorrespondentie over het verzenden van formulieren.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
-feature: interactieve communicatie
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,10 +12,13 @@ activity: implement
 version: 6.4,6.5
 kt: 6168
 thumbnail: 40122.jpg
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
