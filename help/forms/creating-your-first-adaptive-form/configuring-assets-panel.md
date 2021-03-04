@@ -1,10 +1,10 @@
 ---
 title: Componenten toevoegen aan de sectie Middelen
 seo-title: Componenten toevoegen aan de sectie Middelen
-description: Configureer de accordeonlay-out voor het deelvenster Elementen. De accordeonlay-out biedt een betere ervaring voor de eindgebruiker bij het toevoegen van herhaalbare secties.
-seo-description: Configureer de accordeonlay-out voor het deelvenster Elementen. De accordeonlay-out biedt een betere ervaring voor de eindgebruiker bij het toevoegen van herhaalbare secties.
+description: Configureer de accordeonlay-out voor het middelenpaneel. De accordeonlay-out biedt een betere ervaring voor de eindgebruiker bij het toevoegen van herhaalbare secties.
+seo-description: Configureer de accordeonlay-out voor het middelenpaneel. De accordeonlay-out biedt een betere ervaring voor de eindgebruiker bij het toevoegen van herhaalbare secties.
 uuid: 0e853b07-a08d-4c5d-b5c2-0df34f0d81b3
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,18 +13,21 @@ version: 6.4,6.5
 kt: 4212
 thumbnail: 22200.jpg
 discoiquuid: 37c039c4-422a-4836-8aa5-ba0459d342cc
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 0%
+source-wordcount: '83'
+ht-degree: 2%
 
 ---
 
 
 # Componenten toevoegen aan de sectie Elementen {#adding-components-to-assets-section}
 
-Configureer de accordeonlay-out voor het deelvenster Elementen. De accordeonlay-out biedt een betere ervaring voor de eindgebruiker bij het toevoegen van herhaalbare secties.
+Configureer de accordeonlay-out voor het middelenpaneel. De accordeonlay-out biedt een betere ervaring voor de eindgebruiker bij het toevoegen van herhaalbare secties.
 
 **Deelvenster Elementen configureren**
 
