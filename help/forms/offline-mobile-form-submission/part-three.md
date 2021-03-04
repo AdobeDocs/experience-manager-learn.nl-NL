@@ -3,20 +3,17 @@ title: Triggerwerkstroom AEM HTML5-formulierverzending
 seo-title: Trigger AEM workflow voor het verzenden van HTML5-formulieren
 description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
 seo-description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
-feature: Mobile Forms
+feature: mobiele formulieren
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
-role: Developer
-level: Ervaren
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 0%
 
 ---
 
