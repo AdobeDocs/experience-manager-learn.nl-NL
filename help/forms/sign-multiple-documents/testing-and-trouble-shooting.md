@@ -1,7 +1,7 @@
 ---
 title: Problemen oplossen met het ondertekenen van meerdere documenten
 description: De oplossing testen en problemen oplossen
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: implement
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '394'
 ht-degree: 1%
 
 ---
