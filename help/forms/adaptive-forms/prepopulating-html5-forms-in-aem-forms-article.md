@@ -3,7 +3,7 @@ title: HTML5 Forms vooraf vullen met gegevenskenmerk.
 seo-title: HTML5 Forms vooraf vullen met gegevenskenmerk.
 description: HTML5-formulieren vullen door gegevens op te halen van de achterste bron.
 seo-description: HTML5-formulieren vullen door gegevens op te halen van de achterste bron.
-feature: integrations
+feature: Adaptieve Forms
 topics: mobile-forms
 audience: developer
 doc-type: article
@@ -11,10 +11,13 @@ activity: implement
 version: 6.3,6.4,6.5.
 uuid: 889d2cd5-fcf2-4854-928b-0c2c0db9dbc2
 discoiquuid: 3aa645c9-941e-4b27-a538-cca13574b21c
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
