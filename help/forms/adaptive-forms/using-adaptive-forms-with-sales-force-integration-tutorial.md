@@ -4,17 +4,20 @@ seo-title: Gegevensbron configureren met Salesforce in AEM Forms 6.3 en 6.4
 description: AEM Forms integreren met Salesforce met behulp van formuliergegevensmodel
 seo-description: AEM Forms integreren met Salesforce met behulp van formuliergegevensmodel
 uuid: 0124526d-f1a3-4f57-b090-a418a595632e
-feature: adaptive-forms, form-data-model
+feature: '"Adaptive Forms, Form Data Model"'
 topics: integrations
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 8e314fc3-62d0-4c42-b1ff-49ee34255e83
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: cce9f5d1dae05a36b942f6b07a46c65f82eac43c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
