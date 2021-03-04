@@ -3,7 +3,7 @@ title: Documentfragment maken
 description: 'Dit is onderdeel 5 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel maken we documentfragment waarin de naam en het adres van de ontvanger worden opgeslagen. '
 seo-description: 'Dit is onderdeel 5 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel maken we documentfragment waarin de naam en het adres van de ontvanger worden opgeslagen. '
 uuid: 7fd8a0f2-a921-4e70-91c9-908dae9aeab2
-feature: interactive-communication
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,10 +12,13 @@ version: 6.4,6.5
 discoiquuid: 47d3aa97-0bff-48e0-8a65-55e5332f811b
 kt: 5958
 thumbnail: 22350.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
