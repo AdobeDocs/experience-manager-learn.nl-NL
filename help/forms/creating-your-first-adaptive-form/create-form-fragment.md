@@ -1,18 +1,21 @@
 ---
 title: Formulierfragment maken
 description: AEM formulieren bieden een handig mechanisme om slechts eenmaal een formuliersegment als een deelvenster of een groep velden te maken en deze in adaptieve formulieren opnieuw te gebruiken.
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 kt: 5862
 thumbnail: 37325.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 14%
+source-wordcount: '112'
+ht-degree: 15%
 
 ---
 
