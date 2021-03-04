@@ -3,10 +3,14 @@ title: Zelfstudie AEM Dispatcher Cache
 seo-title: Zelfstudie AEM Dispatcher Cache
 description: Het doel van deze zelfstudie is om u te helpen beter te begrijpen hoe de Dispatcher werkt en hoe u ermee kunt werken.
 seo-description: Het doel van deze zelfstudie is om u te helpen beter te begrijpen hoe de Dispatcher werkt en hoe u ermee kunt werken.
+feature: Dispatcher
+topic: Architectuur
+role: Architect
+level: Begin
 translation-type: tm+mt
-source-git-commit: 9c8943de439cab926540eca028cb632ebdc4d888
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
