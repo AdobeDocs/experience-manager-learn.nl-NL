@@ -1,14 +1,10 @@
 ---
 title: Hoofdstuk 5 - Pagina's van de Diensten van de Inhoud van het Ontwerp - de Diensten van de Inhoud
 description: Hoofdstuk 5 van de AEM zelfstudie zonder koptekst behandelt het maken van de pagina's van de sjablonen die zijn gedefinieerd in hoofdstuk 4. Deze pagina's fungeren als eindpunten voor JSON HTTP.
-feature: '"Inhoudsfragmenten, API''s"'
-topic: '"Headless, Content Management"'
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
