@@ -1,17 +1,20 @@
 ---
 title: Verificatie van SMS Twee factoren
 description: Voeg een extra laag van veiligheid toe helpen de identiteit van een gebruiker bevestigen wanneer zij bepaalde activiteiten willen uitvoeren
-feature: integrations
+feature: Adaptieve Forms
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 kt: 6317
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -53,7 +56,7 @@ Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [gegevensbron ]
 
 ## Formuliergegevensmodel maken
 
-AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen[. ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html) Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
+AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). [ Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
 Het ingevulde formuliergegevensmodel kan [hier worden gedownload](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
