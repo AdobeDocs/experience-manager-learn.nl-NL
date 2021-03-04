@@ -3,15 +3,18 @@ title: Dynamische include-bestanden voor AEM instellen
 description: Een videodemo over het installeren en gebruiken van Apache Sling Dynamic Include met AEM Dispatcher die op Apache HTTP Web Server wordt uitgevoerd.
 version: 6.3, 6.4, 6.5
 sub-product: stichting, sites
-feature: core-components, dispatcher
+feature: API's
 topics: caching
 activity: develop
 audience: architect, developer
 doc-type: technical video
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '267'
 ht-degree: 3%
 
 ---
