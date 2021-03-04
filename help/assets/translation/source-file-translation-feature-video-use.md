@@ -1,19 +1,14 @@
 ---
 title: Bronbestandsomzetting gebruiken met AEM Assets
-seo-title: Bronbestandsomzetting gebruiken met AEM Assets
 description: Met AEM (Adobe Experience Manager) kunt u elementen identificeren die gemeenschappelijke kenmerken delen en ze markeren als verwant met de nieuwe functie Verwante elementen. Het laat gebruikers ook een bron/afgeleide verhouding tussen activa bepalen, die het voor gebruikers gemakkelijk maken om de oorsprong van een activa te identificeren. Als u een vertaalworkflow uitvoert op een afgeleid element, worden alle elementen opgehaald waarnaar het bronbestand verwijst en dat dit element bevat voor vertaling, waardoor de inspanningen om meerdere sites te behouden, afnemen.
-seo-description: Met AEM (Adobe Experience Manager) kunt u elementen identificeren die gemeenschappelijke kenmerken delen en ze markeren als verwant met de nieuwe functie Verwante elementen. Het laat gebruikers ook een bron/afgeleide verhouding tussen activa bepalen, die het voor gebruikers gemakkelijk maken om de oorsprong van een activa te identificeren. Als u een vertaalworkflow uitvoert op een afgeleid element, worden alle elementen opgehaald waarnaar het bronbestand verwijst en dat dit element bevat voor vertaling, waardoor de inspanningen om meerdere sites te behouden, afnemen.
-uuid: 58f70535-909b-464a-b265-ddddb8ab2908
-discoiquuid: a50eb7f2-744b-46ea-8daf-212d833a0333
-topics: authoring, search, metadata, localization
-audience: all
-doc-type: feature video
-activity: use
 version: 6.3, 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
