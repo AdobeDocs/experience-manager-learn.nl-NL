@@ -4,7 +4,7 @@ seo-title: Regeldiagram voor uw eerste interactieve communicatiedocument configu
 description: Dit is onderdeel 8 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel, zullen wij een grafiek van de Lijn toevoegen om het rekeningssaldo te tonen.
 seo-description: Dit is onderdeel 8 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel, zullen wij een grafiek van de Lijn toevoegen om het rekeningssaldo te tonen.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
-feature: Interactieve communicatie
+feature: interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,14 +13,11 @@ version: 6.4,6.5
 discoiquuid: 9110e5c6-50ee-4c3e-a779-b680ff49ef23
 kt: 5993
 thumbnail: 22386.jpg
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 1%
+source-wordcount: '171'
+ht-degree: 0%
 
 ---
 
