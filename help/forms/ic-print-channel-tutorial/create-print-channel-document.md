@@ -4,7 +4,7 @@ seo-title: Interactieve communicatie maken voor afdrukkanaal
 description: Dit is onderdeel 6 van een zelfstudie met meerdere onderdelen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel wordt Interactive Communication Document for Print channel gemaakt.
 seo-description: Dit is onderdeel 6 van een zelfstudie met meerdere onderdelen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel wordt Interactive Communication Document for Print channel gemaakt.
 uuid: 25318a2a-be9d-47d8-806b-d99c8e1c6a74
-feature: interactive-communication
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 discoiquuid: 6e3f9c8c-8ec4-4084-bf35-1c97a5b463f1
 kt: 5972
 thumbnail: 37888.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 0%
+source-wordcount: '110'
+ht-degree: 1%
 
 ---
 
