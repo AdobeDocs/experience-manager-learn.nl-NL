@@ -1,18 +1,21 @@
 ---
 title: Inleiding
 description: Videodemonstratie van de gebruikscase van meerdere formulieren ondertekenen
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 thumbnail: 330165.jpg
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 2%
+source-wordcount: '124'
+ht-degree: 4%
 
 ---
 
