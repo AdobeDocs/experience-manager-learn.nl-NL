@@ -1,16 +1,19 @@
 ---
 title: Voorinstellingen afbeelding
-description: Voorinstellingen voor afbeeldingen in Dynamic Media Classic bevatten alle instellingen die nodig zijn om een afbeelding met een bepaalde grootte, indeling, kwaliteit en verscherping te maken. Voorinstellingen voor afbeeldingen vormen een belangrijk onderdeel van het dynamische formaat. Wanneer u een URL in Dynamische Klassiek van Media bekijkt, kunt u gemakkelijk zien of is een Vooraf ingesteld Beeld in gebruik. Meer informatie over voorinstellingen voor afbeeldingen, waarom ze zo nuttig zijn en hoe u ze kunt maken.
+description: Voorinstellingen voor afbeeldingen in Dynamic Media Classic bevatten alle instellingen die nodig zijn om een afbeelding met een bepaalde grootte, indeling, kwaliteit en verscherping te maken. Voorinstellingen voor afbeeldingen vormen een belangrijk onderdeel van het dynamische formaat. Als u naar een URL in Dynamic Media Classic kijkt, kunt u gemakkelijk zien of een voorinstelling voor afbeeldingen in gebruik is. Meer informatie over voorinstellingen voor afbeeldingen, waarom ze zo nuttig zijn en hoe u ze kunt maken.
 sub-product: dynamic-media
-feature: image-presets
+feature: Dynamic Media Classic, voorinstellingen voor afbeeldingen
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 0%
 
 Een voorinstelling voor afbeeldingen is in feite een recept dat alle instellingen bevat die nodig zijn om een afbeelding te maken met een bepaalde grootte, indeling, kwaliteit en verscherping. Voorinstellingen voor afbeeldingen vormen een belangrijk onderdeel van het dynamische formaat.
 
-Als u de URLs van enkel om het even welke Dynamische Klassieke klant van Media bekijkt, zult u waarschijnlijk een Vooraf ingesteld Beeld in gebruik zien. Zoek alleen $name$ aan het einde van de URL (met woorden of woorden die de naam vervangen).
+Als u de URL&#39;s van ongeveer een klant van Dynamic Media Classic bekijkt, ziet u waarschijnlijk een voorinstelling voor afbeeldingen in gebruik. Zoek alleen $name$ aan het einde van de URL (met woorden of woorden die de naam vervangen).
 
 Met voorinstellingen voor afbeeldingen wordt de URL verkort. In plaats van meerdere instructies voor het leveren van afbeeldingen per aanvraag te schrijven, kunt u dus één voorinstelling voor afbeeldingen schrijven. Deze twee URL&#39;s produceren bijvoorbeeld dezelfde JPEG-afbeelding van 300 x 300 met verscherping, maar de tweede URL gebruikt een voorinstelling voor afbeeldingen:
 
@@ -45,7 +48,7 @@ Een voorinstelling voor afbeelding heeft een dollarteken ($) aan weerszijden van
 
 Voorinstellingen voor afbeeldingen vergroten/verkleinen doorgaans de grootte van een afbeelding. Als u de oorspronkelijke grootte van een afbeelding wijzigt, moet u de afbeelding verscherpen toevoegen. Dat komt omdat bij het vergroten of verkleinen veel pixels worden samengevoegd en in een kleinere ruimte overvloeien, waardoor de afbeelding er zacht en wazig uitziet. Met verscherpen wordt het contrast van randen en gebieden met veel contrast in een afbeelding vergroot.
 
-We verwachten dat de afbeeldingen met hoge resolutie die u uploadt naar Dynamic Media Classic, niet hoeven te worden verscherpt wanneer ze op volledige grootte worden weergegeven — wanneer u hierop inzoomt. Bij elke kleinere grootte is enige verscherping echter meestal gewenst.
+We verwachten dat de afbeeldingen met hoge resolutie die u in Dynamic Media Classic uploadt, niet hoeven te worden verscherpt wanneer ze op volledige grootte worden weergegeven — wanneer u hierop inzoomt. Bij elke kleinere grootte is enige verscherping echter meestal gewenst.
 
 >[!TIP]
 >
@@ -61,7 +64,7 @@ In de volgende afbeelding ziet u drie verscherpingsniveaus. Van rechts naar link
 
 Met Dynamic Media Classic kunt u drie soorten verscherpen: Eenvoudig verscherpen, Nieuwe pixels berekenen in modus en Onscherp masker.
 
-Meer informatie over [Dynamische media - Klassieke verscherpingsopties](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Meer informatie over [Klassieke verscherpingsopties van Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Aanvullende bronnen
 
