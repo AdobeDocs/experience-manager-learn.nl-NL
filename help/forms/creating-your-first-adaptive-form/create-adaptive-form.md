@@ -4,7 +4,7 @@ seo-title: Adaptief formulier maken
 description: In Deel1 zullen wij Aangepast Vorm creëren, toevoegen en toolbar met aangewezen knopen vormen.
 seo-description: In Deel1 zullen wij Aangepast Vorm creëren, toevoegen en toolbar met aangewezen knopen vormen.
 uuid: 4ab7f01e-a75b-4e08-a5d8-690c63773ec3
-feature: Adaptieve Forms
+feature: adaptieve vormen
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -12,14 +12,11 @@ activity: understand
 discoiquuid: 1c9fb7b6-98dd-4725-b787-ac9e71906500
 kt: 4208
 thumbnail: 22173.jpg
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 2%
+source-wordcount: '65'
+ht-degree: 0%
 
 ---
 
