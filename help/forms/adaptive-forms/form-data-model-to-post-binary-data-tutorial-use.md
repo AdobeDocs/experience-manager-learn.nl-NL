@@ -4,20 +4,17 @@ seo-title: Binaire gegevens verzenden met het formuliergegevensmodel
 description: Binaire gegevens via het formuliergegevensmodel naar AEM DAM verzenden
 seo-description: Binaire gegevens via het formuliergegevensmodel naar AEM DAM verzenden
 uuid: dd344ed8-69f7-4d63-888a-3c96993fe99d
-feature: Workflow
+feature: werkstroom
 topics: integrations
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
 discoiquuid: 6e99df7d-c030-416b-83d2-24247f673b33
-topic: Ontwikkeling
-role: Developer
-level: Intermediair
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
