@@ -1,17 +1,20 @@
 ---
 title: OCR-gegevensextractie
 description: Gegevens uit door de overheid uitgegeven documenten extraheren om formulieren in te vullen.
-feature: integrations
+feature: Barcoded Forms
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 kt: 6679
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: c0db84f25334106c798d555c754d550113e91eac
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -53,7 +56,7 @@ Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [gegevensbron ]
 
 ## Formuliergegevensmodel maken
 
-AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen[. ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html) Baseer het model van vormgegevens op de gegevensbron die in de vroegere stap wordt gecreeerd.
+AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). [ Baseer het model van vormgegevens op de gegevensbron die in de vroegere stap wordt gecreeerd.
 
 ![fdm](assets/test-dl-fdm.PNG)
 
