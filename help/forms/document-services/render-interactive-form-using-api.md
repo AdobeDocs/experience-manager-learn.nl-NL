@@ -3,19 +3,16 @@ title: Ontwikkelen met Output and Forms Services in AEM Forms
 seo-title: Ontwikkelen met Output and Forms Services in AEM Forms
 description: Uitvoer- en Forms Service-API in AEM Forms gebruiken
 seo-description: Uitvoer- en Forms Service-API in AEM Forms gebruiken
-feature: Forms Service
+feature: formulieren-service
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
-role: Developer
-level: Intermediair
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
