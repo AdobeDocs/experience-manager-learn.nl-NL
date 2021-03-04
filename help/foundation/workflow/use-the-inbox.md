@@ -1,18 +1,19 @@
 ---
 title: Hoe wordt Inbox gebruikt in AEM
 description: AEM inbox vergemakkelijkt grotere samenwerking en zichtbaarheid in taken en werkschema.
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
+feature: Workflow
+activity: use
+audience: author, analyst
+doc-type: feature video
 topic: Samenwerking
-feature: Inbox
 role: Zakelijke praktiserer
-level: Intermediair
-kt: 159
-thumbnail: 16827.jpg
+level: Begin
 translation-type: tm+mt
-source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
