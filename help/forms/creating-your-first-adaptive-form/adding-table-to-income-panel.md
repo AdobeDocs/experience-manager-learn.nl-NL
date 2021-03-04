@@ -4,7 +4,7 @@ seo-title: Componenten toevoegen aan het paneel Inkomen
 description: Er wordt een tabel toegevoegd aan het paneel Inkomen. Vorm de lijstrijen en gebruik de regelredacteur om het grote totaal te berekenen.
 seo-description: Er wordt een tabel toegevoegd aan het paneel Inkomen. Vorm de lijstrijen en gebruik de regelredacteur om het grote totaal te berekenen.
 uuid: d5c98561-c559-4624-976a-7a1486da7e69
-feature: Adaptieve Forms
+feature: adaptieve vormen
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,13 +13,10 @@ version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
 discoiquuid: fa483260-38ff-40d8-96a7-1de11d8b792b
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
