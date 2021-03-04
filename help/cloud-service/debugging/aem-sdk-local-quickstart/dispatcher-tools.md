@@ -1,17 +1,20 @@
 ---
 title: Fouten opsporen in Dispatcher-gereedschappen
 description: De Dispatcher Tools verstrekt een inperkt milieu van de Server van het Web van Apache dat kan worden gebruikt om AEM als Verzender van de Diensten van de Publicatie van AEM plaatselijk te simuleren. Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cachegeheugen kunnen van essentieel belang zijn om ervoor te zorgen dat de end-to-end AEM toepassing correct is en dat ondersteuning wordt geboden voor cache- en beveiligingsconfiguraties.
-feature: dispatcher, aem-sdk
+feature: Dispatcher
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5918
+topic: Ontwikkeling
+role: Developer
+level: Begin, tussenliggend
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
