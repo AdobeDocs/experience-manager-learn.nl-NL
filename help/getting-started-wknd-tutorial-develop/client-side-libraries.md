@@ -9,10 +9,14 @@ activity: develop
 audience: developer
 kt: 4083
 thumbnail: 30359.jpg
+feature: '"Core Components, AEM Project Archetype"'
+topic: '"Inhoudsbeheer, ontwikkeling"'
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3301'
 ht-degree: 0%
 
 ---
