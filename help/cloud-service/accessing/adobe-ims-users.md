@@ -1,7 +1,7 @@
 ---
 title: Adobe IMS-gebruikers en -AEM
 description: Gebruikers die toegang tot de AEM Author-service nodig hebben, worden Adobe IMS-gebruikers in de Admin Console Adobe beheerd. Leer over welke gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden beheerd.
-feature: users-and-groups
+feature: 'Gebruikers en groepen '
 topics: authentication
 version: cloud-service
 activity: setup
@@ -9,11 +9,14 @@ audience: administrator
 doc-type: feature video
 kt: 4997
 thumbnail: 39149.jpg
+topic: Beheer, beveiliging
+role: Beheerder
+level: Begin
 translation-type: tm+mt
-source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 6%
+source-wordcount: '181'
+ht-degree: 8%
 
 ---
 
