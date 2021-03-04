@@ -2,18 +2,16 @@
 title: Het dashboard Systeemoverzicht in AEM gebruiken
 description: In vorige versies van AEM beheerders moesten verschillende locaties bekijken om een volledig beeld van de AEM te krijgen. Het overzicht van het Systeem streeft ernaar dit op te lossen door een mening op hoog niveau van de configuratie, de hardware, en de gezondheid van de AEM instantie allen van één enkel dashboard te verstrekken.
 version: 6.4, 6.5
+feature: null
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
-topic: Beheer
-role: Beheerder
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
