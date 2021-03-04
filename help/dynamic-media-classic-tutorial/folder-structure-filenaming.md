@@ -1,16 +1,19 @@
 ---
 title: Bepaal de structuur van uw map en de naamgevingsconventie voor bestanden
-description: Bestandsnaamgeving is wellicht de belangrijkste beslissing die u zult nemen bij het implementeren van Dynamic Media Classic. De mapstructuur is ook belangrijk. Leer waarom het zo belangrijk en mogelijk is om voor uw omslagstructuur en dossiernamen te kiezen.
+description: Bestandsnaamgeving is wellicht de belangrijkste beslissing die u zult nemen bij de implementatie van Dynamic Media Classic. De mapstructuur is ook belangrijk. Leer waarom het zo belangrijk en mogelijk is om voor uw omslagstructuur en dossiernamen te kiezen.
 sub-product: dynamic-media
-feature: null
+feature: Dynamic Media Classic
 doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: e7a02900b0582fe9b329e5f9bd568f3c54d8d63d
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -22,17 +25,17 @@ Voordat u naar binnen gaat en al uw inhoud gaat uploaden, is het verstandig om r
 
 ## Maphiërarchie en naamgevingsconventie voor bestanden
 
-Bestandsnaamgeving is doorgaans de belangrijkste beslissing die u neemt met betrekking tot de implementatie van Dynamic Media Classic. Om te begrijpen waarom het belangrijk is, bespreken we eerst de mapstructuur.
+Bestandsnaamgeving is over het algemeen de belangrijkste beslissing die u neemt met betrekking tot de implementatie van Dynamic Media Classic. Om te begrijpen waarom het belangrijk is, bespreken we eerst de mapstructuur.
 
 ### Maphiërarchie
 
-Maphiërarchie is alleen voor u en uw bedrijf van belang voor organisatorische doeleinden. Uw URL&#39;s met dynamische media in de klassieke klasse verwijzen alleen naar de naam van het element, niet naar de map of het pad. Ongeacht waar u een bestand uploadt, zal de URL hetzelfde zijn. Dit is heel anders dan hoe de meeste mensen hun afbeeldingen en inhoud voor het web ordenen, maar met Dynamic Media Classic maakt het geen verschil.
+Maphiërarchie is alleen voor u en uw bedrijf van belang voor organisatorische doeleinden — uw klassieke Dynamic Media-URL&#39;s verwijzen alleen naar de naam van het element, niet naar de map of het pad. Ongeacht waar u een bestand uploadt, zal de URL hetzelfde zijn. Dit is heel anders dan hoe de meeste mensen hun afbeeldingen en inhoud voor het web ordenen, maar met Dynamic Media Classic maakt het geen verschil.
 
-Een andere belangrijke overweging is het aantal elementen of mappen dat in elke map moet worden opgeslagen. Als veel elementen in een map zijn opgeslagen, nemen de prestaties af bij het weergeven van elementen in Dynamic Media Classic. Sla duizenden bestanden niet op in een map. In plaats daarvan ontwikkelt u een organisatiehiërarchie met minder dan ongeveer 500 elementen of mappen binnen een bepaalde tak van uw hiërarchie. Dit is geen strikte eis, maar het zal helpen om aanvaardbare reactietijden te handhaven wanneer het bekijken van of het zoeken van activa. In feite is de aanbeveling om hiërarchieën te creëren die breed en oppervlakkig zijn in plaats van smal en diep.
+Een andere belangrijke overweging is het aantal elementen of mappen dat in elke map moet worden opgeslagen. Als veel elementen in een map zijn opgeslagen, nemen de prestaties af bij het weergeven van elementen in Dynamic Media Classic. Sla duizenden bestanden niet op in een map. In plaats daarvan, ontwikkelt een organisatorische hiërarchie met minder dan ongeveer 500 activa of omslagen binnen een bepaalde tak van uw hiërarchie. Dit is geen strikte eis, maar het zal helpen om aanvaardbare reactietijden te handhaven wanneer het bekijken van of het zoeken van activa. In feite is de aanbeveling om hiërarchieën te creëren die breed en oppervlakkig zijn in plaats van smal en diep.
 
-De eenvoudigste manier om uw mappen te maken, is om de volledige mapstructuur te uploaden met behulp van FTP en de optie **Submappen opnemen** in te schakelen. Met deze optie maakt Dynamic Media Classic de mapstructuur op de FTP-site opnieuw in Dynamic Media Classic.
+De eenvoudigste manier om uw mappen te maken, is om de volledige mapstructuur te uploaden met behulp van FTP en de optie **Submappen opnemen** in te schakelen. Met deze optie maakt Dynamic Media Classic de mapstructuur opnieuw op de FTP-site in Dynamic Media Classic.
 
-Voordat u met het uploaden van al uw bestanden begint, moet u rekening houden met de mapstructuur. Het is namelijk veel gemakkelijker om uw bestanden en mappen lokaal op uw computer te ordenen en te beheren dan in Dynamic Media Classic. U kunt bijvoorbeeld alleen bestanden, maar niet volledige mappen, slepen en neerzetten in Dynamic Media Classic.
+We willen dat u rekening houdt met uw mapstructuur voordat u al uw bestanden gaat uploaden. Het is namelijk veel gemakkelijker om uw bestanden en mappen lokaal op uw computer te ordenen en te beheren dan in Dynamic Media Classic. U kunt bijvoorbeeld alleen bestanden, maar niet volledige mappen, slepen en neerzetten in Dynamic Media Classic.
 
 ### Mapstrategieën
 
@@ -44,9 +47,9 @@ Overweeg voor uw mapstrategie wat voor uw organisatie zinnig is. Hier volgen een
 
 ## Naamgevingsconventie voor bestanden
 
-Hoe u verkiest om uw dossiers te noemen is misschien het belangrijkste vroege besluit u met betrekking tot Dynamische Klassieke Media zult nemen. Dit komt doordat alle elementen in Dynamic Media Classic unieke namen moeten hebben, ongeacht de locatie van de elementen in de account.
+Hoe u ervoor kiest om uw bestanden een naam te geven, is wellicht de belangrijkste beslissing die u in een vroeg stadium zult nemen met betrekking tot Dynamic Media Classic. Dit komt omdat alle elementen in Dynamic Media Classic unieke namen moeten hebben, ongeacht de locatie van de middelen op de account.
 
-Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een element-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. _896649.jpg_ krijgt bijvoorbeeld element _ID 896649_.
+Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een Asset-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. _896649.jpg_ krijgt bijvoorbeeld element _ID 896649_.
 
 Regels betreffende ID&#39;s van activa:
 
@@ -54,9 +57,9 @@ Regels betreffende ID&#39;s van activa:
 - Namen zijn hoofdlettergevoelig. Met bijvoorbeeld Stoel.jpg, stoel.jpg en CHAIR.jpg kunt u drie verschillende id&#39;s voor middelen maken.
 - Als beste praktijk, zou identiteitskaart van Activa geen lege ruimten of symbolen moeten bevatten. Het gebruik van spaties en symbolen maakt de implementatie moeilijker omdat u deze tekens via URL moet coderen. Een spatie &quot; &quot; wordt bijvoorbeeld &quot;%20&quot;.
 
-Uw noemende overeenkomst is hoofdzakelijk hoe u met Dynamische Klassieke Media integreert. U integreert doorgaans uw back-office systemen niet in Dynamic Media Classic omdat het een gesloten systeem is. Het is een passieve partner, die op instructies in de vorm van URLs wacht.
+Uw naamgevingsconventie is in wezen hoe u integreert met Dynamic Media Classic. U integreert uw back-office systemen gewoonlijk niet in Dynamic Media Classic omdat het een gesloten systeem is. Het is een passieve partner, die op instructies in de vorm van URLs wacht.
 
-De meeste gebruikers baseren hun noemende overeenkomst rond hun interne SKU of product IDs zodat wanneer een Web-pagina met informatie over die SKU omhoog wordt geroepen, de pagina automatisch naar een beeld kan zoeken dat een gelijkaardige naam heeft. Als er geen verbinding tussen het dossier - naam en SKU of identiteitskaart is, dan zal uw achterkantoorsysteem spoor van elke dossiernaam manueel moeten houden, en een persoon zal die verenigingen moeten handhaven - in het kort, veel werk voor zowel IT als inhoudsteams.
+De meeste gebruikers baseren hun noemende overeenkomst rond hun interne SKU of product IDs zodat wanneer een Web-pagina met informatie over dat SKU omhoog wordt geroepen, de pagina automatisch naar een beeld kan zoeken dat een gelijkaardige naam heeft. Als er geen verbinding tussen het dossier - naam en SKU of identiteitskaart is, dan zal uw achterkantoorsysteem spoor van elke dossiernaam manueel moeten houden, en een persoon zal die verenigingen moeten handhaven - in het kort, veel werk voor zowel IT als inhoudsteams.
 
 ### Naamgevingsstrategieën voor bestanden
 
