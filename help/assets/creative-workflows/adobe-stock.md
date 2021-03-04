@@ -1,16 +1,15 @@
 ---
 title: Adobe Stock-middelen gebruiken met AEM Assets
 description: 'AEM biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks vanuit AEM te zoeken, voor te vertonen, op te slaan en te licentiëren. Organisaties kunnen hun Adobe Stock Enterprise-plan nu integreren met AEM Assets om ervoor te zorgen dat gelicentieerde middelen nu ruim beschikbaar zijn voor hun creatieve en marketingprojecten, met de krachtige mogelijkheden voor middelenbeheer van AEM. '
-feature: creative-cloud-integration
-topics: authoring, collaboration, operations, sharing, metadata, images, stock
-audience: all
-doc-type: feature video
-activity: use
+feature: Adobe Stock
 version: 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -60,11 +59,11 @@ Dankzij de Adobe Stock- en AEM Assets-integratie kunnen auteurs en marketers van
 ### Toegangsbeheer
 
 * Beheerders kunnen bepaalde gebruikers/groepen machtigingen verlenen om tijdens het instellen van de Adobe Stock-configuratie voor cloudservices een licentie voor stockmiddelen te maken.
-* Als een specifieke gebruiker/groep geen machtiging heeft om een licentie te verlenen voor activa in de vorm van een stock asset search/Asset licensing *, wordt de* mogelijkheid om een licentie te verkrijgen voor de activa in de categorie Stock Asset Search/Asset Licensing&lt;a1/> uitgeschakeld.
+* Als een specifieke gebruiker/groep geen machtiging heeft om een licentie te verlenen voor activa in de vorm van een stock asset search/Asset licensing *, wordt de* mogelijkheid om een voorraadmiddel te zoeken/in licentie te geven uitgeschakeld.
 
 ## Adobe Stock instellen met AEM Assets{#set-up-adobe-stock-with-aem-assets}
 
-AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks vanuit AEM te zoeken, voor te vertonen, op te slaan en in licentie te geven. In deze video wordt uitgelegd hoe u met Adobe I/O Console Adobe-bestanden kunt instellen met AEM Assets.
+AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks vanuit AEM te zoeken, voor te vertonen, op te slaan en in licentie te geven. In deze video wordt uitgelegd hoe u met behulp van Adobe I/O Console Adobe-bestanden kunt instellen met AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25043/?quality=12&learn=on)
 
@@ -110,5 +109,5 @@ AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks 
 * [Enterprise Stock Plan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
 * [Opmerkingen bij de release AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 * [AEM en Adobe Stock integreren](https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html#IntegrateAEMandAdobeStock)
-* [Adobe I/O Console Integration-API](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
+* [Adobe I/O Console-integratie-API](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Adobe Stock API-documenten](https://www.adobe.io/apis/creativecloud/stock/docs.html)
