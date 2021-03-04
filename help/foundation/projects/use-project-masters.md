@@ -1,21 +1,17 @@
 ---
 title: Hoe te om de Masters van het Project in AEM te gebruiken
 description: De Masters van het project vereenvoudigen zeer gebruiker en teambeheer met AEM Projecten.
-version: 6.4, 6.5, Cloud Service
-feature: Projecten, gebruikers en groepen
-topics: administration, collaboration, performance
-activity: use
-audience: administrator, implementer, architect
-doc-type: article
-topic: Samenwerking
+version: 6.4, 6.5, cloud-service
+topic: Inhoudsbeheer
+feature: Projecten
+level: Intermediair
 role: Zakelijke praktiserer
-level: Begin
 kt: 256
 thumbnail: 17740.jpg
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
