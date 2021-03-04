@@ -3,7 +3,7 @@ title: LDAP gebruiken met Aem Forms Workflow
 seo-title: LDAP gebruiken met Aem Forms Workflow
 description: AEM Forms-workflowtaak toewijzen aan de manager van de verzender
 seo-description: AEM Forms-workflowtaak toewijzen aan de manager van de verzender
-feature: adaptive-forms,workflow
+feature: '"Adaptive Forms,Workflow"'
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,10 +11,13 @@ activity: setup
 version: 6.3,6.4,6.5
 uuid: 3e32c3a7-387f-4652-8a94-4e6aa6cd5ab8
 discoiquuid: 671872b3-3de0-40da-9691-f8b7e88a9443
+topic: Ontwikkeling
+role: Beheerder
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -77,7 +80,7 @@ Om dit op uw systeem te testen (Voor de Medewerkers van Adobe kunt u dit steekpr
 * Meld u aan bij AEM met uw LDAP-referenties.
 * Open [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Vul het formulier in en verzend het.
-* De manager van de verzender moet het formulier ter controle krijgen.
+* De manager van de verzender zou het formulier ter controle moeten krijgen.
 
 >[!NOTE]
 >
