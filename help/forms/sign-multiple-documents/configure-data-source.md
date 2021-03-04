@@ -1,7 +1,7 @@
 ---
 title: Gegevensbron AEM configureren
 description: Door MySQL ondersteunde gegevensbron configureren om formuliergegevens op te slaan en op te halen
-feature: adaptieve vormen
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6899
 thumbnail: 6899.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 1%
+source-wordcount: '196'
+ht-degree: 2%
 
 ---
 
