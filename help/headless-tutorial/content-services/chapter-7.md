@@ -1,10 +1,14 @@
 ---
 title: Hoofdstuk 7 - AEM Inhoudsservices van een mobiele app gebruiken - Inhoudsservices
 description: In Hoofdstuk 7 van de zelfstudie wordt de Android Mobile-app uitgevoerd om geschreven inhoud van AEM Content Services te verbruiken.
+feature: Inhoudsfragmenten, API's
+topic: Koploos, inhoudsbeheer
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
