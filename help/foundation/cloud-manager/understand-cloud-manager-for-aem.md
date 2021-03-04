@@ -2,17 +2,15 @@
 title: Adobe Cloud Manager begrijpen
 description: Adobe Cloud Manager biedt een eenvoudige, maar toch robuuste oplossing voor eenvoudig beheer, introspect en zelfbediening van AEM omgevingen.
 sub-product: cloudbeheer, stichting
+feature: pijpleidingen, programma's, projecten, kwaliteitskates, verslagen
 topics: best-practices, cicd, development, operations, governance
 doc-type: feature video
 activity: understand
 audience: developer, implementer, administrator, architect
-topic: Architectuur
-role: Architect
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '536'
 ht-degree: 2%
 
 ---
