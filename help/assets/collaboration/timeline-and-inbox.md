@@ -2,19 +2,18 @@
 title: Tijdlijn en Postvak IN
 description: U kunt uzelf vertrouwd maken met de belangrijkste webconsoles in AEM Assets die worden gebruikt voor samenwerking.
 sub-product: elementen
-feature: inbox
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Workflow
 version: cloud-service
 kt: 4540
 thumbnail: 32051.jpg
+topic: Samenwerking
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 0%
+source-wordcount: '42'
+ht-degree: 2%
 
 ---
 
