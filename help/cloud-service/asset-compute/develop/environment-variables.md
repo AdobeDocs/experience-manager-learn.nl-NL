@@ -1,7 +1,7 @@
 ---
 title: De omgevingsvariabelen configureren voor uitbreidbaarheid van de Asset compute
-description: Omgevingsvariabelen worden in het .env-bestand bewaard voor lokale ontwikkeling en worden gebruikt om Adobe I/O-referenties en gegevens voor cloudopslag te verstrekken die vereist zijn voor lokale ontwikkeling.
-feature: asset-compute
+description: Omgevingsvariabelen worden in het .env-bestand bewaard voor lokale ontwikkeling en worden gebruikt om gegevens over Adobe I/O en cloudopslag te verstrekken die vereist zijn voor lokale ontwikkeling.
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6270
 thumbnail: KT-6270.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -22,16 +25,16 @@ ht-degree: 0%
 
 ![puntenv-bestand](assets/environment-variables/dot-env-file.png)
 
-Voordat u begint met de ontwikkeling van workers in de Asset compute, moet u controleren of het project is geconfigureerd met Adobe I/O en informatie over cloudopslag. Deze informatie wordt opgeslagen in `.env` van het project dat slechts voor lokale ontwikkeling, en niet sparen in Git wordt gebruikt. Het `.env` dossier verstrekt een geschikte manier om sleutel/waardeparen aan de lokale ontwikkelomgeving van de Asset compute bloot te stellen. Wanneer [implementating](../deploy/runtime.md) Asset compute workers to Adobe I/O Runtime, wordt het `.env` bestand niet gebruikt, maar wordt een subset van waarden doorgegeven via omgevingsvariabelen. Andere aangepaste parameters en geheimen kunnen ook in het `.env`-bestand worden opgeslagen, zoals ontwikkelingsgegevens voor externe webservices.
+Voordat u begint met de ontwikkeling van workers in de Asset compute, moet u ervoor zorgen dat het project is geconfigureerd met informatie over Adobe I/O- en cloudopslag. Deze informatie wordt opgeslagen in `.env` van het project dat slechts voor lokale ontwikkeling, en niet sparen in Git wordt gebruikt. Het `.env` dossier verstrekt een geschikte manier om sleutel/waardeparen aan de lokale ontwikkelomgeving van de Asset compute bloot te stellen. Wanneer [implementating](../deploy/runtime.md) Asset compute workers to Adobe I/O Runtime, wordt het `.env` bestand niet gebruikt, maar wordt een subset van waarden doorgegeven via omgevingsvariabelen. Andere aangepaste parameters en geheimen kunnen ook in het `.env`-bestand worden opgeslagen, zoals ontwikkelingsgegevens voor externe webservices.
 
 ## Verwijs naar `private.key`
 
 ![persoonlijke sleutel](assets/environment-variables/private-key.png)
 
-Open het `.env` dossier, uncomment de `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` sleutel, en verstrek de absolute weg op uw filesystem aan `private.key` die paren met het openbare certificaat aan uw project Adobe I/O FireFly wordt toegevoegd.
+Open het `.env` dossier, uncomment de `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` sleutel, en verstrek de absolute weg op uw filesystem aan `private.key` die paren met het openbare die certificaat aan uw Adobe I/O FireFly project wordt toegevoegd.
 
 + Als uw sleutelpaar door Adobe I/O werd geproduceerd, werd het auto-gedownload als deel van `config.zip`.
-+ Als je Adobe I/O de openbare sleutel hebt gegeven, dan zou je ook in het bezit moeten zijn van de overeenkomende persoonlijke sleutel.
++ Als u de openbare sleutel aan Adobe I/O verstrekte, dan zou u ook in het bezit van de passende privé sleutel moeten zijn.
 + Als u deze sleutelparen niet hebt, kunt u nieuwe zeer belangrijke paren produceren of nieuwe openbare sleutels bij de bodem van uploaden:
    [https://console.adobe.com](https://console.adobe.io) > Uw Asset compute werkt probleemloos > Workspaces @ Development > Service Account (JWT).
 
