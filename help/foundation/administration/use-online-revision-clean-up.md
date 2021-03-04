@@ -2,15 +2,17 @@
 title: Onlinerevisie opschonen gebruiken
 description: 'Een korte inleiding op Online Revision Clean Up. De online Opruimen van de Herziening verlicht de behoefte aan frequente Off-line Opruimen van de Herziening. '
 version: 6.3, 6.4, 6.5
-feature: eiken, verdikking
 topics: operations, authoring, performance
 activity: use
 audience: administrator, architect, implementer
 doc-type: technical video
+topic: Beheer
+role: Beheerder
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '73'
 ht-degree: 0%
 
 ---
