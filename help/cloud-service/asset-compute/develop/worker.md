@@ -1,7 +1,7 @@
 ---
 title: Een Asset compute-worker ontwikkelen
 description: De arbeiders van de asset compute zijn de kern van een Asset compute projecten zoals verstrekt douanefunctionaliteit die, of orkest, het werk uitvoert dat op activa wordt uitgevoerd om een nieuwe vertoning tot stand te brengen.
-feature: asset-compute
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 2d7ae5e46acb25eaaf7a1a35d9bbf20f7c14042e
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
