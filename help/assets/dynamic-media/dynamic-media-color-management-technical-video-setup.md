@@ -1,29 +1,24 @@
 ---
-title: Werken met kleurbeheer met AEM dynamische media
-seo-title: Werken met kleurbeheer met AEM dynamische media
-description: In deze video bekijken we Dynamic Media Color Management en hoe u deze kunt gebruiken om kleurcorrectievoorvertoningsmogelijkheden voor AEM Assets te bieden.
-seo-description: In deze video bekijken we Dynamic Media Color Management en hoe u deze kunt gebruiken om kleurcorrectievoorvertoningsmogelijkheden voor AEM Assets te bieden.
-uuid: dc14d067-11a2-4662-acfd-f9f6f1d738ee
-discoiquuid: b2b9ccc9-96b5-4bea-9995-2e6b353c469d
+title: Werken met kleurbeheer met AEM Dynamic Media
+description: In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden gebruikt om voorvertoningsmogelijkheden voor kleurcorrectie te bieden in AEM Assets.
 sub-product: dynamic-media
-feature: image-profiles, video-profiles
-topics: images, videos, renditions, authoring, integrations, publishing, metadata
-audience: developer, architect, administrator
-doc-type: technical video
-activity: setup
+feature: Afbeeldingsprofielen, videoprofielen
 version: 6.3, 6.4, 6.5
+topic: Inhoudsbeheer
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '330'
 ht-degree: 4%
 
 ---
 
 
-# Werken met kleurbeheer met AEM dynamische media{#understanding-color-management-with-aem-dynamic-media}
+# Werken met kleurbeheer met AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-In deze video bekijken we Dynamic Media Color Management en hoe u deze kunt gebruiken om kleurcorrectievoorvertoningsmogelijkheden voor AEM Assets te bieden.
+In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden gebruikt om voorvertoningsmogelijkheden voor kleurcorrectie te bieden in AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
 
@@ -130,4 +125,4 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 
 ## Aanvullende bronnen{#additional-resources}
 
-* [Dynamisch kleurbeheer voor media configureren](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Dynamic Media-kleurbeheer configureren](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
