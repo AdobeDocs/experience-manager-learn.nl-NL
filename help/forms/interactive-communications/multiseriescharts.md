@@ -3,19 +3,16 @@ title: Diagrammen uit meerdere reeksen in AEM Forms
 seo-title: Diagrammen uit meerdere reeksen in AEM Forms
 description: Maak het juiste formuliergegevensmodel om grafieken met meerdere reeksen te maken in afdruk- en webkanaaldocumenten.
 seo-description: Maak het juiste formuliergegevensmodel om grafieken met meerdere reeksen te maken in afdruk- en webkanaaldocumenten.
-feature: Interactieve communicatie
+feature: interactieve communicatie
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
