@@ -4,7 +4,7 @@ seo-title: Layout maken met Forms Designer
 description: Dit is onderdeel 4 van een zelfstudie met meerdere onderdelen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit onderdeel bekijken we het lay-outbestand dat is gemaakt met AEM Forms Designer.
 seo-description: Dit is onderdeel 4 van een zelfstudie met meerdere onderdelen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit onderdeel bekijken we het lay-outbestand dat is gemaakt met AEM Forms Designer.
 uuid: 2f014c58-1ae1-40e8-a45d-7ffe9c86f693
-feature: Interactieve communicatie
+feature: interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,14 +13,11 @@ version: 6.4,6.5
 discoiquuid: 17f4cdbb-079b-4fe3-861d-cfa0c03d30dd
 kt: 5957
 thumbnail: 37890.jpg
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 1%
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
