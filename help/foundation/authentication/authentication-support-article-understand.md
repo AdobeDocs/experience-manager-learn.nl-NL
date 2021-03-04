@@ -2,17 +2,20 @@
 title: Verificatieondersteuning begrijpen in AEM
 description: 'Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen (en soms autorisaties). '
 version: 6.3, 6.4, 6.5
-feature: verificatie
+feature: 'Gebruikers en groepen '
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
+topic: Architectuur
+role: Architect
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 0%
+source-wordcount: '144'
+ht-degree: 2%
 
 ---
 
