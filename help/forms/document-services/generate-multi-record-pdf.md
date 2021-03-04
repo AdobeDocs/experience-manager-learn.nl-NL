@@ -1,16 +1,19 @@
 ---
 title: Meerdere PDF's genereren op basis van één gegevensbestand
 seo-title: Meerdere PDF's genereren op basis van één gegevensbestand
-feature: output-service
+feature: Uitvoerservice
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -130,7 +133,7 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen:
 
 * [Download en extraheer de ZIP-bestandsinhoud naar uw bestandssysteem](assets/mult-records-template-and-xml-file.zip). Dit ZIP-bestand bevat de sjabloon en het XML-gegevensbestand.
-* [Wijs uw browser naar Felix-webconsole](http://localhost:4502/system/console/bundles)
+* [De browser naar de Felix-webconsole sturen](http://localhost:4502/system/console/bundles)
 * [Implementeer DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 * [Implementeer Aangepaste AEMFormsDocumentServices-bundel](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Aangepaste bundel die de PDF&#39;s genereert met de OutputService-API
 * [De browser naar pakketbeheer verwijzen](http://localhost:4502/crx/packmgr/index.jsp)
