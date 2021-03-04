@@ -1,31 +1,30 @@
 ---
-title: Dynamische slimme uitsnijding voor media gebruiken voor video
-description: Dynamic Media Smart Crop voor video gebruikt Adobe Sensei om op intelligente wijze het interessepunt in de video bij te houden, zodat video's er op alle schermgrootten optimaal uitzien.
+title: Dynamic Media Smart Crop gebruiken voor video
+description: Dynamic Media Smart Crop voor video gebruikt Adobe Sensei om op intelligente wijze het interessepunt in de video bij te houden, zodat video's er optimaal uitzien op alle schermgrootten.
 sub-product: dynamic-media
-feature: smart-crop, video-profiles, viewer-presets
-topics: videos, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+feature: Slim uitsnijden, videoprofielen, voorinstellingen van viewer
 version: cloud-service
 kt: 5977
 thumbnail: 37958.jpg
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
 
 
-# Dynamische slimme uitsnijding voor media gebruiken voor video {#using-smart-crop-video}
+# Slimme uitsnede van Dynamic Media gebruiken voor video {#using-smart-crop-video}
 
-Dynamic Media Smart Crop voor video gebruikt Adobe Sensei om op intelligente wijze het interessepunt in de video bij te houden, zodat video&#39;s er op alle schermgrootten optimaal uitzien.
+Dynamic Media Smart Crop voor video gebruikt Adobe Sensei om op intelligente wijze het interessepunt in de video bij te houden, zodat video&#39;s er optimaal uitzien op alle schermgrootten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37958/?quality=12)
 
 >[!NOTE]
 >
->In de bovenstaande video wordt ervan uitgegaan dat de AEM-service wordt uitgevoerd in de Dynamic Media S7-modus. [Hier vindt u instructies voor het instellen van AEM met Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>In de bovenstaande video wordt ervan uitgegaan dat uw AEM wordt uitgevoerd in de Dynamic Media S7-modus. [Hier vindt u instructies voor het instellen van AEM met Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
 
