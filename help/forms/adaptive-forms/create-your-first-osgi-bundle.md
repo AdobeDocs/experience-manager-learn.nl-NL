@@ -1,20 +1,17 @@
 ---
 title: Uw eerste OSGi-bundel maken met AEM formulieren
 description: Bouw uw eerste bundel OSGi gebruikend maven en eclipse
-feature: Adaptieve Forms
+feature: administratie
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 1%
+source-wordcount: '831'
+ht-degree: 0%
 
 ---
 
