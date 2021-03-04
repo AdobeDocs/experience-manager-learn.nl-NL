@@ -3,19 +3,16 @@ title: Adaptieve formuliergegevens opslaan
 seo-title: Adaptieve formuliergegevens opslaan
 description: Adaptieve formuliergegevens opslaan in DataBase als onderdeel van uw AEM workflow
 seo-description: Adaptieve formuliergegevens opslaan in DataBase als onderdeel van uw AEM workflow
-feature: '"Adaptive Forms,Workflow,Form Data Model"'
+feature: adaptieve formulieren, workflow
 topics: integrations
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: Ontwikkeling
-role: Developer
-level: Ervaren
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
