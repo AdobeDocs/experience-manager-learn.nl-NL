@@ -4,20 +4,17 @@ seo-title: Deelvenster Investeringmix configureren
 description: Dit maakt deel uit van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we schijfgrafieken toe om de huidige en modelinvesteringsmix weer te geven.
 seo-description: Dit maakt deel uit van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we schijfgrafieken toe om de huidige en modelinvesteringsmix weer te geven.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
-feature: Interactieve communicatie
+feature: interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
