@@ -1,7 +1,7 @@
 ---
 title: Lokale AEM Runtime instellen voor AEM als ontwikkeling van Cloud Servicen
 description: Opstelling Lokale AEM Runtime die de AEM als QuickStart Jar van SDK van de Cloud Service gebruikt.
-feature: null
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: develop
 audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 39ea3dd6133477a52fd91ee696936cd226fce5ea
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 0%
+source-wordcount: '1657'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ Merk op dat `~` als steno voor de Folder van de Gebruiker wordt gebruikt. In Win
 
 Experience Manager is een Java-toepassing en daarom is ondersteuning van ontwikkelingstools vereist voor de SDK van Java.
 
-1. [Download en installeer de nieuwste Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. [Download en installeer de nieuwste Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 1. Controleer of de Java 11 SDK is geïnstalleerd met de opdracht:
    + Windows:`java -version`
    + macOS / Linux: `java --version`
@@ -46,7 +49,7 @@ De AEM als Cloud Service SDK, of AEM SDK, bevat de Quickstart Jar die wordt gebr
 1. Klik op de laatste __AEM SDK__ resultaatrij
 1. Controleer en accepteer de EULA en tik op de knop __Downloaden__
 
-## Haal de QuickStart Jar uit het ZIP van de AEM SDK
+## De QuickStart-jar extraheren uit het ZIP van de AEM SDK
 
 1. Het gedownloade `aem-sdk-XXX.zip`-bestand uitpakken
 
@@ -236,7 +239,7 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-De reden hiervoor is dat AEM als Cloud Service Java SDK 11 vereist en u een andere versie gebruikt, die waarschijnlijk Java 8 is. Download en installeer [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2fx jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) om dit probleem op te lossen.
+De reden hiervoor is dat AEM als Cloud Service Java SDK 11 vereist en u een andere versie gebruikt, die waarschijnlijk Java 8 is. Download en installeer [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) om dit probleem op te lossen.
 Nadat Java SDK 11 is geïnstalleerd, controleert u of dit de actieve versie is door het volgende via de opdrachtregel uit te voeren.
 
 Zodra Java 11 SDK wordt geïnstalleerd, verifieer het de actieve versie door het bevel van de bevellijn in werking te stellen is:
