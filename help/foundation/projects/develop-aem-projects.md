@@ -2,15 +2,18 @@
 title: Projecten ontwikkelen in AEM
 description: Een zelfstudie over de ontwikkeling van AEM projecten.  In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om nieuwe projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
 version: 6.3, 6.4, 6.5
-feature: projects, workflow
+feature: '"Projecten, workflow"'
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4654'
 ht-degree: 0%
 
 ---
@@ -351,7 +354,7 @@ locationLocation van workflowmodel in 6.4+
 
    Dubbelklik op de stap Projecttaak maken om het workflowdialoogvenster te openen. Configureer de volgende eigenschappen:
 
-   Dit tabblad wordt gebruikt voor alle stappen in het workflowproces en we stellen de Titel en Beschrijving in (deze zijn niet zichtbaar voor de eindgebruiker). Het belangrijke bezit dat wij zullen plaatsen is het Stadium van het Werkschema aan **&quot;geeft Inhoud&quot;** van het drop-down menu uit.
+   Dit tabblad wordt veel gebruikt voor alle stappen in het workflowproces en we stellen de Titel en Beschrijving in (deze zijn niet zichtbaar voor de eindgebruiker). Het belangrijke bezit dat wij zullen plaatsen is het Stadium van het Werkschema aan **&quot;geeft Inhoud&quot;** van het drop-down menu uit.
 
    ```shell
    Common Tab
