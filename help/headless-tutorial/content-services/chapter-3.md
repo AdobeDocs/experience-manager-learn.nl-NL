@@ -1,12 +1,16 @@
 ---
 title: Hoofdstuk 3 - Inhoudsfragmenten voor gebeurtenissen ontwerpen - Inhoudsservices
 seo-title: Aan de slag met AEM Content Services - Hoofdstuk 3 - Fragmenten voor gebeurtenisinhoud ontwerpen
-description: Hoofdstuk 3 van de AEM zelfstudie zonder titel heeft betrekking op het maken en ontwerpen van gebeurtenisinhoudfragmenten van het model voor inhoudsfragmenten dat in hoofdstuk 2 is gemaakt.
-seo-description: Hoofdstuk 3 van de AEM zelfstudie zonder titel heeft betrekking op het maken en ontwerpen van gebeurtenisinhoudfragmenten van het model voor inhoudsfragmenten dat in hoofdstuk 2 is gemaakt.
+description: Hoofdstuk 3 van de AEM zelfstudie zonder koptekst behandelt het maken en ontwerpen van gebeurtenisinhoudfragmenten van het model voor inhoudsfragmenten dat in hoofdstuk 2 is gemaakt.
+seo-description: Hoofdstuk 3 van de AEM zelfstudie zonder koptekst behandelt het maken en ontwerpen van gebeurtenisinhoudfragmenten van het model voor inhoudsfragmenten dat in hoofdstuk 2 is gemaakt.
+feature: '"Inhoudsfragmenten, API''s"'
+topic: '"Headless, Content Management"'
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
