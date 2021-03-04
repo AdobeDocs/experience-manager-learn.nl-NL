@@ -3,19 +3,16 @@ title: Kanaaldocument afdrukken genereren door gegevens samen te voegen
 seo-title: Kanaaldocument afdrukken genereren door gegevens samen te voegen
 description: Leer hoe u een document met een afdrukkanaal genereert door de gegevens in de invoerstroom samen te voegen
 seo-description: Leer hoe u een document met een afdrukkanaal genereert door de gegevens in de invoerstroom samen te voegen
-feature: Interactieve communicatie
+feature: interactieve communicatie
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
-role: Developer
-level: Intermediair
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
