@@ -3,15 +3,18 @@ title: Begrijp het Verkopen ModelExporter in AEM
 description: Apache Sling Models 1.3.0 introduceert Sling Model Exporter, een elegante manier om Sling Model voorwerpen in douaneabstracties uit te voeren of in series te vervaardigen. In dit artikel wordt naast het traditionele gebruik van Sling Models de HTML-scripts gevuld met behulp van het Sling Model Exporter-framework om een Sling Model in JSON te serialiseren.
 version: 6.3, 6.4, 6.5
 sub-product: stichting, inhouddiensten
-feature: sling-models, sling-model-exporter
+feature: API's
 topics: development, content-delivery, headless
 activity: understand
 audience: developer, architect
 doc-type: article
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 63295cbc353a796959ba2e98e3e21c188f596372
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -53,7 +56,7 @@ Door de directe serialisatie van [!DNL Sling Models] kunnen ze zowel normale web
 
 ![HTTP-aanvraagstroom Sling Model Exporter](./assets/understand-sling-model-exporter/sling-model-exporter-request-flow.png)
 
-*Deze stroom beschrijft de stroom gebruikend de verstrekte Jackson Exporter om output te produceren JSON. Het gebruik van aangepaste exporters volgt dezelfde stroom, maar met hun uitvoerindeling.*
+*In deze flow wordt de stroom beschreven met de meegeleverde Jackson Exporter voor het produceren van JSON-uitvoer. Het gebruik van aangepaste exporters volgt dezelfde stroom, maar met hun uitvoerindeling.*
 
 1. HTTP-GET-aanvraag wordt ingediend voor een bron in AEM met de kiezer en de extensie die bij de Exporter van [!DNL Sling Model] zijn geregistreerd.
 
