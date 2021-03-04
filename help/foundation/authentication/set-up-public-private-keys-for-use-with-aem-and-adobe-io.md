@@ -2,19 +2,16 @@
 seo: Set up public and private keys for use with AEM and Adobe I/O
 description: 'AEM gebruikt openbare/privé zeer belangrijke paren om veilig met Adobe I/O en andere Webdiensten te communiceren. Deze korte zelfstudie laat zien hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het openssl-opdrachtregelprogramma dat zowel met AEM als met Adobe I/O werkt. '
 version: 6.4, 6.5
-feature: 'Gebruikers en groepen '
+feature: verificatie
 topics: authentication, integrations
 activity: setup
 audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
-topic: Ontwikkeling
-role: Developer
-level: Ervaren
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
