@@ -1,7 +1,7 @@
 ---
 title: Het belangrijkste adaptieve formulier maken
 description: De adaptieve formulieren maken om informatie van de aanvrager en het adaptieve formulier op te nemen om het opgeslagen adaptieve formulier op te halen
-feature: Adaptieve Forms
+feature: adaptieve vormen
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,10 @@ activity: implement
 version: 6.4,6.5
 kt: 6552
 thumbnail: 6552.jpg
-topic: Ontwikkeling
-role: Zakelijke praktiserer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
