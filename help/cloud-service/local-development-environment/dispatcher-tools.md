@@ -2,7 +2,7 @@
 title: Dispatcher Tools instellen voor AEM als ontwikkeling van Cloud Servicen
 description: AEM de Dispatcher Tools van SDK vergemakkelijkt de lokale ontwikkeling van Adobe Experience Manager (AEM) projecten door het gemakkelijk te maken om Dispatcher plaatselijk te installeren, in werking te stellen en problemen op te lossen.
 sub-product: stichting
-feature: dispatcher
+feature: Dispatcher, Developer Tools
 topics: development, caching, security
 version: cloud-service
 doc-type: tutorial
@@ -10,10 +10,13 @@ activity: develop
 audience: developer
 kt: 4679
 thumbnail: 30603.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -100,7 +103,7 @@ Naar keuze, kunnen de Dispatcher en Apache de serverconfiguraties van het Web (v
 
 ## Verzending lokaal uitvoeren
 
-Om de Verzender plaatselijk in werking te stellen, moeten de de configuratiedossiers van de Verzender worden geproduceerd gebruikend het hulpmiddel `validator` CLI van de Hulpmiddelen van de Verzender.
+Om de Dispatcher plaatselijk in werking te stellen, moeten de de configuratiedossiers van de Verzender worden geproduceerd gebruikend het hulpmiddel `validator` CLI van de Hulpmiddelen van de Verzender.
 
 + Gebruik:
    + Windows: `bin\validator full -d out src`
