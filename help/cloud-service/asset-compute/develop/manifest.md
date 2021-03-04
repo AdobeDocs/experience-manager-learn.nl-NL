@@ -1,7 +1,7 @@
 ---
 title: Vorm manifest.yml van een project van de Asset compute
 description: manifest.yml van het project van de Asset compute, beschrijft alle arbeiders in dit project dat moet worden opgesteld.
-feature: asset-compute
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -28,7 +31,7 @@ ht-degree: 0%
 
 Workers worden gedefinieerd als Adobe I/O Runtime-actitems onder `actions` en bestaan uit een set configuraties.
 
-Workers die andere Adobe I/O-integraties willen gebruiken, moeten de `annotations -> require-adobe-auth`-eigenschap instellen op `true` omdat [de Adobe I/O-referenties van de worker via het `params.auth`-object beschikbaar worden gemaakt. ](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) Dit is doorgaans vereist wanneer de worker API&#39;s van Adobe I/O, zoals de Adobe Photoshop-, Lightroom- of Sensei-API&#39;s, aanroept en per worker in- en uitschakelen kan.
+Workers die andere Adobe I/O-integratie willen gebruiken, moeten de eigenschap `annotations -> require-adobe-auth` instellen op `true` omdat [de Adobe I/O-gegevens van de worker via het `params.auth`-object beschikbaar maken. ](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) Dit is doorgaans vereist wanneer de worker API&#39;s van het type Adobe I/O, zoals de Adobe Photoshop-, Lightroom- of Sensei-API&#39;s, aanroept en per worker in- en uitschakelen kan worden.
 
 1. Open en bekijk de automatisch gegenereerde worker `manifest.yml`. Projecten die meerdere workers in de Asset compute bevatten, moeten een item definiëren voor elke worker onder de array `actions`.
 
