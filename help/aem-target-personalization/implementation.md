@@ -3,11 +3,15 @@ title: Adobe Experience Manager integreren met Adobe Target
 seo-title: Een artikel waarin verschillende manieren worden beschreven om Adobe Experience Manager(AEM) met Adobe Target te integreren voor het leveren van gepersonaliseerde inhoud.
 description: Een artikel waarin wordt beschreven hoe u Adobe Experience Manager voor verschillende scenario's kunt instellen met Adobe Target.
 seo-description: Een artikel waarin wordt beschreven hoe u Adobe Experience Manager voor verschillende scenario's kunt instellen met Adobe Target.
+feature: Ervaringsfragmenten
+topic: Personalisatie
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 0443c8ff42e773021ff8b6e969f5c1c31eea3ae4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 1%
+source-wordcount: '704'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +41,7 @@ Voor AEM klanten die de aanbiedingen van Experience Fragment willen gebruiken om
    * Experience Cloud voorzien van de volgende oplossingen
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Adobe I/O Console](https://console.adobe.io)
+      * [Adobe I/O-console](https://console.adobe.io)
 
 * **Omgeving**
    * Java 1.8 of Java 11 (alleen AEM 6.5+)
@@ -46,7 +50,7 @@ Voor AEM klanten die de aanbiedingen van Experience Fragment willen gebruiken om
 
 >[!NOTE]
 >
-> De klant dient van [Adobe-ondersteuning](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) Experience Platform Launch en Adobe I/O te voorzien of contact op te nemen met uw systeembeheerder
+> De klant moet van [Adobe steun](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) voorzien van Experience Platform Launch en Adobe I/O of bereik aan uw systeembeheerder
 
 ### AEM{#set-up-aem} instellen
 
