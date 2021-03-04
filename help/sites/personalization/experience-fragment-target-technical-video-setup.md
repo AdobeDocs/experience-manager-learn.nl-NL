@@ -4,7 +4,7 @@ seo-title: Maak ervaringsfragmenten en Adobe Target-integratie in AEM
 description: In Adobe Experience Manager 6.4 wordt de personalisatieworkflow tussen AEM en Target vernieuwd. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden geleverd als HTML-aanbiedingen. Hiermee kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
 seo-description: In Adobe Experience Manager 6.4 wordt de personalisatieworkflow tussen AEM en Target vernieuwd. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden geleverd als HTML-aanbiedingen. Hiermee kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
 sub-product: content-services
-feature: experience-fragments
+feature: Ervaringsfragmenten
 topics: integrations
 audience: administrator, developer
 doc-type: technical video
@@ -12,11 +12,14 @@ activity: setup
 version: 6.4, 6.5
 uuid: 05fd477d-0c1a-42c0-ab92-2bca86602e2e
 discoiquuid: 16cb0b92-9398-4fd2-b8c3-f4b7675ef72c
+topic: Personalisatie
+role: Beheerder, ontwikkelaar
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '275'
+ht-degree: 2%
 
 ---
 
