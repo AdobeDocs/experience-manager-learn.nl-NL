@@ -1,16 +1,14 @@
 ---
 title: Asset Templates gebruiken met AEM Assets en InDesign Server
-description: 'Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van markeerbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel gemakkelijker bij de sjablonen voor middelen wanneer deze zijn geïntegreerd met de InDesign-server. '
-feature: catalogs, asset-templates
-topics: authoring, renditions, documents
-audience: all
-doc-type: feature video
-activity: use
+description: Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van markeerbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel gemakkelijker bij de sjablonen voor middelen wanneer deze zijn geïntegreerd met de InDesign-server.
 version: 6.3, 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
