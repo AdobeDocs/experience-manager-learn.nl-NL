@@ -1,10 +1,14 @@
 ---
 title: Aan de slag met AEM headless - Content Services
 description: Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met AEM headless.
+feature: '"Inhoudsfragmenten, API''s"'
+topic: '"Headless, Content Management"'
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
