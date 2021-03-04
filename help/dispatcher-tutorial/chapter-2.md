@@ -1,12 +1,10 @@
 ---
 title: Hoofdstuk 2 - Fragmentmodellen voor gebeurtenisinhoud definiëren
-seo-title: Aan de slag met AEM Content Services - Hoofdstuk 2 - Modellen voor gebeurteniscontentfragmenten definiëren
 description: Hoofdstuk 2 van de AEM zelfstudie zonder koppen omvat het inschakelen en definiëren van modellen van inhoudsfragmenten die worden gebruikt om een genormaliseerde gegevensstructuur en ontwerpinterface te definiëren voor het maken van gebeurtenissen.
-seo-description: Hoofdstuk 2 van de AEM zelfstudie zonder koppen omvat het inschakelen en definiëren van modellen van inhoudsfragmenten die worden gebruikt om een genormaliseerde gegevensstructuur en ontwerpinterface te definiëren voor het maken van gebeurtenissen.
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1917'
+source-wordcount: '1879'
 ht-degree: 0%
 
 ---
@@ -22,7 +20,7 @@ We zullen de meest gangbare topologieën schetsen en de voordelen beschrijven en
 
 ### De instelling Verouderd
 
-In de begindagen was het aantal potentiële bezoekers klein, was de hardware duur en werden de webservers niet zo kritisch gezien als vandaag de dag. Een algemene instelling was om één Dispatcher te hebben die fungeert als taakverdelingsmechanisme en cachegeheugen voor twee of meer publicatiesystemen. De Apache-server in de kern van de Dispatcher was zeer stabiel en - in de meeste gevallen - in staat om een behoorlijke hoeveelheid verzoeken te dienen.
+In de begindagen was het aantal potentiële bezoekers klein, was de hardware duur en werden de webservers niet zo kritisch gezien als vandaag de dag. Een algemene instelling was om één Dispatcher te hebben die als een taakverdelingsmechanisme fungeert en cachegeheugen voor twee of meer publicatiesystemen. De Apache-server in de kern van de Dispatcher was zeer stabiel en - in de meeste gevallen - in staat om een behoorlijke hoeveelheid verzoeken te dienen.
 
 ![&quot;Legacy&quot; Dispatcher Setup - Niet erg algemeen volgens de huidige standaarden](assets/chapter-2/legacy-dispatcher-setup.png)
 
