@@ -2,17 +2,20 @@
 title: Inhoudsfragmenten in AEM ontwerpen
 description: 'Inhoudsfragmenten zijn een inhoudsabstractie in AEM waarmee op tekst gebaseerde inhoud onafhankelijk van de kanalen die deze ondersteunt kan worden gemaakt en beheerd. '
 sub-product: content-services
-feature: content-fragments
+feature: Contentfragmenten
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
 version: cloud-service
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '379'
+ht-degree: 3%
 
 ---
 
