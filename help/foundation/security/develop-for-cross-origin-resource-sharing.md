@@ -3,15 +3,17 @@ title: Ontwikkelen voor het delen van bronnen tussen verschillende bronnen (CORS
 description: Een kort voorbeeld van het gebruik van CORS voor toegang tot AEM inhoud van een externe webtoepassing via client-side JavaScript.
 version: 6.3, 6,4, 6.5
 sub-product: stichting, inhoudsdiensten, sites
-feature: null
 topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
+topic: Beveiliging
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: bc14783840a47fb79ddf1876aca1ef44729d097e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
