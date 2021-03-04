@@ -3,17 +3,20 @@ title: Variabelen in AEM workflow[Deel2]
 seo-title: Variabelen in AEM workflow[Deel2]
 description: Variabelen van het type xml,json,arraylist,document in een algemene workflow gebruiken
 seo-description: Variabelen van het type xml,json,arraylist,document in een algemene workflow gebruiken
-feature: workflow
+feature: Workflow
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 0%
+source-wordcount: '300'
+ht-degree: 1%
 
 ---
 
