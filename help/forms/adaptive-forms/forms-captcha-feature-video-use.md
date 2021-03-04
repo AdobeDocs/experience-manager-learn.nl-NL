@@ -3,7 +3,7 @@ title: CAPTCHA's gebruiken met AEM adaptieve Forms
 seo-title: CAPTCHA's gebruiken met AEM adaptieve Forms
 description: Een CAPTCHA toevoegen en gebruiken met AEM Adaptive Forms.
 seo-description: Een CAPTCHA toevoegen en gebruiken met AEM Adaptive Forms.
-feature: adaptive-forms
+feature: '"Adaptive Forms,Workflow"'
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,10 +11,13 @@ activity: setup
 version: 6.4,6.5
 uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
 discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -55,7 +58,7 @@ Open de [felix webconsole](http://localhost:4502/system/console/bundles) op uw p
 Navigeer naar de bundel-id in het bestandssysteem van uw publicatie-instantie
 * &lt;publish-aem-install-dir>/crx-quickstart/launch/felix/bundle20/data
 * Verwijder de bestaande HMAC- en master bestanden.
-* plak HMAC en master die dossiers van de auteursinstantie worden gekopieerd
+* plakken de HMAC en de master dossiers die van de auteursinstantie worden gekopieerd
 
 Start AEM publicatieserver opnieuw
 
