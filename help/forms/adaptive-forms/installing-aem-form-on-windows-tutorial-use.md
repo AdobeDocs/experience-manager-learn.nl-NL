@@ -4,20 +4,17 @@ seo-title: Vereenvoudigde stappen voor het installeren van AEM Forms in Windows
 description: Snelle en eenvoudige stappen om AEM Forms in vensters te installeren
 seo-description: Snelle en eenvoudige stappen om AEM Forms in vensters te installeren
 uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
-feature: Adaptieve Forms
+feature: adaptieve vormen
 topics: administration
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
 discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
