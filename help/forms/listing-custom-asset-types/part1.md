@@ -4,17 +4,20 @@ seo-title: Aangepaste elementtypen registreren
 description: Aangepaste elementtypen inschakelen voor aanbieding in AEMForms Portal
 seo-description: Aangepaste elementtypen inschakelen voor aanbieding in AEMForms Portal
 uuid: eaf29eb0-a0f6-493e-b267-1c5c4ddbe6aa
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '671'
 ht-degree: 1%
 
 ---
