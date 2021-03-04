@@ -9,10 +9,14 @@ audience: developer
 kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
+feature: '"API''s, AEM Project Archetype"'
+topic: '"Inhoudsbeheer, ontwikkeling"'
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3024'
 ht-degree: 0%
 
 ---
@@ -206,9 +210,9 @@ Eenheidstests wijzen doorgaans 1-op-1 toe met Java-klassen. In dit hoofdstuk, zu
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-   U kunt echter ook het testbestand onderscheiden    Het achtervoegsel `Test` in het eenheidstestbestand, `BylineImplTest.java` is een conventie die ons in staat stelt
-      1. Identificeer het gemakkelijk als testdossier _for_ `BylineImpl.java`
-      2. U kunt echter ook het testbestand _onderscheiden van_ de klasse die wordt getest, `BylineImpl.java`
+2. U kunt echter ook het testbestand onderscheiden    Het achtervoegsel `Test` in het eenheidstestbestand, `BylineImplTest.java` is een conventie die ons in staat stelt
+1. Identificeer het gemakkelijk als testdossier _for_ `BylineImpl.java`
+2. U kunt echter ook het testbestand _onderscheiden van_ de klasse die wordt getest, `BylineImpl.java`
 
 ## BylineImplTest.java {#reviewing-bylineimpltest-java} reviseren
 
