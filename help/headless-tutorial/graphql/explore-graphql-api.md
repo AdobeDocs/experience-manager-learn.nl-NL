@@ -10,10 +10,14 @@ audience: developer
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
+feature: Inhoudsfragmenten, GraphQL API's
+topic: Koploos, inhoudsbeheer
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -206,7 +210,7 @@ Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragmen
    }
    ```
 
-1. Voer de vraag uit en neem waar dat het enige resultaat voor het **Stacey Roswells** fragment is teruggekeerd.
+1. Voer de vraag uit en neem waar dat het enige resultaat voor **Stacey Roswells** fragment is teruggekeerd.
 
    In de vorige oefening, gebruikte u een filter om een lijst van resultaten te versmallen. U kunt een vergelijkbare syntaxis gebruiken om per pad te filteren, maar de bovenstaande syntaxis heeft de voorkeur vanwege de prestaties.
 
