@@ -2,15 +2,17 @@
 title: De CI/CD-pijpleiding gebruiken in Adobe Cloud Manager
 description: Adobe Cloud Manager verstrekt een eenvoudige, maar flexibele zelfbediening CI/CD pijpleiding die AEM projectteams toestaat om code aan alle AEM milieu's snel, veilig en constant op te stellen die in AMS worden ontvangen. In deze videoreeks wordt het instellen en uitvoeren van de CI/CD Pipeline van Cloud Manager in zowel mislukkings- als successcenario's besproken.
 sub-product: cloudbeheer, stichting
-feature: pipelines, quality-gates
 topics: cicd, performance, best-practices, development, governance
 doc-type: feature video
 activity: understand
 audience: all
+topic: Architectuur
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
