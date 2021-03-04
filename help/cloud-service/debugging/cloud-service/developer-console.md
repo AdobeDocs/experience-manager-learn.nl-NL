@@ -1,7 +1,7 @@
 ---
 title: Developer Console
 description: AEM als Cloud Service verstrekt een Console van de Ontwikkelaar voor elk milieu dat diverse details van de lopende AEM dienst blootstelt die in het zuiveren nuttig zijn.
-feature: null
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 1af3661e5c18206d58d339d51d5189834e843023
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -40,7 +43,7 @@ Om tot de Console van de Ontwikkelaar toegang te hebben en te gebruiken moeten d
 
 ![Ontwikkelaarsconsole - 401 niet-geautoriseerd](./assets/developer-console/troubleshooting__401-unauthorized.png)
 
-Als een status met 401 onbevoegde fout wordt verwijderd, betekent dit dat uw gebruiker nog niet beschikt over de benodigde machtigingen in AEM als Cloud Service of dat het gebruik van de aanmeldingstokens ongeldig is of is verlopen.
+Als er een status met 401 onbevoegde fout wordt genegeerd, betekent dit dat uw gebruiker nog niet beschikt over de benodigde machtigingen in AEM als Cloud Service of dat het gebruik van de aanmeldingstokens ongeldig is of is verlopen.
 
 Het 401-probleem met onbevoegden oplossen:
 
