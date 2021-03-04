@@ -1,17 +1,13 @@
 ---
 title: Werken met multimedia en gelijktijdige ontwikkeling
-seo-title: Werken met multimedia en gelijktijdige ontwikkeling
 description: Leer over de voordelen, de uitdagingen, en de technieken om een multi-huurdersimplementatie met de Middelen van Adobe Experience Manager te beheren.
-uuid: 682093fe-ce55-4ef8-af10-99f7062f8b1b
-discoiquuid: 0dfcdf39-7423-459f-8f35-ee5b4b829f2c
-feature: connected-assets
-topics: authoring, operations, sharing, publishing
-audience: all
-doc-type: article
-activity: understand
+feature: Gekoppelde assets
 version: 6.5
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 0%
