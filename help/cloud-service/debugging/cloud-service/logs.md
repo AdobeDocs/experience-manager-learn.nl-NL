@@ -1,7 +1,7 @@
 ---
 title: Logboeken
 description: De logboeken handelen als frontline voor het zuiveren AEM toepassingen in AEM als Cloud Service, maar zijn afhankelijk van het adequate registreren in de opgestelde AEM toepassing.
-feature: null
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 7fd232d6821f91c342dd04fcdd04b9b505cb7250
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '995'
 ht-degree: 1%
 
 ---
@@ -66,11 +69,11 @@ Met Adobe Cloud Manager kunt u logbestanden overdag downloaden via de handeling 
 
 ![Cloud Manager - Logbestanden downloaden](./assets/logs/download-logs.png)
 
-Deze logboeken kunnen worden gedownload en geïnspecteerd via alle programma&#39;s voor loganalyse.
+Deze logbestanden kunnen worden gedownload en geïnspecteerd met behulp van alle programma&#39;s voor loganalyse.
 
-## Adobe I/O CLI met plug-in Cloud Manager{#aio}
+## Adobe I/O CLI met insteekmodule Cloud Manager{#aio}
 
-Adobe Cloud Manager ondersteunt toegang tot AEM als een Cloud Service logboeken via de [Adobe I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager-plug-in voor de Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+Adobe Cloud Manager ondersteunt toegang tot AEM als een Cloud Service logt via de [Adobe I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager-plug-in voor de Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 Stel eerst [de Adobe I/O in met de plug-in van Cloud Manager](../../local-development-environment/development-tools.md#aio-cli).
 
@@ -123,7 +126,7 @@ $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
 
 ### Logbestanden downloaden{#aio-cli-download-logs}
 
-Adobe I/O CLI biedt de mogelijkheid om logbestanden van AEM als Cloud Service te downloaden met de opdracht [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)). Dit levert hetzelfde eindresultaat op als het downloaden van de logbestanden vanuit de webinterface van Cloud Manager, waarbij het verschil is dat de opdracht `download-logs` de logbestanden over dagen consolideert op basis van het aantal dagen dat logbestanden worden aangevraagd.
+Adobe I/O CLI verstrekt de capaciteit om logboeken van AEM als Cloud Service te downloaden gebruikend [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)) bevel. Dit levert hetzelfde eindresultaat op als het downloaden van de logbestanden vanuit de webinterface van Cloud Manager, waarbij het verschil is dat de opdracht `download-logs` de logbestanden over dagen consolideert op basis van het aantal dagen dat logbestanden worden aangevraagd.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
@@ -173,7 +176,7 @@ Het plaatsen van het meest aangewezen logboekniveau voor elk milieutype is met A
 
 ### Omgevingsspecifieke variabelen om Java-logniveaus in te stellen
 
-Als alternatief voor het instellen van statische bekende Java-logniveaus voor elke omgeving kunt u AEM gebruiken als omgevingsspecifieke variabelen [a1/> van de Cloud Service om logniveaus te bepalen, zodat de waarden dynamisch kunnen worden gewijzigd via de [Adobe I/O CLI met Cloud Manager-insteekmodule](#aio-cli).](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values)
+Als alternatief voor het instellen van statische bekende Java-logniveaus voor elke omgeving kunt u AEM gebruiken als omgevingsspecifieke variabelen [a1/> van de Cloud Service om logniveaus te bepalen, zodat de waarden dynamisch kunnen worden gewijzigd via de [Adobe I/O CLI met de insteekmodule van Cloud Manager](#aio-cli).](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values)
 
 Dit vereist het bijwerken van de registrerenconfiguraties OSGi om de milieu specifieke veranderlijke placeholders te gebruiken. [De standaardwaarden ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) voor logniveaus moeten worden ingesteld volgens de aanbevelingen [ van ](#log-levels)Adobe. Bijvoorbeeld:
 
@@ -189,7 +192,7 @@ Dit vereist het bijwerken van de registrerenconfiguraties OSGi om de milieu spec
 Deze aanpak heeft nadelen waarmee rekening moet worden gehouden:
 
 + [Er is een beperkt aantal omgevingsvariabelen toegestaan](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables) en het maken van een variabele voor het beheren van het logniveau maakt gebruik van deze variabelen.
-+ Omgevingsvariabelen kunnen alleen met programmacode worden beheerd via [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) of [Cloud Manager HTTP API&#39;s](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
++ Omgevingsvariabelen kunnen alleen via [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) of [Cloud Manager HTTP API&#39;s](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties) via programmacode worden beheerd.
 + Wijzigingen in omgevingsvariabelen moeten handmatig worden hersteld met een ondersteund gereedschap. Het vergeten om een hoog verkeersmilieu, zoals Productie, aan een minder uitgebreid logboekniveau terug te stellen kan de logboeken overstromen en AEM prestaties beïnvloeden.
 
 _Omgevingsspecifieke variabelen werken niet voor Apache-webserver- of Dispatcher-logconfiguraties, omdat deze niet via de OSGi-configuratie worden geconfigureerd._
