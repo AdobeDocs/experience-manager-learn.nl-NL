@@ -1,7 +1,7 @@
 ---
 title: Creeer een project van de Asset compute voor de rekbaarheid van de Asset compute
-description: De projecten van de asset compute zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service geïntegreerd.
-feature: asset-compute
+description: De projecten van de asset compute zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service worden geïntegreerd.
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 23c91551673197cebeb517089e5ab6591f084846
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -32,14 +35,14 @@ Gebruik [Adobe I/O CLI Asset compute stop-in](../set-up/development-environment.
 
 1. Navigeer vanaf de opdrachtregel naar de map waarin u het project wilt plaatsen.
 1. Van de bevellijn, voer `aio app init` uit om met de interactieve projectgeneratie CLI te beginnen.
-   + Met deze opdracht wordt mogelijk een webbrowser weergegeven die vraagt om verificatie naar Adobe I/O. Als het, uw geloofsbrieven van de Adobe verbonden aan [vereiste de diensten en producten van de Adobe ](../set-up/accounts-and-services.md) verstrekt. Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Dit bevel kan browser van het Web kweken die voor authentificatie aan Adobe I/O ertoe aanzetten. Als het, uw geloofsbrieven van de Adobe verbonden aan [vereiste de diensten en producten van de Adobe ](../set-up/accounts-and-services.md) verstrekt. Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Org selecteren__
    + Selecteer de Adobe Org die als Cloud Service heeft AEM, Project Firefly wordt geregistreerd met
 1. __Project selecteren__
    + Zoek en selecteer het project. Dit is de [Titel van project](../set-up/firefly.md) gecreeerd van het Firefly projectmalplaatje, in dit geval `WKND AEM Asset Compute`
 1. __Werkruimte selecteren__
    + De werkruimte `Development` selecteren
-1. __Welke Adobe I/O App-functies wilt u inschakelen voor dit project? Selecteer de onderdelen die u wilt opnemen__
+1. __Welke functies van Adobe I/O App wilt u voor dit project toelaten? Selecteer de onderdelen die u wilt opnemen__
    + Selecteer `Actions: Deploy runtime actions`
    + Gebruik de pijltoetsen om de selectie op te heffen en ruimte om de selectie ongedaan te maken/te selecteren en druk op Enter om de selectie te bevestigen
 1. __Selecteer het type acties dat u wilt genereren__
@@ -51,11 +54,11 @@ Gebruik [Adobe I/O CLI Asset compute stop-in](../set-up/development-environment.
 
 ## Console.json genereren
 
-Voor het hulpprogramma voor ontwikkelaars is een bestand met de naam `console.json` vereist dat de vereiste gegevens bevat om verbinding te maken met Adobe I/O. Dit bestand wordt gedownload vanaf de Adobe I/O-console.
+Voor het hulpprogramma voor ontwikkelaars is een bestand met de naam `console.json` vereist dat de gegevens bevat die nodig zijn om verbinding te maken met Adobe I/O. Dit bestand wordt gedownload vanaf de Adobe I/O-console.
 
-1. Open het [Adobe I/O](https://console.adobe.io)-project van de Asset compute worker
+1. Open het [Adobe I/O ](https://console.adobe.io) project van de Asset compute worker
 1. Selecteer de projectwerkruimte waar u de `console.json`-referenties voor wilt downloaden. Selecteer in dit geval `Development`
-1. Ga naar de basis van het Adobe I/O-project en tik __Alles downloaden__ in de rechterbovenhoek.
+1. Ga naar de wortel van het project van de Adobe I/O en tik __Download allen__ in de hoger-juiste hoek.
 1. Een bestand wordt gedownload als een `.json`-bestand dat vooraf met het project en de werkruimte is ingesteld, bijvoorbeeld: `wkndAemAssetCompute-81368-Development.json`
 1. U kunt
    + Wijzig de naam van het bestand in `config.json` en verplaats het bestand in de hoofdmap van het Asset compute-arbeidersproject. Dit is de aanpak in deze zelfstudie.
