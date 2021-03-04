@@ -4,15 +4,18 @@ description: Het gereedschap Inhoud overbrengen is de aanbevolen manier om inhou
 version: cloud-service
 doc-type: technical-video
 topics: migration
-feature: content-transfer-tool
+feature: Migratie
 activity: develop
 audience: developer
 kt: 5352
 thumbnail: kt-5352.jpg
+topic: Migratie
+role: Architect, ontwikkelaar
+level: Begin
 translation-type: tm+mt
-source-git-commit: 44734103ede53f559bbdfe848f5ca308ff4e128b
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '87'
 ht-degree: 2%
 
 ---
