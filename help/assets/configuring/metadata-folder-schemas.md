@@ -2,18 +2,17 @@
 title: Metagegevensmappenschema's
 description: Met mappenschema's voor metagegevens kunnen gebruikers metagegevens die aan elementmappen zijn gekoppeld, zelf beheren en controleren in plaats van rechtstreeks op elementen.
 sub-product: elementen
-feature: metadata-schemas
-topics: configuring, content-architecture, metadata
-audience: administrator, implementer
-doc-type: feature video
-activity: use
+feature: Metagegevens
 version: cloud-service
 kt: 4983
 thumbnail: 34071.jpg
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: a2772bd8dd65e8bcb4caf660709f6aceb6e28eb4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '53'
 ht-degree: 0%
 
 ---
