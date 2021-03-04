@@ -1,7 +1,7 @@
 ---
 title: asset compute microservices uitbreidbaarheid voor AEM als Cloud Service
 description: Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die een elementuitvoering maakt door het oorspronkelijke element aan een cirkel uit te snijden en configureerbare contrast en helderheid toepast. Hoewel de worker zelf een basis is, wordt deze zelfstudie gebruikt om te verkennen hoe een aangepaste Asset compute-worker voor gebruik met AEM als Cloud Service kan worden gemaakt, ontwikkeld en geïmplementeerd.
-feature: asset-compute
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -72,7 +75,7 @@ De projecten van de asset compute, die één of meerdere arbeiders van de Asset 
 
 ### Omgevingsvariabelen configureren
 
-Omgevingsvariabelen worden in het `.env`-bestand onderhouden voor lokale ontwikkeling en worden gebruikt om Adobe I/O-referenties en gegevens voor cloudopslag te verstrekken die vereist zijn voor lokale ontwikkeling.
+Omgevingsvariabelen worden in het `.env`-bestand onderhouden voor lokale ontwikkeling en worden gebruikt om gegevens over Adobe I/O en cloudopslag te verstrekken die vereist zijn voor lokale ontwikkeling.
 
 + [Omgevingsvariabelen configureren](./develop/environment-variables.md)
 
