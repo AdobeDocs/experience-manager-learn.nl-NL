@@ -3,16 +3,19 @@ title: Interactief communicatiedocument genereren voor afdrukkanaal met behulp v
 seo-title: Interactief communicatiedocument genereren voor afdrukkanaal met behulp van controlemap
 description: Gecontroleerde map gebruiken om kanaaldocumenten voor afdrukken te genereren
 seo-description: Gecontroleerde map gebruiken om kanaaldocumenten voor afdrukken te genereren
-feature: interactieve communicatie
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Ontwikkeling
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
