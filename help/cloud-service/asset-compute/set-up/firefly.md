@@ -1,7 +1,7 @@
 ---
 title: Het Project van de Adobe van de opstelling brandt voor Asset compute rekbaarheid
 description: De projecten van de asset compute zijn speciaal bepaalde projecten van het Project van de Adobe Vuurwerk, en als dusdanig, vereisen toegang tot het Project van Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
-feature: asset-compute
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -63,8 +66,8 @@ De geloofsbrieven van dit Adobe I/O project worden gebruikt door het lokale [Hul
 
 ![Accountgegevens van Adobe Developer Service](./assets/firefly/service-account.png)
 
-1. Zorg ervoor dat in het Adobe I/O Project Firefly-project de werkruimte `Development` is geselecteerd
+1. Van het project van het Project van de Adobe I/O Vuurwerk, zorg ervoor de `Development` werkruimte wordt geselecteerd
 1. Tik op __Serviceaccount (JWT)__ onder __Referenties__
-1. De weergegeven Adobe I/O-referenties bekijken
+1. De weergegeven Adobe I/O Credentials controleren
    + De __openbare sleutel__ die onderaan wordt vermeld heeft het __private.key__ tegenhanger in `config.zip` gedownload toen __Asset compute API__ aan dit project werd toegevoegd.
-      + Als de persoonlijke sleutel verloren gaat of gecompromitteerd, kan de passende openbare sleutel worden verwijderd, en een nieuw zeer belangrijk paar dat in Adobe I/O wordt geproduceerd of aan het gebruik van deze interface wordt geupload.
+      + Als de persoonlijke sleutel verloren gaat of gecompromitteerd, kan de passende openbare sleutel worden verwijderd, en een nieuw zeer belangrijk paar dat binnen wordt geproduceerd of aan Adobe I/O wordt geupload gebruikend deze interface.
