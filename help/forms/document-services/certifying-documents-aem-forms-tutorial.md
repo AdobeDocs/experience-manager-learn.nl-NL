@@ -4,19 +4,16 @@ seo-title: Document certificeren in AEM Forms
 description: PDF-documenten certificeren in AEM Forms met de documentatieservice
 seo-description: PDF-documenten certificeren in AEM Forms met de documentatieservice
 uuid: ecb1f9b6-bbb3-43a3-a0e0-4c04411acc9f
-feature: Documentbeveiliging
+feature: documentbeveiliging
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
-role: Developer
-level: Intermediair
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
