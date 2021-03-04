@@ -2,7 +2,7 @@
 title: Aangepast formulier configureren om AEM workflow te activeren
 description: Betalingsopties configureren bij het activeren van AEM workflow bij het verzenden van formulieren
 sub-product: formulieren
-feature: workflow
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,11 +10,14 @@ activity: setup
 version: 6.4,6.5
 kt: 5407
 thumbnail: 40258.jpg
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 0%
+source-wordcount: '170'
+ht-degree: 2%
 
 ---
 
