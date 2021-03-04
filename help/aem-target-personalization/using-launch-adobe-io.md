@@ -1,12 +1,16 @@
 ---
-title: Adobe Experience Manager integreren met Adobe Target met behulp van Experience Platform Launch en Adobe I/O
-seo-title: Adobe Experience Manager integreren met Adobe Target met behulp van Experience Platform Launch en Adobe I/O
+title: Adobe Experience Manager integreren met Adobe Target door middel van Experience Platform Launch en Adobe I/O
+seo-title: Adobe Experience Manager integreren met Adobe Target door middel van Experience Platform Launch en Adobe I/O
 description: Stap voor stap door hoe u Adobe Experience Manager met Adobe Target kunt integreren met behulp van Experience Platform Launch en Adobe I/O
 seo-description: Stap voor stap door hoe u Adobe Experience Manager met Adobe Target kunt integreren met behulp van Experience Platform Launch en Adobe I/O
+feature: Ervaringsfragmenten
+topic: Personalisatie
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 1209064fd81238d4611369b8e5b517365fc302e3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1103'
 ht-degree: 1%
 
 ---
@@ -22,7 +26,7 @@ ht-degree: 1%
    * Experience Cloud voorzien van de volgende oplossingen
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Adobe I/O Console](https://console.adobe.io)
+      * [Adobe I/O-console](https://console.adobe.io)
 
       >[!NOTE]
       >U moet over de juiste machtigingen beschikken om in Launch omgevingen te ontwikkelen, goed te keuren, te publiceren, te beheren en te beheren. Als u geen van deze stappen kunt uitvoeren omdat de gebruikersinterfaceopties niet beschikbaar zijn, vraagt u de beheerder van de Experience Cloud om toegang. Voor meer informatie over de toestemmingen van de Lancering, [zie de documentatie](https://docs.adobelaunch.com/administration/user-permissions).
@@ -36,7 +40,7 @@ ht-degree: 1%
 
 Voor deze integratie, moet het volgende publiek worden betrokken, en om sommige taken uit te voeren, zou u administratieve toegang kunnen nodig hebben.
 
-* Developer
+* Ontwikkelaar
 * AEM Admin
 * Experience Cloud-beheerder
 
