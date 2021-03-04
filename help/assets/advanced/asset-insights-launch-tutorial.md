@@ -1,18 +1,15 @@
 ---
 title: Asset Insights instellen met AEM Assets en Adobe Launch
 description: In deze videoreeks van 5 delen, lopen wij door de opstelling en de configuratie van de Inzichten van Activa voor Experience Manager die via Launch by Adobe wordt opgesteld.
-contentOwner: selvaraj
-feature: asset-insights
-topics: integrations, development, metadata
-audience: developer, architect, administrator
-doc-type: article
-activity: implement
+feature: 'Asset Insights '
 version: 6.3, 6.4, 6.5
-redirect-form: https://docs.adobe.com/content/help/en/experience-manager-learn/assets/analytics/asset-insights-launch-tutorial-setup.html
+topic: Integrations
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -86,7 +83,7 @@ Adobe Analytics-extensie toevoegen, regels voor het laden van pagina&#39;s maken
 >[!VIDEO](https://video.tv.adobe.com/v/25946/?quality=12&learn=on)
 
 >[!NOTE]
-Zorg ervoor dat u al uw wijzigingen van de auteurinstantie naar de publicatieinstantie dupliceert.
+Zorg ervoor dat u al uw wijzigingen van de auteur naar de publicatie-instantie dupliceert.
 
 ### Artikel 1: Paginanummering (pagetracker.js) {#rule-page-tracker-pagetracker-js}
 
