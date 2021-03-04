@@ -1,7 +1,7 @@
 ---
 title: Het eerste formulier maken om het proces te activeren
 description: Maak een eerste formulier om het e-mailbericht te activeren en het ondertekeningsproces te starten.
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6892
 thumbnail: 6892.jpg
+topic: Ontwikkeling
+role: Zakelijke praktiserer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 3%
+source-wordcount: '174'
+ht-degree: 4%
 
 ---
 
