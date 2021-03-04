@@ -1,47 +1,42 @@
 ---
-title: Dynamische media 360-video's en aangepaste videominiatuur gebruiken met AEM Assets
-seo-title: Dynamische media 360-video's en aangepaste videominiatuur gebruiken met AEM Assets
-description: Dynamische media Viewer-verbeteringen in AEM 6.5 omvatten de toevoeging van ondersteuning voor 360 videorendering, 360 mediasviewers (video360Social en video360VR) en de mogelijkheid om aangepaste videominiaturen te selecteren.
-seo-description: Dynamische media Viewer-verbeteringen in AEM 6.5 omvatten de toevoeging van ondersteuning voor 360 videorendering, 360 mediasviewers (video360Social en video360VR) en de mogelijkheid om aangepaste videominiaturen te selecteren.
-uuid: 44b91c22-635c-48c2-af27-49bdbfb61639
-discoiquuid: 67d5e0f2-3fde-4ea7-9e53-4fc0cf8b9f2a
+title: Dynamic Media 360-video's en aangepaste videominiatuur gebruiken voor AEM Assets
+description: De verbeteringen van de Dynamic Media Viewer in AEM 6.5 omvatten de toevoeging van ondersteuning voor 360 videorendering, 360 mediasviewers (video360Social en video360VR) en de mogelijkheid om aangepaste videominiaturen te selecteren.
 sub-product: dynamic-media
-feature: video-profiles, viewer-presets
-topics: images, videos, renditions, authoring, integrations, publishing, metadata
-doc-type: feature video
-audience: all
-activity: use
+feature: Videoprofielen
 version: 6.3, 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '402'
 ht-degree: 2%
 
 ---
 
 
-# Dynamische media 360-video&#39;s en aangepaste videominiatuur gebruiken met AEM Assets
+# Dynamic Media 360-video&#39;s en aangepaste videominiatuur gebruiken voor AEM Assets
 
-Dynamische media Viewer-verbeteringen in AEM 6.5 omvatten de toevoeging van ondersteuning voor 360 videorendering, 360 mediasviewers (video360Social en video360VR) en de mogelijkheid om aangepaste videominiaturen te selecteren.
+De verbeteringen van de Dynamic Media Viewer in AEM 6.5 omvatten de toevoeging van ondersteuning voor 360 videorendering, 360 mediasviewers (video360Social en video360VR) en de mogelijkheid om aangepaste videominiaturen te selecteren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26391?quality=9&learn=on)
 
 >[!NOTE]
 >
->De video veronderstelt dat uw AEM instantie op Dynamische Media S7 wijze loopt.  [Hier](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html) vindt u instructies voor het instellen van AEM met Dynamic Media. Wanneer u een video uploadt, door gebrek, verwerkt Dynamische Media het lengte als 360 video, als het een aspectverhouding van 2:1 heeft. De verhouding tussen breedte en hoogte is dus 2:1.
+>De video veronderstelt dat uw AEM instantie op Dynamic Media S7 wijze loopt.  [Hier](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html) vindt u instructies voor het instellen van AEM met Dynamic Media. Wanneer u een video uploadt, verwerkt Dynamic Media het beeldmateriaal standaard als een 360-video, als de hoogte-breedteverhouding 2:1 is. De verhouding tussen breedte en hoogte is dus 2:1.
 
 >[!NOTE]
 >
->Dynamische media 360-mediacomponenten ondersteunen alleen 360 video&#39;s.
+>Dynamic Media 360 Media-componenten bieden alleen ondersteuning voor 360 video&#39;s.
 
-## Dynamische media 360-video&#39;s
+## Dynamic Media 360-video&#39;s
 
 Video&#39;s van 360 graden, ook wel sferische video&#39;s genoemd, zijn video-opnamen waarbij een weergave in elke richting tegelijkertijd wordt opgenomen en die met een omnidirectionele camera of verzameling camera&#39;s zijn opgenomen. Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de weergaverichting en het afspelen op mobiele apparaten maakt doorgaans gebruik van ingebouwde gyroscoop-besturing.  Het laat u zich buiten de grenzen van enige fotografie uitbreiden. Marketers kunnen gebruikers een aantrekkelijke ervaring bieden met behulp van 360 video&#39;s.  Laten we beginnen. Het criterium van de beeldverhouding panoramische kan in de configuratie van DMS7 van het bedrijf worden gewijzigd door het dubbele bezit s7PanoramicAR bij /conf/global/settings/cloudconfigs/dmscene7/jcr:content te specificeren.
 
-## Dynamische media 360-video&#39;s
+## Dynamic Media 360-video&#39;s
 
-Dynamische mediavideo ondersteunt nu de mogelijkheid om een aangepaste miniatuur voor uw video te selecteren. Een gebruiker kan een bestaand element selecteren in AEM Assets of een videoframe selecteren als miniatuur.
+Dynamic Media-video ondersteunt nu de mogelijkheid om een aangepaste miniatuur voor uw video te selecteren. Een gebruiker kan een bestaand element selecteren in AEM Assets of een videoframe selecteren als miniatuur.
 
 ## Dynamische 360 mediaverviewers
 
@@ -53,9 +48,9 @@ Dynamische mediavideo ondersteunt nu de mogelijkheid om een aangepaste miniatuur
       <td>**Video360VR-viewer**</td>
    </tr>
    <tr>
-      <td>Dynamische modus voor mediatoets</td>
-      <td>Alleen dynamische media Scene7-modus</td>
-      <td>Alleen dynamische media Scene7-modus<br>
+      <td>Dynamic Media Run-modus</td>
+      <td>Alleen Dynamic Media Scene7-modus</td>
+      <td>Alleen Dynamic Media Scene7-modus<br>
          <br>
       </td>
    </tr>
@@ -109,4 +104,4 @@ Dynamische mediavideo ondersteunt nu de mogelijkheid om een aangepaste miniatuur
 
 ## Aanvullende bronnen{#additional-resources}
 
-[Dynamische media configureren in Scene7-modus](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Dynamic Media configureren in de Scene7-modus](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
