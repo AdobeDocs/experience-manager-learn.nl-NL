@@ -3,18 +3,15 @@ title: Aanbevolen procedures voor Java API in AEM
 description: AEM is gebaseerd op een rijke open-source softwarestack die veel Java API's beschikbaar maakt voor gebruik tijdens de ontwikkeling. In dit artikel worden de belangrijkste API's besproken en wordt aangegeven wanneer en waarom deze moeten worden gebruikt.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: stichting, middelen, sites
-feature: API's
+feature: null
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
-topic: Ontwikkeling
-role: Developer
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
@@ -131,7 +128,7 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 * Asynchrone bouwstenen voor werkverwerking
 
    * [Gebeurtenis- en taakhandlers](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)
-   * [Planner](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
+   * [Planningen](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
    * [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html)
 
 * [Servicegebruikers](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
