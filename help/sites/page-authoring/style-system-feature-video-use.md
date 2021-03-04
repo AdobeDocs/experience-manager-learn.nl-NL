@@ -3,7 +3,7 @@ title: Het Stijlsysteem gebruiken met AEM Sites
 seo-title: Het stijlsysteem gebruiken met Adobe Experience Manager, AEM Sites
 description: Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
 seo-description: Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
-feature: style-system
+feature: Stijlsysteem
 topics: authoring, front-end-development
 audience: all
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: use
 version: cloud-service
 kt: 974
 thumbnail: 21750.jpg
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: fc456c868bdfe2fbb71387f36432a134fbff7dbb
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 0%
+source-wordcount: '263'
+ht-degree: 1%
 
 ---
 
