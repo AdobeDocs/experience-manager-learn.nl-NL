@@ -1,7 +1,7 @@
 ---
 title: Een lokale ontwikkelomgeving instellen voor uitbreidbaarheid van de Asset compute
 description: Het ontwikkelen van de arbeiders van de Asset compute, die toepassingen Node.js JavaScript zijn, vereist specifieke ontwikkelingshulpmiddelen die van traditionele AEM ontwikkeling verschillen, die zich van Node.js en diverse npm modules aan de Desktop van de Docker en Code van Microsoft Visual Studio uitstrekken.
-feature: asset-compute
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -37,7 +40,7 @@ Hier volgt een korte set-upinstructies. Nadere bijzonderheden over deze ontwikke
 
 1. [Visual Studio-code installeren](https://code.visualstudio.com/download)
 1. [Node.js 10+ installeren](../../local-development-environment/development-tools.md#node-js)
-1. Installeer de vereiste npm-modules en Adobe I/O CLI-plug-ins vanaf de opdrachtregel:
+1. Installeer de vereiste npm modules en Adobe I/O CLI stop-ins van de bevellijn:
 
    ```
    $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
@@ -75,13 +78,13 @@ De arbeiders van de asset compute zijn [Node.js](https://nodejs.org/)-Gebaseerd,
 
 ## Adobe I/O CLI{#aio} installeren
 
-[Installeer Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli), of  ____ aiois een bevel-lijn (CLI) npm module die het gebruik van en de interactie met de technologieën van Adobe I/O vergemakkelijkt, en voor zowel produceert als plaatselijk ontwikkelt de arbeiders van de aangepaste Asset compute gebruikt.
+[Installeer Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli), of  ____ aiois een bevel-lijn (CLI) npm module die gebruik van en interactie met de technologieën van Adobe I/O vergemakkelijkt, en voor zowel produceert als plaatselijk ontwikkelt de arbeiders van de aangepaste Asset compute gebruikt.
 
 ```
 $ npm install -g @adobe/aio-cli
 ```
 
-## De Adobe I/O CLI Asset compute-insteekmodule installeren{#aio-asset-compute}
+## De Adobe I/O CLI-Asset compute-insteekmodule installeren{#aio-asset-compute}
 
 De [Adobe I/O CLI Asset compute plugin](https://github.com/adobe/aio-cli-plugin-asset-compute)
 
