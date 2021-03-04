@@ -1,7 +1,7 @@
 ---
 title: Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten van de Kern
 description: De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om gegevens over een bezoekerservaring op een webpagina te verzamelen en op te slaan en dan het gemakkelijk te maken om tot deze gegevens toegang te hebben. De gegevenslaag van de Cliënt van Adobe is platform agnostic, maar is volledig geïntegreerd in de Componenten van de Kern voor gebruik met AEM.
-feature: core-component
+feature: kerncomponent
 topics: integrations
 audience: developer
 doc-type: feature video
@@ -9,10 +9,13 @@ activity: use
 version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
+topic: Integrations
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -173,7 +176,7 @@ Het is aan te raden aangepaste code te activeren op basis van een gebeurtenis ui
 
 ## Volgende stappen
 
-Bekijk de volgende zelfstudie om te leren hoe u de gebeurtenisgestuurde Adobe Client Data-laag kunt gebruiken om paginagegevens te verzamelen en naar Adobe Analytics[ te verzenden.](../analytics/collect-data-analytics.md)
+Bekijk de volgende zelfstudie om te leren hoe u de gebeurtenisgestuurde Adobe Client Data-laag kunt gebruiken om paginagegevens te verzamelen en naar Adobe Analytics](../analytics/collect-data-analytics.md) te verzenden.[
 
 Of leer hoe te om [de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten ](./data-layer-customize.md) aan te passen
 
