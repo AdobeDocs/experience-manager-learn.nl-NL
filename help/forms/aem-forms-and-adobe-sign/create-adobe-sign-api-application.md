@@ -1,21 +1,18 @@
 ---
 title: Adobe Sign API-toepassing maken
 description: Met de Adobe Sign API-toepassing kunt u AEM Forms integreren met Adobe Sign
-feature: '"Adaptive Forms,Adobe Sign"'
+feature: adaptieve vormen
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 kt: 6032
 thumbnail: 38178.jpg
-topic: Ontwikkeling
-role: Beheerder
-level: Begin
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 1%
+source-wordcount: '83'
+ht-degree: 0%
 
 ---
 
