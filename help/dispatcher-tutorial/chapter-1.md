@@ -1,12 +1,10 @@
 ---
 title: Hoofdstuk 1 - Lesbestanden instellen en downloaden
-seo-title: Aan de slag met AEM Content Services - Hoofdstuk 1 - Lesbestanden instellen
 description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
-seo-description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
 translation-type: tm+mt
-source-git-commit: 52824c178ddf930df134608ecb01bb661d6c514c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '17502'
+source-wordcount: '17476'
 ht-degree: 0%
 
 ---
@@ -221,7 +219,7 @@ Als u het omgekeerde doet, eerst om `home.html/suffix.html` te verzoeken dan `su
 
 <br> 
 
-Het resultaat van wat in cache wordt geplaatst, is volledig willekeurig en afhankelijk van de volgorde van de binnenkomende aanvragen. Wat het nog lastiger maakt, is het feit dat je meestal meer dan één verzender hebt. En de prestaties, cache hit-rate en het gedrag kunnen per Dispatcher verschillen. Als u wilt weten waarom uw website niet reageert, moet u zeker weten dat u de juiste Dispatcher bekijkt met de ongelukkige cachevolgorde. Als je kijkt naar de Dispatcher die - gelukkig - een gunstiger aanvraagpatroon had, dan ben je verloren bij het zoeken naar het probleem.
+Het resultaat van wat in cache wordt geplaatst, is volledig willekeurig en afhankelijk van de volgorde van de binnenkomende aanvragen. Wat het nog lastiger maakt, is het feit dat je meestal meer dan één verzender hebt. En de prestaties, cache hit-rate en het gedrag kunnen per Dispatcher verschillen. Als u wilt weten waarom uw website niet reageert, moet u zeker weten dat u de juiste Dispatcher bekijkt met de ongelukkige cachevolgorde. Als je kijkt naar de Dispatcher die - gelukkig - een gunstiger aanvraagpatroon had, zal je verloren gaan bij het zoeken naar het probleem.
 
 #### Conflicterende URL&#39;s voorkomen
 
@@ -301,11 +299,11 @@ invalidate-path:  /content/dam/path/to/image
 <no body>
 ```
 
-Ongeldigmaking is zo eenvoudig: Een eenvoudig verzoek van de GET naar een speciale URL voor &quot;/invalidate&quot; op de Dispatcher. Een HTTP-hoofdtekst is niet vereist. De &#39;payload&#39; is alleen de header &#39;invalidate-path&#39;. Merk ook op, dat invalidate-path in de kopbal de middel is die AEM weet - en niet het dossier of de dossiers de Dispatcher in het voorgeheugen heeft opgeslagen. AEM weet alleen over middelen. Extensies, kiezers en achtervoegsels worden tijdens runtime gebruikt wanneer een resource wordt aangevraagd. AEM voert geen boekhouding over welke selecteurs op een middel zijn gebruikt, zodat is de middelweg al het weet zeker wanneer het activeren van een middel.
+Ongeldigmaking is zo eenvoudig: Een eenvoudig verzoek van de GET naar een speciale URL voor &quot;/invalidate&quot; op de Dispatcher. Een HTTP-hoofdtekst is niet vereist. De &#39;payload&#39; is alleen de header &#39;invalidate-path&#39;. Merk ook op, dat invalidate-path in de kopbal de middel is die AEM weet - en niet het dossier of de dossiers de Dispatcher in het voorgeheugen heeft opgeslagen. AEM weet alleen over middelen. Extensies, kiezers en achtervoegsels worden tijdens runtime gebruikt wanneer een resource wordt aangevraagd. AEM voert geen boekhouding over welke selecteurs op een middel zijn gebruikt, zodat is de middelweg allen het weet zeker wanneer het activeren van een middel.
 
 Dat is in ons geval voldoende. Als een middel is veranderd, kunnen wij veilig veronderstellen, dat alle vertoningen van dat middel ook zijn veranderd. In ons voorbeeld wordt een nieuwe miniatuur weergegeven als de afbeelding is gewijzigd.
 
-De Dispatcher kan de bron veilig verwijderen met alle uitvoeringen die in de cache zijn opgeslagen. Het zal iets doen als:
+De Dispatcher kan de bron veilig verwijderen met alle uitvoeringen die in het cachegeheugen zijn opgeslagen. Het zal iets doen als:
 
 `$ rm /content/dam/path/to/image.*`
 
@@ -380,7 +378,7 @@ Maar nogmaals, hoe kan het zijn, dat het weggooien en opnieuw renderen van honde
 
 Er zijn twee belangrijke redenen:
 
-1. Op een gemiddelde website wordt vaak slechts een kleine subset van de pagina&#39;s opgevraagd. Zelfs als u alle gerenderde inhoud weggooit, wordt er slechts een paar dozijn inhoud direct daarna aangevraagd. De weergave van de lange staart van pagina&#39;s kan worden verdeeld over een tijdsverloop, wanneer deze daadwerkelijk worden aangevraagd. De belasting bij het weergeven van pagina&#39;s is dus niet zo hoog als u zou verwachten. Natuurlijk zijn er altijd uitzonderingen... wij zullen sommige trucs bespreken hoe te om gelijkelijk verdeelde lading op grotere websites met lege geheime voorgeheugens van de Verzender te behandelen, later.
+1. Op een gemiddelde website wordt vaak slechts een kleine subset van de pagina&#39;s opgevraagd. Zelfs als u alle gerenderde inhoud weggooit, wordt er slechts een paar dozijn inhoud direct daarna aangevraagd. De weergave van de lange staart van pagina&#39;s kan worden verdeeld over een tijdsverloop, wanneer deze daadwerkelijk worden aangevraagd. De belasting bij het weergeven van pagina&#39;s is dus niet zo hoog als u zou verwachten. Natuurlijk zijn er altijd uitzonderingen... wij zullen enkele trucs bespreken hoe te om gelijkelijk verdeelde lading op grotere websites met lege geheime voorgeheugens van de Verzender te behandelen, later.
 
 2. Alle pagina&#39;s zijn toch verbonden door de hoofdnavigatie. Dus bijna alle pagina&#39;s zijn uiteindelijk van elkaar afhankelijk. Dit betekent dat zelfs de slimste afhankelijkheidscontrole zal ontdekken wat wij reeds weten: Als een van de pagina&#39;s verandert, moet u alle andere pagina&#39;s ongeldig maken.
 
@@ -905,7 +903,7 @@ Hierdoor wordt de cache opnieuw overgeslagen en wordt het laden op het publicati
 
 #### Filteren van ongeldige verzoeken bij gebruik van kiezers
 
-Het verkleinen van het aantal kiezers was een goed begin. Als vuistregel moet u het aantal geldige parameters altijd tot een absoluut minimum beperken. Als u dat slim doet kunt u zelfs hefboomwerking een Firewall van de Toepassing van het Web buiten AEM gebruiken een statische reeks filters zonder diepe kennis van het onderliggende AEM systeem om uw systemen te beschermen:
+Het verkleinen van het aantal kiezers was een goed begin. Als vuistregel moet u het aantal geldige parameters altijd tot een absoluut minimum beperken. Als u dat slim doet kunt u zelfs hefboomwerking een Firewall van de Toepassing van het Web buiten AEM gebruiken statische reeks filters zonder diepe kennis van het onderliggende AEM systeem om uw systemen te beschermen:
 
 `Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
 \.respi\.q-(20|40|60|80|100)\.jpg`
@@ -969,7 +967,7 @@ Nou, dat hangt ervan af. Hoe eerder hoe beter.
 
 Als u een toestel van de Firewall van de Toepassing van het Web of &quot;WAF&quot;hebt dat voor de Veiligheid van het Web wordt ontworpen, zou u absoluut hefboomwerking deze mogelijkheden moeten. Maar u zou kunnen ontdekken, dat WAF door mensen met slechts beperkte kennis van uw inhoudstoepassing wordt in werking gesteld en zij of filter geldige verzoeken of laat teveel schadelijke verzoeken overgaan. Misschien zult u weten dat de mensen die WAF in werking stellen aan een verschillende afdeling met verschillende verschuivingen en releaseschema&#39;s worden toegewezen, zou de communicatie niet zo strak kunnen zijn zoals met uw directe teamgenoten en u krijgt niet altijd de veranderingen in tijd, wat betekent dat uiteindelijk uw ontwikkeling en inhoudssnelheid lijden.
 
-Je zou kunnen eindigen met een paar algemene regels of zelfs een lijst van afgewezen personen, die volgens je gevoel van darmen zou kunnen worden aangescherpt.
+Je zou kunnen eindigen met een paar algemene regels of zelfs een lijst van gewezen personen, die volgens je gevoel van darmen zou kunnen worden aangescherpt.
 
 #### Filteren op verzending en publicatie
 
@@ -1144,7 +1142,7 @@ Geen ideale situatie. Als u deze instelt op _3_, werkt automatische ongeldigmaki
 
 Als u deze instelt op _2_, betekent dit dat u `/canada/en` en `/canada/fr` afhankelijk declareert, wat ze mogelijk niet zijn. Elke ongeldigmaking in `/en` zou dus ook `/fr` ongeldig maken. Dit leidt tot een iets lagere aanraaksnelheid voor cache, maar is nog steeds beter dan het leveren van inhoud in een verouderde cache.
 
-De beste oplossing is natuurlijk om alle wortels van sites even diep te maken:
+De beste oplossing is natuurlijk om de wortels van alle sites even diep te maken:
 
 ```
 /content/tiny-local-brand/finland/fi/home
@@ -1509,7 +1507,7 @@ En natuurlijk kun je je eigen mix van alle drie benaderingen toepassen.
 
 Als u regelmatig kort na elkaar ongeldig maakt - bijvoorbeeld door een boomactivering of uit eenvoudige noodzaak om uw inhoud up-to-date te houden, kan het gebeuren dat u de cache voortdurend leegmaakt en dat uw bezoekers bijna altijd een lege cache raken.
 
-In het onderstaande diagram ziet u een mogelijke timing bij het openen van één pagina.  Het probleem wordt natuurlijk alleen maar groter als het aantal verschillende gevraagde pagina&#39;s groter wordt.
+In het onderstaande diagram ziet u een mogelijke timing bij het openen van één pagina.  Het probleem wordt natuurlijk alleen maar erger als het aantal verschillende gevraagde pagina&#39;s groter wordt.
 
 ![Frequente activeringen die voor het grootste deel van de tijd tot een ongeldige cache leiden](assets/chapter-1/frequent-activations.png)
 
