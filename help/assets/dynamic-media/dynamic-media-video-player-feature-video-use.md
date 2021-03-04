@@ -1,21 +1,16 @@
 ---
-title: De videospeler gebruiken in AEM Dynamic Media
-seo-title: De videospeler gebruiken in AEM Dynamic Media
-description: AEM Dynamic Media-videospeler die gebruikmaakte van de Flash-runtime voor de ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple's HTTP Live Streaming video delivery protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
-seo-description: AEM Dynamic Media-videospeler die gebruikmaakte van de Flash-runtime voor de ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple's HTTP Live Streaming video delivery protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
-uuid: aac6f471-4bed-4773-890f-0dd2ceee381d
-discoiquuid: b01cc46b-ef64-4db9-b3b4-52d3f27bddf5
+title: De videospeler in AEM Dynamic Media gebruiken
+description: AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple's HTTP Live Streaming video delivery protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
 sub-product: dynamic-media
-feature: media-player, video-profiles
-topics: videos, renditions, authoring, best-practices
-doc-type: feature video
-audience: all
-activity: use
+feature: Videoprofielen
 version: 6.3, 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -23,7 +18,7 @@ ht-degree: 0%
 
 # De videospeler gebruiken in AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
-AEM Dynamic Media-videospeler die gebruikmaakte van de Flash-runtime voor de ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple&#39;s HTTP Live Streaming video delivery protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
+AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple&#39;s HTTP Live Streaming video delivery protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
