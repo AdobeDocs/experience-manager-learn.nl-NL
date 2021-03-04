@@ -1,7 +1,7 @@
 ---
 title: Rekeningen en diensten voor uitbreidbaarheid van de Asset compute instellen
 description: Voor het ontwikkelen van Asset compute-workers hebt u toegang tot accounts en services nodig, waaronder AEM als Cloud Service, Adobe Project Firefly en cloudopslag die door Microsoft of Amazon wordt geleverd.
-feature: asset-compute
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,11 +9,14 @@ audience: developer
 doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 1%
+source-wordcount: '635'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +50,7 @@ Merk op dat een lokale AEM SDK ontoereikend is om deze zelfstudie te voltooien, 
 
 ## Adobe Project firefly{#adobe-project-firefly}
 
-Het &lt;a0>Adobe Project Firefly[-framework wordt gebruikt voor het bouwen en implementeren van aangepaste acties op Adobe I/O Runtime, een Adobe zonder server. ](https://www.adobe.io/apis/experienceplatform/project-firefly.html) AEM projecten van de Asset compute zijn speciaal gebouwde Vuurwerk projecten die met AEM Assets via het Profielen van de Verwerking integreren, en de capaciteit verstrekken om activa tot binaire getallen toegang te hebben en te verwerken.
+Het [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html)-framework wordt gebruikt voor het bouwen en implementeren van aangepaste acties op Adobe I/O Runtime, een Adobe zonder server. AEM projecten van de Asset compute zijn speciaal gebouwde Vuurwerk projecten die met AEM Assets via het Profielen van de Verwerking integreren, en de capaciteit verstrekken om activa tot binaire getallen toegang te hebben en te verwerken.
 
 Meld u aan voor de voorvertoning om probleemloos toegang te krijgen tot het project.
 
