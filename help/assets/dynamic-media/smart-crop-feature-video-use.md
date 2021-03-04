@@ -1,21 +1,16 @@
 ---
-title: Smart Crop gebruiken met AEM Assets Dynamic Media
-seo-title: Smart Crop gebruiken met AEM Assets Dynamic Media
+title: Slim uitsnijden gebruiken met AEM Assets Dynamic Media
 description: Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare taken van het uitsnijden van inhoud voor een responsief ontwerp te elimineren.
-seo-description: Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare taken van het uitsnijden van inhoud voor een responsief ontwerp te elimineren.
-uuid: 2cb27aa8-644d-4b17-8ffc-f6a99f95cfd2
-discoiquuid: e4b8534c-fa64-491f-86ec-4dbe50cd6bf7
 sub-product: dynamic-media
-feature: smart-crop, image-profiles
-topics: images, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+feature: Slim uitsnijden, afbeeldingsprofielen
 version: 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -29,14 +24,14 @@ Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare tak
 
 >[!NOTE]
 >
->De video veronderstelt dat uw AEM instantie op Dynamische Media S7 wijze loopt. [Hier vindt u instructies voor het instellen van AEM met Dynamic Media.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>De video veronderstelt dat uw AEM instantie op Dynamic Media S7 wijze loopt. [Hier vindt u instructies voor het instellen van AEM met Dynamic Media.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
-## Mogelijkheid tot slim uitsnijden van Adobe Experience Manager Dynamic Media omvat
+## Adobe Experience Manager Dynamic Media Smart Crop-functionaliteit omvat
 
 * AEM Asset-beheerders kunnen eenvoudig afbeeldingsprofielen maken voor slim uitsnijden op basis van de apparaatbreedte en -hoogte.
 * Slim uitsnijden kan worden uitgevoerd voor een afzonderlijk element of voor alle elementen in een map.
 * De grootte van de bewerkingslay-out voor slim uitsnijden kan worden aangepast voor een betere zichtbaarheid.
-* De dynamische-mediacomponent van AEM-sites ondersteunt Slim uitsnijden.
+* De Dynamic Media-component van AEM-sites ondersteunt Slim uitsnijden.
 * De gepubliceerde URL voor het Smart Cropped-element is beschikbaar voor gebruik met toepassingen van derden die gehoste elementen accepteren.
 
 >[!NOTE]
