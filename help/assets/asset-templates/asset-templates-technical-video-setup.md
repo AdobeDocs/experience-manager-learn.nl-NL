@@ -1,16 +1,14 @@
 ---
 title: Asset Templates instellen met AEM Assets en InDesign Server
 description: Met Asset Templates kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van marketingbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel eenvoudiger met Asset Templates wanneer deze zijn geïntegreerd met de InDesign-server. De configuratie van de server van InDesign met AEM wordt behandeld in deze sectie.
-feature: catalogs, asset-templates
-topics: authoring, renditions, documents
-audience: developer, architect, administrator
-doc-type: technical video
-activity: setup
 version: 6.3, 6.4, 6.5
+topic: Inhoudsbeheer
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
