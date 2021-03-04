@@ -1,16 +1,19 @@
 ---
 title: Inleiding tot basissjablonen
-description: Leer over Basismalplaatjes in Dynamische Klassieke Media, op beeld-gebaseerde malplaatjes die van de Server van het Beeld worden geroepen en uit beelden bestaan en teruggegeven tekst. Een sjabloon kan dynamisch worden gewijzigd via de URL nadat de sjabloon is gepubliceerd. U leert hoe u een Photoshop PSD uploadt naar Dynamic Media Classic om deze als basis voor een sjabloon te gebruiken. Maak een eenvoudige merchandising Basic-sjabloon die bestaat uit afbeeldingslagen. Voeg tekstlagen toe en maak hen veranderlijk door het gebruik van parameters. Hiermee maakt u een sjabloon-URL en bewerkt u de afbeelding dynamisch via de webbrowser.
+description: Leer over Basismalplaatjes in de Klassieke van Dynamic Media, op beeld-gebaseerde malplaatjes die van de Server van het Beeld worden geroepen en uit beelden bestaan en teruggegeven tekst. Een sjabloon kan dynamisch worden gewijzigd via de URL nadat de sjabloon is gepubliceerd. U leert hoe u een Photoshop PSD uploadt naar Dynamic Media Classic om deze te gebruiken als basis voor een sjabloon. Maak een eenvoudige merchandising Basic-sjabloon die bestaat uit afbeeldingslagen. Voeg tekstlagen toe en maak hen veranderlijk door het gebruik van parameters. Hiermee maakt u een sjabloon-URL en bewerkt u de afbeelding dynamisch via de webbrowser.
 sub-product: dynamic-media
-feature: templates
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6301'
+source-wordcount: '6309'
 ht-degree: 0%
 
 ---
@@ -18,7 +21,7 @@ ht-degree: 0%
 
 # Inleiding tot basissjablonen {#basic-templates}
 
-In de dynamische Klassieke termen van Media, is een malplaatje een document dat dynamisch via URL kan worden veranderd nadat het malplaatje is gepubliceerd. De dynamische Klassieke Media biedt BasisMalplaatjes, op beeld-gebaseerde malplaatjes aan die van de Server van het Beeld worden geroepen en uit beelden en teruggegeven tekst bestaan.
+In Dynamic Media Classic termen is een sjabloon een document dat dynamisch via de URL kan worden gewijzigd nadat de sjabloon is gepubliceerd. Dynamic Media Classic biedt Basic Templates, op afbeeldingen gebaseerde sjablonen die worden aangeroepen vanaf de Image Server en die bestaan uit afbeeldingen en gerenderde tekst.
 
 Één van het krachtigste aspect van malplaatjes is dat zij directe integratiepunten hebben die u hen aan uw gegevensbestand laten binden. Zo kunt u niet alleen een beeld dienen en het resize, u uw gegevensbestand vragen om nieuwe of verkoop punten te vinden en die als bekleding op het beeld te maken verschijnen. U kunt om een beschrijving van het punt vragen en maken dat als etiket in een doopvont verschijnt u kiest en lay-out. De mogelijkheden zijn onbeperkt.
 
@@ -27,7 +30,7 @@ Basissjablonen kunnen op verschillende manieren worden geïmplementeerd, van een
 - Basishandel. Hiermee gebruikt u labels als &#39;gratis verzending&#39; als dat product gratis verzending heeft. Deze labels worden ingesteld door het productteam in Photoshop en het web gebruikt logica om te weten wanneer ze op de afbeelding worden toegepast.
 - Geavanceerde merchandising. Elke sjabloon heeft meerdere variabelen en kan meerdere opties tegelijk weergeven. Gebruikt een gegevensbestand, inventaris en bedrijfsregels om te bepalen wanneer om een product als &quot;enkel binnen&quot;, op &quot;Opruiming,&quot;of &quot;Verkocht uit te tonen.&quot; Ook kan transparantie achter het product worden gebruikt om het op verschillende achtergronden, zoals in verschillende ruimten, te tonen. Dezelfde sjablonen en/of middelen kunnen op de pagina met productdetails worden hergebruikt om een grotere of zoombare versie van hetzelfde product op verschillende achtergronden weer te geven.
 
-Het is belangrijk om te begrijpen dat de Dynamische Klassieke Media slechts het visuele gedeelte van deze op malplaatjes-gebaseerde toepassingen verstrekt. De dynamische Klassieke bedrijven van Media of hun integratiepartners moeten de bedrijfsregels, het gegevensbestand, en ontwikkelingsvaardigheden leveren om de toepassingen tot stand te brengen. Er is geen &quot;ingebouwde&quot;malplaatjetoepassing; ontwerpers stellen de sjabloon in Dynamic Media Classic in en ontwikkelaars gebruiken URL-aanroepen om de variabelen in de sjabloon te wijzigen.
+Het is belangrijk om te begrijpen dat Dynamic Media Classic slechts het visuele gedeelte van deze op malplaatjes-gebaseerde toepassingen verstrekt. De Klassieke bedrijven van Dynamic Media of hun integratiepartners moeten de bedrijfsregels, het gegevensbestand, en ontwikkelingsvaardigheden leveren om de toepassingen tot stand te brengen. Er is geen &quot;ingebouwde&quot;malplaatjetoepassing; ontwerpers stellen de sjabloon in in Dynamic Media Classic en ontwikkelaars gebruiken URL-aanroepen om de variabelen in de sjabloon te wijzigen.
 
 Aan het einde van deze sectie van de zelfstudie leert u hoe u het volgende kunt doen:
 
@@ -62,7 +65,7 @@ Met behulp van een plaatsaanduiding kunt u de inhoud van een laag dynamisch omwi
 
 Omdat de BasisMalplaatjes typisch in Photoshop worden ontworpen maar via een URL worden opgesteld, vereist een malplaatjeproject een mengeling van zowel ontwerp als technische vaardigheden. Over het algemeen gaan we ervan uit dat de persoon die het creatieve sjabloonwerk doet, een Photoshop-ontwerper is en dat de persoon die de sjabloon implementeert een webontwikkelaar is. De creatieve en ontwikkelingsteams moeten nauw samenwerken om de sjabloon succesvol te laten zijn.
 
-De projecten van het malplaatje kunnen vrij eenvoudig of uiterst complex afhankelijk van de bedrijfsregels en de behoeften van de toepassing zijn. De basis Malplaatjes worden geroepen van de Server van het Beeld, echter wegens de flexibiliteit van het Dynamische Klassieke milieu van Media, kunt u malplaatjes binnen andere malplaatjes zelfs nesten, toestaand u om vrij complexe beelden tot stand te brengen die door algemeen genoemde variabelen kunnen worden verbonden.
+De projecten van het malplaatje kunnen vrij eenvoudig of uiterst complex afhankelijk van de bedrijfsregels en de behoeften van de toepassing zijn. De basis Malplaatjes worden geroepen van de Server van het Beeld, echter wegens de flexibiliteit van het Klassieke milieu van Dynamic Media, kunt u malplaatjes binnen andere malplaatjes zelfs nesten, toestaand u om vrij complexe beelden tot stand te brengen die door algemeen genoemde variabelen kunnen worden verbonden.
 
 - Meer informatie over [Sjabloonbeginselen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
 - Leer hoe u een [Standaardsjabloon](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template) maakt.
@@ -76,19 +79,19 @@ Wanneer u werkt met een standaardsjabloon, volgt u gewoonlijk de workflowstappen
 _De basisworkflow voor sjablonen._
 
 1. Ontwerp en maak uw elementen. De meeste gebruikers doen dit in Adobe Photoshop. Elementen ontwerpen op het exacte formaat dat u nodig hebt — als het een afbeelding van 200 pixels voor een miniatuurpagina betreft, moet u deze ontwerpen op 200 pixels. Als u erop moet inzoomen, ontwerpt u het bestand met een grootte van ongeveer 2000 pixels. Gebruik Photoshop (en/of Illustrator die als bitmap is opgeslagen) om de elementen te maken en gebruik Dynamic Media Classic om de onderdelen samen te stellen, de lagen te beheren en variabelen toe te voegen.
-2. Na het ontwerpen van grafische elementen uploadt u deze naar Dynamic Media Classic. In plaats van afzonderlijke elementen van het PSD-bestand te uploaden, raden we u aan het gehele gelaagde PSD-bestand te uploaden en Dynamic Media Classic een bestand per laag te laten maken met de optie **Lagen behouden** tijdens het uploaden (zie hieronder voor meer informatie.) _Tekstworkflow: Als u dynamische tekst maakt, moet u ook de lettertypen uploaden. Dynamische tekst is variabel en wordt bestuurd via de URL. Als de tekst statisch is of slechts een paar korte zinnen bevat die niet veranderen, bijvoorbeeld tags met de tekst &#39;Nieuw&#39; of &#39;Verkoop&#39; in plaats van &#39;X% uit&#39;, waarbij de X een variabel getal is, raden we aan de tekst vooraf te renderen in Photoshop en te uploaden als gerasterde lagen als afbeeldingen. Het wordt eenvoudiger en u kunt de tekst precies zo opmaken als u wilt._
-3. Bouw het Malplaatje in Dynamische Klassieke Media gebruikend de redacteur van de Grondbeginselen van het Malplaatje van het menu van de Bouwstijl en voeg beeldlagen toe. Tekstworkflow: Maak tekstlagen in dezelfde editor. Deze stap wordt vereist wanneer het bouwen van een malplaatje manueel in Dynamische Klassiek van Media. Kies een canvasgrootte die overeenkomt met uw ontwerp, sleep en zet afbeeldingen neer op het canvas en stel laageigenschappen in (grootte, rotatie, dekking, enz.). U plaatst niet elke mogelijke laag op uw sjabloon, maar slechts één plaatsaanduiding per afbeeldingslaag. _Tekstworkflow: U maakt tekstlagen met het gereedschap Tekst, net als bij het maken van tekstlagen in Photoshop. U kunt een lettertype kiezen en het opmaken met dezelfde opties die beschikbaar zijn met het gereedschap Photoshop-tekst._ Een andere workflow is om een PSD te uploaden en Dynamic Media Classic een &quot;gratis&quot; sjabloon te laten genereren en zelfs tekstlagen opnieuw te maken. Dit zal later nader worden besproken.
+2. Na het ontwerpen van grafische elementen uploadt u deze naar Dynamic Media Classic. In plaats van afzonderlijke elementen van de PSD te uploaden, raden we u aan om uw volledige gelaagde PSD-bestand te uploaden en Dynamic Media Classic een bestand per laag te laten maken met de optie **Lagen behouden** tijdens het uploaden (zie hieronder voor meer informatie.) _Tekstworkflow: Als u dynamische tekst maakt, moet u ook de lettertypen uploaden. Dynamische tekst is variabel en wordt bestuurd via de URL. Als de tekst statisch is of slechts een paar korte zinnen bevat die niet veranderen, bijvoorbeeld tags met de tekst &#39;Nieuw&#39; of &#39;Verkoop&#39; in plaats van &#39;X% uit&#39;, waarbij de X een variabel getal is, raden we aan de tekst vooraf te renderen in Photoshop en te uploaden als gerasterde lagen als afbeeldingen. Het wordt eenvoudiger en u kunt de tekst precies zo opmaken als u wilt._
+3. Bouw het Malplaatje in de Klassiek van Dynamic Media gebruikend de redacteur van de Grondbeginselen van het Malplaatje van het menu van de Bouwstijl en voeg beeldlagen toe. Tekstworkflow: Maak tekstlagen in dezelfde editor. Deze stap is vereist wanneer u handmatig een sjabloon maakt in Dynamic Media Classic. Kies een canvasgrootte die overeenkomt met uw ontwerp, sleep en zet afbeeldingen neer op het canvas en stel laageigenschappen in (grootte, rotatie, dekking, enz.). U plaatst niet elke mogelijke laag op uw sjabloon, maar slechts één plaatsaanduiding per afbeeldingslaag. _Tekstworkflow: U maakt tekstlagen met het gereedschap Tekst, net als bij het maken van tekstlagen in Photoshop. U kunt een lettertype kiezen en het opmaken met dezelfde opties die beschikbaar zijn met het gereedschap Photoshop-tekst._ Een andere workflow is om een PSD te uploaden en Dynamic Media Classic een &quot;gratis&quot; sjabloon te laten genereren en zelfs tekstlagen opnieuw te maken. Dit zal later nader worden besproken.
 4. Nadat de lagen zijn gemaakt, voegt u parameters (variabelen) toe aan elke eigenschap van een laag die u via de URL wilt besturen, inclusief de bron van de laag (de afbeelding zelf). _Tekstworkflow: U kunt ook parameters toevoegen aan tekstlagen, zowel om de inhoud van de tekst en de grootte en positie van de laag zelf te bepalen, als alle opmaakopties zoals lettertypekleur, tekengrootte, horizontale tekstspatiëring, enzovoort._
 5. Maak een voorinstelling voor afbeeldingen die overeenkomt met de grootte van de sjabloon. We raden u aan dit te doen, zodat de sjabloon altijd wordt aangeroepen met een grootte van 1:1 en om verscherping toe te voegen aan alle grote afbeeldingslagen waarvan de grootte wordt aangepast aan de sjabloon. Als u een sjabloon maakt waarop moet worden ingezoomd, is deze stap overbodig.
-6. Publiceer, kopieer URL van de Dynamische Klassieke voorproef van Media, en test het in browser.
+6. Publiceer, kopieer de URL van de klassieke voorvertoning van Dynamic Media en test deze in een browser.
 
-## Uw sjabloonelementen voorbereiden en uploaden naar Dynamic Media Classic
+## Uw sjabloonmiddelen voorbereiden en uploaden naar Dynamic Media Classic
 
 Voordat u de sjabloonelementen uploadt naar Dynamic Media Classic, moet u een aantal voorbereidende stappen uitvoeren.
 
 ### De PSD voorbereiden voor uploaden
 
-Voordat u uw Photoshop-bestand uploadt naar Dynamic Media Classic, vereenvoudigt u de lagen in Photoshop, zodat u gemakkelijker kunt werken met en maximale compatibiliteit met de Image Server hebt. Het PSD-bestand bestaat vaak uit veel elementen die Dynamic Media Classic niet herkent en u krijgt wellicht ook veel kleine onderdelen die moeilijk te beheren zijn. Sla een back-up van de master PSD op voor het geval u het origineel later moet bewerken. U uploadt de vereenvoudigde kopie en niet de master.
+Voordat u uw Photoshop-bestand uploadt naar Dynamic Media Classic, vereenvoudigt u de lagen in Photoshop, zodat u gemakkelijker kunt werken met de Image Server en deze zo compatibel mogelijk zijn. Het PSD-bestand bestaat vaak uit veel elementen die Dynamic Media Classic niet herkent en u krijgt wellicht ook veel kleine onderdelen die moeilijk te beheren zijn. Sla een back-up van de master PSD op voor het geval u het origineel later moet bewerken. U uploadt de vereenvoudigde kopie en niet de master.
 
 ![afbeelding](assets/basic-templates/basic-templates-2.jpg)
 
@@ -96,13 +99,13 @@ Voordat u uw Photoshop-bestand uploadt naar Dynamic Media Classic, vereenvoudigt
    ![afbeelding](assets/basic-templates/basic-templates-3.jpg)
 2. Sommige laagtypen en laageffecten worden niet ondersteund door Dynamic Media Classic of de Image Server en moeten voorafgaand aan het uploaden worden omgezet in pixels. Anders worden de effecten mogelijk genegeerd of worden de lagen verwijderd. Als u een laag rastert, wordt deze omgezet van bewerkbaar in niet-bewerkbaar. Als u laageffecten of tekstlagen wilt omzetten in pixels, maakt u een lege laag, selecteert u beide lagen en voegt u ze samen met **Lagen > Lagen samenvoegen** of CTRL + E/CMD + E.
 
-   - Dynamische media Klassiek kan lagen niet groeperen of koppelen. Alle lagen in een groep of gekoppelde set worden omgezet in afzonderlijke lagen die niet meer zijn gegroepeerd of gekoppeld.
+   - Dynamic Media Classic kan lagen niet groeperen of koppelen. Alle lagen in een groep of gekoppelde set worden omgezet in afzonderlijke lagen die niet meer zijn gegroepeerd of gekoppeld.
    - Laagmaskers worden tijdens het uploaden omgezet in transparantie.
    - Aanpassingslagen worden niet ondersteund en worden genegeerd.
    - Opvullagen, zoals lagen met effen kleuren, worden gerasterd.
    - Lagen met slimme objecten en vectorlagen worden tijdens het uploaden omgezet in normale afbeeldingen en slimme filters worden toegepast en gerasterd.
    - Tekstlagen worden ook gerasterd, tenzij u de optie Tekst extraheren gebruikt. Zie hieronder voor meer informatie.
-   - De meeste laageffecten worden genegeerd en slechts een paar overvloeimodi worden ondersteund. In geval van twijfel voegt u eenvoudige effecten toe in Dynamic Media Classic (zoals binnen- of slagschaduwen, binnen- of buitenste gloed) of gebruikt u een lege laag om het effect in Photoshop samen te voegen en om te zetten in pixels.
+   - De meeste laageffecten worden genegeerd en slechts een paar overvloeimodi worden ondersteund. In geval van twijfel voegt u eenvoudige effecten toe in Dynamic Media Classic (zoals binnen- of slagschaduwen, binnen- of buitengloed) of gebruikt u een lege laag om het effect in Photoshop samen te voegen en om te zetten in pixels.
 
 ### Werken met lettertypen
 
@@ -110,9 +113,9 @@ Als u dynamische tekst wilt genereren, uploadt en publiceert u uw lettertypen. H
 
 Het is de verantwoordelijkheid van elk bedrijf om een licentie te verkrijgen voor het gebruik van een lettertype op het web. Als een lettertype alleen op uw computer is geïnstalleerd, hebt u niet het recht om het lettertype commercieel te gebruiken op het web. Uw bedrijf kan juridische stappen ondernemen bij de uitgever van het lettertype als het lettertype zonder toestemming wordt gebruikt. Bovendien variëren de licentievoorwaarden. Wellicht hebt u aparte licenties voor bijvoorbeeld afdrukken en schermweergave nodig.
 
-Dynamic Media Classic ondersteunt standaard OpenType- (OTF), TrueType- (TTF) en Type 1 Postscript-lettertypen. Alleen Mac-geschikte lettertypen, bestanden met tekstverzamelingen, Windows-systeemlettertypen en eigen machinefettertypen (zoals lettertypen die worden gebruikt door graving- of borduurmachines) worden niet ondersteund. U moet ze converteren naar een van de standaardlettertypen of een vergelijkbaar lettertype vervangen voor gebruik in Dynamic Media Classic en op de Image Server.
+Dynamic Media Classic biedt ondersteuning voor standaard OpenType- (OTF), TrueType- (TTF) en Type 1 Postscript-lettertypen. Alleen Mac-lettertypen, bestanden met tekstverzamelingen, Windows-systeemlettertypen en eigen machinefettertypen (zoals lettertypen die worden gebruikt door graving- of borduurmachines) worden niet ondersteund. U moet ze converteren naar een van de standaardlettertypen of een vergelijkbaar lettertype vervangen voor gebruik in Dynamic Media Classic en op de Image Server.
 
-Nadat de doopvonten aan Dynamische Klassiek van Media, zoals om het even welk ander middel worden geupload, moeten zij ook aan de Server van het Beeld worden gepubliceerd. Een veel voorkomende sjabloonfout is het publiceren van lettertypen te vergeten. Dit leidt tot een afbeeldingsfout. Een ander lettertype wordt dan niet vervangen door de afbeeldingsserver. Als u bovendien de optie **Tekst uitpakken** wilt gebruiken bij het uploaden, moet u de lettertypebestanden uploaden voordat u de PSD-versie uploaden die deze lettertypen gebruikt. Met de functie **Tekst extraheren** wordt geprobeerd de tekst opnieuw te maken als een bewerkbare tekstlaag en deze in een dynamische mediaklassieke sjabloon te plaatsen. Dit wordt besproken in het volgende onderwerp, Opties PSD.
+Nadat de doopvonten aan de Klassiek van Dynamic Media, zoals om het even welk ander middel worden geupload, moeten zij ook aan de Server van het Beeld worden gepubliceerd. Een veel voorkomende sjabloonfout is het publiceren van lettertypen te vergeten. Dit leidt tot een afbeeldingsfout. Een ander lettertype wordt dan niet vervangen door de afbeeldingsserver. Als u bovendien de optie **Tekst uitpakken** wilt gebruiken bij het uploaden, moet u de lettertypebestanden uploaden voordat u de PSD-versie uploaden die deze lettertypen gebruikt. Met de functie **Tekst extraheren** wordt geprobeerd uw tekst opnieuw te maken als een bewerkbare tekstlaag en deze in een klassieke Dynamic Media-sjabloon te plaatsen. Dit wordt besproken in het volgende onderwerp, Opties PSD.
 
 Houd er rekening mee dat lettertypen meerdere interne namen hebben die vaak afwijken van hun externe bestandsnaam. Alle verschillende namen worden weergegeven op de pagina Details voor dat element in Dynamic Media Classic. Hier volgen de namen van het lettertype Adobe Caslon Pro Semibold, dat op het tabblad Metagegevens in Dynamic Media Classic wordt weergegeven:
 
@@ -124,21 +127,21 @@ Dynamic Media Classic gebruikt de bestandsnaam van dit lettertype (ACaslonPro-Se
 
 Als u lettertypen moet wijzigen via de URL, moet u de RTF-naam van het lettertype aanroepen (niet de ID van het element), anders krijgt u een fout. In dit geval is de juiste naam voor dit lettertype &quot;Adobe Caslon Pro&quot;. Hieronder bespreken we meer over lettertypen en RTF in het onderwerp-RTF en Tekstparameters.
 
-De meest gebruikte indelingen voor lettertypebestanden op Windows- en Mac-systemen zijn OpenType en TrueType. OpenType heeft de extensie .OTF, terwijl TrueType .TTF is. Beide indelingen werken even goed in Dynamic Media Classic.
+De meest gebruikte indelingen voor lettertypebestanden op Windows- en Mac-systemen zijn OpenType en TrueType. OpenType heeft een uitbreiding .OTF, terwijl TrueType .TTF is. Beide indelingen werken even goed in Dynamic Media Classic.
 
 ### Opties selecteren bij het uploaden van uw PSD
 
-U hoeft geen Photoshop-bestand (PSD) te uploaden om een sjabloon te maken; een sjabloon kan worden opgebouwd uit alle afbeeldingselementen in Dynamic Media Classic. Het uploaden van een PSD kan het ontwerpen echter eenvoudiger maken, omdat deze elementen doorgaans al in een gelaagde PSD staan. Bovendien wordt met Dynamic Media Classic automatisch een sjabloon gegenereerd wanneer u een gelaagde PSD uploadt.
+U hoeft geen Photoshop-bestand (PSD) te uploaden om een sjabloon te maken; Een sjabloon kan worden samengesteld uit alle afbeeldingselementen in Dynamic Media Classic. Het uploaden van een PSD kan het ontwerpen echter eenvoudiger maken, omdat deze elementen doorgaans al in een gelaagde PSD staan. Bovendien genereert Dynamic Media Classic automatisch een sjabloon wanneer u een gelaagde PSD uploadt.
 
-- **Lagen behouden.** Dit is de belangrijkste optie. Dit vertelt Dynamic Media Classic om één afbeeldingselement per Photoshop-laag te maken. Als deze optie niet is ingeschakeld, worden alle andere opties uitgeschakeld en wordt de PSD tot één afbeelding samengevoegd.
-- **** **CreateTemplate.** Met deze optie maakt u de verschillende gegenereerde lagen en maakt u automatisch een sjabloon door deze te combineren. Een nadeel van het gebruik van de automatisch gegenereerde sjabloon is dat bij Dynamische media Classic alle lagen in één bestand worden geplaatst, terwijl er slechts één plaatsaanduiding per laag nodig is. Het is gemakkelijk genoeg om de extra lagen te schrappen, maar als u vele lagen hebt, is het sneller om hen opnieuw te creëren. Zorg ervoor dat u de naam van de nieuwe sjabloon wijzigt. Als u dat niet doet, wordt het de volgende keer dat u dezelfde PSD opnieuw uploadt, overschreven.
+- **Lagen behouden.** Dit is de belangrijkste optie. Zo kan Dynamic Media Classic één afbeeldingselement per Photoshop-laag maken. Als deze optie is uitgeschakeld, worden alle andere opties uitgeschakeld en wordt de PSD tot één afbeelding samengevoegd.
+- **** **CreateTemplate.** Met deze optie maakt u de verschillende gegenereerde lagen en maakt u automatisch een sjabloon door deze te combineren. Een nadeel van het gebruik van de automatisch gegenereerde sjabloon is dat in Dynamic Media Classic alle lagen in één bestand worden geplaatst, terwijl er slechts één plaatsaanduiding per laag nodig is. Het is gemakkelijk genoeg om de extra lagen te schrappen, maar als u vele lagen hebt, is het sneller om hen opnieuw te creëren. Zorg ervoor dat u de naam van de nieuwe sjabloon wijzigt. Als u dat niet doet, wordt het de volgende keer dat u dezelfde PSD opnieuw uploadt, overschreven.
 - **Tekst extraheren.** Hiermee worden tekstlagen in het PSD-bestand opnieuw gemaakt als tekstlagen in de sjabloon met het lettertype dat u hebt geüpload. Deze stap is vereist als de tekst zich op een pad in Photoshop bevindt en u dat pad in de sjabloon wilt behouden. Voor deze functie moet u de optie **Sjabloon maken** gebruiken, aangezien de geëxtraheerde tekst alleen kan worden gemaakt met een sjabloon die tijdens het uploaden wordt gegenereerd.
 - **Lagen uitbreiden naar achtergrondgrootte.** Met deze instelling wordt elke laag even groot als het algehele PSD-canvas. Dit is erg handig voor lagen die altijd op dezelfde positie blijven staan: anders moet u de afbeelding mogelijk verplaatsen wanneer u deze in dezelfde laag plaatst.
-- **Laagnaam.** Dit vertelt Dynamic Media Classic hoe u elk element dat per laag wordt gegenereerd een naam geeft. Wij adviseren of **Photoshop** **en Laag** **Naam** of Photoshop en **Laag** **Aantal**. Bij beide opties wordt de PSD-naam gebruikt als het eerste deel van de naam en wordt aan het einde de naam of het nummer van de laag toegevoegd. Als u bijvoorbeeld een PSD met de naam &quot;shirt.psd&quot; hebt en lagen met de naam &quot;front&quot;, &quot;sleeves&quot; en &quot;collar&quot; hebt, als u uploadt met de optie **Photoshop en** Laag **Naam**, genereert Dynamic Media Classic de element-id&#39;s &quot;shirt_front&quot;, &quot;shirt_sleeves&quot; en &quot;shirt_collak lar.&quot; Als u een van deze opties gebruikt, weet u zeker dat de naam uniek is in Dynamic Media Classic.
+- **Laagnaam.** Dit vertelt Dynamic Media Classic hoe u elk element dat per laag wordt gegenereerd een naam geeft. Wij adviseren of **Photoshop** **en Laag** **Naam** of Photoshop en **Laag** **Aantal**. Bij beide opties wordt de PSD-naam gebruikt als het eerste deel van de naam en wordt aan het einde de naam of het nummer van de laag toegevoegd. Als u bijvoorbeeld een PSD met de naam &quot;shirt.psd&quot; hebt en lagen met de naam &quot;front&quot;, &quot;sleeves&quot; en &quot;collar&quot; hebt, als u uploadt met de optie **Photoshop en** Laag **Naam**, genereert Dynamic Media Classic de element-id&#39;s &quot;shirt_front&quot;, &quot;shirt_sleeves&quot; en &quot;shirt_collar .&quot; Als u een van deze opties gebruikt, weet u zeker dat de naam uniek is in Dynamic Media Classic.
 
 ## Een sjabloon maken met afbeeldingslagen
 
-Hoewel de Dynamische Klassieke Media automatisch een malplaatje van gelaagde PSD kan tot stand brengen, zou u moeten weten hoe te om het malplaatje manueel te bouwen. Zoals hierboven uitgelegd, zijn er bepaalde tijden wanneer u niet het malplaatje wilt gebruiken dat door Dynamische Klassiek van Media wordt gecreeerd.
+Hoewel Dynamic Media Classic automatisch een sjabloon kan maken op basis van een gelaagde PSD, moet u weten hoe u de sjabloon handmatig kunt maken. Zoals hierboven beschreven, zijn er bepaalde tijden wanneer u niet het malplaatje wilt gebruiken dat door Dynamic Media Classic wordt gecreeerd.
 
 ### De interface Sjabloonbasisbeginselen
 
@@ -193,9 +196,9 @@ Meer informatie over[Laageffecten toevoegen](https://docs.adobe.com/content/help
 
 Als u alleen lagen combineert en opslaat, is het nettoresultaat niet anders dan een afgevlakte Photoshop-afbeelding. Wat sjablonen speciaal maakt, is de mogelijkheid om parameters toe te voegen aan de eigenschappen van elke laag, zodat deze dynamisch kunnen worden gewijzigd via de URL.
 
-In Dynamische Klassieke termen van Media, is een parameter een variabele die aan een malplaatjebezit kan worden verbonden zodat kan het via een URL worden gemanipuleerd. Wanneer u een parameter aan een laag toevoegt, stelt de Dynamische Klassieke Media die bezit in URL bloot door de naam van uw parameter met een dollarteken ($) voor te maken - bijvoorbeeld, als u een parameter genoemd &quot;grootte&quot;creeert om de grootte van een laag te veranderen, zal de Dynamische Klassiek van Media uw parameter $size anders noemen.
+In klassieke Dynamic Media-termen is een parameter een variabele die kan worden gekoppeld aan een sjablooneigenschap zodat deze via een URL kan worden gemanipuleerd. Wanneer u een parameter aan een laag toevoegt, stelt Dynamic Media Classic die eigenschap in URL bloot door de naam van uw parameter met een dollarteken ($) voor te maken - bijvoorbeeld, als u een parameter genoemd &quot;grootte&quot;creeert om de grootte van een laag te veranderen, zal Dynamic Media Classic uw parameter $size anders noemen.
 
-Als u geen parameter voor een bezit toevoegt, blijft dat bezit verborgen in het Dynamische Klassieke gegevensbestand van Media en verschijnt niet in URL.
+Als u geen parameter voor een eigenschap toevoegt, blijft die eigenschap verborgen in de klassieke Dynamic Media-database en wordt deze niet weergegeven in de URL.
 
 ![afbeelding](assets/basic-templates/parameters.png)
 
@@ -210,7 +213,7 @@ Dit is de workflow voor het maken van parameters:
 1. Klik op de knop **Parameters** naast de naam van de laag waarvoor u parameters wilt maken. Het scherm Parameters wordt geopend. Elke eigenschap op de laag en de waarde ervan worden weergegeven.
 1. Selecteer de optie **Op** naast de naam van elke eigenschap die u in een parameter wilt maken. Er wordt een standaardparameternaam weergegeven. U kunt alleen parameters toevoegen aan eigenschappen die zijn gewijzigd ten opzichte van de standaardstatus.
 
-   - Bijvoorbeeld, als u een laag toevoegt en het bij zijn standaardvolmachtspositie van 0.0 houdt, zal de Dynamische Klassieke Media geen **Positie** bezit blootstellen. Verplaats de laag ten minste één pixel om deze te corrigeren. Dynamische media Classic wordt nu **Positie** als een eigenschap waarvan u de parameters kunt bepalen.
+   - Bijvoorbeeld, als u een laag toevoegt en het bij zijn standaardvolmachtspositie van 0.0 houdt, zal de Klassiek van Dynamic Media geen **Positie** bezit blootstellen. Verplaats de laag ten minste één pixel om deze te corrigeren. Nu zal Dynamic Media Classic **Position** als bezit blootstellen u parameters kunt bepalen.
    - Als u een parameter wilt toevoegen aan de eigenschap show/hide (waarmee de laag wordt in- en uitgeschakeld), klikt u op het pictogram **Show** of **Hide Layer** om de laag uit te schakelen (u kunt de laag desgewenst achteraf weer inschakelen). Dynamic Media Classic stelt nu een eigenschap **Hide** beschikbaar die kan worden geparameterized.
 
 1. Wijzig de naam van de standaardparameternamen in iets dat u gemakkelijker kunt herkennen in de URL. Als u bijvoorbeeld een parameter wilt toevoegen om de bannerlaag vóór een afbeelding te wijzigen, wijzigt u de standaardnaam van &quot;layer_2_src&quot; in &quot;banner&quot;.
@@ -242,7 +245,7 @@ Maar wat als u nodig hebt:
 
 In dat geval wilt u enkele dynamische tekstlagen met parameters toevoegen om de tekst en/of opmaak te bepalen.
 
-Als u tekst wilt maken, moet u een aantal lettertypen uploaden. Anders wordt voor Dynamic Media Classic de standaardinstelling Arial gebruikt. De lettertypen moeten ook naar de afbeeldingsserver worden gepubliceerd, anders wordt er een fout gegenereerd wanneer wordt geprobeerd tekst met dat lettertype te renderen.
+Als u tekst wilt maken, moet u een aantal lettertypen uploaden. Anders wordt in Dynamic Media Classic Arial standaard ingesteld. De lettertypen moeten ook naar de afbeeldingsserver worden gepubliceerd, anders wordt er een fout gegenereerd wanneer wordt geprobeerd tekst met dat lettertype te renderen.
 
 ### RTF- en tekstparameters
 
@@ -250,14 +253,14 @@ Als u variabelen aan tekst wilt toevoegen met het gereedschap Sjabloonbasisbegin
 
 RTF is een bestandsindelingspecificatie die door Microsoft is ontwikkeld voor het opgeven van de opmaak van documenten. Het is een standaardopmaaktaal die door de meeste tekstverwerkings- en e-mailsoftware wordt gebruikt. Als u in een URL &amp;text= \ b1 Hello schreef, zou de Server van het Beeld een beeld met het woord &quot;Hello&quot;in gewaagde tekst produceren, omdat \ b1 het bevel RTF voor het maken van de tekst gewaagd is.
 
-Het goede nieuws is dat Dynamic Media Classic de RTF voor u genereert. Wanneer u tekst in een sjabloon typt en opmaak toevoegt, schrijft Dynamic Media Classic de RTF-code automatisch in de sjabloon. De reden dat wij het vermelden is omdat u parameters direct aan RTF zelf zult toevoegen, zodat is het belangrijk dat u er een beetje vertrouwd mee bent.
+Het goede nieuws is dat Dynamic Media Classic de RTF voor je genereert. Wanneer u tekst in een sjabloon typt en opmaak toevoegt, schrijft Dynamic Media Classic de RTF-code automatisch naar de sjabloon. De reden dat wij het vermelden is omdat u parameters direct aan RTF zelf zult toevoegen, zodat is het belangrijk dat u er een beetje vertrouwd mee bent.
 
 #### Tekstlagen maken
 
-U kunt op de volgende twee manieren tekstlagen in een sjabloon maken in Dynamic Media Classic:
+U kunt tekstlagen in een sjabloon in Dynamic Media Classic op de volgende twee manieren maken:
 
-1. Tekstgereedschap in Dynamic Media Classic. Deze methode wordt hieronder besproken. De redacteur van de Grondbeginselen van het Malplaatje heeft een hulpmiddel dat u een tekstvakje laat creëren, tekst ingaan en de tekst formatteren. Met Dynamic Media Classic wordt de RTF zo nodig gegenereerd en in een aparte laag geplaatst.
-2. Tekst uitnemen (bij uploaden). De andere methode is om de tekstlaag te maken in Photoshop en deze op te slaan in de PSD als een normale tekstlaag (in plaats van deze als een afbeeldingslaag te rasteren). Vervolgens uploadt u het bestand naar Dynamic Media Classic en gebruikt u de optie **Tekst extraheren**. Met de RTF-opdrachten wordt elke Photoshop-tekstlaag omgezet in een afbeeldingslaag die als server fungeert. Als u deze methode gebruikt, moet u de lettertypen eerst uploaden naar Dynamic Media Classic, anders vervangt Dynamic Media Classic een standaardlettertype tijdens het uploaden en is er geen eenvoudige manier om het juiste lettertype opnieuw te vervangen.
+1. Tekstgereedschap in Dynamic Media Classic. Deze methode wordt hieronder besproken. De redacteur van de Grondbeginselen van het Malplaatje heeft een hulpmiddel dat u een tekstvakje laat creëren, tekst ingaan en de tekst formatteren. Dynamic Media Classic genereert de RTF zo nodig en plaatst deze in een aparte laag.
+2. Tekst uitnemen (bij uploaden). De andere methode is om de tekstlaag te maken in Photoshop en deze op te slaan in de PSD als een normale tekstlaag (in plaats van deze als een afbeeldingslaag te rasteren). Vervolgens uploadt u het bestand naar Dynamic Media Classic en gebruikt u de optie **Tekst extraheren**. Met RTF-opdrachten zet Dynamic Media Classic elke Photoshop-tekstlaag om in een afbeeldingsserver. Als u deze methode gebruikt, moet u eerst uw lettertypen uploaden naar Dynamic Media Classic. Als dit niet het geval is, vervangt Dynamic Media Classic tijdens het uploaden een standaardlettertype en is er geen eenvoudige manier om het juiste lettertype opnieuw te vervangen.
 
 ### De Teksteditor
 
@@ -325,7 +328,7 @@ Hier volgen de stappen voor het toevoegen van parameters aan tekstlagen.
 1. Klik om de naam van de parameter te wijzigen in een betekenisvollere naam.
 1. Wanneer u klaar bent, wordt uw RTF groen gemarkeerd waar de parameters bestaan en worden de namen en waarden van de parameters hieronder vermeld.
 1. Klik **Close** om het scherm van Parameters weg te gaan. Druk vervolgens op **Opslaan** om de sjabloon op te slaan. Als u klaar bent met bewerken, drukt u op **Close** om de pagina Sjabloongrondbeginselen te sluiten.
-1. Klik **Voorproef** om uw malplaatje in Dynamische Klassiek van Media te testen. Als u de tekstparameters wilt testen, typt u nieuwe tekst of waarden in het voorvertoningsvenster. Als u het lettertype wilt wijzigen, moet u de exacte RTF-naam van het lettertype invoeren.
+1. Klik **Voorvertoning** om uw sjabloon te testen in Dynamic Media Classic. Als u de tekstparameters wilt testen, typt u nieuwe tekst of waarden in het voorvertoningsvenster. Als u het lettertype wilt wijzigen, moet u de exacte RTF-naam van het lettertype invoeren.
 
 >[!TIP]
 >
@@ -343,7 +346,7 @@ Er is niets bijzonders aan een Voorinstelling voor afbeelding voor een sjabloon.
 
 ### Publicatie
 
-U zult moeten in werking stellen publiceert om uw veranderingen te zien die levend aan de Server van het Beeld worden gebracht. Houd rekening met wat u moet publiceren: de verschillende lagen met afbeeldingselementen, de lettertypen voor dynamische tekst en de sjabloon zelf. Net als bij andere dynamische media met uitgebreide mediamiddelen zoals Afbeeldingssets en Draaisets, is een standaardsjabloon een kunstmatige constructie. Het is een regelitem in de database dat verwijst naar de afbeeldingen en fonts met behulp van een reeks opdrachten in de afbeeldingsserver. Zo wanneer u het malplaatje publiceert, allen u doet bijwerkt gegevens over de Server van het Beeld.
+U zult moeten in werking stellen publiceert om uw veranderingen te zien die levend aan de Server van het Beeld worden gebracht. Houd rekening met wat u moet publiceren: de verschillende lagen met afbeeldingselementen, de lettertypen voor dynamische tekst en de sjabloon zelf. Net als bij andere klassieke Dynamic Media-media-elementen met veel media, zoals Afbeeldingssets en Draaisets, is een standaardsjabloon een kunstmatige constructie. Het is een regelitem in de database dat verwijst naar de afbeeldingen en fonts met behulp van een reeks opdrachten in de afbeeldingsservice. Zo wanneer u het malplaatje publiceert, allen u doet bijwerkt gegevens over de Server van het Beeld.
 
 Meer informatie over [Uw sjabloon publiceren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/publishing-templates.html).
 
