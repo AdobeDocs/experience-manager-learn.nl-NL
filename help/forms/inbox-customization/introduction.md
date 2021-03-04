@@ -1,17 +1,20 @@
 ---
 title: Aanpassing van Postvak IN
 description: 'Postvak IN aanpassen door nieuwe kolommen toe te voegen op basis van workflowgegevens '
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
 kt: 5830
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
