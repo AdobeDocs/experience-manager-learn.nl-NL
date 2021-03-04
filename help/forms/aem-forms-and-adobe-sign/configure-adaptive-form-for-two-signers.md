@@ -1,18 +1,21 @@
 ---
 title: Verhuurovereenkomst met 2 ondertekenaars
 description: Ouderschapsovereenkomst met twee ondertekenaars. In de video worden de verschillende stappen beschreven die nodig zijn om een adaptief formulier te configureren met twee ondertekenaars.
-feature: adaptieve vormen
+feature: Adaptive Forms,Adobe Sign
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39294.jpg
 kt: 6071
+topic: Ontwikkeling
+role: Beheerder
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 0%
+source-wordcount: '65'
+ht-degree: 1%
 
 ---
 
