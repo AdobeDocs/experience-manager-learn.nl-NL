@@ -1,33 +1,30 @@
 ---
-title: Panorama en Verticale afbeeldingsviewer gebruiken met AEM Assets Dynamic Media
-seo-title: Panorama en Verticale afbeeldingsviewer gebruiken met AEM Assets Dynamic Media
-description: Dynamische media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panoramische Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
-seo-description: Dynamische media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panoramische Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
+title: Panorama en Vertical Image Viewer gebruiken met AEM Assets Dynamic Media
+description: De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panorama Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
 sub-product: dynamic-media
-feature: video-profiles, video-profiles, vr-360
-topics: videos, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+feature: Videoprofielen, videoprofielen, 360 VR-video
 version: 6.4, 6.5
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
 
 
-# Panorama en Verticale beeldviewer gebruiken met AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
+# Panorama en Vertical Image Viewer gebruiken met AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-Dynamische media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panoramische Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
+De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panorama Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156/?quality=9&learn=on)
 
 >[!NOTE]
 >
->De video veronderstelt dat uw AEM instantie op Dynamische Media S7 wijze loopt. [Hier vindt u instructies voor het instellen van AEM met Dynamic Media.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>De video veronderstelt dat uw AEM instantie op Dynamic Media S7 wijze loopt. [Hier vindt u instructies voor het instellen van AEM met Dynamic Media.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Panoramische en panoramische VR-viewer
 
@@ -51,9 +48,9 @@ Bij horizontale stalen zijn de stalen soms pas zichtbaar wanneer de gebruiker de
    <td>Verticale afbeeldingsviewer</td>
   </tr>
   <tr>
-   <td>Dynamische modus voor mediatoets</td>
-   <td>Alleen dynamische media Scene7-modus</td>
-   <td>DMS7 en dynamische media</td>
+   <td>Dynamic Media Run-modus</td>
+   <td>Alleen Dynamic Media Scene7-modus</td>
+   <td>DMS7 en Dynamic Media</td>
   </tr>
   <tr>
    <td>Hoofdletters gebruiken</td>
@@ -68,9 +65,9 @@ Bij horizontale stalen zijn de stalen soms pas zichtbaar wanneer de gebruiker de
  </tbody>
 </table>
 
-[Dynamische media configureren in Scene7-modus](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Dynamic Media configureren in de Scene7-modus](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
 
-[Dynamische media configureren in hybride modus](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/config-dynamic.html)
+[Dynamic Media configureren in hybride modus](https://helpx.adobe.com/nl/experience-manager/6-5/assets/using/config-dynamic.html)
 
 >[!NOTE]
 >
