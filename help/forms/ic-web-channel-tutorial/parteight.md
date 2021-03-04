@@ -4,18 +4,21 @@ seo-title: Regeldiagram voor uw eerste interactieve communicatiedocument configu
 description: Dit is onderdeel 8 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel, zullen wij een grafiek van de Lijn aan het paneel van de rekeningsvooruitgang toevoegen.
 seo-description: Dit is onderdeel 8 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel, zullen wij een grafiek van de Lijn aan het paneel van de rekeningsvooruitgang toevoegen.
 uuid: 08c3e7af-e3cb-4ee0-bdc1-d112bfa70e40
-feature: interactieve communicatie
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 4292303c-3ef4-4df2-b537-fdb011412670
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 0%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
