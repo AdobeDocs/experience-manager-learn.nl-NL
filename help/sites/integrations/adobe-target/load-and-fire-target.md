@@ -1,7 +1,7 @@
 ---
 title: Een doelaanroep laden en in werking stellen
 description: Leer hoe te om, parameters tot paginaverzoek over te brengen, en een vraag van het Doel van uw plaatspagina in werking te stellen gebruikend een Regel van de Lancering. De informatie van de pagina wordt teruggewonnen en overgegaan als parameters gebruikend de Laag van Gegevens van de Cliënt van de Adobe die u gegevens over de ervaring van bezoekers op een webpagina kunt verzamelen en opslaan en dan het gemakkelijk maken om tot deze gegevens toegang te hebben.
-feature: launch, core-components, data-layer
+feature: Core Components, Adobe Client Data Layer
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,10 +9,13 @@ activity: setup
 version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
+topic: Integrations
+role: Developer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
