@@ -2,7 +2,7 @@
 title: Aan de slag met AEM Sites - Basisprincipes van componenten
 description: Begrijp de onderliggende technologie van een Component van de Plaatsen van Adobe Experience Manager (AEM) door een eenvoudig "HelloWorld"voorbeeld. De onderwerpen van HTML, Verzamelmodellen, cliënt-zijbibliotheken en auteursdialogen worden onderzocht.
 sub-product: sites
-feature: componenten, sling-modellen, htl
+feature: Core Components, Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,10 +11,13 @@ audience: developer
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
+topic: Inhoudsbeheer, ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
