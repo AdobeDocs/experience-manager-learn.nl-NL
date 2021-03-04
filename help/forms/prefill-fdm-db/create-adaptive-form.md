@@ -1,7 +1,7 @@
 ---
 title: adaptief formulier maken
 description: Aangepast formulier maken en configureren voor gebruik van de vooraf ingevulde service van het formuliergegevensmodel
-feature: adaptieve vormen
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,10 +9,13 @@ activity: implement
 version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
+topic: Ontwikkeling
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
