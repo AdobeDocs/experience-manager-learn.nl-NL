@@ -3,17 +3,15 @@ title: Werken met het delen van bronnen tussen verschillende bronnen (CORS) met 
 description: Met CORS (Cross-Origin Resource Sharing) van Adobe Experience Manager kunnen niet-AEM wegeigenschappen client-side aanroepen maken naar AEM, zowel geverifieerd als niet geverifieerd, om inhoud op te halen of rechtstreeks met AEM te communiceren.
 version: 6.3, 6,4, 6.5
 sub-product: stichting, inhoudsdiensten, sites
+feature: null
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
-topic: Beveiliging
-role: Developer
-level: Intermediair
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -166,7 +164,7 @@ Logboekregistratie is beschikbaar onder `com.adobe.granite.cors`:
 
 ### Tips:
 
-* Maak handmatig XHR-verzoeken opnieuw met krullen, maar zorg dat u alle kopteksten en details kopieert, omdat elk verzoek een verschil kan maken. sommige browserconsoles staan toe dat de krullopdracht wordt gekopieerd
+* Maak handmatig XHR-verzoeken opnieuw met krullen, maar zorg dat u alle kopteksten en details kopieert, aangezien elk verzoek een verschil kan maken. sommige browserconsoles staan toe dat de krullopdracht wordt gekopieerd
 * Verifieer of het verzoek door de manager CORS en niet door de authentificatie, het symbolische filter CSRF, verzenders filters, of andere veiligheidslagen werd ontkend
    * Als de manager van CORS met 200 antwoordt, maar `Access-Control-Allow-Origin` kopbal in de reactie ontbreekt, herzie de logboeken voor ontkenning onder [!DNL DEBUG] in `com.adobe.granite.cors`
 * Als de verzender caching van [!DNL CORS] verzoeken wordt toegelaten
