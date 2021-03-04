@@ -4,17 +4,20 @@ seo-title: E-mailstap verzenden van Forms Workflow gebruiken
 description: De stap E-mail verzenden is geïntroduceerd in AEM Forms 6.4. Met deze stap kunnen we bedrijfsprocessen of een workflow maken waarmee u e-mailberichten met of zonder bijlagen kunt verzenden. De volgende video doorloopt de stappen voor het vormen van de send e-mailcomponent
 seo-description: De stap E-mail verzenden is geïntroduceerd in AEM Forms 6.4. Met deze stap kunnen we bedrijfsprocessen of een workflow maken waarmee u e-mailberichten met of zonder bijlagen kunt verzenden. De volgende video doorloopt de stappen voor het vormen van de send e-mailcomponent
 uuid: d054ebfb-3b9b-4ca4-8355-0eb0ee7febcb
-feature: werkstroom
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
+topic: Ontwikkeling
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -60,6 +63,6 @@ Bekijk de processtap van de workflow. De aangepaste code die aan de processtap i
 >
 >In AEM Forms 6.5 en hoger hebt u deze aangepaste code niet nodig om eigenschappen van metagegevens te maken. Gebruik de functie voor variabelen in AEM workflow
 
-Controleer of het tabblad Bijlagen van de component E-mail verzenden is geconfigureerd volgens de onderstaande schermopname
+Controleer of het tabblad Bijlagen van de component E-mail verzenden is geconfigureerd volgens de onderstaande schermafbeelding
 ![Tabblad E-mailbijlage verzenden](assets/sendemailcomponentconfigure.jpg)De waarde &quot;DOR.pdf&quot; moet overeenkomen met de waarde die is opgegeven in het pad Document of Record die is opgegeven in de verzendopties van het adaptieve formulier.
 
