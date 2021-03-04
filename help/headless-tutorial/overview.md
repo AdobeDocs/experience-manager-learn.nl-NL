@@ -1,10 +1,14 @@
 ---
 title: Zelfstudies zonder koppen AEM
 description: Een verzameling zelfstudies voor het gebruik van Adobe Experience Manager als een CMS zonder koptekst.
+feature: '"Inhoudsfragmenten, API''s"'
+topic: '"Headless, Content Management"'
+role: Developer
+level: Begin
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -60,5 +64,5 @@ AEM Content Services biedt dezelfde inhoudsabstracties die worden gebruikt voor 
 
 Andere AEM die op hoofdloze concepten betrekking hebben omvatten:
 
-* [Aan de slag met de AEM SPA Editor en hoekig](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Aan de slag met de AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
 * [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
