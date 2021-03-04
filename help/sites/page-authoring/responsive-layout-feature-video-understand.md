@@ -3,7 +3,7 @@ title: Responsieve lay-out begrijpen met AEM Sites
 seo-title: Responsieve lay-out begrijpen met AEM Sites
 description: AEM kunt u een responsieve indeling voor uw pagina's gebruiken met de component Layout Container. Met de responsieve lay-out kunnen de auteurs van de inhoud responsieve inhoud voor verschillende apparaten maken en een voorvertoning van de gebruikerservaring in AEM bekijken.
 seo-description: Behandelt de stappen naar een responsieve indeling van de auteur voor verschillende apparaten
-feature: template-editor, page-editor
+feature: Pagina-editor, bewerkbare sjablonen
 topics: authoring, responsive
 audience: author, marketer
 doc-type: feature video
@@ -11,10 +11,13 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 4252
 thumbnail: 32012.jpg
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Intermediair
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '137'
 ht-degree: 1%
 
 ---
