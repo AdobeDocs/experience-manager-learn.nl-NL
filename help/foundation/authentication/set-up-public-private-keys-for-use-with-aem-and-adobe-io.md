@@ -1,17 +1,20 @@
 ---
 seo: Set up public and private keys for use with AEM and Adobe I/O
-description: 'AEM gebruikt paren met openbare/persoonlijke sleutels om veilig te communiceren met Adobe I/O en andere webservices. Deze korte zelfstudie laat zien hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het openssl-opdrachtregelprogramma dat zowel met AEM als met Adobe I/O werkt. '
+description: 'AEM gebruikt openbare/privé zeer belangrijke paren om veilig met Adobe I/O en andere Webdiensten te communiceren. Deze korte zelfstudie laat zien hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het openssl-opdrachtregelprogramma dat zowel met AEM als met Adobe I/O werkt. '
 version: 6.4, 6.5
-feature: authentication
+feature: 'Gebruikers en groepen '
 topics: authentication, integrations
 activity: setup
 audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: 3f973e36531a2d04cbaf6bb8dd70b39fef7d8b2f
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -19,7 +22,7 @@ ht-degree: 0%
 
 # Openbare en persoonlijke sleutels instellen voor gebruik met Adobe I/O
 
-AEM gebruikt paren met openbare/persoonlijke sleutels om veilig te communiceren met Adobe I/O en andere webservices. Deze korte zelfstudie laat zien hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het opdrachtregelprogramma [!DNL openssl] dat zowel met AEM als met Adobe I/O werkt.
+AEM gebruikt openbare/privé zeer belangrijke paren om veilig met Adobe I/O en andere Webdiensten te communiceren. Deze korte zelfstudie laat zien hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het opdrachtregelgereedschap [!DNL openssl] dat zowel met AEM als met Adobe I/O werkt.
 
 >[!CAUTION]
 >
@@ -132,15 +135,15 @@ Wanneer de persoonlijke sleutel van het verstrekte sleutelarchief in AEM sleutel
 
 ## De openbare sleutel toevoegen aan Adobe I/O {#adding-the-public-key-to-adobe-i-o}
 
-De overeenkomende openbare sleutel moet naar Adobe I/O worden geüpload om de gebruiker van de AEM service te kunnen toestaan, die de overeenkomende persoonlijke sleutel van de openbare sleutel heeft om veilig te kunnen communiceren.
+De passende openbare sleutel moet aan Adobe I/O worden geupload om de AEM de dienstgebruiker toe te staan, die de overeenkomstige privé van de openbare sleutel heeft om veilig te communiceren.
 
-### Een nieuwe Adobe I/O-integratie maken {#create-a-adobe-i-o-new-integration}
+### Een Adobe I/O nieuwe integratie maken {#create-a-adobe-i-o-new-integration}
 
-![Nieuwe Adobe I/O-integratie maken](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
+![Een nieuwe Adobe I/O-integratie maken](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
 
 *[[!UICONTROL Create Adobe I/O Integration]](https://console.adobe.io/) >[!UICONTROL New Integration]*
 
-Voor een nieuwe integratie in Adobe I/O moet u een openbaar certificaat uploaden. Upload **certificate.crt** die door het `openssl req` bevel wordt geproduceerd.
+Voor het maken van een nieuwe integratie in Adobe I/O moet u een openbaar certificaat uploaden. Upload **certificate.crt** die door het `openssl req` bevel wordt geproduceerd.
 
 ### Controleren of de openbare sleutels zijn geladen in Adobe I/O {#verify-the-public-keys-are-loaded-in-adobe-i-o}
 
@@ -148,4 +151,4 @@ Voor een nieuwe integratie in Adobe I/O moet u een openbaar certificaat uploaden
 
 De geïnstalleerde openbare sleutels en hun vervaldatums zijn vermeld in [!UICONTROL Integrations] console op Adobe I/O. U kunt meerdere openbare sleutels toevoegen via de knop **[!UICONTROL Add a public key]**.
 
-AEM houden nu de persoonlijke sleutel en de integratie van Adobe I/O houdt de overeenkomstige openbare sleutel, die AEM toestaat om veilig met Adobe I/O te communiceren.
+Nu AEM houden de privé sleutel en de integratie van Adobe I/O houdt de overeenkomstige openbare sleutel, die AEM toestaat om veilig met Adobe I/O te communiceren.
