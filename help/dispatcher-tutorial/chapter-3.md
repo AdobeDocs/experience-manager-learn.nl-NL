@@ -1,12 +1,10 @@
 ---
 title: Hoofdstuk 3 - Geavanceerde onderwerpen in cache
-seo-title: AEM Dispatcher Cache demystified - Chapter 3 - Advanced Caching Topics
 description: Hoofdstuk 3 van het Gedemystificeerde leerprogramma van het Geheime voorgeheugen van de AEM van de Verzender behandelt hoe te om de beperkingen te overwinnen die in Hoofdstuk 2 worden besproken.
-seo-description: Hoofdstuk 3 van het Gedemystificeerde leerprogramma van het Geheime voorgeheugen van de AEM van de Verzender behandelt hoe te om de beperkingen te overwinnen die in Hoofdstuk 2 worden besproken.
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '6187'
+source-wordcount: '6162'
 ht-degree: 0%
 
 ---
@@ -143,7 +141,7 @@ U hoeft slechts één regel in gedachten te houden:
 
 Valideer altijd van binnenuit aan het buitengeheim voorgeheugen. Als u eerst een buitencache ongeldig hebt gemaakt, wordt de inhoud van een binnencache mogelijk opnieuw in het cachegeheugen opgeslagen. Maak geen veronderstellingen op welk moment een cache opnieuw vers is - zorg ervoor. Het beste, door de ongeldigmaking van het buitengeheim voorgeheugen _after_ te teweegbrengen ongeldig makend binnen.
 
-Dat is de theorie. Maar in de praktijk is er een aantal gotchas. De gebeurtenissen moeten - potentieel over een netwerk worden verdeeld. In de praktijk maakt dit het moeilijkste invalidatieschema om te implementeren.
+Dat is de theorie. Maar in de praktijk is er een aantal gotchas. De gebeurtenissen moeten - potentieel over een netwerk worden verdeeld. In de praktijk maakt dit het moeilijkste invalidatieschema om uit te voeren.
 
 #### Automatisch - retoucheren
 
@@ -397,7 +395,7 @@ We raden u aan de SDI-documentatie zorgvuldig te bestuderen. Er zijn nog een paa
 
 #### Verwijzingen
 
-* [docs.oracle.com - Aangepaste JSP-tags schrijven](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html)
+* [docs.oracle.com - Hoe kan ik aangepaste JSP-tags schrijven](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html)
 * [Dominik Süß - Componentfilters maken en gebruiken](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
 * [sling.apache.org - Sling Dynamic Includes](https://sling.apache.org/documentation/bundles/dynamic-includes.html)
 * [helpx.adobe.com - Sling Dynamic Includes instellen in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
