@@ -1,7 +1,7 @@
 ---
 title: Een Asset compute metagegevensworker ontwikkelen
 description: Leer hoe u een Asset compute-metagegevensworker maakt die de meest gebruikte kleuren in een afbeeldingselement afleidt en de namen van de kleuren in AEM terugschrijft naar de metagegevens van het element.
-feature: asset-compute
+feature: asset compute microservices
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
+topic: Integratie, ontwikkeling
+role: Developer
+level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: c2a8e6c3ae6dcaa45816b1d3efe569126c6c1e60
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -208,7 +211,7 @@ Omdat ons Asset compute-project twee workers bevat (de vorige [cirkeluitvoering]
 
 ## De worker{#test} testen
 
-Metagegevensworkers kunnen worden getest met behulp van hetzelfde testframework voor Asset compute als binaire uitvoeringen[. ](../test-debug/test.md) Het enige verschil is het `rendition.xxx` dossier in het testgeval moet de verwachte XMP (XML) vertoning zijn.
+Metagegevensworkers kunnen worden getest met behulp van hetzelfde testframework voor Asset compute als binaire uitvoeringen](../test-debug/test.md). [ Het enige verschil is het `rendition.xxx` dossier in het testgeval moet de verwachte XMP (XML) vertoning zijn.
 
 1. Maak de volgende structuur in het project Asset compute:
 
