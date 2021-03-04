@@ -1,24 +1,27 @@
 ---
-title: Dynamische media Klassieke hoofdworkflow en voorvertoningselementen
-description: Leer over het belangrijkste werkschema in Dynamische Media Klassiek, dat de drie stappen - creeert (en uploadt), Auteur (en publiceert), en levert omvat. Leer vervolgens hoe u een voorvertoning van elementen kunt weergeven in Dynamic Media Classic.
+title: Dynamic Media Classic Main Workflow en Previewing Assets
+description: Leer meer over de hoofdworkflow in Dynamic Media Classic, die de drie stappen - Maken (en uploaden), Auteur (en Publiceren) en Leveren bevat. Leer vervolgens hoe u een voorvertoning van elementen kunt weergeven in Dynamic Media Classic.
 sub-product: dynamic-media
-feature: workflow
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
+topic: Inhoudsbeheer
+role: Zakelijke praktiserer
+level: Begin
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
 
 
-# Dynamic Media Classic HoofdWorkflow en het voorvertonen van elementen {#main-workflow}
+# Dynamic Media Classic Main Workflow en Previewing Assets {#main-workflow}
 
-Dynamische media ondersteunt het workflowproces Maken (en uploaden), Auteur (en Publiceren) en Leveren. U begint door activa te uploaden, dan iets met die activa te doen zoals het bouwen van een Reeks van het Beeld, en tenslotte te publiceren om hen levend te maken. De stap Build is optioneel voor bepaalde workflows. Als het bijvoorbeeld uw doel is om alleen dynamisch in te zoomen op afbeeldingen of video om te zetten en te publiceren voor streaming, zijn er geen benodigde stappen voor het maken van een build.
+Dynamic Media ondersteunt het workflowproces Maken (en uploaden), Auteur (en Publiceren) en Leveren. U begint door activa te uploaden, dan iets met die activa te doen zoals het bouwen van een Reeks van het Beeld, en tenslotte te publiceren om hen levend te maken. De stap Build is optioneel voor bepaalde workflows. Als het bijvoorbeeld uw doel is om alleen dynamisch in te zoomen op afbeeldingen of video om te zetten en te publiceren voor streaming, zijn er geen benodigde stappen voor het maken van een build.
 
 ![afbeelding](assets/main-workflow/create-author-deliver.jpg)
 
@@ -37,7 +40,7 @@ Zie de volledige lijst met [Ondersteunde bestandstypen](https://docs.adobe.com/c
 U kunt broninhoud op verschillende manieren uploaden:
 
 - Direct vanaf uw bureaublad of lokaal netwerk. [Leer hoe](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
-- Vanuit een Dynamic Media Classic FTP-server. [Leer hoe](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+- Van een Classic FTP-server van Dynamic Media. [Leer hoe](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 
 De standaardmodus is Van bureaublad, waar u naar bestanden op uw lokale netwerk bladert en het uploaden start.
 
@@ -71,19 +74,19 @@ Hoewel dit niet verplicht is, kunt u tijdens het uploaden met een van de twee bo
 
 Meer informatie over [Taakopties](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
-Uploaden is de eerste noodzakelijke stap in een workflow, omdat Dynamic Media Classic niet kan werken met inhoud die zich nog niet in het systeem bevindt. Achter de schermen tijdens het uploaden registreert het systeem elk geüploade element met de gecentraliseerde Dynamic Media Classic-database, wijst een id toe en kopieert het naar opslag. Bovendien zet het systeem afbeeldingsbestanden om in een indeling waarmee u op dynamische wijze kunt vergroten/verkleinen en zoomen en zet het videobestanden om in de webvriendelijke indeling van MP4.
+Uploaden is de eerste noodzakelijke stap in een workflow, omdat Dynamic Media Classic niet kan werken met inhoud die zich nog niet in het systeem bevindt. Achter de schermen tijdens het uploaden registreert het systeem elk geüpload element met de gecentraliseerde Dynamic Media Classic-database, wijst het een id toe en kopieert het naar opslag. Bovendien zet het systeem afbeeldingsbestanden om in een indeling waarmee u op dynamische wijze kunt vergroten/verkleinen en zoomen en zet het videobestanden om in de webvriendelijke indeling van MP4.
 
 ### Concept: Dit is wat er gebeurt met afbeeldingen wanneer u deze uploadt naar Dynamic Media Classic
 
-Wanneer u een afbeelding van een willekeurig type uploadt naar Dynamic Media Classic, wordt deze omgezet in een master afbeeldingsindeling die een Piramid TIFF of P-TIFF wordt genoemd. Een P-TIFF is vergelijkbaar met de indeling van een gelaagde TIFF-bitmapafbeelding, behalve dat het bestand in plaats van verschillende lagen meerdere formaten (resoluties) van dezelfde afbeelding bevat.
+Wanneer u een afbeelding van een willekeurig type uploadt naar Dynamic Media Classic, wordt deze omgezet naar een master afbeeldingsindeling die een Piramid TIFF of P-TIFF wordt genoemd. Een P-TIFF is vergelijkbaar met de indeling van een gelaagde TIFF-bitmapafbeelding, behalve dat het bestand in plaats van verschillende lagen meerdere formaten (resoluties) van dezelfde afbeelding bevat.
 
 ![afbeelding](assets/main-workflow/pyramid-p-tiff.png)
 
-Tijdens het omzetten van de afbeelding maakt Dynamic Media Classic gebruik van een &#39;momentopname&#39; van de volledige grootte van de afbeelding, wordt die met de helft geschaald en opgeslagen, wordt de afbeelding met de helft geschaald en opgeslagen, enzovoort, totdat deze wordt gevuld met even veelvouden van de oorspronkelijke grootte. Een P-TIFF van 2000 pixels beschikt bijvoorbeeld over een grootte van 1000, 500, 250 en 125 pixels (en kleiner) in hetzelfde bestand. Het P-TIFF-bestand is de indeling van een zogenaamde &quot;master afbeelding&quot; in Dynamic Media Classic.
+Tijdens het omzetten van de afbeelding maakt Dynamic Media Classic gebruik van een &#39;momentopname&#39; van de volledige grootte van de afbeelding, schaalt deze met de helft en slaat deze op, schaalt deze nogmaals met de helft en slaat deze op, enzovoort, totdat deze wordt gevuld met even veelvouden van de oorspronkelijke grootte. Een P-TIFF van 2000 pixels beschikt bijvoorbeeld over een grootte van 1000, 500, 250 en 125 pixels (en kleiner) in hetzelfde bestand. Het P-TIFF-bestand is de indeling van wat een &quot;master afbeelding&quot; in Dynamic Media Classic wordt genoemd.
 
-Wanneer u om een bepaalde groottebeeld verzoekt, staat het creëren van P-TIFF de Server van het Beeld voor Dynamische Klassieke Media toe om de volgende grotere grootte snel te vinden en het neer te schrapen. Als u bijvoorbeeld een afbeelding van 2000 pixels uploadt en een afbeelding van 100 pixels aanvraagt, vindt Dynamic Media Classic de versie van 125 pixels en wordt deze verkleind tot 100 pixels in plaats van te schalen van 2000 naar 100 pixels. Dit maakt de bewerking zeer snel. Wanneer u op een afbeelding zoomt, kan de zoomviewer bovendien alleen een tegel van de afbeelding waarop wordt ingezoomd aanvragen in plaats van de volledige afbeelding met volledige resolutie. Zo ondersteunt de master afbeeldingsindeling, het P-TIFF-bestand, zowel dynamische vergroting als vergroting.
+Wanneer u om een bepaalde groottebeeld verzoekt, staat het creëren van P-TIFF de Server van het Beeld voor de Klassiek van Dynamic Media toe om de volgende grotere grootte snel te vinden en het neer te schrapen. Als u bijvoorbeeld een afbeelding van 2000 pixels uploadt en een afbeelding van 100 pixels aanvraagt, vindt Dynamic Media Classic de versie van 125 pixels en schaalt deze naar 100 pixels in plaats van te schalen van 2000 naar 100 pixels. Dit maakt de bewerking zeer snel. Wanneer u op een afbeelding zoomt, kan de zoomviewer bovendien alleen een tegel van de afbeelding waarop wordt ingezoomd aanvragen in plaats van de volledige afbeelding met volledige resolutie. Zo ondersteunt de master afbeeldingsindeling, het P-TIFF-bestand, zowel dynamische vergroting als vergroting.
 
-Op dezelfde manier kunt u uw master bronvideo uploaden naar Dynamic Media Classic, en bij het uploaden van Dynamic Media Classic kunt u deze automatisch vergroten of verkleinen en converteren naar de webvriendelijke indeling van MP4.
+Op dezelfde manier kunt u uw master bronvideo uploaden naar Dynamic Media Classic, en bij het uploaden kunt u de grootte van de video automatisch aanpassen en deze converteren naar de webvriendelijke indeling MP4.
 
 ### Miniatuurregels voor het bepalen van de optimale grootte voor de afbeeldingen die u uploadt
 
@@ -96,7 +99,7 @@ Op dezelfde manier kunt u uw master bronvideo uploaden naar Dynamic Media Classi
 
 **Er is geen minimumgrootte voor zoomen, maar de viewers zoomen standaard niet verder dan 100%.** Als de afbeelding te klein is, wordt er niet op ingezoomd of wordt er slechts in een kleine hoeveelheid ingezoomd om te voorkomen dat de afbeelding er slecht uitziet.
 
-**Hoewel er geen minimale afbeeldingsgrootte is, raden we u niet aan gigantische afbeeldingen te uploaden.** Een gigantische afbeelding kan worden beschouwd als meer dan 4000 pixels. Bij het uploaden van afbeeldingen van deze grootte kunnen mogelijke onvolkomenheden optreden, zoals stofkorrels of haren in de afbeelding. Zulke afbeeldingen nemen ook meer ruimte in beslag op de Dynamic Media Classic-server, waardoor u uw contractueel vastgelegde opslaglimiet kunt overschrijden.
+**Hoewel er geen minimale afbeeldingsgrootte is, raden we u niet aan gigantische afbeeldingen te uploaden.** Een gigantische afbeelding kan worden beschouwd als meer dan 4000 pixels. Bij het uploaden van afbeeldingen van deze grootte kunnen mogelijke onvolkomenheden optreden, zoals stofkorrels of haren in de afbeelding. Dergelijke afbeeldingen nemen ook meer ruimte in beslag op de Dynamic Media Classic-server, waardoor u uw contractueel vastgelegde opslaglimiet kunt overschrijden.
 
 Meer informatie over [Bestanden uploaden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
@@ -108,7 +111,7 @@ Nadat u de inhoud hebt gemaakt en geüpload, gaat u nieuwe rich media-elementen 
 >
 >Zorg ervoor dat al uw elementen zijn gemarkeerd voor publicatie. Hoewel standaard alle elementen automatisch worden gemarkeerd voor publicatie tijdens het uploaden, moeten nieuw geschreven elementen uit uw geüploade inhoud ook worden gemarkeerd voor publicatie.
 
-Nadat u het nieuwe element hebt gemaakt, voert u een publicatietaak uit. U kunt dat handmatig doen of een publicatietaak plannen die automatisch wordt uitgevoerd. Wanneer u publiceert, wordt alle inhoud van de privésfeer, Dynamic Media Classic, naar het publiek gekopieerd en wordt de serversfeer van de vergelijking gepubliceerd. Het product van een publicatietaak voor dynamische media is een unieke URL voor elk gepubliceerd element.
+Nadat u het nieuwe element hebt gemaakt, voert u een publicatietaak uit. U kunt dat handmatig doen of een publicatietaak plannen die automatisch wordt uitgevoerd. Door te publiceren wordt alle inhoud van de privésfeer, Dynamic Media Classic, gekopieerd naar het publiek, publiceert u de serversfeer van de vergelijking. Het product van een Dynamic Media-publicatietaak is een unieke URL voor elk gepubliceerd element.
 
 De server waarnaar u publiceert, is afhankelijk van het type inhoud en workflow. Bijvoorbeeld, gaan alle beelden naar de Server van het Beeld en het stromen video aan de Server FMS. Voor het gemak zullen we het hebben over een &quot;publicatie&quot; als één gebeurtenis op één server.
 
@@ -118,9 +121,9 @@ Bij het publiceren wordt alle inhoud gepubliceerd die is gemarkeerd voor publica
 >
 >Automatiseer uw publicatietaken en plant een Volledige publicatie die elke dag om 12.00 uur of om het even welke tijd laat in de avond wordt uitgevoerd.
 
-### Concept: De Klassieke URL voor dynamische media
+### Concept: De klassieke Dynamic Media-URL begrijpen
 
-Het uiteindelijke product van een dynamische Media Classic-workflow is een URL die naar het element wijst (of het nu gaat om een afbeeldingsset of een adaptieve videoset). Deze URL&#39;s zijn zeer voorspelbaar en volgen hetzelfde patroon. In het geval van afbeeldingen wordt elke afbeelding gegenereerd op basis van de master P-TIFF-afbeelding.
+Het uiteindelijke product van een Klassieke Dynamic Media-workflow is een URL die naar het element verwijst (of het nu gaat om een afbeeldingsset of een adaptieve videoset). Deze URL&#39;s zijn zeer voorspelbaar en volgen hetzelfde patroon. In het geval van afbeeldingen wordt elke afbeelding gegenereerd op basis van de master P-TIFF-afbeelding.
 
 Hier volgt de syntaxis voor de URL van een afbeelding met een aantal voorbeelden:
 
@@ -132,7 +135,7 @@ In het eerste voorbeeld is het virtuele pad naar de afbeelding &quot;Backpack_A&
 
 In het tweede voorbeeld wordt een zogenaamde &quot;voorinstelling afbeelding&quot; toegepast op dezelfde Backpack_A-afbeelding, zoals aangegeven door $!_template300$. De $-symbolen aan weerszijden van de expressie geven aan dat een voorinstelling voor een afbeelding, een set wijzigingstoetsen in pakketten, wordt toegepast op de afbeelding.
 
-Zodra u begrijpt hoe Dynamische Media Klassieke URLs wordt samengebracht, dan begrijpt u hoe te om hen te veranderen programmatically en hoe te om hen te integreren dieper in uw plaats en backendsystemen.
+Als u eenmaal begrijpt hoe Dynamic Media Classic URL&#39;s worden samengesteld, begrijpt u hoe u deze programmatisch kunt wijzigen en hoe u ze dieper kunt integreren in uw site en back-endsystemen.
 
 ### Concept: De vertraging in cache
 
@@ -151,11 +154,11 @@ Leer hoe te om [manueel het Geheime voorgeheugen voor URLs te ontruimen die moet
 
 ## Stap 3: Leveren
 
-Vergeet niet dat het uiteindelijke product van een Klassieke Dynamic Media-workflow een URL is die naar het element verwijst. De URL verwijst mogelijk naar een afzonderlijke afbeelding, een Afbeeldingsset, een Spin-set of een andere verzameling of video in de Afbeeldingsset. U moet die URL nemen en er iets mee doen, zoals uw HTML bewerken zodat de `<IMG>`-tags verwijzen naar de Dynamic Media Classic-afbeelding in plaats van naar een afbeelding die van uw huidige site afkomstig is.
+Vergeet niet dat het uiteindelijke product van een Klassieke Dynamic Media-workflow een URL is die naar het element verwijst. De URL verwijst mogelijk naar een afzonderlijke afbeelding, een Afbeeldingsset, een Spin-set of een andere verzameling of video in de Afbeeldingsset. U moet die URL gebruiken en er iets mee doen, zoals uw HTML bewerken zodat de `<IMG>`-tags verwijzen naar de klassieke Dynamic Media-afbeelding in plaats van naar een afbeelding die van uw huidige site afkomstig is.
 
 In de stap Afleveren moet u deze URL&#39;s integreren in uw website, mobiele app, e-mailcampagne of een ander digitaal aanraakpunt waarop u het element wilt weergeven.
 
-Voorbeeld van het integreren van de Klassieke URL voor dynamische media voor een afbeelding in een website:
+Voorbeeld van de integratie van de klassieke Dynamic Media-URL voor een afbeelding in een website:
 
 ![afbeelding](assets/main-workflow/example-url-1.png)
 
@@ -171,7 +174,7 @@ Voorbeeld van een koppeling (in rood) waarmee een afbeeldingsset in een viewer w
 
 >[!IMPORTANT]
 >
->U moet de dynamische media Klassieke URL&#39;s integreren in uw website, mobiele app, e-mail en andere digitale aanraakpunten — Dynamic Media Classic kan dat niet voor u!
+>U moet de klassieke Dynamic Media-URL&#39;s integreren in uw website, mobiele app, e-mail en andere digitale aanraakpunten — Dynamic Media Classic kan dat niet voor u!
 
 ## Elementen voorvertonen
 
