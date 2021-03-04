@@ -4,17 +4,20 @@ seo-title: Aangepaste assettypen aanbieden in AEM Forms
 description: Deel 2 van Aangepaste assettypen in AEM Forms
 seo-description: Deel 2 van Aangepaste assettypen in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
-feature: adaptive-forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
+topic: Ontwikkeling
+role: Developer
+level: Ervaren
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
