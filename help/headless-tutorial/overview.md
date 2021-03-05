@@ -6,9 +6,9 @@ topic: Koploos, inhoudsbeheer
 role: Developer
 level: Begin
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,6 @@ ht-degree: 0%
 Adobe Experience Manager heeft meerdere opties om eindpunten zonder kop te definiëren en de inhoud ervan als JSON te leveren. Gebruik praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken en te kiezen wat bij u past.
 
 ## Zelfstudie AEM GraphQL API&#39;s
-
->[!CAUTION]
->
-> De AEM GraphQL API voor de Levering van Inhoudsfragmenten is op verzoek beschikbaar.
-> Neem contact op met de Adobe Support om de API voor uw AEM in te schakelen als een Cloud Service-programma.
 
 GrafiekQL APIs voor Inhoudsfragmenten AEM
 ondersteunt CMS-scenario&#39;s zonder kop waarbij externe clienttoepassingen ervaringen renderen met inhoud die in AEM wordt beheerd.
