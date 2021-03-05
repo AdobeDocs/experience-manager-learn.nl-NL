@@ -15,9 +15,9 @@ topic: Koploos, inhoudsbeheer
 role: Developer
 level: Begin
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: cae6e32baa256d4c94fe317eb31cd5163cdae41f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,10 @@ Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de stappen in de 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
 De video hierboven biedt een uitgebreid overzicht van het werken met Content Fragment Models.
+
+>[!CAUTION]
+>
+> In de bovenstaande video ziet u hoe het model **Contributor** met de naam `Contributors` is gemaakt. Wanneer u de stappen uitvoert in uw eigen omgeving, moet u ervoor zorgen dat de titel de unieke vorm gebruikt: `Contributor` zonder **s**. De naamgeving van het model van het inhoudsfragment bepaalt de aanroepen van de GraphQL API die later in de zelfstudie worden uitgevoerd.
 
 ## Inspect the Adventure Content Fragment Model
 
