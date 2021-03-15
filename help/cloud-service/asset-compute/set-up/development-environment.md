@@ -13,7 +13,7 @@ topic: Integratie, ontwikkeling
 role: Developer
 level: Tussentijdse, ervaren
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 53c20b9774c15b04a1c78c7c0c7b61a60996bf60
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Hier volgt een korte set-upinstructies. Nadere bijzonderheden over deze ontwikke
 
    ```
    $ docker pull openwhisk/action-nodejs-v12:latest
-   $ docker pull adobeapiplatform/adobe-action-nodejs-v12:latest
+   $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
    ```
 
 1. [Visual Studio-code installeren](https://code.visualstudio.com/download)
