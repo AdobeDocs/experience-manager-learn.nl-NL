@@ -16,9 +16,9 @@ topic: Inhoudsbeheer, ontwikkeling
 role: Developer
 level: Begin
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b11039ef9d373685a4279c01dbd08eb6464acd29
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1947'
 ht-degree: 1%
 
 ---
@@ -134,6 +134,24 @@ De volgende reeks stappen zal plaatsvinden gebruikend een op UNIX gebaseerde ter
            |--- pom.xml
            |--- README.md
            |--- .gitignore
+   ```
+
+### Versie projectanalyse bijwerken
+
+>[!CAUTION]
+>
+> Er bestaat een [bekend probleem](https://github.com/adobe/aem-project-archetype/issues/638) in aardetype versie 25 dat een update vereist naar de versie van **Project Analyser** in het gegenereerde project. De onderstaande stappen zijn **only** nodig voor projecten die met `aemVersion="cloud"` worden geproduceerd.
+
+1. Open het bestand `aem-guides-wknd/poml.xml` met uw favoriete teksteditor.
+1. `aemanalyser.version` bijwerken naar **`0.9.2`**:
+
+   ```diff
+    <properties>
+       ...
+   -   <aemanalyser.version>0.0.18</aemanalyser.version>
+   +   <aemanalyser.version>0.9.2</aemanalyser.version>
+       ...
+    </properties>
    ```
 
 ## Implementeer en bouw het project {#build}
