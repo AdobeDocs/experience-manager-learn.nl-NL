@@ -16,9 +16,9 @@ topic: Inhoudsbeheer, ontwikkeling
 role: Developer
 level: Begin
 translation-type: tm+mt
-source-git-commit: b11039ef9d373685a4279c01dbd08eb6464acd29
+source-git-commit: 600d3e217b93b30cc673af85c1fd1b62ccc37eb1
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1890'
 ht-degree: 1%
 
 ---
@@ -50,11 +50,11 @@ In dit hoofdstuk, zult u een nieuw project van Adobe Experience Manager producer
 
 ## Het project {#create} maken
 
-Er zijn een paar opties voor het creëren van een Maven Multi-module project voor AEM. Deze zelfstudie maakt gebruik van het [Maven AEM Project Archetype **25**](https://github.com/adobe/aem-project-archetype). Cloud Manager biedt ook [een UI-wizard](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html) om het maken van een AEM toepassingsproject te starten. Het onderliggende project dat door de UI van de Manager van de Wolk wordt geproduceerd resulteert in de zelfde structuur zoals direct het gebruiken van archetype.
+Er zijn een paar opties voor het creëren van een Maven Multi-module project voor AEM. Deze zelfstudie maakt gebruik van het [Maven AEM Project Archetype **26**](https://github.com/adobe/aem-project-archetype). Cloud Manager biedt ook [een UI-wizard](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html) om het maken van een AEM toepassingsproject te starten. Het onderliggende project dat door de UI van de Manager van de Wolk wordt geproduceerd resulteert in de zelfde structuur zoals direct het gebruiken van archetype.
 
 >[!NOTE]
 >
->Deze zelfstudie gebruikt versie **25** van het archetype. Het is altijd een beste praktijk om de **recentste** versie van archetype te gebruiken om een nieuw project te produceren.
+>Deze zelfstudie gebruikt versie **26** van het archetype. Het is altijd een beste praktijk om de **recentste** versie van archetype te gebruiken om een nieuw project te produceren.
 
 De volgende reeks stappen zal plaatsvinden gebruikend een op UNIX gebaseerde terminal van de bevellijn, maar zou gelijkaardig moeten zijn als het gebruiken van een terminal van Vensters.
 
@@ -100,7 +100,7 @@ De volgende reeks stappen zal plaatsvinden gebruikend een op UNIX gebaseerde ter
    mvn -B archetype:generate \
        -D archetypeGroupId=com.adobe.aem \
        -D archetypeArtifactId=aem-project-archetype \
-       -D archetypeVersion=25 \
+       -D archetypeVersion=26 \
        -D appTitle="WKND Sites Project" \
        -D appId="wknd" \
        -D groupId="com.adobe.aem.guides.wknd" \
@@ -111,7 +111,7 @@ De volgende reeks stappen zal plaatsvinden gebruikend een op UNIX gebaseerde ter
 
    >[!NOTE]
    >
-   > Als u AEM 6.5.5.0+ of 6.4.8.1+ gebruikt, vervangt u `aemVersion="cloud"` door uw doelversie van AEM, d.w.z `aemVersion="6.5.5"` of `aemVersion="6.4.8.1"`
+   > Bij AEM 6.5.5+ vervangt u `aemVersion="cloud"` door `aemVersion="6.5.5"`. Gebruik `aemVersion="6.4.8"` als u zich richt op 6.4.8+.
 
    Een volledige lijst van beschikbare eigenschappen voor het vormen van een project [kan hier ](https://github.com/adobe/aem-project-archetype#available-properties) worden gevonden.
 
@@ -134,24 +134,6 @@ De volgende reeks stappen zal plaatsvinden gebruikend een op UNIX gebaseerde ter
            |--- pom.xml
            |--- README.md
            |--- .gitignore
-   ```
-
-### Versie projectanalyse bijwerken
-
->[!CAUTION]
->
-> Er bestaat een [bekend probleem](https://github.com/adobe/aem-project-archetype/issues/638) in aardetype versie 25 dat een update vereist naar de versie van **Project Analyser** in het gegenereerde project. De onderstaande stappen zijn **only** nodig voor projecten die met `aemVersion="cloud"` worden geproduceerd.
-
-1. Open het bestand `aem-guides-wknd/poml.xml` met uw favoriete teksteditor.
-1. `aemanalyser.version` bijwerken naar **`0.9.2`**:
-
-   ```diff
-    <properties>
-       ...
-   -   <aemanalyser.version>0.0.18</aemanalyser.version>
-   +   <aemanalyser.version>0.9.2</aemanalyser.version>
-       ...
-    </properties>
    ```
 
 ## Implementeer en bouw het project {#build}
