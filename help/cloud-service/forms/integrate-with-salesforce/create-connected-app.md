@@ -1,0 +1,29 @@
+---
+title: Een met Salesforce verbonden app maken.
+description: Met de Connected App kunt u Salesforce integreren met toepassingen van derden, zoals AEM Forms met Salesforce.
+solution: Experience Manager Forms
+type: Documentatie
+role: Developer
+level: Begin, tussenliggend
+version: cloud-service
+feature: Adaptieve Forms
+topic: Ontwikkeling
+kt: 7152
+thumbnail: 331757.jpg
+translation-type: tm+mt
+source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 2%
+
+---
+
+
+# Verbonden app maken
+
+Een verbonden app is een framework dat een externe toepassing in staat stelt met Salesforce te integreren met behulp van API&#39;s en standaardprotocollen, zoals SAML, OAuth en OpenID Connect. Verbonden apps gebruiken deze protocollen om Single Sign-On (SSO) voor externe apps te verifiëren, autoriseren en beschikbaar te stellen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
+
+>[!NOTE]
+>Zorg ervoor dat u een account maakt in de [Salesforce Developer Edition](https://developer.salesforce.com/signup) omdat de REST API&#39;s standaard zijn ingeschakeld in de ontwikkelaarsversie.
