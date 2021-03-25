@@ -5,10 +5,10 @@ breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
 translation-type: tm+mt
-source-git-commit: 59b786d95d1428916adad37ceca4412b93463e9b
+source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 14%
+source-wordcount: '353'
+ht-degree: 13%
 
 ---
 
@@ -83,6 +83,15 @@ ht-degree: 14%
 + Migratie {#migration}
    + [De tool Content Transfer](./migration/content-transfer-tool.md)
    + [Bulkimport van activa](./migration/bulk-import.md)
++ Forms{#forms}
+   + [Integreren met Salesforce]{#integrate-with-salesforce}
+      + [Inleiding](./forms/integrate-with-salesforce/introduction.md)
+      + [Een verbonden app maken](./forms/integrate-with-salesforce/create-connected-app.md)
+      + [Wagerbestand maken](./forms/integrate-with-salesforce/describe-rest-api.md)
+      + [Gegevensbron maken](./forms/integrate-with-salesforce/create-data-source.md)
+      + [Formuliergegevensmodel maken](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Indiening van testformulieren](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+      + [Klikgebeurtenis testen](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Uitbreidbaarheid asset compute{#asset-compute}
    + [Overzicht](./asset-compute/overview.md)
    + Instellen{#set-up}
@@ -111,4 +120,3 @@ ht-degree: 14%
    + [SPA Editor (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites en Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Op token gebaseerde verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
-
