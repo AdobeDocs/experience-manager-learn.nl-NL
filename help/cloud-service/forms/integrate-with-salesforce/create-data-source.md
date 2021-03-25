@@ -1,0 +1,24 @@
+---
+title: 'Een configuratie voor cloudservices maken '
+description: Gegevensbron maken voor verbinding met Salesforce met de OAuth-referenties
+solution: Experience Manager Forms
+type: Documentatie
+role: Developer
+level: Begin, tussenliggend
+version: cloud-service
+topic: Ontwikkeling
+kt: 7148
+thumbnail: 331755.jpg
+translation-type: tm+mt
+source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+workflow-type: tm+mt
+source-wordcount: '39'
+ht-degree: 7%
+
+---
+
+# Gegevensbron maken
+
+Een gegevensbron maken die door REST is ondersteund, met behulp van het wagerbestand dat in de vorige stap is gemaakt
+
+>[!VIDEO](https://video.tv.adobe.com/v/331755/?quality=12&learn=on)
