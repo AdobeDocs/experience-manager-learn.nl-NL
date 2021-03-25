@@ -1,0 +1,28 @@
+---
+title: Een waggbestand maken om de Salesforce REST API te beschrijven
+description: Het wisselaarbestand definieert de API-eindpunten en de invoer- en uitvoerparameters
+solution: Experience Manager Forms
+type: Documentatie
+role: Developer
+level: Begin, tussenliggend
+version: cloud-service
+feature: Adaptieve Forms
+topic: Ontwikkeling
+kt: 7147
+thumbnail: 331754.jpg
+translation-type: tm+mt
+source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+workflow-type: tm+mt
+source-wordcount: '55'
+ht-degree: 5%
+
+---
+
+
+# Waggerbestand maken
+
+Beschrijf de Salesforce REST API gebruikend [OPEN API 2.0 specificatie](https://swagger.io/docs/specification/2-0/basic-structure/)
+
+>[!VIDEO](https://video.tv.adobe.com/v/331754?quality=12&learn=on)
+
+Het kassisbestand kan worden gedownload met [beschikbaar hier](assets/sfdc-rest-swagger.zip)
