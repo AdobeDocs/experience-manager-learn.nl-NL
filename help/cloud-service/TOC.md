@@ -5,10 +5,10 @@ breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 13%
+source-wordcount: '413'
+ht-degree: 11%
 
 ---
 
@@ -84,7 +84,26 @@ ht-degree: 13%
    + [De tool Content Transfer](./migration/content-transfer-tool.md)
    + [Bulkimport van activa](./migration/bulk-import.md)
 + Forms{#forms}
-   + [Integreren met Salesforce]{#integrate-with-salesforce}
+   + Aangepast formulier maken{#create-first-af}
+      + [Thema maken](./forms/create-first-af/create-theme.md)
+      + [Sjabloon maken](./forms/create-first-af/create-template.md)
+      + [Fragment maken](./forms/create-first-af/create-fragments.md)
+      + [Formulier maken](./forms/create-first-af/create-af.md)
+      + [Hoofddeelvenster configureren](./forms/create-first-af/configure-root-panel.md)
+      + [Deelvenster Personen configureren](./forms/create-first-af/configure-people-panel.md)
+      + [Deelvenster Inkomsten configureren](./forms/create-first-af/configure-income-panel.md)
+      + [Deelvenster Elementen configureren](./forms/create-first-af/configure-assets-panel.md)
+      + [Deelvenster Start configureren](./forms/create-first-af/configure-start-panel.md)
+      + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
+   + Revisiworkflow maken{#create-aem-workflow}
+      + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
+      + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
+   + Adobe Sign met AEM Forms{forms-and-sign}
+      + [Adobe Sign API-toepassing](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Adobe Sign Cloud Configuration](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [Adaptief formulier maken](./forms/forms-and-sign/create-adaptive-form.md)
+      + [Configureren voor invullen en ondertekenen](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Integreren met Salesforce{#integrate-with-salesforce}
       + [Inleiding](./forms/integrate-with-salesforce/introduction.md)
       + [Een verbonden app maken](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Wagerbestand maken](./forms/integrate-with-salesforce/describe-rest-api.md)
