@@ -15,9 +15,9 @@ topic: Ontwikkeling
 role: Developer
 level: Intermediair
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -29,10 +29,9 @@ Uitvoer- en Forms Service-API in AEM Forms gebruiken
 
 In dit artikel zullen we het volgende bekijken:
 
-* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de Xdp-sjabloon of pdf om samengevoegde pdf te genereren
-* FormsService - Dit is een zeer veelzijdige service waarmee u gegevens uit en naar PDF-bestanden kunt exporteren/importeren
+* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de xdp-sjabloon of pdf om samengevoegde pdf te genereren. Raadpleeg voor meer informatie de [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) voor de uitvoerservice.
+* FormsService - Dit is een zeer veelzijdige service waarmee u gegevens kunt exporteren/importeren vanuit en naar een PDF-bestand. Raadpleeg voor meer informatie de [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) voor de Forms-service.
 
-De officiële javadoc voor de AEM Forms API wordt [hier](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html) vermeld
 
 Het volgende codefragment exporteert gegevens uit een PDF-bestand
 
