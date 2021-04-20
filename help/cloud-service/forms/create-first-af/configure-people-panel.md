@@ -2,12 +2,12 @@
 title: Deelvenster Personen configureren
 description: Configureer het deelvenster Personen door fragment met muisdetails toe te voegen.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7378
 thumbnail: 332234.jpg
 translation-type: tm+mt

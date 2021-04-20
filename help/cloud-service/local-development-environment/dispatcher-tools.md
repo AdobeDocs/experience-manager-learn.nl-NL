@@ -10,9 +10,9 @@ activity: develop
 audience: developer
 kt: 4679
 thumbnail: 30603.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

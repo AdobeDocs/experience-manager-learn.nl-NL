@@ -2,12 +2,12 @@
 title: Aangepaste formulierfragmenten maken
 description: Een fragment is een herbruikbaar onderdeel van een formulier. Een fragment kan bijvoorbeeld een adresblok of juridische tekst bevatten.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7383
 thumbnail: 332231.jpg
 translation-type: tm+mt

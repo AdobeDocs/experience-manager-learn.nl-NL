@@ -1,16 +1,16 @@
 ---
 title: Andere tools voor foutopsporing AEM SDK
 description: Een verscheidenheid van andere hulpmiddelen kan helpen bij het zuiveren van de lokale snelle start van AEM SDK.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

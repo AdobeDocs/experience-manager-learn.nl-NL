@@ -2,10 +2,10 @@
 title: Gesloten gebruikersgroepen in AEM Assets
 description: Gesloten gebruikersgroepen (CUG's) is een functie die wordt gebruikt om de toegang tot inhoud te beperken tot een bepaalde groep gebruikers op een gepubliceerde site. In deze video ziet u hoe groepen van gebruikers met gesloten deuren kunnen worden gebruikt met Adobe Experience Manager Assets om de toegang tot een specifieke map met middelen te beperken.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Beheer, beveiliging
-feature: Gebruiker en groepen
-role: Beheer
-level: Intermediair
+topic: Administration, Security
+feature: User and Groups
+role: Admin
+level: Intermediate
 kt: 649
 thumbnail: 22155.jpg
 translation-type: tm+mt

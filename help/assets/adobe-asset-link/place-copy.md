@@ -2,12 +2,12 @@
 title: De bewerking Element plaatsen gebruiken
 description: Leer hoe u elementen van AEM Assets kunt gebruiken met de bewerking Kopie plaatsen.
 sub-product: elementen
-feature: Adobe-itemkoppeling
+feature: Adobe Asset Link
 version: cloud-service
 thumbnail: 34049.jpg
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

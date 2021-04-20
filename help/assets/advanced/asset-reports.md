@@ -1,10 +1,10 @@
 ---
 title: Elementenrapporten in AEM Assets
 description: 'AEM Assets biedt een rapportagekader op bedrijfsniveau dat schaalt voor grote opslagplaatsen door een intuïtieve gebruikerservaring. '
-feature: Elementrapporten
-topic: Beheer
-role: Zakelijke praktiserer
-level: Intermediair
+feature: Asset Reports
+topic: Administration
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 648
 thumbnail: 22140.jpg

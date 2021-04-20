@@ -1,12 +1,12 @@
 ---
 title: 'Een hoofdobject maken in de Salesforce-database op de klikgebeurtenis van een knop '
 description: Als lead maken door de postbewerking van het formuliergegevensmodel aan te roepen
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7193
 thumbnail: 331892.jpg
 translation-type: tm+mt

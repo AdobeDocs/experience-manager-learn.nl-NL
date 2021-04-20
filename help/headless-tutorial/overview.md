@@ -1,10 +1,10 @@
 ---
 title: Zelfstudies zonder koppen AEM
 description: Een verzameling zelfstudies voor het gebruik van Adobe Experience Manager als een CMS zonder koptekst.
-feature: Inhoudsfragmenten, API's
-topic: Koploos, inhoudsbeheer
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt

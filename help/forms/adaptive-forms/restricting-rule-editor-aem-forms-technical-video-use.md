@@ -4,16 +4,16 @@ seo-title: De Rule Editor beperken tot specifieke groepen in AEM Forms
 description: De aangepaste formulierregeleditor beperken tot specifieke groepen in AEM
 seo-description: De aangepaste formulierregeleditor beperken tot specifieke groepen in AEM
 uuid: b50f3736-b72e-4154-9ca5-95e10606f4ad
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 5aa35204-1c6d-4a1e-b8cd-79170653471a
-topic: Beheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Administration
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Aangepaste component
 description: Omvat het einde tot eind verwezenlijking van een component van de douanebylijn die authored inhoud toont. Omvat het ontwikkelen van een het Verschuiven Model om bedrijfslogica in te kapselen om de bylinecomponent en overeenkomstige HTML te bevolken om de component terug te geven.
 sub-product: sites
-feature: Core Components, API's
+feature: Core Components, APIs
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,9 +11,9 @@ audience: developer
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-topic: Inhoudsbeheer, ontwikkeling
+topic: Content Management, Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

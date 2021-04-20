@@ -2,12 +2,12 @@
 title: Een met Salesforce verbonden app maken.
 description: Met de Connected App kunt u Salesforce integreren met toepassingen van derden, zoals AEM Forms met Salesforce.
 solution: Experience Manager, Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7152
 thumbnail: 331757.jpg
 translation-type: tm+mt

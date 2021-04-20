@@ -1,13 +1,13 @@
 ---
 title: Uitvoeringen
 description: Meer informatie over uitvoeringen in AEM Assets en over hoe hiervan een voorvertoning kan worden weergegeven.
-feature: Uitvoeringen
-role: Zakelijke praktiserer
-level: Begin
+feature: Renditions
+role: Business Practitioner
+level: Beginner
 version: cloud-service
 kt: 4496
 thumbnail: 32047.jpg
-topic: Inhoudsbeheer
+topic: Content Management
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

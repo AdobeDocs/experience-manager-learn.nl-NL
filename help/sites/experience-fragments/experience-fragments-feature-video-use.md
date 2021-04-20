@@ -2,10 +2,10 @@
 title: Fragmenten voor AEM ervaring gebruiken
 description: Met Experience Fragments kunnen auteurs van inhoud inhoud inhoud hergebruiken via kanalen, waaronder sitepagina's en systemen van derden.
 sub-product: sites, content-services
-feature: Ervaringsfragmenten
-topic: Inhoudsbeheer
-role: Architect, ontwikkelaar, beheerder, praktijkgerichte
-level: Begin
+feature: Experience Fragments
+topic: Content Management
+role: Architect, Developer, Administrator, Business Practitioner
+level: Beginner
 doc-type: feature video
 version: cloud-service
 kt: 194

@@ -1,10 +1,10 @@
 ---
 title: 'Het belang van Cloud Manager in AEM verkennen '
 description: Ontdek het doel van Cloud Manager en hoe deze werkt met AEM als Cloud Service.
-role: Architect, ontwikkelaar
-level: Begin
-type: Zelfstudie
-topic: Architectuur
+role: Architect, Developer
+level: Beginner
+type: Tutorial
+topic: Architecture
 kt: 6922
 thumbnail: 330545.jpg
 translation-type: tm+mt

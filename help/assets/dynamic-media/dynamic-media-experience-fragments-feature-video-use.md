@@ -2,11 +2,11 @@
 title: Experience Fragments gebruiken met AEM Assets Dynamic Media
 description: AEM Assets Dynamic Media integreert hotspots voor elementen met Experience Fragments via Interactive Media-viewers. Marketers kunnen het ervaringsfragment samenstellen met tekst, afbeeldingen en koppelingen om het aangepaste pop-upvenster te vullen en dit pop-upfragment aan hotspots op banners, carrousels of video's te koppelen.
 sub-product: dynamic-media, content-services
-feature: Ervaringsfragmenten
+feature: Experience Fragments
 version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

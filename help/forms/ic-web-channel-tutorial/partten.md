@@ -4,16 +4,16 @@ seo-title: Het vormen het Comité van de Vooruitzichten van de Pensionering
 description: Dit is onderdeel 10 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel, zullen wij het Comité van de Vooruitzichten van de Ouder vormen door tekst en grafiekcomponenten toe te voegen.
 seo-description: Dit is onderdeel 10 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel, zullen wij het Comité van de Vooruitzichten van de Ouder vormen door tekst en grafiekcomponenten toe te voegen.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

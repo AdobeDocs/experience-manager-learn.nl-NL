@@ -1,10 +1,10 @@
 ---
 title: Wat is AEM als Cloud Service?
 description: Onderzoek wat AEM als Cloud Service is, en hoe het van andere versie van Adobe Experience Manager verschilt.
-role: Architect, ontwikkelaar
-level: Begin
-type: Zelfstudie
-topic: Architectuur
+role: Architect, Developer
+level: Beginner
+type: Tutorial
+topic: Architecture
 kt: 6923
 thumbnail: 330546.jpg
 translation-type: tm+mt

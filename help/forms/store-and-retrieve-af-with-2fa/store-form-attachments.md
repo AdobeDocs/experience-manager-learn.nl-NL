@@ -1,7 +1,7 @@
 ---
 title: Formulierbijlagen opslaan
 description: Pak de formulierbijlagen uit en sla deze op een nieuwe locatie op in de CRX-opslagplaats.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Ervaren
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

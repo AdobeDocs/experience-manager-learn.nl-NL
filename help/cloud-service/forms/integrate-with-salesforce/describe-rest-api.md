@@ -2,12 +2,12 @@
 title: Een waggbestand maken om de Salesforce REST API te beschrijven
 description: Het wisselaarbestand definieert de API-eindpunten en de invoer- en uitvoerparameters
 solution: Experience Manager, Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7147
 thumbnail: 331754.jpg
 translation-type: tm+mt

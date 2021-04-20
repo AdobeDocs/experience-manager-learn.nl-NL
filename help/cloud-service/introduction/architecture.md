@@ -1,10 +1,10 @@
 ---
 title: Architectuur van AEM as a Cloud Service
 description: Onderzoek de onderliggende architectuur en belangrijke stukken van AEM als Cloud Service. Diep duikt in Cloud Manager en de API's.
-role: Architect, ontwikkelaar
-level: Begin
-type: Zelfstudie
-topic: Architectuur
+role: Architect, Developer
+level: Beginner
+type: Tutorial
+topic: Architecture
 kt: 6919
 thumbnail: 330542.jpg
 translation-type: tm+mt

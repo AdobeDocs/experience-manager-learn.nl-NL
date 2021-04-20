@@ -2,12 +2,12 @@
 title: Een adaptieve formuliersjabloon maken
 description: De adaptieve formuliersjabloon definieert de structuur en de initiële inhoud van het adaptieve formulier.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7382
 thumbnail: 332223.jpg
 translation-type: tm+mt

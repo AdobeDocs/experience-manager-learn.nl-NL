@@ -2,9 +2,9 @@
 title: Middelencatalogus gebruiken met AEM Commerce en InDesign Server
 description: AEM 6.4 De verbetering van de Catalogus verstrekt de capaciteit om cataloguspagina's tot stand te brengen gebruikend AEM de Malplaatjes van Activa en InDesign Server.  Een gebruiker kan een cataloguspagina maken met de InDesign-sjabloon en producteigenschappen toewijzen aan bewerkbare velden. Deze kunnen later worden gebruikt om vergelijkbare pagina's voor verschillende producten te maken.
 version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

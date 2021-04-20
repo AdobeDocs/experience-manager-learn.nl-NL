@@ -2,12 +2,12 @@
 title: Koppeling naar Adobe-element openen
 description: Adobe Asset Link versterkt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. U hebt toegang tot inhoud die is opgeslagen in Adobe Experience Manager Assets (AEM Assets), zonder de Creative Cloud-bureaubladtoepassingen te verlaten die u het meest kent. Leer hoe u het deelvenster Adobe Asset Link kunt starten vanuit uw Creative Cloud-bureaubladtoepassing.
 sub-product: elementen
-feature: Adobe-itemkoppeling
+feature: Adobe Asset Link
 version: cloud-service
 thumbnail: 33733.jpg
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

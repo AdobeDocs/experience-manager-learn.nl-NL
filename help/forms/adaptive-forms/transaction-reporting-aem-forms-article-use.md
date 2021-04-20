@@ -4,16 +4,16 @@ seo-title: Transactierapportage in AEM Forms gebruiken
 description: Met transactierapporten in AEM Forms kunt u een telling bijhouden van alle transacties die sinds een opgegeven datum op uw AEM Forms-implementatie zijn uitgevoerd.
 seo-description: Met transactierapporten in AEM Forms kunt u een telling bijhouden van alle transacties die sinds een opgegeven datum op uw AEM Forms-implementatie zijn uitgevoerd.
 uuid: e6133f7e-c79c-4006-89e7-3bebf7b8229e
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: developing
 audience: administrator
 doc-type: article
 activity: setup
 version: 6.4.1,6.5
 discoiquuid: 1abdf07a-b9f0-4c58-a1c6-08ae57db2014
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Creeer een project van de Asset compute voor de rekbaarheid van de Asset compute
 description: De projecten van de asset compute zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service worden geïntegreerd.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
-level: Tussentijdse, ervaren
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

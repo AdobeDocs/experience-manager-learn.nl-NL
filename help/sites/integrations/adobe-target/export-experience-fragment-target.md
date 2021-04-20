@@ -1,7 +1,7 @@
 ---
 title: Fragmenten voor ervaring exporteren naar Adobe Target
 description: Leer hoe u AEM Experience Fragment publiceert en exporteert als Adobe Target-aanbiedingen.
-feature: Ervaringsfragmenten
+feature: Experience Fragments
 topics: integrations, authoring
 audience: all
 doc-type: feature video
@@ -10,8 +10,8 @@ version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
 topic: Integrations
-role: Zakelijke praktiserer
-level: Intermediair
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,9 +2,9 @@
 title: '"Hoofdstuk 2 - Verzendingsinfrastructuur"'
 description: Begrijp publiceren en verzender topologie. Leer over de gemeenschappelijkste topologieën en de montages.
 feature: Dispatcher
-topic: Architectuur
+topic: Architecture
 role: Architect
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

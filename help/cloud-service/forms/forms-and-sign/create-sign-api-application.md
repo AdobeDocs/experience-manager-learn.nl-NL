@@ -2,12 +2,12 @@
 title: Adobe Sign-toepassing maken
 description: Adobe Sign Application is de eerste stap op weg naar integratie tussen AEM Forms en Adobe Sign.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7427
 thumbnail: 332436.jpg
 translation-type: tm+mt

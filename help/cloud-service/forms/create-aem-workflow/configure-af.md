@@ -2,12 +2,12 @@
 title: Adaptief formulier configureren om de workflow te activeren
 description: Triggerworkflow voor het verzenden van adaptieve formulieren.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7425
 thumbnail: 332435.pg
 translation-type: tm+mt

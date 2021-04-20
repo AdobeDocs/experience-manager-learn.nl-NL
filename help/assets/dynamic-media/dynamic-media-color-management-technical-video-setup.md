@@ -2,11 +2,11 @@
 title: Werken met kleurbeheer met AEM Dynamic Media
 description: In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden gebruikt om voorvertoningsmogelijkheden voor kleurcorrectie te bieden in AEM Assets.
 sub-product: dynamic-media
-feature: Afbeeldingsprofielen, videoprofielen
+feature: Image Profiles, Video Profiles
 version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
+topic: Content Management
 role: Developer
-level: Intermediair
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,16 +4,16 @@ seo-title: Microsoft Dynamics gebruiken met AEM Forms
 description: Deze video loopt door een werkschema dat toont hoe AEM Forms met de Dynamica van Microsoft als achterste gegevensbron kan werken om interactieve, gepersonaliseerde mededelingen te leveren.
 seo-description: Deze video loopt door een werkschema dat toont hoe AEM Forms met de Dynamica van Microsoft als achterste gegevensbron kan werken om interactieve, gepersonaliseerde mededelingen te leveren.
 uuid: 33d63899-1f58-49b3-a05e-6c57b01ef911
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: integrations
 audience: developer
 doc-type: feature video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 6cb82275-55bc-4b9e-b958-75b906c6afa9
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Intermediair
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

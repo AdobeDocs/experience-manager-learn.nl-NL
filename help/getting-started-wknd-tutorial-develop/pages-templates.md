@@ -3,7 +3,7 @@ title: Aan de slag met AEM Sites - Pagina's en sjablonen
 seo-title: Aan de slag met AEM Sites - Pagina's en sjablonen
 description: Leer over de verhouding tussen een component van de basispagina en editable malplaatjes. Begrijp hoe de Componenten van de Kern in het project proxied zijn en geavanceerde beleidsconfiguraties van editable malplaatjes leren om een goed-gestructureerd malplaatje van de Pagina van het Artikel te bouwen dat op een model van Adobe XD wordt gebaseerd.
 sub-product: sites
-feature: Kerncomponenten, bewerkbare sjablonen
+feature: Core Components, Editable Templates
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -12,9 +12,9 @@ audience: developer
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-topic: Inhoudsbeheer, ontwikkeling
+topic: Content Management, Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b5b43ae8231bf23e0c53777b1e9c16bcc3fc188a
 workflow-type: tm+mt

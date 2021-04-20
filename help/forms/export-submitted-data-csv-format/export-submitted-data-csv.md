@@ -1,14 +1,14 @@
 ---
 title: Verzonden formuliergegevens in CSV-indeling exporteren
 description: Verzonden adaptieve formuliergegevens exporteren in CSV-indeling
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Ervaren
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

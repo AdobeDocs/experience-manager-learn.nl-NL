@@ -4,16 +4,16 @@ seo-title: De levering van een webkanaaldocument instellen
 description: Dit is het laatste deel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel bekijken we de levering van een webkanaaldocument via e-mail.
 seo-description: Dit is het laatste deel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel bekijken we de levering van een webkanaaldocument via e-mail.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

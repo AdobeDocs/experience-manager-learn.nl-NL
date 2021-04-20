@@ -3,11 +3,11 @@ title: App AEM
 description: Gebruik AEM Desktop App om de toegang tot middelen te vereenvoudigen die in AEM op Desktop, voor om het even welke toepassing en dossierformaat worden beheerd.
 kt: 2551
 sub-product: elementen
-feature: Experience Manager Desktop-app
+feature: Experience Manager Desktop App
 version: 6.5, 6.4, 6.3
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

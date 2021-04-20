@@ -2,12 +2,12 @@
 title: Deelvenster Inkomsten configureren
 description: Voeg tabelcomponent toe aan het paneel Inkomsten.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7379
 thumbnail: 332233.jpg
 translation-type: tm+mt

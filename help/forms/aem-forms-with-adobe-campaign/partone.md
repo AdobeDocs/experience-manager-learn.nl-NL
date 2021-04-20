@@ -4,16 +4,16 @@ seo-title: 'Het produceren van het Token van het Web JSON en het Token van de To
 description: In dit artikel wordt uitgelegd welke code nodig is om JWT en Access Token te genereren die nodig zijn voor het uitvoeren van REST-oproepen naar Adobe Campaign Standard
 seo-description: In dit artikel wordt uitgelegd welke code nodig is om JWT en Access Token te genereren die nodig zijn voor het uitvoeren van REST-oproepen naar Adobe Campaign Standard
 uuid: 5b780eee-1e7c-4e1c-a164-49ce64939b91
-feature: Adaptief Forms, formuliergegevensmodel
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: cc268946-a7e4-42b3-bfad-5509e215871a
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Ervaren
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

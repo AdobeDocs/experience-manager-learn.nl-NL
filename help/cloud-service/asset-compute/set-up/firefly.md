@@ -1,7 +1,7 @@
 ---
 title: Het Project van de Adobe van de opstelling brandt voor Asset compute rekbaarheid
 description: De projecten van de asset compute zijn speciaal bepaalde projecten van het Project van de Adobe Vuurwerk, en als dusdanig, vereisen toegang tot het Project van Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
-level: Tussentijdse, ervaren
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

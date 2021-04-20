@@ -3,16 +3,16 @@ title: Bewerkbare paginasjablonen gebruiken met AEM Sites
 seo-title: Bewerkbare paginasjablonen gebruiken met Adobe Experience Manager Sites
 description: Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties met AEM Sites beheren.
 seo-description: Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties met Adobe Experience Manager Sites beheren.
-feature: Bewerkbare sjablonen
+feature: Editable Templates
 topics: authoring
 audience: all
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 kt: 193
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,9 +3,9 @@ title: Adobe Stock-middelen gebruiken met AEM Assets
 description: 'AEM biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks vanuit AEM te zoeken, voor te vertonen, op te slaan en te licentiëren. Organisaties kunnen hun Adobe Stock Enterprise-plan nu integreren met AEM Assets om ervoor te zorgen dat gelicentieerde middelen nu ruim beschikbaar zijn voor hun creatieve en marketingprojecten, met de krachtige mogelijkheden voor middelenbeheer van AEM. '
 feature: Adobe Stock
 version: 6.4, 6.5
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

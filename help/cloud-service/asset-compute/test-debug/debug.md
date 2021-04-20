@@ -1,7 +1,7 @@
 ---
 title: Fouten opsporen in een Asset compute-worker
 description: De arbeiders van de asset compute kunnen op verscheidene manieren, van eenvoudige zuivert logboekverklaringen, aan de Code van VS in bijlage als verre debugger, aan trekkend logboeken voor activeringen in Adobe I/O Runtime worden in werking gesteld die van AEM als Cloud Service.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
-level: Tussentijdse, ervaren
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

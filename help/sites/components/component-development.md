@@ -1,7 +1,7 @@
 ---
 title: Component Development in Adobe Experience Manager Sites
 description: Een overzicht van het ontwikkelen van componenten met Adobe Experience Manager Sites. Omvat een inleiding aan Dialogen, het Verkopen Modellen, de Manuscripten van HTML en cliënt-zijBibliotheken.
-feature: sling-modellen, htl
+feature: sling-models, htl
 topics: components, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,9 +9,9 @@ activity: develop
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4235
 thumbnail: 32547.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

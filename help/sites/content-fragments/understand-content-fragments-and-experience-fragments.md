@@ -2,15 +2,15 @@
 title: Inhoudsfragmenten en ervaringsfragmenten begrijpen
 description: Adobe Experience Manager Content Fragments and Experience Fragments kunnen er ongeveer hetzelfde uitzien op het oppervlak, maar elk speelt een sleutelrol in verschillende gebruiksgevallen. Leer hoe de Fragmenten van de Inhoud en de Fragmenten van de Ervaring gelijkaardig zijn, verschillend, en wanneer en hoe te om elk te gebruiken.
 sub-product: activa, sites, inhoudsdiensten
-feature: Inhoudsfragmenten, ervaringsfragmenten
+feature: Content Fragments, Experience Fragments
 topics: headless
 version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,12 +2,12 @@
 title: Formulier verzenden met de verzendactie van het formuliergegevensmodel
 description: Een adaptief formulier maken om de Salesforce-integratie te testen door een Lead-object te maken bij het verzenden van het formulier
 solution: Experience Manager, Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7151
 thumbnail: 331758.jpg
 translation-type: tm+mt

@@ -2,14 +2,14 @@
 title: Video-overzicht
 description: Dynamic Media Classic wordt geleverd met automatische conversie van video tijdens het uploaden, videostreaming naar desktop- en mobiele apparaten en adaptieve videosets die zijn geoptimaliseerd voor afspelen op basis van apparaat en bandbreedte. Meer informatie over video in Dynamic Media Classic en meer informatie over videoconcepten en terminologie. Daarna leert u diep hoe u video kunt uploaden en coderen, videovoorinstellingen kunt kiezen voor het uploaden, toevoegen of bewerken van een videovoorinstelling, video's voorvertonen in een videoviewer, video kunt implementeren op websites en mobiele sites, bijschriften en hoofdstukmarkeringen aan video kunt toevoegen en videoviewers kunt publiceren voor gebruikers op het bureaublad en in mobiele apparaten.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, videoprofielen, Viewer Presets
+feature: Dynamic Media Classic, Video Profiles, Viewer Presets
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

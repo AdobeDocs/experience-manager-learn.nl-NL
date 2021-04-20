@@ -1,10 +1,10 @@
 ---
 title: Evolutie van AEM als Cloud Service
 description: 'Onderzoek de geschiedenis van AEM en de verschillen tussen op gebouw AEM, de Beheerde AEM van Adobe, en AEM als Cloud Service. '
-role: Architect, ontwikkelaar
-level: Begin
-type: Zelfstudie
-topic: Architectuur
+role: Architect, Developer
+level: Beginner
+type: Tutorial
+topic: Architecture
 kt: 6920
 thumbnail: 330543.jpg
 translation-type: tm+mt

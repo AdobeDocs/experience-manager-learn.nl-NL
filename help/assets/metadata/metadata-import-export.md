@@ -2,10 +2,10 @@
 title: Metagegevens importeren en exporteren in AEM Assets gebruiken
 description: Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Experience Manager Assets kunt gebruiken. Met de import- en exportmogelijkheden kunnen auteurs van inhoud de metagegevens van updates voor bestaande elementen bulksgewijs verzenden.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Inhoudsbeheer
-feature: Metagegevens
-role: Beheer
-level: Intermediair
+topic: Content Management
+feature: Metadata
+role: Admin
+level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
 translation-type: tm+mt

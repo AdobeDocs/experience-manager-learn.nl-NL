@@ -2,12 +2,12 @@
 title: Uw eerste adaptieve formulier maken
 description: Introductie van video tot de cursus over het maken van uw eerste adaptieve formulier
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7464
 thumbnail: 332571.jpg
 translation-type: tm+mt

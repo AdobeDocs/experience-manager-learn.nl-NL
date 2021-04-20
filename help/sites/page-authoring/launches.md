@@ -1,10 +1,10 @@
 ---
 title: Launches gebruiken in AEM Sites
 description: Met Starten in AEM Sites kunt u inhoud maken, ontwerpen en reviseren voor toekomstige release.
-topic: Inhoudsbeheer
-feature: Lanceringen
-level: Tussentijdse, ervaren
-role: Beheerder
+topic: Content Management
+feature: Launches
+level: Intermediate, Experienced
+role: Administrator
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 6970
 thumbnail: 331285.jpg

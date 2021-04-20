@@ -4,16 +4,16 @@ seo-title: Waarde van Json-gegevenselement instellen in AEM Forms-workflow
 description: Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in AEM workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier reviseert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
 seo-description: Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in AEM workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier reviseert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
 uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Ervaren
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,7 +4,7 @@ seo-title: Kanaaldocumenten afdrukken met gecontroleerde map
 description: Dit is onderdeel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel genereren we afdrukkanaaldocumenten aan de hand van het mechanisme voor gecontroleerde mappen.
 seo-description: Dit is onderdeel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel genereren we afdrukkanaaldocumenten aan de hand van het mechanisme voor gecontroleerde mappen.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,9 +12,9 @@ activity: implement
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

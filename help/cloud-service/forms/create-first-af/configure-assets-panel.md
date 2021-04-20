@@ -2,12 +2,12 @@
 title: Deelvenster Elementen configureren
 description: Voeg een accordeonlay-outpaneel aan het middelenpaneel toe.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7380
 thumbnail: 332232.jpg
 translation-type: tm+mt

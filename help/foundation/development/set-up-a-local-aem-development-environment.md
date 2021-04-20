@@ -2,13 +2,13 @@
 title: Een lokale AEM ontwikkelomgeving instellen
 description: Handleiding voor het opzetten van een lokale ontwikkeling voor Adobe Experience Manager, AEM. Omvat belangrijke onderwerpen van lokale installatie, Apache Maven, geïntegreerde ontwikkelomgevingen en het zuiveren/het oplossen van problemen. De ontwikkeling met winde van de Verduistering, CRXDE-Lite, de Code van Visual Studio en IntelliJ worden besproken.
 version: 6.4, 6.5
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
 activity: develop
 audience: developer
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

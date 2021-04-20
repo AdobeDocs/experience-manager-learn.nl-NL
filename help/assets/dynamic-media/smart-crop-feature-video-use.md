@@ -2,11 +2,11 @@
 title: Slim uitsnijden gebruiken met AEM Assets Dynamic Media
 description: Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare taken van het uitsnijden van inhoud voor een responsief ontwerp te elimineren.
 sub-product: dynamic-media
-feature: Slim uitsnijden, afbeeldingsprofielen
+feature: Smart Crop, Image Profiles
 version: 6.4, 6.5
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

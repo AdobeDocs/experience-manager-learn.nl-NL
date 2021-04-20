@@ -1,7 +1,7 @@
 ---
 title: De relatie begrijpen tussen een actieve kopie en het effect Vervagen
 description: In de volgende video wordt uitgelegd hoe een live kopie verwant is aan de blauwdruk in AEM Sites.
-feature: Taalkopie, beheer van meerdere sites
+feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -9,9 +9,9 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5376
 thumbnail: 36676.jpg
-topic: Lokalisatie
-role: Zakelijke praktiserer
-level: Begin
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

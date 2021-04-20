@@ -1,7 +1,7 @@
 ---
 title: asset compute-ontwikkelingsinstrument
 description: Het Hulpmiddel van de Ontwikkeling van de Asset compute is een lokaal Webkanaal dat ontwikkelaars toestaat om de arbeiders van de Computer van Activa plaatselijk, buiten de context van AEM SDK tegen de middelen van de Asset compute in Adobe I/O Runtime te vormen en uit te voeren.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
-level: Tussentijdse, ervaren
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

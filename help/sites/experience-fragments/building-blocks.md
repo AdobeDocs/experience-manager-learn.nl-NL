@@ -3,10 +3,10 @@ title: Hoe te om de Blokjes van de Bouw van het Fragment van de Ervaring te gebr
 description: Bouwstenen zijn een subfunctie van de Fragmenten van de Ervaring die het hergebruik van authored componenten over variaties van de Fragmenten van de Ervaring toelaat.
 sub-product: sites, content-services
 version: cloud-service
-feature: Ervaringsfragmenten
-topic: Inhoudsbeheer
-level: Begin, tussenliggend
-role: Architect, ontwikkelaar, beheerder, praktijkgerichte
+feature: Experience Fragments
+topic: Content Management
+level: Beginner, Intermediate
+role: Architect, Developer, Administrator, Business Practitioner
 doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg

@@ -4,16 +4,16 @@ seo-title: Aan de slag met Adaptive Forms
 description: 'In deze zelfstudie worden de stappen besproken die nodig zijn voor het maken van adaptief formulier met meerdere tabbladen. U zult leren om Lijsten, de Lay-out van de Accordeon, en de Redacteur van de Regel aan auteur bedrijfsregels te gebruiken. '
 seo-description: 'In deze zelfstudie worden de stappen besproken die nodig zijn voor het maken van adaptief formulier met meerdere tabbladen. U zult leren om Lijsten, de Lay-out van de Accordeon, en de Redacteur van de Regel aan auteur bedrijfsregels te gebruiken. '
 uuid: 6f73cb1c-94e2-4ac7-89e5-a72141a06bbe
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.3,6.4,6.5
 discoiquuid: b6863d3d-8528-4a96-ae37-c8d1aa62d443
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

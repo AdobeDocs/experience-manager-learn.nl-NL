@@ -3,10 +3,10 @@ title: Hoofdstuk 1 - Lesbestanden instellen en downloaden - Inhoudsservices
 seo-title: Aan de slag met AEM Content Services - Hoofdstuk 1 - Lesbestanden instellen
 description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
 seo-description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
-feature: Inhoudsfragmenten, API's
-topic: Koploos, inhoudsbeheer
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

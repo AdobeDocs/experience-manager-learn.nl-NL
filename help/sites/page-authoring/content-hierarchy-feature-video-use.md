@@ -3,7 +3,7 @@ title: Inleiding tot AEM Sites-inhoudshiërarchie
 seo-title: Inleiding tot AEM Sites-inhoudshiërarchie
 description: In de volgende video wordt benadrukt hoe sitepagina's worden opgeslagen binnen AEM voor uw organisatie.
 seo-description: In de volgende video wordt benadrukt hoe sitepagina's worden opgeslagen binnen AEM voor uw organisatie.
-feature: Pagina-editor
+feature: Page Editor
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4243
 thumbnail: 31785.jpg
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

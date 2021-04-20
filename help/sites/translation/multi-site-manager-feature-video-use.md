@@ -3,7 +3,7 @@ title: Beheer van meerdere sites gebruiken met AEM Sites
 seo-title: Interfaces met de gebruikersinterface van Multi-Site Manager gebruiken met Adobe Experience Manager
 description: Live Copy Overview (Overzicht van live kopie) en Blueprint Configuration Manager zijn interface met Touch UI voor het werken met beheer van meerdere sites.
 seo-description: Live Copy - Overzicht en beheer van de configuratie van blauwdrukken zijn interface met Touch UI voor het werken met beheer van meerdere sites met Adobe Experience Manager.
-feature: Beheer van meerdere sites
+feature: Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 uuid: 76f295d0-78dd-429c-9129-9182b3a706a6
 discoiquuid: a0dc581e-300f-45ef-916a-1cbac0429899
-topic: Lokalisatie
-role: Zakelijke praktiserer
-level: Begin
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

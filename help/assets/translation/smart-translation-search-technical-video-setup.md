@@ -2,10 +2,10 @@
 title: Smart Translation Search instellen met AEM Assets
 description: Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse inhoud op te lossen. Om AEM in te stellen voor Smart Translation Search, moet de Apache OSGi-bundel voor zoekmachines voor zoekmachines worden geïnstalleerd en geconfigureerd, evenals de relevante gratis en open-source Apache Joshua-taalpakketten die de vertaalregels bevatten.
 version: 6.3, 6.4, 6.5
-feature: Zoeken
-topic: Inhoudsbeheer
+feature: Search
+topic: Content Management
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

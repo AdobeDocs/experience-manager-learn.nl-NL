@@ -2,12 +2,12 @@
 title: Deelvenster Start configureren
 description: Voeg een statische tekstcomponent aan het beginpaneel toe.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7388
 thumbnail: 332235.jpg
 translation-type: tm+mt

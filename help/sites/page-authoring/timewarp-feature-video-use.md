@@ -1,10 +1,10 @@
 ---
 title: Tijdlijn verdraaien gebruiken met AEM Sites
 description: Timewarp is een eigenschap van Adobe Experience Manager Sites die auteurs een snelle manier verstrekt om de staat van een pagina op specifieke tijd in het verleden te herzien.
-topic: Inhoudsbeheer
+topic: Content Management
 feature: Authoring
-role: Zakelijke praktiserer
-level: Intermediair
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 3307
 thumbnail: 17453.jpg

@@ -1,7 +1,7 @@
 ---
 title: Gegevens analyseren met Analysis Workspace
 description: Leer hoe u gegevens die vanaf een Adobe Experience Manager-site zijn vastgelegd, kunt toewijzen aan maateenheden en dimensies in Adobe Analytics-rapportensuites. Leer hoe u een gedetailleerd rapportdashboard maakt met de Analysis Workspace-functie van Adobe Analytics.
-feature: analyse
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -10,8 +10,8 @@ version: cloud-service
 kt: 6409
 thumbnail: KT-6296.jpg
 topic: Integrations
-role: Zakelijke praktiserer
-level: Intermediair
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

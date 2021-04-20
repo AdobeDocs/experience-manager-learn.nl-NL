@@ -3,15 +3,15 @@ title: Naamconventies en aanbevolen procedures voor het maken van aangepaste for
 seo-title: Naamconventies en aanbevolen procedures voor het maken van aangepaste formulieren
 description: Naamconventies en aanbevolen procedures voor het maken van aangepaste formulieren
 seo-description: Naamconventies en aanbevolen procedures voor het maken van aangepaste formulieren
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: best-practices
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

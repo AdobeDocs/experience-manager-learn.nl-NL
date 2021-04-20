@@ -1,10 +1,10 @@
 ---
 title: Slimme tags voor afbeeldingen met AEM Assets
 description: Slimme tags voor afbeeldingen vergroten AEM zoekmogelijkheden door automatisch en intelligent metagegevenstags toe te voegen aan afbeeldingselementen op basis van de inhoud van de afbeelding.
-topic: Inhoudsbeheer
-feature: Slimme tags
-role: Zakelijke praktiserer
-level: Intermediair
+topic: Content Management
+feature: Smart Tags
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 645
 thumbnail: 17019.jpg

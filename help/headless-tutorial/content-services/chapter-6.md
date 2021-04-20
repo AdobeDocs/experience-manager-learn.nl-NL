@@ -1,10 +1,10 @@
 ---
 title: Hoofdstuk 6 - De inhoud in AEM publiceren beschikbaar maken als JSON - Content Services
 description: Hoofdstuk 6 van de AEM zelfstudie zonder koppen omvat de verzekering dat alle benodigde pakketten, configuratie en inhoud op AEM-publicatie staan om consumptie vanaf de mobiele app mogelijk te maken.
-feature: Inhoudsfragmenten, API's
-topic: Koploos, inhoudsbeheer
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

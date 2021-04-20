@@ -1,7 +1,7 @@
 ---
 title: Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten van de Kern
 description: De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om gegevens over een bezoekerservaring op een webpagina te verzamelen en op te slaan en dan het gemakkelijk te maken om tot deze gegevens toegang te hebben. De gegevenslaag van de Cliënt van Adobe is platform agnostic, maar is volledig geïntegreerd in de Componenten van de Kern voor gebruik met AEM.
-feature: kerncomponent
+feature: core-component
 topics: integrations
 audience: developer
 doc-type: feature video
@@ -11,7 +11,7 @@ kt: 6261
 thumbnail: 41195.jpg
 topic: Integrations
 role: Developer
-level: Intermediair
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

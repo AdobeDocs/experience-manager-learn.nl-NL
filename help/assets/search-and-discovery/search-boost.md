@@ -1,10 +1,10 @@
 ---
 title: Wat is Search Boost in AEM Assets?
 description: Leer hoe u trefwoorden en woordgroepen toevoegt om de zoekrelevantie van middelen in Adobe Experience Manager te vergroten.
-topic: Inhoudsbeheer
-feature: Zoeken
-role: Zakelijke praktiserer
-level: Intermediair
+topic: Content Management
+feature: Search
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 103
 thumbnail: 16766.jpg

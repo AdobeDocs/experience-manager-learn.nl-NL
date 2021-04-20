@@ -2,13 +2,13 @@
 title: De verschillende typen PDF forms en documenten begrijpen
 description: PDF is in feite een reeks bestandsindelingen. In dit artikel worden de typen PDF's beschreven die belangrijk en relevant zijn voor formulierontwikkelaars.
 solution: Experience Manager, Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin,tussenliggend
+level: Beginner,Intermediate
 version: 6.3,6.4,6.5
 feature: Document Services
 kt: 7071
-topic: Ontwikkeling
+topic: Development
 translation-type: tm+mt
 source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt

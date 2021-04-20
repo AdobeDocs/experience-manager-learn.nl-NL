@@ -2,15 +2,15 @@
 title: Sociale postering instellen met AEM ervaringsfragmenten
 description: Met ervaringsfragmenten kunnen marketers ervaringen die in AEM zijn gemaakt, op sociale-mediaplatforms plaatsen. In de onderstaande video ziet u de instellingen en configuratie die nodig zijn om Experience Fragments te publiceren naar Facebook en Pinterest.
 sub-product: sites, content-services
-feature: Ervaringsfragmenten
+feature: Experience Fragments
 topics: integrations, content-delivery
 audience: administrator, implementer, developer
 doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
-role: Beheerder, ontwikkelaar
-level: Intermediair
+topic: Content Management
+role: Administrator, Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

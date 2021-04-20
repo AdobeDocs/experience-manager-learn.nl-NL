@@ -1,15 +1,15 @@
 ---
 title: Vertaalregels instellen in AEM
 description: Met de gebruikersinterface van de vertaalconfiguratie kan een gebruiker regels voor het vertalen van inhoud in AEM Sites beheren. In deze video wordt gedetailleerd ingegaan op het maken van een nieuwe vertaalregel voor een aangepaste component.
-feature: Taalkopie
+feature: Language Copy
 topics: localization, content-architecture
 audience: developer, administrator
 doc-type: technical video
 activity: setup
 version: 6.4, 6.5
-topic: Lokalisatie
-role: Zakelijke praktiserer
-level: Begin
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,13 +2,13 @@
 title: Machtigingen basislijn
 description: Het beheren van gebruikerstoegang in de mappen met basiselementen is een essentieel aspect van het beheer en zorgt ervoor dat de processen correct worden ondersteund.
 sub-product: elementen
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 version: cloud-service
 kt: 4870
 thumbnail: 37696.jpg
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

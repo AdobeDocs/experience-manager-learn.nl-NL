@@ -8,8 +8,8 @@ audience: all
 activity: understand
 doc-type: article
 topic: Upgrade
-role: Leader, Architect, Ontwikkelaar, Beheerder, Bedrijfs Praktijk
-level: Begin
+role: Leader, Architect, Developer, Administrator, Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

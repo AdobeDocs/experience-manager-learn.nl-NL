@@ -1,7 +1,7 @@
 ---
 title: Stel de arbeiders van de Asset compute aan Adobe I/O Runtime voor gebruik met AEM als Cloud Service op
 description: 'De projecten van de asset compute, en de werknemers die zij bevatten, moeten in Adobe I/O Runtime worden ingezet om door AEM als Cloud Service te worden gebruikt. '
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
-level: Tussentijdse, ervaren
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

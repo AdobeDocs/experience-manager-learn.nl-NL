@@ -2,9 +2,9 @@
 title: '"Hoofdstuk 1 - Concepten, patronen en antipatronen van de verzender"'
 description: In dit hoofdstuk wordt een korte inleiding gegeven over de geschiedenis en de mechanica van de Dispatcher en wordt besproken hoe dit van invloed is op hoe een AEM ontwikkelaar zijn componenten zou ontwerpen.
 feature: Dispatcher
-topic: Architectuur
+topic: Architecture
 role: Architect
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

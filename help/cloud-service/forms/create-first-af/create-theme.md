@@ -2,12 +2,12 @@
 title: Een adaptief formulierthema maken
 description: Thema is een AEM clientbibliotheek die de vormgeving van het aangepaste formulier definieert.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7386
 thumbnail: 332229.jpg
 translation-type: tm+mt

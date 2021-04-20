@@ -2,12 +2,12 @@
 title: Hoofddeelvenster configureren
 description: Voeg onderliggende deelvensters toe aan het hoofddeelvenster.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7377
 thumbnail: 332238.jpg
 translation-type: tm+mt

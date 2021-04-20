@@ -3,7 +3,7 @@ title: Pagina-eigenschappen in AEM Sites
 seo-title: Pagina-eigenschappen in Adobe Experience Manager Sites
 description: In de volgende video worden de metagegevens over pagina-eigenschappen geïntroduceerd die aan een pagina in Adobe Experience Manager zijn gekoppeld.
 seo-description: 'In de volgende video worden de metagegevens over pagina-eigenschappen geïntroduceerd die aan een pagina in Adobe Experience Manager zijn gekoppeld. '
-feature: Pagina-editor
+feature: Page Editor
 topics: authoring, metadata
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: understand
 version: 6.3, 6.4, 6.5
 kt: 4321
 thumbnail: 32192.jpg
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: CRXDE Lite
 description: 'CRXDE Lite is een klassiek, maar krachtig hulpmiddel om AEM als milieu''s van de Ontwikkelaar van de Cloud Service te zuiveren. CRXDE Lite verstrekt een reeks van functionaliteit die het zuiveren van het inspecteren van alle middelen en eigenschappen, het manipuleren van de veranderlijke gedeelten van JCR en het onderzoeken van toestemmingen helpt. '
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: KT-5481
 thumbnail: kt-5481.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

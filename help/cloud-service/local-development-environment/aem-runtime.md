@@ -1,7 +1,7 @@
 ---
 title: Lokale AEM Runtime instellen voor AEM als ontwikkeling van Cloud Servicen
 description: Opstelling Lokale AEM Runtime die de AEM als QuickStart Jar van SDK van de Cloud Service gebruikt.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

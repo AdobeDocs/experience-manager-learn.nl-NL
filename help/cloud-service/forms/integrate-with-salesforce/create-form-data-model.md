@@ -2,12 +2,12 @@
 title: Formuliergegevensmodel maken op basis van de Salesforce-gegevensbron
 description: Formuliergegevensmodel maken dat wordt ondersteund door de RESTful-gegevensbron
 solution: Experience Manager, Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7149
 thumbnail: 331756.jpg
 translation-type: tm+mt

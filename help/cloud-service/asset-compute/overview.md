@@ -1,7 +1,7 @@
 ---
 title: asset compute microservices uitbreidbaarheid voor AEM als Cloud Service
 description: Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die een elementuitvoering maakt door het oorspronkelijke element aan een cirkel uit te snijden en configureerbare contrast en helderheid toepast. Hoewel de worker zelf een basis is, wordt deze zelfstudie gebruikt om te verkennen hoe een aangepaste Asset compute-worker voor gebruik met AEM als Cloud Service kan worden gemaakt, ontwikkeld en geïmplementeerd.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
-level: Tussentijdse, ervaren
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

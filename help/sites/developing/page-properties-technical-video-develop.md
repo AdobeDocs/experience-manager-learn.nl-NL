@@ -1,8 +1,8 @@
 ---
 title: Pagina-eigenschappen uitbreiden in AEM Sites
 description: Leer hoe u de metagegevensvelden van Pagina-eigenschappen in Adobe Experience Manager Sites kunt uitbreiden. In deze video wordt de meest effectieve manier beschreven om dit te bereiken met de functies van de samenvoeging van bronnen voor bloeden.
-topic: Ontwikkeling
-feature: Kernonderdelen
+topic: Development
+feature: Core Components
 role: Developer
 version: cloud-service
 kt: 243

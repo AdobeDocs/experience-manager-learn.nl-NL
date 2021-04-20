@@ -3,9 +3,9 @@ title: Hoe te om Werkschema in AEM te beheren
 description: 'AEM workflowbeheer biedt een gebruiker meer inzicht in de inhoud onder de workflow en maakt een eenvoudiger beheer van workflowmodeldefinities mogelijk. '
 version: 6.5, cloud-service
 feature: Workflow
-topic: Inhoudsbeheer
-role: Beheerder
-level: Intermediair
+topic: Content Management
+role: Administrator
+level: Intermediate
 kt: 2557
 thumbnail: 27848.jpg
 translation-type: tm+mt

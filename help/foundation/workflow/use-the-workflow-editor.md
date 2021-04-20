@@ -3,9 +3,9 @@ title: Workflows maken in AEM
 description: De workflow maakt bedrijfsprocesbeheer in Experience Manager mogelijk en wordt gebruikt voor automatische verwerking van inhoud en voor het vergemakkelijken van governance en processen waarvoor menselijke besluitvorming vereist is.
 version: 6.4, 6.5, cloud-service
 feature: Workflow
-topic: Inhoudsbeheer
-level: Intermediair
-role: Beheerder, ontwikkelaar
+topic: Content Management
+level: Intermediate
+role: Administrator, Developer
 kt: 657
 thumbnail: 22201.jpg
 translation-type: tm+mt

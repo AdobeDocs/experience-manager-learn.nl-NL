@@ -1,7 +1,7 @@
 ---
 title: Een Asset compute metagegevensworker ontwikkelen
 description: Leer hoe u een Asset compute-metagegevensworker maakt die de meest gebruikte kleuren in een afbeeldingselement afleidt en de namen van de kleuren in AEM terugschrijft naar de metagegevens van het element.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
-level: Tussentijdse, ervaren
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

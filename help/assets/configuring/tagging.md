@@ -2,13 +2,13 @@
 title: Tags
 description: Tags zijn een integraal hulpmiddel voor het beheer van elementen in de maphiërarchie van de elementen. Het is van essentieel belang dat er een labeltaxonomie wordt ingesteld, zodat gebruikers elementen kunnen vinden en indelen in AEM.
 sub-product: elementen
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 version: cloud-service
 kt: 4871
 thumbnail: 34073.jpg
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

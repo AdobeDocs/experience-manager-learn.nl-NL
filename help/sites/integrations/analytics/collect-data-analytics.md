@@ -1,7 +1,7 @@
 ---
 title: Paginagegevens verzamelen met Adobe Analytics
 description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om gegevens over gebruikersactiviteit te verzamelen op een website die is gemaakt met Adobe Experience Manager. Leer hoe u regels in Experience Platform Launch gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics-rapportenpakket te verzenden.
-feature: analyse
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -11,7 +11,7 @@ kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 topic: Integrations
 role: Developer
-level: Intermediair
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

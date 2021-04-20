@@ -3,14 +3,14 @@ title: Aanbevolen procedures voor Java API in AEM
 description: AEM is gebaseerd op een rijke open-source softwarestack die veel Java API's beschikbaar maakt voor gebruik tijdens de ontwikkeling. In dit artikel worden de belangrijkste API's besproken en wordt aangegeven wanneer en waarom deze moeten worden gebruikt.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: stichting, middelen, sites
-feature: API's
+feature: APIs
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

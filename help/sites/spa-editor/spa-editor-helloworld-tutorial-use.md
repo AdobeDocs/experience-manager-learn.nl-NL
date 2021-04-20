@@ -2,7 +2,7 @@
 title: Ontwikkelen met de AEM SPA Editor - Hello World-zelfstudie
 description: AEM SPA Editor biedt ondersteuning voor contextbewerkingen van een toepassing of SPA van één pagina. Deze zelfstudie is een inleiding op SPA ontwikkeling die moet worden gebruikt met AEM SPA Editor JS SDK. De zelfstudie breidt de app We.Retail Journal uit door een aangepaste Hello World-component toe te voegen. Gebruikers kunnen de zelfstudie voltooien met Reageren of Angulars.
 sub-product: sites, content-services
-feature: Spa-editor
+feature: Spa Editor
 topics: development, single-page-applications
 audience: developer
 doc-type: tutorial
@@ -10,7 +10,7 @@ activity: use
 version: 6.3, 6.4, 6.5
 topic: SPA
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,10 +1,10 @@
 ---
 title: Ondersteuning voor vertaling van AEM Content Fragments
 description: Leer hoe u Content Fragments kunt lokaliseren en vertalen met Adobe Experience Manager. Elementen met gemengde media die aan een inhoudsfragment zijn gekoppeld, kunnen ook worden geëxtraheerd en vertaald.
-feature: Inhoudsfragmenten, beheer voor meerdere sites
-topic: Lokalisatie
-role: Zakelijke praktiserer
-level: Intermediair
+feature: Content Fragments, Multi Site Manager
+topic: Localization
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 201
 thumbnail: 18131.jpg

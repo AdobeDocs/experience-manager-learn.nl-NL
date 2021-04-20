@@ -2,11 +2,11 @@
 title: Adobe Experience Manager Forms integreren als Cloud Service met Salesforce
 description: Een hoofdobject maken in Salesforce met behulp van de integratie
 solution: Experience Manager, Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-topic: ontwikkeling
+topic: development
 thumbnail: 331891.jpg
 translation-type: tm+mt
 source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f

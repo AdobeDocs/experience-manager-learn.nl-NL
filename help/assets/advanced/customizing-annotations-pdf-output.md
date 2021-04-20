@@ -1,11 +1,11 @@
 ---
 title: Annotaties aanpassen in AEM Assets
 description: AEM Assets-indeling en -stijl bij uitvoer naar PDF kunnen worden geconfigureerd door AEM ontwikkelaars.
-feature: Samenwerking
+feature: Collaboration
 version: 6.3, 6.4, 6.5
-topic: Samenwerking
+topic: Collaboration
 role: Developer
-level: Intermediair
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

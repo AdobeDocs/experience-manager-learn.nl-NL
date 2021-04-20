@@ -1,16 +1,16 @@
 ---
 title: Foutopsporing AEM SDK
 description: AEM SDK is de primaire ontwikkelomgeving die door ontwikkelaars wordt gebruikt en ondersteunt een groot aantal manieren om AEM en geïmplementeerde toepassingen te debuggen.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: null
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

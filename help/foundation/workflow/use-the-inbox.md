@@ -2,10 +2,10 @@
 title: Hoe wordt Inbox gebruikt in AEM
 description: AEM inbox vergemakkelijkt grotere samenwerking en zichtbaarheid in taken en werkschema.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Samenwerking
+topic: Collaboration
 feature: Inbox
-role: Zakelijke praktiserer
-level: Intermediair
+role: Business Practitioner
+level: Intermediate
 kt: 159
 thumbnail: 16827.jpg
 translation-type: tm+mt

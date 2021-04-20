@@ -2,12 +2,12 @@
 title: Een AEM workflow maken
 description: Maak een workflowmodel om uw bedrijfsproces na te bootsen.
 solution: Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 kt: 7424
 thumbnail: 332434.pg
 translation-type: tm+mt

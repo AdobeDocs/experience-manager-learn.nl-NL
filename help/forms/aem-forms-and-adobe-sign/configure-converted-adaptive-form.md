@@ -1,16 +1,16 @@
 ---
 title: Geconverteerd adaptief formulier configureren
 description: Geconverteerd adaptief formulier configureren
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39574.jpg
 kt: 6126
-topic: Ontwikkeling
-role: Zakelijke praktiserer
-level: Begin
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

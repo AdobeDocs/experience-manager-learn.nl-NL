@@ -1,7 +1,7 @@
 ---
 title: Het MyAccountForm maken
 description: Maak het mijnaccountformulier om het gedeeltelijk ingevulde formulier op te halen na geslaagde verificatie van de toepassings-id en het telefoonnummer.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6599
 thumbnail: 6599.jpg
-topic: Ontwikkeling
-role: Zakelijke praktiserer
-level: Begin
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

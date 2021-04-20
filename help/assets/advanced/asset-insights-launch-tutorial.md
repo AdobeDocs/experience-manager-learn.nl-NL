@@ -1,11 +1,11 @@
 ---
 title: Asset Insights instellen met AEM Assets en Adobe Launch
 description: In deze videoreeks van 5 delen, lopen wij door de opstelling en de configuratie van de Inzichten van Activa voor Experience Manager die via Launch by Adobe wordt opgesteld.
-feature: 'Asset Insights '
+feature: Asset Insights
 version: 6.3, 6.4, 6.5
 topic: Integrations
 role: Developer
-level: Intermediair
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

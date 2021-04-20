@@ -1,7 +1,7 @@
 ---
 title: Aangeklikte component bijhouden met Adobe Analytics
 description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om kliks van specifieke componenten op een Adobe Experience Manager-site bij te houden. Leer hoe u regels in Experience Platform Launch gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics te verzenden met een baken voor trackkoppelingen.
-feature: analyse
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -11,7 +11,7 @@ kt: 6296
 thumbnail: KT-6296.jpg
 topic: Integrations
 role: Developer
-level: Intermediair
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

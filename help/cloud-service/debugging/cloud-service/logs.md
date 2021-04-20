@@ -1,7 +1,7 @@
 ---
 title: Logboeken
 description: De logboeken handelen als frontline voor het zuiveren AEM toepassingen in AEM als Cloud Service, maar zijn afhankelijk van het adequate registreren in de opgestelde AEM toepassing.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

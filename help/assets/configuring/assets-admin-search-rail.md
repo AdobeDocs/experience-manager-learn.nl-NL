@@ -2,13 +2,13 @@
 title: Elementenbeheerder zoekrails
 description: Met behulp van de zoekrails voor middelenbeheer kunnen middelen worden gezocht op basis van aangepaste criteria in Omnsearch.
 sub-product: elementen
-feature: Zoeken
+feature: Search
 version: cloud-service
 kt: 4995
 thumbnail: 35842.jpg
-topic: Inhoudsbeheer
-role: Beheerder
-level: Intermediair
+topic: Content Management
+role: Administrator
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

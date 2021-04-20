@@ -1,15 +1,15 @@
 ---
 title: Best practices voor stijlsystemen met AEM Sites
 description: Een gedetailleerd artikel waarin de beste werkwijzen worden uitgelegd voor het implementeren van het stijlsysteem met Adobe Experience Manager Sites.
-feature: Stijlsysteem
+feature: Style System
 topics: development, components, front-end-development
 audience: developer
 doc-type: article
 activity: understand
 version: 6.4, 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Tussentijdse, ervaren
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

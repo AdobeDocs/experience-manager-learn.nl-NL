@@ -1,16 +1,16 @@
 ---
 title: XDP-sjablonen gebruiken met AEM Forms en Adobe Sign
 description: XDP-sjablonen gebruiken met AEM Forms en Adobe Sign. Een video waarin de bestaande XDP-sjablonen worden benut met AEM Forms en waarin de integratie wordt ondertekend.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39705.jpg
 kt: 6143
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Developer Console
 description: AEM als Cloud Service verstrekt een Console van de Ontwikkelaar voor elk milieu dat diverse details van de lopende AEM dienst blootstelt die in het zuiveren nuttig zijn.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

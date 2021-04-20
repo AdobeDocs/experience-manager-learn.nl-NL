@@ -2,14 +2,14 @@
 title: Afbeeldings-, staal-, centrifuge- en gemengde-mediasets
 description: Een van de nuttigste en krachtigste mogelijkheden van Dynamic Media Classic is de ondersteuning voor het maken van rich-mediasets, zoals Afbeelding, Staal, Draaien en Gemengde-mediasets. Leer wat elke rijke mediaset is en hoe u elk type maakt in Dynamic Media Classic. Meer informatie over voorinstellingen Batch-set, waarmee het maken van rich media-sets tijdens het uploaden wordt geautomatiseerd.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, afbeeldingssets, gemengde mediasets, centrifuges
+feature: Dynamic Media Classic, Image Sets, Mix Media Sets, Spin Sets
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
-topic: Inhoudsbeheer
-role: Zakelijke praktiserer
-level: Begin
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

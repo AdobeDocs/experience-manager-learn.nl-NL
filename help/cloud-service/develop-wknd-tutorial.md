@@ -5,10 +5,10 @@ description: Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken verni
 seo-description: Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken vernieuwen? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën.
 content-type: reference
 topic-tags: introduction
-feature: Projectarchetype AEM, kerncomponenten, Pagina-editor, bewerkbare sjablonen
-topic: Ontwikkeling
+feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
+topic: Development
 role: Developer
-level: Begin
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

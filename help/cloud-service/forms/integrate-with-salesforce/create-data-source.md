@@ -2,11 +2,11 @@
 title: 'Een configuratie voor cloudservices maken '
 description: Gegevensbron maken voor verbinding met Salesforce met de OAuth-referenties
 solution: Experience Manager, Experience Manager Forms
-type: Documentatie
+type: Documentation
 role: Developer
-level: Begin, tussenliggend
+level: Beginner, Intermediate
 version: cloud-service
-topic: Ontwikkeling
+topic: Development
 kt: 7148
 thumbnail: 331755.jpg
 translation-type: tm+mt
