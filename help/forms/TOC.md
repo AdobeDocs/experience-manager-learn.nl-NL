@@ -6,9 +6,9 @@ user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AE
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
+source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 1%
 
 + Adaptieve Forms {#adaptive-forms}
    + [AEM Forms installeren in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
+   + [32-bits pakketten installeren op Linux](adaptive-forms/installing-aem-form-on-linux.md)
    + [Prefill-service in adaptieve Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Aangepast verzenden in adaptieve Forms](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha in Adaptive Forms](adaptive-forms/forms-captcha-feature-video-use.md)
@@ -169,7 +170,7 @@ ht-degree: 1%
 + Aangepaste elementtypen weergeven in Forms Portal{#listing-custom-asset-types}
    + [Deel 1-Aangepaste elementtypen registreren](listing-custom-asset-types/part1.md)
    + [Part2 - Aangepaste sjabloon maken](listing-custom-asset-types/part2.md)
-+ AEM Forms met markeerteken{#aem-forms-with-marketo}
++ AEM Forms met Marketo{#aem-forms-with-marketo}
    + [Deel 1 - Inleiding](aem-forms-with-marketo/part1.md)
    + [Part2 - Aangepaste verificatie](aem-forms-with-marketo/part2.md)
    + [Deel3 - Gegevensbron](aem-forms-with-marketo/part3.md)
