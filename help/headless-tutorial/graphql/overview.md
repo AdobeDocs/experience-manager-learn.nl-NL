@@ -1,23 +1,14 @@
 ---
 title: Aan de slag met AEM zonder kop - GraphQL
-description: Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met AEM GraphQL API's.
-sub-product: sites
-topics: headless
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-kt: 6678
-thumbnail: 328618.jpg
-feature: Content Fragments, GraphQL APIs
-topic: Headless, Content Management
+description: Een overzicht van AEM GraphQL APIs en mogelijkheden.
+feature: Inhoudsfragmenten, API's
+topic: Koploos, inhoudsbeheer
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -25,30 +16,18 @@ ht-degree: 0%
 
 # Aan de slag met AEM zonder kop - GraphQL
 
-Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met behulp van AEM GraphQL API&#39;s en die door een externe toepassing wordt verbruikt, in een headless CMS-scenario.
-
-In deze zelfstudie wordt onderzocht hoe AEM GraphQL API&#39;s en headless mogelijkheden kunnen worden gebruikt om de ervaring die in een externe app wordt opgedaan, kracht bij te zetten.
-
-In deze zelfstudie worden de volgende onderwerpen behandeld:
-
-* Modellen voor inhoudsfragmenten maken om contribuanten in AEM te modelleren
-* Inhoudsfragmenten auteur-contribuant maken met het nieuwe inhoudsfragmentmodel
-* Onderzoek hoe de Fragments van de Inhoud in AEM kunnen worden betwist gebruikend het geïntegreerde ontwikkelingshulpmiddel GraphiQL.
-* AEM GraphQL-API&#39;s uit een voorbeeld-WKND GraphQL React-app gebruiken
-* Geavanceerde gegevensmodellering uitvoeren met fragmentverwijzingen
-
-## Overzicht van GraphQL
-
-In de onderstaande video wordt een overzicht gegeven van de GraphQL API die in AEM is geïmplementeerd. De GraphQL-API in AEM is vooral ontworpen voor het leveren van fragmentgegevens van inhoud aan downstreamtoepassingen als onderdeel van een headless-implementatie.
-
 >[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
-## Laten we beginnen!
+Deze video is een overzicht van de GraphQL API die in AEM wordt geïmplementeerd. De GraphQL-API in AEM is vooral ontworpen om AEM Content Fragment&#39;s aan downstreamtoepassingen te leveren als onderdeel van een headless-implementatie.
 
-Begin de AEM leerprogramma GraphQL door in het [Snelle hoofdstuk van de Opstelling](./setup.md) te springen!
+## AEM GraphQL-videoreeks zonder kop
 
-## GitHub-project
+Leer over AEM mogelijkheden GraphQL door de diepgaande analyse van Inhoud Fragments en en AEM GraphQL APIs en ontwikkelingshulpmiddelen.
 
-De broncode, en inhoudspakketten zijn beschikbaar op [AEM Gidsen - WKND GraphQL GitHub Project](https://github.com/adobe/aem-guides-wknd-graphql).
++ [AEM GraphQL-videoreeks zonder kop](./video-series/modeling-basics.md)
 
-Als u een kwestie met het leerprogramma of de code vindt, gelieve een [GitHub kwestie](https://github.com/adobe/aem-guides-wknd-graphql/issues) te verlaten.
+## Handleiding voor AEM headless GraphQL Hands-on
+
+Ontdek AEM mogelijkheden GraphQL door een React App te ontwikkelen die inhoudsfragmenten via AEM GraphQL APIs verbruikt.
+
++ [Handleiding voor AEM headless GraphQL Hands-on](./multi-step/overview.md)
