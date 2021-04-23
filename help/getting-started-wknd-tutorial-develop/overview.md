@@ -12,14 +12,14 @@ mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
-topic: Content Management, Development
+topic: Inhoudsbeheer, ontwikkeling
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 2%
+source-wordcount: '510'
+ht-degree: 0%
 
 ---
 
@@ -34,40 +34,6 @@ Het doel van deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe hij 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-De zelfstudie is ontworpen om te werken met **AEM als een Cloud Service** en is achterwaarts compatibel met **AEM 6.5.5.0+** en **AEM 6.4.8.1+**. De site wordt geïmplementeerd met:
-
-* [Maven AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)
-* Verkoopmodellen
-* [Bewerkbare sjablonen](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [Stijlsysteem](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
-
-*Schat 1-2 uur om elk onderdeel van de zelfstudie te doorlopen.*
-
-## Lokale ontwikkelomgeving {#local-dev-environment}
-
-Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Schermafbeeldingen en video worden vastgelegd met behulp van de AEM als Cloud Service SDK die wordt uitgevoerd in een Mac OS-omgeving met [Visual Studio Code](https://code.visualstudio.com/) als IDE. Opdrachten en code moeten onafhankelijk zijn van het lokale besturingssysteem, tenzij anders aangegeven.
-
-### Vereiste software
-
-Het volgende moet lokaal worden geïnstalleerd:
-
-* Lokale AEM **Auteur** instantie (Cloud Service SDK, 6.5.5+ of 6.4.8.1+)
-* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-* [Apache Maven](https://maven.apache.org/)  (3.3.9 of hoger)
-* [Node.js](https://nodejs.org/en/) (LTS - langdurige ondersteuning)
-* [npm 6+](https://www.npmjs.com/)
-* [Git](https://git-scm.com/)
-* [Visual Studio ](https://code.visualstudio.com/) Codeor gelijkwaardige winde
-   * [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)  - Gereedschap wordt gebruikt tijdens de zelfstudie
-
->[!NOTE]
->
-> **Nieuw bij AEM als Cloud Service?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
->
-> **Nieuw bij AEM 6.5?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
-
 ## Informatie over de zelfstudie {#about-tutorial}
 
 De WKND is een fictief online tijdschrift en blog dat zich concentreert op het nachtleven, activiteiten en gebeurtenissen in verschillende internationale steden.
@@ -80,20 +46,6 @@ Download de XD UI-kits:
 
 * [UI-kit AEM Core Component](assets/overview/AEM-CoreComponents-UI-Kit.xd)
 * [WKND-UI-kit](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd)
-
-De naam WKND past goed omdat we verwachten dat een ontwikkelaar het betere deel van een ***weekend*** neemt om de zelfstudie te voltooien.
-
-### Github {#github}
-
-Alle code voor het project is te vinden op Github in het AEM Guide repo:
-
-**[GitHub: WKND-siteproject](https://github.com/adobe/aem-guides-wknd)**
-
-Bovendien heeft elk deel van het leerprogramma zijn eigen tak in GitHub. Een gebruiker kan de zelfstudie op elk gewenst moment starten door gewoon de vertakking uit te checken die overeenkomt met het vorige onderdeel.
-
->[!NOTE]
->
-> Als u met de vorige versie van dit leerprogramma werkte, kunt u [oplossingspakketten](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) en [code](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) op GitHub nog vinden.
 
 ## Referentiesite {#reference-site}
 
@@ -111,4 +63,4 @@ Met Adobe Stock hebt u toegang tot meer dan 140 miljoen hoogwaardige, royaltyvri
 
 ## Volgende stappen {#next-steps}
 
-Waar wacht u op?! Begin het leerprogramma door aan [het hoofdstuk van de Opstelling van het Project ](project-setup.md) te navigeren en te leren hoe te om een nieuw project van Adobe Experience Manager te produceren gebruikend het AEM Project Archetype.
+Waar wacht u op?! Start de zelfstudie en leer hoe u [een nieuw Adobe Experience Manager-project kunt genereren met het AEM Project Archetype](./project-archetype/overview.md).
