@@ -16,9 +16,9 @@ topic: Inhoudsbeheer, ontwikkeling
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -34,11 +34,19 @@ Het doel van deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe hij 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-## Informatie over de zelfstudie {#about-tutorial}
+## Opties voor het starten van een Sites-project
 
-De WKND is een fictief online tijdschrift en blog dat zich concentreert op het nachtleven, activiteiten en gebeurtenissen in verschillende internationale steden.
+Er zijn twee basisbenaderingen voor het starten van een AEM Sites-project.
 
-### Adobe XD UI-kit
+**AEM Project Archetype**  - Traditionele benadering van AEM ontwikkeling door een minimaal AEM project te produceren gebruikend een Geweven malplaatje. Dit is de geadviseerde benadering voor AEM 6.5/6.4 projecten en AEM als projecten van de Cloud Service die zware aanpassing voorzien. De zelfstudie biedt een dieper inzicht in AEM ontwikkeling.
+
+[De zelfstudie starten met het AEM Project Archetype](./project-archetype/overview.md)
+
+**AEM Sitesjablonen**  - Een lagecodemethode voor het genereren van een AEM site met behulp van een vooraf gedefinieerd Sjabloon. Gebruik componenten en sjablonen uit de keuzelijst om een site snel in bedrijf te stellen. Gebruik een themaworkflow om merkspecifieke stijlen en aanpassingen toe te passen met alleen CSS en JavaScript. Aanbevolen voor nieuwe projecten en ontwikkelaars. Momenteel alleen beschikbaar voor AEM als Cloud Service.
+
+[De zelfstudie starten met een sitesjabloon](./site-template/create-site.md)
+
+## Adobe XD UI-kit
 
 Om deze zelfstudie dichter bij een werkelijk scenario te brengen hebben de getalenteerde ontwerpers van UX de modellen voor de plaats gebruikend [Adobe XD](https://www.adobe.com/products/xd.html) gecreeerd. In de loop van de zelfstudie worden verschillende onderdelen van de ontwerpen geïmplementeerd in een volledig voor de auteur geschikte AEM. Met name dankzij **Lorenzo Buosi** en **Kilian Amendola** die het prachtige ontwerp voor de WKND-site hebben gemaakt.
 
@@ -63,4 +71,4 @@ Met Adobe Stock hebt u toegang tot meer dan 140 miljoen hoogwaardige, royaltyvri
 
 ## Volgende stappen {#next-steps}
 
-Waar wacht u op?! Start de zelfstudie en leer hoe u [een nieuw Adobe Experience Manager-project kunt genereren met het AEM Project Archetype](./project-archetype/overview.md).
+Waar wacht u op?! Leer hoe u [een nieuw Adobe Experience Manager-project kunt genereren met het AEM Project Archetype](./project-archetype/overview.md) of [een site maken met een Sitjabloon](./site-template/create-site.md).
