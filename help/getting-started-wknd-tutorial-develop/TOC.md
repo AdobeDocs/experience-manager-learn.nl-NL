@@ -10,10 +10,10 @@ user-guide-description: Een meerdelige zelfstudie voor ontwikkelaars die nog nie
 breadcrumb-title: AEM Sites WKND Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 1%
+source-wordcount: '76'
+ht-degree: 9%
 
 ---
 
@@ -30,3 +30,8 @@ ht-degree: 1%
    + [5 - Stijlsysteem](./project-archetype/style-system.md)
    + [6 - Aangepaste component](./project-archetype/custom-component.md)
    + [7 - Eenheid testen](./project-archetype/unit-testing.md)
++ Sitesjabloon {#site-template}
+   + [1. Een site maken](./site-template/create-site.md)
+   + [2. Inhoud schrijven en wijzigingen publiceren](./site-template/author-content-publish.md)
+   + [3. Paginasjablonen](./site-template/page-templates.md)
+   + [4. Thema](./site-template/theming.md)
