@@ -3,20 +3,17 @@ title: Aan de slag met AEM Sites - Projectinstellingen
 seo-title: Aan de slag met AEM Sites - Projectinstellingen
 description: Omvat de verwezenlijking van een Maven Multimoduleproject om de code en de configuraties voor een AEM Plaats te beheren.
 sub-product: sites
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Projectarchetype AEM
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-kt: 3418
-thumbnail: 30152.jpg
 topic: Inhoudsbeheer, ontwikkeling
 role: Developer
 level: Beginner
+mini-toc-levels: 1
+kt: 3418
+thumbnail: 30152.jpg
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 1%
