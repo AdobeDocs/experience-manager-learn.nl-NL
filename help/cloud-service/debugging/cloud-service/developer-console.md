@@ -1,7 +1,7 @@
 ---
 title: Developer Console
 description: AEM als Cloud Service verstrekt een Console van de Ontwikkelaar voor elk milieu dat diverse details van de lopende AEM dienst blootstelt die in het zuiveren nuttig zijn.
-feature: Developer Tools
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,13 +9,13 @@ activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 048a37a9813e7b61ff069c4606b8d23cc6b6844f
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Om tot de Console van de Ontwikkelaar toegang te hebben en te gebruiken moeten d
 1. Zorg ervoor dat de Adobe Org die Cloud Manger en AEM als producten van de Cloud Service heeft aangetast, actief is in de Adobe Org-switch.
 1. De ontwikkelaar moet lid zijn van het productprofiel __Developer - Cloud Service__ van Cloud Manager.
    + Als dit lidmaatschap niet bestaat, kan de ontwikkelaar zich niet aanmelden bij de Developer Console.
-1. De ontwikkelaar moet lid zijn van het __AEM Beheerders__ Productprofiel van de AEM-auteur en -publicatieservice.
+1. De ontwikkelaar moet lid zijn van het __AEM Users__ of __AEM Beheerders__ Productprofiel op AEM-auteur en/of Publiceren.
    + Als dit lidmaatschap niet bestaat, zal de [status](#status) dumps onderbreking met een 401 Onbevoegde fout.
 
 ### Toegang tot ontwikkelaarsconsole voor probleemoplossing
