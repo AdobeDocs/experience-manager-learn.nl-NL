@@ -2,19 +2,16 @@
 title: Client-Side Libraries en front-end workflow
 description: Leer hoe Client-Side Bibliotheken of clientlibs worden gebruikt om CSS en JavaScript voor een implementatie van Adobe Experience Manager (AEM) Plaatsen op te stellen en te beheren. Dit leerprogramma zal ook behandelen hoe de module ui.frontend, een webpack project, in het bouwstijlproces van begin tot eind kan worden geïntegreerd.
 sub-product: sites
-topics: front-end-development,responsive
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-kt: 4083
-thumbnail: 30359.jpg
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Core Components, AEM Project Archetype
 topic: Inhoudsbeheer, ontwikkeling
 role: Developer
 level: Beginner
+kt: 4083
+thumbnail: 30359.jpg
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '3299'
 ht-degree: 0%
@@ -63,7 +60,7 @@ Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
 
 U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/client-side-libraries-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `tutorial/client-side-libraries-solution` te schakelen.
 
-## Doelstelling
+## Doelstellingen
 
 1. Begrijp hoe clientbibliotheken via een bewerkbare sjabloon op een pagina worden opgenomen.
 1. Leer hoe te om UI.Frontend Module en een webpack ontwikkelingsserver voor specifieke front-end ontwikkeling te gebruiken.
