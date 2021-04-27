@@ -11,7 +11,7 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 3%
@@ -40,12 +40,12 @@ ht-degree: 3%
 + SPA Editor{#spa-editor}
    + Externe SPA{#remote-spa}
       + [Overzicht](./spa-editor/remote-spa/overview.md)
-      + [1 - Snelle installatie](./spa-editor/remote-spa/quick-setup.md)
-      + [2 - AEM configureren](./spa-editor/remote-spa/aem-configure.md)
-      + [3 - Bootstrap de SPA](./spa-editor/remote-spa/spa-bootstrap.md)
-      + [4 - Vaste componenten](./spa-editor/remote-spa/spa-fixed-component.md)
-      + [5 - Containeronderdelen](./spa-editor/remote-spa/spa-container-component.md)
-      + [6 - Dynamische routes](./spa-editor/remote-spa/spa-dynamic-routes.md)
+      + [Snelle installatie](./spa-editor/remote-spa/quick-setup.md)
+      + [1 - AEM configureren](./spa-editor/remote-spa/aem-configure.md)
+      + [2 - Bootstrap de SPA](./spa-editor/remote-spa/spa-bootstrap.md)
+      + [3 - Vaste componenten](./spa-editor/remote-spa/spa-fixed-component.md)
+      + [4 - Containeronderdelen](./spa-editor/remote-spa/spa-container-component.md)
+      + [5 - Dynamische routes](./spa-editor/remote-spa/spa-dynamic-routes.md)
 + Tokengebaseerde verificatie {#authentication}
    + [Overzicht](./authentication/overview.md)
    + [1 - Toegangstoken voor lokale ontwikkeling](./authentication/local-development-access-token.md)
