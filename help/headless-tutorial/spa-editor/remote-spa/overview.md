@@ -8,9 +8,9 @@ level: Beginner
 kt: 7630
 thumbnail: kt-7630.jpg
 translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -67,35 +67,37 @@ Deze zelfstudie gaat uit van:
 
 Met Quick Setup kunt u binnen 15 minuten aan de slag met de WKND App SPA en AEM SPA Editor. Deze versnelde opstelling neemt u rechtstreeks aan de eindstaat van het leerprogramma, toestaand u om het ontwerpen van de SPA in AEM SPA Redacteur te onderzoeken.
 
-+ [Snelle installatie](./quick-setup.md)
++ [Meer informatie over snelle installatie](./quick-setup.md)
 
-## AEM configureren voor SPA Editor
+## 1. AEM configureren voor SPA Editor
 
 AEM configuraties zijn vereist om de SPA te integreren met AEM SPA Editor. Deze configuraties worden beheerd en opgesteld via een AEM Project. In dit hoofdstuk, leer over welke configuraties noodzakelijk zijn en hoe te om hen te bepalen.
 
-+ [AEM configureren](./aem-configure.md)
++ [Leer hoe u AEM voor SPA Editor configureert](./aem-configure.md)
 
-## Bootstrap de SPA
+## 2. Bootstrap de SPA
 
 Om AEM SPA Editor een SPA te kunnen integreren in de ontwerpcontext, moeten er enkele toevoegingen aan de SPA worden aangebracht.
 
-+ [Bootstrap de SPA voor AEM SPA Editor](./spa-bootstrap.md)
++ [Leer hoe u de SPA voor AEM SPA Editor opnieuw kunt opstarten](./spa-bootstrap.md)
 
-## Bewerkbare vaste componenten
+## 3. Bewerkbare vaste componenten
 
 Verken eerst het toevoegen van een bewerkbare &#39;vaste&#39; component aan de SPA. Dit illustreert hoe een ontwikkelaar een specifieke bewerkbare component in de SPA kan plaatsen. Hoewel de auteur de inhoud van de component kan wijzigen, kunnen deze de component niet verwijderen of de plaatsing, plaatsing of grootte ervan wijzigen.
 
-+ [Bewerkbare vaste componenten](./spa-fixed-component.md)
++ [Meer informatie over bewerkbare vaste componenten](./spa-fixed-component.md)
 
-## Bewerkbare containercomponenten
+## 4. Bewerkbare containercomponenten
 
 Hierna kunt u een bewerkbare &#39;containercomponent&#39; aan de SPA toevoegen. Dit illustreert hoe een ontwikkelaar een containercomponent in de SPA kan plaatsen. Met containercomponenten kunnen auteurs toegestane componenten erin plaatsen en de lay-out van de componenten aanpassen.
 
-## Dynamische routes en bewerkbare componenten
++ [Meer informatie over bewerkbare containercomponenten](./spa-container-component.md)
+
+## 5. Dynamische routes en bewerkbare componenten
 
 Ten slotte, gebruik de concepten die in vorige hoofdstukken zijn toegelicht aan dynamische routes; routes die verschillende inhoud tonen die op de parameter van de route wordt gebaseerd. Dit illustreert hoe AEM SPA Redacteur aan auteursinhoud op routes kan worden gebruikt die programmatically worden gedreven en worden afgeleid.
 
-+ [Dynamische routen en bewerkbare componenten](./spa-dynamic-routes.md)
++ [Meer informatie over dynamische routes en bewerkbare componenten](./spa-dynamic-routes.md)
 
 ## Aanvullende bronnen
 
