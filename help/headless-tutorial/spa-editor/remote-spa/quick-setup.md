@@ -8,9 +8,9 @@ level: Beginner
 kt: 7629
 thumbnail: kt-7629.jpeg
 translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -75,8 +75,8 @@ Deze zelfstudie is afhankelijk van het __WKND 0.3.0+&#39;s__-project (voor inhou
 
 Om een snelle opstelling uit te voeren, worden AEM pakketten verstrekt die de definitieve AEM van het leerprogramma configuratie en inhoud bevatten.
 
-1. `wknd-app.all.x.x.x.zip` downloaden van de pod van Activa van DemoHub
-1. `wknd-app.ui.content.sample.x.x.x.zip` downloaden van de pod van Activa van DemoHub
+1. [Downloaden  `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Downloaden  `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
 1. Meld u aan bij AEM pakketbeheer van SDK op [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) met de `admin`-referenties.
 1. __De in stap 1__ gedownloade bestanden  `wknd-app.all.x.x.x.zip` uploaden
 1. Tik op de knop __Installeren__ voor de vermelding `wknd-app.all.x.x.x.zip`
