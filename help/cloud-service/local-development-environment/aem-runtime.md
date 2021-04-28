@@ -1,7 +1,7 @@
 ---
 title: Lokale AEM Runtime instellen voor AEM als ontwikkeling van Cloud Servicen
 description: Opstelling Lokale AEM Runtime die de AEM als QuickStart Jar van SDK van de Cloud Service gebruikt.
-feature: Developer Tools
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,19 +9,26 @@ activity: develop
 audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1734'
 ht-degree: 1%
 
 ---
 
 
 # Lokale AEM-runtime instellen
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_aemruntime"
+>title="Lokale AEM"
+>abstract="Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de AEM als QuickStart Jar van een Cloud Service-SDK. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie en inhoud te testen alvorens het aan broncontrole vast te leggen, en het op te stellen aan een AEM als milieu van de Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM downloaden als Cloud Service SDK"
 
 Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de AEM als QuickStart Jar van een Cloud Service-SDK. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie en inhoud te testen alvorens het aan broncontrole vast te leggen, en het op te stellen aan een AEM als milieu van de Cloud Service.
 
@@ -196,7 +203,7 @@ Werk de AEM SDK ten minste maandelijks bij op of kort na de laatste donderdag va
 >
 > Als u de QuickStart-jar wilt bijwerken naar een nieuwe versie, moet u de volledige lokale ontwikkelomgeving vervangen. Dit leidt tot verlies van alle code, configuratie en inhoud in de lokale AEM. Zorg ervoor dat om het even welke code, config of inhoud die niet zou moeten worden vernietigd veilig aan Git wordt begaan, of uit de lokale AEM instantie als AEM Pakketten wordt uitgevoerd.
 
-### Hoe te om inhoudsverlies te vermijden wanneer het bevorderen van de AEM SDK
+### Hoe te vermijden inhoudsverlies wanneer het bevorderen van de AEM SDK
 
 Door de upgrade van de AEM SDK wordt in feite een geheel nieuwe AEM-runtime gemaakt, waaronder een nieuwe opslagplaats. Dit betekent dat eventuele wijzigingen in de opslagplaats van een eerdere AEM SDK verloren gaan. Hieronder volgen levensvatbare strategieën voor het ondersteunen van blijvende inhoud tussen AEM SDK-upgrades en u kunt deze op discrete wijze of in overleg gebruiken:
 
