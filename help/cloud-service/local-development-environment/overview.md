@@ -1,7 +1,7 @@
 ---
 title: Lokale ontwikkelomgeving voor AEM als Cloud Service
 description: Adobe Experience Manager (AEM) overzicht van de lokale ontwikkelomgeving.
-feature: Developer Tools
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: article
@@ -9,19 +9,26 @@ activity: troubleshoot
 audience: developer
 kt: 3290
 thumbnail: 32565.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
 
 
 # Lokale ontwikkelomgeving instellen
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_overview"
+>title="Overzicht"
+>abstract="De vestiging lokale ontwikkelomgeving voor AEM als Cloud Service omvat ontwikkelingshulpmiddelen die worden vereist om AEM Projecten te ontwikkelen, te bouwen en te compileren, evenals lokale runtime die ontwikkelaars toestaat om nieuwe eigenschappen plaatselijk snel te bevestigen alvorens hen aan AEM als Cloud Service via de Manager van de Wolk van Adobe te opstellen."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html" text="Richtlijnen voor ontwikkeling"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="Grondbeginselen van ontwikkeling"
 
 Deze zelfstudie doorloopt het opzetten van een lokale ontwikkelomgeving voor Adobe Experience Manager (AEM) waarbij de AEM als Cloud Service SDK wordt gebruikt. Hieronder vindt u de ontwikkelingstool die nodig is voor het ontwikkelen, bouwen en compileren van AEM projecten, en lokale runtimes waarmee ontwikkelaars snel lokale nieuwe functies kunnen valideren voordat ze deze als Cloud Service via Adobe Cloud Manager implementeren.
 
