@@ -1,7 +1,7 @@
 ---
 title: Een Asset compute metagegevensworker ontwikkelen
 description: Leer hoe u een Asset compute-metagegevensworker maakt die de meest gebruikte kleuren in een afbeeldingselement afleidt en de namen van de kleuren in AEM terugschrijft naar de metagegevens van het element.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Integrations, Development
+topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1439'
 ht-degree: 0%
 
 ---
@@ -205,6 +205,7 @@ Omdat ons Asset compute-project twee workers bevat (de vorige [cirkeluitvoering]
        ]
    }
    ```
+
 1. Tik __Run__ en wacht tot de XML-uitvoering is gegenereerd
    + Aangezien beide workers worden vermeld in de profieldefinitie, genereren beide uitvoeringen. Naar keuze, kan de hoogste profieldefinitie die bij [de worker van de cirkelvertoning ](../develop/worker.md) richt worden geschrapt, vermijden uitvoerend het van het Hulpmiddel van de Ontwikkeling.
 1. In de sectie __Uitvoeringen__ wordt een voorvertoning van de gegenereerde uitvoering weergegeven. Tik op `rendition.xml` om het te downloaden en open het in de Code van VS (of uw favoriete redacteur XML/text) om het te herzien.
