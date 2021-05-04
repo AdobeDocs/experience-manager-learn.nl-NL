@@ -1,7 +1,7 @@
 ---
 title: Een Asset compute-worker testen
 description: Het project van de Asset compute bepaalt een patroon voor gemakkelijk het creëren van en het uitvoeren van tests van de arbeiders van de Asset compute.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
-topic: Integrations, Development
+topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,9 @@ In deze testcase wordt de parameterized input (`params.json`) voor het invoerbes
        "brightness": "-0.50"
    }
    ```
+
    Dit zijn dezelfde sleutel/waarden die worden doorgegeven in de [definitie van het profiel Asset compute van het Hulpmiddel ](../develop/development-tool.md), minus de `worker` sleutel.
+
 1. Voeg het verwachte [vertoningsbestand](./assets/test/success-parameterized/rendition.png) aan deze testcase toe en noem deze `rendition.png`. Dit bestand vertegenwoordigt de verwachte uitvoer van de worker voor de opgegeven invoer `file.jpg`.
 1. Van de bevellijn, stel de tests de projectwortel in werking door `aio app test` uit te voeren
    + Zorg ervoor dat [Docker Desktop](../set-up/development-environment.md#docker) en ondersteunende Docker-images zijn geïnstalleerd en gestart
