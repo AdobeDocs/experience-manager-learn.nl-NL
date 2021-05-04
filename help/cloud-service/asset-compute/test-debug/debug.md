@@ -1,7 +1,7 @@
 ---
 title: Fouten opsporen in een Asset compute-worker
 description: De arbeiders van de asset compute kunnen op verscheidene manieren, van eenvoudige zuivert logboekverklaringen, aan de Code van VS in bijlage als verre debugger, aan trekkend logboeken voor activeringen in Adobe I/O Runtime worden in werking gesteld die van AEM als Cloud Service.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: Integrations, Development
+topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,7 @@ _Doorklikken van foutopsporing in een Asset compute-worker met wskdebug (geen au
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
+
 1. Begin een nieuw geval van het Hulpmiddel van de Ontwikkeling van de Asset compute gebruikend het bevel `npx adobe-asset-compute devtool`
 1. Tik in VS-code op het pictogram Foutopsporing in de linkernavigatie
    + Tik op __Maak een bestand launch.json > Node.js__ om een nieuw bestand `launch.json` te maken.
