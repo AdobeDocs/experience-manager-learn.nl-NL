@@ -8,9 +8,9 @@ level: Beginner
 kt: 7629
 thumbnail: kt-7629.jpeg
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -32,8 +32,11 @@ Voor deze zelfstudie is het volgende vereist:
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
++ Alleen MacOS-vereisten
+   + [opdrachtregelprogramma&#39;s voor ](https://developer.apple.com/xcode/) Xcodeor  [Xcode](https://developer.apple.com/xcode/resources/)
 + [aem-guides-wknd.all.0.3.0.zip of hoger](https://github.com/adobe/aem-guides-wknd/releases)
 + [aem-guides-wknd-graphql broncode](https://github.com/adobe/aem-guides-wknd-graphql)
+
 
 Deze zelfstudie gaat uit van:
 
@@ -90,7 +93,8 @@ Download de broncode van de WKND-app van Github.com en schakel de vertakking met
 ```
 $ mkdir -p ~/Code/wknd-app
 $ cd ~/Code/wknd-app
-$ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
+$ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd aem-guides-wknd-graphql
 $ git checkout -b feature/spa-editor
 $ git pull origin feature/spa-editor
 ```
@@ -146,6 +150,8 @@ Voordat u inhoud gaat ontwerpen, rangschikt u de browservensters zodanig dat de 
 1. Tik op de __Bali Surf Camp__ kaart en navigeer naar de dynamische route
 1. Componenten toevoegen, wijzigen of verwijderen uit de containercomponent die zich boven de kop __Inleiding__ bevindt
 1. Vernieuw de SPA die op `http://localhost:3000` lopen en zie dat de veranderingen weerspiegeld waren
+
+Nieuwe AEM onder __WKND App Home page > Adventure__ _must_ hebben een AEM paginanaam die de naam van het de inhoudfragment van het overeenkomstige avontuur aanpast. Dit is omdat de SPA route aan AEM van de Pagina afbeelding van het laatste segment van de route, die de naam van het Fragment van de Inhoud is gebaseerd.
 
 ## Gefeliciteerd!
 
