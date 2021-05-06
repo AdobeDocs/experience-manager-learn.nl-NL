@@ -4,20 +4,27 @@ description: Ontdek hoe u een AEM codeproject implementeert als een Cloud Servic
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: Developer Tools
+topic: Ontwikkeling
+feature: Gereedschappen voor ontwikkelaars
 kt: 6912
 thumbnail: 330534.jpg
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
 
 # Code implementeren
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_devops_deploycode"
+>title="Code implementeren"
+>abstract="Integreer de gegevensopslagruimte van de cloudmanager met een externe opslagplaats voor it en implementeer een project om als Cloud Service te AEM"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=en#cloud-manager" text="Projecten samenvoegen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#how-to-use" text="Code implementeren met Cloud Manager"
 
 Integreer de gegevensopslagruimte van de cloudmanager met een externe opslagplaats voor it en implementeer een project om als Cloud Service te AEM
 
