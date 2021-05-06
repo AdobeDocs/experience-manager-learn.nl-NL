@@ -9,19 +9,26 @@ activity: use
 version: cloud-service
 kt: 6872, 6875
 thumbnail: 26317.jpg
-topic: Architecture
+topic: Architectuur
 role: Architect, Developer, Administrator
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
 
 
 # Adobe Cloud Manager gebruiken - CI/CD Production Pipeline
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_devops_prodpipeline"
+>title="Productiepijpleiding CI/CD"
+>abstract="De configuratie van de Pijpleiding van de Productie CI/CD bepaalt de trekker die de pijpleiding, parameters zal in werking stellen die de plaatsing van de productie en de parameters van de prestatietest controleren."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-process" text="Uw code implementeren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Implementatie naar productiefase"
 
 ## Configuratie
 
