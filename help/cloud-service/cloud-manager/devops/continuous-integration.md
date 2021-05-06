@@ -4,20 +4,26 @@ description: Werken met de beste werkwijzen en continue integratie met Adobe Clo
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: Developer Tools
+topic: Ontwikkeling
+feature: Gereedschappen voor ontwikkelaars
 kt: 6914
 thumbnail: 330536.jpg
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
-source-wordcount: '32'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 7%
 
 ---
 
 
 # Continue integratie en Cloud Manager
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_devops_cicd"
+>title="Continue integratie en Cloud Manager"
+>abstract="Werken met de beste werkwijzen en continue integratie met Adobe Cloud Manager."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#non-production-pipelines" text="De CI/CD-pipeline configureren"
 
 Werken met de beste werkwijzen en continue integratie met Adobe Cloud Manager.
 
