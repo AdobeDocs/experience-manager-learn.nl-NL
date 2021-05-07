@@ -6,12 +6,12 @@ feature: SPA Editor, kerncomponenten, API's, ontwikkelen
 role: Developer, Architect
 level: Beginner
 kt: 7629
-thumbnail: kt-7629.jpeg
+thumbnail: 333181.jpeg
 translation-type: tm+mt
-source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
+source-git-commit: e6dc028a120670d34806def36ad200ed161295e1
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 1%
+source-wordcount: '801'
+ht-degree: 0%
 
 ---
 
@@ -21,6 +21,10 @@ ht-degree: 1%
 Snelle opstelling is een versnelde looppas-door illustrerend hoe te om de app WKND en als Verre SPA te installeren en in werking te stellen, en het te schrijven gebruikend AEM SPA Redacteur.
 
 Met Snelle installatie gaat u rechtstreeks naar de eindstaat van deze zelfstudie.
+
+>[!VIDEO](https://video.tv.adobe.com/v/333181/?quality=12&learn=on)
+
+_Een video die door de snelle opstelling loopt_
 
 ## Vereisten
 
