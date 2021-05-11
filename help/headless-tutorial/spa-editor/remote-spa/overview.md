@@ -8,7 +8,7 @@ level: Beginner
 kt: 7630
 thumbnail: kt-7630.jpg
 translation-type: tm+mt
-source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
+source-git-commit: ec692af56afa83330097bb9d8db0d2f2f4fde1c1
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 1%
@@ -35,7 +35,7 @@ De zelfstudie is ontworpen om te werken met **AEM als een Cloud Service** en bes
 
 ## Laatste code
 
-+ De code van deze zelfstudie kan op [GitHub](https://github.com/adobe/aem-guides-wknd-graphq) op `feature/spa-editor` tak worden gevonden.
++ De code van deze zelfstudie kan op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql) op `feature/spa-editor` tak worden gevonden.
 
 ## Vereisten
 
