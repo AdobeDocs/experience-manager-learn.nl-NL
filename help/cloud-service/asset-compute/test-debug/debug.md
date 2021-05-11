@@ -13,7 +13,7 @@ topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -59,6 +59,7 @@ _Doorklikken van foutopsporing in een Asset compute-worker met wskdebug (geen au
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
+
 
 1. Begin een nieuw geval van het Hulpmiddel van de Ontwikkeling van de Asset compute gebruikend het bevel `npx adobe-asset-compute devtool`
 1. Tik in VS-code op het pictogram Foutopsporing in de linkernavigatie
