@@ -1,21 +1,21 @@
 ---
 title: Andere tools voor foutopsporing AEM SDK
 description: Een verscheidenheid van andere hulpmiddelen kan helpen bij het zuiveren van de lokale snelle start van AEM SDK.
-feature: Developer Tools
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner, Intermediate
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 5fcc7eec120debf1a8ac08716154599467e66759
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 1%
+source-wordcount: '222'
+ht-degree: 2%
 
 ---
 
@@ -55,14 +55,4 @@ Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvra
 Foutopsporing van QueryBuilder bevindt zich op de volgende locatie:
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
-
-## Sling Log Tracer en AEM Chrome plug-in
-
-![Sling Log Tracer en AEM Chrome plug-in](./assets/other-tools/log-tracer.png)
-
-[Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), die wordt geleverd met AEM lokale QuickStart van SDK, maakt het mogelijk om HTTP-verzoeken grondig te traceren, waarbij diepgaande foutopsporingsinformatie per aanvraag wordt weergegeven. De [configuratie OSGi van de Traceur van het Logboek moet ](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) worden gevormd om deze eigenschap toe te laten.
-
-De opensource [AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) voor de [Google Chrome-webbrowser](https://www.google.com/chrome/), integreert met Log Tracer, zodat de foutopsporingsinformatie rechtstreeks beschikbaar komt in de Dev Tools van Chrome.
-
-_De AEM Chrome-plug-in is een opensource-programma en Adobe biedt hiervoor geen ondersteuning._
 
