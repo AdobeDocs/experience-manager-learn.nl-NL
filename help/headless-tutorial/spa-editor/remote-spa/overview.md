@@ -6,9 +6,8 @@ feature: SPA Editor, kerncomponenten, API's, ontwikkelen
 role: Developer, Architect
 level: Beginner
 kt: 7630
-thumbnail: kt-7630.jpg
-translation-type: tm+mt
-source-git-commit: ec692af56afa83330097bb9d8db0d2f2f4fde1c1
+thumbnail: 333272.jpeg
+source-git-commit: cede0c97e0f322fe5d20d5c4f685ed10b90af1d4
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 1%
@@ -21,6 +20,8 @@ ht-degree: 1%
 Welkom bij de meerdelige zelfstudie voor ontwikkelaars die een bestaande, op React gebaseerde (of Next.js) externe SPA willen uitbreiden met bewerkbare AEM met AEM SPA Editor.
 
 Deze zelfstudie is gebaseerd op de [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html), een React-app die AEM inhoud van inhoudsfragment gebruikt in vergelijking met AEM GraphQL API&#39;s, maar biedt geen in-context-authoring van SPA inhoud.
+
+>[!VIDEO](https://video.tv.adobe.com/v/333272/?quality=12&learn=on)
 
 ## Over de zelfstudie
 
