@@ -2,13 +2,12 @@
 title: 'Werken met InDesign-bestanden en Asset Templates in AEM Assets '
 description: In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overwegingen gedefinieerd voor gebruik in de functie Asset Templates van AEM Assets.
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Inhoudsbeheer
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b4fa992abe22e3a546d651e465d6ffc9e415aee2
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -74,4 +73,4 @@ InDesign-sjabloonbestand en ondersteunende afbeeldingen
 Download [InDesign sjabloonbestand en ondersteunende afbeeldingen](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
 * [Proefversie van InDesign CC downloaden](https://creative.adobe.com/products/download/indesign)
-* [Proefversie InDesign Server downloaden](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
+* [CC Enterprise-klanten kunnen contact opnemen met hun accountmanager om een InDesign Server-proeflicentie aan te vragen](https://www.adobe.com/products/indesignserver/faq.html)
