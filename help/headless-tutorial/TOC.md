@@ -10,10 +10,9 @@ topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
-translation-type: tm+mt
-source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
+source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '142'
 ht-degree: 3%
 
 ---
@@ -28,6 +27,8 @@ ht-degree: 3%
       + [1 - Grondbeginselen van modellering](./graphql/video-series/modeling-basics.md)
       + [2 - Geavanceerde modellering](./graphql/video-series/advanced-modeling.md)
       + [3 - GraphQL-query&#39;s maken](./graphql/video-series/creating-graphql-queries.md)
+      + [4 - Auteur- en publicatiearchitectuur](./graphql/video-series/author-publish-architecture.md)
+      + [5 - Variaties in inhoudsfragmenten](./graphql/video-series/content-fragment-variations.md)
    + Zelfstudie in meerdere stappen{#multi-step}
       + [Overzicht](./graphql/multi-step/overview.md)
       + [1 - Snelle installatie](./graphql/multi-step/setup.md)
