@@ -4,11 +4,10 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
-translation-type: tm+mt
-source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 12%
+source-wordcount: '440'
+ht-degree: 11%
 
 ---
 
@@ -96,6 +95,14 @@ ht-degree: 12%
       + [Deelvenster Elementen configureren](./forms/create-first-af/configure-assets-panel.md)
       + [Deelvenster Start configureren](./forms/create-first-af/configure-start-panel.md)
       + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
+   + Document Cloud-API en AEM Forms CS{#doc-cloud-sdk}
+      + [Inleiding](./forms/doc-cloud-sdk/introduction.md)
+      + [Adobe IO-project maken](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [OSGI-configuratie maken](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [Interface definiëren](./forms/doc-cloud-sdk/create-interface.md)
+      + [Interface implementeren](./forms/doc-cloud-sdk/implement-interface.md)
+      + [JSON-onderdeel maken](./forms/doc-cloud-sdk/get-content-analyzer.md)
+      + [Aangepaste processtap](./forms/doc-cloud-sdk/custom-process-step.md)
    + Revisiworkflow maken{#create-aem-workflow}
       + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
       + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
