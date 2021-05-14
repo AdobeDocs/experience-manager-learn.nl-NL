@@ -9,10 +9,9 @@ role: Developer
 level: Beginner
 kt: 7620
 thumbnail: 332859.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -21,6 +20,12 @@ ht-degree: 0%
 # Geavanceerde modellering voor GraphQL
 
 Leer hoe u relaties kunt maken tussen Content Fragment Models in Adobe Experience Manager (AEM) en hoe u deze relaties kunt benutten in GraphQL-query&#39;s.
+
+In deze video zult u:
+
++ Leer hoe u verwijzingen naar inhoudsfragmenten gebruikt om een of meer inhoudsfragmenten te koppelen
++ Leer hoe u een koppeling tot stand brengt met andere inhoudsfragmenten in een RTF-veld
++ Create GraphQL query&#39;s that return data from within referenced Content Fragments
 
 >[!VIDEO](https://video.tv.adobe.com/v/332859/?quality=12&learn=on)
 
