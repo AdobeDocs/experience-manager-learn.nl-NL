@@ -2,7 +2,7 @@
 title: SPA Editor-project | Aan de slag met de AEM SPA Editor en Angular
 description: Leer hoe u een Adobe Experience Manager (AEM) Maven-project gebruikt als beginpunt voor een Angular-toepassing die is geïntegreerd met de AEM SPA Editor.
 sub-product: sites
-feature: SPA Editor, AEM Project Archetype
+feature: SPA-editor AEM projectarchetype
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -13,10 +13,9 @@ thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 375df47a13b1820911a7ceb73af0dad15c68740e
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1101'
 ht-degree: 1%
 
 ---
@@ -95,16 +94,16 @@ Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand
 
 ## Het project bouwen
 
-Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van AEM op gebruikend Maven.
+Daarna, compileert, bouwt, en stelt de projectcode aan een lokaal geval van AEM op gebruikend Maven.
 
 1. Zorg ervoor dat een instantie van AEM lokaal wordt uitgevoerd op poort **4502**.
 2. Van de terminal van de bevellijn verifieert dat Maven geïnstalleerd is:
 
    ```shell
    $ mvn --version
-    Apache Maven 3.6.2
-    Maven home: /Library/apache-maven-3.6.2
-    Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
+   Apache Maven 3.6.2
+   Maven home: /Library/apache-maven-3.6.2
+   Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
    ```
 
 3. Voer de onderstaande opdracht Geweven uit vanuit de map `aem-guides-wknd-spa` om het project te bouwen en te implementeren in AEM:
@@ -122,22 +121,22 @@ Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van 
    De veelvoudige modules van het project zouden moeten worden gecompileerd en aan AEM worden opgesteld.
 
    ```plain
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Reactor Summary for wknd-spa-angular 1.0.0-SNAPSHOT:
-    [INFO] 
-    [INFO] wknd-spa-angular ................................... SUCCESS [  0.473 s]
-    [INFO] WKND SPA Angular - Core ............................ SUCCESS [ 54.866 s]
-    [INFO] wknd-spa-angular.ui.frontend - UI Frontend ......... SUCCESS [02:10 min]
-    [INFO] WKND SPA Angular - Repository Structure Package .... SUCCESS [  0.694 s]
-    [INFO] WKND SPA Angular - UI apps ......................... SUCCESS [  6.351 s]
-    [INFO] WKND SPA Angular - UI content ...................... SUCCESS [  2.885 s]
-    [INFO] WKND SPA Angular - All ............................. SUCCESS [  1.736 s]
-    [INFO] WKND SPA Angular - Integration Tests Bundles ....... SUCCESS [  2.563 s]
-    [INFO] WKND SPA Angular - Integration Tests Launcher ...... SUCCESS [  1.846 s]
-    [INFO] WKND SPA Angular - Dispatcher ...................... SUCCESS [  0.270 s]
-    [INFO] ------------------------------------------------------------------------
-    [INFO] BUILD SUCCESS
-    [INFO] ------------------------------------------------------------------------
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Reactor Summary for wknd-spa-angular 1.0.0-SNAPSHOT:
+   [INFO] 
+   [INFO] wknd-spa-angular ................................... SUCCESS [  0.473 s]
+   [INFO] WKND SPA Angular - Core ............................ SUCCESS [ 54.866 s]
+   [INFO] wknd-spa-angular.ui.frontend - UI Frontend ......... SUCCESS [02:10 min]
+   [INFO] WKND SPA Angular - Repository Structure Package .... SUCCESS [  0.694 s]
+   [INFO] WKND SPA Angular - UI apps ......................... SUCCESS [  6.351 s]
+   [INFO] WKND SPA Angular - UI content ...................... SUCCESS [  2.885 s]
+   [INFO] WKND SPA Angular - All ............................. SUCCESS [  1.736 s]
+   [INFO] WKND SPA Angular - Integration Tests Bundles ....... SUCCESS [  2.563 s]
+   [INFO] WKND SPA Angular - Integration Tests Launcher ...... SUCCESS [  1.846 s]
+   [INFO] WKND SPA Angular - Dispatcher ...................... SUCCESS [  0.270 s]
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD SUCCESS
+   [INFO] ------------------------------------------------------------------------
    ```
 
    Met het profiel Maven ***autoInstallSinglePackage*** worden de afzonderlijke modules van het project gecompileerd en wordt één pakket naar de AEM-instantie geïmplementeerd. Dit pakket wordt standaard geïmplementeerd op een AEM-instantie die lokaal op poort **4502** wordt uitgevoerd en met de gegevens van **admin:admin**.
