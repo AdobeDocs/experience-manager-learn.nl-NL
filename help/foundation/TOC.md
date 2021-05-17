@@ -4,16 +4,15 @@ breadcrumb-title: Tutorials AEM stichting
 user-guide-description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Manager Foundation. '
 sub-product: stichting
 index: y
-translation-type: tm+mt
-source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 3%
 
 ---
 
 
-# AEM Foundation-video&#39;s en -Tutorials {#foundation}
+# Video&#39;s en Tutorials AEM {#foundation}
 
 + [Overzicht](./overview.md)
 + Beheer {#administration}
@@ -45,6 +44,6 @@ ht-degree: 3%
    + [De SSL-wizard gebruiken](./security/use-the-ssl-wizard.md)
 + Workflow {#workflow}
    + [De Workfloweditor gebruiken](./workflow/use-the-workflow-editor.md)
-   + [Workflowbeheer gebruiken](./workflow/use-workflow-management.md)
+   + [Workflow gebruiken](./workflow/use-workflow.md)
    + [Inbox gebruiken](./workflow/use-the-inbox.md)
 
