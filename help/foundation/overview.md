@@ -5,10 +5,9 @@ description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Mana
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Foundation
 role: Leader, Architect, Developer, Administrator, Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
@@ -20,8 +19,9 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 
 ## Wat is er nieuw?
 
-* **[Workflowbeheer gebruiken in AEM (video)](./workflow/use-workflow-management.md)**
-   *AEM zorgt voor zichtbaarheid in het uitvoeren van workflows en vereenvoudigt het beheer van  [!DNL Workflow] definities.*
+* **[Workflow AEM gebruiken (video)](./workflow/use-workflow.md)**
+
+   *AEM Workflow biedt een manier om in AEM samen te werken, inhoud te beheren en te verwerken.*
 
 * **[Cloud Manager voor AEM begrijpen (video)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *Cloud Manager voor AEM maakt eenvoudig beheer, controle en zelfbediening van AEM omgevingen mogelijk.*
