@@ -6,9 +6,8 @@ feature: SPA Editor, kerncomponenten, API's, ontwikkelen
 role: Developer, Architect
 level: Beginner
 kt: 7629
-thumbnail: 333181.jpeg
-translation-type: tm+mt
-source-git-commit: e6dc028a120670d34806def36ad200ed161295e1
+thumbnail: 333181.jpg
+source-git-commit: 73c75f8dac85615f4ed2dfdcc2ee4d0e9e5d161a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 0%
@@ -82,8 +81,8 @@ Deze zelfstudie is afhankelijk van het __WKND 0.3.0+&#39;s__-project (voor inhou
 
 Om een snelle opstelling uit te voeren, worden AEM pakketten verstrekt die de definitieve AEM van het leerprogramma configuratie en inhoud bevatten.
 
-1. [Downloaden  `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Downloaden  `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
+1. [Downloaden ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Downloaden ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
 1. Meld u aan bij AEM pakketbeheer van SDK op [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) met de `admin`-referenties.
 1. __De in stap 1__ gedownloade bestanden  `wknd-app.all.x.x.x.zip` uploaden
 1. Tik op de knop __Installeren__ voor de vermelding `wknd-app.all.x.x.x.zip`
