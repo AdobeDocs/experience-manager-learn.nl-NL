@@ -7,13 +7,12 @@ topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
-topic: Security
+topic: Beveiliging
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 1c99c319fba5048904177fc82c43554b0cf0fc15
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -141,7 +140,8 @@ Als u het in cache plaatsen van CORS-headers wilt toestaan, voegt u de volgende 
 ```
 /cache { 
   ...
-  /clientheaders {
+  /headers {
+      "Origin",
       "Access-Control-Allow-Origin"
       "Access-Control-Expose-Headers"
       "Access-Control-Max-Age"
@@ -155,7 +155,7 @@ Als u het in cache plaatsen van CORS-headers wilt toestaan, voegt u de volgende 
 
 **Start de webservertoepassing opnieuw** nadat u wijzigingen hebt aangebracht in het `dispatcher.any`-bestand.
 
-Het zal waarschijnlijk het geheime voorgeheugen volledig worden ontruimd zal worden vereist om de kopballen geschikt in het voorgeheugen onder te brengen op het volgende verzoek na een `/clientheaders` configuratiestupdate.
+Het zal waarschijnlijk het geheime voorgeheugen volledig worden ontruimd zal worden vereist om de kopballen geschikt in het voorgeheugen onder te brengen op het volgende verzoek na een `/cache/headers` configuratiestupdate.
 
 ## Problemen met CORS oplossen
 
@@ -170,7 +170,7 @@ Logboekregistratie is beschikbaar onder `com.adobe.granite.cors`:
 * Verifieer of het verzoek door de manager CORS en niet door de authentificatie, het symbolische filter CSRF, verzenders filters, of andere veiligheidslagen werd ontkend
    * Als de manager van CORS met 200 antwoordt, maar `Access-Control-Allow-Origin` kopbal in de reactie ontbreekt, herzie de logboeken voor ontkenning onder [!DNL DEBUG] in `com.adobe.granite.cors`
 * Als de verzender caching van [!DNL CORS] verzoeken wordt toegelaten
-   * Controleer of de `/clientheaders`-configuratie is toegepast op `dispatcher.any` en of de webserver opnieuw is gestart
+   * Controleer of de `/cache/headers`-configuratie is toegepast op `dispatcher.any` en of de webserver opnieuw is gestart
    * Zorg ervoor dat de cache juist is gewist nadat de configuratie van OSGi of dispatcher.any is gewijzigd.
 * Controleer, indien nodig, de aanwezigheid van verificatiegegevens op het verzoek.
 
