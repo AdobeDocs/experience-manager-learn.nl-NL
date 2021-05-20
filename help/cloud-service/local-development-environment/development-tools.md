@@ -12,10 +12,9 @@ thumbnail: 25907.jpg
 topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: 6b4b9d7039b7b1c60ed1a7e5ec4ed42250499cec
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -146,22 +145,20 @@ Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI Asset compute-worker
 
 ### De Adobe I/O CLI-verificatie instellen
 
-De Adobe I/O CLI kan alleen communiceren met Cloud Manager als er een integratie met Cloud Manager is gemaakt in de Adobe I/O Console en als de gegevens zijn verkregen voor verificatie.
-
->[!VIDEO](https://video.tv.adobe.com/v/35094?quality=12&learn=on)
+De Adobe I/O CLI kan alleen communiceren met Cloud Manager als er een [Cloud Manager-integratie is gemaakt in Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager) en gegevens zijn verkregen voor verificatie.
 
 1. Aanmelden bij [console.adobe.io](https://console.adobe.io)
 1. Zorg ervoor dat uw organisatie die het product Cloud Manager bevat waarmee verbinding moet worden gemaakt, actief is in de Adobe Org-switch
 1. Een nieuw programma maken of een bestaand [Adobe I/O-programma](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) openen
    + De programma&#39;s van de Console van Adobe I/O zijn eenvoudig organisatorische groeperingen van integratie, creeer of gebruik en bestaand programma gebaseerd op hoe u uw integratie wilt beheren
-   + Als u een nieuw project maakt, selecteert u &quot;Leeg project&quot; indien hierom wordt gevraagd (vs. Maken op basis van sjabloon)
+   + Als u een nieuw project maakt, selecteert u &quot;Leeg project&quot; indien hierom wordt gevraagd (vs. &quot;Maken van sjabloon&quot;)
    + Adobe I/O Console-programma&#39;s zijn verschillende concepten voor programma&#39;s van Cloud Manager
 1. Maak een nieuwe API-integratie voor Cloud Manager met het profiel &quot;Developer - Cloud Service&quot;
 1. Verkrijg de geloofsbrieven van de Rekening van de Dienst (JWT) moet Adobe I/O CLI [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) bevolken
 1. Het `config.json`-bestand in de Adobe I/O CLI laden
-   + `$ aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager PATH_TO_CONFIG_JSON_FILE --file --json`
 1. Het `private.key`-bestand in de Adobe I/O CLI laden
-   + `$ aio config:set jwt-auth.jwt_private_key PATH_TO_PRIVATE_KEY_FILE --file`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key PATH_TO_PRIVATE_KEY_FILE --file`
 
 Start [het uitvoeren van opdrachten](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) voor Cloud Manager via de Adobe I/O CLI.
 
