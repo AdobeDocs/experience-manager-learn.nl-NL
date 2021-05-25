@@ -1,0 +1,30 @@
+---
+title: GrafiekQL Blijvende query's
+description: Leer hoe u geplakte query's in AEM kunt inschakelen, maken en uitvoeren.
+sub-product: elementen
+version: cloud-service
+topic: Koploos, inhoudsbeheer
+feature: GraphQL API's
+role: Developer
+level: Beginner
+kt: 7872
+thumbnail: 333429.jpeg
+source-git-commit: bfca379bf2722dc1658400f375e65d2943f27ed7
+workflow-type: tm+mt
+source-wordcount: '67'
+ht-degree: 0%
+
+---
+
+
+# GrafiekQL Blijvende query&#39;s
+
+Leer hoe u geplakte query&#39;s in AEM kunt inschakelen, maken en uitvoeren.
+
+In deze video zult u:
+
++ Leer hoe te om GrafiekQL Voorgespannen Vragen toe te laten
++ Leer hoe u GraphQL-query&#39;s maakt, bijwerkt en uitvoert
++ Begrijp de pros en cons od server-kant tegenover cliënt-zijvragen
+
+>[!VIDEO](https://video.tv.adobe.com/v/333429/?quality=12&learn=on)
