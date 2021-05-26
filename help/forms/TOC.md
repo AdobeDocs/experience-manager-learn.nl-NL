@@ -5,10 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-translation-type: tm+mt
-source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
+source-git-commit: c74c6f5627e69e32bbf0098d6b6bab122cace798
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '964'
 ht-degree: 1%
 
 ---
@@ -42,7 +41,10 @@ ht-degree: 1%
 + Nuttige integratie{#some-useful-integrations}
    + [Verificatie met twee factoren](some-useful-integrations/two-factor-authentication.md)
    + [OCR-gegevensextractie](some-useful-integrations/ocr-data-extraction.md)
-
++ OSGi-bundel {#creating-your-first-osgi-bundle} maken
+   + [Uw omgeving instellen](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
+   + [OSGi-service maken](creating-your-first-osgi-bundle/create-osgi-service.md)
+   + [Sling Servlet maken](creating-your-first-osgi-bundle/create-servlet.md)
 + Adaptieve Forms {#adaptive-forms}
    + [AEM Forms installeren in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [32-bits pakketten installeren op Linux](adaptive-forms/installing-aem-form-on-linux.md)
