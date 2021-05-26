@@ -10,9 +10,9 @@ topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
-source-git-commit: 73c75f8dac85615f4ed2dfdcc2ee4d0e9e5d161a
+source-git-commit: bfca379bf2722dc1658400f375e65d2943f27ed7
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '147'
 ht-degree: 3%
 
 ---
@@ -27,9 +27,10 @@ ht-degree: 3%
       + [1 - Grondbeginselen van modellering](./graphql/video-series/modeling-basics.md)
       + [2 - Geavanceerde modellering](./graphql/video-series/advanced-modeling.md)
       + [3 - GraphQL-query&#39;s maken](./graphql/video-series/creating-graphql-queries.md)
-      + [4 - Auteur- en publicatiearchitectuur](./graphql/video-series/author-publish-architecture.md)
-      + [5 - Variaties in inhoudsfragmenten](./graphql/video-series/content-fragment-variations.md)
-      + [6 - GraphQL-eindpunten](./graphql/video-series/graphql-endpoints.md)
+      + [4 - GrafiekQL aanhoudende query&#39;s](./graphql/video-series/graphql-persisted-queries.md)
+      + [5 - Auteur- en publicatiearchitectuur](./graphql/video-series/author-publish-architecture.md)
+      + [6 - Variaties in inhoudsfragmenten](./graphql/video-series/content-fragment-variations.md)
+      + [7 - GraphQL-eindpunten](./graphql/video-series/graphql-endpoints.md)
    + Zelfstudie in meerdere stappen{#multi-step}
       + [Overzicht](./graphql/multi-step/overview.md)
       + [1 - Snelle installatie](./graphql/multi-step/setup.md)
