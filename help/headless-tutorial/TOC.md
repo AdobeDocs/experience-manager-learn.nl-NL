@@ -10,9 +10,9 @@ topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
-source-git-commit: 2b2c45e5ceb6f1121ff5b9befa0c79226e4e2efb
+source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '164'
 ht-degree: 3%
 
 ---
@@ -41,6 +41,14 @@ ht-degree: 3%
       + [6 - Geavanceerde gegevensmodellering met fragmentverwijzingen](./graphql/multi-step/fragment-references.md)
       + [7 - Productie-implementatie](./graphql/multi-step/production-deployment.md)
 + SPA Editor{#spa-editor}
+   + Reageren{#react}
+      + [Overzicht](./spa-editor/react/overview.md)
+      + [1 - Project maken](./spa-editor/react/create-project.md)
+      + [2 - De SPA integreren](./spa-editor/react/integrate-spa.md)
+      + [3 - SPA](./spa-editor/react/map-components.md)
+      + [4 - Navigatie en routering](./spa-editor/react/navigation-routing.md)
+      + [5 - Aangepaste component](./spa-editor/react/custom-component.md)
+      + [6 - Component uitbreiden](./spa-editor/react/extend-component.md)
    + Externe SPA{#remote-spa}
       + [Overzicht](./spa-editor/remote-spa/overview.md)
       + [Snelle installatie](./spa-editor/remote-spa/quick-setup.md)
