@@ -4,24 +4,25 @@ description: Onderzoek hoe een externe toepassing programmatically met AEM als C
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: APIs
+feature: API's
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330460.jpg
-topic: Headless, Integrations
+topic: Hoofdloos, integratie
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
 
 
 # Token-gebaseerde authentificatie aan AEM als Cloud Service
+
+AEM stelt een verscheidenheid van eindpunten van HTTP bloot die met op een headless manier, van GraphQL, AEM de Diensten van de Inhoud aan Activa HTTP API kunnen worden in wisselwerking staan. Vaak moeten deze gebruikers zonder kop zich op AEM verifiëren om toegang te krijgen tot beveiligde inhoud of handelingen. Om dit te vergemakkelijken, steunt AEM symbolisch-gebaseerde authentificatie van HTTP- verzoeken van externe toepassingen, diensten of systemen.
 
 In dit leerprogramma onderzoekt goed hoe een externe toepassing programmatically met als Cloud Service over HTTP kan voor authentiek verklaren en in wisselwerking staan gebruikend toegangstokens.
 
