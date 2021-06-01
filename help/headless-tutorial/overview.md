@@ -1,14 +1,13 @@
 ---
 title: Zelfstudies zonder koppen AEM
 description: Een verzameling zelfstudies voor het gebruik van Adobe Experience Manager als een CMS zonder koptekst.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+feature: Inhoudsfragmenten, API's
+topic: Koploos, inhoudsbeheer
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
+source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -16,48 +15,143 @@ ht-degree: 0%
 
 # Zelfstudies zonder koppen AEM
 
-Adobe Experience Manager heeft meerdere opties om eindpunten zonder kop te definiëren en de inhoud ervan als JSON te leveren. Gebruik praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken en te kiezen wat bij u past.
+Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te definiëren en de inhoud ervan als JSON te leveren. Gebruik praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken en te kiezen wat bij u past.
 
-## Zelfstudie AEM GraphQL API&#39;s
+>[!TIP]
+>
+>Deze verzameling zelfstudies is ontworpen voor gebruikers die **leren door** te doen. Als u het leren van concepten van de grond omhoog verkiest, controleer [AEM Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
 
-GrafiekQL APIs voor Inhoudsfragmenten AEM
-ondersteunt CMS-scenario&#39;s zonder kop waarbij externe clienttoepassingen ervaringen renderen met inhoud die in AEM wordt beheerd.
+## Tutorials via API
 
-Een moderne API voor het leveren van inhoud is essentieel voor de efficiëntie en prestaties van op JavaScript gebaseerde frontendtoepassingen. Het gebruiken van REST API introduceert uitdagingen:
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <img alt="GraphQL API" src="./assets/graphql-icon.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+    <strong>GraphQL API</strong>
+    </a>
+    </div>
+    <p>
+    <em>Leer hoe een toepassing AEM GraphQL API kan gebruiken om inhoud te vragen.</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <img alt="Op token gebaseerde verificatie" src="./assets/token-auth-icon.png" />
+    </a>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <strong>Tokenverificatie</strong>
+    </a>
+    </div>
+    <p>
+    <em>Leer hoe een toepassing veilig kan worden geverifieerd met AEM.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+      <img alt="Inhoudsservices" src="./assets/content-services.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+        <strong>Inhoudsservices</strong>
+      </a>
+    </div>
+    <p>
+    <em>Leer hoe een toepassing een REST API kan gebruiken om inhoud te verbruiken.</em>
+    <p>
+  </td>
+</tr>
+</table>
 
-* Een groot aantal aanvragen om één object tegelijk op te halen
-* Vaak &#39;overlevert&#39;-inhoud, wat betekent dat de toepassing meer ontvangt dan nodig is
+## Tutorials per kader
 
-Om deze uitdagingen te overwinnen verstrekt GraphQL op vraag-gebaseerde API die cliënten toestaat om AEM voor slechts de inhoud te vragen het vereist, en het gebruiken van één enkele API vraag te ontvangen.
+Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer hoe AEM meer kan betekenen dan alleen een hoofdloze kwestie, met opties voor in-context authoring en ervaringsbeheer.
 
-* Leer hoe te om AEM APIs te gebruiken GraphQL in [Aan de slag met AEM APIs GraphQL leerprogramma](./graphql/overview.md)
-
-## Zelfstudie over verificatie op basis van token
-
-AEM stelt een verscheidenheid van eindpunten van HTTP bloot die met op een headless manier, van GraphQL, AEM de Diensten van de Inhoud aan Activa HTTP API kunnen worden in wisselwerking staan. Vaak moeten deze gebruikers zonder kop zich op AEM verifiëren om toegang te krijgen tot beveiligde inhoud of handelingen. Om dit te vergemakkelijken, steunt AEM symbolisch-gebaseerde authentificatie van HTTP- verzoeken van externe toepassingen, diensten of systemen.
-
-* Leer hoe te om over HTTP voor authentiek te verklaren gebruikend toegangstokens in [voor authentiek te verklaren om als Cloud Service van een externe toepassingsleerprogramma](./authentication/overview.md) te AEM
-
-## Zelfstudie AEM Content Services
-
-AEM Content Services maakt gebruik van traditionele AEM Pagina&#39;s om eindpunten van REST API zonder kop samen te stellen, en AEM Components definiëren (verwijzen naar) de inhoud die op deze eindpunten moet worden weergegeven.
-
-AEM Content Services biedt dezelfde inhoudsabstracties die worden gebruikt voor het ontwerpen van webpagina&#39;s in AEM Sites, om de inhoud en schema&#39;s van deze HTTP API&#39;s te definiëren. Door het gebruik van AEM Pagina&#39;s en AEM Componenten kunnen marketers snel flexibele JSON API&#39;s samenstellen en bijwerken die elke toepassing van stroom kunnen voorzien.
-
-* Leer hoe te om AEM de Diensten van de Inhoud in [Aan de slag met de zelfstudie van de Diensten van de Inhoud van de AEM te gebruiken](./content-services/overview.md)
-
-## AEM GraphQL vs. AEM Content Services
-
-|  | GraphQL API&#39;s AEM | AEM Content Services |
-|--------------------------------|:-----------------|:---------------------|
-| Schema-definitie | Modellen voor structuurinhoudsfragmenten | AEM componenten |
-| Inhoud | Contentfragmenten | AEM componenten |
-| Inhoud detecteren | Op GraphQL-query | Op AEM pagina |
-| Afleveringsformaat | GraphQL JSON | AEM ComponentExporter JSON |
-
-## Andere nuttige zelfstudies
-
-Andere AEM die op hoofdloze concepten betrekking hebben omvatten:
-
-* [Aan de slag met de AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html">
+      <img alt="Reageren - Hoofdloos" src="./assets/react-headless.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+    <strong>Reageren - Hoofdloos</strong>
+    </a>
+    </div>
+    <p>
+    <em>Bouw een React JS app gebruikend GraphQL in een puur hoofdloos scenario.</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
+    <img alt="Reageren - Externe editor" src="./assets/react-remote.png" />
+    </a>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
+    <strong>Reageren - Externe editor</strong>
+    </a>
+    </div>
+    <p>
+    <em>De auteur in-context een gedeelte van een ver ontvangen toepassing van het Reageren.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+      <img alt="Reageren - SPA Editor" src="./assets/react-spa-editor.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+        <strong>Reageren - SPA Editor</strong>
+      </a>
+    </div>
+    <p>
+    <em>Gebruik de AEM SPA editor om de volledige ervaring van de React-app te beheren.</em>
+    <p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
+      <img alt="Reageren - Hoofdloos" src="./assets/angular-spa-editor.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
+    <strong>Angular - SPA Editor</strong>
+    </a>
+    </div>
+    <p>
+    <em>Gebruik de AEM SPA editor om de volledige ervaring van de Angular-app te beheren.</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <img alt="Angular - Inhoudsservices" src="./assets/android.png" />
+    </a>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <strong>Android - Inhoudsservices</strong>
+    </a>
+    </div>
+    <p>
+    <em>Gebruik Content Services en REST om een mobiele Android-toepassing van stroom te voorzien.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+      <img alt="Node.js - Authentificatie" src="./assets/node-js.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+        <strong>Node.js - Authentificatie</strong>
+      </a>
+    </div>
+    <p>
+    <em>Maak een Node.js-app met ontwikkelaars- en servicetokens voor verificatie.</em>
+    <p>
+  </td>
+</tr>
+</table>
