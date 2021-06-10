@@ -6,9 +6,9 @@ feature: Adaptieve Forms
 topic: Ontwikkeling
 role: Developer
 level: Beginner
-source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,12 @@ Vouw `src/main/java` onder de map `learningaemforms.core` uit. Dit is de map waa
 ## Uw project samenstellen
 
 
-Zodra u uw dienst OSGi, of servlet hebt geschreven, zult u uw project moeten bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Raadpleeg [AEMFD Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) om de juiste client SDK op te nemen in uw Maven-project. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
+
+
+Zodra u uw dienst OSGi, of servlet hebt geschreven, zult u uw project moeten bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Raadpleeg [AEMFD Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/) om de juiste client SDK op te nemen in uw Maven-project. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
+
+
+
 
 
 ```xml
@@ -131,5 +136,6 @@ Voer de volgende stappen uit om uw project te maken:
 
 * **opdrachtpromptvenster openen**
 * Ga naar `c:\aemformsbundles\learningaemforms\core`
-* De opdracht `mvn clean install` uitvoeren
-Als alles goed gaat, moet u de bundel op de volgende locatie zien `C:\AEMFormsBundles\learningaemforms\core\target`. Deze bundel kan nu worden geïmplementeerd in AEM met de Felix-webconsole.
+* De opdracht `mvn clean install -PautoInstallBundle` uitvoeren
+De bovenstaande opdracht bouwt en installeert de bundel in de AEM server die op `http://localhost:4502` wordt uitgevoerd. De bundel is ook beschikbaar op het bestandssysteem op
+   `C:\AEMFormsBundles\learningaemforms\core\target` en kan worden geïmplementeerd met  [Felix-webconsole](http://localhost:4502/system/console/bundles)
