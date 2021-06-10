@@ -11,10 +11,9 @@ thumbnail: 39090.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '138'
 ht-degree: 2%
 
 ---
@@ -33,5 +32,5 @@ Experience Platform Launch is het platform voor tagbeheer van de volgende genera
 ## Aanvullende bronnen {#additional-resources}
 
 * [Integratie van Experience Platforms met Experience Cloud-toepassingen](https://docs.adobe.com/content/help/en/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-* [Gebruikershandleiding voor Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [Gebruikershandleiding voor Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)
 * [Experience Cloud implementeren in websites met starten](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
