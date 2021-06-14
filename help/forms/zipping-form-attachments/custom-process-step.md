@@ -11,7 +11,7 @@ topic: Ontwikkeling
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 # Aangepaste processtap
 
 
-Er is een aangepaste processtap geïmplementeerd om het ZIP-bestand te maken dat de formulierbijlagen bevat. Als u niet bekend bent met het maken van OSGi-bundel, [volg deze instructies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Er is een aangepaste processtap geïmplementeerd om het ZIP-bestand te maken dat de formulierbijlagen bevat. Als u niet bekend bent met het maken van een OSGi-bundel, [volg deze instructies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 De code in de stap van het douaneproces doet het volgende
 
