@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '977'
 ht-degree: 1%
 
 ---
@@ -98,9 +98,10 @@ ht-degree: 1%
    + [Inleiding](inbox-customization/introduction.md)
    + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
    + [Sweeksjabloon gebruiken](inbox-customization/use-sightly-template.md)
-+ Formulierbijlagen Zipping{#zipping-form-attachments}
++ E-mailformulierbijlagen{#zipping-form-attachments}
    + [Inleiding](zipping-form-attachments/introduction.md)
-   + [Aangepast proces](zipping-form-attachments/custom-process-step.md)
+   + [Formulierbijlagen comprimeren](zipping-form-attachments/custom-process-step.md)
+   + [E-mailformulierbijlagen](zipping-form-attachments/populating-list-of-documents.md)
    + [De oplossing testen](zipping-form-attachments/test.md)
 + Adaptief formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
    + [Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
