@@ -6,7 +6,7 @@ feature: Adaptieve Forms
 topic: Ontwikkeling
 role: Developer
 level: Beginner
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
@@ -119,6 +119,8 @@ Vouw `src/main/java` onder de map `learningaemforms.core` uit. Dit is de map waa
 
 
 Zodra u uw dienst OSGi, of servlet hebt geschreven, zult u uw project moeten bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Raadpleeg [AEMFD Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/) om de juiste client SDK op te nemen in uw Maven-project. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
+
+
 
 
 
