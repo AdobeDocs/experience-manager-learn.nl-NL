@@ -7,9 +7,9 @@ role: Developer, Architect
 level: Beginner
 kt: 7633
 thumbnail: kt-7633.jpeg
-source-git-commit: 5dea9cf646762c0f4aff43d9e48a35ab6ebc0af8
+source-git-commit: 76b10941ca8aeb5aa15ca39d354d9f7e7fb24522
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,18 @@ ht-degree: 0%
 # Bootstrap de Verre SPA voor SPA Redacteur
 
 Voordat de bewerkbare gebieden aan de externe SPA kunnen worden toegevoegd, moet deze worden opgepakt met de AEM SPA JavaScript SDK van de Editor en enkele andere configuraties.
+
+
+## De WKND App-bron downloaden
+
+Als u dit nog niet hebt gedaan, downloadt u de broncode van de WKND-app via Github.com en schakelt u de vertakking met de wijzigingen in de SPA die in deze zelfstudie worden uitgevoerd, over.
+
+```
+$ mkdir -p ~/Code/wknd-app
+$ cd ~/Code/wknd-app
+$ git clone --branch feature/spa-editor https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd aem-guides-wknd-graphql
+```
 
 ## Npm-afhankelijkheden toevoegen aan AEM editor voor JS SDK
 
