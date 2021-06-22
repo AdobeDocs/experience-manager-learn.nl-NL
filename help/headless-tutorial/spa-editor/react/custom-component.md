@@ -11,7 +11,7 @@ thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 0%
@@ -155,7 +155,7 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
 
 1. Open in IDE van uw keuze de `core` module op `aem-guides-wknd-spa.react/core`.
 1. Maak een bestand met de naam `OpenWeatherModel.java` op `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
-1. Vul `OpenWeather.java` met het volgende:
+1. Vul `OpenWeatherModel.java` met het volgende:
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models;
