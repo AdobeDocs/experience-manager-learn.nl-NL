@@ -10,8 +10,7 @@ role: Developer
 level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '3299'
 ht-degree: 0%
@@ -131,7 +130,8 @@ Clientbibliotheken hebben enkele beperkingen wat betreft de ondersteuning van ta
 
    `main.scss` is het ingangspunt aan alle dossiers van de Klasse in de  `ui.frontend` module. Het zal het `_variables.scss` dossier omvatten, dat een reeks merkvariabelen bevat die door verschillende dossiers van de Klassen in het project moeten worden gebruikt. Het `_base.scss`-bestand is ook opgenomen en definieert enkele basisstijlen voor HTML-elementen. Een reguliere expressie bevat alle stijlen voor afzonderlijke componentstijlen onder `src/main/webpack/components`. Een andere reguliere expressie bevat alle bestanden onder `src/main/webpack/site/styles`.
 
-1. Inspect het bestand `main.ts`. `main.ts` neemt een reguliere expressie op  `main.scss` en neemt deze op om alle  `.js` of  `.ts` bestanden in het project te verzamelen. Dit ingangspunt zal door [webpack configuratiedossiers](https://webpack.js.org/configuration/) als ingangspunt voor de volledige `ui.frontend` module worden gebruikt.
+1. 
+   1. Inspect het bestand `main.ts`. Het omvat `main.scss` en een regelmatige uitdrukking om het even welke `.js` of `.ts` dossiers in het project te verzamelen. Dit ingangspunt zal door [webpack configuratiedossiers](https://webpack.js.org/configuration/) als ingangspunt voor de volledige `ui.frontend` module worden gebruikt.
 
 1. Inspect de bestanden onder `src/main/webpack/site/styles`:
 
@@ -202,7 +202,7 @@ Deze integratie wordt automatisch ingesteld door het AEM Project Archetype. Ga v
    >
    >Er is ook een `npm run prod` profiel dat JS en CSS minieme. Dit is de standaardcompilatie wanneer de webpack-build wordt geactiveerd via Maven. Meer details over [ui.frontend module kunnen hier worden gevonden](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
-1. Inspect het bestand `site.css` onder `ui.frontend/dist/clientlib-site/css/site.css`. Dit is gecompileerde CSS die op de brondossiers van de Klasse wordt gebaseerd.
+1. Inspect het bestand `site.css` onder `ui.frontend/dist/clientlib-site/site.css`. Dit is gecompileerde CSS die op de brondossiers van de Klasse wordt gebaseerd.
 
    ![CSS voor gedistribueerde site](assets/client-side-libraries/ui-frontend-dist-site-css.png)
 
