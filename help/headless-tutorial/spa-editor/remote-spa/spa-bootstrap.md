@@ -7,9 +7,9 @@ role: Developer, Architect
 level: Beginner
 kt: 7633
 thumbnail: kt-7633.jpeg
-source-git-commit: 76b10941ca8aeb5aa15ca39d354d9f7e7fb24522
+source-git-commit: aa4fb5afc2d30bb499493b93c51940ea6db56e41
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Voordat de bewerkbare gebieden aan de externe SPA kunnen worden toegevoegd, moet
 
 ## De WKND App-bron downloaden
 
-Als u dit nog niet hebt gedaan, downloadt u de broncode van de WKND-app via Github.com en schakelt u de vertakking met de wijzigingen in de SPA die in deze zelfstudie worden uitgevoerd, over.
+Als u dit nog niet hebt gedaan, downloadt u de broncode van de WKND-app van Github.com en schakelt u de vertakking met de wijzigingen in de SPA die in deze zelfstudie worden uitgevoerd over.
 
 ```
 $ mkdir -p ~/Code/wknd-app
