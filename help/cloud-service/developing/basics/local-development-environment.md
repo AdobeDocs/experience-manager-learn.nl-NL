@@ -4,14 +4,13 @@ description: Leer hoe u een lokale ontwikkelomgeving downloadt en instelt met de
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: Developer Tools
+topic: Ontwikkeling
+feature: Gereedschappen voor ontwikkelaars
 kt: 6933
 thumbnail: 330558.jpg
-translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: f707c8e7cce413ecdcfb5d406fd1b38f26d965c4
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,4 +22,6 @@ Leer hoe u een lokale ontwikkelomgeving downloadt en instelt met de AEM als Clou
 
 >[!VIDEO](https://video.tv.adobe.com/v/330558/?quality=12&learn=on)
 
-_ Bekijk deze instructies om een volledige lokale ontwikkelomgeving in te stellen met de AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)._[
+_De  `license.properties` video die in deze video wordt weergegeven, is niet meer nodig om de AEM SDK uit te voeren._
+
+Bekijk deze instructies om een volledige lokale ontwikkelomgeving in te stellen met de AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).[
