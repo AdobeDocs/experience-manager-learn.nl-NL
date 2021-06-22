@@ -12,7 +12,7 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
 
    Onder **Toegestane componenten** > **Algemeen** > selecteert u de **Indelingscontainer**-component.
 
-   Onder **Toegestane componenten** > **WKND SPA REACT - STRUCTUUR** > selecteert u de **Koptekst** component:
+   Onder **Toegestane componenten** > **WKND SPA REACT - STRUCTUUR** > selecteert u de **Navigation** component:
 
    ![Navigatie-component selecteren](assets/navigation-routing/select-navigation-component.png)
 
