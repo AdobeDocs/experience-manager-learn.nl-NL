@@ -11,8 +11,7 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 0%
@@ -30,7 +29,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
 
 winde die in de video&#39;s wordt gebruikt is [Visual Studio Code](https://code.visualstudio.com/) en [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) stop.
 
-## Doel {#objective}
+## Doelstelling {#objective}
 
 1. Leer de rol van HTML-sjablonen en -modellen om HTML dynamisch te renderen.
 1. Begrijp hoe Dialoogvensters worden gebruikt om het schrijven van inhoud te vergemakkelijken.
@@ -329,7 +328,7 @@ Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden u
    helloworld.js
    ```
 
-1. Werk het `clientlib-helloworld/.conten.xml` dossier bij om de volgende eigenschappen te omvatten:
+1. Werk het `clientlib-helloworld/.content.xml` dossier bij om de volgende eigenschappen te omvatten:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
