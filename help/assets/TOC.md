@@ -4,10 +4,9 @@ user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experi
 breadcrumb-title: AEM Assets Tutorials
 sub-product: elementen
 team: TM
-translation-type: tm+mt
-source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
+source-git-commit: 53312e573ca022f09faa44cbbf51c5b8b0ed90ee
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 7%
 
 ---
@@ -87,6 +86,9 @@ ht-degree: 7%
    + [Gekoppelde plaatsen](./adobe-asset-link/place-linked.md)
    + [Alleen voor plaatsingen (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Zoeken in middelen](./adobe-asset-link/asset-search.md)
+
++ Inhoudsautomatisering{#content-automation}
+   + [Overzicht](./content-automation/overview.md)
 
 +  Dynamic Media {#dynamic-media}
    + [Dynamic Media - Overzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
