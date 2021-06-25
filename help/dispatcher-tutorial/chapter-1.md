@@ -2,13 +2,12 @@
 title: '"Hoofdstuk 1 - Concepten, patronen en antipatronen van de verzender"'
 description: In dit hoofdstuk wordt een korte inleiding gegeven over de geschiedenis en de mechanica van de Dispatcher en wordt besproken hoe dit van invloed is op hoe een AEM ontwikkelaar zijn componenten zou ontwerpen.
 feature: Dispatcher
-topic: Architecture
+topic: Architectuur
 role: Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 67e55e92cf95e03388ab3de49eff5a80786fb3a7
 workflow-type: tm+mt
-source-wordcount: '17489'
+source-wordcount: '17487'
 ht-degree: 0%
 
 ---
@@ -307,7 +306,7 @@ Ongeldigmaking is zo eenvoudig: Een eenvoudig verzoek van de GET naar een specia
 
 Dat is in ons geval voldoende. Als een middel is veranderd, kunnen wij veilig veronderstellen, dat alle vertoningen van dat middel ook zijn veranderd. In ons voorbeeld wordt een nieuwe miniatuur weergegeven als de afbeelding is gewijzigd.
 
-De Dispatcher kan de bron veilig verwijderen met alle uitvoeringen die in het cachegeheugen zijn opgeslagen. Het zal iets doen als:
+De Dispatcher kan de bron veilig verwijderen met alle uitvoeringen die in de cache zijn opgeslagen. Het zal iets doen als:
 
 `$ rm /content/dam/path/to/image.*`
 
@@ -685,8 +684,10 @@ Op deze manier kan uw aangepaste Dispatcher Flushing-agent eenvoudig verzoeken v
 
 Het maakt niet uit welk pad u de Dispatcher invalideert, zolang deze zich op dezelfde site bevindt, in dezelfde substructuur. U hoeft zelfs geen echt bronnenpad te gebruiken. Het kan ook &quot;virtueel&quot;zijn:
 
-`GET /dispatcher-invalidate
-Invalidate-path /content/mysite/dummy`
+```
+GET /dispatcher-invalidate
+Invalidate-path /content/mysite/dummy
+```
 
 ![](assets/chapter-1/resource-path.png)
 
@@ -909,8 +910,10 @@ Hierdoor wordt de cache opnieuw overgeslagen en wordt het laden op het publicati
 
 Het verkleinen van het aantal kiezers was een goed begin. Als vuistregel moet u het aantal geldige parameters altijd tot een absoluut minimum beperken. Als u dat slim doet kunt u zelfs hefboomwerking een Firewall van de Toepassing van het Web buiten AEM gebruiken statische reeks filters zonder diepe kennis van het onderliggende AEM systeem om uw systemen te beschermen:
 
-`Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
-\.respi\.q-(20|40|60|80|100)\.jpg`
+```
+Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
+       \.respi\.q-(20|40|60|80|100)\.jpg
+```
 
 Als u geen Firewall van de Toepassing van het Web hebt moet u in Dispatcher of in AEM zelf filtreren. Als u dit in AEM doet, zorg er dan voor dat
 
@@ -1162,7 +1165,7 @@ De beste oplossing is natuurlijk om de wortels van alle sites even diep te maken
 
 Wat is nu het juiste niveau? Dat hangt van het aantal gebiedsdelen af u tussen de plaatsen hebt. Opnamen die u oplost voor het weergeven van een pagina worden beschouwd als &#39;harde afhankelijkheden&#39;. We hebben een dergelijke _inclusie_ aangetoond toen we de _Taser_-component aan het begin van deze handleiding introduceerden.
 
-__ Hyperlinks zijn een zachtere vorm van afhankelijkheden. Het is zeer waarschijnlijk dat u hyperlinks binnen één website... en niet onwaarschijnlijk dat u koppelingen hebt tussen uw websites. Met eenvoudige hyperlinks worden meestal geen afhankelijkheden tussen websites gemaakt. Denk aan een externe koppeling die u van uw site naar Facebook hebt ingesteld... U hoeft uw pagina niet te renderen als er iets verandert op Facebook en andersom, toch?
+__ Hyperlinks zijn een zachtere vorm van afhankelijkheden. Het is zeer waarschijnlijk dat u hyperlinks binnen één website... en niet onwaarschijnlijk dat u koppelingen hebt tussen uw websites. Met eenvoudige hyperlinks worden meestal geen afhankelijkheden tussen websites gemaakt. Denk aan een externe koppeling die u van uw site naar facebook instelt... Je hoeft je pagina niet te renderen als er iets verandert op facebook en andersom.
 
 Een afhankelijkheid treedt op wanneer u inhoud leest uit de gekoppelde bron (bijvoorbeeld de navigatitel). Dergelijke afhankelijkheden kunnen worden vermeden als u alleen vertrouwt op lokaal ingevoerde navigatitels en deze niet tekent vanaf de doelpagina (zoals bij externe koppelingen).
 
