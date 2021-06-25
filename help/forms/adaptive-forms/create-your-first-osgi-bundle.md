@@ -1,20 +1,19 @@
 ---
 title: Uw eerste OSGi-bundel maken met AEM formulieren
 description: Bouw uw eerste bundel OSGi gebruikend maven en eclipse
-feature: Adaptive Forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 3a9778c97d57e55e3da740b492472456768fb32c
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 1%
+source-wordcount: '833'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +77,7 @@ Voer de volgende stappen uit om uw eerste gemaakte project te maken:
 Het gemaakte project wordt interactief gegenereerd en u wordt gevraagd waarden op te geven aan een aantal eigenschappen, zoals
 
 | Eigenschapnaam | Significantie | Waarde |
-------------------------|---------------------------------------|---------------------
+|------------------------|---------------------------------------|---------------------|
 | groupId | groupId identificeert uniek uw project over alle projecten | com.learningaemforms.adobe |
 | appsFolderName | Naam van de map die de projectstructuur bevat | leervormen |
 | artifactId | artifactId is de naam van de pot zonder versie. Als u het creeerde, dan kunt u kiezen welke naam u met kleine letters en geen vreemde symbolen wilt. | leervormen |
