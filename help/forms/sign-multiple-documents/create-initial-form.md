@@ -1,21 +1,16 @@
 ---
 title: Het eerste formulier maken om het proces te activeren
 description: Maak een eerste formulier om het e-mailbericht te activeren en het ondertekeningsproces te starten.
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Adaptieve Forms
 version: 6.4,6.5
-kt: 6892
-thumbnail: 6892.jpg
-topic: Development
+topic: Ontwikkeling
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6892
+thumbnail: 6892.jpg
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '171'
 ht-degree: 4%
 
 ---
@@ -25,17 +20,13 @@ ht-degree: 4%
 
 Het oorspronkelijke formulier (Refinance Form) wordt gebruikt voor het ondertekenen van meerdere formulieren door de workflow **Meerdere Forms** AEM ondertekenen te activeren. U kunt naar keuze waarden invoeren, maar zorg dat de volgende velden aan het formulier worden toegevoegd.
 
-
-
 | Veldtype | Naam | Doel | Verborgen | Standaardwaarde |
-------------------------|---------------------------------------|--------------------|--------|-----------------
+| ------------------------|---------------------------------------|--------------------|--------|----------------- |
 | TextField | ondertekend | De ondertekeningsstatus aangeven | J | N |
 | TextField | guid | Formulier op unieke wijze identificeren | J | 3889 |
 | TextField | customerName | De naam van klanten vastleggen | N |
 | TextField | customerEmail | E-mailadres van klant om melding te verzenden | N |
 | CheckBox | formsToSign | De items identificeren de formulieren in het pakket | N |
-
-
 
 Het eerste formulier moet worden geconfigureerd om een AEM werkstroom met de naam **signmultipleforms** te activeren
 Zorg ervoor dat het gegevenspad is ingesteld op **Data.xml**. Dit is erg belangrijk omdat de voorbeeldcode zoekt naar een bestand met de naam Data.xml in het laadproces van het verzenden van het formulier.
