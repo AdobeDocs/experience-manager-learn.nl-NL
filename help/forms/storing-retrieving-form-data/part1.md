@@ -1,19 +1,14 @@
 ---
 title: Formuliergegevens opslaan en ophalen vanuit MySQL-database
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
 version: 6.3,6.4,6.5
-topic: Development
+feature: Adaptieve Forms
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '199'
 ht-degree: 1%
 
 ---
@@ -36,9 +31,7 @@ Het sql- dossier om het schema tot stand te brengen kan [van hier ](assets/form-
 >Geef de gegevensbron **SaveAndContinue** een naam. De voorbeeldcode gebruikt de naam om verbinding te maken met de database.
 
 | Eigenschapnaam | Waarde |
-------------------------|---------------------------------------
+| ------------------------|---------------------------------------|
 | Naam gegevensbron | Opslaan en doorgaan |
 | JDBC-stuurprogramma, klasse | com.mysql.cj.jdbc.Driver |
 | JDBC-verbindingsuri | jdbc:mysql://localhost:3306/aemformstutorial |
-
-
