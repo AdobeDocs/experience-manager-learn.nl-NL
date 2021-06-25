@@ -1,22 +1,17 @@
 ---
 title: Gegevensbron AEM configureren
 description: Door MySQL ondersteunde gegevensbron configureren om formuliergegevens op te slaan en op te halen
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Adaptieve Forms
+topic: Ontwikkeling
+role: Developer
+level: Beginner
 version: 6.4,6.5
 kt: 6899
 thumbnail: 6899.jpg
-topic: Development
-role: Developer
-level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 2%
+source-wordcount: '193'
+ht-degree: 1%
 
 ---
 
@@ -37,13 +32,11 @@ Het gegevensbestand heeft één lijst genoemd formdata met de 3 kolommen zoals a
 >Gelieve te zorgen u uw gegevensbron **aemformstutorial** noemen. De voorbeeldcode gebruikt de naam om verbinding te maken met de database.
 
 | Eigenschapnaam | Waarde |
-------------------------|---------------------------------------
+| ------------------------|--------------------------------------- |
 | Naam gegevensbron | Opslaan en doorgaan |
 | JDBC-stuurprogramma, klasse | com.mysql.cj.jdbc.Driver |
 | JDBC-verbindingsuri | jdbc:mysql://localhost:3306/aemformstutorial |
 
 ## Assets
 
-Het sql- dossier om het schema tot stand te brengen kan [van hier ](assets/sign-multiple-forms.sql) worden gedownload. U zult dit dossier gebruikend MySql werkbank moeten invoeren om het schema en de lijst tot stand te brengen.
-
-
+Het SQL-bestand waarmee het schema wordt gemaakt, kan [hier worden gedownload](assets/sign-multiple-forms.sql). U zult dit dossier gebruikend MySql werkbank moeten invoeren om het schema en de lijst tot stand te brengen.
