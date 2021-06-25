@@ -1,20 +1,15 @@
 ---
 title: Formuliergegevens opslaan en ophalen vanuit MySQL-database
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
-version: 6.3,6.4,6.5
-topic: Development
+feature: Adaptieve Forms
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+version: 6.3,6.4,6.5
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 1%
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
@@ -40,11 +35,10 @@ Voer de volgende stappen uit om deze mogelijkheid te testen op uw AEM Forms-exem
 * Meld u aan bij [configMgr.](http://localhost:4502/system/console/configMgr) Zoek naar &quot;Apache Sling Connection Pooled DataSource. Maak een nieuw item voor de gegevensbron van Apache Sling Connection met de naam **SaveAndContinue** met de volgende eigenschappen:
 
 | Eigenschapnaam | Waarde |
-------------------------|---------------------------------------
+| ------------------------|---------------------------------------|
 | Naam gegevensbron | Opslaan en doorgaan |
 | JDBC-stuurprogramma, klasse | com.mysql.cj.jdbc.Driver |
 | JDBC-verbindingsuri | jdbc:mysql://localhost:3306/aemformstutorial |
-
 
 * Open het [Aangepaste formulier](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
 * Vul enkele details in en klik op de knop &quot;Opslaan en verdergaan&quot;.
