@@ -4,18 +4,17 @@ description: AEM Service Credentials worden gebruikt om externe toepassingen, sy
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: APIs
+feature: API's
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330519.jpg
-topic: Headless, Integrations
+topic: Hoofdloos, integratie
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e0822ad4aaf4022a849825ef625e1c29eb6e78f3
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
@@ -173,7 +172,7 @@ Deze voorbeeldtoepassing is gebaseerd op Node.js, dus is het beter om [@adobe/jw
 
    Afhankelijk van welk JSON-bestand (het Local Development Access Token JSON of de Service Credentials JSON) wordt doorgegeven via die opdrachtregelparameter `file`, leidt de toepassing een toegangstoken af.
 
-   Herinner me, dat terwijl de Referenties van de Dienst niet verlopen, JWT en het overeenkomstige toegangstoken doen, en moeten worden verfrist alvorens zij verlopen. Dit kan worden gedaan door `refresh_token` [te gebruiken die door Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens) wordt verstrekt.
+   Herinner me, dat terwijl de Referenties van de Dienst elke 365 dagen verlopen, JWT en het overeenkomstige toegangstoken vaak verlopen, en moeten worden verfrist alvorens zij verlopen. Dit kan worden gedaan door `refresh_token` [te gebruiken die door Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens) wordt verstrekt.
 
 1. Als deze wijzigingen zijn aangebracht en de Service Credentials JSON is gedownload van de AEM Developer Console (en voor de eenvoud is deze opgeslagen als `service_token.json` dezelfde map als deze `index.js`), voert u de toepassing uit waarbij de opdrachtregelparameter `file` wordt vervangen door `service_token.json` en werkt u `propertyValue` bij naar een nieuwe waarde zodat de effecten zichtbaar zijn in AEM.
 
