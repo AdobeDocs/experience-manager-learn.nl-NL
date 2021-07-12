@@ -1,23 +1,22 @@
 ---
 title: Tijdlijn verdraaien gebruiken met AEM Sites
 description: Timewarp is een eigenschap van Adobe Experience Manager Sites die auteurs een snelle manier verstrekt om de staat van een pagina op specifieke tijd in het verleden te herzien.
-topic: Content Management
+topic: Inhoudsbeheer
 feature: Authoring
-role: Business Practitioner
+role: User
 level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 3307
 thumbnail: 17453.jpg
-translation-type: tm+mt
-source-git-commit: d1578e1c6fb6208f04953454354e1ed23566e450
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '83'
 ht-degree: 1%
 
 ---
 
 
-# Tijdverdraaiing {#using-timewarp-with-aem-sites} gebruiken
+# Tijdverdraaiing gebruiken {#using-timewarp-with-aem-sites}
 
 Timewarp is een eigenschap van Adobe Experience Manager Sites die auteurs een snelle manier verstrekt om de staat van een pagina op specifieke tijd in het verleden te herzien.
 
