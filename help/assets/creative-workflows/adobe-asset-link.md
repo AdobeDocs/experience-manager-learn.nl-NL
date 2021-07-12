@@ -4,10 +4,10 @@ description: 'Adobe Experience Manager-middelen kunnen door ontwerpers en creati
 feature: Adobe-itemkoppeling
 version: 6.4, 6.5, cloud-service
 topic: Inhoudsbeheer
-role: Business Practitioner
+role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: 95e43761ae8b0497c6a8ae8e10e550c2520f7820
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Experience Manager-middelen kunnen door ontwerpers en creatieve gebruikers worden gebruikt in hun favoriete Adobe Creative Cloud-bureaubladtoepassingen.
 
-Adobe Asset Link-extensie voor Adobe Creative Cloud for enterprise breidt de mogelijkheid uit om metagegevens van AEM middelen in Creative Cloud-toepassingen te zoeken en te zoeken, te sorteren, voor te vertonen, te uploaden, te checken, te wijzigen, in te checken en weer te geven.
+Adobe Asset Link-extensie voor Adobe Creative Cloud for enterprise breidt de mogelijkheid uit om metagegevens van AEM elementen in Creative Cloud-toepassingen te zoeken en te zoeken, te sorteren, voor te vertonen, te uploaden, te checken, te wijzigen, in te checken en weer te geven.
 
 ## Mogelijkheden voor Adobe-itemkoppeling
 
