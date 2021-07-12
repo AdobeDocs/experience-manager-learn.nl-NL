@@ -2,18 +2,17 @@
 title: Video-overzicht
 description: Dynamic Media Classic wordt geleverd met automatische conversie van video tijdens het uploaden, videostreaming naar desktop- en mobiele apparaten en adaptieve videosets die zijn geoptimaliseerd voor afspelen op basis van apparaat en bandbreedte. Meer informatie over video in Dynamic Media Classic en meer informatie over videoconcepten en terminologie. Daarna leert u diep hoe u video kunt uploaden en coderen, videovoorinstellingen kunt kiezen voor het uploaden, toevoegen of bewerken van een videovoorinstelling, video's voorvertonen in een videoviewer, video kunt implementeren op websites en mobiele sites, bijschriften en hoofdstukmarkeringen aan video kunt toevoegen en videoviewers kunt publiceren voor gebruikers op het bureaublad en in mobiele apparaten.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Video Profiles, Viewer Presets
+feature: Dynamic Media Classic, videoprofielen, Viewer Presets
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '6234'
+source-wordcount: '6231'
 ht-degree: 0%
 
 ---
@@ -236,7 +235,7 @@ Soms hebt u een speciale voorinstelling voor video nodig die niet overeenkomt me
 
    ![afbeelding](assets/video-overview/video-overview-5.jpg)
 
-9. Stel de **Verhouding** van het bronbestand in. Deze instelling is rechtstreeks gekoppeld aan de onderstaande grootte. Als u _Aangepast_ kiest, zult u zowel breedte als hoogte manueel moeten ingaan.
+9. Stel de **Verhouding** van het bronbestand in. Deze instelling is rechtstreeks gekoppeld aan de onderstaande grootte. Als u _Aangepast_ kiest, moet u zowel de breedte als de hoogte handmatig invoeren.
 10. Als u een hoogte-breedteverhouding kiest, stelt u één waarde in voor **Resolutie-grootte** en Dynamic Media Classic vult de andere waarde automatisch in. Voor een aangepaste hoogte-breedteverhouding moet u beide waarden echter invullen. De grootte moet overeenkomen met de gegevenssnelheid. Als u een zeer lage gegevenssnelheid en een groot formaat instelt, verwacht u dat de kwaliteit slecht is.
 11. Klik op **Opslaan** om de voorinstelling op te slaan. In tegenstelling tot elke andere voorinstelling hoeft u op dit punt geen voorinstellingen te publiceren, omdat deze alleen zijn bedoeld voor het uploaden van bestanden. Later moet u de gecodeerde video&#39;s publiceren, maar de voorinstellingen zijn alleen bedoeld voor intern gebruik door Dynamic Media Classic.
 12. Als u wilt controleren of de videovoorinstelling in de uploadlijst staat, gaat u naar **Uploaden**.Kies **Taakopties** en vouwt u **Video-opties** uit. De voorinstelling wordt vermeld in de categorie voor het afspeelapparaat dat u hebt gekozen (Computer, Mobiel of Tablet).
