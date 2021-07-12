@@ -1,31 +1,30 @@
 ---
-title: Merkportal gebruiken
-description: Videodoorlopen van de integratie van AEM Author en AEM Assets Brand Portal.
+title: Brand Portal gebruiken
+description: Videodoorlopen van de integratie met AEM Author en AEM Assets Brand Portal.
 feature: Brand Portal
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '1777'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
 
 
-# Merkportal gebruiken met AEM Assets{#using-brand-portal-with-aem-assets}
+# Brand Portal gebruiken met AEM Assets{#using-brand-portal-with-aem-assets}
 
-Videohulplijnen van de integratie van Adobe Experience Manager (AEM) Assets Brand Portal.
+Videohulplijnen voor de integratie van Adobe Experience Manager (AEM) Assets Brand Portal.
 
-## Brand Portal September 2019 Functies en verbeteringen
+## Functies en verbeteringen in Brand Portal september 2019
 
-In september 2019 introduceert het Brand Portal vooral Asset Sourcing, die de snelheid van de inhoud verhoogt en een gemakkelijke en snelle uitwisseling van activa tussen auteurs van Experience Managers en derden-creatieven en contribuanten mogelijk maakt.
+Brand Portal, september 2019, introduceert met name Asset Sourcing, die de snelheid van de inhoud verhoogt en een gemakkelijke en snelle uitwisseling van activa tussen auteurs van Experience Managers en derden-creatieven en contribuanten mogelijk maakt.
 
-### Brand Portal Asset Sourcing{#asset-sourcing}
+### Brand Portal Asset Sourting{#asset-sourcing}
 
-Brand Portal&#39;s Asset Sourcing wordt gebruikt om middelen te verzamelen van externe bureaus en teams, en deze naadloos te synchroniseren naar Experience Manager Auteur voor controle en gebruik.
+Brand Portal Asset Sourcing wordt gebruikt om middelen te verzamelen van externe organisaties en teams, waardoor deze naadloos worden gesynchroniseerd naar de Experience Manager Auteur voor controle en gebruik.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29365/?quality=12&learn=on)
 
@@ -33,15 +32,15 @@ Brand Portal&#39;s Asset Sourcing wordt gebruikt om middelen te verzamelen van e
 
 Raadpleeg [Enable Experience Manager Author for Asset Sourcing](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) voor instructies over het configureren en instellen van Asset Sourcing bij Experience Manager Author.
 
-## Brand Portal februari 2019 Functie en verbeteringen{#brand-portal-features-and-enhancements-644}
+## Functies en verbeteringen in Brand Portal februari 2019{#brand-portal-features-and-enhancements-644}
 
 >[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
 
-De release van februari 2019 van het Brand Portal is gericht op verbeteringen in het zoeken naar tekst en op verzoeken van klanten van het hoogste niveau.
+In de release van Brand Portal in februari 2019 wordt aandacht besteed aan verbeteringen in het zoeken naar tekst en aan verzoeken van klanten van het type top.
 
 ### Verbeteringen voor zoeken
 
-Brand Portal verbetert zoekopdracht met gedeeltelijk zoeken naar voorspelling van eigenschappen in filtervenster. Als u gedeeltelijk zoeken in tekst wilt toestaan, moet u Gedeeltelijk zoeken in Voorspelling eigenschap in het zoekformulier inschakelen.
+Brand Portal verbetert het zoeken met gedeeltelijk zoeken naar tekst op voorspelling van eigenschappen in het filtervenster. Als u gedeeltelijk zoeken in tekst wilt toestaan, moet u Gedeeltelijk zoeken in Voorspelling eigenschap in het zoekformulier inschakelen.
 
 Lees verder voor meer informatie over gedeeltelijk zoeken naar tekst en zoeken naar jokertekens.
 
@@ -51,15 +50,15 @@ U kunt nu naar elementen zoeken door alleen een deel (dat een woord of twee is) 
 
 **Hoofdlettergebruik** : Gedeeltelijke woordzoekactie is handig wanneer u niet zeker weet welke combinatie van woorden in de gezochte uitdrukking voorkomt.
 
-Bijvoorbeeld, als uw onderzoeksvorm in het Portaal van het Merk de Voorkeur van het Bezit voor gedeeltelijke onderzoek op activa titel gebruikt, dan keert het specificeren van de term kamp alle activa met het woordkamp in hun titeluitdrukking terug.
+Als uw zoekformulier in Brand Portal bijvoorbeeld Eigenschapvoorspelling gebruikt voor gedeeltelijke zoekopdrachten naar de titel van elementen, worden met de term kamp alle elementen geretourneerd die voorkomen in het woordkamp in de titelzin.
 
 #### Zoekopdracht met jokertekens
 
-Het Brand Portal staat toe gebruikend de asterisk (*) in onderzoeksvraag samen met een deel van het woord in uw gezochte uitdrukking.
+De Brand Portal staat het gebruik van het sterretje (*) toe in zoekquery samen met een deel van het woord in de gezochte uitdrukking.
 
 **Gebruik hoofdletters/kleine letters** : als u niet precies weet welke woorden voorkomen in de gezochte uitdrukking, kunt u een zoekopdracht met jokertekens gebruiken om de tussenruimten in de zoekopdracht op te vullen.
 
-Als u bijvoorbeeld klimmen* opgeeft, worden alle elementen geretourneerd waarvan de woorden beginnen met de tekens die in hun titelzin klimmen als in het zoekformulier in het Brand Portal Eigenschapvoorspelling wordt gebruikt voor gedeeltelijk zoeken naar de titel van de elementen.
+Als u bijvoorbeeld klimmen* opgeeft, worden alle elementen geretourneerd waarvan de woorden beginnen met de tekens die in de titelzin klimmen als in het zoekformulier in Brand Portal Eigenschapvoorspelling wordt gebruikt voor gedeeltelijk zoeken naar de titel van de elementen.
 
 Op dezelfde manier specificeren:
 
@@ -71,7 +70,7 @@ Op dezelfde manier specificeren:
 Beheerders kunnen nu configureren hoe de mappen bij het aanmelden worden weergegeven aan gebruikers zonder beheer (Editors, Viewers en Gastgebruikers).
 [Configuratie ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) van maphiërarchie inschakelen wordt toegevoegd aan Algemene instellingen in het deelvenster met beheergereedschappen. Als de configuratie:
 
-* Als deze optie is ingeschakeld, is de mappenstructuur die begint in de hoofdmap zichtbaar voor niet-beheerders. Aldus, die hen een navigatie ervaring gelijkend op beheerders verlenen.
+* Als deze optie is ingeschakeld, is de mappenstructuur die begint in de hoofdmap zichtbaar voor niet-beheerders. Aldus, die hen een navigatie gelijkend op beheerders verlenen.
 * Uitgeschakeld. Alleen de gedeelde mappen worden op de bestemmingspagina weergegeven.
 
 [Met de functie ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) Maphiërarchie inschakelen (indien ingeschakeld) kunt u de mappen met dezelfde namen onderscheiden die worden gedeeld vanuit verschillende hiërarchieën. Bij het aanmelden zien niet-beheerders nu de virtuele bovenliggende mappen (en vooroudermappen) van de gedeelde mappen.
@@ -99,22 +98,22 @@ Dynamic Media Video-codering kan worden gedownload van:
 
 ### Gepland publiceren naar Brand Portal
 
-De activa (en de omslagen) publiceren werkschema van [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) de instantie van de Auteur aan het Portaal van het Merk kan voor een recentere datum, tijd worden gepland.
+De middelen (en omslagen) publiceren werkschema van [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) de instantie van de Auteur aan Brand Portal kan voor een recentere datum, tijd worden gepland.
 
-Op dezelfde manier kunnen gepubliceerde elementen op een latere datum (tijd) uit de portal worden verwijderd door de workflow Publiceren via Brand Portal te plannen.
+Gepubliceerde middelen kunnen ook op een latere datum (tijd) uit het portaal worden verwijderd door de workflow Unpublish from Brand Portal te plannen.
 
 ### Configureerbare alias van huurder in URL
 
 Organisaties kunnen hun portal-URL aanpassen door een alternatief voorvoegsel in de URL te plaatsen. Om een alias voor huurdersnaam in hun bestaande portaal URL te krijgen, moeten de organisaties Adobe steun contacteren.
 
-Merk op dat alleen het voorvoegsel van de Brand Portal-URL kan worden aangepast en niet de volledige URL.
+Merk op dat alleen het voorvoegsel van de Brand Portal URL kan worden aangepast en niet de volledige URL.
 Een organisatie met een bestaand domein `wknd.brand-portal.adobe.com` kan bijvoorbeeld `wkndinc.brand-portal.adobe.com` op verzoek ophalen.
 
 Nochtans, kan de instantie van de Auteur AEM [gevormd ](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) slechts met huurder identiteitskaart URL en niet met huurder alias (afwisselend) URL zijn.
 
 **Hoofdlettergebruik** : Organisaties kunnen aan hun merkingsbehoeften voldoen door de portaal-URL aan te passen in plaats van zich aan de URL van Adobe te houden.
 
-## Merk Portal December 2018 Functies en verbeteringen{#brand-portal-features-and-enhancements-642}
+## Functies en verbeteringen in Brand Portal december 2018{#brand-portal-features-and-enhancements-642}
 
 >[!VIDEO](https://video.tv.adobe.com/v/23707/?quality=9&learn=on)
 
@@ -124,27 +123,27 @@ AEM Brand-portaal biedt gasten toegang tot het portaal. Een gastgebruiker vereis
 
 ### Versnelde download
 
-Gebruikers van Brand Portal kunnen snelle downloads op basis van Aspera gebruiken om snelheden tot 25x sneller te bereiken en genieten van een naadloze downloadervaring, ongeacht hun locatie over de hele wereld. Als gebruikers de elementen sneller van Brand Portal of gedeelde koppeling willen downloaden, moeten ze de optie Downloadversnelling inschakelen selecteren in het dialoogvenster Downloaden, mits downloadversnelling is ingeschakeld in hun organisatie.
+Brand Portal-gebruikers kunnen Aspera-gebaseerde snelle downloads gebruiken om snelheden tot 25x sneller te krijgen en genieten van een naadloze downloadervaring, ongeacht hun locatie over de hele wereld. Als gebruikers de elementen sneller van Brand Portal of een gedeelde koppeling willen downloaden, moeten ze de optie Downloadversnelling inschakelen selecteren in het dialoogvenster Downloaden, mits downloadversnelling is ingeschakeld in hun organisatie.
 
-* [Handleiding voor versnelde downloads vanaf Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
+* [Handleiding om downloads van Brand Portal te versnellen](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Aspera Connect Test Server](https://test-connect.asperasoft.com/)
 
 ### Rapport gebruikersaanmelding
 
-Er is een nieuw rapport geïntroduceerd om gebruikersaanmeldingen bij te houden. Het rapport Logins van de Gebruiker kan nuttig zijn in het toelaten van organisaties om een controle op de gedelegeerde beheerders en andere gebruikers van het Portaal van het Merk te controleren en te houden.
+Er is een nieuw rapport geïntroduceerd om gebruikersaanmeldingen bij te houden. Het rapport Gebruikersaanmelding kan nuttig zijn om organisaties in staat te stellen de gedelegeerde beheerders en andere gebruikers van Brand Portal te controleren en te controleren.
 
 In de rapportlogs worden namen, e-mailadressen, personen (beheerder, viewer, editor, gast), groepen, laatste aanmelding, activiteitstatus en aantal aanmelding van elke gebruiker weergegeven.
 
 ### Toegang tot originele uitvoeringen
 
-Beheerders kunnen gebruikerstoegang tot originele afbeeldingsbestanden beperken (jpeg, tiff, png, bmp, gif, pjpeg, x-portable-anymap, x-portable-bitmap, x-portable-graymap, x-portable-pixmap, x-rgb, x-xbitmap, x-xpixmap, x-icon, image/photoshop, image/x-photoshop, psd, image/vnd.adobe.6 winkelen) en toegang geven tot vertoningen met een lage resolutie die ze downloaden van Brand Portal of gedeelde link. Deze toegang kan op het niveau van de gebruikersgroep van het lusje van Groepen van de pagina van Rollen van de Gebruiker in het paneel van Admin hulpmiddelen worden gecontroleerd.
+Beheerders kunnen gebruikerstoegang tot originele afbeeldingsbestanden beperken (jpeg, tiff, png, bmp, gif, pjpeg, x-portable-anymap, x-portable-bitmap, x-portable-graymap, x-portable-pixmap, x-rgb, x-xbitmap, x-xpixmap, x-icon, image/photoshop, image/x-photoshop, psd, image/vnd.adobe.6 winkelen) en toegang geven tot rendities met lage resolutie die ze downloaden van Brand Portal of gedeelde koppeling. Deze toegang kan op het niveau van de gebruikersgroep van het lusje van Groepen van de pagina van Rollen van de Gebruiker in het paneel van Admin hulpmiddelen worden gecontroleerd.
 
 ### Nieuwe configuraties
 
 Er worden zes nieuwe configuraties toegevoegd voor beheerders om de volgende functies in of uit te schakelen voor specifieke huurders:
 
 * Toegang voor gasten toestaan
-* Gebruikers toegang tot Brand Portal laten aanvragen
+* Gebruikers toegang tot Brand Portal aanvragen
 * Beheerders toestaan elementen te verwijderen uit Brand Portal
 * Openbare collecties maken
 * Maken van openbare slimme verzamelingen toestaan
@@ -157,11 +156,11 @@ Er worden zes nieuwe configuraties toegevoegd voor beheerders om de volgende fun
 
 ### Adobe I/O Gastheren UI om Auth Integrations te vormen
 
-Brand Portal gebruikt Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) interface om JWT toepassing tot stand te brengen, die het vormen van de Integraties van Auth toelaat om de integratie van AEM Assets met het Portaal van het Merk toe te staan. Eerder werd de interface voor het configureren van OAuth-integratie gehost in `https://marketing.adobe.com/developer/`. Raadpleeg [AEM Assets-integratie configureren met Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html) voor meer informatie over het integreren van AEM Assets met Brand Portal voor het publiceren van middelen en verzamelingen naar Brand Portal.
+Brand Portal gebruikt Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) interface om JWT toepassing tot stand te brengen, die het vormen van de Integraties van Auth toelaat om AEM Assets integratie met Brand Portal toe te staan. Eerder werd de interface voor het configureren van OAuth-integratie gehost in `https://marketing.adobe.com/developer/`. Raadpleeg [AEM Assets-integratie configureren met Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html) voor meer informatie over het integreren van AEM Assets met Brand Portal voor het publiceren van middelen en verzamelingen naar Brand Portal.
 
-## Brand Portal februari 2018 Functie en verbeteringen{#brand-portal-features-and-enhancements-632}
+## Functies en verbeteringen in Brand Portal februari 2018{#brand-portal-features-and-enhancements-632}
 
-Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen van Brand Portal op AEM.
+Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen van Brand Portal met AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
 
@@ -182,7 +181,7 @@ Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen va
 * Automatische trefwoordsuggesties maken het zoeken gemakkelijker
 * Verbeter uw algemene zoekopdracht met extra filters. Optie om het onderzoeksresultaat in een Slimme Inzameling te bewaren voor u om uw onderzoek in een recentere tijd opnieuw te bezoeken.
 * Ondersteunt zoeken naar slimme tags
-* AEM Slimme getagde elementen kunnen worden gedeeld van AEM naar Brand Portal en gebruiken slimme tags voor het zoeken naar middelen in Brand Portal.
+* AEM Slimme gelabelde elementen kunnen worden gedeeld van AEM naar Brand Portal en worden gebruikt voor het zoeken naar elementen in Brand Portal.
 
 ### Verbeteringen voor het delen van bestanden
 
@@ -193,7 +192,7 @@ Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen va
 
 ### Rapportage- en beheerscapaciteiten
 
-* Metagegevensschema van AEM Assets kan nu worden gepubliceerd van AEM naar Brand Portal.
+* Metagegevensschema van AEM Assets kan nu van AEM naar Brand Portal worden gepubliceerd.
 * Beheerders kunnen drie typen rapporten maken en beheren: gedownloade, verlopen en gepubliceerde elementen
 * Capaciteit om de kolom te vormen die in het rapport moet worden omvat.
 * Voorinstellingen voor afbeeldingen maken voor elementen in Brand Portal.
