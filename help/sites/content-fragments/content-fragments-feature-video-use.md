@@ -2,25 +2,24 @@
 title: Inhoudsfragmenten in AEM ontwerpen
 description: 'Inhoudsfragmenten zijn een inhoudsabstractie in AEM waarmee op tekst gebaseerde inhoud onafhankelijk van de kanalen die deze ondersteunt kan worden gemaakt en beheerd. '
 sub-product: content-services
-feature: Content Fragments
+feature: Contentfragmenten
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
 version: cloud-service
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 3%
 
 ---
 
 
-# Inhoudsfragmenten {#authoring-content-fragments} ontwerpen
+# Inhoudsfragmenten ontwerpen {#authoring-content-fragments}
 
 Inhoudsfragmenten zijn een inhoudsabstractie in AEM waarmee op tekst gebaseerde inhoud onafhankelijk van de kanalen die deze ondersteunt kan worden gemaakt en beheerd.
 
@@ -33,13 +32,13 @@ Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Hier vin
 3. Inhoudsfragmenten downloaden
 4. Redactionele mogelijkheden
 
-## Modellen voor inhoudsfragmenten {#defining-content-fragment-models} definiëren
+## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
 AEM de Modellen van de Fragmenten van de Inhoud, de gegevensschema&#39;s van de Fragmenten van de Inhoud, moeten via AEM [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) worden toegelaten, die de Modellen van het Fragment van de Inhoud om op een per configuratiebasis toelaat worden bepaald.
 
-## Inhoudsfragmenten {#creating-content-fragments} maken
+## Inhoudsfragmenten maken {#creating-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
 
@@ -50,7 +49,7 @@ Inhoudsfragmenten kunnen meerdere varianten hebben, waarbij elke variant een and
 *Voorbeeld van atleetbiografie voor importeren:*\
 **[sandrasprient-bio.txt](assets/sandra-sprient-bio.txt)**
 
-## Inhoudsfragmenten {#downloading-content-fragments} downloaden
+## Inhoudsfragmenten downloaden {#downloading-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22450/?quality=12&learn=on)
 
@@ -59,7 +58,7 @@ AEM Inhoudsfragmenten kunnen van AEM-auteur worden gedownload als een ZIP-bestan
 *ZIP-bestand voor downloaden van voorbeeldinhoudsfragment:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
 
-## Redactiemogelijkheden voor inhoudsfragmenten {#editorial-capabilities}
+## Redactionele mogelijkheden van inhoudsfragmenten {#editorial-capabilities}
 
 >[!VIDEO](https://video.tv.adobe.com/v/25891/?quality=12&learn=on)
 
