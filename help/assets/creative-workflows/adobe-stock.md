@@ -3,13 +3,12 @@ title: Adobe Stock-middelen gebruiken met AEM Assets
 description: 'AEM biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks vanuit AEM te zoeken, voor te vertonen, op te slaan en te licentiëren. Organisaties kunnen hun Adobe Stock Enterprise-plan nu integreren met AEM Assets om ervoor te zorgen dat gelicentieerde middelen nu ruim beschikbaar zijn voor hun creatieve en marketingprojecten, met de krachtige mogelijkheden voor middelenbeheer van AEM. '
 feature: Adobe Stock
 version: 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -80,7 +79,7 @@ AEM 6.4.2 biedt gebruikers de mogelijkheid om Adobe Stock-middelen rechtstreeks 
 * Voor AEM 6.4 moet u [AEM Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) installeren en vervolgens het bestand cq-dam-stock-integration-content-1.0.4.zip opnieuw installeren.
 * Zorg ervoor dat u beheerdersmachtigingen hebt voor [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) en Adobe Experience Manager om de integratie in te stellen.
 
-#### Adobe IMS-configuratie instellen met Adobe I/O-console {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
+#### Adobe IMS-configuratie instellen met Adobe I/O Console {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
 
 1. Een Adobe IMS Technical Account Configuration maken onder **Tools > Security**
 2. Selecteer *Cloud Solution* als *Adobe Stock* en maak een nieuw certificaat of gebruik een bestaand certificaat voor de configuratie opnieuw.
