@@ -3,9 +3,9 @@ title: Video's en Tutorials AEM
 seo-title: Video's en Tutorials AEM
 description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Manager Foundation. '
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Foundation
-role: Leader, Architect, Developer, Administrator, Business Practitioner
+role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%
@@ -80,7 +80,7 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 
 ## Aanvullende bronnen
 
-* [Experience League - Verken AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM als Cloud Service Tutorials](/help/cloud-service/overview.md)
 * [AEM Sites-video&#39;s en -Tutorials](/help/sites/overview.md)
 * [AEM Assets-video&#39;s en -Tutorials](/help/assets/overview.md)
