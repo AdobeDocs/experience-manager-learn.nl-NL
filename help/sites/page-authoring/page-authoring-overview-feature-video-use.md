@@ -3,7 +3,7 @@ title: Een pagina ontwerpen in AEM Sites
 seo-title: In de volgende video wordt benadrukt hoe u een nieuwe pagina in Adobe Experience Manager Sites kunt ontwerpen met behulp van de gebruikersinterface van de Site Editor
 description: In de volgende video wordt benadrukt hoe u een nieuwe pagina in Adobe Experience Manager Sites kunt ontwerpen met behulp van de gebruikersinterface van de Site Editor
 seo-description: In de volgende video wordt benadrukt hoe u een nieuwe pagina in Adobe Experience Manager Sites kunt ontwerpen met behulp van de gebruikersinterface van de Site Editor
-feature: Page Editor, Editable Templates
+feature: Pagina-editor, bewerkbare sjablonen
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,19 +11,18 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 4497
 thumbnail: 31828.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 5%
+source-wordcount: '182'
+ht-degree: 6%
 
 ---
 
 
-# Een pagina {#authoring-page-aem-sites} ontwerpen
+# Pagina&#39;s ontwerpen {#authoring-page-aem-sites}
 
 Leer hoe u een pagina in Adobe Experience Manager Sites ontwerpt met de gebruikersinterface van de Site Editor.
 
