@@ -2,23 +2,22 @@
 title: Uitchecken van inchecken
 description: Met Adobe Asset Link kunt u AEM Assets rechtstreeks uitchecken vanuit de creatieve app waaraan u werkt. U kunt dan direct beginnen met het maken van bewerkingen. U kunt middelen eenvoudig terugchecken naar AEM Assets met de juiste versie en opmerkingen nadat u ze hebt bewerkt in uw Creative Cloud-app.
 sub-product: elementen
-feature: Adobe Asset Link
+feature: Adobe-itemkoppeling
 version: 6.4, 6.5, cloud-service
 kt: 4910
 thumbnail: 33886.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
 
 
-# Uitchecken {#check-in-check-out}
+# Uitchecken van inchecken {#check-in-check-out}
 
 Met Adobe Asset kunt u AEM Assets rechtstreeks uitchecken vanuit de creatieve app waaraan u werkt en kunt u direct beginnen met het maken van bewerkingen. U kunt middelen eenvoudig terugchecken naar AEM Assets met de juiste versie en opmerkingen nadat u ze hebt bewerkt in uw Creative Cloud-app.
 
