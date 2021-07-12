@@ -1,17 +1,16 @@
 ---
 title: Hoe te om activa in AEM te relateren en los te maken
 description: Leer hoe u relaties tussen elementen in AEM tot stand brengt en beheert.
-feature: Asset Management
-role: Business Practitioner
+feature: Beheer van bedrijfsmiddelen
+role: User
 level: Beginner
 version: cloud-service
 kt: 6969
 thumbnail: 331107.jpg
-topic: Content Management
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+topic: Inhoudsbeheer
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '37'
 ht-degree: 0%
 
 ---
