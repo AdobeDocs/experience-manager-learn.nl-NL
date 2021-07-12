@@ -2,18 +2,17 @@
 title: Voorinstellingen afbeelding
 description: Voorinstellingen voor afbeeldingen in Dynamic Media Classic bevatten alle instellingen die nodig zijn om een afbeelding met een bepaalde grootte, indeling, kwaliteit en verscherping te maken. Voorinstellingen voor afbeeldingen vormen een belangrijk onderdeel van het dynamische formaat. Als u naar een URL in Dynamic Media Classic kijkt, kunt u gemakkelijk zien of een voorinstelling voor afbeeldingen in gebruik is. Meer informatie over voorinstellingen voor afbeeldingen, waarom ze zo nuttig zijn en hoe u ze kunt maken.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Image Presets
+feature: Dynamic Media Classic, voorinstellingen voor afbeeldingen
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
