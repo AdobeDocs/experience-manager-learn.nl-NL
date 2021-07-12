@@ -1,7 +1,7 @@
 ---
 title: Gegevens analyseren met Analysis Workspace
 description: Leer hoe u gegevens die vanaf een Adobe Experience Manager-site zijn vastgelegd, kunt toewijzen aan maateenheden en dimensies in Adobe Analytics-rapportensuites. Leer hoe u een gedetailleerd rapportdashboard maakt met de Analysis Workspace-functie van Adobe Analytics.
-feature: analytics
+feature: analyse
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -10,12 +10,11 @@ version: cloud-service
 kt: 6409
 thumbnail: KT-6296.jpg
 topic: Integrations
-role: Business Practitioner
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2204'
 ht-degree: 0%
 
 ---
@@ -113,7 +112,7 @@ Daarna, creëren wij zelfs om de Knoop te volgen CTA klikt.
 
    ![eVars](assets/create-analytics-workspace/add-success-event.png)
 
-## Nieuw project maken in Analysis Workspace {#workspace-project}
+## Een nieuw project maken in Analysis Workspace {#workspace-project}
 
 Analysis Workspace is een flexibel browserprogramma waarmee u snel analyses kunt maken en inzichten kunt delen. Gebruikend de belemmering-en-dalingsinterface, kunt u uw analyse ambachtelijk maken, visualisaties toevoegen om gegevens aan het leven te brengen, een dataset in werking te stellen, delen, en planningsprojecten met iedereen in uw organisatie.
 
