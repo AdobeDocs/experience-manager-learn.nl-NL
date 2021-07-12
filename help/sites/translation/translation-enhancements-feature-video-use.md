@@ -1,19 +1,18 @@
 ---
 title: Verbeterde vertaalfuncties in AEM
 description: AEM robuust vertaalframework kan AEM inhoud naadloos worden vertaald door ondersteunde vertalers. Leer meer over de nieuwste verbeteringen.
-feature: multi-site-manager, language-copy
+feature: meerdere sites tegelijk beheren, taal kopiëren
 topics: localization, authoring, content-architecture
 audience: author, marketer, developer
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
-topic: Localization
-role: Business Practitioner
+topic: Lokalisatie
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
