@@ -2,23 +2,22 @@
 title: Downloaden en uploaden
 description: Leer hoe u elementbestanden kunt downloaden van en uploaden naar AEM Assets via het deelvenster Asset Link.
 sub-product: elementen
-feature: Adobe Asset Link
+feature: Adobe-itemkoppeling
 version: 6.4, 6.5, cloud-service
 kt: 4908
 thumbnail: 33885.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
 
 
-# {#download-and-upload} downloaden en uploaden
+# Downloaden en uploaden {#download-and-upload}
 
 Leer hoe u elementbestanden kunt downloaden van en uploaden naar AEM Assets via het deelvenster Asset Link.
 
