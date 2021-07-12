@@ -4,20 +4,19 @@ seo-title: De Mening van de Kalender van het gebruik met AEM Projecten en Inbox
 description: 'AEM de Mening van de Kalender volgt projecten en taken in een kalendermening voor gemakkelijker projectbeheer en het plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn. '
 seo-description: AEM de Mening van de Kalender volgt projecten en taken in een kalendermening voor gemakkelijker projectbeheer en het plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
 version: 6.3, 6.4, 6.5
-feature: Workflow, Projects
+feature: Workflow, projecten
 topics: governance, collaboration
 activity: use
 audience: author, analyst
 doc-type: feature video
 uuid: 3dc9999c-eddf-4e42-9aa9-87a37a47699d
 discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
-topic: Collaboration
-role: Business Practitioner
+topic: Samenwerking
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
