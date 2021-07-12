@@ -4,7 +4,7 @@ seo-title: Inhoudsfragmenten leveren in Adobe Experience Manager
 description: Inhoudsfragmenten, onafhankelijk van de lay-out, kunnen direct in AEM Sites met Core Components worden gebruikt of kunnen zonder kop aan downstreamkanalen worden geleverd.
 seo-description: Inhoudsfragmenten, onafhankelijk van de lay-out, kunnen direct in AEM Sites met Core Components worden gebruikt of kunnen zonder kop aan downstreamkanalen worden geleverd.
 sub-product: content-services
-feature: Content Fragments
+feature: Contentfragmenten
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -12,19 +12,18 @@ activity: use
 version: 6.3, 6.4, 6.5
 uuid: 045473d2-5abe-4414-b91c-d369f3069ead
 discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '596'
 ht-degree: 2%
 
 ---
 
 
-# Inhoudsfragmenten {#delivering-content-fragments} leveren
+# Inhoudsfragmenten leveren {#delivering-content-fragments}
 
 Adobe Experience Manager (AEM) Content Fragments zijn tekstgebaseerde redactionele inhoud die bepaalde gestructureerde gegevenselementen kan bevatten die zijn gekoppeld, maar die wordt beschouwd als zuivere inhoud zonder ontwerp- of layoutinformatie. Inhoudsfragmenten worden doorgaans gemaakt als agnostische inhoud voor kanalen, die bestemd is voor gebruik en hergebruik via kanalen, waardoor de inhoud zelf wordt verpakt in een contextspecifieke ervaring.
 
@@ -36,7 +35,7 @@ Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmente
 2. Inhoudsfragmenten beschikbaar maken als JSON met AEM Content Services
 3. De HTTP-API voor middelen gebruiken
 
-## Inhoudsfragmenten gebruiken in webpagina&#39;s {#using-content-fragments-in-web-pages}
+## Inhoudsfragmenten op webpagina&#39;s gebruiken {#using-content-fragments-in-web-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
@@ -44,7 +43,7 @@ Inhoudsfragmenten kunnen op AEM Sites-pagina&#39;s worden gebruikt, of op een ve
 
 Componenten van inhoudsfragmenten kunnen zo nodig worden opgemaakt met AEM stijlsysteem.
 
-## Inhoudsfragmenten zichtbaar maken als JSON {#exposing-content-fragments-as-json}
+## Inhoudsfragmenten beschikbaar maken als JSON {#exposing-content-fragments-as-json}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22448/?quality=12&learn=on)
 
