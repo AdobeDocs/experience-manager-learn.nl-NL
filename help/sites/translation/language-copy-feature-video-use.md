@@ -1,24 +1,23 @@
 ---
 title: Taalkopie gebruiken met AEM Sites
-feature: Language Copy
+feature: Taalkopie
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
-topic: Localization
-role: Business Practitioner
+topic: Lokalisatie
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '62'
 ht-degree: 3%
 
 ---
 
 
-# Taalkopie {#using-language-copy} gebruiken
+# Taalkopie gebruiken {#using-language-copy}
 
 Met AEM 6.3 kunnen gebruikers een taalkopie van de wizard Taalkopie maken door de site-vertaling te verbeteren, zonder dat ze een hoofdpagina hoeven te maken.
 
