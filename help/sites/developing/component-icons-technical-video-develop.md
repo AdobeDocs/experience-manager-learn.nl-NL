@@ -6,14 +6,13 @@ audience: administrator, developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
-feature: Core Components
-topic: Development
-role: Business Practitioner
+feature: Kernonderdelen
+topic: Ontwikkeling
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -36,7 +35,7 @@ De Componentbrowser wordt nu in een consistent grijs thema weergegeven, met daar
    * Aangepaste SVG-afbeelding *(geconfigureerd door een ontwikkelaar)*
    * CoralUI-pictogram *(geconfigureerd door een ontwikkelaar)*
 
-## Configuratieopties voor componentpictogram {#component-icon-configuration-options}
+## Opties voor configuratie van componentpictogrammen {#component-icon-configuration-options}
 
 ### Afkortingen {#abbreviations}
 
