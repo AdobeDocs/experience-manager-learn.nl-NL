@@ -7,19 +7,18 @@ doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
 
 
-# Bepaal uw Omslagstructuur en Overeenkomst {#folder-structure-filenaming} van het Noemen van het Dossier
+# Bepaal de structuur van uw map en de naamgevingsconventie voor bestanden {#folder-structure-filenaming}
 
 Voordat u naar binnen gaat en al uw inhoud gaat uploaden, is het verstandig om rekening te houden met de mapstructuur die u gebruikt en met name met de naamgevingsconventie voor bestanden. Het zal u waarschijnlijk tijd besparen en het moeten taken later opnieuw doen. Het is beter om deze besluiten over alle groepen te coördineren.
 
