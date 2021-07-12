@@ -2,15 +2,14 @@
 title: Aangepaste videominiatuur gebruiken met AEM Dynamic Media
 description: Aangepaste AEM Assets-videominiaturen bieden auteurs de mogelijkheid een geschikte miniatuur te selecteren uit een set gegenereerde miniaturen. Het aantal miniaturen dat voor een video wordt gegenereerd, kan eenvoudig worden aangepast.
 sub-product: dynamic-media
-feature: Video Profiles
+feature: Videoprofielen
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '109'
 ht-degree: 1%
 
 ---
