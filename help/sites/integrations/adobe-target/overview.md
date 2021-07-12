@@ -1,7 +1,7 @@
 ---
 title: Overzicht van AEM en Adobe Target
 description: Leer hoe u persoonlijke ervaringen kunt maken en leveren met Adobe Experience Manager als Cloud Service en Adobe Target.
-feature: Experience Fragments, Core Components, Adobe Client Data Layer
+feature: Ervaring Fragments, de Componenten van de Kern, de Laag van de Gegevens van de Adobe Cliënt
 topics: integrations, personalization, administration, development
 audience: all
 doc-type: feature video
@@ -10,12 +10,11 @@ version: cloud-service
 kt: 6043
 thumbnail: 41241.jpg
 topic: Integrations
-role: Business Practitioner
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
