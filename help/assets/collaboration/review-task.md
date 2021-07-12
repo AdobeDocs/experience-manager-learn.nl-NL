@@ -2,17 +2,16 @@
 title: Revisietaak
 description: Onderzoek hoe de Taak van het Overzicht van de Activa van AEM de gemeenschappelijkste overzicht en goedkeuringswerkschema's vergemakkelijkt.
 sub-product: elementen
-feature: Collaboration
+feature: Samenwerking
 version: cloud-service
 kt: 4670
 thumbnail: 32050.jpg
-topic: Collaboration
-role: Business Practitioner
+topic: Samenwerking
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '38'
+source-wordcount: '35'
 ht-degree: 0%
 
 ---
