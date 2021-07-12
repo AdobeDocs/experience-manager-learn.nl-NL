@@ -2,16 +2,15 @@
 title: Bestandsversie en opmerkingen
 description: 'Via het deelvenster Adobe Asset Link hebt u toegang tot de bestandsgegevens van elementen in AEM Assets, zoals miniaturen, basismetagegevens en versies vanuit het deelvenster. Ontdek hoe u bestandsversies kunt maken, voorvertonen en vergelijken.  '
 sub-product: elementen
-feature: Adobe Asset Link
+feature: Adobe-itemkoppeling
 version: 6.4, 6.5, cloud-service
 thumbnail: 34048.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
