@@ -2,19 +2,18 @@
 title: Werken met de gebruikerservaring van de Commentaar voor het delen van bedrijfsmiddelen
 description: Materialen voor zowel de functionele als de technische overeenkomst Activa Share Commons
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '130'
 ht-degree: 1%
 
 ---
 
 
-# De gebruikerservaring van de Commons van het Aandeel van Activa{#understanding-asset-share-commons} begrijpen
+# Werken met de gebruikerservaring van de Commentaar voor het delen van bedrijfsmiddelen{#understanding-asset-share-commons}
 
 Een cursieve inleiding aan de gebruiker en het auteurservaring van het Aandeel van Activa.
 
