@@ -1,16 +1,15 @@
 ---
 title: Adobe IMS-productprofielen en AEM
 description: Met Adobe IMS-productprofielen kunnen gebruikers zich aanmelden bij een AEM-auteurservice en een basislijn voor toegang bieden, afhankelijk van het productprofiel waarvan ze lid zijn.
-feature: Users and Groups
+feature: 'Gebruikers en groepen '
 kt: 5000
 thumbnail: 39156.jpg
-topic: Administration, Security
-role: Administrator
+topic: Beheer, beveiliging
+role: Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '153'
 ht-degree: 8%
 
 ---
