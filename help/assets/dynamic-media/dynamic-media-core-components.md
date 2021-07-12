@@ -2,16 +2,15 @@
 title: Dynamic Media gebruiken met AEM Sites Core-componenten
 description: Leer hoe u Dynamic Media met Adobe Experience Manager Sites kunt gebruiken. De component Image, onderdeel van Experience Manager Core Components, biedt ingebouwde ondersteuning voor Dynamic Media. Met de component Image kan een auteur van inhoud functies van Dynamic Media gebruiken, zoals Voorinstellingen afbeelding, Smart Crop en Image Modifiers op een AEM Sites-pagina.
 sub-product: dynamic-media
-feature: Core Components, Smart Crop, Image profiles, Image presets
+feature: Core Components, Smart Crop, Afbeeldingsprofielen, Voorinstellingen afbeelding
 version: cloud-service
 kt: 6630
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '152'
 ht-degree: 1%
 
 ---
