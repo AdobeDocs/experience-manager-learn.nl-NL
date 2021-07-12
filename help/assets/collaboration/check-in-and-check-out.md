@@ -2,17 +2,16 @@
 title: Inchecken en uitchecken
 description: Leer hoe u functies voor het in- en uitchecken van AEM kunt gebruiken om samenwerking met meerdere gebruikers op middelen te vergemakkelijken.
 sub-product: elementen
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 version: cloud-service
 kt: 4542
 thumbnail: 32048.jpg
-topic: Collaboration
-role: Business Practitioner
+topic: Samenwerking
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
