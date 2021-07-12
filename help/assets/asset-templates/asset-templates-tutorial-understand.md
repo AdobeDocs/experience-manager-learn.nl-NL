@@ -3,9 +3,9 @@ title: 'Werken met InDesign-bestanden en Asset Templates in AEM Assets '
 description: In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overwegingen gedefinieerd voor gebruik in de functie Asset Templates van AEM Assets.
 version: 6.3, 6.4, 6.5
 topic: Inhoudsbeheer
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: b4fa992abe22e3a546d651e465d6ffc9e415aee2
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 ---
 
 
-# InDesign-bestanden en Asset Templates begrijpen in AEM Assets {#understanding-indesign-files-and-asset-templates-in-aem-assets}
+# Werken met InDesign-bestanden en Asset Templates in AEM Assets {#understanding-indesign-files-and-asset-templates-in-aem-assets}
 
 In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overwegingen gedefinieerd voor gebruik in de functie Asset Templates van AEM Assets.
 
-## Het InDesign sjabloonbestand {#constructing-the-indesign-template-file} samenstellen
+## Het InDesign-sjabloonbestand samenstellen {#constructing-the-indesign-template-file}
 
 >[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
 
@@ -49,7 +49,7 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
    >
    >Onthoud dat een slecht geconstrueerd InDesign-bestand de meest voorkomende oorzaak is voor problemen met AEM Asset Templates, zodat de codering en structuur schoon en correct zijn.
 
-## Een elementsjabloon maken en ontwerpen in AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
+## Een assetsjabloon maken en ontwerpen in AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
 
 >[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
 
