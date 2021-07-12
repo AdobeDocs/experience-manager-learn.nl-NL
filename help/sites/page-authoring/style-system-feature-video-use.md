@@ -3,7 +3,7 @@ title: Het Stijlsysteem gebruiken met AEM Sites
 seo-title: Het stijlsysteem gebruiken met Adobe Experience Manager, AEM Sites
 description: Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
 seo-description: Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
-feature: Style System
+feature: Stijlsysteem
 topics: authoring, front-end-development
 audience: all
 doc-type: feature video
@@ -11,19 +11,18 @@ activity: use
 version: cloud-service
 kt: 974
 thumbnail: 21750.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
 
 
-# Het gebruiken van het Systeem van de Stijl {#using-the-style-system-with-aem-sites}
+# Het stijlsysteem gebruiken {#using-the-style-system-with-aem-sites}
 
 Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
 
