@@ -7,13 +7,12 @@ doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2734'
 ht-degree: 0%
 
 ---
@@ -99,7 +98,7 @@ Op dezelfde manier kunt u uw master bronvideo uploaden naar Dynamic Media Classi
 
 **Er is geen minimumgrootte voor zoomen, maar de viewers zoomen standaard niet verder dan 100%.** Als de afbeelding te klein is, wordt er niet op ingezoomd of wordt er slechts in een kleine hoeveelheid ingezoomd om te voorkomen dat de afbeelding er slecht uitziet.
 
-**Hoewel er geen minimale afbeeldingsgrootte is, raden we u niet aan gigantische afbeeldingen te uploaden.** Een gigantische afbeelding kan worden beschouwd als meer dan 4000 pixels. Bij het uploaden van afbeeldingen van deze grootte kunnen mogelijke onvolkomenheden optreden, zoals stofkorrels of haren in de afbeelding. Dergelijke afbeeldingen nemen ook meer ruimte in beslag op de Dynamic Media Classic-server, waardoor u uw contractueel vastgelegde opslaglimiet kunt overschrijden.
+**Hoewel er geen minimale afbeeldingsgrootte is, raden we u niet aan gigantische afbeeldingen te uploaden.** Een gigantische afbeelding kan worden beschouwd als meer dan 4000 pixels. Het uploaden van afbeeldingen van deze grootte kan mogelijke onvolkomenheden zoals stofkorrels of haren in de afbeelding laten zien. Dergelijke afbeeldingen nemen ook meer ruimte in beslag op de Dynamic Media Classic-server, waardoor u uw contractueel vastgelegde opslaglimiet kunt overschrijden.
 
 Meer informatie over [Bestanden uploaden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
