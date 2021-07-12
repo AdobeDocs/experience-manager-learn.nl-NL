@@ -1,7 +1,7 @@
 ---
 title: AEM gebruikers, groepen en machtigingen
 description: Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, gebruikersgroepen en productprofielen om gebruikers aanpasbare toegang tot AEM te bieden. Leer hoe u AEM groepen en machtigingen definieert en hoe ze samenwerken met de abstracties van Adobe IMS om naadloze en aanpasbare toegang tot AEM te bieden.
-feature: Users and Groups
+feature: 'Gebruikers en groepen '
 topics: authentication
 version: cloud-service
 activity: setup
@@ -9,13 +9,12 @@ audience: administrator
 doc-type: feature video
 kt: 6060
 thumbnail: 39151.jpg
-topic: Administration, Security
-role: Administrator
+topic: Beheer, beveiliging
+role: Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '230'
 ht-degree: 14%
 
 ---
