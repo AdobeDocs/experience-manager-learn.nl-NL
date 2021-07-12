@@ -6,19 +6,18 @@ feature: Dynamic Media Classic
 version: 6.5
 kt: 5808
 thumbnail: 36645.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Inhoudsbeheer
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
 
-# Dynamic Media Classic Desktop Application{#using-dynamic-media-desktop-application} gebruiken
+# Dynamic Media Classic Desktop-toepassing gebruiken{#using-dynamic-media-desktop-application}
 
 Adobe introduceert een bureaubladtoepassing voor Dynamic Media Classic die een vergelijkbare ervaring biedt als een browser en een functioneel equivalente interface die niet afhankelijk is van de Adobe Flash-speler.
 
