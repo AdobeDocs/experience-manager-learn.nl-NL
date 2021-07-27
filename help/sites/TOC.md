@@ -3,11 +3,10 @@ user-guide-title: AEM Sites-video's en -Tutorials
 user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites.
 breadcrumb-title: AEM Sites Tutorials
 sub-product: sites
-translation-type: tm+mt
-source-git-commit: 4620acc18a08d71994753903b79247a8ed3fd8f5
+source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 4%
+source-wordcount: '605'
+ht-degree: 3%
 
 ---
 
@@ -113,3 +112,24 @@ ht-degree: 4%
       + [Doelactiviteit maken met behulp van Experience Fragment-aanbiedingen](integrations/adobe-target/create-target-activity.md)
       + [Personalisatie met behulp van Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Aanpassing van de volledige webpaginabeleving](integrations/adobe-target/personalization-web-page.md)
+
++ Dynamic Media Tutorials {#dynamic-media}
+   + [Gegevens van testafbeeldingsserver (client IP-filters) in Dynamic Media toevoegen voor beveiligde voorvertoning met DMc App](dynamic-media/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
+   + [Verschillende soorten sets maken met AEM Dynamic Media | Carousel-set](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
+   + [Verschillende soorten sets maken met AEM Dynamic Media| Afbeeldingsset](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
+   + [Voorinstellingen voor afbeeldingen maken](dynamic-media/creating-image-presets.md)
+   + [Afbeeldingsprofiel maken (slim uitsnijden) in Dynamic Media](dynamic-media/creating-image-profile-smart-crop.md)
+   + [Videoprofiel maken om video&#39;s te verwerken in Dynamic Media](dynamic-media/creating-video-profile-to-process-videos-in-dynamic-media.md)
+   + [Dynamic Media-configuratie verwijderen](dynamic-media/deleting-dynamic-media-configuration.md)
+   + [Middelen downloaden in Dynamic Media Classic App](dynamic-media/how-to-download-asset-in-dynamic-media-classic-app.md)
+   + [Een openbare URL of code insluiten voor een element genereren](dynamic-media/how-to-generate-public-url-or-embed-code-for-an-asset.md)
+   + [Hoe kan ik DAM-workflow voor bijwerken van middelen uitvoeren op middelen waarvoor Dynamic Media is ingeschakeld.](dynamic-media/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+   + [De exporttaak in Dynamic Media activeren tijdens het verzenden van de taakbewerkingsparameter](dynamic-media/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
+   + [Inleiding tot Dynamic Media klassieke IPS API](dynamic-media/introduction-to-dynamic-media-classic-ips-api.md)
+   + [De CDN-cache ongeldig maken via Dynamic Media](dynamic-media/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
+   + [DM-componenten gebruiken op sitepagina](dynamic-media/using-dm-components-on-site-page.md)
+
++ Brand Portal Tutorials {#brand-portal}
+   + [Asset Sourcing configureren met de merkportal](brand-portal/configuring-asset-sourcing-with-the-brand-portal.md)
+   + [Het downloaden van uitvoeringen inschakelen](brand-portal/how-to-enable-the-download-of-renditions.md)
+   + [Stappen voor het configureren van AEM Assets Brand Portal](brand-portal/steps-to-configure-aem-assets-brand-portal.md)
