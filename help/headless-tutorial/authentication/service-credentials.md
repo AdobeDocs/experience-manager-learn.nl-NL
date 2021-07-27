@@ -12,9 +12,9 @@ thumbnail: 330519.jpg
 topic: Hoofdloos, integratie
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: e0822ad4aaf4022a849825ef625e1c29eb6e78f3
+source-git-commit: b902ced3d7f7cf827d0a487bf741ff370f7c1f04
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,10 @@ De Verantwoordelijkheden van de dienst, in tegenstelling tot de Tokens van de To
 
 __Dit is een eenmalige initialisatie per AEM als een Cloud Service-omgeving__
 
-1. Zorg ervoor dat u bent aangemeld als beheerder van uw Adobe IMS Org
+1. Controleer of u bent aangemeld als:
+   + Beheerder van uw Adobe IMS Org
+   + Lid van __Cloud Manager - Developer__ IMS-productprofiel
+   + Lid van __AEM Gebruiker__ of __AEM Beheerders__ IMS-productprofiel op __AEM-auteur__
 1. Aanmelden bij [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Open het Programma dat de AEM als omgeving van de Cloud Service bevat om opstelling de Referenties van de Dienst voor te integreren
 1. Tik op de ellips naast de omgeving in de sectie __Omgevingen__ en selecteer __Developer Console__
@@ -67,8 +70,10 @@ Zodra de AEM als de Referentials van de Dienst van het milieu van de Cloud Servi
 
 Voor het downloaden van de servicekredieten gelden dezelfde stappen als voor de initialisatie. Als de initialisatie nog niet is opgetreden, wordt een fout weergegeven met het tikken op de knop __Servicereferenties ophalen__.
 
-1. Zorg ervoor dat u lid bent van het __Cloud Manager - Developer__ IMS-productprofiel (dat toegang biedt tot AEM Developer Console)
-   + Voor AEM als Cloud Service is alleen lidmaatschap vereist in de __AEM Beheerders__ of __AEM Gebruikers__ Productprofiel
+1. Controleer of u bent aangemeld als een:
+   + Lid van __Cloud Manager - Developer__ IMS-productprofiel (dat toegang verleent tot AEM Developer Console)
+      + AEM als Cloud Service vereist dit __Cloud Manager - Developer__-lidmaatschap niet
+   + Lid van __AEM Gebruiker__ of __AEM Beheerders__ IMS-productprofiel op __AEM-auteur__
 1. Aanmelden bij [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM bevat als een Cloud Service-omgeving om te integreren met
 1. Tik op de ellips naast de omgeving in de sectie __Omgevingen__ en selecteer __Developer Console__
