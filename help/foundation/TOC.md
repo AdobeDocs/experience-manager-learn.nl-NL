@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials AEM stichting
 user-guide-description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Manager Foundation. '
 sub-product: stichting
 index: y
-source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
+source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 3%
+source-wordcount: '221'
+ht-degree: 2%
 
 ---
 
@@ -46,4 +46,14 @@ ht-degree: 3%
    + [De Workfloweditor gebruiken](./workflow/use-the-workflow-editor.md)
    + [Workflow gebruiken](./workflow/use-workflow.md)
    + [Inbox gebruiken](./workflow/use-the-inbox.md)
-
++ Problemen oplossen {#troubleshooting}
+   + [Rapport voor het downloaden van bedrijfsmiddelen inschakelen](./troubleshooting/how-to-enable-asset-download-report.md)
+   + [Hoe wordt de recompilatie geforceerd in AEM6.4](./troubleshooting/how-to-force-recompilation.md)
+   + [Hoe te om indexerende verwante kwesties in AEM te onderzoeken](./troubleshooting/how-to-investigate-indexing-related-issues.md)
+   + [Hoe te om SAML verwante kwesties in AEM te onderzoeken](./troubleshooting/how-to-investigate-saml-related-issues.md)
+   + [Hoe te onderzoek verwante kwesties in AEM onderzoeken](./troubleshooting/how-to-investigate-search-related-issues.md)
+   + [Hoe te om de Oak login symbolische zittingsvervaldag te plaatsen](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
+   + [Hoe te om kwesties met betrekking tot de configuratie van de Jetty problemen op te lossen](./troubleshooting/how-to-troubleshoot-issues-related-to-jetty-configuration.md)
+   + [Hoe te om prestatiesverwante kwesties problemen op te lossen](./troubleshooting/how-to-troubleshoot-performance-related-issues.md)
+   + [Stappen om geheugengerelateerde problemen in AEM op te lossen](./troubleshooting/steps-to-resolve-memory-related-issues.md)
+   + [Stappen om replicatieproblemen in AEM op te lossen](./troubleshooting/steps-to-resolve-replication-issues.md)
