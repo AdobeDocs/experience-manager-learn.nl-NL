@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
-source-git-commit: e2bdc73aff012bde5a1ff8f5c85ac0a183dc441d
+source-git-commit: 680043f5717bf938bf6f0b960d9ed5939d13544c
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '460'
 ht-degree: 11%
 
 ---
@@ -57,7 +57,14 @@ ht-degree: 11%
       + [Inhoud publiceren](./developing/basics/content-publishing.md)
       + [OSGi-configuraties](./developing/basics/osgi-configurations.md)
       + [Migratie van Dispatcher Configuration](./developing/basics/dispatcher-configuration.md)
-   + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
+   + Projecten AEM{#aem-projects}
+      + [AEM Maven Project](./developing/projects/maven-project-structure.md)
++ OSGi Services{#osgi-services}
+   + [OSGi Service Basics](./developing/osgi-services/basics.md)
+   + [OSGi-componentlevenscyclus](./developing/osgi-services/lifecycle.md)
+   + [Basisprincipes van OSGi-configuraties](./developing/osgi-services/configurations.md)
+   + [OSGi Configurations die OCD gebruiken](./developing/osgi-services/configurations-ocd.md)
++ [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Foutopsporing AEM{#debugging}
    + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
       + [Overzicht](./debugging/aem-sdk-local-quickstart/overview.md)
