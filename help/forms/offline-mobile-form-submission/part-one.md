@@ -9,13 +9,12 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.4, 6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -149,7 +148,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-[Klik hier](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content) om te zien hoe u interactieve PDF kunt downloaden van een gedeeltelijk voltooid mobiel formulier.
+[Klik hier](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content) om te zien hoe u interactieve PDF kunt downloaden van een gedeeltelijk voltooid mobiel formulier.
 Nadat de PDF is gedownload, wordt de PDF verzonden om een AEM workflow te activeren. Met deze workflow worden de gegevens uit de verzonden PDF samengevoegd en wordt een niet-interactieve PDF voor revisie gegenereerd.
 
 Het aangepaste profiel dat voor dit gebruiksgeval is gemaakt, is beschikbaar als onderdeel van deze zelfstudie-elementen.
