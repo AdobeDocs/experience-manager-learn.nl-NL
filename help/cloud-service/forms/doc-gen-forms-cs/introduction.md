@@ -8,8 +8,8 @@ version: cloud-service
 feature: Document Services
 topic: Ontwikkeling
 kt: 7432
-thumbnail: 332439.jpg
-source-git-commit: 33cb3d18b744d9a8e54a87152079b42ed09212f2
+thumbnail: 334859.jpg
+source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 2%
@@ -24,3 +24,5 @@ In deze cursus, zullen wij de microdiensten van de documentgeneratie gebruiken o
 1. Creeer een Token van het Web JSON (JWT) van de de dienstgeloofsbrieven en ruil het zelfde voor een toegangstoken
 1. Toegang voor de technische account configureren in AEM
 1. HTTP-aanroepen maken met behulp van het toegangstoken
+
+>[!VIDEO](https://video.tv.adobe.com/v/334859/?quality=12&learn=on)
