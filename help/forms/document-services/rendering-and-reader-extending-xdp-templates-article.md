@@ -11,13 +11,12 @@ activity: implement
 version: 6.4,6.5
 feature: Forms Service
 discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -29,11 +28,11 @@ Een veelvoorkomend geval is het renderen van xdp naar PDF en het toepassen van R
 
 Als een gebruiker bijvoorbeeld op XDP klikt in de portal Formulieren van AEM Forms, kunnen we XDP weergeven als PDF en de PDF door Reader uitbreiden.
 
-Om dit vermogen te testen, kunt u dit [verbinding](https://forms.enablementadobe.com/content/samples/samples.html?query=0) proberen. De voorbeeldnaam is &quot;Render XDP with RE&quot;
+Om dit vermogen te testen, kunt u dit [verbinding](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse2) proberen. De voorbeeldnaam is &quot;Renderen en Reader breiden XDP uit&quot;
 
 Voor dit gebruiksgeval moeten we het volgende doen.
 
-* Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. De stappen om de credentie van de Uitbreidingen van de Reader toe te voegen zijn vermeld [hier](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. De stappen om de credentie van de Uitbreidingen van de Reader toe te voegen zijn vermeld [hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
 
 * Creeer de douanedienst OSGi die gebruiksrechten zal teruggeven en toepassen. De code om dit te bereiken wordt hieronder vermeld
 
@@ -126,7 +125,7 @@ public @interface DocSvcConfiguration {
 }
 ```
 
-## Servlet maken om de PDF te stroomden {#create-servlet-to-stream-the-pdf}
+## Servlet maken om de PDF te streamen {#create-servlet-to-stream-the-pdf}
 
 De volgende stap bestaat uit het maken van een servlet met een methode GET om de voor lezer uitgebreide PDF naar de gebruiker te retourneren. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn bestandssysteem. De reden hiervoor is dat de PDF wordt gerenderd als dynamische PDF en de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
 
@@ -203,6 +202,8 @@ public class RenderAndReaderExtend extends SlingSafeMethodsServlet {
 Voer de volgende stappen uit om dit op uw lokale server te testen
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [De AEMFormsDocumentServices-bundel downloaden en installeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+
+1. [De aangepaste portalsjabloon html downloaden](assets/render-and-extend-template.zip)
 1. [De aan dit artikel gerelateerde elementen downloaden en importeren in AEM met behulp van pakketbeheer](assets/renderandextendxdp.zip)
    * Dit pakket bevat voorbeeldportal en xdp-bestand
 1. Certificaat van extensies voor Readers toevoegen aan gebruiker van het type fd-service
