@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -198,6 +198,7 @@ ht-degree: 0%
    + [Uitvoer- en Forms-service gebruiken in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Meerdere PDF&#39;s genereren op basis van één gegevensbestand](document-services/generate-multi-record-pdf.md)
    + [PDF genereren op mobiele formulierverzending](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Credentiële Reader extensies configureren](document-services/configuring-reader-extension-osgi.md)
    + [Interactieve PDF genereren van mobiel formulier](document-services/render-interactive-form-using-api.md)
    + [Gebruiksrechten toepassen op PDF bij XDP-uitvoering](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Gebruiksrechten toepassen op geüploade PDF](document-services/apply-reader-extension-rights-to-pdf.md)
