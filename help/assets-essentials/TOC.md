@@ -4,7 +4,7 @@ user-guide-description: Een verzameling video's voor Adobe Experience Manager As
 breadcrumb-title: AEM Assets Essentials Video
 sub-product: elementen
 team: TM
-source-git-commit: 46f270c5b26baeb546997f2191cc28801444a290
+source-git-commit: 882c7ce872533ab4848c8db6145172b8cce4e270
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 2%
@@ -22,5 +22,5 @@ ht-degree: 2%
    + [Inhoud maken](basics/creating.md)
    + [Samenwerking](basics/collaborating.md)
 
-+ [Adobe Journey Optimizer-integratie](https://experienceleague.adobe.com/docs/journey-optimizer/using/create-messages/assets-essentials.html)
++ [Adobe Journey Optimizer-integratie](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html)
 
