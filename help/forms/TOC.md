@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 0%
    + [Prefill-service in adaptieve Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Aangepast verzenden in adaptieve Forms](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha in Adaptive Forms](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Adaptief formulier insluiten in webpagina](adaptive-forms/embed-af-web-page.md)
    + [Het gebruiken van Vastgestelde Waarde in XML in Werkschema OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [Ingestelde waarde gebruiken in JSON in OSGI-workflow](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
    + [E-mailcomponent verzenden in AEM Forms-workflow](adaptive-forms/email-step-aem-workflow-video-use.md)
@@ -198,8 +199,8 @@ ht-degree: 0%
    + [Uitvoer- en Forms-service gebruiken in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Meerdere PDF&#39;s genereren op basis van één gegevensbestand](document-services/generate-multi-record-pdf.md)
    + [PDF genereren op mobiele formulierverzending](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Credentiële Reader extensies configureren](document-services/configuring-reader-extension-osgi.md)
    + [Interactieve PDF genereren van mobiel formulier](document-services/render-interactive-form-using-api.md)
+   + [Credentiële Reader extensies configureren](document-services/configuring-reader-extension-osgi.md)
    + [Gebruiksrechten toepassen op PDF bij XDP-uitvoering](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Gebruiksrechten toepassen op geüploade PDF](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Documenten certificeren](document-services/certifying-documents-aem-forms-tutorial.md)
