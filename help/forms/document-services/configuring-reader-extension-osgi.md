@@ -11,9 +11,9 @@ version: 6.4,6.5
 topic: Beheer
 role: Admin
 level: Beginner
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,15 @@ De referentie voor de lezerextensies is gekoppeld aan de gebruiker van de fd-ser
 Volg de video om de referenties aan de gebruiker van de fd-service toe te voegen
 
 >[!VIDEO](https://video.tv.adobe.com/v/335849?quality=9&learn=on)
+
+
+De opdracht voor het weergeven van de details van het pfx-bestand is. Bij de volgende opdracht wordt ervan uitgegaan dat u zich in dezelfde map bevindt als het pfx-bestand.
+
+**keytool -v -list -storetype pkcs12 -keystore  &lt;name of=&quot;&quot; your=&quot;&quot;>**
+
+Bijvoorbeeld keytool -v -list -storetype pkcs12 -keystore 1005566.pfx waarbij 1005566.pfx de naam van mijn pfx-bestand is
+
+
 
 
 
