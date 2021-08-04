@@ -14,9 +14,9 @@ discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
 topic: Ontwikkeling
 role: Developer
 level: Experienced
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ Om dit vermogen te testen, kunt u dit [verbinding](https://forms.enablementadobe
 Voor dit gebruiksgeval moeten we het volgende doen.
 
 * Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. De stappen om de credentie van de Uitbreidingen van de Reader toe te voegen zijn vermeld [hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+
+
+* U kunt ook naar de video verwijzen wanneer u aanmeldgegevens voor Reader-extensies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) configureert[
+
 
 * Creeer de douanedienst OSGi die gebruiksrechten zal teruggeven en toepassen. De code om dit te bereiken wordt hieronder vermeld
 
