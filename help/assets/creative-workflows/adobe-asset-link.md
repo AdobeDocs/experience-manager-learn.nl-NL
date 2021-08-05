@@ -7,9 +7,9 @@ topic: Inhoudsbeheer
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,13 @@ ht-degree: 0%
 Adobe Experience Manager-middelen kunnen door ontwerpers en creatieve gebruikers worden gebruikt in hun favoriete Adobe Creative Cloud-bureaubladtoepassingen.
 
 Adobe Asset Link-extensie voor Adobe Creative Cloud for enterprise breidt de mogelijkheid uit om metagegevens van AEM elementen in Creative Cloud-toepassingen te zoeken en te zoeken, te sorteren, voor te vertonen, te uploaden, te checken, te wijzigen, in te checken en weer te geven.
+
+
+## Adobe Asset Link en AEM creatieve workflows
+
+De volgende video illustreert een algemene workflow die wordt gebruikt door ontwerpers die in Adobe Creative Cloud-toepassingen werken en die rechtstreeks met AEM met behulp van Adobe Asset Link integreren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
 
 ## Mogelijkheden voor Adobe-itemkoppeling
 
