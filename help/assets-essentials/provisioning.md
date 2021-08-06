@@ -7,8 +7,8 @@ topic: Inhoudsbeheer
 role: User
 level: Beginner
 kt: 8020
-thumbnail: xxxx.jpeg
-source-git-commit: 46f270c5b26baeb546997f2191cc28801444a290
+thumbnail: 335952.jpeg
+source-git-commit: 5438fd521e08b37405f18e5fc2e7fc1f02592a78
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u Assets Essentials kunt implementeren met gebruik van Cloud Manager en toegang voor gebruikers.
 
->[!VIDEO](https://video.tv.adobe.com/v/xxx/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335952/?quality=9&learn=on)
