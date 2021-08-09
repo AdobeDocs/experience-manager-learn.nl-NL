@@ -4,9 +4,9 @@ user-guide-description: Een verzameling video's voor Adobe Experience Manager As
 breadcrumb-title: AEM Assets Essentials-video's
 sub-product: elementen
 team: TM
-source-git-commit: 5438fd521e08b37405f18e5fc2e7fc1f02592a78
+source-git-commit: 70ec794abc15aaed23f5a7bd99a3deafc65ed401
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '44'
 ht-degree: 2%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 2%
 + [Overzicht](overview.md)
 
 + [Inrichting](./provisioning.md)
++ [Aan de slag](./getting-started.md)
 
 + Basisbeginselen{#basics}
    + [Beheer](basics/managing.md)
