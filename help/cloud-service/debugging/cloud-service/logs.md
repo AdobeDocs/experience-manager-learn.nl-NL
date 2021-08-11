@@ -14,8 +14,8 @@ role: Developer
 level: Beginner
 source-git-commit: e2473a1584ccf315fffe5b93cb6afaed506fdbce
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1010'
+ht-degree: 1%
 
 ---
 
@@ -78,7 +78,7 @@ Met Adobe Cloud Manager kunt u logbestanden overdag downloaden via de handeling 
 
 ![Cloud Manager - Logbestanden downloaden](./assets/logs/download-logs.png)
 
-Deze logbestanden kunnen worden gedownload en geïnspecteerd met behulp van alle programma&#39;s voor loganalyse.
+Deze logboeken kunnen worden gedownload en geïnspecteerd via alle programma&#39;s voor loganalyse.
 
 ## Adobe I/O CLI met plug-in Cloud Manager{#aio}
 
