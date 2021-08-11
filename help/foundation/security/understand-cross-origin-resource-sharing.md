@@ -10,9 +10,9 @@ doc-type: article
 topic: Beveiliging
 role: Developer
 level: Intermediate
-source-git-commit: 1c99c319fba5048904177fc82c43554b0cf0fc15
+source-git-commit: 3418cd424cc82fece9e7d13de72c0d8dde346d7c
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ Als u het in cache plaatsen van CORS-headers wilt toestaan, voegt u de volgende 
 /cache { 
   ...
   /headers {
-      "Origin",
+      "Origin"
       "Access-Control-Allow-Origin"
       "Access-Control-Expose-Headers"
       "Access-Control-Max-Age"
