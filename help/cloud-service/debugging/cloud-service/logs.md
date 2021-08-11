@@ -1,7 +1,7 @@
 ---
 title: Logboeken
 description: De logboeken handelen als frontline voor het zuiveren AEM toepassingen in AEM als Cloud Service, maar zijn afhankelijk van het adequate registreren in de opgestelde AEM toepassing.
-feature: Developer Tools
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,14 +9,13 @@ activity: develop
 audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e2473a1584ccf315fffe5b93cb6afaed506fdbce
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,11 +37,21 @@ AEM als Cloud Services steunt geen dossiers van het douanelogboek, nochtans steu
 
 Java-logboeken zijn alleen beschikbaar in AEM als Cloud Service (via [Cloud Manager](#cloud-manager) of [Adobe I/O CLI](#aio)) als aangepaste loginstructies zijn geschreven in `error.log`. Logboeken die naar aangepaste benoemde logboeken worden geschreven, zoals `example.log`, zijn niet toegankelijk vanaf AEM als Cloud Service.
 
+Logs kan aan `error.log` worden geschreven gebruikend een Sling LogManager OSGi configuratiebezit in de `org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json` dossiers van de toepassing.
+
+```
+{
+   ...
+   "org.apache.sling.commons.log.file": "logs/error.log"
+   ...
+}
+```
+
 ## Logboeken van AEM-auteur- en publicatieservice
 
 Zowel AEM-auteur- als -publicatieservices bieden AEM serverlogboeken bij uitvoering:
 
-+ `aemerror` Dit is het Java-foutenlogboek (wordt gevonden  `/crx-quickstart/error.log` op de lokale QuickStart van de AEM SDK). Hieronder vindt u de [aanbevolen logniveaus](#log-levels) voor aangepaste loggers per omgevingstype:
++ `aemerror` Dit is het Java-foutenlogboek (wordt gevonden  `/crx-quickstart/logs/error.log` op de lokale QuickStart van de AEM SDK). Hieronder vindt u de [aanbevolen logniveaus](#log-levels) voor aangepaste loggers per omgevingstype:
    + Ontwikkeling: `DEBUG`
    + Werkgebied: `WARN`
    + Productie: `ERROR`
@@ -71,7 +80,7 @@ Met Adobe Cloud Manager kunt u logbestanden overdag downloaden via de handeling 
 
 Deze logbestanden kunnen worden gedownload en geïnspecteerd met behulp van alle programma&#39;s voor loganalyse.
 
-## Adobe I/O CLI met insteekmodule Cloud Manager{#aio}
+## Adobe I/O CLI met plug-in Cloud Manager{#aio}
 
 Adobe Cloud Manager ondersteunt toegang tot AEM als een Cloud Service logt via de [Adobe I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager-plug-in voor de Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
@@ -107,7 +116,7 @@ Environment Id Service    Name
 22295          dispatcher aemdispatcher 
 ```
 
-### Logbestanden bijhouden{#aio-cli-tail-logs}
+### Logboeken voor trainingen{#aio-cli-tail-logs}
 
 Adobe I/O CLI verstrekt de capaciteit om logboeken in real time van AEM als Cloud Service te stallen gebruikend [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name) bevel. Tailing is handig voor het bekijken van realtime logactiviteit terwijl acties op de AEM als een Cloud Service-omgeving worden uitgevoerd.
 
