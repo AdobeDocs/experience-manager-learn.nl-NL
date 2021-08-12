@@ -14,9 +14,9 @@ discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
 topic: Ontwikkeling
 role: Developer
 level: Experienced
-source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
+source-git-commit: aa90b2c1a066dc36d4ba26ecdb8b58939445ef34
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ Voer de volgende stappen uit om dit op uw lokale server te testen
    * Dit pakket bevat voorbeeldportal en xdp-bestand
 1. Certificaat van extensies voor Readers toevoegen aan gebruiker van het type fd-service
 1. Wijs uw browser aan [portalwebpagina](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
-1. Klik op het pdf-pictogram om de xdp te renderen en pdf te krijgen die Reader Extended is
+1. Klik op het pictogram pdf om de xdp te renderen als een PDF-bestand waarop gebruiksrechten zijn toegepast.
 
 
 
