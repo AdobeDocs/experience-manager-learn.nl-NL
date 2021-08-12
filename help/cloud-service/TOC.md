@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloudservice
 team: TM
-source-git-commit: e442c6d67a02aae4c6ce9241e754c15abc920c67
+source-git-commit: aa90b2c1a066dc36d4ba26ecdb8b58939445ef34
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '478'
 ht-degree: 11%
 
 ---
@@ -110,6 +110,12 @@ ht-degree: 11%
       + [Interface implementeren](./forms/doc-cloud-sdk/implement-interface.md)
       + [JSON-onderdeel maken](./forms/doc-cloud-sdk/get-content-analyzer.md)
       + [Aangepaste processtap](./forms/doc-cloud-sdk/custom-process-step.md)
+   + Azure Portal Storage{#forms-cs-azure-portal}
+      + [Inleiding](./forms/forms-cs-azure-portal/introduction.md)
+      + [Formuliergegevensmodel maken](./forms/forms-cs-azure-portal/create-fdm.md)
+      + [Formuliergegevens opslaan in Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
+      + [Vooraf ingevuld formulier](./forms/forms-cs-azure-portal/prefill-af-storage.md)
+      + [Query-verzendingen](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + Revisiworkflow maken{#create-aem-workflow}
       + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
       + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
