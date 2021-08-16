@@ -1,19 +1,18 @@
 ---
 title: Meerdere PDF's genereren op basis van één gegevensbestand
-seo-title: Meerdere PDF's genereren op basis van één gegevensbestand
-feature: Output Service
+description: OutputService biedt een aantal methoden om documenten te maken met behulp van een formulierontwerp en gegevens om samen te voegen met het formulierontwerp. Leer om veelvoudige pdf's van één grote xml te produceren die veelvoudige individuele verslagen bevatten.
+feature: Uitvoerservice
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: fb6c21a9a88b5ebcbfb14213182a9b8cba6fe6ae
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -38,11 +37,11 @@ Voor de handtekening van de methode generatePDFOutputBatch worden de volgende pa
 >
 >Dit gebruiksgeval is beschikbaar als levend voorbeeld op deze [website](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
 
-## Hoofdletterdetails gebruiken{#use-case-details}
+## Details kwestie gebruiken{#use-case-details}
 
 In dit geval zullen we een eenvoudige webinterface beschikbaar stellen om de sjabloon en het bestand data(xml) te uploaden. Nadat het uploaden van de bestanden is voltooid en het verzoek van de POST naar AEM servlet is verzonden. Deze servlet haalt de documenten uit en roept de methode generatePDFOutputBatch van OutputService aan. De gegenereerde PDF&#39;s worden gecomprimeerd in een ZIP-bestand en beschikbaar gesteld aan de eindgebruiker om te downloaden vanuit de webbrowser.
 
-## Servlet Code{#servlet-code}
+## Servlet-code{#servlet-code}
 
 Hier volgt het codefragment van het servlet. Code extraheert de sjabloon(xdp) en het gegevensbestand(xml) uit de aanvraag. Sjabloonbestand wordt opgeslagen in het bestandssysteem. Twee kaarten worden gecreeerd - templateMap en dataFileMap die het malplaatje en xml(gegevens) dossiers respectievelijk bevatten. Een vraag wordt dan gemaakt aan generateMultipleRecords methode van de dienst DocumentServices.
 
@@ -77,7 +76,7 @@ Document zippedDocument = documentServices.generateMultiplePdfs(templateMap, dat
 ....
 ```
 
-### Code interfaceimplementatie{#Interface-Implementation-Code}
+### Interfaceimplementatiecode{#Interface-Implementation-Code}
 
 De volgende code genereert meerdere pdf&#39;s met behulp van generatePDFOutputBatch van de OutputService en retourneert een ZIP-bestand met de pdf-bestanden naar het aanroepende servlet
 
@@ -128,7 +127,7 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 }
 ```
 
-### Implementeren op uw server{#Deploy-on-your-server}
+### Distribueren op uw server{#Deploy-on-your-server}
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen:
 
