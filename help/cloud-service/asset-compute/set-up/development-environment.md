@@ -1,7 +1,7 @@
 ---
 title: Een lokale ontwikkelomgeving instellen voor uitbreidbaarheid van de Asset compute
 description: Het ontwikkelen van de arbeiders van de Asset compute, die toepassingen Node.js JavaScript zijn, vereist specifieke ontwikkelingshulpmiddelen die van traditionele AEM ontwikkeling verschillen, die zich van Node.js en diverse npm modules aan de Desktop van de Docker en Code van Microsoft Visual Studio uitstrekken.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,12 @@ audience: developer
 doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
-topic: Integrations, Development
+topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: 53c20b9774c15b04a1c78c7c0c7b61a60996bf60
+source-git-commit: fd72f3c85db8a56ec8abfd1609da53492ee54be2
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -43,17 +42,15 @@ Hier volgt een korte set-upinstructies. Nadere bijzonderheden over deze ontwikke
 1. Installeer de vereiste npm modules en Adobe I/O CLI stop-ins van de bevellijn:
 
    ```
-   $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
+   $ npm i -g @adobe/aio-cli@7.1.0 @openwhisk/wskdebug ngrok --unsafe-perm=true \
    && aio plugins:install @adobe/aio-cli-plugin-asset-compute
    ```
 
 Lees de onderstaande secties voor meer informatie over de instructies voor een verkorte installatie.
 
-## Visual Studio Code{#vscode} installeren
+## Visual Studio-code installeren{#vscode}
 
 [Microsoft Visual Studio ](https://code.visualstudio.com/download) Codeis die voor het ontwikkelen en het zuiveren van de arbeiders van de Asset compute wordt gebruikt. Terwijl andere [JavaScript-compatibele winde](../../local-development-environment/development-tools.md#set-up-the-development-ide) kan worden gebruikt om de worker te ontwikkelen, kan alleen Visual Studio-code worden geïntegreerd in [debug](../test-debug/debug.md) Asset compute-worker.
-
-_Visual Studio Code 1.48.x+ wordt vereist voor  [](#wskdebug) wskdebugto werken._
 
 Dit leerprogramma veronderstelt het gebruik van de Code van Visual Studio aangezien het de beste ontwikkelaarervaring voor het uitbreiden van Asset compute verstrekt.
 
@@ -70,19 +67,22 @@ $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 
 Ontwikkelaars op Windows-computers moeten ervoor zorgen dat ze Linux-containers gebruiken voor de bovenstaande afbeeldingen. De stappen om op de containers van Linux te schakelen worden beschreven in [Docker voor de documentatie van Vensters](https://docs.docker.com/docker-for-windows/).
 
-## Node.js (en npm){#node-js} installeren
+## Node.js (en npm) installeren{#node-js}
 
 De arbeiders van de asset compute zijn [Node.js](https://nodejs.org/)-Gebaseerd, en vereisen daarom Node.js 10+ (en npm) om te ontwikkelen en te bouwen.
 
 + [Installeer Node.js (en npm)](../../local-development-environment/development-tools.md#node-js) op de zelfde manier zoals voor traditionele AEM ontwikkeling.
 
-## Adobe I/O CLI{#aio} installeren
+## Adobe I/O CLI installeren{#aio}
 
 [Installeer Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli), of  ____ aiois een bevel-lijn (CLI) npm module die gebruik van en interactie met de technologieën van Adobe I/O vergemakkelijkt, en voor zowel produceert als plaatselijk ontwikkelt de arbeiders van de aangepaste Asset compute gebruikt.
 
 ```
-$ npm install -g @adobe/aio-cli
+$ npm install -g @adobe/aio-cli@7.1.0
 ```
+
+_Adobe I/O CLI versie 7.1.0 is vereist. Latere versies van Adobe I/O CLI worden op dit moment niet ondersteund._
+
 
 ## De Adobe I/O CLI-Asset compute-insteekmodule installeren{#aio-asset-compute}
 
@@ -102,7 +102,7 @@ _Visual Studio Code 1.48.x+ wordt vereist voor  [](#wskdebug) wskdebugto werken.
 $ npm install -g @openwhisk/wskdebug
 ```
 
-## Ingrot{#ngrok} installeren
+## Installeer de extensie{#ngrok}
 
 Download en installeer de [ngrok](https://www.npmjs.com/package/ngrok) npm module, die het publiek toegang tot uw lokale ontwikkelingsmachine verleent, om lokaal het zuiveren van de arbeiders van de Asset compute te vergemakkelijken.
 
