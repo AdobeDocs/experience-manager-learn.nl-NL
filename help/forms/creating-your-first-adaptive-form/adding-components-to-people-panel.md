@@ -1,25 +1,16 @@
 ---
 title: Componenten toevoegen aan het deelvenster Personen
-seo-title: Componenten toevoegen aan het deelvenster Personen
 description: Configureer het deelvenster Personen door het fragment met de muisdetails toe te voegen. Er wordt een regel ingesteld om het fragment met de gegevens van de echtgenoot weer te geven wanneer de huwelijkse staat van de aanvrager gehuwd is.
-seo-description: Configureer het deelvenster Personen door het fragment met de muisdetails toe te voegen. Er wordt een regel ingesteld om het fragment met de gegevens van de echtgenoot weer te geven wanneer de huwelijkse staat van de aanvrager gehuwd is.
-uuid: be5d2cff-797b-44ea-90e9-2423f1ec8983
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Adaptieve Forms
 version: 6.4,6.5
 kt: 4210
 thumbail: 28385.jpg
-discoiquuid: 520c8633-925f-4d3f-b800-ea34710f68d7
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '83'
 ht-degree: 1%
 
 ---
