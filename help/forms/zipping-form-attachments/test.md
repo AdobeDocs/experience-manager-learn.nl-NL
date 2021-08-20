@@ -1,18 +1,13 @@
 ---
 title: De oplossing testen
 description: Test de oplossing door bijlagen aan het formulier toe te voegen en activeer de workflow om de e-mail te verzenden.
-sub-product: formulieren
-feature: Workflow
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: develop
+feature: Adaptieve Forms
 version: 6.5
 topic: Ontwikkeling
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
