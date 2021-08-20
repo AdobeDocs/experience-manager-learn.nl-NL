@@ -1,22 +1,17 @@
 ---
 title: De handtekeningstatus van het formulier in de database bijwerken
 description: De handtekeningstatus van het ondertekende formulier in de database bijwerken met behulp van de AEM workflow
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Adaptieve Forms
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 2%
+source-wordcount: '107'
+ht-degree: 1%
 
 ---
 
