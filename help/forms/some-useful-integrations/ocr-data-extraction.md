@@ -2,19 +2,14 @@
 title: OCR-gegevensextractie
 description: Gegevens uit door de overheid uitgegeven documenten extraheren om formulieren in te vullen.
 feature: Barcoded Forms
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: use
 version: 6.4,6.5
 kt: 6679
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -52,11 +47,11 @@ Met de [wagereditor](https://editor.swagger.io/) kunt u uw wagerbestand maken om
 
 ## Gegevensbron maken
 
-Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [gegevensbron ](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten creëren. Gebruik het [wagggerbestand](assets/drivers-license-swagger.zip) om uw gegevensbron te maken.
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten creëren. Gebruik het [wagggerbestand](assets/drivers-license-swagger.zip) om uw gegevensbron te maken.
 
 ## Formuliergegevensmodel maken
 
-AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). [ Baseer het model van vormgegevens op de gegevensbron die in de vroegere stap wordt gecreeerd.
+AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). [ Baseer het model van vormgegevens op de gegevensbron die in de vroegere stap wordt gecreeerd.
 
 ![fdm](assets/test-dl-fdm.PNG)
 
