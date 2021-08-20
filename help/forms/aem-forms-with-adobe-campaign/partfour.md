@@ -1,23 +1,14 @@
 ---
 title: Campagneprofiel maken met formuliergegevensmodel
-seo-title: Campagneprofiel maken met formuliergegevensmodel
 description: Stappen die nodig zijn voor het maken van een Adobe Campaign Standard-profiel met behulp van het AEM Forms-formuliergegevensmodel
-seo-description: Stappen die nodig zijn voor het maken van een Adobe Campaign Standard-profiel met behulp van het AEM Forms-formuliergegevensmodel
-uuid: 3216827e-e1a2-4203-8fe3-4e2a82ad180a
-feature: Output Service
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Adaptieve Forms
 version: 6.3,6.4,6.5
-discoiquuid: 461c532e-7a07-49f5-90b7-ad0dcde40984
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -108,7 +99,7 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 }
 ```
 
-## Gegevensbron {#create-data-source} maken
+## Gegevensbron maken {#create-data-source}
 
 De eerste stap bestaat uit het maken van het wagerbestand. Het waggerbestand definieert de REST API die wordt gebruikt om een profiel te maken in Adobe Campaign Standard. In het kwikbestand worden de invoerparameters en de uitvoerparameters van de REST API gedefinieerd.
 
@@ -116,7 +107,7 @@ Er wordt een gegevensbron gemaakt met behulp van het wagerbestand. Wanneer u een
 
 Voorbeeldwagerbestand wordt aan u gegeven als onderdeel van het element dat betrekking heeft op dit artikel.**Zorg ervoor u de gastheer en basePath in het wagerdossier verandert om uw ACS instantie aan te passen**
 
-## De oplossing {#test-the-solution} testen
+## De oplossing testen {#test-the-solution}
 
 Volg de volgende stappen om de oplossing te testen:
 * [Controleer of u de hier beschreven stappen hebt uitgevoerd](aem-forms-with-campaign-standard-getting-started-tutorial.md)
