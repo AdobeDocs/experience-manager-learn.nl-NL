@@ -1,23 +1,15 @@
 ---
 title: De service Formuliergegevensmodel gebruiken als stap in de workflow
-seo-title: De service Formuliergegevensmodel gebruiken als stap in de workflow
 description: Vanaf AEM Forms 6.4 kunnen we nu het formuliergegevensmodel gebruiken als onderdeel van AEM workflow. De volgende video loopt door de stappen nodig om de modelstap van de Gegevens van de Vorm in AEM Werkschema te vormen.
-seo-description: Vanaf AEM Forms 6.4 kunnen we nu het formuliergegevensmodel gebruiken als onderdeel van AEM workflow. De volgende video loopt door de stappen nodig om de modelstap van de Gegevens van de Vorm in AEM Werkschema te vormen.
-uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
 feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+type: Tutorial
 version: 6.4,6.5
-discoiquuid: c442f439-1e5d-4f96-85df-b818c28389ff
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -34,7 +26,7 @@ Volg onderstaande instructies om deze mogelijkheid op uw server te testen
 * [Download en implementeer de setvalue-bundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee eigenschappen van metagegevens worden ingesteld.
 >!![NOTE]In AEM Forms 6.5 en hoger is deze mogelijkheid beschikbaar buiten het vak, zoals hier  [beschreven](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
-* Setup tomcat met SampleRest.war-bestand zoals beschreven [hier](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).Het oorlogsbestand dat in Tomcat wordt geïmplementeerd, heeft de code om de creditscore van de aanvrager te retourneren. De creditscore is een willekeurig getal tussen 200 en 800
+* Setup tomcat met SampleRest.war-bestand zoals beschreven [hier](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).Het oorlogsbestand dat in Tomcat wordt geïmplementeerd, heeft de code om de creditscore van de aanvrager te retourneren. De creditscore is een willekeurig getal tussen 200 en 800
 
 * [Importeer de elementen in AEM met behulp van pakketbeheer](assets/invoke-fdm-as-service-step.zip). Het pakket bevat het volgende:
 
