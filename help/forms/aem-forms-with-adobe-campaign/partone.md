@@ -1,33 +1,24 @@
 ---
 title: 'Het produceren van het Token van het Web JSON en het Token van de Toegang '
-seo-title: 'Het produceren van het Token van het Web JSON en het Token van de Toegang '
 description: In dit artikel wordt uitgelegd welke code nodig is om JWT en Access Token te genereren die nodig zijn voor het uitvoeren van REST-oproepen naar Adobe Campaign Standard
-seo-description: In dit artikel wordt uitgelegd welke code nodig is om JWT en Access Token te genereren die nodig zijn voor het uitvoeren van REST-oproepen naar Adobe Campaign Standard
-uuid: 5b780eee-1e7c-4e1c-a164-49ce64939b91
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Adaptief Forms, formuliergegevensmodel
 version: 6.3,6.4,6.5
-discoiquuid: cc268946-a7e4-42b3-bfad-5509e215871a
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
 
 
-# Genereren van JSON-webtoken en toegangstoken {#generating-json-web-token-and-access-token}
+# Het produceren van het Token van het Web JSON en het Token van de Toegang {#generating-json-web-token-and-access-token}
 
 In dit artikel wordt uitgelegd welke code nodig is om JWT en Access Token te genereren die nodig zijn voor het uitvoeren van REST-oproepen naar Adobe Campaign Standard
 
-## JSON-webtoken {#generate-json-web-token} genereren
+## JSON-webtoken genereren {#generate-json-web-token}
 
 De eerste stap bij het gebruik van de Adobe Campaign API is het genereren van JWT. Er zijn talrijke codesteekproeven op hoe te om JWT voor ACS te produceren. U kunt dit [java-codevoorbeeld](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) volgen om JWT te genereren.
 
@@ -248,6 +239,6 @@ public class CampaignServiceImpl implements CampaignService {
  }
 ```
 
-## Toegangstoken {#generate-access-token} genereren
+## Toegangstoken genereren {#generate-access-token}
 
 Wij ruilen dan geproduceerde JWT voor een Token van de Toegang door een vraag van de POST te maken. Dit Token van de Toegang zal dan als sleutel van de Vergunning in de Kopbal van HTTP voor verdere vraag REST worden verzonden
