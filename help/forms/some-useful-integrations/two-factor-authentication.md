@@ -1,20 +1,15 @@
 ---
 title: Verificatie van SMS Twee factoren
 description: Voeg een extra laag van veiligheid toe helpen de identiteit van een gebruiker bevestigen wanneer zij bepaalde activiteiten willen uitvoeren
-feature: Adaptive Forms
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: use
+feature: Adaptieve Forms
 version: 6.4,6.5
 kt: 6317
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -52,11 +47,11 @@ Met de [wagereditor](https://editor.swagger.io/) kunt u uw wagerbestand maken om
 
 ## Gegevensbron maken
 
-Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [gegevensbron ](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten creëren.
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten creëren.
 
 ## Formuliergegevensmodel maken
 
-AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). [ Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
+AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). [ Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
 Het ingevulde formuliergegevensmodel kan [hier worden gedownload](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
