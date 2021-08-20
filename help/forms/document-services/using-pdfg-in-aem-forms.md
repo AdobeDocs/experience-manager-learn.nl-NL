@@ -1,23 +1,14 @@
 ---
 title: PDFG gebruiken in AEM Forms
-seo-title: PDFG gebruiken in AEM Forms
 description: Mogelijkheid voor slepen en neerzetten demonstreren om een PDF te maken met AEM Forms
-seo-description: Mogelijkheid voor slepen en neerzetten demonstreren om een PDF te maken met AEM Forms
-uuid: ee54edb4-a7b1-42ed-81ea-cb6bef6cf97f
-feature: pdf-generator
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: PDF Generator
 version: 6.4,6.5
-discoiquuid: 7f570f12-ce43-4da7-a249-ef6bd0fe48e5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
