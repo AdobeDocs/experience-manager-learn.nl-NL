@@ -1,20 +1,14 @@
 ---
 title: Items toevoegen aan keuzegroep
-seo-title: Items toevoegen aan keuzegroep
 description: Items dynamisch toevoegen aan keuzerondjesgroepcomponent
-seo-description: Items dynamisch toevoegen aan keuzerondjesgroepcomponent
 feature: Adaptieve Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.5
 topic: Ontwikkeling
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -96,7 +90,7 @@ U kunt dit als volgt op uw systeem testen:
 **De visuele editor gebruiken om items toe te voegen**
 
 * [De middelen downloaden](assets/usingthevisualeditor.zip)
-* Installeer Tomcat als u dit nog niet hebt. [Hier zijn instructies voor het installeren van tomcat beschikbaar](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* Installeer Tomcat als u dit nog niet hebt. [Hier zijn instructies voor het installeren van tomcat beschikbaar](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [SampleRest.war-bestand distribueren in Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
 * [Forms en documenten openen](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op &quot;Maken | Bestand uploaden&quot; en het bestand uploaden dat u in de vorige stap hebt gedownload
