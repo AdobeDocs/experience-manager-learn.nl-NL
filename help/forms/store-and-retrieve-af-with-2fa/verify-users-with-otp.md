@@ -1,21 +1,17 @@
 ---
 title: Verifieer gebruikers met OTP
 description: Verifieer het mobiele aantal verbonden aan het toepassingsaantal gebruikend OTP.
-feature: Adaptive Forms
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: use
+feature: Adaptieve Forms
+type: Tutorial
 version: 6.4,6.5
 kt: 6594
 thumbnail: 6594.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -53,11 +49,11 @@ Met de [wagereditor](https://editor.swagger.io/) kunt u uw wagerbestand maken om
 
 ## Gegevensbron maken
 
-Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [REST gebaseerde gegevensbron gebruikend het wagerdossier](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten. De voltooide gegevensbron wordt verstrekt aan u als deel van deze cursusactiva.
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [REST gebaseerde gegevensbron gebruikend het wagerdossier](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten. De voltooide gegevensbron wordt verstrekt aan u als deel van deze cursusactiva.
 
 ## Formuliergegevensmodel maken
 
-AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). [ Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
+AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). [ Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling.
 Het ingevulde formuliergegevensmodel kan [hier worden gedownload](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
