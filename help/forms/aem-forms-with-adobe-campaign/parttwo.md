@@ -1,29 +1,20 @@
 ---
 title: Campagneprofiel maken bij het verzenden van adaptieve formulieren
-seo-title: Campagneprofiel maken bij het verzenden van adaptieve formulieren
 description: In dit artikel worden de stappen beschreven die nodig zijn om een profiel te maken in Adobe Campaign Standard op basis van een Adaptief formulier-verzending. Bij dit proces wordt gebruikgemaakt van een aangepast verzendmechanisme voor de verzending van het adaptieve formulier.
-seo-description: In dit artikel worden de stappen beschreven die nodig zijn om een profiel te maken in Adobe Campaign Standard op basis van een Adaptief formulier-verzending. Bij dit proces wordt gebruikgemaakt van een aangepast verzendmechanisme voor de verzending van het adaptieve formulier.
-uuid: f3cb7b3c-1a1c-49eb-9447-a9e52c675244
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Adaptief Forms, formuliergegevensmodel
 version: 6.3,6.4,6.5
-discoiquuid: 46ec4136-4898-4b01-86bb-ac638a29b242
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
 
 
-# Campagneprofiel maken bij adaptieve formulierverzending {#creating-campaign-profile-on-adaptive-form-submission}
+# Campagneprofiel maken bij het verzenden van adaptieve formulieren {#creating-campaign-profile-on-adaptive-form-submission}
 
 In dit artikel worden de stappen beschreven die nodig zijn om een profiel te maken in Adobe Campaign Standard op basis van een Adaptief formulier-verzending. Bij dit proces wordt gebruikgemaakt van een aangepast verzendmechanisme voor de verzending van het adaptieve formulier.
 
@@ -33,7 +24,7 @@ In deze zelfstudie worden de stappen doorlopen voor het maken van een Campagnepr
 * Een aangepaste verzendactie maken voor de verwerking van Aangepaste formulierverzendingen
 * Roep de createProfile-methode van CampaignService aan
 
-## AEM service {#create-aem-service} maken
+## AEM maken {#create-aem-service}
 
 Maak AEM service om een Adobe Campaign-profiel te maken. Deze AEM dienst zal de geloofsbrieven van Adobe Campaign van de configuratie ophalen OSGI. Zodra de campagnegeloofsbrieven worden verkregen wordt het toegangstoken geproduceerd en het gebruiken van het toegangstoken de vraag van HTTP Post gemaakt om het profiel in Adobe Campaign tot stand te brengen. Hier volgt de code voor het maken van profielen.
 
@@ -267,7 +258,7 @@ profile.addProperty("mobilePhone",request.getParameter("phone"));
 String pkey = addNewProfile.createProfile(profile);
 ```
 
-## De oplossing {#test-the-solution} testen
+## De oplossing testen {#test-the-solution}
 
 Zodra wij de dienst en de douane hebben bepaald voorlegt actie, zijn wij bereid om onze oplossing te testen. Voer de volgende stappen uit om de oplossing te testen
 
