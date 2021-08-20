@@ -1,23 +1,15 @@
 ---
 title: Vereenvoudigde stappen voor het installeren van AEM Forms in Windows
-seo-title: Vereenvoudigde stappen voor het installeren van AEM Forms in Windows
 description: Snelle en eenvoudige stappen om AEM Forms in vensters te installeren
-seo-description: Snelle en eenvoudige stappen om AEM Forms in vensters te installeren
-uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
-feature: Adaptive Forms
-topics: administration
-audience: developer
-doc-type: article
-activity: setup
+feature: Adaptieve Forms
+type: Tutorial
 version: 6.4,6.5
-discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
-topic: Development
-role: Developer
+topic: Ontwikkeling
+role: Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
