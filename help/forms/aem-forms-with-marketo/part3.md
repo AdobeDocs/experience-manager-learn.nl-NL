@@ -1,21 +1,14 @@
 ---
 title: AEM Forms met Marketo (Deel 3)
-seo-title: AEM Forms met Marketo (Deel 3)
-description: Zelfstudie over de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
-seo-description: Zelfstudie over de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+description: Zelfstudie voor de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
+feature: Adaptief Forms, formuliergegevensmodel
 version: 6.3,6.4,6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -35,8 +28,8 @@ Voor de integratie van AEM Forms met Marketo gebruiken we RESTful-webservices. D
 ![gegevensbron](assets/datasource.jfif)
 
 Het bestand &quot;marketo.json&quot; is het gumerbestand en wordt geleverd als onderdeel van de elementen van deze zelfstudie.
-De Gastheer van het bezit is specifiek voor uw instantie Marketo.
-Het Type van authentificatie is douane en de Implementatie van de Authentificatie moet &quot;AemForms met Marketo&quot;aanpassen. (Tenzij u dit in uw code hebt gewijzigd).
+De Host van het bezit is specifiek voor uw instantie van Marketo.
+Verificatietype is aangepast en verificatie-implementatie moet overeenkomen met &#39;AemForms with Marketo&#39;. (Tenzij u dit in uw code hebt gewijzigd).
 
 ## Formuliergegevensmodel maken
 
