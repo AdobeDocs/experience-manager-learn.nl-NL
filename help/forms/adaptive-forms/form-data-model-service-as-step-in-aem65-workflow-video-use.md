@@ -1,21 +1,15 @@
 ---
 title: De service Formuliergegevensmodel gebruiken als stap in AEM 6.5-workflow
-seo-title: De service Formuliergegevensmodel gebruiken als stap in AEM 6.5-workflow
-description: AEM Forms 6.5 introduceerde de mogelijkheid om variabelen te maken in de AEM Workflow. Met deze nieuwe mogelijkheid die de "Invoke Form Data Model Service" in AEM workflow gebruikt, is heel eenvoudig geworden. De volgende video zal u door de stappen lopen betrokken bij het gebruiken van de Invoke Dienst van het ModelGegevens van de Vorm in AEM Werkstroom.
-seo-description: AEM Forms 6.5 introduceerde de mogelijkheid om variabelen te maken in de AEM Workflow. Met deze nieuwe mogelijkheid die de "Invoke Form Data Model Service" in AEM workflow gebruikt, is heel eenvoudig geworden. De volgende video zal u door de stappen lopen betrokken bij het gebruiken van de Invoke Dienst van het ModelGegevens van de Vorm in AEM Werkstroom.
+description: AEM Forms 6.5 introduceerde de mogelijkheid om variabelen te maken in de AEM Workflow. Met deze nieuwe mogelijkheid die de "Invoke Form Data Model Service" in AEM workflow gebruikt, is heel eenvoudig geworden. De volgende video zal u door de stappen lopen betrokken bij het gebruiken van de Invoke Dienst van het Model van Gegevens van de Vorm in AEM Werkstroom.
 feature: Workflow
-topics: workflow.
-audience: developer.
-doc-type: technical video.
-activity: setup.
+type: Tutorial
 version: 6.5.
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
