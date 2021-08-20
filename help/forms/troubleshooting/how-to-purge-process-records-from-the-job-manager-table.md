@@ -2,13 +2,12 @@
 title: Hoe te om procesverslagen van het gegevensbestand van de Manager van de Baan te zuiveren
 description: Opruiming van records vanuit de taakbeheerdatabase configureren
 type: Troubleshooting
-product: forms
 role: Developer
 level: Experienced
 version: 6.5
 topic: 'Ontwikkeling  '
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 2%
