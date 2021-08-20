@@ -1,17 +1,15 @@
 ---
 title: Aangepaste formuliersjabloon maken
 description: De sjabloon definieert de structuur en initiële inhoud van het adaptieve formulier.
-feature: adaptive-forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Adaptieve Forms
+topic: Ontwikkeling
+role: Developer
+level: Beginner
 kt: 5859
-thumbnail: 37324
-translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+thumbnail: 37324.jpg
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -25,7 +23,7 @@ In de volgende video ziet u het basisproces voor het maken van een adaptieve for
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-Raadpleeg de documentatie van [adaptieve formuliersjablonen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) voor meer informatie
+Raadpleeg de documentatie van [adaptieve formuliersjablonen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) voor meer informatie
 
 Indien nodig kunt u de [adaptieve formuliersjabloon](assets/peak-application-template.zip) downloaden en naar AEM importeren met de [pakketmanager](http://localhost:4502/crx/packmgr/index.jsp)
 
