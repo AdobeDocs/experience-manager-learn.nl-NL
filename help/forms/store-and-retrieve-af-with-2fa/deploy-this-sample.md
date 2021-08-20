@@ -1,21 +1,17 @@
 ---
 title: Het voorbeeld implementeren
 description: Gebruiksscenario's uitvoeren op uw lokale AEM Forms-instantie
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Adaptieve Forms
+type: Tutorial
 version: 6.4,6.5
 kt: 6602
 thumbnail: 6602.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -49,7 +45,7 @@ Maak een ontwikkelaarsaccount met [Nexmo](https://dashboard.nexmo.com/) voor het
 ## De volgende OSGi-bundels implementeren
 
 Implementeer de bundel die de [code bevat om gegevens uit de database op te slaan en op te halen](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
-Implementeer [DevelopingWithServiceUser Bundle](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+Implementeer [DevelopingWithServiceUser Bundle](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 
 ## De clientbibliotheek implementeren
 
