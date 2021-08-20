@@ -1,22 +1,16 @@
 ---
 title: 'Automatische tests gebruiken met AEM adaptieve Forms '
-seo-title: 'Automatische tests gebruiken met AEM adaptieve Forms '
 description: Automatisch testen van Adaptive Forms met Calvin SDK
-seo-description: Automatisch testen van Adaptive Forms met Calvin SDK
-feature: Adaptive Forms
-topics: development
-audience: developer
+feature: Adaptieve Forms
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
-uuid: 3ad4e6d6-d3b1-4e4d-9169-847f74ba06be
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -26,7 +20,7 @@ ht-degree: 0%
 
 Automatisch testen van Adaptive Forms met Calvin SDK
 
-Calvin SDK is een hulpprogramma-API waarmee Adaptive Forms-ontwikkelaars Adaptive Forms kunnen testen. Calvin SDK is gebaseerd op het [Hobbes.js-testframework](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). Calvin SDK is beschikbaar bij AEM Forms 6.3 en hoger.
+Calvin SDK is een hulpprogramma-API waarmee Adaptive Forms-ontwikkelaars Adaptive Forms kunnen testen. Calvin SDK is gebaseerd op het [Hobbes.js-testframework](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html). Calvin SDK is beschikbaar bij AEM Forms 6.3 en hoger.
 
 In deze zelfstudie maakt u het volgende:
 
@@ -81,13 +75,13 @@ Testgevallen kunnen worden toegevoegd aan een testsuite die wordt uitgevoerd met
 * Nadat u een testcase hebt gemaakt, kunt u vervolgens handelingen toevoegen aan uw testcase.
 * Handelingen zoals `navigateTo` en `asserts.isTrue` kunnen als handelingen aan het testcase worden toegevoegd.
 
-## De geautomatiseerde tests {#running-the-automated-tests} uitvoeren
+## De geautomatiseerde tests uitvoeren {#running-the-automated-tests}
 
 [](http://localhost:4502/libs/granite/testing/hobbes.html)OpenTestSuite uitvouwen en de tests uitvoeren. Als alles goed werkt, ziet u de volgende uitvoer.
 
 ![calvinsdk](assets/calvinimage.png)
 
-## Probeer de testsuites {#try-out-the-sample-test-suites} uit
+## Probeer de testsuites van het monster uit {#try-out-the-sample-test-suites}
 
 Als onderdeel van de monsterverpakking zijn er drie extra testreeksen. U kunt ze uitproberen door de desbetreffende bestanden op te nemen in het bestand js.txt van de clientbibliotheek, zoals hieronder wordt weergegeven:
 
