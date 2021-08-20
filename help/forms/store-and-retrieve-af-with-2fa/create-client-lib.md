@@ -1,28 +1,24 @@
 ---
 title: Clientbibliotheken maken
 description: Clientbibliotheek maken om de klikgebeurtenis van de knop "Opslaan en afsluiten" af te handelen
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Adaptieve Forms
+type: Tutorial
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 1%
+source-wordcount: '142'
+ht-degree: 0%
 
 ---
 
 # Clientbibliotheek maken
 
-Maak [client lib](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) die de code bevat om de methode `doAjaxSubmitWithFileAttachment` van de `guideBridge`-API aan te roepen op de klikgebeurtenis van de knop die wordt aangeduid door de CSS-klasse **savebutton**.  We geven de adaptieve formuliergegevens `fileMap` en `mobileNumber` door aan het eindpunt dat luistert op `**/bin/storeafdatawithattachments`
+Maak [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) die de code bevat om de methode `doAjaxSubmitWithFileAttachment` van de `guideBridge`-API aan te roepen op de klikgebeurtenis van de knop die wordt aangeduid door de CSS-klasse **savebutton**.  We geven de adaptieve formuliergegevens `fileMap` en `mobileNumber` door aan het eindpunt dat luistert op `**/bin/storeafdatawithattachments`
 
 Nadat de formuliergegevens zijn opgeslagen, wordt een unieke toepassings-id gegenereerd en in een dialoogvenster aan de gebruiker getoond. Als de gebruiker het dialoogvenster sluit, wordt hij naar het formulier geleid waarmee hij het opgeslagen adaptieve formulier kan ophalen met de unieke toepassings-id.
 
