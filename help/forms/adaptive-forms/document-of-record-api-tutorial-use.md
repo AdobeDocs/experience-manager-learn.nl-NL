@@ -1,33 +1,24 @@
 ---
 title: API gebruiken om een document met records te genereren met AEM Forms
-seo-title: API gebruiken om een document met records te genereren met AEM Forms
 description: Document met opnamen (DOR) programmatisch genereren
-seo-description: API gebruiken om een document met records te genereren met AEM Forms
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Adaptieve Forms
 version: 6.4,6.5
-uuid: 94ac3b13-01b4-4198-af81-e5609c80324c
-discoiquuid: ba91d9df-dc61-47d8-8e0a-e3f66cae6a87
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 
-# API gebruiken om het Document van Verslag in AEM Forms {#using-api-to-generate-document-of-record-with-aem-forms} te produceren
+# API gebruiken om een document met records te genereren in AEM Forms {#using-api-to-generate-document-of-record-with-aem-forms}
 
 Document met opnamen (DOR) programmatisch genereren
 
-Dit artikel illustreert het gebruik van `com.adobe.aemds.guide.addon.dor.DoRService API` om **Document van Verslag** programmatically te produceren. [Document of ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) Recordis een PDF-versie van de gegevens die zijn vastgelegd in adaptief formulier.
+Dit artikel illustreert het gebruik van `com.adobe.aemds.guide.addon.dor.DoRService API` om **Document van Verslag** programmatically te produceren. [Document of ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) Recordis een PDF-versie van de gegevens die zijn vastgelegd in adaptief formulier.
 
 1. Hier volgt het codefragment. De eerste regel krijgt de DOR-service.
 1. Stel de DoROptions in.
