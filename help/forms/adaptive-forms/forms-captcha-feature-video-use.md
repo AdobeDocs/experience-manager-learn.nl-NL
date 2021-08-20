@@ -1,23 +1,14 @@
 ---
 title: CAPTCHA's gebruiken met AEM adaptieve Forms
-seo-title: CAPTCHA's gebruiken met AEM adaptieve Forms
 description: Een CAPTCHA toevoegen en gebruiken met AEM Adaptive Forms.
-seo-description: Een CAPTCHA toevoegen en gebruiken met AEM Adaptive Forms.
 feature: Adaptive Forms,Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.4,6.5
-uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
-discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -27,7 +18,7 @@ ht-degree: 0%
 
 Een CAPTCHA toevoegen en gebruiken met AEM Adaptive Forms.
 
-Ga naar de pagina [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) voor een koppeling naar een live demo van deze mogelijkheid.
+Ga naar de pagina [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) voor een koppeling naar een live demo van deze mogelijkheid.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -43,7 +34,7 @@ Ga naar de pagina [AEM Forms samples](https://forms.enablementadobe.com/content/
 >
 >Vastleggen op auteurinstantie configureren
 >
->open de felix [webconsole](http://localhost:4502/system/console/bundles) op de auteurinstantie
+>Open de Felix [webconsole](http://localhost:4502/system/console/bundles) op de auteurinstantie
 >
 >zoeken naar com.adobe.granite.crypto.file bundle
 >
