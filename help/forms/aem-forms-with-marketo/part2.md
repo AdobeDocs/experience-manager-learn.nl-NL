@@ -1,21 +1,14 @@
 ---
 title: AEM Forms met Marketo (Deel 2)
-seo-title: AEM Forms met Marketo (Deel 2)
-description: Zelfstudie over de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
-seo-description: Zelfstudie over de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+description: Zelfstudie voor de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
+feature: Adaptief Forms, formuliergegevensmodel
 version: 6.3,6.4,6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -23,11 +16,11 @@ ht-degree: 0%
 
 # Marketo-verificatieservice
 
-De REST API&#39;s van Marketo worden geverifieerd met 2-podig OAuth 2.0. Wij moeten douaneauthentificatie tot stand brengen om tegen Marketo voor authentiek te verklaren. Deze aangepaste verificatie wordt doorgaans in een OSGI-bundel geschreven. De volgende code toont de aangepaste authenticator die is gebruikt als onderdeel van deze zelfstudie.
+De REST API&#39;s van Marketo zijn geverifieerd met 2-podig OAuth 2.0. We moeten aangepaste verificatie maken voor verificatie op basis van Marketo. Deze aangepaste verificatie wordt doorgaans in een OSGI-bundel geschreven. De volgende code toont de aangepaste authenticator die is gebruikt als onderdeel van deze zelfstudie.
 
 ## Aangepaste verificatieservice
 
-De volgende code leidt tot het voorwerp AuthenticationDetails dat access_token nodig voor authentificatie tegen Marketo heeft
+Met de volgende code wordt het object AuthenticationDetails gemaakt met het toegangs_token dat nodig is voor verificatie met Marketo
 
 ```java
 package com.marketoandforms.core;
@@ -206,5 +199,5 @@ public class MarketoConfigurationService {
 ```
 
 1. De bundel op uw AEM server bouwen en implementeren.
-1. [Verwijs uw browser aan ](http://localhost:4502/system/console/configMgr) configMGrand onderzoek naar de Configuratie van de Dienst van de Credentials van de Marketo
+1. [Verwijs uw browser aan ](http://localhost:4502/system/console/configMgr) configMGrand onderzoek naar &quot;Configuratie van de Dienst van de Credentials van Marketo&quot;
 1. Geef de juiste eigenschappen op die specifiek zijn voor uw Marketo-instantie
