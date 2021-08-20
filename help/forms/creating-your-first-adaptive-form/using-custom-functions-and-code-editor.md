@@ -1,31 +1,22 @@
 ---
 title: Functies en code-editor gebruiken
-seo-title: Functies en code-editor gebruiken
 description: Functies en code-editor gebruiken om de bedrijfsregel van de auteur te schrijven
-seo-description: Functies en code-editor gebruiken om de bedrijfsregel van de auteur te schrijven
-uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Adaptieve Forms
 version: 6.4,6.5
-discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 1%
+source-wordcount: '139'
+ht-degree: 0%
 
 ---
 
 
-# Aangepaste functies en code-editor {#using-functions-and-code-editor} gebruiken
+# Aangepaste functies en code-editor gebruiken {#using-functions-and-code-editor}
 
 In dit deel, zullen wij douanefuncties en de coderedacteur aan auteur bedrijfsregels gebruiken.
 
@@ -34,15 +25,15 @@ u hebt [ClientLib met douanefunctie](assets/client-libs-and-logo.zip) eerder in 
 Een clientbibliotheek bestaat meestal uit CSS- en JavaScript-bestanden. Deze clientbibliotheek bevat een javascript-bestand waarin een functie voor het invullen van vervolgkeuzelijstwaarden beschikbaar wordt gemaakt.
 
 
-## Functie om vervolgkeuzelijst {#function-to-populate-drop-down-list} te vullen
+## Functie om vervolgkeuzelijst te vullen {#function-to-populate-drop-down-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
 
-### Samenvattingstitel van deelvenster {#set-the-summary-title-of-panels} instellen
+### Samenvattingstitel van deelvenster instellen {#set-the-summary-title-of-panels}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
-#### Deelvenster {#validate-panels-using-rule-editor} valideren
+#### Deelvenster Valideren {#validate-panels-using-rule-editor}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
 
