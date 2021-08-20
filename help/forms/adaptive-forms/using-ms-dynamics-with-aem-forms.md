@@ -1,29 +1,20 @@
 ---
 title: Microsoft Dynamics gebruiken met AEM Forms
-seo-title: Microsoft Dynamics gebruiken met AEM Forms
 description: Deze video loopt door een werkschema dat toont hoe AEM Forms met de Dynamica van Microsoft als achterste gegevensbron kan werken om interactieve, gepersonaliseerde mededelingen te leveren.
-seo-description: Deze video loopt door een werkschema dat toont hoe AEM Forms met de Dynamica van Microsoft als achterste gegevensbron kan werken om interactieve, gepersonaliseerde mededelingen te leveren.
-uuid: 33d63899-1f58-49b3-a05e-6c57b01ef911
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: feature video
-activity: setup
+feature: Adaptieve Forms
 version: 6.3,6.4,6.5
-discoiquuid: 6cb82275-55bc-4b9e-b958-75b906c6afa9
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 1%
+source-wordcount: '139'
+ht-degree: 0%
 
 ---
 
 
-# Werken met Microsoft Dynamics met AEM Forms{#using-microsoft-dynamics-with-aem-forms}
+# Microsoft Dynamics gebruiken met AEM Forms{#using-microsoft-dynamics-with-aem-forms}
 
 Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. Het volgende wordt gesteund uit-van-de-doos. Met weinig aanpassing kunt u echter ook andere gegevensbronnen integreren.
 
