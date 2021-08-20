@@ -2,16 +2,13 @@
 title: AEM Forms installeren in Linux
 description: Leer hoe u 32-bits bibliotheken installeert voor AEM Forms om te werken met Linux-installatie.
 feature: Adaptieve Forms
-audience: developer
-doc-type: article
-activity: setup
+type: Tutorial
 version: 6.4, 6.5
-topic: ontwikkeling
+topic: Ontwikkeling
 role: Developer
 level: Beginner
 kt: 7593
-translation-type: tm+mt
-source-git-commit: 9583006352ca6a20a763c9d5ec7ba15c3791e897
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -89,7 +86,7 @@ yum remove glibc32-2.28-42.1.el8.x86_64
 Alles gezegd en gedaan, wilt u de x86_64 en i686 versies precies het zelfde zijn, zoals bijvoorbeeld van deze output aan het bevel:
 yum info glibc
 
-Laatste vervalcontrole van metagegevens: 0:41:33 geleden op 18 januari 2020 11:37:08 EST.
+Laatste vervalcontrole van metagegevens: 0:41:33 geleden op Zat 18 jan 2020 11:37:08 AM EST.
 Geïnstalleerde pakketten
 Naam: glibc
 Versie: 2,28
