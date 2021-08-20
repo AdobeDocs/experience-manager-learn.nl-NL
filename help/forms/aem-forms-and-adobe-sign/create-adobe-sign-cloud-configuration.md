@@ -1,21 +1,16 @@
 ---
 title: Adobe Sign Cloud-configuratie maken
 description: Met de configuratie van cloudservices in AEM kunt u integratie tussen AEM en andere cloudtoepassingen maken. De volgende video zal u door de stappen lopen nodig om de configuratie van de wolkendiensten tot stand te brengen om AEM met Adobe Sign te integreren.
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Adaptieve Forms
 thumbnail: 38179.jpg
 kt: 6033
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 2%
+source-wordcount: '87'
+ht-degree: 1%
 
 ---
 
