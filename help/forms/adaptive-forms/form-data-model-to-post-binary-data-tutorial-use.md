@@ -1,29 +1,20 @@
 ---
 title: Binaire gegevens verzenden met het formuliergegevensmodel
-seo-title: Binaire gegevens verzenden met het formuliergegevensmodel
 description: Binaire gegevens via het formuliergegevensmodel naar AEM DAM verzenden
-seo-description: Binaire gegevens via het formuliergegevensmodel naar AEM DAM verzenden
-uuid: dd344ed8-69f7-4d63-888a-3c96993fe99d
 feature: Workflow
-topics: integrations
-audience: developer
-doc-type: article
-activity: setup
 version: 6.4,6.5
-discoiquuid: 6e99df7d-c030-416b-83d2-24247f673b33
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
 
 
-# Formuliergegevensmodel gebruiken om binaire gegevens te posten{#using-form-data-model-to-post-binary-data}
+# Binaire gegevens verzenden met het formuliergegevensmodel{#using-form-data-model-to-post-binary-data}
 
 Vanaf AEM Forms 6.4 kunnen we nu de service Formuliergegevensmodel aanroepen als een stap in AEM workflow. In dit artikel wordt een voorbeeld van een gebruiksgeval getoond voor het posten van een document met gebruik van de service Formuliergegevensmodel.
 
