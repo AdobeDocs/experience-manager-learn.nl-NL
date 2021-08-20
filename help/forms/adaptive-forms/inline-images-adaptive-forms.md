@@ -1,21 +1,15 @@
 ---
 title: Inline-afbeeldingen weergeven in Adaptive Forms
-seo-title: Inline-afbeeldingen weergeven in Adaptive Forms
 description: Geüploade afbeeldingen inline weergeven in Adaptive Forms
-seo-description: Geüploade afbeeldingen inline weergeven in Adaptive Forms
-feature: Adaptive Forms
+feature: Adaptieve Forms
 topics: development
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4,6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -24,6 +18,8 @@ ht-degree: 0%
 # Inline-afbeeldingen in Adaptive Forms
 
 Een veelvoorkomend geval is het weergeven van de geüploade afbeelding als een inline-afbeelding in Adaptieve vorm. Standaard wordt de geüploade afbeelding weergegeven als een koppeling en deze ervaring kan worden vergroot door de afbeelding weer te geven in Adaptief formulier. Dit artikel doorloopt de stappen voor de weergave van inline-afbeeldingen.
+
+[Live voorbeeld van deze functie](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1)
 
 ## Afbeelding voor plaatsaanduiding toevoegen
 
