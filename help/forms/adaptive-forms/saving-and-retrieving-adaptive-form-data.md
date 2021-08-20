@@ -1,18 +1,14 @@
 ---
 title: Aangepaste formuliergegevens opslaan en ophalen
-seo-title: Aangepaste formuliergegevens opslaan en ophalen
 description: Aangepaste formuliergegevens opslaan en ophalen uit de database. Met deze functie kunnen invullers het formulier opslaan en het formulier op een latere datum invullen.
-seo-description: Aangepaste formuliergegevens opslaan en ophalen uit de database. Met deze functie kunnen invullers het formulier opslaan en het formulier op een latere datum invullen.
-feature: adaptive-forms
-topics: developing
-audience: developer,implementer
-doc-type: article
-activity: setup
+feature: Adaptieve Forms
+topic: Ontwikkeling
+role: Developer
+type: Tutorial
 version: 6.3,6.4,6.5
-translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -30,7 +26,7 @@ In dit artikel worden de stappen beschreven die nodig zijn voor het opslaan en o
 * [Capability Demonstratie](#capability-demo)
 * [Distribueren op uw server](#deploy-on-your-server)
 
-## Gegevensbron {#Configure-Data-Source} configureren
+## Gegevensbron configureren {#Configure-Data-Source}
 
 Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar de database die wordt gebruikt om de Adaptive Form-gegevens op te slaan. Het volgende schermafbeelding toont de configuratie voor mijn instantie. De volgende eigenschappen kunnen worden gekopieerd en geplakt
 
@@ -38,11 +34,11 @@ Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar
 
 * JDBC-stuurprogramma, klasse:com.mysql.jdbc.Driver
 
-* JDBC-verbinding, URL:jdbc:mysql://localhost:3306/aemformstutorial
+* JDBC-verbinding URL:jdbc:mysql://localhost:3306/aemformstutorial
 
 ![connectionpool](assets/storingdata.PNG)
 
-### Servlet {#create-servlet} maken
+### Servlet maken {#create-servlet}
 
 Hier volgt de code van de servlet die Adaptieve formuliergegevens in de database invoegt/bijwerkt. De Apache Sling Connection Pooled DataSource wordt geconfigureerd met de AEM ConfigMgr en er wordt in regel 26 naar verwezen. De rest van de code is vrij eenvoudig. De code voegt een nieuwe rij in de database in of werkt een bestaande rij bij. De opgeslagen Adaptieve gegevens van de Vorm worden geassocieerd met een GUID. Dezelfde GUID wordt vervolgens gebruikt om de formuliergegevens bij te werken.
 
@@ -212,7 +208,7 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 }
 ```
 
-## OSGI-service maken om gegevens te zoeken {#create-osgi-service}
+## OSGI-service maken voor het ophalen van gegevens {#create-osgi-service}
 
 De volgende code is geschreven om de opgeslagen gegevens van het Adaptieve formulier op te halen. Een eenvoudige vraag wordt gebruikt om de Adaptieve gegevens van de Vorm te halen verbonden aan een bepaalde GUID. De opgehaalde gegevens worden vervolgens geretourneerd aan de aanroepende toepassing. Dezelfde gegevensbron gemaakt in de eerste stap waarnaar in deze code wordt verwezen.
 
@@ -405,16 +401,16 @@ $(document).ready(function()
 });
 ```
 
-## Aangepaste formuliersjabloon en paginacomponent {#form-template-and-page-component} maken
+## Aangepaste formuliersjabloon en paginacomponent maken {#form-template-and-page-component}
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=9&learn=on)
 
-### Bewijs van de mogelijkheid {#capability-demo}
+### Bewijs van de bekwaamheid {#capability-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/27829?quality=9&learn=on)
 
-#### Implementeren op uw server {#deploy-on-your-server}
+#### Distribueren op uw server {#deploy-on-your-server}
 
 Voer de volgende stappen uit om deze mogelijkheid te testen op uw AEM Forms-exemplaar
 
