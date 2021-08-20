@@ -1,22 +1,14 @@
 ---
 title: Document certificeren in AEM Forms
-seo-title: Document certificeren in AEM Forms
 description: PDF-documenten certificeren in AEM Forms met de documentatieservice
-seo-description: PDF-documenten certificeren in AEM Forms met de documentatieservice
-uuid: ecb1f9b6-bbb3-43a3-a0e0-4c04411acc9f
-feature: Document Security
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Documentbeveiliging
 version: 6.4,6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -32,7 +24,7 @@ In dit artikel vindt u voorbeelden van OSGI-bundels voor het certificeren van PD
 
 Als u documenten wilt certificeren met AEM Forms, moet u de volgende stappen uitvoeren
 
-## Certificaat toevoegen aan vertrouwde opslag {#adding-certificate-to-trust-store}
+## Certificaat toevoegen aan vertrouwde winkel {#adding-certificate-to-trust-store}
 
 Volg de onderstaande stappen om het certificaat toe te voegen aan het sleutelarchief in AEM
 
