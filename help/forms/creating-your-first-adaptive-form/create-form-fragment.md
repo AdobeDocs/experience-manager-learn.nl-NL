@@ -1,21 +1,16 @@
 ---
 title: Formulierfragment maken
 description: AEM formulieren bieden een handig mechanisme om slechts eenmaal een formuliersegment als een deelvenster of een groep velden te maken en deze in adaptieve formulieren opnieuw te gebruiken.
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Adaptieve Forms
 kt: 5862
 thumbnail: 37325.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 15%
+source-wordcount: '108'
+ht-degree: 14%
 
 ---
 
@@ -29,7 +24,7 @@ Een fragment is een herbruikbaar onderdeel van een formulier. Een fragment kan b
 
 
 
-Raadpleeg de documentatie van [adaptieve formuliersjablonen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) voor meer informatie
+Raadpleeg de documentatie van [adaptieve formuliersjablonen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) voor meer informatie
 
 Indien nodig kunt u het [Spouse-details-fragment ](assets/spouse-details-fragment.zip) downloaden en in AEM importeren met de [pakketmanager](http://localhost:4502/crx/packmgr/index.jsp)
 
