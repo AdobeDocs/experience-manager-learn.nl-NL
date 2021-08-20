@@ -1,33 +1,24 @@
 ---
 title: Transactierapportage in AEM Forms gebruiken
-seo-title: Transactierapportage in AEM Forms gebruiken
 description: Met transactierapporten in AEM Forms kunt u een telling bijhouden van alle transacties die sinds een opgegeven datum op uw AEM Forms-implementatie zijn uitgevoerd.
-seo-description: Met transactierapporten in AEM Forms kunt u een telling bijhouden van alle transacties die sinds een opgegeven datum op uw AEM Forms-implementatie zijn uitgevoerd.
-uuid: e6133f7e-c79c-4006-89e7-3bebf7b8229e
-feature: Adaptive Forms
-topics: developing
-audience: administrator
-doc-type: article
-activity: setup
+feature: Adaptieve Forms
 version: 6.4.1,6.5
-discoiquuid: 1abdf07a-b9f0-4c58-a1c6-08ae57db2014
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 
-# Transactierapportering gebruiken in AEM Forms{#using-transaction-reporting-in-aem-forms}
+# Transactierapportage in AEM Forms gebruiken{#using-transaction-reporting-in-aem-forms}
 
 Transactierapporten om het aantal verzonden formulieren, het weergeven van documenten met behulp van documentservices en het weergeven van interactieve communicatie (web- en afdrukkanalen) vast te leggen, zijn geïntroduceerd in AEM Forms 6.4.1. Deze mogelijkheid is vooral bedoeld voor klanten die een licentie voor de software willen verkrijgen op basis van het aantal verzonden formulieren en/of documenten. Deze mogelijkheid is momenteel alleen beschikbaar in AEM Forms OSGI-stapels.
 
-## Transactierapportage {#enabling-transaction-reporting} inschakelen
+## Transactierapportage inschakelen {#enabling-transaction-reporting}
 
 Standaard is het opnemen van transacties uitgeschakeld. Volg onderstaande stappen om het opnemen van transacties in te schakelen:
 
@@ -38,7 +29,7 @@ Standaard is het opnemen van transacties uitgeschakeld. Volg onderstaande stappe
 
 Zodra transactierapportage is ingeschakeld, kunt u Adaptief Forms verzenden, documenten genereren met behulp van documentservices of Interactieve communicatiedocumenten genereren om transactierapportering in actie te zien.
 
-## Transactierapport {#viewing-transaction-report} weergeven
+## Transactierapport bekijken {#viewing-transaction-report}
 
 Meld u aan bij AEM Forms als beheerder om het transactierapport weer te geven. Alleen leden van de groep fd-beheerder kunnen het transactierapport weergeven.
 
