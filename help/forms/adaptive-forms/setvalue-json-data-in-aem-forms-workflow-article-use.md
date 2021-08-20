@@ -1,29 +1,20 @@
 ---
 title: Waarde van Json-gegevenselement instellen in AEM Forms-workflow
-seo-title: Waarde van Json-gegevenselement instellen in AEM Forms-workflow
 description: Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in AEM workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier reviseert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
-seo-description: Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in AEM workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier reviseert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
-uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: Adaptive Forms
-topics: developing
-audience: implementer
-doc-type: article
-activity: setup
+feature: Adaptieve Forms
 version: 6.4
-discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
 
 
-# Waarde instellen van JSON-gegevenselement in AEM Forms-workflow {#setting-value-of-json-data-element-in-aem-forms-workflow}
+# Waarde van JSON-gegevenselement instellen in AEM Forms-workflow {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
 Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in AEM workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier reviseert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
 
