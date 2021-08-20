@@ -1,29 +1,20 @@
 ---
 title: E-mailstap verzenden van Forms Workflow gebruiken
-seo-title: E-mailstap verzenden van Forms Workflow gebruiken
-description: De stap E-mail verzenden is geïntroduceerd in AEM Forms 6.4. Met deze stap kunnen we bedrijfsprocessen of een workflow maken waarmee u e-mailberichten met of zonder bijlagen kunt verzenden. De volgende video doorloopt de stappen voor het vormen van de send e-mailcomponent
-seo-description: De stap E-mail verzenden is geïntroduceerd in AEM Forms 6.4. Met deze stap kunnen we bedrijfsprocessen of een workflow maken waarmee u e-mailberichten met of zonder bijlagen kunt verzenden. De volgende video doorloopt de stappen voor het vormen van de send e-mailcomponent
-uuid: d054ebfb-3b9b-4ca4-8355-0eb0ee7febcb
+description: De stap E-mail verzenden is geïntroduceerd in AEM Forms 6.4. Met deze stap kunnen we bedrijfsprocessen of een workflow maken waarmee u e-mailberichten met of zonder bijlagen kunt verzenden. De volgende video doorloopt de stappen voor het vormen verzendt e-mailcomponent
 feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.4,6.5
-discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
 
-# Het gebruiken verzendt E-mailStap van Forms Workflow {#using-send-email-step-of-forms-workflow}
+# E-mailstap verzenden van Forms Workflow gebruiken {#using-send-email-step-of-forms-workflow}
 
 De stap E-mail verzenden is geïntroduceerd in AEM Forms 6.4. Met deze stap kunnen we bedrijfsprocessen of een workflow maken waarmee u e-mailberichten met of zonder bijlagen kunt verzenden. De volgende video doorloopt de stappen voor het vormen van verzendt e-mailcomponent.
 
