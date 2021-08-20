@@ -1,21 +1,14 @@
 ---
 title: AEM Forms met Marketo (Deel 1)
-seo-title: AEM Forms met Marketo (Deel 1)
-description: Zelfstudie over de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
-seo-description: Zelfstudie over de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+description: Zelfstudie voor de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
+feature: Adaptief Forms, formuliergegevensmodel
 version: 6.3,6.4,6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -23,15 +16,15 @@ ht-degree: 0%
 
 # AEM Forms met Marketo
 
-Marketo, een onderdeel van Adobe, biedt software voor marketingautomatisering die is gericht op marketing op basis van account, zoals e-mail, mobiele, sociale, digitale advertenties, webbeheer en analyses.
+Marketo, een onderdeel van Adobe, beschikt over software voor marketingautomatisering die is gericht op marketing op basis van account, zoals e-mail, mobiele, sociale, digitale advertenties, webbeheer en analyses.
 
 Met het formuliergegevensmodel van AEM Forms kunnen we nu AEM formulier naadloos integreren met Marketo.
 
 [Meer informatie over het formuliergegevensmodel](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
-Marketo maakt een REST API beschikbaar die voor verre uitvoering van vele mogelijkheden van het systeem toestaat. Van het creëren van programma&#39;s aan bulklood de invoer, zijn er vele opties die fijnkorrelige controle van een instantie van Marketo toestaan. Met behulp van het formuliergegevensmodel is het heel eenvoudig om AEM Forms te integreren met Marketo.
+Marketo maakt een REST API beschikbaar waarmee een groot aantal mogelijkheden van het systeem op afstand kan worden uitgevoerd. Er zijn veel opties, variërend van het maken van programma&#39;s tot het bulksgewijs importeren van leads, waarmee u een Marketo-instantie met fijnkorrelige besturing kunt besturen. Met het formuliergegevensmodel is het heel eenvoudig om AEM Forms te integreren met Marketo.
 
-Deze zelfstudie begeleidt u door de stappen die nodig zijn voor de integratie van AEM Forms met Marketo met behulp van het formuliergegevensmodel. Bij de voltooiing van het leerprogramma zult u een bundel OSGi hebben die de douaneauthentificatie tegen Marketo zal doen. U hebt ook de gegevensbron geconfigureerd met behulp van het meegeleverde wagerbestand.
+In deze zelfstudie worden de stappen besproken die nodig zijn voor de integratie van AEM Forms met Marketo met behulp van het formuliergegevensmodel. Bij het voltooien van de zelfstudie hebt u een OSGi-bundel die de aangepaste verificatie uitvoert tegen Marketo. U hebt ook de gegevensbron geconfigureerd met behulp van het meegeleverde wagerbestand.
 
 Om te beginnen wordt het hoogst geadviseerd dat u met de volgende onderwerpen vertrouwd bent die in de sectie van de Vereiste worden vermeld.
 
@@ -45,14 +38,14 @@ Om te beginnen wordt het hoogst geadviseerd dat u met de volgende onderwerpen ve
 
 **Clientgeheim-id en clientgeheim-sleutel**
 
-De eerste stap in de integratie van Marketo met AEM Forms is het verkrijgen van de API geloofsbrieven die nodig zijn om de REST vraag te maken gebruikend API. U hebt het volgende nodig
+De eerste stap bij de integratie van Marketo met AEM Forms is het verkrijgen van de API-referenties die nodig zijn om de REST-aanroepen met behulp van API uit te voeren. U hebt het volgende nodig
 
 1. client_id
 1. client_geheime
 1. identity_end
 1. verificatie-URL.
 
-[Volg de officiële Marketo-documentatie om de bovengenoemde eigenschappen te verkrijgen.](https://developers.marketo.com/rest-api/) U kunt ook contact opnemen met de beheerder van de Marketo-instantie.
+[Volg de officiële documentatie van Marketo om de bovengenoemde eigenschappen te verkrijgen.](https://developers.marketo.com/rest-api/) U kunt ook contact opnemen met de beheerder van uw Marketo-exemplaar.
 
 **Voordat u begint**
 
