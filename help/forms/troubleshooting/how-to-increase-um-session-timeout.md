@@ -2,16 +2,14 @@
 title: De time-out UM-sessie verhogen
 description: Stappen om de sessietime-out voor gebruikersbeheer voor een gebruiker te verhogen
 type: Troubleshooting
-product: forms
 role: Admin
 level: Intermediate
 version: 6.5
-feature: Foundation JEE
 topic: Beheer
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '35'
 ht-degree: 0%
 
 ---
