@@ -12,9 +12,9 @@ thumbnail: 4854-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Het basisconcept is om een SPA Component aan een AEM Component in kaart te breng
 
 ## De tekstcomponent Inspect
 
-[AEM Projectarchetype](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan AEM [component van de Tekst ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van een **content** component, in die zin dat *content* wordt gerenderd vanuit AEM.
+[AEM Projectarchetype](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan AEM [component van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van een **content** component, in die zin dat *content* wordt gerenderd vanuit AEM.
 
 Laten we eens kijken hoe de component werkt.
 
@@ -223,7 +223,7 @@ Laten we de container voor lay-out verder inspecteren.
 
    De **Layout Container**-component heeft een `sling:resourceType` van `wcm/foundation/components/responsivegrid` en wordt door de SPA Editor herkend met de eigenschap `:type`, net als de componenten `Text` en `Image`.
 
-   Dezelfde mogelijkheden om de grootte van een component te wijzigen met [Lay-outmodus](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) zijn beschikbaar in de SPA Editor.
+   Dezelfde mogelijkheden om de grootte van een component te wijzigen met [Lay-outmodus](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) zijn beschikbaar in de SPA Editor.
 
 2. Ga terug naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Voeg extra **Afbeelding**-componenten toe en probeer deze opnieuw te vergroten of te verkleinen met de optie **Lay-out**:
 
@@ -251,7 +251,7 @@ Gefeliciteerd, leerde u hoe te om SPA componenten aan AEM Componenten in kaart t
 
 [Navigatie en het Verpletteren](navigation-routing.md)  - Leer hoe de veelvoudige meningen in de SPA door afbeelding aan AEM Pagina&#39;s met SPA Redacteur SDK kunnen worden gesteund. De dynamische navigatie wordt uitgevoerd gebruikend React Router en React de Componenten van de Kern.
 
-## (Bonus) Blijf configuraties aan broncontrole {#bonus-configs}
+## (Bonus) zet configuraties aan broncontrole aan {#bonus-configs}
 
 In veel gevallen, vooral aan het begin van een AEM project is het waardevol om configuraties, zoals malplaatjes en verwant inhoudsbeleid, aan broncontrole voort te zetten. Dit zorgt ervoor dat alle ontwikkelaars tegen de zelfde reeks inhoud en configuraties werken en extra consistentie tussen milieu&#39;s kunnen verzekeren. Wanneer een project een bepaald ontwikkelingsniveau heeft bereikt, kan het beheren van sjablonen worden overgedragen aan een speciale groep van energiegebruikers.
 
@@ -288,7 +288,7 @@ De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Vi
 
 ## (Bonus) Aangepaste afbeeldingscomponent maken {#bonus-image}
 
-Er is al een SPA Image-component geleverd door de React Core-componenten. Nochtans, als u extra praktijk wilt, creeer uw eigen React implementatie die aan de AEM [component van het Beeld ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) in kaart brengt. De `Image` component is een ander voorbeeld van een **content** component.
+Er is al een SPA Image-component geleverd door de React Core-componenten. Nochtans, als u extra praktijk wilt, creeer uw eigen React implementatie die aan de AEM [component van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) in kaart brengt. De `Image` component is een ander voorbeeld van een **content** component.
 
 ### Inspect the JSON
 
