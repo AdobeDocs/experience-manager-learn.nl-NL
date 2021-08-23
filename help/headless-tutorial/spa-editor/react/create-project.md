@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Project {#spa-editor-project} maken
+# Project maken {#spa-editor-project}
 
 Leer hoe u een Adobe Experience Manager (AEM) Maven-project genereert als beginpunt voor een React-toepassing die is geïntegreerd met de AEM SPA Editor.
 
@@ -26,7 +26,7 @@ Leer hoe u een Adobe Experience Manager (AEM) Maven-project genereert als beginp
 1. Genereer een SPA Editor ingeschakeld project met behulp van het AEM Project Archetype.
 2. Implementeer het startproject naar een lokale instantie van AEM.
 
-## Wat u {#what-build} wilt maken
+## Wat u gaat maken {#what-build}
 
 In dit hoofdstuk, zal een nieuw AEM project worden geproduceerd, gebaseerd op [AEM Project Archetype](https://github.com/adobe/aem-project-archetype). Het AEM project zal met een zeer eenvoudig uitgangspunt voor React SPA worden opgestart.
 
@@ -92,7 +92,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
 
 ## Het project implementeren en bouwen
 
-Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van AEM op gebruikend Maven.
+Daarna, compileert, bouwt, en stelt de projectcode aan een lokaal geval van AEM op gebruikend Maven.
 
 1. Zorg ervoor dat een instantie van AEM lokaal wordt uitgevoerd op poort **4502**.
 1. Van de bevellijn navigeer in de `aem-guides-wknd-spa.react` projectfolder.
