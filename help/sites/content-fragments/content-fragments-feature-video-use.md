@@ -11,10 +11,10 @@ version: cloud-service
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 3%
+source-wordcount: '370'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Hier vin
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM de Modellen van de Fragmenten van de Inhoud, de gegevensschema&#39;s van de Fragmenten van de Inhoud, moeten via AEM [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) worden toegelaten, die de Modellen van het Fragment van de Inhoud om op een per configuratiebasis toelaat worden bepaald.
+AEM de Modellen van de Fragmenten van de Inhoud, de gegevensschema&#39;s van de Fragmenten van de Inhoud, moeten via AEM [[!UICONTROL Configuration Browser]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) worden toegelaten, die de Modellen van het Fragment van de Inhoud om op een per configuratiebasis toelaat worden bepaald.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
@@ -73,8 +73,8 @@ Leer over [het leveren van Inhoudsfragmenten](content-fragments-delivery-feature
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inhoudsfragmenten leveren](content-fragments-delivery-feature-video-use.md)
-* [AEM WCM Core-componenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [AEM WCM Core-inhoudsfragmentcomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [AEM WCM Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [AEM WCM Core-inhoudsfragmentcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 U kunt als volgt het pakket hieronder downloaden en installeren op een AEM 6.4+-instantie voor de uiteindelijke status van de videoreeks:
 
