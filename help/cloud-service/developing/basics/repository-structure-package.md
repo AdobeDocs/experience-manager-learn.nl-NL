@@ -4,15 +4,14 @@ description: 'Ontdek het Repository Structure-pakket van een AEM toepassing, het
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: AEM Project Archetype
+topic: Ontwikkeling
+feature: Projectarchetype AEM
 kt: 6928
 thumbnail: 330550.jpg
-translation-type: tm+mt
 source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 0%
+source-wordcount: '54'
+ht-degree: 1%
 
 ---
 
