@@ -4,15 +4,14 @@ description: Gebruikend de Desktop van Github, onderzoek hoe de veelvoudige proj
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: Developer Tools
+topic: Ontwikkeling
+feature: Gereedschappen voor ontwikkelaars
 kt: 6913
 thumbnail: 330535.jpg
-translation-type: tm+mt
 source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 0%
+source-wordcount: '66'
+ht-degree: 1%
 
 ---
 
