@@ -2,13 +2,12 @@
 title: '"Hoofdstuk 3 - de Geavanceerde onderwerpen van het caching van de Verzender"'
 description: Dit is deel 3 van een driedelige reeks naar caching in AEM. Waar de eerste twee delen zich op duidelijke http caching in de Dispatcher concentreerden en welke beperkingen er zijn. In dit deel worden enkele ideeën besproken over hoe deze beperkingen kunnen worden overwonnen.
 feature: Dispatcher
-topic: Architecture
+topic: Architectuur
 role: Architect
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6191'
+source-wordcount: '6189'
 ht-degree: 0%
 
 ---
