@@ -4,15 +4,14 @@ description: Onderzoek hoe de inhoud het publiceren in AEM als Cloud Service wer
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: Publishing
+topic: Ontwikkeling
+feature: Publiceren
 kt: 6911
 thumbnail: 330554.jpg
-translation-type: tm+mt
 source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 0%
+source-wordcount: '55'
+ht-degree: 1%
 
 ---
 
