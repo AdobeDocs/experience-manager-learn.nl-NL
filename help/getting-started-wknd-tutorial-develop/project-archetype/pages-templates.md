@@ -12,10 +12,9 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3104'
+source-wordcount: '3098'
 ht-degree: 0%
 
 ---
@@ -66,7 +65,7 @@ U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wkn
 1. Begrijp de details van Bewerkbare Malplaatjes en hoe het beleid kan worden gebruikt om korrelige controle van paginainhoud af te dwingen.
 1. Leer hoe sjablonen en pagina&#39;s zijn gekoppeld
 
-## Wat u {#what-you-will-build} wilt maken
+## Wat u gaat maken {#what-you-will-build}
 
 In dit gedeelte van de zelfstudie maakt u een nieuwe artikelpaginasjabloon die u kunt gebruiken om nieuwe artikelpagina&#39;s te maken en deze uit te lijnen met een gemeenschappelijke structuur. Het sjabloon voor artikelpagina wordt gebaseerd op ontwerpen en een UI-kit die in AdobeXD wordt gemaakt. Dit hoofdstuk is alleen gericht op het opbouwen van de structuur of het skelet van de sjabloon. Er worden geen stijlen geïmplementeerd, maar de sjabloon en pagina&#39;s zijn functioneel.
 
@@ -114,7 +113,7 @@ Stappen op hoog niveau voor de onderstaande video:
    * Stel het beleid in op **Page Main** en zorg ervoor dat **Default Element** is ingesteld op `main`. Het `main` element zal met CSS in het volgende hoofdstuk worden gericht.
 1. Voeg een **Image** component aan **main** container toe.
    * Ontgrendel de **component Image**.
-1. Voeg een **Breadcrumb**-component toe onder de **Image**-component in de hoofdcontainer.
+1. Voeg een **Breadcrumb**-component onder de **Image**-component in de hoofdcontainer toe.
    * Maak een nieuw beleid voor de **Breadcrumb**-component met de naam **Article Page - Breadcrumb**. Stel **Navigatiebeginniveau** in op **4**.
 1. Voeg een **Container** component onder de **Breadcrumb** component en binnen de **main** container toe. Dit zal als **Inhoudscontainer** voor het malplaatje dienst doen.
    * Ontgrendel de container **Content**.
@@ -160,7 +159,7 @@ Stappen op hoog niveau voor de onderstaande video:
 
 ## Koptekst en voettekst bijwerken met ervaringsfragmenten {#experience-fragments}
 
-Bij het maken van algemene inhoud, zoals een kop- of voettekst, wordt vaak gebruikgemaakt van een [Experience Fragment](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Met de functie Fragmenten van ervaring kunnen gebruikers meerdere componenten combineren om één component te maken die geschikt is voor referentie. De Fragmenten van de ervaring hebben het voordeel om multi-site beheer en [localization](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure) te steunen.
+Bij het maken van algemene inhoud, zoals een kop- of voettekst, wordt vaak gebruikgemaakt van een [Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Met de functie Fragmenten van ervaring kunnen gebruikers meerdere componenten combineren om één component te maken die geschikt is voor referentie. De Fragmenten van de ervaring hebben het voordeel om multi-site beheer en [localization](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure) te steunen.
 
 Het AEM Projectarchetype produceerde een Kopbal en Voettekst. Werk vervolgens de Experience Fragments bij zodat deze overeenkomen met de modellen. Voer de stappen in de onderstaande video uit:
 
@@ -234,7 +233,7 @@ Stappen op hoog niveau voor de onderstaande video:
    * Stel de **Bovenliggende pagina** in op `/content/wknd/us/en/magazine`.
    * Onder **Iteminstellingen** schakelt u **Items koppelen** in en schakelt u **Datum tonen** in.
 
-## Inspect the node structure {#node-structure}
+## Inspect de nodestructuur {#node-structure}
 
 Op dit punt is de artikelpagina duidelijk niet-opgemaakt. De basisstructuur is echter aanwezig. Controleer vervolgens de knooppuntstructuur van de artikelpagina om meer inzicht te krijgen in de rol van de sjabloon, pagina en componenten.
 
@@ -262,7 +261,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
    Er staan slechts 2 HTML-scripts, `customfooterlibs.html` en `customheaderlibs.html` onder de paginacomponent. *Hoe geeft deze component de pagina weer?*
 
-   De eigenschap `sling:resourceSuperType` verwijst naar `core/wcm/components/page/v2/page`. This property allows the WKND&#39;s page component to inherit **all** of the functionaliteit of the Core Component page component. Dit is het eerste voorbeeld van iets genoemd het [Patroon van de Component van de Volmacht](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Meer informatie vindt u [hier.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html).
+   De eigenschap `sling:resourceSuperType` verwijst naar `core/wcm/components/page/v2/page`. This property allows the WKND&#39;s page component to inherit **all** of the functionaliteit of the Core Component page component. Dit is het eerste voorbeeld van iets genoemd het [Patroon van de Component van de Volmacht](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Meer informatie vindt u [hier.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
 1. Inspect een andere component binnen de componenten WKND, de `Breadcrumb` component die bij wordt gevestigd: `/apps/wknd/components/breadcrumb`. Merk op dat het zelfde `sling:resourceSuperType` bezit kan worden gevonden, maar dit keer richt het aan `core/wcm/components/breadcrumb/v2/breadcrumb`. Dit is een ander voorbeeld van het gebruiken van het de componentenpatroon van de Volmacht om een Component van de Kern te omvatten. In feite, zijn alle componenten in de WKND codebasis volmachten van AEM Componenten van de Kern (behalve onze beroemde component HelloWorld). Het is aan te raden te proberen zoveel mogelijk van de functionaliteit van Core Components te hergebruiken *voordat* aangepaste code schrijft.
 
@@ -316,7 +315,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
 1. Inspect de andere Core Component, zoals de Breadcrumb op `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Bekijk het `breadcrumb.html` manuscript om te begrijpen hoe de prijsverhoging voor de component Breadcrumb uiteindelijk wordt geproduceerd.
 
-## Configuraties opslaan naar bronbesturing {#configuration-persistence}
+## Configuraties opslaan naar bronbeheer {#configuration-persistence}
 
 In veel gevallen, vooral aan het begin van een AEM project is het waardevol om configuraties, zoals malplaatjes en verwant inhoudsbeleid, aan broncontrole voort te zetten. Dit zorgt ervoor dat alle ontwikkelaars tegen de zelfde reeks inhoud en configuraties werken en extra consistentie tussen milieu&#39;s kunnen verzekeren. Wanneer een project een bepaald ontwikkelingsniveau heeft bereikt, kan het beheren van sjablonen worden overgedragen aan een speciale groep van energiegebruikers.
 
