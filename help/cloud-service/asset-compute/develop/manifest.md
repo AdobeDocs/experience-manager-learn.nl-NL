@@ -1,7 +1,7 @@
 ---
 title: Vorm manifest.yml van een project van de Asset compute
 description: manifest.yml van het project van de Asset compute, beschrijft alle arbeiders in dit project dat moet worden opgesteld.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,12 @@ audience: developer
 doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
-topic: Integrations, Development
+topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -31,7 +30,7 @@ ht-degree: 0%
 
 Workers worden gedefinieerd als Adobe I/O Runtime-actitems onder `actions` en bestaan uit een set configuraties.
 
-Workers die andere Adobe I/O-integratie willen gebruiken, moeten de eigenschap `annotations -> require-adobe-auth` instellen op `true` omdat [de Adobe I/O-gegevens van de worker via het `params.auth`-object beschikbaar maken. ](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) Dit is doorgaans vereist wanneer de worker API&#39;s van het type Adobe I/O, zoals de Adobe Photoshop-, Lightroom- of Sensei-API&#39;s, aanroept en per worker in- en uitschakelen kan worden.
+Workers die andere Adobe I/O-integratie willen gebruiken, moeten de eigenschap `annotations -> require-adobe-auth` instellen op `true` omdat [de Adobe I/O-gegevens van de worker via het `params.auth`-object beschikbaar maken. ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) Dit is doorgaans vereist wanneer de worker API&#39;s van het type Adobe I/O, zoals de Adobe Photoshop-, Lightroom- of Sensei-API&#39;s, aanroept en per worker in- en uitschakelen kan worden.
 
 1. Open en bekijk de automatisch gegenereerde worker `manifest.yml`. Projecten die meerdere workers in de Asset compute bevatten, moeten een item definiëren voor elke worker onder de array `actions`.
 
@@ -54,7 +53,7 @@ packages:
 
 Elke worker kan de [limits](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) configureren voor de uitvoeringscontext in Adobe I/O Runtime. Deze waarden moeten zodanig worden ingesteld dat de worker een optimale grootte krijgt op basis van het volume, de snelheid en het type elementen dat de worker berekent, en het type werk dat de worker uitvoert.
 
-Raadpleeg [Richtlijnen voor het wijzigen van de grootte van de Adobe voordat u limieten instelt. ](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#sizing-workers) De arbeiders van de asset compute kunnen uit geheugen opraken wanneer het verwerken van activa, resulterend in de uitvoering van Adobe I/O Runtime die wordt gedood, zodat wordt de arbeider aangepast aangepast om alle kandidaatactiva te behandelen.
+Raadpleeg [Richtlijnen voor het wijzigen van de grootte van de Adobe voordat u limieten instelt. ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) De arbeiders van de asset compute kunnen uit geheugen opraken wanneer het verwerken van activa, resulterend in de uitvoering van Adobe I/O Runtime die wordt gedood, zodat wordt de arbeider aangepast aangepast om alle kandidaatactiva te behandelen.
 
 1. Voeg een `inputs` sectie aan de nieuwe `wknd-asset-compute` actiesingang toe. Dit staat het stemmen van de algemene prestaties van de Asset compute arbeider en middeltoewijzing toe.
 
