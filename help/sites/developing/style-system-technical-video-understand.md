@@ -1,25 +1,24 @@
 ---
 title: Begrijpen hoe u code kunt schrijven voor het systeem AEM
 description: In deze video bekijken we de anatomie van de CSS (of LESS) en JavaScript die wordt gebruikt om de component van de Titel van Adobe Experience Manage te stijlen met behulp van het Stijlsysteem, en hoe deze stijlen worden toegepast op de HTML en DOM.
-feature: Style System
+feature: Stijlsysteem
 topics: development, components, front-end-development
 audience: developer, implementer
 doc-type: technical video
 activity: understand
 version: 6.4, 6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
 
 
-# Begrijpen hoe te om voor het Systeem van de Stijl {#understanding-how-to-code-for-the-aem-style-system} te coderen
+# Begrijpen hoe u code kunt gebruiken voor het Stijlsysteem{#understanding-how-to-code-for-the-aem-style-system}
 
 In deze video bekijken we de anatomie van de CSS (of [!DNL LESS]) en JavaScript die wordt gebruikt om de component van de Titel van de Kern van het Beheer van de Stijl te creëren gebruikend het Systeem van de Stijl, evenals hoe deze stijlen op HTML en DOM worden toegepast.
 
@@ -29,7 +28,7 @@ In deze video bekijken we de anatomie van de CSS (of [!DNL LESS]) en JavaScript 
 >
 >De video veronderstelt de component van de Titel We.Retail is bijgewerkt om van [de Componenten van de Kern v2.0.0+](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases) te erven.
 
-## Begrijpen hoe u code voor het Stijlsysteem {#understanding-how-to-code-for-the-style-system}
+## Begrijpen hoe u code kunt gebruiken voor het Stijlsysteem {#understanding-how-to-code-for-the-style-system}
 
 >[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=9&learn=on)
 
@@ -152,9 +151,9 @@ jQuery(function ($) {
 });
 ```
 
-## Aanbevolen werkwijzen voor ontwikkeling {#development-best-practices}
+## Best practices voor ontwikkeling {#development-best-practices}
 
-### HTML aanbevolen procedures {#html-best-practices}
+### Tips en trucs voor HTML {#html-best-practices}
 
 * HTML (gegenereerd via HTL) moet zo structureel mogelijk semantisch zijn; onnodige groepering/nesting van elementen vermijden.
 * HTML-elementen moeten kunnen worden benaderd via CSS-klassen in BEM-stijl.
@@ -188,7 +187,7 @@ jQuery(function ($) {
 
       * Moderne afbeeldingscomponenten gebruiken vaak JavaScript om de meest geschikte afbeelding voor het gebruik van het hoofdlettergebruik (viewport) te selecteren en te laden.
 
-### Tips en trucs voor CSS {#css-best-practices}
+### Aanbevolen werkwijzen voor CSS {#css-best-practices}
 
 >[!NOTE]
 >
@@ -240,7 +239,7 @@ Voorbeeld-CSS-selectiestructuur moet als volgt zijn:
 
 In het geval van geneste componenten overschrijdt de CSS-selectierdiepte voor deze geneste componentelementen de selector op het derde niveau. Herhaal hetzelfde patroon voor de geneste component, maar het bereik wordt ingesteld door `BLOCK` van de bovenliggende component. Met andere woorden, start de geneste component `BLOCK` op het derde niveau en de geneste component `ELEMENT` op het vierde selectorniveau.
 
-### JavaScript aanbevolen procedures {#javascript-best-practices}
+### Aanbevolen werkwijzen voor JavaScript {#javascript-best-practices}
 
 De in deze sectie gedefinieerde aanbevolen procedures hebben betrekking op &#39;style-JavaScript&#39; of JavaScript dat specifiek is bedoeld om de component te manipuleren voor stilistische in plaats van functionele doeleinden.
 
