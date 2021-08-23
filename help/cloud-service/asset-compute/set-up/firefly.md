@@ -1,7 +1,7 @@
 ---
 title: Het Project van de Adobe van de opstelling brandt voor Asset compute rekbaarheid
 description: De projecten van de asset compute zijn speciaal bepaalde projecten van het Project van de Adobe Vuurwerk, en als dusdanig, vereisen toegang tot het Project van Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,12 @@ audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
-topic: Integrations, Development
+topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 De projecten van de asset compute zijn speciaal bepaalde projecten van het Project van de Adobe Vuurwerk, en als dusdanig, vereisen toegang tot het Project van Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
 
-## Adobe-project probleemloos maken en instellen in de Adobe Developer Console{#set-up}
+## Adobe-project veilig maken en instellen in Adobe Developer Console{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
 
@@ -53,7 +52,7 @@ _Doorklikken voor probleemloos instellen van Adobe-project (geen audio)_
    + __Adobe Services > I/O-__ gebeurtenissen en tik op  __geconfigureerde API opslaan__
    + __Adobe Services > I/O Management__ API en tik op  __geconfigureerde API opslaan__
 
-## Access the private.key{#private-key}
+## De toets private.key openen{#private-key}
 
 Bij het instellen van de [Asset compute-API-integratie](#set-up) is een nieuw sleutelpaar gegenereerd en is automatisch een `config.zip`-bestand gedownload. Deze `config.zip` bevat het gegenereerde openbare certificaat en het overeenkomende `private.key`-bestand.
 
