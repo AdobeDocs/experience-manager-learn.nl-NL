@@ -1,7 +1,7 @@
 ---
 title: Problemen met uitbreidbaarheid van Asset compute voor AEM Assets oplossen
 description: Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de resoluties, die kunnen optreden bij het ontwikkelen en implementeren van aangepaste Asset compute-workers voor AEM Assets.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 topics: renditions, metadata, development
 version: cloud-service
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integrations, Development
+topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1244'
 ht-degree: 0%
 
 ---
@@ -27,7 +26,7 @@ Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de
 
 ## Ontwikkelen{#develop}
 
-### Vertoning wordt gedeeltelijk getekend/beschadigd{#rendition-returned-partially-drawn-or-corrupt} geretourneerd
+### Vertoning wordt gedeeltelijk getekend/beschadigd geretourneerd{#rendition-returned-partially-drawn-or-corrupt}
 
 + __Fout__: Uitvoering wordt onvolledig gerenderd (als een afbeelding beschadigd is) of kan niet worden geopend.
 
@@ -36,11 +35,11 @@ Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de
 + __Oorzaak__: De  `renditionCallback` functie van de worker wordt afgesloten voordat de uitvoering volledig kan worden uitgevoerd  `rendition.path`.
 + __Resolutie__: Controleer de code van de douanearbeider en zorg ervoor alle asynchrone vraag synchroon wordt gemaakt gebruikend  `await`.
 
-## Development Tool{#development-tool}
+## Ontwikkelingsinstrument{#development-tool}
 
-### Het bestand Console.json ontbreekt in het Asset compute-project{#missing-console-json}
+### Het bestand Console.json ontbreekt in het project Asset compute{#missing-console-json}
 
-+ __Fout:__ fout: Vereiste bestanden ontbreken bij validatie (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) bij async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __Fout:__ fout: Vereiste bestanden ontbreken bij validatie (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.:XX:jsYY) bij async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.:XX:jsYY)
 + __Oorzaak:__ het  `console.json` bestand ontbreekt in de hoofdmap van het Asset compute-project
 + __Resolutie:__ een nieuw  `console.json` formulier downloaden voor uw Adobe I/O-project
    1. In console.adobe.io, open het project van Adobe I/O het project van de Asset compute wordt gevormd om te gebruiken
@@ -59,7 +58,7 @@ Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de
 + __Oorzaak:__ Een  `memorySize` limiet voor de worker in de werkruimte  `manifest.yml` is ingesteld onder de minimale toegestane drempel, zoals aangegeven door het foutbericht in bytes.
 + __Resolutie:__  herzie de  `memorySize` grenzen in de  `manifest.yml` en zorg ervoor zij allen groot zijn dan de minimaal toegestane drempel.
 
-### Development Tool kan niet worden gestart omdat private.key{#missing-private-key} ontbreekt
+### Development Tool kan niet worden gestart omdat private.key ontbreekt{#missing-private-key}
 
 + __Fout:__ Lokale Dev ServerError: Vereiste bestanden ontbreken bij validatePrivateKeyFile.... (via standaard uit de opdracht `aio app run`)
 + __Oorzaak:__ de  `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` waarde in  `.env` het bestand verwijst niet naar  `private.key` of  `private.key` is door de huidige gebruiker niet leesbaar.
@@ -87,7 +86,7 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
 
    ![Microsoft Azure Blob-opslag](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
-## Test{#test}
+## Testen{#test}
 
 ### Geen uitvoering gegenereerd tijdens de uitvoering van de test{#test-no-rendition-generated}
 
@@ -97,7 +96,7 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
 
    ![Problemen oplossen - Geen uitvoering gegenereerd](./assets/troubleshooting/test__no-rendition-generated.png)
 
-### Test genereert een onjuiste vertoning waardoor de test mislukt{#tests-generates-incorrect-rendition}
+### Test genereert onjuiste uitvoering, waardoor de test mislukt{#tests-generates-incorrect-rendition}
 
 + __Fout:__ fout: Vertoning &#39;rendition.xxx&#39; is niet zoals verwacht.
 + __Oorzaak:__ de worker voert een uitvoering uit die anders is dan de uitvoering die in het testgeval is  `rendition.<extension>` opgegeven.
@@ -108,7 +107,7 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
 
 ## Foutopsporing
 
-### Foutopsporing voegt geen{#debugger-does-not-attach} toe
+### Foutopsporing wordt niet gekoppeld{#debugger-does-not-attach}
 
 + __Fout__: Fout bij verwerken start: Fout: Kan geen verbinding maken met foutopsporingsdoel op..
 + __Oorzaak__: Docker Desktop wordt niet uitgevoerd op het lokale systeem. Verifieer dit door de Console van de Foutopsporing van de Code van VS (Mening > Debug Console) te herzien, bevestigend deze fout wordt gemeld.
@@ -123,12 +122,12 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
 + __Oorzaak:__ Foutopsporing van de Code VS werd tegengehouden/losgemaakt.
 + __Resolutie:__ herstart foutopsporing van VS-code en controleer of deze is gekoppeld met de VS-console voor foutopsporing van code (Weergave > Foutopsporingsconsole)
 
-#### Foutopsporing van VS-code gekoppeld nadat uitvoering van worker is gestart{#vs-code-debugger-attached-after-worker-execution-began}
+#### Foutopsporing voor VS-code gekoppeld nadat uitvoering van worker is gestart{#vs-code-debugger-attached-after-worker-execution-began}
 
 + __Oorzaak:__ Foutopsporing van de Code VS verbond voorafgaand aan het Tikken van het Hulpmiddel van de Ontwikkeling van de  ____ Lopende niet.
 + __Resolutie:__ zorg ervoor debugger door de Foutopsporingsconsole van de Code van VS (Mening > Debug Console) te herzien heeft vastgemaakt, en dan de Asset compute worker van het Hulpmiddel van de Ontwikkeling opnieuw in werking te stellen.
 
-### Worker-tijden uit tijdens foutopsporing{#worker-times-out-while-debugging}
+### Worker-time-out tijdens foutopsporing{#worker-times-out-while-debugging}
 
 + __Fout__: Foutopsporingsconsole rapporteert &quot;Action will timeout in -XXX milliseconds&quot; of de voorvertoning van de  [Asset compute Development Tool ](./develop/development-tool.md) voor onbepaalde tijd draait of
 + __Oorzaak__: De time-out van de worker, zoals gedefinieerd in het bestand  [manifest.](./develop/manifest.md) ymlis, is tijdens foutopsporing overschreden.
