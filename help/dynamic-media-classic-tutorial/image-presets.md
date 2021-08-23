@@ -10,9 +10,9 @@ activity: use
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,8 @@ Een voorinstelling voor afbeelding heeft een dollarteken ($) aan weerszijden van
 >
 >Maak één voorinstelling voor afbeeldingen per unieke afbeeldingsgrootte op uw site. Als u bijvoorbeeld een afbeelding van 350 x 350 nodig hebt voor de pagina met productdetails, een afbeelding van 120 x 120 voor de pagina&#39;s Bladeren/Zoeken en een afbeelding van 90 x 90 voor een cross-sell/aanbevolen item, hebt u drie voorinstellingen voor afbeeldingen nodig, of het nu gaat om 500 of 500.000 afbeeldingen.
 
-- Meer informatie over [Voorinstellingen voor afbeeldingen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Leer hoe u [Een voorinstelling voor afbeeldingen maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- Meer informatie over [Voorinstellingen voor afbeeldingen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Leer hoe u [Een voorinstelling voor afbeeldingen maken](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Voorinstellingen voor afbeeldingen en Verscherpen
 
@@ -63,7 +63,7 @@ In de volgende afbeelding ziet u drie verscherpingsniveaus. Van rechts naar link
 
 Met Dynamic Media Classic kunt u drie soorten verscherpen: Eenvoudig verscherpen, Nieuwe pixels berekenen in modus en Onscherp masker.
 
-Meer informatie over [Klassieke verscherpingsopties van Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Meer informatie over [Klassieke verscherpingsopties van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Aanvullende bronnen
 
