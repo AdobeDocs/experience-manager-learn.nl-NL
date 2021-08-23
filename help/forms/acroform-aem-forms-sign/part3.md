@@ -2,16 +2,15 @@
 title: Transformaties met AEM Forms
 seo-title: Adaptieve formuliergegevens samenvoegen met Acrobat
 description: Deel 3 van een zelfstudie waarin Acroforms worden geïntegreerd met AEM Forms. Test de workflow en het adaptieve formulier op uw systeem.
-feature: adaptive-forms
+feature: adaptieve vormen
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4
-translation-type: tm+mt
 source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '237'
 ht-degree: 1%
 
 ---
