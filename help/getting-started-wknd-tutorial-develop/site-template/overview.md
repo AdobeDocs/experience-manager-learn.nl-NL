@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Aan de slag met AEM Sites - Sjabloon {#site-template}
+# Aan de slag met AEM Sites - Sjabloon voor site {#site-template}
 
 Leer hoe u met behulp van een vooraf gedefinieerde Sjabloon voor sites uw eerste site in Adobe Experience Manager maakt met een low-code aanpak. Gebruik componenten en sjablonen uit de keuzelijst om een site snel in bedrijf te stellen. Gebruik een door Adobe XD gestuurde ontwerpworkflow om merkspecifieke stijlen en aanpassingen toe te passen met alleen CSS en JavaScript. Aanbevolen voor nieuwe projecten en ontwikkelaars.
 
