@@ -4,14 +4,13 @@ description: Tips en trucs voor het migreren van de AEM Dispatcher-configuratie 
 role: Architect, Developer
 level: Beginner
 type: Tutorial
-topic: Development, Migration
+topic: Ontwikkeling, migratie
 feature: Dispatcher
 kt: 6931
 thumbnail: 330556.jpg
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '76'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
