@@ -1,29 +1,23 @@
 ---
 title: Bekijk de GraphQL API's - Aan de slag met AEM headless - GraphQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Ontdek AEM GraphQL APIs gebruikend ingebouwde IDE GrapiQL. Leer hoe AEM automatisch een GrafiekQL-schema genereert dat op een model van het Fragment van de Inhoud wordt gebaseerd. Experimenteer het construeren van basisvragen gebruikend de syntaxis GraphQL.
-sub-product: elementen
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
-feature: Inhoudsfragmenten, GraphQL API's
+feature: Inhoudsfragmenten, GraphQL API
 topic: Koploos, inhoudsbeheer
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
 
 
-# GraphQL API&#39;s {#explore-graphql-apis} verkennen
+# GraphQL API&#39;s verkennen {#explore-graphql-apis}
 
 De GraphQL API van AEM verstrekt een krachtige vraagtaal om gegevens van de Fragmenten van de Inhoud aan stroomafwaartse toepassingen bloot te stellen. De modellen van het Fragment van de inhoud bepalen het gegevensschema dat door de Fragmenten van de Inhoud wordt gebruikt. Wanneer een model van het Fragment van de Inhoud wordt gecreeerd of bijgewerkt, wordt het schema vertaald en toegevoegd aan de &quot;grafiek&quot;die omhoog GraphQL API maakt.
 
@@ -41,7 +35,7 @@ Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de stappen die wo
 * Leer hoe u een variatie van een inhoudsfragment kunt opvragen.
 * Leer hoe u verbinding maakt met een query voor meerdere modellen van inhoudsfragmenten
 
-## Het gereedschap GraphiQL {#install-graphiql} installeren
+## Het gereedschap GraphiQL installeren {#install-graphiql}
 
 GrahiQL winde is een ontwikkelingshulpmiddel en nodig slechts op laag-vlakke milieu&#39;s zoals een ontwikkeling of lokale instantie. Daarom is het niet opgenomen in het AEM-project, maar als een afzonderlijk pakket dat op ad-hocbasis kan worden geïnstalleerd.
 
@@ -58,7 +52,7 @@ GrahiQL winde is een ontwikkelingshulpmiddel en nodig slechts op laag-vlakke mil
 
    ![GraphiQL-pakket installeren](assets/explore-graphql-api/install-graphiql-package.png)
 
-## Vraag een lijst van Inhoudsfragmenten {#query-list-cf}
+## Een query uitvoeren op een lijst met inhoudsfragmenten {#query-list-cf}
 
 Een algemene vereiste zal zijn om voor veelvoudige Fragments van de Inhoud te vragen.
 
@@ -190,7 +184,7 @@ Daarna, kijken hoe het mogelijk is om de resultaten aan een ondergroep van Inhou
 
 Er zijn vele andere opties voor het filtreren en het creëren van complexe vragen, hierboven zijn slechts een paar voorbeelden.
 
-## Vraag één enkel inhoudsfragment {#query-single-cf}
+## Een query uitvoeren op één inhoudsfragment {#query-single-cf}
 
 Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragment. Inhoud in AEM wordt hiërarchisch opgeslagen en de unieke id voor een fragment is gebaseerd op het pad van het fragment. Als het doel is om gegevens over één enkel fragment terug te keren, heeft het de voorkeur om de weg te gebruiken en het model direct te vragen. Als u deze syntaxis gebruikt, is de complexiteit van de query erg laag en wordt het resultaat sneller.
 
