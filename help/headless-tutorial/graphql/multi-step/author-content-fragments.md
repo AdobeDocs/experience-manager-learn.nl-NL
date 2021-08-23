@@ -1,29 +1,23 @@
 ---
 title: Inhoudsfragmenten ontwerpen - Aan de slag met AEM zonder kop - GraphQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Maak en bewerk een nieuw inhoudsfragment op basis van een inhoudsfragmentmodel. Leer hoe u variaties van inhoudsfragmenten maakt.
-sub-product: elementen
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
-feature: Inhoudsfragmenten, GraphQL API's
+feature: Inhoudsfragmenten, GraphQL API
 topic: Koploos, inhoudsbeheer
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 
-# Inhoudsfragment {#authoring-content-fragments} ontwerpen
+# Inhoudsfragment ontwerpen {#authoring-content-fragments}
 
 In dit hoofdstuk maakt en bewerkt u een nieuw inhoudsfragment op basis van het [net gedefinieerde Contribute-inhoudsfragmentmodel](./content-fragment-models.md). U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
 
