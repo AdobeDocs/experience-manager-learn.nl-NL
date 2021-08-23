@@ -7,7 +7,7 @@ feature: Ervaringsfragmenten
 topic: Personalisatie
 role: Developer
 level: Intermediate
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 In deze sectie zullen we bespreken hoe we Adobe Experience Manager voor verschillende scenario&#39;s kunnen instellen met Adobe Target. Gebaseerd op uw scenario en organisatorische vereisten.
 
 * **Voeg Adobe Target JavaScript-bibliotheek toe (vereist voor alle scenario&#39;s)**
-Voor sites die worden gehost op AEM, kunt u doelbibliotheken aan uw site toevoegen met de opdracht  [Starten](https://experienceleague.adobe.com/docs/launch/using/home.html). De lancering verstrekt een eenvoudige manier om alle markeringen noodzakelijk om relevante klantenervaringen op te stellen en te beheren.
+Voor sites die worden gehost op AEM, kunt u doelbibliotheken aan uw site toevoegen met de opdracht  [Starten](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). De lancering verstrekt een eenvoudige manier om alle markeringen noodzakelijk om relevante klantenervaringen op te stellen en te beheren.
 * **Voeg de Adobe Target-Cloud Services toe (vereist voor het scenario Experience Fragments)**
 Voor AEM klanten die de aanbiedingen van Experience Fragment willen gebruiken om een activiteit in Adobe Target te maken, moet u Adobe Target integreren met AEM met behulp van de Legacy-Cloud Services. Deze integratie is vereist om Experience Fragments van AEM naar Target te duwen als HTML/JSON-aanbiedingen en om de aanbiedingen gelijk te houden met AEM. 
 *Deze integratie is vereist voor de uitvoering van scenario 1.*
@@ -51,7 +51,7 @@ Voor AEM klanten die de aanbiedingen van Experience Fragment willen gebruiken om
 >
 > De klant moet van [Adobe steun](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) voorzien van Experience Platform Launch en Adobe I/O of bereik aan uw systeembeheerder
 
-### AEM{#set-up-aem} instellen
+### AEM instellen{#set-up-aem}
 
 AEM auteur- en publicatieexemplaar is nodig om deze zelfstudie te voltooien. De auteurinstantie loopt op `http://localhost:4502` en publiceert instantie lopend op `http://localhost:4503`. Zie voor meer informatie: [Stel een lokale AEM ontwikkelomgeving in](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/local-aem-dev-environment-article-setup.html).
 
