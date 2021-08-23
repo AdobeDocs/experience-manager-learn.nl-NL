@@ -1,23 +1,14 @@
 ---
 title: Formuliergegevensmodel maken zonder gegevensbron
-seo-title: Formuliergegevensmodel maken zonder gegevensbron
 description: Vanaf AEM Forms 6.4 kunnen we nu het formuliergegevensmodel (FDM) definiëren zonder het aan een gegevensbron te koppelen. De volgende video doorloopt de stappen om FDM zonder enige gegevensbron tot stand te brengen.
-seo-description: Vanaf AEM Forms 6.4 kunnen we nu het formuliergegevensmodel (FDM) definiëren zonder het aan een gegevensbron te koppelen. De volgende video doorloopt de stappen om FDM zonder enige gegevensbron tot stand te brengen.
 feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.4,6.5
-uuid: eeb6165c-5465-4692-a3a9-8ef10780678d
-discoiquuid: 54fdce05-486b-4fb5-aed4-8552fe2040fd
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '138'
 ht-degree: 1%
 
 ---
