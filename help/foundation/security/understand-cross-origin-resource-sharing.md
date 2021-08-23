@@ -12,7 +12,7 @@ role: Developer
 level: Intermediate
 source-git-commit: 3418cd424cc82fece9e7d13de72c0d8dde346d7c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ Logboekregistratie is beschikbaar onder `com.adobe.granite.cors`:
 
 ### Tips:
 
-* Maak handmatig XHR-verzoeken opnieuw met krullen, maar zorg dat u alle kopteksten en details kopieert, aangezien elk verzoek een verschil kan maken. sommige browserconsoles staan toe dat de krullopdracht wordt gekopieerd
+* Maak handmatig XHR-verzoeken opnieuw met krullen, maar zorg dat u alle kopteksten en details kopieert, omdat elk verzoek een verschil kan maken. sommige browserconsoles staan toe dat de krullopdracht wordt gekopieerd
 * Verifieer of het verzoek door de manager CORS en niet door de authentificatie, het symbolische filter CSRF, verzenders filters, of andere veiligheidslagen werd ontkend
    * Als de manager van CORS met 200 antwoordt, maar `Access-Control-Allow-Origin` kopbal in de reactie ontbreekt, herzie de logboeken voor ontkenning onder [!DNL DEBUG] in `com.adobe.granite.cors`
 * Als de verzender caching van [!DNL CORS] verzoeken wordt toegelaten
