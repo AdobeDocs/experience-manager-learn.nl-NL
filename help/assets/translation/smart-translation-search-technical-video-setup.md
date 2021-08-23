@@ -2,14 +2,13 @@
 title: Smart Translation Search instellen met AEM Assets
 description: Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse inhoud op te lossen. Om AEM in te stellen voor Smart Translation Search, moet de Apache OSGi-bundel voor zoekmachines voor zoekmachines worden geïnstalleerd en geconfigureerd, evenals de relevante gratis en open-source Apache Joshua-taalpakketten die de vertaalregels bevatten.
 version: 6.3, 6.4, 6.5
-feature: Search
-topic: Content Management
+feature: Zoeken
+topic: Inhoudsbeheer
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -97,7 +96,7 @@ Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse
    * Als AEM geen nieuw begin vereist, dan moeten de relevante Apache Jackrabbit Oak Machine Translation Fulltext Query Terms Provider OSGi configuratie(s) die tot het bijgewerkte taalpak(s) behoren opnieuw worden opgeslagen zodat AEM de bijgewerkte bestanden verwerkt.
 
 
-## damAssetLucene Index {#updating-damassetlucene-index} bijwerken
+## damAssetLucene Index bijwerken {#updating-damassetlucene-index}
 
 Als u wilt dat [AEM Slimme tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) wordt beïnvloed door AEM slimme omzetting, moet AEM `/oak   :index  /damAssetLucene` index worden bijgewerkt om de predictedTags (de systeemnaam voor &quot;Slimme tags&quot;) te markeren als onderdeel van de samengestelde Lucene-index van het element.
 
