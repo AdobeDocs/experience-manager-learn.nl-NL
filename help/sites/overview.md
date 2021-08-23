@@ -4,11 +4,10 @@ seo-title: AEM Sites Tutorials
 description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Manager Sites. '
 seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites
 sub-product: sites, content-services
-topic: Content Management
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+topic: Inhoudsbeheer
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '357'
 ht-degree: 1%
 
 ---
@@ -45,11 +44,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 <table>
 <tr>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
       <img alt="Aan de slag met AEM Sites - WKND-zelfstudie" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
     <strong>Aan de slag met AEM Sites</strong>
     </a>
     </div>
@@ -58,11 +57,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <img alt="Aan de slag met AEM headless" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <strong>Aan de slag met AEM headless</strong>
     </a>
     </div>
@@ -71,11 +70,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
     </p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
       <img alt="Aan de slag met AEM SPA Editor" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
         <strong>Aan de slag met AEM SPA Editor</strong>
       </a>
     </div>
@@ -88,7 +87,7 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 
 ## Aanvullende bronnen
 
-* [Experience League - Verken AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Sites Authoring Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [AEM Sites Developing Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [AEM Sites-beheerdocumentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
