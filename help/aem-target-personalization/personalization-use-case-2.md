@@ -3,14 +3,13 @@ title: Personalisatie met Adobe Target
 seo-title: Personalisatie met Adobe Target
 description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Target.
 seo-description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Target.
-feature: Experience Fragments
-topic: Personalization
+feature: Ervaringsfragmenten
+topic: Personalisatie
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '609'
 ht-degree: 1%
 
 ---
@@ -60,7 +59,7 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
    2. Klik op **Activiteit maken** en selecteer het type activiteit als **A/B Test**
 
       ![Adobe Target - Activiteiten maken](assets/personalization-use-case-2/create-ab-activity.png)
-   3. Selecteer het **Web** kanaal en kies **Visual Experience Composer**.
+   3. Selecteer het kanaal **Web** en kies **Visual Experience Composer**.
    4. Voer de **Activiteit-URL** in en klik **Volgende** om de Visual Experience Composer te openen.
       ![Adobe Target - Activiteiten maken](assets/personalization-use-case-2/create-activity-ab-name.png)
    5. Als u **Visual Experience Composer** wilt laden, schakelt u **Onveilige scripts laden** op uw browser toestaan in en laadt u de pagina opnieuw.
