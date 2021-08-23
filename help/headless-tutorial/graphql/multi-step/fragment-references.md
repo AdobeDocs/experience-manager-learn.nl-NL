@@ -1,23 +1,17 @@
 ---
 title: Geavanceerde gegevensmodellen met fragmentverwijzingen - Aan de slag met AEM zonder kop - GraphQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u de functie Fragmentverwijzing gebruikt voor geavanceerde gegevensmodellering en hoe u een relatie tussen twee verschillende inhoudsfragmenten maakt. Leer hoe te om een vraag te wijzigen GraphQL om gebied van een referenced model te omvatten.
-sub-product: elementen
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
-feature: Inhoudsfragmenten, GraphQL API's
+feature: Inhoudsfragmenten, GraphQL API
 topic: Koploos, inhoudsbeheer
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
