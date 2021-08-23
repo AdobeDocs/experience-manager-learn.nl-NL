@@ -2,25 +2,24 @@
 title: Adobe IMS-verificatie begrijpen met AEM op Adobe Managed Services
 description: Adobe Experience Manager introduceert ondersteuning voor Admin Consoles voor AEM instanties en op Adobe IMS (Identity Management System) gebaseerde verificatie voor AEM op Managed Services.   Dankzij deze integratie kunnen AEM Managed Services-klanten alle Experience Cloud-gebruikers beheren in één geïntegreerde webconsole. Gebruikers en groepen kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat centraal beheerde toegang tot de specifieke AEM-instanties wordt verleend.
 version: 6.4, 6.5
-feature: Users and Groups
+feature: Gebruiker en groepen
 topics: authentication, security
 activity: understand
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 kt: 781
-topic: Architecture
+topic: Architectuur
 role: Architect
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
 
-# Adobe IMS-verificatie begrijpen met AEM op door Adobe beheerde services{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
+# Adobe IMS-verificatie begrijpen met AEM op Adobe Managed Services{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
 
 Adobe Experience Manager introduceert ondersteuning voor Admin Consoles voor AEM instanties en op Adobe IMS (Identity Management System) gebaseerde verificatie voor AEM op Managed Services.   Dankzij deze integratie kunnen AEM Managed Services-klanten alle Experience Cloud-gebruikers beheren in één geïntegreerde webconsole. Gebruikers en groepen kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat centraal beheerde toegang tot de specifieke AEM-instanties wordt verleend.
 
@@ -35,7 +34,7 @@ Adobe Experience Manager introduceert ondersteuning voor Admin Consoles voor AEM
 
 ** Deze functie wordt ondersteund voor AEM 6.4 SP3 en hoger voor klanten van Adobe Managed Services.*
 
-## Aanbevolen werkwijzen {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 ### Machtigingen toepassen in Admin Console
 
