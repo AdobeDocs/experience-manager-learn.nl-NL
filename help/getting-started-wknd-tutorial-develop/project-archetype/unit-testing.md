@@ -11,16 +11,15 @@ level: Beginner
 kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3013'
 ht-degree: 0%
 
 ---
 
 
-# Eenheidstest {#unit-testing}
+# Eenheid testen {#unit-testing}
 
 Deze zelfstudie behandelt de implementatie van een eenheidstest die het gedrag van het Sling Model van de component Byline bevestigt, dat in [Aangepaste Component](./custom-component.md) zelfstudie wordt gecreeerd.
 
@@ -79,11 +78,11 @@ We gebruiken AEM best practices en gebruiken:
 
 ## Unit Testing and Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Managerintegreert de uitvoering van eenheidstests en de  [code-dekking in de ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) rapportage in de CI/CD-pijpleiding om de beste praktijk van eenheidstests AEM code aan te moedigen en te bevorderen.
+[Adobe Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Managerintegreert de uitvoering van eenheidstests en de  [code-dekking in de ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) rapportage in de CI/CD-pijpleiding om de beste praktijk van eenheidstests AEM code aan te moedigen en te bevorderen.
 
 Hoewel code voor eenheidstests een goede praktijk is voor elke codebasis, is het bij het gebruik van Cloud Manager belangrijk om te profiteren van de mogelijkheden voor het testen en rapporteren van de codekwaliteit door eenheidstests op te geven voor Cloud Manager om te worden uitgevoerd.
 
-## Inspect de test Geweven gebiedsdelen {#inspect-the-test-maven-dependencies}
+## Inspect de test Geweven afhankelijkheden {#inspect-the-test-maven-dependencies}
 
 De eerste stap is Geweven gebiedsdelen te inspecteren om het schrijven en het runnen van de tests te steunen. Er zijn vier vereiste afhankelijkheden:
 
@@ -215,7 +214,7 @@ Eenheidstests wijzen doorgaans 1-op-1 toe met Java-klassen. In dit hoofdstuk, zu
 
 
 
-## BylineImplTest.java {#reviewing-bylineimpltest-java} reviseren
+## BylineImplTest.java evalueren {#reviewing-bylineimpltest-java}
 
 Op dit punt is het JUnit-testbestand een lege Java-klasse. Werk het bestand bij met de volgende code:
 
@@ -278,7 +277,7 @@ Zoals verwacht, mislukken alle tests, omdat ze nog niet zijn uitgevoerd.
 
    *Klik met de rechtermuisknop op BylineImplTests.java > Uitvoeren*
 
-## BylineImpl.java controleren {#reviewing-bylineimpl-java}
+## BylineImpl.java evalueren {#reviewing-bylineimpl-java}
 
 Bij het schrijven van eenheidstests zijn er twee primaire benaderingen:
 
@@ -289,7 +288,7 @@ In deze zelfstudie wordt de laatste benadering gebruikt (aangezien we al een wer
 
 TDD in de context van AEM vereist een niveau van deskundigheid en kan het best worden aangenomen door AEM ontwikkelaars die deskundig zijn in AEM ontwikkeling en eenheidstests van AEM code.
 
-## AEM testcontext instellen {#setting-up-aem-test-context}
+## AEM testcontext instellen  {#setting-up-aem-test-context}
 
 De meeste code die voor AEM wordt geschreven, is gebaseerd op API&#39;s van het type JCR, Sling of AEM. Deze API&#39;s vereisen dat de context van een actieve AEM correct wordt uitgevoerd.
 
@@ -355,7 +354,7 @@ Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM 
 
    Nu met het bestaan van **BylineImplTest.json**, wanneer `ctx.json("/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.json", "/content")` wordt uitgevoerd, worden de modelmiddeldefinities geladen in de context bij de weg **/content.**
 
-## getName() {#testing-get-name} testen
+## getName() testen {#testing-get-name}
 
 Nu wij een basismodelcontextopstelling hebben, schrijven wij onze eerste test voor **getName van BylineImpl ()**. Deze test moet ervoor zorgen dat de methode **getName()** de juiste geschreven naam retourneert die is opgeslagen bij de eigenschap &quot;**name&quot;** van de bron.
 
@@ -703,7 +702,7 @@ Met deze controle konden we het testen overslaan als `getName()`, `getOccupation
 
 ![Alle tests slagen](./assets/unit-testing/all-tests-pass.png)
 
-## Eenheidstests uitvoeren als onderdeel van de build {#running-unit-tests-as-part-of-the-build}
+## Tests van de eenheid als onderdeel van de constructie {#running-unit-tests-as-part-of-the-build}
 
 Eenheidstests worden uitgevoerd om te slagen als onderdeel van de gefabriceerde build. Dit zorgt ervoor dat alle tests met succes overgaan alvorens een toepassing wordt opgesteld. Het uitvoeren van Gemaakte doelstellingen zoals pakket of installeert roept automatisch en vereist de overgaan van alle eenheidstests in het project.
 
@@ -721,6 +720,6 @@ Op dezelfde manier, als wij een testmethode veranderen om te ontbreken, ontbreek
 
 ![mvn-pakket mislukt](assets/unit-testing/mvn-package-fail.png)
 
-## Controleer de code {#review-the-code}
+## De code controleren {#review-the-code}
 
 Bekijk de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de schakelaar van de Git `tutorial/unit-testing-solution` op.
