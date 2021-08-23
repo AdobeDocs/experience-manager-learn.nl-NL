@@ -2,22 +2,21 @@
 title: Metagegevens importeren en exporteren in AEM Assets gebruiken
 description: Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Experience Manager Assets kunt gebruiken. Met de import- en exportmogelijkheden kunnen auteurs van inhoud de metagegevens van updates voor bestaande elementen bulksgewijs verzenden.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Content Management
-feature: Metadata
+topic: Inhoudsbeheer
+feature: Metagegevens
 role: Admin
 level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '264'
 ht-degree: 2%
 
 ---
 
 
-# Metagegevens importeren en exporteren gebruiken in AEM Assets {#metadata-import-and-export}
+# Metagegevens importeren en exporteren in AEM Assets gebruiken {#metadata-import-and-export}
 
 Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Experience Manager Assets kunt gebruiken. Met de import- en exportmogelijkheden kunnen auteurs van inhoud de metagegevens van updates voor bestaande elementen bulksgewijs verzenden.
 
@@ -54,7 +53,7 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
    * Incorrect: `Dc:Title {{String}}`
 
 * Type eigenschap is niet hoofdlettergevoelig
-* Alle geldige [JCR-eigenschapstypen](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden ondersteund
+* Alle geldige [JCR-eigenschapstypen](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden ondersteund
 
 * Opmaak eigenschap van meerdere waarden - `<metadata property name> {{<property type : MULTI }}`
 
