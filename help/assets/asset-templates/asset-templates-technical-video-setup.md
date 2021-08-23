@@ -2,13 +2,12 @@
 title: Asset Templates instellen met AEM Assets en InDesign Server
 description: Met Asset Templates kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van marketingbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel eenvoudiger met Asset Templates wanneer deze zijn geïntegreerd met de InDesign-server. De configuratie van de server van InDesign met AEM wordt behandeld in deze sectie.
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Inhoudsbeheer
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -24,7 +23,7 @@ Met Asset Templates kunnen marketers digitale middelen maken, beheren en leveren
 >
 >AEM **moet** worden aangesloten op een actieve InDesign-server wanneer de INDD-sjabloon wordt geüpload. Voor een deel van de eerste verwerking in het INDD-bestand is een InDesign-server vereist.
 
-## Proefversie van InDesign Server downloaden {#download-indesign-server-trial}
+## InDesign Server-proefversie downloaden {#download-indesign-server-trial}
 
 Download [InDesign Server proefdownload Website](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
 
