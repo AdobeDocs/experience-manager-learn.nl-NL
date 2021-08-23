@@ -14,9 +14,9 @@ thumbnail: 32152.jpg
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
@@ -49,4 +49,4 @@ De functie Paginaverschil kan ook worden gebruikt om het verschil tussen blauwdr
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie pagina Diff](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [Documentatie pagina Diff](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)
