@@ -4,26 +4,25 @@ seo-title: Aangepaste assettypen aanbieden in AEM Forms
 description: Deel 2 van Aangepaste assettypen in AEM Forms
 seo-description: Deel 2 van Aangepaste assettypen in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
-feature: Adaptive Forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
-# Aangepaste elementtypen weergeven in AEM Forms {#listing-custom-asset-types-in-aem-forms}
+# Aangepaste assettypen aanbieden in AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
 ## Aangepaste sjablonen maken {#creating-custom-template}
 
@@ -79,7 +78,7 @@ De volgende code geeft een overzicht van de verschillende typen elementen die de
 >
 >Als u Adaptief Forms in deze sjabloon wilt weergeven, maakt u een nieuw div-element en stelt u het kenmerk voor het gegevenstype in op &quot;hulplijn&quot;. U kunt de div kopiëren en plakken waarvan gegevenstype=&quot;printForm en het onlangs gekopieerde div-gegevenstype instellen op &quot;hulplijn&quot;
 
-## Zoek- en lascomponent {#configure-search-and-lister-component} configureren
+## De component Search en Lister configureren {#configure-search-and-lister-component}
 
 Zodra wij het douanemalplaatje hebben bepaald, moeten wij dit douanemalplaatje met de component &quot;van het Onderzoek en van de Registratie&quot;associëren. Wijs de browser [aan deze URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
