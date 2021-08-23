@@ -11,7 +11,6 @@ role: Developer
 level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
-translation-type: tm+mt
 source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '767'
@@ -38,7 +37,7 @@ Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de stappen in het
 1. Begrijp de details van de Malplaatjes van de Pagina en hoe het beleid kan worden gebruikt om korrelige controle van paginainhoud af te dwingen.
 1. Leer hoe sjablonen en pagina&#39;s zijn gekoppeld.
 
-## Wat u {#what-you-will-build} wilt maken
+## Wat u gaat maken {#what-you-will-build}
 
 In dit gedeelte van de zelfstudie maakt u een nieuwe sjabloon voor de artikelpagina van tijdschriften waarmee u nieuwe artikelen voor tijdschriften kunt maken en uitlijnt op een algemene structuur. De sjabloon is gebaseerd op ontwerpen en een UI-kit die in AdobeXD wordt gemaakt. Dit hoofdstuk is alleen gericht op het opbouwen van de structuur of het skelet van de sjabloon. Er worden geen stijlen geïmplementeerd, maar de sjabloon en pagina&#39;s zijn functioneel.
 
