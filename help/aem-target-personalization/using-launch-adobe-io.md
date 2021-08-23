@@ -3,14 +3,13 @@ title: Adobe Experience Manager integreren met Adobe Target door middel van Expe
 seo-title: Adobe Experience Manager integreren met Adobe Target door middel van Experience Platform Launch en Adobe I/O
 description: Stap voor stap door hoe u Adobe Experience Manager met Adobe Target kunt integreren met behulp van Experience Platform Launch en Adobe I/O
 seo-description: Stap voor stap door hoe u Adobe Experience Manager met Adobe Target kunt integreren met behulp van Experience Platform Launch en Adobe I/O
-feature: Experience Fragments
-topic: Personalization
+feature: Ervaringsfragmenten
+topic: Personalisatie
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1098'
 ht-degree: 1%
 
 ---
@@ -40,7 +39,7 @@ ht-degree: 1%
 
 Voor deze integratie, moet het volgende publiek worden betrokken, en om sommige taken uit te voeren, zou u administratieve toegang kunnen nodig hebben.
 
-* Ontwikkelaar
+* Developer
 * AEM Admin
 * Experience Cloud-beheerder
 
@@ -88,7 +87,7 @@ Een eigenschap is een container die u vult met extensies, regels, gegevenselemen
 
 #### Doelextensie toevoegen
 
-De Adobe Target-extensie ondersteunt client-side implementaties met de Target JavaScript SDK voor het moderne web, `at.js`. Klanten die nog gebruikmaken van de oudere bibliotheek Target, `mbox.js`, [dienen een upgrade uit te voeren naar at.js](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/upgrading-from-atjs-1x-to-atjs-20.html) om Launch te gebruiken.
+De Adobe Target-extensie ondersteunt client-side implementaties met de Target JavaScript SDK voor het moderne web, `at.js`. Klanten die nog gebruikmaken van de oudere bibliotheek Target, `mbox.js`, [dienen een upgrade uit te voeren naar at.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html) om Launch te gebruiken.
 
 De doelextensie bestaat uit twee hoofdonderdelen:
 
@@ -138,7 +137,7 @@ De doelextensie bestaat uit twee hoofdonderdelen:
 
 >[!NOTE]
 >
-> Verleen de integratie van Adobe I/O de toegang tot uitgezochte werkruimten met de aangewezen [rol om een centraal team toe te staan om API-gedreven veranderingen in slechts een paar werkruimten aan te brengen](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
+> Verleen de integratie van Adobe I/O de toegang tot uitgezochte werkruimten met de aangewezen [rol om een centraal team toe te staan om API-gedreven veranderingen in slechts een paar werkruimten aan te brengen](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
 
 1. Maak IMS-integratie in AEM met behulp van referenties van Adobe I/O. (01:12 t/m 03:55)
 2. Maak in Experience Platform Launch een eigenschap. (bedekt [boven](#create-launch-property))
