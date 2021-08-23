@@ -3,16 +3,12 @@ title: Afbeeldings-, staal-, centrifuge- en gemengde-mediasets
 description: Een van de nuttigste en krachtigste mogelijkheden van Dynamic Media Classic is de ondersteuning voor het maken van rich-mediasets, zoals Afbeelding, Staal, Draaien en Gemengde-mediasets. Leer wat elke rijke mediaset is en hoe u elk type maakt in Dynamic Media Classic. Meer informatie over voorinstellingen Batch-set, waarmee het maken van rich media-sets tijdens het uploaden wordt geautomatiseerd.
 sub-product: dynamic-media
 feature: Dynamic Media Classic, afbeeldingssets, gemengde mediasets, centrifuges
-doc-type: tutorial
-topics: sets, development, authoring, configuring
-audience: all
-activity: use
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -51,8 +47,8 @@ De URL voor de bovenstaande afbeeldingsset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/image-set-url-1.png)
 
-- Meer informatie over Afbeeldingssets vindt u in [Snel starten naar afbeeldingssets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
-- Leer hoe u [Een afbeeldingsset maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
+- Meer informatie over Afbeeldingssets vindt u in [Snel starten naar afbeeldingssets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
+- Leer hoe u [Een afbeeldingsset maken](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
 
 ### Staalset
 
@@ -70,8 +66,8 @@ De URL voor de bovenstaande stalenset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/image-set_url.png)
 
-- Meer informatie over Staalsets vindt u in [Snel starten naar stalensets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
-- Leer hoe u [Een stalenset maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
+- Meer informatie over Staalsets vindt u in [Snel starten naar stalensets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
+- Leer hoe u [Een stalenset maken](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
 
 ### Set draaien
 
@@ -87,8 +83,8 @@ De URL voor de bovenstaande centrifugeset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/spin-set.png)
 
-- Meer informatie over centreert Reeksen met [Snelle Begin om Reeksen ](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html) te draaien.
-- Leer hoe te [creeer een Reeks van de Draai](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
+- Meer informatie over centreert Reeksen met [Snelle Begin om Reeksen ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html) te draaien.
+- Leer hoe te [creeer een Reeks van de Draai](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
 
 ## Gemengde mediaset
 
@@ -102,13 +98,13 @@ De URL voor de bovenstaande gemengde mediaset kan er als volgt uitzien:
 
 ![afbeelding](assets/media-sets/image-set-url-1.png)
 
-- Meer informatie over gemengde Mediasets met [Snel starten naar gemengde mediasets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
+- Meer informatie over gemengde Mediasets met [Snel starten naar gemengde mediasets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
 
-- Leer hoe te om [een Gemengde Reeks van Media te creëren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
+- Leer hoe te om [een Gemengde Reeks van Media te creëren](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
 Als u een afbeelding wilt weergeven voor zoomen, een set of een video op uw website, roept u deze aan in een klassieke Dynamic Media-viewer. Dynamic Media Classic bevat viewers voor rich-media-elementen, zoals stalensets, centrifuges, video en vele andere.
 
-Meer informatie over [Viewers voor AEM Assets en Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
+Meer informatie over [Viewers voor AEM Assets en Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
 ## Voorinstellingen batchset
 
@@ -127,7 +123,7 @@ Voorinstellingen voor batchsets worden alleen tijdens het uploaden toegepast; ze
 
 Zodra vooraf instelt zijn gecreeerd, kan de Beheerder van het Bedrijf kiezen of zij actief of inactief zijn. Actief betekent dat deze voorinstellingen worden weergegeven op de uploadpagina onder **Taakopties**, terwijl inactieve voorinstellingen verborgen blijven.
 
-Leer hoe u [Een voorinstelling voor een batchset maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
+Leer hoe u [Een voorinstelling voor een batchset maken](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
 
 ### Batchvoorinstellingen gebruiken bij uploaden
 
@@ -138,4 +134,4 @@ Hieronder wordt beschreven hoe u voorinstellingen voor batchsets gebruikt bij he
 3. Open de optie **Voorinstellingen batchset** en schakel de voorinstelling in of uit om deze te gebruiken tijdens het uploaden.
 4. Nadat het uploaden is voltooid, kijkt u in uw map naar de voltooide sets.
 
-Meer informatie over [Voorinstellingen batchset](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
+Meer informatie over [Voorinstellingen batchset](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
