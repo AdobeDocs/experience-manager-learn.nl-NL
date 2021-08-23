@@ -2,11 +2,11 @@
 user-guide-title: AEM Sites-video's en -Tutorials
 user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites.
 breadcrumb-title: AEM Sites Tutorials
-sub-product: sites
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+feature-set: Experience Manager, Experience Manager Sites
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 3%
+source-wordcount: '439'
+ht-degree: 5%
 
 ---
 
@@ -45,13 +45,13 @@ ht-degree: 3%
    + [Ervaringsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
    + [Bouwstenen](experience-fragments/building-blocks.md)
    + [Sociale post instellen met ervaringsfragmenten](experience-fragments/experience-fragments-social-technical-video-setup.md)
-   + [Content Fragments vs. Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + [Content Fragments vs. Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Ontwikkeling {#developing}
    + [Projectarchetype AEM](developing/aem-project-archetype.md)
-   + [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-   + [Aan de slag met AEM headless](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-   + [Aan de slag met AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Aan de slag met AEM SPA Editor en Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+   + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+   + [Aan de slag met AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
    + [Pagina-eigenschappen uitbreiden](developing/page-properties-technical-video-develop.md)
    + [Ontwikkelen met het Stijlsysteem](developing/style-system-technical-video-understand.md)
    + [Aanbevolen werkwijzen voor stijlsystemen](developing/style-organization-style-system-understand-article.md)
@@ -67,8 +67,8 @@ ht-degree: 3%
 + Toepassingen {#spa-editor} voor één pagina
    + [De SPA Editor gebruiken](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Lesbestand Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
-   + [Aan de slag met AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Aan de slag met AEM SPA Editor en Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+   + [Aan de slag met AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 + Beheer van meerdere sites {#multi-site-management}
    + [Inleiding tot het kopiëren van talen](./multi-site-management/language-copy-overview.md)
    + [Live kopiëren en vervagen](./multi-site-management/live-copy-and-blueprint.md)
@@ -112,24 +112,3 @@ ht-degree: 3%
       + [Doelactiviteit maken met behulp van Experience Fragment-aanbiedingen](integrations/adobe-target/create-target-activity.md)
       + [Personalisatie met behulp van Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Aanpassing van de volledige webpaginabeleving](integrations/adobe-target/personalization-web-page.md)
-
-+ Dynamic Media Tutorials {#dynamic-media}
-   + [Gegevens van testafbeeldingsserver (client IP-filters) in Dynamic Media toevoegen voor beveiligde voorvertoning met DMc App](dynamic-media/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
-   + [Verschillende soorten sets maken met AEM Dynamic Media | Carousel-set](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
-   + [Verschillende soorten sets maken met AEM Dynamic Media| Afbeeldingsset](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
-   + [Voorinstellingen voor afbeeldingen maken](dynamic-media/creating-image-presets.md)
-   + [Afbeeldingsprofiel maken (slim uitsnijden) in Dynamic Media](dynamic-media/creating-image-profile-smart-crop.md)
-   + [Videoprofiel maken om video&#39;s te verwerken in Dynamic Media](dynamic-media/creating-video-profile-to-process-videos-in-dynamic-media.md)
-   + [Dynamic Media-configuratie verwijderen](dynamic-media/deleting-dynamic-media-configuration.md)
-   + [Middelen downloaden in Dynamic Media Classic App](dynamic-media/how-to-download-asset-in-dynamic-media-classic-app.md)
-   + [Een openbare URL of code insluiten voor een element genereren](dynamic-media/how-to-generate-public-url-or-embed-code-for-an-asset.md)
-   + [Hoe kan ik DAM-workflow voor bijwerken van middelen uitvoeren op middelen waarvoor Dynamic Media is ingeschakeld.](dynamic-media/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
-   + [De exporttaak in Dynamic Media activeren tijdens het verzenden van de taakbewerkingsparameter](dynamic-media/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
-   + [Inleiding tot Dynamic Media klassieke IPS API](dynamic-media/introduction-to-dynamic-media-classic-ips-api.md)
-   + [De CDN-cache ongeldig maken via Dynamic Media](dynamic-media/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
-   + [DM-componenten gebruiken op sitepagina](dynamic-media/using-dm-components-on-site-page.md)
-
-+ Brand Portal Tutorials {#brand-portal}
-   + [Asset Sourcing configureren met de merkportal](brand-portal/configuring-asset-sourcing-with-the-brand-portal.md)
-   + [Het downloaden van uitvoeringen inschakelen](brand-portal/how-to-enable-the-download-of-renditions.md)
-   + [Stappen voor het configureren van AEM Assets Brand Portal](brand-portal/steps-to-configure-aem-assets-brand-portal.md)
