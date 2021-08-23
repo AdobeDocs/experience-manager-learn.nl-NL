@@ -2,12 +2,12 @@
 title: Interactieve video gebruiken met AEM Dynamic Media
 description: AEM Assets' heeft nu de capaciteit om interactieve video's tot stand te brengen, waar de gebruikers een video in kleinere segmenten kunnen verdelen of kleine segmenten combineren om een groot segment tot stand te brengen, daardoor toestaand gebruikers om vraag-aan-actie te associëren.
 sub-product: dynamic-media
-feature: Videoprofielen, Viewer-voorinstellingen, Mediasets mixen
+feature: Videoprofielen, Viewer-voorinstellingen, gemengde mediasets
 version: 6.3, 6.4, 6.5
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
