@@ -1,14 +1,13 @@
 ---
 title: Hoofdstuk 7 - AEM Inhoudsservices van een mobiele app gebruiken - Inhoudsservices
 description: In Hoofdstuk 7 van de zelfstudie wordt de Android Mobile-app uitgevoerd om geschreven inhoud van AEM Content Services te verbruiken.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+feature: Inhoudsfragmenten, API's
+topic: Koploos, inhoudsbeheer
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -164,7 +163,7 @@ Ten slotte wordt het `src` van het logo in de Android ImageView geladen met behu
 
 U ziet dat we het AEM schema, de host en de poort (via `aemHost`) naar de AEM Publish-instantie moeten leveren, omdat AEM Content Services alleen het JCR-pad (dat wil zeggen: `/content/dam/wknd-mobile/images/wknd-logo.png`) aan de inhoud waarnaar wordt verwezen.
 
-#### De afbeeldingspo{#image-pojo}
+#### De POJO van de afbeelding{#image-pojo}
 
 Hoewel optioneel, helpt het gebruik van de [Jackson ObjectMapper](https://fasterxml.github.io/jackson-databind/javadoc/2.9/com/fasterxml/jackson/databind/ObjectMapper.html) of soortgelijke mogelijkheden die door andere bibliotheken zoals Gson worden geboden, complexe JSON-structuren toe te wijzen aan Java POJO&#39;s zonder dat het tradium bestaat om rechtstreeks met de native JSON-objecten zelf om te gaan. In dit eenvoudige geval wijzen wij `src` sleutel van `image` JSON voorwerp, aan het `src` attribuut in de POJO van het Beeld direct via `@JSONProperty` annotatie toe.
 
@@ -202,7 +201,7 @@ Na elke stap vernieuwt u de mobiele app en controleert u de update van de mobiel
 Voor meer informatie over Content Services en AEM als Headless CMS raadpleegt u de documentatie AEM Adobe en activering:
 
 * [Inhoudsfragmenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
-* [Gebruikershandleiding voor WCM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Gebruikershandleiding voor WCM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [AEM WCM Core Components Component Library](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM WCM Core Components GitHub Project](https://github.com/adobe/aem-core-wcm-components)
 * [AEM WCM Core-componenten - Vraag het de expert](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
