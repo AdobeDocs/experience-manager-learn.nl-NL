@@ -6,22 +6,21 @@ audience: developer
 doc-type: tutorial
 activity: develop
 version: 6.3, 6.4, 6.5
-feature: Search
-topic: Development
+feature: Zoeken
+topic: Ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
 
 
-# Eenvoudige gids voor implementatie van zoekopdracht{#simple-search-implementation-guide}
+# Eenvoudige gids voor implementatie van zoekopdrachten{#simple-search-implementation-guide}
 
-De eenvoudige onderzoeksimplementatie is de materialen van het **laboratorium van de Top van Adobe AEM Onderzoek Demystified**. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
+De eenvoudige onderzoeksimplementatie is de materialen van **het laboratorium van de Adobe Summit AEM Onderzoek Demystified**. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
 
 ![Overzicht van zoekarchitectuur](assets/l4080/simple-search-application.png)
 
@@ -73,12 +72,12 @@ De eenvoudige onderzoeksimplementatie is de materialen van het **laboratorium va
 * [Hoofdstuk 6-oplossing](assets/l4080/l4080-chapter6.zip)
 * [Hoofdstuk 9-oplossing](assets/l4080/l4080-chapter9.zip)
 
-## Materialen {#reference-materials} waarnaar wordt verwezen
+## Materialen waarnaar wordt verwezen {#reference-materials}
 
 * [Github-opslagplaats](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html)
 * [Verkoopmodel exporteren](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [QueryBuilder-API](https://docs.adobe.com/docs/en/aem/6-2/develop/search/querybuilder-api.html)
+* [QueryBuilder-API](https://experienceleague.adobe.com/docs/)
 * [AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  ([documentatiepagina](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correcties en follow-up {#corrections-and-follow-up}
