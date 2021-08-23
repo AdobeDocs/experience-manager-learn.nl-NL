@@ -10,9 +10,9 @@ feature: Dynamic Media Classic
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ In deze handleiding bespreken we de volgende kernmogelijkheden van Dynamic Media
 - **Video.** Upload definitieve video&#39;s, publiceer ze en download ze progressief naar configureerbare videoviewers.
 - **Smart Imaging.** Technologie die gebruikmaakt van Adobe Sensei AI-mogelijkheden en met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de beeldlevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
-Voor meer mogelijkheden van de oplossing gaat u naar de [Documentatie voor Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+Voor meer mogelijkheden van de oplossing gaat u naar de [Documentatie voor Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## De Dynamic Media Classic User Interface (UI)
 
@@ -75,4 +75,4 @@ _Dynamic Media Classic-gebruikersinterface_
 >
 >Schakel het selectievakje **Publiceren na uploaden** in het dialoogvenster Uploaden in om elementen automatisch te publiceren tijdens het uploaden.
 
-Meer informatie over [Navigeren in de gebruikersinterface van Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Meer informatie over [Navigeren in de gebruikersinterface van Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
