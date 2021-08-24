@@ -1,27 +1,21 @@
 ---
 title: Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten van de Kern
 description: De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om gegevens over een bezoekerservaring op een webpagina te verzamelen en op te slaan en dan het gemakkelijk te maken om tot deze gegevens toegang te hebben. De gegevenslaag van de Cliënt van Adobe is platform agnostic, maar is volledig geïntegreerd in de Componenten van de Kern voor gebruik met AEM.
-feature: core-component
-topics: integrations
-audience: developer
-doc-type: feature video
-activity: use
-version: cloud-service
-kt: 6261
-thumbnail: 41195.jpg
 topic: Integrations
+feature: Adobe Client Data Layer, Core Components
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6261
+thumbnail: 41195.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 
-# De gegevenslaag van de Adobe-client gebruiken met AEM kerncomponenten {#overview}
+# Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten van de Kern {#overview}
 
 De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om gegevens over een bezoekerservaring op een webpagina te verzamelen en op te slaan en dan het gemakkelijk te maken om tot deze gegevens toegang te hebben. De gegevenslaag van de Cliënt van Adobe is platform agnostic, maar is volledig geïntegreerd in de Componenten van de Kern voor gebruik met AEM.
 
@@ -29,7 +23,7 @@ De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om ge
 
 >[!NOTE]
 >
-> Wilt u de Adobe Client Data Layer op uw AEM-site inschakelen? [Zie de instructies hier](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> Wilt u de Adobe Client Data Layer op uw AEM-site inschakelen? [Zie de instructies hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 ## De gegevenslaag verkennen
 
@@ -184,4 +178,4 @@ Of leer hoe te om [de Laag van Gegevens van de Cliënt van Adobe met AEM Compone
 ## Aanvullende bronnen {#additional-resources}
 
 * [Documentatie gegevenslaag Adobe-client](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
