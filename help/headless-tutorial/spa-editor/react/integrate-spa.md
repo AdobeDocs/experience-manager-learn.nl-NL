@@ -9,15 +9,15 @@ thumbnail: 4853-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1843'
 ht-degree: 0%
 
 ---
 
 
-# De SPA {#developer-workflow} integreren
+# De SPA integreren {#developer-workflow}
 
 Begrijp hoe de broncode voor een toepassing van de Enige Pagina (SPA) die in React wordt geschreven met een Project van Adobe Experience Manager (AEM) kan worden geïntegreerd. Leer om moderne front-end hulpmiddelen, zoals een webpack dev server, te gebruiken om de SPA tegen AEM JSON model API snel te ontwikkelen.
 
@@ -50,13 +50,13 @@ De `ui.frontend` module is een [webpack](https://webpack.js.org/) project dat al
 
 *Een afbeelding op hoog niveau van de SPA integratie.*
 
-Aanvullende informatie over de front-end build kan [hier worden gevonden](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
+Aanvullende informatie over de front-end build kan [hier worden gevonden](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
 ## Inspect de SPA integratie {#inspect-spa-integration}
 
-Vervolgens inspecteert u de module `ui.frontend` om te begrijpen welke SPA automatisch is gegenereerd door het [AEM Project archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
+Vervolgens inspecteert u de module `ui.frontend` om te begrijpen welke SPA automatisch is gegenereerd door het [AEM Project archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-1. Open uw AEM Project in IDE van uw keuze. Deze zelfstudie zal [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code) gebruiken.
+1. Open uw AEM Project in IDE van uw keuze. Deze zelfstudie zal [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code) gebruiken.
 
    ![VSCode - AEM WKND SPA Project](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -76,7 +76,7 @@ Vervolgens inspecteert u de module `ui.frontend` om te begrijpen welke SPA autom
    "@adobe/aem-core-components-react-spa": "1.1.7",
    ```
 
-   De bovenstaande modules vormen de [AEM redacteur JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) en verstrekken de functionaliteit om het mogelijk te maken om SPA Componenten aan AEM Componenten in kaart te brengen.
+   De bovenstaande modules vormen de [AEM redacteur JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html) en verstrekken de functionaliteit om het mogelijk te maken om SPA Componenten aan AEM Componenten in kaart te brengen.
 
    Ook inbegrepen zijn [AEM componenten WCM - React de implementatie van de Kern ](https://github.com/adobe/aem-react-core-wcm-components-base) en [AEM componenten WCM - de redacteur van de SPA - React de implementatie van de Kern](https://github.com/adobe/aem-react-core-wcm-components-spa). Dit is een reeks herbruikbare UI-componenten die uit de doos AEM componenten worden toegewezen. Deze zijn ontworpen om ongewijzigd te worden gebruikt en worden vormgegeven om aan de behoeften van uw project te voldoen.
 
