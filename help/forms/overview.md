@@ -4,13 +4,12 @@ seo-title: AEM Forms-Tutorials en -video's
 description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
 seo-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
 sub-product: formulieren
-topic: Development
+topic: Ontwikkeling
 role: Developer
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 2%
+source-wordcount: '304'
+ht-degree: 1%
 
 ---
 
@@ -81,7 +80,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 ## Aanvullende bronnen
 
-* [Experience League - Verken AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Sites Authoring Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [AEM Sites Developing Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [AEM Sites-beheerdocumentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
