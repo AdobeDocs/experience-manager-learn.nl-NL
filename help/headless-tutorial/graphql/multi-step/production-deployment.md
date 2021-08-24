@@ -1,19 +1,17 @@
 ---
 title: Implementatie van de productie met behulp van een AEM-publicatieservice - Aan de slag met AEM headless - GraphQL
 description: Meer informatie over AEM-auteur- en publicatieservices en het aanbevolen implementatiepatroon voor toepassingen zonder kop. In deze zelfstudie leert u omgevingsvariabelen te gebruiken om een eindpunt GraphQL dynamisch te wijzigen op basis van de doelomgeving. Leer om AEM voor het delen van bronnen tussen verschillende oorsprong (CORS) behoorlijk te vormen.
-sub-product: elementen
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: Inhoudsfragmenten, GraphQL API
+topic: Koploos, inhoudsbeheer
+role: Developer
+level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2361'
+source-wordcount: '2367'
 ht-degree: 0%
 
 ---
@@ -35,7 +33,7 @@ Leer hoe u:
 * Leer beste praktijken voor het beheren van omgevingsvariabelen.
 * Leer hoe u AEM voor het delen van bronnen tussen verschillende oorsprong (CORS) correct configureert.
 
-## Implementatiepatroon voor publiceren auteur {#deployment-pattern}
+## Implementatiepatroon voor auteur publiceren {#deployment-pattern}
 
 Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. In de service Auteur kunnen interne gebruikers inhoud maken, beheren en voorvertonen. De publicatieservice wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de omgeving waarmee eindgebruikers werken. Inhoud wordt na bewerking en goedkeuring in de service Auteur gedistribueerd naar de service Publiceren.
 
@@ -82,7 +80,7 @@ Een meer gedetailleerde gids voor vestiging een lokale ontwikkelomgeving [kan hi
 
    De verwachting is dat deze een pagina van 404 niet gevonden retourneert. Dit is een gloednieuw AEM-exemplaar en er is geen inhoud geïnstalleerd.
 
-## Voorbeeldinhoud en GraphQL-eindpunten {#wknd-site-content-endpoints} installeren
+## Voorbeeldinhoud en GraphQL-eindpunten installeren {#wknd-site-content-endpoints}
 
 Enkel zoals op de instantie van de Auteur, moet de Publish instantie toegelaten eindpunten hebben GraphQL en steekproefinhoud nodig. Installeer vervolgens de WKND Reference Site op de instantie Publish.
 
@@ -102,7 +100,7 @@ Enkel zoals op de instantie van de Auteur, moet de Publish instantie toegelaten 
 
    In tegenstelling tot de instantie AEM-auteur worden in de AEM-publicatie-instanties anonieme alleen-lezen toegang standaard ingesteld. Wij willen de ervaring van een anonieme gebruiker wanneer het runnen van de React toepassing simuleren.
 
-## Update Environment variables to point the Publish instance {#react-app-publish}
+## Omgevingsvariabelen bijwerken om naar de instantie Publiceren te verwijzen {#react-app-publish}
 
 Werk vervolgens de omgevingsvariabelen bij die door de toepassing React worden gebruikt om naar de instantie Publish te verwijzen. React App zou **only** met de Publish instantie op productiemodus moeten verbinden.
 
@@ -126,7 +124,7 @@ Voeg vervolgens een nieuw bestand `.env.production.local` toe om de productieerv
    >
    > Merk op dat geen authentificatieinformatie inbegrepen is aangezien de Publish milieu&#39;s anonieme toegang tot inhoud door gebrek verlenen.
 
-## Een statische Node-server {#static-server} implementeren
+## Een statische Node-server implementeren {#static-server}
 
 De React-app kan worden gestart met behulp van de webpack-server, maar dit is alleen voor ontwikkeling. Vervolgens simuleert u een productieimplementatie met [serve](https://github.com/vercel/serve) om een productiebuild van de React-app te hosten met Node.js.
 
@@ -187,7 +185,7 @@ De React-app kan worden gestart met behulp van de webpack-server, maar dit is al
 
    Merk op dat een fout GraphQL voor `adventureContributor` wordt geworpen. In de volgende oefeningen zijn de verbroken afbeeldingen en de `adventureContributor`-problemen opgelost.
 
-## Absolute afbeeldingsreferenties {#absolute-image-references}
+## Absolute verwijzingen naar afbeeldingen {#absolute-image-references}
 
 De afbeeldingen worden verbroken weergegeven omdat het `<img src`-kenmerk is ingesteld op een relatief pad en uiteindelijk verwijst naar de statische Node-server op `http://localhost:5000/`. In plaats daarvan moeten deze afbeeldingen verwijzen naar de AEM-publicatie-instantie. Hiervoor bestaan verschillende mogelijke oplossingen. Wanneer het gebruiken van de webpack dev server `react-app/src/setupProxy.js` opstelling een volmacht tussen de webpack server en de AEM auteursinstantie voor om het even welke verzoeken aan `/content`. Een volmachtsconfiguratie kan in een productiemilieu worden gebruikt maar moet op het niveau van de Webserver worden gevormd. Bijvoorbeeld [Apache&#39;s proxymodule](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
 
