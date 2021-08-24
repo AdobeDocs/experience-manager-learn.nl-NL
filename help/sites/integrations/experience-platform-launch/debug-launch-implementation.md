@@ -11,10 +11,9 @@ thumbnail: 38567.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '99'
 ht-degree: 3%
 
 ---
@@ -28,4 +27,4 @@ Een inleiding aan gemeenschappelijke hulpmiddelen en technieken die worden gebru
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Inleiding tot de Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
+* [Inleiding tot de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
