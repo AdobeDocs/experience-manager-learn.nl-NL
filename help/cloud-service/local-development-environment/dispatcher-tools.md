@@ -13,11 +13,10 @@ thumbnail: 30603.jpg
 topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 2%
+source-wordcount: '1637'
+ht-degree: 1%
 
 ---
 
@@ -203,7 +202,7 @@ Logbestanden van Apache-webservers en AEM Dispatcher kunnen rechtstreeks worden 
 + [De toegang tot van logboeken in de container van de Dokker](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-access-logs)
 + [De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-copy-logs)
 
-## Wanneer moet u de Dispatcher Tools{#dispatcher-tools-version} bijwerken?
+## Wanneer werkt u de Dispatcher Tools bij{#dispatcher-tools-version}
 
 Versies van Dispatcher Tools nemen minder vaak toe dan de Experience Manager en dus vereisen Dispatcher Tools minder updates in de lokale ontwikkelomgeving.
 
@@ -294,4 +293,4 @@ AH00016: Configuration Failed
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Docker downloaden](https://www.docker.com/)
 + [Download de AEM Reference Website (WKND)](https://github.com/adobe/aem-guides-wknd/releases)
-+ [Documentatie Experience Manager Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
++ [Documentatie Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
