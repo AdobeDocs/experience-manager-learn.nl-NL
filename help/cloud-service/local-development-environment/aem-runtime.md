@@ -12,10 +12,9 @@ thumbnail: 32551.jpg
 topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1732'
 ht-degree: 1%
 
 ---
@@ -203,7 +202,7 @@ Werk de AEM SDK ten minste maandelijks bij op of kort na de laatste donderdag va
 >
 > Als u de QuickStart-jar wilt bijwerken naar een nieuwe versie, moet u de volledige lokale ontwikkelomgeving vervangen. Dit leidt tot verlies van alle code, configuratie en inhoud in de lokale AEM. Zorg ervoor dat om het even welke code, config of inhoud die niet zou moeten worden vernietigd veilig aan Git wordt begaan, of uit de lokale AEM instantie als AEM Pakketten wordt uitgevoerd.
 
-### Hoe te vermijden inhoudsverlies wanneer het bevorderen van de AEM SDK
+### Hoe te om inhoudsverlies te vermijden wanneer het bevorderen van de AEM SDK
 
 Door de upgrade van de AEM SDK wordt in feite een geheel nieuwe AEM-runtime gemaakt, waaronder een nieuwe opslagplaats. Dit betekent dat eventuele wijzigingen in de opslagplaats van een eerdere AEM SDK verloren gaan. Hieronder volgen levensvatbare strategieën voor het ondersteunen van blijvende inhoud tussen AEM SDK-upgrades en u kunt deze op discrete wijze of in overleg gebruiken:
 
@@ -215,7 +214,7 @@ Herinner me, gebruikend de bovengenoemde benaderingen om code tussen AEM verbete
 
 ## Problemen oplossen
 
-## Als u dubbelklikt op het QuickStart Jar-bestand, treedt een fout op{#troubleshooting-double-click}
+## Als u dubbelklikt op het QuickStart Jar-bestand, treedt er een fout op{#troubleshooting-double-click}
 
 Wanneer u dubbelklikt op de Quickstart Jar om te starten, wordt een modaal foutbericht weergegeven om te voorkomen dat AEM lokaal wordt gestart.
 
@@ -231,7 +230,7 @@ of, om de publicatieservice van AEM te beginnen, `cd` in de folder die de Jar va
 
 `$ java -jar aem-publish-p4503.jar`
 
-## De aanvang van Jar van QuickStart van de bevellijn aborteert onmiddellijk{#troubleshooting-java-8}
+## Het beginnen van Jar Quickstart van de bevellijn aborteert onmiddellijk{#troubleshooting-java-8}
 
 Wanneer het beginnen van Jar QuickStart van de bevellijn, het proces onmiddellijk aborteert en de AEM dienst begint niet, met de volgende fout:
 
@@ -259,4 +258,4 @@ Zodra Java 11 SDK wordt geïnstalleerd, verifieer het de actieve versie door het
 + [SDK AEM downloaden](https://experience.adobe.com/#/downloads)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Docker downloaden](https://www.docker.com/)
-+ [Documentatie Experience Manager Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
++ [Documentatie Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
