@@ -4,26 +4,25 @@ seo-title: Verzenden naar pagina Hartelijk dank
 description: Een pagina voor bedankt weergeven bij het verzenden van een adaptief formulier
 seo-description: Een pagina voor bedankt weergeven bij het verzenden van een adaptief formulier
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
-feature: Adaptive Forms
+feature: Adaptieve Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
 
-# Verzenden naar pagina {#submitting-to-thank-you-page}
+# Verzenden naar pagina Hartelijk dank {#submitting-to-thank-you-page}
 
 Verzenden naar de eindpuntoptie REST geeft de gegevens die in het formulier zijn ingevuld door aan een geconfigureerde bevestigingspagina als onderdeel van de HTTP-aanvraag. U kunt de naam toevoegen van de velden die u wilt aanvragen. De indeling van het verzoek is:
 
