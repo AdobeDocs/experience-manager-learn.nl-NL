@@ -2,19 +2,18 @@
 seo: Set up public and private keys for use with AEM and Adobe I/O
 description: 'AEM gebruikt openbare/privé zeer belangrijke paren om veilig met Adobe I/O en andere Webdiensten te communiceren. Deze korte zelfstudie laat zien hoe compatibele toetsen en sleutelarchieven kunnen worden gegenereerd met het openssl-opdrachtregelprogramma dat zowel met AEM als met Adobe I/O werkt. '
 version: 6.4, 6.5
-feature: Users and Groups
+feature: Gebruiker en groepen
 topics: authentication, integrations
 activity: setup
 audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -28,7 +27,7 @@ AEM gebruikt openbare/privé zeer belangrijke paren om veilig met Adobe I/O en a
 >
 >Deze handleiding maakt zelfondertekende toetsen die handig zijn voor ontwikkeling en gebruik in lagere omgevingen. In productiescenario&#39;s, worden de sleutels typisch geproduceerd en beheerd door het de veiligheidsteam van IT van een organisatie.
 
-## Het openbare/persoonlijke sleutelpaar {#generate-the-public-private-key-pair} genereren
+## Het paar openbare/persoonlijke sleutels genereren {#generate-the-public-private-key-pair}
 
 Met de [[!DNL openssl]](https://www.openssl.org/docs/man1.0.2/man1/openssl.html) opdrachtregelprogramma&#39;s [[!DNL req] command](https://www.openssl.org/docs/man1.0.2/man1/req.html) kunt u een sleutelpaar genereren dat compatibel is met Adobe I/O en Adobe Experience Manager.
 
@@ -76,7 +75,7 @@ De uitvoer van deze opdracht is een `keystore.p12`-bestand.
 >
 >De parameterwaarden **[!DNL my-keystore]**, **[!DNL my-key]** en **[!DNL my-password]** moeten door uw eigen waarden worden vervangen.
 
-## Verifieer de keystore inhoud {#verify-the-keystore-contents}
+## De inhoud van het sleutelarchief controleren {#verify-the-keystore-contents}
 
 Het Java [[!DNL keytool] opdrachtregelprogramma](https://docs.oracle.com/middleware/1213/wls/SECMG/keytool-summary-appx.htm#SECMG818) biedt zichtbaarheid in een sleutelarchief om ervoor te zorgen dat de sleutels correct worden geladen in het sleutelarchiefbestand ([!DNL keystore.p12]).
 
@@ -126,7 +125,7 @@ Klik in de sleutelarchiefconsole van de gebruiker op **[!UICONTROL Add Private K
 >
 >Het wachtwoord voor sleutelarchief-bestanden en het wachtwoord voor persoonlijke sleutels zijn voor beide invoer hetzelfde. Als u een niet-overeenkomend wachtwoord invoert, wordt de sleutel niet geïmporteerd.
 
-### Controleer of de persoonlijke sleutel is geladen in het AEM sleutelarchief {#verify-the-private-key-is-loaded-into-the-aem-keystore}
+### Controleren of de persoonlijke sleutel in het AEM sleutelarchief is geladen {#verify-the-private-key-is-loaded-into-the-aem-keystore}
 
 ![Persoonlijke sleutel verifiëren in AEM](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--keystore.png)
 *[!UICONTROL User]>[!UICONTROL Keystore]*
@@ -137,7 +136,7 @@ Wanneer de persoonlijke sleutel van het verstrekte sleutelarchief in AEM sleutel
 
 De passende openbare sleutel moet aan Adobe I/O worden geupload om de AEM de dienstgebruiker toe te staan, die de overeenkomstige privé van de openbare sleutel heeft om veilig te communiceren.
 
-### Een Adobe I/O nieuwe integratie maken {#create-a-adobe-i-o-new-integration}
+### Een nieuwe Adobe I/O-integratie maken {#create-a-adobe-i-o-new-integration}
 
 ![Een nieuwe Adobe I/O-integratie maken](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
 
