@@ -10,9 +10,9 @@ activity: use
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6195'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Net als alle viewers verloopt de integratie via één klassieke Dynamic Media-UR
 
 Een laatste opmerking over Dynamic Media Classic-video die op sommige klanten van toepassing kan zijn: het is mogelijk dat niet alle bedrijven automatische conversie, streaming of videovoorinstellingen hebben ingeschakeld voor hun account. Als u om een of andere reden geen toegang hebt tot de URL&#39;s voor het streamen van video, kan dit de reden zijn. U kunt progressief gedownloade video nog wel uploaden en publiceren en u hebt toegang tot alle videoviewers. Als u echter de volledige Dynamic Media Classic-videomogelijkheden wilt benutten, neemt u contact op met uw accountmanager of Verkoopmanager om deze functies in te schakelen.
 
-Meer informatie over [Video in Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/quick-start-video.html).
+Meer informatie over [Video in Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html).
 
 ## Video 101
 
@@ -138,8 +138,8 @@ Wanneer u met video werkt in Dynamic Media Classic, volgt u een standaardworkflo
 
 ![afbeelding](assets/video-overview/video-overview-2.png)
 
-1. Start door videobestanden te uploaden naar Dynamic Media Classic. Hiervoor opent u het **menu Extra** onder aan het deelvenster Klassieke Dynamic Media-extensie en kiest u **Uploaden naar Dynamic Media Classic > Bestanden naar mapnaam** of **Uploaden naar Dynamic Media Classic > Mappen naar mapnaam**. De map &#39;Mapnaam&#39; is de map waarin u momenteel bladert met de extensie. Videobestanden kunnen groot zijn, dus raden we u aan om FTP te gebruiken voor het uploaden van grote bestanden. Als onderdeel van het uploaden kiest u een of meer videovoorinstellingen voor het coderen van uw video&#39;s. Video kan tijdens het uploaden naar MP4-video worden getranscodeerd. Zie het onderwerp Voorinstellingen video hieronder voor meer informatie over het gebruik en het maken van coderingsvoorinstellingen. Meer informatie over [Video&#39;s uploaden en coderen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
-2. Selecteer of selecteer en wijzig een videovoorinstelling van de viewer en bekijk een voorvertoning van uw video. U kunt een vooraf gebouwde voorinstelling voor de viewer kiezen of uw eigen voorinstelling aanpassen. Als u zich richt op mobiele gebruikers, hoeft u hier niets te doen omdat voor mobiele platforms geen viewer of voorinstelling is vereist. Meer informatie over het [voorvertonen van video&#39;s in een video-viewer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) en [Een voorinstelling voor een video-viewer toevoegen of bewerken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset).
+1. Start door videobestanden te uploaden naar Dynamic Media Classic. Hiervoor opent u het **menu Extra** onder aan het deelvenster Klassieke Dynamic Media-extensie en kiest u **Uploaden naar Dynamic Media Classic > Bestanden naar mapnaam** of **Uploaden naar Dynamic Media Classic > Mappen naar mapnaam**. De map &#39;Mapnaam&#39; is de map waarin u momenteel bladert met de extensie. Videobestanden kunnen groot zijn, dus raden we u aan om FTP te gebruiken voor het uploaden van grote bestanden. Als onderdeel van het uploaden kiest u een of meer videovoorinstellingen voor het coderen van uw video&#39;s. Video kan tijdens het uploaden naar MP4-video worden getranscodeerd. Zie het onderwerp Voorinstellingen video hieronder voor meer informatie over het gebruik en het maken van coderingsvoorinstellingen. Meer informatie over [Video&#39;s uploaden en coderen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/uploading-encoding-videos.html).
+2. Selecteer of selecteer en wijzig een videovoorinstelling van de viewer en bekijk een voorvertoning van uw video. U kunt een vooraf gebouwde voorinstelling voor de viewer kiezen of uw eigen voorinstelling aanpassen. Als u zich richt op mobiele gebruikers, hoeft u hier niets te doen omdat voor mobiele platforms geen viewer of voorinstelling is vereist. Meer informatie over het [voorvertonen van video&#39;s in een video-viewer](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) en [Een voorinstelling voor een video-viewer toevoegen of bewerken](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset).
 3. Voer een video-publicatie uit, krijg de URL en integreer de video. Het belangrijkste verschil tussen deze stap voor de videoworkflow en de afbeeldingsworkflow is dat u een speciale publicatie van video uitvoert in plaats van (of misschien ook) de standaardpublicatie van Image Serving. De integratie van de videoviewer op het bureaublad werkt precies zoals de integratie van de beeldviewer, maar voor mobiele apparaten is het nog eenvoudiger — u hebt alleen de URL naar de video zelf nodig.
 
 ### Transcodering
@@ -174,11 +174,11 @@ Tot slot als u zich zorgen maakt over het beveiligen van uw media voor problemen
 
 Wanneer u uw video uploadt, kiest u uit een of meer voorinstellingen die de instellingen bevatten voor het converteren van uw master video naar een webvriendelijke indeling via codering. Voorinstellingen voor video bestaan uit twee voorinstellingen voor video, adaptieve videovoorinstellingen en één voorinstelling voor codering.
 
-Zie [Beschikbare videovoorinstellingen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+Zie [Beschikbare videovoorinstellingen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
 
 Voorinstellingen voor adaptieve video worden standaard geactiveerd, wat betekent dat deze beschikbaar zijn voor codering. Als u één enkele het Coderen Vooraf ingestelde wenst te gebruiken, zal uw beheerder het moeten activeren om het in de lijst van Video vooraf instelt te verschijnen.
 
-Leer hoe u [Voorinstellingen voor video activeren of deactiveren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#activating-or-deactivating-video-encoding-presets).
+Leer hoe u [Voorinstellingen voor video activeren of deactiveren](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/uploading-encoding-videos.html#activating-or-deactivating-video-encoding-presets).
 
 U kunt kiezen uit een van de vele voorinstellingen die bij Dynamic Media Classic worden geleverd, of u kunt zelf voorinstellingen maken. er zijn echter standaard geen voorinstellingen geselecteerd voor uploaden. Met andere woorden, **als u geen videovoorinstelling selecteert bij het uploaden, wordt uw video niet omgezet en kan deze mogelijk niet worden gepubliceerd**. U kunt de video echter zelf offline converteren en deze uploaden en publiceren. Voorinstellingen voor video zijn alleen vereist als u wilt dat Dynamic Media Classic de conversie voor u uitvoert.
 
@@ -240,19 +240,19 @@ Soms hebt u een speciale voorinstelling voor video nodig die niet overeenkomt me
 11. Klik op **Opslaan** om de voorinstelling op te slaan. In tegenstelling tot elke andere voorinstelling hoeft u op dit punt geen voorinstellingen te publiceren, omdat deze alleen zijn bedoeld voor het uploaden van bestanden. Later moet u de gecodeerde video&#39;s publiceren, maar de voorinstellingen zijn alleen bedoeld voor intern gebruik door Dynamic Media Classic.
 12. Als u wilt controleren of de videovoorinstelling in de uploadlijst staat, gaat u naar **Uploaden**.Kies **Taakopties** en vouwt u **Video-opties** uit. De voorinstelling wordt vermeld in de categorie voor het afspeelapparaat dat u hebt gekozen (Computer, Mobiel of Tablet).
 
-Meer informatie over [Een videovoorinstelling toevoegen of bewerken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset).
+Meer informatie over [Een videovoorinstelling toevoegen of bewerken](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset).
 
 ## Bijschriften toevoegen aan uw video
 
 In sommige gevallen is het handig om bijschriften aan uw video toe te voegen, bijvoorbeeld wanneer u de video in meerdere talen aan gebruikers moet leveren, maar u de audio niet in een andere taal wilt dupliceren of de video opnieuw in afzonderlijke talen wilt opnemen. Bovendien biedt het toevoegen van ondertitels een betere toegankelijkheid voor slechthorenden en gebruikers van ondertiteling. Met Dynamic Media Classic kunt u eenvoudig bijschriften toevoegen aan uw video&#39;s.
 
-Leer hoe te [Bijschriften aan Video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-captions-video.html) toevoegen.
+Leer hoe te [Bijschriften aan Video](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/adding-captions-video.html) toevoegen.
 
 ## Hoofdstukmarkeringen aan uw video toevoegen
 
 Voor lange-formuliervideo&#39;s waarderen uw gebruikers waarschijnlijk de mogelijkheden en het gemak die worden geboden door in uw video te navigeren met hoofdstukmarkeringen. Met Dynamic Media Classic kunt u eenvoudig hoofdstukmarkeringen aan uw video toevoegen.
 
-Leer hoe te [Voeg de Markeringen van het Hoofdstuk aan Video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-chapter-markers-video.html) toe.
+Leer hoe te [Voeg de Markeringen van het Hoofdstuk aan Video](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/adding-chapter-markers-video.html) toe.
 
 ## Onderwerpen over video-implementatie
 
@@ -262,20 +262,20 @@ De laatste stap in de Klassieke Dynamic Media-workflow is het publiceren van uw 
 
 ![afbeelding](assets/video-overview/video-overview-6.jpg)
 
-Leer hoe u [Uw video kunt publiceren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
+Leer hoe u [Uw video kunt publiceren](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
 
 Wanneer u een video-publicatie hebt uitgevoerd, kunt u een URL ophalen voor toegang tot uw video&#39;s en alle externe Dynamic Media Classic Viewer-voorinstellingen in een webbrowser. Nochtans als u aanpast of uw eigen Vooraf ingestelde VideoKijker creeert, zult u nog een afzonderlijke publicatie van de Server van het Beeld moeten in werking stellen.
 
-- Leer hoe te [een URL met een Mobiele Plaats of een Website ](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website) verbinden.
-- Leer hoe u [Video-viewer insluiten op een webpagina](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
+- Leer hoe te [een URL met een Mobiele Plaats of een Website ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website) verbinden.
+- Leer hoe u [Video-viewer insluiten op een webpagina](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
 
 U kunt uw video ook implementeren met een externe of aangepaste ingebouwde videospeler.
 
-Leer hoe te om [Video op te stellen die een Speler van de Video van de derde](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#deploying-video-using-a-third-party-video-player) gebruiken.
+Leer hoe te om [Video op te stellen die een Speler van de Video van de derde](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#deploying-video-using-a-third-party-video-player) gebruiken.
 
 Bovendien als u ook de videoduimnagels wilt gebruiken — het beeld dat uit de video wordt gehaald — zult u ook een Server van het Beeld moeten in werking stellen publiceert. Dit is omdat het duimnagelbeeld voor de video op de Server van het Beeld verblijft, terwijl de video zelf op de Videoserver is. Videominiaturen kunnen worden gebruikt in de zoekresultaten van video en in afspeellijsten. Ze kunnen worden gebruikt als het eerste &quot;posterframe&quot; dat in de videoviewer wordt weergegeven voordat de video wordt afgespeeld.
 
-Meer informatie over [Werken met videominiaturen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#working-with-video-thumbnails).
+Meer informatie over [Werken met videominiaturen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#working-with-video-thumbnails).
 
 ### Een voorinstelling voor viewers selecteren en aanpassen
 
@@ -310,15 +310,15 @@ De aanbevolen workflow bestaat uit het insluiten van deze gegevens in uw video&#
 
 Als u deze methode volgt, hoeft u deze gegevens niet handmatig in te voeren met Dynamic Media Classic. U kunt echter ook Metagegevensvoorinstellingen gebruiken in Dynamic Media Classic als een snelle manier om dezelfde gegevens telkens in te voeren.
 
-Zie [Metagegevens weergeven, toevoegen en exporteren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html) voor meer informatie over dat onderwerp.
+Zie [Metagegevens weergeven, toevoegen en exporteren](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html) voor meer informatie over dat onderwerp.
 
 ![afbeelding](assets/video-overview/video-overview-7.jpg)
 
 Nadat de metagegevens zijn gevuld, kunt u deze weergeven in de Gedetailleerde weergave voor het desbetreffende video-element. Er kunnen ook trefwoorden aanwezig zijn, maar deze bevinden zich op het tabblad Trefwoorden.
 
-- Meer informatie over [Trefwoorden toevoegen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords).
-- Meer informatie over [Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html).
-- Meer informatie over [Instellingen voor video-SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings).
+- Meer informatie over [Trefwoorden toevoegen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords).
+- Meer informatie over [Video SEO](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html).
+- Meer informatie over [Instellingen voor video-SEO](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings).
 
 #### Video-SEO instellen
 
