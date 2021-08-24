@@ -3,14 +3,13 @@ title: Aan de slag met AEM en Adobe Target
 seo-title: Aan de slag met AEM en Adobe Target
 description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager en Adobe Target. In deze zelfstudie leert u ook over verschillende personen die betrokken zijn bij het proces van het begin tot het einde en hoe zij met elkaar samenwerken
 seo-description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager en Adobe Target. In deze zelfstudie leert u ook over verschillende personen die betrokken zijn bij het proces van het begin tot het einde en hoe zij met elkaar samenwerken
-feature: Experience Fragments
-topic: Personalization
+feature: Ervaringsfragmenten
+topic: Personalisatie
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ In deze zelfstudie behandelen wij drie verschillende scenario&#39;s voor AEM en 
 * Scenario 2: Personalisatie met behulp van Visual Experience Composer
 * Scenario 3: Aanpassing van de volledige webpaginamogelijkheden
 
-## Personalisatie met AEM ervaringsfragmenten {#personalization-using-aem-experience-fragment}
+## Personalisatie met AEM Experience Fragments {#personalization-using-aem-experience-fragment}
 
 Voor dit scenario zullen wij AEM en Doel gebruiken. Het is duidelijk dat beide producten hun eigen sterke punten hebben en wanneer het gaat om het bieden van gepersonaliseerde ervaringen aan de gebruikers van uw site, hebt u **gepersonaliseerde inhoud (inhoud van AEM)** en een **intelligente manier (Doel)** nodig om deze inhoud te dienen op basis van een specifieke gebruiker.
 
