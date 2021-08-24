@@ -11,9 +11,9 @@ thumbnail: 41244.jpg
 topic: Integrations
 role: Admin
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -29,5 +29,5 @@ Dankzij deze integratie kan de AEM-auteur rechtstreeks communiceren met Adobe Ta
 
 >[!CAUTION]
 >
->Er is een bekend probleem met de configuratie van Adobe Target Cloud Services die in de video wordt weergegeven. Totdat dit probleem is opgelost, voert u dezelfde stappen in de video uit, maar gebruikt u de [configuratie van oudere Adobe Target-Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>Er is een bekend probleem met de configuratie van Adobe Target Cloud Services die in de video wordt weergegeven. Totdat dit probleem is opgelost, voert u dezelfde stappen in de video uit, maar gebruikt u de [configuratie van oudere Adobe Target-Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
 
