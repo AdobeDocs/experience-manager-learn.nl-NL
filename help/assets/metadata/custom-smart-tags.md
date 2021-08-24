@@ -1,17 +1,16 @@
 ---
 title: Aangepaste slimme tags voor afbeeldingen in AEM Assets
 description: Leer hoe u Slimme tags voor AEM-middelen kunt trainen om aangepaste termen toe te passen op elementen.
-feature: Smart Tags
+feature: Slimme tags
 version: 6.4, 6.5, cloud-services
 kt: 795
 thumbnail: 22254.jpg
-topic: Content Management
+topic: Inhoudsbeheer
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
@@ -37,6 +36,6 @@ Leer hoe u de training voor slimme tags in AEM Assets configureert met de Smart 
 
 ## Aanvullende bronnen
 
-* AEM 6.4 vereist [nieuwste Service Pack](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 vereist [nieuwste Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
 
 
