@@ -1,18 +1,17 @@
 ---
 title: Watermerken in AEM Assets
 description: AEM als de watermarkeringsmogelijkheden van een Cloud Service, kunnen aangepaste afbeeldingsuitvoeringen met elk PNG-bestand worden gemarkeerd.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 version: cloud-service
 kt: 6357
 thumbnail: 41536.jpg
-topic: Content Management
+topic: Inhoudsbeheer
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 1%
+source-wordcount: '63'
+ht-degree: 0%
 
 ---
 
