@@ -2,17 +2,16 @@
 title: Een lokale AEM ontwikkelomgeving instellen
 description: Handleiding voor het opzetten van een lokale ontwikkeling voor Adobe Experience Manager, AEM. Omvat belangrijke onderwerpen van lokale installatie, Apache Maven, geïntegreerde ontwikkelomgevingen en het zuiveren/het oplossen van problemen. De ontwikkeling met winde van de Verduistering, CRXDE-Lite, de Code van Visual Studio en IntelliJ worden besproken.
 version: 6.4, 6.5
-feature: Developer Tools
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 activity: develop
 audience: developer
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2628'
+source-wordcount: '2626'
 ht-degree: 0%
 
 ---
@@ -310,7 +309,7 @@ Door gebrek **error.log** wordt gevormd om *[!DNL INFO]* verklaringen te registr
 
 ![Logconfiguratie in AEM](./assets/set-up-a-local-aem-development-environment/logging.png)
 
-#### Bundel is geïnstalleerd {#bundle-active}
+#### Bundel bevindt zich in de status Geïnstalleerd {#bundle-active}
 
 Alle bundels (met uitzondering van fragmenten) moeten de status **[!UICONTROL Active]** hebben. Als u uw codebundel in een [!UICONTROL Installed] staat ziet dan is er een kwestie die moet worden opgelost. Meestal is dit een afhankelijkheidskwestie:
 
@@ -324,7 +323,7 @@ Een nuttig hulpmiddel dat kan worden gebruikt is [!UICONTROL Dependency Finder]:
 
 Als u doorgaat met het bovenstaande voorbeeld, kunt u zien dat de versie die op de AEM-instantie is geïnstalleerd **12.2** vs **12.6** is die de bundel verwachtte. Van daar kunt u achterwaarts werken en zien of [!DNL Maven] gebiedsdelen op AEM [!DNL Maven] gebiedsdelen in het AEM project aanpassen. In het bovenstaande voorbeeld is [!DNL Core Components] **v2.2.0** op de AEM-instantie geïnstalleerd, maar de codebundel is gemaakt met een afhankelijkheid van **v2.2.2**, vandaar de reden voor de afhankelijkheidskwestie.
 
-#### Registratie van verkoopmodellen controleren {#osgi-component-sling-models}
+#### Registratie van verkoopmodellen verifiëren {#osgi-component-sling-models}
 
 AEM componenten moeten altijd worden ondersteund door een [!DNL Sling Model] om alle bedrijfslogica in te kapselen en ervoor te zorgen dat het HTML-renderingsscript schoon blijft. Als u problemen ondervindt waarbij het verkoopmodel niet kan worden gevonden, is het handig om de [!DNL Sling Models] op de console te controleren: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels). Dit zal u vertellen als uw het Verkopen Model is geregistreerd en welk middeltype (de componentenweg) het aan verbonden is.
 
