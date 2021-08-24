@@ -2,19 +2,14 @@
 title: OAuth-bereiken ontwikkelen in AEM
 description: Adobe Experience Manager die verlengbare OAuth Scopes toestaat voor toegangsbeheer voor middelen van een cliënttoepassing die door een eind - gebruiker wordt toegelaten. Het onderstaande diagram illustreert de aanvraagstroom in de context van AEM.
 version: 6.3, 6.4, 6.5
-feature: Users and Groups
-topics: authentication, security
-activity: develop
-audience: developer
-doc-type: code
-topic: Development
+feature: Gebruiker en groepen
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 2%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
