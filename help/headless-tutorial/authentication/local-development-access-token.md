@@ -4,18 +4,17 @@ description: AEM de Tokens van de Toegang van de Lokale Ontwikkeling worden gebr
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: APIs
+feature: API's
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330477.jpg
-topic: Headless, Integrations
+topic: Hoofdloos, integratie
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
