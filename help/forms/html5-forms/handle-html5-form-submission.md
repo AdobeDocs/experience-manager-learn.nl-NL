@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -84,7 +83,7 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### Extra lezingen
 
-Dit [artikel](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) over het genereren van PDF van het verzenden van HTML5-formulieren wordt ook aanbevolen.
+Dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) over het genereren van PDF van het verzenden van HTML5-formulieren wordt ook aanbevolen.
 
 
 
