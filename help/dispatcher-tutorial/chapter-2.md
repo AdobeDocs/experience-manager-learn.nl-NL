@@ -2,13 +2,12 @@
 title: '"Hoofdstuk 2 - Verzendingsinfrastructuur"'
 description: Begrijp publiceren en verzender topologie. Leer over de gemeenschappelijkste topologieën en de montages.
 feature: Dispatcher
-topic: Architecture
+topic: Architectuur
 role: Architect
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -24,7 +23,7 @@ We zullen de meest gangbare topologieën schetsen en de voordelen beschrijven en
 
 ### De instelling Verouderd
 
-In de begindagen was het aantal potentiële bezoekers klein, was de hardware duur en werden de webservers niet zo kritisch gezien als vandaag de dag. Een algemene instelling was om één Dispatcher te hebben die als een taakverdelingsmechanisme fungeert en cachegeheugen voor twee of meer publicatiesystemen. De Apache-server in de kern van de Dispatcher was zeer stabiel en - in de meeste gevallen - in staat om een behoorlijke hoeveelheid verzoeken te dienen.
+In de begindagen was het aantal potentiële bezoekers klein, was de hardware duur en werden de webservers niet zo kritisch gezien als vandaag de dag. Een algemene instelling was om één Dispatcher te hebben die fungeert als taakverdelingsmechanisme en cachegeheugen voor twee of meer publicatiesystemen. De Apache-server in de kern van de Dispatcher was zeer stabiel en - in de meeste gevallen - in staat om een behoorlijke hoeveelheid verzoeken te dienen.
 
 ![&quot;Legacy&quot; Dispatcher Setup - Niet erg algemeen volgens de huidige standaarden](assets/chapter-2/legacy-dispatcher-setup.png)
 
