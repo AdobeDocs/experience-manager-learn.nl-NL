@@ -10,17 +10,17 @@ role: Developer
 level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3299'
+source-wordcount: '3285'
 ht-degree: 0%
 
 ---
 
 
-# Client-Side Libraries en Front-end Workflow {#client-side-libraries}
+# Client-Side Libraries en front-end workflow {#client-side-libraries}
 
-Leer hoe Client-Side Bibliotheken of clientlibs worden gebruikt om CSS en JavaScript voor een implementatie van Adobe Experience Manager (AEM) Plaatsen op te stellen en te beheren. In deze zelfstudie wordt ook uitgelegd hoe de [ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)-module, een losgekoppeld [webpack](https://webpack.js.org/)-project, kan worden geïntegreerd in het end-to-end buildproces.
+Leer hoe Client-Side Bibliotheken of clientlibs worden gebruikt om CSS en JavaScript voor een implementatie van Adobe Experience Manager (AEM) Plaatsen op te stellen en te beheren. In deze zelfstudie wordt ook uitgelegd hoe de [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)-module, een losgekoppeld [webpack](https://webpack.js.org/)-project, kan worden geïntegreerd in het end-to-end buildproces.
 
 ## Vereisten {#prerequisites}
 
@@ -65,7 +65,7 @@ U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wkn
 1. Leer hoe te om UI.Frontend Module en een webpack ontwikkelingsserver voor specifieke front-end ontwikkeling te gebruiken.
 1. Begrijp de werkstroom van begin tot eind van het leveren van gecompileerde CSS en JavaScript aan een implementatie van Plaatsen.
 
-## Wat u {#what-you-will-build} wilt maken
+## Wat u gaat maken {#what-you-will-build}
 
 In dit hoofdstuk zult u sommige basislijnstijlen voor de plaats WKND en het Malplaatje van de Pagina van het Artikel in een inspanning toevoegen om de implementatie dichter aan [UI ontwerpmodellen te brengen](assets/pages-templates/wknd-article-design.xd). U zult een geavanceerde front-end werkschema gebruiken om een webpack project in een AEM cliëntbibliotheek te integreren.
 
@@ -81,7 +81,7 @@ Client-Side Libraries biedt een mechanisme voor het organiseren en beheren van C
 1. Afhankelijkheden van raamwerken van derden op georganiseerde wijze beheren
 1. Minimaliseer het aantal cliënt-zijverzoeken door CSS/JS in één of twee verzoeken samen te voegen.
 
-Meer informatie over het gebruik van [Client-Side Libraries vindt u hier.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
+Meer informatie over het gebruik van [Client-Side Libraries vindt u hier.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
 
 Bibliotheken aan de clientzijde hebben enkele beperkingen. Het meest in het bijzonder is een beperkte ondersteuning voor populaire front-end talen zoals Sass, LESS en TypeScript. In het leerprogramma zullen wij bekijken hoe **ui.frontend** module dit kan helpen oplossen.
 
@@ -89,7 +89,7 @@ Implementeer de basis van de startcode naar een lokale AEM-instantie en navigeer
 
 ## Client-Side Libraries-organisatie {#organization}
 
-Daarna zullen wij de organisatie van clientlibs onderzoeken die door [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) worden geproduceerd.
+Daarna zullen wij de organisatie van clientlibs onderzoeken die door [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) worden geproduceerd.
 
 ![Clientbibliotheekorganisatie op hoog niveau](./assets/client-side-libraries/high-level-clientlib-organization.png)
 
@@ -117,9 +117,9 @@ Daarna zullen wij de organisatie van clientlibs onderzoeken die door [AEM Projec
 
 1. Merk op dat `clientlib-site` en `clientlib-dependencies` van broncontrole worden genegeerd. Dit is door ontwerp, aangezien deze bij bouwstijltijd door de `ui.frontend` module zullen worden geproduceerd.
 
-## Basisstijlen {#base-styles} bijwerken
+## Basisstijlen bijwerken {#base-styles}
 
-Werk vervolgens de basisstijlen bij die zijn gedefinieerd in de module **[ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)**. De dossiers in `ui.frontend` module zullen `clientlib-site` en `clientlib-dependecies` bibliotheken produceren die het thema van de Plaats en om het even welke derdegebiedsdelen bevatten.
+Werk vervolgens de basisstijlen bij die zijn gedefinieerd in de module **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)**. De dossiers in `ui.frontend` module zullen `clientlib-site` en `clientlib-dependecies` bibliotheken produceren die het thema van de Plaats en om het even welke derdegebiedsdelen bevatten.
 
 Clientbibliotheken hebben enkele beperkingen wat betreft de ondersteuning van talen zoals [Sass](https://sass-lang.com/) of [TypeScript](https://www.typescriptlang.org/). Er zijn een aantal open-bronhulpmiddelen zoals [NPM](https://www.npmjs.com/) en [webpack](https://webpack.js.org/) die front-end ontwikkeling versnellen en optimaliseren. Het doel van de **ui.frontend** module is deze hulpmiddelen te kunnen gebruiken om een meerderheid van front-end brondossiers te beheren.
 
@@ -164,7 +164,7 @@ Clientbibliotheken hebben enkele beperkingen wat betreft de ondersteuning van ta
 
    Inspect de gewijzigde bestanden voor meer informatie over de WKND-stijlimplementatie.
 
-## Inspect the ui.frontend integration {#ui-frontend-integration}
+## Inspect de integratie van ui.frontend {#ui-frontend-integration}
 
 Een zeer belangrijk integratiestuk dat in **ui.frontend** module wordt gebouwd, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) neemt gecompileerde CSS en JS artefacten van een webpack/npm project en zet hen in AEM cliënt-zijbibliotheken om.
 
@@ -200,7 +200,7 @@ Deze integratie wordt automatisch ingesteld door het AEM Project Archetype. Ga v
 
    >[!NOTE]
    >
-   >Er is ook een `npm run prod` profiel dat JS en CSS minieme. Dit is de standaardcompilatie wanneer de webpack-build wordt geactiveerd via Maven. Meer details over [ui.frontend module kunnen hier worden gevonden](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
+   >Er is ook een `npm run prod` profiel dat JS en CSS minieme. Dit is de standaardcompilatie wanneer de webpack-build wordt geactiveerd via Maven. Meer details over [ui.frontend module kunnen hier worden gevonden](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 1. Inspect het bestand `site.css` onder `ui.frontend/dist/clientlib-site/site.css`. Dit is gecompileerde CSS die op de brondossiers van de Klasse wordt gebaseerd.
 
@@ -315,7 +315,7 @@ Daarna, herzien hoe de clientlibs in de Pagina van de AEM van verwijzingen worde
 
    >[!WARNING]
    >
-   >Op de publicatiezijde is het van essentieel belang dat de clientbibliotheken **niet** worden aangeboden bij **/apps**, omdat dit pad om beveiligingsredenen moet worden beperkt met behulp van de [Dispatcher-filtersectie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). De [allowProxy-eigenschap](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) van de clientbibliotheek zorgt ervoor dat de CSS en JS worden aangeboden via **/etc.clientlibs**.
+   >Op de publicatiezijde is het van essentieel belang dat de clientbibliotheken **niet** worden aangeboden bij **/apps**, omdat dit pad om beveiligingsredenen moet worden beperkt met behulp van de [Dispatcher-filtersectie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). De [allowProxy-eigenschap](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) van de clientbibliotheek zorgt ervoor dat de CSS en JS worden aangeboden via **/etc.clientlibs**.
 
 ## Webpack DevServer - Statische opmaakcodes {#webpack-dev-static}
 
@@ -371,7 +371,7 @@ Deze techniek is handig als de meeste stijlen en front-end code worden uitgevoer
 
 1. U kunt **stop** de webpack server van de bevellijn door `CTRL+C` te typen.
 
-## Webpack DevServer - Controle en synchronisatie {#webpack-dev-watch}
+## Webpack DevServer - Bekijken en synchroniseren {#webpack-dev-watch}
 
 Een andere techniek is om Node.js- controle voor om het even welke dossierveranderingen in de src- dossiers in de `ui.frontend` module te hebben. Wanneer een bestand wordt gewijzigd, wordt de clientbibliotheek snel gecompileerd en wordt de Npm-module [aemsync](https://www.npmjs.com/package/aemsync) gebruikt om de wijzigingen te synchroniseren met een actieve AEM.
 
@@ -427,9 +427,9 @@ Bekijk de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wkn
 1. Clone the [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) repository.
 1. Bekijk de `tutorial/client-side-libraries-solution` vertakking.
 
-## Extra hulpmiddelen en Middelen {#additional-resources}
+## Aanvullende hulpmiddelen en bronnen {#additional-resources}
 
-### gewijzigd {#develop-aemfed}
+### geaëerd {#develop-aemfed}
 
 [****](https://aemfed.io/) bevat een opensource opdrachtregelprogramma waarmee u de ontwikkeling aan de voorkant kunt versnellen. Het wordt aangedreven door [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://www.npmjs.com/package/browser-sync) en [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
@@ -437,7 +437,7 @@ Op een hoog niveau **aemfed** is ontworpen om naar dossierveranderingen binnen d
 
 Als u veel werk doet binnen de **ui.apps** module, die manuscripten van HTML wijzigt en douanecomponenten creeert, **aemfed** kan een zeer krachtig hulpmiddel aan gebruik zijn. [Klik hier voor volledige documentatie.](https://github.com/abmaonline/aemfed).
 
-### Fouten opsporen in bibliotheken aan de clientzijde {#debugging-clientlibs}
+### Fouten opsporen in clientbibliotheken {#debugging-clientlibs}
 
 Bij verschillende methoden van **categorieën** en **embedds** om veelvoudige cliëntbibliotheken te omvatten kan het lastig zijn om problemen op te lossen. AEM stelt verschillende hulpmiddelen beschikbaar om hierbij te helpen. Een van de belangrijkste gereedschappen is **Client-bibliotheken opnieuw samenstellen**. Hierdoor worden AEM gedwongen om alle LESS-bestanden opnieuw te compileren en de CSS te genereren.
 
