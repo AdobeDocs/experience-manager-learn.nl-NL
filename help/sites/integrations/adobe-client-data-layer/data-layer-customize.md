@@ -1,21 +1,16 @@
 ---
 title: De gegevenslaag voor de Adobe-client aanpassen met AEM componenten
 description: Leer hoe u de gegevenslaag Adobe Client aanpast met inhoud van aangepaste AEM Componenten. Leer hoe u API's van AEM Core Components kunt gebruiken om de gegevenslaag uit te breiden en aan te passen.
-feature: Adobe Client Data Layer, Core Component
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: use
 version: cloud-service
-kt: 6265
-thumbnail: KT-6265.jpg
 topic: Integrations
+feature: Adobe Client Data Layer, Core Components
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6265
+thumbnail: KT-6265.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2028'
 ht-degree: 0%
 
 ---
@@ -41,9 +36,9 @@ In dit leerprogramma zult u diverse opties onderzoeken om de Laag van Gegevens v
 
 Een **lokale ontwikkelomgeving** is nodig om deze zelfstudie te voltooien. Screenshots en video worden gevangen gebruikend het AEM als Cloud Service SDK die op macOS loopt. Opdrachten en code zijn onafhankelijk van het lokale besturingssysteem, tenzij anders aangegeven.
 
-**Nieuw bij AEM als Cloud Service?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Nieuw bij AEM als Cloud Service?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-**Nieuw bij AEM 6.5?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+**Nieuw bij AEM 6.5?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## De WKND-referentiesite downloaden en implementeren {#set-up-wknd-site}
 
@@ -86,7 +81,7 @@ Deze zelfstudie breidt de component Byline in de WKND-verwijzingssite uit. Klone
 
    Merk op dat de component Byline niet in de Laag van Gegevens vermeld is.
 
-## Het model voor naamregelverkoop {#sling-model} bijwerken
+## Het model voor bylineverkoop bijwerken {#sling-model}
 
 Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eerst het Sling-model van de component bijwerken. Werk vervolgens de Java-interface en implementatie van het Sling Model van de Naamregel bij om een nieuwe methode `getData()` toe te voegen. Deze methode zal de eigenschappen bevatten wij in de gegevenslaag willen injecteren.
 
@@ -175,7 +170,7 @@ Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eers
    $ mvn clean install -PautoInstallBundle
    ```
 
-## De HTML-naamregel {#htl} bijwerken
+## De HTML voor naamregel bijwerken {#htl}
 
 Werk vervolgens `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/block-statements.html?lang=en#htl) bij. HTML (HTML Template Language) is de sjabloon die wordt gebruikt om de HTML van de component te renderen.
 
@@ -302,7 +297,7 @@ De klikbare elementen zijn gewoonlijk een knoop CTA of een navigatiekoppeling. J
 
    De gebeurtenis `cmp:click` is het eenvoudigst om in te sluiten. Voor complexere componenten en om ander gedrag te volgen is het mogelijk om douane javascript toe te voegen en nieuwe gebeurtenissen te registreren. Een goed voorbeeld hiervan is de Carousel-component, die een gebeurtenis `cmp:show` activeert wanneer een dia wordt geschakeld. Zie [broncode voor meer details](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js#L219).
 
-## Het hulpprogramma DataLayerBuilder {#data-layer-builder} gebruiken
+## Het hulpprogramma DataLayerBuilder gebruiken {#data-layer-builder}
 
 Toen het het Verdelen Model [bijgewerkt ](#sling-model) vroeger in het hoofdstuk was, kozen wij om het Koord van JSON tot stand te brengen door `HashMap` te gebruiken en elk van de eigenschappen manueel te plaatsen. Deze methode werkt prima voor kleine eenmalige componenten, maar voor componenten die de AEM Core Components uitbreiden, kan dit in veel extra code resulteren.
 
@@ -438,4 +433,4 @@ U verkende enkel een paar manieren om de Laag van Gegevens van de Cliënt van de
 
 * [Documentatie gegevenslaag Adobe-client](https://github.com/adobe/adobe-client-data-layer/wiki)
 * [De Integratie van de Laag van gegevens met de Componenten van de Kern](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md)
-* [Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
