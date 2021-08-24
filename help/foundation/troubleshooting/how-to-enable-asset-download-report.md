@@ -2,14 +2,13 @@
 title: Rapport voor het downloaden van bedrijfsmiddelen inschakelen
 description: Stappen om het rapport voor het downloaden van bedrijfsmiddelen in te schakelen
 type: Troubleshooting
-product: Assets
 role: Admin
 level: Beginner
 version: 6.5, cloud-service
 feature: Adobe-itemkoppeling
 topic: Beheer
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '34'
 ht-degree: 0%
