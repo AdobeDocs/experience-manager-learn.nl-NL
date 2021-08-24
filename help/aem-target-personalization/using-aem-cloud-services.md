@@ -3,14 +3,13 @@ title: Adobe Experience Manager integreren met Adobe Target met behulp van Cloud
 seo-title: Adobe Experience Manager (AEM) integreren met Adobe Target met behulp van verouderde Cloud Services
 description: Stap voor stap doorloopt u hoe u Adobe Experience Manager (AEM) met Adobe Target kunt integreren met AEM Cloud Service
 seo-description: Stap voor stap doorloopt u hoe u Adobe Experience Manager (AEM) met Adobe Target kunt integreren met AEM Cloud Service
-feature: Experience Fragments
-topic: Personalization
+feature: Ervaringsfragmenten
+topic: Personalisatie
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '386'
 ht-degree: 2%
 
 ---
