@@ -2,12 +2,12 @@
 user-guide-title: AEM Assets-video's en -Tutorials
 user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Assets.
 breadcrumb-title: AEM Assets Tutorials
-sub-product: elementen
+feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 team: TM
-source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 7%
+source-wordcount: '343'
+ht-degree: 6%
 
 ---
 
@@ -63,12 +63,18 @@ ht-degree: 7%
 + Delen en distributie{#sharing}
    + [Middelen downloaden](./sharing/download.md)
    + [Elementen publiceren](./sharing/publish.md)
-   + [Brand Portal](./sharing/brand-portal.md)
+
+   + Brand Portal{#brand-portal}
+      + [Brand Portal](./sharing/brand-portal.md)
+      + [AEM Brand Portal configureren](brand-portal/configure.md)
+      + [Asset Souring configureren](brand-portal/configure-asset-sourcing.md)
+      + [Renderingdownloads inschakelen](brand-portal/enable-renditions-download.md)
    + Asset Share{#assets-share}
       + [Commentaar voor het delen van bedrijfsmiddelen](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM](./sharing/asset-share-commons-technical-video-setup.md)
       + [Commentaar voor het delen van elementen](./sharing/asset-share-commons-feature-video-theming.md)
    + [Gekoppelde assets](./sharing/connected-assets.md)
+
 
 + Integreren met Creative Workflows{#creative-workflows}
    + [App AEM](./creative-workflows/aem-desktop-app.md)
@@ -107,6 +113,22 @@ ht-degree: 7%
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + [Dynamic Media Smart Crop Video](dynamic-media/dynamic-media-smart-crop-video.md)
    + [Dynamic Media Core-componenten](dynamic-media/dynamic-media-core-components.md)
+
+   + Tutorials {#tutorials}
+      + [Carrouselsets maken](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
+      + [Afbeeldingssets maken](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
+      + [Voorinstellingen voor afbeeldingen maken](dynamic-media/tutorials/creating-image-presets.md)
+      + [Profielen van SmartCrop-afbeeldingen maken](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
+      + [Videoprofielen maken](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
+      + [Verwerkingsmiddelen](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+      + [Een beveiligde voorvertoningsserver configureren](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
+      + [URL&#39;s genereren en codes insluiten](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
+      + [Een exporttaak activeren](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
+      + [De CDN-cache ongeldig maken](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
+      + [Dynamic Media Core-componenten gebruiken](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Dynamic Media-configuratie verwijderen](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
+      + [Middelen downloaden in Dynamic Media Classic App](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
+      + [Dynamic Media Classic IPS API&#39;s](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
 + Vertaling {#translation}
    + [Bronbestandsomzetting](translation/source-file-translation-feature-video-use.md)
