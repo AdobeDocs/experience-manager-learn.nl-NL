@@ -1,30 +1,24 @@
 ---
 title: Ontwikkelen met de AEM SPA Editor - Hello World-zelfstudie
 description: AEM SPA Editor biedt ondersteuning voor contextbewerkingen van een toepassing of SPA van één pagina. Deze zelfstudie is een inleiding op SPA ontwikkeling die moet worden gebruikt met AEM SPA Editor JS SDK. De zelfstudie breidt de app We.Retail Journal uit door een aangepaste Hello World-component toe te voegen. Gebruikers kunnen de zelfstudie voltooien met Reageren of Angulars.
-sub-product: sites, content-services
-feature: Spa Editor
-topics: development, single-page-applications
-audience: developer
-doc-type: tutorial
-activity: use
 version: 6.3, 6.4, 6.5
 topic: SPA
+feature: SPA Editor
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3148'
+source-wordcount: '3142'
 ht-degree: 0%
 
 ---
 
 
-# Ontwikkelen met de AEM SPA Editor - Hello World Tutorial {#developing-with-the-aem-spa-editor-hello-world-tutorial}
+# Ontwikkelen met de AEM SPA Editor - Hello World-zelfstudie {#developing-with-the-aem-spa-editor-hello-world-tutorial}
 
 >[!WARNING]
 >
-> Deze zelfstudie is **afgekeurd**. Het wordt aanbevolen om: [Aan de slag met de AEM SPA Editor en Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) of [Aan de slag met de AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+> Deze zelfstudie is **afgekeurd**. Het wordt aanbevolen om: [Aan de slag met de AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html) of [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
 AEM SPA Editor biedt ondersteuning voor contextbewerkingen van een toepassing of SPA van één pagina. Deze zelfstudie is een inleiding op SPA ontwikkeling die moet worden gebruikt met AEM SPA Editor JS SDK. De zelfstudie breidt de app We.Retail Journal uit door een aangepaste Hello World-component toe te voegen. Gebruikers kunnen de zelfstudie voltooien met Reageren of Angulars.
 
@@ -34,7 +28,7 @@ AEM SPA Editor biedt ondersteuning voor contextbewerkingen van een toepassing of
 >
 > De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
-## Vereiste lezen {#prereq}
+## Vereiste lezing {#prereq}
 
 Deze zelfstudie is bedoeld om de stappen te benadrukken die nodig zijn om een SPA component toe te wijzen aan een AEM component om in-context het uitgeven toe te laten. Gebruikers die deze zelfstudie starten, moeten vertrouwd zijn met de basisbeginselen van ontwikkeling met Adobe Experience Manager, AEM en met React of Angular frameworks. De zelfstudie behandelt zowel back-end als front-end ontwikkelingstaken.
 
@@ -166,7 +160,7 @@ SPA ontwikkelherhalingen zijn onafhankelijk van AEM. Wanneer de SPA klaar is om 
 1. Met de [**aem-clientlib-generator**](https://www.npmjs.com/package/aem-clientlib-generator) van het SPA project wordt de gecompileerde SPA ingesloten als een AEM clientbibliotheek in het AEM project.
 1. Het AEM project produceert een AEM pakket, met inbegrip van de gecompileerde SPA, plus andere ondersteunende AEM code.
 
-## AEM component {#aem-component} maken
+## AEM maken {#aem-component}
 
 **Persona: AEM Developer**
 
@@ -299,7 +293,7 @@ Met [!DNL Eclipse] of andere [!DNL IDE] importeert u het Web.Retail Journal Mave
 
    ![Ingevoerde componentenstructuur in CRXDE Lite](assets/spa-editor-helloworld-tutorial-use/updated-component-withdialogs.png)
 
-## Verstijlmodel maken {#create-sling-model}
+## Verkoopmodel maken {#create-sling-model}
 
 **Persona: AEM Developer**
 
@@ -309,7 +303,7 @@ Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL H
 
 >[!NOTE]
 >
->Als beste praktijken, zouden de ontwikkelaars [AEM de Componenten van de Kern ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) moeten gebruiken wanneer mogelijk. Core Components bieden [!DNL Sling Models] onder andere JSON-uitvoer die &quot;SPA-klaar&quot; is, zodat ontwikkelaars zich meer kunnen richten op front-end presentaties.
+>Als beste praktijken, zouden de ontwikkelaars [AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) moeten gebruiken wanneer mogelijk. Core Components bieden [!DNL Sling Models] onder andere JSON-uitvoer die &quot;SPA-klaar&quot; is, zodat ontwikkelaars zich meer kunnen richten op front-end presentaties.
 
 1. In de redacteur van uw keus, open **wij-detailhandel-dagboek-komma-komma&#39;s** project ( `<src>/aem-sample-we-retail-journal/bundles/commons`).
 1. In het pakket `com.adobe.cq.sample.spa.commons.impl.models`:
@@ -699,7 +693,7 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    MapTo('we-retail-journal/components/helloworld')(HelloWorldComponent, HelloWorldEditConfig);
    ```
 
-   De volledige code voor [**mapping.ts** is hier te vinden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/mapping.ts)
+   De volledige code voor [**mapping.ts** kan hier worden gevonden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/mapping.ts)
 
 1. `src/app.module.ts` bijwerken om **NgModule** bij te werken. Voeg **`HelloWorldComponent`** als **verklaring** toe die tot **AppModule** behoort. Voeg ook `HelloWorldComponent` als **entryComponent** toe zodat het wordt gecompileerd en dynamisch in app wordt omvat aangezien het model JSON wordt verwerkt.
 
@@ -753,7 +747,7 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    >
    > **main.** jsis de gebundelde Angular-app. De code is niet meer leesbaar voor mensen. De npm run build-opdracht heeft een geoptimaliseerde build geactiveerd die gecompileerde JavaScript uitvoert die door moderne browsers kan worden geïnterpreteerd.
 
-## Sjabloon {#template-update} bijwerken
+## De sjabloon bijwerken {#template-update}
 
 1. Navigeer naar de bewerkbare sjabloon voor de reactieversie en/of Angular-versie:
 
