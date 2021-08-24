@@ -12,9 +12,9 @@ thumbnail: kt-4419.jpg
 topic: Ontwikkeling
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '484'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager die XFA-fo
 
 ## Vereiste
 
-Controleer of je een werkende versie van AEM Forms hebt. Volg de [installatiehandleiding](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) om AEM Forms te installeren en configureren
+Controleer of je een werkende versie van AEM Forms hebt. Volg de [installatiehandleiding](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) om AEM Forms te installeren en configureren
 
 ## Uw eerste HTML5-formulier maken
 
@@ -58,7 +58,7 @@ Met de geavanceerde eigenschappen van de xdp-sjabloon kunt u de publicatiedatum 
 
 **URL**  verzenden - Dit is de URL die uw HTML5-formulier verzendt. In de volgende les zullen we dit behandelen. Als hier geen verzendURL is opgegeven, wordt de standaardverzendhandler aangeroepen die de formuliergegevens retourneert naar de browser.
 
-**HTML-renderprofiel**  - HTML5-formulieren hebben het idee van profielen die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het standaardrenderprofiel niet aan uw behoeften voldoet, kan een [aangepast profiel](https://docs.adobe.com/content/help/en/experience-manager-64/forms/html5-forms/custom-profile.html) worden gemaakt en aan het formulier worden gekoppeld.
+**HTML-renderprofiel**  - HTML5-formulieren hebben het idee van profielen die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het standaardrenderprofiel niet aan uw behoeften voldoet, kan een [aangepast profiel](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) worden gemaakt en aan het formulier worden gekoppeld.
 
 **De vooraf ingevulde Dienst**  - de vooraf ingevulde dienst wordt typisch gebruikt om uw vorm met gegevens te bevolken die van een achterste gegevensbron worden opgehaald.
 
