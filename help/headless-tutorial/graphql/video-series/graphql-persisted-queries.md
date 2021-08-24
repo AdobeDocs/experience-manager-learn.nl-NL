@@ -1,17 +1,16 @@
 ---
 title: GrafiekQL Blijvende query's
 description: Leer hoe u geplakte query's in AEM kunt inschakelen, maken en uitvoeren.
-sub-product: elementen
 version: cloud-service
 topic: Koploos, inhoudsbeheer
-feature: GraphQL API's
+feature: GraphQL API
 role: Developer
 level: Beginner
 kt: 7872
 thumbnail: 333429.jpeg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '77'
 ht-degree: 0%
 
 ---
