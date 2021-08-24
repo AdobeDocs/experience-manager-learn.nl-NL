@@ -10,9 +10,9 @@ activity: use
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2659'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Een van de belangrijkste sterke punten van het Dynamic Media Classic-concept voo
 
 Aan het einde van deze sectie van de zelfstudie leert u hoe u het volgende kunt doen:
 
-- Afbeeldingen uitsnijden in Dynamic Media Classic en opslaan als nieuwe master bestanden of als virtuele afbeeldingen. [Meer](https://docs.adobe.com/help/en/dynamic-media-classic/using/master-files/cropping-image.html) informatie.
-- Sla virtuele aangepaste afbeeldingen op en gebruik deze in plaats van master elementen. [Meer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/adjusting-image.html) informatie.
-- Maak Zoomdoelen op uw afbeeldingen om de hooglichten van de afbeeldingen te tonen. [Meer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html) informatie.
+- Afbeeldingen uitsnijden in Dynamic Media Classic en opslaan als nieuwe master bestanden of als virtuele afbeeldingen. [Meer](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html) informatie.
+- Sla virtuele aangepaste afbeeldingen op en gebruik deze in plaats van master elementen. [Meer](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html) informatie.
+- Maak Zoomdoelen op uw afbeeldingen om de hooglichten van de afbeeldingen te tonen. [Meer](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html) informatie.
 
 ## Uitsnijden
 
@@ -45,8 +45,8 @@ Dynamic Media Classic beschikt over enkele gereedschappen voor het bewerken van 
 
 U kunt het gereedschap Uitsnijden openen in Dynamic Media Classic vanaf de pagina Details voor een element of door op de knop **Bewerken** te klikken. U kunt het gereedschap op twee manieren uitsnijden:
 
-- De standaarduitsnijdmodus waarin u de grepen van het uitsnijdvenster of de tekstwaarden in het vak Grootte sleept. Leer hoe u [Handmatig uitsnijden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Bijsnijden. Gebruik deze optie om extra witruimte rond de afbeelding te verwijderen door het aantal pixels te berekenen dat niet overeenkomt met de afbeelding. Leer hoe u [Uitsnijden door bijsnijden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- De standaarduitsnijdmodus waarin u de grepen van het uitsnijdvenster of de tekstwaarden in het vak Grootte sleept. Leer hoe u [Handmatig uitsnijden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
+- Bijsnijden. Gebruik deze optie om extra witruimte rond de afbeelding te verwijderen door het aantal pixels te berekenen dat niet overeenkomt met de afbeelding. Leer hoe u [Uitsnijden door bijsnijden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Handmatig uitsnijden_
 
@@ -137,7 +137,7 @@ Het proces is heel eenvoudig: klik op de functie, geef deze een beschrijvende na
 
 U kunt ook zelf bepalen of u Zoomdoelen wilt gebruiken. Niet alle viewertypen kunnen zoomdoelen weergeven (deze worden bijvoorbeeld niet ondersteund door de uitvlieger).
 
-Leer hoe u [Zoomdoelen maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
+Leer hoe u [Zoomdoelen maken](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
 
 ![afbeelding](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 
