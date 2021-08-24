@@ -10,9 +10,9 @@ activity: use
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2734'
+source-wordcount: '2714'
 ht-degree: 0%
 
 ---
@@ -34,12 +34,12 @@ De workflow in Dynamic Media Classic-oplossingen bestaat uit drie hoofdstappen:
 
 Dit is het begin van de workflow. In deze stap verzamelt of maakt u de broninhoud die past in de workflow die u gebruikt en uploadt u deze naar Dynamic Media Classic. Het systeem ondersteunt meerdere bestandstypen voor afbeeldingen, video en lettertypen, maar ook voor PDF, Adobe Illustrator en Adobe InDesign.
 
-Zie de volledige lijst met [Ondersteunde bestandstypen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
+Zie de volledige lijst met [Ondersteunde bestandstypen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 U kunt broninhoud op verschillende manieren uploaden:
 
-- Direct vanaf uw bureaublad of lokaal netwerk. [Leer hoe](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
-- Van een Classic FTP-server van Dynamic Media. [Leer hoe](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+- Direct vanaf uw bureaublad of lokaal netwerk. [Leer hoe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
+- Van een Classic FTP-server van Dynamic Media. [Leer hoe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 
 De standaardmodus is Van bureaublad, waar u naar bestanden op uw lokale netwerk bladert en het uploaden start.
 
@@ -67,11 +67,11 @@ Vereist dat de vervangende afbeelding dezelfde bestandsnaamextensie heeft als de
 - **Overschrijf in elke map dezelfde naam voor basiselementen, ongeacht de extensie**.
 Deze optie is de meest inclusieve vervangingsregel. U kunt een vervangende afbeelding uploaden naar een andere map dan het origineel, een bestand met een andere bestandsnaamextensie uploaden en het oorspronkelijke bestand vervangen. Als het oorspronkelijke bestand zich in een andere map bevindt, bevindt de vervangende afbeelding zich in de nieuwe map waarnaar het is geüpload.
 
-Meer informatie over [Afbeeldingen overschrijven Option](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
+Meer informatie over [Afbeeldingen overschrijven Option](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
 Hoewel dit niet verplicht is, kunt u tijdens het uploaden met een van de twee bovenstaande methoden taakopties voor die specifieke upload opgeven, bijvoorbeeld om een terugkerende upload te plannen, opties voor uitsnijden bij het uploaden instellen en vele andere. Deze kunnen voor sommige werkschema&#39;s waardevol zijn, zodat is het de moeite waard om te overwegen of zij voor van u kunnen zijn.
 
-Meer informatie over [Taakopties](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+Meer informatie over [Taakopties](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
 Uploaden is de eerste noodzakelijke stap in een workflow, omdat Dynamic Media Classic niet kan werken met inhoud die zich nog niet in het systeem bevindt. Achter de schermen tijdens het uploaden registreert het systeem elk geüpload element met de gecentraliseerde Dynamic Media Classic-database, wijst het een id toe en kopieert het naar opslag. Bovendien zet het systeem afbeeldingsbestanden om in een indeling waarmee u op dynamische wijze kunt vergroten/verkleinen en zoomen en zet het videobestanden om in de webvriendelijke indeling van MP4.
 
@@ -81,7 +81,7 @@ Wanneer u een afbeelding van een willekeurig type uploadt naar Dynamic Media Cla
 
 ![afbeelding](assets/main-workflow/pyramid-p-tiff.png)
 
-Tijdens het omzetten van de afbeelding maakt Dynamic Media Classic gebruik van een &#39;momentopname&#39; van de volledige grootte van de afbeelding, schaalt deze met de helft en slaat deze op, schaalt deze nogmaals met de helft en slaat deze op, enzovoort, totdat deze wordt gevuld met even veelvouden van de oorspronkelijke grootte. Een P-TIFF van 2000 pixels beschikt bijvoorbeeld over een grootte van 1000, 500, 250 en 125 pixels (en kleiner) in hetzelfde bestand. Het P-TIFF-bestand is de indeling van wat een &quot;master afbeelding&quot; in Dynamic Media Classic wordt genoemd.
+Tijdens het omzetten van de afbeelding maakt Dynamic Media Classic gebruik van een &#39;momentopname&#39; van de volledige grootte van de afbeelding, schaalt deze met de helft en slaat deze op, schaalt deze nogmaals met de helft en slaat deze op, enzovoort, totdat deze wordt gevuld met even veelvouden van de oorspronkelijke grootte. Een P-TIFF van 2000 pixels beschikt bijvoorbeeld over een grootte van 1000, 500, 250 en 125 pixels (en kleiner) in hetzelfde bestand. Het P-TIFF-bestand is de indeling van een zogenaamde &quot;master afbeelding&quot; in Dynamic Media Classic.
 
 Wanneer u om een bepaalde groottebeeld verzoekt, staat het creëren van P-TIFF de Server van het Beeld voor de Klassiek van Dynamic Media toe om de volgende grotere grootte snel te vinden en het neer te schrapen. Als u bijvoorbeeld een afbeelding van 2000 pixels uploadt en een afbeelding van 100 pixels aanvraagt, vindt Dynamic Media Classic de versie van 125 pixels en schaalt deze naar 100 pixels in plaats van te schalen van 2000 naar 100 pixels. Dit maakt de bewerking zeer snel. Wanneer u op een afbeelding zoomt, kan de zoomviewer bovendien alleen een tegel van de afbeelding waarop wordt ingezoomd aanvragen in plaats van de volledige afbeelding met volledige resolutie. Zo ondersteunt de master afbeeldingsindeling, het P-TIFF-bestand, zowel dynamische vergroting als vergroting.
 
@@ -100,7 +100,7 @@ Op dezelfde manier kunt u uw master bronvideo uploaden naar Dynamic Media Classi
 
 **Hoewel er geen minimale afbeeldingsgrootte is, raden we u niet aan gigantische afbeeldingen te uploaden.** Een gigantische afbeelding kan worden beschouwd als meer dan 4000 pixels. Het uploaden van afbeeldingen van deze grootte kan mogelijke onvolkomenheden zoals stofkorrels of haren in de afbeelding laten zien. Dergelijke afbeeldingen nemen ook meer ruimte in beslag op de Dynamic Media Classic-server, waardoor u uw contractueel vastgelegde opslaglimiet kunt overschrijden.
 
-Meer informatie over [Bestanden uploaden](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+Meer informatie over [Bestanden uploaden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
 ## Stap 2: Auteur (en publiceren)
 
@@ -142,14 +142,14 @@ Nieuw geüploade en gepubliceerde elementen worden meteen zichtbaar, terwijl bij
 
 Dit is doorgaans geen probleem, tenzij er een fout is opgetreden en de afbeelding/het element dezelfde naam heeft als de eerder gepubliceerde versie, maar er is een probleem met de afbeelding. U hebt bijvoorbeeld per ongeluk een versie met een lage resolutie geüpload of uw art director heeft de afbeelding niet goedgekeurd. In dit geval wilt u de oorspronkelijke afbeelding terugroepen en deze vervangen door een nieuwe versie met dezelfde element-id.
 
-Leer hoe te om [manueel het Geheime voorgeheugen voor URLs te ontruimen die moeten worden bijgewerkt](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+Leer hoe te om [manueel het Geheime voorgeheugen voor URLs te ontruimen die moeten worden bijgewerkt](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
 >[!TIP]
 >
 >Om problemen met caching vertraging te vermijden, werk altijd vooruit — een avond, een dag, twee weken, enz. Stel uw werk in op tijd voor QA/acceptatie voor interne partijen voordat u het openbaar maakt. Zelfs als je een avond eerder werkt, kun je wijzigingen aanbrengen en die avond opnieuw publiceren. &#39;s Ochtends is de 10 uur verstreken en wordt de cache bijgewerkt met de juiste afbeelding.
 
-- Meer informatie over [Een publicatietaak maken](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
-- Meer informatie over [Publiceren](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- Meer informatie over [Een publicatietaak maken](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- Meer informatie over [Publiceren](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Stap 3: Leveren
 
@@ -187,4 +187,4 @@ U kunt een voorvertoning van uw afbeeldingen in meerdere formaten weergeven met 
 
 U kunt de optie **Zoomen** ook gebruiken om een voorvertoning van uw afbeelding weer te geven in een van de vele vooraf gebouwde zoomvoorinstellingen, die zijn gebaseerd op verschillende inbegrepen zoomviewers.
 
-Meer informatie over [Elementen voorvertonen](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+Meer informatie over [Elementen voorvertonen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).
