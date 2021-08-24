@@ -1,15 +1,14 @@
 ---
 title: Werken met multimedia en gelijktijdige ontwikkeling
 description: Leer over de voordelen, de uitdagingen, en de technieken om een multi-huurdersimplementatie met de Middelen van Adobe Experience Manager te beheren.
-feature: Connected Assets
+feature: Gekoppelde assets
 version: 6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2022'
 ht-degree: 0%
 
 ---
@@ -91,7 +90,7 @@ Dit elimineert niet de behoefte voor veelvoudige teams om van en potentieel de z
 
 Om ervoor te zorgen dat de veranderingen die aan dit kernpakket worden aangebracht de functionaliteit van het systeem niet verstoren, adviseren wij dat een senior ontwikkelaar of een team van ontwikkelaars toezicht handhaven. Eén mogelijkheid is één team te hebben dat alle wijzigingen in dit pakket beheert. een andere is dat teams pull-verzoeken indienen die door deze middelen worden herzien en samengevoegd. Het is belangrijk dat de teams een bestuursmodel opstellen en ermee instemmen en dat ontwikkelaars dit model volgen.
 
-## Implementatiebereik&amp;nbsp {#managing-deployment-scope} beheren
+## Implementatiebereik &amp;beheren {#managing-deployment-scope}
 
 Aangezien de verschillende teams hun code aan de zelfde bewaarplaats opstellen, is het belangrijk dat zij elkaars veranderingen niet beschrijven. AEM heeft een mechanisme om dit te controleren wanneer het opstellen van inhoudspakketten, de filter. xml-bestand. Het is belangrijk dat er geen overlapping is tussen filters.  xml- dossiers, anders kon de plaatsing van één team potentieel de vorige plaatsing van een ander team wissen. Ter illustratie hiervan raadpleegt u de volgende voorbeelden van goed gemaakte versus problematische filterbestanden:
 
@@ -113,7 +112,7 @@ Bedekkingen worden vaak gebruikt om de AEM van het vak uit te breiden of te verv
 
 Als er geen consensus kan worden bereikt tussen de verschillende bedrijfseenheden, zou een mogelijke oplossing zijn om overlays eenvoudigweg niet te gebruiken. In plaats daarvan, creeer een douaneexemplaar van de functionaliteit en stel het via een verschillende weg voor elke huurder bloot. Dit staat elke huurder toe om een volledig verschillende gebruikerservaring te hebben, maar deze benadering verhoogt de kosten van implementatie en verdere verbeteringsinspanningen eveneens.
 
-### Workflow Launchers {#workflow-launchers}
+### Workflowstartprogramma&#39;s {#workflow-launchers}
 
 AEM gebruikt werkstroomdraagraketten om werkstroomuitvoering automatisch te starten wanneer opgegeven wijzigingen in de opslagplaats worden aangebracht. AEM biedt verschillende draagraketten uit het vak, bijvoorbeeld om processen voor het genereren van vertoningen en het ophalen van metagegevens uit te voeren voor nieuwe en bijgewerkte elementen. Terwijl het mogelijk is om deze draagraketten zoals-is, in een multi-huurdermilieu te verlaten, als de huurders verschillende lancerings en/of werkschemamodel vereisten hebben, dan is het waarschijnlijk dat individuele draagraketten voor elke huurder zullen moeten worden gecreeerd en worden gehandhaafd. Deze draagraketten zullen moeten worden gevormd om op de updates van hun huurder uit te voeren terwijl het verlaten van inhoud van andere huurders onveranderd. Dit kunt u eenvoudig bereiken door draagraketten toe te passen op opgegeven opslagpaden die huurspecifiek zijn.
 
@@ -148,7 +147,7 @@ AEM verstrekt uit de doosinterfaces voor robuuste logboekconfiguratie die aan on
 Vanwege de aard van de JCR-opslagplaats werken traditionele back-ups in de gehele opslagplaats in plaats van op een afzonderlijk inhoudspad. Het is daarom niet mogelijk om steunen op een per-huurdersbasis gemakkelijk te scheiden. Omgekeerd worden bij het herstellen van een back-up inhoud en opslagknooppunten teruggedraaid voor alle gebruikers van het systeem. Terwijl het mogelijk is om gerichte inhoudsteunen uit te voeren, gebruikend hulpmiddelen zoals VLT, of om inhoud te koesteren om te herstellen door een pakket in een afzonderlijke milieu te bouwen, deze\
 de benaderingen omvatten niet gemakkelijk configuratiemontages of toepassingslogica en kunnen omslachtig zijn te beheren.
 
-## Veiligheidsoverwegingen {#security-considerations}
+## Beveiligingsoverwegingen {#security-considerations}
 
 ### ACLs {#acls}
 
