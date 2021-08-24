@@ -6,7 +6,6 @@ audience: developer
 doc-type: tutorial
 activity: develop
 version: 6.3, 6.4, 6.5
-translation-type: tm+mt
 source-git-commit: 03db12de4d95ced8fabf36b8dc328581ec7a2749
 workflow-type: tm+mt
 source-wordcount: '446'
@@ -33,7 +32,7 @@ Voorbeelden van gebruiksgevallen voor aangepaste bronnenstatusproviders zijn:
 
 ![Overzicht van de bronstatus van AEM editor](assets/sample-editor-resource-status-screenshot.png)
 
-## Framework {#resource-status-provider-framework}
+## Resource Status Provider Framework {#resource-status-provider-framework}
 
 Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikkelingswerk samengesteld uit:
 
@@ -85,7 +84,7 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
    * Categorie Experience Fragment Editor: `cq.authoring.editor.sites.page`
    * Categorie Sjablooneditor: `cq.authoring.editor.sites.template`
 
-## De code {#view-the-code} weergeven
+## De code weergeven {#view-the-code}
 
 [Zie code op GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
 
