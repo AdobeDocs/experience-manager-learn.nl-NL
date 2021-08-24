@@ -3,10 +3,9 @@ title: Tutorials voor Adobe Experience Manager as Cloud Service
 description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) als Cloud Service
 sub-product: sites, cloudbeheer, stichting, middelen
 kt: 3289
-translation-type: tm+mt
-source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '273'
 ht-degree: 8%
 
 ---
@@ -86,5 +85,5 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 
 ## Aanvullende bronnen
 
-* [Experience League - Verken Adobe Experience Manager](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Adobe Experience Manager als Cloud Service Documentatie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+* [Experience League - Adobe Experience Manager verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Adobe Experience Manager als Cloud Service Documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
