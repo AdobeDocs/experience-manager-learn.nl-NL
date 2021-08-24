@@ -2,18 +2,17 @@
 title: Gebruik oak-run.jar om indexen te beheren
 description: Het indexbevel van oak-run.jar consolideert een aantal eigenschappen om indexen van het Eak in AEM te beheren, van het verzamelen van indexstatistieken, het runnen van indexconsistentiecontroles, en re/indexeert indexen zelf.
 version: 6.4, 6.5
-feature: Search
+feature: Zoeken
 topics: search
 activity: use
 audience: architect, developer, implementer
 doc-type: technical video
-topic: Performance
+topic: Prestaties
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
