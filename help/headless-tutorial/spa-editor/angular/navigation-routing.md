@@ -13,9 +13,9 @@ thumbnail: 5312-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2646'
+source-wordcount: '2640'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Leer hoe meerdere weergaven in de SPA worden ondersteund met AEM Pagina&#39;s en
 
 ## Wat u gaat maken
 
-In dit hoofdstuk wordt een navigatiemenu toegevoegd aan een bestaande `Header`-component. Het navigatiemenu wordt gedreven door de AEM paginahiërarchie en gebruikt het model JSON dat door [de Component van de Kern van de Navigatie](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html) wordt verstrekt.
+In dit hoofdstuk wordt een navigatiemenu toegevoegd aan een bestaande `Header`-component. Het navigatiemenu wordt gedreven door de AEM paginahiërarchie en gebruikt het model JSON dat door [de Component van de Kern van de Navigatie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) wordt verstrekt.
 
 ![Navigatie geïmplementeerd](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -71,7 +71,7 @@ U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wkn
 
 ## Inspect HeaderComponent-updates {#inspect-header}
 
-In vorige hoofdstukken werd de `HeaderComponent`-component toegevoegd als een zuivere Angular die via `app.component.html` werd opgenomen. In dit hoofdstuk wordt de `HeaderComponent`-component verwijderd uit de app en toegevoegd via [Sjablooneditor](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Hierdoor kunnen gebruikers het navigatiemenu van de `HeaderComponent` vanuit AEM configureren.
+In vorige hoofdstukken werd de `HeaderComponent`-component toegevoegd als een zuivere Angular die via `app.component.html` werd opgenomen. In dit hoofdstuk wordt de `HeaderComponent`-component verwijderd uit de app en toegevoegd via [Sjablooneditor](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Hierdoor kunnen gebruikers het navigatiemenu van de `HeaderComponent` vanuit AEM configureren.
 
 >[!NOTE]
 >
@@ -116,9 +116,9 @@ In vorige hoofdstukken werd de `HeaderComponent`-component toegevoegd als een zu
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   De AEM `Header` component erft alle functionaliteit van [Navigation Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html) via het `sling:resourceSuperType` bezit.
+   De AEM `Header` component erft alle functionaliteit van [Navigation Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) via het `sling:resourceSuperType` bezit.
 
-## Voeg de HeaderComponent aan het SPA toe malplaatje {#add-header-template}
+## Voeg de component HeaderComponent aan het SPA toe malplaatje {#add-header-template}
 
 1. Open browser en login aan AEM, [http://localhost:4502/](http://localhost:4502/). De begincodebasis zou reeds moeten worden opgesteld.
 2. Navigeer naar **[!UICONTROL SPA Page Template]**: [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
