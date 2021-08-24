@@ -1,25 +1,24 @@
 ---
 title: Best practices voor stijlsystemen met AEM Sites
 description: Een gedetailleerd artikel waarin de beste werkwijzen worden uitgelegd voor het implementeren van het stijlsysteem met Adobe Experience Manager Sites.
-feature: Style System
+feature: Stijlsysteem
 topics: development, components, front-end-development
 audience: developer
 doc-type: article
 activity: understand
 version: 6.4, 6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1531'
 ht-degree: 0%
 
 ---
 
 
-# De beste praktijken van het Systeem van de Stijl{#understanding-style-organization-with-the-aem-style-system}
+# Best practices voor stijlsystemen{#understanding-style-organization-with-the-aem-style-system}
 
 >[!NOTE]
 >
@@ -34,7 +33,7 @@ Er zijn twee hoofdstijlen of stijlen die voor het Systeem van de Stijl van de AE
 
 **Weergavestijlen worden** gebruikt om kleine variaties in layoutstijlen aan te brengen. Ze veranderen echter niet de fundamentele aard of intentie van de indelingsstijl. Een hoofdopmaakstijl kan bijvoorbeeld weergavestijlen hebben die het kleurenschema wijzigen van het kleurenschema voor het primaire merk in het kleurenschema voor het secundaire merk.
 
-## Best practices voor stijlorganisatie {#style-organization-best-practices}
+## Tips en trucs voor organisatie {#style-organization-best-practices}
 
 Wanneer u de stijlnamen definieert die beschikbaar zijn voor AEM auteurs, kunt u het beste:
 
@@ -60,13 +59,13 @@ De stijlnaam van **Green** wordt toegewezen aan `.cmp-component--primary-color`,
 
 Als de merkkleur van het bedrijf in de toekomst verandert, is alles dat moet worden veranderd de enige implementaties van `.cmp-component--primary-color` en `.cmp-component--secondary-color`, en de namen van de Stijl.
 
-## De component Teaser als voorbeeld gebruikt geval {#the-teaser-component-as-an-example-use-case}
+## De component Teaser als voorbeeld gebruikt hoofdletters/kleine letters {#the-teaser-component-as-an-example-use-case}
 
 Hieronder ziet u een voorbeeld van het gebruik van de stijl van een Taser-component voor verschillende lay-out- en weergavestijlen.
 
 Hiermee wordt uitgelegd hoe stijlnamen (beschikbaar voor auteurs) en hoe de ondersteunende CSS-klassen worden ingedeeld.
 
-### Configuratie van stijlen voor lasercomponenten {#component-styles-configuration}
+### Configuratie van componentstijlen voor teaser {#component-styles-configuration}
 
 In de volgende afbeelding ziet u de [!UICONTROL Styles]-configuratie voor de component Teaser voor de variaties die in het gebruiksgeval worden besproken.
 
@@ -157,7 +156,7 @@ Om dit te bereiken, worden een **lay-outstijl** van **Promo** en **vertoningssti
    * CSS-klasse: `cmp-teaser--secondary-color`
 * **Effectieve CSS-klassen**:  `cmp-teaser--promo.cmp-teaser--secondary-color`
 
-### Aanbieding van rechts uitgelijnde stijl {#promo-r-align}
+### Promo Right-align style {#promo-r-align}
 
 De opmaakstijl **Promo Right-align** is een variant van de stijl Promo die de locatie van de afbeelding en tekst (afbeelding rechts, tekst links) omdraait.
 
@@ -167,7 +166,7 @@ De juiste uitlijning, in de kern, is een weergavestijl die u in het AEM Stijlsys
 
 ..die al is overtreden in de [Standaardstijl](#default-style).
 
-Omdat de juiste uitlijning alleen van invloed is op de indelingsstijl Promo en niet op de andere 2 lay-outstijlen: Standaard en als held kunnen we een nieuwe indelingsstijlpromotie maken (rechts uitgelijnd) die de CSS-klasse bevat die de inhoud van de Promo-lay-outstijlen rechts uitlijnt: `cmp -teaser--alternate`.
+Omdat de juiste uitlijning alleen van invloed is op de indelingsstijl Promo en niet op de andere twee lay-outstijlen: Standaard en als held kunnen we een nieuwe indelingsstijlpromotie maken (rechts uitgelijnd) die de CSS-klasse bevat die de inhoud van de Promo-lay-outstijlen rechts uitlijnt: `cmp -teaser--alternate`.
 
 Deze combinatie van meerdere stijlen tot één Stijl-item kan ook het aantal beschikbare stijlen en stijlpermutaties verminderen. Dit is het beste om deze te minimaliseren.
 
@@ -208,7 +207,7 @@ De naam van de CSS-klasse `cmp-teaser--alternate` hoeft niet overeen te komen me
    * CSS-klasse: `cmp-teaser--secondary-color`
 * **Effectieve CSS-klassen**:  `.cmp-teaser--promo.cmp-teaser--alternate.cmp-teaser--secondary-color`
 
-### Hoofdstijl {#hero-style}
+### Hero style {#hero-style}
 
 In de lay-outstijl Hoofdafbeelding wordt de afbeelding van de componenten weergegeven als een achtergrond met de titel en de koppeling overlay. De hoofdlay-outstijl moet, net als de Promo-lay-outstijl, kleurbaar zijn met brandkleuren.
 
