@@ -4,13 +4,12 @@ description: 'Onderzoek de geschiedenis van AEM en de verschillen tussen op gebo
 role: Architect, Developer
 level: Beginner
 type: Tutorial
-topic: Architecture
+topic: Architectuur
 kt: 6920
 thumbnail: 330543.jpg
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '59'
 ht-degree: 1%
 
 ---
