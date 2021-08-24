@@ -2,20 +2,19 @@
 title: Workflow voor eenvoudig uitstel van betaling
 description: Deelvensters Adaptief formulier verbergen en tonen in AEM workflow
 uuid: 28ceb72b-24d9-488e-92af-7e85775dc682
-feature: Adaptive Forms
+feature: Adaptieve Forms
 topics: workflow
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 discoiquuid: 1c4822e6-76ce-446b-98cb-408900d68b24
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
