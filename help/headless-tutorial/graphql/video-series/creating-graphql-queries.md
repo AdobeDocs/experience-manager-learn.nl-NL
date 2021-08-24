@@ -1,17 +1,16 @@
 ---
 title: GraphQL-query's maken
 description: Leer hoe te om vragen te creëren GraphQL om inhoud van Adobe Experience Manager (AEM) terug te keren en hoe te om het hulpmiddel te gebruiken GraphiQL om vragen snel te testen, te raffineren en te zuiveren.
-sub-product: elementen
 version: cloud-service
 topic: Koploos, inhoudsbeheer
-feature: Inhoudsfragmenten, GraphQL API's
+feature: Inhoudsfragmenten, GraphQL API
 role: Developer
 level: Beginner
 kt: 7621
 thumbnail: 332860.jpg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '124'
 ht-degree: 0%
 
 ---
