@@ -4,15 +4,14 @@ description: 'Onderzoek hoe de bewaarplaatsen en de pakketten zowel veranderbare
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: Developer Tools
+topic: Ontwikkeling
+feature: Gereedschappen voor ontwikkelaars
 kt: 6930
 thumbnail: 330555.jpg
-translation-type: tm+mt
 source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 0%
+source-wordcount: '73'
+ht-degree: 1%
 
 ---
 
