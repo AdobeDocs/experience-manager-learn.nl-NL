@@ -1,7 +1,7 @@
 ---
 title: Rekeningen en diensten voor uitbreidbaarheid van de Asset compute instellen
 description: Voor het ontwikkelen van Asset compute-workers hebt u toegang tot accounts en services nodig, waaronder AEM als Cloud Service, Adobe Project Firefly en cloudopslag die door Microsoft of Amazon wordt geleverd.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,14 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
-topic: Integrations, Development
+topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 2%
+source-wordcount: '632'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +39,7 @@ Alle services van de Adobe moeten toegankelijk zijn via dezelfde Adobe Org, die 
 > 
 > Lees hieronder secties over het instellen en leveren van de vereiste services.
 
-## AEM as a Cloud Service{#aem-as-a-cloud-service}
+## AEM als Cloud Service{#aem-as-a-cloud-service}
 
 Toegang tot een AEM als een Cloud Service-omgeving is vereist om AEM Assets Processing Profiles te configureren om de aangepaste Asset compute-worker aan te roepen.
 
@@ -48,7 +47,7 @@ In het ideale geval is een sandboxprogramma of een ontwikkelomgeving zonder sand
 
 Merk op dat een lokale AEM SDK ontoereikend is om deze zelfstudie te voltooien, aangezien de lokale AEM SDK niet met de microservices van de Asset compute kan communiceren, in plaats daarvan een waar AEM als Cloud Service-omgeving is vereist.
 
-## Adobe Project firefly{#adobe-project-firefly}
+## Adobe Project Firefly{#adobe-project-firefly}
 
 Het [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html)-framework wordt gebruikt voor het bouwen en implementeren van aangepaste acties op Adobe I/O Runtime, een Adobe zonder server. AEM projecten van de Asset compute zijn speciaal gebouwde Vuurwerk projecten die met AEM Assets via het Profielen van de Verwerking integreren, en de capaciteit verstrekken om activa tot binaire getallen toegang te hebben en te verwerken.
 
@@ -64,7 +63,7 @@ Opslag in de cloud is vereist voor lokale ontwikkeling van Asset compute-project
 
 Wanneer medewerkers van de Asset compute naar de Adobe I/O Runtime worden geïmplementeerd voor rechtstreeks gebruik door AEM als Cloud Service, is deze cloudopslag niet strikt vereist, omdat AEM de cloudopslag biedt van waaruit het middel wordt gelezen en waarnaar wordt geschreven.
 
-### Microsoft Azure Blob Storage{#azure-blob-storage}
+### Microsoft Azure Blob-opslag{#azure-blob-storage}
 
 Als u nog geen toegang hebt tot Microsoft Azure Blob Storage, meldt u zich aan voor een [gratis account van 12 maanden](https://azure.microsoft.com/en-us/free/).
 
