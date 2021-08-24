@@ -172,7 +172,7 @@ Het `_cq_editConfig.xml` dossier dicteert het belemmering en dalingsgedrag in AE
 
    Voor de meeste componenten is geen `_cq_editConfig` vereist. Afbeeldingscomponenten en afstammingen vormen hierop een uitzondering.
 
-## Dialoogvenster {#extend-dialog} uitbreiden
+## Het dialoogvenster uitbreiden {#extend-dialog}
 
 Onze `Banner` component vereist een extra tekstgebied in de dialoog om `bannerText` te vangen. Aangezien wij het Verkopen overerving gebruiken, kunnen wij eigenschappen van [het Verspreiden Samenvoegen van het Middel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
 
@@ -241,7 +241,7 @@ Onze `Banner` component vereist een extra tekstgebied in de dialoog om `bannerTe
 
    Voordat we een voorvertoning van het dialoogvenster kunnen weergeven, moeten we de functie SPA en `MapTo` implementeren.
 
-## SPA component {#implement-spa-component} implementeren
+## SPA {#implement-spa-component}
 
 Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SPA maken die wordt toegewezen aan `wknd-spa-react/components/banner`. Dit zal in `ui.frontend` module worden gedaan.
 
@@ -324,7 +324,7 @@ Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SP
    >
    > In het dialoogvenster kunt u een waarde opslaan voor **Bannertekst**, maar deze waarde wordt niet weerspiegeld in de SPA. Om toe te laten, moeten wij het het Verkopen Model voor de component uitbreiden.
 
-## Java-interface {#java-interface} toevoegen
+## Java-interface toevoegen {#java-interface}
 
 Om uiteindelijk de waarden van de componentendialoog aan de component van de Reactie bloot te stellen moeten wij het het Schipen Model bijwerken dat JSON voor de `Banner` component bevolkt. Dit zal in `core` module worden gedaan die alle code van Java voor ons SPA project bevat.
 
@@ -349,7 +349,7 @@ Eerst maken we een nieuwe Java-interface voor `Banner` die de Java-interface `Im
 
    Hierdoor worden alle methoden overgenomen van de interface Core Component `Image` en wordt één nieuwe methode `getBannerText()` toegevoegd.
 
-## Sling-model {#sling-model} implementeren
+## Sling-model implementeren {#sling-model}
 
 Implementeer vervolgens het Sling Model voor de `BannerModel`-interface.
 
