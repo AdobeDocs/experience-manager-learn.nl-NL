@@ -1,20 +1,19 @@
 ---
 title: Foutopsporing AEM SDK met behulp van logbestanden
 description: De logboeken handelen als frontline voor het zuiveren AEM toepassingen, maar zijn afhankelijk van het adequate registreren in de opgestelde AEM toepassing.
-feature: Developer Tools
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5252
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner, Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -79,7 +78,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 _De  `<CONTAINER ID>` insteekmodule  `docker exec -it <CONTAINER ID> /bin/sh` moet worden vervangen met de doelDocker CONTAINER-id die wordt vermeld via de  `docker ps` opdracht._
 
 
-### Het kopiëren van de logboeken van de Docker aan het lokale filesystem{#dispatcher-tools-copy-logs}
+### De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd{#dispatcher-tools-copy-logs}
 
 De logboekregistraties van de verzender kunnen uit de container van de Dokker bij `/etc/httpd/logs` aan het lokale dossiersysteem voor inspectie worden gekopieerd gebruikend uw favoriete hulpmiddel van de logboekanalyse. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan de logboeken verstrekt.
 
