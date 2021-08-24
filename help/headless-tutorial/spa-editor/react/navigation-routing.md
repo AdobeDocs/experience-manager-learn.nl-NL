@@ -12,9 +12,9 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Leer hoe meerdere weergaven in de SPA kunnen worden ondersteund door aan AEM Pag
 
 ## Wat u gaat maken
 
-In dit hoofdstuk wordt navigatie toegevoegd aan een SPA in AEM. Het navigatiemenu wordt aangestuurd door de AEM paginahiërarchie en maakt gebruik van het JSON-model dat wordt geleverd door de [Navigation Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html).
+In dit hoofdstuk wordt navigatie toegevoegd aan een SPA in AEM. Het navigatiemenu wordt aangestuurd door de AEM paginahiërarchie en maakt gebruik van het JSON-model dat wordt geleverd door de [Navigation Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navigatie toegevoegd](assets/navigation-routing/navigation-added.png)
 
@@ -121,7 +121,7 @@ Maak vervolgens aanvullende pagina&#39;s in AEM die als de verschillende weergav
 
    Let op: na het laden van de eerste pagina wordt de volledige pagina niet volledig vernieuwd en wordt het netwerkverkeer tot een minimum beperkt wanneer wordt teruggekeerd naar eerder bezochte pagina&#39;s.
 
-## JSON-model {#hierarchy-page-json-model} hiërarchiepagina
+## JSON-model hiërarchiepagina {#hierarchy-page-json-model}
 
 Controleer vervolgens het JSON-model dat de multi-view ervaring van de SPA aanstuurt.
 
@@ -208,7 +208,7 @@ Controleer vervolgens het JSON-model dat de multi-view ervaring van de SPA aanst
 
 1. Experimenteer met diepe koppelingen door rechtstreeks naar: [http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html). Let ook op dat de knop Terug van de browser blijft werken.
 
-## Inspect React Routing {#react-routing}
+## Inspect React-routering  {#react-routing}
 
 De navigatie en het verpletteren worden uitgevoerd met [Reageer Router](https://reactrouter.com/). Reageer Router is een inzameling van navigatiecomponenten voor React toepassingen. [AEM Reageer de ](https://github.com/adobe/aem-react-core-wcm-components-base) Componenten van de Kern van de Reageren eigenschappen van de Router van het Reageren om de component uit te voeren  **** Navigationdie in de vorige stappen wordt gebruikt.
 
