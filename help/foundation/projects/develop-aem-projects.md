@@ -2,18 +2,17 @@
 title: Projecten ontwikkelen in AEM
 description: Een zelfstudie over de ontwikkeling van AEM projecten.  In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om nieuwe projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
 version: 6.3, 6.4, 6.5
-feature: Projects, Workflow
+feature: Projecten, workflow
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '4654'
+source-wordcount: '4585'
 ht-degree: 0%
 
 ---
@@ -132,7 +131,7 @@ Aangezien wij hoofdzakelijk het kopiëren/het vormen knopen zullen zijn zullen w
    1. Voeg een nieuw **nt:unStructured** knooppunt onder authoring-project/gadgets genoemd **tasks** toe.
    1. Voeg tekenreekseigenschappen toe aan het taakknooppunt voor **cardWeight** = &quot;100&quot;, **jcr:title**=&quot;Tasks&quot; en **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Nu zal [de tegel van Taken](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#Tasks) door gebrek verschijnen wanneer een nieuw project wordt gecreeerd.
+   Nu zal [de tegel van Taken](https://experienceleague.adobe.com/docs/#Tasks) door gebrek verschijnen wanneer een nieuw project wordt gecreeerd.
 
    ```shell
    ../projects/templates/authoring-project
@@ -283,7 +282,7 @@ Als de stappen van de Deelnemer, kunnen de Taken dynamisch worden toegewezen en 
 
 Terwijl de Taken sommige voordelen over de Stappen van de Deelnemer hebben zij extra overheadkosten dragen, en zijn niet zo nuttig buiten een Project. Bovendien moet al dynamisch gedrag van Taken worden gecodeerd gebruikend manuscripten ecma die zijn eigen beperkingen hebben.
 
-## Voorbeelden van vereisten voor het gebruik van hoofdletters en kleine letters {#goals-tutorial}
+## Voorschriften voor het gebruik van hoofdletters en kleine letters {#goals-tutorial}
 
 ![Workflowprocesdiagram](./assets/develop-aem-projects/workflow-process-diagram.png)
 
@@ -624,7 +623,7 @@ task.setCurrentAssignee(projectApproverGrp);
    }
    ```
 
-## De wizard &quot;Start workflow&quot; maken {#start-workflow-wizard}
+## De wizard &quot;Startworkflow&quot; maken {#start-workflow-wizard}
 
 Wanneer u een workflow uit een project verwijdert, moet u een wizard opgeven om de workflow te starten. De standaardwizard: `/libs/cq/core/content/projects/workflowwizards/default_workflow` staat de gebruiker toe om een Titel van het Werkschema, een begincommentaar, en een nuttige ladingspad voor het werkschema in te gaan om te lopen. Er zijn ook verschillende andere voorbeelden te vinden onder: `/libs/cq/core/content/projects/workflowwizards`.
 
@@ -632,13 +631,13 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
 
 1. In CRXDE-Lite zullen wij een subomslag onder `/apps/aem-guides/projects-tasks/projects` omslag creëren genoemd &quot;tovenaars&quot;. Kopieer de standaardwizard van: `/libs/cq/core/content/projects/workflowwizards/default_workflow` onder de nieuwe wizards-map en wijzig de naam ervan in **content-approval-start**. Het volledige pad moet nu zijn: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   De standaardwizard is een wizard met twee kolommen en de eerste kolom bevat Titel, Beschrijving en Miniatuur van het workflowmodel geselecteerd. De tweede kolom bevat velden voor de titel van de workflow, Opmerking starten en Pad loonbelasting. De wizard is een standaardaanraakinterface-formulier en maakt gebruik van de standaardformuliercomponenten [Granite UI](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/index.html) om de velden te vullen.
+   De standaardwizard is een wizard met twee kolommen en de eerste kolom bevat Titel, Beschrijving en Miniatuur van het workflowmodel geselecteerd. De tweede kolom bevat velden voor de titel van de workflow, Opmerking starten en Pad loonbelasting. De wizard is een standaardaanraakinterface-formulier en maakt gebruik van de standaardformuliercomponenten [Granite UI](https://experienceleague.adobe.com/docs/) om de velden te vullen.
 
    ![wizard voor inhoudsgoedkeuring](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. Wij zullen een extra gebied aan de tovenaar toevoegen die zal worden gebruikt om de toegewezen van de eerste taak in het werkschema (zie [Create het Model van het Werkschema](#create-workflow-model) te plaatsen: Stap 5).
 
-   Onder `../content-approval-start/jcr:content/items/column2/items` maak een nieuw knooppunt van het type `nt:unstructured` met de naam **&quot;assign&quot;**. Wij zullen de component van de Plukker van de Gebruiker van Projecten gebruiken (die van [de Component van de Plukker van de Gebruiker van Granite ](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/userpicker/index.html)) wordt gebaseerd. Met dit formulierveld kunt u eenvoudig de selectie van gebruikers en groepen beperken tot gebruikers die tot het huidige project behoren.
+   Onder `../content-approval-start/jcr:content/items/column2/items` maak een nieuw knooppunt van het type `nt:unstructured` met de naam **&quot;assign&quot;**. Wij zullen de component van de Plukker van de Gebruiker van Projecten gebruiken (die van [de Component van de Plukker van de Gebruiker van Granite ](https://experienceleague.adobe.com/docs/)) wordt gebaseerd. Met dit formulierveld kunt u eenvoudig de selectie van gebruikers en groepen beperken tot gebruikers die tot het huidige project behoren.
 
    Hieronder ziet u de XML-representatie van het knooppunt **assign**:
 
@@ -658,7 +657,7 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
 
 1. Wij zullen ook een prioritair selectiegebied toevoegen dat de prioriteit van de eerste taak in het werkschema zal bepalen (zie [het Model van het Werkschema creëren](#create-workflow-model): Stap 5).
 
-   Onder `/content-approval-start/jcr:content/items/column2/items` maak een nieuw knooppunt van het type `nt:unstructured` met de naam **priority**. Met de [Selectie van graniet-interface](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/select/index.html) wordt het formulierveld gevuld.
+   Onder `/content-approval-start/jcr:content/items/column2/items` maak een nieuw knooppunt van het type `nt:unstructured` met de naam **priority**. Met de [Selectie van graniet-interface](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) wordt het formulierveld gevuld.
 
    Onder de **priority**-node voegen we een **items**-knooppunt van **nt:unStructured** toe. Onder de **items** knoop voeg 3 extra knopen toe om de selectieopties voor Hoog, Normaal, en Laag te bevolken. Elk knooppunt is van het type **nt:unStructured** en moet een **text** en **value** bezit hebben. Zowel de tekst als de waarde moeten dezelfde waarde hebben:
 
@@ -694,7 +693,7 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
    </priority>
    ```
 
-1. De aanvrager van de workflow kan de vervaldatum van de eerste taak instellen. We gebruiken het formulierveld [Granite UI DatePicker](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/datepicker/index.html) om deze invoer vast te leggen. We voegen ook een verborgen veld met een [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) toe om ervoor te zorgen dat de invoer wordt opgeslagen als een eigenschap van het type Date in het JCR.
+1. De aanvrager van de workflow kan de vervaldatum van de eerste taak instellen. We gebruiken het formulierveld [Granite UI DatePicker](https://experienceleague.adobe.com/docs/) om deze invoer vast te leggen. We voegen ook een verborgen veld met een [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) toe om ervoor te zorgen dat de invoer wordt opgeslagen als een eigenschap van het type Date in het JCR.
 
    Voeg twee **nt:ongestructureerde** knopen met de volgende eigenschappen toe die hieronder in XML worden vertegenwoordigd:
 
@@ -718,7 +717,7 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
 
 1. U kunt de volledige code voor de dialoog van de begintovenaar [hier](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/projects-tasks-guide/ui.apps/src/main/content/jcr_root/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start/.content.xml) bekijken.
 
-## De workflow en de projectsjabloon {#connecting-workflow-project} verbinden
+## De workflow en de projectsjabloon verbinden {#connecting-workflow-project}
 
 Het laatste wat we moeten doen, is ervoor zorgen dat het workflowmodel beschikbaar is om van binnen een van de Projecten te worden afgevoerd. Om dit te doen, moeten wij het Malplaatje van het Project opnieuw bezoeken wij in Deel 1 van deze reeks creeerden.
 
