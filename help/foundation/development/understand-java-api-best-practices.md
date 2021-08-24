@@ -3,18 +3,17 @@ title: Aanbevolen procedures voor Java API in AEM
 description: AEM is gebaseerd op een rijke open-source softwarestack die veel Java API's beschikbaar maakt voor gebruik tijdens de ontwikkeling. In dit artikel worden de belangrijkste API's besproken en wordt aangegeven wanneer en waarom deze moeten worden gebruikt.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: stichting, middelen, sites
-feature: APIs
+feature: API's
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -101,7 +100,7 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 * [OOTB-](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) voorspellingen ter ondersteuning van algemene queryvereisten
 
 * Uitbreidbare API, die voor de ontwikkeling van douane [vraagvoorspellingen](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html) toestaat
-* JCR-SQL2 en XPath kunnen direct via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [JCR APIs](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html) worden uitgevoerd, terugkerend resultaten a [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [JCR Nodes](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
+* JCR-SQL2 en XPath kunnen direct via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [JCR APIs](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html) worden uitgevoerd, terugkerend resultaten a [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [JCR Nodes](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
 
 >[!CAUTION]
 >
@@ -131,16 +130,16 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 * Asynchrone bouwstenen voor werkverwerking
 
    * [Gebeurtenis- en taakhandlers](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)
-   * [Planner](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
+   * [Planningen](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
    * [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html)
 
 * [Servicegebruikers](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
 
 ## JCR-API&#39;s
 
-* **[JCR 2.0 JavaDocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
+* **[JCR 2.0 JavaDocs](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
 
-De [JCR (Java Content Repository) 2.0-API&#39;s](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) maken deel uit van een specificatie voor JCR-implementaties (in het geval van AEM [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Alle JCR-implementatie moet in overeenstemming zijn met deze API&#39;s en deze implementeren. Dit is dus de API op het laagste niveau voor interactie met AEM inhoud.
+De [JCR (Java Content Repository) 2.0-API&#39;s](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) maken deel uit van een specificatie voor JCR-implementaties (in het geval van AEM [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Alle JCR-implementatie moet in overeenstemming zijn met deze API&#39;s en deze implementeren. Dit is dus de API op het laagste niveau voor interactie met AEM inhoud.
 
 De JCR zelf is een hiërarchische/op boom-gebaseerde NSQL datastore AEM als zijn inhoudsbewaarplaats gebruikt. De JCR heeft een uitgebreide reeks ondersteunde API&#39;s, variërend van inhoud-CRUD tot het opvragen van inhoud. Ondanks deze robuuste API hebben ze zelden de voorkeur boven de AEM op een hoger niveau en de abstracties [!DNL Sling].
 
@@ -203,11 +202,11 @@ Hieronder volgen algemene uitzonderingen op de hierboven gedefinieerde regels.
 
 * AEM QueryBuilder ondersteunt bepaalde queryfuncties, zoals [Suggesties](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Suggestions), spellingcontrole en indexhints onder andere minder algemene functies. Om met deze functies te vragen wordt JCR-SQL2 geprefereerd.
 
-### [!DNL Sling] Servlet-registratie  {#sling-servlet-registration}
+### [!DNL Sling] Servlet-registratie {#sling-servlet-registration}
 
 * [!DNL Sling] servlet-registratie, voorkeur  [OSGi DS 1.2-annotaties met @](https://sling.apache.org/documentation/the-sling-engine/servlets.html) SlingServletResourceTypesover  `@SlingServlet`
 
-### [!DNL Sling] Filterregistratie  {#sling-filter-registration}
+### [!DNL Sling] Filterregistratie {#sling-filter-registration}
 
 * [!DNL Sling] filterregistratie, voorkeur  [OSGi DS 1.2 annotaties met @](https://sling.apache.org/documentation/the-sling-engine/filters.html) SlingServletFilterover  `@SlingFilter`
 
@@ -326,7 +325,7 @@ String title = asset.getMetadataValue("dc:title");
 Calendar lastModified = (Calendar) asset.getMetadata("cq:lastModified");
 ```
 
-### [!DNL Sling] [!DNL Resource] eigenschappen {#read-sling-resource-properties} lezen
+### [!DNL Sling] [!DNL Resource] eigenschappen lezen {#read-sling-resource-properties}
 
 Wanneer eigenschappen worden opgeslagen op locaties (eigenschappen of relatieve bronnen) waartoe de AEM-API&#39;s (Pagina, Element) niet rechtstreeks toegang hebben, kunnen de bronnen [!DNL Sling] en ValueMaps worden gebruikt om de gegevens te verkrijgen.
 
