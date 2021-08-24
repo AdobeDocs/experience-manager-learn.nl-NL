@@ -12,10 +12,9 @@ thumbnail: KT-6282.jpg
 topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -46,7 +45,7 @@ asset compute workers implementeren het Asset compute SDK worker API-contract in
 1. De Asset compute worker slaat de binaire gegevens van de nieuwe uitvoering op in `rendition.path`.
 1. De binaire gegevens die naar `rendition.path` worden geschreven, worden via de Asset compute-SDK naar de AEM-auteurservice getransporteerd en als __(4a)__ een tekstreditie aangeboden en __(4b)__ aan het metagegevensknooppunt van het element blijvend.
 
-In het bovenstaande diagram worden de problemen beschreven die de Asset compute ontwikkelaar onder ogen ziet en wordt een logische stroom weergegeven naar de aanroep van de Asset compute worker. Voor de nieuwsgierigheid zijn de [interne details van de uitvoering van de Asset compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) beschikbaar, maar alleen de contracten van de SDK API van de openbare Asset compute kunnen van afhangen.
+In het bovenstaande diagram worden de problemen beschreven die de Asset compute ontwikkelaar onder ogen ziet en wordt een logische stroom weergegeven naar de aanroep van de Asset compute worker. Voor de nieuwsgierigheid zijn de [interne details van de uitvoering van de Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) beschikbaar, maar alleen de contracten van de SDK API van de openbare Asset compute kunnen van afhangen.
 
 ## Anatomie van een worker
 
