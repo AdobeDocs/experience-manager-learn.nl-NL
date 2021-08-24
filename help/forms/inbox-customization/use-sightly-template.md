@@ -1,20 +1,19 @@
 ---
 title: Aanpassing van Postvak IN
 description: Aangepaste kolommen toevoegen om aanvullende gegevens van de workflow weer te geven met een hevige sjabloon
-feature: Adaptive Forms
+feature: Adaptieve Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '292'
 ht-degree: 1%
 
 ---
@@ -82,7 +81,7 @@ return val;
 
 >[!NOTE]
 >
->In dit artikel wordt ervan uitgegaan dat u de [voorbeeldworkflow](assets/review-workflow.zip) en [voorbeeldformulier](assets/snap-form.zip) van [vorig artikel](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) in deze reeks hebt geïnstalleerd.
+>In dit artikel wordt ervan uitgegaan dat u de [voorbeeldworkflow](assets/review-workflow.zip) en [voorbeeldformulier](assets/snap-form.zip) van [vorig artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.md) in deze reeks hebt geïnstalleerd.
 
 * [Aanmelden als beheerder bij crx](http://localhost:4502/crx/de/index.jsp)
 * [sightsjabloon importeren](assets/sightly-template.zip)
