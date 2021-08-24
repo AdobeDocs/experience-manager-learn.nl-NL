@@ -12,10 +12,10 @@ thumbnail: 18926.jpg
 topic: Ontwikkeling
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 7%
+source-wordcount: '146'
+ht-degree: 2%
 
 ---
 
@@ -36,4 +36,4 @@ AEM Core Components is een standaardset onderdelen die met Adobe Experience Mana
 
 * [GitHub-project](https://github.com/adobe/aem-core-wcm-components)
 * [Voorbeelden van kerncomponenten](https://www.aemcomponents.dev/)
-* [Documentatie kerncomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Documentatie kerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
