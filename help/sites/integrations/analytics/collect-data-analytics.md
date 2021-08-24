@@ -1,21 +1,16 @@
 ---
 title: Paginagegevens verzamelen met Adobe Analytics
 description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om gegevens over gebruikersactiviteit te verzamelen op een website die is gemaakt met Adobe Experience Manager. Leer hoe u regels in Experience Platform Launch gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics-rapportenpakket te verzenden.
-feature: analytics
-topics: integrations
-audience: administrator
-doc-type: tutorial
-activity: setup
 version: cloud-service
-kt: 5332
-thumbnail: 5332-collect-data-analytics.jpg
 topic: Integrations
+feature: Gegevenslaag Adobe-client
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 5332
+thumbnail: 5332-collect-data-analytics.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2378'
 ht-degree: 1%
 
 ---
@@ -23,7 +18,7 @@ ht-degree: 1%
 
 # Paginagegevens verzamelen met Adobe Analytics
 
-Leer om de ingebouwde eigenschappen van [de Laag van Gegevens van de Adobe Cliënt met AEM Core Componenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html) te gebruiken om gegevens over een pagina in Adobe Experience Manager Sites te verzamelen. [Experience Platform ](https://www.adobe.com/experience-platform/launch.html) Launchand de  [Adobe Analytics-](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) extensie wordt gebruikt om regels te maken voor het verzenden van paginagegevens naar Adobe Analytics.
+Leer om de ingebouwde eigenschappen van [de Laag van Gegevens van de Adobe Cliënt met AEM Core Componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) te gebruiken om gegevens over een pagina in Adobe Experience Manager Sites te verzamelen. [Experience Platform ](https://www.adobe.com/experience-platform/launch.html) Launchand de  [Adobe Analytics-](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) extensie wordt gebruikt om regels te maken voor het verzenden van paginagegevens naar Adobe Analytics.
 
 ## Wat u gaat maken
 
@@ -42,9 +37,9 @@ In dit leerprogramma zult u een regel van de Lancering teweegbrengen die op een 
 Hiervoor is het volgende vereist:
 
 * **Experience Platform** LaunchProperty
-* **Adobe** AnalyticSnelst/dev-rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Experience Platform ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Foutopsporing browser extensie. Screenshots in deze zelfstudie werden vastgelegd vanuit de Chrome-browser.
-* (Optioneel) AEM Site met de [Adobe Client Data Layer ingeschakeld](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). In deze zelfstudie wordt de openbare website [https://wknd.site/us/en.html](https://wknd.site/us/en.html) gebruikt, maar u kunt uw eigen site graag gebruiken.
+* **Adobe** AnalyticSnelst/dev-rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
+* [Experience Platform ](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) Foutopsporing browser extensie. Screenshots in deze zelfstudie werden vastgelegd vanuit de Chrome-browser.
+* (Optioneel) AEM Site met de [Adobe Client Data Layer ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). In deze zelfstudie wordt de openbare website [https://wknd.site/us/en.html](https://wknd.site/us/en.html) gebruikt, maar u kunt uw eigen site graag gebruiken.
 
 >[!NOTE]
 >
@@ -52,12 +47,12 @@ Hiervoor is het volgende vereist:
 
 ## Overschakelen van opstartomgevingen voor WKND-site
 
-[https://wknd.](https://wknd.site) site is een openbare site die is gebouwd op basis van  [een open-source-](https://github.com/adobe/aem-guides-wknd) project dat is ontworpen als referentie en  [](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) zelfstudie voor AEM implementaties.
+[https://wknd.](https://wknd.site) site is een openbare site die is gebouwd op basis van  [een open-source-](https://github.com/adobe/aem-guides-wknd) project dat is ontworpen als referentie en  [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) zelfstudie voor AEM implementaties.
 
-In plaats van het opzetten van een AEM milieu en het installeren van de WKND codebasis, kunt u het debugger van het Experience Platform aan **switch** levende [https://wknd.site/](https://wknd.site/) aan *uw* bezit van de Lancering gebruiken. Natuurlijk kunt u uw eigen AEM gebruiken als de [Adobe Client Data Layer is ingeschakeld](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
+In plaats van het opzetten van een AEM milieu en het installeren van de WKND codebasis, kunt u het debugger van het Experience Platform aan **switch** levende [https://wknd.site/](https://wknd.site/) aan *uw* bezit van de Lancering gebruiken. Natuurlijk kunt u uw eigen AEM gebruiken als de [Adobe Client Data Layer is ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
 
-1. Login aan Experience Platform Launch en [creeer een Bezit van de Lancering](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/configure-launch/launch.html) (als u nog niet hebt).
-1. Zorg ervoor dat een initiële Starten [Bibliotheek is gecreeerd](https://docs.adobe.com/content/help/en/launch/using/reference/publish/libraries.html#create-a-library) en aan een Starten [milieu](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html) bevorderd.
+1. Login aan Experience Platform Launch en [creeer een Bezit van de Lancering](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch.html) (als u nog niet hebt).
+1. Zorg ervoor dat een initiële Starten [Bibliotheek is gecreeerd](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) en aan een Starten [milieu](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) bevorderd.
 1. Kopieer de insluitcode voor Starten vanuit de omgeving waarnaar de bibliotheek is gepubliceerd.
 
    ![Insluitcode starten kopiëren](assets/collect-data-analytics/launch-environment-copy.png)
@@ -77,7 +72,7 @@ In plaats van het opzetten van een AEM milieu en het installeren van de WKND cod
 
 ## Gegevens Adobe client-gegevenslaag op WKND-site verifiëren
 
-Het [WKND project van de Verwijzing](https://github.com/adobe/aem-guides-wknd) wordt gebouwd met AEM Componenten van de Kern en heeft [de Laag van Gegevens van de Cliënt van de Adobe toegelaten ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) door gebrek. Daarna, verifieer de Laag van Gegevens van de Cliënt van Adobe wordt toegelaten.
+Het [WKND project van de Verwijzing](https://github.com/adobe/aem-guides-wknd) wordt gebouwd met AEM Componenten van de Kern en heeft [de Laag van Gegevens van de Cliënt van de Adobe toegelaten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) door gebrek. Daarna, verifieer de Laag van Gegevens van de Cliënt van Adobe wordt toegelaten.
 
 1. Navigeer naar [https://wknd.site](https://wknd.site).
 1. Open de ontwikkelaarsgereedschappen van de browser en navigeer naar de **Console**. Voer de volgende opdracht uit:
@@ -104,11 +99,11 @@ Het [WKND project van de Verwijzing](https://github.com/adobe/aem-guides-wknd) w
        xdm:template: "/conf/wknd/settings/wcm/templates/landing-page-template"
    ```
 
-   We gebruiken standaardeigenschappen die zijn afgeleid van het [Paginaschema](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#page), `dc:title`, `xdm:language` en `xdm:template` van de gegevenslaag om paginagegevens naar Adobe Analytics te verzenden.
+   We gebruiken standaardeigenschappen die zijn afgeleid van het [Paginaschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page), `dc:title`, `xdm:language` en `xdm:template` van de gegevenslaag om paginagegevens naar Adobe Analytics te verzenden.
 
    >[!NOTE]
    >
-   > Ziet u het javascript-object `adobeDataLayer` niet? Zorg ervoor dat de [Adobe Client Data Layer is ingeschakeld](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) op uw site.
+   > Ziet u het javascript-object `adobeDataLayer` niet? Zorg ervoor dat de [Adobe Client Data Layer is ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) op uw site.
 
 ## Een regel maken voor het laden van pagina&#39;s
 
@@ -175,13 +170,13 @@ De gegevenslaag van de Gegevens van de Cliënt van Adobe is een **gebeurtenis** 
    console.debug("Page template: " + event.component['xdm:template']);
    ```
 
-   Het object `event` wordt doorgegeven via de methode `trigger()` die in de aangepaste gebeurtenis wordt aangeroepen. `component` Dit is de huidige pagina die wordt afgeleid van de gegevenslaag  `getState` in de aangepaste gebeurtenis. Herhaal van vroeger het [paginaschema](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#page) dat door de gegevenslaag wordt blootgesteld om de diverse sleutels te zien die uit de doos worden blootgesteld.
+   Het object `event` wordt doorgegeven via de methode `trigger()` die in de aangepaste gebeurtenis wordt aangeroepen. `component` Dit is de huidige pagina die wordt afgeleid van de gegevenslaag  `getState` in de aangepaste gebeurtenis. Herhaal van vroeger het [paginaschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) dat door de gegevenslaag wordt blootgesteld om de diverse sleutels te zien die uit de doos worden blootgesteld.
 
-1. Sla de wijzigingen op en voer een [build](https://docs.adobe.com/content/help/en/launch/using/reference/publish/builds.html) in Launch uit om de code te promoten naar de [omgeving](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html) die op uw AEM-site wordt gebruikt.
+1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch uit om de code te promoten naar de [omgeving](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) die op uw AEM-site wordt gebruikt.
 
    >[!NOTE]
    >
-   > Het kan zeer nuttig zijn om [Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) te gebruiken om de ingebedde code aan een **ontwikkelings** milieu te schakelen.
+   > Het kan zeer nuttig zijn om [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) te gebruiken om de ingebedde code aan een **ontwikkelings** milieu te schakelen.
 
 1. Navigeer naar uw AEM en open de ontwikkelaarsgereedschappen om de console weer te geven. Vernieuw de pagina en u zou moeten zien dat de consoleberichten zijn geregistreerd:
 
@@ -191,7 +186,7 @@ De gegevenslaag van de Gegevens van de Cliënt van Adobe is een **gebeurtenis** 
 
 Maak vervolgens verschillende gegevenselementen om verschillende waarden vast te leggen uit de gegevenslaag van de Adobe-client. Zoals gezien in de vorige oefening hebben wij het mogelijk gezien om tot de eigenschappen van de gegevenslaag rechtstreeks door douanecode toegang te hebben. Het voordeel van het gebruik van gegevenselementen is dat deze opnieuw kunnen worden gebruikt in alle opstartregels.
 
-Herinneren van vroeger [Paginaschema](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#page) blootgesteld door de gegevenslaag:
+Herinneren van vroeger [Paginaschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) blootgesteld door de gegevenslaag:
 
 Gegevenselementen worden toegewezen aan de eigenschappen `@type`, `dc:title` en `xdm:template`.
 
@@ -298,7 +293,7 @@ Vervolgens werkt u de **Pagina geladen**-regel bij om het **Component Resource T
 
    >[!NOTE]
    >
-   > Het is mogelijk om deze voorwaarde binnen de functie van de douanecode toe te voegen die op de gebeurtenis `cmp:show` luistert die vroeger in het leerprogramma wordt gecreeerd. Nochtans, geeft het toevoegen van het binnen UI meer zicht aan extra gebruikers die veranderingen in de regel zouden kunnen moeten aanbrengen. Bovendien kunnen we ons gegevenselement gebruiken!
+   > Het is mogelijk om deze voorwaarde binnen de functie van de douanecode toe te voegen die op de `cmp:show` gebeurtenis luistert die vroeger in het leerprogramma wordt gecreeerd. Nochtans, geeft het toevoegen van het binnen UI meer zicht aan extra gebruikers die veranderingen in de regel zouden kunnen moeten aanbrengen. Bovendien kunnen we ons gegevenselement gebruiken!
 
 1. Sla de wijzigingen op.
 
