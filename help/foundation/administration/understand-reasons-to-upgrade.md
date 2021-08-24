@@ -10,9 +10,9 @@ doc-type: article
 topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3529'
 ht-degree: 1%
 
 ---
@@ -343,7 +343,7 @@ Hieronder ziet u een matrix van de belangrijkste beveiligingsfuncties die AEM bi
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/security/saml-2-0-authenticationhandler.html" target="_blank">Verbeterde SAML-</a><br>
+        <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">Verbeterde SAML-</a><br>
  </strong>verificatieondersteuningVerbeterde SAML-omleiding, geoptimaliseerde groepsgegevens en problemen met sleutelversleuteling zijn opgelost. 
             <br>
         </td>
@@ -954,7 +954,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/content/dynamic-media/viewer-presets.html" target="_blank">Viewers</a>:</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">Viewers</a>:</strong>
             Aangepaste, van het merk voorziene mediaspelers en voorinstellingen met ondersteuning voor verschillende schermen/apparaten.</td>
             <td> </td>
             <td>✔</td>
