@@ -1,7 +1,7 @@
 ---
 title: Samenstellen en implementeren
 description: Met Adobe Cloud Manager kunt u code samenstellen en implementeren om als Cloud Service te AEM. De mislukkingen kunnen tijdens stappen in het bouwstijlproces voorkomen, die actie vereisen om hen op te lossen. Deze gids loopt door het begrip gemeenschappelijke mislukkingen in de plaatsing, en hoe te om hen het best te benaderen.
-feature: Developer Tools
+feature: Gereedschappen voor ontwikkelaars
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: develop
 audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2529'
 ht-degree: 0%
 
 ---
@@ -73,11 +72,11 @@ De fouten die in deze fase zijn vastgesteld, moeten de lokale opbouw van het pro
 
 Met codescannen wordt een statische codeanalyse uitgevoerd met behulp van een combinatie van Java en AEM-specifieke aanbevolen procedures.
 
-Het aftasten van de code resulteert in een bouwstijlmislukking als de Kritieke kwetsbaarheid van de Veiligheid in de code bestaat. Minder overtredingen kunnen worden overschreven, maar het wordt aanbevolen dat deze worden gecorrigeerd. Het scannen van code is niet perfect en kan resulteren in [false positives](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#dealing-with-false-positives).
+Het aftasten van de code resulteert in een bouwstijlmislukking als de Kritieke kwetsbaarheid van de Veiligheid in de code bestaat. Minder overtredingen kunnen worden overschreven, maar het wordt aanbevolen dat deze worden gecorrigeerd. Het scannen van code is niet perfect en kan resulteren in [false positives](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html#dealing-with-false-positives).
 
 Als u problemen met het scannen van code wilt verhelpen, downloadt u het CSV-rapport dat door Cloud Manager wordt geleverd via de knop **Details downloaden** en controleert u alle items.
 
-Zie AEM specifieke regels voor meer informatie de documentatie van Cloud Manager [aangepaste AEM-specifieke regels voor het scannen van code](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html).
+Zie AEM specifieke regels voor meer informatie de documentatie van Cloud Manager [aangepaste AEM-specifieke regels voor het scannen van code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html).
 
 ## Afbeeldingen samenstellen
 
@@ -105,7 +104,7 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 #### Oorzaak 2
 
 + __Oorzaak:__ Het AEM project omvat verkeerd het zelfde codepakket tweemaal, resulterend in de duplicatie van om het even welke configuratie OSGi in dat pakket.
-+ __Resolutie:__ herzie alle pom.xml- pakketten ingebed in het al project, en zorg ervoor zij de  `filevault-package-maven-plugin` [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) configuratie hebben aan  `<cloudManagerTarget>none</cloudManagerTarget>`.
++ __Resolutie:__ herzie alle pom.xml- pakketten ingebed in het al project, en zorg ervoor zij de  `filevault-package-maven-plugin` [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) configuratie hebben aan  `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 ### Onjuist geformuleerd script voor opnieuw aanwijzen
 
@@ -233,8 +232,8 @@ Om deze kwestie te bevestigen is de oorzaak van het falende gedrag:
 + __Oorzaak:__ AEM gebruiker van de replicatieservice die wordt gebruikt om inhoudspakketten op te stellen aan de AEM-publicatieservice kan niet schrijven naar  `/var` de AEM-publicatie. Dit resulteert in de plaatsing van het inhoudspakket aan de publicatieservice AEM om te ontbreken.
 + __Resolutie:__ De volgende manieren om deze problemen op te lossen worden weergegeven in de volgorde van voorkeur:
    1. Als de `/var` middelen niet noodzakelijk zijn verwijdert om het even welke middelen onder `/var` uit inhoudspakketten die als deel van uw toepassing worden opgesteld.
-   2. Als de `/var` middelen noodzakelijk zijn, bepaal de knoopstructuren gebruikend [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Scripts die opnieuw worden toegewezen, kunnen via OSGi-runmodi worden toegewezen aan AEM-auteur, AEM-publicatie of beide.
-   3. Als de `/var`-bronnen alleen vereist zijn op AEM auteur en redelijkerwijs niet kunnen worden gemodelleerd met [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), verplaatst u ze naar een apart inhoudspakket dat alleen op AEM-auteur wordt geïnstalleerd door [insluiten](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) in het `all`-pakket in een runmode-map van AEM-auteur (`<target>/apps/example-packages/content/install.author</target>`).
+   2. Als de `/var` middelen noodzakelijk zijn, bepaal de knoopstructuren gebruikend [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Scripts die opnieuw worden toegewezen, kunnen via OSGi-runmodi worden toegewezen aan AEM-auteur, AEM-publicatie of beide.
+   3. Als de `/var`-bronnen alleen vereist zijn op AEM auteur en redelijkerwijs niet kunnen worden gemodelleerd met [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), verplaatst u ze naar een apart inhoudspakket dat alleen op AEM-auteur wordt geïnstalleerd door [insluiten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) in het `all`-pakket in een runmode-map van AEM-auteur (`<target>/apps/example-packages/content/install.author</target>`).
    4. Verstrek aangewezen ACLs aan de `sling-distribution-importer` de dienstgebruiker zoals die in dit [Adobe KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html) wordt beschreven.
 
 ### Een Adobe Support-case maken
