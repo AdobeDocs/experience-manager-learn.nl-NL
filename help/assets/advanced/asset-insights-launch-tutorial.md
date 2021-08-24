@@ -1,15 +1,14 @@
 ---
 title: Asset Insights instellen met AEM Assets en Adobe Launch
 description: In deze videoreeks van 5 delen, lopen wij door de opstelling en de configuratie van de Inzichten van Activa voor Experience Manager die via Launch by Adobe wordt opgesteld.
-feature: Asset Insights
+feature: 'Asset Insights '
 version: 6.3, 6.4, 6.5
 topic: Integrations
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 In deze videoreeks van 5 delen, lopen wij door de opstelling en de configuratie van de Inzichten van Activa voor Experience Manager die via de Lancering van de Adobe wordt opgesteld.
 
-## Deel 1: Overzicht van asset Insights {#overview}
+## Deel 1: Overzicht van informatie over elementen {#overview}
 
 Overzicht van Asset Insights. Installeer Core Components, Sample Image Component en andere inhoudspakketten om uw omgeving gereed te maken.
 
@@ -59,7 +58,7 @@ De component van het Beeld van de kern gebruikt ***data-asset-id*** attribuut bi
 >
 >*data-aem-asset-id=&#39;image.UUID&#39;* en  *data-trackable=&#39;true&#39;* zijn de belangrijkste kenmerken die aanwezig moeten zijn voor Asset Impressions. Voor Asset Click Insights moet de bovenliggende &lt;a>-tag naast de bovenstaande gegevenskenmerken in de &lt;img>-tag een geldige href-waarde hebben.
 
-## Deel 3: Adobe Analytics — Creating Report Suite, enable Real-time gegevensverzameling and AEM Assets Reporting {#adobe-analytics-asset-insights}
+## Deel 3: Adobe Analytics — Report Suite maken, gegevensverzameling in real-time en AEM Assets Reporting inschakelen {#adobe-analytics-asset-insights}
 
 De reeks van het rapport met gegevensinzameling in real time wordt gecreeerd voor activa het volgen. AEM Assets Insights-configuratie wordt ingesteld met Adobe Analytics-referenties.
 
@@ -76,7 +75,7 @@ Voor de configuratie van AEM Assets Insights hebt u de volgende referenties nodi
 * Gedeeld geheim (kan worden verkregen van *Adobe Analytics > Admin > Bedrijfsinstellingen > Webservice*).
 * Rapportsuite (zorg dat u de juiste rapportsuite selecteert die wordt gebruikt voor Asset Reporting)
 
-## Deel 4: Adobe Experience Platform Launch gebruiken om Adobe Analytics-extensie {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension} toe te voegen
+## Deel 4: Adobe Experience Platform Launch gebruiken om Adobe Analytics-extensie toe te voegen {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
 
 Adobe Analytics-extensie toevoegen, regels voor het laden van pagina&#39;s maken en AEM integreren met Starten met Adobe IMS-technische account.
 
@@ -107,7 +106,7 @@ Tot slot implementeert Pagetracker een initialisatiefunctie als.
 * **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: aangeroepen om de component Pagetracker te initialiseren.&lt;/code>&lt;/code> Dit DIENT te worden aangeroepen voordat een van de gebeurtenissen asset-inzichten-events (Impressions and/or Clicks) op de webpagina wordt gegenereerd.
 * **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: Accepteert optioneel een object AppMeasurement — indien opgegeven, wordt niet geprobeerd een nieuwe instantie van een object AppMeasurement te maken.&lt;/code>&lt;/code>
 
-### Regel 2: Afbeeldingsbeheer — Handeling 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
+### Regel 2: Afbeeldingsbeheer — Actie 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 
 ```javascript
 /*
@@ -189,7 +188,7 @@ Twee Google Chrome-browserextensies worden in de video gebruikt als manieren om 
 
 Het is ook mogelijk om van DTM op zuiveringswijze met de volgende Uitbreiding van Chrome over te schakelen: [Starten en DTM-switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Hierdoor is het eenvoudiger om te zien of er fouten zijn met betrekking tot DTM-implementatie. Daarnaast kunt u handmatig overschakelen van DTM naar de foutopsporingsmodus via elke browser *ontwikkelaarsgereedschappen -> JS Console* door het volgende fragment toe te voegen:
 
-## Deel 5: Testend Analytic Tracking and Syncing Insight Data{#analytics-tracking-asset-insights}
+## Deel 5: Testen van gegevens over Analytische tracking en Synchronisatie{#analytics-tracking-asset-insights}
 
 Rapport AEM Asset Reporting Job Scheduler en Assets Insights-rapporten configureren
 
