@@ -11,7 +11,6 @@ role: Developer
 level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
-translation-type: tm+mt
 source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '581'
@@ -20,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Themaworkflow {#theming}
+# Thematische workflow {#theming}
 
 >[!CAUTION]
 >
@@ -40,7 +39,7 @@ Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de stappen in het
 1. Leer hoe u code kunt vergelijken met de livesite voor een real-time voorvertoning.
 1. Begrijp het werkschema van begin tot eind van het leveren van gecompileerde CSS en updates JavaScript als deel van een thema gebruikend Acties GitHub.
 
-## Een thema {#theme-update} bijwerken
+## Een thema bijwerken {#theme-update}
 
 Breng vervolgens wijzigingen aan in de themabronnen, zodat de site overeenkomt met de vormgeving van het WKND-merk.
 
@@ -57,7 +56,7 @@ Stappen op hoog niveau voor de video:
 
 Download de voltooide stijlen voor het [WKND-thema](assets/theming/WKND-THEME-src.zip)
 
-## Een thema {#deploy-theme} implementeren
+## Een thema implementeren {#deploy-theme}
 
 Stel updates aan een thema aan een AEM milieu op gebruikend Acties GitHub.
 
