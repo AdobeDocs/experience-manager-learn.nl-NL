@@ -11,9 +11,9 @@ level: Beginner
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-source-git-commit: 66d35a41d63d4c33f71a118e9471c5aa58dc48a7
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4106'
 ht-degree: 0%
 
 ---
@@ -381,7 +381,7 @@ Het Byline Sling-model is gebaseerd op verschillende Java API&#39;s die door AEM
 
    De `uber-jar` wordt alleen opgenomen wanneer het profiel `classic` wordt aangeroepen, d.w.z. `mvn clean install -PautoInstallSinglePackage -Pclassic`. Nogmaals, dit is uniek voor dit project. In een echt project, dat van het AEM Archieftype van het Project wordt geproduceerd zal `uber-jar` het gebrek zijn als de gespecificeerde versie van AEM 6.5 of 6.4 is.
 
-   De [uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) bevat alle openbare API&#39;s van Java die door AEM 6.x worden blootgesteld. De versie blijft behouden in de bovenliggende reactorpom die zich aan de basis van het project bevindt `aem-guides-wknd/pom.xml`.
+   De [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) bevat alle openbare API&#39;s van Java die door AEM 6.x worden blootgesteld. De versie blijft behouden in de bovenliggende reactorpom die zich aan de basis van het project bevindt `aem-guides-wknd/pom.xml`.
 
 1. Zoek de afhankelijkheid voor `core.wcm.components.core`:
 
