@@ -3,22 +3,18 @@ user-guide-title: Aan de slag met AEM headless
 user-guide-description: Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met AEM headless.
 breadcrumb-title: Zelfstudie voor AEM zonder koptekst
 version: cloud-service
-sub-product: content-services
-audience: architect, developer, implementer
-doc-type: tutorial
-topics: content-delivery
-activity: develop, understand
+feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '181'
 ht-degree: 3%
 
 ---
 
 
-# Aan de slag met AEM Headless{#getting-started-with-aem-headless}
+# Aan de slag met AEM headless{#getting-started-with-aem-headless}
 
 + [Overzicht van AEM headless](./overview.md)
 + GraphQL {#graphql}
