@@ -11,9 +11,9 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ winde die in de video&#39;s wordt gebruikt is [Visual Studio Code](https://code.
 1. Begrijp hoe Dialoogvensters worden gebruikt om het schrijven van inhoud te vergemakkelijken.
 1. Leer de basisbeginselen zelf van Client-side bibliotheken om CSS en JavaScript op te nemen om een component te steunen.
 
-## Wat u {#what-you-will-build} wilt maken
+## Wat u gaat maken {#what-you-will-build}
 
 In dit hoofdstuk zult u verscheidene wijzigingen in een zeer eenvoudige `HelloWorld` component uitvoeren. Tijdens het maken van updates van de `HelloWorld` component zult u over de belangrijkste gebieden van AEM componentenontwikkeling leren.
 
-## Hoofdproject {#starter-project}
+## Hoofdstukstartproject {#starter-project}
 
 Dit hoofdstuk bouwt op een generisch project voort dat door [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) wordt geproduceerd. Bekijk de onderstaande video en bekijk de [voorwaarden](#prerequisites) om aan de slag te gaan!
 
@@ -97,9 +97,9 @@ Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden u
 1. Schakel in naar de modus Ontwikkelaar en bekijk het inhoudspad in CRXDE-Lite en controleer de eigenschappen van de componentinstantie.
 1. Gebruik CRXDE-Lite om het `cq:dialog` en `helloworld.html` manuscript te bekijken dat bij `/apps/wknd/components/content/helloworld` wordt gevestigd.
 
-## HTML (HTML Template Language) en Dialoogvensters {#htl-dialogs}
+## HTML (HTML-sjabloontaal) en dialoogvensters {#htl-dialogs}
 
-HTML-sjabloontaal of **[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)** is een lichtgewicht sjabloontaal aan de serverzijde die door AEM componenten wordt gebruikt om inhoud te renderen.
+HTML-sjabloontaal of **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)** is een lichtgewicht sjabloontaal aan de serverzijde die door AEM componenten wordt gebruikt om inhoud te renderen.
 
 **Met** dialoogvensters worden de beschikbare configuraties gedefinieerd die voor een component kunnen worden gemaakt.
 
@@ -169,7 +169,7 @@ Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden u
 
 1. Implementeer de wijzigingen in een lokale versie van AEM met de plug-in voor ontwikkelaars of met behulp van uw Maven-vaardigheden.
 
-## Sling-modellen {#sling-models}
+## Verkoopmodellen {#sling-models}
 
 Sling-modellen zijn annotaties die worden aangedreven door Java &quot;POJO&#39;s&quot; (Plain Old Java Objects) en die het gemakkelijker maken om gegevens van de JCR aan Java-variabelen toe te wijzen en die een aantal andere problemen bieden bij het ontwikkelen in de context van AEM.
 
