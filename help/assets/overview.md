@@ -2,7 +2,6 @@
 title: AEM Assets-video's en -Tutorials
 description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Assets
 sub-product: elementen, dynamische media
-translation-type: tm+mt
 source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
 source-wordcount: '230'
@@ -83,7 +82,7 @@ Adobe Experience Manager Assets is een hulpmiddel voor het beheer van digitale m
 
 ## Aanvullende bronnen
 
-* [Experience League - Verken AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Assets-documentatie](https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html)
 * [AEM als Cloud Service Tutorials](/help/cloud-service/overview.md)
 * [AEM Sites Tutorials](/help/sites/overview.md)
