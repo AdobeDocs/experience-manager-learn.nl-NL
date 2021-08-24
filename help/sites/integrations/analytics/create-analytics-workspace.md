@@ -1,20 +1,16 @@
 ---
 title: Gegevens analyseren met Analysis Workspace
 description: Leer hoe u gegevens die vanaf een Adobe Experience Manager-site zijn vastgelegd, kunt toewijzen aan maateenheden en dimensies in Adobe Analytics-rapportensuites. Leer hoe u een gedetailleerd rapportdashboard maakt met de Analysis Workspace-functie van Adobe Analytics.
-feature: analyse
-topics: integrations
-audience: administrator
-doc-type: tutorial
-activity: setup
 version: cloud-service
-kt: 6409
-thumbnail: KT-6296.jpg
 topic: Integrations
+feature: Gegevenslaag Adobe-client
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 6409
+thumbnail: KT-6296.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -45,17 +41,17 @@ Hieronder vindt u een overzicht van de analytische variabelen die momenteel word
 ### Doelstellingen {#objective}
 
 1. Maak een nieuwe rapportsuite of gebruik een bestaande set.
-1. Configureer [Conversievariabelen (eVars)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) en [Gebeurtenissen met succes (Gebeurtenissen)](https://docs.adobe.com/help/en/analytics/admin/admin-tools/success-events/success-event.html) in de rapportsuite.
-1. Maak een [Analysis Workspace-project](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) om gegevens te analyseren met behulp van gereedschappen waarmee u snel inzichten kunt bouwen, analyseren en delen.
+1. Configureer [Conversievariabelen (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) en [Gebeurtenissen met succes (Gebeurtenissen)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) in de rapportsuite.
+1. Maak een [Analysis Workspace-project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) om gegevens te analyseren met behulp van gereedschappen waarmee u snel inzichten kunt bouwen, analyseren en delen.
 1. Deel het Analysis Workspace-project met andere teamleden.
 
 ## Vereisten
 
 Deze zelfstudie is een voortzetting van de [Aangeklikte component bijhouden met Adobe Analytics](./track-clicked-component.md) en gaat ervan uit dat u:
 
-* A **Launch Property** met [Adobe Analytics extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) enabled
-* **Adobe** AnalyticSnelst/dev-rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Experience Platform ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Debuggerbrowser uitbreiding die met uw bezit van de Lancering wordt gevormd op  [https://wknd.site/us/en.](https://wknd.site/us/en.html) htmlor een plaats van de AEM met de toegelaten Laag van Gegevens van Adobe wordt geladen.
+* A **Launch Property** met [Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) enabled
+* **Adobe** AnalyticSnelst/dev-rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
+* [Experience Platform ](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) Debuggerbrowser uitbreiding die met uw bezit van de Lancering wordt gevormd op  [https://wknd.site/us/en.](https://wknd.site/us/en.html) htmlor een plaats van de AEM met de toegelaten Laag van Gegevens van Adobe wordt geladen.
 
 ## Conversievariabelen (eVars) en succesgebeurtenissen (gebeurtenis)
 
@@ -116,19 +112,19 @@ Daarna, creëren wij zelfs om de Knoop te volgen CTA klikt.
 
 Analysis Workspace is een flexibel browserprogramma waarmee u snel analyses kunt maken en inzichten kunt delen. Gebruikend de belemmering-en-dalingsinterface, kunt u uw analyse ambachtelijk maken, visualisaties toevoegen om gegevens aan het leven te brengen, een dataset in werking te stellen, delen, en planningsprojecten met iedereen in uw organisatie.
 
-Daarna, creeer een nieuw [project](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) om een dashboard te bouwen om de prestaties van de knopen CTA door de plaats te analyseren.
+Daarna, creeer een nieuw [project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) om een dashboard te bouwen om de prestaties van de knopen CTA door de plaats te analyseren.
 
 1. Selecteer **Werkruimte** op de werkbalk Analytics en klik op **Een nieuw project maken**.
 
    ![Werkruimte](assets/create-analytics-workspace/create-workspace.png)
 
-1. Kies om van **leeg project** te beginnen of één van de pre-gebouwde malplaatjes te selecteren, of door Adobe of douanesjablonen worden verstrekt die door uw organisatie worden gecreeerd. Er zijn verschillende sjablonen beschikbaar, afhankelijk van de analyse- of gebruikscase die u in gedachten hebt. [Meer weten ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) over de verschillende beschikbare sjabloonopties?
+1. Kies om van **leeg project** te beginnen of één van de pre-gebouwde malplaatjes te selecteren, of door Adobe of douanesjablonen worden verstrekt die door uw organisatie worden gecreeerd. Er zijn verschillende sjablonen beschikbaar, afhankelijk van de analyse- of gebruikscase die u in gedachten hebt. [Meer weten ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) over de verschillende beschikbare sjabloonopties?
 
    In uw project van de Werkruimte, worden de panelen, de lijsten, de visualisaties, en de componenten betreden van het linkerspoor. Dit zijn uw projectbouwstenen.
 
-   * **[Componenten](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)**  - Componenten zijn dimensies, metriek, segmenten of datumbereiken, die allemaal kunnen worden gecombineerd in een tabel met vrije vorm om te beginnen met het beantwoorden van uw zakelijke vraag. Zorg ervoor dat u bekend bent met elk type component voordat u in de analyse gaat duiken. Als u de componentterminologie onder de knie hebt, kunt u beginnen met slepen en neerzetten om uw analyse te maken in een tabel met vrije vorm.
-   * **[Visualisaties](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)**  - Visualisaties, zoals een bar of lijngrafiek, worden dan toegevoegd bovenop de gegevens om het aan het leven visueel te brengen. In de uiterst linkse spoorlijn, selecteer het middenpictogram van Visualisaties om de volledige lijst van beschikbare visualisaties te zien.
-   * **[Deelvensters](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html)**  - Een deelvenster is een verzameling tabellen en visualisaties. U hebt toegang tot deelvensters via het pictogram linksboven in de werkruimte. Deelvensters zijn handig wanneer u uw projecten wilt ordenen op basis van tijdsperiodes, rapportreeksen of gevallen waarin u de analyse wilt gebruiken. De volgende deelvenstertypen zijn beschikbaar in Analysis Workspace:
+   * **[Componenten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)**  - Componenten zijn dimensies, metriek, segmenten of datumbereiken, die allemaal kunnen worden gecombineerd in een tabel met vrije vorm om te beginnen met het beantwoorden van uw zakelijke vraag. Zorg ervoor dat u bekend bent met elk type component voordat u in de analyse gaat duiken. Als u de componentterminologie onder de knie hebt, kunt u beginnen met slepen en neerzetten om uw analyse te maken in een tabel met vrije vorm.
+   * **[Visualisaties](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)**  - Visualisaties, zoals een bar of lijngrafiek, worden dan toegevoegd bovenop de gegevens om het aan het leven visueel te brengen. In de uiterst linkse spoorlijn, selecteer het middenpictogram van Visualisaties om de volledige lijst van beschikbare visualisaties te zien.
+   * **[Deelvensters](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html)**  - Een deelvenster is een verzameling tabellen en visualisaties. U hebt toegang tot deelvensters via het pictogram linksboven in de werkruimte. Deelvensters zijn handig wanneer u uw projecten wilt ordenen op basis van tijdsperiodes, rapportreeksen of gevallen waarin u de analyse wilt gebruiken. De volgende deelvenstertypen zijn beschikbaar in Analysis Workspace:
 
    ![Sjabloonselectie](assets/create-analytics-workspace/workspace-tools.png)
 
@@ -170,7 +166,7 @@ Daarna, bouw een lijst om een visuele vertegenwoordiging van tot stand te brenge
 
    ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
 
-1. Met de Adobe Analytics-classificaties kunt u de waarde van de knop-id vervangen door een gebruikersvriendelijke naam. U zou meer over kunnen lezen hoe te om een classificatie voor specifieke metrische [hier](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html) tot stand te brengen. In dit geval, hebben wij classificatiemetrisch `Button Section (Button ID)` opstelling voor `eVar8` die knoop identiteitskaart aan een gebruikersvriendelijke naam in kaart brengt.
+1. Met de Adobe Analytics-classificaties kunt u de waarde van de knop-id vervangen door een gebruikersvriendelijke naam. U zou meer over kunnen lezen hoe te om een classificatie voor specifieke metrische [hier](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html) tot stand te brengen. In dit geval, hebben wij classificatiemetrisch `Button Section (Button ID)` opstelling voor `eVar8` die knoop identiteitskaart aan een gebruikersvriendelijke naam in kaart brengt.
 
    ![Knopsectie](assets/create-analytics-workspace/button-section.png)
 
