@@ -9,14 +9,13 @@ activity: understand
 version: cloud-service
 kt: 4644
 thumbnail: 32029.jpg
-topic: Architecture, Performance
+topic: Architectuur, prestaties
 role: Architect, Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 24%
+source-wordcount: '48'
+ht-degree: 10%
 
 ---
 
@@ -29,4 +28,4 @@ Een inleiding tot de mogelijkheden en eigenschappen van [!DNL dispatcher] als de
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [[!DNL Dispatcher] documentatie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+* [[!DNL Dispatcher] documentatie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
