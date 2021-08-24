@@ -3,7 +3,6 @@ title: hulplijntitel
 seo-title: titel seo
 description: beschrijving van hulplijn
 seo-description: seo-beschrijving
-translation-type: tm+mt
 source-git-commit: f6b1af99eb9eb5602234c89ea25f1a7d03d64cc0
 workflow-type: tm+mt
 source-wordcount: '108'
