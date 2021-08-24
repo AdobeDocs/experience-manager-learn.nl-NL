@@ -14,9 +14,9 @@ thumbnail: 31784.jpg
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '372'
 ht-degree: 4%
 
 ---
@@ -62,5 +62,5 @@ In deze video worden de volgende mogelijkheden of functies behandeld:
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie over pagina-inhoud bewerken](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
-* [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Documentatie over pagina-inhoud bewerken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
