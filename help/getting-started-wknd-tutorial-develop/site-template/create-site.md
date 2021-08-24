@@ -11,7 +11,6 @@ role: Developer
 level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
-translation-type: tm+mt
 source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '902'
@@ -34,7 +33,7 @@ De stappen in dit hoofdstuk vinden plaats in een Adobe Experience Manager als ee
 
 Raadpleeg de [on boarding documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) voor meer informatie.
 
-## Doel {#objective}
+## Doelstelling {#objective}
 
 1. Leer hoe u de wizard Site maken kunt gebruiken om een nieuwe site te maken.
 1. Begrijp de rol van de Malplaatjes van de Plaats.
