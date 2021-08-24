@@ -4,20 +4,19 @@ seo-title: Deelvenster Investeringmix configureren
 description: Dit maakt deel uit van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we schijfgrafieken toe om de huidige en modelinvesteringsmix weer te geven.
 seo-description: Dit maakt deel uit van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we schijfgrafieken toe om de huidige en modelinvesteringsmix weer te geven.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
-feature: Interactive Communication
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -35,7 +34,7 @@ In dit deel, zullen wij cirkelgrafieken toevoegen om de huidige en modelinvester
 
 * We voegen twee schijfgrafieken toe die de huidige en modelinvesteringsmix van de rekeninghouder weergeven.
 
-## Huidige assetmix {#current-asset-mix}
+## Huidige middelenmix {#current-asset-mix}
 
 * Tik op het deelvenster &quot;CurrentAssetMix&quot; aan de rechterkant en selecteer het pictogram &quot;+&quot; en voeg tekstcomponent in. Wijzig de standaardtekst in &quot;Huidige assetmix&quot;.
 
