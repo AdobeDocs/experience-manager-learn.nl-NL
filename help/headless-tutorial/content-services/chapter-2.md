@@ -3,14 +3,13 @@ title: Hoofdstuk 2 - Fragmentmodellen voor gebeurtenisinhoud definiëren - Inhou
 seo-title: Aan de slag met AEM Content Services - Hoofdstuk 2 - Modellen voor gebeurteniscontentfragmenten definiëren
 description: Hoofdstuk 2 van de AEM zelfstudie zonder koppen omvat het inschakelen en definiëren van modellen van inhoudsfragmenten die worden gebruikt om een genormaliseerde gegevensstructuur en ontwerpinterface te definiëren voor het maken van gebeurtenissen.
 seo-description: Hoofdstuk 2 van de AEM zelfstudie zonder koppen omvat het inschakelen en definiëren van modellen van inhoudsfragmenten die worden gebruikt om een genormaliseerde gegevensstructuur en ontwerpinterface te definiëren voor het maken van gebeurtenissen.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+feature: Inhoudsfragmenten, API's
+topic: Koploos, inhoudsbeheer
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
@@ -29,7 +28,7 @@ In dit hoofdstuk wordt beschreven hoe u modellen van inhoudsfragmenten kunt insc
 
 ## Modellen van inhoudsfragmenten inschakelen
 
-Content Fragment Models **must** moet via **[AEM [!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)** worden ingeschakeld.
+Content Fragment Models **must** moet via **[AEM [!UICONTROL Configuration Browser]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)** worden ingeschakeld.
 
 Als de Modellen van het Fragment van de Inhoud **niet** voor een configuratie worden toegelaten, **[!UICONTROL Create]>[!UICONTROL Content Fragment]** zal niet voor de relevante AEM configuratie verschijnen.
 
@@ -41,7 +40,7 @@ Als de Modellen van het Fragment van de Inhoud **niet** voor een configuratie wo
 >
 >Wanneer de `global` configuratie wordt gebruikt, is de configuratie op alle inhoud van toepassing, en `cq:conf` te hoeven niet worden geplaatst.
 >
->Raadpleeg de [[!UICONTROL Configuration Browser] documentatie](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) voor meer informatie.
+>Raadpleeg de [[!UICONTROL Configuration Browser] documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) voor meer informatie.
 
 1. Meld u aan bij AEM-auteur als een gebruiker met de juiste machtigingen om de relevante configuratie te wijzigen.
    * Voor deze zelfstudie kan de **admin**-gebruiker worden gebruikt.
