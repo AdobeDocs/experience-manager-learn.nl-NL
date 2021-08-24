@@ -12,7 +12,6 @@ thumbnail: 32565.jpg
 topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
 source-wordcount: '549'
@@ -92,4 +91,4 @@ In dit gedeelte van de zelfstudie wordt getoond hoe u:
 + [!DNL Dispatcher]-gereedschappen installeren
 + De lokale [!DNL Dispatcher]-runtime uitvoeren
 
-[De  [!DNL Dispatcher] LocalRuntime instellen](./dispatcher-tools.md)
+[De lokale [!DNL Dispatcher] runtime instellen](./dispatcher-tools.md)
