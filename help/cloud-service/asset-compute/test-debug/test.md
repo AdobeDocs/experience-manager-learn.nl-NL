@@ -12,10 +12,9 @@ thumbnail: KT-6284.jpg
 topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 0%
 
 # Een Asset compute-worker testen
 
-Het project van de Asset compute bepaalt een patroon voor gemakkelijk het creëren van en het uitvoeren van [tests van de arbeiders van de Asset compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
+Het project van de Asset compute bepaalt een patroon voor gemakkelijk het creëren van en het uitvoeren van [tests van de arbeiders van de Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomie van een arbeiderstest
 
