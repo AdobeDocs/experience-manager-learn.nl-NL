@@ -4,18 +4,17 @@ description: Met het gereedschap Bulk importeren in AEM als Cloud Service kunnen
 version: cloud-service
 doc-type: technical-video
 topics: Migration
-feature: Migration
+feature: Migratie
 activity: develop
 audience: developer
 kt: 6729
 thumbnail: 329680.jpg
-topic: Migration
+topic: Migratie
 role: Architect, Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
