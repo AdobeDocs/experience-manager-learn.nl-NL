@@ -7,13 +7,12 @@ audience: developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '293'
 ht-degree: 1%
 
 ---
@@ -37,7 +36,7 @@ Wegens deze directe lading van CSS eerder dan het gebruiken van een categorie va
 
 Dit heeft het voordeel om deze de stijloverschrijvingen van douanestijlen toe te staan om huurspecifiek te zijn.
 
-### Maak de ontwerpclientlib {#prepare-the-authoring-clientlib} klaar
+### Maak de ontwerpende clientlib klaar {#prepare-the-authoring-clientlib}
 
 Zorg voor het bestaan van een `authoring` client-lib voor uw project op `/apps/my-project/clientlib/authoring.`
 
