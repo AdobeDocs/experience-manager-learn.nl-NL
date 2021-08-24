@@ -10,9 +10,9 @@ activity: use
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Een van de belangrijkste aspecten van de klantervaring op uw website of mobiele 
 
 Slimme beeldverwerking is ook nuttig dankzij de extra prestatieverhoging van volledige integratie met de best-in-class premium service van Adobe. Deze dienst vindt de optimale Internet route tussen servers, netwerken, en peerpunten die de laagste latentie, en/of pakketverliestarief dan de standaardroute op Internet hebben.
 
-Meer informatie over [Smart Imaging](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
+Meer informatie over [Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Voordelen van Smart Imaging
 
@@ -36,7 +36,7 @@ Omdat de beelden de meerderheid van de ladingstijd van een pagina vormen, kan de
 
 Zoals eerder vermeld, maakt Smart Imaging gebruik van Adobe Sensei AI-mogelijkheden en werkt het met bestaande voorinstellingen voor afbeeldingen om afbeeldingen automatisch om te zetten in optimale volgende generatie afbeeldingsindelingen, zoals WebP, terwijl de visuele getrouwheid behouden blijft.
 
-Meer informatie over [Hoe werkt Slimme afbeeldingen](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), zoals details zoals ondersteunde afbeeldingsindelingen (en wat er gebeurt als u die indelingen niet gebruikt) en de invloed ervan op bestaande afbeeldingsvoorinstellingen die in gebruik zijn.
+Meer informatie over [Hoe werkt Slimme afbeeldingen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), zoals details zoals ondersteunde afbeeldingsindelingen (en wat er gebeurt als u die indelingen niet gebruikt) en de invloed ervan op bestaande afbeeldingsvoorinstellingen die in gebruik zijn.
 
 ## Effecten van slimme beelden
 
@@ -54,7 +54,7 @@ Als u Smart Imaging inschakelt, begint u met het verzenden van een verzoek om te
 
 Als u Smart Imaging hebt ingeschakeld, wilt u controleren of het werkt zoals u had verwacht.
 
-U hebt waarschijnlijk aanvullende vragen over Smart Imaging. We hebben een lijst met veelgestelde vragen (FAQ&#39;s) met antwoorden samengesteld. Lees [Veelgestelde vragen](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
+U hebt waarschijnlijk aanvullende vragen over Smart Imaging. We hebben een lijst met veelgestelde vragen (FAQ&#39;s) met antwoorden samengesteld. Lees [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Aanvullende bronnen
 
