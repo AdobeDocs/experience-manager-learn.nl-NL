@@ -10,13 +10,12 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -25,7 +24,7 @@ ht-degree: 0%
 # Taakmelding toewijzen aanpassen
 
 De taakcomponent toewijzen wordt gebruikt om taken toe te wijzen aan workflowdeelnemers. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of groepsleden.
-Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Deze dynamische gegevens worden opgehaald met het systeem [metagegevenseigenschappen](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) worden gegenereerd.
+Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Deze dynamische gegevens worden opgehaald met het systeem [metagegevenseigenschappen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) worden gegenereerd.
 Als u waarden uit de verzonden formuliergegevens wilt opnemen in het e-mailbericht, moet u een eigenschap voor aangepaste metagegevens maken en deze eigenschappen voor aangepaste metagegevens in de e-mailsjabloon gebruiken
 
 
@@ -131,7 +130,7 @@ Nadat de component OSGi wordt gebouwd en in AEM server wordt opgesteld, vorm de 
 
 ## Om dit op uw server te proberen
 
-* [CQ-mailservice op dag configureren](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* [CQ-mailservice op dag configureren](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
 * Een geldige e-mailid koppelen aan [admin-gebruiker](http://localhost:4502/security/users.html)
 * Download en installeer [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) met behulp van [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 * Download [Adaptief formulier](assets/request-travel-authorization.zip) en importeer in AEM van de [formulieren en documenten ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
