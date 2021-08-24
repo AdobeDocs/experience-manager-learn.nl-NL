@@ -13,9 +13,9 @@ kt: 193
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -42,5 +42,5 @@ Bewerkbare URL voor sjablonen (lokale AEM): [http://localhost:4502/libs/wcm/core
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Bewerkbare paginasjablonen - Documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html)
-* [Bezig met maken van paginasjablonen - Documentatie](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/templates.html)
+* [Bewerkbare paginasjablonen - Documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+* [Bezig met maken van paginasjablonen - Documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
