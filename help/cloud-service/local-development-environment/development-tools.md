@@ -12,9 +12,9 @@ thumbnail: 25907.jpg
 topic: Ontwikkeling
 role: Developer
 level: Beginner
-source-git-commit: 6b4b9d7039b7b1c60ed1a7e5ec4ed42250499cec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Als u Homebrew gebruikt, volgt u de __installatie met behulp van Homebrew__ inst
 
 ## Installatiegit
 
-[](https://git-scm.com/) Bitis het bronbeheersysteem dat door  [Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/source-code-repository.html) wordt gebruikt, en is dus vereist voor ontwikkeling.
+[](https://git-scm.com/) Bitis het bronbeheersysteem dat door  [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html) wordt gebruikt, en is dus vereist voor ontwikkeling.
 
 + Git installeren met Homebrew
    1. Open uw Eind/Herinnering van het Bevel
@@ -79,7 +79,7 @@ Als u Homebrew gebruikt, volgt u de __installatie met behulp van Homebrew__ inst
 
 ![Git](./assets/development-tools/git.png)
 
-## Node.js (en npm){#node-js} installeren
+## Node.js (en npm) installeren{#node-js}
 
 [Node.](https://nodejs.org) jsis een runtimeomgeving van JavaScript die wordt gebruikt om met de front-end activa van het  __ui.__ frontendsubproject van een AEM project te werken. Node.js wordt gedistribueerd met [npm](https://www.npmjs.com/), is de facto Node.js pakketmanager, die wordt gebruikt om JavaScript gebiedsdelen te beheren.
 
@@ -131,7 +131,7 @@ De [Adobe I/O CLI](https://github.com/adobe/aio-cli), of `aio`, verleent bevelli
    + `node --version` uitvoeren om te bevestigen
 1. `npm install -g @adobe/aio-cli` uitvoeren om de `aio` npm module globaal te installeren
 
-### De Adobe I/O CLI Cloud Manager-insteekmodule instellen{#aio-cloud-manager}
+### De plug-in Adobe I/O CLI Cloud Manager instellen{#aio-cloud-manager}
 
 Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI communiceren met Adobe Cloud Manager via de opdracht `aio cloudmanager`.
 
