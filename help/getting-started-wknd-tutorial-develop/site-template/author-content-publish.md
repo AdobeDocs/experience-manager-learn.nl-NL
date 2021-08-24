@@ -11,7 +11,6 @@ role: Developer
 level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
-translation-type: tm+mt
 source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '1306'
@@ -32,13 +31,13 @@ Het is belangrijk om te begrijpen hoe een gebruiker inhoud voor de website zal b
 
 Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de stappen in het hoofdstuk [Een site maken](./create-site.md) zijn voltooid.
 
-## Doel {#objective}
+## Doelstelling {#objective}
 
 1. Begrijp de concepten **Pagina&#39;s** en **Componenten** in AEM Sites.
 1. Leer hoe u inhoud van de website kunt bijwerken.
 1. Leer hoe u wijzigingen op de livesite publiceert.
 
-## Nieuwe pagina maken {#create-page}
+## Een nieuwe pagina maken {#create-page}
 
 Een website wordt doorgaans opgedeeld in pagina&#39;s en vormt zo een ervaring van meerdere pagina&#39;s. AEM de inhoud van structuren op dezelfde manier. Maak vervolgens een nieuwe pagina voor de site.
 
@@ -61,7 +60,7 @@ Een website wordt doorgaans opgedeeld in pagina&#39;s en vormt zo een ervaring v
 
 1. Klik in het dialoogvenster op **Openen** om de zojuist gemaakte pagina te openen.
 
-## Auteur een Component {#author-component}
+## Auteur een component {#author-component}
 
 AEM Componenten kunnen worden beschouwd als kleine modulaire bouwstenen van een webpagina. Door UI in logische brokken of Componenten te breken, maakt het het veel gemakkelijker te beheren. Om componenten opnieuw te gebruiken, moeten de componenten configureerbaar zijn. Dit gebeurt via het dialoogvenster van de auteur.
 
@@ -133,7 +132,7 @@ Laten we nu de wijzigingen publiceren.
 
 1. Klik tot slot **Publish** in de hogere juiste hoek om de inhoud te publiceren.
 
-## Gepubliceerde inhoud {#publish} weergeven
+## Gepubliceerde inhoud weergeven {#publish}
 
 Navigeer vervolgens naar de service Publiceren om de wijzigingen weer te geven.
 
