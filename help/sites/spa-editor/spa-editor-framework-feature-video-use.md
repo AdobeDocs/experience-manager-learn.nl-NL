@@ -1,24 +1,17 @@
 ---
 title: De SPA Editor gebruiken met AEM Sites
-seo-title: Het framework SPA Editor gebruiken met AEM Sites
 description: AEM het Editor-framework voor één pagina biedt auteurs de mogelijkheid om inhoud te bewerken voor een toepassing of SPA voor één pagina. Ontwikkelaars die React gebruiken of het kader van de Angular leiden tot een SPA en wijzen dan gebieden van de SPA aan AEM componenten toe, toestaand auteurs om vertrouwde het uitgeven van AEM Sites hulpmiddelen te gebruiken.
-sub-product: sites, content-services
-feature: Spa Editor
-topics: authoring, single-page-applications
-audience: all
-doc-type: feature video
-activity: use
 version: 6.4, 6.5, cloud-service
-kt: 1047
-thumbnail: 22229.jpg
 topic: SPA
+feature: SPA Editor
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 1047
+thumbnail: 22229.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 1%
+source-wordcount: '277'
+ht-degree: 0%
 
 ---
 
@@ -45,5 +38,5 @@ Download en installeer het juiste [WKND-SPA-pakket](https://github.com/adobe/aem
 
 Voor een gedetailleerde zelfstudie over het ontwikkelen met de SPA Editor gaat u naar:
 
-* [Aan de slag met de AEM SPA Editor en Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Aan de slag met de AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Aan de slag met de AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
