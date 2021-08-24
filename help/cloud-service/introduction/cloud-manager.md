@@ -4,14 +4,13 @@ description: Ontdek het doel van Cloud Manager en hoe deze werkt met AEM als Clo
 role: Architect, Developer
 level: Beginner
 type: Tutorial
-topic: Architecture
+topic: Architectuur
 kt: 6922
 thumbnail: 330545.jpg
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 1%
+source-wordcount: '49'
+ht-degree: 2%
 
 ---
 
