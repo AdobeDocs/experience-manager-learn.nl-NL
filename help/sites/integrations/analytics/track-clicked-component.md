@@ -1,21 +1,16 @@
 ---
 title: Aangeklikte component bijhouden met Adobe Analytics
 description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om kliks van specifieke componenten op een Adobe Experience Manager-site bij te houden. Leer hoe u regels in Experience Platform Launch gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics te verzenden met een baken voor trackkoppelingen.
-feature: analytics
-topics: integrations
-audience: administrator
-doc-type: tutorial
-activity: setup
 version: cloud-service
-kt: 6296
-thumbnail: KT-6296.jpg
 topic: Integrations
+feature: Gegevenslaag Adobe-client
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6296
+thumbnail: KT-6296.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1814'
 ht-degree: 1%
 
 ---
@@ -23,7 +18,7 @@ ht-degree: 1%
 
 # Aangeklikte component bijhouden met Adobe Analytics
 
-Gebruik de gebeurtenis-gedreven [de Laag van Gegevens van de Cliënt van de Adobe met AEM Core Componenten ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html) om kliks van specifieke componenten op een plaats van Adobe Experience Manager te volgen. Leer hoe te om regels in Experience Platform Launch te gebruiken om op klikgebeurtenissen te luisteren, filter door component en verzend de gegevens naar een Adobe Analytics met een baken van de spoorverbinding.
+Gebruik de gebeurtenis-gedreven [de Laag van Gegevens van de Cliënt van de Adobe met AEM Core Componenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) om kliks van specifieke componenten op een plaats van Adobe Experience Manager te volgen. Leer hoe te om regels in Experience Platform Launch te gebruiken om op klikgebeurtenissen te luisteren, filter door component en verzend de gegevens naar een Adobe Analytics met een baken van de spoorverbinding.
 
 ## Wat u gaat maken
 
@@ -41,13 +36,13 @@ Het WKND marketing team wil begrijpen welke Vraag aan de knopen van de Actie (CT
 
 Deze zelfstudie is een vervolg van [Paginagegevens verzamelen met Adobe Analytics](./collect-data-analytics.md) en gaat ervan uit dat u:
 
-* A **Launch Property** met [Adobe Analytics extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) enabled
-* **Adobe** AnalyticSnelst/dev-rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Experience Platform ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Debuggerbrowser uitbreiding die met uw bezit van de Lancering wordt gevormd op  [https://wknd.site/us/en.](https://wknd.site/us/en.html) htmlor een plaats van de AEM met de toegelaten Laag van Gegevens van Adobe wordt geladen.
+* A **Launch Property** met [Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) enabled
+* **Adobe** AnalyticSnelst/dev-rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
+* [Experience Platform ](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) Debuggerbrowser uitbreiding die met uw bezit van de Lancering wordt gevormd op  [https://wknd.site/us/en.](https://wknd.site/us/en.html) htmlor een plaats van de AEM met de toegelaten Laag van Gegevens van Adobe wordt geladen.
 
 ## Inspect the Button and Teaser Schema
 
-Alvorens regels in Lancering te maken is het nuttig om [schema voor de Knoop en het Taser](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#item) te herzien en hen in de implementatie van de gegevenslaag te inspecteren.
+Alvorens regels in Lancering te maken is het nuttig om [schema voor de Knoop en het Taser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) te herzien en hen in de implementatie van de gegevenslaag te inspecteren.
 
 1. Navigeer naar [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
 1. Open de ontwikkelaarsgereedschappen van de browser en navigeer naar de **Console**. Voer de volgende opdracht uit:
@@ -83,7 +78,7 @@ Alvorens regels in Lancering te maken is het nuttig om [schema voor de Knoop en 
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   Deze zijn gebaseerd op [Component/Container het Schema van het Punt ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#item). De regel die we in Launch maken, gebruikt dit schema.
+   Deze zijn gebaseerd op [Component/Container het Schema van het Punt ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). De regel die we in Launch maken, gebruikt dit schema.
 
 ## Een CTA-regel waarop wordt geklikt maken
 
@@ -149,11 +144,11 @@ De gegevenslaag van de Gegevens van de Cliënt van Adobe is een **gebeurtenis** 
 
    Het object `event` wordt doorgegeven via de methode `trigger()` die in de aangepaste gebeurtenis wordt aangeroepen. `component` is de huidige staat van de component die uit de gegevenslaag wordt afgeleid  `getState` die de klik teweegbracht.
 
-1. Sla de wijzigingen op en voer een [build](https://docs.adobe.com/content/help/en/launch/using/reference/publish/builds.html) in Launch uit om de code te promoten naar de [omgeving](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html) die op uw AEM-site wordt gebruikt.
+1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch uit om de code te promoten naar de [omgeving](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) die op uw AEM-site wordt gebruikt.
 
    >[!NOTE]
    >
-   > Het kan zeer nuttig zijn om [Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) te gebruiken om de ingebedde code aan een **ontwikkelings** milieu te schakelen.
+   > Het kan zeer nuttig zijn om [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) te gebruiken om de ingebedde code aan een **ontwikkelings** milieu te schakelen.
 
 1. Navigeer naar [WKND Site](https://wknd.site/us/en.html) en open de ontwikkelaarsgereedschappen om de console weer te geven. Selecteer **Logbestand behouden**.
 
