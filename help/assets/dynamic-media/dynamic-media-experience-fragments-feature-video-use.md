@@ -7,9 +7,9 @@ version: 6.3, 6.4, 6.5
 topic: Inhoudsbeheer
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '149'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ AEM Assets Dynamic Media integreert hotspots voor elementen met Experience Fragm
 
 >[!NOTE]
 >
->Als u AEM ervaringsfragmenten gebruikt met AEM Assets Dynamic Media Hotspots, moet [AEM worden uitgevoerd in de Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html)-modus.
+>Als u AEM ervaringsfragmenten gebruikt met AEM Assets Dynamic Media Hotspots, moet [AEM worden uitgevoerd in de Dynamic Media](https://experienceleague.adobe.com/docs/)-modus.
 
 De variant van het Fragment van de Pop-up Ervaring die in de video wordt getoond is beschikbaar als AEM hieronder pakket.
 
