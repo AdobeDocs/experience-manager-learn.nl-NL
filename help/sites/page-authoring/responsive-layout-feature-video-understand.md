@@ -14,9 +14,9 @@ thumbnail: 32012.jpg
 topic: Inhoudsbeheer
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 1%
 
 ---
@@ -30,4 +30,4 @@ Adobe Experience Manager Sites stelt een auteur in staat de breedte van een comp
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie voor responsieve lay-out](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html)
+* [Documentatie voor responsieve lay-out](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)
