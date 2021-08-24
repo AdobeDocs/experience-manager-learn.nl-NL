@@ -2,19 +2,13 @@
 title: Ontwikkelen voor het delen van bronnen tussen verschillende bronnen (CORS) met AEM
 description: Een kort voorbeeld van het gebruik van CORS voor toegang tot AEM inhoud van een externe webtoepassing via client-side JavaScript.
 version: 6.3, 6,4, 6.5
-sub-product: stichting, inhoudsdiensten, sites
-topics: security, development, content-delivery
-activity: develop
-audience: developer
-doc-type: tutorial
-topic: Security
+topic: Veiligheid, ontwikkeling
 role: Developer
 level: Beginner
-feature:  
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+feature: Beveiliging
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -97,7 +91,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 />
 ```
 
-## Distributieconfiguratie {#dispatcher-configuration}
+## Dispatcher-configuratie {#dispatcher-configuration}
 
 Om het in cache plaatsen en het dienen van kopballen CORS op caching inhoud toe te staan, voeg het volgende [/clientheaders configuratie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) aan allen die AEM toe publiceer `dispatcher.any` dossiers.
 
