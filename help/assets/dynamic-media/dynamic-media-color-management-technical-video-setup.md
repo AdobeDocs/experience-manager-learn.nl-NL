@@ -2,15 +2,14 @@
 title: Werken met kleurbeheer met AEM Dynamic Media
 description: In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden gebruikt om voorvertoningsmogelijkheden voor kleurcorrectie te bieden in AEM Assets.
 sub-product: dynamic-media
-feature: Image Profiles, Video Profiles
+feature: Afbeeldingsprofielen, videoprofielen
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Inhoudsbeheer
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 4%
 
 ---
@@ -24,11 +23,11 @@ In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden 
 
 >[!NOTE]
 >
->[Schakel Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Mediain AEM in om deze functie te gebruiken.
+>[Schakel Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Mediain AEM in om deze functie te gebruiken.
 
 Deze functie is beschikbaar voor AEM 6.1- en 6.2-versies als een Feature Pack.
 
-## XML-sjabloon voor het kleurbeheerconfiguratieknooppunt {#xml-template-for-the-color-management-configuration-node}
+## XML-sjabloon voor het configuratieknooppunt voor kleurbeheer {#xml-template-for-the-color-management-configuration-node}
 
 Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit malplaatje van XML kan in het AEM ontwikkelingsproject worden gekopieerd en met de project-aangewezen configuraties worden gevormd.
 
@@ -86,7 +85,7 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 />
 ```
 
-### Lijst met standaardkleurprofielen voor Adobe wordt onder {#list-of-default-adobe-color-profiles-are-listed-below} weergegeven
+### Lijst met standaardkleurprofielen voor Adobe wordt hieronder weergegeven {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Naam | Kleurruimte | Beschrijving |
 | ------------------- | ---------- | ------------------------------------- |
