@@ -5,20 +5,19 @@ description: De lagere functies worden gebruikt om waarden samen te voegen of te
 seo-description: De lagere functies worden gebruikt om waarden samen te voegen of te groeperen die in de grafiek worden getoond.De volgende video loopt door de stappen betrokken bij het gebruiken van reducerfuncties.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
-feature: Interactive Communication
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: technical video
 activity: use
 version: 6.4,6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '130'
+ht-degree: 0%
 
 ---
 
