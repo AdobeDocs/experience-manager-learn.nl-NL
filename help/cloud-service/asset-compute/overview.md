@@ -1,7 +1,7 @@
 ---
 title: asset compute microservices uitbreidbaarheid voor AEM als Cloud Service
 description: Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die een elementuitvoering maakt door het oorspronkelijke element aan een cirkel uit te snijden en configureerbare contrast en helderheid toepast. Hoewel de worker zelf een basis is, wordt deze zelfstudie gebruikt om te verkennen hoe een aangepaste Asset compute-worker voor gebruik met AEM als Cloud Service kan worden gemaakt, ontwikkeld en geïmplementeerd.
-feature: Asset Compute Microservices
+feature: asset compute microservices
 topics: renditions, development
 version: cloud-service
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integrations, Development
+topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
@@ -45,7 +44,7 @@ Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die 
 
 Leer hoe te om behoorlijk voor te bereiden op het uitbreiden van de arbeiders van de Asset compute, en te begrijpen welke diensten en rekeningen moeten worden provisioned en worden gevormd, en software plaatselijk voor ontwikkeling wordt geïnstalleerd.
 
-### Account en serviceprovisioning{#accounts-and-services}
+### Account en service-provisioning{#accounts-and-services}
 
 De volgende accounts en services vereisen provisioning en toegang tot Adobe Project Firefly en Microsoft Azure Blob Storage om de zelfstudie te voltooien, AEM als een Cloud Service Dev-omgeving of Sandbox-programma.
 
@@ -149,7 +148,7 @@ Hieronder volgen verschillende bronnen van Adobe die meer informatie en nuttige 
 
 ### Documentatie
 
-+ [asset compute Service-documentatie](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
++ [asset compute Service-documentatie](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
 + [Gereedschap asset compute ontwikkelen Lees mij](https://github.com/adobe/asset-compute-devtool)
 + [asset compute voorbeeldworkers](https://github.com/adobe/asset-compute-example-workers)
 
