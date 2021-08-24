@@ -1,29 +1,23 @@
 ---
 title: Snelle installatie - Aan de slag met AEM headless - GraphQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Installeer de AEM SDK, voeg voorbeeldinhoud toe en implementeer een toepassing die inhoud uit AEM gebruikt met de GraphQL-API's. Zie hoe AEM machten omni-channel ervaart.
-sub-product: sites
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: Inhoudsfragmenten, GraphQL API's
+feature: Inhoudsfragmenten, GraphQL API
 topic: Koploos, inhoudsbeheer
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
 
 
-# Quick Setup {#setup}
+# Snelle installatie {#setup}
 
 Dit hoofdstuk biedt een snelle opstelling van een lokale milieu om een externe toepassing te zien die inhoud van AEM gebruikend AEM GraphQL APIs verbruikt. De recentere hoofdstukken in het leerprogramma zullen van deze opstelling bouwen.
 
@@ -42,7 +36,7 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 1. Download en installeer voorbeeldinhoud van de WKND-referentiesite.
 1. Download en installeer een voorbeeld-app om inhoud te verbruiken met de GraphQL-API&#39;s.
 
-## De AEM SDK {#aem-sdk} installeren
+## De AEM SDK installeren {#aem-sdk}
 
 Deze zelfstudie gebruikt de [AEM als Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#aem-as-a-cloud-service-sdk) om AEM GraphQL APIs te onderzoeken. In deze sectie vindt u een snelle handleiding voor het installeren van de AEM SDK en het uitvoeren ervan in de modus Auteur. Een meer gedetailleerde gids voor vestiging een lokale ontwikkelomgeving [kan hier worden gevonden](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up).
 
@@ -74,7 +68,7 @@ Deze zelfstudie gebruikt de [AEM als Cloud Service SDK](https://experienceleague
 1. Na een paar minuten wordt de AEM-instantie geïnstalleerd en wordt een nieuw browservenster geopend op [http://localhost:4502](http://localhost:4502).
 1. Meld u aan met de gebruikersnaam `admin` en het wachtwoord `admin`.
 
-## Voorbeeldinhoud en GraphQL-eindpunten {#wknd-site-content-endpoints} installeren
+## Voorbeeldinhoud en GraphQL-eindpunten installeren {#wknd-site-content-endpoints}
 
 Voorbeeldinhoud van de **WKND-referentiesite** wordt geïnstalleerd om de zelfstudie te versnellen. De WKND is een fictief levensstijl, vaak gebruikt in combinatie met AEM training.
 
@@ -117,7 +111,7 @@ De plaats van de Verwijzing WKND omvat configuraties nodig om een [eindpunt Grap
 >
 > Als het gebruiken van een milieu van de Cloud Service zie de documentatie voor hoe te [een codebasis zoals de plaats van de Verwijzing WKND aan een milieu van de Cloud Service opstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying).
 
-## Voorbeeldtoepassing installeren{#sample-app}
+## De voorbeeldtoepassing installeren{#sample-app}
 
 Één van de doelstellingen van deze zelfstudie moet tonen hoe te om AEM inhoud van een externe toepassing te verbruiken gebruikend GraphQL APIs. Deze zelfstudie gebruikt een voorbeeld React App dat gedeeltelijk is voltooid om de zelfstudie te versnellen. Dezelfde lessen en concepten gelden voor apps die zijn gemaakt met iOS, Android of een ander platform. De React-app is opzettelijk eenvoudig om onnodige complexiteit te voorkomen. het is niet de bedoeling een referentie - uitvoering te zijn .
 
@@ -189,7 +183,7 @@ Nu de React-app wordt uitgevoerd, moet u de inhoud in AEM bijwerken en de wijzig
 
    ![Bijgewerkt Bali Surf Camp Adventure](assets/setup/overnight-bali-surf-camp-changes.png)
 
-## Het gereedschap GraphiQL {#install-graphiql} installeren
+## Het gereedschap GraphiQL installeren {#install-graphiql}
 
 [](https://github.com/graphql/graphiql) GraphiQLis een ontwikkelingsinstrument dat alleen nodig is voor omgevingen op een lager niveau, zoals een ontwikkelings- of lokale instantie. Met GraphiQL IDE kunt u snel de geretourneerde query&#39;s en gegevens testen en verfijnen. GraphiQL biedt ook eenvoudige toegang tot de documentatie, waardoor u gemakkelijk kunt leren welke methoden beschikbaar zijn en begrijpen.
 
@@ -219,7 +213,7 @@ Gefeliciteerd, u hebt nu een externe toepassing die AEM inhoud met GraphQL verbr
 
 In het volgende hoofdstuk, [Defining Content Fragment Models](content-fragment-models.md), leert hoe te om inhoud te modelleren en een schema met **Content Fragment Models** te bouwen. U controleert bestaande modellen en maakt een nieuw model. U zult ook over de verschillende gegevenstypes leren die kunnen worden gebruikt om een schema als deel van het model te bepalen.
 
-## (Bonus) CORS-configuratie {#cors-config}
+## (Bonus) Configuratie CORS {#cors-config}
 
 AEM, die standaard beveiligd zijn, blokkeert aanvragen van verschillende oorsprong, zodat onbevoegde toepassingen geen verbinding kunnen maken met de inhoud en de inhoud ervan kunnen surfen.
 
