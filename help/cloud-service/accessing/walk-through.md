@@ -1,21 +1,17 @@
 ---
 title: Toegang tot AEM doorlopen configureren
 description: Een verkorte stap-via het vormen van de Gebruikers van Adobe IMS, de Groepen van de Gebruiker en Profielen van het Product in Adobe AdminConsole, en hoe te hefboomwerking deze Adobe IMS abstracties in AEM Auteur om specifieke op groep-gebaseerde toestemmingen te bepalen en te beheren.
-feature: 'Gebruikers en groepen '
-topics: authentication, permissions
 version: cloud-service
-activity: setup
-audience: administrator
-doc-type: technical video
-kt: 6061
-thumbnail: 39155.jpg
 topic: Beheer, beveiliging
+feature: Gebruiker en groepen
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 6061
+thumbnail: 39155.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '120'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
