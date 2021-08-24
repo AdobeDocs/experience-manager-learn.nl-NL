@@ -3,14 +3,13 @@ title: Personalisatie met AEM Experience Fragments en Adobe Target
 seo-title: Personalisatie met Adobe Experience Manager (AEM) Experience Fragments en Adobe Target
 description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager Experience Fragments en Adobe Target.
 seo-description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager Experience Fragments en Adobe Target.
-feature: Experience Fragments
-topic: Personalization
+feature: Ervaringsfragmenten
+topic: Personalisatie
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1728'
 ht-degree: 0%
 
 ---
@@ -59,8 +58,8 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 1. Op basis van de vereisten maakt AEM Content Editor een Experience Fragment voor het inhoudsblok en exporteert het als een voorstel naar Adobe Target. Om gepersonaliseerde inhoud voor alle staten in de Verenigde Staten te dienen, kan de inhoudontwerper één master variatie van het Fragment van de Ervaring tot stand brengen en dan 50 andere variaties, één voor elke staat creëren. Inhoud voor elke statusvariatie met relevante afbeeldingen en tekst kan vervolgens handmatig worden bewerkt. Bij het ontwerpen van een Experience Fragment hebben inhoudseditors via de optie Asset Finder snel toegang tot alle elementen die in AEM Assets beschikbaar zijn. Wanneer een Experience Fragment naar Adobe Target wordt geëxporteerd, worden alle variaties ook als aanbiedingen naar Adobe Target overgebracht.
 
 1. Nadat het Fragment van de Ervaring van AEM naar Adobe Target als Voorstellen, kunnen de marketers tot Activiteiten in Doel leiden gebruikend deze Voorstellen. Op basis van de WKND-campagne SkateFest-site moet de marketeter een persoonlijke ervaring maken en leveren aan bezoekers van de WKND-site vanuit elke staat. Om een Ervaring tot stand te brengen richtend activiteit, moet de marktmeter het publiek identificeren. Voor onze WKND SkateFest-campagne moeten we 50 verschillende soorten publiek maken, gebaseerd op hun locatie waar ze de WKND-website bezoeken.
-   * [Het ](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) publiek bepaalt het doel voor uw activiteit en wordt overal gebruikt waar het richten beschikbaar is. Doelpubliek is een gedefinieerde set bezoekerscriteria. Aanbiedingen kunnen worden gericht op specifieke doelgroepen (of segmenten). Alleen bezoekers die bij dat publiek horen, zien de ervaring die voor hen is bedoeld.  U kunt bijvoorbeeld een aanbieding doen aan een publiek dat is samengesteld uit bezoekers die een bepaalde browser gebruiken of van een specifieke geo-locatie.
-   * Een [Aanbieding](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) is de inhoud die op uw webpagina&#39;s wordt weergegeven tijdens campagnes of activiteiten. Wanneer u uw webpagina&#39;s test, meet u het succes van elke ervaring met verschillende aanbiedingen op uw locaties. Een voorstel kan verschillende typen inhoud bevatten, zoals:
+   * [Het ](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) publiek bepaalt het doel voor uw activiteit en wordt overal gebruikt waar het richten beschikbaar is. Doelpubliek is een gedefinieerde set bezoekerscriteria. Aanbiedingen kunnen worden gericht op specifieke doelgroepen (of segmenten). Alleen bezoekers die bij dat publiek horen, zien de ervaring die voor hen is bedoeld.  U kunt bijvoorbeeld een aanbieding doen aan een publiek dat is samengesteld uit bezoekers die een bepaalde browser gebruiken of van een specifieke geo-locatie.
+   * Een [Aanbieding](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) is de inhoud die op uw webpagina&#39;s wordt weergegeven tijdens campagnes of activiteiten. Wanneer u uw webpagina&#39;s test, meet u het succes van elke ervaring met verschillende aanbiedingen op uw locaties. Een voorstel kan verschillende typen inhoud bevatten, zoals:
       * Afbeelding
       * Tekst
       * **HTML**
@@ -133,7 +132,7 @@ Op dit moment hebben we met succes een publiek gemaakt voor alle bezoekers van d
 
 1. Navigeer vanuit uw Adobe Target-venster naar **Activiteiten** tabblad.
 1. Klik **Activiteit maken** en selecteer het type activiteit **Beleving gericht**.
-1. Selecteer het **Web** kanaal en kies **Visual Experience Composer**.
+1. Selecteer het kanaal **Web** en kies **Visual Experience Composer**.
 1. Voer de **Activiteit-URL** in en klik **Volgende** om de Visual Experience Composer te openen.
 
    Introductiepagina van WKND-site: http://localhost:4503/content/wknd/en.html
