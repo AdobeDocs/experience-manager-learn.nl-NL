@@ -13,9 +13,9 @@ thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2382'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Het basisconcept is om een SPA Component aan een AEM Component in kaart te breng
 
 ## De tekstcomponent Inspect
 
-[AEM Projectarchetype](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan AEM [component van de Tekst ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van een **content** component, in die zin dat *content* wordt gerenderd vanuit AEM.
+[AEM Projectarchetype](https://github.com/adobe/aem-project-archetype) verstrekt een `Text` component die aan AEM [component van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in kaart wordt gebracht. Dit is een voorbeeld van een **content** component, in die zin dat *content* wordt gerenderd vanuit AEM.
 
 Laten we eens kijken hoe de component werkt.
 
@@ -201,7 +201,7 @@ Laten we eens kijken hoe de component werkt.
 
 ## De afbeeldingscomponent maken
 
-Maak vervolgens een `Image`-Angular-component die is toegewezen aan de AEM [Image-component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html). De `Image` component is een ander voorbeeld van een **content** component.
+Maak vervolgens een `Image`-Angular-component die is toegewezen aan de AEM [Image-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). De `Image` component is een ander voorbeeld van een **content** component.
 
 ### Inspect the JSON
 
@@ -437,7 +437,7 @@ Laten we de container voor lay-out verder inspecteren.
 
    De **Layout Container**-component heeft een `sling:resourceType` van `wcm/foundation/components/responsivegrid` en wordt door de SPA Editor herkend met de eigenschap `:type`, net als de componenten `Text` en `Image`.
 
-   Dezelfde mogelijkheden om de grootte van een component te wijzigen met [Lay-outmodus](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) zijn beschikbaar in de SPA Editor.
+   Dezelfde mogelijkheden om de grootte van een component te wijzigen met [Lay-outmodus](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) zijn beschikbaar in de SPA Editor.
 
 3. Ga terug naar [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Voeg extra **Afbeelding**-componenten toe en probeer deze opnieuw te vergroten of te verkleinen met de optie **Lay-out**:
 
