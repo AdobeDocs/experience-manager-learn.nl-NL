@@ -12,7 +12,6 @@ thumbnail: 327313.jpg
 topic: Integratie, ontwikkeling
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '1439'
@@ -210,7 +209,7 @@ Omdat ons Asset compute-project twee workers bevat (de vorige [cirkeluitvoering]
    + Aangezien beide workers worden vermeld in de profieldefinitie, genereren beide uitvoeringen. Naar keuze, kan de hoogste profieldefinitie die bij [de worker van de cirkelvertoning ](../develop/worker.md) richt worden geschrapt, vermijden uitvoerend het van het Hulpmiddel van de Ontwikkeling.
 1. In de sectie __Uitvoeringen__ wordt een voorvertoning van de gegenereerde uitvoering weergegeven. Tik op `rendition.xml` om het te downloaden en open het in de Code van VS (of uw favoriete redacteur XML/text) om het te herzien.
 
-## De worker{#test} testen
+## De worker testen{#test}
 
 Metagegevensworkers kunnen worden getest met behulp van hetzelfde testframework voor Asset compute als binaire uitvoeringen](../test-debug/test.md). [ Het enige verschil is het `rendition.xxx` dossier in het testgeval moet de verwachte XMP (XML) vertoning zijn.
 
@@ -245,7 +244,7 @@ Metagegevensworkers kunnen worden getest met behulp van hetzelfde testframework 
 
 5. Voer `aio app test` van de wortel van het project van de Asset compute uit om alle testsuites uit te voeren.
 
-### De worker implementeren in Adobe I/O Runtime{#deploy}
+### De worker distribueren naar Adobe I/O Runtime{#deploy}
 
 Om deze nieuwe meta-gegevensarbeider van AEM Assets aan te halen, moet het aan Adobe I/O Runtime worden opgesteld, gebruikend het bevel:
 
@@ -283,7 +282,7 @@ Roep de worker van AEM aan door een nieuwe aangepaste verwerkingsprofielservice 
 1. Tik __Opslaan__ rechtsboven
 1. Verwerkingsprofiel toepassen op een AEM Assets-map als dit nog niet is gebeurd
 
-### Het metagegevensschema bijwerken{#metadata-schema}
+### Metagegevensschema bijwerken{#metadata-schema}
 
 Als u de metagegevens van kleuren wilt bekijken, wijst u twee nieuwe velden in het metagegevensschema van de afbeelding toe aan de nieuwe eigenschappen van de metagegevens die de worker vult.
 
