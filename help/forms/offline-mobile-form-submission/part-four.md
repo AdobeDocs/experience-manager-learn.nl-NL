@@ -9,13 +9,12 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -30,7 +29,7 @@ ht-degree: 0%
 Ga als volgt te werk om deze kwestie van het gebruik op uw lokale systeem te laten werken:
 
 * AEM-auteur-instantie installeren op poort 4502 en AEM-publicatie-instantie op poort 4503
-* [Volg de instructies die u opgeeft bij het ontwikkelen met servicegebruikers in AEM Forms](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Zorg ervoor dat u de servicegebruiker maakt en implementeer de bundel op uw AEM-auteur- en -publicatieexemplaar.
+* [Volg de instructies die u opgeeft bij het ontwikkelen met servicegebruikers in AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Zorg ervoor dat u de servicegebruiker maakt en implementeer de bundel op uw AEM-auteur- en -publicatieexemplaar.
 * [Open de osgi-configuratie  ](http://localhost:4503/system/console/configMgr).
 * Zoeken naar **filter Apache Sling Referrer**. Controleer of het selectievakje Lege waarden toestaan is ingeschakeld.
 * [Implementeer de aangepaste AEMFormDocumentService-bundel](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Deze bundel moet worden geïmplementeerd op uw AEM-publicatie-instantie. Deze bundel bevat de code voor het genereren van een interactieve PDF van een mobiel formulier.
