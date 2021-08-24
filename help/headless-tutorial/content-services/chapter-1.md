@@ -3,14 +3,13 @@ title: Hoofdstuk 1 - Lesbestanden instellen en downloaden - Inhoudsservices
 seo-title: Aan de slag met AEM Content Services - Hoofdstuk 1 - Lesbestanden instellen
 description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
 seo-description: Hoofdstuk 1 van de AEM zelfstudie zonder kop stelt de basislijninstelling voor de AEM voor de zelfstudie.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+feature: Inhoudsfragmenten, API's
+topic: Koploos, inhoudsbeheer
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ Voordat u deze zelfstudie start, moet u ervoor zorgen dat de volgende AEM [op uw
 * **AEM** Authoron  **poort 4502**
 * **AEM** Publishon  **poort 4503**
 
-## WKND Mobile Application Packages{#wknd-mobile-application-packages}
+## WKND Mobile-toepassingspakketten{#wknd-mobile-application-packages}
 
 Installeer de volgende AEM Inhoudspakketten op **zowel** AEM-auteur als AEM-publicatie, met gebruik van [!DNL AEM Package Manager].
 
