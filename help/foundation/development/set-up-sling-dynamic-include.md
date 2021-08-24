@@ -3,26 +3,25 @@ title: Dynamische include-bestanden voor AEM instellen
 description: Een videodemo over het installeren en gebruiken van Apache Sling Dynamic Include met AEM Dispatcher die op Apache HTTP Web Server wordt uitgevoerd.
 version: 6.3, 6.4, 6.5
 sub-product: stichting, sites
-feature: APIs
+feature: API's
 topics: caching
 activity: develop
 audience: architect, developer
 doc-type: technical video
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 3%
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
 
 # [!DNL Sling Dynamic Include] instellen
 
-Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dynamic Include] met [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) die op [!DNL Apache HTTP Web Server] loopt.
+Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dynamic Include] met [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) die op [!DNL Apache HTTP Web Server] loopt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040/?quality=12&learn=on)
 
@@ -151,7 +150,7 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
 
 >[!NOTE]
 >
->Als u [!DNL Sling Dynamic Includes] voor het dienen van edge-side omvat (ESI) gebruikt, dan zorg ervoor om relevante [reactiekoppen in het verzendergeheime voorgeheugen ](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders) in het voorgeheugen onder te brengen. Mogelijke kopteksten zijn onder andere:
+>Als u [!DNL Sling Dynamic Includes] voor het dienen van edge-side omvat (ESI) gebruikt, dan zorg ervoor om relevante [reactiekoppen in het verzendergeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders) in het voorgeheugen onder te brengen. Mogelijke kopteksten zijn onder andere:
 >
 >* &quot;Cache-control&quot;
 >* &quot;Content-Disposition&quot;
