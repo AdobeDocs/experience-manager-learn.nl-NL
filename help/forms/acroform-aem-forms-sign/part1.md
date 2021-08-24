@@ -2,13 +2,12 @@
 title: Transformaties met AEM Forms
 seo-title: Adaptieve formuliergegevens samenvoegen met Acrobat
 description: Deel 1 van de integratie van Acrobat met AEM Forms. Een adaptief formulier maken met Acrobat en de gegevens samenvoegen om een PDF te verkrijgen.
-feature: adaptive-forms
+feature: adaptieve vormen
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4
-translation-type: tm+mt
 source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
 source-wordcount: '225'
@@ -30,7 +29,7 @@ Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. U kunt een geheel
 
 >[!NOTE]
 >
->Als u het invulbare formulier wilt verzenden voor ondertekening met Adobe Sign, geef de velden een overeenkomstige naam. U kunt bijvoorbeeld een veld **Sig_es_:signer1:signature** een naam geven. Dit is de syntaxis die Adobe Sign begrijpt.
+>Als u het invulbare formulier voor ondertekening met Adobe Sign wilt verzenden, moet u de velden een overeenkomstige naam geven. U kunt bijvoorbeeld een veld **Sig_es_:signer1:signature** een naam geven. Dit is de syntaxis die Adobe Sign begrijpt.
 
 >[!NOTE]
 >
