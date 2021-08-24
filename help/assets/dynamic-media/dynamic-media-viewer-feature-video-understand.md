@@ -2,15 +2,14 @@
 title: De Asset Viewer begrijpen met AEM Dynamic Media
 description: AEM verbeteringen in de Dynamic Media Viewer kunnen AEM auteurs de ervaringselementen definiëren en aanpassen en worden deze aan websitegebruikers gepresenteerd.
 sub-product: dynamische media klassiek
-feature: Viewer Presets, Image Profiles
+feature: Viewer-voorinstellingen, afbeeldingsprofielen
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Inhoudsbeheer
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
