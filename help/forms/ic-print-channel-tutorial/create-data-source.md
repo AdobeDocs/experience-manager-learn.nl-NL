@@ -4,7 +4,7 @@ seo-title: Gegevensbronconfiguratie maken in AEM Forms
 description: Dit is deel 2 van de zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel maken we een REST-gegevensbron.  De volgende video doorloopt de stappen om de gegevensbron tot stand te brengen.
 seo-description: Dit is deel 2 van de zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel maken we een REST-gegevensbron.  De volgende video doorloopt de stappen om de gegevensbron tot stand te brengen.
 uuid: b9d5c220-3e86-4e7d-8ea0-a7f604dde925
-feature: Interactive Communication
+feature: Interactieve communicatie
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,14 +13,13 @@ version: 6.4,6.5
 targetaudience: target-audience ongoing
 thumbnail: 27765.jpg
 kt: 5954
-topic: Development
+topic: Ontwikkeling
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 1%
+source-wordcount: '142'
+ht-degree: 0%
 
 ---
 
