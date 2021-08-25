@@ -1,16 +1,16 @@
 ---
 title: Adobe Experience Manager integreren met Adobe Target met behulp van Cloud Services
-seo-title: Adobe Experience Manager (AEM) integreren met Adobe Target met behulp van verouderde Cloud Services
+seo-title: Integrating Adobe Experience Manager (AEM) with Adobe Target using Legacy Cloud Services
 description: Stap voor stap doorloopt u hoe u Adobe Experience Manager (AEM) met Adobe Target kunt integreren met AEM Cloud Service
-seo-description: Stap voor stap doorloopt u hoe u Adobe Experience Manager (AEM) met Adobe Target kunt integreren met AEM Cloud Service
-feature: Ervaringsfragmenten
-topic: Personalisatie
+seo-description: Step by step walkthrough on how to integrate Adobe Experience Manager (AEM) with Adobe Target using AEM Cloud Service
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 2%
+source-wordcount: '351'
+ht-degree: 1%
 
 ---
 
@@ -32,14 +32,13 @@ Als u gebruik wilt maken van AEM Experience Fragment-aanbiedingen om uw personal
    * AEM auteur- en publicatieexemplaar zijn nodig om deze zelfstudie te voltooien. Als u nog geen opstelling uw AEM instantie hebt, kunt u de stappen [hier ](./implementation.md#set-up-aem) volgen.
 
 * **Experience Cloud**
-   * Toegang tot uw organisaties Adobe Experience Cloud - <https://>`<yourcompany>`.ExperienceCloud.adobe.com
+   * Toegang tot uw organisaties Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud voorzien van de volgende oplossingen
       * [Adobe Target](https://experiencecloud.adobe.com)
 
       >[!NOTE]
       >
       > De klant moet van [Adobe steun](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) voorzien van Experience Platform Launch en Adobe I/O of bereik aan uw systeembeheerder
-
 
 
 ### AEM integreren met Adobe Target
