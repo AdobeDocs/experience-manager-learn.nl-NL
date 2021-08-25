@@ -1,20 +1,16 @@
 ---
 title: Aan de slag met AEM Sites - Pagina's en sjablonen
-seo-title: Aan de slag met AEM Sites - Pagina's en sjablonen
 description: Leer over de verhouding tussen een component van de basispagina en editable malplaatjes. Begrijp hoe de Componenten van de Kern in het project proxied zijn en geavanceerde beleidsconfiguraties van editable malplaatjes leren om een goed-gestructureerd malplaatje van de Pagina van het Artikel te bouwen dat op een model van Adobe XD wordt gebaseerd.
-sub-product: sites
-version: 6.4, 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Editable Templates, Page Editor
-topic: Inhoudsbeheer, ontwikkeling
+topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3080'
 ht-degree: 0%
 
 ---
@@ -57,7 +53,7 @@ Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd/tree/pages-templates/solution) altijd bekijken of de code plaatselijk controleren door aan de tak `tutorial/pages-templates-solution` te schakelen.
+U kunt de gebeëindigde code op [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/pages-templates-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `tutorial/pages-templates-solution` te schakelen.
 
 ## Doelstelling
 
