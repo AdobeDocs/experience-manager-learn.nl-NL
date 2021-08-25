@@ -1,20 +1,15 @@
 ---
 title: Creeer een project van de Asset compute voor de rekbaarheid van de Asset compute
 description: De projecten van de asset compute zijn projecten Node.js, die gebruikend Adobe I/O CLI worden geproduceerd, die aan een bepaalde structuur houden die hen om aan Adobe I/O Runtime toelaat worden opgesteld en met AEM als Cloud Service worden geïntegreerd.
-feature: asset compute microservices
-topics: renditions, development
-version: cloud-service
-activity: develop
-audience: developer
-doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
+feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -34,7 +29,7 @@ Gebruik [Adobe I/O CLI Asset compute stop-in](../set-up/development-environment.
 
 1. Navigeer vanaf de opdrachtregel naar de map waarin u het project wilt plaatsen.
 1. Van de bevellijn, voer `aio app init` uit om met de interactieve projectgeneratie CLI te beginnen.
-   + Dit bevel kan browser van het Web kweken die voor authentificatie aan Adobe I/O ertoe aanzetten. Als het, uw geloofsbrieven van de Adobe verbonden aan [vereiste de diensten en producten van de Adobe ](../set-up/accounts-and-services.md) verstrekt. Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Dit bevel kan browser van het Web kweken die voor authentificatie aan Adobe I/O ertoe aanzetten. Als het, uw geloofsbrieven van de Adobe verbonden aan [vereiste de diensten en producten van de Adobe ](../set-up/accounts-and-services.md) verstrekt. Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Org selecteren__
    + Selecteer de Adobe Org die als Cloud Service heeft AEM, Project Firefly wordt geregistreerd met
 1. __Project selecteren__
