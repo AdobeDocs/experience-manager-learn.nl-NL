@@ -3,14 +3,14 @@ title: Aangeklikte component bijhouden met Adobe Analytics
 description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om kliks van specifieke componenten op een Adobe Experience Manager-site bij te houden. Leer hoe u regels in Experience Platform Launch gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics te verzenden met een baken voor trackkoppelingen.
 version: cloud-service
 topic: Integrations
-feature: Gegevenslaag Adobe-client
+feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 6296
 thumbnail: KT-6296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1810'
 ht-degree: 1%
 
 ---
@@ -144,7 +144,7 @@ De gegevenslaag van de Gegevens van de Cliënt van Adobe is een **gebeurtenis** 
 
    Het object `event` wordt doorgegeven via de methode `trigger()` die in de aangepaste gebeurtenis wordt aangeroepen. `component` is de huidige staat van de component die uit de gegevenslaag wordt afgeleid  `getState` die de klik teweegbracht.
 
-1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch uit om de code te promoten naar de [omgeving](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) die op uw AEM-site wordt gebruikt.
+1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch uit om de code te promoten naar de [omgeving](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) die op uw AEM-site wordt gebruikt.
 
    >[!NOTE]
    >
