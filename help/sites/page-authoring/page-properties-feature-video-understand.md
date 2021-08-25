@@ -1,23 +1,17 @@
 ---
 title: Pagina-eigenschappen in AEM Sites
-seo-title: Pagina-eigenschappen in Adobe Experience Manager Sites
 description: In de volgende video worden de metagegevens over pagina-eigenschappen geïntroduceerd die aan een pagina in Adobe Experience Manager zijn gekoppeld.
-seo-description: 'In de volgende video worden de metagegevens over pagina-eigenschappen geïntroduceerd die aan een pagina in Adobe Experience Manager zijn gekoppeld. '
-feature: Pagina-editor
-topics: authoring, metadata
-audience: author, marketer
-doc-type: feature video
-activity: understand
 version: 6.3, 6.4, 6.5
-kt: 4321
-thumbnail: 32192.jpg
-topic: Inhoudsbeheer
+topic: Content Management
+feature: Page Editor
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+kt: 4321
+thumbnail: 32192.jpg
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 4%
+source-wordcount: '138'
+ht-degree: 9%
 
 ---
 
@@ -64,4 +58,5 @@ In deze video worden de volgende pagina-eigenschapelementen behandeld:
 
 * [Documentatie over pagina-eigenschappen bewerken](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
 * [Documentatie over pagina-inhoud bewerken](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Gebruikershandleiding voor siteontwerp](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html&amp;topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+
