@@ -3,12 +3,12 @@ title: Brand Portal gebruiken
 description: Videodoorlopen van de integratie met AEM Author en AEM Assets Brand Portal.
 feature: Brand Portal
 version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1764'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Brand Portal Asset Sourcing wordt gebruikt om middelen te verzamelen van externe
 
 *Auteur van Experience Manager 6.5 SP2 (6.5.2) of hoger is vereist om Asset Sourcing te kunnen gebruiken*
 
-Raadpleeg [Enable Experience Manager Author for Asset Sourcing](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) voor instructies over het configureren en instellen van Asset Sourcing bij Experience Manager Author.
+Raadpleeg [Enable Experience Manager Author for Asset Sourcing](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) voor instructies over het configureren en instellen van Asset Sourcing bij Experience Manager Author.
 
 ## Functies en verbeteringen in Brand Portal februari 2019{#brand-portal-features-and-enhancements-644}
 
