@@ -2,13 +2,13 @@
 title: Ontwikkelen voor het delen van bronnen tussen verschillende bronnen (CORS) met AEM
 description: Een kort voorbeeld van het gebruik van CORS voor toegang tot AEM inhoud van een externe webtoepassing via client-side JavaScript.
 version: 6.3, 6,4, 6.5
-topic: Veiligheid, ontwikkeling
+topic: Security, Development
 role: Developer
 level: Beginner
-feature: Beveiliging
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+feature: Security
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ In deze video:
 
 * **www.example.** commaps to localhost via  `/etc/hosts`
 * **aem-publish.** localmaps to localhost via  `/etc/hosts`
-* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)  (een wrapper voor  [[!DNL Python]&#39;s SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) geeft de HTML-pagina via poort 8000.
+* SimpleHTTPServer (een omslag voor [[!DNL Python]&#39;s SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) geeft de HTML-pagina via poort 8000.
+   * _Niet meer beschikbaar in de Mac App Store. Vergelijkbaar gebruiken, zoals [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
 * [!DNL AEM Dispatcher] wordt uitgevoerd op  [!DNL Apache HTTP Web Server] 2.4 en omgekeerd proxying verzoek  `aem-publish.local` aan  `localhost:4503`.
 
 Voor meer details, herzie [Begrijpen van het Middel van de Samenhang van de Herkomst (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
@@ -117,7 +118,7 @@ Waarschijnlijk wordt het cachegeheugen volledig gewist om ervoor te zorgen dat d
 ## Ondersteunende materialen {#supporting-materials}
 
 * [AEM OSGi-fabriek voor beleid voor het delen van bronnen tussen verschillende bronnen](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
-* [SimpleHTTPServer voor macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
+* [Jeeves voor macOS](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
 * [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatibel met Windows/macOS/Linux)
 
 * [Werken met het delen van bronnen tussen verschillende bronnen (CORS) in AEM](./understand-cross-origin-resource-sharing.md)
