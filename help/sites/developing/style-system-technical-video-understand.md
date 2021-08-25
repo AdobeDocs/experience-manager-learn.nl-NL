@@ -1,18 +1,14 @@
 ---
 title: Begrijpen hoe u code kunt schrijven voor het systeem AEM
 description: In deze video bekijken we de anatomie van de CSS (of LESS) en JavaScript die wordt gebruikt om de component van de Titel van Adobe Experience Manage te stijlen met behulp van het Stijlsysteem, en hoe deze stijlen worden toegepast op de HTML en DOM.
-feature: Stijlsysteem
-topics: development, components, front-end-development
-audience: developer, implementer
-doc-type: technical video
-activity: understand
+feature: Style System
 version: 6.4, 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -22,15 +18,10 @@ ht-degree: 0%
 
 In deze video bekijken we de anatomie van de CSS (of [!DNL LESS]) en JavaScript die wordt gebruikt om de component van de Titel van de Kern van het Beheer van de Stijl te creëren gebruikend het Systeem van de Stijl, evenals hoe deze stijlen op HTML en DOM worden toegepast.
 
->[!NOTE]
->
->Het systeem van de Stijl van de AEM werd geïntroduceerd met [AEM 6.3 SP1](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp1-release-notes.html) + [Het Pak van de Eigenschap 20593](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-20593).
->
->De video veronderstelt de component van de Titel We.Retail is bijgewerkt om van [de Componenten van de Kern v2.0.0+](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases) te erven.
 
 ## Begrijpen hoe u code kunt gebruiken voor het Stijlsysteem {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
 
 Het verstrekte AEMPakket (**technical-review.sites.style-system-1.0.0.zip**) installeert de stijl van de voorbeeldtitel, steekproefbeleid voor de componenten van de Lay-out van de Wij.Detailhandel en van de Titel, en een steekproefpagina.
 
