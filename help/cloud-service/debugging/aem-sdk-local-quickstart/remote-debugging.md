@@ -1,19 +1,15 @@
 ---
 title: Foutopsporing op afstand van de AEM SDK
 description: Met de lokale QuickStart van de AEM SDK kunt u externe Java-foutopsporing vanaf uw IDE gebruiken, zodat u de uitvoering van live code in AEM kunt doorlopen om precies te weten wat de exacte uitvoeringsstroom is.
-feature: Gereedschappen voor ontwikkelaars
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 kt: 5251
-topic: Ontwikkeling
+topic: Development
+feature: Developer Tools
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+thumbnail: 34338.jpeg
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -45,5 +41,5 @@ De meeste Java IDE&#39;s bieden ondersteuning voor foutopsporing op afstand van 
 ### Instructies instellen
 
 + [VS Code Java Remote Debugger instellen](https://code.visualstudio.com/docs/java/java-debugging)
-+ [IntelliJ IDEA Remote Debugger instellen](https://www.jetbrains.com/help/idea/run-debug-configuration-remote-debug.html)
++ [IntelliJ IDEA Remote Debugger instellen](https://www.jetbrains.com/help/idea/tutorial-remote-debug.html)
 + [Installatie van Eclipse Remote Debugger](https://javapapers.com/core-java/java-remote-debug-with-eclipse/)
