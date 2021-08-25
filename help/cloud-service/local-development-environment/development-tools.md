@@ -1,7 +1,7 @@
 ---
 title: De ontwikkelingstools voor AEM instellen als een Cloud Service-ontwikkeling
 description: Stel een lokale ontwikkelcomputer in met alle basislijngereedschappen die nodig zijn om zich te ontwikkelen in AEM lokale omgeving.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,12 +9,12 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -190,9 +190,9 @@ De Code van Visual Studio is de ideale keus voor front-end ontwikkelaars hoofdza
 
 ### Eclipse
 
-__[Eclipse ](https://www.eclipse.org/ide/)__ IDE is een populaire IDEs voor ontwikkeling Java, en steunt   __[AEM ](https://eclipse.adobe.com/aem/dev-tools/)__ Toolsplug-in van de Ontwikkelaar die door Adobe wordt verstrekt, die een in-IDE GUI voor creatie verstrekken en JCR inhoud met een lokale AEM instantie synchroniseren.
+__[Eclipse ](https://www.eclipse.org/ide/)__ IDE is een populaire IDEs voor ontwikkeling Java, en steunt   __[AEM ](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)__ Toolsplug-in van de Ontwikkelaar die door Adobe wordt verstrekt, die een in-IDE GUI voor creatie verstrekken en JCR inhoud met een lokale AEM instantie synchroniseren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [Eclipse downloaden](https://www.eclipse.org/ide/)
-+ [Eclipse Dev-gereedschappen downloaden](https://eclipse.adobe.com/aem/dev-tools/)
++ [Eclipse Dev-gereedschappen downloaden](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)
