@@ -1,17 +1,16 @@
 ---
 title: Dynamic Media Classic Desktop-toepassing gebruiken
 description: Adobe introduceert een bureaubladtoepassing voor Dynamic Media Classic-gebruikers die niet langer afhankelijk zijn van Adobe Flash-technologie in de browser.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 version: 6.5
 kt: 5808
 thumbnail: 36645.jpg
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 Adobe introduceert een bureaubladtoepassing voor Dynamic Media Classic die een vergelijkbare ervaring biedt als een browser en een functioneel equivalente interface die niet afhankelijk is van de Adobe Flash-speler.
 
->[!VIDEO](https://video.tv.adobe.com/v/36645/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36645/?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -38,5 +37,4 @@ Adobe Dynamic Media Classic-bureaubladtoepassing is compatibel met de volgende b
 
 * [Adobe Dynamic Media Classic-bureaubladtoepassingsdocumentatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
 * [Adobe Dynamic Media Veelgestelde vragen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
-* [Downloaden - Schijfafbeeldingsbestand voor MacOS (.dmg)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.dmg)
-* [Downloaden - Uitvoerbaar bestand voor Windows (.exe)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.exe)
+* [Dynamic Media Classic Desktop-app downloaden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
