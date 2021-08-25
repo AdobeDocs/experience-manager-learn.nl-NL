@@ -2,17 +2,12 @@
 title: Redenen voor upgrade begrijpen
 description: Een uitsplitsing op hoog niveau van de belangrijkste functies voor klanten die een upgrade naar de nieuwste versie van Adobe Experience Manager overwegen.
 version: 6.5
-sub-product: middelen, cloudmanager, handel, content-services, dynamische media, formulieren, stichting, schermen, sites
-topics: best-practices, upgrade
-audience: all
-activity: understand
-doc-type: article
 topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3462'
 ht-degree: 1%
 
 ---
@@ -504,8 +499,8 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Stijlsysteem</a>:hergebruik van AEM component </strong>
-            vergroten door hun visuele weergave te definiëren met behulp van het in-context-stijlsysteem.</td>
+            <td><strong>Stijlsysteem:hergebruik van AEM component </strong>
+            vergroten door hun visuele weergave te definiëren met het in-context-stijlsysteem.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -559,8 +554,8 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">Inhoudsfragmenten</a>:redactionele inhoud die van de presentatie is losgekoppeld, </strong>
-            maken en beheren, zodat u deze eenvoudig opnieuw kunt gebruiken.</td>
+            <td><strong>Inhoudsfragmenten:</strong>
+            redactionele inhoud losgekoppeld van de presentatie maken en beheren, zodat u deze eenvoudig opnieuw kunt gebruiken.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -581,8 +576,8 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">Content Services</a>:</strong>
-            Inhoud exporteren vanuit AEM als JSON voor gebruik op verschillende apparaten en toepassingen.</td>
+            <td><strong>Content Services:Inhoud </strong>
+            exporteren vanuit AEM als JSON voor gebruik op verschillende apparaten en toepassingen.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -636,8 +631,8 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-screens-introduction.html" target="_blank">Schermen</a>:Ervaringen </strong>
-            beheren voor digitale signalen en kiosken.</td>
+            <td><strong>Schermen:ervaringen </strong>
+            beheren voor digitale signage en kiosken.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -993,8 +988,6 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
 
 Hieronder ziet u een matrix met belangrijke AEM Forms Add-on-functies die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
-+ [Opmerkingen bij de release van AEM Forms](https://helpx.adobe.com/experience-manager/6-5/release-notes/forms.html)
-
 ***✔ <sup>+</sup> belangrijke verbeteringen aan de functie in deze versie.***
 
 ***✔ <sup></sup> SPdenotes is de eigenschap beschikbaar via een Pak van de Dienst of het Pak van de Eigenschap.***
@@ -1149,8 +1142,8 @@ Hieronder ziet u een matrix met belangrijke AEM Forms Add-on-functies die AEM bi
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/pdf/aem-forms/6-5/WorkbenchHelp.pdf" target="_blank">Workflow (J2EE) voor Forms-verwerking</a>:complexe formulieren/document-centric workflows </strong>
-            maken met behulp van een intuïtieve IDE.</td>
+            <td><strong>Workflow (J2EE) voor Forms-verwerking:complexe formulieren </strong>
+            maken/documentafhankelijke workflows met behulp van een intuïtieve IDE.</td>
             <td></td>
             <td>✔</td>
             <td>✔</td>
@@ -1188,8 +1181,6 @@ Hieronder ziet u een matrix met belangrijke AEM Forms Add-on-functies die AEM bi
 ## Functies van Gemeenschappen
 
 Hieronder ziet u een matrix met belangrijke AEM Communities Add-on-functies die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
-
-+ [Overzicht van nieuwe functies in AEM Communities](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html#main-pars_text)
 
 ***✔ <sup>+</sup> belangrijke verbeteringen aan de functie in deze versie.***
 
@@ -1629,7 +1620,7 @@ Hieronder ziet u een matrix met belangrijke AEM Communities Add-on-functies die 
     </tbody>
 </table>
 
-AEM Communities voegt [verbeteringen](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html) toe via releases om organisaties in staat te stellen hun gebruikers te bereiken en in te schakelen, door:
+AEM Communities voegt verbeteringen toe via releases om organisaties in staat te stellen hun gebruikers te betrekken en in te schakelen door:
 
 + **@** mentionsupport in door de gebruiker gegenereerde inhoud.
 + Verbeterde toegankelijkheid via **Toetsenbordnavigatie** in **Enablement**-componenten.
