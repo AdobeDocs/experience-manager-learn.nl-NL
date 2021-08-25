@@ -1,15 +1,15 @@
 ---
 title: Personalisatie met AEM Experience Fragments en Adobe Target
-seo-title: Personalisatie met Adobe Experience Manager (AEM) Experience Fragments en Adobe Target
+seo-title: Personalization using Adobe Experience Manager (AEM) Experience Fragments and Adobe Target
 description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager Experience Fragments en Adobe Target.
-seo-description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager Experience Fragments en Adobe Target.
-feature: Ervaringsfragmenten
-topic: Personalisatie
+seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Experience Manager Experience Fragments and Adobe Target.
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 * **AEM**
    * [AEM auteur en publiceer ](./implementation.md#getting-aem) instormsessies op respectievelijk localhost 4502 en 4503.
 * **Experience Cloud**
-   * Toegang tot uw organisaties Adobe Experience Cloud - <https://>`<yourcompany>`.ExperienceCloud.adobe.com
+   * Toegang tot uw organisaties Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud voorzien van de volgende oplossingen
       * [Adobe Target](https://experiencecloud.adobe.com)
 
@@ -79,7 +79,7 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 
 ### Een publiek maken met geo-gerichte {#marketer-audience}
 
-1. Navigeer naar uw organisaties [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.ExperienceCloud.adobe.com)
+1. Naar uw organisaties navigeren [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (`<https://<yourcompany>.experiencecloud.adobe.com`)
 1. Meld u aan met uw Adobe ID en zorg ervoor dat u zich in de juiste organisatie bevindt.
 1. Klik vanuit de oplossingsschakelaar op **Doel** en **launch** Adobe Target.
 
