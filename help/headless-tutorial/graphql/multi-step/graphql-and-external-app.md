@@ -5,13 +5,13 @@ version: cloud-service
 mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
-feature: Inhoudsfragmenten, GraphQL API
-topic: Koploos, inhoudsbeheer
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Dit is een meerdelige zelfstudie en er wordt aangenomen dat de in de vorige onde
 
 _IDE screenshots in dit hoofdstuk komen uit de Code van  [Visual Studio](https://code.visualstudio.com/)_
 
-Desgewenst, installeer een browser uitbreiding zoals [GraphQL Netwerk](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) om meer details over een vraag te kunnen bekijken GraphQL.
+Desgewenst, installeer een browser uitbreiding zoals [GraphQL de Inspecteur van het Netwerk](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) om meer details over een vraag te kunnen bekijken GraphQL.
 
 ## Doelstellingen
 
@@ -74,7 +74,7 @@ De aanvang van React app wordt gedetailleerd geschetst in [Snelle Opstelling](./
 
       ![WKND GraphQL React app - Gedetailleerde ervaring](./assets/graphql-and-external-app/react-details-view.png)
 
-1. Gebruik de de ontwikkelingshulpmiddelen van browser en een browser uitbreiding zoals [GraphQL Netwerk](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) om de vragen te inspecteren GraphQL die naar AEM en hun antwoorden JSON worden verzonden. Deze benadering kan worden gebruikt om verzoeken te controleren GraphQL en reacties om ervoor te zorgen zij correct worden geformuleerd, en hun reacties zijn zoals verwacht.
+1. Gebruik de de ontwikkelingshulpmiddelen van browser en een browser uitbreiding zoals [GraphQL de Inspecteur van het Netwerk ](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) om de vragen te inspecteren GraphQL die naar AEM en hun antwoorden JSON worden verzonden. Deze benadering kan worden gebruikt om verzoeken te controleren GraphQL en reacties om ervoor te zorgen zij correct worden geformuleerd, en hun reacties zijn zoals verwacht.
 
    ![Onbewerkte query voor adventureList](assets/graphql-and-external-app/raw-query-chrome-extension.png)
 
