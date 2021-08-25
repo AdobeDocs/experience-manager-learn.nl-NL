@@ -2,17 +2,17 @@
 title: Voorinstellingen afbeelding
 description: Voorinstellingen voor afbeeldingen in Dynamic Media Classic bevatten alle instellingen die nodig zijn om een afbeelding met een bepaalde grootte, indeling, kwaliteit en verscherping te maken. Voorinstellingen voor afbeeldingen vormen een belangrijk onderdeel van het dynamische formaat. Als u naar een URL in Dynamic Media Classic kijkt, kunt u gemakkelijk zien of een voorinstelling voor afbeeldingen in gebruik is. Meer informatie over voorinstellingen voor afbeeldingen, waarom ze zo nuttig zijn en hoe u ze kunt maken.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, voorinstellingen voor afbeeldingen
+feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
@@ -70,5 +70,3 @@ Meer informatie over [Klassieke verscherpingsopties van Dynamic Media](https://e
 [Handleiding](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf) voor voorinstellingen afbeelding. Te gebruiken instellingen voor optimalisatie voor afbeeldingskwaliteit en laadsnelheid.
 
 [Afbeelding is Alles deel 2: Het is nooit alleen een vervaging — kwaliteit versus snelheid](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Een blogbericht waarin het gebruik van Voorinstellingen voor afbeeldingen wordt besproken voor het aanbieden van afbeeldingen van hoge kwaliteit die snel worden geladen.
-
-[Afbeelding is alles-webinars](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Koppelingen naar opnamen van alle drie webinars in de _Afbeelding is Alles_-reeks. [In Webinar 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) worden voorinstellingen voor afbeeldingen besproken.
