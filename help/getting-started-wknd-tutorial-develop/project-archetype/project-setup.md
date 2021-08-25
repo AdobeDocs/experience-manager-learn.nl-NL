@@ -1,20 +1,20 @@
 ---
 title: Aan de slag met AEM Sites - Projectinstellingen
-seo-title: Aan de slag met AEM Sites - Projectinstellingen
+seo-title: Getting Started with AEM Sites - Project Setup
 description: Omvat de verwezenlijking van een Maven Multimoduleproject om de code en de configuraties voor een AEM Plaats te beheren.
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
-feature: Projectarchetype AEM
-topic: Inhoudsbeheer, ontwikkeling
+feature: AEM Project Archetype
+topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1843'
 ht-degree: 0%
 
 ---
@@ -275,7 +275,7 @@ De **[core](https://experienceleague.adobe.com/docs/experience-manager-core-comp
 
 ### Ui.apps en Ui.content-modules {#apps-content-module}
 
-De gemaakte module **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** bevat alle renderingcode die nodig is voor de site onder `/apps`. Dit omvat CSS/JS die in een AEM formaat genoemd [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html) zal worden opgeslagen. Dit omvat ook [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)-scripts voor het renderen van dynamische HTML. U kunt de **ui.apps** module als kaart aan de structuur in JCR maar in een formaat denken dat op een dossiersysteem kan worden opgeslagen en aan broncontrole wordt geëngageerd. De module **ui.apps** bevat alleen code.
+De gemaakte module **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** bevat alle renderingcode die nodig is voor de site onder `/apps`. Dit omvat CSS/JS die in een AEM formaat genoemd [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) zal worden opgeslagen. Dit omvat ook [HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)-scripts voor het renderen van dynamische HTML. U kunt de **ui.apps** module als kaart aan de structuur in JCR maar in een formaat denken dat op een dossiersysteem kan worden opgeslagen en aan broncontrole wordt geëngageerd. De module **ui.apps** bevat alleen code.
 
 Om enkel deze module te bouwen:
 
@@ -346,6 +346,6 @@ Om enkel deze module te bouwen:
 
    Opnieuw wordt een bouwstijlmislukking verwacht om voor te komen als geen AEM instantie die op haven **4504** loopt beschikbaar is. De parameter `aem.port` wordt gedefinieerd in het POM-bestand op `aem-guides-wknd/pom.xml`.
 
-De **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.htm)** module is op dezelfde manier gestructureerd als de **ui.apps** module. Het enige verschil is dat de **ui.content** module het zogenaamde **mutable**-gehalte bevat. **** Mutablecontent verwijst hoofdzakelijk naar niet-codeconfiguraties zoals Malplaatjes, Beleid, of omslagstructuren die in bron-controle  **** maar worden opgeslagen zou op een AEM instantie direct kunnen worden gewijzigd. Dit zal in het hoofdstuk over Pagina&#39;s en Malplaatjes veel gedetailleerder worden onderzocht.
+De **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** module is op dezelfde manier gestructureerd als de **ui.apps** module. Het enige verschil is dat de **ui.content** module het zogenaamde **mutable**-gehalte bevat. **** Mutablecontent verwijst hoofdzakelijk naar niet-codeconfiguraties zoals Malplaatjes, Beleid, of omslagstructuren die in bron-controle  **** maar worden opgeslagen zou op een AEM instantie direct kunnen worden gewijzigd. Dit zal in het hoofdstuk over Pagina&#39;s en Malplaatjes veel gedetailleerder worden onderzocht.
 
 De zelfde Gemaakt bevelen die worden gebruikt om **ui.apps** module te bouwen kunnen worden gebruikt om **ui.content** module te bouwen. U kunt de bovenstaande stappen vrij herhalen vanuit de map **ui.content**.
