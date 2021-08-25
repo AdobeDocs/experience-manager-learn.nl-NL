@@ -1,18 +1,14 @@
 ---
 title: Eenvoudige gids voor implementatie van zoekopdrachten
 description: De Eenvoudige onderzoeksimplementatie is de materialen van het laboratorium van de Top van 2017 AEM Gedetailleerd Onderzoek. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
-topics: development, search
-audience: developer
-doc-type: tutorial
-activity: develop
 version: 6.3, 6.4, 6.5
-feature: Zoeken
-topic: Ontwikkeling
+feature: Search
+topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -114,7 +110,7 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
 
    Oak stelt een reeks lucene-verstrekt de configuratieelementen van de analysator voor gebruik in AEM bloot.
 
-   * [Documentatie Apache Oak-analyse](http://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
+   * [Documentatie Apache Oak-analyse](https://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [Tokenizers](https://cwiki.apache.org/confluence/display/solr/Tokenizers)
       * [Filters](https://cwiki.apache.org/confluence/display/solr/Filter+Descriptions)
       * [CharFilters](https://cwiki.apache.org/confluence/display/solr/CharFilterFactories)
