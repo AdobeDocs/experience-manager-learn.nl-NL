@@ -2,24 +2,19 @@
 title: Aanbevolen procedures voor Java API in AEM
 description: AEM is gebaseerd op een rijke open-source softwarestack die veel Java API's beschikbaar maakt voor gebruik tijdens de ontwikkeling. In dit artikel worden de belangrijkste API's besproken en wordt aangegeven wanneer en waarom deze moeten worden gebruikt.
 version: 6.2, 6.3, 6.4, 6.5
-sub-product: stichting, middelen, sites
-feature: API's
-topics: best-practices, development
-activity: develop
-audience: developer
-doc-type: article
-topic: Ontwikkeling
+feature: APIs
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2030'
 ht-degree: 0%
 
 ---
 
 
-# Tips en trucs voor Java API
+# Aanbevolen werkwijzen voor Java API
 
 Adobe Experience Manager (AEM) is gebaseerd op een rijke open-source softwarestack die veel Java API&#39;s beschikbaar maakt voor gebruik tijdens de ontwikkeling. In dit artikel worden de belangrijkste API&#39;s besproken en wordt aangegeven wanneer en waarom deze moeten worden gebruikt.
 
@@ -29,15 +24,15 @@ AEM is gebaseerd op vier primaire Java API-sets.
 
    * Productabstracties zoals pagina&#39;s, middelen, workflows, enz.
 
-* **[!DNL Apache Sling]Web Framework**
+* **Apache Sling Web Framework**
 
    * REST en op bron-gebaseerde abstracties zoals middelen, waardekaarten, en HTTP- verzoeken.
 
-* **JCR ([!DNL Apache Jackrabbit Oak])**
+* **JCR (Apache Jackrabbit Oak)**
 
    * Abstracties van gegevens en inhoud, zoals knooppunten, eigenschappen en sessies.
 
-* **[!DNL OSGi (Apache Felix)]**
+* **OSGi (Apache Felix)**
 
    * OSGi de abstracties van de toepassingscontainer zoals de diensten en (OSGi) componenten.
 
@@ -46,7 +41,7 @@ AEM is gebaseerd op vier primaire Java API-sets.
 De algemene regel is om de voorkeur te geven aan API&#39;s/abstracties in de volgende volgorde:
 
 1. **AEM**
-1. **[!DNL Sling]**
+1. **Sling**
 1. **JCR**
 1. **OSGi**
 
@@ -96,8 +91,8 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 
 * Eenvoudige, parameterized vraagbouw (vraagparams die als Kaart worden gemodelleerd)
 * Native [Java API&#39;s en HTTP API&#39;s](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/querybuilder-api.html)
-* [Foutopsporing OTB-query](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html#TestingandDebugging)
-* [OOTB-](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) voorspellingen ter ondersteuning van algemene queryvereisten
+* [Foutopsporing AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html#TestingandDebugging)
+* [AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) voorspellingen die gemeenschappelijke vraagvereisten steunen
 
 * Uitbreidbare API, die voor de ontwikkeling van douane [vraagvoorspellingen](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html) toestaat
 * JCR-SQL2 en XPath kunnen direct via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [JCR APIs](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html) worden uitgevoerd, terugkerend resultaten a [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [JCR Nodes](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
@@ -105,7 +100,6 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 >[!CAUTION]
 >
 >AEM QueryBuilder-API lekt een ResourceResolver-object. Om dit lek te verlichten, volg dit [codemonster](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
-
 
 ## [!DNL Sling] API&#39;s
 
@@ -130,7 +124,7 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 * Asynchrone bouwstenen voor werkverwerking
 
    * [Gebeurtenis- en taakhandlers](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)
-   * [Planningen](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
+   * [Planner](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
    * [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html)
 
 * [Servicegebruikers](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
@@ -155,12 +149,12 @@ Terwijl de JCR AEM opslagplaats voor inhoud is, hebben de API&#39;s NIET de voor
 
 ### Veelvoorkomende toepassingen van JCR API&#39;s
 
-* [Toegangsbeheer](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
+* [Toegangsbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
 * [Toegestaan beheer (gebruikers/groepen)](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/package-summary.html)
 * JCR-observatie (luisteren naar JCR-gebeurtenissen)
 * Diepknoopstructuren maken
 
-   * Hoewel de verkoop-API&#39;s het maken van bronnen ondersteunen, hebben de JCR-API&#39;s gebruiksgemakmethoden in [JcrUtils](https://jackrabbit.apache.org/api/2.10/index.html?org/apache/jackrabbit/commons/JcrUtils.html) en [JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/jcr/JcrUtil.html) die het maken van diepe structuren versnellen.
+   * Hoewel de verkoop-API&#39;s het maken van bronnen ondersteunen, hebben de JCR-API&#39;s gebruiksgemakmethoden in [JcrUtils](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/commons/JcrUtils.html) en [JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/jcr/JcrUtil.html) die het maken van diepe structuren versnellen.
 
 ## OSGi API&#39;s
 
