@@ -2,16 +2,16 @@
 title: Een lokale AEM ontwikkelomgeving instellen
 description: Handleiding voor het opzetten van een lokale ontwikkeling voor Adobe Experience Manager, AEM. Omvat belangrijke onderwerpen van lokale installatie, Apache Maven, geïntegreerde ontwikkelomgevingen en het zuiveren/het oplossen van problemen. De ontwikkeling met winde van de Verduistering, CRXDE-Lite, de Code van Visual Studio en IntelliJ worden besproken.
 version: 6.4, 6.5
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
 activity: develop
 audience: developer
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2626'
+source-wordcount: '2629'
 ht-degree: 0%
 
 ---
@@ -207,12 +207,12 @@ Wanneer het gebruiken van winde gelieve te controleren `classic` in uw Gemaakt l
 
 ### [!DNL Eclipse] IDE
 
-De **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** is een van de populairste IDE&#39;s voor Java-ontwikkeling, grotendeels omdat het een open-source en ***free*** is! Adobe biedt een insteekmodule, **[[!DNL AEM Developer Tools]](https://eclipse.adobe.com/aem/dev-tools/)**, voor [!DNL Eclipse] om de ontwikkeling te vergemakkelijken met een handige GUI om code te synchroniseren met een lokale AEM-instantie. De [!DNL Eclipse] winde wordt geadviseerd voor ontwikkelaars nieuw om grotendeels te AEM wegens de steun GUI door [!DNL AEM Developer Tools].
+De **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** is een van de populairste IDE&#39;s voor Java-ontwikkeling, grotendeels omdat het een open-source en ***free*** is! Adobe biedt een insteekmodule, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html)**, voor [!DNL Eclipse] om de ontwikkeling te vergemakkelijken met een handige GUI om code te synchroniseren met een lokale AEM-instantie. De [!DNL Eclipse] winde wordt geadviseerd voor ontwikkelaars nieuw om grotendeels te AEM wegens de steun GUI door [!DNL AEM Developer Tools].
 
 #### Installatie en installatie
 
 1. Download en installeer de [!DNL Eclipse] IDE voor [!DNL Java EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
-1. Volg de instructies om de [!DNL AEM Developer Tools] plug-in te installeren: [https://eclipse.adobe.com/aem/dev-tools/](https://eclipse.adobe.com/aem/dev-tools/)
+1. Volg de instructies om de [!DNL AEM Developer Tools] plug-in te installeren: [https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html](https://eclipse.adobe.com/aem/dev-tools/)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
