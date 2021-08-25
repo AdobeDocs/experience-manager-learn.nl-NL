@@ -3,14 +3,14 @@ title: Paginagegevens verzamelen met Adobe Analytics
 description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om gegevens over gebruikersactiviteit te verzamelen op een website die is gemaakt met Adobe Experience Manager. Leer hoe u regels in Experience Platform Launch gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics-rapportenpakket te verzenden.
 version: cloud-service
 topic: Integrations
-feature: Gegevenslaag Adobe-client
+feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Hiervoor is het volgende vereist:
 In plaats van het opzetten van een AEM milieu en het installeren van de WKND codebasis, kunt u het debugger van het Experience Platform aan **switch** levende [https://wknd.site/](https://wknd.site/) aan *uw* bezit van de Lancering gebruiken. Natuurlijk kunt u uw eigen AEM gebruiken als de [Adobe Client Data Layer is ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
 
 1. Login aan Experience Platform Launch en [creeer een Bezit van de Lancering](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch.html) (als u nog niet hebt).
-1. Zorg ervoor dat een initiële Starten [Bibliotheek is gecreeerd](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) en aan een Starten [milieu](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) bevorderd.
+1. Zorg ervoor dat een initiële Starten [Bibliotheek is gecreeerd](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) en aan een Starten [milieu](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) bevorderd.
 1. Kopieer de insluitcode voor Starten vanuit de omgeving waarnaar de bibliotheek is gepubliceerd.
 
    ![Insluitcode starten kopiëren](assets/collect-data-analytics/launch-environment-copy.png)
@@ -172,7 +172,7 @@ De gegevenslaag van de Gegevens van de Cliënt van Adobe is een **gebeurtenis** 
 
    Het object `event` wordt doorgegeven via de methode `trigger()` die in de aangepaste gebeurtenis wordt aangeroepen. `component` Dit is de huidige pagina die wordt afgeleid van de gegevenslaag  `getState` in de aangepaste gebeurtenis. Herhaal van vroeger het [paginaschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) dat door de gegevenslaag wordt blootgesteld om de diverse sleutels te zien die uit de doos worden blootgesteld.
 
-1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch uit om de code te promoten naar de [omgeving](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) die op uw AEM-site wordt gebruikt.
+1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch uit om de code te promoten naar de [omgeving](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) die op uw AEM-site wordt gebruikt.
 
    >[!NOTE]
    >
