@@ -5,13 +5,13 @@ version: cloud-service
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: Inhoudsfragmenten, GraphQL API
-topic: Koploos, inhoudsbeheer
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1814'
 ht-degree: 0%
 
 ---
@@ -158,11 +158,7 @@ De plaats van de Verwijzing WKND omvat configuraties nodig om een [eindpunt Grap
 
    ![GraphQL Endpoint XHR-verzoek](assets/setup/endpoint-gql.png)
 
-1. U kunt de parameters en de reactie JSON ook bekijken door het netwerkverzoek te inspecteren. Het kan nuttig zijn om een browser uitbreiding als [GraphQL Netwerk](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) voor Chrome te installeren om een beter inzicht in de vraag en de reactie te krijgen.
-
-   ![GraphQL-netwerkextensie](assets/setup/GraphQL-extension.png)
-
-   *Het gebruiken van de uitbreiding van het Chroom GrafiekQL Netwerk*
+1. U kunt de parameters en de reactie JSON ook bekijken door het netwerkverzoek te inspecteren. Het kan nuttig zijn om een browser uitbreiding zoals [GraphQL de Inspecteur van het Netwerk ](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) voor Chrome te installeren om een beter inzicht in de vraag en de reactie te krijgen.
 
 ## Een inhoudsfragment wijzigen
 
