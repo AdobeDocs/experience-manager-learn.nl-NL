@@ -1,20 +1,20 @@
 ---
 title: Diagrammen uit meerdere reeksen in AEM Forms
-seo-title: Diagrammen uit meerdere reeksen in AEM Forms
+seo-title: Multi Series Charts in AEM Forms
 description: Maak het juiste formuliergegevensmodel om grafieken met meerdere reeksen te maken in afdruk- en webkanaaldocumenten.
-seo-description: Maak het juiste formuliergegevensmodel om grafieken met meerdere reeksen te maken in afdruk- en webkanaaldocumenten.
-feature: Interactieve communicatie
+seo-description: Create appropriate Form Data Model to create multi series charts in print and web channel documents.
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Voer de volgende stappen uit om dit op uw systeem te testen
 
 * [Download en importeer het bestand MutualFundFactSheet.zip met AEM Package Manager.](assets/mutualfundfactsheet.zip)
 * [Download SeriesChartSampleData.json op uw harde aandrijving.](assets/serieschartsampledata.json) Dit zijn de steekproefgegevens die zullen worden gebruikt om de grafiek te bevolken.
-* [Navigeer naar Forms en Documenten.](https://helpx.adobe.com/aem/forms.html/content/dam/formsanddocuments.html)
+* [Navigeer naar Forms en Documenten.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Selecteer voorzichtig de interactieve communicatiesjabloon &quot;MutualFundGrowthFactSheet&quot;.
 * Klik op Voorvertoning | Voorbeeldgegevens uploaden.
 * Blader naar het bestand met voorbeeldgegevens dat u als onderdeel van dit artikel hebt opgegeven.

@@ -2,13 +2,13 @@
 title: Uw eerste OSGi-bundel maken met AEM Forms
 description: Bouw uw eerste bundel OSGi gebruikend Maven en Eclipse
 version: 6.4,6.5
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Open een nieuw opdrachtpromptvenster en typ: `java -version`. U zou de versie va
 Maven is een tool voor automatisering van build die voornamelijk wordt gebruikt voor Java-projecten. Voer de volgende stappen uit om te installeren op uw lokale systeem.
 
 * Creeer een omslag genoemd `maven` in uw aandrijving van C
-* Download het [binaire ZIP-archief](http://maven.apache.org/download.cgi)
+* Download het [binaire ZIP-archief](https://maven.apache.org/download.cgi)
 * De inhoud van het ZIP-archief extraheren naar `c:\maven`
 * Maak een omgevingsvariabele met de naam `M2_HOME` met de waarde `C:\maven\apache-maven-3.6.0`. In mijn geval is de **mvn** versie 3.6.0. Op het moment dat dit artikel wordt geschreven, is de nieuwste versie 3.6.3
 * `%M2_HOME%\bin` toevoegen aan het pad

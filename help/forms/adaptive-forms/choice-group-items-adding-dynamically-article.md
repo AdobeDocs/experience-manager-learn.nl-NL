@@ -1,14 +1,14 @@
 ---
 title: Items toevoegen aan keuzegroep
 description: Items dynamisch toevoegen aan keuzerondjesgroepcomponent
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.5
-topic: Ontwikkeling
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 In AEM Forms 6.5 is de mogelijkheid geïntroduceerd om items dynamisch toe te voegen aan een adaptieve Forms-keuzerondjesgroepcomponent, zoals CheckBox, Radio Button en Afbeeldingslijst.
 
-[Dit vermogen is beschikbaar live op de Server](https://forms.enablementadobe.com/content/samples/samples.html?query=0) van Steekproeven. Zoeken naar kaart met dynamische selectievakjes en klikken op &quot;Try It&quot;
+[Dit vermogen is beschikbaar live op de Server](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) van Steekproeven. Zoeken naar kaart met dynamische selectievakjes en klikken op &quot;Try It&quot;
 
 
 U kunt punten toevoegen gebruikend de visuele redacteur evenals de coderedacteur afhankelijk van uw gebruiksgeval.
@@ -91,7 +91,7 @@ U kunt dit als volgt op uw systeem testen:
 
 * [De middelen downloaden](assets/usingthevisualeditor.zip)
 * Installeer Tomcat als u dit nog niet hebt. [Hier zijn instructies voor het installeren van tomcat beschikbaar](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
-* [SampleRest.war-bestand distribueren in Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
+* [Het bestand SampleRest.war uit dit ZIP-bestand implementeren](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
 * [Forms en documenten openen](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op &quot;Maken | Bestand uploaden&quot; en het bestand uploaden dat u in de vorige stap hebt gedownload
 * [Een voorbeeld van de formulieren bekijken](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
