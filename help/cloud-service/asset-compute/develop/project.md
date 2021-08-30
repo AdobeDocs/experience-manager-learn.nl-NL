@@ -7,9 +7,9 @@ topic: Integrations, Development
 feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Gebruik [Adobe I/O CLI Asset compute stop-in](../set-up/development-environment.
 
 1. Navigeer vanaf de opdrachtregel naar de map waarin u het project wilt plaatsen.
 1. Van de bevellijn, voer `aio app init` uit om met de interactieve projectgeneratie CLI te beginnen.
-   + Dit bevel kan browser van het Web kweken die voor authentificatie aan Adobe I/O ertoe aanzetten. Als het, uw geloofsbrieven van de Adobe verbonden aan [vereiste de diensten en producten van de Adobe ](../set-up/accounts-and-services.md) verstrekt. Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Dit bevel kan browser van het Web kweken die voor authentificatie aan Adobe I/O ertoe aanzetten. Als dit het geval is, geeft u uw Adobe-gegevens op die zijn gekoppeld aan de [vereiste Adobe-services en -producten](../set-up/accounts-and-services.md). Als u zich niet kunt aanmelden, volgt u [deze instructies voor het genereren van een project](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Org selecteren__
    + Selecteer de Adobe Org die als Cloud Service heeft AEM, Project Firefly wordt geregistreerd met
 1. __Project selecteren__
@@ -86,7 +86,7 @@ Het geproduceerde project van de Asset compute is een project Node.js voor gebru
    + Dit bestand kan worden gegenereerd/bijgewerkt met de opdracht `aio app use`.
    + Variabelen die in dit bestand worden gedefinieerd, kunnen worden overschreven door [variabelen exporteren](../deploy/runtime.md) op de opdrachtregel.
 
-Voor meer details over de overzicht van de projectstructuur, herzie [Anatomie van een project van het Project van Adobe Firefly](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
+Voor meer details over de overzicht van de projectstructuur, herzie [Anatomie van een project van het Project van Adobe Firefly](https://www.adobe.io/project-firefly/docs/guides/).
 
 Het grootste deel van de ontwikkeling vindt plaats in de map `/actions` waarin workers worden geïmplementeerd en in `/test/asset-compute` tests voor aangepaste Asset computen worden geschreven.
 

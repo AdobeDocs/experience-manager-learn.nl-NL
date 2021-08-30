@@ -6,9 +6,9 @@ feature: APIs
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2021'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Deze volgorde is een algemene regel, wat betekent dat er uitzonderingen bestaan.
 
 AEM API&#39;s bieden abstracties en functionaliteit die specifiek zijn voor gebruikssituaties die in productie zijn.
 
-AEM [PageManager](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) en [Page](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/model/Page.html) APIs verstrekken abstracties voor `cq:Page` knopen in AEM die Web-pagina&#39;s vertegenwoordigen.
+AEM [PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) en [Page](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) APIs verstrekken abstracties voor `cq:Page` knopen in AEM die Web-pagina&#39;s vertegenwoordigen.
 
 Hoewel deze knooppunten beschikbaar zijn via [!DNL Sling] API&#39;s als bronnen en JCR API&#39;s als knooppunten, bieden AEM API&#39;s abstracties voor veelvoorkomende gebruiksgevallen. Het gebruik van de AEM-API&#39;s zorgt voor een consistent gedrag tussen AEM product en aanpassingen en uitbreidingen die moeten worden AEM.
 
@@ -95,7 +95,7 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 * [AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) voorspellingen die gemeenschappelijke vraagvereisten steunen
 
 * Uitbreidbare API, die voor de ontwikkeling van douane [vraagvoorspellingen](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html) toestaat
-* JCR-SQL2 en XPath kunnen direct via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [JCR APIs](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html) worden uitgevoerd, terugkerend resultaten a [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [JCR Nodes](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
+* JCR-SQL2 en XPath kunnen direct via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [JCR APIs](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html) worden uitgevoerd, terugkerend resultaten a [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [JCR Nodes](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
 
 >[!CAUTION]
 >
@@ -131,9 +131,9 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 
 ## JCR-API&#39;s
 
-* **[JCR 2.0 JavaDocs](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
+* **[JCR 2.0 JavaDocs](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
 
-De [JCR (Java Content Repository) 2.0-API&#39;s](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) maken deel uit van een specificatie voor JCR-implementaties (in het geval van AEM [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Alle JCR-implementatie moet in overeenstemming zijn met deze API&#39;s en deze implementeren. Dit is dus de API op het laagste niveau voor interactie met AEM inhoud.
+De [JCR (Java Content Repository) 2.0-API&#39;s](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) maken deel uit van een specificatie voor JCR-implementaties (in het geval van AEM [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Alle JCR-implementatie moet in overeenstemming zijn met deze API&#39;s en deze implementeren. Dit is dus de API op het laagste niveau voor interactie met AEM inhoud.
 
 De JCR zelf is een hiërarchische/op boom-gebaseerde NSQL datastore AEM als zijn inhoudsbewaarplaats gebruikt. De JCR heeft een uitgebreide reeks ondersteunde API&#39;s, variërend van inhoud-CRUD tot het opvragen van inhoud. Ondanks deze robuuste API hebben ze zelden de voorkeur boven de AEM op een hoger niveau en de abstracties [!DNL Sling].
 
@@ -150,7 +150,7 @@ Terwijl de JCR AEM opslagplaats voor inhoud is, hebben de API&#39;s NIET de voor
 ### Veelvoorkomende toepassingen van JCR API&#39;s
 
 * [Toegangsbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
-* [Toegestaan beheer (gebruikers/groepen)](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/package-summary.html)
+* [Toegestaan beheer (gebruikers/groepen)](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/user/package-summary.html)
 * JCR-observatie (luisteren naar JCR-gebeurtenissen)
 * Diepknoopstructuren maken
 

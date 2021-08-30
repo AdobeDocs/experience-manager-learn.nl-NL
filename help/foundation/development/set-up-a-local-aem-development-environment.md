@@ -9,9 +9,9 @@ audience: developer
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2632'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ De **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** is een van de populair
 #### Installatie en installatie
 
 1. Download en installeer de [!DNL Eclipse] IDE voor [!DNL Java EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
-1. Volg de instructies om de [!DNL AEM Developer Tools] plug-in te installeren: [https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html](https://eclipse.adobe.com/aem/dev-tools/)
+1. Volg de instructies om de [!DNL AEM Developer Tools] plug-in te installeren: [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
