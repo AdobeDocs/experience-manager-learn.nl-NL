@@ -6,9 +6,9 @@ version: 6.4,6.5
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ Row1 wordt gevormd om afhankelijk van de gegevens te kweken die door de de diens
 ## Deze op uw server implementeren
 
 [Installeer Tomcat zoals ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
-[hier is opgegevenImplementeer het bestand SampleRest.war in dit ZIP-](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
-[bestandInstalleer de middelen  ](assets/amortizationschedule.zip) met AEM pakketbeheer 
+[hier is opgegevenImplementeer het bestand SampleRest.war in dit ZIP-bestand in uw ](assets/sample-rest.zip)
+[TomcatInstalleer de middelen  ](assets/amortizationschedule.zip) met AEM pakketbeheer 
 [Open het ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-formulier Amortization ScheduleVoer de juiste waarde in en klik op het Wijzigingsschema berekenen als het formulier moet worden ingevuld
+formulier Amortization ScheduleVoer de juiste waarde in en klik op het schema voor Amortization berekenen als het formulier moet worden ingevuld
 
