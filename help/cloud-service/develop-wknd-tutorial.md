@@ -1,18 +1,15 @@
 ---
 title: Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial
-seo-title: Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial
 description: Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken vernieuwen? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën.
-seo-description: Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken vernieuwen? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën.
-content-type: reference
-topic-tags: introduction
-feature: Projectarchetype AEM, kerncomponenten, Pagina-editor, bewerkbare sjablonen
-topic: Ontwikkeling
+feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+thumbnail: 30476.jpeg
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 6%
+source-wordcount: '300'
+ht-degree: 5%
 
 ---
 

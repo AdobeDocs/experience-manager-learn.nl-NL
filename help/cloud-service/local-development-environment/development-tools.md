@@ -2,17 +2,13 @@
 title: De ontwikkelingstools voor AEM instellen als een Cloud Service-ontwikkeling
 description: Stel een lokale ontwikkelcomputer in met alle basislijngereedschappen die nodig zijn om zich te ontwikkelen in AEM lokale omgeving.
 feature: Developer Tools
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+version: Cloud Service
 kt: 4267
 thumbnail: 25907.jpg
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
@@ -120,7 +116,7 @@ Apache Maven is het opensource Java-opdrachtregelprogramma dat wordt gebruikt om
 
 ## Adobe I/O CLI instellen{#aio-cli}
 
-De [Adobe I/O CLI](https://github.com/adobe/aio-cli), of `aio`, verleent bevellijntoegang tot een verscheidenheid van de diensten van de Adobe, met inbegrip van [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) en [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O CLI speelt een integrale rol in ontwikkeling op AEM als Cloud Service aangezien het ontwikkelaars de capaciteit verleent om:
+De [Adobe I/O CLI](https://github.com/adobe/aio-cli), of `aio`, verleent bevellijntoegang tot een verscheidenheid van de diensten van Adobe, met inbegrip van [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) en [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O CLI speelt een integrale rol in ontwikkeling op AEM als Cloud Service aangezien het ontwikkelaars de capaciteit verleent om:
 
 + Logboeken van AEM als Cloud Services
 + Cloud Manager-pijpleidingen beheren vanuit de CLI

@@ -2,18 +2,13 @@
 title: Fouten opsporen in Dispatcher-gereedschappen
 description: De Dispatcher Tools verstrekt een inperkt milieu van de Server van het Web van Apache dat kan worden gebruikt om AEM als Verzender van de Diensten van de Publicatie van AEM plaatselijk te simuleren. Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cachegeheugen kunnen van essentieel belang zijn om ervoor te zorgen dat de end-to-end AEM toepassing correct is en dat ondersteuning wordt geboden voor cache- en beveiligingsconfiguraties.
 feature: Dispatcher
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 kt: 5918
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -22,11 +17,12 @@ ht-degree: 0%
 # Fouten opsporen in Dispatcher-gereedschappen
 
 De Dispatcher Tools verstrekt een inperkt milieu van de Server van het Web van Apache dat kan worden gebruikt om AEM als Verzender van de Diensten van de Publicatie van AEM plaatselijk te simuleren.
+
 Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cachegeheugen kunnen van essentieel belang zijn om ervoor te zorgen dat de end-to-end AEM toepassing correct is en dat ondersteuning wordt geboden voor cache- en beveiligingsconfiguraties.
 
 >[!NOTE]
 >
->Aangezien de Hulpmiddelen van de Verzender op container-gebaseerd zijn, telkens als het opnieuw wordt begonnen, worden de vroegere logboeken en de geheim voorgeheugeninhoud vernietigd.
+>Aangezien de Hulpmiddelen van de Ontvanger op container-gebaseerd zijn, telkens als het opnieuw is begonnen, worden de vroegere logboeken en de geheim voorgeheugeninhoud vernietigd.
 
 ## Logboeken voor Dispatcher Tools
 
@@ -65,7 +61,7 @@ $ docker ps
 
 # locate the CONTAINER ID associated with "adobe/aem-ethos/dispatcher-publisher" IMAGE
 CONTAINER ID        IMAGE                                       COMMAND                  CREATED             STATUS              PORTS                  NAMES
-46127c9d7081        adobe/aem-ethos/dispatcher-publish:2.0.23   "/docker_entrypoint.…"   6 seconds ago       Up 5 seconds        0.0.0.0:8080->80/tcp   wonderful_merkle
+46127c9d7081        adobe/aem-ethos/dispatcher-publish:2.0.23   "/docker_entrypoint.…"   6 seconds ago       Up 5 seconds        0.0.0.0:8080->80/tcp   wonderful_ira
 
 $ docker cp -L <CONTAINER ID>:/mnt/var/www/html cache 
 $ cd cache

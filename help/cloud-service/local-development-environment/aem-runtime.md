@@ -1,20 +1,16 @@
 ---
 title: Lokale AEM Runtime instellen voor AEM als ontwikkeling van Cloud Servicen
 description: Opstelling Lokale AEM Runtime die de AEM als QuickStart Jar van SDK van de Cloud Service gebruikt.
-feature: Gereedschappen voor ontwikkelaars
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: Developer Tools
+version: Cloud Service
 kt: 4678, 4677
 thumbnail: 32551.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
@@ -202,7 +198,7 @@ Werk de AEM SDK ten minste maandelijks bij op of kort na de laatste donderdag va
 >
 > Als u de QuickStart-jar wilt bijwerken naar een nieuwe versie, moet u de volledige lokale ontwikkelomgeving vervangen. Dit leidt tot verlies van alle code, configuratie en inhoud in de lokale AEM. Zorg ervoor dat om het even welke code, config of inhoud die niet zou moeten worden vernietigd veilig aan Git wordt begaan, of uit de lokale AEM instantie als AEM Pakketten wordt uitgevoerd.
 
-### Hoe te om inhoudsverlies te vermijden wanneer het bevorderen van de AEM SDK
+### Hoe te vermijden inhoudsverlies wanneer het bevorderen van de AEM SDK
 
 Door de upgrade van de AEM SDK wordt in feite een geheel nieuwe AEM-runtime gemaakt, waaronder een nieuwe opslagplaats. Dit betekent dat eventuele wijzigingen in de opslagplaats van een eerdere AEM SDK verloren gaan. Hieronder volgen levensvatbare strategieën voor het ondersteunen van blijvende inhoud tussen AEM SDK-upgrades en u kunt deze op discrete wijze of in overleg gebruiken:
 
