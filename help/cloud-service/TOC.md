@@ -2,12 +2,12 @@
 user-guide-title: Tutorials voor Adobe Experience Manager as a Cloud Service
 user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manager als Cloud Service.
 breadcrumb-title: AEM als Cloud Service Tutorials
-sub-product: cloudservice
+sub-product: cloud-service
 team: TM
-source-git-commit: aa90b2c1a066dc36d4ba26ecdb8b58939445ef34
+source-git-commit: 4c9d836881ad7cccd31c55fa5eddc24dff1200cd
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 11%
+source-wordcount: '516'
+ht-degree: 12%
 
 ---
 
@@ -89,6 +89,18 @@ ht-degree: 11%
 + Migratie {#migration}
    + [De tool Content Transfer](./migration/content-transfer-tool.md)
    + [Bulkimport van activa](./migration/bulk-import.md)
+   + Cloud Acceleration Manager {#cloud-acceleration-manager}
+      + [Inleiding](./migration/cloud-acceleration-manager/introduction.md)
+      + [Gereedheid en analyse van best practices](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
+      + [Implementatiefase](./migration/cloud-acceleration-manager/implementation-phase.md)
+      + [De tool Content Transfer](./migration/cloud-acceleration-manager/content-transfer-tool.md)
+      + [Gereedschappen voor het reviseren van code](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
+      + [Modernizer van opslagplaats voor code](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
+      + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
+      + [Indexconversie](./migration/cloud-acceleration-manager/index-converter.md)
+      + [De tool Asset Workflow Migration](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [Navigeren door het beheer voor cloudversnelling](./migration/cloud-acceleration-manager/navigating.md)
+      + [Cloud Acceleration Manager gebruiken](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
    + Aangepast formulier maken{#create-first-af}
       + [Inleiding](./forms/create-first-af/introduction.md)
@@ -104,8 +116,8 @@ ht-degree: 11%
       + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
    + Document Cloud-API en AEM Forms CS{#doc-cloud-sdk}
       + [Inleiding](./forms/doc-cloud-sdk/introduction.md)
-      + [Adobe IO-project maken](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
-      + [OSGI-configuratie maken](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [Adobe I/O-project maken](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [OSGi-configuratie maken](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
       + [Interface definiëren](./forms/doc-cloud-sdk/create-interface.md)
       + [Interface implementeren](./forms/doc-cloud-sdk/implement-interface.md)
       + [JSON-onderdeel maken](./forms/doc-cloud-sdk/get-content-analyzer.md)
@@ -114,25 +126,27 @@ ht-degree: 11%
       + [Inleiding](./forms/forms-cs-azure-portal/introduction.md)
       + [Formuliergegevensmodel maken](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Formuliergegevens opslaan in Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
-      + [Vooraf ingevuld formulier](./forms/forms-cs-azure-portal/prefill-af-storage.md)
+      + [Formulier vooraf invullen](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Query-verzendingen](./forms/forms-cs-azure-portal/query-submitted-data.md)
-   + Revisiworkflow maken{#create-aem-workflow}
-      + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
-      + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
-   + Adobe Sign met AEM Forms{#forms-and-sign}
-      + [Inleiding](./forms/forms-and-sign/introduction.md)
-      + [Adobe Sign API-toepassing](./forms/forms-and-sign/create-sign-api-application.md)
-      + [Adobe Sign Cloud Configuration](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
-      + [Adaptief formulier maken](./forms/forms-and-sign/create-adaptive-form.md)
-      + [Configureren voor invullen en ondertekenen](./forms/forms-and-sign/configure-form-fill-and-sign.md)
-   + Integreren met Salesforce{#integrate-with-salesforce}
-      + [Inleiding](./forms/integrate-with-salesforce/introduction.md)
-      + [Een verbonden app maken](./forms/integrate-with-salesforce/create-connected-app.md)
-      + [Wagerbestand maken](./forms/integrate-with-salesforce/describe-rest-api.md)
-      + [Gegevensbron maken](./forms/integrate-with-salesforce/create-data-source.md)
-      + [Formuliergegevensmodel maken](./forms/integrate-with-salesforce/create-form-data-model.md)
-      + [Indiening van testformulieren](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
-      + [Klikgebeurtenis testen](./forms/integrate-with-salesforce/create-lead-click-event.md)
+
+
+      + Revisiworkflow maken{#create-aem-workflow}
+         + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
+         + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
+      + Adobe Sign met AEM Forms{#forms-and-sign}
+         + [Inleiding](./forms/forms-and-sign/introduction.md)
+         + [Adobe Sign API-toepassing](./forms/forms-and-sign/create-sign-api-application.md)
+         + [Adobe Sign Cloud Configuration](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+         + [Adaptief formulier maken](./forms/forms-and-sign/create-adaptive-form.md)
+         + [Configureren voor invullen en ondertekenen](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+      + Integreren met Salesforce{#integrate-with-salesforce}
+         + [Inleiding](./forms/integrate-with-salesforce/introduction.md)
+         + [Een verbonden app maken](./forms/integrate-with-salesforce/create-connected-app.md)
+         + [Wagerbestand maken](./forms/integrate-with-salesforce/describe-rest-api.md)
+         + [Gegevensbron maken](./forms/integrate-with-salesforce/create-data-source.md)
+         + [Formuliergegevensmodel maken](./forms/integrate-with-salesforce/create-form-data-model.md)
+         + [Indiening van testformulieren](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+         + [Klikgebeurtenis testen](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Uitbreidbaarheid asset compute{#asset-compute}
    + [Overzicht](./asset-compute/overview.md)
    + Instellen{#set-up}
