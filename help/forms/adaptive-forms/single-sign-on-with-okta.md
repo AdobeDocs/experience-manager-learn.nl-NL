@@ -1,14 +1,14 @@
 ---
 title: OKTA configureren met AEM
 description: Begrijp diverse configuratiemontages voor het gebruiken van enig teken-binnen gebruikend okta
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.5
-topic: Beheer
+topic: Administration
 role: Admin
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 3109d406ed4788ab492a148d4eac94f7e5ad9f2d
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,11 @@ Hier volgen de belangrijkste eigenschappen die moeten worden opgegeven:
 Navigeer naar [configMgr](http://localhost:4502/system/console/configMgr).
 Zoek en open &quot;Apache Sling Referrer Filter&quot;.Stel de volgende eigenschappen in zoals hieronder opgegeven:
 
-* **Lege waarden** toestaan: true
+* **Lege waarden** toestaan: false
 * **Gastheren** toestaan: Hostnaam van idP (zal in uw geval verschillend zijn)
 * **Regexp-host** toestaan: Hostnaam van idP (zal in uw geval verschillend zijn) De het schermschot van de Verwijzing van de Filter van de Verkoper van de Verkoper van de Verkoop
 
-![referentie-filter](assets/sling-referrer-filter.PNG)
+![referentie-filter](assets/okta-referrer.png)
 
 #### Logboekregistratie voor FOUTOPSPORING configureren voor de OKTA-integratie
 
