@@ -1,26 +1,26 @@
 ---
 title: Paginatags gebruiken met AEM Sites
-seo-title: Paginatags gebruiken met Adobe Experience Manager Sites
+seo-title: Using Page Tagging with Adobe Experience Manager Sites
 description: De volgende video laat zien hoe u inhoud binnen een website in Adobe Experience Manager snel en eenvoudig kunt classificeren met behulp van paginatags.
-seo-description: De volgende video laat zien hoe u inhoud binnen een website in Adobe Experience Manager snel en eenvoudig kunt classificeren met behulp van paginatags.
-feature: Pagina-editor
+seo-description: The following video highlights how to quickly and easily classify content within a website in Adobe Experience Manager using page tags.
+feature: Page Editor
 topics: authoring
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 4632
 thumbnail: 32150.jpg
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: bf4427f7-1b7b-4e60-90a8-ab428dc65251
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '45'
 ht-degree: 0%
 
 ---
-
 
 # Pagina&#39;s labelen {#using-page-tagging-with-aem-sites}
 

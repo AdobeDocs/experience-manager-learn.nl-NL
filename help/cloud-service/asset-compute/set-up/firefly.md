@@ -1,24 +1,24 @@
 ---
 title: Het Project van de Adobe van de opstelling brandt voor Asset compute rekbaarheid
 description: De projecten van de asset compute zijn speciaal bepaalde projecten van het Project van de Adobe Vuurwerk, en als dusdanig, vereisen toegang tot het Project van Adobe in de Console van de Ontwikkelaar van de Adobe om hen te vestigen en op te stellen.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
-
 
 # Adobe-project probleemloos instellen
 
@@ -49,7 +49,7 @@ _Doorklikken voor probleemloos instellen van Adobe-project (geen audio)_
       + Selecteer __Een sleutelpaar genereren__ en tik op de knop __Keypair genereren__ en sla de gedownloade `config.zip` op een veilige locatie op voor [later gebruik](#private-key)
       + Tik __Volgende__
       + Selecteer het productprofiel __Integratie - Cloud Service__ en tik __gevormde API opslaan__
-   + __Adobe Services > I/O-__ gebeurtenissen en tik op  __geconfigureerde API opslaan__
+   + __Adobe Services > I/O-__ gebeurtenissen en tik op geconfigureerde API  __opslaan__
    + __Adobe Services > I/O Management__ API en tik op  __geconfigureerde API opslaan__
 
 ## De toets private.key openen{#private-key}

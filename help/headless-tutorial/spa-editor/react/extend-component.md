@@ -2,21 +2,21 @@
 title: Een kerncomponent uitbreiden | Aan de slag met de AEM SPA Editor en reageren
 description: Leer hoe u het JSON-model kunt uitbreiden voor een bestaande Core Component die u wilt gebruiken met de AEM SPA Editor. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden. Leer om het delegatiepatroon te gebruiken voor het uitbreiden van Sling Models en eigenschappen van de Verzameling van Middel.
 sub-product: sites
-feature: SPA Editor, kerncomponenten
+feature: SPA Editor, Core Components
 doc-type: tutorial
-version: cloud-service
+version: Cloud Service
 kt: 5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
-
 
 # Een kerncomponent uitbreiden {#extend-component}
 
@@ -495,4 +495,3 @@ Implementeer vervolgens het Sling Model voor de `BannerModel`-interface.
 ## Gefeliciteerd! {#congratulations}
 
 Gefeliciteerd, hebt u geleerd hoe u een AEM component kunt uitbreiden met de code en hoe de Sling-modellen en -dialoogvensters werken met het JSON-model.
-

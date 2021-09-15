@@ -1,23 +1,23 @@
 ---
 title: Foutopsporing AEM SDK met de OSGi-webconsole
 description: De lokale QuickStart van de AEM SDK heeft een OSGi-webconsole die een verscheidenheid aan informatie en introspecties in de lokale AEM runtime biedt die nuttig zijn om te begrijpen hoe uw toepassing door, en functies binnen AEM wordt erkend.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5265, 5366, 5267
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # Foutopsporing AEM SDK met de OSGi-webconsole
 

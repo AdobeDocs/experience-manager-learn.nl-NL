@@ -1,24 +1,24 @@
 ---
 title: Adobe Cloud Manager gebruiken - omgevingen
 description: Cloud Manager-omgevingen bestaan uit services voor AEM-auteur, AEM-publicatie en -verzending. Verschillende omgevingen ondersteunen rollen en kunnen worden gebruikt met behulp van verschillende CI/CD-pijplijnen. Cloud Manager-omgevingen hebben doorgaans één productieomgeving, één werkgebiedomgeving en één ontwikkelomgeving.
-sub-product: cloudbeheer
+sub-product: cloud-manager
 topics: Administration
 audience: administrator
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6871
 thumbnail: 26318.jpg
-topic: Architectuur
+topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: f4311522-b8fb-4375-9ecc-73e0207a63b2
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Cloud Manager gebruiken - omgevingen
 

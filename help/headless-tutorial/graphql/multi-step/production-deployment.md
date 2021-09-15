@@ -1,21 +1,21 @@
 ---
 title: Implementatie van de productie met behulp van een AEM-publicatieservice - Aan de slag met AEM headless - GraphQL
 description: Meer informatie over AEM-auteur- en publicatieservices en het aanbevolen implementatiepatroon voor toepassingen zonder kop. In deze zelfstudie leert u omgevingsvariabelen te gebruiken om een eindpunt GraphQL dynamisch te wijzigen op basis van de doelomgeving. Leer om AEM voor het delen van bronnen tussen verschillende oorsprong (CORS) behoorlijk te vormen.
-version: cloud-service
-feature: Inhoudsfragmenten, GraphQL API
-topic: Koploos, inhoudsbeheer
+version: Cloud Service
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
-
 
 # Implementatie van productie met een AEM-publicatieservice
 

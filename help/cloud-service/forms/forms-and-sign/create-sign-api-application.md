@@ -5,22 +5,21 @@ solution: Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
-feature: Adaptieve Forms
-topic: Ontwikkeling
+version: Cloud Service
+feature: Adaptive Forms
+topic: Development
 kt: 7427
 thumbnail: 332436.jpg
-source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
+exl-id: 1eb43bdc-2718-4724-a5b8-d0f22cf84418
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 1%
+source-wordcount: '70'
+ht-degree: 0%
 
 ---
-
 
 # Adobe Sign API-toepassing maken
 
 U moet een API-toepassing op uw Adobe Sign maken om deze te kunnen integreren met uw Adobe Sign-platform. De API-toepassing fungeert als een vertegenwoordiger van een clienttoepassing en communiceert met het Adobe Sign-platform. U kunt de API toepassing op klant of partnerdomein tot stand brengen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332436?quality=12&learn=on)
-

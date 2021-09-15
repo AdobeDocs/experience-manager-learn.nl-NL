@@ -1,20 +1,20 @@
 ---
 title: Toegang tot AEM configureren als Cloud Service
-description: 'AEM als Cloud Service is de cloud-native manier om de AEM toepassingen te benutten en maakt als zodanig gebruik van Adobe IMS (Identity Management System) om het aanmelden van gebruikers, zowel beheerders als gewone gebruikers, bij de AEM Author-service te vergemakkelijken. Leer hoe Adobe IMS-gebruikers, gebruikersgroepen en productprofielen allemaal worden gebruikt in combinatie met AEM groepen en machtigingen om specifieke toegang tot AEM-auteur te bieden.  '
-version: cloud-service
-topic: Beheer, beveiliging
-feature: Gebruiker en groepen
+description: AEM als Cloud Service is de cloud-native manier om de AEM toepassingen te benutten en maakt als zodanig gebruik van Adobe IMS (Identity Management System) om het aanmelden van gebruikers, zowel beheerders als gewone gebruikers, bij de AEM Author-service te vergemakkelijken. Leer hoe u Adobe IMS-gebruikers, gebruikersgroepen en productprofielen gebruikt in combinatie met AEM groepen en machtigingen om specifieke toegang tot AEM-auteur te bieden.
+version: Cloud Service
+topic: Administration, Security
+feature: User and Groups
 role: Admin
 level: Beginner
 kt: 5882
 thumbnail: KT-5882.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
-
 
 # Toegang tot AEM configureren als Cloud Service
 
@@ -31,7 +31,7 @@ Leer hoe Adobe IMS-gebruikers, -groepen en -productprofielen samen met AEM groep
 
 ## Adobe IMS-gebruikers
 
-Gebruikers die toegang tot de AEM-auteurservice nodig hebben, worden beheerd als [Adobe IMS-gebruikers](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [Adobe AdminConsole](https://adminconsole.adobe.com). Leer over welke gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden beheerd.
+Gebruikers die toegang tot de AEM-auteurservice nodig hebben, worden beheerd als [Adobe IMS-gebruikers](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [AdminConsole](https://adminconsole.adobe.com). Leer wat Adobe IMS-gebruikers zijn en hoe ze in de Admin Console worden benaderd en beheerd.
 
 [Meer informatie over Adobe IMS-gebruikers](./adobe-ims-users.md)
 
@@ -43,7 +43,7 @@ Gebruikers die toegang krijgen tot de AEM-auteurservice moeten in logische groep
 
 ## Adobe IMS-productprofielen
 
-[Adobe IMS-productprofielen](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html), beheerd in  [Adobe AdminConsole](https://adminconsole.adobe.com), zijn het mechanisme dat  [Adobe IMS-](#adobe-ims-users) gebruikers toegang biedt tot aanmelding bij AEM Author-service met een basistoegangsniveau.
+[Adobe IMS-productprofielen](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html), beheerd in  [AdminConsole](https://adminconsole.adobe.com), zijn het mechanisme dat  [Adobe IMS-](#adobe-ims-users) gebruikers toegang biedt tot aanmelding bij de AEM Author-service met een basistoegangsniveau.
 
 + Met het productprofiel __AEM Users__ kunnen gebruikers alleen-lezen toegang krijgen tot AEM via lidmaatschap van AEM groep Medewerkers.
 + Met het productprofiel __AEM Beheerders__ hebben gebruikers volledig beheerbare toegang tot AEM.
@@ -58,7 +58,7 @@ Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, gebruikersgroepen
 
 ## Doorloop voor toegang en machtigingen
 
-Een verkorte analyse die Adobe IMS gebruikers, gebruikersgroepen en productprofielen in Adobe AdminConsole vormt, en hoe te hefboomwerking deze Adobe IMS abstracties in Auteur AEM om specifieke op groep gebaseerde toestemmingen te bepalen en te beheren.
+Een verkorte procedure waarbij u Adobe IMS-gebruikers, gebruikersgroepen en productprofielen configureert in Adobe AdminConsole en hoe u deze Adobe IMS-abstracties in AEM Author kunt gebruiken om specifieke op groepen gebaseerde machtigingen te definiëren en beheren.
 
 [AEM toegang en toestemmingen lopen door](./walk-through.md)
 

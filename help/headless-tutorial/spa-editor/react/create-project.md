@@ -2,20 +2,20 @@
 title: Project maken | Aan de slag met de AEM SPA Editor en reageren
 description: Leer hoe u een Adobe Experience Manager (AEM) Maven-project genereert als beginpunt voor een React-toepassing die is geïntegreerd met de AEM SPA Editor.
 sub-product: sites
-feature: SPA-editor AEM projectarchetype
-version: cloud-service
+feature: SPA Editor, AEM Project Archetype
+version: Cloud Service
 kt: 413
 thumbnail: 413-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1088'
 ht-degree: 0%
 
 ---
-
 
 # Project maken {#spa-editor-project}
 
@@ -92,7 +92,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
 
 ## Het project implementeren en bouwen
 
-Daarna, compileert, bouwt, en stelt de projectcode aan een lokaal geval van AEM op gebruikend Maven.
+Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van AEM op gebruikend Maven.
 
 1. Zorg ervoor dat een instantie van AEM lokaal wordt uitgevoerd op poort **4502**.
 1. Van de bevellijn navigeer in de `aem-guides-wknd-spa.react` projectfolder.

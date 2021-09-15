@@ -1,26 +1,26 @@
 ---
 title: Het Stijlsysteem gebruiken met AEM Sites
-seo-title: Het stijlsysteem gebruiken met Adobe Experience Manager, AEM Sites
+seo-title: Using the Style System with Adobe Experience Manager, AEM Sites
 description: Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
-seo-description: Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
-feature: Stijlsysteem
+seo-description: Adobe Experience Manager's Style System allows visual variations of components without back-end development, allowing better re-use of AEM components, and more versatile and efficient content authoring. The Style System, when used in conjunction with AEM's Core Components, template editor, and responsive layout, offers powerful capabilities to quickly compose rich experiences.
+feature: Style System
 topics: authoring, front-end-development
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 974
 thumbnail: 21750.jpg
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '196'
 ht-degree: 1%
 
 ---
-
 
 # Het stijlsysteem gebruiken {#using-the-style-system-with-aem-sites}
 

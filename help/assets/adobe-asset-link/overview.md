@@ -1,15 +1,15 @@
 ---
 title: Adobe Asset Link en AEM
 description: 'Adobe Experience Manager-middelen kunnen door ontwerpers en creatieve gebruikers worden gebruikt in hun favoriete Adobe Creative Cloud-bureaubladtoepassingen. Adobe Asset Link-extensie voor Adobe Creative Cloud for enterprise breidt de mogelijkheid uit om metagegevens van AEM elementen in Creative Cloud-gereedschappen, zoals Adobe XD, Photoshop, InDesign en Illustrator, te doorzoeken, te sorteren, voor te vertonen, te uploaden, uit te checken, te wijzigen, in te checken en weer te geven. '
-feature: Adobe-itemkoppeling
-version: 6.4, 6.5, cloud-service
-topic: Inhoudsbeheer
+feature: Adobe Asset Link
+version: 6.4, 6.5, Cloud Service
+topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Hoe Adobe Asset Link-verificatie werkt in de context van Adobe Identity Manageme
 
 1. De Adobe Asset Link-extensie vraagt via de Adobe Creative Cloud Desktop App om toestemming voor Adobe Identity Manage Service (IMS) en ontvangt bij succes een token voor de gebruiker.
 1. Adobe Asset Link-extensie maakt verbinding met AEM-auteur via HTTP(S), inclusief het token dat wordt verkregen in **Stap 1**, met behulp van het schema (HTTP/HTTPS), host en poort die in de JSON-instellingen van de extensie zijn opgegeven.
-1. De manager van de Authentificatie van de Teller van AEM haalt het token uit het verzoek en bevestigt het met Adobe IMS.
+1. De handler voor identiteitsverificatie aan toonder van AEM extraheert de token Betoonder uit de aanvraag en valideert deze met Adobe IMS.
 1. Nadat de Adobe IMS de token Betoonder heeft gevalideerd, wordt een gebruiker in AEM gemaakt (als deze nog niet bestaat) en worden de profiel- en groep-/lidmaatschapsgegevens van de Adobe IMS gesynchroniseerd. De AEM gebruiker krijgt een standaard AEM aanmeldingstoken, dat wordt teruggestuurd naar de extensie Adobe Asset Link als cookie in de HTTP(S)-reactie.
 1. Volgende interacties (d.w.z. zoeken, zoeken, in- en uitchecken, enz.) met de extensie Adobe Asset Link resulteert in HTTP(S)-aanvragen bij AEM-auteur die worden gevalideerd met het aanmeldingstoken AEM, met de standaard AEM Token Authentication Handler.
 

@@ -1,21 +1,21 @@
 ---
 title: Alleen voor vertoning (FPO)
-description: 'Adobe Experience Manager-middelen kunnen nu door ontwerpers en creatieve gebruikers worden gebruikt in hun favoriete Adobe Creative Cloud-bureaubladtoepassingen. Adobe Asset Link-extensie voor Adobe Creative Cloud Enterprise breidt de mogelijkheid uit om metagegevens van AEM middelen in Creative Cloud-gereedschappen, zoals Adobe Photoshop, InDesign en Illustrator, te zoeken en te zoeken, te sorteren, voor te vertonen, te uploaden, uit te checken, te wijzigen, in te checken en weer te geven. '
-sub-product: elementen
-feature: Adobe-itemkoppeling
-version: cloud-service
+description: Adobe Experience Manager-middelen kunnen nu door ontwerpers en creatieve gebruikers worden gebruikt in hun favoriete Adobe Creative Cloud-bureaubladtoepassingen. Adobe Asset Link-extensie voor Adobe Creative Cloud Enterprise breidt de mogelijkheid uit om metagegevens van AEM middelen in Creative Cloud-gereedschappen, zoals Adobe Photoshop, InDesign en Illustrator, te zoeken en te zoeken, te sorteren, voor te vertonen, te uploaden, uit te checken, te wijzigen, in te checken en weer te geven.
+sub-product: assets
+feature: Adobe Asset Link
+version: Cloud Service
 kt: 4916
 thumbnail: 34259.jpg
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 940608db-6e84-441a-b031-e8cf52459597
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
-
 
 # Alleen voor vertoning (FPO){#for-placement-only-rendition}
 

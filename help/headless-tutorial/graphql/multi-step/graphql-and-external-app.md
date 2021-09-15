@@ -1,7 +1,7 @@
 ---
 title: Vraag AEM het gebruiken van GraphQL van een externe app - Begonnen het worden met AEM Zwaartepunt - GrafiekQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Bekijk AEM GraphQL-API's in een voorbeeld van een WKND GraphQL React-app. Leer hoe deze externe toepassing GraphQL-aanroepen naar AEM maakt om zijn ervaring te versterken. Leer hoe u basisfoutafhandeling uitvoert.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
@@ -9,13 +9,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
 
 ---
-
 
 # Query AEM uitvoeren met GraphQL van een externe toepassing
 

@@ -5,19 +5,19 @@ topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
 activity: setup
-version: cloud-service
+version: Cloud Service
 kt: 6044
 thumbnail: 41244.jpg
 topic: Integrations
 role: Admin
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: dd6c17ae-8e08-4db3-95f9-081cc7dbd86e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Target Cloud Service-account maken {#adobe-target-cloud-service}
 
@@ -30,4 +30,3 @@ Dankzij deze integratie kan de AEM-auteur rechtstreeks communiceren met Adobe Ta
 >[!CAUTION]
 >
 >Er is een bekend probleem met de configuratie van Adobe Target Cloud Services die in de video wordt weergegeven. Totdat dit probleem is opgelost, voert u dezelfde stappen in de video uit, maar gebruikt u de [configuratie van oudere Adobe Target-Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
-

@@ -1,21 +1,21 @@
 ---
 title: Metadataprofielen
 description: Met metagegevensprofielen kunnen standaardmetagegevens automatisch worden toegepast op elementen in elementmappen, waardoor de belasting van het metagegevensbeheer voor AEM gebruikers wordt verminderd en de consistentie van metagegevens wordt vergroot.
-sub-product: elementen
-feature: Metagegevens
-version: cloud-service
+sub-product: assets
+feature: Metadata
+version: Cloud Service
 kt: 4984
 thumbnail: 33974.jpg
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 1e35da82-08e7-44c2-aec6-79d8ea74d556
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '62'
 ht-degree: 6%
 
 ---
-
 
 # Metadataprofielen
 

@@ -1,25 +1,25 @@
 ---
 title: Een toegangstoken maken
-description: Uitwisseling de Token van het Web JSON (JWT) met Adobe IMS APIs voor een AEM toegangstoken.
+description: U kunt de JSON Web Token (JWT) uitwisselen met Adobe IMS API's voor een AEM toegangstoken.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 feature: Document Services
-topic: Ontwikkeling
+topic: Development
 kt: 8185
 thumbnail: 8185.jpg
-source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 1%
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
 # Exchange JWT voor toegangstoken
 
 
-JWT die in de vorige stap wordt gecreeerd wordt geruild met Adobe IMS APIs voor een Token van de Toegang, dat dan kan worden gebruikt om tot AEM als Cloud Service toegang te hebben. Om een Token van de Toegang te verzoeken verzend een verzoek van de POST die JWT, client_id, client_geheime aan de IMS authentificatiedienst bevat.
+De JWT die in de vorige stap is gemaakt, wordt uitgewisseld met Adobe IMS API&#39;s voor een toegangstoken, dat vervolgens kan worden gebruikt voor toegang tot AEM als Cloud Service. Om een Token van de Toegang te verzoeken verzend een verzoek van de POST die JWT, client_id, client_geheime aan de IMS authentificatiedienst bevat.
 
 De volgende code is gebruikt om uitwisseling JWT voor Toegangstoken te produceren
 

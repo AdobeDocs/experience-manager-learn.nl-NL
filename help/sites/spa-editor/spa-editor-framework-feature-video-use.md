@@ -1,20 +1,20 @@
 ---
 title: De SPA Editor gebruiken met AEM Sites
 description: AEM het Editor-framework voor één pagina biedt auteurs de mogelijkheid om inhoud te bewerken voor een toepassing of SPA voor één pagina. Ontwikkelaars die React gebruiken of het kader van de Angular leiden tot een SPA en wijzen dan gebieden van de SPA aan AEM componenten toe, toestaand auteurs om vertrouwde het uitgeven van AEM Sites hulpmiddelen te gebruiken.
-version: 6.4, 6.5, cloud-service
+version: 6.4, 6.5, Cloud Service
 topic: SPA
 feature: SPA Editor
 role: Developer
 level: Beginner
 kt: 1047
 thumbnail: 22229.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
-
 
 # De SPA Editor gebruiken met AEM Sites {#using-the-spa-editor-with-aem-sites}
 

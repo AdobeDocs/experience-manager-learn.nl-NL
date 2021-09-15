@@ -1,24 +1,24 @@
 ---
 title: Overzicht van AEM en Adobe Target
 description: Leer hoe u persoonlijke ervaringen kunt maken en leveren met Adobe Experience Manager als Cloud Service en Adobe Target.
-feature: Ervaring Fragments, de Componenten van de Kern, de Laag van de Gegevens van de Adobe Cliënt
+feature: Experience Fragments, Core Components, Adobe Client Data Layer
 topics: integrations, personalization, administration, development
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6043
 thumbnail: 41241.jpg
 topic: Integrations
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
-
 
 # AEM en Adobe Target
 
@@ -47,5 +47,3 @@ In deze video bespreken we drie benaderingen voor het gebruik van AEM en Doel, e
    1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
    1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
    1. [De volledige webpaginabeleving aanpassen](./personalization-web-page.md)
-
-

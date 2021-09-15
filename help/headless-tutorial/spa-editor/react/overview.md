@@ -3,7 +3,7 @@ title: Aan de slag met de AEM SPA Editor en Reageren
 description: Maak uw eerste React Single Page Application (SPA) die in Adobe Experience Manager AEM met de WKND-SPA kan worden bewerkt. Leer hoe u een SPA maakt met het React JS-framework met AEM SPA Editor. Deze meerdelige zelfstudie doorloopt de implementatie van een React-toepassing voor een fictief levensstijlmerk, de WKND. In de zelfstudie wordt het einde van de SPA en de integratie met AEM besproken.
 sub-product: sites
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -13,13 +13,13 @@ feature: SPA Editor
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
-
 
 # Uw eerste SPA Reageren in AEM maken {#overview}
 

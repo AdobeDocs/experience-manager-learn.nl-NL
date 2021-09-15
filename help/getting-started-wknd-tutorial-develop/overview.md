@@ -3,7 +3,7 @@ title: Aan de slag met AEM Sites - WKND-zelfstudie
 description: Aan de slag met AEM Sites - WKND-zelfstudie. De WKND-zelfstudie is een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog geen ervaring hebben met Adobe Experience Manager. De zelfstudie doorloopt de implementatie van een AEM site voor een fictieve levensstijl, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
 sub-product: sites
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -12,16 +12,16 @@ mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
-topic: Inhoudsbeheer, ontwikkeling
+topic: Content Management, Development
 role: Developer
 level: Beginner
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met AEM Sites - WKND-zelfstudie {#introduction}
 

@@ -1,20 +1,20 @@
 ---
 title: Basisbewerkingen
 description: Leer meer over de basisbewerkingen van AEM Assets, zoals het maken van mappen en het uploaden, kopiëren, verplaatsen en verwijderen van middelen.
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User
 level: Beginner
-version: cloud-service
+version: Cloud Service
 kt: 4299
 thumbnail: 32044.jpg
-topic: Inhoudsbeheer
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+topic: Content Management
+exl-id: d5b25fcc-4c8d-4720-a14e-eaf768873415
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
-
 
 # Basisbewerkingen
 

@@ -1,24 +1,24 @@
 ---
 title: Asset compute-workers integreren met AEM verwerkingsprofielen
 description: AEM als Cloud Service integreert met de arbeiders van de Asset compute die aan Adobe I/O Runtime via AEM Assets-verwerkingsprofielen worden opgesteld. Verwerkingsprofielen worden geconfigureerd in de service Auteur om specifieke elementen te verwerken met behulp van aangepaste workers en de bestanden die door de workers worden gegenereerd, op te slaan als elementuitvoeringen.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
-
 
 # Integreren met AEM verwerkingsprofielen
 

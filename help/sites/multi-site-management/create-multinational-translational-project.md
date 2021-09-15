@@ -1,26 +1,26 @@
 ---
 title: Een meertalig vertaalproject maken
-seo-title: Een meertalig vertaalproject maken
-description: 'Leer hoe u een meertalig vertaalproject voor uw Taalkopie van AEM projectconsole maakt, bewerkt en beheert '
-seo-description: Leer hoe u een meertalig vertaalproject voor uw Taalkopie van AEM projectconsole maakt, bewerkt en beheert
-feature: Taalkopie, beheer van meerdere sites
+seo-title: Create a multilingual Translation Project
+description: Leer hoe u een meertalig vertaalproject voor uw Taalkopie van AEM projectconsole maakt, bewerkt en beheert
+seo-description: Learn how to create, edit and manage a multi-language translation project for your Language Copy from AEM's Project console
+feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 5368
 thumbnail: 36485.jpg
-topic: Lokalisatie
+topic: Localization
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: eab14e1a-a3d9-420f-8b5c-5d37f30c79b1
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
-
 
 # Een meertalig vertaalproject maken {#create-multi-language-translation-projects}
 

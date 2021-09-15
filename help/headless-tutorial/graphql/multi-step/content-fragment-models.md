@@ -1,21 +1,21 @@
 ---
 title: Modellen voor inhoudsfragmenten definiëren - Aan de slag met AEM zonder kop - GraphQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u inhoud modelleert en een schema samenstelt met Content Fragment Models in AEM. Beoordeel bestaande modellen en maak een nieuw model. Leer over de verschillende gegevenstypes die kunnen worden gebruikt om een schema te bepalen.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
-feature: Inhoudsfragmenten, GraphQL API
-topic: Koploos, inhoudsbeheer
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
-
 
 # Modellen voor inhoudsfragmenten definiëren {#content-fragment-models}
 

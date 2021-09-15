@@ -1,24 +1,24 @@
 ---
 title: Problemen met uitbreidbaarheid van Asset compute voor AEM Assets oplossen
 description: Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de resoluties, die kunnen optreden bij het ontwikkelen en implementeren van aangepaste Asset compute-workers voor AEM Assets.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, metadata, development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
-
 
 # Problemen met uitbreidbaarheid van Asset compute oplossen
 
@@ -166,5 +166,3 @@ Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waa
 + __Fout:__ Middelverwerking mislukt badge weergegeven op element
 + __Oorzaak:__ er is een fout opgetreden bij de uitvoering van de aangepaste worker
 + __Resolutie:__ volg de instructies over het  [opsporen van fouten in Adobe I/O Runtime-](./test-debug/debug.md#aio-app-logs) activiteiten  `aio app logs`.
-
-

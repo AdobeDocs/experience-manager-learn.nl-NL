@@ -1,23 +1,23 @@
 ---
 title: Andere tools voor foutopsporing AEM SDK
 description: Een verscheidenheid van andere hulpmiddelen kan helpen bij het zuiveren van de lokale snelle start van AEM SDK.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 11fb83e9-dbaf-46e5-8102-ae8cc716c6ba
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 2%
+source-wordcount: '217'
+ht-degree: 1%
 
 ---
-
 
 # Andere tools voor foutopsporing AEM SDK
 
@@ -54,4 +54,3 @@ Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvra
 Foutopsporing van QueryBuilder bevindt zich op de volgende locatie:
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
-

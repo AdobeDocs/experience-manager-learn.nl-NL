@@ -1,24 +1,24 @@
 ---
 title: Verifiëren voor AEM als Cloud Service van een externe toepassing
 description: Onderzoek hoe een externe toepassing programmatically met AEM als Cloud Service over HTTP kan voor authentiek verklaren en in wisselwerking staan gebruikend de Tokens van de Toegang van de Lokale Ontwikkeling en de Credentials van de Dienst.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: API's
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330460.jpg
-topic: Hoofdloos, integratie
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
-
 
 # Token-gebaseerde authentificatie aan AEM als Cloud Service
 
@@ -34,7 +34,7 @@ Zorg ervoor dat het volgende is geïnstalleerd voordat u deze zelfstudie gaat vo
 
 1. Toegang tot AEM als Cloud Service-omgeving (bij voorkeur een ontwikkelomgeving of een Sandbox-programma)
 1. Lidmaatschap in de AEM als de Diensten van de Auteur van de Cloud Service AEM het Profiel van het Product van de Beheerder
-1. Lidmaatschap in, of toegang tot, uw Adobe IMS Org Beheerder (zij zullen een eenmalig initialisering van [de Referenties van de Dienst](./service-credentials.md) moeten uitvoeren)
+1. Lidmaatschap in of toegang tot uw Adobe IMS Org Administrator (deze moet een eenmalige initialisatie van de [Servicereferentials](./service-credentials.md) uitvoeren)
 1. De nieuwste [WKND-site](https://github.com/adobe/aem-guides-wknd) geïmplementeerd in uw Cloud Service-omgeving
 
 ## Overzicht van externe toepassing
@@ -67,7 +67,7 @@ De Tokens van de Toegang van de Lokale Ontwikkeling worden geproduceerd voor een
 
 ## Servicereferenties
 
-De geloofsbrieven van de dienst zijn de bonafide geloofsbrieven die in om het even welke niet ontwikkelingsscenario&#39;s - het duidelijkst productie - worden gebruikt die een externe toepassing of de capaciteit van het systeem om aan voor authentiek te verklaren en met, als Cloud Service over HTTP in wisselwerking te staan AEM vergemakkelijken. De geloofsbrieven van de dienst zelf worden niet verzonden naar AEM voor authentificatie, in plaats daarvan gebruikt de externe toepassing deze om JWT te produceren, die met APIs _for_ van Adobe IMS een toegangstoken wordt geruild, die dan kan worden gebruikt om HTTP- verzoeken om als Cloud Service te AEM voor authentiek te verklaren.
+De geloofsbrieven van de dienst zijn de bonafide geloofsbrieven die in om het even welke niet ontwikkelingsscenario&#39;s - het duidelijkst productie - worden gebruikt die een externe toepassing of de capaciteit van het systeem om aan voor authentiek te verklaren en met, als Cloud Service over HTTP in wisselwerking te staan AEM vergemakkelijken. De Referentielijsten van de dienst zelf worden niet verzonden naar AEM voor authentificatie, in plaats daarvan gebruikt de externe toepassing deze om JWT te produceren, die met APIs _for_ van Adobe IMS een toegangstoken wordt geruild, die dan kan worden gebruikt om HTTP- verzoeken om als Cloud Service te verifiëren AEM.
 
 + [Hoe te om de Referenties van de Dienst te gebruiken](./service-credentials.md)
 

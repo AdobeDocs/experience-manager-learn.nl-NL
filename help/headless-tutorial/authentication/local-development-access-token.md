@@ -1,24 +1,24 @@
 ---
 title: Toegangstoken lokale ontwikkeling
 description: AEM de Tokens van de Toegang van de Lokale Ontwikkeling worden gebruikt om de ontwikkeling van integratie met AEM als Cloud Service te versnellen die programmatically met de Auteur van AEM of de Publish diensten over HTTP in wisselwerking staan.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: API's
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330477.jpg
-topic: Hoofdloos, integratie
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
-
 
 # Toegangstoken lokale ontwikkeling
 

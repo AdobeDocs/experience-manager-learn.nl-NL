@@ -1,20 +1,20 @@
 ---
 title: Gegevens analyseren met Analysis Workspace
 description: Leer hoe u gegevens die vanaf een Adobe Experience Manager-site zijn vastgelegd, kunt toewijzen aan maateenheden en dimensies in Adobe Analytics-rapportensuites. Leer hoe u een gedetailleerd rapportdashboard maakt met de Analysis Workspace-functie van Adobe Analytics.
-version: cloud-service
+version: Cloud Service
 topic: Integrations
-feature: Gegevenslaag Adobe-client
+feature: Adobe Client Data Layer
 role: User
 level: Intermediate
 kt: 6409
 thumbnail: KT-6296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
-
 
 # Gegevens analyseren met Analysis Workspace
 
@@ -265,4 +265,3 @@ Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (e
 ## Gefeliciteerd!
 
 U hebt net geleerd hoe u gegevens die zijn vastgelegd vanaf een Adobe Experience Manager-site kunt toewijzen aan maateenheden en dimensies in Adobe Analytics-rapportaereeksen, een classificatie voor de metriek kunt uitvoeren en een gedetailleerd rapportdashboard kunt maken met de Analysis Workspace-functie van Adobe Analytics.
-

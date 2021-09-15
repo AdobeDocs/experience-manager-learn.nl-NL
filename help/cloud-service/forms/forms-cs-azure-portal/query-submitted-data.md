@@ -1,18 +1,19 @@
 ---
 title: AEM Forms-gegevens doorzoeken in Azure Blob Storage
 description: Leer hoe u met de metagegevensservice van het formuliergegevensmodel query's uitvoert voor door AEM Forms verzonden gegevens in Azure Blob Storage.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: cloud-service
+version: Cloud Service
 topic: Integrations
 thumbnail: 335717.jpg
 kt: 8370
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 45738615-4f15-43b0-bdaa-8b72288925ee
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 1%
+source-wordcount: '49'
+ht-degree: 0%
 
 ---
 
@@ -21,5 +22,3 @@ ht-degree: 1%
 Leer hoe u via de metagegevensservice van AEM Forms query&#39;s uitvoert op Adaptive Form-gegevens in Azure Blob Storage.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335717/?quality=12&learn=on)
-
-

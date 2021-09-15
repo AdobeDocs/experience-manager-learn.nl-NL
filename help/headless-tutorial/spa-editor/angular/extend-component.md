@@ -2,10 +2,10 @@
 title: Een component uitbreiden | Aan de slag met de AEM SPA Editor en Angular
 description: Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van de SPA van de AEM moet worden gebruikt. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden. Leer om het delegatiepatroon te gebruiken voor het uitbreiden van Sling Models en eigenschappen van het Verkopen van Middel.
 sub-product: sites
-feature: SPA Editor, kerncomponenten
+feature: SPA Editor, Core Components
 doc-type: tutorial
 topics: development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 5871
@@ -13,13 +13,13 @@ thumbnail: 5871-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1961'
 ht-degree: 0%
 
 ---
-
 
 # Een kerncomponent uitbreiden {#extend-component}
 

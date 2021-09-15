@@ -4,7 +4,7 @@ description: Leer hoe meerdere weergaven in de SPA kunnen worden ondersteund doo
 sub-product: sites
 feature: SPA Editor
 topics: development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 4988
@@ -12,13 +12,13 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1619'
 ht-degree: 0%
 
 ---
-
 
 # Navigatie en routering toevoegen {#navigation-routing}
 
@@ -329,4 +329,3 @@ Daarna, inspecteer hoe de Router van het Reageren met de SPA wordt geïntegreerd
 ## Gefeliciteerd! {#congratulations}
 
 U hebt geleerd hoe meerdere weergaven in de SPA kunnen worden ondersteund door de SPA Editor SDK toe te wijzen aan AEM pagina&#39;s. De dynamische navigatie is uitgevoerd gebruikend React Router en toegevoegd aan de `Header` component.
-

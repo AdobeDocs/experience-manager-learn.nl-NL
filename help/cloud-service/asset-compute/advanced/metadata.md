@@ -1,24 +1,24 @@
 ---
 title: Een Asset compute metagegevensworker ontwikkelen
 description: Leer hoe u een Asset compute-metagegevensworker maakt die de meest gebruikte kleuren in een afbeeldingselement afleidt en de namen van de kleuren in AEM terugschrijft naar de metagegevens van het element.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: metadata, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1434'
 ht-degree: 0%
 
 ---
-
 
 # Een Asset compute metagegevensworker ontwikkelen
 
@@ -27,7 +27,7 @@ De arbeiders van de Asset compute van de douane kunnen XMP (XML) gegevens produc
 Vaak voorkomende gevallen van gebruik zijn:
 
 + Integraties met systemen van derden, zoals een PIM (Product Information Management System), waar aanvullende metagegevens moeten worden opgehaald en opgeslagen op het middel
-+ Integratie met Adobe-services, zoals Content and Commerce AI, om metagegevens over elementen te vergroten met extra leerkenmerken voor computers
++ Integratie met Adobe-services, zoals Content and Commerce AI, om metagegevens over elementen te verfraaien met extra leerkenmerken voor computers
 + Metagegevens over het element afgeleid van zijn binair getal en opslaan als metagegevens van elementen in AEM als Cloud Service
 
 ## Wat u gaat doen

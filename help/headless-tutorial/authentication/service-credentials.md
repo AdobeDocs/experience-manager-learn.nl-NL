@@ -1,24 +1,24 @@
 ---
 title: Servicereferenties
 description: AEM Service Credentials worden gebruikt om externe toepassingen, systemen en services te helpen programmatisch te communiceren met AEM Author of Publish services via HTTP.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: API's
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330519.jpg
-topic: Hoofdloos, integratie
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: b902ced3d7f7cf827d0a487bf741ff370f7c1f04
+exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
-
 
 # Servicereferenties
 
@@ -62,7 +62,7 @@ __Dit is een eenmalige initialisatie per AEM als een Cloud Service-omgeving__
 
 ![AEM Developer Console - Integratie - Inschrijvingen voor service](./assets/service-credentials/developer-console.png)
 
-Zodra de AEM als de Referentials van de Dienst van het milieu van de Cloud Service zijn geïnitialiseerd, kunnen andere AEM ontwikkelaars in uw Adobe IMS Org hen downloaden.
+Nadat de AEM als servicegegevens van de Cloud Service-omgeving zijn geïnitialiseerd, kunnen andere AEM ontwikkelaars van uw Adobe IMS-organisatie deze downloaden.
 
 ### Referenties van service downloaden
 
@@ -93,7 +93,7 @@ Voor eenvoud, gaat dit leerprogramma de Credentials van de Dienst binnen via de 
 
 ## Servicereferenties gebruiken
 
-De servicekredieten, een volledig samengesteld JSON-object, zijn niet hetzelfde als de JWT of het toegangstoken. In plaats daarvan worden de Referenties van de Dienst (die een privé sleutel bevatten) gebruikt om JWT te produceren, die met Adobe IMS APIs voor een toegangstoken wordt geruild.
+De servicekredieten, een volledig samengesteld JSON-object, zijn niet hetzelfde als de JWT of het toegangstoken. In plaats daarvan worden de servicekredieten (die een persoonlijke sleutel bevatten) gebruikt om een JWT te genereren, die wordt uitgewisseld met Adobe IMS API&#39;s voor een toegangstoken.
 
 ![Servicereferenties - externe toepassing](assets/service-credentials/service-credentials-external-application.png)
 
@@ -102,7 +102,7 @@ De servicekredieten, een volledig samengesteld JSON-object, zijn niet hetzelfde 
 1. De externe toepassing leest in de Referenties van de Dienst van een veilige plaats
 1. De externe toepassing gebruikt informatie van de Referenties van de Dienst om een Token te construeren JWT
 1. De JWT Token wordt verzonden naar Adobe IMS om voor een toegangstoken te ruilen
-1. Adobe IMS keert een toegangstoken terug dat kan worden gebruikt om tot AEM als Cloud Service toegang te hebben
+1. Adobe IMS retourneert een toegangstoken dat kan worden gebruikt voor toegang tot AEM als Cloud Service
    + Voor toegangstokens kan een vervaldatum worden aangevraagd. Het is best om het leven van het toegangstoken kort te houden, en te verfrissen wanneer nodig.
 1. De externe toepassing doet HTTP-verzoeken om als Cloud Service te AEM, waarbij het toegangstoken als een token Drager wordt toegevoegd aan de header HTTP-aanvragen voor autorisatie.
 1. AEM als Cloud Service ontvangt het HTTP- verzoek, verklaart het verzoek voor authentiek, en voert het werk uit dat door het HTTP- verzoek wordt gevraagd, en keert een reactie van HTTP terug naar de Externe Toepassing
@@ -146,7 +146,7 @@ Deze voorbeeldtoepassing is gebaseerd op Node.js, dus is het beter om [@adobe/jw
 
 1. Werk `getAccessToken(..)` bij om de JSON dossierinhoud te inspecteren en te bepalen als het een Lokaal Token van de Toegang van de Ontwikkeling of de Referenties van de Dienst vertegenwoordigt. Dit kan gemakkelijk worden bereikt door het bestaan van het `.accessToken` bezit te controleren, dat slechts voor de Token JSON van de Toegang van de Lokale Ontwikkeling bestaat.
 
-   Als Service Credentials is opgegeven, genereert de toepassing een JWT en ruilt deze met Adobe IMS voor een toegangstoken. We gebruiken de [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) functie die een JWT genereert en deze in één functieaanroep ruilt voor een toegangstoken.  `auth(...)`  De parameters voor `auth(..)` zijn een [JSON-object dat bestaat uit specifieke informatie](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) die beschikbaar is via de Service Credentials JSON, zoals hieronder in de code wordt beschreven.
+   Als Service Credentials is opgegeven, genereert de toepassing een JWT en wisselt deze uit met Adobe IMS voor een toegangstoken. We gebruiken de [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) functie die een JWT genereert en deze in één functieaanroep ruilt voor een toegangstoken.  `auth(...)`  De parameters voor `auth(..)` zijn een [JSON-object dat bestaat uit specifieke informatie](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) die beschikbaar is via de Service Credentials JSON, zoals hieronder in de code wordt beschreven.
 
    ```javascript
     async function getAccessToken(developerConsoleCredentials) {
@@ -254,4 +254,3 @@ De output aan de terminal zal als kijken:
 ## Gefeliciteerd!
 
 Nu wij programmatically AEM als Cloud Service gebruikend een lokaal toegangstoken van de ontwikkelingstoegang, evenals een productie-klaar dienst-aan-dienst toegangstoken hebben betreden!
-

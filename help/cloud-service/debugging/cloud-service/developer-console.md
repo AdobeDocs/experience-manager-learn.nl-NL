@@ -1,24 +1,24 @@
 ---
 title: Developer Console
 description: AEM als Cloud Service verstrekt een Console van de Ontwikkelaar voor elk milieu dat diverse details van de lopende AEM dienst blootstelt die in het zuiveren nuttig zijn.
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 048a37a9813e7b61ff069c4606b8d23cc6b6844f
+exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
-
 
 # Fouten opsporen in AEM als Cloud Service met de ontwikkelaarsconsole
 
@@ -47,7 +47,7 @@ Als er een status met 401 onbevoegde fout wordt genegeerd, betekent dit dat uw g
 Het 401-probleem met onbevoegden oplossen:
 
 1. Zorg ervoor dat uw gebruiker lid is van het juiste Adobe IMS-productprofiel (AEM beheerders of AEM gebruikers) voor de aan de Developer Console gekoppelde AEM als een Cloud Service Product-instantie.
-   + Houd er rekening mee dat Developer Console toegang heeft tot 2 Adobe IMS-productinstanties; de AEM als auteur van de Cloud Service en publiceer productinstanties, zodat de correcte Profiles van het Product worden gebruikt afhankelijk van welke de dienstrij toegang via de Console van de Ontwikkelaar vereist.
+   + Houd er rekening mee dat Developer Console toegang heeft tot 2 Adobe IMS-productinstanties. de AEM als auteur van de Cloud Service en publiceer productinstanties, zodat de correcte Profiles van het Product worden gebruikt afhankelijk van welke de dienstrij toegang via de Console van de Ontwikkelaar vereist.
 1. Meld u aan bij de AEM als Cloud Service (Auteur of Publiceren) en controleer of de gebruiker en de groepen correct zijn gesynchroniseerd in AEM.
    + De Console van de ontwikkelaar vereist dat uw gebruikersverslag in de overeenkomstige AEM de dienstrij voor het voor authentiek verklaart aan die de dienstrij wordt gecreeerd.
 1. Wis uw browservercookies en de status van de toepassing (lokale opslag) en meld u opnieuw aan in de Developer Console. Op deze manier zorgt u ervoor dat het toegangstoken dat de Developer Console gebruikt, correct en niet verlopen is.

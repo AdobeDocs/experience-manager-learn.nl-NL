@@ -1,24 +1,24 @@
 ---
 title: Een lokale ontwikkelomgeving instellen voor uitbreidbaarheid van de Asset compute
 description: Het ontwikkelen van de arbeiders van de Asset compute, die toepassingen Node.js JavaScript zijn, vereist specifieke ontwikkelingshulpmiddelen die van traditionele AEM ontwikkeling verschillen, die zich van Node.js en diverse npm modules aan de Desktop van de Docker en Code van Microsoft Visual Studio uitstrekken.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: fd72f3c85db8a56ec8abfd1609da53492ee54be2
+exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
-
 
 # Lokale ontwikkelomgeving instellen
 

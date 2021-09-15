@@ -2,11 +2,11 @@
 user-guide-title: Aan de slag met AEM headless
 user-guide-description: Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met AEM headless.
 breadcrumb-title: Zelfstudie voor AEM zonder koptekst
-version: cloud-service
+version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%

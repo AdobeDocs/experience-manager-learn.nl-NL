@@ -1,26 +1,26 @@
 ---
 title: Basisverwerking in AEM Sites
-seo-title: Een nieuwe pagina maken in Adobe Experience Manager Sites
+seo-title: Create a new page in Adobe Experience Manager Sites
 description: De volgende video biedt een overzicht van de basisafhandeling bij gebruik van de AEM-auteuromgeving. Het gebruikt de console van Plaatsen als basis.
-seo-description: De volgende video biedt een overzicht van de basisafhandeling bij gebruik van de AEM-auteuromgeving. Het gebruikt de console van Plaatsen als basis.
-feature: Pagina-editor, bewerkbare sjablonen
+seo-description: The following video provides an overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 4495
 thumbnail: 31784.jpg
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 896d378c-c20e-4343-b592-277f4c71065e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '334'
 ht-degree: 4%
 
 ---
-
 
 # AEM Sites UI en navigatie {#basic-handling-aem-sites}
 

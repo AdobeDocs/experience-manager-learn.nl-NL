@@ -2,9 +2,9 @@
 title: SPA Editor-project | Aan de slag met de AEM SPA Editor en Angular
 description: Leer hoe u een Adobe Experience Manager (AEM) Maven-project gebruikt als beginpunt voor een Angular-toepassing die is geïntegreerd met de AEM SPA Editor.
 sub-product: sites
-feature: SPA-editor AEM projectarchetype
+feature: SPA Editor, AEM Project Archetype
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -13,13 +13,13 @@ thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
-
 
 # SPA Editor-project {#create-project}
 
@@ -94,7 +94,7 @@ Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand
 
 ## Het project bouwen
 
-Daarna, compileert, bouwt, en stelt de projectcode aan een lokaal geval van AEM op gebruikend Maven.
+Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van AEM op gebruikend Maven.
 
 1. Zorg ervoor dat een instantie van AEM lokaal wordt uitgevoerd op poort **4502**.
 2. Van de terminal van de bevellijn verifieert dat Maven geïnstalleerd is:

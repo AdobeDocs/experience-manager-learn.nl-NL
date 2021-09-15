@@ -1,30 +1,30 @@
 ---
 title: Rekeningen en diensten voor uitbreidbaarheid van de Asset compute instellen
 description: Voor het ontwikkelen van Asset compute-workers hebt u toegang tot accounts en services nodig, waaronder AEM als Cloud Service, Adobe Project Firefly en cloudopslag die door Microsoft of Amazon wordt geleverd.
-feature: asset compute microservices
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
-topic: Integratie, ontwikkeling
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '627'
 ht-degree: 1%
 
 ---
-
 
 # Accounts en services instellen
 
 Deze zelfstudie vereist dat de volgende services worden geleverd en toegankelijk zijn via de Adobe ID van de leerling.
 
-Alle services van de Adobe moeten toegankelijk zijn via dezelfde Adobe Org, die uw Adobe ID gebruikt.
+Alle Adobe-services moeten toegankelijk zijn via dezelfde Adobe Org, die uw Adobe ID gebruikt.
 
 + [AEM as a Cloud Service](#aem-as-a-cloud-service)
 + [Adobe Project FireFly](#adobe-project-firefly)
