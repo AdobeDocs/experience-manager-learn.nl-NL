@@ -4,10 +4,10 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM als Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: f22a37f80a9c9698718e1c75576b7ca705e658fc
+source-git-commit: 598d00578e5179f76b6f309c5c14dc7b1634f051
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 13%
+source-wordcount: '561'
+ht-degree: 14%
 
 ---
 
@@ -92,17 +92,18 @@ ht-degree: 13%
 
    + Overstappen naar AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
       + [Inleiding](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
+      + [Onboarding](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
+      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA en CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [AEM Moderniseringsinstrumenten](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernisering opslagplaats](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [Onboarding](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
-      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
+      + [asset compute microservices](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
+      + [Zoeken en indexeren](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Inhoud migreren {#content-migration}
          + [Bulkimportservice](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [De tool Content Transfer](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
-      + [Zoeken en indexeren](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
-      + [asset compute microservices](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [Problemen oplossen](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms als Cloud Service {#aem-forms}
          + [Inleiding](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Digitale inschrijving](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
