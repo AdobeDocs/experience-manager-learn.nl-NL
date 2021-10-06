@@ -1,12 +1,12 @@
 ---
 user-guide-title: Tutorials voor Adobe Experience Manager as a Cloud Service
-user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manager als Cloud Service.
-breadcrumb-title: AEM als Cloud Service Tutorials
+user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manager as a Cloud Service.
+breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: 598d00578e5179f76b6f309c5c14dc7b1634f051
+source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '564'
 ht-degree: 14%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 14%
 
 + [Overzicht](./overview.md)
 + Inleiding tot AEM as a Cloud Service{#introduction}
-   + [Wat is AEM als Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [Wat is AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolutie](./introduction/evolution.md)
    + [Architectuur](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
@@ -64,6 +64,8 @@ ht-degree: 14%
       + [OSGi-componentlevenscyclus](./developing/osgi-services/lifecycle.md)
       + [Basisprincipes van OSGi-configuraties](./developing/osgi-services/configurations.md)
       + [OSGi Configurations die OCD gebruiken](./developing/osgi-services/configurations-ocd.md)
+   + Geavanceerd{#advanced}
+      + [Servicegebruikers](./developing/advanced/service-users.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Foutopsporing AEM{#debugging}
    + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
@@ -73,7 +75,7 @@ ht-degree: 14%
       + [OSGi-webconsole](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Verzendgereedschappen](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Ander gereedschap](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Foutopsporing AEM als Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Foutopsporing AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Overzicht](./debugging/cloud-service/overview.md)
       + [Logboeken](./debugging/cloud-service/logs.md)
       + [Opbouwen en implementeren](./debugging/cloud-service/build-and-deployment.md)
@@ -104,7 +106,7 @@ ht-degree: 14%
          + [Bulkimportservice](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [De tool Content Transfer](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
       + [Problemen oplossen](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
-      + AEM Forms als Cloud Service {#aem-forms}
+      + AEM Forms as a Cloud Service {#aem-forms}
          + [Inleiding](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Digitale inschrijving](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
          + [Communicatie](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
