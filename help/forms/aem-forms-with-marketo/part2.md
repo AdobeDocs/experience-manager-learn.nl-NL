@@ -1,18 +1,18 @@
 ---
 title: AEM Forms met Marketo (Deel 2)
 description: Zelfstudie voor de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
-feature: Adaptief Forms, formuliergegevensmodel
+feature: Adaptive Forms, Form Data Model
 version: 6.3,6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
+source-git-commit: 020852f16de0cdb1e17e19ad989dabf37b7f61f5
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
-
 
 # Marketo-verificatieservice
 
@@ -67,7 +67,7 @@ public interface MarketoService {
 }
 ```
 
-De volgende code is van de dienst die access_token terugkeert die in het maken van REST API vraag moet worden gebruikt. De code in deze dienst heeft toegang tot de configuratieparameters nodig om de vraag van de GET te maken. Aangezien u kunt zien wij client_id, client_gehechtheid in GET URL overgaan om access_token te produceren. Dit access_token wordt vervolgens geretourneerd aan de aanroepende toepassing.
+The following code is of the service which returns the access_token that is to be used in making the REST API calls. The code in this service access the configuration parameters needed to make the GET call. Aangezien u kunt zien wij client_id, client_gehechtheid in GET URL overgaan om access_token te produceren. Dit access_token wordt vervolgens geretourneerd aan de aanroepende toepassing.
 
 ```java
 package com.marketoandforms.core.impl;
@@ -128,7 +128,7 @@ MarketoConfigurationService config;
 
 De scherm-schot hieronder toont de configuratieeigenschappen die moeten worden geplaatst. Deze configuratieeigenschappen worden gelezen in de code hierboven vermeld om access_token te krijgen
 
-![config](assets/marketoconfig.jfif)
+![config](assets/configuration-settings.png)
 
 ### Configuratie
 
@@ -200,4 +200,4 @@ public class MarketoConfigurationService {
 
 1. De bundel op uw AEM server bouwen en implementeren.
 1. [Verwijs uw browser aan ](http://localhost:4502/system/console/configMgr) configMGrand onderzoek naar &quot;Configuratie van de Dienst van de Credentials van Marketo&quot;
-1. Geef de juiste eigenschappen op die specifiek zijn voor uw Marketo-instantie
+1. Specify the appropriate properties specific to your Marketo instance
