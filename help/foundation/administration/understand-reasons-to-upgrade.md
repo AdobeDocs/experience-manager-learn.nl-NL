@@ -1,21 +1,21 @@
 ---
 title: Redenen voor upgrade begrijpen
-description: Een uitsplitsing op hoog niveau van de belangrijkste functies voor klanten die een upgrade naar de nieuwste versie van Adobe Experience Manager overwegen.
+description: Een uitsplitsing op hoog niveau van de belangrijkste functies voor klanten die een upgrade naar de nieuwste versie van Adobe Experience Manager 6 overwegen.
 version: 6.5
 topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
+source-git-commit: 278433e7d9a2d524198efcebae336dca01a15259
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 1%
 
 ---
 
-
 # Redenen voor upgrade begrijpen
 
-Een uitsplitsing op hoog niveau van de belangrijkste functies voor klanten die een upgrade naar de nieuwste versie van Adobe Experience Manager overwegen.
+Een uitsplitsing op hoog niveau van de belangrijkste functies voor klanten die een upgrade naar de nieuwste versie van Adobe Experience Manager 6 overwegen.
 
 ## Belangrijke functies voor upgrades naar AEM 6.5
 
@@ -62,7 +62,7 @@ AEM blijft bouwen aan zijn integratie met slimme technologieën, door gebruik te
 
 ### Integrations
 
-AEM groeit zijn vermogen om met andere diensten van de Adobe te integreren:
+AEM groeit zijn vermogen om met andere diensten van Adobe te integreren:
 
 + **Ervaar Fragmentaties** verdiept hun integratie met  **Adobe** Targetby die  **Uitvoer als** JSONaan Adobe Target steunt en de capaciteit om de op fragment-Gebaseerde  **aanbiedingen van de Ervaring van** Adobe Target **te** schrappen.
 
@@ -327,8 +327,8 @@ Hieronder ziet u een matrix van de belangrijkste beveiligingsfuncties die AEM bi
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>Ondersteuning </strong> <strong></strong></a>
-            <br> CORSsupportCross-Origin Resource Sharing voor meer toepassingsflexibiliteit.</td>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong></strong> <strong></strong></a>
+            <br> CORSsupportCross-Origin Resource Sharing-ondersteuning voor grotere toepassingsflexibiliteit.</td>
         <td></td>
         <td></td>
         <td></td>
@@ -847,8 +847,8 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Adobe Imaging Library</a>:</strong>
-                <br> Photoshop and Acrobat PDF libraries used for high-quality file manipulation.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Adobe-afbeeldingsbibliotheek</a>:</strong>
+                <br> Photoshop- en Acrobat-PDF-bibliotheken die worden gebruikt voor bestanden van hoge kwaliteit.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -907,10 +907,10 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Afbeeldingen</a>:</strong>
             Dynamisch afbeeldingen leveren in verschillende formaten en formaten, inclusief Slim uitsnijden.</td>
             <td> </td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔<sup>+</sup></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
         </tr>
@@ -1121,7 +1121,7 @@ Hieronder ziet u een matrix met belangrijke AEM Forms Add-on-functies die AEM bi
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/aem-forms-app.html" target="_blank">AEM Forms App</a>:</strong>
-            toestaan voor online/offline verwerking van formulieren in een app op iOS, Android of Windows.</td>
+            toestaan dat online- of offlineformulieren worden verwerkt in een app op iOS, Android of Windows.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -1153,8 +1153,8 @@ Hieronder ziet u een matrix met belangrijke AEM Forms Add-on-functies die AEM bi
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">AEM Forms-documentbeveiliging</a>:</strong>
-            veilige toegang tot en machtiging voor PDF- en Office-documenten.
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">Beveiliging</a> van AEM Forms-documenten:</strong>
+            veilige toegang tot en machtiging voor PDF en Office-documenten.
             </td>
             <td> </td>
             <td>✔</td>
@@ -1292,7 +1292,7 @@ Hieronder ziet u een matrix met belangrijke AEM Communities Add-on-functies die 
         </tr>
         <tr>
             <td rowspan="5">Enablement</td>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Catalogus en  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">Resourcebeheer</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Catalogus en  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">hulpbronnenbeheer</a>:</strong>
             Toegangsbronnen uit catalogus.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
@@ -1344,7 +1344,7 @@ Hieronder ziet u een matrix met belangrijke AEM Communities Add-on-functies die 
         <tr>
             <td rowspan="8">Commons</td>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/comments.html" target="_blank"></a> Opmerkingen en bijlagen:</strong>
-            (Sociaal Componentkader) Als lid van de gemeenschap deelt hij de mening en kennis over de inhoud op de communautaire site.</td>
+            (Sociaal Componentkader) Als lid van de gemeenschap kan hij advies en kennis delen over de inhoud op de communautaire site.</td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>
@@ -1537,8 +1537,8 @@ Hieronder ziet u een matrix met belangrijke AEM Communities Add-on-functies die 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank"></a> Activiteiten en  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">Meldingen</a>:</strong>
-            Bekijk recente activiteitenstroom, en krijg op de hoogte gebracht over gebeurtenissen van belang.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank"></a> Activiteiten en  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">meldingen</a>:</strong>
+            Bekijk recente activiteitenstroom en krijg een melding over belangengebeurtenissen.</td>
             <td> </td>
             <td> </td>
             <td> </td>
