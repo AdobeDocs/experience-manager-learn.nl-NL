@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 + [Overzicht](overview.md)
 + [Aanbevolen procedures](adaptive-forms/best-practices-adaptive-forms.md)
 + [OKTA-verificatie instellen met AEM-auteur](adaptive-forms/single-sign-on-with-okta.md)
-+ Uw eerste adaptieve vorm maken {#creating-your-first-adaptive-form}
++ Uw eerste adaptieve formulier maken {#creating-your-first-adaptive-form}
    + [Inleiding en installatie](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Adaptief formuliersjabloon maken](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [Formulierfragment maken](creating-your-first-adaptive-form/create-form-fragment.md)
@@ -28,7 +28,7 @@ ht-degree: 0%
    + [Tabel toevoegen aan paneel Inkomsten](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
    + [Deelvenster Elementen configureren](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [Aangepaste functies en code-editor gebruiken](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
-+ Formulierverzendingen {#handling-af-form-submissions} verwerken
++ Formulierverzendingen verwerken {#handling-af-form-submissions}
    + [Een revisiewerkstroom maken](handling-form-submissions/creating-a-review-workflow.md)
    + [Aangepast formulier configureren om workflow te activeren](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [De pagina Bedankt weergeven](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
@@ -40,7 +40,7 @@ ht-degree: 0%
 + Nuttige integratie{#some-useful-integrations}
    + [Verificatie met twee factoren](some-useful-integrations/two-factor-authentication.md)
    + [OCR-gegevensextractie](some-useful-integrations/ocr-data-extraction.md)
-+ OSGi-bundel {#creating-your-first-osgi-bundle} maken
++ OSGi-bundel maken {#creating-your-first-osgi-bundle}
    + [Uw omgeving instellen](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [OSGi-service maken](creating-your-first-osgi-bundle/create-osgi-service.md)
    + [Sling Servlet maken](creating-your-first-osgi-bundle/create-servlet.md)
@@ -86,16 +86,16 @@ ht-degree: 0%
    + [Opnieuw bruikbare workflowmodellen maken](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [Aangepaste processtap AEM workflow](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Gegevensbronconfiguratie wijzigen](adaptive-forms/modify-data-source-configuration-settings-article.md)
-   + [HTML5 Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
+   + [HTML5-Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Formuliergegevensmodel met Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Items dynamisch aan keuzeselectie-component toevoegen](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ Aangepast formulier vooraf invullen met formuliergegevensmodel{#prefill-fdm-db}
++ Aangepast formulier vooraf invullen met behulp van formuliergegevensmodel{#prefill-fdm-db}
    + [Inleiding](prefill-fdm-db/introduction.md)
    + [Databasetabellen maken](prefill-fdm-db/create-database-tables.md)
    + [Formuliergegevensmodel configureren](prefill-fdm-db/configuring-form-data-model.md)
    + [Request-parameter ophalen](prefill-fdm-db/get-request-parameter.md)
    + [adaptief formulier maken](prefill-fdm-db/create-adaptive-form.md)
-+ Inbox{#inbox-customization} aanpassen
++ Postvak IN aanpassen{#inbox-customization}
    + [Inleiding](inbox-customization/introduction.md)
    + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
    + [Sweeksjabloon gebruiken](inbox-customization/use-sightly-template.md)
@@ -116,7 +116,7 @@ ht-degree: 0%
    + [Het hoofdformulier maken](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [Het MyAccount-formulier maken](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [Het voorbeeld implementeren](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
-+ Ingediende gegevens exporteren in CSV-indeling{#export-submitted-data-csv-format}
++ Verzendgegevens exporteren in CSV-indeling{#export-submitted-data-csv-format}
    + [Verzonden gegevens exporteren](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
    + [HTML5-formulier maken](html5-forms/create-html5-form.md)
@@ -146,7 +146,7 @@ ht-degree: 0%
    + [Oorspronkelijk formulier maken](sign-multiple-documents/create-initial-form.md)
    + [Forms maken voor ondertekening](sign-multiple-documents/create-forms-for-signing.md)
    + [De oplossing testen](sign-multiple-documents/testing-and-trouble-shooting.md)
-+ Variabelen in AEM Workflow{#variables-aem-workflow}
++ Variabelen in AEM workflow{#variables-aem-workflow}
    + [Inleiding - Variabelen in workflow](variables-aem-workflow/introduction.md)
    + [XML-variabelen](variables-aem-workflow/part1.md)
    + [JSON-variabelen](variables-aem-workflow/part2.md)
@@ -154,7 +154,7 @@ ht-degree: 0%
    + [ArrayList-variabele](variables-aem-workflow/part4.md)
    + [Formuliergegevensmodelvariabele](variables-aem-workflow/form-data-model.md)
    + [Regeleditor in AEM workflow](variables-aem-workflow/part5.md)
-+ Het opslaan van en het Ophalen van de Gegevens van de Vorm in DB MySQL{#storing-and-retrieving-form-data}
++ Formuliergegevens opslaan en ophalen in MySQL DB{#storing-and-retrieving-form-data}
    + [Inleiding](storing-retrieving-form-data/introduction.md)
    + [Gegevensbron configureren](storing-retrieving-form-data/part1.md)
    + [Service voor het opslaan van gegevens](storing-retrieving-form-data/part3.md)
@@ -162,11 +162,11 @@ ht-degree: 0%
    + [Clientbibliotheek](storing-retrieving-form-data/part4.md)
    + [Adaptief formuliersjabloon](storing-retrieving-form-data/part5.md)
    + [Voorbeeldelementen implementeren](storing-retrieving-form-data/part6.md)
-+ Het teweegbrengen van AEM Workflow van Mobiele Verzending van het Vorm{#offline-mobile-form-submission}
++ Triggerend AEM Workflow van het indienen van mobiele formulieren{#offline-mobile-form-submission}
    + [Inleiding](offline-mobile-form-submission/introduction.md)
    + [Aangepast profiel](offline-mobile-form-submission/part-one.md)
    + [PDF-verzending verwerken](offline-mobile-form-submission/part-two.md)
-   + [PDF reviseren](offline-mobile-form-submission/part-three.md)
+   + [Workflow voor revisie PDF](offline-mobile-form-submission/part-three.md)
    + [Implementeren op uw systeem](offline-mobile-form-submission/part-four.md)
 + Ingediende gegevens opvragen{#querying-submitted-data}
    + [Inleiding](querying-submitted-data/introduction.md)
@@ -198,8 +198,9 @@ ht-degree: 0%
    + [PDFG-service gebruiken in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Uitvoer- en Forms-service gebruiken in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Meerdere PDF&#39;s genereren op basis van één gegevensbestand](document-services/generate-multi-record-pdf.md)
-   + [PDF genereren op mobiele formulierverzending](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Interactieve PDF genereren van mobiel formulier](document-services/render-interactive-form-using-api.md)
+   + [PDF genereren op mobiele formulieren](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Interactieve PDF uit mobiel formulier genereren](document-services/render-interactive-form-using-api.md)
+   + [Interactieve DoR genereren uit adaptief formulier](document-services/generate-interactive-dor.md)
    + [Credentiële Reader extensies configureren](document-services/configuring-reader-extension-osgi.md)
    + [Gebruiksrechten toepassen op PDF bij XDP-uitvoering](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Gebruiksrechten toepassen op geüploade PDF](document-services/apply-reader-extension-rights-to-pdf.md)
@@ -265,7 +266,7 @@ ht-degree: 0%
    + [PDFG: Stappen om bibliotheken met 32 bits en hun gebiedsdelen te controleren en te installeren](troubleshooting/steps-to-check-and-install-32-bit-libraries-and-their-dependencies.md)
    + [PDFG: Stappen om mapmachtigingen te controleren op Windows Server 2016](troubleshooting/steps-to-check-folder-permission-on-windows-server-2016.md)
    + [PDFG: Stappen om afstand op unix in te schakelen](troubleshooting/steps-to-enable-strace-on-unix-setup.md)
-   + [PDFG: Stappen om vereiste 32bit Microsoft Visual C++ redistributables te installeren](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
+   + [PDFG: Stappen om vereiste Microsoft Visual C++ redistributables met 32 bits te installeren](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
    + [PDFG: Stappen om output van het Hulpmiddel van de Gereedheid van het Systeem in werking te stellen en te interpreteren](troubleshooting/steps-to-run-and-interpret-output-of-system-readiness-tool.md)
    + [PDFG: Stappen om specifieke problemen met acrobat op te lossen](troubleshooting/steps-to-troubleshoot-acrobat-specific-issues.md)
    + [PDFG: Stappen voor het oplossen van problemen HtmltoPDF op vensters](troubleshooting/steps-to-troubleshoot-htmltopdf-issues-on-windows.md)
@@ -284,8 +285,8 @@ ht-degree: 0%
    + [Workbench: Hoe kan ik werkbankgeheugenparameters aanpassen?](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
    + [Workbench: Prestatieparameters van workbench aanpassen](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
    + [Designer: Afhankelijkheid van Designer op C++ herdistribueerbaar](troubleshooting/dependency-of-vc-on-designer.md)
-   + [Designer: HTML-voorvertoning inschakelen](troubleshooting/how-to-enable-html-preview.md)
-   + [Designer: PDF-voorbeeld inschakelen](troubleshooting/how-to-enable-pdf-preview.md)
+   + [Designer: HTML Voorvertoning inschakelen](troubleshooting/how-to-enable-html-preview.md)
+   + [Designer: PDF Voorvertoning inschakelen](troubleshooting/how-to-enable-pdf-preview.md)
    + [Designer: Designer-patches installeren](troubleshooting/how-to-install-designer-patches.md)
    + [JEE Foundation: De waarde van entropie wijzigen](troubleshooting/how-to-change-the-value-of-entropy.md)
    + [JEE Foundation: Procedure voor het wijzigen van de time-out van transacties voor services in AEM Forms JEE](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
@@ -302,7 +303,7 @@ ht-degree: 0%
    + [Algemeen: Hoe kan ik Verbindingspompen van een JVM vastleggen op een unix-server?](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-unix-server.md)
    + [Algemeen: Hoe kan ik Verbindingspompen van een JVM vastleggen op een Windows-server?](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-windows-server.md)
    + [Algemeen: Een zelfondertekend certificaat genereren](troubleshooting/how-to-generate-a-self-signed-certificate.md)
-   + [Algemeen: Webservice-aanroep maken vanuit HTML5-formulier](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
+   + [Algemeen: Webservice-aanroep vanuit HTML5-formulier maken](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
    + [Algemeen: Stappen om het registreren van fouten voor om het even welke klassen in AEM Forms OSGI toe te laten](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-aem-forms-osgi.md)
    + [Algemeen: Stappen om het registreren van fouten voor om het even welke klassen in de Server van de Toepassing toe te laten JBOSS](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-jboss-application-server.md)
    + [Algemeen: Stappen om te toelaten zuiveren registreren voor om het even welke klassen in de Server van de Toepassing Websphere](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-websphere-application-server.md)
