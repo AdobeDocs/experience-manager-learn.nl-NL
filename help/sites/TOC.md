@@ -3,10 +3,10 @@ user-guide-title: AEM Sites-video's en -Tutorials
 user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites.
 breadcrumb-title: AEM Sites Tutorials
 feature-set: Experience Manager, Experience Manager Sites
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 5bdff2eafaa28aff722b12607b1278539072be62
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 5%
+source-wordcount: '441'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 5%
 # AEM Sites-video&#39;s en -Tutorials {#sites}
 
 + [Overzicht](overview.md)
-+ Pagina-ontwerp {#page-authoring}
++ Pagina&#39;s ontwerpen {#page-authoring}
    + [Authoring](page-authoring/aem-sites-authoring-overview.md)
    + [Navigatie](page-authoring/basic-handling-sites-feature-video-use.md)
    + [Sitestructuur](page-authoring/content-hierarchy-feature-video-use.md)
@@ -64,7 +64,9 @@ ht-degree: 5%
    + [Fragmenten voor Setup-ervaring en Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Experience Fragments gebruiken met Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub instellen](personalization/context-hub-technical-video-setup.md)
-+ Toepassingen {#spa-editor} voor één pagina
++ SEO {#seo}
+   + [Sitemaps](./seo/sitemaps.md)
++ Toepassingen voor één pagina {#spa-editor}
    + [De SPA Editor gebruiken](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Lesbestand Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
@@ -96,7 +98,7 @@ ht-degree: 5%
       + [AEM verbinden met Starten met Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Een Cloud Service starten maken](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Fouten opsporen in een opstartimplementatie](integrations/experience-platform-launch/debug-launch-implementation.md)
-   + Adobe-gegevenslaag client {#adobe-client-data-layer}
+   + Gegevenslaag Adobe-client {#adobe-client-data-layer}
       + [De gegevenslaag van de Adobe-client gebruiken](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [De gegevenslaag Adobe Client aanpassen](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Analyse {#analytics}
