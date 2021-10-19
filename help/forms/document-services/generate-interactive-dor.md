@@ -6,10 +6,11 @@ feature: Forms Service
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
+kt: 9226
+source-git-commit: 2ed78bb8b122acbe69e98d63caee1115615d568f
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
@@ -20,18 +21,21 @@ Een veelvoorkomend geval is het downloaden van een interactieve DoR met de Adapt
 
 Voor dit gebruiksgeval moeten we het volgende doen:
 
-## Voorbeeldgegevens voor de xdp genereren
+## Voorbeeldgegevens genereren voor de XDP
 
-Open XDP in de ontwerper van AEM Forms.
-Klikken op bestand | Formuliereigenschappen | Klik op Voorvertoning genereren Gegevens voorvertoning genereren Klik op Voorvertoning genereren Geef een betekenisvolle bestandsnaam op, bijvoorbeeld &quot;form-data.xml&quot;
+* Open XDP in de ontwerper van AEM Forms.
+* Klikken op bestand | Formuliereigenschappen | Voorbeeld
+* Klik op Voorbeeldgegevens genereren
+* Klik op Genereren
+* Geef een betekenisvolle bestandsnaam op, bijvoorbeeld &quot;form-data.xml&quot;
 
 ## XSD genereren op basis van de XML-gegevens
 
-U kunt alle gratis online gereedschappen gebruiken om [xsd genereren](https://www.freeformatter.com/xsd-generator.html) uit de XML-gegevens die in de vorige stap zijn gegenereerd.
+U kunt alle gratis online gereedschappen gebruiken om [XSD genereren](https://www.freeformatter.com/xsd-generator.html) uit de XML-gegevens die in de vorige stap zijn gegenereerd.
 
-## Adaptief maken
+## Adaptief formulier maken
 
-Maak een adaptief formulier op basis van de xsd van de vorige stap. Koppel het formulier aan het gebruik van de clientbibliotheek &quot;irs&quot;. Deze clientbibliotheek heeft de code om een POST aan te roepen naar de servlet die de PDF naar de aanroepende toepassing terugkeert. De volgende code wordt geactiveerd wanneer de _PDF downloaden_ is aangeklikt
+Maak een adaptief formulier op basis van de XSD van de vorige stap. Koppel het formulier aan het gebruik van de clientbibliotheek &quot;irs&quot;. Deze clientbibliotheek heeft de code om een POST aan te roepen naar de servlet die de PDF naar de aanroepende toepassing terugkeert. De volgende code wordt geactiveerd wanneer de _PDF downloaden_ is aangeklikt
 
 ```javascript
 $(document).ready(function() {
@@ -72,7 +76,7 @@ $(document).ready(function() {
 
 ## Aangepaste servlet maken
 
-Maak een aangepaste servlet die de gegevens samenvoegt met de xdp-sjabloon en de PDF retourneert. De code om dit te verwezenlijken is hieronder vermeld. De aangepaste servlet maakt deel uit van de [AEMFormsDocumentServices.core-1.0-SNAPSHOT-bundel](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)).
+Maak een aangepaste servlet die de gegevens samenvoegt met een XDP-sjabloon en de PDF retourneert. De code om dit te verwezenlijken is hieronder vermeld. De aangepaste servlet maakt deel uit van de [AEMFormsDocumentServices.core-1.0-SNAPSHOT-bundel](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 package com.aemformssamples.documentservices.core.servlets;
@@ -191,13 +195,16 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 In de voorbeeldcode is de sjabloonnaam (f8918-r14e_redo-barcode_3 2.xdp) hard gecodeerd. U kunt de malplaatjenaam aan servlet gemakkelijk overgaan om deze code algemeen te maken om tegen alle malplaatjes te werken.
 
 
+## Het voorbeeld op de server implementeren
+
 Voer de volgende stappen uit om dit op uw lokale server te testen:
+
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Voeg de volgende vermelding toe in de Apache Sling Service User Mapper Service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [De aangepaste DocumentServices-bundel downloaden en installeren](/hep/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen
 1. [De clientbibliotheek importeren](assets/irs.zip)
 1. [Het adaptieve formulier importeren](assets/f8918complete.zip)
-!. [De XDP-sjabloon en het XDP-schema importeren](assets/xdp-template-and-xsd.zip)
+1. [De XDP-sjabloon en het XDP-schema importeren](assets/xdp-template-and-xsd.zip)
 1. [Voorbeeld van adaptief formulier](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Enkele formuliervelden invullen
 1. Klik op PDF downloaden om de PDF te downloaden
