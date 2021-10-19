@@ -4,10 +4,10 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
+source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 14%
+source-wordcount: '567'
+ht-degree: 13%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 14%
    + [Productiepijpleiding CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Niet-productiepijpleiding CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activiteit](./cloud-manager/activity.md)
-   + OPS ontwikkelen{#devops}
+   + Dev OPS{#devops}
       + [Code implementeren](./cloud-manager/devops/deploy-code.md)
       + [Projecten samenvoegen](./cloud-manager/devops/merge-projects.md)
       + [Pijpleidingen configureren](./cloud-manager/devops/configure-pipelines.md)
@@ -57,7 +57,7 @@ ht-degree: 14%
       + [Inhoud publiceren](./developing/basics/content-publishing.md)
       + [OSGi-configuraties](./developing/basics/osgi-configurations.md)
       + [Migratie van Dispatcher Configuration](./developing/basics/dispatcher-configuration.md)
-   + Projecten AEM{#aem-projects}
+   + AEM{#aem-projects}
       + [AEM Maven Project](./developing/projects/maven-project-structure.md)
    + OSGi Services{#osgi-services}
       + [OSGi Service Basics](./developing/osgi-services/basics.md)
@@ -123,7 +123,7 @@ ht-degree: 14%
       + [Navigeren door het beheer voor cloudversnelling](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager gebruiken](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
-   + Aangepast formulier maken{#create-first-af}
+   + Adaptief formulier maken{#create-first-af}
       + [Inleiding](./forms/create-first-af/introduction.md)
       + [Thema maken](./forms/create-first-af/create-theme.md)
       + [Sjabloon maken](./forms/create-first-af/create-template.md)
@@ -151,7 +151,7 @@ ht-degree: 14%
       + [Query-verzendingen](./forms/forms-cs-azure-portal/query-submitted-data.md)
 
 
-      + Revisiworkflow maken{#create-aem-workflow}
+      + Revisiewerkstroom maken{#create-aem-workflow}
          + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
          + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
       + Adobe Sign met AEM Forms{#forms-and-sign}
@@ -189,7 +189,8 @@ ht-degree: 14%
    + Geavanceerd{#advanced}
       + [Metagegevensworkers](./asset-compute/advanced/metadata.md)
    + [Problemen oplossen](./asset-compute/troubleshooting.md)
-+ Meerdere stappen voor Tutorials{#multi-step-tutorials}
++ [AEM Deskundigenreeks](./aem-experts-series.md)
++ Tutorials met meerdere stappen{#multi-step-tutorials}
    + [AEM Sites-ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [SPA Editor (reageren)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
