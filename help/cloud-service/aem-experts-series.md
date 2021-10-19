@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service Experts-reeks
 description: Leer over Adobe Experience Manager (AEM) die as a Cloud Service is van Adobe-technici die het bouwen, en professionele services die het leveren.
 sub-product: sites, cloud-manager, assets
-source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
+source-git-commit: 5b3dd38d1fa2e3c35bfa2a867f51c7295907ecc7
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 2%
@@ -179,5 +179,7 @@ Meer informatie over de unieke mogelijkheden van AEM as a Cloud Service experts 
         Leer meer over de Asset compute-microservices van AEM Assets, hoe deze de verwerking van AEM 6 elementen vervangen en hoe deze kunnen worden uitgebreid om aangepaste uitvoeringen van elementen te genereren.
       </p>
    </td>   
+    <td></td>
+    <td></td>
   </tr>
 </table>
