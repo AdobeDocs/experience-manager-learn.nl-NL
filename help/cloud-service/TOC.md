@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '595'
 ht-degree: 13%
 
 ---
@@ -123,6 +123,15 @@ ht-degree: 13%
       + [Navigeren door het beheer voor cloudversnelling](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager gebruiken](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
+
+   + Ontwikkelen voor Forms as a Cloud Service{#developing-for-cloud-service}
+      + [Aan de slag](./forms/developing-for-cloud-service/getting-started.md)
+      + [IntelliJ installeren](./forms/developing-for-cloud-service/intellij-set-up.md)
+      + [Installatiegit](./forms/developing-for-cloud-service/setup-git.md)
+      + [IntelliJ synchroniseren met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [Een formulier maken](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [Inclusief Cloud Services en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
    + Adaptief formulier maken{#create-first-af}
       + [Inleiding](./forms/create-first-af/introduction.md)
       + [Thema maken](./forms/create-first-af/create-theme.md)
@@ -137,8 +146,8 @@ ht-degree: 13%
       + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
    + Document Cloud-API en AEM Forms CS{#doc-cloud-sdk}
       + [Inleiding](./forms/doc-cloud-sdk/introduction.md)
-      + [Adobe I/O-project maken](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
-      + [OSGi-configuratie maken](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [Adobe IO-project maken](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [OSGI-configuratie maken](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
       + [Interface definiëren](./forms/doc-cloud-sdk/create-interface.md)
       + [Interface implementeren](./forms/doc-cloud-sdk/implement-interface.md)
       + [JSON-onderdeel maken](./forms/doc-cloud-sdk/get-content-analyzer.md)
@@ -147,27 +156,25 @@ ht-degree: 13%
       + [Inleiding](./forms/forms-cs-azure-portal/introduction.md)
       + [Formuliergegevensmodel maken](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Formuliergegevens opslaan in Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
-      + [Formulier vooraf invullen](./forms/forms-cs-azure-portal/prefill-af-storage.md)
+      + [Vooraf ingevuld formulier](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Query-verzendingen](./forms/forms-cs-azure-portal/query-submitted-data.md)
-
-
-      + Revisiewerkstroom maken{#create-aem-workflow}
-         + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
-         + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
-      + Adobe Sign met AEM Forms{#forms-and-sign}
-         + [Inleiding](./forms/forms-and-sign/introduction.md)
-         + [Adobe Sign API-toepassing](./forms/forms-and-sign/create-sign-api-application.md)
-         + [Adobe Sign Cloud Configuration](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
-         + [Adaptief formulier maken](./forms/forms-and-sign/create-adaptive-form.md)
-         + [Configureren voor invullen en ondertekenen](./forms/forms-and-sign/configure-form-fill-and-sign.md)
-      + Integreren met Salesforce{#integrate-with-salesforce}
-         + [Inleiding](./forms/integrate-with-salesforce/introduction.md)
-         + [Een verbonden app maken](./forms/integrate-with-salesforce/create-connected-app.md)
-         + [Wagerbestand maken](./forms/integrate-with-salesforce/describe-rest-api.md)
-         + [Gegevensbron maken](./forms/integrate-with-salesforce/create-data-source.md)
-         + [Formuliergegevensmodel maken](./forms/integrate-with-salesforce/create-form-data-model.md)
-         + [Indiening van testformulieren](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
-         + [Klikgebeurtenis testen](./forms/integrate-with-salesforce/create-lead-click-event.md)
+   + Revisiewerkstroom maken{#create-aem-workflow}
+      + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
+      + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
+   + Adobe Sign met AEM Forms{#forms-and-sign}
+      + [Inleiding](./forms/forms-and-sign/introduction.md)
+      + [Adobe Sign API-toepassing](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Adobe Sign Cloud Configuration](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [Adaptief formulier maken](./forms/forms-and-sign/create-adaptive-form.md)
+      + [Configureren voor invullen en ondertekenen](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Integreren met Salesforce{#integrate-with-salesforce}
+      + [Inleiding](./forms/integrate-with-salesforce/introduction.md)
+      + [Een verbonden app maken](./forms/integrate-with-salesforce/create-connected-app.md)
+      + [Wagerbestand maken](./forms/integrate-with-salesforce/describe-rest-api.md)
+      + [Gegevensbron maken](./forms/integrate-with-salesforce/create-data-source.md)
+      + [Formuliergegevensmodel maken](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Indiening van testformulieren](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+      + [Klikgebeurtenis testen](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Uitbreidbaarheid asset compute{#asset-compute}
    + [Overzicht](./asset-compute/overview.md)
    + Instellen{#set-up}

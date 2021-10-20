@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 kt: 9226
-source-git-commit: 2ed78bb8b122acbe69e98d63caee1115615d568f
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
@@ -201,10 +201,12 @@ Voer de volgende stappen uit om dit op uw lokale server te testen:
 
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Voeg de volgende vermelding toe in de Apache Sling Service User Mapper Service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
-1. [De aangepaste DocumentServices-bundel downloaden en installeren](/hep/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen
+1. [De aangepaste DocumentServices-bundel downloaden en installeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen
 1. [De clientbibliotheek importeren](assets/irs.zip)
 1. [Het adaptieve formulier importeren](assets/f8918complete.zip)
 1. [De XDP-sjabloon en het XDP-schema importeren](assets/xdp-template-and-xsd.zip)
 1. [Voorbeeld van adaptief formulier](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Enkele formuliervelden invullen
-1. Klik op PDF downloaden om de PDF te downloaden
+1. Klik op PDF downloaden om de PDF op te halen. Mogelijk moet u een paar seconden wachten voordat de PDF wordt gedownload
+
+

@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service Experts-reeks
 description: Leer over Adobe Experience Manager (AEM) die as a Cloud Service is van Adobe-technici die het bouwen, en professionele services die het leveren.
 sub-product: sites, cloud-manager, assets
-source-git-commit: 1e52e29051e219c4cd5ea83e2325fdae62ff833a
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
@@ -207,7 +207,7 @@ Leer hoe te om AEM as a Cloud Service en AEM SDK van de deskundigen te zuiveren 
       <img alt="Problemen oplossen AEM as a Cloud Service" src="./assets/experts-series/troubleshooting.png"/>
       </a>
       <div>
-         <a href="/migration/moving-to-aem-as-a-cloud-service/troubleshooting.md" 
+         <a href="./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md" 
          target="_aem-experts-series-video"><strong>Problemen oplossen AEM as a Cloud Service</strong></a>
          <br/><em>met Kunwar Saluja, Cloud Architect</em>
       </div>
