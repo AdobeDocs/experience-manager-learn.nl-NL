@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 3%
+source-wordcount: '185'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 3%
       + [5 - GraphQL-eindpunten](./graphql/video-series/graphql-endpoints.md)
       + [6 - Auteur- en publicatiearchitectuur](./graphql/video-series/author-publish-architecture.md)
       + [7 - GrafiekQL aanhoudende query&#39;s](./graphql/video-series/graphql-persisted-queries.md)
-   + Zelfstudie in meerdere stappen{#multi-step}
+   + Zelfstudie met meerdere stappen{#multi-step}
       + [Overzicht](./graphql/multi-step/overview.md)
       + [1 - Snelle installatie](./graphql/multi-step/setup.md)
       + [2 - Modellen voor inhoudsfragmenten definiëren](./graphql/multi-step/content-fragment-models.md)
@@ -36,6 +36,9 @@ ht-degree: 3%
       + [5 - Een query uitvoeren vanuit een externe app](./graphql/multi-step/graphql-and-external-app.md)
       + [6 - Geavanceerde gegevensmodellering met fragmentverwijzingen](./graphql/multi-step/fragment-references.md)
       + [7 - Productie-implementatie](./graphql/multi-step/production-deployment.md)
+   + Voorbeelden {#example-apps}
+      + [Reageren](./graphql/example-apps/react-app.md)
+      + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
 + SPA Editor{#spa-editor}
    + Reageren{#react}
       + [Overzicht](./spa-editor/react/overview.md)
@@ -61,11 +64,11 @@ ht-degree: 3%
       + [3 - Vaste componenten](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - Containeronderdelen](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - Dynamische routes](./spa-editor/remote-spa/spa-dynamic-routes.md)
-+ Tokengebaseerde verificatie {#authentication}
++ Op token gebaseerde verificatie {#authentication}
    + [Overzicht](./authentication/overview.md)
    + [1 - Toegangstoken voor lokale ontwikkeling](./authentication/local-development-access-token.md)
    + [2 - Servicereferenties](./authentication/service-credentials.md)
-+ Content Services {#content-services}
++ Inhoudsservices {#content-services}
    + [Overzicht](./content-services/overview.md)
    + [1 - Lesbestanden instellen](./content-services/chapter-1.md)
    + [2 - Fragmentmodellen voor gebeurtenisinhoud definiëren](./content-services/chapter-2.md)
