@@ -8,18 +8,22 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 8844
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '504'
 ht-degree: 2%
 
 ---
 
 # Cygwin installeren
 
+
+Cygwin is een met POSIX compatibele programmeeromgeving en runtimeomgeving die native op Microsoft Windows wordt uitgevoerd.
 Installeren [Cygwin](https://www.cygwin.com/). Ik ben geïnstalleerd in C:\cygwin64 folder
->[Opmerking]
+>[!NOTE]
 > Zorg ervoor dat u ZIP-, unzip-, curl- en synchronisatiepakketten installeert met uw cygwin-installatie
+
+Maak een map met de naam adoberepo onder de map c:\cloudmanager.
 
 [Het gereedschap Repo installeren].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing het gereedschap Repo is niets anders dan het repobestand kopiëren en in uw c:\cloudmanger\adoberepo folder plaatsen.
 
@@ -27,7 +31,12 @@ Voeg het volgende toe aan de omgevingsvariabele Pad C:\cygwin64\bin;C:\CloudMana
 
 ## Externe gereedschappen instellen
 
-Start de toetsen IntelliJ Hit Ctrl+Alt+S om het instellingenvenster te openen Selecteer Gereedschappen->Externe gereedschappen en klik vervolgens op het plusteken (+) en voer het volgende in zoals wordt weergegeven in de schermafbeelding. Zorg ervoor dat u een groep maakt met de naam Repo door in het keuzemenu Groep &quot;repo&quot; te typen en alle opdrachten die u maakt, behoren tot de groep **repo** groep
+* Start IntelliJ
+* Druk op Ctrl+Alt+S om het instellingenvenster te openen.
+* Selecteer Gereedschappen->Externe gereedschappen, klik op het plusteken (+) en voer het volgende in zoals in de schermafbeelding.
+   ![rep](assets/repo.png)
+* Zorg ervoor dat u een groep met de naam Repo maakt door &quot;repo&quot; te typen in het vervolgkeuzemenu Groep en alle opdrachten die u maakt, behoren tot de opdracht **repo** groep
+
 
 **Opdracht plaatsen**
 **Programma**: C:\cygwin64\bin\bash

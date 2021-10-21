@@ -1,18 +1,18 @@
 ---
 title: AEM Forms-Tutorials en -video's
-seo-title: AEM Forms-Tutorials en -video's
+seo-title: AEM Forms Tutorials and Videos
 description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
-seo-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
-sub-product: formulieren
-topic: Ontwikkeling
+seo-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers
+sub-product: forms
+topic: Development
 role: Developer
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
-
 
 # Overzicht {#overview}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     </div>
     <p>
-    <em>Adaptieve formulieren zijn formulieren van de nieuwe generatie die dynamisch zijn en reageren. U kunt Adaptieve formulieren gebruiken om persoonlijke ervaringen te bieden</em>
+    <em>Adaptieve formulieren zijn formulieren van de nieuwe generatie die dynamisch zijn en reageren. U kunt adaptieve formulieren gebruiken om persoonlijke ervaringen te bieden</em>
     <p>
   </td>
    <td>
@@ -59,7 +59,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     </div>
     <p>
-    <em>De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits.  </em>
+    <em>De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits. </em>
     <p>
   </td>
   <td>
@@ -78,6 +78,106 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 </tr>
 </table>
 
+>[!TIP]
+>
+>Deze verzameling monsters om verschillende mogelijkheden van AEM Forms aan te tonen. .
+
+
+## Voorbeelden van adaptieve formulieren
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <img alt= "Captch in AEM Forms" src="./assets/captcha1.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
+    <strong>Google Captcha in adaptieve vorm</strong>
+    </a>
+    </div>
+    <p>
+    <em> Duidelijk maken tussen menselijke en geautomatiseerde toegang tot formulieren</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <img alt="Voorvertoning formuliergegevens" src="./assets/preview.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <strong>Formuliergegevens controleren</strong>
+    </a>
+    </div>
+    <p>
+    <em>Bekijk een voorbeeld van de formuliergegevens voordat u het formulier verzendt.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+      <img alt=" Inline-afbeelding" src="./assets/preview.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+        <strong>Inline-afbeelding weergeven</strong>
+      </a>
+    </div>
+    <p>
+    <em>Geef de afbeelding weer die aan het formulier is toegevoegd.</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## Voorbeelden van adaptieve formulieren en handtekeningen
+
+<table>
+<tr>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+      <img alt="Verhuurovereenkomst" src="./assets/rental-agreement.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+    <strong>Voorbeeldformulier voor huurovereenkomst</strong>
+    </a>
+    </div>
+    <p>
+    <em>Huurovereenkomst tussen huurder en verhuurder ingevuld en ondertekend door AEM Forms en Adobe Sign</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <img alt="NDA-overeenkomst" src="./assets/nda.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <strong>geheimhoudingsovereenkomst genereren</strong>
+    </a>
+    </div>
+    <p>
+    <em>NDA dynamisch maken en verzenden voor ondertekening met Adobe Sign</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+      <img alt="Documentpakket ondertekenen" src="./assets/sign.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+        <strong>Pakket met documenten ondertekenen</strong>
+      </a>
+    </div>
+    <p>
+    <em>Meerdere documenten naadloos ondertekenen met Forms en Adobe Sign</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+
+
+
 ## Aanvullende bronnen
 
 * [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
@@ -85,7 +185,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 * [AEM Sites Developing Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [AEM Sites-beheerdocumentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [AEM Sites-documentatie implementeren](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [AEM als Cloud Service Tutorials](/help/cloud-service/overview.md)
+* [AEM as a Cloud Service Tutorials](/help/cloud-service/overview.md)
 * [AEM Assets Tutorials](/help/assets/overview.md)
 * [AEM Forms Tutorials](/help/forms/overview.md)
 * [Tutorials AEM stichting](/help/foundation/overview.md)

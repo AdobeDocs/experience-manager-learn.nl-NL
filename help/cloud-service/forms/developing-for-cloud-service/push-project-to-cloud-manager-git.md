@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -16,12 +16,11 @@ ht-degree: 0%
 ---
 
 
-# AEM project naar cloudmanager git rep
+# AEM project naar cloudmanager-git-repo verplaatsen
 
 In de vorige stap hebben we ons AEM Project gesynchroniseerd met de Adaptive Forms en Thema&#39;s die in de AEM zijn gemaakt.
-We moeten deze wijzigingen nu toevoegen aan onze lokale opslagplaats voor it en vervolgens de lokale opslagplaats voor it naar de opslagplaats voor cloudbeheer
-
-open bevelherinnering en navigeer aan c:\cloudmanager\aem-banking-app Execute the following commands
+We moeten deze wijzigingen nu toevoegen aan onze lokale git-opslagplaats en vervolgens de lokale git-opslagplaats naar de git-opslagplaats voor cloudbeheer duwen.
+Opdrachtprompt openen en naar c:\cloudmanager\aem-banking-app Execute the following commands navigeren
 
 ```
 git add .**
