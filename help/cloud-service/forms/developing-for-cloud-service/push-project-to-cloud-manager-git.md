@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ git commit -m "My First AF"
 Hierdoor worden de bestanden toegewezen aan de master vertakking van onze lokale it-opslagruimte
 
 ```
-git push -f bankingapp master:"My First AF"
+git push -f bankingapp master:"MyFirstAF"
 ```
 
-In het bovenstaande bevel duwen we onze master tak van onze lokale git opslagplaats naar de My First AF tak van de gegevensopslagplaats van de wolkenmanager die door de bankingapp vriendelijke naam wordt geïdentificeerd
+In het bovenstaande bevel duwen we onze master tak van onze lokale git bewaarplaats in de afdeling MyFirstAF van de bewaarplaats van de wolkenmanager die door de bankingapp vriendelijke naam wordt geïdentificeerd.
 
 
 
