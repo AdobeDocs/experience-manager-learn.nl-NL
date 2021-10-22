@@ -9,9 +9,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: 9b1e38c8d4a0301c124c6f1607a9e4362b0e9cd1
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ ht-degree: 0%
 # App Reageren
 
 Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Er is een React-toepassing beschikbaar die aantoont hoe inhoud kan worden opgezocht met behulp van de GraphQL-API&#39;s van AEM. De AEM Headless-client voor JavaScript wordt gebruikt om de GraphQL-query&#39;s uit te voeren die de toepassing van stroom voorzien.
+
+De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
 ![Toepassing Reageren](./assets/react-screenshot.png)
 
