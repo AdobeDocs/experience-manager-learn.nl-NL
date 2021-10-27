@@ -1,21 +1,19 @@
 ---
 title: Video's en Tutorials AEM
-seo-title: Video's en Tutorials AEM
-description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Manager Foundation. '
-seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Foundation
+description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Foundation.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '251'
 ht-degree: 1%
 
 ---
 
+# Video&#39;s en Tutorials AEM {#overview}
 
-# Overzicht {#overview}
-
-Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is voor gebruikers van AEM Sites, [!DNL Assets] en [!DNL Forms].
+Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is voor gebruikers van AEM Sites, Assets en Forms.
 
 ## Wat is er nieuw?
 
@@ -27,7 +25,7 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
    *Cloud Manager voor AEM maakt eenvoudig beheer, controle en zelfbediening van AEM omgevingen mogelijk.*
 
 * **[Openbare en persoonlijke sleutels instellen voor gebruik met Adobe I/O (zelfstudie)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Leer hoe sleutels en sleutelarchieven worden geproduceerd gebruikend  [!DNL openssl] die met AEM en Adobe I/O werken.*
+   *Leer hoe sleutels en sleutelarchieven het gebruiken worden geproduceerd [!DNL openssl] die met AEM en Adobe I/O werken.*
 
 * **[Cloud Manager CI/CD Pipeline (video) gebruiken](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Leer hoe u de CI/CD-pijplijn van Cloud Manager kunt gebruiken voor een veilige en consistente implementatie.*
@@ -81,7 +79,7 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 ## Aanvullende bronnen
 
 * [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM als Cloud Service Tutorials](/help/cloud-service/overview.md)
+* [AEM as a Cloud Service Tutorials](/help/cloud-service/overview.md)
 * [AEM Sites-video&#39;s en -Tutorials](/help/sites/overview.md)
 * [AEM Assets-video&#39;s en -Tutorials](/help/assets/overview.md)
 * [AEM Forms-video&#39;s en -Tutorials](/help/forms/overview.md)

@@ -1,21 +1,19 @@
 ---
-title: AEM Sites Tutorials
-seo-title: AEM Sites Tutorials
-description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Manager Sites. '
-seo-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites
+title: AEM Sites-video's en -Tutorials
+description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites.
 sub-product: sites, content-services
-topic: Inhoudsbeheer
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+topic: Content Management
+exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '345'
 ht-degree: 1%
 
 ---
 
+# AEM Sites-video&#39;s en -Tutorials {#overview}
 
-# Overzicht {#overview}
-
-Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaringsbeheer. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Sites.
+Adobe Experience Manager (AEM) Sites zijn een toonaangevend platform voor ervaringsbeheer. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Sites.
 
 ## Wat is er nieuw?
 
@@ -79,7 +77,7 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
       </a>
     </div>
     <p>
-    <em>Een gids Aan de slag voor ontwikkelaars om één enkele paginatoepassingen (SPA) met AEM te integreren.</em>
+    <em>Een gids Aan de slag voor ontwikkelaars om één enkele paginatoepassing (SPA) met AEM te integreren.</em>
     <p>
   </td>
 </tr>
@@ -88,11 +86,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 ## Aanvullende bronnen
 
 * [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM Sites Authoring Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
-* [AEM Sites Developing Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [AEM Sites-beheerdocumentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [AEM Sites-documentatie implementeren](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [AEM als Cloud Service Tutorials](/help/cloud-service/overview.md)
+* [AEM Sites Authoring Documentation](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [AEM Sites Developing Documentation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [AEM Sites-beheerdocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [AEM Sites-documentatie implementeren](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
+* [AEM as a Cloud Service Tutorials](/help/cloud-service/overview.md)
 * [AEM Assets Tutorials](/help/assets/overview.md)
 * [AEM Forms Tutorials](/help/forms/overview.md)
 * [Tutorials AEM stichting](/help/foundation/overview.md)

@@ -1,22 +1,22 @@
 ---
 title: AEM Assets Essentials-video's
 description: Een verzameling video's voor Adobe Experience Manager Assets Essentials
-sub-product: elementen
-source-git-commit: 21d6df065fe61614d3bbd68ce2f20d3dc23a9cef
+sub-product: assets
+exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
-
-# Overzicht
+# Assets Essentials-video&#39;s
 
 ![Assets Essentials](./assets/overview/hero.png)
 
-Experience Manager Assets Essentials biedt een gestroomlijnde gebruikersinterface voor lichtgewicht middelenbeheer en samenwerking.
+Experience Manager Assets Essentials biedt een gestroomlijnde gebruikersinterface voor eenvoudig beheer van bedrijfsmiddelen en samenwerking.
 
-Bekijk onze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middelen te beheren en hoe u deze kunt integreren met de Adobe Journey Orchestrator!
+Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middelen te beheren en hoe u deze kunt integreren met Adobe Journey Orchestrator!
 
 ## Meer informatie over Assets Essentials
 
@@ -57,7 +57,7 @@ Bekijk onze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middel
       </a>
    </div>
    <p>
-      <em>Leer hoe Assets Essentials zich integreert met Adobe Journey Optimizer!</em>
+      <em>Ontdek hoe Assets Essentials geïntegreerd is met Adobe Journey Optimizer!</em>
    <p>
 </td>
 </table>

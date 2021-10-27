@@ -1,19 +1,19 @@
 ---
-title: Tutorials voor Adobe Experience Manager as Cloud Service
-description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) als Cloud Service
-sub-product: sites, cloudbeheer, stichting, middelen
+title: Adobe Experience Manager als Cloud Service Video's en Tutorials
+description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) as a Cloud Service
+sub-product: sites, cloud-manager, foundation, assets
 kt: 3289
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 8%
+source-wordcount: '276'
+ht-degree: 5%
 
 ---
 
+# AEM als Cloud Service Video&#39;s en Tutorials {#overview}
 
-# Overzicht {#overview}
-
-Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Cloud Service introduceert de volgende generatie van de productlijn van de Experience Manager, voortbouwend op vroegere investeringen en innovaties, het bewaren en uitbreiden van alle gebruiksgevallen en -functies.
+Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cloud Service introduceert de volgende generatie van de productlijn van de Experience Manager, voortbouwend op vroegere investeringen en innovaties, het bewaren en uitbreiden van alle gebruiksgevallen en -functies.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 
 * **[Tokengebaseerde verificatie (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
-   *Leer hoe te om op teken-gebaseerde authentificatie te gebruiken om met AEM als Cloud Service over HTTP in wisselwerking te staan*
+   *Leer hoe te om op teken-gebaseerde authentificatie te gebruiken met AEM as a Cloud Service over HTTP in wisselwerking te staan*
 
 * **[Headless GraphQL (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 
 * **[asset compute metadata worker (zelfstudie)](./asset-compute/advanced/metadata.md)**
 
-   *Leer hoe u metagegevens van elementen van een Asset compute naar AEM schrijft*
+   *Leer hoe u metagegevens van middelen van een Asset compute-worker naar AEM schrijft*
 
 * **[Uitbreidbaarheid van microservices voor asset compute (zelfstudie)](./asset-compute/overview.md)**
 
@@ -44,7 +44,7 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 <table>
    <td>
       <a href="./accessing/overview.md">
-      <img alt="Toegang tot AEM configureren als Cloud Service" src="./assets/overview/staff-pick__accessing.png"/>
+      <img alt="Toegang tot AEM as a Cloud Service configureren" src="./assets/overview/staff-pick__accessing.png"/>
       </a>
       <div>
          <a href="./accessing/overview.md">
@@ -61,11 +61,11 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
       </a>
       <div>
          <a href="./local-development-environment/overview.md">
-         <strong>Zelfstudie over de lokale ontwikkelomgeving instellen</strong>
+         <strong>Zelfstudie voor instelling lokale ontwikkelomgeving</strong>
          </a>
       </div>
       <p>
-         <em>Zorg ervoor dat uw lokale ontwikkelcomputer klaar is voor AEM als Cloud Service ontwikkeling!</em>
+         <em>Bereid uw lokale ontwikkelmachine klaar voor AEM as a Cloud Service ontwikkeling!</em>
       <p>
    </td>   
    <td>
@@ -78,7 +78,7 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
          </a>
       </div>
       <p>
-         <em>Onderzoek hulpmiddelen die worden gebruikt om uw toepassing op de AEM als lokale snelle start van de Cloud Service SDK te zuiveren.</em>
+         <em>Ontdek de tools die worden gebruikt om fouten in uw toepassing op te sporen in de lokale snelstartfunctie van de AEM as a Cloud Service SDK.</em>
       <p>
    </td>
 </table>
@@ -86,4 +86,4 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM als Clo
 ## Aanvullende bronnen
 
 * [Experience League - Adobe Experience Manager verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Adobe Experience Manager als Cloud Service Documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+* [Adobe Experience Manager as a Cloud Service-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)

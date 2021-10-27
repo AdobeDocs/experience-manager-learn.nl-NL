@@ -1,20 +1,18 @@
 ---
 title: AEM Forms-Tutorials en -video's
-seo-title: AEM Forms Tutorials and Videos
 description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
-seo-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers
 sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
+source-wordcount: '516'
+ht-degree: 0%
 
 ---
 
-# Overzicht {#overview}
+# AEM Forms-Tutorials en -video&#39;s {#overview}
 
 Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het maken, beheren, publiceren en bijwerken van complexe digitale formulieren en voor integratie met back-endprocessen, bedrijfsregels en gegevens. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Forms
 
@@ -26,9 +24,9 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 * **[Diagrammen uit meerdere reeksen in interactieve communicatiedocumenten (video)](./interactive-communications/multiseriescharts.md)**
 
-   *Plot meer dan één reeks in de zelfde grafiek.De veelvoudige reeksengrafieken worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom.*
+   *Plot meer dan één reeks in de zelfde grafiek. De veelvoudige reekskaarten worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom.*
 
-* **[Opnieuw te gebruiken workflowmodellen maken](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
+* **[Herbruikbare workflowmodellen maken](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
    *Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld*
 
@@ -38,7 +36,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 <tr>
   <td>
     <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-      <img alt="400 x 225 px" src="./assets/afhero.png" />
+      <img alt="Uw eerste adaptieve formulier maken" src="./assets/afhero.png" />
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
@@ -51,7 +49,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
   </td>
    <td>
     <a href="./ic-print-channel-tutorial/introduction.md">
-      <img alt="400 x 225 px" src="./assets/correspondence-management1.png" />
+      <img alt="Uw eerste afdrukkanaaldocument maken" src="./assets/correspondence-management1.png" />
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
@@ -64,7 +62,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
   </td>
   <td>
     <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-      <img alt="400 x 225 px" src="./assets/fdmlogo.png" />
+      <img alt="Formuliergegevensmodel gebruiken in AEM workflow" src="./assets/fdmlogo.png" />
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
@@ -80,7 +78,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 >[!TIP]
 >
->Deze verzameling monsters om verschillende mogelijkheden van AEM Forms aan te tonen. .
+>Deze verzameling monsters om verschillende mogelijkheden van AEM Forms aan te tonen.
 
 
 ## Voorbeelden van adaptieve formulieren
@@ -152,7 +150,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
-    <strong>geheimhoudingsovereenkomst genereren</strong>
+    <strong>Geen geheimhoudingsovereenkomst genereren</strong>
     </a>
     </div>
     <p>
@@ -181,10 +179,10 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 ## Aanvullende bronnen
 
 * [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM Sites Authoring Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
-* [AEM Sites Developing Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [AEM Sites-beheerdocumentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [AEM Sites-documentatie implementeren](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
+* [AEM Sites Authoring Documentation](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [AEM Sites Developing Documentation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [AEM Sites-beheerdocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [AEM Sites-documentatie implementeren](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [AEM as a Cloud Service Tutorials](/help/cloud-service/overview.md)
 * [AEM Assets Tutorials](/help/assets/overview.md)
 * [AEM Forms Tutorials](/help/forms/overview.md)

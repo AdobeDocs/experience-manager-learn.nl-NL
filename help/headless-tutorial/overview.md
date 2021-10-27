@@ -1,19 +1,19 @@
 ---
-title: Zelfstudies zonder koppen AEM
+title: Tutorials zonder kop AEM
 description: Een verzameling zelfstudies voor het gebruik van Adobe Experience Manager als een CMS zonder koptekst.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-# Zelfstudies zonder koppen AEM
+# Tutorials zonder kop AEM
 
 Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te definiëren en de inhoud ervan als JSON te leveren. Gebruik praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken en te kiezen wat bij u past.
 
@@ -92,11 +92,11 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
-    <strong>Voorbeeld van Android</strong>
+    <strong>Android™-voorbeeld</strong>
     </a>
     </div>
     <p>
-    <em>Een Android-toepassing die wordt aangedreven door AEM GraphQL API's.</em>
+    <em>Een Android™-toepassing die wordt aangedreven door AEM GraphQL API's.</em>
     </p>
   </td>
   <td>
@@ -185,7 +185,7 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </a>
     </div>
     <p>
-    <em>Gebruik Content Services en REST om een mobiele Android-toepassing van stroom te voorzien.</em>
+    <em>Gebruik Content Services en REST om een mobiele Android™-toepassing van stroom te voorzien.</em>
     </p>
   </td>
   <td>
