@@ -1,23 +1,23 @@
 ---
 title: De videospeler in AEM Dynamic Media gebruiken
-description: AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple's HTTP Live Streaming video delivery protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
+description: AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple Live HTTP Streaming video Delivery Protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
 sub-product: dynamic-media
-feature: Videoprofielen
+feature: Video Profiles
 version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
+source-git-commit: 68c49f526146e2f2ba626dc2126fb96d4ae09854
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
-
 # De videospeler in AEM Dynamic Media gebruiken{#using-the-video-player-in-aem-dynamic-media}
 
-AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple&#39;s HTTP Live Streaming video delivery protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
+AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor ondersteuning van adaptieve videostreaming op desktopclients en browsers, werd agressiever bij het streamen van inhoud op basis van flash. Met de introductie van HLS (Apple Live HTTP Streaming video Delivery Protocol) kan inhoud nu worden gestreamd zonder dat Flash nodig is.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
@@ -26,6 +26,9 @@ AEM Dynamic Media-videospeler die gebruikmaakte van Flash-runtime voor ondersteu
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
 De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers kunnen we terugvallen op progressieve videoverstrekking
+
+>!![NOTE]
+Dynamic Media Hybrid biedt na mei 2022 GEEN ondersteuning voor Internet Explorer 11.
 
 <table> 
  <thead> 
