@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+source-git-commit: e8b3bcaeee40b4bfd4f967f929ad664e8d168cb0
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '604'
 ht-degree: 13%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 13%
       + [Migratie van Dispatcher Configuration](./developing/basics/dispatcher-configuration.md)
    + AEM{#aem-projects}
       + [AEM Maven Project](./developing/projects/maven-project-structure.md)
+      + [Een AEM Maven-project opschonen](./developing/projects/remove-samples.md)
    + OSGi Services{#osgi-services}
       + [OSGi Service Basics](./developing/osgi-services/basics.md)
       + [OSGi-componentlevenscyclus](./developing/osgi-services/lifecycle.md)
