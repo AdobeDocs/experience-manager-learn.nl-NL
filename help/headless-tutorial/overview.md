@@ -5,10 +5,11 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
 
 >[!TIP]
 >
->Deze verzameling zelfstudies is ontworpen voor gebruikers die liever **leren door**. Als u van de grond het leren van concepten verkiest, controleer uit [AEM Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
+>This collection of tutorials are designed for those who prefer to **learn by doing**. Als u van de grond het leren van concepten verkiest, controleer uit [AEM Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html). This set of tutorials and the journey complement each other.
 
 ## Tutorials via API
 
@@ -35,7 +36,7 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
     </a>
     </div>
     <p>
-    <em>Leer hoe een toepassing AEM GraphQL API kan gebruiken om inhoud te vragen.</em>
+    <em>Learn how an application can use AEM's GraphQL API to query content.</em>
     <p>
   </td>
   <td>
@@ -44,7 +45,7 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
-    <strong>Tokenverificatie</strong>
+    <strong>Token authentication</strong>
     </a>
     </div>
     <p>
@@ -53,7 +54,7 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-      <img alt="Inhoudsservices" src="./assets/content-services.png" />
+      <img alt="Content Services" src="./assets/content-services.png" />
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
@@ -67,9 +68,9 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
 </tr>
 </table>
 
-## Voorbeeldtoepassingen
+## Example applications
 
-Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Download en installeer deze voltooide voorbeelden om meteen aan de slag te gaan.
+Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Download and install these finished examples to get started right away.
 
 <table>
 <tr>
@@ -92,11 +93,11 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
-    <strong>Android™-voorbeeld</strong>
+    <strong>Android™ Example</strong>
     </a>
     </div>
     <p>
-    <em>Een Android™-toepassing die wordt aangedreven door AEM GraphQL API's.</em>
+    <em>An Android™ application powered by AEM's GraphQL APIs.</em>
     </p>
   </td>
   <td>
@@ -109,7 +110,7 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
       </a>
     </div>
     <p>
-    <em>Een React toepassing aangedreven door AEM GraphQL APIs.</em>
+    <em>A React application powered by AEM's GraphQL APIs.</em>
     <p>
   </td>
 </tr>
@@ -117,21 +118,21 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 
 ## Tutorials per kader
 
-Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer hoe AEM meer kan betekenen dan alleen een hoofdloze kwestie, met opties voor in-context authoring en ervaringsbeheer.
+Browse the following tutorials based on the technology used. Leer hoe AEM meer kan betekenen dan alleen een hoofdloze kwestie, met opties voor in-context authoring en ervaringsbeheer.
 
 <table>
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html">
-      <img alt="Reageren - Hoofdloos" src="./assets/react-headless.png" />
+      <img alt="React - Headless" src="./assets/react-headless.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
-    <strong>Reageren - Hoofdloos</strong>
+    <strong>React - Headless</strong>
     </a>
     </div>
     <p>
-    <em>Bouw een React JS app gebruikend GraphQL in een puur hoofdloos scenario.</em>
+    <em>Build a React JS app using GraphQL in a pure headless scenario.</em>
     <p>
   </td>
   <td>
@@ -144,12 +145,12 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </a>
     </div>
     <p>
-    <em>De auteur in-context een gedeelte van een ver ontvangen toepassing van het Reageren.</em>
+    <em>Author in-context a portion of a remotely hosted React application.</em>
     </p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-      <img alt="Reageren - SPA Editor" src="./assets/react-spa-editor.png" />
+      <img alt="React - SPA Editor" src="./assets/react-spa-editor.png" />
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
@@ -164,7 +165,7 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
-      <img alt="Reageren - Hoofdloos" src="./assets/angular-spa-editor.png" />
+      <img alt="React - Headless" src="./assets/angular-spa-editor.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
@@ -177,11 +178,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-    <img alt="Angular - Inhoudsservices" src="./assets/android.png" />
+    <img alt="Angular - Content Services" src="./assets/android.png" />
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-    <strong>Android - Inhoudsservices</strong>
+    <strong>Android - Content Services</strong>
     </a>
     </div>
     <p>
@@ -194,7 +195,7 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
-        <strong>Node.js - Authentificatie</strong>
+        <strong>Node.js - Authentication</strong>
       </a>
     </div>
     <p>

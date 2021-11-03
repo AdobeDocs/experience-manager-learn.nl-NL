@@ -2,10 +2,11 @@
 title: AEM Assets Essentials-video's
 description: Een verzameling video's voor Adobe Experience Manager Assets Essentials
 sub-product: assets
+recommendations: disable
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
@@ -14,24 +15,24 @@ ht-degree: 0%
 
 ![Assets Essentials](./assets/overview/hero.png)
 
-Experience Manager Assets Essentials biedt een gestroomlijnde gebruikersinterface voor eenvoudig beheer van bedrijfsmiddelen en samenwerking.
+Experience Manager Assets Essentials provides a streamlined user interface for lightweight asset management and collaboration.
 
-Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middelen te beheren en hoe u deze kunt integreren met Adobe Journey Orchestrator!
+Check out these videos on how to use Assets Essentials to manage your assets, and how it can be integrated with Adobe Journey Orchestrator!
 
 ## Meer informatie over Assets Essentials
 
 <table>
 <td>
    <a href="./basics/managing.md">
-   <img alt="Aan de slag met Assets Essentials" src="./assets/overview/getting-started.png" />
+   <img alt="Getting started with Assets Essentials" src="./assets/overview/getting-started.png" />
    </a>
    <div>
       <a href="./basics/managing.md">
-      <strong>Aan de slag met Assets Essentials</strong>
+      <strong>Getting started with Assets Essentials</strong>
       </a>
    </div>
    <p>
-      <em>Leer de basisbeginselen van Assets Essentials!</em>
+      <em>Learn the basics of Assets Essentials!</em>
    </p>
 </td>
 <td>
