@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
+source-git-commit: 846400cd3ac4eb1b04ece055dfcbbd677f11e88e
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1819'
 ht-degree: 0%
 
 ---
@@ -64,9 +64,9 @@ Deze zelfstudie gebruikt de [as a Cloud Service SDK AEM](https://experienceleagu
    $ java -jar aem-author-p4502.jar
    ```
 
-1. Een beheerderswachtwoord opgeven als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert zijn om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
+1. Een beheerderswachtwoord opgeven als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert zijn gebruik `admin` voor lokale ontwikkeling om de noodzaak om opnieuw te configureren te verminderen.
 1. Na een paar minuten zal de AEM-instantie klaar zijn met installeren en een nieuw browservenster moet worden geopend om [http://localhost:4502](http://localhost:4502).
-1. Aanmelden met de gebruikersnaam `admin` en wachtwoord `admin`.
+1. Aanmelden met de gebruikersnaam `admin` en het wachtwoord dat tijdens AEM eerste opstarten is geselecteerd (gewoonlijk `admin`).
 
 ## Voorbeeldinhoud en GraphQL-eindpunten installeren {#wknd-site-content-endpoints}
 
