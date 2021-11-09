@@ -2,25 +2,25 @@
 feature-set: Experience Manager Forms, Experience Manager
 role: Developer
 user-guide-title: AEM Forms-video's en -Tutorials
-user-guide-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers.
+user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
 
 
-# AEM Forms Videos and Tutorials {#forms}
+# AEM Forms-video&#39;s en -Tutorials {#forms}
 
 + [Overzicht](overview.md)
 + [Aanbevolen procedures](adaptive-forms/best-practices-adaptive-forms.md)
-+ [Setting up OKTA authentication with AEM Author](adaptive-forms/single-sign-on-with-okta.md)
-+ Creating your first Adaptive Form {#creating-your-first-adaptive-form}
++ [OKTA-verificatie instellen met AEM-auteur](adaptive-forms/single-sign-on-with-okta.md)
++ Uw eerste adaptieve formulier maken {#creating-your-first-adaptive-form}
    + [Inleiding en installatie](creating-your-first-adaptive-form/introduction-and-setup.md)
-   + [Create Adaptive Form template](creating-your-first-adaptive-form/create-adaptive-form-template.md)
+   + [Adaptief formuliersjabloon maken](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [Formulierfragment maken](creating-your-first-adaptive-form/create-form-fragment.md)
    + [Adaptief formulier maken](creating-your-first-adaptive-form/create-adaptive-form.md)
    + [Hoofddeelvenster configureren en onderliggende deelvensters toevoegen](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
@@ -35,22 +35,22 @@ ht-degree: 0%
    + [Verzenden naar extern eindpunt](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [E-mail verzenden](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Workflow voor betaalde tijd uit aanvraag](handling-form-submissions/paid-time-off-request-workflow.md)
-   + [Configuring Adaptive Form to trigger AEM Workflow - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
-   + [Customize Assign Task Notification](handling-form-submissions/customize-assign-task-notification.md)
-+ Useful Integrations{#some-useful-integrations}
-   + [Two Factor Authentication](some-useful-integrations/two-factor-authentication.md)
+   + [Adaptief formulier configureren om AEM workflow te activeren - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+   + [Taakmelding toewijzen aanpassen](handling-form-submissions/customize-assign-task-notification.md)
++ Nuttige integratie{#some-useful-integrations}
+   + [Verificatie met twee factoren](some-useful-integrations/two-factor-authentication.md)
    + [OCR-gegevensextractie](some-useful-integrations/ocr-data-extraction.md)
 + OSGi-bundel maken {#creating-your-first-osgi-bundle}
-   + [Setup your environment](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
-   + [Create OSGi Service](creating-your-first-osgi-bundle/create-osgi-service.md)
+   + [Uw omgeving instellen](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
+   + [OSGi-service maken](creating-your-first-osgi-bundle/create-osgi-service.md)
    + [Sling Servlet maken](creating-your-first-osgi-bundle/create-servlet.md)
 + Adaptieve Forms {#adaptive-forms}
    + [AEM Forms installeren in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [32-bits pakketten installeren op Linux](adaptive-forms/installing-aem-form-on-linux.md)
    + [Prefill-service in adaptieve Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
-   + [Custom Submit in Adaptive Forms](adaptive-forms/custom-submit-aem-forms-article.md)
+   + [Aangepast verzenden in adaptieve Forms](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha in Adaptive Forms](adaptive-forms/forms-captcha-feature-video-use.md)
-   + [Embedding Adaptive Form in web page](adaptive-forms/embed-af-web-page.md)
+   + [Adaptief formulier insluiten in webpagina](adaptive-forms/embed-af-web-page.md)
    + [Een array van tekenreeksen maken](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [Het gebruiken van Vastgestelde Waarde in XML in Werkschema OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [Ingestelde waarde gebruiken in JSON in OSGI-workflow](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
@@ -71,9 +71,9 @@ ht-degree: 0%
    + [Service-gebruiker gebruiken in AEM Forms](adaptive-forms/service-user-tutorial-develop.md)
    + [DoR voor labelen en opslaan op adaptieve formulierverzending](adaptive-forms/tagging-and-saving-document-of-record-in-dam-article-use.md)
    + [Bezig met vullen van tabel met de resultaten van Inroeping van de service Form Data Model](adaptive-forms/populatetable.md)
-   + [Capturing workflow comments](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
-   + [Storing Submitted Form Data in DB](adaptive-forms/storing-adaptive-form-data-in-db.md)
-   + [Form Data Model Service in AEM 6.4 Workflow](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
+   + [Opmerkingen over werkstromen vastleggen](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
+   + [Ingediende formuliergegevens opslaan in DB](adaptive-forms/storing-adaptive-form-data-in-db.md)
+   + [Formuliergegevensmodelservice in AEM 6.4-workflow](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Foutberichten verwerken in de stap Service Model van formuliergegevens](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [Formuliergegevensmodelservice in AEM 6.5.1-workflow](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
    + [Formuliergegevensmodel zonder gegevensbron](adaptive-forms/form-data-model-without-data-source-feature-video-use.md)
@@ -81,7 +81,7 @@ ht-degree: 0%
    + [JDBC-gegevensbron instellen in AEM Forms](adaptive-forms/data-integration-technical-video-setup.md)
    + [Op JDBC gebaseerd formuliergegevensmodel](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Koppelingen maken tussen 2 entiteiten in formuliergegevensmodel](adaptive-forms/association-data-model-technical-video-use.md)
-   + [Using Form Data Model&#39;s invoke service in Rule Editor](adaptive-forms/service-data-model-technical-video-use.md)
+   + [De aanroepservice van het formuliergegevensmodel gebruiken in de regeleditor](adaptive-forms/service-data-model-technical-video-use.md)
    + [Binaire gegevens naar DAM AEM met formuliergegevensmodel](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Opnieuw bruikbare workflowmodellen maken](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [Aangepaste processtap AEM workflow](adaptive-forms/custom-process-step-aem-workflow.md)
@@ -96,18 +96,19 @@ ht-degree: 0%
    + [Request-parameter ophalen](prefill-fdm-db/get-request-parameter.md)
    + [adaptief formulier maken](prefill-fdm-db/create-adaptive-form.md)
 + UI-tips en -trucs{#ui-tips-and-tricks}
-   + [Toggle password field text](ui-tips-tricks/toggle-password.md)
+   + [Tekst van wachtwoordveld in-/uitschakelen](ui-tips-tricks/toggle-password.md)
    + [Ruimte, werkbalkknoppen](ui-tips-tricks/toolbar-buttons.md)
+   + [Navigeren door tabbladen met geneste deelvensters](ui-tips-tricks/nested-panels.md)
 + Postvak IN aanpassen{#inbox-customization}
    + [Inleiding](inbox-customization/introduction.md)
-   + [Add custom column](inbox-customization/add-married-column.md)
-   + [Using sightly template](inbox-customization/use-sightly-template.md)
+   + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
+   + [Sweeksjabloon gebruiken](inbox-customization/use-sightly-template.md)
 + E-mailformulierbijlagen{#zipping-form-attachments}
    + [Inleiding](zipping-form-attachments/introduction.md)
    + [Formulierbijlagen comprimeren](zipping-form-attachments/custom-process-step.md)
-   + [Email Form Attachments](zipping-form-attachments/populating-list-of-documents.md)
+   + [E-mailformulierbijlagen](zipping-form-attachments/populating-list-of-documents.md)
    + [De oplossing testen](zipping-form-attachments/test.md)
-+ Storing and Retrieving Adaptive Form{#store-and-retrieve-af-with-2fa}
++ Adaptief formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
    + [Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
    + [Gegevensbron configureren](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [Formulierbijlagen opslaan](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -133,10 +134,10 @@ ht-degree: 0%
    + [Adaptief formulier maken en configureren](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Adaptief formulier configureren voor één ondertekenaar](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Adaptief formulier configureren voor twee ondertekenaars](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configure Automated Forms Conversion Service](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Automatede form conversion-service configureren](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF-formulier converteren naar adaptief formulier](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
-   + [Configure converted Adaptive Form](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
-   + [Using XDP templates with Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
+   + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
+   + [XDP-sjablonen gebruiken met Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Meerdere Forms ondertekenen{#sign-multiple-documents}
    + [Inleiding](sign-multiple-documents/introduction.md)
    + [Gegevensbron configureren](sign-multiple-documents/configure-data-source.md)
@@ -153,13 +154,13 @@ ht-degree: 0%
    + [Inleiding - Variabelen in workflow](variables-aem-workflow/introduction.md)
    + [XML-variabelen](variables-aem-workflow/part1.md)
    + [JSON-variabelen](variables-aem-workflow/part2.md)
-   + [Document Variables](variables-aem-workflow/part3.md)
+   + [Documentvariabelen](variables-aem-workflow/part3.md)
    + [ArrayList-variabele](variables-aem-workflow/part4.md)
-   + [Form Data Model Variable](variables-aem-workflow/form-data-model.md)
+   + [Formuliergegevensmodelvariabele](variables-aem-workflow/form-data-model.md)
    + [Regeleditor in AEM workflow](variables-aem-workflow/part5.md)
-+ Storing and Retrieving Form Data in MySQL DB{#storing-and-retrieving-form-data}
++ Formuliergegevens opslaan en ophalen in MySQL DB{#storing-and-retrieving-form-data}
    + [Inleiding](storing-retrieving-form-data/introduction.md)
-   + [Configure Data Source](storing-retrieving-form-data/part1.md)
+   + [Gegevensbron configureren](storing-retrieving-form-data/part1.md)
    + [Service voor het opslaan van gegevens](storing-retrieving-form-data/part3.md)
    + [Servlet maken](storing-retrieving-form-data/part2.md)
    + [Clientbibliotheek](storing-retrieving-form-data/part4.md)
@@ -195,15 +196,15 @@ ht-degree: 0%
 
 + Document Services {#document-services}
    + [Typen PDF forms](document-services/pdf-forms-and-documents.md)
-   + [Using Assembler Service in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
-   + [Using Watched Folder in AEM Forms](document-services/watched-folders-document-services-article-use.md)
+   + [Assembler Service gebruiken in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
+   + [Controlemap gebruiken in AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Streepjescodeservice gebruiken in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [PDFG-service gebruiken in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
-   + [Using Output and Forms Service in AEM Forms](document-services/output-and-forms-services-article-develop.md)
+   + [Uitvoer- en Forms-service gebruiken in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Meerdere PDF&#39;s genereren op basis van één gegevensbestand](document-services/generate-multi-record-pdf.md)
-   + [Generate PDF on Mobile Form Submission](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [PDF genereren op mobiele formulieren](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [Interactieve PDF uit mobiel formulier genereren](document-services/render-interactive-form-using-api.md)
-   + [Generate Interactive DoR from Adaptive Form](document-services/generate-interactive-dor.md)
+   + [Interactieve DoR genereren uit adaptief formulier](document-services/generate-interactive-dor.md)
    + [Credentiële Reader extensies configureren](document-services/configuring-reader-extension-osgi.md)
    + [Gebruiksrechten toepassen op PDF bij XDP-uitvoering](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Gebruiksrechten toepassen op geüploade PDF](document-services/apply-reader-extension-rights-to-pdf.md)
@@ -258,21 +259,21 @@ ht-degree: 0%
    + [Documentservices: Procedure voor het verhogen van de time-out bij transacties voor conversie van grote bestanden](troubleshooting/how-to-increase-aries-transaction-timeout-for-conversion-of-large-files.md)
    + [Documentservices: Hoe te om ladingstests in werking te stellen gebruikend FormsIVS en OutputIVS](troubleshooting/how-to-run-load-tests-using-formsivs-and-outputivs.md)
    + [Documentservices: Aangepaste XDP&#39;s en gegevensbestanden bijwerken in FormsIVS en OutputIVS](troubleshooting/how-to-update-custom-xdps-and-data-files-in-formsivs-and-outputivs.md)
-   + [Document Services: Steps to enable verbose ORB trace](troubleshooting/steps-to-enable-verbose-orb-trace.md)
+   + [Documentservices: Stappen om verbose ORB spoor toe te laten](troubleshooting/steps-to-enable-verbose-orb-trace.md)
    + [Documentservices: Stappen om de grootte van de bmc-pool voor XMLFormService part1 aan te passen](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-1.md)
    + [Documentservices: Stappen om de grootte van de bmc-pool voor XMLFormService part2 aan te passen](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-2.md)
    + [Documentservices: Stappen voor het aanpassen van parameters op JMX-console](troubleshooting/steps-to-tweak-parameters-on-jmx-console.md)
    + [PDFG: Hoe te om de transactieonderbrekingen in PDFG te veranderen](troubleshooting/how-to-change-the-transaction-timeout-in-pdfg.md)
    + [PDFG: CORBA-time-out bijwerken in PDFG](troubleshooting/how-to-update-corba-timeout-in-pdfg.md)
-   + [PDFG: How to update the timeouts in PDFG](troubleshooting/how-to-update-the-timeouts-in-pdfg.md)
+   + [PDFG: Hoe te om onderbrekingen in PDFG bij te werken](troubleshooting/how-to-update-the-timeouts-in-pdfg.md)
    + [PDFG: Stappen om PDFG-gebruiker toe te voegen aan Windows Server 2016](troubleshooting/steps-to-add-pdfg-user-in-windows-server.md)
    + [PDFG: Stappen om bibliotheken met 32 bits en hun gebiedsdelen te controleren en te installeren](troubleshooting/steps-to-check-and-install-32-bit-libraries-and-their-dependencies.md)
-   + [PDFG: Steps to check folder permission on windows server 2016](troubleshooting/steps-to-check-folder-permission-on-windows-server-2016.md)
+   + [PDFG: Stappen om mapmachtigingen te controleren op Windows Server 2016](troubleshooting/steps-to-check-folder-permission-on-windows-server-2016.md)
    + [PDFG: Stappen om afstand op unix in te schakelen](troubleshooting/steps-to-enable-strace-on-unix-setup.md)
    + [PDFG: Stappen om vereiste Microsoft Visual C++ redistributables met 32 bits te installeren](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
    + [PDFG: Stappen om output van het Hulpmiddel van de Gereedheid van het Systeem in werking te stellen en te interpreteren](troubleshooting/steps-to-run-and-interpret-output-of-system-readiness-tool.md)
-   + [PDFG: Steps to troubleshoot acrobat specific issues](troubleshooting/steps-to-troubleshoot-acrobat-specific-issues.md)
-   + [PDFG: Steps to troubleshoot HtmltoPDF issues on windows](troubleshooting/steps-to-troubleshoot-htmltopdf-issues-on-windows.md)
+   + [PDFG: Stappen om specifieke problemen met acrobat op te lossen](troubleshooting/steps-to-troubleshoot-acrobat-specific-issues.md)
+   + [PDFG: Stappen voor het oplossen van problemen HtmltoPDF op vensters](troubleshooting/steps-to-troubleshoot-htmltopdf-issues-on-windows.md)
    + [PDFG: Stappen voor het oplossen van specifieke problemen HtmltoPDF op unix (PhantomJS)](troubleshooting/steps-to-troubleshoot-htmltopdf-specific-issues-on-unix-phantomjs.md)
    + [PDFG: Stappen voor het oplossen van specifieke problemen HtmltoPDF bij unix (omzetting WebKit)](troubleshooting/steps-to-troubleshoot-htmltopdf-specific-issues-on-unix-webkit.md)
    + [PDFG: Stappen om PDFG-conversie voor meerdere gebruikers op unix problemen op te lossen](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-unix.md)
