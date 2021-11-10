@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
+source-git-commit: 20cae7a327131927f831ae9c49fb5eebfb00f5c4
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -27,6 +27,7 @@ Wanneer uw formulier navigatietabels links heeft en een van de tabbladen meerder
 ## Adaptief formulier maken
 
 Maak een adaptief formulier met de volgende structuur. Het hoofddeelvenster bevat onderliggende deelvensters die links als tabbladen worden weergegeven. Sommige van deze &quot;**tabs**&quot; hebt extra onderliggende deelvensters. Het tabblad Familie heeft bijvoorbeeld twee onderliggende deelvensters: Echtgenoot en Onderliggende.
+
 Er wordt ook een werkbalk toegevoegd onder de FormContainer met de knoppen Vorige en Volgende
 
 ![werkbalkafstand](assets/multiple-panels.png)
@@ -56,9 +57,10 @@ Met de bovenstaande code kunt u gemakkelijk navigeren tussen de tabbladen en de 
 
 ## De titel van onderliggende deelvensters verbergen
 
-Met de stijleditor kunt u de titel van de onderliggende tabbladen verbergen.
+Gebruik de stijleditor om de titel van de onderliggende tabbladen te verbergen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
 
 >[!NOTE]
-> De in dit artikel beschreven mogelijkheid werkt niet op het laatste tabblad. Als het tabblad Adres bijvoorbeeld onderliggende deelvensters bevat, werkt deze functionaliteit niet.
+>
+>De in dit artikel beschreven mogelijkheid werkt niet op het laatste tabblad. Als het tabblad Adres bijvoorbeeld onderliggende deelvensters bevat, werkt deze functionaliteit niet.
