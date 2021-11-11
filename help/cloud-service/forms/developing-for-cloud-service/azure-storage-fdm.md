@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 8484897297940ab28619c4b1af5362a5937eadfa
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -44,10 +44,5 @@ Neem het juiste item op in het bestand filter.xml van het project ui.content
 
 
 >[!NOTE]
-
+>
 >Wanneer u nu uw project maakt en implementeert, beschikt het project over het formuliergegevensmodel op basis van de configuratie van de cloudservices die beschikbaar is in uw cloudinstantie
-
-
-
-
-
