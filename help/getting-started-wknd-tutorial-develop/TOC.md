@@ -8,9 +8,9 @@ user-guide-title: Aan de slag met AEM Sites - WKND-zelfstudie
 user-guide-description: Een meerdelige zelfstudie voor ontwikkelaars die nog niet zijn AEM. Implementeer een AEM site voor een fictief levensstijlmerk, de WKND.
 breadcrumb-title: AEM Sites WKND Tutorials
 index: y
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '78'
 ht-degree: 2%
 
 ---
@@ -28,9 +28,10 @@ ht-degree: 2%
    + [5 - Stijlsysteem](./project-archetype/style-system.md)
    + [6 - Aangepaste component](./project-archetype/custom-component.md)
    + [7 - Eenheid testen](./project-archetype/unit-testing.md)
-+ Sitesjabloon {#site-template}
++ Snel site maken {#site-template}
    + [Overzicht](./site-template/overview.md)
    + [1 - Een site maken](./site-template/create-site.md)
-   + [2 - Inhoud schrijven en wijzigingen publiceren](./site-template/author-content-publish.md)
+   + [2 - Introductie tot het ontwerpen en publiceren](./site-template/author-content-publish.md)
+   + [3 - UI-planning met Adobe XD](./site-template/ui-planning-adobe-xd.md)
    + [3 - Paginasjablonen](./site-template/page-templates.md)
    + [4 - Thema](./site-template/theming.md)
