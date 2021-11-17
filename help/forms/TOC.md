@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
+source-git-commit: bbb2c352e8a4297496f248bbbc86252ac7118999
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1628'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 0%
    + [Tekst van wachtwoordveld in-/uitschakelen](ui-tips-tricks/toggle-password.md)
    + [Ruimte, werkbalkknoppen](ui-tips-tricks/toolbar-buttons.md)
    + [Navigeren door tabbladen met geneste deelvensters](ui-tips-tricks/nested-panels.md)
+   + [Pictogrammen toevoegen aan navigatievensters](ui-tips-tricks/active-complete.md)
 + Postvak IN aanpassen{#inbox-customization}
    + [Inleiding](inbox-customization/introduction.md)
    + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
