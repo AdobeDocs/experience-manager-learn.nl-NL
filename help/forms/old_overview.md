@@ -7,8 +7,8 @@ role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 1%
+source-wordcount: '516'
+ht-degree: 0%
 
 ---
 
@@ -76,6 +76,102 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 </tr>
 </table>
 
+>[!TIP]
+>
+>Deze verzameling monsters om verschillende mogelijkheden van AEM Forms aan te tonen.
+
+
+## Voorbeelden van adaptieve formulieren
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <img alt= "Captch in AEM Forms" src="./assets/captcha1.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
+    <strong>Google Captcha in adaptieve vorm</strong>
+    </a>
+    </div>
+    <p>
+    <em> Duidelijk maken tussen menselijke en geautomatiseerde toegang tot formulieren</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <img alt="Voorvertoning formuliergegevens" src="./assets/preview.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <strong>Formuliergegevens controleren</strong>
+    </a>
+    </div>
+    <p>
+    <em>Bekijk een voorbeeld van de formuliergegevens voordat u het formulier verzendt.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+      <img alt=" Inline-afbeelding" src="./assets/preview.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+        <strong>Inline-afbeelding weergeven</strong>
+      </a>
+    </div>
+    <p>
+    <em>Geef de afbeelding weer die aan het formulier is toegevoegd.</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## Voorbeelden van adaptieve formulieren en handtekeningen
+
+<table>
+<tr>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+      <img alt="Verhuurovereenkomst" src="./assets/rental-agreement.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+    <strong>Voorbeeldformulier voor huurovereenkomst</strong>
+    </a>
+    </div>
+    <p>
+    <em>Huurovereenkomst tussen huurder en verhuurder ingevuld en ondertekend door AEM Forms en Adobe Sign</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <img alt="NDA-overeenkomst" src="./assets/nda1.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <strong>Geen geheimhoudingsovereenkomst genereren</strong>
+    </a>
+    </div>
+    <p>
+    <em>NDA dynamisch maken en verzenden voor ondertekening met Adobe Sign</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+      <img alt="Documentpakket ondertekenen" src="./assets/sign.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+        <strong>Pakket met documenten ondertekenen</strong>
+      </a>
+    </div>
+    <p>
+    <em>Meerdere documenten naadloos ondertekenen met Forms en Adobe Sign</em>
+    <p>
+  </td>
+</tr>
+</table>
 
 
 

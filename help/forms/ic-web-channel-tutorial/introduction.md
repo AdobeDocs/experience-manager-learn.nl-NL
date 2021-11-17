@@ -1,30 +1,28 @@
 ---
 title: Uw eerste interactieve communicatie voor het webkanaal maken
-seo-title: Uw eerste interactieve communicatie voor het webkanaal maken
+seo-title: Creating your first interactive communication for the web channel
 description: Interactieve communicatie is nieuw voor AEM Forms 6.4. In dit document worden de stappen doorlopen die nodig zijn om een interactieve communicatie voor het webkanaal te maken.
-seo-description: Interactieve communicatie is nieuw voor AEM Forms 6.4. In dit document worden de stappen doorlopen die nodig zijn om een interactieve communicatie voor het webkanaal te maken.
-feature: Interactieve communicatie
+seo-description: Interactive Communications is new to AEM Forms 6.4. This document will walk you through the steps needed to create an interactive communication for the web channel.
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 65b1af30-9e22-4df0-ab91-479d5406df61
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
 
-
 # Uw eerste interactieve communicatie voor het webkanaal maken
 
 Interactieve communicatie is nieuw voor AEM Forms 6.4. In dit document worden de stappen doorlopen die nodig zijn om een interactieve communicatie voor het afdrukkanaal te maken.
-
-Ga naar de pagina [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) voor een koppeling naar een live demo van deze mogelijkheid.
 
 ## Vereisten {#prerequistes}
 
@@ -39,7 +37,3 @@ Na voltooiing van deze zelfstudie hebt u het volgende geleerd:
 * Documentfragmenten maken
 * Tabellen en grafieken configureren
 * Webkanaaldocumenten leveren
-
-
-
-

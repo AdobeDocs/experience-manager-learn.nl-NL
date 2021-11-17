@@ -1,28 +1,27 @@
 ---
-title: PDF genereren van HTM5-formulierverzending
-description: PDF genereren van verzending van mobiele formulieren
+title: PDF genereren op basis van HTML5-formulierverzending
+description: PDF genereren uit mobiele formulierverzending
 feature: Mobile Forms
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 91b4a134-44a7-474e-b769-fe45562105b2
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
+# PDF genereren op basis van HTML5-formulierverzending {#generate-pdf-from-htm-form-submission}
 
-# PDF genereren van HTM5-formulierverzending {#generate-pdf-from-htm-form-submission}
+In dit artikel worden de stappen beschreven die nodig zijn voor het genereren van pdf-bestanden via een HTML5-formulierverzending (ook bekend als Mobile Forms). In deze demo worden ook de stappen uitgelegd die nodig zijn om een afbeelding toe te voegen aan het HTML5-formulier en de afbeelding samen te voegen in de uiteindelijke PDF.
 
-In dit artikel worden de stappen doorlopen die nodig zijn voor het genereren van PDF-bestanden via het verzenden van een HTML5-formulier (ook bekend als Mobile Forms). In deze demo worden ook de stappen uitgelegd die nodig zijn om een afbeelding toe te voegen aan HTML5-formulier en de afbeelding samen te voegen in de uiteindelijke PDF.
-
-Voor een live demonstratie van deze mogelijkheid gaat u naar de [voorbeeldserver](https://forms.enablementadobe.com/content/samples/samples.html?query=0) en zoekt u naar &quot;Mobiel formulier naar PDF&quot;.
 
 Om de voorgelegde gegevens in het xdp malplaatje samen te voegen doen wij het volgende
 
-Een servlet schrijven om de verzending van HTML5-formulieren af te handelen
+Schrijf een servlet om de HTML5-formulierverzending te verwerken
 
 * In deze server worden de verzonden gegevens opgeslagen
 * Deze gegevens samenvoegen met de xdp-sjabloon om pdf te genereren
@@ -68,7 +67,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 We hebben het volgende gebruikt om een afbeelding toe te voegen aan een mobiel formulier en die afbeelding weer te geven in de PDF
 
-XDP-sjabloon - In de xdp-sjabloon hebben we een afbeeldingsveld en een knop met de naam btnAddImage toegevoegd. De volgende code handelt de klikgebeurtenis van btnAddImage in ons douaneprofiel af. Zoals u kunt zien, activeren wij de file1 klikgebeurtenis. Er is geen codering nodig in de xdp om deze use case te voltooien
+XDP-sjabloon - In de xdp-sjabloon hebben we een afbeeldingsveld en knop met de naam btnAddImage toegevoegd. De volgende code handelt de klikgebeurtenis van btnAddImage in ons douaneprofiel af. Zoals u kunt zien, activeren wij de file1 klikgebeurtenis. Er is geen codering nodig in de xdp om deze use case te voltooien
 
 ```javascript
 $(".btnAddImage").click(function(){
@@ -78,7 +77,7 @@ $("#file1").click();
 });
 ```
 
-[Aangepast profiel](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). Met een aangepast profiel kunt u HTML DOM-objecten van het mobiele formulier gemakkelijker bewerken. Er wordt een verborgen bestandselement toegevoegd aan HTML.jsp. Wanneer de gebruiker op &quot;Uw foto toevoegen&quot; klikt, wordt de gebeurtenis click van het bestandselement geactiveerd. Op deze manier kan de gebruiker door de foto bladeren en de foto selecteren die u wilt bijvoegen. Vervolgens gebruiken we het Javascript FileReader-object om de base64-gecodeerde tekenreeks van de afbeelding op te halen. De base64-afbeeldingstekenreeks wordt opgeslagen in het tekstveld in het formulier. Wanneer het formulier wordt verzonden, extraheren wij deze waarde en voegen u deze in het img-element van de XML in. Deze XML wordt vervolgens gebruikt om samen te voegen met de xdp om de uiteindelijke PDF te genereren.
+[Aangepast profiel](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). Met een aangepast profiel kunt u HTML DOM-objecten van het mobiele formulier gemakkelijker bewerken. Een verborgen dossierelement wordt toegevoegd aan HTML.jsp. Wanneer de gebruiker op &quot;Uw foto toevoegen&quot; klikt, wordt de gebeurtenis click van het bestandselement geactiveerd. Op deze manier kan de gebruiker door de foto bladeren en de foto selecteren die u wilt bijvoegen. Vervolgens gebruiken we het Javascript FileReader-object om de base64-gecodeerde tekenreeks van de afbeelding op te halen. De base64-afbeeldingstekenreeks wordt opgeslagen in het tekstveld in het formulier. Wanneer het formulier wordt verzonden, extraheren wij deze waarde en voegen u deze in het img-element van de XML in. Deze XML wordt vervolgens gebruikt om samen te voegen met de xdp om de uiteindelijke PDF te genereren.
 
 Het aangepaste profiel dat voor dit artikel wordt gebruikt, is beschikbaar gesteld als onderdeel van de elementen van dit artikel.
 
@@ -105,7 +104,7 @@ De bovenstaande code wordt uitgevoerd wanneer de gebeurtenis click van het besta
 Vervolgens configureren we de volgende (geavanceerde) eigenschappen van ons mobiele formulier in AEM
 
 * URL verzenden - http://localhost:4502/bin/handlemobileformsubmission. Dit is onze servlet die de voorgelegde gegevens met het xdp malplaatje zal samenvoegen
-* HTML-renderprofiel - zorg dat u &quot;AddImageToMobileForm&quot; selecteert. Hierdoor wordt de code geactiveerd om afbeelding aan het formulier toe te voegen.
+* HTML Renderprofiel - Zorg ervoor dat u &quot;AddImageToMobileForm&quot; selecteert. Hierdoor wordt de code geactiveerd om afbeelding aan het formulier toe te voegen.
 
 Voer de volgende stappen uit om deze mogelijkheid op uw eigen server te testen:
 
@@ -115,9 +114,8 @@ Voer de volgende stappen uit om deze mogelijkheid op uw eigen server te testen:
 
 * [Download en installeer het pakket dat aan dit artikel is gekoppeld.](assets/pdf-from-mobile-form-submission.zip)
 
-* Zorg ervoor dat het verzendURL- en HTML-renderprofiel correct zijn ingesteld door de eigenschappenpagina van [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp) te bekijken
+* Zorg ervoor dat het verzendURL- en het renderprofiel HTML correct zijn ingesteld door de eigenschappenpagina van het dialoogvenster  [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
 * [Voorvertoning van de XDP weergeven als HTML](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
-* Voeg een afbeelding toe aan het formulier en verzend deze. U moet de PDF terugkrijgen met de afbeelding in de PDF.
-
+* Voeg een afbeelding toe aan het formulier en verzend deze. PDF terug met de afbeelding erin.

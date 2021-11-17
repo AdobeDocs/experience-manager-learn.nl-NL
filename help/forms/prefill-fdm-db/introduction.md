@@ -1,20 +1,20 @@
 ---
 title: Formulier vooraf invullen met formuliergegevensmodel
-description: 'Aangepast formulier vooraf invullen met het aanvraagkenmerk van het formuliergegevensmodel '
-feature: Adaptieve Forms
+description: Aangepast formulier vooraf invullen met het aanvraagkenmerk van het formuliergegevensmodel
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4419
 thumbnail: 36387.jpg
-topic: Ontwikkeling
+topic: Development
 role: User
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: be519d58-1caa-42ea-97a9-7cd38ce8faca
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
-
 
 # Formulier vooraf invullen met formuliergegevensmodel
 
@@ -23,12 +23,10 @@ Na voltooiing van deze cursus zult u het volgende geleerd hebben.
 
 * Formuliergegevensmodel maken met RDBMS-ondersteuning
 * Koppeling maken tussen 2 entiteiten
-* Tabel vullen met gegevens die worden geretourneerd door _get_-service van het formuliergegevensmodel
+* Tabel vullen met gegevens die zijn geretourneerd door _get_ service van het formuliergegevensmodel
 * Aanvraagkenmerk van formuliergegevensmodel gebruiken
 
-
-[Klik hier om de ](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207)
-mogelijkheden live te demonstreren. De volgende video geeft u een overzicht van de cursus
+In de volgende video ziet u een overzicht van de cursus
 >[!VIDEO](https://video.tv.adobe.com/v/36387/quality=9)
 
 ## Vereisten
@@ -36,4 +34,3 @@ mogelijkheden live te demonstreren. De volgende video geeft u een overzicht van 
 * Werkexemplaar van AEM Forms
 * Vertrouwd met MySQL-database en MySQL-workbench
 * Enige ervaring met het maken van Adaptive Forms
-

@@ -3,29 +3,29 @@ title: Streepjescodeservice met adaptieve Forms
 description: Streepjescodeservice gebruiken om streepjescode te decoderen en formuliervelden te vullen met de geëxtraheerde gegevens.
 feature: Barcoded Forms
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # Streepjescodeservice met adaptieve Forms{#barcode-service-with-adaptive-forms}
 
 Dit artikel toont het gebruik van de streepjescodeservice voor het invullen van een adaptief formulier. Het gebruiksgeval is als volgt:
 
-1. De gebruiker voegt PDF toe met streepjescode als adaptieve formulierbijlage
+1. De gebruiker voegt PDF met streepjescode toe als adaptieve formulierbijlage
 1. Het pad van de bijlage wordt naar de servlet verzonden
 1. De servlet decodeerde de streepjescode en retourneert de gegevens in JSON-indeling
 1. Het adaptieve formulier wordt vervolgens gevuld met behulp van de gedecodeerde gegevens
 
 De volgende code decodeert de streepjescode en vult een JSON-object met de gedecodeerde waarden. De servlet retourneert vervolgens het JSON-object in zijn reactie op de aanroepende toepassing.
 
-U kunt deze mogelijkheid live zien, bezoek dan de [portal samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) en zoek naar de demo van de streepjescodeservice
+
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -140,11 +140,10 @@ Regel 23 - Roep de methode DocumentServices extractBarCode aan om het JSON-objec
 
 Voer de volgende stappen uit om dit op uw systeem uit te voeren
 
-1. [Download BarcodeService.](assets/barcodeservice.zip) zip en importeer in AEM met behulp van pakketbeheer
+1. [BarcodeService.zip downloaden](assets/barcodeservice.zip) en importeren in AEM met pakketbeheer
 1. [De aangepaste DocumentServices-bundel downloaden en installeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Het PDF-voorbeeldformulier downloaden](assets/barcode.pdf)
-1. Wijs uw browser naar het [voorbeeldadaptieve formulier](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
-1. Het voorbeeld-PDF uploaden
+1. [Het voorbeeldformulier PDF downloaden](assets/barcode.pdf)
+1. Wijs uw browser aan [adaptief voorbeeldformulier](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. De meegeleverde PDF van het voorbeeld uploaden
 1. De formulieren worden gevuld met gegevens
-

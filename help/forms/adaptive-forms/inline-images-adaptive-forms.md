@@ -1,25 +1,23 @@
 ---
 title: Inline-afbeeldingen weergeven in Adaptive Forms
 description: Geüploade afbeeldingen inline weergeven in Adaptive Forms
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 version: 6.3,6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 4a69513d-992c-435a-a520-feb9085820e7
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
 
-
 # Inline-afbeeldingen in Adaptive Forms
 
 Een veelvoorkomend geval is het weergeven van de geüploade afbeelding als een inline-afbeelding in Adaptieve vorm. Standaard wordt de geüploade afbeelding weergegeven als een koppeling en deze ervaring kan worden vergroot door de afbeelding weer te geven in Adaptief formulier. Dit artikel doorloopt de stappen voor de weergave van inline-afbeeldingen.
-
-[Live voorbeeld van deze functie](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1)
 
 ## Afbeelding voor plaatsaanduiding toevoegen
 
@@ -66,7 +64,7 @@ function consumeImage (file) {
 
 ### Distribueren op uw server
 
-* Download en installeer de [clientbibliotheek](assets/inline-image-client-library.zip) op uw AEM-instantie met behulp van AEM pakketbeheer.
-* Download en installeer het [voorbeeldformulier](assets/inline-image-af.zip) op uw AEM-exemplaar met behulp van AEM pakketbeheer.
-* Wijs uw browser aan [Inline afbeelding toevoegen](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Download en installeer de [clientbibliotheek](assets/inline-image-client-library.zip) op uw AEM-instantie met AEM pakketbeheer.
+* Download en installeer de [voorbeeldformulier](assets/inline-image-af.zip) op uw AEM met AEM pakketbeheer.
+* Wijs uw browser aan [Inline-afbeelding toevoegen](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * Klik op de knop &quot;Foto koppelen&quot; om een afbeelding toe te voegen

@@ -6,31 +6,28 @@ version: 6.5
 topic: Development
 role: User
 level: Beginner
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
-
-
 
 # Items dynamisch toevoegen aan keuzeselectiegroep
 
 In AEM Forms 6.5 is de mogelijkheid geïntroduceerd om items dynamisch toe te voegen aan een adaptieve Forms-keuzerondjesgroepcomponent, zoals CheckBox, Radio Button en Afbeeldingslijst.
 
-[Dit vermogen is beschikbaar live op de Server](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) van Steekproeven. Zoeken naar kaart met dynamische selectievakjes en klikken op &quot;Try It&quot;
-
 
 U kunt punten toevoegen gebruikend de visuele redacteur evenals de coderedacteur afhankelijk van uw gebruiksgeval.
 
-**De visuele editor gebruiken:** u kunt de items van de keuzegroep vullen met de resultaten van een functieaanroep of serviceaanroep. U kunt bijvoorbeeld de items van de keuzegroep instellen door de reactie van een REST API-aanroep te verbruiken.
+**De visuele editor gebruiken:** U kunt de punten van de keuzegroep van de resultaten van een functievraag of een de dienstvraag bevolken. U kunt bijvoorbeeld de items van de keuzegroep instellen door de reactie van een REST API-aanroep te verbruiken.
 
 In het onderstaande schermafbeelding stellen we de opties voor de periode(jaren) van de lening in op de resultaten van een serviceoproep met de naam getLoanPeriods.
 
 ![Regeleditor](assets/ruleeditor.png)
 
-**De code-editor** gebruiken: Wanneer u de items in de keuzegroep dynamisch wilt instellen op basis van de waarden die u in het formulier hebt ingevoerd. In het volgende codefragment worden bijvoorbeeld de items van het selectievakje ingesteld op de waarden die zijn ingevoerd in de velden Naam en Muis van de aanvrager van het adaptieve formulier.
+**De code-editor gebruiken**: Wanneer u de items in de keuzegroep dynamisch wilt instellen op basis van de waarden die u in het formulier hebt ingevoerd. In het volgende codefragment worden bijvoorbeeld de items van het selectievakje ingesteld op de waarden die zijn ingevoerd in de velden Naam en Muis van de aanvrager van het adaptieve formulier.
 
 In het codefragment, plaatsen wij de punten van WorkingMember, die een checkbox component is. De array voor de items wordt dynamisch samengesteld door de waarden van de tekstvelden requestName en spouse van de adaptieve formulieren op te halen
 

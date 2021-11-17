@@ -1,18 +1,18 @@
 ---
 title: Meerdere PDF's genereren op basis van één gegevensbestand
 description: OutputService biedt een aantal methoden om documenten te maken met behulp van een formulierontwerp en gegevens om samen te voegen met het formulierontwerp. Leer om veelvoudige pdf's van één grote xml te produceren die veelvoudige individuele verslagen bevatten.
-feature: Uitvoerservice
+feature: Output Service
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 58582acd-cabb-4e28-9fd3-598d3cbac43c
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
-
 
 # Een set PDF-documenten genereren op basis van één XML-gegevensbestand
 
@@ -21,17 +21,14 @@ Hier volgt een schermafbeelding van een XML-bestand dat meerdere records bevat.
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Deze xml wordt doorgegeven aan de OutputService [generatePDFOutputBatch-methode](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) we krijgen een lijst met PDF-documenten (één per record)
-Voor de handtekening van de methode generatePDFOutputBatch worden de volgende parameters gebruikt
+Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Dit XML-bestand wordt doorgegeven aan de OutputService [generatePDFOutputBatch, methode](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) er wordt een lijst met pdf-documenten weergegeven (één per record) De handtekening van de methode generatePDFOutputBatch heeft de volgende parameters
 
 * sjablonen - kaart met de sjabloon, geïdentificeerd door een sleutel
 * data - Map met XML-gegevensdocumenten, geïdentificeerd door sleutel
 * pdfOutputOptions - opties om pdf-generatie te configureren
 * batchOptions - opties voor het configureren van batch
 
->[!NOTE]
->
->Dit gebruiksgeval is beschikbaar als levend voorbeeld op deze [website](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
+
 
 ## Details kwestie gebruiken{#use-case-details}
 
@@ -127,16 +124,15 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen:
 
-* [Download en extraheer de ZIP-bestandsinhoud naar uw bestandssysteem](assets/mult-records-template-and-xml-file.zip). Dit ZIP-bestand bevat de sjabloon en het XML-gegevensbestand.
+* [ZIP-bestandsinhoud downloaden en uitpakken naar uw bestandssysteem](assets/mult-records-template-and-xml-file.zip).This zip file contains the template and xml data file.
 * [De browser naar de Felix-webconsole sturen](http://localhost:4502/system/console/bundles)
-* [Implementeer DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* [Implementeer Aangepaste AEMFormsDocumentServices-bundel](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Aangepaste bundel die de PDF&#39;s genereert met de OutputService-API
+* [DevelopingWithServiceUser Bundle implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+* [Aangepaste AEMFormsDocumentServices-bundel implementeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Aangepaste bundel die de pdf&#39;s genereert met de OutputService-API
 * [De browser naar pakketbeheer verwijzen](http://localhost:4502/crx/packmgr/index.jsp)
-* [Importeer en installeer het pakket](assets/generate-multiple-pdf-from-xml.zip). Dit pakket bevat HTML-pagina waarmee u de sjabloon en gegevensbestanden kunt neerzetten.
+* [Het pakket importeren en installeren](assets/generate-multiple-pdf-from-xml.zip). Dit pakket bevat HTML-pagina waarmee u de sjabloon en gegevensbestanden kunt neerzetten.
 * [Wijs uw browser naar MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html?)
 * Sleep de sjabloon en het XML-gegevensbestand samen
 * Download het gemaakte zip-bestand. Dit ZIP-bestand bevat de PDF-bestanden die door de uitvoerservice zijn gegenereerd.
 
 >[!NOTE]
 >Er zijn meerdere manieren om deze mogelijkheid te activeren. In dit voorbeeld hebben we een webinterface gebruikt om de sjabloon en het gegevensbestand neer te zetten om de mogelijkheid aan te tonen.
-

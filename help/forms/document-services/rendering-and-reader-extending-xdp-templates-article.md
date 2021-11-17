@@ -1,40 +1,39 @@
 ---
-title: XDP weergeven in PDF met gebruiksrechten
+title: XDP renderen in PDF met gebruiksrechten
 description: Gebruiksrechten toepassen op pdf
 version: 6.4,6.5
 feature: Forms Service
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
+# XDP renderen in PDF met gebruiksrechten{#rendering-xdp-into-pdf-with-usage-rights}
 
-# XDP weergeven in PDF met gebruiksrechten{#rendering-xdp-into-pdf-with-usage-rights}
+Een veel voorkomend geval is het renderen van xdp in PDF en het toepassen van Reader Extensions op de gerenderde PDF.
 
-Een veelvoorkomend geval is het renderen van xdp naar PDF en het toepassen van Reader Extensions op de gerenderde PDF.
+Als een gebruiker bijvoorbeeld op XDP klikt in een formulierportal van AEM Forms, kunnen we XDP renderen als PDF en lezer de PDF uitbreiden.
 
-Als een gebruiker bijvoorbeeld op XDP klikt in de portal Formulieren van AEM Forms, kunnen we XDP weergeven als PDF en de PDF door Reader uitbreiden.
-
-Om dit vermogen te testen, kunt u dit [verbinding](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse2) proberen. De voorbeeldnaam is &quot;Renderen en Reader breiden XDP uit&quot;
 
 Voor dit gebruiksgeval moeten we het volgende doen.
 
-* Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. De stappen om de credentie van de Uitbreidingen van de Reader toe te voegen zijn vermeld [hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. De stappen om de credentiële van de Uitbreidingen van de Reader toe te voegen zijn vermeld [hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
 
 
-* U kunt ook naar de video verwijzen wanneer u aanmeldgegevens voor Reader-extensies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) configureert[
+* U kunt ook naar de video verwijzen op [aanmeldgegevens voor Reader Extensions configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
 
 
 * Creeer de douanedienst OSGi die gebruiksrechten zal teruggeven en toepassen. De code om dit te bereiken wordt hieronder vermeld
 
 ## XDP renderen en gebruiksrechten toepassen {#render-xdp-and-apply-usage-rights}
 
-* Regel 7: Met de renderPDFForm van FormsService genereren we PDF van XDP.
+* Regel 7: Gebruikend renderPDFForm van FormsService produceren wij PDF van XDP.
 
 * Lijnen 8-14: De juiste gebruiksrechten worden ingesteld. Deze gebruiksrechten worden opgehaald van de OSGi-configuratiemontages.
 
@@ -123,13 +122,13 @@ public @interface DocSvcConfiguration {
 
 ## Servlet maken om de PDF te streamen {#create-servlet-to-stream-the-pdf}
 
-De volgende stap bestaat uit het maken van een servlet met een methode GET om de voor lezer uitgebreide PDF naar de gebruiker te retourneren. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn bestandssysteem. De reden hiervoor is dat de PDF wordt gerenderd als dynamische PDF en de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
+De volgende stap bestaat uit het maken van een servlet met een methode GET om de lezer uitgebreide PDF naar de gebruiker terug te sturen. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn of haar bestandssysteem. De reden hiervoor is dat de PDF wordt weergegeven als dynamische PDF en dat de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
 
 Hier volgt de code voor de servlet. We geven het pad van de XDP in de CRX-opslagruimte door aan deze servlet.
 
 Vervolgens roept u de methode renderAndExtendXdp van com.aemformssamples.documentservices.core.DocumentServices aan.
 
-Het uitgebreide PDF-bestand van de lezer wordt vervolgens gestreamd naar de opvragende toepassing
+De lezer extended PDF wordt vervolgens gestreamd naar de aanroepende toepassing
 
 ```java
 package com.aemformssamples.documentservices.core.servlets;
@@ -205,6 +204,3 @@ Voer de volgende stappen uit om dit op uw lokale server te testen
 1. Certificaat van extensies voor Readers toevoegen aan gebruiker van het type fd-service
 1. Wijs uw browser aan [portalwebpagina](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Klik op het pictogram pdf om de xdp te renderen als een PDF-bestand waarop gebruiksrechten zijn toegepast.
-
-
-
