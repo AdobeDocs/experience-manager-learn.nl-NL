@@ -9,10 +9,10 @@ level: Experienced
 kt: 8631
 thumbnail: 336959.jpeg
 exl-id: 9d2004e5-e928-4190-8298-695635c8e92c
-source-git-commit: 1ddf6154d50a341d9a0fd4234392c37ced878a73
+source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '326'
+ht-degree: 4%
 
 ---
 
@@ -28,8 +28,43 @@ Leer hoe u vanaf de contractfase as a Cloud Service kunt AEM door de omgevingen 
 
 Een belangrijk onderdeel van instapweigering is het maken van AEM as a Cloud Service programma&#39;s en het bieden van verschillende omgevingen met behulp van Adobe Cloud Manager. De [Admin Console](https://adminconsole.adobe.com/) wordt gebruikt om rollen toe te wijzen en toegang voor gebruikers in uw organisatie aan AEM milieu&#39;s te verlenen.
 
-### Belangrijkste activiteiten
+## Belangrijkste activiteiten
 
-* Een systeembeheerder gebruikt de [Admin Console](https://adminconsole.adobe.com/) om een of meer gebruikers aan de [Cloud Manager - bedrijfseigenaar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) productprofiel.
-* Gebruiker(s) die is/zijn toegewezen aan het productprofiel van de eigenaar van het bedrijf, gebruikt de functies voor zelfbediening van [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) tot [programma(&#39;s) maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) en [omgevingen toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
-* Gebruik de [Admin Console](https://adminconsole.adobe.com/) om Ontwikkelaars en gebruikers toe te wijzen aan verschillende [Rollen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) en geef toestemming aan verschillende AEM omgevingen.
++ Een systeembeheerder gebruikt de [Admin Console](https://adminconsole.adobe.com/) om een of meer gebruikers aan de [Cloud Manager - bedrijfseigenaar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) productprofiel.
++ Gebruiker(s) die is/zijn toegewezen aan het productprofiel van de eigenaar van het bedrijf, gebruikt de functies voor zelfbediening van [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) tot [programma(&#39;s) maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) en [omgevingen toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
++ Gebruik de [Admin Console](https://adminconsole.adobe.com/) om Ontwikkelaars en gebruikers toe te wijzen aan verschillende [Rollen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) en geef toestemming aan verschillende AEM omgevingen.
+
+## Handbeweging
+
+Pas je kennis toe door uit te proberen wat je geleerd hebt met deze praktische oefening.
+
+Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaande video en de volgende materialen hebt bekeken en begrepen:
+
++ [ anders denken over AEM as a Cloud Service](./introduction.md)
++ [Cloud Manager](./cloud-manager.md)
+
+Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
+
++ [AEM Moderniseringsgereedschappen, praktische oefening](./aem-modernization-tools.md#hands-on-exercise)
+
+<table style="border-width:0">
+    <tr>
+        <td style="width:150px">
+            <a  rel="noreferrer"
+                target="_blank"
+                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session3-onboarding#bootcamp---session-3-on-boarding"><img alt="Hands-on opslagplaats van GitHub" src="./assets/github.png"/>
+            </a>        
+        </td>
+        <td style="width:100%;margin-bottom:1rem;">
+            <div style="font-size:1.25rem;font-weight:400;">Hands-on met onboarding</div>
+            <p style="margin:1rem 0">
+                Ontdek AEM as a Cloud Service instapprocedure en hoe u een AEM toepassing kunt implementeren in de AEM SDK.
+            </p>
+            <a  rel="noreferrer"
+                target="_blank"
+                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session3-onboarding#bootcamp---session-3-on-boarding" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Uitproberen bij het instappen</span>
+            </a>
+        </td>
+    </tr>
+</table>

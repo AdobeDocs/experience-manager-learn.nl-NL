@@ -9,9 +9,9 @@ level: Experienced
 kt: 8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
-source-git-commit: 1ddf6154d50a341d9a0fd4234392c37ced878a73
+source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Meer informatie over de modernisering van de opslagplaats, muteerbare en onveran
 
 Als deel van het refactoring van uw codebasis, gebruik [Gereedschap Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) om een 6.x codebasis aan een modernere structuur te herstructureren.
 
-### Belangrijkste activiteiten
+## Belangrijkste activiteiten
 
 * Gebruik de [Adobe I/O Repository Modernizer](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) een instrument om een project te herstructureren zodat het overeenkomt met de verwachte structuur van een AEM as a Cloud Service project.
 * Pas eventuele constructiefouten in de bijgewerkte codebasis handmatig aan en repareer deze.
