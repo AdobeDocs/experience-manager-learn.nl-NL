@@ -4,9 +4,9 @@ user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experi
 breadcrumb-title: AEM Assets Tutorials
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: cd54cfbbded4e44f4850f9dac8ab17d179e7d498
+source-git-commit: a5c128d92f4a4625279b6ef76c61f1afb6ed45d5
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '357'
 ht-degree: 5%
 
 ---
@@ -82,6 +82,7 @@ ht-degree: 5%
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
 + Adobe-itemkoppeling{#adobe-asset-link}
+   + [Instellen](./adobe-asset-link/setup.md)
    + [Koppeling naar Adobe-element openen](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Overzicht van deelvensters](./adobe-asset-link/panel-overview.md)
    + [Bestanden en verzamelingen](./adobe-asset-link/files-and-collections.md)
