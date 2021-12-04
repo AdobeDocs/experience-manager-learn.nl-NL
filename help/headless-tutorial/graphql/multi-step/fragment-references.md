@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d85b7ac3-42c1-4655-9394-29a797c0e1d7
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Het is mogelijk te verwijzen naar een inhoudsfragment vanuit een ander inhoudsfragment. Dit laat een gebruiker toe om complexe gegevensmodellen met verhoudingen tussen Fragments te bouwen.
 
-In dit hoofdstuk werkt u het Adventure-model zo bij dat een verwijzing naar het Contributor-model wordt opgenomen met behulp van het veld **Fragment Reference**. U zult ook leren hoe te om een vraag te wijzigen GraphQL om gebieden van een referenced model te omvatten.
+In dit hoofdstuk wordt het Adventure-model bijgewerkt en wordt een verwijzing naar het model van de Contributor opgenomen met behulp van het **Fragmentverwijzing** veld. U zult ook leren hoe te om een vraag te wijzigen GraphQL om gebieden van een referenced model te omvatten.
 
 ## Vereisten
 
@@ -39,39 +39,39 @@ In dit hoofdstuk leert u hoe u:
 Werk het model van het Fragment van de Fragment van de Inhoud van de Avontuur bij om een verwijzing naar het model van de Medewerker toe te voegen.
 
 1. Open een nieuwe browser en navigeer naar AEM.
-1. Navigeer in het menu **AEM Start** naar **Tools** > **Assets** > **Content Fragment Models** > **WKND Site**.
-1. Open het **Adventure** Inhoudsfragmentmodel
+1. Van de **AEM starten** menu navigeren naar **Gereedschappen** > **Activa** > **Modellen van inhoudsfragmenten** > **WKND-site**.
+1. Open de **Adventure** Inhoudsfragmentmodel
 
    ![Open het fragmentmodel voor Adventure-inhoud](assets/fragment-references/adventure-content-fragment-edit.png)
 
-1. Onder **Gegevenstypen** sleept u een veld **Fragmentverwijzing** naar het hoofdvenster.
+1. Onder **Gegevenstypen**, slepen en neerzetten **Fragmentverwijzing** in het hoofddeelvenster.
 
    ![Veld Fragmentverwijzing toevoegen](assets/fragment-references/add-fragment-reference-field.png)
 
-1. Werk **Eigenschappen** voor dit gebied met het volgende bij:
+1. Werk de **Eigenschappen** voor dit veld:
 
    * Renderen als - `fragmentreference`
    * Veldlabel - **Adventure Contributor**
    * Eigenschapnaam - `adventureContributor`
-   * Model Type - selecteer **Medewerker** model
+   * Modeltype - Selecteer de optie **Medewerker** model
    * Hoofdpad - `/content/dam/wknd`
 
    ![Eigenschappen van fragmentverwijzing](assets/fragment-references/fragment-reference-properties.png)
 
-   De eigenschapsnaam `adventureContributor` kan nu worden gebruikt om naar een Contribute-inhoudsfragment te verwijzen.
+   De eigenschapsnaam `adventureContributor` kan nu worden gebruikt om te verwijzen naar een Contribute-inhoudsfragment.
 
 1. Sla de wijzigingen in het model op.
 
 ## Wijs een Medewerker aan een Avontuur toe
 
-Nu het model van het Fragmentmodel van de Inhoud van het Avontuur is bijgewerkt, kunnen wij een bestaand fragment uitgeven en een Medewerker van verwijzingen voorzien. Houd er rekening mee dat het bewerken van het model Inhoudsfragment *invloed heeft op* bestaande inhoudsfragmenten die uit het model zijn gemaakt.
+Nu het model van het Fragmentmodel van de Inhoud van het Avontuur is bijgewerkt, kunnen wij een bestaand fragment uitgeven en een Medewerker van verwijzingen voorzien. Opgemerkt moet worden dat het model Inhoudsfragment wordt bewerkt *beïnvloedt* eventuele bestaande inhoudsfragmenten die daaruit zijn gemaakt.
 
-1. Navigeer naar **Middelen** > **Bestanden** > **WKND Site** > **Engels** > **Adventures** > **[Bali Surf Camp](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**.
+1. Navigeren naar **Activa** > **Bestanden** > **WKND-site** > **Engels** > **avonturen** > **[Bali Surf Camp](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**.
 
-   ![De map Bali Surf Camp](assets/setup/bali-surf-camp-folder.png)
+   ![De map Bali Surf Camp](../quick-setup/assets/setup/bali-surf-camp-folder.png)
 
-1. Klik op het inhoudsfragment **Bali Surf Camp** om de Content Fragment Editor te openen.
-1. Werk het veld **Adventure Contributor** bij en selecteer een Medewerker door op het mappictogram te klikken.
+1. Klik in de **Bali Surf Camp** inhoudfragment om de Inhoudsfragmenteditor te openen.
+1. Werk de **Adventure Contributor** en selecteer een medewerker door op het mappictogram te klikken.
 
    ![Stacey Roswells selecteren als contribuant](assets/fragment-references/stacey-roswell-contributor.png)
 
@@ -79,11 +79,11 @@ Nu het model van het Fragmentmodel van de Inhoud van het Avontuur is bijgewerkt,
 
    ![gevuld pad naar contribuant](assets/fragment-references/populated-path.png)
 
-   U ziet dat alleen fragmenten die zijn gemaakt met het model **Contributor** kunnen worden geselecteerd.
+   Alleen fragmenten die zijn gemaakt met de **Medewerker** model kunnen worden geselecteerd.
 
 1. Sla de wijzigingen in het fragment op.
 
-1. Herhaal de bovenstaande stappen om een contribuant toe te wijzen aan avonturen zoals [Yosemite Backpackaging](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) en [Colorado Rotsen Beklimmen](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)
+1. Herhaal bovenstaande stappen om een medewerker aan avonturen toe te wijzen zoals [Yosemite-achtergrondverpakking](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) en [Colorado Rock-beklimming](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)
 
 ## Geneste inhoudsfragment zoeken met GraphiQL
 
@@ -113,7 +113,7 @@ Daarna, voer een vraag voor een Avontuur uit en voeg genestelde eigenschappen va
    }
    ```
 
-   De bovenstaande vraag is voor één enkel avontuur door het weg van het. De `adventureContributor` bezitsverwijzingen het model van de Medewerker en wij kunnen eigenschappen van het genestelde Fragment van de Inhoud dan verzoeken.
+   De bovenstaande vraag is voor één enkel avontuur door het weg van het. De `adventureContributor` eigenschappen verwijzen naar het Contribute-model en we kunnen vervolgens eigenschappen aanvragen bij het geneste inhoudsfragment.
 
 1. Voer de vraag uit en u zou een resultaat als het volgende moeten krijgen:
 
@@ -137,7 +137,7 @@ Daarna, voer een vraag voor een Avontuur uit en voeg genestelde eigenschappen va
    }
    ```
 
-1. Experimenteer met andere query&#39;s zoals `adventureList` en voeg eigenschappen toe voor het gerefereerde inhoudsfragment onder `adventureContributor`.
+1. Experimenteer met andere query&#39;s, zoals `adventureList` en eigenschappen toevoegen voor het inhoudsfragment waarnaar wordt verwezen onder `adventureContributor`.
 
 ## De React-app bijwerken om de inhoud van de Contribute-server weer te geven
 
@@ -145,11 +145,11 @@ Werk vervolgens de query&#39;s bij die door de React-toepassing worden gebruikt 
 
 1. Open de WKND GraphQL React-app in uw IDE.
 
-1. Open het bestand `src/components/AdventureDetail.js`.
+1. Het bestand openen `src/components/AdventureDetail.js`.
 
    ![IDE van de component van het Detail van de avontuur](assets/fragment-references/adventure-detail-ide.png)
 
-1. Zoek de functie `adventureDetailQuery(_path)`. De functie `adventureDetailQuery(..)` verpakt eenvoudig een het filtreren vraag GraphQL, die AEM `<modelName>ByPath` syntaxis gebruikt om één enkel die Fragment van de Inhoud te vragen door zijn weg JCR wordt geïdentificeerd.
+1. De functie zoeken `adventureDetailQuery(_path)`. De `adventureDetailQuery(..)` functie verpakt eenvoudig een het filtreren vraag GraphQL, die AEM gebruikt `<modelName>ByPath` syntaxis voor het zoeken naar één inhoudsfragment dat wordt aangegeven door het JCR-pad.
 
 1. Werk de vraag bij om informatie over referenced Medewerker te omvatten:
 
@@ -197,11 +197,11 @@ Werk vervolgens de query&#39;s bij die door de React-toepassing worden gebruikt 
    }
    ```
 
-   Met deze update worden aanvullende eigenschappen over `adventureContributor`, `fullName`, `occupation` en `pictureReference` opgenomen in de query.
+   In deze update zijn aanvullende eigenschappen beschikbaar over het dialoogvenster `adventureContributor`, `fullName`, `occupation`, en `pictureReference` wordt opgenomen in de query.
 
-1. Inspect de `Contributor`-component die is ingesloten in het `AdventureDetail.js`-bestand op `function Contributor(...)`. Deze component geeft de naam, het beroep en het beeld van de medewerker weer als de eigenschappen bestaan.
+1. Inspect the `Contributor` component ingesloten in de `AdventureDetail.js` bestand bij `function Contributor(...)`. Deze component geeft de naam, het beroep en het beeld van de medewerker weer als de eigenschappen bestaan.
 
-   Naar de component `Contributor` wordt verwezen in de methode `AdventureDetail(...)` `return`:
+   De `Contributor` naar de component wordt verwezen in het dialoogvenster `AdventureDetail(...)` `return` methode:
 
    ```javascript
    function AdventureDetail(props) {
@@ -228,14 +228,14 @@ Werk vervolgens de query&#39;s bij die door de React-toepassing worden gebruikt 
    $ npm start
    ```
 
-1. Navigeer naar [http://localhost:3000](http://localhost:3000/) en klik op een avontuur met een Contribute-medewerker waarnaar wordt verwezen. U moet nu de informatie van de Medewerker onder **Traject** zien:
+1. Navigeren naar [http://localhost:3000](http://localhost:3000/) en klik op een avontuur met een Contribute-medewerker waarnaar wordt verwezen. U moet nu de informatie van de medewerker hieronder zien **Urinertie**:
 
    ![Medewerker toegevoegd in de app](assets/fragment-references/contributor-added-detail.png)
 
 ## Gefeliciteerd!{#congratulations}
 
-Gefeliciteerd! U hebt een bestaand model van het Fragment van de Inhoud bijgewerkt om naar een genestelde Fragment van de Inhoud te verwijzen gebruikend het **gebied van de Verwijzing van het Fragment**. U leerde ook hoe te om een vraag te wijzigen GraphQL om gebieden van een referenced model te omvatten.
+Gefeliciteerd! U hebt een bestaand Content Fragment-model bijgewerkt om te verwijzen naar een genest Content Fragment met de opdracht **Fragmentverwijzing** veld. U leerde ook hoe te om een vraag te wijzigen GraphQL om gebieden van een referenced model te omvatten.
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk, [De plaatsing van de productie gebruikend een Publish milieu ](./production-deployment.md) van AEM, leert over auteur en publiceer de diensten van AEM en het geadviseerde plaatsingspatroon voor headless toepassingen. U zult een bestaande toepassing bijwerken om omgevingsvariabelen te gebruiken om een eindpunt GraphQL dynamisch te veranderen dat op het doelmilieu wordt gebaseerd. U zult ook leren hoe te om behoorlijk AEM voor het middel het delen van de Cross-Origin (CORS) te vormen.
+In het volgende hoofdstuk: [Implementatie van productie met behulp van een AEM-publicatie-omgeving](./production-deployment.md)Meer informatie over AEM-auteur- en publicatieservices en het aanbevolen implementatiepatroon voor toepassingen zonder kop. U zult een bestaande toepassing bijwerken om omgevingsvariabelen te gebruiken om een eindpunt GraphQL dynamisch te veranderen dat op het doelmilieu wordt gebaseerd. U zult ook leren hoe te om behoorlijk AEM voor het middel het delen van de Cross-Origin (CORS) te vormen.

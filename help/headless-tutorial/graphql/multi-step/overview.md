@@ -5,17 +5,17 @@ doc-type: tutorial
 mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
-feature: Inhoudsfragmenten, GraphQL API
-topic: Koploos, inhoudsbeheer
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met AEM zonder kop - GraphQL
 
@@ -33,10 +33,11 @@ In deze zelfstudie worden de volgende onderwerpen behandeld:
 
 ## Laten we beginnen!
 
-Begin de AEM leerprogramma GraphQL door in het [Snelle hoofdstuk van de Opstelling](./setup.md) te springen!
+1. Een ontwikkelomgeving instellen met [AEM as a Cloud Service](../quick-setup/cloud-service.md) of gebruiken [de lokale SDK](../quick-setup/local-sdk.md).
+2. Zelfstudie starten met [Modellen voor inhoudsfragmenten definiëren](content-fragment-models.md).
 
 ## GitHub-project
 
-De broncode, en inhoudspakketten zijn beschikbaar op [AEM Gidsen - WKND GraphQL GitHub Project](https://github.com/adobe/aem-guides-wknd-graphql).
+De broncode en inhoudspakketten zijn beschikbaar op de [AEM - WKND GraphQL GitHub Project](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Als u een kwestie met het leerprogramma of de code vindt, gelieve een [GitHub kwestie](https://github.com/adobe/aem-guides-wknd-graphql/issues) te verlaten.
+Als u een probleem hebt met de zelfstudie of de code, kunt u een [GitHub-probleem](https://github.com/adobe/aem-guides-wknd-graphql/issues).

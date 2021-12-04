@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 0%
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 # Modellen voor inhoudsfragmenten definiëren {#content-fragment-models}
 
-In dit hoofdstuk leert u hoe u inhoud modelleert en een schema bouwt met **Content Fragment Models**. U controleert bestaande modellen en maakt een nieuw model. U zult ook over de verschillende gegevenstypes leren die kunnen worden gebruikt om een schema als deel van het model te bepalen.
+In dit hoofdstuk leert u hoe u inhoud kunt modelleren en een schema kunt maken met **Modellen van inhoudsfragmenten**. U controleert bestaande modellen en maakt een nieuw model. U zult ook over de verschillende gegevenstypes leren die kunnen worden gebruikt om een schema als deel van het model te bepalen.
 
-In dit hoofdstuk maakt u een nieuw model voor een **Contributor**. Dit is het gegevensmodel voor gebruikers die tijdschrift- en avontuurinhoud schrijven als onderdeel van het WKND-merk.
+In dit hoofdstuk maakt u een nieuw model voor een **Medewerker**, het gegevensmodel voor gebruikers die inhoud voor tijdschriften en avontuur maken als onderdeel van het WKND-merk.
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de stappen in de [Snelle installatie](./setup.md) zijn voltooid.
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worden beschreven in het dialoogvenster [Snelle installatie](../quick-setup/local-sdk.md) zijn voltooid.
 
 ## Doelstellingen {#objectives}
 
 * Maak een nieuw model voor inhoudsfragmenten.
 * Beschikbare gegevenstypen en validatieopties identificeren voor het samenstellen van modellen.
-* Begrijp hoe het Model van het Fragment van de Inhoud **zowel** het gegevensschema en het auteursmalplaatje voor een Fragment van de Inhoud bepaalt.
+* Begrijp hoe het model van het Inhoudsfragment bepaalt **beide** het gegevensschema en het auteursmalplaatje voor een Fragment van de Inhoud.
 
 ## Overzicht van het inhoudsfragmentmodel {#overview}
 
@@ -41,107 +41,107 @@ De video hierboven biedt een uitgebreid overzicht van het werken met Content Fra
 
 >[!CAUTION]
 >
-> In de bovenstaande video ziet u hoe het model **Contributor** met de naam `Contributors` is gemaakt. Wanneer u de stappen uitvoert in uw eigen omgeving, moet u ervoor zorgen dat de titel de unieke vorm gebruikt: `Contributor` zonder **s**. De naamgeving van het model van het inhoudsfragment bepaalt de aanroepen van de GraphQL API die later in de zelfstudie worden uitgevoerd.
+> In de video hierboven ziet u hoe het **Medewerker** model met de naam `Contributors`. Wanneer u de stappen uitvoert in uw eigen omgeving, moet u ervoor zorgen dat de titel de unieke vorm gebruikt: `Contributor` zonder **s**. De naamgeving van het model van het inhoudsfragment bepaalt de aanroepen van de GraphQL API die later in de zelfstudie worden uitgevoerd.
 
 ## Inspect the Adventure Content Fragment Model
 
 In het vorige hoofdstuk zijn verschillende Adventures Content Fragments bewerkt en weergegeven op een externe toepassing. Controleer het Model van het Fragment van de Inhoud van de Avontuur om het onderliggende gegevensschema van deze fragmenten te begrijpen.
 
-1. Navigeer in het menu **AEM Start** naar **Tools** > **Assets** > **Content Fragment Models**.
+1. Van de **AEM starten** menu navigeren naar **Gereedschappen** > **Activa** > **Modellen van inhoudsfragmenten**.
 
    ![Navigeren naar Modellen van inhoudsfragmenten](assets/content-fragment-models/content-fragment-model-navigation.png)
 
-1. Navigeer naar de map **WKND Site** en houd de muisaanwijzer boven **Adventure** Content Fragment Model en klik op het pictogram **Edit** (potlood) om het model te openen.
+1. Navigeer in de **WKND-site** en houd de muis boven de **Adventure** Inhoudsfragmentmodel en klik op **Bewerken** pictogram (potlood) om het model te openen.
 
    ![Open het fragmentmodel voor Adventure-inhoud](assets/content-fragment-models/adventure-content-fragment-edit.png)
 
-1. Hiermee opent u de **Inhoudsfragmentmodeleditor**. Houd er rekening mee dat de velden die het Adventure-model definiëren, verschillende **Gegevenstypen** bevatten, zoals **Tekst met één regel**, **Tekst met meerdere regels**, **Opsomming** en **Content Reference**.
+1. Hierdoor wordt het **Inhoudsfragmentmodeleditor**. Merk op dat de gebieden het model van het avontuur bepalen verschillend omvatten **Gegevenstypen** leuk **Tekst met één regel**, **Tekst met meerdere regels**, **Opsomming**, en **Content Reference**.
 
-1. In de rechterkolom van de editor worden de beschikbare **Gegevenstypen** weergegeven die de formuliervelden definiëren die worden gebruikt voor het ontwerpen van inhoudsfragmenten.
+1. De rechterkolom van de redacteur maakt een lijst van beschikbare **Gegevenstypen** Hiermee definieert u de formuliervelden die worden gebruikt voor het ontwerpen van inhoudsfragmenten.
 
-1. Selecteer het veld **Titel** in het hoofddeelvenster. Klik in de rechterkolom op het tabblad **Eigenschappen**:
+1. Selecteer **Titel** in het hoofddeelvenster. Klik in de rechterkolom op de knop **Eigenschappen** tab:
 
    ![Eigenschappen van Adventure-titel](assets/content-fragment-models/adventure-title-properties-tab.png)
 
-   Neem het **gebied van de Naam van het Bezit** aan `adventureTitle` wordt geplaatst. Dit bepaalt de naam van het bezit dat aan AEM wordt voortgeduurd. De **Naam van het Bezit** bepaalt ook **key** naam voor dit bezit als deel van het gegevensschema. Deze **sleutel** wordt gebruikt wanneer de gegevens van het Fragment van de Inhoud via GraphQL APIs worden blootgesteld.
+   Waarnemen **Eigenschapnaam** veld is ingesteld op `adventureTitle`. Dit bepaalt de naam van het bezit dat aan AEM wordt voortgeduurd. De **Eigenschapnaam** definieert ook de **key** name for this property as part of the data schema. Dit **key** wordt gebruikt wanneer de gegevens van het inhoudsfragment via GraphQL API&#39;s worden weergegeven.
 
    >[!CAUTION]
    >
-   > Als u de **Eigenschapnaam** van een veld **after** Inhoudsfragmenten wijzigt, worden deze van het model afgeleid. Dit heeft downstreameffecten. Er wordt niet langer verwezen naar veldwaarden in bestaande fragmenten en het gegevensschema dat door GraphQL wordt weergegeven, wordt gewijzigd, wat invloed heeft op bestaande toepassingen.
+   > Het wijzigen van **Eigenschapnaam** van een veld **na** Inhoudsfragmenten worden afgeleid van het model en hebben downstreameffecten. Er wordt niet langer verwezen naar veldwaarden in bestaande fragmenten en het gegevensschema dat door GraphQL wordt weergegeven, wordt gewijzigd, wat invloed heeft op bestaande toepassingen.
 
-1. Schuif omlaag op het tabblad **Eigenschappen** en bekijk het vervolgkeuzemenu **Validatietype**.
+1. Omlaag schuiven in het deelvenster **Eigenschappen** en bekijk de **Validatietype** vervolgkeuzelijst.
 
    ![Validatieopties beschikbaar](assets/content-fragment-models/validation-options-available.png)
 
-   Formuliervalidaties in het vak zijn beschikbaar voor **E-mail** en **URL**. Het is ook mogelijk om een **Aangepaste** bevestiging te bepalen gebruikend een regelmatige uitdrukking.
+   Formuliervalidaties uit het vak zijn beschikbaar voor **E-mail** en **URL**. Het is ook mogelijk een **Aangepast** validatie met een reguliere expressie.
 
-1. Klik **Annuleren** om de Editor van het inhoudsfragmentmodel te sluiten.
+1. Klikken **Annuleren** om de Editor van het inhoudsfragmentmodel te sluiten.
 
 ## Een bijdragemodel maken
 
-Maak vervolgens een nieuw model voor een **Contributor**. Dit is het gegevensmodel voor gebruikers die tijdschriften en avontuurlijke inhoud maken als onderdeel van het WKND-merk.
+Maak vervolgens een nieuw model voor een **Medewerker**, het gegevensmodel voor gebruikers die inhoud voor tijdschriften en avontuur maken als onderdeel van het WKND-merk.
 
-1. Klik **Create** in de hogere juiste hoek om de **Create Model** tovenaar omhoog te brengen.
-1. Voer voor **Modeltitel** in: **Medewerker** en klik op **Maken**
+1. Klikken **Maken** in de rechterbovenhoek om de **Model maken** wizard.
+1. Voor **Modeltitel** enter: **Medewerker** en klik op **Maken**
 
    ![wizard Inhoudsfragmentmodel](assets/content-fragment-models/content-fragment-model-wizard.png)
 
-   Klik **Open** om het nieuwe model te openen.
+   Klikken **Openen** om het nieuwe model te openen.
 
-1. Sleep een **element met één regel tekst** naar het hoofddeelvenster. Voer de volgende eigenschappen in op het tabblad **Eigenschappen**:
+1. Sleep een **Tekst met één regel** element aan het belangrijkste paneel. Voer de volgende eigenschappen in op de knop **Eigenschappen** tab:
 
-   * **Veldlabel**:  **Volledige naam**
-   * **Naam** eigenschap:  `fullName`
-   * **Vereist** controleren
+   * **Veldlabel**: **Volledige naam**
+   * **Eigenschapnaam**: `fullName`
+   * Controleren **Vereist**
 
    ![Eigenschappenveld Volledige naam](assets/content-fragment-models/full-name-property-field.png)
 
-1. Klik op de tab **Gegevenstypen** en sleep een veld **Meerdere regels tekst** onder het veld **Volledige naam**. Voer de volgende eigenschappen in:
+1. Klik op de knop **Gegevenstypen** en sleep een **Tekst met meerdere regels** veld onder de **Volledige naam** veld. Voer de volgende eigenschappen in:
 
-   * **Veldlabel**:  **Biografie**
-   * **Naam** eigenschap:  `biographyText`
-   * **Standaardtype**:  **RTF**
+   * **Veldlabel**: **Biografie**
+   * **Eigenschapnaam**: `biographyText`
+   * **Standaardtype**: **RTF**
 
-1. Klik op de tab **Gegevenstypen** en sleep een veld **Content Reference**. Voer de volgende eigenschappen in:
+1. Klik op de knop **Gegevenstypen** en sleep een **Content Reference** veld. Voer de volgende eigenschappen in:
 
-   * **Veldlabel**:  **Referentie afbeelding**
-   * **Naam** eigenschap:  `pictureReference`
-   * **Hoofdpad**:  `/content/dam/wknd`
+   * **Veldlabel**: **Referentie afbeelding**
+   * **Eigenschapnaam**: `pictureReference`
+   * **Hoofdpad**: `/content/dam/wknd`
 
-   Wanneer u het **Basispad** configureert, kunt u op het pictogram **map** klikken om een modaal pad weer te geven en het pad te selecteren. Hierdoor wordt beperkt welke mappen auteurs kunnen gebruiken om het pad te vullen.
+   Wanneer het vormen van **Hoofdpad** u kunt klikken op **map** pictogram om een modaal weer te geven om het pad te selecteren. Hierdoor wordt beperkt welke mappen auteurs kunnen gebruiken om het pad te vullen.
 
    ![Basispad geconfigureerd](assets/content-fragment-models/root-path-configure.png)
 
-1. Voeg een validatie toe aan de **Referentieafbeelding**, zodat alleen inhoudstypen van **Afbeeldingen** kunnen worden gebruikt om het veld te vullen.
+1. Een validatie toevoegen aan de **Referentie afbeelding** zodat alleen inhoudstypen **Afbeeldingen** kan worden gebruikt om het veld te vullen.
 
    ![Beperken tot afbeeldingen](assets/content-fragment-models/picture-reference-content-types.png)
 
-1. Klik op de tab **Gegevenstypen** en sleep een gegevenstype **Opsomming** onder het veld **Referentie afbeelding**. Voer de volgende eigenschappen in:
+1. Klik op de knop **Gegevenstypen** en sleep een **Opsomming**  gegevenstype onder de **Referentie afbeelding** veld. Voer de volgende eigenschappen in:
 
-   * **Veldlabel**:  **Beroep**
-   * **Naam** eigenschap:  `occupation`
+   * **Veldlabel**: **Beroep**
+   * **Eigenschapnaam**: `occupation`
 
-1. Voeg verschillende **Opties** toe gebruikend **voeg een optie** knoop toe. Gebruik dezelfde waarde voor **Optie Label** en **Optiewaarde**:
+1. Diverse toevoegen **Opties** met de **Een optie toevoegen** knop. Dezelfde waarde gebruiken voor **Option-label** en **Optiewaarde**:
 
-   **Artiest**,  **Influencer**,  **Fotograaf**,  **Traveler**,  **Schrijver**,  **YouTuber**
+   **Artiest**, **Influencer**, **Fotograaf**, **Reiziger**, **Schrijver**, **YouTuber**
 
    ![Waarden van opties voor beroep](assets/content-fragment-models/occupation-options-values.png)
 
-1. Het definitieve **Contributor** model zou als het volgende moeten kijken:
+1. De definitieve **Medewerker** Het model moet er als volgt uitzien:
 
    ![Model van uiteindelijke medewerker](assets/content-fragment-models/final-contributor-model.png)
 
-1. Klik **Opslaan** om de wijzigingen op te slaan.
+1. Klikken **Opslaan** om de wijzigingen op te slaan.
 
 ## Enable the Contributor Model
 
-Modellen van inhoudsfragmenten moeten **Ingeschakeld** zijn voordat de auteurs van de inhoud het kunnen gebruiken. Het is mogelijk om **een model van het Fragment van de Inhoud onbruikbaar te maken**, waarbij auteurs worden verhinderd het te gebruiken. Rappel dat het wijzigen van **de Naam van het Bezit** van een gebied in het model het onderliggende gegevensschema verandert en significante stroomafwaartse gevolgen op bestaande fragmenten en externe toepassingen kan hebben. U wordt aangeraden de naamgevingsconventie die wordt gebruikt voor de **Eigenschapnaam** van velden zorgvuldig te plannen voordat u het inhoudsfragmentmodel voor gebruikers inschakelt.
+Modellen voor inhoudsfragmenten moeten **Ingeschakeld** voordat de auteur van de inhoud deze kan gebruiken. Het is mogelijk **Uitschakelen** Een Content Fragment Model (Inhoudsfragmentmodel), waardoor auteurs het niet kunnen gebruiken. Herinneren dat het wijzigen van **Eigenschapnaam** van een veld in het model wijzigt het onderliggende gegevensschema en kan aanzienlijke downstreameffecten hebben op bestaande fragmenten en externe toepassingen. Het wordt aanbevolen de naamgevingsconventie die wordt gebruikt voor de **Eigenschapnaam** van velden voordat het model Inhoudsfragment voor gebruikers wordt ingeschakeld.
 
-1. Zorg ervoor dat het **Contributor** model momenteel in een **Enabled** staat is.
+1. Zorg ervoor dat de **Medewerker** model bevindt zich momenteel in een **Ingeschakeld** status.
 
    ![Ingeschakeld bijdragemodel](assets/content-fragment-models/enable-contributor-model.png)
 
-   U kunt de status van een inhoudsfragmentmodel in- of uitschakelen door de muisaanwijzer op de kaart te plaatsen en op het pictogram **Uitschakelen** / **Inschakelen** te klikken.
+   U kunt de status van een inhoudsfragmentmodel in- of uitschakelen door de muisaanwijzer op de kaart te plaatsen en op de knop **Uitschakelen** / **Inschakelen** pictogram.
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -149,4 +149,4 @@ U hebt zojuist het eerste inhoudsfragmentmodel gemaakt.
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk, [Modellen van inhoudsfragmenten ontwerpen](author-content-fragments.md), zult u een nieuw die Fragment van de Inhoud tot stand brengen en uitgeven op een Model van het Fragment van de Inhoud wordt gebaseerd. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
+In het volgende hoofdstuk: [Modellen voor inhoudsfragmenten ontwerpen](author-content-fragments.md), maakt en bewerkt u een nieuw inhoudsfragment op basis van een inhoudsfragmentmodel. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.

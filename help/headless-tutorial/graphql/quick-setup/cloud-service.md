@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
-source-git-commit: f13f32de11bda924a2d255678e58e7c982d0d004
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -193,5 +193,7 @@ _Screencast van stappen_
 Gefeliciteerd! U hebt AEM Headless met succes gebruikt om een React App aan te drijven!
 
 Om in detail te begrijpen hoe React App inhoud van AEM as a Cloud Service verbruikt, controleer uit [de zelfstudie voor AEM zonder hoofd](../multi-step/overview.md). In de zelfstudie wordt onderzocht hoe inhoudsfragmenten in AEM worden gemaakt en hoe deze React-app hun inhoud als JSON-inhoud gebruikt.
+
+### Volgende stappen
 
 + [Zelfstudie voor AEM zonder koppen starten](../multi-step/overview.md)

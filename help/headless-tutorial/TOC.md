@@ -6,9 +6,9 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 4%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 4%
 + [Overzicht van AEM headless](./overview.md)
 + GraphQL {#graphql}
    + [Overzicht](./graphql/overview.md)
+   + [Snelle installatie](./graphql/quick-setup/cloud-service.md)
+   + [Lokale SDK snel instellen](./graphql/quick-setup/local-sdk.md)
    + Videoserie{#video-series}
       + [1 - Grondbeginselen van modellering](./graphql/video-series/modeling-basics.md)
       + [2 - Geavanceerde modellering](./graphql/video-series/advanced-modeling.md)
@@ -29,13 +31,12 @@ ht-degree: 4%
       + [7 - GrafiekQL aanhoudende query&#39;s](./graphql/video-series/graphql-persisted-queries.md)
    + Zelfstudie met meerdere stappen{#multi-step}
       + [Overzicht](./graphql/multi-step/overview.md)
-      + [1 - Snelle installatie](./graphql/multi-step/setup.md)
-      + [2 - Modellen voor inhoudsfragmenten definiëren](./graphql/multi-step/content-fragment-models.md)
-      + [3 - Inhoudsfragmenten ontwerpen](./graphql/multi-step/author-content-fragments.md)
-      + [4 - GraphQL API&#39;s verkennen](./graphql/multi-step/explore-graphql-api.md)
-      + [5 - Een query uitvoeren vanuit een externe app](./graphql/multi-step/graphql-and-external-app.md)
-      + [6 - Geavanceerde gegevensmodellering met fragmentverwijzingen](./graphql/multi-step/fragment-references.md)
-      + [7 - Productie-implementatie](./graphql/multi-step/production-deployment.md)
+      + [1 - Modellen voor inhoudsfragmenten definiëren](./graphql/multi-step/content-fragment-models.md)
+      + [2 - Inhoudsfragmenten ontwerpen](./graphql/multi-step/author-content-fragments.md)
+      + [3 - GraphQL API&#39;s verkennen](./graphql/multi-step/explore-graphql-api.md)
+      + [4 - Een query uitvoeren vanuit een externe app](./graphql/multi-step/graphql-and-external-app.md)
+      + [5 - Geavanceerde gegevensmodellering met fragmentverwijzingen](./graphql/multi-step/fragment-references.md)
+      + [6 - Productie-implementatie](./graphql/multi-step/production-deployment.md)
    + Voorbeelden {#example-apps}
       + [Reageren](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
