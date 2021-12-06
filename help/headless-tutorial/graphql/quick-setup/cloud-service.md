@@ -8,13 +8,13 @@ role: Developer
 level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
+source-git-commit: 94a57490edb00da072446ee8ca07c12c413ce1ac
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
-
 
 # Snelle installatie voor AEM as a Cloud Service AEM zonder koppen
 
@@ -26,13 +26,13 @@ U hebt het volgende nodig om deze snelle installatie te kunnen uitvoeren:
 
 + AEM as a Cloud Service zandbakomgeving (bij voorkeur ontwikkeling)
 + Toegang tot AEM as a Cloud Service en Cloud Manager
-   + `AEM Administrator` toegang tot AEM as a Cloud Service
-   + `Cloud Manager - Deployment Manager` toegang tot Cloud Manager
+   + __AEM__ toegang tot AEM as a Cloud Service
+   + __Cloud Manager - Implementatiebeheer__ toegang tot Cloud Manager
 + De volgende gereedschappen moeten lokaal zijn geïnstalleerd:
    + [Node.js v10+](https://nodejs.org/en/)
    + [npm 6+](https://www.npmjs.com/)
    + [Git](https://git-scm.com/)
-   + Een IDE (bijvoorbeeld [Microsoft® Visual Studio-code](https://code.visualstudio.com/)
+   + Een IDE (bijvoorbeeld [Microsoft® Visual Studio-code](https://code.visualstudio.com/))
 
 ## 1. Creëer een gegevensopslagruimte voor cloudbeheer
 
@@ -74,15 +74,13 @@ _Screencast van stappen_
       $ git remote add adobe https://git.cloudmanager.adobe.com/<YOUR ADOBE ORGANIZATION>/aem-headless-quick-setup/
       ```
 
-1. De broncode van het voorbeeldproject overbrengen naar de cloudbeheeropslagplaats
+1. Verplaats de broncode van het voorbeeldproject van uw lokale Git-opslagruimte naar de cloudbeheeropslagplaats
 
-   1. Push the code from your local Git repository to the Cloud Manager Git repository
+   ```shell
+   $ git push adobe master:main
+   ```
 
-      ```shell
-      $ git push adobe master:main
-      ```
-
-      Geef bij de aanwijzing voor referenties de __Gebruikersnaam__ en __Wachtwoord__ van Cloud Manager __Info opslagplaats__ modal.
+   Geef bij de aanwijzing voor referenties de __Gebruikersnaam__ en __Wachtwoord__ van Cloud Manager __Info opslagplaats__ modal.
 
 ## 3. De WKND-site implementeren om as a Cloud Service te AEM
 
