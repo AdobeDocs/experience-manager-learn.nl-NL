@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9353
 thumbnail: KT-9353.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
+source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # E-mailservice
 
@@ -22,7 +22,7 @@ E-mails verzenden vanuit AEM as a Cloud Service door AEM te configureren `Defaul
 
 Omdat (de meeste) de postdiensten niet over HTTP/HTTPS lopen, moeten de verbindingen aan de postdiensten van AEM as a Cloud Service proxied uit zijn.
 
-+ `smtp.host` wordt ingesteld op de OSGi-omgevingsvariabele `$[env:AEM_PROXY_HOST]` het wordt dus door het egress geleid .
++ `smtp.host` wordt ingesteld op de OSGi-omgevingsvariabele `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` het wordt dus door het egress geleid .
 + `smtp.port` is ingesteld op `portForward.portOrig` poort die is toegewezen aan de host en poort van de e-mailservice van de bestemming. In dit voorbeeld wordt de toewijzing gebruikt: `AEM_PROXY_HOST:30002` → `smtp.sendgrid.com:465`.
 
 Aangezien geheimen niet in code moeten worden opgeslagen, kunnen de gebruikersnaam en het wachtwoord van de e-mailservice het beste worden opgegeven met [geheime OSGi configuratievariabelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), instellen met behulp van AIO CLI of de Cloud Manager-API.
@@ -55,7 +55,7 @@ Dit OSGi configuratievoorbeeld vormt AEM de Dienst van Mail OSGi om een externe 
 
 ```json
 {
-    "smtp.host": "$[env:AEM_PROXY_HOST]",
+    "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
     "smtp.port": "30002",
     "smtp.user": "$[env:EMAIL_USERNAME;default=apikey]",
     "smtp.password": "$[secret:EMAIL_PASSWORD]",
