@@ -11,18 +11,14 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1333'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot ontwerpen en publiceren {#author-content-publish}
-
->[!CAUTION]
->
-> Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
 
 Het is belangrijk om te begrijpen hoe een gebruiker inhoud voor de website zal bijwerken. In dit hoofdstuk zullen we de persoon van een **Inhoudsauteur** en brengt u enkele redactionele wijzigingen aan in de site die in het vorige hoofdstuk is gegenereerd. Aan het einde van het hoofdstuk publiceren we de wijzigingen om te begrijpen hoe de livesite wordt bijgewerkt.
 

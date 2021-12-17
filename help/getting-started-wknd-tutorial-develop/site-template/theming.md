@@ -11,18 +11,14 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Thematische workflow {#theming}
-
->[!CAUTION]
->
-> Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
 
 In dit hoofdstuk werken we de themabronnen van een Adobe Experience Manager-site bij om merkspecifieke stijlen toe te passen. We leren hoe u een proxyserver kunt gebruiken om een voorvertoning van CSS- en JavaScript-updates weer te geven terwijl we code schrijven op de livesite. In deze zelfstudie wordt ook uitgelegd hoe u met behulp van de Front End Pipeline van Adobe Cloud Manager thema-updates op een AEM site kunt implementeren.
 

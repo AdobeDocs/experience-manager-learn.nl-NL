@@ -11,18 +11,14 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
 
 # Paginasjablonen {#page-templates}
-
->[!CAUTION]
->
-> Het gereedschap Snel site maken is momenteel een technische voorvertoning. Het wordt ter beschikking gesteld voor test- en evaluatiedoeleinden en is niet bestemd voor gebruik in de productie, tenzij overeengekomen met Adobe Support.
 
 In dit hoofdstuk onderzoeken we de relatie tussen een paginasjabloon en een pagina. Wij zullen een niet-gestileerde sjabloon van het Artikel van het Tijdschrift opstellen die op sommige modellen van wordt gebaseerd [AdobeXD](https://www.adobe.com/products/xd.html). In het proces om het malplaatje uit te bouwen, zijn de Componenten van de Kern en de geavanceerde beleidsconfiguraties behandeld.
 
