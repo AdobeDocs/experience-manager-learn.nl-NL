@@ -8,13 +8,13 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+exl-id: e61cea37-b931-49c6-9e5d-899628535480
+source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 0%
 
 ---
-
 
 # AEM project naar cloudmanager-git-repo verplaatsen
 
@@ -23,7 +23,7 @@ We moeten deze wijzigingen nu toevoegen aan onze lokale git-opslagplaats en verv
 Opdrachtprompt openen en naar c:\cloudmanager\aem-banking-app Execute the following commands navigeren
 
 ```
-git add .**
+git add .
 ```
 
 Hiermee voegt u de nieuwe bestanden toe aan de werkgebiedvertakking van de lokale it-opslagruimte
@@ -39,6 +39,3 @@ git push -f bankingapp master:"MyFirstAF"
 ```
 
 In het bovenstaande bevel duwen we onze master tak van onze lokale git bewaarplaats in de afdeling MyFirstAF van de bewaarplaats van de wolkenmanager die door de bankingapp vriendelijke naam wordt geïdentificeerd.
-
-
-
