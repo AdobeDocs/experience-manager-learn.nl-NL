@@ -1,6 +1,6 @@
 ---
 title: Aan de slag met AEM Sites - Project Archetype
-description: Aan de slag met AEM Sites - Project Archetype. De WKND-zelfstudie is een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog geen ervaring hebben met Adobe Experience Manager. The tutorial walks through the implementation of an AEM site for a fictitious lifestyle brand, the WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
+description: Aan de slag met AEM Sites - Project Archetype. De WKND-zelfstudie is een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog geen ervaring hebben met Adobe Experience Manager. De zelfstudie doorloopt de implementatie van een AEM site voor een fictieve levensstijl, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
@@ -12,14 +12,14 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: a366d485da3f473bd4c1ef31538231965acc825c
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
 
-# Getting Started with AEM Sites - Project Archetype {#project-archetype}
+# Aan de slag met AEM Sites - Project Archetype {#project-archetype}
 
 Welkom bij een meerdelige zelfstudie die is ontworpen voor nieuwe ontwikkelaars in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een AEM site voor een fictieve levensstijl, de WKND.
 
@@ -30,8 +30,8 @@ De zelfstudie is ontworpen om te werken met **AEM as a Cloud Service** en is ach
 * [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
-* Sling Models
-* [Editable Templates](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* Verkoopmodellen
+* [Bewerkbare sjablonen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
 * [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *Schat 1-2 uur om elk onderdeel van de zelfstudie te doorlopen.*
@@ -42,12 +42,12 @@ Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Screen
 
 ### Vereiste software
 
-The following should be installed locally:
+Het volgende moet lokaal worden geïnstalleerd:
 
-* Local AEM **Author** instance (Cloud Service SDK, 6.5.5+ or 6.4.8.1+)
+* [Lokale AEM **Auteur** instance](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.5+ of 6.4.8.1+)
 * [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-* [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
-* [Node.js](https://nodejs.org/en/) (LTS - Long Term Support)
+* [Apache Maven](https://maven.apache.org/) (3.3.9 of hoger)
+* [Node.js](https://nodejs.org/en/) (LTS - langdurige ondersteuning)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
 * [Visual Studio-code](https://code.visualstudio.com/) of gelijkwaardige IDE
@@ -65,8 +65,8 @@ Alle code voor het project is te vinden op Github in het AEM Guide repo:
 
 **[GitHub: WKND-siteproject](https://github.com/adobe/aem-guides-wknd)**
 
-Bovendien heeft elk deel van het leerprogramma zijn eigen tak in GitHub. A user can begin the tutorial at any point by simply checking out the branch that corresponds to the previous part.
+Bovendien heeft elk deel van het leerprogramma zijn eigen tak in GitHub. Een gebruiker kan de zelfstudie op elk gewenst moment starten door gewoon de vertakking uit te checken die overeenkomt met het vorige onderdeel.
 
-## Next Steps {#next-steps}
+## Volgende stappen {#next-steps}
 
 Waar wacht u op?! De zelfstudie starten door naar de [Projectinstelling](project-setup.md) hoofdstuk en leer hoe te om een nieuw project van Adobe Experience Manager te produceren gebruikend het AEM Project Archetype.
