@@ -5,11 +5,11 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
-feature: Document Services
+feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 8185.jpg
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # Exchange JWT voor toegangstoken
 
 
-De JWT die in de vorige stap is gemaakt, wordt uitgewisseld met Adobe IMS API&#39;s voor een toegangstoken, dat vervolgens kan worden gebruikt voor toegang tot AEM als Cloud Service. Om een Token van de Toegang te verzoeken verzend een verzoek van de POST die JWT, client_id, client_geheime aan de IMS authentificatiedienst bevat.
+De JWT die in de vorige stap is gemaakt, wordt uitgewisseld met Adobe IMS API&#39;s voor een toegangstoken, dat vervolgens kan worden gebruikt voor toegang tot AEM as a Cloud Service. Om een Token van de Toegang te verzoeken verzend een verzoek van de POST die JWT, client_id, client_geheime aan de IMS authentificatiedienst bevat.
 
 De volgende code is gebruikt om uitwisseling JWT voor Toegangstoken te produceren
 

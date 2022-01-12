@@ -5,13 +5,13 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
-feature: Document Services
+feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 332439.jpg
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 # De POST aanroepen
 
 
-De volgende stap is een vraag van de POST van HTTP aan het eindpunt met de noodzakelijke parameters te maken. Het malplaatje en de gegevensdossiers worden verstrekt als middeldossiers. Eigenschappen van de gegenereerde pdf worden via de parameter van de optie in de aanvraag opgegeven. De eigenschappen worden gespecificeerd in het options.json middeldossier. Aangezien, heeft het eindpunt symbolische gebaseerde authentificatie wij het Token van de Toegang in de verzoekkopbal overgaan.
+De volgende stap is een vraag van de POST van HTTP aan het eindpunt met de noodzakelijke parameters te maken. Het malplaatje en de gegevensdossiers worden verstrekt als middeldossiers. Eigenschappen van de gegenereerde PDF worden via de parameter van de optie in de aanvraag opgegeven. De eigenschap embedFonts wordt gebruikt om aangepaste lettertypen in te sluiten in de gegenereerde PDF.[Volg deze documentatie om aangepaste lettertypen te implementeren in uw Forms-cloudinstantie.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) De eigenschappen worden gespecificeerd in het options.json middeldossier. Aangezien, heeft het eindpunt symbolische gebaseerde authentificatie wij het Token van de Toegang in de verzoekkopbal overgaan.
 
-De volgende code is gebruikt om uitwisseling JWT voor Toegangstoken te produceren
+De volgende code is gebruikt om pdf te genereren door gegevens samen te voegen met de sjabloon
 
 ```java
 public class DocumentGeneration
@@ -34,7 +34,7 @@ public class DocumentGeneration
                 String accessToken = cu.getAccessToken();
                 httpPost.addHeader("Authorization", "Bearer " + accessToken);
                 ClassLoader classLoader = DocumentGeneration.class.getClassLoader();
-                URL templateFile = classLoader.getResource("templates/address.xdp");
+                URL templateFile = classLoader.getResource("templates/custom_fonts.xdp");
                 File xdpTemplate = new File(templateFile.getPath());
                 URL url = classLoader.getResource("datafiles");
                 System.out.println(url.getPath());
@@ -45,7 +45,7 @@ public class DocumentGeneration
                         builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
                         builder.addBinaryBody("data", files[i]);
                         builder.addBinaryBody("template", xdpTemplate);
-                        builder.addTextBody("options", GetOptions.getPDFOptions(), ContentType.APPLICATION_JSON);
+                        builder.addBinaryBody("options",GetOptions.getPDFOptions().getBytes(),ContentType.APPLICATION_JSON,"options"
                         try {
                                 HttpEntity entity = builder.build();
                                 httpPost.setEntity(entity);

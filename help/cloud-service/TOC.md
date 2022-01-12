@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 12%
 
 ---
@@ -157,14 +157,14 @@ ht-degree: 12%
       + [Deelvenster Elementen configureren](./forms/create-first-af/configure-assets-panel.md)
       + [Deelvenster Start configureren](./forms/create-first-af/configure-start-panel.md)
       + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
-   + Document Cloud-API en AEM Forms CS{#doc-cloud-sdk}
-      + [Inleiding](./forms/doc-cloud-sdk/introduction.md)
-      + [Adobe IO-project maken](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
-      + [OSGI-configuratie maken](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
-      + [Interface definiëren](./forms/doc-cloud-sdk/create-interface.md)
-      + [Interface implementeren](./forms/doc-cloud-sdk/implement-interface.md)
-      + [JSON-onderdeel maken](./forms/doc-cloud-sdk/get-content-analyzer.md)
-      + [Aangepaste processtap](./forms/doc-cloud-sdk/custom-process-step.md)
+   + Documentgeneratie in AEM Forms CS{#doc-gen-formscs}
+      + [Inleiding](./forms/doc-gen-forms-cs/introduction.md)
+      + [Servicereferenties maken](./forms/doc-gen-forms-cs/service-credentials.md)
+      + [JWT-token maken](./forms/doc-gen-forms-cs/create-jwt.md)
+      + [Toegangstoken maken](./forms/doc-gen-forms-cs/create-access-token.md)
+      + [Gegevens samenvoegen met sjabloon](./forms/doc-gen-forms-cs/merge-data-with-template.md)
+      + [De oplossing testen](./forms/doc-gen-forms-cs/test.md)
+      + [Uitdaging](./forms/doc-gen-forms-cs/challenge.md)
    + Azure Portal Storage{#forms-cs-azure-portal}
       + [Inleiding](./forms/forms-cs-azure-portal/introduction.md)
       + [Formuliergegevensmodel maken](./forms/forms-cs-azure-portal/create-fdm.md)

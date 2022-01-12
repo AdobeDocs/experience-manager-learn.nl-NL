@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
 topic: Development
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,16 @@ ht-degree: 0%
 
 # Eclipproject importeren
 
-[zip file](./assets/aem-forms-doc-gen.zip) downloaden
+Download en decomprimeer de [zip-bestand](./assets/aem-forms-cs-doc-gen.zip)
 
-Eclipse starten en het project importeren in Eclipse
-Het project bevat de volgende bestanden in de bronnenmap:
+Start Eclipse en importeer het project in Eclipse. Het project bevat de volgende bestanden in de bronnenmap:
 
-* DataFile1 en DataFile2 - Voorbeeld van XML-gegevensbestanden die met de sjabloon moeten worden samengevoegd om het definitieve PDF-bestand te genereren
-* address.xdp - XDP-sjabloon
+* DataFile1, DataFile2 en DataFile3 - Voorbeeld van XML-gegevensbestanden die met de sjabloon moeten worden samengevoegd om het uiteindelijke PDF-bestand te genereren
+* custom_fonts.xdp - XDP-sjabloon.
 * service_token.json - U moet de inhoud van dit bestand vervangen door uw accountspecifieke gegevens
-* options.json - De opties die in dit bestand worden opgegeven, worden gebruikt om de eigenschappen in te stellen van het PDF-bestand dat wordt gegenereerd door de API
+* options.json - De opties die in dit bestand worden opgegeven, worden gebruikt om de eigenschappen in te stellen van het PDF-bestand dat door de API wordt gegenereerd
 
-![resources-bestand](./assets/resource-files.JPG)
+![resources-bestand](./assets/resource-files.png)
 
 ## De oplossing testen
 
@@ -37,7 +36,7 @@ Het project bevat de volgende bestanden in de bronnenmap:
 * De toepassing Main.java uitvoeren als Java
 
 >[!NOTE]
-> De allereerste keer dat u het Java-programma uitvoert, wordt een HTTP 403-fout gegenereerd. Om voorbij dit te komen, zorg ervoor u [aangewezen toestemmingen aan de technische rekeningsgebruiker in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem) geeft.
+> De allereerste keer dat u het Java-programma uitvoert, wordt een HTTP 403-fout gegenereerd. Om voorbij dit te komen, zorg ervoor u [de juiste machtigingen voor de gebruiker van de technische account in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
-**AEM Forms** gebruikt de rol die ik voor deze cursus heb gebruikt.
+**AEM Forms-gebruikers** Dat is de rol die ik voor deze cursus heb gebruikt.
 
