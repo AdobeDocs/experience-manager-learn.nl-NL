@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
+source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '656'
 ht-degree: 12%
 
 ---
@@ -145,6 +145,7 @@ ht-degree: 12%
       + [Inclusief Cloud Services en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [Gemaakt archetype bijwerken](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Adaptief formulier maken{#create-first-af}
       + [Inleiding](./forms/create-first-af/introduction.md)
       + [Thema maken](./forms/create-first-af/create-theme.md)
@@ -172,6 +173,7 @@ ht-degree: 12%
       + [Vooraf ingevuld formulier](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Query-verzendingen](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + Revisiewerkstroom maken{#create-aem-workflow}
+      + [Workflowopslag extern maken](./forms/create-aem-workflow/externalize-workflow.md)
       + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
       + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
    + Adobe Sign met AEM Forms{#forms-and-sign}
