@@ -6,9 +6,9 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 922248133a12e05ea9068a0646324f2370e743e9
+source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '221'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 4%
       + [5 - GraphQL-eindpunten](./graphql/video-series/graphql-endpoints.md)
       + [6 - Auteur- en publicatiearchitectuur](./graphql/video-series/author-publish-architecture.md)
       + [7 - GrafiekQL aanhoudende query&#39;s](./graphql/video-series/graphql-persisted-queries.md)
-   + Zelfstudie met meerdere stappen{#multi-step}
+   + Basiszelfstudie{#multi-step}
       + [Overzicht](./graphql/multi-step/overview.md)
       + [1 - Modellen voor inhoudsfragmenten definiëren](./graphql/multi-step/content-fragment-models.md)
       + [2 - Inhoudsfragmenten ontwerpen](./graphql/multi-step/author-content-fragments.md)
@@ -39,6 +39,13 @@ ht-degree: 4%
       + [4 - Een query uitvoeren vanuit een externe app](./graphql/multi-step/graphql-and-external-app.md)
       + [5 - Geavanceerde gegevensmodellering met fragmentverwijzingen](./graphql/multi-step/fragment-references.md)
       + [6 - Productie-implementatie](./graphql/multi-step/production-deployment.md)
+   + Geavanceerde zelfstudie{#advanced-tutorial}
+      + [Overzicht](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
+      + [1 - Modellen voor inhoudsfragmenten maken](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
+      + [2 - Inhoudsfragmenten auteur](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
+      + [3 - De AEM GraphQL API verkennen](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
+      + [4 - Blijvende GraphQL-query&#39;s](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
+      + [5 - Integratie van clienttoepassingen](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
    + Voorbeelden {#example-apps}
       + [Reageren](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
