@@ -131,18 +131,18 @@ Maak vervolgens een model dat informatie over een persoon bevat.
 
 10. Onder **Alleen opgegeven afbeeldingsbreedte accepteren**, selecteert u &quot;Maximumbreedte&quot;. In de **Max (pixels)** Voer &quot;500&quot; in in het veld dat wordt weergegeven. Selecteer dezelfde opties voor **Alleen een opgegeven afbeeldingshoogte accepteren**.
 
-   Deze validaties zorgen ervoor dat toegevoegde afbeeldingen de opgegeven waarden niet overschrijden. De validatieregels moeten er nu als volgt uitzien:
-   ![Validatieregels voor verwijzingen naar inhoud](assets/define-content-fragment-models/content-reference-validation.png)
+    Deze validaties zorgen ervoor dat toegevoegde afbeeldingen de opgegeven waarden niet overschrijden. De validatieregels moeten er nu als volgt uitzien:
+    ![Validatieregels voor verwijzingen naar inhoud](assets/define-content-fragment-models/content-reference-validation.png)
 
 11. Voeg een **Tekst met meerdere regels** veld en geef het een **Veldlabel** van &quot;Biografie&quot;. Laat de **Standaardtype** vervolgkeuzelijst als de standaardoptie RTF.
 
-   ![Opties voor biografie](assets/define-content-fragment-models/biography.png)
+    ![Opties voor biografie](assets/define-content-fragment-models/biography.png)
 
 12. Ga naar de **Gegevenstypen** en sleep vervolgens een **Opsomming** veld onder &quot;Profielbeeld&quot;. In plaats van de standaardinstelling **Renderen als** selecteert u **Vervolgkeuzelijst**. Ga een selectie van de opties van het de ervaringsniveau van de instructeur zoals Expert, Geavanceerd in, Midden.
 
 13. Vervolgens sleept u een andere **Opsomming** onder &quot;Niveau van de Ervaring van de Instructeur&quot; en kies &quot;checkboxes&quot;onder **Renderen als** optie. Voer verschillende vaardigheden in, zoals het klimmen van rots, surfen, fietsen, skiën en backpackaging. Het label en de waarde van de optie moeten overeenkomen met de onderstaande waarden:
 
-   ![Opsomming vaardigheden](assets/define-content-fragment-models/skills-enum.png)
+    ![Opsomming vaardigheden](assets/define-content-fragment-models/skills-enum.png)
 
 14. Ten slotte maakt u een veldlabel &quot;Beheerder details&quot; met een **Tekst met meerdere regels** veld.
 
