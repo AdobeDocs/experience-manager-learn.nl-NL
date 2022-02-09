@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
+source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '674'
 ht-degree: 12%
 
 ---
@@ -166,6 +166,12 @@ ht-degree: 12%
       + [Gegevens samenvoegen met sjabloon](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [De oplossing testen](./forms/doc-gen-forms-cs/test.md)
       + [Uitdaging](./forms/doc-gen-forms-cs/challenge.md)
+   + Documentgeneratie met behulp van batch-API{#formscs-batch-api}
+      + [Inleiding](./forms/formscs-batch-api/introduction.md)
+      + [Azure-opslag configureren](./forms/formscs-batch-api/configure-azure-storage.md)
+      + [Configuratie USC-batch maken](./forms/formscs-batch-api/configure-usc-batch.md)
+      + [Batchconfiguratie maken](./forms/formscs-batch-api/create-batch-config.md)
+      + [Batch uitvoeren](./forms/formscs-batch-api/execute-batch-generate-documents.md)
    + Azure Portal Storage{#forms-cs-azure-portal}
       + [Inleiding](./forms/forms-cs-azure-portal/introduction.md)
       + [Formuliergegevensmodel maken](./forms/forms-cs-azure-portal/create-fdm.md)
