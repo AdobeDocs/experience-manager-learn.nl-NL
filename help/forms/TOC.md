@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: 7f9a7951b2d9bb780d5374f17bb289c38b2e2ae7
+source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1641'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 0%
 + Nuttige integratie{#some-useful-integrations}
    + [Verificatie met twee factoren](some-useful-integrations/two-factor-authentication.md)
    + [OCR-gegevensextractie](some-useful-integrations/ocr-data-extraction.md)
+   + [Cascading drop-down lijsten](some-useful-integrations/geonames-org.md)
 + OSGi-bundel maken {#creating-your-first-osgi-bundle}
    + [Uw omgeving instellen](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [OSGi-service maken](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -50,6 +51,7 @@ ht-degree: 0%
    + [Prefill-service in adaptieve Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Aangepast verzenden in adaptieve Forms](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha in Adaptive Forms](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Aangepaste functies in regeleditor](adaptive-forms/custom-functions-aem-forms.md)
    + [Adaptief formulier insluiten in webpagina](adaptive-forms/embed-af-web-page.md)
    + [Een array van tekenreeksen maken](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [Het gebruiken van Vastgestelde Waarde in XML in Werkschema OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
