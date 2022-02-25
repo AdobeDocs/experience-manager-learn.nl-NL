@@ -2,7 +2,7 @@
 title: Aan de slag met AEM Sites - Project Archetype
 description: Aan de slag met AEM Sites - Project Archetype. De WKND-zelfstudie is een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog geen ervaring hebben met Adobe Experience Manager. De zelfstudie doorloopt de implementatie van een AEM site voor een fictieve levensstijl, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
 sub-product: sites
-version: 6.4, 6.5, Cloud Service
+version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
 topic: Content Management, Development
@@ -12,9 +12,9 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: a366d485da3f473bd4c1ef31538231965acc825c
+source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Welkom bij een meerdelige zelfstudie die is ontworpen voor nieuwe ontwikkelaars 
 
 Deze zelfstudie begint met het gebruik van de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) om een nieuw project te genereren.
 
-De zelfstudie is ontworpen om te werken met **AEM as a Cloud Service** en is achterwaarts compatibel met **AEM 6.5.5.0+** en **AEM 6.4.8.1+**. De site wordt geïmplementeerd met:
+De zelfstudie is ontworpen om te werken met **AEM as a Cloud Service** en is achterwaarts compatibel met **AEM 6.5.10+**. De site wordt geïmplementeerd met:
 
 * [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
@@ -44,7 +44,7 @@ Er is een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Screen
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-* [Lokale AEM **Auteur** instance](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.5+ of 6.4.8.1+)
+* [Lokale AEM **Auteur** instance](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.10+)
 * [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 of hoger)
 * [Node.js](https://nodejs.org/en/) (LTS - langdurige ondersteuning)

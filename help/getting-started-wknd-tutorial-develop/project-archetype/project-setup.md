@@ -3,7 +3,7 @@ title: Aan de slag met AEM Sites - Projectinstellingen
 seo-title: Getting Started with AEM Sites - Project Setup
 description: Omvat de verwezenlijking van een Maven Multimoduleproject om de code en de configuraties voor een AEM Plaats te beheren.
 sub-product: sites
-version: 6.4, 6.5, Cloud Service
+version: 6.5, Cloud Service
 type: Tutorial
 feature: AEM Project Archetype
 topic: Content Management, Development
@@ -13,9 +13,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: a366d485da3f473bd4c1ef31538231965acc825c
+source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ In dit hoofdstuk genereert u een nieuw Adobe Experience Manager-project met de o
 
 ## Het project maken {#create}
 
-Er zijn een paar opties voor het creëren van een Maven Multi-module project voor AEM. Deze zelfstudie maakt gebruik van de [Maven AEM Project Archetype **26**](https://github.com/adobe/aem-project-archetype). Cloud Manager ook [biedt een wizard UI](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html) het initiëren van de creatie van een AEM toepassingsproject. Het onderliggende project dat door de UI van de Manager van de Wolk wordt geproduceerd resulteert in de zelfde structuur zoals direct het gebruiken van archetype.
+Er zijn een paar opties voor het creëren van een Maven Multi-module project voor AEM. Deze zelfstudie maakt gebruik van de [Maven AEM Project Archetype **35**](https://github.com/adobe/aem-project-archetype). Cloud Manager ook [biedt een wizard UI](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html) het initiëren van de creatie van een AEM toepassingsproject. Het onderliggende project dat door de UI van de Manager van de Wolk wordt geproduceerd resulteert in de zelfde structuur zoals direct het gebruiken van archetype.
 
 >[!NOTE]
 >
->Deze zelfstudie gebruikt versie **26** van het archetype. Het is altijd verstandig om de **nieuwste** versie van archetype om een nieuw project te produceren.
+>Deze zelfstudie gebruikt versie **35** van het archetype. Het is altijd verstandig om de **nieuwste** versie van archetype om een nieuw project te produceren.
 
 De volgende reeks stappen zal plaatsvinden gebruikend een op UNIX gebaseerde terminal van de bevellijn, maar zou gelijkaardig moeten zijn als het gebruiken van een terminal van Vensters.
 
@@ -63,27 +63,6 @@ De volgende reeks stappen zal plaatsvinden gebruikend een op UNIX gebaseerde ter
    Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
    ```
 
-1. Controleer of de **adobe-public** profiel is actief door de volgende opdracht uit te voeren:
-
-   ```shell
-   $ mvn help:effective-settings
-       ...
-   <activeProfiles>
-       <activeProfile>adobe-public</activeProfile>
-   </activeProfiles>
-   <pluginGroups>
-       <pluginGroup>org.apache.maven.plugins</pluginGroup>
-       <pluginGroup>org.codehaus.mojo</pluginGroup>
-   </pluginGroups>
-   </settings>
-   [INFO] ------------------------------------------------------------------------
-   [INFO] BUILD SUCCESS
-   [INFO] ------------------------------------------------------------------------
-   [INFO] Total time:  0.856 s
-   ```
-
-   Als u **niet** zie **adobe-public** het is een aanwijzing dat in uw `~/.m2/settings.xml` bestand. Ga opnieuw naar de stappen voor het installeren en configureren van Apache Maven in [een plaatselijke ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#install-apache-maven).
-
 1. Navigeer naar een map waarin u het AEM project wilt genereren. Dit kan om het even welke folder zijn waarin u de broncode van uw project wilt handhaven. Bijvoorbeeld een map met de naam `code` onder de homemap van de gebruiker:
 
    ```shell
@@ -93,21 +72,22 @@ De volgende reeks stappen zal plaatsvinden gebruikend een op UNIX gebaseerde ter
 1. Plak het volgende in de opdrachtregel naar [produceer het project op partijwijze](https://maven.apache.org/archetype/maven-archetype-plugin/examples/generate-batch.html):
 
    ```shell
-   mvn -B archetype:generate \
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
        -D archetypeGroupId=com.adobe.aem \
        -D archetypeArtifactId=aem-project-archetype \
-       -D archetypeVersion=26 \
+       -D archetypeVersion=35 \
        -D appTitle="WKND Sites Project" \
        -D appId="wknd" \
-       -D groupId="com.adobe.aem.guides.wknd" \
+       -D groupId="com.adobe.aem.guides" \
        -D artifactId="aem-guides-wknd" \
+       -D package="com.adobe.aem.guides.wknd" \
        -D version="0.0.1-SNAPSHOT" \
        -D aemVersion="cloud"
    ```
 
    >[!NOTE]
    >
-   > Vervang AEM 6.5.5+ `aemVersion="cloud"` with `aemVersion="6.5.5"`. Gebruik, indien gericht op 6.4.8+, `aemVersion="6.4.8"`.
+   > Vervang bij AEM 6.5.10+ `aemVersion="cloud"` with `aemVersion="6.5.10"`.
 
    Een volledige lijst van beschikbare eigenschappen voor het vormen van een project [hier te vinden](https://github.com/adobe/aem-project-archetype#available-properties).
 
@@ -349,3 +329,7 @@ Om enkel deze module te bouwen:
 De **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** module is op dezelfde manier gestructureerd als de **ui.apps** module. Het enige verschil is dat **ui.content** module bevat wat bekend staat als **veranderlijk** inhoud. **Mutable** de inhoud verwijst hoofdzakelijk naar niet codeconfiguraties zoals Malplaatjes, Beleid, of omslagstructuren die in bron-controle worden opgeslagen **maar** kan rechtstreeks op een AEM worden gewijzigd. Dit zal in het hoofdstuk over Pagina&#39;s en Malplaatjes veel gedetailleerder worden onderzocht.
 
 Dezelfde Maven-opdrachten die worden gebruikt om de **ui.apps** kan worden gebruikt om de **ui.content** module. U kunt de bovenstaande stappen vanuit de **ui.content** map.
+
+## Problemen oplossen
+
+Als u kwesties hebt die het project produceren gebruikend het AEM Archetype van het Project zie de lijst van [bekende problemen](https://github.com/adobe/aem-project-archetype#known-issues) en lijst van [kwesties](https://github.com/adobe/aem-project-archetype/issues).
