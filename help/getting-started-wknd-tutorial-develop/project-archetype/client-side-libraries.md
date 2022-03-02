@@ -11,9 +11,9 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: 1a73d7ee1f71a5bd78114398f04e98a894847957
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2882'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ client-side bibliotheken/main-scss
 
    Elk bestand wordt toegewezen aan een Core-component zoals de [Accordion-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). Elke Core-component is gebouwd met [Element-wijziging blokkeren](https://getbem.com/) of BEM-notatie, zodat het eenvoudiger wordt om specifieke CSS-klassen met stijlregels als doel in te stellen. De onderliggende bestanden `/components` zijn door het AEM Project Archetype met de verschillende regels van BEM voor elke component geschrapt.
 
-1. De WKND-basisstijlen downloaden **[wknd-base-styles-src-v3.zip]/(help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** en **unzip** het bestand.
+1. De WKND-basisstijlen downloaden **[wknd-base-styles-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** en **unzip** het bestand.
 
    ![WKND-basisstijlen](assets/client-side-libraries/wknd-base-styles-unzipped.png)
 
