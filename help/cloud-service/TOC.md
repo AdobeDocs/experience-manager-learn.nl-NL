@@ -4,10 +4,10 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 12%
+source-wordcount: '697'
+ht-degree: 11%
 
 ---
 
@@ -188,6 +188,11 @@ ht-degree: 12%
       + [Adobe Sign Cloud Configuration](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Adaptief formulier maken](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configureren voor invullen en ondertekenen](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Integreren met Microsoft Dynamics{#formscs-dynamics-crm}
+      + [Dynamische toepassing maken](./forms/formscs-dynamics-crm/create-dynamics-account.md)
+      + [Gegevensbron configureren](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
+      + [Formuliergegevensmodel maken](./forms/formscs-dynamics-crm/create-form-data-model.md)
+      + [Adaptief formulier maken](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integreren met Salesforce{#integrate-with-salesforce}
       + [Inleiding](./forms/integrate-with-salesforce/introduction.md)
       + [Een verbonden app maken](./forms/integrate-with-salesforce/create-connected-app.md)
@@ -217,6 +222,10 @@ ht-degree: 12%
    + Geavanceerd{#advanced}
       + [Metagegevensworkers](./asset-compute/advanced/metadata.md)
    + [Problemen oplossen](./asset-compute/troubleshooting.md)
++ Wolk 5{#cloud-5}
+   + [Inleiding](./cloud-5/cloud5-introduction.md)
+   + [Seizoen 1](./cloud-5/cloud5-season-1.md)
+   + [AEM CDN Deel 1](./cloud-5/cloud5-aem-cdn-part1.md)
 + [AEM Deskundigenreeks](./aem-experts-series.md)
 + Tutorials met meerdere stappen{#multi-step-tutorials}
    + [AEM Sites-ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
