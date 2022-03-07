@@ -1,0 +1,98 @@
+---
+title: Wolk 5 - Seizoen 1
+description: Leer over Adobe Experience Manager (AEM) as a Cloud Service van de ingenieurs van de Adobe zelf die het bouwen, en de deskundige diensten die het leveren.
+sub-product: sites, cloud-manager, assets
+solution: Experience Manager as a Cloud Service, Experience Manager
+recommendations: noDisplay, noCatalog
+exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
+source-git-commit: 6f512bc35477b064a956ed35bc514166c3e9b683
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 2%
+
+---
+
+# Wolk 5
+
+![AEM Deskundigenreeks](./imgs/masthead.png)
+
+## Seizoen 1
+
+Elk seizoen varieert in lengte en wordt op een vast tijdschema vrijgegeven. De onderwerpen van seizoen 1 zijn voornamelijk gebaseerd op eerdere verzoeken die we hebben ontvangen in onze dagelijkse afspraken met klanten en partners. Bezoek deze pagina voor wekelijkse updates of volg ons op het sociale netwerk van uw keuze.
+
+<table>
+  <tr>
+   <td>
+      <a href="./cloud5-aem-cdn-part1.md">
+      <img alt="AEM CDN Deel 1" src="./imgs/001-thumb.png"/>
+      </a>
+      <div>
+         <a href="./cloud5-aem-cdn-part1.md"><strong>AEM CDN diep duiken (deel 1)</strong></a>         
+         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+      </div>
+      <p>
+        <br/>
+         Deel 1 is een blik bij AEM as a Cloud Service CDN, en hoe te om het in uw implementatie te gebruiken.
+      </p>
+     </td>   
+     <td>
+      <img alt="AEM CDN Deel 2" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>AEM CDN Diep duiken (deel 2)</strong>
+         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+      </div>
+      <p>
+        <br/>
+         Vanaf 11 maart 2022
+      </p>
+   </td>     
+   </td>   
+     <td>
+      <img alt="Logbestanden en logbestanden" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Logbestanden en logbestanden</strong>
+         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+      </div>
+      <p>
+        <br/>
+         Vanaf 18 maart 2022
+      </p>
+   </td> 
+  </tr>
+  <tr>
+   <td>
+      <img alt="Toegangstokens" src="./imgs/coming-soon.png"/>
+      <div>
+        <strong>Integreren met Access Tokens</strong>        
+         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+      </div>
+      <p>
+        <br/>
+         Vanaf 25 maart 2022
+      </p>
+     </td>   
+     <td>
+      <img alt="Dispatcher in de cloud" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Dispatcher in de cloud</strong>
+         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+      </div>
+      <p>
+        <br/>
+         Vanaf 1 april 2022
+      </p>
+   </td>     
+   </td>   
+     <td>
+      <img alt="Migratie (deel 1)" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Migratie (deel 1)</strong>
+         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+      </div>
+      <p>
+        <br/>
+         Vanaf 8 april 2022
+      </p>
+   </td> 
+  </tr>
+</table>
