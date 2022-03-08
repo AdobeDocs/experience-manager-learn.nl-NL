@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 6f512bc35477b064a956ed35bc514166c3e9b683
+source-git-commit: 4fc95c69f3c15122f9e4b87be469f8bc15097042
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '256'
+ht-degree: 1%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 2%
 
 ![AEM Deskundigenreeks](./imgs/masthead.png)
 
+## Inleiding
+
+Welkom bij de Cloud 5 Series van AEM Engineering. Een van de belangrijkste problemen in de implementatiefase van een product is het hebben van voldoende codevoorbeelden en/of live demonstraties van deze samples, tools of API&#39;s. Het doel van deze reeks is nuttige informatie over AEM as a Cloud Service in 5 minuten of minder te leveren.
+
 ## Seizoen 1
 
-Elk seizoen varieert in lengte en wordt op een vast tijdschema vrijgegeven. De onderwerpen van seizoen 1 zijn voornamelijk gebaseerd op eerdere verzoeken die we hebben ontvangen in onze dagelijkse afspraken met klanten en partners. Bezoek deze pagina voor wekelijkse updates of volg ons op het sociale netwerk van uw keuze.
+Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven. De onderwerpen van seizoen 1 zijn voornamelijk gebaseerd op eerdere verzoeken die we hebben ontvangen in onze dagelijkse afspraken met klanten en partners. Bezoek deze pagina voor wekelijkse updates of volg ons op het sociale netwerk van uw keuze.
 
 <table>
   <tr>
