@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: ba2c299baeda632d6ebeff0c6ee07de5ef29b9cb
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,13 @@ Leer hoe te om AEM as a Cloud Service met uw VPN te verbinden om veilige communi
 
 ## Wat is Virtual Private Network?
 
-Het virtuele Privé Netwerk (VPN) staat een AEM as a Cloud Service klant toe om een Programma van de Manager van de Wolk met bestaand te verbinden, [ondersteund](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. Dit staat veilige, en gecontroleerde verbindingen tussen AEM as a Cloud Service en de diensten binnen het netwerk van de klant toe.
+Het virtuele Privé Netwerk (VPN) staat een AEM as a Cloud Service klant toe om te verbinden **de AEM** binnen een Cloud Manager-programma naar een bestaand programma [ondersteund](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. Dit staat veilige, en gecontroleerde verbindingen tussen AEM as a Cloud Service en de diensten binnen het netwerk van de klant toe.
 
 Een Cloud Manager-programma kan alleen een __enkel__ type netwerkinfrastructuur. Zorg ervoor dat Virtual Private Network het meest is [geschikt type netwerkinfrastructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#general-vpn-considerations) voor uw AEM as a Cloud Service alvorens de volgende bevelen uit te voeren.
+
+>[!NOTE]
+>
+>Opmerking: het verbinden van de ontwikkelomgeving van Cloud Manager met een VPN wordt niet ondersteund. Als u binaire artefacten van een privé bewaarplaats moet toegang hebben moet u opstelling een veilige en wachtwoord beschermde bewaarplaats met een URL die op het openbare Internet beschikbaar is [zoals hier beschreven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories).
 
 >[!MORELIKETHIS]
 >
