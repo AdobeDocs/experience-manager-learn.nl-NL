@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 83757a34cc82159326d3e035b88f018972d5dc27
+source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -51,8 +51,7 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
         <br/>
          Deel 2 is een voortzetting van onze blik op AEM as a Cloud Service CDN. We beantwoorden enkele van de meer algemene vragen en mythes over welke functies u krijgt met de nieuwe CDN.
       </p>
-   </td>     
-   </td>   
+   </td>
      <td>
       <img alt="Logbestanden en logbestanden" src="./imgs/coming-soon.png"/>
       <div>
@@ -87,8 +86,7 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
         <br/>
          Vanaf 1 april 2022
       </p>
-   </td>     
-   </td>   
+   </td>
      <td>
       <img alt="Migratie (deel 1)" src="./imgs/coming-soon.png"/>
       <div>
@@ -98,6 +96,41 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       <p>
         <br/>
          Vanaf 8 april 2022
+      </p>
+   </td> 
+  </tr>
+<tr>
+   <td>
+      <img alt="Migratie (deel 2)" src="./imgs/coming-soon.png"/>
+      <div>
+        <strong>Migratie (deel 2)</strong>        
+         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+      </div>
+      <p>
+        <br/>
+         Vanaf 14 april 2022
+      </p>
+     </td>   
+     <td>
+      <img alt="Validator van verzender" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Validator van verzender</strong>
+         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+      </div>
+      <p>
+        <br/>
+         Vanaf 22 april 2022
+      </p>
+   </td>
+     <td>
+      <img alt="Tips voor indexeren en zoeken" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Tips voor indexeren en zoeken</strong>
+         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+      </div>
+      <p>
+        <br/>
+         Vanaf 29 april 2022
       </p>
    </td> 
   </tr>
