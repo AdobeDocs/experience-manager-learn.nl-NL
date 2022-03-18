@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
+source-git-commit: 187f13c5051237915fdc8a8c0e3280dd0f0702ce
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 1%
 
 ---
 
@@ -53,14 +53,16 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       </p>
    </td>
      <td>
-      <img alt="Logbestanden en logbestanden" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-log-files.md">
+            <img alt="Logbestanden en logbestanden" src="./imgs/003-thumb.png"/>
+        </a>
       <div>
-         <strong>Logbestanden en logbestanden</strong>
+         <a href="./cloud5-aem-log-files.md"><strong>Logbestanden en logbestanden</strong></a>
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-         Vanaf 18 maart 2022
+         Dit is een snel onderzoek naar hoe te om tot logboeken toegang te hebben as a Cloud Service, met inbegrip van hoe te om tot hen via de gebruikersinterface evenals van APIs toegang te hebben.
       </p>
    </td> 
   </tr>
