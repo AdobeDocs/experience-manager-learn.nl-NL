@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: 947c280f32b013a6ade76b2f3df1152b29108c6e
+source-git-commit: 697b2c11f91899c56869a24b06c690a8e278df0c
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers ku
 
 >[!NOTE]
 >
-> Dynamic Media Hybrid biedt na 15 maart 2022 GEEN ondersteuning voor videostreaming in Internet Explorer 11.
+> Dynamic Media Hybrid biedt na 15 maart 2022 GEEN ondersteuning voor videostreaming in Internet Explorer 11. Voer een upgrade uit naar 6.5.12 als u wilt terugvallen op progressief afspelen.
 
 <table> 
  <thead> 
@@ -49,7 +49,9 @@ De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers ku
   <tr>
    <td> <p>Desktop</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
-   <td> <p>HLS-videostreaming</p> </td>
+   <td> <p>Dynamic Media - modus Scène 7: HLS-videostreaming</p> 
+        <p>Dynamic Media - Hybride modus: Progressieve download</p>
+   </td>
   </tr>
   <tr>
    <td> <p>Desktop</p> </td>
