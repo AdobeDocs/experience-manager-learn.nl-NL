@@ -1,28 +1,28 @@
 ---
-title: Ontwikkelen met Output and Forms Services in AEM Forms
-description: Uitvoer- en Forms Service-API in AEM Forms gebruiken
+title: Interactieve PDF renderen met Forms Services in AEM Forms
+description: Forms Service API in AEM Forms gebruiken om interactieve PDF te renderen
 feature: Forms Service
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 9b2ef4c9-8360-480d-9165-f56a959635fb
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
+# Interactieve PDF renderen met Forms Services in AEM Forms
 
-# Interactieve PDF-bestanden renderen met Forms Services in AEM Forms
-
-Forms Service API in AEM Forms gebruiken om interactieve PDF-bestanden te renderen
+Forms Service API in AEM Forms gebruiken om interactieve PDF te renderen
 
 In dit artikel bekijken we de volgende service
 
-* FormsService - Dit is een zeer veelzijdige service waarmee u gegevens kunt exporteren/importeren vanuit en naar een PDF-bestand en waarmee u ook interactieve PDF-bestanden kunt genereren door XML-gegevens samen te voegen tot een xdp-sjabloon
+* FormsService - Dit is een zeer veelzijdige dienst die u toestaat om gegevens uit en in het dossier van PDF uit te voeren/in te voeren en interactieve pdf ook te produceren door xml gegevens in het malplaatje samen te voegen xdp
 
-De officiële javadoc voor de AEM Forms API wordt [hier](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html) vermeld
+De officiële javadoc voor de AEM Forms API wordt weergegeven [hier](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Het volgende codefragment geeft interactief pdf terug gebruikend de renderPDFForm verrichting van FormsService. Het bestand schengen.xdp wordt gebruikt om de XML-gegevens samen te voegen.
 
@@ -59,10 +59,8 @@ Regel 11: Hiermee wordt de gegenereerde interactieve PDF naar de opvragende toep
 1. Het volgende pad toevoegen aan de uitgesloten secties en opslaan
 1. /bin/generateinteractivepdf
 1. [Het mobiele formulier openen](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Vul een paar gebieden in en klik dan ***Download en vul...*** button
+1. Vul een paar gebieden in en klik dan ***Downloaden en vullen....*** button
 1. De interactieve pdf moet naar uw lokale systeem worden gedownload
 
 
-Het voorbeeldpakket bevat het aangepaste profiel dat is gekoppeld aan het mobiele formulier. Bekijk het bestand [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Dit jsp haalt de gegevens uit het mobiele formulier en doet een verzoek van de POST aan servlet gemonteerd op ***/bin/generateinteractivepdf*** weg. De servlet keert interactieve pdf aan de roepende toepassing terug. De code in customtoolbar.jsp downloadt dan het dossier aan uw lokaal systeem
-
-
+Het voorbeeldpakket bevat het aangepaste profiel dat is gekoppeld aan het Mobile-formulier. Verken de [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) bestand. Deze jsp haalt de gegevens uit het mobiele formulier en doet een verzoek om een POST naar servlet te installeren op ***/bin/generateinteractivepdf*** pad. De servlet keert interactieve pdf aan de roepende toepassing terug. De code in customtoolbar.jsp downloadt dan het dossier aan uw lokaal systeem

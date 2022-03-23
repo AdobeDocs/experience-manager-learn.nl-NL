@@ -1,10 +1,10 @@
 ---
-title: Tomcat installeren en configureren
-seo-title: Tomcat installeren en configureren
-description: Dit is een onderdeel van de zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit onderdeel wordt TOMCAT geïnstalleerd en wordt het bestand sampleRest.war in TOMCAT geïmplementeerd. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld zal de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm zijn.
-seo-description: Dit is een onderdeel van de zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit onderdeel wordt TOMCAT geïnstalleerd en wordt het bestand sampleRest.war in TOMCAT geïmplementeerd. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld zal de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm zijn.
+title: Tomcat-video installeren en configureren
+seo-title: Install and Configure Tomcat
+description: Dit is een onderdeel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit onderdeel wordt TOMCAT geïnstalleerd en wordt het bestand sampleRest.war in TOMCAT geïmplementeerd. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld zal de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm zijn.
+seo-description: This is part 1 of multistep tutorial for creating your first interactive communications document.In this part, we will install TOMCAT and deploy the sampleRest.war file in TOMCAT. The REST endpoint exposed by this WAR file will be the basis for our Data Source and Form Data Model.
 uuid: 835e2342-82b6-4f0c-9a6b-467bbbd8527a
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,16 +12,16 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 37815.jpg
 discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Tomcat installeren en configureren {#install-and-configure-tomcat}
 
@@ -33,15 +33,15 @@ Volg de volgende instructies om Tomcat in te stellen:
 
 1. Download en installeer JDK1.8.
 2. Stel JAVA_HOME in om naar JDK1.8 te wijzen.
-3. Download [tomcat](https://tomcat.apache.org/). Dit oorlogsbestand is getest met Tomcat versie 8.5.x en 9.0.x.
+3. Downloaden [tomcat](https://tomcat.apache.org/). Dit oorlogsbestand is getest met Tomcat versie 8.5.x en 9.0.x.
 4. Download de nieuwste versie van uw voorkeur. U kunt de 64-bits Windows zip downloaden onder de kernsectie.
 5. Pak de inhoud uit op c:\tomcat.
-6. U zou iets als dit in uw aandrijving van c **c:\tomcat\apache-tomcat-8.5.27** afhankelijk van de versie van uw kat moeten zien
+6. Je moet iets als dit zien in je c-drive **c:\tomcat\apache-tomcat-8.5.27** afhankelijk van de versie van uw tomcat
 7. Maak een omgevingsvariabele met de naam &quot;CATALINA_HOME&quot; en stel de waarde ervan in op het voorbeeld van de map voor tomcat-installatie c:\tomcat\apache- tomcat-8.5.27
 8. Kopieer het bestand SampleRest.war naar de map webapps van uw Tomcat-installatie
 9. Nieuw opdrachtpromptvenster starten.
-10. Navigeer naar &lt;tomcat install folder>\bin en voer het start.bat uit
-11. Zodra uw tomcat is begonnen, test het eindpunt dat door het Dossier van WAR door [klikkend hier](http://localhost:8080/SampleRest/webapi/getStatement/9586) wordt blootgesteld
+10. Navigeren naar &lt;tomcat install=&quot;&quot; folder=&quot;&quot;>\bin en voert het bestand start.bat uit
+11. Als uw tomcat is gestart, test u het eindpunt dat door WAR File wordt getoond door [hier klikken](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. U zou steekproefgegevens als resultaat van deze vraag moeten krijgen.
 
 Gefeliciteerd!!! U kunt het bestand SampleRest.war instellen en implementeren.

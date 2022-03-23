@@ -1,37 +1,36 @@
 ---
-title: Triggerwerkstroom AEM HTML5-formulierverzending
-seo-title: Trigger AEM workflow voor het verzenden van HTML5-formulieren
+title: Triggerwerkstroom AEM HTM5 Form Submission Introduction
+seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
-seo-description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
+seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 88295af5-3022-4462-9194-46d8c979bc8b
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
 # Gedeeltelijk ingevuld mobiel formulier downloaden en verzenden naar AEM workflow
 
-Een veel voorkomend geval is dat u de XDP als HTML-bestand kunt weergeven voor activiteiten voor het vastleggen van gegevens. Dit werkt goed als de formulieren eenvoudig zijn en online kunnen worden ingevuld en verzonden. Als het formulier echter complex is en gebruikers het formulier mogelijk niet online kunnen invullen, moeten we de gebruikers de mogelijkheid bieden om interactieve versies van het formulier te downloaden en vervolgens via Acrobat/Reader offline in te vullen. Nadat het formulier is ingevuld, kan de gebruiker het online verzenden.
+Een algemeen gebruiksgeval moet de capaciteit hebben om XDP als HTML voor de activiteiten van de gegevensvangst terug te geven. Dit werkt goed als de formulieren eenvoudig zijn en online kunnen worden ingevuld en verzonden. Als het formulier echter complex is en gebruikers het formulier mogelijk niet online kunnen invullen, moeten we de gebruikers de mogelijkheid bieden om interactieve versies van het formulier te downloaden en vervolgens via Acrobat/Reader offline in te vullen. Nadat het formulier is ingevuld, kan de gebruiker het online verzenden.
 Voor dit gebruiksgeval moeten de volgende stappen worden uitgevoerd:
 
-* Mogelijkheid om een interactieve/invulbare PDF te genereren met de gegevens die zijn ingevoerd in het mobiele formulier
-* PDF-verzending vanuit Acrobat/Reader verwerken
-* De Adobe Experience Manager-workflow (AEM) activeren om de verzonden PDF te reviseren
+* Mogelijkheid om interactieve/invulbare PDF te genereren met de gegevens die zijn ingevoerd in het mobiele formulier
+* De PDF-verzending van Acrobat/Reader afhandelen
+* De Adobe Experience Manager-workflow (AEM) activeren om de verzonden PDF te bekijken
 
-Deze zelfstudie doorloopt de stappen die nodig zijn om het bovenstaande gebruiksgeval te voltooien. Voorbeeldcode en elementen die betrekking hebben op deze zelfstudie zijn [hier beschikbaar.](part-four.md)
+Deze zelfstudie doorloopt de stappen die nodig zijn om het bovenstaande gebruiksgeval te voltooien. Voorbeeldcode en elementen die aan deze zelfstudie zijn gerelateerd, zijn [hier beschikbaar.](part-four.md)
 
 In de volgende video ziet u een overzicht van het gebruik
 
 >[!VIDEO](https://video.tv.adobe.com/v/29677?quality=9&learn=on)
-

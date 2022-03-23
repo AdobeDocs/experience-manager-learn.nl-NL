@@ -1,30 +1,30 @@
 ---
-title: Triggerwerkstroom AEM HTML5-formulierverzending
-seo-title: Trigger AEM workflow voor het verzenden van HTML5-formulieren
+title: Trigger AEM workflow voor HTML5-formulierverzending - Aangepast profiel maken
+seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
-seo-description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
+seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4, 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
+exl-id: b6e3acee-4a07-4d00-b3a1-f7aedda21e6e
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-
 # Aangepast profiel maken
 
-In dit deel maken we een aangepast profiel.[](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Een profiel is verantwoordelijk voor het renderen van de XDP als HTML. Er wordt een standaardprofiel opgegeven in het vak voor het renderen van XDP&#39;s als HTML. Deze vertegenwoordigt een aangepaste versie van de Mobile Forms Rendition-service. Met de service Mobiele formulieruitvoering kunt u de weergave, het gedrag en de interacties van de Mobile Forms aanpassen. In ons aangepaste profiel leggen we de gegevens die in het mobiele formulier zijn ingevuld, vast met de API voor hulplijnen. Deze gegevens worden vervolgens naar een aangepaste servlet verzonden, die vervolgens een interactieve PDF genereert en deze terugstuurt naar de aanroepende toepassing.
+In dit deel zullen we een [aangepast profiel.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Een profiel is verantwoordelijk voor het renderen van de XDP als HTML. Er wordt een standaardprofiel opgegeven in het vak voor het renderen van XDP&#39;s als HTML. Deze vertegenwoordigt een aangepaste versie van de Mobile Forms Rendition-service. Met de service Mobile Form Rendition kunt u de weergave, het gedrag en de interacties van de Mobile Forms aanpassen. In ons aangepaste profiel leggen we de gegevens die in het mobiele formulier zijn ingevuld, vast met de API voor hulplijnen. Deze gegevens worden vervolgens naar een aangepaste servlet verzonden die vervolgens een interactieve PDF genereert en deze terugstuurt naar de aanroepende toepassing.
 
-Haal de formuliergegevens op met de JavaScript-API `formBridge`. Wij maken gebruik van de `getDataXML()` methode:
+De formuliergegevens ophalen met de `formBridge` JavaScript-API. We maken gebruik van de `getDataXML()` methode:
 
 ```javascript
 window.formBridge.getDataXML({success:suc,error:err});
@@ -63,7 +63,7 @@ var suc = function(obj) {
 
 ## Interactieve PDF genereren
 
-Hier volgt de servletcode die verantwoordelijk is voor het renderen van interactieve pdf en het retourneren van de pdf naar de aanroepende toepassing. servlet haalt `mobileFormToInteractivePdf` methode van de douaneDocumentServices OSGi dienst aan.
+Hier volgt de servletcode die verantwoordelijk is voor het renderen van interactieve pdf en het retourneren van de pdf naar de aanroepende toepassing. De servlet roept `mobileFormToInteractivePdf` methode van de douaneDocumentServices OSGi dienst.
 
 ```java
 import java.io.File;
@@ -125,7 +125,7 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 
 ### Interactieve PDF renderen
 
-De volgende code maakt gebruik van de [Forms Service API](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) om een interactieve PDF te genereren met de gegevens van het mobiele formulier.
+De volgende code maakt gebruik van de [Forms Service API](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) om interactieve PDF te genereren met de gegevens van het mobiele formulier.
 
 ```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {
@@ -148,7 +148,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-[Klik hier](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content) om te zien hoe u interactieve PDF kunt downloaden van een gedeeltelijk voltooid mobiel formulier.
-Nadat de PDF is gedownload, wordt de PDF verzonden om een AEM workflow te activeren. Met deze workflow worden de gegevens uit de verzonden PDF samengevoegd en wordt een niet-interactieve PDF voor revisie gegenereerd.
+U kunt als volgt de mogelijkheid weergeven om interactieve PDF te downloaden van een gedeeltelijk voltooid mobiel formulier: [klik hier](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
+Wanneer de PDF is gedownload, moet u de PDF indienen om een AEM workflow te activeren. Deze workflow voegt de gegevens van de verzonden PDF samen en genereert niet-interactieve PDF voor revisie.
 
-Het aangepaste profiel dat voor dit gebruiksgeval is gemaakt, is beschikbaar als onderdeel van deze zelfstudie-elementen.
+Het aangepaste profiel dat voor dit gebruiksgeval is gemaakt, is beschikbaar als onderdeel van deze zelfstudie.

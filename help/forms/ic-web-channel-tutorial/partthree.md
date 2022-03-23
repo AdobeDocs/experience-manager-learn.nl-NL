@@ -1,18 +1,18 @@
 ---
-title: Formuliergegevensmodel maken
+title: Formuliergegevensmodel, deel 3 maken
 description: Dit is onderdeel 3 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit onderdeel maken we het formuliergegevensmodel. Het Model van de Gegevens van de vorm staat u toe om met ongelijksoortige gegevensbronnen te vormen en te verbinden.Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen.De volgende video loopt door de stappen om het Model van de Gegevens van de Vorm tot stand te brengen.
-feature: Interactieve communicatie
-topic: Ontwikkeling
+feature: Interactive Communication
+topic: Development
 version: 6.4,6.5
 role: Developer
 level: Beginner
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+exl-id: 798012e5-5099-4fd0-82ad-a21f64a97aca
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
-
 
 # Formuliergegevensmodel maken
 
@@ -30,6 +30,6 @@ Het Model van de Gegevens van de vorm is afhankelijk van een correct gevormde Ge
 
 Het Model van de Gegevens van de vorm is de basis voor al uw Interactieve Mededelingen. Met de bewerking Ophalen/lezen van het formuliergegevensmodel worden de gegevens opgehaald van de gegevensbron van de back-end en wordt het document Interactieve communicatie gevuld.
 
-Zie [Gegevensbronnen configureren](parttwo.md) voor meer informatie.
+Zie voor meer informatie [Gegevensbronnen configureren](parttwo.md).
 
 Nadat u het formuliergegevensmodel hebt gemaakt, kunt u het gebruiken als basis voor het maken van documentfragmenten en interactieve communicatiedocumenten.

@@ -1,15 +1,16 @@
 ---
-title: Formuliergegevens opslaan en ophalen vanuit MySQL-database
+title: Formuliergegevens opslaan en ophalen vanuit MySQL Database - Clientbibliotheek maken
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens
-feature: Adaptieve Forms
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: eef98a55-80d0-4598-abf2-02a6c5247b64
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

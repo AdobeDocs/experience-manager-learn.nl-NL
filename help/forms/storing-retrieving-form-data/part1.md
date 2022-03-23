@@ -1,22 +1,23 @@
 ---
-title: Formuliergegevens opslaan en ophalen vanuit MySQL-database
+title: Opslaan en ophalen van formuliergegevens uit MySQL-database - Gegevensbron configureren
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens
 version: 6.3,6.4,6.5
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+exl-id: dccca658-3373-4de2-8589-21ccba2b7ba6
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Gegevensbron configureren
 
-Er zijn vele manieren waarmee AEM integratie met externe gegevensbestand toelaat. Één van de gemeenschappelijkste &amp; standaardpraktijk van gegevensbestandintegratie is door Apache het Verdelen van Verbinding Gepoolde configuratieeigenschappen DataSource door [configMgr](http://localhost:4502/system/console/configMgr) te gebruiken.
-De eerste stap bestaat uit het downloaden en implementeren van de juiste [MySql drivers](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM.
+Er zijn vele manieren waarmee AEM integratie met externe gegevensbestand toelaat. Één van de gemeenschappelijkste &amp; standaardpraktijk van gegevensbestandintegratie is door Apache het Verdelen van Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [configMgr](http://localhost:4502/system/console/configMgr).
+De eerste stap bestaat uit het downloaden en implementeren van de juiste [MySql-stuurprogramma&#39;s](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM.
 Maak Apache Sling Connection Pooled DataSource en geef de eigenschappen op die zijn opgegeven in de onderstaande schermafbeelding. Het databaseschema wordt als onderdeel van deze zelfstudie-elementen aan u verstrekt.
 
 ![gegevensbron](assets/save-continue.PNG)
@@ -25,10 +26,10 @@ Het gegevensbestand heeft één lijst genoemd formdata met de 3 kolommen zoals a
 
 ![gegevensbank](assets/data-base-tables.PNG)
 
-Het sql- dossier om het schema tot stand te brengen kan [van hier ](assets/form-data-db.sql) worden gedownload. U zult dit dossier gebruikend MySql werkbank moeten invoeren om het schema en de lijst tot stand te brengen.
+Het sql-bestand waarmee het schema wordt gemaakt, kan [hier gedownload](assets/form-data-db.sql). U zult dit dossier gebruikend MySql werkbank moeten invoeren om het schema en de lijst tot stand te brengen.
 
 >[!NOTE]
->Geef de gegevensbron **SaveAndContinue** een naam. De voorbeeldcode gebruikt de naam om verbinding te maken met de database.
+>Zorg ervoor dat u uw gegevensbron een naam geeft **Opslaan en doorgaan**. De voorbeeldcode gebruikt de naam om verbinding te maken met de database.
 
 | Eigenschapnaam | Waarde |
 | ------------------------|---------------------------------------|

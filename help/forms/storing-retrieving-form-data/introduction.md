@@ -1,19 +1,19 @@
 ---
-title: Formuliergegevens opslaan en ophalen vanuit MySQL-database
+title: Het opslaan van en het Ophalen van de Gegevens van de Vorm van de Inleiding van het Gegevensbestand MySQL
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens
-feature: Adaptieve Forms
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 95795102-4278-4556-8e0f-1b8a359ab093
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve formuliergegevens opslaan en ophalen vanuit MySQL-database
 
@@ -23,7 +23,7 @@ Deze zelfstudie begeleidt u door de stappen die nodig zijn voor het opslaan en o
 
 * Maak een POST vraag aan een servlet. Deze servlet slaat de gegevens in het gegevensbestand op. De opgeslagen gegevens worden geassocieerd met een GUID
 
-* Wanneer u de Aangepaste Vorm met de opgeslagen gegevens wilt bevolken, wint u de gegevens verbonden aan GUID terug en bevolkt de Aanpassende Vorm gebruikend **request.setAttribute** methode.
+* Wanneer u het Adaptieve formulier wilt vullen met de opgeslagen gegevens, haalt u de gegevens die aan de GUID zijn gekoppeld op en vult u het Adaptieve formulier met het gereedschap **request.setAttribute** methode.
 
 ## Bewijs van de gebruikszaak
 

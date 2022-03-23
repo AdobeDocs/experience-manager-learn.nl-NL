@@ -1,23 +1,23 @@
 ---
-title: Aanpassing van Postvak IN
+title: Aangepaste kolommen toevoegen
 description: Aangepaste kolommen toevoegen om aanvullende gegevens over de workflow weer te geven
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 1%
+source-wordcount: '307'
+ht-degree: 0%
 
 ---
-
 
 # Aangepaste kolommen toevoegen
 
@@ -84,12 +84,12 @@ return isMarried(inboxItem);
 * [Aanmelden bij AEM webconsole](http://localhost:4502/system/console/bundles)
 * [Aanpassingsbundel inbox implementeren en starten](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [De inbox openen](http://localhost:4502/aem/inbox)
-* Open Beheer door op _Lijstweergave_ te klikken naast de knop _Maken_
+* Beheer beheren openen door op _Lijstweergave_ pictogram naast _Maken_ knop
 * Gehuwde kolom toevoegen aan Postvak IN en uw wijzigingen opslaan
 * [Naar interface FormsAndDocuments gaan](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importeer de voorbeeldindeling ](assets/snap-form.zip) door  _Bestand_ uploaden te selecteren in  __ Createmenu
+* [Het voorbeeldformulier importeren](assets/snap-form.zip) door _Bestand uploaden_ van _Maken_ menu
 * [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selecteer de _huwelijksstatus_ en verzend het formulier
+* Selecteer _huwelijkse staat_ en het formulier verzenden
    [inbox weergeven](http://localhost:4502/aem/inbox)
 
 Als u het formulier verzendt, wordt de workflow geactiveerd en wordt een taak toegewezen aan de gebruiker van de &quot;beheerder&quot;. U zou een waarde onder de Getrouwde kolom zoals aangetoond in dit het schermschot moeten zien
