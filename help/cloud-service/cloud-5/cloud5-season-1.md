@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 187f13c5051237915fdc8a8c0e3280dd0f0702ce
+source-git-commit: 4976bc72228b76c02609cf63c7067cc7bad65861
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '379'
 ht-degree: 1%
 
 ---
@@ -68,14 +68,16 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
   </tr>
   <tr>
    <td>
-      <img alt="Toegangstokens" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-getting-login-token-integrations.md">
+            <img alt="Toegangstokens" src="./imgs/004-thumb.png"/>
+        </a>
       <div>
-        <strong>Integreren met Access Tokens</strong>        
+        <a href="./cloud5-getting-login-token-integrations.md"><strong>Integreren met Access Tokens</strong></a>        
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-         Vanaf 25 maart 2022
+         Een snel overzicht en een demo van interactie met aanmeldingstokens voor het uitvoeren van integratiewerk in omgevingen met cloudservices.
       </p>
      </td>   
      <td>
