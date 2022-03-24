@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: 7994860f6d0ea017aa48e326482bc8e77af6f555
+source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '725'
 ht-degree: 11%
 
 ---
@@ -172,6 +172,14 @@ ht-degree: 11%
       + [Configuratie USC-batch maken](./forms/formscs-batch-api/configure-usc-batch.md)
       + [Batchconfiguratie maken](./forms/formscs-batch-api/create-batch-config.md)
       + [Batch uitvoeren](./forms/formscs-batch-api/execute-batch-generate-documents.md)
+   + PDF-manipulatie in Forms CS{#forms-cs-assembler}
+      + [Inleiding](./forms/forms-cs-assembler/introduction.md)
+      + [Servicereferenties maken](./forms/forms-cs-assembler/service-credentials.md)
+      + [JWT-token maken](./forms/forms-cs-assembler/create-jwt.md)
+      + [Toegangstoken maken](./forms/forms-cs-assembler/create-access-token.md)
+      + [PDF-bestanden samenstellen](./forms/forms-cs-assembler/assemble-pdf-files.md)
+      + [De oplossing testen](./forms/forms-cs-assembler/test.md)
+      + [Uitdaging](./forms/forms-cs-assembler/challenge.md)
    + Azure Portal Storage{#forms-cs-azure-portal}
       + [Inleiding](./forms/forms-cs-azure-portal/introduction.md)
       + [Formuliergegevensmodel maken](./forms/forms-cs-azure-portal/create-fdm.md)
