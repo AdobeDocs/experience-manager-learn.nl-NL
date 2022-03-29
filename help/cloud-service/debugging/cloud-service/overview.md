@@ -1,6 +1,6 @@
 ---
-title: Foutopsporing AEM als Cloud Service
-description: op zelfbediening, scalable, wolkeninfrastructuur, wat vereist AEM ontwikkelaars om te begrijpen en te zuiveren diverse facetten van AEM als Cloud Service, van bouw en implementatie aan het verkrijgen van details van het runnen van AEM toepassingen.
+title: Foutopsporing AEM as a Cloud Service
+description: op zelfbediening, schaalbare cloudinfrastructuur, waardoor AEM ontwikkelaars moeten begrijpen hoe ze verschillende facetten van AEM as a Cloud Service kunnen begrijpen en debuggen, van het bouwen en implementeren tot het verkrijgen van details over het uitvoeren van AEM toepassingen.
 feature: Developer Tools
 topics: development
 version: Cloud Service
@@ -12,37 +12,37 @@ topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 8092fbb4-234f-472e-a405-8a45734b7c65
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
-# Foutopsporing AEM als Cloud Service
+# Foutopsporing AEM as a Cloud Service
 
-AEM als Cloud Service is de &#39;cloud-native&#39; manier om de AEM toepassingen te benutten. AEM als Cloud Service loopt op zelfbediening, scalable, wolkeninfrastructuur, die AEM ontwikkelaars vereist om te begrijpen en te zuiveren diverse facetten van AEM als Cloud Service, van bouwt en opstelt tot het verkrijgen van details van het runnen van AEM toepassingen.
+AEM as a Cloud Service is de in de cloud geïntegreerde manier om de AEM toepassingen te benutten. AEM as a Cloud Service looppas op zelfbediening, scalable, wolkeninfrastructuur, die AEM ontwikkelaars vereist om te begrijpen en te zuiveren diverse facetten van AEM as a Cloud Service, van bouw en implementatie aan het verkrijgen van details van het runnen van AEM toepassingen te begrijpen en te zuiveren.
 
 ## Logboeken
 
-Logs verstrekt details in hoe uw toepassing in AEM als Cloud Service functioneert, evenals inzichten in kwesties met plaatsingen.
+Logs verstrekt details in hoe uw toepassing in AEM as a Cloud Service werkt, evenals inzichten in kwesties met plaatsingen.
 
-[Fouten opsporen in AEM als Cloud Service met behulp van logbestanden](./logs.md)
+[Foutopsporing AEM as a Cloud Service met logbestanden](./logs.md)
 
 ## Samenstellen en implementeren
 
-De pijpleidingen van de Manager van de Wolk van de Adobe voeren AEM toepassing door een reeks stappen uit om codekwaliteit en levensvatbaarheid te bepalen wanneer opgesteld aan AEM als Cloud Service. Elk van de stappen kan in mislukking resulteren, die het belangrijk maken om te begrijpen hoe te zuivert bouwt om de worteloorzaak van te bepalen, en hoe te om het even welke mislukkingen op te lossen.
+De pijpleidingen van de Manager van de Wolk van de Adobe voeren AEM toepassing door een reeks stappen uit om codekwaliteit en levensvatbaarheid te bepalen wanneer opgesteld aan AEM as a Cloud Service. Elk van de stappen kan in mislukking resulteren, die het belangrijk maken om te begrijpen hoe te zuivert bouwt om de worteloorzaak van te bepalen, en hoe te om het even welke mislukkingen op te lossen.
 
-[Fouten opsporen in AEM als Cloud Service maken en implementeren](./build-and-deployment.md)
+[Fouten opsporen AEM as a Cloud Service build en implementatie](./build-and-deployment.md)
 
 ## Developer Console
 
-De console van de Ontwikkelaar verstrekt een verscheidenheid van informatie en introspecties in AEM als milieu&#39;s van de Cloud Service die nuttig zijn om te begrijpen hoe uw toepassing door wordt erkend en binnen AEM als Cloud Service functioneert.
+De console van de Ontwikkelaar verstrekt een verscheidenheid van informatie en introspecties in AEM as a Cloud Service milieu&#39;s die nuttig zijn om te begrijpen hoe uw toepassing door wordt erkend en binnen AEM as a Cloud Service functioneert.
 
-[Fouten opsporen in AEM als Cloud Service met de ontwikkelaarsconsole](./developer-console.md)
+[Foutopsporing AEM as a Cloud Service met de ontwikkelaarsconsole](./developer-console.md)
 
-## CRXDE Lite
+## Browser voor opslagplaats
 
-CRXDE Lite is een klassiek, maar krachtig hulpmiddel om AEM als milieu&#39;s van de Ontwikkeling van de Cloud Service te zuiveren. CRXDE Lite verstrekt een reeks van functionaliteit die het zuiveren van het inspecteren van alle middelen en eigenschappen, het manipuleren van de veranderlijke gedeelten van JCR, het onderzoeken van toestemmingen en het evalueren van vragen helpt.
+Browser van de Bewaarplaats is een krachtig hulpmiddel dat zicht in AEM onderliggende gegevensopslag verstrekt, die voor gemakkelijke zuivering van AEM as a Cloud Service milieu toestaat. Browser van de Bewaarplaats steunt een read-only mening van de middelen en de eigenschappen van AEM op Productie, Stadium, en Ontwikkeling, evenals auteur, Publish, en de diensten van de Voorproef.
 
-[Foutopsporing AEM als Cloud Service met CRXDE Lite](./crxde-lite.md)
+[Foutopsporing AEM as a Cloud Service met Repository Browser](./repository-browser.md)
