@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -24,22 +24,22 @@ ht-degree: 0%
 
 ![puntenv-bestand](assets/environment-variables/dot-env-file.png)
 
-Voordat u begint met de ontwikkeling van workers in de Asset compute, moet u ervoor zorgen dat het project is geconfigureerd met informatie over Adobe I/O- en cloudopslag. Deze informatie wordt opgeslagen in `.env` van het project dat slechts voor lokale ontwikkeling, en niet sparen in Git wordt gebruikt. Het `.env` dossier verstrekt een geschikte manier om sleutel/waardeparen aan de lokale ontwikkelomgeving van de Asset compute bloot te stellen. Wanneer [implementating](../deploy/runtime.md) Asset compute workers to Adobe I/O Runtime, wordt het `.env` bestand niet gebruikt, maar wordt een subset van waarden doorgegeven via omgevingsvariabelen. Andere aangepaste parameters en geheimen kunnen ook in het `.env`-bestand worden opgeslagen, zoals ontwikkelingsgegevens voor externe webservices.
+Voordat u begint met de ontwikkeling van workers in de Asset compute, moet u ervoor zorgen dat het project is geconfigureerd met informatie over Adobe I/O- en cloudopslag. Deze informatie wordt opgeslagen in de `.env`  wordt alleen gebruikt voor lokale ontwikkeling en niet in Git. De `.env` bestand biedt een handige manier om sleutel-/waardeparen toegankelijk te maken voor de lokale ontwikkelomgeving van de lokale Asset compute. Wanneer [implementeren](../deploy/runtime.md) asset compute werknemers naar Adobe I/O Runtime, de `.env` Het bestand wordt niet gebruikt, maar er wordt een subset van waarden doorgegeven via omgevingsvariabelen. Andere aangepaste parameters en geheimen kunnen worden opgeslagen in het dialoogvenster `.env` en andere bestanden, zoals ontwikkelingsgegevens voor webservices van derden.
 
-## Verwijs naar `private.key`
+## Verwijs naar de `private.key`
 
 ![persoonlijke sleutel](assets/environment-variables/private-key.png)
 
-Open het `.env` dossier, uncomment de `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` sleutel, en verstrek de absolute weg op uw filesystem aan `private.key` die paren met het openbare die certificaat aan uw Adobe I/O FireFly project wordt toegevoegd.
+Open de `.env` bestand, verwijder de opmerking van het `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` en het absolute pad op uw bestandssysteem naar de `private.key` die paren met het openbare certificaat dat aan uw Adobe I/O App Builder-project wordt toegevoegd.
 
-+ Als uw sleutelpaar door Adobe I/O werd geproduceerd, werd het auto-gedownload als deel van `config.zip`.
++ Als uw sleutelpaar door Adobe I/O werd geproduceerd, werd het auto-gedownload als deel van  `config.zip`.
 + Als u de openbare sleutel aan Adobe I/O verstrekte, dan zou u ook in het bezit van de passende privé sleutel moeten zijn.
 + Als u deze sleutelparen niet hebt, kunt u nieuwe zeer belangrijke paren produceren of nieuwe openbare sleutels bij de bodem van uploaden:
-   [https://console.adobe.com](https://console.adobe.io) > Uw Asset compute werkt probleemloos > Workspaces @ Development > Service Account (JWT).
+   [https://console.adobe.com](https://console.adobe.io) > Uw Asset compute App Builder-project > Werkruimten @ Development > Service Account (JWT).
 
-Herinner het `private.key` dossier niet in Git zou moeten worden gecontroleerd aangezien het geheimen bevat, eerder het op een veilige plaats buiten het project zou moeten worden opgeslagen.
+Onthoud de `private.key` Het bestand moet niet in Git worden gecontroleerd omdat het geheimen bevat, maar moet op een veilige plaats buiten het project worden opgeslagen.
 
-Op MacOS ziet dit er bijvoorbeeld als volgt uit:
+Op macOS ziet dit er bijvoorbeeld als volgt uit:
 
 ```
 ...
@@ -49,19 +49,19 @@ ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=/Users/example-user/credentials/aem-guides-w
 
 ## Inloggegevens voor cloudopslag configureren
 
-Voor lokale ontwikkeling van medewerkers van Asset computen is toegang tot [cloudopslag](../set-up/accounts-and-services.md#cloud-storage) vereist. De referenties voor cloudopslag die worden gebruikt voor lokale ontwikkeling, staan in het bestand `.env`.
+Voor lokale ontwikkeling van Asset compute werknemers is toegang tot [cloudopslag](../set-up/accounts-and-services.md#cloud-storage). De referenties voor cloudopslag die worden gebruikt voor lokale ontwikkeling zijn te vinden in het dialoogvenster `.env` bestand.
 
-Deze zelfstudie geeft de voorkeur aan het gebruik van Azure Blob Storage, maar Amazon S3 en de bijbehorende sleutels in het `.env`-bestand kunnen in plaats daarvan worden gebruikt.
+Deze zelfstudie geeft de voorkeur aan het gebruik van Azure Blob Storage, maar Amazon S3 en de bijbehorende sleutels in de `.env` kan in plaats daarvan worden gebruikt.
 
 ### Azure Blob-opslag gebruiken
 
-Verwijder de commentaarmarkering en vul de volgende sleutels in het `.env` dossier, en bevolk hen met de waarden voor de geleverde wolkenopslag die op Azure Portal wordt gevonden.
+Verwijder de commentaarmarkering en vul de volgende toetsen in in het dialoogvenster `.env` en vult deze met de waarden voor de geleverde cloudopslag op Azure Portal.
 
 ![Azure Blob Storage](./assets/environment-variables/azure-portal-credentials.png)
 
-1. Waarde voor de `AZURE_STORAGE_CONTAINER_NAME`-toets
-1. Waarde voor de `AZURE_STORAGE_ACCOUNT`-toets
-1. Waarde voor de `AZURE_STORAGE_KEY`-toets
+1. Waarde voor de `AZURE_STORAGE_CONTAINER_NAME` key
+1. Waarde voor de `AZURE_STORAGE_ACCOUNT` key
+1. Waarde voor de `AZURE_STORAGE_KEY` key
 
 Dit ziet er bijvoorbeeld als volgt uit (alleen voor illustraties):
 
@@ -73,15 +73,15 @@ AZURE_STORAGE_CONTAINER_NAME=asset-compute
 ...
 ```
 
-Het resulterende `.env`-bestand ziet er als volgt uit:
+Het resultaat `.env` Het bestand ziet er als volgt uit:
 
 ![Azure Blob Storage-referenties](assets/environment-variables/cloud-storage-credentials.png)
 
-Als u GEEN Microsoft Azure Blob Storage gebruikt, verwijdert of laat u deze opmerkingen weg (door ze vooraf in te stellen met `#`).
+Als u NIET gebruikmaakt van Microsoft Azure Blob Storage, verwijdert u deze opmerkingen of laat u deze buiten beschouwing (door ze vooraf te bevestigen met `#`).
 
 ### Amazon S3-cloudopslag gebruiken{#amazon-s3}
 
-Als u Amazon S3 wolkenopslag uncomment gebruikt en de volgende sleutels in het `.env` dossier vult.
+Als u Amazon S3 cloud storage uncomment gebruikt en de volgende toetsen invult in de `.env` bestand.
 
 Dit ziet er bijvoorbeeld als volgt uit (alleen voor illustraties):
 
@@ -96,7 +96,7 @@ AWS_REGION=us-east-1
 
 ## De projectconfiguratie valideren
 
-Zodra het geproduceerde project van de Asset compute is gevormd, bevestig de configuratie voorafgaand aan het aanbrengen van codeveranderingen om ervoor te zorgen de ondersteunende diensten, in de `.env` dossiers worden geleverd.
+Zodra het geproduceerde project van de Asset compute is gevormd, bevestig de configuratie voorafgaand aan het aanbrengen van codeveranderingen om te verzekeren de ondersteunende diensten worden provisioned, in `.env` bestanden.
 
 Om het Hulpmiddel van de Ontwikkeling van de Asset compute voor het project van de Asset compute te beginnen:
 
@@ -106,12 +106,12 @@ Om het Hulpmiddel van de Ontwikkeling van de Asset compute voor het project van 
    $ aio app run
    ```
 
-1. Het lokale Hulpmiddel van de Ontwikkeling van de Asset compute zal in uw standaardbrowser van het Web op __http://localhost:9000__ openen.
+1. Het lokale Hulpmiddel van de Ontwikkeling van de Asset compute zal in uw standaardbrowser van het Web bij openen __http://localhost:9000__.
 
    ![AIR-app uitgevoerd](assets/environment-variables/aio-app-run.png)
 
 1. Bekijk de uitvoer van de opdrachtregel en de webbrowser voor foutberichten terwijl het hulpprogramma Ontwikkeling wordt geïnitialiseerd.
-1. Tik `Ctrl-C` in het venster dat `aio app run` heeft uitgevoerd om het proces te beëindigen om het Asset compute Development Tool te stoppen.
+1. Tik op het gereedschap Asset compute ontwikkelen om het ontwikkelen te stoppen `Ctrl-C` in het venster dat wordt uitgevoerd `aio app run` om het proces te beëindigen.
 
 ## Problemen oplossen
 

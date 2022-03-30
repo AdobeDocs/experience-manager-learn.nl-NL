@@ -8,10 +8,10 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: 136049776140746c61d42ad1496df15a2d226e3a
+source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 0%
+source-wordcount: '589'
+ht-degree: 1%
 
 ---
 
@@ -29,11 +29,11 @@ Gebruik de [Adobe I/O CLI Asset compute plug-in](../set-up/development-environme
 
 1. Navigeer vanaf de opdrachtregel naar de map waarin u het project wilt plaatsen.
 1. Vanuit de opdrachtregel uitvoeren `aio app init` om met de interactieve projectgeneratie CLI te beginnen.
-   + Dit bevel kan browser van het Web kweken die voor authentificatie aan Adobe I/O ertoe aanzetten. Als dit het geval is, geeft u de Adobe-referenties op die zijn gekoppeld aan de [vereiste Adobe-services en -producten](../set-up/accounts-and-services.md). Als u zich niet kunt aanmelden, volgt u [deze instructies over hoe te om een project te produceren](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Dit bevel kan browser van het Web kweken die voor authentificatie aan Adobe I/O ertoe aanzetten. Als dit het geval is, geeft u de Adobe-referenties op die zijn gekoppeld aan de [vereiste Adobe-services en -producten](../set-up/accounts-and-services.md). Als u zich niet kunt aanmelden, volgt u [deze instructies over hoe te om een project te produceren](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Org selecteren__
-   + Selecteer de Adobe die as a Cloud Service heeft AEM, Project Firefly wordt geregistreerd met
+   + Selecteer de Adobe-organisatie die AEM as a Cloud Service heeft, App Builder die is geregistreerd bij
 1. __Project selecteren__
-   + Zoek en selecteer het project. Dit is het [Projecttitel](../set-up/firefly.md) gemaakt op basis van de projectsjabloon Firefly, in dit geval `WKND AEM Asset Compute`
+   + Zoek en selecteer het project. Dit is het [Projecttitel](../set-up/app-builder.md) gecreeerd van het App Builder projectmalplaatje, in dit geval `WKND AEM Asset Compute`
 1. __Werkruimte selecteren__
    + Selecteer `Development` werkruimte
 1. __Welke functies van Adobe I/O App wilt u voor dit project toelaten? Te gebruiken componenten selecteren__
@@ -65,30 +65,6 @@ Voor het hulpprogramma voor ontwikkelaars is een bestand met de naam `console.js
 
 > OPMERKING
 > Het bestand bevat referenties. Als u het bestand opslaat in uw project, moet u het toevoegen aan uw `.gitignore` bestand om te voorkomen dat het wordt gedeeld. Hetzelfde geldt voor de `.env` bestand — Deze aanmeldingsbestanden mogen niet worden gedeeld of opgeslagen in Git.
-
-## De anatomie van het project evalueren
-
-Het geproduceerde project van de Asset compute is een project Node.js voor gebruik als gespecialiseerd project van het Project van de Adobe Firefly. De volgende elementen zijn specifiek voor het project Asset compute:
-
-+ `/actions` bevat submappen en elke submap definieert een Asset compute-worker.
-   + `/actions/<worker-name>/index.js` definieert het JavaScript dat wordt gebruikt om het werk van deze worker uit te voeren.
-      + De mapnaam `worker` is een standaard, en kan om het even wat zijn, zolang het in `manifest.yml`.
-      + Er kunnen meerdere arbeidersmappen worden gedefinieerd onder `/actions` zij moeten echter in het `manifest.yml`.
-+ `/test/asset-compute` bevat de testreeksen voor elke worker. Vergelijkbaar met de `/actions` map, `/test/asset-compute` kan meerdere submappen bevatten, elk voor de worker die het test.
-   + `/test/asset-compute/worker`, die een testsuite voor een specifieke worker vertegenwoordigt, bevat submappen die een specifiek testcase vertegenwoordigen, samen met de invoer, parameters en verwachte uitvoer van de test.
-+ `/build` bevat de output, de logboeken, en de artefacten van Asset compute testcase executions.
-+ `/manifest.yml` bepaalt welke Asset compute arbeiders het project verstrekt. Elke worker-implementatie moet in dit bestand worden opgesomd om deze beschikbaar te maken voor AEM as a Cloud Service.
-+ `/console.json` definieert Adobe I/O-configuraties
-   + Dit bestand kan worden gegenereerd/bijgewerkt met het `aio app use` gebruiken.
-+ `/.aio` bevat configuraties die door het hulpmiddel CLI van de AIR worden gebruikt.
-   + Dit bestand kan worden gegenereerd/bijgewerkt met het `aio app use` gebruiken.
-+ `/.env` definieert omgevingsvariabelen in een `key=value` en bevat geheimen die niet mogen worden gedeeld. Om deze geheimen te beschermen, zou dit dossier NIET in Git moeten worden gecontroleerd en via het gebrek van het project genegeerd `.gitignore` bestand.
-   + Dit bestand kan worden gegenereerd/bijgewerkt met het `aio app use` gebruiken.
-   + Variabelen die in dit bestand zijn gedefinieerd, kunnen worden overschreven door [variabelen exporteren](../deploy/runtime.md) op de opdrachtregel.
-
-Voor meer informatie over de projectstructuurrevisie raadpleegt u de [Anatomie van een Adobe Project Firefly-project](https://www.adobe.io/project-firefly/docs/guides/).
-
-Het grootste deel van de ontwikkeling vindt plaats in de `/actions` map die de implementatie van workers ontwikkelt, en in `/test/asset-compute` het schrijven tests voor de arbeiders van de aangepaste Asset compute.
 
 ## asset compute project op GitHub
 
