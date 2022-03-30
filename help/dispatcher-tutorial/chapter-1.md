@@ -2,16 +2,16 @@
 title: '"Hoofdstuk 1 - Concepten, patronen en antipatronen van de verzender"'
 description: In dit hoofdstuk wordt een korte inleiding gegeven over de geschiedenis en de mechanica van de Dispatcher en wordt besproken hoe dit van invloed is op hoe een AEM ontwikkelaar zijn componenten zou ontwerpen.
 feature: Dispatcher
-topic: Architectuur
+topic: Architecture
 role: Architect
 level: Beginner
-source-git-commit: 67e55e92cf95e03388ab3de49eff5a80786fb3a7
+exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '17487'
+source-wordcount: '17468'
 ht-degree: 0%
 
 ---
-
 
 # Hoofdstuk 1 - Concepten, patronen en antipatronen van Dispatcher
 
@@ -23,7 +23,7 @@ In dit hoofdstuk wordt een korte inleiding gegeven over de geschiedenis en de me
 
 De Dispatcher is een essentieel onderdeel van de meeste, zo niet alle AEM installaties. U kunt vele online artikelen vinden die bespreken hoe te om de Dispatcher evenals uiteinden en trucs te vormen.
 
-Deze stukken en stukken informatie beginnen echter altijd op een zeer technisch niveau - veronderstellend u reeds weet wat u wilt doen en zo slechts details verstrekken over hoe te om te bereiken wat u wilt. We hebben nooit conceptuele documenten gevonden waarin de _wat en waarom_ wordt beschreven als het gaat om wat u wel en niet kunt doen met de verzender.
+Deze stukken en stukken informatie beginnen echter altijd op een zeer technisch niveau - veronderstellend u reeds weet wat u wilt doen en zo slechts details verstrekken over hoe te om te bereiken wat u wilt. We hebben nooit conceptuele documenten gevonden waarin de _wat is en waarom is_ wanneer het aankomt wat u met de verzender kunt en niet kunt doen.
 
 ### Antipatroon: Wordt verzonden als een nagedachte
 
@@ -35,7 +35,7 @@ Dit gebrek aan basisinformatie leidt tot een aantal anti-patronen die we in een 
 
 ### &quot;Eerst laat het werken - dan maak het snel&quot; Is niet altijd juist
 
-U zou het programmeringsadvies _&quot;kunnen gehoord hebben eerst laat het werken - dan maakt het snel.&quot;_. Het is niet helemaal fout. Zonder de juiste context wordt het echter vaak verkeerd geïnterpreteerd en niet correct toegepast.
+Wellicht hebt u het programmeringsadvies gehoord _&quot;Maak het eerst aan het werk - maak het dan snel.&quot;_. Het is niet helemaal fout. Zonder de juiste context wordt het echter vaak verkeerd geïnterpreteerd en niet correct toegepast.
 
 Het advies moet voorkomen dat de ontwikkelaar voortijdig code optimaliseert, die misschien nooit wordt uitgevoerd - of zo zelden wordt uitgevoerd, dat een optimalisatie niet voldoende effect zou hebben om de inspanning in de optimalisering te rechtvaardigen. Bovendien zou optimalisatie kunnen leiden tot complexere code en zo insecten kunnen introduceren. Dus als je ontwikkelaar bent, besteed je niet teveel tijd aan microoptimalisering van elke regel code. Zorg gewoon dat u de juiste gegevensstructuren, algoritmen en bibliotheken hebt gekozen en wacht tot de hotspot-analyse van een analyseprogramma de algemene prestaties verhoogt door een grondiger optimalisatie te kiezen.
 
@@ -90,13 +90,13 @@ De basisbeginselen van de verzender worden hier uitgelegd. De verzender is een e
 7. De Dispatcher retourneert de pagina naar de browser
 8. Als dezelfde pagina een tweede keer wordt opgevraagd, kan deze rechtstreeks worden aangeboden vanuit de Dispatcher-cache zonder dat de pagina opnieuw moet worden gerenderd op de Publish-instantie. Hiermee bespaart u wachttijd voor de gebruiker en CPU-cycli op de instantie Publiceren.
 
-In de laatste sectie hadden we het over &quot;pagina&#39;s&quot;. Hetzelfde schema geldt echter ook voor andere bronnen, zoals afbeeldingen, CSS-bestanden, downloads van PDF&#39;s enzovoort.
+In de laatste sectie hadden we het over &quot;pagina&#39;s&quot;. Maar hetzelfde schema geldt ook voor andere bronnen, zoals afbeeldingen, CSS-bestanden, PDF-downloads enzovoort.
 
 #### Hoe gegevens in cache worden geplaatst
 
 De module Dispatcher gebruikt de faciliteiten die de hostserver voor Apache biedt. Bronnen zoals HTML-pagina&#39;s, downloads en afbeeldingen worden als eenvoudige bestanden opgeslagen in het Apache-bestandssysteem. Zo eenvoudig is het.
 
-De bestandsnaam wordt afgeleid door de URL van de gevraagde bron. Als u om een dossier `/foo/bar.html` verzoekt wordt het opgeslagen bijvoorbeeld onder /`var/cache/docroot/foo/bar.html`.
+De bestandsnaam wordt afgeleid door de URL van de gevraagde bron. Als u een bestand aanvraagt `/foo/bar.html` het wordt bijvoorbeeld opgeslagen onder /`var/cache/docroot/foo/bar.html`.
 
 Als alle bestanden in het cachegeheugen worden opgeslagen en dus statisch in de Dispatcher worden opgeslagen, kunt u in principe de plug-in van het publicatiesysteem gebruiken en de Dispatcher als een eenvoudige webserver fungeren. Maar dit is slechts een illustratie van het principe. Het echte leven is ingewikkelder. U kunt niet alles in het cachegeheugen plaatsen en de cache is nooit volledig &quot;vol&quot;, omdat het aantal bronnen oneindig kan zijn vanwege de dynamische aard van het renderingsproces. Het model van een statisch bestandssysteem helpt een globaal beeld te genereren van de mogelijkheden van de verzender. En het helpt om de beperkingen van de verzender te verklaren.
 
@@ -128,17 +128,17 @@ In AEM
 
 * `#fragment`, wordt het fragmentgedeelte van een URL niet doorgegeven AEM het alleen in de browser wordt gebruikt; In JavaScript-frameworks als ‘parameters routeren’ of om naar een bepaald onderdeel op de pagina te gaan.
 
-Verwijs in Apache (*de onderstaande figuur*),
+In Apache (*referentie het onderstaande diagram*),
 
 * `pagename.selectors.html` wordt gebruikt als de bestandsnaam in het bestandssysteem van de cache.
 
-Als het achtervoegsel `path/suffix.ext` dan heeft,
+Als de URL een achtervoegsel heeft `path/suffix.ext` dan
 
 * `pagename.selectors.html` wordt gemaakt als een map
 
-* `path` een map in de  `pagename.selectors.html` map
+* `path` een map in het dialoogvenster `pagename.selectors.html` map
 
-* `suffix.ext` is een bestand in de  `path` map. Opmerking: Als het achtervoegsel geen extensie heeft, wordt het bestand niet in de cache opgeslagen.
+* `suffix.ext` is een bestand in het dialoogvenster `path` map. Opmerking: Als het achtervoegsel geen extensie heeft, wordt het bestand niet in de cache opgeslagen.
 
 ![Bestandssysteemindeling na ophalen van URL&#39;s van de Dispatcher](assets/chapter-1/filesystem-layout-urls-from-dispatcher.png)
 
@@ -152,7 +152,7 @@ De toewijzing tussen een URL, de bron en de bestandsnaam is vrij eenvoudig.
 
 Het is echter mogelijk dat u enkele overvullingen hebt opgemerkt.
 
-1. URL&#39;s kunnen erg lang worden. Door het padgedeelte van een `/docroot` aan het lokale bestandssysteem toe te voegen, kunnen de limieten van bepaalde bestandssystemen eenvoudig worden overschreden. Het runnen van de Dispatcher in NTFS op Vensters kan een uitdaging zijn. U bent echter veilig met Linux.
+1. URL&#39;s kunnen erg lang worden. Het padgedeelte van een `/docroot` op het lokale bestandssysteem gemakkelijk de limieten van sommige filesystemen te overschrijden. Het runnen van de Dispatcher in NTFS op Vensters kan een uitdaging zijn. U bent echter veilig met Linux.
 
 2. URL&#39;s kunnen speciale tekens en umlauts bevatten. Dit is meestal geen probleem voor de verzender. Houd er echter rekening mee dat de URL op veel plaatsen in de toepassing wordt geïnterpreteerd. Vaak hebben we vreemd gedrag van een toepassing gezien - alleen om te weten te komen dat één stukje zelden gebruikte (aangepaste) code niet grondig is getest op speciale tekens. Indien mogelijk moet u deze vermijden. En als je dat niet kunt, plan dan voor grondig testen.
 
@@ -164,17 +164,17 @@ URL&#39;s moeten altijd een extensie hebben. Hoewel u URL&#39;s zonder extensies
 
 **Voorbeelden**
 
-`http://domain.com/home.html` is  **cacheable**
+`http://domain.com/home.html` is **kakelbaar**
 
-`http://domain.com/home` is  **niet cacheable**
+`http://domain.com/home` is **niet in cache geplaatst**
 
 Dezelfde regel geldt wanneer de URL een achtervoegsel bevat. Het achtervoegsel moet een uitbreiding hebben om cacheable te zijn.
 
 **Voorbeelden**
 
-`http://domain.com/home.html/path/suffix.html` is  **cacheable**
+`http://domain.com/home.html/path/suffix.html` is **kakelbaar**
 
-`http://domain.com/home.html/path/suffix` is  **niet cacheable**
+`http://domain.com/home.html/path/suffix` is **niet in cache geplaatst**
 
 Je zou je kunnen afvragen: wat gebeurt er als het resource-part geen extensie heeft, maar het achtervoegsel wel. In dit geval heeft de URL helemaal geen achtervoegsel. Bekijk het volgende voorbeeld:
 
@@ -182,7 +182,7 @@ Je zou je kunnen afvragen: wat gebeurt er als het resource-part geen extensie he
 
 `http://domain.com/home/path/suffix.ext`
 
-`/home/path/suffix` is de weg aan het middel... zodat is er geen achtervoegsel in URL.
+De `/home/path/suffix` is het pad naar de bron... dus de URL bevat geen achtervoegsel.
 
 **Conclusie**
 
@@ -204,9 +204,9 @@ Dus... wat is het probleem ?
 
 `home.html` in een bestandssysteem kan dit een bestand of een map zijn. Niet beide op hetzelfde moment als in AEM.
 
-Als u `home.html` eerst vraagt, zal het als dossier worden gecreeerd.
+Als u `home.html` eerst wordt het gemaakt als een bestand.
 
-Volgende aanvragen naar `home.html/suffix.html` retourneren geldige resultaten, maar aangezien het bestand `home.html` de positie in het bestandssysteem blokkeert, kan `home.html` niet een tweede keer als een map worden gemaakt en `home.html/suffix.html` wordt dus niet in de cache geplaatst.
+Volgende verzoeken aan `home.html/suffix.html` retourneert geldige resultaten, maar als bestand `home.html` &quot;blokkeert&quot; de positie in het bestandssysteem,  `home.html` kan niet een tweede keer als een map worden gemaakt en dus `home.html/suffix.html` is niet in cache geplaatst.
 
 ![Bestandsblokkeerpositie in het bestandssysteem om te voorkomen dat subbronnen in cache worden geplaatst](assets/chapter-1/file-blocking-position-in-filesystem.png)
 
@@ -214,7 +214,7 @@ Volgende aanvragen naar `home.html/suffix.html` retourneren geldige resultaten, 
 
 <br> 
 
-Als u het omgekeerde doet, eerst om `home.html/suffix.html` te verzoeken dan `suffix.html` in het voorgeheugen ondergebracht onder een omslag `/home.html` eerst. Deze map wordt echter verwijderd en vervangen door een bestand `home.html` wanneer u `home.html` vervolgens als bron aanvraagt.
+Als u dit andersom doet, vraagt u eerst `home.html/suffix.html` dan `suffix.html` is in cache geplaatst onder een map `/home.html` eerst. Deze map wordt echter verwijderd en vervangen door een bestand `home.html` wanneer u later `home.html` als bron.
 
 ![Een padstructuur verwijderen wanneer een bovenliggend element als bron wordt opgehaald](assets/chapter-1/deleting-path-structure.png)
 
@@ -265,11 +265,11 @@ Bekijk een korte samenvatting van het laatste hoofdstuk plus nog enkele uitzonde
 
 ### Overzicht
 
-In het laatste hoofdstuk wordt een groot aantal uitzonderingen vermeld, wanneer een aanvraag niet in de cache kan worden opgeslagen door de Dispatcher. Maar er zijn nog meer zaken die in overweging moeten worden genomen: Enkel omdat de Dispatcher _een verzoek kan_ in het voorgeheugen onderbrengen, betekent het niet noodzakelijk dat het _should_.
+In het laatste hoofdstuk wordt een groot aantal uitzonderingen vermeld, wanneer een aanvraag niet in de cache kan worden opgeslagen door de Dispatcher. Maar er zijn nog meer zaken die in overweging moeten worden genomen: Alleen omdat de verzender _kan_ een verzoek in cache plaatsen, betekent dit niet noodzakelijk dat het _moet_.
 
 Het punt is: Het cachegeheugen is meestal gemakkelijk. Dispatcher moet enkel het resultaat van een reactie opslaan en het terugkeren de volgende tijd wanneer zeer het zelfde verzoek binnenkomt. Rechts? Verkeerd!
 
-Het moeilijke deel is _invalidation_ of _flushing_ van het geheime voorgeheugen. Dispatcher moet erachter komen wanneer een resource is gewijzigd - en moet opnieuw worden gerenderd.
+Het moeilijke deel is _ongeldigverklaring_ of _flush_ van de cache. Dispatcher moet erachter komen wanneer een resource is gewijzigd - en moet opnieuw worden gerenderd.
 
 Dit lijkt op het eerste gezicht een triviale taak... maar dat is het niet. Lees verder en u zult wat lastige verschillen tussen enige en eenvoudige middelen en pagina&#39;s ontdekken die zich op een hoogst gemanipuleerde structuur van veelvoudige middelen baseren.
 
@@ -310,7 +310,7 @@ De Dispatcher kan de bron veilig verwijderen met alle uitvoeringen die in de cac
 
 `$ rm /content/dam/path/to/image.*`
 
-verwijderen van `image.png` en `image.thumb.png` en alle andere uitvoeringen die overeenkomen met dat patroon.
+verwijderen `image.png` en `image.thumb.png` en alle andere vertoningen die overeenkomen met dat patroon.
 
 Supereenvoudig... zolang u maar één bron gebruikt om op een verzoek te reageren.
 
@@ -345,7 +345,7 @@ Stel je voor dat u uw website hebt gepubliceerd. De titel op je pagina in Canada
 </div>
 ```
 
-** naar de startpagina. De startpagina wordt door de Dispatcher opgeslagen als een statisch HTML-bestand, inclusief het taser en de kop in het bestand.
+*in* de homepage. De startpagina wordt door de Dispatcher opgeslagen als een statisch HTML-bestand, inclusief het taser en de kop in het bestand.
 
 Nu heeft de markator geleerd dat de teaskoppen actioneerbaar moeten zijn. Hij besluit dus de titel te wijzigen van &quot;Canada&quot; in &quot;Visit Canada&quot; en de afbeelding bij te werken.
 
@@ -365,7 +365,7 @@ De pagina &quot;Winter speciaal&quot; is nog niet weergegeven, dus er is geen st
 
 U zou kunnen denken, dat de Dispatcher spoor van elk middel zou houden het terwijl het teruggeven en het spoelen van alle pagina&#39;s die dit middel hebben gebruikt, wanneer dat middel verandert. Maar de Dispatcher geeft de pagina&#39;s niet weer. De rendering wordt uitgevoerd door het publicatiesysteem. De Dispatcher weet niet welke bronnen in een gerenderd .html-bestand worden gebruikt.
 
-Nog steeds niet overtuigd? U zou kunnen denken *&quot;er een manier moet zijn om één of andere soort gebiedsdeelentracering&quot;* uit te voeren. Nou, er is, of nauwkeuriger daar *was*. Communiqué 3 de overgrootvader van AEM had een gebiedsdeelvolgster die in _session_ wordt uitgevoerd die werd gebruikt om een pagina terug te geven.
+Nog steeds niet overtuigd? Misschien denkt u *&quot; er moet een manier zijn om een of andere vorm van afhankelijkheidscontrole te implementeren &quot;*. Dat is er, of beter gezegd, *was*. Communiqué 3 de overgrootvader van AEM had een afhankelijkheidsleider geïmplementeerd in de _sessie_ die is gebruikt om een pagina weer te geven.
 
 Tijdens een verzoek, werd elke middel dat via deze zitting werd verworven gevolgd als gebiedsdeel van URL die momenteel werd teruggegeven.
 
@@ -411,9 +411,9 @@ Alle bestanden in de dispatcher die een aanmaakdatum hebben die ouder is dan het
 
 <br> 
 
-U kunt zich afvragen waarom het &quot;.stat&quot; wordt genoemd? En misschien &quot;.invalidate&quot;? Welnu, u kunt zich voorstellen, dat het hebben van dat dossier in uw filesystem de Dispatcher helpt bepalen welke middelen *statisch* - enkel van een statische Webserver konden worden gediend. Deze bestanden hoeven niet langer dynamisch te worden gerenderd.
+U kunt zich afvragen waarom het &quot;.stat&quot; wordt genoemd? En misschien &quot;.invalidate&quot;? U kunt zich voorstellen dat het bestand in uw bestandssysteem de Dispatcher helpt te bepalen welke bronnen mogelijk zijn *statisch* worden aangeboden, net als bij een statische webserver. Deze bestanden hoeven niet langer dynamisch te worden gerenderd.
 
-De ware aard van de naam is echter minder metaforisch. Het wordt afgeleid uit de Unix systeemvraag `stat()`, die de wijzigingstijd van een dossier (onder andere eigenschappen) terugkeert.
+De ware aard van de naam is echter minder metaforisch. Het wordt afgeleid van de Unix systeemvraag `stat()`, die de wijzigingstijd van een bestand (onder andere eigenschappen) retourneert.
 
 #### Eenvoudige en automatische validatie mixen
 
@@ -421,13 +421,13 @@ Maar wacht... eerder zeiden we dat afzonderlijke bronnen fysiek verwijderd zijn.
 
 Het antwoord is eenvoudig. Meestal gebruikt u beide strategieën parallel, maar voor verschillende soorten bronnen. Binaire elementen, zoals afbeeldingen, zijn op zichzelf staande elementen. Ze zijn niet verbonden met andere bronnen in die zin dat ze hun informatie nodig hebben om te worden weergegeven.
 
-HTML-pagina&#39;s daarentegen zijn sterk onderling afhankelijk. Dus zou je automatische ongeldigmaking toepassen op die. Dit is de standaardinstelling in de Dispatcher. Alle bestanden die tot een ongeldig gemaakte bron behoren, worden fysiek verwijderd. Bovendien worden bestanden die eindigen met &quot;.html&quot; automatisch ongeldig gemaakt.
+HTML pagina&#39;s daarentegen zijn sterk onderling afhankelijk. Dus zou je automatische ongeldigmaking toepassen op die. Dit is de standaardinstelling in de Dispatcher. Alle bestanden die tot een ongeldig gemaakte bron behoren, worden fysiek verwijderd. Bovendien worden bestanden die eindigen met &quot;.html&quot; automatisch ongeldig gemaakt.
 
 De Dispatcher beslist over de bestandsextensie, of het systeem voor automatische validatie wordt toegepast of niet.
 
 De bestandseinden voor automatische validatie kunnen worden geconfigureerd. In theorie kunt u alle extensies opnemen voor automatische validatie. Maar houd er rekening mee dat dit een zeer hoge prijs heeft. Je ziet geen onbedoelde schaalbronnen, maar de leveringsprestaties nemen sterk af als gevolg van overvalidatie.
 
-Stel dat u bijvoorbeeld een schema implementeert waarbij PNG&#39;s en JPG&#39;s dynamisch worden gerenderd en hiervoor afhankelijk zijn van andere bronnen. U wilt afbeeldingen met hoge resolutie opnieuw schalen naar een kleinere resolutie die compatibel is met het web. Als u dat wel hebt, wordt ook de compressiesnelheid gewijzigd. De resolutie en de compressiesnelheid in dit voorbeeld zijn geen vaste constanten maar configureerbare parameters in de component die de afbeelding gebruikt. Als deze parameter wordt gewijzigd, moet u de afbeeldingen ongeldig maken.
+Stel dat u bijvoorbeeld een schema implementeert waarbij PNG&#39;s en JPG dynamisch worden gerenderd en hiervoor afhankelijk zijn van andere bronnen. U wilt afbeeldingen met hoge resolutie opnieuw schalen naar een kleinere resolutie die compatibel is met het web. Als u dat wel hebt, wordt ook de compressiesnelheid gewijzigd. De resolutie en de compressiesnelheid in dit voorbeeld zijn geen vaste constanten maar configureerbare parameters in de component die de afbeelding gebruikt. Als deze parameter wordt gewijzigd, moet u de afbeeldingen ongeldig maken.
 
 Geen probleem - we hebben net geleerd dat we afbeeldingen kunnen toevoegen aan automatische validatie en altijd vers gerenderde afbeeldingen kunnen hebben als er iets verandert.
 
@@ -451,9 +451,9 @@ Het zou een beetje verder gaan dan deze handleiding om op details in te gaan, ma
 
 1. Weet echt wat je doet. Het is erg moeilijk om de validatie juist te krijgen. Dat is één van de redenen waarom de auto-ongeldigverklaring zo rigoureus is; om te voorkomen dat inhoud van het type &#39;stale&#39; wordt geleverd.
 
-2. Als uw agent een HTTP-header `CQ-Action-Scope: ResourceOnly` verzendt, betekent dit dat dit enkele validatieverzoek geen automatische validatie activeert. Dit ( [https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) stuk van code zou een goed uitgangspunt voor uw eigen replicatieagent kunnen zijn.
+2. Als uw agent een HTTP-header verzendt `CQ-Action-Scope: ResourceOnly`, hetgeen betekent dat dit enkele verzoek tot ongeldigmaking niet leidt tot automatische ongeldigmaking. Deze ( [https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) kan een stuk code een goed uitgangspunt voor uw eigen replicatieagent zijn.
 
-3. `ResourceOnly`voorkomt u alleen automatische validatie. Om de noodzakelijke gebiedsdeel in feite te doen die en ongeldig maakt, moet u de ongeldigingsverzoeken teweegbrengen zelf. U kunt de de flush regels van de Dispatcher van het pakket ([https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) voor inspiratie willen controleren op hoe dat eigenlijk kon gebeuren.
+3. `ResourceOnly`voorkomt u alleen automatische validatie. Om de noodzakelijke gebiedsdeel in feite te doen die en ongeldig maakt, moet u de ongeldigingsverzoeken teweegbrengen zelf. U kunt de Dispatcher-verpakkingsregels ([https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) voor inspiratie over hoe dat kan gebeuren.
 
 Wij adviseren niet dat u een gebiedsdeeloplossend regeling bouwt. Er is gewoon te veel moeite en weinig winst - en zoals al eerder is gezegd, is er te veel dat u het mis zult hebben.
 
@@ -475,9 +475,9 @@ We willen deze mechanica nu toepassen op een type onderdelen dat u waarschijnlij
 
 #### De component Responsieve afbeelding
 
-Laten we een gemeenschappelijk patroon (of antipatroon) van een component met onderling verbonden binaire elementen illustreren. We maken een component &quot;respi&quot; voor &quot;responsieve-image&quot;. Deze component moet de weergegeven afbeelding kunnen aanpassen aan het apparaat waarop deze wordt weergegeven. Op desktops en tablets toont het de volledige resolutie van het beeld, op telefoons met een kleinere versie met een smalle uitsnijding - of misschien zelfs een heel ander motief (dit wordt &quot;kunstrichting&quot;genoemd in de ontvankelijke wereld).
+Laten we een gemeenschappelijk patroon (of antipatroon) van een component met onderling verbonden binaire elementen illustreren. We maken een component &quot;respi&quot; voor &quot;responsieve-image&quot;. Deze component moet de weergegeven afbeelding kunnen aanpassen aan het apparaat waarop deze wordt weergegeven. Op desktops en tablets toont het de volledige resolutie van het beeld, op telefoons met een kleinere versie met een smalle uitsnijding - of misschien zelfs een volledig ander motief (dit wordt &quot;kunstrichting&quot;genoemd in de ontvankelijke wereld).
 
-De elementen worden geüpload naar het DAM-gebied van AEM en alleen _referenced_ in de component responsieve afbeelding.
+De middelen worden alleen geüpload naar het DAM-gebied van AEM _gerefereerd_ in de component responsieve afbeelding.
 
 De respi-component zorgt voor zowel het renderen van de markering als het leveren van de binaire afbeeldingsgegevens.
 
@@ -491,11 +491,11 @@ De oorspronkelijke term &#39;spooling&#39; verwijst eigenlijk naar gedeelde lang
 
 Hieronder wordt beschreven hoe onze component responsieve beelden wordt geïmplementeerd:
 
-het onderdeel bestaat uit twee delen; in het eerste deel wordt de HTML-opmaak van de afbeelding weergegeven, in het tweede deel worden de binaire gegevens van de afbeelding waarnaar wordt verwezen &#39;gespoold&#39;. Aangezien dit een moderne website met een ontvankelijk ontwerp is, geven wij geen eenvoudige `<img src"…">` markering, maar een reeks beelden in `<picture/>` markering terug. Voor elk apparaat uploaden we twee verschillende afbeeldingen naar de DAM en verwijzen we ernaar vanuit onze imagecomponent.
+het onderdeel bestaat uit twee delen; in het eerste deel wordt de HTML-opmaak van de afbeelding weergegeven, in het tweede deel worden de binaire gegevens van de afbeelding waarnaar wordt verwezen &#39;gespoold&#39;. Omdat dit een moderne website is met een responsief ontwerp, maken we geen eenvoudige `<img src"…">` -tag, maar een set afbeeldingen in `<picture/>` tag. Voor elk apparaat uploaden we twee verschillende afbeeldingen naar de DAM en verwijzen we ernaar vanuit onze imagecomponent.
 
 De component heeft drie renderingscripts (geïmplementeerd in JSP, HTML of als servlet) die elk worden geadresseerd met een toegewezen kiezer:
 
-1. `/respi.jsp` - zonder kiezer om de HTML-markering te renderen
+1. `/respi.jsp` - zonder kiezer om de markering HTML te renderen
 2. `/respi.img.java` om de bureaubladversie te renderen
 3. `/respi.img.mobile.java` om de mobiele versie te renderen.
 
@@ -600,7 +600,7 @@ Nogmaals, dit is gebaseerd op echte ervaring. We hebben al die patronen in het w
 >
 >Dit is een antipatroon. Niet gebruiken. Altijd.
 
-Hebt u ooit vraagparameters zoals `?ck=398547283745` gezien? Ze worden &#39;cache-killer&#39; genoemd. Het idee is, dat als u om het even welke vraagparameter toevoegt het middel niet in het voorgeheugen onder wordt gebracht. Als u bovendien een willekeurig getal toevoegt als waarde van de parameter (zoals &quot;398547283745&quot;), wordt de URL uniek en zorgt u ervoor dat er geen andere cache is tussen het AEM en het scherm. Meestal zouden tussenliggende verdachten een &quot;Varnish&quot;geheime voorgeheugen voor de Verzender, een CDN of zelfs het browser geheime voorgeheugen zijn. Opnieuw: Doe dat niet. U wilt dat uw bronnen zo veel en zo lang mogelijk in cache worden opgeslagen. De cache is je vriend. Geen vrienden doden.
+Heb u ooit vraagparameters zoals gezien `?ck=398547283745`? Ze worden &#39;cache-killer&#39; genoemd. Het idee is, dat als u om het even welke vraagparameter toevoegt het middel niet in het voorgeheugen onder wordt gebracht. Als u bovendien een willekeurig getal toevoegt als waarde van de parameter (zoals &quot;398547283745&quot;), wordt de URL uniek en zorgt u ervoor dat er geen andere cache is tussen het AEM en het scherm. Meestal zouden tussenliggende verdachten een &quot;Varnish&quot;geheime voorgeheugen voor de Verzender, een CDN of zelfs het browser geheime voorgeheugen zijn. Opnieuw: Doe dat niet. U wilt dat uw bronnen zo veel en zo lang mogelijk in cache worden opgeslagen. De cache is je vriend. Geen vrienden doden.
 
 #### Automatische validatie
 
@@ -620,19 +620,19 @@ Een URL-vingerafdruk ziet eruit als een cache-moordenaar. Maar dat is het niet. 
 
 Een Unix-timestamp is goed genoeg voor een real-world implementatie. Voor betere leesbaarheid gebruiken we een leesbaarder formaat in deze zelfstudie: `2018 31.12 23:59 or fp-2018-31-12-23-59`.
 
-De vingerafdruk mag niet worden gebruikt als een queryparameter, als URL&#39;s met queryparameters   kan niet in cache worden geplaatst. U kunt een kiezer of het achtervoegsel voor de vingerafdruk gebruiken.
+De vingerafdruk mag niet worden gebruikt als een queryparameter, omdat URL&#39;s met queryparameters niet in de cache kunnen worden opgeslagen. U kunt een kiezer of het achtervoegsel voor de vingerafdruk gebruiken.
 
-Laten we aannemen dat het bestand `/content/dam/flower.jpg` de datum `jcr:lastModified` heeft van 31 december in 2018, 23:59. De URL met de vingerafdruk is `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
+Laten we aannemen dat het bestand `/content/dam/flower.jpg` heeft een `jcr:lastModified` datum 31 december 2018, 23:59. De URL met de vingerafdruk is `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
 
-Deze URL blijft stabiel, zolang het bronbestand waarnaar wordt verwezen (`flower.jpg`) niet wordt gewijzigd. Het kan dus voor onbepaalde tijd in cache worden opgeslagen en het is geen cachemoordenaar.
+Deze URL blijft stabiel, zolang de resource waarnaar wordt verwezen (`flower.jpg`) is niet gewijzigd. Het kan dus voor onbepaalde tijd in cache worden opgeslagen en het is geen cachemoordenaar.
 
 Deze URL moet worden gemaakt en bediend door de responsieve afbeeldingscomponent. Het is geen out-of-the-box AEM functionaliteit.
 
 Dat is het basisconcept. Er zijn echter een paar details die gemakkelijk over het hoofd kunnen worden gezien.
 
-In ons voorbeeld werd de component gerenderd en in cache geplaatst bij 23:59. Nu is de afbeelding veranderd, laten we zeggen om 00:00.  De component _zou_ een nieuwe vingerafgedrukte URL in zijn prijsverhoging produceren.
+In ons voorbeeld werd de component gerenderd en in cache geplaatst bij 23:59. Nu is de afbeelding veranderd, laten we zeggen om 00:00.  De component _zou_ een nieuwe vingerafdruk-URL genereren in de opmaak.
 
-U zou kunnen denken het _zou_... maar het niet. Aangezien alleen het binaire getal van de afbeelding is gewijzigd en de pagina inclusief niet is gewijzigd, hoeft de HTML-markering niet opnieuw te worden gerenderd. De Dispatcher bedient de pagina met de oude vingerafdruk, en dus de oude versie van de afbeelding.
+Misschien denkt u het wel _moet_... maar dat gebeurt niet. Aangezien alleen het binaire getal van de afbeelding is gewijzigd en de pagina met de inhoud niet is gewijzigd, hoeft de markering HTML niet opnieuw te worden gerenderd. De Dispatcher bedient de pagina met de oude vingerafdruk, en dus de oude versie van de afbeelding.
 
 ![Afbeeldingscomponent recenter dan de afbeelding waarnaar wordt verwezen, geen nieuwe vingerafdruk gerenderd.](assets/chapter-1/recent-image-component.png)
 
@@ -650,9 +650,9 @@ Maar we hebben de homepage niet geactiveerd, toch? En waarom zouden we een pagin
 >
 >Dit is een antipatroon. Gebruik het alleen op korte termijn om wat tijd te kopen en met een verfijndere oplossing te komen.
 
-De lazy admin \ &quot;_plaatst auto-invalidatie aan jpgs en statfile-level aan nul - die altijd met caching kwesties van allerlei soorten_ helpt.&quot; U vindt dat advies in technische forums en het helpt bij uw validatieprobleem.
+De lazy admin gewoonlijk &quot;_stelt automatische ongeldigmaking in op JPG en op statfile-niveau op nul - dat altijd helpt bij het in cache plaatsen van allerlei problemen_.&quot; U vindt dat advies in technische forums en het helpt bij uw validatieprobleem.
 
-Tot nu toe hebben we het statfile-niveau niet besproken. Automatische validatie werkt alleen voor bestanden in dezelfde substructuur. Het probleem is echter dat pagina&#39;s en elementen gewoonlijk niet in dezelfde substructuur leven. Pagina&#39;s bevinden zich ergens onder `/content/mysite`, terwijl elementen onder `/content/dam` leven.
+Tot nu toe hebben we het statfile-niveau niet besproken. Automatische validatie werkt alleen voor bestanden in dezelfde substructuur. Het probleem is echter dat pagina&#39;s en elementen gewoonlijk niet in dezelfde substructuur leven. Pagina&#39;s bevinden zich ergens onder `/content/mysite` overwegende dat activa onder `/content/dam`.
 
 Het &quot;statfile level&quot;bepaalt waar bij welke diepte de wortelknopen van sub-bomen zijn. In het bovenstaande voorbeeld is het niveau &quot;2&quot; (1=/content, 2=/mysite,dam)
 
@@ -680,7 +680,7 @@ Over het algemeen is het een goed idee om de sites en de middelenpaden als volgt
 /content/site-b
 ```
 
-Op deze manier kan uw aangepaste Dispatcher Flushing-agent eenvoudig verzoeken verzenden en annuleren naar /content/site-a wanneer er een wijziging optreedt op `/content/dam/site-a`.
+Op deze manier kan uw aangepaste Dispatcher Flushing-agent eenvoudig een aanvraag verzenden en annuleren naar /content/site-a wanneer er een wijziging wordt aangetroffen op `/content/dam/site-a`.
 
 Het maakt niet uit welk pad u de Dispatcher invalideert, zolang deze zich op dezelfde site bevindt, in dezelfde substructuur. U hoeft zelfs geen echt bronnenpad te gebruiken. Het kan ook &quot;virtueel&quot;zijn:
 
@@ -714,7 +714,7 @@ Het pad,
 
 `/content/mysite/home/jcr:content/par/respi.img.fp-2018-31-12-23-59.jpg`
 
-heeft geen betrekking op een van de ongeldig gemaakte middelen. Herinner je? We hebben alleen een &#39;dummy&#39;-resource ongeldig gemaakt en zijn afhankelijk van automatische validatie om &#39;home&#39; als ongeldig te beschouwen. De afbeelding zelf wordt mogelijk nooit _fysiek_ verwijderd. De cache zal dus groeien en groeien en groeien. Wanneer afbeeldingen worden gewijzigd en geactiveerd, krijgen ze nieuwe bestandsnamen in het bestandssysteem van de Dispatcher.
+heeft geen betrekking op een van de ongeldig gemaakte middelen. Herinner je? We hebben alleen een &#39;dummy&#39;-resource ongeldig gemaakt en zijn afhankelijk van automatische validatie om &#39;home&#39; als ongeldig te beschouwen. Het is mogelijk dat de afbeelding zelf nooit _fysiek_ geschrapt. De cache zal dus groeien en groeien en groeien. Wanneer afbeeldingen worden gewijzigd en geactiveerd, krijgen ze nieuwe bestandsnamen in het bestandssysteem van de Dispatcher.
 
 Er zijn drie problemen waarbij u de bestanden in de cache niet fysiek verwijdert en voor onbepaalde tijd bewaart:
 
@@ -748,9 +748,9 @@ Dus... in plaats van alleen de vingerafdruk te gebruiken als een eenvoudige cach
 
 U kunt het schema voor vingerafdrukken niet alleen gebruiken voor elementen die afkomstig zijn van de DAM, maar ook voor JS- en CSS-bestanden en verwante bronnen.
 
-[Versioned ](https://adobe-consulting-services.github.io/acs-aem-commons/features/versioned-clientlibs/index.html) Clientlibsis een module die deze benadering gebruikt.
+[Versioned Clientlibs](https://adobe-consulting-services.github.io/acs-aem-commons/features/versioned-clientlibs/index.html) is een module die deze benadering gebruikt.
 
-Maar hier zou je een ander voorwendsel kunnen tegenkomen met URL-vingerafdrukken: De URL wordt aan de inhoud gekoppeld. U kunt de inhoud niet wijzigen zonder ook de URL te wijzigen (de wijzigingsdatum wordt ook bijgewerkt). Daar zijn de vingerafdrukken in de eerste plaats voor bedoeld. Maar denk eraan dat u een nieuwe release maakt met nieuwe CSS- en JS-bestanden en dus nieuwe URL&#39;s met nieuwe vingerafdrukken. Al uw HTML-pagina&#39;s bevatten nog steeds verwijzingen naar de oude vingerafgedrukte URL&#39;s. Om de nieuwe versie consistent te laten werken, moet u dus alle HTML-pagina&#39;s tegelijk ongeldig maken om een nieuwe rendering met verwijzingen naar de nieuwe vingerafgedrukte bestanden te forceren. Als u meerdere sites hebt die op dezelfde bibliotheken vertrouwen, kan dat een aanzienlijke hoeveelheid renderen zijn - en hier kunt u geen gebruik maken van de `statfiles`. Wees daarom voorbereid om de pieken van de belasting op uw publicatiesystemen na een rollout te zien. U zou een blauw-groene plaatsing met geheim voorgeheugen opwarmen of misschien een op TTL-Gebaseerde geheime voorgeheugen voor uw Verzender kunnen overwegen.. de mogelijkheden zijn eindeloos .
+Maar hier zou je een ander voorwendsel kunnen tegenkomen met URL-vingerafdrukken: De URL wordt aan de inhoud gekoppeld. U kunt de inhoud niet wijzigen zonder ook de URL te wijzigen (de wijzigingsdatum wordt ook bijgewerkt). Daar zijn de vingerafdrukken in de eerste plaats voor bedoeld. Maar denk eraan dat u een nieuwe release maakt met nieuwe CSS- en JS-bestanden en dus nieuwe URL&#39;s met nieuwe vingerafdrukken. Op al uw HTML-pagina&#39;s staan nog verwijzingen naar de oude vingerafgedrukte URL&#39;s. Om de nieuwe versie consistent te laten werken, moet u dus alle HTML pagina&#39;s tegelijk ongeldig maken om een nieuwe rendering met verwijzingen naar de nieuwe vingerafgedrukte bestanden te forceren. Als u meerdere sites hebt die op dezelfde bibliotheken vertrouwen, kan dat een aanzienlijke hoeveelheid renderen zijn - en hier kunt u de `statfiles`. Wees daarom voorbereid om de pieken van de belasting op uw publicatiesystemen na een rollout te zien. U zou een blauw-groene plaatsing met geheim voorgeheugen opwarmen of misschien een op TTL-Gebaseerde geheime voorgeheugen voor uw Verzender kunnen overwegen.. de mogelijkheden zijn eindeloos .
 
 #### Een korte onderbreking
 
@@ -806,7 +806,7 @@ Ons voorbeeld is gemakkelijk op te lossen:
 
 We gebruiken de oorspronkelijke middelenpaden van de elementen om de gegevens te renderen. Als we de oorspronkelijke afbeelding zo moeten renderen, kunnen we gewoon AEM standaardrenderer voor elementen gebruiken.
 
-Als wij wat speciale verwerking voor een specifieke component moeten doen, zouden wij een specifieke servlet op die weg en selecteur registreren om de transformatie namens de component te doen. We hebben dat hier voorbeeldig gedaan met &quot;.respi&quot;. kiezer. Het is verstandig om de namen van kiezers bij te houden die worden gebruikt in de algemene URL-ruimte (zoals `/content/dam`) en die een goede naamgevingsconventie hebben om naamgevingsconflicten te voorkomen.
+Als wij wat speciale verwerking voor een specifieke component moeten doen, zouden wij een specifieke servlet op die weg en selecteur registreren om de transformatie namens de component te doen. We hebben dat hier voorbeeldig gedaan met &quot;.respi&quot;. kiezer. Het is verstandig om de namen van kiezers die worden gebruikt in de algemene URL-ruimte (zoals `/content/dam`) en een goede naamgevingsconventie hebben om naamgevingsconflicten te voorkomen.
 
 Trouwens, we zien geen problemen met codeconcentratie. De servlet kan worden gedefinieerd in hetzelfde Java-pakket als het slingmodel voor componenten.
 
@@ -826,7 +826,7 @@ Maar er zijn één klasse gevallen die u niet gemakkelijk met een op bron-gebase
 
 De Spooler in het laatste hoofdstuk was slechts een dunne omslag rond een bron. Het veroorzaakte meer problemen dan hulp bij het oplossen van het probleem.
 
-We kunnen die verpakking eenvoudig vervangen door een eenvoudige kiezer te gebruiken en een servlet toe te voegen om dergelijke verzoeken in te dienen.
+We kunnen die verpakking eenvoudig vervangen door een eenvoudige kiezer te gebruiken en een overeenkomstig servlet toe te voegen om dergelijke verzoeken in te dienen.
 
 Maar wat als de component &quot;respi&quot; meer is dan alleen een proxy. Wat gebeurt er als de component daadwerkelijk bijdraagt aan de rendering van de component?
 
@@ -904,7 +904,7 @@ Dit is veel beter, maar onthoud die vervelende scriptkind uit het laatste hoofds
   …
 ```
 
-Hierdoor wordt de cache opnieuw overgeslagen en wordt het laden op het publicatiesysteem gestart. Het zou dus een slecht idee kunnen zijn. U kunt dit verminderen door slechts een kleine ondergroep van parameters te filtreren. U wilt alleen `q-20, q-40, q-60, q-80, q-100` toestaan.
+Hierdoor wordt de cache opnieuw overgeslagen en wordt het laden op het publicatiesysteem gestart. Het zou dus een slecht idee kunnen zijn. U kunt dit verminderen door slechts een kleine ondergroep van parameters te filtreren. Alleen toestaan `q-20, q-40, q-60, q-80, q-100`.
 
 #### Filteren van ongeldige verzoeken bij gebruik van kiezers
 
@@ -945,7 +945,7 @@ zou altijd op dezelfde afbeelding reageren als q-40 zou hebben:
 
 Die aanpak helpt helemaal niet. Deze verzoeken zijn eigenlijk geldige verzoeken.  Ze verbruiken verwerkingskracht en nemen ruimte in de cachemap op de Dispatcher.
 
-Het is beter een `301 – Moved permanently` te retourneren:
+Beter is om een `301 – Moved permanently`:
 
 ```plain
   GET /content/dam/flower.respi.q-41.jpg
@@ -954,9 +954,9 @@ Het is beter een `301 – Moved permanently` te retourneren:
   Location: /content/dam/flower.respi.q-40.jpg
 ```
 
-Hier AEM de browser. &quot;Ik heb geen `q-41`. Maar ze - je kunt me vragen over `q-40` &quot;.
+Hier AEM de browser. &quot;Ik heb het niet `q-41`. Maar ze - je kunt me vragen `q-40` &quot;.
 
-Dat voegt een extra verzoek-antwoord lijn aan het gesprek toe, dat een beetje van overheadkosten is, maar het is goedkoper dan het doen van de volledige verwerking op `q-41`. En u kunt hefboomwerking het dossier dat reeds onder `q-40` in het voorgeheugen ondergebracht is. Je moet echter begrijpen dat 302 reacties niet in de cache zijn geplaatst, we hebben het over logica die in de AEM wordt uitgevoerd. Steeds opnieuw. Dus je kunt het beter slank en snel maken.
+Dat voegt een extra verzoek-antwoord lijn aan het gesprek toe, dat een beetje overheadkosten is, maar het is goedkoper dan het doen van de volledige verwerking op `q-41`. En u kunt het bestand gebruiken dat al in de cache is opgeslagen `q-40`. Je moet echter begrijpen dat 302 reacties niet in de cache zijn geplaatst, we hebben het over logica die in de AEM wordt uitgevoerd. Steeds opnieuw. Dus je kunt het beter slank en snel maken.
 
 Persoonlijk vinden wij de 404 het meest geschikt. Het maakt het overduidelijk wat er gebeurt. En helpt u bij het analyseren van logbestanden fouten op uw website te detecteren. De 301s kan worden gebruikt, waarbij 404 altijd geanalyseerd en geëlimineerd moeten worden.
 
@@ -1044,7 +1044,7 @@ Dat brengt ons bij de vraag. Waarom kunnen we niet gewoon het beste van beide we
 
 We moeten toegeven dat we dat niet hebben gezien in een echt live project. Maar laten we hier toch een klein gedachte-experiment durven te doen - als uitgangspunt voor uw eigen oplossing.
 
-Dit patroon wordt de _Inverted Spooler_ genoemd. Inverted Spooler moet op de beeldmiddel worden gebaseerd, om alle aardige eigenschappen van de geheim voorgeheugenongeldigheid te hebben.
+We noemen dit patroon het _Omgekeerde spooler_.. Inverted Spooler moet op de beeldmiddel worden gebaseerd, om alle aardige eigenschappen van de geheim voorgeheugenongeldigheid te hebben.
 
 Maar het mag geen parameters blootstellen. Alle eigenschappen moeten in de component worden ingekapseld. Maar wij kunnen de componentenweg - als ondoorzichtige verwijzing naar de eigenschappen blootstellen.
 
@@ -1070,23 +1070,23 @@ Wow... de discussie over de spooler werd langer en ingewikkelder dan verwacht. W
 
 #### Inleiding
 
-We hebben de _statfile_ al kort genoemd. Het heeft betrekking op automatische ongeldigmaking:
+We hebben het al kort gehad over de _statfile_ voor. Het heeft betrekking op automatische ongeldigmaking:
 
-Alle cachebestanden in het bestandssysteem van de Dispatcher die zijn geconfigureerd om automatisch ongeldig te worden gemaakt, worden als ongeldig beschouwd als de datum die voor het laatst is gewijzigd, ouder is dan de datum die het laatst is gewijzigd.`statfile's`
+Alle cachebestanden in het bestandssysteem van de Dispatcher die zijn geconfigureerd om automatisch ongeldig te worden gemaakt, worden als ongeldig beschouwd als de datum die voor het laatst is gewijzigd, ouder is dan de `statfile's` datum van laatste wijziging.
 
 >[!NOTE]
 >
->De datum die als laatste is gewijzigd, is de datum waarop het bestand in de cache is opgeslagen in de browser van de client en uiteindelijk in het bestandssysteem is gemaakt. Het is niet de `jcr:lastModified` datum van de bron.
+>De datum die als laatste is gewijzigd, is de datum waarop het bestand in de cache is opgeslagen in de browser van de client en uiteindelijk in het bestandssysteem is gemaakt. Het is niet `jcr:lastModified` datum van de bron.
 
-De laatste-gewijzigde datum van de status (`.stat`) is de datum het verzoek van de ongeldigverklaring van AEM op de Dispatcher werd ontvangen.
+De datum van de laatste wijziging van de status (`.stat`) is de datum waarop het validatieverzoek van AEM is ontvangen op de Dispatcher.
 
 Als u meer dan één Dispatcher hebt, kan dit tot vreemde effecten leiden. Uw browser kan een recentere versie een Verzender (als u meer dan één Verzender hebt) hebben. Of een Dispatcher zou kunnen denken dat de versie van browser die door andere Dispatcher werd uitgegeven verouderd is en onnodig een nieuw exemplaar verzendt. Deze effecten hebben geen significante invloed op de prestaties of de functionele vereisten. En ze zullen uitstappen in de tijd, wanneer de browser de meest recente versie heeft. Het kan echter enigszins verwarrend zijn wanneer u het gedrag van het in cache plaatsen van de browser optimaliseert en er fouten in opspoort. Wees daarom gewaarschuwd.
 
 #### Validatiedomeinen instellen met /statfileslevel
 
-Toen wij auto-ongeldigverklaring en het statfile introduceerden wij zeiden, dat *alle* dossiers als ongeldig worden beschouwd wanneer er om het even welke verandering is en dat alle dossiers hoe dan ook onderling afhankelijk zijn.
+Toen wij auto-ongeldigverklaring en de verklaring introduceerden wij zeiden, dat *alles* bestanden worden als ongeldig beschouwd wanneer er wijzigingen worden aangebracht en alle bestanden toch van elkaar afhankelijk zijn.
 
-Dat is niet helemaal accuraat. Gewoonlijk zijn alle bestanden die een gemeenschappelijke hoofdnavigatie-hoofdmap delen onderling afhankelijk. Maar één AEM instantie kan een aantal websites - *onafhankelijke* websites ontvangen. Geen gemeenschappelijke navigatie delen - in feite niets delen.
+Dat is niet helemaal accuraat. Gewoonlijk zijn alle bestanden die een gemeenschappelijke hoofdnavigatie-hoofdmap delen onderling afhankelijk. Maar één AEM kan een aantal websites hosten - *onafhankelijk* websites. Geen gemeenschappelijke navigatie delen - in feite niets delen.
 
 Zou het geen afval zijn om Site B ongeldig te maken omdat er een wijziging is in Site A? Ja, dat is het. Zo hoeft het niet te zijn.
 
@@ -1096,17 +1096,17 @@ Het is een getal dat aangeeft vanaf welk niveau in het bestandssysteem twee subs
 
 Laten we eens kijken naar het standaardgeval waarin het statfilesniveau 0 is.
 
-![/statfileslevel &quot;0&quot;: _  _.stat_ _wordt gecreeerd in docroot. Het validatiedomein omvat de gehele installatie, inclusief alle sites](assets/chapter-1/statfile-level-0.png)
+![/statfileslevel &quot;0&quot;: The_ _.stat_ _wordt gemaakt in de hoofdmap van het document. Het validatiedomein omvat de gehele installatie, inclusief alle sites](assets/chapter-1/statfile-level-0.png)
 
-`/statfileslevel "0":` Het  `.stat` bestand wordt gemaakt in de hoofdmap van het document. Het validatiedomein omvat de gehele installatie, inclusief alle sites.
+`/statfileslevel "0":` De `.stat` wordt gemaakt in de hoofdmap van het document. Het validatiedomein omvat de gehele installatie, inclusief alle sites.
 
-Welk bestand ongeldig wordt gemaakt, het `.stat`-bestand helemaal boven aan de verzendersdocroot wordt altijd bijgewerkt. Wanneer u `/content/site-b/home` ongeldig maakt, worden dus ook alle bestanden in `/content/site-a` ongeldig gemaakt, omdat ze nu ouder zijn dan het `.stat`-bestand in de hoofdmap. Het is duidelijk niet wat u nodig hebt wanneer u `site-b` ongeldig maakt.
+Welk bestand ongeldig wordt gemaakt, `.stat` bestand helemaal boven aan de verzendersdocroot wordt altijd bijgewerkt. Dus wanneer u ongeldig maakt `/content/site-b/home`, ook alle bestanden in `/content/site-a` ook ongeldig zijn, omdat ze nu ouder zijn dan de `.stat` in de hoofdmap. Duidelijk niet wat u nodig hebt wanneer u ongeldig maakt `site-b`.
 
-In dit voorbeeld stelt u `statfileslevel` liever in op `1`.
+In dit voorbeeld stelt u liever de `statfileslevel` tot `1`.
 
-Nu als u publiceert - en zo `/content/site-b/home` of een andere bron onder `/content/site-b` ongeldig maakt, wordt het `.stat` dossier gecreeerd bij `/content/site-b/`.
+Nu als u publiceert en dus ongeldig maakt `/content/site-b/home` of een andere hieronder vermelde bron `/content/site-b`de `.stat` bestand is gemaakt op `/content/site-b/`.
 
-De inhoud onder `/content/site-a/` wordt niet gewijzigd. Deze inhoud wordt vergeleken met een `.stat`-bestand op `/content/site-a/`. Er zijn twee verschillende validatiedomeinen gemaakt.
+Inhoud onder `/content/site-a/` niet beïnvloed. Deze inhoud wordt vergeleken met een `.stat` bestand bij `/content/site-a/`. Er zijn twee verschillende validatiedomeinen gemaakt.
 
 ![Met het statusniveau &quot;1&quot; worden verschillende validatiedomeinen gemaakt](assets/chapter-1/statfiles-level-1.png)
 
@@ -1114,7 +1114,7 @@ De inhoud onder `/content/site-a/` wordt niet gewijzigd. Deze inhoud wordt verge
 
 <br> 
 
-De grote installaties zijn gewoonlijk een beetje complexer en dieper gestructureerd. Een gemeenschappelijke regeling is het structureren van sites per merk, land en taal. In dat geval kunt u het niveau van de statussen nog hoger instellen. _1_ zou valideringsdomeinen per merk,  _2_ per land en  _3_ per taal creëren.
+De grote installaties zijn gewoonlijk een beetje complexer en dieper gestructureerd. Een gemeenschappelijke regeling is het structureren van sites per merk, land en taal. In dat geval kunt u het niveau van de statussen nog hoger instellen. _1_ zou leiden tot ongeldig wordingsdomeinen per merk; _2_ per land en _3_ per taal.
 
 ### Noodzaak van een homogene sitestructuur
 
@@ -1143,11 +1143,11 @@ Stel dat uw portfolio bepaalde merken bevat die alleen op een paar kleine markte
   ..
 ```
 
-De eerste zou een `statfileslevel` van _2_ vereisen, terwijl de tweede _3_ vereist.
+De eerste zou een `statfileslevel` van _2_, terwijl laatstgenoemde _3_.
 
-Geen ideale situatie. Als u deze instelt op _3_, werkt automatische ongeldigmaking niet binnen de kleinere sites tussen de subvertakkingen `/home`, `/products` en `/about`.
+Geen ideale situatie. Als u deze instelt op _3_ Dan werkt automatische ongeldigmaking niet binnen de kleinere locaties tussen de subvertakkingen `/home`, `/products` en `/about`.
 
-Als u deze instelt op _2_, betekent dit dat u `/canada/en` en `/canada/fr` afhankelijk declareert, wat ze mogelijk niet zijn. Elke ongeldigmaking in `/en` zou dus ook `/fr` ongeldig maken. Dit leidt tot een iets lagere aanraaksnelheid voor cache, maar is nog steeds beter dan het leveren van inhoud in een verouderde cache.
+Instellen op _2_ betekent dat op de grotere sites die u declareert `/canada/en` en `/canada/fr` afhankelijk, wat ze misschien niet zijn. Elke ongeldigmaking in `/en` zou ook ongeldig maken `/fr`. Dit leidt tot een iets lagere aanraaksnelheid voor cache, maar is nog steeds beter dan het leveren van inhoud in een verouderde cache.
 
 De beste oplossing is natuurlijk om de wortels van alle sites even diep te maken:
 
@@ -1163,9 +1163,9 @@ De beste oplossing is natuurlijk om de wortels van alle sites even diep te maken
 
 ### Koppeling tussen sites
 
-Wat is nu het juiste niveau? Dat hangt van het aantal gebiedsdelen af u tussen de plaatsen hebt. Opnamen die u oplost voor het weergeven van een pagina worden beschouwd als &#39;harde afhankelijkheden&#39;. We hebben een dergelijke _inclusie_ aangetoond toen we de _Taser_-component aan het begin van deze handleiding introduceerden.
+Wat is nu het juiste niveau? Dat hangt van het aantal gebiedsdelen af u tussen de plaatsen hebt. Opnamen die u oplost voor het weergeven van een pagina worden beschouwd als &#39;harde afhankelijkheden&#39;. We hebben dat aangetoond _inclusie_ bij de invoering van de _Teaser_ component aan het begin van deze handleiding.
 
-__ Hyperlinks zijn een zachtere vorm van afhankelijkheden. Het is zeer waarschijnlijk dat u hyperlinks binnen één website... en niet onwaarschijnlijk dat u koppelingen hebt tussen uw websites. Met eenvoudige hyperlinks worden meestal geen afhankelijkheden tussen websites gemaakt. Denk aan een externe koppeling die u van uw site naar facebook instelt... Je hoeft je pagina niet te renderen als er iets verandert op facebook en andersom.
+_Hyperlinks_ zijn een zachtere vorm van afhankelijkheden. Het is zeer waarschijnlijk dat u hyperlinks binnen één website... en niet onwaarschijnlijk dat u koppelingen hebt tussen uw websites. Met eenvoudige hyperlinks worden meestal geen afhankelijkheden tussen websites gemaakt. Denk aan een externe koppeling die u van uw site naar facebook instelt... Je hoeft je pagina niet te renderen als er iets verandert op facebook en andersom.
 
 Een afhankelijkheid treedt op wanneer u inhoud leest uit de gekoppelde bron (bijvoorbeeld de navigatitel). Dergelijke afhankelijkheden kunnen worden vermeden als u alleen vertrouwt op lokaal ingevoerde navigatitels en deze niet tekent vanaf de doelpagina (zoals bij externe koppelingen).
 
@@ -1204,9 +1204,9 @@ Er waren geen navigeerbare verbindingen tussen de taalplaatsen en geen duidelijk
 
 Alle sites hadden eigenlijk dezelfde inhoud. Het enige grote verschil was de taal.
 
-Zoekprogramma&#39;s zoals Google overwegen dezelfde inhoud op verschillende URL&#39;s &#39;misleidend&#39; te hebben. Een gebruiker kan proberen hoger gerangschikt of vaker vermeld te worden door landbouwbedrijven te creëren die identieke inhoud dienen. Zoekprogramma&#39;s herkennen deze pogingen en plaatsen pagina&#39;s lager die gewoon inhoud recyclen.
+Zoekprogramma&#39;s zoals Google beschouwen dezelfde inhoud als op verschillende URL&#39;s als &#39;misleidend&#39;. Een gebruiker kan proberen hoger gerangschikt of vaker vermeld te worden door landbouwbedrijven te creëren die identieke inhoud dienen. Zoekprogramma&#39;s herkennen deze pogingen en plaatsen pagina&#39;s lager die gewoon inhoud recyclen.
 
-U kunt voorkomen dat u op een lager niveau wordt weergegeven door transparant te maken, dat u eigenlijk meer dan één pagina met dezelfde inhoud hebt en dat u niet probeert het systeem te &#39;gamen&#39; (zie [&quot;Google informeren over gelokaliseerde versies van uw pagina&quot;](https://support.google.com/webmasters/answer/189077?hl=en)) door `<link rel="alternate">`-tags in te stellen op elke gerelateerde pagina in de koptekstsectie van elke pagina:
+U kunt voorkomen dat u op een lager niveau wordt geplaatst door transparant te maken, dat u eigenlijk meer dan één pagina met dezelfde inhoud hebt en dat u niet probeert het systeem te &#39;gamen&#39; (zie [&quot;Google informeren over gelokaliseerde versies van je pagina&quot;](https://support.google.com/webmasters/answer/189077?hl=en)) door in te stellen `<link rel="alternate">` -codes naar elke gerelateerde pagina in de koptekstsectie van elke pagina:
 
 ```
 # URL: www.shiny-brand.fr/fr/home/produits.html
@@ -1252,13 +1252,13 @@ U kunt voorkomen dat u op een lager niveau wordt weergegeven door transparant te
 
 Sommige SEO-experts betogen zelfs dat dit reputatie of &quot;link-sap&quot; van een hooggeplaatste website in één taal zou kunnen overbrengen naar dezelfde website in een andere taal.
 
-Met dit schema zijn niet alleen een aantal koppelingen tot stand gekomen, maar ook enkele problemen. Het aantal koppelingen dat vereist is voor _p_ in _n_ talen is _p x (n<sup>2</sup>-n)_: Elke pagina is aan elkaar gekoppeld (_n x n_) behalve aan zichzelf (_-n_). Dit schema wordt toegepast op elke pagina. Als we een kleine site hebben in vier talen met 20 pagina&#39;s, komt dit elk neer op _240_ koppelingen.
+Met dit schema zijn niet alleen een aantal koppelingen tot stand gekomen, maar ook enkele problemen. Het aantal koppelingen waarvoor _p_ in _n_ talen zijn _p x (n<sup>2</sup>-n)_: Elke pagina is aan elkaar gekoppeld (_n x n_) behalve aan zichzelf (_-n_). Dit schema wordt toegepast op elke pagina. Als we een kleine site hebben in 4 talen met 20 pagina&#39;s, komt dit neer op _240_ koppelingen.
 
 Eerst wilt u niet dat een editor deze koppelingen handmatig moet onderhouden. Deze koppelingen moeten automatisch door het systeem worden gegenereerd.
 
 Ten tweede moeten ze accuraat zijn. Wanneer het systeem een nieuw &quot;familielid&quot;ontdekt, wilt u het van alle andere pagina&#39;s met de zelfde inhoud (maar in verschillende taal) verbinden.
 
-In ons project kwamen regelmatig nieuwe relatieve pagina&#39;s naar boven. Maar ze kwamen niet tot stand als &#39;alternatieve&#39; links. Wanneer bijvoorbeeld de pagina `de-de/produkte` op de Duitse website werd gepubliceerd, was deze niet onmiddellijk zichtbaar op de andere sites.
+In ons project kwamen regelmatig nieuwe relatieve pagina&#39;s naar boven. Maar ze kwamen niet tot stand als &#39;alternatieve&#39; links. Wanneer bijvoorbeeld `de-de/produkte` Deze pagina is gepubliceerd op de Duitse website en was niet meteen zichtbaar op de andere sites.
 
 De reden was dat de sites in onze opzet onafhankelijk moesten zijn. Een wijziging op de Duitse website heeft dus geen aanleiding gegeven tot een ongeldigverklaring op de Franse website.
 
@@ -1268,7 +1268,7 @@ In ons geval was het nog ingewikkelder:
 
 Hoewel we dezelfde inhoud hadden, waren de eigenlijke niet-merknamen in elk land verschillend.
 
-`shiny-brand` werd  `marque-brillant` in Frankrijk en  `blitzmarke` in Duitsland opgeroepen:
+`shiny-brand` is gebeld `marque-brillant` in Frankrijk en `blitzmarke` in Duitsland:
 
 ```
 /content/marque-brillant/france/fr
@@ -1278,11 +1278,11 @@ Hoewel we dezelfde inhoud hadden, waren de eigenlijke niet-merknamen in elk land
 …
 ```
 
-Dat zou betekenen om het `statfiles` niveau aan 1 te plaatsen - wat in een te groot ongeldig domein zou hebben geresulteerd.
+Dat had de `statfiles` niveau tot en met 1 - wat zou hebben geleid tot een te groot validatiedomein.
 
 Herstructurering van de locatie zou dat hebben opgelost. Alle merken samenvoegen tot één gemeenschappelijke basis. Maar we hadden toen niet de capaciteit gehad, en - dat zou ons slechts niveau 2 hebben gegeven.
 
-We hebben besloten om vast te houden aan niveau 3 en de prijs te betalen voor het niet altijd hebben van actuele &quot;alternatieve&quot; links. Om het probleem te verhelpen, hadden we een &#39;aperte&#39; tijdelijke werkkring op de Dispatcher die bestanden die ouder waren dan 1 week, hoe dan ook zou opschonen. Uiteindelijk werden alle pagina&#39;s dus toch op een bepaald moment opnieuw weergegeven. Maar dat is een compromis dat in elk project afzonderlijk moet worden vastgesteld.
+We hebben besloten om vast te houden aan niveau 3 en de prijs te betalen voor het niet altijd hebben van actuele &quot;alternatieve&quot; links. Om het probleem te verhelpen, hadden we een &#39;aperte&#39; &#39;cron-job&#39; op de Dispatcher die bestanden die ouder waren dan 1 week, hoe dan ook zou opschonen. Uiteindelijk werden alle pagina&#39;s dus toch op een bepaald moment opnieuw weergegeven. Maar dat is een compromis dat in elk project afzonderlijk moet worden vastgesteld.
 
 ## Conclusie
 
@@ -1300,7 +1300,7 @@ Als u een auteur AEM installeert en uit de doos publiceert, is de topologie een 
 
 Als een klant ondertussen om die inhoud verzoekt, zal de Dispatcher om verouderde inhoud verzoeken en opslaan.
 
-Een meer betrouwbare opstelling verzendt het verzoek van de het ongeldig maken van de Publish systemen _after_ zij hebben de inhoud ontvangen. Het artikel &quot;[Invalidating Dispatcher Cache from a Publishing Instance](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; beschrijft de details.
+Er wordt een betrouwbaardere installatie verzonden voor het verzoek tot ongeldigmaking van de publicatiesystemen _na_ zij hebben de inhoud ontvangen. Het artikel &quot;[Dispatcher Cache van een publicatie-instantie ongeldig maken](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; beschrijft de details.
 
 **Verwijzingen**
 
@@ -1310,9 +1310,9 @@ Een meer betrouwbare opstelling verzendt het verzoek van de het ongeldig maken v
 
 In de oude dagen heeft de Dispatcher gewoon onbewerkte bestanden in het bestandssysteem opgeslagen. Als u HTTP-headers nodig had om aan de klant te worden geleverd, hebt u dit gedaan door Apache te configureren op basis van de kleine informatie die u van het bestand of de locatie had. Dat was vooral vervelend toen u een Webtoepassing in AEM uitvoerde die sterk op de kopballen van HTTP baseerde. Alles werkte prima in de AEM-enige instantie, maar niet toen u een Dispatcher gebruikte.
 
-Gewoonlijk hebt u de ontbrekende headers opnieuw toegepast op de bronnen op de Apache-server met `mod_headers` door informatie te gebruiken die u zou kunnen afgeleid door het bronnenpad en het achtervoegsel. Maar dat was niet altijd voldoende.
+Meestal bent u begonnen met het opnieuw toepassen van de ontbrekende headers op de bronnen op de Apache-server met `mod_headers` door informatie te gebruiken zou u door de middelenweg en het achtervoegsel kunnen voortkomen. Maar dat was niet altijd voldoende.
 
-Vooral vervelend was dat zelfs met de Dispatcher de eerste _uncached_ reactie op browser uit het Publish systeem met een volledige waaier van kopballen kwam, terwijl de verdere reacties door de Dispatcher met een beperkte reeks kopballen werden geproduceerd.
+Vooral vervelend was dat zelfs met de Dispatcher de eerste _niet in cache geplaatst_ De reactie op de browser kwam van het Publish systeem met een volledige waaier van kopballen, terwijl de verdere reacties door de Dispatcher met een beperkte reeks kopballen werden geproduceerd.
 
 Vanaf Dispatcher 4.1.11 kan de Dispatcher kopteksten opslaan die zijn gegenereerd door de publicatiesystemen.
 
@@ -1336,7 +1336,7 @@ Het is mogelijk dat u alle pagina&#39;s en afbeeldingen in het algemeen in cache
   response.setHeader("Pragma: no-cache");
 ```
 
-Cache-Control en Pragma zijn officiële HTTP-headers, die worden doorgegeven aan en geïnterpreteerd door lagen in de cache, zoals een CDN. De koptekst `Dispatcher` is slechts een tip voor de Dispatcher om geen cache te maken. Deze kan worden gebruikt om ervoor te zorgen dat de Dispatcher de cache niet in cache plaatst, terwijl de lagen in de cache dit wel toestaan. Eigenlijk is het moeilijk om een geval te vinden waar dat nuttig kan zijn. Maar we zijn er zeker van dat er wat zijn, ergens.
+Cache-Control en Pragma zijn officiële HTTP-headers, die worden doorgegeven aan en geïnterpreteerd door lagen in de cache, zoals een CDN. De `Dispatcher` header is slechts een tip voor de Dispatcher om geen cache te maken. Deze kan worden gebruikt om ervoor te zorgen dat de Dispatcher de cache niet in cache plaatst, terwijl de lagen in de cache dit wel toestaan. Eigenlijk is het moeilijk om een geval te vinden waar dat nuttig kan zijn. Maar we zijn er zeker van dat er wat zijn, ergens.
 
 **Verwijzingen**
 
@@ -1348,43 +1348,43 @@ De snelste http-respons is de reactie die door de browser zelf wordt gegeven. Wa
 
 U kunt de browser helpen bepalen wanneer de server om een nieuwe versie van het dossier moet vragen door een vervaldatum op een middel te plaatsen.
 
-Gewoonlijk, doet u dat statisch door Apache `mod_expires` te gebruiken of door Cachebeheer op te slaan en Kopbal vervalt die uit AEM komen als u een meer individuele controle nodig hebt.
+Meestal doe je dat statisch met Apache&#39;s `mod_expires` of door Cache-Controle op te slaan en Kopbal vervalt die uit AEM komen als u een meer individuele controle nodig hebt.
 
 Een document in de browser dat in de cache is opgeslagen, kan drie up-to-date niveaus hebben.
 
-1. _Gegarandeerd vers_  - De browser kan het cachedocument gebruiken.
+1. _Gegarandeerd vers_ - De browser kan het cachedocument gebruiken.
 
-2. _Mogelijk verouderd_  - De browser moet de server eerst vragen of het document in de cache nog steeds up-to-date is.
+2. _Potentieel bleek_ - De browser moet de server eerst vragen of het document in de cache nog steeds up-to-date is,
 
-3. _Stale_  - De browser moet de server om een nieuwe versie vragen.
+3. _Stale_ - De browser moet de server om een nieuwe versie vragen.
 
 De eerste wordt gegarandeerd door de vervaldatum die door de server wordt geplaatst. Als een bron niet is verlopen, hoeft u de server niet opnieuw te vragen.
 
 Als het document de vervaldatum bereikt heeft, kan het nog vers zijn. De vervaldatum wordt ingesteld wanneer het document wordt afgeleverd. Maar vaak weet u niet van tevoren wanneer er nieuwe inhoud beschikbaar is - dus dit is slechts een conservatieve schatting.
 
-Om te bepalen of het document in de browser geheim voorgeheugen nog het zelfde is dat op een nieuw verzoek zou worden geleverd, kan browser `Last-Modified` datum van het document gebruiken. De browser vraagt de server:
+Als u wilt bepalen of het document in de browsercache nog steeds hetzelfde is als het document dat bij een nieuwe aanvraag wordt geleverd, kan de browser de opdracht `Last-Modified` datum van het document. De browser vraagt de server:
 
 &quot;_Ik heb een versie van 10 juni... heb ik een update nodig?_&quot; En de server kan reageren met
 
-&quot;_304 - Uw versie is nog bijgewerkt_&quot;zonder het middel opnieuw over te brengen, of de server kon met antwoorden
+&quot;_304 - Uw versie is nog up-to-date_&quot; zonder de bron opnieuw te verzenden, of de server kan antwoorden met
 
-&quot;_200 - hier is een recentere versie_&quot;in de kopbal van HTTP en de daadwerkelijke recentere inhoud in het lichaam van HTTP.
+&quot;_200 - hier is een recentere versie_&quot; in de HTTP-header en de actuele recentere inhoud in de HTTP-hoofdtekst.
 
-Om dat tweede deel te laten werken, zorgt u ervoor dat de datum `Last-Modified` naar de browser wordt verzonden zodat deze een referentiepunt heeft om updates te vragen.
+Om dat tweede deel te laten werken, zorgt u ervoor dat de `Last-Modified` datum aan browser zodat heeft het een verwijzingspunt om updates te vragen.
 
-We hebben eerder uitgelegd dat wanneer de datum `Last-Modified` door de Dispatcher wordt gegenereerd, deze tussen verschillende aanvragen kan verschillen, omdat het bestand in de cache - en de datum ervan - wordt gegenereerd wanneer het bestand door de browser wordt aangevraagd. Een alternatief zou zijn &quot;e-tags&quot; te gebruiken - dit zijn getallen die de werkelijke inhoud identificeren (bijvoorbeeld door een hash-code te genereren) in plaats van een datum.
+We hebben eerder uitgelegd dat toen `Last-Modified` De datum wordt geproduceerd door de Dispatcher, kan het tussen verschillende verzoeken variëren omdat het caching dossier - en het is datum - wordt geproduceerd wanneer het dossier door browser wordt gevraagd. Een alternatief zou zijn &quot;e-tags&quot; te gebruiken - dit zijn getallen die de werkelijke inhoud identificeren (bijvoorbeeld door een hash-code te genereren) in plaats van een datum.
 
-&quot;[Etag Support](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; uit het _ACS-gemeenschappelijk pakket_ gebruikt deze aanpak. Dit gaat echter gepaard met een prijs: Aangezien de E-markering als kopbal moet worden verzonden, maar de berekening van de knoeiboelcode vereist volledig lezend de reactie, moet de reactie volledig in het belangrijkste geheugen worden gebufferd alvorens het kan worden geleverd. Dit kan een negatieve invloed hebben op de latentie wanneer uw website waarschijnlijk over resources beschikt die niet in de cache zijn opgeslagen en u natuurlijk het geheugen dat uw AEM gebruikt in de gaten moet houden.
+&quot;[Ondersteuning voor tags](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; van de _ACS-commandopakket_ gebruikt deze aanpak. Dit gaat echter gepaard met een prijs: Aangezien de E-markering als kopbal moet worden verzonden, maar de berekening van de knoeiboelcode vereist volledig lezend de reactie, moet de reactie volledig in het belangrijkste geheugen worden gebufferd alvorens het kan worden geleverd. Dit kan een negatieve invloed hebben op de latentie wanneer uw website waarschijnlijk over resources beschikt die niet in de cache zijn opgeslagen en u natuurlijk het geheugen dat uw AEM gebruikt in de gaten moet houden.
 
 Als u URL-vingerafdrukken gebruikt, kunt u zeer lange vervaldatums instellen. U kunt vingerafdrukbronnen altijd in de cache plaatsen in de browser. Een nieuwe versie wordt gemarkeerd met een nieuwe URL en oudere versies hoeven nooit te worden bijgewerkt.
 
-We gebruikten URL-vingerafdrukken toen we het spoolerpatroon introduceerden. Statische bestanden die afkomstig zijn van de `/etc/design` (CSS, JS) worden zelden gewijzigd, waardoor ze ook geschikt zijn voor gebruik als vingerafdrukken.
+We gebruikten URL-vingerafdrukken toen we het spoolerpatroon introduceerden. Statische bestanden die afkomstig zijn van de `/etc/design` (CSS, JS) worden zelden gewijzigd, waardoor ze ook goede kandidaten zijn om te gebruiken als vingerafdrukken.
 
-Voor gewone bestanden maken we doorgaans een vast schema, zoals elke 30 minuten opnieuw controleren van HTML, afbeeldingen elke 4 uur enzovoort.
+Voor gewone bestanden maken we doorgaans een vast schema, zoals elke 30 minuten opnieuw HTML controleren, afbeeldingen elke 4 uur enzovoort.
 
 Het in cache plaatsen van browsers is bijzonder handig op het Auteur-systeem. U wilt zoveel cache plaatsen als u in de browser kunt om de bewerkervaring te verbeteren. Helaas, de duurste middelen, de HTML- pagina&#39;s kunnen niet in het voorgeheugen worden opgeslagen... zij worden verondersteld om regelmatig op de auteur te veranderen.
 
-De granietbibliotheken, die AEM UI vormen, kunnen voor behoorlijk een hoeveelheid tijd in het voorgeheugen ondergebracht worden. U kunt uw sites ook in de cache plaatsen van statische bestanden (lettertypen, CSS en JavaScript) in de browser. Zelfs afbeeldingen in `/content/dam` kunnen gewoonlijk ongeveer 15 minuten in cache worden geplaatst, omdat ze niet zo vaak worden gewijzigd als tekst die op de pagina&#39;s wordt gekopieerd. Afbeeldingen worden niet interactief bewerkt in AEM. Ze worden eerst bewerkt en goedgekeurd voordat ze naar AEM worden geüpload. U kunt dus aannemen dat deze niet zo vaak als tekst veranderen.
+De granietbibliotheken, die AEM UI vormen, kunnen voor behoorlijk een hoeveelheid tijd in het voorgeheugen ondergebracht worden. U kunt uw sites ook in de cache plaatsen van statische bestanden (lettertypen, CSS en JavaScript) in de browser. Even afbeeldingen in `/content/dam` U kunt doorgaans ongeveer 15 minuten in cache plaatsen, omdat deze niet zo vaak worden gewijzigd als tekst die u op de pagina&#39;s kopieert. Afbeeldingen worden niet interactief bewerkt in AEM. Ze worden eerst bewerkt en goedgekeurd voordat ze naar AEM worden geüpload. U kunt dus aannemen dat deze niet zo vaak als tekst veranderen.
 
 In cache plaatsen van UI-bestanden, bestanden en afbeeldingen in uw sitemenu kan het opnieuw laden van pagina&#39;s aanzienlijk versnellen wanneer u in de bewerkingsmodus werkt.
 
@@ -1420,15 +1420,15 @@ u zou willen hebben,
 
 U moet die afbeelding implementeren op AEM, omdat AEM moet weten hoe koppelingen moeten worden gerenderd volgens de ingekorte indeling.
 
-Vertrouw echter niet alleen op AEM. Als u dit doet, zou u paden als `/home.html` in de hoofdmap van uw cache hebben. Is dat het &quot;huis&quot; voor de Fins, Duitsers of de Canadese website? En als er een dossier `/home.html` in de Verzender is, hoe weet de Verzender dat dit moet ongeldig worden gemaakt wanneer een ongeldigingsverzoek voor `/content/brand/fi/fi/home` binnen komt.
+Vertrouw echter niet alleen op AEM. Als u dat doet, hebt u paden zoals `/home.html` in de hoofdmap van uw cache. Is dat het &quot;huis&quot; voor de Fins, Duitsers of de Canadese website? En als er een bestand is `/home.html` in de Dispatcher, hoe weet de Dispatcher dat dit ongeldig moet worden gemaakt wanneer een verzoek tot nietigverklaring `/content/brand/fi/fi/home` komt binnen.
 
 We hebben een project gezien dat voor elk domein aparte documenten had. Het was een nachtmerrie om fouten op te sporen en te onderhouden - en we hebben het eigenlijk nooit perfect gezien.
 
-We kunnen de problemen oplossen door de cache te herstructureren. We hadden één docroot voor alle domeinen en validatieverzoeken konden 1:1 worden afgehandeld terwijl alle bestanden op de server met `/content` begonnen.
+We kunnen de problemen oplossen door de cache te herstructureren. We hadden één docroot voor alle domeinen, en aanvragen voor validatie konden 1:1 worden afgehandeld omdat alle bestanden op de server begonnen waren met `/content`.
 
-Het afbreekpunt was ook heel eenvoudig.  AEM gegenereerde afgebroken koppelingen vanwege een configuratie volgens `/etc/map`.
+Het afbreekpunt was ook heel eenvoudig.  AEM gegenereerde afgebroken koppelingen vanwege een configuratie volgens regels in `/etc/map`.
 
-Nu wanneer een verzoek `/home.html` de Dispatcher raakt, eerste dat gebeurt is het toepassen van herschrijft regel die intern de weg uitbreidt.
+Nu wanneer een verzoek `/home.html` De Dispatcher raakt, het eerste ding dat gebeurt is het toepassen van een herschrijfregel die intern het pad uitbreidt.
 
 Die regel was opstelling statisch in elke gastheerconfiguratie. Eenvoudig gezegd, de regels leken er zo uit,
 
@@ -1438,7 +1438,7 @@ Die regel was opstelling statisch in elke gastheerconfiguratie. Eenvoudig gezegd
   RewriteRule "^(.\*\.html)" "/content/shiny-brand/finland/fi/$1"
 ```
 
-In het bestandssysteem hebben we nu eenvoudige `/content`-gebaseerde paden, die ook op de Auteur en Publiceren worden gevonden - wat veel foutopsporing heeft geholpen. Om nog maar te zwijgen van de correcte ongeldigverklaring - dat was geen probleem meer.
+In het bestandssysteem hebben we nu duidelijk `/content`Op -gebaseerde wegen, die op Auteur en Publish ook worden gevonden - die het zuiveren veel hielpen. Om nog maar te zwijgen van de correcte ongeldigverklaring - dat was geen probleem meer.
 
 Dat deden we alleen voor &#39;zichtbare&#39; URL&#39;s, URL&#39;s die worden weergegeven in de URL-sleuf van de browser. URL&#39;s voor afbeeldingen waren bijvoorbeeld nog steeds zuivere URL&#39;s met de naam &quot;/content&quot;. We zijn van mening dat het verfraaien van de &#39;hoofd&#39;-URL voldoende is voor optimalisatie van zoekprogramma&#39;s.
 
@@ -1458,13 +1458,13 @@ Het hebben van één gemeenschappelijke docroot had ook een andere aardige eigen
 
 In AEM klassen leert u hoe u een fouthandler kunt programmeren in Sling. Dit is niet zo anders dan het schrijven van een gewone sjabloon. Je schrijft gewoon een sjabloon in JSP of HTML, toch?
 
-Ja, maar dat is alleen het AEM. Onthoud: de verzender plaatst geen `404 – not found`- of `500 – internal server error`-reacties in de cache.
+Ja, maar dat is alleen het AEM. Onthoud: de Dispatcher slaat geen cache op `404 – not found` of `500 – internal server error` reacties.
 
 Als u deze pagina&#39;s dynamisch rendert bij elke (mislukte) aanvraag, hebt u een onnodige hoge belasting op de publicatiesystemen.
 
 Wat wij nuttig vonden is om de volledige foutenpagina niet terug te geven wanneer een fout voorkomt maar slechts een super vereenvoudigde en kleine - zelfs statische versie van die pagina, zonder enige versieringen of logica.
 
-Dit is natuurlijk niet wat de klant zag. In de Dispatcher hebben we `ErrorDocuments` als volgt geregistreerd:
+Dit is natuurlijk niet wat de klant zag. In de Dispatcher hebben we ons geregistreerd `ErrorDocuments` zoals:
 
 ```
 ErrorDocument 404 "/content/shiny-brand/fi/fi/edocs/error-404.html"
@@ -1475,9 +1475,9 @@ Het AEM systeem kon de Dispatcher laten weten dat er iets mis was, en de Dispatc
 
 Hier moeten twee dingen worden vermeld.
 
-Ten eerste is `error-404.html` altijd dezelfde pagina. Er is dus geen individueel bericht zoals &quot;Uw zoekopdracht naar &quot;_produkten_&quot; heeft geen resultaat opgeleverd&quot;. Daar kunnen we gemakkelijk mee leven.
+Ten eerste: `error-404.html` is altijd dezelfde pagina. Er is dus geen individueel bericht zoals &quot;Je zoekopdracht naar &quot;_producten_&quot; geen resultaat heeft opgeleverd&quot;. Daar kunnen we gemakkelijk mee leven.
 
-Ten tweede... wel, als we een interne serverfout zien - of nog erger als we een onderbreking van het AEM tegenkomen, is er geen manier om AEM te vragen een foutenpagina terug te geven, toch? Het noodzakelijke verdere verzoek zoals bepaald in `ErrorDocument` richtlijn zou ook ontbreken. We hebben dit probleem omzeild door een uitsnijdtaak uit te voeren waarmee de foutpagina&#39;s periodiek via `wget` van de gedefinieerde locaties worden opgehaald en opgeslagen in statische bestandslocaties die zijn gedefinieerd in de `ErrorDocuments`-instructie.
+Ten tweede... wel, als we een interne serverfout zien - of nog erger als we een onderbreking van het AEM tegenkomen, is er geen manier om AEM te vragen een foutenpagina terug te geven, toch? Het noodzakelijke volgende verzoek zoals bepaald in `ErrorDocument` richtlijn zou ook mislukken . We hebben dit probleem opgelost door een tussentaak uit te voeren die de foutpagina&#39;s periodiek van de gedefinieerde locaties zou ophalen via `wget` en sla deze op in statische bestandslocaties die in het dialoogvenster `ErrorDocuments` richtlijn.
 
 **Verwijzingen**
 
@@ -1499,12 +1499,12 @@ En natuurlijk kun je je eigen mix van alle drie benaderingen toepassen.
 
 >[!NOTE]
 >
->Voor dit patroon is een _Gateway_ vereist die _intercepts_ elke aanvraag onderschept en de werkelijke _authentication_ uitvoert - aanvragen aan de Dispatcher afgeeft of weigert. Als uw SSO systeem _authenticator_ is, dat slechts de identiteit van een gebruiker vestigt u Optie 3 moet uitvoeren. Als u termen als &quot;SAML&quot;of &quot;OAauth&quot;in het handboek van uw SSO systeem leest - dat is een sterke indicator die u Optie 3 moet uitvoeren.
+>Voor dit patroon is een _Gateway_ dat _onderscheppingen_ elke aanvraag en voert de feitelijke _autorisatie_ - het verlenen of weigeren van verzoeken aan de verzender. Als uw SSO-systeem een _authenticator_, dat slechts de identiteit van een gebruiker vestigt u Optie 3 moet uitvoeren. Als u termen als &quot;SAML&quot;of &quot;OAauth&quot;in het handboek van uw SSO systeem leest - dat is een sterke indicator die u Optie 3 moet uitvoeren.
 
 
 **Optie 2**. &quot;Niet in cache plaatsen&quot; is over het algemeen een slecht idee. Als u zo gaat, zorg ervoor de hoeveelheid verkeer en het aantal gevoelige middelen die worden uitgesloten klein zijn. Of zorg ervoor dat er een cache in het geheugen is geïnstalleerd in het publicatiesysteem, dat de publicatiesystemen de resulterende belasting kunnen verwerken - meer in die in deel III van deze reeks.
 
-**Optie 3**. &#39;Machtigingsgevoelige caching&#39; is een interessante aanpak. De Dispatcher plaatst een bron in de cache - maar voordat deze wordt geleverd, wordt het systeem van de AEM gevraagd of dit mogelijk is. Dit leidt tot een extra verzoek van Dispatcher aan Publish - maar het bespreekt gewoonlijk het Publish systeem van het opnieuw teruggeven van een pagina als het reeds in het voorgeheugen ondergebracht is. Deze aanpak vereist echter enige aangepaste implementatie. Hier vindt u details in het artikel [Machtigingsgevoelige caching](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
+**Optie 3**. &#39;Machtigingsgevoelige caching&#39; is een interessante aanpak. De Dispatcher plaatst een bron in de cache - maar voordat deze wordt geleverd, wordt het systeem van de AEM gevraagd of dit mogelijk is. Dit leidt tot een extra verzoek van Dispatcher aan Publish - maar het bespreekt gewoonlijk het Publish systeem van het opnieuw teruggeven van een pagina als het reeds in het voorgeheugen ondergebracht is. Deze aanpak vereist echter enige aangepaste implementatie. Meer informatie vindt u hier in het artikel [Machtigingsgevoelige caching](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
 
 **Verwijzingen**
 
@@ -1514,7 +1514,7 @@ En natuurlijk kun je je eigen mix van alle drie benaderingen toepassen.
 
 Als u regelmatig kort na elkaar ongeldig maakt - bijvoorbeeld door een boomactivering of uit eenvoudige noodzaak om uw inhoud up-to-date te houden, kan het gebeuren dat u de cache voortdurend leegmaakt en dat uw bezoekers bijna altijd een lege cache raken.
 
-In het onderstaande diagram ziet u een mogelijke timing bij het openen van één pagina.  Het probleem wordt natuurlijk alleen maar erger als het aantal verschillende gevraagde pagina&#39;s groter wordt.
+In het onderstaande diagram ziet u een mogelijke timing bij het openen van één pagina.  Het probleem wordt natuurlijk alleen maar groter als het aantal verschillende gevraagde pagina&#39;s groter wordt.
 
 ![Frequente activeringen die voor het grootste deel van de tijd tot een ongeldige cache leiden](assets/chapter-1/frequent-activations.png)
 
@@ -1522,19 +1522,19 @@ In het onderstaande diagram ziet u een mogelijke timing bij het openen van één
 
 <br> 
 
-Om het probleem van deze &quot;geheime voorgeheugenongeldigingsonweer&quot;te verlichten zoals het soms wordt geroepen, kunt u minder rigoureus over de `statfile` interpretatie zijn.
+Om het probleem van deze &quot;geheime voorgeheugenongeldigingsonweer&quot;te verlichten zoals het soms wordt geroepen, kunt u minder rigoureus over zijn `statfile` interpretatie.
 
-U kunt de Dispatcher instellen om een `grace period` voor automatische validatie te gebruiken. Dit zou intern wat extra tijd aan `statfiles` wijzigingsdatum toevoegen.
+U kunt de Dispatcher instellen op `grace period` voor automatische ongeldigmaking. Dit zou intern wat extra tijd toevoegen aan `statfiles` wijzigingsdatum.
 
-Stel dat uw `statfile` vandaag om 12:00 uur een wijzigingstijd heeft en dat uw `gracePeriod` is ingesteld op 2 minuten. Vervolgens worden alle automatisch ongeldig gemaakte bestanden beschouwd als geldig om 12.01 en 12.02 uur. Ze worden na 12:02 opnieuw gerenderd.
+Laten we zeggen, jouw `statfile` heeft een wijzigingstijd van vandaag 12:00 en uw `gracePeriod` wordt ingesteld op 2 minuten. Vervolgens worden alle automatisch ongeldig gemaakte bestanden beschouwd als geldig om 12.01 en 12.02 uur. Ze worden na 12:02 opnieuw gerenderd.
 
-De referentieconfiguratie stelt om een goede reden een `gracePeriod` van twee minuten voor. Je zou kunnen denken: &quot;Twee minuten? Dat is bijna niets. Ik kan gemakkelijk 10 minuten wachten tot de inhoud verschijnt...&quot;.  Dus je zou geneigd kunnen zijn om een langere periode in te stellen - laten we zeggen 10 minuten, ervan uitgaande dat je inhoud tenminste na deze 10 minuten verschijnt.
+In de referentieconfiguratie wordt een `gracePeriod` van twee minuten om een goede reden. Je zou kunnen denken: &quot;Twee minuten? Dat is bijna niets. Ik kan gemakkelijk 10 minuten wachten tot de inhoud verschijnt...&quot;.  Dus je zou geneigd kunnen zijn om een langere periode in te stellen - laten we zeggen 10 minuten, ervan uitgaande dat je inhoud tenminste na deze 10 minuten verschijnt.
 
 >[!WARNING]
 >
->Zo werkt `gracePeriod` niet. De respijtperiode is _niet_ de tijd waarna een document waarschijnlijk ongeldig zal worden gemaakt, maar een tijdskader geen ongeldigverklaring gebeurt. Elke volgende ongeldigmaking die binnen dit kader _valt verlengt_ het tijdkader - dit kan oneindig lang zijn.
+>Dit is niet hoe `gracePeriod` werkt. De respijtperiode is _niet_ de tijd waarna een document waarschijnlijk ongeldig wordt gemaakt, maar er vindt geen ongeldigverklaring plaats binnen een bepaalde termijn. Elke volgende ongeldigmaking die binnen dit kader valt _verlenging_ het tijdsbestek - dit kan oneindig lang zijn .
 
-Laten we laten zien hoe `gracePeriod` eigenlijk werkt met een voorbeeld:
+Laten we illustreren hoe `gracePeriod` werkt eigenlijk met een voorbeeld:
 
 Stel dat u een mediasite gebruikt en dat uw bewerkingspersoneel om de vijf minuten regelmatig inhoud bijwerkt. U kunt instellen dat voor de evaluatieperiode 5 minuten nodig zijn.
 
@@ -1546,7 +1546,7 @@ Om 12.00 uur beginnen we met een kort voorbeeld.
 
 12:05 - Een andere redacteur publiceert zijn artikel - het verlengen van de respijttijd met een andere respijtperiode tot 12:10.
 
-En zo verder... de inhoud is nooit ongeldig. Elke ongeldigverklaring *binnen* de respijtperiode verlengt effectief de respijttijd. De `gracePeriod` is ontworpen om de invalidatie-storm te weerstaan... maar u moet uiteindelijk de regen in gaan... dus, houd de `gracePeriod` aanzienlijk kort om te voorkomen dat u zich voor altijd in de schuilplaats verbergt.
+En zo verder... de inhoud is nooit ongeldig. Elke ongeldigmaking *binnen* de respijtperiode verlengt de respijtperiode daadwerkelijk. De `gracePeriod` is ontworpen om de invalidatie-storm te weerstaan... maar je moet uiteindelijk de regen in gaan... dus, houd de `gracePeriod` aanzienlijk korter om te voorkomen dat ze zich voor altijd in de schuilplaats schuilhouden.
 
 #### Een deterministische respijtperiode
 
@@ -1558,7 +1558,7 @@ Het alternatief is als volgt: Alleen ongeldig maken met vaste tijdsintervallen. 
 
 De implementatie zou er als volgt uitzien:
 
-U gebruikt een &#39;Aangepast validatiescript&#39; (zie verwijzing) dat wordt uitgevoerd nadat de validatie is uitgevoerd. Dit manuscript zou `statfile's` laatste wijzigingsdatum lezen en het tot de volgende intervalstop afronden. Met de Unix-shell-opdracht `touch --time` kunt u een tijd opgeven.
+U gebruikt een &#39;Aangepast validatiescript&#39; (zie verwijzing) dat wordt uitgevoerd nadat de validatie is uitgevoerd. Met dit script wordt het `statfile's` laatste wijzigingsdatum en afronden tot aan de volgende intervalstop. De shell-opdracht Unix `touch --time`, laten we u een tijd opgeven.
 
 Als u bijvoorbeeld de respijtperiode instelt op 30 seconden, wordt de datum van de laatste wijziging van het bestand afgerond naar de volgende 30 seconden. De verzoeken van de ongeldigverklaring die binnen tussen enkel plaatsen de zelfde volgende volledige 30 sec gebeuren.
 
@@ -1592,7 +1592,7 @@ Aangezien nu het geheime voorgeheugen ongeldig is, door:sturen alle verzoeken aa
 
 *Parallelle verzoeken aan zelfde middel op leeg geheime voorgeheugen: Verzoeken worden doorgestuurd naar Publiceren*
 
-Met automatisch opnieuw ophalen kunt u dat tot op zekere hoogte beperken. De meeste ongeldig gemaakte pagina&#39;s worden na automatische ongeldigmaking fysiek opgeslagen op de Dispatcher. Ze zijn alleen _beschouwd als_-schaal. _Met Automatisch_ vernieuwen wordt bedoeld dat u deze stijlpagina&#39;s nog een paar seconden lang beschikbaar stelt terwijl u  _één_ enkele voorwaarde voor het publicatiesysteem instelt om de inhoud van de schaal opnieuw op te halen:
+Met automatisch opnieuw ophalen kunt u dat tot op zekere hoogte beperken. De meeste ongeldig gemaakte pagina&#39;s worden na automatische ongeldigmaking fysiek opgeslagen op de Dispatcher. Ze zijn alleen _beschouwd_ steen. _Automatisch opnieuw plaatsen_ betekent dat u deze verouderde pagina&#39;s nog een paar seconden kunt bedienen tijdens het starten _één_ verzoek aan het publicatiesysteem om de inhoud van de schaal opnieuw op te halen:
 
 ![Ophaalbare inhoud leveren terwijl opnieuw wordt opgehaald op de achtergrond](assets/chapter-1/fetching-background.png)
 
@@ -1637,7 +1637,7 @@ Als u in de cachemap van uw Dispatcher kijkt, ziet u tijdelijke bestanden gemark
 
 ### Het publicatiesysteem beveiligen
 
-Dispatcher geeft een beetje extra veiligheid door het Publish systeem tegen verzoeken te beschermen die slechts voor onderhoudsdoeleinden bestemd zijn. Bijvoorbeeld, wilt u niet u `/crx/de` of `/system/console` URLs aan het publiek blootstellen.
+Dispatcher geeft een beetje extra veiligheid door het Publish systeem tegen verzoeken te beschermen die slechts voor onderhoudsdoeleinden bestemd zijn. U wilt u bijvoorbeeld niet blootstellen `/crx/de` of `/system/console` URL&#39;s naar het publiek.
 
 Het heeft geen nadelige gevolgen als een firewall van de Webtoepassing (WAF) in uw systeem wordt geïnstalleerd. Maar dat voegt een aanzienlijk deel toe aan uw begroting en niet alle projecten bevinden zich in een situatie waarin ze zich kunnen veroorloven en - laten we het niet vergeten - een WAF kunnen exploiteren en onderhouden.
 
@@ -1672,7 +1672,7 @@ U kunt de binding van de handler in de eerste plaats beperken. `SetHandler` bind
 
 Als u dit doet, vergeet niet altijd om de verzender-manager aan de ongeldigverklaring URL van de Verzender te binden - anders zult u geen verzoeken van AEM aan de Verzender kunnen verzenden.
 
-Een ander alternatief voor het gebruik van de Dispatcher als filter is het instellen van filterrichtlijnen in de `dispatcher.any`
+Een ander alternatief voor het gebruik van de Dispatcher als filter is het instellen van filterrichtlijnen in het dialoogvenster `dispatcher.any`
 
 ```
 /filter {
@@ -1712,13 +1712,13 @@ Gelukkig is dat veranderd in de latere versies van de Dispatcher. Nu kunt u ook 
 
 Zie je het verschil?
 
-Versie B gebruikt enkele aanhalingstekens `'` om een _reguliere-expressiepatroon_ te markeren. &quot;Willekeurig teken&quot; wordt uitgedrukt door `.*` te gebruiken.
+Versie B gebruikt enkele aanhalingstekens `'` om een _reguliere-expressiepatroon_. &quot;Willekeurig teken&quot; wordt uitgedrukt door `.*`.
 
-_Globaliserende patronen_ maken daarentegen gebruik van dubbele aanhalingstekens  `"` en u kunt alleen eenvoudige plaatsaanduidingen gebruiken, zoals  `*`.
+_Globale patronen_, in tegenstelling tot dubbele aanhalingstekens `"` en u kunt alleen eenvoudige plaatsaanduidingen gebruiken, zoals `*`.
 
 Als u dat verschil kent, is het triviaal - maar als niet, kunt u de citaten gemakkelijk mengen en een zonnige namiddag doorbrengen zuiverend uw configuratie. Nu wordt u gewaarschuwd.
 
-&quot;Ik herken `'/url'` in config.. Maar wat is dat `'/glob'` in het filter dat u vraagt?
+&quot;Ik herken `'/url'` in de configuratie ... Maar wat is dat? `'/glob'` in het filter dat u wellicht vraagt?
 
 Die richtlijn vertegenwoordigt de volledige verzoekkoord, met inbegrip van de methode en de weg. Het kan goed zijn
 
@@ -1763,7 +1763,7 @@ Zo:
 
 Opmerking: u kunt regex- en glob-expressies op een regel combineren.
 
-Een laatste woord over de &quot;regelnummers&quot; zoals `/005` vóór elke definitie,
+Een laatste woord over de regelnummers zoals `/005` vóór elke definitie
 
 Ze hebben helemaal geen zin! U kunt willekeurige noemers voor regels kiezen. Het gebruik van getallen vereist niet veel moeite om na te denken over een schema, maar houd er rekening mee dat de volgorde van belang is.
 
@@ -1837,7 +1837,7 @@ U zult waarschijnlijk een nieuwe regel toevoegen aan een van de groepen - of mis
 
 >[!WARNING]
 >
->De verfijndere montages verdelen het filtreren regels in een aantal dossiers, die door het belangrijkste `dispatcher.any` configuratiedossier worden omvat. Een nieuw bestand introduceert echter geen nieuwe naamruimte. Dus als je een regel &quot;001&quot; hebt in het ene bestand en &quot;001&quot; in het andere, krijg je een fout. Nog meer reden om semantisch sterke namen te bedenken.
+>Geavanceerde instellingen splitsen filterregels in een aantal bestanden, die worden opgenomen in het hoofdbestand `dispatcher.any` configuratiebestand. Een nieuw bestand introduceert echter geen nieuwe naamruimte. Dus als je een regel &quot;001&quot; hebt in het ene bestand en &quot;001&quot; in het andere, krijg je een fout. Nog meer reden om semantisch sterke namen te bedenken.
 
 **Verwijzingen**
 
@@ -1873,17 +1873,17 @@ CQ-Handle: <path-pattern>
 
 `CQ-Action: <action>` - Wat moet er gebeuren? `<action>` ofwel:
 
-* `Activate:` verwijderen  `/path-pattern.*`
-* `Deactive:` verwijderen  `/path-pattern.*`
-EN verwijderen  `/path-pattern/*`
-* `Delete:`   verwijderen  `/path-pattern.*`
+* `Activate:` verwijderen `/path-pattern.*`
+* `Deactive:` delete `/path-pattern.*`
+EN verwijderen `/path-pattern/*`
+* `Delete:`   delete `/path-pattern.*`
 EN verwijderen 
 `/path-pattern/*`
 * `Test:`   Retourneer &quot;ok&quot; maar doe niets
 
-`CQ-Handle: <path-pattern>` - Het pad naar de inhoudsbron dat ongeldig moet worden gemaakt. `<path-pattern>` is in feite een &quot;pad&quot; en geen &quot;patroon&quot;.
+`CQ-Handle: <path-pattern>` - Het pad naar de inhoudsbron dat ongeldig moet worden gemaakt. Opmerking: `<path-pattern>` is in feite een &quot;pad&quot; en geen &quot;patroon&quot;.
 
-`CQ-Action-Scope: ResourceOnly` - Optioneel: Als deze header is ingesteld, wordt het  `.stat` bestand niet gewijzigd.
+`CQ-Action-Scope: ResourceOnly` - Optioneel: Als deze koptekst is ingesteld, wordt `.stat` wordt niet aangeraakt.
 
 ```
 [Content-Type: Text/Plain]
@@ -1907,15 +1907,13 @@ Geef een lijst weer van de URL&#39;s die u na de validatie direct opnieuw wilt o
 
 Een goed overzicht en een introductie van het in cache plaatsen van Dispatcher: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 
-Tips en trucs optimaliseren: [https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html#use-ttls](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html#use-ttls)
-
 Documentatie van de verzender met alle richtlijnen die worden uitgelegd: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
 Enkele veelgestelde vragen: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
 
 Opname van een webinar over Dispatcher-optimalisatie - sterk aanbevolen: [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 
-Presentatie &quot;De ondergewaardeerde kracht van inhoudvalidatie&quot;, conferentie &quot;adjustTo()&quot; in Potsdam 2018 [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
+Presentatie &quot;De ondergewaardeerde kracht van de invalidatie van inhoud&quot;, conferentie &quot;adjustTo()&quot; in Potsdam 2018 [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
 
 In cache geplaatste pagina&#39;s ongeldig maken van AEM: [https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
 

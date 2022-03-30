@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
-source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,9 @@ ht-degree: 0%
 # Reader-extensies toepassen
 
 Met Reader Extensions kunt u gebruiksrechten op PDF-documenten manipuleren. Gebruiksrechten hebben betrekking op functionaliteit die wel beschikbaar is in Acrobat, maar niet in Adobe Reader. De functionaliteit die wordt beheerd door Reader Extensions omvat de mogelijkheid om opmerkingen toe te voegen aan een document, formulieren in te vullen en het document op te slaan. PDF-documenten waaraan gebruiksrechten zijn toegevoegd, worden documenten waarvoor rechten zijn ingeschakeld genoemd. Een gebruiker die een voor rechten geschikt PDF-document in Adobe Reader opent, kan de bewerkingen uitvoeren die voor dat document zijn ingeschakeld.
-Om dit vermogen te testen, kunt u dit [verbinding](https://forms.enablementadobe.com/content/forms/af/applyreaderextensions.html) proberen.
 
 Voor dit gebruiksgeval moeten we het volgende doen:
-* [Voeg het certificaat van de Uitbreidingen van de Reader ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) aan  `fd-service` gebruiker toe.
+* [Het Reader Extensions-certificaat toevoegen](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) tot `fd-service` gebruiker.
 
 ## Aangepaste OSGi-service maken
 
@@ -195,7 +194,7 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
 Voer de volgende stappen uit om dit op uw lokale server te testen:
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Download en installeer de ares.ares.core-ares Bundle](assets/ares.ares.core-ares.jar). Dit heeft de douanedienst en servlet om gebruiksrechten toe te passen en pdf terug te stromen
+1. [De bundel ares.ares.core-ares downloaden en installeren](assets/ares.ares.core-ares.jar). Dit heeft de douanedienst en servlet om gebruiksrechten toe te passen en pdf terug te stromen
 1. [Clientbibliotheken importeren en naar Aangepast verzenden](assets/applyaresdemo.zip)
 1. [Het adaptieve formulier importeren](assets/applyaresform.zip)
 1. Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. Zorg ervoor dat de alias &quot;ares&quot; is.

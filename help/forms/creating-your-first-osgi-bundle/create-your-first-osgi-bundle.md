@@ -6,13 +6,13 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
-
 
 # Maak uw eerste OSGi-bundel
 
@@ -21,7 +21,7 @@ Een bundel OSGi is een Java™ archiefdossier dat code Java, middelen, en manife
 
 ## JDK installeren
 
-Installeer de ondersteunde versie van JDK. Ik heb JDK1.8 gebruikt. Zorg ervoor u **JAVA_HOME** in uw milieuvariabelen hebt toegevoegd en aan de wortelomslag van uw installatie richt JDK.
+Installeer de ondersteunde versie van JDK. Ik heb JDK1.8 gebruikt. Zorg ervoor dat u hebt toegevoegd **JAVA_HOME** in uw omgevingsvariabelen en verwijst naar de hoofdmap van uw JDK-installatie.
 De %JAVA_HOME%/bin toevoegen aan het pad
 
 ![gegevensbron](assets/java-home.JPG)
@@ -31,7 +31,7 @@ De %JAVA_HOME%/bin toevoegen aan het pad
 
 ### Uw JDK-versie testen
 
-Open een nieuw opdrachtpromptvenster en typ: `java -version`. U zou de versie van JDK moeten terugkrijgen die door `JAVA_HOME` variabele wordt geïdentificeerd
+Open een nieuw opdrachtpromptvenster en typ: `java -version`. U moet de JDK-versie die door de `JAVA_HOME` variabele
 
 ![gegevensbron](assets/java-version.JPG)
 
@@ -39,34 +39,34 @@ Open een nieuw opdrachtpromptvenster en typ: `java -version`. U zou de versie va
 
 Maven is een tool voor automatisering van build die voornamelijk wordt gebruikt voor Java-projecten. Voer de volgende stappen uit om te installeren op uw lokale systeem.
 
-* Creeer een omslag genoemd `maven` in uw aandrijving van C
-* Download het [binaire ZIP-archief](https://maven.apache.org/download.cgi)
+* Een map maken met de naam `maven` in uw C-station
+* Download de [binair ZIP-archief](https://maven.apache.org/download.cgi)
 * De inhoud van het ZIP-archief extraheren naar `c:\maven`
-* Maak een omgevingsvariabele met de naam `M2_HOME` met de waarde `C:\maven\apache-maven-3.6.0`. In mijn geval is de **mvn** versie 3.6.0. Op het moment dat dit artikel wordt geschreven, is de nieuwste versie 3.6.3
-* `%M2_HOME%\bin` toevoegen aan het pad
+* Een omgevingsvariabele maken met de naam `M2_HOME` met een waarde van `C:\maven\apache-maven-3.6.0`. In mijn geval **mvn** versie is 3.6.0. Op het moment dat dit artikel wordt geschreven, is de nieuwste versie 3.6.3
+* Voeg de `%M2_HOME%\bin` naar uw pad
 * Uw wijzigingen opslaan
-* Open een nieuwe bevelherinnering en typ in `mvn -version`. U zou **mvn** versie moeten zien zoals aangetoond in het hieronder ontsproten scherm
+* Open een nieuwe opdrachtprompt en typ in `mvn -version`. U moet de **mvn** versie weergegeven zoals weergegeven in onderstaande schermafbeelding
 
 ![gegevensbron](assets/mvn-version.JPG)
 
 ## Settings.xml
 
-Met een Maven `settings.xml`-bestand worden waarden gedefinieerd die uitvoering via Maven op verschillende manieren configureren. Meestal wordt het gebruikt om een lokale opslaglocatie, alternatieve externe opslagservers en verificatiegegevens voor privéopslagruimten te definiëren.
+A Maven `settings.xml` In dit bestand worden waarden gedefinieerd die de uitvoering van Maven op verschillende manieren configureren. Meestal wordt het gebruikt om een lokale opslaglocatie, alternatieve externe opslagservers en verificatiegegevens voor privéopslagruimten te definiëren.
 
-Naar `C:\Users\<username>\.m2 folder` navigeren
-Pak de inhoud van het bestand [settings.zip](assets/settings.zip) uit en plaats dit in de map `.m2`.
+Navigeren naar `C:\Users\<username>\.m2 folder`
+De inhoud van [settings.zip](assets/settings.zip) en plaatst deze in het `.m2` map.
 
 ## Verduistering installeren
 
-De nieuwste versie van [eclipse](https://www.eclipse.org/downloads/) installeren
+De nieuwste versie van [verduisteren](https://www.eclipse.org/downloads/)
 
 ## Uw eerste project maken
 
 Archetype is een Maven project sjabloonkit. Een archetype wordt gedefinieerd als een origineel patroon of model waaruit alle andere dingen van dezelfde soort zijn gemaakt. De naam past bij de manier waarop we proberen een systeem te bieden dat een consistente manier biedt om Maven-projecten te genereren. Archetype zal auteurs helpen Maven projectmalplaatjes voor gebruikers tot stand brengen, en voorziet gebruikers van de middelen om geparameterized versies van die projectmalplaatjes te produceren.
 Voer de volgende stappen uit om uw eerste gemaakte project te maken:
 
-* Creeer een nieuwe omslag genoemd `aemformsbundles` in uw aandrijving van C
-* Een opdrachtprompt openen en naar `c:\aemformsbundles` navigeren
+* Een nieuwe map maken met de naam `aemformsbundles` in uw C-station
+* Een opdrachtprompt openen en naar `c:\aemformsbundles`
 * Voer het volgende bevel in uw bevelherinnering in werking
 * `mvn archetype:generate  -DarchetypeGroupId=com.adobe.granite.archetypes  -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=19`
 
@@ -84,32 +84,31 @@ Als alles goed gaat zou u een bericht van het bouwstijlsucces in uw bevelvenster
 
 ## Overschrijvingsproject maken van uw in kaart gebrachte project
 
-Wijzig de werkmap in `learningaemforms`.
-`mvn eclipse:eclipse` uitvoeren vanaf de opdrachtregel
-Het bovenstaande bevel leest uw poemdossier en leidt tot projecten Eclipse met correcte meta-gegevens zodat Eclipse projecttypes, verhoudingen, klassenpad, enz. zal begrijpen.
+Wijzig uw werkmap in `learningaemforms`.
+Uitvoeren `mvn eclipse:eclipse` vanaf de opdrachtregel Met de bovenstaande opdracht leest u uw pombestand en maakt u Eclipse-projecten met de juiste metagegevens, zodat Eclipse de projecttypen, relaties, klassenpad enzovoort begrijpt.
 
 ## Het project in een ovaal importeren
 
-**Eclipse** starten
+Starten **Eclipse**
 
-Ga naar **Bestand -> Importeren** en selecteer **Bestaande gefinancierde projecten** zoals hier wordt getoond
+Ga naar **Bestand -> Importeren** en selecteert u **Bestaande Maven Projecten** zoals hier getoond
 
 ![gegevensbron](assets/import-mvn-project.JPG)
 
 Klik op Next
 
-Selecteer `c:\aemformsbundles\learningaemform`s door op de knop **Bladeren** te klikken
+Selecteer `c:\aemformsbundles\learningaemform`s door op de knop **Bladeren** knop
 
 ![gegevensbron](assets/select-mvn-project.JPG)
 
 >[!NOTE]
 >U kunt desgewenst de geschikte modules importeren. Selecteer en importeer alleen de kernmodule als u alleen Java-code gaat maken in uw project.
 
-Klik **Voltooien** om het importproces te starten
+Klikken **Voltooien** om het importproces te starten
 
-Project wordt geïmporteerd in Eclipse en er wordt een aantal `learningaemforms.xxxx` mappen weergegeven
+Project wordt geïmporteerd in Eclipse en er wordt een aantal `learningaemforms.xxxx` mappen
 
-Vouw `src/main/java` onder de map `learningaemforms.core` uit. Dit is de map waarin u het grootste deel van uw code gaat schrijven.
+Breid uit `src/main/java` onder de `learningaemforms.core` map. Dit is de map waarin u het grootste deel van uw code gaat schrijven.
 
 ![gegevensbron](assets/learning-core.JPG)
 
@@ -118,7 +117,7 @@ Vouw `src/main/java` onder de map `learningaemforms.core` uit. Dit is de map waa
 
 
 
-Zodra u uw dienst OSGi, of servlet hebt geschreven, zult u uw project moeten bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Raadpleeg [AEMFD Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/) om de juiste client SDK op te nemen in uw Maven-project. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
+Zodra u uw dienst OSGi, of servlet hebt geschreven, zult u uw project moeten bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Zie [AEMFD Client SDK](https://search.maven.org/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliënt SDK in uw Geweven project op te nemen. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder aangegeven.
 
 
 
@@ -136,8 +135,8 @@ Zodra u uw dienst OSGi, of servlet hebt geschreven, zult u uw project moeten bou
 
 Voer de volgende stappen uit om uw project te maken:
 
-* **opdrachtpromptvenster openen**
+* Openen **opdrachtpromptvenster**
 * Ga naar `c:\aemformsbundles\learningaemforms\core`
-* De opdracht `mvn clean install -PautoInstallBundle` uitvoeren
-De bovenstaande opdracht bouwt en installeert de bundel in de AEM server die op `http://localhost:4502` wordt uitgevoerd. De bundel is ook beschikbaar op het bestandssysteem op
-   `C:\AEMFormsBundles\learningaemforms\core\target` en kan worden geïmplementeerd met  [Felix-webconsole](http://localhost:4502/system/console/bundles)
+* De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
+Bovenstaande opdracht bouwt en installeert de bundel op de AEM server waarop `http://localhost:4502`. De bundel is ook beschikbaar op het bestandssysteem op
+   `C:\AEMFormsBundles\learningaemforms\core\target` en kan worden ingezet met behulp van [Felix-webconsole](http://localhost:4502/system/console/bundles)

@@ -6,19 +6,19 @@ topic: SPA
 feature: SPA Editor
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: e900301d-411c-4c02-8443-2a0fa56b65b5
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3116'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelen met de AEM SPA Editor - Hello World-zelfstudie {#developing-with-the-aem-spa-editor-hello-world-tutorial}
 
 >[!WARNING]
 >
-> Deze zelfstudie is **afgekeurd**. Het wordt aanbevolen om: [Aan de slag met de AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html) of [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+> Deze zelfstudie is **verouderd**. Het wordt aanbevolen om: [Aan de slag met de AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html) of [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
 AEM SPA Editor biedt ondersteuning voor contextbewerkingen van een toepassing of SPA van één pagina. Deze zelfstudie is een inleiding op SPA ontwikkeling die moet worden gebruikt met AEM SPA Editor JS SDK. De zelfstudie breidt de app We.Retail Journal uit door een aangepaste Hello World-component toe te voegen. Gebruikers kunnen de zelfstudie voltooien met Reageren of Angulars.
 
@@ -34,15 +34,15 @@ Deze zelfstudie is bedoeld om de stappen te benadrukken die nodig zijn om een SP
 
 U wordt aangeraden de volgende bronnen te controleren voordat u deze zelfstudie start:
 
-* [SPA de Video](spa-editor-framework-feature-video-use.md)  van de Eigenschap van de Redacteur van de Redacteur - een videooverzicht van de SPA Redacteur en de app van het Dagboek.
-* [Zelfstudie](https://reactjs.org/tutorial/tutorial.html)  React.js - Een inleiding tot ontwikkeling met het React-kader.
-* [Zelfstudie](https://angular.io/tutorial)  over angular - Een inleiding tot ontwikkeling met Angular
+* [Video over functies SPA Editor](spa-editor-framework-feature-video-use.md) - Een video-overzicht van de app SPA Editor en We.Retail Journal.
+* [Zelfstudie React.js](https://reactjs.org/tutorial/tutorial.html) - Een inleiding tot ontwikkeling met het React-kader.
+* [Zelfstudie angular](https://angular.io/tutorial) - Een inleiding tot ontwikkeling met Angular
 
 ## Lokale ontwikkelomgeving {#local-dev}
 
 Deze zelfstudie is ontworpen voor:
 
-[Adobe Experience Manager 6.5](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) of  [Adobe Experience Manager 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html) +  [Service Pack 5](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
+[Adobe Experience Manager 6.5](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) of [Adobe Experience Manager 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html) + [Service Pack 5](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 In deze zelfstudie moeten de volgende technologieën en gereedschappen worden geïnstalleerd:
 
@@ -72,14 +72,14 @@ Het basisconcept is om een SPA Component aan een AEM Component in kaart te breng
 
 ![Componenttoewijzing SPA](assets/spa-editor-helloworld-tutorial-use/mapto.png)
 
-Populaire frameworks [React JS](https://reactjs.org/) en [Angular](https://angular.io/) worden vanuit de box ondersteund. Gebruikers kunnen deze zelfstudie voltooien in Angular of Reageren, afhankelijk van welk raamwerk ze het prettigst vinden.
+Populaire frameworks [React JS](https://reactjs.org/) en [Angular](https://angular.io/) worden vanuit het vak ondersteund. Gebruikers kunnen deze zelfstudie voltooien in Angular of Reageren, afhankelijk van welk raamwerk ze het prettigst vinden.
 
 ## Projectinstelling {#project-setup}
 
 SPA ontwikkeling heeft één voet in AEM ontwikkeling, en de andere. Het doel is om SPA ontwikkeling onafhankelijk te laten plaatsvinden, en (meestal) agnostisch aan AEM.
 
 * SPA projecten kunnen onafhankelijk van het AEM project functioneren tijdens de ontwikkeling vooraf.
-* Voor-end bouwstijlhulpmiddelen en technologieën zoals Webpack, NPM, [!DNL Grunt] en [!DNL Gulp]blijven worden gebruikt.
+* Voor-end bouwstijlhulpmiddelen en technologieën zoals Webpack, NPM, [!DNL Grunt] en [!DNL Gulp]blijven gebruiken.
 * Om voor AEM te bouwen, wordt het SPA project gecompileerd en automatisch inbegrepen in het AEM project.
 * Standaard AEM Pakketten die worden gebruikt om de SPA in AEM op te stellen.
 
@@ -89,7 +89,7 @@ SPA ontwikkeling heeft één voet in AEM ontwikkeling, en de andere. Het doel is
 
 Het doel van deze zelfstudie is om de Web.Retail App met een nieuwe component uit te breiden. Begin door de broncode voor de app van het Dagboek te downloaden We.Retail en aan een lokale AEM op te stellen.
 
-1. **** Downloadt de recentste Code van het Dagboek  [We.Retail van GitHub](https://github.com/adobe/aem-sample-we-retail-journal).
+1. **Downloaden** de meest recente [We.Retail Journal-code van GitHub](https://github.com/adobe/aem-sample-we-retail-journal).
 
    U kunt de gegevensopslagruimte ook klonen vanaf de opdrachtregel:
 
@@ -99,7 +99,7 @@ Het doel van deze zelfstudie is om de Web.Retail App met een nieuwe component ui
 
    >[!NOTE]
    >
-   >De zelfstudie werkt tegen de **master**-vertakking met **1.2.1-SNAPSHOT**-versie van het project.
+   >De zelfstudie werkt tegen de **master** vertakken met **1.2.1-MOMENTOPNAME** versie van het project.
 
 1. De volgende structuur moet zichtbaar zijn:
 
@@ -108,11 +108,11 @@ Het doel van deze zelfstudie is om de Web.Retail App met een nieuwe component ui
    Het project bevat de volgende gemaskeerde modules:
 
    * `all`: Hiermee sluit u het hele project in één pakket in en installeert u dit.
-   * `bundles`: Bevat twee OSGi-bundels: komma&#39;s en core die  [!DNL Sling Models] en andere Java-code bevatten.
+   * `bundles`: Bevat twee OSGi-bundels: opmerkingen en kern die [!DNL Sling Models] en andere Java-code.
    * `ui.apps`: bevat de /apps-onderdelen van het project, dat wil zeggen JS &amp; CSS-clientlibs, componenten, specifieke configuraties voor de runmode.
-   * `ui.content`: bevat structurele inhoud en configuraties (`/content`,  `/conf`)
+   * `ui.content`: bevat structurele inhoud en configuraties (`/content`, `/conf`)
    * `react-app`: Wij.Retail Journal React-toepassing. Dit is zowel een module Maven als een webpack project.
-   * `angular-app`: Wij.Retail Journal Angular application. Dit is zowel een [!DNL Maven] module als een webpack project.
+   * `angular-app`: Wij.Retail Journal Angular application. Dit is allebei [!DNL Maven] en een webpack-project.
 
 1. Open een nieuw terminalvenster en voer de volgende opdracht uit om de volledige app te maken en te implementeren in een lokale AEM-instantie die wordt uitgevoerd op [http://localhost:4502](http://localhost:4502).
 
@@ -123,11 +123,7 @@ Het doel van deze zelfstudie is om de Web.Retail App met een nieuwe component ui
 
    >[!NOTE]
    >
-   > In dit project is het Maven-profiel voor het maken en verpakken van het gehele project `autoInstallSinglePackage`
-
-   >[!CAUTION]
-   >
-   > Als u tijdens de build een fout ontvangt, [zorgt u ervoor dat het bestand Maven settings.xml een Adobe Maven Artefactgegevensopslagruimte](https://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html) bevat.
+   > In dit project is het Maven-profiel voor het bouwen en verpakken van het gehele project `autoInstallSinglePackage`
 
 1. Ga naar:
 
@@ -136,19 +132,19 @@ Het doel van deze zelfstudie is om de Web.Retail App met een nieuwe component ui
 
    De Web.Retail Journal App moet worden weergegeven in de AEM Sites-editor.
 
-1. Selecteer in de modus [!UICONTROL Edit] de component die u wilt bewerken en werk de inhoud bij.
+1. In [!UICONTROL Edit] in de modus selecteert u de component die u wilt bewerken en werkt u de inhoud bij.
 
    ![Een component bewerken](assets/spa-editor-helloworld-tutorial-use/editcontent.png)
 
-1. Selecteer het pictogram [!UICONTROL Page Properties] om [!UICONTROL Page Properties] te openen. Selecteer [!UICONTROL Edit Template] om de sjabloon van de pagina te openen.
+1. Selecteer [!UICONTROL Page Properties] pictogram om het [!UICONTROL Page Properties]. Selecteren [!UICONTROL Edit Template] om de sjabloon van de pagina te openen.
 
    ![Menu Pagina-eigenschappen](assets/spa-editor-helloworld-tutorial-use/page-properties.png)
 
-1. In de recentste versie van de Redacteur van de SPA, [Editable malplaatjes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) kunnen op de zelfde manier worden gebruikt zoals met traditionele implementaties van Plaatsen. Dit wordt later opnieuw bekeken met onze aangepaste component.
+1. In de meest recente versie van de SPA Editor, [Bewerkbare sjablonen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) kan op de zelfde manier worden gebruikt zoals met traditionele implementaties van Plaatsen. Dit wordt later opnieuw bekeken met onze aangepaste component.
 
    >[!NOTE]
    >
-   > Alleen AEM 6.5 en AEM 6.4 + **Service Pack 5** ondersteunen bewerkbare sjablonen.
+   > Alleen AEM 6.5 en AEM 6.4 + **Service Pack 5** ondersteuning voor bewerkbare sjablonen.
 
 ## Overzicht van ontwikkeling {#development-overview}
 
@@ -156,8 +152,8 @@ Het doel van deze zelfstudie is om de Web.Retail App met een nieuwe component ui
 
 SPA ontwikkelherhalingen zijn onafhankelijk van AEM. Wanneer de SPA klaar is om te worden ingezet in AEM vinden de volgende stappen op hoog niveau plaats (zoals hierboven geïllustreerd).
 
-1. Het AEM project bouwt wordt aangehaald, dat beurtelings een bouwstijl van het SPA project teweegbrengt. The We.Retail Journal gebruikt de [**frontend-maven-plugin**](https://github.com/eirslett/frontend-maven-plugin).
-1. Met de [**aem-clientlib-generator**](https://www.npmjs.com/package/aem-clientlib-generator) van het SPA project wordt de gecompileerde SPA ingesloten als een AEM clientbibliotheek in het AEM project.
+1. Het AEM project bouwt wordt aangehaald, dat beurtelings een bouwstijl van het SPA project teweegbrengt. Het Wij.Retail Journal gebruikt de [**frontend-maven-plugin**](https://github.com/eirslett/frontend-maven-plugin).
+1. De SPA [**aem-clientlib-generator**](https://www.npmjs.com/package/aem-clientlib-generator) Hiermee sluit u de gecompileerde SPA in als een AEM Client Library in het AEM-project.
 1. Het AEM project produceert een AEM pakket, met inbegrip van de gecompileerde SPA, plus andere ondersteunende AEM code.
 
 ## AEM maken {#aem-component}
@@ -166,11 +162,11 @@ SPA ontwikkelherhalingen zijn onafhankelijk van AEM. Wanneer de SPA klaar is om 
 
 Eerst wordt een AEM gemaakt. De AEM component is verantwoordelijk voor het renderen van de JSON-eigenschappen die door de component React worden gelezen. De AEM component is ook verantwoordelijk voor het opgeven van een dialoogvenster voor alle bewerkbare eigenschappen van de component.
 
-Met [!DNL Eclipse] of andere [!DNL IDE] importeert u het Web.Retail Journal Maven-project.
+Gebruiken [!DNL Eclipse]of andere [!DNL IDE], importeert u het project We.Retail Journal Maven.
 
-1. Werk de reactor **pom.xml** bij om de [!DNL Apache Rat] plug-in te verwijderen. Met deze insteekmodule wordt elk bestand gecontroleerd om er zeker van te zijn dat er een licentieheader is. Voor onze doeleinden hoeven we ons niet bezig te houden met deze functionaliteit.
+1. De reactor bijwerken **pom.xml** om de [!DNL Apache Rat] insteekmodule. Met deze insteekmodule wordt elk bestand gecontroleerd om er zeker van te zijn dat er een licentieheader is. Voor onze doeleinden hoeven we ons niet bezig te houden met deze functionaliteit.
 
-   Verwijder **apache-rate-plugin** in **aem-sample-we-retail-journal/pom.xml**:
+   In **aem-sample-we-retail-journal/pom.xml** remove **apache-rate plug-in**:
 
    ```xml
    <!-- Remove apache-rat-plugin -->
@@ -194,8 +190,8 @@ Met [!DNL Eclipse] of andere [!DNL IDE] importeert u het Web.Retail Journal Mave
        </plugin>
    ```
 
-1. Maak in de module **we-Retail-journaal-content** (`<src>/aem-sample-we-retail-journal/ui.apps`) een nieuw knooppunt onder `ui.apps/jcr_root/apps/we-retail-journal/components` met de naam **helloworld** van het type **cq:Component**.
-1. Voeg de volgende eigenschappen toe aan de **helloworld** component, die in XML (`/helloworld/.content.xml`) hieronder wordt vertegenwoordigd:
+1. In de **we-retail-journaal-content** (`<src>/aem-sample-we-retail-journal/ui.apps`) module een nieuw knooppunt onder maken `ui.apps/jcr_root/apps/we-retail-journal/components` benoemd **hellowereld** van het type **cq:Component**.
+1. Voeg de volgende eigenschappen toe aan de **hellowereld** component, vertegenwoordigd in XML (`/helloworld/.content.xml`) hieronder:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -210,12 +206,12 @@ Met [!DNL Eclipse] of andere [!DNL IDE] importeert u het Web.Retail Journal Mave
 
    >[!NOTE]
    >
-   > Om de Bewerkbare eigenschap van Malplaatjes te illustreren hebben wij opzettelijk `componentGroup="Custom Components"` geplaatst. In een echt project, is het best om het aantal componentengroepen te minimaliseren, zodat zou een betere groep &quot;[!DNL We.Retail Journal]&quot;zijn om de andere inhoudcomponenten aan te passen.
+   > Om de Bewerkbare eigenschap van Malplaatjes te illustreren hebben wij opzettelijk geplaatst `componentGroup="Custom Components"`. In een echt project, is het best om het aantal componentengroepen te minimaliseren, zodat zou een betere groep &quot;[!DNL We.Retail Journal]&quot; om overeen te komen met de andere inhoudscomponenten.
    >
-   > Alleen AEM 6.5 en AEM 6.4 + **Service Pack 5** ondersteunen bewerkbare sjablonen.
+   > Alleen AEM 6.5 en AEM 6.4 + **Service Pack 5** ondersteuning voor Bewerkbare sjablonen.
 
-1. Daarna zal een dialoog worden gecreeerd om voor een douanebericht toe te staan om voor **Hello World** component worden gevormd. Voeg onder `/apps/we-retail-journal/components/helloworld` een knooppuntnaam **cq:dialog** van **nt:unStructured** toe.
-1. Met **cq:dialog** wordt één tekstveld weergegeven waarin tekst doorloopt naar een eigenschap met de naam **[!DNL message]**. Onder het nieuwe **cq:dialog** voegt u de volgende knooppunten en eigenschappen toe, weergegeven in XML hieronder (`helloworld/_cq_dialog/.content.xml`):
+1. Daarna wordt een dialoogvenster gemaakt waarin een aangepast bericht kan worden geconfigureerd voor de **Hallo wereld** component. Beneath `/apps/we-retail-journal/components/helloworld` een knooppuntnaam toevoegen **cq:dialoogvenster** van **nt:ongestructureerd**.
+1. De **cq:dialoogvenster** geeft één tekstveld weer waarin tekst doorloopt naar een eigenschap met de naam **[!DNL message]**. Onder het nieuwe gemaakte **cq:dialoogvenster** Voeg de volgende knooppunten en eigenschappen toe, weergegeven in XML hieronder (`helloworld/_cq_dialog/.content.xml`) :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -268,13 +264,13 @@ Met [!DNL Eclipse] of andere [!DNL IDE] importeert u het Web.Retail Journal Mave
 
    ![bestandsstructuur](assets/spa-editor-helloworld-tutorial-use/updated-with-dialog.png)
 
-   Met de bovenstaande XML-knooppuntdefinitie wordt een dialoogvenster gemaakt met één tekstveld waarmee een gebruiker een &quot;bericht&quot; kan invoeren. Noteer de eigenschap `name="./message"` in het knooppunt `<message />`. Dit is de naam van de eigenschap die wordt opgeslagen in het JCR binnen AEM.
+   Met de bovenstaande XML-knooppuntdefinitie wordt een dialoogvenster gemaakt met één tekstveld waarmee een gebruiker een &quot;bericht&quot; kan invoeren. Let op de eigenschap `name="./message"` binnen de `<message />` knooppunt. Dit is de naam van de eigenschap die wordt opgeslagen in het JCR binnen AEM.
 
 1. Vervolgens wordt een leeg beleidsdialoogvenster gemaakt (`cq:design_dialog`). Het dialoogvenster Beleid is nodig om de component weer te geven in de Sjablooneditor. Voor dit eenvoudige gebruiksgeval wordt het een leeg dialoogvenster.
 
-   Voeg onder `/apps/we-retail-journal/components/helloworld` een knooppuntnaam `cq:design_dialog` van `nt:unstructured` toe.
+   Beneath `/apps/we-retail-journal/components/helloworld` een knooppuntnaam toevoegen `cq:design_dialog` van `nt:unstructured`.
 
-   De configuratie wordt hieronder weergegeven in XML (`helloworld/_cq_design_dialog/.content.xml`)
+   De configuratie wordt hieronder in XML weergegeven (`helloworld/_cq_design_dialog/.content.xml`)
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -289,7 +285,7 @@ Met [!DNL Eclipse] of andere [!DNL IDE] importeert u het Web.Retail Journal Mave
    $ mvn -PautoInstallPackage clean install
    ```
 
-   Controleer in [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/global/components/helloworld) of de component is geïmplementeerd door de map onder `/apps/we-retail-journal/components:` te inspecteren
+   In [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/global/components/helloworld) Controleer of de component is geïmplementeerd door de map onder te inspecteren `/apps/we-retail-journal/components:`
 
    ![Ingevoerde componentenstructuur in CRXDE Lite](assets/spa-editor-helloworld-tutorial-use/updated-component-withdialogs.png)
 
@@ -297,22 +293,22 @@ Met [!DNL Eclipse] of andere [!DNL IDE] importeert u het Web.Retail Journal Mave
 
 **Persona: AEM Developer**
 
-Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL Hello World]-component. In een traditioneel WCM-gebruiksgeval implementeert [!DNL Sling Model] bedrijfslogica en een server-side rendering script (HTL) roept een [!DNL Sling Model] aan. Hierdoor blijft het renderscript relatief eenvoudig.
+Volgende [!DNL Sling Model] is gemaakt om de [!DNL Hello World] component. In een traditioneel WCM-gebruiksgeval [!DNL Sling Model] implementeert elke bedrijfslogica en een rendering script (HTL) aan de serverzijde roept de [!DNL Sling Model]. Hierdoor blijft het renderscript relatief eenvoudig.
 
-[!DNL Sling Models] worden ook gebruikt in het SPA gebruiksgeval om server-kant bedrijfslogica uit te voeren. Het verschil is dat in [!DNL SPA] gebruiksgeval, [!DNL Sling Models] het methodes zoals geserialiseerde JSON blootstelt.
+[!DNL Sling Models] worden ook gebruikt in het SPA gebruiksgeval om server-kant bedrijfslogica uit te voeren. Het verschil is dat in de [!DNL SPA] use case, de [!DNL Sling Models] blootstelt het methodes zoals geserialiseerde JSON.
 
 >[!NOTE]
 >
->Als beste praktijken, zouden de ontwikkelaars [AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) moeten gebruiken wanneer mogelijk. Core Components bieden [!DNL Sling Models] onder andere JSON-uitvoer die &quot;SPA-klaar&quot; is, zodat ontwikkelaars zich meer kunnen richten op front-end presentaties.
+>Als beste praktijken, zouden de ontwikkelaars moeten proberen te gebruiken [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) indien mogelijk. Core Components bieden onder andere [!DNL Sling Models] met JSON-uitvoer die &quot;SPA-klaar&quot; is, zodat ontwikkelaars zich meer kunnen richten op front-end presentaties.
 
-1. In de redacteur van uw keus, open **wij-detailhandel-dagboek-komma-komma&#39;s** project ( `<src>/aem-sample-we-retail-journal/bundles/commons`).
+1. In de redacteur van uw keus, open **wij-detailhandel-dagboek-gemeenschappelijke** project ( `<src>/aem-sample-we-retail-journal/bundles/commons`).
 1. In het pakket `com.adobe.cq.sample.spa.commons.impl.models`:
-   * Maak een nieuwe klasse met de naam `HelloWorld`.
+   * Een nieuwe klasse maken met de naam `HelloWorld`.
    * Voeg een implementerende interface toe voor `com.adobe.cq.export.json.ComponentExporter.`
 
    ![Nieuwe wizard Java-klasse](assets/spa-editor-helloworld-tutorial-use/fig5.png)
 
-   De `ComponentExporter` interface moet worden uitgevoerd om [!DNL Sling Model] compatibel te zijn met AEM Content Services.
+   De `ComponentExporter` de interface moet worden geïmplementeerd om [!DNL Sling Model] om compatibel te zijn met AEM Content Services.
 
    ```java
     package com.adobe.cq.sample.spa.commons.impl.models;
@@ -328,7 +324,7 @@ Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL H
     }
    ```
 
-1. Voeg een statische variabele met de naam `RESOURCE_TYPE` toe om het bronnentype van de component [!DNL HelloWorld] te identificeren:
+1. Een statische variabele toevoegen met de naam `RESOURCE_TYPE` om de [!DNL HelloWorld] brontype van component:
 
    ```java
     ...
@@ -340,7 +336,7 @@ Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL H
     }
    ```
 
-1. Voeg de OSGi-annotaties toe voor `@Model` en `@Exporter`. De `@Model`-annotatie registreert de klasse als een [!DNL Sling Model]. De `@Exporter`-annotatie zal de methoden als geserialiseerde JSON blootstellen met behulp van het [!DNL Jackson Exporter]-framework.
+1. Voeg de OSGi-annotaties toe voor `@Model` en `@Exporter`. De `@Model` annotatie registreert de klasse als een [!DNL Sling Model]. De `@Exporter` annotatie geeft de methoden weer als geserialiseerde JSON met behulp van de [!DNL Jackson Exporter] kader.
 
    ```java
    import org.apache.sling.api.SlingHttpServletRequest;
@@ -363,9 +359,9 @@ Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL H
    ...
    ```
 
-1. Implementeer de methode `getDisplayMessage()` om de JCR-eigenschap `message` te retourneren. Gebruik de [!DNL Sling Model]-annotatie van `@ValueMapValue` om het gemakkelijk te maken om de eigenschap `message` op te halen die onder de component is opgeslagen. De annotatie `@Optional` is belangrijk omdat `message` niet wordt gevuld wanneer de component voor het eerst aan de pagina wordt toegevoegd.
+1. De methode implementeren `getDisplayMessage()` om de JCR-eigenschap te retourneren `message`. Gebruik de [!DNL Sling Model] aantekening `@ValueMapValue` om het gemakkelijk te maken om het bezit terug te winnen `message` opgeslagen onder de component. De `@Optional` annotatie is belangrijk omdat de component voor het eerst aan de pagina wordt toegevoegd.  `message`  wordt niet gevuld.
 
-   Als deel van de bedrijfslogica, zal een koord, &quot;**Hello**&quot;, aan het bericht worden toegevoegd.
+   Als onderdeel van de bedrijfslogica, een koord, &quot;**Hallo**&quot;, wordt aan het bericht toegevoegd.
 
    ```java
    import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
@@ -394,11 +390,11 @@ Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL H
 
    >[!NOTE]
    >
-   > De methodenaam `getDisplayMessage` is belangrijk. Wanneer [!DNL Sling Model] met [!DNL Jackson Exporter] wordt geserialiseerd zal het als bezit JSON worden blootgesteld: `displayMessage`. [!DNL Jackson Exporter] zal alle `getter` methodes serialiseren en blootstellen die geen parameter (tenzij uitdrukkelijk duidelijk om) nemen te negeren. Later in de app React / Angular lezen we deze eigenschapswaarde en geven deze weer als onderdeel van de toepassing.
+   > De methodenaam `getDisplayMessage` is belangrijk. Wanneer de [!DNL Sling Model] is geserialiseerd met de [!DNL Jackson Exporter] het zal als bezit JSON worden blootgesteld: `displayMessage`. De [!DNL Jackson Exporter] zal serialiseren en allen blootstellen `getter` methoden die geen parameter gebruiken (tenzij expliciet gemarkeerd om te negeren). Later in de app React / Angular lezen we deze eigenschapswaarde en geven deze weer als onderdeel van de toepassing.
 
-   De methode `getExportedType` is ook belangrijk. De waarde van de component `resourceType` wordt gebruikt om de JSON-gegevens toe te wijzen aan de front-end component (Angular/React). We zullen dit in de volgende sectie onderzoeken.
+   De methode `getExportedType` is ook belangrijk. De waarde van de component `resourceType` worden gebruikt om de JSON-gegevens toe te wijzen aan de front-end component (Angular/React). We zullen dit in de volgende sectie onderzoeken.
 
-1. Voer de methode `getExportedType()` uit om het middeltype van `HelloWorld` component terug te keren.
+1. De methode implementeren `getExportedType()` om het middeltype van terug te keren `HelloWorld` component.
 
    ```java
     @Override
@@ -407,7 +403,7 @@ Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL H
        }
    ```
 
-   De volledige code voor [**HelloWorld.java** kan hier worden gevonden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/bundles/commons/HelloWorld.java)
+   De volledige code voor [**HelloWorld.java** is hier te vinden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/bundles/commons/HelloWorld.java)
 
 1. Implementeer de code om te AEM met Apache Maven:
 
@@ -416,9 +412,9 @@ Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL H
    $ mvn -PautoInstallPackage clean install
    ```
 
-   Verifieer de plaatsing en registratie van [!DNL Sling Model] door aan [[!UICONTROL Status] > [!UICONTROL Sling Models]](http://localhost:4502/system/console/status-slingmodels) in de console te navigeren OSGi.
+   Controleer de implementatie en registratie van de [!DNL Sling Model] door te navigeren naar [[!UICONTROL Status] > [!UICONTROL Sling Models]](http://localhost:4502/system/console/status-slingmodels) in de OSGi-console.
 
-   U zou moeten zien dat `HelloWorld` het Verschuiven Model aan `we-retail-journal/components/helloworld` het Verschuiven middeltype gebonden is en dat het als [!DNL Sling Model Exporter Servlet] wordt geregistreerd:
+   U moet zien dat de `HelloWorld` Het verkoopmodel is gebonden aan de `we-retail-journal/components/helloworld` Het het middeltype van het verkopen en dat het als a wordt geregistreerd [!DNL Sling Model Exporter Servlet]:
 
    ```shell
    com.adobe.cq.sample.spa.commons.impl.models.HelloWorld - we-retail-journal/components/helloworld
@@ -429,25 +425,25 @@ Vervolgens wordt een [!DNL Sling Model] gemaakt ter ondersteuning van de [!DNL H
 
 **Persona: Front End Developer**
 
-Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<src>/aem-sample-we-retail-journal/react-app`) gebruikend de redacteur van uw keus.
+Vervolgens wordt de component React gemaakt. Open de **reageren-app** module ( `<src>/aem-sample-we-retail-journal/react-app`) met de editor van uw keuze.
 
 >[!NOTE]
 >
-> U kunt deze sectie overslaan als u alleen geïnteresseerd bent in de ontwikkeling van [Angulars](#angular-component).
+> Je kunt dit gedeelte vrij laten als je alleen geïnteresseerd bent in [Ontwikkeling van angulars](#angular-component).
 
-1. In de `react-app` omslag navigeer aan zijn src omslag. Vouw de componentenmap uit om de bestaande React-componentbestanden weer te geven.
+1. Binnen de `react-app` naar de bijbehorende map src. Vouw de componentenmap uit om de bestaande React-componentbestanden weer te geven.
 
    ![structuur van componentbestand reageren](assets/spa-editor-helloworld-tutorial-use/react-components.png)
 
-1. Voeg een nieuw dossier onder de componentenomslag genoemd `HelloWorld.js` toe.
-1. Open `HelloWorld.js`. Voeg een importinstructie toe om de componentenbibliotheek React te importeren. Voeg een tweede importinstructie toe om de `MapTo` helper te importeren die door Adobe wordt geleverd. De `MapTo` helper verstrekt een afbeelding van de React component aan JSON van de AEM component.
+1. Een nieuw bestand toevoegen onder de map components met de naam `HelloWorld.js`.
+1. Open `HelloWorld.js`. Voeg een importinstructie toe om de componentenbibliotheek React te importeren. Voeg een tweede importinstructie toe om het dialoogvenster `MapTo` helper verstrekt door Adobe. De `MapTo` helper verstrekt een afbeelding van de component React aan JSON van de AEM component.
 
    ```js
    import React, {Component} from 'react';
    import {MapTo} from '@adobe/cq-react-editable-components';
    ```
 
-1. Onder de invoer creeert een nieuwe klasse genoemd `HelloWorld` die React `Component` interface uitbreidt. Voeg de vereiste `render()` methode aan `HelloWorld` klasse toe.
+1. Onder de import wordt een nieuwe klasse gemaakt met de naam `HelloWorld` dat de Reactie uitbreidt `Component` interface. Voeg de vereiste `render()` aan de `HelloWorld` klasse.
 
    ```js
    import React, {Component} from 'react';
@@ -461,11 +457,11 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
    }
    ```
 
-1. De `MapTo` helper omvat automatisch een voorwerp genoemd `cqModel` als deel van de reacomponenten van de component. `cqModel` omvat alle eigenschappen die door [!DNL Sling Model] worden blootgesteld.
+1. De `MapTo` helper omvat automatisch een genoemd voorwerp `cqModel` als onderdeel van de props van de component React. De `cqModel` omvat alle eigenschappen die door [!DNL Sling Model].
 
-   Onthoud dat de [!DNL Sling Model] die u eerder hebt gemaakt een methode `getDisplayMessage()` bevat. `getDisplayMessage()` wordt vertaald als een JSON-toets die  `displayMessage` bij uitvoer een naam heeft.
+   Onthoud de [!DNL Sling Model] gemaakt eerder bevat een methode `getDisplayMessage()`. `getDisplayMessage()` wordt vertaald als een JSON-sleutel met de naam `displayMessage` wanneer uitvoer.
 
-   Implementeer de methode `render()` om een `h1`-tag uit te voeren die de waarde van `displayMessage` bevat. [JSX](https://reactjs.org/docs/introducing-jsx.html), een syntaxisextensie voor JavaScript, wordt gebruikt om de definitieve opmaak van de component te retourneren.
+   Implementeer de `render()` methode om een `h1` -tag die de waarde bevat van `displayMessage`. [JSX](https://reactjs.org/docs/introducing-jsx.html), een syntaxisextensie naar JavaScript, wordt gebruikt om de laatste opmaak van de component te retourneren.
 
    ```js
    ...
@@ -485,7 +481,7 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
    }
    ```
 
-1. Voer een Edit configuratiemethode uit. Deze methode wordt doorgegeven via de Help `MapTo` en biedt de AEM editor informatie om een tijdelijke aanduiding weer te geven als de component leeg is. Dit gebeurt wanneer de component aan de SPA wordt toegevoegd, maar nog niet is gemaakt. Voeg het volgende toe onder de `HelloWorld` klasse:
+1. Voer een Edit configuratiemethode uit. Deze methode wordt doorgegeven via de `MapTo` en verschaft de AEM editor informatie om een tijdelijke aanduiding weer te geven wanneer de component leeg is. Dit gebeurt wanneer de component aan de SPA wordt toegevoegd, maar nog niet is gemaakt. Voeg het volgende toe onder de `HelloWorld` klasse:
 
    ```js
    ...
@@ -506,17 +502,17 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
    ...
    ```
 
-1. Roep aan het einde van het bestand de `MapTo`-hulplijn aan en geef de klasse `HelloWorld` en `HelloWorldEditConfig` door. Hierdoor wordt de React Component toegewezen aan de AEM component op basis van het brontype van de AEM Component: `we-retail-journal/components/helloworld`.
+1. Aan het einde van het bestand roept u de `MapTo` helper, door de `HelloWorld` en de `HelloWorldEditConfig`. Hierdoor wordt de React Component toegewezen aan de AEM component op basis van het brontype van de AEM Component: `we-retail-journal/components/helloworld`.
 
    ```js
    MapTo('we-retail-journal/components/helloworld')(HelloWorld, HelloWorldEditConfig);
    ```
 
-   De voltooide code voor [**HelloWorld.js** kan hier worden gevonden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/react-app/components/HelloWorld.js)
+   De ingevulde code voor [**HelloWorld.js** is hier te vinden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/react-app/components/HelloWorld.js)
 
-1. Open het bestand `ImportComponents.js`. Deze vindt u op `<src>/aem-sample-we-retail-journal/react-app/src/ImportComponents.js`.
+1. Het bestand openen `ImportComponents.js`. U vindt deze op `<src>/aem-sample-we-retail-journal/react-app/src/ImportComponents.js`.
 
-   Voeg een lijn toe om `HelloWorld.js` met de andere componenten in de gecompileerde bundel te vereisen JavaScript:
+   Voeg een lijn toe om te vereisen `HelloWorld.js` met de andere componenten in de gecompileerde JavaScript-bundel:
 
    ```js
    ...
@@ -526,7 +522,7 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
    ...
    ```
 
-1. Maak in de map `components` een nieuw bestand met de naam `HelloWorld.css` als een bestand op hetzelfde niveau als `HelloWorld.js.` Het bestand vullen met de volgende code om een basisstijl voor de component `HelloWorld` te maken:
+1. In de  `components`  map maken een nieuw bestand met de naam `HelloWorld.css` als een `HelloWorld.js.` Vul het bestand met het volgende om een basisstijl voor de `HelloWorld` component:
 
    ```css
    /* HelloWorld.css to style HelloWorld component */
@@ -539,7 +535,7 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
    }
    ```
 
-1. Open `HelloWorld.js` opnieuw en werk de importinstructies bij om `HelloWorld.css` te vereisen:
+1. Opnieuw openen `HelloWorld.js` en onder de importinstructies bijwerken om `HelloWorld.css`:
 
    ```js
    import React, {Component} from 'react';
@@ -557,11 +553,11 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-1. Open `/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js). U kunt snel zoeken naar HelloWorld in app.js om te controleren of de component React is opgenomen in de gecompileerde app.
+1. In [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js) open `/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js`. U kunt snel zoeken naar HelloWorld in app.js om te controleren of de component React is opgenomen in de gecompileerde app.
 
    >[!NOTE]
    >
-   > **app.** jsis de gebundelde React-app. De code is niet meer leesbaar voor mensen. De opdracht `npm run build` heeft een geoptimaliseerde build geactiveerd die gecompileerde JavaScript-code uitvoert die door moderne browsers kan worden geïnterpreteerd.
+   > **app.js** is de gebundelde React-app. De code is niet meer leesbaar voor mensen. De `npm run build` heeft een geoptimaliseerde build geactiveerd die gecompileerde JavaScript-gegevens genereert die door moderne browsers kunnen worden geïnterpreteerd.
 
 
 ## Angular-component maken {#angular-component}
@@ -572,13 +568,13 @@ Vervolgens wordt de component React gemaakt. Open de **reactie-app** module ( `<
 >
 > U kunt deze sectie overslaan als u alleen geïnteresseerd bent in React-ontwikkeling.
 
-Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`<src>/aem-sample-we-retail-journal/angular-app`) gebruikend de redacteur van uw keus.
+Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`<src>/aem-sample-we-retail-journal/angular-app`) met de editor van uw keuze.
 
-1. In de `angular-app` omslag navigeer aan zijn `src` omslag. Breid de componentenomslag uit om de bestaande de componentendossiers van de Angular te bekijken.
+1. Binnen de `angular-app` map naar de map navigeren `src` map. Breid de componentenomslag uit om de bestaande de componentendossiers van de Angular te bekijken.
 
    ![Bestandsstructuur van angular](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
 
-1. Voeg een nieuwe omslag onder de componentenomslag genoemd `helloworld` toe. Voeg onder de map `helloworld` nieuwe bestanden met de naam `helloworld.component.css, helloworld.component.html, helloworld.component.ts` toe.
+1. Een nieuwe map toevoegen onder de map components met de naam `helloworld`. Onder de `helloworld` map toevoegen, nieuwe bestanden met een naam toevoegen `helloworld.component.css, helloworld.component.html, helloworld.component.ts`.
 
    ```plain
    /angular-app
@@ -591,7 +587,7 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    +                    helloworld.component.ts
    ```
 
-1. Open `helloworld.component.ts`. Voeg een importinstructie toe om de klassen `Component` en `Input` van de Angular te importeren. Maak een nieuwe component en wijs `styleUrls` en `templateUrl` aan `helloworld.component.css` en `helloworld.component.html` aan. Exporteer ten slotte de klasse `HelloWorldComponent` met de verwachte invoer van `displayMessage`.
+1. Openen `helloworld.component.ts`. Een importinstructie toevoegen om de Angular te importeren `Component` en `Input` klassen. Maak een nieuwe component en wijs de `styleUrls` en `templateUrl` tot `helloworld.component.css` en `helloworld.component.html`. De klasse ten slotte exporteren `HelloWorldComponent` met de verwachte input van `displayMessage`.
 
    ```js
    //helloworld.component.ts
@@ -612,9 +608,9 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
 
    >[!NOTE]
    >
-   > Als u [!DNL Sling Model] eerder gecreeerd herinnert, was er een methode **getDisplayMessage ()**. De geserialiseerde JSON van deze methode zal **displayMessage** zijn, die wij nu in Angular app lezen.
+   > Als u zich de [!DNL Sling Model] die eerder zijn gemaakt, was er een methode **getDisplayMessage()**. De geserialiseerde JSON van deze methode wordt **displayMessage**, die we nu in de app Angular lezen.
 
-1. Open `helloworld.component.html` om een `h1`-tag op te nemen die de eigenschap `displayMessage` zal afdrukken:
+1. Openen `helloworld.component.html` om een `h1` -tag die de `displayMessage` eigenschap:
 
    ```html
    <h1 *ngIf="displayMessage" class="cmp-helloworld_message">
@@ -622,7 +618,7 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    </h1>
    ```
 
-1. Werk `helloworld.component.css` bij om enkele basisstijlen voor de component op te nemen.
+1. Bijwerken `helloworld.component.css` om enkele basisstijlen voor de component op te nemen.
 
    ```css
    :host-context {
@@ -640,7 +636,7 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    }
    ```
 
-1. `helloworld.component.spec.ts` bijwerken met de volgende testbank:
+1. Bijwerken `helloworld.component.spec.ts` met de volgende testbank:
 
    ```js
    import { async, ComponentFixture, TestBed } from '@angular/core/testing';
@@ -670,7 +666,7 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    });
    ```
 
-1. Volgende update `src/components/mapping.ts` om `HelloWorldComponent` te omvatten. Voeg een `HelloWorldEditConfig` toe die placeholder in de AEM redacteur zal merken alvorens de component is gevormd. Voeg ten slotte een lijn toe om de AEM component aan de component van de Angular met `MapTo` helper in kaart te brengen.
+1. Volgende update `src/components/mapping.ts` de `HelloWorldComponent`. Voeg een `HelloWorldEditConfig` dat placeholder in de AEM redacteur zal merken alvorens de component is gevormd. Voeg ten slotte een lijn toe om de AEM component toe te wijzen aan de component Angular met de component `MapTo` helper.
 
    ```js
    // src/components/mapping.ts
@@ -693,9 +689,9 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    MapTo('we-retail-journal/components/helloworld')(HelloWorldComponent, HelloWorldEditConfig);
    ```
 
-   De volledige code voor [**mapping.ts** kan hier worden gevonden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/mapping.ts)
+   De volledige code voor [**mapping.ts** is hier te vinden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/mapping.ts)
 
-1. `src/app.module.ts` bijwerken om **NgModule** bij te werken. Voeg **`HelloWorldComponent`** als **verklaring** toe die tot **AppModule** behoort. Voeg ook `HelloWorldComponent` als **entryComponent** toe zodat het wordt gecompileerd en dynamisch in app wordt omvat aangezien het model JSON wordt verwerkt.
+1. Bijwerken `src/app.module.ts` om de **NgModule**. Voeg de **`HelloWorldComponent`** als **declaratie** die toebehoort aan **AppModule**. Voeg ook de `HelloWorldComponent` als **entryComponent** zodat het wordt gecompileerd en dynamisch in de app wordt opgenomen wanneer het JSON-model wordt verwerkt.
 
    ```js
    import { HelloWorldComponent } from './components/helloworld/helloworld.component';
@@ -732,7 +728,7 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
     })
    ```
 
-   De voltooide code voor [**app.module.ts** is hier te vinden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/app.module.ts)
+   De ingevulde code voor [**app.module.ts** is hier te vinden.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/app.module.ts)
 
 1. Implementeer de code die u wilt AEM met Maven:
 
@@ -741,11 +737,11 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-1. Open `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js). Voer een snelle onderzoek naar **HelloWorld** in `main.js` uit om te verifiëren de component van de Angular is inbegrepen.
+1. In [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js) open `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js`. Snel zoeken naar **HelloWorld** in `main.js` om te controleren of de component Angular is opgenomen.
 
    >[!NOTE]
    >
-   > **main.** jsis de gebundelde Angular-app. De code is niet meer leesbaar voor mensen. De npm run build-opdracht heeft een geoptimaliseerde build geactiveerd die gecompileerde JavaScript uitvoert die door moderne browsers kan worden geïnterpreteerd.
+   > **main.js** is de gebundelde Angular-app. De code is niet meer leesbaar voor mensen. De npm run build-opdracht heeft een geoptimaliseerde build geactiveerd die gecompileerde JavaScript uitvoert die door moderne browsers kan worden geïnterpreteerd.
 
 ## De sjabloon bijwerken {#template-update}
 
@@ -754,15 +750,15 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    * (Angular) [http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html)
    * (Reageren) [http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html)
 
-1. Selecteer het hoofd [!UICONTROL Layout Container] en selecteer het [!UICONTROL Policy] pictogram om zijn beleid te openen:
+1. Selecteer de hoofdmap [!UICONTROL Layout Container] en selecteert u de [!UICONTROL Policy] pictogram om het beleid te openen:
 
    ![Layoutbeleid selecteren](assets/spa-editor-helloworld-tutorial-use/select-page-policy.png)
 
-   Voer onder **[!UICONTROL Properties]** > **[!UICONTROL Allowed Components]** een zoekopdracht uit naar **[!DNL Custom Components]**. De **[!DNL Hello World]** component moet worden weergegeven en geselecteerd. Sla de wijzigingen op door op het selectievakje rechtsboven in het scherm te klikken.
+   Onder **[!UICONTROL Properties]** > **[!UICONTROL Allowed Components]**, voert een zoekopdracht uit naar **[!DNL Custom Components]**. U moet de **[!DNL Hello World]** selecteert u deze. Sla de wijzigingen op door op het selectievakje rechtsboven in het scherm te klikken.
 
    ![Layout Container, beleidsconfiguratie](assets/spa-editor-helloworld-tutorial-use/layoutcontainer-update.png)
 
-1. Na het opslaan, zou u **[!DNL HelloWorld]** component als toegestane component in [!UICONTROL Layout Container] moeten zien.
+1. Nadat u het bestand hebt opgeslagen, ziet u de knop **[!DNL HelloWorld]** als een toegestane component in de [!UICONTROL Layout Container].
 
    ![Toegestane componenten bijgewerkt](assets/spa-editor-helloworld-tutorial-use/allowed-components.png)
 
@@ -770,7 +766,7 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    >
    > Alleen AEM 6.5 en AEM 6.4.5 ondersteunen de functie Bewerkbare sjabloon van de SPA Editor. Als het gebruiken van AEM 6.4, zult u het beleid voor Toegestane Componenten via CRXDE Lite manueel moeten vormen: `/conf/we-retail-journal/react/settings/wcm/policies/wcm/foundation/components/responsivegrid/default` of `/conf/we-retail-journal/angular/settings/wcm/policies/wcm/foundation/components/responsivegrid/default`
 
-   CRXDE Lite die de bijgewerkte beleidsconfiguraties voor [!UICONTROL Allowed Components] in [!UICONTROL Layout Container] tonen:
+   CRXDE Lite die de bijgewerkte beleidsconfiguraties voor [!UICONTROL Allowed Components] in de [!UICONTROL Layout Container]:
 
    ![CRXDE Lite die de bijgewerkte beleidsconfiguraties voor Toegestane Componenten in de Container van de Lay-out toont](assets/spa-editor-helloworld-tutorial-use/editable-template-policy.png)
 
@@ -781,7 +777,7 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
    * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
    * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
 
-1. Zoek de component **[!DNL Hello World]** en sleep de component **[!DNL Hello World]** naar de pagina.
+1. Zoek de **[!DNL Hello World]** en sleep de **[!DNL Hello World]** op de pagina.
 
    ![hello world drag + drop](assets/spa-editor-helloworld-tutorial-use/fig7.png)
 
@@ -793,20 +789,20 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
 
    ![gerenderde component](assets/spa-editor-helloworld-tutorial-use/fig11.png)
 
-   De tekenreeks &#39;Hello&#39; wordt altijd aan het bericht toegevoegd. Dit is een resultaat van de logica in `HelloWorld.java` [!DNL Sling Model].
+   De tekenreeks &#39;Hello&#39; wordt altijd aan het bericht toegevoegd. Dit is het resultaat van de logica in het `HelloWorld.java` [!DNL Sling Model].
 
 ## Volgende stappen {#next-steps}
 
 [Voltooide oplossing voor de component HelloWorld](assets/spa-editor-helloworld-tutorial-use/aem-sample-we-retail-journal-HelloWorldSolution.zip)
 
 * Volledige broncode voor [[!DNL We.Retail Journal] op GitHub](https://github.com/adobe/aem-sample-we-retail-journal)
-* Ontdek een meer diepgaande zelfstudie over het ontwikkelen van Reactie met [[!DNL Getting Started with the AEM SPA Editor - WKND Tutorial]](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
+* Ontdek een diepgaandere zelfstudie over het ontwikkelen van Reageren met [[!DNL Getting Started with the AEM SPA Editor - WKND Tutorial]](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
 
 ## Problemen oplossen {#troubleshooting}
 
 ### Kan project niet maken in Eclipse {#unable-to-build-project-in-eclipse}
 
-**Fout:** een fout wanneer het invoeren van het  [!DNL We.Retail Journal] project in Eclipse voor niet erkende doeluitvoeringen:
+**Fout:** Een fout bij het importeren van de [!DNL We.Retail Journal] Project in Eclipse voor niet-herkende doeluitvoeringen:
 
 `Execution npm install, Execution npm run build, Execution default-analyze-classes*`
 
@@ -814,22 +810,22 @@ Vervolgens wordt de component Angular gemaakt. Open de **angular-app** module (`
 
 **Resolutie**: Klik op Voltooien om deze later op te lossen. Dit mag de voltooiing van de zelfstudie niet in de weg staan.
 
-**Fout**: De React module,  `react-app`, bouwt niet met succes tijdens een Maven bouwt.
+**Fout**: De module React, `react-app`, kan niet worden gebouwd tijdens een Maven-build.
 
-**Resolutie:** probeer het schrappen van de  `node_modules` omslag onder  **reactie-app**. Voer de opdracht Apache Maven `mvn  clean install -PautoInstallSinglePackage` opnieuw uit vanuit de hoofdmap van het project.
+**Resolutie:** Probeer de `node_modules` map onder de **reageren-app**. De opdracht Apache Maven opnieuw uitvoeren `mvn  clean install -PautoInstallSinglePackage` uit de hoofdmap van het project.
 
 ### Ontevreden afhankelijkheden in AEM {#unsatisfied-dependencies-in-aem}
 
 ![Afhankelijkheidsfout pakketbeheer](assets/spa-editor-helloworld-tutorial-use/we-retail-journal-package-dependency.png)
 
-Als niet aan een AEM-afhankelijkheid wordt voldaan, geeft dit aan dat SPA Editor-functie niet beschikbaar is in **[!UICONTROL AEM Package Manager]** of **[!UICONTROL AEM Web Console]** (Felix Console).
+Als niet aan een AEM wordt voldaan, wordt in de **[!UICONTROL AEM Package Manager]** of in de **[!UICONTROL AEM Web Console]** (Felix Console) geeft dit aan dat SPA Editor-functie niet beschikbaar is.
 
 ### Component wordt niet weergegeven
 
-**Fout**: Zelfs na een geslaagde implementatie en het controleren of de gecompileerde versies van React/Angular-apps de bijgewerkte  `helloworld` component hebben, wordt mijn component niet weergegeven wanneer ik deze naar de pagina versleep. Ik kan de component in AEM UI zien.
+**Fout**: Zelfs na een geslaagde implementatie en nadat u hebt gecontroleerd of de gecompileerde versies van React/Angular-apps de bijgewerkte versie hebben `helloworld` wordt mijn component niet weergegeven wanneer ik deze naar de pagina versleep. Ik kan de component in AEM UI zien.
 
 **Resolutie**: Wis de browsergeschiedenis/cache en/of open een nieuwe browser of gebruik de incognitomodus. Als dat niet werkt, maakt u de cache van de clientbibliotheek op de lokale AEM ongeldig. AEM probeert grote clientbibliotheken in cache te plaatsen om efficiënt te zijn. Soms is het handmatig ongeldig maken van de cache nodig om problemen op te lossen waarbij verouderde code in de cache wordt geplaatst.
 
-Navigeren naar: [http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) en klik invalidate Cache. Ga terug naar de pagina React/Angular en vernieuw de pagina.
+Navigeren naar: [http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) en klik op Cache ongeldig maken. Ga terug naar de pagina React/Angular en vernieuw de pagina.
 
 ![Client-bibliotheek opnieuw samenstellen](assets/spa-editor-helloworld-tutorial-use/invalidatecache.png)

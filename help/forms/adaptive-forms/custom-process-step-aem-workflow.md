@@ -6,13 +6,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 879518db-3f05-4447-86e8-5802537584e5
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste processtap
 
@@ -27,18 +27,16 @@ Om het bovengenoemde gebruikscase te verwezenlijken, zult u typisch een dienst O
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemodelleerd project met het juiste type Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemodelleerd project met het juiste type Adobe Maven Archetype. De gedetailleerde stappen worden in dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
 
-Open het beproefde project in uw eclipse winde. Breid **projectnaam** > **core** omslag uit. Vouw de map src/main/java uit. U moet een pakket zien dat eindigt met &quot;core&quot;. Maak een Java-klasse die WorkflowProcess in dit pakket implementeert. U moet de uitvoeringsmethode overschrijven. De handtekening van de uitvoeringsmethode is als volgt
-public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)genereert WorkflowException
-De methode execute geeft toegang tot de volgende drie variabelen
+Open het beproefde project in uw eclipse winde. Uitbreiden **projectnaam** > **kern** map. Vouw de map src/main/java uit. U moet een pakket zien dat eindigt met &quot;core&quot;. Maak een Java-klasse die WorkflowProcess in dit pakket implementeert. U moet de uitvoeringsmethode overschrijven. De handtekening van de uitvoeringsmethode is als volgt openbare void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) genereert WorkflowException De methode execute geeft toegang tot de volgende drie variabelen
 
-**WorkItem**: De variabele workItem geeft toegang tot gegevens die betrekking hebben op de workflow. De openbare API documentatie is beschikbaar [hier.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**: De variabele workItem geeft toegang tot gegevens die betrekking hebben op de workflow. De openbare API-documentatie is beschikbaar [hier.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Deze workflowSession-variabele geeft u de mogelijkheid om de workflow te beheren. De openbare API-documentatie is [hier](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html) beschikbaar
+**WorkflowSession**: Deze workflowSession-variabele geeft u de mogelijkheid om de workflow te beheren. De openbare API-documentatie is beschikbaar [hier](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
 **MetaDataMap**: Alle metagegevens die aan de workflow zijn gekoppeld. Alle procesargumenten die aan de processtap worden doorgegeven, zijn beschikbaar via het object MetaDataMap.[API-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -148,8 +146,8 @@ De dienst QueryBuilder wordt gebruikt aan vraagknopen van type nt:dossier onder 
 
 #### Samenstellen en implementeren
 
-[Bouw de bundel zoals ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en#build-your-project)
-[hier beschrevenZorg ervoor de bundel en in actieve staat wordt opgesteld](http://localhost:4502/system/console/bundles)
+[De bundel maken zoals hier beschreven](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[Zorg ervoor dat de bundel is geïmplementeerd en actief is](http://localhost:4502/system/console/bundles)
 
 Maak een workflowmodel. De stap van het proces van de belemmering en van het dalingsproces in het werkschemamodel. Koppel de processtap aan &quot;Aangepaste formulierbijlagen opslaan naar bestandssysteem&quot;.
 
@@ -160,4 +158,3 @@ Maak een adaptief formulier. Sleep de component Bestandsbijlagen naar het formul
 Sla de instellingen op.
 
 Geef een voorbeeld van het formulier weer. Voeg een aantal bijlagen toe en verzend het formulier. De bijlagen moeten in het bestandssysteem worden opgeslagen op de locatie die u in de workflow hebt opgegeven.
-

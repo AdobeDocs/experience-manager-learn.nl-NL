@@ -8,9 +8,9 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '438'
 ht-degree: 1%
 
 ---
@@ -33,22 +33,18 @@ AEM de hulpmiddelen van de Modernisering zetten automatisch bestaande AEM Pagina
 + Klonen AEM 6.x productie om AEM Moderniseringshulpmiddelen tegen te werken
 + Download en installeer de [nieuwste AEM moderniseringsgereedschappen](https://github.com/adobe/aem-modernize-tools/releases/latest) op de AEM 6.x productiekleon via Package Manager
 
-+ [Paginastructuurconverter](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html) Hiermee wordt bestaande pagina-inhoud van een statische sjabloon bijgewerkt naar een toegewezen bewerkbare sjabloon met behulp van lay-outcontainers
++ [Paginastructuurconverter](https://opensource.adobe.com/aem-modernize-tools/pages/structure/about.html) Hiermee wordt bestaande pagina-inhoud van een statische sjabloon bijgewerkt naar een toegewezen bewerkbare sjabloon met behulp van lay-outcontainers
    + Conversieregels definiëren met OSGi-configuratie
    + Paginastructuurconverter uitvoeren op bestaande pagina&#39;s
 
-+ [Component Converter](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html) Hiermee wordt bestaande pagina-inhoud van een statische sjabloon bijgewerkt naar een toegewezen bewerkbare sjabloon met behulp van lay-outcontainers
++ [Component Converter](https://opensource.adobe.com/aem-modernize-tools/pages/component/about.html) Hiermee wordt bestaande pagina-inhoud van een statische sjabloon bijgewerkt naar een toegewezen bewerkbare sjabloon met behulp van lay-outcontainers
    + Conversieregels definiëren via JCR-knoopdefinities/XML
    + Het gereedschap Componentconversie uitvoeren op bestaande pagina&#39;s
 
-+ [Beleidsimporteur](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) creeert beleid van de configuratie van het Ontwerp
++ [Beleidsimporteur](https://opensource.adobe.com/aem-modernize-tools/pages/policy/about.html) creeert beleid van de configuratie van het Ontwerp
    + Conversieregels definiëren met behulp van JCR-knooppuntdefinities/XML
    + Beleidsimporteur uitvoeren op basis van bestaande ontwerpdefinities
    + Geïmporteerd beleid toepassen op AEM componenten en containers
-
-+ [Dialoogconversie](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html) converteert op Classic (ExtJS) en CoralUI 2 gebaseerde componentdialoogvensters naar op CoralUI 3 TouchUI gebaseerde dialoogvensters.
-   + Het gereedschap Dialoogconverter uitvoeren op basis van bestaande dialoogvensters die zijn gebaseerd op ExtJS of Coral2
-   + Omgezette dialoogvensters weer synchroniseren naar Git-opslagplaats
 
 ## Handbeweging
 
@@ -94,6 +90,5 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
 + [AEM Gems - Introductie van de AEM Modernization Suite](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 
-
-1. Stel de onlangs gemoderniseerde wknd-erfenisplaats op de lokale Cloud Service SDK op. Beschikbaar om hier te downloaden:
-+ [Software Distribution Portal](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.htm).
+1. Implementeer de net gemoderniseerde wknd-erfenissite op de lokale AEM SDK. AEM ASK is hier beschikbaar voor downloaden:
++ [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
