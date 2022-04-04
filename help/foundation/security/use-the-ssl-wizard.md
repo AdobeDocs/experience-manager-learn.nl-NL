@@ -13,9 +13,9 @@ topic: Security
 role: Developer
 level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
-source-git-commit: 835c01cb2ad1d154437087c51c70a2daf90493dd
+source-git-commit: 2d5446197b9b81a4dbe4eaa5a7cb4fcdd5d63f67
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ Adobe Experience Manager SSL opstellingstovenaar om het gemakkelijker te maken o
 
 >[!VIDEO](https://video.tv.adobe.com/v/17993/?quality=12&learn=on)
 
+Open de __wizard SSL-configuratie__ kan rechtstreeks worden geopend door naar __AEM-auteur > Gereedschappen > Beveiliging > SSL-configuratie__.
+
 >[!NOTE]
 >
 >Voor beheerde omgevingen is het het beste voor de IT-afdeling om CA-vertrouwde certificaten en sleutels te leveren.
@@ -34,11 +36,11 @@ Adobe Experience Manager SSL opstellingstovenaar om het gemakkelijker te maken o
 
 ## Persoonlijke sleutel en zelfondertekende certificaatdownload
 
-Het volgende ZIP-bestand bevat [!DNL DER]- en [!DNL CRT]-bestanden die vereist zijn voor het instellen van AEM SSL op localhost en die alleen bedoeld zijn voor lokale ontwikkelingsdoeleinden.
+De volgende ZIP bevat: [!DNL DER] en [!DNL CRT] bestanden die vereist zijn voor het instellen van AEM SSL op localhost en die alleen bedoeld zijn voor lokale ontwikkelingsdoeleinden.
 
-De [!DNL DER] en [!DNL CERT] dossiers worden verstrekt voor gemak en geproduceerd gebruikend de stappen die in de Generate Privé Sleutel en Zelfondertekende sectie van het Certificaat hieronder worden geschetst.
+De [!DNL DER] en [!DNL CERT] bestanden worden geleverd voor een gebruiksgemak en gegenereerd met de stappen die worden beschreven in de sectie Persoonlijke sleutel genereren en Zelfondertekend certificaat hieronder.
 
-Indien nodig, is de uitdrukking van de certificaatpas **admin**.
+Indien nodig is de certificaatwoordgroep **beheerder**.
 
 localhost - persoonlijke sleutel en zelfondertekend certificate.zip (verloopt in juli 2028)
 
@@ -46,7 +48,7 @@ localhost - persoonlijke sleutel en zelfondertekend certificate.zip (verloopt in
 
 ## Persoonlijke sleutel en zelfondertekende certificaatgeneratie
 
-In de video hierboven worden de installatie en configuratie van SSL op een AEM auteurinstantie met zelfondertekende certificaten weergegeven. Met de onderstaande opdrachten met behulp van [[!DNL OpenSSL]](https://www.openssl.org/) kunt u een persoonlijke sleutel en certificaat genereren voor gebruik in stap 2 van de wizard.
+In de video hierboven worden de installatie en configuratie van SSL op een AEM auteurinstantie met zelfondertekende certificaten weergegeven. De onderstaande opdrachten [[!DNL OpenSSL]](https://www.openssl.org/) U kunt een persoonlijke sleutel en certificaat genereren voor gebruik in stap 2 van de wizard.
 
 ```shell
 ### Create Private Key
