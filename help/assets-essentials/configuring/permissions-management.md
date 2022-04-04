@@ -8,15 +8,15 @@ role: User
 level: Beginner
 kt: 9818
 thumbnail: 342113.jpeg
-source-git-commit: 225c975dc2eea8afe786f7b7c450f1101bdbe04b
+source-git-commit: e3ff8c16a62a8e79345c384baf3b24f53eed93b3
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '49'
 ht-degree: 0%
 
 ---
 
 
-# Machtigingenbeheer
+# Machtigingenbeheer in Assets Essentials
 
 Leer hoe het beheer van AEM Assets Essentials organisaties in staat stelt de toegang tot middelen te controleren, hun merk te beschermen en naleving te garanderen.
 
