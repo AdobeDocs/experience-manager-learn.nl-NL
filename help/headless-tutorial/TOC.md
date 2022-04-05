@@ -6,9 +6,9 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+source-git-commit: 88797cf950dae46d0f856330df12c59a4efe6456
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '227'
 ht-degree: 4%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 4%
       + [3 - De AEM GraphQL API verkennen](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - Blijvende GraphQL-query&#39;s](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Integratie van clienttoepassingen](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
+   + Procedure {#how-to}
+      + [Werken met tekst met opmaak](./graphql/how-to/rich-text.md)
    + Voorbeelden {#example-apps}
       + [Reageren](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
