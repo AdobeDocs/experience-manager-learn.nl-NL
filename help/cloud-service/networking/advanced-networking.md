@@ -8,17 +8,24 @@ role: Architect, Developer
 level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
+source-git-commit: 6e7130cd98700bdb5e7f330ca0506fe89ea0eb94
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-
 # Geavanceerde netwerken
 
-AEM as a Cloud Service verstrekt drie opties om connectiviteit met de externe diensten te beheren. Een programma van de Manager van de Wolk, en zijn AEM as a Cloud Service milieu&#39;s, kunnen slechts één enkel type van geavanceerde voorzien van een netwerkconfiguratie tegelijkertijd gebruiken, zodat ervoor zorgt dat het meest aangewezen type wordt geselecteerd.
+AEM as a Cloud Service verstrekt geavanceerde voorzien van een netwerkeigenschappen die voor nauwkeurige beheer van verbindingen aan en van AEM as a Cloud Service programma&#39;s toestaan.
+
+|  | [Productieprogramma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Sandbox-programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
+|---------------------------------------------------|:-----------------------:|:---------------------|
+| Ondersteunt geavanceerd netwerken | ✔ | ✘ |
+
+
+AEM geavanceerde voorzien van een netwerk wordt samengesteld uit drie opties om connectiviteit met de externe diensten te beheren. Een programma van de Manager van de Wolk, en zijn AEM as a Cloud Service milieu&#39;s, kunnen slechts één enkel type van geavanceerde voorzien van een netwerkconfiguratie tegelijkertijd gebruiken, zodat ervoor zorgt dat het meest aangewezen type wordt geselecteerd.
 
 |  | HTTP/HTTPS op standaardpoorten | HTTP/HTTPS op niet-standaardpoorten | Niet-HTTP/HTTPS-verbindingen | Speciale IP-adressen | Lijst met &quot;Geen proxy-hosts&quot; | Verbinding maken met VPN-beveiligde services | Beperk AEM publicatieverkeer door IP |
 |-----------------------------------|:----------------------------:|:--------------------------------:|:--------------------------:|:-------------------:|:-------------------------------------:|:-------------------------------------:|:----:|
