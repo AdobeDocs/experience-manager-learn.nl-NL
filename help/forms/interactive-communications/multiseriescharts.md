@@ -12,13 +12,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
+source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
-
 
 # Diagrammen uit meerdere reeksen
 
@@ -26,7 +26,7 @@ AEM Forms 6.5 introduceerde de capaciteit om veelvoudige reekskaarten tot stand 
 
 ![multiseries](assets/seriescharts.jfif)
 
-Als u grafieken met meerdere reeksen wilt maken in AEM Forms, moet u een geschikt formuliergegevensmodel maken met de benodigde entiteiten en koppelingen tussen de entiteiten. In de volgende schermafbeelding worden de entiteiten en de koppelingen tussen de drie entiteiten gemarkeerd. Op het hoogste niveau hebben we een entiteit genaamd &quot;Organisatie&quot;, die een één-op-veel associatie heeft met een fondsentiteit. De fondsentiteit heeft op haar beurt een een-op-een-relatie met de prestatieentiteit.
+Als u grafieken met meerdere reeksen wilt maken in AEM Forms, moet u een geschikt formuliergegevensmodel maken met de benodigde entiteiten en koppelingen tussen de entiteiten. In de volgende screenshot worden de entiteiten en de koppelingen tussen de drie entiteiten gemarkeerd. Op het hoogste niveau hebben we een entiteit genaamd &quot;Organisatie&quot;, die een één-op-veel associatie heeft met een fondsentiteit. De fondsentiteit heeft op haar beurt een een-op-een-relatie met de prestatieentiteit.
 
 ![formdatamodel](assets/formdatamodel.jfif)
 
@@ -47,6 +47,6 @@ Voer de volgende stappen uit om dit op uw systeem te testen
 * [Download SeriesChartSampleData.json op uw harde aandrijving.](assets/serieschartsampledata.json) Dit zijn de steekproefgegevens die zullen worden gebruikt om de grafiek te bevolken.
 * [Navigeer naar Forms en Documenten.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Selecteer voorzichtig de interactieve communicatiesjabloon &quot;MutualFundGrowthFactSheet&quot;.
-* Klik op Voorvertoning | Voorbeeldgegevens uploaden.
+* Klik op Voorvertoning | Afdrukkanaal | Voorbeeldgegevens uploaden.
 * Blader naar het bestand met voorbeeldgegevens dat u als onderdeel van dit artikel hebt opgegeven.
 * Geef een voorvertoning weer van het afdrukkanaal van de interactieve communicatie tussen &quot;MutualFundGrowthFactSheet&quot; en de voorbeeldgegevens die u in de vorige stap hebt gedownload.
