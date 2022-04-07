@@ -11,9 +11,10 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10208
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -22,13 +23,18 @@ ht-degree: 0%
 
 Volg de onderstaande instructies om deze functionaliteit te laten werken op uw AEM
 
-* Maak een map met de naam icconcepten in uw c-station
 * [Het databaseschema maken](assets/icdrafts.sql)
 * [De clientbibliotheek importeren](assets/icdrafts.zip)
 * [Het adaptieve formulier importeren](assets/SavedDraftsAdaptiveForm.zip)
 * Gegevensbron genaamd _Opslaan en doorgaan_
 
 ![Gegevensbron maken](assets/data-source.png)
+
+| Eigenschapnaam | Waarde van eigenschap |
+|---|---|
+| Naam gegevensbron | Opslaan en doorgaan |
+| JDBC-stuurprogrammaklasse | com.mysql.cj.jdbc.Driver |
+| URL JDBC-verbinding | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
 
 * [De bundel voor pictogrammen implementeren](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
 * Zorg ervoor dat u _Opslaan inschakelen met CCRDocumentInstanceService_ in OSGI config zoals hieronder weergegeven
