@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ De uitzondering op deze regel is wanneer [toegewezen IP-adres egress](../dedicat
 ## Geavanceerde netwerkondersteuning
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
+
+Zorg ervoor dat de [passend](../advanced-networking.md#advanced-networking) de geavanceerde voorzien van een netwerkconfiguratie is opstelling voorafgaand aan het volgen van dit leerprogramma.
 
 | Geen geavanceerde netwerken | [Flexibele poortuitgang](../flexible-port-egress.md) | [IP-adres van specifiek egress](../dedicated-egress-ip-address.md) | [Virtueel privé netwerk](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|

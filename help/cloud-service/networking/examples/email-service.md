@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
-source-git-commit: 4d3256cee67183803692cccc7f17ca1a0820e05d
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,8 @@ Doorgaans [flexibel poortbereik](../flexible-port-egress.md) wordt gebruikt om t
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
+Zorg ervoor dat de [passend](../advanced-networking.md#advanced-networking) de geavanceerde voorzien van een netwerkconfiguratie is opstelling voorafgaand aan het volgen van dit leerprogramma.
+
 | Geen geavanceerde netwerken | [Flexibele poortuitgang](../flexible-port-egress.md) | [IP-adres van specifiek egress](../dedicated-egress-ip-address.md) | [Virtueel privé netwerk](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
@@ -44,7 +46,7 @@ Dit OSGi configuratievoorbeeld vormt AEM de Dienst van Mail OSGi om een externe 
 ```json
 ...
 "portForwards": [{
-    "name": "smtp.sendgrid.com",
+    "name": "smtp.mymail.com",
     "portDest": 465,
     "portOrig": 30002
 }]

@@ -8,9 +8,10 @@ role: Architect, Developer
 level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
-source-git-commit: c53277241e54c757492dbc72e53f89127af389ac
+exl-id: c8cc0385-9e94-4120-9fb1-aeccbfcc8aa4
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,8 @@ HTTP/HTTPS-verbindingen op niet-standaardpoorten (niet 80/443) moeten worden uit
 ## Geavanceerde netwerkondersteuning
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
+
+Zorg ervoor dat de [passend](../advanced-networking.md#advanced-networking) de geavanceerde voorzien van een netwerkconfiguratie is opstelling voorafgaand aan het volgen van dit leerprogramma.
 
 | Geen geavanceerde netwerken | [Flexibele poortuitgang](../flexible-port-egress.md) | [IP-adres van specifiek egress](../dedicated-egress-ip-address.md) | [Virtueel privé netwerk](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|

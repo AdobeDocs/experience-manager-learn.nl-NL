@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,23 @@ Een Cloud Manager-programma kan alleen een __enkel__ type netwerkinfrastructuur.
 
 >[!MORELIKETHIS]
 >
-> De as a Cloud Service AEM lezen [geavanceerde documentatie van de netwerkconfiguratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#flexible-port-egress) voor meer informatie over flexibele havenuitgang.
+> De as a Cloud Service AEM lezen [geavanceerde documentatie van de netwerkconfiguratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress) voor meer informatie over flexibele havenuitgang.
 
 ## Vereisten
 
 Het volgende is vereist voor het instellen van flexibel poortuitgang:
 
-+ Adobe I/O-project met Cloud Manager API ingeschakeld en [Machtigingen van Business Owner van Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/guides/getting-started/permissions/#cloud-manager-api-permissions)
-+ Toegang tot [Verificatiereferenties van de API van Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/guides/getting-started/authentication/)
++ Adobe Developer Console-project met Cloud Manager-API ingeschakeld en [Machtigingen van Business Owner van Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
++ Toegang tot [Verificatiereferenties van de API van Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/)
    + Organisatie-id (ook bekend als IMS Org ID)
    + Client-id (ook bekend als API-sleutel)
    + Toegangstoken (ook bekend als Dragertoken)
 + Programma-id van Cloud Manager
 + De omgevings-id&#39;s van Cloud Manager
+
+Voor meer details bekijk de volgende analyse voor hoe te opstelling, vormen, en verkrijgen de geloofsbrieven van de Manager van de Wolk API, en hoe te om hen te gebruiken om een vraag van de Manager van de Wolk te maken API.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342235/?quality=12&learn=on)
 
 Deze zelfstudie gebruikt `curl` om de API-configuraties van Cloud Manager te maken. De verstrekte `curl` voor opdrachten wordt uitgegaan van een Linux/macOS-syntaxis. Als het gebruiken van de het bevelherinnering van Vensters, vervang `\` regeleindeteken met `^`.
 
@@ -48,7 +52,7 @@ Deze zelfstudie gebruikt `curl` om de API-configuraties van Cloud Manager te mak
 
 Begin door de flexibele havenuitgang op AEM as a Cloud Service toe te laten.
 
-1. Bepaal eerst met behulp van de API van Cloud Manager in welk gebied de geavanceerde netwerken worden ingesteld [listRegions](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/getProgramRegions) bewerking. De `region name` zijn vereist om volgende API-aanroepen van Cloud Manager uit te voeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
+1. Bepaal eerst met behulp van de API van Cloud Manager in welk gebied de geavanceerde netwerken worden ingesteld [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) bewerking. De `region name` is vereist om volgende API-aanroepen van Cloud Manager uit te voeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
 
    __listRegions HTTP request__
 
@@ -60,7 +64,7 @@ Begin door de flexibele havenuitgang op AEM as a Cloud Service toe te laten.
        -H 'Content-Type: application/json' 
    ```
 
-1. Flexibele poorttoegang voor een Cloud Manager-programma inschakelen met de Cloud Manager-API [createNetworkInfrastructure](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) bewerking. Gebruik de juiste `region` code die is verkregen via de API voor Cloud Manager `listRegions` bewerking.
+1. Flexibele poorttoegang voor een Cloud Manager-programma inschakelen met de Cloud Manager-API [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) bewerking. Gebruik de juiste `region` code die is verkregen via de API voor Cloud Manager `listRegions` bewerking.
 
    __createNetworkInfrastructure HTTP request__
 
@@ -91,7 +95,7 @@ Begin door de flexibele havenuitgang op AEM as a Cloud Service toe te laten.
 
 ## Flexibele proxy&#39;s voor poortuitgang per omgeving configureren
 
-1. Schakel de __flexibel poortbereik__ configuratie op elke AEM as a Cloud Service omgeving met gebruik van de API voor Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) bewerking.
+1. Schakel de __flexibel poortbereik__ configuratie op elke AEM as a Cloud Service omgeving met gebruik van de API voor Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) bewerking.
 
    __enableEnvironmentAdvancedNetworkingConfiguration HTTP request__
 
@@ -133,7 +137,7 @@ Begin door de flexibele havenuitgang op AEM as a Cloud Service toe te laten.
 
    Als uw AEM __alleen__ vereist HTTP/HTTPS-verbindingen (poort 80/443) naar de externe service, laat de `portForwards` array leeg, aangezien deze regels alleen vereist zijn voor niet-HTTP/HTTPS-aanvragen.
 
-1. Voor elke omgeving valideert u de egress-regels die van kracht zijn met de API voor Cloud Manager [getEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/getEnvironmentAdvancedNetworkingConfiguration) bewerking.
+1. Voor elke omgeving valideert u de egress-regels die van kracht zijn met de API voor Cloud Manager [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) bewerking.
 
    __getEnvironmentAdvancedNetworkingConfiguration HTTP-aanvraag__
 
@@ -145,7 +149,7 @@ Begin door de flexibele havenuitgang op AEM as a Cloud Service toe te laten.
        -H 'Content-Type: application/json'
    ```
 
-1. Flexibele poortegress-configuraties kunnen worden bijgewerkt met de Cloud Manager-API [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) bewerking. Herinneren `enableEnvironmentAdvancedNetworkingConfiguration` is een `PUT` bewerking, zodat alle regels moeten worden voorzien van elke aanroep van deze bewerking.
+1. Flexibele poortegress-configuraties kunnen worden bijgewerkt met de Cloud Manager-API [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) bewerking. Herinneren `enableEnvironmentAdvancedNetworkingConfiguration` is een `PUT` bewerking, zodat alle regels moeten worden voorzien van elke aanroep van deze bewerking.
 
 1. Nu kunt u de flexibele configuratie van de havenuitgang in uw douane AEM code en configuratie gebruiken.
 
@@ -174,7 +178,7 @@ Bij het aanroepen van HTTP/HTTPS naar externe services op niet-standaardpoorten,
 
 >[!TIP]
 >
-> Zie de flexibele documentatie van de havenuitgang van AEM as a Cloud Service voor [de volledige reeks verpletterende regels](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
+> Zie de flexibele documentatie van de havenuitgang van AEM as a Cloud Service voor [de volledige reeks verpletterende regels](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
 
 #### Codevoorbeelden
 
