@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 09dbe82eeebd598d4a5949d61a7ae14937c18b72
+source-git-commit: e9b88505ae47b32de8b198fa6fcd81e033e5d5ff
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -105,20 +105,22 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       </div>
       <p>
         <br/>
-         Deel één (van twee) van uiteinden en trucs voor migratie naar de cloud. Onze belangrijkste focus in deel één is de beste praktijken en voorbereidend werk die u klaar maken om te migreren.
+         Deel één (van twee) van onze tips en trucs voor het migreren naar de cloud. Onze belangrijkste focus in deel één is de beste praktijken en voorbereidend werk die u klaar maken om te migreren.
       </p>
    </td> 
   </tr>
 <tr>
    <td>
-      <img alt="Migratie (deel 2)" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-content-migration-part-2.md">
+            <img alt="Migratie (deel 2)" src="./imgs/007-thumb.png"/>
+        </a>
       <div>
-        <strong>Migratie (deel 2)</strong>        
+        <a href="./cloud5-aem-content-migration-part-2.md"><strong>Migratie (deel 2)</strong></a>     
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-         Vanaf 14 april 2022
+         Deel twee (van twee) van onze tips en trucs voor het migreren naar de cloud. Deel twee gaat voornamelijk over het gebruik van de beschikbare instrumenten voor migratie.
       </p>
      </td>   
      <td>
