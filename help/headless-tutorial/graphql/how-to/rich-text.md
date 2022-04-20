@@ -1,5 +1,5 @@
 ---
-title: Werken met RTF-tekst | AEM zonder kop
+title: RTF-tekst gebruiken met AEM zonder kop
 description: Leer aan auteursinhoud en bedt referenced inhoud gebruikend een multi-line rijke tekstredacteur met de Fragments van de Inhoud van Adobe Experience Manager, en hoe de rijke tekst door AEM GraphQL APIs als JSON wordt geleverd om door koploze toepassingen te worden verbruikt.
 version: Cloud Service
 doc-type: article
@@ -7,22 +7,21 @@ kt: 9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
-source-git-commit: 88797cf950dae46d0f856330df12c59a4efe6456
+exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
+source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
 
-
-# Werken met RTF-tekst in Adobe Experience Manager Headless
+# RTF-tekst met AEM zonder kop
 
 Het tekstveld Meerdere regels is een gegevenstype van inhoudsfragmenten waarmee auteurs RTF-inhoud kunnen maken. Verwijzingen naar andere inhoud, zoals afbeeldingen of andere Content Fragments, kunnen dynamisch in regel worden ingevoegd in de tekstflow. AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als HTML, platte tekst of als pure JSON. De vertegenwoordiging JSON is krachtig aangezien het de cliënttoepassing volledige controle over geeft hoe te om de inhoud terug te geven.
 
 ## Meerdere regels bewerken
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
-
 
 In de Inhoudsfragmenteditor biedt de menubalk van het tekstveld Meerdere regels auteurs standaard rijke tekstopmaakmogelijkheden, zoals **vet**, *cursief* en onderstrepen. Als u het veld Meerdere regels opent in de modus Volledig scherm, wordt [aanvullende opmaakgereedschappen, zoals Alineatekst, zoeken en vervangen, spellingcontrole en meer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
