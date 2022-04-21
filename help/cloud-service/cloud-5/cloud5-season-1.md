@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: e9b88505ae47b32de8b198fa6fcd81e033e5d5ff
+source-git-commit: bd60205f5561cfc8d758a15e69bc26fa1d64bd4d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -124,14 +124,16 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       </p>
      </td>   
      <td>
-      <img alt="Validator van verzender" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-dispatcher-validator.md">
+            <img alt="Validator van verzender" src="./imgs/008-thumb.png"/>
+        </a>
       <div>
-         <strong>Validator van verzender</strong>
+         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Validator van verzender</strong></a>
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-         Vanaf 22 april 2022
+         Als onderdeel van de eerdere migratiebesprekingen kijken we naar de validator van de verzender en naar enkele taken die deze kan uitvoeren.
       </p>
    </td>
      <td>
