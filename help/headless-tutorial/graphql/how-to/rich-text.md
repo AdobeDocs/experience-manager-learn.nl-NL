@@ -8,16 +8,18 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 22d5aa7299ceacd93771bd73a6b89d1903edc561
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
 
 # RTF-tekst met AEM zonder kop
 
-Het tekstveld Meerdere regels is een gegevenstype van inhoudsfragmenten waarmee auteurs RTF-inhoud kunnen maken. Verwijzingen naar andere inhoud, zoals afbeeldingen of andere Content Fragments, kunnen dynamisch in regel worden ingevoegd in de tekstflow. AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als HTML, platte tekst of als pure JSON. De vertegenwoordiging JSON is krachtig aangezien het de cliënttoepassing volledige controle over geeft hoe te om de inhoud terug te geven.
+Het tekstveld Meerdere regels is een gegevenstype van inhoudsfragmenten waarmee auteurs RTF-inhoud kunnen maken. Verwijzingen naar andere inhoud, zoals afbeeldingen of andere Content Fragments, kunnen dynamisch in regel worden ingevoegd in de tekstflow. Het tekstveld Eén regel is een ander gegevenstype van inhoudsfragmenten dat moet worden gebruikt voor eenvoudige tekstelementen.
+
+AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als HTML, platte tekst of als pure JSON. De vertegenwoordiging JSON is krachtig aangezien het de cliënttoepassing volledige controle over geeft hoe te om de inhoud terug te geven.
 
 ## Meerdere regels bewerken
 
@@ -25,13 +27,25 @@ Het tekstveld Meerdere regels is een gegevenstype van inhoudsfragmenten waarmee 
 
 In de Inhoudsfragmenteditor biedt de menubalk van het tekstveld Meerdere regels auteurs standaard rijke tekstopmaakmogelijkheden, zoals **vet**, *cursief* en onderstrepen. Als u het veld Meerdere regels opent in de modus Volledig scherm, wordt [aanvullende opmaakgereedschappen, zoals Alineatekst, zoeken en vervangen, spellingcontrole en meer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
+>[!NOTE]
+>
+> De rijke tekstplug-ins in de Multi-line editor kunnen niet worden aangepast.
+
 ## Gegevenstype meerdere regels {#multi-line-data-type}
 
 Gebruik de **Tekst met meerdere regels** gegevenstype bij het definiëren van het inhoudsfragmentmodel om RTF-bewerkingen mogelijk te maken.
 
 ![Gegevenstype Meerdere regels met tekstopmaak](assets/rich-text/multi-line-rich-text.png)
 
-Als u het tekstgegevenstype Meerdere regels gebruikt, kunt u het **Standaardtype** tot:
+Verschillende eigenschappen van het veld Meerdere regels kunnen worden geconfigureerd.
+
+De **Renderen als** eigenschap kan worden ingesteld op:
+
+* Tekstgebied - geeft één veld met meerdere regels weer
+* Meerdere velden - geeft meerdere velden voor Mutli-lijnen weer
+
+
+De **Standaardtype** kan worden ingesteld op:
 
 * RTF
 * Markering
@@ -40,6 +54,8 @@ Als u het tekstgegevenstype Meerdere regels gebruikt, kunt u het **Standaardtype
 De **Standaardtype** Deze optie heeft rechtstreeks invloed op de bewerkingservaring en bepaalt of de tekstopties opgebouwd zijn.
 
 U kunt ook [inline-verwijzingen inschakelen](#insert-fragment-references) aan andere Inhoudsfragmenten controleren **Fragmentverwijzing toestaan** en het vormen van **Modellen voor toegestane inhoudsfragmenten**.
+
+Als de inhoud wordt gelokaliseerd, controleert u de **Vertaalbaar** doos. Alleen RTF en normale tekst kunnen worden gelokaliseerd. Zie [werken met gelokaliseerde inhoud voor meer informatie](./localized-content.md).
 
 ## RTF-reactie met GraphQL API
 
@@ -364,10 +380,12 @@ Gebruik de `json` retourneringstype en de `_references` object bij het samenstel
         _path
         _publishUrl
         width
+        __typename
       }
       ...on ArticleModel {
         _path
         author
+        __typename
       }
       
     }
@@ -444,12 +462,14 @@ In de bovenstaande vraag, `main` wordt geretourneerd als JSON. De `_references` 
       "_references": [
         {
           "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://localhost:4503/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920
+          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
+          "width": 1920,
+          "__typename": "ImageRef"
         },
         {
           "_path": "/content/dam/wknd/en/magazine/la-skateparks/ultimate-guide-to-la-skateparks",
           "author": "Stacey Roswells",
+          "__typename": "ArticleModel"
         }
       ]
     }
@@ -498,11 +518,11 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._path} alt={'in-line reference'} /> 
+        return <img src={node._publishUrl} alt={'in-line reference'} /> 
     },
-    'AdventureModel': (node) => {
-        // when __typename === AdventureModel
-        return <Link to={`/adventure:${node._path}`}>{`${node.adventureTitle}: ${node.adventurePrice}`}</Link>;
+    'ArticleModel': (node) => {
+        // when __typename === ArticleModel
+        return <Link to={`/article:${node._path}`}>{`${node.value}`}</Link>;
     }
     ...
 }
