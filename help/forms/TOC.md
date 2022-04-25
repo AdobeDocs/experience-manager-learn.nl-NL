@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
+source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ ht-degree: 0%
    + [Clientbibliotheek](storing-retrieving-form-data/part4.md)
    + [Adaptief formuliersjabloon](storing-retrieving-form-data/part5.md)
    + [Voorbeeldelementen implementeren](storing-retrieving-form-data/part6.md)
-+ Triggerend AEM Workflow van de verzending van Mobile-formulieren{#offline-mobile-form-submission}
++ Triggerend AEM Workflow van het indienen van mobiele formulieren{#offline-mobile-form-submission}
    + [Inleiding](offline-mobile-form-submission/introduction.md)
    + [Aangepast profiel](offline-mobile-form-submission/part-one.md)
    + [PDF-verzending verwerken](offline-mobile-form-submission/part-two.md)
@@ -204,14 +204,15 @@ ht-degree: 0%
 + Document Services {#document-services}
    + [Typen PDF forms](document-services/pdf-forms-and-documents.md)
    + [PDF insluiten in adaptieve vorm](document-services/embed-pdf-inline.md)
+   + [PDF](document-services/display-pdf-in-carousel.md)
    + [Assembler Service gebruiken in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Controlemap gebruiken in AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Streepjescodeservice gebruiken in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [PDFG-service gebruiken in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Uitvoer- en Forms-service gebruiken in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Meerdere PDF&#39;s genereren op basis van één gegevensbestand](document-services/generate-multi-record-pdf.md)
-   + [PDF genereren op Mobile-formulierverzending](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Interactieve PDF genereren uit Mobile-formulier](document-services/render-interactive-form-using-api.md)
+   + [PDF genereren op mobiele formulieren](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Interactieve PDF uit mobiel formulier genereren](document-services/render-interactive-form-using-api.md)
    + [Interactieve DoR genereren uit adaptief formulier](document-services/generate-interactive-dor.md)
    + [Credentiële Reader extensies configureren](document-services/configuring-reader-extension-osgi.md)
    + [Gebruiksrechten toepassen op PDF bij XDP-uitvoering](document-services/rendering-and-reader-extending-xdp-templates-article.md)
