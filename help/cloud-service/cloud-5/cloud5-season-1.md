@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: bd60205f5561cfc8d758a15e69bc26fa1d64bd4d
+source-git-commit: 571f79cbcadff2161c3daa993ac833d9d4068f98
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -137,14 +137,16 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       </p>
    </td>
      <td>
-      <img alt="Tips voor indexeren en zoeken" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-search-and-indexing.md">
+            <img alt="Tips voor indexeren en zoeken" src="./imgs/009-thumb.png"/>
+        </a>
       <div>
-         <strong>Tips voor indexeren en zoeken</strong>
+         <a href="./cloud5-aem-search-and-indexing.md"><strong>Tips voor indexeren en zoeken</strong></a>
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-         Vanaf 29 april 2022
+         Voor iets zo complex zoals indexeren en onderzoek, toont het team u wat gemakkelijke wins voor het optimaliseren van uw ontwikkelingstijd en het oplossen van dingen alvorens zij problemen worden.
       </p>
    </td> 
   </tr>
