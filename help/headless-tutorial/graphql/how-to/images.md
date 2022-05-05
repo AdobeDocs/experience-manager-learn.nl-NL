@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
+source-git-commit: cca9ea744f938470b82b61d11269c1f9e8250bbe
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 0%
 
 ---
-
 
 # Afbeeldingen met AEM zonder kop
 
@@ -90,7 +90,7 @@ Het resulterende JSON-antwoord bevat de gevraagde velden met de URL&#39;s naar d
 
 Gebruik het desbetreffende veld om de afbeelding waarnaar wordt verwezen, in uw toepassing te laden. `_path`, `_authorUrl`, of `_publishUrl` van de `adventurePrimaryImage` als de bron-URL van de afbeelding.
 
-De domeinen van `_authorUrl` en `_publishUrl` worden automatisch gedefinieerd door AEM as a Cloud Service met behulp van de [Extern maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/externalizer.htmli).
+De domeinen van `_authorUrl` en `_publishUrl` worden automatisch gedefinieerd door AEM as a Cloud Service met behulp van de [ExternalAlizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/externalizer.html).
 
 In React ziet het weergeven van de afbeelding uit AEM Publish er als volgt uit:
 
