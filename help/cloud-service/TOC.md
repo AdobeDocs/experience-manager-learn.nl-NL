@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: 0b6e16d7263bc14c1824643b77678071694bcb7e
+source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '745'
 ht-degree: 10%
 
 ---
@@ -142,6 +142,7 @@ ht-degree: 10%
       + [Installatiegit](./forms/developing-for-cloud-service/setup-git.md)
       + [IntelliJ synchroniseren met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [Een formulier maken](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [Forms Portal-componenten inschakelen](./forms/developing-for-cloud-service/forms-portal-components.md)
       + [Inclusief Cloud Services en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
