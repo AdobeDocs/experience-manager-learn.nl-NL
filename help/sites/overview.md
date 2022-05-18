@@ -1,13 +1,13 @@
 ---
 title: AEM Sites-video's en -Tutorials
-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites.
+description: Meer informatie over AEM met onze video's en zelfstudies voor Adobe Experience Manager Sites.
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '348'
+ht-degree: 1%
 
 ---
 
