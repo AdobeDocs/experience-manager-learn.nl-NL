@@ -4,7 +4,8 @@ description: Met Reden twee kunt u (AEM) as a Cloud Service leren van Adobe-desk
 sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: 99424ae98bd85a8d0203f8f5d4bf24a4e4d7cb53
+exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
+source-git-commit: c42e37c6bebb59189000d5382ccab2c8656455ee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -30,9 +31,9 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
 <table>
   <tr>
    <td>
-      <img alt="Admin Console" src="./imgs/coming-soon.png"/>
+      <img alt="Fragmenten" src="./imgs/coming-soon.png"/>
       <div>
-         <strong>Admin Console</strong>        
+         <strong>Fragmenten</strong>        
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
@@ -41,9 +42,9 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       </p>
      </td>   
      <td>
-         <img alt="Fragmenten" src="./imgs/coming-soon.png"/>
+         <img alt="Repository Modernizer" src="./imgs/coming-soon.png"/>
       <div>
-         <strong>Fragmenten</strong>
+         <strong>Repository Modernizer</strong>
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
@@ -52,9 +53,9 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       </p>
    </td>
      <td>
-            <img alt="Repository Modernizer" src="./imgs/coming-soon.png"/>
+            <img alt="Admin Console" src="./imgs/coming-soon.png"/>
       <div>
-            <strong>Repository Modernizer</strong>
+            <strong>Admin Console</strong>
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
