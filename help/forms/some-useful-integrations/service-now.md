@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
-source-git-commit: 81a15fb0182760aaac8cb58cccbfe28de7323492
+source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ Gebeurtenis maken en weergeven in [!DNL ServiceNow] Formuliergegevensmodel gebru
 ## Voorbeeldelementen
 
 De voorbeeldelementen die bij dit artikel worden geleverd, zijn onder andere:
+
 * Configuratie van cloudservice
 * Taggebestanden om een incident te maken en alle incidenten op te halen
 * Formuliergegevensmodel gebaseerd op de wagerbestanden
@@ -37,8 +38,18 @@ De voorbeeldelementen die bij dit artikel worden geleverd, zijn onder andere:
 
 * Download de [voorbeeldelementen](assets/service-now.zip)
 * Elementen importeren in AEM met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* Het voor deze integratie gebruikte wagerbestand bevindt zich onder de ```/conf/9957/settings/cloudconfigs/fdm``` map in crx-opslagplaats
 * Bewerk de [Configuratie van de cloudservice van CreateIncident](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)om aan uw instantie te passen ServiceNow.
-* Bewerk de [Configuratie van de GetAllIncidents-cloudservice](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) om uw instantie ServiceNow aan te passen
+* Bewerk de [Configuratie van de GetAllIncidents-cloudservice](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) om aan uw instantie te passen ServiceNow. U zult de gastheer, de gebruikersbenaming en het wachtwoord moeten veranderen om uw ServiceNow instantiegeloofsbrieven aan te passen.
+
+## Toegangsreferenties van ServiceNow-instantie
+
+* Klik op uw gebruikersprofiel
+   ![klikken op gebruikersprofiel](assets/snow-1.png)
+
+* Klik op Instantiewachtwoord beheren
+* De instantiedetails worden hieronder weergegeven
+   ![instantiedetails](assets/snow-3.png)
 
 ## Integratie testen
 

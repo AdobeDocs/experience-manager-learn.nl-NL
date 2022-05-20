@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Als u uw eerste wagger/OpenAPI-bestand wilt maken, volgt u de [OpenAPI-documenta
 
 Gebruik de [wageneditor](https://editor.swagger.io/) om uw wagerbestand te maken om de bewerkingen te beschrijven die OTP-code verzenden en verifiëren die met SMS is verzonden. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide wagerbestand kan worden gedownload van [hier](assets/drivers-license-swagger.zip)
 
-## Overwegingen bij het definiëren van het swagerbestand
+## Overwegingen bij het definiëren van het wagerbestand
 
 * Definities zijn vereist
 * $ref moet worden gebruikt voor methodedefinities
