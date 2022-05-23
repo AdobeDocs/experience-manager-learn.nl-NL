@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
-source-git-commit: e666e38d6b2a7057f7016b35ad1034a4487e9bc7
+exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
+source-git-commit: e4cd87e5d2d78c3113ef860b9f357cfacb2c874a
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2775'
 ht-degree: 1%
 
 ---
-
 
 # SAML 2.0-verificatie{#saml-2-0-authentication}
 
@@ -398,6 +398,10 @@ Na succesvolle authentificatie aan IDP, zal IDP een POST van HTTP terug naar AEM
 ```
 
 Als de URL die bij de Apache-webserver wordt herschreven, is geconfigureerd (`dispatcher/src/conf.d/rewrites/rewrite.rules`), ervoor te zorgen dat verzoeken aan de `.../saml_login` eindpunten worden niet per ongeluk beheerd.
+
+## Gegevenssynchronisatie inschakelen
+
+De gebruikersverslagen moeten over AEM worden gesynchroniseerd publiceren rij, zodra de de authentificatiestroom van SAML tot een gebruiker in publiceren AEM leidt. Naar [gegevenssynchronisatie inschakelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization), stuurt u een verzoek naar de Adobe Klantenondersteuning (via [AdminConsole](https://adminconsole.adobe.com) > Ondersteuning) met het verzoek om deze functie in te schakelen.
 
 ## SAML-configuratie implementeren
 
