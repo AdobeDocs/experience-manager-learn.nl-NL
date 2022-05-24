@@ -8,17 +8,17 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: 8484897297940ab28619c4b1af5362a5937eadfa
+exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
-
 # Configuratie van cloudservices opnemen in uw project
 
-Maak een configuratiecontainer met de naam &#39;FormsTutorial&#39; voor de configuratie van uw cloudservices. Maak een configuratie voor cloudservices voor Azure Storage met de naam &#39;Formulierverzendingen opslaan in Azure&#39; in de container &#39;FormsTutorial&#39;. Geef de gegevens van de Azure-opslagaccount en de accountsleutel op
+Maak een configuratiecontainer met de naam &#39;FormTutorial&#39; om uw configuratie voor cloudservices in te stellen. Maak een configuratie voor cloudservices voor Azure Storage met de naam &#39;FormsCSAndAzureBlob&#39; in de &#39;FormTutorial&#39;-container door de gegevens van de Azure-opslagaccount en de Azure-toegangssleutel op te geven.
 
 Open uw AEM project in IntelliJ. Zorg ervoor dat u de map FormTutorial toevoegt zoals hieronder in het project ui.content wordt weergegeven
 ![cloud-services-configuratie](assets/cloud-services-configuration.png)
@@ -45,4 +45,4 @@ Neem het juiste item op in het bestand filter.xml van het project ui.content
 
 >[!NOTE]
 >
->Wanneer u nu uw project maakt en implementeert, beschikt het project over het formuliergegevensmodel op basis van de configuratie van de cloudservices die beschikbaar is in uw cloudinstantie
+>Wanneer u nu uw project bouwt en implementeert met gebruik van cloudbeheer, moet u uw Azure-toegangssleutel opnieuw invoeren in de configuratie van cloudservices. Als u wilt voorkomen dat de toegangstoets opnieuw wordt ingevoerd, kunt u het beste contextbewuste configuratie maken met behulp van de omgevingsvariabelen die in het dialoogvenster [volgend artikel](./context-aware-fdm.md)

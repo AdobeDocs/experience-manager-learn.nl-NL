@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -160,14 +160,14 @@ Volg onderstaande stappen om dit voorbeeld op uw systeem te laten werken:
 
 * [De setvalue-bundel downloaden en implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel die de codes instelt van de verzonden formuliergegevens.
 
-* [Het adaptieve voorbeeldformulier downloaden](assets/tag-and-store-in-dam-assets.zip)
+* [Download het voorbeeldadaptieve formulier](assets/tag-and-store-in-dam-adaptive-form.zip)
 
 * [Ga naar Forms en Documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Klik op Maken | Bestand uploaden en voorbeeldAdaptiveform.zip uploaden
+* Klik op Maken | Bestanden uploaden en uploaden van de tag-and-store-in-dam-adaptive-form.zip
 
 * [Artikelelementen importeren](assets/tag-and-store-in-dam-assets.zip) met AEM pakketbeheer
-* Open de [voorbeeldformulier in voorbeeldmodus](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Vul de sectie Personen in en verzend het formulier.
+* Open de [voorbeeldformulier in voorbeeldmodus](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Alle velden invullen** en het formulier verzenden.
 * [Navigeren naar de map Peak in DAM](http://localhost:4502/assets.html/content/dam/Peak). U zou DoR in de Piek omslag moeten zien. Controleer de eigenschappen van het document. Het moet op passende wijze worden gelabeld.
 Gefeliciteerd! U hebt het voorbeeld op uw systeem geïnstalleerd
 
