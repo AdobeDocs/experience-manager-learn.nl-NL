@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 4f8222d3185ad4e87eda662c33c9ad05ce3b0427
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Begin door het specifieke uitgangIP adres op AEM as a Cloud Service toe te laten
 
    De JSON-parameters definiëren in een `dedicated-egress-ip-address.json` en verstrekt via `... -d @./dedicated-egress-ip-address.json`.
 
-[Download het voorbeeld specific-egress-ip-address.json](./assets/dedicated-egress-ip-address.json)
+   [Download het voorbeeld specific-egress-ip-address.json](./assets/dedicated-egress-ip-address.json). Dit bestand is slechts een voorbeeld. Configureer uw bestand naar wens op basis van de optionele/verplichte velden die zijn gedocumenteerd op [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
