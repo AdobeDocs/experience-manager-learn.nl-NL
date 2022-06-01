@@ -9,7 +9,7 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: 4f8222d3185ad4e87eda662c33c9ad05ce3b0427
+source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -167,43 +167,43 @@ Begin door het specifieke uitgangIP adres op AEM as a Cloud Service toe te laten
 
 1. Nu kunt u het specifieke IP van de uitgang adres in uw douane AEM code en configuratie gebruiken. Vaak wanneer het gebruiken van specifiek uitgangIP adres, de externe diensten AEM as a Cloud Service verbindingen worden gevormd om verkeer van dit specifieke IP adres slechts toe te staan.
 
-## Verbinding maken met externe services via toegewezen poortuitgang
+## Verbinding maken met externe services via toegewezen IP-adres voor uitgang
 
 Met het specifieke toegelaten adres van uitgang IP, AEM code en configuratie kan specifieke uitgang IP gebruiken om vraag aan externe diensten te maken. Er zijn twee vlotten van externe vraag die AEM verschillend behandelt:
 
-1. HTTP/HTTPS-aanroepen naar externe services op niet-standaard poorten
+1. HTTP/HTTPS-aanroepen naar externe services
    + Omvat HTTP/HTTPS vraag die aan de diensten wordt gemaakt die op havens buiten standaard 80 of 443 havens lopen.
 1. niet-HTTP/HTTPS-aanroepen naar externe services
    + Omvat om het even welke niet-HTTP vraag, zoals verbindingen met de servers van de Post, SQL gegevensbestanden, of de diensten die op andere niet-HTTP/HTTPS protocollen lopen.
 
-HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegestaan en hebben geen extra configuratie of overwegingen nodig.
+HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegestaan, maar gebruiken het toegewezen IP-adres voor egress niet als dit niet op de hieronder beschreven manier is geconfigureerd.
 
 >[!TIP]
 >
 > Zie AEM de specifieke IP van de uitgang IP van de as a Cloud Service adresdocumentatie voor [de volledige reeks verpletterende regels](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedcated-egress-ip-traffic-routing=).
 
 
-### HTTP/HTTPS op niet-standaardpoorten
+### HTTP/HTTPS
 
-Wanneer u HTTP/HTTPS-verbindingen maakt met niet-standaardpoorten (niet-80/443) vanaf AEM, moet de verbinding tot stand worden gebracht via speciale hosts en poorten, die via tijdelijke aanduidingen worden verschaft.
+Wanneer het creëren van verbindingen HTTP/HTTPS van AEM, om een specifiek uitgangIP adres te krijgen, moet de verbinding door speciale gastheren en havens worden gemaakt, die via placeholders worden verstrekt.
 
 AEM biedt twee sets speciale Java™-systeemvariabelen die zijn toegewezen aan AEM HTTP/HTTPS-proxy&#39;s.
 
-| Naam variabele | Gebruik | Java™-code | OSGi-configuratie | | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Proxyhost voor HTTP-verbindingen | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | | `AEM_HTTP_PROXY_PORT` | Proxypoort voor HTTP-verbindingen | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` | | `AEM_HTTPS_PROXY_HOST` | Proxyhost voor HTTPS-verbindingen | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | | `AEM_HTTPS_PROXY_PORT` | Proxypoort voor HTTPS-verbindingen | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` |
+| Naam variabele | Gebruik | Java™-code | OSGi-configuratie | Mod_proxyconfiguratie voor Apache-webservers | | - | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Proxyhost voor HTTP-verbindingen | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | `${AEM_HTTP_PROXY_HOST}` | | `AEM_HTTP_PROXY_PORT` | Proxypoort voor HTTP-verbindingen | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` |  `${AEM_HTTP_PROXY_PORT}` | | `AEM_HTTPS_PROXY_HOST` | Proxyhost voor HTTPS-verbindingen | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | `${AEM_HTTPS_PROXY_HOST}` | | `AEM_HTTPS_PROXY_PORT` | Proxypoort voor HTTPS-verbindingen | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` | `${AEM_HTTPS_PROXY_PORT}` |
 
 Verzoeken naar externe HTTP/HTTPS-services moeten worden gedaan door de proxyconfiguratie van de Java™ HTTP-client te configureren met behulp van AEM proxyhosts/poortwaarden.
 
-Bij het aanroepen van HTTP/HTTPS naar externe services op niet-standaardpoorten, is er geen corresponderende `portForwards` moet worden gedefinieerd met de API voor cloud Manager `enableEnvironmentAdvancedNetworkingConfiguration` verrichting, aangezien de haven die &quot;regels&quot;door:sturen &quot;in code&quot;wordt bepaald.
+Bij het aanroepen van HTTP/HTTPS naar externe services op elke poort, is er geen corresponderende `portForwards` moet worden gedefinieerd met de API voor cloud Manager `enableEnvironmentAdvancedNetworkingConfiguration` verrichting, aangezien de haven die &quot;regels&quot;door:sturen &quot;in code&quot;wordt bepaald.
 
 #### Codevoorbeelden
 
 <table>
 <tr>
 <td>
-    <a  href="./examples/http-on-non-standard-ports.md"><img alt="HTTP/HTTPS op niet-standaardpoorten" src="./assets/code-examples__http.png"/></a>
-    <div><strong><a href="./examples/http-on-non-standard-ports.md">HTTP/HTTPS op niet-standaardpoorten</a></strong></div>
+    <a  href="./examples/http-dedicated-egress-ip-vpn.md"><img alt="HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
+    <div><strong><a href="./examples/http-dedicated-egress-ip-vpn.md">HTTP/HTTPS</a></strong></div>
     <p>
-        Java™-codevoorbeeld waarbij een HTTP/HTTPS-verbinding van AEM as a Cloud Service wordt gemaakt met een externe service op niet-standaard HTTP/HTTPS-poorten.
+        Java™-codevoorbeeld waarbij een HTTP/HTTPS-verbinding van AEM as a Cloud Service wordt gemaakt met een externe service via het HTTP/HTTPS-protocol.
     </p>
 </td>   
 <td></td>   

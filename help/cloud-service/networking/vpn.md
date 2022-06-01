@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: 52a2303f75c23c72e201b1f674f7f882db00710b
+source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -220,16 +220,16 @@ Begin door het Virtuele Privé Netwerk op AEM as a Cloud Service toe te laten.
 
 Met het Virtuele Privé Toegelaten Netwerk, kunnen AEM code en configuratie hen gebruiken om vraag aan externe diensten via VPN te maken. Er zijn twee vlotten van externe vraag die AEM verschillend behandelt:
 
-1. HTTP/HTTPS-aanroepen naar externe services op niet-standaard poorten
+1. HTTP/HTTPS-aanroepen naar externe services
    + Omvat HTTP/HTTPS vraag die aan de diensten wordt gemaakt die op havens buiten standaard 80 of 443 havens lopen.
 1. niet-HTTP/HTTPS-aanroepen naar externe services
    + Omvat om het even welke niet-HTTP vraag, zoals verbindingen met de servers van de Post, SQL gegevensbestanden, of de diensten die op andere niet-HTTP/HTTPS protocollen lopen.
 
-HTTP/HTTPS-aanvragen van AEM op standaardpoorten (80/443) zijn standaard toegestaan en hebben geen extra configuratie of overwegingen nodig.
+HTTP/HTTPS-verzoeken van AEM op standaardpoorten (80/443) zijn standaard toegestaan, maar ze gebruiken de VPN-verbinding niet als deze niet op de hieronder beschreven manier is geconfigureerd.
 
-### HTTP/HTTPS op niet-standaardpoorten
+### HTTP/HTTPS
 
-Wanneer u HTTP/HTTPS-verbindingen maakt met niet-standaardpoorten (niet-80/443) vanaf AEM, moet de verbinding tot stand worden gebracht via speciale host en poorten, die via plaatsaanduidingen worden geleverd.
+Wanneer het creëren van verbindingen HTTP/HTTPS van AEM, om een specifiek uitgangIP adres te krijgen of door VPN worden verpletterd, moet de verbinding door speciale gastheer en havens worden gemaakt, die via placeholders worden verstrekt.
 
 AEM biedt twee sets speciale Java™-systeemvariabelen die zijn toegewezen aan AEM HTTP/HTTPS-proxy&#39;s.
 
@@ -237,7 +237,7 @@ AEM biedt twee sets speciale Java™-systeemvariabelen die zijn toegewezen aan A
 
 Verzoeken naar externe HTTP/HTTPS-services moeten worden gedaan door de proxyconfiguratie van de Java™ HTTP-client via AEM proxyhosts/poortwaarden te configureren.
 
-Bij het aanroepen van HTTP/HTTPS naar externe services op niet-standaardpoorten, is er geen corresponderende `portForwards` moet worden gedefinieerd met de API&#39;s van Cloud Manager `__enableEnvironmentAdvancedNetworkingConfiguration` verrichting, aangezien de haven die &quot;regels&quot;door:sturen &quot;in code&quot;wordt bepaald.
+Bij het aanroepen van HTTP/HTTPS naar externe services op elke poort, is er geen corresponderende `portForwards` moet worden gedefinieerd met de API&#39;s van Cloud Manager `__enableEnvironmentAdvancedNetworkingConfiguration` verrichting, aangezien de haven die &quot;regels&quot;door:sturen &quot;in code&quot;wordt bepaald.
 
 >[!TIP]
 >
@@ -248,10 +248,10 @@ Bij het aanroepen van HTTP/HTTPS naar externe services op niet-standaardpoorten,
 <table>
 <tr>
 <td>
-    <a  href="./examples/http-on-non-standard-ports.md"><img alt="HTTP/HTTPS op niet-standaardpoorten" src="./assets/code-examples__http.png"/></a>
-    <div><strong><a href="./examples/http-on-non-standard-ports.md">HTTP/HTTPS op niet-standaardpoorten</a></strong></div>
+    <a  href="./examples/http-dedicated-egress-ip-vpn.md"><img alt="HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
+    <div><strong><a href="./examples/http-dedicated-egress-ip-vpn.md">HTTP/HTTPS</a></strong></div>
     <p>
-        Java™-codevoorbeeld waarbij een HTTP/HTTPS-verbinding van AEM as a Cloud Service wordt gemaakt met een externe service op niet-standaard HTTP/HTTPS-poorten.
+        Java™-codevoorbeeld waarbij een HTTP/HTTPS-verbinding van AEM as a Cloud Service wordt gemaakt met een externe service via het HTTP/HTTPS-protocol.
     </p>
 </td>
 <td></td>
