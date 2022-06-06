@@ -8,9 +8,10 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 10423
-source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
+exl-id: 2ce0c07b-1316-4170-a84d-23430437a9cc
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -24,14 +25,14 @@ De volgende stappen zijn nodig om een contextbewuste cloudconfiguratie te maken
 
 ## Omgevingsvariabelen maken
 
-Standaardomgevingsvariabelen kunnen worden geconfigureerd en beheerd via Cloud Manager. Zij worden verstrekt aan het runtime milieu en kunnen in configuraties worden gebruikt OSGi. Omgevingsvariabelen kunnen milieuspecifieke waarden of omgevingsgeheimen zijn, op basis van wat wordt gewijzigd.
+Standaardomgevingsvariabelen kunnen worden geconfigureerd en beheerd via Cloud Manager. Zij worden verstrekt aan het runtime milieu en kunnen in configuraties worden gebruikt OSGi. [Omgevingsvariabelen kunnen milieuspecifieke waarden of omgevingsgeheimen zijn, op basis van wat wordt gewijzigd.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
 
-[Omgevingsvariabelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+
 
 De volgende schermafbeelding toont de omgevingsvariabelen azure_key en azure_connection_string die zijn gedefinieerd
 ![environment_variables](assets/environment-variables.png)
 
-Deze omgevingsvariabelen kunnen vervolgens worden opgegeven in de configuratiebestanden die moeten worden gebruikt in de juiste omgevingen. Als u bijvoorbeeld wilt dat alle auteur-instanties deze omgevingsvariabelen gebruiken, definieert u het configuratiebestand in de map config.auther, zoals hieronder gespecificeerd
+Deze omgevingsvariabelen kunnen vervolgens worden opgegeven in de configuratiebestanden die in de juiste omgeving moeten worden gebruikt. Als u bijvoorbeeld wilt dat alle auteur-instanties deze omgevingsvariabelen gebruiken, definieert u het configuratiebestand in de map config.auther hieronder.
 
 ## Configuratiebestand maken
 

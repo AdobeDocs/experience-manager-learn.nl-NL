@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1676'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 0%
    + [Bezig met vullen van tabel met de resultaten van Inroeping van de service Form Data Model](adaptive-forms/populatetable.md)
    + [Opmerkingen over werkstromen vastleggen](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
    + [Ingediende formuliergegevens opslaan in DB](adaptive-forms/storing-adaptive-form-data-in-db.md)
+   + [Formulierbijlage invoegen in DB](adaptive-forms/inserting-form-attachment-in-db.md)
    + [Formuliergegevensmodelservice in AEM 6.4-workflow](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Foutberichten verwerken in de stap Service Model van formuliergegevens](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [Formuliergegevensmodelservice in AEM 6.5.1-workflow](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)

@@ -1,18 +1,18 @@
 ---
 title: Uw eerste servlet maken in AEM Forms
 description: Stel uw eerste slingerservlet samen om gegevens samen te voegen met een formuliersjabloon.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
-
 
 # Sling Servlet
 
@@ -25,8 +25,8 @@ Een servlet in AEM kan als dienst OSGi worden geregistreerd: u kunt SlingSafeMet
 ## Servlet-code
 
 ```java
+package com.mysite.core.servlets;
 import javax.servlet.Servlet;
-
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
@@ -73,19 +73,19 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 
 Voer de volgende stappen uit om uw project te maken:
 
-* **opdrachtpromptvenster openen**
-* Ga naar `c:\aemformsbundles\learningaemforms\core`
-* De opdracht `mvn clean install -PautoInstallBundle` uitvoeren
+* Openen **opdrachtpromptvenster**
+* Ga naar `c:\aemformsbundles\mysite\core`
+* De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
 * Het bovenstaande bevel zal automatisch de bundel aan uw AEM instantie bouwen en opstellen die op localhost loopt:4502
 
-De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\learningaemforms\core\target`. De bundel kan ook in AEM worden opgesteld gebruikend [Felix Webconsole.](http://localhost:4502/system/console/bundles)
+De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\core\target`. De bundel kan ook in AEM worden opgesteld gebruikend [Felix-webconsole.](http://localhost:4502/system/console/bundles)
 
 
 ## Servlet Resolver testen
 
-Wijs uw browser naar de URL [servlet resolver](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Dit zal u servlet vertellen die voor een bepaalde weg zoals gezien in het hieronder ontsproten scherm zal worden aangehaald
+Wijs uw browser aan [servlet resolver-URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Dit zal u servlet vertellen die voor een bepaalde weg zoals gezien in het hieronder ontsproten scherm zal worden aangehaald
 ![servlet-resolver](assets/servlet-resolver.JPG)
 
-## De servlet testen met Postman
+## Serlet testen met Postman
 
 ![testserlet-postman](assets/test-servlet-postman.JPG)

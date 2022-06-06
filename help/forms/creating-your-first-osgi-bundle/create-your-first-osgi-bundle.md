@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -49,12 +49,6 @@ Maven is een tool voor automatisering van build die voornamelijk wordt gebruikt 
 
 ![gegevensbron](assets/mvn-version.JPG)
 
-## Settings.xml
-
-A Maven `settings.xml` In dit bestand worden waarden gedefinieerd die de uitvoering van Maven op verschillende manieren configureren. Meestal wordt het gebruikt om een lokale opslaglocatie, alternatieve externe opslagservers en verificatiegegevens voor privéopslagruimten te definiëren.
-
-Navigeren naar `C:\Users\<username>\.m2 folder`
-De inhoud van [settings.zip](assets/settings.zip) en plaatst deze in het `.m2` map.
 
 ## Verduistering installeren
 
@@ -68,24 +62,17 @@ Voer de volgende stappen uit om uw eerste gemaakte project te maken:
 * Een nieuwe map maken met de naam `aemformsbundles` in uw C-station
 * Een opdrachtprompt openen en naar `c:\aemformsbundles`
 * Voer het volgende bevel in uw bevelherinnering in werking
-* `mvn archetype:generate  -DarchetypeGroupId=com.adobe.granite.archetypes  -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=19`
 
-Het Maven project zal interactief worden geproduceerd en u zal worden gevraagd om waarden aan een aantal eigenschappen zoals te verstrekken:
+```java
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=36 -D appTitle="My Site" -D appId="mysite" -D groupId="com.mysite" -D aemVersion=6.5.13
+```
 
-| Eigenschapnaam | Significantie | Waarde |
-------------------------|---------------------------------------|---------------------
-| groupId | groupId identificeert uniek uw project over alle projecten | com.learningaemforms.adobe |
-| appsFolderName | Naam van de map die de projectstructuur bevat | leervormen |
-| artifactId | artifactId is de naam van de pot zonder versie. Als u het creeerde, dan kunt u kiezen welke naam u met kleine letters en geen vreemde symbolen wilt. | leervormen |
-| version | Als u het verspreidt, kunt u elke typische versie kiezen met nummers en punten (1.0, 1.1, 1.0.1, ...). | 1.0 |
-
-Accepteer de standaardwaarden voor de andere eigenschappen door op Enter te drukken.
-Als alles goed gaat zou u een bericht van het bouwstijlsucces in uw bevelvenster moeten zien
+Na succesvolle voltooiing zou u een bericht van het bouwstijlsucces in uw bevelvenster moeten zien
 
 ## Overschrijvingsproject maken van uw in kaart gebrachte project
 
-Wijzig uw werkmap in `learningaemforms`.
-Uitvoeren `mvn eclipse:eclipse` vanaf de opdrachtregel Met de bovenstaande opdracht leest u uw pombestand en maakt u Eclipse-projecten met de juiste metagegevens, zodat Eclipse de projecttypen, relaties, klassenpad enzovoort begrijpt.
+* Wijzig uw werkmap in `mysite`
+* Uitvoeren `mvn eclipse:eclipse` vanaf de opdrachtregel. De opdracht leest uw pombestand en maakt Eclipse-projecten met de juiste metagegevens, zodat Eclipse de projecttypen, relaties, klassenpad enzovoort begrijpt.
 
 ## Het project in een ovaal importeren
 
@@ -97,33 +84,24 @@ Ga naar **Bestand -> Importeren** en selecteert u **Bestaande Maven Projecten** 
 
 Klik op Next
 
-Selecteer `c:\aemformsbundles\learningaemform`s door op de knop **Bladeren** knop
+Selecteer de map c:\aemformsbundles\mysite by clicking the **Bladeren** knop
 
-![gegevensbron](assets/select-mvn-project.JPG)
+![gegevensbron](assets/mysite-eclipse-project.png)
 
 >[!NOTE]
 >U kunt desgewenst de geschikte modules importeren. Selecteer en importeer alleen de kernmodule als u alleen Java-code gaat maken in uw project.
 
 Klikken **Voltooien** om het importproces te starten
 
-Project wordt geïmporteerd in Eclipse en er wordt een aantal `learningaemforms.xxxx` mappen
+Project wordt geïmporteerd in Eclipse en er wordt een aantal `mysite.xxxx` mappen
 
-Breid uit `src/main/java` onder de `learningaemforms.core` map. Dit is de map waarin u het grootste deel van uw code gaat schrijven.
+Breid uit `src/main/java` onder de `mysite.core` map. Dit is de map waarin u het grootste deel van uw code gaat schrijven.
 
-![gegevensbron](assets/learning-core.JPG)
+![gegevensbron](assets/mysite-core-project.png)
 
-## Uw project samenstellen
+## AEMFD Client SDK opnemen
 
-
-
-
-Zodra u uw dienst OSGi, of servlet hebt geschreven, zult u uw project moeten bouwen om de bundel te produceren OSGi die kan worden opgesteld gebruikend de het Webconsole van Felix. Zie [AEMFD Client SDK](https://search.maven.org/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliënt SDK in uw Geweven project op te nemen. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder aangegeven.
-
-
-
-
-
-
+U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren van verschillende services die bij AEM Forms worden geleverd. Zie [AEMFD Client SDK](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliënt SDK in uw Geweven project op te nemen. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder aangegeven.
 
 ```xml
 <dependency>
@@ -136,7 +114,7 @@ Zodra u uw dienst OSGi, of servlet hebt geschreven, zult u uw project moeten bou
 Voer de volgende stappen uit om uw project te maken:
 
 * Openen **opdrachtpromptvenster**
-* Ga naar `c:\aemformsbundles\learningaemforms\core`
+* Ga naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
 Bovenstaande opdracht bouwt en installeert de bundel op de AEM server waarop `http://localhost:4502`. De bundel is ook beschikbaar op het bestandssysteem op
-   `C:\AEMFormsBundles\learningaemforms\core\target` en kan worden ingezet met behulp van [Felix-webconsole](http://localhost:4502/system/console/bundles)
+   `C:\AEMFormsBundles\mysite\core\target` en kan worden ingezet met behulp van [Felix-webconsole](http://localhost:4502/system/console/bundles)
