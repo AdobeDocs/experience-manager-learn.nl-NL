@@ -4,10 +4,10 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: 726cf83f3cabe46c12abb79288368407ebf4d525
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '760'
+ht-degree: 10%
 
 ---
 
@@ -253,6 +253,9 @@ ht-degree: 0%
    + Seizoen 2{#season-2}
       + [Fragmenten](./cloud-5/season-2/cloud5-experience-v-content-fragments.md)
       + [Repo Modernizer](./cloud-5/season-2/cloud5-repo-modernizer.md)
+      + [Admin Console](./cloud-5/season-2/cloud5-admin-console.md)
+      + [HERSTELLEN](./cloud-5/season-2/cloud5-repoinit.md)
+      + [Sling Job Scheduler](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
 + [AEM Deskundigenreeks](./aem-experts-series.md)
 + Tutorials met meerdere stappen{#multi-step-tutorials}
    + [AEM Sites-ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
