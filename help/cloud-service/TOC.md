@@ -4,9 +4,9 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: 726cf83f3cabe46c12abb79288368407ebf4d525
+source-git-commit: 45061581322e23efb936e91c11be48ceac64183b
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '763'
 ht-degree: 10%
 
 ---
@@ -82,6 +82,8 @@ ht-degree: 10%
       + [Opbouwen en implementeren](./debugging/cloud-service/build-and-deployment.md)
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [Browser voor opslagplaats](./debugging/cloud-service/repository-browser.md)
+      + Risico&#39;s{#risks}
+         + [Traveringswaarschuwingen](./debugging/cloud-service/risks/traversals.md)
 + Toegang tot AEM{#accessing}
    + [Overzicht](./accessing/overview.md)
    + [Adobe IMS-gebruikers](./accessing/adobe-ims-users.md)
