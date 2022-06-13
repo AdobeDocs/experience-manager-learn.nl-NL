@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: f2b5adea71ec8e772385b6e0ae068369798030e0
+source-git-commit: 6d5a531f44414887e8dc6568fa6f5dcb73bfb183
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2815'
 ht-degree: 1%
 
 ---
@@ -399,9 +399,14 @@ Na succesvolle authentificatie aan IDP, zal IDP een POST van HTTP terug naar AEM
 
 Als de URL die bij de Apache-webserver wordt herschreven, is geconfigureerd (`dispatcher/src/conf.d/rewrites/rewrite.rules`), ervoor te zorgen dat verzoeken aan de `.../saml_login` eindpunten worden niet per ongeluk beheerd.
 
-## Gegevenssynchronisatie inschakelen
+## Gegevenssynchronisatie inschakelen en tokens inkapselen
 
-De gebruikersverslagen moeten over AEM worden gesynchroniseerd publiceren rij, zodra de de authentificatiestroom van SAML tot een gebruiker in publiceren AEM leidt. Naar [gegevenssynchronisatie inschakelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization), stuurt u een verzoek naar de Adobe Klantenondersteuning (via [AdminConsole](https://adminconsole.adobe.com) > Ondersteuning) met het verzoek om deze functie in te schakelen.
+Zodra de de authentificatiestroom van SAML tot een gebruiker in publiceren AEM leidt, de AEM gebruikersknoop voor authentiek verklaard over de AEM publiceer de dienstrij.
+Dit vereist [gegevenssynchronisatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization) en [ingekapselde tokens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#sticky-sessions-and-encapsulated-tokens) in te schakelen door Adobe Support op de AEM-publicatieservice.
+
+Aanvraag verzenden naar Adobe Klantenondersteuning (via [AdminConsole](https://adminconsole.adobe.com) > Ondersteuning) met verzoek:
+
+> De synchronisatie van gegevens en ingekapselde tokens worden toegelaten op de Publish dienst van AEM voor Programma X en Milieu Y.
 
 ## SAML-configuratie implementeren
 
