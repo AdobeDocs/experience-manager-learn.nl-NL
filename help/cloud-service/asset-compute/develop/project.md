@@ -8,7 +8,7 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 839152aa67ba7ab2929f2c8093bfdc873761a645
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Voor het hulpprogramma voor ontwikkelaars is een bestand met de naam `console.js
 1. Ga naar de hoofdmap van het Adobe I/O-project en tik op __Alles downloaden__ in de rechterbovenhoek.
 1. Een bestand wordt gedownload als een `.json` het dossier met het project en de werkruimte prefixeerde, bijvoorbeeld: `wkndAemAssetCompute-81368-Development.json`
 1. U kunt
-   + De naam van het bestand wijzigen als `config.json` en verplaatst u het in de hoofdmap van uw Asset compute-arbeidersproject. Dit is de aanpak in deze zelfstudie.
+   + De naam van het bestand wijzigen als `console.json` en verplaatst u het in de hoofdmap van uw Asset compute-arbeidersproject. Dit is de aanpak in deze zelfstudie.
    + Verplaats de map naar een willekeurige map EN verwijs ernaar vanuit uw `.env` bestand met een configuratie-item `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. Het bestandspad kan absoluut of relatief zijn ten opzichte van de hoofdmap van uw project. Bijvoorbeeld:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`
 
