@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9270
-source-git-commit: 280ea1ec8fc5da644320753958361488872359cc
+source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '167'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,6 @@ ht-degree: 1%
 Een veelvoorkomend geval is dat de invullers van het formulier kunnen schakelen naar de zichtbaarheid van de tekst die in het wachtwoordveld wordt ingevoerd.
 Voor dit gebruik heb ik het oogpictogram van het [Font Awesome Library](https://fontawesome.com/). De vereiste CSS en eye.svg zijn opgenomen in de clientbibliotheek die voor deze demonstratie is gemaakt.
 
-## Live sample
-
-[Deze mogelijkheid is hier beschikbaar om te testen](https://forms.enablementadobe.com/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 ## Voorbeeldcode
 
