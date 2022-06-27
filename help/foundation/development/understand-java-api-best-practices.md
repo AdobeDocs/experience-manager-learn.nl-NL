@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b613aa65-f64b-4851-a2af-52e28271ce88
-source-git-commit: 967bcf3c4046a17303eb2fe70d7156267a7cbed7
+source-git-commit: 9ca80b743c2ca0d3e63cce99fa905be49d1fbcdd
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2071'
 ht-degree: 0%
 
 ---
@@ -61,11 +61,11 @@ Deze volgorde is een algemene regel, wat betekent dat er uitzonderingen bestaan.
 
 AEM API&#39;s bieden abstracties en functionaliteit die specifiek zijn voor gebruikssituaties die in productie zijn.
 
-AEM [PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) en [Pagina](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) API&#39;s bieden abstracties voor `cq:Page` knooppunten in AEM die webpagina&#39;s vertegenwoordigen.
+AEM [PageManager](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) en [Pagina](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) API&#39;s bieden abstracties voor `cq:Page` knooppunten in AEM die webpagina&#39;s vertegenwoordigen.
 
 Deze knooppunten zijn beschikbaar via [!DNL Sling] API&#39;s als bronnen en JCR API&#39;s als knooppunten AEM API&#39;s bieden abstracties voor veelvoorkomende gebruiksgevallen. Het gebruik van de AEM-API&#39;s zorgt voor een consistent gedrag tussen AEM product en aanpassingen en uitbreidingen die moeten worden AEM.
 
-### com.adobe.* vs com.day.* API&#39;s
+### com.adobe.&#42; vs com.day.&#42; API&#39;s
 
 AEM API&#39;s hebben een voorkeur voor een pakket, die wordt aangegeven door de volgende Java-pakketten, in volgorde van voorkeur:
 
@@ -95,7 +95,7 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 * [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) ondersteuning van algemene queryvereisten
 
 * Uitbreidbare API, zodat u aangepaste [query-voorspellingen](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html)
-* JCR-SQL2 en XPath kunnen rechtstreeks via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [JCR-API&#39;s](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html), retourneert u resultaten [[!DNL Sling] Bronnen](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [JCR-knooppunten](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
+* JCR-SQL2 en XPath kunnen rechtstreeks via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) en [JCR-API&#39;s](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), retourneert u resultaten [[!DNL Sling] Bronnen](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) of [JCR-knooppunten](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html), respectievelijk.
 
 >[!CAUTION]
 >
@@ -131,9 +131,9 @@ De voorkeurs-API is [AEM Query Builder](https://helpx.adobe.com/experience-manag
 
 ## JCR-API&#39;s
 
-* **[JCR 2.0 JavaDocs](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
+* **[JCR 2.0 JavaDocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
 
-De [API&#39;s voor JCR (Java Content Repository) 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) deel uitmaakt van een specificatie voor de uitvoering van het GCO (in het geval van AEM; [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Alle JCR-implementatie moet in overeenstemming zijn met deze API&#39;s en deze implementeren. Dit is dus de API op het laagste niveau voor interactie met AEM inhoud.
+De [API&#39;s voor JCR (Java Content Repository) 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) deel uitmaakt van een specificatie voor de uitvoering van het GCO (in het geval van AEM; [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Alle JCR-implementatie moet in overeenstemming zijn met deze API&#39;s en deze implementeren. Dit is dus de API op het laagste niveau voor interactie met AEM inhoud.
 
 De JCR zelf is een hiërarchische/op boom-gebaseerde NSQL datastore AEM als zijn inhoudsbewaarplaats gebruikt. De JCR heeft een uitgebreide reeks ondersteunde API&#39;s, variërend van inhoud-CRUD tot het opvragen van inhoud. Ondanks deze robuuste API is het zeldzaam dat ze de voorkeur hebben boven de hogere AEM en [!DNL Sling] abstracties.
 
@@ -195,7 +195,7 @@ Merk ook op de definitie van de OSGi- configuratieknooppunt verkiest `cfg.json` 
 
 * Voorkeur [ `com.day.cq.dam.api`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/package-summary.html) over [ `com.adobe.granite.asset.api`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/asset/api/package-summary.html).
 
-   * Terwijl de `com.day.cq` API&#39;s voor middelen bieden meer gratis tools voor het AEM van gebruiksscenario&#39;s voor middelenbeheer.
+   * Terwijl de `com.day.cq` De elementen-API&#39;s bieden meer gratis tools voor het AEM van gebruiksscenario&#39;s voor middelenbeheer.
    * De API&#39;s van Granite Assets ondersteunen gebruiksscenario&#39;s voor middelenbeheer op laag niveau (versie, relaties).
 
 ### Query-API&#39;s

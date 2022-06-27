@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 71f1d32c12742cdb644dec50050d147395c3f3b6
+source-git-commit: 7cfc150989453eec776eb34eac9b4598c46b0d7c
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 4%
 
 ---
 
@@ -45,6 +45,23 @@ Definieert de [OSGi-fabrieksconfiguratie](http://localhost:4502/system/console/c
   "searchPath": "/content/wknd"
 }
 ```
+
+### Absolute sitemap-URL&#39;s
+
+AEM sitemap ondersteunt absolute URL&#39;s door [Verspreiding toewijzen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Dit wordt gedaan door toewijzingsknopen op de AEM diensten te creëren die sitemaps produceren.
+
+Een voorbeeld van Sling-toewijzingsknoopdefinitie voor `https://wknd.com` kunnen worden gedefinieerd onder `/etc/map/https` als volgt:
+
+| Pad | Eigenschapnaam | Type eigenschap | Waarde van eigenschap |
+|------|----------|---------------|-------|
+| `/etc/map/https/wknd-site` | `jcr:primaryType` | Tekenreeks | `nt:unstructured` |
+| `/etc/map/https/wknd-site` | `sling:internalRedirect` | Tekenreeks | `/content/wknd/(.*)` |
+| `/etc/map/https/wknd-site` | `sling:match` | Tekenreeks | `wknd.com/$1` |
+
+De onderstaande schermafbeelding illustreert een vergelijkbare configuratie, maar voor `http://wknd.local` (lokale hostname-toewijzing uitgevoerd op `http`).
+
+![Configuratie absolute URL&#39;s van Sitemap](../assets/sitemaps/sitemaps-absolute-urls.jpg)
+
 
 ### Filterregel toestaan voor verzending
 
