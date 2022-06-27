@@ -3,9 +3,9 @@ title: Snelheid van inhoud besturen met Adobe Experience Manager
 description: Leer meer over snelheid van inhoud en de waarde ervan in bedrijfsorganisaties. Duik in vier principes van effectieve implementatie en de valkuilen die onderweg moeten uitzien.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
+source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -176,3 +176,5 @@ Hier zijn een paar potentiële valkuilen om te vermijden:
 * Oplossingen op een zijdelingse manier bekijken. Bijvoorbeeld, zal het concentreren op het technische aspect van AEM implementatie niet de volledige bedrijfsvoordelen realiseren. In plaats daarvan, adviseren wij het bekijken van zaken en scenario&#39;s van het bedrijfsgebruik, dan het schenken aan architectuur en ontwerp, aangezien dit een grotere mening van AEM mogelijkheden zal verstrekken. Anurandha Pentareddy van aandelen Adobe: _&quot;Eén ding wat ik adviseer is om uw waardedoelstellingen voor het platform te bekijken u uitvoert.&quot;_
 
 Luister naar deze één uur voor een diepgaandere bespreking van de snelheid van de inhoud [panelgesprek](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) en Adobe Anuradha Pentareddy.
+
+Meer informatie over strategie en leiderschap bij de [Klant geslaagd](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub.
