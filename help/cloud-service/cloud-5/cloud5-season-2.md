@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: e10617d81287a291d16aed3400ef0c01266586e6
+source-git-commit: c3d3eae47c17a7efed15f14e98e2f3ded719cef0
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -84,18 +84,20 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
             <br/>
                Darin en James bespreken gotchas en dingen om te zoeken naar taakplanning en consumptie in AEM als cloudservice.
             </p>
+         </td> 
+         <td>
+            <a href="season-2/cloud5-repoinit.md">
+                 <img alt="Repo-initialisatie (punt opnieuw)" src="./imgs/s2/004-thumb.png"/>
+            </a>
+            <div>
+                  <a href="season-2/cloud5-repoinit.md"><strong>Initialisatie opslagplaats</strong></a>
+               <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+            </div>
+            <p>
+            <br/>
+              Leer een paar trucs om de kracht van het gebruiken van de Initializer van de Bewaarplaats Sling te ontgrendelen, a.k.a herpoinit.
+            </p>
          </td>   
-     <td>
-        <img alt="Repo-initialisatie (punt opnieuw)" src="./imgs/coming-soon.png"/>
-      <div>
-        <strong>Repo-initialisatie (punt opnieuw)</strong>
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
-      </div>
-      <p>
-        <br/>
-            Vanaf 1 juli 2022
-      </p>
-   </td>
      <td>
             <img alt="Uw problemen verhelpen... Cache" src="./imgs/coming-soon.png"/>
       <div>
