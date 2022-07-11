@@ -2,7 +2,7 @@
 title: Android-toepassing - Voorbeeld AEM zonder kop
 description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze Android-toepassing laat zien hoe u inhoud kunt opvragen met de GraphQL-API's van AEM.
 version: Cloud Service
-mini-toc-levels: 1
+mini-toc-levels: 2
 kt: 9166
 thumbnail: KT-9166.jpg
 feature: Content Fragments, GraphQL API
@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 0204d9aaf7b79b0745adbe749f44245716203b88
+source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 1%
@@ -136,7 +136,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -178,7 +178,7 @@ query($slug: String!) {
 }
 ```
 
-## Vraag GrafiekQL blijft uitvoeren
+### Vraag GrafiekQL blijft uitvoeren
 
 AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, [AEM headless client voor Java](https://github.com/adobe/aem-headless-client-java) wordt gebruikt om de voortgezette vragen GraphQL tegen AEM uit te voeren en de adventure inhoud in app te laden.
 

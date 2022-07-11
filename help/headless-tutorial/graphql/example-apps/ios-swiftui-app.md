@@ -1,8 +1,8 @@
 ---
-title: iOS SwiftUI-toepassing - Voorbeeld AEM zonder kop
+title: iOS App - voorbeeld zonder kop AEM
 description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze iOS-toepassing laat zien hoe u inhoud kunt opvragen met AEM GraphQL-API's met behulp van doorlopende query's.
 version: Cloud Service
-mini-toc-levels: 1
+mini-toc-levels: 2
 kt: 9166
 thumbnail: KT-9166.jpg
 feature: Content Fragments, GraphQL API
@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: bcedb190fba7b6bc044da06bd36d097d553172a1
+source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
 
-# iOS SwiftUI-app
+# iOS-app
 
 Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze iOS-toepassing laat zien hoe u inhoud kunt opvragen met AEM GraphQL-API&#39;s met behulp van doorlopende query&#39;s.
 
@@ -131,7 +131,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -173,7 +173,7 @@ query($slug: String!) {
 }
 ```
 
-## Vraag GrafiekQL blijft uitvoeren
+### Vraag GrafiekQL blijft uitvoeren
 
 AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, kunnen de gemeenschappelijke bibliotheken GraphQL die de POST van HTTP zoals Apollo gebruiken, niet worden gebruikt. In plaats daarvan, creeer een douaneklasse die de voortgezette vraagHTTP- verzoeken aan AEM uitvoert.
 
