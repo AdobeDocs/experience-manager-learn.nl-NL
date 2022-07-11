@@ -1,6 +1,6 @@
 ---
 title: Aan de slag met AEM Sites - WKND-zelfstudie
-description: Aan de slag met AEM Sites - WKND-zelfstudie. De WKND-zelfstudie is een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog geen ervaring hebben met Adobe Experience Manager. De zelfstudie doorloopt de implementatie van een AEM site voor een fictieve levensstijl, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
+description: Leer hoe u een AEM site implementeert voor een fictief levensstijlmerk met de naam WKND. Krijg een looppas-door op fundamentele onderwerpen van de Experience Manager zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
 sub-product: sites
 topics: development
 version: Cloud Service
@@ -16,9 +16,9 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 72abe1cddcf6a012403887203d38509bde8f2d23
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Welkom bij een meerdelige zelfstudie die is ontworpen voor nieuwe ontwikkelaars 
 
 ## Overzicht {#wknd-tutorial-overview}
 
-Het doel van deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe hij een website implementeert met de nieuwste standaarden en technologieën in Adobe Experience Manager (AEM). Nadat deze zelfstudie is voltooid, moet een ontwikkelaar de basis van het platform begrijpen en kennis hebben van gemeenschappelijke ontwerppatronen in AEM.
+Het doel van deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe hij een website implementeert met de nieuwste standaarden en technologieën in Adobe Experience Manager (AEM). Nadat deze zelfstudie is voltooid, moet een ontwikkelaar de basis van het platform en de algemene ontwerppatronen in AEM begrijpen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
