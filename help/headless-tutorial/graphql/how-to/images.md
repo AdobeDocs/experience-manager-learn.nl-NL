@@ -9,16 +9,16 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: cca9ea744f938470b82b61d11269c1f9e8250bbe
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
 
 # Afbeeldingen met AEM zonder kop
 
-Afbeeldingen zijn een essentieel aspect van [ontwikkeling van een rijke , aantrekkelijke AEM zonder kop](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html). AEM Headless ondersteunt het beheer van afbeeldingselementen en de geoptimaliseerde levering ervan.
+Afbeeldingen zijn een essentieel aspect van [ontwikkeling van rijke, dwingende AEM eindeloze ervaringen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html). AEM Headless ondersteunt het beheer van afbeeldingselementen en de geoptimaliseerde levering ervan.
 
 Inhoudsfragmenten die worden gebruikt in AEM modellering van inhoud zonder kop, verwijzen vaak naar afbeeldingselementen die zijn bedoeld voor weergave in de headless-ervaring. AEM GraphQL-query&#39;s kunnen worden geschreven om URL&#39;s aan te bieden voor afbeeldingen op basis van de locatie waar naar de afbeelding wordt verwezen.
 
@@ -34,7 +34,7 @@ De velden kunnen het best worden gebruikt op basis van de volgende criteria:
 
 | Afbeeldingsverwijzing-velden | Client-webtoepassing vanuit AEM | Client-app vraagt naar AEM-auteur | Vragen over clienttoepassingen publiceren in AEM |
 |--------------------|:------------------------------:|:-----------------------------:|:------------------------------:|
-| `_path` | ✔ | ✘ | ✘ |
+| `_path` | ✔ | ✔ (App moet host opgeven in URL) | ✔ (App moet host opgeven in URL) |
 | `_authorUrl` | ✘ | ✔ | ✘ |
 | `_publishUrl` | ✘ | ✘ | ✔ |
 
@@ -48,25 +48,28 @@ Veldtypen worden gecontroleerd in het dialoogvenster [Inhoudsfragmentmodel](http
 
 ![Inhoudsfragmentmodel met inhoudsverwijzing naar een afbeelding](./assets/images/content-fragment-model.jpeg)
 
-## GraphQL-query
+## GraphQL-voortgezette query
 
-Retourneer in de query GraphQL het veld als het `ImageRef` typen en de juiste velden opvragen `_path`, `_authorUrl`, of `_publishUrl` vereist door uw toepassing.
+Retourneer in de query GraphQL het veld als het `ImageRef` typen en de juiste velden opvragen `_path`, `_authorUrl`, of `_publishUrl` vereist door uw toepassing. U kunt bijvoorbeeld een avontuur opvragen in het dialoogvenster [WKND-project voor demo-referentie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) en de afbeeldings-URL opnemen voor de verwijzingen naar afbeeldingselementen in de `primaryImage` veld, kan worden uitgevoerd met een nieuwe, voortgezette query `wknd-shared/adventure-image-by-path` gedefinieerd als:
 
-```javascript
-{
-  adventureByPath(_path: "/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp") {
+```graphql
+query ($path: String!) {
+  adventureByPath(_path: $path) {
     item {
-      adventurePrimaryImage {
+      title,
+      primaryImage {
         ... on ImageRef {
-          _path,
-          _authorUrl,
+          _path
+          _authorUrl
           _publishUrl
         }
       }
     }
-  }  
+  }
 }
 ```
+
+De `$path` in de `_path` filter vereist het volledige pad naar het inhoudsfragment (bijvoorbeeld `/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp`).
 
 ## GraphQL-respons
 
@@ -78,9 +81,9 @@ Het resulterende JSON-antwoord bevat de gevraagde velden met de URL&#39;s naar d
     "adventureByPath": {
       "item": {
         "adventurePrimaryImage": {
-          "_path": "/content/dam/wknd/en/adventures/bali-surf-camp/AdobeStock_175749320.jpg",
-          "_authorUrl": "https://author-p123-e456.adobeaemcloud.com/content/dam/wknd/en/adventures/bali-surf-camp/AdobeStock_175749320.jpg",
-          "_publishUrl": "https://publish-p123-e789.adobeaemcloud.com/content/dam/wknd/en/adventures/bali-surf-camp/AdobeStock_175749320.jpg"
+          "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg",
+          "_authorUrl": "https://author-p123-e456.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg",
+          "_publishUrl": "https://publish-p123-e789.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg"
         }
       }
     }
@@ -95,7 +98,7 @@ De domeinen van `_authorUrl` en `_publishUrl` worden automatisch gedefinieerd do
 In React ziet het weergeven van de afbeelding uit AEM Publish er als volgt uit:
 
 ```html
-<img src={ data.adventureByPath.item.adventurePrimaryImage._publishUrl } />
+<img src={ data.adventureByPath.item.primaryImage._publishUrl } />
 ```
 
 ## Afbeeldingsuitvoeringen
@@ -132,7 +135,7 @@ De definities van de vertoning hangen van de behoeften van uw toepassing zonder 
 
 #### Elementen opnieuw verwerken{#reprocess-assets}
 
-Als het verwerkingsprofiel is gemaakt (of bijgewerkt), verwerkt u de elementen opnieuw om de nieuwe uitvoeringen te genereren die zijn gedefinieerd in het verwerkingsprofiel. Als elementen niet met de nieuwe uitvoeringen worden verwerkt, bestaan deze niet.
+Als het verwerkingsprofiel is gemaakt (of bijgewerkt), verwerkt u de elementen opnieuw om de nieuwe uitvoeringen te genereren die zijn gedefinieerd in het verwerkingsprofiel. Nieuwe uitvoeringen bestaan pas als de elementen met het verwerkingsprofiel zijn verwerkt.
 
 + Bij voorkeur [Het verwerkingsprofiel is toegewezen aan een map](../../../assets/configuring//processing-profiles.md) Alle nieuwe elementen die naar deze map zijn geüpload, genereren dus automatisch de uitvoeringen. Bestaande activa moeten opnieuw worden verwerkt volgens de hierna beschreven ad-hocaanpak.
 
@@ -156,9 +159,9 @@ Uitvoeringen zijn rechtstreeks toegankelijk door het toevoegen van de __vertonin
 
 | Element-URL | Subpad van uitvoeringen | Naam van vertoning | Vertoningsextensie |  | URL van vertoning |
 |-----------|:------------------:|:--------------:|--------------------:|:--:|---|
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg | /_jcr_content/renditions/ | groot | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg/_jcr_content/renditions/large.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg | /_jcr_content/renditions/ | medium | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg/_jcr_content/renditions/medium.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg | /_jcr_content/renditions/ | klein | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpg/_jcr_content/renditions/small.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | groot | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/large.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | medium | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/medium.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | klein | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/small.jpeg |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -210,7 +213,7 @@ export default function Image({ assetUrl, renditionName, renditionExtension, alt
 
 Eenvoudig `App.js` vraagt AEM voor een beeld van het Avontuur, en toont dan de drie vertoningen van dat beeld: klein, middelgroot en groot.
 
-Het vragen tegen AEM wordt uitgevoerd in de haak van de douane React [useGraphQL die de AEM Headless SDK gebruikt](./aem-headless-sdk.md#graphql-queries).
+Het vragen tegen AEM wordt uitgevoerd in de haak van de douane React [useAdventureByPath die de AEM Headless SDK gebruikt](./aem-headless-sdk.md#graphql-persisted-queries).
 
 De resultaten van de query en de specifieke renderingsparameters worden doorgegeven aan de [Component Image React](#react-example-image-component).
 
@@ -218,29 +221,14 @@ De resultaten van de query en de specifieke renderingsparameters worden doorgege
 // src/App.js
 
 import "./App.css";
-import { useGraphQL } from "./useGraphQL";
+import { useAdventureByPath } from './api/persistedQueries'
 import Image from "./Image";
 
 function App() {
 
-  // The GraphQL that returns an image
-  const adventureQuery = `{
-        adventureByPath(_path: "/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp") {
-          item {
-            adventureTitle,
-            adventurePrimaryImage {
-              ... on ImageRef {
-                _path,
-                _authorUrl,
-                _publishUrl
-              }
-            }
-          }
-        }  
-    }`;
-
-  // Get data from AEM using GraphQL
-  let { data } = useGraphQL(adventureQuery);
+  // Get data from AEM using GraphQL persisted query as defined above 
+  // The details of defining a React useEffect hook are explored in How to > AEM Headless SDK
+  let { data, error } = useAdventureByPath("/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp");
 
   // Wait for GraphQL to provide data
   if (!data) { return <></> }
@@ -251,10 +239,10 @@ function App() {
       <h2>Small rendition</h2>
       {/* Render the small rendition for the Adventure Primary Image */}
       <Image
-        assetUrl={data.adventureByPath.item.adventurePrimaryImage._publishUrl}
+        assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
         renditionName="small"
         renditionExtension="jpeg"
-        alt={data.adventureByPath.item.adventureTitle}
+        alt={data.adventureByPath.item.title}
       />
 
       <hr />
@@ -262,10 +250,10 @@ function App() {
       <h2>Medium rendition</h2>
       {/* Render the medium rendition for the Adventure Primary Image */}
       <Image
-        assetUrl={data.adventureByPath.item.adventurePrimaryImage._publishUrl}
+        assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
         renditionName="medium"
         renditionExtension="jpeg"
-        alt={data.adventureByPath.item.adventureTitle}
+        alt={data.adventureByPath.item.title}
       />
 
       <hr />
@@ -273,10 +261,10 @@ function App() {
       <h2>Large rendition</h2>
       {/* Render the large rendition for the Adventure Primary Image */}
       <Image
-        assetUrl={data.adventureByPath.item.adventurePrimaryImage._publishUrl}
+        assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
         renditionName="large"
         renditionExtension="jpeg"
-        alt={data.adventureByPath.item.adventureTitle}
+        alt={data.adventureByPath.item.title}
       />
     </div>
   );

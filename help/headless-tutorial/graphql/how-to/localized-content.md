@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -36,22 +36,22 @@ De landinstellingscode is ook de waarde die wordt gebruikt om de inhoudsfragment
 | en | /content/dam/.../**en**/... | Engelse inhoud |
 | es | /content/dam/.../**es**/... | Spaanse inhoud |
 
-## GraphQL-query
+## GraphQL-voortgezette query
 
-AEM biedt een `_locale` GraphQL-filter dat inhoud automatisch filtert op landinstellingscode. U kunt bijvoorbeeld alle Engelse avonturen opvragen in het dialoogvenster [WKND-project voor demo-referentie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) zou er als volgt uitzien:
+AEM biedt een `_locale` GraphQL-filter dat inhoud automatisch filtert op landinstellingscode. U kunt bijvoorbeeld alle Engelse avonturen opvragen in het dialoogvenster [WKND-project voor demo-referentie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) kan met een nieuwe voortgezette vraag worden gedaan `wknd-shared/adventures-by-locale` gedefinieerd als:
 
 ```graphql
-{
-  adventureList(_locale: "en") {
+query($locale: String!) {
+  adventureList(_locale: $locale) {
     items {      
       _path
-      adventureTitle
+      title
     }
   }
 }
 ```
 
-De `_locale` filter vereist het gebruik van [Localisatie-conventie voor het lokaliseren van bestanden AEM](#assets-folder-structure).
+De `$locale` in de `_locale` filter vereist de landinstellingscode (bijvoorbeeld `en`, `en_us`, of `de`) zoals gespecificeerd in [Localisatie-conventie voor het lokaliseren van bestanden AEM](#assets-folder-structure).
 
 ## Voorbeeld Reageren
 
@@ -112,31 +112,26 @@ De Adventures-component zoekt AEM naar alle avonturen per landinstelling en geef
 
 Deze benadering kan tot andere vragen in uw toepassing worden uitgebreid, die ervoor zorgt dat alle vragen slechts inhoud omvatten die door de scèneselectie van een gebruiker wordt gespecificeerd.
 
-Het vragen tegen AEM wordt uitgevoerd in de haak van de douanereactie [useGraphQL, die meer in detail wordt beschreven op de Vraag AEM documentatie GraphQL](./aem-headless-sdk.md).
+Het vragen tegen AEM wordt uitgevoerd in de haak van de douanereactie [getAdventuresByLocale, die meer in detail op het Vraag AEM documentatie GraphQL wordt beschreven](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js
 
 import { useContext } from "react"
-import { useGraphQL } from './useGraphQL'
+import { useAdventuresByLocale } from './api/persistedQueries'
 import LocaleContext from './LocaleContext'
 
 export default function Adventures() {
     const { locale } = useContext(LocaleContext);
 
-    let {data} = useGraphQL(`{
-            adventureList(_locale: "${locale}") {
-                items {      
-                _path
-                adventureTitle
-             }
-        }
-    }`);
+    // Get data from AEM using GraphQL persisted query as defined above 
+    // The details of defining a React useEffect hook are explored in How to > AEM Headless SDK
+    let { data, error } = useAdventuresByLocale(locale);
 
     return (
         <ul>
             {data?.adventureList?.items?.map((adventure, index) => { 
-                return <li key={index}>{adventure.adventureTitle}</li>
+                return <li key={index}>{adventure.title}</li>
             })}
         </ul>
     )

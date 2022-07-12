@@ -8,16 +8,16 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 22d5aa7299ceacd93771bd73a6b89d1903edc561
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
 
 # RTF-tekst met AEM zonder kop
 
-Het tekstveld Meerdere regels is een gegevenstype van inhoudsfragmenten waarmee auteurs RTF-inhoud kunnen maken. Verwijzingen naar andere inhoud, zoals afbeeldingen of andere Content Fragments, kunnen dynamisch in regel worden ingevoegd in de tekstflow. Het tekstveld Eén regel is een ander gegevenstype van inhoudsfragmenten dat moet worden gebruikt voor eenvoudige tekstelementen.
+Het tekstveld met meerdere regels is een gegevenstype van inhoudsfragmenten waarmee auteurs RTF-inhoud kunnen maken. Verwijzingen naar andere inhoud, zoals afbeeldingen of andere Content Fragments, kunnen dynamisch in regel worden ingevoegd in de tekstflow. Het tekstveld Eén regel is een ander gegevenstype van inhoudsfragmenten dat moet worden gebruikt voor eenvoudige tekstelementen.
 
 AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als HTML, platte tekst of als pure JSON. De vertegenwoordiging JSON is krachtig aangezien het de cliënttoepassing volledige controle over geeft hoe te om de inhoud terug te geven.
 
@@ -25,19 +25,19 @@ AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als 
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
 
-In de Inhoudsfragmenteditor biedt de menubalk van het tekstveld Meerdere regels auteurs standaard rijke tekstopmaakmogelijkheden, zoals **vet**, *cursief* en onderstrepen. Als u het veld Meerdere regels opent in de modus Volledig scherm, wordt [aanvullende opmaakgereedschappen, zoals Alineatekst, zoeken en vervangen, spellingcontrole en meer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+In de Inhoudsfragmenteditor biedt de menubalk van het tekstveld met meerdere regels auteurs standaard rijke tekstopmaakmogelijkheden, zoals **vet**, *cursief* en onderstrepen. Als u het veld met meerdere regels opent in de modus Volledig scherm, schakelt u [aanvullende opmaakgereedschappen, zoals Alineatekst, zoeken en vervangen, spellingcontrole en meer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
 >[!NOTE]
 >
-> De rijke tekstplug-ins in de Multi-line editor kunnen niet worden aangepast.
+> De rijke tekststoppen in de multi-line redacteur kunnen niet worden aangepast.
 
-## Gegevenstype meerdere regels {#multi-line-data-type}
+## Tekstgegevenstype van meerdere regels {#multi-line-data-type}
 
 Gebruik de **Tekst met meerdere regels** gegevenstype bij het definiëren van het inhoudsfragmentmodel om RTF-bewerkingen mogelijk te maken.
 
 ![Gegevenstype Meerdere regels met tekstopmaak](assets/rich-text/multi-line-rich-text.png)
 
-Verschillende eigenschappen van het veld Meerdere regels kunnen worden geconfigureerd.
+Verschillende eigenschappen van het veld met meerdere regels kunnen worden geconfigureerd.
 
 De **Renderen als** eigenschap kan worden ingesteld op:
 
@@ -55,25 +55,23 @@ De **Standaardtype** Deze optie heeft rechtstreeks invloed op de bewerkingservar
 
 U kunt ook [inline-verwijzingen inschakelen](#insert-fragment-references) aan andere Inhoudsfragmenten controleren **Fragmentverwijzing toestaan** en het vormen van **Modellen voor toegestane inhoudsfragmenten**.
 
-Als de inhoud wordt gelokaliseerd, controleert u de **Vertaalbaar** doos. Alleen RTF en normale tekst kunnen worden gelokaliseerd. Zie [werken met gelokaliseerde inhoud voor meer informatie](./localized-content.md).
+Controleer de **Vertaalbaar** als de inhoud wordt gelokaliseerd. Alleen RTF en normale tekst kunnen worden gelokaliseerd. Zie [werken met gelokaliseerde inhoud voor meer informatie](./localized-content.md).
 
 ## RTF-reactie met GraphQL API
 
-Wanneer het creëren van een vraag GraphQL, kunnen de ontwikkelaars verschillende reactietypes kiezen van `html`, `plaintext`, `markdown`, en `json` uit een veld Meerdere regels.
+Wanneer het creëren van een vraag GraphQL, kunnen de ontwikkelaars verschillende reactietypes kiezen van `html`, `plaintext`, `markdown`, en `json` uit een veld met meerdere regels.
 
 Ontwikkelaars kunnen de [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) in de Inhoudsfragmenteditor om alle waarden weer te geven van het huidige inhoudsfragment dat kan worden geretourneerd met de GraphQL-API.
 
-### JSON-voorbeeld
+## GraphQL-voortgezette query
 
-De `json` biedt de meeste flexibiliteit voor front-end ontwikkelaars wanneer het werken met rijke tekstinhoud. De rijke tekstinhoud wordt geleverd als een serie van JSON knooptypes die uniek op het cliëntplatform kunnen worden verwerkt.
+Het selecteren van `json` De responsindeling voor het veld met meerdere regels biedt de meeste flexibiliteit bij het werken met RTF-inhoud. De rijke tekstinhoud wordt geleverd als een serie van JSON knooptypes die uniek op het cliëntplatform kunnen worden verwerkt.
 
 Hieronder ziet u een JSON-reactietype van een veld met meerdere regels met de naam `main` die een alinea bevat: &quot;*Dit is een alinea die **belangrijk**inhoud.*&quot; waarbij &quot;belangrijk&quot; wordt aangeduid als **vet**.
 
-**GraphQL-query:**
-
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -84,6 +82,8 @@ Hieronder ziet u een JSON-reactietype van een veld met meerdere regels met de na
   }
 }
 ```
+
+De `$path` in de `_path` filter vereist het volledige pad naar het inhoudsfragment (bijvoorbeeld `/content/dam/wknd/en/magazine/sample-article`).
 
 **GraphQL respons:**
 
@@ -131,11 +131,11 @@ Hieronder staan verschillende voorbeelden van reactietypen van een veld met meer
 
 +++HTML, voorbeeld
 
-**GraphQL-query:**
+**GraphQL-vraag blijft bestaan:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -168,11 +168,11 @@ Hieronder staan verschillende voorbeelden van reactietypen van een veld met meer
 
 +++voorbeeld Markering
 
-**GraphQL-query:**
+**GraphQL-vraag blijft bestaan:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -205,11 +205,11 @@ Hieronder staan verschillende voorbeelden van reactietypen van een veld met meer
 
 +++Voorbeeld van onbewerkte tekst
 
-**GraphQL-query:**
+**GraphQL-vraag blijft bestaan:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -245,7 +245,7 @@ De `plaintext` met de renderoptie wordt elke opmaak verwijderd.
 
 ## Een JSON-reactie met RTF-opmaak renderen {#render-multiline-json-richtext}
 
-De JSON-reactie van het veld Meerdere regels is gestructureerd als een hiërarchische structuur. Elk object of knooppunt vertegenwoordigt een ander HTML-blok van de RTF-tekst.
+De JSON-reactie van het veld met meerdere regels is gestructureerd als een hiërarchische structuur. Elk object of knooppunt vertegenwoordigt een ander HTML-blok van de RTF-tekst.
 
 Hieronder ziet u een voorbeeld van een JSON-reactie van een tekstveld met meerdere regels. Merk op dat elk object, of knooppunt, een `nodeType` die staat voor het blok HTML van opgemaakte tekst `paragraph`, `link`, en `text`. Elk knooppunt bevat optioneel `content` Dit is een subarray met onderliggende items van het huidige knooppunt.
 
@@ -279,7 +279,7 @@ Hieronder ziet u een voorbeeld van een JSON-reactie van een tekstveld met meerde
 ]
 ```
 
-De eenvoudigste manier om de meerdere regels te renderen `json` de reactie moet elk voorwerp of knoop in de reactie verwerken en dan om het even welke kinderen van de huidige knoop verwerken. Een recursieve functie kan worden gebruikt om de JSON-boom te doorlopen.
+De eenvoudigste manier om de meerdere regels te renderen `json` de reactie moet elk voorwerp, of knoop, in de reactie verwerken en dan om het even welke kinderen van de huidige knoop verwerken. Een recursieve functie kan worden gebruikt om de JSON-boom te doorlopen.
 
 Hieronder ziet u voorbeeldcode die een recursieve traversale aanpak illustreert. De voorbeelden zijn gebaseerd op JavaScript en gebruiken React [JSX](https://reactjs.org/docs/introducing-jsx.html)De programmeerconcepten kunnen echter op elke taal worden toegepast.
 
@@ -298,7 +298,7 @@ function renderNodeList(childNodes) {
 }
 ```
 
-De `renderNodeList` function is the entrypoint into the recursive algorithm. De `renderNodeList` function verwacht een array van `childNodes`. Elk knooppunt in de array wordt vervolgens doorgegeven aan een functie `renderNode`.
+`renderNodeList` is een recursieve functie die een array van `childNodes`. Elk knooppunt in de array wordt vervolgens doorgegeven aan een functie `renderNode`, die op zijn beurt `renderNodeList` als het knooppunt onderliggende knooppunten heeft.
 
 ```javascript
 // renderNode - renders an individual node
@@ -312,7 +312,7 @@ function renderNode(node) {
 }
 ```
 
-De `renderNode` functie verwacht één genoemd voorwerp `node`. Een knooppunt heeft mogelijk onderliggende items die recursief worden verwerkt met de `renderNodeList` hierboven beschreven functie. Tot slot `nodeMap` wordt gebruikt om de inhoud van de knoop terug te geven die op zijn wordt gebaseerd `nodeType`.
+De `renderNode` functie verwacht één genoemd voorwerp `node`. Een knooppunt kan onderliggende knooppunten hebben die recursief worden verwerkt met de `renderNodeList` hierboven beschreven functie. Tot slot `nodeMap` wordt gebruikt om de inhoud van de knoop terug te geven die op zijn wordt gebaseerd `nodeType`.
 
 ```javascript
 // nodeMap - object literal that maps a JSX response based on a given key (nodeType)
@@ -331,25 +331,25 @@ De `nodeMap` is een letterlijke JavaScript-object dat wordt gebruikt als een kaa
 
 ### Voorbeeld van volledige code
 
-Een herbruikbaar RTF-hulpprogramma is te vinden in het dialoogvenster [WKND GraphQL React, voorbeeld](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Een herbruikbaar Rich Text Rendering-hulpprogramma is te vinden in het dialoogvenster [WKND GraphQL React, voorbeeld](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
-* [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app/src/utils/renderRichText.js) - herbruikbaar hulpprogramma dat een functie toegankelijk maakt `mapJsonRichText`. Dit nut kan door componenten worden gebruikt die een rijke tekstJSON reactie als React JSX willen teruggeven.
+* [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - herbruikbaar hulpprogramma dat een functie toegankelijk maakt `mapJsonRichText`. Dit nut kan door componenten worden gebruikt die een rijke tekstJSON reactie als React JSX willen teruggeven.
 * [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - Voorbeeldcomponent die een GraphQL-aanvraag doet die RTF-tekst bevat. De component gebruikt de `mapJsonRichText` gebruiken om de tekst met opmaak en eventuele verwijzingen te renderen.
 
 
 ## In-line verwijzingen toevoegen aan RTF-tekst {#insert-fragment-references}
 
-Met het veld Mutli-regel kunnen auteurs afbeeldingen of andere digitale elementen uit AEM Assets invoegen in de tekststroom met tekstopmaak.
+In het veld Mutliline kunnen auteurs afbeeldingen of andere digitale elementen uit AEM Assets invoegen in de tekstflow met tekstopmaak.
 
 ![afbeelding invoegen](assets/rich-text/insert-image.png)
 
-De bovenstaande schermafbeelding geeft een afbeelding weer die in het veld Meerdere regels is ingevoegd met behulp van de **Element invoegen** knop.
+De bovenstaande schermafbeelding geeft een afbeelding weer die in het veld met meerdere regels is ingevoegd met behulp van de **Element invoegen** knop.
 
-Verwijzingen naar andere inhoudsfragmenten kunnen ook worden gekoppeld aan of ingevoegd in het veld Meerdere regels met de opdracht **Inhoudsfragment invoegen** knop.
+Verwijzingen naar andere inhoudsfragmenten kunnen ook worden gekoppeld aan of ingevoegd in het veld met meerdere regels met behulp van de **Inhoudsfragment invoegen** knop.
 
 ![Content fragment-verwijzing invoegen](assets/rich-text/insert-contentfragment.png)
 
-Bovenstaande schermafbeelding toont een ander Content Fragment, Ultimate Guide to LA Skate Parks, dat wordt ingevoegd in het veld met meerdere regels. De typen inhoudsfragmenten die in het veld kunnen worden ingevoegd, worden beheerd door de **Modellen voor toegestane inhoudsfragmenten** in de [Gegevenstype meerdere regels](#multi-line-data-type) in het inhoudsfragmentmodel.
+Bovenstaande schermafbeelding toont een ander Content Fragment, Ultimate Guide to LA Skate Parks, dat wordt ingevoegd in het veld met meerdere regels. De typen inhoudsfragmenten die in het veld kunnen worden ingevoegd, worden beheerd door de **Modellen voor toegestane inhoudsfragmenten** in de [gegevenstype van meerdere regels](#multi-line-data-type) in het inhoudsfragmentmodel.
 
 ## In-line verwijzingen van de vraag met GraphQL
 
@@ -363,11 +363,11 @@ U kunt bijvoorbeeld het volgende doen:
 
 Gebruik de `json` retourneringstype en de `_references` object bij het samenstellen van een GraphQL-query:
 
-**GraphQL-query:**
+**GraphQL-vraag blijft bestaan:**
 
 ```graphql
-{
-  articleByPath(_path: "/content/dam/wknd/en/magazine/sample-article")
+query ($path: String!) {
+  articleByPath(_path: $path)
   {
     item {
       _path
@@ -540,7 +540,7 @@ Een volledig voorbeeld van het schrijven van een renderer van douaneverwijzingen
 
 De voorgaande video toont een voorbeeld van begin tot eind:
 
-1. Het tekstveld Meerdere regels van een inhoudsfragmentmodel bijwerken om fragmentverwijzingen toe te staan
+1. Het tekstveld met meerdere regels van een inhoudsfragmentmodel bijwerken om fragmentverwijzingen toe te staan
 1. Met de Inhoudsfragmenteditor kunt u een afbeelding en een verwijzing naar een ander fragment opnemen in een tekstveld met meerdere regels.
-1. Creating a GraphQL query that includes the Multi line text response as JSON and any `_references` gebruikt.
+1. Creërend een vraag GraphQL die de multi-line tekstreactie als JSON en om het even welk omvat `_references` gebruikt.
 1. Het schrijven van React SPA dat de in-line verwijzingen van de rijke tekstreactie teruggeeft.
