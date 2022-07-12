@@ -9,9 +9,9 @@ version: 6.3, 6.4, 6.5, Cloud Service
 kt: 201
 thumbnail: 18131.jpg
 exl-id: cc4ffbd0-207a-42e4-bfcb-d6c83fb97237
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 1c2ee81c0d262f9e3f92f4907aba8e8787ce729f
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -26,15 +26,15 @@ Leer hoe u Content Fragments kunt lokaliseren en vertalen met Adobe Experience M
 
 Inhoudsfragmenten zijn een herkend inhoudstype dat extracten AEM die naar een externe vertaalservice moeten worden verzonden. Verschillende gebruiksgevallen worden vanuit het vak ondersteund:
 
-1. Een inhoudsfragment kan rechtstreeks in de middelenconsole worden geselecteerd voor het kopiëren en vertalen van talen
-2. Inhoudsfragmenten waarnaar op een sitepagina wordt verwezen, worden gekopieerd naar de juiste taalmap en geëxtraheerd voor vertaling wanneer de sitepagina is geselecteerd voor een taalkopie
+1. Een inhoudsfragment kan [rechtstreeks geselecteerd in de middelenconsole voor het kopiëren en vertalen van talen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+2. Inhoudsfragmenten waarnaar op een sitepagina wordt verwezen, worden naar de juiste taalmap gekopieerd en voor vertaling uitgepakt wanneer de sitepagina is geselecteerd voor een taalkopie.
 3. Inline media-elementen die zijn ingesloten in een inhoudsfragment, kunnen worden geëxtraheerd en vertaald.
-4. Verzamelingen van middelen die aan een inhoudsfragment zijn gekoppeld, kunnen worden geëxtraheerd en vertaald
+4. Verzamelingen van middelen die aan een inhoudsfragment zijn gekoppeld, kunnen worden geëxtraheerd en vertaald.
 
 ## Editor voor omzettingsregels {#translation-rules-editor}
 
-Het vertaalgedrag van de Experience Manager kan worden bijgewerkt door **Redacteur van de Regels van de Vertaling** te gebruiken. Als u de vertaling wilt bijwerken, navigeert u naar **Tools** > **General** > **Translation Configuration** op [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
+Het vertaalgedrag van de Experience Manager kan worden bijgewerkt door **Editor voor omzettingsregels**. Als u de vertaling wilt bijwerken, navigeert u naar **Gereedschappen** > **Algemeen** > **Configuratie vertaling** om [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
 
-Uit de doos van de configuraties verwijzingsInhoudsfragmenten bij `fragmentPath` met een middeltype van `core/wcm/components/contentfragment/v1/contentfragment`. Alle componenten die van `v1/contentfragment` erven worden erkend door de standaardconfiguratie.
+Verwijs uit de doos configuraties de Fragmenten van de verwijzingsInhoud bij `fragmentPath` met een type resource `core/wcm/components/contentfragment/v1/contentfragment`. Alle componenten die van het `v1/contentfragment` worden herkend door de standaardconfiguratie.
 
 ![Editor voor omzettingsregels](assets/translation-configuration.png)
