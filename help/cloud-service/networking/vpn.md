@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: 6958b1f82c609af2998d94fd868e67bf1578e848
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -229,15 +229,7 @@ HTTP/HTTPS-verzoeken van AEM op standaardpoorten (80/443) zijn standaard toegest
 
 ### HTTP/HTTPS
 
-Wanneer het creëren van verbindingen HTTP/HTTPS van AEM, om een specifiek uitgangIP adres te krijgen of door VPN worden verpletterd, moet de verbinding door speciale gastheer en havens worden gemaakt, die via placeholders worden verstrekt.
-
-AEM biedt twee sets speciale Java™-systeemvariabelen die zijn toegewezen aan AEM HTTP/HTTPS-proxy&#39;s.
-
-| Naam variabele | Gebruik | Java™-code | OSGi-configuratie | Mod_proxyconfiguratie voor Apache-webservers | | - | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Proxyhost voor HTTP-verbindingen | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | `${AEM_HTTP_PROXY_HOST}` | | `AEM_HTTP_PROXY_PORT` | Proxypoort voor HTTP-verbindingen | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` |  `${AEM_HTTP_PROXY_PORT}` | | `AEM_HTTPS_PROXY_HOST` | Proxyhost voor HTTPS-verbindingen | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | `${AEM_HTTPS_PROXY_HOST}` | | `AEM_HTTPS_PROXY_PORT` | Proxypoort voor HTTPS-verbindingen | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` | `${AEM_HTTPS_PROXY_PORT}` |
-
-Verzoeken naar externe HTTP/HTTPS-services moeten worden gedaan door de proxyconfiguratie van de Java™ HTTP-client via AEM proxyhosts/poortwaarden te configureren.
-
-Bij het aanroepen van HTTP/HTTPS naar externe services op elke poort, is er geen corresponderende `portForwards` moet worden gedefinieerd met de API&#39;s van Cloud Manager `__enableEnvironmentAdvancedNetworkingConfiguration` verrichting, aangezien de haven die &quot;regels&quot;door:sturen &quot;in code&quot;wordt bepaald.
+Wanneer u HTTP/HTTPS-verbindingen maakt van AEM, worden bij gebruik van VPN HTTP/HTTPS-verbindingen automatisch buiten de AEM geplaatst. Er is geen aanvullende code of configuratie vereist voor ondersteuning van HTTP/HTTPS-verbindingen.
 
 >[!TIP]
 >
