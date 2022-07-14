@@ -5,13 +5,13 @@ version: 6.3, 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
+source-git-commit: 6dd7164f5ec045b4cffd7732fd83ad9a91fdd511
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
-
 
 # Asset Templates instellen met AEM Assets en InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
@@ -21,11 +21,11 @@ Met Asset Templates kunnen marketers digitale middelen maken, beheren en leveren
 
 >[!NOTE]
 >
->AEM **moet** worden aangesloten op een actieve InDesign-server wanneer de INDD-sjabloon wordt geüpload. Voor een deel van de eerste verwerking in het INDD-bestand is een InDesign-server vereist.
+>AEM **moet** verbinding maken met een actieve InDesign-server wanneer de INDD-sjabloon wordt geüpload. Voor een deel van de eerste verwerking in het INDD-bestand is een InDesign-server vereist.
 
 ## InDesign Server-proefversie downloaden {#download-indesign-server-trial}
 
-Download [InDesign Server proefdownload Website](https://www.adobe.com/devnet/premiere/sdk/cs5/indesign-server-trial-downloads.html)
+Downloaden [Website voor downloaden van InDesign Server-proefversie](https://www.adobeprerelease.com/)
 
 ## InDesign Server starten {#starting-indesign-server}
 
