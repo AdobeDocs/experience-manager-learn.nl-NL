@@ -10,112 +10,152 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Inhoudsfragment ontwerpen {#authoring-content-fragments}
 
-In dit hoofdstuk maakt en bewerkt u een nieuw inhoudsfragment op basis van het [net gedefinieerde Contribute-inhoudsfragmentmodel](./content-fragment-models.md). U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
+In dit hoofdstuk maakt en bewerkt u een nieuw inhoudsfragment op basis van de [nieuw gedefinieerd inhoudsfragmentmodel](./content-fragment-models.md). U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de stappen die worden beschreven in [Modellen van inhoudsfragmenten definiëren](./content-fragment-models.md) zijn voltooid.
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worden beschreven in het dialoogvenster [Modellen voor inhoudsfragmenten definiëren](./content-fragment-models.md) zijn voltooid.
 
 ## Doelstellingen {#objectives}
 
 * Een inhoudsfragment maken op basis van een model van een inhoudsfragment
 * Een variatie in een inhoudsfragment maken
 
-## Overzicht van het schrijven van inhoudsfragmenten {#overview}
+## Een map met middelen maken
 
->[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
+Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragmenten wilt maken op basis van de modellen die u in het vorige hoofdstuk hebt gemaakt, moet u een map maken waarin u de fragmenten kunt opslaan. Er is een configuratie vereist voor de map om het maken van fragmenten van specifieke modellen mogelijk te maken.
 
-De bovenstaande video biedt een uitgebreid overzicht van het ontwerpen van inhoudsfragmenten.
+1. Navigeer van het scherm AEM Start naar **Activa** > **Bestanden**.
+
+   ![Navigeren naar bestanden met elementen](assets/author-content-fragments/navigate-assets-files.png)
+
+1. Tikken **Maken** in de hoek en tik **Map**. In het resulterende dialoogvenster voert u in:
+
+   * Titel*: **Mijn project**
+   * Naam: **mijn-project**
+
+   ![Map maken, dialoogvenster](assets/author-content-fragments/create-folder-dialog.png)
+
+1. Selecteer **Mijn map** map en tik **Eigenschappen**.
+
+   ![Mapeigenschappen openen](assets/author-content-fragments/open-folder-properties.png)
+
+1. Tik op de knop **Cloud Services** tab. Onder **Cloud Configuration** gebruik de wegfinder om te selecteren **Mijn project** configuratie. De waarde moet `/conf/my-project`.
+
+   ![Cloudconfiguratie instellen](assets/author-content-fragments/set-cloud-config-my-project.png)
+
+   Als u deze eigenschap instelt, kunnen Content Fragments worden gemaakt met behulp van de modellen die in het vorige hoofdstuk zijn gemaakt.
+
+1. Tik op de knop **Beleid** tab. Onder **Modellen voor toegestane inhoudsfragmenten** gebruik de wegfinder om te selecteren **Persoon** en **Team** model dat eerder is gemaakt.
+
+   ![Modellen voor inhoudsfragmenten toestaan](assets/author-content-fragments/allowed-content-fragment-models.png)
+
+   Dit beleid wordt automatisch door submappen overgeërfd en kan worden overschreven. Merk op dat u modellen door markeringen kunt ook toestaan of modellen van andere projectconfiguraties (zoals Gedeelde WKND) toelaten. Dit mechanisme biedt een krachtige manier om uw inhoudshiërarchie te beheren.
+
+1. Tikken **Opslaan en sluiten** om de wijzigingen in de mapeigenschappen op te slaan.
+
+1. Navigeren in het deelvenster **Mijn project** map.
+
+1. Maak een andere map met de volgende waarden:
+
+   * Titel*: **Engels**
+   * Naam: **en**
+
+   De beste praktijken zijn het opzetten van projecten voor meertalige ondersteuning. Zie [de volgende documentpagina voor meer informatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+
 
 ## Een inhoudsfragment maken {#create-content-fragment}
 
-In het vorige hoofdstuk, [Defining Content Fragment Models](./content-fragment-models.md), werd een **Contributor** model gecreeerd. Maak een nieuw inhoudsfragment met dit model.
+Er worden nu verschillende inhoudsfragmenten gemaakt op basis van de **Team** en **Persoon** modellen.
 
-1. Navigeer in het menu **AEM Start** naar **Middelen** > **Bestanden**.
-1. Klik door de omslagen om aan **WKND Plaats** > **English** > **Medewerkers** te navigeren. Deze map bevat een lijst met opnamen voor contribuanten van het WKND-merk.
+1. Tik vanaf het scherm AEM starten **Inhoudsfragmenten** om de interface voor inhoudsfragmenten te openen.
 
-1. Klik **Maken** in de rechterbovenhoek en selecteer **Inhoudsfragment**:
+   ![UI voor inhoudsfragment](assets/author-content-fragments/cf-fragment-ui.png)
 
-   ![Klik op Een nieuw fragment maken](assets/author-content-fragments/create-content-fragment-menu.png)
+1. In de linkerspoorstaaf breidt zich uit **Mijn project** en tikken **Engels**.
+1. Tikken **Maken** om **Nieuw inhoudsfragment** en voert u de volgende waarden in:
 
-1. Selecteer het model **Contributor** en klik **Next**.
+   * Locatie: `/content/dam/my-project/en`
+   * Inhoudsfragmentmodel: **Persoon**
+   * Titel: **John Doe**
+   * Naam: `john-doe`
 
-   ![Selecteer bijdragemodel](assets/author-content-fragments/select-contributor-model.png)
+   ![Nieuw inhoudsfragment](assets/author-content-fragments/new-content-fragment-john-doe.png)
+1. Tikken **Maken**.
+1. Herhaal bovenstaande stappen om een nieuw fragment te maken dat **Alison Smith**:
 
-   Dit is het zelfde model **Contributor** dat in het vorige hoofdstuk werd gecreeerd.
+   * Locatie: `/content/dam/my-project/en`
+   * Inhoudsfragmentmodel: **Persoon**
+   * Titel: **Alison Smith**
+   * Naam: `alison-smith`
 
-1. Typ **Stacey Roswells** voor de titel en klik **Maken**.
-1. Klik **Open** in **Success** dialoog om het nieuwe fragment te openen.
+   Tikken **Maken** om het nieuwe Person-fragment te maken.
 
-   ![Nieuw inhoudsfragment gemaakt](assets/author-content-fragments/new-content-fragment.png)
+1. Herhaal de stappen om een nieuwe **Team** fragment dat **Team Alpha**:
 
-   Let op: de velden die door het model worden gedefinieerd, zijn nu beschikbaar voor het schrijven van dit exemplaar van het inhoudsfragment.
+   * Locatie: `/content/dam/my-project/en`
+   * Inhoudsfragmentmodel: **Team**
+   * Titel: **Team Alpha**
+   * Naam: `team-alpha`
 
-1. Voer voor **Volledige naam** het volgende in: **Stacey Roswells**.
-1. Voer voor **Biografie** een korte biografie in. Heb je enige inspiratie nodig? U kunt dit [tekstbestand](assets/author-content-fragments/stacey-roswells-bio.txt) opnieuw gebruiken.
-1. Voor **Referentieafbeelding** klikt u op het pictogram **folder** en bladert u naar **WKND Site** > **English** > **Medewerkers** > **Stapelwells.jpg**. Hierdoor wordt het pad geëvalueerd: `/content/dam/wknd/en/contributors/stacey-roswells.jpg`.
-1. Kies **Fotograaf** voor **Beroep**.
+   Tikken **Maken** om het nieuwe fragment van het Team tot stand te brengen.
 
-   ![Geautoriseerd fragment](assets/author-content-fragments/stacye-roswell-fragment-authored.png)
+1. Er moeten nu drie Content Fragments onder zijn **Mijn project** > **Engels**:
 
-1. Klik **Opslaan** om de wijzigingen op te slaan.
+   ![Nieuwe inhoudsfragmenten](assets/author-content-fragments/new-content-fragments.png)
 
-## Een fragmentvariatie van inhoud maken
+## Inhoudsfragmenten voor personen bewerken {#edit-person-content-fragments}
 
-Alle inhoudsfragmenten beginnen met een **Master** variatie. De **Master** variatie kan worden beschouwd als de *standaard* inhoud van het fragment en wordt automatisch gebruikt wanneer de inhoud via GraphQL APIs wordt blootgesteld. Het is ook mogelijk om variaties van een inhoudsfragment te maken. Deze functie biedt extra flexibiliteit voor het ontwerpen van een implementatie.
+Vervolgens vult u de nieuwe fragmenten met gegevens.
 
-Variaties kunnen worden gebruikt voor specifieke kanalen. Er kan bijvoorbeeld een **mobiele**-variatie worden gemaakt die een kleinere hoeveelheid tekst bevat of verwijst naar een kanaalspecifieke afbeelding. De manier waarop variaties worden gebruikt, is echt tot aan de implementatie. Zoals om het even welke eigenschap, zou de zorgvuldige planning moeten worden gedaan alvorens te gebruiken.
+1. Tik op het selectievakje naast **John Doe** en tikken **Openen**.
 
-Maak vervolgens een nieuwe variatie om een idee te krijgen van de beschikbare mogelijkheden.
+   ![Inhoudsfragment openen](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. Open het inhoudsfragment **Stacey Roswells** opnieuw.
-1. Klik in de linkerzijbalk op **Variatie maken**.
-1. Typ in het modaal **Nieuwe variatie** een titel van **Samenvatting**.
+1. De Inhoudsfragmenteditor bevat een formulier dat is gebaseerd op het model Inhoudsfragment. Vul de verschillende velden in die u aan de **John Doe** fragment. Kies voor Profielafbeelding een van de afbeeldingen in Gedeelde WKND of upload uw eigen afbeelding naar AEM Assets.
 
-   ![Nieuwe variatie - overzicht](assets/author-content-fragments/new-variation-summary.png)
+   ![Inhoudsfragmenteditor](assets/author-content-fragments/content-fragment-editor-jd.png)
 
-1. Klik in het veld **Biografie** met meerdere regels en klik op de knop **Uitbreiden** om de weergave Volledig scherm voor het veld met meerdere regels in te voeren.
+1. Tik vervolgens op **Variatie maken** in de linkerspoorstaaf. Voeg in het dialoogvenster tekst toe **Alternatief** voor de variatienaam.
 
-   ![Volledige schermweergave starten](assets/author-content-fragments/enter-full-screen-view.png)
+1. Enkele elementen in het dialoogvenster **Alternatief** variatie.
 
-1. Klik **Samenvatting Tekst** in het hogere juiste menu.
+   ![Alternatieve versie](assets/author-content-fragments/alternate-variation-john-doe-fragment.png)
 
-1. Voer een **Doel** van **50** woorden in en klik **Begin**.
+   Met de variatiefunctie kunnen auteurs verschillende versies van hetzelfde inhoudsfragment maken. Hiermee kunt u een samenvattingsversie van een artikel met een lange versie weergeven. Standaard één **Master** variatie wordt gecreëerd. Tekstveldelementen met meerdere regels van een variatie kunnen worden gesynchroniseerd met de master variatie.
 
-   ![Voorvertoning overzicht](assets/author-content-fragments/summarize-text-preview.png)
+1. Tikken **Opslaan en sluiten** om de wijzigingen in het fragment Jan Smit op te slaan.
+1. Ga terug naar de interface van het inhoudsfragment en open de interface **Alison Smith** bestand voor bewerking.
+1. Herhaal de bovenstaande stappen om de **Alison Smith** fragment met inhoud.
 
-   Hiermee wordt een voorvertoning van een overzicht geopend. AEM machinetaal taalprocessor probeert de tekst samen te vatten op basis van het aantal doelwoorden. U kunt ook verschillende zinnen selecteren die u wilt verwijderen.
+## Inhoudsfragment team bewerken {#edit-team-content-fragment}
 
-1. Klik **Samenvatten** wanneer u met de samenvatting gelukkig bent. Klik in het tekstveld met meerdere regels en schakel de knop **Uitbreiden** in om terug te keren naar de hoofdweergave.
+1. Open de **Team Alpha** Inhoudsfragment met de gebruikersinterface van het inhoudsfragment.
+1. Vul de velden in voor **Titel**, **Korte naam**, en **Beschrijving**.
+1. Selecteer **John Doe** en **Alison Smith** Inhoudsfragmenten om de **Teamleden** veld:
 
-1. Klik **Opslaan** om de wijzigingen op te slaan.
+   ![Teamleden instellen](assets/author-content-fragments/select-team-members.png)
 
-## Een extra inhoudsfragment maken
+   >[!NOTE]
+   >
+   >U kunt ook online nieuwe inhoudsfragmenten maken met de opdracht **Nieuw inhoudsfragment** knop.
 
-Herhaal de stappen die worden beschreven in [Een inhoudsfragment maken](#create-content-fragment) om een extra **Contribute** te maken. Dit zal in het volgende hoofdstuk als voorbeeld van worden gebruikt hoe te om veelvoudige fragmenten te vragen.
+1. Tikken **Opslaan en sluiten** om de wijzigingen in het Team Alpha- fragment op te slaan.
 
-1. Klik in de map **Medewerkers** op **Maken** in de rechterbovenhoek en selecteer **Inhoudsfragment**:
-1. Selecteer het model **Contributor** en klik **Next**.
-1. Voer **Jacob Wester** in voor de titel en klik op **Maken**.
-1. Klik **Open** in **Success** dialoog om het nieuwe fragment te openen.
-1. Voer voor **Volledige naam** het volgende in: **Jacob Wester**.
-1. Voer voor **Biografie** een korte biografie in. Heb je enige inspiratie nodig? U kunt dit [tekstbestand](assets/author-content-fragments/jacob-wester.txt) opnieuw gebruiken.
-1. Voor **Referentieafbeelding** klikt u op het pictogram **folder** en bladert u naar **WKND Site** > **English** > **Contributors** > **jacob_wester.jpg**. Hierdoor wordt het pad geëvalueerd: `/content/dam/wknd/en/contributors/jacob_wester.jpg`.
-1. Kies **Schrijver** voor **Beroep**.
-1. Klik **Opslaan** om de wijzigingen op te slaan. U hoeft alleen een variatie te maken als u dat wilt!
+## WKND-inhoudsfragmenten verkennen (optioneel) {#explore-wknd-content-fragments}
 
-   ![Extra inhoudsfragment](assets/author-content-fragments/additional-content-fragment.png)
+Als u [De WKND Shared-voorbeeldinhoud geïnstalleerd](./overview.md#install-sample-content) u kunt de inhoudsfragmenten controleren op avonturen, artikelen en auteurs-modellen voor meer ideeën over het maken van inhoud.
 
-   U moet nu twee **Contributors** fragmenten hebben.
+![WKND-inhoudsfragmenten](assets/author-content-fragments/wknd-content-fragments.png)
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -123,4 +163,9 @@ U hebt zojuist meerdere inhoudsfragmenten gemaakt en een variatie gemaakt.
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk, [Onderzoek GraphQL APIs](explore-graphql-api.md), zult u AEM GraphQL APIs gebruikend het ingebouwde hulpmiddel GraphQL onderzoeken. Leer hoe AEM automatisch een GrafiekQL-schema genereert dat op een model van het Fragment van de Inhoud wordt gebaseerd. U zult het construeren van basisvragen gebruikend de syntaxis GraphQL experimenteren.
+In het volgende hoofdstuk: [GraphQL API&#39;s verkennen](explore-graphql-api.md), zult u AEM GraphQL APIs gebruikend het ingebouwde hulpmiddel GrapiQL onderzoeken. Leer hoe AEM automatisch een GrafiekQL-schema genereert dat op een model van het Fragment van de Inhoud wordt gebaseerd. U zult het construeren van basisvragen gebruikend de syntaxis GraphQL experimenteren.
+
+## Verwante documentatie
+
+* [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html)
+* [Variaties - Authoring van content voor fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html)

@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
 source-wordcount: '1768'
 ht-degree: 0%
@@ -128,7 +128,7 @@ De WKND-verwijzingssite bevat configuraties die nodig zijn om een [GraphQL-eindp
 
    >[!NOTE]
    >
-   > In een productiescenario zal de App met een AEM verbinden **Publiceren** milieu. Dit wordt meer in detail besproken in het [Implementatie van productie](../multi-step/production-deployment.md) hoofdstuk
+   > In een productiescenario zal de App met een AEM verbinden **Publiceren** milieu. Dit wordt meer in detail besproken in het _Implementatie van productie_ sectie.
 
 1. Navigeer in de `aem-guides-wknd-graphql/react-app` map. Installeer en start de app:
 
