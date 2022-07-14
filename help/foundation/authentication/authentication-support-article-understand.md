@@ -1,23 +1,23 @@
 ---
 title: Verificatieondersteuning begrijpen in AEM
-description: 'Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen (en soms autorisaties). '
+description: Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen (en soms autorisaties).
 version: 6.3, 6.4, 6.5
-feature: Gebruiker en groepen
+feature: User and Groups
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
-topic: Architectuur
+topic: Architecture
 role: Architect
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
+source-git-commit: 84d7230071544e7cdc63ecc0faa32c03ab337cd6
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
-
 
 # Verificatieondersteuning in AEM 6.x
 
@@ -52,7 +52,7 @@ Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen
             <td>✔</td>
         </tr>
         <tr>
-            <td>Op token gebaseerd (met <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">ingekapseld token</a>)</td>
+            <td>Op basis van token (w/ <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">ingekapseld token</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -81,7 +81,7 @@ Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html" target="_blank">OAuth 1.0a &amp; 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/assets/oauth-server-functionality-in-aem-7-23-14.pdf" target="_blank">OAuth 1.0a &amp; 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
@@ -95,4 +95,4 @@ Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen
     </tbody>
 </table>
 
-⁕ *Wordt geleverd via gemeenschapsprojecten, maar niet rechtstreeks ondersteund door Adobe.*
+⁕ *Via gemeenschapsprojecten verstrekt, maar niet rechtstreeks ondersteund door Adobe.*
