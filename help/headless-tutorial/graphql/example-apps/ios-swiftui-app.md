@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
+source-git-commit: 5d32899a58e591b535dab991f89a8f7467b7b435
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 
 ![iOS SwiftUI-app met AEM Headless](./assets/ios-swiftui-app/ios-app.png)
 
-De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app)
+De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app)
 
 ## Vereisten {#prerequisites}
 
@@ -50,7 +50,7 @@ De iOS-toepassing is ontworpen om verbinding te maken met een __AEM-publicatie__
    git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Starten [Xcode](https://developer.apple.com/xcode/) en opent u de map `ios-swiftui-app`
+1. Starten [Xcode](https://developer.apple.com/xcode/) en opent u de map `ios-app`
 1. Het bestand wijzigen `Config.xcconfig` bestand en update `AEM_SCHEME` en `AEM_HOST` om overeen te komen met uw doel-AEM-publicatieservice.
 
    ```plain
@@ -86,7 +86,7 @@ De iOS-toepassing is ontworpen om verbinding te maken met een __AEM-publicatie__
 
 ## De code
 
-Hieronder volgt een overzicht van hoe de iOS-toepassing is gebouwd, hoe deze verbinding maakt met AEM Headless om inhoud op te halen met behulp van GraphQL persisted query&#39;s en hoe die gegevens worden gepresenteerd. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app).
+Hieronder volgt een overzicht van hoe de iOS-toepassing is gebouwd, hoe deze verbinding maakt met AEM Headless om inhoud op te halen met behulp van GraphQL persisted query&#39;s en hoe die gegevens worden gepresenteerd. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
 
 ### Blijvende query&#39;s
 
