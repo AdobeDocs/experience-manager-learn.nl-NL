@@ -9,9 +9,9 @@ level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: 94a57490edb00da072446ee8ca07c12c413ce1ac
+source-git-commit: b4c04a9ef7d8cfdaa5675fdfe259ab9d813fb7e0
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,8 @@ _Screencast van stappen_
 1. Een Git-opslagplaats maken voor het WKND-siteproject
    1. Selecteren __Opslagplaatsen__ in de bovenste navigatie
    1. Selecteren __Opslagplaats toevoegen__ in de bovenste actiebalk
-   1. Geef de nieuwe Git-opslagplaats een naam: `aem-headless-quick-setup`
+   1. Geef de nieuwe Git-opslagplaats een naam: `aem-headless-quick-setup-wknd`
+      + Namen van Git-opslagplaats moeten uniek zijn per Adobe-organisatie.
    1. Selecteren __Opslaan__ en wacht tot de Git-opslagplaats is geïnitialiseerd
 
 ## 2. Voorbeeld van WKND-siteproject naar cloudbeheermap voor informatiekit verplaatsen
@@ -71,13 +72,13 @@ _Screencast van stappen_
 
       ```shell
       $ cd aem-guides-wknd
-      $ git remote add adobe https://git.cloudmanager.adobe.com/<YOUR ADOBE ORGANIZATION>/aem-headless-quick-setup/
+      $ git remote add adobe https://git.cloudmanager.adobe.com/<YOUR ADOBE ORGANIZATION>/aem-headless-quick-setup-wknd/
       ```
 
 1. Verplaats de broncode van het voorbeeldproject van uw lokale Git-opslagruimte naar de cloudbeheeropslagplaats
 
    ```shell
-   $ git push adobe master:main
+   $ git push adobe main:main
    ```
 
    Geef bij de aanwijzing voor referenties de __Gebruikersnaam__ en __Wachtwoord__ van Cloud Manager __Info opslagplaats__ modal.
@@ -103,7 +104,7 @@ _Screencast van stappen_
    1. Op de __Broncode__ tab
       1. Selecteren __Volledige stapelcode__ option
       1. Selecteer __AEM as a Cloud Service ontwikkelomgeving__ van de __In aanmerking komende implementatieomgevingen__ Selectievakje
-      1. Selecteren `aem-headless-quick-setup` in de __Bewaarplaats__ Selectievakje
+      1. Selecteren `aem-headless-quick-setup-wknd` in de __Bewaarplaats__ Selectievakje
       1. Selecteren `main` van de __Git Branch__ Selectievakje
       1. Selecteren __Opslaan__
 1. Voer de __Implementatiepijp voor Dev__
@@ -113,7 +114,7 @@ _Screencast van stappen_
    1. Selecteren __Uitvoeren__ en in het modaal
    1. Selecteer __...__ rechts van de nu lopende pijpleiding
    1. Selecteren __Details weergeven__
-1. Van de details van de pijpleidingsuitvoering, controleer vooruitgang tot het met succes voltooide. De uitvoering van de pijpleiding moet tussen 45 en 60 minuten duren.
+1. Van de details van de pijpleidingsuitvoering, controleer vooruitgang tot het met succes voltooide. De uitvoering van de pijpleiding moet tussen 30 en 40 minuten duren.
 
 ## 4. De WKND React-app downloaden en uitvoeren
 
@@ -126,15 +127,15 @@ _Screencast van stappen_
 
    ```shell
    $ cd ~/Code
-   $ git clone --branch tutorial/react git@github.com:adobe/aem-guides-wknd-graphql.git
+   $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. De map openen `~/Code/aem-guides-wknd-graphql` in uw IDE.
-1. Open het bestand in de IDE `react-app/.env.development`.
+1. De map openen `~/Code/aem-guides-wknd-graphql/react-app` in uw IDE.
+1. Open het bestand in de IDE `.env.development`.
 1. Wijs naar de as a Cloud Service AEM __Publiceren__ de gastheer URI van de dienst van  `REACT_APP_HOST_URI` eigenschap.
 
    ```plain
-   REACT_APP_HOST_URI=https://publish-pXXXX-eYYYY.adobeaemcloud.com/
+   REACT_APP_HOST_URI=https://publish-pXXXX-eYYYY.adobeaemcloud.com
    ...
    ```
 
@@ -164,19 +165,19 @@ _Screencast van stappen_
 >[!VIDEO](https://video.tv.adobe.com/v/339077/?quality=12&learn=on)
 
 1. Aanmelden bij AEM as a Cloud Service auteur-service
-1. Navigeren naar __Middelen > Bestanden > WKND > Engels > Adventures__
+1. Navigeren naar __Assets > Files > WKND Shared > English > Adventures__
 1. Open de __Cycli Southern Utah__ Map
 1. Selecteer __Cycli Southern Utah__ Inhoudsfragment en selecteer __Bewerken__ van de bovenste actiebalk
 1. Werk enkele velden van het inhoudsfragment bij, bijvoorbeeld:
    + Titel: `Cycling Utah's National Parks`
    + Lengte van reisstrook: `6 Days`
    + Probleem: `Intermediate`
-   + Prijs: `$3500`
-   + Primaire afbeelding: `/content/dam/wknd/en/activities/cycling/mountain-biking.jpg`
+   + Prijs: `3500`
+   + Primaire afbeelding: `/content/dam/wknd-shared/en/activities/cycling/mountain-biking.jpg`
 1. Selecteren __Opslaan__ in de bovenste actiebalk
 1. Selecteren __Snel publiceren__ van de bovenste actiebalk __...__
 1. De React-app vernieuwen die wordt uitgevoerd op [http://localhost:3000](http://localhost:3000).
-1. Selecteer in de React-app de nu bijgewerkte versie en controleer de wijzigingen in de inhoud van het inhoudsfragment.
+1. Selecteer in React App het nu bijgewerkte cyclusavontuur, en verifieer de inhoudsveranderingen die aan het Inhoudsfragment worden aangebracht.
 
 1. Dezelfde aanpak gebruiken in AEM Author-service:
    1. Publiceer een bestaand fragment van de Inhoud van het Avontuur, en verifieer het wordt verwijderd uit React App ervaring
