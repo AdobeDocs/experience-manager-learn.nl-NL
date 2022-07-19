@@ -1,6 +1,6 @@
 ---
 title: Inhoudsfragmenten en ervaringsfragmenten begrijpen
-description: Adobe Experience Manager Content Fragments and Experience Fragments kunnen er ongeveer hetzelfde uitzien op het oppervlak, maar elk speelt een sleutelrol in verschillende gebruiksgevallen. Leer hoe de Fragmenten van de Inhoud en de Fragmenten van de Ervaring gelijkaardig zijn, verschillend, en wanneer en hoe te om elk te gebruiken.
+description: Leer de gelijkenissen en de verschillen tussen de Fragmenten van de Inhoud en de Fragmenten van de Ervaring, en wanneer en hoe te om elk type te gebruiken.
 sub-product: assets, sites, content services
 feature: Content Fragments, Experience Fragments
 topics: headless
@@ -11,13 +11,13 @@ audience: all
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
-
 
 # Inhoudsfragmenten en ervaringsfragmenten begrijpen
 
@@ -31,17 +31,17 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 <td><strong>Geniet van fragmenten (XF)</strong></td>
 </tr><tr><td><strong>Definitie</strong></td>
 <td><ul>
-<li>Herbruikbaar, presentatie-agnostisch <strong>content</strong>, samengesteld uit gestructureerde gegevenselementen (tekst, datums, verwijzingen, enz.)</li>
+<li>Herbruikbaar, presentatie-agnostisch <strong>content</strong>, bestaande uit gestructureerde gegevenselementen (tekst, datums, verwijzingen, enz.)</li>
 </ul>
 </td>
 <td><ul>
-<li>Een herbruikbare samenstelling van een of meer AEM Componenten die inhoud en presentatie definiëren die een <strong>ervaring</strong> vormen die op zichzelf zinnig is</li>
+<li>Een herbruikbare samenstelling van een of meer AEM Componenten die inhoud en presentatie definiëren die een <strong>ervaring</strong> dat op zichzelf zinvol is</li>
 </ul>
 </td>
 </tr><tr><td><strong>Core Tenders</strong></td>
 <td><ul>
 <li>Inhoud-centrisch</li>
-<li>Gedefinieerd door een <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">gestructureerd, op vorm gebaseerd gegevensmodel.</a></li>
+<li>Gedefinieerd door a <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">gestructureerd, op vorm-gebaseerd, gegevensmodel.</a></li>
 <li>Ontwerp en layout agnostisch.</li>
 <li>Het kanaal is eigenaar van de presentatie van de inhoud van het inhoudsfragment (layout en ontwerp)</li>
 </ul>
@@ -56,13 +56,13 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 </tr><tr><td><strong>Technische details</strong></td>
 <td><ul>
 <li>Geïmplementeerd als een <strong>dam:Asset</strong></li>
-<li>Gedefinieerd door een <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">Inhoudsfragmentmodel</a></li>
+<li>Gedefinieerd door a <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">Inhoudsfragmentmodel</a></li>
 </ul>
 </td>
 <td><ul>
-<li>Geïmplementeerd als een <strong>cq:Pagina</strong></li>
+<li>Geïmplementeerd als een <strong>cq:pagina</strong></li>
 <li>Gedefinieerd door bewerkbare sjablonen</li>
-<li>Systeemeigen HTML-uitvoering</li>
+<li>Native HTML-uitvoering</li>
 </ul>
 </td>
 </tr><tr><td><strong>Variaties</strong></td>
@@ -74,17 +74,17 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 <td><ul>
 <li>Variaties zijn specifiek voor het kanaal of de context</li>
 <li>Variaties worden gesynchroniseerd gehouden via AEM Live Copy</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html" target="_blank">Gebouwend </a> blocksallow inhoud hergebruik over variaties</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html" target="_blank">Bouwstenen</a> hergebruik van inhoud door verschillende variaties toestaan</li>
 </ul>
 </td>
 </tr><tr><td><strong>Functies</strong></td>
 <td><ul>
 <li>Variaties</li>
 <li>Versies</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#synchronizing-with-master" target="_blank">Synchronisatie van inhoud </a> tussen variaties</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-managing.html?lang=en#comparing-fragment-versions" target="_blank">Visuele </a> verschillende versies van inhoudsfragmenten</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#annotating-a-content-fragment" target="_blank"></a> Annotaties van tekstelementen met meerdere regels</li>
-<li>Intelligente <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#summarizing-text" target="_blank">samenvatting</a> van tekstelementen met meerdere regels.</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#synchronizing-with-master" target="_blank">Synchronisatie</a> inhoud van verschillende variaties</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-managing.html?lang=en#comparing-fragment-versions" target="_blank">Visuele diff</a> van versies van inhoudsfragmenten</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#annotating-a-content-fragment" target="_blank">Annotaties</a> van tekstelementen met meerdere regels</li>
+<li>Intelligent <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#summarizing-text" target="_blank">samenvatting</a> van tekstelementen met meerdere regels.</li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/creating-translation-projects-for-content-fragments.html?lang=en" target="_blank">Vertaling/lokalisatie</a></li>
 </ul>
 </td>
@@ -100,15 +100,15 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 </td>
 </tr><tr><td><strong>Gebruiken</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM de </a> component van het Fragment van de Inhoud van Componenten van de Kern voor gebruik in AEM Sites, AEM Screens of in de Fragmenten van de Ervaring.</li>
-<li>JSON exporteren via <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a> voor consumptie door derden</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM component Inhoud van kerncomponenten</a> voor gebruik in AEM Sites, AEM Screens of in Experience Fragments.</li>
+<li>JSON exporteren via <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a> voor verbruik door derden</li>
 <li>JSON via AEM HTTP Assets API's voor gebruik door derden.</li>
 </ul>
 </td>
 <td><ul>
 <li>AEM de component van het Fragment van de Ervaring voor gebruik in AEM Sites, AEM Screens of andere Fragmenten van de Ervaring.</li>
-<li>Exporteren als <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">Onbewerkte HTML</a> voor gebruik door systemen van derden</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=en" target="_blank">HTML-export naar </a> doelaanbiedingen voor Adobe</li>
+<li>Exporteren als <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">Gewone HTML</a> voor gebruik door systemen van derden</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=en" target="_blank">HTML exporteren naar Adobe Target</a> voor gerichte aanbiedingen</li>
 <li>JSON-export naar Adobe Target voor gerichte aanbiedingen</li>
 </ul>
 </td>
@@ -144,28 +144,28 @@ Het volgende diagram illustreert de algemene architectuur voor AEM Inhoudsfragme
 
 !![Architectuur van inhoudsfragmenten](./assets/content-fragments-architecture.png)
 
-+ **Content Fragment** Models definiëren de elementen (of velden) die definiëren welke inhoud het Content Fragment kan vastleggen en beschikbaar maken.
-+ Het **Inhoudsfragment** is een instantie van een Inhoudsfragmentmodel dat een logische inhoudsentiteit vertegenwoordigt.
-+ Inhoudsfragment **variaties** houden zich aan het Inhoudsfragmentmodel, maar hebben variaties in inhoud.
++ **Modellen van inhoudsfragmenten** Definieer de elementen (of velden) die definiëren welke inhoud het inhoudsfragment kan vastleggen en beschikbaar maken.
++ De **Inhoudsfragment** is een instantie van een Content Fragment Model dat een logische inhoudentiteit vertegenwoordigt.
++ Inhoudsfragment **variaties** Houd u aan het inhoudsfragmentmodel, maar u kunt de inhoud op verschillende manieren aanpassen.
 + Inhoudsfragmenten kunnen worden belicht/verbruikt door:
-   + Inhoudsfragmenten gebruiken op **AEM Sites** (of AEM Screens) via de inhoudsfragmentcomponent van AEM WCM Core Components&#39;.
-   + Insluiten van een inhoudsfragment in een **Ervaar fragment** via de inhoudsfragmentcomponent van AEM WCM Core-componenten, voor gebruik in elke Gebruikszaak van het Fragment van de Ervaring.
-   + Door de inhoud van een inhoudsfragment toegankelijk te maken als JSON via **AEM Content Services** en API-pagina&#39;s voor alleen-lezen gebruik.
-   + Inhoud van inhoudsfragment (alle variaties) rechtstreeks beschikbaar maken als JSON via directe aanroepen naar AEM Assets via de **AEM Assets HTTP API** voor CRUD-gebruiksgevallen.
+   + Inhoudsfragmenten gebruiken op **AEM Sites** (of AEM Screens) via de inhoudsfragmentcomponent van AEM WCM Core Components.
+   + Een inhoudsfragment insluiten in een **Ervaar fragment** via de AEM component van het Fragment van de Inhoud van de Kern van WCM, voor gebruik in om het even welk geval van het Fragment van de Ervaring.
+   + Inhoud van inhoudfragmentvariaties beschikbaar maken als JSON via **AEM Content Services** en API-pagina&#39;s voor alleen-lezen gebruik.
+   + Inhoud van inhoudsfragment (alle variaties) rechtstreeks toegankelijk maken als JSON via directe aanroepen naar AEM Assets via het dialoogvenster **AEM Assets HTTP API** voor CRUD-gebruik.
 
 ## Ervaar de architectuur van Fragmenten
 
 !![Ervaar de architectuur van Fragmenten](./assets/experience-fragments-architecture.png)
 
-+ **Bewerkbare sjablonen**, die op hun beurt worden gedefinieerd door  **bewerkbare** sjabloontypen en een implementatie **van de component** AEM Pagina, definiëren de toegestane AEM componenten die kunnen worden gebruikt om een ervaringsfragment samen te stellen.
-+ Het **Ervingsfragment** is een instantie van een bewerkbare sjabloon die een logische ervaring vertegenwoordigt.
-+ Ervaar het Fragment **variaties** houden zich aan het Bewerkbare Malplaatje, echter, hebben variaties in ervaring (inhoud en ontwerp).
++ **Bewerkbare sjablonen**, die op hun beurt worden gedefinieerd door **Bewerkbare sjabloontypen** en **Implementatie van AEM** definieert u de toegestane AEM componenten die kunnen worden gebruikt om een ervaringsfragment samen te stellen.
++ De **Ervaar fragment** is een instantie van een bewerkbare sjabloon die een logische ervaring vertegenwoordigt.
++ Ervaar fragment **variaties** Houd u aan de Bewerkbare sjabloon, maar u hebt verschillende ervaringen (inhoud en ontwerp).
 + De Fragmenten van de ervaring kunnen worden blootgesteld/worden verbruikt door:
    + Het gebruiken van de Fragmenten van de Ervaring op AEM Sites (of AEM Screens) via de AEM component van het Fragment van de Ervaring.
-   + Bij het beschikbaar maken van een Experience Fragment wordt de inhoud gewijzigd als JSON (met ingesloten HTML) via **AEM Content Services** en API Pages.
-   + Direct beschikbaar maken van een variant van het Fragment van de Ervaring zoals **&quot;Onbewerkte HTML&quot;**.
-   + Exporteren van Experience Fragments naar **Adobe Target** als HTML of JSON aanbiedingen.
-   + AEM Sites biedt standaard ondersteuning voor HTML-aanbiedingen, maar JSON-aanbiedingen vereisen aangepaste ontwikkeling.
+   + De inhoud van een Experience Fragment wordt als JSON (met ingesloten HTML) beschikbaar via **AEM Content Services** en API-pagina&#39;s.
+   + Een Experience Fragment rechtstreeks toegankelijk maken als **&quot;Gewone HTML&quot;**.
+   + Erviteitsfragmenten exporteren naar **Adobe Target** zoals HTML of JSON aanbiedt.
+   + AEM Sites biedt native ondersteuning voor HTML-aanbiedingen, maar JSON-aanbiedingen vereisen aangepaste ontwikkeling.
 
 ## Materialen voor inhoudsfragmenten ondersteunen
 

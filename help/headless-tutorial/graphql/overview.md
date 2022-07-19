@@ -1,22 +1,21 @@
 ---
-title: Aan de slag met AEM zonder kop - GraphQL
-description: Een overzicht van AEM GraphQL APIs en mogelijkheden.
-feature: Inhoudsfragmenten, GraphQL API, API's
-topic: Koploos, inhoudsbeheer
+title: Aan de slag met AEM headless - GraphQL
+description: Leer over de Experience Manager GraphQL APIs en hun mogelijkheden.
+feature: Content Fragments, GraphQL API, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '246'
 ht-degree: 1%
 
 ---
 
-
 # Aan de slag met AEM zonder kop - GraphQL
 
-GrafiekQL APIs voor Inhoudsfragmenten AEM
-ondersteunt CMS-scenario&#39;s zonder kop waarbij externe clienttoepassingen ervaringen renderen met inhoud die in AEM wordt beheerd.
+AEM GraphQL APIs voor de Fragmenten van de Inhoud steunt hoofd-loze scenario&#39;s CMS waar de externe cliënttoepassingen ervaringen teruggeven gebruikend inhoud die in AEM wordt beheerd.
 
 Een moderne API voor het leveren van inhoud is essentieel voor de efficiëntie en prestaties van op JavaScript gebaseerde frontendtoepassingen. Het gebruiken van REST API introduceert uitdagingen:
 

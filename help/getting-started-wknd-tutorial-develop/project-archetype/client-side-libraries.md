@@ -1,6 +1,6 @@
 ---
 title: Client-Side Libraries en front-end workflow
-description: Leer hoe Client-Side Bibliotheken of clientlibs worden gebruikt om CSS en JavaScript voor een implementatie van Adobe Experience Manager (AEM) Plaatsen op te stellen en te beheren. Dit leerprogramma zal ook behandelen hoe de module ui.frontend, een webpack project, in het bouwstijlproces van begin tot eind kan worden geïntegreerd.
+description: Leer hoe u met Client-Side Libraries of clientlibs CSS en JavaScript voor een Adobe Experience Manager (AEM)-implementatie van sites kunt implementeren en beheren. Leer hoe de module ui.frontend, een webpack-project, kan worden geïntegreerd in het end-to-end buildproces.
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
@@ -11,9 +11,9 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: 1a73d7ee1f71a5bd78114398f04e98a894847957
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '2882'
+source-wordcount: '2878'
 ht-degree: 0%
 
 ---

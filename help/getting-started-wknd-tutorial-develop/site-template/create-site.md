@@ -1,6 +1,6 @@
 ---
 title: Een site maken | AEM Snel site maken
-description: Als onderdeel van Snel maken kunt u de wizard Site maken in Adobe Experience Manager AEM gebruiken om een nieuwe website te genereren. Het standaardSjabloon voor site dat door Adobe wordt verschaft, wordt gebruikt als beginpunt voor de nieuwe site.
+description: Leer hoe u de wizard Site maken kunt gebruiken om een nieuwe website te genereren. De standaardsjabloon voor sites die door Adobe wordt verschaft, is een beginpunt voor de nieuwe site.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
@@ -11,9 +11,9 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---

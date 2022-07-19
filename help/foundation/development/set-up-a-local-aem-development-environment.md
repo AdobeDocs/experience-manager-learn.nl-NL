@@ -1,6 +1,6 @@
 ---
-title: Een lokale AEM ontwikkelomgeving instellen
-description: Handleiding voor het opzetten van een lokale ontwikkeling voor Adobe Experience Manager, AEM. Omvat belangrijke onderwerpen van lokale installatie, Apache Maven, geïntegreerde ontwikkelomgevingen en het zuiveren/het oplossen van problemen. De ontwikkeling met winde van de Verduistering, CRXDE-Lite, de Code van Visual Studio en IntelliJ worden besproken.
+title: Een ontwikkelomgeving voor lokale AEM instellen
+description: 'Leer hoe u een lokale ontwikkelomgeving instelt voor Experience Manager. Ga vertrouwd met lokale installatie, Apache Maven, geïntegreerde ontwikkelomgevingen en foutopsporing en probleemoplossing. Eclipse IDE van het gebruik, CRXDE-Lite, de Code van Visual Studio, en IntelliJ. '
 version: 6.4, 6.5
 feature: Developer Tools
 topics: development
@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '2553'
+source-wordcount: '2550'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Het opzetten van een lokale ontwikkelomgeving is de eerste stap bij het ontwikke
 
 ## Lokale AEM installeren
 
-Wanneer we verwijzen naar een lokale AEM, hebben we het over een kopie van Adobe Experience Manager die wordt uitgevoerd op de persoonlijke machine van een ontwikkelaar. ***Alles*** AEM ontwikkeling moet beginnen door code te schrijven en uit te voeren tegen een lokale AEM.
+Wanneer we verwijzen naar een lokale AEM, hebben we het over een kopie van Adobe Experience Manager die wordt uitgevoerd op de persoonlijke machine van een ontwikkelaar. ***Alles*** AEM ontwikkeling zou moeten beginnen door code tegen een lokale AEM instantie te schrijven en in werking te stellen.
 
 Als u nog geen ervaring hebt met AEM, kunt u twee standaardmodi installeren: ***Auteur*** en ***Publiceren***. De ***Auteur*** [runmode](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)  Dit is de omgeving die digitale marketers zullen gebruiken om inhoud te maken en te beheren. Bij het ontwikkelen **meest** van de tijd u code aan een instantie van de Auteur zult opstellen. Hierdoor kunt u nieuwe pagina&#39;s maken en componenten toevoegen en configureren. AEM Sites is een WYSIWYG-ontwerpend CMS en daarom kunnen de meeste CSS en JavaScript worden getest op basis van een ontwerpinstantie.
 
@@ -170,7 +170,7 @@ De **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** is een krachtige IDE voo
 * [**Downloaden**](https://code.visualstudio.com/Download) **Visual Studio-code**
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - FTP-achtig gereedschap voor JCR-inhoud
 * **[geaëerd](https://aemfed.io/)** - Verhoog uw AEM front-end workflow
-* **[Synchroniseren](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Community supported* extension for Visual Studio Code
+* **[Synchroniseren](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Door de Gemeenschap ondersteund&#42; uitbreiding voor de Code van Visual Studio
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
