@@ -9,7 +9,7 @@ level: Intermediate
 kt: 10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
+source-git-commit: 595d990b7d8ed3c801a085892fef38d780082a15
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -25,10 +25,6 @@ De AEM Headless SDK is beschikbaar voor verschillende platforms:
 + [AEM Headless SDK voor clientbrowsers (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 + [AEM Headless SDK voor server-side/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 + [AEM headless SDK voor Java™](https://github.com/adobe/aem-headless-client-java)
-
-## GraphQL-query&#39;s
-
-AEM steunt cliënt-bepaalde vragen GraphQL, nochtans is het AEM beste praktijken aan gebruik [voortgeduurde vragen GraphQL](#persisted-graphql-queries).
 
 ## Blijvende query&#39;s voor GraphQL
 
@@ -202,3 +198,8 @@ Nieuw `useEffect` U kunt haken maken voor elke doorlopende query die de React-ap
 +++
 
 <p> </p>
+
+## GraphQL-query&#39;s
+
+AEM steunt cliënt-bepaalde vragen GraphQL, nochtans is het AEM beste praktijken aan gebruik [voortgeduurde vragen GraphQL](#persisted-graphql-queries).
+
