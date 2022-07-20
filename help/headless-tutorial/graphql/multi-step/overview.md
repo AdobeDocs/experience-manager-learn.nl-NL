@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 879018d44cc63421d1c7185cce1c30fedbf526c9
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -52,8 +52,6 @@ Voor het voltooien van deze zelfstudie is een Adobe Experience Manager-omgeving 
    * [Toegang tot AEM as a Cloud Service en Cloud Manager](/help/cloud-service/accessing/overview.md)
       * **AEM** toegang tot AEM as a Cloud Service
       * **Cloud Manager - Ontwikkelaar** toegang tot Cloud Manager
-* [Lokale AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md).
-* [AEM 6.5.13+](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 
 ### Voorbeeldinhoud installeren {#install-sample-content}
 
@@ -65,6 +63,7 @@ Het kan handig zijn om voorbeeldinhoud die al beschikbaar is in de AEM-omgeving 
 1. Navigeer van het AEM beginscherm naar **Gereedschappen** > **Implementatie** > **Pakketten**:
 
    ![Navigeren door pakketbeheer](assets/overview/navigate-package-manager.png)
+
 1. Tikken **Pakket uploaden** en kiest u `aem-guides-wknd-shared.ui.content-x.x.x.zip` eerder gedownload bestand. Tikken **OK** om te uploaden.
 1. Tik op **Installeren** om de inhoud te installeren.
 
