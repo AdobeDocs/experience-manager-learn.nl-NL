@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 52587c1131620d62428ecfc464a97dce00d8a1d8
+source-git-commit: c061ea9d08606052c4b2cf5b3c84d6f1df5a57fa
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -114,14 +114,16 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
   </tr>
 <tr>
    <td>
-            <img alt="Uw problemen verhelpen... Herschrijven" src="./imgs/coming-soon.png"/>
+           <a href="season-2/cloud5-fix-your-rewrites.md">
+               <img alt="Uw bestand herstellen...opnieuw schrijven" src="./imgs/s2/006-thumb.png"/>
+            </a>
       <div>
-            <strong>Uw problemen verhelpen... Herschrijven</strong>
+            <a href="season-2/cloud5-fix-your-rewrites.md"><strong>Uw problemen verhelpen... Herschrijven</strong></a>
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-         Vanaf 22 juli 2022
+         Snel inzicht in dingen die uw herschrijfontwikkeling en optimalisering over AEM as a Cloud Service zullen helpen versnellen.
       </p>
      </td>   
      <td>
