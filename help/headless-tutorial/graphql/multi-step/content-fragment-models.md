@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ U bent ook welkom om uw eigen model na de basisstappen tot stand te brengen en d
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat een [AEM auteursomgeving is beschikbaar](./overview.md#prerequisites) en eventueel de [WKND Gedeelde voorbeeldinhoud is geïnstalleerd](./overview.md#install-sample-content).
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat een [AEM auteursomgeving is beschikbaar](./overview.md#prerequisites)
 
 ## Doelstellingen {#objectives}
 
@@ -39,7 +39,7 @@ Dit is een meerdelige zelfstudie en er wordt aangenomen dat een [AEM auteursomge
 
 Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbonden aan een bepaald project en verstrekt een middel om modellen te organiseren. Er moet ten minste één project worden gemaakt **voor** het maken van een nieuw Content Fragment-model.
 
-1. Aanmelden bij de AEM **Auteur** milieu.
+1. Aanmelden bij de AEM **Auteur** milieu (bijv. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
 
    ![Navigeren naar de configuratiebrowser](assets/content-fragment-models/navigate-config-browser.png)
@@ -65,7 +65,6 @@ Een nieuw model maken voor een **Persoon**, dit is het gegevensmodel dat een per
 
    ![Navigeren naar Modellen van inhoudsfragmenten](assets/content-fragment-models/navigate-cf-models.png)
 
-   Als u de [voorbeeldinhoud](overview.md#install-sample-content) dan ziet u twee mappen: **Mijn project** en **WKND gedeeld**.
 1. Navigeer in de **Mijn project** map.
 1. Tikken **Maken** in de rechterbovenhoek om de **Model maken** wizard.
 1. Voor **Modeltitel** enter: **Persoon** en tikken **Maken**.
@@ -165,23 +164,23 @@ Een nieuw model maken voor een **Team**, het gegevensmodel voor een team van men
 
    ![Twee modellen](assets/content-fragment-models/two-new-models.png)
 
-## Inspect the WKND Content Fragment Models (optioneel)
+## Projectconfiguratie en modellen voor inhoudsfragmenten publiceren
 
-Als u [De WKND Shared-voorbeeldinhoud geïnstalleerd](./overview.md#install-sample-content) u kunt het avontuur, het Artikel, en de modellen van de Auteur inspecteren om meer ideeën van gegevens te krijgen modelleringstechnieken.
+Na revisie en verificatie publiceert u de `Project Configuration` &amp; `Content Fragment Model`
 
-1. Van de **AEM starten** menu navigeren naar **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**.
+1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
 
-1. Navigeer in de **WKND gedeeld** en ziet u drie modellen: Artikel, avontuur en Auteur.
+1. Tik op het selectievakje naast **Mijn project** en tikken **Publiceren**
 
-1. Inspect de modellen door de muisaanwijzer op de kaart te plaatsen en op het bewerkingspictogram (potlood) te tikken
+   ![Projectconfiguratie publiceren](assets/content-fragment-models/publish-project-config.png)
 
-   ![WKND-modellen](assets/content-fragment-models/wknd-shared-models.png)
+1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**.
 
-1. Hierdoor wordt het **Inhoudsfragmentmodeleditor** voor het model en u kunt de diverse gebruikte gegevenstypen inspecteren.
+1. Navigeer in de **Mijn project** map.
 
-   >[!CAUTION]
-   >
-   > Het model wijzigen **na** Inhoudsfragmenten zijn gemaakt en hebben downstreameffecten. Er wordt niet langer verwezen naar veldwaarden in bestaande fragmenten en het gegevensschema dat door GraphQL wordt weergegeven, wordt gewijzigd, wat invloed heeft op bestaande toepassingen.
+1. Tikken **Persoon** en **Team** modellen en tikken **Publiceren**
+
+   ![Modellen voor inhoudsfragmenten publiceren](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Gefeliciteerd! {#congratulations}
 

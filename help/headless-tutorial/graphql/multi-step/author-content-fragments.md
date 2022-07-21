@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '819'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragme
 
    ![Modellen voor inhoudsfragmenten toestaan](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Dit beleid wordt automatisch door submappen overgeërfd en kan worden overschreven. Merk op dat u modellen door markeringen kunt ook toestaan of modellen van andere projectconfiguraties (zoals Gedeelde WKND) toelaten. Dit mechanisme biedt een krachtige manier om uw inhoudshiërarchie te beheren.
+   Dit beleid wordt automatisch door submappen overgeërfd en kan worden overschreven. Merk op dat u modellen door markeringen kunt ook toestaan of modellen van andere projectconfiguraties toelaten. Dit mechanisme biedt een krachtige manier om uw inhoudshiërarchie te beheren.
 
 1. Tikken **Opslaan en sluiten** om de wijzigingen in de mapeigenschappen op te slaan.
 
@@ -121,17 +121,9 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
 
    ![Inhoudsfragment openen](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. De Inhoudsfragmenteditor bevat een formulier dat is gebaseerd op het model Inhoudsfragment. Vul de verschillende velden in die u aan de **John Doe** fragment. Kies voor Profielafbeelding een van de afbeeldingen in Gedeelde WKND of upload uw eigen afbeelding naar AEM Assets.
+1. De Inhoudsfragmenteditor bevat een formulier dat is gebaseerd op het model Inhoudsfragment. Vul de verschillende velden in die u aan de **John Doe** fragment. Upload voor Profielafbeelding uw eigen afbeelding naar AEM Assets.
 
    ![Inhoudsfragmenteditor](assets/author-content-fragments/content-fragment-editor-jd.png)
-
-1. Tik vervolgens op **Variatie maken** in de linkerspoorstaaf. Voeg in het dialoogvenster tekst toe **Alternatief** voor de variatienaam.
-
-1. Enkele elementen in het dialoogvenster **Alternatief** variatie.
-
-   ![Alternatieve versie](assets/author-content-fragments/alternate-variation-john-doe-fragment.png)
-
-   Met de variatiefunctie kunnen auteurs verschillende versies van hetzelfde inhoudsfragment maken. Hiermee kunt u een samenvattingsversie van een artikel met een lange versie weergeven. Standaard één **Master** variatie wordt gecreëerd. Tekstveldelementen met meerdere regels van een variatie kunnen worden gesynchroniseerd met de master variatie.
 
 1. Tikken **Opslaan en sluiten** om de wijzigingen in het fragment Jan Smit op te slaan.
 1. Ga terug naar de interface van het inhoudsfragment en open de interface **Alison Smith** bestand voor bewerking.
@@ -151,11 +143,17 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
 
 1. Tikken **Opslaan en sluiten** om de wijzigingen in het Team Alpha- fragment op te slaan.
 
-## WKND-inhoudsfragmenten verkennen (optioneel) {#explore-wknd-content-fragments}
+## Inhoudsfragmenten publiceren
 
-Als u [De WKND Shared-voorbeeldinhoud geïnstalleerd](./overview.md#install-sample-content) u kunt de inhoudsfragmenten controleren op avonturen, artikelen en auteurs-modellen voor meer ideeën over het maken van inhoud.
+Na revisie en verificatie publiceert u de geautoriseerde `Content Fragments`
 
-![WKND-inhoudsfragmenten](assets/author-content-fragments/wknd-content-fragments.png)
+1. Tik vanaf het scherm AEM starten **Inhoudsfragmenten** om de interface voor inhoudsfragmenten te openen.
+
+1. In de linkerspoorstaaf breidt zich uit **Mijn project** en tikken **Engels**.
+
+1. Tik op het selectievakje naast de inhoudsfragmenten en tik op **Publiceren**
+
+   ![Inhoudsfragment publiceren](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Gefeliciteerd! {#congratulations}
 

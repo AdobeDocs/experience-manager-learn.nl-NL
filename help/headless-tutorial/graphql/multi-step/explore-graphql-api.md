@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
@@ -56,9 +56,9 @@ Een eindpunt GraphQL is nodig om vraag GraphQL API voor Inhoudsfragmenten toe te
 
    >[!NOTE]
    >
-   > Een Globaal eindpunt kan ook worden gecreeerd dat vragen tegen modellen over projecten zal toelaten. Bijvoorbeeld als u een vraag wilt combineren die de modellen in het **WKND gedeeld** en in de **Mijn project**. Dit dient met voorzichtigheid te worden gebruikt en alleen indien nodig omdat het de omgeving mogelijk opent voor extra beveiligingsproblemen.
+   > Een Globaal eindpunt kan ook worden gecreeerd om vragen tegen modellen over veelvoudige configuraties toe te laten. Dit moet met voorzichtigheid worden gebruikt aangezien het het milieu voor extra veiligheidskwetsbaarheid kan openen, en aan algemene ingewikkeldheid bij het beheren van AEM kan toevoegen.
 
-1. U zou nu twee eindpunten moeten zien GraphQL die op uw milieu worden toegelaten (veronderstellend u de Gedeelde inhoud WKND installeerde).
+1. U zou nu één eindpunten moeten zien GraphQL die op uw milieu worden toegelaten.
 
    ![Grafische eindpunten ingeschakeld](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
@@ -76,11 +76,11 @@ Verken vervolgens de kracht van AEM GraphQL API met behulp van de ingebouwde Gra
    >
    > Voor oudere versies van AEM kan GraphiQL IDE niet worden ingebouwd. Hierna kunt u het programma handmatig installeren [instructies](#install-graphiql).
 
-1. Stel in de rechterbovenhoek het **Endpoint** tot **Mijn eindpunt van project**.
+1. Controleer in de rechterbovenhoek of de **Endpoint** is ingesteld op **Mijn eindpunt van project**.
 
    ![GrafiekQL-eindpunt instellen](assets/explore-graphql-api/set-my-project-endpoint.png)
 
-   Dit zal alle vragen aan modellen behandelen die in **Mijn project** project. Bericht dat er ook een eindpunt voor is **WKND gedeeld**.
+Dit zal alle vragen aan modellen behandelen die in **Mijn project** project.
 
 ### Een query uitvoeren op een lijst met inhoudsfragmenten {#query-list-cf}
 
@@ -370,16 +370,28 @@ Daarna, persisteert twee eenvoudige vragen, zullen zij in het volgende hoofdstuk
 
    ![Laatste voortgeduurde vragen](assets/explore-graphql-api/final-persisted-queries.png)
 
+
+## GraphQL-eindpunt en aanhoudende query&#39;s publiceren
+
+Na revisie en verificatie publiceert u de `GraphQL Endpoint` &amp; `Persisted Queries`
+
+1. Navigeer van het scherm AEM Start naar **Gereedschappen** > **Algemeen** > **GraphQL**.
+
+1. Tik op het selectievakje naast **Mijn eindpunt van project** en tikken **Publiceren**
+
+   ![GraphQL-eindpunt publiceren](assets/explore-graphql-api/publish-graphql-endpoint.png)
+
+1. Navigeer van het scherm AEM Start naar **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**
+
+1. Tik op de knop *alle teams* van het deelvenster Blijvende query&#39;s en tik op **Publiceren**
+
+   ![Blijvende query&#39;s publiceren](assets/explore-graphql-api/publish-persisted-query.png)
+
+1. Herhaal bovenstaande stap voor `person-by-name` query
+
 ## Oplossingsbestanden {#solution-files}
 
 Download de inhoud, de modellen, en de permanente vragen die in de laatste drie hoofdstukken worden gecreeerd: [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
-
-## Doorlopende WKND-query&#39;s verkennen (optioneel) {#explore-wknd-content-fragments}
-
-Als u [De WKND Shared-voorbeeldinhoud geïnstalleerd](./overview.md#install-sample-content) u kunt Geëxisteerde Vragen als avonturen-allen, avontuur-door-activiteit, avontuur-door-weg, enz. herzien en uitvoeren.
-
-![WKND Blijvende query&#39;s](assets/explore-graphql-api/wknd-persisted-queries.png)
-
 
 ## Aanvullende bronnen
 
