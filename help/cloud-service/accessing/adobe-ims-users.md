@@ -9,19 +9,19 @@ level: Beginner
 kt: 4997
 thumbnail: 39149.jpg
 exl-id: d35a7892-d707-4a5c-9e97-ec3abba0f30c
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 6%
 
 ---
 
-# Adobe IMS-gebruikers
+# Adobe IMS-gebruikers {#adobe-ims-users}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_users"
 >title="Adobe IMS-gebruikers"
->abstract="Gebruikers die toegang tot de AEM Author-service nodig hebben, worden Adobe IMS-gebruikers in de Admin Console Adobe beheerd. Leer wat Adobe IMS-gebruikers zijn en hoe ze in de Admin Console worden benaderd en beheerd."
+>abstract="Gebruikers die toegang tot de EM Author-service vereisen, worden als gebruikers van Adobe IMS beheerd in Adobe Admin Console. Leer wat Adobe IMS-gebruikers zijn en hoe ze in de Admin Console worden benaderd en beheerd."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#how-to-set-up" text="Gebruikers on-boarden in Admin Console"
 >additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Adobe Admin Console-identiteitsoverzicht"
 

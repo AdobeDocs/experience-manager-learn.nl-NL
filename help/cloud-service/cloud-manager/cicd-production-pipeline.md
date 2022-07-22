@@ -13,14 +13,14 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
 
-# Adobe Cloud Manager gebruiken - CI/CD Production Pipeline
+# Adobe Cloud Manager gebruiken - CI/CD Production Pipeline {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_prodpipeline"
@@ -31,12 +31,12 @@ ht-degree: 0%
 
 ## Configuratie
 
-De configuratie [CI/CD Production Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) bepaalt de trekker die de pijpleiding zal in werking stellen, parameters die de productie plaatsing en de parameters van de prestatietest controleren.
+De [Productiepijpleiding CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) de configuratie bepaalt de trekker die de pijpleiding, parameters zal in werking stellen die de de plaatsing van de productie en parameters van de prestatietest controleren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
 
 ### Uitvoering pijpleiding
 
-De [CI/CD Productiepijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) wordt gebruikt om code door Stadium aan het milieu van de Productie te bouwen en op te stellen, die tijd aan waarde verminderen.
+De [Productiepijpleiding CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) wordt gebruikt om code door Stadium aan het milieu van de Productie te bouwen en op te stellen, die tijd aan waarde verminderen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)
