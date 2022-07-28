@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: 93d50e79853429f420803c28807ee8018d0ff78f
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -46,15 +46,11 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
 
 ### AEM
 
-Voor het voltooien van deze zelfstudie is een Adobe Experience Manager-omgeving vereist. U kunt elk van de volgende handelingen gebruiken (screenshots worden opgenomen vanuit een AEM as a Cloud Service omgeving):
-
-* as a Cloud Service omgeving AEM met:
-   * [Toegang tot AEM as a Cloud Service en Cloud Manager](/help/cloud-service/accessing/overview.md)
-      * **AEM** toegang tot AEM as a Cloud Service
+Om deze zelfstudie te voltooien, wordt AEM beheerder aangeraden toegang te krijgen tot een AEM as a Cloud Service omgeving.  Als u geen toegang hebt tot AEM as a Cloud Service omgeving, kunt u de opdracht [Lokale AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md). Het is echter belangrijk om te weten dat bepaalde gebruikersinterfaceschermen van het product, zoals de navigatie bij Content Fragment, anders zullen zijn.
 
 ## Laten we beginnen!
 
-1. Zelfstudie starten met [Modellen voor inhoudsfragmenten definiëren](content-fragment-models.md).
+Zelfstudie starten met [Modellen voor inhoudsfragmenten definiëren](content-fragment-models.md).
 
 ## GitHub-project
 
