@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: c061ea9d08606052c4b2cf5b3c84d6f1df5a57fa
+source-git-commit: 6197a40888ff5a8f93cbe03fb42c85f06f324de0
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -127,14 +127,16 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       </p>
      </td>   
      <td>
-            <img alt="Mysteries van Cloud Manager... Experience Audit" src="./imgs/coming-soon.png"/>
+            <a href="season-2/cloud5-MoCM-experience-audit.md">
+               <img alt="Mysteries van Cloud Manager... Experience Audit" src="./imgs/s2/007-thumb.png"/>
+               </a>
       <div>
-            <strong>Mysteries van Cloud Manager... Experience Audit</strong>
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+            <a href="season-2/cloud5-MoCM-experience-audit.md"><strong>Mysteries van Cloud Manager... Experience Audit</strong></a>
+         <br/><em>met Darin Kuntze, Senior Cloud Architect</em>
       </div>
       <p>
         <br/>
-        Vanaf 29 juli 2022
+        Verken de basisbeginselen van Cloud Manager en de mogelijkheden van de Experience Audit.
       </p>
    </td>
      <td>
