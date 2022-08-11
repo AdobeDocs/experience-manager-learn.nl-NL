@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: 819188cabb784a2bbfa097dc4c47f75e38231b53
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1848'
 ht-degree: 0%
 
 ---
@@ -332,3 +332,11 @@ Dezelfde Maven-opdrachten die worden gebruikt om de **ui.apps** kan worden gebru
 ## Problemen oplossen
 
 Als u kwesties hebt die het project produceren gebruikend het AEM Archetype van het Project zie de lijst van [bekende problemen](https://github.com/adobe/aem-project-archetype#known-issues) en lijst van [kwesties](https://github.com/adobe/aem-project-archetype/issues).
+
+## Nogmaals gefeliciteerd! {#congratulations-bonus}
+
+Gefeliciteerd met het feit dat u de bonusinformatie hebt doorlopen.
+
+### Volgende stappen {#next-steps-bonus}
+
+De onderliggende technologie van een Adobe Experience Manager (AEM) Sites Component begrijpen via een eenvoudige `HelloWorld` met de [Basisbeginselen van componenten](component-basics.md) zelfstudie.
