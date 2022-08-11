@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
+source-git-commit: 2cfa5039e69ef23e58428e17b45877170930820e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
    </td>
      <td>
             <a href="season-2/cloud5-MoCM-unit-tests.md">
-               <img alt="Mysteries van Cloud Manager... Eenheidstests" src="./imgs/s2/009-thumb.png"/>
+               <img alt="Mysteries van Cloud Manager... Eenheidstests" src="./imgs/s2/008-thumb.png"/>
             </a>
       <div>
             <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Mysteries van Cloud Manager... Eenheidstests</strong></a>
@@ -155,13 +155,15 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
   </tr>
     <tr>
         <td>
-                <img alt="Mysteries van Cloud Manager... Functionele tests" src="./imgs/coming-soon.png"/>
+               <a href="season-2/cloud5-MoCM-functional-tests.md">
+                   <img alt="Mysteries van Cloud Manager... Functionele tests" src="./imgs/s2/009-thumb.png"/>
+               </a>
             <div>
-                <strong>Mysteries van Cloud Manager... Functionele tests</strong><br/>        
+                <a href="season-2/cloud5-MoCM-functional-tests.md"><strong>Mysteries van Cloud Manager... Functionele tests</strong><br/></a>        
                 <em>met Darin Kuntze &amp; Bryan Stop, Senior Cloud Architects</em>
             </div>
             <p><br/>
-                Vanaf 12 augustus 2022
+                Darin en Bryan bespreken verschillende soorten functioneel testen die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
             </p>
         </td>
         <td></td>
