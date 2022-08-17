@@ -1,19 +1,19 @@
 ---
 title: Bootstrap de Verre SPA voor SPA Redacteur
 description: Leer hoe te om een verre SPA voor de verenigbaarheid van AEM SPA van de Redacteur op te starten.
-topic: Zwaardeloze, SPA, ontwikkeling
-feature: SPA Editor, kerncomponenten, API's, ontwikkelen
+topic: Headless, SPA, Development
+feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
 kt: 7633
 thumbnail: kt-7633.jpeg
-source-git-commit: aa4fb5afc2d30bb499493b93c51940ea6db56e41
+exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
+source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
-
 
 # Bootstrap de Verre SPA voor SPA Redacteur
 
@@ -31,29 +31,19 @@ $ git clone --branch feature/spa-editor https://github.com/adobe/aem-guides-wknd
 $ cd aem-guides-wknd-graphql
 ```
 
-## Npm-afhankelijkheden toevoegen aan AEM editor voor JS SDK
+## AEM editor voor de JS SDK-afhankelijkheden voor npm controleren
 
-Voeg eerst AEM npm-afhankelijkheden toe aan het React-project.
+Eerst, herzie AEM npm gebiedsdelen aan het project van de Reactie.
 
-```
-$ cd ~/Code/wknd-app/aem-guides-wknd-graphql/react-app
-$ npm install --save \
-    @adobe/aem-spa-page-model-manager \
-    @adobe/aem-spa-component-mapping \
-    @adobe/aem-react-editable-components \
-    @adobe/aem-core-components-react-base \
-    @adobe/aem-core-components-react-spa
-```
-
-+ `@adobe/aem-spa-page-model-manager` biedt de API voor het ophalen van inhoud van AEM.
-+ `@adobe/aem-spa-component-mapping` biedt de API die AEM inhoud toewijst aan SPA componenten.
-+ ` @adobe/aem-react-editable-components` verstrekt API voor de bouw van douane SPA componenten en verstrekt gemeenschappelijk-gebruiksimplementaties zoals de component  `AEMPage` React.
-+ `@adobe/aem-core-components-react-base` biedt een reeks gebruiksklare React-componenten die naadloos met de AEM WCM Core-componenten integreren en SPA Editor agnost zijn. Deze omvatten hoofdzakelijk inhoudscomponenten zoals:
++ [`@adobe/aem-spa-page-model-manager`](https://github.com/adobe/aem-spa-page-model-manager) : biedt de API voor het ophalen van inhoud van AEM.
++ [`@adobe/aem-spa-component-mapping`](https://github.com/adobe/aem-spa-component-mapping) : biedt de API die AEM inhoud toewijst aan SPA componenten.
++ [`@adobe/aem-react-editable-components`](https://github.com/adobe/aem-react-editable-components) : verstrekt API voor de bouw van douane SPA componenten en verstrekt gemeenschappelijk-gebruiksimplementaties zoals `AEMPage` Reageer component.
++ [`@adobe/aem-core-components-react-base`](https://github.com/adobe/aem-react-core-wcm-components-base) : biedt een reeks gebruiksklare React-componenten die naadloos met de AEM WCM Core-componenten integreren en SPA Editor agnost zijn. Deze omvatten hoofdzakelijk inhoudscomponenten zoals:
    + Titel
    + Tekst
    + Broodkruimels
    + En zo verder.
-+ `@adobe/aem-core-components-react-spa` biedt een reeks gebruiksklare React componenten die naadloos met de AEMComponenten van de Kern integreren WCM en maar SPA Redacteur vereisen. Deze bevatten hoofdzakelijk componenten die inhoudscomponenten van `@adobe/aem-core-components-react-base` bevatten, zoals:
++ [`@adobe/aem-core-components-react-spa`](https://github.com/adobe/aem-react-core-wcm-components-spa) : biedt een reeks gebruiksklare React componenten die naadloos met de AEMComponenten van de Kern integreren WCM en maar SPA Redacteur vereisen. Deze bevatten voornamelijk componenten die inhoudscomponenten bevatten van `@adobe/aem-core-components-react-base`, zoals:
    + Container
    + Carousel
    + enzovoort.
@@ -62,36 +52,45 @@ $ npm install --save \
 
 Verschillende omgevingsvariabelen moeten worden blootgesteld aan de externe SPA zodat deze weet hoe ze met AEM moeten werken.
 
-1. Open Verre SPA project bij `~/Code/wknd-app/aem-guides-wknd-graphql/react-app` in uw winde
-1. Het bestand `.env.development` openen
-1. Voeg het bestand toe, waarbij u speciale aandacht besteedt aan de toetsen:
+1. Externe SPA openen bij `~/Code/wknd-app/aem-guides-wknd-graphql/react-app` in uw IDE
+1. Het bestand openen `.env.development`
+1. Let in het bestand vooral op de toetsen:
 
    ```
    REACT_APP_HOST_URI=http://localhost:4502
-   REACT_APP_AUTHORIZATION=admin:admin
+   
+   REACT_APP_USE_PROXY=true
+   
+   REACT_APP_AUTH_METHOD=basic
+   
+   REACT_APP_BASIC_AUTH_USER=admin
+   REACT_APP_BASIC_AUTH_PASS=admin
    ```
 
    ![Externe SPA omgevingsvariabelen](./assets/spa-bootstrap/env-variables.png)
 
-   *Onthoud dat aangepaste omgevingsvariabelen in React vooraf moeten worden ingesteld  `REACT_APP_`.*
+   *Onthoud dat aangepaste omgevingsvariabelen in React vooraf moeten worden ingesteld `REACT_APP_`.*
 
-   + `REACT_APP_AEM_URI`: de regeling en de gastheer van de AEM dienst de Verre SPA verbindt met.
-      + Deze waarde verandert op basis van het type AEM (lokaal, Ontwikkelen, Werkgebied of Productie) en AEM service (Auteur versus Publiceren).
-   + `REACT_APP_AEM_AUTH`: de referenties die door de SPA worden gebruikt, worden geverifieerd om inhoud te AEM en op te halen.
+   + `REACT_APP_HOST_URI`: de regeling en de gastheer van de AEM dienst de Verre SPA verbindt met.
+      + Deze waarde verandert op basis van het type AEM (lokaal, Ontwikkelen, Werkgebied of Productie) en het type AEM Service (Auteur versus Publiceren).
+   + `REACT_APP_USE_PROXY`: dit voorkomt CORS-problemen tijdens de ontwikkeling door de responsontwikkelserver te vertellen over proxyverzoeken AEM zoals `/content, /graphql, .model.json` gebruiken `http-proxy-middleware` module.
+   + `REACT_APP_AUTH_METHOD`: verificatiemethode voor AEM ingediende aanvragen, opties zijn &#39;service-token&#39;, &#39;dev-token&#39;, &#39;basic&#39; of blanco laten voor gebruiksgeval zonder toestemming
       + Vereist voor gebruik met AEM-auteur
       + Mogelijk vereist voor gebruik met AEM-publicatie (als de inhoud is beveiligd)
       + Ontwikkelen tegen de AEM SDK ondersteunt lokale accounts via Basic Auth. Dit is de methode die in deze zelfstudie wordt gebruikt.
-      + Wanneer het integreren met AEM als Cloud Service, gebruik [toegangstokens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
+      + Bij integratie met AEM as a Cloud Service [toegangstokens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
+   + `REACT_APP_BASIC_AUTH_USER`: de AEM __gebruikersnaam__ door de SPA voor verificatie bij het ophalen van AEM inhoud.
+   + `REACT_APP_BASIC_AUTH_PASS`: de AEM __password__ door de SPA voor verificatie bij het ophalen van AEM inhoud.
 
 ## De ModelManager-API integreren
 
-Met de AEM SPA npm gebiedsdelen beschikbaar aan app, initialiseer AEM `ModelManager` in `index.js` in het project alvorens `ReactDOM.render(...)` wordt aangehaald.
+Met de AEM SPA npm-afhankelijkheden die beschikbaar zijn voor de app, initialiseert u AEM `ModelManager` in de `index.js` voor `ReactDOM.render(...)` wordt aangeroepen.
 
-De [ModelManager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) is verantwoordelijk voor het verbinden met AEM aan het terugwinnen van editable inhoud.
+De [ModelManager](https://github.com/adobe/aem-spa-page-model-manager/blob/master/src/ModelManager.ts) is verantwoordelijk voor het verbinden met AEM aan het ophalen van bewerkbare inhoud.
 
 1. Open het Verre SPA project in uw winde
-1. Het bestand `src/index.js` openen
-1. Importeren `ModelManager` toevoegen en initialiseren vóór de `ReactDOM.render(..)`-aanroep
+1. Het bestand openen `src/index.js`
+1. Importeren toevoegen `ModelManager` en initialiseer het voor `ReactDOM.render(..)` oproeping,
 
    ```
    ...
@@ -103,21 +102,21 @@ De [ModelManager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manage
    ReactDOM.render(...);
    ```
 
-Het `src/index.js`-bestand moet er als volgt uitzien:
+De `src/index.js` bestand moet er als volgt uitzien:
 
 ![src/index.js](./assets/spa-bootstrap/index-js.png)
 
 ## Een interne SPA instellen
 
-Wanneer het betrekken van editable inhoud van AEM in de SPA, is het best aan opstelling een [interne volmacht in SPA](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually), die wordt gevormd om de aangewezen verzoeken aan AEM te leiden. Dit wordt gedaan door [http-proxy-middleware](https://www.npmjs.com/package/http-proxy-middleware) npm module te gebruiken, die reeds door de basisWKND GraphQL App geïnstalleerd is.
+Wanneer u bewerkbare inhoud van AEM in de SPA ophaalt, kunt u het beste een [interne proxy in de SPA](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually), dat wordt gevormd om de aangewezen verzoeken aan AEM te leiden. Dit gebeurt met [http-proxy-middleware](https://www.npmjs.com/package/http-proxy-middleware) npm module, die al door de basisWKND GraphQL App wordt geïnstalleerd.
 
 1. Open het Verre SPA project in uw winde
-1. Een bestand maken op `src/proxy/setupProxy.spa-editor.auth.basic.js`
-1. Voeg de volgende code toe aan het bestand:
+1. Open het bestand op `src/proxy/setupProxy.spa-editor.auth.basic.js`
+1. Controleer de volgende code:
 
    ```
    const { createProxyMiddleware } = require('http-proxy-middleware');
-   const {REACT_APP_HOST_URI, REACT_APP_AUTHORIZATION } = process.env;
+   const {REACT_APP_HOST_URI, REACT_APP_BASIC_AUTH_USER, REACT_APP_BASIC_AUTH_PASS } = process.env;
    
    /*
        Set up a proxy with AEM for local development
@@ -137,7 +136,7 @@ Wanneer het betrekken van editable inhoud van AEM in de SPA, is het best aan ops
        */
        const toAEM = function(path, req) {
            return path.startsWith('/content') || 
-               path.startsWith('/graphq') ||
+               path.startsWith('/graphql') ||
                path.endsWith('.model.json')
        }
    
@@ -186,32 +185,34 @@ Wanneer het betrekken van editable inhoud van AEM in de SPA, is het best aan ops
    };
    ```
 
-   Het `setupProxy.spa-editor.auth.basic.js`-bestand moet er als volgt uitzien:
+   De `setupProxy.spa-editor.auth.basic.js` bestand moet er als volgt uitzien:
 
    ![src/proxy/setupProxy.spa-editor.auth.basic.js](./assets/spa-bootstrap/setup-proxy-spaeditor-js.png)
 
    Deze proxyconfiguratie heeft twee belangrijke functies:
 
-   1. Proxy-specifieke verzoeken aan de SPA, `http://localhost:3000` aan AEM `http://localhost:4502`
-      + Het slechts volmachten verzoeken de waarvan wegen passen patronen aan die erop wijzen zij door AEM, zoals bepaald in `toAEM(path, req)` zouden moeten worden gediend.
-      + Het herschrijft SPA wegen aan hun tegendeel AEM pagina&#39;s, zoals die in `pathRewriteToAEM(path, req)` worden bepaald
+   1. Proxy-specifieke verzoeken aan de SPA; `http://localhost:3000` naar AEM `http://localhost:4502`
+      + Het is alleen volmachten waarvan de paden overeenkomen met patronen die aangeven dat ze moeten worden AEM, zoals gedefinieerd in `toAEM(path, req)`.
+      + Het herschrijft SPA paden naar hun tegenhanger AEM pagina&#39;s, zoals gedefinieerd in `pathRewriteToAEM(path, req)`
    1. Het voegt kopballen CORS aan alle verzoeken toe om toegang tot AEM inhoud toe te staan, zoals bepaald door `res.header("Access-Control-Allow-Origin", REACT_APP_HOST_URI);`
       + Als dit niet wordt toegevoegd, treden CORS-fouten op bij het laden van AEM inhoud in de SPA.
 
-1. Het bestand `src/setupProxy.js` openen
-1. Plaats de regel `const proxy = require('./proxy/setupProxy.auth.basic')` als opmerking
-1. Voeg een lijn toe, richtend aan het nieuwe dossier van de volmachtsconfiguratie:
+1. Het bestand openen `src/setupProxy.js`
+1. Herzie de lijn die aan `setupProxy.spa-editor.auth.basic` proxyconfiguratiebestand:
 
    ```
-   // Proxy configuration for SPA Editor (and GraphQL) using Basic Auth
-   const proxy = require('./proxy/setupProxy.spa-editor.auth.basic')
+   ...
+   case BASIC:
+   // Use user/pass for local development with Local Author Env
+   return require('./proxy/setupProxy.spa-editor.auth.basic');
+   ...
    ```
 
-   Het `setupProxy.js`-bestand moet er als volgt uitzien:
+   De `setupProxy.js` bestand moet er als volgt uitzien:
 
    ![src/setupProxy.js](./assets/spa-bootstrap/setup-proxy-js.png)
 
-Nota, om het even welke veranderingen in `src/setupProxy.js` of het heeft van verwijzingen voorzien dossiers vereisen een nieuw begin van de SPA.
+Opmerking: wijzigingen in de `src/setupProxy.js` of bestanden waarnaar wordt verwezen, moeten opnieuw worden opgestart.
 
 ## Statische SPA
 
@@ -222,7 +223,7 @@ Statische SPA bronnen zoals het WKND-logo en het laden van afbeeldingen moeten h
 Om deze kwestie op te lossen, maak een statische die bron door de Verre SPA wordt ontvangen absolute wegen gebruiken die de Verre SPA oorsprong omvatten.
 
 1. Open het SPA project in uw winde
-1. Open het bestand met SPA omgevingsvariabelen `src/.env.development` en voeg een variabele toe voor de SPA openbare URI:
+1. Het bestand met SPA omgevingsvariabelen openen `src/.env.development` en voeg een variabele voor SPA openbare URI toe:
 
    ```
    ...
@@ -230,9 +231,9 @@ Om deze kwestie op te lossen, maak een statische die bron door de Verre SPA word
    REACT_APP_PUBLIC_URI=http://localhost:3000
    ```
 
-   _Wanneer het opstellen aan AEM als Cloud Service, moet u het zelfde voor de overeenkomstige  `.env` dossiers._
+   _Wanneer het opstellen aan AEM as a Cloud Service, moet u het zelfde voor het overeenkomstige `.env` bestanden._
 
-1. Het bestand `src/App.js` openen
+1. Het bestand openen `src/App.js`
 1. Importeer de SPA public URI uit de SPA omgevingsvariabelen
 
    ```
@@ -241,13 +242,13 @@ Om deze kwestie op te lossen, maak een statische die bron door de Verre SPA word
    function App() { ... }
    ```
 
-1. Plaats het WKND-logo `<img src=.../>` voor `REACT_APP_PUBLIC_URI` om de resolutie tegen de SPA in te stellen.
+1. Voorvoegsel van het WKND-logo `<img src=.../>` with `REACT_APP_PUBLIC_URI` de resolutie tegen de SPA af te dwingen.
 
    ```
    <img src={REACT_APP_PUBLIC_URI + '/' +  logo} className="logo" alt="WKND Logo"/>
    ```
 
-1. Doe het zelfde voor het laden van beeld in `src/components/Loading.js`
+1. Doe het zelfde als het laden van beeld in `src/components/Loading.js`
 
    ```
    const { REACT_APP_PUBLIC_URI } = process.env;
@@ -262,7 +263,7 @@ Om deze kwestie op te lossen, maak een statische die bron door de Verre SPA word
    }
    ```
 
-1. .. en voor de __twee instanties__ van de backknop in `src/components/AdventureDetails.js`
+1. En voor de __twee instanties__ van de knop Terug in `src/components/AdventureDetails.js`
 
    ```
    const { REACT_APP_PUBLIC_URI } = process.env;
@@ -275,13 +276,13 @@ Om deze kwestie op te lossen, maak een statische die bron door de Verre SPA word
    }
    ```
 
-De `App.js`-, `Loading.js`- en `AdventureDetails.js`-bestanden moeten er als volgt uitzien:
+De `App.js`, `Loading.js`, en `AdventureDetails.js` bestanden moeten er als volgt uitzien:
 
 ![Statische bronnen](./assets/spa-bootstrap/static-resources.png)
 
 ## AEM responsief raster
 
-Om de lay-outmodus van SPA Editor voor bewerkbare gebieden in de SPA te ondersteunen, moeten AEM CSS voor responsieve rasters in de SPA worden geïntegreerd. Maak u geen zorgen - dit rastersysteem zal alleen op de bewerkbare containers worden toegepast en u kunt uw keuzerondje in het raster gebruiken om de lay-out van de rest van uw SPA te bepalen.
+Om de lay-outmodus van SPA Editor voor bewerkbare gebieden in de SPA te ondersteunen, moeten AEM CSS voor responsieve rasters in de SPA worden geïntegreerd. Maak u geen zorgen - dit rastersysteem is alleen van toepassing op de bewerkbare containers en u kunt uw keuzerondje in het raster gebruiken om de lay-out van de rest van uw SPA te bepalen.
 
 Voeg de AEM Responsieve Raster SCSS-bestanden toe aan de SPA.
 
@@ -290,8 +291,8 @@ Voeg de AEM Responsieve Raster SCSS-bestanden toe aan de SPA.
    + [_grid.scss](./assets/spa-bootstrap/_grid.scss)
       + De AEM Responsieve generator van het Net SCSS
    + [_grid-init.scss](./assets/spa-bootstrap/_grid-init.scss)
-      + Roept `_grid.scss` aan gebruikend de SPA specifieke breekpunten (Desktop en mobiel) en kolommen (12).
-1. `src/App.scss` openen en `./styles/grid-init.scss` importeren
+      + Oproepen `_grid.scss` de SPA specifieke onderbrekingspunten (bureaublad en mobiel) en kolommen (12) gebruiken.
+1. Openen `src/App.scss` en importeren `./styles/grid-init.scss`
 
    ```
    ...
@@ -299,7 +300,7 @@ Voeg de AEM Responsieve Raster SCSS-bestanden toe aan de SPA.
    ...
    ```
 
-De `_grid.scss` en `_grid-init.scss` dossiers zouden als moeten kijken:
+De `_grid.scss` en `_grid-init.scss` bestanden moeten er als volgt uitzien:
 
 ![AEM responsieve raster-SCSS](./assets/spa-bootstrap/aem-responsive-grid.png)
 
@@ -310,7 +311,7 @@ Nu bevat de SPA de CSS die nodig is om AEM lay-outmodus te ondersteunen voor com
 Nu de SPA is opgepakt voor integratie met AEM, laten we de SPA uitvoeren en zien hoe het eruit ziet!
 
 1. Navigeer op de opdrachtregel naar de hoofdmap van het SPA-project
-1. Start de SPA met de normale opdrachten (voer `npm install` uit als u dat nog niet hebt gedaan)
+1. Start de SPA met de normale opdrachten (als u dat nog niet hebt gedaan).
 
    ```
    $ cd ~/Code/wknd-app/aem-guides-wknd-graphql/react-app
@@ -324,15 +325,15 @@ Nu de SPA is opgepakt voor integratie met AEM, laten we de SPA uitvoeren en zien
 
 ## De SPA openen in AEM SPA Editor
 
-Met de SPA die op [http://localhost:3000](http://localhost:3000) lopen, open het gebruikend AEM SPA Redacteur. Niets is editable in de SPA nog, bevestigt dit slechts de SPA in AEM.
+Met de SPA ingeschakeld [http://localhost:3000](http://localhost:3000), laten we het openen met AEM SPA Editor. Niets is editable in de SPA nog, bevestigt dit slechts de SPA in AEM.
 
 1. Aanmelden bij AEM-auteur
-1. Navigeer naar __Sites > WKND App > us > en__
-1. Selecteer __WKND App Home Page__ en tik __Edit__, en de SPA zal verschijnen.
+1. Navigeren naar __Sites > WKND App > us > en__
+1. Selecteer __WKND App Home Page__ en tikken __Bewerken__ en wordt de SPA weergegeven.
 
    ![WKND-startpagina bewerken](./assets/spa-bootstrap/edit-home.png)
 
-1. Schakel over naar __Voorvertoning__ met de modusschakelaar rechtsboven
+1. Overschakelen op __Voorvertoning__ met de modusschakelaar rechtsboven
 1. Klik om de SPA
 
    ![SPA wordt uitgevoerd op http://localhost:3000](./assets/spa-bootstrap/spa-editor.png)
@@ -350,4 +351,4 @@ U hebt de Verre SPA opgepakt om compatibel SPA Redacteur AEM te zijn! Nu weet u 
 
 ## Volgende stappen
 
-Nu we een basislijn voor compatibiliteit met AEM SPA Editor hebben bereikt, kunnen we bewerkbare gebieden gaan introduceren. Eerst bekijken wij hoe te om een [vaste editable component ](./spa-fixed-component.md) in de SPA te plaatsen.
+Nu we een basislijn voor compatibiliteit met AEM SPA Editor hebben bereikt, kunnen we bewerkbare gebieden gaan introduceren. We bekijken eerst hoe u een [vaste bewerkbare component](./spa-fixed-component.md) in de SPA.

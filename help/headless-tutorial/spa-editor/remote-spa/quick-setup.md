@@ -1,19 +1,19 @@
 ---
 title: Snelle installatie SPA Editor en externe SPA
 description: Leer hoe u in 15 minuten aan de slag kunt met een externe SPA en AEM SPA Editor!
-topic: Zwaardeloze, SPA, ontwikkeling
-feature: SPA Editor, kerncomponenten, API's, ontwikkelen
+topic: Headless, SPA, Development
+feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
 kt: 7629
 thumbnail: 333181.jpg
-source-git-commit: 6981a1ad5019fd383b1ca1f6fbfbec87e81a6e31
+exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
+source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 0%
+source-wordcount: '797'
+ht-degree: 1%
 
 ---
-
 
 # Snelle installatie
 
@@ -30,31 +30,31 @@ _Een video die door de snelle opstelling loopt_
 Voor deze zelfstudie is het volgende vereist:
 
 + [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
-+ [Node.js v14+](https://nodejs.org/en/)
-+ [npm v7+](https://www.npmjs.com/)
++ [Node.js v16+](https://nodejs.org/en/)
++ [npm v8+](https://www.npmjs.com/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
-+ Alleen MacOS-vereisten
-   + [opdrachtregelprogramma&#39;s voor ](https://developer.apple.com/xcode/) Xcodeor  [Xcode](https://developer.apple.com/xcode/resources/)
-+ [aem-guides-wknd.all.0.3.0.zip of hoger](https://github.com/adobe/aem-guides-wknd/releases)
-+ [aem-guides-wknd-graphql broncode](https://github.com/adobe/aem-guides-wknd-graphql)
++ Alleen macOS-voorwaarden
+   + [Xcode](https://developer.apple.com/xcode/) of [Xcode-opdrachtregelprogramma&#39;s](https://developer.apple.com/xcode/resources/)
++ [aem-guides-wknd.all-2.1.0.zip of hoger](https://github.com/adobe/aem-guides-wknd/releases)
++ [aem-guides-wknd-graphic broncode (vertakking: feature/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
 
 
 Deze zelfstudie gaat uit van:
 
-+ [Microsoft® Visual Studio ](https://visualstudio.microsoft.com/) Codeas winde
++ [Microsoft® Visual Studio-code](https://visualstudio.microsoft.com/) als IDE
 + Een werkmap van `~/Code/wknd-app`
-+ De AEM SDK uitvoeren als een auteurservice op `http://localhost:4502`
-+ De AEM SDK uitvoeren met de lokale `admin`-account met wachtwoord `admin`
-+ De SPA uitvoeren op `http://localhost:3000`
++ De AEM SDK uitvoeren als een auteurservice ingeschakeld `http://localhost:4502`
++ De AEM SDK uitvoeren met de lokale `admin` account met wachtwoord `admin`
++ De SPA uitvoeren `http://localhost:3000`
 
 ## Start de AEM SDK QuickStart
 
-Download en installeer de AEM SDK QuickStart op poort 4502 met standaard `admin/admin` referenties.
+Download en installeer de AEM SDK QuickStart op poort 4502, standaard `admin/admin` referenties.
 
 1. [De nieuwste AEM SDK downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)
-1. Pak de AEM SDK uit tot `~/aem-sdk`
+1. Pak de AEM SDK uit naar `~/aem-sdk`
 1. De AEM SDK QuickStart Jar uitvoeren
 
    ```
@@ -63,31 +63,31 @@ Download en installeer de AEM SDK QuickStart op poort 4502 met standaard `admin/
    # Provide `admin` as the admin user's password
    ```
 
-AEM SDK wordt gestart en automatisch gestart op [http://localhost:4502](http://localhost:4502). Meld u aan met de volgende referenties:
+AEM SDK wordt gestart en automatisch gestart [http://localhost:4502](http://localhost:4502). Meld u aan met de volgende referenties:
 
 + Gebruikersnaam: `admin`
 + Wachtwoord: `admin`
 
 ## WKND-sitepakket downloaden en installeren
 
-Deze zelfstudie is afhankelijk van het __WKND 0.3.0+&#39;s__-project (voor inhoud).
+Deze zelfstudie is afhankelijk van __WKND 2.1.0+&#39;s__ project (voor inhoud).
 
-1. [Download de nieuwste versie van  `aem-guides-wknd.all.x.x.x.zip`](https://github.com/adobe/aem-guides-wknd/releases)
-1. Meld u aan bij AEM pakketbeheer van SDK op [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) met de `admin`-referenties.
-1. __De in stap 1__ gedownloade bestanden  `aem-guides-wknd.all.x.x.x.zip` uploaden
-1. Tik op de knop __Installeren__ voor de vermelding `aem-guides-wknd.all-x.x.x.zip`
+1. [Download de nieuwste versie van `aem-guides-wknd.all.x.x.x.zip`](https://github.com/adobe/aem-guides-wknd/releases)
+1. Meld u aan bij AEM pakketbeheer van SDK op [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) met de `admin` referenties.
+1. __Uploaden__ de `aem-guides-wknd.all.x.x.x.zip` gedownload in stap 1
+1. Tik op de knop __Installeren__ knop voor de vermelding `aem-guides-wknd.all-x.x.x.zip`
 
 ## WKND App-SPA downloaden en installeren
 
-Om een snelle opstelling uit te voeren, worden AEM pakketten verstrekt die de definitieve AEM van het leerprogramma configuratie en inhoud bevatten.
+Om een snelle opstelling uit te voeren, worden AEM pakketten verstrekt hier die de definitieve AEM van het leerprogramma configuratie en inhoud bevatten.
 
 1. [Downloaden ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Downloaden ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
-1. Meld u aan bij AEM pakketbeheer van SDK op [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) met de `admin`-referenties.
-1. __De in stap 1__ gedownloade bestanden  `wknd-app.all.x.x.x.zip` uploaden
-1. Tik op de knop __Installeren__ voor de vermelding `wknd-app.all.x.x.x.zip`
-1. __De in stap 2__ gedownloade bestanden  `wknd-app.ui.content.sample.x.x.x.zip` uploaden
-1. Tik op de knop __Installeren__ voor de vermelding `wknd-app.ui.content.sample.x.x.x.zip`
+1. [Downloaden ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. Meld u aan bij AEM pakketbeheer van SDK op [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) met de `admin` referenties.
+1. __Uploaden__ de `wknd-app.all.x.x.x.zip` gedownload in stap 1
+1. Tik op de knop __Installeren__ knop voor de vermelding `wknd-app.all.x.x.x.zip`
+1. __Uploaden__ de `wknd-app.ui.content.sample.x.x.x.zip` gedownload in stap 2
+1. Tik op de knop __Installeren__ knop voor de vermelding `wknd-app.ui.content.sample.x.x.x.zip`
 
 ## De WKND App-bron downloaden
 
@@ -110,7 +110,7 @@ $ npm install
 $ npm run start
 ```
 
-Als er fouten zijn bij het uitvoeren van `npm install`, probeer de volgende stappen:
+Als er fouten optreden bij het uitvoeren `npm install` Voer de volgende stappen uit:
 
 ```
 $ cd ~/Code/wknd-app/aem-guides-wknd-graphql/react-app
@@ -119,40 +119,40 @@ $ npm install --legacy-peer-deps
 $ npm run start
 ```
 
-Controleer of de SPA wordt uitgevoerd op [http://localhost:3000](http://localhost:3000).
+Controleren of de SPA wordt uitgevoerd op [http://localhost:3000](http://localhost:3000).
 
 ## Inhoud van auteur in AEM SPA Editor
 
-Voordat u inhoud gaat ontwerpen, rangschikt u de browservensters zodanig dat de AEM-auteur (`http://localhost:4502`) aan de linkerkant staat en de externe SPA (`http://localhost:3000`) aan de rechterkant. Op deze manier kunt u zien hoe wijzigingen in inhoud op basis van AEM direct in de SPA worden doorgevoerd.
+Voordat u inhoud gaat ontwerpen, moet u uw browservensters zodanig rangschikken dat AEM-auteur (`http://localhost:4502`) staat links en de SPA (`http://localhost:3000`) aan de rechterkant. Op deze manier kunt u zien hoe wijzigingen in inhoud op basis van AEM direct in de SPA worden doorgevoerd.
 
 1. Aanmelden bij [AEM SDK-auteurservice](http://localhost:4502) als `admin`
-1. Navigeer naar __Sites > WKND App > us > en__
-1. __WKND App Home Page__ bewerken
-1. Overschakelen naar modus __Bewerken__
+1. Navigeren naar __Sites > WKND App > us > en__
+1. Bewerken __WKND App Home Page__
+1. Overschakelen op __Bewerken__ mode
 
 ### De vaste component van de weergave Home maken
 
-1. Tik op de tekst __WKND Adventures__ om de vaste component Title te activeren (gecodeerd in de SPA Home-weergave)
-1. Tik op het pictogram __moersleutel__ op de actiebalk van de component Title
+1. Tik op de tekst __WKND Adventures__ om de vaste component Titel te activeren (gecodeerd in de SPA weergave Home)
+1. Tik op de knop __moersleutel__ pictogram op de actiebalk van de component Title
 1. Hiermee wordt de inhoud van de component Title gewijzigd en opgeslagen
-1. Vernieuw de SPA die op `http://localhost:3000` lopen en zie dat de veranderingen weerspiegeld waren
+1. De SPA die wordt uitgevoerd vernieuwen `http://localhost:3000` en zie de wijzigingen
 
 ### Auteur van de containercomponent van de weergave Home
 
-1. Tijdens het bewerken van __WKND App Home Page__..
-1. De zijbalk van de __SPA Editor__ uitvouwen (links)
-1. Tik op de pictogrammen __Components__
+1. Tijdens het bewerken van de __WKND App Home Page__...
+1. Breid uit __SPA zijbalk van de Editor__ (links)
+1. Tik op de knop __Componenten__ pictogrammen
 1. Componenten toevoegen, wijzigen of verwijderen uit de containercomponent die zich onder het WKND-logo en boven de vaste component Title bevindt
-1. Vernieuw de SPA die op `http://localhost:3000` lopen en zie dat de veranderingen weerspiegeld waren
+1. De SPA die wordt uitgevoerd vernieuwen `http://localhost:3000` en zie de wijzigingen
 
 ### Auteur een containercomponent op een dynamische route
 
-1. Overschakelen naar de modus __Voorvertoning__ in SPA Editor
-1. Tik op de __Bali Surf Camp__ kaart en navigeer naar de dynamische route
-1. Componenten toevoegen, wijzigen of verwijderen uit de containercomponent die zich boven de kop __Inleiding__ bevindt
-1. Vernieuw de SPA die op `http://localhost:3000` lopen en zie dat de veranderingen weerspiegeld waren
+1. Overschakelen op __Voorvertoning__ modus in SPA Editor
+1. Tik op de knop __Bali Surf Camp__ kaart en navigeer aan zijn dynamische route
+1. Componenten toevoegen, wijzigen of verwijderen uit de containercomponent die zich boven de __Urinertie__ kop
+1. De SPA die wordt uitgevoerd vernieuwen `http://localhost:3000` en zie de wijzigingen
 
-Nieuwe AEM onder __WKND App Home page > Adventure__ _must_ hebben een AEM paginanaam die de naam van het de inhoudfragment van het overeenkomstige avontuur aanpast. Dit is omdat de SPA route aan AEM van de Pagina afbeelding van het laatste segment van de route, die de naam van het Fragment van de Inhoud is gebaseerd.
+Nieuwe AEM onder de __WKND App Home page > Adventure__ _moet_ hebben een AEM paginanaam die overeenkomt met de naam van het inhoudsfragment van het desbetreffende avontuur. Dit is omdat de SPA route aan AEM van de Pagina afbeelding van het laatste segment van de route, die de naam van het Fragment van de Inhoud is gebaseerd.
 
 ## Gefeliciteerd!
 

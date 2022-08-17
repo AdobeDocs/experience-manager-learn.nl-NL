@@ -1,25 +1,25 @@
 ---
 title: Aan de slag met SPA Editor en externe SPA - Overzicht
 description: Welkom bij de meerdelige zelfstudie voor ontwikkelaars die een bestaande externe SPA willen uitbreiden met bewerkbare AEM met AEM SPA Editor.
-topic: Zwaardeloze, SPA, ontwikkeling
-feature: SPA Editor, kerncomponenten, API's, ontwikkelen
+topic: Headless, SPA, Development
+feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
 kt: 7630
 thumbnail: 333272.jpeg
-source-git-commit: cede0c97e0f322fe5d20d5c4f685ed10b90af1d4
+exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
+source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
-
 
 # Overzicht
 
 Welkom bij de meerdelige zelfstudie voor ontwikkelaars die een bestaande, op React gebaseerde (of Next.js) externe SPA willen uitbreiden met bewerkbare AEM met AEM SPA Editor.
 
-Deze zelfstudie is gebaseerd op de [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html), een React-app die AEM inhoud van inhoudsfragment gebruikt in vergelijking met AEM GraphQL API&#39;s, maar biedt geen in-context-authoring van SPA inhoud.
+Deze zelfstudie bouwt verder op de [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html), een React-app die AEM inhoud van inhoudsfragmenten gebruikt in vergelijking met AEM GraphQL-API&#39;s, biedt echter geen in-context-authoring van SPA inhoud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272/?quality=12&learn=on)
 
@@ -29,39 +29,39 @@ De zelfstudie die is bedoeld om te illustreren hoe een externe SPA, of een SPA d
 
 De meeste activiteiten in de zelfstudie richten zich op de ontwikkeling van JavaScript, maar kritieke aspecten worden behandeld die rond AEM draaien. Deze aspecten omvatten het definiëren van waar de inhoud wordt geschreven en opgeslagen in AEM en het toewijzen SPA routes naar AEM pagina&#39;s.
 
-De zelfstudie is ontworpen om te werken met **AEM als een Cloud Service** en bestaat uit twee projecten:
+De zelfstudie is ontworpen om te werken met **AEM as a Cloud Service** en bestaat uit twee projecten:
 
-1. Het __AEM Project__ bevat configuratie en inhoud die aan AEM moeten worden opgesteld.
-1. __WKND__ Appproject is de SPA die met AEM SPA Editor moet worden geïntegreerd
+1. De __AEM project__ bevat configuratie en inhoud die moeten worden opgesteld aan AEM.
+1. __WKND-app__ project is de SPA die met AEM SPA Editor moet worden geïntegreerd
 
 ## Laatste code
 
-+ De code van deze zelfstudie kan op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql) op `feature/spa-editor` tak worden gevonden.
++ U vindt de code van deze zelfstudie op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql) op de `feature/spa-editor` vertakking.
 
 ## Vereisten
 
 Voor deze zelfstudie is het volgende vereist:
 
 + [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
-+ [Node.js v14+](https://nodejs.org/en/)
-+ [npm v7+](https://www.npmjs.com/)
++ [Node.js v16+](https://nodejs.org/en/)
++ [npm v8+](https://www.npmjs.com/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
-+ [aem-guides-wknd.all.0.3.0.zip of hoger](https://github.com/adobe/aem-guides-wknd/releases)
-+ [aem-guides-wknd-graphql broncode](https://github.com/adobe/aem-guides-wknd-graphql)
++ [aem-guides-wknd.all-2.1.0.zip of hoger](https://github.com/adobe/aem-guides-wknd/releases)
++ [aem-guides-wknd-graphic broncode (vertakking: feature/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
 
 Deze zelfstudie gaat uit van:
 
-+ [Microsoft® Visual Studio ](https://visualstudio.microsoft.com/) Codeas winde
++ [Microsoft® Visual Studio-code](https://visualstudio.microsoft.com/) als IDE
 + Een werkmap van `~/Code/wknd-app`
-+ De AEM SDK uitvoeren als een auteurservice op `http://localhost:4502`
-+ De AEM SDK uitvoeren met de lokale `admin`-account met wachtwoord `admin`
-+ De SPA uitvoeren op `http://localhost:3000`
++ De AEM SDK uitvoeren als een auteurservice ingeschakeld `http://localhost:4502`
++ De AEM SDK uitvoeren met de lokale `admin` account met wachtwoord `admin`
++ De SPA uitvoeren `http://localhost:3000`
 
 >[!NOTE]
 >
-> **Hebt u hulp nodig bij het instellen van uw lokale ontwikkelomgeving?** Raadpleeg de  [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM als Cloud Service-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Hebt u hulp nodig bij het instellen van uw lokale ontwikkelomgeving?** Kijk uit de [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met behulp van de AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 
 ## Snelle installatie
@@ -102,6 +102,6 @@ Ten slotte, gebruik de concepten die in vorige hoofdstukken zijn toegelicht aan 
 
 ## Aanvullende bronnen
 
-+ [Een externe SPA bewerken in AEM documenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/hybrid/editing-external-spa.html)
++ [Een externe SPA bewerken in AEM documenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/editing-external-spa.html)
 + [AEM WCM-componenten - React Core-implementatie](https://www.npmjs.com/package/@adobe/aem-core-components-react-base)
 + [AEM WCM-componenten - Spa-editor - React Core-implementatie](https://www.npmjs.com/package/@adobe/aem-core-components-react-spa)
