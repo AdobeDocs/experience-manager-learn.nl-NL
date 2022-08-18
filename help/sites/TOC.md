@@ -3,9 +3,9 @@ user-guide-title: AEM Sites-video's en -Tutorials
 user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites.
 breadcrumb-title: AEM Sites Tutorials
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: ce9966d48689cd153f5de9d20240644d96d10adf
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '404'
 ht-degree: 5%
 
 ---
@@ -51,7 +51,6 @@ ht-degree: 5%
    + [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
-   + [Aan de slag met AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
    + [Pagina-eigenschappen uitbreiden](developing/page-properties-technical-video-develop.md)
    + [Ontwikkelen met het Stijlsysteem](developing/style-system-technical-video-understand.md)
    + [Aanbevolen werkwijzen voor stijlsystemen](developing/style-organization-style-system-understand-article.md)
@@ -68,9 +67,7 @@ ht-degree: 5%
    + [Sitemaps](./seo/sitemaps.md)
 + Toepassingen voor één pagina {#spa-editor}
    + [De SPA Editor gebruiken](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Lesbestand Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
-   + [Aan de slag met AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 + Beheer van meerdere sites {#multi-site-management}
    + [Inleiding tot het kopiëren van talen](./multi-site-management/language-copy-overview.md)
    + [Live kopiëren en vervagen](./multi-site-management/live-copy-and-blueprint.md)

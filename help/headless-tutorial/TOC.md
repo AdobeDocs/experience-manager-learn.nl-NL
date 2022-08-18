@@ -6,9 +6,9 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 18a414b847a7353eebcfad4bcc125920258948b3
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '227'
 ht-degree: 5%
 
 ---
@@ -74,14 +74,6 @@ ht-degree: 5%
       + [4 - Navigatie en routering](./spa-editor/react/navigation-routing.md)
       + [5 - Aangepaste component](./spa-editor/react/custom-component.md)
       + [6 - Component uitbreiden](./spa-editor/react/extend-component.md)
-   + Angular{#angular}
-      + [Overzicht](./spa-editor/angular/overview.md)
-      + [1 - SPA Editor-project](./spa-editor/angular/create-project.md)
-      + [2 - De SPA integreren](./spa-editor/angular/integrate-spa.md)
-      + [3 - SPA](./spa-editor/angular/map-components.md)
-      + [4 - Navigatie en routering](./spa-editor/angular/navigation-routing.md)
-      + [5 - Aangepaste component](./spa-editor/angular/custom-component.md)
-      + [6 - Component uitbreiden](./spa-editor/angular/extend-component.md)
    + Externe SPA{#remote-spa}
       + [Overzicht](./spa-editor/remote-spa/overview.md)
       + [Snelle installatie](./spa-editor/remote-spa/quick-setup.md)
