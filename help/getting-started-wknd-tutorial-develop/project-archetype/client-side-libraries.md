@@ -11,7 +11,7 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '2878'
 ht-degree: 0%
@@ -333,7 +333,7 @@ De voltooide code weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd
 
 ### Webpack DevServer - Statische opmaakcodes {#webpack-dev-static}
 
-In de vorige paar oefeningen konden wij verscheidene dossiers van de Klasse in bijwerken **ui.frontend** en door een bouwstijlproces, deze veranderingen uiteindelijk weerspiegeld in AEM zien. Hierna zullen we kijken naar technieken die gebruikmaken van een [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) snel onze front-end stijlen te ontwikkelen tegen **static** HTML.
+In de vorige paar oefeningen konden wij verscheidene dossiers van de Klasse in bijwerken **ui.frontend** en door een bouwstijlproces, deze veranderingen uiteindelijk weerspiegeld in AEM zien. Hierna bekijken we een techniek die gebruikmaakt van een [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) snel onze front-end stijlen te ontwikkelen tegen **static** HTML.
 
 Deze techniek is handig als de meeste stijlen en front-end code worden uitgevoerd door een speciale Front End-ontwikkelaar die mogelijk geen eenvoudige toegang heeft tot een AEM. Met deze techniek kan de FED ook direct wijzigingen aanbrengen aan de HTML, die vervolgens aan een AEM ontwikkelaar kan worden overgedragen om als onderdelen te implementeren.
 
@@ -389,9 +389,9 @@ Deze techniek is handig als de meeste stijlen en front-end code worden uitgevoer
 
 [**geaëerd**](https://aemfed.io/) is een open-bron, bevel-lijn hulpmiddel dat kan worden gebruikt om front-end ontwikkeling te versnellen. Het wordt aangedreven door  [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://www.npmjs.com/package/browser-sync) en [Sling Log Tracker](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
-Op hoog niveau **geaëerd** is ontworpen om te luisteren naar bestandswijzigingen binnen het **ui.apps** en synchroniseert ze automatisch rechtstreeks naar een actieve AEM. Gebaseerd op de veranderingen, zal lokale browser automatisch verfrissen, daardoor sneller front-end ontwikkeling. Het wordt ook gebouwd om met de Traceur van het Logboek van het Sling te werken om het even welke server-zijfouten direct in de terminal automatisch te tonen.
+Op hoog niveau **geaëerd** is ontworpen om te luisteren naar bestandswijzigingen binnen het **ui.apps** en deze automatisch rechtstreeks te synchroniseren met een actieve AEM. Gebaseerd op de veranderingen, zal lokale browser automatisch verfrissen, daardoor sneller front-end ontwikkeling. Het wordt ook gebouwd om met de Traceur van het Logboek van het Sling te werken om het even welke server-zijfouten direct in de terminal automatisch te tonen.
 
-Als u veel werk verricht binnen de **ui.apps** HTML-scripts wijzigen en aangepaste componenten maken, **geaëerd** kan een zeer krachtig hulpmiddel zijn om te gebruiken. [Hier vindt u volledige documentatie.](https://github.com/abmaonline/aemfed).
+Als u veel werk verricht binnen de **ui.apps** HTML-scripts wijzigen en aangepaste componenten maken, **geaëerd** kan een zeer krachtig hulpmiddel zijn om te gebruiken. [Hier vindt u volledige documentatie](https://github.com/abmaonline/aemfed).
 
 ### Fouten opsporen in clientbibliotheken {#debugging-clientlibs}
 

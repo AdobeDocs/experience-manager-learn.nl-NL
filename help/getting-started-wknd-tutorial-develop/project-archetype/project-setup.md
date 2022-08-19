@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: 819188cabb784a2bbfa097dc4c47f75e38231b53
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
@@ -256,7 +256,7 @@ De **[kern](https://experienceleague.adobe.com/docs/experience-manager-core-comp
 
 De **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** de gemaskeerde module bevat alle renderingcode die nodig is voor de onderliggende site `/apps`. Dit omvat CSS/JS die in een AEM genoemd formaat zal worden opgeslagen [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Dit omvat ook [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) scripts voor het renderen van dynamische HTML. Je kunt denken aan de **ui.apps** als een kaart aan de structuur in JCR maar in een formaat dat op een dossiersysteem kan worden opgeslagen en aan broncontrole wordt geëngageerd. De **ui.apps** bevat alleen code.
 
-Om enkel deze module te bouwen:
+Alleen deze module samenstellen:
 
 1. Via de opdrachtregel. Navigeer in de `ui.apps` map (onder `aem-guides-wknd`):
 

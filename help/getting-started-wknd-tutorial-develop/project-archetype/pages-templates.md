@@ -9,7 +9,7 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '3079'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Maak vervolgens een nieuwe sjabloon in AEM die overeenkomt met de structuur van 
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
-Stappen op hoog niveau voor de onderstaande video:
+Stappen op hoog niveau voor de bovenstaande video:
 
 ### Structuurconfiguraties
 
@@ -161,7 +161,7 @@ Het AEM Projectarchetype produceerde een Kopbal en Voettekst. Werk vervolgens de
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
-Stappen op hoog niveau voor de onderstaande video:
+Stappen op hoog niveau voor de bovenstaande video:
 
 1. Download het pakket met voorbeeldinhoud **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets-1.1.zip)**.
 1. Upload en installeer het inhoudspakket met Package Manager op [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
@@ -207,7 +207,7 @@ Maak vervolgens een nieuwe pagina met de sjabloon Artikelpagina. Maak de inhoud 
 
 >[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
 
-Stappen op hoog niveau voor de onderstaande video:
+Stappen op hoog niveau voor de bovenstaande video:
 
 1. Navigeer naar de Sites-console op [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
 1. Een nieuwe pagina maken onder **WKND** > **VS** > **NL** > **Tijdschrift**.
@@ -257,7 +257,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
    Er zijn slechts 2 HTML-scripts. `customfooterlibs.html` en `customheaderlibs.html` onder de paginacomponent. *Hoe geeft deze component de pagina weer?*
 
-   De `sling:resourceSuperType` eigenschap verwijst naar `core/wcm/components/page/v2/page`. Met deze eigenschap kan de paginacomponent van de WKND overerven **alles** van de functionaliteit van de pagina-component Core Component. Dit is het eerste voorbeeld van iets dat de [Proxycomponentpatroon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Meer informatie is beschikbaar op [hier.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   De `sling:resourceSuperType` eigenschap verwijst naar `core/wcm/components/page/v2/page`. Met deze eigenschap kan de paginacomponent van de WKND overerven **alles** van de functionaliteit van de pagina-component Core Component. Dit is het eerste voorbeeld van iets dat de [Proxycomponentpatroon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Meer informatie is beschikbaar op [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
 1. Inspect een andere component binnen de WKND-componenten, de `Breadcrumb` component die zich bevindt op: `/apps/wknd/components/breadcrumb`. Hetzelfde geldt `sling:resourceSuperType` eigenschap kan worden gevonden, maar deze keer verwijst deze naar `core/wcm/components/breadcrumb/v2/breadcrumb`. Dit is een ander voorbeeld van het gebruiken van het de componentenpatroon van de Volmacht om een Component van de Kern te omvatten. In feite, zijn alle componenten in de WKND codebasis volmachten van AEM Componenten van de Kern (behalve onze beroemde component HelloWorld). Het is aan te raden te proberen zoveel mogelijk van de functionaliteit van kerncomponenten te hergebruiken *voor* aangepaste code schrijven.
 
