@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: 2cb08c584cb8dce27fd74314d7eba69ef4f8a875
+source-git-commit: 614db8b03a823b60846ab8ccfa8fbc29a41f7791
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,7 @@ ht-degree: 0%
    + [Aangepaste functies in regeleditor](adaptive-forms/custom-functions-aem-forms.md)
    + [Adaptief formulier insluiten in webpagina](adaptive-forms/embed-af-web-page.md)
    + [Een array van tekenreeksen maken](adaptive-forms/converting-comma-seperated-string-to-array.md)
+   + [Pad laden van item in AEM Forms](adaptive-forms/using-item-load-path.md)
    + [Het gebruiken van Vastgestelde Waarde in XML in Werkschema OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [Ingestelde waarde gebruiken in JSON in OSGI-workflow](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
    + [E-mailcomponent verzenden in AEM Forms-workflow](adaptive-forms/email-step-aem-workflow-video-use.md)
