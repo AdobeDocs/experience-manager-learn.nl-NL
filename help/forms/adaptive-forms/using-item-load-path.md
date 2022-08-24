@@ -7,9 +7,9 @@ kt: 10961
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 614db8b03a823b60846ab8ccfa8fbc29a41f7791
+source-git-commit: abf5522b948c950c3ace28a8da43907959be10b4
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,13 @@ ht-degree: 0%
 
 Vorm en bevolk drop-down lijst gebruikend het bezit van de weg van de puntlading.
 In het veld Pad laden item kan een auteur een URL opgeven waaruit de beschikbare opties in een vervolgkeuzelijst worden geladen.
-Volg onderstaande stappen om een dergelijk knooppunt in crx te maken
-
+Voer de onderstaande stappen uit om een dergelijk knooppunt in crx te maken:
 * Aanmelden bij crx
 * Maak een knooppunt met de naam assets (u kunt dit knooppunt naar wens een naam geven). Typ sling:map onder inhoud.
 * Opslaan
 * Klik op het nieuwe knooppunt met elementen en stel de eigenschappen ervan in zoals hieronder weergegeven
-* U zult een bezit van typeKoord genoemd activa (u kunt het volgens uw vereiste noemen) met multivalue moeten tot stand brengen. Geef de gewenste waarden op en sla deze op.
-
-![item-load-path](assets/item-load-path-crx.png)
+* U zult een bezit van typeKoord genoemd activa moeten tot stand brengen (u kunt het volgens uw vereiste noemen).Zorg ervoor het bezit een multivalue is. Geef de gewenste waarden op en sla deze op.
+   ![item-load-path](assets/item-load-path-crx.png)
 
 Als u deze waarden in de vervolgkeuzelijst wilt laden, geeft u het volgende pad op in de eigenschap Pad laden van item  **/content/assets/assettypes**
 
