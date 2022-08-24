@@ -1,27 +1,27 @@
 ---
 title: Inhoudsfragmenten in AEM leveren
-seo-title: Inhoudsfragmenten leveren in Adobe Experience Manager
+seo-title: Delivering Content Fragments in Adobe Experience Manager
 description: Inhoudsfragmenten, onafhankelijk van de lay-out, kunnen direct in AEM Sites met Core Components worden gebruikt of kunnen zonder kop aan downstreamkanalen worden geleverd.
-seo-description: Inhoudsfragmenten, onafhankelijk van de lay-out, kunnen direct in AEM Sites met Core Components worden gebruikt of kunnen zonder kop aan downstreamkanalen worden geleverd.
+seo-description: Content Fragments, independent of layout, can be used directly in AEM Sites with Core Components or can be delivered in a headless manner to downstream channels.
 sub-product: content-services
-feature: Contentfragmenten
+feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 uuid: 045473d2-5abe-4414-b91c-d369f3069ead
 discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
-
 
 # Inhoudsfragmenten leveren {#delivering-content-fragments}
 
@@ -29,7 +29,7 @@ Adobe Experience Manager (AEM) Content Fragments zijn tekstgebaseerde redactione
 
 Inhoudsfragmenten, onafhankelijk van de lay-out, kunnen direct in AEM Sites met Core Components worden gebruikt of kunnen zonder kop aan downstreamkanalen worden geleverd.
 
-Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmenten van de Inhoud. Hier vindt u details over het definiëren en [ontwerpen van inhoudsfragmenten](content-fragments-feature-video-use.md).
+Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmenten van de Inhoud. Details over het definiëren en [authoring Content Fragments can be found here](content-fragments-feature-video-use.md).
 
 1. Inhoudsfragmenten op webpagina&#39;s gebruiken
 2. Inhoudsfragmenten beschikbaar maken als JSON met AEM Content Services
@@ -39,7 +39,7 @@ Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmente
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-Inhoudsfragmenten kunnen op AEM Sites-pagina&#39;s worden gebruikt, of op een vergelijkbare manier op Experience Fragments, met behulp van de AEM WCM Core Components&#39; [Inhoudsfragmentcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
+Inhoudsfragmenten kunnen worden gebruikt op AEM Sites-pagina&#39;s of op een vergelijkbare manier op Experience Fragments, met behulp van de AEM WCM Core Components&#39; [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
 
 Componenten van inhoudsfragmenten kunnen zo nodig worden opgemaakt met AEM stijlsysteem.
 
@@ -49,7 +49,7 @@ Componenten van inhoudsfragmenten kunnen zo nodig worden opgemaakt met AEM stijl
 
 AEM Content Services vereenvoudigt het maken van AEM op pagina gebaseerde HTTP-eindpunten waarmee inhoud wordt weergegeven in een genormaliseerde JSON-indeling.
 
-In de bovenstaande video wordt de [Inhoudsfragmentcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) gebruikt om afzonderlijke inhoudsfragmenten zichtbaar te maken. De [Component van de Lijst van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) is een nieuwe component die een auteur toestaat om een vraag te bepalen die de pagina dynamisch met een lijst van Inhoudsfragmenten zal bevolken. De component Lijst met inhoudsfragmenten heeft de voorkeur wanneer meerdere inhoudsfragmenten moeten worden weergegeven.
+In de bovenstaande video wordt het [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) om afzonderlijke inhoudsfragmenten zichtbaar te maken. De [Component lijst met inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) is een nieuwe component waarmee een auteur een query kan definiëren waarmee de pagina dynamisch wordt gevuld met een lijst met inhoudsfragmenten. De component Lijst met inhoudsfragmenten heeft de voorkeur wanneer meerdere inhoudsfragmenten moeten worden weergegeven.
 
 *Voorbeeld van JSON-nuttige last voor inhoudsservices:*\
 **[atleten.json](assets/athletes.json)**
@@ -60,7 +60,7 @@ In de bovenstaande video wordt de [Inhoudsfragmentcomponent](https://experiencel
 
 Voor het eerst geïntroduceerd in AEM 6.5, wordt verbeterde ondersteuning voor Content Fragments met de middelen HTTP API. Op deze manier kunnen ontwikkelaars op eenvoudige wijze de bewerkingen Maken, Lezen, Bijwerken en Verwijderen (CRUD) uitvoeren op Inhoudsfragmenten.
 
-*Voorbeeld van POSTMAN-verzoeken:*
+*Voorbeeld POSTMAN-verzoeken:*
 **[CRUD-CFM-API-We.Retail.postman_collection.json](assets/CRUD-CFM-API-We.Retail.postman_collection.json)**
 
 ## Welke leveringsmethode moet worden gebruikt

@@ -1,26 +1,26 @@
 ---
 title: Aangepaste assettypen aanbieden in AEM Forms
-seo-title: Aangepaste assettypen aanbieden in AEM Forms
+seo-title: Listing Custom Asset Types in AEM Forms
 description: Deel 2 van Aangepaste assettypen in AEM Forms
-seo-description: Deel 2 van Aangepaste assettypen in AEM Forms
+seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste assettypen aanbieden in AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
@@ -36,7 +36,7 @@ In het kader van dit artikel maken we een aangepaste sjabloon om de typen aangep
 
 ![appsfolder](assets/appsfolder_.png)
 
-De volgende code geeft een overzicht van de verschillende typen elementen die de zoek- en bibliotheekcomponent gebruiken. Er worden afzonderlijke html-elementen gemaakt voor elk type element, zoals wordt weergegeven door het gegevenstype = &quot;video&quot;-tag. Voor middelentype van &quot;video&quot;gebruiken wij het &lt;video> element om de video inline te spelen. Voor het elementtype &quot;worddocuments&quot; gebruiken we een andere HTML-markering.
+De volgende code geeft een overzicht van de verschillende typen elementen die de zoek- en bibliotheekcomponent gebruiken. Er worden afzonderlijke html-elementen gemaakt voor elk type element, zoals wordt weergegeven door het gegevenstype = &quot;video&quot;-tag. Voor het elementtype &quot;video&#39;s&quot; gebruiken we de optie &lt;video> -element om de video inline af te spelen. Voor het elementtype &quot;worddocuments&quot; gebruiken we een andere HTML-markering.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -80,7 +80,7 @@ De volgende code geeft een overzicht van de verschillende typen elementen die de
 
 ## De component Search en Lister configureren {#configure-search-and-lister-component}
 
-Zodra wij het douanemalplaatje hebben bepaald, moeten wij dit douanemalplaatje met de component &quot;van het Onderzoek en van de Registratie&quot;associëren. Wijs de browser [aan deze URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Zodra wij het douanemalplaatje hebben bepaald, moeten wij dit douanemalplaatje met de component &quot;van het Onderzoek en van de Registratie&quot;associëren. Wijs uw browser aan [naar deze URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Schakel over naar de ontwerpmodus en configureer het alineasysteem om de component Zoeken en registreren op te nemen in de toegestane componentengroep. De component Search en Lister maakt deel uit van de groep Document Services.
 
@@ -110,11 +110,11 @@ Het volgende het schermschot toont u de activa die voor lijst worden gevormd
 
 ![assetypen](assets/assettypes.png)
 
-Nu u uw Onderzoek en de Kleine Component van het Portaal hebt gevormd, is het tijd om de lijst in actie te zien. Wijs de browser [aan deze URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). De resultaten moeten ongeveer overeenkomen met de onderstaande afbeelding.
+Nu u uw Onderzoek en de Kleine Component van het Portaal hebt gevormd, is het tijd om de lijst in actie te zien. Wijs uw browser aan [naar deze URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). De resultaten moeten ongeveer overeenkomen met de onderstaande afbeelding.
 
 >[!NOTE]
 >
->Als in uw portal aangepaste elementtypen worden vermeld op een publicatieserver, moet u &quot;read&quot;-machtigingen geven aan de &quot;fd-service&quot;-gebruiker voor het knooppunt **/apps/fd/fp/extensions/querybuilder**
+>Als in uw portal aangepaste elementtypen worden vermeld op een publicatieserver, moet u de gebruiker &quot;read&quot; toestemming geven voor het verzenden van het knooppunt **/apps/fd/fp/extensions/querybuilder**
 
-![](assets/assettypeslistings.png)
-[assettypesDownload en installeer dit pakket met pakketbeheer.](assets/customassettypekt1.zip) Dit bevat voorbeeld-MP4- en Word-documenten en xdp-bestanden die worden gebruikt als elementtypen voor het weergeven van lijsten met behulp van de component Search en List
+![assetypen](assets/assettypeslistings.png)
+[Download en installeer dit pakket met pakketbeheer.](assets/customassettypekt1.zip) Dit bevat voorbeeld-MP4- en Word-documenten en xdp-bestanden die worden gebruikt als elementtypen voor het weergeven van lijsten met behulp van de component Search en List

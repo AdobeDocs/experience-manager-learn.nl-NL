@@ -5,16 +5,16 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 topic: Development
 kt: 8842
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+exl-id: 274018b9-91fe-45ad-80f2-e7826fddb37e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
 
 ---
-
 
 # De vereiste software installeren
 
@@ -34,8 +34,3 @@ In deze zelfstudie wordt de volgende stap gezet in de mapstructuur.
 * Open uw opdrachtpromptvenster en navigeer naar **c:\cloudmanager**
 * Kopieer en plak de inhoud van de [tekstbestand](assets/creating-maven-project.txt) in uw opdrachtpromptvenster. Afhankelijk van het [nieuwste versie](https://github.com/adobe/aem-project-archetype/releases). De meest recente versie was 30 op het moment dat dit artikel werd geschreven.
 * Voer het bevel uit door op Enter te drukken.Als alles correct gaat zou u het bericht van het bouwstijlsucces moeten zien.
-
-
-
-
-

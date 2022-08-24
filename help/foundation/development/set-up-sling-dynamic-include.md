@@ -1,27 +1,27 @@
 ---
 title: Dynamische include-bestanden voor AEM instellen
 description: Een videodemo over het installeren en gebruiken van Apache Sling Dynamic Include met AEM Dispatcher die op Apache HTTP Web Server wordt uitgevoerd.
-version: 6.3, 6.4, 6.5
-sub-product: stichting, sites
-feature: API's
+version: 6.4, 6.5
+sub-product: foundation, sites
+feature: APIs
 topics: caching
 activity: develop
 audience: architect, developer
 doc-type: technical video
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
+# Instellen [!DNL Sling Dynamic Include]
 
-# [!DNL Sling Dynamic Include] instellen
-
-Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dynamic Include] met [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) die op [!DNL Apache HTTP Web Server] loopt.
+Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Include] with [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) wordt uitgevoerd op [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040/?quality=12&learn=on)
 
@@ -29,10 +29,10 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
 >
 > Zorg ervoor dat de nieuwste versie van AEM Dispatcher lokaal is geïnstalleerd.
 
-1. Download en installeer de [[!DNL Sling Dynamic Include] bundle](https://sling.apache.org/downloads.cgi).
-1. Configureer [!DNL Sling Dynamic Include] via [!DNL OSGi Configuration Factory] op **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
+1. Download en installeer de [[!DNL Sling Dynamic Include] bundelen](https://sling.apache.org/downloads.cgi).
+1. Configureren [!DNL Sling Dynamic Include] via de [!DNL OSGi Configuration Factory] om **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
 
-   Of, om aan een AEM code-basis toe te voegen, creeer de aangewezen **sling:OsgiConfig** knoop bij:
+   Of, om aan AEM code-basis toe te voegen, creeer aangewezen **sling:OsgiConfig** knooppunt bij:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -56,7 +56,7 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
    -->
    ```
 
-1. (Optioneel) Herhaal de laatste stap zodat componenten op [vergrendelde (initiële) inhoud van bewerkbare sjablonen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) ook via [!DNL SDI] kunnen worden weergegeven. De reden voor de extra configuratie is dat vergrendelde inhoud van bewerkbare sjablonen wordt aangeboden vanaf `/conf` in plaats van `/content`.
+1. (Optioneel) Herhaal de laatste stap om componenten toe te staan op [vergrendelde (initiële) inhoud van bewerkbare sjablonen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) via [!DNL SDI] ook. De reden voor de extra configuratie is dat vergrendelde inhoud van bewerkbare sjablonen wordt aangeboden vanuit `/conf` in plaats van `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -80,7 +80,7 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
    -->
    ```
 
-1. [!DNL Apache HTTPD Web server] `httpd.conf` dossier bijwerken om [!DNL Include] module toe te laten.
+1. Bijwerken [!DNL Apache HTTPD Web server]s `httpd.conf` bestand om het [!DNL Include] module.
 
    ```shell
    $ sudo vi .../httpd.conf
@@ -90,7 +90,7 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
    LoadModule include_module libexec/apache2/mod_include.so
    ```
 
-1. Werk het [!DNL vhost] dossier bij om te respecteren omvat richtlijnen.
+1. Werk de [!DNL vhost] dossier om richtlijnen te respecteren.
 
    ```shell
    $ sudo vi .../vhosts/aem-publish.local.conf
@@ -115,7 +115,7 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
    </VirtualHost>
    ```
 
-1. Werk het dispatcher.any configuratiedossier bij om (1) `nocache` selecteurs te steunen en (2) laat de steun van TTL toe.
+1. Update het dispatcher.any-configuratiebestand dat moet worden ondersteund (1) `nocache` selecteurs en (2) laat de steun van TTL toe.
 
    ```shell
    $ sudo vi .../conf/dispatcher.any
@@ -133,7 +133,7 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
 
    >[!TIP]
    >
-   > Als u de onderliggende `*` in de bovenstaande glob `*.nocache.html*`-regel weglaat, kan dit leiden tot [problemen in aanvragen voor subbronnen](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
+   > De slede verlaten `*` in de wereld `*.nocache.html*` lijn boven, kan resulteren in [kwesties in verzoeken om submiddelen](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
 
    ```shell
    /cache {
@@ -142,7 +142,7 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
    }
    ```
 
-1. Start [!DNL Apache HTTP Web Server] altijd opnieuw nadat u wijzigingen hebt aangebracht in de configuratiebestanden of `dispatcher.any`.
+1. Altijd opnieuw opstarten [!DNL Apache HTTP Web Server] na het aanbrengen van wijzigingen in de configuratiebestanden of de `dispatcher.any`.
 
    ```shell
    $ sudo apachectl restart
@@ -150,7 +150,7 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
 
 >[!NOTE]
 >
->Als u [!DNL Sling Dynamic Includes] voor het dienen van edge-side omvat (ESI) gebruikt, dan zorg ervoor om relevante [reactiekoppen in het verzendergeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders) in het voorgeheugen onder te brengen. Mogelijke kopteksten zijn onder andere:
+>Als u [!DNL Sling Dynamic Includes] voor het dienen van edge-side include (ESI), dan zorg ervoor om relevant in het voorgeheugen op te slaan [antwoordheaders in de verzendercache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Mogelijke kopteksten zijn onder andere:
 >
 >* &quot;Cache-control&quot;
 >* &quot;Content-Disposition&quot;
@@ -160,9 +160,7 @@ Een videodemthrough van het installeren en gebruiken van [!DNL Apache Sling Dyna
 >* &quot;ETag&quot;
 >* &quot;X-Content-Type-Options&quot;
 >* &quot;Laatst gewijzigd&quot;
-
 >
-
 
 
 ## Ondersteunende materialen

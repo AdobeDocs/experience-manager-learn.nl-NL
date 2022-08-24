@@ -1,20 +1,20 @@
 ---
 title: App AEM
 description: Gebruik AEM Desktop App om de toegang tot middelen te vereenvoudigen die in AEM op Desktop, voor om het even welke toepassing en dossierformaat worden beheerd.
-version: 6.5, 6.4, 6.3
-topic: Inhoudsbeheer
-feature: Desktop-app
+version: 6.5, 6.4
+topic: Content Management
+feature: Desktop App
 role: User
 level: Beginner
 kt: 2551
 thumbnail: 28868.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '134'
 ht-degree: 1%
 
 ---
-
 
 # App AEM gebruiken
 
@@ -29,7 +29,7 @@ Gebruik AEM Desktop App om de toegang tot middelen te vereenvoudigen die in AEM 
 
 >[!NOTE]
 >
-> [Adobe Asset ](./adobe-asset-link.md) Linkis toegewezen oplossing voor het werken met AEM middelen binnen Adobe Creative Cloud-toepassingen: Photoshop, Illustrator, InDesign. Als u AEM Assets in deze toepassingen gebruikt, heeft Adobe Asset Link de voorkeur boven AEM Desktop App.
+> [Adobe-itemkoppeling](./adobe-asset-link.md) is een speciale oplossing voor het werken met AEM Adobe Creative Cloud-toepassingen: Photoshop, Illustrator, InDesign. Als u AEM Assets in deze toepassingen gebruikt, heeft Adobe Asset Link de voorkeur boven AEM Desktop App.
 
 ## Aanvullende bronnen
 

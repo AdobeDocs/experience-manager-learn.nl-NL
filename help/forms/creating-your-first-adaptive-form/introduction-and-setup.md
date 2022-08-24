@@ -1,18 +1,18 @@
 ---
 title: Aan de slag met Adaptive Forms
-description: 'In deze zelfstudie worden de stappen besproken die nodig zijn voor het maken van adaptief formulier met meerdere tabbladen. U zult leren om Lijsten, de Lay-out van de Accordeon, en de Redacteur van de Regel aan auteur bedrijfsregels te gebruiken. '
-feature: Adaptieve Forms
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+description: In deze zelfstudie worden de stappen besproken die nodig zijn voor het maken van adaptief formulier met meerdere tabbladen. U zult leren om Lijsten, de Lay-out van de Accordeon, en de Redacteur van de Regel aan auteur bedrijfsregels te gebruiken.
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met Adaptive Forms {#getting-started-with-adaptive-forms}
 
@@ -30,8 +30,6 @@ U hebt het volgende nodig:
 
 * **Aangenomen wordt dat u AEM Forms versie 6.4 of hoger uitvoert op localhost:4502.**
 
-* [Download de client-libs-and-](assets/client-libs-and-logo.zip) load- [started-](assets/getting-started-fragment.zip) fragmentto uw harde schijf.
+* [Download het client-libs-and-logo](assets/client-libs-and-logo.zip) en [aan de slag-fragment](assets/getting-started-fragment.zip) op uw vaste schijf.
 
-* ZIP-bestanden importeren in AEM met [pakketbeheer ](http://localhost:4502/crx/packmgr/index.jsp)
-
-
+* ZIP-bestanden importeren in AEM [pakketbeheer ](http://localhost:4502/crx/packmgr/index.jsp)

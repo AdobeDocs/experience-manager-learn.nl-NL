@@ -1,31 +1,31 @@
 ---
 title: AEM Forms met JSON-schema en -gegevens[Deel3]
-seo-title: AEM Forms met JSON-schema en -gegevens[Deel3]
+seo-title: AEM Forms with JSON Schema and Data[Part3]
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
-seo-description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
-feature: Adaptieve Forms
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
-
 
 # JSON-schema opslaan in database {#storing-json-schema-in-database}
 
 
 Als u een query wilt uitvoeren op de verzonden gegevens, moet u het JSON-schema opslaan dat is gekoppeld aan het verzonden formulier. Het schema JSON zal in de vraagbouwer worden gebruikt om de vraag te bouwen.
 
-Wanneer een Adaptief formulier wordt verzonden, controleren we of het bijbehorende JSON-schema zich in de database bevindt. Als het JSON-schema niet bestaat, wordt het JSON-schema opgehaald en wordt het schema in de juiste tabel opgeslagen. De formuliernaam wordt ook gekoppeld aan het JSON-schema. In de volgende schermafbeelding ziet u de tabel waarin de JSON-schema&#39;s zijn opgeslagen.
+Wanneer een Adaptief formulier wordt verzonden, controleren we of het bijbehorende JSON-schema zich in de database bevindt. Als het JSON-schema niet bestaat, wordt het JSON-schema opgehaald en wordt het schema in de juiste tabel opgeslagen. We koppelen de formuliernaam ook aan het JSON-schema. In de volgende schermafbeelding ziet u de tabel waarin de JSON-schema&#39;s zijn opgeslagen.
 
 ![jsonschema](assets/jsonschemas.gif)
 
@@ -152,5 +152,3 @@ Om samen te vatten hebben we tot nu toe het volgende gedaan
 * De gebonden gegevens van het adaptieve formulier worden opgeslagen in de database.
 
 De volgende stappen zouden moeten gebruiken QueryBuilder om de gebieden aan onderzoek te tonen die op het Schema JSON worden gebaseerd
-
-

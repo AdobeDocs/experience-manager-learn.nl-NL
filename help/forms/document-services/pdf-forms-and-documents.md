@@ -4,12 +4,12 @@ description: PDF is eigenlijk een familie van dossierformaten, en dit artikel be
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: 6.3,6.4, 6.5
+version: 6.4, 6.5
 feature: PDF Generator
 kt: 7071
 topic: Development
 exl-id: ffa9d243-37e5-420c-91dc-86c73a824083
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Voorbeeldbestanden kunnen [hier gedownload](assets/pdf-file-types.zip)
 
 ## XML Forms Architecture PDF (XFA PDF)
 
-Adobe gebruikt de term XFA-PDF-formulier om te verwijzen naar de interactieve en dynamische Forms die u maakt met AEM Forms Designer. De Forms en de bestanden die u met Designer maakt, zijn gebaseerd op de XML Forms Architecture (XFA) van Adobe. In veel opzichten is de XFA PDF-bestandsindeling dichter bij een HTML-bestand dan bij een traditioneel PDF-bestand. De volgende code toont bijvoorbeeld hoe een eenvoudig tekstobject eruitziet in een XFA-PDF-bestand.
+Adobe gebruikt de term XFA-PDF-formulier om te verwijzen naar de interactieve en dynamische Forms die u maakt met AEM Forms Designer. De Forms en de bestanden die u maakt met Designer zijn gebaseerd op de XFA-indeling (XML Forms Architecture) van Adobe. In veel opzichten is de XFA PDF-bestandsindeling dichter bij een HTML-bestand dan bij een traditioneel PDF-bestand. De volgende code toont bijvoorbeeld hoe een eenvoudig tekstobject eruitziet in een XFA-PDF-bestand.
 
 ![Tekstveld](assets/text-field.JPG)
 
@@ -41,7 +41,7 @@ XFA Forms is gebaseerd op XML. Met deze goed gestructureerde en flexibele indeli
 De statische lay-out van PDF forms XFA verandert nooit bij runtime, maar zij kunnen voor de gebruiker interactief zijn. Hier volgen enkele voordelen van statische XFA-PDF forms:
 
 * De statische lay-out van PDF forms XFA verandert nooit bij runtime, maar zij kunnen voor de gebruiker interactief zijn.
-* Statische Forms biedt ondersteuning voor Acrobat&#39;s gereedschappen voor opmerkingen en markeringen.
+* Statische Forms biedt ondersteuning voor Acrobat-gereedschappen Opmerkingen en Markeringen.
 * Met statische Forms kunt u Acrobat-opmerkingen importeren en exporteren.
 * Statische Forms biedt ondersteuning voor subsets van lettertypen. Dit is een techniek die op een AEM Forms-server kan worden uitgevoerd.
 * Statische Forms kan worden gerenderd met de ingebouwde PDF-viewer die bij moderne browsers wordt geleverd.
@@ -76,13 +76,13 @@ De populairste en wijdverbreide PDF-indeling is het traditionele PDF-bestand. Er
 * Door de afdrukstroom van een bureaubladtoepassing vast te leggen: Kies de opdracht Afdrukken van een ontwerptoepassing en selecteer het Adobe PDF-printerpictogram. In plaats van een afgedrukte kopie van het document hebt u een PDF-bestand van het document gemaakt
 * Met de Acrobat PDFMaker-plug-in in Microsoft Office-toepassingen: Wanneer u Acrobat installeert, wordt een Adobe PDF-menu toegevoegd aan Microsoft Office-toepassingen en een pictogram aan het Office-lint. U kunt deze toegevoegde eigenschappen gebruiken om PDF dossiers direct tot stand te brengen in Microsoft Office
 * Met Acrobat Distiller kunt u Postscript- en Encapsulated PostScript-bestanden (EPS) omzetten in PDF: Distiller wordt doorgaans gebruikt in gedrukte publicaties en andere workflows die een omzetting van de PostScript-indeling naar de PDF-indeling vereisen
-* Onder de kap is een traditionele PDF heel anders dan een XFA-PDF. De klasse heeft niet dezelfde XML-structuur en aangezien deze is gemaakt door het vastleggen van de afdrukstroom van een bestand, is een traditionele PDF een statisch bestand met het kenmerk Alleen-lezen.
+* Onder de kap is een traditionele PDF heel anders dan een XFA-PDF. Het heeft niet de zelfde structuur van XML, en aangezien het door de drukstroom van een dossier wordt gecreeerd te vangen, is een traditionele PDF een statisch en read-only dossier.
 
 Een gecertificeerd document biedt ontvangers van PDF-documenten en formulieren extra garanties ten aanzien van authenticiteit en integriteit.
 
 ### Acrovormen
 
-Acroformen zijn de oudere interactieve vormtechnologie van Adobe; ze dateren van Acrobat versie 3. Adobe biedt de [Acrobat Forms API-naslag](assets/FormsAPIReference.pdf), gedateerd mei 2003, om de technische details van deze technologie te verstrekken. Acrovormen zijn een combinatie van de volgende items:
+Acrobat-formulieren zijn Adobe-interactieve formuliertechnologie; ze dateren van Acrobat versie 3. Adobe biedt de [Acrobat Forms API-naslag](assets/FormsAPIReference.pdf), gedateerd mei 2003, om de technische details van deze technologie te verstrekken. Acrovormen zijn een combinatie van de volgende items:
 
 * Een traditionele PDF die de statische indeling en afbeeldingen van het formulier definieert.
 * Interactieve formuliervelden die op de voorgrond zijn bevestigd met de formuliergereedschappen van het Adobe Acrobat-programma. Deze formuliergereedschappen vormen een kleine subset van wat beschikbaar is in AEM Forms Designer.
@@ -109,11 +109,11 @@ Twee bestanden in de voorbeeldbestanden zijn gemaakt van hetzelfde Microsoft Wor
 * simpleWordFile.pdf
 * simpleWordFilePDFA.pdf
 
-Hoewel de documenten er hetzelfde uitzien, wordt het PDF/A-bestand geopend met een blauwe balk boven in het scherm. Dit geeft aan dat u dit document in de modus PDF/A weergeeft. Deze blauwe balk is de documentberichtenbalk van Acrobat. Deze wordt weergegeven wanneer u bepaalde typen PDF-bestanden opent.
+Hoewel de documenten er hetzelfde uitzien, wordt het PDF/A-bestand geopend met een blauwe balk boven in het scherm, ten teken dat u dit document in de modus PDF/A weergeeft. Deze blauwe balk is een Acrobat-documentberichtenbalk die wordt weergegeven wanneer u bepaalde typen PDF-bestanden opent.
 
 ![PDF-img](assets/pdfa-message.png)
 
-De documentberichtenbalk bevat instructies en mogelijk knoppen waarmee u een taak kunt uitvoeren. De kleur is gecodeerd en u ziet de blauwe kleur wanneer u speciale typen PDF (zoals dit PDF/A-bestand) en gecertificeerde en digitaal ondertekende PDF opent. De balk verandert van paars voor PDF forms in geel als u deelneemt aan een PDF-revisie.
+De documentberichtenbalk bevat instructies en mogelijk knoppen waarmee u een taak kunt uitvoeren. Het heeft kleur-gecodeerd, en u zult de blauwe kleur zien wanneer u speciale types van PDF (zoals dit PDF/A dossier) evenals verklaarde en digitaal ondertekende PDF opent. De balk verandert in paars voor PDF forms en geel als u deelneemt aan een PDF-revisie.
 
 >[!NOTE]
 >

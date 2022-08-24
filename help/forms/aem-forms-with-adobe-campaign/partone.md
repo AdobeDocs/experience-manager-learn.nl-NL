@@ -1,18 +1,18 @@
 ---
-title: 'Het produceren van het Token van het Web JSON en het Token van de Toegang '
+title: Het produceren van het Token van het Web JSON en het Token van de Toegang
 description: In dit artikel wordt uitgelegd welke code nodig is om JWT en Access Token te genereren die nodig zijn voor het uitvoeren van REST-oproepen naar Adobe Campaign Standard
-feature: Adaptief Forms, formuliergegevensmodel
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
-
 
 # Het produceren van het Token van het Web JSON en het Token van de Toegang {#generating-json-web-token-and-access-token}
 
@@ -20,13 +20,13 @@ In dit artikel wordt uitgelegd welke code nodig is om JWT en Access Token te gen
 
 ## JSON-webtoken genereren {#generate-json-web-token}
 
-De eerste stap bij het gebruik van de Adobe Campaign API is het genereren van JWT. Er zijn talrijke codesteekproeven op hoe te om JWT voor ACS te produceren. U kunt dit [java-codevoorbeeld](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) volgen om JWT te genereren.
+De eerste stap bij het gebruik van de Adobe Campaign API is het genereren van JWT. Er zijn talrijke codesteekproeven op hoe te om JWT voor ACS te produceren. U kunt dit [java-codevoorbeeld](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) om JWT te genereren.
 
 Om ACS API met AEM Forms te gebruiken, moeten wij JWT binnen een bundel OSGi tot stand brengen. Het volgende codefragment is gebruikt om JWT te genereren in deze voorbeeldbundel OSGI. De details over de instantie ACS worden gehaald van eigenschappen van de configuratie OSGI die zoals hierboven getoond worden geplaatst.
 
 ![configuratie](assets/campaignconfiguration.gif)
 
-**A.** De hier getoonde waarden zijn dummywaarden
+**A.** De hier weergegeven waarden zijn dummywaarden
 
 De volgende code haalt de details over de Server van Adobe Campaign van de configuratie OSGI. We maken een persoonlijke sleutel van de lijnen 80 tot en met 104.
 

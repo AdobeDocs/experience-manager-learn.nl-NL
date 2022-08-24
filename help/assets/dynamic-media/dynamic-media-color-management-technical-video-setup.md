@@ -2,18 +2,18 @@
 title: Werken met kleurbeheer met AEM Dynamic Media
 description: In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden gebruikt om voorvertoningsmogelijkheden voor kleurcorrectie te bieden in AEM Assets.
 sub-product: dynamic-media
-feature: Afbeeldingsprofielen, videoprofielen
-version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
+feature: Image Profiles, Video Profiles
+version: 6.4, 6.5
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '319'
 ht-degree: 4%
 
 ---
-
 
 # Werken met kleurbeheer met AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
@@ -23,7 +23,7 @@ In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden 
 
 >[!NOTE]
 >
->[Schakel Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Mediain AEM in om deze functie te gebruiken.
+>[Dynamic Media inschakelen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) in AEM om deze functie te gebruiken.
 
 Deze functie is beschikbaar voor AEM 6.1- en 6.2-versies als een Feature Pack.
 
@@ -120,7 +120,7 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 | WebCoatedGrade3 | CMYK | Web Coated SWOP 2006 Grade 3 Paper |
 | WebCoatedGrade5 | CMYK | Web Coated SWOP 2006 Grade 5 Paper |
 | WebUncoated | CMYK | U.S. Web Uncoated v2 |
-| WideGamutRGB | RGB | Brede RGB-kleuromvang |
+| WideGamutRGB | RGB | Brede kleuromvang RGB |
 
 ## Aanvullende bronnen{#additional-resources}
 

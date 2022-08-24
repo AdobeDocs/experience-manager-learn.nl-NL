@@ -2,17 +2,17 @@
 title: Brand Portal gebruiken
 description: Videodoorlopen van de integratie met AEM Author en AEM Assets Brand Portal.
 feature: Brand Portal
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 0%
 
 ---
-
 
 # Brand Portal gebruiken met AEM Assets{#using-brand-portal-with-aem-assets}
 
@@ -30,7 +30,7 @@ Brand Portal Asset Sourcing wordt gebruikt om middelen te verzamelen van externe
 
 *Auteur van Experience Manager 6.5 SP2 (6.5.2) of hoger is vereist om Asset Sourcing te kunnen gebruiken*
 
-Raadpleeg [Enable Experience Manager Author for Asset Sourcing](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) voor instructies over het configureren en instellen van Asset Sourcing bij Experience Manager Author.
+Controleren [Auteur van Experience Manager inschakelen voor middelenbron](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) voor instructies over het configureren en instellen van Asset Sourcing bij Experience Manager Author.
 
 ## Functies en verbeteringen in Brand Portal februari 2019{#brand-portal-features-and-enhancements-644}
 
@@ -48,7 +48,7 @@ Lees verder voor meer informatie over gedeeltelijk zoeken naar tekst en zoeken n
 
 U kunt nu naar elementen zoeken door alleen een deel (dat een woord of twee is) van de gezochte woordgroep op te geven in het filtervenster.
 
-**Hoofdlettergebruik** : Gedeeltelijke woordzoekactie is handig wanneer u niet zeker weet welke combinatie van woorden in de gezochte uitdrukking voorkomt.
+**Hoofdletters gebruiken** : Gedeeltelijke woordzoekactie is handig wanneer u niet zeker weet welke combinatie van woorden in de gezochte uitdrukking voorkomt.
 
 Als uw zoekformulier in Brand Portal bijvoorbeeld Eigenschapvoorspelling gebruikt voor gedeeltelijke zoekopdrachten naar de titel van elementen, worden met de term kamp alle elementen geretourneerd die voorkomen in het woordkamp in de titelzin.
 
@@ -56,24 +56,24 @@ Als uw zoekformulier in Brand Portal bijvoorbeeld Eigenschapvoorspelling gebruik
 
 De Brand Portal staat het gebruik van het sterretje (*) toe in zoekquery samen met een deel van het woord in de gezochte uitdrukking.
 
-**Gebruik hoofdletters/kleine letters** : als u niet precies weet welke woorden voorkomen in de gezochte uitdrukking, kunt u een zoekopdracht met jokertekens gebruiken om de tussenruimten in de zoekopdracht op te vullen.
+**Hoofdletters gebruiken** :Als u niet zeker bent van de nauwkeurige woorden die in de gezochte uitdrukking voorkomen, kunt u een vervangingsonderzoek gebruiken om de hiaten in uw onderzoeksvraag te vullen.
 
 Als u bijvoorbeeld klimmen* opgeeft, worden alle elementen geretourneerd waarvan de woorden beginnen met de tekens die in de titelzin klimmen als in het zoekformulier in Brand Portal Eigenschapvoorspelling wordt gebruikt voor gedeeltelijk zoeken naar de titel van de elementen.
 
 Op dezelfde manier specificeren:
 
 * \*klimt retourneert alle elementen waarbij woorden eindigen met tekens die in de titelzin klimmen.
-* \*klimmen\* retourneert alle elementen met woorden die de tekens bevatten die in hun titelzin klimmen.
+* \*klimt\* retourneert alle elementen met woorden die de tekens bevatten die in hun titelzin klimmen.
 
 #### Maphiërarchie inschakelen
 
 Beheerders kunnen nu configureren hoe de mappen bij het aanmelden worden weergegeven aan gebruikers zonder beheer (Editors, Viewers en Gastgebruikers).
-[Configuratie ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) van maphiërarchie inschakelen wordt toegevoegd aan Algemene instellingen in het deelvenster met beheergereedschappen. Als de configuratie:
+[Maphiërarchie inschakelen](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) De configuratie wordt toegevoegd in Algemene Montages, in het admin paneel van hulpmiddelen. Als de configuratie:
 
-* Als deze optie is ingeschakeld, is de mappenstructuur die begint in de hoofdmap zichtbaar voor niet-beheerders. Aldus, die hen een navigatie gelijkend op beheerders verlenen.
+* Als deze optie is ingeschakeld, is de mappenstructuur die begint in de hoofdmap zichtbaar voor niet-beheerders. Aldus, die hen een navigatie ervaring gelijkend op beheerders verlenen.
 * Uitgeschakeld. Alleen de gedeelde mappen worden op de bestemmingspagina weergegeven.
 
-[Met de functie ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) Maphiërarchie inschakelen (indien ingeschakeld) kunt u de mappen met dezelfde namen onderscheiden die worden gedeeld vanuit verschillende hiërarchieën. Bij het aanmelden zien niet-beheerders nu de virtuele bovenliggende mappen (en vooroudermappen) van de gedeelde mappen.
+[Maphiërarchie inschakelen](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) Met de functie (indien ingeschakeld) kunt u de mappen onderscheiden met dezelfde namen die worden gedeeld van verschillende hiërarchieën. Bij het aanmelden zien niet-beheerders nu de virtuele bovenliggende mappen (en vooroudermappen) van de gedeelde mappen.
 
 De gedeelde mappen worden in de desbetreffende directory&#39;s in virtuele mappen ingedeeld. U kunt deze virtuele mappen herkennen met een vergrendelingspictogram.
 
@@ -98,7 +98,7 @@ Dynamic Media Video-codering kan worden gedownload van:
 
 ### Gepland publiceren naar Brand Portal
 
-De middelen (en omslagen) publiceren werkschema van [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) de instantie van de Auteur aan Brand Portal kan voor een recentere datum, tijd worden gepland.
+Middelen (en mappen) publiceren, workflow vanuit [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) De instantie van de auteur aan Brand Portal kan voor een recentere datum, tijd worden gepland.
 
 Gepubliceerde middelen kunnen ook op een latere datum (tijd) uit het portaal worden verwijderd door de workflow Unpublish from Brand Portal te plannen.
 
@@ -107,11 +107,11 @@ Gepubliceerde middelen kunnen ook op een latere datum (tijd) uit het portaal wor
 Organisaties kunnen hun portal-URL aanpassen door een alternatief voorvoegsel in de URL te plaatsen. Om een alias voor huurdersnaam in hun bestaande portaal URL te krijgen, moeten de organisaties Adobe steun contacteren.
 
 Merk op dat alleen het voorvoegsel van de Brand Portal URL kan worden aangepast en niet de volledige URL.
-Een organisatie met een bestaand domein `wknd.brand-portal.adobe.com` kan bijvoorbeeld `wkndinc.brand-portal.adobe.com` op verzoek ophalen.
+Bijvoorbeeld een organisatie met een bestaand domein `wknd.brand-portal.adobe.com` kan `wkndinc.brand-portal.adobe.com` op verzoek gemaakt.
 
-Nochtans, kan de instantie van de Auteur AEM [gevormd ](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) slechts met huurder identiteitskaart URL en niet met huurder alias (afwisselend) URL zijn.
+De instantie AEM-auteur kan echter [geconfigureerd](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) alleen met de URL van de huurder en niet met alias (alternatief) URL van de huurder.
 
-**Hoofdlettergebruik** : Organisaties kunnen aan hun merkingsbehoeften voldoen door de portaal-URL aan te passen in plaats van zich aan de URL van Adobe te houden.
+**Hoofdletters gebruiken** : Organisaties kunnen aan hun merkingsbehoeften voldoen door de portaal-URL aan te passen in plaats van zich aan de URL van Adobe te houden.
 
 ## Functies en verbeteringen in Brand Portal december 2018{#brand-portal-features-and-enhancements-642}
 
@@ -151,12 +151,12 @@ Er worden zes nieuwe configuraties toegevoegd voor beheerders om de volgende fun
 
 ### Andere verbeteringen
 
-* *Pad met maphiërarchie op kaart- en lijstweergaven* : hiermee kunnen gebruikers de locatie weten van de mappen die in een Brand Portal-instantie zijn opgeslagen. Hiermee kunnen gebruikers mappen met dezelfde naam onderscheiden in verschillende maphiërarchie.
-* *Overzichtsoptie* : biedt gebruikers die geen beheerder zijn, metagegevens over het element of de map door het element of de map te selecteren en vervolgens de overzichtsoptie op de werkbalk te selecteren. Op dit moment worden titel, datum en pad weergegeven
+* *Pad met maphiërarchie op kaart- en lijstweergaven* — biedt gebruikers de mogelijkheid de locatie te kennen van de mappen die in een Brand Portal-instantie zijn opgeslagen. Hiermee kunnen gebruikers mappen met dezelfde naam onderscheiden in verschillende maphiërarchie.
+* *Overzicht, optie* — biedt gebruikers zonder beheerdersrechten metagegevens over het middel/de map door het middel/de map te selecteren en vervolgens de overzichtsoptie op de werkbalk te selecteren. Op dit moment worden titel, datum en pad weergegeven
 
 ### Adobe I/O Gastheren UI om Auth Integrations te vormen
 
-Brand Portal gebruikt Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) interface om JWT toepassing tot stand te brengen, die het vormen van de Integraties van Auth toelaat om AEM Assets integratie met Brand Portal toe te staan. Eerder werd de interface voor het configureren van OAuth-integratie gehost in `https://marketing.adobe.com/developer/`. Raadpleeg [AEM Assets-integratie configureren met Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html) voor meer informatie over het integreren van AEM Assets met Brand Portal voor het publiceren van middelen en verzamelingen naar Brand Portal.
+Brand Portal gebruikt Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) interface om JWT-toepassing te maken, die het configureren van Auth-integratie mogelijk maakt voor AEM Assets-integratie met Brand Portal. Eerder werd de interface voor het configureren van OAuth-integratie gehost in `https://marketing.adobe.com/developer/`. Meer informatie over het integreren van AEM Assets met Brand Portal voor het publiceren van middelen en verzamelingen naar Brand Portal vindt u in [AEM Assets-integratie configureren met Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Functies en verbeteringen in Brand Portal februari 2018{#brand-portal-features-and-enhancements-632}
 

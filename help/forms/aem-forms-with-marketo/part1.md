@@ -1,18 +1,18 @@
 ---
 title: AEM Forms met Marketo (Deel 1)
 description: Zelfstudie voor de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
-feature: Adaptief Forms, formuliergegevensmodel
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 45047852-4fdb-4702-8a99-faaad7213b61
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms met Marketo
 

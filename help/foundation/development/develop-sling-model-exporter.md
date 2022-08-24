@@ -1,23 +1,23 @@
 ---
 title: Exporteurs van verkoopmodellen ontwikkelen in AEM
 description: Deze technische wandeling door het instellen van AEM voor gebruik met Sling Model Exporter, het verbeteren van een bestaand Sling Model met behulp van het Exporter-framework voor uitvoering als JSON, en hoe u Exporter-opties en Jackson-annotaties gebruikt om de uitvoer verder aan te passen.
-version: 6.3, 6.4, 6.5
-sub-product: stichting, inhouddiensten
-feature: API's
+version: 6.4, 6.5
+sub-product: foundation, content-services
+feature: APIs
 topics: content-delivery, development, headless
 activity: develop
 audience: developer
 doc-type: technical video
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
-
 
 # Exporteurs van verkoopmodellen ontwikkelen
 
@@ -31,36 +31,36 @@ Apache Sling biedt een Jackson JSON-exporter die het meest voorkomende geval van
 
 >[!VIDEO](https://video.tv.adobe.com/v/16862/?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] is een kenmerk van het  [!DNL Apache Sling] project en niet rechtstreeks gebonden aan de AEM productreleasecyclus. [!DNL Sling Model Exporter] is compatibel met AEM 6.3 en hoger.
+[!DNL Sling Model Exporter] is een kenmerk van de [!DNL Apache Sling] en niet rechtstreeks gebonden aan de AEM productreleasecyclus. [!DNL Sling Model Exporter] is compatibel met AEM 6.3 en hoger.
 
-## Het use-case voor [!DNL Sling Model Exporter]
+## Het gebruik-hoofdlettergebruik voor [!DNL Sling Model Exporter]
 
 >[!VIDEO](https://video.tv.adobe.com/v/16863/?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] is ideaal voor het leveraging van Verschuivende Modellen die reeds bedrijfslogica bevatten die de vertoningen van HTML via HTML (of vroeger JSP) steunen, en de zelfde bedrijfsvertegenwoordiging zoals JSON voor consumptie door de programmatic diensten van het Web of toepassingen van JavaScript blootstellen.
+[!DNL Sling Model Exporter] is ideaal voor het leveraging van Verschuivende Modellen die reeds bedrijfslogica bevatten die HTML vertoningen via HTL (of vroeger JSP) steunen, en de zelfde bedrijfsvertegenwoordiging zoals JSON voor consumptie door de programmatic diensten van het Web of toepassingen van JavaScript blootstellen.
 
 ## Een Verkoopmodel-exportfunctie maken
 
 >[!VIDEO](https://video.tv.adobe.com/v/16864/?quality=12&learn=on)
 
-Het inschakelen van [!DNL Exporter]-ondersteuning op een [!DNL Sling Model] is net zo eenvoudig als het toevoegen van de `@Exporter`-annotatie aan de Java-klasse.
+Inschakelen [!DNL Exporter] steun voor een [!DNL Sling Model] is net zo eenvoudig als het toevoegen van de `@Exporter` aantekening bij de klasse Java.
 
 ## Exportopties voor verkoopmodel toepassen
 
 >[!VIDEO](https://video.tv.adobe.com/v/16865/?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] ondersteunt het doorgeven van exportopties per model naar de Exporter-implementatie om te bepalen hoe de exporter uiteindelijk  [!DNL Sling Model] wordt geëxporteerd. Deze opties zijn over het algemeen &quot;globaal&quot; van toepassing op de manier waarop [!DNL Sling Model] wordt geëxporteerd, in tegenstelling tot per gegevenspunt dat kan worden uitgevoerd via hieronder beschreven inline-annotaties.
+[!DNL Sling Model Exporter] ondersteunt het doorgeven van exportopties per model aan de Exporter-implementatie om te bepalen hoe de [!DNL Sling Model] wordt definitief geëxporteerd. Deze opties zijn doorgaans &quot;globaal&quot; van toepassing op de manier waarop de [!DNL Sling Model] wordt geëxporteerd, versus per gegevenspunt dat kan worden uitgevoerd via inline-annotaties die hieronder worden beschreven.
 
 [!DNL Jackson Exporter] opties zijn:
 
 * [Opties voor Mapper-functies](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
 * [Opties voor serialisatiefunctie](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
 
-## [!DNL Jackson]-annotaties toepassen
+## Toepassen [!DNL Jackson] annotaties
 
 >[!VIDEO](https://video.tv.adobe.com/v/16866/?quality=12&learn=on)
 
-Exporters kunnen implementaties ook annotaties ondersteunen die inline kunnen worden toegepast op de klasse [!DNL Sling Model], die een fijnere controle kunnen bieden over de manier waarop de gegevens worden geëxporteerd.
+Implementaties van exportfuncties kunnen ook annotaties ondersteunen die inline kunnen worden toegepast op de [!DNL Sling Model] klasse, die een fijner niveau van controle kan verstrekken hoe de gegevens worden uitgevoerd.
 
 * [[!DNL Jackson Exporter] annotaties](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)
 

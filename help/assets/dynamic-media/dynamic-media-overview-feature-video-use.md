@@ -3,17 +3,17 @@ title: Overzicht van Dynamic Media met AEM Assets
 description: Deze videoreeks geeft u een overzicht van hoe media inhoud wordt beheerd en betreden gebruikend Adobe Experience Manager Dynamic Media als inhoud dienende dienst. Met Dynamic Media kunt u dynamische digitale ervaringen beheren en publiceren. Dit is een unieke functie voor Experience Manager Assets. Met ons framework en onze reeks componenten kunnen marketers interactieve multimedia-ervaringen op alle apparaten aanpassen en leveren.
 sub-product: dynamic-media
 feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
-version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
-
 
 # Dynamic Media gebruiken met AEM Assets {#understanding-aem-dynamic-media}
 
@@ -79,7 +79,7 @@ In deze video wordt beschreven hoe Voorinstellingen afbeelding worden gemaakt en
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319/?quality=9&learn=on)
 
-In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen om gebruik te maken van functies van het bronbestand zelf, zoals achtergrondtransparantie, ingebouwde uitknippaden en uitsnijdpaden en tekst als variabelen, met de URL-modifiers van Dynamic Media.
+In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen om gebruik te maken van functies van het bronbestand zelf, zoals achtergrondtransparantie, ingebouwde uitknippaden en uitsnijdpaden en tekst als variabelen, met de URL-opties van Dynamic Media.
 
 * URL-wijzigingstoetsen gebruiken in het veld Dynamic Media Modifier
 * Achtergrondkleur wijzigen voor afbeeldingen met transparantie
@@ -87,7 +87,7 @@ In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen o
 * Uitsnijden naar een afbeeldingspad
 * Een tekstsjabloon maken op basis van een Photoshop-bestand
 
-## Dynamic Media Besturingselement voor JPEG-bestanden in kilobytes
+## Dynamic Media Control JPEG file size in Kilobytes
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404/?quality=9&learn=on)
 
@@ -96,7 +96,7 @@ In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen o
 >
 >De kwaliteit van de afbeelding wordt gemeten in percentages van omgekeerde compressie, waarbij de kwaliteit van 100% het minst wordt gecomprimeerd, wat resulteert in afbeeldingen van hoge kwaliteit maar relatief grote bestanden. JPEG-compressie is een compressieschema met verlies waarbij compressie-instellingen de afbeeldingskwaliteit en de bestandsgrootte bepalen.
 
-Vergelijk de kwaliteit van de JPEG-afbeelding met de resulterende bestandsgrootte (in kilobytes) om de snelheid van het laden van de pagina te verhogen met behulp van twee opdrachten om de instellingen voor JPEG-compressie aan te passen. QLT definieert de afbeeldingskwaliteit door de kwaliteitsinstellingen voor JPEG-compressie aan te passen. Met de opdracht JPEG-grootte kunt u aangeven welke bestandsgrootte moet worden bereikt met compressie.
+Vergelijk de kwaliteit van de JPEG-afbeelding met de resulterende bestandsgrootte (in kilobytes) om de snelheid van het laden van de pagina te verhogen met behulp van twee opdrachten om de instellingen voor JPEG-compressie aan te passen. QLT definieert de afbeeldingskwaliteit door de kwaliteitsinstellingen voor JPEG-compressie aan te passen. Met de opdracht Grootte JPEG kunt u aangeven welke bestandsgrootte moet worden bereikt met compressie.
 
 ## CC Closed Captioning toevoegen aan Dynamic Media-video
 
@@ -106,6 +106,6 @@ U kunt eenvoudig Closed Captioning toevoegen aan Dynamic Media-video door de URL
 
 ## Afbeeldingen verscherpen gebruiken met AEM Dynamic Media
 
-In deze video wordt uitgelegd waarom het verscherpen van een afbeelding van essentieel belang is voor het behouden van de beeldkwaliteit en hoe u geavanceerde instellingen kunt gebruiken om het perfecte beeld te maken.
+In deze video wordt uitgelegd waarom het verscherpen van een afbeelding van essentieel belang is voor het behouden van de beeldkwaliteit en voor het gebruik van geavanceerde instellingen voor het maken van het perfecte beeld.
 
 >[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&amp;config=/etc/dam/presets/viewer/Video_social&amp;serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&amp;contenturl=%2F&amp;config2=/etc/dam/presets/analytics&amp;videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&amp;posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)

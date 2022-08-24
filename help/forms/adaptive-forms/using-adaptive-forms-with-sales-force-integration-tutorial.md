@@ -3,17 +3,17 @@ title: Gegevensbron configureren met Salesforce in AEM Forms 6.3 en 6.4
 description: AEM Forms integreren met Salesforce met behulp van formuliergegevensmodel
 feature: Adaptive Forms, Form Data Model
 topics: integrations
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
-
 
 # Gegevensbron configureren met Salesforce in AEM Forms 6.3 en 6.4{#configuring-datasource-with-salesforce-in-aem-forms-and}
 
@@ -30,17 +30,17 @@ Vereisten voor deze zelfstudie:
    * [Officiële documentatie voor het inschakelen van SSL op AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Je hebt een Salesforce-account nodig
-* U moet een verbonden app maken. Het officiële documentatieformulier Salesforce voor het maken van de app wordt [hier](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0) weergegeven.
+* U moet een verbonden app maken. Het officiële documentatieformulier Salesforce voor het maken van de app wordt weergegeven [hier](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * Geef de juiste OAuth-oppervlakken op voor de app (ik heb alle beschikbare OAuth-oppervlakken geselecteerd voor testdoeleinden)
 * Geef de URL voor de callback op. De callback-URL in mijn geval was
 
-   * Als u **AEM Forms 6.3** gebruikt, zal callback URL https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html zijn. In dit URL-createlead is de naam van mijn formuliergegevensmodel.
+   * Als u **AEM Forms 6.3**, wordt de callback-URL https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. In dit URL-createlead is de naam van mijn formuliergegevensmodel.
 
    * Als u** AEM Forms 6.4** gebruikt, wordt de callback-URL https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 In dit voorbeeld is gbedekar -w7-1:6443 de naam van mijn server en de poort waarop AEM wordt uitgevoerd.
 
-Zodra u de Verbonden nota van de App **Consumentensleutel en Geheime Sleutel** hebt gecreeerd. U hebt deze nodig bij het maken van de gegevensbron in AEM Forms.
+Nadat u de Connected App-notitie hebt gemaakt, **Consumentencode en geheime sleutel**. U hebt deze nodig bij het maken van de gegevensbron in AEM Forms.
 
 Nu u uw verbonden app hebt gemaakt, moet u een wagerbestand maken voor de bewerkingen die u in koopkracht moet uitvoeren. Een voorbeeldwagerbestand wordt opgenomen als onderdeel van de downloadbare middelen. Met dit kwikbestand kunt u het object Lead maken bij het verzenden van een adaptief formulier. Verken dit wagerbestand.
 
@@ -49,7 +49,7 @@ De volgende stap bestaat uit het maken van een gegevensbron in AEM Forms. Voer d
 ## AEM Forms 6.3 {#aem-forms}
 
 * Aanmelden bij AEM Forms via het HTTPS-protocol
-* Navigeer naar de cloudservices door https://&lt;servername>:&lt;serverport> /etc/cloudservices.html, bijvoorbeeld https://gbedekar-w7-1:6443/etc/cloudservices.html
+* Ga naar cloudservices door in https:// te typen&lt;servername>:&lt;serverport> /etc/cloudservices.html, bijvoorbeeld https://gbedekar-w7-1:6443/etc/cloudservices.html
 * Blader omlaag naar &quot;Formuliergegevensmodel&quot;.
 * Klik op Configuraties tonen.
 * Klik op ‘+’ om een nieuwe configuratie toe te voegen
@@ -65,14 +65,14 @@ De volgende stap bestaat uit het maken van een gegevensbron in AEM Forms. Voer d
 * Selecteer &quot;Bestand&quot; als optie voor het bronbestand van de computer. Bladeren naar het bestand dat u eerder hebt gedownload
 * Verificatietype selecteren als OAuth2.0
 * Geef de waarden voor ClientID en Client Secret op
-* OAuth URL is - **https://login.salesforce.com/services/oauth2/authorize**
+* OAuth-URL is - **https://login.salesforce.com/services/oauth2/authorize**
 * Token-URL vernieuwen - **https://na5.salesforce.com/services/oauth2/token**
 * **URL voor toegangstoek - https://na5.salesforce.com/services/oauth2/token**
-* Bereik vergunning: ** api   chatter_api full id   openhartig   verfrissen_token visuale web*
+* Bereik vergunning: ** api chatter_api full id openid refresh_token visualforce web**
 * Verificatiehandler: Vergunninghouder
 * Klik op &quot;Verbinding maken met OAUTH&quot;. Als alles goed gaat, worden geen fouten weergegeven
 
-Nadat u het formuliergegevensmodel hebt gemaakt met Salesforce, kunt u vervolgens de formuliergegevensintegratie maken met de gegevensbron die u zojuist hebt gemaakt. De officiële documentatie voor het creëren van de Integratie van de Gegevens van de Vorm is [hier](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
+Nadat u het formuliergegevensmodel hebt gemaakt met Salesforce, kunt u vervolgens de formuliergegevensintegratie maken met de gegevensbron die u zojuist hebt gemaakt. De officiële documentatie voor het maken van formuliergegevensintegratie is [hier](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
 
 Zorg ervoor u het Model van de Gegevens van de Vorm vormt om de dienst van de POST te omvatten om een Lood voorwerp in SFDC tot stand te brengen.
 
@@ -97,15 +97,15 @@ Nadat u het formuliergegevensmodel hebt gemaakt, kunt u op dit model gebaseerde 
    * Blader naar en selecteer het gummetje dat u in de vorige stap hebt gedownload
    * Type verificatie: OAuth 2.0. Geef de volgende waarden op
    * Geef de waarden voor ClientID en Client Secret op
-   * OAuth URL is - **https://login.salesforce.com/services/oauth2/authorize**
+   * OAuth-URL is - **https://login.salesforce.com/services/oauth2/authorize**
    * Token-URL vernieuwen - **https://na5.salesforce.com/services/oauth2/token**
-   * Toegangstoken Ur **l - https://na5.salesforce.com/services/oauth2/token**
+   * Token-Ur openen **l - https://na5.salesforce.com/services/oauth2/token**
    * Bereik vergunning: ** api chatter_api full id openid refresh_token visualforce web**
    * Verificatiehandler: Vergunninghouder
    * Klik op de knop &quot;Verbinding maken met OAuth&quot;. Als er fouten optreden, controleert u de voorgaande stappen om ervoor te zorgen dat alle gegevens correct zijn ingevoerd.
 
 
-Zodra u uw Gegevensbron gebruikend SalesForce hebt gecreeerd, kunt u de Integratie van de Gegevens van de Vorm dan tot stand brengen gebruikend de Gegevensbron die u net hebt gecreeerd. De documentatieverbinding voor dat is [hier](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
+Zodra u uw Gegevensbron gebruikend SalesForce hebt gecreeerd, kunt u de Integratie van de Gegevens van de Vorm dan tot stand brengen gebruikend de Gegevensbron die u net hebt gecreeerd. De documentatiekoppeling hiervoor is [hier](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 Zorg ervoor u het Model van de Gegevens van de Vorm vormt om de dienst van de POST te omvatten om een Lood voorwerp in SFDC tot stand te brengen.
 

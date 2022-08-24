@@ -1,15 +1,16 @@
 ---
 title: Naamconventies en aanbevolen procedures voor het maken van aangepaste formulieren
 description: Naamconventies en aanbevolen procedures voor het maken van aangepaste formulieren
-feature: Adaptieve Forms
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fbfc74d7-ba7c-495a-9e3b-63166a3025ab
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 2%
+source-wordcount: '287'
+ht-degree: 1%
 
 ---
 
@@ -29,15 +30,13 @@ Met Adobe Experience Manager (AEM)-formulieren kunt u complexe transacties trans
    * Namen kunnen letters, cijfers, onderstrepingstekens en dollartekens bevatten.
    * Namen moeten beginnen met een letter
    * Namen zijn hoofdlettergevoelig
-   * Gereserveerde woorden (zoals JavaScript-trefwoorden) kunnen niet als namen worden gebruikt. Kijk uit voor andere af-specifieke gereserveerde woorden zoals   als &quot;paneel&quot;,&quot;naam&quot;.
+   * Gereserveerde woorden (zoals JavaScript-trefwoorden) kunnen niet als namen worden gebruikt. Kijk uit voor andere AF-specifieke gereserveerde woorden zoals &quot;panel&quot;, &quot;name&quot;.
    * Geen streepjes &quot;-&quot; in uw namen opnemen
 * **Forms ontwikkelen**
-   * Formulierfragmenten moeten in overweging worden genomen bij het ontwikkelen van grote vormen. Uitgestelde laden van formulierfragmenten inschakelen voor sneller laden   keer
+   * Formulierfragmenten moeten in overweging worden genomen bij het ontwikkelen van grote vormen. Het laden van formulierfragmenten versnellen
    * **DataModel**
       * Aangepast gegevensmodel koppelen aan adaptief formulier wordt aanbevolen
    * **Objectgebeurtenissen**
       * Code met betrekking tot de zichtbaarheid van een object moet altijd in de zichtbaarheidsgebeurtenis van dat object worden geplaatst.
    * **Script**
       * Als de code die u in een adaptief formulier schrijft, meer dan 5 zichtbare regels overschrijdt, moet u de code naar een clientbibliotheek verplaatsen. In het ideale geval voegt u uw functie toe aan de clientbibliotheek en voegt u vervolgens de juiste jsdoc-tags toe, zodat de functie zichtbaar is in de editor voor Adaptieve formulierregels.
-
-

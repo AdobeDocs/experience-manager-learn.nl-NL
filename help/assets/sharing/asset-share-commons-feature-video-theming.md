@@ -1,17 +1,17 @@
 ---
 title: Inleiding tot Thema's in Commons voor het Aandeel van Activa
 description: Materialen voor zowel de functionele als de technische overeenkomst Activa Share Commons
-version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
+version: 6.4, 6.5
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: b7d0b6b1-145a-4987-a9dc-7263efa4d9fb
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '113'
 ht-degree: 1%
 
 ---
-
 
 # Inleiding tot Thema&#39;s in Commons voor het Aandeel van Activa {#asset-share-commons-theme}
 
@@ -72,7 +72,7 @@ In deze video wordt een nieuw thema gemaakt op basis van het donkere thema Commo
 @msgWarningBackgroundColor: @yellow;
 ```
 
-[Aangepast clientbibliotheekthema](assets/asc-theme-demo.zip) downloaden
+Downloaden [Thema aangepaste clientbibliotheek](assets/asc-theme-demo.zip)
 
 ## Aanvullende bronnen{#additional-resources}
 

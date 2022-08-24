@@ -4,19 +4,19 @@ description: De Console van Componenten verstrekt ontwikkelaars en beheer een ce
 topics: components
 audience: all
 doc-type: feature video
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 activity: use
-feature: Kernonderdelen
-topic: Inhoudsbeheer
+feature: Core Components
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 6f33f121-5564-4c46-ab56-7ea382a0ab5a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '167'
 ht-degree: 1%
 
 ---
-
 
 # De componentenconsole gebruiken {#using-the-components-console-with-aem-sites}
 
@@ -31,7 +31,7 @@ De componentconsole biedt de volgende functionaliteit:
 * [!UICONTROL Policies]: toont om het even welk bestaand beleid voor een bepaalde component en het bijbehorende malplaatje
 * [!UICONTROL Live Usage]: geeft een lijst weer van pagina&#39;s waarin de component is opgenomen
 
-U vindt de componentconsole onder **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Components]**.
+De componentconsole is te vinden onder **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Components]**.
 Component Console URL (lokale AEM-auteur): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## Aanvullende bronnen {#additional-resources}

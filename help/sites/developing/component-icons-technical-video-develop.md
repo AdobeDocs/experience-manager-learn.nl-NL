@@ -5,18 +5,18 @@ topics: components
 audience: administrator, developer
 doc-type: technical video
 activity: develop
-version: 6.3, 6.4, 6.5
-feature: Kernonderdelen
-topic: Ontwikkeling
+version: 6.4, 6.5
+feature: Core Components
+topic: Development
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
-
 
 # Componentpictogrammen aanpassen {#developing-component-icons-in-aem-sites}
 
@@ -30,7 +30,7 @@ De Componentbrowser wordt nu in een consistent grijs thema weergegeven, met daar
 * **[!UICONTROL Component Title]**
 * **[!UICONTROL Component Description]**
 * **[!UICONTROL Component Icon]**
-   * De eerste twee letters van de Titel van de Component *(gebrek)*
+   * De eerste twee letters van de componenttitel *(standaard)*
    * Aangepaste PNG-afbeelding *(geconfigureerd door een ontwikkelaar)*
    * Aangepaste SVG-afbeelding *(geconfigureerd door een ontwikkelaar)*
    * CoralUI-pictogram *(geconfigureerd door een ontwikkelaar)*
@@ -39,9 +39,9 @@ De Componentbrowser wordt nu in een consistent grijs thema weergegeven, met daar
 
 ### Afkortingen {#abbreviations}
 
-Standaard worden de eerste 2 tekens van de componenttitel (**[cq:Component]@jcr:title**) gebruikt als de afkorting. Als bijvoorbeeld **[cq:Component]@jcr:title=Article List** de afkorting wordt weergegeven als &quot;**Ar**&quot;.
+Standaard worden de eerste 2 tekens van de componenttitel (**[cq:Component]@jcr:titel**) worden gebruikt als de afkorting. Als **[cq:Component]@jcr:title=Article-lijst** de afkorting wordt weergegeven als &quot;**Ar**&quot;.
 
-De afkorting kan worden aangepast via de eigenschap **[cq:Component]@abbreabonnement**. Hoewel deze waarde meer dan 2 tekens kan bevatten, wordt aangeraden de afkorting te beperken tot 2 tekens om visuele stoornissen te voorkomen.
+De afkorting kan worden aangepast via de **[cq:Component]@abbreletters** eigenschap. Hoewel deze waarde meer dan 2 tekens kan bevatten, wordt aangeraden de afkorting te beperken tot 2 tekens om visuele stoornissen te voorkomen.
 
 ```plain
 /apps/.../components/content/my-component
@@ -51,7 +51,7 @@ De afkorting kan worden aangepast via de eigenschap **[cq:Component]@abbreabonne
 
 ### CoralUI-pictogrammen {#coralui-icons}
 
-Pictogrammen van CoralUI, opgegeven door AEM, kunnen worden gebruikt voor componentpictogrammen. Om een pictogram CoralUI te vormen, plaats een **[cq:Component]@cq:icon** bezit aan de gewenste het pictogramkenmerkwaarde van HTML van het pictogram CoralUI (opgesomd in [documentatie CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
+Pictogrammen van CoralUI, opgegeven door AEM, kunnen worden gebruikt voor componentpictogrammen. Als u een CoralUI-pictogram wilt configureren, stelt u een **[cq:Component]@cq:pictogram** eigenschap aan de gewenste waarde van het HTML-pictogramkenmerk van het pictogram CoralUI (opgesomd in de [CoralUI-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
 ```plain
 /apps/.../components/content/my-component
@@ -61,11 +61,11 @@ Pictogrammen van CoralUI, opgegeven door AEM, kunnen worden gebruikt voor compon
 
 ### PNG-afbeeldingen {#png-images}
 
-PNG-afbeeldingen kunnen worden gebruikt voor componentpictogrammen. Als u een PNG-afbeelding als componentpictogram wilt configureren, voegt u de gewenste afbeelding toe als een **nt:file** met de naam **cq:icon.png** onder **[cq:Component]**.
+PNG-afbeeldingen kunnen worden gebruikt voor componentpictogrammen. Als u een PNG-afbeelding wilt configureren als componentpictogram, voegt u de gewenste afbeelding toe als een **nt:bestand** benoemd **cq:icon.png** onder de **[cq:Component]**.
 
-De PNG moet een transparante achtergrond hebben of een achtergrondkleur hebben die is ingesteld op **#707070**.
+De PNG moet een transparante achtergrond hebben of een achtergrondkleur die is ingesteld op **#707070**.
 
-De PNG-afbeeldingen worden geschaald naar **20px bij 20px**. Als u echter ruimte wilt maken voor netvliesweergave **40px** van **40px**, heeft u wellicht de voorkeur.
+De PNG-afbeeldingen worden geschaald naar **20 px bij 20 px**. Maar voor netvliesweergave **40 px** door **40 px** kan de voorkeur verdienen.
 
 ```plain
 /apps/.../components/content/my-component
@@ -76,9 +76,9 @@ De PNG-afbeeldingen worden geschaald naar **20px bij 20px**. Als u echter ruimte
 
 ### SVG-afbeeldingen {#svg-images}
 
-SVG-afbeeldingen (gebaseerd op vectoren) kunnen worden gebruikt voor componentpictogrammen. Als u een SVG-afbeelding als componentpictogram wilt configureren, voegt u de gewenste SVG toe als een **nt:file** met de naam **cq:icon.svg** onder **[cq:Component]**.
+SVG-afbeeldingen (op basis van vectoren) kunnen worden gebruikt voor componentpictogrammen. Als u een SVG-afbeelding wilt configureren als componentpictogram, voegt u de gewenste SVG toe als een **nt:bestand** benoemd **cq:icon.svg** onder de **[cq:Component]**.
 
-SVG-afbeeldingen moeten een achtergrondkleur hebben ingesteld op **#707070** en een grootte van **20px bij 20px.**
+Voor SVG-afbeeldingen moet een achtergrondkleur zijn ingesteld op **#707070** en een grootte van **20 px bij 20 px.**
 
 ```plain
 /apps/.../components/content/my-component

@@ -1,18 +1,18 @@
 ---
 title: Smart Translation Search gebruiken met AEM Assets
 description: Met Smart Translation Search kunt u automatisch zoeken en zoeken in verschillende talen via AEM inhoud, zowel Middelen als Pagina's, waardoor meer dan 50 talen worden ondersteund en de behoefte aan handmatig vertalen van inhoud wordt verminderd.
-version: 6.3, 6.4, 6.5
-feature: Zoeken
-topic: Inhoudsbeheer
+version: 6.4, 6.5
+feature: Search
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
-
 
 # Smart Translation Search gebruiken met AEM Assets{#using-smart-translation-search-with-aem-assets}
 
@@ -24,7 +24,7 @@ Met AEM Smart Translation Search kunnen gebruikers zoeken naar inhoud in AEM met
 
 Smart Translation Search is een perfecte aanvulling op AEM Slimme tags die worden toegepast op middelen in het Engels.
 
-In deze video wordt ervan uitgegaan dat [AEM Smart Translation Search](smart-translation-search-technical-video-setup.md) is ingesteld.
+Deze video gaat ervan uit [AEM zoeken naar slimme vertaling](smart-translation-search-technical-video-setup.md) is ingesteld.
 
 ## Hoe Smart Translation Search werkt {#how-smart-translation-search-works}
 

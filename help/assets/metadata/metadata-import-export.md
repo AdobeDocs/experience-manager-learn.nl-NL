@@ -1,20 +1,20 @@
 ---
 title: Metagegevens importeren en exporteren in AEM Assets gebruiken
 description: Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Experience Manager Assets kunt gebruiken. Met de import- en exportmogelijkheden kunnen auteurs van inhoud de metagegevens van updates voor bestaande elementen bulksgewijs verzenden.
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 topic: Content Management
 feature: Metadata
 role: Admin
 level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
-source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
+exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 2%
 
 ---
-
 
 # Metagegevens importeren en exporteren in AEM Assets gebruiken {#metadata-import-and-export}
 
@@ -37,7 +37,7 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
 ### Eerste rij
 
 * De eerste rij van het CSV-bestand definieert het metagegevensschema.
-* De eerste kolom heeft standaard de waarde `assetPath`, die het absolute JCR-pad voor een element bevat.
+* De standaardinstellingen van de kolom Eerste `assetPath`, die het absolute JCR-pad voor een element bevat.
 
 * De volgende kolommen in de eerste rij wijzen naar andere meta-gegevenseigenschappen van een element.
    * Bijvoorbeeld : `dc:title, dc:description, jcr:title`
@@ -53,9 +53,9 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
    * Incorrect: `Dc:Title {{String}}`
 
 * Type eigenschap is niet hoofdlettergevoelig
-* Alle geldige [JCR-eigenschapstypen](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden ondersteund
+* Alles geldig [Typen JCR-eigenschappen](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden ondersteund
 
-* Opmaak eigenschap van meerdere waarden - `<metadata property name> {{<property type : MULTI }}`
+* Opmaak Multi Value Property - `<metadata property name> {{<property type : MULTI }}`
 
 ### Tweede rij naar N rijen
 

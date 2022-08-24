@@ -1,26 +1,26 @@
 ---
 title: Aangepaste elementtypen registreren
-seo-title: Aangepaste elementtypen registreren
+seo-title: Registering Custom Asset Types
 description: Aangepaste elementtypen inschakelen voor aanbieding in AEMForms Portal
-seo-description: Aangepaste elementtypen inschakelen voor aanbieding in AEMForms Portal
+seo-description: Enabling custom asset types for listing in AEMForms Portal
 uuid: eaf29eb0-a0f6-493e-b267-1c5c4ddbe6aa
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: da613092-e03b-467c-9b9e-668142df4634
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
-
 
 # Aangepaste elementtypen registreren {#registering-custom-asset-types}
 
@@ -32,12 +32,12 @@ Aangepaste elementtypen inschakelen voor aanbieding in AEMForms Portal
 
 ## Basispad opgeven {#specify-base-path}
 
-Het basispad is het bovenste opslagpad dat alle elementen bevat die een gebruiker in de zoek- en listercomponent wil vermelden. Indien gewenst, kan de gebruiker specifieke plaatsen binnen de basisweg van component ook vormen uitgeven dialoog, zodat het onderzoek op specifieke plaatsen eerder dan het zoeken van alle knopen binnen de basisweg wordt teweeggebracht. Standaard wordt het basispad gebruikt als zoekpadcriteria voor het ophalen van elementen, tenzij de gebruiker een set specifieke paden configureert vanuit deze locatie. Het is belangrijk om een optimale waarde voor dit pad te hebben om een voortreffelijke zoekopdracht te kunnen uitvoeren. De standaardwaarde van het basispad blijft als **_/content/dam/formsanddocuments_** omdat alle AEM Forms-elementen zich in **_/content/dam/formsanddocuments bevinden._**
+Het basispad is het bovenste opslagpad dat alle elementen bevat die een gebruiker in de zoek- en listercomponent wil vermelden. Indien gewenst, kan de gebruiker specifieke plaatsen binnen de basisweg van component ook vormen uitgeven dialoog, zodat het onderzoek op specifieke plaatsen eerder dan het zoeken van alle knopen binnen de basisweg wordt teweeggebracht. Standaard wordt het basispad gebruikt als zoekpadcriteria voor het ophalen van elementen, tenzij de gebruiker een set specifieke paden configureert vanuit deze locatie. Het is belangrijk om een optimale waarde voor dit pad te hebben om een voortreffelijke zoekopdracht te kunnen uitvoeren. De standaardwaarde van het basispad blijft ongewijzigd **_/content/dam/formsanddocuments_** omdat alle AEM Forms-middelen zich bevinden in **_/content/dam/formsanddocuments._**
 
 Stappen om het basispad te configureren
 
 1. Aanmelden bij crx
-1. Navigeer naar **/libs/fd/fp/extensions/querybuilder/basepath**
+1. Navigeren naar **/libs/fd/fp/extensions/querybuilder/basepath**
 
 1. Klik op Overlay Node op de werkbalk
 1. Zorg ervoor dat de overlaylocatie &quot;/apps/&quot; is
@@ -45,10 +45,10 @@ Stappen om het basispad te configureren
 1. Klik op Opslaan
 1. Navigeer naar de nieuwe structuur die is gemaakt op **/apps/fd/fp/extensions/querybuilder/basepath**
 
-1. Wijzig de waarde van de eigenschap path in **&quot;/content/dam&quot;**
+1. De waarde van de eigenschap path wijzigen in **&quot;/content/dam&quot;**
 1. Klik op Opslaan
 
-Door het wegbezit aan **&quot;te specificeren/content/dam&quot;** plaatst u fundamenteel de Weg van de Basis aan /content/dam. Dit kan worden geverifieerd door de component Search and Lister te openen.
+Door de eigenschap path op te geven **&quot;/content/dam&quot;** u plaatst hoofdzakelijk de Weg van de Basis aan /content/dam. Dit kan worden geverifieerd door de component Search and Lister te openen.
 
 ![basepaat](assets/basepath.png)
 
@@ -59,16 +59,16 @@ Er is een nieuw tabblad (Lijst met elementen) toegevoegd aan de zoek- en listerc
 1. Adaptieve Forms
 1. Formuliersjablonen
 1. PDF forms
-1. Document (statische PDF&#39;s)
+1. Document (statische PDF)
 
 **Stappen om aangepast elementtype te registreren**
 
-1. Overlayknooppunt maken van **/libs/fd/fp/extensions/querybuilder/assettypes**
+1. Overlay-knooppunt maken van **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. De overlaylocatie instellen op &quot;/apps&quot;
 1. Navigeer naar de nieuwe structuur die is gemaakt op **/apps/fd/fp/extensions/querybuilder/assettypes **
 
-1. Onder deze plaats, creeer een &quot;geen:ongestructureerd&quot;knoop voor het te registreren type, noem de knoop **mp4files. Voeg de volgende twee eigenschappen aan deze mp4files knoop** toe
+1. Maak onder deze locatie een &#39;nt:unStructured&#39; knooppunt voor het type dat moet worden geregistreerd, geef het knooppunt een naam **mp4files. De volgende twee eigenschappen toevoegen aan dit knooppunt mp4files**
 
    1. Voeg de eigenschap jcr:title toe om de weergavenaam van het elementtype op te geven. Stel de waarde van jcr:title in op &quot;MP4-bestanden&quot;.
    1. Voeg de eigenschap &quot;type&quot; toe en stel de waarde ervan in op &quot;videos&quot;. Dit is de waarde die we in onze sjabloon gebruiken om elementen van het type video&#39;s weer te geven. Sla uw wijzigingen op.
@@ -89,7 +89,6 @@ Nadat u de bovenstaande stappen hebt uitgevoerd, wordt het nieuwe elementtype (M
 
 ![mp4files](assets/mp4files.png)
 
-[Als u problemen hebt om dit aan het werk te krijgen, kunt u het volgende pakket invoeren.](assets/assettypeskt1.zip) Voor het pakket zijn twee aangepaste elementtypen gedefinieerd. MP4-bestanden en WordDocuments. Stel dat u een blik werpt op **/apps/fd/fp/extensions/querybuilder/assettypes**
+[Als u problemen hebt om dit aan het werk te krijgen, kunt u het volgende pakket invoeren.](assets/assettypeskt1.zip) Voor het pakket zijn twee aangepaste elementtypen gedefinieerd. MP4-bestanden en WordDocuments. Stel voor dat u een blik werpt op de **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Installeer het aangepaste portaalpakket](assets/customportalpage.zip). Dit pakket bevat een voorbeeldportalpagina. Deze pagina wordt gebruikt in deel 2 van deze zelfstudie
-
+[Het aangepaste portalpakket installeren](assets/customportalpage.zip). Dit pakket bevat een voorbeeldportalpagina. Deze pagina wordt gebruikt in deel 2 van deze zelfstudie

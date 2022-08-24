@@ -1,22 +1,22 @@
 ---
 title: Eenvoudige gids voor implementatie van zoekopdrachten
 description: De Eenvoudige onderzoeksimplementatie is de materialen van het laboratorium van de Top van 2017 AEM Gedetailleerd Onderzoek. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
 
 ---
 
-
 # Eenvoudige gids voor implementatie van zoekopdrachten{#simple-search-implementation-guide}
 
-De eenvoudige onderzoeksimplementatie is de materialen van **het laboratorium van de Adobe Summit AEM Onderzoek Demystified**. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
+De eenvoudige onderzoeksimplementatie is de materialen van **Adobe Summit laboratorium AEM Onderzoek Demystified**. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
 
 ![Overzicht van zoekarchitectuur](assets/l4080/simple-search-application.png)
 
@@ -38,7 +38,7 @@ De eenvoudige onderzoeksimplementatie is de materialen van **het laboratorium va
 
 ### Hoofdstukken {#chapters}
 
-*De onderstaande hoofdstukkoppelingen gaan ervan uit dat de  [eerste ](#initialpackages) pakketten zijn geïnstalleerd op AEM-auteur op`http://localhost:4502`*
+*De onderstaande hoofdstukkoppelingen gaan uit van de [Eerste pakketten](#initialpackages) zijn geïnstalleerd op AEM-auteur op`http://localhost:4502`*
 
 * [Hoofdstuk 1](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [Hoofdstuk 2](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -74,7 +74,7 @@ De eenvoudige onderzoeksimplementatie is de materialen van **het laboratorium va
 * [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html)
 * [Verkoopmodel exporteren](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [QueryBuilder-API](https://experienceleague.adobe.com/docs/)
-* [AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  ([documentatiepagina](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Documentatiepagina](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correcties en follow-up {#corrections-and-follow-up}
 
@@ -82,18 +82,18 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
 
 1. **Hoe kan ik stoppen met opnieuw indexeren?**
 
-   Opnieuw indexeren kan worden gestopt via IndexStats MBean beschikbaar via [AEM Webconsole > JMX](http://localhost:4502/system/console/jmx)
+   Opnieuw indexeren kan worden gestopt via IndexStats MBean beschikbaar via [AEM webconsole > JMX](http://localhost:4502/system/console/jmx)
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-      * `abortAndPause()` uitvoeren om het opnieuw indexeren af te breken. Dit zal de index aan verder re-indexeren sluiten tot `resume()` wordt aangehaald.
-      * Als u `resume()` uitvoert, wordt het indexeringsproces opnieuw gestart.
+      * Uitvoeren `abortAndPause()` om het opnieuw indexeren af te breken. Hierdoor wordt de index vergrendeld en wordt de index opnieuw geïndexeerd tot `resume()` wordt aangeroepen.
+      * Uitvoeren `resume()` wordt het indexeringsproces opnieuw gestart.
    * Documentatie: [https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
 
 2. **Hoe kunnen eak-indexen meerdere huurders ondersteunen?**
 
-   Met de optie Eak kunt u indexen plaatsen door de inhoudsstructuur heen. Deze indexen indexeren alleen binnen die substructuur. **`/content/site-a/oak:index/cqPageLucene`** kan bijvoorbeeld alleen worden gemaakt om inhoud te indexeren onder **`/content/site-a`.**
+   Met de optie Eak kunt u indexen plaatsen door de inhoudsstructuur heen. Deze indexen indexeren alleen binnen die substructuur. Bijvoorbeeld **`/content/site-a/oak:index/cqPageLucene`** kan alleen worden gemaakt om inhoud te indexeren onder **`/content/site-a`.**
 
-   Een equivalente benadering is het gebruik van de eigenschappen **`includePaths`** en **`queryPaths`** op een index onder **`/oak:index`**. Bijvoorbeeld:
+   Een gelijkwaardige aanpak is het gebruik van de **`includePaths`** en **`queryPaths`** eigenschappen op een index onder **`/oak:index`**. Bijvoorbeeld:
 
    * `/oak:index/siteAcqPageLucene@includePaths=/content/site-a`
    * `/oak:index/siteAcqPageLucene@queryPaths=/content/site-a`
@@ -101,7 +101,7 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
    De overwegingen met deze benadering zijn:
 
    * De vragen MOETEN een wegbeperking specificeren die aan het werkingsgebied van de de vraagweg van de index gelijk is, of daar een nakomeling van zijn.
-   * Met bredere bereikindexen (bijvoorbeeld `/oak:index/cqPageLucene`) worden de gegevens ook geïndexeerd, wat leidt tot dubbele invoer en kosten voor schijfgebruik.
+   * Bereikindexen van de grotere (bijvoorbeeld `/oak:index/cqPageLucene`) zal de gegevens ook indexeren, wat leidt tot dubbele inname en kosten voor schijfgebruik.
    * Mogelijk is dubbel configuratiebeheer vereist (bijv. het toevoegen van zelfde indexRules over veelvoudige huurdersindexen als zij de zelfde vraagreeksen moeten voldoen)
    * Deze benadering wordt het best gediend op AEM publiceer rij voor het onderzoek van de douaneplaats, aangezien op Auteur AEM, het voor vragen gemeenschappelijk is om bij hoog de inhoudsboom voor verschillende huurders (bijvoorbeeld, via OmniSearch) te worden uitgevoerd - de verschillende indexdefinities kunnen in verschillend gedrag resulteren die slechts op de wegbeperking wordt gebaseerd.
 
@@ -117,7 +117,7 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
 
 4. **Hoe te om naar Pagina&#39;s en Middelen in de zelfde vraag te zoeken?**
 
-   Nieuw in AEM 6.3 is de capaciteit om voor veelvoudige knoop-types in de zelfde verstrekte vraag te vragen. De volgende query QueryBuilder. Merk op dat elke &quot;sub-query&quot;aan zijn eigen index kan oplossen, zodat in dit voorbeeld `cq:Page` subquery aan `/oak:index/cqPageLucene` wordt omgezet en `dam:Asset` subquery aan `/oak:index/damAssetLucene`.
+   Nieuw in AEM 6.3 is de capaciteit om voor veelvoudige knoop-types in de zelfde verstrekte vraag te vragen. De volgende query QueryBuilder. Merk op dat elke &quot;sub-query&quot;aan zijn eigen index kan oplossen, zodat in dit voorbeeld, `cq:Page` subquery wordt omgezet in `/oak:index/cqPageLucene` en de `dam:Asset` subquery wordt omgezet in `/oak:index/damAssetLucene`.
 
    ```plain
    group.p.or=true
@@ -135,7 +135,7 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Onderzoek de vraag en de resultaten via [Foutopsporing QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) en [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   De query en resultaten verkennen via [QueryBuilder-foutopsporing](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) en [AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **Hoe te over veelvoudige wegen in de zelfde vraag te zoeken?**
 
@@ -159,4 +159,4 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Onderzoek de vraag en de resultaten via [Foutopsporing QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) en [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   De query en resultaten verkennen via [QueryBuilder-foutopsporing](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) en [AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).

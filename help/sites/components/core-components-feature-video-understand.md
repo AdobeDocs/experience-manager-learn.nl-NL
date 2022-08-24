@@ -6,14 +6,14 @@ topics: authoring
 audience: all
 activity: use
 doc-type: feature video
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 kt: 4676
 thumbnail: 18926.jpg
 topic: Development
 role: User
 level: Beginner
 exl-id: 097216b7-b345-4fcb-bab3-e660d74252a6
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 1%
@@ -24,8 +24,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="intro_core_components"
->title="Inleiding tot kerncomponenten in AEM als Cloud Service"
->abstract="Op dit tabblad kunt u inhoud weergeven die u helpt bij het bouwen van moderne sites die compatibel zijn met AEM als Cloud Service. De sleutel hiervoor is het gebruik van Core Components"
+>title="Inleiding tot kerncomponenten in AEM as a Cloud Service"
+>abstract="Op dit tabblad kunt u inhoud weergeven die u helpt bij het bouwen van moderne sites die compatibel zijn met AEM as a Cloud Service. De sleutel hiervoor is het gebruik van Core Components"
 >additional-url="https://video.tv.adobe.com/v/18926" text="Overzicht van kerncomponenten"
 
 AEM Core Components is een standaardset onderdelen die met Adobe Experience Manager worden gebruikt. De Core Components is gebouwd met de best practices en standaarden van Adobe en biedt een basislijnset functionaliteit voor elke implementatie van Sites.

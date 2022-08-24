@@ -1,24 +1,24 @@
 ---
 title: AEM Forms met JSON-schema en -gegevens
-seo-title: AEM Forms met JSON-schema en -gegevens
+seo-title: AEM Forms with JSON Schema and Data
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
-seo-description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
-feature: Adaptieve Forms
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 014506e5-a7c9-4220-a429-71c961af36ba
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms met JSON-schema en -gegevens
 
@@ -33,5 +33,3 @@ Als u deze zelfstudie wilt volgen, kunt u het beste het volgende installeren
 * MySQL 8 Workbench
 
 Het wordt ook aanbevolen enige ervaring op te doen met AEM en AEM Forms. U zou ook vertrouwd met het installeren MySQL OB en MySQL werkbank moeten zijn
-
-

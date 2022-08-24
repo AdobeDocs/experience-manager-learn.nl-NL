@@ -2,12 +2,12 @@
 title: AEM Forms met Marketo (Deel 2)
 description: Zelfstudie voor de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
 feature: Adaptive Forms, Form Data Model
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
-source-git-commit: 020852f16de0cdb1e17e19ad989dabf37b7f61f5
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Marketo-verificatieservice
 
-De REST API&#39;s van Marketo zijn geverifieerd met 2-podig OAuth 2.0. We moeten aangepaste verificatie maken voor verificatie op basis van Marketo. Deze aangepaste verificatie wordt doorgaans in een OSGI-bundel geschreven. De volgende code toont de aangepaste authenticator die is gebruikt als onderdeel van deze zelfstudie.
+Marketo REST API&#39;s worden geverifieerd met OAuth 2.0 met twee poten. We moeten aangepaste verificatie maken voor verificatie op basis van Marketo. Deze aangepaste verificatie wordt doorgaans in een OSGI-bundel geschreven. De volgende code toont de aangepaste authenticator die is gebruikt als onderdeel van deze zelfstudie.
 
 ## Aangepaste verificatieservice
 
@@ -67,7 +67,7 @@ public interface MarketoService {
 }
 ```
 
-The following code is of the service which returns the access_token that is to be used in making the REST API calls. The code in this service access the configuration parameters needed to make the GET call. Aangezien u kunt zien wij client_id, client_gehechtheid in GET URL overgaan om access_token te produceren. Dit access_token wordt vervolgens geretourneerd aan de aanroepende toepassing.
+De volgende code is van de dienst die access_token terugkeert die in het maken van REST API vraag moet worden gebruikt. De code in deze dienst heeft toegang tot de configuratieparameters nodig om de vraag van de GET te maken. Aangezien u kunt zien wij client_id, client_gehechtheid in GET URL overgaan om access_token te produceren. Dit access_token wordt vervolgens geretourneerd aan de aanroepende toepassing.
 
 ```java
 package com.marketoandforms.core.impl;
@@ -199,5 +199,5 @@ public class MarketoConfigurationService {
 ```
 
 1. De bundel op uw AEM server bouwen en implementeren.
-1. [Verwijs uw browser aan ](http://localhost:4502/system/console/configMgr) configMGrand onderzoek naar &quot;Configuratie van de Dienst van de Credentials van Marketo&quot;
-1. Specify the appropriate properties specific to your Marketo instance
+1. [Wijs uw browser aan configMgr aan](http://localhost:4502/system/console/configMgr) en zoek naar &quot;Marketo Credentials Service Configuration&quot;
+1. Geef de juiste eigenschappen op die specifiek zijn voor uw Marketo-instantie

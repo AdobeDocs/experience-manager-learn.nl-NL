@@ -1,24 +1,24 @@
 ---
 title: AEM Forms met JSON-schema en -gegevens[Deel2]
-seo-title: AEM Forms met JSON-schema en -gegevens[Deel2]
+seo-title: AEM Forms with JSON Schema and Data[Part2]
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
-seo-description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
-feature: Adaptieve Forms
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
-
 
 # Verzendgegevens opslaan in database
 
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 Om de voorgelegde gegevens in gegevensbestand op te slaan, zullen wij een servlet schrijven om de gebonden gegevens en de vormnaam en opslag te halen. De volledige code voor het verwerken van het verzenden van het formulier en het opslaan van de afBoundData in de database vindt u hieronder.
 
-We hebben een aangepaste verzending gemaakt voor de verzending van het formulier. In deze aangepaste submit&#39;s post.POST.jsp sturen we het verzoek door naar onze servlet.
+We hebben een aangepaste verzending gemaakt voor de verzending van het formulier. In deze aangepaste submit&#39;s post.POST.jsp sturen wij het verzoek naar onze servlet.
 
-Lees voor meer informatie over aangepaste verzendverzoeken dit [artikel](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Lees dit voor meer informatie over Aangepast verzenden [artikel](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmission&quot;,null,null);
 

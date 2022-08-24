@@ -2,17 +2,17 @@
 title: Foutberichten vastleggen in de service Formuliergegevensmodel als stap in de workflow
 description: Vanaf AEM Forms 6.5.1 kunnen nu foutberichten worden vastgelegd die worden gegenereerd wanneer de service Formuliergegevensmodel aanroepen wordt gebruikt als een stap in AEM workflow. Workflow.
 feature: Workflow
-version: 6.5.1,6.5.2
-topic: Ontwikkeling
+version: 6.5
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
-
 
 # Vastleggen van foutberichten in Stap van de service Formuliergegevensmodel aanroepen
 
@@ -45,5 +45,3 @@ Met deze wijzigingen zorgt de stap Service Formuliergegevensmodel aanroepen ervo
 
 }
 ```
-
-

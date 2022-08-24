@@ -1,17 +1,17 @@
 ---
 title: Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM
 description: Materialen voor zowel de functionele als de technische overeenkomst Activa Share Commons
-version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
+version: 6.4, 6.5
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: ab16d5e0-71d9-4518-a03b-4aa5d2ec95a7
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
-
 
 # Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM {#setup-asset-share-commons}
 

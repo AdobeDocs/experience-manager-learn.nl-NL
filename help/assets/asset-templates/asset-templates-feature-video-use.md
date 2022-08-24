@@ -1,17 +1,17 @@
 ---
 title: Asset Templates gebruiken met AEM Assets en InDesign Server
 description: Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van markeerbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel gemakkelijker bij de sjablonen voor middelen wanneer deze zijn geïntegreerd met de InDesign-server.
-version: 6.3, 6.4, 6.5
-topic: Inhoudsbeheer
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 45e0f3d5-db56-44e7-ad68-4d60991a6d77
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
-
 
 # Asset Templates gebruiken met AEM Assets en InDesign Server{#using-asset-templates-with-aem-assets-and-indesign-server}
 
@@ -19,7 +19,7 @@ Met AEM Assets Template kunnen marketers digitale middelen maken, beheren en lev
 
 >[!NOTE]
 >
->Voor stappen bij het vormen van InDesign Server te herzien gelieve [de Malplaatjes van Activa van de Opstelling met InDesign Server](asset-templates-technical-video-setup.md).
+>Voor stappen bij het configureren van InDesign Server raadpleegt u [Elemententemplates instellen met InDesign Server](asset-templates-technical-video-setup.md).
 
 ## Overzicht {#overview}
 

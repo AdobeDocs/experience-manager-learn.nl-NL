@@ -1,18 +1,18 @@
 ---
 title: Een aangepaste verzending schrijven in AEM Forms
 description: Snelle en eenvoudige manier om uw eigen aangepaste verzendactie te maken voor adaptief formulier
-feature: Adaptieve Forms
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '206'
 ht-degree: 1%
 
 ---
-
 
 # Een aangepaste verzending schrijven in AEM Forms {#writing-a-custom-submit-in-aem-forms}
 
@@ -24,10 +24,10 @@ In dit artikel worden de stappen doorlopen die nodig zijn om een aangepaste verz
 * Maak een knooppunt van het type &quot;sling:folder&quot; onder apps. Laten we dit knooppunt CustomSubmitHelpx noemen.
 * Sla het nieuwe knooppunt op.
 * Voeg de volgende twee eigenschappen toe aan het nieuwe knooppunt
-* PropertyName       | Waarde van eigendom
+* PropertyName | Waarde van eigendom
 * guideComponentType | fd/af/components/guidesubmittype
-* guideDataModel     | xfa,xsd,basic
-* jcr:beschrijving   | CustomSubmitHelpx
+* guideDataModel | xfa,xsd,basic
+* jcr:beschrijving | CustomSubmitHelpx
 * Sla de wijzigingen op
 * Maak een nieuw bestand met de naam post.POST.jsp onder het knooppunt CustomSubmitHelpx. Wanneer een adaptief formulier wordt verzonden, wordt dit JSP aangeroepen. U kunt de JSP-code naar wens in dit bestand schrijven. De volgende code stuurt het verzoek door naar de servlet.
 
@@ -64,4 +64,3 @@ In dit artikel worden de stappen doorlopen die nodig zijn om een aangepaste verz
 Nu ziet u &quot;CustomSubmitHelpx&quot; in de verzendacties van uw Adaptief formulier, zoals in deze afbeelding wordt getoond.
 
 ![Adaptief formulier met Aangepast verzenden](assets/capture-2.gif)
-

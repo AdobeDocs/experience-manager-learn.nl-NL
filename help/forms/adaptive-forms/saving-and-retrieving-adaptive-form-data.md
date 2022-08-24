@@ -1,14 +1,14 @@
 ---
 title: Aangepaste formuliergegevens opslaan en ophalen
 description: Aangepaste formuliergegevens opslaan en ophalen uit de database. Met deze functie kunnen invullers het formulier opslaan en het formulier op een latere datum invullen.
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 role: Developer
 type: Tutorial
-version: 6.3,6.4,6.5
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+version: 6.4,6.5
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar
 
 * JDBC-stuurprogramma, klasse:com.mysql.jdbc.Driver
 
-* JDBC-verbinding URL:jdbc:mysql://localhost:3306/aemformstutorial
+* URL JDBC-verbinding:jdbc:mysql://localhost:3306/aemformstutorial
 
 ![connectionpool](assets/storingdata.PNG)
 
@@ -208,7 +208,7 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 }
 ```
 
-## OSGI-service maken voor het ophalen van gegevens {#create-osgi-service}
+## OSGI-service maken om gegevens op te halen {#create-osgi-service}
 
 De volgende code is geschreven om de opgeslagen gegevens van het Adaptieve formulier op te halen. Een eenvoudige vraag wordt gebruikt om de Adaptieve gegevens van de Vorm te halen verbonden aan een bepaalde GUID. De opgehaalde gegevens worden vervolgens geretourneerd aan de aanroepende toepassing. Dezelfde gegevensbron gemaakt in de eerste stap waarnaar in deze code wordt verwezen.
 

@@ -1,18 +1,18 @@
 ---
 title: Asset Insights instellen met AEM Assets en Adobe Launch
 description: In deze videoreeks van 5 delen, lopen wij door de opstelling en de configuratie van de Inzichten van Activa voor Experience Manager die via Launch by Adobe wordt opgesteld.
-feature: 'Asset Insights '
-version: 6.3, 6.4, 6.5
+feature: Asset Insights
+version: 6.4, 6.5
 topic: Integrations
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 # Asset Insights instellen met AEM Assets en Adobe Experience Platform Launch
 
@@ -30,12 +30,12 @@ Overzicht van Asset Insights. Installeer Core Components, Sample Image Component
 
 >[!CAUTION]
 >
->Download de [nieuwste versie van Core Components](https://github.com/adobe/aem-core-wcm-components) voor uw implementatie.
+>Zorg ervoor dat u de [nieuwste versie van Core Components](https://github.com/adobe/aem-core-wcm-components) voor uw implementatie.
 
 De video gebruikt Core Components v2.2.2 die niet langer de meest recente versie is. Gebruik de nieuwste versie voordat u verdergaat met de volgende sectie.
 
-* Download [Voorbeeld van de inhoud van een afbeelding met elementinzichten](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
-* Download [de nieuwste AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components/releases)
+* Downloaden [Inhoud van voorbeeldafbeelding van asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
+* Downloaden [de nieuwste AEM WCM Core-componenten](https://github.com/adobe/aem-core-wcm-components/releases)
 
 ## Deel 2: Asset Insights Tracking inschakelen voor Sample Image Component {#sample-image-component-asset-insights}
 
@@ -47,16 +47,16 @@ Verbeteringen aan de componenten van de Kern en het gebruiken van volmachtscompo
 >
 >De component Image Core bevat de mogelijkheid om UUID-tracking uit te schakelen door het bijhouden van de UUID van het element uit te schakelen (unieke id-waarde voor een knooppunt dat binnen JCR is gemaakt)
 
-De component van het Beeld van de kern gebruikt ***data-asset-id*** attribuut binnen de ouder &lt;div> van een beeldmarkering om deze eigenschap toe te laten/onbruikbaar te maken. De Component van de Volmacht treedt de kerncomponent met de volgende veranderingen met voeten.
+De component Core Image gebruikt ***data-asset-id*** attribuut binnen het bovenliggende element &lt;div> van een afbeeldingstag om deze functie in of uit te schakelen. De Component van de Volmacht treedt de kerncomponent met de volgende veranderingen met voeten.
 
-* Hiermee wordt het ***data-asset-id*** verwijderd uit het bovenliggende div-element van een &lt;img>-element in image.html
-* Hiermee voegt u ***data-aem-asset-id*** rechtstreeks toe aan het &lt;img>-element in image.html
-* Hiermee wordt ***data-trackable=&#39;true&#39;***-waarde toegevoegd aan het &lt;img>-element in image.html
-* ***data-aem-asset-*** idand  ***data-trackable=&#39;true&#39;*** worden op hetzelfde knooppuntniveau gehouden
+* Hiermee verwijdert u de ***data-asset-id*** van de bovenliggende div van een  &lt;img> element in image.html
+* Toevoegingen ***data-aem-asset-id*** rechtstreeks naar het  &lt;img>  element in image.html
+* Toevoegingen ***data-trackable=&#39;true&#39;*** waarde voor het  &lt;img>  element in image.html
+* ***data-aem-asset-id*** en ***data-trackable=&#39;true&#39;*** op hetzelfde knooppuntniveau worden gehouden
 
 >[!NOTE]
 >
->*data-aem-asset-id=&#39;image.UUID&#39;* en  *data-trackable=&#39;true&#39;* zijn de belangrijkste kenmerken die aanwezig moeten zijn voor Asset Impressions. Voor Asset Click Insights moet de bovenliggende &lt;a>-tag naast de bovenstaande gegevenskenmerken in de &lt;img>-tag een geldige href-waarde hebben.
+>*data-aem-asset-id=&#39;image.UUID&#39;* en *data-trackable=&#39;true&#39;* Dit zijn de belangrijkste kenmerken die aanwezig moeten zijn voor Asset Impressions. Voor Asset Click Insights moet de bovenliggende tag, naast de bovenstaande gegevenskenmerken in de  &lt;img> tag, een geldige href-waarde hebben.
 
 ## Deel 3: Adobe Analytics — Report Suite maken, gegevensverzameling in real-time en AEM Assets Reporting inschakelen {#adobe-analytics-asset-insights}
 
@@ -72,7 +72,7 @@ Voor de configuratie van AEM Assets Insights hebt u de volgende referenties nodi
 * Datacenter
 * Naam van analysebedrijf
 * Gebruikersnaam voor Analytics
-* Gedeeld geheim (kan worden verkregen van *Adobe Analytics > Admin > Bedrijfsinstellingen > Webservice*).
+* Gedeeld geheim (kan worden verkregen van *Adobe Analytics > Admin > Company Settings > Web Service*).
 * Rapportsuite (zorg dat u de juiste rapportsuite selecteert die wordt gebruikt voor Asset Reporting)
 
 ## Deel 4: Adobe Experience Platform Launch gebruiken om Adobe Analytics-extensie toe te voegen {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
@@ -98,13 +98,13 @@ Zorg ervoor dat u al uw wijzigingen van de auteur naar de publicatie-instantie d
 
 Paginacontracker implementeert twee callbacks (geregistreerd in asset-embed-code)
 
-* **\&lt;code>assetAnalytics.core.assetLoaded\&lt;/code>** &lt;code>&lt;code>: Wordt aangeroepen wanneer de gebeurtenis &#39;load&#39; wordt verzonden voor het element asset-DOM.&lt;/code>&lt;/code>
-* **\&lt;code>assetAnalytics.core.assetClicked\&lt;/code>** &lt;code>&lt;code>: Wordt aangeroepen wanneer de gebeurtenis &#39;click&#39; wordt verzonden voor het element asset-DOM-is dit alleen relevant wanneer het element asset-DOM-element een ankertag heeft als bovenliggend element met een geldig extern kenmerk &#39;href&#39;&lt;/code>&lt;/code>
+* **\&lt;code>assetAnalytics.core.assetLoaded\&lt;code>** : Wordt aangeroepen wanneer de gebeurtenis &#39;load&#39; wordt verzonden voor het element asset-DOM.
+* **\&lt;code>assetAnalytics.core.assetClicked\&lt;code>** : Wordt aangeroepen wanneer de gebeurtenis &#39;click&#39; wordt verzonden voor het element asset-DOM-is dit alleen relevant wanneer het element asset-DOM-element een ankertag heeft als bovenliggend element met een geldig extern kenmerk &#39;href&#39;
 
 Tot slot implementeert Pagetracker een initialisatiefunctie als.
 
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: aangeroepen om de component Pagetracker te initialiseren.&lt;/code>&lt;/code> Dit DIENT te worden aangeroepen voordat een van de gebeurtenissen asset-inzichten-events (Impressions and/or Clicks) op de webpagina wordt gegenereerd.
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: Accepteert optioneel een object AppMeasurement — indien opgegeven, wordt niet geprobeerd een nieuwe instantie van een object AppMeasurement te maken.&lt;/code>&lt;/code>
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : aangeroepen om de component Pagetracker te initialiseren. Dit DIENT te worden aangeroepen voordat een van de gebeurtenissen asset-inzichten-events (Impressions and/or Clicks) op de webpagina wordt gegenereerd.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : Accepteert optioneel een object AppMeasurement — indien opgegeven, wordt niet geprobeerd een nieuwe instantie van een object AppMeasurement te maken.
 
 ### Regel 2: Afbeeldingsbeheer — Actie 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 
@@ -163,7 +163,7 @@ document.querySelectorAll('[data-aem-asset-id]').forEach(function(element) {
 * Analysevariabele die de geladen elementenlijst draagt: **contextData[&#39;c.a.assets.idList&#39;]**
 * assetAnalytics.core.assetClicked() : wordt aangeroepen wanneer het element element element element element element element element element element een ankertag met geldige href-waarde heeft. Wanneer op een element wordt geklikt, wordt een cookie gemaakt met de waarde van het aangeklikte element-id.**(Naam cookie: a.assets.click)**
 * Analysevariabele die de geladen elementenlijst draagt: **contextData[&#39;c.a.assets.clickdid&#39;]**
-* Oorsprong: **contextData[&#39;c.a.assets.source&#39;]**
+* Oorsprong: **contextData[&quot;c.a.assets.source&quot;]**
 
 ### Foutopsporingsinstructies voor console {#console-debug-statements}
 
@@ -186,7 +186,7 @@ Twee Google Chrome-browserextensies worden in de video gebruikt als manieren om 
 * [Chrome-extensie wijzigen starten](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
 * [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
 
-Het is ook mogelijk om van DTM op zuiveringswijze met de volgende Uitbreiding van Chrome over te schakelen: [Starten en DTM-switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Hierdoor is het eenvoudiger om te zien of er fouten zijn met betrekking tot DTM-implementatie. Daarnaast kunt u handmatig overschakelen van DTM naar de foutopsporingsmodus via elke browser *ontwikkelaarsgereedschappen -> JS Console* door het volgende fragment toe te voegen:
+Het is ook mogelijk om van DTM op zuiveringswijze met de volgende Uitbreiding van Chrome over te schakelen: [Starten en DTM-switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Hierdoor is het eenvoudiger om te zien of er fouten zijn met betrekking tot DTM-implementatie. Daarnaast kunt u handmatig van DTM overschakelen op de foutopsporingsmodus via elke browser *tools voor ontwikkelaars -> JS Console* door het volgende fragment toe te voegen:
 
 ## Deel 5: Testen van gegevens over Analytische tracking en Synchronisatie{#analytics-tracking-asset-insights}
 

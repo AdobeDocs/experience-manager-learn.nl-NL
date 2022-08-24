@@ -1,26 +1,26 @@
 ---
 title: Annotaties aanpassen in AEM Assets
-description: AEM Assets-indeling en -stijl bij uitvoer naar PDF kunnen worden geconfigureerd door AEM ontwikkelaars.
-feature: Samenwerking
-version: 6.3, 6.4, 6.5
-topic: Samenwerking
+description: De AEM Assets-indeling en -stijl wanneer uitvoer naar PDF wordt uitgevoerd, kunnen worden geconfigureerd door AEM ontwikkelaars.
+feature: Collaboration
+version: 6.4, 6.5
+topic: Collaboration
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 972737dd-8ca6-47b4-a4ec-b73355c09cec
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '60'
 ht-degree: 0%
 
 ---
-
 
 # Annotaties aanpassen in AEM Assets{#using-annotations-in-aem-assets}
 
 AEM ondersteunt het aanpassen van de uitvoer van de annotatie naar PDF.
 
-## PDF-annotatie instellen:definitie van OsgiConfig
+## PDF-annotatie:definitie van OsgiConfig
 
-Als u PDF-annotaties wilt aanpassen, maakt u een **sling:OsgiConfig**-knooppunt in het AEM project onder
+Als u PDF-annotaties wilt aanpassen, maakt u een **sling:OsgiConfig** knoop in uw AEM project onder
 
 `/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml` en pas zo nodig de waarden aan:
 

@@ -1,33 +1,33 @@
 ---
 title: Begrijp het Verkopen ModelExporter in AEM
 description: Apache Sling Models 1.3.0 introduceert Sling Model Exporter, een elegante manier om Sling Model voorwerpen in douaneabstracties uit te voeren of in series te vervaardigen. In dit artikel wordt naast het traditionele gebruik van Sling Models de HTML-scripts gevuld met behulp van het Sling Model Exporter-framework om een Sling Model in JSON te serialiseren.
-version: 6.3, 6.4, 6.5
-sub-product: stichting, inhouddiensten
-feature: API's
+version: 6.4, 6.5
+sub-product: foundation, content-services
+feature: APIs
 topics: development, content-delivery, headless
 activity: understand
 audience: developer, architect
 doc-type: article
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 03cdf5d1-3253-44c9-ae1f-ec5d3c562427
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
+# Begrijpen [!DNL Sling Model Exporter]
 
-# [!DNL Sling Model Exporter] begrijpen
-
-Apache [!DNL Sling Models] 1.3.0 introduceert [!DNL Sling Model Exporter], een elegante manier om [!DNL Sling Model] voorwerpen in douaneabstracties uit te voeren of in series te vervaardigen. In dit artikel wordt naast het traditionele gebruik van [!DNL Sling Models] voor het vullen van HTML-scripts ook het [!DNL Sling Model Exporter]-framework gebruikt om een [!DNL Sling Model] in JSON te serialiseren.
+Apache [!DNL Sling Models] 1.3.0 introduceert [!DNL Sling Model Exporter], een elegante manier om te exporteren of serialiseren [!DNL Sling Model] objecten in aangepaste abstracties. In dit artikel wordt naast het traditionele gebruik ook het gebruik van [!DNL Sling Models] om HTML-scripts te vullen met de functie [!DNL Sling Model Exporter] kader om een [!DNL Sling Model] naar JSON.
 
 ## Traditioneel verkoopmodel HTTP-aanvraagstroom
 
-Het traditionele gebruik-geval voor [!DNL Sling Models] is een bedrijfsabstractie voor een middel of een verzoek te verstrekken, die manuscripten HTML (of, eerder JSPs) een interface voor de toegang tot van bedrijfsfuncties verstrekt.
+Het traditionele gebruiksgeval voor [!DNL Sling Models] is een bedrijfsabstractie voor een middel of een verzoek te verstrekken, dat manuscripten HTML (of, eerder JSPs) een interface voor de toegang tot van bedrijfsfuncties verstrekt.
 
-Er worden gemeenschappelijke patronen ontwikkeld [!DNL Sling Models] die AEM Componenten of Pagina&#39;s vertegenwoordigen, en het gebruik van de [!DNL Sling Model] voorwerpen om de manuscripten van HTML van gegevens te voorzien, met een eindresultaat van HTML die in browser wordt getoond.
+Er ontwikkelen zich gemeenschappelijke patronen [!DNL Sling Models] die AEM componenten of pagina&#39;s vertegenwoordigen, en het gebruiken van [!DNL Sling Model] objecten die de HTML-scripts voorzien van gegevens, met als eindresultaat HTML dat in de browser wordt weergegeven.
 
 ### Verzendmodel HTTP-aanvraagstroom
 
@@ -37,43 +37,43 @@ Er worden gemeenschappelijke patronen ontwikkeld [!DNL Sling Models] die AEM Com
 
    Voorbeeld: `HTTP GET /content/my-resource.html`
 
-1. Gebaseerd op `sling:resourceType` van het verzoekmiddel, wordt het aangewezen Manuscript opgelost.
+1. Op basis van de `sling:resourceType`, wordt het juiste script opgelost.
 
-1. Het manuscript past het Verzoek of Middel aan het gewenste [!DNL Sling Model] aan.
+1. Het script past de aanvraag of bron aan de gewenste waarden aan [!DNL Sling Model].
 
-1. Het script gebruikt het object [!DNL Sling Model] om de HTML-uitvoering te genereren.
+1. In het script worden de [!DNL Sling Model] -object om de HTML-uitvoering te genereren.
 
-1. De HTML die door het script wordt gegenereerd, wordt geretourneerd in de HTTP-respons.
+1. De HTML die door het Manuscript wordt geproduceerd is teruggekeerd in de Reactie van HTTP.
 
-Dit traditionele patroon werkt goed in de context van het genereren van HTML, aangezien [!DNL Sling Model] gemakkelijk kan worden gebruikt via HTML. Het maken van meer gestructureerde gegevens, zoals JSON of XML, is een veel lastiger zaak, omdat HTML zich niet automatisch leent aan de definitie van deze indelingen.
+Dit traditionele patroon werkt goed in de context van het genereren van HTML als [!DNL Sling Model] kan gemakkelijk worden gebruikt via HTL. Het maken van meer gestructureerde gegevens, zoals JSON of XML, is een veel lastiger zaak, omdat HTML zich niet automatisch leent aan de definitie van deze indelingen.
 
 ## [!DNL Sling Model Exporter] HTTP-aanvraagstroom
 
-Apache [!DNL Sling Model Exporter] wordt geleverd met een bij Sling geleverde Jackson Exporter die een &quot;gewoon&quot; [!DNL Sling Model]-object automatisch serialiseert in JSON. De Jackson Exporter, die behoorlijk configureerbaar is, inspecteert bij zijn kern het [!DNL Sling Model] voorwerp, en produceert JSON gebruikend om het even welke &quot;getter&quot;methodes als sleutels JSON, en de getter terugkeerwaarden als waarden JSON.
+Apache [!DNL Sling Model Exporter] wordt geleverd met een bij Sling geleverde Jackson Exporter die automatisch een &quot;gewone&quot; [!DNL Sling Model] object naar JSON. De Jackson Exporter, hoewel behoorlijk configureerbaar, bij zijn kern inspecteert [!DNL Sling Model] en genereert JSON met behulp van &#39;getter&#39;-methoden als JSON-toetsen en de retourwaarden van getter als de JSON-waarden.
 
-Door de directe serialisatie van [!DNL Sling Models] kunnen ze zowel normale webverzoeken uitvoeren met hun HTML-reacties die zijn gemaakt met de traditionele [!DNL Sling Model]-aanvraagstroom (zie boven), als kunnen JSON-uitvoeringen die kunnen worden gebruikt door webservices of JavaScript-toepassingen, ook beschikbaar worden gemaakt.
+De directe serialisatie van [!DNL Sling Models] staat hen toe om beide normale verzoeken van het Web met hun gemaakte HTML reacties te onderhouden gebruikend de traditionele [!DNL Sling Model] verzoek om stroom (zie hierboven), maar stelt ook JSON-uitvoeringen bloot die door Webdiensten of toepassingen JavaScript kunnen worden verbruikt.
 
 ![HTTP-aanvraagstroom Sling Model Exporter](./assets/understand-sling-model-exporter/sling-model-exporter-request-flow.png)
 
-*In deze flow wordt de stroom beschreven met de meegeleverde Jackson Exporter voor het produceren van JSON-uitvoer. Het gebruik van aangepaste exporters volgt dezelfde stroom, maar met hun uitvoerindeling.*
+*Deze stroom beschrijft de stroom gebruikend de verstrekte Jackson Exporter om output te produceren JSON. Het gebruik van aangepaste exporters verloopt volgens dezelfde stroom, maar met hun uitvoerindeling.*
 
-1. HTTP-GET-aanvraag wordt ingediend voor een bron in AEM met de kiezer en de extensie die bij de Exporter van [!DNL Sling Model] zijn geregistreerd.
+1. HTTP-GET-aanvraag is ingediend voor een bron in AEM met de kiezer en de extensie die zijn geregistreerd bij de [!DNL Sling Model]Exporter.
 
    Voorbeeld: `HTTP GET /content/my-resource.model.json`
 
-1. Bij Sling worden de `sling:resourceType`, de kiezer en de extensie van de aangevraagde bron omgezet in een dynamisch gegenereerde Sling Exporter Servlet, die samen met Exporter aan [!DNL Sling Model] wordt toegewezen.
-1. De opgeloste Servlet van de Exporter van de Verspreiding haalt [!DNL Sling Model Exporter] tegen het [!DNL Sling Model] voorwerp aan dat van het verzoek of de middel wordt aangepast (zoals bepaald door de Verschuivende Modellen aanpassingstabellen).
-1. De exporteur serialiseert [!DNL Sling Model] die op de Opties van de Exporter en Exporter-specifieke het Schuiven Model annotaties wordt gebaseerd en keert het resultaat aan Servlet van de Exporter Sling terug.
-1. De Sling Exporter Servlet keert de JSON vertoning van [!DNL Sling Model] in de Reactie van HTTP terug.
+1. Het verkopen lost de gevraagde middelen op `sling:resourceType`, kiezer en uitbreiding naar een dynamisch gegenereerde Sling Exporter Servlet, die is toegewezen aan de [!DNL Sling Model] met Exporter.
+1. De opgeloste Servlet van de Exporter van de Verkoop haalt het [!DNL Sling Model Exporter] tegen de [!DNL Sling Model] object dat is aangepast aan het verzoek of de bron (zoals bepaald in de aanpasbare tabellen voor Sling Models).
+1. De exportfunctie serialiseert de [!DNL Sling Model] op basis van de opmerkingen Exporter Options en Exporter-specific Sling Model en retourneert het resultaat naar Sling Exporter Servlet.
+1. De Sling Exporter Servlet retourneert de JSON-uitvoering van de [!DNL Sling Model] in de HTTP-respons.
 
 >[!NOTE]
 >
->Terwijl het Apache Sling-project de Jackson Exporter verstrekt die [!DNL Sling Models] aan JSON serializes, steunt het kader van de Exporter ook douaneExporters. Een project kan bijvoorbeeld een aangepaste Exporter implementeren die een [!DNL Sling Model] serialiseert in XML.
+>Terwijl het Apache Sling-project de Jackson Exporter biedt die serialiseert [!DNL Sling Models] aan JSON, steunt het kader van de Exporter ook douaneExporters. Een project kan bijvoorbeeld een aangepaste Exporter implementeren die een [!DNL Sling Model] in XML.
 
 >[!NOTE]
 >
->Niet alleen voert [!DNL Sling Model Exporter] *serialize* [!DNL Sling Models] uit, het kan hen ook als voorwerpen van Java uitvoeren. Het exporteren naar andere Java-objecten speelt geen rol in de HTTP-aanvraagstroom en wordt dus niet weergegeven in het bovenstaande diagram.
+>Niet alleen [!DNL Sling Model Exporter] *serialiseren* [!DNL Sling Models], kunnen deze ook als Java-objecten worden geëxporteerd. Het exporteren naar andere Java-objecten speelt geen rol in de HTTP-aanvraagstroom en wordt dus niet weergegeven in het bovenstaande diagram.
 
 ## Ondersteunende materialen
 
-* [ [!DNL Sling Model Exporter] ApacheFramework-documentatie](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
+* [Apache [!DNL Sling Model Exporter] Framework-documentatie](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)

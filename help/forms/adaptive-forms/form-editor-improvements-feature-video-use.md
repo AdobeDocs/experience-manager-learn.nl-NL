@@ -1,18 +1,18 @@
 ---
 title: Verbeteringen in de formuliereditor in AEM Forms
 description: AEM 6.3 introduceert verschillende nieuwe functies en verbeteringen in deze versie om de ontwerpervaring van adaptieve formulieren en documenten te vereenvoudigen. Dankzij deze verbeteringen kunt u minder tijd op de markt brengen en zakelijke gebruikers in staat stellen met formulieren en documenten te werken
-feature: Adaptieve Forms
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a2d21f2e-3dbb-454f-8a02-101dc3af9b1e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
-
 
 # Verbeteringen in de formuliereditor in AEM Forms {#form-editor-improvements-in-aem-forms}
 

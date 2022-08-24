@@ -1,18 +1,18 @@
 ---
 title: Campagneprofiel maken met formuliergegevensmodel
 description: Stappen die nodig zijn voor het maken van een Adobe Campaign Standard-profiel met behulp van het AEM Forms-formuliergegevensmodel
-feature: Adaptieve Forms
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 59d5ba6d-91c1-48c7-8c87-8e0caf4f2d7e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '426'
 ht-degree: 1%
 
 ---
-
 
 # Campagneprofiel maken met formuliergegevensmodel {#create-campaign-profile-using-form-data-model}
 
@@ -112,8 +112,7 @@ Voorbeeldwagerbestand wordt aan u gegeven als onderdeel van het element dat betr
 Volg de volgende stappen om de oplossing te testen:
 * [Controleer of u de hier beschreven stappen hebt uitgevoerd](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Download en decomprimeer dit bestand om het wagerbestand op te halen](assets/create-acs-profile-swagger-file.zip)
-* Gegevensbron maken met behulp van het wagerbestand
-Formuliergegevensmodel maken en dit baseren op de gegevensbron die in de vorige stap is gemaakt
+* Gegevensbron maken met behulp van het waggbestand Formuliergegevensmodel maken en baseren op de gegevensbron die in de vorige stap is gemaakt
 * Maak een adaptief formulier op basis van het formuliergegevensmodel dat u eerder hebt gemaakt.
 * Sleep de volgende elementen van het tabblad Gegevensbronnen naar het adaptieve formulier.
 

@@ -1,7 +1,7 @@
 ---
 title: Gesloten gebruikersgroepen in AEM Assets
 description: Gesloten gebruikersgroepen (CUG's) is een functie die wordt gebruikt om de toegang tot inhoud te beperken tot een bepaalde groep gebruikers op een gepubliceerde site. In deze video ziet u hoe groepen van gebruikers met gesloten deuren kunnen worden gebruikt met Adobe Experience Manager Assets om de toegang tot een specifieke map met middelen te beperken.
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -9,7 +9,7 @@ level: Intermediate
 kt: 649
 thumbnail: 22155.jpg
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -36,9 +36,9 @@ Zowel worden de Gesloten Groepen van de Gebruiker (KUG) als de Lijsten van het T
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Beoogd gebruik | Vorm en pas toestemmingen voor inhoud op de **huidige** AEM instantie toe. | Configureer CUG-beleid voor inhoud op AEM **auteur**-instantie. CUG-beleid toepassen op inhoud op AEM **publish**-instantie(s). |
-| Machtigingsniveaus | Bepaalt verleende/ontkende toestemmingen voor gebruikers/groepen voor alle niveaus: Lees, wijzig, creeer, schrap, leest ACL, geef ACL uit, herhaal. | Subsidies lezen toegang tot een set gebruikers/groepen. Weigert leestoegang tot *alle andere* gebruikers/groepen. |
-| Publicatie | ACLs is *not* gepubliceerd met inhoud. | CUG-beleid *zijn* gepubliceerd met inhoud. |
+| Beoogd gebruik | Machtigingen configureren en toepassen voor inhoud op de **huidig** AEM. | CUG-beleid configureren voor inhoud op AEM **auteur** -instantie. CUG-beleid toepassen op inhoud op AEM **publish** instantie(s). |
+| Machtigingsniveaus | Bepaalt verleende/ontkende toestemmingen voor gebruikers/groepen voor alle niveaus: Lees, wijzig, creeer, schrap, leest ACL, geef ACL uit, herhaal. | Subsidies lezen toegang tot een set gebruikers/groepen. Leestoegang wordt geweigerd *alle andere* gebruikers/groepen. |
+| Publicatie | ACLs is *niet* gepubliceerd met inhoud. | CUG-beleid *zijn* gepubliceerd met inhoud. |
 
 ## Ondersteunende koppelingen {#supporting-links}
 

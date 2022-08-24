@@ -1,18 +1,18 @@
 ---
 title: LDAP gebruiken met AEM Forms Workflow
 description: AEM Forms-workflowtaak toewijzen aan de manager van de verzender
-feature: Adaptieve Forms, workflow
+feature: Adaptive Forms, Workflow
 topic: Integrations
 role: Developer
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
-
 
 # LDAP gebruiken met AEM Forms Workflow
 
@@ -20,7 +20,7 @@ AEM Forms-workflowtaak toewijzen aan de manager van de verzender.
 
 Als u Adaptief formulier gebruikt in AEM workflow, wilt u dynamisch een taak toewijzen aan de manager van de verzender van het formulier. Om dit gebruiksgeval te verwezenlijken, zullen wij AEM met Ldap moeten vormen.
 
-De stappen die nodig zijn om AEM te configureren met LDAP worden hier beschreven in [detail.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+De stappen die nodig zijn voor het configureren van AEM met LDAP worden uitgelegd in [detail hier.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 Voor dit artikel, maak ik configuratiedossiers vast die in het vormen AEM met Adobe Ldap worden gebruikt. Deze bestanden worden opgenomen in het pakket dat u kunt importeren met pakketbeheer.
 
@@ -60,18 +60,18 @@ We krijgen de greep van de persoon die de workflow heeft gestart. Wij krijgen da
 
 Afhankelijk van hoe het managerbezit in uw LDAP wordt opgeslagen, kunt u wat koordmanipulatie moeten doen om manageridentiteitskaart te krijgen.
 
-Lees dit artikel om uw eigen [ ParticipantChooser uit te voeren.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Lees dit artikel om uw eigen artikel te implementeren [  Deelnemerkiezer.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 Om dit op uw systeem te testen (Voor de Medewerkers van Adobe kunt u dit steekproef uit de doos gebruiken)
 
-* [Download en implementeer de setvalue-bundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel voor het instellen van de eigenschap van de manager.
+* [De setvalue-bundel downloaden en implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel voor het instellen van de eigenschap van de manager.
 * [Download en installeer de DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importeer de aan dit artikel gekoppelde middelen in AEM met behulp van pakketbeheer](assets/aem-forms-ldap.zip). Als onderdeel van dit pakket worden de LDAP-configuratiebestanden, de workflow en een adaptief formulier opgenomen.
+* [De aan dit artikel gekoppelde elementen met pakketbeheer importeren in AEM](assets/aem-forms-ldap.zip).Opgenomen als onderdeel van dit pakket zijn LDAP-configuratiebestanden, een workflow en een adaptief formulier.
 * Configureer AEM met uw LDAP met de juiste LDAP-referenties.
 * Meld u aan bij AEM met uw LDAP-referenties.
-* Open [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Open de [timeoffrequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Vul het formulier in en verzend het.
-* De manager van de verzender zou het formulier ter controle moeten krijgen.
+* De manager van de verzender moet het formulier ter controle krijgen.
 
 >[!NOTE]
 >

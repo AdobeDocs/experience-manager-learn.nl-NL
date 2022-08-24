@@ -1,18 +1,18 @@
 ---
 title: Campagneprofiel maken bij het verzenden van adaptieve formulieren
 description: In dit artikel worden de stappen beschreven die nodig zijn om een profiel te maken in Adobe Campaign Standard op basis van een Adaptief formulier-verzending. Bij dit proces wordt gebruikgemaakt van een aangepast verzendmechanisme voor de verzending van het adaptieve formulier.
-feature: Adaptief Forms, formuliergegevensmodel
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # Campagneprofiel maken bij het verzenden van adaptieve formulieren {#creating-campaign-profile-on-adaptive-form-submission}
 
@@ -264,7 +264,7 @@ Zodra wij de dienst en de douane hebben bepaald voorlegt actie, zijn wij bereid 
 
 
 * [Controleer of u de hier beschreven stappen hebt uitgevoerd](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importeer Adaptief formulier en Aangepast verzendhandler met pakketbeheer](assets/create-acs-profile-on-af-submission.zip). Dit pakket bevat adaptief formulier dat is geconfigureerd voor verzending naar aangepaste verzendactie.
-* Voorvertoning van het [formulier](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [Aangepast formulier en aangepaste verzendhandler importeren met pakketbeheer](assets/create-acs-profile-on-af-submission.zip).This package contains Adaptive Form configured to submit to custom submit action.
+* Voorvertoning van de [formulier](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Alle velden invullen en verzenden
 * Een nieuw profiel zal in uw instantie ACS worden gecreeerd

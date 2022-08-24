@@ -6,17 +6,17 @@ topics: development
 audience: developer
 doc-type: technical video
 activity: develop
-version: 6.3, 6.4, 6.5
-topic: Ontwikkeling
+version: 6.4, 6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 1%
+source-wordcount: '291'
+ht-degree: 0%
 
 ---
-
 
 # Ontwikkelen voor paginaverschil {#developing-for-page-difference}
 
@@ -38,7 +38,7 @@ Dit heeft het voordeel om deze de stijloverschrijvingen van douanestijlen toe te
 
 ### Maak de ontwerpende clientlib klaar {#prepare-the-authoring-clientlib}
 
-Zorg voor het bestaan van een `authoring` client-lib voor uw project op `/apps/my-project/clientlib/authoring.`
+Zorgen voor het bestaan van een `authoring` clientlib voor uw project op `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -49,7 +49,7 @@ Zorg voor het bestaan van een `authoring` client-lib voor uw project op `/apps/m
 
 ### Aangepaste CSS opgeven {#provide-the-custom-css}
 
-Voeg toe aan `authoring` clientlib a `css.txt` dat aan minder dossier richt dat de met voeten tredende stijlen zal verstrekken. [De ](https://lesscss.org/) voorkeur gaat uit naar Minder vanwege de vele handige functies, waaronder klasseomloop, die in dit voorbeeld wordt gebruikt.
+Toevoegen aan de projecten `authoring` clientlib `css.txt` dat wijst naar het minder bestand dat de overschrijvende stijlen levert. [Minder](https://lesscss.org/) heeft de voorkeur vanwege de vele handige functies, waaronder klassenomloop, die in dit voorbeeld wordt gebruikt.
 
 ```shell
 base=./css
@@ -57,7 +57,7 @@ base=./css
 htmldiff.less
 ```
 
-Maak het `less`-bestand dat de stijloverschrijvingen bij `/apps/my-project/clientlibs/authoring/css/htmldiff.less` bevat en geef desgewenst de overtrekstijlen op.
+Maak de `less` bestand met de stijloverschrijvingen op `/apps/my-project/clientlibs/authoring/css/htmldiff.less`en geef desgewenst de overtrekstijlen op.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -105,9 +105,9 @@ body {
 
 ### De CSS van de ontwerpclient opnemen via de paginacomponent {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Neem de categorie client-clients voor het schrijven op in de basispagina van het project `/apps/my-project/components/structure/page/customheaderlibs.html` direct vóór de tag `</head>` om ervoor te zorgen dat de stijlen worden geladen.
+Neem de categorie client-pc&#39;s voor het schrijven op in de basispagina van het project `/apps/my-project/components/structure/page/customheaderlibs.html` rechtstreeks voor de `</head>` om ervoor te zorgen dat de stijlen worden geladen.
 
-Deze stijlen moeten worden beperkt tot de WCM-modi [!UICONTROL Edit] en [!UICONTROL preview].
+Deze stijlen moeten beperkt blijven tot [!UICONTROL Edit] en [!UICONTROL preview] WCM-modi.
 
 ```xml
 <head>
@@ -117,7 +117,7 @@ Deze stijlen moeten worden beperkt tot de WCM-modi [!UICONTROL Edit] en [!UICONT
 </head>
 ```
 
-Het eindresultaat van een diff&#39;d-pagina met de bovenstaande stijlen zou er als volgt uitzien (HTML toegevoegd en Component gewijzigd).
+Het eindresultaat van een diff&#39;d-pagina waarop de bovenstaande stijlen zijn toegepast, ziet er als volgt uit (HTML toegevoegd en Component gewijzigd).
 
 ![Paginaverschil](assets/page-diff.png)
 

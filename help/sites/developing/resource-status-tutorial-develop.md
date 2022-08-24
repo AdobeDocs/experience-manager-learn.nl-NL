@@ -5,8 +5,8 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: develop
-version: 6.3, 6.4, 6.5
-source-git-commit: 03db12de4d95ced8fabf36b8dc328581ec7a2749
+version: 6.4, 6.5
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -41,21 +41,21 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
 
    ![bronstatusarchitectuur](assets/sample-editor-resource-status-application-architecture.png)
 
-3. De statusbron die als onderdeel van de redacteurs van de Pagina, het Fragment van de Ervaring en van het Malplaatje wordt verstrekt wordt gegeven een type via het bezit &quot;[!DNL statusType]&quot;van middelen.
+3. De statusbron die als onderdeel van de editors Pagina, Ervingsfragment en Sjabloon wordt opgegeven, krijgt een type via de bronnen &quot;[!DNL statusType]&quot; eigenschap.
 
    * Pagina-editor: `editor`
    * Experience Fragment Editor: `editor`
    * Sjablooneditor: `template-editor`
 
-4. De `statusType` van het statusmiddel wordt aangepast aan geregistreerd `CompositeStatusType` OSGi gevormd `name` bezit.
+4. De statusbron `statusType` komt overeen met geregistreerd `CompositeStatusType` OSGi geconfigureerd `name` eigenschap.
 
-   Voor alle overeenkomsten, worden de `CompositeStatusType's` types verzameld, en gebruikt om `ResourceStatusProvider` implementaties te verzamelen die dit type, via `ResourceStatusProvider.getType()` hebben.
+   Voor alle overeenkomsten `CompositeStatusType's` de typen worden verzameld en gebruikt om de `ResourceStatusProvider` implementaties van dit type, via `ResourceStatusProvider.getType()`.
 
-5. De overeenkomst `ResourceStatusProvider` wordt overgegaan `resource` in de redacteur, en bepaalt als `resource` status heeft om worden getoond. Als de status nodig is, is deze implementatie verantwoordelijk voor de bouw 0 of vele `ResourceStatuses` om terug te keren, elk die een status aan vertoning vertegenwoordigen.
+5. De overeenkomst `ResourceStatusProvider` wordt doorgegeven aan `resource` in de redacteur, en bepaalt als `resource` heeft de status die moet worden weergegeven. Als de status vereist is, is deze implementatie verantwoordelijk voor het bouwen van 0 of veel `ResourceStatuses` om terug te keren, elk die een status aan vertoning vertegenwoordigen.
 
-   Doorgaans retourneert een `ResourceStatusProvider` 0 of 1 `ResourceStatus` per `resource`.
+   Doorgaans wordt een `ResourceStatusProvider` retourneert 0 of 1 `ResourceStatus` per `resource`.
 
-6. ResourceStatus is een interface die door de klant kan worden uitgevoerd, of nuttig `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` kan worden gebruikt om een status te construeren. Een status bestaat uit:
+6. ResourceStatus is een interface die door de klant kan worden uitgevoerd, of nuttig `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` kan worden gebruikt om een status samen te stellen. Een status bestaat uit:
 
    * Titel
    * Bericht
@@ -65,7 +65,7 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
    * Acties
    * Data
 
-7. Als `Actions` optioneel voor het `ResourceStatus` voorwerp wordt verstrekt, wordt de ondersteunende cliëntlibs vereist om functionaliteit aan de actieverbindingen in de statusbar te binden.
+7. Optioneel, indien `Actions` worden `ResourceStatus` -object, zijn ondersteunende clientlibs vereist om functionaliteit te binden aan de actiekoppelingen in de statusbalk.
 
    ```js
    (function(jQuery, document) {

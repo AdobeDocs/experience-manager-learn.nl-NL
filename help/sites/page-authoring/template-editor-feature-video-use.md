@@ -1,25 +1,25 @@
 ---
 title: Bewerkbare paginasjablonen gebruiken met AEM Sites
-seo-title: Bewerkbare paginasjablonen gebruiken met Adobe Experience Manager Sites
+seo-title: Using Editable Page Templates with Adobe Experience Manager Sites
 description: Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties met AEM Sites beheren.
-seo-description: Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties met Adobe Experience Manager Sites beheren.
-feature: Bewerkbare sjablonen
+seo-description: Editable templates allow specialized authors to create and update page templates and manage advanced policy configurations with Adobe Experience Manager Sites.
+feature: Editable Templates
 topics: authoring
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 kt: 193
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
-
 
 # Bewerkbare paginasjablonen gebruiken{#using-template-editor-with-aem-sites}
 
@@ -29,13 +29,13 @@ Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken e
 
 Bewerkbare sjablonen zijn de aanbevelingen voor het bouwen van nieuwe AEM Sites.
 
-**Consistente auteurservaring**  - Verbeteringen in het ontwerpen van AEM Sites worden overgedragen naar Sjabloonbewerking, waaronder de inline-lay-outmodus en het deelvenster Inhoudsstructuur.
+**Consistente ontwerpervaring** - Verbeteringen in het ontwerpen van AEM Sites worden overgedragen naar Sjabloonbewerking, zoals de inline-modus en het deelvenster Inhoudsstructuur.
 
-**Geavanceerde beleidsconfiguraties** : in het volgende voorbeeld worden enkele geavanceerde beleidsconfiguraties gemarkeerd die beschikbaar zijn gesteld met Bewerkbare sjablonen:
+**Geavanceerde beleidsconfiguraties** - In het volgende voorbeeld worden enkele geavanceerde beleidsconfiguraties gemarkeerd die beschikbaar zijn gesteld met Bewerkbare sjablonen:
 
-* **Lay-outcontainer** : mogelijkheid om toegestane componenten te configureren, de toewijzing Slepen + neerzetten van elementen en kolommen voor responsief raster te beheren.
-* **De Component**  van de tekst - capaciteit om de Insteekmodules van de Redacteur van de RTF met een nieuwe UI te vormen en het beleid van RTE over malplaatjes opnieuw te gebruiken.
-* **Afbeeldingscomponent** : mogelijkheden om functies zoals uitsnijden, het uploaden van bureaubladbestanden met een nieuwe gebruikersinterface in of uit te schakelen en het afbeeldingsbeleid te hergebruiken in sjablonen.
+* **Layout Container** - de mogelijkheid om toegestane componenten te configureren, de toewijzing Slepen + neerzetten van elementen en responsieve rasterkolommen te beheren.
+* **Tekstcomponent** - mogelijkheid om Rich Text Editor-plug-ins te configureren met een nieuwe UI en RTE-beleid te hergebruiken in sjablonen.
+* **Afbeeldingscomponent** - de mogelijkheid om functies zoals uitsnijden, het uploaden van bestanden op het bureaublad in te schakelen of uit te schakelen met een nieuwe gebruikersinterface en het afbeeldingsbeleid te hergebruiken in sjablonen.
 
 Bewerkbare sjablonen vindt u onder **Gereedschappen** `>` **Algemeen** `>` **Sjablonen**.\
 Bewerkbare URL voor sjablonen (lokale AEM): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)

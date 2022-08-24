@@ -1,18 +1,18 @@
 ---
 title: AEM Forms met Marketo (Deel 3)
 description: Zelfstudie voor de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
-feature: Adaptief Forms, formuliergegevensmodel
-version: 6.3,6.4,6.5
-topic: Ontwikkeling
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # Gegevensbron configureren
 
@@ -24,7 +24,7 @@ Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren
 1. SOAP-webservices
 1. OData-diensten
 
-Voor de integratie van AEM Forms met Marketo gebruiken we RESTful-webservices. De eerste stap in het integreren is een [gegevensbron te vormen.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Gebruik het wagerbestand dat u opgeeft als onderdeel van deze zelfstudie. De volgende schermafbeelding toont u de belangrijke eigenschappen die moeten worden opgegeven tijdens het configureren van de gegevensbron.
+Voor de integratie van AEM Forms met Marketo gebruiken we RESTful-webservices. De eerste stap in het integreren is het vormen van een [gegevensbron.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Gebruik het wagerbestand dat u opgeeft als onderdeel van deze zelfstudie. De volgende schermafbeelding toont u de belangrijke eigenschappen die moeten worden opgegeven tijdens het configureren van de gegevensbron.
 ![gegevensbron](assets/datasource.jfif)
 
 Het bestand &quot;marketo.json&quot; is het gumerbestand en wordt geleverd als onderdeel van de elementen van deze zelfstudie.
@@ -35,7 +35,7 @@ Verificatietype is aangepast en verificatie-implementatie moet overeenkomen met 
 
 Na, vormend de gegevensbron is de volgende stap een Model van de Gegevens van de Vorm te creëren dat op de gegevensbron gebaseerd is die in de vroegere stap wordt gevormd. Voer de volgende stappen uit om een formuliergegevensmodel te maken:
 
-Wijs uw browser naar de pagina [gegevensintegratie.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Dit maakt een lijst van alle gegevensintegratie die op uw AEM instantie wordt gecreeerd.
+Wijs uw browser aan [pagina voor gegevensintegratie.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Dit maakt een lijst van alle gegevensintegratie die op uw AEM instantie wordt gecreeerd.
 
 1. Klik op Maken | Formuliergegevensmodel
 1. Geef een betekenisvolle titel op, zoals FormsAndMarketo, en klik op Volgende

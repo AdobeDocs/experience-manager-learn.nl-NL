@@ -1,18 +1,18 @@
 ---
 title: Transactierapportage in AEM Forms gebruiken
 description: Met transactierapporten in AEM Forms kunt u een telling bijhouden van alle transacties die sinds een opgegeven datum op uw AEM Forms-implementatie zijn uitgevoerd.
-feature: Adaptieve Forms
-version: 6.4.1,6.5
-topic: Ontwikkeling
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
-
 
 # Transactierapportage in AEM Forms gebruiken{#using-transaction-reporting-in-aem-forms}
 
@@ -35,7 +35,7 @@ Meld u aan bij AEM Forms als beheerder om het transactierapport weer te geven. A
 
 Gereedschappen selecteren | Forms | Transactierapport weergeven
 
-of bekijk het transactierapport door [hier](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html) te klikken
+of bekijk het transactierapport door te klikken [hier](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
 ![TransctionReporting](assets/transactionreporting.gif)
 
@@ -43,9 +43,8 @@ In de schermafbeelding boven Document verwerkt is het aantal documenten dat met 
 
 Een transactie blijft in de buffer voor een gespecificeerde periode (de tijd van de Buffer van de Duw + omgekeerde replicatietijd). Door gebrek, vergt het ongeveer 90 seconden voor de transactietelling om in het transactierapport te weerspiegelen.
 
-Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de agent voor het weergeven van een voorvertoning van een interactieve communicatie of het gebruik van niet-standaardmethoden voor het verzenden van formulieren worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke transacties op te nemen. Roep API van uw douaneimplementaties aan om een transactie te registreren.
+Handelingen zoals het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de om een voorvertoning van een interactieve communicatie weer te geven of het gebruik van niet-standaardmethoden voor het verzenden van formulieren worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke transacties op te nemen. Roep API van uw douaneimplementaties aan om een transactie te registreren.
 
 Als u het transactierapport over de auteursinstantie bekijkt, zorg ervoor de omgekeerde replicatie op alle publiceer instanties wordt gevormd.
 
-Voor meer informatie over transactierapporteren [klik hier](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
-
+Meer informatie over transactierapporteren [klik hier](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
