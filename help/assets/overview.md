@@ -3,16 +3,22 @@ title: AEM Assets-video's en -Tutorials
 description: Bekijk onze video's voor ondersteuning en assistentie van AEM middelen.
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 2%
+source-wordcount: '205'
+ht-degree: 3%
 
 ---
 
 # AEM Assets-video&#39;s en -Tutorials {#overview}
 
 Adobe Experience Manager (AEM) Assets is een hulpmiddel voor het beheer van digitale middelen op AEM Platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een opslagplaats op internet. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assets_overview"
+>title="AEM Assets"
+>abstract="Leer hoe u snel de benodigde middelen kunt vinden en bewerken."
+>additional-url="https://video.tv.adobe.com/v/336196" text="AEM Assets loopt door"
 
 ## AEM Assets loopt door
 

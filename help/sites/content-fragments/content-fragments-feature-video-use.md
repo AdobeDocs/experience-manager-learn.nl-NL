@@ -12,9 +12,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -25,18 +25,23 @@ Inhoudsfragmenten zijn een inhoudsabstractie in AEM waarmee op tekst gebaseerde 
 
 AEM Inhoudsfragmenten zijn tekstgebaseerde redactionele inhoud die bepaalde gestructureerde gegevenselementen kan bevatten die zijn gekoppeld, maar die wordt beschouwd als zuivere inhoud zonder ontwerp- of layoutinformatie. Inhoudsfragmenten worden doorgaans gemaakt als agnostische inhoud voor kanalen, die bestemd is voor gebruik en hergebruik via kanalen, waardoor de inhoud zelf wordt verpakt in een contextspecifieke ervaring.
 
-Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Hier vindt u details over [het leveren van inhoudsfragmenten.](content-fragments-delivery-feature-video-use.md)
+Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Details over [het leveren van Inhoudsfragmenten vindt u hier](content-fragments-delivery-feature-video-use.md).
 
 1. Modellen voor inhoudsfragmenten inschakelen en definiëren
 2. Inhoudsfragmenten ontwerpen
 3. Inhoudsfragmenten downloaden
 4. Redactionele mogelijkheden
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_admin_content_fragments"
+>title="Fragmenten beheren"
+>abstract="Leer hoe u met Inhoudsfragmenten pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken."
+
 ## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM de Modellen van de Fragmenten van de Inhoud, de gegevensschema&#39;s van de Fragmenten van de Inhoud, moeten via AEM [[!UICONTROL Configuration Browser]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) worden toegelaten, die de Modellen van het Fragment van de Inhoud om op een per configuratiebasis toelaat worden bepaald.
+AEM Content Fragments Models, de gegevensschema&#39;s van Content Fragments, moeten via AEM worden toegelaten [[!UICONTROL Configuration Browser]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html), waardoor Modellen van inhoudsfragmenten per configuratie kunnen worden gedefinieerd.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
@@ -64,11 +69,11 @@ AEM Inhoudsfragmenten kunnen van AEM-auteur worden gedownload als een ZIP-bestan
 
 >[!NOTE]
 >
-> Annotatie en versievergelijking voor Content Fragments werden geïntroduceerd in [AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) en [AEM 6.3 Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> Aantekening en versievergelijking voor inhoudsfragmenten zijn geïntroduceerd in [AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) en [AEM 6.3 Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Volgende stappen
 
-Leer over [het leveren van Inhoudsfragmenten](content-fragments-delivery-feature-video-use.md).
+Meer informatie over [Inhoudsfragmenten leveren](content-fragments-delivery-feature-video-use.md).
 
 ## Aanvullende bronnen {#additional-resources}
 
