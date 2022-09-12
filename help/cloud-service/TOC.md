@@ -4,10 +4,10 @@ user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manage
 breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: cloud-service
 team: TM
-source-git-commit: b04e247c091634030e5377fdb8a159f8c7cce904
+source-git-commit: aea43a705b3959f8be26238d32b816b3953e153e
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -214,6 +214,7 @@ ht-degree: 10%
       + [De integratie configureren](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [Ingevulde formuliergegevens parseren](./forms/forms-cs-and-power-automate/send-email-notification.md)
       + [DoR verzenden als e-mailbijlage](./forms/forms-cs-and-power-automate/send-DoR-email-attachment.md)
+      + [Formulierbijlagen uitnemen van verzonden gegevens](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
    + Integreren met Microsoft Dynamics{#formscs-dynamics-crm}
       + [Dynamische toepassing maken](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Gegevensbron configureren](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
