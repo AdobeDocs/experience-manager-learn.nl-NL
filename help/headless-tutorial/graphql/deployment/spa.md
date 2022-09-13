@@ -9,16 +9,15 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
 
 
 # Implementaties SPA zonder kop AEM
-
 
 AEM Headless single-page app (SPA)-implementaties zijn gebaseerd op JavaScript-toepassingen die zijn gebouwd met behulp van frameworks zoals React of Vue, die op een krantenloze manier inhoud verbruiken en interageren in AEM.
 
@@ -110,6 +109,27 @@ Adobe biedt een voorbeeld van een app van één pagina die in React is gecodeerd
                <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/react-app.md" title="Toepassingen Reageren">Toepassingen Reageren</a></p>
                <p class="is-size-6">Een voorbeeld van een app van één pagina, geschreven in React, die inhoud van AEM Headless GraphQL APIs verbruikt.</p>
                <a href="../example-apps/react-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
+               </a>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- Next.js app -->
+<div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Next.js app" tabindex="0">
+   <div class="card">
+       <div class="card-image">
+           <figure class="image is-16by9">
+               <a href="../example-apps/next-js.md" title="De app Next.js" tabindex="-1">
+                   <img class="is-bordered-r-small" src="../example-apps/assets/next-js/next-js-card.png" alt="De app Next.js">
+               </a>
+           </figure>
+       </div>
+       <div class="card-content is-padded-small">
+           <div class="content">
+               <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/next-js.md" title="De app Next.js">De app Next.js</a></p>
+               <p class="is-size-6">Een voorbeeld van een app van één pagina, geschreven in Next.js, die inhoud van AEM Headless GraphQL APIs verbruikt.</p>
+               <a href="../example-apps/next-js.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
                </a>
            </div>
