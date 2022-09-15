@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
+source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
 
-# App Reageren
+# App Reageren{#react-app}
 
 Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze React toepassing toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted vragen. De AEM Headless-client voor JavaScript wordt gebruikt om de aanhoudende query&#39;s van GraphQL uit te voeren die de toepassing van stroom voorzien.
 
@@ -26,6 +26,11 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
 A [stapsgewijze zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) beschrijf hoe deze React-app is gemaakt.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="Inhoud aanpassen in een voorbeeld van een React-app"
+>abstract="We hebben een moderne React-app ingesteld waarmee u kunt leren hoe u inhoud kunt aanpassen met behulp van de functieset zonder kop."
 
 ## Vereisten {#prerequisites}
 
