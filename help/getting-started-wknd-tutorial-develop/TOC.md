@@ -5,13 +5,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 user-guide-title: Aan de slag met AEM Sites - WKND-zelfstudie
-user-guide-description: Een meerdelige zelfstudie voor ontwikkelaars die nog niet zijn AEM. Implementeer een AEM site voor een fictief levensstijlmerk, de WKND.
+user-guide-description: Een meerdelige zelfstudie voor ontwikkelaars die nog niet zijn AEM. Implementeer een AEM site voor een fictief levensstijlmerk, de WKND. Schakel de front-end pijplijn in om uw ontwikkeling naar de implementatiecyclus te versnellen.
 breadcrumb-title: AEM Sites WKND Tutorials
 index: y
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 96e1c95b7cd672aa5d4f79707735abc86dae7b8a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '93'
+ht-degree: 3%
 
 ---
 
@@ -33,5 +33,9 @@ ht-degree: 0%
    + [1 - Een site maken](./site-template/create-site.md)
    + [2 - Introductie tot het ontwerpen en publiceren](./site-template/author-content-publish.md)
    + [3 - UI-planning met Adobe XD](./site-template/ui-planning-adobe-xd.md)
-   + [3 - Paginasjablonen](./site-template/page-templates.md)
-   + [4 - Thema](./site-template/theming.md)
+   + [4 - Paginasjablonen](./site-template/page-templates.md)
+   + [5 - Thema](./site-template/theming.md)
++ Voorste pijplijn inschakelen - DevOps{#enable-frontend-pipeline-devops}
+   + [Overzicht](./enable-frontend-pipeline/overview.md)
+
+
