@@ -3,9 +3,9 @@ user-guide-title: AEM Sites-video's en -Tutorials
 user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites.
 breadcrumb-title: AEM Sites Tutorials
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: 552e5fbeb5dafc6d82763d5c3b31cc6d17131739
+source-git-commit: 798b366a5add2831bf60a8d89968bad16e48802c
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '434'
 ht-degree: 5%
 
 ---
@@ -48,6 +48,8 @@ ht-degree: 5%
    + [Ervaringsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
    + [Bouwstenen](experience-fragments/building-blocks.md)
    + [Content Fragments vs. Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + Expertadvies {#expert-advice}
+      + [Tips voor inhoudsfragmenten](content-fragments/expert-advice/content-fragments.md)
 + Ontwikkeling {#developing}
    + [Projectarchetype AEM](developing/aem-project-archetype.md)
    + [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
@@ -113,3 +115,8 @@ ht-degree: 5%
       + [Doelactiviteit maken met behulp van Experience Fragment-aanbiedingen](integrations/adobe-target/create-target-activity.md)
       + [Personalisatie met behulp van Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Aanpassing van de volledige webpaginabeleving](integrations/adobe-target/personalization-web-page.md)
++ Expertbronnen {#expert-resources}
+   + [AEM Sites-rijpheidsbeoordeling](expert-resources/maturity-assessment.md)
+   + [Onderhoud site](expert-resources/site-maintenance.md)
+   + [AEM Champion Tips en Tricks: Sessie 1](expert-resources/champion-tips-1.md)
+   + [AEM Champion Tips en Tricks: Sessie 2](expert-resources/champion-tips-2.md)
