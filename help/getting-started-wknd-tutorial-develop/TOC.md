@@ -8,10 +8,10 @@ user-guide-title: Aan de slag met AEM Sites - WKND-zelfstudie
 user-guide-description: Een meerdelige zelfstudie voor ontwikkelaars die nog niet zijn AEM. Implementeer een AEM site voor een fictief levensstijlmerk, de WKND. Schakel de front-end pijplijn in om uw ontwikkeling naar de implementatiecyclus te versnellen.
 breadcrumb-title: AEM Sites WKND Tutorials
 index: y
-source-git-commit: 96e1c95b7cd672aa5d4f79707735abc86dae7b8a
+source-git-commit: 2e3615e9e9305165ca9c3c93b38ac7e9bdcc51fb
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 3%
+source-wordcount: '108'
+ht-degree: 2%
 
 ---
 
@@ -37,5 +37,8 @@ ht-degree: 3%
    + [5 - Thema](./site-template/theming.md)
 + Voorste pijplijn inschakelen - DevOps{#enable-frontend-pipeline-devops}
    + [Overzicht](./enable-frontend-pipeline/overview.md)
-
+   + [1 - Volledige stackproject controleren](./enable-frontend-pipeline/review-uifrontend-module.md)
+   + [2 - Werk Project bij om Voorste Pijpleiding te gebruiken](./enable-frontend-pipeline/update-project.md)
+   + [3 - Implementeren met behulp van de voorste-eindpijplijn](./enable-frontend-pipeline/create-frontend-pipeline.md)
+   + [4 - Overwegingen](./enable-frontend-pipeline/considerations.md)
 
