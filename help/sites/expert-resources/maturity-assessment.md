@@ -3,7 +3,7 @@ title: Tips voor sitehiërarchie, taxonomie en codering
 description: Tips voor tips en trucs voor sitehiërarchie, taxonomie en tags
 hide: true
 hidefromtoc: true
-source-git-commit: 6f4d811e796b34985fa9d5af335239948e59c1ef
+source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -34,3 +34,4 @@ In de meeste gevallen zal de beoordeling van de AEM rijpheid helpen bij het uitv
 Aanbevolen AEM aandachtsgebieden voor looptijdbeoordeling: Ontwerp en architectuur, productbeheer en -strategie, beheer en levering van digitale bedrijfsmiddelen, analyse, tests en beveiliging.
 
 AEM Champion Greg Dimeris vraagt zich enorm uit om deze informatie uit meerdere artikelen in de Experience League samen te voegen, evenals zijn eigen beste praktijken!
+
