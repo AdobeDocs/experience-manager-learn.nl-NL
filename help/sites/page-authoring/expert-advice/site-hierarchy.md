@@ -1,11 +1,24 @@
 ---
 title: Tips voor sitehiërarchie, taxonomie en codering
-description: Tips voor tips en trucs voor sitehiërarchie, taxonomie en tags
+seo-title: Overview of Authoring in AEM Sites
+description: De volgende video biedt een overzicht van de basisconcepten van ontwerpen in een AEM auweromgeving. Het gebruikt de console van Plaatsen als basis.
+seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
+feature: Page Editor, Editable Templates
+topics: authoring, publishing
+audience: author, marketer
+doc-type: feature video
+activity: use
+version: 6.4, 6.5, Cloud Service
+kt: 4242
+thumbnail: 33594.jpg
+topic: Content Management
+role: User
+level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -16,8 +29,6 @@ ht-degree: 0%
 Metagegevens en codes zijn van wezenlijk belang voor de efficiëntie van AEM. Gebruikers, leiders en managers realiseren zich de noodzaak van een holistische strategie, maar ze vinden het moeilijk om vooruitgang te boeken. Vaak wordt kennis verdeeld onder gebruikers, die holistische strategie moeilijk-maken en aanpassingen nog problematischer maken.
 
 Wat is het verschil tussen metagegevens en tags? Wat zijn de bedrijfsaspecten om in overweging te nemen wanneer het drijven van uw strategie?
-
-Een uitgebreidere samenvatting is te vinden [hier](https://adobe.sharepoint.com/:w:/r/sites/ACSSuccessServices/_layouts/15/Doc.aspx?sourcedoc=%7BFE5E873A-A3B6-4F40-BF22-A2C9F1269802%7D&amp;file=AEM_TagTaxonomyAndMetadata_BestPractice_en%20(2).docx&amp;action=default&amp;mobileredirect=true).
 
 ## Wat is het doel van metagegevens?
 
