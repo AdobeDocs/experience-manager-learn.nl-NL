@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
+source-git-commit: 5277b7a6ceba4473ab2808f980c8faa5bf69c757
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1701'
 ht-degree: 0%
 
 ---
@@ -150,16 +150,17 @@ ht-degree: 0%
    + [Gegevensbron configureren](sign-multiple-documents/configure-data-source.md)
    + [OSGi-service maken](sign-multiple-documents/create-osgi-service.md)
    + [Hoofdwerkstroom maken](sign-multiple-documents/create-main-workflow.md)
-   + [Workflow Handtekeningstatus bijwerken](sign-multiple-documents/update-signature-status.md)
+   + [Workflow voor handtekeningstatus bijwerken](sign-multiple-documents/update-signature-status.md)
    + [Samenvattingscomponent aanpassen](sign-multiple-documents/customize-summary-component.md)
    + [Clientbibliotheek maken](sign-multiple-documents/create-client-lib.md)
    + [Formuliersjabloon maken](sign-multiple-documents/create-af-template.md)
-   + [Oorspronkelijk formulier maken](sign-multiple-documents/create-initial-form.md)
-   + [Forms maken voor ondertekening](sign-multiple-documents/create-forms-for-signing.md)
+   + [Eerste formulier maken](sign-multiple-documents/create-initial-form.md)
+   + [Formulieren maken voor ondertekening](sign-multiple-documents/create-forms-for-signing.md)
    + [De oplossing testen](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Aangepaste workflowstappen{#custom-workflow-steps}
    + [Knooppunt extraheren uit XML-document](custom-workflow-steps/extract-xml-node.md)
    + [Document opslaan naar bestandssysteem](custom-workflow-steps/write-payload-document.md)
+   + [Verzonden gegevens opslaan in tekenreeksvariabele](custom-workflow-steps/save-submitted-data-in-string-variable.md)
 + Variabelen in AEM workflow{#variables-aem-workflow}
    + [Inleiding - Variabelen in workflow](variables-aem-workflow/introduction.md)
    + [XML-variabelen](variables-aem-workflow/part1.md)
