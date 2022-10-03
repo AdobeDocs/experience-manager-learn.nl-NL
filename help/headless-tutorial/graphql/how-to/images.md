@@ -9,14 +9,14 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
+source-git-commit: 332ad831b6c49e8599aa2181caf978d5626c1aba
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
 
-# Afbeeldingen met AEM zonder kop
+# Afbeeldingen met AEM zonder kop {#images-with-aem-headless}
 
 Afbeeldingen zijn een essentieel aspect van [ontwikkeling van rijke, dwingende AEM eindeloze ervaringen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html). AEM Headless ondersteunt het beheer van afbeeldingselementen en de geoptimaliseerde levering ervan.
 
@@ -39,6 +39,11 @@ De velden kunnen het best worden gebruikt op basis van de volgende criteria:
 | `_publishUrl` | ✘ | ✘ | ✔ |
 
 Gebruik van `_authorUrl` en `_publishUrl` zou met het AEM eindpunt moeten richten GraphQL dat wordt gebruikt om de reactie te bron GraphQL.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_learn_headless_graphql_images"
+>title="Afbeeldingen gebruiken"
+>abstract="Leer hoe AEM Headless het beheer van beeldactiva en hun geoptimaliseerde levering steunt."
 
 ## Inhoudsfragmentmodel
 

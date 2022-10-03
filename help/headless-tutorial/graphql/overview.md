@@ -6,14 +6,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: 332ad831b6c49e8599aa2181caf978d5626c1aba
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '267'
 ht-degree: 1%
 
 ---
 
-# Aan de slag met AEM zonder kop - GraphQL
+# Aan de slag met AEM zonder kop - GraphQL {#getting-started-with-aem-headless}
 
 AEM GraphQL APIs voor de Fragmenten van de Inhoud steunt hoofd-loze scenario&#39;s CMS waar de externe cliënttoepassingen ervaringen teruggeven gebruikend inhoud die in AEM wordt beheerd.
 
@@ -27,6 +27,12 @@ Om deze uitdagingen te overwinnen verstrekt GraphQL op vraag-gebaseerde API die 
 >[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
 Deze video is een overzicht van de GraphQL API die in AEM wordt geïmplementeerd. De GraphQL-API in AEM is vooral ontworpen om AEM Content Fragment&#39;s aan downstreamtoepassingen te leveren als onderdeel van een headless-implementatie.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_learn_headless_graphql_overview"
+>title="Aan de slag met AEM zonder kop"
+>abstract="Leer hoe te om Inhoudsfragmenten te leveren gebruikend GraphQL."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Overzicht van GraphQL in AEM"
 
 ## AEM GraphQL-videoreeks zonder kop
 
