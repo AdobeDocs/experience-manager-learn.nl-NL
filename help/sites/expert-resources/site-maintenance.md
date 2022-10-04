@@ -1,11 +1,12 @@
 ---
-title: Tips en trucs voor het onderhoud van sites
-description: Tips en trucs voor het onderhoud van sites
-hide: true
-hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+title: Handleiding voor routineonderhoud
+seo-title: Your Routine Site Maintenance Guide
+description: Ongeacht of u een beheerder, auteur of ontwikkelaar bent, siteonderhoud raakt elk aspect van uw AEM Sites-instantie. Gebruik deze handleiding om ervoor te zorgen dat uw strategie is ingesteld voor succes.
+seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
+audience: author, marketer, developer
+source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---

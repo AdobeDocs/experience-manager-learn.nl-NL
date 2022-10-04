@@ -1,24 +1,12 @@
 ---
-title: Tips voor sitehiërarchie, taxonomie en codering
-seo-title: Overview of Authoring in AEM Sites
-description: De volgende video biedt een overzicht van de basisconcepten van ontwerpen in een AEM auweromgeving. Het gebruikt de console van Plaatsen als basis.
-seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
-feature: Page Editor, Editable Templates
-topics: authoring, publishing
+title: Site-hiërarchie, Taxonomy en Tagging Guide
+seo-title: AEM Sites Site Hierarchy, Taxonomy, and Tagging Guide
+description: Een volledig overzicht van AEM Sites-metagegevens, codering, taxonomie en hiërarchie. Gebruik deze handleiding om ervoor te zorgen dat uw inhoudsstrategie consistent is en de beste praktijken volgt
+seo-description: A full overview of AEM Sites metadata, tagging, taxonomy, and hierarchy. Use this guide to ensure your content strategy is consistent and following best practices
 audience: author, marketer
-doc-type: feature video
-activity: use
-version: 6.4, 6.5, Cloud Service
-kt: 4242
-thumbnail: 33594.jpg
-topic: Content Management
-role: User
-level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
+source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---
