@@ -1,17 +1,18 @@
 ---
 title: Verzonden formuliergegevens in CSV-indeling exporteren
 description: Verzonden adaptieve formuliergegevens exporteren in CSV-indeling
-feature: Adaptieve Forms
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 6cd892e4-82c5-4201-8b6a-40c2ae71afa9
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -24,18 +25,20 @@ Klanten willen de ingediende formuliergegevens doorgaans exporteren in CSV-indel
 >
 >Dit voorbeeld werkt alleen met Adaptief Forms dat niet is gebaseerd op het schema of het formuliergegevensmodel
 
-![Tabel ](assets/tablestructure.PNG)
-StructureAs u kunt zien dat de naam van het schema een modelstudie is. In dit schema worden de tabelopmaak weergegeven met de volgende gedefinieerde kolommen
+![Tabelstructuur](assets/tablestructure.PNG)
+Aangezien u kunt zien de naam van het schema is modelstudie.Binnen dit schema zijn de indieningen van de lijstformaten met de volgende gedefinieerde kolommen
 
-* formatiegegevens: Deze kolom bevat de verzonden formuliergegevens
-* naam van de indeling: Deze kolom bevat de naam van het verzonden formulier
+* formatiegegevens: Deze kolom bevat de ingediende formuliergegevens
+* naam van de indeling: Deze kolom bevat de naam van het ingediende formulier
 * id: Dit is de primaire sleutel en wordt ingesteld op automatisch verhogen
 
 De lijstnaam en de twee-kolomnamen worden blootgesteld als OSGi configuratieeigenschappen zoals aangetoond in het hieronder scherm:
-![osgi-configuration](assets/configuration.PNG)
-De code leest deze waarden en construeert de juiste SQL-query die moet worden uitgevoerd. De volgende query wordt bijvoorbeeld uitgevoerd op basis van de bovenstaande waarden
-**Formuliergegevens SELECTEREN UIT AMMormstutorial.formsubmission waarbij formname=timeoffrequestform**
-In de bovenstaande query wordt de naam van het formulier (timeoffrequestform) doorgegeven als aanvraagparameter aan de servlet.
+![osgi-configuratie](assets/configuration.PNG)
+De code leest deze waarden en stelt de juiste SQL-query samen die moet worden uitgevoerd. De volgende query wordt bijvoorbeeld uitgevoerd op basis van de bovenstaande waarden
+
+`SELECT formdata FROM aemformstutorial.formsubmissions where formname=timeoffrequestform`
+
+In de bovenstaande query wordt de naam van het formulier (timeoffrequestform) als parameter request doorgegeven aan de servlet.
 
 ## **OSGi-service maken**
 
@@ -43,7 +46,7 @@ De volgende dienst OSGI werd gecreeerd om de voorgelegde gegevens in CSV formaat
 
 * Regel 37: We benaderen Apache Sling Connection Pooled DataSource.
 
-* Regel 89: Dit is het ingangspunt voor de service. De methode `getCSVFile(..)` neemt formName op als invoerparameter en haalt de verzonden gegevens met betrekking tot de opgegeven formuliernaam op.
+* Regel 89: Dit is het ingangspunt aan de dienst.De methode `getCSVFile(..)` neemt in formName als inputparameter en haalt de voorgelegde gegevens met betrekking tot de bepaalde vormnaam.
 
 >[!NOTE]
 >
@@ -263,7 +266,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-Hier volgt de servletcode die de methode `getCSVFile(..)` van de service aanroept. De service retourneert een StringBuffer-object dat vervolgens wordt gestreamd naar de aanroepende toepassing
+Hier volgt de servletcode die de `getCSVFile(..)` de wijze van dienstverlening. De service retourneert een StringBuffer-object dat vervolgens wordt gestreamd naar de aanroepende toepassing
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -305,6 +308,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Distribueren op uw server
 
-* Importeer het [SQL-bestand](assets/formsubmissions.sql) in MySQL-server met MySQL Workbench. Dit leidt tot schema genoemd **aemformstutorial** en lijst genoemd **formsubmission** met sommige steekproefgegevens.
-* [OSGi-bundel](assets/store-export.jar) implementeren met de Felix-webconsole
-* [TimeOffRequest-verzendingen](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform) ophalen. Het CSV-bestand moet naar u worden gestreamd.
+* Het dialoogvenster Importeren [SQL-bestand](assets/formsubmissions.sql) in MySQL-server met MySQL Workbench. Hiermee maakt u een schema genaamd **vormgeving** en tabel opgeroepen **formules** met enkele voorbeeldgegevens.
+* Implementeren [OSGi Bundle](assets/store-export.jar) de Felix-webconsole gebruiken
+* [TimeOffRequest-verzendingen ophalen](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Het CSV-bestand moet naar u worden gestreamd.
