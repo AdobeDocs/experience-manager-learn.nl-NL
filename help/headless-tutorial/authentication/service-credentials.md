@@ -1,5 +1,5 @@
 ---
-title: Servicereferenties
+title: AEM de dienstgeloofsbrieven van de Console van de Ontwikkelaar
 description: AEM Service Credentials worden gebruikt om externe toepassingen, systemen en services te helpen programmatisch te communiceren met AEM Author of Publish services via HTTP.
 version: Cloud Service
 doc-type: tutorial
@@ -13,14 +13,14 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: ef4579a44c1c940a3b7441e336db3790a0c7afd7
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%
 
 ---
 
-# Servicereferenties
+# Servicegegevens
 
 Integraties met AEM as a Cloud Service moeten veilig kunnen worden geverifieerd op AEM. AEM Developer Console biedt toegang tot servicerecertificaten, die worden gebruikt om externe toepassingen, systemen en services te helpen programmatisch te communiceren met AEM Author Publish-services via HTTP.
 
@@ -85,7 +85,7 @@ Voor het downloaden van de servicekredieten gelden dezelfde stappen als voor de 
 
 ## De servicereferenties installeren
 
-De referenties van de Dienst verstrekken de details nodig om een JWT te produceren, die voor een toegangstoken wordt geruild dat wordt gebruikt om met AEM as a Cloud Service voor authentiek te verklaren. De servicekredieten moeten worden opgeslagen op een beveiligde locatie die toegankelijk is voor externe toepassingen, systemen of services die deze gebruiken voor toegang tot AEM. Hoe en waar de Credentials van de Dienst worden beheerd zal uniek per klant zijn.
+De referenties van de Dienst verstrekken de details nodig om een JWT te produceren, die voor een toegangstoken wordt geruild dat wordt gebruikt om met AEM as a Cloud Service voor authentiek te verklaren. De servicekredieten moeten worden opgeslagen op een beveiligde locatie die toegankelijk is voor externe toepassingen, systemen of services die deze gebruiken voor toegang tot AEM. Hoe en waar de Credentials van de Dienst worden beheerd zijn uniek per klant.
 
 Voor eenvoud, gaat dit leerprogramma de Credentials van de Dienst binnen via de bevellijn over, echter, werk met uw team van de Veiligheid van IT om te begrijpen hoe te om tot deze geloofsbrieven in overeenstemming met de veiligheidsrichtlijnen van uw organisatie op te slaan en toegang te hebben.
 
