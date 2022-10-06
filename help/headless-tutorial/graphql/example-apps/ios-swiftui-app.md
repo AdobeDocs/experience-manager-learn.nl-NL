@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: cd7cb89f407f5e0c465544593563534472daf928
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -183,7 +183,7 @@ AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, kunnen de
 1. De publieke functie noemt een particuliere func `makeRequest(..)` die een asynchrone HTTP-GET-aanvraag naar AEM Headless aanroept en de JSON-gegevens retourneert.
 1. Elke openbare functie decodeert vervolgens de JSON-gegevens en voert de vereiste controles of transformaties uit voordat de Adventure-gegevens naar de weergave worden geretourneerd.
 
-+ AEM GraphQL JSON-gegevens worden gedecodeerd met de instructies/klassen die zijn gedefinieerd in `AEM/Models.swift`Deze kaart naar de JSON-objecten retourneerde mijn AEM Headless.
+   + AEM GraphQL JSON-gegevens worden gedecodeerd met de instructies/klassen die zijn gedefinieerd in `AEM/Models.swift`Deze kaart naar de JSON-objecten retourneerde mijn AEM Headless.
 
 ```swift
     /// # getAdventures(..)
