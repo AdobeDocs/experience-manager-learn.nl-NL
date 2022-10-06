@@ -1,24 +1,24 @@
 ---
 title: Werken met multimedia en gelijktijdige ontwikkeling
 description: Leer over de voordelen, de uitdagingen, en de technieken om een multi-huurdersimplementatie met de Middelen van Adobe Experience Manager te beheren.
-feature: Gekoppelde assets
+feature: Connected Assets
 version: 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # Werken met multimedia en gelijktijdige ontwikkeling {#understanding-multitenancy-and-concurrent-development}
 
 ## Inleiding {#introduction}
 
-Wanneer de veelvoudige teams hun code aan de zelfde AEM milieu&#39;s opstellen, zijn er praktijken zij zouden moeten volgen om ervoor te zorgen dat de teams zo onafhankelijk mogelijk kunnen werken, zonder op andere teams&#39; te stappen. Hoewel zij nooit volledig kunnen worden geëlimineerd, zullen deze technieken dwars-teamgebiedsdelen minimaliseren. Een gelijktijdig ontwikkelingsmodel kan alleen succesvol zijn als de ontwikkelingsteams goed met elkaar communiceren.
+Wanneer de veelvoudige teams hun code aan de zelfde AEM milieu&#39;s opstellen, zijn er praktijken zij zouden moeten volgen om ervoor te zorgen dat de teams zo onafhankelijk mogelijk kunnen werken, zonder op de tenen van andere teams te stappen. Hoewel zij nooit volledig kunnen worden geëlimineerd, zullen deze technieken dwars-teamgebiedsdelen minimaliseren. Een gelijktijdig ontwikkelingsmodel kan alleen succesvol zijn als de ontwikkelingsteams goed met elkaar communiceren.
 
 Bovendien, wanneer de veelvoudige ontwikkelingsteams aan het zelfde AEM milieu werken, is er waarschijnlijk één of andere graad van multi-tenancy bij spel. Er is veel geschreven over de praktische overwegingen om te proberen meerdere huurders in een AEM omgeving te ondersteunen, met name wat betreft de uitdagingen die zich voordoen bij het beheer van bestuur, activiteiten en ontwikkeling. In dit document worden enkele technische uitdagingen besproken rond het implementeren van AEM in een omgeving met meerdere huurders, maar veel van deze aanbevelingen zijn van toepassing op elke organisatie met meerdere ontwikkelingsteams.
 
@@ -53,7 +53,7 @@ Wanneer het leiden Geweven projectgebiedsdelen, is het belangrijk dat alle teams
 
 Project A is afhankelijk van versie 1.0 van de bibliotheek, foo; foo versie 1.0 is ingesloten in hun implementatie op de server. Project B is afhankelijk van versie 1.1 van de bibliotheek, foo; foo versie 1.1 is ingebed in hun plaatsing.
 
-Bovendien moet u ervan uitgaan dat een API in deze bibliotheek is gewijzigd tussen versie 1.0 en 1.1. Op dit moment zal een van deze twee projecten niet meer naar behoren werken.
+Bovendien, veronderstellen wij dat API in deze bibliotheek tussen versies 1.0 en 1.1 is veranderd. Op dit moment zal een van deze twee projecten niet meer naar behoren werken.
 
 Om dit probleem aan te pakken, raden we aan alle Maven-projecten kinderen te maken van één ouder reactorproject. Dit reactorproject heeft twee doelen: het staat voor de bouw en de plaatsing van alle projecten samen toe indien zo gewenst, en het bevat de gebiedsdeelverklaringen voor alle kindprojecten. Het ouderproject bepaalt de gebiedsdelen en hun versies terwijl de kindprojecten slechts de gebiedsdelen verklaren die zij vereisen, die de versie van het ouderproject erven.
 
@@ -90,7 +90,7 @@ Dit elimineert niet de behoefte voor veelvoudige teams om van en potentieel de z
 
 Om ervoor te zorgen dat de veranderingen die aan dit kernpakket worden aangebracht de functionaliteit van het systeem niet verstoren, adviseren wij dat een senior ontwikkelaar of een team van ontwikkelaars toezicht handhaven. Eén mogelijkheid is één team te hebben dat alle wijzigingen in dit pakket beheert. een andere is dat teams pull-verzoeken indienen die door deze middelen worden herzien en samengevoegd. Het is belangrijk dat de teams een bestuursmodel opstellen en ermee instemmen en dat ontwikkelaars dit model volgen.
 
-## Implementatiebereik &amp;beheren {#managing-deployment-scope}
+## Implementatiebereik beheren  {#managing-deployment-scope}
 
 Aangezien de verschillende teams hun code aan de zelfde bewaarplaats opstellen, is het belangrijk dat zij elkaars veranderingen niet beschrijven. AEM heeft een mechanisme om dit te controleren wanneer het opstellen van inhoudspakketten, de filter. xml-bestand. Het is belangrijk dat er geen overlapping is tussen filters.  xml- dossiers, anders kon de plaatsing van één team potentieel de vorige plaatsing van een ander team wissen. Ter illustratie hiervan raadpleegt u de volgende voorbeelden van goed gemaakte versus problematische filterbestanden:
 
@@ -108,13 +108,13 @@ Omdat het een globaal systeemweg en niet specifiek voor één plaats is, zou de 
 
 ### Bedekkingen {#overlays}
 
-Bedekkingen worden vaak gebruikt om de AEM van het vak uit te breiden of te vervangen, maar het gebruik van een overlay heeft invloed op de gehele AEM toepassing (dat wil zeggen dat eventuele functiewijzigingen beschikbaar zijn voor alle huurders). Dit zou nog ingewikkelder zijn als huurders andere eisen voor de overlay zouden stellen. In het ideale geval zouden bedrijfsgroepen moeten samenwerken om overeenstemming te bereiken over de functionaliteit en de vormgeving van de administratieve consoles van AEM.
+Bedekkingen worden vaak gebruikt om de AEM van het vak uit te breiden of te vervangen, maar het gebruik van een bedekking beïnvloedt de gehele AEM toepassing (dat wil zeggen dat eventuele overlappende wijzigingen in de functionaliteit beschikbaar worden gemaakt voor alle huurders). Dit zou nog ingewikkelder zijn als huurders andere eisen voor de overlay zouden stellen. In het ideale geval zouden bedrijfsgroepen moeten samenwerken om overeenstemming te bereiken over de functionaliteit en de vormgeving van AEM administratieve consoles.
 
 Als er geen consensus kan worden bereikt tussen de verschillende bedrijfseenheden, zou een mogelijke oplossing zijn om overlays eenvoudigweg niet te gebruiken. In plaats daarvan, creeer een douaneexemplaar van de functionaliteit en stel het via een verschillende weg voor elke huurder bloot. Dit staat elke huurder toe om een volledig verschillende gebruikerservaring te hebben, maar deze benadering verhoogt de kosten van implementatie en verdere verbeteringsinspanningen eveneens.
 
 ### Workflowstartprogramma&#39;s {#workflow-launchers}
 
-AEM gebruikt werkstroomdraagraketten om werkstroomuitvoering automatisch te starten wanneer opgegeven wijzigingen in de opslagplaats worden aangebracht. AEM biedt verschillende draagraketten uit het vak, bijvoorbeeld om processen voor het genereren van vertoningen en het ophalen van metagegevens uit te voeren voor nieuwe en bijgewerkte elementen. Terwijl het mogelijk is om deze draagraketten zoals-is, in een multi-huurdermilieu te verlaten, als de huurders verschillende lancerings en/of werkschemamodel vereisten hebben, dan is het waarschijnlijk dat individuele draagraketten voor elke huurder zullen moeten worden gecreeerd en worden gehandhaafd. Deze draagraketten zullen moeten worden gevormd om op de updates van hun huurder uit te voeren terwijl het verlaten van inhoud van andere huurders onveranderd. Dit kunt u eenvoudig bereiken door draagraketten toe te passen op opgegeven opslagpaden die huurspecifiek zijn.
+AEM gebruikt werkstroomdraagraketten om werkstroomuitvoering automatisch te starten wanneer opgegeven wijzigingen in de opslagplaats worden aangebracht. AEM biedt verschillende draagraketten uit het vak, bijvoorbeeld om processen voor het genereren van vertoningen en het ophalen van metagegevens uit te voeren voor nieuwe en bijgewerkte elementen. Terwijl het mogelijk is om deze draagraketten zoals-is, in een multi-huurdermilieu te verlaten, als de huurders verschillende lancerings en/of werkschemamodel vereisten hebben, dan is het waarschijnlijk dat individuele draagraketten voor elke huurder zullen moeten worden gecreeerd en worden gehandhaafd. Deze draagraketten zullen moeten worden gevormd om op de updates van hun huurder uit te voeren terwijl het verlaten van inhoud van andere huurders onaangeroerd. Dit kunt u eenvoudig bereiken door draagraketten toe te passen op opgegeven opslagpaden die huurspecifiek zijn.
 
 ### Vanity-URL&#39;s {#vanity-urls}
 
@@ -126,13 +126,13 @@ Wanneer het ontwikkelen van componenten en malplaatjes voor veelvoudige auteursg
 
 ### Testen {#testing}
 
-Hoewel een goede architectuur en open communicatiekanalen de introductie van defecten in onverwachte gebieden van de site kunnen helpen voorkomen, zijn deze benaderingen niet onbestendig. Daarom is het belangrijk om volledig te testen wat er op het platform wordt ingezet voordat er iets in productie wordt genomen. Dit vereist coördinatie tussen teams tijdens hun releasecycli en versterkt de behoefte aan een reeks geautomatiseerde tests die zoveel mogelijk functionaliteit bestrijken. Bovendien, omdat één systeem door veelvoudige teams zal worden gedeeld, worden de prestaties, de veiligheid, en de ladingstests belangrijker dan ooit.
+Hoewel een goede architectuur en open communicatiekanalen de introductie van defecten in onverwachte gebieden van de site kunnen helpen voorkomen, zijn deze benaderingen niet onbestendig. Daarom is het belangrijk om volledig te testen wat er op het platform wordt ingezet voordat er iets in productie wordt genomen. Dit vereist coördinatie tussen teams tijdens hun releasecycli en versterkt de behoefte aan een reeks geautomatiseerde tests die zoveel mogelijk functionaliteit bestrijken. Bovendien, omdat één systeem door veelvoudige teams wordt gedeeld, worden de prestaties, de veiligheid, en de ladingstests belangrijker dan ooit.
 
 ## Operationele overwegingen {#operational-considerations}
 
 ### Gedeelde bronnen {#shared-resources}
 
-AEM binnen één JVM wordt uitgevoerd; om het even welke opgestelde AEM toepassingen delen inherent middelen met elkaar, bovenop middelen die reeds in het normale lopen van AEM worden verbruikt. Binnen de ruimte JVM zelf, zal er geen logische scheiding van draden zijn, en de eindige middelen beschikbaar aan AEM, zoals geheugen, cpu, en schijf i/o zullen ook worden gedeeld. Om het even welke huurder die middelen verbruikt zal onvermijdelijk andere systeemhuurders beïnvloeden.
+AEM binnen één JVM wordt uitgevoerd; om het even welke opgestelde AEM toepassingen delen inherent middelen met elkaar, bovenop middelen die reeds in het normale lopen van AEM worden verbruikt. Binnen de ruimte JVM zelf, is er geen logische scheiding van draden, en de eindige middelen beschikbaar aan AEM, zoals geheugen, cpu, en schijf I/O wordt ook gedeeld. Om het even welke huurder die middelen verbruikt zal onvermijdelijk andere systeemhuurders beïnvloeden.
 
 ### Prestaties {#performance}
 
