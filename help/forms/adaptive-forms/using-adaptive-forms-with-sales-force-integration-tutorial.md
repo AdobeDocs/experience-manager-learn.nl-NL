@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisites}
 
-In dit artikel zullen wij door het proces lopen om Gegevensbron met Salesforce tot stand te brengen
+In dit artikel, lopen wij door het proces om Gegevensbron met Salesforce tot stand te brengen
 
 Vereisten voor deze zelfstudie:
 
@@ -29,14 +29,14 @@ Vereisten voor deze zelfstudie:
    * [Officiële documentatie voor het inschakelen van SSL op AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
    * [Officiële documentatie voor het inschakelen van SSL op AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
-* Je hebt een Salesforce-account nodig
+* U moet een Salesforce-account hebben
 * U moet een verbonden app maken. Het officiële documentatieformulier Salesforce voor het maken van de app wordt weergegeven [hier](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * Geef de juiste OAuth-oppervlakken op voor de app (ik heb alle beschikbare OAuth-oppervlakken geselecteerd voor testdoeleinden)
 * Geef de URL voor de callback op. De callback-URL in mijn geval was
 
-   * Als u **AEM Forms 6.3**, wordt de callback-URL https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. In dit URL-createlead is de naam van mijn formuliergegevensmodel.
+   * Als u **AEM Forms 6.3**, de callback-URL is https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. In dit URL-createlead is de naam van mijn formuliergegevensmodel.
 
-   * Als u** AEM Forms 6.4** gebruikt, wordt de callback-URL https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+   * Als u** AEM Forms 6.4** gebruikt, is de callback-URL https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 In dit voorbeeld is gbedekar -w7-1:6443 de naam van mijn server en de poort waarop AEM wordt uitgevoerd.
 
