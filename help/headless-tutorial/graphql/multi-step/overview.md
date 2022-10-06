@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 93d50e79853429f420803c28807ee8018d0ff78f
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
 
 ### AEM
 
-Om deze zelfstudie te voltooien, wordt AEM beheerder aangeraden toegang te krijgen tot een AEM as a Cloud Service omgeving.  Als u geen toegang hebt tot AEM as a Cloud Service omgeving, kunt u de opdracht [Lokale AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md). Het is echter belangrijk om te weten dat bepaalde gebruikersinterfaceschermen van het product, zoals de navigatie bij Content Fragment, anders zullen zijn.
+Om deze zelfstudie te voltooien, wordt AEM beheerder aangeraden toegang te krijgen tot een AEM as a Cloud Service omgeving.  Als u geen toegang hebt tot AEM as a Cloud Service omgeving, kunt u de opdracht [Lokale AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md). Het is echter belangrijk om te weten dat bepaalde gebruikersinterfaceschermen van producten, zoals de navigatie bij Content Fragment, verschillend zijn.
 
 ## Laten we beginnen!
 
