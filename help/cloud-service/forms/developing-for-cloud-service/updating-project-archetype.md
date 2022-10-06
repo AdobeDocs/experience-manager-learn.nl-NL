@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Aangezien we het nieuwe gefabriceerde project maken in de cloudmanager-map die a
 
 >[!NOTE]
 >
->Als u dit nieuwe project zoals is de instantie van de wolkendienst opstelt zal niet HandleFormSubmission en SubmitToAEMServlet hebben. Dit komt omdat elke keer dat u een project implementeert met gebruik van cloudbeheer, alles in de map apps wordt verwijderd en overschreven.
+>Als u dit nieuwe project zoals is de instantie van de wolkendienst opstelt zal niet HandleFormSubmission en SubmitToAEMServlet hebben. Dit komt omdat elke keer dat u een project implementeert met gebruik van Cloud Manager alles onder de `/apps` map wordt verwijderd en overschreven.
 
 ## Java-code kopiëren
 
