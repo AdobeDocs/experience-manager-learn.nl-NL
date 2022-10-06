@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: bc79fcbf-b8b3-4d3a-9cd6-0bcd9321c7d5
-source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Mogelijkheid voor slepen en neerzetten demonstreren om PDF te maken met AEM Form
 PDFG staat voor het genereren van PDF. Dit betekent dat u verschillende bestandsindelingen kunt omzetten in PDF. De meest voorkomende zijn Microsoft Office-documenten. PDFG maakt sinds 6.1 deel uit van AEM Forms.
 [De javadoc voor PDFG API wordt hier weergegeven](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
 
-Met de elementen die aan dit artikel zijn gekoppeld, kunt u MS Office-documenten of JPG-bestanden naar de neerzetzone van de pagina HTML slepen en neerzetten. Nadat het document is neergezet, wordt de PDFG-service geactiveerd en wordt het document omgezet in PDF en opgeslagen in het bestandssysteem van AEM Server.
+Met de elementen die aan dit artikel zijn gekoppeld, kunt u MS Office-documenten of JPG-bestanden naar de neerzetzone van de pagina HTML slepen en neerzetten. Zodra het document wordt gelaten vallen, roept het de dienst PDFG aan en zet het document in PDF om en bewaar het op het dossiersysteem van AEM Server.
 
 Voer de volgende stappen uit om de demo-elementen te installeren
 
@@ -31,9 +31,9 @@ Voer de volgende stappen uit om de demo-elementen te installeren
 1. [Navigeren naar post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) in uw CRX
 1. De opslaglocatie naar uw voorkeur wijzigen (regel 9)
 1. Sla uw wijzigingen op.
-1. Open de [  html-pagina](http://localhost:4502/content/DocumentServices/CreatePDFG.html) voor het slepen en neerzetten van bestanden voor conversie.
+1. Open de [html-pagina](http://localhost:4502/content/DocumentServices/CreatePDFG.html) voor het slepen en neerzetten van bestanden voor conversie.
 1. Zet een tekstbestand of JPG neer in de neerzetzone.
-1. Het invoerdocument wordt omgezet in PDF en opgeslagen op dezelfde locatie als in punt 4.
+1. Het invoerdocument wordt geconverteerd naar PDF en opgeslagen op dezelfde locatie als in punt 4.
 
 Het volgende codefragment toont het gebruik van de PDFG-service om bestanden om te zetten in PDF
 
