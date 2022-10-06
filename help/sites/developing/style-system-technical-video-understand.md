@@ -6,34 +6,34 @@ version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
 
-
 # Begrijpen hoe u code kunt gebruiken voor het Stijlsysteem{#understanding-how-to-code-for-the-aem-style-system}
 
-In deze video bekijken we de anatomie van de CSS (of [!DNL LESS]) en JavaScript die wordt gebruikt om de component van de Titel van de Kern van het Beheer van de Stijl te creëren gebruikend het Systeem van de Stijl, evenals hoe deze stijlen op HTML en DOM worden toegepast.
+In deze video bekijken we de anatomie van de CSS (of [!DNL LESS]) en JavaScript die worden gebruikt om de component Core Title van Experience Manage op te maken met behulp van het Stijlsysteem, en hoe deze stijlen worden toegepast op de HTML en DOM.
 
 
 ## Begrijpen hoe u code kunt gebruiken voor het Stijlsysteem {#understanding-how-to-code-for-the-style-system}
 
 >[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
 
-Het verstrekte AEMPakket (**technical-review.sites.style-system-1.0.0.zip**) installeert de stijl van de voorbeeldtitel, steekproefbeleid voor de componenten van de Lay-out van de Wij.Detailhandel en van de Titel, en een steekproefpagina.
+Het meegeleverde AEM (**technical-review.sites.style-system-1.0.0.zip**) installeert de stijl van de voorbeeldtitel, steekproefbeleid voor de de container en componenten van de Titel van de Lay-out Wij.Retail, en een steekproefpagina.
 
 [technical-review.sites.style-system-1.0.0.zip](assets/technical-review.sites.style-system-1.0.0.zip)
 
 ### De CSS {#the-css}
 
-Hier volgt de definitie [!DNL LESS] voor de voorbeeldstijl die u vindt op:
+Het volgende is [!DNL LESS] definitie voor de voorbeeldstijl gevonden op:
 
 * `/apps/demo/sites/style-system/clientlib-example/components/titles/styles/example.less`
 
-Voor diegenen die liever CSS gebruiken, wordt onder dit codefragment de CSS weergegeven waarin [!DNL LESS] compileert.
+Voor diegenen die liever CSS gebruiken, is dit codefragment onder dit codefragment de CSS-code [!DNL LESS] compileert in.
 
 ```css
 /* LESS */
@@ -61,7 +61,7 @@ Voor diegenen die liever CSS gebruiken, wordt onder dit codefragment de CSS weer
 }
 ```
 
-Het bovenstaande [!DNL LESS] wordt native gecompileerd door te Experience Managers naar de volgende CSS.
+Het bovenstaande [!DNL LESS] wordt native gecompileerd door Experience Manager naar de volgende CSS.
 
 ```css
 /* CSS */
@@ -92,7 +92,7 @@ Met de volgende JavaScript-code worden de datum en tijd waarop de pagina voor he
 
 Het gebruik van jQuery is optioneel en de gebruikte naamgevingsconventies.
 
-Hier volgt de definitie [!DNL LESS] voor de voorbeeldstijl die u vindt op:
+Het volgende is [!DNL LESS] definitie voor de voorbeeldstijl gevonden op:
 
 * `/apps/demo/sites/style-system/clientlib-example/components/titles/styles/js/title.js`
 
@@ -144,12 +144,12 @@ jQuery(function ($) {
 
 ## Best practices voor ontwikkeling {#development-best-practices}
 
-### Tips en trucs voor HTML {#html-best-practices}
+### Aanbevolen werkwijzen voor HTML {#html-best-practices}
 
 * HTML (gegenereerd via HTL) moet zo structureel mogelijk semantisch zijn; onnodige groepering/nesting van elementen vermijden.
 * HTML-elementen moeten kunnen worden benaderd via CSS-klassen in BEM-stijl.
 
-**Goed**  - Alle elementen in de component kunnen via BEM-notatie worden geadresseerd:
+**Goed** - Alle elementen in de component kunnen worden opgenomen via BEM-notatie:
 
 ```html
 <!-- Good practice -->
@@ -160,7 +160,7 @@ jQuery(function ($) {
 </div>
 ```
 
-**Slecht**  - De lijst en lijstelementen zijn slechts adresseerbaar door elementnaam:
+**Slecht** - De lijst en lijstelementen zijn slechts adresseerbaar door elementnaam:
 
 ```html
 <!-- Bad practice -->
@@ -173,7 +173,7 @@ jQuery(function ($) {
 
 * Het is beter om meer gegevens bloot te stellen en het te verbergen dan te weinig gegevens bloot te stellen die toekomstige achterste-eindontwikkeling vereisen om het bloot te stellen.
 
-   * Het implementeren van afhandelbare inhoudsschakelingen kan helpen om deze HTML slank te houden, waarbij auteurs kunnen selecteren welke inhoudselementen naar de HTML worden geschreven. De optie kan vooral belangrijk zijn bij het schrijven van afbeeldingen naar de HTML-indeling die mogelijk niet voor alle stijlen worden gebruikt.
+   * Het uitvoeren van de auteur-able inhoudsknevels kan helpen in het houden van deze HTML mager, waarbij de auteurs kunnen selecteren welke inhoudselementen aan de HTML worden geschreven. De optie kan vooral belangrijk zijn wanneer u afbeeldingen naar de HTML schrijft die niet voor alle stijlen worden gebruikt.
    * De uitzondering op deze regel is wanneer dure bronnen, bijvoorbeeld afbeeldingen, standaard beschikbaar worden gemaakt, aangezien gebeurtenisafbeeldingen die door CSS worden verborgen, in dit geval onnodig worden opgehaald.
 
       * Moderne afbeeldingscomponenten gebruiken vaak JavaScript om de meest geschikte afbeelding voor het gebruik van het hoofdlettergebruik (viewport) te selecteren en te laden.
@@ -182,23 +182,23 @@ jQuery(function ($) {
 
 >[!NOTE]
 >
->Het Stijlsysteem maakt een kleine technische afwijking van [BEM](https://en.bem.info/), in die zin dat `BLOCK` en `BLOCK--MODIFIER` niet op hetzelfde element worden toegepast, zoals gespecificeerd door [BEM](https://en.bem.info/).
+>Het Stijlsysteem maakt een kleine technische afwijking van [BEM](https://en.bem.info/)in dat `BLOCK` en `BLOCK--MODIFIER` worden niet toegepast op hetzelfde element, zoals opgegeven door [BEM](https://en.bem.info/).
 >
->In plaats daarvan wordt `BLOCK--MODIFIER` vanwege productbeperkingen toegepast op het bovenliggende element van het `BLOCK`-element.
+>In plaats daarvan, wegens productbeperkingen, `BLOCK--MODIFIER` wordt toegepast op het bovenliggende element van het `BLOCK` element.
 >
->Alle andere huurders van [BEM](https://en.bem.info/) moeten met worden uitgelijnd.
+>Alle andere huurders van [BEM](https://en.bem.info/) moet worden uitgelijnd.
 
-* Gebruik preprocessoren zoals [LESS](https://lesscss.org/) (ondersteund door AEM native) of [SCSS](https://sass-lang.com/) (vereist aangepast constructiesysteem) voor duidelijke CSS-definitie en herbruikbaarheid.
+* Voorprocessors zoals [MINDER](https://lesscss.org/) (ondersteund door AEM native) of [SCSS](https://sass-lang.com/) (vereist aangepast constructiesysteem) voor duidelijke CSS-definitie en herbruikbaarheid.
 
 * Gewicht/specificiteit van kiezer uniform houden; Hiermee kunt u conflicten met CSS-trapsgewijze opmaak voorkomen en oplossen.
 * Elke stijl indelen in een afzonderlijk bestand.
-   * Deze bestanden kunnen worden gecombineerd met behulp van LESS/SCSS `@imports` of als onbewerkte CSS is vereist, via het opnemen van HTML-clientbibliotheekbestanden of aangepaste front-end systemen voor het bouwen van elementen.
+   * Deze bestanden kunnen worden gecombineerd met LESS/SCSS `@imports` of als onbewerkte CSS is vereist, via het opnemen van bestanden in de HTML-clientbibliotheek of aangepaste front-end systemen voor het maken van elementen.
 * Vermijd het mengen van vele complexe stijlen.
    * Hoe meer stijlen tegelijk op een component kunnen worden toegepast, hoe groter de variatie aan permutaties. Dit kan moeilijk te handhaven/QA/verzekeren merkgroepering worden.
 * Gebruik altijd CSS-klassen (na BEM-notatie) om CSS-regels te definiëren.
    * Als het selecteren van elementen zonder CSS-klassen (dus blote elementen) absoluut noodzakelijk is, verplaatst u deze hoger in de CSS-definitie om duidelijk te maken dat ze minder specifiek zijn dan eventuele botsingen met elementen van dat type die wel selecteerbare CSS-klassen hebben.
-* Vermijd direct het stileren `BLOCK--MODIFIER` aangezien dit aan het Responsieve Net in bijlage is. Het wijzigen van de weergave van dit element kan van invloed zijn op de rendering en functionaliteit van het responsieve raster. Stijl dus alleen op dit niveau wanneer de intentie bestaat om het gedrag van het responsieve raster te wijzigen.
-* Pas stijlbereik toe met `BLOCK--MODIFIER`. De `BLOCK__ELEMENT--MODIFIERS` kan in de Component worden gebruikt, maar aangezien `BLOCK` de Component vertegenwoordigt, en de Component is wat wordt gestileerd, is de Stijl &quot;bepaald&quot;en scoped via `BLOCK--MODIFIER`.
+* Vermijd het opmaken van de `BLOCK--MODIFIER` direct aangezien dit aan het Responsieve Net in bijlage is. Het wijzigen van de weergave van dit element kan van invloed zijn op de rendering en functionaliteit van het responsieve raster. Stijl dus alleen op dit niveau wanneer de intentie bestaat om het gedrag van het responsieve raster te wijzigen.
+* Stijlbereik toepassen met `BLOCK--MODIFIER`. De `BLOCK__ELEMENT--MODIFIERS` kan in de component worden gebruikt, maar sinds `BLOCK` vertegenwoordigt de Component, en de Component is wat wordt gestileerd, is de Stijl &quot;bepaald&quot;en scoped via `BLOCK--MODIFIER`.
 
 Voorbeeld-CSS-selectiestructuur moet als volgt zijn:
 
@@ -216,7 +216,7 @@ Voorbeeld-CSS-selectiestructuur moet als volgt zijn:
    <td valign="middle"><span class="code">.cmp-list</span></td> 
    <td valign="middle"><span class="code">.cmp-list__item</span></td> 
    <td valign="middle">→</td> 
-   <td><p><span class="code">.cmp-list—donker</span></p> <p><span class="code"> .cmp-list</span></p> <p><span class="code"> </span><strong><span class="code"> .cmp-list__item {  </span></strong></p> <p><strong> kleur: blauw;</strong></p> <p><strong> }</strong></p> </td> 
+   <td><p><span class="code">.cmp-list—donker</span></p> <p><span class="code"> .cmp-list</span></p> <p><span class="code"> </span><strong><span class="code"> .cmp-list__item { </span></strong></p> <p><strong> kleur: blauw;</strong></p> <p><strong> }</strong></p> </td> 
   </tr> 
   <tr> 
    <td valign="middle"><span class="code">.cmp-image—hero</span></td> 
@@ -228,7 +228,7 @@ Voorbeeld-CSS-selectiestructuur moet als volgt zijn:
  </tbody> 
 </table>
 
-In het geval van geneste componenten overschrijdt de CSS-selectierdiepte voor deze geneste componentelementen de selector op het derde niveau. Herhaal hetzelfde patroon voor de geneste component, maar het bereik wordt ingesteld door `BLOCK` van de bovenliggende component. Met andere woorden, start de geneste component `BLOCK` op het derde niveau en de geneste component `ELEMENT` op het vierde selectorniveau.
+In het geval van geneste componenten overschrijdt de CSS-selectierdiepte voor deze geneste componentelementen de selector op het derde niveau. Herhaal hetzelfde patroon voor de geneste component, maar bereik ingesteld door de bovenliggende component `BLOCK`. Met andere woorden, start de geneste component `BLOCK` op het derde niveau en de geneste componenten `ELEMENT` bevindt zich op het vierde selectieniveau.
 
 ### Aanbevolen werkwijzen voor JavaScript {#javascript-best-practices}
 
@@ -240,15 +240,15 @@ De in deze sectie gedefinieerde aanbevolen procedures hebben betrekking op &#39;
 * Evalueer het gebruik van Javascript opnieuw als deze asynchroon (via AJAX) nieuwe gegevens/inhoud invoegt wanneer de component meerdere keren op een pagina wordt weergegeven.
 * Verwerk zowel de publicatie- als de ontwerpervaring.
 * Gebruik style-JavaScript waar mogelijk opnieuw.
-   * Als bijvoorbeeld voor meerdere stijlen van een component de afbeelding naar een achtergrondafbeelding moet worden verplaatst, kan de stijl-JavaScript één keer worden geïmplementeerd en aan meerdere `BLOCK--MODIFIERs` worden gekoppeld.
+   * Als bijvoorbeeld voor meerdere stijlen van een component de afbeelding naar een achtergrondafbeelding moet worden verplaatst, kan de stijl-JavaScript één keer worden geïmplementeerd en aan meerdere stijlen worden gekoppeld `BLOCK--MODIFIERs`.
 * Scheid stijl-JavaScript van functionele JavaScript wanneer mogelijk.
-* Evalueer de kosten van JavaScript tegenover het direct via HTML zichtbaar maken van deze DOM-wijzigingen in de HTML.
+* Evalueer de kosten van JavaScript tegenover het direct via HTML manifesteren van deze DOM veranderingen in de HTML.
    * Wanneer voor een component die style-JavaScript gebruikt, serverwijzigingen nodig zijn, moet u nagaan of de JavaScript-manipulatie op dit moment kan worden geïntroduceerd en wat de effecten/vertakkingen zijn voor de prestaties en de draagbaarheid van de component.
 
 #### Prestatieoverwegingen {#performance-considerations}
 
 * Stijl-JavaScript moet licht en mager worden gehouden.
-* U voorkomt flikkerende en onnodige hertekeningen door eerst de component via `BLOCK--MODIFIER BLOCK` te verbergen en weer te geven wanneer alle DOM-manipulaties in JavaScript zijn voltooid.
+* Verberg eerst de component via `BLOCK--MODIFIER BLOCK`en deze weer te geven wanneer alle DOM-manipulaties in het JavaScript zijn voltooid.
 * De prestaties van de stijl-JavaScript manipulaties zijn gelijkaardig aan basisjQuery stop-ins die aan elementen op DOMReady vastmaken en wijzigen.
 * Zorg ervoor dat aanvragen worden gecomprimeerd en dat CSS en JavaScript worden geminiateerd.
 
