@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,27 +21,20 @@ Vanaf AEM Forms 6.5.1 kunnen nu foutberichten worden vastgelegd en validatieopti
 * Optie voor validatie op drie niveaus (&quot;OFF&quot;, &quot;BASIC&quot; en &quot;FULL&quot;) voor het verwerken van uitzonderingen die worden aangetroffen bij het aanroepen van de service Formuliergegevensmodel. De drie opties wijzen achtereenvolgens op een striktere versie van het controleren van gegevensbestand-specifieke vereisten.
    ![validatieniveaus](assets/validation-level.PNG)
 
-* Het aanvinken van een selectievakje voor het aanpassen van de uitvoering van de workflow. Daarom heeft de gebruiker nu de flexibiliteit om door te gaan met de uitvoering van de workflow, zelfs als de stap Formuliergegevensmodel aanroepen uitzonderingen genereert.
+* Het aanvinken van een selectievakje voor het aanpassen van de uitvoering van de workflow. Daarom heeft de gebruiker nu de flexibiliteit om door te gaan met de Workflowuitvoering, zelfs als de stap Formuliergegevensmodel aanroepen uitzonderingen genereert.
 
 * Belangrijke informatie opslaan over fouten die zich voordoen als gevolg van validatie-uitzonderingen. Drie variabelen van het type AutoComplete zijn opgenomen om relevante variabelen te selecteren om ErrorCode (Koord), ErrorMessage (Koord) en ErrorDetails (JSON) op te slaan. ErrorDetails zou echter aan ongeldige toename worden geplaatst de uitzondering is geen DermisValidationException.
    ![vastleggen, foutberichten](assets/fdm-error-details.PNG)
 
-Met deze wijzigingen zorgt de stap Service Formuliergegevensmodel aanroepen ervoor dat de invoerwaarden voldoen aan de gegevensbeperkingen die in het kwikbestand zijn opgegeven. Het volgende foutbericht wordt bijvoorbeeld gegenereerd wanneer de waarden voor accountId en balans niet voldoen aan de gegevensbeperkingen die in het wagerbestand zijn opgegeven.
+Met deze wijzigingen zorgt de stap Service Formuliergegevensmodel aanroepen ervoor dat de invoerwaarden voldoen aan de gegevensbeperkingen die in het kwikbestand zijn opgegeven. Het volgende foutbericht wordt bijvoorbeeld gegenereerd wanneer de waarden voor accountId en balance niet voldoen aan de gegevensbeperkingen die in het wagerbestand zijn opgegeven.
 
 ```json
 {
-
-"errorCode": "AEM-FDM-001-049"
-
-"errorMessage": "Input validations failed during operation execution"
-
-"violations": {
-
-"/accountId": ["numeric instance is greater than the required maximum (maximum: 20, found: 97)"],
-
-"/newAccount/balance": ["instance type (string) does not match any allowed primitive type (allowed: [\"integer\",\"number\"])"]
-
-}
-
+    "errorCode": "AEM-FDM-001-049"
+    "errorMessage": "Input validations failed during operation execution"
+    "violations": {
+        "/accountId": ["numeric instance is greater than the required maximum (maximum: 20, found: 97)"],
+        "/newAccount/balance": ["instance type (string) does not match any allowed primitive type (allowed: [\"integer\",\"number\"])"]
+    }   
 }
 ```
