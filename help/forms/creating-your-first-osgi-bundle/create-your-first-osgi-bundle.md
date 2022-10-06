@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
-source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ De nieuwste versie van [verduisteren](https://www.eclipse.org/downloads/)
 
 ## Uw eerste project maken
 
-Archetype is een Maven project sjabloonkit. Een archetype wordt gedefinieerd als een origineel patroon of model waaruit alle andere dingen van dezelfde soort zijn gemaakt. De naam past bij de manier waarop we proberen een systeem te bieden dat een consistente manier biedt om Maven-projecten te genereren. Archetype zal auteurs helpen Maven projectmalplaatjes voor gebruikers tot stand brengen, en voorziet gebruikers van de middelen om geparameterized versies van die projectmalplaatjes te produceren.
+Archetype is een Maven project sjabloonkit. Een archetype wordt gedefinieerd als een origineel patroon of model waaruit alle andere dingen van dezelfde soort zijn gemaakt. De naam past bij de manier waarop we proberen een systeem te bieden dat een consistente manier biedt om Maven-projecten te genereren. Archetype helpt auteurs Maven projectmalplaatjes voor gebruikers, en voorziet gebruikers van de middelen om geparameterized versies van die projectmalplaatjes te produceren.
 Voer de volgende stappen uit om uw eerste gemaakte project te maken:
 
 * Een nieuwe map maken met de naam `aemformsbundles` in uw C-station
@@ -95,13 +95,13 @@ Klikken **Voltooien** om het importproces te starten
 
 Project wordt geïmporteerd in Eclipse en er wordt een aantal `mysite.xxxx` mappen
 
-Breid uit `src/main/java` onder de `mysite.core` map. Dit is de map waarin u het grootste deel van uw code gaat schrijven.
+Breid uit `src/main/java` onder de `mysite.core` map. Dit is de map waarin u het grootste deel van uw code schrijft.
 
 ![gegevensbron](assets/mysite-core-project.png)
 
 ## AEMFD Client SDK opnemen
 
-U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren van verschillende services die bij AEM Forms worden geleverd. Zie [AEMFD Client SDK](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliënt SDK in uw Geweven project op te nemen. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder aangegeven.
+U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren van verschillende services die bij AEM Forms worden geleverd. Zie [AEMFD Client SDK](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliënt SDK in uw Geweven project op te nemen. U moet de AEM FD Client SDK opnemen in de sectie Afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder aangegeven.
 
 ```xml
 <dependency>
@@ -116,5 +116,5 @@ Voer de volgende stappen uit om uw project te maken:
 * Openen **opdrachtpromptvenster**
 * Ga naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
-Bovenstaande opdracht bouwt en installeert de bundel op de AEM server waarop `http://localhost:4502`. De bundel is ook beschikbaar op het bestandssysteem op
+Bovenstaande opdracht bouwt en installeert de bundel op de AEM server waarop `http://localhost:4502`. De bundel is ook beschikbaar in het bestandssysteem op
    `C:\AEMFormsBundles\mysite\core\target` en kan worden ingezet met behulp van [Felix-webconsole](http://localhost:4502/system/console/bundles)
