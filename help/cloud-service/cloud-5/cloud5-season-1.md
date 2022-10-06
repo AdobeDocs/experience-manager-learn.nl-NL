@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: c6844750c2ef7c3471ce6a337002dde508d611f2
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Ga naar [Suggestievak](https://forms.office.com/r/74P5Xz4UH0) voor het indienen 
 
 ## Seizoen 1
 
-Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven. De onderwerpen van seizoen 1 zijn voornamelijk gebaseerd op eerdere verzoeken die we hebben ontvangen in onze dagelijkse afspraken met klanten en partners. Bezoek deze pagina voor wekelijkse updates of volg ons op het sociale netwerk van uw keuze.
+Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema. De onderwerpen van seizoen 1 zijn voornamelijk gebaseerd op eerdere verzoeken die we hebben ontvangen in onze dagelijkse afspraken met klanten en partners. Bezoek deze pagina voor wekelijkse updates of volg ons op het sociale netwerk van uw keuze.
 
 <table>
   <tr>
