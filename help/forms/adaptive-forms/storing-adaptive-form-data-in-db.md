@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Het gebruiksscenario is dat een AEM workflow wordt geactiveerd voor het verzende
 
    * Zoek naar &quot;Pool van de Verbinding JDBC&quot;. Maak een nieuwe dag gemeenschappelijke JDBC-verbindingspool. Geef de specifieke instellingen voor uw database op.
 
-   * ![jdbc-verbindingspool](assets/aemformstutorial-jdbc.png)
+   * ![OSGi-configuratie van JDBC-verbindingspool](assets/aemformstutorial-jdbc.png)
 
 ## Databasegegevens opgeven
 
@@ -38,7 +38,7 @@ Het gebruiksscenario is dat een AEM workflow wordt geactiveerd voor het verzende
    * Formuliernaam - Kolomnaam voor de naam van het formulier
    * Kolomnaam - Kolomnaam om de AF-gegevens te bevatten
 
-![insertData](assets/specify-database-details.png)
+   ![Specificeer de details van het Gegevensbestand OSGi configuratie](assets/specify-database-details.png)
 
 
 
