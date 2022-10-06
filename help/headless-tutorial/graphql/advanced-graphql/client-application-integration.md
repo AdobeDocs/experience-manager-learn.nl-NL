@@ -6,13 +6,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: d0576962-a86a-4742-8635-02be1ec3243f
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
-
 
 # Integratie van clienttoepassingen
 
@@ -76,7 +76,7 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
 
    ![POST GraphQL](assets/client-application-integration/post-query-graphql.png)
 
-   U dient een `POST` aan het eindpunt GraphQL. De `Payload`, kunt u de volledige vraag zien GraphQL die werd verzonden. In de volgende secties wordt de app bijgewerkt voor gebruik **blijvend** query&#39;s.
+   U dient een `POST` aan het eindpunt GraphQL. De `Payload`, kunt u de volledige vraag zien GraphQL die werd verzonden. In de volgende secties wordt de app bijgewerkt om te gebruiken **blijvend** query&#39;s.
 
 
 ## Aan de slag
