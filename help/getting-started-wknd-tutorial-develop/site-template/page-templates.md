@@ -11,9 +11,9 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worde
 
 ## Wat u gaat maken {#what-you-will-build}
 
-In dit gedeelte van de zelfstudie maakt u een nieuwe sjabloon voor de artikelpagina van tijdschriften waarmee u nieuwe artikelen voor tijdschriften kunt maken en uitlijnt op een algemene structuur. De sjabloon is gebaseerd op ontwerpen en een UI-kit die in AdobeXD wordt gemaakt. Dit hoofdstuk is alleen gericht op het opbouwen van de structuur of het skelet van de sjabloon. Er worden geen stijlen geïmplementeerd, maar de sjabloon en pagina&#39;s zijn functioneel.
+In dit gedeelte van de zelfstudie maakt u een nieuwe sjabloon voor de artikelpagina van tijdschriften waarmee u nieuwe artikelen voor tijdschriften kunt maken en uitlijnt op een algemene structuur. De sjabloon is gebaseerd op ontwerpen en een UI-kit die in AdobeXD is gemaakt. Dit hoofdstuk is alleen gericht op het opbouwen van de structuur of het skelet van de sjabloon. Er worden geen stijlen geïmplementeerd, maar de sjabloon en pagina&#39;s zijn functioneel.
 
 ## De sjabloon voor artikelpagina voor tijdschriften maken
 
