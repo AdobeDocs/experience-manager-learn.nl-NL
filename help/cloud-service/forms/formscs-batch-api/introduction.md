@@ -7,7 +7,8 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Output Service
 topic: Development
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+exl-id: 165e2884-4399-4970-81ff-1f2f8b041a10
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -26,8 +27,4 @@ Als u de AEM Forms CS-batchbewerking-API wilt gebruiken, hebt u de volgende conf
 1. Batchgegevensopslagconfiguratie maken
 1. De batch-API uitvoeren
 
-U wordt aangeraden vertrouwd te raken met de [API-documentatie](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en) voordat u deze zelfstudie gaat gebruiken.
-
-
-
-
+U wordt aangeraden vertrouwd te raken met de [API-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en) voordat u deze zelfstudie gaat gebruiken.
