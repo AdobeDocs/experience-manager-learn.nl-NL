@@ -2,22 +2,22 @@
 title: Panorama en Vertical Image Viewer gebruiken met AEM Assets Dynamic Media
 description: De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panorama Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
 sub-product: dynamic-media
-feature: Videoprofielen, videoprofielen, 360 VR-video
+feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
 
-
 # Panorama en Vertical Image Viewer gebruiken met AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panorama Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
+De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panoramische Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156/?quality=9&learn=on)
 
@@ -27,7 +27,7 @@ De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Pano
 
 ## Panoramische en panoramische VR-viewer
 
-Een afbeelding wordt op basis van de hoogte-breedteverhouding of trefwoorden als panoramisch beschouwd. Standaard wordt een afbeelding met een hoogte-breedteverhouding van 2 beschouwd als een panoramische afbeelding. Voorinstellingen voor de Panoramische afbeeldingsviewer worden beschikbaar voor een voorvertoning als deze aan de bovenstaande criteria voldoen. Het criterium van de beeldverhouding panoramische kan in de configuratie van DMS7 van het bedrijf worden gewijzigd door het dubbele bezit s7PanoramicAR bij /conf/global/settings/cloudconfigs/dmscene7/jcr:content te specificeren. De trefwoorden worden opgeslagen in de eigenschap dc:keyword van het metagegevensknooppunt van het element. Als de trefwoorden een van de volgende combinaties bevatten:
+Een afbeelding wordt op basis van de hoogte-breedteverhouding of trefwoorden als panoramisch beschouwd. Een afbeelding met de hoogte-breedteverhouding 2 wordt standaard beschouwd als een panoramische afbeelding. Voorinstellingen voor de Panoramische afbeeldingsviewer worden beschikbaar voor een voorvertoning als deze aan de bovenstaande criteria voldoen. Het criterium van de beeldverhouding panoramische kan in de configuratie van DMS7 van het bedrijf worden gewijzigd door het dubbele bezit s7PanoramicAR bij /conf/global/settings/cloudconfigs/dmscene7/jcr:content te specificeren. De trefwoorden worden opgeslagen in de eigenschap dc:keyword van het metagegevensknooppunt van het element. Als de trefwoorden een van de volgende combinaties bevatten:
 
 * rechthoekig,
 * bolvormig + panoramisch,
@@ -37,7 +37,7 @@ wordt beschouwd als een Panoramisch afbeeldingselement, ongeacht de hoogte-breed
 
 ## Verticale afbeeldingsviewer
 
-Bij horizontale stalen zijn de stalen soms pas zichtbaar wanneer de gebruiker de pagina omlaag schuift, afhankelijk van de schermgrootte van het bureaublad van de gebruiker. Door gebruik te maken van een verticale viewer voor afbeeldingen en verticale stalen te plaatsen, zorgt u ervoor dat de stalen zichtbaar zijn, ongeacht de schermgrootte. Ook wordt de hoofdafbeeldingsgrootte gemaximaliseerd. Bij horizontale stalen moest ruimte op de pagina worden gereserveerd, zodat deze zeer waarschijnlijk zichtbaar is en de hoofdafbeelding kleiner wordt. Bij een verticale lay-out hoeft u zich geen zorgen te maken over de toewijzing van deze ruimte en kunt u daarom de grootte van de hoofdafbeelding maximaliseren.
+Bij horizontale stalen zijn de stalen soms pas zichtbaar wanneer de gebruiker de pagina omlaag schuift, afhankelijk van de grootte van het scherm op het bureaublad. Door gebruik te maken van een verticale viewer voor afbeeldingen en verticale stalen te plaatsen, zorgt u ervoor dat de stalen zichtbaar zijn, ongeacht de schermgrootte. Ook wordt de hoofdafbeeldingsgrootte gemaximaliseerd. Bij horizontale stalen moest ruimte op de pagina worden gereserveerd, zodat deze zeer waarschijnlijk zichtbaar is en de hoofdafbeelding kleiner wordt. Bij een verticale lay-out hoeft u zich geen zorgen te maken over de toewijzing van deze ruimte en kunt u daarom de grootte van de hoofdafbeelding maximaliseren.
 
 <table> 
  <tbody>
