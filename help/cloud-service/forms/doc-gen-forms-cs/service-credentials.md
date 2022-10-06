@@ -1,5 +1,5 @@
 ---
-title: AEM servicekredieten
+title: AEM Forms Service Credentials
 description: Download servicegegevens van AEM Developer Console.
 type: Documentation
 role: Developer
@@ -9,17 +9,17 @@ feature: Adaptive Forms
 topic: Development
 kt: 8192
 thumbnail: 330519.jpg
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+exl-id: 74cb8c30-4c41-426c-a1b5-fc595a3167c8
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
 
+# AEM Forms Service Credentials
 
-# Servicereferenties
-
-Integraties met AEM als Cloud Service moeten veilig kunnen worden geverifieerd op AEM. De Console van de Ontwikkelaar van AEM produceert de Referenties van de Dienst, die door externe toepassingen, systemen, en de diensten worden gebruikt om programmatically met de Auteur van AEM of de Publish diensten van HTTP in wisselwerking te staan.
+Integraties met AEM as a Cloud Service moeten veilig kunnen worden geverifieerd op AEM. AEM de Console van de Ontwikkelaar produceert de Referenties van de Dienst, die door externe toepassingen, systemen, en de diensten worden gebruikt programmatically met AEM auteur of publiceer de diensten over HTTP in wisselwerking te staan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
 
