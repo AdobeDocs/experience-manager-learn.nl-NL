@@ -1,15 +1,15 @@
 ---
 title: Aangepaste formuliersjabloon maken
 description: De sjabloon definieert de structuur en initiële inhoud van het adaptieve formulier.
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 # Aangepaste formuliersjabloon maken
 
-Elk adaptief formulier is gebaseerd op een adaptief formuliersjabloon. De sjabloon definieert de structuur, de initiële inhoud, het thema, enzovoort, van het aangepaste formulier dat wordt overgeërfd. U kunt een nieuwe adaptieve formuliersjabloon maken of de sjabloon uit het vak gebruiken wanneer u het aangepaste formulier maakt.
-Het sjabloon dat u hier hebt gemaakt, zal de basis vormen voor ons adaptieve formulier.
+Elk adaptief formulier is gebaseerd op een adaptief formuliersjabloon. De sjabloon definieert de structuur, de initiële inhoud, het thema, enz. van het aangepaste formulier. U kunt een nieuwe adaptieve formuliersjabloon maken of de sjabloon uit het vak gebruiken wanneer u het aangepaste formulier maakt.
+Het sjabloon dat hier is gemaakt, vormt de basis voor ons adaptieve formulier.
 In de volgende video ziet u het basisproces voor het maken van een adaptieve formuliersjabloon
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-Raadpleeg de documentatie van [adaptieve formuliersjablonen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) voor meer informatie
+Zie [documentatie over adaptieve formuliersjablonen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) voor meer informatie
 
-Indien nodig kunt u de [adaptieve formuliersjabloon](assets/peak-application-template.zip) downloaden en naar AEM importeren met de [pakketmanager](http://localhost:4502/crx/packmgr/index.jsp)
+Indien nodig kunt u de [adaptieve formuliersjabloon](assets/peak-application-template.zip) en importeren in AEM met behulp van de [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
