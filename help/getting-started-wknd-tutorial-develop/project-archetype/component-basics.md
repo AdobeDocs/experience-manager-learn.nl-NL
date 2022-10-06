@@ -12,16 +12,16 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
 
 # Basisbeginselen van componenten {#component-basics}
 
-In dit hoofdstuk gaan we de onderliggende technologie van een Adobe Experience Manager (AEM) Sites Component verkennen via een eenvoudige `HelloWorld` voorbeeld. Kleine wijzigingen worden aangebracht aan een bestaande component, die onderwerpen van creatie, HTML, Verschilderende Modellen, cliënt-zijbibliotheken behandelt.
+In dit hoofdstuk gaan we de onderliggende technologie van een Adobe Experience Manager (AEM) Sites Component verkennen via een eenvoudige `HelloWorld` voorbeeld. Kleine wijzigingen worden aangebracht aan een bestaande component, die onderwerpen van creatie, HTML, het Verdelen Modellen, cliënt-zijbibliotheken behandelt.
 
 ## Vereisten {#prerequisites}
 
@@ -282,7 +282,7 @@ Hierna zullen we een aantal wijzigingen aanbrengen in de `HelloWorldModel` Het M
 
 Client-Side Libraries, clientlibs for short, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
 
-De [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module is een ontkoppelde [webpack](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. Hierdoor kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` zal meer in detail worden onderzocht in [Hoofdstuk Client Side Libraries](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+De [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module is een ontkoppelde [webpack](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. Hierdoor kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` wordt meer in detail onderzocht in [Hoofdstuk Client Side Libraries](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Werk vervolgens de CSS-stijlen bij voor de `HelloWorld` component.
 
