@@ -3,7 +3,7 @@ title: Model en archetypen voor bestuur en personeel
 description: Leer hoe u uw Adobe Experience Manager-platform (AEM) kunt exploiteren en de meeste waarde van uw inspanningen krijgt.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -133,4 +133,4 @@ Hieronder volgen voorbeelden van rollen voor een licht en zwaar clientscenario:
 
 Voor een diepgaandere bespreking van Governance en Staffing Modellen &amp; Archetypes, luister naar deze één-uurpaneldiscussie: [Rolarchetypen en het creëren van een operationeel kader voor [!DNL AEM Assets] en [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Meer informatie over strategie en leiderschap bij de [Klant geslaagd](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Meer informatie over strategie en leiderschap bij de [Klant geslaagd](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
