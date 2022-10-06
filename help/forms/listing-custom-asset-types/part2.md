@@ -1,8 +1,6 @@
 ---
 title: Aangepaste assettypen aanbieden in AEM Forms
-seo-title: Listing Custom Asset Types in AEM Forms
 description: Deel 2 van Aangepaste assettypen in AEM Forms
-seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
 topics: development
@@ -15,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -25,7 +23,6 @@ ht-degree: 0%
 # Aangepaste assettypen aanbieden in AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
 ## Aangepaste sjablonen maken {#creating-custom-template}
-
 
 In het kader van dit artikel maken we een aangepaste sjabloon om de typen aangepaste elementen en de typen OOTB-elementen op dezelfde pagina weer te geven. Volg de onderstaande instructies om een aangepaste sjabloon te maken
 
@@ -117,4 +114,4 @@ Nu u uw Onderzoek en de Kleine Component van het Portaal hebt gevormd, is het ti
 >Als in uw portal aangepaste elementtypen worden vermeld op een publicatieserver, moet u de gebruiker &quot;read&quot; toestemming geven voor het verzenden van het knooppunt **/apps/fd/fp/extensions/querybuilder**
 
 ![assetypen](assets/assettypeslistings.png)
-[Download en installeer dit pakket met pakketbeheer.](assets/customassettypekt1.zip) Dit bevat voorbeeld-MP4- en Word-documenten en xdp-bestanden die worden gebruikt als elementtypen voor het weergeven van lijsten met behulp van de component Search en List
+[Download en installeer dit pakket met pakketbeheer.](assets/customassettypekt1.zip) Dit bevat voorbeeld-mp4- en tekstdocumenten en xdp-bestanden die worden gebruikt als elementtypen om te worden weergegeven met de component search en lister
