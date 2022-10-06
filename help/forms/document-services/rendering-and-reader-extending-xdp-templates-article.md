@@ -7,7 +7,7 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Voor dit gebruiksgeval moeten we het volgende doen.
 * U kunt ook naar de video verwijzen op [aanmeldgegevens voor Reader Extensions configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
 
 
-* Creeer de douanedienst OSGi die gebruiksrechten zal teruggeven en toepassen. De code om dit te bereiken wordt hieronder vermeld
+* Creeer de douanedienst OSGi die teruggeeft en gebruiksrechten toepast. De code om dit te bereiken wordt hieronder vermeld
 
 ## XDP renderen en gebruiksrechten toepassen {#render-xdp-and-apply-usage-rights}
 
@@ -83,7 +83,7 @@ Voor dit gebruiksgeval moeten we het volgende doen.
 
 Het volgende schermschot toont u de configuratieeigenschappen blootgesteld. De meeste algemene gebruiksrechten worden via deze configuratie weergegeven.
 
-![](assets/configurationproperties.gif)
+![Configuratieeigenschappen](assets/configurationproperties.gif)
 
 De volgende code toont u de code die wordt gebruikt om de OSGi configuratiemontages te bouwen
 
@@ -122,7 +122,7 @@ public @interface DocSvcConfiguration {
 
 ## Servlet maken om de PDF te streamen {#create-servlet-to-stream-the-pdf}
 
-De volgende stap bestaat uit het maken van een servlet met een methode GET om de lezer uitgebreide PDF naar de gebruiker terug te sturen. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn of haar bestandssysteem. De reden hiervoor is dat de PDF wordt weergegeven als dynamische PDF en dat de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
+De volgende stap bestaat uit het maken van een servlet met een methode GET om de lezer uitgebreide PDF naar de gebruiker terug te sturen. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn bestandssysteem. De reden hiervoor is dat de PDF wordt weergegeven als dynamische PDF en dat de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
 
 Hier volgt de code voor de servlet. We geven het pad van de XDP in de CRX-opslagruimte door aan deze servlet.
 
