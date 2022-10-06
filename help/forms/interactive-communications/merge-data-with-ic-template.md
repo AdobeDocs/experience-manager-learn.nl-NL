@@ -1,20 +1,19 @@
 ---
 title: Kanaaldocument afdrukken genereren door gegevens samen te voegen
-seo-title: Kanaaldocument afdrukken genereren door gegevens samen te voegen
 description: Leer hoe u een document met een afdrukkanaal genereert door de gegevens in de invoerstroom samen te voegen
-seo-description: Leer hoe u een document met een afdrukkanaal genereert door de gegevens in de invoerstroom samen te voegen
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -25,7 +24,7 @@ Afdrukkanaaldocumenten worden doorgaans gegenereerd door gegevens op te halen va
 
 ## Prefill-service maken
 
-De de dienstnaam &quot;ccm-druk-test&quot;zal worden gebruikt om tot deze dienst toegang te hebben. Zodra deze voorvulservice is gedefinieerd, kunt u deze service openen in uw servlet of in de implementatie van de stap voor workflowproces om het document voor het afdrukkanaal te genereren.
+De de dienstnaam &quot;ccm-druk-test&quot;wordt gebruikt om tot deze dienst toegang te hebben. Zodra deze voorvulservice is gedefinieerd, kunt u deze service openen in uw servlet of in de implementatie van de stap voor workflowproces om het document voor het afdrukkanaal te genereren.
 
 ```java
 import java.io.InputStream;
