@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ _Doorklikken van provisioning Azure Blob Storage (Geen audio)_
 1. Tikken __+ Toevoegen__ om een nieuwe Blob Storage-account te maken
 1. Een nieuwe __Brongroep__ indien nodig, bijvoorbeeld: `aem-as-a-cloud-service`
 1. Een __Naam opslagaccount__, bijvoorbeeld: `aemguideswkndassetcomput`
-   + De __Naam opslagaccount__ wordt gebruikt voor [configureren van cloudopslag](../develop/environment-variables.md) voor het lokale ontwikkelingsinstrument voor Asset compute
+   + De __Naam opslagaccount__  gebruikt voor [configureren van cloudopslag](../develop/environment-variables.md) in het lokale ontwikkelingsinstrument voor Asset compute
    + De __Toegangstoetsen__ gekoppeld aan de opslagaccount ook vereist wanneer [configureren van cloudopslag](../develop/environment-variables.md).
 1. Laat alle andere opties standaard staan en tik op de knop __Revisie + maken__ knop
    + Selecteer desgewenst de optie __locatie__ dicht bij u.
