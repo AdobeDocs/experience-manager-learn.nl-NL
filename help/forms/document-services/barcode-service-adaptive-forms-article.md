@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -89,15 +89,13 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
    // TODO Auto-generated catch block
    e1.printStackTrace();
   }
-
  }
-
 }
 ```
 
-De volgende code maakt deel uit van de clientbibliotheek waarnaar wordt verwezen door Adaptief formulier. Wanneer een gebruiker de bijlage aan het aangepaste formulier toevoegt, wordt deze code geactiveerd. De code doet een GET vraag aan servlet met de weg van de gehechtheid die in de verzoekparameter wordt overgegaan. De gegevens die worden ontvangen van de servlet-aanroep worden vervolgens gebruikt om het aangepaste formulier in te vullen.
+De volgende code maakt deel uit van de clientbibliotheek waarnaar wordt verwezen door Adaptief formulier. Wanneer een gebruiker de bijlage aan het adaptieve formulier toevoegt, wordt deze code geactiveerd. De code doet een GET vraag aan servlet met de weg van de gehechtheid die in de verzoekparameter wordt overgegaan. De gegevens die worden ontvangen van de servlet-aanroep worden vervolgens gebruikt om het aangepaste formulier in te vullen.
 
-```
+```javascript
 $(document).ready(function()
    {
        guideBridge.on("elementValueChanged",function(event,data){
@@ -138,7 +136,7 @@ Regel 12 - de code van de douane om de dienstoplosser te krijgen. Deze bundel ma
 
 Regel 23 - Roep de methode DocumentServices extractBarCode aan om het JSON-object te krijgen dat is gevuld met gedecodeerde gegevens
 
-Voer de volgende stappen uit om dit op uw systeem uit te voeren
+Voer de volgende stappen uit om dit op uw systeem uit te voeren:
 
 1. [BarcodeService.zip downloaden](assets/barcodeservice.zip) en importeren in AEM met pakketbeheer
 1. [De aangepaste DocumentServices-bundel downloaden en installeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
