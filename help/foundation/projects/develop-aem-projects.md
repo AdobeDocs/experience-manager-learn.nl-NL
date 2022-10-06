@@ -11,9 +11,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4582'
+source-wordcount: '4571'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ De volledige nodestructuur:
 
 ### Hoofdmap projectsjabloon
 
-De wortelknoop van het projectmalplaatje zal van type zijn **cq:sjabloon**. Op dit knooppunt kunt u eigenschappen configureren **jcr:titel** en **jcr:beschrijving** dat in de Create Tovenaar van het Project zal worden getoond. Er is ook een eigenschap met de naam **wizard** dat naar een formulier verwijst dat de eigenschappen van het project vult. De standaardwaarde van: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** zou in de meeste gevallen fijn moeten werken, aangezien het de gebruiker toestaat om de basiseigenschappen van het Project te bevolken en groepsleden toe te voegen.
+De wortelknoop van het projectmalplaatje is van type **cq:sjabloon**. Op dit knooppunt kunt u eigenschappen configureren **jcr:titel** en **jcr:beschrijving** dat wordt getoond in de Create Tovenaar van het Project. Er is ook een eigenschap met de naam **wizard** dat naar een formulier verwijst dat de eigenschappen van het project vult. De standaardwaarde van: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** zou in de meeste gevallen fijn moeten werken, aangezien het de gebruiker toestaat om de basiseigenschappen van het Project te bevolken en groepsleden toe te voegen.
 
 *&#42;Merk op de Create Tovenaar van het Project niet Sling POST servlet gebruikt. In plaats daarvan worden waarden naar een aangepaste servlet gepost:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Hiermee moet rekening worden gehouden bij het toevoegen van aangepaste velden.*
 
@@ -92,7 +92,7 @@ Er zijn 3 [standaardrollen](https://helpx.adobe.com/experience-manager/6-5/sites
 
 ## Een projectsjabloon maken {#creating-project-template}
 
-Aangezien wij hoofdzakelijk het kopiëren/het vormen knopen zullen zijn zullen wij CRXDE Lite gebruiken. In uw lokale AEM openen [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebruiken. In uw lokale AEM openen [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
 1. Begin door een nieuwe omslag onder te creëren `/apps/&lt;your-app-folder&gt;` benoemd `projects`. Een andere map maken onder de naam `templates`.
 
@@ -345,7 +345,7 @@ Locatie van workflowmodel in 6.4+
 
    De werkstroomvoortgangsbalk zoals deze wordt weergegeven in het AEM Inbox.
 
-   U kunt desgewenst een **Afbeelding** naar de Pagina-eigenschappen die worden gebruikt als de workflowminiatuur wanneer gebruikers deze selecteren. Afbeeldingsafmetingen moeten 319x319 pixels zijn. Een **Beschrijving** naar Pagina-eigenschappen worden ook weergegeven wanneer een gebruiker de workflow selecteert.
+   U kunt desgewenst een **Afbeelding** naar de Pagina-eigenschappen die wordt gebruikt als de workflowminiatuur wanneer gebruikers deze selecteren. Afbeeldingsafmetingen moeten 319x319 pixels zijn. Een **Beschrijving** naar Pagina-eigenschappen worden ook weergegeven wanneer een gebruiker de workflow selecteert.
 
 1. Het workflowproces Projecttaak maken is ontworpen om een taak te maken als een stap in de workflow. Pas na het voltooien van de taak gaat de workflow verder. Een krachtig aspect van de stap van de Taak van het Project creëren is dat het werkschema meta-gegevens waarden kan lezen en die gebruiken om de taak dynamisch tot stand te brengen.
 
@@ -418,7 +418,7 @@ Locatie van workflowmodel in 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Ga terug naar de workflow voor goedkeuring van inhoud. Slepen en neerzetten **OF Splitsen** component (gevonden in de Sidetrap onder de categorie &#39;Workflow&#39; onder de categorie **Taak starten** Stap. Selecteer in het dialoogvenster Algemeen het keuzerondje voor 3 vertakkingen. De OR Split leest de metagegevenswaarde van de workflow **&quot;lastTaskAction&quot;** om de route van het werkschema te bepalen. De **&quot;lastTaskAction&quot;** het bezit zal aan één van de waarden van het Verpletterende Lusje worden geplaatst dat in Stap 4 wordt gevormd. Vul voor elk tabblad Vertakking de opties **Script** tekstgebied met de volgende waarden:
+1. Ga terug naar de workflow voor goedkeuring van inhoud. Slepen en neerzetten **OF Splitsen** component (gevonden in de Sidetrap onder de categorie &#39;Workflow&#39; onder de categorie **Taak starten** Stap. Selecteer in het dialoogvenster Algemeen het keuzerondje voor 3 vertakkingen. De OR Split leest de metagegevenswaarde van de workflow **&quot;lastTaskAction&quot;** om de route van het werkschema te bepalen. De **&quot;lastTaskAction&quot;** het bezit wordt geplaatst aan één van de waarden van het Verpletterende Lusje dat in Stap 4 wordt gevormd. Vul voor elk tabblad Vertakking de opties **Script** tekstgebied met de volgende waarden:
 
    ```
    function check() {
@@ -482,7 +482,7 @@ Locatie van workflowmodel in 6.4+
 
    Aangezien dit de Normale route van de Goedkeuring is, wordt de prioriteit van de taak geplaatst aan Middel. Daarnaast geven we de groep fiatteurs vijf dagen om de taak te voltooien. De toegewezen persoon wordt leeg gelaten op het tabblad Taak aangezien wij dit dynamisch zullen toewijzen op het tabblad Geavanceerde instellingen. We geven de groep fiatteurs twee mogelijke routes bij het uitvoeren van deze taak: **&quot;Goedkeuren en publiceren&quot;** als zij de inhoud goedkeuren en deze kan worden gepubliceerd en **&quot;Terug voor revisie verzenden&quot;** als er problemen zijn die de oorspronkelijke editor moet verhelpen. De fiatteur kan commentaren verlaten die de originele redacteur zal zien of is het werkschema teruggekeerd aan hem/haar.
 
-Eerder in deze zelfstudie hebben we een projectsjabloon gemaakt dat een rol van fiatteurs bevatte. Telkens als een nieuw Project van dit Malplaatje wordt gecreeerd zal een project-specifieke Groep voor de rol worden gecreeerd Approvers. Enkel als een Stap van de Deelnemer kan een Taak slechts aan een Gebruiker of een Groep worden toegewezen. We willen deze taak toewijzen aan de projectgroep die overeenkomt met de groep fiatteurs. Alle werkschema&#39;s die van binnen een Project worden gelanceerd zullen meta-gegevens hebben die de Rollen van het Project aan de specifieke groep van het Project in kaart brengen.
+Eerder in deze zelfstudie hebben we een projectsjabloon gemaakt dat een rol van fiatteurs bevatte. Telkens als een nieuw Project van dit Malplaatje wordt gecreeerd wordt een project-specifieke Groep gecreeerd voor de rol Approvers. Enkel als een Stap van de Deelnemer kan een Taak slechts aan een Gebruiker of een Groep worden toegewezen. We willen deze taak toewijzen aan de projectgroep die overeenkomt met de groep fiatteurs. Alle werkschema&#39;s die van binnen een Project worden gelanceerd zullen meta-gegevens hebben die de Rollen van het Project aan de specifieke groep van het Project in kaart brengen.
 
 De volgende code kopiëren en plakken in de **Script** tekstgebied van het tabblad **Geavanceerde instellingen **tab. Deze code zal de werkschemameta-gegevens lezen en zal de taak aan de groep Approvers van het Project toewijzen. Als het niet de waarde van de fiatversgroep kan vinden zal het terug vallen om de taak aan de groep van Beheerders toe te wijzen.
 
@@ -635,7 +635,7 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
 
    ![wizard voor inhoudsgoedkeuring](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
-1. Er wordt een extra veld aan de wizard toegevoegd waarmee de eerste taak in de workflow wordt ingesteld (zie [Het workflowmodel maken](#create-workflow-model): Stap 5).
+1. Er wordt een extra veld aan de wizard toegevoegd dat wordt gebruikt om de toewijzing van de eerste taak in de workflow in te stellen (zie [Het workflowmodel maken](#create-workflow-model): Stap 5).
 
    Beneath `../content-approval-start/jcr:content/items/column2/items` een nieuw knooppunt van het type maken `nt:unstructured` benoemd **&quot;assign&quot;**. Wij zullen de component van de Plukker van de Gebruiker van Projecten gebruiken (die van wordt gebaseerd [Graniet-gebruikerskiezercomponent](https://experienceleague.adobe.com/docs/)). Met dit formulierveld kunt u eenvoudig de selectie van gebruikers en groepen beperken tot gebruikers die tot het huidige project behoren.
 
