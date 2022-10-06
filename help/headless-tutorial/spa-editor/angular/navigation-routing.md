@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2636'
+source-wordcount: '2635'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-3. Het voltooide pakket installeren voor de traditionele [WKND-referentiesite](https://github.com/adobe/aem-guides-wknd/releases/latest). De afbeeldingen van [WKND-referentiesite](https://github.com/adobe/aem-guides-wknd/releases/latest) wordt opnieuw gebruikt op de WKND-SPA. Het pakket kan worden geïnstalleerd met [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp).
+3. Het voltooide pakket installeren voor de traditionele [WKND-referentiesite](https://github.com/adobe/aem-guides-wknd/releases/latest). De afbeeldingen van [WKND-referentiesite](https://github.com/adobe/aem-guides-wknd/releases/latest) worden opnieuw gebruikt op de WKND-SPA. Het pakket kan worden geïnstalleerd met [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![Pakketbeheer installeren wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
@@ -71,7 +71,7 @@ U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/a
 
 ## Inspect HeaderComponent-updates {#inspect-header}
 
-In vorige hoofdstukken `HeaderComponent` component is toegevoegd als een zuivere Angular die via `app.component.html`. In dit hoofdstuk wordt `HeaderComponent` wordt verwijderd uit de app en wordt toegevoegd via de [Sjablooneditor](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Hiermee kunnen gebruikers het navigatiemenu van het dialoogvenster `HeaderComponent` vanuit AEM.
+In vorige hoofdstukken `HeaderComponent` component is toegevoegd als een zuivere Angular die via `app.component.html`. In dit hoofdstuk wordt `HeaderComponent` wordt verwijderd uit de app en toegevoegd via de [Sjablooneditor](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Hiermee kunnen gebruikers het navigatiemenu van het dialoogvenster `HeaderComponent` vanuit AEM.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Maak vervolgens aanvullende pagina&#39;s in AEM die als de verschillende weergav
    }
    ```
 
-   Onder `:children` u zou een ingang voor elk van de gecreeerde pagina&#39;s moeten zien. De inhoud voor alle pagina&#39;s staat in dit eerste JSON-verzoek. Zodra, wordt het navigatie verpletteren uitgevoerd, zullen de verdere meningen van de SPA snel worden geladen, aangezien de inhoud reeds beschikbare cliënt-kant is.
+   Onder `:children` u zou een ingang voor elk van de gecreeerde pagina&#39;s moeten zien. De inhoud voor alle pagina&#39;s staat in dit eerste JSON-verzoek. Zodra, wordt het navigatie verpletteren uitgevoerd, worden de verdere meningen van de SPA geladen snel, aangezien de inhoud reeds beschikbare cliënt-kant is.
 
    Het is niet verstandig om te laden **ALLES** van de inhoud van een SPA in het eerste JSON-verzoek, aangezien dit het laden van de eerste pagina zou vertragen. Vervolgens kunt u bekijken hoe de hiërarchische diepte van pagina&#39;s wordt verzameld.
 
@@ -365,7 +365,7 @@ Implementeer vervolgens het navigatiemenu met een nieuwe `NavigationComponent`. 
    }
    ```
 
-   Dit is een eenvoudige klasse die een afzonderlijke navigatiekoppeling vertegenwoordigt. In de klasseconstructor verwachten we `data` om het JSON-object te zijn dat vanuit AEM wordt doorgegeven. Deze klasse wordt gebruikt binnen het dialoogvenster `NavigationComponent` en `HeaderComponent` om de navigatiestructuur gemakkelijk te vullen.
+   Dit is een eenvoudige klasse die een afzonderlijke navigatiekoppeling vertegenwoordigt. In de klasseconstructor verwachten we `data` om het JSON-object te zijn dat vanuit AEM wordt doorgegeven. Deze klasse wordt gebruikt binnen beide `NavigationComponent` en `HeaderComponent` om de navigatiestructuur gemakkelijk te vullen.
 
    Er wordt geen gegevenstransformatie uitgevoerd. Deze klasse wordt vooral gemaakt om het JSON-model sterk te typen. Let op: `this.children` wordt getypt als `NavigationLink[]` en dat de constructor recursief nieuwe `NavigationLink` objecten voor elk item in het dialoogvenster `children` array. Herinnert dat JSON-model voor de `Header` is hiërarchisch.
 
@@ -637,7 +637,7 @@ Nu de navigatie is uitgevoerd, inspecteer het verpletteren in AEM.
 
    `AemPageMatcher` is een router van de douaneAngular [UrlMatcher](https://angular.io/api/router/UrlMatcher), die overeenkomt met alles wat er &#39;uitziet als&#39; een pagina in AEM die deel uitmaakt van deze Angular.
 
-   `PageComponent` is de Component van de Angular die een Pagina in AEM vertegenwoordigt, en de aangepaste routes zullen aanhalen. De `PageComponent` worden verder geïnspecteerd.
+   `PageComponent` is de Component van de Angular die een Pagina in AEM vertegenwoordigt, en gebruikt om de aangepaste routes terug te geven. De `PageComponent` wordt later in de zelfstudie besproken.
 
    `AemPageDataResolver`, verstrekt door de AEM SPA Editor JS SDK, is een aangepast [Angular Router Resolver](https://angular.io/api/router/Resolve) wordt gebruikt om de route URL, die de weg in AEM met inbegrip van de uitbreiding .html is, aan de middelweg in AEM om te zetten, die de paginadad minus de uitbreiding is.
 
