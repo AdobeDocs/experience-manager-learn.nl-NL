@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 # JSON-schema opslaan in database {#storing-json-schema-in-database}
 
 
-Als u een query wilt uitvoeren op de verzonden gegevens, moet u het JSON-schema opslaan dat is gekoppeld aan het verzonden formulier. Het schema JSON zal in de vraagbouwer worden gebruikt om de vraag te bouwen.
+Als u een query wilt uitvoeren op de verzonden gegevens, moet u het JSON-schema opslaan dat is gekoppeld aan het verzonden formulier. Het schema JSON wordt gebruikt in de vraagbouwer om de vraag te bouwen.
 
 Wanneer een Adaptief formulier wordt verzonden, controleren we of het bijbehorende JSON-schema zich in de database bevindt. Als het JSON-schema niet bestaat, wordt het JSON-schema opgehaald en wordt het schema in de juiste tabel opgeslagen. We koppelen de formuliernaam ook aan het JSON-schema. In de volgende schermafbeelding ziet u de tabel waarin de JSON-schema&#39;s zijn opgeslagen.
 
