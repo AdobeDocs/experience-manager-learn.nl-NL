@@ -12,9 +12,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 79d41d833ab0659f26f988678e124daa18b857f3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4131'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ De implementatie van de component Byline bevat een dialoogvenster waarin de inho
 
 Maak eerst de knooppuntstructuur van de component Byline en definieer een dialoogvenster. Dit vertegenwoordigt de Component in AEM en bepaalt impliciet het middeltype van de component door zijn plaats in JCR.
 
-In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud kunnen werken. Voor deze implementatie geldt dat de AEM WCM Core-component **Afbeelding** wordt gebruikt om het ontwerpen en renderen van de Byline-afbeelding af te handelen, zodat deze wordt ingesteld als de `sling:resourceSuperType`.
+In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud kunnen werken. Voor deze implementatie geldt dat de AEM WCM Core-component **Afbeelding** wordt gebruikt om het schrijven en renderen van de afbeelding van de Naamregel te verwerken, zodat deze moet worden ingesteld als de afbeelding van de component `sling:resourceSuperType`.
 
 ### Componentdefinitie maken {#create-component-definition}
 
@@ -372,7 +372,7 @@ Het Byline Sling-model is gebaseerd op verschillende Java API&#39;s die door AEM
    ...
    ```
 
-   De `uber-jar` wordt alleen opgenomen als de `classic` profiel wordt aangeroepen, d.w.z `mvn clean install -PautoInstallSinglePackage -Pclassic`. Nogmaals, dit is uniek voor dit project. In een echt project, geproduceerd uit de Archetype van het Project van de AEM `uber-jar` is de standaardinstelling als de versie van AEM opgegeven 6.5 of 6.4 is.
+   De `uber-jar` wordt alleen opgenomen als de `classic` profiel wordt aangeroepen, d.w.z `mvn clean install -PautoInstallSinglePackage -Pclassic`. Nogmaals, dit is uniek voor dit project. In een echt project, geproduceerd uit de Archetype van het Project van de AEM `uber-jar` Dit is de standaardinstelling als de opgegeven versie van AEM 6.5 of 6.4 is.
 
    De [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) bevat alle openbare Java API&#39;s die door AEM 6.x worden weergegeven. De versie blijft behouden in de bovenliggende reactorpom die zich aan de basis van het project bevindt `aem-guides-wknd/pom.xml`.
 
@@ -616,7 +616,7 @@ Er zijn twee manieren om dit aan te pakken:
 
 Controleer of de `fileReference` De JCR-eigenschap wordt omgezet in een element. *OF* Converteer deze resource naar een Core Component Image Sling Model en zorg ervoor dat de `getSrc()` methode is niet leeg.
 
-Wij kiezen voor de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, maar in deze zelfstudie zal deze laatste worden gebruikt om andere kenmerken van Sling Models te verkennen.
+Wij kiezen voor **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, maar in deze zelfstudie wordt deze laatste gebruikt om andere kenmerken van Sling Models te verkennen.
 
 1. Maak een methode van het type private waarmee de afbeelding wordt opgehaald. Deze methode blijft privé, omdat we het afbeeldingsobject niet in de HTML zelf hoeven weer te geven en de enige methode die wordt gebruikt om het object te besturen `isEmpty().`
 
@@ -705,7 +705,7 @@ Wij kiezen voor de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoe
 
    Onthoud dat modellen voor verkoop zijn **NOT** OSGi Services, zodat is het veilig om klassenstaat te handhaven. Vaak `@PostConstruct` Hiermee wordt de klassestatus Sling Model afgeleid en ingesteld voor later gebruik, vergelijkbaar met wat een normale constructor doet.
 
-   Let erop dat als de `@PostConstruct` De methode werpt een uitzondering, zal het Verschuivende Model niet concretiseren (het zal ongeldig zijn).
+   Let erop dat als de `@PostConstruct` De methode werpt een uitzondering, zal het Verschuivende Model niet concretiseren (het is ongeldig).
 
 1. **getImage()** kan nu worden bijgewerkt om het afbeeldingsobject te retourneren.
 
@@ -790,7 +790,7 @@ Wij kiezen voor de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoe
        /**
        * @PostConstruct is immediately called after the class has been initialized
        * but BEFORE any of the other public methods. 
-       * It is a good method to initialize variables that will be used by methods in the rest of the model
+       * It is a good method to initialize variables that is used by methods in the rest of the model
        *
        */
        @PostConstruct
@@ -1027,7 +1027,7 @@ Als de **BylineImpl** wordt niet weergegeven in deze lijst. Er is waarschijnlijk
 
 ## Byline-stijlen {#byline-styles}
 
-De component Byline moet worden opgemaakt om te worden uitgelijnd met het creatieve ontwerp voor de component Byline. Dit zal worden bereikt door SCSS te gebruiken, dat AEM steun voor via **ui.frontend** Subproject Maven.
+De component Byline moet worden opgemaakt om te worden uitgelijnd met het creatieve ontwerp voor de component Byline. Dit wordt bereikt door SCSS te gebruiken, dat AEM steun voor via **ui.frontend** Subproject Maven.
 
 ### Een standaardstijl toevoegen
 
