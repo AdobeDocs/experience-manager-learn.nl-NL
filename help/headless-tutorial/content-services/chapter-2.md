@@ -8,9 +8,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: cfb7ed39ecb85998192ba854b34161f7e1dba19a
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ Herhaal deze stappen met de invoerdefinities die hieronder zijn gedefinieerd om 
 
 >[!NOTE]
 >
->De **[!UICONTROL Property Name]** geeft de **beide** de naam van de JCR-eigenschap waar deze waarde wordt opgeslagen, en de sleutel in het JSON-bestand. Dit moet een semantische naam zijn die niet wordt gewijzigd tijdens de levensduur van het inhoudsfragmentmodel.
+>De **[!UICONTROL Property Name]** geeft de **beide** de naam van de JCR-eigenschap waar deze waarde wordt opgeslagen en de sleutel in het JSON-bestand. Dit moet een semantische naam zijn die niet wordt gewijzigd tijdens de levensduur van het inhoudsfragmentmodel.
 
 Nadat u het inhoudsfragmentmodel hebt gemaakt, krijgt u een definitie die er als volgt uitziet:
 
