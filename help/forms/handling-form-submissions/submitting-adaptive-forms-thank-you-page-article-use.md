@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,15 @@ Verzenden naar de eindpuntoptie REST geeft de gegevens die in het formulier zijn
 
 \{fieldName\} = \{parameterName\}. Bijvoorbeeld, subitterName is de naam van een adaptief vormgebied en de verzender is de naam van de parameter. In dank kunt u tot de voorlegger parameter toegang hebben gebruikend request.getParameter (&quot;voorlegger&quot;) om greep van de waarde van het gebied van de voorleggernaam te krijgen.
 
-submitName=Subrespondter
+`submitterName=submitter`
 
 In de onderstaande schermafbeelding sturen we het adaptieve formulier om u te bedanken op de pagina /content/thankyou. Voor deze dankbetuigingen geven we 3 aanvraagkenmerken door die de waarden van de formuliervelden bevatten.
 
-![dank](assets/thankyoupage.gif)
+![Bedankt, pagina](assets/thankyoupage.gif)
 
-U kunt ook naar het externe eindpunt verzenden via POST. Om dat te verwezenlijken, moet u enkel &quot;toelaten postverzoek&quot;checkbox en URL voor het externe eindpunt verstrekken. Wanneer u het formulier verzendt, wordt de pagina Bedankt en het eindpunt van de POST wordt tegelijkertijd aangeroepen.
+U kunt ook naar het externe eindpunt verzenden via POST. Om dat te verwezenlijken, moet u enkel &quot;toelaten postverzoek&quot;checkbox en URL voor het externe eindpunt verstrekken. Wanneer u het formulier verzendt, wordt de pagina &quot;Bedankt&quot; weergegeven en wordt het eindpunt van de POST tegelijkertijd aangeroepen.
 
-![vastleggen](assets/capture.gif)
-
+![Vastlegconfiguratie](assets/capture.gif)
 
 Volg de onderstaande instructies om deze mogelijkheid op uw server te testen:
 
