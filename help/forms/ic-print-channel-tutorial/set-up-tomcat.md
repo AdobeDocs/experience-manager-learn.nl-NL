@@ -1,8 +1,7 @@
 ---
 title: Tomcat-video installeren en configureren
 seo-title: Install and Configure Tomcat
-description: Dit is een onderdeel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit onderdeel wordt TOMCAT geïnstalleerd en wordt het bestand sampleRest.war in TOMCAT geïmplementeerd. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld zal de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm zijn.
-seo-description: This is part 1 of multistep tutorial for creating your first interactive communications document.In this part, we will install TOMCAT and deploy the sampleRest.war file in TOMCAT. The REST endpoint exposed by this WAR file will be the basis for our Data Source and Form Data Model.
+description: Dit is onderdeel 1 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument.
 uuid: 835e2342-82b6-4f0c-9a6b-467bbbd8527a
 feature: Interactive Communication
 topics: development
@@ -16,16 +15,16 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
 # Tomcat installeren en configureren {#install-and-configure-tomcat}
 
-In dit deel, zullen wij TOMCAT installeren en het sampleRest.war- dossier in TOMCAT opstellen. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld zal de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm zijn.
+In dit deel, installeren wij TOMCAT en stellen het sampleRest.war- dossier in TOMCAT op. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld is de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37815/?quality=9&learn=on)
 
