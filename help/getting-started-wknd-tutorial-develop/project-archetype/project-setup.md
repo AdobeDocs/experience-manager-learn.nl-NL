@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1838'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30152/?quality=12&learn=on)
 
-In dit hoofdstuk genereert u een nieuw Adobe Experience Manager-project met de opdracht [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype). Uw AEM project bevat alle code, inhoud, en configuraties die voor een implementatie van Plaatsen worden gebruikt. Het in dit hoofdstuk gegenereerde project zal als basis dienen voor een implementatie van de WKND-site en zal in toekomstige hoofdstukken worden opgenomen.
+In dit hoofdstuk genereert u een nieuw Adobe Experience Manager-project met de opdracht [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype). Uw AEM project bevat alle code, inhoud, en configuraties die voor een implementatie van Plaatsen worden gebruikt. Het in dit hoofdstuk gegenereerde project dient als basis voor een implementatie van de WKND-site en wordt in toekomstige hoofdstukken verder ontwikkeld.
 
 **Wat is een Maven-project?** - [Apache Maven](https://maven.apache.org/) is een hulpmiddel van het softwarebeheer om projecten te bouwen. *Alle Adobe Experience Manager* implementaties gebruiken Maven-projecten om aangepaste code bovenop AEM te bouwen, te beheren en te implementeren.
 
@@ -155,11 +155,11 @@ Bouw en stel de projectcode aan een lokaal geval van AEM op.
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Het profiel Maven `autoInstallSinglePackage` compileert de individuele modules van het project en stelt één enkel pakket aan de AEM instantie op. Dit pakket wordt standaard geïmplementeerd op een AEM die lokaal op de poort wordt uitgevoerd **4502** en met de geloofsbrieven van `admin:admin`.
+   Het profiel Maven `autoInstallSinglePackage` compileert de individuele modules van het project en stelt één enkel pakket aan de AEM instantie op. Dit pakket wordt standaard geïmplementeerd op een AEM-instantie die lokaal op de poort wordt uitgevoerd **4502** en met de geloofsbrieven van `admin:admin`.
 
 1. Navigeer naar Package Manager op uw lokale AEM-instantie: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). U moet pakketten zien voor `aem-guides-wknd.ui.apps`, `aem-guides-wknd.ui.config`, `aem-guides-wknd.ui.content`, en `aem-guides-wknd.all`.
 
-1. Navigeer naar de Sites-console: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). De WKND-site wordt een van de sites. Dit omvat een sitestructuur met een hiërarchie voor Amerikaanse en taalmeesters. Deze sitehiërarchie is gebaseerd op de waarden voor `language_country` en `isSingleCountryWebsite` wanneer het produceren van het project gebruikend archetype.
+1. Navigeer naar de Sites-console: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). De WKND-site is een van de sites. Dit omvat een sitestructuur met een hiërarchie voor Amerikaanse en taalmeesters. Deze sitehiërarchie is gebaseerd op de waarden voor `language_country` en `isSingleCountryWebsite` wanneer het produceren van het project gebruikend archetype.
 
 1. Open de **VS** `>` **Engels** pagina door de pagina te selecteren en op de **Bewerken** in de menubalk:
 
@@ -254,7 +254,7 @@ De **[kern](https://experienceleague.adobe.com/docs/experience-manager-core-comp
 
 ### Ui.apps en Ui.content-modules {#apps-content-module}
 
-De **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** de gemaskeerde module bevat alle renderingcode die nodig is voor de onderliggende site `/apps`. Dit omvat CSS/JS die in een AEM genoemd formaat zal worden opgeslagen [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Dit omvat ook [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) scripts voor het renderen van dynamische HTML. Je kunt denken aan de **ui.apps** als een kaart aan de structuur in JCR maar in een formaat dat op een dossiersysteem kan worden opgeslagen en aan broncontrole wordt geëngageerd. De **ui.apps** bevat alleen code.
+De **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** de gemaskeerde module bevat alle renderingcode die nodig is voor de onderliggende site `/apps`. Dit omvat CSS/JS die in een AEM genoemd formaat wordt opgeslagen [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Dit omvat ook [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) scripts voor het renderen van dynamische HTML. Je kunt denken aan de **ui.apps** als een kaart aan de structuur in JCR maar in een formaat dat op een dossiersysteem kan worden opgeslagen en aan broncontrole wordt geëngageerd. De **ui.apps** bevat alleen code.
 
 Alleen deze module samenstellen:
 
@@ -325,7 +325,7 @@ Alleen deze module samenstellen:
 
    Opnieuw wordt een bouwstijlmislukking verwacht als geen AEM instantie die op haven loopt **4504** is beschikbaar. De parameter `aem.port` is gedefinieerd in het POM-bestand op `aem-guides-wknd/pom.xml`.
 
-De **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** module is op dezelfde manier gestructureerd als de **ui.apps** module. Het enige verschil is dat **ui.content** module bevat wat bekend staat als **veranderlijk** inhoud. **Mutable** de inhoud verwijst hoofdzakelijk naar niet codeconfiguraties zoals Malplaatjes, Beleid, of omslagstructuren die in bron-controle worden opgeslagen **maar** kan rechtstreeks op een AEM worden gewijzigd. Dit zal in het hoofdstuk over Pagina&#39;s en Malplaatjes veel gedetailleerder worden onderzocht.
+De **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** module is op dezelfde manier gestructureerd als de **ui.apps** module. Het enige verschil is dat **ui.content** module bevat wat bekend staat als **veranderlijk** inhoud. **Mutable** de inhoud verwijst hoofdzakelijk naar niet codeconfiguraties zoals Malplaatjes, Beleid, of omslagstructuren die in bron-controle worden opgeslagen **maar** kan rechtstreeks op een AEM worden gewijzigd. Dit wordt meer in detail besproken in het hoofdstuk over Pagina&#39;s en Malplaatjes.
 
 Dezelfde Maven-opdrachten die worden gebruikt om de **ui.apps** kan worden gebruikt om de **ui.content** module. U kunt de bovenstaande stappen vanuit de **ui.content** map.
 
