@@ -7,22 +7,22 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '659'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Manager integreren met Adobe Target
 
 In deze sectie zullen we bespreken hoe we Adobe Experience Manager voor verschillende scenario&#39;s kunnen instellen met Adobe Target. Gebaseerd op uw scenario en organisatorische vereisten.
 
-* **Voeg Adobe Target JavaScript-bibliotheek toe (vereist voor alle scenario&#39;s)**
-Voor sites die worden gehost op AEM, kunt u doelbibliotheken aan uw site toevoegen met de opdracht  [Starten](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). De lancering verstrekt een eenvoudige manier om alle markeringen noodzakelijk om relevante klantenervaringen op te stellen en te beheren.
-* **Voeg de Adobe Target-Cloud Services toe (vereist voor het scenario Experience Fragments)**
-Voor AEM klanten die de aanbiedingen van Experience Fragment willen gebruiken om een activiteit in Adobe Target te maken, moet u Adobe Target integreren met AEM met behulp van de Legacy-Cloud Services. Deze integratie is vereist om Experience Fragments van AEM naar Target te duwen als HTML/JSON-aanbiedingen en om de aanbiedingen gelijk te houden met AEM. 
+* **Adobe Target JavaScript-bibliotheek toevoegen (vereist voor alle scenario&#39;s)**
+Voor sites die worden gehost op AEM, kunt u doelbibliotheken aan uw site toevoegen met: [Starten](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). De lancering verstrekt een eenvoudige manier om alle markeringen noodzakelijk om relevante klantenervaringen op te stellen en te beheren.
+* **Voeg de Cloud Services van Adobe Target toe (die voor het scenario van de Fragmenten van de Ervaring worden vereist)**
+Voor AEM klanten, die de aanbiedingen van het Fragment van de Ervaring willen gebruiken om een activiteit binnen Adobe Target tot stand te brengen, zult u Adobe Target met AEM moeten integreren gebruikend de Verouderde Cloud Services. Deze integratie is vereist om Experience Fragments van AEM naar Target te duwen als HTML/JSON aanbiedingen en om de aanbiedingen gelijk te houden met AEM. 
 *Deze integratie is vereist voor de uitvoering van scenario 1.*
 
 ## Vereisten
@@ -49,36 +49,36 @@ Voor AEM klanten die de aanbiedingen van Experience Fragment willen gebruiken om
 
 >[!NOTE]
 >
-> De klant moet van [Adobe steun](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) voorzien van Experience Platform Launch en Adobe I/O of bereik aan uw systeembeheerder
+> De klant moet van Experience Platform Launch en Adobe I/O van worden voorzien [Adobe-ondersteuning](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) of reik uit uw systeembeheerder
 
 ### AEM instellen{#set-up-aem}
 
-AEM auteur- en publicatieexemplaar is nodig om deze zelfstudie te voltooien. De auteurinstantie loopt op `http://localhost:4502` en publiceert instantie lopend op `http://localhost:4503`. Zie voor meer informatie: [Stel een lokale AEM ontwikkelomgeving in](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/local-aem-dev-environment-article-setup.html).
+AEM auteur- en publicatieexemplaar is nodig om deze zelfstudie te voltooien. Er wordt een auteurinstantie uitgevoerd op `http://localhost:4502` en publiceer instantie die wordt uitgevoerd op `http://localhost:4503`. Zie voor meer informatie: [Een lokale AEM ontwikkelomgeving instellen](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/local-aem-dev-environment-article-setup.html).
 
 #### AEM-auteur- en publicatie-instanties instellen
 
-1. Haal een kopie op van de [AEM QuickStart Jar en een licentie.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
+1. Hiermee wordt een kopie van het dialoogvenster [AEM Quickstart Jar en een licentie.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
 2. Maak als volgt een mapstructuur op uw computer:
    ![Mapstructuur](assets/implementation/aem-setup-1.png)
-3. Wijzig de naam van de QuickStart-jar in `aem-author-p4502.jar` en plaats deze onder de map `/author`. Voeg het `license.properties` dossier onder `/author` folder toe.
+3. De naam van de QuickStart-jar wijzigen in `aem-author-p4502.jar` en plaatst deze onder de `/author` directory. Voeg de `license.properties` bestand onder het `/author` directory.
    ![Instantie AEM-auteur](assets/implementation/aem-setup-author.png)
-4. Maak een kopie van de QuickStart-jar, wijzig de naam in `aem-publish-p4503.jar` en plaats deze onder de map `/publish`. Voeg een kopie van het `license.properties`-bestand toe onder de map `/publish`.
+4. Maak een kopie van de QuickStart-jar, wijzig de naam ervan in `aem-publish-p4503.jar` en plaatst deze onder de `/publish` directory. Een kopie van het dialoogvenster toevoegen `license.properties` bestand onder het `/publish` directory.
    ![AEM-publicatie-instantie](assets/implementation/aem-setup-publish.png)
-5. Dubbelklik op het bestand `aem-author-p4502.jar` om de instantie Auteur te installeren. Hierdoor wordt de instantie van de auteur gestart en wordt poort 4502 op de lokale computer uitgevoerd.
-6. Meld u aan met de onderstaande referenties. Wanneer de aanmelding is geslaagd, wordt u naar het scherm AEM startpagina geleid.
-username : **admin**
-password : **admin**
+5. Dubbelklik op de knop `aem-author-p4502.jar` bestand om de instantie Auteur te installeren. Hierdoor wordt de instantie van de auteur gestart en wordt poort 4502 op de lokale computer uitgevoerd.
+6. Meld u aan met de onderstaande referenties. Wanneer de aanmelding met succes is voltooid, gaat u naar het scherm AEM startpagina.
+username : **beheerder**
+password : **beheerder**
    ![AEM-publicatie-instantie](assets/implementation/aem-author-home-page.png)
-7. Dubbelklik op het bestand `aem-publish-p4503.jar` om een publicatie-instantie te installeren. U kunt een nieuw lusje zien open in uw browser voor uw publicatieinstantie, die op haven 4503 loopt en de WebRetail homepage toont. We gebruiken de WKND-referentiesite voor deze zelfstudie en installeren de pakketten op de auteurinstantie.
-8. Navigeer naar de AEM-auteur in uw webbrowser op `http://localhost:4502`. Navigeer in het scherm AEM Start naar *[Extra > Implementatie > Pakketten](http://localhost:4502/crx/packmgr/index.jsp)*.
-9. De pakketten voor AEM downloaden en uploaden (boven vermeld onder *[Voorwaarden > AEM](#aem)*)
+7. Dubbelklik op de knop `aem-publish-p4503.jar` bestand om een publicatie-instantie te installeren. U kunt een nieuw lusje zien open in uw browser voor uw publicatieinstantie, die op haven 4503 loopt en de WebRetail homepage toont. Wij gebruiken de WKND verwijzingsplaats voor dit leerprogramma en laten de pakketten op auteursinstantie installeren.
+8. Ga naar AEM Author in uw webbrowser op `http://localhost:4502`. Navigeer in het scherm AEM Start naar *[Extra > Implementatie > Pakketten](http://localhost:4502/crx/packmgr/index.jsp)*.
+9. Download en upload de pakketten voor AEM (zie hierboven onder) *[Voorwaarden > AEM](#aem)*)
    * [aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip)
    * [aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip)
    * [core.wcm.components.all-2.5.0.zip](https://github.com/adobe/aem-core-wcm-components/releases/download/core.wcm.components.reactor-2.5.0/core.wcm.components.all-2.5.0.zip)
    * [digital-data-layer.zip](assets/implementation/digital-data-layer.zip)
 
    >[!VIDEO](https://video.tv.adobe.com/v/28377?quality=12&learn=on)
-10. Nadat u de pakketten op AEM-auteur hebt geïnstalleerd, selecteert u elk geüpload pakket in AEM Package Manager en selecteert u **Meer > Replicate** om ervoor te zorgen dat de pakketten worden geïmplementeerd in AEM-publicatie.
+10. Nadat u de pakketten op de AEM-auteur hebt geïnstalleerd, selecteert u elk geüpload pakket in AEM Package Manager en selecteert u **Meer > Repliceren** om ervoor te zorgen dat de pakketten worden geïmplementeerd in AEM Publish.
 11. U hebt nu de WKND-referentiesite en alle aanvullende pakketten die vereist zijn voor deze zelfstudie geïnstalleerd.
 
 [VOLGENDE HOOFDSTUK](./using-launch-adobe-io.md): In het volgende hoofdstuk, zult u Lancering met AEM integreren.
