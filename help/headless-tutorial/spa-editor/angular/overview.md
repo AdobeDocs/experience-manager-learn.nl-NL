@@ -14,16 +14,16 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-source-git-commit: 825124bc6c3be10e6822fb5fb8bd9645d242da76
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # Uw eerste Angular SPA in AEM maken {#introduction}
 
-Welkom bij een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog niet vertrouwd zijn met de **SPA Editor** in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een Angular-aanvraag voor een fictieve levensstijl, de WKND. De Angular-app wordt ontwikkeld en ontworpen voor implementatie met AEM SPA Editor, die Angular-componenten aan AEM componenten toewijst. De voltooide SPA, die aan AEM worden opgesteld, kan dynamisch met traditionele in-line het uitgeven hulpmiddelen van AEM worden ontworpen.
+Welkom bij een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog niet vertrouwd zijn met de **SPA Editor** in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een Angular-aanvraag voor een fictieve levensstijl, de WKND. De Angular-app is ontwikkeld en ontworpen om te worden geïmplementeerd met AEM SPA Editor, die Angular-componenten aan AEM componenten toewijst. De voltooide SPA, die aan AEM worden opgesteld, kan dynamisch met traditionele in-line het uitgeven hulpmiddelen van AEM worden ontworpen.
 
 ![Laatste SPA geïmplementeerd](assets/wknd-spa-implementation.png)
 
@@ -31,7 +31,7 @@ Welkom bij een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die nog
 
 ## Info
 
-Het doel voor deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe te om een toepassing van de Angular uit te voeren om met de eigenschap van de SPARedacteur van AEM te werken. In een echt scenario worden de ontwikkelingsactiviteiten uitgesplitst per persoon, waarbij vaak sprake is van een **Front End-ontwikkelaar** en **Ontwikkelaar Terug**. Wij geloven het voor om het even welke ontwikkelaar die aan een AEM SPARedacteur project zal worden betrokken om deze zelfstudie te voltooien.
+Het doel voor deze meerdelige zelfstudie is om een ontwikkelaar te leren hoe te om een toepassing van de Angular uit te voeren om met de eigenschap van de SPARedacteur van AEM te werken. In een echt scenario worden de ontwikkelingsactiviteiten uitgesplitst per persoon, waarbij vaak sprake is van een **Front End-ontwikkelaar** en **Ontwikkelaar Terug**. Wij geloven het voor om het even welke ontwikkelaar die bij een project van de SPA van de AEM betrokken is om deze zelfstudie te voltooien.
 
 De zelfstudie is ontworpen om te werken met **AEM as a Cloud Service** en is achterwaarts compatibel met **AEM 6.5.4+** en **AEM 6.4.8+**. De SPA wordt geïmplementeerd met:
 
