@@ -7,9 +7,10 @@ kt: 9724
 topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
+exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -82,8 +83,3 @@ De vervolgkeuzelijst Staat/provincie moet worden ingevuld op basis van het gesel
 
 Voeg twee vervolgkeuzelijsten met de naam provincies en steden toe in het formulier om de provincies en steden weer te geven op basis van het geselecteerde land en de geselecteerde staat/provincie.
 ![oefening](assets/cascading-drop-down-exercise.png)
-
-
-
-
-
