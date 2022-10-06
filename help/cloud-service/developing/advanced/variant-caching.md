@@ -4,9 +4,10 @@ description: Leer hoe u AEM instelt en gebruikt als cloudservice voor het onders
 role: Architect, Developer
 topic: Development
 feature: CDN Cache, Dispatcher
-source-git-commit: fa85f0270e21cc9857f95c541a06e87cf26d5798
+exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## Voorbeelden van gebruiksgevallen
 
-+ Om het even welke dienstverlener die een verschillende reeks dienstendienstenaanbod en overeenkomstige prijsstellingsopties aanbiedt die op de geo plaats van de gebruiker en het geheime voorgeheugen van pagina&#39;s met dynamische inhoud worden gebaseerd zou bij CDN en Verzender moeten worden beheerd.
++ Om het even welke dienstverlener die een verschillende reeks dienstenaanbod en overeenkomstige prijsstellingsopties aanbiedt die op de geo plaats van de gebruiker en het geheime voorgeheugen van pagina&#39;s met dynamische inhoud worden gebaseerd zou bij CDN en Verzender moeten worden beheerd.
 
 + Een detailhandelaar heeft opslag over het land en elke opslag heeft verschillende aanbiedingen gebaseerd op waar zij worden gevestigd en het geheime voorgeheugen van pagina&#39;s met dynamische inhoud zou bij CDN en Dispatcher moeten worden beheerd.
 
@@ -27,7 +28,7 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 + AEM code moet het cookie instellen __&quot;x-aem-variant&quot;__ naar de voorkeursstatus van de bezoeker (bijv. `Set-Cookie: x-aem-variant=NY`) over de overeenkomstige HTTP-respons van de oorspronkelijke HTTP-aanvraag.
 
-+ Volgende aanvragen van de bezoeker verzenden dat cookie (bijv. `“Cookie: x-aem-variant=NY”`) en wordt het cookie op CDN-niveau omgezet in een vooraf gedefinieerde header (d.w.z. `x-aem-variant:NY`) die aan de verzender wordt doorgegeven.
++ Volgende aanvragen van de bezoeker verzenden dat cookie (bijv. `"Cookie: x-aem-variant=NY"`) en wordt het cookie op CDN-niveau omgezet in een vooraf gedefinieerde header (d.w.z. `x-aem-variant:NY`) die aan de verzender wordt doorgegeven.
 
 + Een Apache-regel voor herschrijven wijzigt het aanvraagpad zodat de koptekstwaarde in de pagina-URL wordt opgenomen als een Apache Sling-kiezer (bijvoorbeeld `/page.variant=NY.html`). Hierdoor kan AEM-publicatie verschillende inhoud leveren op basis van de kiezer en kan de verzender één pagina per variant in cache plaatsen.
 
