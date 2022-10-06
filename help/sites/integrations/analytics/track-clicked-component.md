@@ -9,42 +9,42 @@ level: Intermediate
 kt: 6296
 thumbnail: KT-6296.jpg
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1810'
+source-wordcount: '1806'
 ht-degree: 1%
 
 ---
 
 # Aangeklikte component bijhouden met Adobe Analytics
 
-Gebruik de gebeurtenis-gedreven [de Laag van Gegevens van de Cliënt van de Adobe met AEM Core Componenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) om kliks van specifieke componenten op een plaats van Adobe Experience Manager te volgen. Leer hoe te om regels in Experience Platform Launch te gebruiken om op klikgebeurtenissen te luisteren, filter door component en verzend de gegevens naar een Adobe Analytics met een baken van de spoorverbinding.
+De gebeurtenisgestuurde [Adobe Clientgegevenslaag met AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) om kliks van specifieke componenten op een plaats van Adobe Experience Manager te volgen. Leer hoe te om regels in Experience Platform Launch te gebruiken om op klikgebeurtenissen te luisteren, filter door component en verzend de gegevens naar een Adobe Analytics met een baken van de spoorverbinding.
 
 ## Wat u gaat maken
 
-Het WKND marketing team wil begrijpen welke Vraag aan de knopen van de Actie (CTA) het beste op de homepage uitvoert. In deze zelfstudie voegen we een nieuwe regel in het Experience Platform Launch toe die luistert naar `cmp:click`-gebeurtenissen van **Teaser** en **Button**-componenten en sturen de component-id en een nieuwe gebeurtenis naar Adobe Analytics naast het trackkoppelingsbaken.
+Het WKND marketing team wil begrijpen welke Vraag aan de knopen van de Actie (CTA) het beste op de homepage uitvoert. In deze zelfstudie voegen we een nieuwe regel in het Experience Platform Launch toe die luistert naar `cmp:click` gebeurtenissen van **Teaser** en **Knop** en verzendt de component-id en een nieuwe gebeurtenis naar Adobe Analytics naast het baken van de trackkoppeling.
 
 ![Wat u spoorklikken zult bouwen](assets/track-clicked-component/final-click-tracking-cta-analytics.png)
 
 ### Doelstellingen {#objective}
 
-1. Creeer een gebeurtenis-gedreven regel in Lancering die op `cmp:click` gebeurtenis wordt gebaseerd.
+1. Maak een gebeurtenisgestuurde regel in Launch op basis van de regel `cmp:click` gebeurtenis.
 1. Filter de verschillende gebeurtenissen op componentenmiddeltype.
 1. Stel de component-id waarop wordt geklikt in en verzend de gebeurtenis Adobe Analytics met het trackkoppelingsbaken.
 
 ## Vereisten
 
-Deze zelfstudie is een vervolg van [Paginagegevens verzamelen met Adobe Analytics](./collect-data-analytics.md) en gaat ervan uit dat u:
+Deze zelfstudie is een voortzetting van [Paginagegevens verzamelen met Adobe Analytics](./collect-data-analytics.md) en gaat ervan uit dat u:
 
-* A **Launch Property** met [Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) enabled
-* **Adobe** AnalyticSnelst/dev-rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Experience Platform ](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) Debuggerbrowser uitbreiding die met uw bezit van de Lancering wordt gevormd op  [https://wknd.site/us/en.](https://wknd.site/us/en.html) htmlor een plaats van de AEM met de toegelaten Laag van Gegevens van Adobe wordt geladen.
+* A **Starteigenschap** met de [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) enabled
+* **Adobe Analytics** test/dev rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
+* [Foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) browserextensie geconfigureerd met de eigenschap Launch die is geladen op [https://wknd.site/us/en.html](https://wknd.site/us/en.html) of een AEM plaats met de Toegelaten Laag van Gegevens van de Adobe.
 
 ## Inspect the Button and Teaser Schema
 
-Alvorens regels in Lancering te maken is het nuttig om [schema voor de Knoop en het Taser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) te herzien en hen in de implementatie van de gegevenslaag te inspecteren.
+Voordat u regels maakt in Launch, is het handig om de [schema voor de knop en de taser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) en inspecteer hen in de implementatie van de gegevenslaag.
 
-1. Navigeer naar [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
+1. Navigeren naar [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
 1. Open de ontwikkelaarsgereedschappen van de browser en navigeer naar de **Console**. Voer de volgende opdracht uit:
 
    ```js
@@ -55,7 +55,7 @@ Alvorens regels in Lancering te maken is het nuttig om [schema voor de Knoop en 
 
    ![Toestand gegevenslaag via browserconsole](assets/track-clicked-component/adobe-data-layer-state-browser.png)
 
-1. Breid de reactie uit en vind ingangen vooraf met `button-` en `teaser-xyz-cta` ingang. U zou een gegevensschema als het volgende moeten zien:
+1. Vouw de reactie uit en zoek vooraf items met `button-` en  `teaser-xyz-cta` vermelding. U zou een gegevensschema als het volgende moeten zien:
 
    Knopschema:
 
@@ -78,21 +78,21 @@ Alvorens regels in Lancering te maken is het nuttig om [schema voor de Knoop en 
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   Deze zijn gebaseerd op [Component/Container het Schema van het Punt ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). De regel die we in Launch maken, gebruikt dit schema.
+   Deze zijn gebaseerd op de [Component-/containeritemschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). De regel die we in Launch maken, gebruikt dit schema.
 
 ## Een CTA-regel waarop wordt geklikt maken
 
-De gegevenslaag van de Gegevens van de Cliënt van Adobe is een **gebeurtenis** gedreven gegevenslaag. Wanneer op een willekeurige Core Component wordt geklikt, wordt een `cmp:click`-gebeurtenis verzonden via de gegevenslaag. Maak vervolgens een regel om naar de gebeurtenis `cmp:click` te luisteren.
+De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag. Wanneer op een willekeurige Core Component wordt geklikt, `cmp:click` -gebeurtenis wordt verzonden via de gegevenslaag. Maak vervolgens een regel om te luisteren naar de `cmp:click` gebeurtenis.
 
 1. Navigeer aan Experience Platform Launch en in het bezit van het Web dat met de Plaats van de AEM wordt geïntegreerd.
-1. Navigeer naar de sectie **Rules** in de gebruikersinterface van de Lancering en klik vervolgens **Regel toevoegen**.
-1. Noem de regel **CTA geklikt**.
-1. Klik **Gebeurtenissen** > **Toevoegen** om de wizard **Gebeurtenisconfiguratie** te openen.
-1. Selecteer **Aangepaste code** onder **Type gebeurtenis**.
+1. Ga naar de **Regels** in de gebruikersinterface van Launch en klik vervolgens op **Regel toevoegen**.
+1. Naam van de regel **CTA geklikt**.
+1. Klikken **Gebeurtenissen** > **Toevoegen** om de **Gebeurtenisconfiguratie** wizard.
+1. Onder **Type gebeurtenis** selecteren **Aangepaste code**.
 
    ![Noem de regel CTA klikte en voeg de gebeurtenis van de douanecode toe](assets/track-clicked-component/custom-code-event.png)
 
-1. Klik **Editor openen** in het hoofddeelvenster en voer het volgende codefragment in:
+1. Klikken **Editor openen** in het hoofddeelvenster en voer het volgende codefragment in:
 
    ```js
    var componentClickedHandler = function(evt) {
@@ -123,17 +123,17 @@ De gegevenslaag van de Gegevens van de Cliënt van Adobe is een **gebeurtenis** 
    });
    ```
 
-   Het bovenstaande codefragment voegt een gebeurtenislistener toe door een functie [in de gegevenslaag te duwen. ](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) Wanneer de gebeurtenis `cmp:click` wordt geactiveerd, wordt de functie `componentClickedHandler` aangeroepen. In deze functie worden een paar controles van de hygiëne toegevoegd en een nieuw `event` voorwerp wordt geconstrueerd met de recentste [staat van de gegevenslaag](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) voor de component die de gebeurtenis teweegbracht.
+   Het bovenstaande codefragment voegt een gebeurtenislistener toe door [een functie duwen](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) in de gegevenslaag. Wanneer de `cmp:click` gebeurtenis wordt geactiveerd `componentClickedHandler` functie wordt aangeroepen. In deze functie worden enkele controles van de hygiëne toegevoegd en wordt een nieuwe `event` object is samengesteld met de nieuwste [status van de gegevenslaag](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) voor de component die de gebeurtenis heeft geactiveerd.
 
-   Nadat `trigger(event)` wordt geroepen. `trigger()` is een gereserveerde naam in Launch en activeert &quot;de Launch-regel&quot;. We geven het object `event` door als een parameter die vervolgens weer wordt vrijgegeven door een andere gereserveerde naam in Launch met de naam `event`. Data Elements in Launch kan nu verwijzen naar verschillende eigenschappen, zoals: `event.component['someKey']`.
+   Na die `trigger(event)` wordt aangeroepen. `trigger()` is een gereserveerde naam in Launch en &quot;activeert&quot; de Launch-regel. We geven de `event` object als een parameter die op zijn beurt door een andere gereserveerde naam in de categorie Launch wordt weergegeven `event`. Data Elements in Launch kan nu verwijzen naar verschillende eigenschappen, zoals: `event.component['someKey']`.
 
 1. Sla de wijzigingen op.
-1. Vervolgens klikt u onder **Handelingen** op **Toevoegen** om de wizard **Configuratie handeling** te openen.
-1. Kies **Aangepaste code** onder **Type handeling**.
+1. Volgende onder **Handelingen** klikken **Toevoegen** om de **Configuratie van handelingen** wizard.
+1. Onder **Type handeling** kiezen **Aangepaste code**.
 
    ![Type aangepaste code-actie](assets/track-clicked-component/action-custom-code.png)
 
-1. Klik **Editor openen** in het hoofddeelvenster en voer het volgende codefragment in:
+1. Klikken **Editor openen** in het hoofddeelvenster en voer het volgende codefragment in:
 
    ```js
    console.debug("Component Clicked");
@@ -142,38 +142,38 @@ De gegevenslaag van de Gegevens van de Cliënt van Adobe is een **gebeurtenis** 
    console.debug("Component text: " + event.component['dc:title']);
    ```
 
-   Het object `event` wordt doorgegeven via de methode `trigger()` die in de aangepaste gebeurtenis wordt aangeroepen. `component` is de huidige staat van de component die uit de gegevenslaag wordt afgeleid  `getState` die de klik teweegbracht.
+   De `event` object wordt doorgegeven vanuit het `trigger()` wordt aangeroepen in de aangepaste gebeurtenis. `component` is de huidige staat van de component die van de gegevenslaag wordt afgeleid `getState` dat de klik teweegbracht.
 
-1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch uit om de code te promoten naar de [omgeving](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) die op uw AEM-site wordt gebruikt.
+1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch om de code te promoten naar de [milieu](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) gebruikt op uw AEM Site.
 
    >[!NOTE]
    >
-   > Het kan zeer nuttig zijn om [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) te gebruiken om de ingebedde code aan een **ontwikkelings** milieu te schakelen.
+   > Het kan zeer nuttig zijn om het [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) om de insluitcode over te schakelen op een **Ontwikkeling** milieu.
 
-1. Navigeer naar [WKND Site](https://wknd.site/us/en.html) en open de ontwikkelaarsgereedschappen om de console weer te geven. Selecteer **Logbestand behouden**.
+1. Ga naar de [WKND-site](https://wknd.site/us/en.html) en open de ontwikkelaarshulpmiddelen om de console te bekijken. Selecteren **Logbestand behouden**.
 
-1. Klik op een van de CTA-knoppen **Taser** of **Button** om naar een andere pagina te navigeren.
+1. Klik op een van de **Teaser** of **Knop** CTA knopen om aan een andere pagina te navigeren.
 
    ![CTA-knop om te klikken](assets/track-clicked-component/cta-button-to-click.png)
 
-1. Merk in de ontwikkelaarsconsole op dat **CTA Clicked** regel is in brand gestoken:
+1. Neem in de ontwikkelaarsconsole waar dat **CTA geklikt** regel is geactiveerd:
 
    ![CTA-knop geklikt](assets/track-clicked-component/cta-button-clicked-log.png)
 
 ## Gegevenselementen maken
 
-Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen waarop is geklikt. Tijdens de vorige exercitie was de uitvoer van `event.path` ongeveer vergelijkbaar met `component.button-b6562c963d` en de waarde van `event.component['dc:title']` was ongeveer als &quot;Trips weergeven&quot;.
+Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen waarop is geklikt. Herinneren in de vorige oefening de output van `event.path` was vergelijkbaar met `component.button-b6562c963d` en de waarde van `event.component['dc:title']` was zoiets als &#39;Beeld Trips&#39;.
 
 ### Component-id
 
 1. Navigeer aan Experience Platform Launch en in het bezit van het Web dat met de Plaats van de AEM wordt geïntegreerd.
-1. Navigeer naar de sectie **Gegevenselementen** en klik **Nieuw gegevenselement toevoegen**.
-1. Typ **Component ID** voor **Naam**.
-1. Voor **Gegevenselement Type** selecteert **Aangepaste code**.
+1. Ga naar de **Gegevenselementen** en klik op **Nieuw gegevenselement toevoegen**.
+1. Voor **Naam** enter **Component-id**.
+1. Voor **Type gegevenselement** selecteren **Aangepaste code**.
 
    ![Formulier Component ID-gegevenselement](assets/track-clicked-component/component-id-data-element.png)
 
-1. Klik op **Editor openen** en voer het volgende in de aangepaste code-editor in:
+1. Klikken **Editor openen** en voer het volgende in de redacteur van de douanecode in:
 
    ```js
    if(event && event.path && event.path.includes('.')) {
@@ -186,14 +186,14 @@ Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen 
 
    >[!NOTE]
    >
-   > Herinnering dat het `event` voorwerp beschikbaar wordt gemaakt en scoped gebaseerd op de gebeurtenis die **Rule** in Lancering teweegbracht. De waarde van een Element van Gegevens wordt niet geplaatst tot het Element van Gegevens *referenced* binnen een Regel is. Daarom is het veilig om dit Element van Gegevens binnen van een Regel als **CTA te gebruiken geklikt** regel die in de vorige oefening *maar* wordt gecreeerd zou niet veilig om in andere contexten te gebruiken zijn.
+   > Herinnert eraan dat de `event` object beschikbaar wordt gemaakt en het bereik wordt ingesteld op basis van de gebeurtenis die het **Regel** in Launch. De waarde van een gegevenselement wordt pas ingesteld wanneer het gegevenselement *gerefereerd* binnen een regel. Daarom is het veilig om dit Element van Gegevens binnen een Regel als te gebruiken **CTA geklikt** regel die is gemaakt in de vorige exercitie *maar* zou niet veilig zijn om in andere contexten te gebruiken.
 
 ### Componenttitel
 
-1. Navigeer naar de sectie **Gegevenselementen** en klik **Nieuw gegevenselement toevoegen**.
-1. Voer **Componenttitel** in voor **Naam**.
-1. Voor **Gegevenselement Type** selecteert **Aangepaste code**.
-1. Klik op **Editor openen** en voer het volgende in de aangepaste code-editor in:
+1. Ga naar de **Gegevenselementen** en klik op **Nieuw gegevenselement toevoegen**.
+1. Voor **Naam** enter **Componenttitel**.
+1. Voor **Type gegevenselement** selecteren **Aangepaste code**.
+1. Klikken **Editor openen** en voer het volgende in de redacteur van de douanecode in:
 
    ```js
    if(event && event.component && event.component.hasOwnProperty('dc:title')) {
@@ -205,15 +205,15 @@ Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen 
 
 ## Voeg een voorwaarde aan de CTA geklikte regel toe
 
-Vervolgens werkt u de **CTA waarop is geklikt**-regel bij om ervoor te zorgen dat de regel alleen wordt geactiveerd wanneer de `cmp:click`-gebeurtenis wordt geactiveerd voor een **Taser** of een **Button**. Aangezien Taser&#39;s CTA als een afzonderlijk object in de gegevenslaag wordt beschouwd, is het belangrijk om het bovenliggende element te controleren om te controleren of het van een Taser afkomstig is.
+Werk vervolgens de **CTA geklikt** om ervoor te zorgen dat de regel alleen wordt geactiveerd wanneer de `cmp:click` gebeurtenis wordt geactiveerd voor een **Teaser** of **Knop**. Aangezien Taser&#39;s CTA als een afzonderlijk object in de gegevenslaag wordt beschouwd, is het belangrijk om het bovenliggende element te controleren om te controleren of het van een Taser afkomstig is.
 
-1. Navigeer in de interface van de Lancering naar de **CTA geklikt** regel die eerder is gemaakt.
-1. Klik onder **Voorwaarden** op **Toevoegen** om de wizard **Condition Configuration** te openen.
-1. Selecteer **Aangepaste code** voor **Voorwaardetype**.
+1. Navigeer in de interface Starten naar de **CTA geklikt** regel die eerder is gemaakt.
+1. Onder **Voorwaarden** klikken **Toevoegen** om de **Condition Configuration** wizard.
+1. Voor **Type voorwaarde** selecteren **Aangepaste code**.
 
    ![Aangepaste code voor CTA waarop is geklikt](assets/track-clicked-component/custom-code-condition.png)
 
-1. Klik op **Editor openen** en voer het volgende in de aangepaste code-editor in:
+1. Klikken **Editor openen** en voer het volgende in de redacteur van de douanecode in:
 
    ```js
    if(event && event.component && event.component.hasOwnProperty('@type')) {
@@ -229,72 +229,72 @@ Vervolgens werkt u de **CTA waarop is geklikt**-regel bij om ervoor te zorgen da
    return false;
    ```
 
-   De bovenstaande code controleert eerst of was het middeltype van **Knoop** en dan controleert om te zien of was het middeltype van CTA binnen **Taser**.
+   De bovenstaande code controleert eerst of het middeltype van a afkomstig was **Knop** en controleert dan of was het middeltype van een CTA binnen **Teaser**.
 
 1. Sla de wijzigingen op.
 
 ## Analysevariabelen instellen en Track Link Beacon activeren
 
-Momenteel voert de **CTA geklikt** regel eenvoudig een consoleverklaring uit. Vervolgens gebruikt u de gegevenselementen en de extensie Analytics om de variabelen Analytics in te stellen als een **action**. Wij zullen ook een extra actie plaatsen om **Verbinding van het Spoor** teweeg te brengen en de verzamelde gegevens naar Adobe Analytics te verzenden.
+Momenteel worden de **CTA geklikt** regel output eenvoudig een consoleverklaring. Gebruik vervolgens de gegevenselementen en de extensie Analytics om de variabelen Analytics in te stellen als een **action**. We zullen ook een aanvullende actie ondernemen om de **Koppeling bijhouden** en de verzamelde gegevens naar Adobe Analytics verzenden.
 
-1. In **CTA klikte** regel **remove** de **Kern - Douane Code** actie (de consoleverklaringen):
+1. In de **CTA geklikt** regel **remove** de **Core - Aangepaste code** handeling (de consoleverklaringen):
 
    ![Aangepaste code verwijderen](assets/track-clicked-component/remove-console-statements.png)
 
 1. Klik onder Handelingen op **Toevoegen** om een nieuwe handeling toe te voegen.
-1. Stel het type **Extension** in op **Adobe Analytics** en stel het **Action Type** in op **Variabelen instellen**.
+1. Stel de **Extensie** tekst naar **Adobe Analytics** en stelt de **Type handeling** tot  **Variabelen instellen**.
 
-1. Stel de volgende waarden in voor **eVars**, **Props** en **Gebeurtenissen**:
+1. Stel de volgende waarden in voor **eVars**, **Props**, en **Gebeurtenissen**:
 
    * `evar8` - `%Component ID%`
-   * `prop8` -  `%Component ID%`
+   * `prop8` - `%Component ID%`
    * `event8`
 
    ![Prop en gebeurtenissen voor eVar instellen](assets/track-clicked-component/set-evar-prop-event.png)
 
    >[!NOTE]
    >
-   > Hier wordt `%Component ID%` gebruikt aangezien het een uniek herkenningsteken voor CTA zal verzekeren dat werd geklikt. Een potentieel nadeel van het gebruik van `%Component ID%` is dat het rapport Analytics waarden als `button-2e6d32893a` zal bevatten. Het gebruiken van `%Component Title%` zou een mensvriendelijkere naam maar de waarde zou niet uniek kunnen zijn.
+   > hier `%Component ID%` wordt gebruikt aangezien het een uniek herkenningsteken voor CTA zal verzekeren dat werd geklikt. Een potentiële nadeel van het gebruik `%Component ID%` is dat het analyserapport waarden bevat zoals `button-2e6d32893a`. Gebruiken `%Component Title%` zou een mensvriendelijkere naam geven, maar de waarde zou niet uniek kunnen zijn.
 
-1. Voeg vervolgens een aanvullende handeling toe aan de rechterkant van de **Adobe Analytics - Set Variables** door op het pictogram **plus** te tikken:
+1. Voeg vervolgens een aanvullende handeling toe aan de rechterkant van de knop **Adobe Analytics - Variabelen instellen** door op de **plus** pictogram:
 
    ![Een extra opstarthandeling toevoegen](assets/track-clicked-component/add-additional-launch-action.png)
 
-1. Stel het type **Extension** in op **Adobe Analytics** en stel het **Action Type** in op **Beacon** verzenden.
-1. Stel onder **Tekstspatiëring** het keuzerondje in op **`s.tl()`**.
-1. Voor **Koppelingstype** kiest u **Eigen koppeling** en voor **Koppelingsnaam** stelt u de waarde in op: **`%Component Title%: CTA Clicked`**:
+1. Stel de **Extensie** tekst naar **Adobe Analytics** en stelt de **Type handeling** tot  **Band verzenden**.
+1. Onder **Tekstspatiëring** het keuzerondje instellen op **`s.tl()`**.
+1. Voor **Koppelingstype** kiezen **Aangepaste koppeling** en voor **Koppelingsnaam** Stel de waarde in op: **`%Component Title%: CTA Clicked`**:
 
    ![Configuratie voor het baken van de Verbinding verzenden](assets/track-clicked-component/analytics-send-beacon-link-track.png)
 
-   Hierdoor wordt de dynamische variabele van het gegevenselement **Component Title** gecombineerd met de statische tekenreeks **CTA waarop wordt geklikt**.
+   Hierdoor wordt de dynamische variabele van het gegevenselement gecombineerd **Componenttitel** en de statische tekenreeks **CTA geklikt**.
 
-1. Sla de wijzigingen op. De **CTA geklikt** regel zou nu de volgende configuratie moeten hebben:
+1. Sla de wijzigingen op. De **CTA geklikt** de regel zou nu de volgende configuratie moeten hebben:
 
    ![Definitieve opstartconfiguratie](assets/track-clicked-component/final-page-loaded-config.png)
 
-   * **1.** Luister naar de  `cmp:click` gebeurtenis.
-   * **2.** Controleer of de gebeurtenis is geactiveerd door een  **** Buttonor- **taser**.
-   * **3.** Stel de variabelen Analytics in voor om de  **Component** IDas an  **eVar**,  **prop** en an  **event** bij te houden.
-   * **4.** Verzend het Beacon van de Verbinding van het Spoor Analytics (en behandelt het  **** niet als paginamening).
+   * **1.** Luister naar de `cmp:click` gebeurtenis.
+   * **2.** Controleer of de gebeurtenis is geactiveerd door een **Knop** of **Teaser**.
+   * **3.** Stel analysevariabelen in voor om de **Component-id** als **eVar**, **prop** en **event**.
+   * **4.** Verzend het Beacon van de Verbinding van het Spoor Analytics (en doe **niet** behandelen het als paginamening).
 
 1. Sla alle wijzigingen op en maak uw opstartbibliotheek, waarbij u een upgrade uitvoert naar de juiste omgeving.
 
 ## Valideer de vraag van het Beacon en van de Analyse van de Verbinding van het Spoor
 
-Nu **CTA geklikt** de regel verzendt het baken van Analytics, zou u de variabelen moeten kunnen zien die van Analytics volgen gebruikend Foutopsporing van het Experience Platform.
+Nu **CTA geklikt** regel verzendt het baken van Analytics, zou u de Analytics volgende variabelen moeten kunnen zien gebruikend Foutopsporing van het Experience Platform.
 
-1. Open [WKND Site](https://wknd.site/us/en.html) in uw browser.
-1. Klik op het pictogram Foutopsporing ![Ervaar het pictogram Foutopsporing op platform](assets/track-clicked-component/experience-cloud-debugger.png) om Foutopsporing op Experience Platform te openen.
-1. Zorg ervoor Debugger het bezit van de Lancering aan *uw* ontwikkelomgeving in kaart brengt, zoals vroeger beschreven en **Console het Registreren** wordt gecontroleerd.
-1. Open het menu Analytics en controleer of de rapportsuite is ingesteld op *uw*-rapportsuite.
+1. Open de [WKND-site](https://wknd.site/us/en.html) in uw browser.
+1. Klik op het pictogram Foutopsporing ![Het pictogram Foutopsporing op platform beleven](assets/track-clicked-component/experience-cloud-debugger.png) om Foutopsporing op Experience Platform te openen.
+1. Zorg ervoor dat Foutopsporing de eigenschap Launch toewijst aan *uw* Ontwikkelomgeving, zoals eerder beschreven en **Logboekregistratie voor console** is ingeschakeld.
+1. Open het menu Analytics en controleer of de rapportsuite is ingesteld op *uw* rapportsuite.
 
    ![Foutopsporing op het tabblad Analyse](assets/track-clicked-component/analytics-tab-debugger.png)
 
-1. Klik in de browser op een van de CTA-knoppen **Taser** of **Button** om naar een andere pagina te navigeren.
+1. Klik in de browser op een van de **Teaser** of **Knop** CTA knopen om aan een andere pagina te navigeren.
 
    ![CTA-knop om te klikken](assets/track-clicked-component/cta-button-to-click.png)
 
-1. Ga terug naar de foutopsporing van het Experience Platform en schuif omlaag en vouw **Netwerkverzoeken** > *Uw rapportsuite* uit. U zou **eVar**, **prop**, en **event** moeten kunnen vinden reeks.
+1. Terug naar Foutopsporing Experience Platform en omlaag schuiven en uitvouwen **Netwerkverzoeken** > *Uw rapportsuite*. U zou moeten kunnen vinden **eVar**, **prop**, en **event** set.
 
    ![Analytische gebeurtenissen, evar en prop bijgehouden bij klikken](assets/track-clicked-component/evar-prop-link-clicked-tracked-debugger.png)
 
@@ -302,13 +302,13 @@ Nu **CTA geklikt** de regel verzendt het baken van Analytics, zou u de variabele
 
    ![Klik op Navigatiekoppeling in de voettekst](assets/track-clicked-component/click-navigation-link-footer.png)
 
-1. Neem in de browser console het bericht *&quot;Aangepaste Code&quot;voor regel &quot;CTA Clicked&quot;niet werd ontmoet*.
+1. Neem in de browser console het bericht waar *Er is niet voldaan aan &quot;Aangepaste code&quot; voor regel waarop wordt geklikt*.
 
-   De reden hiervoor is dat de navigatiecomponent een `cmp:click`-gebeurtenis *maar* activeert vanwege de controle van de gebeurtenis op het middeltype. Er wordt geen actie uitgevoerd.
+   Dit komt omdat de navigatiecomponent een `cmp:click` event *maar* omdat wij de controle van het bestand hebben gecontroleerd op het type resource , wordt geen actie ondernomen .
 
    >[!NOTE]
    >
-   > Als u geen consolelogboeken ziet, zorg ervoor dat **Console het Registreren** onder **Lancering** in Foutopsporing van het Experience Platform wordt gecontroleerd.
+   > Als u geen consolelogboeken ziet, zorg ervoor dat **Logboekregistratie voor console** is gecontroleerd onder **Starten** in de Foutopsporing van het Experience Platform.
 
 ## Gefeliciteerd!
 
