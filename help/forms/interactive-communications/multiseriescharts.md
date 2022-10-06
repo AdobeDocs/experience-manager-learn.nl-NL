@@ -1,8 +1,6 @@
 ---
 title: Diagrammen uit meerdere reeksen in AEM Forms
-seo-title: Multi Series Charts in AEM Forms
 description: Maak het juiste formuliergegevensmodel om grafieken met meerdere reeksen te maken in afdruk- en webkanaaldocumenten.
-seo-description: Create appropriate Form Data Model to create multi series charts in print and web channel documents.
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -13,9 +11,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -24,27 +22,24 @@ ht-degree: 0%
 
 AEM Forms 6.5 introduceerde de capaciteit om veelvoudige reekskaarten tot stand te brengen en te vormen. De veelvoudige reekskaarten worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom. De volgende grafiek is een goed voorbeeld van multi reeksengrafiek. De grafiek toont de groei van USD 10.000 in 3 verschillende onderlinge fondsen over een bepaalde periode. Als u dergelijke grafieken in AEM Forms wilt maken en gebruiken, moet u het juiste formuliergegevensmodel maken.
 
-![multiseries](assets/seriescharts.jfif)
+![Diagram met meerdere reeksen](assets/seriescharts.jfif)
 
 Als u grafieken met meerdere reeksen wilt maken in AEM Forms, moet u een geschikt formuliergegevensmodel maken met de benodigde entiteiten en koppelingen tussen de entiteiten. In de volgende screenshot worden de entiteiten en de koppelingen tussen de drie entiteiten gemarkeerd. Op het hoogste niveau hebben we een entiteit genaamd &quot;Organisatie&quot;, die een één-op-veel associatie heeft met een fondsentiteit. De fondsentiteit heeft op haar beurt een een-op-een-relatie met de prestatieentiteit.
 
-![formdatamodel](assets/formdatamodel.jfif)
-
+![Formuliergegevensmodel](assets/formdatamodel.jfif)
 
 ## Formuliergegevensmodel maken voor grafieken uit meerdere reeksen
 
 >[!VIDEO](https://video.tv.adobe.com/v/26352/quality=9)
 
-
 ### Lijstreekgrafieken configureren
 
 >[!VIDEO](https://video.tv.adobe.com/v/26353?quality=9&learn=on)
 
-
 Voer de volgende stappen uit om dit op uw systeem te testen
 
 * [Download en importeer het bestand MutualFundFactSheet.zip met AEM Package Manager.](assets/mutualfundfactsheet.zip)
-* [Download SeriesChartSampleData.json op uw harde aandrijving.](assets/serieschartsampledata.json) Dit zijn de steekproefgegevens die zullen worden gebruikt om de grafiek te bevolken.
+* [Download SeriesChartSampleData.json op uw harde aandrijving.](assets/serieschartsampledata.json) Dit zijn de steekproefgegevens die worden gebruikt om de grafiek te bevolken.
 * [Navigeer naar Forms en Documenten.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Selecteer voorzichtig de interactieve communicatiesjabloon &quot;MutualFundGrowthFactSheet&quot;.
 * Klik op Voorvertoning | Afdrukkanaal | Voorbeeldgegevens uploaden.
