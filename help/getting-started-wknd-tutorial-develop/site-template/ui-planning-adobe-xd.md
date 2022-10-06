@@ -10,9 +10,10 @@ role: Developer
 level: Beginner
 kt: 9371
 thumbnail: 338680.jpg
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -64,6 +65,6 @@ Extra [UI-kits beschikbaar](https://www.adobe.com/products/xd/features/ui-kits.h
 
 ### Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk wordt een nieuwe paginasjabloon gemaakt op basis van het ontwerp van het WKND-artikel.
+In het volgende hoofdstuk wordt een nieuw paginasjabloon gemaakt op basis van het ontwerp van het WKND-artikel.
 
 Leer maken en wijzigen [Paginasjablonen](./page-templates.md). Begrijp de verhouding tussen een Malplaatje van de Pagina en een Pagina. Leer hoe u beleid van een paginasjabloon configureert voor korrelig beheer en consistentie van merken voor inhoud.  Een goed gestructureerde sjabloon voor artikel van het tijdschrift wordt gemaakt op basis van een model van Adobe XD.
