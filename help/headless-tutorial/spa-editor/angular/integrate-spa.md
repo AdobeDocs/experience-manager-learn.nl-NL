@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2187'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Begrijp hoe de broncode voor een Toepassing van de Enige Pagina (SPA) die in Ang
 
 ## Wat u gaat maken
 
-In dit hoofdstuk wordt een eenvoudig hoofdstuk toegevoegd `Header` aan de SPA. Tijdens het ontwikkelen van deze statische `Header` er zullen verschillende benaderingen voor AEM SPA ontwikkeling worden gebruikt .
+In dit hoofdstuk wordt een eenvoudig hoofdstuk toegevoegd `Header` aan de SPA. Tijdens het ontwikkelen van deze statische `Header` wordt gebruik gemaakt van verschillende benaderingen voor AEM SPA ontwikkeling.
 
 ![Nieuwe koptekst in AEM](./assets/integrate-spa/final-header-component.png)
 
@@ -71,7 +71,7 @@ U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/a
 
 In het kader van het AEM-project werden twee modules gemaakt: `ui.apps` en `ui.frontend`.
 
-De `ui.frontend` module is een [webpack](https://webpack.js.org/) project dat alle SPA broncode bevat. Het grootste deel van de SPA ontwikkeling en tests zal worden uitgevoerd in het webpack-project. Wanneer een productiebouwstijl wordt teweeggebracht, wordt het SPA gebouwd en gecompileerd gebruikend webpack. De gecompileerde artefacten (CSS en Javascript) worden gekopieerd in `ui.apps` die dan aan AEM runtime wordt opgesteld.
+De `ui.frontend` module is een [webpack](https://webpack.js.org/) project dat alle SPA broncode bevat. Het grootste deel van de SPA ontwikkeling en tests vindt plaats in het webpack-project. Wanneer een productiebouwstijl wordt teweeggebracht, wordt het SPA gebouwd en gecompileerd gebruikend webpack. De gecompileerde artefacten (CSS en Javascript) worden gekopieerd in `ui.apps` die dan aan AEM runtime wordt opgesteld.
 
 ![ui.frontend architectuur op hoog niveau](assets/integrate-spa/ui-frontend-architecture.png)
 
@@ -269,7 +269,7 @@ Vervolgens voegt u een nieuwe component aan de SPA toe en implementeert u de wij
 
 Zoals u in de vorige oefeningen ziet, duurt het maken van een build en het synchroniseren van de clientbibliotheek naar een lokale AEM enkele minuten. Dit is acceptabel voor de uiteindelijke test, maar niet ideaal voor het grootste deel van de SPA ontwikkeling.
 
-A [webpack-ontwikkelserver](https://webpack.js.org/configuration/dev-server/) kan worden gebruikt om de SPA snel te ontwikkelen. De SPA wordt aangedreven door een JSON-model dat door AEM wordt gegenereerd. In deze oefening zal de inhoud JSON van een lopende instantie van AEM **geproxeerd** in de ontwikkelingsserver die door [Angular](https://angular.io/guide/build).
+A [webpack-ontwikkelserver](https://webpack.js.org/configuration/dev-server/) kan worden gebruikt om de SPA snel te ontwikkelen. De SPA wordt aangedreven door een JSON-model dat door AEM wordt gegenereerd. In deze oefening is de JSON-inhoud van een actief exemplaar van AEM **geproxeerd** in de ontwikkelingsserver die door [Angular](https://angular.io/guide/build).
 
 1. Terugkeren naar IDE en het bestand openen **proxy.conf.json** om `ui.frontend/proxy.conf.json`.
 
