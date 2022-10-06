@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 # Ingediende gegevens opvragen
 
 
-De volgende stap is de voorgelegde gegevens te vragen en de resultaten in tabelvorm te tonen. Hiervoor gebruiken we de volgende software
+De volgende stap is de voorgelegde gegevens te vragen en de resultaten in tabelvorm te tonen. Hiervoor gebruiken we de volgende software:
 
 [QueryBuilder](https://querybuilder.js.org/) - UI-component om query&#39;s te maken
 
@@ -64,7 +64,7 @@ public JSONArray getData(String formName) throws SQLException, IOException {
  }
 ```
 
-Wanneer de knoop GetResult wordt geklikt krijgt vraag wordt gemaakt aan **&quot;/bin/querydata&quot;**. Wij gaan de vraag door VraagBuilder UI aan servlet door de vraagparameter wordt gebouwd die over. De servlet massages deze vraag in SQL vraag dan die kan worden gebruikt om het gegevensbestand te vragen. Bijvoorbeeld, als u zoekt om alle producten terug te winnen genoemd &quot;Muis&quot;zal het de vraagkoord van de Bouwer van de Vraag $.productname = &quot;Muis&quot;zijn. Deze query wordt vervolgens omgezet in de volgende code
+Wanneer de knoop GetResult wordt geklikt krijgt vraag wordt gemaakt aan **&quot;/bin/querydata&quot;**. Wij gaan de vraag door VraagBuilder UI aan servlet door de vraagparameter wordt gebouwd die over. De servlet massages deze vraag in SQL vraag dan die kan worden gebruikt om het gegevensbestand te vragen. Als u bijvoorbeeld alle producten met de naam &#39;Mouse&#39; wilt ophalen, is de queryreeks van Query Builder `$.productname = 'Mouse'`. Deze query wordt vervolgens omgezet in de volgende code
 
 SELECT &#42; van aemformswithjson.  formulieren waarbij JSON_EXTRACT( formsubmission.formdata,&quot;$.productName &quot;)= &#39;Mouse&#39;
 
