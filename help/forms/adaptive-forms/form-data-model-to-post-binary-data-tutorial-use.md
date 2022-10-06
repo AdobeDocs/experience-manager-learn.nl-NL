@@ -3,16 +3,16 @@ title: Binaire gegevens verzenden met het formuliergegevensmodel
 description: Binaire gegevens via het formuliergegevensmodel naar AEM DAM verzenden
 feature: Workflow
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 9c62a7d6-8846-424c-97b8-2e6e3c1501ec
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
-
 
 # Binaire gegevens verzenden met het formuliergegevensmodel{#using-form-data-model-to-post-binary-data}
 
@@ -40,24 +40,24 @@ Service-invoer
 
 >[!NOTE]
 >
->Tips voor het oplossen van problemen - Als de DOR.pdf om een of andere reden niet in DAM wordt gemaakt, stelt u de instellingen voor gegevensbronverificatie opnieuw in door [hier](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam) te klikken. Dit zijn de instellingen voor AEM verificatie, die standaard admin/admin zijn.
+>Tips voor het oplossen van problemen - Als om een of andere reden DOR.pdf niet in DAM wordt gemaakt, herstelt u de instellingen voor gegevensbronverificatie door op [hier](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Dit zijn de instellingen voor AEM verificatie, die standaard admin/admin zijn.
 
 Volg onderstaande stappen om deze mogelijkheid op uw server te testen:
 
-1.[De DevelopingWithService-gebruikerbundel implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1.[De gebruikersbundel DevelopingWithService implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Download en implementeer de setvalue-bundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Deze aangepaste OSGI-bundel wordt gebruikt om metagegevenseigenschap te maken en de waarde ervan in te stellen op basis van de verzonden formuliergegevens.
+1. [De setvalue-bundel downloaden en implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar).This custom OSGI bundle is used to create metadata property and set its value from the submitted form data.
 
-1. [Importeer de aan dit artikel gekoppelde ](assets/postdortodam.zip) elementen in AEM via pakketbeheer. U krijgt de volgende opties
+1. [Elementen importeren](assets/postdortodam.zip) is gekoppeld aan dit artikel in AEM met gebruik van pakketbeheer. U krijgt het volgende
 
    1. Workflowmodel
    1. Adaptief formulier geconfigureerd voor verzending naar de AEM-workflow
    1. Gegevensbron geconfigureerd voor gebruik van het bestand PostToDam.JSON
    1. Formuliergegevensmodel dat gebruikmaakt van de gegevensbron
 
-1. Wijs uw [browser aan om de Aangepaste Vorm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled) te openen
+1. Wijs uw [browser om het adaptieve formulier te openen](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 1. Vul het formulier in en verzend het.
 1. Controleer de toepassing Middelen als het Document of Record is gemaakt en opgeslagen.
 
 
-[Voor uw referentie is een ](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) bestand beschikbaar dat wordt gebruikt bij het maken van de gegevensbron
+[Swaggbestand](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) gebruikt bij het maken van de gegevensbron is beschikbaar voor uw referentie
