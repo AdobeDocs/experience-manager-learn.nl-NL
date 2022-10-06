@@ -9,9 +9,9 @@ level: Experienced
 kt: 8627
 thumbnail: 336957.jpeg
 exl-id: f8289dd4-b293-4b8f-b14d-daec091728c0
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Het BPA-pakket moet worden geïnstalleerd op een kloon van de AEM 6.x-omgeving. 
 
 ## Belangrijkste activiteiten
 
-+ Maak een kloon van uw productie 6.x milieu. Wanneer u inhoud en refactorcode migreert, is het van belang een kloon van een productieomgeving te hebben om verschillende gereedschappen en wijzigingen te testen.
++ Maak een kloon van uw productie 6.x milieu. Tijdens het migreren van inhoud en refactorcode is het van belang een kloon van een productieomgeving te hebben om verschillende gereedschappen en wijzigingen te testen.
 + Download het nieuwste BPA-programma van de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en installeer op uw AEM 6.x gekloonde omgeving.
 + Gebruik het hulpmiddel BPA om een rapport te produceren dat aan de Manager van de Versnelling van de Wolk (CAM) kan worden geupload. CAM is toegankelijk via [https://experience.adobe.com/](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
 + Gebruik CAM om richtlijnen te geven voor de updates die moeten worden uitgevoerd in de huidige codebasis en -omgeving om naar AEM as a Cloud Service te gaan.
