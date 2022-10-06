@@ -2,18 +2,18 @@
 title: Slim uitsnijden gebruiken met AEM Assets Dynamic Media
 description: Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare taken van het uitsnijden van inhoud voor een responsief ontwerp te elimineren.
 sub-product: dynamic-media
-feature: Slim uitsnijden, afbeeldingsprofielen
+feature: Smart Crop, Image Profiles
 version: 6.4, 6.5
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
-
 
 # Slim uitsnijden gebruiken met AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
@@ -35,4 +35,4 @@ Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare tak
 
 >[!NOTE]
 >
->De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Als de hoogte-breedteverhouding voor de verschillende instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel hetzelfde is voor de toegevoegde afmetingen in het afbeeldingsprofiel, wordt dezelfde hoogte-breedteverhouding verzonden naar dynamische media. Daarom wordt hetzelfde uitsnijdgebied voorgesteld in de slimme editor voor uitsnijden. Als u bijvoorbeeld een uitsnijdinstelling van 100x100 en 200x200 instelt, wordt dezelfde slimme uitsnijding gegenereerd door het systeem.
+>De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Als de hoogte-breedteverhouding voor de verschillende instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel hetzelfde is voor de toegevoegde afmetingen in het afbeeldingsprofiel, wordt dezelfde hoogte-breedteverhouding verzonden naar dynamische media. Daarom wordt hetzelfde uitsnijdgebied voorgesteld in de Smart Crop Editor. Als u bijvoorbeeld een uitsnijdinstelling van 100x100 en 200x200 instelt, wordt dezelfde slimme uitsnijding gegenereerd door het systeem.
