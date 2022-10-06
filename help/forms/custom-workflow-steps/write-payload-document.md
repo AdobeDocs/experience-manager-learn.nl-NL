@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 kt: kt-9859
-source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
+exl-id: bab7c403-ba42-4a91-8c86-90b43ca6026c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Voor het aangepaste proces worden de volgende door komma&#39;s gescheiden argume
 ChangeBeneficiary.pdf,c:\confirmation
 ```
 
-Het eerste argument is de naam van het document dat u wilt opslaan in het bestandssysteem. Het tweede argument is de maplocatie waar u het document wilt opslaan. In het bovenstaande geval van gebruik wordt het document bijvoorbeeld geschreven naar c:\confirmation\ChangeBeneficiary.pdf
+Het eerste argument is de naam van het document dat u wilt opslaan in het bestandssysteem. Het tweede argument is de maplocatie waar u het document wilt opslaan. In het bovenstaande geval kunt u het document bijvoorbeeld gebruiken waarnaar `c:\confirmation\ChangeBeneficiary.pdf`
 
 Het volgende het schermschot toont u de argumenten die u tot de stap van het douaneproces moet overgaan
 ![write-payload-file-system](assets/write-payload-file-system.png)
