@@ -12,22 +12,22 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
 
 # Een aangepaste Weather-component maken {#custom-component}
 
-Leer hoe u een aangepaste weercomponent maakt die u kunt gebruiken met de AEM SPA Editor. Leer hoe u dialoogvensters met auteurs en Sling Models ontwikkelt om het JSON-model uit te breiden en een aangepaste component te vullen. De [Open Weather API](https://openweathermap.org) en [React Open Weather component](https://www.npmjs.com/package/react-open-weather) worden gebruikt.
+Leer hoe u een aangepaste weercomponent maakt die u kunt gebruiken met de AEM SPA Editor. Leer hoe u dialoogvensters met auteurs en Sling Models ontwikkelt om het JSON-model uit te breiden en een aangepaste component te vullen. De [Weer-API openen](https://openweathermap.org) en [Reageren op Open Weather-component](https://www.npmjs.com/package/react-open-weather) worden gebruikt.
 
 ## Doelstelling
 
 1. Begrijp de rol van Sling Models in het manipuleren van JSON model API die door AEM wordt verstrekt.
 2. Begrijp hoe te om nieuwe AEM componentendialogen tot stand te brengen.
-3. Leer om een **custom** AEM Component tot stand te brengen die met het SPA redacteurskader compatibel zal zijn.
+3. Leer een **aangepast** AEM Component die met het SPA redacteurskader compatibel is.
 
 ## Wat u gaat maken
 
@@ -37,23 +37,23 @@ Er wordt een eenvoudige weercomponent gemaakt. Deze component kan door inhoudsau
 
 ## Vereisten
 
-Controleer de vereiste gereedschappen en instructies voor het instellen van een [lokale ontwikkelomgeving](overview.md#local-dev-environment). Dit hoofdstuk is een voortzetting van het [Navigatie en het Verpletteren](navigation-routing.md) hoofdstuk, nochtans om langs alles te volgen u nodig is een SPA-toegelaten AEM project dat aan een lokale AEM instantie wordt opgesteld.
+Controleer de vereiste gereedschappen en instructies voor het instellen van een [plaatselijke ontwikkelomgeving](overview.md#local-dev-environment). Dit hoofdstuk is een voortzetting van het [Navigatie en routering](navigation-routing.md) hoofdstuk, nochtans om langs alles te volgen u wenst is een SPA-toegelaten AEM project dat aan een lokale AEM instantie wordt opgesteld.
 
 ### API-sleutel voor weezelaar openen
 
-Een API sleutel van [Open Weather](https://openweathermap.org/) is nodig om samen met het leerprogramma te volgen. [Aanmelden is ](https://home.openweathermap.org/users/sign_up) gratis voor een beperkte hoeveelheid API-aanroepen.
+Een API-sleutel van [Weer openen](https://openweathermap.org/) is nodig om de zelfstudie te volgen. [Aanmelden is gratis](https://home.openweathermap.org/users/sign_up) voor een beperkte hoeveelheid API-aanroepen.
 
 ## De AEM component definiëren
 
-Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het project worden deze knopen en eigenschappen vertegenwoordigd als dossiers van XML in `ui.apps` module. Maak vervolgens de AEM component in de module `ui.apps`.
+Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het project worden deze knooppunten en eigenschappen vertegenwoordigd als XML-bestanden in de `ui.apps` module. Maak vervolgens de AEM component in het dialoogvenster `ui.apps` module.
 
 >[!NOTE]
 >
-> Een snelle verfrisser op de [grondbeginselen van AEM componenten kan nuttig zijn](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
+> Een snelle herhaling op de [de grondbeginselen van AEM componenten kunnen nuttig zijn](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
-1. Open de map `ui.apps` in IDE van uw keuze.
-2. Navigeer naar `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components` en maak een nieuwe map met de naam `open-weather`.
-3. Maak een nieuw bestand met de naam `.content.xml` onder de map `open-weather`. Vul `open-weather/.content.xml` met het volgende:
+1. Open in de IDE van uw keuze de `ui.apps` map.
+2. Navigeren naar `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components` en maak een nieuwe map met de naam `open-weather`.
+3. Een nieuw bestand maken met de naam `.content.xml` onder de `open-weather` map. Vul de `open-weather/.content.xml` met het volgende:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -65,12 +65,12 @@ Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
 
    ![Aangepaste componentdefinitie maken](assets/custom-component/aem-custom-component-definition.png)
 
-   `jcr:primaryType="cq:Component"` - identificeert dat dit knooppunt een AEM component zal zijn.
+   `jcr:primaryType="cq:Component"` - identificeert dat dit knooppunt een AEM component is.
 
-   `jcr:title` is de waarde die aan de Auteurs van de Inhoud zal worden getoond en het  `componentGroup` bepaalt de groepering van componenten in auteursUI.
+   `jcr:title` Dit is de waarde die wordt weergegeven voor auteurs van inhoud en de `componentGroup` bepaalt de groepering van componenten in auteursUI.
 
-4. Onder de `custom-component` omslag, creeer een andere omslag genoemd `_cq_dialog`.
-5. Onder de map `_cq_dialog` maakt u een nieuw bestand met de naam `.content.xml` en vult u dit met het volgende:
+4. Onder de `custom-component` map, een andere map maken met de naam `_cq_dialog`.
+5. Onder de `_cq_dialog` map maken een nieuw bestand met de naam `.content.xml` en vult deze met het volgende:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -137,25 +137,25 @@ Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
 
    ![Aangepaste componentdefinitie](assets/custom-component/dialog-custom-component-defintion.png)
 
-   Het bovenstaande XML-bestand genereert een eenvoudige dialoog voor `Weather Component`. Het kritieke deel van het bestand is de binnenknooppunten `<label>`, `<lat>` en `<lon>`. Dit dialoogvenster bevat twee `numberfield`s en een `textfield` waarmee een gebruiker het weer kan configureren dat wordt weergegeven.
+   Het bovenstaande XML-bestand genereert een zeer eenvoudig dialoogvenster voor het `Weather Component`. Het kritieke deel van het bestand is de binnenzijde `<label>`, `<lat>` en `<lon>` knooppunten. Dit dialoogvenster bevat twee `numberfield`s en a `textfield` dat een gebruiker toestaat om het weer te vormen dat moet worden getoond.
 
-   Er wordt een Sling-model gemaakt naast de waarde van de eigenschappen `label`,`lat` en `long` via het JSON-model.
+   Er wordt een verkoopmodel gemaakt naast de waarde van de optie `label`,`lat` en `long` eigenschappen via het JSON-model.
 
    >[!NOTE]
    >
-   > U kunt veel meer [voorbeelden van dialogen bekijken door de definities van de Component van de Kern te bekijken](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). U kunt ook extra formuliervelden weergeven, zoals `select`, `textarea`, `pathfield`, beschikbaar onder `/libs/granite/ui/components/coral/foundation/form` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
+   > Je kunt nog veel meer bekijken [voorbeelden van dialoogvensters door de definities van de Component van de Kern te bekijken](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). U kunt ook aanvullende formuliervelden weergeven, zoals `select`, `textarea`, `pathfield`, beschikbaar onder `/libs/granite/ui/components/coral/foundation/form` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Met een traditionele AEM component, wordt een [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) manuscript typisch vereist. Aangezien de SPA de component zal teruggeven, is geen manuscript van HTML nodig.
+   Met een traditionele AEM [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) is doorgaans vereist. Aangezien de SPA de component zal teruggeven, is geen manuscript van HTML nodig.
 
 ## Het verkoopmodel maken
 
-Sling-modellen zijn annotaties die worden aangedreven door Java &quot;POJO&#39;s&quot; (Plain Old Java Objects) en die het gemakkelijker maken gegevens van de JCR aan Java-variabelen toe te wijzen. [Sling ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) ModelType om complexe server-kant bedrijfslogica voor AEM Componenten in te kapselen.
+Sling-modellen zijn annotaties die worden aangedreven door Java &quot;POJO&#39;s&quot; (Plain Old Java Objects) en die het gemakkelijker maken gegevens van de JCR aan Java-variabelen toe te wijzen. [Verkoopmodellen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) typisch functie om complexe server-kant bedrijfslogica voor AEM Componenten in te kapselen.
 
-In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud van een component door het model JSON door een eigenschap bloot gebruikend [Sling ModelExporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud van een component door het model JSON door een eigenschap bloot gebruikend [Verkoopmodel exporteren](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
-1. Open in IDE van uw keuze de `core` module op `aem-guides-wknd-spa.react/core`.
-1. Maak een bestand met de naam `OpenWeatherModel.java` op `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
-1. Vul `OpenWeatherModel.java` met het volgende:
+1. Open in de IDE van uw keuze de `core` module bij `aem-guides-wknd-spa.react/core`.
+1. Een bestand maken met de naam `OpenWeatherModel.java` om `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
+1. Vullen `OpenWeatherModel.java` met het volgende:
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models;
@@ -174,10 +174,10 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
    }
    ```
 
-   Dit is de Java-interface voor onze component. Als ons verkoopmodel compatibel moet zijn met het SPA Editor-framework, moet het de klasse `ComponentExporter` uitbreiden.
+   Dit is de Java-interface voor onze component. Om ons verkoopmodel compatibel te maken met het SPA Editor-kader moet het de `ComponentExporter` klasse.
 
-1. Maak een map met de naam `impl` onder `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
-1. Maak een bestand met de naam `OpenWeatherModelImpl.java` onder `impl` en voeg het volgende toe:
+1. Een map maken met de naam `impl` beneide `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
+1. Een bestand met de naam `OpenWeatherModelImpl.java` beneide `impl` en vullen met het volgende:
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models.impl;
@@ -244,21 +244,21 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
    } 
    ```
 
-   De statische variabele `RESOURCE_TYPE` moet naar het pad in `ui.apps` van de component verwijzen. `getExportedType()` wordt gebruikt om de eigenschappen JSON aan de SPA component via `MapTo` in kaart te brengen. `@ValueMapValue` is een aantekening die de jcr-eigenschap leest die door het dialoogvenster is opgeslagen.
+   De variabele static `RESOURCE_TYPE` moet wijzen naar het pad in `ui.apps` van de component. De `getExportedType()` wordt gebruikt om de JSON-eigenschappen via `MapTo`. `@ValueMapValue` is een aantekening die de jcr-eigenschap leest die door het dialoogvenster is opgeslagen.
 
 ## De SPA bijwerken
 
-Werk vervolgens de React-code bij om de [Open Weather-component Reageren](https://www.npmjs.com/package/react-open-weather) op te nemen en zorg dat deze wordt toegewezen aan de AEM component die in de vorige stappen is gemaakt.
+Werk vervolgens de React-code bij en voeg de [Reageren op Open Weather-component](https://www.npmjs.com/package/react-open-weather) en deze aan de AEM component laten toewijzen die in de vorige stappen is gemaakt.
 
-1. Installeer de component React Open Weather als **npm** afhankelijkheid:
+1. De component React Open Weather installeren als een **npm** afhankelijkheid:
 
    ```shell
    $ cd aem-guides-wknd-spa.react/ui.frontend
    $ npm i react-open-weather
    ```
 
-1. Maak een nieuwe map met de naam `OpenWeather` op `ui.frontend/src/components/OpenWeather`.
-1. Voeg een bestand met de naam `OpenWeather.js` toe en vul het met het volgende:
+1. Een nieuwe map maken met de naam `OpenWeather` om `ui.frontend/src/components/OpenWeather`.
+1. Een bestand met de naam toevoegen `OpenWeather.js` en vult deze met het volgende:
 
    ```js
    import React from 'react';
@@ -320,7 +320,7 @@ Werk vervolgens de React-code bij om de [Open Weather-component Reageren](https:
    MapTo('wknd-spa-react/components/open-weather')(OpenWeather, OpenWeatherEditConfig);
    ```
 
-1. `import-components.js` om `ui.frontend/src/components/import-components.js` bijwerken om de `OpenWeather` component op te nemen:
+1. Bijwerken `import-components.js` om `ui.frontend/src/components/import-components.js` de `OpenWeather` component:
 
    ```diff
      // import-component.js
@@ -338,9 +338,9 @@ Werk vervolgens de React-code bij om de [Open Weather-component Reageren](https:
 
 ## Sjabloonbeleid bijwerken
 
-Navigeer vervolgens naar AEM om de updates te controleren en toe te staan dat de `OpenWeather`-component aan de SPA wordt toegevoegd.
+Navigeer vervolgens naar AEM om de updates te controleren en de `OpenWeather` aan de SPA toe te voegen.
 
-1. Verifieer de registratie van het nieuwe Verschuivingsmodel door aan [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels) te navigeren.
+1. Controleer de registratie van het nieuwe verkoopmodel door naar [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels).
 
    ```plain
    com.adobe.aem.guides.wkndspa.react.core.models.impl.OpenWeatherModelImpl - wknd-spa-react/components/open-weather
@@ -348,37 +348,37 @@ Navigeer vervolgens naar AEM om de updates te controleren en toe te staan dat de
    com.adobe.aem.guides.wkndspa.react.core.models.impl.OpenWeatherModelImpl exports 'wknd-spa-react/components/open-weather' with selector 'model' and extension '[Ljava.lang.String;@2fd80fc5' with exporter 'jackson'
    ```
 
-   De bovenstaande twee regels geven aan dat `OpenWeatherModelImpl` is gekoppeld aan de `wknd-spa-react/components/open-weather`-component en dat deze is geregistreerd via de verkoopmodel-exportfunctie.
+   De bovenstaande twee regels geven de `OpenWeatherModelImpl` is gekoppeld aan de `wknd-spa-react/components/open-weather` en dat deze is geregistreerd via de verkoopmodel-exportfunctie.
 
 1. Navigeer naar de SPA paginasjabloon op [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
-1. Werk het beleid van de Container van de Lay-out bij om nieuwe `Open Weather` als toegestane component toe te voegen:
+1. Werk het beleid van de Container van de Lay-out bij om nieuwe toe te voegen `Open Weather` als toegestane component:
 
    ![Layoutcontainerbeleid bijwerken](assets/custom-component/custom-component-allowed.png)
 
-   Sla de wijzigingen in het beleid op en bekijk `Open Weather` als een toegestane component:
+   Sla de wijzigingen in het beleid op en bekijk de `Open Weather` als toegestane component:
 
    ![Aangepaste component als toegestane component](assets/custom-component/custom-component-allowed-layout-container.png)
 
 ## Auteur van de Open component Weather
 
-Vervolgens ontwerpt u de `Open Weather`-component met de AEM SPA Editor.
+Nu, auteur `Open Weather` met de AEM SPA Editor.
 
-1. Navigeer naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
-1. In de modus `Edit` voegt u `Open Weather` toe aan `Layout Container`:
+1. Navigeren naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
+1. In `Edit` modus, voegt u de `Open Weather` aan de `Layout Container`:
 
    ![Nieuwe component invoegen](assets/custom-component/insert-custom-component.png)
 
-1. Open het dialoogvenster van de component en voer een **Label**, **Latitude** en **Lengtegraad** in. Bijvoorbeeld **San Diego**, **32.7157**, en **-117.1611**. De getallen op het westelijke halfrond en het zuidelijke halfrond worden weergegeven als negatieve getallen met de Open Weather API
+1. Open het dialoogvenster van de component en voer een **Label**, **Breedte**, en **Lengtegraad**. Bijvoorbeeld **San Diego**, **32,7157**, en **-117,1611**. De getallen op het westelijke halfrond en het zuidelijke halfrond worden weergegeven als negatieve getallen met de Open Weather API
 
    ![De Open Weather-component configureren](assets/custom-component/enter-dialog.png)
 
    Dit is het dialoogvenster dat is gemaakt op basis van het XML-bestand dat eerder in het hoofdstuk is opgenomen.
 
-1. Sla de wijzigingen op. Merk op dat het weer voor **San Diego** nu wordt getoond:
+1. Sla de wijzigingen op. Waarnemen dat het weer **San Diego** wordt nu weergegeven:
 
    ![component Weather bijgewerkt](assets/custom-component/weather-updated.png)
 
-1. Bekijk het JSON-model door naar [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) te navigeren. Zoeken naar `wknd-spa-react/components/open-weather`:
+1. U kunt het JSON-model weergeven door naar [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Zoeken naar `wknd-spa-react/components/open-weather`:
 
    ```json
    "open_weather": {
@@ -397,4 +397,4 @@ U hebt geleerd hoe u een aangepaste AEM kunt maken die u met de SPA Editor wilt 
 
 ### Volgende stappen {#next-steps}
 
-[Breid een Component](extend-component.md)  van de Kern uit - Leer hoe te om een bestaande AEM Component van de Kern uit te breiden die met de AEM SPA Redacteur moet worden gebruikt. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden.
+[Een kerncomponent uitbreiden](extend-component.md) - Leer hoe u een bestaande AEM Core Component kunt uitbreiden voor gebruik met de AEM SPA Editor. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden.
