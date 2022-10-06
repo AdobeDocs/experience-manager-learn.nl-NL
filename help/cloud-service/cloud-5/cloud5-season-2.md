@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 197f7e18f0d229698048cb06c2a49c019d420217
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Ga naar [Suggestievak](https://forms.office.com/r/74P5Xz4UH0) voor het indienen 
 
 ## Seizoen 2
 
-Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven. De onderwerpen van seizoen 2 zijn hoofdzakelijk gebaseerd op verzoeken uit het verleden die we hebben ontvangen in onze dagelijkse contacten met klanten en partners. Bezoek deze pagina voor wekelijkse updates of volg ons op het sociale netwerk van uw keuze.
+Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema. De onderwerpen van seizoen 2 zijn hoofdzakelijk gebaseerd op verzoeken uit het verleden die we hebben ontvangen in onze dagelijkse contacten met klanten en partners. Bezoek deze pagina voor wekelijkse updates of volg ons op het sociale netwerk van uw keuze.
 
 <table>
     <tr>
@@ -127,11 +127,11 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       </p>
      </td>   
      <td>
-            <a href="season-2/cloud5-MoCM-experience-audit.md">
+            <a href="season-2/cloud5-mocm-experience-audit.md">
                <img alt="Mysteries van Cloud Manager... Experience Audit" src="./imgs/s2/007-thumb.png"/>
                </a>
       <div>
-            <a href="season-2/cloud5-MoCM-experience-audit.md"><strong>Mysteries van Cloud Manager... Experience Audit</strong></a>
+            <a href="season-2/cloud5-mocm-experience-audit.md"><strong>Mysteries van Cloud Manager... Experience Audit</strong></a>
          <br/><em>met Darin Kuntze, Senior Cloud Architect</em>
       </div>
       <p>
@@ -140,11 +140,11 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
       </p>
    </td>
      <td>
-            <a href="season-2/cloud5-MoCM-unit-tests.md">
+            <a href="season-2/cloud5-mocm-unit-tests.md">
                <img alt="Mysteries van Cloud Manager... Eenheidstests" src="./imgs/s2/008-thumb.png"/>
             </a>
       <div>
-            <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Mysteries van Cloud Manager... Eenheidstests</strong></a>
+            <a href="season-2/cloud5-mocm-unit-tests.md"><strong>Mysteries van Cloud Manager... Eenheidstests</strong></a>
          <br/><em>met Darin Kuntze &amp; Bryan Stop, Senior Cloud Architects</em>
       </div>
       <p>
@@ -155,11 +155,11 @@ Elk seizoen varieert in lengte en zal op een vast tijdschema worden vrijgegeven.
   </tr>
     <tr>
         <td>
-               <a href="season-2/cloud5-MoCM-functional-tests.md">
+               <a href="season-2/cloud5-mocm-functional-tests.md">
                    <img alt="Mysteries van Cloud Manager... Functionele tests" src="./imgs/s2/009-thumb.png"/>
                </a>
             <div>
-                <a href="season-2/cloud5-MoCM-functional-tests.md"><strong>Mysteries van Cloud Manager... Functionele tests</strong><br/></a>        
+                <a href="season-2/cloud5-mocm-functional-tests.md"><strong>Mysteries van Cloud Manager... Functionele tests</strong><br/></a>        
                 <em>met Darin Kuntze &amp; Bryan Stop, Senior Cloud Architects</em>
             </div>
             <p><br/>
