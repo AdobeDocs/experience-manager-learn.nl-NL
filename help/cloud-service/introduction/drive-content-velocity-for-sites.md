@@ -3,9 +3,9 @@ title: Snelheid van inhoud besturen met Adobe Experience Manager
 description: Leer meer over snelheid van inhoud en de waarde ervan in bedrijfsorganisaties. Duik in vier principes van effectieve implementatie en de valkuilen die onderweg moeten uitzien.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2815'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Om dit punt te illustreren, kijken een voorbeeld van een ondernemingsorganisatie
 
 De vraag is of u inhoud gaat tegenhouden tot alle merken op een uniforme manier werken. Is het verstandig om voor hen allemaal een oplossing te vinden voor verandering?
 
-Het antwoord is neen. Dit zou de complexiteit vergroten. Bovendien zullen veel belanghebbenden gefrustreerd raken door eindeloze gesprekken over de oude, waardoor pogingen om de nieuwe te bouwen worden gefrustreerd. Men zal in een gesprek worden gesloten _info_ veranderen, in plaats van het te maken.
+Het antwoord is neen. Dit zou de complexiteit vergroten. Bovendien zullen veel belanghebbenden gefrustreerd raken door eindeloze gesprekken over de oude, waardoor pogingen om de nieuwe te bouwen worden gefrustreerd. Men wordt gesloten in een gesprek _info_ veranderen, in plaats van het te maken.
 
 Er is een concreet kader nodig. Een nieuw paradigma om voor te werken. Iets dat mensen kunnen zien en voelen. In het verleden kan inhoud worden beschouwd als een pagina, een campagne of alles wat in het singulaire wordt voorgesteld. De fundamentele verschuiving is om inhoud als inhoud zelf te zien: om opnieuw te worden gebruikt, opnieuw te worden vormgegeven en te worden gerecycled naar het ontwerpteam. De kern nieuwe ontwikkeling zou voor doel-rijke ervaringen moeten worden gebruikt.
 
@@ -100,13 +100,13 @@ Hier zijn vier mijlpalen om tijdens de uitvoeringsfase uit te bouwen:
 
 1. **Definieer de grondslagen van uw wereldwijde organisatorisch taxonomie.**
 
-   Wanneer we het over taxonomie hebben, verwijzen we niet alleen naar de mapstructuur, maar naar het begrip van wie wat en wanneer gaat ontwerpen. Daarnaast zullen we de [verschillende machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) structuren die voor elk type auteur moeten worden ontworpen.
+   Wanneer we het over taxonomie hebben, verwijzen we niet alleen naar de mapstructuur, maar naar het begrip van wie wat en wanneer ontwerpt. Daarnaast zullen we de [verschillende machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) structuren die voor elk type auteur moeten worden ontworpen.
 
    Overweeg nu of u een gecentraliseerd bestuursmodel of een gedecentraliseerd bestuursmodel wilt. Aan de ene kant creëert een gecentraliseerd bestuursmodel een geconsolideerde taxonomische strategie die betere kwaliteitscontrole en procesinzichten biedt die onmogelijk zouden zijn, of op zijn minst moeilijk in een gedecentraliseerd kader.
 
-   Aan de andere kant kan een gecentraliseerd model, vooral als het voortkomt uit een ontwerpervaring die momenteel te flexibel is, een te grote hindernis voor het team zijn. De structuur moet gemeenschappelijke taalkundige en regionale onderscheidende factoren mogelijk maken, alsmede praktijken op het gebied van kwaliteitscontrole. Bovendien kan er minder autonomie zijn voor elk facet van de ontwerpervaring. Dat wil zeggen dat alleen bepaalde auteurs aan specifieke groepen pagina&#39;s mogen werken en dat alleen beperkte auteurs bewerkbare machtigingen hebben.
+   Aan de andere kant kan een gecentraliseerd model, vooral als het voortkomt uit een ontwerpervaring die momenteel te flexibel is, een te grote hindernis voor het team zijn. De structuur moet gemeenschappelijke taalkundige en regionale onderscheidende factoren mogelijk maken, alsmede praktijken op het gebied van kwaliteitscontrole. Bovendien kan er minder autonomie zijn voor elk facet van de ontwerpervaring. Dat wil zeggen dat alleen bepaalde auteurs mogen werken aan specifieke groepen pagina&#39;s en dat alleen beperkte auteurs bewerkbare machtigingen hebben.
 
-   Hoewel aanvankelijk een gecentraliseerde wijze van bestuur langzamer kan lijken, met de verzamelde procesinzichten, en de transparante verantwoordingsplicht over bedrijfsgebruikers die wordt geïnitieerd, zal het algemene traject sneller zijn.
+   Hoewel aanvankelijk een gecentraliseerde wijze van bestuur langzamer kan lijken, met de verzamelde procesinzichten, en de transparante verantwoordingsplicht over bedrijfsgebruikers die wordt geïnitieerd, is het algemene traject sneller.
 
    De beslissing over de richting die moet worden ingeslagen, hangt uiteindelijk af van het algemene strategische doel van de organisatie. Het kan neerkomen op het kiezen tussen verbeterde flexibiliteit voor zakelijke gebruikers of een uniforme ervaring voor verschillende merken. Uitlijnen op het juiste model is essentieel voor een correcte uitvoering.
 
@@ -116,7 +116,7 @@ Hier zijn vier mijlpalen om tijdens de uitvoeringsfase uit te bouwen:
 
    Interactieve inhoud (die vaak op de startpagina staat) kan zeer interactieve ervaringen vereisen en vereist daarom dat front-end CSS-ontwerpers samenwerken met zakelijke auteurs om bij te werken. Het onderhoud van de homepage zou een verschillende toestemmingsstructuur en goedkeuringsproces dan iets zoals een verwijzingspagina vereisen, die gemakkelijker zou zijn bij te werken. Goed bestuur, efficiëntie en kwaliteit beginnen met een duidelijke eigenaar van inhoud. Overweeg een inhoudscontrole uit te voeren die de volgende vragen beantwoordt:
 
-   * Wie gaat er ontwerpen? En wanneer?
+   * Wie maakt wat? En wanneer?
    * Wat zijn de verschillende toestemmingsstructuren die op elk soort inhoud moeten worden toegepast?
    * Wat zijn de ervaringen op de plaats die zullen veranderen, en welke zullen relatief statisch blijven?
    * Wie gaat eigenaar zijn van welke inhoud?
@@ -177,4 +177,4 @@ Hier zijn een paar potentiële valkuilen om te vermijden:
 
 Luister naar deze één uur voor een diepgaandere bespreking van de snelheid van de inhoud [panelgesprek](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) en Adobe Anuradha Pentareddy.
 
-Meer informatie over strategie en leiderschap bij de [Klant geslaagd](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Meer informatie over strategie en leiderschap bij de [Klant geslaagd](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
