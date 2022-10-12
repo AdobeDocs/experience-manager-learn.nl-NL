@@ -5,9 +5,9 @@ user-guide-title: AEM Forms-video's en -Tutorials
 user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
 breadcrumb-title: AEM Forms Tutorials
 index: y
-source-git-commit: 747d1823ce1bc6670d1e80abcf6483ac921c0a01
+source-git-commit: 7238a211663edcf36e8812826ece3242502329b9
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1714'
 ht-degree: 0%
 
 ---
@@ -215,6 +215,7 @@ ht-degree: 0%
    + [PDFG-service gebruiken in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Uitvoer- en Forms-service gebruiken in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [xdp-fragmenten gebruiken in uitvoerservice](document-services/using-fragments-in-output-service.md)
+   + [ECMA-script voor het genereren van pdf met fragmenten](document-services/using-fragments-in-output-service-watched-folder.md)
    + [Meerdere PDF&#39;s genereren op basis van één gegevensbestand](document-services/generate-multi-record-pdf.md)
    + [PDF genereren op mobiele formulieren](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [Interactieve PDF uit mobiel formulier genereren](document-services/render-interactive-form-using-api.md)
