@@ -1,6 +1,6 @@
 ---
 title: Modellen voor inhoudsfragmenten definiëren - Aan de slag met AEM zonder kop - GraphQL
-description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u inhoud modelleert en een schema samenstelt met Content Fragment Models in AEM. Beoordeel bestaande modellen en maak een nieuw model. Leer over de verschillende gegevenstypes die kunnen worden gebruikt om een schema te bepalen.
+description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u inhoud modelleert en een schema samenstelt met Content Fragment Models in AEM. Beoordeel bestaande modellen en maak een model. Leer over de verschillende gegevenstypes die kunnen worden gebruikt om een schema te bepalen.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6712
@@ -10,44 +10,44 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
 
 # Modellen voor inhoudsfragmenten definiëren {#content-fragment-models}
 
-In dit hoofdstuk leert u hoe u inhoud kunt modelleren en een schema kunt maken met **Modellen van inhoudsfragmenten**. U zult over de verschillende gegevenstypes leren die kunnen worden gebruikt om een schema als deel van het model te bepalen.
+In dit hoofdstuk leert u hoe u inhoud kunt modelleren en een schema kunt maken met **Modellen van inhoudsfragmenten**. U leert over de verschillende gegevenstypen die kunnen worden gebruikt om een schema als deel van het model te bepalen.
 
-In dit hoofdstuk worden twee eenvoudige modellen gemaakt: **Team** en **Persoon**. De **Team** gegevensmodel heeft naam, korte naam en beschrijving en verwijst naar **Persoon** gegevensmodel met volledige naam, biodetails, profielafbeelding en lijst van beroepen.
+We maken twee eenvoudige modellen. **Team** en **Persoon**. De **Team** gegevensmodel heeft naam, korte naam en beschrijving en verwijst naar het **Persoon** gegevensmodel met volledige naam, biodetails, profielafbeelding en lijst van beroepen.
 
 U bent ook welkom om uw eigen model na de basisstappen tot stand te brengen en de respectieve stappen zoals vragen GraphQL, en Reageer de code van de App te richten of eenvoudig de stappen te volgen die in deze hoofdstukken worden geschetst.
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat een [AEM auteursomgeving is beschikbaar](./overview.md#prerequisites)
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat een [AEM auteursomgeving is beschikbaar](./overview.md#prerequisites).
 
 ## Doelstellingen {#objectives}
 
-* Maak een nieuw model voor inhoudsfragmenten.
+* Maak een inhoudsfragmentmodel.
 * Beschikbare gegevenstypen en validatieopties identificeren voor het samenstellen van modellen.
 * Begrijp hoe het model van het Inhoudsfragment bepaalt **beide** het gegevensschema en het auteursmalplaatje voor een Fragment van de Inhoud.
 
-## Een nieuwe projectconfiguratie maken
+## Een projectconfiguratie maken
 
-Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbonden aan een bepaald project en verstrekt een middel om modellen te organiseren. Er moet ten minste één project worden gemaakt **voor** het maken van een nieuw Content Fragment-model.
+Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbonden aan een bepaald project en verstrekt een middel om modellen te organiseren. Er moet ten minste één project worden gemaakt **voor** maken, inhoudsfragmentmodel.
 
 1. Aanmelden bij de AEM **Auteur** milieu (bijv. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
 
    ![Navigeren naar de configuratiebrowser](assets/content-fragment-models/navigate-config-browser.png)
-1. Klikken **Maken**.
+1. Klikken **Maken** in de rechterbovenhoek
 1. In het resulterende dialoogvenster voert u in:
 
    * Titel*: **Mijn project**
-   * Naam*: **mijn-project** (Gebruik bij voorkeur alleen kleine letters als u woorden van elkaar scheidt. Dit koord zal het unieke eindpunt beïnvloeden GraphQL dat de cliënttoepassingen verzoeken tegen zullen uitvoeren.)
+   * Naam*: **mijn-project** (Gebruik bij voorkeur alleen kleine letters als u woorden van elkaar scheidt. Dit koord beïnvloedt het unieke eindpunt GraphQL dat de cliënttoepassingen verzoeken waartegen uitvoeren.)
    * Controleren **Modellen van inhoudsfragmenten**
    * Controleren **GrafiekQL blijvende vragen**
 
@@ -59,7 +59,7 @@ Maak vervolgens twee modellen voor een **Team** en **Persoon**.
 
 ### Het personenmodel maken
 
-Een nieuw model maken voor een **Persoon**, dit is het gegevensmodel dat een persoon vertegenwoordigt die deel uitmaakt van een team.
+Een model maken voor een **Persoon**, dit is het gegevensmodel dat een persoon vertegenwoordigt die deel uitmaakt van een team.
 
 1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**.
 
@@ -67,9 +67,7 @@ Een nieuw model maken voor een **Persoon**, dit is het gegevensmodel dat een per
 
 1. Navigeer in de **Mijn project** map.
 1. Tikken **Maken** in de rechterbovenhoek om de **Model maken** wizard.
-1. Voor **Modeltitel** enter: **Persoon** en tikken **Maken**.
-
-   Tikken **Openen** in het resulterende dialoogvenster om het nieuwe model te openen.
+1. In **Modeltitel** veld, Enter **Persoon** en tikken **Maken**. Tik in het resulterende dialoogvenster op **Openen** om het model te bouwen.
 
 1. Sleep een **Tekst met één regel** element aan het belangrijkste paneel. Voer de volgende eigenschappen in op de knop **Eigenschappen** tab:
 
@@ -93,7 +91,7 @@ Een nieuw model maken voor een **Persoon**, dit is het gegevensmodel dat een per
    * **Eigenschapnaam**: `profilePicture`
    * **Hoofdpad**: `/content/dam`
 
-   Wanneer het vormen van **Hoofdpad** u kunt klikken op **map** pictogram om een modaal weer te geven om het pad te selecteren. Hierdoor wordt beperkt welke mappen auteurs kunnen gebruiken om het pad te vullen. `/content/dam` is de basis waarin alle AEM elementen (afbeeldingen, video&#39;s, andere inhoudsfragmenten) zijn opgeslagen.
+   Wanneer het vormen van **Hoofdpad**, kunt u op de knop **map** pictogram om een modaal weer te geven om het pad te selecteren. Hierdoor wordt beperkt welke mappen auteurs kunnen gebruiken om het pad te vullen. `/content/dam` is de basis waarin alle AEM Assets (afbeeldingen, video&#39;s, andere inhoudsfragmenten) worden opgeslagen.
 
 1. Een validatie toevoegen aan de **Referentie afbeelding** zodat alleen inhoudstypen **Afbeeldingen** kan worden gebruikt om het veld te vullen.
 
@@ -117,10 +115,10 @@ Een nieuw model maken voor een **Persoon**, dit is het gegevensmodel dat een per
 
 ### Het teammodel maken
 
-Een nieuw model maken voor een **Team**, het gegevensmodel voor een team van mensen. Het model van het Team zal het model van de Persoon van verwijzingen voorzien om de leden van het team te vertegenwoordigen.
+Een model maken voor een **Team**, het gegevensmodel voor een team van mensen. Het model van het Team verwijzingen het model van de Persoon om de leden van het team te vertegenwoordigen.
 
 1. In de **Mijn project** map, tikken **Maken** in de rechterbovenhoek om de **Model maken** wizard.
-1. Voor **Modeltitel** enter: **Team** en tikken **Maken**.
+1. In **Modeltitel** veld, Enter **Team** en tikken **Maken**.
 
    Tikken **Openen** in het resulterende dialoogvenster om het nieuwe model te openen.
 
@@ -136,10 +134,10 @@ Een nieuw model maken voor een **Team**, het gegevensmodel voor een team van men
    * **Eigenschapnaam**: `shortName`
    * Controleren **Vereist**
    * Controleren **Uniek**
-   * Onder **Validatietype** > kiezen **Aangepast**
-   * Onder **Aangepast validatieoverzicht** > Enter `^[a-z0-9\-_]{5,40}$` - Op deze manier kunnen alleen alfanumerieke waarden in kleine letters en streepjes tussen 5 en 40 tekens worden ingevoerd.
+   * Onder, **Validatietype** > kiezen **Aangepast**
+   * Onder, **Aangepast validatieoverzicht** > Enter `^[a-z0-9\-_]{5,40}$` - Dit zorgt ervoor dat alleen alfanumerieke waarden in kleine letters en streepjes van 5 tot en met 40 tekens kunnen worden ingevoerd.
 
-   De `shortName` het bezit zal ons een manier verstrekken om een individueel team te vragen dat op een verkort weg wordt gebaseerd. De **Uniek** Met deze instelling zorgt u ervoor dat de waarde altijd uniek is per inhoudsfragment van dit model.
+   De `shortName` bezit verstrekt ons een manier om een individueel team te vragen dat op een verkort weg wordt gebaseerd. De **Uniek** Met deze instelling zorgt u ervoor dat de waarde altijd uniek is per inhoudsfragment van dit model.
 
 1. Tik op de knop **Gegevenstypen** en sleep een **Tekst met meerdere regels** veld onder de **Korte naam** veld. Voer de volgende eigenschappen in:
 
@@ -188,7 +186,7 @@ Gefeliciteerd, u hebt zojuist uw eerste modellen van inhoudsfragmenten gemaakt!
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk: [Modellen voor inhoudsfragmenten ontwerpen](author-content-fragments.md), maakt en bewerkt u een nieuw inhoudsfragment op basis van een inhoudsfragmentmodel. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
+In het volgende hoofdstuk: [Modellen voor inhoudsfragmenten ontwerpen](author-content-fragments.md), maakt u een nieuw inhoudsfragment en bewerkt u dit op basis van een inhoudsfragmentmodel. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
 
 ## Verwante documentatie
 

@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '810'
 ht-degree: 1%
 
 ---
@@ -34,11 +34,11 @@ Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worde
 
 Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragmenten wilt maken op basis van de modellen die u in het vorige hoofdstuk hebt gemaakt, moet u een map maken waarin u de fragmenten kunt opslaan. Er is een configuratie vereist voor de map om het maken van fragmenten van specifieke modellen mogelijk te maken.
 
-1. Navigeer van het scherm AEM Start naar **Activa** > **Bestanden**.
+1. Navigeer in het scherm AEM starten naar **Activa** > **Bestanden**.
 
    ![Navigeren naar bestanden met elementen](assets/author-content-fragments/navigate-assets-files.png)
 
-1. Tikken **Maken** in de hoek en tik **Map**. In het resulterende dialoogvenster voert u in:
+1. Tikken **Maken** in de rechterbovenhoek en tik op **Map**. In het resulterende dialoogvenster voert u in:
 
    * Titel*: **Mijn project**
    * Naam: **mijn-project**
@@ -49,17 +49,17 @@ Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragme
 
    ![Mapeigenschappen openen](assets/author-content-fragments/open-folder-properties.png)
 
-1. Tik op de knop **Cloud Services** tab. Onder **Cloud Configuration** gebruik de wegfinder om te selecteren **Mijn project** configuratie. De waarde moet `/conf/my-project`.
+1. Tik op de knop **Cloud Services** tab. Selecteer op het tabblad Cloudconfiguratie de padFinder **Mijn project** configuratie. De waarde moet `/conf/my-project`.
 
    ![Cloudconfiguratie instellen](assets/author-content-fragments/set-cloud-config-my-project.png)
 
-   Als u deze eigenschap instelt, kunnen Content Fragments worden gemaakt met behulp van de modellen die in het vorige hoofdstuk zijn gemaakt.
+   Als u deze eigenschap instelt, kunnen inhoudsfragmenten worden gemaakt met behulp van de modellen die in het vorige hoofdstuk zijn gemaakt.
 
-1. Tik op de knop **Beleid** tab. Onder **Modellen voor toegestane inhoudsfragmenten** gebruik de wegfinder om te selecteren **Persoon** en **Team** model dat eerder is gemaakt.
+1. Tik op de knop **Beleid** onder de **Modellen voor toegestane inhoudsfragmenten** veld gebruikt padzoeker om de **Persoon** en **Team** model dat eerder is gemaakt.
 
    ![Modellen voor inhoudsfragmenten toestaan](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Dit beleid wordt automatisch door submappen overgeërfd en kan worden overschreven. Merk op dat u modellen door markeringen kunt ook toestaan of modellen van andere projectconfiguraties toelaten. Dit mechanisme biedt een krachtige manier om uw inhoudshiërarchie te beheren.
+   Dit beleid wordt automatisch door submappen overgeërfd en kan worden overschreven. U kunt modellen door markeringen ook toestaan of modellen van andere projectconfiguraties toelaten. Dit mechanisme biedt een krachtige manier om uw inhoudshiërarchie te beheren.
 
 1. Tikken **Opslaan en sluiten** om de wijzigingen in de mapeigenschappen op te slaan.
 
@@ -77,11 +77,11 @@ Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragme
 
 Er worden nu verschillende inhoudsfragmenten gemaakt op basis van de **Team** en **Persoon** modellen.
 
-1. Tik vanaf het scherm AEM starten **Inhoudsfragmenten** om de interface voor inhoudsfragmenten te openen.
+1. Tik vanaf het AEM beginscherm op **Inhoudsfragmenten** om de interface voor inhoudsfragmenten te openen.
 
    ![UI voor inhoudsfragment](assets/author-content-fragments/cf-fragment-ui.png)
 
-1. In de linkerspoorstaaf breidt zich uit **Mijn project** en tikken **Engels**.
+1. Breid in de linkerspoorstaaf uit **Mijn project** en tikken **Engels**.
 1. Tikken **Maken** om **Nieuw inhoudsfragment** en voert u de volgende waarden in:
 
    * Locatie: `/content/dam/my-project/en`
@@ -91,25 +91,25 @@ Er worden nu verschillende inhoudsfragmenten gemaakt op basis van de **Team** en
 
    ![Nieuw inhoudsfragment](assets/author-content-fragments/new-content-fragment-john-doe.png)
 1. Tikken **Maken**.
-1. Herhaal bovenstaande stappen om een nieuw fragment te maken dat **Alison Smith**:
+1. Herhaal bovenstaande stappen om een fragment te maken dat **Alison Smith**:
 
    * Locatie: `/content/dam/my-project/en`
    * Inhoudsfragmentmodel: **Persoon**
    * Titel: **Alison Smith**
    * Naam: `alison-smith`
 
-   Tikken **Maken** om het nieuwe Person-fragment te maken.
+   Tikken **Maken** om het Person-fragment te maken.
 
-1. Herhaal de stappen om een nieuwe **Team** fragment dat **Team Alpha**:
+1. Herhaal de stappen om een **Team** fragment dat **Team Alpha**:
 
    * Locatie: `/content/dam/my-project/en`
    * Inhoudsfragmentmodel: **Team**
    * Titel: **Team Alpha**
    * Naam: `team-alpha`
 
-   Tikken **Maken** om het nieuwe fragment van het Team tot stand te brengen.
+   Tikken **Maken** om het fragment Team te maken.
 
-1. Er moeten nu drie Content Fragments onder zijn **Mijn project** > **Engels**:
+1. Er moeten drie inhoudsfragmenten onder zijn **Mijn project** > **Engels**:
 
    ![Nieuwe inhoudsfragmenten](assets/author-content-fragments/new-content-fragments.png)
 
@@ -139,7 +139,7 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
 
    >[!NOTE]
    >
-   >U kunt ook online nieuwe inhoudsfragmenten maken met de opdracht **Nieuw inhoudsfragment** knop.
+   >U kunt inhoudsfragmenten ook online maken met de opdracht **Nieuw inhoudsfragment** knop.
 
 1. Tikken **Opslaan en sluiten** om de wijzigingen in het Team Alpha- fragment op te slaan.
 
@@ -147,17 +147,16 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
 
 Na revisie en verificatie publiceert u de geautoriseerde `Content Fragments`
 
-1. Tik vanaf het scherm AEM starten **Inhoudsfragmenten** om de interface voor inhoudsfragmenten te openen.
+1. Tik vanaf het AEM beginscherm op **Inhoudsfragmenten** om de interface voor inhoudsfragmenten te openen.
 
-1. In de linkerspoorstaaf breidt zich uit **Mijn project** en tikken **Engels**.
+1. Breid in de linkerspoorstaaf uit **Mijn project** en tikken **Engels**.
 
-1. Tik op het selectievakje naast de inhoudsfragmenten en tik op **Publiceren**
-
+1. Tik op het selectievakje naast de inhoudsfragmenten en tik op **Publiceren**.
    ![Inhoudsfragment publiceren](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Gefeliciteerd! {#congratulations}
 
-U hebt zojuist meerdere inhoudsfragmenten gemaakt en een variatie gemaakt.
+U hebt meerdere inhoudsfragmenten gemaakt en een variatie gemaakt.
 
 ## Volgende stappen {#next-steps}
 
