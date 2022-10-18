@@ -8,9 +8,9 @@ topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
-source-git-commit: 5c53919dd038c0992e1fe5dd85053f26c03c5111
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,8 @@ Hoewel we het volgende aanbevelen [officiële documentatie](https://helpx.adobe.
 * Zoek het bestand AEMQuickStart.Jar en verplaats het naar de map AEMForms
 * Kopieer het bestand license.properties naar deze map van AEMForms
 * Maak een batchbestand met de naam &quot;StartAemForms.bat&quot; met de volgende inhoud:
-   * java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui. Hier AEM_6.5_Quickstart.jar is de naam van mijn AEM quickstart jar.
+   * `java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui`
+      * Hier AEM_6.5_Quickstart.jar is de naam van mijn AEM quickstart jar.
    * U kunt de naam van de jar wijzigen, maar zorg dat de naam wordt weergegeven in het batchbestand. Sla het batchbestand op in de map AEMForms.
 
 * Open een nieuwe bevelherinnering, en navigeer aan _c:\aemforms_.

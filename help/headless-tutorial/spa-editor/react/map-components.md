@@ -13,9 +13,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2257'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ In dit hoofdstuk wordt dieper ingegaan op de AEM JSON-model-API en wordt uitgele
 
 ## Wat u gaat maken
 
-In dit hoofdstuk wordt geïnspecteerd hoe de `Text` SPA component wordt toegewezen aan de AEM `Text`component. Reageer de Componenten van de Kern zoals `Image` SPA component zal in de SPA worden gebruikt en in AEM worden ontworpen. De functies van het selectievakje **Layout Container** en **Sjablooneditor** het beleid zal ook worden gebruikt om een mening tot stand te brengen die wat gevarieerder van verschijning is.
+In dit hoofdstuk wordt geïnspecteerd hoe de beschikbare `Text` SPA component wordt toegewezen aan de AEM `Text`component. Reageer de Componenten van de Kern zoals `Image` SPA component wordt gebruikt in de SPA en in AEM ontworpen. De functies van het selectievakje **Layout Container** en **Sjablooneditor** het beleid wordt ook gebruikt om een mening tot stand te brengen die iets gevarieerder van verschijning is.
 
 ![Definitieve ontwerpversie van hoofdstukvoorbeeld](./assets/map-components/final-page.png)
 
@@ -67,7 +67,7 @@ Laten we eens kijken hoe de component werkt.
 
    `:type` is een gereserveerde eigenschap die de `sling:resourceType` (of pad) van de AEM Component. De waarde van `:type` is wat wordt gebruikt om de AEM component aan de SPA component in kaart te brengen.
 
-   `text` en `richText` Dit zijn aanvullende eigenschappen die aan de SPA component worden blootgesteld.
+   `text` en `richText` zijn aanvullende eigenschappen die aan de SPA component worden blootgesteld.
 
 1. De JSON-uitvoer weergeven op [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). U zou een ingang moeten kunnen vinden gelijkend op:
 
@@ -112,7 +112,7 @@ Laten we eens kijken hoe de component werkt.
 
    Om een potentiële aanval van XSS te vermijden, wordt de rijke tekst ontsnapt via `DOMPurify` voordat u [gevaarlijkSetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) om de inhoud te renderen. Herstel de `richText` en `text` eigenschappen van het JSON-model eerder in de oefening.
 
-1. Kijk dan eens naar de `TextEditConfig` op ~regel 29:
+1. Volgende, openen `ui.frontend/src/components/import-components.js` kijk eens naar de `TextEditConfig` op ~regel 86:
 
    ```js
    const TextEditConfig = {
@@ -126,10 +126,10 @@ Laten we eens kijken hoe de component werkt.
 
    De bovenstaande code bepaalt wanneer de tijdelijke aanduiding in de AEM auteursomgeving moet worden weergegeven. Als de `isEmpty` methode retourneert **true** wordt de tijdelijke aanduiding weergegeven.
 
-1. Kijk ten slotte naar de `MapTo` bellen bij ~line 62:
+1. Kijk ten slotte naar de `MapTo` bellen op ~regel 94:
 
    ```js
-   export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
+   export default MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
    ```
 
    `MapTo` wordt geleverd door de AEM SPA Editor JS SDK (`@adobe/aem-react-editable-components`). Het pad `wknd-spa-react/components/text` vertegenwoordigt `sling:resourceType` van de AEM component. Dit pad komt overeen met het `:type` door het JSON-model dat eerder werd waargenomen. `MapTo` zorgt ervoor dat de JSON-modelrespons wordt geparseerd en dat de juiste waarden worden doorgegeven als `props` naar de SPA component.
@@ -282,7 +282,7 @@ De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Vi
     </workspaceFilter>
    ```
 
-   De `filter.xml` is verantwoordelijk voor het identificeren van de paden van knooppunten die samen met het pakket worden geïnstalleerd. Let op: `mode="merge"` op elk van de filters wordt aangegeven dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing doet **niet** overschrijven, inhoud. Zie de [FileVault-documentatie](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over het werken met filterelementen.
+   De `filter.xml` is verantwoordelijk voor het identificeren van de paden van knooppunten die samen met het pakket zijn geïnstalleerd. Let op: `mode="merge"` op elk van de filters wordt aangegeven dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing doet **niet** overschrijven, inhoud. Zie de [FileVault-documentatie](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over het werken met filterelementen.
 
    Vergelijken `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om de verschillende knopen te begrijpen die door elke module worden beheerd.
 
@@ -298,11 +298,11 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
 
    ![Image Core Component JSON](./assets/map-components/image-json.png)
 
-   Eigenschappen van `src`, `alt`, en `title` wordt gebruikt om de SPA te vullen `Image` component.
+   Eigenschappen van `src`, `alt`, en `title` worden gebruikt om de SPA te vullen `Image` component.
 
    >[!NOTE]
    >
-   > Er zijn andere afbeeldingseigenschappen blootgesteld (`lazyEnabled`, `widths`) waarmee een ontwikkelaar een adaptieve en uitgestelde component kan maken. De component die in deze zelfstudie is ingebouwd, is eenvoudig en **niet** gebruik deze geavanceerde eigenschappen.
+   > Er zijn andere afbeeldingseigenschappen blootgesteld (`lazyEnabled`, `widths`) waarmee een ontwikkelaar een adaptieve en uitgestelde component kan maken. De component die in deze zelfstudie is ingebouwd, is eenvoudig en werkt als volgt **niet** gebruik deze geavanceerde eigenschappen.
 
 ### De component Image implementeren
 

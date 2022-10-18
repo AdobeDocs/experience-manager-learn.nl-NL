@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die 
 
 1. Het verstrekken en opzetten van de noodzakelijke rekeningen en de diensten om een werknemer van de Asset compute te bouwen en op te stellen
 1. Een Asset compute-project maken en configureren
-1. Ontwikkelen om een Asset compute-worker te genereren die een aangepaste uitvoering genereert
+1. Een Asset compute-worker ontwikkelen die een aangepaste uitvoering genereert
 1. Schrijf tests voor, en leer hoe te om de arbeider van de douane Asset compute te zuiveren
 1. Implementeer de Asset compute-worker en integreer deze AEM de as a Cloud Service Auteur-service via het verwerken van profielen
 
@@ -58,7 +58,7 @@ Voor de lokale ontwikkeling van Asset compute-projecten is een specifiek ontwikk
 
 ### App Builder
 
-De projecten van de asset compute zijn speciaal bepaalde projecten App Builder, en als dusdanig, vereisen toegang tot App Builder in de Console van de Ontwikkelaar van de Adobe om hen te opstelling en op te stellen.
+De projecten van de asset compute zijn speciaal bepaalde projecten App Builder, en als dusdanig, vereisen toegang tot App Builder in de Console van Adobe Developer om hen te opstelling en op te stellen.
 
 + [App Builder instellen](./set-up/app-builder.md)
 
