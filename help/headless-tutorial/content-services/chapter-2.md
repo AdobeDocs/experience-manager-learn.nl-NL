@@ -8,7 +8,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Als modellen van inhoudsfragmenten bestaan **niet** die voor een configuratie wo
 
 ## Inzicht krijgen in het inhoudsfragmentmodel dat moet worden gemaakt
 
-Voordat u het model voor inhoudsfragmenten definieert, moeten we de ervaring die we gebruiken om ervoor te zorgen dat we alle vereiste gegevenspunten vastleggen, onder de loep nemen. Hiervoor bekijken we het ontwerp van mobiele toepassingen en wijzen we de ontwerpelementen toe aan content-to-collection.
+Voordat u ons model voor inhoudsfragmenten definieert, moet u de ervaring die we gaan gebruiken, bekijken om ervoor te zorgen dat we alle vereiste gegevenspunten vastleggen. Hiervoor bekijken we het ontwerp van mobiele toepassingen en wijzen we de ontwerpelementen toe aan content-to-collection.
 
 De gegevenspunten die een gebeurtenis definiëren, kunnen als volgt worden verdeeld:
 
