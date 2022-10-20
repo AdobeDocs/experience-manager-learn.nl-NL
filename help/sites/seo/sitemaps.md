@@ -10,10 +10,10 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-11-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 835657082c0c6bf7b2822b53ef2b99039d77f249
+source-git-commit: f4d4bcc836123ba4320710c3024e03a82a36cfb9
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 4%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
@@ -49,7 +49,7 @@ Definieert de [OSGi-fabrieksconfiguratie](http://localhost:4502/system/console/c
 
 ### Absolute sitemap-URL&#39;s
 
-AEM sitemap ondersteunt absolute URL&#39;s door [Verspreiding toewijzen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Dit wordt gedaan door toewijzingsknopen op de AEM diensten te creëren die sitemaps produceren.
+AEM sitemap ondersteunt absolute URL&#39;s door [Verspreiding toewijzen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Dit wordt gedaan door toewijzingsknopen op de AEM diensten te creëren die sitemaps (typisch de publicatiedienst AEM) produceren.
 
 Een voorbeeld van Sling-toewijzingsknoopdefinitie voor `https://wknd.com` kunnen worden gedefinieerd onder `/etc/map/https` als volgt:
 
