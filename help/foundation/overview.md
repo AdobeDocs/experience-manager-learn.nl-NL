@@ -1,21 +1,23 @@
 ---
-title: Video's en Tutorials AEM
+title: Video's en zelfstudies voor AEM stichting
 description: Bekijk onze video's en zelfstudies voor hulp met Adobe Experience Manager Foundation.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 1%
 
 ---
 
-# Video&#39;s en Tutorials AEM {#overview}
+# Video&#39;s en zelfstudies voor AEM stichting {#overview}
 
 Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is voor gebruikers van AEM Sites, Assets en Forms.
 
-## Wat is er nieuw?
+<div id="whats-new-section">
+
+## Wat is er nieuw
 
 * **[Workflow AEM gebruiken (video)](./workflow/use-workflow.md)**
 
@@ -30,7 +32,18 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 * **[Cloud Manager CI/CD Pipeline (video) gebruiken](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Leer hoe u de CI/CD-pijplijn van Cloud Manager kunt gebruiken voor een veilige en consistente implementatie.*
 
-## Personeelspictogrammen
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
+
+## Personeelsselectie
 
 <table>
 <tr>
@@ -76,10 +89,12 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 </tr>
 </table>
 
+</div>
+
 ## Aanvullende bronnen
 
 * [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM as a Cloud Service Tutorials](/help/cloud-service/overview.md)
-* [AEM Sites-video&#39;s en -Tutorials](/help/sites/overview.md)
-* [AEM Assets-video&#39;s en -Tutorials](/help/assets/overview.md)
-* [AEM Forms-video&#39;s en -Tutorials](/help/forms/overview.md)
+* [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
+* [AEM Sites - video&#39;s en zelfstudies](/help/sites/overview.md)
+* [AEM Assets - video&#39;s en zelfstudies](/help/assets/overview.md)
+* [AEM Forms - video&#39;s en zelfstudies](/help/forms/overview.md)

@@ -1,23 +1,25 @@
 ---
-title: Adobe Experience Manager als Cloud Service Video's en Tutorials
+title: Adobe Experience Manager als video's en zelfstudies voor Cloud Servicen
 description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) as a Cloud Service
 sub-product: sites, cloud-manager, foundation, assets
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '276'
+ht-degree: 5%
 
 ---
 
-# AEM als Cloud Service Video&#39;s en Tutorials {#overview}
+# Video&#39;s en zelfstudies AEM als Cloud Servicen {#overview}
 
 Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cloud Service introduceert de volgende generatie van de productlijn van de Experience Manager, voortbouwend op vroegere investeringen en innovaties, het bewaren en uitbreiden van alle gebruiksgevallen en -functies.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
-## Wat is er nieuw?
+<div id="whats-new-section">
+
+## Wat is er nieuw
 
 * **[Tokengebaseerde verificatie (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
@@ -39,7 +41,18 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cl
 
    *Leer hoe u Asset compute-workers kunt ontwikkelen om aangepaste asset-uitvoeringen te genereren*
 
-## Personeelspictogrammen
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
+
+## Personeelsselectie
 
 <table>
    <td>
@@ -82,6 +95,8 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cl
       <p>
    </td>
 </table>
+
+</div>
 
 ## Aanvullende bronnen
 

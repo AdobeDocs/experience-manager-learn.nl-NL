@@ -1,16 +1,16 @@
 ---
-title: AEM Assets-video's en -Tutorials
+title: AEM Assets - video's en zelfstudies
 description: Bekijk onze video's voor ondersteuning en assistentie van AEM middelen.
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 3%
 
 ---
 
-# AEM Assets-video&#39;s en -Tutorials {#overview}
+# AEM Assets - video&#39;s en zelfstudies {#overview}
 
 Adobe Experience Manager (AEM) Assets is een hulpmiddel voor het beheer van digitale middelen op AEM Platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een opslagplaats op internet. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
 
@@ -26,7 +26,16 @@ Bekijk deze end-to-end looppas door AEM Assets die verklaart wat AEM Assets is, 
 
 >[!VIDEO](https://video.tv.adobe.com/v/336196/?quality=12&learn=on)
 
-## Personeelspictogrammen
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
+
+## Personeelsselectie
 
 <table>
 <td>
@@ -70,11 +79,13 @@ Bekijk deze end-to-end looppas door AEM Assets die verklaart wat AEM Assets is, 
 </td>
 </table>
 
+</div>
+
 ## Aanvullende bronnen
 
 * [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Assets-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
-* [AEM as a Cloud Service Tutorials](/help/cloud-service/overview.md)
-* [AEM Sites Tutorials](/help/sites/overview.md)
-* [AEM Forms Tutorials](/help/forms/overview.md)
-* [Tutorials AEM stichting](/help/foundation/overview.md)
+* [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
+* [AEM Sites-zelfstudies](/help/sites/overview.md)
+* [AEM Forms-zelfstudies](/help/forms/overview.md)
+* [Zelfstudies voor AEM stichting](/help/foundation/overview.md)

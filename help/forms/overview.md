@@ -1,22 +1,24 @@
 ---
-title: AEM Forms-Tutorials en -video's
+title: Zelfstudies en video's voor AEM Forms
 description: Blader door onze video's en zelfstudies voor AEM Forms, met bronnen en documentatie om uw vragen te beantwoorden.
 sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 1%
 
 ---
 
-# AEM Forms-Tutorials en -video&#39;s {#overview}
+# Zelfstudies en video&#39;s voor AEM Forms {#overview}
 
 Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het maken, beheren, publiceren en bijwerken van complexe digitale formulieren en voor integratie met back-endprocessen, bedrijfsregels en gegevens. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Forms
 
-## Wat is er nieuw?
+<div id="whats-new-section">
+
+## Wat is er nieuw
 
 * **[Foutberichten verwerken in de stap Formuliergegevensmodel aanroepen](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
@@ -30,7 +32,18 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
    *Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld*
 
-## Personeelspictogrammen
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
+
+## Personeelsselectie
 
 <table>
 <tr>
@@ -76,6 +89,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 </tr>
 </table>
 
+</div>
 
 
 
@@ -83,11 +97,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 ## Aanvullende bronnen
 
 * [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM Sites Authoring Documentation](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
-* [AEM Sites Developing Documentation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [AEM Sites Authoring documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [AEM Sites Developing-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [AEM Sites-beheerdocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
-* [AEM Sites-documentatie implementeren](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [AEM as a Cloud Service Tutorials](/help/cloud-service/overview.md)
-* [AEM Assets Tutorials](/help/assets/overview.md)
-* [AEM Forms Tutorials](/help/forms/overview.md)
-* [Tutorials AEM stichting](/help/foundation/overview.md)
+* [AEM Sites-implementatiedocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
+* [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
+* [AEM Assets-zelfstudies](/help/assets/overview.md)
+* [AEM Forms-zelfstudies](/help/forms/overview.md)
+* [Zelfstudies voor AEM stichting](/help/foundation/overview.md)
