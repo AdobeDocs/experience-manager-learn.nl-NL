@@ -4,9 +4,9 @@ description: Bekijk onze video's en zelfstudies voor hulp met Adobe Experience M
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
+source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '244'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,6 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 
 ## Aanvullende bronnen
 
-* [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
 * [AEM Sites - video&#39;s en zelfstudies](/help/sites/overview.md)
 * [AEM Assets - video&#39;s en zelfstudies](/help/assets/overview.md)

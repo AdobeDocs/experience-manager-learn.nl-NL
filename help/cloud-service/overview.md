@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Manager als video's en zelfstudies voor Cloud Servicen
+title: Adobe Experience Manager as a Cloud Service - video's en zelfstudies
 description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) as a Cloud Service
 sub-product: sites, cloud-manager, foundation, assets
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
+source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '267'
 ht-degree: 5%
 
 ---
 
-# Video&#39;s en zelfstudies AEM als Cloud Servicen {#overview}
+# as a Cloud Service video&#39;s en zelfstudies AEM {#overview}
 
 Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cloud Service introduceert de volgende generatie van de productlijn van de Experience Manager, voortbouwend op vroegere investeringen en innovaties, het bewaren en uitbreiden van alle gebruiksgevallen en -functies.
 
@@ -100,5 +100,4 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cl
 
 ## Aanvullende bronnen
 
-* [Experience League - Adobe Experience Manager verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Adobe Experience Manager as a Cloud Service-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)

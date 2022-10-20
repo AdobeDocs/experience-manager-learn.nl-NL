@@ -3,9 +3,9 @@ title: AEM Assets - video's en zelfstudies
 description: Bekijk onze video's voor ondersteuning en assistentie van AEM middelen.
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
+source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '185'
 ht-degree: 3%
 
 ---
@@ -18,11 +18,11 @@ Adobe Experience Manager (AEM) Assets is een hulpmiddel voor het beheer van digi
 >id="aemcloud_assets_overview"
 >title="AEM Assets"
 >abstract="Leer hoe u snel de benodigde middelen kunt vinden en bewerken."
->additional-url="https://video.tv.adobe.com/v/336196" text="AEM Assets loopt door"
+>additional-url="https://video.tv.adobe.com/v/336196" text="AEM Assets doorlopen"
 
-## AEM Assets loopt door
+## AEM Assets doorlopen
 
-Bekijk deze end-to-end looppas door AEM Assets die verklaart wat AEM Assets is, en hoe het zou kunnen worden gebruikt om de bedrijfsdoelstellingen van uw organisatie te bereiken.
+Leer wat AEM Assets is en hoe het gebruikt kan worden om de bedrijfsdoelstellingen van uw organisatie te bereiken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336196/?quality=12&learn=on)
 
@@ -83,7 +83,6 @@ Bekijk deze end-to-end looppas door AEM Assets die verklaart wat AEM Assets is, 
 
 ## Aanvullende bronnen
 
-* [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [AEM Assets-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
 * [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
 * [AEM Sites-zelfstudies](/help/sites/overview.md)
