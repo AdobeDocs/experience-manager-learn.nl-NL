@@ -1,6 +1,6 @@
 ---
-title: Advanced settings and workflows for Workfront for AEM enhanced connector
-description: Learn how about advanced settings for the Workfront for AEM enhanced connector, and how to configure advanced workflows and launchers in AEM to manage the sync of data between AEM and Workfront.
+title: Geavanceerde instellingen en workflows voor Workfront voor AEM verbeterde connector
+description: Leer hoe u geavanceerde instellingen voor de Workfront for AEM verbeterde connector kunt gebruiken en hoe u geavanceerde workflows en draagraketten kunt configureren in AEM om de synchronisatie van gegevens tussen AEM en Workfront te beheren.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -8,20 +8,21 @@ level: Beginner
 kt: 9733
 thumbnail: 340397.jpeg
 hidefromtoc: false
-source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
+last-substantial-update: 2022-09-02T00:00:00Z
+exl-id: 7d44e1b7-7216-431d-b866-6adcc8673d53
+source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
 
 ---
 
+# Geavanceerde instellingen en workflows
 
-# Advanced settings and workflows
+![AEM Deskundigenreeks](./assets/banner.png)
 
-![](./assets/banner.png)
-
-Learn how about advanced settings for the Workfront for AEM enhanced connector, and how to configure advanced workflows and launchers in AEM to manage the sync of data between AEM and Workfront.
+Leer hoe u geavanceerde instellingen voor de Workfront for AEM verbeterde connector kunt gebruiken en hoe u geavanceerde workflows en draagraketten kunt configureren in AEM om de synchronisatie van gegevens tussen AEM en Workfront te beheren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340397/?quality=12&learn=on)
 
-_[](./overview.md)_
+_Deel vier van een [vier deskundigenreeksen voor onderdelen op de Workfront for Experience Manager Enhanced connector](./overview.md)_

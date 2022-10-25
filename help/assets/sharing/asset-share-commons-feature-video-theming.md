@@ -5,10 +5,11 @@ version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
+last-substantial-update: 2022-06-22T00:00:00Z
 exl-id: b7d0b6b1-145a-4987-a9dc-7263efa4d9fb
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '112'
 ht-degree: 1%
 
 ---
