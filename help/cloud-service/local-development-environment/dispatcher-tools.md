@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 kt: 4679
 thumbnail: 30603.jpg
+last-substantial-update: 2022-09-01T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
@@ -114,7 +115,7 @@ Start Dispatcher Docker-container die het pad naar de Dispatcher-configuratiemap
 + Windows: `bin\docker_run src host.docker.internal:4503 8080`
 + macOS / Linux: `./bin/docker_run.sh ./src host.docker.internal:4503 8080`
 
-De AEM as a Cloud Service publicatieservice van SDK, die plaatselijk op haven 4503 loopt zal door Dispatcher bij beschikbaar zijn `http://localhost:8080`.
+De AEM as a Cloud Service publicatieservice van SDK, die plaatselijk op haven 4503 loopt is beschikbaar door Dispatcher bij `http://localhost:8080`.
 
 Om de Hulpmiddelen van de Verzender tegen de configuratie van de Verzender van een project van de Experience Manager in werking te stellen, richt aan uw project `dispatcher/src` map.
 
@@ -209,31 +210,6 @@ Running script /docker_entrypoint.d/10-check-environment.sh
 Running script /docker_entrypoint.d/20-create-docroots.sh
 Running script /docker_entrypoint.d/30-wait-for-backend.sh
 Waiting until host.docker.internal is available
-```
-
-### docker_run kan niet worden gestart in Windows{#troubleshooting-windows-compatible}
-
-Wordt uitgevoerd `docker_run` in Windows kan de volgende fout optreden, zodat Dispatcher niet kan worden gestart. Dit probleem wordt gemeld bij Dispatcher in Windows en in een toekomstige versie opgelost.
-
-#### Voorbeeldfout
-
-```shell
-$ \Users\MyUser\aem-sdk\dispatcher>bin\docker_run src host.docker.internal:4503 8080
-
-Running script /docker_entrypoint.d/10-check-environment.sh
-Running script /docker_entrypoint.d/20-create-docroots.sh
-Running script /docker_entrypoint.d/30-wait-for-backend.sh
-Waiting until host.docker.internal is available
-host.docker.internal resolves to 192.168.65.2
-Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
-Running script /docker_entrypoint.d/50-check-expiration.sh
-Running script /docker_entrypoint.d/60-check-loglevel.sh
-Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
-Starting httpd server
-[Sun Feb 09 17:32:22.256020 2020] [dispatcher:warn] [pid 1:tid 140080096570248] Unable to obtain parent directory of /etc/httpd/conf.dispatcher.d/enabled_farms/farms.any: No such file or directory
-[Sun Feb 09 17:32:22.256069 2020] [dispatcher:alert] [pid 1:tid 140080096570248] Unable to import config file: /etc/httpd/conf.dispatcher.d/dispatcher.any
-[Sun Feb 09 17:32:22.256074 2020] [dispatcher:alert] [pid 1:tid 140080096570248] Dispatcher initialization failed.
-AH00016: Configuration Failed
 ```
 
 ## Aanvullende bronnen

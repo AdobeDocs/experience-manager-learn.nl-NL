@@ -8,10 +8,11 @@ thumbnail: 32551.jpg
 topic: Development
 role: Developer
 level: Beginner
+last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -190,7 +191,7 @@ Het wijzigen van deze instellingen kan aanpassingen in AEM SDK-configuraties ver
 
 ## Een lokale AEM-runtime stoppen
 
-Als u een lokale AEM-runtime wilt stoppen, opent u het opdrachtregelvenster dat is gebruikt om de AEM-runtime te starten, en tikt u op `Ctrl-C`. Wacht tot AEM is afgesloten. Wanneer het sluitingsproces volledig is, zal de herinnering van de bevellijn beschikbaar zijn.
+Als u een lokale AEM-runtime wilt stoppen, opent u het opdrachtregelvenster dat is gebruikt om de AEM-runtime te starten, en tikt u op `Ctrl-C`. Wacht tot AEM is afgesloten. Wanneer het sluitingsproces volledig is, is de herinnering van de bevellijn beschikbaar.
 
 ## Optionele lokale AEM-runtime instellingstaken
 
