@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 332ad831b6c49e8599aa2181caf978d5626c1aba
+source-git-commit: 129dedd4cd6973d5d576bed5f714ce62152923de
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Gebruik van `_authorUrl` en `_publishUrl` zou met het AEM eindpunt moeten richte
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
->title="Afbeeldingen gebruiken"
+>title="Afbeeldingen met AEM zonder kop"
 >abstract="Leer hoe AEM Headless het beheer van beeldactiva en hun geoptimaliseerde levering steunt."
 
 ## Inhoudsfragmentmodel
