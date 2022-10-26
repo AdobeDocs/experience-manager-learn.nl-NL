@@ -9,9 +9,10 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
+recommendations: noDisplay, noCatalog
+source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
 workflow-type: tm+mt
-source-wordcount: '3079'
+source-wordcount: '3064'
 ht-degree: 0%
 
 ---
@@ -63,7 +64,7 @@ U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/a
 
 ## Wat u gaat maken {#what-you-will-build}
 
-In dit gedeelte van de zelfstudie maakt u een nieuwe artikelpaginasjabloon die u kunt gebruiken om nieuwe artikelpagina&#39;s te maken en deze uit te lijnen met een gemeenschappelijke structuur. Het sjabloon voor artikelpagina wordt gebaseerd op ontwerpen en een UI-kit die in AdobeXD wordt gemaakt. Dit hoofdstuk is alleen gericht op het opbouwen van de structuur of het skelet van de sjabloon. Er worden geen stijlen geïmplementeerd, maar de sjabloon en pagina&#39;s zijn functioneel.
+In dit gedeelte van de zelfstudie maakt u een nieuwe artikelpaginasjabloon die u kunt gebruiken om nieuwe artikelpagina&#39;s te maken en deze uit te lijnen met een gemeenschappelijke structuur. Het sjabloon voor artikelpagina is gebaseerd op ontwerpen en een UI-kit die in AdobeXD zijn gemaakt. Dit hoofdstuk is alleen gericht op het opbouwen van de structuur of het skelet van de sjabloon. Er worden geen stijlen geïmplementeerd, maar de sjabloon en pagina&#39;s zijn functioneel.
 
 ![Artikelpaginaontwerp en niet-opgemaakte versie](assets/pages-templates/what-you-will-build.png)
 
@@ -101,12 +102,12 @@ Stappen op hoog niveau voor de bovenstaande video:
 1. Overschakelen op **Structuur** in.
 1. Een **Ervaar fragment** als de **Koptekst** boven aan de sjabloon.
    * Vorm de component om te richten `/content/experience-fragments/wknd/us/en/site/header/master`.
-   * Beleid instellen op **Paginakoptekst** en zorgt ervoor dat de **Standaardelement** is ingesteld op `header`. De `header`element zal met CSS in het volgende hoofdstuk worden gericht.
+   * Beleid instellen op **Paginakoptekst** en zorgt ervoor dat de **Standaardelement** is ingesteld op `header`. De `header`element is gericht met CSS in het volgende hoofdstuk.
 1. Een **Ervaar fragment** als de **Voettekst** onder aan de sjabloon.
    * Vorm de component om te richten `/content/experience-fragments/wknd/us/en/site/footer/master`.
-   * Beleid instellen op **Paginavoettekst** en zorgt ervoor dat de **Standaardelement** is ingesteld op `footer`. De `footer` element zal met CSS in het volgende hoofdstuk worden gericht.
+   * Beleid instellen op **Paginavoettekst** en zorgt ervoor dat de **Standaardelement** is ingesteld op `footer`. De `footer` element is gericht met CSS in het volgende hoofdstuk.
 1. Vergrendel de **hoofd** container die was inbegrepen toen het malplaatje aanvankelijk werd gecreeerd.
-   * Beleid instellen op **Hoofdpagina van pagina** en zorgt ervoor dat de **Standaardelement** is ingesteld op `main`. De `main` element zal met CSS in het volgende hoofdstuk worden gericht.
+   * Beleid instellen op **Hoofdpagina van pagina** en zorgt ervoor dat de **Standaardelement** is ingesteld op `main`. De `main` element is gericht met CSS in het volgende hoofdstuk.
 1. Een **Afbeelding** aan de **hoofd** container.
    * Ontgrendel de **Afbeelding** component.
 1. Voeg een **Broodkruimel** component onder de component **Afbeelding** in de hoofdcontainer.
@@ -132,7 +133,7 @@ Stappen op hoog niveau voor de bovenstaande video:
 1. Overschakelen op **Oorspronkelijke inhoud** in.
 1. Voeg een **Titel** aan de **Inhoudscontainer**. Dit is de titel van artikel. Als de pagina leeg blijft, wordt automatisch de titel van de huidige pagina weergegeven.
 1. Een seconde toevoegen **Titel** component onder de eerste component Title.
-   * Configureer de component met de tekst: &quot;Door auteur&quot;. Dit wordt een tijdelijke aanduiding voor tekst.
+   * Configureer de component met de tekst: &quot;Door auteur&quot;. Dit is een tijdelijke aanduiding voor tekst.
    * Te gebruiken tekst instellen `H4`.
 1. Voeg een **Tekst** component onder de component **Op auteur** Component Titel.
 1. Voeg een **Titel** aan de **Zijspoorcontainer**.
@@ -348,13 +349,13 @@ De volgende paar stappen zullen plaatsvinden gebruikend winde VSCode gebruikend 
    </workspaceFilter>
    ```
 
-   De `filter.xml` is verantwoordelijk voor het identificeren van de paden van knooppunten die samen met het pakket worden geïnstalleerd. Let op: `mode="merge"` op elk van de filters wordt aangegeven dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing doet **niet** overschrijven, inhoud. Zie de [FileVault-documentatie](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over het werken met filterelementen.
+   De `filter.xml` is verantwoordelijk voor het identificeren van de paden van knooppunten die samen met het pakket zijn geïnstalleerd. Let op: `mode="merge"` op elk van de filters wordt aangegeven dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing doet **niet** overschrijven, inhoud. Zie de [FileVault-documentatie](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over het werken met filterelementen.
 
    Vergelijken `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om de verschillende knopen te begrijpen die door elke module worden beheerd.
 
    >[!WARNING]
    >
-   > Om verenigbare plaatsingen voor de plaats van de Verwijzing te verzekeren WKND zijn sommige takken van het project opstelling dusdanig dat `ui.content` eventuele wijzigingen in het JCR overschrijven. Dit is door ontwerp, d.w.z. voor de Tak van de Oplossing, aangezien de code/de stijlen voor specifiek beleid zullen worden geschreven.
+   > Om verenigbare plaatsingen voor de plaats van de Verwijzing te verzekeren WKND zijn sommige takken van het project opstelling dusdanig dat `ui.content` Hiermee overschrijft u eventuele wijzigingen in het JCR. Dit is door ontwerp, d.w.z. voor de Tak van de Oplossing, aangezien de code/de stijlen voor specifiek beleid worden geschreven.
 
 ## Gefeliciteerd! {#congratulations}
 
