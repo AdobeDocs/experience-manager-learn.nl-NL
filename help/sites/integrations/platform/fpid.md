@@ -9,7 +9,7 @@ level: Beginner
 last-substantial-update: 2022-10-20T00:00:00Z
 kt: 11336
 thumbnail: kt-11336.jpeg
-source-git-commit: d1e105a4083b34e7a3f220a59d4608ef39d39032
+source-git-commit: aeeed85ec05de9538b78edee67db4d632cffaaab
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 0%
@@ -42,7 +42,7 @@ In het volgende diagram wordt beschreven hoe de AEM-publicatieservice FPID&#39;s
 1. Als de webpagina niet kan worden aangeboden vanuit CDN- of AEM Dispatcher-caches, bereikt de aanvraag de AEM-publicatieservice, die de gevraagde webpagina genereert.
 1. De webpagina wordt vervolgens teruggestuurd naar de webbrowser en vult de caches in die de aanvraag niet konden uitvoeren. Met AEM verwacht u CDN- en AEM Dispatcher-cache van meer dan 90%.
 1. De webpagina bevat JavaScript waarmee een niet-cachebaar asynchroon XHR-verzoek (AJAX) wordt ingediend bij een aangepaste FPID-server in de AEM-publicatieservice. Omdat dit een uncacheable verzoek (door het is willekeurige vraagparameter en Cachebeheer kopballen) is, wordt het nooit in het voorgeheugen ondergebracht door CDN of AEM Dispatcher, en bereikt altijd de publicatiedienst AEM om de reactie te produceren.
-1. De aangepaste FPID-server in de AEM-publicatieservice verwerkt de aanvraag, genereert een nieuwe FPID wanneer er geen bestaande FPID-cookie wordt gevonden, of breidt de live-versie van een bestaand FPID-cookie uit. De servlet retourneert ook de FPID in de hoofdtekst van de reactie voor gebruik door JavaScript op de client. Gelukkig is de aangepaste FPID servlet-logica lichtgewicht, waardoor deze aanvraag geen invloed kan hebben op de prestaties van de AEM-publicatieservice.
+1. De aangepaste FPID-server in de AEM-publicatieservice verwerkt de aanvraag, genereert een nieuwe FPID wanneer er geen bestaande FPID-cookie wordt gevonden, of verlengt de levensduur van bestaande FPID-cookie. De servlet retourneert ook de FPID in de hoofdtekst van de reactie voor gebruik door JavaScript op de client. Gelukkig is de aangepaste FPID servlet-logica lichtgewicht, waardoor deze aanvraag geen invloed kan hebben op de prestaties van de AEM-publicatieservice.
 1. De reactie voor het XHR- verzoek keert aan browser met het koekje FPID en FPID als JSON in het antwoordlichaam voor gebruik door het Web SDK van het Platform terug.
 
 ## Codevoorbeeld
@@ -62,7 +62,9 @@ Wanneer een HTTP-aanvraag de servlet bereikt, controleert de servlet of er een F
 + Als een FPID-cookie niet bestaat, genereert u een nieuw FPID-cookie en slaat u de waarde op om naar het antwoord te schrijven.
 
 Vervolgens schrijft de servlet de FPID naar de reactie als een JSON-object in de vorm: `{ fpid: "<FPID VALUE>" }`.
+
 Het is belangrijk dat de FPID aan de client in de hoofdtekst wordt doorgegeven, aangezien het FPID-cookie is gemarkeerd `HttpOnly`, wat betekent dat alleen de server de waarde ervan kan lezen en JavaScript op de client niet.
+
 De waarde FPID van het antwoordlichaam wordt gebruikt om vraag te bepalen gebruikend het Web SDK van het Platform.
 
 Hieronder ziet u de voorbeeldcode van een AEM servlet-eindpunt (beschikbaar via `HTTP GET /bin/aep/fpid`) die een FPID-cookie genereert of vernieuwt en de FPID retourneert als JSON.
