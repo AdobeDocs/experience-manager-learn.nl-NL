@@ -1,22 +1,21 @@
 ---
 title: Bepaal de structuur van uw map en de naamgevingsconventie voor bestanden
-description: Bestandsnaamgeving is wellicht de belangrijkste beslissing die u zult nemen bij de implementatie van Dynamic Media Classic. De mapstructuur is ook belangrijk. Leer waarom het zo belangrijk en mogelijk is om voor uw omslagstructuur en dossiernamen te kiezen.
-sub-product: dynamic-media
+description: Bestandsnaamgeving is misschien wel de belangrijkste beslissing die u neemt bij het implementeren van Dynamic Media Classic. De mapstructuur is ook belangrijk. Leer waarom het zo belangrijk en mogelijk is om voor uw omslagstructuur en dossiernamen te kiezen.
 feature: Dynamic Media Classic
 doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 15121896-9196-4ce0-aff2-9178563326b4
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
-
 
 # Bepaal de structuur van uw map en de naamgevingsconventie voor bestanden {#folder-structure-filenaming}
 
@@ -28,13 +27,13 @@ Bestandsnaamgeving is over het algemeen de belangrijkste beslissing die u neemt 
 
 ### Maphiërarchie
 
-Maphiërarchie is alleen voor u en uw bedrijf van belang voor organisatorische doeleinden — uw klassieke Dynamic Media-URL&#39;s verwijzen alleen naar de naam van het element, niet naar de map of het pad. Ongeacht waar u een bestand uploadt, zal de URL hetzelfde zijn. Dit is heel anders dan hoe de meeste mensen hun afbeeldingen en inhoud voor het web ordenen, maar met Dynamic Media Classic maakt het geen verschil.
+Maphiërarchie is alleen voor u en uw bedrijf van belang voor organisatorische doeleinden — uw Dynamic Media Classic-URL&#39;s verwijzen alleen naar de naam van het element, niet naar de map of het pad. Ongeacht waar u een bestand uploadt, is de URL hetzelfde. Dit is heel anders dan hoe de meeste mensen hun afbeeldingen en inhoud voor het web organiseren, maar met Dynamic Media Classic maakt het geen verschil.
 
-Een andere belangrijke overweging is het aantal elementen of mappen dat in elke map moet worden opgeslagen. Als veel elementen in een map zijn opgeslagen, nemen de prestaties af bij het weergeven van elementen in Dynamic Media Classic. Sla duizenden bestanden niet op in een map. In plaats daarvan, ontwikkelt een organisatorische hiërarchie met minder dan ongeveer 500 activa of omslagen binnen een bepaalde tak van uw hiërarchie. Dit is geen strikte eis, maar het zal helpen om aanvaardbare reactietijden te handhaven wanneer het bekijken van of het zoeken van activa. In feite is de aanbeveling om hiërarchieën te creëren die breed en oppervlakkig zijn in plaats van smal en diep.
+Een andere belangrijke overweging is het aantal elementen of mappen dat in elke map moet worden opgeslagen. Als er veel middelen in een map zijn opgeslagen, neemt de prestatie af bij het weergeven van middelen in Dynamic Media Classic. Sla duizenden bestanden niet op in een map. In plaats daarvan, ontwikkelt een organisatorische hiërarchie met minder dan ongeveer 500 activa of omslagen binnen een bepaalde tak van uw hiërarchie. Dit is geen strikte voorwaarde, maar het helpt om aanvaardbare reactietijden te handhaven wanneer het bekijken van of het zoeken van activa. In feite is de aanbeveling om hiërarchieën te creëren die breed en oppervlakkig zijn in plaats van smal en diep.
 
-De eenvoudigste manier om uw mappen te maken, is om de volledige mapstructuur te uploaden met behulp van FTP en de optie **Submappen opnemen** in te schakelen. Met deze optie maakt Dynamic Media Classic de mapstructuur opnieuw op de FTP-site in Dynamic Media Classic.
+De eenvoudigste manier om uw mappen te maken is om de volledige mapstructuur te uploaden met behulp van FTP en de optie in te schakelen **Inclusief submappen**. Met deze optie maakt Dynamic Media Classic de mapstructuur opnieuw op de FTP-site in Dynamic Media Classic.
 
-We willen dat u rekening houdt met uw mapstructuur voordat u al uw bestanden gaat uploaden. Het is namelijk veel gemakkelijker om uw bestanden en mappen lokaal op uw computer te ordenen en te beheren dan in Dynamic Media Classic. U kunt bijvoorbeeld alleen bestanden, maar niet volledige mappen, slepen en neerzetten in Dynamic Media Classic.
+We willen dat u rekening houdt met uw mapstructuur voordat u al uw bestanden gaat uploaden, omdat het veel eenvoudiger is om uw bestanden en mappen lokaal op uw computer te ordenen en te beheren dan in Dynamic Media Classic. U kunt bijvoorbeeld alleen bestanden, maar niet volledige mappen, slepen en neerzetten in Dynamic Media Classic.
 
 ### Mapstrategieën
 
@@ -46,9 +45,9 @@ Overweeg voor uw mapstrategie wat voor uw organisatie zinnig is. Hier volgen een
 
 ## Naamgevingsconventie voor bestanden
 
-Hoe u ervoor kiest om uw bestanden een naam te geven, is wellicht de belangrijkste beslissing die u in een vroeg stadium zult nemen met betrekking tot Dynamic Media Classic. Dit komt omdat alle elementen in Dynamic Media Classic unieke namen moeten hebben, ongeacht de locatie van de middelen op de account.
+Hoe u ervoor kiest om uw bestanden een naam te geven, is wellicht de belangrijkste beslissing die u in een vroeg stadium zult nemen met betrekking tot Dynamic Media Classic. Dit komt doordat alle elementen in Dynamic Media Classic unieke namen moeten hebben, ongeacht de locatie van de elementen op de account.
 
-Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een Asset-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. _896649.jpg_ krijgt bijvoorbeeld element _ID 896649_.
+Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een element-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. Bijvoorbeeld: _896649,jpg_ get-element _ID 896649_.
 
 Regels betreffende ID&#39;s van activa:
 
@@ -56,9 +55,9 @@ Regels betreffende ID&#39;s van activa:
 - Namen zijn hoofdlettergevoelig. Met bijvoorbeeld Stoel.jpg, stoel.jpg en CHAIR.jpg kunt u drie verschillende id&#39;s voor middelen maken.
 - Als beste praktijk, zou identiteitskaart van Activa geen lege ruimten of symbolen moeten bevatten. Het gebruik van spaties en symbolen maakt de implementatie moeilijker omdat u deze tekens via URL moet coderen. Een spatie &quot; &quot; wordt bijvoorbeeld &quot;%20&quot;.
 
-Uw naamgevingsconventie is in wezen hoe u integreert met Dynamic Media Classic. U integreert uw back-office systemen gewoonlijk niet in Dynamic Media Classic omdat het een gesloten systeem is. Het is een passieve partner, die op instructies in de vorm van URLs wacht.
+Uw naamgevingsconventie is in feite hoe u met Dynamic Media Classic integreert. U integreert uw back-office systemen gewoonlijk niet in Dynamic Media Classic omdat het een gesloten systeem is. Het is een passieve partner, die op instructies in de vorm van URLs wacht.
 
-De meeste gebruikers baseren hun noemende overeenkomst rond hun interne SKU of product IDs zodat wanneer een Web-pagina met informatie over dat SKU omhoog wordt geroepen, de pagina automatisch naar een beeld kan zoeken dat een gelijkaardige naam heeft. Als er geen verbinding tussen het dossier - naam en SKU of identiteitskaart is, dan zal uw achterkantoorsysteem spoor van elke dossiernaam manueel moeten houden, en een persoon zal die verenigingen moeten handhaven - in het kort, veel werk voor zowel IT als inhoudsteams.
+De meeste gebruikers baseren hun noemende overeenkomst rond hun interne SKU of product IDs zodat wanneer een Web-pagina met informatie over die SKU omhoog wordt geroepen, de pagina automatisch naar een beeld kan zoeken dat een gelijkaardige naam heeft. Als er geen verbinding tussen het dossier - naam en SKU of identiteitskaart is, dan zal uw achterkantoorsysteem spoor van elke dossiernaam manueel moeten houden, en een persoon zal die verenigingen moeten handhaven - in het kort, veel werk voor zowel IT als inhoudsteams.
 
 ### Naamgevingsstrategieën voor bestanden
 

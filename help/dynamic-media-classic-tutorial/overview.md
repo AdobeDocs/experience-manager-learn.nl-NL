@@ -1,7 +1,6 @@
 ---
 title: Zelfstudie over best practices voor Dynamic Media Classic
 description: Dynamic Media Classic is het knooppunt waar klanten veelzijdige media-inhoud kunnen maken, schrijven en leveren. Deze zelfstudie over best practices is gemaakt om huidige en nieuwe gebruikers van Dynamic Media Classic te helpen beter te begrijpen wat ze kunnen doen met deze krachtige, rijke mediaoplossing van Adobe. In dit gedeelte van de zelfstudie leert u wat Dynamic Media Classic is en bekijkt u de kernmogelijkheden en gebruikersinterface van.
-sub-product: dynamic-media
 doc-type: tutorial
 topics: best-practices, development, authoring, configuring
 audience: all
@@ -11,9 +10,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '885'
 ht-degree: 0%
 
 ---
@@ -53,7 +52,7 @@ De belangrijkste gebruikersinterface van Dynamic Media Classic bestaat uit drie 
 
 ![afbeelding](assets/overview/overview-dmc-ui-ew.png)
 
-_Dynamic Media Classic UI_
+_Dynamic Media Classic-gebruikersinterface_
 
 **Algemene navigatiebalk.** U bevindt zich boven aan het scherm en gebruikt de knoppen op deze balk voor toegang tot de belangrijkste gebieden en mogelijkheden van de oplossing. U gebruikt dit programma bijvoorbeeld om uploadmogelijkheden te openen, verschillende gebieden voor het samenstellen van elementen te openen (afbeeldingsset, centrifugeset, enz.), belangrijke taken uit te voeren, zoals het instellen van Voorinstellingen afbeelding en Voorinstellingen viewer, en uw elementen te publiceren. Hier kunt u ook uw taken controleren, recente activiteiten bekijken en een keuze maken uit diverse opties voor hulp.
 

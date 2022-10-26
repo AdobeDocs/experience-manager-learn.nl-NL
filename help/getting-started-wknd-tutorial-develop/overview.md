@@ -1,7 +1,6 @@
 ---
 title: Aan de slag met AEM Sites - WKND-zelfstudie
 description: Leer hoe u een AEM site implementeert voor een fictief levensstijlmerk met de naam WKND. Krijg een looppas-door op fundamentele onderwerpen van de Experience Manager zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
-sub-product: sites
 topics: development
 version: Cloud Service
 activity: develop
@@ -16,7 +15,7 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 72abe1cddcf6a012403887203d38509bde8f2d23
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%

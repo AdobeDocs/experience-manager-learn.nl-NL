@@ -1,7 +1,6 @@
 ---
 title: Adaptief formulier configureren om AEM workflowoverzicht te activeren
 description: Betalingsopties configureren bij het activeren van AEM workflow bij het verzenden van formulieren
-sub-product: forms
 feature: Workflow
 topics: integrations
 audience: developer
@@ -14,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -38,7 +37,7 @@ Het voorbeeldformulier dat in deze workflow wordt gebruikt, is gebaseerd op een 
 * Downloaden [Adaptief formulier](assets/peak-application-form.zip)
 * Bladeren naar [Formulier en documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op Maken -> Bestand uploaden
-* Het voorbeeldadaptieve formulier wordt in een map geplaatst met de naam [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* Het voorbeeldadaptieve formulier wordt geplaatst in een map met de naam [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 In de volgende video wordt uitgelegd hoe u een adaptief formulier configureert om een AEM workflow te activeren
 >[!VIDEO](https://video.tv.adobe.com/v/40258/?quality=9&learn=on)

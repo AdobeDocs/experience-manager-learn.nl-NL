@@ -2,7 +2,6 @@
 title: Ontwikkelen met het Stijlsysteem
 seo-title: Developing with the Style System
 description: Leer hoe te om individuele stijlen uit te voeren en de Componenten van de Kern te hergebruiken gebruikend het Systeem van de Stijl van de Experience Manager. Deze zelfstudie behandelt het ontwikkelen voor het Systeem van de Stijl om de Componenten van de Kern met merkspecifieke CSS en geavanceerde beleidsconfiguraties van de Redacteur van het Malplaatje uit te breiden.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Style System
@@ -13,7 +12,7 @@ kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1681'
 ht-degree: 0%
@@ -103,7 +102,7 @@ Voeg een nieuw beleid voor de componenten van de Titel toe om inhoudsauteurs toe
 
 1. Maak een nieuw beleid voor de component Title met de volgende waarden:
 
-   *Beleidstitel **: **WKND-titel**
+   *Beleidstitel&#42;*: **WKND-titel**
 
    *Eigenschappen* > *Tabblad Stijlen* > *Een nieuwe stijl toevoegen*
 
@@ -213,7 +212,7 @@ Voeg vervolgens een nieuw beleid toe voor de tekstcomponenten.
 
 1. Werk het componentenbeleid van de Tekst met de volgende waarden bij:
 
-   *Beleidstitel **: **Inhoudstekst**
+   *Beleidstitel&#42;*: **Inhoudstekst**
 
    *Plug-ins* > *Alineastijlen* > *Alineastijlen inschakelen*
 

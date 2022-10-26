@@ -1,7 +1,6 @@
 ---
 title: Thematische workflow | AEM Snel site maken
 description: Leer hoe u de themabronnen van een Adobe Experience Manager-site kunt bijwerken om merkspecifieke stijlen toe te passen. Leer hoe u een proxyserver gebruikt om een live voorvertoning van CSS- en Javascript-updates weer te geven. In deze zelfstudie wordt ook uitgelegd hoe u met behulp van de Front End Pipeline van Adobe Cloud Manager thema-updates op een AEM site kunt implementeren.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 feature: Core Components
@@ -11,7 +10,7 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

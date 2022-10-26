@@ -1,7 +1,6 @@
 ---
 title: Eenheid testen
 description: Voer een eenheidstest uit die het gedrag van het het Verzamelen Model van de component van de Byte bevestigt, dat in het leerprogramma van de Component van de Douane wordt gecreeerd.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: APIs, AEM Project Archetype
@@ -12,9 +11,9 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3014'
 ht-degree: 0%
 
 ---
@@ -238,7 +237,7 @@ Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM 
 
    Deze variabele, `ctx`, wordt een AEM context belicht die een aantal AEM- en Sling-abstracties biedt:
 
-   * Het BylineImpl Sling-model wordt in deze context geregistreerd
+   * Het BylineImpl-opmaakmodel is in deze context geregistreerd
    * In deze context worden structuur voor JCR-inhoud van Mock gemaakt
    * Aangepaste OSGi-services kunnen in deze context worden geregistreerd
    * Verstrekt een verscheidenheid van gemeenschappelijke vereiste mock voorwerpen en helpers zoals voorwerpen SlingHttpServletRequest, een verscheidenheid van de AEMdiensten van het Sling en OSGi zoals ModelFactory, PageManager, Pagina, Malplaatje, ComponentManager, Component, TagManager, Markering, enz.
@@ -382,7 +381,7 @@ Nu we een basismodelcontext hebben, schrijven we onze eerste test voor **getName
    * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** markeert de klasse van het Geval van de Test die met moet worden in werking gesteld [Mockito JUnit Jupiter Extension](https://www.javadoc.io/page/org.mockito/mockito-junit-jupiter/latest/org/mockito/junit/jupiter/MockitoExtension.html) Hiermee kunt u de @Mock-annotaties gebruiken om mock-objecten op klasseniveau te definiëren.
    * **`@Mock private Image`** maakt een mock-object van het type `com.adobe.cq.wcm.core.components.models.Image`. Merk op dat dit op klassenniveau wordt bepaald zodat, zoals nodig, `@Test` de methoden kunnen het gedrag naar behoefte wijzigen.
    * **`@Mock private ModelFactory`** Maakt een mock-object van het type ModelFactory. Merk op dat dit een zuiver Mockito mock is en dat er geen methoden op zijn toegepast. Merk op dat dit op klassenniveau wordt bepaald zodat, zoals nodig, `@Test`de methoden kunnen het gedrag naar behoefte wijzigen.
-   * **`when(modelFactory.getModelFromWrappedRequest(..)`** registreert mock-gedrag voor wanneer `getModelFromWrappedRequest(..)` wordt aangeroepen voor het modelobject ModelFactory. Het resultaat dat is gedefinieerd in `thenReturn (..)` is om het modelafbeeldingsobject te retourneren. Dit gedrag wordt alleen aangeroepen wanneer: de eerste parameter is gelijk aan `ctx`Het verzoekvoorwerp van &#39;s, 2de param is om het even welk voorwerp van het Middel, en de 3de param moet de klasse van het Beeld van de Componenten van de Kern zijn. Wij aanvaarden om het even welke Middel omdat wij door onze tests zullen plaatsen `ctx.currentResource(...)` aan diverse in de **BylineImplTest.json**. Opmerking: we voegen de **lenient()** striktheid omdat wij later dit gedrag van ModelFactory zullen willen met voeten treden.
+   * **`when(modelFactory.getModelFromWrappedRequest(..)`** registreert mock-gedrag voor wanneer `getModelFromWrappedRequest(..)` wordt aangeroepen voor het modelobject ModelFactory. Het resultaat dat is gedefinieerd in `thenReturn (..)` is om het modelafbeeldingsobject te retourneren. Dit gedrag wordt alleen aangeroepen wanneer: de eerste parameter is gelijk aan `ctx`Het verzoekvoorwerp van &#39;s, 2de param is om het even welk voorwerp van het Middel, en de 3de param moet de klasse van het Beeld van de Componenten van de Kern zijn. Wij aanvaarden om het even welke Middel omdat wij door onze tests plaatsen `ctx.currentResource(...)` aan diverse in de **BylineImplTest.json**. Opmerking: we voegen de **lenient()** striktheid omdat wij later dit gedrag van ModelFactory zullen willen met voeten treden.
    * **`ctx.registerService(..)`.** Registreert het modelobject ModelFactory in AemContext, met de hoogste de dienstrangschikking. Dit is vereist omdat de ModelFactory die in BylineImpl wordt gebruikt `init()` wordt geïnjecteerd via de `@OSGiService ModelFactory model` veld. Om AemContext te injecteren **ons** mock-object, dat aanroepen van `getModelFromWrappedRequest(..)`, moeten wij het als hoogste rangordeDienst van dat type (ModelFactory) registreren.
 
 1. Voer de test opnieuw uit, en nogmaals, het mislukt, maar dit keer is het bericht duidelijk waarom de test is mislukt.
@@ -412,7 +411,7 @@ Nu we een basismodelcontext hebben, schrijven we onze eerste test voor **getName
 
 ## getOccupations() testen {#testing-get-occupations}
 
-Goed zo! Onze eerste test is geslaagd! Laten we verder gaan en testen `getOccupations()`. Sinds de initialisatie van de modelcontext `@Before setUp()`methode, deze is voor iedereen beschikbaar `@Test` methoden in deze testcase, inclusief `getOccupations()`.
+Goed zo! Onze eerste test is geslaagd! Laten we verder gaan en testen `getOccupations()`. Sinds de initialisatie van de modelcontext `@Before setUp()`methode is beschikbaar voor iedereen `@Test` methoden in deze testcase, inclusief `getOccupations()`.
 
 Onthoud dat deze methode een alfabetisch gesorteerde lijst met beroepen (aflopend) moet retourneren die is opgeslagen in de eigenschap bezettingen.
 
@@ -447,7 +446,7 @@ Onthoud dat deze methode een alfabetisch gesorteerde lijst met beroepen (aflopen
 
 1. Herinner me, enkel **`getName()`** de **BylineImplTest.json** geen beroepen definieert, dus deze test zal mislukken als we ze uitvoeren, omdat `byline.getOccupations()` retourneert een lege lijst.
 
-   Bijwerken **BylineImplTest.json** om een lijst van beroepen op te nemen, en zij zullen in niet-alfabetische volgorde worden geplaatst om ervoor te zorgen dat onze tests bevestigen dat de beroepen alfabetisch worden gesorteerd door **`getOccupations()`**.
+   Bijwerken **BylineImplTest.json** om een lijst van beroepen op te nemen, en zij worden geplaatst in niet alfabetische orde om ervoor te zorgen dat onze tests bevestigen dat de beroepen alfabetisch door worden gesorteerd **`getOccupations()`**.
 
    ```json
    {

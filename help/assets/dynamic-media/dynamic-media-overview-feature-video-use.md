@@ -1,14 +1,13 @@
 ---
 title: Overzicht van Dynamic Media met AEM Assets
 description: Deze videoreeks geeft u een overzicht van hoe media inhoud wordt beheerd en betreden gebruikend Adobe Experience Manager Dynamic Media als inhoud dienende dienst. Met Dynamic Media kunt u dynamische digitale ervaringen beheren en publiceren. Dit is een unieke functie voor Experience Manager Assets. Met ons framework en onze reeks componenten kunnen marketers interactieve multimedia-ervaringen op alle apparaten aanpassen en leveren.
-sub-product: dynamic-media
 feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
 version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%

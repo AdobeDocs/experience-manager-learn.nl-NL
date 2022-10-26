@@ -1,7 +1,6 @@
 ---
 title: Voorinstellingen afbeelding
-description: Voorinstellingen voor afbeeldingen in Dynamic Media Classic bevatten alle instellingen die nodig zijn om een afbeelding met een bepaalde grootte, indeling, kwaliteit en verscherping te maken. Voorinstellingen voor afbeeldingen vormen een belangrijk onderdeel van het dynamische formaat. Als u naar een URL in Dynamic Media Classic kijkt, kunt u gemakkelijk zien of een voorinstelling voor afbeeldingen in gebruik is. Meer informatie over voorinstellingen voor afbeeldingen, waarom ze zo nuttig zijn en hoe u ze kunt maken.
-sub-product: dynamic-media
+description: Voorinstellingen voor afbeeldingen in Dynamic Media Classic bevatten alle instellingen die nodig zijn om een afbeelding met een bepaalde grootte, indeling, kwaliteit en verscherping te maken. Voorinstellingen voor afbeeldingen vormen een belangrijk onderdeel van het dynamische formaat. Als u in Dynamic Media Classic naar een URL kijkt, kunt u gemakkelijk zien of een voorinstelling voor afbeeldingen in gebruik is. Meer informatie over voorinstellingen voor afbeeldingen, waarom ze zo nuttig zijn en hoe u ze kunt maken.
 feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
@@ -10,21 +9,21 @@ activity: use
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: e472db7c-ac3f-4f66-85af-5a4c68ba609e
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
 
 ---
 
-
 # Voorinstellingen afbeelding {#image-presets}
 
 Een voorinstelling voor afbeeldingen is in feite een recept dat alle instellingen bevat die nodig zijn om een afbeelding te maken met een bepaalde grootte, indeling, kwaliteit en verscherping. Voorinstellingen voor afbeeldingen vormen een belangrijk onderdeel van het dynamische formaat.
 
-Als u de URL&#39;s van ongeveer een klant van Dynamic Media Classic bekijkt, ziet u waarschijnlijk een voorinstelling voor afbeeldingen in gebruik. Zoek alleen $name$ aan het einde van de URL (met woorden of woorden die de naam vervangen).
+Als u de URL&#39;s van ongeveer een Dynamic Media Classic-klant bekijkt, wordt waarschijnlijk een voorinstelling voor afbeeldingen in gebruik. Zoek alleen $name$ aan het einde van de URL (met woorden of woorden die de naam vervangen).
 
-Met voorinstellingen voor afbeeldingen wordt de URL verkort. In plaats van meerdere instructies voor het leveren van afbeeldingen per aanvraag te schrijven, kunt u dus één voorinstelling voor afbeeldingen schrijven. Deze twee URL&#39;s produceren bijvoorbeeld dezelfde JPEG-afbeelding van 300 x 300 met verscherping, maar de tweede URL gebruikt een voorinstelling voor afbeeldingen:
+Met voorinstellingen voor afbeeldingen wordt de URL verkort. In plaats van meerdere instructies voor het leveren van afbeeldingen per aanvraag te schrijven, kunt u dus één voorinstelling voor afbeeldingen schrijven. Deze twee URL&#39;s produceren bijvoorbeeld dezelfde afbeelding van 300 x 300 JPEG met verscherping, maar de tweede URL gebruikt een voorinstelling voor afbeeldingen:
 
 ![afbeelding](assets/image-presets/image-preset-2.png)
 
@@ -40,7 +39,7 @@ Een voorinstelling voor afbeelding heeft een dollarteken ($) aan weerszijden van
 >
 >Maak één voorinstelling voor afbeeldingen per unieke afbeeldingsgrootte op uw site. Als u bijvoorbeeld een afbeelding van 350 x 350 nodig hebt voor de pagina met productdetails, een afbeelding van 120 x 120 voor de pagina&#39;s Bladeren/Zoeken en een afbeelding van 90 x 90 voor een cross-sell/aanbevolen item, hebt u drie voorinstellingen voor afbeeldingen nodig, of het nu gaat om 500 of 500.000 afbeeldingen.
 
-- Meer informatie over [Voorinstellingen voor afbeeldingen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Meer informatie over [Voorinstellingen afbeelding](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
 - Leer hoe u [Een voorinstelling voor afbeeldingen maken](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Voorinstellingen voor afbeeldingen en Verscherpen
@@ -61,12 +60,12 @@ In de volgende afbeelding ziet u drie verscherpingsniveaus. Van rechts naar link
 
 ![afbeelding](assets/image-presets/image-presets-1.jpg)
 
-Met Dynamic Media Classic kunt u drie soorten verscherpen: Eenvoudig verscherpen, Nieuwe pixels berekenen in modus en Onscherp masker.
+In Dynamic Media Classic kunt u drie soorten verscherpen: Eenvoudig verscherpen, Nieuwe pixels berekenen in modus en Onscherp masker.
 
-Meer informatie over [Klassieke verscherpingsopties van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Meer informatie over [Opties voor Dynamic Media Classic verscherpen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Aanvullende bronnen
 
-[Handleiding](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf) voor voorinstellingen afbeelding. Te gebruiken instellingen voor optimalisatie voor afbeeldingskwaliteit en laadsnelheid.
+[Handleiding voor voorinstellingen afbeelding](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Te gebruiken instellingen voor optimalisatie voor afbeeldingskwaliteit en laadsnelheid.
 
-[Afbeelding is Alles deel 2: Het is nooit alleen een vervaging — kwaliteit versus snelheid](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Een blogbericht waarin het gebruik van Voorinstellingen voor afbeeldingen wordt besproken voor het aanbieden van afbeeldingen van hoge kwaliteit die snel worden geladen.
+[Afbeelding is Alles deel 2: Het is nooit alleen een vervaging — Kwaliteit versus snelheid](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Een blogbericht waarin het gebruik van Voorinstellingen voor afbeeldingen wordt besproken voor het aanbieden van afbeeldingen van hoge kwaliteit die snel worden geladen.

@@ -1,7 +1,6 @@
 ---
 title: Inleiding tot ontwerpen en publiceren | AEM Snel site maken
 description: Gebruik de pagina-editor in Adobe Experience Manager AEM om de inhoud van de website bij te werken. Leer hoe Componenten worden gebruikt om ontwerpen te vergemakkelijken. Begrijp het verschil tussen een auteur AEM en publiceer milieu's en leer hoe te om veranderingen in de levende plaats te publiceren.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -11,9 +10,9 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1330'
 ht-degree: 0%
 
 ---
@@ -87,7 +86,7 @@ Vervolgens maakt u enkele componenten met de AEM Pagina-editor.
 
    ![Middelen toevoegen aan dialoogvenster](assets/author-content-publish/add-asset-dialog.png)
 
-1. Merk op dat er componenten op de pagina zijn, zoals **Titel**, **Navigatie**, **Zoeken** die vast zijn. Deze gebieden zijn geconfigureerd als onderdeel van het paginasjabloon en kunnen niet worden gewijzigd op een afzonderlijke pagina. Dit zal meer in het volgende hoofdstuk worden onderzocht.
+1. Merk op dat er componenten op de pagina zijn, zoals **Titel**, **Navigatie**, **Zoeken** die vast zijn. Deze gebieden zijn geconfigureerd als onderdeel van het paginasjabloon en kunnen niet worden gewijzigd op een afzonderlijke pagina. Dit wordt meer onderzocht in het volgende hoofdstuk.
 
 Voel u vrij om te experimenteren met enkele andere componenten. Documentatie over elke [Kerncomponent vindt u hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Een gedetailleerde videoreeks over [Hier kunt u de pagina&#39;s ontwerpen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
 

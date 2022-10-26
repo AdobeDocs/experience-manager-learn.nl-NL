@@ -1,22 +1,21 @@
 ---
 title: Smart Imaging
 description: Smart Imaging in Dynamic Media Classic verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser. Dit gebeurt door Adobe Sensei AI-mogelijkheden te benutten en met bestaande voorinstellingen voor afbeeldingen te werken. Meer informatie over Smart Imaging en hoe u deze kunt gebruiken om klanten betere ervaringen te bieden dankzij snellere paginabelasting.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
-topic: Inhoudsbeheer
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '687'
 ht-degree: 1%
 
 ---
-
 
 # Slimme afbeeldingen {#smart-imaging}
 
@@ -24,7 +23,7 @@ Een van de belangrijkste aspecten van de klantervaring op uw website of mobiele 
 
 Slimme beeldverwerking is ook nuttig dankzij de extra prestatieverhoging van volledige integratie met de best-in-class premium service van Adobe. Deze dienst vindt de optimale Internet route tussen servers, netwerken, en peerpunten die de laagste latentie, en/of pakketverliestarief dan de standaardroute op Internet hebben.
 
-Meer informatie over [Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
+Meer informatie over [Slimme afbeeldingen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Voordelen van Smart Imaging
 
@@ -36,7 +35,7 @@ Omdat de beelden de meerderheid van de ladingstijd van een pagina vormen, kan de
 
 Zoals eerder vermeld, maakt Smart Imaging gebruik van Adobe Sensei AI-mogelijkheden en werkt het met bestaande voorinstellingen voor afbeeldingen om afbeeldingen automatisch om te zetten in optimale volgende generatie afbeeldingsindelingen, zoals WebP, terwijl de visuele getrouwheid behouden blijft.
 
-Meer informatie over [Hoe werkt Slimme afbeeldingen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), zoals details zoals ondersteunde afbeeldingsindelingen (en wat er gebeurt als u die indelingen niet gebruikt) en de invloed ervan op bestaande afbeeldingsvoorinstellingen die in gebruik zijn.
+Meer informatie over [Hoe slim afbeeldingen werken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), inclusief details zoals ondersteunde afbeeldingsindelingen (en wat er gebeurt als u deze indelingen niet gebruikt) en de invloed ervan op bestaande afbeeldingsvoorinstellingen die in gebruik zijn.
 
 ## Effecten van slimme beelden
 
@@ -50,12 +49,12 @@ Slimme afbeeldingen werken met afbeeldingen die via HTTP, HTTPS en HTTP/2 worden
 
 Smart Imaging is inbegrepen bij uw bestaande licentie van Dynamic Media Classic. Er zijn geen extra kosten voor deze functie. Om van het voordeel te zijn, moet u aan twee vereisten voldoen: hebben een Adobe-gebundelde CDN en een specifiek domein. Vervolgens moet u deze voor uw account inschakelen, omdat deze functie niet automatisch wordt ingeschakeld.
 
-Als u Smart Imaging inschakelt, begint u met het verzenden van een verzoek om technische ondersteuning door |het creëren van een steungeval| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De steun zal met u aan opstelling werken een douanedomein dat u met Slimme Beelden zult associëren. U gaat één parameter met betrekking tot caching (Tijd te leven, of TTL) veranderen en de steun zal het geheime voorgeheugen ontruimen. U kunt desgewenst ook een optionele stapsgewijze stap uitvoeren voordat u naar de productie gaat. Als Smart Imaging vervolgens is ingeschakeld, levert u kleinere afbeeldingen op maat voor klanten, maar met dezelfde kwaliteit als u had gevraagd. Dat betekent dat ze sneller pagina&#39;s laden. Dit gebeurt allemaal automatisch omdat Adobe Sensei de meest efficiënte grootte kan kiezen.
+Als u Smart Imaging inschakelt, begint u met het verzenden van een verzoek om technische ondersteuning door |tot instelling van een steungeval| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De steun zal met u aan opstelling werken een douanedomein dat u met Slimme Beelden zult associëren. U gaat één parameter met betrekking tot caching (Tijd te leven, of TTL) veranderen en de steun zal het geheime voorgeheugen ontruimen. U kunt desgewenst ook een optionele stapsgewijze stap uitvoeren voordat u naar de productie gaat. Als Smart Imaging vervolgens is ingeschakeld, levert u kleinere afbeeldingen op maat voor klanten, maar met dezelfde kwaliteit als u had gevraagd. Dat betekent dat ze sneller pagina&#39;s laden. Dit gebeurt allemaal automatisch omdat Adobe Sensei de meest efficiënte grootte kan kiezen.
 
 Als u Smart Imaging hebt ingeschakeld, wilt u controleren of het werkt zoals u had verwacht.
 
-U hebt waarschijnlijk aanvullende vragen over Smart Imaging. We hebben een lijst met veelgestelde vragen (FAQ&#39;s) met antwoorden samengesteld. Lees [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
+U hebt waarschijnlijk aanvullende vragen over Smart Imaging. We hebben een lijst met veelgestelde vragen (FAQ&#39;s) met antwoorden samengesteld. Lees de [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Aanvullende bronnen
 
-Bekijk de [Dynamic Media Klassieke Optimizing Page Performance Skill Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) on-demand webinar voor meer informatie over Smart Imaging.
+Kijk naar de [Dynamic Media Classic Optimizing Page Performance Skill Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) webinar op aanvraag voor meer informatie over Smart Imaging.

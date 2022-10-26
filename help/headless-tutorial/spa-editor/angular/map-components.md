@@ -1,7 +1,6 @@
 ---
 title: SPA componenten toewijzen aan AEM componenten | Aan de slag met de AEM SPA Editor en Angular
 description: Leer hoe u Angulars aan Adobe Experience Manager-componenten (AEM) toewijst met de AEM SPA Editor JS SDK. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen.
-sub-product: sites
 feature: SPA Editor
 topics: development
 doc-type: tutorial
@@ -14,9 +13,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
@@ -92,7 +91,7 @@ Laten we eens kijken hoe de component werkt.
 
    `:type` is een gereserveerde eigenschap die de `sling:resourceType` (of pad) van de AEM Component. De waarde van `:type` is wat wordt gebruikt om de AEM component aan de SPA component in kaart te brengen.
 
-   `text` en `richText` Dit zijn aanvullende eigenschappen die aan de SPA component worden blootgesteld.
+   `text` en `richText` zijn aanvullende eigenschappen die aan de SPA component worden blootgesteld.
 
 ### De component Text Inspect
 
@@ -178,7 +177,7 @@ Laten we eens kijken hoe de component werkt.
 
 8. Inspect **text.component.html** om `ui.frontend/src/app/components/text/text.component.html`.
 
-   Dit bestand is leeg omdat de volledige inhoud van de component wordt ingesteld door de `innerHTML` eigenschap.
+   Dit bestand is leeg omdat de volledige inhoud van de component is ingesteld door de `innerHTML` eigenschap.
 
 9. Inspect the **app.module.ts** om `ui.frontend/src/app/app.module.ts`.
 
@@ -211,11 +210,11 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
 
    ![Image Core Component JSON](./assets/map-components/image-json.png)
 
-   Eigenschappen van `src`, `alt`, en `title` wordt gebruikt om de SPA te vullen `Image` component.
+   Eigenschappen van `src`, `alt`, en `title` worden gebruikt om de SPA te vullen `Image` component.
 
    >[!NOTE]
    >
-   > Er zijn andere afbeeldingseigenschappen blootgesteld (`lazyEnabled`, `widths`) waarmee een ontwikkelaar een adaptieve en uitgestelde component kan maken. De component die in deze zelfstudie is ingebouwd, is eenvoudig en **niet** gebruik deze geavanceerde eigenschappen.
+   > Er zijn andere afbeeldingseigenschappen blootgesteld (`lazyEnabled`, `widths`) waarmee een ontwikkelaar een adaptieve en uitgestelde component kan maken. De component die in deze zelfstudie is ingebouwd, is eenvoudig en werkt als volgt **niet** gebruik deze geavanceerde eigenschappen.
 
 2. Ga terug naar uw IDE en open de `en.model.json` om `ui.frontend/src/mocks/json/en.model.json`. Aangezien dit een netto-nieuwe component voor ons project is, moeten we de Image JSON &quot;modelleren&quot;.
 
@@ -244,7 +243,7 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
            ],
    ```
 
-   Het project bevat een voorbeeldafbeelding op `/mock-content/adobestock-140634652.jpeg` die samen met de **webpack-ontwikkelserver**.
+   Het project bevat een voorbeeldafbeelding op `/mock-content/adobestock-140634652.jpeg` die wordt gebruikt met de **webpack-ontwikkelserver**.
 
    U kunt de volledige [en.model.json hier](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
 
@@ -498,6 +497,6 @@ De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Vi
     </workspaceFilter>
    ```
 
-   De `filter.xml` is verantwoordelijk voor het identificeren van de paden van knooppunten die samen met het pakket worden geïnstalleerd. Let op: `mode="merge"` op elk van de filters wordt aangegeven dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing doet **niet** overschrijven, inhoud. Zie de [FileVault-documentatie](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over het werken met filterelementen.
+   De `filter.xml` is verantwoordelijk voor het identificeren van de paden van knooppunten die samen met het pakket zijn geïnstalleerd. Let op: `mode="merge"` op elk van de filters wordt aangegeven dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing doet **niet** overschrijven, inhoud. Zie de [FileVault-documentatie](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over het werken met filterelementen.
 
    Vergelijken `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om de verschillende knopen te begrijpen die door elke module worden beheerd.

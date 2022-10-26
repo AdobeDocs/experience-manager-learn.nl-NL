@@ -1,7 +1,6 @@
 ---
 title: Dynamic Media Classic Belangrijkste workflow en voorvertoningsmiddelen
 description: 'Leer meer over de hoofdworkflow in Dynamic Media Classic, die de drie stappen bevat: Maken (en uploaden), Auteur (en Publiceren) en Afleveren. Leer vervolgens hoe u een voorvertoning van elementen in Dynamic Media Classic kunt bekijken.'
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '2703'
 ht-degree: 0%
@@ -153,7 +152,7 @@ Leer hoe u [Wis manueel het Geheime voorgeheugen voor URLs die moeten worden bij
 
 ## Stap 3: Leveren
 
-Het uiteindelijke product van een Dynamic Media Classic-workflow is een URL die naar het element verwijst. De URL verwijst mogelijk naar een afzonderlijke afbeelding, een Afbeeldingsset, een Spin-set of een andere verzameling of video in de Afbeeldingsset. U moet die URL gebruiken en er iets mee doen, zoals uw HTML bewerken zodat de `<IMG>` -tags verwijzen naar de Dynamic Media Classic-afbeelding in plaats van naar een afbeelding die van uw huidige site afkomstig is.
+Het uiteindelijke product van een Dynamic Media Classic-workflow is een URL die naar het element verwijst. De URL verwijst mogelijk naar een afzonderlijke afbeelding, een Afbeeldingsset, een Spin-set of een andere verzameling of video in de Afbeeldingsset. U moet die URL gebruiken en er iets mee doen, zoals uw HTML bewerken zodat de `<IMG>` -tags verwijst naar de Dynamic Media Classic-afbeelding in plaats van naar een afbeelding die van uw huidige site afkomstig is.
 
 In de stap Afleveren moet u deze URL&#39;s integreren in uw website, mobiele app, e-mailcampagne of een ander digitaal aanraakpunt waarop u het element wilt weergeven.
 
