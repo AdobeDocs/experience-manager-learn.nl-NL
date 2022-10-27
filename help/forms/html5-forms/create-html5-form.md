@@ -9,16 +9,17 @@ activity: implement
 version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
-topic: Ontwikkeling
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 67a01c41-d284-4518-adb5-21702e22ccfa
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '481'
 ht-degree: 4%
 
 ---
-
 
 # HTML5-formulieren maken
 
@@ -26,39 +27,38 @@ HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager die XFA-fo
 
 ## Vereiste
 
-Controleer of je een werkende versie van AEM Forms hebt. Volg de [installatiehandleiding](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) om AEM Forms te installeren en configureren
+Controleer of je een werkende versie van AEM Forms hebt. Volg de [installatiegids](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) AEM Forms installeren en configureren
 
 ## Uw eerste HTML5-formulier maken
 
-1. [Download en extraheer de inhoud van het ZIP-bestand](assets/assets.zip). Het ZIP-bestand bevat xdp en een gegevensbestand
+1. [De inhoud van het ZIP-bestand downloaden en uitpakken](assets/assets.zip). Het ZIP-bestand bevat xdp en een gegevensbestand
 2. [Naar Forms en Documenten navigeren](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 3. Klik op Maken -> Bestand uploaden
 4. Selecteer de xdp-sjabloon die u in stap 2 hebt gedownload
 
 ## Voorvertonen als HTML
 
-U kunt een voorbeeld van de xdp bekijken in de HTML5-indeling of in de PDF-indeling. Ga als volgt te werk om een voorvertoning van het xdp in HTML5-indeling weer te geven
+De xdp kan worden voorvertoond in de indeling HTML5 of PDF. Voer de volgende stappen uit om een voorvertoning van de xdp in HTML5-indeling te bekijken.
 
 * Tik op de zojuist geüploade xdp en klik op _Voorvertoning -> Voorvertoning als HTML_. De xdp wordt weergegeven als HTML5
 
 >[!NOTE]
->Als u de optie _Voorvertonen als PDF_ selecteert, wordt het weergegeven PDF-bestand niet weergegeven in de browser omdat AEM Forms dynamische PDF&#39;s rendert waarvoor Acrobat-insteekmodule is vereist. U moet de PDF downloaden en openen met Adobe Acrobat/Reader om het bestand te kunnen weergeven
+>Wanneer u _Voorvertonen als PDF_ de weergegeven PDF wordt niet weergegeven in de browser omdat AEM Forms dynamische PDF&#39;s rendert waarvoor Acrobat-plug-in vereist is. U moet de PDF downloaden en openen met Adobe Acrobat/Reader om deze te kunnen weergeven
 
 
 ## Voorvertonen met gegevens
 
 Ga als volgt te werk om een voorvertoning van de xdp in HTML5-indeling met het gegevensbestand weer te geven:
 
-* Tik op de zojuist geüploade xdp en klik op _Voorvertoning -> Voorvertoning met gegevens_. Blader en selecteer het gegevensbestand en klik op _Voorvertoning_.
-* De sjabloon moet worden weergegeven in de HTML5-indeling die vooraf is gevuld met de gegevens
+* Tik op de zojuist geüploade xdp en klik op _Voorvertoning -> Voorvertoning met gegevens_. Bladeren en het gegevensbestand selecteren en klikken op _Voorvertoning_.
+* De sjabloon moet worden weergegeven in de HTML5-indeling die vooraf is ingevuld met de gegevens
 
 ## Geavanceerde eigenschappen van de XDP-sjabloon verkennen
 
 Met de geavanceerde eigenschappen van de xdp-sjabloon kunt u de publicatiedatum opgeven, de verzendhandler, het profiel voor het formulier weergeven, de service Prefill enzovoort. Tik op de xdp om de geavanceerde eigenschappen van de sjabloon weer te geven en klik op _eigenschappen -> Geavanceerd_. Hier vindt u een aantal eigenschappen. Enkele van deze eigenschappen worden hier behandeld.
 
-**URL**  verzenden - Dit is de URL die uw HTML5-formulier verzendt. In de volgende les zullen we dit behandelen. Als hier geen verzendURL is opgegeven, wordt de standaardverzendhandler aangeroepen die de formuliergegevens retourneert naar de browser.
+**URL verzenden** - Dit is de URL waarmee uw HTML5-formulier wordt verzonden. In de volgende les zullen we dit behandelen. Als hier geen verzendURL is opgegeven, wordt de standaardverzendhandler aangeroepen die de formuliergegevens retourneert naar de browser.
 
-**HTML-renderprofiel**  - HTML5-formulieren hebben het idee van profielen die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het standaardrenderprofiel niet aan uw behoeften voldoet, kan een [aangepast profiel](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) worden gemaakt en aan het formulier worden gekoppeld.
+**HTML-renderprofiel** - HTML5-formulieren hebben het idee van profielen die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het standaardrenderprofiel niet aan uw behoeften voldoet, voert u een [aangepast profiel](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) kunnen worden gemaakt en gekoppeld aan het formulier.
 
-**De vooraf ingevulde Dienst**  - de vooraf ingevulde dienst wordt typisch gebruikt om uw vorm met gegevens te bevolken die van een achterste gegevensbron worden opgehaald.
-
+**Prefill-service** - De vooraf ingevulde service wordt doorgaans gebruikt om uw formulier te vullen met gegevens die worden opgehaald van een gegevensbron met de achtergrond.

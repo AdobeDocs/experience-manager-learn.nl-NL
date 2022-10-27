@@ -1,18 +1,19 @@
 ---
 title: Configuratie-instellingen gegevensbron wijzigen.
 description: Wijzig de gastheernaam en andere montages in de Montages van de Configuratie van de Gegevensbron.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 6c63787c-e511-4764-9a03-2c85c394bcc0
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
-
 
 # Mogelijkheid om configuratie-instellingen gegevensbron te wijzigen{#ability-to-modify-data-source-configuration-settings}
 
@@ -24,7 +25,6 @@ De onderstaande schermafbeeldingen tonen de configuratie-instellingen voor de ge
 
 **Configuratie gegevensbron in AEM 6.4**
 
-![64DataSource ](assets/64release.gif)
-**ConfigurationEditable Data Source Configuration in AEM 6.5 en hoger**
-![65DataSource Configuration](assets/modifiabledatasource.jfif)
-
+![64DataSource-configuratie](assets/64release.gif)
+**Bewerkbare gegevensbronconfiguratie in AEM 6.5 en hoger**
+![65Configuratie gegevensbron](assets/modifiabledatasource.jfif)

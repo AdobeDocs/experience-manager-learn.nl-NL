@@ -1,6 +1,6 @@
 ---
 title: HTML5-formulierverzending verwerken
-description: HTML5-formulierverzendhandler maken
+description: HTML5-handler voor formulierverzending maken
 feature: Mobile Forms
 topics: development
 audience: developer
@@ -9,26 +9,27 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 93e1262b-0e93-4ba8-aafc-f9c517688ce9
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-
 # HTML5-formulierverzending verwerken
 
-HTML5-formulieren kunnen worden verzonden naar servlet die wordt gehost in AEM. De verzonden gegevens zijn toegankelijk in de server als een invoerstream. Als u uw HTML5-formulier wilt verzenden, moet u &quot;Knop HTTP verzenden&quot; toevoegen aan uw formuliersjabloon met AEM Forms Designer
+HTML5-formulieren kunnen worden ingediend bij servlet die in AEM wordt gehost. De verzonden gegevens zijn toegankelijk in de server als een invoerstream. Als u uw HTML5-formulier wilt verzenden, moet u de knop HTTP verzenden aan uw formuliersjabloon toevoegen met AEM Forms Designer
 
 ## Verzendhandler maken
 
-U kunt een eenvoudige servlet maken voor het verzenden van HTML5-formulieren. De ingediende gegevens kunnen vervolgens worden geëxtraheerd met de volgende code. Dit [servlet](assets/html5-submit-handler.zip) wordt ter beschikking gesteld aan u als deel van dit leerprogramma. Installeer [servlet](assets/html5-submit-handler.zip) met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+U kunt een eenvoudige servlet maken voor het verzenden van het HTML5-formulier. De ingediende gegevens kunnen vervolgens worden geëxtraheerd met de volgende code. Dit [servlet](assets/html5-submit-handler.zip) wordt beschikbaar gesteld als onderdeel van deze zelfstudie. Installeer de [servlet](assets/html5-submit-handler.zip) gebruiken [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 
-De code van lijn 9 kan worden gebruikt om J2EE proces aan te halen. Zorg ervoor dat u [Adobe LiveCycle client SDK Configuration](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) hebt geconfigureerd als u de code wilt gebruiken om J2EE-proces aan te roepen.
+De code van lijn 9 kan worden gebruikt om J2EE proces aan te halen. Zorg ervoor dat u bent geconfigureerd [Adobe LiveCycle client SDK-configuratie](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) als u de code wilt gebruiken om J2EE-proces aan te roepen.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -64,12 +65,12 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 * Tik op de xdp en klik op _Eigenschappen_->_Geavanceerd_
 * http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html kopiëren en plakken in het tekstveld URL verzenden
-* Klik _SaveAndClose_ knoop.
+* Klikken _SaveAndClose_ knop.
 
 ### Item toevoegen in Paden uitsluiten
 
-* Navigeer naar [configMgr](http://localhost:4502/system/console/configMgr).
-* Zoeken naar _Adobe granite CSRF-filter_
+* Navigeren naar [configMgr](http://localhost:4502/system/console/configMgr).
+* Zoeken naar _Adobe graniet-CSRF-filter_
 * De volgende vermelding toevoegen in de sectie Uitgesloten paden
 * _/content/AemFormsSamples/handlehml5formsubmission_
 * Uw wijzigingen opslaan
@@ -77,14 +78,10 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 ### Het formulier testen
 
 * Tik op de xdp-sjabloon.
-* Klik op _Voorvertoning_->Voorvertoning als HTML
+* Klikken op _Voorvertoning_->Voorvertonen als HTML
 * Voer gegevens in het formulier in en klik op Verzenden
 * De verzonden gegevens worden naar het bestand stdout.log van de server geschreven
 
 ### Extra lezingen
 
-Dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) over het genereren van PDF van het verzenden van HTML5-formulieren wordt ook aanbevolen.
-
-
-
-
+Dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) bij het genereren van PDF op basis van het indienen van HTML5-formulieren wordt ook aanbevolen.

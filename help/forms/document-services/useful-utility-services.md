@@ -1,18 +1,19 @@
 ---
 title: Nuttige nutsvoorzieningen
 description: Een aantal nuttige hulpservices voor AEM Forms-ontwikkelaars
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: add06b73-18bb-4963-b91f-d8e1eb144842
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 1%
+source-wordcount: '155'
+ht-degree: 0%
 
 ---
-
 
 # Nuttige nutsvoorzieningen
 
@@ -33,7 +34,7 @@ public abstract String saveDocumentInCrx(String jcrPath,String fileExtension, Do
 }
 ```
 
-De voorbeeldbundel kan [hier worden gedownload](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
+De voorbeeldbundel kan [hier gedownload](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
 
 ## Voorbeeldcode voor het gebruik van de hulpprogrammaservice(s)
 
@@ -48,8 +49,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Vereisten
 
 
-U moet [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) implementeren en de bundel starten.
+U zult moeten opstellen [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) en start de bundel.
 
 
-Als u documenten wilt opslaan in de CRX-opslagruimte met deze hulpprogrammaservice, volgt u [ontwikkelen met het artikel van de servicegebruiker](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Zorg ervoor u [vereiste toestemmingen ](http://localhost:4502/useradmin) op de aangewezen omslagen CRX aan de fd-dienst gebruiker verstrekt.
-
+Als u documenten in de CRX-opslagplaats gaat opslaan met deze hulpprogrammaservice, volgt u de [ontwikkelen met het artikel van de dienstgebruiker](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Zorg ervoor dat u de [vereiste machtigingen](http://localhost:4502/useradmin) op de aangewezen omslagen CRX aan de fd-dienst gebruiker.

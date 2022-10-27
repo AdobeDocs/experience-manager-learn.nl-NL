@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+last-substantial-update: 2020-10-10T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -45,8 +46,8 @@ Voer de volgende stappen uit om deze mogelijkheid op uw systeem te testen:
 
 * Open de taak vanuit het Postvak IN en verzend het formulier. Voer opmerkingen in wanneer hierom wordt gevraagd.
 
-De opmerkingen worden in crx opgeslagen in de metagegevenseigenschap met de naam managerComments. Als u wilt controleren op de opmerkingen, meldt u zich aan bij crx als beheerder. De workflowinstanties worden opgeslagen in het volgende pad
+De opmerkingen worden opgeslagen in de metagegevenseigenschap met de naam `managerComments` in AEM opslagplaats. Als u wilt controleren op de opmerkingen, meldt u zich aan bij crx als beheerder. De workflowinstanties worden opgeslagen in het volgende pad:
 
-/var/workflow/instances/server0
+`/var/workflow/instances/server0`
 
 Selecteer de aangewezen werkschemainstantie en controleer bezitsmanagerComments in de meta-gegevensknoop.

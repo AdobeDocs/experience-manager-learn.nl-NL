@@ -1,26 +1,27 @@
 ---
 title: Minder functies gebruiken in grafieken
-seo-title: Minder functies gebruiken in AEM Forms - Grafieken
+seo-title: Using Reducer Functions in AEM Forms - Charts
 description: De lagere functies worden gebruikt om waarden samen te voegen of te groeperen die in de grafiek worden getoond.De volgende video loopt door de stappen betrokken bij het gebruiken van reducerfuncties.
-seo-description: De lagere functies worden gebruikt om waarden samen te voegen of te groeperen die in de grafiek worden getoond.De volgende video loopt door de stappen betrokken bij het gebruiken van reducerfuncties.
+seo-description: Reducer functions are used to aggregate or group values that are displayed in the chart.The following video walks through the steps involved in using reducer functions.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: use
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 866749d9-0f62-470b-afeb-4dece4e0b169
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Minder functies gebruiken in AEM Forms - Grafieken{#using-reducer-functions-in-aem-forms-charts}
 
@@ -64,4 +65,3 @@ Met de reduceerfuncties kunnen we bijvoorbeeld het aantal transacties per catego
 De volgende video doorloopt de stappen betrokken bij het gebruiken van reducerfuncties.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21368/?quality=9&learn=on)
-

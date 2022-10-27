@@ -3,16 +3,17 @@ title: Berekende formuliergegevensmodelelementen maken in AEM Forms
 description: Berekende formuliergegevensmodelelementen maken
 feature: Workflow
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1f6f1bb6-3437-4fae-b5a1-698ab357ff23
+last-substantial-update: 2020-09-10T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 1%
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
-
 
 # Berekende formuliergegevensmodelelementen maken in AEM Forms{#creating-computed-form-data-model-elements-in-aem-forms}
 
@@ -31,4 +32,3 @@ In de volgende screenshot ziet u de berekende elementen StateaandZip en monthSal
 ### Status en zip berekend element maken
 
 >[!VIDEO](https://video.tv.adobe.com/v/23856/?quality=9&learn=on)
-

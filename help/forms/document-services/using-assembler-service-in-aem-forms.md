@@ -3,16 +3,17 @@ title: Assembler Service gebruiken in AEM Forms
 description: Het gebruiken van de Dienst van de Assembler in AEM Forms om veelvoudige pdf- dossiers samen te stellen
 feature: Assembler
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
-
 
 # Assembler Service gebruiken in AEM Forms{#using-assembler-service-in-aem-forms}
 
@@ -101,32 +102,25 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Om deze functie te laten werken op uw AEM
 
-* Download [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) naar uw lokale systeem.
-* Upload en installeer het pakket met behulp van [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Download[Custom Document Services Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Download [Ontwikkelen met servicetoedieningspakket](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* De bundels implementeren en starten met de [felix webconsole](http://localhost:4502/system/console/bundles)
-* Wijs uw browser aan [Pdfs samenstellen.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
-* Enkele bestanden van PDF-bestanden slepen en neerzetten
+* Download de [Meerdere bestanden samenstellen.zip](assets/assemble-multiple-files.zip) naar uw lokale systeem.
+* Upload en installeer het pakket met de [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* Downloaden[Pakket voor aangepaste documentservices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Downloaden [Ontwikkelen met de Bundel van de Gebruiker van de Dienst](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* De bundels implementeren en starten met de [felix-webconsole](http://localhost:4502/system/console/bundles)
+* Wijs uw browser aan [PDF&#39;s samenstellen.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* Enkele bestanden met PDF-bestanden slepen en neerzetten
 
 >[!NOTE]
 >
 >Zorg ervoor dat de AEM Forms-installatie is voltooid. Alle bundels moeten actief zijn.
 >
->Zorg ervoor u hebt toegevoegd - de bibliotheken van de Vraag RSA en BouncyCastle zoals vermeld in dit [Installeren van AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Zorg ervoor u hebt toegevoegd - de bibliotheken van RSA en BouncyCastle van de Vraag zoals vermeld in dit [AEM Forms installeren](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Voorzorgsmaatregelen voor deze demo**
 >
 > * De code verwerkt geen op XFA gebaseerde PDF-documenten
-   >
-   > 
-* Alleen PDF-bestanden slepen en neerzetten
+>
+> * Alleen PDF-bestanden slepen en neerzetten
 >
 >
-
-
-
-
-
-
 

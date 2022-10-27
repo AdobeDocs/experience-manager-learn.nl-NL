@@ -8,7 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9270
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+exl-id: 13b9cd28-2797-4da9-a300-218e208cd21b
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 1%
@@ -70,5 +72,3 @@ De volgende CSS is gebruikt om de positie van **oog** pictogram in het wachtwoor
 * De clientbibliotheek importeren met de [interface van pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 * Het voorbeeldformulier importeren met het gereedschap [Forms en Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
-
-

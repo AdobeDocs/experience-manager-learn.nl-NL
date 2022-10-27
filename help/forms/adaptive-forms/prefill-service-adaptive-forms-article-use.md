@@ -1,24 +1,25 @@
 ---
 title: Prefill-service in adaptieve Forms
 description: Aangepaste formulieren vooraf invullen door gegevens op te halen uit achterwaartse gegevensbronnen.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
-
 
 # Prefill-service gebruiken in Adaptive Forms
 
 U kunt de velden van een adaptief formulier vooraf invullen met bestaande gegevens. Wanneer een gebruiker een formulier opent, worden de waarden voor die velden vooraf ingevuld. Er zijn meerdere manieren om aangepaste formuliervelden vooraf in te vullen. In dit artikel bekijken we het vooraf ingevulde adaptieve formulier met de AEM Forms Prefill-service.
 
-Als u meer wilt weten over verschillende methoden om aangepaste formulieren vooraf in te vullen, [volgt u deze documentatie](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Voor meer informatie over verschillende methoden om aangepaste formulieren vooraf in te vullen, [gelieve deze documentatie te volgen](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
 Als u een vooraf aangepast formulier wilt invullen met de Prefill-service, moet u een klasse maken die de DataProvider-interface implementeert. De methode getPrefillData zal de logica hebben om gegevens te bouwen en terug te keren die het adaptieve formulier zal verbruiken om de gebieden vooraf in te vullen. In deze methode kunt u de gegevens ophalen van elke bron en de invoerstream van het gegevensdocument retourneren. De volgende voorbeeldcode haalt de gebruikersprofielinformatie van de aangemelde gebruiker op en maakt een XML-document waarvan de invoerstream wordt geretourneerd voor gebruik door de adaptieve formulieren.
 
@@ -81,7 +82,7 @@ public class PrefillAdaptiveForm implements DataProvider {
 Voer het volgende uit om deze mogelijkheid op uw server te testen
 
 * [Download en extraheer de inhoud van het ZIP-bestand naar uw computer](assets/prefillservice.zip)
-* Zorg ervoor het het programma geopende [gebruikersprofiel](http://localhost:4502/libs/granite/security/content/useradmin) informatie volledig wordt ingevuld. Dit is een vereiste voor het voorbeeld. Het voorbeeld bevat geen foutcontrole voor ontbrekende eigenschappen van gebruikersprofielen.
+* Controleer of u zich hebt aangemeld [gebruikersprofiel](http://localhost:4502/libs/granite/security/content/useradmin) de informatie is volledig ingevuld. Dit is een vereiste voor het voorbeeld. Het voorbeeld bevat geen foutcontrole voor ontbrekende eigenschappen van gebruikersprofielen.
 * De bundel implementeren met de [AEM webconsole](http://localhost:4502/system/console/bundles)
 * Adaptief formulier maken met de XSD
 * &quot;Custom Aem Form Pre Fill Service&quot; koppelen als de vooraf ingevulde service voor uw adaptieve formulier
@@ -92,5 +93,4 @@ Voer het volgende uit om deze mogelijkheid op uw server te testen
 >
 >Als het adaptieve formulier is gebaseerd op XSD, moet u ervoor zorgen dat het XML-document dat door de Prefill-service wordt geretourneerd, overeenkomt met de XSD waarop het adaptieve formulier is gebaseerd.
 >
->Als het adaptieve formulier niet is gebaseerd op XSD, moet u de velden handmatig binden. Als u bijvoorbeeld een adaptief formulierveld bindt aan een naamelement in de XML-gegevens die u `/data/fname` gebruikt in de bindingsverwijzing van het adaptieve formulierveld.
-
+>Als het adaptieve formulier niet is gebaseerd op XSD, moet u de velden handmatig binden. U kunt bijvoorbeeld een adaptief formulierveld binden aan een naamelement in de XML-gegevens die u wilt gebruiken `/data/fname`  in de bindingsverwijzing van het adaptieve formulierveld.

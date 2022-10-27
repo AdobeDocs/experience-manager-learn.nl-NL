@@ -7,13 +7,14 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 8507
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
+last-substantial-update: 2021-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
-
 
 # Een door komma&#39;s gescheiden tekenreeks omzetten in een tekenreeksarray {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
@@ -21,13 +22,13 @@ Wanneer uw formulier is gebaseerd op een formuliergegevensmodel met een array va
 
 ## Een processtap maken
 
-Een processtap wordt gebruikt in een AEM werkstroom wanneer wij onze werkschema een bepaalde logica willen uitvoeren. De processtap kan met een manuscript ECMA of een dienst worden geassocieerd OSGi. Onze stap van het douaneproces zal de dienst OSGi uitvoeren
+Een processtap wordt gebruikt in een AEM werkstroom wanneer wij onze werkschema een bepaalde logica willen uitvoeren. De processtap kan met een manuscript ECMA of een dienst worden geassocieerd OSGi. Onze stap van het douaneproces voert de dienst OSGi uit.
 
 De ingediende gegevens hebben de volgende indeling. De waarde van het element businessUnits is een door komma&#39;s gescheiden tekenreeks, die moet worden omgezet in een array van tekenreeksen.
 
 ![ingediende gegevens](assets/submitted-data-string.png)
 
-De inputgegevens voor het rest eindpunt verbonden aan het model van vormgegevens verwachten een serie van koorden zoals aangetoond in dit het schermschot. De aangepaste code in de processtap zet de verzonden gegevens om in de juiste indeling.
+De inputgegevens voor het rest eindpunt verbonden aan het model van vormgegevens verwachten een serie van koorden zoals aangetoond in dit het schermschot. De douanecode in de processtap zet de voorgelegde gegevens in het correcte formaat om.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
@@ -140,4 +141,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-De voorbeeldbundel kan [hier worden gedownload](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+De voorbeeldbundel kan [hier gedownload](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)

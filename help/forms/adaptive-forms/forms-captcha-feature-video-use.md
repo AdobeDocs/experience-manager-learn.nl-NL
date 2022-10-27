@@ -7,7 +7,8 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 7e5dcc6e-fe56-49af-97e3-7dfaa9c8738f
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -42,12 +43,13 @@ Een CAPTCHA toevoegen en gebruiken met AEM Adaptive Forms.
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launch/felix/bundle20/data
 * Kopieer de HMAC- en master bestanden
+>
 Open de [felix-webconsole](http://localhost:4502/system/console/bundles) op uw publicatieexemplaar. Zoek naar com.adobe.granite.crypto.file bundle. De bundle-id noteren
 Navigeer naar de bundel-id in het bestandssysteem van uw publicatie-instantie
 * &lt;publish-aem-install-dir>/crx-quickstart/launch/felix/bundle20/data
 * Verwijder de bestaande HMAC- en master bestanden.
 * plak HMAC en master die dossiers van de auteursinstantie worden gekopieerd
-
+>
 Start AEM publicatieserver opnieuw
 
 ## Ondersteunende materialen {#supporting-materials}

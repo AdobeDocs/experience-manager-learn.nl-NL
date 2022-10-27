@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -71,9 +72,9 @@ public class ApplyUsageRights implements ReaderExtendPDF {
 
 ## servlet maken om de uitgebreide PDF van de lezer te streamen
 
-De volgende stap is een servlet met een methode van de POST te creëren om de lezer uitgebreide PDF aan de gebruiker terug te keren. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn of haar bestandssysteem. De reden hiervoor is dat de PDF wordt weergegeven als dynamische PDF en dat de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
+De volgende stap is een servlet met een methode van de POST te creëren om de lezer uitgebreide PDF aan de gebruiker terug te keren. In dit geval wordt de gebruiker gevraagd de PDF op te slaan in zijn bestandssysteem. De reden hiervoor is dat de PDF wordt weergegeven als dynamische PDF en dat de PDF-viewers die bij de browsers worden geleverd, geen dynamische PDF&#39;s verwerken.
 
-Hier volgt de code voor de servlet. De servlet wordt aangeroepen vanuit een aangepaste verzendactie van een adaptief formulier.
+Hier volgt de code voor de servlet. Het servlet-object wordt aangeroepen vanuit de aangepaste verzendactie van het adaptieve formulier.
 Servlet maakt een object UsageRights en stelt dit object in op basis van de waarden die de gebruiker heeft ingevoerd in het adaptieve formulier. servlet roept dan de applyUsageRights methode van de dienst die voor dit doel wordt gecreeerd.
 
 ```java

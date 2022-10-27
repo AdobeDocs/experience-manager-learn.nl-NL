@@ -1,17 +1,18 @@
 ---
 title: SetValue gebruiken in AEM Forms-workflow
 description: Waarde van element instellen in door Adaptive Forms ingediende gegevens in AEM Forms OSGI
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3919efee-6998-48e8-85d7-91b6943d23f9
+last-substantial-update: 2020-01-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
-
 
 # SetValue gebruiken in AEM Forms-workflow
 
@@ -38,18 +39,18 @@ Volg onderstaande stappen om de middelen op uw lokale systeem te implementeren:
 
 * [De gebruikersbundel DevelopingWithService implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Implementeer de monsterbundel](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden XML-gegevens kunt instellen
+* [De voorbeeldbundel implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden XML-gegevens kunt instellen
 
 * [De inhoud van het ZIP-bestand downloaden en uitpakken](assets/setvalueassets.zip)
-* Wijs uw browser aan [pakketmanager](http://localhost:4502/crx/packmgr/index.jsp)
+* Wijs uw browser aan [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 * Importeer en installeer de setValueWorkflow.zip. Dit heeft het model van het steekproefwerkschema.
-* Wijs uw browser aan [Forms en Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Wijs uw browser aan [Forms en Documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op Maken | Bestand uploaden
 * De tijdOfRequestForm.zip uploaden
-* Open [TimeOffRequest](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Open de [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Vul de 3 vereiste velden in en verzend
 * Meld u aan als &#39;admin&#39; in bij AEM (als u dat nog niet hebt gedaan)
-* Naar [&quot;AEM Inbox&quot;](http://localhost:4502/aem/inbox)
+* Ga naar [&quot;AEM Inbox&quot;](http://localhost:4502/aem/inbox)
 * Open het formulier &quot;Verzoek om een revisie op tijd uit&quot;
 * De velden in het eerste deelvenster zijn uitgeschakeld. De reden hiervoor is dat het formulier wordt geopend door de controleur. U ziet ook dat het deelvenster voor het goedkeuren of afwijzen van de aanvraag nu zichtbaar is
 

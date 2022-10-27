@@ -15,9 +15,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+last-substantial-update: 2019-07-11T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '645'
 ht-degree: 1%
 
 ---
@@ -66,7 +67,7 @@ Er is een nieuw tabblad (Lijst met elementen) toegevoegd aan de zoek- en listerc
 1. Overlay-knooppunt maken van **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. De overlaylocatie instellen op &quot;/apps&quot;
-1. Navigeer naar de nieuwe structuur die is gemaakt op **/apps/fd/fp/extensions/querybuilder/assettypes **
+1. Navigeer naar de nieuwe structuur die is gemaakt op `/apps/fd/fp/extensions/querybuilder/assettypes`
 
 1. Maak onder deze locatie een &#39;nt:unStructured&#39; knooppunt voor het type dat moet worden geregistreerd, geef het knooppunt een naam **mp4files. De volgende twee eigenschappen toevoegen aan dit knooppunt mp4files**
 

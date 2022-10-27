@@ -1,21 +1,22 @@
 ---
 title: Formuliergegevens opslaan en ophalen met bijlagen uit MySQL-database
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens met bijlagen
-feature: Adaptieve Forms
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6593
 thumbnail: 327122.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: b278652f-6c09-4abc-b92e-20bfaf2e791a
+last-substantial-update: 2020-11-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve formuliergegevens opslaan en ophalen met 2FA
 
@@ -25,7 +26,7 @@ In deze zelfstudie worden de stappen beschreven die nodig zijn voor het opslaan 
 
 * Maak een POST vraag aan een servlet. Deze servlet slaat de gegevens in het gegevensbestand en de vormgehechtheid in de bewaarplaats CRX op. De opgeslagen gegevens in het gegevensbestand worden geassocieerd met een GUID.
 
-* Wanneer u de Aangepaste Vorm met de opgeslagen gegevens wilt bevolken, wint u de gegevens verbonden aan GUID terug en bevolkt de Aanpassende Vorm gebruikend **request.setAttribute** methode.
+* Wanneer u het Adaptieve formulier wilt vullen met de opgeslagen gegevens, haalt u de gegevens die aan de GUID zijn gekoppeld op en vult u het Adaptieve formulier met het gereedschap **request.setAttribute** methode.
 
 ## Bewijs van de gebruikszaak
 

@@ -1,23 +1,24 @@
 ---
 title: Tabelcomponent gebruiken in AEM Forms Print Channel-document
-seo-title: Tabelcomponent gebruiken in AEM Forms Print Channel-document
+seo-title: Using Table Component in AEM Forms Print Channel Document
 description: In de volgende video worden de stappen doorlopen die zijn vereist om tabelcomponent te gebruiken in Interactieve communicatie voor documenten met afdrukkanalen.
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 54afd047-c6e6-4557-9336-39420f30df88
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
-
 
 # Tabelcomponent gebruiken in AEM Forms Print Channel-document {#using-table-component-in-aem-forms-print-channel-document}
 
@@ -46,10 +47,9 @@ Tabellen worden gebruikt om gegevens in tabelvorm weer te geven. De rijen in de 
    * Interactief communicatiedocument
    * sampleretirementaccountdata.json
 
-* Open het Interactieve Communicatie Document op [geef wijze ](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html) uit.
+* Open het interactieve communicatiedocument in [bewerkingsmodus](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
 * Voeg het de lay-outfragment TableDemo aan de bijdragesectie toe.
 * De tabelcellen binden aan de juiste formuliergegevensmodelelementen, zoals in de video wordt getoond
 
 * Geef een voorvertoning weer van het interactieve communicatiedocument met het voorbeeldgegevensbestand voor de JPEG-gegevens dat u ontvangt
-

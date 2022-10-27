@@ -8,9 +8,10 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
-source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
+last-substantial-update: 2022-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -48,7 +49,7 @@ De voorbeeldelementen die bij dit artikel worden geleverd, zijn onder andere:
    ![klikken op gebruikersprofiel](assets/snow-1.png)
 
 * Klik op Instantiewachtwoord beheren
-* De instantiedetails worden hieronder weergegeven
+* De details van de instantie worden hieronder weergegeven
    ![instantiedetails](assets/snow-3.png)
 
 ## Integratie testen

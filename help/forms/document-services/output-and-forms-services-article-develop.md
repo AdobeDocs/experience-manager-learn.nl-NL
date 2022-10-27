@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -60,7 +61,7 @@ Regel 6 voert xmlData uit het Dossier van PDF uit
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Zoeken naar het filter Verticale verwijzing
-1. Schakel het selectievakje Lege toestaan in. (Deze instelling is alleen bedoeld voor testdoeleinden) Er zijn verschillende manieren om de voorbeeldcode te testen. De snelste en eenvoudigste oplossing is het gebruik van de Postman-app. Met Postman kunt u POSTEN aanvragen bij de server. Installeer de Postman-app op uw systeem.
+1. Schakel het selectievakje Lege toestaan in. (Deze instelling is alleen bedoeld voor testdoeleinden) Er zijn verschillende manieren om de voorbeeldcode te testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POSTEN aanvragen bij uw server. Installeer de Postman-toepassing op uw systeem.
 Start de app en voer de volgende URL in om de API voor exportgegevens te testen
 
 Controleer of u &quot;POST&quot; hebt geselecteerd in de vervolgkeuzelijst http://localhost:4502/content/AemFormsSamples/exportdata.html Controleer of u &quot;Autorisatie&quot; opgeeft als &quot;Basisauth&quot;. Geef de gebruikersnaam en het wachtwoord voor AEM server op en ga naar het tabblad Body en geef de aanvraagparameters op zoals in de onderstaande afbeelding wordt getoond
@@ -76,7 +77,7 @@ De verpakking bevat 3 monsters. De volgende paragrafen verklaren wanneer om de o
 * **Parameters aanvragen -**
 
    * **xdp_or_pdf_file** : Het xdp- of pdf-bestand waarmee u gegevens wilt samenvoegen
-   * **xmlfile**: Het XML-gegevensbestand dat wordt samengevoegd met xdp_or_pdf_file
+   * **xmlfile**: Het XML-gegevensbestand dat is samengevoegd met het bestand xdp_or_pdf_file
    * **saveLocation**: De locatie waar het gerenderde document moet worden opgeslagen op uw bestandssysteem. Bijvoorbeeld c:\\documents\\sample.pdf
 
 ### Gegevens importeren in PDF-bestand
@@ -87,10 +88,10 @@ De verpakking bevat 3 monsters. De volgende paragrafen verklaren wanneer om de o
 
    * **pdffile** : Het PDF-bestand waarmee u gegevens wilt samenvoegen
    * **xmlfile**: Het XML-gegevensbestand dat wordt samengevoegd met het PDF-bestand
-   * **saveLocation**: De locatie waar het gerenderde document moet worden opgeslagen op uw bestandssysteem. Bijvoorbeeld c:\\outputsample.pdf.
+   * **saveLocation**: De locatie waar het gerenderde document moet worden opgeslagen op uw bestandssysteem. Bijvoorbeeld `c:\\outputsample.pdf`.
 
 **Gegevens exporteren uit PDF-bestand**
-* FormsService gebruiken om gegevens uit PDF File te exporteren
+* FormsService gebruiken om gegevens uit het PDF-bestand te exporteren
 * **POST UR** L - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Parameters aanvragen:**
 

@@ -1,24 +1,25 @@
 ---
 title: Interactief communicatiedocument genereren voor afdrukkanaal met behulp van controlemap
-seo-title: Interactief communicatiedocument genereren voor afdrukkanaal met behulp van controlemap
+seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
 description: Gecontroleerde map gebruiken om kanaaldocumenten voor afdrukken te genereren
-seo-description: Gecontroleerde map gebruiken om kanaaldocumenten voor afdrukken te genereren
-feature: Interactieve communicatie
+seo-description: Use watched folder to generate print channel documents
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
-
 
 # Interactief communicatiedocument genereren voor afdrukkanaal met behulp van controlemap
 
@@ -112,9 +113,9 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Volg de onderstaande instructies om dit op uw lokale systeem te testen:**
 
-* Setup Tomcat zoals beschreven in dit [artikel.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat heeft het oorlogsdossier dat de steekproefgegevens produceert.
-* Stel de service ook systeemgebruiker in zoals beschreven in dit [artikel](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop heeft. Om de toestemmingslogin aan [gebruiker te geven admin](https://localhost:4502/useradmin) en naar de &quot;gegevens&quot;van de systeemgebruiker te zoeken en de leestoestemmingen op de volgende knoop te geven door aan het toestemmingenlusje te lusjes
+* Setup Tomcat zoals beschreven in deze [artikel.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat heeft het oorlogsdossier dat de steekproefgegevens produceert.
+* Service aka-systeemgebruiker instellen zoals beschreven in deze [artikel](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop heeft. Aanmelden voor machtigingen [gebruikersbeheerder](https://localhost:4502/useradmin) en zoek naar &quot;gegevens&quot; van de systeemgebruiker en geef de leesmachtigingen voor het volgende knooppunt door op het tabblad Machtigingen te klikken
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
@@ -145,11 +146,10 @@ Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop he
 
 * Zet de accountnumbers.xml neer in de map C:\RenderPrintChannel\input folder.
 
-* De gegenereerde PDF-bestanden worden naar de saveLocation geschreven, zoals in het ecma-script is opgegeven.
+* De gegenereerde PDF-bestanden worden naar saveLocation geschreven, zoals in het ecma-script is opgegeven.
 
 >[!NOTE]
 >
 >Als u dit wilt gebruiken op een ander besturingssysteem dan Windows, navigeert u naar
 >
 >/etc/fd/watchfolder /config/PrintChannelDocument en verander de folderPath volgens uw voorkeur
-
