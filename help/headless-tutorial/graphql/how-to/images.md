@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 129dedd4cd6973d5d576bed5f714ce62152923de
+source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
@@ -116,24 +116,24 @@ AEM Assets-beheerders definiëren de aangepaste uitvoeringen met behulp van Prof
 
 #### Profielen verwerken
 
-Specificaties voor de uitvoering van elementen worden gedefinieerd in [Profielen verwerken](../../../assets/configuring//processing-profiles.md) door AEM Assets-beheerders.
+Specificaties voor de uitvoering van elementen worden gedefinieerd in [Profielen verwerken](../../../assets/configuring/processing-profiles.md) door AEM Assets-beheerders.
 
 Maak een verwerkingsprofiel of werk een verwerkingsprofiel bij en voeg renderdefinities toe voor de afbeeldingsformaten die vereist zijn voor de toepassing zonder kop. Uitvoeringen kunnen een willekeurige naam hebben, maar moeten een semantische naam hebben.
 
-![AEM geoptimaliseerde uitvoeringen zonder koptekst](./assets/images/processing-profiles.jpg)
+![AEM geoptimaliseerde uitvoeringen zonder koptekst](./assets/images/processing-profiles.png)
 
 In dit voorbeeld worden drie uitvoeringen gemaakt:
 
 | Naam van vertoning | Extensie | Max. breedte |
-|----------------|:---------:|----------:|
-| groot | jpeg | 1200 px |
-| medium | jpeg | 900 px |
-| klein | jpeg | 600 px |
+|-----------------------|:---------:|----------:|
+| web-optimized-large | webben | 1200 px |
+| web-optimized-medium | webben | 900 px |
+| web-optimized-small | webben | 600 px |
 
 De kenmerken die in de bovenstaande tabel worden genoemd, zijn belangrijk:
 
 + __Naam van vertoning__ wordt gebruikt om de vertoning aan te vragen.
-+ __Extensie__ is de extensie die wordt gebruikt om de __naam van vertoning__.
++ __Extensie__ is de extensie die wordt gebruikt om de __naam van vertoning__. Voorkeur `webp` uitvoeringen zoals deze zijn geoptimaliseerd voor weergave op het web.
 + __Max. breedte__ wordt gebruikt om de ontwikkelaar te informeren welke vertoning moet worden gebruikt op basis van het gebruik ervan in de headless toepassing.
 
 De definities van de vertoning hangen van de behoeften van uw toepassing zonder kop af, zodat zorg ervoor om de optimale vertoning te bepalen die voor uw gebruiksgeval wordt geplaatst en semantisch over hoe zij worden gebruikt genoemd.
@@ -152,7 +152,7 @@ Als het verwerkingsprofiel is gemaakt (of bijgewerkt), verwerkt u de elementen o
 
 Uitvoeringen kunnen worden gevalideerd door [de weergave Uitvoeringen van een element openen](../../../assets/authoring/renditions.md)en selecteert u de nieuwe uitvoeringen die u wilt voorvertonen in de renditions rail. Als de uitvoeringen ontbreken, [ervoor zorgen dat de elementen worden verwerkt met behulp van het verwerkingsprofiel](#reprocess-assets).
 
-![Uitvoeringen bekijken](./assets/images/review-renditions.jpg)
+![Uitvoeringen bekijken](./assets/images/review-renditions.png)
 
 #### Elementen publiceren
 
@@ -164,9 +164,9 @@ Uitvoeringen zijn rechtstreeks toegankelijk door het toevoegen van de __vertonin
 
 | Element-URL | Subpad van uitvoeringen | Naam van vertoning | Vertoningsextensie |  | URL van vertoning |
 |-----------|:------------------:|:--------------:|--------------------:|:--:|---|
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | groot | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/large.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | medium | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/medium.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | klein | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/small.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-optimized-large | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-large.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-optimized-medium | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-medium.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-optimized-small | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-small.webp |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -176,7 +176,7 @@ AEM GraphQL vereist wel extra syntaxis voor het aanvragen van afbeeldingsuitvoer
 
 ### Voorbeeld Reageren
 
-Laten we een eenvoudige React-toepassing maken die drie uitvoeringen, klein, gemiddeld en groot, van één afbeeldingselement weergeeft.
+Laten we een eenvoudige React-toepassing maken die drie uitvoeringen van één afbeelding weergeeft, web-geoptimaliseerd-klein, web-geoptimaliseerd-medium en web-geoptimaliseerd-groot.
 
 ![Uitvoeringen afbeeldingselementen Reageren, voorbeeld](./assets/images/react-example-renditions.jpg)
 
@@ -216,7 +216,7 @@ export default function Image({ assetUrl, renditionName, renditionExtension, alt
 
 #### Definieer de `App.js`{#app-js}
 
-Eenvoudig `App.js` vraagt AEM voor een beeld van het Avontuur, en toont dan de drie vertoningen van dat beeld: klein, middelgroot en groot.
+Eenvoudig `App.js` vraagt AEM voor een beeld van het Avontuur, en toont dan de drie vertoningen van dat beeld: web-optimized-small, web-optimized-medium, en web-optimized-large.
 
 Het vragen tegen AEM wordt uitgevoerd in de haak van de douane React [useAdventureByPath die de AEM Headless SDK gebruikt](./aem-headless-sdk.md#graphql-persisted-queries).
 
@@ -242,33 +242,33 @@ function App() {
     <div className="app">
       
       <h2>Small rendition</h2>
-      {/* Render the small rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-small rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="small"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-small"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Medium rendition</h2>
-      {/* Render the medium rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-medium rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="medium"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-medium"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Large rendition</h2>
-      {/* Render the large rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-large rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="large"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-large"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
     </div>
