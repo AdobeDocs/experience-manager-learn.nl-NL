@@ -11,9 +11,9 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 7c246c4f1af9dfe599485f68508c66fe29d2f0b6
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Werk volledig-stapel AEM project bij om front-end pijpleiding te gebruiken {#update-project-enable-frontend-pipeline}
 
-In dit hoofdstuk, maken wij config veranderingen in __WKND-siteproject__ om de front-end pijpleiding te gebruiken om JavaScript en CSS op te stellen, eerder dan het vereisen van een volledige stapelpijpleiding uitvoering. Hierdoor wordt de ontwikkelings- en implementatiefase van front-end en back-end artefacten losgekoppeld, waardoor een sneller, herhalend ontwikkelingsproces in het algemeen mogelijk wordt.
+In dit hoofdstuk, maken wij config veranderingen in __WKND-siteproject__ om de front-end pijpleiding te gebruiken om JavaScript en CSS op te stellen, eerder dan het vereisen van een volledige stapelpijpleiding uitvoering. Dit ontkoppelt de ontwikkeling en plaatsingslevenscyclus van front-end en back-end artefacten, die voor een sneller, iteratief ontwikkelingsproces over het algemeen toestaan.
 
 ## Doelstellingen {#objectives}
 
@@ -77,7 +77,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
 
 1. De `ui.frontend` module voor het front-end pijpleidingscontract door twee nieuwe webpack configuratiedossiers toe te voegen.
 
-   * Bestaande kopiëren `webpack.common.js` als `webpack.theme.common.js`, wijzigen `output` eigendom en `MiniCssExtractPlugin`, `CopyWebpackPlugin` config-parameters voor insteekmodule, zoals hieronder:
+   * Bestaande kopiëren `webpack.common.js` als `webpack.theme.common.js`en wijzigen `output` eigendom en `MiniCssExtractPlugin`, `CopyWebpackPlugin` config-parameters voor insteekmodule, zoals hieronder:
 
    ```javascript
    ...
@@ -89,7 +89,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
    
    ...
        new MiniCssExtractPlugin({
-               filename: 'clientlib-[name]/[name].css'
+               filename: 'theme/[name].css'
            }),
        new CopyWebpackPlugin({
            patterns: [
@@ -134,7 +134,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
 
 1. De `ui.content` module voor de front-end pijpleiding door twee Sling toe te voegen vormt.
 
-   * Een nieuw bestand maken op `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` - dit omvat alle front-end bestanden die `ui.frontend` module genereert onder de `dist` map met gebruik van webpack-constructieproces.
+   * Een bestand maken op `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` - dit omvat alle front-end bestanden die `ui.frontend` module genereert onder de `dist` map met gebruik van webpack-constructieproces.
 
    ```xml
    ...
@@ -157,7 +157,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
 
    >[!TIP]
    >
-   >    Zie, de volledige [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) in de __AEM WKND-siteproject__.
+   >    De volledige versie bekijken [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) in de __AEM WKND-siteproject__.
 
 
    * Tweede `com.adobe.aem.wcm.site.manager.config.SiteConfig` met de `themePackageName` waarde gelijk aan `package.json` en `name` eigenschapswaarde en `siteTemplatePath` die verwijzen naar een `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` stub path value.
@@ -191,6 +191,14 @@ Ten slotte moet u deze wijzigingen doorvoeren in de Adobe git-opslagplaats van u
 >
 > Deze veranderingen zijn beschikbaar op GitHub binnen [__front-end pijpleiding__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) tak van de __AEM WKND-siteproject__.
 
+
+## Voorzichtigheid - _Vooruiteinde pijplijn inschakelen_ knop
+
+De [Spoorwegkiezer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) s [Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) geeft de optie **Vooruiteinde pijplijn inschakelen** als u de hoofdmap of sitepagina van uw site selecteert. Klikken **Vooruiteinde pijplijn inschakelen** De knop overschrijft het bovenstaande **Sling-configuraties**, zorg ervoor **u klikt niet** deze knop na het implementeren van de bovenstaande wijzigingen via de pijpleiding van Cloud Manager.
+
+![Knop Pijl-vooruiteinde inschakelen](assets/enable-front-end-Pipeline-button.png)
+
+Als er per ongeluk op wordt geklikt, moet u de pijpleidingen opnieuw uitvoeren om ervoor te zorgen dat het frontend pijpleidingscontract en de veranderingen worden hersteld.
 
 ## Gefeliciteerd! {#congratulations}
 
