@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 exl-id: 0260d4b6-8615-4d78-a920-b36766a0f8e9
 last-substantial-update: 2021-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Inleiding
 
-Of u nu een hypotheek aanvraagt of een nieuwe bankrekening opent, u moet meerdere formulieren invullen en ondertekenen. Dankzij de integratie tussen AEM Forms en Adobe Sign kunt u gemakkelijk meerdere formulieren invullen en ondertekenen.
+Of u nu een hypotheek aanvraagt of een nieuwe bankrekening opent, u moet meerdere formulieren invullen en ondertekenen. Dankzij de integratie tussen AEM Forms en Acrobat Sign kunt u gemakkelijk meerdere formulieren invullen en ondertekenen.
 In de volgende video wordt uitgelegd hoe u meerdere formulieren kunt ondertekenen met het gebruik van hoofdletters en kleine letters.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330165?quality=9&learn=on)
@@ -28,7 +28,7 @@ In de volgende video wordt uitgelegd hoe u meerdere formulieren kunt ondertekene
 Deze cursus gaat uit van het volgende:
 
 * U hebt toegang tot AEM 6.4- of 6.5-server met Forms Add on-package geïnstalleerd en geconfigureerd
-* AEM geconfigureerd met Adobe Sign
+* AEM geconfigureerd met Acrobat Sign
 * Toegang tot SMTP-server
 * Enige ervaring met AEM/AEM Forms
 

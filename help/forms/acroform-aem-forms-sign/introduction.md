@@ -1,13 +1,13 @@
 ---
 title: Transformaties met AEM Forms
-description: Een zelfstudie die door het maken van een adaptief formulier met Acroform loopt en de gegevens samenvoegt om een PDF te verkrijgen. De PDF met de samengevoegde gegevens kunnen vervolgens worden verzonden voor ondertekening met behulp van Adobe Sign.
+description: Een zelfstudie die door het maken van een adaptief formulier met Acroform loopt en de gegevens samenvoegt om een PDF te verkrijgen. De PDF met de samengevoegde gegevens kunnen vervolgens worden verzonden voor ondertekening met behulp van Acrobat Sign.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Adaptieve Forms maken van Acrobat-formulieren
 
-Organisaties hebben een grote verscheidenheid aan formulieren. Sommige van deze formulieren worden gemaakt in Microsoft Word en omgezet in PDF. Deze formulieren kunnen standaard niet worden ingevuld met Adobe Reader of Acrobat. Om deze formulieren invulbaar te maken met Acrobat of Reader, moeten we deze formulieren omzetten in Acroform. Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. Dit artikel doorloopt het maken van een adaptief formulier van Acrobat en het samenvoegen van de gegevens in Acroform om de PDF te verkrijgen. De PDF met de samengevoegde gegevens kunnen ook worden verzonden voor ondertekening met behulp van Adobe Sign.
+Organisaties hebben een grote verscheidenheid aan formulieren. Sommige van deze formulieren worden gemaakt in Microsoft Word en omgezet in PDF. Deze formulieren kunnen standaard niet worden ingevuld met Adobe Reader of Acrobat. Om deze formulieren invulbaar te maken met Acrobat of Reader, moeten we deze formulieren omzetten in Acroform. Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. Dit artikel doorloopt het maken van een adaptief formulier van Acrobat en het samenvoegen van de gegevens in Acroform om de PDF te verkrijgen. De PDF met de samengevoegde gegevens kunnen ook worden verzonden voor ondertekening met behulp van Acrobat Sign.
 
 >[!NOTE]
 >

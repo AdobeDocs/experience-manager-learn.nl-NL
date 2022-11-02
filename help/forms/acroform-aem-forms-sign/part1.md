@@ -8,7 +8,7 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -29,13 +29,13 @@ Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. U kunt een geheel
 
 >[!NOTE]
 >
->Als u het invulbare formulier voor ondertekening met Adobe Sign wilt verzenden, moet u de velden een overeenkomstige naam geven. U kunt bijvoorbeeld een veld een naam geven **S_ijl_:signer1:handtekening**. Dit is de syntaxis die Adobe Sign begrijpt.
+>Als u het invulbare formulier voor ondertekening met Acrobat Sign wilt verzenden, moet u de velden een overeenkomstige naam geven. U kunt bijvoorbeeld een veld een naam geven **S_ijl_:signer1:handtekening**. Dit is de syntaxis die Acrobat Sign begrijpt.
 
 >[!NOTE]
 >
->Als u een XFA-document verzendt, moet u het document afvlakken en moeten de Adobe Sign-handtekeningcodes aanwezig zijn als statische tekst in het document.
+>Als u een XFA-document verzendt, moet u het document afvlakken en moeten de Acrobat Sign-handtekeningcodes aanwezig zijn als statische tekst in het document.
 
-[Adobe Sign Text Tags Document](https://helpx.adobe.com/sign/using/text-tag.html)
+[Acrobat Sign Text Tags Document](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >

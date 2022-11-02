@@ -6,7 +6,7 @@ topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '3460'
 ht-degree: 1%
@@ -1051,8 +1051,8 @@ Hieronder ziet u een matrix met belangrijke AEM Forms Add-on-functies die AEM bi
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Adobe Sign-integratie</a>:</strong>
-            Implementatie van op Adobe Sign gebaseerde ondertekeningsscenario's voor geïntegreerde formulieren toestaan.</td>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Acrobat Sign-integratie</a>:</strong>
+            Implementatie van op Acrobat Sign gebaseerde ondertekeningsscenario's voor geïntegreerde formulieren toestaan.</td>
             <td> </td>
             <td> </td>
             <td> </td>

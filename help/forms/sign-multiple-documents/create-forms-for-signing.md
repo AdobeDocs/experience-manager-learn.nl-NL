@@ -9,7 +9,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +22,7 @@ De volgende stap bestaat uit het maken van de aangepaste formulieren die u in he
 
 * Zorg ervoor dat de formulieren zijn gebaseerd op de **SignMultipleForms** sjabloon. Op deze manier zorgt u ervoor dat de formulieren vooraf worden ingevuld met de gegevens die uit de database worden opgehaald.
 
-* De formulieren moeten zijn geconfigureerd voor het gebruik van Adobe Sign en het veld signer1 moet zijn gekoppeld aan het veld Customer Email.
+* De formulieren moeten zijn geconfigureerd voor het gebruik van Acrobat Sign en het veld signer1 moet zijn gekoppeld aan het veld Customer Email.
 * De formulieren moeten ook worden gekoppeld aan clientLib die **getnextform**
 * De formulieren moeten de component Signature Step gebruiken.
 * Het formulier moet ook de aangepaste **Meerdere formulieren ondertekenen** component. Met deze component kunt u naar het volgende formulier navigeren om u aan te melden bij het pakket.

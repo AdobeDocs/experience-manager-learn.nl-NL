@@ -4,7 +4,7 @@ description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ont
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%
@@ -140,7 +140,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     </div>
     <p>
-    <em>Huurovereenkomst tussen huurder en verhuurder ingevuld en ondertekend door AEM Forms en Adobe Sign</em>
+    <em>Huurovereenkomst tussen huurder en verhuurder ingevuld en ondertekend door AEM Forms en Acrobat Sign</em>
     <p>
   </td>
   <td>
@@ -153,7 +153,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     </div>
     <p>
-    <em>NDA dynamisch maken en verzenden voor ondertekening met Adobe Sign</em>
+    <em>NDA dynamisch maken en verzenden voor ondertekening met Acrobat Sign</em>
     </p>
   </td>
   <td>
@@ -166,7 +166,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
       </a>
     </div>
     <p>
-    <em>Meerdere documenten naadloos ondertekenen met Forms en Adobe Sign</em>
+    <em>Meerdere documenten naadloos ondertekenen met Forms en Acrobat Sign</em>
     <p>
   </td>
 </tr>

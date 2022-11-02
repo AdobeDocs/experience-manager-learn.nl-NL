@@ -1,24 +1,24 @@
 ---
 title: Geconverteerd adaptief formulier configureren
 description: Geconverteerd adaptief formulier configureren
-feature: Adaptieve Forms
+feature: Adaptive Forms
 thumbnail: 39574.jpg
 kt: 6126
-topic: Ontwikkeling
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fba18118-0431-4edd-a5a6-0281e8c12979
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 1%
+source-wordcount: '74'
+ht-degree: 0%
 
 ---
 
 # Geconverteerd adaptief formulier configureren
 
-Nadat u het PDF-formulier hebt geconverteerd naar een adaptief formulier, moet u gewoonlijk enkele betekenisvolle titels maken en moet u mogelijk ook een aantal velden opnieuw rangschikken. Het formulier moet ook worden geconfigureerd om Adobe Sign-integratie te gebruiken voor ondertekeningservaring.
+Nadat u het PDF-formulier hebt geconverteerd naar een adaptief formulier, moet u gewoonlijk enkele betekenisvolle titels maken en moet u mogelijk ook een aantal velden opnieuw rangschikken. Het formulier moet ook worden geconfigureerd om Acrobat Sign-integratie te gebruiken voor ondertekeningservaring.
 
 In de volgende video worden de stappen uitgelegd die nodig zijn om het formulier te configureren voor het uitvoeren van een ondertekeningservaring
 
 >[!VIDEO](https://video.tv.adobe.com/v/39574/?quality=9&learn=on)
-

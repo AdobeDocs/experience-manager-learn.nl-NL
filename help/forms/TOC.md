@@ -7,7 +7,7 @@ breadcrumb-title: AEM Forms Tutorials
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 0%
@@ -136,11 +136,11 @@ ht-degree: 0%
 + HTML5 Forms{#html5-forms}
    + [HTML5-formulier maken](html5-forms/create-html5-form.md)
    + [HTML5-formulierverzending verwerken](html5-forms/handle-html5-form-submission.md)
-+ AEM Forms en Adobe Sign{#forms-and-sign}
++ AEM Forms en Acrobat Sign{#forms-and-sign}
    + [Inleiding](aem-forms-and-adobe-sign/introduction.md)
    + [SSL instellen](aem-forms-and-adobe-sign/set-up-ssl.md)
-   + [Adobe Sign API-toepassing maken](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
-   + [Adobe Sign Cloud-configuratie maken](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
+   + [Acrobat Sign API-toepassing maken](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
+   + [Acrobat Sign Cloud-configuratie maken](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
    + [Workflow maken om document te verzenden voor ondertekening](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
    + [Adaptief formulier maken en configureren](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Adaptief formulier configureren voor één ondertekenaar](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
@@ -148,7 +148,7 @@ ht-degree: 0%
    + [Automatede form conversion-service configureren](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [PDF-formulier converteren naar adaptief formulier](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
-   + [XDP-sjablonen gebruiken met Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
+   + [XDP-sjablonen gebruiken met Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Meerdere Forms ondertekenen{#sign-multiple-documents}
    + [Inleiding](sign-multiple-documents/introduction.md)
    + [Gegevensbron configureren](sign-multiple-documents/configure-data-source.md)
