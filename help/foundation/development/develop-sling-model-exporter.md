@@ -2,7 +2,7 @@
 title: Exporteurs van verkoopmodellen ontwikkelen in AEM
 description: Deze technische wandeling door het instellen van AEM voor gebruik met Sling Model Exporter, het verbeteren van een bestaand Sling Model met behulp van het Exporter-framework voor uitvoering als JSON, en hoe u Exporter-opties en Jackson-annotaties gebruikt om de uitvoer verder aan te passen.
 version: 6.4, 6.5
-sub-product: foundation, content-services
+sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 topics: content-delivery, development, headless
 activity: develop
@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

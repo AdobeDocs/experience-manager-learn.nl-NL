@@ -2,7 +2,7 @@
 title: Werken met het delen van bronnen tussen verschillende bronnen (CORS) met AEM
 description: Met CORS (Cross-Origin Resource Sharing) van Adobe Experience Manager kunnen niet-AEM wegeigenschappen client-side aanroepen maken naar AEM, zowel geverifieerd als niet geverifieerd, om inhoud op te halen of rechtstreeks met AEM te communiceren.
 version: 6.4, 6.5
-sub-product: foundation, content-services, sites
+sub-product: Experience Manager, Experience Manager Sites
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
@@ -11,9 +11,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 41be8c934bba16857d503398b5c7e327acd8d20b
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,9 @@ Een beleid wordt geselecteerd door te vergelijken
 * `Allowed Origin` met de `Origin` aanvraagkoptekst
 * en `Allowed Paths` met het aanvraagpad.
 
-Het eerste beleid dat aan deze waarden voldoet, wordt gebruikt. Als er geen wordt gevonden, worden alle [!DNL CORS] aanvraag wordt afgewezen.
+Het eerste beleid dat deze waarden afstemt, wordt gebruikt. Als er geen wordt gevonden, worden alle [!DNL CORS] verzoek wordt afgewezen.
 
-Als geen beleid bij allen wordt gevormd, [!DNL CORS] verzoeken zullen ook niet worden beantwoord aangezien de manager zal onbruikbaar worden gemaakt en aldus effectief - zolang geen andere module van de server antwoordt aan [!DNL CORS].
+Als geen beleid bij allen wordt gevormd, [!DNL CORS] verzoeken zullen ook niet worden beantwoord aangezien de manager onbruikbaar wordt gemaakt en zo effectief ontkend - zolang geen andere module van de server aan antwoordt [!DNL CORS].
 
 ### Beleidseigenschappen
 
@@ -155,7 +155,7 @@ Als u het in cache plaatsen van CORS-headers wilt toestaan, voegt u de volgende 
 
 Herinneren aan **de webservertoepassing opnieuw starten** na het aanbrengen van wijzigingen in de `dispatcher.any` bestand.
 
-Waarschijnlijk wordt het cachegeheugen volledig gewist om ervoor te zorgen dat de koppen op de juiste wijze in het cachegeheugen worden opgeslagen op het volgende verzoek na een `/cache/headers` configuratie bijwerken.
+Waarschijnlijk wordt de cache volledig gewist om ervoor te zorgen dat de koppen op de juiste wijze in de cache worden geplaatst na een `/cache/headers` configuratie bijwerken.
 
 ## Problemen met CORS oplossen
 

@@ -2,7 +2,6 @@
 title: Zelfstudie over best practices voor Dynamic Media Classic
 description: Dynamic Media Classic is het knooppunt waar klanten veelzijdige media-inhoud kunnen maken, schrijven en leveren. Deze zelfstudie over best practices is gemaakt om huidige en nieuwe gebruikers van Dynamic Media Classic te helpen beter te begrijpen wat ze kunnen doen met deze krachtige, rijke mediaoplossing van Adobe. In dit gedeelte van de zelfstudie leert u wat Dynamic Media Classic is en bekijkt u de kernmogelijkheden en gebruikersinterface van.
 doc-type: tutorial
-topics: best-practices, development, authoring, configuring
 audience: all
 activity: develop, use
 feature: Dynamic Media Classic
@@ -10,7 +9,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%

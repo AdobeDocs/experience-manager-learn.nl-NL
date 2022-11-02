@@ -1,19 +1,17 @@
 ---
 title: Aan de slag met AEM en Adobe Target
-seo-title: Aan de slag met AEM en Adobe Target
 description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager en Adobe Target. In deze zelfstudie leert u ook over verschillende personen die betrokken zijn bij het proces van het begin tot het einde en hoe zij met elkaar samenwerken
-seo-description: Een end-to-end zelfstudie waarin wordt getoond hoe u persoonlijke ervaringen kunt creëren en leveren met Adobe Experience Manager en Adobe Target. In deze zelfstudie leert u ook over verschillende personen die betrokken zijn bij het proces van het begin tot het einde en hoe zij met elkaar samenwerken
-feature: Ervaringsfragmenten
-topic: Personalisatie
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met AEM en Adobe Target {#getting-started-with-aem-target}
 
@@ -27,16 +25,16 @@ In deze zelfstudie behandelen wij drie verschillende scenario&#39;s voor AEM en 
 
 ## Personalisatie met AEM Experience Fragments {#personalization-using-aem-experience-fragment}
 
-Voor dit scenario zullen wij AEM en Doel gebruiken. Het is duidelijk dat beide producten hun eigen sterke punten hebben en wanneer het gaat om het bieden van gepersonaliseerde ervaringen aan de gebruikers van uw site, hebt u **gepersonaliseerde inhoud (inhoud van AEM)** en een **intelligente manier (Doel)** nodig om deze inhoud te dienen op basis van een specifieke gebruiker.
+Voor dit scenario zullen wij AEM en Doel gebruiken. Het is duidelijk dat beide producten hun eigen sterke punten hebben en dat wanneer het gaat om het bieden van persoonlijke ervaringen aan gebruikers van uw site, u **persoonlijke inhoud (inhoud van AEM)** en **intelligente manier (Doel)** om deze inhoud te leveren op basis van een specifieke gebruiker.
 
-AEM helpt u persoonlijke inhoud te maken, waarbij al uw inhoud en middelen op een centrale locatie worden samengebracht om uw strategie voor personalisatie te voeden. Met AEM kunt u eenvoudig inhoud voor desktops, tablets en mobiele apparaten op één locatie maken zonder dat u code hoeft te schrijven. Het is niet nodig om pagina&#39;s te maken voor elk apparaat. AEM past automatisch elke ervaring aan met uw inhoud. U kunt de inhoud ook van AEM naar Adobe Target exporteren als aanbiedingen met een druk op een knop.
+AEM helpt u persoonlijke inhoud te maken, waarbij al uw inhoud en middelen op een centrale locatie worden samengebracht om uw strategie voor personalisatie te voeden. Met AEM kunt u eenvoudig inhoud voor desktops, tablets en mobiele apparaten op één locatie maken zonder dat u code hoeft te schrijven. Het is niet nodig om pagina&#39;s te maken voor elk apparaat—AEM past automatisch elke ervaring aan met uw inhoud. U kunt de inhoud ook van AEM naar Adobe Target exporteren als aanbiedingen met een druk op een knop.
 
 We hebben nu persoonlijke inhoud in de vorm van voorstellen van AEM in Target. Met Doel kunt u deze aanbiedingen op schaal aanbieden op basis van een combinatie van op regels gebaseerde en door AI gestuurde methoden voor het leren van machines die gedrags-, context- en offlinevariabelen bevatten.  Met Doel kunt u eenvoudig A/B- en MVT-activiteiten (Multivariate) instellen en uitvoeren om de beste aanbiedingen, inhoud en ervaringen te bepalen.
 
-**De** fragmenten van de ervaring vormen een enorme stap voorwaarts om de inhoud/ervaring creators aan de verpersoonlijkingsberoeps te verbinden die bedrijfsresultaten gebruikend Doel drijven.
+**Ervaar fragmenten** Een enorme stap voorwaarts om de creators van de inhoud/ervaring aan de verpersoonlijkingsberoeps te verbinden die bedrijfsresultaten gebruikend Doel drijven.
 
 * AEM auteurs van inhoudeditors gepersonaliseerde inhoud als Fragmenten van de Ervaring en zijn variaties
-* AEM exporteert Experience Fragment HTML naar Doel &#x200B;
+* AEM exporteert ervaringsfragment HTML naar doel &#x200B;
 * Het doel &#x200B; gebruikt AEM de prijsverhoging van het Fragment van de Ervaring als Aanbiedingen in Activiteiten
 * Doel levert Experience Fragment HTML, AEM levert afbeeldingen waarnaar wordt verwezen
 
@@ -47,13 +45,13 @@ We hebben nu persoonlijke inhoud in de vorm van voorstellen van AEM in Target. M
 * [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM en Adobe Target met behulp van verouderde Cloud Services](./implementation.md#integrating-aem-target-options)
 
-***Na het uitvoeren van de bovengenoemde integraties, laat het  [scenario in detail](./personalization-use-case-1.md) onderzoeken.***
+***Na de implementatie van de bovenstaande integratie, kunt u de [scenario in detail](./personalization-use-case-1.md).***
 
 ## Personalisatie met behulp van Visual Experience Composer
 
 Marketers kunnen snel wijzigingen aanbrengen op hun website zonder code te wijzigen voor het uitvoeren van een test met Adobe Target Visual Experience Composer (VEC). VEC is WYSIWYG (wat u ziet is wat u krijgt) gebruikersinterface die u gemakkelijk gepersonaliseerde ervaringen en Aanbiedingen in de plaatsomgeving creeert en test. U kunt ervaringen en aanbiedingen voor doelactiviteiten maken door de lay-out en inhoud van een webpagina (of aanbieding) of mobiele webpagina te slepen en neer te zetten, te wisselen en te wijzigen.
 
-VEC is een van de belangrijkste kenmerken van Adobe Target. Met VEC kunnen marketers en ontwerpers inhoud maken en wijzigen via een visuele interface. Veel ontwerpkeuzes kunnen worden gemaakt zonder dat de code rechtstreeks moet worden bewerkt. Het bewerken van HTML en JavaScript is ook mogelijk met behulp van de bewerkingsopties die beschikbaar zijn in de composer.
+VEC is een van de belangrijkste kenmerken van Adobe Target. Met VEC kunnen marketers en ontwerpers inhoud maken en wijzigen via een visuele interface. Veel ontwerpkeuzes kunnen worden gemaakt zonder dat de code rechtstreeks moet worden bewerkt. U kunt HTML en JavaScript ook bewerken met de bewerkingsopties in de composer.
 
 * Inhoud bevindt zich in AEM en inhoudeditors maken en beheren de sitepagina&#39;s
 * Doel gebruikt AEM gehoste sitepagina&#39;s om tests en personalisatie uit te voeren
@@ -67,7 +65,7 @@ VEC is een van de belangrijkste kenmerken van Adobe Target. Met VEC kunnen marke
 
 * [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Na het uitvoeren van de bovengenoemde integratie, laat het  [scenario in detail onderzoeken.](./personalization-use-case-3.md)***
+***Nadat u de bovenstaande integratie hebt geïmplementeerd, kunt u de [scenario in detail.](./personalization-use-case-3.md)***
 
 ## Aanpassing van de volledige webpaginamogelijkheden
 
@@ -85,4 +83,4 @@ Door Adobe Experience Manager te integreren met Adobe Target kunt u uw sitegebru
 
 * [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Na het uitvoeren van de bovengenoemde integratie, laat het  [scenario in detail onderzoeken.](./personalization-use-case-2.md)***
+***Nadat u de bovenstaande integratie hebt geïmplementeerd, kunt u de [scenario in detail.](./personalization-use-case-2.md)***

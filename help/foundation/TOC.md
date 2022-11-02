@@ -1,13 +1,13 @@
 ---
 user-guide-title: Video's en Tutorials AEM
 breadcrumb-title: Tutorials AEM stichting
-user-guide-description: 'Een verzameling video''s en zelfstudies voor Adobe Experience Manager Foundation. '
-sub-product: foundation
+user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Foundation.
+sub-product: Experience Manager
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '220'
+ht-degree: 2%
 
 ---
 
