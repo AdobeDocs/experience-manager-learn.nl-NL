@@ -7,9 +7,9 @@ breadcrumb-title: AEM Forms Tutorials
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1725'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,7 @@ ht-degree: 0%
    + [Ruimte, werkbalkknoppen](ui-tips-tricks/toolbar-buttons.md)
    + [Navigeren door tabbladen met geneste deelvensters](ui-tips-tricks/nested-panels.md)
    + [Pictogrammen toevoegen aan navigatievensters](ui-tips-tricks/active-complete.md)
+   + [Velden automatisch aanvullen](ui-tips-tricks/auto-complete.md)
 + Postvak IN aanpassen{#inbox-customization}
    + [Inleiding](inbox-customization/introduction.md)
    + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
