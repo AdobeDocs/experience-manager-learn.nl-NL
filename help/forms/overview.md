@@ -3,8 +3,9 @@ title: Zelfstudies en video's voor AEM Forms
 description: Blader door onze video's en zelfstudies voor AEM Forms, met bronnen en documentatie om uw vragen te beantwoorden.
 topic: Development
 role: Developer
+sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 96ff44c4b9806205682ab305d391614f92bb2536
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 1%
