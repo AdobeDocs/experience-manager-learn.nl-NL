@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,11 @@ In het voorbeeld dat bij dit artikel wordt geleverd, worden diverse gegevensbron
 
 De code die wordt gebruikt voor het uitvoeren van de functie voor automatisch aanvullen, is gekoppeld aan de gebeurtenis initialize van het veld.
 
-
-## Suggesties voor landnamen opgeven
-
-![suggesties per land](assets/auto-complete1.png)
-
 ## Voorstellen voor adres
 
 ![suggesties per land](assets/auto-complete2.png)
+
+
 
 Hier volgt de code die wordt gebruikt om suggesties voor adres op straat op te geven
 
@@ -60,6 +57,10 @@ $(".streetAddress input").autocomplete({
 
 });
 ```
+
+
+
+
 
 ## Suggesties met emoji&#39;s
 

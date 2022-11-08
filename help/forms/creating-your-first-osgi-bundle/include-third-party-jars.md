@@ -9,7 +9,7 @@ level: Beginner
 kt: 11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -56,7 +56,7 @@ We voegen deze bundel toe aan ons AEM project **AEMFormsProcessStep** die in het
 * Opdrachtprompt openen. Navigeer in mijn geval naar de map van uw project (c:\aemformsbundles\AEMFormsProcessStep). Voer het volgende bevel uit
 
 ```java
-mvn clean install -pAutoInstallSinglePackage
+mvn clean install -PautoInstallSinglePackage
 ```
 
 Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM-instantie geïnstalleerd. U kunt op de bundel controleren gebruikend [felix-webconsole](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van het dialoogvenster `crx` opslagplaats zoals hieronder weergegeven

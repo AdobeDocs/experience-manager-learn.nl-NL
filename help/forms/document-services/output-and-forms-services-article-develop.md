@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 46df7b13401ee3497c871eac3b8158148c2e6a04
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ Uitvoer- en Forms Service-API in AEM Forms gebruiken
 
 In dit artikel zullen we het volgende bekijken:
 
-* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de xdp-sjabloon of pdf om samengevoegde pdf te genereren. Raadpleeg voor meer informatie de[javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) voor de service Uitvoer.
-* FormsService - Dit is een zeer veelzijdige service waarmee u gegevens kunt exporteren/importeren vanuit en naar een PDF-bestand. Raadpleeg voor meer informatie de [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) voor de Forms-service.
+* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de xdp-sjabloon of pdf om samengevoegde pdf te genereren. Voor meer informatie, gelieve te verwijzen naar dit [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) voor de service Uitvoer.
+* FormsService - Dit is een zeer veelzijdige service waarmee u gegevens kunt exporteren/importeren vanuit en naar een PDF-bestand. Voor meer informatie, gelieve te verwijzen naar dit [javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) voor de Forms-service.
 
 
 Het volgende codefragment exporteert gegevens uit het PDF-bestand
@@ -91,7 +91,7 @@ De verpakking bevat 3 monsters. De volgende paragrafen verklaren wanneer om de o
    * **saveLocation**: De locatie waar het gerenderde document moet worden opgeslagen op uw bestandssysteem. Bijvoorbeeld `c:\\outputsample.pdf`.
 
 **Gegevens exporteren uit PDF-bestand**
-* FormsService gebruiken om gegevens uit het PDF-bestand te exporteren
+* FormsService gebruiken om gegevens uit PDF File te exporteren
 * **POST UR** L - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Parameters aanvragen:**
 
