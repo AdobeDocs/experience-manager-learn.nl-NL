@@ -6,26 +6,27 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: bd7916be-8caa-4321-add0-4c9031306d60
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
 
 # De AEM GraphQL API verkennen
 
-Met de API GraphQL in AEM kunt u gegevens van inhoudsfragmenten toegankelijk maken voor downstreamtoepassingen. In het vorige [Zelfstudie GraphQL met meerdere stappen](../multi-step/explore-graphql-api.md), verkende u GraphiQL Geïntegreerde Ontwikkelomgeving (winde) waar u bepaalde gemeenschappelijke vragen GraphQL testte en verfijnde. In dit hoofdstuk, zult u IDE GraphiQL gebruiken om geavanceerdere vragen te onderzoeken om gegevens van de Fragments van de Inhoud te verzamelen die u in het vorige hoofdstuk creeerde.
+Met de API GraphQL in AEM kunt u gegevens van inhoudsfragmenten toegankelijk maken voor downstreamtoepassingen. In de basiszelfstudie [Zelfstudie GraphQL met meerdere stappen](../multi-step/explore-graphql-api.md), gebruikte u de Ontdekkingsreiziger GraphiQL om de vragen te testen en te verfijnen GraphQL.
+
+In dit hoofdstuk, gebruikt u de Ontdekkingsreiziger GraphiQL om geavanceerdere vragen te bepalen om gegevens van de Fragments van de Inhoud te verzamelen die u in creeerde [vorige hoofdstuk](../advanced-graphql/author-content-fragments.md).
 
 ## Vereisten {#prerequisites}
 
 Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Controleer of de vorige hoofdstukken zijn voltooid voordat u verdergaat met dit hoofdstuk.
 
-GraphiQL IDE moet worden geïnstalleerd alvorens dit hoofdstuk te voltooien. Volg de installatie-instructies in het vorige [Zelfstudie GraphQL met meerdere stappen](../multi-step/explore-graphql-api.md) voor meer informatie .
-
 ## Doelstellingen {#objectives}
 
-In dit hoofdstuk leert u hoe u:
+In dit hoofdstuk leert u hoe te:
 
 * Een lijst met inhoudsfragmenten filteren met verwijzingen met behulp van queryvariabelen
 * Filter voor inhoud binnen een fragmentverwijzing
@@ -33,11 +34,33 @@ In dit hoofdstuk leert u hoe u:
 * Query uitvoeren met instructies
 * Query voor het inhoudstype JSON-object
 
+## De GraphiQL Explorer gebruiken
+
+
+De [GraphiQL Explorer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) kunnen ontwikkelaars query&#39;s maken en testen op inhoud in de huidige AEM. Met het gereedschap GraphiQL kunnen gebruikers ook **aanhouden of opslaan** vragen die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
+
+Verken vervolgens de kracht van AEM GraphQL API met behulp van de ingebouwde GraphiQL Explorer.
+
+1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**.
+
+   ![Navigeer aan GrahiQL winde](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+
+>[!IMPORTANT]
+>
+>In, sommige versies van AEM (6.X.X) moet de Ontdekkingsreiziger GraphiQL (alias GrahiQL IDE) hulpmiddel manueel worden geïnstalleerd, volgen [instructie van hier](../multi-step/explore-graphql-api.md#install-the-graphiql-tool-optional).
+
+1. Zorg ervoor dat in de rechterbovenhoek het eindpunt is ingesteld op **WKND Shared Endpoint**. Het wijzigen van _Endpoint_ dropdown-waarde geeft hier de bestaande _Blijvende query&#39;s_ in de linkerbovenhoek.
+
+   ![GrafiekQL-eindpunt instellen](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
+
+Dit zal alle vragen aan modellen behandelen die in **WKND gedeeld** project.
+
+
 ## Een lijst met inhoudsfragmenten filteren met behulp van queryvariabelen
 
-In het vorige [Zelfstudie GraphQL met meerdere stappen](../multi-step/explore-graphql-api.md)hebt u geleerd hoe u een lijst met inhoudsfragmenten kunt filteren. Hier, zult u deze kennis uitbreiden en zult filtreren gebruikend variabelen.
+In het vorige [Zelfstudie GraphQL met meerdere stappen](../multi-step/explore-graphql-api.md), bepaalde u, en gebruikte, basisvoortgeduurde vragen om de gegevens van Fragments van de Inhoud te krijgen. Hier, breidt u deze kennis uit en de gegevens van de Fragmenten van de filterinhoud door variabelen tot de persisted query over te gaan.
 
-Wanneer het ontwikkelen van cliënttoepassingen, in de meeste gevallen zult u Inhoudsfragmenten moeten filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL-API kunt u deze argumenten als variabelen in een query doorgeven om te voorkomen dat tekenreeksen op de client worden samengesteld tijdens runtime. Voor meer informatie over variabelen GraphQL, zie [documentatie van GraphQL](https://graphql.org/learn/queries/#variables).
+Wanneer het ontwikkelen van cliënttoepassingen, gewoonlijk moet u de Fragmenten van de Inhoud filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL-API kunt u deze argumenten als variabelen in een query doorgeven om te voorkomen dat tekenreeksen op de client worden samengesteld tijdens runtime. Voor meer informatie over variabelen GraphQL, zie [documentatie van GraphQL](https://graphql.org/learn/queries/#variables).
 
 Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
 
@@ -72,7 +95,7 @@ Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
 
    De `listPersonBySkill` query hierboven accepteert één variabele (`skillFilter`) is vereist `String`. Deze query voert een zoekopdracht uit tegen alle Person Content Fragments en filtert deze op basis van de `skills` veld en de tekenreeks die wordt doorgegeven `skillFilter`.
 
-   Let op: `listPersonBySkill` bevat de `contactInfo` eigenschap, die een fragmentverwijzing is naar het contactinfo-model dat in de vorige hoofdstukken is gedefinieerd. Het model Contactinfo bevat `phone` en `email` velden. U moet minstens één van deze gebieden in de vraag voor het correct uitvoeren omvatten.
+   De `listPersonBySkill` bevat de `contactInfo` eigenschap, die een fragmentverwijzing is naar het contactinfo-model dat in de vorige hoofdstukken is gedefinieerd. Het model Contactinfo bevat `phone` en `email` velden. Ten minste een van deze velden in de query moet aanwezig zijn om correct te kunnen functioneren.
 
    ```graphql
    contactInfo {
@@ -85,7 +108,7 @@ Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
 
    ```json
    {
-   	    "skillFilter": "Skiing"
+       "skillFilter": "Skiing"
    }
    ```
 
@@ -103,10 +126,10 @@ Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
                "email": "sroswells@wknd.com"
              },
              "profilePicture": {
-               "_path": "/content/dam/wknd/en/contributors/stacey-roswells.jpg"
+               "_path": "/content/dam/wknd-shared/en/contributors/stacey-roswells.jpg"
              },
              "biography": {
-               "plaintext": "Stacey Roswells is an accomplished rock climber and alpine adventurer.\nBorn in Baltimore, Maryland, Stacey is the youngest of six children. Her father was a lieutenant colonel in the US Navy and her mother was a modern dance instructor. Her family moved frequently with her father’s duty assignments, and she took her first pictures when he was stationed in Thailand. This is also where Stacey learned to rock climb."
+               "plaintext": "Stacey Roswells is an accomplished rock climber and alpine adventurer. Born in Baltimore, Maryland, Stacey is the youngest of six children. Stacey's father was a lieutenant colonel in the US Navy and mother was a modern dance instructor. Stacey's family moved frequently with father's duty assignments and took the first pictures when father was stationed in Thailand. This is also where Stacey learned to rock climb."
              },
              "instructorExperienceLevel": "Advanced",
              "skills": [
@@ -120,6 +143,10 @@ Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
      }
    }
    ```
+
+Druk op **Afspelen** in het bovenste menu om de query uit te voeren. De resultaten van de inhoudsfragmenten uit het vorige hoofdstuk worden weergegeven:
+
+![Persoon op de Resultaten van de Vaardigheid](assets/explore-graphql-api/person-by-skill.png)
 
 ## Filter voor inhoud binnen een fragmentverwijzing
 
@@ -138,7 +165,7 @@ Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vori
        filter: {administrator: {fullName: {_expressions: [{value: $name}]}}}
      ) {
        items {
-         adventureTitle
+         title
          administrator {
            fullName
            contactInfo {
@@ -158,7 +185,7 @@ Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vori
 
    ```json
    {
-   	    "name": "Jacob Wester"
+       "name": "Jacob Wester"
    }
    ```
 
@@ -172,7 +199,7 @@ Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vori
        "adventureList": {
          "items": [
            {
-             "adventureTitle": "Yosemite Backpacking",
+             "title": "Yosemite Backpacking",
              "administrator": {
                "fullName": "Jacob Wester",
                "contactInfo": {
@@ -186,7 +213,7 @@ Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vori
                      "content": [
                        {
                          "nodeType": "text",
-                         "value": "Jacob Wester has been coordinating backpacking adventures for 3 years."
+                         "value": "Jacob Wester has been coordinating backpacking adventures for three years."
                        }
                      ]
                    }
@@ -254,13 +281,13 @@ Met de AEM GraphQL API kunt u zoeken naar inhoud- en fragmentverwijzingen in tek
 
    De `getTeamByAdventurePath` query haalt meerdere verwijzingen op. Eerst wordt de ingebouwde `ImageRef` object om het `_path` en `__typename` van afbeeldingen die als inhoudsverwijzingen zijn ingevoegd in het tekstveld met meerdere regels. Vervolgens wordt `LocationModel` om de gegevens op te halen van het Locatie-inhoudfragment dat in hetzelfde veld wordt ingevoegd.
 
-   Merk op dat de vraag ook omvat `_metadata` veld. Hierdoor kunt u de naam van het Team Content Fragment ophalen en later in de WKND-app weergeven.
+   De query bevat ook de `_metadata` veld. Hierdoor kunt u de naam van het Team Content Fragment ophalen en later in de WKND-app weergeven.
 
 1. Vervolgens plakt u de volgende JSON-tekenreeks in het deelvenster Query-variabelen om het Yosemite Backpackaging Adventure op te halen:
 
    ```json
    {
-   	    "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
+       "fragmentPath": "/content/dam/wknd-shared/en/adventures/yosemite-backpacking/yosemite-backpacking"
    }
    ```
 
@@ -293,7 +320,7 @@ Met de AEM GraphQL API kunt u zoeken naar inhoud- en fragmentverwijzingen in tek
          "_references": [
            {
              "__typename": "LocationModel",
-             "_path": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
+             "_path": "/content/dam/wknd-shared/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
              "name": "Yosemite Valley Lodge",
              "address": {
                "streetAddress": "9006 Yosemite Lodge Drive",
@@ -308,7 +335,7 @@ Met de AEM GraphQL API kunt u zoeken naar inhoud- en fragmentverwijzingen in tek
            },
            {
              "__typename": "ImageRef",
-             "_path": "/content/dam/wknd/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
+             "_path": "/content/dam/wknd-shared/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
            }
          ]
        }
@@ -376,7 +403,7 @@ In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt
 
    ```json
    {
-     "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking",
+     "fragmentPath": "/content/dam/wknd-shared/en/adventures/yosemite-backpacking/yosemite-backpacking",
      "includeJson": false
    }
    ```
@@ -413,7 +440,7 @@ In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt
                      {
                        "nodeType": "reference",
                        "data": {
-                         "path": "/content/dam/wknd/en/adventures/teams/yosemite-team/team-yosemite-logo.png",
+                         "path": "/content/dam/wknd-shared/en/adventures/teams/yosemite-team/team-yosemite-logo.png",
                          "mimetype": "image/png"
                        }
                      }
@@ -434,7 +461,7 @@ In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt
                      {
                        "nodeType": "reference",
                        "data": {
-                         "href": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
+                         "href": "/content/dam/wknd-shared/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
                          "type": "fragment"
                        },
                        "value": "Yosemite Valley Lodge"
@@ -448,7 +475,7 @@ In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt
          "_references": [
            {
              "__typename": "LocationModel",
-             "_path": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
+             "_path": "/content/dam/wknd-shared/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
              "name": "Yosemite Valley Lodge",
              "address": {
                "streetAddress": "9006 Yosemite Lodge Drive",
@@ -463,7 +490,7 @@ In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt
            },
            {
              "__typename": "ImageRef",
-             "_path": "/content/dam/wknd/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
+             "_path": "/content/dam/wknd-shared/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
            }
          ]
        }
@@ -511,7 +538,7 @@ Vergeet niet dat u in het vorige hoofdstuk over het ontwerpen van inhoudsfragmen
 
    ```json
    {
-     "fragmentPath": "/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park"
+     "fragmentPath": "/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park"
    }
    ```
 
@@ -530,7 +557,7 @@ Vergeet niet dat u in het vorige hoofdstuk over het ontwerpen van inhoudsfragmen
                  "content": [
                    {
                      "nodeType": "text",
-                     "value": "Yosemite National Park is in California’s Sierra Nevada mountains. It’s famous for its gorgeous waterfalls, giant sequoia trees, and iconic views of El Capitan and Half Dome cliffs."
+                     "value": "Yosemite National Park is in California's Sierra Nevada mountains. It's famous for its gorgeous waterfalls, giant sequoia trees, and iconic views of El Capitan and Half Dome cliffs."
                    }
                  ]
                },
@@ -550,7 +577,7 @@ Vergeet niet dat u in het vorige hoofdstuk over het ontwerpen van inhoudsfragmen
              "email": "yosemite@wknd.com"
            },
            "locationImage": {
-             "_path": "/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park.jpeg"
+             "_path": "/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park.jpeg"
            },
            "weatherBySeason": {
              "summer": "81 / 89°F",
@@ -575,34 +602,35 @@ Vergeet niet dat u in het vorige hoofdstuk over het ontwerpen van inhoudsfragmen
 
 ## Query uitvoeren voor alle inhoud tegelijk
 
-Tot nu toe zijn er meerdere query&#39;s uitgevoerd om de mogelijkheden van de AEM GraphQL API te illustreren. Dezelfde gegevens kunnen met slechts één query worden opgehaald:
+Tot nu toe zijn er meerdere query&#39;s uitgevoerd om de mogelijkheden van de AEM GraphQL API te illustreren.
+
+De zelfde gegevens konden met slechts één enkele vraag worden teruggewonnen en deze vraag wordt later gebruikt in de cliënttoepassing om extra informatie zoals plaats, teamnaam, teamleden van een avontuur terug te winnen:
 
 ```graphql
-query getAllAdventureDetails($fragmentPath: String!) {
-  adventureByPath(_path: $fragmentPath){
-    item {
+query getAdventureDetailsBySlug($slug: String!) {
+  adventureList(filter: {slug: {_expressions: [{value: $slug}]}}) {
+    items {
       _path
-      adventureTitle
-      adventureActivity
+      title
+      activity
       adventureType
-      adventurePrice
-      adventureTripLength
-      adventureGroupSize
-      adventureDifficulty
-      adventurePrice
-      adventurePrimaryImage{
-        ...on ImageRef{
+      price
+      tripLength
+      groupSize
+      difficulty
+      primaryImage {
+        ... on ImageRef {
           _path
           mimeType
           width
           height
         }
       }
-      adventureDescription {
+      description {
         html
         json
       }
-      adventureItinerary {
+      itinerary {
         html
         json
       }
@@ -613,171 +641,83 @@ query getAllAdventureDetails($fragmentPath: String!) {
           html
           json
         }
-        contactInfo{
+        contactInfo {
           phone
           email
         }
-        locationImage{
-          ...on ImageRef{
+        locationImage {
+          ... on ImageRef {
             _path
           }
         }
         weatherBySeason
-        address{
-            streetAddress
-            city
-            state
-            zipCode
-            country
+        address {
+          streetAddress
+          city
+          state
+          zipCode
+          country
         }
       }
       instructorTeam {
-        _metadata{
-            stringMetadata{
-                name
-                value
-            }
-        }        
+        _metadata {
+          stringMetadata {
+            name
+            value
+          }
+        }
         teamFoundingDate
         description {
-            json
+          json
         }
         teamMembers {
-            fullName
-            contactInfo {
-                phone
-                email
+          fullName
+          contactInfo {
+            phone
+            email
+          }
+          profilePicture {
+            ... on ImageRef {
+              _path
             }
-            profilePicture{
-                ...on ImageRef {
-                    _path
-                }
-            }
-            instructorExperienceLevel
-            skills
-            biography {
-                html
-            }
-        }       
-     }
-      administrator {
-            fullName
-            contactInfo {
-                phone
-                email
-            }
-            biography {
-                html
-            }
+          }
+          instructorExperienceLevel
+          skills
+          biography {
+            html
+          }
         }
+      }
+      administrator {
+        fullName
+        contactInfo {
+          phone
+          email
+        }
+        biography {
+          html
+        }
+      }
     }
     _references {
-        ...on ImageRef {
-            _path
+      ... on ImageRef {
+        _path
         mimeType
-        }
-        ...on LocationModel {
-            _path
-                __typename
-        }
+      }
+      ... on LocationModel {
+        _path
+        __typename
+      }
     }
   }
 }
 
+
 # in Query Variables
 {
-  "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
+  "slug": "yosemite-backpacking"
 }
 ```
-
-## Aanvullende query&#39;s voor de WKND-app
-
-De volgende query&#39;s worden weergegeven om alle gegevens op te halen die nodig zijn in de WKND-app. Deze vragen tonen geen nieuwe concepten aan en worden slechts verstrekt als verwijzing om u te helpen uw implementatie bouwen.
-
-1. **Krijg teamleden voor een specifiek avontuur**:
-
-   ```graphql
-   query getTeamMembersByAdventurePath ($fragmentPath: String!){
-     adventureByPath (_path: $fragmentPath ) {
-       item {
-         instructorTeam {
-           teamMembers{
-             fullName
-             contactInfo{
-               phone
-               email
-             }
-           profilePicture {
-               ... on ImageRef {
-                 _path
-               }
-           }
-             instructorExperienceLevel
-             skills
-             biography{
-               plaintext
-             }
-           }
-         }
-       }
-     }
-   }
-   
-   # in Query Variables
-   {
-     "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
-   }
-   ```
-
-1. **Krijg de weg van de Plaats voor een specifiek avontuur**
-
-   ```graphql
-   query getLocationPathByAdventurePath ($fragmentPath: String!){
-     adventureByPath (_path: $fragmentPath){
-       item {
-         location{
-           _path  
-         } 
-       }
-     }
-   }
-   
-   # in Query Variables
-   {
-     "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
-   }
-   ```
-
-1. **De teamlocatie ophalen via het pad**
-
-   ```graphql
-   query getTeamLocationByLocationPath ($fragmentPath: String!){
-     locationByPath (_path: $fragmentPath) {
-       item {
-         name
-         description{
-           json
-         }
-         contactInfo{
-           phone
-           email
-         }
-           address{
-           streetAddress
-           city
-           state
-           zipCode
-           country
-         }
-       }
-     }
-   }
-   
-   # in Query Variables
-   {
-     "fragmentPath": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge"
-   }
-   ```
 
 ## Gefeliciteerd!
 

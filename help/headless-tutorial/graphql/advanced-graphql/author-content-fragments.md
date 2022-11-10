@@ -6,9 +6,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '2911'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ In de [vorige hoofdstuk](/help/headless-tutorial/graphql/advanced-graphql/create
 
 ## Vereisten {#prerequisites}
 
-Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Controleer of de vorige hoofdstukken zijn voltooid voordat u verdergaat met dit hoofdstuk.
+Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Zorg ervoor dat de [vorige hoofdstuk](create-content-fragment-models.md) is voltooid voordat u verdergaat met dit hoofdstuk.
 
 ## Doelstellingen {#objectives}
 
@@ -36,7 +37,7 @@ Leer in dit hoofdstuk hoe te:
 
 Installeer een AEM pakket dat meerdere mappen en voorbeeldafbeeldingen bevat die worden gebruikt om de zelfstudie te versnellen.
 
-1. Downloaden [Advanced-GraphQL-Tutorial-Starter-Package-1.0.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.0.zip)
+1. Downloaden [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip)
 1. Navigeer in AEM naar **Gereedschappen** > **Implementatie** > **Pakketten** toegang **Pakketbeheer**.
 1. Upload en installeer het pakket (ZIP-bestand) dat u in de vorige stap hebt gedownload.
 
@@ -44,7 +45,7 @@ Installeer een AEM pakket dat meerdere mappen en voorbeeldafbeeldingen bevat die
 
 ## Mappen maken en limieten instellen met behulp van mapbeleid
 
-Selecteer in de AEM homepage de optie **Activa** > **Bestanden** > **WKND-site** > **Engels**. Hier ziet u de verschillende categorieën van het Fragment van de Inhoud, met inbegrip van avonturen en Medewerkers die in het vorige werden onderzocht [Zelfstudie GraphQL met meerdere stappen](../multi-step/overview.md).
+Selecteer in de AEM homepage de optie **Activa** > **Bestanden** > **WKND gedeeld** > **Engels**. Hier ziet u de verschillende categorieën van het Fragment van de Inhoud, met inbegrip van avonturen en Medewerkers.
 
 ### Mappen maken {#create-folders}
 
@@ -70,11 +71,11 @@ AEM kunt u machtigingen en beleid voor de mappen met inhoudsfragmenten definiër
 
    ![Eigenschappen](assets/author-content-fragments/properties.png)
 
-1. Selecteer **Beleid** tab, vervolgens de selectie opheffen **Overgenomen van /content/dam/wknd**. In de **Modellen van inhoudsfragmenten op pad toestaan** Selecteer het mappictogram.
+1. Selecteer **Beleid** tab, vervolgens de selectie opheffen **Overgenomen van /content/dam/wknd-shared**. In de **Modellen van inhoudsfragmenten op pad toestaan** Selecteer het mappictogram.
 
    ![Mappictogram](assets/author-content-fragments/folder-icon.png)
 
-1. Volg het pad in het dialoogvenster Pad selecteren dat wordt geopend **conf** > **WKND-site**. Het model van het Fragmentmodel van de Inhoud van de Persoon, dat in het vorige hoofdstuk wordt gecreeerd, bevat een verwijzing naar het Model van het Fragment van de Fragment van de Inhoud van het Contact van Info. Zowel moeten Person als de modellen van Info van het Contact in de omslag van Instructeurs worden toegestaan om een Fragment van de Inhoud van de Instructeur tot stand te brengen. Selecteren **Persoon** en **Contactinfo** en vervolgens drukt u op **Selecteren** om het dialoogvenster te sluiten.
+1. Volg het pad in het dialoogvenster Pad selecteren dat wordt geopend **conf** > **WKND gedeeld**. Het model van het Fragmentmodel van de Inhoud van de Persoon, dat in het vorige hoofdstuk wordt gecreeerd, bevat een verwijzing naar het Model van het Fragment van de Fragment van de Inhoud van het Contact van Info. Zowel moeten Person als de modellen van Info van het Contact in de omslag van Instructeurs worden toegestaan om een Fragment van de Inhoud van de Instructeur tot stand te brengen. Selecteren **Persoon** en **Contactinfo** en vervolgens drukt u op **Selecteren** om het dialoogvenster te sluiten.
 
    ![Pad selecteren](assets/author-content-fragments/select-path.png)
 
@@ -88,13 +89,13 @@ AEM kunt u machtigingen en beleid voor de mappen met inhoudsfragmenten definiër
 
 Navigeer in de **Instructeurs** map. Van hier, creëren wij een genestelde omslag om de contactinformatie van de Instructeurs op te slaan.
 
-Voer de stappen uit die in de sectie over [mappen maken](#create-folders) om een map met de naam &quot;Contactinfo&quot; te maken. De geneste map neemt het mapbeleid van de bovenliggende map over. Voel vrij om specifieker beleid te vormen zodat laat de pas gecreëerde omslag slechts het model van Info van het Contact toe worden gebruikt.
+Voer de stappen uit die in de sectie over [mappen maken](#create-folders) om een map met de naam &quot;Contactinfo&quot; te maken. De geneste map overerft het mapbeleid van de bovenliggende map. Voel vrij om specifieker beleid te vormen zodat laat de pas gecreëerde omslag slechts het model van Info van het Contact toe worden gebruikt.
 
 ### Een instructiefragment maken
 
-Laten we vier mensen maken die aan een team van Adventure-instructeurs kunnen worden toegevoegd. De afbeeldingen en namen van de Contribute-inhoudsfragmenten die in de vorige versie zijn gemaakt, opnieuw gebruiken [Zelfstudie GraphQL met meerdere stappen](../multi-step/author-content-fragments.md). In de vorige zelfstudie werd uitgelegd hoe u elementaire inhoudsfragmenten kunt maken, maar deze zelfstudie richt zich op meer geavanceerde functies.
+Laten we vier mensen maken die aan een team van Adventure-instructeurs kunnen worden toegevoegd.
 
-1. Maak in de map Instructors een nieuw inhoudsfragment op basis van het Person Content Fragment-model en geef dit de titel &quot;Jacob Wester&quot;.
+1. Maak in de map Instructors een inhoudsfragment op basis van het Person Content Fragment-model en geef dit de titel &quot;Jacob Wester&quot;.
 
    Het nieuwe inhoudsfragment ziet er als volgt uit:
 
@@ -103,14 +104,14 @@ Laten we vier mensen maken die aan een team van Adventure-instructeurs kunnen wo
 1. Voer de volgende inhoud in de velden in:
 
    * **Volledige naam**: Jacob Wester
-   * **Biografie**: Jacob Wester is al tien jaar een wandelende instructeur en heeft er elke minuut van gehouden! Hij is een avontuurzoeker met talent voor het klimmen en terugpakken van rots. Jacob is de winnaar van de beklimmingswedstrijden, waaronder de veetel van de bouldering-wedstrijd. Hij woont momenteel in Californië.
+   * **Biografie**: Jacob Wester is al tien jaar een wandelende instructeur en heeft er elke minuut van gehouden! Jacob is een avontuurzoeker met talent voor het klimmen en terugpakken van rotsen. Jacob is de winnaar van de beklimmingswedstrijden, waaronder de veetel van de bouldering-wedstrijd. Jacob woont momenteel in Californië.
    * **Erviteitsniveau instructeur**: Expert
    * **Vaardigheden**: Rotsklimmen, surfen, rugzakken
-   * **Beheerdergegevens**: Jacob Wester coördineert al drie jaar de opbergprojecten.
+   * **Beheerdergegevens**: Jacob Wester coördineert al drie jaar de terugpakprojecten.
 
-1. In de **Profielafbeelding** , voegt u een inhoudsverwijzing naar een afbeelding toe. Bladeren naar **WKND-site** > **Engels** > **Medewerkers** > **jacob_wester.jpg** om een pad naar de afbeelding te maken.
+1. In de **Profielafbeelding** , voegt u een inhoudsverwijzing naar een afbeelding toe. Bladeren naar **WKND gedeeld** > **Engels** > **Medewerkers** > **jacob_wester.jpg** om een pad naar de afbeelding te maken.
 
-### Een nieuwe fragmentverwijzing maken vanuit de Inhoudsfragmenteditor {#fragment-reference-from-editor}
+### Een fragmentverwijzing maken met de editor voor fragmentfragmenten {#fragment-reference-from-editor}
 
 AEM kunt u een fragmentverwijzing rechtstreeks vanuit de editor voor inhoudsfragmenten maken. Laten we een verwijzing naar de contactgegevens van Jacob maken.
 
@@ -135,7 +136,7 @@ AEM kunt u een fragmentverwijzing rechtstreeks vanuit de editor voor inhoudsfrag
    * **Telefoon**: 2009-888-0000
    * **E-mail**: jwester@wknd.com
 
-   Selecteer **Opslaan**. U hebt nu een nieuw fragment met contactinfo gemaakt.
+   Selecteer **Opslaan**. U hebt nu een fragment met contactinfo-inhoud gemaakt.
 
 1. Om terug naar het Fragment van de Inhoud van de Instructeur te navigeren, selecteer **Jacob Wester** in de linkerbovenhoek van de editor.
 
@@ -157,9 +158,9 @@ Volg hetzelfde proces als in het dialoogvenster [vorige sectie](#fragment-refere
 | --- | --- |
 | Titel van inhoudsfragment | Stacey Roswells |
 | Volledige naam | Stacey Roswells |
-| Contactinfo | /content/dam/wknd/nl/adventures/instructors/contact-info/stack-roswells-contact-info |
-| Profielafbeelding | /content/dam/wknd/en/contributors/stacey-roswells.jpg |
-| Biografie | Stacey Roswells is een volmaakte rockklimmer en alpenavonturer. Geboren in Baltimore, Maryland, Stacey is de jongste van zes kinderen. Haar vader was een luitenant-kolonel in de Amerikaanse marine en haar moeder was een moderne dansinstructeur. Haar familie verhuisde regelmatig met de taken van haar vader en ze nam haar eerste foto&#39;s toen hij in Thailand was gestationeerd. Dit is ook waar Stacey leerde klimmen. |
+| Contactinfo | /content/dam/wknd-shared/nl/avventures/instructors/contact-info/stack-roswells-contact-info |
+| Profielafbeelding | /content/dam/wknd-shared/en/contributors/stacey-roswells.jpg |
+| Biografie | Stacey Roswells is een volmaakte rockklimmer en alpenavonturer. Geboren in Baltimore, Maryland, Stacey is de jongste van zes kinderen. De vader van Stacey was een luitenant-kolonel bij de Amerikaanse marine en de moeder was een moderne dansinstructeur. De familie van Stacey verhuisde regelmatig met de taken van de vader en nam de eerste foto toen de vader in Thailand was gestationeerd. Dit is ook waar Stacey leerde klimmen. |
 | Erviteitsniveau instructeur | Geavanceerd |
 | Vaardigheden | Rotsklimmen | Skien | Achtergrond |
 
@@ -169,8 +170,8 @@ Volg hetzelfde proces als in het dialoogvenster [vorige sectie](#fragment-refere
 | --- | --- |
 | Titel van inhoudsfragment | Kumar Selvaraj |
 | Volledige naam | Kumar Selvaraj |
-| Contactinfo | /content/dam/wknd/nl/adventures/instructors/contact-info/kumar-selvaraj-contact-info |
-| Profielafbeelding | /content/dam/wknd/en/contributors/Kumar_Selvaraj.JPG |
+| Contactinfo | /content/dam/wknd-shared/nl/adventures/instructors/contact-info/kumar-selvaraj-contact-info |
+| Profielafbeelding | /content/dam/wknd-shared/en/contributors/kumar-selvaraj.jpg |
 | Biografie | Kumar Selvaraj is een ervaren AMGA-gecertificeerde professionele instructeur die als belangrijkste doel heeft studenten te helpen hun klimmen- en wandelvaardigheden te verbeteren. |
 | Erviteitsniveau instructeur | Geavanceerd |
 | Vaardigheden | Rotsklimmen | Achtergrond |
@@ -181,9 +182,9 @@ Volg hetzelfde proces als in het dialoogvenster [vorige sectie](#fragment-refere
 | --- | --- |
 | Titel van inhoudsfragment | Ayo Ogunsede |
 | Volledige naam | Ayo Ogunsede |
-| Contactinfo | /content/dam/wknd/nl/adventures/instructors/contact-info/ayo-ogunsede-contact-info |
-| Profielafbeelding | /content/dam/wknd/en/contributors/ayo-ogunseinde-237739.jpg |
-| Biografie | Ayo Ogunsede is een professionele klimmer- en achtergrondinstructeur die in Fresno, Centraal-Californië woont. Haar doel is om de fietsers te begeleiden op hun meest epische avonturen in het nationale park. |
+| Contactinfo | /content/dam/wknd-shared/nl/adventures/instructors/contact-info/ayo-ogunsede-contact-info |
+| Profielafbeelding | /content/dam/wknd-shared/en/contributors/ayo-ogunseinde-237739.jpg |
+| Biografie | Ayo Ogunsede is een professionele klimmer- en achtergrondinstructeur die in Fresno, Centraal-Californië woont. Ayo&#39;s doel is om fietsers te begeleiden op hun meest episch-nationale park avonturen. |
 | Erviteitsniveau instructeur | Geavanceerd |
 | Vaardigheden | Rotsklimmen | Fietsen | Achtergrond |
 
@@ -205,9 +206,9 @@ Navigeer in de **Locaties** map. Hier ziet u twee geneste mappen die al zijn gem
 
 ![Locatiemap](assets/author-content-fragments/locations-folder.png)
 
-Negeer de map Yosemite Valley Lodge voorlopig. Wij zullen aan het later in deze sectie terugkeren wanneer wij een nieuwe plaats creëren die als Basis van het Huis voor ons team van instructeurs zal dienst doen.
+Negeer de map Yosemite Valley Lodge voorlopig. Wij keren aan het later in deze sectie terug wanneer wij een plaats creëren die als Basis van het Huis voor ons team van instructeurs dienst doet.
 
-Navigeer in de **Nationaal park Yosemite** map. Op dit moment bevat het slechts een foto van het Yosemite National Park. Laten we een nieuw inhoudsfragment maken met het Locatie-inhoudfragmentmodel en dit fragment de titel &quot;Yosemite National Park&quot; geven.
+Navigeer in de **Nationaal park Yosemite** map. Op dit moment bevat het slechts een foto van het Yosemite National Park. Laten we een inhoudsfragment maken met behulp van het Locatie-inhoudsfragmentmodel en dit &#39;Yosemite National Park&#39; noemen.
 
 ### Plaatsaanduidingen voor tabbladen
 
@@ -247,22 +248,22 @@ Voeg de rest van de inhoud aan het Fragment van de Inhoud van de Plaats toe om d
 1. In de **Locatiedetails** voert u de volgende informatie in de velden in:
 
    * **Naam**: Nationaal park Yosemite
-   * **Beschrijving**: Yosemite National Park bevindt zich in de Sierra Nevada-bergen van Californië. Het is beroemd om zijn prachtige watervallen, reusachtige aardbevingen en iconische weergaven van de kliffen El Capitan en Half Dome. Wandelen en kamperen zijn de beste manieren om Josemite te ervaren. Talloze sporen bieden eindeloze kansen voor avontuur en exploratie.
+   * **Beschrijving**: Yosemite National Park bevindt zich in de Sierra Nevada bergen van Californië. Het is beroemd om zijn prachtige watervallen, gigantische sequoia-bomen en iconische weergaven van El Capitan en Half Dome-kliffen. Wandelen en kamperen zijn de beste manieren om Josemite te ervaren. Talloze sporen bieden eindeloze kansen voor avontuur en exploratie.
 
-1. Van de **Contactinfo** , maakt u een nieuw inhoudsfragment op basis van het contactinfo-model en geeft u de titel &quot;Yosemite National Park Contact Info&quot;. Volg dezelfde procedure als in de vorige sectie over [een nieuwe fragmentverwijzing maken vanuit de editor](#fragment-reference-from-editor) en voert u de volgende gegevens in de velden in:
+1. Van de **Contactinfo** , maakt u een inhoudsfragment op basis van het contactinfo-model en geeft u de titel &quot;Yosemite National Park Contact Info&quot;. Volg dezelfde procedure als in de vorige sectie over [een fragmentverwijzing maken vanuit de editor](#fragment-reference-from-editor) en voert u de volgende gegevens in de velden in:
 
    * **Telefoon**: 2009-999-0000
    * **E-mail**: yosemite@wknd.com
 
 1. Van de **Locatieafbeelding** veld, bladeren naar **avonturen** > **Locaties** > **Nationaal park Yosemite** > **yosemite-nationaal park.jpeg** om een pad naar de afbeelding te maken.
 
-   Herinner dat in het vorige hoofdstuk u de beeldbevestiging vormde, zodat moeten de afmetingen van het beeld van de Plaats minder dan 2560 x 1800 zijn, en zijn dossiergrootte moet minder dan 3 MB zijn.
+   Herinner me, in het vorige hoofdstuk dat u de beeldbevestiging vormde, zodat moeten de afmetingen van het beeld van de Plaats minder dan 2560 x 1800 zijn, en zijn dossiergrootte moet minder dan 3 MB zijn.
 
 1. Met alle toegevoegde informatie, **Locatiedetails** tab ziet er nu als volgt uit:
 
    ![Het tabblad Locatiegegevens is voltooid](assets/author-content-fragments/location-details-tab-completed.png)
 
-1. Navigeer in de **Locatieadres** tab. Van de **Adres** in het veld, maakt u een nieuw Content Fragment met de naam &quot;Yosemite National Park Address&quot; met behulp van het model voor het fragment Adresinhoud dat u in het vorige hoofdstuk hebt gemaakt. Volg hetzelfde proces als in de sectie over [een nieuwe fragmentverwijzing maken vanuit de editor](#fragment-reference-from-editor) en voert u de volgende gegevens in de velden in:
+1. Navigeer in de **Locatieadres** tab. Van de **Adres** in het veld, maakt u een Content Fragment met de naam &quot;Yosemite National Park Address&quot; met behulp van het model voor fragmenten voor de inhoud van het adres dat u in het vorige hoofdstuk hebt gemaakt. Volg hetzelfde proces als in de sectie over [een fragmentverwijzing maken vanuit de editor](#fragment-reference-from-editor) en voert u de volgende gegevens in de velden in:
 
    * **Adres**: 9010 Curry Village Drive
    * **Plaats**: Yosemite Valley
@@ -276,23 +277,23 @@ Voeg de rest van de inhoud aan het Fragment van de Inhoud van de Plaats toe om d
 
 1. Selecteren **Opslaan en sluiten**.
 
-### Een extra fragment maken
+### Nog een fragment maken
 
-1. Navigeer in de **Yosemite Valley Lodge** map. Maak een nieuw inhoudsfragment met het Locatie-inhoudsfragmentmodel en noem dit &#39;Yosemite Valley Lodge&#39;.
+1. Navigeer in de **Yosemite Valley Lodge** map. Maak een inhoudsfragment met het Locatie-inhoudsfragmentmodel en noem dit &#39;Yosemite Valley Lodge&#39;.
 
 1. In de **Locatiedetails** voert u de volgende informatie in de velden in:
 
    * **Naam**: Yosemite Valley Lodge
    * **Beschrijving**: Yosemite Valley Lodge is een centrum voor groepsvergaderingen en allerlei activiteiten, zoals winkelen, dineren, vissen, fietsen en nog veel meer.
 
-1. Van de **Contactinfo** een nieuw inhoudsfragment maken op basis van het contactinfo-model en dit fragment de titel &quot;Yosemite Valley Lodge Contact Info&quot; geven. Volg hetzelfde proces als in de sectie over [een nieuwe fragmentverwijzing maken vanuit de editor](#fragment-reference-from-editor) en voer de volgende gegevens in in de velden van het nieuwe inhoudsfragment:
+1. Van de **Contactinfo** in het veld, maakt u een inhoudsfragment op basis van het contactinfo-model en geeft u de titel &quot;Contactgegevens drukproef Yosemite&quot; op. Volg hetzelfde proces als in de sectie over [een fragmentverwijzing maken vanuit de editor](#fragment-reference-from-editor) en voer de volgende gegevens in in de velden van het nieuwe inhoudsfragment:
 
    * **Telefoon**: 992-0000
    * **E-mail**: yosemitelodge@wknd.com
 
    Sla het nieuwe inhoudsfragment op.
 
-1. Ga terug naar **Yosemite Valley Lodge** en ga naar de **Locatieadres** tab. Van de **Adres** in het veld, maakt u een nieuw Content Fragment met de naam &quot;Yosemite Valley Lodge Address&quot; met behulp van het Document Content Fragment Model dat u in het vorige hoofdstuk hebt gemaakt. Volg hetzelfde proces als in de sectie over [een nieuwe fragmentverwijzing maken vanuit de editor](#fragment-reference-from-editor) en voert u de volgende gegevens in de velden in:
+1. Ga terug naar **Yosemite Valley Lodge** en ga naar de **Locatieadres** tab. Van de **Adres** in het veld, maakt u een Content Fragment met de naam &quot;Yosemite Valley Lodge Address&quot; met behulp van het Document Content Fragment Model dat u in het vorige hoofdstuk hebt gemaakt. Volg hetzelfde proces als in de sectie over [een fragmentverwijzing maken vanuit de editor](#fragment-reference-from-editor) en voert u de volgende gegevens in de velden in:
 
    * **Adres**: 9006 Yosemite Lodge Drive
    * **Plaats**: Nationaal park Yosemite
@@ -312,7 +313,7 @@ Bladeren naar mappen **Teams** > **Yosemite-team**. U ziet dat de map Yosemite T
 
 ![De map Yosemite Team](assets/author-content-fragments/yosemite-team-folder.png)
 
-Laten we een nieuw inhoudsfragment maken met behulp van het model Inhoudsfragment voor team en dit de titel &quot;Yosemite Team&quot; geven.
+Laten we een inhoudsfragment maken met behulp van het model voor het fragment met teaminhoud en dit de titel &quot;Yosemite Team&quot; geven.
 
 ### Inhoud- en fragmentverwijzingen in de teksteditor met meerdere regels
 
@@ -336,7 +337,7 @@ Vergeet niet dat u in het vorige hoofdstuk hebt toegestaan dat fragmentverwijzin
 
    ![Pictogram Inhoudsfragment invoegen](assets/author-content-fragments/insert-content-fragment-icon.png)
 
-1. Bladeren naar **WKND-site** > **Engels** > **avonturen** > **Locaties** > **Yosemite Valley Lodge** > **Yosemite Valley Lodge**. Druk **Selecteren** om het inhoudsfragment in te voegen.
+1. Bladeren naar **WKND gedeeld** > **Engels** > **avonturen** > **Locaties** > **Yosemite Valley Lodge** > **Yosemite Valley Lodge**. Druk **Selecteren** om het inhoudsfragment in te voegen.
 
    ![Inhoudsfragment modaal invoegen](assets/author-content-fragments/insert-content-fragment-modal.png)
 
@@ -362,7 +363,7 @@ Laten wij Instructeurs aan de het fragmentverwijzing van de Leden van het Team t
 
    ![Knop Toevoegen](assets/author-content-fragments/add-button.png)
 
-1. Selecteer in het nieuwe veld dat wordt weergegeven het mappictogram om het modaal pad selecteren te openen. Bladeren door mappen naar **WKND-site** > **Engels** > **avonturen** > **Instructeurs** Schakel vervolgens het selectievakje naast **johannesbrood**. Druk **Selecteren** om het pad op te slaan.
+1. Selecteer in het nieuwe veld dat wordt weergegeven het mappictogram om het modaal pad selecteren te openen. Bladeren door mappen naar **WKND gedeeld** > **Engels** > **avonturen** > **Instructeurs** Schakel vervolgens het selectievakje naast **johannesbrood**. Druk **Selecteren** om het pad op te slaan.
 
    ![Fragmentverwijzingspad](assets/author-content-fragments/fragment-reference-path.png)
 
@@ -378,11 +379,11 @@ Tot slot voegen onze pas gecreëerde Fragments van de Inhoud aan een Avontuur to
 
 1. Navigeren naar **avonturen** > **Yosemite-achtergrondverpakking** en opent u het Yosemite Backpackaging Content Fragment. Onder aan het formulier ziet u de drie velden die u in het vorige hoofdstuk hebt gemaakt: **Locatie**, **Instructieteam**, en **Beheerder**.
 
-1. De fragmentverwijzing toevoegen in het dialoogvenster **Locatie** veld. Het Locatiepad verwijst naar het Yosemite National Park Content Fragment dat u hebt gemaakt: `/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park`.
+1. De fragmentverwijzing toevoegen in het dialoogvenster **Locatie** veld. Het Locatiepad verwijst naar het Yosemite National Park Content Fragment dat u hebt gemaakt: `/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park`.
 
-1. De fragmentverwijzing toevoegen in het dialoogvenster **Instructieteam** veld. De weg van het Team zou het Fragment van de Inhoud van het Team van Yosemite moeten van verwijzingen voorzien dat u creeerde: `/content/dam/wknd/en/adventures/teams/yosemite-team/yosemite-team`. Dit is een geneste fragmentverwijzing. Het fragment van de Inhoud van het Team bevat een verwijzing naar het model van de Persoon dat verwijzingenInfo en de modellen van het Adres van het Contact. Daarom hebt u geneste inhoudsfragmenten drie niveaus omlaag.
+1. De fragmentverwijzing toevoegen in het dialoogvenster **Instructieteam** veld. De weg van het Team zou het Fragment van de Inhoud van het Team van Yosemite moeten van verwijzingen voorzien dat u creeerde: `/content/dam/wknd-shared/en/adventures/teams/yosemite-team/yosemite-team`. Dit is een geneste fragmentverwijzing. Het fragment van de Inhoud van het Team bevat een verwijzing naar het model van de Persoon dat verwijzingenInfo en de modellen van het Adres van het Contact. Daarom hebt u geneste inhoudsfragmenten drie niveaus omlaag.
 
-1. De fragmentverwijzing toevoegen in het dialoogvenster **Beheerder** veld. Laten we zeggen dat Jacob Wester een beheerder is voor het Yosemite Backpackaging Adventure. Het pad moet leiden naar het Jacob Wester-inhoudsfragment en er als volgt uitzien: `/content/dam/wknd/en/adventures/instructors/jacob-wester`.
+1. De fragmentverwijzing toevoegen in het dialoogvenster **Beheerder** veld. Laten we zeggen dat Jacob Wester een beheerder is voor het Yosemite Backpackaging Adventure. Het pad moet leiden naar het Jacob Wester-inhoudsfragment en er als volgt uitzien: `/content/dam/wknd-shared/en/adventures/instructors/jacob-wester`.
 
 1. U hebt nu drie fragmentverwijzingen toegevoegd aan een Adventure Content-fragment. De velden zien er als volgt uit:
 
@@ -396,6 +397,4 @@ Gefeliciteerd! U hebt nu inhoudsfragmenten gemaakt op basis van de geavanceerde 
 
 ## Volgende stappen
 
-In de [volgende hoofdstuk](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), zult u leren over het verzenden van geavanceerde vragen GraphQL gebruikend GraphiQL Geïntegreerde Ontwikkelomgeving (winde). Met deze query&#39;s kunnen we de gegevens bekijken die in dit hoofdstuk zijn gemaakt en deze query&#39;s uiteindelijk toevoegen aan de WKND-app.
-
-Hoewel dit optioneel is voor deze zelfstudie, dient u alle inhoud te publiceren in situaties waarin de inhoud in de praktijk wordt geproduceerd. Meer informatie over de auteur- en publicatie-omgevingen vindt u in de [videoreeks zonder hoofd](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md)
+In de [volgende hoofdstuk](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), leert u over het verzenden van geavanceerde vragen GraphQL gebruikend de GraphiQL Geïntegreerde Milieu van de Ontwikkeling (winde). Met deze query&#39;s kunnen we de gegevens bekijken die in dit hoofdstuk zijn gemaakt en deze query&#39;s uiteindelijk toevoegen aan de WKND-app.

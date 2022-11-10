@@ -7,9 +7,9 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: 7631432881de3deabbe831b2aec40d924b393442
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ In dit hoofdstuk wordt ook beschreven hoe u de validatieregels voor inhoudsverwi
 
 ## Vereisten {#prerequisites}
 
-Dit is een geavanceerde zelfstudie. Voordat u verdergaat met dit hoofdstuk, moet u ervoor zorgen dat u het [snelle installatie](../quick-setup/cloud-service.md). Zorg ervoor dat u ook door het vorige overzichtshoofdstuk voor meer informatie over de opstelling voor het geavanceerde leerprogramma hebt gelezen.
+Dit is een geavanceerde zelfstudie. Voordat u verdergaat met dit hoofdstuk, moet u ervoor zorgen dat u het [snelle installatie](../quick-setup/cloud-service.md). Zorg ervoor dat u ook de vorige [overzicht](../overview.md) hoofdstuk voor meer informatie over de opstelling voor het geavanceerde leerprogramma.
 
 ## Doelstellingen {#objectives}
 
@@ -48,11 +48,11 @@ De volgende video biedt een korte inleiding tot Modellen van inhoudsfragmenten e
 
 Laten we een aantal modellen van inhoudsfragmenten maken voor de WKND-app. Raadpleeg het desbetreffende hoofdstuk in het dialoogvenster [basiszelfstudie](../multi-step/content-fragment-models.md).
 
-1. Navigeren naar **Gereedschappen** > **Activa** > **Modellen van inhoudsfragmenten**.
+1. Navigeren naar **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**.
 
    ![Pad voor modellen van inhoudsfragmenten](assets/define-content-fragment-models/content-fragment-models-path.png)
 
-1. Selecteren **WKND-site** Hiermee geeft u een lijst weer met bestaande modellen inhoudsfragmenten voor de site.
+1. Selecteren **WKND gedeeld** Hiermee geeft u een lijst weer met bestaande modellen inhoudsfragmenten voor de site.
 
 ### Contactinfo-model {#contact-info-model}
 
@@ -78,11 +78,9 @@ Als u klaar bent, selecteert u **Opslaan** om uw wijzigingen te bevestigen en de
 
 Maak vervolgens een model voor een adres.
 
-1. Van de **WKND-site**, selecteert u **Maken** in de rechterbovenhoek.
+1. Van de **WKND gedeeld**, selecteert u **Maken** in de rechterbovenhoek.
 
-1. Voer een titel van &quot;Adres&quot; in en selecteer vervolgens **Maken**.
-
-   i. Selecteer **Openen** om het nieuwe model te bewerken.
+1. Voer een titel van &quot;Adres&quot; in en selecteer vervolgens **Maken**. Selecteer **Openen** om het nieuwe model te bewerken.
 
 1. Sleep een **Tekst met één regel** op het model en geef het een **Veldlabel** van &quot;Straatadres&quot;. De eigenschapsnaam wordt vervolgens ingevuld als `streetAddress`. Selecteer **Vereist** selectievakje.
 
@@ -114,7 +112,7 @@ Maak vervolgens een model dat informatie over een persoon bevat.
 
 1. In de **Eigenschappen** onder de **Modellen voor toegestane inhoudsfragmenten** veld, selecteert u het mappictogram en kiest u vervolgens het **Contactinfo** eerder gemaakt fragmentmodel.
 
-1. Voeg een **Content Reference** veld en geef het een **Veldlabel** van &quot;Profielbeeld&quot;. Selecteer het mappictogram onder **Hoofdpad** om de padselectie te openen. Selecteer een hoofdpad door **content** > **Activa** en selecteert u vervolgens het selectievakje voor **WKND-site**. Gebruik de **Selecteren** klikt u rechtsboven om het pad op te slaan. Het uiteindelijke tekstpad moet worden gelezen `/content/dam/wknd`.
+1. Voeg een **Content Reference** veld en geef het een **Veldlabel** van &quot;Profielbeeld&quot;. Selecteer het mappictogram onder **Hoofdpad** om de padselectie te openen. Selecteer een hoofdpad door **content** > **Activa** en selecteert u vervolgens het selectievakje voor **WKND gedeeld**. Gebruik de **Selecteren** klikt u rechtsboven om het pad op te slaan. Het uiteindelijke tekstpad moet worden gelezen `/content/dam/wknd-shared`.
 
    ![Hoofdpad van inhoudsverwijzing](assets/define-content-fragment-models/content-reference-root-path.png)
 
@@ -129,18 +127,19 @@ Maak vervolgens een model dat informatie over een persoon bevat.
 
 1. Voor **Max**, typt u &quot;5&quot; en voor **Eenheid selecteren** selecteert u &quot;Megabytes (MB)&quot;. Bij deze validatie kunnen alleen afbeeldingen van de opgegeven grootte worden gekozen.
 
-1. Onder **Alleen opgegeven afbeeldingsbreedte accepteren**, selecteert u &quot;Maximumbreedte&quot;. In de **Max (pixels)** Voer &quot;500&quot; in in het veld dat wordt weergegeven. Selecteer dezelfde opties voor **Alleen een opgegeven afbeeldingshoogte accepteren**.
+1. Onder **Alleen opgegeven afbeeldingsbreedte accepteren**, selecteert u &quot;Maximumbreedte&quot;. In de **Max (pixels)** Voer &quot;10000&quot; in in het veld dat wordt weergegeven. Selecteer dezelfde opties voor **Alleen een opgegeven afbeeldingshoogte accepteren**.
 
    Deze validaties zorgen ervoor dat toegevoegde afbeeldingen de opgegeven waarden niet overschrijden. De validatieregels moeten er nu als volgt uitzien:
+
    ![Validatieregels voor verwijzingen naar inhoud](assets/define-content-fragment-models/content-reference-validation.png)
 
 1. Voeg een **Tekst met meerdere regels** veld en geef het een **Veldlabel** van &quot;Biografie&quot;. Laat de **Standaardtype** vervolgkeuzelijst als de standaardoptie RTF.
 
    ![Opties voor biografie](assets/define-content-fragment-models/biography.png)
 
-1. Ga naar de **Gegevenstypen** en sleep vervolgens een **Opsomming** veld onder &quot;Profielbeeld&quot;. In plaats van de standaardinstelling **Renderen als** selecteert u **Vervolgkeuzelijst**. Ga een selectie van de opties van het de ervaringsniveau van de instructeur zoals Expert, Geavanceerd in, Midden.
+1. Ga naar de **Gegevenstypen** en sleep vervolgens een **Opsomming** veld onder &quot;Biografie&quot;. In plaats van de standaardinstelling **Renderen als** selecteert u **Vervolgkeuzelijst** en een **Veldlabel** van &quot;Erviteitsniveau instructeur&quot;. Ga een selectie van de opties van het de ervaringsniveau van de instructeur zoals in _Expert, geavanceerd, tussentijds_.
 
-1. Vervolgens sleept u een andere **Opsomming** onder &quot;Niveau van de Ervaring van de Instructeur&quot; en kies &quot;checkboxes&quot;onder **Renderen als** optie. Voer verschillende vaardigheden in, zoals het klimmen van rots, surfen, fietsen, skiën en backpackaging. Het label en de waarde van de optie moeten overeenkomen met de onderstaande waarden:
+1. Vervolgens sleept u een andere **Opsomming** onder &quot;Niveau van de Ervaring van de Instructeur&quot; en kies &quot;checkboxes&quot;onder **Renderen als** optie. Geef het een **Veldlabel** van &quot;Skills&quot;. Voer verschillende vaardigheden in, zoals het klimmen van rots, surfen, fietsen, skiën en backpackaging. Het label en de waarde van de optie moeten overeenkomen met de onderstaande waarden:
 
    ![Opsomming vaardigheden](assets/define-content-fragment-models/skills-enum.png)
 
@@ -160,7 +159,7 @@ In het volgende inhoudsfragmentmodel wordt een fysieke locatie beschreven. Dit m
 
 1. Voeg vervolgens een **Fragmentverwijzing** veld en label &quot;Contactinfo&quot;. Op het tabblad Eigenschappen, onder **Modellen voor toegestane inhoudsfragmenten**, selecteert u de **Mappictogram** en kies het fragmentmodel &quot;Contactinfo&quot; dat u eerder hebt gemaakt.
 
-1. Voeg een **Content Reference** veld onder &quot;Contactinfo&quot;. Geef het label &quot;Locatieafbeelding&quot;. De **Hoofdpad** moeten `/content/dam/wknd.` Onder **Alleen opgegeven inhoudstypen accepteren** selecteert u Afbeelding.
+1. Voeg een **Content Reference** veld onder &quot;Contactinfo&quot;. Geef het label &quot;Locatieafbeelding&quot;. De **Hoofdpad** moeten `/content/dam/wknd-shared.` Onder **Alleen opgegeven inhoudstypen accepteren** selecteert u Afbeelding.
 
 1. Laten we ook een **JSON-object** veld onder &quot;Locatieafbeelding&quot;. Aangezien dit gegevenstype flexibel is, kan het worden gebruikt om het even welke gegevens te tonen u in uw inhoud wilt omvatten. In dit geval wordt het JSON-object gebruikt om informatie over het weer weer weer te geven. Geef het JSON-object het label &#39;Weer op seizoen&#39;. In de **Eigenschappen** tabblad, voegt u een **Beschrijving** de gebruiker weet dus welke gegevens hij hier moet invoeren : &quot;JSON-gegevens over het seizoen waarin de gebeurtenis zich bevindt (lente, zomer, herfst, winter).&quot;
 
@@ -168,7 +167,7 @@ In het volgende inhoudsfragmentmodel wordt een fysieke locatie beschreven. Dit m
 
 1. Als u het tabblad Locatieadres wilt maken, voegt u een **Tijdelijke aanduiding voor tab** aan het model en etiketteer het &quot;Adres van de Plaats.&quot;
 
-1. Sleep een **Fragmentverwijzing** veld en van het tabblad Eigenschappen, onder **Modellen voor toegestane inhoudsfragmenten**, selecteert u de **Adres** model.
+1. Sleep een **Fragmentverwijzing** veld en van het eigenschappentabblad, labelt u het als &quot;Adres&quot; en onder **Modellen voor toegestane inhoudsfragmenten**, selecteert u de **Adres** model.
 
 1. Selecteren **Opslaan** om uw wijzigingen te bevestigen en de Content Fragment Model Editor te sluiten. Het voltooide model van de Plaats zou als hieronder moeten verschijnen:
 
@@ -178,7 +177,7 @@ In het volgende inhoudsfragmentmodel wordt een fysieke locatie beschreven. Dit m
 
 Tot slot creeer een model dat een team van mensen beschrijft.
 
-1. Van de **WKND-site** pagina, selecteert u **Maken** om een ander inhoudsfragmentmodel te maken. Voer voor de modeltitel &quot;Team&quot; in. Selecteer **Maken** gevolgd door **Openen** in het succesmodaal dat verschijnt.
+1. Van de **WKND gedeeld** pagina, selecteert u **Maken** om een ander inhoudsfragmentmodel te maken. Voer voor de modeltitel &quot;Team&quot; in. Selecteer **Maken** gevolgd door **Openen** in het succesmodaal dat verschijnt.
 
 1. Voeg een **Tekst met meerdere regels** aan het formulier. Onder **Veldlabel**, typt u &quot;Beschrijving&quot;.
 
@@ -186,7 +185,7 @@ Tot slot creeer een model dat een team van mensen beschrijft.
 
    ![Opties voor datum en tijd](assets/define-content-fragment-models/date-and-time.png)
 
-1. Ga naar de **Gegevenstypen** tab. Onder de &quot;Datum van de Oprichting van het Team&quot;, voeg a toe **Fragmentverwijzing**. In de **Renderen als** vervolgkeuzelijst selecteert u &quot;multifield&quot;. Voor **Veldlabel**, voer &quot;Teamleden&quot; in. Dit gebied verbindt met het model van de Persoon eerder gecreeerd. Aangezien het gegevenstype een multi-gebied is, kunnen de veelvoudige fragmenten van de Persoon worden toegevoegd, toelatend de verwezenlijking van een team van mensen.
+1. Ga naar de **Gegevenstypen** tab. Onder de &quot;Datum van de Oprichting van het Team&quot;, voeg a toe **Fragmentverwijzing**. In de **Renderen als** vervolgkeuzelijst selecteert u &quot;multifield&quot;. Voor **Veldlabel**, voer &quot;Teamleden&quot; in. Dit veld verwijst naar de _Persoon_ eerder gemaakt model. Aangezien het gegevenstype een multi-gebied is, kunnen de veelvoudige fragmenten van de Persoon worden toegevoegd, toelatend de verwezenlijking van een team van mensen.
 
    ![Fragmentverwijzingsopties](assets/define-content-fragment-models/fragment-reference.png)
 
@@ -200,7 +199,7 @@ Tot slot creeer een model dat een team van mensen beschrijft.
 
 Gelijkaardig aan hoe het model van het Team een fragmentverwijzing naar het model van de Persoon heeft, moeten de modellen van het Team en van de Plaats van het model van het Avontuur worden van verwijzingen voorzien om deze nieuwe modellen in WKND te tonen app.
 
-1. Van de **WKND-site** pagina, selecteert u de **Adventure** model, selecteer dan **Bewerken** in de bovenste navigatie.
+1. Van de **WKND gedeeld** pagina, selecteert u de **Adventure** model, selecteer dan **Bewerken** in de bovenste navigatie.
 
    ![Pad voor bewerken van avontuur](assets/define-content-fragment-models/adventure-edit-path.png)
 
