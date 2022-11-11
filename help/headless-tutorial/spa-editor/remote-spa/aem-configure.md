@@ -7,10 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7631
 thumbnail: kt-7631.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -26,26 +28,34 @@ Terwijl de SPA codebase buiten AEM wordt beheerd, wordt een AEM project vereist 
 + Subproject voor het definiëren van SPA naar AEM URL-toewijzingen
 + OSGi-configuratiemappen
 
+## Download het basisproject van GitHub
+
+Download de `aem-guides-wknd-graphql` project van Github.com. Dit zal sommige basislijndossiers bevatten die in dit project worden gebruikt.
+
+```
+$ mkdir -p ~/Code
+$ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd remote-spa-tutorial
+```
+
 ## Een AEM project maken
 
-Creeer een AEM project waarin configuraties en basislijninhoud worden beheerd.
+Creeer een AEM project waarin configuraties en basislijninhoud worden beheerd. Dit project wordt gegenereerd binnen de gekloonde `aem-guides-wknd-graphql` project `remote-spa-tutorial` map.
 
 _Gebruik altijd de nieuwste versie van het dialoogvenster [AEM Archetype](https://github.com/adobe/aem-project-archetype)._
 
-
 ```
-$ mkdir -p ~/Code/wknd-app
-$ cd ~/Code/wknd-app
+$ cd ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial
 $ mvn -B archetype:generate \
  -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=27 \
+ -D archetypeVersion=39 \
  -D aemVersion=cloud \
  -D appTitle="WKND App" \
  -D appId="wknd-app" \
  -D groupId="com.adobe.aem.guides.wkndapp" \
  -D frontendModule="react"
-$ mv ~/Code/wknd-app/wknd-app ~/Code/wknd-app/com.adobe.aem.guides.wknd-app
+$ mv ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/wknd-app ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app
 ```
 
 _Het laatste bevel wijzigt eenvoudig de naam van de AEM projectomslag zodat is het duidelijk het AEM project, en niet om met Verre SPA worden verward__
@@ -67,7 +77,7 @@ Met het basis AEM project wordt geproduceerd, verzekeren een paar aanpassingen S
 
 Aangezien de SPA een Verre SPA is, veronderstel het buiten het AEM project wordt ontwikkeld en geleid. Als u conflicten wilt voorkomen, verwijdert u de `ui.frontend` project van het opstellen. Als de `ui.frontend` project niet wordt verwijderd, twee SPA, de SPA die standaard in de `ui.frontend` project en de Verre SPA, wordt geladen tezelfdertijd in de AEM SPA Redacteur.
 
-1. Het AEM-project openen (`~/Code/wknd-app/com.adobe.aem.guides.wknd-app`) in uw IDE
+1. Het AEM-project openen (`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) in uw IDE
 1. De hoofdmap openen `pom.xml`
 1. Opmerkingen plaatsen bij `<module>ui.frontend</module` uit `<modules>` list
 
