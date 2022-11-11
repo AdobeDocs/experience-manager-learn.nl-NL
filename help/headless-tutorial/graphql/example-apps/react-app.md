@@ -9,10 +9,11 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+last-substantial-update: 2022-11-09T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
+source-git-commit: c5f94b12a9af50bc4e7db693d6560d120ab8bf3b
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -43,7 +44,7 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 ## AEM
 
-De React toepassing werkt met de volgende AEM plaatsingsopties. Alle implementaties vereisen de [WKND-site v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) te installeren.
+De React toepassing werkt met de volgende AEM plaatsingsopties. Alle implementaties vereisen de [WKND-site v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-2.1.0) te installeren.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Lokale instelling met [de SDK van AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
@@ -141,7 +142,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -187,46 +188,67 @@ query($slug: String!) {
 
 AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, [AEM headless client voor JavaScript](https://github.com/adobe/aem-headless-client-js) wordt gebruikt om [Voer de voortgezette vragen GraphQL uit](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) tegen AEM en laad de adventure-inhoud in de app.
 
-Elke voortgezette query heeft een bijbehorende functie in `src/api/persistedQueries.js`, die asynchroon het eindpunt van de GET van AEM HTTP roept, en de avontuurgegevens terugkeert.
+Elke voortgezette vraag heeft het overeenkomstige Reageren [useEffect](https://reactjs.org/docs/hooks-effect.html) haak in `src/api/usePersistedQueries.js`, die asynchroon roept de AEM GET van HTTP bleef vraageindpunt, en keert de avontuurgegevens terug.
 
 Elke functie roept op zijn beurt de `aemHeadlessClient.runPersistedQuery(...)`, die de voortgezette vraag GraphQL uitvoeren.
 
 ```js
-// src/api/persistedQueries.js
+// src/api/usePersistedQueries.js
 
 /**
- * Queries a list of all Adventures using the persisted path "wknd-shared/adventures-all"
- * @returns {data, errors}
+ * React custom hook that returns a list of adevntures by activity. If no activity is provided, all adventures are returned.
+ * 
+ * Custom hook that calls the 'wknd-shared/adventures-all' or 'wknd-shared/adventures-by-activity' persisted query.
+ *
+ * @returns an array of Adventure JSON objects, and array of errors
  */
-export const getAllAdventures = async function() {
-    return executePersistedQuery('wknd-shared/adventures-all');
+export function useAdventuresByActivity(adventureActivity) {
+  ...
+  // If an activity is provided (i.e "Camping", "Hiking"...) call wknd-shared/adventures-by-activity query
+  if (adventureActivity) {
+    // The key is 'activity' as defined in the persisted query
+    const queryParameters = { activity: adventureActivity };
+
+    // Call the AEM GraphQL persisted query named "wknd-shared/adventures-by-activity" with parameters
+    response = await fetchPersistedQuery("wknd-shared/adventures-by-activity", queryParameters);
+  } else {
+    // Else call the AEM GraphQL persisted query named "wknd-shared/adventures-all" to get all adventures
+    response = await fetchPersistedQuery("wknd-shared/adventures-all");
+  }
+  
+  ... 
 }
 
 ...
-
 /**
- * Uses the AEM Headless SDK to execute a query besed on a persistedQueryPath and optional query variables
- * @param {*} persistedQueryPath 
- * @param {*} queryVariables 
- * @returns 
+ * Private function that invokes the AEM Headless client.
+ * 
+ * @param {String} persistedQueryName the fully qualified name of the persisted query
+ * @param {*} queryParameters an optional JavaScript object containing query parameters
+ * @returns the GraphQL data or an error message 
  */
- const executePersistedQuery = async function(persistedQueryPath, queryVariables) {
+async function fetchPersistedQuery(persistedQueryName, queryParameters) {
+  let data;
+  let err;
 
-    let data;
-    let errors;
+  try {
+    // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax
+    const response = await aemHeadlessClient.runPersistedQuery(
+      persistedQueryName,
+      queryParameters
+    );
+    // The GraphQL data is stored on the response's data field
+    data = response?.data;
+  } catch (e) {
+    // An error occurred, return the error messages
+    err = e
+      .toJSON()
+      ?.map((error) => error.message)
+      ?.join(", ");
+    console.error(e.toJSON());
+  }
 
-    try {
-        // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax
-        const response = await aemHeadlessClient.runPersistedQuery(persistedQueryPath, queryVariables);
-        // The GraphQL data is stored on the response's data field
-        data = response.data;
-        errors = response.errors ? mapErrors(response.errors) : undefined;
-    } catch (e) {
-        console.error(e.toJSON());
-        errors = e;
-    }
-
-    return {data, errors}; 
+  return { data, err };
 }
 ```
 
@@ -236,16 +258,15 @@ De React toepassing gebruikt twee meningen om de avontuurgegevens in de Webervar
 
 + `src/components/Adventures.js`
 
-   Oproepen `getAllAdventures()` van `src/api/persistedQueries.js`  en geeft de geretourneerde avonturen weer in een lijst.
+   Oproepen `getAdventuresByActivity(..)` van `src/api/usePersistedQueries.js` en geeft de geretourneerde avonturen weer in een lijst.
 
 + `src/components/AdventureDetail.js`
 
    Roept de `getAdventureBySlug(..)` met de `slug` param werd via de avontuurselectie op de `Adventures` en geeft de details van één avontuur weer.
 
-
 ### Omgevingsvariabelen
 
-Meerdere [omgevingsvariabelen](https://create-react-app.dev/docs/adding-custom-environment-variables) worden gebruikt om verbinding te maken met een AEM. Standaard maakt verbinding met AEM-publicatie die wordt uitgevoerd op `http://localhost:4503`. Als u de AEM verbinding wilt wijzigen, werkt u de `.env.development` bestand:
+Meerdere [omgevingsvariabelen](https://create-react-app.dev/docs/adding-custom-environment-variables) worden gebruikt om verbinding te maken met een AEM. Standaard maakt verbinding met AEM-publicatie die wordt uitgevoerd op `http://localhost:4503`. Werk de `.env.development` bestand, om de AEM verbinding te wijzigen:
 
 + `REACT_APP_HOST_URI=http://localhost:4502`: Instellen op AEM doelhost
 + `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: Plaats de de eindpuntweg GraphQL. Dit wordt niet gebruikt door deze React-app, omdat deze app alleen voortgezette query&#39;s gebruikt.
@@ -254,8 +275,8 @@ Meerdere [omgevingsvariabelen](https://create-react-app.dev/docs/adding-custom-e
    + `dev-token`: Ontwikkelingstoken gebruiken voor lokale ontwikkeling op AEM as a Cloud Service
    + `basic`: Gebruiker/pas gebruiken voor lokale ontwikkeling met lokale AEM-auteur
    + Leeg laten om verbinding te maken met AEM zonder verificatie
-+ `REACT_APP_AUTHORIZATION=admin:admin`: Stel basisverificatiegegevens in die u wilt gebruiken als u verbinding maakt met een AEM-auteuromgeving (alleen voor ontwikkeling). Als u verbinding maakt met een publicatieomgeving, is deze instelling niet nodig.
-+ `REACT_APP_DEV_TOKEN`: Dev token string. Naast Basic-auth (user:pass) kunt u naast de externe instantie een verbinding maken met behulp van Betover-auth met DEV-token vanuit de Cloud-console
++ `REACT_APP_AUTHORIZATION=admin:admin`: Stel de basisverificatiereferenties in die moeten worden gebruikt als u verbinding maakt met een AEM-auteuromgeving (alleen voor ontwikkeling). Als u verbinding maakt met een publicatieomgeving, is deze instelling niet nodig.
++ `REACT_APP_DEV_TOKEN`: Dev token string. Naast Basisverificatie (user:pass) kunt u naast verificatie op afstand ook Vierdere verificatie gebruiken met DEV-token van de Cloud-console
 + `REACT_APP_SERVICE_TOKEN`: Pad naar bestand met servicereferenties. Als u verbinding wilt maken met een externe instantie, kan verificatie ook worden uitgevoerd met het servicetoken (download het bestand vanuit de Developer Console).
 
 ### AEM
@@ -266,6 +287,6 @@ Als u verbinding maakt met een AEM auteursomgeving, gaat u naar [de authentifica
 
 ### Delen van bronnen van oorsprong (CORS)
 
-Deze React toepassing baseert zich op een op AEM-Gebaseerde configuratie CORS die op het doel AEM milieu loopt en veronderstelt dat React app loopt op `http://localhost:3000` in de ontwikkelingsmodus. De [CORS-configuratie](https://github.com/adobe/aem-guides-wknd/blob/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json) maakt deel uit van de [WKND-site](https://github.com/adobe/aem-guides-wknd).
+Deze React toepassing baseert zich op een op AEM-Gebaseerde configuratie CORS die op het doel AEM milieu loopt en veronderstelt dat React app loopt op `http://localhost:3000` in de ontwikkelingsmodus. De [CORS-configuratie](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json) maakt deel uit van de [WKND-site](https://github.com/adobe/aem-guides-wknd).
 
 ![CORS-configuratie](assets/react-app/cross-origin-resource-sharing-configuration.png)
