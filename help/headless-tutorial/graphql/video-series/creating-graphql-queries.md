@@ -9,9 +9,9 @@ level: Beginner
 kt: 7621
 thumbnail: 332860.jpg
 exl-id: c4f2e8f5-6acf-4efb-bdec-84d264568856
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a627de5a2edfeb4416f1166a44bbd1d51be55c91
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ In deze video zult u:
 + Leer hoe u specifieke gegevenskenmerken kunt filteren en aanvragen
 + Leer hoe u het gereedschap GraphiQL installeert en gebruikt
 
+>[!CAUTION]
+>
+>De **GraphiQL-installatie** hoofdstuk dat begint bij 1:06 is niet vereist in de nieuwere versies van AEM als Cloud Service. Ingebouwd **GraphiQL Explorer** wordt opgegeven, zie [GraphiQL IDE gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) voor meer informatie .
+
+
 >[!VIDEO](https://video.tv.adobe.com/v/332860/?quality=12&learn=on)
 
-_Download de  [Postman-](./assets/aem-headless-video-series.postman_collection.json) collectie die in de gehele AEM headless Video Series wordt gebruikt._
+_Download de [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) gebruikt in de AEM headless Video Series._
