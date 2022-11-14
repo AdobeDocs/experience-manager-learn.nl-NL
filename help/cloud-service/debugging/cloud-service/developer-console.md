@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 751aed9b8659d6a600429efb2bf60825b6d39144
+source-git-commit: e8e5c67f6e9f057fd7472b76ee09d7f87b133c89
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Elke AEM as a Cloud Service omgeving heeft een eigen ontwikkelaarsconsole.
 Voor toegang tot en gebruik van de Developer Console moeten de volgende machtigingen aan de Adobe ID van de ontwikkelaar worden gegeven via [Adobe](https://adminconsole.adobe.com).
 
 1. Zorg ervoor dat de Adobe Org die Cloud Manger en AEM as a Cloud Service producten heeft beïnvloed, actief is in de Adobe Org-switch.
-1. De ontwikkelaar moet lid zijn van het product van Cloud Manager __Ontwikkelaar - Cloud Service__ Productprofiel.
+1. De ontwikkelaar moet lid zijn van de [Product van Cloud Manager __Ontwikkelaar - Cloud Service__ Productprofiel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
    + Als dit lidmaatschap niet bestaat, kan de ontwikkelaar zich niet aanmelden bij de Developer Console.
-1. De ontwikkelaar moet lid zijn van de __AEM__ of __AEM__ Productprofiel op AEM-auteur en/of -publicatie.
+1. De ontwikkelaar moet lid zijn van de [__AEM__ of __AEM__ Productprofiel op AEM-auteur en/of AEM-publicatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + Als dit lidmaatschap niet bestaat, [status](#status) dumps wordt een time-out met een fout van 401 die niet is geautoriseerd.
 
 ### Toegang tot ontwikkelaarsconsole voor probleemoplossing
