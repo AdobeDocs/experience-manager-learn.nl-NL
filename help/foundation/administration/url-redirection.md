@@ -9,9 +9,9 @@ level: Intermediate
 kt: 11466
 last-substantial-update: 2022-10-14T00:00:00Z
 index: y
-source-git-commit: d5645e975aa290392348cc69d078b24921a7d13a
+source-git-commit: 00ea3a8e6b69cd99cf293093d38b59df51f6a26d
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,10 @@ ht-degree: 0%
 
 URL omleiden is een algemeen aspect als onderdeel van websitebewerking. Architecten en beheerders worden uitgedaagd om de beste oplossing te vinden op hoe en waar te om de omleiding te beheren URL die flexibiliteit en snelle omleidingstijd verstrekt.
 
-Zorg ervoor dat u vertrouwd bent met de [AEM 6,x)](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-2.html#the-%E2%80%9Clegacy%E2%80%9D-setup) en [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html#runtime-architecture) infrastructuur. De belangrijkste verschillen zijn:
+Zorg ervoor dat u vertrouwd bent met de [AEM (6.x) ook bekend als AEM Classic](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-2.html#the-%E2%80%9Clegacy%E2%80%9D-setup) en [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html#runtime-architecture) infrastructuur. De belangrijkste verschillen zijn:
 
-1.  AEM as a Cloud Service heeft [ingebouwde CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)Maar klanten kunnen een CDN (BYOCDN) vóór een door AEM beheerde CDN opgeven.
-1.  AEM 6.x of on-premise of de Beheerde Diensten van Adobe (AMS) geen AEM-beheerde CDN omvat, en de klanten moeten hun brengen.
+1. AEM as a Cloud Service heeft [ingebouwde CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)Maar klanten kunnen een CDN (BYOCDN) vóór een door AEM beheerde CDN opgeven.
+1. AEM 6.x of on-premise of de Beheerde Diensten van Adobe (AMS) geen AEM-beheerde CDN omvat, en de klanten moeten hun brengen.
 
 De andere AEM services (AEM Author/Publish en Dispatcher) zijn anders conceptueel vergelijkbaar tussen AEM 6.x en AEM as a Cloud Service.
 
@@ -32,10 +32,11 @@ AEM URL-omleidingsoplossingen zijn als volgt:
 
 |  | Beheerd en geïmplementeerd als AEM projectcode | Capaciteit om door marketing/inhoudsteam te veranderen | AEM als compatibel met Cloud Service | Waar uitvoering in omleiding plaatsvindt |
 |---------------------------------------------------|:-----------------------:|:---------------------:|:---------------------:| :---------------------:|
-| [Aan Edge via een introductie van uw eigen CDN](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Rand/CDN |
+| [Aan de rand via een eigen CDN](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Rand/CDN |
 | [Apache `mod_rewrite` regels als Dispatcher config ](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
 | [ACS-opdrachten - Kaartbeheer omleiden](#redirect-map-manager) | ✘ | ✔ | ✘ | Dispatcher |
 | [ACS-opdrachten - Omleidingsbeheer](#redirect-manager) | ✘ | ✔ | ✔ | AEM |
+| [De `Redirect` page, eigenschap](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
 
 
 ## Oplossingsopties
@@ -51,7 +52,7 @@ Het beheren van omleidingen op Edge- of CDN-niveau heeft prestatievoordelen, maa
 
 ### Apache `mod_rewrite` module
 
-Een gemeenschappelijke oplossing gebruikt [Mod Apache Module_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html). De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt een verzender projectstructuur voor allebei [AEM 6,x](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.ams#file-structure) en [AEM as a Cloud Service](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud#file-structure) projecten. De standaardinstellingen (onveranderlijk) en aangepaste herschrijfregels worden gedefinieerd in het dialoogvenster `conf.d/rewrites` map en de herschrijfengine is ingeschakeld voor `virtualhosts` die luistert naar de poort `80` via `conf.d/dispatcher_vhost.conf` bestand. Een voorbeeldimplementatie is beschikbaar in het dialoogvenster [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd/tree/main/dispatcher/src/conf.d/rewrites).
+Een gemeenschappelijke oplossing gebruikt [Mod Apache Module_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html). De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt een het projectstructuur van de Verzender voor allebei [AEM 6,x](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.ams#file-structure) en [AEM as a Cloud Service](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud#file-structure) project. De standaardinstellingen (onveranderlijk) en aangepaste herschrijfregels worden gedefinieerd in het dialoogvenster `conf.d/rewrites` map en de herschrijfengine is ingeschakeld voor `virtualhosts` die luistert naar de poort `80` via `conf.d/dispatcher_vhost.conf` bestand. Een voorbeeldimplementatie is beschikbaar in het dialoogvenster [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd/tree/main/dispatcher/src/conf.d/rewrites).
 
 In AEM as a Cloud Service worden deze omleidingsregels beheerd als onderdeel van AEM code en geïmplementeerd via Cloud Manager [WebTier config-pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html#web-tier-config-pipelines) of [Volledige pijplijn](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html#full-stack-pipeline). Aldus is uw AEM project-specifiek proces in spel om, de omleidingsregels te beheren op te stellen en te vinden.
 
@@ -60,7 +61,7 @@ De meeste CDN-services plaatsen de HTTP 301- en 302-omleidingen wel in het cache
 
 ### ACS AEM Commons
 
-Er zijn twee functies beschikbaar binnen [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) om URL-omleidingen te beheren. Opmerking: ACS AEM Commons is een door de gemeenschap beheerd, open-source project dat niet door Adobe wordt ondersteund.
+Er zijn twee functies beschikbaar binnen [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) om URL-omleidingen te beheren. Opmerking: ACS AEM Commons is een door de gemeenschap beheerd open-source-project dat niet door Adobe wordt ondersteund.
 
 #### Omleiden Map Manager
 
@@ -68,14 +69,17 @@ Er zijn twee functies beschikbaar binnen [ACS AEM Commons](https://adobe-consult
 
 #### Omleidingsbeheer
 
-[Omleidingsbeheer](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) Hiermee kunnen gebruikers in AEM eenvoudig omleidingen van AEM onderhouden en publiceren. De implementatie is gebaseerd op het Java™ servlet-filter, wat een typisch JVM-bronnengebruik is. Deze eigenschap elimineert ook de afhankelijkheid van het AEM ontwikkelingsteam en de AEM plaatsingen. Redirect Manager is beide **AEM as a Cloud Service** en **AEM 6,x** compatibel. Merk op dat, terwijl het aanvankelijke opnieuw gerichte verzoek zijn dienst van de Publicatie AEM moet zijn om 301/302 te produceren, (de meeste) CDNs geheime voorgeheugen 301/302 door gebrek, toestaand verdere verzoeken om bij edge/CDN worden opnieuw gericht.
+[Omleidingsbeheer](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) Hiermee kunnen gebruikers in AEM eenvoudig omleidingen van AEM onderhouden en publiceren. De implementatie is gebaseerd op het Java™ servlet-filter, wat een typisch JVM-bronnengebruik is. Deze eigenschap elimineert ook de afhankelijkheid van het AEM ontwikkelingsteam en de AEM plaatsingen. Redirect Manager is beide **AEM as a Cloud Service** en **AEM 6,x** compatibel. Terwijl het aanvankelijke opnieuw gerichte verzoek de publicatieservice moet raken AEM om CDNs 301/302 (meeste) geheime voorgeheugen 301/302 door gebrek te produceren, toestaand verdere verzoeken om bij edge/CDN worden opnieuw gericht.
 
+### De `Redirect` page, eigenschap
+
+De out-of-the-box (OOTB) `Redirect` page, eigenschap van de [Het tabblad Geavanceerd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/page-properties.html#advanced) Hiermee kunnen auteurs van inhoud de omleidingslocatie voor de huidige pagina definiëren. Deze oplossing is het meest geschikt voor omleidingsscenario&#39;s per pagina en heeft geen centrale locatie om de pagina-omleidingen weer te geven en te beheren.
 
 ## Welke oplossing is geschikt voor de implementatie
 
 Hieronder staan enkele criteria om de juiste oplossing te bepalen. Ook, zou het de IT en Marketing proces van uw organisatie moeten helpen om de juiste oplossing te kiezen.
 
-1. Toelatend het marketing team of super gebruikers om omleidingsregels zonder het AEM ontwikkelingsteam en AEM versie, plaatsingscycli te beheren.
-1. Het proces om, de veranderingen of risicovermindering te verifiëren te volgen en terug te keren.
+1. Toelatend het marketing team of super gebruikers om omleidingsregels zonder het AEM ontwikkelingsteam en de AEM plaatsingen te beheren.
+1. Het proces om, de veranderingen of risicobeperking te beheren te verifiëren, te volgen en terug te keren.
 1. Beschikbaarheid van _Expertise in de materie_ for **Bij Edge via CDN-service** oplossing.
 
