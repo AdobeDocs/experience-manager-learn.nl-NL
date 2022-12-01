@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1139'
 ht-degree: 1%
 
 ---
@@ -209,3 +209,5 @@ Dit script wanneer het wordt gebruikt, controleert en registreert alle instantie
 Dit manuscript wanneer gebruikt zal om het even welke instanties controleren en registreren het vooraf gaat maar zal enkel gezond terugkeren ongeacht of AEM een fout terugkeert of niet.
 
 > `Note:` Dit script wordt gebruikt wanneer de health check niet naar wens functioneert en een overschrijving toestaat om AEM instanties in het taakverdelingsmechanisme te houden.
+
+[Volgende -> GIT-symmetrieën](./git-symlinks.md)
