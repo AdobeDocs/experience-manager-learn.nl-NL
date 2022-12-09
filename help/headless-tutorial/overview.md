@@ -1,20 +1,20 @@
 ---
-title: Tutorials zonder kop AEM
-description: Een verzameling zelfstudies voor het gebruik van Adobe Experience Manager als een CMS zonder koptekst.
+title: Tutorials voor headless in AEM
+description: Een verzameling CMS-zelfstudies zonder koptekst voor Adobe Experience Manager. Lesbestanden verkennen via API, framework en voorbeeldtoepassingen.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
+source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
-# Tutorials zonder kop AEM{#aem-headless-tutorials}
+# Tutorials voor headless in AEM{#aem-headless-tutorials}
 
 Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te definiëren en de inhoud ervan als JSON te leveren. Gebruik praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken en te kiezen wat bij u past.
 
@@ -137,7 +137,7 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </a>
     </div>
     <p>
-    <em>Bouw een React JS app gebruikend GraphQL in een puur hoofdloos scenario.</em>
+    <em>Creëer een React JS-app met GraphQL in een puur koploos scenario.</em>
     <p>
   </td>
   <td>
