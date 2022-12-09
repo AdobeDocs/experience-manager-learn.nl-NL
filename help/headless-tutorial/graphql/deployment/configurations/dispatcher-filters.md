@@ -1,5 +1,5 @@
 ---
-title: Verzendingsfilters voor AEM GraphQL
+title: Dispatcher-filters voor AEM GraphQL
 description: Leer hoe u AEM Publish Dispatcher-filters configureert voor gebruik met AEM GraphQL.
 version: Cloud Service
 feature: GraphQL API
@@ -8,9 +8,9 @@ role: Developer, Architect
 level: Intermediate
 kt: 10829
 thumbnail: kt-10829.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 442020d854d8f42c5d8a1340afd907548875866e
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,16 @@ De AEM-filterconfiguratie van Dispatcher publiceren definieert de URL-patronen d
 Een `allow` regel met het URL-patroon `/graphql/execute.json/*`en controleer de bestands-id (bijvoorbeeld `/0600`, is uniek in het dossier van het voorbeeldlandbouwbedrijf).
 Dit staat HTTP- GET- verzoek aan het persistente vraageindpunt toe, zoals `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` tot en met AEM Publish.
 
+Als het gebruiken van de Fragmenten van de Ervaring in uw AEM Headless ervaring, doe het zelfde voor deze wegen.
+
 + `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
 ```
 ...
-/0600 { /type "allow" /url "/graphql/execute.json/*" }
+# Allow headless requests for Persisted Query endpoints
+/0600 { /type "allow" /method '(POST|OPTIONS)' /url "/graphql/execute.json/*" }
+# Allow headless requests for Experience Fragments
+/0601 { /type "allow" /method '(GET|OPTIONS)' /url "/content/experience-fragments/*" }
 ...
 ```
 
