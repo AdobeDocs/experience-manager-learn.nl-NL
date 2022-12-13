@@ -5,10 +5,10 @@ breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: d5645e975aa290392348cc69d078b24921a7d13a
+source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 10%
+source-wordcount: '866'
+ht-degree: 9%
 
 ---
 
@@ -53,6 +53,18 @@ ht-degree: 10%
    + [Lokale AEM](./local-development-environment/aem-runtime.md)
    + [Lokale verzendprogramma&#39;s](./local-development-environment/dispatcher-tools.md)
 + Ontwikkeling{#developing}
+   + Uitbreidbaarheid{#extensibility}
+      + Content Fragment-console{#content-fragments}
+         + [Overzicht](./developing/extensibility/content-fragments/overview.md)
+         + [Registratie van extensies](./developing/extensibility/content-fragments/extension-registration.md)
+         + [Menu Koptekst](./developing/extensibility/content-fragments/header-menu.md)
+         + [Actiebalk](./developing/extensibility/content-fragments/action-bar.md)
+         + [Modal](./developing/extensibility/content-fragments/modal.md)
+         + [Adobe I/O Runtime-actie](./developing/extensibility/content-fragments/runtime-action.md)
+         + [Testen](./developing/extensibility/content-fragments/test.md)
+         + [Implementeren](./developing/extensibility/content-fragments/deploy.md)
+         + Voorbeelden van extensies{#example-extensions}
+            + [Extensie voor update van eigenschap Bulk](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
    + Grondbeginselen van ontwikkeling{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Lokale ontwikkelomgeving](./developing/basics/local-development-environment.md)
