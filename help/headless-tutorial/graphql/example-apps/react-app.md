@@ -1,6 +1,6 @@
 ---
 title: Reageren toepassing - Voorbeeld AEM zonder kop
-description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze React toepassing toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted vragen.
+description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze React-toepassing laat zien hoe u inhoud kunt zoeken met behulp van AEM GraphQL API's met behulp van doorlopende query's.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 10715
@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-11-09T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: c5f94b12a9af50bc4e7db693d6560d120ab8bf3b
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,6 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
 A [stapsgewijze zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) beschrijf hoe deze React-app is gemaakt.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_react_app"
->title="Inhoud aanpassen in een voorbeeld van een React-app"
->abstract="We hebben een moderne React-app ingesteld waarmee u kunt leren hoe u inhoud kunt aanpassen met behulp van de functieset zonder kop."
 
 ## Vereisten {#prerequisites}
 
@@ -101,7 +96,7 @@ Hieronder volgt een overzicht van hoe de React toepassing wordt gebouwd, hoe het
 
 ### Blijvende query&#39;s
 
-Na AEM Beste praktijken zonder hoofd, gebruikt de React toepassing AEM GraphQL voortgeduurde vragen om avontuurgegevens te vragen. De toepassing gebruikt twee voortgeduurde vragen:
+Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing van het Reageren AEM GraphQL voortgeduurde vragen om avontuurgegevens te vragen. De toepassing gebruikt twee voortgeduurde vragen:
 
 + `wknd/adventures-all` persisted query, die alle avonturen in AEM met een verkorte set eigenschappen retourneert. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
 
@@ -190,7 +185,7 @@ AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, [AEM head
 
 Elke voortgezette vraag heeft het overeenkomstige Reageren [useEffect](https://reactjs.org/docs/hooks-effect.html) haak in `src/api/usePersistedQueries.js`, die asynchroon roept de AEM GET van HTTP bleef vraageindpunt, en keert de avontuurgegevens terug.
 
-Elke functie roept op zijn beurt de `aemHeadlessClient.runPersistedQuery(...)`, die de voortgezette vraag GraphQL uitvoeren.
+Elke functie roept op zijn beurt de `aemHeadlessClient.runPersistedQuery(...)`, wordt de doorlopende GraphQL-query uitgevoerd.
 
 ```js
 // src/api/usePersistedQueries.js
@@ -269,7 +264,7 @@ De React toepassing gebruikt twee meningen om de avontuurgegevens in de Webervar
 Meerdere [omgevingsvariabelen](https://create-react-app.dev/docs/adding-custom-environment-variables) worden gebruikt om verbinding te maken met een AEM. Standaard maakt verbinding met AEM-publicatie die wordt uitgevoerd op `http://localhost:4503`. Werk de `.env.development` bestand, om de AEM verbinding te wijzigen:
 
 + `REACT_APP_HOST_URI=http://localhost:4502`: Instellen op AEM doelhost
-+ `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: Plaats de de eindpuntweg GraphQL. Dit wordt niet gebruikt door deze React-app, omdat deze app alleen voortgezette query&#39;s gebruikt.
++ `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: Stel het pad naar het GraphQL-eindpunt in. Dit wordt niet gebruikt door deze React-app, omdat deze app alleen voortgezette query&#39;s gebruikt.
 + `REACT_APP_AUTH_METHOD=`: De voorkeursverificatiemethode. Optioneel wordt standaard geen verificatie gebruikt.
    + `service-token`: De Verantwoordelijkheden van de Dienst van het gebruik om een toegangstoken op AEM as a Cloud Service te verkrijgen
    + `dev-token`: Ontwikkelingstoken gebruiken voor lokale ontwikkeling op AEM as a Cloud Service

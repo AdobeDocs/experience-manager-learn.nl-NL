@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,6 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
 >[!TIP]
 >
 >Deze verzameling zelfstudies is ontworpen voor gebruikers die liever **leren door**. Als u van de grond het leren van concepten verkiest, controleer uit [AEM Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
->title="In-line inhoud bewerken"
->abstract="Leer hoe u inhoud rechtstreeks op de pagina bewerkt waarnaar wordt verwezen met de functieset zonder kop."
 
 ## Tutorials via API
 
