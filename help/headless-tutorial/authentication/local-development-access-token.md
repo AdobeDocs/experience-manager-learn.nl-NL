@@ -13,9 +13,9 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,10 @@ Ontwikkelaars die integraties bouwen die programmatische toegang tot AEM as a Cl
 
 Het token Local Development Access biedt toegang tot de services AEM Author and Publish als de gebruiker die het token heeft gegenereerd, samen met zijn machtigingen. Ondanks dat dit een ontwikkelingstoken is, deel dit teken niet, of opslag in broncontrole.
 
-1. In [Adobe AdminConsole](https://adminconsole.adobe.com/) zorgt ervoor dat u, de ontwikkelaar, lid bent van:
+1. In [Adobe Admin Console](https://adminconsole.adobe.com/) zorgt ervoor dat u, de ontwikkelaar, lid bent van:
    + __Cloud Manager - Ontwikkelaar__ IMS-productprofiel (verleent toegang tot AEM Developer Console)
-   + Of __AEM__ of __AEM__ Het Profiel van het Product IMS voor de dienst van het AEM milieu het toegangstoken zal integreren met
-   + Sandbox AEM as a Cloud Service omgevingen vereisen alleen lidmaatschap van __AEM__ of __AEM__ Productprofiel
+   + Of __AEM__ of __AEM__ IMS-productprofiel voor de service van de AEM-omgeving waarin het toegangstoken kan worden geïntegreerd
+   + Sandbox AEM as a Cloud Service omgeving vereist alleen lidmaatschap van __AEM__ of __AEM__ Productprofiel
 1. Aanmelden bij [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM as a Cloud Service omgeving bevat om mee te integreren
 1. Tik op de knop __weglatingsteken__ naast het milieu in de __Omgevingen__ en selecteert u __Ontwerpconsole__
@@ -51,7 +51,7 @@ Het token Local Development Access biedt toegang tot de services AEM Author and 
 ![Token voor toegang tot lokale ontwikkeling - externe toepassing](assets/local-development-access-token/local-development-access-token-external-application.png)
 
 1. Download het tijdelijke Local Development Access Token van AEM Developer Console
-   + Het token Local Development Access verloopt elke 24 uur, zodat ontwikkelaars dagelijks nieuwe toegangstokens moeten downloaden
+   + De lokale Token van de Toegang van de Ontwikkeling verloopt om de 24 uur, zodat moeten de ontwikkelaars nieuwe toegangstokens dagelijks downloaden
 1. Er wordt een externe toepassing ontwikkeld die programmatisch werkt met AEM as a Cloud Service
 1. De externe toepassing leest in het Token van de Toegang van de Lokale Ontwikkeling
 1. De externe toepassing construeert HTTP- verzoeken om as a Cloud Service te AEM, toevoegend het Lokale Token van de Toegang van de Ontwikkeling als teken van de Drager aan de kopbal van de Toestemming van HTTP- verzoeken&#39;
@@ -59,14 +59,14 @@ Het token Local Development Access biedt toegang tot de services AEM Author and 
 
 ### De externe voorbeeldtoepassing
 
-We maken een eenvoudige externe JavaScript-toepassing om te illustreren hoe AEM as a Cloud Service via HTTPS via het toegangstoken voor lokale ontwikkelaars programmatisch kan worden benaderd. Dit illustreert hoe _alle_ toepassing of systeem dat buiten AEM, ongeacht kader of taal loopt, kan het toegangstoken gebruiken programmatically voor authentiek verklaren aan, en toegang, AEM as a Cloud Service. In de [volgende sectie](./service-credentials.md) deze toepassingscode wordt bijgewerkt ter ondersteuning van de methode voor het genereren van een token voor productiegebruik.
+We maken een eenvoudige externe JavaScript-toepassing om te illustreren hoe AEM as a Cloud Service via HTTPS via het toegangstoken voor lokale ontwikkelaars programmatisch kan worden benaderd. Dit illustreert hoe _alle_ toepassing of systeem dat buiten AEM, ongeacht kader of taal loopt, kan het toegangstoken gebruiken programmatically voor authentiek verklaren aan, en toegang, AEM as a Cloud Service. In de [volgende sectie](./service-credentials.md), zullen wij deze toepassingscode bijwerken om de benadering te steunen om een token voor productiegebruik te produceren.
 
 Deze voorbeeldtoepassing wordt uitgevoerd vanaf de opdrachtregel en werkt metagegevens AEM elementen bij met behulp van AEM Assets HTTP-API&#39;s. Hierbij wordt de volgende stroom gebruikt:
 
 1. Leest in parameters vanaf de opdrachtregel (`getCommandLineParams()`)
 1. Hiermee verkrijgt u het toegangstoken dat wordt gebruikt voor verificatie bij AEM as a Cloud Service (`getAccessToken(...)`)
 1. Hiermee worden alle elementen in een AEM elementmap weergegeven die in een opdrachtregelparameter zijn opgegeven (`listAssetsByFolder(...)`)
-1. De metagegevens van de weergegeven elementen bijwerken met de waarden die zijn opgegeven in de opdrachtregelparameters (`updateMetadata(...)`)
+1. De metagegevens van de weergegeven elementen bijwerken met de waarden die zijn opgegeven in opdrachtregelparameters (`updateMetadata(...)`)
 
 Het belangrijkste element in programmatically het voor authentiek verklaren aan AEM gebruikend het toegangstoken voegt een de verzoekkopbal van HTTP van de Vergunning aan alle HTTP- verzoeken toe die aan AEM worden gemaakt, in het volgende formaat:
 
@@ -96,7 +96,7 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
    * Application entry point function
    */
    (async () => {
-       console.log('Example usage: node index.js aem=https://author-p1234-e5678.adobeaemcloud.com propertyName=metadata/dc:rights "propertyValue=WKND Limited Use" folder=/wknd/en/adventures/napa-wine-tasting file=credentials-file.json' );
+       console.log('Example usage: node index.js aem=https://author-p1234-e5678.adobeaemcloud.com propertyName=metadata/dc:rights "propertyValue=WKND Limited Use" folder=/wknd-shared/en/adventures/napa-wine-tasting file=credentials-file.json' );
    
        // Parse the command line parameters
        params = getCommandLineParams();
@@ -173,7 +173,7 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
    * - aem = The AEM as a Cloud Service hostname to connect to.
    *              Example: https://author-p12345-e67890.adobeaemcloud.com
    * - folder = The asset folder to update assets in. Note that the Assets HTTP API do NOT use the JCR `/content/dam` path prefix.
-   *              Example: '/wknd/en/adventures/napa-wine-tasting'
+   *              Example: '/wknd-shared/en/adventures/napa-wine-tasting'
    * - propertyName = The asset property name to update. Note this is relative to the [dam:Asset]/jcr:content node of the asset.
    *              Example: metadata/dc:rights
    * - propertyValue = The value to update the asset property (specified by propertyName) with.
@@ -223,14 +223,14 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
    })...
    ```
 
-   Om het even welke HTTP- verzoeken om as a Cloud Service te AEM, moet het toegangstoken van de Drager in de kopbal van de Vergunning plaatsen. Herinner me, vereist elk AEM as a Cloud Service milieu het eigen toegangstoken. De toegangstoken van de ontwikkeling werkt niet op Stadium of Productie, zal het Stadium niet aan Ontwikkeling of Productie werken, en Productie zal niet op Ontwikkeling of Stadium werken!
+   Om het even welke HTTP- verzoeken om as a Cloud Service te AEM, moet het toegangstoken van de Drager in de kopbal van de Vergunning plaatsen. Herinner me, vereist elk AEM as a Cloud Service milieu zijn eigen toegangstoken. De toegangstoken van de ontwikkeling werkt niet op Stadium of Productie, het Stadium werkt niet aan Ontwikkeling of Productie, en Productie werkt niet op Ontwikkeling of Stadium!
 
 1. Gebruikend de bevellijn, van de wortel van het project voert de toepassing uit, die in de volgende parameters overgaat:
 
    ```shell
    $ node index.js \
        aem=https://author-p1234-e5678.adobeaemcloud.com \
-       folder=/wknd/en/adventures/napa-wine-tasting \
+       folder=/wknd-shared/en/adventures/napa-wine-tasting \
        propertyName=metadata/dc:rights \
        propertyValue="WKND Limited Use" \
        file=local_development_token.json
@@ -238,8 +238,8 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
 
    De volgende parameters worden doorgegeven:
 
-   + `aem`: Het schema en de hostnaam van de AEM as a Cloud Service omgeving waarmee de toepassing communiceert (bijvoorbeeld `https://author-p1234-e5678.adobeaemcloud.com`).
-   + `folder`: Het pad naar de elementenmap waarvan de elementen worden bijgewerkt met het `propertyValue`; voeg GEEN `/content/dam` voorvoegsel (bijv. `/wknd/en/adventures/napa-wine-tasting`)
+   + `aem`: Het schema en de hostnaam van de AEM as a Cloud Service omgeving waarmee de toepassing werkt (bijvoorbeeld `https://author-p1234-e5678.adobeaemcloud.com`).
+   + `folder`: Het pad naar de elementenmap waarvan de elementen worden bijgewerkt met het `propertyValue`; voeg GEEN `/content/dam` voorvoegsel (bijv. `/wknd-shared/en/adventures/napa-wine-tasting`)
    + `propertyName`: De elementeigenschapsnaam die moet worden bijgewerkt, relatief ten opzichte van `[dam:Asset]/jcr:content` (bv. `metadata/dc:rights`).
    + `propertyValue`: De waarde die moet worden ingesteld voor de `propertyName` aan; waarden met spaties moeten worden ingekapseld `"` (bv. `"WKND Limited Use"`)
    + `file`: Het relatieve bestandspad naar het JSON-bestand dat is gedownload van AEM Developer Console.
@@ -247,11 +247,11 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
    Een geslaagde uitvoering van de resultaten van de toepassing voor elk bijgewerkt element:
 
    ```shell
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_277654931.jpg.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_239751461.jpg.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_280313729.jpg.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_277654931.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_239751461.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_280313729.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
    ```
 
 ### Metagegevens bijwerken in AEM controleren
@@ -269,6 +269,6 @@ Controleer of de metagegevens zijn bijgewerkt door u aan te melden bij de AEM as
 
 ## Volgende stappen
 
-Nu wij programmatically hebben betreden AEM as a Cloud Service gebruikend het lokale ontwikkelingstoken, moeten wij de toepassing bijwerken om het gebruiken van de Referenties van de Dienst te behandelen, zodat kan deze toepassing in een productiecontext worden gebruikt.
+Nu wij programmatically hebben betreden AEM as a Cloud Service gebruikend het lokale ontwikkelingstoken. Vervolgens moet de toepassing worden bijgewerkt zodat deze kan worden gebruikt in een productiecontext.
 
 + [Hoe te om de Referenties van de Dienst te gebruiken](./service-credentials.md)
