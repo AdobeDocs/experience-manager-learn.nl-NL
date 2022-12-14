@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobe Developer bevat ontwikkelaarsgegevens voor AEM extensies van Content Fragm
 
 ## Een extensie ontwikkelen
 
-Volg de onderstaande stappen om te leren hoe u een extensie AEM Content Fragment Console voor AEM as a Cloud Service kunt genereren, ontwikkelen en implementeren.
+Volg de onderstaande stappen om te leren hoe u een extensie voor AEM inhoudsfragmentconsole voor AEM as a Cloud Service kunt genereren, ontwikkelen en implementeren.
 
 <div class="columns is-multiline">
     <!-- Create Adobe Developer Project -->

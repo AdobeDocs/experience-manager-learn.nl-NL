@@ -9,9 +9,9 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Implementeer de extensie in de werkruimte Productie. De uitbreidingen die aan de
 1. Selecteren __Ter goedkeuring indienen__
 1. Vul het formulier in en verzend het, waarbij u de velden zo nodig bijwerkt.
 
-+ Een pictogram is vereist. Als u geen pictogram hebt, kunt u [dit pictogram](./assets/deploy/icon.png).
+Let op: er is een pictogram vereist. Als u geen pictogram hebt, kunt u [dit pictogram](./assets/deploy/icon.png).
 
 ### De aanvraag voor implementatie goedkeuren
 

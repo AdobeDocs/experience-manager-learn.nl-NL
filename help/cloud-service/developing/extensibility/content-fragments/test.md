@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -78,7 +78,10 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
 
 1. De AEM Content Fragment Console wordt geladen met de lokale versie van de extensie die erin is geïnjecteerd voor testdoeleinden, en wijzigingen die tijdens het hot-reload worden toegepast zolang de lokale App Builder-app wordt uitgevoerd.
 
-Herinner me, wanneer het gebruiken van deze benadering, de uitbreiding in ontwikkeling slechts uw ervaring beïnvloedt, en alle andere gebruikers van de AEM console van het Fragment van de Inhoud hebben toegang tot het zonder de geïnjecteerde uitbreiding.
+>[!IMPORTANT]
+>
+>Herinner me, wanneer het gebruiken van deze benadering, de uitbreiding in ontwikkeling slechts uw ervaring beïnvloedt, en alle andere gebruikers van de AEM console van het Fragment van de Inhoud hebben toegang tot het zonder de geïnjecteerde uitbreiding.
+
 
 ## Constructies van testfasen
 

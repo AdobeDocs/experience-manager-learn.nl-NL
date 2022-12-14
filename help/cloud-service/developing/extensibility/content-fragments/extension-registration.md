@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -55,15 +55,15 @@ function App(props) {
 `ExtensionRegistration.js` moet onmiddellijk worden geladen via de indexroute van de extensie en treedt op als registratiepunt van de extensie, waarin wordt gedefinieerd:
 
 1. het extensietype; a [kopmenu](./header-menu.md) of [actiebalk](./action-bar.md) knop.
-   + [Menu Koptekst](./header-menu.md) extensies worden aangeduid door de `headerMenu` eigendom onder `methods`.
-   + [Actiebalk](./action-bar.md) extensies worden aangeduid door de `actionBar` eigendom onder `methods`.
+   + [Menu Koptekst](./header-menu.md#extension-registration) extensies worden aangeduid door de `headerMenu` eigendom onder `methods`.
+   + [Actiebalk](./action-bar.md#extension-registration) extensies worden aangeduid door de `actionBar` eigendom onder `methods`.
 1. De definitie van de extensieknop, in `getButton()` functie. Deze functie retourneert een object met velden:
    + `id` is een unieke id voor de knop
    + `label` is het label van de extensieknop in de AEM Content Fragment-console
    + `icon` Dit is het pictogram van de extensieknop in de AEM Content Fragment-console. Het pictogram is een [Spectrum reageren](https://spectrum.adobe.com/page/icons/) pictogramnaam, met spaties verwijderd.
 1. De klikmanager voor de knoop, in die in wordt bepaald `onClick()` functie.
-   + [Menu Koptekst](./header-menu.md) extensies geven geen parameters door aan de click-handler.
-   + [Actiebalk](./action-bar.md) extensies bieden een lijst met geselecteerde inhoudfragmentpaden in de `selections` parameter.
+   + [Menu Koptekst](./header-menu.md#extension-registration) extensies geven geen parameters door aan de click-handler.
+   + [Actiebalk](./action-bar.md#extension-registration) extensies bieden een lijst met geselecteerde inhoudfragmentpaden in de `selections` parameter.
 
 ### Extensie Menu Koptekst
 
