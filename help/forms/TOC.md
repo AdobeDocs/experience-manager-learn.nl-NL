@@ -7,9 +7,9 @@ breadcrumb-title: AEM Forms Tutorials
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 09b00a7edf2f4c90c6cb2178161c6d7e0c9432e8
+source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1754'
 ht-degree: 0%
 
 ---
@@ -214,6 +214,13 @@ ht-degree: 0%
    + [Deel 2 - ACS-profiel maken op formulierverzending](aem-forms-with-adobe-campaign/parttwo.md)
    + [Deel 3 - Formulier vooraf invullen met ACS-profielinformatie](aem-forms-with-adobe-campaign/partthree.md)
    + [Part4 - Create ACS Profile using Form Data Model](aem-forms-with-adobe-campaign/partfour.md)
+
++ Welkomstkit {#welcome-kit}
+   + [Inleiding](welcome-kit/introduction.md)
+   + [welkomstkit-component maken](welcome-kit/create-welcomekit-component.md)
+   + [Workflowcomponent maken](welcome-kit/create-workflow-component.md)
+   + [De oplossing testen](welcome-kit/testing-the-solution.md)
+
 
 + Document Services {#document-services}
    + [Typen PDF forms](document-services/pdf-forms-and-documents.md)
