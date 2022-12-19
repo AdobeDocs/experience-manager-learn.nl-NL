@@ -9,9 +9,9 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 56e2cbadaceb9961de28454bfbed56a98df34c44
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,12 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, gewoonlijk `&ext=https://localhost:9080`.
 
+   Voeg de twee bovenstaande queryparameters toe (`devMode` en `ext`) als de __first__ query-parameters in de URL, aangezien de Content Fragment Console een hash-route gebruikt (`#/@wknd/aem/...`), zodat de parameters na de `#` werkt niet.
+
    De test-URL moet er als volgt uitzien:
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://localhost:9080
+   https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. Kopieer en plak de test-URL in uw browser.
@@ -112,10 +114,12 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
+   Voeg de twee bovenstaande queryparameters toe (`devMode` en `ext`) als de __first__ query-parameters in de URL, aangezien de Content Fragment Console een hash-route gebruikt (`#/@wknd/aem/...`), zodat de parameters na de `#` werkt niet.
+
    De test-URL moet er als volgt uitzien:
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html
+   https://experience.adobe.com/?devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. Kopieer en plak de test-URL in uw browser.
