@@ -7,9 +7,9 @@ breadcrumb-title: AEM Forms Tutorials
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+source-git-commit: 8f17e98c56c78824e8850402e3b79b3d47901c0b
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1759'
 ht-degree: 0%
 
 ---
@@ -227,6 +227,7 @@ ht-degree: 0%
    + [PDF insluiten in adaptieve vorm](document-services/embed-pdf-inline.md)
    + [PDF](document-services/display-pdf-in-carousel.md)
    + [Assembler Service gebruiken in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
+   + [XDP Stitching met de Dienst van de Assembler](document-services/xdp-stitching-using-assembler-service.md)
    + [Controlemap gebruiken in AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Streepjescodeservice gebruiken in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [PDFG-service gebruiken in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
