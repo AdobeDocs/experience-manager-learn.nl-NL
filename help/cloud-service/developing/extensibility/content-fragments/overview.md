@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 8b683fdcea05859151b929389f7673075c359141
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Een enkele AEM extensie van de Console van inhoudsfragmenten kan nul of één ko
 
 AEM de uitbreidingen van de Console van Inhoudsfragmenten, vereisen en [Adobe Developer Console-project](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console) en [App Builder-app](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) met de `@adobe/aem-cf-admin-ui-ext-tpl` sjabloon, gekoppeld aan het Adobe Developer Console-project.
 
-Maak een keuze uit de volgende mogelijkheden wanneer u de App Builder-app genereert, op basis van wat de extensie gaat doen. Elke combinatie van opties kan in een extensie worden gebruikt.
+Maak een keuze uit de volgende mogelijkheden wanneer u de App Builder-app genereert, op basis van wat de extensie doet. Elke combinatie van opties kan in een extensie worden gebruikt.
 
 |  | Knop Toevoegen aan [Menu Koptekst](./header-menu.md) | Knop Toevoegen aan [Actiebalk](./action-bar.md) | Tonen [Modal](./modal.md) | Toevoegen [server-side handler](./runtime-action.md) |
 | ------------------------------------------ | :-----------------------: | :----------------------: | :--------: | :--------------------:  |
@@ -130,7 +130,7 @@ Volg de onderstaande stappen om te leren hoe u een extensie voor AEM inhoudsfrag
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">4 bis. Menu Koptekst</p>
-                    <p class="is-size-6">Leer hoe u een extensie in het kopmenu van een AEM Content Fragment Console maakt.</p>
+                    <p class="is-size-6">Leer hoe u een extensie van het kopmenu van de AEM Content Fragment Console maakt.</p>
                     <a href="./header-menu.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het kopmenu uitbreiden</span>
                     </a>
@@ -151,7 +151,7 @@ Volg de onderstaande stappen om te leren hoe u een extensie voor AEM inhoudsfrag
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">4 ter. Actiebalk</p>
-                    <p class="is-size-6">Leer hoe u een actiedrempelextensie voor een AEM Content Fragment Console maakt.</p>
+                    <p class="is-size-6">Leer hoe u een extensie voor de actiebalk van de AEM Content Fragment Console maakt.</p>
                     <a href="./action-bar.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De actiebalk uitbreiden</span>
                     </a>
@@ -214,7 +214,7 @@ Volg de onderstaande stappen om te leren hoe u een extensie voor AEM inhoudsfrag
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">7. Testen</p>
-                    <p class="is-size-6">Test de extensies tijdens de ontwikkeling en deel voltooide extensies met een speciale URL naar QA- of UAT-testers.</p>
+                    <p class="is-size-6">Test de extensies tijdens de ontwikkeling en deel voltooide extensies met een speciale URL voor QA- of UAT-testers.</p>
                     <a href="./test.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De extensie testen</span>
                     </a>
@@ -271,4 +271,28 @@ Voorbeeld AEM extensies van Content Fragment Console.
             </div>
         </div>
     </div>
+    <!-- Bulk property update extension -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Image generation and upload to AEM extension">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-16by9">
+                    <a href="./example-extensions/image-generation-and-image-upload.md" title="Afbeeldingen genereren en uploaden naar AEM extensie" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="Afbeeldingen genereren en uploaden naar AEM extensie">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small">
+                <div class="content">
+                    <p class="headline is-size-5 has-text-weight-bold">Afbeeldingen genereren en uploaden naar AEM extensie</p>
+                    <p class="is-size-6">Onderzoek een uitbreiding van de voorbeeldactie die een beeld gebruikend OpenAI produceert, uploadt het aan AEM en werkt beeldbezit op het geselecteerde Inhoudsfragment bij.</p>
+                    <a href="./example-extensions/image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De voorbeeldextensie verkennen</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>

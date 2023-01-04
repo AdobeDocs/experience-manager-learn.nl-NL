@@ -9,7 +9,7 @@ level: Beginner
 kt: 11604
 thumbnail: KT-11604.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: 8b683fdcea05859151b929389f7673075c359141
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
@@ -32,7 +32,7 @@ De functionele stroom van de voorbeeldextensie is als volgt:
 1. Als u het formulier verzendt, wordt de lijst met geselecteerde inhoudsfragmenten en de AEM-host naar de [aangepaste Adobe I/O Runtime-actie](#adobe-io-runtime-action).
 1. De [Adobe I/O Runtime-actie](#adobe-io-runtime-action) valideert de input en doet de PUT van HTTP verzoeken om AEM om de geselecteerde Fragments van de Inhoud bij te werken.
 1. Een reeks HTTP-PUTTEN voor elk inhoudsfragment om de opgegeven eigenschap bij te werken.
-1. AEM as a Cloud Service blijft de bezitsupdates aan het Fragment van de Inhoud voortbestaan en keert succes van mislukkingsreacties op de actie van Adobe I/O Runtime terug.
+1. AEM as a Cloud Service blijft de bezitsupdates aan het Fragment van de Inhoud voortbestaan en keert succes of mislukkingsreacties op de actie van Adobe I/O Runtime terug.
 1. Het modaal ontving de reactie van de actie van Adobe I/O Runtime, en toont een lijst van succesvolle bulkupdates.
 
 In deze video wordt de extensie van updates voor bulkeigenschappen, de werking en de ontwikkeling van deze eigenschappen in het voorbeeld besproken.
@@ -69,7 +69,7 @@ Er zijn twee logische reeksen routes:
    <Route index element={<ExtensionRegistration />} />
    ```
 
-1. De tweede reeks routes brengt URLs in kaart om componenten te Reageren die de inhoud van de modaal van de uitbreiding teruggeven. De `:selection` param staat voor een pad met een door scheidingstekens gescheiden inhoudsfragment.
+1. De tweede reeks routes brengt URLs in kaart om componenten te Reageren die de inhoud van de modaal van de uitbreiding teruggeven. De `:selection` param staat voor een pad met een als scheidingsteken weergegeven inhoudsfragment.
 
    Als de extensie meerdere knoppen heeft om afzonderlijke handelingen aan te roepen, moet elke knop [extensieverichting](#extension-registration) kaarten aan een hier bepaalde route.
 
@@ -147,7 +147,7 @@ In deze voorbeeld-app is er een modale React-component (`BulkPropertyUpdateModal
 Belangrijk is dat elke interactie met AEM van de extensie wordt gedelegeerd aan een [Handeling AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), dat een afzonderlijk serverloos proces is dat wordt uitgevoerd in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 Het gebruik van Adobe I/O Runtime-acties om te communiceren met AEM, is om kwesties met betrekking tot de connectiviteit tussen bronnen van verschillende oorsprong (CORS) te voorkomen.
 
-Wanneer het formulier voor het bijwerken van eigenschappen met opsommingstekens wordt verzonden, wordt een aangepaste `onSubmitHandler()` roept de actie van Adobe I/O Runtime aan, die de huidige AEM (domein) en het AEM van de gebruiker toegangstoken overgaat, die beurtelings het [AEM Content Fragment API](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/content-fragments-api.html) om de inhoudsfragmenten bij te werken.
+Wanneer het formulier voor het bijwerken van eigenschappen met opsommingstekens wordt verzonden, wordt een aangepaste `onSubmitHandler()` roept de actie van Adobe I/O Runtime aan, die de huidige AEM (domein) en het AEM van de gebruiker toegangstoken overgaat, die beurtelings het [AEM Content Fragment API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) om de inhoudsfragmenten bij te werken.
 
 Wanneer de reactie van de actie van Adobe I/O Runtime wordt ontvangen, wordt modal bijgewerkt om de resultaten van de bulkbezitsupdate verrichting te tonen.
 
