@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: 8b683fdcea05859151b929389f7673075c359141
+source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Volg de onderstaande stappen om te leren hoe u een extensie voor AEM inhoudsfrag
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" title="Adobe Developer-project maken" tabindex="-1" target="_adobe-developer-com">
+                    <a href="./adobe-developer-console-project.md" title="Adobe Developer-project maken" tabindex="-1">
                         <img class="is-bordered-r-small" src="./assets/project/card.png" alt="Adobe Developer-project maken">
                     </a>
                 </figure>
@@ -68,7 +68,7 @@ Volg de onderstaande stappen om te leren hoe u een extensie voor AEM inhoudsfrag
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">1. Een project maken</p>
                     <p class="is-size-6">Maak een Adobe Developer Console-project waarin de toegang tot andere Adobe-services wordt gedefinieerd en waarin de implementaties worden beheerd.</p>
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
+                    <a href="./adobe-developer-console-project.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Een Adobe Developer-project maken</span>
                     </a>
                 </div>
@@ -80,7 +80,7 @@ Volg de onderstaande stappen om te leren hoe u een extensie voor AEM inhoudsfrag
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization" title="Een extensie-app genereren" tabindex="-1" target="_adobe-developer-com">
+                    <a href="./app-initialization.md" title="Een extensie-app genereren" tabindex="-1">
                         <img class="is-bordered-r-small" src="./assets/initialize-app/card.png" alt="Een extensie-app initialiseren">
                     </a>
                 </figure>
@@ -89,7 +89,7 @@ Volg de onderstaande stappen om te leren hoe u een extensie voor AEM inhoudsfrag
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">2. Een extensie-app initialiseren</p>
                     <p class="is-size-6">Initialiseer een app voor de extensie App Builder van een AEM Content Fragment Console die definieert waar de extensie wordt weergegeven en welk werk er wordt uitgevoerd.</p>
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
+                    <a href="./app-initialization.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Een extensie-app initialiseren</span>
                     </a>
                 </div>
