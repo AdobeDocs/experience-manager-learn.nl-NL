@@ -7,10 +7,10 @@ breadcrumb-title: AEM Forms Tutorials
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 8f17e98c56c78824e8850402e3b79b3d47901c0b
+source-git-commit: a2bbb26751c9182056b4fe6d36eeeec964001df8
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 0%
+source-wordcount: '1776'
+ht-degree: 1%
 
 ---
 
@@ -100,6 +100,11 @@ ht-degree: 0%
    + [HTML5-Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Formuliergegevensmodel met Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Items dynamisch aan keuzeselectie-component toevoegen](adaptive-forms/choice-group-items-adding-dynamically-article.md)
++ DAM-mapinhoud selecteren en samenstellen{#select-dam-folder-content}
+   + [Inleiding](display-and-assemble-dam-folder-contents/introduction.md)
+   + [Selectiegroep vullen](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
+   + [Geselecteerde elementen samenstellen](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
+   + [De elementen lokaal implementeren](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
 + Aangepast formulier vooraf invullen met behulp van formuliergegevensmodel{#prefill-fdm-db}
    + [Inleiding](prefill-fdm-db/introduction.md)
    + [Databasetabellen maken](prefill-fdm-db/create-database-tables.md)
