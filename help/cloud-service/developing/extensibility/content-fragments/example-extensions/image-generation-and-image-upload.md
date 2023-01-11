@@ -1,5 +1,5 @@
 ---
-title: Op OpenAI gebaseerde afbeelding genereren via de extensie van de Content Fragment Console
+title: OpenAI-afbeeldingen genereren via een aangepaste extensie van de Content Fragment Console
 description: Een voorbeeld AEM de uitbreiding van de Console van de Fragmenten van de Inhoud die digitale beeld van natuurlijke taalbeschrijvingen gebruikend OpenAI of DALL-E 2 produceert en geproduceerde beeld uploadt aan AEM, en het associeert aan het Inhoudsfragment.
 feature: Developer Tools
 version: Cloud Service
@@ -9,15 +9,15 @@ level: Beginner
 kt: 11649
 thumbnail: KT-11649.png
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
+source-git-commit: 06c09affd427a4818f5a916a84490f9ed09d372c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
 
 
-# Op OpenAI gebaseerde digitale afbeelding genereren, uploaden naar AEM voorbeeldextensie
+# Afbeeldingselementen AEM genereren met OpenAI
 
 ![Genereren van digitale afbeeldingen](./assets/digital-image-generation/screenshot.png){align="center"}
 
