@@ -9,15 +9,15 @@ level: Beginner
 kt: 11649
 thumbnail: KT-11649.png
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: 8b683fdcea05859151b929389f7673075c359141
+source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1314'
 ht-degree: 0%
 
 ---
 
 
-# Digitale afbeelding genereren, uploaden naar AEM voorbeeldextensie
+# Op OpenAI gebaseerde digitale afbeelding genereren, uploaden naar AEM voorbeeldextensie
 
 ![Genereren van digitale afbeeldingen](./assets/digital-image-generation/screenshot.png){align="center"}
 
@@ -43,6 +43,10 @@ De functionele stroom van de voorbeeldextensie is als volgt:
 1. Vervolgens wordt het uploaden van de afbeelding vanuit de App Builder-runtime naar AEM DAM gestart onder een vooraf gedefinieerd pad.
 1. De AEM as a Cloud Service slaat afbeelding op naar de DAM en retourneert een geslaagde of mislukte reactie op de Adobe I/O Runtime-actie. De geslaagde upload reactie werkt de geselecteerde de bezitswaarde van het Beeld van het Fragment van de Inhoud bij gebruikend een andere HTTP- verzoek aan AEM van de actie van Adobe I/O Runtime.
 1. Het modaal ontvangt de reactie van de actie van Adobe I/O Runtime, en verstrekt AEM verbinding van activa details van het onlangs geproduceerde, geüploade beeld.
+
+In deze video wordt het genereren van voorbeeldafbeeldingen met de extensie OpenAI of DALL.E 2 bekeken, evenals de werking en de ontwikkeling van de afbeelding. De video bevat hoofdstukmarkeringen, zoals __Functionele demo, Opstelling, en Tech-Code__ om snel naar het relevante stuk te kijken.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3413093/?quality=12&learn=on)
 
 
 ## De app App Builder-extensie
