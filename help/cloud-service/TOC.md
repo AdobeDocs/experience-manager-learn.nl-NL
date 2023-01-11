@@ -5,10 +5,10 @@ breadcrumb-title: AEM as a Cloud Service Tutorials
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
+source-git-commit: 3a77f99de25ad6dab37d4ee12b31f12b94f0ec73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '879'
+ht-degree: 9%
 
 ---
 
@@ -66,8 +66,8 @@ ht-degree: 0%
          + [Testen](./developing/extensibility/content-fragments/test.md)
          + [Implementeren](./developing/extensibility/content-fragments/deploy.md)
          + Voorbeelden van extensies{#example-extensions}
-            + [Extensie voor update van eigenschap Bulk](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
-            + [Afbeeldingen genereren en uploaden naar AEM](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
+            + [Bulkeigenschap bijwerken](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
+            + [Afbeeldingselementen AEM genereren met OpenAI](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
    + Grondbeginselen van ontwikkeling{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Lokale ontwikkelomgeving](./developing/basics/local-development-environment.md)
