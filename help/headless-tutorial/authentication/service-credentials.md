@@ -12,10 +12,11 @@ thumbnail: 330519.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
+source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1931'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,11 @@ Integraties met as a Cloud Service Adobe Experience Manager (AEM) moeten veilig 
 
 Servicereferenties kunnen er ongeveer zo uitzien [Tokens voor toegang tot lokale ontwikkeling](./local-development-access-token.md) maar zijn op een aantal belangrijke punten verschillend :
 
++ Servicekredieten zijn gekoppeld aan technische accounts. De veelvoudige de dienstgeloofsbrieven kunnen voor een Technische Rekening actief zijn.
 + Servicekredieten zijn _niet_ toegangstokens, eerder zijn zij geloofsbrieven die worden gebruikt aan _verkrijgen_ toegang tot tokens.
-+ De Verantwoordelijkheden van de dienst zijn duurder (verlopen om de 365 dagen), en veranderen niet tenzij ingetrokken, terwijl de Lokale Tokens van de Toegang van de Ontwikkeling dagelijks verlopen.
++ De geloofsbrieven van de dienst zijn duurder (hun certificaat verloopt om de 365 dagen), en veranderen niet tenzij ingetrokken, terwijl de Lokale Tokens van de Toegang van de Ontwikkeling dagelijks verlopen.
 + De Verantwoordelijkheden van de dienst voor een AEM as a Cloud Service milieukaart aan één enkele AEM technische rekeningsgebruiker, terwijl de Tokens van de Toegang van de Toegang van de Lokale Ontwikkeling voor authentiek verklaren als AEM gebruiker die het toegangstoken produceerde.
-+ Een AEM as a Cloud Service omgeving heeft één servicekrediet dat is toegewezen aan één technische account AEM gebruiker. Servicereferenties kunnen niet worden gebruikt voor verificatie in dezelfde AEM as a Cloud Service omgeving als verschillende gebruikers van technische accounts AEM.
++ Een AEM as a Cloud Service omgeving kan maximaal tien technische accounts hebben, elk met hun eigen servicekredieten, elke toewijzing aan een afzonderlijke technische rekening AEM gebruiker.
 
 Zowel dienen de Geloofsbrieven van de Dienst als de toegangstoken zij produceren, en de Lokale Tokens van de Toegang van de Ontwikkeling, geheim worden gehouden. Aangezien alle drie kunnen worden gebruikt om, toegang tot hun respectieve AEM as a Cloud Service milieu te verkrijgen.
 
@@ -39,27 +41,27 @@ Zowel dienen de Geloofsbrieven van de Dienst als de toegangstoken zij produceren
 
 Het genereren van servicekredieten wordt in twee stappen opgedeeld:
 
-1. Eenmalige initialisatie van servicekredieten door een Adobe IMS-beheerder
-1. Het downloaden en gebruiken van de Service Credentials JSON
+1. Een eenmalige technische account aanmaken door een Adobe IMS Org-beheerder
+1. Het downloaden en gebruiken van JSON (Service Credentials) van de technische account
 
-### Initialisatie van servicekredieten
+### Een technische account maken
 
-De Verantwoordelijkheden van de dienst, in tegenstelling tot de Tokens van de Toegang van de Lokale Ontwikkeling vereisen _eenmalige initialisatie_ door uw Adobe Org IMS Administrator voordat deze kunnen worden gedownload.
+In tegenstelling tot Local Development Access Tokens moeten servicerecertificaten door een Adobe Org IMS-beheerder worden aangemaakt voordat ze kunnen worden gedownload. De afzonderlijke Technische Rekeningen zouden voor elke cliënt moeten worden gecreeerd die programmatic toegang tot AEM vereist.
 
-![Servicekredieten initialiseren](assets/service-credentials/initialize-service-credentials.png)
+![Een technische account maken](assets/service-credentials/initialize-service-credentials.png)
 
-__Dit is een eenmalige initialisatie per AEM as a Cloud Service omgeving__
+De technische Rekeningen worden gecreeerd eens, nochtans het gebruik van Privé Sleutels om de Verantwoordelijkheden van de Dienst verbonden aan de Technische Rekening te beheren kan in tijd worden beheerd. Bijvoorbeeld, moeten de nieuwe Persoonlijke Sleutel/de Credentials van de Dienst vóór het verstrijken van de huidige Privé Sleutel worden geproduceerd, om voor ononderbroken toegang door een gebruiker van de Credentials van de Dienst toe te staan.
 
-1. Controleer of u bent aangemeld als:
-   + Beheerder van uw Adobe IMS Org
-   + Lid van de __Cloud Manager - Ontwikkelaar__ IMS-productprofiel
-   + Lid van de __AEM__ of __AEM__ IMS-productprofiel op __AEM-auteur__
+1. Controleer of u bent aangemeld als een:
+   + __Beheerder van Adobe IMS Org__
+   + Lid van de __AEM__ IMS-productprofiel op __AEM-auteur__
 1. Aanmelden bij [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM as a Cloud Service omgeving bevat om de instelling van de servicekredieten voor
 1. Tik op de ellips naast de omgeving in het dialoogvenster __Omgevingen__ en selecteert u __Ontwerpconsole__
 1. Tik in het dialoogvenster __Integraties__ tab
-1. Tikken __Servicekredieten ophalen__ knop
-1. De servicekredieten worden geïnitialiseerd en weergegeven als JSON
+1. Tik op de knop __Technische rekeningen__ tab
+1. Tikken __Nieuwe technische account maken__ knop
+1. De servicekredieten van de technische account worden geïnitialiseerd en weergegeven als JSON
 
 ![AEM Developer Console - Integratie - Inschrijvingen voor service](./assets/service-credentials/developer-console.png)
 
@@ -69,20 +71,20 @@ Nadat de AEM als servicegegevens van de Cloud Service-omgeving zijn geïnitialis
 
 ![Referenties van service downloaden](assets/service-credentials/download-service-credentials.png)
 
-Voor het downloaden van de servicekredieten gelden dezelfde stappen als voor de initialisatie. Als de initialisatie nog niet is opgetreden, wordt een fout weergegeven met het tikken op de knop __Servicekredieten ophalen__ knop.
+Het downloaden van de Referentieformals van de Dienst volgt de gelijkaardige stappen zoals de initialisering.
 
 1. Controleer of u bent aangemeld als een:
-   + Lid van de __Cloud Manager - Ontwikkelaar__ IMS-productprofiel (dat toegang biedt tot AEM Developer Console)
-      + Sandbox AEM as a Cloud Service omgeving vereist dit niet  __Cloud Manager - Ontwikkelaar__ lidmaatschap
-   + Lid van de __AEM__ of __AEM__ IMS-productprofiel op __AEM-auteur__
+   + __Beheerder van Adobe IMS Org__
+   + Lid van de __AEM__ IMS-productprofiel op __AEM-auteur__
 1. Aanmelden bij [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM as a Cloud Service omgeving bevat om mee te integreren
 1. Tik op de ellips naast de omgeving in het dialoogvenster __Omgevingen__ en selecteert u __Ontwerpconsole__
 1. Tik in het dialoogvenster __Integraties__ tab
-1. Tikken __Servicekredieten ophalen__ knop
-1. Tik op de downloadknop in de linkerbovenhoek om het JSON-bestand met de waarde Servicekredieten te downloaden en het bestand op een veilige locatie op te slaan.
-
-+ _Als de Referenties van de Dienst worden gecompromitteerd, contacteer onmiddellijk de Steun van Adobe om hen te hebben herroepen_
+1. Tik op de knop __Technische rekeningen__ tab
+1. Breid uit __Technische rekening__ te gebruiken
+1. Breid uit __Persoonlijke sleutel__ wiens servicekredieten worden gedownload en controleren of de status __Actief__
+1. Tik op de knop __...__ > __Weergave__ in verband met de __Persoonlijke sleutel__, die de Service Credentials JSON weergeeft
+1. Tik op de downloadknop in de linkerbovenhoek om het JSON-bestand met de waarde Servicekredieten te downloaden en het bestand op een veilige locatie op te slaan
 
 ## De servicereferenties installeren
 
@@ -91,7 +93,7 @@ De referenties van de Dienst verstrekken de details nodig om een JWT te producer
 Voor eenvoud, gaat dit leerprogramma de Credentials van de Dienst binnen via de bevellijn over. Werk echter samen met uw IT-beveiligingsteam om te begrijpen hoe deze gegevens moeten worden opgeslagen en geopend in overeenstemming met de beveiligingsrichtlijnen van uw organisatie.
 
 1. Kopieer de [De Service Credentials JSON downloaden](#download-service-credentials) naar een bestand met de naam `service_token.json` in de basis van het project
-   + Maar vergeet niet dat u nooit aanmeldgegevens aan Git wilt toewijzen!
+   + Onthouden, nooit vastleggen _om het even welke geloofsbrieven_ naar Git!
 
 ## Servicereferenties gebruiken
 
@@ -100,7 +102,7 @@ De servicekredieten, een volledig samengesteld JSON-object, zijn niet hetzelfde 
 ![Servicereferenties - externe toepassing](assets/service-credentials/service-credentials-external-application.png)
 
 1. Download de servicedesentials van AEM Developer Console naar een beveiligde locatie
-1. Een externe toepassing moet programmatisch communiceren met AEM as a Cloud Service omgeving
+1. De externe toepassing moet programmatisch communiceren met AEM as a Cloud Service omgeving
 1. De externe toepassing leest in de Referenties van de Dienst van een veilige plaats
 1. De externe toepassing gebruikt informatie van de Referenties van de Dienst om een Token te construeren JWT
 1. De JWT Token wordt naar Adobe IMS verzonden voor uitwisseling voor een toegangstoken
@@ -111,22 +113,22 @@ De servicekredieten, een volledig samengesteld JSON-object, zijn niet hetzelfde 
 
 ### Updates voor de externe toepassing
 
-Om tot AEM as a Cloud Service toegang te hebben gebruikend de Referenties van de Dienst dat onze externe toepassing op drie manieren moet worden bijgewerkt:
+Om tot AEM as a Cloud Service toegang te hebben gebruikend de Referenties van de Dienst, moet de externe toepassing op drie manieren worden bijgewerkt:
 
 1. Lees in de Referenties van de Dienst
 
-+ Voor eenvoud, lezen wij deze van het gedownloade JSON dossier, nochtans in real-use scenario&#39;s, moeten de Referenties van de Dienst veilig volgens de veiligheidsrichtlijnen van uw organisatie worden opgeslagen
++ Voor eenvoud, worden de Credentials van de Dienst gelezen van het gedownloade JSON dossier, nochtans in real-use scenario&#39;s, moeten de Referenties van de Dienst veilig worden opgeslagen in overeenstemming met de veiligheidsrichtlijnen van uw organisatie
 
 1. Een JWT genereren op basis van de servicerecertificaten
 1. Uitwisseling JWT voor een toegangstoken
 
-+ Wanneer de Referenties van de Dienst aanwezig zijn, gebruikt onze externe toepassing dit toegangstoken in plaats van het Lokale Token van de Toegang van de Ontwikkeling, wanneer de toegang tot AEM as a Cloud Service
++ Wanneer de Referenties van de Dienst aanwezig zijn, gebruikt de externe toepassing dit toegangstoken in plaats van het Lokale Token van de Toegang van de Ontwikkeling, wanneer de toegang tot AEM as a Cloud Service
 
 In deze zelfstudie kiest u Adobe `@adobe/jwt-auth` De npm module wordt gebruikt aan allebei, (1) produceert JWT van de Referenties van de Dienst, en (2) ruilt het voor een toegangstoken, in één enkele functievraag. Als uw toepassing niet is gebaseerd op JavaScript, raadpleegt u de [voorbeeldcode in andere talen](https://developer.adobe.com/developer-console/docs/guides/) voor hoe u een JWT maakt van de servicekredieten en deze uitwisselt voor een toegangstoken met Adobe IMS.
 
 ## Lees de Referenties van de Dienst
 
-Controleer de `getCommandLineParams()` en zien dat wij in de dossiers kunnen lezen van de Verantwoordelijkheid JSON van de Dienst gebruikend de zelfde code die wordt gebruikt om in het Token JSON van de Toegang van de Lokale Ontwikkeling te lezen.
+Controleer de `getCommandLineParams()` Zo zie hoe het dossier van de Verantwoordelijkheid JSON van de Dienst gebruikend de zelfde code wordt gelezen die wordt gebruikt om in het Lokale Token JSON van de Toegang van de Ontwikkeling te lezen.
 
 ```javascript
 function getCommandLineParams() {
@@ -151,7 +153,7 @@ Deze voorbeeldtoepassing is gebaseerd op Node.js, dus is het beter om te gebruik
 
 1. Werk de `getAccessToken(..)` om de inhoud van het JSON-bestand te inspecteren en vast te stellen of dit een token of servicekrediet voor lokale ontwikkelingstoegang vertegenwoordigt. Dit kan eenvoudig worden bereikt door na te gaan of het `.accessToken` eigenschap, die alleen bestaat voor Local Development Access Token JSON.
 
-   Als Service Credentials is opgegeven, genereert de toepassing een JWT en wisselt deze uit met Adobe IMS voor een toegangstoken. We gebruiken de [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)s `auth(...)` functie die een JWT genereert en deze in één functieaanroep ruilt voor een toegangstoken. De parameters die `auth(..)` methode is [JSON-object met specifieke informatie](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) beschikbaar bij Service Credentials JSON, zoals hieronder in code wordt beschreven.
+   Als Service Credentials is opgegeven, genereert de toepassing een JWT en wisselt deze uit met Adobe IMS voor een toegangstoken. Gebruik de [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)s `auth(...)` functie die een JWT genereert en deze in één functieaanroep ruilt voor een toegangstoken. De parameters die `auth(..)` methode is [JSON-object met specifieke informatie](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) beschikbaar bij Service Credentials JSON, zoals hieronder in code wordt beschreven.
 
 ```javascript
  async function getAccessToken(developerConsoleCredentials) {
@@ -211,7 +213,7 @@ Deze voorbeeldtoepassing is gebaseerd op Node.js, dus is het beter om te gebruik
 
 ## Toegang configureren in AEM
 
-Het toegangstoken op basis van servicekredieten gebruikt een technische account AEM gebruiker die lidmaatschap heeft in de gebruikersgroep Medewerkers AEM.
+Het toegangstoken op basis van servicerecertificaten gebruikt een technische account AEM gebruiker die lid is van de __Medewerkers__ AEM gebruikersgroep.
 
 ![Servicekredieten - Technische account AEM gebruiker](./assets/service-credentials/technical-account-user.png)
 

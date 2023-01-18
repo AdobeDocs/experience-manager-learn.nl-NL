@@ -12,10 +12,11 @@ thumbnail: 330477.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
+source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -40,6 +41,7 @@ Het token Local Development Access biedt toegang tot de services AEM Author and 
 1. Open het programma dat de AEM as a Cloud Service omgeving bevat om mee te integreren
 1. Tik op de knop __weglatingsteken__ naast het milieu in de __Omgevingen__ en selecteert u __Ontwerpconsole__
 1. Tik in het dialoogvenster __Integraties__ tab
+1. Tik op de knop __Lokaal token__ tab
 1. Tikken __Token voor lokale ontwikkeling ophalen__ knop
 1. Tik op de knop __downloadknop__ in de linkerbovenhoek om het JSON-bestand met `accessToken` en sla het JSON-bestand op een veilige locatie op uw ontwikkelcomputer op.
    + Dit is uw 24 uur, toegangstoken voor ontwikkelaars tot het AEM as a Cloud Service milieu.
