@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ Deze map bevat alle `_cache.any`, `_invalidate.any` bestanden die u maakt, bevat
 
 #### Map met clientkoppen
 
-Deze map kan alle `_clientheaders.any` de dossiers u creeert die lijsten van de Kopballen van de Cliënt bevatten u tot AEM wilt overgaan wanneer een verzoek binnen komt.  Meer informatie over deze sectie vindt u hier [hier](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+Deze map kan alle `_clientheaders.any` de dossiers u creeert die lijsten van de Kopballen van de Cliënt bevatten u tot AEM wilt overgaan wanneer een verzoek binnen komt.  Meer informatie over deze sectie vindt u in [hier](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
