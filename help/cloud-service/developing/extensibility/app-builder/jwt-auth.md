@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: 0990fc230e2a36841380b5b0c6cd94dca24614fa
+source-git-commit: de2788d8f3971a47fca53e35ee84cbbaa0137140
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -70,14 +70,14 @@ De `JWT_PRIVATE_KEY` moet speciaal zijn opgemaakt omdat het een native waarde va
 
 1. Open `Terminal`
 1. `$ base64 -i /path/to/private.key | pbcopy`
-
-De base64-uitvoer wordt automatisch gekopieerd naar het klembord
+1. De base64-uitvoer wordt automatisch gekopieerd naar het klembord
 
 >[!TAB Windows]
 
 1. Open `Command Prompt`
 1. `$ certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. De inhoud van `encoded-private.key` naar het klembord
+1. `$ findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. De base64-uitvoer naar het klembord kopiëren
 
 >[!TAB Linux®]
 
@@ -87,14 +87,14 @@ De base64-uitvoer wordt automatisch gekopieerd naar het klembord
 
 >[!ENDTABS]
 
-De volgende waarde kan bijvoorbeeld worden toegevoegd aan de `JWT_PRIVATE_KEY` in de `.env`:
+De volgende persoonlijke sleutel met base64-codering kan bijvoorbeeld worden toegevoegd aan de `JWT_PRIVATE_KEY` in de `.env`:
 
 ```
 ...
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-## Extensie config
+## Invoer toewijzen
 
 Als de JWT-referentiewaarde is ingesteld in het dialoogvenster `.env` , moeten ze worden toegewezen aan invoer van de AppBuilder-actie zodat ze in de handeling zelf kunnen worden gelezen. Hiervoor voegt u items toe voor elke variabele in het dialoogvenster `ext.config.yaml` action `inputs` in het formaat: `INPUT_NAME=$ENV_KEY`.
 
@@ -130,7 +130,7 @@ runtimeManifest:
 De toetsen die worden gedefinieerd onder `inputs` zijn beschikbaar op `params` object dat aan de handeling App Builder wordt geleverd.
 
 
-## JWT-referenties converteren naar toegangstoken
+## JWT-referenties voor toegang tot token
 
 In de handeling App Builder zijn de JWT-gegevens beschikbaar in het dialoogvenster `params` object, en kan worden gebruikt door [`@adobe/jwt-auth`](https://www.npmjs.com/package/@adobe/jwt-auth) om een toegangstoken te produceren, dat beurtelings tot andere Adobe APIs en de diensten kan toegang hebben.
 
