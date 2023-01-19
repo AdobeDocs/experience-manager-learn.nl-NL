@@ -12,9 +12,9 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 2b188cbe0ba968b553a20629b89edf5ed377f300
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -45,37 +45,46 @@ Het is ook *kritisch* testcode tegen een lokale ***Publiceren*** -instantie. De 
 1. Zorg ervoor dat Java™ is geïnstalleerd.
    * Voorkeur [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=14) voor AEM 6.5+
    * [Java™ JDK 8](https://www.oracle.com/java/technologies/downloads/) voor AEM versies vóór AEM 6.5
-2. Hiermee wordt een kopie van het dialoogvenster [AEM QuickStart Jar en a [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
-3. Maak als volgt een mapstructuur op uw computer:
+1. Hiermee wordt een kopie van het dialoogvenster [AEM QuickStart Jar en a [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
+1. Maak als volgt een mapstructuur op uw computer:
 
-   ```plain
-   ~/aem-sdk
-       /author
-       /publish
-   ```
+```plain
+~/aem-sdk
+    /author
+    /publish
+```
 
-4. De naam van de [!DNL QuickStart] JAR naar ***aem-auteur-p4502.jar*** en plaatst deze onder de `/author` directory. Voeg de ***[!DNL license.properties]*** bestand onder het `/author` directory.
-5. Maak een kopie van het dialoogvenster [!DNL QuickStart] JAR, naam wijzigen in ***aem-publish-p4503.jar*** en plaatst deze onder de `/publish` directory. Een kopie van het dialoogvenster toevoegen ***[!DNL license.properties]*** bestand onder het `/publish` directory.
+1. De naam van de [!DNL QuickStart] JAR naar ***aem-auteur-p4502.jar*** en plaatst deze onder de `/author` directory. Voeg de ***[!DNL license.properties]*** bestand onder het `/author` directory.
 
-   ```plain
-   ~/aem-sdk
-       /author
-           + aem-author-p4502.jar
-           + license.properties
-       /publish
-           + aem-publish-p4503.jar
-           + license.properties
-   ```
+1. Maak een kopie van het dialoogvenster [!DNL QuickStart] JAR, naam wijzigen in ***aem-publish-p4503.jar*** en plaatst deze onder de `/publish` directory. Een kopie van het dialoogvenster toevoegen ***[!DNL license.properties]*** bestand onder het `/publish` directory.
 
-6. Dubbelklik op de knop ***aem-auteur-p4502.jar*** te installeren **Auteur** -instantie. Hiermee wordt de auteurinstantie gestart, die op de poort wordt uitgevoerd **4502** op de lokale computer.
+```plain
+~/aem-sdk
+    /author
+        + aem-author-p4502.jar
+        + license.properties
+    /publish
+        + aem-publish-p4503.jar
+        + license.properties
+```
 
-   Dubbelklik op de knop ***aem-publish-p4503.jar*** te installeren **Publiceren** -instantie. Hiermee wordt de instantie Publiceren gestart, die op de poort wordt uitgevoerd **4503** op de lokale computer.
+1. Dubbelklik op de knop ***aem-auteur-p4502.jar*** te installeren **Auteur** -instantie. Hiermee wordt de auteurinstantie gestart, die op de poort wordt uitgevoerd **4502** op de lokale computer.
 
-   >[!NOTE]
-   >
-   >Afhankelijk van de hardware van uw ontwikkelcomputer kan het moeilijk zijn om zowel een **Auteur en publicatie** -instantie die tegelijkertijd wordt uitgevoerd. Zelden moet u allebei gelijktijdig op een lokale opstelling in werking stellen.
+Dubbelklik op de knop ***aem-publish-p4503.jar*** te installeren **Publiceren** -instantie. Hiermee wordt de instantie Publiceren gestart, die op de poort wordt uitgevoerd **4503** op de lokale computer.
 
-   Zie voor meer informatie [Een AEM-instantie implementeren en onderhouden](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
+>[!NOTE]
+>
+>Afhankelijk van de hardware van uw ontwikkelcomputer kan het moeilijk zijn om zowel een **Auteur en publicatie** -instantie die tegelijkertijd wordt uitgevoerd. Zelden moet u allebei gelijktijdig op een lokale opstelling in werking stellen.
+
+### Opdrachtregel gebruiken
+
+U kunt ook dubbelklikken op het JAR-bestand door AEM te starten vanaf de opdrachtregel of een script te maken (`.bat` of `.sh`), afhankelijk van de smaak van uw lokale besturingssysteem. Hieronder ziet u een voorbeeld van de voorbeeldopdracht:
+
+```shell
+$ java -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=30303 -jar aem-author-p4502.jar -gui -r"author,localdev"
+```
+
+Hier, de `-X` zijn JVM-opties en `-D` zijn aanvullende frameworkeigenschappen, zie voor meer informatie [Een AEM-instantie implementeren en onderhouden](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html) en [Meer opties beschikbaar in het QuickStart-bestand](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html#further-options-available-from-the-quickstart-file).
 
 ## Apache Maven installeren
 
@@ -94,18 +103,18 @@ Alle AEM projecten moeten worden opgebouwd uit de meest recente versie van de **
    * [!DNL macOS] gebruikers kunnen Maven installeren met [Homebrew](https://brew.sh/)
 3. Controleren of **[!DNL Maven]** wordt geïnstalleerd door een nieuwe bevel-lijn terminal te openen en het volgende uit te voeren:
 
-   ```shell
-   $ mvn --version
-   Apache Maven 3.3.9
-   Maven home: /Library/apache-maven-3.3.9
-   Java version: 1.8.0_111, vendor: Oracle Corporation
-   Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre
-   Default locale: en_US, platform encoding: UTF-8
-   ```
+```shell
+$ mvn --version
+Apache Maven 3.3.9
+Maven home: /Library/apache-maven-3.3.9
+Java version: 1.8.0_111, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre
+Default locale: en_US, platform encoding: UTF-8
+```
 
-   >[!NOTE]
-   >
-   > In het verleden `adobe-public` Gemaakt profiel is vereist voor punt `nexus.adobe.com` om AEM artefacten te downloaden. Alle AEM artefacten zijn nu beschikbaar via Maven Central en de `adobe-public` is niet nodig.
+>[!NOTE]
+>
+> In het verleden `adobe-public` Gemaakt profiel is vereist voor punt `nexus.adobe.com` om AEM artefacten te downloaden. Alle AEM artefacten zijn nu beschikbaar via Maven Central en de `adobe-public` is niet nodig.
 
 ## Een geïntegreerde ontwikkelomgeving instellen
 
@@ -133,7 +142,7 @@ De **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** is een van de populair
 
 #### Installatie en installatie
 
-1. Download en installeer de [!DNL Eclipse] IDE voor [!DNL Java™™™™™™™™ EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
+1. Download en installeer de [!DNL Eclipse] IDE voor [!DNL Java™ EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
 1. Volg de instructies om de [!DNL AEM Developer Tools] insteekmodule: [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
