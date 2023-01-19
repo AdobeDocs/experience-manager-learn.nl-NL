@@ -1,13 +1,13 @@
 ---
-title: Ontdek de AEM GraphQL API - Geavanceerde concepten van AEM zonder kop - GraphQL
-description: Verzend vragen GraphQL gebruikend winde GraphiQL. Leer over geavanceerde vragen gebruikend filters, variabelen, en richtlijnen. Vraag naar fragment- en inhoudsverwijzingen, inclusief verwijzingen uit tekstvelden met meerdere regels.
+title: Ontdek de AEM GraphQL API - Geavanceerde concepten van AEM headless - GraphQL
+description: Verzend GraphQL-query's met behulp van GraphiQL IDE. Leer over geavanceerde vragen gebruikend filters, variabelen, en richtlijnen. Vraag naar fragment- en inhoudsverwijzingen, inclusief verwijzingen uit tekstvelden met meerdere regels.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # De AEM GraphQL API verkennen
 
-Met de API GraphQL in AEM kunt u gegevens van inhoudsfragmenten toegankelijk maken voor downstreamtoepassingen. In de basiszelfstudie [Zelfstudie GraphQL met meerdere stappen](../multi-step/explore-graphql-api.md), gebruikte u de Ontdekkingsreiziger GraphiQL om de vragen te testen en te verfijnen GraphQL.
+Met de GraphQL API in AEM kunt u gegevens van inhoudsfragmenten toegankelijk maken voor downstreamtoepassingen. In de basiszelfstudie [Zelfstudie GraphQL met meerdere stappen](../multi-step/explore-graphql-api.md), gebruikte u de Ontdekkingsreiziger GraphiQL om de vragen van GraphQL te testen en te verfijnen.
 
 In dit hoofdstuk, gebruikt u de Ontdekkingsreiziger GraphiQL om geavanceerdere vragen te bepalen om gegevens van de Fragments van de Inhoud te verzamelen die u in creeerde [vorige hoofdstuk](../advanced-graphql/author-content-fragments.md).
 
@@ -47,20 +47,20 @@ Verken vervolgens de kracht van AEM GraphQL API met behulp van de ingebouwde Gra
 
 >[!IMPORTANT]
 >
->In, sommige versies van AEM (6.X.X) moet de Ontdekkingsreiziger GraphiQL (alias GrahiQL IDE) hulpmiddel manueel worden geïnstalleerd, volgen [instructie van hier](../multi-step/explore-graphql-api.md#install-the-graphiql-tool-optional).
+>In, sommige versies van AEM (6.X.X) moet de Ontdekkingsreiziger GraphiQL (alias GrahiQL IDE) hulpmiddel manueel worden geïnstalleerd, volgen [instructie van hier](../how-to/install-graphiql-aem-6-5.md).
 
 1. Zorg ervoor dat in de rechterbovenhoek het eindpunt is ingesteld op **WKND Shared Endpoint**. Het wijzigen van _Endpoint_ dropdown-waarde geeft hier de bestaande _Blijvende query&#39;s_ in de linkerbovenhoek.
 
-   ![GrafiekQL-eindpunt instellen](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
+   ![GraphQL-eindpunt instellen](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
 
 Dit zal alle vragen aan modellen behandelen die in **WKND gedeeld** project.
 
 
 ## Een lijst met inhoudsfragmenten filteren met behulp van queryvariabelen
 
-In het vorige [Zelfstudie GraphQL met meerdere stappen](../multi-step/explore-graphql-api.md), bepaalde u, en gebruikte, basisvoortgeduurde vragen om de gegevens van Fragments van de Inhoud te krijgen. Hier, breidt u deze kennis uit en de gegevens van de Fragmenten van de filterinhoud door variabelen tot de persisted query over te gaan.
+In het vorige [GraphQL-zelfstudie met meerdere stappen](../multi-step/explore-graphql-api.md), bepaalde u, en gebruikte, basisvoortgeduurde vragen om de gegevens van Fragments van de Inhoud te krijgen. Hier, breidt u deze kennis uit en de gegevens van de Fragmenten van de filterinhoud door variabelen tot de persisted query over te gaan.
 
-Wanneer het ontwikkelen van cliënttoepassingen, gewoonlijk moet u de Fragmenten van de Inhoud filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL-API kunt u deze argumenten als variabelen in een query doorgeven om te voorkomen dat tekenreeksen op de client worden samengesteld tijdens runtime. Voor meer informatie over variabelen GraphQL, zie [documentatie van GraphQL](https://graphql.org/learn/queries/#variables).
+Wanneer het ontwikkelen van cliënttoepassingen, gewoonlijk moet u de Fragmenten van de Inhoud filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL API kunt u deze argumenten als variabelen in een query doorgeven om te voorkomen dat tekenreeksen op de client worden gemaakt tijdens runtime. Voor meer informatie over variabelen GraphQL, zie [GraphQL-documentatie](https://graphql.org/learn/queries/#variables).
 
 Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
 
@@ -229,7 +229,7 @@ Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vori
 
 ## Query voor inline-verwijzingen vanuit een tekstveld met meerdere regels {#query-rte-reference}
 
-Met de AEM GraphQL API kunt u zoeken naar inhoud- en fragmentverwijzingen in tekstvelden met meerdere regels. In het vorige hoofdstuk hebt u beide referentietypen toegevoegd aan het dialoogvenster **Beschrijving** veld van het Yosemite Team Content Fragment. Laten we deze referenties nu ophalen.
+Met de AEM GraphQL API kunt u zoeken naar inhoud en fragmentverwijzingen binnen tekstvelden met meerdere regels. In het vorige hoofdstuk hebt u beide referentietypen toegevoegd aan het dialoogvenster **Beschrijving** veld van het Yosemite Team Content Fragment. Laten we deze referenties nu ophalen.
 
 1. In GrahiQL winde, kleef de volgende vraag in het linkerpaneel:
 
@@ -348,7 +348,7 @@ Met de AEM GraphQL API kunt u zoeken naar inhoud- en fragmentverwijzingen in tek
 
 ## Query uitvoeren met instructies
 
-Soms moet u bij het ontwikkelen van clienttoepassingen de structuur van uw query&#39;s voorwaardelijk wijzigen. In dit geval, staat AEM GraphQL API u toe om richtlijnen te gebruiken GraphQL om het gedrag van uw vragen te veranderen die op de verstrekte criteria worden gebaseerd. Voor meer informatie over GraphQL-richtlijnen raadpleegt u de [documentatie van GraphQL](https://graphql.org/learn/queries/#directives).
+Soms moet u bij het ontwikkelen van clienttoepassingen de structuur van uw query&#39;s voorwaardelijk wijzigen. In dit geval kunt u met de AEM GraphQL API GraphQL-instructies gebruiken om het gedrag van uw query&#39;s te wijzigen op basis van de opgegeven criteria. Voor meer informatie over GraphQL-richtlijnen raadpleegt u de [documentatie van GraphQL](https://graphql.org/learn/queries/#directives).
 
 In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt uitvoeren voor inline-verwijzingen binnen tekstvelden met meerdere regels. De inhoud is opgehaald uit het dialoogvenster `description` ingediend in `plaintext` gebruiken. Daarna, breiden die vraag uit en gebruiken een richtlijn om voorwaardelijk terug te winnen `description` in de `json` ook de notatie.
 
@@ -725,4 +725,4 @@ Gefeliciteerd! U hebt nu geavanceerde query&#39;s getest om gegevens te verzamel
 
 ## Volgende stappen
 
-In de [volgende hoofdstuk](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), zult u leren hoe te om vragen te blijven GraphQL en waarom het beste praktijken is om voortgeduurde vragen in uw toepassingen te gebruiken.
+In de [volgende hoofdstuk](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), zult u leren hoe te om GraphQL vragen voort te zetten en waarom het beste praktijken is om voortgezette vragen in uw toepassingen te gebruiken.

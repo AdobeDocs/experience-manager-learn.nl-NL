@@ -1,6 +1,6 @@
 ---
-title: Bekijk de GraphQL API's - Aan de slag met AEM headless - GraphQL
-description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Ontdek AEM GraphQL APIs gebruikend ingebouwde IDE GrapiQL. Leer hoe AEM automatisch een GrafiekQL-schema genereert dat op een model van het Fragment van de Inhoud wordt gebaseerd. Experimenteer het construeren van basisvragen gebruikend de syntaxis GraphQL.
+title: Ontdek GraphQL API's - Aan de slag met AEM headless - GraphQL
+description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Ontdek AEM GraphQL API's met behulp van de ingebouwde GrapiQL IDE. Leer hoe AEM automatisch een GraphQL-schema genereert op basis van een model voor inhoudsfragmenten. Experimenteer met het samenstellen van basisquery's met behulp van de GraphQL-syntaxis.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6714
@@ -10,18 +10,18 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
 
 # GraphQL API&#39;s verkennen {#explore-graphql-apis}
 
-De GraphQL API van AEM verstrekt een krachtige vraagtaal om gegevens van de Fragmenten van de Inhoud aan stroomafwaartse toepassingen bloot te stellen. De modellen van het Fragment van de inhoud bepalen het gegevensschema dat door de Fragmenten van de Inhoud wordt gebruikt. Wanneer een model van het Fragment van de Inhoud wordt gecreeerd of bijgewerkt, wordt het schema vertaald en toegevoegd aan de &quot;grafiek&quot;die omhoog GraphQL API maakt.
+De GraphQL API van AEM biedt een krachtige querytaal om gegevens van Content Fragments toegankelijk te maken voor downstreamtoepassingen. De modellen van het Fragment van de inhoud bepalen het gegevensschema dat door de Fragmenten van de Inhoud wordt gebruikt. Wanneer een Content Fragment Model wordt gemaakt of bijgewerkt, wordt het schema vertaald en toegevoegd aan de &quot;grafiek&quot; die de GraphQL API vormt.
 
-In dit hoofdstuk, onderzoeken wij sommige gemeenschappelijke vragen GraphQL om inhoud te verzamelen gebruikend winde geroepen [GraphiQL](https://github.com/graphql/graphiql). Met GraphiQL IDE kunt u snel de geretourneerde query&#39;s en gegevens testen en verfijnen. Het biedt ook eenvoudige toegang tot de documentatie, waardoor u gemakkelijk kunt leren en begrijpen welke methoden beschikbaar zijn.
+In dit hoofdstuk, onderzoeken sommige gemeenschappelijke vragen van GraphQL om inhoud te verzamelen gebruikend winde riep [GraphiQL](https://github.com/graphql/graphiql). Met GraphiQL IDE kunt u snel de geretourneerde query&#39;s en gegevens testen en verfijnen. Het biedt ook eenvoudige toegang tot de documentatie, waardoor u gemakkelijk kunt leren en begrijpen welke methoden beschikbaar zijn.
 
 ## Vereisten {#prerequisites}
 
@@ -29,11 +29,11 @@ Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worde
 
 ## Doelstellingen {#objectives}
 
-* Leer om het hulpmiddel te gebruiken GraphiQL om een vraag te construeren gebruikend syntaxis GraphQL.
+* Leer om het hulpmiddel te gebruiken GraphiQL om een vraag te construeren gebruikend de syntaxis van GraphQL.
 * Leer hoe u een lijst met inhoudsfragmenten en één inhoudsfragment kunt opvragen.
 * Leer hoe u specifieke gegevenskenmerken kunt filteren en aanvragen.
 * Leer hoe u verbinding maakt met een query voor meerdere modellen van inhoudsfragmenten
-* Leer hoe te om vraag te blijven GraphQL.
+* Leer hoe je GraphQL query kunt voortzetten.
 
 ## GraphQL-eindpunt inschakelen {#enable-graphql-endpoint}
 
@@ -41,24 +41,24 @@ Een eindpunt GraphQL moet worden gevormd om vraag GraphQL API voor Inhoudsfragme
 
 1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **GraphQL**.
 
-   ![Navigeren naar het eindpunt GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
+   ![Navigeren naar GraphQL-eindpunt](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
 1. Tikken **Maken** Voer in de rechterbovenhoek van het dialoogvenster dat wordt weergegeven de volgende waarden in:
 
    * Naam*: **Mijn eindpunt van project**.
-   * GrafiekQL-schema gebruiken dat is opgegeven door ... *: **Mijn project**
+   * GraphQL-schema gebruiken dat is opgegeven door ... *: **Mijn project**
 
    ![GraphQL-eindpunt maken](assets/explore-graphql-api/create-graphql-endpoint.png)
 
    Tikken **Maken** om het eindpunt te bewaren.
 
-   De eindpunten GraphQL die op een projectconfiguratie worden gecreeerd laten slechts vragen tegen modellen toe die tot dat project behoren. In dit geval zijn de enige vragen tegen de **Persoon** en **Team** modellen kunnen worden gebruikt.
+   De GraphQL eindpunten die op een projectconfiguratie worden gecreeerd laten slechts vragen tegen modellen toe die tot dat project behoren. In dit geval zijn de enige vragen tegen de **Persoon** en **Team** modellen kunnen worden gebruikt.
 
    >[!NOTE]
    >
    > Een Globaal eindpunt kan ook worden gecreeerd om vragen tegen modellen over veelvoudige configuraties toe te laten. Dit moet met voorzichtigheid worden gebruikt aangezien het het milieu voor extra veiligheidskwetsbaarheid kan openen, en aan algemene ingewikkeldheid bij het beheren van AEM kan toevoegen.
 
-1. U zou één eindpunt moeten nu zien GraphQL dat op uw milieu wordt toegelaten.
+1. Er moet nu één GraphQL-eindpunt worden weergegeven dat op uw omgeving is ingeschakeld.
 
    ![Grafische eindpunten ingeschakeld](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
@@ -279,7 +279,7 @@ Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragmen
 
 ## Vragen behouden {#persist-queries}
 
-Zodra een ontwikkelaar met de vraag en resultaatgegevens tevreden is die van de vraag zijn teruggekeerd, moet de volgende stap de vraag opslaan of voortzetten aan AEM. De [Blijvende query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) zijn het aangewezen mechanisme om GraphQL API aan cliënttoepassingen bloot te stellen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van de GET en in het voorgeheugen ondergebracht bij de lagen van de Verzender en CDN. De prestaties van de gepresteerde vragen zijn veel beter. Naast prestatievoordelen zorgen permanente query&#39;s ervoor dat extra gegevens niet per ongeluk aan clienttoepassingen worden blootgesteld. Meer informatie over [Hier kunt u permanente query&#39;s vinden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+Zodra een ontwikkelaar met de vraag en resultaatgegevens tevreden is die van de vraag zijn teruggekeerd, moet de volgende stap de vraag opslaan of voortzetten aan AEM. De [Blijvende query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) zijn het voorkeursmechanisme voor het toegankelijk maken van de GraphQL API voor clienttoepassingen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van de GET en in het voorgeheugen ondergebracht bij de lagen van de Verzender en CDN. De prestaties van de gepresteerde vragen zijn veel beter. Naast prestatievoordelen zorgen permanente query&#39;s ervoor dat extra gegevens niet per ongeluk aan clienttoepassingen worden blootgesteld. Meer informatie over [Hier kunt u permanente query&#39;s vinden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
 Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende hoofdstuk.
 
@@ -371,7 +371,7 @@ Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende 
    ![Laatste voortgeduurde vragen](assets/explore-graphql-api/final-persisted-queries.png)
 
 
-## GraphQL-eindpunt en aanhoudende query&#39;s publiceren
+## GraphQL-eindpunt en doorlopende query&#39;s publiceren
 
 Na revisie en verificatie publiceert u de `GraphQL Endpoint` &amp; `Persisted Queries`
 
@@ -399,25 +399,13 @@ Meer informatie over GraphQL-query&#39;s vindt u op [Leren gebruiken GraphQL met
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, u creeerde en uitvoerde verscheidene vragen GraphQL!
+U hebt verschillende GraphQL-query&#39;s gemaakt en uitgevoerd.
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk: [React-app ontwikkelen](./graphql-and-react-app.md), verkent u hoe een externe toepassing AEM eindpunten kan vragen GraphQL en deze twee voortgeduurde vragen kan gebruiken. U wordt ook geïntroduceerd aan wat basisfout behandeling tijdens de vraaguitvoering GraphQL.
+In het volgende hoofdstuk: [React-app ontwikkelen](./graphql-and-react-app.md), onderzoekt u hoe een externe toepassing AEM eindpunten van GraphQL kan vragen en deze twee persisted query&#39;s kan gebruiken. Er is ook een aantal standaardfoutafhandeling geïntroduceerd tijdens het uitvoeren van GraphQL-query&#39;s.
 
 ## Het gereedschap GraphiQL installeren (optioneel) {#install-graphiql}
 
-In, sommige versies van AEM (6.X.X) het hulpmiddel van winde GraphiQL moet manueel worden geïnstalleerd, gebruik de volgende instructies:
+In sommige versies van AEM (6.X.X) moet het GraphiQL IDE-gereedschap handmatig worden geïnstalleerd, kunt u het [instructies van hier](../how-to/install-graphiql-aem-6-5.md).
 
-1. Ga naar de **[Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Zoek naar &quot;GraphiQL&quot; (zorg ervoor dat u de **i** in **GraphiQL**.
-1. Download de nieuwste **GraphiQL Content Package v.x.x.x**
-
-   ![GraphiQL-pakket downloaden](assets/explore-graphql-api/software-distribution.png)
-
-   Het ZIP-bestand is een AEM pakket dat rechtstreeks kan worden geïnstalleerd.
-
-1. Navigeer in het menu AEM Start naar **Gereedschappen** > **Implementatie** > **Pakketten**.
-1. Klikken **Pakket uploaden** en kiest u het pakket dat u in de vorige stap hebt gedownload. Klikken **Installeren** om het pakket te installeren.
-
-   ![GraphiQL-pakket installeren](assets/explore-graphql-api/install-graphiql-package.png)
