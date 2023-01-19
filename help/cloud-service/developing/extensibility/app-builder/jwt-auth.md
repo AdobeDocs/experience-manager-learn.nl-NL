@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: de2788d8f3971a47fca53e35ee84cbbaa0137140
+source-git-commit: 643a9844f19aa1bd153661540ec7f7398a35118e
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -69,21 +69,24 @@ De `JWT_PRIVATE_KEY` moet speciaal zijn opgemaakt omdat het een native waarde va
 >[!TAB macOS]
 
 1. Open `Terminal`
-1. `$ base64 -i /path/to/private.key | pbcopy`
+1. De opdracht uitvoeren `base64 -i /path/to/private.key | pbcopy`
 1. De base64-uitvoer wordt automatisch gekopieerd naar het klembord
+1. Plakken in `.env` als waarde voor corresponderende sleutel
 
 >[!TAB Windows]
 
 1. Open `Command Prompt`
-1. `$ certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. `$ findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. De opdracht uitvoeren `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
+1. De opdracht uitvoeren `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
 1. De base64-uitvoer naar het klembord kopiëren
+1. Plakken in `.env` als waarde voor corresponderende sleutel
 
 >[!TAB Linux®]
 
 1. Open terminal
-1. `$ base64 private.key`
+1. De opdracht uitvoeren `base64 private.key`
 1. De base64-uitvoer naar het klembord kopiëren
+1. Plakken in `.env` als waarde voor corresponderende sleutel
 
 >[!ENDTABS]
 
