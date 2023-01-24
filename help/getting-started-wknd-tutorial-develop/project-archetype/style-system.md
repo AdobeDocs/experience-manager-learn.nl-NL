@@ -13,9 +13,9 @@ mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Het wordt ook aanbevolen de [Client-side bibliotheken en front-end workflow](cli
 
 >[!NOTE]
 >
-> Als u met succes het vorige hoofdstuk voltooide kunt u het project hergebruiken en de stappen overslaan voor het uitchecken van het starterproject.
+> Als u met succes het vorige hoofdstuk voltooide, kunt u het project opnieuw gebruiken en de stappen overslaan voor het uitchecken van het starterproject.
 
 Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
 
@@ -67,9 +67,9 @@ U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/a
 1. Leer meer over BEM-notatie en hoe u deze kunt gebruiken om stijlen zorgvuldig in bereik te brengen.
 1. Geavanceerde beleidsconfiguraties toepassen met bewerkbare sjablonen.
 
-## Wat u gaat maken {#what-you-will-build}
+## Wat u gaat bouwen {#what-build}
 
-In dit hoofdstuk gebruiken we de [Stijlsysteemfunctie](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) om variaties van het **Titel** en **Tekst** de componenten die op de pagina Artikel worden gebruikt.
+In dit hoofdstuk wordt het [Stijlsysteemfunctie](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) om variaties van het **Titel** en **Tekst** de componenten die op de pagina Artikel worden gebruikt.
 
 ![Stijlen beschikbaar voor titel](assets/style-system/styles-added-title.png)
 
@@ -77,15 +77,15 @@ In dit hoofdstuk gebruiken we de [Stijlsysteemfunctie](https://experienceleague.
 
 ## Achtergrond {#background}
 
-De [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) kunnen ontwikkelaars en sjablooneditors meerdere visuele variaties van een component maken. Auteurs kunnen vervolgens bepalen welke stijl moet worden gebruikt bij het samenstellen van een pagina. Tijdens de rest van de zelfstudie gebruiken we het Stijlsysteem om verschillende unieke stijlen te maken en tegelijk gebruik te maken van Core Components in een aanpak met lage code.
+De [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) kunnen ontwikkelaars en sjablooneditors meerdere visuele variaties van een component maken. Auteurs kunnen vervolgens bepalen welke stijl moet worden gebruikt bij het samenstellen van een pagina. Het Stijlsysteem wordt gebruikt door de rest van de zelfstudie om verscheidene unieke stijlen te bereiken terwijl het gebruiken van de Componenten van de Kern in een lage codebenadering.
 
 Het algemene idee met het Stijlsysteem is dat ontwerpers verschillende stijlen kunnen kiezen van hoe een component eruit moet zien. De &quot;stijlen&quot; worden ondersteund door extra CSS-klassen die in de buitenste div van een component worden geïnjecteerd. In de clientbibliotheken worden CSS-regels toegevoegd op basis van deze stijlklassen, zodat de vormgeving van de component verandert.
 
-U kunt zoeken [gedetailleerde documentatie voor het Stijlsysteem hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html). Er is ook een grote [technische video voor het begrip van het Systeem van de Stijl](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+U kunt zoeken [gedetailleerde documentatie voor het Stijlsysteem hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html). Er is ook een grote [technische video voor het begrip van het Systeem van de Stijl](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
 ## Onderstrepingsstijl - Titel {#underline-style}
 
-De [Component Title](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/title.html) in het kader van het project `/apps/wknd/components/title` als onderdeel van de **ui.apps** module. De standaardstijlen van Kop-elementen (`H1`, `H2`, `H3`...) reeds in de **ui.frontend** module.
+De [Component Title](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) in het kader van het project `/apps/wknd/components/title` als onderdeel van de **ui.apps** module. De standaardstijlen van Kop-elementen (`H1`, `H2`, `H3`...) reeds in de **ui.frontend** module.
 
 De [WKND-artikelontwerpen](assets/pages-templates/wknd-article-design.xd) bevat een unieke stijl voor de component Title met een onderstreping. In plaats van twee componenten te maken of het dialoogvenster van de component te wijzigen, kunt u het Stijlsysteem gebruiken om auteurs de optie toe te staan een onderstrepingsstijl toe te voegen.
 
@@ -93,15 +93,15 @@ De [WKND-artikelontwerpen](assets/pages-templates/wknd-article-design.xd) bevat 
 
 ### Titelbeleid toevoegen
 
-Voeg een nieuw beleid voor de componenten van de Titel toe om inhoudsauteurs toe te staan om de onderstreepte stijl te kiezen om op specifieke componenten toe te passen. Dit wordt gedaan gebruikend de Redacteur van het Malplaatje binnen AEM.
+Voeg een beleid voor de componenten van de Titel toe om inhoudsauteurs toe te staan om de onderstreepte stijl te kiezen om op specifieke componenten toe te passen. Dit wordt gedaan gebruikend de Redacteur van het Malplaatje binnen AEM.
 
-1. Ga naar de **Artikelpagina** sjabloon bevindt zich op: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
+1. Ga naar de **Artikelpagina** sjabloon van: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
 1. In **Structuur** in de hoofdmodus **Layout Container**, selecteert u de **Beleid** pictogram naast **Titel** component vermeld onder *Toegestane componenten*:
 
    ![Titelbeleid configureren](assets/style-system/article-template-title-policy-icon.png)
 
-1. Maak een nieuw beleid voor de component Title met de volgende waarden:
+1. Maak een beleid voor de component Title met de volgende waarden:
 
    *Beleidstitel&#42;*: **WKND-titel**
 
@@ -119,7 +119,7 @@ Voeg een nieuw beleid voor de componenten van de Titel toe om inhoudsauteurs toe
 
 ### De stijl Onderstrepen toepassen
 
-Als auteur past u de onderstrepingsstijl toe op bepaalde titelcomponenten.
+Laten we als auteur de onderstrepingsstijl toepassen op bepaalde titelcomponenten.
 
 1. Ga naar de **La Skateparks** artikel in de AEM Sites-editor op: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 1. In **Bewerken** kiest u een component Titel. Klik op de knop **penseel** en selecteert u de **Onderstrepen** stijl:
@@ -128,7 +128,7 @@ Als auteur past u de onderstrepingsstijl toe op bepaalde titelcomponenten.
 
    >[!NOTE]
    >
-   > Op dit punt vindt geen zichtbare wijziging plaats als de `underline` stijl is niet geïmplementeerd. In de volgende oefening wordt deze stijl uitgevoerd.
+   > Op dit punt vindt geen zichtbare wijziging plaats als de `underline` stijl is niet geïmplementeerd. In de volgende oefening, wordt deze stijl uitgevoerd.
 
 1. Klik op de knop **Pagina-informatie** pictogram > **Weergeven als gepubliceerd** om de pagina buiten AEM editor te inspecteren.
 1. Gebruik de browsergereedschappen om te controleren of de markering rondom de component Title de CSS-klasse heeft `cmp-title--underline` toegepast op de buitenste div.
@@ -146,7 +146,7 @@ Als auteur past u de onderstrepingsstijl toe op bepaalde titelcomponenten.
 
 ### Implementeer de onderstrepingsstijl - ui.frontend
 
-Implementeer vervolgens de stijl Onderstrepen met de **ui.frontend** van ons project. We gebruiken de webpack-ontwikkelingsserver die is meegeleverd bij de **ui.frontend** een voorvertoning van de stijlen weergeven *voor* implementeren naar een lokale instantie van AEM.
+Implementeer vervolgens de stijl Onderstrepen met de **ui.frontend** van het AEM project. De webpack-ontwikkelingsserver die is meegeleverd bij de **ui.frontend** een voorvertoning van de stijlen weergeven *voor* het opstellen aan een lokaal geval van AEM wordt gebruikt.
 
 1. Start de `watch` van binnen **ui.frontend** module:
 
@@ -155,10 +155,10 @@ Implementeer vervolgens de stijl Onderstrepen met de **ui.frontend** van ons pro
    $ npm run watch
    ```
 
-   Hiermee wordt een proces gestart dat wijzigingen in de `ui.frontend` en synchroniseer de wijzigingen in de AEM-instantie.
+   Dit begint een proces dat veranderingen in `ui.frontend` en synchroniseer de wijzigingen in de AEM-instantie.
 
 
-1. De IDE retourneren en het bestand openen `_title.scss` gevestigd te: `ui.frontend/src/main/webpack/components/_title.scss`.
+1. De IDE retourneren en het bestand openen `_title.scss` van: `ui.frontend/src/main/webpack/components/_title.scss`.
 1. Introduceer een nieuwe regel gericht op `cmp-title--underline` klasse:
 
    ```scss
@@ -187,15 +187,15 @@ Implementeer vervolgens de stijl Onderstrepen met de **ui.frontend** van ons pro
    >
    >Alle kerncomponenten voldoen aan **[BEM-notatie](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. Het wordt aanbevolen de buitenste CSS-klasse als doel in te stellen wanneer u een standaardstijl voor een component maakt. Een andere beste manier is om klassennamen te richten die door de aantekening van de Component van de Kern worden gespecificeerd BEM eerder dan HTML elementen.
 
-1. Ga terug naar de browser en de AEM pagina. De onderstrepingsstijl wordt toegevoegd:
+1. Ga terug naar de browser en de AEM pagina. De stijl Onderstrepen wordt toegevoegd:
 
    ![Onderstrepingsstijl zichtbaar in webpack-ontwikkelserver](assets/style-system/underline-implemented-webpack.png)
 
-1. In de AEM editor moet u nu in- en uitschakelen **Onderstrepen** en bekijk de wijzigingen visueel.
+1. In de AEM Editor moet u nu in en uit de **Onderstrepen** en ziet u dat de wijzigingen visueel zijn doorgevoerd.
 
 ## Stijl prijsblok - Tekst {#text-component}
 
-Herhaal vervolgens vergelijkbare stappen om een unieke stijl toe te passen op de [Tekstcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). De component Text is uitgebreid naar het project onder `/apps/wknd/components/text` als onderdeel van de **ui.apps** module. De standaardstijlen van alinea-elementen zijn al geïmplementeerd in de **ui.frontend**.
+Herhaal vervolgens vergelijkbare stappen om een unieke stijl toe te passen op de [Tekstcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). De component Text is uitgebreid naar het project onder `/apps/wknd/components/text` als onderdeel van de **ui.apps** module. De standaardstijlen van alinea-elementen zijn al geïmplementeerd in de **ui.frontend**.
 
 De [WKND-artikelontwerpen](assets/pages-templates/wknd-article-design.xd) bevat een unieke stijl voor de component Text met een aanhalingsteken:
 
@@ -203,9 +203,9 @@ De [WKND-artikelontwerpen](assets/pages-templates/wknd-article-design.xd) bevat 
 
 ### Tekstbeleid toevoegen
 
-Voeg vervolgens een nieuw beleid toe voor de tekstcomponenten.
+Voeg vervolgens een beleid toe voor de tekstcomponenten.
 
-1. Ga naar de **Artikelpaginasjabloon** gevestigd te: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html).
+1. Ga naar de **Artikelpaginasjabloon** van: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html).
 
 1. In **Structuur** in de hoofdmodus **Layout Container**, selecteert u de **Beleid** pictogram naast **Tekst** component vermeld onder *Toegestane componenten*:
 
@@ -252,7 +252,7 @@ Voeg vervolgens een nieuw beleid toe voor de tekstcomponenten.
 
 ### Implementeer de stijl voor het aanhalingsteken - ui.frontend
 
-Daarna zullen wij de stijl van het Blok van het Citaat uitvoeren gebruikend **ui.frontend** van ons project.
+Nu implementeren we de stijl voor het aanhalingsteken met de **ui.frontend** van het AEM project.
 
 1. Als deze nog niet actief is, start u de `watch` van binnen **ui.frontend** module:
 
@@ -260,7 +260,7 @@ Daarna zullen wij de stijl van het Blok van het Citaat uitvoeren gebruikend **ui
    $ npm run watch
    ```
 
-1. Het bestand bijwerken `text.scss` gevestigd te: `ui.frontend/src/main/webpack/components/_text.scss`:
+1. Het bestand bijwerken `text.scss` van: `ui.frontend/src/main/webpack/components/_text.scss`:
 
    ```css
    /* Default text style */
@@ -302,7 +302,7 @@ Daarna zullen wij de stijl van het Blok van het Citaat uitvoeren gebruikend **ui
    >
    > In dit geval worden onbewerkte HTML-elementen bepaald door de stijlen. De reden hiervoor is dat de component Text een Rich Text Editor biedt voor inhoudsauteurs. Het rechtstreeks maken van stijlen tegen RTE-inhoud moet met de nodige voorzichtigheid gebeuren en het is nog belangrijker om de stijlen strak uit te breiden.
 
-1. Keer opnieuw naar browser en u zou de toegevoegde het blokstijl van het Citaat moeten zien:
+1. Keer opnieuw aan browser en u zou moeten zien dat de het blokstijl van het Citaat wordt toegevoegd:
 
    ![Zichtbare stijl van prijsblok](assets/style-system/quoteblock-implemented.png)
 
@@ -310,7 +310,7 @@ Daarna zullen wij de stijl van het Blok van het Citaat uitvoeren gebruikend **ui
 
 ## Vaste breedte - Container (Bonus) {#layout-container}
 
-Containercomponenten zijn gebruikt om de basisstructuur van het artikelpaginasjabloon te maken en om de neerzetzones voor inhoudsauteurs te bieden om inhoud aan een pagina toe te voegen. Containers kunnen ook gebruikmaken van het Stijlsysteem, zodat de auteurs van inhoud nog meer opties hebben voor het ontwerpen van lay-outs.
+Containercomponenten zijn gebruikt om de basisstructuur van het artikelpaginasjabloon te maken en om de neerzetzones voor inhoudsauteurs te bieden om inhoud aan een pagina toe te voegen. Containers kunnen ook het Stijlsysteem gebruiken, waardoor de auteurs van inhoud nog meer opties voor het ontwerpen van lay-outs krijgen.
 
 De **Hoofdcontainer** van de artikelpaginamalplaatje bevat de twee voor de auteur geschikte containers en heeft een vaste breedte.
 
@@ -340,13 +340,13 @@ In plaats van zich op `main` HTML-element, kan het Stijlsysteem worden gebruikt 
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, de artikelpagina is bijna volledig vormgegeven en u hebt praktijkervaring opgedaan met het systeem AEM stijl.
+Gefeliciteerd, de artikelpagina is bijna opgemaakt en u hebt praktijkervaring opgedaan met het systeem AEM stijl.
 
 ### Volgende stappen {#next-steps}
 
-Leer de stappen van begin tot eind om een [Aangepaste AEM](custom-component.md) die inhoud die in een Dialoog wordt geschreven toont, en verkent het ontwikkelen van een het Verkopen Model om bedrijfslogica in te kapselen die HTML van de component bevolkt.
+Leer de end-to-end stappen om een [Aangepaste AEM](custom-component.md) die inhoud die in een Dialoog wordt geschreven toont, en verkent het ontwikkelen van een het Verkopen Model om bedrijfslogica in te kapselen die HTML van de component bevolkt.
 
-De voltooide code weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd) of bekijk en stel de code plaatselijk bij de slag van de Git in werking `tutorial/style-system-solution`.
+De voltooide code weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van de it op `tutorial/style-system-solution`.
 
 1. Klonen met [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) opslagplaats.
 1. Kijk uit de `tutorial/style-system-solution` vertakking.

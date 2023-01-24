@@ -12,16 +12,16 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
 
 # Basisbeginselen van componenten {#component-basics}
 
-In dit hoofdstuk gaan we de onderliggende technologie van een Adobe Experience Manager (AEM) Sites Component verkennen via een eenvoudige `HelloWorld` voorbeeld. Kleine wijzigingen worden aangebracht aan een bestaande component, die onderwerpen van creatie, HTML, het Verdelen Modellen, cliënt-zijbibliotheken behandelt.
+In dit hoofdstuk, onderzoeken wij de onderliggende technologie van een Component van de Plaatsen van Adobe Experience Manager (AEM) door een eenvoudig `HelloWorld` voorbeeld. Kleine wijzigingen worden aangebracht aan een bestaande component, die onderwerpen van creatie, HTML, het Verdelen Modellen, cliënt-zijbibliotheken behandelt.
 
 ## Vereisten {#prerequisites}
 
@@ -35,9 +35,9 @@ De IDE die in de video&#39;s wordt gebruikt is [Visual Studio-code](https://code
 1. Begrijp hoe Dialoogvensters worden gebruikt om het schrijven van inhoud te vergemakkelijken.
 1. Leer de basisbeginselen zelf van Client-side bibliotheken om CSS en JavaScript op te nemen om een component te steunen.
 
-## Wat u gaat maken {#what-you-will-build}
+## Wat u gaat bouwen {#what-build}
 
-In dit hoofdstuk zult u verscheidene wijzigingen in een zeer eenvoudig uitvoeren `HelloWorld` component. Tijdens het maken van updates voor de `HelloWorld` leert u over de belangrijkste gebieden van de ontwikkeling van AEM component.
+In dit hoofdstuk voert u verschillende wijzigingen in een eenvoudig `HelloWorld` component. Tijdens het uitvoeren van updates voor de `HelloWorld` leert u over de belangrijkste gebieden van de ontwikkeling van AEM component.
 
 ## Hoofdstukstartproject {#starter-project}
 
@@ -45,7 +45,7 @@ Dit hoofdstuk bouwt op een generisch project voort dat door wordt geproduceerd [
 
 >[!NOTE]
 >
-> Als u met succes het vorige hoofdstuk voltooide kunt u het project hergebruiken en de stappen overslaan voor het uitchecken van het starterproject.
+> Als u met succes het vorige hoofdstuk voltooide, kunt u het project opnieuw gebruiken en de stappen overslaan voor het uitchecken van het starterproject.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330985/?quality=12&learn=on)
 
@@ -85,32 +85,32 @@ Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
 
 ## Componentontwerp {#component-authoring}
 
-Componenten kunnen worden beschouwd als kleine modulaire bouwstenen van een webpagina. Om componenten opnieuw te gebruiken, moeten de componenten configureerbaar zijn. Dit gebeurt via het dialoogvenster van de auteur. Daarna zullen wij een eenvoudige component ontwerpen en inspecteren hoe de waarden van de dialoog in AEM worden voortgeduurd.
+Componenten kunnen worden beschouwd als kleine modulaire bouwstenen van een webpagina. Om componenten opnieuw te gebruiken, moeten de componenten configureerbaar zijn. Dit gebeurt via het dialoogvenster van de auteur. Laten we nu de auteur van een eenvoudige component bekijken en controleren hoe waarden uit het dialoogvenster in AEM blijven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330986/?quality=12&learn=on)
 
-Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
+Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
-1. Een nieuwe pagina maken met de naam **Basisbeginselen van componenten** beneide **WKND-site** `>` **VS** `>` **en**.
+1. Een pagina maken met de naam **Basisbeginselen van componenten** beneide **WKND-site** `>` **VS** `>` **en**.
 1. Voeg de **Hello World-component** naar de nieuwe pagina.
 1. Open het dialoogvenster voor de component en voer tekst in. Sla de wijzigingen op om het bericht op de pagina weer te geven.
 1. Schakel in naar de modus Ontwikkelaar en bekijk het inhoudspad in CRXDE-Lite en controleer de eigenschappen van de componentinstantie.
-1. CRXDE-Lite gebruiken om de `cq:dialog` en `helloworld.html` script bevindt zich op `/apps/wknd/components/content/helloworld`.
+1. CRXDE-Lite gebruiken om de `cq:dialog` en `helloworld.html` script van `/apps/wknd/components/content/helloworld`.
 
 ## HTL (Sjabloontaal HTML) en dialoogvensters {#htl-dialogs}
 
-HTML Sjabloontaal of **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)** is een lichtgewicht, server-side sjabloontaal die door AEM componenten wordt gebruikt om inhoud te renderen.
+HTML Sjabloontaal of **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** is een lichtgewicht, server-side sjabloontaal die door AEM componenten wordt gebruikt om inhoud te renderen.
 
 **Dialoogvensters** definieert de beschikbare configuraties die voor een component kunnen worden gemaakt.
 
-De volgende update wordt uitgevoerd op `HelloWorld` HTML- manuscript om een extra groet vóór het tekstbericht te tonen.
+Laten we nu de `HelloWorld` HTML- manuscript om een extra groet vóór het tekstbericht te tonen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330987/?quality=12&learn=on)
 
-Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
+Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
 1. Schakelaar aan winde en open het project aan `ui.apps` module.
-1. Open de `helloworld.html` en breng een wijziging aan in de HTML Markup.
+1. Open de `helloworld.html` en werk de HTML Markup bij.
 1. Gebruik de hulpmiddelen van winde zoals [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) om de bestandswijziging te synchroniseren met de lokale AEM.
 1. Ga terug naar de browser en bekijk hoe de component is gerenderd.
 1. Open de `.content.xml` bestand dat het dialoogvenster voor het `HelloWorld` component bij:
@@ -152,7 +152,7 @@ Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden u
    </jcr:root>
    ```
 
-1. Het bestand opnieuw openen `helloworld.html`, die het belangrijkste HTML-script vertegenwoordigt dat verantwoordelijk is voor het renderen van de `HelloWorld` component, zich bevinden op:
+1. Bestand opnieuw openen `helloworld.html`, die het belangrijkste HTML-script vertegenwoordigt dat verantwoordelijk is voor het renderen van de `HelloWorld` component van onder pad:
 
    ```plain
        <code>/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/helloworld.html
@@ -171,9 +171,9 @@ Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden u
 
 ## Verkoopmodellen {#sling-models}
 
-Sling-modellen zijn annotaties die worden aangedreven door Java &quot;POJO&#39;s&quot; (Plain Old Java Objects) en die het gemakkelijker maken om gegevens van de JCR aan Java-variabelen toe te wijzen en die een aantal andere problemen bieden bij het ontwikkelen in de context van AEM.
+Sling-modellen zijn annotaties die worden aangedreven door Java™ &quot;POJO&#39;s&quot; (gewone oude Java™-objecten) en die het gemakkelijker maken gegevens van de JCR aan Java™-variabelen toe te wijzen. Ze bieden ook diverse andere genootschappen bij het ontwikkelen in het kader van AEM.
 
-Hierna zullen we een aantal wijzigingen aanbrengen in de `HelloWorldModel` Het Model van de verkoop om wat bedrijfslogica op de waarden toe te passen die in JCR worden opgeslagen alvorens hen aan de pagina uit te voeren.
+Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de verkoop om wat bedrijfslogica op de waarden toe te passen die in JCR worden opgeslagen alvorens hen aan de pagina uit te voeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330988/?quality=12&learn=on)
 
@@ -199,7 +199,7 @@ Hierna zullen we een aantal wijzigingen aanbrengen in de `HelloWorldModel` Het M
       ...
    ```
 
-1. Voeg de volgende regels toe aan de `HelloWorldModel` klasse om de waarden van de JCR-eigenschappen van de component in kaart te brengen `title` en `text` naar Java-variabelen:
+1. Voeg de volgende regels toe aan de `HelloWorldModel` klasse om de waarden van de JCR-eigenschappen van de component in kaart te brengen `title` en `text` naar Java™-variabelen:
 
    ```java
    ...
@@ -253,7 +253,7 @@ Hierna zullen we een aantal wijzigingen aanbrengen in de `HelloWorldModel` Het M
 
    >[!NOTE]
    >
-   > Indien AEM 6.4/6.5 wordt gebruikt `mvn clean install -PautoInstallBundle -Pclassic`
+   > Voor AEM 6.4/6.5 `mvn clean install -PautoInstallBundle -Pclassic`
 
 1. Het bestand bijwerken `helloworld.html` om `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` om de nieuw gecreëerde methodes van te gebruiken `HelloWorld` model:
 
@@ -280,23 +280,26 @@ Hierna zullen we een aantal wijzigingen aanbrengen in de `HelloWorldModel` Het M
 
 ## Client-Side bibliotheken {#client-side-libraries}
 
-Client-Side Libraries, clientlibs for short, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
+Client-Side bibliotheken, `clientlibs` Kortom, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
 
-De [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module is een ontkoppelde [webpack](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. Hierdoor kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` wordt meer in detail onderzocht in [Hoofdstuk Client Side Libraries](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+De [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module is een ontkoppelde [webpack](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. Hierdoor kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` wordt meer in detail besproken in de [Hoofdstuk Client-Side Bibliotheken](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Werk vervolgens de CSS-stijlen bij voor de `HelloWorld` component.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340750/?quality=12&learn=on)
 
-Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
+Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
-1. Open een terminalvenster en navigeer in de `ui.frontend` map en
+1. Open een terminalvenster en navigeer in de `ui.frontend` directory
 
-1. In de `ui.frontend` directory voert de `npm run watch` opdracht:
+1. Aanmelden `ui.frontend` directory voert de `npm install npm-run-all --save-dev` om de [npm-run-all](https://www.npmjs.com/package/npm-run-all) knooppuntmodule. Deze stap is **vereist voor AEM project Archetype 39**, in de komende versie van Archetype is dit niet vereist.
+
+1. Voer vervolgens het `npm run watch` opdracht:
 
    ```shell
    $ npm run watch
    ```
+
 1. Schakelaar aan winde en open het project aan `ui.frontend` module.
 1. Het bestand openen `ui.frontend/src/main/webpack/components/_helloworld.scss`.
 1. Werk het bestand bij om een rode titel weer te geven:
@@ -330,7 +333,7 @@ Hieronder ziet u de stappen op hoog niveau die in de bovenstaande video worden u
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, u hebt zojuist de basisbeginselen van componentontwikkeling in Adobe Experience Manager geleerd!
+Gefeliciteerd, u hebt de grondbeginselen van componentenontwikkeling in Adobe Experience Manager geleerd!
 
 ### Volgende stappen {#next-steps}
 
