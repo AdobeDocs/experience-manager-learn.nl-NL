@@ -7,9 +7,9 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+source-git-commit: c96b8c9761ff9477fda40d641db5021994b32754
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '281'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 4%
       + [4 - Variaties in inhoudsfragmenten](./graphql/video-series/content-fragment-variations.md)
       + [5 - GraphQL-eindpunten](./graphql/video-series/graphql-endpoints.md)
       + [6 - Auteur- en publicatiearchitectuur](./graphql/video-series/author-publish-architecture.md)
-      + [7 - GrafiekQL aanhoudende query&#39;s](./graphql/video-series/graphql-persisted-queries.md)
+      + [7 - GraphQL blijvende query&#39;s](./graphql/video-series/graphql-persisted-queries.md)
    + Basiszelfstudie{#multi-step}
       + [Overzicht](./graphql/multi-step/overview.md)
       + [1 - Modellen voor inhoudsfragmenten definiëren](./graphql/multi-step/content-fragment-models.md)
@@ -113,5 +113,8 @@ ht-degree: 4%
    + [Angular-app filteren](./graphql/code-samples/filtering-angular-app.md)
    + [Kleurtoon-app filteren](./graphql/code-samples/filtering-vue-app.md)
    + [Filteren met jQuery en Handlebars](./graphql/code-samples/filtering-jquery-handlebars.md)
+   + [De SvelteKit-app filteren](./graphql/code-samples/filtering-sveltekit-app.md)
+   + [ExpressJS- en Pug-app filteren](./graphql/code-samples/filtering-express-pug-app.md)
    + [Basic React-app](./graphql/code-samples/basic-react-app.md)
    + [Basic Next.js, app](./graphql/code-samples/basic-nextjs-app.md)
+
