@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: 6958b1f82c609af2998d94fd868e67bf1578e848
+source-git-commit: 6ae98ce749f8a485bdaa4c6c6232e52d8d6246b3
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1318'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,9 @@ Deze zelfstudie gebruikt `curl` om de API-configuraties van Cloud Manager te mak
 
 Begin door het Virtuele Privé Netwerk op AEM as a Cloud Service toe te laten.
 
-1. Bepaal eerst met behulp van de API van Cloud Manager in welk gebied de geavanceerde netwerken worden ingesteld [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) bewerking. De `region name` zijn vereist om volgende API-aanroepen van Cloud Manager uit te voeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
+1. Bepaal eerst in welke regio geavanceerde netwerken nodig zijn met behulp van de API van Cloud Manager [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) bewerking. De `region name` is vereist om volgende API-aanroepen van Cloud Manager uit te voeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
+
+   Zoek het gebied van uw AEM as a Cloud Service omgeving in [Cloud Manager](https://my.cloudmanager.adobe.com) onder de [details van de omgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). De regionaam die wordt weergegeven in Cloud Manager kan [toegewezen aan de regiocode](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden gebruikt in de API van Cloud Manager.
 
    __listRegions HTTP request__
 

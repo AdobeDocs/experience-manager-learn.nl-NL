@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: b74dc2693071313a80ccaaea839b8e2087c9edaa
+source-git-commit: 6ae98ce749f8a485bdaa4c6c6232e52d8d6246b3
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,8 @@ Deze zelfstudie gebruikt `curl` om de API-configuraties van Cloud Manager te mak
 Begin door het specifieke uitgangIP adres op AEM as a Cloud Service toe te laten en te vormen.
 
 1. Bepaal eerst met de API van Cloud Manager in welk gebied geavanceerde netwerken nodig zijn [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) bewerking. De `region name` is vereist om volgende API-aanroepen van Cloud Manager uit te voeren. Doorgaans wordt de regio waarin de productieomgeving zich bevindt, gebruikt.
+
+   Zoek het gebied van uw AEM as a Cloud Service omgeving in [Cloud Manager](https://my.cloudmanager.adobe.com) onder de [details van de omgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). De regionaam die wordt weergegeven in Cloud Manager kan [toegewezen aan de regiocode](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) worden gebruikt in de API van Cloud Manager.
 
    __listRegions HTTP request__
 
