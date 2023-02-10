@@ -1,6 +1,6 @@
 ---
 title: OpenAI-afbeeldingen genereren via een aangepaste extensie van de Content Fragment Console
-description: Een voorbeeld AEM de uitbreiding van de Console van de Fragmenten van de Inhoud die digitale beeld van natuurlijke taalbeschrijvingen gebruikend OpenAI of DALL-E 2 produceert en geproduceerde beeld uploadt aan AEM, en het associeert aan het Inhoudsfragment.
+description: Leer hoe u een digitale afbeelding genereert op basis van de beschrijving van de natuurlijke taal met behulp van OpenAI of DALL-E 2 en gegenereerde afbeelding uploadt naar AEM met behulp van een aangepaste extensie van de Content Fragment Console.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -10,9 +10,9 @@ kt: 11649
 thumbnail: KT-11649.png
 doc-type: article
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: a298dbd27dfda00c80d2098199eb418200af0233
+source-git-commit: 5f0464d7bb8ffde9a9b3bd7fd67dc0e341970a6f
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1399'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,11 @@ ht-degree: 0%
 
 # Afbeeldingselementen AEM genereren met OpenAI
 
-![Genereren van digitale afbeeldingen](./assets/digital-image-generation/screenshot.png){align="center"}
+Leer hoe u een afbeelding genereert met OpenAI of DALL.E 2 en deze uploadt naar AEM DAM voor snelheid van inhoud.
 
-Dit voorbeeld AEM de extensie Content Fragment Console is een [actiebalk](../action-bar.md) extensie die digitale afbeeldingen genereert op basis van natuurlijke taalinvoer met [OpenAI API](https://openai.com/api/) of [DALL.E 2](https://openai.com/dall-e-2/). De gegenereerde afbeelding wordt geüpload naar de AEM DAM en de afbeeldingseigenschap van het geselecteerde inhoudsfragment wordt bijgewerkt om deze nieuw gegenereerde, geüploade afbeelding van DAM te gebruiken.
+![Genereren van digitale afbeeldingen](./assets/digital-image-generation/screenshot.png){width="500" zoomable="yes"}
+
+Dit voorbeeld AEM de extensie Content Fragment Console is een [actiebalk](../action-bar.md) extensie die digitale beelden genereert op basis van invoer van natuurlijke talen met behulp van [OpenAI API](https://openai.com/api/) of [DALL.E 2](https://openai.com/dall-e-2/). De gegenereerde afbeelding wordt geüpload naar de AEM DAM en de afbeeldingseigenschap van het geselecteerde inhoudsfragment wordt bijgewerkt om deze nieuw gegenereerde, geüploade afbeelding van DAM te gebruiken.
 
 In dit voorbeeld leert u:
 
@@ -108,6 +110,12 @@ De gegenereerde App Builder-extensie-app wordt bijgewerkt zoals hieronder wordt 
 1. Installeren onder Node.js-bibliotheken
    1. [De OpenAI Node.js-bibliotheek](https://github.com/openai/openai-node#installation) - om de OpenAI API gemakkelijk aan te roepen
    1. [AEM uploaden](https://github.com/adobe/aem-upload#install) - om afbeeldingen te uploaden naar AEM-CS-instanties.
+
+
+>[!TIP]
+>
+>In de volgende secties leert u over de belangrijkste Reactie- en Adobe I/O Runtime-actie-JavaScript-bestanden. Als referentie kunt u de belangrijkste bestanden van `web-src` en  `actions` de omslag van het project AppBuilder wordt verstrekt, zie [adobe-appbuilder-cfc-ext-image-generation-code.zip](./assets/digital-image-generation/adobe-appbuilder-cfc-ext-image-generation-code.zip).
+
 
 ## Toepassingsroutes{#app-routes}
 
@@ -198,7 +206,7 @@ In deze voorbeeld-app is er een modale React-component (`GenerateImageModal.js`)
 1. De reactie van de afbeeldingsgeneratiebewerking die de koppeling bevat met de AEM elementdetails van de nieuw gegenereerde, geüploade afbeelding.
 
 Belangrijk is dat elke interactie met AEM van de extensie wordt gedelegeerd aan een [Handeling AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), dat een afzonderlijk serverloos proces is dat wordt uitgevoerd in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
-Het gebruik van Adobe I/O Runtime-acties om te communiceren met AEM, is om kwesties met betrekking tot de connectiviteit tussen bronnen van verschillende oorsprong (CORS) te voorkomen.
+Het gebruik van Adobe I/O Runtime-acties om te communiceren met AEM, en is bedoeld om kwesties met betrekking tot de connectiviteit tussen bronnen van verschillende oorsprong (CORS) te voorkomen.
 
 Wanneer de _Afbeelding genereren_ formulier is verzonden, een aangepaste `onSubmitHandler()` Hiermee wordt de Adobe I/O Runtime-handeling aangeroepen, waarbij de beschrijving van de afbeelding, de huidige AEM (domein) en het toegangstoken van de AEM van de gebruiker worden doorgegeven. De actie roept dan OpenAI [Afbeelding genereren](https://beta.openai.com/docs/guides/images/image-generation-beta) API om een afbeelding te genereren met de ingediende afbeeldingsbeschrijving. Volgende gebruiken [AEM uploaden](https://github.com/adobe/aem-upload) knooppuntmodule&#39;s `DirectBinaryUpload` klasse uploadt het geproduceerde beeld aan AEM en gebruikt definitief [AEM Content Fragment API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) om de inhoudsfragmenten bij te werken.
 
@@ -458,6 +466,11 @@ export default function GenerateImageModal() {
   }
 }
 ```
+
+>[!NOTE]
+>
+>In de `buildAssetDetailsURL()` functie, de `aemAssetdetailsURL` waarde variable veronderstelt dat [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) is ingeschakeld. Als u Verenigde Shell hebt onbruikbaar gemaakt, moet u verwijderen `/ui#/aem` van de waarde van de variabele.
+
 
 ## Adobe I/O Runtime-actie
 
