@@ -1,20 +1,20 @@
 ---
-user-guide-title: AEM Assets-video's en -Tutorials
-user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Assets.
-breadcrumb-title: AEM Assets Tutorials
+user-guide-title: Video's en tutorials voor AEM Assets
+user-guide-description: Een verzameling video's en tutorials voor Adobe Experience Manager Assets.
+breadcrumb-title: Tutorials voor AEM Assets
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 8bb7771effc95c70a9ddeffb1c54a1c2282e06dd
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 5%
+source-wordcount: '383'
+ht-degree: 12%
 
 ---
 
 
-# AEM Assets-video&#39;s en -Tutorials {#assets}
+# Video&#39;s en tutorials voor AEM Assets {#assets}
 
 + [Overzicht](overview.md)
 
@@ -75,6 +75,7 @@ ht-degree: 5%
       + [Commentaar voor het delen van bedrijfsmiddelen](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM](./sharing/asset-share-commons-technical-video-setup.md)
       + [Commentaar voor het delen van elementen](./sharing/asset-share-commons-feature-video-theming.md)
+      + [Asset Share Commons Asset Kits](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Gekoppelde assets](./sharing/connected-assets.md)
 
 
