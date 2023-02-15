@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
+source-git-commit: 4ff15fb482d31b984775ca691b53d117a2eba23c
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 1%
@@ -31,6 +31,11 @@ Gebruiken [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wk
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415491/?quality=12&learn=on)
 
+## Volgende stap
+
+Meer informatie over de [ontwikkeling/implementatie van levenscyclus met RDE](./development-life-cycle.md) om snel functies te leveren.
+
+
 ## Aanvullende bronnen
 
 [Documentatie RDE-opdrachten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
@@ -38,7 +43,3 @@ Gebruiken [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wk
 [Adobe I/O Runtime CLI-insteekmodule voor interactie met AEM Rapid Development Environment](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [Projectinstelling AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
-
-## Volgende stap
-
-Meer informatie over de [ontwikkeling/implementatie van levenscyclus met RDE](./development-life-cycle.md) om snel functies te leveren.
