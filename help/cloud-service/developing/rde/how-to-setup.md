@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 674407637c475ea9b70ecbc81f9e9bfece0fe9df
+source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,6 @@ In deze video wordt getoond:
 
 ## Aanvullende bronnen
 
-
 [RDE inschakelen in een programmadocumentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
 
 Opstelling van [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook bekend als `aio CLI`
@@ -42,3 +41,7 @@ Opstelling van [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/ru
 [Adobe I/O Runtime CLI-insteekmodule voor interactie met AEM Rapid Development Environment](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [Cloud Manager AIO CLI-insteekmodule](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+
+## Volgende stap
+
+Meer informatie [gebruiken](./how-to-use.md) een RDE om code en inhoud van uw favoriete Geïntegreerde Milieu van de Ontwikkeling (winde) voor snellere ontwikkelingscycli op te stellen.

@@ -9,10 +9,10 @@ level: Beginner
 jira: KT-11860
 thumbnail: KT-11860.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 674407637c475ea9b70ecbc81f9e9bfece0fe9df
+source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 2%
+source-wordcount: '109'
+ht-degree: 1%
 
 ---
 
@@ -36,3 +36,7 @@ Dit videooverzicht:
 [Cloud Manager CI/CD Pipelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)
 
 [De ontwikkelings-IDE instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html)
+
+## Volgende stap
+
+Meer informatie [instellen](./how-to-setup.md) een RDE in AEM as a Cloud Service.
