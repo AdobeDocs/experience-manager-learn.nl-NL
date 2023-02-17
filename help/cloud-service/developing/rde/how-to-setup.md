@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
+source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -45,19 +45,19 @@ Om het [WKND-siteprojecten](https://github.com/adobe/aem-guides-wknd#aem-wknd-si
 
 Installeer de Extensible CLI van Adobe I/O Runtime, ook bekend als de `aio CLI` door het volgende bevel van de bevellijn in werking te stellen.
 
-    &quot;shell
-    $ npm install -g @adobe/aio-cli
-    &quot;
+```shell
+$ npm install -g @adobe/aio-cli
+```
 
 ### AEM plug-ins
 
 Installeer Cloud Manager en AEM RDE-plug-ins met de `aio cli`s `plugins:install` gebruiken.
 
-    &quot;shell
-    $ AIO-plug-ins:installeren @adobe/aio-cli-plugin-cloudmanager
-    
-    $ AIO-plug-ins:installeren @adobe/aio-cli-plugin-aem-rate
-    &quot;
+```shell
+$ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+
+$ aio plugins:install @adobe/aio-cli-plugin-aem-rde
+```
 
 Met de insteekmodule Cloud Manager kunnen ontwikkelaars via de opdrachtregel communiceren met Cloud Manager.
 
@@ -91,23 +91,23 @@ De AEM insteekmodules moeten worden gevormd om met uw RDE in wisselwerking te st
 
 U kunt de huidige configuratiewaarden verifiëren door het volgende bevel in werking te stellen.
 
-    &quot;shell
-    $ aio config:list
-    &quot;
+```shell
+$ aio config:list
+```
 
 Ook, om te schakelen of te weten welke organisatie u momenteel het programma wordt geopend aan, kunt u het hieronder bevel gebruiken.
 
-    &quot;shell
-    $ aio waarbij
-    &quot;
+```shell
+$ aio where
+```
 
 ## RDE-toegang verifiëren
 
 Verifieer de de insteekinstallatie en configuratie van AEMRDE door het volgende bevel in werking te stellen.
 
-    &quot;shell
-    $ aio aem:rde:status
-    &quot;
+```shell
+$ aio aem:rde:status
+```
 
 De RDE statusinformatie wordt weergegeven als een omgevingsstatus, de lijst met _uw AEM_ bundels en configuraties op auteur en publicatieservice.
 

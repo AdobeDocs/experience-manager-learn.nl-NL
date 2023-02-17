@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
+source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -35,16 +35,16 @@ Gebruiken [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wk
 
 Klonen met [WKND-sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) en open het in uw favoriete winde om de AEM artefacten op RDE op te stellen.
 
-    &quot;shell
-    $ git clone git@github.com:adobe/aem-guides-wknd.git
-    &quot;
+```shell
+$ git clone git@github.com:adobe/aem-guides-wknd.git
+```
 
 Dan, bouwt en stelt het aan lokale AEM-SDK door het volgende gemaven bevel in werking te stellen op.
 
-    &quot;
-    $ cd aem-guides-wknd/
-    $ mvn clean install -PautoInstallSinglePackage
-    &quot;
+```
+$ cd aem-guides-wknd/
+$ mvn clean install -PautoInstallSinglePackage
+```
 
 ## Implementeer AEM artefacten met de AEM-RDE plug-in
 
@@ -54,13 +54,13 @@ Met de `aem:rde:install` bevel, stellen verschillende AEM artefacten op.
 
 Een gemeenschappelijk uitgangspunt moet eerst opstellen `all` en `dispatcher` pakketten door de volgende bevelen in werking te stellen.
 
-    &quot;shell
-    # Installeer het &#39;all&#39;-pakket
-    $ aio aem:rde:install all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
-    
-    # Installeer het zip &#39;dispatcher&#39;
-    $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
-    &quot;
+```shell
+# Install the 'all' package
+$ aio aem:rde:install all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
+
+# Install the 'dispatcher' zip
+$ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
+```
 
 Verifieer de WKND-site op zowel de auteur- als de publicatieservices bij een geslaagde implementatie. U moet de inhoud op de WKND-sitepagina&#39;s kunnen toevoegen, bewerken en publiceren.
 
@@ -118,9 +118,9 @@ Laten we de `Hello World Component` en zet het aan RDE op.
 
 In het bovenstaande voorbeeld met de afzonderlijke opdracht voor het implementeren van bestanden, `-t` en `-p` markeringen worden gebruikt om respectievelijk het type en de bestemming van het JCR-pad aan te geven. Laten we de beschikbare `install` de opties van het bevel door het volgende bevel in werking te stellen.
 
-    &quot;shell
-    $ aio aem:rde:install —help
-    &quot;
+```shell
+$ aio aem:rde:install --help
+```
 
 De vlaggen zijn vanzelfsprekend, de `-s` De markering is nuttig om de plaatsing enkel aan de auteur te richten of de publicatieservices te publiceren. Gebruik de `-t` vlag wanneer het opstellen van **content-file of content-xml** samen met de `-p` markering om de weg van bestemmingsJCR in het milieu van AEM RDE te specificeren.
 
@@ -155,15 +155,15 @@ Om te leren hoe te om de bundel op te stellen OSGi, verbeteren wij `HelloWorldMo
 
 U kunt de individuele config- dossiers of het volledige config- pakket, bijvoorbeeld opstellen:
 
-    &quot;shell
-    # Distribueer afzonderlijk configuratiebestand
-    $ aio aem:rde:install ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config/org.apache.sling.commons.log.LogManager.factory.config~wknd.cfg.json
-    
-    # of stel het volledige config-pakket op
-    $ cd ui.config
-    $ mvn schoon pakket
-    $ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
-    &quot;
+```shell
+# Deploy individual config file
+$ aio aem:rde:install ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config/org.apache.sling.commons.log.LogManager.factory.config~wknd.cfg.json
+
+# Or deploy the complete config package
+$ cd ui.config
+$ mvn clean package
+$ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
+```
 
 >[!TIP]
 >
@@ -202,21 +202,21 @@ De Apache- of Dispatcher-configuratiebestanden **kan niet individueel worden ing
 
 Laten we de extra opdrachten voor AEM RDE-plug-in die u wilt beheren, bekijken en communiceren met de RDE van uw lokale computer.
 
-    &quot;shell
-    $ aio aem:rde —help
-    Interactie met RapidDev-omgevingen.
-    
-    GEBRUIK
-    $ aio aem rde COMMAND
-    
-    OPDRACHTEN
-    Met aem verwijderen verwijdert u bundels en configuraties uit de huidige modus.
-    De historie van de naam krijgt een lijst van de updates aan de huidige rij worden gedaan die.
-    Installeren/bijwerken van bundels, configuraties en inhoudspakketten via een normale software.
-    De optie voor het opnieuw instellen van de RDE
-    Opnieuw starten met AME-teken Start de auteur opnieuw en publiceer een RDE
-    De status van de naam krijgt een lijst van de bundels en vormt opgesteld aan de huidige rij.
-    &quot;
+```shell
+$ aio aem:rde --help
+Interact with RapidDev Environments.
+
+USAGE
+$ aio aem rde COMMAND
+
+COMMANDS
+aem rde delete   Delete bundles and configs from the current rde.
+aem rde history  Get a list of the updates done to the current rde.
+aem rde install  Install/update bundles, configs, and content-packages.
+aem rde reset    Reset the RDE
+aem rde restart  Restart the author and publish of an RDE
+aem rde status   Get a list of the bundles and configs deployed to the current rde.
+```
 
 Met behulp van de bovenstaande opdrachten kan uw RDE worden beheerd vanaf uw favoriete IDE voor een snellere ontwikkelings-/implementatielevenscyclus.
 
