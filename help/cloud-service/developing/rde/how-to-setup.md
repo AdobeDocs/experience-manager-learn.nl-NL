@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 4ff15fb482d31b984775ca691b53d117a2eba23c
+source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,87 @@ In deze video wordt getoond:
 - Opstelling en configuratie van AEM RDE en de Manager van de Wolk `aio CLI` insteekmodule
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490/?quality=12&learn=on)
+
+## Vereiste
+
+Het volgende moet lokaal worden geïnstalleerd:
+
+- [Node.js](https://nodejs.org/en/) (LTS - langdurige ondersteuning)
+- [npm 8+](https://docs.npmjs.com/)
+
+## Lokale instellingen
+
+Om het [WKND-siteprojecten](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) de code en de inhoud op RDE van uw lokale machine, voltooi de volgende stappen.
+
+### Adobe I/O Runtime Extensible CLI
+
+Installeer de Extensible CLI van Adobe I/O Runtime, ook bekend als de `aio CLI` door het volgende bevel van de bevellijn in werking te stellen.
+
+    &quot;shell
+    $ npm install -g @adobe/aio-cli
+    &quot;
+
+### AEM plug-ins
+
+Installeer Cloud Manager en AEM RDE-plug-ins met de `aio cli`s `plugins:install` gebruiken.
+
+    &quot;shell
+    $ AIO-plug-ins:installeren @adobe/aio-cli-plugin-cloudmanager
+    
+    $ AIO-plug-ins:installeren @adobe/aio-cli-plugin-aem-rate
+    &quot;
+
+Met de insteekmodule Cloud Manager kunnen ontwikkelaars via de opdrachtregel communiceren met Cloud Manager.
+
+Met de AEM RDE-insteekmodule kunnen ontwikkelaars code en inhoud van de lokale computer implementeren.
+
+Als u de plug-ins wilt bijwerken, gebruikt u de `aio plugins:update` gebruiken.
+
+## AEM insteekmodules configureren
+
+De AEM insteekmodules moeten worden gevormd om met uw RDE in wisselwerking te staan. Kopieer eerst met de interface van Cloud Manager de waarden van de organisatie-, programma- en milieu-id.
+
+1. Organisatie-id: De waarde kopiëren uit **Profielbeeld > Accountinformatie (intern) > Modal Window > Current Org ID**
+
+   ![Organisatie-id](./assets/Org-ID.png)
+
+1. Programma-id: De waarde kopiëren uit **Overzicht van programma > Omgevingen > {ProgramName} > Browser URI > getallen tussen `program/` en`/environment`**
+
+1. Omgeving-id: De waarde kopiëren uit **Overzicht van programma > Omgevingen > {ProgramName} -regel > Browser URI > Getallen na`environment/`**
+
+   ![Programma- en milieu-id](./assets/Program-Environment-Id.png)
+
+1. Vervolgens gebruikt u de `aio cli`s `config:set` deze waarden in te stellen met de volgende opdracht.
+
+   ```shell
+   $ aio config:set cloudmanager_orgid <org-id>
+   
+   $ aio config:set cloudmanager_programid <program-id>
+   
+   $ aio config:set cloudmanager_environmentid <env-id>
+   ```
+
+U kunt de huidige configuratiewaarden verifiëren door het volgende bevel in werking te stellen.
+
+    &quot;shell
+    $ aio config:list
+    &quot;
+
+Ook, om te schakelen of te weten welke organisatie u momenteel het programma wordt geopend aan, kunt u het hieronder bevel gebruiken.
+
+    &quot;shell
+    $ aio waarbij
+    &quot;
+
+## RDE-toegang verifiëren
+
+Verifieer de de insteekinstallatie en configuratie van AEMRDE door het volgende bevel in werking te stellen.
+
+    &quot;shell
+    $ aio aem:rde:status
+    &quot;
+
+De RDE statusinformatie wordt weergegeven als een omgevingsstatus, de lijst met _uw AEM_ bundels en configuraties op auteur en publicatieservice.
 
 ## Volgende stap
 
