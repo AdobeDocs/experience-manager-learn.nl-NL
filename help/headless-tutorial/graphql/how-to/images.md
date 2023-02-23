@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ De velden kunnen het best worden gebruikt op basis van de volgende criteria:
 | `_authorUrl` | ✘ | ✔ | ✘ |
 | `_publishUrl` | ✘ | ✘ | ✔ |
 
-Gebruik van `_authorUrl` en `_publishUrl` zou met het AEM eindpunt moeten richten GraphQL dat wordt gebruikt om de reactie te bron GraphQL.
+Gebruik van `_authorUrl` en `_publishUrl` moet worden uitgelijnd op het eindpunt van AEM GraphQL dat wordt gebruikt om de GraphQL-respons te verkrijgen.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
@@ -53,9 +53,9 @@ Veldtypen worden gecontroleerd in het dialoogvenster [Inhoudsfragmentmodel](http
 
 ![Inhoudsfragmentmodel met inhoudsverwijzing naar een afbeelding](./assets/images/content-fragment-model.jpeg)
 
-## GraphQL-voortgezette query
+## GraphQL-query voortgezet
 
-Retourneer in de query GraphQL het veld als het `ImageRef` typen en de juiste velden opvragen `_path`, `_authorUrl`, of `_publishUrl` vereist door uw toepassing. U kunt bijvoorbeeld een avontuur opvragen in het dialoogvenster [WKND-project voor demo-referentie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) en de afbeeldings-URL opnemen voor de verwijzingen naar afbeeldingselementen in de `primaryImage` veld, kan worden uitgevoerd met een nieuwe, voortgezette query `wknd-shared/adventure-image-by-path` gedefinieerd als:
+Retourneer het veld in de GraphQL-query als de `ImageRef` typen en de juiste velden opvragen `_path`, `_authorUrl`, of `_publishUrl` vereist door uw toepassing. U kunt bijvoorbeeld een avontuur opvragen in het dialoogvenster [WKND-siteproject](https://github.com/adobe/aem-guides-wknd) en de afbeeldings-URL opnemen voor de verwijzingen naar afbeeldingselementen in de `primaryImage` veld, kan worden uitgevoerd met een nieuwe, voortgezette query `wknd-shared/adventure-image-by-path` gedefinieerd als:
 
 ```graphql
 query ($path: String!) {
@@ -76,7 +76,7 @@ query ($path: String!) {
 
 De `$path` in de `_path` filter vereist het volledige pad naar het inhoudsfragment (bijvoorbeeld `/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp`).
 
-## GraphQL-respons
+## GraphQL-reactie
 
 Het resulterende JSON-antwoord bevat de gevraagde velden met de URL&#39;s naar de afbeeldingselementen.
 
@@ -172,7 +172,7 @@ Uitvoeringen zijn rechtstreeks toegankelijk door het toevoegen van de __vertonin
 
 ### GraphQL-query{#renditions-graphl-query}
 
-AEM GraphQL vereist wel extra syntaxis voor het aanvragen van afbeeldingsuitvoeringen. In plaats daarvan [afbeeldingen worden gevraagd](#images-graphql-query) op de gebruikelijke manier en de gewenste uitvoering wordt in de code opgegeven. Het is belangrijk dat [ervoor zorgen dat afbeeldingselementen die door de toepassing zonder kop worden gebruikt, dezelfde rendities hebben](#reprocess-assets).
+AEM GraphQL heeft extra syntaxis nodig voor het aanvragen van afbeeldingsuitvoeringen. In plaats daarvan [afbeeldingen worden gevraagd](#images-graphql-query) op de gebruikelijke manier en de gewenste uitvoering wordt in de code opgegeven. Het is belangrijk dat [ervoor zorgen dat afbeeldingselementen die door de toepassing zonder kop worden gebruikt, dezelfde rendities hebben](#reprocess-assets).
 
 ### Voorbeeld Reageren
 
@@ -184,7 +184,7 @@ Laten we een eenvoudige React-toepassing maken die drie uitvoeringen van één a
 
 Maak een React-component waarmee de afbeeldingen worden gerenderd. Deze component accepteert vier eigenschappen:
 
-+ `assetUrl`: De URL van het afbeeldingselement zoals deze wordt opgegeven in het antwoord van de query GraphQL.
++ `assetUrl`: De URL van het afbeeldingselement zoals deze wordt opgegeven in het antwoord van de GraphQL-query.
 + `renditionName`: De naam van de vertoning die moet worden geladen.
 + `renditionExtension`: De extensie van de vertoning die moet worden geladen.
 + `alt`: De alt-tekst voor de afbeelding; toegankelijkheid is belangrijk .

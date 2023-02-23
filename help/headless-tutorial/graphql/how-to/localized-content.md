@@ -1,6 +1,6 @@
 ---
 title: Gelokaliseerde inhoud gebruiken met AEM zonder kop
-description: Leer hoe te om GraphQL te gebruiken om AEM voor gelokaliseerde inhoud te vragen.
+description: Leer hoe u GraphQL gebruikt om te zoeken naar AEM voor gelokaliseerde inhoud.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless
@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: 4fa84b0461cbdf2e25336259c4128be5585b8787
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Zorg ervoor dat de gelokaliseerde inhoudsfragmenten in AEM de [aanbevolen lokali
 
 De mappen met landinstellingen moeten op hetzelfde niveau staan en de mapnaam moet in plaats van de titel een geldige naam zijn [ISO 639-1-code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) die de landinstelling van de inhoud in de map vertegenwoordigt.
 
-De landinstellingscode is ook de waarde die wordt gebruikt om de inhoudsfragmenten te filteren die door de query GraphQL worden geretourneerd.
+De landinstellingscode is ook de waarde die wordt gebruikt om de inhoudsfragmenten te filteren die door de GraphQL-query worden geretourneerd.
 
 | Landinstellingscode | AEM pad | Landinstelling inhoud |
 |--------------------------------|----------|----------|
@@ -36,9 +36,9 @@ De landinstellingscode is ook de waarde die wordt gebruikt om de inhoudsfragment
 | en | /content/dam/.../**en**/... | Engelse inhoud |
 | es | /content/dam/.../**es**/... | Spaanse inhoud |
 
-## GraphQL-voortgezette query
+## GraphQL-query voortgezet
 
-AEM biedt een `_locale` GraphQL-filter dat inhoud automatisch filtert op landinstellingscode. U kunt bijvoorbeeld alle Engelse avonturen opvragen in het dialoogvenster [WKND-project voor demo-referentie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) kan met een nieuwe voortgezette vraag worden gedaan `wknd-shared/adventures-by-locale` gedefinieerd als:
+AEM biedt een `_locale` GraphQL-filter dat inhoud automatisch filtert op landinstellingscode. U kunt bijvoorbeeld alle Engelse avonturen opvragen in het dialoogvenster [WKND-siteproject](https://github.com/adobe/aem-guides-wknd) kan met een nieuwe voortgezette vraag worden gedaan `wknd-shared/adventures-by-locale` gedefinieerd als:
 
 ```graphql
 query($locale: String!) {
@@ -84,7 +84,7 @@ export default LocaleContext;
 
 Vervolgens maakt u een component Reactie via een locale-switch die de instelling [LocaleContext&#39;s](#locale-context) aan de selectie van de gebruiker.
 
-Deze landinstellingswaarde wordt gebruikt om de query GraphQL uit te voeren, zodat deze alleen inhoud retourneert die overeenkomt met de geselecteerde landinstelling.
+Deze landinstellingswaarde wordt gebruikt om de GraphQL-query&#39;s aan te sturen, zodat deze alleen inhoud retourneren die overeenkomt met de geselecteerde landinstelling.
 
 ```javascript
 // src/LocaleSwitcher.js
@@ -112,7 +112,7 @@ De Adventures-component zoekt AEM naar alle avonturen per landinstelling en geef
 
 Deze benadering kan tot andere vragen in uw toepassing worden uitgebreid, die ervoor zorgt dat alle vragen slechts inhoud omvatten die door de scèneselectie van een gebruiker wordt gespecificeerd.
 
-Het vragen tegen AEM wordt uitgevoerd in de haak van de douanereactie [getAdventuresByLocale, die meer in detail op het Vraag AEM documentatie GraphQL wordt beschreven](./aem-headless-sdk.md).
+Het vragen tegen AEM wordt uitgevoerd in de haak van de douanereactie [getAdventuresByLocale, die meer in detail wordt beschreven op de Vraag AEM GraphQL documentatie](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js

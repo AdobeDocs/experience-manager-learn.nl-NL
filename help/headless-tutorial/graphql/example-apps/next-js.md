@@ -1,6 +1,6 @@
 ---
 title: Next.js - Voorbeeld AEM zonder kop
-description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing Next.js toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query's.
+description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing Next.js toont hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query's.
 version: Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -10,16 +10,16 @@ level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2022-10-03T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # Next.js-app
 
-Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing Next.js toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query&#39;s. De AEM Headless-client voor JavaScript wordt gebruikt om de aanhoudende query&#39;s van GraphQL uit te voeren die de toepassing van stroom voorzien.
+Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing Next.js toont hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted query&#39;s. De AEM Headless-client voor JavaScript wordt gebruikt om de GraphQL-query&#39;s uit te voeren die de toepassing blijven activeren.
 
 ![De app Next.js met AEM Headless](./assets/next-js/next-js.png)
 
@@ -35,7 +35,7 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 ## AEM
 
-De app Next.js werkt met de volgende AEM implementatieopties. Alle implementaties vereisen [WKND Shared v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest), [WKND-site v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)of de [Demo-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/overview.html) in de AEM as a Cloud Service omgeving te installeren.
+De app Next.js werkt met de volgende AEM implementatieopties. Alle implementaties vereisen [WKND Shared v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) of [WKND-site v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) in de AEM as a Cloud Service omgeving te installeren.
 
 De volgende voorbeeldtoepassing is ontworpen om verbinding te maken met __AEM-publicatie__ service.
 
@@ -80,21 +80,13 @@ Next.js wordt ontworpen om met te verbinden __AEM-publicatie__ en hebt toegang t
    AEM_AUTH_DEV_TOKEN=my-dev-token
    ```
 
-1. Bewerk de `aem-guides-wknd-graphql/next-js/.env.local` bestand en valideren  `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` wordt geplaatst aan het aangewezen AEM eindpunt GraphQL.
+1. Bewerk de `aem-guides-wknd-graphql/next-js/.env.local` bestand en valideren  `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` wordt ingesteld op het juiste AEM GraphQL-eindpunt.
 
    Wanneer u [WKND gedeeld](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) of [WKND-site](https://github.com/adobe/aem-guides-wknd/releases/latest), gebruikt u de `wknd-shared` GraphQL API-eindpunt.
 
    ```plain
    ...
    NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT=wknd-shared
-   ...
-   ```
-
-   Wanneer u [Demo-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/overview.html), gebruikt u de `aem-demo-assets` GraphQL API-eindpunt.
-
-   ```plain
-   ...
-   NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT=aem-demo-assets
    ...
    ```
 
@@ -111,11 +103,11 @@ Next.js wordt ontworpen om met te verbinden __AEM-publicatie__ en hebt toegang t
 
 ## De code
 
-Hieronder volgt een overzicht van hoe de toepassing Next.js wordt gebouwd, hoe deze verbinding maakt met AEM Headless om inhoud op te halen met behulp van GraphQL-voortgeduurde query&#39;s en hoe die gegevens worden gepresenteerd. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js).
+Hieronder volgt een overzicht van de manier waarop de toepassing Next.js is gemaakt, hoe deze verbinding maakt met AEM Headless om inhoud op te halen met behulp van GraphQL persisted query&#39;s en hoe deze gegevens worden gepresenteerd. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js).
 
 ### Blijvende query&#39;s
 
-Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing Next.js AEM GraphQL voortgeduurde vragen om avontuurgegevens te vragen. De toepassing gebruikt twee doorlopende query&#39;s:
+Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing Next.js AEM GraphQL voortgezette vragen om avontuurgegevens te vragen. De toepassing gebruikt twee doorlopende query&#39;s:
 
 + `wknd/adventures-all` persisted query, die alle avonturen in AEM met een verkorte set eigenschappen retourneert. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
 
@@ -198,13 +190,13 @@ query($slug: String!) {
 }
 ```
 
-### Vraag GrafiekQL blijft uitvoeren
+### GraphQL-query uitgevoerd
 
-AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, [AEM headless client voor JavaScript](https://github.com/adobe/aem-headless-client-js) wordt gebruikt om [Voer de voortgezette vragen GraphQL uit](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) tegen AEM en laad de adventure-inhoud in de app.
+AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, [AEM headless client voor JavaScript](https://github.com/adobe/aem-headless-client-js) wordt gebruikt om [Geef de doorlopende GraphQL-query&#39;s op](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) tegen AEM en laad de adventure-inhoud in de app.
 
-Elke voortgezette query heeft een bijbehorende functie in `src/lib//aem-headless-client.js`, die het AEM eindpunt GraphQL roept, en de avontuurgegevens terugkeert.
+Elke voortgezette query heeft een bijbehorende functie in `src/lib//aem-headless-client.js`, dat het eindpunt van AEM GraphQL roept, en de avontuurgegevens terugkeert.
 
-Elke functie roept op zijn beurt de `aemHeadlessClient.runPersistedQuery(...)`, die de voortgezette vraag GraphQL uitvoeren.
+Elke functie roept op zijn beurt de `aemHeadlessClient.runPersistedQuery(...)`, wordt de doorlopende GraphQL-query uitgevoerd.
 
 ```js
 // src/lib/aem-headless-client.js
@@ -247,7 +239,7 @@ De app Next.js gebruikt twee pagina&#39;s om de avontuurgegevens te presenteren.
 
    A [Next.js Dynamic Route](https://nextjs.org/docs/routing/dynamic-routes) dat de details van één enkel avontuur toont. Deze dynamische route prefetches de gegevens van elk avontuur gebruikend [getStaticProps() van Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) via een oproep aan `getAdventureBySlug(..)` met de `slug` param werd via de avontuurselectie op de `adventures/index.js` pagina.
 
-   De dynamische route kan de details voor alle avonturen vooraf halen door te gebruiken [getStaticPaths() van Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) en het bevolken van alle mogelijke routepermutaties die op de volledige lijst van avonturen worden gebaseerd die door de vraag GraphQL zijn teruggekeerd  `getAdventurePaths()`
+   De dynamische route kan de details voor alle avonturen vooraf halen door te gebruiken [getStaticPaths() van Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) en het bevolken van alle mogelijke routepermutaties die op de volledige lijst van avonturen worden gebaseerd die door de vraag van GraphQL zijn teruggekeerd  `getAdventurePaths()`
 
    Het gebruik van `getStaticPaths()` en `getStaticProps(..)` stond de Statische Generatie van de Plaats van deze pagina&#39;s toe Next.js.
 
