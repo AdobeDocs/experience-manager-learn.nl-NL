@@ -1,18 +1,18 @@
 ---
-user-guide-title: Video's en Tutorials AEM
-breadcrumb-title: Tutorials AEM stichting
-user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Foundation.
+user-guide-title: AEM Foundation-video's en -tutorials
+breadcrumb-title: Tutorials voor AEM Foundation
+user-guide-description: Een verzameling video's en tutorials voor Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: d5645e975aa290392348cc69d078b24921a7d13a
+source-git-commit: de9377236016066cc62819f1c307aac82331a0b6
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 2%
+source-wordcount: '225'
+ht-degree: 13%
 
 ---
 
 
-# Video&#39;s en Tutorials AEM {#foundation}
+# AEM Foundation-video&#39;s en -tutorials {#foundation}
 
 + [Overzicht](./overview.md)
 + Beheer {#administration}
@@ -22,7 +22,8 @@ ht-degree: 2%
    + [Het dashboard Systeemoverzicht gebruiken](./administration/use-the-system-overview-dashboard.md)
    + [URL-omleidingen](./administration/url-redirection.md)
 + Verificatie {#authentication}
-   + [OAuth-verificatie](authentication/oauth-code-sample-develop.md)
+   + [OKTA en AEM](authentication/okta-saml-integration.md)
+   + [OAuth-bereik](authentication/oauth-code-sample-develop.md)
    + [Openbare/persoonlijke sleutels instellen voor gebruik met Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
    + [Verificatie](authentication/authentication-support-article-understand.md)
    + [IMS-verificatie begrijpen op AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
