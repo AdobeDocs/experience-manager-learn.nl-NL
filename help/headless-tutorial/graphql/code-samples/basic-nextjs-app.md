@@ -12,7 +12,7 @@ thumbnail: KT-11368.jpg
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: e3fb145e7a9f33dd010f6c40e42573d41e54b302
+source-git-commit: 772acab316ba2ff463fa5cacff02013bea920579
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Basic Next.js, app
 
-Dit [Next.js](https://nextjs.org/) app laat zien hoe u query&#39;s uitvoert op inhoud met AEM GraphQL API&#39;s met behulp van doorlopende query&#39;s. Deze toepassing geeft filterbaar van avonturen WKND terug, en na het selecteren van een avontuur, toont de avonturen volledige details.
+Dit [Next.js](https://nextjs.org/) toont hoe u inhoud kunt zoeken met behulp van AEM GraphQL API&#39;s met behulp van doorlopende query&#39;s. Deze toepassing geeft filterbaar van avonturen WKND terug, en na het selecteren van een avontuur, toont de avonturen volledige details.
 
 Deze code:
 
@@ -33,4 +33,4 @@ Voor een diepgaande beoordeling van de manier waarop deze Next.js-app is gemaakt
 
 >[!IMPORTANT]
 >
-> Codesandbox.io biedt geen ondersteuning voor het bewerken van de toepassing Next.js in de ingesloten IDE. U bewerkt dit codevoorbeeld als volgt: [Open de toepassing Next.js rechtstreeks op codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-3n6zdv).
+> Codesandbox.io biedt geen ondersteuning voor het bewerken van de toepassing Next.js in de ingesloten IDE. U bewerkt dit codevoorbeeld als volgt: [Open de toepassing Next.js rechtstreeks op codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).
