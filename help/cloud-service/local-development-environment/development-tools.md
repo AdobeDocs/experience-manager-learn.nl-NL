@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: e82c30e7f1a1fe04fd43ee639d74788f9bf100f6
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,7 @@ De [Adobe I/O CLI](https://github.com/adobe/aio-cli), of `aio`biedt opdrachtrege
 
 + Logboeken van AEM als Cloud Services
 + Cloud Manager-pijpleidingen beheren vanuit de CLI
++ Distribueren naar [AEM snelle-ontwikkelomgevingen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
 ### De Adobe I/O CLI installeren
 
@@ -134,13 +135,7 @@ Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI via de `aio cloudman
 
 1. Uitvoeren `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` om de [Insteekmodule AIR Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-### De Adobe I/O CLI-Asset compute insteekmodule instellen{#aio-asset-compute}
-
-Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI Asset compute-workers genereren en uitvoeren via de `aio asset-compute` gebruiken.
-
-1. Uitvoeren `aio plugins:install @adobe/aio-cli-plugin-asset-compute` om de [Ao Asset compute plug-in](https://github.com/adobe/aio-cli-plugin-asset-compute).
-
-### De Adobe I/O CLI-verificatie instellen
+#### De Adobe I/O CLI-verificatie instellen
 
 Als u wilt dat de Adobe I/O CLI communiceert met Cloud Manager, kunt u [Integratie van Cloud Manager moet worden gemaakt in Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager)en gegevens moeten zijn verkregen om te worden geverifieerd.
 
@@ -158,6 +153,19 @@ Als u wilt dat de Adobe I/O CLI communiceert met Cloud Manager, kunt u [Integrat
    + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key PATH_TO_PRIVATE_KEY_FILE --file`
 
 Beginnen [uitvoeren, opdrachten](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) voor Cloud Manager via de Adobe I/O CLI.
+
+### De insteekmodule AEM Rapid Development Environment instellen{#rde}
+
+Met de insteekmodule AEM Rapid Development Environment kan de AIR CLI communiceren met AEM as a Cloud Service [Snelle ontwikkelomgevingen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) via de `aio aem:rde` gebruiken.
+
+1. Uitvoeren `aio plugins:install @adobe/aio-cli-plugin-aem-rde` om de [Insteekmodule AEM Rapid Development Environment](https://github.com/adobe/aio-cli-plugin-aem-rde).
+
+### De Adobe I/O CLI-Asset compute insteekmodule instellen{#aio-asset-compute}
+
+Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI Asset compute-workers genereren en uitvoeren via de `aio asset-compute` gebruiken.
+
+1. Uitvoeren `aio plugins:install @adobe/aio-cli-plugin-asset-compute` om de [Ao Asset compute plug-in](https://github.com/adobe/aio-cli-plugin-asset-compute).
+
 
 ## De ontwikkelings-IDE instellen
 
