@@ -3,9 +3,9 @@ title: Snelheid van inhoud besturen met Adobe Experience Manager
 description: Leer meer over snelheid van inhoud en de waarde ervan in bedrijfsorganisaties. Duik in vier principes van effectieve implementatie en de valkuilen die onderweg moeten uitzien.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: de31d6e97b84781aa05ca441fc6e9fc4bc59ccc3
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2814'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ AEM Sites: basisbeheer &amp; werking
 | --- | --- | --- | --- |
 | CSS-ontwikkelaar | <ul><li>Webontwikkeling (CSS of front-end)</li>Componenten opnieuw gebruiken<li>Ervaar artefacten maken met behulp van repurpose of net new</li></ul> | <ul><li>Bedrijfseigenaar van oplossing</li><li>Creeert onderhoudstaken en verhogingen</li><li>Werkt met BU om technische en strategische visies te trouwen</li></ul> | Eigenaar product |
 | Ontwikkelaar achterkant | <ul><li>Diepe ervaringen niet gedaan met eenvoudige front-end CSS</li>Toezicht op architectuur<li>Dynamische integratie/aansluiting met producteigenaar op strategische doelstellingen</li></ul> | <ul><li>Schrijvers van inhoud helpen</li><li>Governance</li><li>Coördinaten worden gestart, macrobewerkingen worden beheerd</li></ul> | Admin-auteur |
-| Release Manager | <ul><li>Release-beheer</li><li>Codeimplementaties</li></li>Huidige succesvolle technicus van de Klant</ul> | <ul><li>Hiermee past u inhoud toe (inclusief vooraf gemaakte stijlen)</li>Gelaagde eigendom<li>Levert en deelt kwesties en zorgen mee aangezien zij met CSM voortkomen</li></ul> | Inhoudsauteur |
+| Release Manager | <ul><li>Release-beheer</li><li>Codeimplementaties</li></li>Adobe-accountteam</ul> | <ul><li>Hiermee past u inhoud toe (inclusief vooraf gemaakte stijlen)</li>Gelaagde eigendom<li>Levert en deelt kwesties en zorgen mee aangezien zij met CSM voortkomen</li></ul> | Inhoudsauteur |
 
 ## Mogelijke valkuilen
 

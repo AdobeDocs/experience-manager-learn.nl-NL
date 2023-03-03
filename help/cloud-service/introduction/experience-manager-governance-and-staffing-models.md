@@ -3,7 +3,7 @@ title: Model en archetypen voor bestuur en personeel
 description: Leer hoe u uw Adobe Experience Manager-platform (AEM) kunt exploiteren en de meeste waarde van uw inspanningen krijgt.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: dcd69c7444eae0f8c86464c1963bff35e6f11238
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Hieronder volgen voorbeelden van een licht (sportkleding) en zwaar (cosmetisch b
 
    * CSS ontwikkelen - creëert ervaringsartefacten door componenten met nieuwe stijlen opnieuw te gebruiken.
    * De ontwikkeling van het achterste deel - leidt tot nieuwe componenten of kan een kerncomponent uitbreiden. Indien correct gedaan, zou deze rol niet meer dan één persoon moeten hebben, tenzij er behoefte aan grote animatietaken is.
-   * Release-beheer - houdt toezicht op de implementatie van code en fungeert als de huidige Customer Success Engineer.
+   * Release-beheer - houdt toezicht op de implementatie van code en fungeert als het huidige Adobe Account Team.
    * Eigenaar van producten - werkt samen met de BU aan het samenbrengen van technische en strategische visies; leidt tot onderhoudstaken en verhogingen en dient als bedrijfseigenaar van de oplossing.
    * Admin Authors - werkt de CSS huid bij en verstrekt raad aan de auteurs die inhoud bijwerken en toepassen. Deze rol werkt aan werkschemeconfiguraties en leidt tot leidingendocumentatie voor de inhoudsauteurs om toe te passen. OPMERKING: In versie 6.5 raadt Adobe aan bewerkbare sjablonen te gebruiken.
    * Inhoudsauteurs - passen inhoud, gelaagde eigendom toe en bieden communicatieproblemen en zorgen die zich voordoen met CSM.
