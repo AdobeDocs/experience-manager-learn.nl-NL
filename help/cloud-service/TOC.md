@@ -1,14 +1,14 @@
 ---
 user-guide-title: Tutorials voor Adobe Experience Manager as a Cloud Service
-user-guide-description: Een verzameling zelfstudies voor Adobe Experience Manager as a Cloud Service.
-breadcrumb-title: AEM as a Cloud Service Tutorials
+user-guide-description: Een verzameling tutorials voor Adobe Experience Manager as a Cloud Service.
+breadcrumb-title: Tutorials voor AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 0990fc230e2a36841380b5b0c6cd94dca24614fa
+source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 9%
+source-wordcount: '910'
+ht-degree: 11%
 
 ---
 
@@ -92,6 +92,11 @@ ht-degree: 9%
       + [Servicegebruikers](./developing/advanced/service-users.md)
       + [Aangepaste naamruimten](./developing/advanced/custom-namespaces.md)
       + [Paginariabelen in cache plaatsen](./developing/advanced/variant-caching.md)
+   + Snelle ontwikkelomgeving{#rde}
+      + [Overzicht](./developing/rde/overview.md)
+      + [Hoe kan ik-instellingen](./developing/rde/how-to-setup.md)
+      + [Hoe wordt het gebruikt](./developing/rde/how-to-use.md)
+      + [Levenscyclus](./developing/rde/development-life-cycle.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Foutopsporing AEM{#debugging}
    + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
@@ -191,6 +196,11 @@ ht-degree: 9%
       + [Deelvenster Elementen configureren](./forms/create-first-af/configure-assets-panel.md)
       + [Deelvenster Start configureren](./forms/create-first-af/configure-start-panel.md)
       + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
+      + AEM Forms en Analytics{#forms-and-analytics}
+         + [Inleiding](./forms/form-data-analytics/introduction.md)
+         + [Gegevenselementen maken](./forms/form-data-analytics/data-elements.md)
+         + [Regels maken](./forms/form-data-analytics/rules.md)
+         + [De oplossing testen](./forms/form-data-analytics/test.md)
    + Documentgeneratie in AEM Forms CS{#doc-gen-formscs}
       + [Inleiding](./forms/doc-gen-forms-cs/introduction.md)
       + [Servicereferenties maken](./forms/doc-gen-forms-cs/service-credentials.md)
