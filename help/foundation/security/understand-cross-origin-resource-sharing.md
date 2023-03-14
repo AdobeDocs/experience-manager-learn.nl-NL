@@ -11,7 +11,7 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 7c2115945e2d62f52c777bba4d736ecd3262eecc
+source-git-commit: 2bd1b66dc28a6e591afda746e9d276cae7a29948
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 0%
@@ -184,7 +184,7 @@ Over het algemeen kunnen dezelfde overwegingen voor het in cache plaatsen van in
 Als u het in cache plaatsen van CORS-headers wilt toestaan, voegt u de volgende configuratie toe aan alle ondersteunde AEM Publish dispatcher.any-bestanden.
 
 ```
-/cache { 
+/myfarm { 
   ...
   /headers {
       "Origin"
