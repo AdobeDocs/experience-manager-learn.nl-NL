@@ -8,11 +8,11 @@ role: Developer
 level: Beginner
 kt: 4679
 thumbnail: 30603.jpg
-last-substantial-update: 2022-09-01T00:00:00Z
+last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 370e15fdd96f1c33bc50ee72066381bec40d82c3
+source-git-commit: eb31c5fb79e01e1c363fc153355e8d92d1a54021
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Alle hieronder uitgegeven bevelen veronderstellen dat de huidige het werk folder
 
 >[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
 
-*Deze video gebruikt macOS ter illustratie. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken*
+*Deze video gebruikt macOS ter illustratie. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken.*
 
 ## De Dispatcher-configuratiebestanden begrijpen
 
@@ -187,6 +187,11 @@ De aanbevolen versie van Dispatcher Tools is die welke is meegeleverd bij de AEM
 ## De basislijnset van Apache- en Dispatcher-configuraties bijwerken
 
 De basislijnset van Apache- en Dispatcher-configuratie wordt regelmatig verbeterd en vrijgegeven met de AEM as a Cloud Service SDK-versie. Het is beste praktijken om de verhogingen van de basislijnconfiguratie in uw AEM project op te nemen en te vermijden [lokale validatie](#validate-configurations) en fouten met de pijpleiding in Cloud Manager. Werk ze bij met de functie `update_maven.sh` script van het `.../dispatcher-sdk-x.x.x/bin` map.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3416744/?quality=12&learn=on)
+
+*Deze video gebruikt macOS ter illustratie. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken.*
+
 
 Laten we aannemen dat u in het verleden een AEM project hebt gemaakt met [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)De basislijnconfiguraties Apache en Dispatcher waren actueel. Gebruikend deze basislijnconfiguraties werden uw project-specifieke configuraties gecreeerd door, de dossiers als opnieuw te gebruiken en te kopiëren `*.vhost`, `*.conf`, `*.farm` en `*.any` van de `dispatcher/src/conf.d` en `dispatcher/src/conf.dispatcher.d` mappen. Uw lokale Dispatcher-validatie en Cloud Manager-pijpleidingen waren prima.
 
