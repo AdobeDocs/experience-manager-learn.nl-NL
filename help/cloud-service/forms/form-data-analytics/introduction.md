@@ -9,14 +9,14 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
 
 ---
 
-# Waarden voor formuliergegevensvelden en validatiefouten voor formuliervelden rapporteren met Adobe Analytic
+# Waarden voor formuliergegevens en validatiefouten voor formuliervelden rapporteren met Adobe Analytics
 
 Leer hoe u analyses op uw adaptieve formulieren kunt implementeren met Tags en Adobe Analytics. In dit voorbeeld worden de configuratie- en implementatiestappen uitgelegd voor het maken van inzichtelijke rapporten over de interactie van bezoekers met uw formulieren.
 

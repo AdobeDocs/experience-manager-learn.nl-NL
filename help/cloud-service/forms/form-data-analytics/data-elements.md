@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 439167be96959baea54f50a221c6d26f8fab78b2
+source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -19,6 +19,7 @@ ht-degree: 0%
 # Passende gegevenselementen maken
 
 In het bezit van Markeringen hebben wij twee nieuwe gegevenselementen (ApplicantsStateOfResidence en validationError) toegevoegd.
+
 ![adaptief](assets/data_elements.png)
 
 ## Verzoekende partijStateOfResidence

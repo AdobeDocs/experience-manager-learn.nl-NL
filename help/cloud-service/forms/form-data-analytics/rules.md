@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 439167be96959baea54f50a221c6d26f8fab78b2
+source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -18,14 +18,18 @@ ht-degree: 0%
 
 # De regel definiëren
 
-In het bezit van Markeringen hebben wij 2 nieuw gecreeerd [regels](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html)(**Veldvalidatiefout en FormSubmit**).
+In het bezit van Markeringen hebben wij 2 nieuw gecreeerd [regels](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Veldvalidatiefout en FormSubmit**).
+
 ![adaptief](assets/rules.png)
 
 
 ## Veldvalidatiefout
 
 De **Veldvalidatiefout** regel wordt geactiveerd telkens wanneer zich een validatiefout voordoet in het adaptieve formulierveld. Als het telefoonnummer of de e-mail bijvoorbeeld in ons formulier niet de verwachte indeling heeft, wordt een foutbericht voor validatie weergegeven.
+
 De regel van de Fout van de Bevestiging van het Gebied wordt gevormd door de gebeurtenis te plaatsen aan _**Adobe Experience Manager Forms-Error**_ zoals getoond in het het schermschot
+
+
 
 ![ingezetene van de verzoekende staat](assets/field_validation_error_rule.png)
 
@@ -36,6 +40,7 @@ De Adobe Analytics - Vastgestelde Variabelen worden gevormd als volgt
 ## Regel voor verzenden van formulier
 
 De regel Formulier verzenden wordt geactiveerd telkens wanneer een adaptief formulier is verzonden.
+
 De regel Formulier verzenden is geconfigureerd met de _**Adobe Experience Manager Forms - Verzenden**_ event
 
 ![form-submit-rule](assets/form-submit-rule.png)

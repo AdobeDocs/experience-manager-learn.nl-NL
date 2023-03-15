@@ -5,7 +5,7 @@ breadcrumb-title: Tutorials voor AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 11%
@@ -196,11 +196,11 @@ ht-degree: 11%
       + [Deelvenster Elementen configureren](./forms/create-first-af/configure-assets-panel.md)
       + [Deelvenster Start configureren](./forms/create-first-af/configure-start-panel.md)
       + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
-      + AEM Forms en Analytics{#forms-and-analytics}
-         + [Inleiding](./forms/form-data-analytics/introduction.md)
-         + [Gegevenselementen maken](./forms/form-data-analytics/data-elements.md)
-         + [Regels maken](./forms/form-data-analytics/rules.md)
-         + [De oplossing testen](./forms/form-data-analytics/test.md)
+   + AEM Forms en Analytics{#forms-and-analytics}
+      + [Inleiding](./forms/form-data-analytics/introduction.md)
+      + [Gegevenselementen maken](./forms/form-data-analytics/data-elements.md)
+      + [Regels maken](./forms/form-data-analytics/rules.md)
+      + [De oplossing testen](./forms/form-data-analytics/test.md)
    + Documentgeneratie in AEM Forms CS{#doc-gen-formscs}
       + [Inleiding](./forms/doc-gen-forms-cs/introduction.md)
       + [Servicereferenties maken](./forms/doc-gen-forms-cs/service-credentials.md)
