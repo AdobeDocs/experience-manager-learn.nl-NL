@@ -1,21 +1,21 @@
 ---
-user-guide-title: Aan de slag met AEM headless
-user-guide-description: Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met AEM headless.
-breadcrumb-title: Zelfstudie voor AEM zonder koptekst
+user-guide-title: Aan de slag met AEM Headless
+user-guide-description: Een end-to-end tutorial waarin wordt geïllustreerd hoe u content kunt samenstellen en beschikbaar maken met AEM Headless.
+breadcrumb-title: AEM Headless-tutorial
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: c96b8c9761ff9477fda40d641db5021994b32754
+source-git-commit: ea7cd118d9cba97d2b497f6659f74d2fe8331c66
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 4%
+source-wordcount: '282'
+ht-degree: 12%
 
 ---
 
 
-# Aan de slag met AEM headless{#getting-started-with-aem-headless}
+# Aan de slag met AEM Headless{#getting-started-with-aem-headless}
 
 + [Overzicht van AEM headless](./overview.md)
 + GraphQL {#graphql}
@@ -59,6 +59,7 @@ ht-degree: 4%
    + [RTF](./graphql/how-to/rich-text.md)
    + [Afbeeldingen](./graphql/how-to/images.md)
    + [Gelokaliseerde inhoud](./graphql/how-to/localized-content.md)
+   + [Voorvertoning](./graphql/how-to/preview.md)
    + [AEM headless SDK](./graphql/how-to/aem-headless-sdk.md)
    + [GraphiQL installeren op AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
    + Voorbeelden {#example-apps}
