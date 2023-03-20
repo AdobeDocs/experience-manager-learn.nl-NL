@@ -13,16 +13,16 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 8fc36698f06fea0eaaf818867c7e713453e0452d
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
 # Token-gebaseerde authentificatie aan AEM as a Cloud Service
 
-AEM stelt een verscheidenheid van eindpunten van HTTP bloot die met op een headless manier, van GraphQL, AEM de Diensten van de Inhoud aan Activa HTTP API kunnen worden in wisselwerking staan. Vaak moeten deze gebruikers zonder kop zich op AEM verifiëren om toegang te krijgen tot beveiligde inhoud of handelingen. Om dit te vergemakkelijken, steunt AEM symbolisch-gebaseerde authentificatie van HTTP- verzoeken van externe toepassingen, diensten of systemen.
+AEM stelt een verscheidenheid van eindpunten van HTTP bloot die met op een krantenloze manier, van GraphQL, AEM de Diensten van de Inhoud aan de API van Activa kunnen worden in wisselwerking staan. Vaak moeten deze gebruikers zonder kop zich op AEM verifiëren om toegang te krijgen tot beveiligde inhoud of handelingen. Om dit te vergemakkelijken, steunt AEM symbolisch-gebaseerde authentificatie van HTTP- verzoeken van externe toepassingen, diensten of systemen.
 
 In deze zelfstudie leert u goed hoe een externe toepassing programmatically kan verifiëren en met AEM as a Cloud Service over HTTP in wisselwerking staan gebruikend toegangstokens.
 
@@ -75,5 +75,5 @@ De geloofsbrieven van de dienst zijn de bonafide geloofsbrieven die in om het ev
 
 + [De voorbeeldtoepassing downloaden](./assets/aem-guides_token-authentication-external-application.zip)
 + Andere codevoorbeelden van JWT-creatie en -uitwisseling
-   + [Node.js, Java, Python, C#.NET en PHP codesteekproeven](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md)
+   + [Node.js, Java, Python, C#.NET en PHP codesteekproeven](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
    + [Codevoorbeeld op basis van JavaScript/Axios](https://github.com/adobe/aemcs-api-client-lib)
