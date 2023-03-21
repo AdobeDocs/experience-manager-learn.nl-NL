@@ -1,19 +1,19 @@
 ---
-user-guide-title: AEM Sites-video's en -Tutorials
-user-guide-description: Een verzameling video's en zelfstudies voor Adobe Experience Manager Sites.
-breadcrumb-title: AEM Sites Tutorials
+user-guide-title: AEM Sites-video's en-tutorials
+user-guide-description: Een verzameling video's en tutorials voor Adobe Experience Manager Sites.
+breadcrumb-title: AEM Sites-tutorials
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '441'
+ht-degree: 11%
 
 ---
 
 
-# AEM Sites-video&#39;s en -Tutorials {#sites}
+# AEM Sites-video&#39;s en-tutorials {#sites}
 
 + [Overzicht](overview.md)
 + Pagina&#39;s ontwerpen {#page-authoring}
@@ -55,7 +55,7 @@ ht-degree: 0%
 + Ontwikkeling {#developing}
    + [Projectarchetype AEM](developing/aem-project-archetype.md)
    + [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-   + [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+   + [Aan de slag met AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Pagina-eigenschappen uitbreiden](developing/page-properties-technical-video-develop.md)
    + [Responsieve onderbrekingspunten](developing/responsive-breakpoints.md)
@@ -98,12 +98,12 @@ ht-degree: 0%
 + Integrations {#integrations}
    + Experience Platform {#experience-platform}
       + [FPID&#39;s genereren](integrations/platform/fpid.md)
-   + Experience Platform Launch {#experience-platform-launch}
-      + [Overzicht](integrations/experience-platform-launch/overview.md)
-      + [Een opstarteigenschap maken](integrations/experience-platform-launch/create-launch-property.md)
-      + [AEM verbinden met Starten met Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
-      + [Een Cloud Service starten maken](integrations/experience-platform-launch/create-launch-cloud-service.md)
-      + [Fouten opsporen in een opstartimplementatie](integrations/experience-platform-launch/debug-launch-implementation.md)
+   + Experience Platform Data Collection Tags (Launch) {#experience-platform-data-collection-tags}
+      + [Overzicht](integrations/experience-platform/data-collection/tags/overview.md)
+      + [Een eigenschap voor een tag maken](integrations/experience-platform/data-collection/tags/create-tag-property.md)
+      + [AEM met tags verbinden met behulp van Developer Console](integrations/experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md)
+      + [Cloud Service AEM starten maken](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Fouten opsporen in een implementatie van tags (Starten)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Gegevenslaag Adobe-client {#adobe-client-data-layer}
       + [De gegevenslaag van de Adobe-client gebruiken](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [De gegevenslaag Adobe Client aanpassen](integrations/adobe-client-data-layer/data-layer-customize.md)
