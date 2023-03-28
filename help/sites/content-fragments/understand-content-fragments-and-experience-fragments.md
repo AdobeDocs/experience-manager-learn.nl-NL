@@ -1,5 +1,5 @@
 ---
-title: Inhoudsfragmenten en ervaringsfragmenten begrijpen
+title: Inhoudsfragmenten en ervaringsfragmenten
 description: Leer de gelijkenissen en de verschillen tussen de Fragmenten van de Inhoud en de Fragmenten van de Ervaring, en wanneer en hoe te om elk type te gebruiken.
 sub-product: Experience Manager Assets, Experience Manager Sites
 feature: Content Fragments, Experience Fragments
@@ -12,18 +12,18 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: 84fdbaa173a929ae7467aecd031cacc4ce73538a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
-# Inhoudsfragmenten en ervaringsfragmenten begrijpen
+# Inhoudsfragmenten en ervaringsfragmenten
 
 Adobe Experience Manager Content Fragments and Experience Fragments kunnen er ongeveer hetzelfde uitzien op het oppervlak, maar elk speelt een sleutelrol in verschillende gebruiksgevallen. Leer hoe de Fragmenten van de Inhoud en de Fragmenten van de Ervaring gelijkaardig zijn, verschillend, en wanneer en hoe te om elk te gebruiken.
 
-## Vergelijking van inhoudsfragmenten en ervaringsfragmenten
+## Vergelijking
 
 <table>
 <tbody><tr><td><strong> </strong></td>
@@ -96,13 +96,17 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 <li>Annotaties</li>
 <li>Responsieve lay-out en voorvertoning</li>
 <li>Vertaling/lokalisatie</li>
+<li>Complex gegevensmodel via verwijzingen naar inhoudsfragmenten</li>
+<li>Voorvertoning in app</li>
 </ul>
 </td>
 </tr><tr><td><strong>Gebruiken</strong></td>
 <td><ul>
+<li>JSON exporteren via <a href="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html">GraphQL API's zonder koppen AEM</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM component Inhoud van kerncomponenten</a> voor gebruik in AEM Sites, AEM Screens of in Experience Fragments.</li>
 <li>JSON exporteren via <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a> voor verbruik door derden</li>
-<li>JSON via AEM HTTP Assets API's voor gebruik door derden.</li>
+<li>JSON-export naar Adobe Target voor gerichte aanbiedingen</li>
+<li>JSON via AEM HTTP Assets-API's voor gebruik door derden</li>
 </ul>
 </td>
 <td><ul>
@@ -114,7 +118,8 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 </td>
 </tr><tr><td><strong>Vaak voorkomende gevallen</strong></td>
 <td><ul>
-<li>Zeer gestructureerde gegevensinvoer/op formulieren gebaseerde inhoud</li>
+<li>Maken van eindeloze gebruikskassen boven GraphQL</li>
+<li>Gestructureerde gegevensinvoer/op formulieren gebaseerde inhoud</li>
 <li>Redactionele inhoud met lange vorm (element met meerdere regels)</li>
 <li>Inhoud die buiten de levenscyclus van de kanalen die het leveren wordt beheerd</li>
 </ul>
@@ -142,20 +147,20 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 
 Het volgende diagram illustreert de algemene architectuur voor AEM Inhoudsfragmenten
 
-!![Architectuur van inhoudsfragmenten](./assets/content-fragments-architecture.png)
+![Architectuur van inhoudsfragmenten](./assets/content-fragments-architecture.png)
 
 + **Modellen van inhoudsfragmenten** Definieer de elementen (of velden) die definiëren welke inhoud het inhoudsfragment kan vastleggen en beschikbaar maken.
 + De **Inhoudsfragment** is een instantie van een Content Fragment Model dat een logische inhoudentiteit vertegenwoordigt.
 + Inhoudsfragment **variaties** Houd u aan het inhoudsfragmentmodel, maar u kunt de inhoud op verschillende manieren aanpassen.
 + Inhoudsfragmenten kunnen worden belicht/verbruikt door:
    + Inhoudsfragmenten gebruiken op **AEM Sites** (of AEM Screens) via de inhoudsfragmentcomponent van AEM WCM Core Components.
-   + Een inhoudsfragment insluiten in een **Ervaar fragment** via de AEM component van het Fragment van de Inhoud van de Kern van WCM, voor gebruik in om het even welk geval van het Fragment van de Ervaring.
+   + Verbruik **Inhoudsfragment** van toepassingen zonder kop met behulp van AEM GraphQL-API&#39;s zonder koppen.
    + Inhoud van inhoudfragmentvariaties beschikbaar maken als JSON via **AEM Content Services** en API-pagina&#39;s voor alleen-lezen gebruik.
    + Inhoud van inhoudsfragment (alle variaties) rechtstreeks toegankelijk maken als JSON via directe aanroepen naar AEM Assets via het dialoogvenster **AEM Assets HTTP API** voor CRUD-gebruik.
 
 ## Ervaar de architectuur van Fragmenten
 
-!![Ervaar de architectuur van Fragmenten](./assets/experience-fragments-architecture.png)
+![Ervaar de architectuur van Fragmenten](./assets/experience-fragments-architecture.png)
 
 + **Bewerkbare sjablonen**, die op hun beurt worden gedefinieerd door **Bewerkbare sjabloontypen** en **Implementatie van AEM** definieert u de toegestane AEM componenten die kunnen worden gebruikt om een ervaringsfragment samen te stellen.
 + De **Ervaar fragment** is een instantie van een bewerkbare sjabloon die een logische ervaring vertegenwoordigt.
@@ -167,15 +172,16 @@ Het volgende diagram illustreert de algemene architectuur voor AEM Inhoudsfragme
    + Erviteitsfragmenten exporteren naar **Adobe Target** zoals HTML of JSON aanbiedt.
    + AEM Sites biedt native ondersteuning voor HTML-aanbiedingen, maar JSON-aanbiedingen vereisen aangepaste ontwikkeling.
 
-## Materialen voor inhoudsfragmenten ondersteunen
+## De bron voor inhoudsfragmenten ondersteunen
 
 + [Gebruikershandleiding voor inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
++ [Inleiding tot Adobe Experience Manager als een headless CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
 + [Inhoudsfragmenten in AEM gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en)
 + [AEM inhoudfragmentcomponent van WCM Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 + [Inhoudsfragmenten en AEM zonder kop gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en)
 + [Aan de slag met AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
 
-## Ondersteunende materialen voor ervaringsfragmenten
+## Bronnen voor ervaringsfragmenten ondersteunen
 
 + [Adobe documentatie over Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en)
 + [Werken met AEM ervaringsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)
