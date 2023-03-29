@@ -13,10 +13,10 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 1%
+source-wordcount: '336'
+ht-degree: 0%
 
 ---
 
@@ -31,21 +31,28 @@ Leer hoe u het Experience Platform kunt integreren _Labels voor gegevensverzamel
 
 Tags zijn Adobe Experience Platform van de volgende generatie technologie voor tagbeheer. Tags bieden de eenvoudigste manier om Adobe Analytics, Target, Audience Manager en nog veel meer oplossingen te implementeren. Bekijk een overzicht van Tags en de aanbevolen integratie met Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/39090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
 
 
 ## Vereisten
 
-Het volgende wordt vereist wanneer het integreren de Markeringen van de Inzameling van de Gegevens van het Experience Platform
+Het volgende wordt vereist wanneer het integreren van de Markeringen van de Inzameling van de Gegevens van het Experience Platform.
 
-+ Toegang van AEM beheerder tot AEM as a Cloud Service omgeving
-+ Een referentiesite als [WKND](https://github.com/adobe/aem-guides-wknd) ingezet
++ Toegang AEM tot AEM as a Cloud Service omgeving
++ Een referentiesite als [WKND](https://github.com/adobe/aem-guides-wknd) op het worden ingezet.
++ Toegang tot Adobe Experience Platform-oplossing voor gegevensverzameling
 + Toegang van systeembeheerders tot [Adobe Developer Console](https://developer.adobe.com/developer-console/)
 
 
+## Stappen op hoog niveau
+
++ Maak in Adobe Experience Platform Data Collection een Tag-eigenschap en bewerk deze naar _Regel toevoegen_. Vervolgens _Bibliotheek toevoegen_ selecteert u de zojuist toegevoegde regel, keurt u deze goed en publiceert u deze.
++ AEM en tags verbinden met behulp van bestaande (of nieuwe) IMS-configuratie
++ In AEM maakt u een configuratie van de cloudservices voor Starten, past u deze vervolgens toe op een bestaande site en controleert u ten slotte of de eigenschap Codes en de bijbehorende bibliotheken op de site Published of Auteur zijn geladen.
+
 ## Volgende stappen
 
-[Een tageigenschap (Launch) maken](create-tag-property.md)
+[Een eigenschap voor een tag maken](create-tag-property.md)
 
 ## Aanvullende bronnen {#additional-resources}
 

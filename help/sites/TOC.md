@@ -5,10 +5,10 @@ breadcrumb-title: AEM Sites-tutorials
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 11%
    + Experience Platform Data Collection Tags (Launch) {#experience-platform-data-collection-tags}
       + [Overzicht](integrations/experience-platform/data-collection/tags/overview.md)
       + [Een eigenschap voor een tag maken](integrations/experience-platform/data-collection/tags/create-tag-property.md)
-      + [AEM met tags verbinden met behulp van Developer Console](integrations/experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md)
+      + [AEM verbinden en eigenschappen labelen met IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
       + [Cloud Service AEM starten maken](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
       + [Fouten opsporen in een implementatie van tags (Starten)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Gegevenslaag Adobe-client {#adobe-client-data-layer}
