@@ -10,10 +10,10 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 5522a22cc3ac12ce54297ee9f30570c29cfd5ce7
 workflow-type: tm+mt
-source-wordcount: '2815'
-ht-degree: 1%
+source-wordcount: '2961'
+ht-degree: 0%
 
 ---
 
@@ -120,12 +120,27 @@ De Global Trust Store wordt geconfigureerd met het openbare certificaat van IDP 
 1. Een pakket maken
    + Pakketnaam: `Global Trust Store`
    + Versie: `1.0.0`
-   + Groeperen: `com.your.company`
+   + Groep: `com.your.company`
 1. De nieuwe versie bewerken __Global Trust Store__ pakket.
 1. Selecteer __Filters__ en voegt een filter toe voor het hoofdpad `/etc/truststore`.
 1. Selecteren __Gereed__ en vervolgens __Opslaan__.
 1. Selecteer __Opbouwen__ knop voor de __Global Trust Store__ pakket.
 1. Selecteer __Meer__ > __Repliceren__ het knooppunt Global Trust Store (`/etc/truststore`) naar AEM-publicatie.
+
+## Het sleutelarchief voor de verificatieservice maken{#authentication-service-keystore}
+
+_Het creëren van keystore voor authentificatie-dienst wordt vereist wanneer [SAML 2.0 authentificatiemanager OSGi configuratiebezit `handleLogout` is ingesteld op `true`](#saml-20-authenticationsaml-2-0-authentication) of wanneer [AuthnRequest-versleuteling/SAML-bevestiging](#install-aem-public-private-key-pair) is vereist_
+
+1. Meld u aan bij AEM-auteur als AEM beheerder om de persoonlijke sleutel te uploaden.
+1. Navigeren naar __Gereedschappen > Beveiliging > Betrouwbaarheidswinkel__ en selecteert u __verificatie-service__ gebruiker, en selecteer __Eigenschappen__ in de bovenste actiebalk.
+1. Navigeren naar __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker, en selecteer __Eigenschappen__ in de bovenste actiebalk.
+1. Selecteer __Keystore__ tab.
+1. Maak of open het sleutelarchief. Houd het wachtwoord veilig als u een sleutelarchief maakt.
+   + A [openbare/persoonlijke sleutelarchief is geïnstalleerd in dit sleutelarchief](#install-aem-public-private-key-pair) alleen als AuthnRequest-versleuteling/SAML-bevestiging vereist is.
+   + Als deze integratie SAML logout steunt, maar niet AuthnRequest het ondertekenen/SAML bewering, dan is een leeg sleutelarchief voldoende.
+1. Selecteren __Opslaan en sluiten__.
+1. Selecteren __verificatie-service__ gebruiker, en selecteer __Activeren__ in de bovenste actiebalk.
+
 
 ## Paar AEM openbare/persoonlijke sleutel installeren{#install-aem-public-private-key-pair}
 
@@ -212,32 +227,32 @@ De configuratie is een OSGi fabrieksconfiguratie, die één enkele AEM as a Clou
 |  | OSGi, eigenschap | Vereist | Waarde-indeling | Standaardwaarde | Beschrijving |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
 | Paden | `path` | ✔ | String-array | `/` | AEM paden waarvoor deze verificatiehandler wordt gebruikt. |
-| IDP-URL | `idpUrl` | ✔ | Tekenreeks |  | IDP URL het de authentificatieverzoek van SAML wordt verzonden. |
-| IDP-certificaatalias | `idpCertAlias` | ✔ | Tekenreeks |  | De alias van het IDP-certificaat in de AEM Global Trust Store |
+| IDP-URL | `idpUrl` | ✔ | String |  | IDP URL het de authentificatieverzoek van SAML wordt verzonden. |
+| IDP-certificaatalias | `idpCertAlias` | ✔ | String |  | De alias van het IDP-certificaat in de AEM Global Trust Store |
 | IDP HTTP-omleiding | `idpHttpRedirect` | ✘ | Boolean | `false` | Geeft aan of een HTTP-omleiding naar de IDP-URL plaatsvindt in plaats van een AuthnRequest te verzenden. Instellen op `true` voor door IDP geïnitieerde verificatie. |
-| IDP-id | `idpIdentifier` | ✘ | Tekenreeks |  | Unieke IDP-id om ervoor te zorgen dat AEM gebruiker en groep uniek zijn. Indien leeg, `serviceProviderEntityId` wordt in plaats daarvan gebruikt. |
-| Bevestigingsservice-URL | `assertionConsumerServiceURL` | ✘ | Tekenreeks |  | De `AssertionConsumerServiceURL` URL-kenmerk in de AuthnRequest die opgeeft waar de `<Response>` bericht moet naar AEM worden verzonden. |
-| SP-entiteit-id | `serviceProviderEntityId` | ✔ | Tekenreeks |  | AEM aan de IDP op unieke wijze identificeert; meestal de AEM hostnaam. |
+| IDP-id | `idpIdentifier` | ✘ | String |  | Unieke IDP-id om ervoor te zorgen dat AEM gebruiker en groep uniek zijn. Indien leeg, `serviceProviderEntityId` wordt in plaats daarvan gebruikt. |
+| Bevestigingsservice-URL | `assertionConsumerServiceURL` | ✘ | String |  | De `AssertionConsumerServiceURL` URL-kenmerk in de AuthnRequest die opgeeft waar de `<Response>` bericht moet naar AEM worden verzonden. |
+| SP-entiteit-id | `serviceProviderEntityId` | ✔ | String |  | AEM aan de IDP op unieke wijze identificeert; meestal de AEM hostnaam. |
 | SP-codering | `useEncryption` | ✘ | Boolean | `true` | Wijst erop als IDP de beweringen van SAML codeert. Vereisten `spPrivateKeyAlias` en `keyStorePassword` in te stellen. |
-| SP alias van persoonlijke sleutel | `spPrivateKeyAlias` | ✘ | Tekenreeks |  | De alias van de persoonlijke sleutel in de `authentication-service` sleutelarchief van de gebruiker. Vereist indien `useEncryption` is ingesteld op `true`. |
-| Wachtwoord voor opslagmap met SP-sleutel | `keyStorePassword` | ✘ | Tekenreeks |  | Het wachtwoord van de sleutelarchief van de &quot;authentificatie-dienst&quot;gebruiker. Vereist indien `useEncryption` is ingesteld op `true`. |
-| Standaardomleiding | `defaultRedirectUrl` | ✘ | Tekenreeks | `/` | De standaard omleidings-URL na geslaagde verificatie. Kan relatief zijn ten opzichte van de AEM host (bijvoorbeeld `/content/wknd/us/en/html`). |
-| Kenmerk Gebruikersnaam | `userIDAttribute` | ✘ | Tekenreeks | `uid` | De naam van het SAML-assertiekenmerk dat de gebruikers-id van de AEM gebruiker bevat. Leeg laten om de `Subject:NameId`. |
+| SP alias van persoonlijke sleutel | `spPrivateKeyAlias` | ✘ | String |  | De alias van de persoonlijke sleutel in de `authentication-service` sleutelarchief van de gebruiker. Vereist indien `useEncryption` is ingesteld op `true`. |
+| Wachtwoord voor opslagmap met SP-sleutel | `keyStorePassword` | ✘ | String |  | Het wachtwoord van de sleutelarchief van de &quot;authentificatie-dienst&quot;gebruiker. Vereist indien `useEncryption` is ingesteld op `true`. |
+| Standaardomleiding | `defaultRedirectUrl` | ✘ | String | `/` | De standaard omleidings-URL na geslaagde verificatie. Kan relatief zijn ten opzichte van de AEM host (bijvoorbeeld `/content/wknd/us/en/html`). |
+| Kenmerk Gebruikersnaam | `userIDAttribute` | ✘ | String | `uid` | De naam van het SAML-assertiekenmerk dat de gebruikers-id van de AEM gebruiker bevat. Leeg laten om de `Subject:NameId`. |
 | AEM gebruikers automatisch maken | `createUser` | ✘ | Boolean | `true` | Hiermee geeft u aan of AEM gebruikers worden gemaakt op geslaagde verificatie. |
-| Tussenpad AEM gebruiker | `userIntermediatePath` | ✘ | Tekenreeks |  | Wanneer u AEM gebruikers maakt, wordt deze waarde gebruikt als het tussenliggende pad (bijvoorbeeld `/home/users/<userIntermediatePath>/jane@wknd.com`). Vereisten `createUser` in te stellen op `true`. |
+| Tussenpad AEM gebruiker | `userIntermediatePath` | ✘ | String |  | Wanneer u AEM gebruikers maakt, wordt deze waarde gebruikt als het tussenliggende pad (bijvoorbeeld `/home/users/<userIntermediatePath>/jane@wknd.com`). Vereisten `createUser` in te stellen op `true`. |
 | Gebruikerskenmerken AEM | `synchronizeAttributes` | ✘ | String-array |  | Lijst met SAML-kenmerktoewijzingen voor opslag op de AEM gebruiker, in de indeling `[ "saml-attribute-name=path/relative/to/user/node" ]` (bijvoorbeeld `[ "firstName=profile/givenName" ]`). Zie de [volledige lijst van native AEM kenmerken](#aem-user-attributes). |
 | Gebruiker toevoegen aan AEM groepen | `addGroupMemberships` | ✘ | Boolean | `true` | Geeft aan of een AEM gebruiker automatisch wordt toegevoegd aan AEM gebruikersgroepen nadat de verificatie is voltooid. |
-| AEM kenmerk voor groepslidmaatschap | `groupMembershipAttribute` | ✘ | Tekenreeks | `groupMembership` | De naam van de de assertieattributen van SAML die een lijst van AEM gebruikersgroepen bevatten de gebruiker zou moeten worden toegevoegd aan. Vereisten `addGroupMemberships` in te stellen op `true`. |
+| AEM kenmerk voor groepslidmaatschap | `groupMembershipAttribute` | ✘ | String | `groupMembership` | De naam van de de assertieattributen van SAML die een lijst van AEM gebruikersgroepen bevatten de gebruiker zou moeten worden toegevoegd aan. Vereisten `addGroupMemberships` in te stellen op `true`. |
 | AEM | `defaultGroups` | ✘ | String-array |  | Er wordt altijd een lijst met AEM gebruikersgroepen met geverifieerde gebruikers toegevoegd (bijvoorbeeld `[ "wknd-user" ]`). Vereisten `addGroupMemberships` in te stellen op `true`. |
-| NameIDPopolicy-indeling | `nameIdFormat` | ✘ | Tekenreeks | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` | De waarde van de NameIDPopolicy formaatparameter in het AuthnRequest bericht te verzenden. |
+| NameIDPopolicy-indeling | `nameIdFormat` | ✘ | String | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` | De waarde van de NameIDPopolicy formaatparameter in het AuthnRequest bericht te verzenden. |
 | SAML-respons opslaan | `storeSAMLResponse` | ✘ | Boolean | `false` | Hiermee wordt aangegeven of de `samlResponse` waarde wordt opgeslagen op de AEM `cq:User` knooppunt. |
 | Afmelden handgreep | `handleLogout` | ✘ | Boolean | `false` | Wijst erop als het logout verzoek door deze de authentificatiemanager van SAML wordt behandeld. Vereisten `logoutUrl` in te stellen. |
-| Afmeldings-URL | `logoutUrl` | ✘ | Tekenreeks |  | De URL van IDP waar het SAML logout verzoek wordt verzonden naar. Vereist indien `handleLogout` is ingesteld op `true`. |
-| Kloktolerantie | `clockTolerance` | ✘ | Geheel getal | `60` | Bij het valideren van SAML-beweringen tekent IDP en AEM (SP) de tolerantie voor klokschuintrekken. |
-| Methode Digest | `digestMethod` | ✘ | Tekenreeks | `http://www.w3.org/2001/04/xmlenc#sha256` | Het samenvattingsalgoritme dat IDP gebruikt wanneer het ondertekenen van een SAML- bericht. |
-| Handtekeningmethode | `signatureMethod` | ✘ | Tekenreeks | `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` | Het handtekeningalgoritme dat IDP gebruikt bij het ondertekenen van een SAML-bericht. |
-| Type identiteitssynchronisatie | `identitySyncType` | ✘ | `default` or `idp` | `default` | Niet wijzigen `from` standaard voor AEM as a Cloud Service. |
-| Servicerangschikking | `service.ranking` | ✘ | Geheel getal | `5002` | Hogere rangschikkingsconfiguraties hebben de voorkeur voor dezelfde `path`. |
+| Afmeldings-URL | `logoutUrl` | ✘ | String |  | De URL van IDP waar het SAML logout verzoek wordt verzonden naar. Vereist indien `handleLogout` is ingesteld op `true`. |
+| Kloktolerantie | `clockTolerance` | ✘ | Geheel | `60` | Bij het valideren van SAML-beweringen tekent IDP en AEM (SP) de tolerantie voor klokschuintrekken. |
+| Methode Digest | `digestMethod` | ✘ | String | `http://www.w3.org/2001/04/xmlenc#sha256` | Het samenvattingsalgoritme dat IDP gebruikt wanneer het ondertekenen van een SAML- bericht. |
+| Handtekeningmethode | `signatureMethod` | ✘ | String | `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` | Het handtekeningalgoritme dat IDP gebruikt bij het ondertekenen van een SAML-bericht. |
+| Type identiteitssynchronisatie | `identitySyncType` | ✘ | `default` of `idp` | `default` | Niet wijzigen `from` standaard voor AEM as a Cloud Service. |
+| Servicerangschikking | `service.ranking` | ✘ | Geheel | `5002` | Hogere rangschikkingsconfiguraties hebben de voorkeur voor dezelfde `path`. |
 
 ### Gebruikerskenmerken AEM{#aem-user-attributes}
 
