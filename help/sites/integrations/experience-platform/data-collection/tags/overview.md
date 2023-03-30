@@ -3,6 +3,7 @@ title: Tags voor gegevensverzameling van Experience Platforms integreren (Starte
 description: De Inzameling van de Gegevens van het Experience Platform van labels is Adobe in volgende-generatie oplossing van het markeringsbeheer de beste manier om Adobe Analytics, Doel, Audience Manager, en vele meer oplossingen op te stellen. Bekijk een overzicht van de labels (voorheen Launch genoemd) en de aanbevolen integratie met Adobe Experience Manager.
 topics: integrations
 audience: administrator
+solution: Experience Manager, Data Collection, Experience Platform
 doc-type: technical video
 activity: setup
 version: Cloud Service
@@ -13,9 +14,9 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 18a72187290d26007cdc09c45a050df8f152833b
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
