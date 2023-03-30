@@ -11,9 +11,9 @@ kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2799'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Verken nu de organisatie van clientlibs die worden gegenereerd door de [Projecta
 
 1. De volgende tabel geeft een overzicht van de clientbibliotheken. Meer informatie over [inclusief clientbibliotheken vindt u hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=en#developing).
 
-   | Naam | Beschrijving | Opmerkingen |
+   | Naam | Beschrijving | Notities |
    |-------------------| ------------| ------|
    | `clientlib-base` | Basisniveau van CSS en JavaScript nodig voor WKND-site om te kunnen functioneren | Sluit de clientbibliotheken van de Core Component in |
    | `clientlib-grid` | Genereert de CSS die nodig is voor [Lay-outmodus](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html) om te werken. | Mobiele/tabletonderbrekingspunten kunnen hier worden geconfigureerd |
