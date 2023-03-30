@@ -10,9 +10,9 @@ kt: 6265
 thumbnail: KT-6265.jpg
 last-substantial-update: 2022-09-20T00:00:00Z
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 99b3ecf7823ff9a116c47c88abc901f8878bbd7a
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 Leer hoe u de gegevenslaag Adobe Client aanpast met inhoud van aangepaste AEM Componenten. Leer hoe u API&#39;s kunt gebruiken die worden geleverd door [Core Components AEM om uit te breiden](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) en past u de gegevenslaag aan.
 
-## Wat u gaat maken
+## Wat u gaat bouwen
 
 ![Byline-gegevenslaag](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-In dit leerprogramma zult u diverse opties onderzoeken om de Laag van Gegevens van de Cliënt van Adobe uit te breiden door WKND bij te werken [Byline-component](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/custom-component.html). Dit is een douanecomponent en de lessen die in dit leerprogramma worden geleerd kunnen op andere douanecomponenten worden toegepast.
+In dit leerprogramma, onderzoeken wij diverse opties om de Laag van Gegevens van de Cliënt van Adobe uit te breiden door WKND bij te werken [Byline-component](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html). De _Naamregel_ component is een **aangepaste component** en de lessen die u in deze zelfstudie hebt geleerd, kunt u toepassen op andere aangepaste componenten.
 
 ### Doelstellingen {#objective}
 
@@ -61,7 +61,7 @@ Deze zelfstudie breidt de component Byline in de WKND-verwijzingssite uit. Klone
 
    >[!NOTE]
    >
-   > Als u AEM 6.5 en het nieuwste servicepack gebruikt, voegt u de `classic` profiel voor de Maven-opdracht:
+   > Voor AEM 6.5 en het nieuwste servicepack voegt u de `classic` profiel voor de Maven-opdracht:
    >
    > `mvn clean install -PautoInstallSinglePackage -Pclassic`
 
@@ -76,7 +76,7 @@ Deze zelfstudie breidt de component Byline in de WKND-verwijzingssite uit. Klone
    window.adobeDataLayer.getState();
    ```
 
-   Inspect de reactie om de huidige staat van de gegevenslaag op een AEM plaats te zien. U moet informatie over de pagina en de afzonderlijke componenten bekijken.
+   Om de huidige staat van de gegevenslaag op een AEM plaats te zien inspecteer de reactie. U moet informatie over de pagina en de afzonderlijke componenten bekijken.
 
    ![Reactie Adobe-gegevenslaag](assets/data-layer-state-response.png)
 
@@ -84,14 +84,14 @@ Deze zelfstudie breidt de component Byline in de WKND-verwijzingssite uit. Klone
 
 ## Het model voor bylineverkoop bijwerken {#sling-model}
 
-Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eerst het Sling-model van de component bijwerken. Werk vervolgens de Java-interface en implementatie van het Sling Model van de Naamregel bij om een nieuwe methode toe te voegen `getData()`. Deze methode zal de eigenschappen bevatten wij in de gegevenslaag willen injecteren.
+Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eerst het Sling Model van de component bijwerken. Werk vervolgens de Java™-interface en Sling Model-implementatie van de Byline bij om een nieuwe methode te gebruiken `getData()`. Deze methode bevat de eigenschappen die in de gegevenslaag moeten worden geïnjecteerd.
 
-1. Open in de IDE van uw keuze de `aem-guides-wknd` project. Ga naar de `core` module.
+1. Open de `aem-guides-wknd` project in winde van uw keus. Ga naar de `core` module.
 1. Het bestand openen `Byline.java` om `core/src/main/java/com/adobe/aem/guides/wknd/core/models/Byline.java`.
 
    ![Naamregel Java-interface](assets/adobe-client-data-layer/byline-java-interface.png)
 
-1. Voeg een nieuwe methode aan de interface toe:
+1. Voeg onder methode aan de interface toe:
 
    ```java
    public interface Byline {
@@ -104,9 +104,7 @@ Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eers
    }
    ```
 
-1. Het bestand openen `BylineImpl.java` om `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`.
-
-   Dit is de uitvoering van de `Byline` en wordt geïmplementeerd als een Sling Model.
+1. Het bestand openen `BylineImpl.java` om `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`. Het is de uitvoering van de `Byline` en wordt geïmplementeerd als een Sling Model.
 
 1. Voeg de volgende instructies voor importeren toe aan het begin van het bestand:
 
@@ -119,7 +117,7 @@ Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eers
    import com.adobe.cq.wcm.core.components.util.ComponentUtils;
    ```
 
-   De `fasterxml.jackson` API&#39;s worden gebruikt voor het serieel ordenen van de gegevens die als JSON beschikbaar moeten worden gemaakt. De `ComponentUtils` van AEM Core Components worden gebruikt om te controleren of de gegevenslaag is ingeschakeld.
+   De `fasterxml.jackson` APIs wordt gebruikt om de gegevens in series te vervaardigen die als JSON moeten worden blootgesteld. De `ComponentUtils` van AEM Core Components worden gebruikt om te controleren of de gegevenslaag is ingeschakeld.
 
 1. Niet-geïmplementeerde methode toevoegen `getData()` tot `BylineImple.java`:
 
@@ -160,7 +158,7 @@ Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eers
    }
    ```
 
-   In bovenstaande methode wordt een nieuwe `HashMap` wordt gebruikt om de eigenschappen vast te leggen die als JSON beschikbaar moeten worden gemaakt. Bestaande methoden zoals `getName()` en `getOccupations()` worden gebruikt. `@type` vertegenwoordigt het unieke middeltype van de component, staat dit een cliënt toe om gebeurtenissen en/of trekkers gemakkelijk te identificeren die op het type van component worden gebaseerd.
+   Bij de bovenstaande methode wordt een nieuwe `HashMap` wordt gebruikt om de eigenschappen vast te leggen die als JSON moeten worden blootgesteld. Bestaande methoden zoals `getName()` en `getOccupations()` worden gebruikt. De `@type` vertegenwoordigt het unieke middeltype van de component, staat het een cliënt toe om gebeurtenissen en/of trekkers gemakkelijk te identificeren die op het type van component worden gebaseerd.
 
    De `ObjectMapper` wordt gebruikt om de eigenschappen van een serienummer te voorzien en een JSON-tekenreeks te retourneren. Deze JSON-tekenreeks kan vervolgens in de gegevenslaag worden geïnjecteerd.
 
@@ -173,11 +171,11 @@ Als u gegevens over de component in de gegevenslaag wilt injecteren, moet u eers
 
 ## De HTML voor naamregel bijwerken {#htl}
 
-Werk vervolgens de `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/block-statements.html?lang=en#htl). HTL (de Taal van het Malplaatje van HTML) is het malplaatje wordt gebruikt om de HTML van de component terug te geven die.
+Werk vervolgens de `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en). HTL (de Taal van het Malplaatje van HTML) is het malplaatje wordt gebruikt om de HTML van de component terug te geven die.
 
-Een speciaal gegevenskenmerk `data-cmp-data-layer` op elke AEM wordt Component gebruikt om zijn gegevenslaag bloot te stellen.  JavaScript verstrekt door AEM de Componenten van de Kern zoekt dit gegevensattribuut, de waarvan waarde met het Koord JSON wordt bevolkt dat door het Model van de Sling van de Byline is teruggekeerd `getData()` methode, en injecteert de waarden in de laag van Gegevens van de Cliënt van Adobe.
+Een speciaal gegevenskenmerk `data-cmp-data-layer` op elke AEM wordt Component gebruikt om zijn gegevenslaag bloot te stellen. JavaScript dat wordt geleverd door AEM Core Components zoekt naar dit gegevenskenmerk. De waarde van dit gegevenskenmerk wordt gevuld met de JSON-tekenreeks die wordt geretourneerd door het Byline Sling Model `getData()` methode, en in de laag van de Gegevens van de Cliënt van Adobe geïnjecteerd.
 
-1. In winde open `aem-guides-wknd` project. Ga naar de `ui.apps` module.
+1. Open de `aem-guides-wknd` project in winde. Ga naar de `ui.apps` module.
 1. Het bestand openen `byline.html` om `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
 
    ![Byline HTML](assets/adobe-client-data-layer/byline-html-template.png)
@@ -193,7 +191,7 @@ Een speciaal gegevenskenmerk `data-cmp-data-layer` op elke AEM wordt Component g
        ...
    ```
 
-   De waarde van `data-cmp-data-layer` is ingesteld op `"${byline.data}"` waar `byline` Dit is het verkoopmodel dat eerder is bijgewerkt. `.data` is de standaardnotatie voor het aanroepen van een Java Getter-methode in HTML van `getData()` die in de vorige exercitie zijn uitgevoerd.
+   De waarde van `data-cmp-data-layer` is ingesteld op `"${byline.data}"` waar `byline` Dit is het verkoopmodel dat eerder is bijgewerkt. `.data` is de standaardnotatie voor het aanroepen van een Java™ Getter-methode in HTML van `getData()` die in de vorige exercitie zijn uitgevoerd.
 
 1. Open een terminalvenster. Alleen de `ui.apps` met uw Maven-vaardigheden:
 
@@ -237,7 +235,7 @@ Een speciaal gegevenskenmerk `data-cmp-data-layer` op elke AEM wordt Component g
 
 De gegevenslaag van de Cliënt van de Adobe is gebeurtenis gedreven en één van de gemeenschappelijkste gebeurtenissen om een actie teweeg te brengen is `cmp:click` gebeurtenis. Met de AEM Core-componenten kunt u uw component eenvoudig registreren met behulp van het gegevenselement: `data-cmp-clickable`.
 
-De klikbare elementen zijn gewoonlijk een knoop CTA of een navigatiekoppeling. Jammer genoeg heeft de component van de Byte geen van deze maar wij zullen het hoe dan ook registreren aangezien dit voor andere douanecomponenten zou kunnen gemeenschappelijk zijn.
+De klikbare elementen zijn gewoonlijk een knoop CTA of een navigatiekoppeling. Jammer genoeg heeft de component van de Byte geen van deze maar wij laten het op om het even welke manier registreren aangezien dit voor andere douanecomponenten gemeenschappelijk zou kunnen zijn.
 
 1. Open de `ui.apps` module in uw winde
 1. Het bestand openen `byline.html` om `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
@@ -260,7 +258,7 @@ De klikbare elementen zijn gewoonlijk een knoop CTA of een navigatiekoppeling. J
 
 1. Ga terug naar de browser en open de pagina opnieuw met de component Byline toegevoegd: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
-   Als u onze gebeurtenis wilt testen, voegen we handmatig JavaScript toe met behulp van de ontwikkelaarsconsole. Zie [Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten van de Kern](data-layer-overview.md) voor een video over hoe u dit kunt doen.
+   Om onze gebeurtenis te testen, zullen wij manueel wat JavaScript toevoegen gebruikend de ontwikkelaarsconsole. Zie [Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten van de Kern](data-layer-overview.md) voor een video over hoe u dit kunt doen.
 
 1. Open de ontwikkelaarsgereedschappen van de browser en voer de volgende methode in het dialoogvenster **Console**:
 
@@ -296,13 +294,13 @@ De klikbare elementen zijn gewoonlijk een knoop CTA of een navigatiekoppeling. J
 
    U zou het consolebericht moeten zien `Byline Clicked!` en de naam van de Naamregel.
 
-   De `cmp:click` De gebeurtenis is het eenvoudigst om in te sluiten. Voor complexere componenten en om ander gedrag te volgen is het mogelijk om douane javascript toe te voegen en nieuwe gebeurtenissen te registreren. Een goed voorbeeld is de Carousel-component, die een `cmp:show` gebeurtenis telkens wanneer een dia wordt geschakeld. Zie de [broncode voor meer informatie](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js#L219).
+   De `cmp:click` De gebeurtenis is het eenvoudigst om in te sluiten. Voor complexere componenten en om ander gedrag te volgen is het mogelijk om douane JavaScript toe te voegen en nieuwe gebeurtenissen te registreren. Een goed voorbeeld is de Carousel-component, die een `cmp:show` gebeurtenis telkens wanneer een dia wordt geschakeld. Zie de [broncode voor meer informatie](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js).
 
 ## Het hulpprogramma DataLayerBuilder gebruiken {#data-layer-builder}
 
 Wanneer het verkoopmodel [bijgewerkt](#sling-model) eerder in het hoofdstuk hebben we ervoor gekozen de JSON-tekenreeks te maken met behulp van een `HashMap` en de eigenschappen handmatig in te stellen. Deze methode werkt prima voor kleine eenmalige componenten, maar voor componenten die de AEM Core Components uitbreiden, kan dit in veel extra code resulteren.
 
-Een hulpprogrammaklasse, `DataLayerBuilder`, bestaat om het grootste deel van de zware hef uit te voeren. Hierdoor kunnen implementaties alleen de gewenste eigenschappen uitbreiden. Werk het verkoopmodel bij om de `DataLayerBuilder`.
+Een hulpprogrammaklasse, `DataLayerBuilder`, bestaat om het grootste deel van de zware hef uit te voeren. Hierdoor kunnen implementaties alleen de gewenste eigenschappen uitbreiden. Werk het verkoopmodel bij en gebruik het `DataLayerBuilder`.
 
 1. Terugkeer aan winde en navigeer aan winde `core` module.
 1. Het bestand openen `Byline.java` om `core/src/main/java/com/adobe/aem/guides/wknd/core/models/Byline.java`.
@@ -351,7 +349,7 @@ Een hulpprogrammaklasse, `DataLayerBuilder`, bestaat om het grootste deel van de
    }
    ```
 
-   De component Byline hergebruikt gedeelten van de component van de Kern van het Beeld om een beeld te tonen die de auteur vertegenwoordigen. In het bovenstaande fragment worden de [DataLayerBuilder](https://javadoc.io/doc/com.adobe.cq/core.wcm.components.core/latest/com/adobe/cq/wcm/core/components/models/datalayer/builder/ComponentDataBuilder.html) wordt gebruikt om de gegevenslaag van uit te breiden `Image` component. Hierdoor wordt het JSON-object vooraf gevuld met alle gegevens over de gebruikte afbeelding. Het doet ook enkele routinetaken zoals het plaatsen van `@type` en de unieke id van de component. De methode is erg klein.
+   De component Byline gebruikt gedeelten van de component van de Kern van het Beeld opnieuw om een beeld te tonen die de auteur vertegenwoordigen. In het bovenstaande fragment worden de [DataLayerBuilder](https://javadoc.io/doc/com.adobe.cq/core.wcm.components.core/latest/com/adobe/cq/wcm/core/components/models/datalayer/builder/ComponentDataBuilder.html) wordt gebruikt om de gegevenslaag van uit te breiden `Image` component. Hierdoor wordt het JSON-object vooraf gevuld met alle gegevens over de gebruikte afbeelding. Het doet ook enkele routinetaken zoals het plaatsen van `@type` en de unieke id van de component. De methode is klein.
 
    De enige eigenschap breidde de `withTitle` die wordt vervangen door de waarde van `getName()`.
 
@@ -409,7 +407,7 @@ Een hulpprogrammaklasse, `DataLayerBuilder`, bestaat om het grootste deel van de
        repo:modifyDate: "2019-10-18T20:17:24Z"
    ```
 
-   Let op: er is nu een `image` object binnen `byline` componentitem. Dit heeft veel meer informatie over de activa in de DAM. Let er ook op dat de `@type` en de unieke id (in dit geval `byline-136073cfcb`) automatisch zijn ingevuld, en `repo:modifyDate` die aangeeft wanneer de component is gewijzigd.
+   Let op: er is nu een `image` object binnen `byline` componentitem. Dit heeft veel meer informatie over de activa in de DAM. Let er ook op dat de `@type` en de unieke id (in dit geval `byline-136073cfcb`) automatisch zijn ingevuld, en `repo:modifyDate` Dit geeft aan wanneer de component is gewijzigd.
 
 ## Aanvullende voorbeelden {#additional-examples}
 
@@ -424,7 +422,7 @@ Een hulpprogrammaklasse, `DataLayerBuilder`, bestaat om het grootste deel van de
 
    >[!NOTE]
    >
-   > Als het bouwen van een geavanceerde Laag van Gegevens voor voorwerpen die door een implementatie opnieuw worden gebruikt, wordt het geadviseerd om de elementen van de Laag van Gegevens in hun eigen gegevenslaag specifieke Voorwerpen van Java uit te pakken. Zo hebben de Componenten van de Kern van de Handel interfaces voor toegevoegd `ProductData` en `CategoryData` aangezien deze in het kader van een handelsuitvoering voor veel onderdelen kunnen worden gebruikt. Controleren [de code in de reactie aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) voor meer informatie .
+   > Als het bouwen van een geavanceerde Laag van Gegevens voor voorwerpen die door een implementatie worden hergebruikt, wordt het geadviseerd om de elementen van de Laag van Gegevens in hun eigen gegeven laag-specifieke voorwerpen te halen Java™. Zo hebben de Componenten van de Kern van de Handel interfaces voor toegevoegd `ProductData` en `CategoryData` aangezien deze in het kader van een handelsuitvoering voor veel onderdelen kunnen worden gebruikt. Controleren [de code in de reactie aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) voor meer informatie .
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -433,5 +431,5 @@ U verkende enkel een paar manieren om de Laag van Gegevens van de Cliënt van de
 ## Aanvullende bronnen {#additional-resources}
 
 * [Documentatie gegevenslaag Adobe-client](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [De Integratie van de Laag van gegevens met de Componenten van de Kern](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md)
+* [De Integratie van de Laag van gegevens met de Componenten van de Kern](https://github.com/adobe/aem-core-wcm-components/blob/main/DATA_LAYER_INTEGRATION.md)
 * [Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)

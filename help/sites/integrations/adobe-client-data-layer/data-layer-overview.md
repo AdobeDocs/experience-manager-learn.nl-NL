@@ -1,6 +1,6 @@
 ---
 title: Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten van de Kern
-description: De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om gegevens over een bezoekerservaring op een webpagina te verzamelen en op te slaan en dan het gemakkelijk te maken om tot deze gegevens toegang te hebben. De gegevenslaag van de Cliënt van Adobe is platform agnostic, maar is volledig geïntegreerd in de Componenten van de Kern voor gebruik met AEM.
+description: De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om gegevens over de ervaring van een bezoeker op een webpagina te verzamelen en op te slaan en dan het gemakkelijk te maken om tot deze gegevens toegang te hebben. De gegevenslaag van de Cliënt van Adobe is platform agnostic, maar is volledig geïntegreerd in de Componenten van de Kern voor gebruik met AEM.
 topic: Integrations
 feature: Adobe Client Data Layer, Core Components
 role: Developer
@@ -9,16 +9,16 @@ kt: 6261
 thumbnail: 41195.jpg
 last-substantial-update: 2021-01-11T00:00:00Z
 exl-id: 066693b7-2b87-45e8-93ec-8bd09a7c263e
-source-git-commit: 835657082c0c6bf7b2822b53ef2b99039d77f249
+source-git-commit: 99b3ecf7823ff9a116c47c88abc901f8878bbd7a
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
 
 # Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe met AEM Componenten van de Kern {#overview}
 
-De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om gegevens over een bezoekerservaring op een webpagina te verzamelen en op te slaan en dan het gemakkelijk te maken om tot deze gegevens toegang te hebben. De gegevenslaag van de Cliënt van Adobe is platform agnostic, maar is volledig geïntegreerd in de Componenten van de Kern voor gebruik met AEM.
+De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om gegevens over de ervaring van een bezoeker op een webpagina te verzamelen en op te slaan en dan het gemakkelijk te maken om tot deze gegevens toegang te hebben. De gegevenslaag van de Cliënt van Adobe is platform agnostic, maar is volledig geïntegreerd in de Componenten van de Kern voor gebruik met AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
 
@@ -28,20 +28,20 @@ De gegevenslaag van de Cliënt van Adobe introduceert een standaardmethode om ge
 
 ## De gegevenslaag verkennen
 
-U kunt een idee van de ingebouwde functionaliteit van de Laag van Gegevens van de Cliënt van Adobe krijgen enkel door de ontwikkelaarshulpmiddelen van uw browser en levende te gebruiken [WKND-referentiesite](https://wknd.site/).
+U kunt een idee van de ingebouwde functionaliteit van de Laag van Gegevens van de Cliënt van Adobe krijgen enkel door de ontwikkelaarshulpmiddelen van uw browser en levende te gebruiken [WKND-referentiesite](https://wknd.site/us/en.html).
 
 >[!NOTE]
 >
 > Hieronder worden screenshots genomen vanuit de Chrome-browser.
 
-1. Navigeren naar [https://wknd.site](https://wknd.site)
+1. Navigeren naar [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
 1. Open de ontwikkelaarsgereedschappen en voer de volgende opdracht in het dialoogvenster **Console**:
 
    ```js
    window.adobeDataLayer.getState();
    ```
 
-   Inspect de reactie om de huidige staat van de gegevenslaag op een AEM plaats te zien. U moet informatie over de pagina en de afzonderlijke componenten bekijken.
+   Om de huidige staat van de gegevenslaag op een AEM plaats te zien inspecteer de reactie. U moet informatie over de pagina en de afzonderlijke componenten bekijken.
 
    ![Reactie Adobe-gegevenslaag](assets/data-layer-state-response.png)
 
@@ -90,7 +90,7 @@ Het is aan te raden aangepaste code te activeren op basis van een gebeurtenis ui
    }
    ```
 
-   De bovenstaande code inspecteert de `event` object en gebruik de `adobeDataLayer.getState` methode om de huidige status op te halen van het object dat de gebeurtenis heeft geactiveerd. De helpermethode zal dan de `filter` en alleen als de huidige `dataObject` voldoet aan het filter wordt het geretourneerd.
+   De bovenstaande code inspecteert de `event` object en gebruikt het `adobeDataLayer.getState` methode om de huidige status op te halen van het object dat de gebeurtenis heeft geactiveerd. Vervolgens wordt de hulplijnmethode geïnspecteerd op de knop `filter` en alleen als de huidige `dataObject` voldoet aan de filtercriteria die worden geretourneerd.
 
    >[!CAUTION]
    >
@@ -108,7 +108,7 @@ Het is aan te raden aangepaste code te activeren op basis van een gebeurtenis ui
    }
    ```
 
-   De `teaserShownHandler` roept de `getDataObjectHelper` en geeft een filter van `wknd/components/teaser` als de `@type` om gebeurtenissen uit te filteren die door andere componenten worden teweeggebracht.
+   De `teaserShownHandler` functie roept de `getDataObjectHelper` en geeft een filter door van `wknd/components/teaser` als de `@type` om gebeurtenissen uit te filteren die door andere componenten worden teweeggebracht.
 
 1. Duw vervolgens een gebeurtenislistener op de gegevenslaag om te luisteren naar de `cmp:show` gebeurtenis.
 
@@ -124,7 +124,7 @@ Het is aan te raden aangepaste code te activeren op basis van een gebeurtenis ui
 
    ![Carousel in-/uitschakelen en gebeurtenislistener bekijken](assets/teaser-console-slides.png)
 
-1. Verwijder de gebeurtenislistener uit de gegevenslaag om niet meer te luisteren naar de `cmp:show` gebeurtenis:
+1. Als u niet meer wilt luisteren naar de `cmp:show` gebeurtenis, de gebeurtenislistener verwijderen uit de gegevenslaag
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -162,18 +162,16 @@ Het is aan te raden aangepaste code te activeren op basis van een gebeurtenis ui
 
    ![Gegevens van paginaweergave](assets/page-show-console-data.png)
 
-   De `cmp:show` gebeurtenis voor de pagina wordt geactiveerd bij elke pagina die helemaal boven aan de pagina wordt geladen. U zou kunnen vragen, waarom werd de gebeurtenismanager teweeggebracht, wanneer de pagina duidelijk reeds is geladen.
+   De `cmp:show` gebeurtenis voor de pagina wordt geactiveerd bij elke pagina die boven aan de pagina wordt geladen. U zou kunnen vragen, waarom werd de gebeurtenismanager teweeggebracht, wanneer de pagina duidelijk reeds is geladen.
 
-   Dit is één van de unieke eigenschappen van de Laag van Gegevens van de Cliënt van Adobe, in die zin dat u gebeurtenisluisteraars kunt registreren **voor** of **na** de gegevenslaag is geïnitialiseerd. Dit is een essentieel element om rassenvoorwaarden te voorkomen.
+   Één van de unieke eigenschappen van de Laag van Gegevens van de Cliënt van Adobe is u gebeurtenisluisteraars kunt registreren **voor** of **na** Als de Laag van Gegevens is geïnitialiseerd, helpt het om de rasvoorwaarden te vermijden.
 
-   De gegevenslaag handhaaft een rijserie van alle gebeurtenissen die in opeenvolging zijn voorgekomen. De Laag van Gegevens door gebrek zal gebeurteniscallbacks voor gebeurtenissen teweegbrengen die in **verleden** en gebeurtenissen in het **toekomst**. Het is mogelijk de gebeurtenissen naar net voorbij of in de toekomst te filteren. [Meer informatie vindt u in de documentatie](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   De gegevenslaag handhaaft een rijserie van alle gebeurtenissen die in opeenvolging zijn voorgekomen. De Laag van Gegevens door gebrek zal gebeurteniscallbacks voor gebeurtenissen teweegbrengen die in **verleden** en gebeurtenissen in het **toekomst**. Het is mogelijk gebeurtenissen uit het verleden of de toekomst te filteren. [Meer informatie vindt u in de documentatie](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Volgende stappen
 
-Bekijk de volgende zelfstudie om te leren hoe u de gebeurtenisgestuurde Adobe Client Data-laag kunt gebruiken om [paginagegevens verzamelen en naar Adobe Analytics verzenden](../analytics/collect-data-analytics.md).
-
-Of leer hoe te [De gegevenslaag voor de Adobe-client aanpassen met AEM componenten](./data-layer-customize.md)
+Er zijn twee opties om het leren te houden, eerst om uit te checken [pagina-gegevens verzamelen en naar Adobe Analytics verzenden](../analytics/collect-data-analytics.md) zelfstudie die het gebruik van de gegevenslaag van de Cliënt van Adobe aantoont. De tweede optie is: leren hoe te [De gegevenslaag voor de Adobe-client aanpassen met AEM componenten](./data-layer-customize.md)
 
 
 ## Aanvullende bronnen {#additional-resources}
