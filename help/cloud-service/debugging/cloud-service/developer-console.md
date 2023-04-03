@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: e8e5c67f6e9f057fd7472b76ee09d7f87b133c89
+source-git-commit: 8ca9535866cc1a673a59ac3743847e68dfedd156
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,18 @@ ht-degree: 0%
 AEM as a Cloud Service verstrekt een Console van de Ontwikkelaar voor elk milieu dat diverse details van de lopende AEM dienst blootstelt die in het zuiveren nuttig zijn.
 
 Elke AEM as a Cloud Service omgeving heeft een eigen ontwikkelaarsconsole.
+
+## Navigeren naar Developer Console
+
+Developer Console is per AEM as a Cloud Service omgeving toegankelijk via Cloud Manager.
+
+![Navigeren naar Developer Console](./assets/developer-console/navigate.png)
+
+1. Navigeren naar __[Cloud Manager](https://my.cloudmanager.adobe.com/)__
+2. Open de __Programma__ die de AEM as a Cloud Service omgeving bevat voor het openen van Developer Console.
+3. Zoek de __Omgeving__ en selecteert u de `...`.
+4. Selecteren __Ontwerpconsole__ in de vervolgkeuzelijst.
+
 
 ## Toegang tot ontwikkelaarsconsole
 
