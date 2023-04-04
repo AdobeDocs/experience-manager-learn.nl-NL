@@ -9,7 +9,7 @@ role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 Vanaf AEM Forms 6.4 kunnen we nu het formuliergegevensmodel gebruiken als onderdeel van AEM workflow. De volgende video loopt door de stappen nodig om de stap van het Model van de Gegevens van de Vorm in AEM Werkschema te vormen
 
 
->[!VIDEO](https://video.tv.adobe.com/v/21719/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen
 * [De setvalue-bundel downloaden en implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee eigenschappen van metagegevens worden ingesteld.

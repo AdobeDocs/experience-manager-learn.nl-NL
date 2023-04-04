@@ -10,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b89ea04b-56dd-494f-a454-644166660a2a
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Met Adobe Asset kunt u AEM Assets rechtstreeks uitchecken vanuit de creatieve app waaraan u werkt en kunt u direct beginnen met het maken van bewerkingen. U kunt middelen eenvoudig terugchecken naar AEM Assets met de juiste versie en opmerkingen nadat u ze hebt bewerkt in uw Creative Cloud-app.
 
->[!VIDEO](https://video.tv.adobe.com/v/33886/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/33886?quality=12&learn=on)

@@ -1,26 +1,26 @@
 ---
 title: Tekst en afbeeldingsinhoud toevoegen aan een webkanaaldocument
-seo-title: Tekst en afbeeldingsinhoud toevoegen aan een webkanaaldocument
-description: 'Dit is onderdeel 7 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we afbeeldingen en tekstinhoud toe aan het koptekstvenster. '
-seo-description: 'Dit is onderdeel 7 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we afbeeldingen en tekstinhoud toe aan het koptekstvenster. '
+seo-title: Adding text and image content to web channel document
+description: Dit is onderdeel 7 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we afbeeldingen en tekstinhoud toe aan het koptekstvenster.
+seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the header panel.
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 3dd64e7d-3f13-4022-bb75-c9dc1884bc19
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3babebd8-3c17-4583-9201-d93bae82f134
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
-
 
 # Tekst en afbeeldingsinhoud toevoegen aan een webkanaaldocument
 
@@ -34,5 +34,4 @@ Volg de onderstaande video om inhoud toe te voegen aan het webkanaaldocument.
 
 De video begeleidt u door de stappen betrokken bij het toevoegen van inhoud aan de aangewezen doelgebieden in het document van het Webkanaal.
 
->[!VIDEO](https://video.tv.adobe.com/v/22359/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/22359?quality=12&learn=on)

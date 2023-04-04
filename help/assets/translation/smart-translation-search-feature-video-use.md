@@ -9,7 +9,7 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 thumbnail: 21297.jpg
 exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Met Smart Translation Search kunt u automatisch zoeken en zoeken in verschillende talen via AEM inhoud, zowel Middelen als Pagina&#39;s, waardoor meer dan 50 talen worden ondersteund en de behoefte aan handmatig vertalen van inhoud wordt verminderd.
 
->[!VIDEO](https://video.tv.adobe.com/v/21297/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21297?quality=12&learn=on)
 
 Met AEM Smart Translation Search kunnen gebruikers zoeken naar inhoud in AEM met niet-Engelse termen, zodat deze overeenkomen met de elementen in AEM met vergelijkbare Engelse termen.
 

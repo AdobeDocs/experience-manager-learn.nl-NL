@@ -1,23 +1,23 @@
 ---
 title: Wat is het Repository Structure Package in een AEM Project?
-description: 'Ontdek het Repository Structure-pakket van een AEM toepassing, het belang ervan en de manier waarop u het op de juiste manier kunt definiëren. '
+description: Ontdek het Repository Structure-pakket van een AEM toepassing, het belang ervan en de manier waarop u het op de juiste manier kunt definiëren.
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Ontwikkeling
-feature: Projectarchetype AEM
+topic: Development
+feature: AEM Project Archetype
 kt: 6928
 thumbnail: 330550.jpg
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+exl-id: af0da906-87ea-4b52-9c9c-343fb29d3fcc
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 1%
+source-wordcount: '50'
+ht-degree: 0%
 
 ---
 
-
 # Structuurpakket voor opslagplaats
 
-Ontdek het [Repository structure package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html) van een AEM toepassing, het belang ervan en hoe u deze optimaal kunt definiëren.
+Ontdek de AEM [Structuurpakket voor opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html), het belang ervan en de wijze waarop deze optimaal moet worden gedefinieerd.
 
->[!VIDEO](https://video.tv.adobe.com/v/330550/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330550?quality=12&learn=on)

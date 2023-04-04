@@ -8,7 +8,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Als modellen van inhoudsfragmenten bestaan **niet** die voor een configuratie wo
    1. Controleer de **[!UICONTROL Cloud Configuration]** veld is ingesteld op **/conf/wknd-mobile**
    1. Tikken **[!UICONTROL Save & Close]** in de rechterbovenhoek om wijzigingen aan te houden
 
->[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28336?quality=12&learn=on)
 
 >[!WARNING]
 >
@@ -93,7 +93,7 @@ Met de toewijzing kunnen we inhoudsfragment definiëren dat wordt gebruikt om de
 1. Tikken **[!UICONTROL Create]** om de wizard Inhoudsfragmentmodel te openen.
 1. Enter **[!DNL Event]** als de **[!UICONTROL Model Title]** *(beschrijving is optioneel)* en tikken **[!UICONTROL Create]** om op te slaan.
 
->[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28337?quality=12&learn=on)
 
 ## De structuur van het inhoudsfragmentmodel definiëren
 
@@ -169,7 +169,7 @@ Herhaal deze stappen met de invoerdefinities die hieronder zijn gedefinieerd om 
 * [!UICONTROL Property Name] : `venueCity`
 * [!UICONTROL Options] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
->[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28335?quality=12&learn=on)
 
 >[!NOTE]
 >

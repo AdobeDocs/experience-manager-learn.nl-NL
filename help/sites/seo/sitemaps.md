@@ -10,10 +10,10 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Leer hoe u uw SEO kunt verhogen door sitemaps voor AEM Sites te maken.
 
->[!VIDEO](https://video.tv.adobe.com/v/337960/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## Bronnen
 
@@ -55,9 +55,9 @@ Een voorbeeld van Sling-toewijzingsknoopdefinitie voor `https://wknd.com` kunnen
 
 | Pad | Eigenschapnaam | Type eigenschap | Waarde van eigenschap |
 |------|----------|---------------|-------|
-| `/etc/map/https/wknd-site` | `jcr:primaryType` | Tekenreeks | `nt:unstructured` |
-| `/etc/map/https/wknd-site` | `sling:internalRedirect` | Tekenreeks | `/content/wknd/(.*)` |
-| `/etc/map/https/wknd-site` | `sling:match` | Tekenreeks | `wknd.com/$1` |
+| `/etc/map/https/wknd-site` | `jcr:primaryType` | String | `nt:unstructured` |
+| `/etc/map/https/wknd-site` | `sling:internalRedirect` | String | `/content/wknd/(.*)` |
+| `/etc/map/https/wknd-site` | `sling:match` | String | `wknd.com/$1` |
 
 De onderstaande schermafbeelding illustreert een vergelijkbare configuratie, maar voor `http://wknd.local` (lokale hostname-toewijzing uitgevoerd op `http`).
 

@@ -4,10 +4,10 @@ description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) as 
 sub-product: Experience Manager as a Cloud Service
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: 757749305a017d682322b2c2e024c2fbb3604fc2
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cloud Service introduceert de volgende generatie van de productlijn van de Experience Manager, voortbouwend op vroegere investeringen en innovaties, het bewaren en uitbreiden van alle gebruiksgevallen en -functies.
 
->[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
 
 <div id="whats-new-section">
 
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cl
 
    *Leer hoe te om op teken-gebaseerde authentificatie te gebruiken met AEM as a Cloud Service over HTTP in wisselwerking te staan*
 
-* **[Headless GraphQL (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+* **[GraphQL zonder koppen (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
    *Leer hoe u AEM GraphQL API&#39;s kunt gebruiken om ervaringen in een externe toepassing aan te zwengelen.*
 

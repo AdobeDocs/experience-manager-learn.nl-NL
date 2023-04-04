@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -19,7 +19,7 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
 
 ## Het InDesign-sjabloonbestand samenstellen {#constructing-the-indesign-template-file}
 
->[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
 1. Download en open de [**Sjabloon voor InDesign-bestand**](assets/asset-templates-tutorial-video--supporting-files.zip)
 2. **Open het deelvenster Labels,** Controleer de naamgevingsconventie voor tags en noteer dat de elementen die door de auteur kunnen worden gemaakt in het InDesign-bestand al zijn gecodeerd. Vergeet niet dat alleen gelabelde elementen in AEM kunnen worden bewerkt.
@@ -51,7 +51,7 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
 
 ## Een assetsjabloon maken en ontwerpen in AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
 
->[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
 1. **InDesign Server starten** op poort 8080.
 2. Zorg ervoor dat de **AEM Author Instance wordt gevormd om met uw InDesign Server in wisselwerking te staan**(en omgekeerd).

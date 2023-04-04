@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: ee6f65fba8db5ae30cc14aacdefbeba39803527b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Geavanceerde concepten van AEM headless
 
-Deze end-to-end zelfstudie vervolgt de [basiszelfstudie](../multi-step/overview.md) die betrekking hadden op de basisbeginselen van Adobe Experience Manager (AEM) Headless en GraphQL. Het geavanceerde leerprogramma illustreert diepgaande aspecten van het werken met de Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en AEM GraphQL voortgezette vragen, met inbegrip van het gebruiken van GraphQL voortgeduurde vragen in een cliënttoepassing.
+Deze end-to-end zelfstudie vervolgt de [basiszelfstudie](../multi-step/overview.md) die betrekking hadden op de basisbeginselen van Adobe Experience Manager (AEM) Headless en GraphQL. Het geavanceerde leerprogramma illustreert diepgaande aspecten van het werken met de Modellen van het Fragment van de Inhoud, de Fragments van de Inhoud, en de AEM GraphQL voortgezette vragen, met inbegrip van het gebruiken van GraphQL voortgeduurde vragen in een cliënttoepassing.
 
 ## Vereisten
 
@@ -36,19 +36,19 @@ Deze zelfstudie behandelt de volgende onderwerpen:
 
 * Maak modellen van inhoudsfragmenten met behulp van validatieregels en meer geavanceerde gegevenstypen, zoals tijdelijke aanduidingen voor tabbladen, geneste fragmentverwijzingen, JSON-objecten en gegevenstypen voor datum en tijd.
 * Inhoudsfragmenten schrijven terwijl u werkt met geneste inhoud en fragmentverwijzingen, en mapbeleid configureren voor governance voor het schrijven van inhoudsfragmenten.
-* Ontdek AEM GraphQL API mogelijkheden gebruikend vragen GraphQL met variabelen en richtlijnen.
-* Blijft VRAAG GraphQL met parameters in AEM en leer hoe te om cache-controle parameters met persisted vragen te gebruiken.
-* Integreer verzoeken voor voortgezette query&#39;s in de voorbeeldtoepassing WKND GraphQL React met de AEM Headless JavaScript SDK.
+* Ontdek AEM GraphQL API-mogelijkheden met behulp van GraphQL-query&#39;s met variabelen en instructies.
+* Blijft GraphQL vragen met parameters in AEM en leer hoe te om cache-controle parameters met persisted query&#39;s te gebruiken.
+* Integreer aanvragen voor doorlopende query&#39;s in de voorbeeldtoepassing WKND GraphQL React met de AEM Headless JavaScript SDK.
 
 ## Geavanceerde concepten van AEM overzicht zonder kop
 
-De volgende video biedt een overzicht op hoog niveau van de concepten die in deze zelfstudie worden behandeld. De zelfstudie bevat het definiëren van Content Fragment Models met geavanceerdere gegevenstypen, het nesten van Content Fragments en het voortduren van GraphQL-query&#39;s in AEM.
+De volgende video biedt een overzicht op hoog niveau van de concepten die in deze zelfstudie worden behandeld. De zelfstudie bevat het definiëren van modellen van inhoudsfragmenten met geavanceerdere gegevenstypen, het nesten van inhoudsfragmenten en het voortduren van GraphQL-query&#39;s in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Deze video (bij 2:25) bespreekt over het installeren van de GraphiQL vraagredacteur via de Manager van het Pakket om vragen te onderzoeken GraphQL. Nochtans in nieuwere versies van AEM als Cloud Service ingebouwde **GraphiQL Explorer** wordt geleverd, zodat de installatie van het pakket niet vereist is. Zie [GraphiQL IDE gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) voor meer informatie .
+>In deze video (2:25) wordt gesproken over het installeren van de GraphiQL-query-editor via Package Manager om GraphQL-query&#39;s te verkennen. Nochtans in nieuwere versies van AEM als Cloud Service ingebouwde **GraphiQL Explorer** wordt geleverd, zodat de installatie van het pakket niet vereist is. Zie [GraphiQL IDE gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) voor meer informatie .
 
 
 ## Projectinstelling
@@ -58,7 +58,7 @@ Het project van de Plaats WKND heeft alle noodzakelijke configuraties, zodat kun
 
 ### Bestaande configuratie controleren
 
-De eerste stap aan de aanvang van om het even welk nieuw project in AEM is zijn configuratie, als werkruimte tot stand te brengen en eindpunten te creëren GraphQL API. Als u een configuratie wilt bekijken of maken, navigeert u naar **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
+De eerste stap aan aanvang van om het even welk nieuw project in AEM is het creëren van zijn configuratie, als werkruimte en het creëren van GraphQL API eindpunten. Als u een configuratie wilt bekijken of maken, navigeert u naar **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
 
 ![Navigeren naar de configuratiebrowser](assets/overview/create-configuration.png)
 
@@ -68,7 +68,7 @@ Waarnemen dat de `WKND Shared` de plaatsconfiguratie is reeds gecreeerd voor het
 
 ### GraphQL API-eindpunten controleren
 
-Daarna, moet u API eindpunten vormen om vragen te verzenden GraphQL naar. Als u bestaande eindpunten wilt bekijken of maken, navigeert u naar **Gereedschappen** > **Algemeen** > **GraphQL**.
+Vervolgens moet u API-eindpunten configureren om GraphQL-query&#39;s te verzenden. Als u bestaande eindpunten wilt bekijken of maken, navigeert u naar **Gereedschappen** > **Algemeen** > **GraphQL**.
 
 ![Eindpunten configureren](assets/overview/endpoints.png)
 
@@ -122,10 +122,10 @@ Hier volgt een overzicht van aanbevolen procedures voor het maken van uw eigen p
 Twee AEM **pakketten** zijn beschikbaar en kunnen worden geïnstalleerd via [Pakketbeheer](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md#sample-content)
 
 * [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip) wordt later in de zelfstudie gebruikt en bevat voorbeeldafbeeldingen en mappen.
-* [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) Bevat de gebeëindigde oplossing voor Hoofdstuk 1-4 met inbegrip van nieuwe Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en de Persisted vragen GraphQL. Nuttig voor degenen die naar de [Integratie van clienttoepassingen](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) hoofdstuk
+* [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) Bevat de gebeëindigde oplossing voor Hoofdstuk 1-4 met inbegrip van de nieuwe Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en de Persisted vragen van GraphQL. Nuttig voor degenen die naar de [Integratie van clienttoepassingen](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) hoofdstuk
 
 
-De [React App - Advanced Tutorial - WKND Adventures](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) Het project is beschikbaar om de steekproeftoepassing te herzien en te onderzoeken. Deze steekproeftoepassing wint de inhoud van AEM terug door de voortgeduurde vragen aan te halen GraphQL en geeft het in een overweldigende ervaring terug.
+De [React App - Advanced Tutorial - WKND Adventures](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) Het project is beschikbaar om de steekproeftoepassing te herzien en te onderzoeken. Deze voorbeeldtoepassing haalt de inhoud van AEM op door de voortgezette GraphQL-query&#39;s aan te roepen en rendert deze in een overweldigende ervaring.
 
 ## Aan de slag
 

@@ -9,7 +9,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 15eb725c-d6f6-4ab9-8d39-dc05fbba1ff3
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Dynamic Media Smart Crop voor video gebruikt Adobe Sensei om op intelligente wijze het interessepunt in de video bij te houden, zodat video&#39;s er optimaal uitzien op alle schermgrootten.
 
->[!VIDEO](https://video.tv.adobe.com/v/37958/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
 
 >[!NOTE]
 >

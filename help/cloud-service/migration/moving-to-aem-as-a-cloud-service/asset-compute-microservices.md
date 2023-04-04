@@ -9,7 +9,7 @@ level: Experienced
 kt: 8635
 thumbnail: 336990.jpeg
 exl-id: 327e8663-086b-4b31-b159-a0cf30480b45
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Leer hoe u met de asset compute-microservices van AEM Assets as a Cloud Service automatisch en efficiënt elke uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM-workflow kunt vervangen.
 
->[!VIDEO](https://video.tv.adobe.com/v/336990/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
 
 ## Workflow-migratiehulpprogramma
 

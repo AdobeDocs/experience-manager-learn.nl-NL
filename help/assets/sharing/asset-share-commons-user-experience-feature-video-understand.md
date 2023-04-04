@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 last-substantial-update: 2022-06-20T00:00:00Z
 exl-id: 500a9b10-462a-4f41-9b07-67138955cc3d
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 1%
@@ -20,13 +20,13 @@ Een cursieve inleiding aan de gebruiker en het auteurservaring van het Aandeel v
 
 ## Gebruikerservaring
 
->[!VIDEO](https://video.tv.adobe.com/v/20497/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20497?quality=12&learn=on)
 
 De video biedt een verkorte doorloop van de gebruikerservaring voor de Commons van het Aandeel van Activa. De revisie heeft betrekking op de mogelijkheden van de pagina Zoeken, de pagina Asset Details en diverse acties, zoals Downloaden, Delen en Toevoegen aan winkelwagentje.
 
 ## Authentieke ervaring
 
->[!VIDEO](https://video.tv.adobe.com/v/20498/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20498?quality=12&learn=on)
 
 Deze video verstrekt een beknopt overzicht van de basiscomponenten-authoring mogelijkheden in de Commons van het Aandeel van Activa, om een gevoel van het niveau van auteur-ability te verstrekken.
 

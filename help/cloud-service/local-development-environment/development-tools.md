@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: e82c30e7f1a1fe04fd43ee639d74788f9bf100f6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 0%
@@ -175,7 +175,7 @@ AEM ontwikkeling bestaat voornamelijk uit de ontwikkeling van Java en Front-end 
 
 __[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ is een krachtige IDE voor de ontwikkeling van Java. IntelliJ IDEA bestaat uit twee smaken, een gratis editie van de Gemeenschap en een commerciële (betaalde) ultieme versie. De gratis versie van de Gemeenschap is voldoende voor AEM ontwikkeling, maar de Ultimate [breidt zijn vermogensreeks uit](https://www.jetbrains.com/idea/download).
 
->[!VIDEO](https://video.tv.adobe.com/v/26089/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
 + [IntelliJ IDEA downloaden](https://www.jetbrains.com/idea/download)
 + [Het gereedschap Repo downloaden](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)

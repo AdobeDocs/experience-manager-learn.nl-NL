@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6bcc5978-dac8-4112-8e50-de1722b1c289
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 0%
@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Via het deelvenster Adobe Asset Link hebt u toegang tot de bestandsgegevens van elementen in AEM Assets, zoals miniaturen, basismetagegevens en versies vanuit het deelvenster. Ontdek hoe u bestandsversies kunt maken, voorvertonen en vergelijken.
 
->[!VIDEO](https://video.tv.adobe.com/v/34048/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/34048?quality=12&learn=on)

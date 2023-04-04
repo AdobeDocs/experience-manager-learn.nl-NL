@@ -1,23 +1,23 @@
 ---
-title: 'Stappen voor het vastleggen van de vereiste informatie voor het oplossen van PDF/A-problemen '
+title: Stappen om de vereiste informatie te vangen om PDF/A kwesties problemen op te lossen
 description: Problemen met de conversie en validatie van Assembler oplossen
 type: Troubleshooting
 role: Developer
 level: Intermediate
 version: 6.5
-feature: 'Assembler '
-topic: 'Ontwikkeling   '
+feature: Assembler
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 2753326a-2f8c-49f8-91a4-88cc8d500f66
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 1%
+source-wordcount: '50'
+ht-degree: 0%
 
 ---
 
-
 # Stappen om problemen met PDFA-conversie en -validatie op te lossen
 
-*Deze video doorloopt de stappen om de vereiste informatie vast te leggen voor het oplossen van problemen met PDF/A-conversie en -validatie in de Forms Assembler-service.*
+*Deze video doorloopt de stappen om de vereiste informatie vast te leggen om PDF/A-omzettings- en validatieproblemen in de Forms Assembler-service op te lossen.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335518?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335518?quality=12&learn=on)

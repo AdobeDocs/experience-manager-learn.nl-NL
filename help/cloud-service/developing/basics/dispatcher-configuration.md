@@ -1,23 +1,23 @@
 ---
-title: Hoe te om een bestaande Configuratie van de Ontvanger van AMS aan AEM als Cloud Service te migreren
-description: Tips en trucs voor het migreren van de AEM Dispatcher-configuratie van Adobe Managed Services (AMS) naar AEM als Cloud Service.
+title: Hoe te om een bestaande Configuratie van de Ontvanger van AMS aan AEM as a Cloud Service te migreren
+description: Tips en trucs voor het migreren van de AEM Dispatcher-configuratie van Adobe Managed Services (AMS) naar AEM as a Cloud Service.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
-topic: Ontwikkeling, migratie
+topic: Development, Migration
 feature: Dispatcher
 kt: 6931
 thumbnail: 330556.jpg
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f0d74326-f8ba-431f-8b66-494e20b9e710
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '69'
 ht-degree: 0%
 
 ---
 
-
 # De Dispatcher-configuratie migreren vanuit AMS
 
-Overzicht van de verschillen in de configuraties van de verzender en de tips en trucs voor het migreren van de verzender van Adobe Managed Services (AMS) naar AEM als Cloud Service.
+Overzicht van de verschillen in de configuraties van de verzender en de tips en trucs voor het migreren van de verzender van Adobe Managed Services (AMS) naar AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/330556/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330556?quality=12&learn=on)

@@ -10,7 +10,7 @@ level: Beginner
 kt: 8390
 exl-id: 068e38df-9c71-4f55-b6d6-e1486c29d0a9
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Het ingesloten adaptieve formulier is volledig functioneel en gebruikers kunnen 
 
 In de volgende video worden de stappen beschreven die nodig zijn om een adaptief of HTML5-formulier in te sluiten in een webpagina.
 Raadpleeg de [documentatie](https://experienceleague.adobe.com/docs/experience-manager-64/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=en) voor optimale voorwaarden, beste praktijken enz.
->[!VIDEO](https://video.tv.adobe.com/v/335893?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
 U kunt de voorbeeldbestanden downloaden die in de video worden gebruikt [van hier](assets/embedding-af-web-page.zip)
 

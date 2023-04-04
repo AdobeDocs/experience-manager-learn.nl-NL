@@ -16,7 +16,7 @@ role: Developer
 level: Beginner
 exl-id: 98a35bd9-a659-41f9-a772-267730c1f579
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Met de regeleditor kunnen gebruikers logica toevoegen aan AEM Adaptieve Forms. AEM 6.3 verbetert de regelgever op verschillende manieren die het voor zowel technische als niet-technische gebruikers gemakkelijker en sneller maken om intelligentie toe te voegen.
 
->[!VIDEO](https://video.tv.adobe.com/v/19653?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
 **Enkele verbeteringen aan de Redacteur van de Regel omvatten:**
 

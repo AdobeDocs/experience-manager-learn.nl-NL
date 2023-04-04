@@ -10,10 +10,10 @@ kt: 9113
 thumbnail: 337530.jpeg
 last-substantial-update: 2022-10-10T00:00:00Z
 exl-id: 66f627e4-863d-45d7-bc68-7ec108a1c271
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Leer hoe u servicegebruikers in uw AEM code kunt maken en gebruiken om gecontroleerde, programmatische toegang tot de AEM te bieden.
 
->[!VIDEO](https://video.tv.adobe.com/v/337530/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337530?quality=12&learn=on)
 
 ## Bronnen
 

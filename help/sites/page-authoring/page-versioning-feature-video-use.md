@@ -12,7 +12,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: cc659581-031d-4f2a-90c1-cf721e481689
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Met paginaversiebeheer kunnen auteurs van inhoud de wijzigingen bijhouden die aan een pagina zijn gekoppeld door een paginaversie te maken. Bovendien beschikt u over een optie om een voorvertoning van een versie weer te geven, een versie te herstellen en een versie te vergelijken met de huidige versie van een pagina.
 
->[!VIDEO](https://video.tv.adobe.com/v/32151?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
 
 Met Versioning maakt u een momentopname van een pagina op een bepaald tijdstip. Met versioning kunt u de volgende handelingen uitvoeren:
 * Een nieuwe versie voor een pagina maken

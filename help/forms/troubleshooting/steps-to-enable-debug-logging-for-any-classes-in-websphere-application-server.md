@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-topic: 'Beheer   '
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fd7ad4df-4c27-42f2-889f-03e170bac319
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '52'
 ht-degree: 0%
 
 ---
-
 
 # Stappen om te toelaten zuiveren registreren voor om het even welke klassen in de server van de Toepassing Websphere
 
 *Deze video doorloopt de stappen om foutopsporingsregistratie voor om het even welke klasse in de server van de Toepassing toe te laten Websphere.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335523?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335523?quality=12&learn=on)

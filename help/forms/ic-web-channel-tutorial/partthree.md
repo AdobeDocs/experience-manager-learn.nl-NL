@@ -7,9 +7,9 @@ version: 6.4,6.5
 role: Developer
 level: Beginner
 exl-id: 798012e5-5099-4fd0-82ad-a21f64a97aca
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,15 @@ In dit onderdeel maken we het formuliergegevensmodel. Met het formuliergegevensm
 
 **Formuliergegevensmodel maken in AEM Forms 6.4**
 
->[!VIDEO](https://video.tv.adobe.com/v/27763/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27763?quality=12&learn=on)
 
 **Formuliergegevensmodel maken in AEM Forms 6.5 en hoger**
 
->[!VIDEO](https://video.tv.adobe.com/v/27765?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
 Het Model van de Gegevens van de vorm is afhankelijk van een correct gevormde Gegevensbron. Wij zullen de Gegevensbron gebruiken die in de vorige stap als basis voor dit Model van de Gegevens van Vorm wordt gevormd.
 
-Het Model van de Gegevens van de vorm is de basis voor al uw Interactieve Mededelingen. Met de bewerking Ophalen/lezen van het formuliergegevensmodel worden de gegevens opgehaald van de gegevensbron van de back-end en wordt het document Interactieve communicatie gevuld.
+Het Model van de Gegevens van de vorm is de basis voor al uw Interactieve Mededelingen. Met de bewerking Ophalen/Lezen van het formuliergegevensmodel worden de gegevens opgehaald van de gegevensbron van de back-end en wordt het document Interactieve communicatie gevuld.
 
 Zie voor meer informatie [Gegevensbronnen configureren](parttwo.md).
 

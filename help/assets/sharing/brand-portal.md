@@ -8,7 +8,7 @@ role: User
 level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Brand Portal, september 2019, introduceert met name Asset Sourcing, die de snelh
 
 Brand Portal Asset Sourcing wordt gebruikt om middelen te verzamelen van externe organisaties en teams, waardoor deze naadloos worden gesynchroniseerd naar de Experience Manager Auteur voor controle en gebruik.
 
->[!VIDEO](https://video.tv.adobe.com/v/29365/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
 *Auteur van Experience Manager 6.5 SP2 (6.5.2) of hoger is vereist om Asset Sourcing te kunnen gebruiken*
 
@@ -35,7 +35,7 @@ Controleren [Auteur van Experience Manager inschakelen voor middelenbron](https:
 
 ## Functies en verbeteringen in Brand Portal februari 2019{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 In de release van Brand Portal in februari 2019 wordt aandacht besteed aan verbeteringen in het zoeken naar tekst en aan verzoeken van klanten van het type top.
 
@@ -116,7 +116,7 @@ De instantie AEM-auteur kan echter [geconfigureerd](https://helpx.adobe.com/expe
 
 ## Functies en verbeteringen in Brand Portal december 2018{#brand-portal-features-and-enhancements-642}
 
->[!VIDEO](https://video.tv.adobe.com/v/23707/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23707?quality=12&learn=on)
 
 ### Toegang voor gasten
 
@@ -163,7 +163,7 @@ Brand Portal gebruikt Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://l
 
 Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen van Brand Portal met AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 ### Navigatieverbeteringen
 

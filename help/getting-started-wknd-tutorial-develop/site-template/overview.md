@@ -10,7 +10,7 @@ level: Beginner
 kt: 7985
 thumbnail: 333477.jpg
 exl-id: a55c1dda-f74a-4914-aa1b-c4de8ad1253e
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Leer hoe u een low-code aanpak gebruikt om uw eerste site te maken in Adobe Experience Manager met Snel site maken en een vooraf gedefinieerde Sjabloon. Gebruik componenten en sjablonen buiten de box om een site snel in bedrijf te stellen. Gebruik een door Adobe XD gestuurde ontwerpworkflow om merkspecifieke stijlen en aanpassingen toe te passen met alleen CSS en JavaScript. Aanbevolen voor nieuwe projecten en ontwikkelaars.
 
->[!VIDEO](https://video.tv.adobe.com/v/333477/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333477?quality=12&learn=on)
 
 * [Adobe XD UI-kit](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
 * [Sitesjabloon AEM](https://github.com/adobe/aem-site-template-basic)

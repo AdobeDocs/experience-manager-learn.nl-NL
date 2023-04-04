@@ -9,7 +9,7 @@ level: Beginner
 kt: 9685
 exl-id: 07fed661-0995-41ab-90c4-abde35a14a4c
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -91,4 +91,4 @@ Als u problemen hebt met het maken van aangepaste functies, kunt u [dit pakket d
 ## De aangepaste functies gebruiken
 
 De volgende video begeleidt u door de stappen betrokken bij het gebruiken van douanefunctie in de regelredacteur van een adaptief vorm
->[!VIDEO](https://video.tv.adobe.com/v/340305?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)

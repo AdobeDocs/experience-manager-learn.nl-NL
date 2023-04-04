@@ -11,7 +11,7 @@ kt: 9371
 thumbnail: 338680.jpg
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -36,11 +36,11 @@ Als u de video&#39;s wilt volgen die u nodig hebt [Adobe XD](https://www.adobe.c
 
 ## Wat u gaat maken {#what-you-will-build}
 
-In dit hoofdstuk worden twee Adobe XD-bestanden geïnspecteerd, één voor de [Standaardsitesjabloon](https://github.com/adobe/aem-site-template-standard) en een andere voor de voorgestelde WKND-site. The
+In dit hoofdstuk worden twee Adobe XD-bestanden geïnspecteerd, één voor de [Standaardsitesjabloon](https://github.com/adobe/aem-site-template-standard) en een andere voor de voorgestelde WKND-site. De
 
 ## UI-kit voor standaardsitesjabloon {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
 
 Stappen op hoog niveau:
 
@@ -50,7 +50,7 @@ Stappen op hoog niveau:
 
 ## WKND-UI-kit {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 Stappen op hoog niveau:
 

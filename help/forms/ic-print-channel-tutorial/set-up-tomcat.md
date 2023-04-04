@@ -15,7 +15,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 In dit deel, installeren wij TOMCAT en stellen het sampleRest.war- dossier in TOMCAT op. Het REST eindpunt dat door dit dossier van WAR wordt blootgesteld is de basis voor ons Gegevensbron en Model van de Gegevens van de Vorm.
 
->[!VIDEO](https://video.tv.adobe.com/v/37815/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)
 
 Volg de volgende instructies om Tomcat in te stellen:
 
@@ -46,4 +46,4 @@ Volg de volgende instructies om Tomcat in te stellen:
 Gefeliciteerd!!! U kunt het bestand SampleRest.war instellen en implementeren.
 
 In de volgende video wordt de implementatie van een voorbeeldtoepassing in Tomcat uitgelegd
->[!VIDEO](https://video.tv.adobe.com/v/37815)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)

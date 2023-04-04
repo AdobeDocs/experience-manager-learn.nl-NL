@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -29,25 +29,25 @@ Apache Sling biedt een Jackson JSON-exporter die het meest voorkomende geval van
 
 ## AEM configureren voor Verkoopmodel-exportfunctie
 
->[!VIDEO](https://video.tv.adobe.com/v/16862/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16862?quality=12&learn=on)
 
 [!DNL Sling Model Exporter] is een kenmerk van de [!DNL Apache Sling] en niet rechtstreeks gebonden aan de AEM productreleasecyclus. [!DNL Sling Model Exporter] is compatibel met AEM 6.3 en hoger.
 
 ## Het gebruik-hoofdlettergebruik voor [!DNL Sling Model Exporter]
 
->[!VIDEO](https://video.tv.adobe.com/v/16863/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16863?quality=12&learn=on)
 
 [!DNL Sling Model Exporter] is ideaal voor het leveraging van Verschuivende Modellen die reeds bedrijfslogica bevatten die HTML vertoningen via HTL (of vroeger JSP) steunen, en de zelfde bedrijfsvertegenwoordiging zoals JSON voor consumptie door de programmatic diensten van het Web of toepassingen van JavaScript blootstellen.
 
 ## Een Verkoopmodel-exportfunctie maken
 
->[!VIDEO](https://video.tv.adobe.com/v/16864/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16864?quality=12&learn=on)
 
 Inschakelen [!DNL Exporter] steun voor een [!DNL Sling Model] is net zo eenvoudig als het toevoegen van de `@Exporter` aantekening bij de klasse Java.
 
 ## Exportopties voor verkoopmodel toepassen
 
->[!VIDEO](https://video.tv.adobe.com/v/16865/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16865?quality=12&learn=on)
 
 [!DNL Sling Model Exporter] ondersteunt het doorgeven van exportopties per model aan de Exporter-implementatie om te bepalen hoe de [!DNL Sling Model] wordt definitief geëxporteerd. Deze opties zijn doorgaans &quot;globaal&quot; van toepassing op de manier waarop de [!DNL Sling Model] wordt geëxporteerd, versus per gegevenspunt dat kan worden uitgevoerd via inline-annotaties die hieronder worden beschreven.
 
@@ -58,7 +58,7 @@ Inschakelen [!DNL Exporter] steun voor een [!DNL Sling Model] is net zo eenvoudi
 
 ## Toepassen [!DNL Jackson] annotaties
 
->[!VIDEO](https://video.tv.adobe.com/v/16866/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16866?quality=12&learn=on)
 
 Implementaties van exportfuncties kunnen ook annotaties ondersteunen die inline kunnen worden toegepast op de [!DNL Sling Model] klasse, die een fijner niveau van controle kan verstrekken hoe de gegevens worden uitgevoerd.
 

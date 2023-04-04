@@ -1,6 +1,6 @@
 ---
-title: Aan de slag met AEM headless - GraphQL
-description: Leer over de Experience Manager GraphQL APIs en hun mogelijkheden.
+title: Aan de slag met AEM Headless - GraphQL
+description: Meer informatie over de Experience Manager GraphQL API's en hun mogelijkheden.
 feature: Content Fragments, GraphQL API, APIs
 topic: Headless, Content Management
 role: Developer
@@ -8,47 +8,47 @@ level: Beginner
 exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
 thumbnail: 328618.jpg
 last-substantial-update: 2022-07-20T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Aan de slag met AEM zonder kop - GraphQL {#getting-started-with-aem-headless}
+# Aan de slag met AEM headless - GraphQL {#getting-started-with-aem-headless}
 
-AEM GraphQL APIs voor de Fragmenten van de Inhoud steunt hoofd-loze scenario&#39;s CMS waar de externe cliënttoepassingen ervaringen teruggeven gebruikend inhoud die in AEM wordt beheerd.
+AEM GraphQL API&#39;s voor Content Fragments ondersteunen CMS-scenario&#39;s zonder kop waarbij externe clienttoepassingen ervaringen renderen met inhoud die wordt beheerd in AEM.
 
 Een moderne API voor het leveren van inhoud is essentieel voor de efficiëntie en prestaties van op JavaScript gebaseerde frontendtoepassingen. Het gebruiken van REST API introduceert uitdagingen:
 
 * Een groot aantal aanvragen om één object tegelijk op te halen
 * Vaak &#39;overlevert&#39;-inhoud, wat betekent dat de toepassing meer ontvangt dan nodig is
 
-Om deze uitdagingen te overwinnen verstrekt GraphQL op vraag-gebaseerde API die cliënten toestaat om AEM voor slechts de inhoud te vragen het vereist, en het gebruiken van één enkele API vraag te ontvangen.
+Om deze uitdagingen te overwinnen verstrekt GraphQL een op vraag-gebaseerde API die cliënten toestaat om AEM voor slechts de inhoud te vragen het vereist, en het gebruiken van één enkele API vraag te ontvangen.
 
->[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328618?quality=12&learn=on)
 
-Deze video is een overzicht van de GraphQL API die in AEM wordt geïmplementeerd. De GraphQL-API in AEM is vooral ontworpen om AEM Content Fragment&#39;s aan downstreamtoepassingen te leveren als onderdeel van een headless-implementatie.
+Deze video is een overzicht van de GraphQL API die in AEM is geïmplementeerd. De GraphQL API in AEM is vooral ontworpen om AEM toepassingen voor inhoudsfragmenten te leveren aan downstreamtoepassingen als onderdeel van een headless-implementatie.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_overview"
->title="Aan de slag met AEM zonder kop - GraphQL"
->abstract="Leer hoe te om Inhoudsfragmenten te leveren gebruikend GraphQL."
+>title="Aan de slag met AEM headless - GraphQL"
+>abstract="Leer hoe u inhoudsfragmenten kunt leveren met GraphQL."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Overzicht van GraphQL in AEM"
 
-## AEM GraphQL-videoreeks zonder kop
+## AEM GraphQL-videoreeks zonder hoofd
 
-Leer over AEM mogelijkheden GraphQL door de diepgaande analyse van Inhoud Fragments en en AEM GraphQL APIs en ontwikkelingshulpmiddelen.
+Meer informatie over AEM GraphQL-mogelijkheden via de diepgaande doorlichting van Content Fragments en AEM GraphQL API&#39;s en ontwikkelingsprogramma&#39;s.
 
-* [AEM GraphQL-videoreeks zonder kop](./video-series/modeling-basics.md)
+* [AEM GraphQL-videoreeks zonder hoofd](./video-series/modeling-basics.md)
 
-## Handleiding voor AEM headless GraphQL Hands-on
+## Zelfstudie voor GraphQL-handleiding zonder hoofd AEM
 
-Ontdek AEM mogelijkheden GraphQL door een React App te ontwikkelen die inhoudsfragmenten via AEM GraphQL APIs verbruikt.
+Ontdek AEM GraphQL-mogelijkheden door een React-app te ontwikkelen die contentfragmenten gebruikt via AEM GraphQL API&#39;s.
 
-* [Handleiding voor AEM headless GraphQL Hands-on](./multi-step/overview.md)
+* [Zelfstudie voor GraphQL-handleiding zonder hoofd AEM](./multi-step/overview.md)
 
-## AEM GraphQL vs. AEM Content Services
+## AEM GraphQL versus AEM Content Services
 
 |  | GraphQL API&#39;s AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|

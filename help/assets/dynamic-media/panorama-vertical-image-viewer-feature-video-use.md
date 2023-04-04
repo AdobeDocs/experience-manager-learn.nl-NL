@@ -1,13 +1,13 @@
 ---
 title: Panorama en Vertical Image Viewer gebruiken met AEM Assets Dynamic Media
-description: De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panorama Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
+description: De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panoramische Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
 feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 De Dynamic Media Viewer-verbeteringen in AEM 6.4 omvatten de toevoeging van Panoramische Image Viewer, Panoramische Virtual Reality Image Viewer en Vertical Image Viewer. Panoramische Viewer biedt een eenvoudige manier om een boeiende, meeslepende ervaring met de ruimte, eigenschap, locatie of landschap te bieden, zonder dat er aangepaste ontwikkeling nodig is.
 
->[!VIDEO](https://video.tv.adobe.com/v/24156/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
 
 >[!NOTE]
 >

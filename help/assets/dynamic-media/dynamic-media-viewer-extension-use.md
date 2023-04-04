@@ -7,29 +7,29 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 3%
 
 ---
 
-
 # Dynamic Media Viewers gebruiken met Adobe Analytics en Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
 
 Voor klanten met Dynamic Media en Adobe Analytics kunt u nu het gebruik van Dynamic Media Viewers op uw website bijhouden met de Dynamic Media Viewer Extension.
 
->[!VIDEO](https://video.tv.adobe.com/v/29308/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Adobe Experience Manager uitvoeren in de Dynamic Media Scene7-modus voor deze functionaliteit. U moet ook [Adobe Experience Platform Launch integreren met uw AEM instantie](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html).
+> Adobe Experience Manager uitvoeren in de Dynamic Media Scene7-modus voor deze functionaliteit. U moet ook [Adobe Experience Platform Launch integreren met uw AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html).
 
 Met de introductie van de Dynamic Media Viewer-extensie biedt Adobe Experience Manager nu geavanceerde analyseondersteuning voor elementen die worden geleverd met Dynamic Media-viewers (5.13). Hierdoor hebt u meer gedetailleerde controle over het bijhouden van gebeurtenissen wanneer een Dynamic Media Viewer wordt gebruikt op een sitepagina.
 
 Als u AEM Assets en Sites al hebt, kunt u uw eigenschap Launch integreren met de AEM auteur-instantie. Nadat de startintegratie aan uw website is gekoppeld, kunt u dynamische mediacomponenten aan uw pagina toevoegen met gebeurtenistracering voor viewers ingeschakeld.
 
-Voor klanten met alleen AEM Assets of Dynamic Media Classic kunnen gebruikers de insluitcode voor een viewer ophalen en deze aan de pagina toevoegen. De bibliotheken van het Manuscript van de lancering kunnen dan manueel aan de pagina voor kijker gebeurtenis worden toegevoegd volgen.
+Voor klanten met alleen AEM Assets of Dynamic Media Classic kan de gebruiker de insluitcode voor een viewer ophalen en toevoegen aan de pagina. De bibliotheken van het Manuscript van de lancering kunnen dan manueel aan de pagina voor kijker gebeurtenis worden toegevoegd volgen.
 
 De volgende tabel bevat een lijst met Dynamic Media Viewer-gebeurtenissen en de argumenten die hiervoor worden ondersteund:
 

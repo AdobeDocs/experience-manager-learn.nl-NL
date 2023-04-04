@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 7a62ae37-d391-4136-99f3-b32181afd475
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%
@@ -21,4 +21,4 @@ Met de configuratie van cloudservices in AEM kunt u integratie tussen AEM en and
 
 In de volgende video worden de stappen doorlopen die nodig zijn om de configuratie van cloudservices te maken voor de integratie van AEM met Acrobat Sign
 
->[!VIDEO](https://video.tv.adobe.com/v/38179/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38179?quality=12&learn=on)

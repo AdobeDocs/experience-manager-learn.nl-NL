@@ -1,6 +1,6 @@
 ---
 title: RTF-tekst gebruiken met AEM zonder kop
-description: Leer aan auteursinhoud en bedt referenced inhoud gebruikend een multi-line rijke tekstredacteur met de Fragments van de Inhoud van Adobe Experience Manager, en hoe de rijke tekst door AEM GraphQL APIs als JSON wordt geleverd om door koploze toepassingen te worden verbruikt.
+description: Leer om inhoud te schrijven en referenced inhoud in te bedden gebruikend een multi-line rijke tekstredacteur met de Fragments van de Inhoud van Adobe Experience Manager, en hoe de rijke tekst door AEM GraphQL APIs als JSON wordt geleverd om door koploze toepassingen te worden verbruikt.
 version: Cloud Service
 doc-type: article
 kt: 9985
@@ -8,9 +8,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1464'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Het tekstveld met meerdere regels is een gegevenstype van inhoudsfragmenten waarmee auteurs RTF-inhoud kunnen maken. Verwijzingen naar andere inhoud, zoals afbeeldingen of andere Content Fragments, kunnen dynamisch in regel worden ingevoegd in de tekstflow. Het tekstveld Eén regel is een ander gegevenstype van inhoudsfragmenten dat moet worden gebruikt voor eenvoudige tekstelementen.
 
-AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als HTML, platte tekst of als pure JSON. De vertegenwoordiging JSON is krachtig aangezien het de cliënttoepassing volledige controle over geeft hoe te om de inhoud terug te geven.
+AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als HTML, platte tekst of als pure JSON-tekst. De vertegenwoordiging JSON is krachtig aangezien het de cliënttoepassing volledige controle over geeft hoe te om de inhoud terug te geven.
 
 ## Meerdere regels bewerken
 
->[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
 In de Inhoudsfragmenteditor biedt de menubalk van het tekstveld met meerdere regels auteurs standaard rijke tekstopmaakmogelijkheden, zoals **vet**, *cursief* en onderstrepen. Als u het veld met meerdere regels opent in de modus Volledig scherm, schakelt u [aanvullende opmaakgereedschappen, zoals Alineatekst, zoeken en vervangen, spellingcontrole en meer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
@@ -55,15 +55,15 @@ De **Standaardtype** Deze optie heeft rechtstreeks invloed op de bewerkingservar
 
 U kunt ook [inline-verwijzingen inschakelen](#insert-fragment-references) aan andere Inhoudsfragmenten controleren **Fragmentverwijzing toestaan** en het vormen van **Modellen voor toegestane inhoudsfragmenten**.
 
-Controleer de **Vertaalbaar** als de inhoud wordt gelokaliseerd. Alleen RTF en normale tekst kunnen worden gelokaliseerd. Zie [werken met gelokaliseerde inhoud voor meer informatie](./localized-content.md).
+Controleer de **Vertaalbaar** als de inhoud moet worden gelokaliseerd. Alleen RTF en normale tekst kunnen worden gelokaliseerd. Zie [werken met gelokaliseerde inhoud voor meer informatie](./localized-content.md).
 
-## RTF-reactie met GraphQL API
+## Rijke tekstreactie met GraphQL API
 
-Wanneer het creëren van een vraag GraphQL, kunnen de ontwikkelaars verschillende reactietypes kiezen van `html`, `plaintext`, `markdown`, en `json` uit een veld met meerdere regels.
+Bij het maken van een GraphQL-query kunnen ontwikkelaars verschillende typen reacties kiezen vanuit `html`, `plaintext`, `markdown`, en `json` uit een veld met meerdere regels.
 
-Ontwikkelaars kunnen de [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) in de Inhoudsfragmenteditor om alle waarden weer te geven van het huidige inhoudsfragment dat kan worden geretourneerd met de GraphQL-API.
+Ontwikkelaars kunnen de [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) in de Inhoudsfragmenteditor om alle waarden weer te geven van het huidige inhoudsfragment dat kan worden geretourneerd met de GraphQL API.
 
-## GraphQL-voortgezette query
+## GraphQL-query voortgezet
 
 Het selecteren van `json` De responsindeling voor het veld met meerdere regels biedt de meeste flexibiliteit bij het werken met RTF-inhoud. De rijke tekstinhoud wordt geleverd als een serie van JSON knooptypes die uniek op het cliëntplatform kunnen worden verwerkt.
 
@@ -85,7 +85,7 @@ query ($path: String!) {
 
 De `$path` in de `_path` filter vereist het volledige pad naar het inhoudsfragment (bijvoorbeeld `/content/dam/wknd/en/magazine/sample-article`).
 
-**GraphQL respons:**
+**GraphQL-antwoord:**
 
 ```json
 {
@@ -131,7 +131,7 @@ Hieronder staan verschillende voorbeelden van reactietypen van een veld met meer
 
 +++HTML, voorbeeld
 
-**GraphQL-vraag blijft bestaan:**
+**GraphQL blijft query uitvoeren:**
 
 ```graphql
 query ($path: String!) {
@@ -147,7 +147,7 @@ query ($path: String!) {
 }
 ```
 
-**GraphQL respons:**
+**GraphQL-antwoord:**
 
 ```json
 {
@@ -168,7 +168,7 @@ query ($path: String!) {
 
 +++voorbeeld Markering
 
-**GraphQL-vraag blijft bestaan:**
+**GraphQL blijft query uitvoeren:**
 
 ```graphql
 query ($path: String!) {
@@ -184,7 +184,7 @@ query ($path: String!) {
 }
 ```
 
-**GraphQL respons:**
+**GraphQL-antwoord:**
 
 ```json
 {
@@ -205,7 +205,7 @@ query ($path: String!) {
 
 +++Voorbeeld van onbewerkte tekst
 
-**GraphQL-vraag blijft bestaan:**
+**GraphQL blijft query uitvoeren:**
 
 ```graphql
 query ($path: String!) {
@@ -221,7 +221,7 @@ query ($path: String!) {
 }
 ```
 
-**GraphQL respons:**
+**GraphQL-antwoord:**
 
 ```json
 {
@@ -351,7 +351,7 @@ Verwijzingen naar andere inhoudsfragmenten kunnen ook worden gekoppeld aan of in
 
 Bovenstaande schermafbeelding toont een ander Content Fragment, Ultimate Guide to LA Skate Parks, dat wordt ingevoegd in het veld met meerdere regels. De typen inhoudsfragmenten die in het veld kunnen worden ingevoegd, worden beheerd door de **Modellen voor toegestane inhoudsfragmenten** in de [gegevenstype van meerdere regels](#multi-line-data-type) in het inhoudsfragmentmodel.
 
-## In-line verwijzingen van de vraag met GraphQL
+## In-line zoekopdrachten uitvoeren met GraphQL
 
 Met de GraphQL API kunnen ontwikkelaars een query maken die aanvullende eigenschappen bevat over verwijzingen die in een veld met meerdere regels zijn ingevoegd. De JSON-reactie bevat een aparte `_references` object dat deze extra eigenschappen opsomt. Het JSON-antwoord geeft ontwikkelaars de volledige controle over de manier waarop ze de referenties of koppelingen moeten weergeven in plaats van dat ze moeten omgaan met geadviseerde HTML.
 
@@ -363,7 +363,7 @@ U kunt bijvoorbeeld het volgende doen:
 
 Gebruik de `json` retourneringstype en de `_references` object bij het samenstellen van een GraphQL-query:
 
-**GraphQL-vraag blijft bestaan:**
+**GraphQL blijft query uitvoeren:**
 
 ```graphql
 query ($path: String!) {
@@ -509,7 +509,7 @@ const nodeMap = {
     }
 ```
 
-De aanpak op hoog niveau bestaat erin elke `nodeType` equals `reference` in de Mutli Line JSON-respons. Een aangepaste renderfunctie kan vervolgens worden aangeroepen die het `_references` -object dat wordt geretourneerd in het GraphQL-antwoord.
+De aanpak op hoog niveau bestaat erin elke `nodeType` equals `reference` in de Mutli Line JSON-respons. Een aangepaste renderfunctie kan vervolgens worden aangeroepen die het `_references` object dat wordt geretourneerd in het GraphQL-antwoord.
 
 Het in-line verwijzingspad kan vervolgens worden vergeleken met het overeenkomstige item in het dialoogvenster `_references` object en een andere aangepaste kaart `renderReference` kan worden geroepen.
 
@@ -536,11 +536,11 @@ Een volledig voorbeeld van het schrijven van een renderer van douaneverwijzingen
 
 ## Voorbeeld van begin tot einde
 
->[!VIDEO](https://video.tv.adobe.com/v/342105/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
 De voorgaande video toont een voorbeeld van begin tot eind:
 
 1. Het tekstveld met meerdere regels van een inhoudsfragmentmodel bijwerken om fragmentverwijzingen toe te staan
 1. Met de Inhoudsfragmenteditor kunt u een afbeelding en een verwijzing naar een ander fragment opnemen in een tekstveld met meerdere regels.
-1. Creërend een vraag GraphQL die de multi-line tekstreactie als JSON en om het even welk omvat `_references` gebruikt.
+1. Een GraphQL-query maken die de tekstreactie met meerdere regels bevat als JSON en alle andere `_references` gebruikt.
 1. Het schrijven van React SPA dat de in-line verwijzingen van de rijke tekstreactie teruggeeft.

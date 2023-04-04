@@ -11,9 +11,9 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Met componentpictogrammen kunnen auteurs snel een component met pictogrammen of betekenisvolle afkortingen identificeren. Auteurs kunnen nu de Componenten vinden die nodig zijn om hun webervaringen sneller dan ooit uit te bouwen.
 
->[!VIDEO](https://video.tv.adobe.com/v/16778/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
 
 De Componentbrowser wordt nu in een consistent grijs thema weergegeven, met daarin het volgende:
 

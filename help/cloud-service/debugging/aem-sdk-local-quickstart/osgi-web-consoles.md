@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -27,7 +27,7 @@ AEM verstrekt vele consoles OSGi, elk die zeer belangrijke inzichten in verschil
 
 ## Bundels
 
->[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
 
 De bundelconsole is een catalogus van de bundels OSGi, en hun details, opgesteld aan AEM, samen met de ad hoc capaciteit om hen te beginnen en tegen te houden.
 
@@ -44,7 +44,7 @@ Klik in elke bundel, verstrekt details die met het zuiveren uw toepassing helpen
 
 ## Onderdelen
 
->[!VIDEO](https://video.tv.adobe.com/v/34336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
 
 De console van Componenten is een catalogus van alle componenten OSGi die aan AEM worden opgesteld, en verstrekt alle informatie over hen, van hun bepaalde cyclus van het componentenleven OSGi, aan welke diensten OSGi zij kunnen verwijzen naar
 
@@ -63,7 +63,7 @@ Belangrijke aspecten die u helpen bij de foutopsporingsactiviteiten:
 
 ## Verkoopmodellen
 
->[!VIDEO](https://video.tv.adobe.com/v/34337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34337?quality=12&learn=on)
 
 De Sling Models-console bevindt zich op de volgende locatie:
 

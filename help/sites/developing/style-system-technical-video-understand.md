@@ -7,7 +7,7 @@ topic: Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 0%
@@ -21,7 +21,7 @@ In deze video bekijken we de anatomie van de CSS (of [!DNL LESS]) en JavaScript 
 
 ## Begrijpen hoe u code kunt gebruiken voor het Stijlsysteem {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21538?quality=12&learn=on)
 
 Het meegeleverde AEM (**technical-review.sites.style-system-1.0.0.zip**) installeert de stijl van de voorbeeldtitel, steekproefbeleid voor de de container en componenten van de Titel van de Lay-out Wij.Retail, en een steekproefpagina.
 

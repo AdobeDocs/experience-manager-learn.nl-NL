@@ -9,7 +9,7 @@ level: Beginner
 kt: 7873
 thumbnail: 333296.jpg
 exl-id: 7d5f5edb-10e7-43ec-a4e7-4cee8ddba685
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
@@ -26,6 +26,6 @@ In deze video zult u:
 + Leer de beste werkwijzen voor koploze levering met een AEM-publicatieomgeving
 + Ontdek hoe de auteursomgeving kan worden gebruikt als voorproef voor een toepassing
 
->[!VIDEO](https://video.tv.adobe.com/v/333296/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)
 
-_Download de  [Postman-](./assets/aem-headless-video-series.postman_collection.json) collectie die in de gehele AEM headless Video Series wordt gebruikt._
+_Download de [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) gebruikt in de AEM headless Video Series._

@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worde
 
 Breng vervolgens wijzigingen aan in de themabronnen, zodat de site overeenkomt met de vormgeving van het WKND-merk.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
 
 Stappen op hoog niveau voor de video:
 
@@ -55,7 +55,7 @@ Download de voltooide stijlen voor de [WKND-voorbeeldthema](assets/theming/WKND-
 
 Implementeer updates van een thema naar een AEM omgeving met gebruik van de Front End Pipeline van Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/338722/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338722?quality=12&learn=on)
 
 Stappen op hoog niveau voor de video:
 

@@ -9,10 +9,10 @@ level: Beginner
 kt: 4997
 thumbnail: 39149.jpg
 exl-id: d35a7892-d707-4a5c-9e97-ec3abba0f30c
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 Gebruikers die toegang tot de AEM-auteurservice nodig hebben, worden beheerd als [Adobe IMS-gebruikers](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [Adobe](https://adminconsole.adobe.com). Leer wat Adobe IMS-gebruikers zijn en hoe ze in de Admin Console worden benaderd en beheerd.
 
->[!VIDEO](https://video.tv.adobe.com/v/39149/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39149?quality=12&learn=on)
 
 ## Aanvullende bronnen
 

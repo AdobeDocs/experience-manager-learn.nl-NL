@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '3038'
 ht-degree: 0%
@@ -72,7 +72,7 @@ In dit gedeelte van de zelfstudie maakt u een nieuwe artikelpaginasjabloon die u
 
 Gewoonlijk begint het plannen voor een nieuwe website met modellen en statische ontwerpen. [Adobe XD](https://helpx.adobe.com/support/xd.html) is een ontwerpgereedschap waarmee u gebruikerservaring kunt opbouwen. Vervolgens inspecteren we een UI-kit en -modellen om de structuur van het sjabloon voor artikelpagina te plannen.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 **Download de [WKND-artikelontwerpbestand](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -92,7 +92,7 @@ Er zijn drie hoofdgebieden [Bewerkbare sjablonen](https://experienceleague.adobe
 
 Maak vervolgens een sjabloon in AEM die overeenkomt met de structuur van de modellen. Dit gebeurt in een lokale AEM. Voer de stappen in de onderstaande video uit:
 
->[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
 
 Stappen op hoog niveau voor de bovenstaande video:
 
@@ -160,7 +160,7 @@ Bij het maken van algemene inhoud, zoals een kop- of voettekst, is het gebruikel
 
 Het AEM Projectarchetype produceerde een Kopbal en Voettekst. Werk vervolgens de Experience Fragments bij zodat deze overeenkomen met de modellen. Voer de stappen in de onderstaande video uit:
 
->[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
 
 Stappen op hoog niveau voor de bovenstaande video:
 
@@ -206,7 +206,7 @@ Stappen op hoog niveau voor de bovenstaande video:
 
 Maak vervolgens een pagina met de sjabloon Artikelpagina. Maak de inhoud van de pagina zodat deze overeenkomt met de sitemakken. Voer de stappen in de onderstaande video uit:
 
->[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
 
 Stappen op hoog niveau voor de bovenstaande video:
 

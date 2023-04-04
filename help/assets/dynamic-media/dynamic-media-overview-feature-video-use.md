@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Deze videoreeks met meerdere delen geeft u een overzicht van hoe media-inhoud wo
 
 ## Dynamic Media - Overzicht
 
->[!VIDEO](https://video.tv.adobe.com/v/27144/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ In deze video wordt beschreven hoe media-inhoud wordt beheerd en geopend met Ado
 
 ## Dynamic Media met AEM Sites en andere CMS
 
->[!VIDEO](https://video.tv.adobe.com/v/27145/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ In deze video wordt beschreven hoe media-inhoud wordt beheerd in Adobe Experienc
 
 ## Dynamic Media voor het maken van gemengde media-collectie en aangepaste viewer
 
->[!VIDEO](https://video.tv.adobe.com/v/27146/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ In deze video wordt het eenvoudige proces beschreven voor het maken van een coll
 
 ## Voorinstellingen Dynamic Media-afbeelding
 
->[!VIDEO](https://video.tv.adobe.com/v/27320/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 In deze video wordt beschreven hoe Voorinstellingen afbeelding worden gemaakt en wat een voorinstelling voor een afbeelding is. Deze video bevat een URL die korter is voor een reeks argumenten van de afbeeldingsserver die op een afbeelding worden toegepast wanneer een URL hierom vraagt. Leer kostbare technieken voor het uitbreiden en bewerken van voorinstellingen voor afbeeldingen.
 
@@ -76,7 +76,7 @@ In deze video wordt beschreven hoe Voorinstellingen afbeelding worden gemaakt en
 
 ## Dynamic Media Geavanceerde URL-opties
 
->[!VIDEO](https://video.tv.adobe.com/v/27319/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen om gebruik te maken van functies van het bronbestand zelf, zoals achtergrondtransparantie, ingebouwde uitknippaden en uitsnijdpaden en tekst als variabelen, met de URL-opties van Dynamic Media.
 
@@ -88,7 +88,7 @@ In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen o
 
 ## Dynamic Media Control JPEG file size in Kilobytes
 
->[!VIDEO](https://video.tv.adobe.com/v/27404/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -99,7 +99,7 @@ Vergelijk de kwaliteit van de JPEG-afbeelding met de resulterende bestandsgroott
 
 ## CC Closed Captioning toevoegen aan Dynamic Media-video
 
->[!VIDEO](https://video.tv.adobe.com/v/28074/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 U kunt eenvoudig Closed Captioning toevoegen aan Dynamic Media-video door de URL van Kopiëren toe te voegen om te wijzen naar een extra Closed Captioning-bestandsdocument, een secundair bestand web.VTT dat de CC-informatie voor elke video bevat.
 

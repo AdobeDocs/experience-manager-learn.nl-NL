@@ -1,10 +1,10 @@
 ---
 title: Tekst en afbeeldingsinhoud toevoegen aan het document met kanalen afdrukken
-seo-title: Tekst en afbeeldingsinhoud toevoegen aan het document met kanalen afdrukken
-description: 'Dit is onderdeel 7 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we afbeeldingen en tekstinhoud toe aan de doelgebieden die zijn gedefinieerd in de indeling (xdp). '
-seo-description: 'Dit is onderdeel 7 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we afbeeldingen en tekstinhoud toe aan de doelgebieden die zijn gedefinieerd in de indeling (xdp). '
+seo-title: Adding text and image content to print channel document
+description: Dit is onderdeel 7 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel voegen we afbeeldingen en tekstinhoud toe aan de doelgebieden die zijn gedefinieerd in de indeling (xdp).
+seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the target areas defined in the layout(xdp).
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,16 +13,16 @@ version: 6.4,6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 kt: 5992
 thumbnail: 22379.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 49080c16-617f-4840-8bb4-7b080fa291c4
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
-
 
 # Tekst en afbeeldingsinhoud toevoegen aan het document met kanalen afdrukken
 
@@ -36,5 +36,4 @@ Volg de onderstaande video om inhoud toe te voegen aan het document met het afdr
 
 In de video worden de stappen doorlopen die nodig zijn om inhoud toe te voegen aan de desbetreffende doelgebieden in het document met het afdrukkanaal.
 
->[!VIDEO](https://video.tv.adobe.com/v/22379t2/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/22379?quality=12&learn=on)

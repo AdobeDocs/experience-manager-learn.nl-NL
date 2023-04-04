@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 In deze video bekijken we Dynamic Media Color Management en hoe deze kan worden gebruikt om voorvertoningsmogelijkheden voor kleurcorrectie te bieden in AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | ProPhoto RGB |
 | PS4Default | CMYK | Photoshop 4 standaard CMYK |
-| PS5Standaard | CMYK | Photoshop 5 standaard CMYK |
+| PS5Default | CMYK | Photoshop 5 standaard CMYK |
 | SheetfedCoated | CMYK | U.S. Sheetfed Coated v2 |
 | SheetfedUncoated | CMYK | U.S. Sheetfed Uncoated v2 |
 | SMPTE | RGB | SMPTE-C |

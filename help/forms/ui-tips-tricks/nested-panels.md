@@ -10,7 +10,7 @@ level: Beginner
 kt: 9335
 exl-id: c60d019e-da26-4f67-8579-ef707e2348bb
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Standaard worden in dit formulier alle deelvensters aan de linkerkant weergegeve
 
 Als u dit standaardgedrag wilt wijzigen, moet u het volgende doen:
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
 Voeg de volgende code toe de klikgebeurtenis van **Volgende** knop met de code-editor
@@ -56,7 +56,7 @@ Met de bovenstaande code kunt u gemakkelijk navigeren tussen de tabbladen en de 
 
 Gebruik de stijleditor om de titel van de onderliggende tabbladen te verbergen.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
 
 >[!NOTE]
 >

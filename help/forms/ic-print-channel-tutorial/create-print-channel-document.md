@@ -1,10 +1,10 @@
 ---
 title: Interactieve communicatie maken voor afdrukkanaal
-seo-title: Interactieve communicatie maken voor afdrukkanaal
+seo-title: Create Interactive Communication For Print Channel
 description: Dit is onderdeel 6 van een zelfstudie met meerdere onderdelen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel wordt Interactive Communication Document for Print channel gemaakt.
-seo-description: Dit is onderdeel 6 van een zelfstudie met meerdere onderdelen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel wordt Interactive Communication Document for Print channel gemaakt.
+seo-description: This is part 6 of multipart tutorial for creating your first interactive communication document for the print channel. In this part, Interactive Communication Document for Print channel is created.
 uuid: 25318a2a-be9d-47d8-806b-d99c8e1c6a74
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,16 +13,16 @@ version: 6.4,6.5
 discoiquuid: 6e3f9c8c-8ec4-4084-bf35-1c97a5b463f1
 kt: 5972
 thumbnail: 37888.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: d4355f72-aefa-4ab3-ba7e-ebd7f7b536f0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '71'
 ht-degree: 0%
 
 ---
-
 
 # Interactieve communicatie maken voor afdrukkanaal {#create-interactive-communication-for-print-channel}
 
@@ -30,4 +30,4 @@ In dit deel wordt Interactive Communication Document for Print channel gemaakt.
 
 Nadat we de gegevensbron en het formuliergegevensmodel hebben gedefinieerd en geconfigureerd, maken we nu onze interactieve communicatie voor het afdrukkanaal
 
->[!VIDEO](https://video.tv.adobe.com/v/37888/?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/37888?quality=12&learn=on)

@@ -1,20 +1,20 @@
 ---
 title: Variabelen van het type formuliergegevensmodel
 description: Variabelen van het type gegevensmodel in een AEM werkstroom gebruiken.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.5
 kt: 6347
 thumbnail: 41238.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ca972ad4-bb23-43ab-8676-f2cccf1765ba
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 1%
+source-wordcount: '61'
+ht-degree: 0%
 
 ---
-
 
 # Variabelen van het type formuliergegevensmodel
 
@@ -22,4 +22,4 @@ Variabelen van het type gegevensmodel worden doorgaans gebruikt om rijen in te v
 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/41238/quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41238?quality=12&learn=on)

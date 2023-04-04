@@ -1,9 +1,9 @@
 ---
 title: Documentfragment maken
-description: 'Dit is onderdeel 5 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel maken we documentfragment waarin de naam en het adres van de ontvanger worden opgeslagen. '
-seo-description: 'Dit is onderdeel 5 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel maken we documentfragment waarin de naam en het adres van de ontvanger worden opgeslagen. '
+description: Dit is onderdeel 5 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel maken we documentfragment waarin de naam en het adres van de ontvanger worden opgeslagen.
+seo-description: This is part 5 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create document fragment to hold the recipient name and address.
 uuid: 7fd8a0f2-a921-4e70-91c9-908dae9aeab2
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,24 +12,24 @@ version: 6.4,6.5
 discoiquuid: 47d3aa97-0bff-48e0-8a65-55e5332f811b
 kt: 5958
 thumbnail: 22350.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 2fe3f950-bc2a-4e91-8d91-00438691727a
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
-
 
 # Documentfragment maken
 
 In dit deel maken we documentfragment waarin de naam en het adres van de ontvanger worden opgeslagen.
 
->[!VIDEO](https://video.tv.adobe.com/v/22350/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
 
-Documentfragmenten bevatten de tekstinhoud van interactieve communicatiedocumenten. Deze tekstinhoud kan statische tekst zijn of vanuit de onderliggende elementwaarden van het gegevensmodel worden ingevoegd. Bijvoorbeeld **Beste _{name}_**, waar Beste is statische tekst en naam de modelelementnaam van de vormgegevens is. Tijdens runtime, zal dit aan **Beste Gloria Rios**of **Beste John Jacobs**afhankelijk van de waarde van het naamelement oplossen.
+Documentfragmenten bevatten de tekstinhoud van interactieve communicatiedocumenten. Deze tekstinhoud kan statische tekst zijn of vanuit de onderliggende elementwaarden van het gegevensmodel worden ingevoegd. Bijvoorbeeld **Beste _{name}_**, waarbij Beste statische tekst en naam de elementnaam van het formuliergegevensmodel is. Tijdens de runtime zal dit **Beste Gloria Rios**of **Beste John Jacobs**afhankelijk van de waarde van het naamelement.
 
 De rijke tekstredacteur is intuïtief genoeg voor een bedrijfsgebruiker aan auteur tekst en neemt vormgegevenselementen op. Met de fragmenteditor van het document kunt u tekst opmaken, lettertypen en stijlen opgeven, speciale tekens invoegen en hyperlinks maken.
 
@@ -38,4 +38,3 @@ De fragmentredacteur van het document heeft ook de capaciteit inline voorwaarden
 >[!NOTE]
 >
 >Zorg ervoor dat de formuliergegevensmodelelementen die u in documentfragmenten invoegt, onderliggende elementen van het basiselement zijn. In dit geval moet u er bijvoorbeeld voor zorgen dat de elementen die u selecteert in het object User het onderliggende element zijn van het object balances
-

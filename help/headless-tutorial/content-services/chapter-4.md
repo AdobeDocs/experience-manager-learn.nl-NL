@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: ece0bf0d-c4af-4962-9c00-f2849c2d8f6f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Om dit te doen, kunnen wij deze vereisten aan AEM Componenten (en in ons geval, 
 1. De **lay-outcontainer** is **vergrendeld** om te voorkomen dat andere componenten worden toegevoegd of dat deze drie componenten worden verwijderd.
 1. Tikken **[!UICONTROL Page Information]>[!UICONTROL View in Admin]** om terug te keren naar de [!DNL WKND Mobile] aanbieding van sjablonen. Selecteer de zojuist gemaakte **[!DNL Events API]** sjabloon en tikken **[!UICONTROL Enable]** in de bovenste actiebalk.
 
->[!VIDEO](https://video.tv.adobe.com/v/28342/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28342?quality=12&learn=on)
 
 >[!NOTE]
 >

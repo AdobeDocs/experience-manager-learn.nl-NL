@@ -7,7 +7,7 @@ level: Intermediate
 thumbnail: 343623.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Een vaak over het hoofd gezien stap in de ontwikkeling van software, zijn eenheidstests een enorm belangrijke activiteit die elke ontwikkelaar zou moeten voltooien. AEM biedt standaard veel kwaliteitscontroles, maar ze kunnen niet alles testen wat u hebt aangepast of gewijzigd.
 
->[!VIDEO](https://video.tv.adobe.com/v/343623)
+>[!VIDEO](https://video.tv.adobe.com/v/343623?quality=12&learn=on)
 
 ## Inhoud die in deze video wordt behandeld
 

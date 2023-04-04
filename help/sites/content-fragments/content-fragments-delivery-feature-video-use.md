@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmente
 
 ## Inhoudsfragmenten op webpagina&#39;s gebruiken {#using-content-fragments-in-web-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
 
 Inhoudsfragmenten kunnen worden gebruikt op AEM Sites-pagina&#39;s of op een vergelijkbare manier op Experience Fragments, met behulp van de AEM WCM Core Components&#39; [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
 
@@ -44,7 +44,7 @@ Componenten van inhoudsfragmenten kunnen zo nodig worden opgemaakt met AEM stijl
 
 ## Inhoudsfragmenten beschikbaar maken als JSON {#exposing-content-fragments-as-json}
 
->[!VIDEO](https://video.tv.adobe.com/v/22448/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22448?quality=12&learn=on)
 
 AEM Content Services vereenvoudigt het maken van AEM op pagina gebaseerde HTTP-eindpunten waarmee inhoud wordt weergegeven in een genormaliseerde JSON-indeling.
 
@@ -55,7 +55,7 @@ In de bovenstaande video wordt het [Component Inhoudsfragment](https://experienc
 
 ## De HTTP-API voor middelen gebruiken
 
->[!VIDEO](https://video.tv.adobe.com/v/26390/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26390?quality=12&learn=on)
 
 Voor het eerst geïntroduceerd in AEM 6.5, wordt verbeterde ondersteuning voor Content Fragments met de middelen HTTP API. Op deze manier kunnen ontwikkelaars op eenvoudige wijze de bewerkingen Maken, Lezen, Bijwerken en Verwijderen (CRUD) uitvoeren op Inhoudsfragmenten.
 

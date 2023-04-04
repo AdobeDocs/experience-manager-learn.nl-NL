@@ -10,10 +10,10 @@ kt: 647, 917
 thumbnail: 22132.jpg
 last-substantial-update: 2022-06-13T00:00:00Z
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -23,11 +23,11 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
 
 ## Metagegevens exporteren {#metadata-export}
 
->[!VIDEO](https://video.tv.adobe.com/v/22132/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
 
 ## Metagegevens importeren {#metadata-import}
 
->[!VIDEO](https://video.tv.adobe.com/v/21374/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21374?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -50,8 +50,8 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
    * Bijvoorbeeld: `dc:title {{String}}`
 
 * Eigenschapnaam is hoofdlettergevoelig
-   * Correct : `dc:title {{String}}`
-   * Incorrect: `Dc:Title {{String}}`
+   * Juist: `dc:title {{String}}`
+   * Onjuist: `Dc:Title {{String}}`
 
 * Type eigenschap is niet hoofdlettergevoelig
 * Alles geldig [Typen JCR-eigenschappen](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden ondersteund

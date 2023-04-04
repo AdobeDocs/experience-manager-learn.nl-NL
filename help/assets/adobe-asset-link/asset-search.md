@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 292c61db-f8d2-424b-8c42-12d1d3b06167
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Met het deelvenster Adobe Asset Link kunnen creatieve gebruikers zoeken naar elementen die in AEM Assets zijn opgeslagen met behulp van trefwoorden of een zoekopdracht uitvoeren onder een specifieke locatie. Naast de basiszoekopties kunt u met de Adobe Asset Link ook via een middel zoeken naar visueel vergelijkbare resultaten in AEM Assets. De visuele zoekopdracht is gebaseerd op machinaal leren met Adobe Sensei en geeft resultaten weer met esthetische kenmerken die betrekking hebben op de doelafbeelding.
 
->[!VIDEO](https://video.tv.adobe.com/v/34260/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)

@@ -10,7 +10,7 @@ kt: 4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: eb31c5fb79e01e1c363fc153355e8d92d1a54021
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 1%
@@ -79,7 +79,7 @@ De versie van Dispatcher Tools verschilt van die van de AEM SDK. Zorg ervoor dat
 
 Alle hieronder uitgegeven bevelen veronderstellen dat de huidige het werk folder de het uitvouwen inhoud van de Hulpmiddelen van de Verzender bevat.
 
->[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30601?quality=12&learn=on)
 
 *Deze video gebruikt macOS ter illustratie. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken.*
 
@@ -188,7 +188,7 @@ De aanbevolen versie van Dispatcher Tools is die welke is meegeleverd bij de AEM
 
 De basislijnset van Apache- en Dispatcher-configuratie wordt regelmatig verbeterd en vrijgegeven met de AEM as a Cloud Service SDK-versie. Het is beste praktijken om de verhogingen van de basislijnconfiguratie in uw AEM project op te nemen en te vermijden [lokale validatie](#validate-configurations) en fouten met de pijpleiding in Cloud Manager. Werk ze bij met de functie `update_maven.sh` script van het `.../dispatcher-sdk-x.x.x/bin` map.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416744/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416744?quality=12&learn=on)
 
 *Deze video gebruikt macOS ter illustratie. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken.*
 

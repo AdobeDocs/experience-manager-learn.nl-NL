@@ -9,7 +9,7 @@ level: Experienced
 kt: 8633
 thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Leer over AEM Dispatcher voor AEM as a Cloud Service, zich op opmerkelijke veranderingen van Dispatcher voor AEM 6, het hulpmiddel van de Omzetting van de Verzender en hoe te om de Dispatcher Tools SDK te gebruiken.
 
->[!VIDEO](https://video.tv.adobe.com/v/336962/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
 ## Dispatcher Converter
 

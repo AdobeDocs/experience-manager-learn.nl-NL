@@ -10,10 +10,10 @@ thumbnail: 333181.jpg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '797'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Snelle opstelling is een versnelde looppas-door illustrerend hoe te om de app WK
 
 Met Snelle installatie gaat u rechtstreeks naar de eindstaat van deze zelfstudie.
 
->[!VIDEO](https://video.tv.adobe.com/v/333181/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333181?quality=12&learn=on)
 
 _Een video die door de snelle opstelling loopt_
 

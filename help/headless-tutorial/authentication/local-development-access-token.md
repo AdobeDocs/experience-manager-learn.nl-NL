@@ -14,7 +14,7 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Ontwikkelaars die integraties bouwen die programmatische toegang tot AEM as a Cloud Service vereisen hebben een eenvoudige, snelle manier nodig om tijdelijke toegangstokens voor AEM te verkrijgen om lokale ontwikkelingsactiviteiten te vergemakkelijken. Om aan deze behoefte te voldoen, staat AEM Console van de Ontwikkelaar ontwikkelaars toe om tijdelijke toegangstokens zelf-te produceren die aan programmatically tot AEM kunnen worden gebruikt toegang te hebben.
 
->[!VIDEO](https://video.tv.adobe.com/v/330477/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330477?quality=12&learn=on)
 
 ## Een token voor lokale ontwikkelingstoegang genereren
 

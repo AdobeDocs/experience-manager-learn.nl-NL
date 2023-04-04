@@ -12,19 +12,19 @@ thumbnail: 341464.jpg
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
+exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-
 # Foutopsporing AEM as a Cloud Service met Repository Browser
 
 Browser van de Bewaarplaats is een krachtig hulpmiddel dat zicht in AEM onderliggende gegevensopslag verstrekt, die voor gemakkelijke zuivering van AEM as a Cloud Service milieu toestaat. Browser van de Bewaarplaats steunt een read-only mening van de middelen en de eigenschappen van AEM op Productie, Stadium, en Ontwikkeling, evenals auteur, Publish, en de diensten van de Voorproef.
 
->[!VIDEO](https://video.tv.adobe.com/v/341464/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
 
 Browser voor opslagplaats is __ALLEEN__ beschikbaar in AEM as a Cloud Service omgevingen (gebruik [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) om fouten op te sporen in de lokale AEM (SDK).
 
@@ -48,4 +48,3 @@ Browser van de Bewaarplaats opent voor de geselecteerde de dienstrij (Auteur, Pu
 ## Toegang voor publiceren en voorvertonen
 
 Standaard is de toegang tot Publiceren of Voorvertoning beperkt, waardoor de beschikbare bronnen in de Repository Browser afnemen. [Als u alle bronnen op de knop Publiceren (of Voorvertoning) wilt weergeven, voegt u gebruikers toe aan de rol Beheerders publiceren (of Voorvertonen).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
-

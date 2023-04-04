@@ -3,23 +3,23 @@ title: OSGi Configurations as ObjectClassDefinition Objects
 description: Leer hoe te om ObjectClassDefinitions als OSGi configuratievertegenwoordiging in een dienst tot stand te brengen en aan te wijzen OSGi
 role: Developer
 level: Beginner
-topic: Ontwikkeling
+topic: Development
 feature: OSGI
 kt: 8269
 thumbnail: 335730.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 72918da0-d5c4-4451-8082-0a0435c28890
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 2%
+source-wordcount: '104'
+ht-degree: 0%
 
 ---
-
 
 # OSGi Configurations as ObjectClassDefinition Objects
 
 Leer hoe te om ObjectClassDefinitions als OSGi configuratievertegenwoordiging in de dienst tot stand te brengen en aan te wijzen OSGi.
 
->[!VIDEO](https://video.tv.adobe.com/v/335730/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335730?quality=12&learn=on)
 
 ## Bronnen
 

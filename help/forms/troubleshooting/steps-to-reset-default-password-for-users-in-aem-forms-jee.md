@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-topic: 'Beheer '
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e0fe53a3-6881-4a46-8040-3d8815809897
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '47'
 ht-degree: 0%
 
 ---
-
 
 # Stappen om standaardwachtwoord voor beheerder in AEM Forms JEE opnieuw in te stellen
 
 *Deze video doorloopt de stappen om het standaardwachtwoord voor de beheerder in AEM Forms JEE opnieuw in te stellen.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335541?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335541?quality=12&learn=on)

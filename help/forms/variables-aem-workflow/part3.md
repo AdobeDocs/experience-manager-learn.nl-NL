@@ -2,13 +2,14 @@
 title: Variabelen in AEM workflow[Deel3]
 description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM workflow
 version: 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 849bfe6c-6b7f-44d0-85bc-5df0287a9bca
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 1%
+source-wordcount: '82'
+ht-degree: 0%
 
 ---
 
@@ -19,4 +20,4 @@ Variabelen van het type document worden gebruikt voor het opslaan van Document v
 
 Deze video zal het gebruik van documenttype variabele benadrukken om geproduceerde DoR op te slaan en dan de documentvariabele in send e-mailstap van een AEM Werkstroom te gebruiken.
 
->[!VIDEO](https://video.tv.adobe.com/v/26452)
+>[!VIDEO](https://video.tv.adobe.com/v/26452?quality=12&learn=on)

@@ -1,41 +1,41 @@
 ---
 title: Functies en code-editor gebruiken
 description: Functies en code-editor gebruiken om de bedrijfsregel van de auteur te schrijven
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4270
 thumbnail: 22282.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7b2a4075-bfdf-49f3-b507-34d86193bf64
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste functies en code-editor gebruiken {#using-functions-and-code-editor}
 
 In dit deel, zullen wij douanefuncties en de coderedacteur aan auteur bedrijfsregels gebruiken.
 
-u hebt [ClientLib met douanefunctie](assets/client-libs-and-logo.zip) eerder in deze zelfstudie geïnstalleerd.
+u hebt de [ClientLib met aangepaste functie](assets/client-libs-and-logo.zip) eerder in deze zelfstudie.
 
 Een clientbibliotheek bestaat meestal uit CSS- en JavaScript-bestanden. Deze clientbibliotheek bevat een javascript-bestand waarin een functie voor het invullen van vervolgkeuzelijstwaarden beschikbaar wordt gemaakt.
 
 
 ## Functie om vervolgkeuzelijst te vullen {#function-to-populate-drop-down-list}
 
->[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
 
 ### Samenvattingstitel van deelvenster instellen {#set-the-summary-title-of-panels}
 
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
 
 #### Deelvenster Valideren {#validate-panels-using-rule-editor}
 
->[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
 
 Hier volgt de code waarmee deelvenstervelden worden gevalideerd.
 

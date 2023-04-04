@@ -1,6 +1,6 @@
 ---
 title: Snelle installatie voor AEM as a Cloud Service AEM zonder koppen
-description: Met de snelle installatie zonder AEM Headless kunt u in de praktijk werken met AEM Headless via inhoud van het WKND-voorbeeldproject voor de site en een React-app die de inhoud gebruikt via AEM Headless GraphQL API's.
+description: Met de snelle installatie AEM Headless kunt u de inhoud in handen krijgen met AEM Headless via inhoud van het WKND-voorbeeldproject voor websites en een React-app die de inhoud gebruikt via AEM GraphQL API's zonder koppen.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -9,7 +9,7 @@ level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: b4c04a9ef7d8cfdaa5675fdfe259ab9d813fb7e0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Snelle installatie voor AEM as a Cloud Service AEM zonder koppen
 
-Met de snelle installatie zonder AEM Headless kunt u de inhoud in de praktijk brengen met AEM Headless via inhoud van het WKND-sitevoorbeeldproject en een voorbeeldtoepassing React (een SPA) die de inhoud gebruikt in AEM Headless GraphQL API&#39;s.
+Met de snelle installatie zonder AEM Headless kunt u de inhoud in de praktijk brengen met AEM Headless via inhoud van het WKND-voorbeeldproject Site en een voorbeeldtoepassing React (een SPA) die de inhoud gebruikt boven AEM Headless GraphQL API&#39;s.
 
 ## Vereisten
 
@@ -36,10 +36,10 @@ U hebt het volgende nodig om deze snelle installatie te kunnen uitvoeren:
 
 ## 1. Creëer een gegevensopslagruimte voor cloudbeheer
 
-Maak eerst een gegevensopslagruimte voor cloudbeheerpakketten die wordt gebruikt om de WKND-site te implementeren. De plaats WKND is een steekproef AEM websiteproject dat inhoud (Inhoudsfragmenten) en een AEM GraphQL die door Snelle React App van de opstelling wordt gebruikt bevat.
+Maak eerst een gegevensopslagruimte voor cloudbeheerpakketten die wordt gebruikt om de WKND-site te implementeren. De WKND-site is een voorbeeld AEM websiteproject dat inhoud (Content Fragments) en een GraphQL-AEM bevat die wordt gebruikt door de React App van de snelle setup.
 
 _Screencast van stappen_
->[!VIDEO](https://video.tv.adobe.com/v/339073/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
 
 1. Navigeren naar [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 1. Cloud Manager selecteren __Programma__ die de AEM as a Cloud Service omgeving bevat die voor deze snelle installatie moet worden gebruikt
@@ -55,7 +55,7 @@ _Screencast van stappen_
 Met de gegevensopslagplaats van de Git van de Manager van de Wolk creeerde, kloon de broncode van het project van de Plaats WKND van GitHub en duw het aan de bewaarplaats van de Git van de Manager van de Wolk. Cloud Manager heeft nu toegang tot het WKND-siteproject en implementeert dit in de AEM as a Cloud Service omgeving.
 
 _Screencast van stappen_
->[!VIDEO](https://video.tv.adobe.com/v/339074/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339074?quality=12&learn=on)
 
 1. Van de bevellijn, kloon de broncode van het project van de steekproefWKND van de Plaats van GitHub
 
@@ -87,10 +87,10 @@ _Screencast van stappen_
 
 Als het WKND-siteproject naar de gegevensopslagruimte van Cloud Manager Git wordt geduwd, kan het niet worden geïmplementeerd om as a Cloud Service te AEM met behulp van Cloud Manager-pijpleidingen.
 
-Houd in mening, verstrekt het project van de Plaats WKND steekproefinhoud die React app over AEM Headless GraphQL APIs gebruikt.
+Het WKND-siteproject biedt voorbeeldinhoud die door de React-app wordt gebruikt via AEM GraphQL-API&#39;s zonder koppen.
 
 _Screencast van stappen_
->[!VIDEO](https://video.tv.adobe.com/v/339075/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339075?quality=12&learn=on)
 
 1. Een __Installatie-pijpleiding voor niet-productie__ naar de nieuwe Git-opslagplaats
    1. Selecteren __Pijpleidingen__ in de bovenste navigatie
@@ -121,7 +121,7 @@ _Screencast van stappen_
 Met AEM as a Cloud Service bootstrapped met de inhoud van het project van de Plaats WKND, download, en begin de steekproefWKND React App die de inhoud van de Plaats van WKND over AEM Headless GraphQL APIs verbruikt.
 
 _Screencast van stappen_
->[!VIDEO](https://video.tv.adobe.com/v/339076/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339076?quality=12&learn=on)
 
 1. Van de bevellijn, kloon de React broncode van App van GitHub.
 
@@ -155,14 +155,14 @@ _Screencast van stappen_
    $ npm start
    ```
 
-1. De React App, die plaatselijk loopt, begint op [http://localhost:3000](http://localhost:3000) en geeft een lijst weer van avonturen die afkomstig zijn van AEM as a Cloud Service met behulp van AEM Headless GraphQL API&#39;s.
+1. De React App, die plaatselijk loopt, begint op [http://localhost:3000](http://localhost:3000) en geeft een lijst weer van avonturen, die afkomstig zijn van AEM as a Cloud Service met behulp van AEM GraphQL API&#39;s zonder koppen.
 
 ## 5. Inhoud bewerken in AEM
 
-Met het voorbeeld WKND React App die met en het verbruiken van inhoud van AEM Headless GraphQL APIs verbindt, auteursinhoud in de dienst van de Auteur AEM en zie hoe de Ervaring van React App in concert bijwerkt.
+Met het voorbeeld van de WKND React-app die verbinding maakt met en inhoud van de AEM Headless GraphQL API&#39;s, ontwikkelt u inhoud in de AEM Author-service en ziet u hoe de Ervaring van React App in overleg wordt bijgewerkt.
 
 _Screencast van stappen_
->[!VIDEO](https://video.tv.adobe.com/v/339077/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
 
 1. Aanmelden bij AEM as a Cloud Service auteur-service
 1. Navigeren naar __Assets > Files > WKND Shared > English > Adventures__

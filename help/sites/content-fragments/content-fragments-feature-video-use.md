@@ -11,7 +11,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -38,13 +38,13 @@ Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Details 
 
 ## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
->[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
 
 AEM Content Fragments Models, de gegevensschema&#39;s van Content Fragments, moeten via AEM worden toegelaten [[!UICONTROL Configuration Browser]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html), waardoor Modellen van inhoudsfragmenten per configuratie kunnen worden gedefinieerd.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
 
 AEM configuraties worden toegepast op AEM Assets-maphiërarchieën zodat de bijbehorende modellen van inhoudsfragmenten kunnen worden gemaakt als inhoudsfragmenten. Inhoudsfragmenten bieden ondersteuning voor een rijke, op formulieren gebaseerde ontwerpervaring, zodat inhoud kan worden gemodelleerd als een verzameling elementen.
 
@@ -55,7 +55,7 @@ Inhoudsfragmenten kunnen meerdere varianten hebben, waarbij elke variant een and
 
 ## Inhoudsfragmenten downloaden {#downloading-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22450/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
 
 AEM Inhoudsfragmenten kunnen van AEM-auteur worden gedownload als een ZIP-bestand met variabelen, elementen en metagegevens.
 
@@ -64,7 +64,7 @@ AEM Inhoudsfragmenten kunnen van AEM-auteur worden gedownload als een ZIP-bestan
 
 ## Redactionele mogelijkheden van inhoudsfragmenten {#editorial-capabilities}
 
->[!VIDEO](https://video.tv.adobe.com/v/25891/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25891?quality=12&learn=on)
 
 >[!NOTE]
 >

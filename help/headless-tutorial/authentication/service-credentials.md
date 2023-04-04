@@ -14,7 +14,7 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 1401710c19ae6ee6a2822ae06286bef4f92cda45
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1937'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Integraties met as a Cloud Service Adobe Experience Manager (AEM) moeten veilig kunnen worden geverifieerd voor AEM service. AEM Developer Console biedt toegang tot servicerecertificaten, die worden gebruikt om externe toepassingen, systemen en services te helpen programmatisch te communiceren met AEM Author Publish-services via HTTP.
 
->[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
 Servicereferenties kunnen er ongeveer zo uitzien [Tokens voor toegang tot lokale ontwikkeling](./local-development-access-token.md) maar zijn op een aantal belangrijke punten verschillend :
 

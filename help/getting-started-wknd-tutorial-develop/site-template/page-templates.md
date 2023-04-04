@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Er zijn drie hoofdgebieden [Paginasjablonen](https://experienceleague.adobe.com/
 
 Maak vervolgens een nieuwe sjabloon in AEM die overeenkomt met de structuur van de modellen. Dit zal in een lokale instantie van AEM voorkomen. Voer de stappen in de onderstaande video uit:
 
->[!VIDEO](https://video.tv.adobe.com/v/332915/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 
 U kunt de volgende miniatuur gebruiken om uw sjabloon te identificeren (of uw eigen sjabloon te uploaden!)
 
@@ -65,7 +65,7 @@ Bij het maken van algemene inhoud, zoals een kop- of voettekst, is het gebruikel
 
 De Sitesjabloon genereerde een kop- en voettekst. Werk vervolgens de Experience Fragments bij zodat deze overeenkomen met de modellen. Voer de stappen in de onderstaande video uit:
 
->[!VIDEO](https://video.tv.adobe.com/v/332916/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
 
 Stappen op hoog niveau voor de onderstaande video:
 
@@ -77,7 +77,7 @@ Stappen op hoog niveau voor de onderstaande video:
 
 Maak vervolgens een nieuwe pagina met de sjabloon Artikelpagina tijdschrift. Maak de inhoud van de pagina zodat deze overeenkomt met de sitemakken. Voer de stappen in de onderstaande video uit:
 
->[!VIDEO](https://video.tv.adobe.com/v/332917/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
 
 Gebruik de [opgegeven tekst](./assets/page-templates/la-skateparks-copy.txt) om de inhoud van het artikel te vullen.
 

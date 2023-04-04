@@ -7,7 +7,7 @@ level: Intermediate
 thumbnail: 343624.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service voltooit vele functionele tests door gebrek met uw toepassing die bovenop wordt gebouwd. Deze test heeft echter mogelijk niet betrekking op alle vereiste tests die u nodig hebt. Aangepaste functionele tests worden afgevuurd.
 
->[!VIDEO](https://video.tv.adobe.com/v/343624)
+>[!VIDEO](https://video.tv.adobe.com/v/343624?quality=12&learn=on)
 
 ## Inhoud die in deze video wordt behandeld
 

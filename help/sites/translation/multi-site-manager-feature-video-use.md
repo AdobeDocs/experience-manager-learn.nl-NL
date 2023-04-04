@@ -15,7 +15,7 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 1%
@@ -28,13 +28,13 @@ ht-degree: 1%
 
 ## Overzicht van live kopiëren {#live-copy-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/17054/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
 *Het overzicht van Actieve kopie is een interface van Touch die wordt gebruikt voor het beheer van live kopieën en hun respectievelijke blauwdrukken. Deze functie, die is geïntroduceerd in AEM 6.3, vervangt het klassieke UI-centrum voor de controle van blauwdrukken.*
 
 ## Blueprint Configuration Manager - Touch UI {#blueprint-config-mgr}
 
->[!VIDEO](https://video.tv.adobe.com/v/17056/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
 *AEM 6.3 introduceert een interface van de Aanraking UI om de configuraties van de Vervaging voor gebruik in de Manager van de MultiPlaats te beheren.*
 

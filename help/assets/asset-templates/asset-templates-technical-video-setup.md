@@ -6,7 +6,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Met Asset Templates kunnen marketers digitale middelen maken, beheren en leveren voor digitale doeleinden en afdrukken. Het maken van marketingbrochures, visitekaartjes, vliegers, advertenties en postkaarten is veel eenvoudiger met Asset Templates wanneer deze zijn geïntegreerd met de InDesign-server. De configuratie van de server van InDesign met AEM wordt behandeld in deze sectie.
 
->[!VIDEO](https://video.tv.adobe.com/v/17069/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17069?quality=12&learn=on)
 
 >[!NOTE]
 >

@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Beginner
 exl-id: 7be8c3d5-b944-4421-97b3-bd5766c1b1b5
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse inhoud op te lossen. Om AEM in te stellen voor Smart Translation Search, moet de Apache OSGi-bundel voor zoekmachines voor zoekmachines worden geïnstalleerd en geconfigureerd, evenals de relevante gratis en open-source Apache Joshua-taalpakketten die de vertaalregels bevatten.
 
->[!VIDEO](https://video.tv.adobe.com/v/21291/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21291?quality=12&learn=on)
 
 >[!NOTE]
 >

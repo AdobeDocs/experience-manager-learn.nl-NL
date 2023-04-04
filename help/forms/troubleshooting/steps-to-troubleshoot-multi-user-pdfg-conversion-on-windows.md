@@ -1,17 +1,18 @@
 ---
 title: Stappen om problemen met PDFG-conversie van meerdere gebruikers op te lossen bij een Windows-installatie
-description: Problemen met meerdere PDF-generatorbestanden voor gebruikers oplossen in Windows Setup.
+description: Los veelvoudige problemen van de Generator van de PDF van de gebruiker op de Opstelling van Vensters problemen op.
 type: Troubleshooting
 role: Developer
 level: Intermediate
 version: 6.5
-feature: 'PDF Generator '
-topic: 'Ontwikkeling   '
+feature: PDF Generator
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 2fddb3a9-570c-4b50-a685-4287a1ddafe1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 2%
+source-wordcount: '46'
+ht-degree: 0%
 
 ---
 
@@ -19,5 +20,4 @@ ht-degree: 2%
 
 *In deze video wordt beschreven hoe problemen met PDFG-conversie door meerdere gebruikers in Windows kunnen worden opgelost.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335550?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/335550?quality=12&learn=on)

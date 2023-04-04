@@ -1,6 +1,6 @@
 ---
-title: Workfront custom forms and metadata mapping with Workfront for AEM enhanced connector
-description: Learn how to configure Workfront and AEM Assets to manage and sync asset metadata using Workfront custom forms, and AEM metadata schemas.
+title: Aangepaste Workfront-formulieren en metagegevenstoewijzing met Workfront voor AEM verbeterde connector
+description: Leer hoe u Workfront en AEM Assets configureert voor het beheren en synchroniseren van metagegevens van elementen met behulp van aangepaste Workfront-formulieren en AEM metagegevensschema's.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -8,20 +8,20 @@ level: Beginner
 kt: 9718
 thumbnail: 340332.jpeg
 hidefromtoc: false
-source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
+exl-id: 40d76e0c-69f3-4003-9f34-f393e6fb8561
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 0%
 
 ---
 
+# Aangepaste Workfront-formulieren en toewijzing van metagegevens
 
-# Workfront custom forms and metadata mapping
+![AEM Deskundigenreeks](./assets/banner.png)
 
-![](./assets/banner.png)
+Leer hoe u Workfront en AEM Assets configureert voor het beheren en synchroniseren van metagegevens van elementen met behulp van aangepaste Workfront-formulieren en AEM metagegevensschema&#39;s.
 
-Learn how to configure Workfront and AEM Assets to manage and sync asset metadata using Workfront custom forms, and AEM metadata schemas.
+>[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/340332/?quality=12&learn=on)
-
-_[](./overview.md)_
+_Deel twee van een [vier deskundigenreeksen voor onderdelen op de Workfront for Experience Manager Enhanced connector](./overview.md)_

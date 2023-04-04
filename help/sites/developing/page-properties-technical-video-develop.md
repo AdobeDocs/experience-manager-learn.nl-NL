@@ -8,7 +8,7 @@ version: Cloud Service
 kt: 243
 thumbnail: 25173.jpg
 exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
-source-git-commit: 94a29a78edff17ec8089f7056dc118fd335ae484
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Het aanpassen van de meta-gegevensgebieden voor de Eigenschappen van de Pagina is een algemeen vereiste in om het even welke implementatie van Plaatsen. In deze video wordt de meest effectieve manier beschreven om dit te bereiken met de functies van de samenvoeging van bronnen voor bloeden.
 
->[!VIDEO](https://video.tv.adobe.com/v/25173?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25173?quality=12&learn=on)
 
 In de video hierboven ziet u hoe u de pagina-eigenschappen voor de [WKND-naslagsite](https://github.com/adobe/aem-guides-wknd).
 

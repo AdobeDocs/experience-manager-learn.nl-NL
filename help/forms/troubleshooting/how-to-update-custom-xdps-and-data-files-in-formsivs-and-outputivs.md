@@ -5,19 +5,19 @@ type: Troubleshooting
 role: Developer
 level: Intermediate
 version: 6.5
-feature: 'Uitvoerservice, Forms-service '
-topic: 'Ontwikkeling '
+feature: Output Service, Forms Service
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: acfa77ec-eb30-4b8a-83d1-5f62a9b17586
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 1%
+source-wordcount: '61'
+ht-degree: 0%
 
 ---
-
 
 # Aangepaste XDP&#39;s en gegevensbestanden bijwerken in FormsIVS en OutputIVS
 
 *Deze video doorloopt de stappen om uw douane XDPs en gegevensdossiers in FormsIVS en OutputIVS voor het testende doel bij te werken.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335513?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335513?quality=12&learn=on)

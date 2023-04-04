@@ -10,7 +10,7 @@ kt: 2551
 thumbnail: 28868.jpeg
 last-substantial-update: 2022-06-24T00:00:00Z
 exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Gebruik AEM Desktop App om de toegang tot middelen te vereenvoudigen die in AEM op Desktop, voor om het even welke toepassing en dossierformaat worden beheerd.
 
->[!VIDEO](https://video.tv.adobe.com/v/28868/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
 
 + Middelen in AEM ontdekken via bladeren en zoeken met een toegewijde bureaubladtoepassing
 + Geoptimaliseerd bandbreedtebeheer maakt het mogelijk veel grote middelen te uploaden en te downloaden

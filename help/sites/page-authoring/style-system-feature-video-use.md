@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
@@ -26,11 +26,11 @@ ht-degree: 1%
 
 Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
 
->[!VIDEO](https://video.tv.adobe.com/v/21750/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21750?quality=12&learn=on)
 
 Deze video laat zien hoe het Stijlsysteem kan worden gebruikt om sterk verschillende visuele weergaven te maken voor één component, met alleen CSS.
 
-De getoonde stijlen worden verstrekt door [WKND toepassing](https://github.com/adobe/aem-guides-wknd). Deze stijlen worden gedefinieerd als CSS en hoeven niet te worden gewijzigd in de backendlogica van de component, het HTML-script of het Sling Model.
+De weergegeven stijlen worden geleverd door de [WKND-toepassing](https://github.com/adobe/aem-guides-wknd). Deze stijlen worden gedefinieerd als CSS en hoeven niet te worden gewijzigd in de backendlogica van de component, het HTML-script of het Sling Model.
 
 ## Aanvullende bronnen {#additional-resources}
 

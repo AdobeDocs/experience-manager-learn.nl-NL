@@ -1,6 +1,6 @@
 ---
-title: Setup ContextHub for Personalization with AEM Sites
-description: ContextHub is a framework for storing, manipulating, and presenting context data. The ContextHub Javascript API enables you to access stores to create, update, and delete data as necessary. As such, ContextHub represents a data layer on your pages. This page describes how to add context hub to your AEM site pages.
+title: ContextHub van de opstelling voor Personalisatie met AEM Sites
+description: ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina's. Deze pagina beschrijft hoe te om contexthub aan uw AEM sitepagina's toe te voegen.
 feature: Context Hub
 topics: personalization
 audience: developer, architect
@@ -11,51 +11,51 @@ topic: Personalization
 role: Developer
 level: Intermediate
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
-source-git-commit: 9e4b01173f5d89075ad64adfb8b982b2297e2c39
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 1%
 
 ---
 
-# Setup ContextHub for Personalization {#set-up-contexthub}
+# ContextHub instellen voor personalisatie {#set-up-contexthub}
 
-ContextHub is a framework for storing, manipulating, and presenting context data. The ContextHub Javascript API enables you to access stores to create, update, and delete data as necessary. As such, ContextHub represents a data layer on your pages. This page describes how to add context hub to your AEM site pages.
+ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina&#39;s. Deze pagina beschrijft hoe te om contexthub aan uw AEM sitepagina&#39;s toe te voegen.
 
->[!VIDEO](https://video.tv.adobe.com/v/23765/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23765?quality=12&learn=on)
 
 >[!NOTE]
 >
->We use the WKND reference site for this video and it is not part of AEM release. [](https://github.com/adobe/aem-guides-wknd/releases)
+>We gebruiken de WKND-referentiesite voor deze video en deze maakt geen deel uit van AEM release. U kunt de [nieuwste versie hier](https://github.com/adobe/aem-guides-wknd/releases).
 
-Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub JavaScript libraries. The ContextHub JavaScript API provides access to the context data that ContextHub manages.
+Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te laten en met de bibliotheken van JavaScript te verbinden ContextHub. De JavaScript-API van ContextHub biedt toegang tot de contextgegevens die door ContextHub worden beheerd.
 
-## Adding ContextHub to a Page Component {#adding-contexthub-to-a-page-component}
+## ContextHub toevoegen aan een component Page {#adding-contexthub-to-a-page-component}
 
-`contexthub``<head>` The HTL code for your page component resembles the following example:
+Om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub, omvat `contexthub` in de `<head>` van uw webpagina. De HTML-code voor uw paginacomponent lijkt op het volgende voorbeeld:
 
 ```java
 <!--/* Include Context Hub */-->
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-## Site Configuration and ContextHub Segments {#site-configuration-and-contexthub-segments}
+## De Configuratie van de plaats en Segmenten ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub includes a segmentation engine that manages segments and determines which segments are resolved for the current context. Several segments are defined. [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments) [[!UICONTROL Configuration Browser]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
+ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt de JavaScript-API gebruiken om [omgezette segmenten bepalen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Laat de segmenten ContextHub voor uw plaats onder toe [[!UICONTROL Configuration Browser]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html).
 
-## Create Segments {#create-segments}
+## Segmenten maken {#create-segments}
 
-Create AEM segments that act as rules for the teasers. That is, they define when content within a teaser appears on a web page. Content can then be specifically targeted to the visitor&#39;s needs and interests, depending on the segment(s) they match.
+Maak AEM segmenten die fungeren als regels voor de theers. Met andere woorden, ze definiëren wanneer inhoud binnen een taser op een webpagina wordt weergegeven. De inhoud kan dan specifiek op de behoeften en belangen van de bezoeker worden gericht, afhankelijk van het segment of de segmenten die zij aanpassen.
 
-## Assigning Cloud Configuration, Segment path and ContextHub path to your site {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
+## Cloud Configuration, Segmentpad en ContextHub-pad toewijzen aan uw site {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 
-Assigning the Cloud configuration path, segmentation path and ContextHub path to your site root node so you can create a personalized experience for your audience. Using the ContextHub, you can manipulate the context data and test your resolved segments.
+Het toewijzen van de de configuratiepad van de Wolk, segmentatiepad en weg ContextHub aan uw knoop van de plaatswortel zodat kunt u een gepersonaliseerde ervaring voor uw publiek tot stand brengen. Gebruikend ContextHub, kunt u de contextgegevens manipuleren en uw opgeloste segmenten testen.
 
 ![CRXDE Lite](assets/crx-de-properties.png)
 
-You can read more about ContextHub and segmentation below:
+U kunt meer over ContextHub en segmentatie hieronder lezen:
 
 * [ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html)
-* [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
+* [Contexthub toevoegen aan pagina en Toegang tot winkels](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
 * [Inzicht in segmentering](https://helpx.adobe.com/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
-* [](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/segmentation.html)
+* [Het vormen Segmentatie met ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/segmentation.html)

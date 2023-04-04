@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Android wordt gebruikt voor zelfstudie vanwege de mogelijkheid om een Android-em
 
 ## Mobiele-toepassingsdemonstratie
 
->[!VIDEO](https://video.tv.adobe.com/v/28345/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28345?quality=12&learn=on)
 
 ### De mobiele app configureren voor gebruik buiten de landinstelling
 
 Als AEM-publicatie niet wordt uitgevoerd **http://localhost:4503** de host en poort kunnen worden bijgewerkt in de mobiele app [!DNL Settings] om naar de eigenschap AEM Publish host/port te wijzen.
 
->[!VIDEO](https://video.tv.adobe.com/v/28344/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28344?quality=12&learn=on)
 
 ## De mobiele toepassing lokaal uitvoeren
 
@@ -75,7 +75,7 @@ Als AEM-publicatie niet wordt uitgevoerd **http://localhost:4503** de host en po
    * Als u in het virtuele apparaat wilt schuiven, klikt u en houdt u de muisknop ingedrukt en sleept u.
    * Als u de inhoud van AEM wilt vernieuwen, trekt u van boven naar beneden totdat het pictogram Vernieuwen wordt weergegeven en geeft u de inhoud vrij.
 
->[!VIDEO](https://video.tv.adobe.com/v/28341/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28341?quality=12&learn=on)
 
 ## De mobiele toepassingscode
 

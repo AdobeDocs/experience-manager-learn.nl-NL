@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Dit is een zelfstudie over ontwikkeling die laat zien hoe u zich kunt ontwikkelen voor [!DNL AEM Projects].  In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om nieuwe projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
 
->[!VIDEO](https://video.tv.adobe.com/v/16904/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
 *Deze video geeft een korte demo van de voltooide workflow die in de onderstaande zelfstudie is gemaakt.*
 

@@ -1,6 +1,6 @@
 ---
 title: GraphQL-eindpunten
-description: Leer hoe te om vragen tegen, uit te voeren en te publiceren en veilige eindpunten GraphQL te beveiligen.
+description: Leer hoe u GraphQL-eindpunten kunt inschakelen, uitvoeren en publiceren en beveiligen.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -9,7 +9,7 @@ level: Beginner
 kt: 7875
 thumbnail: 333339.jpg
 exl-id: 190623cc-8959-46b3-95de-e7d01bf5acdb
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%
@@ -18,14 +18,14 @@ ht-degree: 0%
 
 # GraphQL-eindpunten
 
-Leer hoe te om vragen tegen, uit te voeren en te publiceren en veilige eindpunten GraphQL te beveiligen.
+Leer hoe u GraphQL-eindpunten kunt inschakelen, uitvoeren en publiceren en beveiligen.
 
 In deze video zult u:
 
-+ Leer hoe te om Eindpunten GraphQL toe te laten
-+ Leer hoe te om vragen GraphQL tegen eindpunten uit te voeren
-+ Begrijp hoe te om eindpunten te publiceren en te beveiligen GraphQL
++ Leer hoe u GraphQL Endpoints inschakelt
++ Leer hoe u GraphQL-query&#39;s uitvoert op eindpunten
++ Begrijp hoe te om GraphQL eindpunten te publiceren en te beveiligen
 
->[!VIDEO](https://video.tv.adobe.com/v/333339/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)
 
-_Download de  [Postman-](./assets/aem-headless-video-series.postman_collection.json) collectie die in de gehele AEM headless Video Series wordt gebruikt._
+_Download de [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) gebruikt in de AEM headless Video Series._

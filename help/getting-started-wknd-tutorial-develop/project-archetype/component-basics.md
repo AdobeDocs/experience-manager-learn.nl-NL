@@ -12,7 +12,7 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Dit hoofdstuk bouwt op een generisch project voort dat door wordt geproduceerd [
 >
 > Als u met succes het vorige hoofdstuk voltooide, kunt u het project opnieuw gebruiken en de stappen overslaan voor het uitchecken van het starterproject.
 
->[!VIDEO](https://video.tv.adobe.com/v/330985/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330985?quality=12&learn=on)
 
 Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
 
@@ -87,7 +87,7 @@ Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
 
 Componenten kunnen worden beschouwd als kleine modulaire bouwstenen van een webpagina. Om componenten opnieuw te gebruiken, moeten de componenten configureerbaar zijn. Dit gebeurt via het dialoogvenster van de auteur. Laten we nu de auteur van een eenvoudige component bekijken en controleren hoe waarden uit het dialoogvenster in AEM blijven.
 
->[!VIDEO](https://video.tv.adobe.com/v/330986/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330986?quality=12&learn=on)
 
 Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
@@ -105,7 +105,7 @@ HTML Sjabloontaal of **[HTL](https://experienceleague.adobe.com/docs/experience-
 
 Laten we nu de `HelloWorld` HTML- manuscript om een extra groet vóór het tekstbericht te tonen.
 
->[!VIDEO](https://video.tv.adobe.com/v/330987/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330987?quality=12&learn=on)
 
 Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
@@ -175,7 +175,7 @@ Sling-modellen zijn annotaties die worden aangedreven door Java™ &quot;POJO&#3
 
 Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de verkoop om wat bedrijfslogica op de waarden toe te passen die in JCR worden opgeslagen alvorens hen aan de pagina uit te voeren.
 
->[!VIDEO](https://video.tv.adobe.com/v/330988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330988?quality=12&learn=on)
 
 1. Het bestand openen `HelloWorldModel.java`, dat het verkoopmodel is dat wordt gebruikt met de `HelloWorld` component.
 
@@ -286,7 +286,7 @@ De [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core
 
 Werk vervolgens de CSS-stijlen bij voor de `HelloWorld` component.
 
->[!VIDEO](https://video.tv.adobe.com/v/340750/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340750?quality=12&learn=on)
 
 Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 

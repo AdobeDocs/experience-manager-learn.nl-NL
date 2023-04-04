@@ -1,6 +1,6 @@
 ---
 title: Gereedheid en analyse van best practices
-description: Leer hoe de Analysator van Beste praktijken kan helpen uw toepassing om als Cloud Service worden bewogen aan Experience Manager
+description: Leer hoe de Analyse van de Beste praktijken kan helpen uw toepassing klaar maken om aan Experience Manager as a Cloud Service te worden verplaatst
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -8,16 +8,16 @@ role: Architect, Developer
 level: Intermediate
 kt: 8659
 thumbnail: 336690.jpeg
-source-git-commit: 4c9d836881ad7cccd31c55fa5eddc24dff1200cd
+exl-id: b8905917-c385-4a79-99df-9a0fad98dc87
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 0%
 
 ---
 
-
 # Gereedheid en analyse van best practices
 
-Leer hoe de Analysator van Beste praktijken u kan helpen zich voor te bereiden om zich van AEM op prem of de Beheerde Diensten van Adobe aan Experience Manager als Cloud Service te bewegen.
+Leer hoe de Analysator van Beste praktijken u kan helpen zich voor te bereiden om zich van AEM op prem of de Beheerde Diensten van Adobe aan as a Cloud Service Experience Manager te bewegen.
 
->[!VIDEO](https://video.tv.adobe.com/v/336690/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336690?quality=12&learn=on)

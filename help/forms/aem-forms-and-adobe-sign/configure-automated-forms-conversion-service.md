@@ -1,15 +1,16 @@
 ---
 title: automatede form conversion Service
 description: automatede form conversion Service. In dit artikel wordt beschreven hoe een AEM beheerder de service Automatede form conversion kan configureren om de conversie van zijn PDF forms naar adaptieve formulieren te automatiseren. Deze hulp is voor IT en AEM beheerders bij uw organisatie.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 thumbnail: 39493.jpg
 kt: 6114
-topic: Ontwikkeling
+topic: Development
 role: Admin
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0715a2cc-c042-4ddc-85a1-7720f420351b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -36,5 +37,4 @@ U vereist het volgende om de Dienst van de Automatede form conversion te gebruik
 
 * In de video worden de stappen uitgelegd die nodig zijn om uw lokale AEM Forms-instantie te verbinden met de Automatede form conversion-service op Adobe Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/39493/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)

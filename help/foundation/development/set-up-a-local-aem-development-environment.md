@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 2b188cbe0ba968b553a20629b89edf5ed377f300
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 0%
@@ -162,7 +162,7 @@ De **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** is een krachtige IDE voo
 1. Download en installeer de [!DNL IntelliJ IDEA]: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download)
 1. Installeren [!DNL Repo] (opdrachtregelprogramma): [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
 
->[!VIDEO](https://video.tv.adobe.com/v/26089/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
 * 00:00 - Maven-project importeren
 * 05:47 - Bouw en stel broncode met Maven op

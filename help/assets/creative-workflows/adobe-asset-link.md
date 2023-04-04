@@ -9,7 +9,7 @@ level: Beginner
 thumbnail: 28988.jpg
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Adobe Asset Link-extensie voor Adobe Creative Cloud for enterprise breidt de mog
 
 De volgende video illustreert een algemene workflow die wordt gebruikt door ontwerpers die in Adobe Creative Cloud-toepassingen werken en die rechtstreeks met AEM met behulp van Adobe Asset Link integreren.
 
->[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335927?quality=12&learn=on)
 
 ## Mogelijkheden voor Adobe-itemkoppeling
 
@@ -61,7 +61,7 @@ De volgende video illustreert een algemene workflow die wordt gebruikt door ontw
 
 Adobe Asset Link biedt ondersteuning voor InDesign direct koppelen tussen Adobe Asset Link en AEM. Met ondersteuning voor rechtstreekse koppelingen naar InDesign kunt u plaatsen (__Gekoppelde plaatsen__ of __Kopie plaatsen__) of sleep digitale elementen van AEM naar InDesign via het deelvenster Adobe Asset Link. Introduceert ook de uitvoering *For Placement Only+ (FPO).
 
->[!VIDEO](https://video.tv.adobe.com/v/28988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
 
 >[!NOTE]
 >

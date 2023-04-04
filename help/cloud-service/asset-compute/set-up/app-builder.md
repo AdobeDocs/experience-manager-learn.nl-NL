@@ -1,6 +1,6 @@
 ---
 title: App Builder instellen voor uitbreidbaarheid van Asset compute
-description: De projecten van de asset compute zijn speciaal bepaalde projecten App Builder, en als dusdanig, vereisen toegang tot App Builder in de Console van de Ontwikkelaar van de Adobe om hen te opstelling en op te stellen.
+description: De projecten van de asset compute zijn speciaal bepaalde projecten App Builder, en als dusdanig, vereisen toegang tot App Builder in de Console van Adobe Developer om hen te opstelling en op te stellen.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 # App Builder instellen
 
-De projecten van de asset compute zijn speciaal bepaalde projecten App Builder, en als dusdanig, vereisen toegang tot App Builder in de Console van de Ontwikkelaar van de Adobe om hen te opstelling en op te stellen.
+De projecten van de asset compute zijn speciaal bepaalde projecten App Builder, en als dusdanig, vereisen toegang tot App Builder in de Console van Adobe Developer om hen te opstelling en op te stellen.
 
 ## App Builder maken en instellen in Adobe Developer Console{#set-up}
 
->[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40183?quality=12&learn=on)
 
 _Doorklikken bij instellen van App Builder (geen audio)_
 
@@ -63,7 +63,7 @@ Wanneer u de [Integratie van asset compute-API](#set-up) een nieuw sleutelpaar w
 
 De geloofsbrieven van dit Adobe I/O-project worden gebruikt door de lokale [asset compute-ontwikkelingsinstrument](../develop/development-tool.md) om met Adobe I/O Runtime te kunnen communiceren en in het project van de Asset compute moet worden opgenomen. Verken uzelf met de JWT-referenties (Service Account).
 
-![Accountgegevens van Adobe Developer Service](./assets/app-builder/service-account.png)
+![Referenties Adobe Developer-serviceaccount](./assets/app-builder/service-account.png)
 
 1. Van het project van App Builder van het Project van Adobe I/O, zorg ervoor `Development` werkruimte is geselecteerd
 1. Tikken __Serviceaccount (JWT)__ krachtens __Credentials__

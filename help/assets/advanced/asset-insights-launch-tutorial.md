@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-04T00:00:00Z
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In deze videoreeks van 5 delen, lopen wij door de opstelling en de configuratie 
 
 Overzicht van Asset Insights. Installeer Core Components, Sample Image Component en andere inhoudspakketten om uw omgeving gereed te maken.
 
->[!VIDEO](https://video.tv.adobe.com/v/25943/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25943?quality=12&learn=on)
 
 ### Architectuurdiagram {#architecture-diagram}
 
@@ -42,7 +42,7 @@ De video gebruikt Core Components v2.2.2 die niet langer de meest recente versie
 
 Verbeteringen aan de componenten van de Kern en het gebruiken van volmachtscomponent (de Component van het Beeld van de Steekproef) voor de Inzichten van Activa. Het sjabloonbeleid voor de inhoudspagina bewerken om de voorbeeldafbeeldingscomponent in te schakelen voor de verwijzingssite.
 
->[!VIDEO](https://video.tv.adobe.com/v/25944/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25944?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ De component Core Image gebruikt ***data-asset-id*** attribuut binnen het bovenl
 
 De reeks van het rapport met gegevensinzameling in real time wordt gecreeerd voor activa het volgen. AEM Assets Insights-configuratie wordt ingesteld met Adobe Analytics-referenties.
 
->[!VIDEO](https://video.tv.adobe.com/v/25945/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25945?quality=12&learn=on)
 
 >[!NOTE]
 Voor de Adobe Analytics Report Suite moet het verzamelen van gegevens in real-time en het AEM van bedrijfsmiddelen zijn ingeschakeld. Het toelaten AEM de variabelen van de reserveanalyse van Activa het Rapporteren van Activa voor het volgen van activainzichten.
@@ -80,7 +80,7 @@ Voor de configuratie van AEM Assets Insights hebt u de volgende referenties nodi
 
 Adobe Analytics-extensie toevoegen, regels voor het laden van pagina&#39;s maken en AEM integreren met Starten met Adobe IMS-technische account.
 
->[!VIDEO](https://video.tv.adobe.com/v/25946/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
 >[!NOTE]
 Zorg ervoor dat u al uw wijzigingen van de auteur naar de publicatie-instantie dupliceert.
@@ -193,4 +193,4 @@ Het is ook mogelijk om van DTM op zuiveringswijze met de volgende Uitbreiding va
 
 Rapport AEM Asset Reporting Job Scheduler en Assets Insights-rapporten configureren
 
->[!VIDEO](https://video.tv.adobe.com/v/25947/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25947?quality=12&learn=on)

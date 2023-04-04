@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Elk adaptief formulier is gebaseerd op een adaptief formuliersjabloon. De sjablo
 Het sjabloon dat hier is gemaakt, vormt de basis voor ons adaptieve formulier.
 In de volgende video ziet u het basisproces voor het maken van een adaptieve formuliersjabloon
 
->[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
 
 Zie [documentatie over adaptieve formuliersjablonen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) voor meer informatie
 
