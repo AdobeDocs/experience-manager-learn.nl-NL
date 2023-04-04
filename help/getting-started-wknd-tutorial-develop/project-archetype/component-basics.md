@@ -12,9 +12,9 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -255,11 +255,17 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
    >
    > Voor AEM 6.4/6.5 `mvn clean install -PautoInstallBundle -Pclassic`
 
-1. Het bestand bijwerken `helloworld.html` om `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` om de nieuw gecreëerde methodes van te gebruiken `HelloWorld` model:
+1. Het bestand bijwerken `helloworld.html` om `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` om de nieuw gecreëerde methodes van te gebruiken `HelloWorld` model.
+
+   De `HelloWorld` model wordt voor deze componentinstantie geïnstantieerd via de HTL-instructie: `data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel"`, de instantie opslaan in de variabele `model`.
+
+   De `HelloWorld` modelexemplaar is nu beschikbaar in het HTML via `model` variabele die de `HelloWord`. Deze methodeaanroepen kunnen bijvoorbeeld een verkorte syntaxis gebruiken: `${model.getTitle()}` kan worden ingekort tot `${model.title}`.
+
+   Op dezelfde manier worden alle HTML-scripts geïnjecteerd met [algemene objecten](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) die kunnen worden benaderd met dezelfde syntaxis als de objecten van het verkoopmodel.
 
    ```html
-   <div class="cmp-helloworld" data-cmp-is="helloworld"
-   data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
+   <div class="cmp-helloworld" data-cmp-is="helloworld" 
+       data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
        <h1 class="cmp-helloworld__title">${model.title}</h1>
        <div class="cmp-helloworld__item" data-sly-test="${properties.text}">
            <p class="cmp-helloworld__item-label">Text property:</p>
@@ -268,10 +274,6 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
        <div class="cmp-helloworld__item" data-sly-test="${model.text}">
            <p class="cmp-helloworld__item-label">Sling Model getText() property:</p>
            <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.text}</pre>
-       </div>
-       <div class="cmp-helloworld__item"  data-sly-test="${model.message}">
-           <p class="cmp-helloworld__item-label">Model message:</p>
-           <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
        </div>
    </div>
    ```

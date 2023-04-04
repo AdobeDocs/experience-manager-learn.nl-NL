@@ -4,10 +4,10 @@ description: Bekijk onze video's en zelfstudies voor hulp met Adobe Experience M
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 1%
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +25,6 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 
 * **[Cloud Manager voor AEM begrijpen (video)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *Cloud Manager voor AEM maakt eenvoudig beheer, controle en zelfbediening van AEM omgevingen mogelijk.*
-
-* **[Openbare en persoonlijke sleutels instellen voor gebruik met Adobe I/O (zelfstudie)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Leer hoe sleutels en sleutelarchieven het gebruiken worden geproduceerd [!DNL openssl] die met AEM en Adobe I/O werken.*
 
 * **[Cloud Manager CI/CD Pipeline (video) gebruiken](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Leer hoe u de CI/CD-pijplijn van Cloud Manager kunt gebruiken voor een veilige en consistente implementatie.*

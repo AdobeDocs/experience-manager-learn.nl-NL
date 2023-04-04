@@ -10,9 +10,9 @@ kt: 5882
 thumbnail: KT-5882.jpg
 last-substantial-update: 2022-10-06T00:00:00Z
 exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,11 @@ Leer hoe Adobe IMS-gebruikers, -groepen en -productprofielen worden gebruikt in 
 ## Adobe IMS-gebruikers
 
 Gebruikers die toegang tot de AEM-auteurservice nodig hebben, worden beheerd als [Adobe IMS-gebruikers](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [Adobe](https://adminconsole.adobe.com). Leer wat Adobe IMS-gebruikers zijn en hoe ze in de Admin Console worden benaderd en beheerd.
+
+>[!NOTE]
+>
+>Wanneer een IMS-gebruiker uit AdminConsole wordt verwijderd, wordt deze niet automatisch verwijderd uit AEM, maar wanneer AEM sessie (token) is verlopen, kan deze zich NIET aanmelden bij AEM.
+
 
 [Meer informatie over Adobe IMS-gebruikers](./adobe-ims-users.md)
 
