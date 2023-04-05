@@ -8,9 +8,9 @@ role: Developer
 level: Beginner, Intermediate
 thumbnail: 34338.jpeg
 exl-id: beac60c6-11ae-4d0c-a055-cd3d05aeb126
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 45e7c58efd1d89537752fe7f890c0e80f7be7d67
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,13 @@ Met de lokale QuickStart van de AEM SDK kunt u externe Java-foutopsporing vanaf 
 Als u een extern foutopsporingsprogramma wilt aansluiten op AEM, moet de lokale QuickStart van de AEM-SDK zijn gestart met specifieke parameters (`-agentlib:...`) waarmee de IDE er verbinding mee kan maken.
 
 ```
-$ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar aem-author-p4502.jar   
+$ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar aem-author-p4502.jar   
 ```
 
++ AEM SDK ondersteunt alleen Java 11
 + `address` geeft de poort aan die AEM luistert naar externe foutopsporingsverbindingen en kan worden gewijzigd in elke beschikbare poort op de lokale ontwikkelcomputer.
 + De laatste parameter (bijv. `aem-author-p4502.jar`) is de AEM SKD Quickstart Jar. Dit kan ofwel de AEM Auteur-service zijn (`aem-author-p4502.jar`) of de AEM-publicatieservice (`aem-publish-p4503.jar`).
+
 
 ## IDE-installatie-instructies
 
