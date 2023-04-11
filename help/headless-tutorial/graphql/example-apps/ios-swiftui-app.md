@@ -1,6 +1,6 @@
 ---
 title: iOS App - voorbeeld zonder kop AEM
-description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze iOS-toepassing laat zien hoe u inhoud kunt opvragen met AEM GraphQL-API's met behulp van doorlopende query's.
+description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze iOS-toepassing laat zien hoe u inhoud kunt opvragen met behulp van AEM GraphQL API's met behulp van doorlopende query's.
 version: Cloud Service
 mini-toc-levels: 2
 kt: 10587
@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # iOS-app
 
-Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze iOS-toepassing laat zien hoe u inhoud kunt opvragen met AEM GraphQL-API&#39;s met behulp van doorlopende query&#39;s.
+Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze iOS-toepassing laat zien hoe u inhoud kunt opvragen met behulp van AEM GraphQL API&#39;s met behulp van doorlopende query&#39;s.
 
 ![iOS SwiftUI-app met AEM Headless](./assets/ios-swiftui-app/ios-app.png)
 
@@ -29,7 +29,7 @@ De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-gr
 
 De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
-+ [Xcode 9.3+](https://developer.apple.com/xcode/) (vereist macOS)
++ [Xcode](https://developer.apple.com/xcode/) (vereist macOS)
 + [Git](https://git-scm.com/)
 
 ## AEM
@@ -64,7 +64,7 @@ De iOS-toepassing is ontworpen om verbinding te maken met een __AEM-publicatie__
 
    __Basisverificatie__
 
-   De `AEM_USERNAME` en `AEM_PASSWORD` authenticeer een lokale AEM gebruiker met toegang tot inhoud WKND GraphQL.
+   De `AEM_USERNAME` en `AEM_PASSWORD` Een lokale AEM verifiëren met toegang tot WKND GraphQL-inhoud.
 
    ```plain
    AEM_AUTH_TYPE = basic
@@ -74,7 +74,7 @@ De iOS-toepassing is ontworpen om verbinding te maken met een __AEM-publicatie__
 
    __Tokenverificatie__
 
-   De `AEM_TOKEN` is een [toegangstoken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) die aan een AEM gebruiker met toegang tot inhoud WKND GraphQL voor authentiek verklaart.
+   De `AEM_TOKEN` is een [toegangstoken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) die wordt geverifieerd aan een AEM gebruiker met toegang tot WKND GraphQL-inhoud.
 
    ```plain
    AEM_AUTH_TYPE = token
@@ -86,11 +86,11 @@ De iOS-toepassing is ontworpen om verbinding te maken met een __AEM-publicatie__
 
 ## De code
 
-Hieronder volgt een overzicht van hoe de iOS-toepassing is gebouwd, hoe deze verbinding maakt met AEM Headless om inhoud op te halen met behulp van GraphQL persisted query&#39;s en hoe die gegevens worden gepresenteerd. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
+Hieronder volgt een overzicht van hoe de iOS-toepassing is gebouwd, hoe deze verbinding maakt met AEM Headless om inhoud op te halen met GraphQL persisted query&#39;s en hoe deze gegevens worden gepresenteerd. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
 
 ### Blijvende query&#39;s
 
-Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing van iOS AEM GraphQL voortgeduurde vragen om avontuurgegevens te vragen. De toepassing gebruikt twee voortgeduurde vragen:
+Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing van iOS AEM GraphQL voortgezette vragen om avontuurgegevens te vragen. De toepassing gebruikt twee voortgeduurde vragen:
 
 + `wknd/adventures-all` persisted query, die alle avonturen in AEM met een verkorte set eigenschappen retourneert. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
 
@@ -173,9 +173,9 @@ query($slug: String!) {
 }
 ```
 
-### Vraag GrafiekQL blijft uitvoeren
+### GraphQL-query uitgevoerd
 
-AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, kunnen de gemeenschappelijke bibliotheken GraphQL die de POST van HTTP zoals Apollo gebruiken, niet worden gebruikt. In plaats daarvan, creeer een douaneklasse die de voortgezette vraagHTTP- verzoeken aan AEM uitvoert.
+AEM persisted query&#39;s worden uitgevoerd via HTTP GET en daarom kunnen veelgebruikte GraphQL-bibliotheken die HTTP-POST gebruiken, zoals Apollo, niet worden gebruikt. In plaats daarvan, creeer een douaneklasse die de voortgezette vraagHTTP- verzoeken aan AEM uitvoert.
 
 `AEM/Aem.swift` instantieert het `Aem` klasse gebruikt voor alle interacties met AEM Headless. Het patroon is:
 
@@ -183,7 +183,7 @@ AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, kunnen de
 1. De publieke functie noemt een particuliere func `makeRequest(..)` die een asynchrone HTTP-GET-aanvraag naar AEM Headless aanroept en de JSON-gegevens retourneert.
 1. Elke openbare functie decodeert vervolgens de JSON-gegevens en voert de vereiste controles of transformaties uit voordat de Adventure-gegevens naar de weergave worden geretourneerd.
 
-   + AEM GraphQL JSON-gegevens worden gedecodeerd met de instructies/klassen die zijn gedefinieerd in `AEM/Models.swift`Deze kaart naar de JSON-objecten retourneerde mijn AEM Headless.
+   + AEM JSON-gegevens van GraphQL worden gedecodeerd met de instructies/klassen die zijn gedefinieerd in `AEM/Models.swift`Deze kaart naar de JSON-objecten retourneerde mijn AEM Headless.
 
 ```swift
     /// # getAdventures(..)
@@ -240,7 +240,7 @@ AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, kunnen de
     ...
 ```
 
-### GrafiekQL-responsgegevensmodellen
+### GraphQL-responsgegevensmodellen
 
 iOS geeft de voorkeur aan het toewijzen van JSON-objecten aan getypte gegevensmodellen.
 
@@ -268,7 +268,7 @@ SwiftUI wordt gebruikt voor de diverse meningen in de toepassing. Apple biedt ee
 
 ### Externe afbeeldingen
 
-Afbeeldingen waarnaar wordt verwezen door adventure Content Fragments, worden AEM. Deze iOS-toepassing gebruikt het pad `_path` in de reactie GraphQL, en prefixeert `AEM_SCHEME` en `AEM_HOST` om een volledig gekwalificeerde URL te maken.
+Afbeeldingen waarnaar wordt verwezen door adventure Content Fragments, worden AEM. Deze iOS-toepassing gebruikt het pad `_path` in het GraphQL-antwoord en stelt het `AEM_SCHEME` en `AEM_HOST` om een volledig gekwalificeerde URL te maken.
 
 Als verbinding wordt gemaakt met beveiligde bronnen op AEM waarvoor toestemming vereist is, moeten ook referenties worden toegevoegd aan afbeeldingsaanvragen.
 
@@ -324,5 +324,5 @@ Een gelijkaardige benadering kan met SwiftUI-inheems worden gebruikt [AsyncImage
 
 ## Aanvullende bronnen
 
-+ [Aan de slag met AEM headless - GraphQL-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [Aan de slag met AEM headless - zelfstudie voor GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
 + [Zelfstudie voor SwiftUI-lijsten en navigatie](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)

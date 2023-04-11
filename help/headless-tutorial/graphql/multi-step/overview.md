@@ -11,16 +11,16 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met AEM zonder kop - GraphQL
+# Aan de slag met AEM headless - GraphQL
 
-Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met behulp van AEM GraphQL API&#39;s en die door een externe toepassing wordt verbruikt, in een headless CMS-scenario.
+Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt ontwikkelen en beschikbaar maken met behulp van AEM GraphQL API&#39;s en die door een externe toepassing wordt verbruikt.
 
 In deze zelfstudie wordt onderzocht hoe AEM GraphQL API&#39;s en headless mogelijkheden kunnen worden gebruikt om de ervaring die in een externe app wordt opgedaan, kracht bij te zetten.
 
@@ -30,9 +30,8 @@ Deze zelfstudie behandelt de volgende onderwerpen:
 * Modellen van inhoudsfragmenten maken om gegevens te modelleren
 * Maak inhoudsfragmenten op basis van de eerder gemaakte modellen.
 * Onderzoek hoe de Fragments van de Inhoud in AEM kunnen worden betwist gebruikend het geïntegreerde ontwikkelingshulpmiddel GraphiQL.
-* Om de vragen GraphQL op te slaan of voort te zetten aan AEM
-* Verbruik voortgezette vragen GraphQL van een steekproef React app
-
+* De GraphQL-query&#39;s opslaan of behouden om te AEM
+* Blijvende GraphQL-query&#39;s van een voorbeeld van React-app gebruiken
 
 ## Vereisten {#prerequisites}
 
@@ -40,8 +39,7 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
 
 * Basis HTML- en JavaScript-vaardigheden
 * De volgende gereedschappen moeten lokaal zijn geïnstalleerd:
-   * [Node.js v14+](https://nodejs.org/en/)
-   * [npm 6+](https://www.npmjs.com/)
+   * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
    * Een IDE (bijvoorbeeld [Microsoft® Visual Studio-code](https://code.visualstudio.com/))
 
@@ -57,4 +55,4 @@ Zelfstudie starten met [Modellen voor inhoudsfragmenten definiëren](content-fra
 
 De broncode en inhoudspakketten zijn beschikbaar op de [AEM - WKND GraphQL GitHub Project](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Als u een probleem hebt met de zelfstudie of de code, kunt u een [GitHub-probleem](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Als u een probleem hebt met de zelfstudie of de code, laat u een [GitHub-probleem](https://github.com/adobe/aem-guides-wknd-graphql/issues).
