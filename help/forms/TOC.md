@@ -1,21 +1,21 @@
 ---
 feature-set: Experience Manager Forms, Experience Manager
 role: Developer
-user-guide-title: AEM Forms-video's en -Tutorials
-user-guide-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
-breadcrumb-title: AEM Forms Tutorials
+user-guide-title: Video's en tutorials voor AEM Forms
+user-guide-description: Verzameling van AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
+breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: d3531e76d3341e0964e5ed878fc72037024a11fd
+source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 1%
+source-wordcount: '1806'
+ht-degree: 2%
 
 ---
 
 
-# AEM Forms-video&#39;s en -Tutorials {#forms}
+# Video&#39;s en tutorials voor AEM Forms {#forms}
 
 + [Overzicht](overview.md)
 + [Aanbevolen procedures](adaptive-forms/best-practices-adaptive-forms.md)
@@ -230,7 +230,12 @@ ht-degree: 1%
    + [Workflowcomponent maken](welcome-kit/create-workflow-component.md)
    + [De oplossing testen](welcome-kit/testing-the-solution.md)
 
-
++ Reageren op app met Forms en Acrobat Sign {#react-ic-sign}
+   + [Inleiding](react-ic-sign/introduction.md)
+   + [IC-document genereren](react-ic-sign/create-ic-document.md)
+   + [Acrobat Sign API Wrapper](react-ic-sign/wrapper-sign-api.md)
+   + [Ondertekeningswidget genereren](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [De voorbeeldelementen implementeren](react-ic-sign/deploy-assets-on-your-server.md)
 + Document Services {#document-services}
    + [Typen PDF forms](document-services/pdf-forms-and-documents.md)
    + [PDF insluiten in adaptieve vorm](document-services/embed-pdf-inline.md)
