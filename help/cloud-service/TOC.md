@@ -5,9 +5,9 @@ breadcrumb-title: Tutorials voor AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '932'
 ht-degree: 11%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 11%
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [Browser voor opslagplaats](./debugging/cloud-service/repository-browser.md)
       + Risico&#39;s{#risks}
-         + [Traveringswaarschuwingen](./debugging/cloud-service/risks/traversals.md)
+         + [Traversale waarschuwingen](./debugging/cloud-service/risks/traversals.md)
 + Inhoud leveren{#content-delivery}
    + [URL-omleidingen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
 + Toegang tot AEM{#accessing}
@@ -259,6 +259,9 @@ ht-degree: 11%
       + [Formuliergegevensmodel maken](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Indiening van testformulieren](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Klikgebeurtenis testen](./forms/integrate-with-salesforce/create-lead-click-event.md)
+   + Formulierverzendingen opslaan in één station en één gedeeld aanspreekpunt{#one-drive}
+      + [Formuliergegevens opslaan in één station](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
+      + [Formuliergegevens opslaan in SharePoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
 + Uitbreidbaarheid asset compute{#asset-compute}
    + [Overzicht](./asset-compute/overview.md)
    + Instellen{#set-up}

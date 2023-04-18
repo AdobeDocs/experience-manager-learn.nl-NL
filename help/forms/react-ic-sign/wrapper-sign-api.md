@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -26,7 +26,8 @@ Er is een aangepaste AEM ontwikkeld om het webformulier te maken en terug te stu
 ## Acrobat Sign OSGi-configuratie maken
 
 Acrobat Sign REST API vereist de integratietoets en e-mail die aan de integratietoets zijn gekoppeld. Deze twee waarden worden verstrekt als OSGi configuratieeigenschappen zoals hieronder getoond
-![sign-configuration](assets/sign-configuration.jpg)
+
+![sign-configuration](assets/sign-configuration.png)
 
 ```java
 package com.acrobatsign.core.configuration;
