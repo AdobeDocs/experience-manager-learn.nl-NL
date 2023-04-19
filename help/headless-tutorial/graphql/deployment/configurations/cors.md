@@ -8,9 +8,9 @@ role: Developer, Architect
 level: Intermediate
 kt: 10830
 thumbnail: KT-10830.jpg
-source-git-commit: 6f1000db880c3126a01fa0b74abdb39ffc38a227
+source-git-commit: cc78e59fe70686e909928e407899fcf629a651b9
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 0%
 # Delen van bronnen van oorsprong (CORS)
 
 Met CORS (Cross-Origin Resource Sharing) van Adobe Experience Manager as a Cloud Service kunnen niet-AEM webeigenschappen client-side aanroepen vanuit een browser uitvoeren naar AEM GraphQL API&#39;s.
+
+Het volgende artikel beschrijft hoe te vormen _van één oorsprong_ toegang tot een specifieke reeks eindpunten voor AEM zonder kop via CORS. Single-origin betekent dat alleen één niet-AEM domein toegang heeft tot AEM, bijvoorbeeld https://app.example.com die verbinding maakt met https://www.example.com. Toegang van meerdere oorsprong werkt mogelijk niet met deze aanpak vanwege cacheproblemen.
 
 >[!TIP]
 >
@@ -63,7 +65,6 @@ Deze voorbeeldconfiguratie steunt het gebruik van AEM GraphQL persisted query&#3
     "https://spa.external.com/"
   ],
   "alloworiginregexp":[
-    "http://localhost:.*"
   ],
   "allowedpaths": [
     "/graphql/execute.json.*",
