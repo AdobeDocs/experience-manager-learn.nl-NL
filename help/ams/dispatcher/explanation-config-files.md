@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+source-git-commit: cc085af90b9b8ea0e650546c251fbf14cc222989
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -36,7 +36,7 @@ De Server van het Web van Apache geeft eigenlijk niet wat de dossieruitbreiding 
 | FILENAME`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` bestandsopslag `mod_rewrite` regels die expliciet door een `vhost` file |
 | FILENAME`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | `*_ipwhitelist.rules` bestanden worden opgenomen vanuit de `*.vhost` bestanden. Het bevat IP regex of staat regels toe ontkennen om IP flits toe te staan. Als u probeert om het bekijken van een virtuele gastheer te beperken die op IP adressen wordt gebaseerd, zult u één van deze dossiers produceren en het van uw omvatten `*.vhost` file |
 
-## Bestanden in conf.modules.d/
+## Bestanden in conf.dispatcher.d/
 
 | Bestand | Bestandsbestemming | Beschrijving |
 | --- | --- | --- |
