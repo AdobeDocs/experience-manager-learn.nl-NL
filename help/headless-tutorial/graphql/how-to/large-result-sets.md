@@ -10,9 +10,9 @@ doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
 jira: KT-13102
 thumbnail: 3418381.jpeg
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 9eb706e49f12a3ebd5222e733f540db4cf2c8748
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,11 @@ Paginering en sortering kunnen worden gebruikt tegen elk Content Fragment Model.
 
 Wanneer het werken met grote datasets, zowel verschuiving en grens als curseur-gebaseerde paginering kan worden gebruikt om een specifieke ondergroep van de gegevens terug te winnen. Er zijn echter enkele verschillen tussen de twee technieken die de ene in bepaalde situaties geschikter kunnen maken dan de andere.
 
-### Lijstquery
+### Verschuiven/beperken
 
 Lijstquery&#39;s gebruiken `limit` en `offset` een eenvoudige benadering bieden die het beginpunt aangeeft (`offset`) en het aantal records dat moet worden opgehaald (`limit`). Op deze manier kan een subset van resultaten worden geselecteerd vanuit een willekeurige locatie binnen de volledige resultaatset, zoals naar een specifieke pagina met resultaten gaan. Hoewel het gemakkelijk is uit te voeren, kan het langzaam en inefficiënt zijn wanneer het behandelen van groot resultaat, aangezien het terugwinnen van vele verslagen aftasten door alle vorige verslagen vereist. Deze aanpak kan ook prestatieproblemen opleveren wanneer de verschuivingswaarde hoog is, omdat hiervoor veel resultaten moeten worden opgehaald en verwijderd.
+
+#### GraphQL-query
 
 ```graphql
 # Retrieves a list of Adventures sorted price descending, and title ascending if there is the prices are the same.
@@ -51,7 +53,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
   }
 ```
 
-#### Query-variabelen
+##### Query-variabelen
 
 ```json
 {
@@ -60,7 +62,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 }
 ```
 
-### Reactie weergeven
+#### GraphQL-reactie
 
 De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben dezelfde prijs (`4500` dus [lijstquery](#list-queries) verwijst naar avonturen met dezelfde prijs en wordt vervolgens in oplopende volgorde gesorteerd op titel.)
 
@@ -99,10 +101,11 @@ De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste av
 
 De op curseur-gebaseerde paginering, beschikbaar in Gepagineerde vragen, impliceert het gebruiken van een curseur (een verwijzing naar een specifiek verslag) om de volgende reeks resultaten terug te winnen. Deze benadering is efficiënter omdat het de behoefte vermijdt om door alle vorige verslagen af te tasten om de vereiste ondergroep van gegevens terug te winnen. De gepagineerde vragen zijn groot voor het herhalen door grote resultaatreeksen van het begin, aan één of ander punt in het midden, of aan het eind. Lijstquery&#39;s gebruiken `limit` en `offset` een eenvoudige benadering bieden die het beginpunt aangeeft (`offset`) en het aantal records dat moet worden opgehaald (`limit`). Op deze manier kan een subset van resultaten worden geselecteerd vanuit een willekeurige locatie binnen de volledige resultaatset, zoals naar een specifieke pagina met resultaten gaan. Hoewel het gemakkelijk is uit te voeren, kan het langzaam en inefficiënt zijn wanneer het behandelen van groot resultaat, aangezien het terugwinnen van vele verslagen aftasten door alle vorige verslagen vereist. Deze aanpak kan ook prestatieproblemen opleveren wanneer de verschuivingswaarde hoog is, omdat hiervoor veel resultaten moeten worden opgehaald en verwijderd.
 
+#### GraphQL-query
 
 ```graphql
 # Retrieves the most expensive Adventures (sorted by title ascending if there is the prices are the same)
-query adventuresByPaginated($first:Int!, $after:String) {
+query adventuresByPaginated($first:Int, $after:String) {
  adventurePaginated(first: $first, after: $after, sort: "price DESC, title ASC") {
        edges {
           cursor
@@ -120,7 +123,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
   }
 ```
 
-#### Query-variabelen
+##### Query-variabelen
 
 ```json
 {
@@ -128,7 +131,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
 }
 ```
 
-### Gepagineerde reactie
+#### GraphQL-reactie
 
 De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben dezelfde prijs (`4500` dus [lijstquery](#list-queries) verwijst naar avonturen met dezelfde prijs en wordt vervolgens in oplopende volgorde gesorteerd op titel.)
 
@@ -171,11 +174,11 @@ De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste av
 }
 ```
 
-### Volgende set gepagineerde resultaten
+#### Volgende set gepagineerde resultaten
 
 De volgende set resultaten kan worden opgehaald met de opdracht `after` en de `endCursor` waarde van de vorige query. Als er geen resultaten meer te halen zijn, `hasNextPage` is `false`.
 
-#### Query-variabelen
+##### Query-variabelen
 
 ```json
 {
