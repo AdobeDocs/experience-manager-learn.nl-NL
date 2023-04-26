@@ -10,9 +10,9 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
+source-git-commit: 09f9530cab0ec651b7c37c8c078631c79e8cfe4a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ De `_assetTransform` bepaalt hoe `_dynamicUrl` is ontworpen om de weergegeven af
 
 | GraphQL, parameter | URL-parameter | Beschrijving | Vereist | Variabele GraphQL-waarden | URL-parameterwaarden | Voorbeeld-URL, parameter |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | `format` | De indeling van het afbeeldingselement. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N.v.t. | N.v.t. |
+| `format` | N.v.t. | De indeling van het afbeeldingselement. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N.v.t. | N.v.t. |
 | `seoName` | N.v.t. | Naam van bestandssegment in URL. Indien niet opgegeven, wordt de naam van het afbeeldingselement gebruikt. | ✘ | Alphanumeric `-`, of `_` | N.v.t. | N.v.t. |
 | `crop` | `crop` | Het uitsnijdkader dat uit de afbeelding is genomen, moet binnen de grootte van de afbeelding vallen | ✘ | Positieve gehele getallen die een snijgebied binnen de grenzen van de afmetingen van de oorspronkelijke afbeelding definiëren | Door komma&#39;s afgebakende reeks numerieke coördinaten `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
 | `size` | `size` | Grootte van de uitvoerafbeelding (zowel hoogte als breedte) in pixels. | ✘ | Positieve gehele getallen | Door komma&#39;s gescheiden positieve gehele getallen in de volgorde `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
