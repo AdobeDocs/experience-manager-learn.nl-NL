@@ -10,7 +10,7 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 09f9530cab0ec651b7c37c8c078631c79e8cfe4a
+source-git-commit: 97a311e043d3903070cd249d993036b5d88a21dd
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 0%
@@ -141,7 +141,7 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 
 Onthoud, `_dynamicUrl` bevat niet het AEM domein, dus u moet de gewenste oorsprong opgeven voor de afbeeldings-URL die moet worden opgelost.
 
-### Responsieve URL&#39;s
+## Responsieve URL&#39;s
 
 In het bovenstaande voorbeeld ziet u hoe u een afbeelding van één formaat gebruikt, maar in webervaringen zijn responsieve afbeeldingssets vaak vereist. Responsieve afbeeldingen kunnen worden geïmplementeerd met [img-srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) of [afbeeldingselementen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). Het volgende codefragment laat zien hoe u het `_dynamicUrl` als een basis, en voeg verschillende breedteparameters toe, aan macht verschillende ontvankelijke meningen. Niet alleen kan de `width` de vraagparameter wordt gebruikt, maar andere vraagparameters kunnen door de cliënt worden toegevoegd om het beeldactiva verder te optimaliseren die op zijn behoeften worden gebaseerd.
 
@@ -155,7 +155,7 @@ let alt = data.adventureByPath.item.title;
 {/*-- Example img srcset --*/}
 document.body.innerHTML=`<img>
     alt="${alt}"
-    src="${${dynamicUrl}&width=1000}"
+    src="${dynamicUrl}&width=1000}"
     srcset="`
       ${dynamicUrl}&width=1000 1000w,
       ${dynamicUrl}&width=1600 1600w,
@@ -171,26 +171,26 @@ document.body.innerHTML=`<picture>
     </picture>`;
 ```
 
-### Voorbeeld Reageren
+## Voorbeeld Reageren
 
 Laten we een eenvoudige React-toepassing maken waarmee voor het web geoptimaliseerde afbeeldingen worden weergegeven op basis van de volgende [responsieve afbeeldingspatronen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). Er zijn twee hoofdpatronen voor responsieve afbeeldingen:
 
 + [Img-element met script](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) voor betere prestaties
 + [Figuurelement](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) voor ontwerpcontrole
 
-#### Img-element met script
+### Img-element met script
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418556/?quality=12&learn=on)
 
 [Img-elementen met script](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) worden gebruikt met de `sizes` gebruiken om verschillende afbeeldingselementen voor verschillende schermgrootten te bieden. Img-sets zijn handig wanneer u verschillende afbeeldingselementen voor verschillende schermgrootten aanbiedt.
 
-#### Figuurelement
+### Figuurelement
 
 [Afbeeldingselementen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) worden gebruikt met meerdere `source` elementen om verschillende afbeeldingselementen voor verschillende schermgrootten te bieden. Afbeeldingselementen zijn handig voor verschillende afbeeldingsuitvoeringen voor verschillende schermgrootten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418555/?quality=12&learn=on)
 
-#### Voorbeeldcode
+### Voorbeeldcode
 
 Deze eenvoudige React-app gebruikt de [AEM headless SDK](./aem-headless-sdk.md) om AEM Headless APIs voor een inhoud van het Avontuur te vragen, en het Web-geoptimaliseerde beeld te tonen gebruikend [img-element met srcset](#img-element-with-srcset) en [afbeeldingselement](#picture-element). De `srcset` en `sources` een aangepaste `setParams` functie om de web-optimized parameter van de leveringsvraag aan toe te voegen `_dynamicUrl` van de afbeelding, wijzigt u de geleverde afbeeldingsuitvoering op basis van de behoeften van de webclient.
 
