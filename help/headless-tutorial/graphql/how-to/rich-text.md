@@ -8,9 +8,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 117b67bd185ce5af9c83bd0c343010fab6cd0982
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -367,7 +367,7 @@ Gebruik de `json` retourneringstype en de `_references` object bij het samenstel
 
 ```graphql
 query ($path: String!) {
-  articleByPath(_path: $path)
+  articleByPath(_path: $path, _assetTransform: { format: JPG, preferWebp: true })
   {
     item {
       _path
@@ -377,17 +377,14 @@ query ($path: String!) {
     }
     _references {
       ...on ImageRef {
-        _path
-        _publishUrl
-        width
+        _dynamicUrl
         __typename
       }
       ...on ArticleModel {
         _path
         author
         __typename
-      }
-      
+      }  
     }
   }
 }
@@ -461,9 +458,7 @@ In de bovenstaande vraag, `main` wordt geretourneerd als JSON. De `_references` 
       },
       "_references": [
         {
-          "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920,
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--dd42d814-88ec-4c4d-b5ef-e3dc4bc0cb42/sport-climbing.jpg?preferwebp=true",
           "__typename": "ImageRef"
         },
         {
@@ -477,7 +472,7 @@ In de bovenstaande vraag, `main` wordt geretourneerd als JSON. De `_references` 
 }
 ```
 
-Het JSON-antwoord bevat de plaats waar de verwijzing in de RTF-tekst is ingevoegd `"nodeType": "reference"`. De `_references` bevat vervolgens elke verwijzing met de gevraagde aanvullende eigenschappen. De `ImageRef` retourneert de `width` van de afbeelding waarnaar in het artikel wordt verwezen.
+Het JSON-antwoord bevat de plaats waar de verwijzing in de RTF-tekst is ingevoegd `"nodeType": "reference"`. De `_references` bevat dan elke referentie.
 
 ## Inline-verwijzingen renderen in RTF-tekst
 
@@ -493,12 +488,12 @@ const nodeMap = {
             let reference;
             
             // asset reference
-            if(node.data.path) {
+            if (node.data.path) {
                 // find reference based on path
                 reference = references.find( ref => ref._path === node.data.path);
             }
             // Fragment Reference
-            if(node.data.href) {
+            if (node.data.href) {
                 // find in-line reference within _references array based on href and _path properties
                 reference = references.find( ref => ref._path === node.data.href);
             }
@@ -518,7 +513,7 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._publishUrl} alt={'in-line reference'} /> 
+        return <img src={node._dynamicUrl} alt={'in-line reference'} /> 
     },
     'ArticleModel': (node) => {
         // when __typename === ArticleModel
@@ -538,9 +533,14 @@ Een volledig voorbeeld van het schrijven van een renderer van douaneverwijzingen
 
 >[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
+>[!NOTE]
+>
+> De bovenstaande video gebruikt `_publishUrl` om de afbeeldingsverwijzing te renderen. In plaats daarvan geeft u de voorkeur `_dynamicUrl` zoals uiteengezet in de [webgeoptimaliseerde afbeeldingen](./images.md);
+
+
 De voorgaande video toont een voorbeeld van begin tot eind:
 
 1. Het tekstveld met meerdere regels van een inhoudsfragmentmodel bijwerken om fragmentverwijzingen toe te staan
-1. Met de Inhoudsfragmenteditor kunt u een afbeelding en een verwijzing naar een ander fragment opnemen in een tekstveld met meerdere regels.
-1. Een GraphQL-query maken die de tekstreactie met meerdere regels bevat als JSON en alle andere `_references` gebruikt.
-1. Het schrijven van React SPA dat de in-line verwijzingen van de rijke tekstreactie teruggeeft.
+2. Met de Inhoudsfragmenteditor kunt u een afbeelding en een verwijzing naar een ander fragment opnemen in een tekstveld met meerdere regels.
+3. Een GraphQL-query maken die de tekstreactie met meerdere regels bevat als JSON en alle andere `_references` gebruikt.
+4. Het schrijven van React SPA dat de in-line verwijzingen van de rijke tekstreactie teruggeeft.
