@@ -10,7 +10,7 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 71b2dc0e8ebec1157694ae55118f2426558566e3
+source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -58,10 +58,15 @@ Veldtypen worden gecontroleerd in het dialoogvenster [Inhoudsfragmentmodel](http
 Retourneer het veld in de GraphQL-query als de `ImageRef` type, en verzoek om `_dynamicUrl` veld. U kunt bijvoorbeeld een avontuur opvragen in het dialoogvenster [WKND-siteproject](https://github.com/adobe/aem-guides-wknd) en de afbeeldings-URL opnemen voor de verwijzingen naar afbeeldingselementen in de `primaryImage` veld, kan worden uitgevoerd met een nieuwe, voortgezette query `wknd-shared/adventure-image-by-path` gedefinieerd als:
 
 ```graphql {highlight="11"}
-query($path: String!, $assetTransform: AssetTransform!) {
+query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int, $imageQuality: Int) {
   adventureByPath(
     _path: $path
-    _assetTransform: $assetTransform
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+    }
   ) {
     item {
       _path
@@ -81,7 +86,8 @@ query($path: String!, $assetTransform: AssetTransform!) {
 ```json
 { 
   "path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
-  "assetTransform": { "format": "JPG", "quality": 80, "preferWebp": true}
+  "imageFormat": "JPG",
+  "imageWidth": 1000,
 }
 ```
 
@@ -89,17 +95,17 @@ De `$path` in de `_path` filter vereist het volledige pad naar het inhoudsfragme
 
 De `_assetTransform` bepaalt hoe `_dynamicUrl` is ontworpen om de weergegeven afbeelding te optimaliseren. URL&#39;s met webgeoptimaliseerde afbeeldingen kunnen ook op de client worden aangepast door de queryparameters van de URL te wijzigen.
 
-| GraphQL, parameter | URL-parameter | Beschrijving | Vereist | Variabele GraphQL-waarden | URL-parameterwaarden | Voorbeeld-GraphQL-variabele | Voorbeeld-URL, parameter |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:---|:--|
-| `format` | `format` | De indeling van het afbeeldingselement. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N.v.t. | `{ format: JPG }` | N.v.t. |
-| `seoName` | N.v.t. | Naam van bestandssegment in URL. Indien niet opgegeven, wordt de naam van het afbeeldingselement gebruikt. | ✘ | Alphanumeric `-`, of `_` | N.v.t. | `{ seoName: "bali-surf-camp" }` | N.v.t. |
-| `crop` | `crop` | Het uitsnijdkader dat uit de afbeelding is genomen, moet binnen de grootte van de afbeelding vallen | ✘ | Positieve gehele getallen die een snijgebied binnen de grenzen van de afmetingen van de oorspronkelijke afbeelding definiëren | Door komma&#39;s afgebakende reeks numerieke coördinaten `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `{ crop: { xOrigin: 10, yOrigin: 20, width: 300, height: 400} }` | `?crop=10,20,300,400` |
-| `size` | `size` | Grootte van de uitvoerafbeelding (zowel hoogte als breedte) in pixels. | ✘ | Positieve gehele getallen | Door komma&#39;s gescheiden positieve gehele getallen in de volgorde `<WIDTH>,<HEIGHT>` | `{ size: { width: 1200, height: 800 } }` | `?size=1200,800` |
-| `rotation` | `rotate` | Rotatie van de afbeelding in graden. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `{ rotation: R90 }` | `?rotate=90` |
-| `flip` | `flip` | Draai de afbeelding om. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `{ flip: horizontal }` | `?flip=h` |
-| `quality` | `quality` | Afbeeldingskwaliteit in procenten van oorspronkelijke kwaliteit. | ✘ | 1-100 | 1-100 | `{ quality: 80 }` | `?quality=80` |
-| `width` | `width` | Breedte van de uitvoerafbeelding in pixels. Wanneer `size` wordt verstrekt `width` wordt genegeerd. | ✘ | Positief geheel getal | Positief geheel getal | `{ width: 1600 }` | `?width=1600` |
-| `preferWebP` | `preferwebp` | Indien `true` en AEM een WebP dienen als browser het, ongeacht `format`. | ✘ | `true`, `false` | `true`, `false` | `{ preferWebp: true }` | `?preferwebp=true` |
+| GraphQL, parameter | URL-parameter | Beschrijving | Vereist | Variabele GraphQL-waarden | URL-parameterwaarden | Voorbeeld-URL, parameter |
+|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
+| `format` | `format` | De indeling van het afbeeldingselement. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N.v.t. | N.v.t. |
+| `seoName` | N.v.t. | Naam van bestandssegment in URL. Indien niet opgegeven, wordt de naam van het afbeeldingselement gebruikt. | ✘ | Alphanumeric `-`, of `_` | N.v.t. | N.v.t. |
+| `crop` | `crop` | Het uitsnijdkader dat uit de afbeelding is genomen, moet binnen de grootte van de afbeelding vallen | ✘ | Positieve gehele getallen die een snijgebied binnen de grenzen van de afmetingen van de oorspronkelijke afbeelding definiëren | Door komma&#39;s afgebakende reeks numerieke coördinaten `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
+| `size` | `size` | Grootte van de uitvoerafbeelding (zowel hoogte als breedte) in pixels. | ✘ | Positieve gehele getallen | Door komma&#39;s gescheiden positieve gehele getallen in de volgorde `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
+| `rotation` | `rotate` | Rotatie van de afbeelding in graden. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
+| `flip` | `flip` | Draai de afbeelding om. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
+| `quality` | `quality` | Afbeeldingskwaliteit in procenten van oorspronkelijke kwaliteit. | ✘ | 1-100 | 1-100 | `?quality=80` |
+| `width` | `width` | Breedte van de uitvoerafbeelding in pixels. Wanneer `size` wordt verstrekt `width` wordt genegeerd. | ✘ | Positief geheel getal | Positief geheel getal | `?width=1600` |
+| `preferWebP` | `preferwebp` | Indien `true` en AEM een WebP dienen als browser het, ongeacht `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
 
 ## GraphQL-reactie
 
@@ -113,7 +119,7 @@ Het resulterende JSON-antwoord bevat de aangevraagde velden met de voor het web 
         "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
         "title": "Bali Surf Camp",
         "primaryImage": {
-          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--a38886f7-4537-4791-aa20-3f6ef0ac3fcd/adobestock_175749320.jpg?preferwebp=true&quality=80"
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--a38886f7-4537-4791-aa20-3f6ef0ac3fcd/adobestock_175749320.jpg?preferwebp=true&width=1000&quality=80"
         }
       }
     }
@@ -219,7 +225,7 @@ function App() {
   // The 2nd parameter define the base GraphQL query parameters used to request the web-optimized image
   let { data, error } = useAdventureByPath(
         "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp", 
-        { assetTransform: { format: "JPG", preferWebp: true } }
+        { imageFormat: "JPG" }
       );
 
   // Wait for AEM Headless APIs to provide data
