@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
-source-git-commit: 593ef5767a5f2321c689e391f9c9019de7c94672
+source-git-commit: 3f129fb4fc53e55d118802d3a0e566a9a9bcb9a2
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1153'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,84 @@ Leer hoe u een tageigenschap (voorheen Launch genoemd) in Experience Platform ma
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418896?quality=12&learn=on)
 
+
++++ Gegevenselement en code voor regelgebeurtenissen
+
++ De `Page Name` Code gegevenselement.
+
+   ```javascript
+   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
+       // return value of 'dc:title' from the data layer Page object, which is propogated via 'cmp:show` event
+       return event.component['dc:title'];
+   }
+   ```
+
++ De `Site Section` Code gegevenselement.
+
+   ```javascript
+   if(event && event.component && event.component.hasOwnProperty('repo:path')) {
+   let pagePath = event.component['repo:path'];
+   
+   let siteSection = '';
+   
+   //Check of html String in URL.
+   if (pagePath.indexOf('.html') > -1) { 
+    siteSection = pagePath.substring(0, pagePath.lastIndexOf('.html'));
+   
+    //replace slash with colon
+    siteSection = siteSection.replaceAll('/', ':');
+   
+    //remove `:content`
+    siteSection = siteSection.replaceAll(':content:','');
+   }
+   
+       return siteSection 
+   }
+   ```
+
++ De `Host Name` Code gegevenselement.
+
+   ```javascript
+   if(window && window.location && window.location.hostname) {
+       return window.location.hostname;
+   }
+   ```
+
++ De `all pages - on load` Code regelgebeurtenis
+
+   ```javascript
+   var pageShownEventHandler = function(evt) {
+   // defensive coding to avoid a null pointer exception
+   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
+       //trigger Launch Rule and pass event
+       console.debug("cmp:show event: " + evt.eventInfo.path);
+       var event = {
+           //include the path of the component that triggered the event
+           path: evt.eventInfo.path,
+           //get the state of the component that triggered the event
+           component: window.adobeDataLayer.getState(evt.eventInfo.path)
+       };
+   
+       //Trigger the Launch Rule, passing in the new 'event' object
+       // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+       // i.e 'event.component['someKey']'
+       trigger(event);
+       }
+   }
+   
+   //set the namespace to avoid a potential race condition
+   window.adobeDataLayer = window.adobeDataLayer || [];
+   
+   //push the event listener for cmp:show into the data layer
+   window.adobeDataLayer.push(function (dl) {
+       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
+       dl.addEventListener("cmp:show", pageShownEventHandler);
+   });
+   ```
+
++++
+
+
 De [Overzicht van codes](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) biedt diepgaande kennis van belangrijke concepten zoals Data Elements, Rules en Extensions.
 
 Voor extra informatie bij het integreren van AEM Componenten van de Kern met de Laag van de Gegevens van de Cliënt van Adobe raadpleegt u [De Adobe Client Data Layer gebruiken met AEM Core Components Guide](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
@@ -121,3 +199,12 @@ Na de opstelling van SDK van het Web met AEM, in het bijzonder op de plaats WKND
 Geweldig werk! U hebt de installatie van AEM met Adobe Experience Platform (Experience Platform) Web SDK voltooid om gegevens van een website te verzamelen en in te voeren. Met deze basis kunt u nu verdere mogelijkheden verkennen om producten zoals Analytics, Target, Customer Journey Analytics (CJA) en vele andere te verbeteren en te integreren om rijke, gepersonaliseerde ervaringen voor uw klanten te creëren. Blijf leren en verkennen om het volledige potentieel van Adobe Experience Cloud te benutten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
+
+## Aanvullende bronnen
+
++ [Het gebruiken van de Laag van de Gegevens van de Cliënt van Adobe met de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
++ [Tags en AEM voor gegevensverzameling van Experience Platforms integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
++ [Overzicht van Adobe Experience Platform Web SDK en Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
++ [Tutorials voor gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [Overzicht van Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
+
