@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
-source-git-commit: 1597fd87e11a27292b2b8897cf58c1670488b632
+exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
+source-git-commit: 63afa03de70d6f8f695d552018344d53a5cec6f5
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
-
 
 # Experience Platform Web SDK integreren
 
@@ -24,7 +24,7 @@ Leer hoe u AEM as a Cloud Service kunt integreren met Experience Platform [Web S
 
 U leert ook hoe u verzamelt en verzendt [WKND - voorbeeld Adobe Experience Manager-project](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) voorvertoningsgegevens in het dialoogvenster [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
 
-Nadat u deze installatie hebt voltooid, kunt u verder gaan met het implementeren van Experience Platform en verwante toepassingen, zoals [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html) en [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). Een betere betrokkenheid van klanten stimuleren door het web en de gegevens van klanten te standaardiseren.
+Na voltooiing van deze opstelling, hebt u een stevige stichting uitgevoerd. Ook bent u bereid om de implementatie van het Experience Platform te bevorderen gebruikend toepassingen zoals [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), en [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). De geavanceerde implementatie draagt bij aan een betere betrokkenheid van klanten door het web en de gegevens van klanten te standaardiseren.
 
 ## Vereisten
 
@@ -52,6 +52,8 @@ Als u niet de noodzakelijke toestemmingen hebt, gebruikt uw systeembeheerder [Ad
 
 Het schema van de Gegevens van de Ervaring Model (XDM) helpt u om de gegevens van de klantenervaring te standaardiseren. Om de **WKND-voorvertoning** gegevens, creeer een Schema XDM en gebruik de Adobe verstrekte gebiedsgroepen `AEP Web SDK ExperienceEvent` voor webgegevensverzameling.
 
+Er zijn generieke en industrieën specifiek bijvoorbeeld Detailhandel, Financiële Diensten, Gezondheidszorg, en meer, reeks modellen van verwijzingsgegevens, zie [Overzicht bedrijfsgegevensmodellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/industries/overview.html) voor meer informatie .
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418894?quality=12&learn=on)
 
@@ -76,8 +78,14 @@ Leer hoe u een tageigenschap (voorheen Launch genoemd) in Experience Platform ma
 + Gegevenselementen: De gegevenselementen van het type van douanecode die pagina-naam, plaats-sectie, en gastheer-naam gebruikend de Laag van de Gegevens van de Cliënt van de Adobe van de plaats WKND halen. Ook, het het type van Objecten XDM gegevenselement dat met onlangs gecreeerd schema van WKND XDM bouwt vroeger in overeenstemming is [XDM-schema maken](#create-xdm-schema---experience-platform) stap.
 + Regel: Gegevens verzenden naar Platform Edge Network wanneer een WKND-webpagina wordt bezocht met behulp van de Adobe Client Data Layer geactiveerd `cmp:show` gebeurtenis.
 
+Tijdens het maken en publiceren van de tagbibliotheek met de **Publishing Flow** kunt u de **Alle gewijzigde bronnen toevoegen** knop. Om alle middelen zoals het Element van Gegevens, Regel, en de Uitbreidingen van de Markering in plaats van het identificeren van en het plukken van een individuele middel te selecteren. Tijdens de ontwikkelingsfase kunt u de bibliotheek ook alleen publiceren naar de _Ontwikkeling_ milieu, dan verifieert en bevordert het aan _Werkgebied_ of _Productie_ milieu.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418896?quality=12&learn=on)
+
+
+>[!TIP]
+>
+>Het gegevenselement en regel-gebeurtenis code in de video wordt getoond is beschikbaar voor uw verwijzing die, **het element onder accordeon uitvouwen**. Nochtans, als u de Laag van Gegevens van de Cliënt NIET gebruikt, moet u de hieronder code wijzigen maar het concept van het bepalen van de Elementen van Gegevens en het gebruiken van hen in de definitie van de Regel blijft van toepassing.
 
 
 +++ Gegevenselement en code voor regelgebeurtenissen
@@ -207,4 +215,3 @@ Geweldig werk! U hebt de opstelling van AEM met het Web SDK van het Experience P
 + [Overzicht van Adobe Experience Platform Web SDK en Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutorials voor gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Overzicht van Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
-
