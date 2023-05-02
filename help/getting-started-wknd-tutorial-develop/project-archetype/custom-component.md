@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 434f56e143bc0f969723de48abd26d49a308af9b
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4061'
 ht-degree: 0%
 
 ---
@@ -439,13 +439,13 @@ Maak een openbare Java™-interface voor de naamregel. De `Byline.java` bepaalt 
 
    Sinds het Java™-pakket van de WKND-bron `com.adobe.aem.guides.wknd.core.models` declareert versie van `1.0.0`en er wordt een vaste openbare interface en methoden toegevoegd, moet de versie worden uitgebreid tot `1.1.0`. Open het bestand op `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` en bijwerken `@Version("1.0.0")` tot `@Version("2.1.0")`.
 
-       &quot;
-       @Version(&quot;2.1.0&quot;)
-       pakket com.adobe.aem.guides.wknd.core.models;
-       
-       import org.osgi.annotation.versioning.Version;
-       &quot;
+   ```
+   @Version("2.1.0")
+   package com.adobe.aem.guides.wknd.core.models;
    
+   import org.osgi.annotation.versioning.Version;
+   ```
+
 Wanneer de bestanden in dit pakket worden gewijzigd, wordt [pakketversie moet semantisch worden aangepast](https://semver.org/). Zo niet, dan is het Maven-project [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) detecteert een ongeldige pakketversie en verbreekt de gebouwde versie. Gelukkig meldt de Maven-plug-in bij een storing de ongeldige Java™-pakketversie en de versie die deze moet hebben. Werk de `@Version("...")` declaratie in de schending van het Java™-pakket `package-info.java` naar de versie die door de plug-in wordt aanbevolen om te repareren.
 
 ### Bylineimplementatie {#byline-implementation}
