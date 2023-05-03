@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Waarnemen dat de `WKND Shared Endpoint` is al gemaakt. Om een eindpunt voor uw p
 
 >[!NOTE]
 >
-> Na het bewaren van het eindpunt, zult u een modaal over het bezoeken van de Console van de Veiligheid zien, die u toestaat om veiligheidsmontages aan te passen als u wenst om toegang tot het eindpunt te vormen. De toestemmingen van de veiligheid zelf zijn buiten het werkingsgebied van dit leerprogramma, echter. Raadpleeg voor meer informatie de [AEM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html).
+> Na het bewaren van het eindpunt, zult u een modaal over het bezoeken van de Console van de Veiligheid zien, die u toestaat om veiligheidsmontages aan te passen als u wenst om toegang tot het eindpunt te vormen. De toestemmingen van de veiligheid zelf zijn buiten het werkingsgebied van dit leerprogramma, echter. Raadpleeg voor meer informatie de [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 
 ### WKND-inhoudsstructuur en taalhoofdmap controleren
 

@@ -14,7 +14,7 @@ level: Experienced
 exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -50,4 +50,4 @@ In, zouden de gebruikers van de Admin Console via Gebruikersgroepen op het nivea
 
 ### Machtigingen toepassen in Adobe Experience Manager
 
-In Adobe Experience Manager moeten gebruikersgroepen die zijn gesynchroniseerd met Adobe IMS, automatisch worden toegevoegd aan [Door AEM opgegeven gebruikersgroepen](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html), die vooraf met de aangewezen toestemmingen worden gevormd om specifieke reeksen taken in AEM uit te voeren. Gebruikers die via Adobe IMS zijn gesynchroniseerd, mogen niet rechtstreeks worden toegevoegd aan [Door AEM opgegeven gebruikersgroepen](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html).
+In Adobe Experience Manager moeten gebruikersgroepen die zijn gesynchroniseerd met Adobe IMS, automatisch worden toegevoegd aan [Door AEM opgegeven gebruikersgroepen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html), die vooraf met de aangewezen toestemmingen worden gevormd om specifieke reeksen taken in AEM uit te voeren. Gebruikers die via Adobe IMS zijn gesynchroniseerd, mogen niet rechtstreeks worden toegevoegd aan [Door AEM opgegeven gebruikersgroepen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).

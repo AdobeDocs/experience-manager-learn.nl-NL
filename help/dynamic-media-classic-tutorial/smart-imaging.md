@@ -10,20 +10,20 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 1%
 
 ---
 
-# Slimme afbeeldingen {#smart-imaging}
+# Smart Imaging {#smart-imaging}
 
 Een van de belangrijkste aspecten van de klantervaring op uw website of mobiele site of app is de laadtijd van de pagina. Klanten zullen vaak een site of app verlaten als het te lang duurt om een pagina te laden. Afbeeldingen vormen het grootste deel van de laadtijd van de pagina. Smart Imaging in Dynamic Media Classic verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser. Dit gebeurt door Adobe Sensei AI-mogelijkheden te benutten en met bestaande voorinstellingen voor afbeeldingen te werken. Met Smart Imaging verkleint u de afbeeldingsgrootte met 30 procent of meer. Dit betekent dat pagina&#39;s sneller worden geladen en dat de klant er beter van wordt.
 
 Slimme beeldverwerking is ook nuttig dankzij de extra prestatieverhoging van volledige integratie met de best-in-class premium service van Adobe. Deze dienst vindt de optimale Internet route tussen servers, netwerken, en peerpunten die de laagste latentie, en/of pakketverliestarief dan de standaardroute op Internet hebben.
 
-Meer informatie over [Slimme afbeeldingen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
+Meer informatie over [Slimme afbeeldingen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
 
 ## Voordelen van Smart Imaging
 
@@ -35,7 +35,7 @@ Omdat de beelden de meerderheid van de ladingstijd van een pagina vormen, kan de
 
 Zoals eerder vermeld, maakt Smart Imaging gebruik van Adobe Sensei AI-mogelijkheden en werkt het met bestaande voorinstellingen voor afbeeldingen om afbeeldingen automatisch om te zetten in optimale volgende generatie afbeeldingsindelingen, zoals WebP, terwijl de visuele getrouwheid behouden blijft.
 
-Meer informatie over [Hoe slim afbeeldingen werken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), inclusief details zoals ondersteunde afbeeldingsindelingen (en wat er gebeurt als u deze indelingen niet gebruikt) en de invloed ervan op bestaande afbeeldingsvoorinstellingen die in gebruik zijn.
+Meer informatie over [Hoe slim afbeeldingen werken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), inclusief details zoals ondersteunde afbeeldingsindelingen (en wat er gebeurt als u deze indelingen niet gebruikt) en de invloed ervan op bestaande afbeeldingsvoorinstellingen die in gebruik zijn.
 
 ## Effecten van slimme beelden
 
@@ -53,7 +53,7 @@ Als u Smart Imaging inschakelt, begint u met het verzenden van een verzoek om te
 
 Als u Smart Imaging hebt ingeschakeld, wilt u controleren of het werkt zoals u had verwacht.
 
-U hebt waarschijnlijk aanvullende vragen over Smart Imaging. We hebben een lijst met veelgestelde vragen (FAQ&#39;s) met antwoorden samengesteld. Lees de [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
+U hebt waarschijnlijk aanvullende vragen over Smart Imaging. We hebben een lijst met veelgestelde vragen (FAQ&#39;s) met antwoorden samengesteld. Lees de [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
 
 ## Aanvullende bronnen
 

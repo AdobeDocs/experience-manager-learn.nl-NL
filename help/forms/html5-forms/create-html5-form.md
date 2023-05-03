@@ -6,7 +6,7 @@ topics: development
 audience: developer
 doc-type: article
 activity: implement
-version: 6.4,6.5
+version: 6.5
 kt: 4419
 thumbnail: kt-4419.jpg
 topic: Development
@@ -14,16 +14,16 @@ role: User
 level: Beginner
 exl-id: 67a01c41-d284-4518-adb5-21702e22ccfa
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '481'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
 # HTML5-formulieren maken
 
-HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager die XFA-formuliersjablonen (xdp) in HTML5-indeling biedt. Met deze functie wordt de rendering van formulieren ingeschakeld op mobiele apparaten en in desktopbrowsers die geen XFA-gebaseerd pdf&#39;s ondersteunen. HTML5-formulieren ondersteunen niet alleen de bestaande mogelijkheden van XFA-formuliersjablonen, maar voegen ook nieuwe mogelijkheden toe, zoals een krabbelhandtekening, voor mobiele apparaten.
+HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager die XFA-formuliersjablonen (xdp) in HTML5-indeling biedt. Met deze functie wordt de weergave mogelijk van formulieren op mobiele apparaten en desktopbrowsers waarop XFA-gebaseerde PDF niet wordt ondersteund. HTML5-formulieren ondersteunen niet alleen de bestaande mogelijkheden van XFA-formuliersjablonen, maar voegen ook nieuwe mogelijkheden toe, zoals een krabbelhandtekening, voor mobiele apparaten.
 
 ## Vereiste
 
@@ -59,6 +59,6 @@ Met de geavanceerde eigenschappen van de xdp-sjabloon kunt u de publicatiedatum 
 
 **URL verzenden** - Dit is de URL waarmee uw HTML5-formulier wordt verzonden. In de volgende les zullen we dit behandelen. Als hier geen verzendURL is opgegeven, wordt de standaardverzendhandler aangeroepen die de formuliergegevens retourneert naar de browser.
 
-**HTML-renderprofiel** - HTML5-formulieren hebben het idee van profielen die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het standaardrenderprofiel niet aan uw behoeften voldoet, voert u een [aangepast profiel](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) kunnen worden gemaakt en gekoppeld aan het formulier.
+**HTML-renderprofiel** - HTML5-formulieren hebben het idee van profielen die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. De meeste keren dat het standaardrenderprofiel voldoende is om het formulier te genereren. Als het standaardrenderprofiel niet aan uw behoeften voldoet, voert u een [aangepast profiel](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) kunnen worden gemaakt en gekoppeld aan het formulier.
 
 **Prefill-service** - De vooraf ingevulde service wordt doorgaans gebruikt om uw formulier te vullen met gegevens die worden opgehaald van een gegevensbron met de achtergrond.

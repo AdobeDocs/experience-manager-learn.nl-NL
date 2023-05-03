@@ -1,7 +1,7 @@
 ---
 title: Een ontwikkelomgeving voor lokale AEM instellen
 description: Leer hoe u een lokale ontwikkelomgeving instelt voor Experience Manager. Ga vertrouwd met lokale installatie, Apache Maven, geïntegreerde ontwikkelomgevingen en foutopsporing en probleemoplossing. Eclipse IDE van het gebruik, CRXDE-Lite, de Code van Visual Studio, en IntelliJ.
-version: 6.4, 6.5
+version: 6.5
 feature: Developer Tools
 topics: development
 activity: develop
@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 0%
@@ -138,7 +138,7 @@ Wanneer, die een winde gebruiken gelieve te controleren `classic` op het tabblad
 
 ### [!DNL Eclipse] IDE
 
-De **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** is een van de populairste IDE&#39;s voor Java™-ontwikkeling, grotendeels omdat het een open-source is en ***vrij***! Adobe beschikt over een plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html)**, for [!DNL Eclipse] om gemakkelijker ontwikkeling met een aardige GUI toe te staan om code met een lokale AEM instantie te synchroniseren. De [!DNL Eclipse] IDE wordt geadviseerd voor ontwikkelaars nieuw om grotendeels te AEM wegens GUI steun door [!DNL AEM Developer Tools].
+De **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** is een van de populairste IDE&#39;s voor Java™-ontwikkeling, grotendeels omdat het een open-source is en ***vrij***! Adobe beschikt over een plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)**, for [!DNL Eclipse] om gemakkelijker ontwikkeling met een aardige GUI toe te staan om code met een lokale AEM instantie te synchroniseren. De [!DNL Eclipse] IDE wordt geadviseerd voor ontwikkelaars nieuw om grotendeels te AEM wegens GUI steun door [!DNL AEM Developer Tools].
 
 #### Installatie en installatie
 
@@ -194,7 +194,7 @@ De **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** is een krachtige IDE voo
 
 ### [!DNL CRXDE Lite]
 
-[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html) is een browserweergave van de AEM repository. [!DNL CRXDE Lite] is ingesloten in AEM en stelt een ontwikkelaar in staat standaardontwikkelingstaken uit te voeren, zoals het bewerken van bestanden, het definiëren van componenten, dialoogvensters en sjablonen. [!DNL CRXDE Lite] is ***niet*** bedoeld om een volledige ontwikkelomgeving te zijn, maar doeltreffend als foutopsporingsprogramma. [!DNL CRXDE Lite] is nuttig wanneer het uitbreiden van of eenvoudig begrip van productcode buiten uw codebasis. [!DNL CRXDE Lite] biedt een krachtige weergave van de opslagplaats en een manier om machtigingen effectief te testen en te beheren.
+[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) is een browserweergave van de AEM repository. [!DNL CRXDE Lite] is ingesloten in AEM en stelt een ontwikkelaar in staat standaardontwikkelingstaken uit te voeren, zoals het bewerken van bestanden, het definiëren van componenten, dialoogvensters en sjablonen. [!DNL CRXDE Lite] is ***niet*** bedoeld om een volledige ontwikkelomgeving te zijn, maar doeltreffend als foutopsporingsprogramma. [!DNL CRXDE Lite] is nuttig wanneer het uitbreiden van of eenvoudig begrip van productcode buiten uw codebasis. [!DNL CRXDE Lite] biedt een krachtige weergave van de opslagplaats en een manier om machtigingen effectief te testen en te beheren.
 
 [!DNL CRXDE Lite] zou met andere IDEs moeten worden gebruikt om code te testen en te zuiveren maar nooit als primair ontwikkelingshulpmiddel. Er is beperkte syntaxisondersteuning, geen automatische functionaliteit en beperkte integratie met bronbeheersystemen.
 

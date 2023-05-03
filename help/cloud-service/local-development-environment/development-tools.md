@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -195,9 +195,9 @@ De Code van Visual Studio is de ideale keus voor front-end ontwikkelaars hoofdza
 
 ### Eclipse
 
-__[Eclipse IDE](https://www.eclipse.org/ide/)__ is een populaire IDEs voor de ontwikkeling van Java, en steunt  __[AEM Developer Tools](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)__ insteekmodule van Adobe, die een in-IDE GUI voor creatie verstrekt en JCR inhoud met een lokale AEM instantie synchroniseert.
+__[Eclipse IDE](https://www.eclipse.org/ide/)__ is een populaire IDEs voor de ontwikkeling van Java, en steunt  __[AEM Developer Tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ insteekmodule van Adobe, die een in-IDE GUI voor creatie verstrekt en JCR inhoud met een lokale AEM instantie synchroniseert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [Eclipse downloaden](https://www.eclipse.org/ide/)
-+ [Eclipse Dev-gereedschappen downloaden](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)
++ [Eclipse Dev-gereedschappen downloaden](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)

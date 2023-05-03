@@ -4,13 +4,13 @@ seo-title: Your Routine Site Maintenance Guide
 description: Ongeacht of u een beheerder, auteur of ontwikkelaar bent, siteonderhoud raakt elk aspect van uw AEM Sites-instantie. Gebruik deze handleiding om ervoor te zorgen dat uw strategie is ingesteld voor succes.
 seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
 audience: author, marketer, developer
-source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
+exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
-
 
 # Tips en trucs voor het onderhoud van sites
 
@@ -44,19 +44,19 @@ Met indexen kunnen query&#39;s zo snel mogelijk worden uitgevoerd, waardoor bron
 
 Bij elke update van de opslagplaats wordt een nieuwe inhoudsrevisie gemaakt. Als gevolg hiervan neemt de grootte van de gegevensopslagruimte bij elke update toe. Om ongecontroleerde groei van opslagplaatsen te voorkomen, moeten oude revisies worden opgeschoond tot vrije schijfmiddelen.
 
-#### [Opruimen van Lucene-binaire stoffen](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-dashboard.html?lang=en#automated-maintenance-tasks)
+#### [Opruimen van Lucene-binaire stoffen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
 
 Wis lucene binaire binaire getallen en verlaag de vereiste opslaggrootte voor de actieve gegevens.
 
-#### [Opruiming gegevensopslag](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/data-store-garbage-collection.html?lang=en)
+#### [Opruiming gegevensopslag](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
 
 Wanneer een middel in AEM wordt geschrapt, kan de verwijzing naar het onderliggende verslag van de gegevensopslag uit de knoophiërarchie worden verwijderd, maar het verslag van de gegevensopslag zelf blijft. Deze gegevensopslagrecord zonder referenties wordt &#39;garbage&#39; die niet hoeft te worden bewaard. In gevallen waarin een aantal middelen zonder referenties bestaat, is het nuttig deze te verwijderen, ruimte te behouden, back-up en onderhoudsprestaties van het bestandssysteem te optimaliseren.
 
-#### [Werkstroom leegmaken](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/workflows-administering.html?lang=en)
+#### [Werkstroom leegmaken](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen.
 
-#### [Controle van logboekonderhoud](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-audit-log.html?lang=en)
+#### [Controle van logboekonderhoud](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
 
 AEM gebeurtenissen die in aanmerking komen voor accountlogboekregistratie, genereren veel gearchiveerde gegevens. Deze gegevens kunnen na verloop van tijd snel groeien als gevolg van replicaties, het uploaden van bedrijfsmiddelen en andere systeemactiviteiten.
 
@@ -80,7 +80,7 @@ Met stijlsystemen kunnen de basiscomponenten, en zelfs aangepaste componenten, n
 
 Met Starten kan het werk worden voltooid voor een nieuwe promotie-, verkoop- of websiteuitrol zonder dat dit gevolgen heeft voor de momenteel geïmplementeerde pagina&#39;s. Bovendien kunnen ze automatisch, zonder aanwezigheid of toezicht, live gaan, zodat auteurs nu hun werk van volgende week (of volgend kwartaal) kunnen doen en niet de dag voor het leven op de pagina komen - het is echt het geschenk van TIME!)
 
-### [Contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html?lang=en)
+### [Contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
 
 Inhoudsfragmenten zijn aanpasbare &quot;brokken&quot; met informatie die gemakkelijk overal op de site opnieuw kunnen worden gebruikt. Als u een wijziging nodig hebt, wijzigt u gewoon het oorspronkelijke segment en de update wordt overal weergegeven waar deze wordt gebruikt - onmiddellijk!
 

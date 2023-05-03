@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
-source-git-commit: f02d5e01388ee61228254951b05c37c336423348
+exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om AEM React Editable Componenten v2 te gebruiken
 
@@ -33,7 +33,7 @@ Raadpleeg de technische documentatie voor meer informatie en codevoorbeelden voo
 
 ## AEM pagina&#39;s
 
-AEM bewerkbare componenten Reageren werken met zowel de SPA Editor als de externe SPA React-apps. Inhoud die de bewerkbare React-componenten vult, moet zichtbaar zijn via AEM pagina&#39;s die de [SPA](https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-page-component.html). AEM componenten, die aan editable React componenten in kaart brengen, moeten AEM uitvoeren [Component Exporter-framework](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - zoals [AEM Core WCM-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+AEM bewerkbare componenten Reageren werken met zowel de SPA Editor als de externe SPA React-apps. Inhoud die de bewerkbare React-componenten vult, moet zichtbaar zijn via AEM pagina&#39;s die de [SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). AEM componenten, die aan editable React componenten in kaart brengen, moeten AEM uitvoeren [Component Exporter-framework](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - zoals [AEM Core WCM-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 
 ## Afhankelijkheden
@@ -231,6 +231,3 @@ const EditableEmbedding = (props) => {
 // Export as default the mapped EditableEmbedding
 export default MapTo("wknd-examples/components/embedding")(EditableEmbedding);
 ```
-
-
-
