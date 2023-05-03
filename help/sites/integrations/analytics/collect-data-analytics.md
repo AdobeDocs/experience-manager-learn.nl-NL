@@ -1,6 +1,6 @@
 ---
 title: Paginagegevens verzamelen met Adobe Analytics
-description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om gegevens over gebruikersactiviteit te verzamelen op een website die is gemaakt met Adobe Experience Manager. Leer hoe u regels in Experience Platform Launch gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics-rapportenpakket te verzenden.
+description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om gegevens over gebruikersactiviteit te verzamelen op een website die is gemaakt met Adobe Experience Manager. Leer hoe u tagregels gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics-rapportenpakket te verzenden.
 version: Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
@@ -9,60 +9,65 @@ level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2447'
 ht-degree: 1%
 
 ---
 
 # Paginagegevens verzamelen met Adobe Analytics
 
-Leer om de ingebouwde eigenschappen van te gebruiken [Adobe Clientgegevenslaag met AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) om gegevens over een pagina in Adobe Experience Manager Sites te verzamelen. [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) en de [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) worden gebruikt om regels te maken voor het verzenden van paginagegevens naar Adobe Analytics.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Adobe Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende: [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) voor een geconsolideerde referentie van de terminologische wijzigingen.
 
-## Wat u gaat maken
+
+Leer hoe u de ingebouwde functies van de [Adobe Clientgegevenslaag met AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) om gegevens over een pagina in Adobe Experience Manager Sites te verzamelen. [Labels in Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) en de [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) worden gebruikt om regels te maken voor het verzenden van paginagegevens naar Adobe Analytics.
+
+## Wat u gaat bouwen {#what-build}
 
 ![Paginagegevens bijhouden](assets/collect-data-analytics/analytics-page-data-tracking.png)
 
-In dit leerprogramma zult u een regel van de Lancering teweegbrengen die op een gebeurtenis van de Laag van de Gegevens van de Cliënt van Adobe wordt gebaseerd, toevoegt voorwaarden voor wanneer de regel zou moeten worden in brand gestoken, en verzendt **Paginanaam** en **Paginasjabloon** van een AEM pagina naar Adobe Analytics.
+In dit leerprogramma, gaat u een markeringsregel teweegbrengen die op een gebeurtenis van de Laag van de Gegevens van de Cliënt van Adobe wordt gebaseerd. Ook, voeg voorwaarden toe voor wanneer de regel zou moeten worden in werking gesteld, en verzend dan **Paginanaam** en **Paginasjabloon** waarden van een AEM Page naar Adobe Analytics.
 
 ### Doelstellingen {#objective}
 
-1. Creeer een gebeurtenis-gedreven regel in Lancering die op veranderingen in de gegevenslaag wordt gebaseerd
-1. Eigenschappen van paginalaag toewijzen aan gegevenselementen in Starten
-1. Paginagegevens verzamelen en naar Adobe Analytics verzenden met het paginaweergavebaken
+1. Maak een gebeurtenisgestuurde regel in de eigenschap tag die wijzigingen vastlegt vanaf de gegevenslaag
+1. Eigenschappen van paginalagen toewijzen aan gegevenselementen in de eigenschap Tag
+1. Paginagegevens verzamelen en naar Adobe Analytics verzenden met behulp van het paginaweergavebaken
 
 ## Vereisten
 
 Hiervoor is het volgende vereist:
 
-* **Experience Platform Launch** Eigenschap
-* **Adobe Analytics** test/dev rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) browserextensie. Screenshots in deze zelfstudie werden vastgelegd vanuit de Chrome-browser.
-* (Optioneel) AEM Site met de [Gegevenslaag Adobe-client ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Deze zelfstudie gebruikt de openbare website [https://wknd.site/us/en.html](https://wknd.site/us/en.html) maar u bent welkom om uw eigen site te gebruiken .
+* **Tag, eigenschap** in Experience Platform
+* **Adobe Analytics** test/dev rapportsuite-id en trackingserver. Zie de volgende documentatie voor [een rapportenpakket maken](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
+* [Foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) browserextensie. Screenshots in deze zelfstudie werden vastgelegd vanuit de Chrome-browser.
+* (Optioneel) AEM Site met de [Gegevenslaag Adobe-client ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). In deze zelfstudie wordt het publiek onder ogen gezien [WKND](https://wknd.site/us/en.html) maar u kunt uw eigen site graag gebruiken.
 
 >[!NOTE]
 >
-> Hebt u hulp nodig bij het integreren van Starten en uw AEM site? [Zie deze videoreeks](../experience-platform/data-collection/tags/overview.md).
+> Hebt u hulp nodig bij het integreren van eigenschap tag en AEM site? [Zie deze videoreeks](../experience-platform/data-collection/tags/overview.md).
 
-## Overschakelen van opstartomgevingen voor WKND-site
+## Omgeving van Switch-tag voor WKND-site
 
-[https://wknd.site](https://wknd.site) is een openbare georiënteerde locatie die is gebaseerd op [een open-bronproject](https://github.com/adobe/aem-guides-wknd) ontworpen als referentie en [zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) voor AEM implementaties.
+De [WKND](http://wknd.site/us/en.html) is een openbare georiënteerde locatie die is gebaseerd op [een open-source-project](https://github.com/adobe/aem-guides-wknd) ontworpen als referentie en [zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) voor een AEM uitvoering.
 
-In plaats van het opzetten van een AEM milieu en het installeren van de WKND codebasis, kunt u debugger van het Experience Platform gebruiken aan **switch** het leven [https://wknd.site/](https://wknd.site/) tot *uw* Start de eigenschap. Natuurlijk kunt u uw eigen AEM gebruiken als het reeds [Gegevenslaag Adobe-client ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
+In plaats van het opzetten van een AEM milieu en het installeren van de WKND codebasis, kunt u debugger van het Experience Platform gebruiken aan **switch** het leven [WKND-site](http://wknd.site/us/en.html) tot *uw* tag, eigenschap. U kunt echter uw eigen AEM gebruiken als deze al beschikt over de [Gegevenslaag Adobe-client ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
-1. Aanmelden bij Experience Platform Launch en [een opstarteigenschap maken](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch.html) (als je dat nog niet hebt gedaan).
-1. Zorg ervoor dat een eerste keer starten [Bibliotheek is gemaakt](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) en gepromoveerd tot een introductie [milieu](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html).
-1. Kopieer de insluitcode voor Starten vanuit de omgeving waarnaar de bibliotheek is gepubliceerd.
+1. Aanmelden bij Experience Platform en [een eigenschap Tag maken](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (als je dat nog niet hebt gedaan).
+1. Zorg ervoor dat een initiële tag JavaScript [bibliotheek is gemaakt](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) en worden gepromoot naar de tag [milieu](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html).
+1. Kopieer de ingesloten JavaScript-code uit de tagomgeving waarin uw bibliotheek is gepubliceerd.
 
-   ![Insluitcode starten kopiëren](assets/collect-data-analytics/launch-environment-copy.png)
+   ![Code ingesloten eigenschap van tag kopiëren](assets/collect-data-analytics/launch-environment-copy.png)
 
-1. Open in uw browser een nieuw tabblad en navigeer naar [https://wknd.site/](https://wknd.site/)
+1. Open in uw browser een nieuw tabblad en navigeer naar [WKND-site](http://wknd.site/us/en.html)
 1. De browserextensie van Foutopsporing Experience Platform openen
 
    ![Foutopsporing Experience Platform](assets/collect-data-analytics/experience-platform-debugger-extension.png)
 
-1. Navigeren naar **Starten** > **Configuratie** en onder **Ingespelde insluitcodes** De bestaande insluitcode voor Starten vervangen door *uw* ingesloten code die u hebt gekopieerd uit stap 3.
+1. Navigeren naar **Experience Platform-tags** > **Configuratie** en onder **Ingespelde insluitcodes** de bestaande insluitcode vervangen door *uw* ingesloten code die u hebt gekopieerd uit stap 3.
 
    ![Insluitcode vervangen](assets/collect-data-analytics/platform-debugger-replace-embed.png)
 
@@ -72,16 +77,16 @@ In plaats van het opzetten van een AEM milieu en het installeren van de WKND cod
 
 ## Gegevens Adobe client-gegevenslaag op WKND-site verifiëren
 
-De [WKND-referentieproject](https://github.com/adobe/aem-guides-wknd) is gebouwd met AEM Core Components en bevat de [Gegevenslaag Adobe-client ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) standaard. Daarna, verifieer de Laag van Gegevens van de Cliënt van Adobe wordt toegelaten.
+De [WKND-referentieproject](https://github.com/adobe/aem-guides-wknd) is gebouwd met AEM Core Components en bevat de [Gegevenslaag Adobe-client ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) standaard. Daarna, verifieer dat de Laag van Gegevens van de Cliënt van Adobe wordt toegelaten.
 
-1. Navigeren naar [https://wknd.site](https://wknd.site).
+1. Navigeren naar [WKND-site](http://wknd.site/us/en.html).
 1. Open de ontwikkelaarsgereedschappen van de browser en navigeer naar de **Console**. Voer de volgende opdracht uit:
 
    ```js
    adobeDataLayer.getState();
    ```
 
-   Dit keert de huidige staat van de Laag van Gegevens van de Cliënt van Adobe terug.
+   Boven code keert de huidige staat van de Laag van Gegevens van de Cliënt van Adobe terug.
 
    ![Status Adobe-gegevenslaag](assets/collect-data-analytics/adobe-data-layer-state.png)
 
@@ -99,24 +104,26 @@ De [WKND-referentieproject](https://github.com/adobe/aem-guides-wknd) is gebouwd
        xdm:template: "/conf/wknd/settings/wcm/templates/landing-page-template"
    ```
 
-   We gebruiken standaardeigenschappen die zijn afgeleid van de [Paginaschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page),  `dc:title`, `xdm:language` en `xdm:template` van de gegevenslaag om paginagegevens naar Adobe Analytics te verzenden.
+   Als u paginagegevens naar Adobe Analytics wilt verzenden, gebruiken we de standaardeigenschappen zoals `dc:title`, `xdm:language`, en `xdm:template` van de gegevenslaag.
+
+   Voor meer informatie raadpleegt u de [Paginaschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) uit de gegevensschema&#39;s voor kerncomponenten.
 
    >[!NOTE]
    >
-   > Zie de `adobeDataLayer` javascript-object? Zorg ervoor dat de [Adobe Client Data Layer is ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) op uw site.
+   > Als u de `adobeDataLayer` JavaScript-object? Zorg ervoor dat de [Adobe Client Data Layer is ingeschakeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) op uw site.
 
 ## Een regel maken voor het laden van pagina&#39;s
 
-De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag. Wanneer de AEM **Pagina** gegevenslaag wordt geladen en er wordt een gebeurtenis geactiveerd `cmp:show`. Maak een regel die wordt geactiveerd op basis van de `cmp:show` gebeurtenis.
+De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag. Wanneer de gegevenslaag AEM pagina is geladen, wordt een `cmp:show` gebeurtenis. Maak een regel die wordt geactiveerd wanneer de `cmp:show` gebeurtenis wordt geactiveerd vanaf de paginalaag.
 
-1. Navigeer aan Experience Platform Launch en in het bezit van het Web dat met de Plaats van de AEM wordt geïntegreerd.
-1. Ga naar de **Regels** in de gebruikersinterface van Launch en klik vervolgens op **Nieuwe regel maken**.
+1. Navigeer naar het Experience Platform en naar de eigenschap tag die is geïntegreerd met de AEM Site.
+1. Ga naar de **Regels** in de gebruikersinterface van de eigenschap Tag en klik vervolgens op **Nieuwe regel maken**.
 
    ![Regel maken](assets/collect-data-analytics/analytics-create-rule.png)
 
 1. Naam van de regel **Pagina geladen**.
-1. Klikken **Gebeurtenissen** **Toevoegen** om de **Gebeurtenisconfiguratie** wizard.
-1. Onder **Type gebeurtenis** selecteren **Aangepaste code**.
+1. In de **Gebeurtenissen** subsectie, klikken **Toevoegen** om de **Gebeurtenisconfiguratie** wizard.
+1. Voor **Type gebeurtenis** veld, selecteren **Aangepaste code**.
 
    ![Geef de regel een naam en voeg de gebeurtenis van de aangepaste code toe](assets/collect-data-analytics/custom-code-event.png)
 
@@ -126,7 +133,7 @@ De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag
    var pageShownEventHandler = function(evt) {
       // defensive coding to avoid a null pointer exception
       if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-         //trigger Launch Rule and pass event
+         //trigger the Tag Rule and pass event
          console.debug("cmp:show event: " + evt.eventInfo.path);
          var event = {
             //include the path of the component that triggered the event
@@ -135,8 +142,8 @@ De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag
             component: window.adobeDataLayer.getState(evt.eventInfo.path)
          };
    
-         //Trigger the Launch Rule, passing in the new `event` object
-         // the `event` obj can now be referenced by the reserved name `event` by other Launch data elements
+         //Trigger the Tag Rule, passing in the new `event` object
+         // the `event` obj can now be referenced by the reserved name `event` by other Tag data elements
          // i.e `event.component['someKey']`
          trigger(event);
       }
@@ -151,13 +158,13 @@ De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag
    });
    ```
 
-   Het bovenstaande codefragment voegt een gebeurtenislistener toe door [een functie duwen](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) in de gegevenslaag. Wanneer de `cmp:show` gebeurtenis wordt geactiveerd `pageShownEventHandler` functie wordt aangeroepen. In deze functie worden enkele controles van de hygiëne toegevoegd en wordt een nieuwe `event` is samengesteld met de meest recente [status van de gegevenslaag](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) voor de component die de gebeurtenis heeft geactiveerd.
+   Het bovenstaande codefragment voegt een gebeurtenislistener toe door [een functie duwen](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) in de gegevenslaag. Wanneer `cmp:show` gebeurtenis wordt geactiveerd `pageShownEventHandler` functie wordt aangeroepen. In deze functie worden een paar gezondheidscontroles toegevoegd en een nieuwe `event` is samengesteld met de meest recente [status van de gegevenslaag](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) voor de component die de gebeurtenis heeft geactiveerd.
 
-   Na die `trigger(event)` wordt aangeroepen. `trigger()` is een gereserveerde naam in Launch en activeert &quot;de Launch-regel&quot;. We geven de `event` object als een parameter die op zijn beurt door een andere gereserveerde naam in de categorie Launch wordt weergegeven `event`. Data Elements in Launch kan nu verwijzen naar verschillende eigenschappen, zoals: `event.component['someKey']`.
+   Tot slot `trigger(event)` functie wordt aangeroepen. De `trigger()` function is a reserved name in the tag property and it **triggers** de regel. De `event` object wordt doorgegeven als een parameter die vervolgens weer wordt weergegeven door een andere gereserveerde naam in de eigenschap tag. Gegevenselementen in de eigenschap tag kunnen nu verwijzen naar verschillende eigenschappen met een codefragment, zoals `event.component['someKey']`.
 
 1. Sla de wijzigingen op.
 1. Volgende onder **Handelingen** klikken **Toevoegen** om de **Configuratie van handelingen** wizard.
-1. Onder **Type handeling** kiezen **Aangepaste code**.
+1. Voor **Type handeling** veld, kies **Aangepaste code**.
 
    ![Type aangepaste code-actie](assets/collect-data-analytics/action-custom-code.png)
 
@@ -170,36 +177,34 @@ De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag
    console.debug("Page template: " + event.component['xdm:template']);
    ```
 
-   De `event` object wordt doorgegeven vanuit het `trigger()` wordt aangeroepen in de aangepaste gebeurtenis. `component` is de huidige pagina die van de gegevenslaag wordt afgeleid `getState` in de aangepaste gebeurtenis. Herstel vanaf een eerdere datum [Paginaschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) blootgesteld door de gegevenslaag om de diverse sleutels te zien die uit de doos worden blootgesteld.
+   De `event` object wordt doorgegeven vanuit het `trigger()` wordt aangeroepen in de aangepaste gebeurtenis. Hier `component` is de huidige pagina die van de gegevenslaag wordt afgeleid `getState` in de aangepaste gebeurtenis.
 
-1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch om de code te promoten naar de [milieu](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) gebruikt op uw AEM Site.
+1. Sla de wijzigingen op en voer een [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in de eigenschap tag om de code naar de [milieu](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) gebruikt op uw AEM Site.
 
    >[!NOTE]
    >
-   > Het kan zeer nuttig zijn om het [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) om de insluitcode over te schakelen op een **Ontwikkeling** milieu.
+   > Het kan handig zijn om de [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) om de insluitcode over te schakelen op een **Ontwikkeling** milieu.
 
 1. Navigeer naar uw AEM en open de ontwikkelaarsgereedschappen om de console weer te geven. Vernieuw de pagina en u zou moeten zien dat de consoleberichten zijn geregistreerd:
 
-   ![Berichten in geladen console van pagina](assets/collect-data-analytics/page-show-event-console.png)
+![Berichten in geladen console van pagina](assets/collect-data-analytics/page-show-event-console.png)
 
 ## Gegevenselementen maken
 
-Maak vervolgens verschillende gegevenselementen om verschillende waarden vast te leggen uit de gegevenslaag van de Adobe-client. Zoals gezien in de vorige oefening hebben wij het mogelijk gezien om tot de eigenschappen van de gegevenslaag rechtstreeks door douanecode toegang te hebben. Het voordeel van het gebruik van gegevenselementen is dat deze opnieuw kunnen worden gebruikt in alle opstartregels.
-
-Herstel vanaf een eerdere datum [Paginaschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) blootgesteld door de gegevenslaag:
+Maak vervolgens verschillende gegevenselementen om verschillende waarden vast te leggen uit de gegevenslaag van de Adobe-client. Zoals in de vorige oefening wordt gezien is het mogelijk om tot de eigenschappen van de gegevenslaag rechtstreeks door douanecode toegang te hebben. Het voordeel van het gebruik van gegevenselementen is dat deze opnieuw kunnen worden gebruikt in verschillende labelregels.
 
 Gegevenselementen worden toegewezen aan de `@type`, `dc:title`, en `xdm:template` eigenschappen.
 
 ### Type componentbron
 
-1. Navigeer aan Experience Platform Launch en in het bezit van het Web dat met de Plaats van de AEM wordt geïntegreerd.
+1. Navigeer naar het Experience Platform en naar de eigenschap tag die is geïntegreerd met de AEM Site.
 1. Ga naar de **Gegevenselementen** en klik op **Nieuw gegevenselement maken**.
-1. Voor **Naam** enter **Type componentbron**.
-1. Voor **Type gegevenselement** selecteren **Aangepaste code**.
+1. Voor de **Naam** veld, voert u de **Type componentbron**.
+1. Voor de **Type gegevenselement** veld, selecteren **Aangepaste code**.
 
    ![Type componentbron](assets/collect-data-analytics/component-resource-type-form.png)
 
-1. Klikken **Editor openen** en voer het volgende in de redacteur van de douanecode in:
+1. Klikken **Editor openen** en voert u het volgende in de aangepaste code-editor in:
 
    ```js
    if(event && event.component && event.component.hasOwnProperty('@type')) {
@@ -207,18 +212,18 @@ Gegevenselementen worden toegewezen aan de `@type`, `dc:title`, en `xdm:template
    }
    ```
 
-   Sla de wijzigingen op.
+1. Sla de wijzigingen op.
 
    >[!NOTE]
    >
-   > Herinnert eraan dat de `event` object beschikbaar wordt gemaakt en het bereik wordt ingesteld op basis van de gebeurtenis die het **Regel** in Launch. De waarde van een gegevenselement wordt pas ingesteld wanneer het gegevenselement *gerefereerd* binnen een regel. Daarom is het veilig om dit Element van Gegevens binnen een Regel als te gebruiken **Pagina geladen** regel die in de vorige stap is gemaakt *maar* zou niet veilig zijn om in andere contexten te gebruiken.
+   > Herinnert eraan dat de `event` object beschikbaar wordt gemaakt en het bereik wordt ingesteld op basis van de gebeurtenis die het **Regel** in tag-eigenschap. De waarde van een gegevenselement wordt pas ingesteld wanneer het gegevenselement *gerefereerd* binnen een regel. Daarom is het veilig om dit Element van Gegevens binnen een Regel als te gebruiken **Pagina geladen** regel die in de vorige stap is gemaakt *maar* zou niet veilig zijn om in andere contexten te gebruiken.
 
 ### Paginanaam
 
-1. Klikken **Gegevenselement toevoegen**.
-1. Voor **Naam** enter **Paginanaam**.
-1. Voor **Type gegevenselement** selecteren **Aangepaste code**.
-1. Klikken **Editor openen** en voer het volgende in de redacteur van de douanecode in:
+1. Klikken **Gegevenselement toevoegen** knop
+1. Voor de **Naam** veld, Enter **Paginanaam**.
+1. Voor de **Type gegevenselement** veld, selecteren **Aangepaste code**.
+1. Klikken **Editor openen** en voert u het volgende in de aangepaste code-editor in:
 
    ```js
    if(event && event.component && event.component.hasOwnProperty('dc:title')) {
@@ -226,14 +231,14 @@ Gegevenselementen worden toegewezen aan de `@type`, `dc:title`, en `xdm:template
    }
    ```
 
-   Sla de wijzigingen op.
+1. Sla de wijzigingen op.
 
 ### Paginasjabloon
 
-1. Klikken **Gegevenselement toevoegen**.
-1. Voor **Naam** enter **Paginasjabloon**.
-1. Voor **Type gegevenselement** selecteren **Aangepaste code**.
-1. Klikken **Editor openen** en voer het volgende in de redacteur van de douanecode in:
+1. Klik op de knop **Gegevenselement toevoegen** knop
+1. Voor de **Naam** veld, Enter **Paginasjabloon**.
+1. Voor de **Type gegevenselement** veld, selecteren **Aangepaste code**.
+1. Klikken **Editor openen** en voert u het volgende in de aangepaste code-editor in:
 
    ```js
    if(event && event.component && event.component.hasOwnProperty('xdm:template')) {
@@ -241,7 +246,7 @@ Gegevenselementen worden toegewezen aan de `@type`, `dc:title`, en `xdm:template
    }
    ```
 
-   Sla de wijzigingen op.
+1. Sla de wijzigingen op.
 
 1. U moet nu drie gegevenselementen hebben als onderdeel van uw regel:
 
@@ -249,15 +254,15 @@ Gegevenselementen worden toegewezen aan de `@type`, `dc:title`, en `xdm:template
 
 ## De extensie Analytics toevoegen
 
-Voeg vervolgens de extensie Analytics toe aan de eigenschap Launch. We moeten deze gegevens ergens naartoe sturen!
+Voeg vervolgens de extensie Analytics toe aan de eigenschap Tag om gegevens naar een rapportsuite te verzenden.
 
-1. Navigeer aan Experience Platform Launch en in het bezit van het Web dat met de Plaats van de AEM wordt geïntegreerd.
+1. Navigeer naar het Experience Platform en naar de eigenschap tag die is geïntegreerd met de AEM Site.
 1. Ga naar **Extensies** > **Catalogus**
 1. Zoek de **Adobe Analytics** extensie en klik op **Installeren**
 
    ![Adobe Analytics-extensie](assets/collect-data-analytics/analytics-catalog-install.png)
 
-1. Onder **Bibliotheekbeheer** > **Rapportageopties**, voert u de rapportsuite-id&#39;s in die u voor elke omgeving van Launch wilt gebruiken.
+1. Onder **Bibliotheekbeheer** > **Rapportageopties**, voert u de rapportsuite-id&#39;s in die u voor elke tagomgeving wilt gebruiken.
 
    ![Voer de rapportsuite-id&#39;s in](assets/collect-data-analytics/analytics-config-reportSuite.png)
 
@@ -267,13 +272,13 @@ Voeg vervolgens de extensie Analytics toe aan de eigenschap Launch. We moeten de
 
    >[!TIP]
    >
-   >We raden u aan de *De optie Bibliotheek voor mij beheren* als de instelling voor Bibliotheekbeheer het veel eenvoudiger maakt om de `AppMeasurement.js` actuele bibliotheek.
+   >We raden u aan de *De optie Bibliotheek voor mij beheren* als de instelling voor Bibliotheekbeheer het veel eenvoudiger maakt om de `AppMeasurement.js` bibliotheek is bijgewerkt.
 
 1. Schakel het selectievakje in **Activity Map gebruiken**.
 
    ![Activity Map voor gebruik inschakelen](assets/track-clicked-component/analytic-track-click.png)
 
-1. Onder **Algemeen** > **Trackingserver**, voert u uw trackingserver in, bijvoorbeeld `tmd.sc.omtrdc.net`. Voer uw SSL-traceringsserver in als uw site ondersteuning biedt `https://`
+1. Onder **Algemeen** > **Trackingserver** voert u bijvoorbeeld uw trackingserver in. `tmd.sc.omtrdc.net`. Voer uw SSL-traceringsserver in als uw site ondersteuning biedt `https://`
 
    ![De trackingservers invoeren](assets/collect-data-analytics/analytics-config-trackingServer.png)
 
@@ -281,11 +286,11 @@ Voeg vervolgens de extensie Analytics toe aan de eigenschap Launch. We moeten de
 
 ## Een voorwaarde toevoegen aan de regel Pagina geladen
 
-Werk vervolgens de **Pagina geladen** de regel om **Type componentbron** gegevenselement om ervoor te zorgen dat de regel alleen wordt geactiveerd wanneer de `cmp:show` de gebeurtenis is voor de **Pagina**. Andere componenten kunnen de `cmp:show` bijvoorbeeld de component Carousel wordt geactiveerd wanneer de dia&#39;s veranderen. Daarom is het belangrijk om een voorwaarde voor deze regel toe te voegen.
+Werk vervolgens de **Pagina geladen** de regel om **Type componentbron** gegevenselement om ervoor te zorgen dat de regel alleen wordt geactiveerd wanneer de `cmp:show` de gebeurtenis is voor de **Pagina**. Andere componenten kunnen de `cmp:show` bijvoorbeeld door de component Carousel wordt deze geactiveerd wanneer de dia&#39;s veranderen. Daarom is het belangrijk om een voorwaarde voor deze regel toe te voegen.
 
-1. Navigeer in de interface Starten naar de **Pagina geladen** regel die eerder is gemaakt.
+1. Navigeer in de interface Tageigenschap naar de **Pagina geladen** regel die eerder is gemaakt.
 1. Onder **Voorwaarden** klikken **Toevoegen** om de **Condition Configuration** wizard.
-1. Voor **Type voorwaarde** selecteren **Waardevergelijking**.
+1. Voor **Type voorwaarde** veld, selecteren **Waardevergelijking** optie.
 1. De eerste waarde in het formulierveld instellen op `%Component Resource Type%`. U kunt het pictogram Gegevenselement gebruiken ![pictogram data-element](assets/collect-data-analytics/cylinder-icon.png) om de **Type componentbron** gegevenselement. Laat de vergelijkingsfunctie ingesteld staan op `Equals`.
 1. De tweede waarde instellen op `wknd/components/page`.
 
@@ -299,18 +304,19 @@ Werk vervolgens de **Pagina geladen** de regel om **Type componentbron** gegeven
 
 ## Analysevariabelen instellen en Paginaweergavebaken activeren
 
-Momenteel worden de **Pagina geladen** regel output eenvoudig een consoleverklaring. Gebruik vervolgens de gegevenselementen en de extensie Analytics om de variabelen Analytics in te stellen als een **action** in de **Pagina geladen** regel. We zullen ook een aanvullende actie ondernemen om de **Paginaweergavekenmerk** en de verzamelde gegevens naar Adobe Analytics verzenden.
+Momenteel worden de **Pagina geladen** regel output eenvoudig een consoleverklaring. Gebruik vervolgens de gegevenselementen en de extensie Analytics om de variabelen Analytics in te stellen als een **action** in de **Pagina geladen** regel. We stellen ook een extra actie in om de **Paginaweergavekenmerk** en de verzamelde gegevens naar Adobe Analytics verzenden.
 
-1. In de **Pagina geladen** regel **remove** de **Core - Aangepaste code** handeling (de consoleverklaringen):
+1. In de regel Pagina geladen: **remove** de **Core - Aangepaste code** handeling (de consoleverklaringen):
 
    ![Aangepaste code verwijderen](assets/collect-data-analytics/remove-console-statements.png)
 
-1. Klik onder Handelingen op **Toevoegen** om een nieuwe handeling toe te voegen.
+1. Klik onder de subsectie Handelingen op **Toevoegen** om een nieuwe handeling toe te voegen.
+
 1. Stel de **Extensie** tekst naar **Adobe Analytics** en stelt de **Type handeling** tot  **Variabelen instellen**
 
    ![Extensie handeling instellen op Variabelen voor analyse instellen](assets/collect-data-analytics/analytics-set-variables-action.png)
 
-1. Selecteer een beschikbare **eVar** en instellen als de waarde van het gegevenselement **Paginasjabloon**. Het pictogram Gegevenselementen gebruiken ![Pictogram Gegevenselementen](assets/collect-data-analytics/cylinder-icon.png) om de **Paginasjabloon** element.
+1. Selecteer in het hoofdvenster een beschikbare **eVar** en instellen als de waarde van het gegevenselement **Paginasjabloon**. Het pictogram Gegevenselementen gebruiken ![Pictogram Gegevenselementen](assets/collect-data-analytics/cylinder-icon.png) om de **Paginasjabloon** element.
 
    ![Instellen als eVar paginasjabloon](assets/collect-data-analytics/set-evar-page-template.png)
 
@@ -318,25 +324,26 @@ Momenteel worden de **Pagina geladen** regel output eenvoudig een consoleverklar
 
    ![Omgevingsvariabele paginanaam ingesteld](assets/collect-data-analytics/page-name-env-variable-set.png)
 
-   Sla de wijzigingen op.
+1. Sla de wijzigingen op.
 
-1. Voeg vervolgens een aanvullende handeling toe aan de rechterkant van de knop **Adobe Analytics - Variabelen instellen** door op de **plus** pictogram:
+1. Voeg vervolgens een extra handeling toe aan de rechterkant van de knop **Adobe Analytics - Variabelen instellen** door op de **plus** pictogram:
 
-   ![Een extra opstarthandeling toevoegen](assets/collect-data-analytics/add-additional-launch-action.png)
+   ![Een extra handeling voor een tagregel toevoegen](assets/collect-data-analytics/add-additional-launch-action.png)
 
-1. Stel de **Extensie** tekst naar **Adobe Analytics** en stelt de **Type handeling** tot  **Band verzenden**. Omdat dit als een paginaweergave wordt beschouwd, laat u de standaardspatiëring ingesteld op **`s.t()`**.
+1. Stel de **Extensie** tekst naar **Adobe Analytics** en stelt de **Type handeling** tot  **Band verzenden**. Aangezien deze actie als een paginaweergave wordt beschouwd, laat u de standaardtracering ingesteld op **`s.t()`**.
 
    ![Handeling Beacon Adobe Analytics verzenden](assets/track-clicked-component/send-page-view-beacon-config.png)
 
 1. Sla de wijzigingen op. De **Pagina geladen** de regel zou nu de volgende configuratie moeten hebben:
 
-   ![Definitieve opstartconfiguratie](assets/collect-data-analytics/final-page-loaded-config.png)
+   ![Definitieve configuratie van tagregels](assets/collect-data-analytics/final-page-loaded-config.png)
 
    * **1.** Luister naar de `cmp:show` gebeurtenis.
    * **2.** Controleer of de gebeurtenis door een pagina is geactiveerd.
    * **3.** Analysevariabelen instellen voor **Paginanaam** en **Paginasjabloon**
    * **4.** Verzend het Beacon van de Mening van de Pagina van de Analyse
-1. Sla alle wijzigingen op en maak uw opstartbibliotheek, waarbij u een upgrade uitvoert naar de juiste omgeving.
+
+1. Sla alle wijzigingen op en maak uw tagbibliotheek, waarbij u een upgrade uitvoert naar de juiste omgeving.
 
 ## Valideer de oproep Beacon en Analytics voor paginaweergave
 
@@ -344,7 +351,7 @@ Nu **Pagina geladen** regel verzendt het baken van Analytics, zou u de Analytics
 
 1. Open de [WKND-site](https://wknd.site/us/en.html) in uw browser.
 1. Klik op het pictogram Foutopsporing ![Het pictogram Foutopsporing op platform beleven](assets/collect-data-analytics/experience-cloud-debugger.png) om Foutopsporing op Experience Platform te openen.
-1. Zorg ervoor dat Foutopsporing de eigenschap Launch toewijst aan *uw* Ontwikkelomgeving, zoals eerder beschreven en **Logboekregistratie voor console** is ingeschakeld.
+1. Controleer of Foutopsporing de eigenschap tag toewijst aan *uw* Ontwikkelomgeving, zoals eerder beschreven en **Logboekregistratie voor console** is ingeschakeld.
 1. Open het menu Analytics en controleer of de rapportsuite is ingesteld op *uw* rapportsuite. De paginanaam moet ook worden ingevuld:
 
    ![Foutopsporing op het tabblad Analyse](assets/collect-data-analytics/analytics-tab-debugger.png)
@@ -365,13 +372,13 @@ Nu **Pagina geladen** regel verzendt het baken van Analytics, zou u de Analytics
 
    >[!NOTE]
    >
-   > Als u geen consolelogboeken ziet, zorg ervoor dat **Logboekregistratie voor console** is gecontroleerd onder **Starten** in de Foutopsporing van het Experience Platform.
+   > Als u geen consolelogboeken ziet, zorg ervoor dat **Logboekregistratie voor console** is gecontroleerd onder **Experience Platform-tags** in de Foutopsporing van het Experience Platform.
 
 1. Naar een artikelpagina navigeren zoals [Western Australia](https://wknd.site/us/en/magazine/western-australia.html). Bekijk de paginanaam en het sjabloontype worden gewijzigd.
 
 ## Gefeliciteerd!
 
-U hebt net de gebeurtenisgestuurde Adobe Client Data Layer en het Experience Platform Launch gebruikt om gegevenspagina-gegevens van een AEM Site te verzamelen en deze naar Adobe Analytics te verzenden.
+U hebt zojuist de gebeurtenisgestuurde Adobe Client Data Layer en -tags in Experience Platform gebruikt om gegevens over gegevenspagina&#39;s van een AEM Site te verzamelen en deze naar Adobe Analytics te verzenden.
 
 ### Volgende stappen
 

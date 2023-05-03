@@ -10,9 +10,9 @@ kt: 6409
 thumbnail: KT-6296.jpg
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2161'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Leer hoe u gegevens die vanaf een Adobe Experience Manager-site zijn vastgelegd, kunt toewijzen aan maateenheden en dimensies in Adobe Analytics-rapportensuites. Leer hoe u een gedetailleerd rapportdashboard maakt met de Analysis Workspace-functie van Adobe Analytics.
 
-## Wat u gaat maken
+## Wat u gaat bouwen {#what-build}
 
-Het WKND marketing team wil begrijpen welke Vraag aan de knopen van de Actie (CTA) het best op de homepage presteert. In deze zelfstudie maken we een nieuw project in de Analysis Workspace om de prestaties van verschillende CTA-knoppen te visualiseren en het gebruikersgedrag op de site te begrijpen. De volgende informatie wordt gevangen gebruikend Adobe Analytics wanneer een gebruiker een Vraag aan de knoop van de Actie (CTA) op de WKND homepage klikt.
+Het WKND-marketingteam wil graag weten welke `Call to Action (CTA)` de knoppen voeren het beste uit op de startpagina. In deze zelfstudie maakt u een project in het dialoogvenster **Analysis Workspace** om de prestaties van verschillende knopen van CTA te visualiseren en gebruikersgedrag op de plaats te begrijpen. De volgende informatie wordt gevangen gebruikend Adobe Analytics wanneer een gebruiker een Vraag aan de knoop van de Actie (CTA) op de WKND homepage klikt.
 
 **Variabelen voor analyse**
 
@@ -41,8 +41,8 @@ Hieronder vindt u een overzicht van de analytische variabelen die momenteel word
 
 ### Doelstellingen {#objective}
 
-1. Maak een nieuwe rapportsuite of gebruik een bestaande set.
-1. Configureren [Conversievariabelen (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) en [Gebeurtenissen met succes (gebeurtenissen)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) in de rapportsuite.
+1. Maak een rapportsuite of gebruik een bestaande set.
+1. Configureren [Conversievariabelen (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) en [Gebeurtenissen met succes (gebeurtenissen)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) in de rapportsuite.
 1. Een [Analysis Workspace-project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) om gegevens te analyseren met behulp van hulpmiddelen die u toestaan om, inzichten snel te bouwen te analyseren en te delen.
 1. Deel het Analysis Workspace-project met andere teamleden.
 
@@ -50,13 +50,13 @@ Hieronder vindt u een overzicht van de analytische variabelen die momenteel word
 
 Deze zelfstudie is een voortzetting van de [Aangeklikte component bijhouden met Adobe Analytics](./track-clicked-component.md) en gaat ervan uit dat u:
 
-* A **Starteigenschap** met de [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) enabled
-* **Adobe Analytics** test/dev rapportsuite-id en trackingserver. Zie de volgende documentatie voor [het creëren van een nieuwe rapportreeks](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) browserextensie geconfigureerd met de eigenschap Launch die is geladen op [https://wknd.site/us/en.html](https://wknd.site/us/en.html) of een AEM plaats met de Toegelaten Laag van Gegevens van de Adobe.
+* A **Tageigenschap** met de [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) enabled
+* **Adobe Analytics** test/dev rapportsuite-id en trackingserver. Zie de volgende documentatie voor [een rapportenpakket maken](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
+* [Foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) browser uitbreiding die met een markeringsbezit wordt gevormd die op [WKND-site](https://wknd.site/us/en.html) of een AEM plaats met de Toegelaten Laag van Gegevens van de Adobe.
 
 ## Conversievariabelen (eVars) en succesgebeurtenissen (gebeurtenis)
 
-De Custom Insight-conversievariabele (of -eVar) wordt in de Adobe-code op de geselecteerde webpagina&#39;s van uw site geplaatst. Zijn belangrijkste doel is omzettingssuccesmetriek in douane marketing rapporten te segmenteren. Een eVar kan op bezoek-gebaseerd zijn en functioneren gelijkaardig aan koekjes. De waarden die in eVar-variabelen worden doorgegeven, volgen de gebruiker gedurende een vooraf bepaalde periode.
+De Custom Insight-conversievariabele (of -eVar) wordt in de Adobe-code op de geselecteerde webpagina&#39;s van uw site geplaatst. Zijn belangrijkste doel is omzettingssuccesmetriek in douane marketing rapporten te segmenteren. Een eVar kan een op een bezoek gebaseerde functie zijn en werkt net als cookies. De waarden die worden doorgegeven aan eVar-variabelen volgen de gebruiker gedurende een vooraf bepaalde periode.
 
 Wanneer een eVar aan de waarde van een bezoeker wordt geplaatst, onthoudt Adobe automatisch die waarde tot het verloopt. Eventuele succesgebeurtenissen die een bezoeker tegenkomt terwijl de waarde eVar actief is, worden geteld bij de waarde eVar.
 
@@ -92,28 +92,28 @@ Gebeurtenissen met succes zijn handelingen die kunnen worden bijgehouden. U bepa
 
    ![Nieuwe eVars toevoegen](assets/create-analytics-workspace/add-new-evars.png)
 
-1. Geef een geschikte naam en beschrijving voor elke eVars en **Opslaan** uw wijzigingen. Met deze eVars maken we een Analysis Workspace-project in de volgende sectie. Een gebruiksvriendelijke naam maakt de variabelen gemakkelijk te ontdekken.
+1. Geef een geschikte naam en beschrijving voor elke eVars en **Opslaan** uw wijzigingen. In het Analysis Workspace-project worden de eVars met de juiste naam gebruikt, zodat de variabelen gemakkelijk te vinden zijn onder een gebruiksvriendelijke naam.
 
    ![eVars](assets/create-analytics-workspace/evars.png)
 
 ### Succesgebeurtenissen configureren
 
-Daarna, creëren wij zelfs om de Knoop te volgen CTA klikt.
+Daarna, creëren wij een gebeurtenis om de Knoop te volgen CTA klikt.
 
 1. Van de **Report Suite Manager** venster, selecteert u de **Set-id rapporteren** en klik op **Instellingen bewerken**.
 1. Klikken **Conversie** > **Gebeurtenissen geslaagd**
-1. Met de **Nieuwe toevoegen** optie, creeer een nieuwe gebeurtenis van het douanesucces om de Knoop van de Knoop te volgen CTA klikt en dan **Opslaan** uw wijzigingen.
+1. Met de **Nieuwe toevoegen** optie, creeer een gebeurtenis van het douanesucces om de Knoop van de Knoop te volgen CTA klikt en dan **Opslaan** uw wijzigingen.
    * `Event` : `event8`
    * `Name`:`CTA Click`
    * `Type`:`Counter`
 
    ![eVars](assets/create-analytics-workspace/add-success-event.png)
 
-## Een nieuw project maken in Analysis Workspace {#workspace-project}
+## Een project maken in Analysis Workspace {#workspace-project}
 
 Analysis Workspace is een flexibel browserprogramma waarmee u snel analyses kunt maken en inzichten kunt delen. Gebruikend de belemmering-en-dalingsinterface, kunt u uw analyse ambachtelijk maken, visualisaties toevoegen om gegevens aan het leven te brengen, een dataset in werking te stellen, delen, en planningsprojecten met iedereen in uw organisatie.
 
-Maak vervolgens een nieuwe [project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) om een dashboard te bouwen om de prestaties van de knopen CTA door de plaats te analyseren.
+Maak vervolgens een [project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) om een dashboard te bouwen om de prestaties van de knopen CTA door de plaats te analyseren.
 
 1. Selecteer op de werkbalk Analyse de optie **Werkruimte** en klik op **Een nieuw project maken**.
 
@@ -121,7 +121,7 @@ Maak vervolgens een nieuwe [project](https://experienceleague.adobe.com/docs/ana
 
 1. Kies ervoor te beginnen met een **leeg project** of selecteer een van de vooraf gebouwde sjablonen, opgegeven door Adobe of aangepaste sjablonen die door uw organisatie zijn gemaakt. Er zijn verschillende sjablonen beschikbaar, afhankelijk van de analyse- of gebruikscase die u in gedachten hebt. [Meer informatie](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) over de verschillende beschikbare sjabloonopties.
 
-   In uw project van de Werkruimte, worden de panelen, de lijsten, de visualisaties, en de componenten betreden van het linkerspoor. Dit zijn uw projectbouwstenen.
+   In uw project van de Werkruimte, worden de panelen, de lijsten, de visualisaties, en de componenten betreden van het linkerspoor. Ze maken bouwstenen voor je project.
 
    * **[Componenten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)** - Componenten zijn dimensies, metriek, segmenten of datumbereiken, die allemaal kunnen worden gecombineerd in een tabel met vrije vorm om te beginnen met het beantwoorden van uw zakelijke vraag. Zorg ervoor dat u bekend bent met elk type component voordat u in de analyse gaat duiken. Als u de componentterminologie onder de knie hebt, kunt u beginnen met slepen en neerzetten om uw analyse te maken in een tabel met vrije vorm.
    * **[Visualisaties](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)** - Visualisaties, zoals een staaf of een lijndiagram, worden vervolgens toegevoegd boven op de gegevens om deze visueel tot leven te brengen. In de uiterst linkse spoorlijn, selecteer het middenpictogram van Visualisaties om de volledige lijst van beschikbare visualisaties te zien.
@@ -131,7 +131,7 @@ Maak vervolgens een nieuwe [project](https://experienceleague.adobe.com/docs/ana
 
 ### Gegevensvisualisatie toevoegen met Analysis Workspace
 
-Daarna, bouw een lijst om een visuele vertegenwoordiging van tot stand te brengen hoe de gebruikers met Vraag aan de knopen van de Actie (CTA) op de WKND homepage van de Plaats in wisselwerking staan. Om een dergelijke vertegenwoordiging te bouwen, gebruiken de gegevens die in [Aangeklikte component bijhouden met Adobe Analytics](./track-clicked-component.md). Hieronder volgt een snelle samenvatting van gegevens die voor gebruikersinteractie met de Vraag aan de knopen van de Actie voor de Plaats WKND worden gevolgd.
+Daarna, bouw een lijst om een visuele vertegenwoordiging tot stand te brengen van hoe de gebruikers met communiceren `Call to Action (CTA)` knoppen op de startpagina van de WKND-site. Om een dergelijke vertegenwoordiging te bouwen, gebruiken de gegevens die in [Aangeklikte component bijhouden met Adobe Analytics](./track-clicked-component.md). Hieronder volgt een snelle samenvatting van gegevens die voor gebruikersinteractie met de Vraag aan de knopen van de Actie voor de Plaats WKND worden gevolgd.
 
 * `eVar5` -  `Page template`
 * `eVar6` - `Page Id`
@@ -159,7 +159,7 @@ Daarna, bouw een lijst om een visuele vertegenwoordiging van tot stand te brenge
 
       ![eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
-1. Om te begrijpen hoe de gebruikers met Knopen CTA in wisselwerking staan wanneer zij op de pagina&#39;s van de Plaats WKND zijn, moeten wij metrische metrisch verder breken van het Malplaatje van de Pagina door identiteitskaart van de Knoop (eVar8) metrisch toe te voegen.
+1. Om te begrijpen hoe de gebruikers met Knopen CTA in wisselwerking staan wanneer zij op de pagina&#39;s van de Plaats WKND zijn, is de verdere verdeling door de metrisch van Knoop identiteitskaart (eVar8) toe te voegen nodig.
 
    ![eVar8](assets/create-analytics-workspace/evar8.png)
 
@@ -179,13 +179,13 @@ De Classificatie van Analytics is een manier om de veranderlijke gegevens van An
 
 Laten we nu een variabele Classificatie maken voor Analytics.
 
-1. Van de **Beheer** werkbalkmenu, Selecteren **Rapportageopties**
+1. Van de **Beheer** werkbalkmenu, selecteert u **Rapportageopties**
 1. Selecteer **Set-id rapporteren** van de **Report Suite Manager** venster en klik op **Instellingen bewerken** > **Conversie** > **Conversie-classificaties**
 
    ![Conversieclassificatie](assets/create-analytics-workspace/conversion-classification.png)
 
 1. Van de **Classificatietype selecteren** vervolgkeuzelijst, selecteert u de variabele (eVar8-knop-id) om een classificatie toe te voegen.
-1. Klik op de pijl rechts naast de classificatievariabele die onder de sectie Classificaties wordt vermeld om een nieuwe Classificatie toe te voegen.
+1. Klik op de pijl rechts naast de variabele Classificatie onder de sectie Classificaties om een nieuwe classificatie toe te voegen.
 
    ![Type conversieclassificatie](assets/create-analytics-workspace/select-classification-variable.png)
 
@@ -225,7 +225,7 @@ Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (e
 1. Configureer de bestemming voor het importeren van het bestand.
    * **Rapportsuite selecteren** : WKND Site AEM (rapportsuite)
    * **Te classificeren gegevensset** : Knop-id (conversievariabele eVar8)
-1. Klik op de knop **Bestand kiezen** om het door tabs gescheiden bestand van uw systeem te uploaden en klik vervolgens op **Bestand importeren**
+1. Klik op de knop **Bestand kiezen** uploadt u het door tabs gescheiden bestand van uw systeem en klikt u vervolgens op **Bestand importeren**
 
    ![Bestandsimporteur](assets/create-analytics-workspace/file-importer.png)
 
@@ -235,7 +235,7 @@ Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (e
 
 #### Conversievariabele vervangen door classificatievariabele
 
-1. Selecteer op de werkbalk Analyse de optie **Werkruimte** en opent u de werkruimte waarin wij [Een nieuw project maken in Analysis Workspace](#workspace-project) in deze zelfstudie.
+1. Selecteer op de werkbalk Analyse de optie **Werkruimte** en opent u de werkruimte die is gemaakt in het dialoogvenster [Een project maken in Analysis Workspace](#create-a-project-in-analysis-workspace) in deze zelfstudie.
 
    ![Werkruimte-knop-id](assets/create-analytics-workspace/workspace-report-button-id.png)
 
@@ -251,7 +251,7 @@ Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (e
       ![De knop Werkruimte na](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. U kunt zien dat metrisch van Knoop ID die knoopidentiteitskaart van een Vraag aan de knoop van de Actie (CTA) bevatte nu met een overeenkomstige naam wordt vervangen die in het Malplaatje van de Indeling wordt verstrekt.
-1. Laten we de tabel Analytics Workspace vergelijken met de WKND Home-pagina en de CTA Button-kliktelling en de bijbehorende analyse begrijpen. Gebaseerd op de gegevens van de werkruimtetabel van de werkruimte vrije vorm, is het duidelijk dat 22 keer de gebruikers op hebben geklikt **SKI NOW** en vier keer voor de WKND Home Page Camping in Western Australia **Meer informatie** knop.
+1. Laten we de tabel Analytics Workspace vergelijken met de WKND Home-pagina en de CTA Button-kliktelling en de bijbehorende analyse begrijpen. Gebaseerd op de gegevens van de werkruimtetabel van de werkruimtetabel, is het duidelijk dat 22 keer de gebruikers hebben geklikt **SKI NOW** en vier keer voor de WKND Home Page Camping in Western Australia **Meer informatie** knop.
 
    ![CTA-rapport](assets/create-analytics-workspace/workspace-report-buttons-wknd.png)
 
@@ -265,4 +265,4 @@ Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (e
 
 ## Gefeliciteerd!
 
-U hebt net geleerd hoe u gegevens die zijn vastgelegd vanaf een Adobe Experience Manager-site kunt toewijzen aan maateenheden en dimensies in Adobe Analytics-rapportaereeksen, een classificatie voor de metriek kunt uitvoeren en een gedetailleerd rapportdashboard kunt maken met de Analysis Workspace-functie van Adobe Analytics.
+U hebt net geleerd hoe u gegevens die zijn vastgelegd vanaf een Adobe Experience Manager-site kunt toewijzen aan maateenheden en dimensies in Adobe Analytics-rapportageopes. Ook, voerde een Classificatie voor de metriek uit, en bouw een gedetailleerd rapporteringsdashboard gebruikend de eigenschap van Analysis Workspace van Adobe Analytics.
