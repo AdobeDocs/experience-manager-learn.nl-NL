@@ -9,9 +9,9 @@ level: Beginner
 kt: kt-8049
 exl-id: bd9e1fc1-2fc7-452c-9a4a-2e16f6821760
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
@@ -34,3 +34,7 @@ Om het gebruik te verwezenlijken werd een stap van het douanewerkschemaproces ge
 Voor dit doel is een stap voor een aangepast workflowproces geschreven. In deze stap van het douaneproces bevolken wij werkschemariabelen van type ArrayList van Documenten en ArrayList van Koorden.
 
 ![send-list-of-documents](assets/send-list-of-documents.JPG)
+
+## Volgende stappen
+
+[Formulierbijlagen comprimeren](./custom-process-step.md)

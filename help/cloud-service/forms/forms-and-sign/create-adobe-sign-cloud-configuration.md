@@ -11,9 +11,9 @@ topic: Development
 kt: 7428
 thumbnail: 332437.jpg
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,14 @@ Met de configuratie van cloudservices in AEM kunt u integratie tussen AEM en and
 In de volgende video worden de stappen doorlopen die nodig zijn om de configuratie van cloudservices te maken voor de integratie van AEM met Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
+
+## Problemen oplossen
+
+Als er een fout optreedt bij het configureren van de cloudconfiguratie voor bovenstaande ondertekening, kunt u de volgende stappen uitvoeren om problemen op te lossen
+* Zorg ervoor dat de URL voor omleiding die is opgegeven in de Acrobat Sign API-toepassing de volgende notatie heeft
+&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
+Bijvoorbeeld: https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS is de naam van de container die de cloudconfiguratie zal bevatten
+* Controleer of de Auth-URL juist is
+* Controleer uw Client-id en clientgeheim
+* De modus van het venster Incognito proberen
+

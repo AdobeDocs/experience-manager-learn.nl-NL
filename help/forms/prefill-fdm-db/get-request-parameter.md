@@ -1,16 +1,17 @@
 ---
 title: Request-parameter ophalen
 description: Toegang tot de verzoekparameter tot de prefill dienst van een model van vormgegevens
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 5815
 thumbnail: kt-5815.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a640539d-c67f-4224-ad81-dd0b62e18c79
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -19,17 +20,17 @@ ht-degree: 0%
 
 ## Get empID, parameter
 
-De volgende stap bestaat uit het benaderen van de empID-parameter vanaf de URL. De waarde van de empID-aanvraagparameter wordt vervolgens doorgegeven aan de servicebewerking **_get_** van het formuliergegevensmodel.
+De volgende stap bestaat uit het benaderen van de empID-parameter vanaf de URL. De waarde van de empID-aanvraagparameter wordt vervolgens doorgegeven aan de **_get_** de dienstverrichting van het model van vormgegevens.
 Met het oog op deze cursus hebben we het volgende gemaakt en verstrekt
 
-* Aangepast formuliersjabloon met de naam **_FDMDemo_**
-* Paginacomponent **_fdmdemo_**
+* Aangepast formuliersjabloon genaamd **_FDMDemo_**
+* Paginacomponent aangeroepen **_fdmdemo_**
 * De aangepaste JPEG-indeling is opgenomen in de paginacomponent
 * De adaptieve formuliersjabloon is gekoppeld aan de paginacomponent
 
 Op deze manier wordt onze code in de aangepaste jsp alleen uitgevoerd wanneer het adaptieve formulier dat is gebaseerd op deze aangepaste sjabloon, wordt weergegeven
 
-* [Het ](assets/template-page-component.zip) pakket importeren met  [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* [Het pakket importeren](assets/template-page-component.zip) gebruiken [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 * [fdmrequest.jsp openen](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
 * Verwijder de commentaarregel.
 * Uw wijzigingen opslaan
@@ -49,3 +50,7 @@ De waarde van empID is gekoppeld aan de sleutel empID in paraMap. Deze kaart wor
 >[!NOTE]
 >
 >De belangrijkste empID moet met de bindende waarde van de naburige entiteiten de dienst krijgen
+
+## Volgende stappen
+
+[Een adaptief formulier maken op basis van een formuliergegevensmodel](./create-adaptive-form.md)

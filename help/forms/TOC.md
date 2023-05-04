@@ -7,7 +7,7 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
 source-wordcount: '1804'
 ht-degree: 2%
@@ -45,10 +45,10 @@ ht-degree: 2%
    + [Cascading drop-down lijsten](some-useful-integrations/geonames-org.md)
    + [Integreren met ServiceNow](some-useful-integrations/service-now.md)
 + OSGi-bundel maken {#creating-your-first-osgi-bundle}
-   + [Uw omgeving instellen](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
-   + [OSGi-service maken](creating-your-first-osgi-bundle/create-osgi-service.md)
-   + [Sling Servlet maken](creating-your-first-osgi-bundle/create-servlet.md)
-   + [Inclusief bundels van derden](creating-your-first-osgi-bundle/include-third-party-jars.md)
+   + [1 - Uw omgeving instellen](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
+   + [2 - OSGi-service maken](creating-your-first-osgi-bundle/create-osgi-service.md)
+   + [3 - Sling Servlet maken](creating-your-first-osgi-bundle/create-servlet.md)
+   + [4 - Inclusief bundels van derden](creating-your-first-osgi-bundle/include-third-party-jars.md)
 + Adaptieve Forms {#adaptive-forms}
    + [AEM Forms installeren in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [32-bits pakketten installeren op Linux](adaptive-forms/installing-aem-form-on-linux.md)
@@ -101,16 +101,16 @@ ht-degree: 2%
    + [Formuliergegevensmodel met Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Items dynamisch aan keuzeselectie-component toevoegen](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + DAM-mapinhoud selecteren en samenstellen{#select-dam-folder-content}
-   + [Inleiding](display-and-assemble-dam-folder-contents/introduction.md)
-   + [Selectiegroep vullen](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
-   + [Geselecteerde elementen samenstellen](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
-   + [De elementen lokaal implementeren](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
+   + [1- Inleiding](display-and-assemble-dam-folder-contents/introduction.md)
+   + [2 - Formaat keuzegroep](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
+   + [3 - Geselecteerde elementen samenstellen](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
+   + [4 - De elementen lokaal implementeren](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
 + Aangepast formulier vooraf invullen met behulp van formuliergegevensmodel{#prefill-fdm-db}
-   + [Inleiding](prefill-fdm-db/introduction.md)
-   + [Databasetabellen maken](prefill-fdm-db/create-database-tables.md)
-   + [Formuliergegevensmodel configureren](prefill-fdm-db/configuring-form-data-model.md)
-   + [Request-parameter ophalen](prefill-fdm-db/get-request-parameter.md)
-   + [adaptief formulier maken](prefill-fdm-db/create-adaptive-form.md)
+   + [1 - Inleiding](prefill-fdm-db/introduction.md)
+   + [2 - Databasetabellen maken](prefill-fdm-db/create-database-tables.md)
+   + [3 - Formuliergegevensmodel configureren](prefill-fdm-db/configuring-form-data-model.md)
+   + [4 - Aanvraagparameter ophalen](prefill-fdm-db/get-request-parameter.md)
+   + [5 - Een adaptief formulier maken](prefill-fdm-db/create-adaptive-form.md)
 + UI-tips en -trucs{#ui-tips-and-tricks}
    + [Tekst van wachtwoordveld in-/uitschakelen](ui-tips-tricks/toggle-password.md)
    + [Ruimte, werkbalkknoppen](ui-tips-tricks/toolbar-buttons.md)
@@ -118,14 +118,14 @@ ht-degree: 2%
    + [Pictogrammen toevoegen aan navigatievensters](ui-tips-tricks/active-complete.md)
    + [Velden automatisch aanvullen](ui-tips-tricks/auto-complete.md)
 + Postvak IN aanpassen{#inbox-customization}
-   + [Inleiding](inbox-customization/introduction.md)
-   + [Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
-   + [Sweeksjabloon gebruiken](inbox-customization/use-sightly-template.md)
+   + [1 - Inleiding](inbox-customization/introduction.md)
+   + [2 - Aangepaste kolom toevoegen](inbox-customization/add-married-column.md)
+   + [3 - Sluimsjabloon gebruiken](inbox-customization/use-sightly-template.md)
 + E-mailformulierbijlagen{#zipping-form-attachments}
-   + [Inleiding](zipping-form-attachments/introduction.md)
-   + [Formulierbijlagen comprimeren](zipping-form-attachments/custom-process-step.md)
-   + [E-mailformulierbijlagen](zipping-form-attachments/populating-list-of-documents.md)
-   + [De oplossing testen](zipping-form-attachments/test.md)
+   + [1 - Inleiding](zipping-form-attachments/introduction.md)
+   + [2 - Zip-formulierbijlagen](zipping-form-attachments/custom-process-step.md)
+   + [3 - E-mailformulierbijlagen](zipping-form-attachments/populating-list-of-documents.md)
+   + [4 - Test de oplossing](zipping-form-attachments/test.md)
 + Adaptief formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
    + [Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
    + [Gegevensbron configureren](store-and-retrieve-af-with-2fa/configure-data-source.md)

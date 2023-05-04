@@ -1,32 +1,36 @@
 ---
 title: Databasetabellen maken
 description: Database maken voor gebruik door formuliergegevensmodel
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 5811
 thumbnail: kt-5811.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1136244a-c3e6-45f6-8af8-eb3c100f838e
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '105'
 ht-degree: 0%
 
 ---
-
 
 # Databasetabellen maken
 
 Het formuliergegevensmodel kan worden gebaseerd op RDBMS-, RESTfull-, SOAP- of OData-bronnen. De focus van deze cursus ligt op het vooraf instellen van een adaptief formulier met behulp van een formuliergegevensmodel dat wordt ondersteund door de RDBMS-gegevensbron. Voor deze zelfstudie werd MYSQL-database gebruikt. We hebben de volgende twee tabellen gemaakt om het gebruiksgeval aan te tonen
 
-* **** newhiretable - Deze lijst slaat de nieuwe informatie op
+* **newheren** table - Deze lijst slaat de juiste informatie op
 
    ![newheren](assets/newhire-table.png)
 
 
-* **Begunstigd -** Deze slaat de begunstigden op
+* **begunstigden** Tabel - Hiermee worden alle begunstigden opgeslagen
 
    ![begunstigden](assets/beneficiaries-table.png)
 
-U kunt het [sql dossier](assets/db-schema.sql) invoeren gebruikend werkbank MySQL om aan lijsten met sommige steekproefgegevens tot stand te brengen.
+U kunt de [sql-bestand](assets/db-schema.sql) met MySQL-workbench maken van tabellen met voorbeeldgegevens.
+
+## Volgende stappen
+
+[Formuliergegevensmodel configureren](./configuring-form-data-model.md)

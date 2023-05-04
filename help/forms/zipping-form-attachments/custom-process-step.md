@@ -1,24 +1,24 @@
 ---
 title: Stap voor aangepast proces naar ZIP-bestandsbijlagen
 description: Aangepaste processtap om de aangepaste formulierbijlagen toe te voegen aan een ZIP-bestand en het ZIP-bestand op te slaan in een workflowvariabele
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1131dca8-882d-4904-8691-95468fb708b7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
 
-
 # Aangepaste processtap
 
 
-Er is een aangepaste processtap geïmplementeerd om het ZIP-bestand te maken dat de formulierbijlagen bevat. Als u niet bekend bent met het maken van een OSGi-bundel, [volg deze instructies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Er is een aangepaste processtap geïmplementeerd om het ZIP-bestand te maken dat de formulierbijlagen bevat. Als u niet bekend bent met het maken van een OSGi-bundel, [Volg deze instructies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 De code in de stap van het douaneproces doet het volgende
 
@@ -70,7 +70,7 @@ import com.day.cq.search.result.SearchResult;
 
 public class ZipFormAttachments implements WorkflowProcess {
 
-	 private static final Logger log = LoggerFactory.getLogger(ZipFormAttachments.class);
+     private static final Logger log = LoggerFactory.getLogger(ZipFormAttachments.class);
      @Reference
      QueryBuilder queryBuilder;
 
@@ -127,18 +127,18 @@ public class ZipFormAttachments implements WorkflowProcess {
                     Node payloadNode = session.getNode(payloadPath);
                     Node zippedFileNode =  payloadNode.addNode("zipped_attachments.zip", "nt:file");
                     javax.jcr.Node resNode = zippedFileNode.addNode("jcr:content", "nt:resource");
-        		
-        			ValueFactory valueFactory = session.getValueFactory();
-        			Document zippedDocument = new Document(baos.toByteArray());
+                
+                    ValueFactory valueFactory = session.getValueFactory();
+                    Document zippedDocument = new Document(baos.toByteArray());
 
-        			Binary contentValue = valueFactory.createBinary(zippedDocument.getInputStream());
-        			metaDataMap.put("no_of_attachments", no_of_attachments);
+                    Binary contentValue = valueFactory.createBinary(zippedDocument.getInputStream());
+                    metaDataMap.put("no_of_attachments", no_of_attachments);
 
                     workflowSession.updateWorkflowData(workItem.getWorkflow(), workItem.getWorkflow().getWorkflowData());
                     log.debug("Updated workflow");
-        			resNode.setProperty("jcr:data", contentValue);
-        			session.save();
-        			zippedDocument.close();
+                    resNode.setProperty("jcr:data", contentValue);
+                    session.save();
+                    zippedDocument.close();
 
 
 
@@ -159,5 +159,8 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Zorg ervoor dat u een variabele met de naam *no_of_attachments* van het type Double in de workflow hebt, zodat deze code werkt.
+> Zorg ervoor dat u een variabele hebt met de naam  *no_of_attachments* van het type Dubbelklik in de workflow om deze code te laten werken.
 
+## Volgende stappen
+
+[ArrayList-workflowvariabelen vullen met Bijlagen en Bijlagenaam](./custom-process-step.md)

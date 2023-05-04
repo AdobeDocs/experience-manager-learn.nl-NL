@@ -7,9 +7,10 @@ topic: Development
 role: User
 level: Beginner
 last-substantial-update: 2023-01-01T00:00:00Z
-source-git-commit: a2bbb26751c9182056b4fe6d36eeeec964001df8
+exl-id: 29f56d13-c2e2-4bc2-bfdc-664c848dd851
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -113,3 +114,7 @@ Een adaptief formulier maken en het formulier koppelen aan de clientbibliotheek 
 ![instellen, opties](assets/set-options-newsletter.png)
 
 Er wordt een JavaScript-functie aangeroepen **getDAMFolderAssets** en geeft u het pad van de elementen van de DAM-map door naar de lijst in het formulier.
+
+## Volgende stappen
+
+[Geselecteerde elementen samenstellen](./assemble-selected-newsletters.md)

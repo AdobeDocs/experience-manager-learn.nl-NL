@@ -12,9 +12,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -88,10 +88,14 @@ return isMarried(inboxItem);
 * Gehuwde kolom toevoegen aan Postvak IN en uw wijzigingen opslaan
 * [Naar interface FormsAndDocuments gaan](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Het voorbeeldformulier importeren](assets/snap-form.zip) door _Bestand uploaden_ van _Maken_ menu
-* [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Selecteer _huwelijkse staat_ en het formulier verzenden
    [inbox weergeven](http://localhost:4502/aem/inbox)
 
 Als u het formulier verzendt, wordt de workflow geactiveerd en wordt een taak toegewezen aan de gebruiker van de &quot;beheerder&quot;. U zou een waarde onder de Getrouwde kolom zoals aangetoond in dit het schermschot moeten zien
 
 ![gehuwde kolom](assets/married-column.PNG)
+
+## Volgende stappen
+
+[Gehuwde kolom weergeven](./use-sightly-template.md)

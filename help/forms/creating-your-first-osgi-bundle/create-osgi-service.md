@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -110,3 +110,8 @@ Importeer en installeer het pakket in AEM met de [pakketbeheer](http://localhost
 
 Gebruik postman om een POST aan te roepen en de invoerparameters te verstrekken zoals die in het hieronder ontsproten scherm worden getoond
 ![postbode](assets/test-service-postman.JPG)
+
+## Volgende stappen
+
+[Sling Servlet maken](./create-servlet.md)
+

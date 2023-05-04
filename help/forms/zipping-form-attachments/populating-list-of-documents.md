@@ -2,30 +2,30 @@
 title: Aangepaste processtap om lijstvariabelen te vullen
 description: Aangepaste processtap voor het invullen van lijstvariabelen van het type document en tekenreeks
 feature: Workflow
-topic: Ontwikkeling
+topic: Development
 version: 6.5
 role: Developer
 level: Beginner
 kt: kt-8063
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 1%
+source-wordcount: '167'
+ht-degree: 0%
 
 ---
-
 
 # Aangepaste processtap
 
 
-Er is een aangepaste processtap geïmplementeerd om de workflowvariabelen voor arraylijsten te vullen. Als u niet bekend bent met het maken van een OSGi-bundel, [volg deze instructies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Er is een aangepaste processtap geïmplementeerd om workflowvariabelen van het type Array List te vullen met de bijlagen en bijlagenamen. Deze variabele wordt vervolgens gebruikt in de workflowcomponent E-mail verzenden. Als u niet bekend bent met het maken van een OSGi-bundel, [Volg deze instructies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 De code in de stap van het douaneproces doet het volgende
 
 * Vraag naar alle adaptieve formulierbijlagen in de payload-map. De mapnaam wordt als procesargument doorgegeven aan de processtap.
 
-* `listOfDocuments`-workflowvariabele vullen
-* `attachmentNames`-workflowvariabele vullen
+* Vullen `listOfDocuments` workflowvariabele
+* Vullen `attachmentNames` workflowvariabele
 * De waarde van de workflowvariabele instellen (`no_of_attachments`)
 
 ```java
@@ -113,5 +113,9 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 >
 > Zorg ervoor dat de code werkt met de volgende variabelen in uw workflow
 > *listOfDocuments* - variabele van het type ArrayList of Documents
-> *gehechtheidNames* - variabele van type ArrayList van Koord
-> *no_of_attachments* - variabele van type Double
+> *gehechtheidNames* - variabele van het type ArrayList of String
+> *no_of_attachments* - variabele van het type Double
+
+## Volgende stappen
+
+[Test de oplossing op uw lokale systeem](./test.md)
