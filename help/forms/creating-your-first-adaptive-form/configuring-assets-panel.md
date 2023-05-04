@@ -9,14 +9,14 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: cd8e5fad-d17a-4f80-b4f6-0d43be4dfb80
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---
 
-# Componenten toevoegen aan de sectie Middelen {#adding-components-to-assets-section}
+# Componenten toevoegen aan het middelenpaneel {#adding-components-to-assets-section}
 
 Configureer de accordeonlay-out voor het middelenpaneel. De accordeonlay-out biedt een betere ervaring voor de eindgebruiker bij het toevoegen van herhaalbare secties.
 
@@ -26,3 +26,7 @@ Configureer de accordeonlay-out voor het middelenpaneel. De accordeonlay-out bie
 
 **Overzichtstitel instellen**
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+
+## Volgende stappen
+
+[Vervolgkeuzelijst vullen met aangepaste functie](./using-custom-functions-and-code-editor.md)

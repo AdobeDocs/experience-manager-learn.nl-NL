@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
 last-substantial-update: 2020-02-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -34,3 +34,7 @@ U hebt het volgende nodig:
 * [Download het client-libs-and-logo](assets/client-libs-and-logo.zip) en [aan de slag-fragment](assets/getting-started-fragment.zip) op uw vaste schijf.
 
 * ZIP-bestanden importeren in AEM [pakketbeheer ](http://localhost:4502/crx/packmgr/index.jsp)
+
+## Volgende stappen
+
+[Adaptief formuliersjabloon maken](./create-adaptive-form-template.md)

@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 86a67f43-882f-4e97-b528-17492689fcfc
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
@@ -27,3 +27,7 @@ Een fragment is een herbruikbaar onderdeel van een formulier. Een fragment kan b
 Zie [documentatie over adaptieve formuliersjablonen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) voor meer informatie
 
 Indien nodig kunt u de [Spouse-details-fragment ](assets/spouse-details-fragment.zip) en importeren in AEM met behulp van de [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+
+## Volgende stappen
+
+[Adaptief formulier maken](./create-adaptive-form.md)

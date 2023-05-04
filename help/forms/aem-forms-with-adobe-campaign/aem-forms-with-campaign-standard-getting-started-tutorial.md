@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 exl-id: e028837b-13d8-4058-ac25-ed095f49524c
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ Volg de volgende instructies om aan de slag te gaan
 * [Een servicegebruiker maken zoals vermeld in dit artikel](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Zorg ervoor om de bundel OSGi op te stellen verbonden aan het artikel.
 * Sla de persoonlijke ACS-sleutel op in etc/key/campaign/private.key. U moet een map maken met de naam Campagne onder e.d./key.
 * [Leestoegang tot de campagnemap aan de de dienstgebruiker &quot;gegevens&quot;verlenen.](http://localhost:4502/useradmin)
+
+## Volgende stappen
+
+[JWT- en toegangstoken genereren](partone.md)

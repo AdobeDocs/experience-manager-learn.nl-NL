@@ -7,20 +7,20 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
 # Adaptief formulier vooraf invullen met ACS-profiel {#prefilling-adaptive-form-using-acs-profile}
 
-In dit deel, zullen wij Adaptief Vorm met profielinformatie vooraf vullen die van ACS wordt gehaald. AEM Forms beschikt over deze krachtige mogelijkheden om adaptieve formulieren vooraf in te vullen.
+In dit deel, vullen wij Adaptief Vorm met profielinformatie die van ACS wordt gehaald. AEM Forms beschikt over deze krachtige mogelijkheden om adaptieve formulieren vooraf in te vullen.
 
 Voor meer informatie over het vooraf invullen van adaptieve formulieren, lees dit [zelfstudie](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-Om Aangepast Vorm vooraf in te vullen door gegevens van ACS te halen, zullen wij veronderstellen dat er profiel in ACS is dat de zelfde e-mail zoals het programma geopende AEM gebruiker heeft. Bijvoorbeeld, als e-mailidentiteitskaart van de persoon die in AEM wordt geregistreerd csimms@adobe.com is, verwachten wij om een profiel in ACS te vinden waarvan e-mail csimms@adobe.com is.
+Om Aangepast Vorm vooraf in te vullen door gegevens van ACS te halen, veronderstellen wij dat er profiel in ACS is dat de zelfde e-mail zoals het programma geopende AEM gebruiker heeft. Bijvoorbeeld, als e-mailidentiteitskaart van de persoon die in AEM wordt geregistreerd csimms@adobe.com is, verwachten wij om een profiel in ACS te vinden waarvan e-mail csimms@adobe.com is.
 
 De volgende stappen zijn nodig om profielinformatie van ACS te halen gebruikend REST API
 
@@ -28,7 +28,7 @@ De volgende stappen zijn nodig om profielinformatie van ACS te halen gebruikend 
 * Exchange JWT voor toegangstoken
 * Maak een REST vraag aan ACS en haal profiel door e-mail terug
 * XML-document maken met de profielgegevens
-* Hiermee wordt InputStream van het XML-document geretourneerd die door AEM Forms wordt gebruikt
+* Hiermee wordt InputStream geretourneerd van het XML-document dat door AEM Forms wordt gebruikt
 
 ![prefillservice](assets/prefillserviceaf.gif)
 
@@ -233,4 +233,9 @@ Volg de volgende instructies om dit op uw systeem te laten werken:
 * [Controleer of u de hier beschreven stappen hebt uitgevoerd](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Voorbeeld van adaptief formulier in AEM importeren met pakketbeheer](assets/pre-fill-af-from-campaign.zip)
 * Meld u aan bij AEM met een gebruiker wiens e-mailadres wordt gedeeld door een profiel in Adobe Campaign. Bijvoorbeeld, als e-mailidentiteitskaart van de AEM gebruiker johndoe@adobe.com is, moet u een profiel in ACS hebben de waarvan e-mail johndoe@adobe.com is.
-* [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+
+## Volgende stappen
+
+[Adobe Campaign-profiel maken met formuliergegevensmodel](./partfour.md)
+

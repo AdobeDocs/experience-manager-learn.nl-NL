@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -28,5 +28,8 @@ Zie [documentatie over adaptieve formuliersjablonen](https://experienceleague.ad
 Indien nodig kunt u de [adaptieve formuliersjabloon](assets/peak-application-template.zip) en importeren in AEM met behulp van de [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 
 
+## Volgende stappen
+
+[Adaptief formulierfragment maken](./create-form-fragment.md)
 
 

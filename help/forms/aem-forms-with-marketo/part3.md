@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -49,3 +49,8 @@ Wijs uw browser aan [pagina voor gegevensintegratie.](http://localhost:4502/aem/
 1. Selecteer de enige dienst die wordt vermeld en klik op de Dienst van de Test
 1. Geef een geldige leadId op en klik op Testen. Als alles goed gaat, moet u de hoofddetails terugkrijgen, zoals hieronder in de schermafbeelding wordt getoond
    ![testresultaten](assets/testresults.jfif)
+
+## Volgende stappen
+
+[Alles samenvoegen voor testen](./part4.md)
+

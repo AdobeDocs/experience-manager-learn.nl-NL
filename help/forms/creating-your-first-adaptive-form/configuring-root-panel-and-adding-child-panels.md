@@ -9,16 +9,23 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a68c41b8-3e80-4b25-a933-9ceb8aee1e01
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '73'
 ht-degree: 0%
 
 ---
 
 # Onderliggende deelvensters toevoegen aan hoofdvenster {#adding-child-panels-to-root-panel}
 
-Wanneer u onderliggende deelvensters aan het hoofddeelvenster toevoegt, moet u **Zorg ervoor dat u in de bewerkingsmodus werkt. De bewerkknop bevindt zich rechtsboven in de browser.**
+Voeg onderliggende deelvensters toe aan het hoofddeelvenster.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
+
+>[!NOTE]
+>Wanneer u onderliggende deelvensters aan het hoofddeelvenster toevoegt, moet u **Zorg ervoor dat u in de bewerkingsmodus werkt. De bewerkknop bevindt zich rechtsboven in de browser.**
+
+## Volgende stappen
+
+[Componenten toevoegen aan het deelvenster Personen](./adding-components-to-people-panel.md)

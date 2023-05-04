@@ -8,17 +8,21 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: de3a0444-64ae-45a1-8329-aafa6f5add49
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '54'
 ht-degree: 0%
 
 ---
 
 # Adaptief formulier maken {#creating-adaptive-form}
 
-In Deel1 zullen wij Aangepast Vorm creëren dat op het malplaatje wordt gebaseerd dat in de vroegere les wordt gecreeerd, en zullen toolbar met aangewezen knopen vormen.
+We maken adaptief formulier op basis van de sjabloon die in de vorige les is gemaakt en configureren de werkbalk met de juiste knoppen.
 
 **Uw eerste adaptieve formulier maken**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
+
+## Volgende stappen
+
+[Onderliggende deelvensters toevoegen aan het hoofddeelvenster](./configuring-root-panel-and-adding-child-panels.md)
