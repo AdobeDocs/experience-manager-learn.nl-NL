@@ -1,26 +1,26 @@
 ---
 title: Interactieve communicatie voor webkanaal maken
-seo-title: Interactieve communicatie voor webkanaal maken
+seo-title: Create Interactive Communication for Web Channel
 description: Dit is onderdeel 6 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel, zullen wij Interactieve Communicatie voor het Kanaal van het Web tot stand brengen.
-seo-description: Dit is onderdeel 6 van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel, zullen wij Interactieve Communicatie voor het Kanaal van het Web tot stand brengen.
+seo-description: This is part 6 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create Interactive Communication for Web Channel.
 uuid: a1b29c5b-a323-4bda-aa99-5fb98614b690
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: a0a0c8dc-5302-446c-9fec-e23fe1320e34
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
-
 
 # Interactieve communicatie voor webkanaal maken
 
@@ -41,9 +41,12 @@ In dit deel, zullen wij Interactieve Communicatie voor het Kanaal van het Web to
 
    1. Schakel het selectievakje Kanaal afdrukken uit. Het document wordt niet gemaakt voor het afdrukkanaal.
    1. Web: Selecteer deze optie om het document voor het webkanaal te genereren
-   1. Interactieve communicatie: Sjabloon: **global>RetirementAccountStatemen** t(Dit is de sjabloon die in de vorige stap is gemaakt)
+   1. Interactieve communicatie: Sjabloon: **global>RetirementAccountStatus** t(Dit is de sjabloon die in de vorige stap is gemaakt)
    1. Thema:** Referentiethema ->Canvas 2.0**
 
 1. Tik maken
 1. U kunt op Gereed of Bewerken klikken om het dialoogvenster te sluiten.
 
+## Volgende stappen
+
+[Tekst en afbeelding aan het document toevoegen](./partseven.md)

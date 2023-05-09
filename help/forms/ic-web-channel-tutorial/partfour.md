@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d742d77b-a064-46e8-862a-2d3e1cc56f63
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -34,3 +34,7 @@ Webkanaaldocumentsjabloon maken in AEM Forms 6.5
 De sjabloon heeft doelgebieden/plaatsaanduidingen die verschillende soorten documentfragmenten bevatten. Een sjabloon kan bijvoorbeeld doelgebieden voor logo&#39;s en een ander doelgebied voor tekstinhoud hebben.
 
 Zodra het malplaatje van het Webkanaaldocument wordt gecreeerd, kunt u Interactieve Communicatie documenten dan creëren die op het malplaatje worden gebaseerd.
+
+## Volgende stappen
+
+[Documentfragment maken](./partfive.md)

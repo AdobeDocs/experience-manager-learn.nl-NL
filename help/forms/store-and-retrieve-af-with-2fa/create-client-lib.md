@@ -1,24 +1,25 @@
 ---
 title: Clientbibliotheken maken
 description: Clientbibliotheek maken om de klikgebeurtenis van de knop "Opslaan en afsluiten" af te handelen
-feature: Adaptieve Forms
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: c90eea73-bd44-40af-aa98-d766aa572415
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
 # Clientbibliotheek maken
 
-Maak [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) die de code bevat om de methode `doAjaxSubmitWithFileAttachment` van de `guideBridge`-API aan te roepen op de klikgebeurtenis van de knop die wordt aangeduid door de CSS-klasse **savebutton**.  We geven de adaptieve formuliergegevens `fileMap` en `mobileNumber` door aan het eindpunt dat luistert op `**/bin/storeafdatawithattachments`
+Maken [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) die de code bevat om de methode aan te roepen `doAjaxSubmitWithFileAttachment` van de `guideBridge` API op de klikgebeurtenis van de knoop die door de CSS klasse wordt geïdentificeerd **saveknop**.  We geven de adaptieve formuliergegevens door, `fileMap`en de `mobileNumber` aan het eindpunt luisterend bij `**/bin/storeafdatawithattachments`
 
 Nadat de formuliergegevens zijn opgeslagen, wordt een unieke toepassings-id gegenereerd en in een dialoogvenster aan de gebruiker getoond. Als de gebruiker het dialoogvenster sluit, wordt hij naar het formulier geleid waarmee hij het opgeslagen adaptieve formulier kan ophalen met de unieke toepassings-id.
 
@@ -66,6 +67,10 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> We hebben [bootbox javascript library](http://bootboxjs.com/examples.html) gebruikt om het dialoogvenster weer te geven
+> We hebben [javascript-bibliotheek bootbox](http://bootboxjs.com/examples.html) om dialoogvenster weer te geven
 
-De clientbibliotheken die in dit voorbeeld worden gebruikt, kunnen [hier worden gedownload](assets/client-libraries.zip)
+De clientbibliotheken die in dit voorbeeld worden gebruikt, kunnen [hier gedownload](assets/client-libraries.zip)
+
+## Volgende stappen
+
+[Verifieer gebruikers met de dienst OTP](./verify-users-with-otp.md)

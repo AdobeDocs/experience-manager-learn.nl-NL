@@ -1,17 +1,18 @@
 ---
 title: Clientbibliotheek maken
 description: Clientbibliotheekcode voor het ophalen van het volgende formulier ter ondertekening
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6907
 thumbnail: 6907.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3c148b30-2c7d-428d-9a3c-f3067ca3a239
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 2%
+source-wordcount: '91'
+ht-degree: 1%
 
 ---
 
@@ -74,3 +75,7 @@ $(document).ready(function()
 ## Assets
 
 [Clientlib kan hier worden gedownload](assets/get-next-form-client-lib.zip)
+
+## Volgende stappen
+
+[Aangepaste formuliersjabloon maken voor dit gebruik](./create-af-template.md)

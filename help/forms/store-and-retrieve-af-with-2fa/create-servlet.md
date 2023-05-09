@@ -1,26 +1,27 @@
 ---
 title: servlet maken
 description: Maak servlet voor de verwerking van de POST-aanvragen om de formuliergegevens op te slaan
-feature: Adaptieve Forms
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6539
 thumbnail: 6539.pg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a24ea445-3997-4324-99c4-926b17c8d2ac
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 1%
+source-wordcount: '88'
+ht-degree: 0%
 
 ---
 
 # servlet maken
 
-De volgende stap is een servlet tot stand te brengen die de aangewezen methodes van onze douaneOSGi dienst zal roepen. De servlet heeft toegang tot de adaptieve formuliergegevens, bestandsbijlagen. De servlet retourneert een unieke toepassings-id die kan worden gebruikt om het gedeeltelijk ingevulde adaptieve formulier op te halen.
+De volgende stap is een servlet tot stand te brengen die de aangewezen methodes van onze douaneOSGi dienst roept. De servlet heeft toegang tot de adaptieve formuliergegevens, bestandsbijlagen. De servlet retourneert een unieke toepassings-id die kan worden gebruikt om het gedeeltelijk ingevulde adaptieve formulier op te halen.
 
-Deze servlet wordt geactiveerd wanneer de gebruiker op de knop Opslaan en afsluiten klikt op het adaptieve formulier
+Deze servlet wordt aangeroepen wanneer de gebruiker op de knop Opslaan en afsluiten klikt op het adaptieve formulier
 
 ```java
 package com.techmarketing.core.servlets;
@@ -77,3 +78,7 @@ public class StoreDataInDBWithAttachmentsInfo extends SlingAllMethodsServlet {
     }
 }
 ```
+
+## Volgende stappen
+
+[Formulier weergeven met opgeslagen formuliergegevens](./retrieve-saved-form.md)

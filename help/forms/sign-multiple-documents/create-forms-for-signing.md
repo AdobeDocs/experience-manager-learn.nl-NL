@@ -9,9 +9,9 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -47,3 +47,7 @@ Nadat alle formulieren in het pakket zijn ingevuld en ondertekend, moeten we het
 ## Assets
 
 De voorbeeldformulieren, inclusief de formulieren die in deze zelfstudie worden gebruikt, kunnen [hier gedownload](assets/forms-for-signing.zip)
+
+## Volgende stappen
+
+[Test de oplossing op uw lokale systeem](./testing-and-trouble-shooting.md)

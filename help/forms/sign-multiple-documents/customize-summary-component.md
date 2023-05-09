@@ -1,20 +1,20 @@
 ---
 title: Samenvattingscomponent aanpassen
 description: Breid de overzichtsstapcomponent uit om de mogelijkheid te omvatten om naar het volgende formulier in het pakket te navigeren.
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fb68579d-241c-414d-92f4-13194f4d1923
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '185'
+ht-degree: 0%
 
 ---
-
 
 # Samenvattingsstap aanpassen
 
@@ -33,7 +33,7 @@ De nieuwe component is gebaseerd op de overzichtscomponent van het vak.
 Er is een knop toegevoegd waarmee u naar het volgende formulier kunt navigeren voor ondertekening
 ![sjablooncode](assets/template-code.PNG)
 
-summary.jsp heeft de volgende code. Het heeft verwijzing naar de cliëntbibliotheek die door categorie id **getnextform** wordt geïdentificeerd
+summary.jsp heeft de volgende code. Er wordt verwezen naar de clientbibliotheek die wordt aangeduid door de categorie-id **getnextform**
 
 ```java
 <%--
@@ -46,6 +46,8 @@ summary.jsp heeft de volgende code. Het heeft verwijzing naar de cliëntbiblioth
 
 ## Assets
 
-De aangepaste summiere component kan [hier worden gedownload](assets/custom-summary-step.zip)
+De aangepaste overzichtscomponent kan [hier gedownload](assets/custom-summary-step.zip)
 
+## Volgende stappen
 
+[Het volgende formulier ophalen voor ondertekening](./create-client-lib.md)

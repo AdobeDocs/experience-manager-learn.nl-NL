@@ -7,10 +7,10 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -127,17 +127,17 @@ ht-degree: 2%
    + [3 - E-mailformulierbijlagen](zipping-form-attachments/populating-list-of-documents.md)
    + [4 - Test de oplossing](zipping-form-attachments/test.md)
 + Adaptief formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
-   + [Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
-   + [Gegevensbron configureren](store-and-retrieve-af-with-2fa/configure-data-source.md)
-   + [Formulierbijlagen opslaan](store-and-retrieve-af-with-2fa/store-form-attachments.md)
-   + [Formuliergegevens opslaan](store-and-retrieve-af-with-2fa/store-form-data.md)
-   + [Servlet maken](store-and-retrieve-af-with-2fa/create-servlet.md)
-   + [Formulier renderen met opgeslagen gegevens](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
-   + [Clientbibliotheek maken](store-and-retrieve-af-with-2fa/create-client-lib.md)
-   + [Integreer met de Dienst OTP](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
-   + [Het hoofdformulier maken](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
-   + [Het MyAccount-formulier maken](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
-   + [Het voorbeeld implementeren](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
+   + [1 - Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
+   + [2 - Gegevensbron configureren](store-and-retrieve-af-with-2fa/configure-data-source.md)
+   + [3 - Formulierbijlagen opslaan](store-and-retrieve-af-with-2fa/store-form-attachments.md)
+   + [4 - Formuliergegevens opslaan](store-and-retrieve-af-with-2fa/store-form-data.md)
+   + [5 - Servlet maken](store-and-retrieve-af-with-2fa/create-servlet.md)
+   + [6 - Formulier weergeven met opgeslagen gegevens](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
+   + [7 - Clientbibliotheek maken](store-and-retrieve-af-with-2fa/create-client-lib.md)
+   + [8 - integreer met de Dienst OTP](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
+   + [9 - Het hoofdformulier maken](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
+   + [10 - Het MyAccount-formulier maken](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
+   + [11 - Het voorbeeld implementeren](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + Verzendgegevens exporteren in CSV-indeling{#export-submitted-data-csv-format}
    + [Verzonden gegevens exporteren](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
@@ -157,17 +157,17 @@ ht-degree: 2%
    + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [XDP-sjablonen gebruiken met Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Meerdere Forms ondertekenen{#sign-multiple-documents}
-   + [Inleiding](sign-multiple-documents/introduction.md)
-   + [Gegevensbron configureren](sign-multiple-documents/configure-data-source.md)
-   + [OSGi-service maken](sign-multiple-documents/create-osgi-service.md)
-   + [Hoofdwerkstroom maken](sign-multiple-documents/create-main-workflow.md)
-   + [Workflow voor handtekeningstatus bijwerken](sign-multiple-documents/update-signature-status.md)
-   + [Samenvattingscomponent aanpassen](sign-multiple-documents/customize-summary-component.md)
-   + [Clientbibliotheek maken](sign-multiple-documents/create-client-lib.md)
-   + [Formuliersjabloon maken](sign-multiple-documents/create-af-template.md)
-   + [Eerste formulier maken](sign-multiple-documents/create-initial-form.md)
-   + [Formulieren maken voor ondertekening](sign-multiple-documents/create-forms-for-signing.md)
-   + [De oplossing testen](sign-multiple-documents/testing-and-trouble-shooting.md)
+   + [1 - Inleiding](sign-multiple-documents/introduction.md)
+   + [2 - Gegevensbron configureren](sign-multiple-documents/configure-data-source.md)
+   + [3 - OSGi-service maken](sign-multiple-documents/create-osgi-service.md)
+   + [4 - Hoofdwerkstroom maken](sign-multiple-documents/create-main-workflow.md)
+   + [5 - Workflow voor handtekeningstatus bijwerken](sign-multiple-documents/update-signature-status.md)
+   + [6 - Samenvattingscomponent aanpassen](sign-multiple-documents/customize-summary-component.md)
+   + [7 - Clientbibliotheek maken](sign-multiple-documents/create-client-lib.md)
+   + [8 - Formuliersjabloon maken](sign-multiple-documents/create-af-template.md)
+   + [9 - Een eerste formulier maken](sign-multiple-documents/create-initial-form.md)
+   + [10 - Formulieren maken voor ondertekening](sign-multiple-documents/create-forms-for-signing.md)
+   + [11 - De oplossing testen](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Aangepaste workflowstappen{#custom-workflow-steps}
    + [Knooppunt extraheren uit XML-document](custom-workflow-steps/extract-xml-node.md)
    + [Document opslaan naar bestandssysteem](custom-workflow-steps/write-payload-document.md)
@@ -185,9 +185,9 @@ ht-degree: 2%
    + [Formuliergegevensmodelvariabele](variables-aem-workflow/form-data-model.md)
    + [Regeleditor in AEM workflow](variables-aem-workflow/part5.md)
 + Formuliergegevens controleren{#review-form-data}
-   + [Inleiding](review-form-data/introduction.md)
-   + [Component maken](review-form-data/create-component.md)
-   + [Elementen implementeren](review-form-data/deploy-on-your-system.md)
+   + [1 - Inleiding](review-form-data/introduction.md)
+   + [2 - Component maken](review-form-data/create-component.md)
+   + [3 - Elementen implementeren](review-form-data/deploy-on-your-system.md)
 + Formuliergegevens opslaan en ophalen in MySQL DB{#storing-and-retrieving-form-data}
    + [Inleiding](storing-retrieving-form-data/introduction.md)
    + [Gegevensbron configureren](storing-retrieving-form-data/part1.md)
@@ -260,18 +260,18 @@ ht-degree: 2%
    + [Nuttige hulpprogramma&#39;s](document-services/useful-utility-services.md)
 + Interactieve communicatie voor afdrukkanaal
 {#ic-print-channel-tutorial}
-   + [Inleiding](ic-print-channel-tutorial/introduction.md)
-   + [Tomcat instellen](ic-print-channel-tutorial/set-up-tomcat.md)
-   + [Gegevensbron maken](ic-print-channel-tutorial/create-data-source.md)
-   + [Formuliergegevensmodel maken](ic-print-channel-tutorial/create-form-data-model.md)
-   + [XDP-lay-out maken met Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
-   + [Documentfragment maken](ic-print-channel-tutorial/create-document-fragment.md)
-   + [Afdrukkanaaldocument maken](ic-print-channel-tutorial/create-print-channel-document.md)
-   + [Inhoud toevoegen aan doelgebieden](ic-print-channel-tutorial/add-content-to-target-areas.md)
-   + [Lijndiagram configureren](ic-print-channel-tutorial/configuring-line-chart.md)
-   + [Tabel toevoegen aan afdrukkanaal](ic-print-channel-tutorial/adding-table-to-print-channel.md)
-   + [Controlemap gebruiken om documenten te genereren](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
-   + [Gebruikersinterface van agent openen bij verzenden formulier](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
+   + [1 - Inleiding](ic-print-channel-tutorial/introduction.md)
+   + [2 - Tomcat instellen](ic-print-channel-tutorial/set-up-tomcat.md)
+   + [3 - Gegevensbron maken](ic-print-channel-tutorial/create-data-source.md)
+   + [4 - Formuliergegevensmodel maken](ic-print-channel-tutorial/create-form-data-model.md)
+   + [5 - XDP-lay-out maken met Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
+   + [6 - Documentfragment maken](ic-print-channel-tutorial/create-document-fragment.md)
+   + [7 - Afdrukkanaaldocument maken](ic-print-channel-tutorial/create-print-channel-document.md)
+   + [8 - Inhoud toevoegen aan doelgebieden](ic-print-channel-tutorial/add-content-to-target-areas.md)
+   + [9 - Lijngrafiek configureren](ic-print-channel-tutorial/configuring-line-chart.md)
+   + [10 - Tabel toevoegen aan afdrukkanaal](ic-print-channel-tutorial/adding-table-to-print-channel.md)
+   + [11 - Documenten genereren met behulp van gecontroleerde map](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
+   + [12 - Gebruikersinterface van agent openen op formulierverzending](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + Conceptbrieven opslaan en ophalen {#store-retrieve-letters}
    + [Inleiding](store-retrieve-letters/introduction.md)
    + [Implementatie](store-retrieve-letters/save-draft-letters.md)
@@ -287,19 +287,19 @@ ht-degree: 2%
    + [Teksteditor aanpassen](interactive-communications/customize-text-editor.md)
 
 + Interactieve communicatie voor webkanaal {#ic-web-channel-tutorial}
-   + [Inleiding](ic-web-channel-tutorial/introduction.md)
-   + [Tomcat instellen](ic-web-channel-tutorial/partone.md)
-   + [Gegevensbron maken](ic-web-channel-tutorial/parttwo.md)
-   + [Formuliergegevensmodel maken](ic-web-channel-tutorial/partthree.md)
-   + [Webkanaaldocumentsjabloon maken](ic-web-channel-tutorial/partfour.md)
-   + [Documentfragment maken](ic-web-channel-tutorial/partfive.md)
-   + [Interactief communicatiedocument maken](ic-web-channel-tutorial/partsix.md)
-   + [Tekst en afbeeldingen toevoegen](ic-web-channel-tutorial/partseven.md)
-   + [Regeldiagram configureren](ic-web-channel-tutorial/parteight.md)
-   + [Tabel configureren](ic-web-channel-tutorial/partnine.md)
-   + [Kolomdiagram configureren](ic-web-channel-tutorial/partten.md)
-   + [Schijfdiagram configureren](ic-web-channel-tutorial/parteleven.md)
-   + [Aflevering van webkanaaldocument](ic-web-channel-tutorial/parttwelve.md)
+   + [1 - Inleiding](ic-web-channel-tutorial/introduction.md)
+   + [2 - Tomcat instellen](ic-web-channel-tutorial/partone.md)
+   + [3 - Gegevensbron maken](ic-web-channel-tutorial/parttwo.md)
+   + [4 - Formuliergegevensmodel maken](ic-web-channel-tutorial/partthree.md)
+   + [5 - Webkanaaldocumentsjabloon maken](ic-web-channel-tutorial/partfour.md)
+   + [6 - Documentfragment maken](ic-web-channel-tutorial/partfive.md)
+   + [7 - Interactief communicatiedocument maken](ic-web-channel-tutorial/partsix.md)
+   + [8 - Tekst en afbeeldingen toevoegen](ic-web-channel-tutorial/partseven.md)
+   + [9 - Het vormen grafiek van de Lijn](ic-web-channel-tutorial/parteight.md)
+   + [10 - Tabel configureren](ic-web-channel-tutorial/partnine.md)
+   + [11 - Kolomgrafiek configureren](ic-web-channel-tutorial/partten.md)
+   + [12 - Schijfdiagram configureren](ic-web-channel-tutorial/parteleven.md)
+   + [13 - aflevering van een webkanaaldocument](ic-web-channel-tutorial/parttwelve.md)
    + [E-maillevering van webkanaaldocument](interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
 
 + Problemen oplossen {#troubleshooting}

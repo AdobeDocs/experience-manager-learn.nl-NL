@@ -17,9 +17,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d4355f72-aefa-4ab3-ba7e-ebd7f7b536f0
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
@@ -31,3 +31,7 @@ In dit deel wordt Interactive Communication Document for Print channel gemaakt.
 Nadat we de gegevensbron en het formuliergegevensmodel hebben gedefinieerd en geconfigureerd, maken we nu onze interactieve communicatie voor het afdrukkanaal
 
 >[!VIDEO](https://video.tv.adobe.com/v/37888?quality=12&learn=on)
+
+## Volgende stappen
+
+[Inhoud toevoegen aan doelgebieden](./add-content-to-target-areas.md)

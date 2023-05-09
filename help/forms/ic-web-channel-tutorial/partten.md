@@ -14,13 +14,13 @@ discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: 0dd8a430-9a4e-4dc7-ad75-6ad2490430f2
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen het Comité van de Vooruitzichten van de Pensionering{#configuring-retirement-outlook-panel}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * Selecteer het pictogram &#39;Potlood&#39; om de standaardtekst te bewerken.
 
-* Vervang de standaardtekst met &quot;**Uw Vooruitzichten van het Inkomens van de Ouder&quot;**
+* De standaardtekst vervangen door &quot;**Uw Outlook Inkomensresultaten voor pensioenen&quot;**
 
 **Doelgebied van RightPanel configureren**
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 * Selecteer het pictogram &#39;Potlood&#39; om de standaardtekst te bewerken.
 
-* Vervang de standaardtekst door &quot;**Geschatte maandelijkse pensioeninkomsten&quot;**
+* De standaardtekst vervangen door &quot;**Geschat maandelijks pensioeninkomen&quot;**
 
 ## Outlook-documentfragment voor inkomens verhogen {#add-retirement-income-outlook-document-fragment}
 
 * Klik op het middelenpictogram en pas het filter toe om elementen van het type &quot;Documentfragmenten&quot; weer te geven. Sleep RetirementIncomeOutlook-documentfragment naar het doelgebied van het linkerdeelvenster.
 
-* U kunt [naar deze pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) verwijzen bij het toevoegen van documentfragment aan inhoudsgebieden.
+* U kunt [op deze pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) bij het toevoegen van documentfragment aan inhoudsgebieden.
 
 ## Geschatte maandelijkse inkomensgrafiek toevoegen {#adding-estimated-monthly-income-chart}
 
@@ -74,6 +74,6 @@ ht-degree: 0%
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 
+## Volgende stappen
 
-
-
+[Cirkeldiagram configureren](./parteleven.md)

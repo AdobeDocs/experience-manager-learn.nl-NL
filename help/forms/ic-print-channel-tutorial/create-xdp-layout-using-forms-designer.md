@@ -17,9 +17,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1bda648c-01be-44f1-aa73-3f5e7365d094
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
@@ -33,3 +33,7 @@ Elk afdrukkanaaldocument is gebaseerd op een sjabloon die is gemaakt met het ger
 In de volgende video worden de secties of doelgebieden gemarkeerd die zijn gedefinieerd in de lay-out die in deze zelfstudie wordt gebruikt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37890?quality=12&learn=on)
+
+## Volgende stappen
+
+[Documentfragment maken](./create-document-fragment.md)

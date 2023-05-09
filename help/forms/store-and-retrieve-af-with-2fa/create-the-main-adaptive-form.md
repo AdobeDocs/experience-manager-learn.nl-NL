@@ -1,22 +1,22 @@
 ---
 title: Het belangrijkste adaptieve formulier maken
 description: De adaptieve formulieren maken om informatie van de aanvrager en het adaptieve formulier op te nemen om het opgeslagen adaptieve formulier op te halen
-feature: Adaptieve Forms
+feature: Adaptive Forms
 type: Tutorial
 activity: implement
 version: 6.4,6.5
 kt: 6552
 thumbnail: 6552.jpg
-topic: Ontwikkeling
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 73de0ac4-ada6-4b8e-90a8-33b976032135
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
-
 
 # Het belangrijkste adaptieve formulier maken
 
@@ -24,14 +24,16 @@ Het formulier **StoreAFWithAttachments** is het belangrijkste adaptieve formulie
 
 ![hoofdaanvraagformulier](assets/6552.JPG)
 
-Dit formulier is gekoppeld aan **bootboxjs540,storeAFWithAttachments** clientbibliotheken die eerder in de cursus zijn gemaakt en een AEM workflow die wordt geactiveerd bij het verzenden van formulieren.
+Dit formulier is gekoppeld aan **bootboxjs540,storeAFWithAttachments** clientbibliotheken die eerder in de cursus zijn gemaakt en een AEM die tijdens het verzenden van het formulier worden geactiveerd.
 
 
-* De voorbeeldformulieren zijn gebaseerd op aangepaste formuliersjablonen [die in AEM moeten worden geïmporteerd om de voorbeeldformulieren correct te kunnen weergeven.](assets/custom-template-with-page-component.zip)
+* De voorbeeldformulieren zijn gebaseerd op [aangepaste adaptieve formuliersjabloon](assets/custom-template-with-page-component.zip) die in AEM moeten worden geïmporteerd om de voorbeeldformulieren correct te kunnen weergeven.
 
-* Het voltooide [FormAfWithAttachments Form](assets/store-af-with-attachments-form.zip) kan worden gedownload en in uw AEM-instantie worden geïmporteerd.
+* De voltooide [FormStoreAfWithAttachments](assets/store-af-with-attachments-form.zip) kan worden gedownload en geïmporteerd in uw AEM.
 
-* De [AEM workflow die aan dit formulier is gekoppeld, moet worden geïmporteerd in uw AEM exemplaar, anders werkt het formulier niet.](assets/workflow-model-store-af-with-attachments.zip)
+* De [Aan dit formulier gekoppelde AEM](assets/workflow-model-store-af-with-attachments.zip) het formulier werkt alleen als het in uw AEM exemplaar is geïmporteerd.
 
 
+## Volgende stappen
 
+[Het formulier maken dat het opgeslagen formulier ophaalt](./retrieve-saved-form.md)

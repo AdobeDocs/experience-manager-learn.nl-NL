@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
-source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -57,3 +57,7 @@ Het doel van deze **get** de dienst moet het telefoonaantal halen verbonden aan 
 ![getService](assets/get-service.JPG)
 
 Dit formuliergegevensmodel wordt vervolgens gebruikt in het dialoogvenster **MyAccountForm** om het telefoonnummer op te halen dat aan toepassings-id is gekoppeld.
+
+## Volgende stappen
+
+[Code schrijven om formulierbijlagen op te slaan](./store-form-attachments.md)

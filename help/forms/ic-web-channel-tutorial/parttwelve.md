@@ -1,26 +1,26 @@
 ---
 title: De levering van een webkanaaldocument instellen
-seo-title: De levering van een webkanaaldocument instellen
+seo-title: Setting up the delivery of web channel document
 description: Dit is het laatste deel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel bekijken we de levering van een webkanaaldocument via e-mail.
-seo-description: Dit is het laatste deel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel bekijken we de levering van een webkanaaldocument via e-mail.
+seo-description: This is the final part of a multistep tutorial for creating your first interactive communications document. In this part, we look at the delivery of web channel document via email.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 510d1782-59b9-41a6-a071-a16170f2cd06
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
-
 
 # De levering van een webkanaaldocument instellen {#setting-up-the-delivery-of-web-channel-document}
 
@@ -73,4 +73,8 @@ Meld u aan bij AEM Forms.
 
 >[!NOTE]
 >
->Bekijk het **/apps/AEMForms/fetchad/GET.jsp** bestand in crx. Zorg ervoor dat de tekenreeksvariabele webChannelDocument naar een geldig communicatiedocumentpad verwijst.
+>Kijk eens naar de **/apps/AEMForms/fetchad/GET.jsp** bestand in crx. Zorg ervoor dat de tekenreeksvariabele webChannelDocument naar een geldig communicatiedocumentpad verwijst.
+
+## Volgende stappen
+
+[E-maillevering instellen](../interactive-communications/delivery-of-web-channel-document-tutorial-use.md)

@@ -1,10 +1,10 @@
 ---
 title: Kanaaldocumenten afdrukken met gecontroleerde map
-seo-title: Kanaaldocumenten afdrukken met gecontroleerde map
+seo-title: Generating Print Channel Documents Using Watched Folder
 description: Dit is onderdeel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel genereren we afdrukkanaaldocumenten aan de hand van het mechanisme voor gecontroleerde mappen.
-seo-description: Dit is onderdeel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument voor het afdrukkanaal. In dit deel genereren we afdrukkanaaldocumenten aan de hand van het mechanisme voor gecontroleerde mappen.
+seo-description: This is part 10 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will generate print channel documents using the watched folder mechanism.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
-feature: Interactieve communicatie
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,16 +12,16 @@ activity: implement
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
-
 
 # Kanaaldocumenten afdrukken met gecontroleerde map
 
@@ -31,11 +31,11 @@ Nadat u het afdrukkanaaldocument hebt gemaakt en getest, hebt u een mechanisme n
 
 Wanneer u een gecontroleerde omslag in AEM vormt, associeert u een manuscript ECMA of Java code die wordt uitgevoerd wanneer een dossier in de gelete op omslag wordt gelaten vallen. In dit artikel richten we ons op het ECMA-script dat afdrukkanaaldocumenten genereert en opslaat in het bestandssysteem.
 
-De gecontroleerde omslagconfiguratie en het manuscript ECMA maken deel uit van de activa u bij [begin van dit leerprogramma](introduction.md) invoerde
+De gecontroleerde omslagconfiguratie en het manuscript ECMA maken deel uit van de activa u bij invoerde [begin van deze zelfstudie](introduction.md)
 
 Het invoerbestand dat in de controlemap wordt neergezet, heeft de volgende structuur. Met ECMA-script worden de accountnummers gelezen en wordt een document met het afdrukkanaal voor elk van deze accounts gegenereerd.
 
-[Raadpleeg dit artikel](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md) voor meer informatie over het ECMA-script voor het genereren van documenten
+Voor meer informatie over het ECMA-script voor het genereren van documenten, [verwijzen naar dit artikel](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 ```xml
 <accountnumbers>
@@ -78,6 +78,6 @@ Voer de onderstaande stappen uit om een document met een afdrukkanaal te generer
 
 * Controleer de PDF-bestanden op de opslaglocatie die in het ECMA-script is opgegeven.
 
+## Volgende stappen
 
-
-
+[Ui van de openingsagent bij het verzenden van het formulier](./opening-agent-ui-on-form-submission.md)

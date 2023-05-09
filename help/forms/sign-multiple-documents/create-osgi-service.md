@@ -5,16 +5,16 @@ feature: Workflow
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
-
 
 # OSGi-service maken
 
@@ -164,7 +164,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Volgend formulier ophalen om te ondertekenen
 
-De volgende code is gebruikt om het volgende formulier voor ondertekening voor een bepaalde customerID met de status 0 op te halen. Als de sql vraag geen rijen terugkeert keren wij het koord **&quot;AllDone&quot;** dat erop wijst dat er geen meer vormen voor het ondertekenen voor bepaalde klantenidentiteitskaart zijn.
+De volgende code is gebruikt om het volgende formulier voor ondertekening voor een bepaalde customerID met de status 0 op te halen. Als de sql-query geen rijen retourneert, wordt de tekenreeks geretourneerd **&quot;AllDone&quot;** Dit geeft aan dat er geen formulieren meer zijn voor ondertekening voor de opgegeven id van de klant.
 
 ```java
 @Override
@@ -204,4 +204,8 @@ public String getNextFormToSign(int customerID) {
 
 ## Assets
 
-De OSGi-bundel met de bovengenoemde services kan [hier worden gedownload](assets/sign-multiple-forms.jar)
+De OSGi-bundel met bovengenoemde diensten kan [hier gedownload](assets/sign-multiple-forms.jar)
+
+## Volgende stappen
+
+[Een hoofdwerkstroom maken voor het verwerken van de eerste formulierverzending](./create-main-workflow.md)

@@ -16,9 +16,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 4e64aa99-0b1c-49e9-95a7-d254017b80f4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -36,3 +36,7 @@ Het Model van de Gegevens van de vorm is afhankelijk van een correct gevormde Ge
 Het Model van de Gegevens van de vorm is de basis voor al uw Interactieve Mededelingen. Met de bewerking Ophalen/Lezen van het formuliergegevensmodel haalt u de gegevens op van uw achterste gegevensbron en wordt het Interactieve communicatiedocument gevuld.
 
 Nadat u het formuliergegevensmodel hebt gemaakt, kunt u het gebruiken als basis voor het maken van documentfragmenten en interactieve communicatiedocumenten.
+
+## Volgende stappen
+
+[Sjabloon maken met ontwerper](./create-xdp-layout-using-forms-designer.md)

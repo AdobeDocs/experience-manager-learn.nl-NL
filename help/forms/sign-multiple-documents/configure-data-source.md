@@ -1,24 +1,25 @@
 ---
 title: Gegevensbron AEM configureren
 description: Door MySQL ondersteunde gegevensbron configureren om formuliergegevens op te slaan en op te halen
-feature: Adaptieve Forms
-topic: Ontwikkeling
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Beginner
 version: 6.4,6.5
 kt: 6899
 thumbnail: 6899.jpg
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+exl-id: 2e851ae5-6caa-42e3-8af2-090766a6f36a
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 1%
+source-wordcount: '203'
+ht-degree: 0%
 
 ---
 
 # Gegevensbron configureren
 
-Er zijn vele manieren waarmee AEM integratie met een externe gegevensbestand toelaat. Één van de gemeenschappelijkste manieren om een gegevensbestand te integreren is door Apache het Verdelen van Verbinding Gepoolde configuratieeigenschappen DataSource door [configMgr](http://localhost:4502/system/console/configMgr) te gebruiken.
-De eerste stap bestaat uit het downloaden en implementeren van de juiste [MySql drivers](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM.
+Er zijn vele manieren waarmee AEM integratie met een externe gegevensbestand toelaat. Één van de gemeenschappelijkste manieren om een gegevensbestand te integreren is door de configuratieeigenschappen van de Verbinding van Apache Gepoolde DataSource door [configMgr](http://localhost:4502/system/console/configMgr).
+De eerste stap bestaat uit het downloaden en implementeren van de juiste [MySql-stuurprogramma&#39;s](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM.
 Maak Apache Sling Connection Pooled DataSource en geef de eigenschappen op die zijn opgegeven in de onderstaande schermafbeelding. Het databaseschema wordt als onderdeel van deze zelfstudie-elementen aan u verstrekt.
 
 ![gegevensbron](assets/data-source.PNG)
@@ -29,7 +30,7 @@ Het gegevensbestand heeft één lijst genoemd formdata met de 3 kolommen zoals a
 
 
 >[!NOTE]
->Gelieve te zorgen u uw gegevensbron **aemformstutorial** noemen. De voorbeeldcode gebruikt de naam om verbinding te maken met de database.
+>Zorg ervoor dat u uw gegevensbron een naam geeft **vormgeving**. De voorbeeldcode gebruikt de naam om verbinding te maken met de database.
 
 | Eigenschapnaam | Waarde |
 | ------------------------|--------------------------------------- |
@@ -39,4 +40,8 @@ Het gegevensbestand heeft één lijst genoemd formdata met de 3 kolommen zoals a
 
 ## Assets
 
-Het SQL-bestand waarmee het schema wordt gemaakt, kan [hier worden gedownload](assets/sign-multiple-forms.sql). U zult dit dossier gebruikend MySql werkbank moeten invoeren om het schema en de lijst tot stand te brengen.
+Het SQL-bestand om het schema te maken, kan [hier gedownload](assets/sign-multiple-forms.sql). U zult dit dossier gebruikend MySql werkbank moeten invoeren om het schema en de lijst tot stand te brengen.
+
+## Volgende stappen
+
+[Creeer de dienst OSGi om gegevens in gegevensbestand op te slaan en te halen](./create-osgi-service.md)
