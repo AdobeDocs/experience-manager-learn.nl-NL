@@ -5,7 +5,7 @@ breadcrumb-title: Tutorials voor AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 31d6b75f481bbc1a716974b2188a0f4f460c1df6
+source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 11%
@@ -287,32 +287,7 @@ ht-degree: 11%
    + Geavanceerd{#advanced}
       + [Metagegevensworkers](./asset-compute/advanced/metadata.md)
    + [Problemen oplossen](./asset-compute/troubleshooting.md)
-+ Wolk 5{#cloud-5}
-   + [Inleiding](./cloud-5/cloud5-introduction.md)
-   + [Seizoen 1](./cloud-5/cloud5-season-1.md)
-   + [Seizoen 2](./cloud-5/cloud5-season-2.md)
-   + [AEM CDN Deel 1](./cloud-5/cloud5-aem-cdn-part1.md)
-   + [AEM CDN Deel 2](./cloud-5/cloud5-aem-cdn-part2.md)
-   + [Logbestanden AEM](./cloud-5/cloud5-aem-log-files.md)
-   + [Aanmeldingspunten](./cloud-5/cloud5-getting-login-token-integrations.md)
-   + [Cloud Dispatcher](./cloud-5/cloud5-aem-dispatcher-cloud.md)
-   + [Migratie 1](./cloud-5/cloud5-aem-content-migration-part-1.md)
-   + [Migratie 2](./cloud-5/cloud5-aem-content-migration-part-2.md)
-   + [Validator van verzender](./cloud-5/cloud5-aem-dispatcher-validator.md)
-   + [Zoeken en indexeren](./cloud-5/cloud5-aem-search-and-indexing.md)
-   + [Adobe App Builder](./cloud-5/cloud5-adobe-app-builder.md)
-   + Seizoen 2{#season-2}
-      + [Fragmenten](./cloud-5/season-2/cloud5-experience-v-content-fragments.md)
-      + [Repo Modernizer](./cloud-5/season-2/cloud5-repo-modernizer.md)
-      + [Admin Console](./cloud-5/season-2/cloud5-admin-console.md)
-      + [HERSTELLEN](./cloud-5/season-2/cloud5-repoinit.md)
-      + [Sling Job Scheduler](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
-      + [Cache corrigeren](./cloud-5/season-2/cloud5-fix-your-cache.md)
-      + [Herschrijvingen herstellen](./cloud-5/season-2/cloud5-fix-your-rewrites.md)
-      + [Cloud Manager - Experience Audit](./cloud-5/season-2/cloud5-mocm-experience-audit.md)
-      + [Cloud Manager - Eenheidstests](./cloud-5/season-2/cloud5-mocm-unit-tests.md)
-      + [Cloud Manager - Functionele tests](./cloud-5/season-2/cloud5-mocm-functional-tests.md)
-+ [AEM Deskundigenreeks](./aem-experts-series.md)
+
 + Tutorials met meerdere stappen{#multi-step-tutorials}
    + [AEM Sites-ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
@@ -321,6 +296,32 @@ ht-degree: 11%
    + [Op token gebaseerde verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
 + Expertbronnen {#expert-resources}
    + AEM Champions {#aem-champions}
-      + [Cloud Manager on boarding Playbook](./expert-resources/onboarding-playbook.md)
-      + [Omgevingstypen van Cloud Manager](./expert-resources/environment-types.md)
-      + [Gebruikersinterface van Cloud Manager](./expert-resources/cloud-manager-ui.md)
+      + [Cloud Manager on boarding Playbook](./expert-resources/aem-champions/onboarding-playbook.md)
+      + [Omgevingstypen van Cloud Manager](./expert-resources/aem-champions/environment-types.md)
+      + [Gebruikersinterface van Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
+   + [AEM Deskundigenreeks](./expert-resources/expert-series/aem-experts-series.md)
+   + Wolk 5{#cloud-5}
+      + [Inleiding](./expert-resources/cloud-5/cloud5-introduction.md)
+      + [Seizoen 1](./expert-resources/cloud-5/cloud5-season-1.md)
+      + [Seizoen 2](./expert-resources/cloud-5/cloud5-season-2.md)
+      + [AEM CDN Deel 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
+      + [AEM CDN Deel 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
+      + [Logbestanden AEM](./expert-resources/cloud-5/cloud5-aem-log-files.md)
+      + [Aanmeldingspunten](./expert-resources/cloud-5/cloud5-getting-login-token-integrations.md)
+      + [Cloud Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-cloud.md)
+      + [Migratie 1](./expert-resources/cloud-5/cloud5-aem-content-migration-part-1.md)
+      + [Migratie 2](./expert-resources/cloud-5/cloud5-aem-content-migration-part-2.md)
+      + [Validator van verzender](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
+      + [Zoeken en indexeren](./expert-resources/cloud-5/cloud5-aem-search-and-indexing.md)
+      + [Adobe App Builder](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
+      + Seizoen 2{#season-2}
+         + [Fragmenten](./expert-resources/cloud-5/season-2/cloud5-experience-v-content-fragments.md)
+         + [Repo Modernizer](./expert-resources/cloud-5/season-2/cloud5-repo-modernizer.md)
+         + [Admin Console](./expert-resources/cloud-5/season-2/cloud5-admin-console.md)
+         + [HERSTELLEN](./expert-resources/cloud-5/season-2/cloud5-repoinit.md)
+         + [Sling Job Scheduler](./expert-resources/cloud-5/season-2/cloud5-sling-job-scheduler.md)
+         + [Cache corrigeren](./expert-resources/cloud-5/season-2/cloud5-fix-your-cache.md)
+         + [Herschrijvingen herstellen](./expert-resources/cloud-5/season-2/cloud5-fix-your-rewrites.md)
+         + [Cloud Manager - Experience Audit](./expert-resources/cloud-5/season-2/cloud5-mocm-experience-audit.md)
+         + [Cloud Manager - Eenheidstests](./expert-resources/cloud-5/season-2/cloud5-mocm-unit-tests.md)
+         + [Cloud Manager - Functionele tests](./expert-resources/cloud-5/season-2/cloud5-mocm-functional-tests.md)

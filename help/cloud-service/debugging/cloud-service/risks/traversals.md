@@ -11,9 +11,9 @@ hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 48943df64d9793066f8f19497ef42f8aa80e5795
+source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ Het verminderen van traversale waarschuwingen kan worden aangepakt gebruikend dr
 
 ## 1. Analyseren{#analyze}
 
-Bepaal eerst welke AEM-publicatieservices doorlopende waarschuwingen tonen. Dit doet u vanuit Cloud Manager: [Publicatieservices downloaden `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target=&quot;_blank&quot;} uit alle omgevingen (Dev, Stage en Production) voor het verleden __drie dagen__.
+Bepaal eerst welke AEM-publicatieservices doorlopende waarschuwingen tonen. Dit doet u vanuit Cloud Manager: [Publicatieservices downloaden `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} uit alle omgevingen (Dev, Stage en Production) voor het verleden __drie dagen__.
 
 ![as a Cloud Service AEM downloaden](./assets/traversals/download-logs.jpg)
 
@@ -159,14 +159,14 @@ Zodra de beledigende vragen en hun het aanhalen code worden ontdekt, moeten aanp
 
 __De query wijzigen__ om nieuwe vraagbeperkingen toe te voegen die aan bestaande indexbeperkingen oplossen. Wijzig indien mogelijk de query liever in indexen.
 
-+ [Meer informatie over het afstemmen van queryprestaties](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target=&quot;_blank&quot;}
++ [Meer informatie over het afstemmen van queryprestaties](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
 
 ### De index aanpassen
 
 __Een AEM-index wijzigen (of maken)__ zodat de bestaande vraagbeperkingen voor de indexupdates oplosbaar zijn.
 
-+ [Leer hoe u bestaande indexen kunt aanpassen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target=&quot;_blank&quot;}
-+ [Leer hoe u indexen maakt](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target=&quot;_blank&quot;}
++ [Leer hoe u bestaande indexen kunt aanpassen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
++ [Leer hoe u indexen maakt](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"}
 
 ## 3. Verifiëren{#verify}
 
@@ -174,9 +174,9 @@ Aanpassingen aan de query&#39;s, indexen of beide moeten worden geverifieerd om 
 
 ![Query uitvoeren](./assets/traversals/verify.gif)
 
-Alleen [aanpassingen van de query](#adjust-the-query) worden gemaakt, kan de query rechtstreeks worden getest op AEM as a Cloud Service via de [Query uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target=&quot;_blank&quot;}. Verklaar de looppas van de Vraag tegen de dienst van de Auteur AEM, echter aangezien de indexdefinities het zelfde over de Auteur en de Publish diensten zijn, volstaat het bevestigen van vragen tegen de dienst van de Auteur AEM.
+Alleen [aanpassingen van de query](#adjust-the-query) worden gemaakt, kan de query rechtstreeks worden getest op AEM as a Cloud Service via de [Query uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"}. Verklaar de looppas van de Vraag tegen de dienst van de Auteur AEM, echter aangezien de indexdefinities het zelfde over de Auteur en de Publish diensten zijn, volstaat het bevestigen van vragen tegen de dienst van de Auteur AEM.
 
-Indien [aanpassingen aan de index](#adjust-the-index) worden gemaakt, moet de index worden opgesteld aan AEM as a Cloud Service. Als de indexaanpassingen zijn geïmplementeerd, worden de [Query uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target=&quot;_blank&quot;} kan worden gebruikt om te worden uitgevoerd en de query verder af te stemmen.
+Indien [aanpassingen aan de index](#adjust-the-index) worden gemaakt, moet de index worden opgesteld aan AEM as a Cloud Service. Als de indexaanpassingen zijn geïmplementeerd, worden de [Query uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"} Kan worden gebruikt om de query uit te voeren en verder af te stemmen.
 
 Uiteindelijk, worden alle veranderingen (vraag en code) geëngageerd aan Git en aan AEM as a Cloud Service opgesteld gebruikend de Manager van de Wolk. Als u de code eenmaal hebt geïmplementeerd, test u de aan de oorspronkelijke traversale waarschuwingen gekoppelde codepaden opnieuw. Controleer vervolgens of de traversale waarschuwingen niet meer worden weergegeven in het dialoogvenster `aemerror` log.
 
@@ -191,7 +191,7 @@ Bekijk deze andere nuttige bronnen voor het begrijpen van AEM indexen, zoekopdra
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Wolk 5 - Zoeken en indexeren" tabindex="-1"><img class="is-bordered-r-small" src="../../../cloud-5/imgs/009-thumb.png" alt="Wolk 5 - Zoeken en indexeren"></a>
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Wolk 5 - Zoeken en indexeren" tabindex="-1"><img class="is-bordered-r-small" src="../../../expert-resources/cloud-5/imgs/009-thumb.png" alt="Wolk 5 - Zoeken en indexeren"></a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
