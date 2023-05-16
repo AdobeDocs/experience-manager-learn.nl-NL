@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ In deze video wordt beschreven hoe media-inhoud wordt beheerd en geopend met Ado
 * URL&#39;s kopiëren naar afbeeldingen en responsieve viewers
 * Variaties voor slim uitsnijden in URL&#39;s
 
-## Dynamic Media met AEM Sites en andere CMS
+## Gebruiken met AEM Sites
 
 >[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
@@ -48,7 +48,7 @@ In deze video wordt beschreven hoe media-inhoud wordt beheerd in Adobe Experienc
 * Lokaal downloaden met voorinstellingen voor afbeeldingen
 * Interactieve banner maken en publiceren
 
-## Dynamic Media voor het maken van gemengde media-collectie en aangepaste viewer
+## Een gemengde mediaverzameling maken
 
 >[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
@@ -63,7 +63,7 @@ In deze video wordt het eenvoudige proces beschreven voor het maken van een coll
 * Gemengde mediaset maken op basis van de reeks Draaien, video en foto&#39;s
 * Aangepaste viewer voor gemengde media bewerken en gebruiken
 
-## Voorinstellingen Dynamic Media-afbeelding
+## Voorinstellingen afbeelding
 
 >[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
@@ -74,7 +74,7 @@ In deze video wordt beschreven hoe Voorinstellingen afbeelding worden gemaakt en
 * Altijd verscherpen gebruiken
 * URL Modifier-veld om extra opdrachten toe te voegen voor het wijzigen van het formaat van de voorinstelling Afbeelding
 
-## Dynamic Media Geavanceerde URL-opties
+## Geavanceerde URL-opties
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
@@ -86,7 +86,7 @@ In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen o
 * Uitsnijden naar een afbeeldingspad
 * Een tekstsjabloon maken op basis van een Photoshop-bestand
 
-## Dynamic Media Control JPEG file size in Kilobytes
+## Bestandsgroottebeheer JPEG
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
@@ -97,13 +97,13 @@ In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen o
 
 Vergelijk de kwaliteit van de JPEG-afbeelding met de resulterende bestandsgrootte (in kilobytes) om de snelheid van het laden van de pagina te verhogen met behulp van twee opdrachten om de instellingen voor JPEG-compressie aan te passen. QLT definieert de afbeeldingskwaliteit door de kwaliteitsinstellingen voor JPEG-compressie aan te passen. Met de opdracht Grootte JPEG kunt u aangeven welke bestandsgrootte moet worden bereikt met compressie.
 
-## CC Closed Captioning toevoegen aan Dynamic Media-video
+## Ondertiteling
 
 >[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 U kunt eenvoudig Closed Captioning toevoegen aan Dynamic Media-video door de URL van Kopiëren toe te voegen om te wijzen naar een extra Closed Captioning-bestandsdocument, een secundair bestand web.VTT dat de CC-informatie voor elke video bevat.
 
-## Afbeeldingen verscherpen gebruiken met AEM Dynamic Media
+## Afbeelding verscherpen
 
 In deze video wordt uitgelegd waarom het verscherpen van een afbeelding van essentieel belang is voor het behouden van de beeldkwaliteit en voor het gebruik van geavanceerde instellingen voor het maken van het perfecte beeld.
 

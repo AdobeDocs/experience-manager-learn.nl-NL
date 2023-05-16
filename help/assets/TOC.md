@@ -6,10 +6,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 8bb7771effc95c70a9ddeffb1c54a1c2282e06dd
+source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 12%
+source-wordcount: '395'
+ht-degree: 11%
 
 ---
 
@@ -104,21 +104,26 @@ ht-degree: 12%
 
 +  Dynamic Media {#dynamic-media}
    + [Dynamic Media - Overzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
-   + [Slim uitsnijden](dynamic-media/smart-crop-feature-video-use.md)
-   + [Ervaringsfragmenten](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
-   + [Interactieve video](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
-   + [Videospeler](dynamic-media/dynamic-media-video-player-feature-video-use.md)
-   + [360-video](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
-   + [Aangepaste videominiaturen](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
-   + [Afbeelding verscherpen](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
-   + [Kleurbeheer](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
-   + [Viewers](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
-   + [Panoramische en verticale beeldviewers](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
-   + [Viewers met Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
+   + [Afbeeldingsaanpassingen en Smart Imaging](dynamic-media/dynamic-media-snapshot.md)
+   + Afbeeldingen {#images}
+      + [Slim uitsnijden](dynamic-media/smart-crop-feature-video-use.md)
+      + [Afbeelding verscherpen](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
+      + [Kleurbeheer](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
+   + Werken met AEM Sites {#dm-with-aem-sites}
+      + [Ervaringsfragmenten](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
+      + [Dynamic Media Core-componenten](dynamic-media/dynamic-media-core-components.md)
+   + Video {#video}
+      + [Interactieve video](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
+      + [Videospeler](dynamic-media/dynamic-media-video-player-feature-video-use.md)
+      + [360-video](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
+      + [Aangepaste videominiaturen](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
+      + [Dynamic Media Smart Crop Video](dynamic-media/dynamic-media-smart-crop-video.md)
+   + Viewers {#viewers}
+      + [Viewers](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
+      + [Panoramische en verticale beeldviewers](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
+      + [Viewers met Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + [Dynamic Media Classic Desktop-toepassing](dynamic-media/dynamic-media-classic-desktop-application.md)
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + [Dynamic Media Smart Crop Video](dynamic-media/dynamic-media-smart-crop-video.md)
-   + [Dynamic Media Core-componenten](dynamic-media/dynamic-media-core-components.md)
 
    + Tutorials {#tutorials}
       + [Carrouselsets maken](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
