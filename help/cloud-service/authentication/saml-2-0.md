@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
+source-git-commit: f6a9e7b32d876a8cd5ce7bf6a2e13aeb5faaf35b
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '3123'
 ht-degree: 0%
 
 ---
@@ -138,8 +138,21 @@ _Het creëren van keystore voor authentificatie-dienst wordt vereist wanneer [SA
    + A [openbare/persoonlijke sleutelarchief is geïnstalleerd in dit sleutelarchief](#install-aem-public-private-key-pair) alleen als AuthnRequest-versleuteling/SAML-bevestiging vereist is.
    + Als deze integratie SAML logout steunt, maar niet AuthnRequest het ondertekenen/SAML bewering, dan is een leeg sleutelarchief voldoende.
 1. Selecteren __Opslaan en sluiten__.
-1. Selecteren __verificatie-service__ gebruiker, en selecteer __Activeren__ in de bovenste actiebalk.
+1. Een pakket maken met de bijgewerkte versie __verificatie-service__ gebruiker.
 
+   _Gebruik de volgende tijdelijke oplossing met behulp van pakketten:_
+
+   1. Navigeren naar __Extra > Implementatie > Pakketten__.
+   1. Een pakket maken
+      + Pakketnaam: `Authentication Service`
+      + Versie: `1.0.0`
+      + Groep: `com.your.company`
+   1. De nieuwe versie bewerken __Verificatieservice sleutelarchief__ pakket.
+   1. Selecteer __Filters__ en voegt een filter toe voor het hoofdpad `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + De `<AUTHENTICATION SERVICE UUID>` kan worden gevonden door naar __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker. De UUID is het laatste deel van de URL.
+   1. Selecteren __Gereed__ en vervolgens __Opslaan__.
+   1. Selecteer __Opbouwen__ knop voor de __Verificatieservice sleutelarchief__ pakket.
+   1. Selecteer __Meer__ > __Repliceren__ om de sleutelarchief van de Authentificatieservice aan te zetten publiceren AEM.
 
 ## Paar AEM openbare/persoonlijke sleutel installeren{#install-aem-public-private-key-pair}
 
@@ -212,7 +225,21 @@ Zowel AuthnRequest het ondertekenen, als de bevestiging van SAML encryptie zijn 
 1. Het zojuist toegevoegde certificaat verschijnt boven de __Certificaat toevoegen uit CRT-bestand__ sectie.
    + Noteer de __alias__ aangezien dit wordt gebruikt in de [SAML 2.0 de configuratie van de authentificatiemanager OSGi](#saml-20-authentication-handler-osgi-configuration)
 1. Selecteren __Opslaan en sluiten__.
-1. Selecteren __verificatie-service__ gebruiker, en selecteer __Activeren__ in de bovenste actiebalk.
+1. Een pakket maken met de bijgewerkte versie __verificatie-service__ gebruiker.
+
+   _Gebruik de volgende tijdelijke oplossing met behulp van pakketten:_
+
+   1. Navigeren naar __Extra > Implementatie > Pakketten__.
+   1. Een pakket maken
+      + Pakketnaam: `Authentication Service`
+      + Versie: `1.0.0`
+      + Groep: `com.your.company`
+   1. De nieuwe versie bewerken __Verificatieservice sleutelarchief__ pakket.
+   1. Selecteer __Filters__ en voegt een filter toe voor het hoofdpad `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + De `<AUTHENTICATION SERVICE UUID>` kan worden gevonden door naar __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker. De UUID is het laatste deel van de URL.
+   1. Selecteren __Gereed__ en vervolgens __Opslaan__.
+   1. Selecteer __Opbouwen__ knop voor de __Verificatieservice sleutelarchief__ pakket.
+   1. Selecteer __Meer__ > __Repliceren__ om de sleutelarchief van de Authentificatieservice aan te zetten publiceren AEM.
 
 ## SAML 2.0-verificatiehandler configureren{#configure-saml-2-0-authentication-handler}
 
