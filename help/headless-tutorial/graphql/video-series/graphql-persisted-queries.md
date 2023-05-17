@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 kt: 7872
 thumbnail: 333429.jpeg
+last-substantial-update: 2023-05-17T00:00:00Z
 exl-id: 06ba38c4-95fe-4ff5-b4d9-237ef9dec944
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 83c4d82a3cce44ae9f99389fdfd7d485d42d13e2
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '60'
 ht-degree: 0%
 
 ---
@@ -24,13 +25,6 @@ In deze video zult u:
 
 + Meer informatie over het inschakelen van blijvende GraphQL-query&#39;s
 + Leer hoe u GraphQL-query&#39;s maakt, bijwerkt en uitvoert
-+ Begrijp de pros en cons od server-kant tegenover cliënt-zijvragen
-
->[!CAUTION]
->
->De **Creeer, werk bij en voer Vooraf ingestelde Vragen uit** hoofdstuk begint bij 2:05 gebruik [Postman](https://www.postman.com/) om de taak uit te voeren. In de nieuwere versies van AEM als Cloud Service is een ingebouwde **GraphiQL Explorer** wordt opgegeven, zie [GraphiQL IDE gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) voor meer informatie .
-
++ Begrijp de voordelen van voortgeduurde vragen over cliënt-zijvragen
 
 >[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)
-
-_Download de [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) gebruikt in de AEM headless Video Series._
