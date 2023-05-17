@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2943'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,6 @@ De Global Trust Store wordt geconfigureerd met het openbare certificaat van IDP 
 _Het creëren van keystore voor authentificatie-dienst wordt vereist wanneer [SAML 2.0 authentificatiemanager OSGi configuratiebezit `handleLogout` is ingesteld op `true`](#saml-20-authenticationsaml-2-0-authentication) of wanneer [AuthnRequest-versleuteling/SAML-bevestiging](#install-aem-public-private-key-pair) is vereist_
 
 1. Meld u aan bij AEM-auteur als AEM beheerder om de persoonlijke sleutel te uploaden.
-1. Navigeren naar __Gereedschappen > Beveiliging > Betrouwbaarheidswinkel__ en selecteert u __verificatie-service__ gebruiker, en selecteer __Eigenschappen__ in de bovenste actiebalk.
 1. Navigeren naar __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker, en selecteer __Eigenschappen__ in de bovenste actiebalk.
 1. Selecteer __Keystore__ tab.
 1. Maak of open het sleutelarchief. Houd het wachtwoord veilig als u een sleutelarchief maakt.
