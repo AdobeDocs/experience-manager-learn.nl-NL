@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 kt: 7619
 thumbnail: 332858.jpg
+last-substantial-update: 2023-05-17T00:00:00Z
 exl-id: 0d22b06f-bf78-4a54-85be-6a932177f36f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: c7848e180ab7f95b8c97aef1ea50556cb1566533
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,9 +24,7 @@ Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) definieert en geb
 In deze video zult u:
 
 + Leer hoe u een Content Fragment-model maakt en definieert
-+ Meer informatie over de verschillende gegevenstypen en validaties die zijn gebruikt om het inhoudsfragmentmodel samen te stellen
++ Meer informatie over de verschillende gegevenstypen die worden gebruikt om het inhoudsfragmentmodel samen te stellen
 + Begrijp hoe het Content Fragment Model de GraphQL API aandrijft
 
 >[!VIDEO](https://video.tv.adobe.com/v/332858?quality=12&learn=on)
-
-_Download de [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) gebruikt in de AEM headless Video Series._
