@@ -101,6 +101,6 @@ Voer de volgende stappen uit om deze functie op uw server te plaatsen
 * Open de regeleditor voor de component Afbeeldingskeuze.
 * Vervang de &lt;your_api_key> met de Google API-sleutel.
 * Sla uw wijzigingen op.
-* [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * Klik op het pictogram voor &quot;geolocatie&quot;.
 * Uw formulier moet worden ingevuld met uw huidige locatie.

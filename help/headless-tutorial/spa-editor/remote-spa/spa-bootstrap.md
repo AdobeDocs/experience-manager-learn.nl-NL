@@ -97,7 +97,7 @@ De `src/index.js` bestand moet er als volgt uitzien:
 
 ## Een interne SPA instellen
 
-Wanneer u een bewerkbare SPA maakt, kunt u het beste een [interne proxy in de SPA](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually), dat wordt gevormd om de aangewezen verzoeken aan AEM te leiden. Dit gebeurt met [http-proxy-middleware](https://www.npmjs.com/package/http-proxy-middleware) npm module, die al door de basisWKND GraphQL App wordt geïnstalleerd.
+Wanneer u een bewerkbare SPA maakt, kunt u het beste een [interne proxy in de SPA](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually), dat wordt gevormd om de aangewezen verzoeken aan AEM te leiden. Dit gebeurt met [http-proxy-middleware](https://www.npmjs.com/package/http-proxy-middleware) npm-module, die al is geïnstalleerd door de basis-WKND GraphQL App.
 
 1. Open het Verre SPA project in uw winde
 1. Open het bestand op `src/proxy/setupProxy.spa-editor.auth.basic.js`

@@ -63,7 +63,7 @@ Regel 11: Hiermee wordt de gegenereerde interactieve PDF naar de opvragende toep
       * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
    1. Klik op Opslaan &#39;
 1. [Het mobiele formulier openen](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Vul een paar gebieden in en klik dan ***Downloaden en vullen....*** button
+1. Vul een paar gebieden in en klik dan ***Downloaden en vullen....*** knop
 1. De interactieve pdf moet naar uw lokale systeem worden gedownload
 
 

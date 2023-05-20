@@ -13,13 +13,13 @@ index: y
 recommendations: disable
 thumbnail: 53409343.jpg
 last-substantial-update: 2022-09-23T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # De front-end pijpleiding voor standaardAEM project Archetype toestaan{#enable-front-end-pipeline-standard-aem-project}
 
@@ -57,4 +57,3 @@ Zorg ervoor dat u de [Sandbox-programma](https://experienceleague.adobe.com/docs
 Een geleidelijke zelfstudie doorloopt de [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd) conversie om de pijpleiding aan de voorzijde mogelijk te maken.
 
 Waar wacht u op? De zelfstudie starten door naar de [Project in volledige stapel bekijken](review-uifrontend-module.md) hoofdstuk en hervat de levenscyclus aan de voorkant van de ontwikkelingscyclus in het kader van het standaard AEM Sites Project.
-

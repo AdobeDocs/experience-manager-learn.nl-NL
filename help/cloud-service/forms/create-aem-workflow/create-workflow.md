@@ -1,5 +1,5 @@
 ---
-title: Create an AEM Workflow
+title: Een AEM workflow maken
 description: Maak een workflowmodel om uw bedrijfsproces na te bootsen.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Create an AEM Workflow
+# Een AEM workflow maken
 
-Workflowmodel maken met AEM Forms-workflowcomponenten. use Or-Split component to branch the workflow based on the value of the state variable.
+Workflowmodel maken met AEM Forms-workflowcomponenten. gebruik of-Gesplitste component om de workflow te vertakken op basis van de waarde van de statusvariabele.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)

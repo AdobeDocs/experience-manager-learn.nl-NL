@@ -8,7 +8,8 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+exl-id: 44f4261b-d6fe-42ad-a3aa-2a36ca897b5e
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
@@ -51,6 +52,3 @@ U zult het eindpunt URL moeten veranderen om uw milieu aan te passen. Open het b
 Om het maken van vraag van de POST aan het AEM eindpunt van uw REACT app toe te laten, zult u de aangewezen entiteiten in het Toegestane gebied van Oorsprong in de Adobe van de Grensoverschrijdende Herkomst van het Middel moeten specificeren die de configuratie van het Beleid deelt
 
 ![cors-setting](assets/cors-settings.png)
-
-
-

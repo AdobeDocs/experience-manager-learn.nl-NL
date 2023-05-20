@@ -1,6 +1,6 @@
 ---
 title: Bronstatussen ontwikkelen in AEM Sites
-description: 'De status API''s van de Adobe Experience Manager Resource Status, zijn een pluggable raamwerk voor het toegankelijk maken van statusberichten in AEM verschillende redacteursWeb UIs. '
+description: De status API's van de Adobe Experience Manager Resource Status, zijn een pluggable raamwerk voor het toegankelijk maken van statusberichten in AEM verschillende redacteursWeb UIs.
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,7 +9,7 @@ version: 6.4, 6.5
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -62,8 +62,8 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
    * Pictogram
    * Variant
    * Prioriteit
-   * Acties
-   * Data
+   * Handelingen
+   * Gegevens
 
 7. Optioneel, indien `Actions` worden `ResourceStatus` -object, zijn ondersteunende clientlibs vereist om functionaliteit te binden aan de actiekoppelingen in de statusbalk.
 

@@ -1,17 +1,17 @@
 ---
 title: Waardevolle rapporten voor beheerders
-description: Ontdek twee waardevolle rapporten die beheerders van Dynamic Media Classic zouden moeten overwegen vestiging te vestigen.
+description: Ontdek twee waardevolle rapporten die beheerders van Dynamic Media Classic zouden moeten overwegen vestiging.
 feature: Dynamic Media Classic
 topic: Content Management
 role: Admin
 level: Intermediate
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: c3fbfb0b-3222-46ff-9248-dea70ce85a23
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
 
 ---
-
 
 # Waardevolle rapporten voor beheerders {#valuable-reports}
 
@@ -39,7 +39,7 @@ We hopen dat u de inhoud in deze handleiding met best practices hebt gevonden om
 
 Raadpleeg de volgende bronnen voor meer informatie over Dynamic Media Classic:
 
-- [Dynamic Media Classic op Experience League - Ophalen voor waarde](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic op Experience League - Get to Value](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic op Experience League - Meer doen](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [De Dynamic Media-nieuwsbrieven archiveren](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Klassieke Dynamic Media-documentatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)
+- [Dynamic Media Classic-documentatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)

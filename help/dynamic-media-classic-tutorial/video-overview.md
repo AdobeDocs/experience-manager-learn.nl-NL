@@ -115,8 +115,8 @@ Voordat we aan de slag gaan, bespreken we enkele termen waarmee u vertrouwd moet
 
 - **Hoogte-breedteverhouding weergeven.** Verhouding van de breedte van een video tot de hoogte van een video. Wanneer de hoogte-breedteverhouding van de video niet overeenkomt met de verhouding van de speler, ziet u mogelijk zwarte balken of lege ruimte. De volgende twee veelvoorkomende hoogte-breedteverhoudingen worden gebruikt voor het weergeven van video:
 
-   - 4:3 (1,33:1). Deze indeling wordt gebruikt voor bijna alle tv-inhoud met standaarddefinitie.
-   - 16:9 (1,78:1). Deze indeling wordt gebruikt voor vrijwel alle HDTV-inhoud (High-Definition TV) en films voor een groot scherm.
+   - 4:3 (1.33:1). Deze indeling wordt gebruikt voor bijna alle tv-inhoud met standaarddefinitie.
+   - 16:9 (1.78:1). Deze indeling wordt gebruikt voor vrijwel alle HDTV-inhoud (High-Definition TV) en films voor een groot scherm.
 
 - **Bitsnelheid/gegevenssnelheid.** De hoeveelheid gegevens die wordt gecodeerd om één seconde video af te spelen (in kilobits per seconde).
 
@@ -203,7 +203,7 @@ Met videovoorinstellingen bepaalt u hoe uw video wordt gecodeerd door deze inste
 - **Hoogte-breedteverhouding.** Standaard 4:3 of breedbeeld16:9.
 - **Grootte.** Dit is hetzelfde als de weergaveresolutie en wordt uitgedrukt in pixels. Dit is gerelateerd aan de hoogte-breedteverhouding. Bij een verhouding van 16:9 is een video 432 x 240 pixels, bij 4:3 is de video 320 x 240 pixels.
 - **FPS.** Standaardframesnelheden zijn 30 frames per seconde, 25 frames per seconde of 24 frames per seconde (fps), afhankelijk van de videostandaard — NTSC, PAL of Film. Deze instelling is niet van belang, omdat Dynamic Media Classic altijd dezelfde framesnelheid gebruikt als de bronvideo.
-- **Format.** Dit is MP4.
+- **Indeling.** Dit is MP4.
 - **Bandbreedte.** Dit is de gewenste verbindingssnelheid van de beoogde gebruiker. Hebben ze een snelle internetverbinding of een langzame verbinding? Werken ze meestal met desktopcomputers of mobiele apparaten? Dit houdt ook verband met resolutie (grootte), omdat hoe groter de video, hoe meer bandbreedte nodig is.
 
 ### De gegevenssnelheid of bitsnelheid voor uw video bepalen
@@ -305,7 +305,7 @@ De vereiste velden zijn Openingspagina (de URL voor de pagina die de video weerg
 
 Er zijn twee andere vereiste velden: de URL van de inhoud, de URL naar het video-element zelf en de miniatuur, een URL naar een miniatuurafbeelding van de video. Dynamic Media Classic vult deze waarden echter automatisch voor u in.
 
-De aanbevolen workflow bestaat uit het insluiten van deze gegevens in uw video&#39;s voordat ze worden geüpload met behulp van XMP metagegevens. Dynamic Media Classic haalt deze gegevens uit tijdens het uploaden. Met een toepassing als Adobe Bridge, die bij alle Adobe Creative Cloud-toepassingen wordt geleverd, kunt u de gegevens invullen in standaardmetagegevensvelden.
+De aanbevolen workflow bestaat uit het insluiten van deze gegevens in uw video&#39;s voordat ze worden geüpload met XMP metagegevens. Dynamic Media Classic haalt deze gegevens uit tijdens het uploaden. Met een toepassing als Adobe Bridge, die bij alle Adobe Creative Cloud-toepassingen wordt geleverd, kunt u de gegevens invullen in standaardmetagegevensvelden.
 
 Als u deze methode volgt, hoeft u deze gegevens niet handmatig in te voeren met Dynamic Media Classic. U kunt echter ook Metagegevensvoorinstellingen gebruiken in Dynamic Media Classic als een snelle manier om steeds dezelfde gegevens in te voeren.
 

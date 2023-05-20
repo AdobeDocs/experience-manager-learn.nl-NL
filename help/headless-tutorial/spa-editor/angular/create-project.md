@@ -93,7 +93,7 @@ Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand
 
 ## Het project bouwen
 
-Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van AEM op gebruikend Maven.
+Daarna, compileert, bouwt, en stelt de projectcode aan een lokaal geval van AEM op gebruikend Maven.
 
 1. Verzeker een geval van AEM plaatselijk op haven loopt **4502**.
 2. Van de terminal van de bevellijn verifieert dat Maven geïnstalleerd is:

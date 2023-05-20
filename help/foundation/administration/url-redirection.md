@@ -9,13 +9,13 @@ level: Intermediate
 kt: 11466
 last-substantial-update: 2022-10-14T00:00:00Z
 index: y
-source-git-commit: 00ea3a8e6b69cd99cf293093d38b59df51f6a26d
+exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 0%
 
 ---
-
 
 # URL-omleidingen
 
@@ -82,4 +82,3 @@ Hieronder staan enkele criteria om de juiste oplossing te bepalen. Ook, zou het 
 1. Toelatend het marketing team of super gebruikers om omleidingsregels zonder het AEM ontwikkelingsteam en de AEM plaatsingen te beheren.
 1. Het proces om, de veranderingen of risicobeperking te beheren te verifiëren, te volgen en terug te keren.
 1. Beschikbaarheid van _Expertise in de materie_ for **Bij Edge via CDN-service** oplossing.
-

@@ -139,7 +139,7 @@ Voer het volgende uit om deze mogelijkheid op uw server te testen
 * Implementeer de bundel prefill.core-1.0.0-SNAPSHOT met behulp van de [AEM webconsole](http://localhost:4502/system/console/bundles)
 * Het adaptieve formulier importeren met het dialoogvenster Maken | Bestand uploaden vanaf de [Sectie FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Zorg ervoor dat de [formulier](http://localhost:4502/editor.html/content/forms/af/prefill.html) gebruikt **&quot;Custom AEM Forms PreFill Service&quot;** als de Prefill-service. Dit kan worden geverifieerd op basis van de configuratie-eigenschappen van de **Formuliercontainer** sectie.
-* [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Het formulier moet de juiste waarden bevatten.
+* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Het formulier moet de juiste waarden bevatten.
 
 >[!NOTE]
 >

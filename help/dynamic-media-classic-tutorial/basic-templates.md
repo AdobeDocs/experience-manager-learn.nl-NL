@@ -356,11 +356,11 @@ Een basissjabloon heeft dezelfde essentiële URL-syntaxis als een normale afbeel
 
 In tegenstelling tot voorinstellingen voor afbeeldingen, die aan elke zijde van de naam van de voorinstelling een dollarteken ($) hebben, hebben parameters aan het begin een dollarteken. De plaatsing van die dollartekens is belangrijk.
 
-**Correct:**
+**Juist:**
 
 `$text=46-inch LCD HDTV`
 
-**Incorrect:**
+**Onjuist:**
 
 `$text$=46-inch LCD HDTV`
 

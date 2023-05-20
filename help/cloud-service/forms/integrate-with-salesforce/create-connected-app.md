@@ -25,4 +25,4 @@ Een verbonden app is een framework dat een externe toepassing in staat stelt met
 >[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
 
 >[!NOTE]
->Zorg ervoor dat u een account maakt in de [Salesforce Developer Edition](https://developer.salesforce.com/signup) omdat de REST API&#39;s standaard zijn ingeschakeld in de ontwikkelaarsversie.
+>Zorg ervoor dat u een account maakt in het dialoogvenster [Salesforce Developer Edition](https://developer.salesforce.com/signup) omdat REST API&#39;s standaard zijn ingeschakeld in de ontwikkelaarsversie.

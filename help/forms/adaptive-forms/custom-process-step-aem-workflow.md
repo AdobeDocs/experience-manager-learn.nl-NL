@@ -158,4 +158,4 @@ Maak een adaptief formulier. Sleep de component Bestandsbijlagen naar het formul
 
 Sla de instellingen op.
 
-Geef een voorbeeld van het formulier weer. Voeg een aantal bijlagen toe en verzend het formulier. De bijlagen moeten in het bestandssysteem worden opgeslagen op de locatie die u in de workflow hebt opgegeven.
+Bekijk een voorbeeld van het formulier. Voeg een aantal bijlagen toe en verzend het formulier. De bijlagen moeten in het bestandssysteem worden opgeslagen op de locatie die u in de workflow hebt opgegeven.

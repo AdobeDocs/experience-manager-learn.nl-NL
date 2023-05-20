@@ -28,19 +28,19 @@ Leer hoe te om, parameters tot paginaverzoek over te brengen, en een vraag van h
 
 ## Regel bij laden van pagina
 
-De gegevenslaag van de Cliënt van Adobe is een gebeurtenis gedreven gegevenslaag. Wanneer de gegevenslaag AEM pagina is geladen, wordt een gebeurtenis `cmp:show` geactiveerd. In de video wordt de `Launch Library Loaded`-regel aangeroepen met behulp van een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
+De gegevenslaag van de Cliënt van Adobe is een gebeurtenis gedreven gegevenslaag. Wanneer de gegevenslaag AEM pagina is geladen, wordt een gebeurtenis geactiveerd `cmp:show` . In de video worden de `Launch Library Loaded` regel wordt aangeroepen via een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
 
 ### Aangepaste weergegeven pagina-gebeurtenis{#page-event}
 
 ![Pagina weergegeven gebeurtenisconfiguratie en aangepaste code](assets/load-and-fire-target-call.png)
 
-In het bezit van de Lancering, voeg nieuw **Gebeurtenis** aan **Regel** toe
+Voeg een nieuwe **Gebeurtenis** aan de **Regel**
 
-+ __extensie:__ Core
-+ __gebeurtenistype:__ aangepaste code
-+ __Naam:Gebeurtenishandler__ voor paginaweergave (of iets beschrijends)
++ __Extensie:__ Kern
++ __Type gebeurtenis:__ Aangepaste code
++ __Naam:__ Pagina weergeven, gebeurtenishandler (of iets beschrijends)
 
-Tik op de knop __Editor openen__ en plak in het volgende codefragment. Deze code __must__ moet worden toegevoegd aan __Gebeurtenisconfiguratie__ en een volgende __Actie__.
+Tik op de knop __Editor openen__ en plakt in het volgende codefragment. Deze code __moet__ worden toegevoegd aan de __Gebeurtenisconfiguratie__ en daarna __Handeling__.
 
 ```javascript
 // Define the event handler function
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Een douanefunctie bepaalt `pageShownEventHandler`, en luistert naar gebeurtenissen die door AEM Componenten van de Kern worden uitgegeven, leidt de relevante informatie tot de Component van de Kern af, verpakt het in een gebeurtenisvoorwerp, en brengt de Gebeurtenis van de Lancering met de afgeleide gebeurtenisinfo bij zijn lading teweeg.
+Een aangepaste functie definieert de `pageShownEventHandler`en luistert naar gebeurtenissen die door AEM Core Components worden uitgegeven, leidt de relevante informatie tot de Component van de Kern, verpakt het in een gebeurtenisvoorwerp, en brengt de Gebeurtenis van de Lancering met de afgeleide gebeurtenisinfo bij zijn lading teweeg.
 
-De regel van de Lancering wordt teweeggebracht gebruikend de functie `trigger(...)` van de Lancering die __only__ van binnen de de codefragmentdefinitie van de Code van de Gebeurtenis van een Regel beschikbaar is.
+De Launch-regel wordt geactiveerd via de Launch-functie `trigger(...)` functie die __alleen__ beschikbaar vanuit de definitie van het codefragment Aangepaste code van een regel.
 
-De functie `trigger(...)` neemt een gebeurtenisvoorwerp als parameter die beurtelings in de Elementen van Gegevens van de Lancering, door een andere gereserveerde naam in Lancering genoemd `event` wordt blootgesteld. Data Elements in Launch kan nu met behulp van syntaxis zoals `event.component['someKey']` verwijzen naar gegevens van dit gebeurtenisobject van het `event`-object.
+De `trigger(...)` De functie neemt een gebeurtenisvoorwerp als parameter die beurtelings in de Elementen van Gegevens van de Lancering, door een andere gereserveerde naam in Lancering genoemd wordt blootgesteld `event`. Data Elements in Launch kan nu verwijzen naar gegevens van dit gebeurtenisobject uit het dialoogvenster `event` object gebruiken als syntaxis `event.component['someKey']`.
 
-Als `trigger(...)` buiten de context van het gebeurtenistype van de Code van de Douane van een Gebeurtenis (bijvoorbeeld, in een Actie) wordt gebruikt, wordt de fout JavaScript `trigger is undefined` geworpen op de Website die met het bezit van de Lancering wordt geïntegreerd.
+Indien `trigger(...)` wordt gebruikt buiten de context van het gebeurtenistype Aangepaste code van een gebeurtenis van het type van de Code van de Gebeurtenis (bijvoorbeeld, in een Actie), de fout JavaScript `trigger is undefined` wordt geworpen op de Website die met het bezit van de Lancering wordt geïntegreerd.
 
 
 ### Gegevenselementen
 
 ![Gegevenselementen](assets/data-elements.png)
 
-Adobe De Elementen van Gegevens van de Lancering van de brengen de gegevens van het gebeurtenisvoorwerp [teweeggebracht in de douanePagina getoonde gebeurtenis ](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van het Element van de Gegevens van de Code van de uitbreiding van de Kern in kaart.
+Adobe Data Elements starten wijst de gegevens van het gebeurtenisobject toe [geactiveerd in de aangepaste gebeurtenis Page Shown](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van Gegevens van het Element van de Code van de uitbreiding van de Kern.
 
 #### Pagina-ID-gegevenselement
 
@@ -146,7 +146,7 @@ Deze code retourneert de titel van de AEM pagina.
 #### Oplossing
 
 Doelklanten gebruiken soms cloudgebaseerde instanties met Target voor testdoeleinden of eenvoudige concepttest. Deze domeinen, en vele anderen, maken deel uit van de Openbare Lijst van het Achtervoegsel.
-Moderne browsers slaan cookies niet op als u deze domeinen gebruikt, tenzij u de instelling `cookieDomain` aanpast met `targetGlobalSettings()`.
+Moderne browsers slaan cookies niet op als u deze domeinen gebruikt, tenzij u de opties `cookieDomain` instellen met `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  

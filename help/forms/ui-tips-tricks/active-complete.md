@@ -13,7 +13,7 @@ last-substantial-update: 2019-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 7%
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,7 @@ Zorg ervoor dat u de status Actief hebt en maak de volgende CSS-eigenschappen op
 
 | Categorie | Eigenschapnaam | Waarde van eigenschap |
 |:---|:---|:---|
-| Dimension en positie | Breedte | 50 px |
+| Dimension en positie | Breedte | 50px |
 | Tekst | Tekendikte | Vet |
 | Tekst | Kleur | #FFF |
 | Tekst | Lijnhoogte | 3 |
@@ -66,7 +66,7 @@ Zorg ervoor dat u in de bezochte staat bent en stijl de volgende eigenschappen
 
 | Categorie | Eigenschapnaam | Waarde van eigenschap |
 |:---|:---|:---|
-| Dimension en positie | Breedte | 50 px |
+| Dimension en positie | Breedte | 50px |
 | Tekst | Tekendikte | Vet |
 | Tekst | Kleur | #FFF |
 | Tekst | Lijnhoogte | 3 |

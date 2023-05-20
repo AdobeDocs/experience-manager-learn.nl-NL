@@ -1,5 +1,5 @@
 ---
-title: Inhoudsfragmenten van auteur - Geavanceerde concepten van AEM zonder kop - GraphQL
+title: Inhoudsfragmenten auteur - Geavanceerde concepten van AEM headless - GraphQL
 description: In dit hoofdstuk van Geavanceerde concepten van Adobe Experience Manager (AEM) Headless leert u werken met tabbladen, datum en tijd, JSON-objecten en fragmentverwijzingen in inhoudsfragmenten. Stel mapbeleid in om te beperken welke modellen van inhoudsfragmenten kunnen worden opgenomen.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -154,7 +154,7 @@ Volg hetzelfde proces als in het dialoogvenster [vorige sectie](#fragment-refere
 
 **Stacey Roswells**
 
-| Fields | Waarden |
+| Velden | Waarden |
 | --- | --- |
 | Titel van inhoudsfragment | Stacey Roswells |
 | Volledige naam | Stacey Roswells |
@@ -194,9 +194,9 @@ Voeg de volgende informatie toe aan de fragmenten Contactinfo:
 
 | Titel van inhoudsfragment | Telefoon | E-mail |
 | ------- | -------- | -------- |
-| Contactinfo Stacey Roswells | 2009-888-0011 | sroswells@wknd.com |
-| Contactinfo Kumar Selvaraj | 2009-888-0002 | kselvaraj@wknd.com |
-| Contactinfo Ayo Ogunsede | 2009-888-0304 | aogunseinde@wknd.com |
+| Contactinfo Stacey Roswells | 209-888-0011 | sroswells@wknd.com |
+| Contactinfo Kumar Selvaraj | 209-888-0002 | kselvaraj@wknd.com |
+| Contactinfo Ayo Ogunsede | 209-888-0304 | aogunseinde@wknd.com |
 
 U bent nu klaar om een Team te creëren!
 
@@ -243,7 +243,7 @@ De **Weer na seizoen** het veld moet er nu als volgt uitzien :
 
 ### Inhoud toevoegen
 
-Voeg de rest van de inhoud aan het Fragment van de Inhoud van de Plaats toe om de informatie met GraphQL in het volgende hoofdstuk te vragen.
+Voeg de rest van de inhoud toe aan het fragment Locatie-inhoud om de informatie met GraphQL in het volgende hoofdstuk op te vragen.
 
 1. In de **Locatiedetails** voert u de volgende informatie in de velden in:
 
@@ -317,7 +317,7 @@ Laten we een inhoudsfragment maken met behulp van het model voor het fragment me
 
 ### Inhoud- en fragmentverwijzingen in de teksteditor met meerdere regels
 
-AEM staat u toe om inhoud en fragmentverwijzingen rechtstreeks in de multi-lijn tekstredacteur toe te voegen en hen later terug te winnen gebruikend vragen GraphQL. Laten we zowel inhoud als fragmentverwijzingen toevoegen aan de **Beschrijving** veld.
+AEM kunt u inhoud en fragmentverwijzingen rechtstreeks toevoegen aan de teksteditor met meerdere regels en deze later ophalen met GraphQL-query&#39;s. Laten we zowel inhoud als fragmentverwijzingen toevoegen aan de **Beschrijving** veld.
 
 1. Voeg eerst de volgende tekst toe aan de **Beschrijving** veld: &quot;Het team van professionele avonturiers en wandelende instructeurs die in Yosemite National Park werken.&quot;
 
@@ -397,4 +397,4 @@ Gefeliciteerd! U hebt nu inhoudsfragmenten gemaakt op basis van de geavanceerde 
 
 ## Volgende stappen
 
-In de [volgende hoofdstuk](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), leert u over het verzenden van geavanceerde vragen GraphQL gebruikend de GraphiQL Geïntegreerde Milieu van de Ontwikkeling (winde). Met deze query&#39;s kunnen we de gegevens bekijken die in dit hoofdstuk zijn gemaakt en deze query&#39;s uiteindelijk toevoegen aan de WKND-app.
+In de [volgende hoofdstuk](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)leert u hoe u geavanceerde GraphQL-query&#39;s kunt verzenden met behulp van de GraphiQL Integrated Development Environment (IDE). Met deze query&#39;s kunnen we de gegevens bekijken die in dit hoofdstuk zijn gemaakt en deze query&#39;s uiteindelijk toevoegen aan de WKND-app.

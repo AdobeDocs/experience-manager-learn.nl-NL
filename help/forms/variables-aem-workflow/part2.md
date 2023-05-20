@@ -2,12 +2,13 @@
 title: Variabelen in AEM workflow[Deel2]
 description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM workflow
 version: 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e7d3e0be-5194-47c2-a668-ce78e727986e
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ U kunt het schema met de variabele van type JSON in uw werkschemamodel in kaart 
 Voer de volgende stappen uit om de middelen op uw systeem te laten werken:
 
 * [Elementen downloaden en importeren in AEM met pakketbeheer](assets/jsonandstringvariable.zip)
-* [Ontdek het ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) workflowmodel om te begrijpen welke variabelen worden gebruikt in de workflow
+* [Het workflowmodel verkennen](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) om de variabelen te begrijpen die in het werkschema worden gebruikt
 * [De e-mailservice configureren](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Het adaptieve formulier openen](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * De gegevens invullen en het formulier verzenden

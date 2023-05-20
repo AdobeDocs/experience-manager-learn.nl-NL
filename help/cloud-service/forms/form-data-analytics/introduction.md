@@ -9,7 +9,8 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+exl-id: 369c563e-c847-438a-a783-bc6a9f81b77c
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -33,5 +34,3 @@ Als u optimaal wilt profiteren van deze zelfstudie, kunt u het beste aan de volg
 Deze zelfstudie maakt gebruik van een eenvoudig adaptief formulier dat in AEM Forms is ingebouwd en meet de manier waarop inzendingen worden verzonden voor waarden voor de status van ingezetenschap, en velden die validatiefouten genereren.
 
 ![adaptief](assets/use-case.png)
-
-

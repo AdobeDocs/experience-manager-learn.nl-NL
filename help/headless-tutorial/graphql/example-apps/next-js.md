@@ -10,7 +10,8 @@ level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2022-10-03T00:00:00Z
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
@@ -247,4 +248,3 @@ De app Next.js gebruikt twee pagina&#39;s om de avontuurgegevens te presenteren.
 Voor Next.js-apps, met name in de context van server-side rendering (SSR) en server-side generation (SSG), zijn geen geavanceerde beveiligingsconfiguraties vereist, zoals Cross-origin Resource Sharing (CORS).
 
 Nochtans, als Next.js HTTP- verzoeken aan AEM van de context van de cliënt doet, kunnen de veiligheidsconfiguraties in AEM worden vereist. Controleer de [Zelfstudie over de implementatie van apps voor één pagina zonder hoofd AEM](../deployment/spa.md) voor meer informatie .
-

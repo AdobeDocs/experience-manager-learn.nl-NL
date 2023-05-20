@@ -37,7 +37,7 @@ Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worde
 
 ## GraphQL-eindpunt inschakelen {#enable-graphql-endpoint}
 
-Een eindpunt GraphQL moet worden gevormd om vraag GraphQL API voor Inhoudsfragmenten toe te laten.
+Een eindpunt van GraphQL moet worden gevormd om GraphQL API vragen voor de Fragments van de Inhoud toe te laten.
 
 1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **GraphQL**.
 
@@ -78,7 +78,7 @@ Verken vervolgens de kracht van AEM GraphQL API met behulp van de ingebouwde Gra
 
 1. Zorg ervoor dat in de rechterbovenhoek het eindpunt is ingesteld op **Mijn eindpunt van project**.
 
-   ![GrafiekQL-eindpunt instellen](assets/explore-graphql-api/set-my-project-endpoint.png)
+   ![GraphQL-eindpunt instellen](assets/explore-graphql-api/set-my-project-endpoint.png)
 
 Dit zal alle vragen aan modellen behandelen die in **Mijn project** project.
 
@@ -215,7 +215,7 @@ Daarna, kijken hoe het mogelijk is om de resultaten aan een ondergroep van Inhou
 
    ![Query-variabelen gebruiken om te filteren](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Er zijn vele andere opties voor het filtreren en het creëren van complexe vragen, zie [Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+   Er zijn vele andere opties voor het filtreren en het creëren van complexe vragen, zie [GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 1. Verbeter bovenstaande query om profielafbeelding op te halen
 
@@ -395,7 +395,7 @@ Download de inhoud, de modellen, en de voortgezette vragen die in de laatste dri
 
 ## Aanvullende bronnen
 
-Meer informatie over GraphQL-query&#39;s vindt u op [Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+Meer informatie over GraphQL-query&#39;s vindt u op [GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 ## Gefeliciteerd! {#congratulations}
 

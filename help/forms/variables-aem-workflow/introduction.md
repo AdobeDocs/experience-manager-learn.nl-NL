@@ -11,7 +11,7 @@ last-substantial-update: 2020-01-26T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
@@ -24,8 +24,8 @@ De variabelen kunnen van de volgende types zijn
 * Lang
 * Dubbel
 * Boolean
-* Tekenreeks
-* Date
+* String
+* Datum
 * JSON
 * XML
 * ArrayList

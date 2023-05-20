@@ -1,14 +1,14 @@
 ---
-title: '"Hoofdstuk 1 - Concepten, patronen en antipatronen van de verzender"'
+title: "Hoofdstuk 1 - Concepten, patronen en antipatronen van de verzender"
 description: In dit hoofdstuk wordt een korte inleiding gegeven over de geschiedenis en de mechanica van de Dispatcher en wordt besproken hoe dit van invloed is op hoe een AEM ontwikkelaar zijn componenten zou ontwerpen.
 feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '17468'
+source-wordcount: '17460'
 ht-degree: 0%
 
 ---
@@ -194,11 +194,11 @@ Stel dat u twee geldige URL&#39;s hebt
 
 `http://domain.com/home.html`
 
-and
+en
 
 `http://domain.com/home.html/suffix.html`
 
-Ze zijn absoluut geldig in AEM. U zou geen probleem zien op uw lokale ontwikkelcomputer (zonder een Dispatcher). Waarschijnlijk zult u ook geen probleem tegenkomen in UAT- of ladingstests. Het probleem waarmee we te maken hebben is zo subtiel dat het de meeste tests overslaat.  Het zal u hard raken wanneer u op piektijd bent en u zal op tijd beperkt zijn om het te richten, waarschijnlijk geen servertoegang, of middelen hebben om het te bevestigen. We zijn er geweest...
+Ze zijn absoluut geldig in AEM. U zou geen probleem zien op uw lokale ontwikkelcomputer (zonder een Dispatcher). Waarschijnlijk zult u ook geen probleem tegenkomen in UAT- of ladingstests. Het probleem waarmee we te maken hebben is zo subtiel dat het de meeste tests overslaat.  Het zal u hard raken wanneer u op piektijd bent en u bent beperkt in tijd om het te richten, waarschijnlijk heeft geen servertoegang, noch middelen om het te bevestigen. We zijn er geweest...
 
 Dus... wat is het probleem ?
 
@@ -267,7 +267,7 @@ Bekijk een korte samenvatting van het laatste hoofdstuk plus nog enkele uitzonde
 
 In het laatste hoofdstuk wordt een groot aantal uitzonderingen vermeld, wanneer een aanvraag niet in de cache kan worden opgeslagen door de Dispatcher. Maar er zijn nog meer zaken die in overweging moeten worden genomen: Alleen omdat de verzender _kan_ een verzoek in cache plaatsen, betekent dit niet noodzakelijk dat het _moet_.
 
-Het punt is: Het cachegeheugen is meestal gemakkelijk. Dispatcher moet enkel het resultaat van een reactie opslaan en het terugkeren de volgende tijd wanneer zeer het zelfde verzoek binnenkomt. Rechts? Verkeerd!
+Het punt is: Het cachegeheugen is meestal gemakkelijk. Dispatcher moet enkel het resultaat van een reactie opslaan en het terugkeren de volgende tijd wanneer zeer het zelfde verzoek binnenkomt. Toch? Verkeerd!
 
 Het moeilijke deel is _ongeldigverklaring_ of _flush_ van de cache. Dispatcher moet erachter komen wanneer een resource is gewijzigd - en moet opnieuw worden gerenderd.
 
@@ -328,7 +328,7 @@ Aangezien op beide pagina&#39;s hetzelfde gummetje wordt weergegeven, is het onn
 
 `<sling:include resource="/content/home/destinations/canada" addSelectors="teaser" />`
 
-or
+of
 
 `<sling:include resource="/content/home/destinations/canada/jcr:content/teaser" />`
 
@@ -361,7 +361,7 @@ Wat is er gebeurd? Dispatcher slaat een statische versie van een pagina op die a
 
 De Dispatcher, die slechts een webserver op basis van bestandssysteem is, is snel maar ook relatief eenvoudig. Als een inbegrepen middel verandert realiseert het niet dat. De inhoud die aanwezig was toen de pagina voor opnemen werd weergegeven, blijft vastgeklonken.
 
-De pagina &quot;Winter speciaal&quot; is nog niet weergegeven, dus er is geen statische versie op de Dispatcher en wordt dus weergegeven met het nieuwe taser, omdat deze op verzoek opnieuw wordt weergegeven.
+De pagina &quot;Winter speciaal&quot; is nog niet weergegeven, dus er is geen statische versie op de Dispatcher en wordt dus weergegeven met het nieuwe taser omdat deze op verzoek nieuw wordt weergegeven.
 
 U zou kunnen denken, dat de Dispatcher spoor van elk middel zou houden het terwijl het teruggeven en het spoelen van alle pagina&#39;s die dit middel hebben gebruikt, wanneer dat middel verandert. Maar de Dispatcher geeft de pagina&#39;s niet weer. De rendering wordt uitgevoerd door het publicatiesysteem. De Dispatcher weet niet welke bronnen in een gerenderd .html-bestand worden gebruikt.
 
@@ -582,7 +582,7 @@ Zie je? De &quot;M&quot; in DAM staat voor &quot;Management&quot; - zoals in Dig
 
 Vanuit het perspectief van AEM ontwikkelaar zag het patroon er superelegant uit. Maar als de Dispatcher in de vergelijking wordt meegenomen, zou je het eens kunnen zijn, dat de naïeve aanpak misschien niet voldoende is.
 
-We laten het aan u over om te beslissen of dit nu een patroon of een antipatroon is. En misschien hebt u al een paar goede ideeën in gedachten hoe te om de hierboven beschreven kwesties te verlichten? Goed. Dan zult u graag zien hoe andere projecten deze problemen hebben opgelost.
+We laten het aan u over om te beslissen of dit nu een patroon of een antipatroon is. En misschien hebt u al een paar goede ideeën in gedachten hoe te om de hierboven beschreven kwesties te verlichten? Goed. Dan zou u graag zien hoe andere projecten deze kwesties hebben opgelost.
 
 ### Veelvoorkomende problemen met de verzender oplossen
 
@@ -756,7 +756,7 @@ Maar hier zou je een ander voorwendsel kunnen tegenkomen met URL-vingerafdrukken
 
 Wow - Dat zijn nogal wat details die in overweging moeten worden genomen, toch? Het weigert gemakkelijk te begrijpen, te testen en te debuggen. En allemaal voor een schijnbaar elegante oplossing. Het is weliswaar elegant, maar alleen vanuit een AEM perspectief. Samen met de Dispatcher wordt het vervelend.
 
-En toch - het lost één basisvoorbehoud niet op, als een beeld veelvoudige tijden op verschillende pagina&#39;s wordt gebruikt, zullen zij onder die pagina&#39;s in het voorgeheugen onder worden geplaatst. Er is niet veel synergie in de cache.
+En toch - het lost één basisvoorbehoud niet op, als een beeld veelvoudige tijden op verschillende pagina&#39;s wordt gebruikt, worden zij in het voorgeheugen onder die pagina&#39;s geplaatst. Er is niet veel synergie in de cache.
 
 Doorgaans is het afdrukken van URL-vingerafdrukken een goed hulpmiddel in de toolkit, maar u moet deze met de nodige zorg toepassen, omdat het nieuwe problemen kan veroorzaken en slechts een paar bestaande problemen kan oplossen.
 
@@ -1526,7 +1526,7 @@ Om het probleem van deze &quot;geheime voorgeheugenongeldigingsonweer&quot;te ve
 
 U kunt de Dispatcher instellen op `grace period` voor automatische ongeldigmaking. Dit zou intern wat extra tijd toevoegen aan `statfiles` wijzigingsdatum.
 
-Laten we zeggen, jouw `statfile` heeft een wijzigingstijd van vandaag 12:00 en uw `gracePeriod` wordt ingesteld op 2 minuten. Vervolgens worden alle automatisch ongeldig gemaakte bestanden beschouwd als geldig om 12.01 en 12.02 uur. Ze worden na 12:02 opnieuw gerenderd.
+Laten we zeggen, jouw `statfile` heeft een wijzigingstijd van vandaag 12:00 en uw `gracePeriod` wordt ingesteld op 2 minuten. Vervolgens worden alle automatisch ongeldig gemaakte bestanden beschouwd als geldig om 12:01 en 12:02. Ze worden na 12:02 opnieuw gerenderd.
 
 In de referentieconfiguratie wordt een `gracePeriod` van twee minuten om een goede reden. Je zou kunnen denken: &quot;Twee minuten? Dat is bijna niets. Ik kan gemakkelijk 10 minuten wachten tot de inhoud verschijnt...&quot;.  Dus je zou geneigd kunnen zijn om een langere periode in te stellen - laten we zeggen 10 minuten, ervan uitgaande dat je inhoud tenminste na deze 10 minuten verschijnt.
 

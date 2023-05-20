@@ -1,6 +1,6 @@
 ---
-title: Implementatie van de productie met behulp van een AEM-publicatieservice - Aan de slag met AEM headless - GraphQL
-description: Meer informatie over AEM-auteur- en publicatieservices en het aanbevolen implementatiepatroon voor toepassingen zonder kop. In deze zelfstudie leert u omgevingsvariabelen te gebruiken om een eindpunt GraphQL dynamisch te wijzigen op basis van de doelomgeving. Leer om AEM voor het delen van bronnen tussen verschillende oorsprong (CORS) behoorlijk te vormen.
+title: Implementatie van productie met behulp van een AEM-publicatieservice - Aan de slag met AEM Headless - GraphQL
+description: Meer informatie over AEM-auteur- en publicatieservices en het aanbevolen implementatiepatroon voor toepassingen zonder kop. In deze zelfstudie leert u omgevingsvariabelen te gebruiken om een GraphQL-eindpunt dynamisch te wijzigen op basis van de doelomgeving. Leer om AEM voor het delen van bronnen tussen verschillende oorsprong (CORS) behoorlijk te vormen.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Implementatie van productie met een AEM-publicatieservice
 
-In deze zelfstudie stelt u een lokale omgeving in om inhoud te simuleren die wordt gedistribueerd van een instantie Auteur naar een instantie Publish. U zult ook productiebouwstijl van React App produceren die wordt gevormd om inhoud van het Publish milieu te verbruiken AEM gebruikend GraphQL APIs. Langs de manier, zult u leren hoe te om milieuvariabelen effectief te gebruiken en hoe te om de configuraties van AEM CORS bij te werken.
+In deze zelfstudie stelt u een lokale omgeving in om inhoud te simuleren die wordt gedistribueerd van een instantie Auteur naar een instantie Publish. U genereert ook een productiebuild van een React-app die is geconfigureerd om inhoud te verbruiken vanuit de AEM-publicatieomgeving met behulp van de GraphQL API&#39;s. Langs de manier, zult u leren hoe te om milieuvariabelen effectief te gebruiken en hoe te om de configuraties van AEM CORS bij te werken.
 
 ## Vereisten
 
@@ -46,7 +46,7 @@ Het diagram hierboven toont dit gemeenschappelijke plaatsingspatroon.
 1. A **Inhoudsauteur** gebruikt de AEM-auteurservice voor het maken, bewerken en beheren van inhoud.
 2. De **Inhoudsauteur** en andere interne gebruikers kunnen de inhoud rechtstreeks op de service Auteur voorvertonen. Er kan een voorvertoningsversie van de toepassing worden ingesteld die verbinding maakt met de service Auteur.
 3. Nadat de inhoud is goedgekeurd, kan deze **gepubliceerd** naar de AEM-publicatieservice.
-4. **Eindgebruikers** de productieversie van de toepassing beïnvloeden. De productietoepassing maakt verbinding met de publicatieservice en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te verbruiken.
+4. **Eindgebruikers** de productieversie van de toepassing beïnvloeden. De productietoepassing maakt verbinding met de publicatieservice en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te gebruiken.
 
 De zelfstudie simuleert de bovenstaande implementatie door een AEM-publicatieexemplaar toe te voegen aan de huidige installatie. In vorige hoofdstukken werkte de React App als voorproef door rechtstreeks met de instantie van de Auteur te verbinden. Een productie bouwt van React App wordt opgesteld aan een statische server Node.js die met de nieuwe Publish instantie verbindt.
 
@@ -82,7 +82,7 @@ Een meer gedetailleerde gids voor het opzetten van een lokale ontwikkelomgeving 
 
 ## Voorbeeldinhoud en GraphQL-eindpunten installeren {#wknd-site-content-endpoints}
 
-Enkel zoals op de instantie van de Auteur, moet de Publish instantie toegelaten eindpunten hebben GraphQL en steekproefinhoud nodig. Installeer vervolgens de WKND Reference Site op de instantie Publish.
+Net als bij de instantie Auteur moet de instantie Publiceren de GraphQL-eindpunten hebben ingeschakeld en voorbeeldinhoud nodig hebben. Installeer vervolgens de WKND Reference Site op de instantie Publish.
 
 1. Download het nieuwste gecompileerde AEM Package voor WKND Site: [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
@@ -118,7 +118,7 @@ Voeg vervolgens een nieuw bestand toe `.env.production.local` de ervaring met de
 
    ![Nieuw omgevingsvariabele-bestand toevoegen](assets/publish-deployment/env-production-local-file.png)
 
-   Het gebruiken van omgevingsvariabelen maakt het gemakkelijk om het eindpunt GraphQL tussen een Auteur of Publish milieu van een knevel te voorzien zonder extra logica binnen de toepassingscode toe te voegen. Meer informatie over [Hier vindt u aangepaste omgevingsvariabelen voor React](https://create-react-app.dev/docs/adding-custom-environment-variables).
+   Met behulp van omgevingsvariabelen kunt u eenvoudig het GraphQL-eindpunt tussen een auteur- of publicatieomgeving schakelen zonder extra logica toe te voegen in de toepassingscode. Meer informatie over [Hier vindt u aangepaste omgevingsvariabelen voor React](https://create-react-app.dev/docs/adding-custom-environment-variables).
 
    >[!NOTE]
    >
@@ -175,7 +175,7 @@ De React-app kan worden gestart met behulp van de webpack-server, maar dit is al
 
    ![React App Served](assets/publish-deployment/react-app-served-port5000.png)
 
-   Bericht dat de vraag GraphQL aan de homepage werkt. Inspect the **XHR** aanvragen met gebruik van de ontwikkelaarsgereedschappen. Merk op dat de POST GraphQL aan de Publish instantie bij is `http://localhost:4503/content/graphql/global/endpoint.json`.
+   De GraphQL-query werkt op de startpagina. Inspect the **XHR** aanvragen met gebruik van de ontwikkelaarsgereedschappen. Merk op dat de POST van GraphQL op de Publish instantie is `http://localhost:4503/content/graphql/global/endpoint.json`.
 
    Alle afbeeldingen worden echter wel afgebroken op de startpagina!
 
@@ -183,7 +183,7 @@ De React-app kan worden gestart met behulp van de webpack-server, maar dit is al
 
    ![Adventure-detailfout](assets/publish-deployment/adventure-detail-error.png)
 
-   Merk op dat een fout GraphQL voor wordt geworpen `adventureContributor`. In de volgende oefeningen, de gebroken beelden en `adventureContributor` problemen zijn opgelost.
+   Er wordt een GraphQL-fout gegenereerd voor `adventureContributor`. In de volgende oefeningen, de gebroken beelden en `adventureContributor` problemen zijn opgelost.
 
 ## Absolute verwijzingen naar afbeeldingen {#absolute-image-references}
 
@@ -230,7 +230,7 @@ De app kan worden bijgewerkt en een absolute URL bevatten met behulp van de `REA
    ```
 
 1. Het bestand openen `AdventureDetail.js` om `react-app/src/components/AdventureDetail.js`.
-1. Herhaal de zelfde stappen om de vraag te wijzigen GraphQL en toe te voegen `_publishUrl` bezit voor het avontuur
+1. Herhaal dezelfde stappen om de GraphQL-query te wijzigen en de `_publishUrl` bezit voor het avontuur
 
    ```diff
     adventureByPath (_path: "${_path}") {
@@ -385,7 +385,7 @@ Experimenteer vervolgens met de CORS-configuratie van de AEM Publish-instantie.
 
    Het is ook mogelijk een reguliere expressie op te nemen om alle aanvragen van een specifiek subdomein toe te staan. Sla de wijzigingen op.
 
-1. Zoeken naar **Filter Apache Sling Referrer** en bekijk de configuratie. De **Lege waarden toestaan** De configuratie is ook nodig om verzoeken GraphQL van een extern domein toe te laten.
+1. Zoeken naar **Filter Apache Sling Referrer** en bekijk de configuratie. De **Lege waarden toestaan** De configuratie is ook nodig om GraphQL-aanvragen van een extern domein in te schakelen.
 
    ![Filter Verschuivingsverwijzing](assets/publish-deployment/sling-referrer-filter.png)
 
@@ -405,9 +405,9 @@ Gefeliciteerd! U hebt nu een volledige productieplaatsing gesimuleerd gebruikend
 
 ## Overige bronnen
 
-Voor meer details over de Fragmenten van de Inhoud en GraphQL zie de volgende middelen:
+Zie de volgende bronnen voor meer informatie over Content Fragments en GraphQL:
 
-* [Aflevering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-* [AEM GraphQL API voor gebruik met Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
+* [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+* [GraphQL API AEM voor gebruik met inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
 * [Verificatie op basis van token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)
 * [Code implementeren om as a Cloud Service te AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=en#cloud-manager)

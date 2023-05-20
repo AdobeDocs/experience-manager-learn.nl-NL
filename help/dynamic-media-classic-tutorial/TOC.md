@@ -1,14 +1,14 @@
 ---
 user-guide-title: Inleiding tot Dynamic Media Classic
-user-guide-description: Deze zelfstudie laat zien hoe u met Dynamic Media Classic rijke media-inhoud kunt maken, ontwerpen en leveren.
-breadcrumb-title: Dynamic Media Classic Tutorials
+user-guide-description: Deze tutorial laat zien hoe u Dynamic Media Classic kunt gebruiken om rijke media-content te maken, schrijven en leveren.
+breadcrumb-title: Tutorials voor Dynamic Media Classic
 sub-product: Experience Manager Assets
 version: 6.4, 6.5
 index: y
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 2%
+ht-degree: 44%
 
 ---
 

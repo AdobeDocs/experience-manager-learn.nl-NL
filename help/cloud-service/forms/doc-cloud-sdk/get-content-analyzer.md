@@ -13,7 +13,7 @@ exl-id: 548a21b9-5487-4b48-9782-19b537a48f98
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '58'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -23,9 +23,9 @@ Maak een JSON-fragment dat het volgende definieert:
 
 + input
 + parameters
-+ output.
++ uitvoer.
 
-De details van deze [formulierparameter zijn hier beschikbaar.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+De details hiervan [hier zijn formulierparameters beschikbaar.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
 
 De voorbeeldcode hieronder produceert het JSON-fragment voor alle Office 365-documenttypen.
 

@@ -1,5 +1,5 @@
 ---
-title: Zelfstudie AEM Dispatcher Cache
+title: Tutorial voor AEM Dispatcher Cache
 description: Het doel van deze zelfstudie is om u te helpen beter te begrijpen hoe de Dispatcher werkt en hoe u ermee kunt werken.
 feature: Dispatcher
 topic: Architecture
@@ -9,11 +9,11 @@ exl-id: 9780870e-9ac6-46f9-abc4-87c9470ef7e7
 source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# Zelfstudie AEM Dispatcher Cache
+# Tutorial voor AEM Dispatcher Cache
 
 De Dispatcher is een essentieel onderdeel van de meeste, zo niet alle AEM installaties. Het doel van deze zelfstudie is om u te helpen beter te begrijpen hoe de Dispatcher werkt en hoe u ermee kunt werken.
 

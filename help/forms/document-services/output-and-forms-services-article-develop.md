@@ -91,7 +91,7 @@ De verpakking bevat 3 monsters. De volgende paragrafen verklaren wanneer om de o
    * **saveLocation**: De locatie waar het gerenderde document moet worden opgeslagen op uw bestandssysteem. Bijvoorbeeld `c:\\outputsample.pdf`.
 
 **Gegevens exporteren uit PDF-bestand**
-* FormsService gebruiken om gegevens uit PDF File te exporteren
+* FormsService gebruiken om gegevens uit het PDF-bestand te exporteren
 * **POST UR** L - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Parameters aanvragen:**
 

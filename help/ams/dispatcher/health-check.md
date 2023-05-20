@@ -7,10 +7,11 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
+exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -125,12 +126,12 @@ RELOAD_MODE='author'
 ```
 
 Geldige opties:
-- author
+- auteur
    - Dit is de standaardoptie.
    - Hiermee wordt een onderhoudspagina voor de auteur geplaatst als deze ongezond is
 - publish
    - Met deze optie wordt een onderhoudspagina voor de uitgever geplaatst als deze ongezond is
-- all
+- alles
    - Met deze optie wordt een onderhoudspagina voor auteur of uitgever of beide weergegeven als deze ongezond worden
 - none
    - Met deze optie wordt dit onderdeel van de health check overgeslagen

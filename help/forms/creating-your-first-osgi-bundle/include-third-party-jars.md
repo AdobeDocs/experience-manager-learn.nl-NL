@@ -9,7 +9,8 @@ level: Beginner
 kt: 11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
-source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
+exl-id: e8841c63-3159-4f13-89a1-d8592af514e3
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -61,6 +62,3 @@ mvn clean install -PautoInstallSinglePackage
 
 Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM-instantie geïnstalleerd. U kunt op de bundel controleren gebruikend [felix-webconsole](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van het dialoogvenster `crx` opslagplaats zoals hieronder weergegeven
 ![derde](assets/custom-bundle1.png)
-
-
-

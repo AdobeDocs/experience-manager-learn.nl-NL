@@ -8,13 +8,13 @@ role: Developer, Architect
 level: Intermediate
 kt: 10798
 thumbnail: kt-10798.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: d4ae08d9-dc43-4414-ab75-26853186a301
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Server-naar-server implementaties zonder koptelefoon AEM
 
@@ -34,7 +34,7 @@ De volgende plaatsingsconfiguratie moet op zijn plaats voor server-aan-server to
 
 ## Vergunningsvereisten
 
-Aangeautoriseerde aanvragen voor AEM GraphQL-API&#39;s doen zich doorgaans voor in de context van server-naar-server-apps, aangezien andere app-typen, zoals [apps van één pagina](./spa.md), [mobiel](./mobile.md), of [Webcomponenten](./web-component.md), gebruikt doorgaans geen autorisatie omdat het moeilijk is om de gegevens te beveiligen.
+Aangeautoriseerde aanvragen voor AEM GraphQL API&#39;s vinden doorgaans plaats in de context van server-naar-server-apps, aangezien andere app-typen, zoals [apps van één pagina](./spa.md), [mobiel](./mobile.md), of [Webcomponenten](./web-component.md), gebruikt doorgaans geen autorisatie omdat het moeilijk is om de gegevens te beveiligen.
 
 Wanneer het autoriseren van verzoeken om as a Cloud Service AEM, gebruik [op referenties gebaseerde tokenverificatie van de service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). Als u meer wilt weten over het verifiëren van aanvragen voor AEM as a Cloud Service, raadpleegt u de [tokengebaseerde zelfstudie over verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). De zelfstudie verkent tokengebaseerde verificatie met [AEM Assets HTTP-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) Maar dezelfde concepten en benaderingen zijn van toepassing op toepassingen die werken met AEM Headless GraphQL-API&#39;s.
 

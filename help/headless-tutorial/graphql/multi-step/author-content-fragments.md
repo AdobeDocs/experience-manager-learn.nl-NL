@@ -1,5 +1,5 @@
 ---
-title: Inhoudsfragmenten ontwerpen - Aan de slag met AEM zonder kop - GraphQL
+title: Inhoudsfragmenten ontwerpen - Aan de slag met AEM headless - GraphQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Maak en bewerk een nieuw inhoudsfragment op basis van een inhoudsfragmentmodel. Leer hoe u variaties van inhoudsfragmenten maakt.
 version: Cloud Service
 mini-toc-levels: 1
@@ -13,7 +13,7 @@ exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -160,7 +160,7 @@ U hebt meerdere inhoudsfragmenten gemaakt en een variatie gemaakt.
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk: [GraphQL API&#39;s verkennen](explore-graphql-api.md), zult u AEM GraphQL APIs gebruikend het ingebouwde hulpmiddel GrapiQL onderzoeken. Leer hoe AEM automatisch een GrafiekQL-schema genereert dat op een model van het Fragment van de Inhoud wordt gebaseerd. U zult het construeren van basisvragen gebruikend de syntaxis GraphQL experimenteren.
+In het volgende hoofdstuk: [GraphQL API&#39;s verkennen](explore-graphql-api.md), kunt u zoeken AEM GraphQL API&#39;s met het ingebouwde GrapiQL-gereedschap. Leer hoe AEM automatisch een GraphQL-schema genereert op basis van een model voor inhoudsfragmenten. U gaat experimenteren met het samenstellen van basisquery&#39;s met de GraphQL-syntaxis.
 
 ## Verwante documentatie
 

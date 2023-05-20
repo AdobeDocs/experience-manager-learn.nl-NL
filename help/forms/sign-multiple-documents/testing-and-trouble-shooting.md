@@ -1,33 +1,33 @@
 ---
 title: Problemen oplossen met het ondertekenen van meerdere documenten
 description: De oplossing testen en problemen oplossen
-feature: Adaptieve Forms
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 1%
+source-wordcount: '388'
+ht-degree: 0%
 
 ---
-
 
 # Testen en problemen oplossen
 
 
 ## Een voorbeeld van het herfinancieringsformulier bekijken
 
-De gebruikscase wordt geactiveerd wanneer de medewerker van de klantenservice het formulier [herfinanciert en invult.](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled)
+Het gebruiksgeval wordt teweeggebracht wanneer de agent van de klantendienst vult en voorlegt [herfinancieringsformulier](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
 De workflow Meerdere Forms ondertekenen leidt tot het verzenden van dit formulier en de klant ontvangt een e-mailmelding met een koppeling om het invullen en ondertekenen van het formulier te starten.
 
 ## Formulieren invullen in het pakket
 
-De klant wordt voorgesteld om het eerste formulier in het pakket in te vullen en te ondertekenen. Nadat het formulier is ondertekend, kan de klant naar het volgende formulier in het pakket navigeren. Nadat alle formulieren zijn ingevuld en ondertekend, wordt de klant het formulier &quot;**AllDone**&quot; aangeboden.
+De klant wordt voorgesteld om het eerste formulier in het pakket in te vullen en te ondertekenen. Nadat het formulier is ondertekend, kan de klant naar het volgende formulier in het pakket navigeren. Nadat alle formulieren zijn ingevuld en ondertekend, wordt de klant de &quot;**AllDone**&quot;formulier.
 
 ## Problemen oplossen
 
@@ -49,15 +49,4 @@ Wanneer een formulier met succes is ondertekend in het pakket, wordt de workflow
 
 ### Het AllDone-formulier niet zien
 
-Wanneer het pakket geen formulieren meer bevat om te ondertekenen, wordt het AllDone-formulier aan de gebruiker gepresenteerd. Als u het AllDone-formulier niet ziet, controleert u de URL die wordt gebruikt in regel 33 van het GetNextFormToSign.js-bestand dat deel uitmaakt van de **getnextform** client lib.
-
-
-
-
-
-
-
-
-
-
-
+Wanneer het pakket geen formulieren meer bevat om te ondertekenen, wordt het AllDone-formulier aan de gebruiker gepresenteerd. Als u het AllDone-formulier niet ziet, controleert u de URL die wordt gebruikt in regel 33 van het GetNextFormToSign.js-bestand dat deel uitmaakt van het **getnextform** client lib.

@@ -1,6 +1,6 @@
 ---
-title: Persisted GraphQL-query's - Geavanceerde concepten van AEM zonder kop - GraphQL
-description: In dit hoofdstuk van Geavanceerde concepten van Adobe Experience Manager (AEM) Headless, leer hoe te om voortgeduurde vragen te creëren en bij te werken GraphQL met parameters. Leer hoe te om cache-controle parameters in persisted query's over te gaan.
+title: Blijvende GraphQL-query's - Geavanceerde concepten van AEM headless - GraphQL
+description: In dit hoofdstuk van Geavanceerde concepten van Adobe Experience Manager (AEM) Headless, leer hoe te om voortgezette vragen van GraphQL met parameters tot stand te brengen en bij te werken. Leer hoe te om cache-controle parameters in persisted query's over te gaan.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# Blijvende query&#39;s voor GraphQL
+# Blijvende GraphQL-query&#39;s
 
-Blijvende query&#39;s zijn query&#39;s die zijn opgeslagen op de Adobe Experience Manager-server (AEM). Clients kunnen een HTTP-GET-aanvraag met de naam van de query verzenden om deze uit te voeren. Het voordeel van deze aanpak is cacheability. Terwijl de cliënt-zijvragen GraphQL ook kunnen worden uitgevoerd gebruikend de verzoeken van de POST van HTTP, die niet in het voorgeheugen kunnen worden opgeslagen, kunnen de voortgeduurde vragen door de geheime voorgeheugens van HTTP of een CDN worden in het voorgeheugen ondergebracht, verbeterend prestaties. De gepersisteerde vragen staan u toe om uw verzoeken te vereenvoudigen en veiligheid te verbeteren omdat uw vragen op de server worden ingekapseld en de AEM beheerder volledige controle over hen heeft. Het is **beste praktijken en hoogst aanbevolen** om persisted query&#39;s te gebruiken wanneer u werkt met de AEM GraphQL API.
+Blijvende query&#39;s zijn query&#39;s die zijn opgeslagen op de Adobe Experience Manager-server (AEM). Clients kunnen een HTTP-GET-aanvraag met de naam van de query verzenden om deze uit te voeren. Het voordeel van deze aanpak is cacheability. Terwijl client-side GraphQL query&#39;s ook kunnen worden uitgevoerd met HTTP POST request, dat niet in cache kan worden geplaatst, kunnen persisted query&#39;s in cache worden geplaatst door HTTP caches of een CDN, waardoor de prestaties verbeteren. De gepersisteerde vragen staan u toe om uw verzoeken te vereenvoudigen en veiligheid te verbeteren omdat uw vragen op de server worden ingekapseld en de AEM beheerder volledige controle over hen heeft. Het is **beste praktijken en hoogst aanbevolen** als u doorlopende query&#39;s wilt gebruiken wanneer u met de AEM GraphQL API werkt.
 
 In het vorige hoofdstuk hebt u enkele geavanceerde GraphQL-query&#39;s onderzocht om gegevens voor de WKND-app te verzamelen. In dit hoofdstuk, blijft u de vragen aan AEM en leert hoe te om geheim voorgeheugencontrole op persisted query te gebruiken.
 
@@ -28,22 +28,22 @@ Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Zorg ervoo
 
 Leer in dit hoofdstuk hoe te:
 
-* GraphQL-query&#39;s met parameters behouden
+* GraphQL-query&#39;s met parameters blijven gebruiken
 * De cache-control parameters van het gebruik met persistente vragen
 
-## Controleren _GrafiekQL Blijvende query&#39;s_ configuratie-instelling
+## Controleren _Aangehouden GraphQL-query&#39;s_ configuratie-instelling
 
-Laten we eens kijken naar: _GrafiekQL Blijvende query&#39;s_ worden toegelaten voor het project van de Plaats WKND in uw AEM instantie.
+Laten we eens kijken naar: _Aangehouden GraphQL-query&#39;s_ worden toegelaten voor het project van de Plaats WKND in uw AEM instantie.
 
 1. Navigeren naar **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
 
-1. Selecteren **WKND gedeeld** selecteert u vervolgens **Eigenschappen** in de bovenste navigatiebalk om configuratie-eigenschappen te openen. Op de pagina van de Eigenschappen van de Configuratie, zou u moeten zien dat **GrafiekQL blijvende vragen** machtiging is ingeschakeld.
+1. Selecteren **WKND gedeeld** selecteert u vervolgens **Eigenschappen** in de bovenste navigatiebalk om configuratie-eigenschappen te openen. Op de pagina van de Eigenschappen van de Configuratie, zou u moeten zien dat **Blijvende GraphQL-query&#39;s** machtiging is ingeschakeld.
 
    ![Configuratieeigenschappen](assets/graphql-persisted-queries/configuration-properties.png)
 
-## Blijft GraphQL vragen gebruikend het hulpmiddel van GraphiQL van de Ontdekkingsreiziger
+## Handhaaf GraphQL-query&#39;s met het gereedschap GraphiQL Explorer
 
-In deze sectie, laten wij de vraag voortzetten GraphQL die later in de cliënttoepassing wordt gebruikt om de gegevens van het Fragment van de Inhoud van de Adventure op te halen en terug te geven.
+In deze sectie, laten wij de vraag van GraphQL voortzetten die later in de cliënttoepassing wordt gebruikt om de gegevens van het Fragment van de Inhoud van de Avontuur te halen en terug te geven.
 
 1. Ga de volgende vraag in de Ontdekkingsreiziger GraphiQL in:
 
@@ -158,7 +158,7 @@ In deze sectie, laten wij de vraag voortzetten GraphQL die later in de cliëntto
 
 1. Tik op Opslaan als en voer de volgende keer in `adventure-details-by-slug` als Naam query.
 
-   ![GrafiekQL-query behouden](assets/graphql-persisted-queries/persist-graphql-query.png)
+   ![GraphQL-query behouden](assets/graphql-persisted-queries/persist-graphql-query.png)
 
 ## Doorlopende query uitvoeren met variabelen door speciale tekens te coderen
 
@@ -212,7 +212,7 @@ Ook, revisie [Hoe te om een Verlengde vraag uit te voeren](https://experiencelea
 
 ## De cache-control parameters van de update in persistente query&#39;s {#cache-control-all-adventures}
 
-Met de AEM GraphQL-API kunt u de standaardparameters voor cachebeheer bijwerken naar uw query&#39;s om de prestaties te verbeteren. De standaardwaarden voor cachebeheer zijn:
+Met de AEM GraphQL API kunt u de standaardparameters voor het beheren van cache bijwerken naar uw query&#39;s om de prestaties te verbeteren. De standaardwaarden voor cachebeheer zijn:
 
 * 60 seconden is het gebrek (maxage=60) TTL voor de cliënt (bijvoorbeeld, browser)
 
@@ -222,12 +222,12 @@ Gebruik de `adventures-all` vraag om de geheim voorgeheugen-controle parameters 
 
 1. Open de GrahiQL Explorer en klik op de knop **ovalen** (...) naast de permanente query klikt u op **Kopteksten** openen **Cacheconfiguratie** modal.
 
-   ![GrafiekQL-koptekstoptie behouden](assets/graphql-persisted-queries/persist-graphql-header-option.png)
+   ![Optie GraphQL-koptekst behouden](assets/graphql-persisted-queries/persist-graphql-header-option.png)
 
 
 1. In de **Cacheconfiguratie** modaal, update `max-age` koptekstwaarde naar `600 `seconden (10 minuten) en klik vervolgens op **Opslaan**
 
-   ![Configuratie van GraphQL-cache behouden](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
+   ![Configuratie GraphQL-cache behouden](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
 
 
 Controleren [Door uw doorlopende query&#39;s in cache te plaatsen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#caching-persisted-queries) voor meer informatie over standaardcache-control parameters.
@@ -235,7 +235,7 @@ Controleren [Door uw doorlopende query&#39;s in cache te plaatsen](https://exper
 
 ## Gefeliciteerd!
 
-Gefeliciteerd! U hebt nu geleerd hoe te om vragen GraphQL met parameters voort te zetten, voortgeduurde vragen bij te werken, en cache-controle parameters met voortgeduurde vragen te gebruiken.
+Gefeliciteerd! U hebt nu geleerd hoe te om de vragen van GraphQL met parameters voort te zetten, voortgeduurde vragen bij te werken, en cache-controle parameters met voortgezette vragen te gebruiken.
 
 ## Volgende stappen
 

@@ -37,27 +37,27 @@ De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun h
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
 1. Aanmelden bij Adobe Target en navigeren naar het tabblad Activiteiten
-1. Klik op **Activiteit maken** en kies vervolgens **A/B Test** activiteit
+1. Klikken **Activiteit maken** en kies vervolgens **A/B-test** activiteit
 
    ![A/B-activiteit](assets/ab-target-activity.png)
 
-1. Selecteer de optie **Visual Experience Composer**, geef de activiteit-URL op en klik op **Volgende**
+1. Selecteer **Visual Experience Composer** , geeft u de URL van de activiteit op en klikt u op **Volgende**
 
    ![URL van activiteit](assets/ab-test-url.png)
 
-1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Beleef A* en *Beleef B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door **Add Ervaring** te gebruiken knoop.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door **Ervaring toevoegen** knop.
 
    ![Ervingopties](assets/experience-options.png)
 
-1. De opties van de mening beschikbaar voor Ervaring A en selecteren dan **Omleiden aan URL** optie en verstrekken een URL voor de nieuwe homepage van de Plaats WKND.
+1. De opties van de mening beschikbaar voor Ervaring A en selecteert dan **Omleiden naar URL** en geef een URL op voor de nieuwe homepage van de WKND-site.
 
    ![URL omleiden](assets/redirect-url.png)
 
-1. Naam wijzigen *Ervaar A* in *Nieuwe WKND-startpagina* en *Beleving B* in *WKND-startpagina*
+1. Naam wijzigen *Ervaring A* tot *Nieuwe WKND-startpagina* en *Ervaring B* tot *WKND-startpagina*
 
    ![avonturen](assets/new-experiences.png)
 
-1. Klik **Volgende** om zich aan het richten te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
+1. Klikken **Volgende** om over te stappen naar gericht en een handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
    ![Doelstelling](assets/targeting.png)
 
@@ -70,7 +70,7 @@ De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun h
 
    ![Doelen](assets/activate.png)
 
-1. Open uw sitepagina (Activiteit URL van stap 3) op een nieuw tabblad en u moet een van de ervaringen (WKND-startpagina of Nieuwe WKND-startpagina) kunnen bekijken vanaf onze testactiviteit A/B. `us/en.html` omleidingen naar  `us/home.html`.
+1. Open uw sitepagina (Activiteit URL van stap 3) op een nieuw tabblad en u moet een van de ervaringen (WKND-startpagina of Nieuwe WKND-startpagina) kunnen bekijken vanaf onze testactiviteit A/B. `us/en.html` omleiding naar `us/home.html`.
 
    ![Doelen](assets/redirect-test.png)
 

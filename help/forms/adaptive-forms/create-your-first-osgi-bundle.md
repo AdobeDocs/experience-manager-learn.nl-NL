@@ -82,7 +82,7 @@ Het Maven project wordt op interactieve wijze geproduceerd en u wordt gevraagd o
 | groupId | groupId identificeert uniek uw project over alle projecten | com.learningaemforms.adobe |
 | appsFolderName | Naam van de map die de projectstructuur bevat | leervormen |
 | artifactId | artifactId is de naam van de pot zonder versie. Als u het creeerde, dan kunt u kiezen welke naam u met kleine letters en geen vreemde symbolen wilt. | leervormen |
-| version | Als u het verspreidt, kunt u elke typische versie kiezen met nummers en punten (1.0, 1.1, 1.0.1, ...). | 1.0 |
+| versie | Als u het verspreidt, kunt u elke typische versie kiezen met nummers en punten (1.0, 1.1, 1.0.1, ...). | 1.0 |
 
 Accepteer de standaardwaarden voor de andere eigenschappen door op Enter te drukken.
 Als alles goed gaat zou u een bericht van het bouwstijlsucces in uw bevelvenster moeten zien

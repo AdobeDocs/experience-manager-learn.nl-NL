@@ -91,11 +91,11 @@ Hieronder ziet u een matrix van de belangrijkste basisfuncties die AEM biedt. So
             <td>Functie van Stichting</td>
             <td>5,6 x</td>
             <td>6.0</td>
-            <td>6,1</td>
-            <td>6,2</td>
-            <td>6,3</td>
-            <td>6,4</td>
-            <td>6,5</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
         </tr>
     </thead>
     <tbody>
@@ -284,12 +284,12 @@ Hieronder ziet u een matrix van de belangrijkste beveiligingsfuncties die AEM bi
         <tr>
             <td>Beveiligingsonderdeel</td>
             <td>5,6 x</td>
-            <td>6,0</td>
-            <td>6,1</td>
-            <td>6,2</td>
-            <td>6,3</td>
-            <td>6,4</td>
-            <td>6,5</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
         </tr>
     </thead>
     <tbody>
@@ -434,12 +434,12 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
         <tr>
             <td><strong>Functie Sites</strong></td>
             <td>5,6 x</td>
-            <td>6,0</td>
-            <td>6,1</td>
-            <td>6,2</td>
-            <td>6,3</td>
-            <td>6,4</td>
-            <td>6,5</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
         </tr>
     </thead>
     <tbody>
@@ -682,12 +682,12 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         <tr>
             <td>Elementfunctie</td>
             <td>5,6 x</td>
-            <td>6,0</td>
-            <td>6,1</td>
-            <td>6,2</td>
-            <td>6,3</td>
-            <td>6,4</td>
-            <td>6,5</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
         </tr>
     </thead>
     <tbody>
@@ -894,12 +894,12 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         <tr>
             <td>Dynamic Media-functie</td>
             <td>5,6 x</td>
-            <td>6,0</td>
-            <td>6,1</td>
-            <td>6,2</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
             <td>6,3 +FP</td>
-            <td>6,4</td>
-            <td>6,5</td>
+            <td>6.4</td>
+            <td>6.5</td>
         </tr>
     </thead>
     <tbody>
@@ -997,12 +997,12 @@ Hieronder ziet u een matrix met belangrijke AEM Forms Add-on-functies die AEM bi
         <tr>
             <td>Forms-functie</td>
             <td>5,6 x</td>
-            <td>6,0</td>
-            <td>6,1</td>
-            <td>6,2</td>
-            <td>6,3</td>
-            <td>6,4</td>
-            <td>6,5</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
         </tr>
     </thead>
     <tbody>
@@ -1191,12 +1191,12 @@ Hieronder ziet u een matrix met belangrijke AEM Communities Add-on-functies die 
         <tr>
             <td> </td>
             <td>Functie Gemeenschappen</td>
-            <td>6,0</td>
-            <td>6,1</td>
-            <td>6,2</td>
-            <td>6,3</td>
-            <td>6,4</td>
-            <td>6,5</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
         </tr>
     </thead>
     <tbody>

@@ -9,7 +9,8 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -54,8 +55,3 @@ Communiceer met uw formulier terwijl u het consolevenster open houdt. Je moet zo
 Voeg de [AEP-extensie voor foutopsporing](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) aan uw browser (u moet zich aanmelden) om meer het zuiveren informatie te krijgen
 
 ![platform-debugger](assets/platform-debugger.png)
-
-
-
-
-

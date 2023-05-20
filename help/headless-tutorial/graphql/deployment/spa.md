@@ -1,5 +1,5 @@
 ---
-title: SPA voor AEM GraphQL implementeren
+title: SPA implementeren voor AEM GraphQL
 description: Meer informatie over implementatieoverwegingen voor app (SPA) AEM headless-implementaties van één pagina.
 version: Cloud Service
 feature: GraphQL API
@@ -9,13 +9,13 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
+exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
 
 ---
-
 
 # Implementaties SPA zonder kop AEM
 
@@ -77,17 +77,17 @@ Hieronder vindt u implementatieconfiguraties die vereist zijn voor SPA productie
 
 #### Voorbeeld SPA implementatie op verschillende domeinen
 
-In dit voorbeeld wordt de SPA geïmplementeerd in een Netlify-domein (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) en de SPA gebruikt AEM GraphQL-API&#39;s van het AEM-publicatiedomein (`https://publish-p65804-e666805.adobeaemcloud.com`). In de onderstaande schermafbeeldingen wordt de vereiste CORS benadrukt.
+In dit voorbeeld wordt de SPA geïmplementeerd in een Netlify-domein (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) en de SPA gebruikt AEM GraphQL API&#39;s van het AEM-publicatiedomein (`https://publish-p65804-e666805.adobeaemcloud.com`). In de onderstaande schermafbeeldingen wordt de vereiste CORS benadrukt.
 
-1. De SPA wordt gediend van een domein Netlify, maar maakt een XHR vraag aan AEM GraphQL APIs op een verschillend domein. Dit verzoek voor meerdere sites is vereist [CORS](./configurations/cors.md) op AEM moet worden ingesteld om verzoeken van het Netlify-domein toegang te verlenen tot de inhoud ervan.
+1. De SPA wordt bediend van een domein van Netlify, maar maakt een XHR vraag aan AEM GraphQL APIs op een verschillend domein. Dit verzoek voor meerdere sites is vereist [CORS](./configurations/cors.md) op AEM moet worden ingesteld om verzoeken van het Netlify-domein toegang te verlenen tot de inhoud ervan.
 
    ![SPA van SPA &amp; AEM hosts ](assets/spa/cors-requirement.png)
 
-2. De XHR-aanvraag wordt gecontroleerd op de AEM GraphQL API, de `Access-Control-Allow-Origin` aanwezig is, die aan Webbrowser erop wijzen dat AEM verzoek van dit domein van Netlify om tot zijn inhoud toestaat toegang te hebben.
+2. Inspecteer het XHR-verzoek aan de AEM GraphQL API, de `Access-Control-Allow-Origin` aanwezig is, die aan Webbrowser erop wijzen dat AEM verzoek van dit domein van Netlify om tot zijn inhoud toestaat toegang te hebben.
 
    Als de AEM [CORS](./configurations/cors.md) het Netlify-domein ontbreekt of er is geen Netlify-domein in opgenomen, mislukt de webbrowser het XHR-verzoek en rapporteert een CORS-fout.
 
-   ![Koptekst CORS-reactie AEM GraphQL API](assets/spa/cors-response-headers.png)
+   ![CORS Response Header AEM GraphQL API](assets/spa/cors-response-headers.png)
 
 ## Voorbeeld-app van één pagina
 
@@ -107,7 +107,7 @@ Adobe biedt een voorbeeld van een app van één pagina die in React is gecodeerd
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/react-app.md" title="Toepassingen Reageren">Toepassingen Reageren</a></p>
-               <p class="is-size-6">Een voorbeeld van een app van één pagina, geschreven in React, die inhoud van AEM Headless GraphQL APIs verbruikt.</p>
+               <p class="is-size-6">Een voorbeeld van een app van één pagina, geschreven in React, die inhoud van AEM GraphQL-API's zonder koppen verbruikt.</p>
                <a href="../example-apps/react-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
                </a>
@@ -128,7 +128,7 @@ Adobe biedt een voorbeeld van een app van één pagina die in React is gecodeerd
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/next-js.md" title="De app Next.js">De app Next.js</a></p>
-               <p class="is-size-6">Een voorbeeld van een app van één pagina, geschreven in Next.js, die inhoud van AEM Headless GraphQL APIs verbruikt.</p>
+               <p class="is-size-6">Een voorbeeld van een app van één pagina, geschreven in Next.js, die inhoud van AEM GraphQL-API's zonder koppen verbruikt.</p>
                <a href="../example-apps/next-js.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
                </a>

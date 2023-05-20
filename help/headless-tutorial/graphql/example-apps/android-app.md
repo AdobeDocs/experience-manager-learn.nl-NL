@@ -1,6 +1,6 @@
 ---
 title: Android-toepassing - Voorbeeld AEM zonder kop
-description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze Android-toepassing laat zien hoe u inhoud kunt opvragen met de GraphQL-API's van AEM.
+description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze Android-toepassing laat zien hoe u inhoud kunt opvragen met de GraphQL API's van AEM.
 version: Cloud Service
 mini-toc-levels: 2
 kt: 10588
@@ -13,13 +13,13 @@ exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
 source-git-commit: 985d52f02025dc9cb2b9c70ead4a88af07c63f29
 workflow-type: tm+mt
 source-wordcount: '765'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Android-toepassing
 
-Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze Android-toepassing laat zien hoe u inhoud kunt opvragen met de GraphQL-API&#39;s van AEM. De [AEM headless-client voor Java](https://github.com/adobe/aem-headless-client-java) wordt gebruikt om de query&#39;s voor GraphQL uit te voeren en gegevens toe te wijzen aan Java-objecten om de app te activeren.
+Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze Android-toepassing laat zien hoe u inhoud kunt opvragen met de GraphQL API&#39;s van AEM. De [AEM headless-client voor Java](https://github.com/adobe/aem-headless-client-java) wordt gebruikt om GraphQL-query&#39;s uit te voeren en gegevens toe te wijzen aan Java-objecten om de app te activeren.
 
 ![Android Java-app met AEM headless](./assets/android-java-app/android-app.png)
 
@@ -60,7 +60,7 @@ De Android-toepassing is ontworpen om verbinding te maken met een __AEM-publicat
 
    __Basisverificatie__
 
-   De `contentApi.user` en `contentApi.password` authenticeer een lokale AEM gebruiker met toegang tot inhoud WKND GraphQL.
+   De `contentApi.user` en `contentApi.password` Een lokale AEM verifiëren met toegang tot WKND GraphQL-inhoud.
 
    ```plain
    contentApi.endpoint=http://10.0.2.2:4502
@@ -95,7 +95,7 @@ Hieronder volgt een korte samenvatting van de belangrijke bestanden en code die 
 
 ### Blijvende query&#39;s
 
-Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing van iOS AEM GraphQL voortgeduurde vragen om avontuurgegevens te vragen. De toepassing gebruikt twee voortgeduurde vragen:
+Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing van iOS AEM GraphQL voortgezette vragen om avontuurgegevens te vragen. De toepassing gebruikt twee voortgeduurde vragen:
 
 + `wknd/adventures-all` persisted query, die alle avonturen in AEM met een verkorte set eigenschappen retourneert. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
 
@@ -178,9 +178,9 @@ query($slug: String!) {
 }
 ```
 
-### Vraag GrafiekQL blijft uitvoeren
+### GraphQL-query uitgevoerd
 
-AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, [AEM headless client voor Java](https://github.com/adobe/aem-headless-client-java) wordt gebruikt om de voortgezette vragen GraphQL tegen AEM uit te voeren en de adventure inhoud in app te laden.
+AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, [AEM headless client voor Java](https://github.com/adobe/aem-headless-client-java) wordt gebruikt om de hardnekkige GraphQL-query&#39;s uit te voeren tegen AEM en de avontuurlijke inhoud in de app te laden.
 
 Elke persistente query heeft een corresponderende &quot;loader&quot;-klasse, die asynchroon het eindpunt van de AEM HTTP-GET aanroept en de avontuurgegevens retourneert met behulp van de aangepaste definitie [gegevensmodel](#data-models).
 
@@ -212,9 +212,9 @@ AEMHeadlessClient client = builder.build();
 GraphQlResponse response = client.runPersistedQuery(PERSISTED_QUERY_NAME);
 ```
 
-### GrafiekQL-responsgegevensmodellen{#data-models}
+### GraphQL-responsgegevensmodellen{#data-models}
 
-`Adventure.java` is een Java POJO die met de gegevens JSON van het GraphQL- verzoek wordt geïnitialiseerd, en een adventure voor gebruik in de meningen van de Android toepassing modelleert.
+`Adventure.java` is een Java POJO die wordt geïnitialiseerd met de JSON-gegevens van de GraphQL-aanvraag en een avontuur modelleert voor gebruik in de weergaven van de Android-toepassing.
 
 ### Weergaven
 
@@ -234,5 +234,5 @@ De Android-toepassing gebruikt twee weergaven om de avontuurgegevens in de mobie
 
 ## Aanvullende bronnen
 
-+ [Aan de slag met AEM headless - GraphQL-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [Aan de slag met AEM headless - zelfstudie voor GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
 + [AEM headless-client voor Java](https://github.com/adobe/aem-headless-client-java)

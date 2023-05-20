@@ -12,9 +12,9 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -36,19 +36,19 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste manier om
 
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
-1. Aanmelden bij [Adobe Experience Cloud](https://experience.adobe.com/), tikken op __Doel__, navigeer naar het tabblad __Activiteiten__
+1. Aanmelden bij [Adobe Experience Cloud](https://experience.adobe.com/)tikken op __Doel__, navigeert u naar de __Activiteiten__ tab
 
-   + Als u __Doel__ op het dashboard van de Experience Cloud niet ziet, zorg ervoor de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat u de gebruiker toegang tot Doel in [Adobe Admin Console](https://adminconsole.adobe.com/) is verleend.
+   + Als u niet ziet __Doel__ op het dashboard van de Experience Cloud, zorg ervoor de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat u de gebruiker toegang tot Doel binnen hebt verleend [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Klik op **Activiteit maken** en kies vervolgens **A/B Test** activiteit
+1. Klikken **Activiteit maken** en kies vervolgens **A/B-test** activiteit
 
    ![A/B-activiteit](assets/ab-target-activity.png)
 
-1. Selecteer de optie **Visual Experience Composer**, geef de activiteit-URL op en klik op **Volgende**
+1. Selecteer **Visual Experience Composer** , geeft u de URL van de activiteit op en klikt u op **Volgende**
 
    ![URL van activiteit](assets/ab-test-url.png)
 
-1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Beleef A* en *Beleef B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door **Add Ervaring** te gebruiken knoop.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door **Ervaring toevoegen** knop.
 
    ![Ervaring A](assets/experience.png)
 
@@ -56,16 +56,16 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste manier om
 
    ![Element](assets/select-element.png)
 
-1. Wijzig de tekst van *Camping in Western Australia* in *Adventures of Australia*. Een lijst van veranderingen die aan een Ervaring worden toegevoegd zal onder Wijzigingen worden getoond. U kunt op het gewijzigde item klikken en dit bewerken om de CSS-kiezer weer te geven en de nieuwe inhoud die eraan is toegevoegd.
+1. De tekst wijzigen vanuit *Kamperen in West-Australië* tot *Vluchtelingen van Australië*. Een lijst met wijzigingen die aan een ervaring zijn toegevoegd, wordt weergegeven onder Wijzigingen. U kunt op het gewijzigde item klikken en dit bewerken om de CSS-kiezer weer te geven en de nieuwe inhoud die eraan is toegevoegd.
 
    ![avonturen](assets/adventures.png)
 
-1. Naam wijzigen *Ervaring A* in *Adventure*
-1. Werk de tekst op *Experience B* bij van *Camping in Western Australia* tot *De Australische wilde natuur ontdekken*.
+1. Naam wijzigen *Ervaring A* tot *Adventure*
+1. Werk de tekst op dezelfde manier bij *Ervaring B* van *Kamperen in West-Australië* tot *Ontdek de Australische wilde natuur*.
 
    ![Verkennen](assets/explore.png)
 
-1. Klik **Volgende** om zich aan het richten te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
+1. Klikken **Volgende** om naar gericht te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
    ![Doelstelling](assets/targeting.png)
 

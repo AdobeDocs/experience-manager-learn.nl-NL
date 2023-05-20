@@ -7,13 +7,13 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
 topic: Development
-source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
+exl-id: f6536af2-e4b8-46ca-9b44-a0eb8f4fdca9
+source-git-commit: 47d36e472719049de1346c5f0bba010c9af4e039
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Eclipproject importeren
 
@@ -39,4 +39,3 @@ Start Eclipse en importeer het project in Eclipse. Het project bevat de volgende
 > De allereerste keer dat u het Java-programma uitvoert, wordt een HTTP 403-fout gegenereerd. Om voorbij dit te komen, zorg ervoor u [de juiste machtigingen voor de gebruiker van de technische account in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
 **AEM Forms-gebruikers** Dat is de rol die ik voor deze cursus heb gebruikt.
-

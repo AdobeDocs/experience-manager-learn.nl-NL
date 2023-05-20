@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Aangepast profiel maken
 
-In dit deel zullen we een [aangepast profiel.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Een profiel is verantwoordelijk voor het renderen van de XDP als HTML. Er wordt een standaardprofiel opgegeven in het vak voor het renderen van XDP&#39;s als HTML. Deze vertegenwoordigt een aangepaste versie van de Mobile Forms Rendition-service. Met de service Mobile Form Rendition kunt u de weergave, het gedrag en de interacties van de Mobile Forms aanpassen. In ons aangepaste profiel leggen we de gegevens die in het mobiele formulier zijn ingevuld, vast met de API voor hulplijnen. Deze gegevens worden vervolgens naar een aangepaste servlet verzonden die vervolgens een interactieve PDF genereert en deze terugstuurt naar de aanroepende toepassing.
+In dit deel zullen we een [aangepast profiel.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Een profiel is verantwoordelijk voor het renderen van de XDP als HTML. Er wordt een standaardprofiel opgegeven in het vak voor het renderen van XDP&#39;s als HTML. Deze vertegenwoordigt een aangepaste versie van de Mobile Forms Rendition-service. Met de service Mobiele formulieruitvoering kunt u de weergave, het gedrag en de interacties van de Mobile Forms aanpassen. In ons aangepaste profiel leggen we de gegevens die in het mobiele formulier zijn ingevuld, vast met de API voor hulplijnen. Deze gegevens worden vervolgens naar een aangepaste servlet verzonden die vervolgens een interactieve PDF genereert en deze terugstuurt naar de aanroepende toepassing.
 
 De formuliergegevens ophalen met de `formBridge` JavaScript-API. We maken gebruik van de `getDataXML()` methode:
 

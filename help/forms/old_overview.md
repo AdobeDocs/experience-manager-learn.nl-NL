@@ -1,13 +1,13 @@
 ---
 title: AEM Forms-Tutorials en -video's
-description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
+description: Verzameling van AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -182,7 +182,7 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 * [AEM Sites Developing Documentation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [AEM Sites-beheerdocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [AEM Sites-documentatie implementeren](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [AEM as a Cloud Service Tutorials](/help/cloud-service/overview.md)
-* [AEM Assets Tutorials](/help/assets/overview.md)
-* [AEM Forms Tutorials](/help/forms/overview.md)
-* [Tutorials AEM stichting](/help/foundation/overview.md)
+* [Tutorials voor AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutorials voor AEM Assets](/help/assets/overview.md)
+* [Tutorials voor AEM Forms](/help/forms/overview.md)
+* [Tutorials voor AEM Foundation](/help/foundation/overview.md)

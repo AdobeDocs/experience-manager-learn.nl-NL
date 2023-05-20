@@ -10,7 +10,7 @@ exl-id: 59d5ba6d-91c1-48c7-8c87-8e0caf4f2d7e
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -123,5 +123,5 @@ Volg de volgende stappen om de oplossing te testen:
 
 * Configureer de verzendactie naar &quot;Verzenden met gebruik van het formuliergegevensmodel&quot;.
 * Configureer het gegevensmodel voor de juiste verzending.
-* Geef een voorbeeld van het formulier weer. Vul de velden in en verzend deze.
+* Bekijk een voorbeeld van het formulier. Vul de velden in en verzend deze.
 * Controleer of het profiel is gemaakt in Adobe Campaign Standard.

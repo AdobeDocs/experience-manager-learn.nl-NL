@@ -9,13 +9,13 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
 
 ---
-
 
 # Een extensie testen
 
@@ -133,6 +133,3 @@ Houd er rekening mee dat wanneer u deze methode gebruikt, de extensie Staged all
 
 1. Ingevoerde extensies kunnen worden bijgewerkt door `aio app deploy` en deze wijzigingen worden automatisch doorgevoerd wanneer u de test-URL gebruikt.
 1. Als u een extensie voor testen wilt verwijderen, voert u `aio app undeploy`.
-
-
-

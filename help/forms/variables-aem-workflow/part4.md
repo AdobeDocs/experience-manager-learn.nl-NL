@@ -2,16 +2,16 @@
 title: Variabelen in AEM workflow[Deel4]
 description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM workflow
 version: 6.5
-topic: Ontwikkeling
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
-
 
 # ArrayList-variabele in AEM workflow
 
@@ -64,14 +64,14 @@ Hieronder volgt een overzicht van de gegevens uit het aangepaste formulier dat w
 
 Als u de ArrayList-variabele van een subtype-tekenreeks wilt initialiseren, kunt u de JSON-puntnotatie of de XPath-toewijzingsmodus gebruiken. In de volgende schermafbeelding ziet u hoe u een variabele ArrayList met de naam CustomRoutes vult met behulp van de JSON-puntnotatie. Zorg ervoor dat u naar een element in een matrixobject wijst, zoals in de onderstaande schermafbeelding wordt getoond. Wij bevolken CustomRoutes ArrayList met de namen van het managerchain serievoorwerp.
 CustomRoutes ArrayList wordt dan gebruikt om de Routes in de component AssignTask te bevolken
-![customroutes](assets/arraylist.jpg)
+![klantroutes](assets/arraylist.jpg)
 Zodra de variabele CustomRoutes ArrayList met de waarden van de voorgelegde gegevens wordt geïnitialiseerd, worden de Routes van de component AssignTask dan bevolkt gebruikend de variabele CustomRoutes. Het schermafbeelding hieronder toont u de aangepaste routes in een AssignTask
-![asingtask](assets/customactions.jpg)
+![taak](assets/customactions.jpg)
 
 Voer de volgende stappen uit om deze workflow op uw systeem te testen
 
 * Download en sla het bestand ArrayListVariable.zip op in uw bestandssysteem
-* [Het ZIP-](assets/arraylistvariable.zip) bestand importeren met AEM Package Manager
+* [Het ZIP-bestand importeren](assets/arraylistvariable.zip) met AEM Package Manager
 * [Open het formulier TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Voer een paar kosten en de namen van de twee managers in
 * De verzendknop
@@ -79,4 +79,4 @@ Voer de volgende stappen uit om deze workflow op uw systeem te testen
 * U zou een nieuwe taak moeten zien getiteld &quot;toewijzen aan uitgavenbeheerder&quot;
 * Het formulier openen dat is gekoppeld aan de taak
 * U zou twee douanerouten met de managernamen moeten zien
-   [Ontdek de ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Deze workflow gebruikt de variabele ArrayList, variabele van het JSON-type, regeleditor in of-gesplitste component
+   [Ontdek de ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Deze workflow gebruikt de variabele ArrayList, het JSON-type variabele, de regeleditor in of-gesplitst component

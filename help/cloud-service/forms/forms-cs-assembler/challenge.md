@@ -1,5 +1,5 @@
 ---
-title: Uw begrip testen
+title: Uw begrip van Forms-lid testen
 description: De oefeningen voltooien
 type: Documentation
 role: Developer
@@ -9,7 +9,7 @@ feature: Adaptive Forms
 topic: Development
 kt: 9980
 exl-id: 6bd47a37-5a4e-47a9-9be7-782f611d8f13
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '31'
 ht-degree: 0%
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 ## PDF-bestanden samenstellen
 
-Wijzig het bestand assembly2pdfs.ddx om 3 PDF-bestanden samen te stellen. U moet de derde PDF plaatsen in de map resources/pdffiles
+De `assemble2pdfs.ddx` bestand om 3 PDF-bestanden samen te stellen.
 
-
+U plaatst de derde PDF onder de map resources/pdfiles.

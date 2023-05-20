@@ -7,7 +7,7 @@ exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
 source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -28,9 +28,9 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 
    *Leer hoe u de gegevenslaag voor de Adobe-client kunt bijwerken met inhoud van aangepaste AEM Componenten.*
 
-* **[Aan de slag met AEM headless GraphQL (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+* **[Aan de slag met AEM GraphQL zonder koptekst (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
-   *Hoe u inhoud van AEM toegankelijk maakt voor gebruik door een systeemeigen mobiele app met behulp van AEM GraphQL-API&#39;s.*
+   *Hoe u inhoud van AEM toegankelijk maakt voor gebruik door een systeemeigen mobiele app met behulp van GraphQL-API&#39;s.*
 
 * **[Inhoudsfragmenten gebruiken (videoreeks)](./content-fragments/content-fragments-feature-video-use.md)**
 
@@ -57,7 +57,7 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
-      <img alt="Aan de slag met AEM Sites - WKND-zelfstudie" src="./assets/aem-wknd-tutorial.png" />
+      <img alt="Aan de slag met AEM Sites - WKND-tutorial" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
@@ -70,11 +70,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
-    <img alt="Aan de slag met AEM headless" src="./assets/aem-headless-tutorial.png" />
+    <img alt="Aan de slag met AEM Headless" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
-    <strong>Aan de slag met AEM headless</strong>
+    <strong>Aan de slag met AEM Headless</strong>
     </a>
     </div>
     <p>

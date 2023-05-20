@@ -15,7 +15,7 @@ exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -91,7 +91,7 @@ return val;
 * [De inbox openen](http://localhost:4502/aem/inbox)
 * Beheer beheren openen door te klikken op Lijstweergave naast de knop Maken
 * Kolom Inkomen toevoegen aan Postvak In en uw wijzigingen opslaan
-* [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Selecteer _huwelijkse staat_ en het formulier verzenden
 * [Inbox weergeven](http://localhost:4502/aem/inbox)
 

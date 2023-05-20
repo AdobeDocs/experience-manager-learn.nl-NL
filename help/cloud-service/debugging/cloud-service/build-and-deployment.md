@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: 7a4585146b52d14f32645c6889c9c015e9991809
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2524'
+source-wordcount: '2523'
 ht-degree: 0%
 
 ---
@@ -92,8 +92,8 @@ Wanneer de veelvoudige configuraties OSGi via runmode voor het doel AEM milieu o
 
 ```
 [ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: 
-Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, 
-set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
+Configuration 'com.example.ExampleComponent' already defined in Feature Model 'com.example.groupId:example.all:slingosgifeature:xxxxx:X.X', 
+set the 'mergeConfigurations' flag to 'true' if you want to merge multiple configurations with same PID
 ```
 
 #### Oorzaak 1
@@ -110,7 +110,7 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 
 De opnieuw aanwijzen manuscripten bepalen basislijninhoud, gebruikers, ACLs, enz. In AEM as a Cloud Service, worden het opnieuw richten van manuscripten toegepast tijdens het Beeld van de Bouwstijl, nochtans op AEM lokale QuickStart van SDK zij toegepast wanneer OSGi opnieuw richt fabrieksconfiguratie wordt geactiveerd. Hierdoor kunnen scripts voor opnieuw aanwijzen stilletjes mislukken (met registratie) bij AEM lokale QuickStart van SDK en de stap Build Image laten mislukken, waardoor de implementatie wordt gestopt.
 
-+ __Oorzaak:__ Een herpointscript is onjuist geformuleerd. Dit kan ertoe leiden dat de gegevensopslagruimte onvolledig blijft omdat eventuele opnieuw aanwijsscripts na het mislukte script tegen de gegevensopslagruimte worden uitgevoerd.
++ __Oorzaak:__ Een herpointscript is onjuist geformuleerd. Dit kan ertoe leiden dat de repository onvolledig blijft omdat eventuele opnieuw geplaatste scripts na het falende script niet worden uitgevoerd tegen de repository.
 + __Resolutie:__ Herzie lokale quickstart van AEM SDK wanneer het opnieuw richt manuscript OSGi configuratie wordt opgesteld om te bepalen als en wat de fouten zijn.
 
 ### Onbevredigd opnieuw richten inhoudsgebiedsdeel
@@ -221,7 +221,7 @@ Om deze kwestie te bevestigen is de oorzaak van het falende gedrag:
    2020-01-01T01:01:02+0000 Begin deployment in aem-program-x-env-y-dev [CorrelationId: 1234]
    ```
 
-   ... and ...
+   ... en ...
 
    ```
    2020-01-01T02:04:10+0000 Failed deployment in aem-program-x-env-y-dev

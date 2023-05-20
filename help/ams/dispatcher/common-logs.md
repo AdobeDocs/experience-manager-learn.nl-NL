@@ -7,13 +7,13 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
 
 ---
-
 
 # Algemene logbestanden
 
@@ -68,7 +68,7 @@ Voorbeeld van logbestandvermelding:
 Fri Jul 20 17:25:48 2018 D pid 25939 (tid 139937517123328) Filter rejects: GET /libs/granite/core/content/login.html HTTP/1.1
 ```
 
-or:
+of:
 
 ```
 Fri Jul 20 22:16:55 2018 I pid 128803 "GET /system/console/" ! - 8ms publishfarm/-

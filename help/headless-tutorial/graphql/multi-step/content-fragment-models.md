@@ -1,5 +1,5 @@
 ---
-title: Modellen voor inhoudsfragmenten definiëren - Aan de slag met AEM zonder kop - GraphQL
+title: Modellen voor inhoudsfragmenten definiëren - Aan de slag met AEM headless - GraphQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u inhoud modelleert en een schema samenstelt met Content Fragment Models in AEM. Beoordeel bestaande modellen en maak een model. Leer over de verschillende gegevenstypes die kunnen worden gebruikt om een schema te bepalen.
 version: Cloud Service
 mini-toc-levels: 1
@@ -23,7 +23,7 @@ In dit hoofdstuk leert u hoe u inhoud kunt modelleren en een schema kunt maken m
 
 We maken twee eenvoudige modellen. **Team** en **Persoon**. De **Team** gegevensmodel heeft naam, korte naam en beschrijving en verwijst naar het **Persoon** gegevensmodel met volledige naam, biodetails, profielafbeelding en lijst van beroepen.
 
-U bent ook welkom om uw eigen model na de basisstappen tot stand te brengen en de respectieve stappen zoals vragen GraphQL, en Reageer de code van de App te richten of eenvoudig de stappen te volgen die in deze hoofdstukken worden geschetst.
+U kunt ook uw eigen model maken aan de hand van de basisstappen en de respectieve stappen aanpassen, zoals GraphQL-query&#39;s, en de App-code Reageren of gewoon de stappen volgen die in deze hoofdstukken worden beschreven.
 
 ## Vereisten {#prerequisites}
 
@@ -47,9 +47,9 @@ Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbo
 1. In het resulterende dialoogvenster voert u in:
 
    * Titel*: **Mijn project**
-   * Naam*: **mijn-project** (Gebruik bij voorkeur alleen kleine letters als u woorden van elkaar scheidt. Dit koord beïnvloedt het unieke eindpunt GraphQL dat de cliënttoepassingen verzoeken waartegen uitvoeren.)
+   * Naam*: **mijn-project** (Gebruik bij voorkeur alleen kleine letters als u woorden van elkaar scheidt. Deze tekenreeks beïnvloedt het unieke GraphQL-eindpunt waarop clienttoepassingen aanvragen uitvoeren.)
    * Controleren **Modellen van inhoudsfragmenten**
-   * Controleren **GrafiekQL blijvende vragen**
+   * Controleren **Blijvende GraphQL-query&#39;s**
 
    ![Mijn projectconfiguratie](assets/content-fragment-models/my-project-configuration.png)
 

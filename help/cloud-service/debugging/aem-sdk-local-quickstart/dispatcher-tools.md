@@ -6,13 +6,13 @@ kt: 5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
+exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
-
 
 # Fouten opsporen in Dispatcher-gereedschappen
 
@@ -26,15 +26,15 @@ Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cac
 
 ## Logboeken voor Dispatcher Tools
 
-Logboeken voor Dispatcher Tools zijn beschikbaar via de opdracht `stdout` of `bin/docker_run`, of met meer details, beschikbaar in de Docker-container op `/etc/https/logs`.
+Logboeken voor Dispatcher Tools zijn beschikbaar via de `stdout` of de `bin/docker_run` , of met meer details, beschikbaar in de container van de Dokker bij `/etc/https/logs`.
 
-Zie [Dispatcher logs](./logs.md#dispatcher-logs) voor instructies op hoe te om tot de logboeken van de Docker van de container van de Hulpmiddelen van de Verzender rechtstreeks toegang te hebben.
+Zie [Logboeken voor verzending](./logs.md#dispatcher-logs) voor instructies over hoe te om tot de logboeken van de container van de Dokker van de Hulpmiddelen van de Dispatcher rechtstreeks toegang te hebben.
 
 ## Cache van Dispatcher Tools
 
 ### De toegang tot van logboeken in de container van de Dokker
 
-Het cachegeheugen van de Dispatcher kan rechtstreeks toegang krijgen tot de Docker-container op ` /mnt/var/www/html`.
+De Dispatcher-cache heeft rechtstreeks toegang tot de Docker-container op ` /mnt/var/www/html`.
 
 ```shell
 $ docker ps
@@ -54,7 +54,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd
 
-De logboekregistraties van de verzender kunnen uit de container van de Dokker bij `/mnt/var/www/html` aan het lokale dossiersysteem voor inspectie worden gekopieerd gebruikend uw favoriete hulpmiddelen. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan het geheime voorgeheugen verstrekt.
+De logboekbestanden van de Dispatcher kunnen uit de Docker-container worden gekopieerd op `/mnt/var/www/html` naar het lokale bestandssysteem voor inspectie met behulp van uw favoriete gereedschappen. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan het geheime voorgeheugen verstrekt.
 
 ```shell
 $ docker ps
@@ -66,4 +66,3 @@ CONTAINER ID        IMAGE                                       COMMAND         
 $ docker cp -L <CONTAINER ID>:/mnt/var/www/html cache 
 $ cd cache
 ```
-

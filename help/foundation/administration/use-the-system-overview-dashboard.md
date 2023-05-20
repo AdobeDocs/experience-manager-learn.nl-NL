@@ -7,28 +7,28 @@ activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
-topic: Beheer
+topic: Administration
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: af8f499c-4955-44b5-8f21-085263ca31a3
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
-
 # Het dashboard Systeemoverzicht gebruiken
 
-Adobe Experience Manager (AEM) [!UICONTROL System Overview] verstrekt een mening op hoog niveau van de configuratie, de hardware, en de gezondheid van de AEM instantie allen van één enkel dashboard.
+Adobe Experience Manager (AEM) [!UICONTROL System Overview] biedt vanuit één dashboard een weergave op hoog niveau van de configuratie, hardware en status van de AEM instantie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. Het Overzicht van het Systeem kan van worden betreden: **AEM Start** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL System Overview]**
+1. Het Overzicht van het Systeem kan van worden betreden: **AEM starten** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL System Overview]**
 
    Direct om **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
-1. De informatie van [!UICONTROL System Overview] kan worden uitgevoerd door [!UICONTROL Download] knoop te klikken. De informatie wordt ook via het volgende [!DNL REST] eindpunt blootgesteld:
+1. De informatie van de [!UICONTROL System Overview] kan worden geëxporteerd door op de knop [!UICONTROL Download] knop. De informatie wordt ook via het volgende weergegeven [!DNL REST] eindpunt:
 1. Hieronder ziet u een voorbeelduitvoer van de JSON die wordt geëxporteerd uit de [!UICONTROL System Overview]:
 
    ```json

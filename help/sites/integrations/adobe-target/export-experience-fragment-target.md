@@ -38,18 +38,18 @@ Leer hoe u AEM Ervaring Fragment als Adobe Target-aanbiedingen exporteert.
 
 Als u het fragment Experience naar Adobe Target exporteert zonder de juiste machtigingen in Adobe Admin Console, treedt de volgende fout op bij de AEM Author-service:
 
-    ![Interface-fout voor doel-API](assets/error-target-offer.png)
+    ![UI-fout doel-API](assets/error-target-offer.png)
 
-... en de volgende logboekberichten in het `aemerror` logboek:
+... en de volgende logberichten in de `aemerror` logboek:
 
-    ![API-doelconsolefout](assets/target-console-error.png)
+    ![Fout doelAPI-console](assets/target-console-error.png)
 
 #### Resolutie
 
-1. Aanmelden bij [Admin Console](https://adminconsole.adobe.com/) met beheerrechten voor het gebruikte Adobe Target-productprofiel, maar AEM integratie
-2. Selecteer __Producten > Adobe Target > Productprofiel__
-3. Selecteer onder __Integraties__ tabblad de integratie voor uw AEM als een Cloud Service-omgeving (dezelfde naam als het Adobe I/O-project)
-4. Wijs __Editor__ of __Fiatteur__ rol toe
+1. Aanmelden bij [Admin Console](https://adminconsole.adobe.com/) met beheerrechten voor het Adobe Target-productprofiel dat wordt gebruikt, maar AEM integratie
+2. Selecteren __Producten > Adobe Target > Productprofiel__
+3. Onder __Integraties__ tab, selecteer de integratie voor uw AEM as a Cloud Service omgeving (dezelfde naam als het Adobe I/O-project)
+4. Toewijzen __Editor__ of __Fiatteur__ rol
 
    ![DoelAPI-fout](assets/target-permissions.png)
 

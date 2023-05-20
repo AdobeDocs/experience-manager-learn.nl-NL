@@ -7,7 +7,8 @@ topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+exl-id: 7aba25d1-0d4d-4c49-8132-f844a288e8f3
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -25,6 +26,3 @@ U hebt het volgende nodig:
 Een werkende instantie van AEM met het pakket van de Toevoeging van de Vorm geïnstalleerde de componenten van de Kern
 
 [Ontwikkelomgeving ingesteld overeenkomstig dit document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
-
-
-

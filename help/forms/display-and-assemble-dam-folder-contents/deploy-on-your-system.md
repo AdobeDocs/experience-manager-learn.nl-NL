@@ -7,10 +7,11 @@ topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: ddef90067d3ae4a3c6a705b5e109e474bab34f6d
+exl-id: d23b51ba-1efb-4505-b5b3-44a02177e467
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -28,9 +29,5 @@ Volg de onderstaande stappen om deze kwestie te laten werken aan uw lokale AEM.
 
 * [Het adaptieve voorbeeldformulier importeren](assets/sample-adaptive-form.zip). In dit formulier worden de nieuwsbrieven weergegeven die kunnen worden geselecteerd.
 
-* [Geef een voorbeeld van het formulier weer](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
+* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
 Selecteer een paar nieuwsbrieven om te downloaden. De geselecteerde nieuwsbrieven zullen in één pdf worden gecombineerd en aan u teruggegeven.
-
-
-
-

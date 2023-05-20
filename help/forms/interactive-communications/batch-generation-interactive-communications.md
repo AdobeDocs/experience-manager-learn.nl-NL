@@ -38,7 +38,7 @@ Dit artikel bevat voorbeeldelementen voor het genereren van interactieve communi
 2. Selecteer BatchAPIWatchedFolder en klik op Bewerken.
 3. Wijzig het pad zodat dit overeenkomt met uw besturingssysteem.
 
-![path](assets/watched-folder-batch-api-basic.PNG)
+![pad](assets/watched-folder-batch-api-basic.PNG)
 
 * Inhoud van [zip-bestand](assets/jsonfile.zip). Het ZIP-bestand bevat een map met de naam `jsonfile` bevat `beneficiaries.json` bestand. Dit bestand bevat de gegevens die moeten worden gegenereerd in 3 documenten.
 

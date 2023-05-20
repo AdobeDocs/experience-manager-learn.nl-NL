@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: 2685f2553349d6f0b48e03f2ed24dcea7ad9ac70
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
@@ -144,7 +144,7 @@ $ aio cloudmanager:download-logs <ENVIRONMENT> <SERVICE> <NAME> <DAYS>
 
 ## Logboeken begrijpen
 
-Logboeken in AEM as a Cloud Service hebben meerdere pods die loginstructies in deze pods schrijven. Omdat de veelvoudige AEM instanties aan het zelfde logboekdossier schrijven, is het belangrijk om te begrijpen hoe te analyseren, en lawaai te verminderen terwijl het zuiveren. Om uit te leggen, het volgende `aemerror` logfragment wordt gebruikt:
+Logboeken in AEM as a Cloud Service hebben meerdere pods die loginstructies in deze pods schrijven. Omdat de veelvoudige AEM instanties aan het zelfde logboekdossier schrijven, is het belangrijk om te begrijpen hoe te analyseren, en lawaai te verminderen terwijl het zuiveren. Om uit te leggen, het volgende `aemerror` Logboekfragment wordt gebruikt:
 
 ```
 01.01.2020 12:00:00.000 [cm-p12345-e56789-aem-author-abcdefg-1111] *DEBUG* [qtp2078364989-269] com.example.components.impl.ExampleModelImpl Preparing to collect resources

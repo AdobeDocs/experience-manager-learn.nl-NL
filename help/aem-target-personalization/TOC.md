@@ -1,6 +1,6 @@
 ---
 user-guide-title: Aan de slag met AEM en Adobe Target
-user-guide-description: Een end-to-end zelfstudie die toont hoe te om gepersonaliseerde ervaringen te leveren gebruikend Experience Manager en Doel.
+user-guide-description: Een volledige tutorial die laat zien hoe u gepersonaliseerde ervaringen kunt bieden met Experience Manager en Target.
 product: experience manager
 sub-product: Experience Manager Sites
 version: 6.5
@@ -9,12 +9,12 @@ kt: 2214
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '64'
-ht-degree: 3%
+ht-degree: 45%
 
 ---
 
 
-# Aan de slag met AEM en doel {#aem-target-tutorial}
+# Aan de slag met AEM en Target {#aem-target-tutorial}
 
 + [Overzicht](./overview.md)
 + [Personalisatie met AEM Experience Fragments](./personalization-use-case-1.md)

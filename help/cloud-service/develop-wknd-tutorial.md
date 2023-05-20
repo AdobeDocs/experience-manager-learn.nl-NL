@@ -18,7 +18,7 @@ ht-degree: 5%
 
 ## Overzicht {#overview}
 
-Nieuw bij het ontwikkelen van Adobe Experience Manager als Cloud Service? Wilt u de nieuwste praktijken vernieuwen? Dit is de plaats om te beginnen!
+Nieuw bij het ontwikkelen van Adobe Experience Manager as a Cloud Service? Wilt u de nieuwste praktijken vernieuwen? Dit is de plaats om te beginnen!
 
 Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën. De hoop is aan het eind van deze zelfstudie zult u de basisstichting van het AEM platform en de kennis van enkele gemeenschappelijke ontwerppatronen begrijpen.
 
@@ -26,20 +26,20 @@ Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren A
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-De zelfstudie is ontworpen om te werken met **AEM als een Cloud Service** en is achterwaarts compatibel met **AEM 6.5+** en **AEM 6.4.2+**.
+De zelfstudie is ontworpen om te werken met **AEM as a Cloud Service** en is achterwaarts compatibel met **AEM 6,5+** en **AEM 6.4.2+**.
 
 **[Bekijk de zelfstudie hier!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
 
-## WKND implementeren om als Cloud Service te AEM{#deploying-wknd-to-aem-as-a-cloud-service}
+## WKND implementeren om as a Cloud Service te AEM{#deploying-wknd-to-aem-as-a-cloud-service}
 
-Na het voltooien van de WKND-zelfstudie bekijkt u hieronder de video voor een overzicht van de manier waarop u het WKND-project als Cloud Service kunt implementeren.
+Na de voltooiing van de WKND zelfstudie, bekijk video hieronder voor een overzicht van hoe te om het WKND project aan AEM as a Cloud Service op te stellen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=12&learn=on)
 
 De video toont hoe het project van de Plaats WKND kan zijn:
 
 1. Git-opslagruimte van derden, in dit geval Github.com, wordt aangeschaft, maar kan elke Git-opslagplaats zijn
-2. Wordt gespoeld naar een stroomopwaartse Adobe Cloud Manager Git-opslagplaats die is geregistreerd bij een AEM als Cloud Service Program
-3. Distribueren via leidingen van Cloud Manager naar AEM als een Cloud Service-omgeving
+2. Overstappen naar een stroomopslagplaats voor Adobe Cloud Manager Git die is geregistreerd met een AEM as a Cloud Service programma
+3. Distribueren via leidingen van Cloud Manager naar AEM as a Cloud Service omgevingen
 
-Voor een volledig overzicht van hoe te om AEM project in te voeren om als dienst van de Wolk te AEM, bekijk de videoreeks over hoe te om Git met de Manager van de Adobe Cloud ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html) te integreren.[
+Voor een volledig overzicht van hoe te om AEM project op te stellen om als dienst van de Wolk te AEM, bekijk de videoreeks over hoe te [Git integreren met Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).

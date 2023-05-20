@@ -1,17 +1,17 @@
 ---
-title: '"Hoofdstuk 3 - de Geavanceerde onderwerpen van het caching van de Verzender"'
+title: "Hoofdstuk 3 - de Geavanceerde onderwerpen van het caching van de Verzender"
 description: Dit is deel 3 van een driedelige reeks naar caching in AEM. Waar de eerste twee delen zich op duidelijke http caching in de Dispatcher concentreerden en welke beperkingen er zijn. In dit deel worden enkele ideeën besproken over hoe deze beperkingen kunnen worden overwonnen.
 feature: Dispatcher
-topic: Architectuur
+topic: Architecture
 role: Architect
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
-source-wordcount: '6189'
+source-wordcount: '6187'
 ht-degree: 0%
 
 ---
-
 
 # Hoofdstuk 3 - Geavanceerde onderwerpen in cache
 
@@ -25,7 +25,7 @@ Dit is deel 3 van een driedelige serie voor caching in AEM. Waar de eerste twee 
 
 ## Caching in het algemeen
 
-[Hoofdstuk 1](chapter-1.md) en  [hoofdstuk 2](chapter-2.md) van deze reeks richtten zich voornamelijk op de verzender. We hebben de grondbeginselen, de beperkingen en waar u bepaalde compromissen moet maken uitgelegd.
+[Hoofdstuk 1](chapter-1.md) en [Hoofdstuk 2](chapter-2.md) van deze reeks was voornamelijk gericht op de Dispatcher. We hebben de grondbeginselen, de beperkingen en waar u bepaalde compromissen moet maken uitgelegd.
 
 De complexiteit en complexiteit van caching zijn geen unieke problemen voor de Dispatcher. In cache plaatsen is in het algemeen moeilijk.
 
@@ -80,7 +80,7 @@ Het model is nu de basis voor het renderen van de markering voor een component. 
 
 #### Dispatcher, CDN en andere proxy&#39;s
 
-Hiermee gaat u de weergegeven HTML-pagina naar de Dispatcher. We hebben het er al over gehad dat het belangrijkste doel van de Dispatcher is om HTML-pagina&#39;s en andere webbronnen in cache te plaatsen (ondanks de naam ervan). Voordat de bronnen de browser bereiken, kan het een reverse-proxy (die een cache kan plaatsen en een CDN) doorgeven die ook wordt gebruikt voor het in cache plaatsen. De klant kan in een bureau zitten, dat Webtoegang slechts via een volmacht verleent - en die volmacht zou kunnen besluiten om verkeer in cache te bewaren.
+Hiermee wordt de weergegeven HTML-pagina naar de Dispatcher verplaatst. We hebben het er al over gehad dat het belangrijkste doel van de Dispatcher is om HTML-pagina&#39;s en andere webbronnen in cache te plaatsen (ondanks de naam ervan). Voordat de bronnen de browser bereiken, kan het een reverse-proxy (die een cache kan plaatsen en een CDN) doorgeven die ook wordt gebruikt voor het in cache plaatsen. De klant kan in een bureau zitten, dat Webtoegang slechts via een volmacht verleent - en die volmacht zou kunnen besluiten om verkeer in cache te bewaren.
 
 #### Browsercache
 
@@ -94,19 +94,19 @@ Maar waar in die keten heeft het zin om überhaupt in cache te plaatsen? Aan het
 
 Om u een globaal idee te geven van welke factoren u in overweging zou kunnen nemen,
 
-**Tijd om te leven**  - als de voorwerpen een korte inherente levende tijd hebben (de verkeersgegevens zouden een kortere levende dan weergegevens kunnen hebben) zou het niet de moeite waard in het voorgeheugen onderbrengen kunnen zijn.
+**Levensduur** - Als objecten een korte inherente live-tijd hebben (verkeersgegevens hebben mogelijk een kortere live dan weergegevens), is het wellicht niet de moeite waard om deze in cache te plaatsen.
 
-**Productiekosten -** Hoe duur (in termen van CPU-cycli en I/O) de herproductie en levering van een object is. Als het goedkoop in cache plaatsen is, is het misschien niet nodig.
+**Productiekosten -** Hoe kostbaar (in termen van CPU-cycli en I/O) de herproductie en levering van een object is. Als het goedkoop in cache plaatsen is, is het misschien niet nodig.
 
-**Grootte**  - Voor grote objecten zijn meer bronnen vereist om in cache te worden opgeslagen. Dat zou een beperkende factor kunnen zijn en moet worden afgewogen tegen het voordeel.
+**Grootte** - Voor grote objecten zijn meer bronnen vereist om in cache te worden opgeslagen. Dat zou een beperkende factor kunnen zijn en moet worden afgewogen tegen het voordeel.
 
-**Toegangsfrequentie**  - Als objecten zelden worden benaderd, is caching mogelijk niet effectief. Ze zouden gewoon verouderd of ongeldig worden gemaakt voordat ze de tweede keer van cache worden benaderd. Dergelijke punten zouden slechts geheugenmiddelen blokkeren.
+**Toegangsfrequentie** - Als objecten zelden worden benaderd, is caching mogelijk niet effectief. Ze zouden gewoon verouderd of ongeldig worden gemaakt voordat ze de tweede keer van cache worden benaderd. Dergelijke punten zouden slechts geheugenmiddelen blokkeren.
 
-**Gedeelde toegang**  - Gegevens die door meer dan één entiteit worden gebruikt zouden verder omhoog de ketting moeten worden in het voorgeheugen ondergebracht. In feite is de keten van caching geen keten, maar een boom. Eén stukje gegevens in de gegevensopslagruimte kan door meerdere modellen worden gebruikt. Deze modellen kunnen op hun beurt worden gebruikt door meer dan één renderscript om HTML-fragmenten te genereren. Deze fragmenten worden opgenomen in meerdere pagina&#39;s die naar meerdere gebruikers worden gedistribueerd met hun persoonlijke caches in de browser. &quot;delen&quot; betekent dus niet dat alleen mensen, maar ook software met elkaar moeten delen. Als u een potentieel &quot;gedeeld&quot;geheime voorgeheugen wilt vinden, enkel spoor de boom aan de wortel en vinden een gemeenschappelijke voorouder - dat is waar u zou moeten in het voorgeheugen onderbrengen.
+**Gedeelde toegang** - Gegevens die door meer dan één entiteit worden gebruikt, moeten verder in de keten in de cache worden opgeslagen. In feite is de keten van caching geen keten, maar een boom. Eén stukje gegevens in de gegevensopslagruimte kan door meerdere modellen worden gebruikt. Deze modellen kunnen op hun beurt worden gebruikt door meer dan één renderscript om HTML-fragmenten te genereren. Deze fragmenten worden opgenomen in meerdere pagina&#39;s die naar meerdere gebruikers worden gedistribueerd met hun persoonlijke caches in de browser. &quot;delen&quot; betekent dus niet dat alleen mensen, maar ook software met elkaar moeten delen. Als u een potentieel &quot;gedeeld&quot;geheime voorgeheugen wilt vinden, enkel spoor de boom aan de wortel en vinden een gemeenschappelijke voorouder - dat is waar u zou moeten in het voorgeheugen onderbrengen.
 
-**Georuimtelijke distributie**  - Als uw gebruikers over de wereld worden verdeeld, zou het gebruiken van een verdeeld netwerk van geheime voorgeheugens kunnen helpen latentie verminderen.
+**Georuimtelijke distributie** - Als uw gebruikers over de wereld worden verdeeld, zou het gebruiken van een verdeeld netwerk van geheime voorgeheugens kunnen helpen latentie verminderen.
 
-**Netwerkbandbreedte en latentie**  - Over latentie gesproken, wie zijn uw klanten en welk soort netwerk gebruiken zij? Misschien zijn uw klanten mobiele klanten in een onderontwikkeld land die 3G verbinding van oudere generatie smartphones gebruiken? U kunt kleinere objecten maken en deze in cache plaatsen in de browsercache.
+**Netwerkbandbreedte en latentie** - Over latentie gesproken, wie zijn uw klanten en welk soort netwerk gebruiken zij? Misschien zijn uw klanten mobiele klanten in een onderontwikkeld land die 3G verbinding van oudere generatie smartphones gebruiken? U kunt kleinere objecten maken en deze in cache plaatsen in de browsercache.
 
 Deze lijst is verreweg niet volledig, maar we denken dat u het idee nu krijgt.
 
@@ -122,9 +122,9 @@ Elk van de lagen die in het laatste hoofdstuk zijn geïntroduceerd, biedt een be
 
 Er zijn drie basisstrategieën voor validatie:
 
-* **TTL, Tijd om te leven:** Een voorwerp verloopt na een vaste hoeveelheid tijd (b.v., &quot;2 uren van nu&quot;)
-* **Vervaldatum:** het object vervalt op een bepaald tijdstip in de toekomst (bijvoorbeeld &quot;10 juni 2019 om 15.00 uur&quot;)
-* **Gebaseerd op gebeurtenis:** Het object wordt expliciet ongeldig gemaakt door een gebeurtenis die in het platform heeft plaatsgevonden (bijvoorbeeld wanneer een pagina wordt gewijzigd en geactiveerd)
+* **TTL, Tijd om te leven:** Een object verloopt na een vaste tijdsduur (bijv. &quot;2 uur van nu&quot;)
+* **Vervaldatum:** Het object verloopt op een bepaald tijdstip in de toekomst (bijvoorbeeld &quot;10 juni 2019 om 15.00 uur&quot;)
+* **Gebaseerd op gebeurtenis:** Het object wordt expliciet ongeldig gemaakt door een gebeurtenis die op het platform heeft plaatsgevonden (bijvoorbeeld wanneer een pagina wordt gewijzigd en geactiveerd)
 
 Nu kunt u verschillende strategieën gebruiken op verschillende cachelagen, maar er zijn een paar &quot;toxische&quot; lagen.
 
@@ -142,7 +142,7 @@ Eenvoudig gesteld, worden de geheime voorgeheugens één voor één ongeldig gem
 
 U hoeft slechts één regel in gedachten te houden:
 
-Valideer altijd van binnenuit aan het buitengeheim voorgeheugen. Als u eerst een buitencache ongeldig hebt gemaakt, wordt de inhoud van een binnencache mogelijk opnieuw in het cachegeheugen opgeslagen. Maak geen veronderstellingen op welk moment een cache opnieuw vers is - zorg ervoor. Het beste, door de ongeldigmaking van het buitengeheim voorgeheugen _after_ te teweegbrengen ongeldig makend binnen.
+Valideer altijd van binnenuit aan het buitengeheim voorgeheugen. Als u eerst een buitencache ongeldig hebt gemaakt, wordt de inhoud van een binnencache mogelijk opnieuw in het cachegeheugen opgeslagen. Maak geen veronderstellingen op welk moment een cache opnieuw vers is - zorg ervoor. Het beste, door de ongeldigmaking van de buitenste cache te activeren _na_ de binnenste ongeldig maken.
 
 Dat is de theorie. Maar in de praktijk is er een aantal gotchas. De gebeurtenissen moeten - potentieel over een netwerk worden verdeeld. In de praktijk maakt dit het moeilijkste invalidatieschema om uit te voeren.
 
@@ -196,7 +196,7 @@ Nochtans, kunnen niet alle geheime voorgeheugens de data verspreiden. Het kan ve
 
 Een algemeen schema in de AEM wereld is ook om gebeurtenis gebaseerde ongeldigverklaring bij de binnengeheime voorgeheugens (b.v., in-geheugengeheime voorgeheugens waar de gebeurtenissen in dichtbij real time kunnen worden verwerkt) en op TTL-Gebaseerde geheime voorgeheugens op de buitenkant te gebruiken - waar u misschien geen toegang tot expliciete ongeldigverklaring hebt.
 
-In de AEM wereld zou u een in-geheugengeheime voorgeheugen voor bedrijfsvoorwerpen en de fragmenten van HTML in de Publish systemen hebben, die ongeldig wordt gemaakt, wanneer de onderliggende middelen veranderen en u deze veranderingsgebeurtenis aan de dispatcher verspreidt die ook op gebeurtenis-gebaseerd werkt. Voor dat zou u bijvoorbeeld op TTL-Gebaseerde CDN hebben.
+In de AEM wereld zou u een in-geheugengeheime voorgeheugen voor bedrijfsvoorwerpen en de fragmenten van de HTML in de Publish systemen hebben, die ongeldig wordt gemaakt, wanneer de onderliggende middelen veranderen en u deze veranderingsgebeurtenis aan de dispatcher verspreidt die ook op gebeurtenis-gebaseerd werkt. Voor dat zou u bijvoorbeeld op TTL-Gebaseerde CDN hebben.
 
 Als u een laag van (korte) op TTL gebaseerde caching vóór een Dispatcher hebt, kan een piek effectief verzachten die gewoonlijk na een auto-ongeldigverklaring zou voorkomen.
 
@@ -224,9 +224,9 @@ U kunt het werkgebied van het renderingsproces in het cachegeheugen opnemen. Van
 
 #### Toegangsbeheer respecteren
 
-De hier beschreven technieken zijn vrij krachtig en _must-have_ in toolbox van elke AEM ontwikkelaar. Maar ga niet te enthousiast, gebruik ze verstandig. Door een voorwerp in een geheim voorgeheugen op te slaan en het te delen aan andere gebruikers in follow-upverzoeken betekent eigenlijk het ontwijken van toegangsbeheer. Dit is doorgaans geen probleem op openbare websites, maar wel wanneer een gebruiker zich moet aanmelden voordat toegang kan worden verkregen.
+De hier beschreven technieken zijn zeer krachtig en _must-have_ in de gereedschapset van elke AEM ontwikkelaar. Maar ga niet te enthousiast, gebruik ze verstandig. Door een voorwerp in een geheim voorgeheugen op te slaan en het te delen aan andere gebruikers in follow-upverzoeken betekent eigenlijk het ontwijken van toegangsbeheer. Dit is doorgaans geen probleem op openbare websites, maar wel wanneer een gebruiker zich moet aanmelden voordat toegang kan worden verkregen.
 
-U kunt de HTML-opmaak van het hoofdmenu van een site in een cache in het geheugen opslaan om deze tussen verschillende pagina&#39;s te delen. Dat is eigenlijk een perfect voorbeeld voor het opslaan van gedeeltelijk gerenderde HTML als het creëren van een navigatie is gewoonlijk duur aangezien het het oversteken van veel pagina&#39;s vereist.
+U kunt de HTML-opmaakcodes van het hoofdmenu van een site ook opslaan in een cache in het geheugen om deze op verschillende pagina&#39;s te kunnen delen. Dat is eigenlijk een perfect voorbeeld om gedeeltelijk gerenderde HTML als het creëren van een navigatie op te slaan is gewoonlijk duur omdat het het oversteken van veel pagina&#39;s vereist.
 
 U deelt niet dezelfde menustructuur tussen alle pagina&#39;s, maar ook met alle gebruikers, waardoor deze nog efficiënter wordt. Maar wacht... maar misschien staan er bepaalde items in het menu die alleen voor een bepaalde groep gebruikers zijn gereserveerd. In dat geval kan caching een beetje complexer worden.
 
@@ -248,7 +248,7 @@ Wat betekent dat?
 
 4. Zelfs als u een dunne &quot;omslag&quot;rond een middel van AEM creeert, moet u niet dat in het voorgeheugen onderbrengen - zelfs als het uw eigen en onveranderlijk is. Het omloopobject zou een referentie zijn (die we eerder hebben verboden) en als we er scherp uitzien, ontstaan er in feite dezelfde problemen als in het laatste item.
 
-5. Als u in cache wilt plaatsen, maakt u uw eigen objecten door primitieve gegevens naar uw eigen shallo-objecten te kopiëren. U wilt mogelijk een koppeling maken tussen uw eigen objecten via verwijzingen, bijvoorbeeld als u een boomstructuur met objecten in cache wilt plaatsen. Dat is prima - maar alleen cacheobjecten die u net in dezelfde aanvraag hebt gemaakt - en geen objecten die ergens anders zijn aangevraagd (zelfs als het &#39;naam-spatie&#39; van het &#39;jouw&#39; object is). _Het kopiëren van_ objecten is de sleutel. En zorg ervoor dat u de volledige structuur van gekoppelde objecten tegelijk leegmaakt en binnenkomende en uitgaande verwijzingen naar uw structuur voorkomt.
+5. Als u in cache wilt plaatsen, maakt u uw eigen objecten door primitieve gegevens naar uw eigen shallo-objecten te kopiëren. U wilt mogelijk een koppeling maken tussen uw eigen objecten via verwijzingen, bijvoorbeeld als u een boomstructuur met objecten in cache wilt plaatsen. Dat is prima - maar alleen cacheobjecten die u net in dezelfde aanvraag hebt gemaakt - en geen objecten die ergens anders zijn aangevraagd (zelfs als het &#39;naam-spatie&#39; van het &#39;jouw&#39; object is). _Objecten kopiëren_ is de sleutel. En zorg ervoor dat u de volledige structuur van gekoppelde objecten tegelijk leegmaakt en binnenkomende en uitgaande verwijzingen naar uw structuur voorkomt.
 
 6. Ja, en houd uw objecten onveranderlijk. Alleen persoonlijke eigenschappen en geen setters.
 
@@ -258,15 +258,15 @@ Dat zijn veel regels, maar het is de moeite waard om ze te volgen. Zelfs als je 
 
 Deze reeks gaat over het begrijpen van concepten en het machtigen van u om een architectuur te bouwen die het beste uw gebruiksgeval past.
 
-Wij bevorderen geen enkel instrument in het bijzonder. Maar geef je aanwijzingen hoe je ze moet beoordelen. AEM heeft bijvoorbeeld een eenvoudige ingebouwde cache met een vaste TTL sinds versie 6.0. Zal je het gebruiken? Waarschijnlijk niet bij publiceren waar een op gebeurtenis-gebaseerd geheim voorgeheugen in de ketting (wenk: De verzender). Maar het zou een fatsoenlijke keuze kunnen zijn voor een auteur. Er is ook een geheime voorgeheugen van HTTP door Adobe ACS-komma&#39;s die het overwegen waard zouden kunnen zijn.
+Wij bevorderen geen enkel instrument in het bijzonder. Maar geef je aanwijzingen hoe je ze moet beoordelen. AEM heeft bijvoorbeeld een eenvoudige ingebouwde cache met een vaste TTL sinds versie 6.0. Zal je het gebruiken? Waarschijnlijk niet bij publiceren waar een op gebeurtenis-gebaseerd geheim voorgeheugen in de ketting (wenk: De verzender). Maar het kan door een fatsoenlijke keuze voor een auteur. Er is ook een geheime voorgeheugen van HTTP door Adobe ACS-komma&#39;s die het overwegen waard zouden kunnen zijn.
 
-Of u bouwt uw eigen, die op een rijpe caching kader zoals [Ehcache](https://www.ehcache.org) wordt gebaseerd. Dit kan worden gebruikt om de voorwerpen van Java en teruggegeven prijsverhoging (`String` voorwerpen) in het voorgeheugen onder te brengen.
+Of u bouwt uw eigen model op basis van een verouderd cacheframework, zoals [Ehcache](https://www.ehcache.org). Dit kan worden gebruikt om Java-objecten in het cachegeheugen op te slaan en markeringen weer te geven (`String` objecten).
 
 In sommige eenvoudige gevallen kunt u het ook gebruiken van gelijktijdige hash maps - u zult hier snel grenzen zien - of in het hulpmiddel of in uw vaardigheden. Gelijktijdige uitvoering is net zo moeilijk master als naamgeving en caching.
 
 #### Verwijzingen
 
-* [ACS-opdrachten (http-cache)  ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
+* [ACS-opdrachten (http-cache) ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
 * [Framework Ehcache caching](https://www.ehcache.org)
 
 ### Basisbegrippen
@@ -275,7 +275,7 @@ We zullen hier niet te diep in de theorie in het cachegeheugen gaan zitten, maar
 
 #### Cache Evicting
 
-We hadden het over ongeldigverklaring en leegmaken. _De_ verwijdering van het geheime voorgeheugen houdt verband met deze termijnen: Na een bericht dat het is verwijderd, is het niet meer beschikbaar. Maar de uitzetting gebeurt niet wanneer een ingang verouderd is, maar wanneer het geheime voorgeheugen volledig is. Nieuwere of &quot;belangrijkere&quot; items drukken oudere of minder belangrijke items uit de cache. Welke vermeldingen u zult moeten opofferen is een geval-tot-geval beslissing. Misschien wilt u de oudste uitzetten of degenen die zeer zelden of langdurig zijn gebruikt.
+We hadden het over ongeldigverklaring en leegmaken. _Cache-verwijdering_ heeft betrekking op deze termen: Na een bericht dat het is verwijderd, is het niet meer beschikbaar. Maar de uitzetting gebeurt niet wanneer een ingang verouderd is, maar wanneer het geheime voorgeheugen volledig is. Nieuwere of &quot;belangrijkere&quot; items drukken oudere of minder belangrijke items uit de cache. Welke vermeldingen u zult moeten opofferen is een geval-tot-geval beslissing. Misschien wilt u de oudste uitzetten of degenen die zeer zelden of langdurig zijn gebruikt.
 
 #### Preemptive Caching
 
@@ -321,7 +321,7 @@ Welke objecten afhankelijk zijn van wat anderen in elke toepassing echt zijn. We
 
 <br> 
 
-HTML-fragmentcaching is een machtig gereedschap. Het is de bedoeling de HTML-opmaak die door een component is gegenereerd, in cache te plaatsen in een cache in het geheugen. U vraagt zich misschien af waarom ik dat moet doen. Ik caching toch de prijsverhoging van de hele pagina in de verzender - met inbegrip van de prijsverhoging van die component. Wij zijn het daarmee eens. Dat doe je, maar één keer per pagina. U deelt die markering niet tussen de pagina&#39;s.
+HTML Fragmentcaching is een krachtig gereedschap. Het idee is om de HTML prijsverhoging in het voorgeheugen onder te brengen die door een component in een in-geheugen-geheime voorgeheugen werd geproduceerd. U vraagt zich misschien af waarom ik dat moet doen. Ik caching toch de prijsverhoging van de hele pagina in de verzender - met inbegrip van de prijsverhoging van die component. Wij zijn het daarmee eens. Dat doe je, maar één keer per pagina. U deelt die markering niet tussen de pagina&#39;s.
 
 Stel dat u een navigatie vóór elke pagina rendert. De markering ziet er op elke pagina hetzelfde uit. Maar u geeft het telkens opnieuw voor elke pagina terug, dat is niet in Dispatcher. En onthoud: Na automatische ongeldigmaking moeten alle pagina&#39;s opnieuw worden weergegeven. Dus eigenlijk heb je dezelfde code met dezelfde resultaten honderden keren.
 
@@ -358,7 +358,7 @@ In de oude dagen, waar u JSP als malplaatjemotor gebruikte was het vrij gebruike
 
 De douanetag dan vangt zijn lichaam en schrijft het in het geheime voorgeheugen of verhindert uitvoering van zijn lichaam en output de lading van het geheime voorgeheugen-ingang in plaats daarvan.
 
-De &quot;sleutel&quot;is de componentenweg die het op de homepage zou hebben. We gebruiken het pad van de component op de huidige pagina niet, omdat dit één cacheitem per pagina zou maken. Dat zou in strijd zijn met onze intentie om die component te delen. We gebruiken ook niet alleen het relatieve pad van de componenten (`jcr:conten/mainnavigation`), omdat dit zou voorkomen dat we verschillende navigatiecomponenten op verschillende sites gebruiken.
+De &quot;sleutel&quot;is de componentenweg die het op de homepage zou hebben. We gebruiken het pad van de component op de huidige pagina niet, omdat dit één cacheitem per pagina zou maken. Dat zou in strijd zijn met onze intentie om die component te delen. We gebruiken ook niet alleen het relatieve pad van de componenten (`jcr:conten/mainnavigation`), omdat dit zou voorkomen dat verschillende navigatiecomponenten op verschillende sites worden gebruikt.
 
 &quot;Cache&quot; is een indicator waarin het item wordt opgeslagen. Gewoonlijk hebt u meer dan één cache waarin u items opslaat. Elk van hen gedraagt zich een beetje anders. Het is dus goed om te onderscheiden wat wordt opgeslagen - zelfs als het uiteindelijk alleen maar tekenreeksen zijn.
 
@@ -378,7 +378,7 @@ De fragmentcache wordt gebruikt als u een constante waarde (de navigatie) hebt i
 
 Maar u kunt ook het tegenovergestelde hebben, een relatief constante context (een pagina die zelden verandert) en sommige voortdurend veranderende fragmenten op die pagina (bijvoorbeeld, een levende ticker).
 
-In dit geval kunt u [Dynamische include-bestanden ](https://sling.apache.org/documentation/bundles/dynamic-includes.html) een kans geven. In wezen is dit een componentfilter, dat om de dynamische component loopt en in plaats van de component te renderen in de pagina die een verwijzing maakt. Deze verwijzing kan een vraag Ajax zijn - zodat de component door browser wordt omvat en zo kan de omringende pagina statisch in het voorgeheugen worden opgenomen. Of - alternatief - het Verkopen Dynamisch omvat kan een richtlijn van SSI (de Server zijomvatten) produceren. Deze instructie wordt uitgevoerd op de Apache-server. U kunt zelfs ESI - Edge Side Include-instructies gebruiken als u Varnish of een CDN gebruikt die ESI-scripts ondersteunt.
+In dit geval kunt u [Dynamische include-bestanden voor verkoop](https://sling.apache.org/documentation/bundles/dynamic-includes.html) een kans. In wezen is dit een componentfilter, dat om de dynamische component loopt en in plaats van de component te renderen in de pagina die een verwijzing maakt. Deze verwijzing kan een vraag Ajax zijn - zodat de component door browser wordt omvat en zo kan de omringende pagina statisch in het voorgeheugen worden opgenomen. Of - alternatief - het Verkopen Dynamisch omvat kan een richtlijn van SSI (de Server zij omvatten) produceren. Deze instructie wordt uitgevoerd op de Apache-server. U kunt zelfs ESI - Edge Side Include-instructies gebruiken als u Varnish of een CDN gebruikt die ESI-scripts ondersteunt.
 
 ![Het Diagram van de opeenvolging van een Verzoek gebruikend het Verschuiven Dynamisch omvat](assets/chapter-3/sequence-diagram-sling-dynamic-include.png)
 
@@ -388,11 +388,11 @@ In dit geval kunt u [Dynamische include-bestanden ](https://sling.apache.org/doc
 
 In de SDI-documentatie staat dat u caching moet uitschakelen voor URL&#39;s die eindigen op &quot;*.nocache.html&quot;. Dit is logisch - aangezien u werkt met dynamische componenten.
 
-U ziet wellicht een andere optie voor het gebruik van SDI: Als u _niet_ de verzender geheim voorgeheugen voor omvat onbruikbaar maakt, handelt de Verzender als fragment-geheim voorgeheugen gelijkend op dat wij in het laatste hoofdstuk beschreven: Pagina&#39;s en componentfragmenten worden op dezelfde wijze en onafhankelijk van elkaar in de cache opgeslagen in de verzender en worden door het SSI-script op de Apache-server samengevoegd wanneer de pagina wordt opgevraagd. Zo kunt u gedeelde componenten zoals de hoofdnavigatie implementeren (op voorwaarde dat u altijd dezelfde component-URL gebruikt).
+U ziet wellicht een andere optie voor het gebruik van SDI: Als u _niet_ Schakel de verzendercache voor de include-bestanden uit, zodat de Dispatcher werkt als een fragment-cache die vergelijkbaar is met de cache die we in het laatste hoofdstuk hebben beschreven: Pagina&#39;s en componentfragmenten worden op dezelfde wijze en onafhankelijk van elkaar in de cache opgeslagen in de verzender en worden door het SSI-script op de Apache-server samengevoegd wanneer de pagina wordt opgevraagd. Zo kunt u gedeelde componenten zoals de hoofdnavigatie implementeren (op voorwaarde dat u altijd dezelfde component-URL gebruikt).
 
 Dat moet in theorie werken. Maar...
 
-Wij raden u aan dat niet te doen: U verliest dan de mogelijkheid om de cache voor de echte dynamische componenten te omzeilen. SDI wordt globaal gevormd en de veranderingen u voor uw &quot;arm-mans-fragment-geheime voorgeheugen&quot;zou ook op de dynamische componenten van toepassing zijn.
+Wij raden u aan dat niet te doen: U verliest dan de mogelijkheid om het cachegeheugen voor de echte dynamische componenten over te slaan. SDI wordt globaal gevormd en de veranderingen u voor uw &quot;arm-mans-fragment-geheime voorgeheugen&quot;zou ook op de dynamische componenten van toepassing zijn.
 
 We raden u aan de SDI-documentatie zorgvuldig te bestuderen. Er zijn nog een paar beperkingen, maar SDI is in sommige gevallen een waardevol instrument.
 
@@ -414,7 +414,7 @@ We raden u aan de SDI-documentatie zorgvuldig te bestuderen. Er zijn nog een paa
 
 Laten we de zaak opnieuw bekijken met de navigatie. We gingen ervan uit dat elke pagina dezelfde markering van de navigatie zou vereisen.
 
-Maar misschien is dat niet het geval. U zou verschillende prijsverhoging voor het punt in de navigatie kunnen willen teruggeven die _huidige pagina_ vertegenwoordigt.
+Maar misschien is dat niet het geval. U zou verschillende prijsverhoging voor het punt in de navigatie kunnen willen teruggeven die vertegenwoordigt _huidige pagina_.
 
 ```
 Travel Destinations
@@ -445,7 +445,7 @@ News
 <is
 ```
 
-Dit zijn twee totaal verschillende renderingen. Toch is het _bedrijfsobject_ - de volledige navigatiestructuur - hetzelfde.  Het _bedrijfsobject_ hier zou een objectgrafiek zijn die de knooppunten in de structuur vertegenwoordigt. Deze grafiek kan gemakkelijk in een in-geheugengeheime voorgeheugen worden opgeslagen. Deze grafiek mag echter geen objecten bevatten of verwijzen naar objecten die u niet zelf hebt gemaakt, vooral nu JCR-knooppunten.
+Dit zijn twee totaal verschillende renderingen. Maar toch _zakelijk object_ - de volledige navigatieboom - is hetzelfde.  De _zakelijk object_  Dit zou een objectgrafiek zijn die de knooppunten in de structuur vertegenwoordigt. Deze grafiek kan gemakkelijk in een in-geheugengeheime voorgeheugen worden opgeslagen. Deze grafiek mag echter geen objecten bevatten of verwijzen naar objecten die u niet zelf hebt gemaakt, vooral nu JCR-knooppunten.
 
 #### In cache plaatsen in de browser
 
@@ -475,7 +475,7 @@ Er is slechts één ding wij u vragen niet te doen, wanneer u uw geheime voorgeh
 
 Laad geen pagina&#39;s opnieuw in de browser!
 
-Een &quot;browser reload&quot;, een _simple-reload_ evenals een _geforceerd-reload_ (&quot;_shift-reload_&quot;) is niet het zelfde als een normaal paginaverzoek. Met een eenvoudige aanvraag voor opnieuw laden wordt een header ingesteld
+Een &quot;browser reload&quot;, een _eenvoudig opnieuw laden_ en _gedwongen opnieuw laden_ (&quot;_shift-herladen_&quot;) is niet hetzelfde als een normale paginaaanvraag. Met een eenvoudige aanvraag voor opnieuw laden wordt een header ingesteld
 
 ```
 Cache-Control: max-age=0
@@ -489,7 +489,7 @@ Cache-Control: no-cache
 
 Beide kopteksten hebben gelijkaardige maar lichtjes verschillende gevolgen - maar het belangrijkst, verschillen zij volledig van een normaal verzoek wanneer u een URL van de groef URL opent of door verbindingen op de plaats te gebruiken. Bij normaal bladeren worden de headers voor Cache-control niet ingesteld, maar waarschijnlijk een if-modified-since header.
 
-Als u dus fouten wilt opsporen in het standaardgedrag voor bladeren, moet u dat precies doen: _Doorblader normaal_. Het gebruiken van de herladingsknoop van uw browser is de beste manier om de fouten van de geheim voorgeheugenconfiguratie in uw configuratie niet te zien.
+Als u dus fouten wilt opsporen in het standaardgedrag voor bladeren, moet u dat precies doen: _Standaard bladeren_. Het gebruiken van de herladingsknoop van uw browser is de beste manier om de fouten van de geheim voorgeheugenconfiguratie in uw configuratie niet te zien.
 
 Gebruik je Charles Proxy om te zien waar we het over hebben. Ja - en terwijl u het open hebt - kunt u de verzoeken daar opnieuw afspelen. U hoeft de browser niet opnieuw te laden.
 

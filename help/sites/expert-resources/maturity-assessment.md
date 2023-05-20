@@ -4,13 +4,13 @@ seo-title: AEM Sites Maturity Assessment
 description: Deze controlelijst biedt een overzicht van de belangrijkste vragen die u en uw team moeten beantwoorden wanneer ze de rijpheid van uw AEM Sites-exemplaar evalueren
 seo-description: This checklist provides an overview of key questions you and your team should be answering when evaluating the maturity of your AEM Sites instance
 audience: author, marketer, developer
-source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
+exl-id: 22164a0e-7239-43f4-8356-c12f68133255
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Controlelijst voor de beoordeling van de rijpheid van AEM Sites
 
@@ -35,4 +35,3 @@ In de meeste gevallen zal de beoordeling van de AEM rijpheid helpen bij het uitv
 Aanbevolen AEM aandachtsgebieden voor looptijdbeoordeling: Ontwerp en architectuur, productbeheer en -strategie, beheer en levering van digitale bedrijfsmiddelen, analyse, tests en beveiliging.
 
 AEM Champion Greg Dimeris vraagt zich enorm uit om deze informatie uit meerdere artikelen in de Experience League samen te voegen, evenals zijn eigen beste praktijken!
-

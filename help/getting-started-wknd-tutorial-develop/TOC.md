@@ -1,7 +1,7 @@
 ---
-user-guide-title: Aan de slag met AEM Sites - WKND-zelfstudie
-user-guide-description: Een meerdelige zelfstudie voor ontwikkelaars die nog niet zijn AEM. Implementeer een AEM site voor een fictief levensstijlmerk, de WKND. Schakel de front-end pijplijn in om uw ontwikkeling naar de implementatiecyclus te versnellen.
-breadcrumb-title: AEM Sites WKND Tutorials
+user-guide-title: Aan de slag met AEM Sites - WKND-tutorial
+user-guide-description: Een meerdelige tutorial voor ontwikkelaars voor wie AEM nieuw is. Implementeer een AEM-website voor een fictief lifestylemerk, de WKND. Schakel de front-end pijplijn in om uw ontwikkeling naar de implementatiecyclus te versnellen.
+breadcrumb-title: AEM Sites WKND-tutorials
 sub-product: Experience Manager Sites
 version: Cloud Service
 activity: develop
@@ -10,12 +10,12 @@ index: y
 source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 2%
+ht-degree: 46%
 
 ---
 
 
-# Aan de slag met AEM Sites - WKND-zelfstudie {#getting-started-wknd-tutorial-develop}
+# Aan de slag met AEM Sites - WKND-tutorial {#getting-started-wknd-tutorial-develop}
 
 + [Overzicht van WKND-zelfstudie](overview.md)
 + Projectarchetype {#project-archetype}

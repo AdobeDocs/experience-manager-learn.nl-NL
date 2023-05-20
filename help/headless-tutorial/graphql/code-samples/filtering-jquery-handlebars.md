@@ -12,19 +12,19 @@ thumbnail: KT-11135.jpg
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 74510a4b075d2dba9b3f27018ba05f15dcad9562
+exl-id: 75ffd84a-62b1-480f-b05f-3664f54bb171
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
-
 # Filteren met jQuery en Handlebars
 
-Ontdek de mogelijkheid AEM Headless GraphQL API&#39;s om gegevens te filteren met een JavaScript-app die gebruikmaakt van [jQuery](https://jquery.com/) en [Werkbalken](https://handlebarsjs.com/). Deze app maakt een lijst met WKND-avonturen die kunnen worden gefilterd op Type activiteit.
+Ontdek AEM GraphQL API&#39;s zonder koppen de mogelijkheid om gegevens te filteren met een JavaScript-app die [jQuery](https://jquery.com/) en [Werkbalken](https://handlebarsjs.com/). Deze app maakt een lijst met WKND-avonturen die kunnen worden gefilterd op Type activiteit.
 
-Deze code demonstreert het gebruik van Adobe [AEM headless-client voor JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) om voortgeduurde vragen aan te halen GraphQL. Deze app gebruikt de `wknd-shared/adventures-all` Voortdurende vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot `wknd-shared/adventures-by-activity` persisted query en haalt de avontuurdetails voor alleen die avonturen van het opgegeven Type activiteit op.
+Deze code demonstreert het gebruik van Adobe [AEM headless-client voor JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) om voortgezette GraphQL-query&#39;s aan te roepen. Deze app gebruikt de `wknd-shared/adventures-all` Voortdurende vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot `wknd-shared/adventures-by-activity` persisted query en haalt de avontuurdetails voor alleen die avonturen van het opgegeven Type activiteit op.
 
 Deze code:
 

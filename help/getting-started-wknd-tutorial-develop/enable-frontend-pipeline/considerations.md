@@ -11,13 +11,13 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: a3b27d5b-b167-4c60-af49-8f2e8d814c86
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelingsoverwegingen
 
@@ -42,6 +42,3 @@ A __oplossing__ zou kunnen zijn om uw git vertakkend model aan te passen en ervo
 
 
 * Als deel van een aan de gang zijnde verhoging aan uw AEM project, als u nieuwe componenten introduceert of een bestaande component bijwerkt die veranderingen in allebei heeft `ui.app` en `ui.frontend` moet u zowel volledige-stapel als front-end pijpleidingen in werking stellen.
-
-
-

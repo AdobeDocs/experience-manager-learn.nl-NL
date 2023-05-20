@@ -29,7 +29,7 @@ De eenvoudige onderzoeksimplementatie is de materialen van **Adobe Summit labora
 
 ## Bladwijzers {#bookmarks-1}
 
-### Opties {#tools}
+### Gereedschappen {#tools}
 
 * [Indexbeheer](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_oakindexmanager)
 * [Query uitvoeren](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
