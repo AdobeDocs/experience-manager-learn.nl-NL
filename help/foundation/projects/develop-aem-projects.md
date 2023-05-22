@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 0%
@@ -154,7 +154,7 @@ Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebrui
    1. Nog een toevoegen **nt:ongestructureerd** knoop geëtiketteerde fiatvers als kind van de rolknoop.
    1. Tekenreeks-eigenschappen toevoegen **jcr:titel** = &quot;**Fiatteurs**&quot;, **rolecglas** =&quot;**eigenaar**&quot;, **rolid**=&quot;**fiatteurs**&quot;.
       1. De naam van het knooppunt fiatteurs en jcr:title en roleid kunnen elke tekenreekswaarde zijn (zolang roleid uniek is).
-      1. **rolecglas** beheerst de toestemmingen die voor die rol worden toegepast die op worden gebaseerd [3 OOTB-rollen](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User Roles in a Project): **eigenaar**, **editor**, en **waarnemer**.
+      1. **rolecglas** beheerst de toestemmingen die voor die rol worden toegepast die op worden gebaseerd [3 OOTB-rollen](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **eigenaar**, **editor**, en **waarnemer**.
       1. In het algemeen geldt dat als de aangepaste rol meer een leidinggevende rol is, de roleclas **eigenaar;** als het een specifiekere ontwerprol is, zoals Fotograaf of Designer, **editor** roleclas moet voldoende zijn. Het grote verschil tussen **eigenaar** en **editor** is dat de projecteigenaars de projecteigenschappen kunnen bijwerken en nieuwe gebruikers aan het project kunnen toevoegen.
 
    ```shell
