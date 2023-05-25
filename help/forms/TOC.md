@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1822'
 ht-degree: 1%
 
 ---
@@ -230,10 +230,12 @@ ht-degree: 1%
    + [welkomstkit-component maken](welcome-kit/create-welcomekit-component.md)
    + [Workflowcomponent maken](welcome-kit/create-workflow-component.md)
    + [De oplossing testen](welcome-kit/testing-the-solution.md)
-+ Aangepast formulier insluiten in uw SPA {#embed-form-spa}
++ Forms API zonder koppen {#embed-form-spa}
    + [1 - Inleiding](headless-forms/introduction.md)
    + [2 - Afhankelijkheden installeren](headless-forms/install-af-react-libraries.md)
    + [3 - Het formulier ophalen](headless-forms/fetch-the-form.md)
+   + [4 - Selecteer het formulier dat u wilt invullen](headless-forms/select-form-from-drop-down-list.md)
+   + [5 - Formulieren weergeven in de vorm van een kaart](headless-forms/display-forms-card-view.md)
 
 + Reageren op app met Forms en Acrobat Sign {#react-ic-sign}
    + [1 - Inleiding](react-ic-sign/introduction.md)

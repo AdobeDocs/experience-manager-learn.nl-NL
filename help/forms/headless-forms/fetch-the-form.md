@@ -7,9 +7,9 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -76,3 +76,7 @@ export default function Contact(){
 ```
 
 De bovenstaande code gebruikt native HTML-componenten die zijn toegewezen aan de componenten die in het adaptieve formulier worden gebruikt. We wijzen bijvoorbeeld de adaptieve formuliercomponent voor tekstinvoer toe aan de component TextField. De native componenten die in het artikel worden gebruikt [kan hier worden gedownload](./assets/native-components.zip)
+
+## Volgende stappen
+
+[Een formulier selecteren in de vervolgkeuzelijst](./select-form-from-drop-down-list.md)

@@ -7,9 +7,9 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,11 @@ ht-degree: 0%
 
 # Hoofdloos adaptief formulier insluiten
 
-In dit artikel worden de basisbeginselen besproken van het insluiten van een hoofdloos adaptief formulier in uw SPA-website. In dit artikel wordt ervan uitgegaan dat u een bestaande app van één pagina hebt en wordt u aangeraden een adaptief formulier in te sluiten dat in AEM Forms 6.5.16 is ontworpen met gebruik van kerncomponenten.
-Als u een formulier opneemt in een app voor één pagina, kunnen gebruikers gegevens naadloos invoeren en verzenden zonder dat de pagina hoeft te worden vernieuwd. Hierdoor wordt de interactiviteit en efficiëntie van de toepassing verbeterd.
+Dit [zelfstudie behandelt de verschillende API&#39;s zonder kop](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) waarmee u het formulier kunt weergeven, weergeven en verzenden.
+
+Dit artikel heeft betrekking op de verschillende API&#39;s zonder koppen die u worden aangeboden, zodat u adaptieve formulieren zonder kop kunt weergeven en verzenden.
+
+In dit artikel wordt ervan uitgegaan dat u een bestaande app van één pagina hebt en dat u de adaptieve formulieren zonder kop wilt weergeven in uw spa-website.
 
 In de volgende schermafbeelding ziet u een contactformulier dat wordt ingesloten in SPA
 

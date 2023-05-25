@@ -7,9 +7,9 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Werk package.json bij om de volgende gebiedsdelen te omvatten. Op het moment van
 "@aemforms/af-react-components": "^0.22.41",
 "@aemforms/af-react-renderer": "^0.22.41",
 ```
+
+>[!NOTE]
+>
+>De vervolgkeuzelijst en de kaartlay-out in deze zelfstudie zijn gemaakt met [Materiële UI-bibliotheek](https://mui.com/). U moet de juiste Materiële UI-pakketten downloaden om de code op uw systeem te laten werken.
 
 ## Proxy instellen
 
