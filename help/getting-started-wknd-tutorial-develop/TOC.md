@@ -2,12 +2,13 @@
 user-guide-title: Aan de slag met AEM Sites - WKND-tutorial
 user-guide-description: Een meerdelige tutorial voor ontwikkelaars voor wie AEM nieuw is. Implementeer een AEM-website voor een fictief lifestylemerk, de WKND. Schakel de front-end pijplijn in om uw ontwikkeling naar de implementatiecyclus te versnellen.
 breadcrumb-title: AEM Sites WKND-tutorials
+solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Cloud Service
 activity: develop
 audience: developer
 index: y
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 46%

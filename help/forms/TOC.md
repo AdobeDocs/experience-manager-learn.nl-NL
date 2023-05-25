@@ -3,11 +3,12 @@ feature-set: Experience Manager Forms, Experience Manager
 role: Developer
 user-guide-title: Video's en tutorials voor AEM Forms
 user-guide-description: Verzameling van AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars.
+solution: Experience Manager, Experience Manager Forms
 breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
 workflow-type: tm+mt
 source-wordcount: '1816'
 ht-degree: 1%
