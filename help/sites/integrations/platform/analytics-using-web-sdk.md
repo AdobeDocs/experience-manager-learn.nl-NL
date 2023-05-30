@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 19c31819f3df7c6c43753d6ec4de8f6ecf4e55dd
+source-git-commit: 3831c6ed1467018c9f5bf15aa9f6b8ee78034c02
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1646'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Het SDR-document biedt een uitgebreid overzicht van het uitvoeringsplan, zodat a
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-Ga voor meer informatie over concepten en diverse elementen die in het SDR-document moeten worden opgenomen naar de [Creeer en handhaaf een Document van de Verwijzing van het Ontwerp van de Oplossing (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). U kunt een malplaatje van steekproefExcel ook downloaden, nochtans is de WKND-specifieke versie ook beschikbaar [hier](./assets/Analytics-SDR-Template.xlsx).
+Ga voor meer informatie over concepten en diverse elementen die in het SDR-document moeten worden opgenomen naar de [Creeer en handhaaf een Document van de Verwijzing van het Ontwerp van de Oplossing (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). U kunt een malplaatje van steekproefExcel ook downloaden, nochtans is de WKND-specifieke versie ook beschikbaar [hier](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
 ## Setup Analytics - rapportsuite, Analysis Workspace
 
@@ -83,7 +83,7 @@ In deze zelfstudie  `eVar5, eVar6, and eVar7` track  _WKND-paginanaam, WKND CTA-
 
 Om die inzichten te analyseren, te verzamelen en te delen met anderen uit de verzamelde gegevens, wordt een project in Analysis Workspace gemaakt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419875?quality=12&learn=on)
 
 Om meer over de opstelling en de concepten van Analytics te leren, worden de volgende middelen hoogst geadviseerd:
 
@@ -121,6 +121,10 @@ In de [vorige zelfstudie](./web-sdk.md), er wordt een markeringseigenschap gemaa
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419882?quality=12&learn=on)
+
+>[!TIP]
+>
+>Het gegevenselement en regel-gebeurtenis code in de video wordt getoond is beschikbaar voor uw verwijzing die, **het element onder accordeon uitvouwen**. Nochtans, als u de Laag van Gegevens van de Cliënt NIET gebruikt, moet u de hieronder code wijzigen maar het concept van het bepalen van de Elementen van Gegevens en het gebruiken van hen in de definitie van de Regel blijft van toepassing.
 
 +++ Gegevenselement en code voor regelgebeurtenissen
 
@@ -209,6 +213,13 @@ In de [vorige zelfstudie](./web-sdk.md), er wordt een markeringseigenschap gemaa
 
 Voor extra informatie bij het integreren van AEM Componenten van de Kern met de Laag van de Gegevens van de Cliënt van Adobe raadpleegt u [De Adobe Client Data Layer gebruiken met AEM Core Components Guide](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
 
+
+>[!INFO]
+>
+>Voor een volledig begrip van de **Variabele toewijzen** de details van het lusjebezit in het document van de Verwijzing van het Ontwerp van de Oplossing (SDR), hebben toegang tot de voltooide WKND-Specifieke versie voor download [hier](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx).
+
+
+
 ## De bijgewerkte eigenschap Tag op WKND verifiëren
 
 Om ervoor te zorgen dat de bijgewerkte markeringseigenschap op de WKND-sitepagina&#39;s wordt gebouwd, gepubliceerd en correct werkt. De Google Chrome-webbrowser gebruiken [Adobe Experience Platform Debugger-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
@@ -235,7 +246,7 @@ De dataset is een opslag en beheersconstructie voor een inzameling van gegevens 
 
 Analysis Workspace is een krachtig hulpmiddel in Adobe Analytics waarmee gegevens op een flexibele en interactieve manier kunnen worden verkend en weergegeven. Het verstrekt een belemmering-en-dalingsinterface om douanerapporten tot stand te brengen, geavanceerde segmentatie uit te voeren, en diverse gegevensvisualisaties toe te passen.
 
-Laten we het Analysis Workspace-project dat is gemaakt in de [Analyses instellen](#setup-analytics---report-suite-analysis-workspace) stap. In de **Bovenste pagina&#39;s** verschillende meetgegevens te bekijken, zoals bezoeken, unieke bezoekers, berichten, stuitfrequentie en meer. Om de prestaties van WKND pagina&#39;s en homepageCTAs te beoordelen, sleep-en-daling de WKND-specifieke afmetingen (de Naam van de Pagina WKND, de Naam van WKND CTA) en metriek (de Gebeurtenis van de Klik van WKND CTA). Deze inzichten zijn van groot belang voor marktpartijen om te begrijpen welke CTA&#39;s effectiever zijn en om gegevensgestuurde beslissingen te nemen die zijn afgestemd op hun bedrijfsdoelstellingen.
+Laten we het Analysis Workspace-project dat is gemaakt in de [Analyses instellen](#setup-analytics---report-suite-analysis-workspace) stap. In de **Bovenste pagina&#39;s** verschillende meetgegevens te bekijken, zoals bezoeken, unieke bezoekers, berichten, stuitfrequentie en meer. Om de prestaties van WKND pagina&#39;s en homepageCTAs te beoordelen, sleep-en-daling de WKND-specifieke afmetingen (de Naam van de Pagina WKND, de Naam van WKND CTA) en metriek (de Gebeurtenis van de Klik van WKND CTA). Deze inzichten zijn van groot belang voor de marktpartijen om te begrijpen welke CTA&#39;s effectiever zijn en gegevensgestuurde beslissingen nemen, in overeenstemming met hun bedrijfsdoelstellingen.
 
 Als u gebruikersreizen zichtbaar wilt maken, gebruikt u de stroomvisualisatie, te beginnen met de **WKND-paginanaam** en uitbreiden naar verschillende paden.
 
@@ -250,6 +261,12 @@ Het implementeren van Adobe Analytics is van cruciaal belang voor marketingteams
 Door de geadviseerde stappen uit te voeren en de verstrekte middelen, zoals het document van de Verwijzing van het Ontwerp van de Oplossing (SDR) te gebruiken en belangrijke concepten van Analytics te begrijpen, kunnen de marketers gegevens effectief verzamelen en analyseren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419888?quality=12&learn=on)
+
+
+>[!AVAILABILITY]
+>
+>Als u de voorkeur geeft aan **end-to-end video** dat het volledige integratieproces in plaats van individuele opstellingsstapvideo&#39;s behandelt, kunt u klikken [hier](https://video.tv.adobe.com/v/3419889/) om toegang te krijgen tot het bestand.
+
 
 ## Aanvullende bronnen
 
