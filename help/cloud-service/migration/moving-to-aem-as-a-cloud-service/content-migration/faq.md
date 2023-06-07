@@ -10,9 +10,9 @@ level: Beginner
 kt: 11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2296'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Zie voor meer informatie [vereisten voor cloudmigratie](https://experienceleague
 
 ### V: Ik heb het laatste BPA-rapport van mijn bronsysteem, wat moet ik ermee doen?
 
-Exporteer het rapport als CSV en upload het vervolgens naar Cloud Acceleration Manager. [gekoppeld aan uw IMS-organisatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html). Doorloop vervolgens het revisieproces als [beschreven in de gereedheidsfase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+Exporteer het rapport als CSV en upload het vervolgens naar Cloud Acceleration Manager. [gekoppeld aan uw IMS-organisatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html). Doorloop vervolgens het revisieproces als [beschreven in de gereedheidsfase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
 
 Controleer de evaluatie van de complexiteit van de code en inhoud die door het gereedschap wordt geleverd en noteer de bijbehorende actiepunten die leiden tot de evaluatie van de achtergrondcode voor het vernieuwen van code of de cloudmigratie.
 
@@ -80,7 +80,7 @@ Als kloonomgevingen worden gebruikt voor migratie, heeft dit geen invloed op het
 
 Het korte antwoord is &quot;**Ja**&quot;.
 
-De CTT-extractie en -inname **zonder** Door de gebruiker alleen de inhoud toe te wijzen, worden de bijbehorende beginselen (gebruikers, groepen) van bron AEM naar AEMaaCS gemigreerd. Maar deze gebruikers (id&#39;s) in Adobe IMS moeten toegang hebben (voorzien van) tot AEMaaCS-instantie om de verificatie te voltooien. De taak van [gereedschap voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) moet de lokale AEM gebruiker aan Gebruiker IMS in kaart brengen zodat de authentificatie en de vergunningen samenwerken.
+De CTT-extractie en -inname **zonder** Door de gebruiker alleen de inhoud toe te wijzen, worden de bijbehorende beginselen (gebruikers, groepen) van bron AEM naar AEMaaCS gemigreerd. Maar deze gebruikers (id&#39;s) in Adobe IMS moeten toegang hebben (voorzien van) tot AEMaaCS-instantie om de verificatie te voltooien. De taak van [gereedschap voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) moet de lokale AEM gebruiker aan Gebruiker IMS in kaart brengen zodat de authentificatie en de vergunningen samenwerken.
 
 In dit geval is de SAML-identiteitsprovider geconfigureerd tegen Adobe IMS voor het gebruik van Federated / Enterprise ID in plaats van rechtstreeks voor het AEM met behulp van de verificatiehandler.
 
@@ -88,15 +88,15 @@ In dit geval is de SAML-identiteitsprovider geconfigureerd tegen Adobe IMS voor 
 
 Het korte antwoord is &quot;**Ja**&quot;.
 
-De CTT-extractie en -opname zonder gebruikerstoewijzing migreert de inhoud, de bijbehorende beginselen (gebruikers, groepen) van bron AEM naar AEMaaCS. Maar deze gebruikers (id&#39;s) in Adobe IMS moeten toegang hebben (voorzien van) tot AEMaaCS-instantie om de verificatie te voltooien. De taak van [gereedschap voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) moet de lokale AEM gebruiker aan Gebruiker IMS in kaart brengen zodat de authentificatie en de vergunningen samenwerken.
+De CTT-extractie en -opname zonder gebruikerstoewijzing migreert de inhoud, de bijbehorende beginselen (gebruikers, groepen) van bron AEM naar AEMaaCS. Maar deze gebruikers (id&#39;s) in Adobe IMS moeten toegang hebben (voorzien van) tot AEMaaCS-instantie om de verificatie te voltooien. De taak van [gereedschap voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) moet de lokale AEM gebruiker aan Gebruiker IMS in kaart brengen zodat de authentificatie en de vergunningen samenwerken.
 
 In dit geval gebruiken de gebruikers persoonlijke Adobe ID en wordt de Adobe ID door IMS-beheerder gebruikt om toegang te verlenen tot AEMaaCS.
 
 ### V: Wat betekenen de termen &quot;vegen&quot; en &quot;overschrijven&quot; in de context van CTT?
 
-In de context van [extractiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-servicemoving/cloud-migration/content-transfer-tool/extracting-content.html)De opties zijn of om de gegevens in de testcontainer van vorige extractiecycli te overschrijven of het differentieel (toegevoegd/bijgewerkt/verwijderd) in de container toe te voegen. De container van het opvoeren is niets, maar de blob opslagcontainer verbonden aan migratiereeks. Elke migratieset krijgt een eigen staging container.
+In de context van [extractiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase)De opties zijn of om de gegevens in de testcontainer van vorige extractiecycli te overschrijven of het differentieel (toegevoegd/bijgewerkt/verwijderd) in de container toe te voegen. De container van het opvoeren is niets, maar de blob opslagcontainer verbonden aan migratiereeks. Elke migratieset krijgt een eigen staging container.
 
-In de context van [innamefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html), De opties zijn + waarmee de volledige inhoudsopslagplaats van AEMaaCS wordt vervangen of de differentiële (toegevoegde/bijgewerkte/verwijderde) inhoud van de testmigratiecontainer wordt gesynchroniseerd.
+In de context van [innamefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html), De opties zijn + waarmee de volledige inhoudsopslagplaats van AEMaaCS wordt vervangen of de differentiële (toegevoegde/bijgewerkte/verwijderde) inhoud van de testmigratiecontainer wordt gesynchroniseerd.
 
 ### V: Er zijn meerdere websites, gekoppelde elementen, gebruikers en groepen in het bronsysteem. Is het mogelijk om ze in fasen te migreren naar AEMaaCS?
 
@@ -224,6 +224,6 @@ De bovenstaande aanpak kan alleen worden gebruikt voor het meten van de migratie
 
 + [Tips en trucs voor migreren naar Experience Manager in de cloud (top 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
-+ [CTT-video met experts](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-servicemigration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
++ [CTT-video met experts](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
 
-+ [Video&#39;s over andere AEMaaCS-onderwerpen in de Expert-reeks](https://experienceleague.adobe.com/docs/experience-manager-learncloud-service/aem-experts-series.html)
++ [Video&#39;s over andere AEMaaCS-onderwerpen in de Expert-reeks](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-experts-series.html)

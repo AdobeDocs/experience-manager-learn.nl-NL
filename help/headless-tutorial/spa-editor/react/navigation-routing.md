@@ -12,9 +12,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,12 @@ Leer hoe meerdere weergaven in de SPA kunnen worden ondersteund door aan AEM Pag
 ## Doelstelling
 
 1. Begrijp het SPA model verpletterend opties beschikbaar wanneer het gebruiken van de SPARedacteur.
-1. Leren gebruiken [Reageer Router](https://reacttraining.com/react-router/) om te navigeren tussen verschillende weergaven van de SPA.
+1. Leren gebruiken [Reageer Router](https://reacttraining.com/react-router) om te navigeren tussen verschillende weergaven van de SPA.
 1. Gebruik AEM React Core Components om een dynamische navigatie te implementeren die door de AEM paginahiërarchie wordt aangedreven.
 
 ## Wat u gaat maken
 
-In dit hoofdstuk wordt navigatie toegevoegd aan een SPA in AEM. Het navigatiemenu wordt aangestuurd door de AEM paginahiërarchie en maakt gebruik van het JSON-model dat wordt geleverd door de [Navigation Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
+In dit hoofdstuk wordt navigatie toegevoegd aan een SPA in AEM. Het navigatiemenu wordt aangestuurd door de AEM paginahiërarchie en maakt gebruik van het JSON-model dat wordt geleverd door de [Navigation Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![Navigatie toegevoegd](assets/navigation-routing/navigation-added.png)
 
@@ -209,9 +209,9 @@ Controleer vervolgens het JSON-model dat de multi-view ervaring van de SPA aanst
 
 ## Inspect React-routering  {#react-routing}
 
-De navigatie en het verpletteren worden uitgevoerd met [Reageer Router](https://reactrouter.com/). Reageer Router is een inzameling van navigatiecomponenten voor React toepassingen. [Core Components AEM Reageren](https://github.com/adobe/aem-react-core-wcm-components-base) de eigenschappen van React Router om uit te voeren **Navigatie** wordt gebruikt in de vorige stappen.
+De navigatie en het verpletteren worden uitgevoerd met [Reageer Router](https://reactrouter.com/en/main). Reageer Router is een inzameling van navigatiecomponenten voor React toepassingen. [Core Components AEM Reageren](https://github.com/adobe/aem-react-core-wcm-components-base) de eigenschappen van React Router om uit te voeren **Navigatie** wordt gebruikt in de vorige stappen.
 
-Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebruikend React Router wordt geïntegreerd [Koppeling](https://reactrouter.com/web/api/Link) component.
+Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebruikend React Router wordt geïntegreerd [Koppeling](https://reactrouter.com/en/main/components/link) component.
 
 1. In winde open het dossier `index.js` om `ui.frontend/src/index.js`.
 
@@ -238,7 +238,7 @@ Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebru
    });
    ```
 
-   Let erop dat de `App` in de `Router` component van [Reageer Router](https://reacttraining.com/react-router/). De `ModelManager`, verstrekt door de AEM SPA Redacteur JS SDK, voegt de dynamische routes aan AEM Pagina&#39;s toe die op JSON model API worden gebaseerd.
+   Let erop dat de `App` in de `Router` component van [Reageer Router](https://reacttraining.com/react-router). De `ModelManager`, verstrekt door de AEM SPA Redacteur JS SDK, voegt de dynamische routes aan AEM Pagina&#39;s toe die op JSON model API worden gebaseerd.
 
 1. Het bestand openen `Page.js` om `ui.frontend/src/components/Page/Page.js`
 
@@ -260,7 +260,7 @@ Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebru
    De `Page` SPA component gebruikt de `MapTo` functie voor toewijzen **Pagina&#39;s** in AEM op een corresponderende SPA. De `withRoute` nut helpt om de SPA aan de aangewezen AEM pagina van het Kind dynamisch te leiden die op `cqPath` eigenschap.
 
 1. Open de `Header.js` component bij `ui.frontend/src/components/Header/Header.js`.
-1. Werk de `Header` om de `<h1>` tag in een [Koppeling](https://reactrouter.com/web/api/Link) op de homepage:
+1. Werk de `Header` om de `<h1>` tag in een [Koppeling](https://reactrouter.com/en/main/components/link) op de homepage:
 
    ```diff
      //Header.js

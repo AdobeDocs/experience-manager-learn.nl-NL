@@ -9,16 +9,16 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342133.jpeg
 exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
-source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 5%
+source-wordcount: '100'
+ht-degree: 6%
 
 ---
 
 # Migreren naar de cloud - Deel 1
 
-Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief enkele goede werkwijzen en verschillen van AMS/On-Prem. Ze raken ook aan de migratie naar de cloud. speciale gast- en wolkendeskundige, [Dr. Applesmith](https://twitter.com/DrApplesmith) maakt een weergave.
+Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief enkele goede werkwijzen en verschillen van AMS/On-Prem. Ze raken ook aan de migratie naar de cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
 

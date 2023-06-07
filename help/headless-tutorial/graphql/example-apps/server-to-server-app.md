@@ -9,9 +9,9 @@ level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '471'
 ht-degree: 1%
 
 ---
@@ -22,18 +22,18 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 
 ![Server-naar-server Node.js-app met AEM Headless](./assets/server-to-server-app/server-to-server-app.png)
 
-De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app)
+De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server)
 
 ## Vereisten {#prerequisites}
 
 De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
-+ [Node.js v18](https://nodejs.org/en/)
++ [Node.js v18](https://nodejs.org/en)
 + [Git](https://git-scm.com/)
 
 ## AEM
 
-De toepassing Node.js werkt met de volgende AEM plaatsingsopties. Alle implementaties vereisen de [WKND-site v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) te installeren.
+De toepassing Node.js werkt met de volgende AEM plaatsingsopties. Alle implementaties vereisen de [WKND-site v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases) te installeren.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Optioneel [servicegegevens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) als u aanvragen autoriseert (bijvoorbeeld verbinding maken met de AEM Author-service).
@@ -77,7 +77,7 @@ Deze Node.js-toepassing kan verbinding maken met AEM-auteur of AEM-publicatie op
 
 ## De code
 
-Hieronder volgt een overzicht van hoe de server-aan-server toepassing Node.js wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL persisted vragen, en hoe die gegevens worden voorgesteld. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
+Hieronder volgt een overzicht van hoe de server-aan-server toepassing Node.js wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL persisted vragen, en hoe die gegevens worden voorgesteld. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server).
 
 De meest gebruikte methode voor server-naar-server-AEM Headless-toepassingen is het synchroniseren van gegevens van inhoudsfragmenten van AEM naar andere systemen. Deze toepassing is echter opzettelijk eenvoudig en drukt de JSON-resultaten af van de hardnekkige query.
 

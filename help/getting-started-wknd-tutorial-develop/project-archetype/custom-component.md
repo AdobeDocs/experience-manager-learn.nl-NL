@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 434f56e143bc0f969723de48abd26d49a308af9b
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '4061'
+source-wordcount: '4057'
 ht-degree: 0%
 
 ---
@@ -446,7 +446,7 @@ Maak een openbare Java™-interface voor de naamregel. De `Byline.java` bepaalt 
    import org.osgi.annotation.versioning.Version;
    ```
 
-Wanneer de bestanden in dit pakket worden gewijzigd, wordt [pakketversie moet semantisch worden aangepast](https://semver.org/). Zo niet, dan is het Maven-project [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) detecteert een ongeldige pakketversie en verbreekt de gebouwde versie. Gelukkig meldt de Maven-plug-in bij een storing de ongeldige Java™-pakketversie en de versie die deze moet hebben. Werk de `@Version("...")` declaratie in de schending van het Java™-pakket `package-info.java` naar de versie die door de plug-in wordt aanbevolen om te repareren.
+Wanneer de bestanden in dit pakket worden gewijzigd, wordt [pakketversie moet semantisch worden aangepast](https://semver.org/). Zo niet, dan is het Maven-project [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd) detecteert een ongeldige pakketversie en verbreekt de gebouwde versie. Gelukkig meldt de Maven-plug-in bij een storing de ongeldige Java™-pakketversie en de versie die deze moet hebben. Werk de `@Version("...")` declaratie in de schending van het Java™-pakket `package-info.java` naar de versie die door de plug-in wordt aanbevolen om te repareren.
 
 ### Bylineimplementatie {#byline-implementation}
 

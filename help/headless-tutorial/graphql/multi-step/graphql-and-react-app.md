@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ _IDE screenshots in dit hoofdstuk komen van [Visual Studio-code](https://code.vi
 
 De volgende software moet worden geïnstalleerd:
 
-- [Node.js v18](https://nodejs.org/)
+- [Node.js v18](https://nodejs.org/en)
 - [Visual Studio-code](https://code.visualstudio.com/)
 
 ## Doelstellingen
@@ -109,7 +109,7 @@ De voorbeeldtoepassing React bestaat uit drie hoofdonderdelen:
 
 1. De `src/api` Deze map bevat bestanden die worden gebruikt om GraphQL-query&#39;s naar AEM te maken.
    - `src/api/aemHeadlessClient.js` initialiseert en exporteert de AEM Headless Client die wordt gebruikt om te communiceren met AEM
-   - `src/api/usePersistedQueries.js` implements [aangepaste React-haken](https://react.dev/docs/hooks-custom.html) gegevens van AEM GraphQL terugsturen naar de `Teams.js` en `Person.js` weergavecomponenten.
+   - `src/api/usePersistedQueries.js` implements [aangepaste React-haken](https://react.dev/learn/reusing-logic-with-custom-hooks#custom-hooks-sharing-logic-between-components) gegevens van AEM GraphQL terugsturen naar de `Teams.js` en `Person.js` weergavecomponenten.
 
 1. De `src/components/Teams.js` het dossier toont een lijst van teams en hun leden, door een lijstvraag te gebruiken.
 1. De `src/components/Person.js` het dossier toont de details van één enkele persoon, gebruikend een parameter, enig-resultaatvraag.
@@ -187,7 +187,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 Maak vervolgens de functionaliteit om de Teams en hun leden weer te geven in de hoofdweergave van de React-app. Deze functionaliteit vereist:
 
-- Een nieuwe [aangepaste React useEffect-haak](https://react.dev/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` dat de `my-project/all-teams` voortgezette vraag, terugkerend een lijst van de Fragmenten van de Inhoud van het Team in AEM.
+- Een nieuwe [aangepaste React useEffect-haak](https://react.dev/reference/react/useEffect#useeffect) in `src/api/usePersistedQueries.js` dat de `my-project/all-teams` voortgezette vraag, terugkerend een lijst van de Fragmenten van de Inhoud van het Team in AEM.
 - Een component Reageren op `src/components/Teams.js` die de nieuwe aangepaste Reactie aanroept `useEffect` haak, en geeft de teamgegevens terug.
 
 Als de hoofdweergave van de app is voltooid, worden de teamgegevens uit AEM ingevuld.
@@ -337,7 +337,7 @@ Met de [Teams, functionaliteit](#implement-teams-functionality) volledig, voeren
 
 Deze functionaliteit vereist:
 
-- Een nieuwe [aangepaste React useEffect-haak](https://react.dev/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` dat de parameters activeert `my-project/person-by-name` persisted query en retourneert één persoonrecord.
+- Een nieuwe [aangepaste React useEffect-haak](https://react.dev/reference/react/useEffect#useeffect) in `src/api/usePersistedQueries.js` dat de parameters activeert `my-project/person-by-name` persisted query en retourneert één persoonrecord.
 
 - Een component Reageren op `src/components/Person.js` dat de volledige naam van een persoon als vraagparameter gebruikt, haalt nieuwe douaneReact aan `useEffect` en geeft de gegevens van de persoon weer.
 

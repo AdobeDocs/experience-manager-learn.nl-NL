@@ -9,9 +9,9 @@ level: Beginner
 thumbnail: 28988.jpg
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Adobe Asset Link-extensie voor Adobe Creative Cloud for enterprise breidt de mog
 
 >[!TIP]
 >
-> Meer informatie over hoe [Adobe XD Premium-trainingsprogramma](https://spark.adobe.com/page/wU7OXv8qKGugO/) kan u helpen Asset Link te integreren met uw Adobe Experience Manager-workflow.
+> Meer informatie over hoe [Adobe XD Premium-trainingsprogramma](https://helpx.adobe.com/support/xd.html) kan u helpen Asset Link te integreren met uw Adobe Experience Manager-workflow.
 
 ## Adobe Asset Link en AEM creatieve workflows
 
@@ -65,7 +65,7 @@ Adobe Asset Link biedt ondersteuning voor InDesign direct koppelen tussen Adobe 
 
 >[!NOTE]
 >
->Gebruik alleen de Adobe Creative Cloud-Enterprise ID of -Federated ID. Zorg ervoor dat u [configureren van AEM voor Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
+>Gebruik alleen de Adobe Creative Cloud-Enterprise ID of -Federated ID. Zorg ervoor dat u [configureren van AEM voor Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
 U kunt een element op een van de volgende manieren in de lay-out InDesign plaatsen:
 
