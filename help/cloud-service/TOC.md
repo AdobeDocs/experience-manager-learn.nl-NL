@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 11%
@@ -61,20 +61,22 @@ ht-degree: 11%
    + Uitbreidbaarheid{#extensibility}
       + App Builder{#app-builder}
          + [Toegangstoken genereren](./developing/extensibility/app-builder/jwt-auth.md)
-      + Content Fragment-console{#content-fragments}
-         + [Overzicht](./developing/extensibility/content-fragments/overview.md)
-         + [Adobe Developer Console-project](./developing/extensibility/content-fragments/adobe-developer-console-project.md)
-         + [Toepassingsinitialisatie](./developing/extensibility/content-fragments/app-initialization.md)
-         + [Registratie van extensies](./developing/extensibility/content-fragments/extension-registration.md)
-         + [Menu Koptekst](./developing/extensibility/content-fragments/header-menu.md)
-         + [Actiebalk](./developing/extensibility/content-fragments/action-bar.md)
-         + [Modal](./developing/extensibility/content-fragments/modal.md)
-         + [Adobe I/O Runtime-actie](./developing/extensibility/content-fragments/runtime-action.md)
-         + [Testen](./developing/extensibility/content-fragments/test.md)
-         + [Implementeren](./developing/extensibility/content-fragments/deploy.md)
-         + Voorbeelden van extensies{#example-extensions}
-            + [Bulkeigenschap bijwerken](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
-            + [Afbeeldingselementen AEM genereren met OpenAI](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
+      + UI-uitbreidbaarheid{#ui}
+         + [Overzicht](./developing/extensibility/ui/overview.md)
+         + [Adobe Developer Console-project](./developing/extensibility/ui/adobe-developer-console-project.md)
+         + [App initialiseren](./developing/extensibility/ui/app-initialization.md)
+         + [Extensie registreren](./developing/extensibility/ui/extension-registration.md)
+         + [Modal](./developing/extensibility/ui/modal.md)
+         + [Adobe I/O Runtime-actie](./developing/extensibility/ui/runtime-action.md)
+         + [Verifiëren](./developing/extensibility/ui/verify.md)
+         + [Implementeren](./developing/extensibility/ui/deploy.md)
+         + Contentfragmenten{#content-fragments}
+            + [Overzicht](./developing/extensibility/ui/content-fragments/overview.md)
+            + Voorbeelden{#examples}
+               + [Bulkeigenschappenupdate](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
+               + [Genereren van AI-afbeelding](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
+               + [Aangepaste rasterkolommen](./developing/extensibility/ui/content-fragments/examples/custom-grid-columns.md)
+               + [Exporteren als XML](./developing/extensibility/ui/content-fragments/examples/editor-export-to-xml.md)
    + Grondbeginselen van ontwikkeling{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Lokale ontwikkelomgeving](./developing/basics/local-development-environment.md)
