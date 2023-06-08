@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 19c31819f3df7c6c43753d6ec4de8f6ecf4e55dd
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '458'
 ht-degree: 11%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 11%
    + [Stijlsysteem](page-authoring/style-system-feature-video-use.md)
    + [Timewarp](page-authoring/timewarp-feature-video-use.md)
    + [Lanceringen](page-authoring/launches.md)
-   + Expertadvies {#expert-advice}
+   + Leer van uw peers {#expert-advice}
       + [Tips voor sitehiërarchie](page-authoring/expert-advice/site-hierarchy.md)
 + Onderdelen {#components}
    + [Component Development](components/component-development.md)
@@ -123,7 +123,7 @@ ht-degree: 11%
       + [Doelactiviteit maken met behulp van Experience Fragment-aanbiedingen](integrations/adobe-target/create-target-activity.md)
       + [Personalisatie met behulp van Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Aanpassing van de volledige webpaginabeleving](integrations/adobe-target/personalization-web-page.md)
-+ Expertbronnen {#expert-resources}
++ Leer van uw peers {#expert-resources}
    + [AEM Sites-rijpheidsbeoordeling](expert-resources/maturity-assessment.md)
    + [Onderhoud site](expert-resources/site-maintenance.md)
    + [AEM Champion Tips en Tricks: Sessie 1](expert-resources/champion-tips-1.md)
