@@ -7,13 +7,13 @@ kt: 13346
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
+exl-id: 31008bb3-316b-4035-89ea-e830b429b927
+source-git-commit: 529e98269a08431152686202a8a2890712b9c835
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
-
 
 # Selecteer een formulier dat u wilt invullen in een vervolgkeuzelijst
 
@@ -49,22 +49,24 @@ export default function SelectFormFromDropDownList()
         'form': Form
     };
 
-const[formPath, setFormPath] = useState('');
+const[formID, setFormID] = useState('');
 const[afForms,SetOptions] = useState([]);
 const [selectedForm, setForm] = useState('');
 const HandleChange = (event) =>
      {
-        console.log("The path is "+event.target.value) 
+        console.log("The form id is "+event.target.value) 
     
-        setFormPath(event.target.value)
-        console.log("The formPath"+ formPath);
+        setFormID(event.target.value)
+        
      };
 const getForm = async () =>
      {
-        const resp = await fetch(`${formPath}/jcr:content/guideContainer.model.json`);
+        
+        console.log("The formID in getForm"+ formID);
+        const resp = await fetch(`/adobe/forms/af/${formID}`);
         let formJSON = await resp.json();
-        console.log(formJSON);
-        setForm(formJSON);
+        console.log(formJSON.afModelDefinition);
+        setForm(formJSON.afModelDefinition);
      }
 const getAFForms =async()=>
      {
@@ -88,7 +90,7 @@ const getAFForms =async()=>
         getForm()
         
 
-    },[formPath]);
+    },[formID]);
 
   return (
     <Box sx={{ minWidth: 120 }}>
@@ -97,7 +99,7 @@ const getAFForms =async()=>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={formPath}
+          value={formID}
           label="Please select a form"
           onChange={HandleChange}
           
@@ -105,7 +107,7 @@ const getAFForms =async()=>
        {afForms.map((afForm,index) => (
     
         
-          <MenuItem  key={index} value={afForm.path}>{afForm.title}</MenuItem>
+          <MenuItem  key={index} value={afForm.id}>{afForm.title}</MenuItem>
         ))}
         
        
@@ -126,10 +128,13 @@ De volgende twee API-aanroepen zijn gebruikt bij het maken van deze gebruikersin
 * [ListForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). De aanroep om de formulieren op te halen wordt slechts eenmaal gedaan wanneer de component wordt gegenereerd. De resultaten van de API-aanroep worden opgeslagen in de variabele afForms.
 In de bovenstaande code doorlopen we de afForms met behulp van de kaartfunctie en voor elk item in de afForms-array wordt een MenuItem-component gemaakt en toegevoegd aan de Select-component.
 
-* Formulier zoeken - Er wordt een aanroep naar het volgende eindpunt gemaakt, waarbij formPath het pad is naar het geselecteerde aangepaste formulier dat de gebruiker in de vervolgkeuzelijst heeft gekozen. Het resultaat van deze aanroep van GET wordt opgeslagen in selectedForm.
+* Formulier zoeken - Er wordt een aanroep naar de [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), waarbij de id de id is van het geselecteerde adaptieve formulier door de gebruiker in de vervolgkeuzelijst. Het resultaat van deze aanroep van GET wordt opgeslagen in selectedForm.
 
 ```
-${formPath}/jcr:content/guideContainer.model.json`
+const resp = await fetch(`/adobe/forms/af/${formID}`);
+let formJSON = await resp.json();
+console.log(formJSON.afModelDefinition);
+setForm(formJSON.afModelDefinition);
 ```
 
 * Het geselecteerde formulier weergeven. De volgende code is gebruikt om het geselecteerde formulier weer te geven. Het element AdaptiveForm is opgenomen in het npm-pakket aemforms/af-response-renderer en verwacht de toewijzingen en formJson als eigenschappen
@@ -141,6 +146,3 @@ ${formPath}/jcr:content/guideContainer.model.json`
 ## Volgende stappen
 
 [De formulieren weergeven in de kaartindeling](./display-forms-card-view.md)
-
-
-
