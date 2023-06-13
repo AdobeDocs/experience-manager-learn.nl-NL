@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+source-git-commit: 82df468bc9a5f83133adbd7aa7332bb5c21a695c
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -273,4 +273,24 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
       </div>
     </div>
   </div>    
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Rich Text Editor toolbar button">
+    <div class="card" style="height: 100%">
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <a href="./examples/editor-rte-toolbar.md" title="Rich Text Editor, werkbalkknop" tabindex="-1">
+            <img class="is-bordered-r-small" src="./examples/assets/rte-toolbar/card.png" alt="Rich Text Editor, werkbalkknop">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small">
+        <div class="content">
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Rich Text Editor, werkbalkknop">Rich Text Editor, werkbalkknop</a></p>
+          <p class="is-size-6">Voeg aangepaste werkbalkknoppen toe aan RTE-velden in de Inhoudsfragmenteditor.</p>
+          <a href="./examples/editor-rte-toolbar.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>   
 </div>

@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+source-git-commit: 82df468bc9a5f83133adbd7aa7332bb5c21a695c
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '956'
 ht-degree: 11%
 
 ---
@@ -73,10 +73,11 @@ ht-degree: 11%
          + Contentfragmenten{#content-fragments}
             + [Overzicht](./developing/extensibility/ui/content-fragments/overview.md)
             + Voorbeelden{#examples}
-               + [Bulkeigenschappenupdate](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
                + [Genereren van AI-afbeelding](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
+               + [Bulkeigenschappenupdate](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
                + [Aangepaste rasterkolommen](./developing/extensibility/ui/content-fragments/examples/custom-grid-columns.md)
                + [Exporteren als XML](./developing/extensibility/ui/content-fragments/examples/editor-export-to-xml.md)
+               + [RTE, werkbalkknop](./developing/extensibility/ui/content-fragments/examples/editor-rte-toolbar.md)
    + Grondbeginselen van ontwikkeling{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Lokale ontwikkelomgeving](./developing/basics/local-development-environment.md)
