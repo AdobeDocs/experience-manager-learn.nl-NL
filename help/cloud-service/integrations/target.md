@@ -10,20 +10,15 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
-source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
+exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
+source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
 
 # Ervaringen zonder kop aanpassen AEM inhoudfragmenten
-
->[!IMPORTANT]
->
-> Exporteren van Adobe Experience Manager Content Fragment naar Adobe Target is beschikbaar in het as a Cloud Service AEM [prerelease-kanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features).
-
-
 
 Deze zelfstudie verkent hoe AEM Content Fragments naar Adobe Target worden geëxporteerd en vervolgens worden gebruikt om ervaringen zonder kop aan te passen met de SDK van het Web Adobe. De [WKND-app Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) wordt gebruikt om te onderzoeken hoe een gepersonaliseerde activiteit van het Doel gebruikend de Aanbiedingen van de Fragmenten van de Inhoud aan de ervaring kan worden toegevoegd, om een avontuur te bevorderen WKND.
 
