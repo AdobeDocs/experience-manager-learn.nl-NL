@@ -10,7 +10,7 @@ jira: KT-13464
 thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: c54d078c6282f8ace936dd4a9ee0d5cc39490230
+source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aangepaste knop toevoegen aan Rich Text Editor (RTE)-werkbalk
 
-![Inhoudsfragmenteditor, werkbalkextensievoorbeeld](./assets/rte-toolbar/hero.png){align="center"}
+![Inhoudsfragmenteditor, werkbalkextensievoorbeeld](./assets/rte/rte-toolbar-hero.png){align="center"}
 
 U kunt aangepaste knoppen toevoegen aan de **RTE, werkbalk** in de Inhoudsfragmenteditor met de opdracht `rte` extensiepunt. In dit voorbeeld wordt getoond hoe u een aangepaste knop met de naam _Tip toevoegen_ aan de toolbar van RTE en wijzig de inhoud binnen RTE.
 
