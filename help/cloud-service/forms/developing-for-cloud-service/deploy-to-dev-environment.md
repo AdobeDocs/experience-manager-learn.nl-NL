@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 8851
 exl-id: daf7d316-e9ec-41b5-89c8-fe4f4ada9701
-source-git-commit: f0beb8b32aa25d6c26243879c9c0e42095488e23
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ De pijplijn uitvoeren
 ![pijpleiding](assets/run-pipeline.png)
 
 Als de code eenmaal is geïmplementeerd, worden de wijzigingen weergegeven in de cloudservice-instantie van AEM Forms.
+
+## Volgende stappen
+
+[Bezig met bijwerken van toegepast archetype-project](./updating-project-archetype.md)

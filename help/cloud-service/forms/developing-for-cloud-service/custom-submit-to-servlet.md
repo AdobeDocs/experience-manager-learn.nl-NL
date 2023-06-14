@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8852
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -40,18 +40,28 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 }
 ```
 
-## Aangepaste verzending maken
+## Aangepaste verzendhandler maken
 
-Aangepaste verzendgegevens maken in de map app/bankingapplication op dezelfde manier als in het dialoogvenster [eerdere versies van AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en)
+Aangepaste verzendactie maken in het dialoogvenster `apps/bankingapplication` dezelfde map maken als in het dialoogvenster [eerdere versies van AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Voor deze zelfstudie maak ik een map met de naam SubmitToAEMServlet onder de map `apps/bankingapplication` in de CRX-opslagplaats.
+
 De volgende code in post.POST.jsp door:sturen eenvoudig het verzoek aan servlet op /bin/formstutorial. Dit is dezelfde servlet die in de vorige stap is gemaakt
 
 ```java
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
+In uw AEM project in IntelliJ klik met de rechtermuisknop aan `apps/bankingapplication` en selecteer Nieuw | Pakket maken en typ in SubmitToAEMServlet na apps.bankingapplication in het nieuwe pakketdialoogvenster. Klik met de rechtermuisknop op het knooppunt VerzendenToAEMServlet en selecteer Opnieuw | Opdracht ophalen om het AEM project te synchroniseren met de AEM serveropslagplaats.
+
+
 ## Adaptief formulier configureren
 
-U kunt nu uw Adaptief formulier configureren voor verzending naar deze aangepaste verzendhandler met de naam **Verzenden naar AEM servlet**
+U kunt nu elk adaptief formulier configureren voor verzending naar deze aangepaste verzendhandler, die u **Verzenden naar AEM servlet**
+
+## Volgende stappen
+
+[Forms Portal-componenten inschakelen](./forms-portal-components.md)
+
+
 
 
 

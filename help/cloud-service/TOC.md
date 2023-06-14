@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '961'
 ht-degree: 11%
 
 ---
@@ -183,17 +183,18 @@ ht-degree: 11%
       + [Cloud Acceleration Manager gebruiken](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
    + Ontwikkelen voor Forms as a Cloud Service{#developing-for-cloud-service}
-      + [Aan de slag](./forms/developing-for-cloud-service/getting-started.md)
-      + [IntelliJ installeren](./forms/developing-for-cloud-service/intellij-set-up.md)
-      + [Installatiegit](./forms/developing-for-cloud-service/setup-git.md)
-      + [IntelliJ synchroniseren met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
-      + [Een formulier maken](./forms/developing-for-cloud-service/deploy-your-first-form.md)
-      + [Forms Portal-componenten inschakelen](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [Inclusief Cloud Services en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [Contextbewuste cloudconfiguratie](./forms/developing-for-cloud-service/context-aware-fdm.md)
-      + [Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [Gemaakt archetype bijwerken](./forms/developing-for-cloud-service/updating-project-archetype.md)
+      + [1 - Aan de slag](./forms/developing-for-cloud-service/getting-started.md)
+      + [2 - Installeer IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
+      + [3 - Instellingsopening](./forms/developing-for-cloud-service/setup-git.md)
+      + [4 - Synchroniseer IntelliJ met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [5 - Een formulier maken](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [6 - Aangepaste verzendhandler](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
+      + [7 - Forms Portal-componenten inschakelen](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [8 - Inclusief Cloud Services en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [9 - Contextbewuste cloudconfiguratie](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [10 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [11 - Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [12 - Gemaakt archetype bijwerken](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Adaptief formulier maken{#create-first-af}
       + [Inleiding](./forms/create-first-af/introduction.md)
       + [Thema maken](./forms/create-first-af/create-theme.md)

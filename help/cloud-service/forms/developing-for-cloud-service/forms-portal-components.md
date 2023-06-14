@@ -8,9 +8,9 @@ version: Cloud Service
 topic: Development
 kt: 10373
 exl-id: ab01573a-e95f-4041-8ccf-16046d723aba
-source-git-commit: 69cd5022d136e9fa84f33d2fc5ca249ac0fb6490
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -82,3 +82,7 @@ De inhoud in het dialoogvenster `.content.xml` met de volgende XML:
 ```
 
 Zodra uw project wordt opgesteld zou u deze componenten in uw AEM pagina moeten kunnen gebruiken om het portaal van Forms tot stand te brengen.
+
+## Volgende stappen
+
+[Inclusief configuratie van cloudservices](./azure-storage-fdm.md)

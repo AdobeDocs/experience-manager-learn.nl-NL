@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '515'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Installeren [Cygwin](https://www.cygwin.com/). Ik ben geïnstalleerd in C:\cygwi
 
 Maak een map met de naam adoberepo onder de map c:\cloudmanager.
 
-[Het gereedschap Repo installeren].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing het gereedschap Repo is niets anders dan het repobestand kopiëren en in uw c:\cloudmanger\adoberepo folder plaatsen.
+[Het gereedschap Repo installeren](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) Het installeren van het gereedschap Repo is niets anders dan het repobestand kopiëren en in uw c:\cloudmanger\adoberepo folder plaatsen.
 
 Voeg het volgende toe aan de omgevingsvariabele Pad C:\cygwin64\bin;C:\CloudManager\adoberepo;
 
@@ -35,7 +35,7 @@ Voeg het volgende toe aan de omgevingsvariabele Pad C:\cygwin64\bin;C:\CloudMana
 * Start IntelliJ
 * Druk op Ctrl+Alt+S om het instellingenvenster te openen.
 * Selecteer Gereedschappen->Externe gereedschappen, klik op het plusteken (+) en voer het volgende in zoals in de schermafbeelding.
-   ![rep](assets/repo.png)
+  ![rep](assets/repo.png)
 * Zorg ervoor dat u een groep met de naam Repo maakt door &quot;repo&quot; te typen in het vervolgkeuzemenu Groep en alle opdrachten die u maakt, behoren tot de opdracht **repo** groep
 
 
@@ -85,3 +85,7 @@ U kunt de volgende stappen volgen om snel een cloudinstantie op uw lokale systee
 * Maak de volgende mapstructuur.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Kopieer aem-forms-addon-xxxxxx.far in installatiemap
 * Open de opdrachtprompt en navigeer naar c:\aemformscs\aem-sdk\author enter the following command java -jar aem-author-p4502.jar -gui. Hiermee implementeert u de formulieren die u toevoegt aan het pakket in uw AEM.
+
+## Volgende stappen
+
+[Synchroniseer uw AEM formulieren en sjablonen met AEM project](./deploy-your-first-form.md)

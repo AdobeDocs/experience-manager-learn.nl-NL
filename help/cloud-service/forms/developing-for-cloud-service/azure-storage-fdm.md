@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 9006
 exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -46,3 +46,7 @@ Neem het juiste item op in het bestand filter.xml van het project ui.content
 >[!NOTE]
 >
 >Wanneer u nu uw project bouwt en implementeert met gebruik van cloudbeheer, moet u uw Azure-toegangssleutel opnieuw invoeren in de configuratie van cloudservices. Als u wilt voorkomen dat de toegangstoets opnieuw wordt ingevoerd, kunt u het beste contextbewuste configuratie maken met behulp van de omgevingsvariabelen die in het dialoogvenster [volgend artikel](./context-aware-fdm.md)
+
+## Volgende stappen
+
+[Contextbewuste configuratie maken](./context-aware-fdm.md)
