@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 7b98f583f8b54fb9c9c706521c310282dcc17ea3
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '396'
 ht-degree: 11%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 11%
    + [Zoekopdracht](./search-and-discovery/search-boost.md)
 
 + Geavanceerde mogelijkheden{#advanced}
+   + [3D-middelen](./advanced/3d-assets.md)
    + [Uitvoer PDF van annotaties](./advanced/customizing-annotations-pdf-output.md)
    + [Asset Insights ](./advanced/asset-insights-launch-tutorial.md)
    + [Elementen rapporteren](./advanced/asset-reports.md)
@@ -72,13 +73,13 @@ ht-degree: 11%
       + [AEM Brand Portal configureren](brand-portal/configure.md)
       + [Asset Souring configureren](brand-portal/configure-asset-sourcing.md)
       + [Renderingdownloads inschakelen](brand-portal/enable-renditions-download.md)
+
    + Delen van middelen{#assets-share}
       + [Commentaar voor het delen van bedrijfsmiddelen](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM](./sharing/asset-share-commons-technical-video-setup.md)
       + [Commentaar voor het delen van elementen](./sharing/asset-share-commons-feature-video-theming.md)
       + [Asset Share Commons Asset Kits](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Gekoppelde assets](./sharing/connected-assets.md)
-
 
 + Integreren met Creative Workflows{#creative-workflows}
    + [App AEM](./creative-workflows/aem-desktop-app.md)
@@ -126,6 +127,7 @@ ht-degree: 11%
    + Werken met AEM Sites {#dm-with-aem-sites}
       + [Ervaringsfragmenten](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Dynamic Media Core-componenten](dynamic-media/dynamic-media-core-components.md)
+
    + Tutorials {#tutorials}
       + [Carrouselsets maken](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Afbeeldingssets maken](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
@@ -141,7 +143,6 @@ ht-degree: 11%
       + [Dynamic Media-configuratie verwijderen](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Middelen downloaden in Dynamic Media Classic App](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [Dynamic Media Classic IPS API&#39;s](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
-
 
 + Workfront-integratie{#workfront}
    + Verbeterde aansluiting{#enhanced-connector}
