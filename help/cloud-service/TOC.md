@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '977'
+ht-degree: 11%
 
 ---
 
@@ -208,6 +208,10 @@ ht-degree: 0%
       + [Deelvenster Elementen configureren](./forms/create-first-af/configure-assets-panel.md)
       + [Deelvenster Start configureren](./forms/create-first-af/configure-start-panel.md)
       + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
+   + Aangepaste verzendservice met headless-formulier{#custom-submit-headless-forms}
+      + [1 - Inleiding](./forms/custom-submit-headless-forms/introduction.md)
+      + [2 - Een aangepaste verzendservice maken](./forms/custom-submit-headless-forms/custom-submit-service.md)
+      + [3 - Het antwoord weergeven](./forms/custom-submit-headless-forms/handle-response-react-app.md)
    + AEM Forms en Analytics{#forms-and-analytics}
       + [Inleiding](./forms/form-data-analytics/introduction.md)
       + [Gegevenselementen maken](./forms/form-data-analytics/data-elements.md)

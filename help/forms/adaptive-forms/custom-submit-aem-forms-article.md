@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '207'
 ht-degree: 1%
 
 ---
@@ -24,11 +24,15 @@ In dit artikel worden de stappen doorlopen die nodig zijn om een aangepaste verz
 * Aanmelden bij crx
 * Maak een knooppunt van het type &quot;sling:folder&quot; onder apps. Laten we dit knooppunt CustomSubmitHelpx noemen.
 * Sla het nieuwe knooppunt op.
-* Voeg de volgende twee eigenschappen toe aan het nieuwe knooppunt
-* PropertyName | Waarde van eigendom
-* guideComponentType | fd/af/components/guidesubmittype
-* guideDataModel | xfa,xsd,basic
-* jcr:beschrijving | CustomSubmitHelpx
+* Voeg de volgende drie eigenschappen toe aan het nieuwe knooppunt
+
+| Eigenschapnaam | Waarde van eigenschap |
+|----------------    | ---------------------------------|
+| guideComponentType | fd/af/components/guidesubmittype |
+| guideDataModel | xfa,xsd,basic |
+| jcr:beschrijving | CustomSubmitHelpx |
+
+
 * Sla de wijzigingen op
 * Maak een nieuw bestand met de naam post.POST.jsp onder het knooppunt CustomSubmitHelpx. Wanneer een adaptief formulier wordt verzonden, wordt dit JSP aangeroepen. U kunt de JSP-code naar wens in dit bestand schrijven. De volgende code stuurt het verzoek door naar de servlet.
 

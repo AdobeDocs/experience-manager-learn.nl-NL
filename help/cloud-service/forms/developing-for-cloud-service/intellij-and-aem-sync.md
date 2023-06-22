@@ -9,7 +9,7 @@ version: Cloud Service
 topic: Development
 kt: 8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 2%
@@ -68,7 +68,7 @@ Open het .gitignore-bestand en voeg het volgende toe onder aan het bestand en sl
 
 Selecteer elk project in uw em-bank-toepassingsproject, zoals ui.content en klik met de rechtermuisknop, en u ziet de optie Repo en onder de optie Repo ziet u de vier opdrachten die we eerder hebben toegevoegd.
 
-## AEM-auteurinstantie instellen
+## AEM-auteurinstantie instellen{#set-up-aem-author-instance}
 
 U kunt de volgende stappen volgen om snel een cloudinstantie op uw lokale systeem in te stellen.
 * [Download de nieuwste AEM SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
