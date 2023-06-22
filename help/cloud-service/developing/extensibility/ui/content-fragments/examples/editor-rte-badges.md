@@ -10,9 +10,9 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
+source-git-commit: c965d5ff3f49f4859779e657674dab8602fb831b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Badges toevoegen aan Rich Text Editor (RTE)
 
-![Voorbeeld van inhouds-fragmentbewerkerbadges](./assets/rte/rte-badge-home.png){align="center"}
+>[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
 [Rich Text Editor-badge](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/)  zijn extensies die tekst in de Rich Text Editor (RTE) niet-bewerkbaar maken. Dit betekent dat een als zodanig gedeclareerde badge alleen volledig kan worden verwijderd en niet gedeeltelijk kan worden bewerkt. Deze badges bieden ook ondersteuning voor speciale kleuren in de RTE, waarbij de auteur van de inhoud duidelijk wordt aangegeven dat de tekst een badge is en dus niet bewerkbaar. Bovendien geven ze visuele aanwijzingen over de betekenis van de badge-tekst.
 
