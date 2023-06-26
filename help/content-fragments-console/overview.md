@@ -8,13 +8,13 @@ role: User
 level: Beginner
 doc-type: Catalog
 last-substantial-update: 2023-05-12T00:00:00Z
-source-git-commit: cf37733d0fd22d560c8021eb25e6df273c1a16f7
+exl-id: 68caf431-8d81-4a72-a768-7b04082870d3
+source-git-commit: 73c7a13586edc5dbe16c16e017ee6f8ac91c1380
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 2%
+source-wordcount: '219'
+ht-degree: 1%
 
 ---
-
 
 # Video&#39;s van de Console van inhoudsfragmenten
 
@@ -30,7 +30,7 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
 <div class="columns is-multiline">
     <!-- Overview -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Overview" tabindex="0">
+      aria-label="Overview" tabindex="1">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -62,7 +62,7 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
     </div>
     <!-- Fast filtering -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Fast filtering" tabindex="0">
+      aria-label="Fast filtering" tabindex="2">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -93,7 +93,7 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
     </div>
     <!-- New Editor toggle -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="New editor toggle" tabindex="0">
+      aria-label="New editor toggle" tabindex="3">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -124,12 +124,11 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
     </div>
     <!-- Non-asset content references --->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Non-asset content references" tabindex="0">
+      aria-label="Non-asset content references" tabindex="4">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/non-asset-content-references.md" title="Non-asset
-              content references" tabindex="-1">
+            <a href="./editor/non-asset-content-references.md" title="Verwijzingen naar niet-elementaire inhoud" tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3419313?format=jpeg"
                 alt="Verwijzingen naar niet-elementaire inhoud">
@@ -141,8 +140,7 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/non-asset-content-references.md" title="Non-asset
-                content references">Verwijzingen naar niet-elementaire inhoud</a>
+              <a href="./editor/non-asset-content-references.md" title="Verwijzingen naar niet-elementaire inhoud">Verwijzingen naar niet-elementaire inhoud</a>
             </p>
             <p class="is-size-6">Neem de Fragmenten en de Pagina's van de Ervaring in uw Inhoudsfragmenten op.</p>
             <a href="./editor/non-asset-content-references.md"
@@ -157,7 +155,7 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
     </div>
     <!-- RTE variant compare -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="RTE variant compare" tabindex="0">
+      aria-label="RTE variant compare" tabindex="5">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -173,8 +171,7 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/rte-variant-compare.md" title="RTE variant
-                compare">RTE-variant vergelijken</a>
+              <a href="./editor/rte-variant-compare.md" title="RTE-variant vergelijken">RTE-variant vergelijken</a>
             </p>
             <p class="is-size-6">Lijn uw rijke tekstinhoud gemakkelijk over kanalen uit.</p>
             <a href="./editor/rte-variant-compare.md" class="spectrum-Button
@@ -189,7 +186,7 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
     </div>
     <!-- Language copies -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Language copies" tabindex="0">
+      aria-label="Language copies" tabindex="6">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
@@ -219,6 +216,36 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
         </div>
       </div>
     </div>
+     <!-- References -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="References" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./search/references.md" title="Verwijzingen"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3420950?format=jpeg"
+                alt="Verwijzingen">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./search/references.md" title="Verwijzingen">Verwijzingen</a>
+            </p>
+            <p class="is-size-6">Verwijzingen en relaties van inhoudsfragmenten begrijpen.</p>
+            <a href="./search/references.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-
