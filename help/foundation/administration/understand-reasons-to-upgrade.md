@@ -3,10 +3,11 @@ title: Redenen voor upgrade begrijpen
 description: Een uitsplitsing op hoog niveau van de belangrijkste functies voor klanten die een upgrade naar de nieuwste versie van Adobe Experience Manager 6 overwegen.
 version: 6.5
 topic: Upgrade
+feature: Release Information
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 1%
@@ -42,7 +43,7 @@ AEM blijft Fluid Ervaring omarmen met nieuwe en verbeterde gereedschappen die he
 
 + **Inhoudsfragmenten** Vergelijking/Diff en annotaties van ondersteunde versies.
 + **HTTP-API voor AEM** steunen blootstellen **Inhoudsfragmenten** rechtstreeks in de DAM als **JSON**.
-   **Ervaar fragmenten** ondersteuning **fullText zoeken** en **Ongeldige validatie cache van AEM Dispatcher** ter referentie **Pagina&#39;s**.
+  **Ervaar fragmenten** ondersteuning **fullText zoeken** en **Ongeldige validatie cache van AEM Dispatcher** ter referentie **Pagina&#39;s**.
 
 ### Beheer van bedrijfsmiddelen
 

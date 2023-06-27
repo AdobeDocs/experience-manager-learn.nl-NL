@@ -3,10 +3,11 @@ title: Variabelen in AEM workflow[Deel4]
 description: Variabelen van het type XML, JSON, ArrayList en Document gebruiken in een AEM workflow
 version: 6.5
 topic: Development
+feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -79,4 +80,4 @@ Voer de volgende stappen uit om deze workflow op uw systeem te testen
 * U zou een nieuwe taak moeten zien getiteld &quot;toewijzen aan uitgavenbeheerder&quot;
 * Het formulier openen dat is gekoppeld aan de taak
 * U zou twee douanerouten met de managernamen moeten zien
-   [Ontdek de ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Deze workflow gebruikt de variabele ArrayList, het JSON-type variabele, de regeleditor in of-gesplitst component
+  [Ontdek de ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Deze workflow gebruikt de variabele ArrayList, het JSON-type variabele, de regeleditor in of-gesplitst component

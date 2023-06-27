@@ -3,12 +3,13 @@ title: Het gebruiken van AEM Moderniseringshulpmiddelen om zich aan AEM as a Clo
 description: Leer hoe AEM Moderniseringshulpmiddelen worden gebruikt om een bestaand AEM project en inhoud te bevorderen om as a Cloud Service compatibel AEM te zijn.
 version: Cloud Service
 topic: Migration, Upgrade
+feature: Migration
 role: Developer
 level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%

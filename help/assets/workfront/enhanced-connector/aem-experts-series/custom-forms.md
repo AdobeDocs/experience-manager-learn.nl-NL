@@ -3,13 +3,14 @@ title: Aangepaste Workfront-formulieren en metagegevenstoewijzing met Workfront 
 description: Leer hoe u Workfront en AEM Assets configureert voor het beheren en synchroniseren van metagegevens van elementen met behulp van aangepaste Workfront-formulieren en AEM metagegevensschema's.
 version: Cloud Service
 topic: Content Management, Integrations
+feature: Asset Management
 role: Admin, Architect, Developer
 level: Beginner
 kt: 9718
 thumbnail: 340332.jpeg
 hidefromtoc: false
 exl-id: 40d76e0c-69f3-4003-9f34-f393e6fb8561
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 0%

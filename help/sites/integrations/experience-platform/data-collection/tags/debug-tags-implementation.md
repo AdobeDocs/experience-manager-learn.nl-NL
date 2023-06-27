@@ -9,10 +9,11 @@ activity: setup
 kt: 6047
 thumbnail: 38567.jpg
 topic: Integrations
+feature: Integrations
 role: Developer
 level: Intermediate
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: 1d2daf53cd28fcd35cb2ea5c50e29b447790917a
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -45,14 +46,14 @@ Als u foutopsporing op de client wilt inschakelen, roept u de `setDebug(true)` o
 
 Adobe biedt Adobe Experience Platform Debugger [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en [Firefox-invoegtoepassing](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) om fouten op te sporen, te begrijpen en inzicht te krijgen in de integratie.
 
-1. Open de extensie Adobe Experience Platform Debugger en open de sitepagina op de instantie Publish
+1. Open de extensie Adobe Experience Platform Debugger en open de sitepagina op de instantie Publiceren
 
-1. In de **Adobe Experience Platform Debugger > Summary > Adobe Experience Platform Tags** sectie, verifieer uw de bezitsdetails van de Markering zoals Naam, Versie, Bouwstijl Datum, Milieu, en Uitbreidingen.
+1. In de **Adobe Experience Platform Debugger > Samenvatting > Adobe Experience Platform-tags** sectie, verifieer uw de bezitsdetails van de Markering zoals Naam, Versie, Bouwstijl Datum, Milieu, en Uitbreidingen.
 
-   ![Adobe Experience Platform-foutopsporing en eigenschappengegevens voor tags](assets/tag-property-details.png)
+   ![Eigenschappengegevens Adobe Experience Platform Debugger en label](assets/tag-property-details.png)
 
 ## Aanvullende bronnen {#additional-resources}
 
-+ [Inleiding tot de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Inleiding tot het Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
 
 + [Verwijzing naar satellietobject](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)

@@ -3,10 +3,11 @@ title: Werken met InDesign-bestanden en Asset Templates in AEM Assets
 description: In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overwegingen gedefinieerd voor gebruik in de functie Asset Templates van AEM Assets.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -35,6 +36,7 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
 4. Voeg de afbeelding voor het FPO-logo toe ([meegeleverd in het postvak](assets/asset-templates-tutorial-video--supporting-files.zip)) aan het element Logo op de Master pagina.
 
    * **Klikken met rechtermuisknop** en selecteert u **Aanpassen > Opties voor aanpassen aan kader... > Inhoud passend maken > Kader proportioneel vullen**
+
    [Meer informatie over opties voor aanpassen aan kader](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames)en die het meest geschikt is voor uw gebruik.
 
 5. Kopieer de koptekst (Logo en bedrijfsnaam) van de Master sjabloon naar Pagina en Pagina via Op plaats plakken.

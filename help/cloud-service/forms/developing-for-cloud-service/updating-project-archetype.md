@@ -7,9 +7,10 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
+feature: AEM Project Archetype
 kt: 9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -27,7 +28,7 @@ De volgende stappen werden gevolgd om het gemaakte project te migreren gebruiken
 * Opdrachtprompt openen en naar c:\cloudmanager navigeren
 * Gemaakt project maken met het nieuwste archetype.
 * Kopieer en plak de inhoud van de [tekstbestand](assets/creating-maven-project.txt) in uw opdrachtpromptvenster. Afhankelijk van het [nieuwste versie](https://github.com/adobe/aem-project-archetype/releases). Archetype 33 bevat nieuwe AEM Forms-thema&#39;s.
-Aangezien we het nieuwe gefabriceerde project maken in de cloudmanager-map die al een aem-banking-applicatieproject heeft, moet u het **DartifactId** van een &#39;aem-banking&#39;-toepassing naar iets anders. Ik heb voor dit artikel gebruik gemaakt van aem-banking-application1.
+Aangezien we het nieuwe gefabriceerde project maken in de cloudmanager-map die al een aem-banking-applicatieproject bevat, moet u het **DartifactId** van een &#39;aem-banking&#39;-toepassing naar iets anders. Ik heb voor dit artikel gebruik gemaakt van aem-banking-application1.
 
 >[!NOTE]
 >
@@ -39,16 +40,15 @@ Zodra uw project met succes wordt gecreeerd, kunt u beginnen code/configuraties 
 
 * Kopieer de HandleFormSubmission servlet van ```C:\CloudManager\aem-banking-application\core\src\main\java\com\aem\bankingapplication\core\servlets```
 tot
-
-   ```C:\CloudManager\aem-banking-application1\core\src\main\java\com\aem\bankingapplication\core\servlets```
+  ```C:\CloudManager\aem-banking-application1\core\src\main\java\com\aem\bankingapplication\core\servlets```
 
 * Kopieer de CustomSubmit vanuit
-   ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` van een elektronisch-bancaire toepassing tot een aem-banking-application1-project
+  ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` van een elektronisch-bancaire toepassing tot een aem-banking-application1-project
 
 * het nieuwe project importeren in IntelliJ
 
 * Werk filter.xml in de module ui.apps van het aem-bank-application1 project bij om de volgende lijn te omvatten
-   ```<filter root="/apps/bankingapplication/SubmitToAEMServlet"/>```
+  ```<filter root="/apps/bankingapplication/SubmitToAEMServlet"/>```
 
 Nadat u alle code naar uw nieuwe project hebt gekopieerd, kunt u dit project naar de manager van de wolk duwen.
 
