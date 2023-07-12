@@ -12,9 +12,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
+source-git-commit: d2a9596ddadd897793a0fce8421aa8b246b45b12
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Als geen beleid bij allen wordt gevormd, [!DNL CORS] verzoeken zullen ook niet w
 #### [!UICONTROL Exposed Headers]
 
 * `"exposedheaders" <header>`
-* Lijst met koptekstparameters die responsheaders aangeven waartoe browsers toegang hebben.
+* Lijst met koptekstparameters die responsheaders aangeven waartoe browsers toegang hebben. Voor CORS-verzoeken (niet vóór de vlucht), als deze waarden niet leeg zijn, worden gekopieerd naar de `Access-Control-Expose-Headers` responsheader. De waarden in de lijst (koptekstnamen) worden vervolgens toegankelijk gemaakt voor de browser. zonder deze optie kunnen deze kopteksten niet door de browser worden gelezen .
 
 #### [!UICONTROL Maximum Age]
 
@@ -74,7 +74,7 @@ Als geen beleid bij allen wordt gevormd, [!DNL CORS] verzoeken zullen ook niet w
 #### [!UICONTROL Supported Headers]
 
 * `"supportedheaders" <header>`
-* Lijst van `header` parameters die aangeven welke HTTP-headers kunnen worden gebruikt bij het uitvoeren van de eigenlijke aanvraag.
+* Lijst van `header` parameters die aangeven welke HTTP-aanvraagheaders kunnen worden gebruikt bij het uitvoeren van de eigenlijke aanvraag.
 
 #### [!UICONTROL Allowed Methods]
 
@@ -98,8 +98,7 @@ Site 1 is een eenvoudig, anoniem toegankelijk, alleen-lezen scenario waarbij inh
   ],
   "supportedmethods":[
     "GET",
-    "HEAD",
-    "OPTIONS"
+    "HEAD"
   ],
   "alloworigin":[
     "http://127.0.0.1:3000",
@@ -140,7 +139,6 @@ Site 2 is complexer en vereist geautoriseerde en mutatieverzoeken (POST, PUT, DE
     "HEAD"
     "POST",
     "DELETE",
-    "OPTIONS",
     "PUT"
   ],
   "alloworigin":[
