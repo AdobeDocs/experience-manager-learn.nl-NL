@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 46728ac6ad37590413e247d23262233626b0575b
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -94,26 +94,48 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Dispatcher-configuratie {#dispatcher-configuration}
 
-Als u het in cache plaatsen en serveren van CORS-kopteksten wilt toestaan voor inhoud in cache, voegt u het volgende toe [/clientheader-configuratie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) naar alle ondersteunde publicaties van AEM `dispatcher.any` bestanden.
+### CORS-aanvraagheaders toestaan
+
+Om de vereiste [HTTP-aanvraagheaders om door te gaan naar AEM voor verwerking](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), moeten ze in de Disaptcher zijn toegestaan `/clientheaders` configuratie.
 
 ```
-/myfarm { 
-  ...
-  /clientheaders {
-      "Access-Control-Allow-Origin"
-      "Access-Control-Expose-Headers"
-      "Access-Control-Max-Age"
-      "Access-Control-Allow-Credentials"
-      "Access-Control-Allow-Methods"
-      "Access-Control-Allow-Headers"
-  }
-  ...
+/clientheaders {
+   ...
+   "Origin"
+   "Access-Control-Request-Method"
+   "Access-Control-Request-Headers"
+}
+```
+
+### CORS-responsheaders in cache plaatsen
+
+Als u het in cache plaatsen en serveren van CORS-kopteksten wilt toestaan voor inhoud in cache, voegt u het volgende toe [/cache /headers-configuratie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) naar de AEM-publicatie `dispatcher.any` bestand.
+
+```
+/publishfarm {
+    ...
+    /cache {
+        ...
+        # CORS HTTP response headers
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#the_http_response_headers
+        /headers {
+            ...
+            "Access-Control-Allow-Origin"
+            "Access-Control-Expose-Headers"
+            "Access-Control-Max-Age"
+            "Access-Control-Allow-Credentials"
+            "Access-Control-Allow-Methods"
+            "Access-Control-Allow-Headers"
+        }
+    ...
+    }
+...
 }
 ```
 
 **De webservertoepassing opnieuw starten** na het aanbrengen van wijzigingen in de `dispatcher.any` bestand.
 
-Waarschijnlijk wordt de cache volledig gewist om ervoor te zorgen dat de koppen op de juiste wijze in de cache worden geplaatst na een `/clientheaders` configuratie bijwerken.
+Waarschijnlijk wordt de cache volledig gewist om ervoor te zorgen dat de koppen op de juiste wijze in de cache worden geplaatst na een `/cache /headers` configuratie bijwerken.
 
 ## Ondersteunende materialen {#supporting-materials}
 
