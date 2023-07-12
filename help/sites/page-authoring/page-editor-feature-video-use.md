@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: d0027647ce3157173d2592728757150199db930d
+source-git-commit: 1623e1eaf966e625e1ec402a2996e8beb1e1cd03
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 1%
@@ -35,6 +35,6 @@ Zie de [Documentatie AEM voor een volledig overzicht van de mogelijkheden van de
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [AEM documentatie van de pagina-editor[(https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)]
+* [Documentatie AEM Pagina-editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)
 * [Documentatie over pagina-inhoud bewerken](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Gebruikershandleiding voor het ontwerpen van sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
