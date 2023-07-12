@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 96d576ae24305c1f41073921fbb904e07c1206f6
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ De servicekredieten, een volledig samengesteld JSON-object, zijn niet hetzelfde 
 1. De externe toepassing gebruikt informatie van de Referenties van de Dienst om een Token te construeren JWT
 1. De JWT Token wordt naar Adobe IMS verzonden voor uitwisseling voor een toegangstoken
 1. Adobe IMS retourneert een toegangstoken dat kan worden gebruikt voor toegang tot AEM as a Cloud Service
-   + Voor toegangstokens kan een vervaldatum worden aangevraagd. Het is best om het leven van het toegangstoken kort te houden, en te verfrissen wanneer nodig.
+   + Toegangstokens kunnen een vervaltijd niet veranderen.
 1. De externe toepassing maakt HTTP-aanvragen om as a Cloud Service te AEM, waarbij het toegangstoken als een token voor Drager wordt toegevoegd aan de header voor HTTP-aanvragen.
 1. AEM as a Cloud Service ontvangt het HTTP- verzoek, verklaart het verzoek voor authentiek, en voert het werk uit dat door het HTTP- verzoek wordt gevraagd en keert een reactie van HTTP terug naar de Externe Toepassing
 
