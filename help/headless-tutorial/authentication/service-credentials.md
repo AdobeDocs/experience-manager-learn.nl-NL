@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 96d576ae24305c1f41073921fbb904e07c1206f6
+source-git-commit: f8ed9fddb5f244860ba229b46a80638a7269d95e
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1925'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ In tegenstelling tot Local Development Access Tokens moeten servicerecertificate
 De technische Rekeningen worden gecreeerd eens, nochtans het gebruik van Privé Sleutels om de Verantwoordelijkheden van de Dienst verbonden aan de Technische Rekening te beheren kan in tijd worden beheerd. Bijvoorbeeld, moeten de nieuwe Persoonlijke Sleutel/de Credentials van de Dienst vóór het verstrijken van de huidige Privé Sleutel worden geproduceerd, om voor ononderbroken toegang door een gebruiker van de Credentials van de Dienst toe te staan.
 
 1. Controleer of u bent aangemeld als een:
-   + __Beheerder van Adobe IMS Org__
+   + __Systeembeheerder van Adobe IMS Org__
    + Lid van de __AEM__ IMS-productprofiel op __AEM-auteur__
 1. Aanmelden bij [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM as a Cloud Service omgeving bevat om de instelling van de servicekredieten voor
