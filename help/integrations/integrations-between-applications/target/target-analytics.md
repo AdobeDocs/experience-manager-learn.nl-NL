@@ -1,0 +1,22 @@
+---
+title: Doel integreren met analyse
+description: Leer hoe u Adobe Target kunt integreren met Adobe Analytics.
+solution: Analytics, Target
+feature: Integrations
+topic: Integrations
+role: Leader, Architect, Admin, Developer
+level: Beginner
+kt: null
+thumbnail: null
+last-substantial-update: 2023-04-11T00:00:00Z
+source-git-commit: ed53392381fa568de8230288e6b85c87540222cf
+workflow-type: tm+mt
+source-wordcount: '17'
+ht-degree: 0%
+
+---
+
+
+# Doel integreren met analyse
+
+{{$include /help/_includes/integrations-between-applications/analytics-target.md}}
