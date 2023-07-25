@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 695cccfdd03618505b2d3419b1ad82d8dbd0a122
+source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1015'
 ht-degree: 11%
 
 ---
@@ -248,6 +248,15 @@ ht-degree: 11%
       + [Formuliergegevens opslaan in Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
       + [Vooraf ingevuld formulier](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Query-verzendingen](./forms/forms-cs-azure-portal/query-submitted-data.md)
+   + Formuliervulling opslaan en hervatten{#prefill-azure-storage}
+      + [1- Inleiding](./forms/prefill-azure-storage/introduction.md)
+      + [2- Het onderdeel Pagina maken](./forms/prefill-azure-storage/page-component.md)
+      + [3- Een adaptieve formuliersjabloon maken](./forms/prefill-azure-storage/associate-page-component.md)
+      + [4- Azure Storage-integratie maken](./forms/prefill-azure-storage/create-fdm.md)
+      + [5 - SendGrid-integratie maken](./forms/prefill-azure-storage/send-grid-fdm.md)
+      + [6 - Het adaptieve formulier maken](./forms/prefill-azure-storage/create-af.md)
+      + [7 - De voorbeeldelementen implementeren](./forms/prefill-azure-storage/deploy-sample-assets.md)
+
    + Revisiewerkstroom maken{#create-aem-workflow}
       + [Workflowopslag extern maken](./forms/create-aem-workflow/externalize-workflow.md)
       + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
