@@ -7,10 +7,12 @@ topic: Integrations
 role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-04T00:00:00Z
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -66,6 +68,7 @@ De reeks van het rapport met gegevensinzameling in real time wordt gecreeerd voo
 >[!VIDEO](https://video.tv.adobe.com/v/25945?quality=12&learn=on)
 
 >[!NOTE]
+>
 Voor de Adobe Analytics Report Suite moet het verzamelen van gegevens in real-time en het AEM van bedrijfsmiddelen zijn ingeschakeld. Het toelaten AEM de variabelen van de reserveanalyse van Activa het Rapporteren van Activa voor het volgen van activainzichten.
 
 Voor de configuratie van AEM Assets Insights hebt u de volgende referenties nodig
@@ -83,6 +86,7 @@ Adobe Analytics-extensie toevoegen, regels voor het laden van pagina&#39;s maken
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
 >[!NOTE]
+>
 Zorg ervoor dat u al uw wijzigingen van de auteur naar de publicatie-instantie dupliceert.
 
 ### Artikel 1: Paginanummering (pagetracker.js) {#rule-page-tracker-pagetracker-js}
@@ -105,7 +109,7 @@ Paginacontracker implementeert twee callbacks (geregistreerd in asset-embed-code
 Tot slot implementeert Pagetracker een initialisatiefunctie als.
 
 * **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : aangeroepen om de component Pagetracker te initialiseren. Dit DIENT te worden aangeroepen voordat een van de gebeurtenissen asset-inzichten-events (Impressions and/or Clicks) op de webpagina wordt gegenereerd.
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : Accepteert optioneel een object AppMeasurement — indien opgegeven, wordt niet geprobeerd een nieuwe instantie van een object AppMeasurement te maken.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : Accepteert optioneel een object AppMeasurement — indien opgegeven, wordt niet geprobeerd een nieuwe instantie van object AppMeasurement te maken.
 
 ### Regel 2: Afbeeldingsbeheer — Actie 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 

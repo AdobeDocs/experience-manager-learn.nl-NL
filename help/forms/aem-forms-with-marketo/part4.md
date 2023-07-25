@@ -3,13 +3,15 @@ title: AEM Forms met Marketo (Deel 4)
 description: Zelfstudie voor de integratie van AEM Forms met Marketo met behulp van het AEM Forms-formuliergegevensmodel.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
-topic: Development
+topic: Integrations, Development
 role: Developer
 level: Experienced
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -38,3 +40,7 @@ Als u de bundels gebruikt die bij dit artikel worden geleverd, kunt u [foutopspo
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`
+
+## Gefeliciteerd
+
+U hebt AEM Forms met Marketo geïntegreerd via het AEM Forms-formuliergegevensmodel.

@@ -9,10 +9,11 @@ level: Intermediate
 kt: 6409
 thumbnail: KT-6296.jpg
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
+badgeIntegration: label="Integratie" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2162'
 ht-degree: 0%
 
 ---
@@ -152,12 +153,10 @@ Daarna, bouw een lijst om een visuele vertegenwoordiging tot stand te brengen va
 1. Laten we de pagina onderverdelen op basis van het sjabloontype. Selecteer de metrische waarde van de paginasjabloon uit componenten en sleep de metrische waarde van het paginasjabloon naar de dimensie Paginanaam. U kunt de paginanaam nu bekijken, uitgesplitst naar het sjabloontype.
 
    * **Voor**
-
-      ![eVar5](assets/create-analytics-workspace/evar5.png)
+     ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Na**
-
-      ![eVar5](assets/create-analytics-workspace/evar5-metrics.png)
+     ![eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Om te begrijpen hoe de gebruikers met Knopen CTA in wisselwerking staan wanneer zij op de pagina&#39;s van de Plaats WKND zijn, is de verdere verdeling door de metrisch van Knoop identiteitskaart (eVar8) toe te voegen nodig.
 
@@ -244,11 +243,9 @@ Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (e
 1. Zoek in de zoekfunctie van de component naar **WKND CTA-knoppen** en sleep de **WKND CTA-knoppen (knop-id)** afmetingen op metrische identiteitskaart van de Knoop en vervang het.
 
    * **Voor**
-
-      ![Knop Werkruimte voor](assets/create-analytics-workspace/wknd-button-before.png)
+     ![Knop Werkruimte voor](assets/create-analytics-workspace/wknd-button-before.png)
    * **Na**
-
-      ![De knop Werkruimte na](assets/create-analytics-workspace/wknd-button-after.png)
+     ![De knop Werkruimte na](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. U kunt zien dat metrisch van Knoop ID die knoopidentiteitskaart van een Vraag aan de knoop van de Actie (CTA) bevatte nu met een overeenkomstige naam wordt vervangen die in het Malplaatje van de Indeling wordt verstrekt.
 1. Laten we de tabel Analytics Workspace vergelijken met de WKND Home-pagina en de CTA Button-kliktelling en de bijbehorende analyse begrijpen. Gebaseerd op de gegevens van de werkruimtetabel van de werkruimtetabel, is het duidelijk dat 22 keer de gebruikers hebben geklikt **SKI NOW** en vier keer voor de WKND Home Page Camping in Western Australia **Meer informatie** knop.

@@ -1,28 +1,30 @@
 ---
-title: Overzicht van AEM en Adobe Target
-description: Leer hoe u persoonlijke ervaringen kunt maken en leveren met Adobe Experience Manager as a Cloud Service en Adobe Target.
+title: AEM Sites en Adobe Target integreren
+description: Leer hoe u AEM Sites en Adobe Target kunt integreren om persoonlijke ervaringen te bieden.
 feature: Experience Fragments, Core Components, Adobe Client Data Layer
-topics: integrations, personalization, administration, development
 audience: all
 doc-type: feature video
-activity: use
 version: Cloud Service
 kt: 6043
 thumbnail: 41241.jpg
-topic: Integrations
+topic: Integrations, Personalization
 role: User
 level: Beginner
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
-# AEM en Adobe Target
+# AEM Sites en Adobe Target integreren
 
-Adobe Experience Manager (AEM) en Adobe Target zijn krachtige oplossingen met complementaire mogelijkheden die verkeerd kunnen worden geïnterpreteerd als concurrerende oplossingen. Klanten hebben soms moeite om te begrijpen hoe en wanneer ze deze producten samen moeten gebruiken om persoonlijke ervaring te bieden. Om optimale ervaring voor elke eindgebruiker te bieden, zouden de verschillende teams binnen uw organisatie nauw moeten samenwerken en bepalen wie wat doet.
+Leer hoe u AEM Sites en Adobe Target kunt integreren om persoonlijke ervaringen te bieden.
+
+Adobe Experience Manager (AEM) en Adobe Target zijn krachtige oplossingen met complementaire mogelijkheden en bieden naadloze integratie om persoonlijke ervaringen te bieden. Klanten kunnen echter problemen ondervinden om te begrijpen hoe en wanneer ze deze producten samen effectief kunnen gebruiken. Om de ervaring voor elke eindgebruiker te optimaliseren, is het essentieel voor verschillende teams binnen uw organisatie om nauw samen te werken en duidelijke rollen en verantwoordelijkheden te bepalen. Door gebruik te maken van de integratie tussen AEM en Adobe Target, kunnen uw teams harmonieus werken om uitzonderlijke persoonlijke ervaringen te bieden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41241?quality=12&learn=on)
 

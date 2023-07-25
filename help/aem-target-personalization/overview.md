@@ -5,15 +5,17 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 1%
+source-wordcount: '842'
+ht-degree: 0%
 
 ---
 
-# Aan de slag met AEM en Adobe Target {#getting-started-with-aem-target}
+# AEM Sites en Adobe Target integreren {#getting-started-with-aem-target}
 
 AEM en Target zijn beide krachtige oplossingen met schijnbaar overlappende mogelijkheden. Klanten hebben soms moeite om te begrijpen hoe en wanneer ze deze producten samen moeten gebruiken om persoonlijke ervaring te bieden. Om optimale ervaring voor elke eindgebruiker te bieden, zouden de verschillende teams binnen uw organisatie nauw moeten samenwerken en bepalen wie wat doet.
 
@@ -38,7 +40,7 @@ We hebben nu persoonlijke inhoud in de vorm van voorstellen van AEM in Target. M
 * Het doel &#x200B; gebruikt AEM de prijsverhoging van het Fragment van de Ervaring als Aanbiedingen in Activiteiten
 * Doel levert Experience Fragment HTML, AEM levert afbeeldingen waarnaar wordt verwezen
 
-   ![Personalisatie met behulp van het diagram Fragmenten voor ervaring](assets/personalization-use-case-1/use-case-1-diagram.png)
+  ![Personalisatie met behulp van het diagram Fragmenten voor ervaring](assets/personalization-use-case-1/use-case-1-diagram.png)
 
 **Om dit scenario uit te voeren, moet u:**
 
@@ -59,7 +61,7 @@ VEC is een van de belangrijkste kenmerken van Adobe Target. Met VEC kunnen marke
 * Nieuwe inhoud maken met Adobe Target VEC
 * Is van toepassing op zowel AEM gehoste sites als niet-AEM gehoste sites
 
-   ![Personalisatie met het diagram Visual Experience Composer](assets/personalization-use-case-3/use-case-diagram-3.png)
+  ![Personalisatie met het diagram Visual Experience Composer](assets/personalization-use-case-3/use-case-diagram-3.png)
 
 **Om dit scenario uit te voeren, moet u:**
 
@@ -77,7 +79,7 @@ Door Adobe Experience Manager te integreren met Adobe Target kunt u uw sitegebru
 * Er wordt hier geen nieuwe inhoud gemaakt
 * Van toepassing op zowel AEM- als niet-AEM sites
 
-   ![diagram](assets/personalization-use-case-2/use-case-2-diagram.png)
+  ![diagram](assets/personalization-use-case-2/use-case-2-diagram.png)
 
 **Om dit scenario uit te voeren, moet u:**
 

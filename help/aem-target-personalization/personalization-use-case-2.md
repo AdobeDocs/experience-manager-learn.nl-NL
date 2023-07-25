@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -57,7 +59,6 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 1. Marketer maakt een A/B-doelactiviteit met de omleidingsaanbieding als een Experience en 100% websiteverkeer toegewezen aan de nieuwe homepage met het succesdoel en de metriek toegevoegd.
    1. Navigeer vanuit uw Adobe Target-venster naar **Activiteiten** tab.
    2. Klikken **Activiteit maken** en selecteer het type activiteit als **A/B-test**
-
       ![Adobe Target - Activiteiten maken](assets/personalization-use-case-2/create-ab-activity.png)
    3. Selecteer **Web** kanaal en kies **Visual Experience Composer**.
    4. Voer de **URL van activiteit** en klik op **Volgende** om Visual Experience Composer te openen.

@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -48,7 +50,6 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 1. De Marketer maakt een A/B-doelactiviteit in Adobe Target.
    1. Navigeer vanuit uw Adobe Target-venster naar **Activiteiten** tab.
    2. Klikken **Activiteit maken** en selecteer het type activiteit als **A/B-test**
-
       ![Adobe Target - Activiteiten maken](assets/personalization-use-case-2/create-ab-activity.png)
    3. Selecteer **Web** kanaal en kies **Visual Experience Composer**.
    4. Voer de **URL van activiteit** en klik op **Volgende** om Visual Experience Composer te openen.
@@ -63,7 +64,6 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
       ![Containerselectie](assets/personalization-use-case-3/container-selection.png)
    9. Klik op de container die u opnieuw wilt rangschikken en sleep deze naar de gewenste locatie. Laten we de *Beste roasters* container van eerste rij 1e kolom tot eerste rij 3e kolom. Nu de *Beste roasters* container staat naast *Fotografie-tentoonstellingen* container.
       ![Container omwisselen](assets/personalization-use-case-3/container-swap.png)
-
       **Na omwisselen**
       ![Container omgewisseld](assets/personalization-use-case-3/after-swap-1-3.png)
    10. Op dezelfde manier wijzigt u de rangschikking van posities voor de andere kaartcontainers.

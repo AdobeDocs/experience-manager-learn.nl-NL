@@ -7,10 +7,12 @@ kt: 6035
 topic: Development
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 20093733-2d19-4405-b453-1a8c2722adeb
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
@@ -21,3 +23,7 @@ Maak een AEM workflow met de component Sign document. Gebruik automatisch gegene
 In de video worden de verschillende stappen uitgelegd die nodig zijn om een effectieve workflow te maken voor het verzenden van documenten ter ondertekening.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38182?quality=12&learn=on)
+
+## Volgende stappen
+
+[Adaptief formulier maken en configureren](./create-and-configure-adaptive-form.md)

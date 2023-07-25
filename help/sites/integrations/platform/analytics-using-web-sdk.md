@@ -1,6 +1,6 @@
 ---
-title: Adobe Analytics integreren met Platform Web SDK
-description: Leer de moderne benadering van hoe te om Adobe Experience Manager (AEM) en Adobe Analytics te integreren gebruikend het Web SDK van het Platform. Deze zelfstudie begeleidt u door het verzamelen van paginaweergave en het klikken van CTA gegevens om gegevensinzicht in de Werkruimte van Adobe Analytics te krijgen.
+title: AEM Sites en Adobe Analytics integreren met Platform Web SDK
+description: Integreer AEM Sites en Adobe Analytics met de moderne Web SDK-benadering van het Platform.
 version: Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
@@ -10,15 +10,17 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 542313c0da6f5eab5befe0da1b80ab38948156ac
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+exl-id: 9f54995f-4ce7-45f2-9021-6fdfe42ff89a
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
 
-
-# Adobe Analytics integreren met Platform Web SDK
+# AEM Sites en Adobe Analytics integreren met Platform Web SDK
 
 Meer informatie over **moderne benadering** op hoe te om Adobe Experience Manager (AEM) en Adobe Analytics te integreren gebruikend het Web SDK van het Platform. Deze uitgebreide zelfstudie begeleidt u door het proces van naadloos verzamelen [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) paginaweergave en CTA-klikgegevens. Vergroot waardevolle inzichten door de verzamelde gegevens te visualiseren in Adobe Analysis Workspace, waar u verschillende metriek en dimensies kunt verkennen. Onderzoek ook de Dataset van het Platform om de gegevens te verifiëren en te analyseren. Doe mee aan deze reis om de kracht van AEM en Adobe Analytics te benutten voor gegevensgestuurde besluitvorming.
 
@@ -222,7 +224,7 @@ Voor extra informatie bij het integreren van AEM Componenten van de Kern met de 
 
 ## De bijgewerkte eigenschap Tag op WKND verifiëren
 
-Om ervoor te zorgen dat de bijgewerkte markeringseigenschap op de WKND-sitepagina&#39;s wordt gebouwd, gepubliceerd en correct werkt. De Google Chrome-webbrowser gebruiken [Adobe Experience Platform Debugger-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
+Om ervoor te zorgen dat de bijgewerkte markeringseigenschap op de WKND-sitepagina&#39;s wordt gebouwd, gepubliceerd en correct werkt. De Google Chrome-webbrowser gebruiken [Adobe Experience Platform Debugger extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
 
 + Om ervoor te zorgen dat het markeringsbezit de recentste versie is, controleer de bouwstijldatum.
 

@@ -1,6 +1,6 @@
 ---
-title: Hoofdloze AEM en doelpersonalisatie
-description: Deze zelfstudie verkent hoe AEM Content Fragments naar Adobe Target worden geëxporteerd en vervolgens worden gebruikt om ervaringen zonder kop aan te passen met de SDK van het Web Adobe.
+title: AEM zonder kop en doel integreren
+description: Leer hoe u AEM Headless en Adobe Target integreert om ervaringen zonder kop aan te passen met de SDK van het Web Experience Platform.
 version: Cloud Service
 feature: Content Fragments, Integrations
 topic: Personalization, Headless
@@ -10,30 +10,32 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
 exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
-source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1679'
 ht-degree: 0%
 
 ---
 
-# Ervaringen zonder kop aanpassen AEM inhoudfragmenten
+# AEM zonder kop en doel integreren
 
-Deze zelfstudie verkent hoe AEM Content Fragments naar Adobe Target worden geëxporteerd en vervolgens worden gebruikt om ervaringen zonder kop aan te passen met de SDK van het Web Adobe. De [WKND-app Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) wordt gebruikt om te onderzoeken hoe een gepersonaliseerde activiteit van het Doel gebruikend de Aanbiedingen van de Fragmenten van de Inhoud aan de ervaring kan worden toegevoegd, om een avontuur te bevorderen WKND.
+Leer hoe u AEM Headless met Adobe Target kunt integreren, door AEM Content Fragments naar Adobe Target te exporteren en ze te gebruiken voor het personaliseren van ervaringen zonder kop met behulp van alloy.js van Adobe Experience Platform Web SDK. De [WKND-app Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) wordt gebruikt om te onderzoeken hoe een gepersonaliseerde activiteit van het Doel gebruikend de Aanbiedingen van de Fragmenten van de Inhoud aan de ervaring kan worden toegevoegd, om een avontuur te bevorderen WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
 In de zelfstudie worden de stappen beschreven die nodig zijn voor het opzetten van AEM en Adobe Target:
 
 1. [Adobe IMS-configuratie voor Adobe Target maken](#adobe-ims-configuration) in AEM-auteur
-1. [Adobe Target-Cloud Service maken](#adobe-target-cloud-service) in AEM-auteur
-1. [Adobe Target-Cloud Service toepassen op AEM Assets-mappen](#configure-asset-folders) in AEM-auteur
-1. [Machtiging voor de Adobe Target-Cloud Service](#permission) in Adobe Admin Console
-1. [Inhoudsfragmenten exporteren](#export-content-fragments) van AEM-auteur naar doel
-1. [Een activiteit maken met Content Fragment-aanbiedingen](#activity) in Adobe Target
-1. [Een Experience Platform DataStream maken](#datastream-id) in Experience Platform
-1. [Integreer personalisatie in een React-gebaseerde AEM Headless-app](#code) het gebruiken van de SDK van het Web van Adobe.
+2. [Adobe Target-Cloud Service maken](#adobe-target-cloud-service) in AEM-auteur
+3. [Adobe Target-Cloud Service toepassen op AEM Assets-mappen](#configure-asset-folders) in AEM-auteur
+4. [Machtiging voor de Adobe Target-Cloud Service](#permission) in Adobe Admin Console
+5. [Inhoudsfragmenten exporteren](#export-content-fragments) van AEM-auteur naar doel
+6. [Een activiteit maken met Content Fragment-aanbiedingen](#activity) in Adobe Target
+7. [Een Experience Platform DataStream maken](#datastream-id) in Experience Platform
+8. [Integreer personalisatie in een React-gebaseerde AEM Headless-app](#code) het gebruiken van de SDK van het Web van Adobe.
 
 ## Adobe IMS-configuratie{#adobe-ims-configuration}
 

@@ -7,12 +7,14 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
-topic: Development
+topic: Integrations, Development
 kt: 12557
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
@@ -55,3 +57,7 @@ Communiceer met uw formulier terwijl u het consolevenster open houdt. Je moet zo
 Voeg de [AEP-extensie voor foutopsporing](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) aan uw browser (u moet zich aanmelden) om meer het zuiveren informatie te krijgen
 
 ![platform-debugger](assets/platform-debugger.png)
+
+## Gefeliciteerd
+
+U hebt AEM Forms as a Cloud Service met Adobe Analytics geïntegreerd om formuliergegevensvelden te rapporteren.

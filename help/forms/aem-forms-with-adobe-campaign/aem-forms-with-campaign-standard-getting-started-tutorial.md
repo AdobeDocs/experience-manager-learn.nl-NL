@@ -1,25 +1,27 @@
 ---
-title: Aan de slag met AEM Forms en Adobe Campaign Standard
+title: AEM Forms en Adobe Campaign Standard integreren
 description: Integreer AEM Forms met Adobe Campaign Standard door gebruik te maken van het AEM Forms Form Data Model voor het ophalen van informatie over het ACS-campagneprofiel enzovoort.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
-topic: Development
+topic: Integrations, Development
 role: Developer
 level: Experienced
 exl-id: e028837b-13d8-4058-ac25-ed095f49524c
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met AEM Forms en Adobe Campaign Standard {#getting-started-with-aem-forms-and-adobe-campaign-standard}
+# AEM Forms en Adobe Campaign Standard integreren
 
 ![formsandcampagne](assets/helpx-cards-forms.png)
 
-Deze zelfstudie bevat een overzicht van de verschillende gebruiksscenario&#39;s voor de integratie van AEM Forms met Adobe Campaign Standard (ACS).
+Leer hoe u AEM Forms kunt integreren met Adobe Campaign Standard (ACS).
 
 ACS heeft een rijke reeks blootgestelde API&#39;s die ACS om met de technologie van onze keus toelaat worden verbonden. In deze zelfstudie zullen we ons concentreren op het koppelen van AEM Forms met ACS.
 

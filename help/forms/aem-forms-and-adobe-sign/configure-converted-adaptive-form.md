@@ -7,10 +7,12 @@ kt: 6126
 topic: Development
 role: User
 level: Beginner
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: fba18118-0431-4edd-a5a6-0281e8c12979
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---
@@ -22,3 +24,8 @@ Nadat u het PDF-formulier hebt geconverteerd naar een adaptief formulier, moet u
 In de volgende video worden de stappen uitgelegd die nodig zijn om het formulier te configureren voor het uitvoeren van een ondertekeningservaring
 
 >[!VIDEO](https://video.tv.adobe.com/v/39574?quality=12&learn=on)
+
+## Gefeliciteerd
+
+U hebt het geconverteerde adaptieve formulier geconfigureerd om Acrobat Sign-integratie te gebruiken voor ondertekeningservaring.
+

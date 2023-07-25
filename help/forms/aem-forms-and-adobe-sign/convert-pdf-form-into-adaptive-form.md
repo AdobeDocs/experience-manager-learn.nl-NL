@@ -7,10 +7,12 @@ kt: 6115
 topic: Development
 role: User
 level: Beginner
+badgeIntegration: label="Integratie" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 9aab3eb0-03a5-4962-a2ff-d44a17dc140e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -22,3 +24,7 @@ AEM Forms Automatede form conversion Service, aangedreven door Adobe Sensei, zet
 In de volgende video worden de stappen uitgelegd die nodig zijn om een PDF-formulier met Automatede form conversion Service om te zetten in een adaptief formulier
 
 >[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)
+
+## Volgende stappen
+
+[Geconverteerd adaptief formulier configureren](./configure-converted-adaptive-form.md)
