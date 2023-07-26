@@ -11,14 +11,16 @@ thumbnail: KT-13465.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: be4c0a6a-5c1f-4408-9ac6-56b8f0653d42
-source-git-commit: 9c8c03df7c510ab697d5222f9dffd5111519b712
+source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # Widgets toevoegen aan Rich Text Editor (RTE)
+
+Leer hoe u widgets kunt toevoegen aan de Rich Text Editor (RTE) in de AEM Content Fragment Editor.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
@@ -26,7 +28,7 @@ Om de dynamische inhoud in de Rich Text Editor (RTE) toe te voegen, **widgets** 
 
 De widgets worden doorgaans gebruikt om de dynamische inhoud in te voegen die afhankelijk is van een extern systeem of die kan veranderen op basis van de huidige context.
 
-De **widgets** worden toegevoegd aan de **RTE** in de Inhoudsfragmenteditor met de opdracht `rte` extensiepunt. Gebruiken `rte` extensiepunt `getWidgets()` methode één of vele widgets worden toegevoegd. Ze worden geactiveerd door op de knop `{` Gebruik een speciale toets om de optie contextmenu te openen en selecteer vervolgens de gewenste widget om de aangepaste interface van het dialoogvenster te laden.
+De **widgets** worden toegevoegd aan **RTE** in de Inhoudsfragmenteditor met behulp van de `rte` extensiepunt. Gebruiken `rte` extensiepunt `getWidgets()` methode één of vele widgets worden toegevoegd. Ze worden geactiveerd door op de knop `{` Gebruik een speciale toets om de optie contextmenu te openen en selecteer vervolgens de gewenste widget om de aangepaste interface van het dialoogvenster te laden.
 
 In dit voorbeeld wordt getoond hoe u een widget met de naam _Lijst met kortingscodes_ om, de adventure-specific de disconteringscode van WKND binnen een inhoud van RTE te vinden te selecteren en toe te voegen. Deze kortingscodes kunnen worden beheerd in een extern systeem, zoals Order Management System (OMS), Product Information Management (PIM), een toepassing die op het thuisniveau wordt ontwikkeld of een Adobe AppBuilder-actie.
 
@@ -34,7 +36,7 @@ In dit voorbeeld wordt het volgende gebruikt om de [Adobe React Spectrum](https:
 
 ## Extensiepunt
 
-In dit voorbeeld wordt het uitbreidingspunt uitgebreid `rte` om een widget aan RTE in de Redacteur van het Fragment van de Inhoud toe te voegen.
+In dit voorbeeld wordt het uitbreidingspunt uitgebreid `rte` om een widget toe te voegen aan RTE in de Inhoudsfragmenteditor.
 
 | AEM UI uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
@@ -42,7 +44,7 @@ In dit voorbeeld wordt het uitbreidingspunt uitgebreid `rte` om een widget aan R
 
 ## Voorbeeldextensie
 
-In het volgende voorbeeld wordt een _Lijst met kortingscodes_ widget. Door op de knop `{` speciale sleutel binnen RTE, wordt het contextmenu geopend, dan door te selecteren _Lijst met kortingscodes_ in het contextmenu wordt de dialoogvenster-interface geopend.
+In het volgende voorbeeld wordt een _Lijst met kortingscodes_ widget. Door op de knop `{` speciale sleutel binnen RTE, wordt het contextmenu geopend, dan door _Lijst met kortingscodes_ in het contextmenu wordt de dialoogvenster-interface geopend.
 
 De auteurs van de inhoud WKND kunnen, huidige Adventure-specifieke kortingscode vinden selecteren en toevoegen, als beschikbaar.
 
@@ -109,7 +111,7 @@ In de hoofdcomponent React `App.js`, voegt u de `discountCodes` route om UI voor
 ...
 ```
 
-### Maken `DiscountCodes` Reageren, component{#create-widget-react-component}
+### Maken `DiscountCodes` Reageercomponent{#create-widget-react-component}
 
 De widget- of dialoogvenster-UI wordt gemaakt met de [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) kader. De `DiscountCodes` de componentencode is zoals hieronder, hier zijn zeer belangrijke hoogtepunten:
 

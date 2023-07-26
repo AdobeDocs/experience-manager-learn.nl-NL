@@ -10,15 +10,17 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: c965d5ff3f49f4859779e657674dab8602fb831b
+source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 
 # Badges toevoegen aan Rich Text Editor (RTE)
+
+Leer hoe u badges aan de Rich Text Editor (RTE) toevoegt in de AEM Content Fragment Editor.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
@@ -28,7 +30,7 @@ Het meest gebruikelijke gebruiksgeval voor RTE-badges is het gebruik ervan in co
 
 Gewoonlijk worden de badges in combinatie met de widgets gebruikt om de dynamische inhoud toe te voegen die een externe systeemafhankelijkheid heeft, maar _inhoudsauteurs kunnen geen wijzigingen aanbrengen_ de ingevoegde dynamische inhoud om de integriteit te behouden. Ze kunnen alleen als een geheel item worden verwijderd.
 
-De **badges** worden toegevoegd aan de **RTE** in de Inhoudsfragmenteditor met de opdracht `rte` extensiepunt. Gebruiken `rte` extensiepunt `getBadges()` methode één of vele badges worden toegevoegd.
+De **badges** worden toegevoegd aan **RTE** in de Inhoudsfragmenteditor met behulp van de `rte` extensiepunt. Gebruiken `rte` extensiepunt `getBadges()` methode één of vele badges worden toegevoegd.
 
 In dit voorbeeld wordt getoond hoe u een widget met de naam _Klantenservice voor grote groepsboekingen_ om de WKND adventure-specifieke details van de klantendienst zoals te vinden, te selecteren en toe te voegen **Naam vertegenwoordiger** en **Telefoonnummer** binnen een RTE-inhoud. Met behulp van de badfunctionaliteit **Telefoonnummer** is gemaakt **niet bewerkbaar** Maar WKND-inhoudsauteurs kunnen de naam van de vertegenwoordiger wel bewerken.
 
@@ -130,7 +132,7 @@ In de hoofdcomponent React `App.js`, voegt u de `largeBookingsCustomerService` r
 ...
 ```
 
-### Maken `LargeBookingsCustomerService` Reageren, component{#create-widget-react-component}
+### Maken `LargeBookingsCustomerService` Reageercomponent{#create-widget-react-component}
 
 De widget- of dialoogvenster-UI wordt gemaakt met de [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) kader.
 
