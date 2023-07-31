@@ -9,11 +9,11 @@ role: Developer
 level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
-last-substantial-update: 2022-10-03T00:00:00Z
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 
 ![De app Next.js met AEM Headless](./assets/next-js/next-js.png)
 
-De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js)
+De weergave [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js)
 
 ## Vereisten {#prerequisites}
 
@@ -35,7 +35,7 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 ## AEM
 
-De app Next.js werkt met de volgende AEM implementatieopties. Alle implementaties vereisen [WKND Shared v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) of [WKND-site v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) in de AEM as a Cloud Service omgeving te installeren.
+De app Next.js werkt met de volgende AEM implementatieopties. Alle implementaties vereisen [WKND Shared v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) of [WKND-site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) in de AEM as a Cloud Service omgeving te installeren.
 
 De volgende voorbeeldtoepassing is ontworpen om verbinding te maken met __AEM-publicatie__ service.
 
@@ -112,43 +112,73 @@ Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing Next.js AEM GraphQL
 + `wknd/adventures-all` persisted query, die alle avonturen in AEM met een verkorte set eigenschappen retourneert. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
 
 ```
-# Retrieves a list of all adventures
-{
-    adventureList {
-        items {
-            _path
-            slug
-            title
-            price
-            tripLength
-            primaryImage {
-                ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
-                }
-            }
+# Retrieves a list of all Adventures
+#
+# Optional query variables:
+# - { "offset": 10 }
+# - { "limit": 5 }
+# - { 
+#    "imageFormat": "JPG",
+#    "imageWidth": 1600,
+#    "imageQuality": 90 
+#   }
+query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFormat=JPG, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    offset: $offset
+    limit: $limit
+    sort: $sort
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
+    items {
+      _path
+      slug
+      title
+      activity
+      price
+      tripLength
+      primaryImage {
+        ... on ImageRef {
+          _path
+          _dynamicUrl
         }
+      }
     }
+  }
 }
 ```
 
 + `wknd/adventure-by-slug` persistente query, die één avontuur retourneert door `slug` (een douanebezit dat uniek een avontuur identificeert) met een volledige reeks eigenschappen. Dit bleef vraagbevoegdheden de meningen van het avontuurdetail.
 
 ```
-# Retrieves an adventure Content Fragment based on it's slug
-# Example query variables: 
-# {"slug": "bali-surf-camp"} 
-# Technically returns an adventure list but since the the slug 
-# property is set to be unique in the CF Model, only a single CF is expected
+# Retrieves an Adventure Fragment based on it's unique slug.
+#
+# Required query variables:
+# - {"slug": "bali-surf-camp"}
+#
+# Optional query variables:
+# - { 
+#     "imageFormat": "JPG",
+#     "imageSeoName": "my-adventure",
+#     "imageWidth": 1600,
+#     "imageQuality": 90 
+#   }
+#  
+# This query returns an adventure list but since the the slug property is set to be unique in the Content Fragment Model, only a single Content Fragment is expected.
 
-query($slug: String!) {
-  adventureList(filter: {
-        slug: {
-          _expressions: [ { value: $slug } ]
-        }
-      }) {
+query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    filter: {slug: {_expressions: [{value: $slug}]}}
+    _assetTransform: {
+      format: $imageFormat
+      seoName: $imageSeoName
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
     items {
       _path
       title
@@ -163,22 +193,22 @@ query($slug: String!) {
       primaryImage {
         ... on ImageRef {
           _path
-          mimeType
-          width
-          height
+          _dynamicUrl
         }
       }
       description {
         json
         plaintext
+        html
       }
       itinerary {
         json
         plaintext
+        html
       }
     }
     _references {
-      ...on AdventureModel {
+      ... on AdventureModel {
         _path
         slug
         title
@@ -219,9 +249,9 @@ async getAllAdventures() {
 
 // And so on, and so forth ... 
 
-async getAdventureSlugs() { ... }
+async getAdventureSlugs(queryVariables) { ... }
 
-async getAdventuresBySlug(slug) { ... }
+async getAdventuresBySlug(slug, queryVariables) { ... }
 ...
 ```
 
@@ -231,17 +261,17 @@ De app Next.js gebruikt twee pagina&#39;s om de avontuurgegevens te presenteren.
 
 + `src/pages/index.js`
 
-   Gebruiksmiddelen [getServerSideProps() van Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) om `getAllAdventures()` en geeft elk avontuur als kaart weer.
+  Gebruiksmiddelen [getServerSideProps() van Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) om te bellen `getAllAdventures()` en geeft elk avontuur als kaart weer.
 
-   Het gebruik van `getServerSiteProps()` staat voor Server-zij Rendering van deze pagina Next.js toe.
+  Het gebruik van `getServerSiteProps()` staat voor Server-zij Rendering van deze pagina Next.js toe.
 
 + `src/pages/adventures/[...slug].js`
 
-   A [Next.js Dynamic Route](https://nextjs.org/docs/routing/dynamic-routes) dat de details van één enkel avontuur toont. Deze dynamische route prefetches de gegevens van elk avontuur gebruikend [getStaticProps() van Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) via een oproep aan `getAdventureBySlug(..)` met de `slug` param werd via de avontuurselectie op de `adventures/index.js` pagina.
+  A [Next.js Dynamic Route](https://nextjs.org/docs/routing/dynamic-routes) dat de details van één enkel avontuur toont. Deze dynamische route prefetches de gegevens van elk avontuur gebruikend [getStaticProps() van Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) via een oproep aan `getAdventureBySlug(slug, queryVariables)` met de `slug` param werd via de avontuurselectie op de `adventures/index.js` pagina, en `queryVariables` om de indeling, breedte en kwaliteit van de afbeelding te bepalen.
 
-   De dynamische route kan de details voor alle avonturen vooraf halen door te gebruiken [getStaticPaths() van Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) en het bevolken van alle mogelijke routepermutaties die op de volledige lijst van avonturen worden gebaseerd die door de vraag van GraphQL zijn teruggekeerd  `getAdventurePaths()`
+  De dynamische route kan de details voor alle avonturen vooraf halen door te gebruiken [getStaticPaths() van Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) en het bevolken van alle mogelijke routepermutaties die op de volledige lijst van avonturen worden gebaseerd die door de vraag van GraphQL zijn teruggekeerd  `getAdventurePaths()`
 
-   Het gebruik van `getStaticPaths()` en `getStaticProps(..)` stond de Statische Generatie van de Plaats van deze pagina&#39;s toe Next.js.
+  Het gebruik van `getStaticPaths()` en `getStaticProps(..)` stond de Statische Generatie van de Plaats van deze pagina&#39;s toe Next.js.
 
 ## Implementatieconfiguratie
 

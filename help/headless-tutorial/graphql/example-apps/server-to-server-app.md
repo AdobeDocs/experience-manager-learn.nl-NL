@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '472'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,7 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
 
 ![Server-naar-server Node.js-app met AEM Headless](./assets/server-to-server-app/server-to-server-app.png)
 
-De weergave van [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server)
+De weergave [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server)
 
 ## Vereisten {#prerequisites}
 
@@ -33,7 +34,7 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 ## AEM
 
-De toepassing Node.js werkt met de volgende AEM plaatsingsopties. Alle implementaties vereisen de [WKND-site v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases) te installeren.
+De toepassing Node.js werkt met de volgende AEM plaatsingsopties. Alle implementaties vereisen de [WKND-site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) te installeren.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Optioneel [servicegegevens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) als u aanvragen autoriseert (bijvoorbeeld verbinding maken met de AEM Author-service).
@@ -88,25 +89,42 @@ Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing AEM GraphQL persist
 + `wknd/adventures-all` persisted query, die alle avonturen in AEM met een verkorte set eigenschappen retourneert. Deze hardnekkige vraag drijft de aanvankelijke lijst van het avontuur van de mening.
 
 ```
-# Retrieves a list of all adventures
-{
-    adventureList {
-        items {
-            _path
-            slug
-            title
-            price
-            tripLength
-            primaryImage {
-                ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
-                }
-            }
+# Retrieves a list of all Adventures
+#
+# Optional query variables:
+# - { "offset": 10 }
+# - { "limit": 5 }
+# - { 
+#    "imageFormat": "JPG",
+#    "imageWidth": 1600,
+#    "imageQuality": 90 
+#   }
+query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFormat=JPG, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    offset: $offset
+    limit: $limit
+    sort: $sort
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
+    items {
+      _path
+      slug
+      title
+      activity
+      price
+      tripLength
+      primaryImage {
+        ... on ImageRef {
+          _path
+          _dynamicUrl
         }
+      }
     }
+  }
 }
 ```
 

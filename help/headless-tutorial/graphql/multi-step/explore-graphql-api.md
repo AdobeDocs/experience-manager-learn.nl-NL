@@ -1,6 +1,6 @@
 ---
 title: Ontdek GraphQL API's - Aan de slag met AEM headless - GraphQL
-description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Ontdek AEM GraphQL API's met behulp van de ingebouwde GrapiQL IDE. Leer hoe AEM automatisch een GraphQL-schema genereert op basis van een model voor inhoudsfragmenten. Experimenteer met het samenstellen van basisquery's met behulp van de GraphQL-syntaxis.
+description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Ontdek AEM GraphQL API's met de ingebouwde GrapiQL IDE. Leer hoe AEM automatisch een GraphQL-schema genereert op basis van een model voor inhoudsfragmenten. Experimenteer met het samenstellen van basisquery's met de GraphQL-syntaxis.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6714
@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 0%
@@ -25,14 +25,14 @@ In dit hoofdstuk, onderzoeken sommige gemeenschappelijke vragen van GraphQL om i
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worden beschreven in het dialoogvenster [Inhoudsfragmenten ontwerpen](./author-content-fragments.md) zijn voltooid.
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in het dialoogvenster [Inhoudsfragmenten ontwerpen](./author-content-fragments.md) zijn voltooid.
 
 ## Doelstellingen {#objectives}
 
 * Leer om het hulpmiddel te gebruiken GraphiQL om een vraag te construeren gebruikend de syntaxis van GraphQL.
 * Leer hoe u een lijst met inhoudsfragmenten en één inhoudsfragment kunt opvragen.
 * Leer hoe u specifieke gegevenskenmerken kunt filteren en aanvragen.
-* Leer hoe u verbinding maakt met een query voor meerdere modellen van inhoudsfragmenten
+* Leer hoe u een query uitvoert op meerdere modellen van inhoudsfragmenten
 * Leer hoe je GraphQL query kunt voortzetten.
 
 ## GraphQL-eindpunt inschakelen {#enable-graphql-endpoint}
@@ -103,11 +103,11 @@ Een algemene vereiste is om te zoeken naar meerdere inhoudsfragmenten.
 
    ![Resultaten personenlijst](assets/explore-graphql-api/all-teams-list.png)
 
-1. De cursor onder de cursor plaatsen `title` tekst en typ **CTRL+Space** om codehints te activeren. Toevoegen `shortname` en `description` naar de query.
+1. De cursor onder de cursor plaatsen `title` tekst en typ **CTRL+Space** om coderingstips te activeren. Toevoegen `shortname` en `description` naar de query.
 
    ![Query bijwerken met coderingstips](assets/explore-graphql-api/update-query-codehinting.png)
 
-1. Voer de vraag opnieuw uit door te drukken **Afspelen** en u zou moeten zien de resultaten de extra eigenschappen omvatten van `shortname` en `description`.
+1. Voer de vraag opnieuw uit door te duwen **Afspelen** en u zou moeten zien de resultaten de extra eigenschappen omvatten van `shortname` en `description`.
 
    ![korte naam en beschrijvingsresultaten](assets/explore-graphql-api/updated-query-shortname-description.png)
 
@@ -174,7 +174,7 @@ Experimenteer vervolgens met vragen om geneste fragmenten op te halen. Vergeet n
    }
    ```
 
-   De mogelijkheid om te zoeken op geneste fragmenten is een krachtige functie van de AEM GraphQL API. In dit eenvoudige voorbeeld is het nesten slechts twee niveaus diep. Maar het is mogelijk om fragmenten nog verder te nesten. Als er bijvoorbeeld een **Adres** model gekoppeld aan een **Persoon** het zou mogelijk zijn om gegevens van alle drie modellen in één enkele vraag terug te keren.
+   De mogelijkheid om te zoeken op geneste fragmenten is een krachtige functie van de AEM GraphQL API. In dit eenvoudige voorbeeld is het nesten slechts twee niveaus diep. Maar het is mogelijk om fragmenten nog verder te nesten. Als er bijvoorbeeld een **Adres** model gekoppeld aan **Persoon** het zou mogelijk zijn om gegevens van alle drie modellen in één enkele vraag terug te keren.
 
 ### Een lijst met inhoudsfragmenten filteren {#filter-list-cf}
 
@@ -211,11 +211,11 @@ Daarna, kijken hoe het mogelijk is om de resultaten aan een ondergroep van Inhou
    {"name": "John Doe"}
    ```
 
-1. Voer de vraag uit, wordt verwacht dat slechts **Personen** Inhoudsfragment wordt geretourneerd met de waarde `John Doe`.
+1. Voer de vraag uit, wordt het verwacht dat slechts **Personen** Content Fragment wordt geretourneerd met de waarde `John Doe`.
 
    ![Query-variabelen gebruiken om te filteren](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Er zijn vele andere opties voor het filtreren en het creëren van complexe vragen, zie [GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+   Er zijn veel andere opties voor het filteren en maken van complexe query&#39;s. Zie [GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 1. Verbeter bovenstaande query om profielafbeelding op te halen
 
@@ -277,7 +277,7 @@ Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragmen
 
 1. Voer de vraag uit en neem waar dat het enige resultaat is teruggekeerd.
 
-## Vragen behouden {#persist-queries}
+## Zoekopdrachten behouden {#persist-queries}
 
 Zodra een ontwikkelaar met de vraag en resultaatgegevens tevreden is die van de vraag zijn teruggekeerd, moet de volgende stap de vraag opslaan of voortzetten aan AEM. De [Blijvende query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) zijn het voorkeursmechanisme voor het toegankelijk maken van de GraphQL API voor clienttoepassingen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van de GET en in het voorgeheugen ondergebracht bij de lagen van de Verzender en CDN. De prestaties van de gepresteerde vragen zijn veel beter. Naast prestatievoordelen zorgen permanente query&#39;s ervoor dat extra gegevens niet per ongeluk aan clienttoepassingen worden blootgesteld. Meer informatie over [Hier kunt u permanente query&#39;s vinden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
@@ -391,7 +391,7 @@ Na revisie en verificatie publiceert u de `GraphQL Endpoint` &amp; `Persisted Qu
 
 ## Oplossingsbestanden {#solution-files}
 
-Download de inhoud, de modellen, en de voortgezette vragen die in de laatste drie hoofdstukken worden gecreeerd: [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
+Download de inhoud, de modellen, en de voortgezette vragen die in de laatste drie hoofdstukken worden gecreeerd: [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip)
 
 ## Aanvullende bronnen
 
@@ -405,7 +405,7 @@ U hebt verschillende GraphQL-query&#39;s gemaakt en uitgevoerd.
 
 In het volgende hoofdstuk: [React-app ontwikkelen](./graphql-and-react-app.md), onderzoekt u hoe een externe toepassing AEM eindpunten van GraphQL kan vragen en deze twee persisted query&#39;s kan gebruiken. Er is ook een aantal standaardfoutafhandeling geïntroduceerd tijdens het uitvoeren van GraphQL-query&#39;s.
 
-## Het gereedschap GraphiQL installeren (optioneel) {#install-graphiql}
+## GraphiQL installeren (optioneel) {#install-graphiql}
 
 In sommige versies van AEM (6.X.X) moet het GraphiQL IDE-gereedschap handmatig worden geïnstalleerd, kunt u het [instructies van hier](../how-to/install-graphiql-aem-6-5.md).
 
