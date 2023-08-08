@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ In dit voorbeeld wordt de MySQL-database gebruikt om de adaptieve formuliergegev
 
 ## Gegevensbron maken
 
-U moet een datasource tot stand brengen genoemd **StoreAndRetrieveAfData**. De code in de bundel OSGi gebruikt deze datasource naam
+U moet een Apache Sling Connection Pooled DataSource maken, genaamd **StoreAndRetrieveAfData** verwijzen naar het databaseschema dat in de vorige stap is gemaakt. De code in de bundel OSGi gebruikt deze datasource naam.
 
 ## Formuliergegevensmodel maken
 
@@ -43,13 +43,13 @@ Een ontwikkelaarsaccount maken met [Nexmo](https://dashboard.nexmo.com/) voor he
 
 ## De volgende OSGi-bundels implementeren
 
-De bundel implementeren die de [code om gegevens uit de database op te slaan en op te halen](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+De bundel implementeren die de [code om gegevens uit de database op te slaan en op te halen](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
 Download en decomprimeer de [developwithService user.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
 Implementeer het bestand DevelopingWithServiceUser.jar met behulp van de Felix-webconsole.
 
 ## De clientbibliotheek implementeren
 
-In het voorbeeld worden twee clientbibliotheken gebruikt. Deze importeren [clientbibliotheken](assets/client-libraries.zip) in AEM.
+In het voorbeeld worden twee clientbibliotheken gebruikt. Deze importeren [clientbibliotheken](assets/store-af-with-attachments-client-lib.zip) in AEM.
 
 ## De aangepaste adaptieve formuliersjabloon importeren
 
@@ -59,7 +59,7 @@ De voorbeeldformulieren die in deze demo worden gebruikt, zijn gebaseerd op een 
 
 De twee formulieren waaruit dit voorbeeld bestaat, moeten in AEM worden geïmporteerd. De voorbeeldformulieren kunnen [hier gedownload](assets/sample-forms.zip)
 
-Open de [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in bewerkingsmodus. Geef de waarden voor de API-sleutel en het API-geheim op in de desbetreffende velden in het adaptieve formulier.
+Open de [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in bewerkingsmodus. Geef de waarden voor Vonage API Key en API Secret op in de juiste velden in het adaptieve formulier.
 
 ## De oplossing testen
 

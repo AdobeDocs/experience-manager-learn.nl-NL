@@ -1,6 +1,6 @@
 ---
 title: Clientbibliotheken maken
-description: Clientbibliotheek maken om de klikgebeurtenis van de knop "Opslaan en afsluiten" af te handelen
+description: Clientbibliotheek maken voor het afhandelen van de klikgebeurtenis "Opslaan en afsluiten"
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -10,7 +10,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -45,7 +45,7 @@ $(document).ready(function () {
             success: function (x) {
               bootbox.alert(
                 "This is your reference number.<br>" +
-                  x.data.path +
+                  x.data.applicationID +
                   " <br>You will need this to retrieve your application",
                 function () {
                   console.log(
@@ -67,9 +67,9 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> We hebben [javascript-bibliotheek bootbox](http://bootboxjs.com/examples.html) om dialoogvenster weer te geven
+> We hebben [javascript-bibliotheek bootbox](http://bootboxjs.com/examples.html) naar dialoogvenster
 
-De clientbibliotheken die in dit voorbeeld worden gebruikt, kunnen [hier gedownload](assets/client-libraries.zip)
+De in dit voorbeeld gebruikte clientbibliotheken kunnen [hier gedownload](assets/store-af-with-attachments-client-lib.zip)
 
 ## Volgende stappen
 

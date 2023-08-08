@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,18 @@ Er zijn vele manieren waarin AEM integratie met een externe gegevensbestand toel
 De eerste stap bestaat uit het downloaden en implementeren van de juiste [MySQL-stuurprogramma&#39;s](https://mvnrepository.com/artifact/mysql/mysql-connector-java) tot AEM.
 Vervolgens stelt u de specifieke eigenschappen voor de gegevensbron van uw database in voor de verzamelverbinding. In de volgende schermafbeelding ziet u de instellingen die voor deze zelfstudie worden gebruikt. Het databaseschema wordt als onderdeel van deze zelfstudie-elementen aan u verstrekt.
 
-![gegevensbron](assets/data-source.JPG)
-
-
-* JDBC-stuurprogramma-klasse: `com.mysql.cj.jdbc.Driver`
-* URI JDBC-verbinding: `jdbc:mysql://localhost:3306/aemformstutorial`
-
 >[!NOTE]
 >Zorg ervoor dat u uw gegevensbron een naam geeft `StoreAndRetrieveAfData` aangezien dit de naam is die in de dienst OSGi wordt gebruikt.
+
+
+![gegevensbron](assets/data-source.JPG)
+
+| Eigenschapnaam | Waarde van eigenschap |   |
+|---------------------|------------------------------------------------------------------------------------|---|
+| Naam gegevensbron | StoreAndRetrieveAfData |   |
+| JDBC-schijfklasse | jdbc:mysql://localhost:3306/aemformstutorial |   |
+| URI voor JDBC-verbinding | jdbc:mysql://localhost:3306/aemformstutorial?serverTimezone=UTC&amp;autoReconnect=true |   |
+|                     |                                                                                    |   |
 
 
 ## Database maken
@@ -49,7 +53,7 @@ MySQL-workbench gebruiken.
 ## Formuliergegevensmodel maken
 
 Creeer het model van vormgegevens en baseer het op de gegevensbron die in de vorige stap wordt gecreeerd.
-Configureer de **get** service van dit formuliergegevensmodel, zoals wordt getoond in de onderstaande schermafbeelding.
+Vorm **get** service van dit formuliergegevensmodel, zoals wordt getoond in de onderstaande schermafbeelding.
 Zorg ervoor dat u geen array retourneert in het dialoogvenster **get** service.
 
 Het doel van deze **get** de dienst moet het telefoonaantal halen verbonden aan toepassings identiteitskaart
