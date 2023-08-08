@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
+source-git-commit: e7e5a07ecada8e5760cd1496bdb44b3d035373dd
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -88,14 +88,14 @@ ht-degree: 11%
    + [Een meertalig vertaalproject maken](./multi-site-management/create-multinational-translational-project.md)
    + [Vertaaltaken](./multi-site-management/create-translation-job.md)
    + [Een taalkopie bijwerken met starten](./multi-site-management/updating-language-copy.md)
-   + [Een pagina Taalkopieën maken](./multi-site-management/create-new-page-language-copy.md)
+   + [Een pagina voor het kopiëren van talen maken](./multi-site-management/create-new-page-language-copy.md)
    + [Taakstatus vertaling](./multi-site-management/translation-job-status.md)
    + [Een landsite maken op basis van een taalkopie](./multi-site-management/create-new-site.md)
 + Vertaling {#translation}
    + [Beheer van meerdere sites gebruiken](translation/multi-site-manager-feature-video-use.md)
    + [Taalkopie gebruiken](translation/language-copy-feature-video-use.md)
    + [Vertaalregels instellen](translation/translation-rules-editor-technical-video-setup.md)
-   + [Verbeterde vertaling](translation/translation-enhancements-feature-video-use.md)
+   + [Verbeteringen op gebied van vertaling](translation/translation-enhancements-feature-video-use.md)
 + Integrations {#integrations}
    + Experience Platform {#experience-platform}
       + [FPID&#39;s genereren](integrations/platform/fpid.md)
@@ -124,7 +124,8 @@ ht-degree: 11%
       + [Personalisatie met behulp van Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Aanpassing van de volledige webpaginabeleving](integrations/adobe-target/personalization-web-page.md)
 + Leer van uw peers {#expert-resources}
+   + [Overzicht](expert-resources/learn-from-your-peers-overview.md)
    + [AEM Sites-rijpheidsbeoordeling](expert-resources/maturity-assessment.md)
-   + [Onderhoud site](expert-resources/site-maintenance.md)
-   + [AEM Champion Tips en Tricks: Sessie 1](expert-resources/champion-tips-1.md)
-   + [AEM Champion Tips en Tricks: Sessie 2](expert-resources/champion-tips-2.md)
+   + [Onderhoud van site](expert-resources/site-maintenance.md)
+   + [AEM Champion Tips and Tricks: sessie 1](expert-resources/champion-tips-1.md)
+   + [AEM Champion Tips and Tricks: sessie 2](expert-resources/champion-tips-2.md)
