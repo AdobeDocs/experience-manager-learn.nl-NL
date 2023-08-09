@@ -10,9 +10,9 @@ kt: 4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1621'
 ht-degree: 1%
 
 ---
@@ -26,11 +26,11 @@ ht-degree: 1%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html" text="Dispatcher in de cloud"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK downloaden"
 
-De Verzender van Adobe Experience Manager (AEM) is een Apache HTTP-webservermodule die een beveiligings- en prestatielaag biedt tussen de CDN- en AEM-publicatielaag. Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet onderdeel zijn van de lokale ontwikkelinstellingen.
+De Verzender van Adobe Experience Manager (AEM) is een Apache HTTP Web server module die een veiligheid en prestatieslaag tussen CDN en AEM verstrekt publiceert rij. Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet onderdeel zijn van de lokale ontwikkelinstellingen.
 
 De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools, waarmee u Dispatcher lokaal kunt configureren, valideren en simuleren. Dispatcher Tools bestaat uit:
 
-+ een basislijnset van Apache HTTP Web server and Dispatcher configuration files, die zich bevinden op `.../dispatcher-sdk-x.x.x/src`
++ een basislijnset van Apache HTTP Web server and Dispatcher configuration files, gevestigd op `.../dispatcher-sdk-x.x.x/src`
 + een CLI-hulpprogramma voor configuratievalidatie, dat zich bevindt op `.../dispatcher-sdk-x.x.x/bin/validate`
 + een hulpmiddel van de configuratiegeneratie CLI, dat bij wordt gevestigd `.../dispatcher-sdk-x.x.x/bin/validator`
 + een hulpmiddel van de configuratieplaatsing CLI, dat bij wordt gevestigd `.../dispatcher-sdk-x.x.x/bin/docker_run`
@@ -48,7 +48,7 @@ Let op: `~` wordt gebruikt als steno voor de Folder van de Gebruiker. In Windows
 1. Windows-gebruikers moeten Windows 10 Professional gebruiken (of een versie die Docker ondersteunt)
 1. Installeren [Experience Manager publiceert QuickStart Jar](./aem-runtime.md) op de lokale ontwikkelmachine.
 
-+ Installeer indien nodig de nieuwste [AEM](https://github.com/adobe/aem-guides-wknd/releases) op de lokale AEM-publicatieservice. Deze website wordt in deze zelfstudie gebruikt om een werkende Dispatcher te visualiseren.
++ Installeer indien nodig de nieuwste [AEM website](https://github.com/adobe/aem-guides-wknd/releases) op de lokale AEM-publicatieservice. Deze website wordt in deze zelfstudie gebruikt om een werkende Dispatcher te visualiseren.
 
 1. De nieuwste versie van [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) op de lokale ontwikkelcomputer.
 
@@ -62,7 +62,7 @@ Als de AEM as a Cloud Service SDK al is gedownload naar [de lokale AEM-runtime i
    + Uw Adobe-organisatie __moet__ zijn ingericht voor AEM as a Cloud Service om de AEM as a Cloud Service SDK te downloaden
 1. Klik op de nieuwste __AEM SDK__ te downloaden resultatenrij
 
-## De Dispatcher Tools extraheren uit het ZIP-bestand van de AEM SDK
+## De Dispatcher Tools extraheren uit de AEM SDK zip
 
 >[!TIP]
 >
@@ -70,12 +70,30 @@ Als de AEM as a Cloud Service SDK al is gedownload naar [de lokale AEM-runtime i
 
 De versie van Dispatcher Tools verschilt van die van de AEM SDK. Zorg ervoor dat de versie van Dispatcher Tools beschikbaar is via de AEM SDK-versie die overeenkomt met de as a Cloud Service versie van AEM.
 
-1. De gedownloade `aem-sdk-xxx.zip` file
+1. De gedownloade gegevens decomprimeren `aem-sdk-xxx.zip` file
 1. Verpak de Dispatcher Tools uit in `~/aem-sdk/dispatcher`
 
-+ Windows: Unzip `aem-sdk-dispatcher-tools-x.x.x-windows.zip` in `C:\Users\<My User>\aem-sdk\dispatcher` (ontbrekende mappen maken, indien nodig)
-+ macOS Linux®: Het bijbehorende shellscript uitvoeren `aem-sdk-dispatcher-tools-x.x.x-unix.sh` om de Dispatcher Tools uit te pakken
-   + `chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh && ./aem-sdk-dispatcher-tools-x.x.x-unix.sh`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh
+$ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
+```
+
+>[!TAB Windows]
+
+Unzip `aem-sdk-dispatcher-tools-x.x.x-windows.zip` in `C:\Users\<My User>\aem-sdk\dispatcher` (ontbrekende mappen maken, indien nodig).
+
+>[!TAB Linux]
+
+```shell
+$ chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh
+$ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
+```
+
+>[!ENDTABS]
 
 Alle hieronder uitgegeven bevelen veronderstellen dat de huidige het werk folder de het uitvouwen inhoud van de Hulpmiddelen van de Verzender bevat.
 
@@ -98,42 +116,109 @@ Een volledige beschrijving van de configuratiebestanden is beschikbaar in de onv
 
 Optioneel, de Dispatcher en Apache de serverconfiguraties van het Web (via `httpd -t`) kan worden gevalideerd met de `validate` script (niet te verwarren met het `validator` uitvoerbaar). De `validate` is een handige manier om het script uit te voeren [drie fasen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=en) van de `validator`.
 
-+ Gebruik:
-   + Windows: `bin\validate src`
-   + macOS Linux®: `./bin/validate.sh ./src`
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ ./bin/validate.sh ./src
+```
+
+>[!TAB Windows]
+
+```shell
+$ bin\validate src
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/validate.sh ./src
+```
+
+>[!ENDTABS]
 
 ## Verzending lokaal uitvoeren
 
 AEM Dispatcher lokaal wordt uitgevoerd met Docker op de `src` Configuratiebestanden van de server Dispatcher en Apache Web.
 
-+ Gebruik:
-   + Windows: `bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
-   + macOS Linux®: `./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
+>[!BEGINTABS]
 
-De `<aem-publish-host>` kan worden ingesteld op `host.docker.internal`, verstrekt een speciale DNS naamDocker in de container die aan IP van de gastheermachine oplost. Als de `host.docker.internal` niet wordt opgelost, raadpleeg de [problemen oplossen](#troubleshooting-host-docker-internal) hieronder.
+>[!TAB macOS]
+
+```shell
+$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+```
+
+>[!TAB Windows]
+
+```shell
+$ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+```
+
+>[!ENDTABS]
+
+De `<aem-publish-host>` kan worden ingesteld op `host.docker.internal`, verstrekt een speciale DNS naamDocker in de container die aan IP van de gastheermachine oplost. Als de `host.docker.internal` niet wordt opgelost, zie de [problemen oplossen](#troubleshooting-host-docker-internal) hieronder.
 
 U kunt bijvoorbeeld de Dispatcher Docker-container starten met de standaardconfiguratiebestanden van de Dispatcher Tools:
 
 Start Dispatcher Docker-container die het pad naar de Dispatcher-configuratiemap bevat:
 
-+ Windows: `bin\docker_run src host.docker.internal:4503 8080`
-+ macOS Linux®: `./bin/docker_run.sh ./src host.docker.internal:4503 8080`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+```
+
+>[!TAB Windows]
+
+```shell
+$ bin\docker_run src host.docker.internal:4503 8080
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+```
+
+>[!ENDTABS]
 
 De AEM as a Cloud Service publicatieservice van SDK, die plaatselijk op haven 4503 loopt is beschikbaar door Dispatcher bij `http://localhost:8080`.
 
 Om de Hulpmiddelen van de Verzender tegen de configuratie van de Verzender van een project van de Experience Manager in werking te stellen, richt aan uw project `dispatcher/src` map.
 
-+ Windows:
+>[!BEGINTABS]
 
-   ```shell
-   $ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
-   ```
+>[!TAB macOS]
 
-+ macOS Linux®:
+```shell
+$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
 
-   ```shell
-   $ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
-   ```
+>[!TAB Windows]
+
+```shell
+$ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
+
+>[!ENDTABS]
+
 
 ## Logboeken voor Dispatcher Tools
 
@@ -153,17 +238,27 @@ Nuttige parameters voor het zuiveren Dispatcher omvatten:
 
 Een of meer parameters, die kunnen worden doorgegeven aan `docker_run`
 
-+ Windows:
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
+
+>[!TAB Windows]
 
 ```shell
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
-+ macOS Linux®:
+>[!TAB Linux]
 
 ```shell
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
+
+>[!ENDTABS]
 
 ### Toegang tot logbestanden
 
@@ -193,7 +288,7 @@ De basislijnset van Apache- en Dispatcher-configuratie wordt regelmatig verbeter
 *Deze video gebruikt macOS ter illustratie. Met de equivalente Windows/Linux-opdrachten kunt u vergelijkbare resultaten bereiken.*
 
 
-Laten we aannemen dat u in het verleden een AEM project hebt gemaakt met [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)De basislijnconfiguraties Apache en Dispatcher waren actueel. Gebruikend deze basislijnconfiguraties werden uw project-specifieke configuraties gecreeerd door, de dossiers als opnieuw te gebruiken en te kopiëren `*.vhost`, `*.conf`, `*.farm` en `*.any` van de `dispatcher/src/conf.d` en `dispatcher/src/conf.dispatcher.d` mappen. Uw lokale Dispatcher-validatie en Cloud Manager-pijpleidingen waren prima.
+Laten we aannemen dat u in het verleden een AEM project hebt gemaakt met [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)De basislijnconfiguraties Apache en Dispatcher waren actueel. Gebruikend deze basislijnconfiguraties werden uw project-specifieke configuraties gecreeerd door, de dossiers als opnieuw te gebruiken en te kopiëren `*.vhost`, `*.conf`, `*.farm` en `*.any` van de `dispatcher/src/conf.d` en `dispatcher/src/conf.dispatcher.d` mappen. Uw lokale Dispatcher-validatie en Cloud Manager-pijplijnen waren prima.
 
 Ondertussen werden de basislijnconfiguraties Apache en Dispatcher verbeterd om verschillende redenen, zoals nieuwe functies, beveiligingsoplossingen en optimalisatie. Ze worden vrijgegeven via een nieuwere versie van Dispatcher Tools als onderdeel van de AEM as a Cloud Service release.
 
@@ -201,32 +296,32 @@ Nu, wanneer het bevestigen van uw project-specifieke configuraties van de Verzen
 
 + Controleren of de validatie mislukt met de nieuwste versie van Dispatcher Tools
 
-   ```shell
-   $ ./bin/validate.sh ${YOUR-AEM-PROJECT}/dispatcher/src
-   
-   ...
-   Phase 3: Immutability check
-   empty mode param, assuming mode = 'check'
-   ...
-   ** error: immutable file 'conf.d/available_vhosts/default.vhost' has been changed!
-   ```
+  ```shell
+  $ ./bin/validate.sh ${YOUR-AEM-PROJECT}/dispatcher/src
+  
+  ...
+  Phase 3: Immutability check
+  empty mode param, assuming mode = 'check'
+  ...
+  ** error: immutable file 'conf.d/available_vhosts/default.vhost' has been changed!
+  ```
 
 + Werk de onveranderlijke dossiers bij gebruikend `update_maven.sh` script
 
-   ```shell
-   $ ./bin/update_maven.sh ${YOUR-AEM-PROJECT}/dispatcher/src
-   
-   ...
-   Updating dispatcher configuration at folder 
-   running in 'extract' mode
-   running in 'extract' mode
-   reading immutable file list from /etc/httpd/immutable.files.txt
-   preparing 'conf.d/available_vhosts/default.vhost' immutable file extraction
-   ...
-   immutable files extraction COMPLETE
-   fd72f4521fa838daaaf006bb8c9c96ed33a142a2d63cc963ba4cc3dd228948fe
-   Cloud manager validator 2.0.53
-   ```
+  ```shell
+  $ ./bin/update_maven.sh ${YOUR-AEM-PROJECT}/dispatcher/src
+  
+  ...
+  Updating dispatcher configuration at folder 
+  running in 'extract' mode
+  running in 'extract' mode
+  reading immutable file list from /etc/httpd/immutable.files.txt
+  preparing 'conf.d/available_vhosts/default.vhost' immutable file extraction
+  ...
+  immutable files extraction COMPLETE
+  fd72f4521fa838daaaf006bb8c9c96ed33a142a2d63cc963ba4cc3dd228948fe
+  Cloud manager validator 2.0.53
+  ```
 
 + De bijgewerkte onveranderbare bestanden controleren zoals `dispatcher_vhost.conf`, `default.vhost`, en `default.farm` en breng indien nodig relevante wijzigingen aan in uw aangepaste bestanden die zijn afgeleid van deze bestanden.
 
@@ -257,15 +352,26 @@ De `host.docker.internal` is hostname die aan Docker wordt verstrekt die aan de 
 Wanneer `bin/docker_run src host.docker.internal:4503 8080` resulteert in het bericht __Wachten tot host.docker.internal beschikbaar is__, dan:
 
 1. Zorg ervoor dat de geïnstalleerde versie van Docker 18.03 of hoger is
-2. U hebt mogelijk een lokale machine ingesteld die de registratie/resolutie van de `host.docker.internal` naam. Gebruik in plaats daarvan uw lokale IP.
-   + Windows:
-   + Vanuit de opdrachtprompt uitvoeren `ipconfig`en registreert de host __IPv4-adres__ van de hostcomputer.
-   + Dan, voer uit `docker_run` het gebruiken van dit IP adres:
-      `bin\docker_run src <HOST IP>:4503 8080`
-   + macOS Linux®:
-   + Vanuit terminal uitvoeren `ifconfig` en registreer de gastheer __kabinet__ IP adres, gewoonlijk __nl0__ apparaat.
-   + Dan uitvoeren `docker_run` het gebruiken van het gastheerIP adres:
-      `bin/docker_run.sh src <HOST IP>:4503 8080`
+1. U hebt mogelijk een lokale machine ingesteld die de registratie/resolutie van de `host.docker.internal` naam. Gebruik in plaats daarvan uw lokale IP.
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
++ Vanuit terminal uitvoeren `ifconfig` en registreer de gastheer __kabinet__ IP adres, gewoonlijk __nl0__ apparaat.
++ Dan uitvoeren `docker_run` het gebruiken van het gastheerIP adres: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
+
+>[!TAB Windows]
+
++ Vanuit de opdrachtprompt uitvoeren `ipconfig`en registreert de host __IPv4-adres__ van de hostcomputer.
++ Dan, voer uit `docker_run` het gebruiken van dit IP adres: `$ bin\docker_run src <HOST IP>:4503 8080`
+
+>[!TAB Linux]
+
++ Vanuit terminal uitvoeren `ifconfig` en registreer de gastheer __kabinet__ IP adres, gewoonlijk __nl0__ apparaat.
++ Dan uitvoeren `docker_run` het gebruiken van het gastheerIP adres: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
+
+>[!ENDTABS]
 
 #### Voorbeeldfout
 

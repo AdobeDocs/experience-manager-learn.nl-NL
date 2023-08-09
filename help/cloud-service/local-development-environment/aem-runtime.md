@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1792'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
->title="Lokale AEM"
+>title="Lokale AEM Runtime"
 >abstract="Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de QuickStart Jar van de AEM as a Cloud Service SDK. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie en inhoud te testen alvorens het aan broncontrole vast te leggen, en het op te stellen aan een AEM as a Cloud Service milieu."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK downloaden"
@@ -32,12 +32,32 @@ Let op: `~` wordt gebruikt als steno voor de Folder van de Gebruiker. In Windows
 
 ## Java installeren
 
-Experience Manager is een Java-toepassing en daarom is ondersteuning van ontwikkelingstools vereist voor de SDK van Java.
+Experience Manager is een Java-toepassing en daarom is de Oracle Java SDK vereist voor ondersteuning van ontwikkelingstools.
 
 1. [Download en installeer de nieuwste Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. Controleer of de Java 11 SDK is geïnstalleerd met de opdracht:
-   + Windows:`java -version`
-   + macOS / Linux: `java --version`
+1. Controleer of Oracle Java 11 SDK is geïnstalleerd met de opdracht:
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ![Java](./assets/aem-runtime/java.png)
 
@@ -49,19 +69,19 @@ De AEM as a Cloud Service SDK, of AEM SDK, bevat de Quickstart Jar die wordt geb
    + Merk op dat uw organisatie van de Adobe __moet__ is ingericht voor AEM as a Cloud Service om de AEM as a Cloud Service SDK te downloaden.
 1. Ga naar de __AEM as a Cloud Service__ tab
 1. Sorteren op __Gepubliceerde datum__ in __Aflopend__ bestellen
-1. Klik op de nieuwste __AEM SDK__ resultaatrij
+1. Klik op de nieuwste __AEM SDK__ resultatenrij
 1. Reviseer en accepteer de EULA en tik op de __Downloaden__ knop
 
-## De QuickStart-jar extraheren uit het ZIP van de AEM SDK
+## Haal de QuickStart Jar uit het ZIP van de AEM SDK
 
-1. De gedownloade `aem-sdk-XXX.zip` file
+1. De gedownloade gegevens decomprimeren `aem-sdk-XXX.zip` file
 
 ## Lokale AEM-auteurservice instellen{#set-up-local-aem-author-service}
 
 De lokale AEM Author Service biedt ontwikkelaars een lokale ervaring met auteurs van digitale markten/content die ze delen om inhoud te maken en te beheren.  De AEM AuteurDienst wordt ontworpen zowel als creatie als voorproefmilieu, toestaand de meeste bevestigingen van eigenschapontwikkeling kunnen tegen het worden uitgevoerd, die tot het een essentieel element van het lokale ontwikkelingsproces maken.
 
 1. De map maken `~/aem-sdk/author`
-1. Kopieer de __QuickStart JAR__ bestand naar  `~/aem-sdk/author` en hernoemen `aem-author-p4502.jar`
+1. De __QuickStart JAR__ bestand naar  `~/aem-sdk/author` en hernoemen `aem-author-p4502.jar`
 1. Start de lokale AEM-auteurservice door het volgende uit te voeren vanaf de opdrachtregel:
    + `java -jar aem-author-p4502.jar`
       + Geef het beheerderswachtwoord op als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert zijn om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
@@ -69,16 +89,9 @@ De lokale AEM Author Service biedt ontwikkelaars een lokale ervaring met auteurs
    U *kan* start de AEM als Cloud Service QuickStart Jar [door te dubbelklikken](#troubleshooting-double-click).
 1. Ga naar de lokale AEM-auteurservice op [http://localhost:4502](http://localhost:4502) in een webbrowser
 
-Windows:
+>[!BEGINTABS]
 
-```shell
-$ mkdir -p c:\Users\<My User>\aem-sdk\author
-$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
-$ cd c:\Users\<My User>\aem-sdk\author
-$ java -jar aem-author-p4502.jar
-```
-
-macOS / Linux:
+>[!TAB macOS]
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
@@ -87,12 +100,33 @@ $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
 
+>[!TAB Windows]
+
+```shell
+$ mkdir -p c:\Users\<My User>\aem-sdk\author
+$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
+$ cd c:\Users\<My User>\aem-sdk\author
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ mkdir -p ~/aem-sdk/author
+$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
+$ cd ~/aem-sdk/author
+$ java -jar aem-author-p4502.jar
+```
+
+>[!ENDTABS]
+
+
 ## Lokale AEM-publicatieservice instellen
 
 De lokale AEM-publicatieservice biedt ontwikkelaars de lokale ervaring die eindgebruikers van de AEM zullen hebben, zoals bladeren door de website die op AEM wordt gehost. Een lokale AEM-publicatieservice is belangrijk omdat deze integreert met AEM SDK&#39;s [Verzendgereedschappen](./dispatcher-tools.md) en stelt ontwikkelaars in staat de ervaring voor eindgebruikers te testen en te verfijnen.
 
 1. De map maken `~/aem-sdk/publish`
-1. Kopieer de __QuickStart JAR__ bestand naar  `~/aem-sdk/publish` en hernoemen `aem-publish-p4503.jar`
+1. De __QuickStart JAR__ bestand naar  `~/aem-sdk/publish` en hernoemen `aem-publish-p4503.jar`
 1. Start de lokale AEM-publicatieservice door het volgende vanaf de opdrachtregel uit te voeren:
    + `java -jar aem-publish-p4503.jar`
       + Geef het beheerderswachtwoord op als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert zijn om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
@@ -100,16 +134,9 @@ De lokale AEM-publicatieservice biedt ontwikkelaars de lokale ervaring die eindg
    U *kan* start de AEM als Cloud Service QuickStart Jar [door te dubbelklikken](#troubleshooting-double-click).
 1. Ga naar de lokale AEM-publicatieservice op [http://localhost:4503](http://localhost:4503) in een webbrowser
 
-Windows:
+>[!BEGINTABS]
 
-```shell
-$ mkdir -p c:\Users\<My User>\aem-sdk\publish
-$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
-$ cd c:\Users\<My User>\aem-sdk\publish
-$ java -jar aem-publish-p4503.jar
-```
-
-macOS / Linux:
+>[!TAB macOS]
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
@@ -118,9 +145,35 @@ $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
 
+>[!TAB Windows]
+
+```shell
+$ mkdir -p c:\Users\<My User>\aem-sdk\publish
+$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
+$ cd c:\Users\<My User>\aem-sdk\publish
+$ java -jar aem-publish-p4503.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ mkdir -p ~/aem-sdk/publish
+$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
+$ cd ~/aem-sdk/publish
+$ java -jar aem-publish-p4503.jar
+```
+
+>[!ENDTABS]
+
+
 ## Lokale AEM instellen in de pre-releasemodus
 
 De lokale AEM-runtime kan worden gestart in [pre-releasemodus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html) zodat een ontwikkelaar kan bouwen op basis van de functies van de volgende release van de AEM as a Cloud Service. Prerelease wordt ingeschakeld door het `-r prerelease` argument op het eerste begin van de lokale AEM runtime. Dit kan zowel met de lokale auteur van AEM als met de publicatieservices van AEM worden gebruikt.
+
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
 
 ```shell
 # For AEM Author service in prerelease mode
@@ -129,6 +182,28 @@ $ java -jar aem-author-p4502.jar -r prerelease
 # For AEM Publish service in prerelease mode
 $ java -jar aem-publish-p4503.jar -r prerelease
 ```
+
+>[!TAB Windows]
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
+```
+
+>[!TAB Linux]
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
+```
+
+>[!ENDTABS]
 
 ## Inhoudsdistributie simuleren {#content-distribution}
 
@@ -165,9 +240,9 @@ Tijdens de ontwikkeling, kan het wenselijk zijn om de distributie van inhoud te 
 
 ## Snelstartmodi voor Jar
 
-De naam van de Quickstart Jar, `aem-<tier>_<environment>-p<port number>.jar` geeft aan hoe de toepassing wordt gestart. Wanneer AEM zoals begonnen in een specifieke rij, auteur of publiceert, kan het niet in de afwisselende rij worden veranderd. Om dit te doen, `crx-Quickstart` de map die tijdens de eerste uitvoering wordt gegenereerd, moet worden verwijderd en QuickStart Jar moet opnieuw worden uitgevoerd. Het milieu en de Havens kunnen worden veranderd, nochtans vereisen zij einde/begin van de lokale AEM instantie.
+De naam van de QuickStart-jar, `aem-<tier>_<environment>-p<port number>.jar` geeft aan hoe de toepassing wordt gestart. Wanneer AEM zoals begonnen in een specifieke rij, auteur of publiceert, kan het niet in de afwisselende rij worden veranderd. Om dit te doen, `crx-Quickstart` de map die tijdens de eerste uitvoering wordt gegenereerd, moet worden verwijderd en QuickStart Jar moet opnieuw worden uitgevoerd. Het milieu en de Havens kunnen worden veranderd, nochtans vereisen zij einde/begin van de lokale AEM instantie.
 
-Omgevingen wijzigen `dev`, `stage` en `prod`, kan voor ontwikkelaars nuttig zijn om ervoor te zorgen dat de milieu-specifieke configuraties correct worden bepaald en door AEM worden opgelost. Aanbevolen wordt om lokale ontwikkeling in de eerste plaats tegen de standaardinstelling uit te voeren `dev` de uitvoermodus van de omgeving.
+Omgevingen wijzigen, `dev`, `stage` en `prod`, kan voor ontwikkelaars nuttig zijn om ervoor te zorgen dat de milieu-specifieke configuraties correct worden bepaald en door AEM worden opgelost. Aanbevolen wordt om lokale ontwikkeling in de eerste plaats tegen de standaardinstelling uit te voeren `dev` de uitvoermodus van de omgeving.
 
 De beschikbare permutaties zijn als volgt:
 
@@ -184,7 +259,7 @@ De beschikbare permutaties zijn als volgt:
 
 Merk op dat het havenaantal om het even welke beschikbare haven op de lokale ontwikkelingsmachine kan zijn, echter door overeenkomst:
 
-+ Poort __4502__ wordt gebruikt voor de __lokale AEM-auteurservice__
++ Poort __4502__ wordt gebruikt voor de __lokale AEM-auteur-service__
 + Poort __4503__ wordt gebruikt voor de __lokale AEM-publicatieservice__
 
 Het wijzigen van deze instellingen kan aanpassingen in AEM SDK-configuraties vereisen
@@ -227,11 +302,51 @@ Dit komt doordat AEM as a Cloud Service QuickStart Jar dubbelklikken van de Quic
 
 AEM-auteurservice starten `cd` in de directory met de Quickstart Jar en voer de opdracht uit:
 
-`$ java -jar aem-author-p4502.jar`
+>[!BEGINTABS]
 
-of, om de AEM-publicatieservice te starten, `cd` in de directory met de Quickstart Jar en voer de opdracht uit:
+>[!TAB macOS]
 
-`$ java -jar aem-publish-p4503.jar`
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!ENDTABS]
+
+of, om AEM Publish Service te starten, `cd` in de directory met de Quickstart Jar en voer de opdracht uit:
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!ENDTABS]
 
 ### Het beginnen van Jar Quickstart van de bevellijn aborteert onmiddellijk{#troubleshooting-java-8}
 
@@ -249,12 +364,30 @@ Quickstart: aborting
 ```
 
 Dit komt omdat AEM as a Cloud Service Java SDK 11 vereist en u een andere versie gebruikt, waarschijnlijk Java 8. Download en installeer om dit probleem op te lossen [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
-Nadat Java SDK 11 is geïnstalleerd, controleert u of dit de actieve versie is door het volgende via de opdrachtregel uit te voeren.
 
-Zodra Java 11 SDK wordt geïnstalleerd, verifieer het de actieve versie door het bevel van de bevellijn in werking te stellen is:
+Zodra Oracle Java 11 SDK wordt geïnstalleerd, verifieer het de actieve versie door het bevel van de bevellijn in werking te stellen:
 
-+ Windows: `java -version`
-+ macOS / Linux: `java --version`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ## Aanvullende bronnen
 

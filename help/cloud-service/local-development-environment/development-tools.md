@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1484'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,29 @@ Let op: `~` wordt gebruikt als steno voor de Folder van de Gebruiker. In Windows
 Experience Manager is een Java-toepassing en vereist daarom dat de Java SDK de ontwikkeling en de AEM as a Cloud Service SDK ondersteunt.
 
 1. [Download en installeer de nieuwste versie van Java 11 SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. Controleer of de Java 11 SDK is geïnstalleerd met de opdracht:
-   + Windows: `java -version`
-   + macOS / Linux: `java --version`
+1. Controleer of Oracle Java 11 SDK is geïnstalleerd met de opdracht:
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ![Java](./assets/development-tools/java.png)
 
@@ -51,7 +71,7 @@ Homebrew is een opensource-pakketbeheer voor macOS, Windows en Linux. Alle onder
 1. Controleer of Homebrew al is geïnstalleerd door de opdracht uit te voeren: `brew --version`.
 1. Als Homebrew niet is geïnstalleerd, installeert u Homebrew
    + [Homebrew installeren op macOS](https://brew.sh/)
-      + Voor Homebrew op macOS is vereist [Xcode](https://apps.apple.com/us/app/xcode/id497799835) of [Command Line Tools](https://developer.apple.com/download/more/), installeerbaar via het bevel:
+      + Homebrew op macOS vereist [Xcode](https://apps.apple.com/us/app/xcode/id497799835) of [Opdrachtregelgereedschappen](https://developer.apple.com/download/more/), installeerbaar via het bevel:
          + `xcode-select --install`
    + [Homebrew installeren op Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
    + [Homebrew installeren in Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
@@ -65,14 +85,21 @@ Als u Homebrew gebruikt, volgt u de instructies __Installeren met Homebrew__ ins
 
 [Git](https://git-scm.com/) is het bronbeheersysteem dat wordt gebruikt door [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html), en dus noodzakelijk voor ontwikkeling.
 
-+ Git installeren met Homebrew
-   1. Open uw Eind/Herinnering van het Bevel
-   1. Voer het bevel uit: `brew install git`
-   1. Controleer of Git is geïnstalleerd met de opdracht: `git --version`
-+ Of download en installeer Git (macOS, Linux of Windows)
-   1. [Git downloaden en installeren](https://git-scm.com/downloads)
-   1. Open uw Eind/Herinnering van het Bevel
-   1. Controleer of Git is geïnstalleerd met de opdracht: `git --version`
+>[!BEGINTABS]
+
+>[!TAB Git installeren met Homebrew]
+
+1. Open uw Eind/Herinnering van het Bevel
+1. Voer het bevel uit: `$ brew install git`
+1. Controleer of Git is geïnstalleerd met de opdracht: `$ git --version`
+
+>[!TAB Git downloaden en installeren]
+
+1. [Git downloaden en installeren](https://git-scm.com/downloads)
+1. Open uw Eind/Herinnering van het Bevel
+1. Controleer of Git is geïnstalleerd met de opdracht: `$ git --version`
+
+>[!ENDTABS]
 
 ![Git](./assets/development-tools/git.png)
 
@@ -80,16 +107,23 @@ Als u Homebrew gebruikt, volgt u de instructies __Installeren met Homebrew__ ins
 
 [Node.js](https://nodejs.org) is een JavaScript-runtimeomgeving die wordt gebruikt voor het werken met de front-end elementen van de AEM __ui.frontend__ subproject. Node.js wordt gedistribueerd met [npm](https://www.npmjs.com/)is de defacto Node.js-pakketbeheerder die wordt gebruikt om JavaScript-afhankelijkheden te beheren.
 
-+ Node.js installeren met Homebrew
-   1. Open uw Eind/Herinnering van het Bevel
-   1. Voer het bevel uit: `brew install node`
-   1. Verifieer Node.js geïnstalleerd is, gebruikend het bevel: `node -v`
-   1. Verifieer npm geïnstalleerd is, gebruikend het bevel: `npm -v`
-+ Of download en installeer Node.js (macOS, Linux of Windows)
-   1. [Node.js downloaden en installeren](https://nodejs.org/en/download/)
-   1. Open uw Eind/Herinnering van het Bevel
-   1. Verifieer Node.js geïnstalleerd is, gebruikend het bevel: `node -v`
-   1. Verifieer npm geïnstalleerd is, gebruikend het bevel: `npm -v`
+>[!BEGINTABS]
+
+>[!TAB Node.js installeren met Homebrew]
+
+1. Open uw Eind/Herinnering van het Bevel
+1. Voer het bevel uit: `$ brew install node`
+1. Verifieer Node.js geïnstalleerd is, gebruikend het bevel: `$ node -v`
+1. Verifieer npm geïnstalleerd is, gebruikend het bevel: `$ npm -v`
+
+>[!TAB Node.js downloaden en installeren]
+
+1. [Node.js downloaden en installeren](https://nodejs.org/en/download/)
+2. Open uw Eind/Herinnering van het Bevel
+3. Verifieer Node.js geïnstalleerd is, gebruikend het bevel: `$ node -v`
+4. Verifieer npm geïnstalleerd is, gebruikend het bevel: `$ npm -v`
+
+>[!ENDTABS]
 
 ![Node.js en npm](./assets/development-tools/nodejs-and-npm.png)
 
@@ -103,21 +137,29 @@ Als u Homebrew gebruikt, volgt u de instructies __Installeren met Homebrew__ ins
 
 Apache Maven is het opensource Java-opdrachtregelprogramma dat wordt gebruikt om AEM Projecten te bouwen die zijn gegenereerd van het AEM Project Maven Archetype. Alle belangrijke IDE&#39;s ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio-code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), enz.) geïntegreerde ondersteuning voor Maven.
 
-+ Maven installeren met Homebrew
-   1. Open uw Eind/Herinnering van het Bevel
-   1. Voer het bevel uit: `brew install maven`
-   1. Verifieer Maven geïnstalleerd is, gebruikend het bevel: `mvn -v`
-+ Of download en installeer Maven (macOS, Linux of Windows)
-   1. [Gemaakt downloaden](https://maven.apache.org/download.cgi)
-   1. [Gemaakt installeren](https://maven.apache.org/install.html)
-   1. Open uw Eind/Herinnering van het Bevel
-   1. Verifieer Maven geïnstalleerd is, gebruikend het bevel: `mvn -v`
+
+>[!BEGINTABS]
+
+>[!TAB Maven installeren met Homebrew]
+
+1. Open uw Eind/Herinnering van het Bevel
+1. Voer het bevel uit: `$ brew install maven`
+1. Verifieer Maven geïnstalleerd is, gebruikend het bevel: `$ mvn -v`
+
+>[!TAB Maven downloaden en installeren]
+
+1. [Gemaakt downloaden](https://maven.apache.org/download.cgi)
+1. [Gemaakt installeren](https://maven.apache.org/install.html)
+1. Open uw Eind/Herinnering van het Bevel
+1. Verifieer Maven geïnstalleerd is, gebruikend het bevel: `$ mvn -v`
+
+>[!ENDTABS]
 
 ![Maven](./assets/development-tools/maven.png)
 
 ## Adobe I/O CLI instellen{#aio-cli}
 
-De [Adobe I/O CLI](https://github.com/adobe/aio-cli), of `aio`biedt opdrachtregeltoegang tot diverse Adobe-services, waaronder [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) en [asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O CLI speelt een integrale rol in ontwikkeling op AEM as a Cloud Service aangezien het ontwikkelaars de capaciteit verleent om:
+De [ADOBE I/O CLI](https://github.com/adobe/aio-cli), of `aio`biedt opdrachtregeltoegang tot diverse Adobe-services, waaronder [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) en [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O CLI speelt een integrale rol in ontwikkeling op AEM as a Cloud Service aangezien het ontwikkelaars de capaciteit verleent om:
 
 + Logboeken van AEM als Cloud Services
 + Cloud Manager-pijpleidingen beheren vanuit de CLI
@@ -126,7 +168,7 @@ De [Adobe I/O CLI](https://github.com/adobe/aio-cli), of `aio`biedt opdrachtrege
 ### De Adobe I/O CLI installeren
 
 1. Zorgen [Node.js is geïnstalleerd](#node-js) aangezien Adobe I/O CLI een npm module is
-   + Uitvoeren `node --version` bevestigen
+   + Uitvoeren `node --version` ter bevestiging
 1. Uitvoeren `npm install -g @adobe/aio-cli` om de `aio` npm-module wereldwijd
 
 ### De plug-in Adobe I/O CLI Cloud Manager instellen{#aio-cloud-manager}
@@ -166,7 +208,6 @@ Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI Asset compute-worker
 
 1. Uitvoeren `aio plugins:install @adobe/aio-cli-plugin-asset-compute` om de [Ao Asset compute plug-in](https://github.com/adobe/aio-cli-plugin-asset-compute).
 
-
 ## De ontwikkelings-IDE instellen
 
 AEM ontwikkeling bestaat voornamelijk uit de ontwikkeling van Java en Front-end (JavaScript, CSS, enz.) en XML-beheer. Hieronder vindt u de populairste IDE&#39;s voor AEM ontwikkeling.
@@ -195,7 +236,7 @@ De Code van Visual Studio is de ideale keus voor front-end ontwikkelaars hoofdza
 
 ### Eclipse
 
-__[Eclipse IDE](https://www.eclipse.org/ide/)__ is een populaire IDEs voor de ontwikkeling van Java, en steunt  __[AEM Developer Tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ insteekmodule van Adobe, die een in-IDE GUI voor creatie verstrekt en JCR inhoud met een lokale AEM instantie synchroniseert.
+__[Eclipse IDE](https://www.eclipse.org/ide/)__ is een populaire IDEs voor ontwikkeling Java, en steunt  __[AEM Developer Tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ insteekmodule van Adobe, die een in-IDE GUI voor creatie verstrekt en JCR inhoud met een lokale AEM instantie synchroniseert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
