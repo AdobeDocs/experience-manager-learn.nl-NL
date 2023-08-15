@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials voor AEM Foundation
 user-guide-description: Een verzameling video's en tutorials voor Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: fc183d88bf772944562d0dd825b4d590266f3ffd
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 14%
+source-wordcount: '219'
+ht-degree: 13%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 14%
 # AEM Foundation-video&#39;s en -tutorials {#foundation}
 
 + [Overzicht](./overview.md)
-+ Beheer {#administration}
++ Administratie {#administration}
    + [Redenen voor upgrade-AEM begrijpen](./administration/understand-reasons-to-upgrade.md)
    + [Gebruik oak-run.jar om indexen te beheren](./administration/use-oak-run-jar-to-manage-indexes.md)
    + [Onlinerevisie opschonen gebruiken](./administration/use-online-revision-clean-up.md)
@@ -23,7 +23,7 @@ ht-degree: 14%
    + [URL-omleidingen](./administration/url-redirection.md)
 + Verificatie {#authentication}
    + [OKTA en AEM](authentication/okta-saml-integration.md)
-   + [OAuth-bereik](authentication/oauth-code-sample-develop.md)
+   + [OAutbereik](authentication/oauth-code-sample-develop.md)
    + [Verificatie](authentication/authentication-support-article-understand.md)
    + [IMS-verificatie begrijpen op AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
@@ -43,13 +43,14 @@ ht-degree: 14%
    + [Ontwikkelen voor het delen van bronnen tussen verschillende bronnen (CORS)](./security/develop-for-cross-origin-resource-sharing.md)
    + [Werken met het delen van bronnen tussen verschillende bronnen (CORS)](./security/understand-cross-origin-resource-sharing.md)
    + [De SSL-wizard gebruiken](./security/use-the-ssl-wizard.md)
+   + [ModSecurity CRS DoS-beveiliging tegen aanvallen](./security/modsecurity-crs-dos-attack-protection.md)
 + Workflow {#workflow}
    + [De Workfloweditor gebruiken](./workflow/use-the-workflow-editor.md)
    + [Workflow gebruiken](./workflow/use-workflow.md)
    + [Inbox gebruiken](./workflow/use-the-inbox.md)
 + Problemen oplossen {#troubleshooting}
    + [Rapport voor het downloaden van bedrijfsmiddelen inschakelen](./troubleshooting/how-to-enable-asset-download-report.md)
-   + [Hoe wordt de recompilatie geforceerd in AEM6.4](./troubleshooting/how-to-force-recompilation.md)
+   + [Hoe wordt de recompilatie afgedwongen in AEM6.4](./troubleshooting/how-to-force-recompilation.md)
    + [Hoe te om indexerende verwante kwesties in AEM te onderzoeken](./troubleshooting/how-to-investigate-indexing-related-issues.md)
    + [Hoe te om SAML verwante kwesties in AEM te onderzoeken](./troubleshooting/how-to-investigate-saml-related-issues.md)
    + [Hoe te onderzoek verwante kwesties in AEM onderzoeken](./troubleshooting/how-to-investigate-search-related-issues.md)
