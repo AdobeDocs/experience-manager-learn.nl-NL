@@ -10,7 +10,7 @@ doc-type: Code Sample
 last-substantial-update: 2023-07-14T00:00:00Z
 jira: KT-13651
 thumbnail: KT-13651.jpeg
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 38db146129ceab83af50bf97cd6eb2d7179adbbf
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Leer hoe u AEM CSRF-tokens kunt genereren en toevoegen aan toegestane POST-, PUT- en verwijderverzoeken om AEM voor geverifieerde gebruikers.
 
-AEM vereist dat een geldig CSRF-token wordt verzonden voor __geverifieerd__ __POST__, __PUT, of __DELETE__ HTTP-aanvragen bij zowel AEM-auteur- als -publicatieservices.
+AEM vereist een geldig CSRF-token voor __geverifieerd__ __POST__, __PUT, of __DELETE__ HTTP-aanvragen bij zowel AEM Auteur- als publicatieservices.
 
 De token CSRF is niet vereist voor __GET__ verzoeken, of __anoniem__ verzoeken.
 
@@ -61,7 +61,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
     let csrfTokenInput = form.querySelector('input[name=":cq_csrf_token"]');
     if (!csrfTokenInput?.value) {
         // If the form does not have a CSRF token input, add one.
-        form.insertAdjacentHTML('afterend', `<input type="hidden" name=":cq_csrf_token" value="${json.token}">`);
+        form.insertAdjacentHTML('beforeend', `<input type="hidden" name=":cq_csrf_token" value="${json.token}">`);
     } else {
         // If the form already has a CSRF token input, update the value.
         csrfTokenInput.value = json.token;
@@ -71,7 +71,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
 });
 ```
 
-## Ophalen met bescherming tegen klassieke varkenspest
+## Ophalen met KVP-beveiliging
 
 Als het gebruik van [`granite.csrf.standalone` clientbibliotheek](#csrf-client-library) is niet geschikt voor uw gebruiksgeval, kunt u een symbolisch CSRF aan een XHR manueel toevoegen of verzoeken halen. In het volgende voorbeeld ziet u hoe u een CSRF-token toevoegt aan een XHR die is gemaakt met ophalen.
 
@@ -101,7 +101,7 @@ await fetch('/path/to/aem/endpoint', {
 
 ## Dispatcher-configuratie
 
-Wanneer het gebruiken van tokens CSRF op de publicatiedienst AEM, moet de configuratie van de Verzender worden bijgewerkt om verzoeken van de GET aan het symbolische eindpunt toe te staan CSRF. De volgende configuratie staat GET verzoeken aan het symbolische eindpunt CSRF op de AEM toe publiceer dienst. Als deze configuratie niet wordt toegevoegd, keert het symbolische eindpunt CSRF een 404 niet Gevonden reactie terug.
+Wanneer het gebruiken van tokens CSRF op AEM publicatiedienst, moet de configuratie van de Verzender worden bijgewerkt om GET- verzoeken aan het symbolische eindpunt toe te staan CSRF. De volgende configuratie staat GET verzoeken aan het symbolische eindpunt CSRF op de AEM toe publiceren dienst. Als deze configuratie niet wordt toegevoegd, keert het symbolische eindpunt CSRF een 404 niet Gevonden reactie terug.
 
 * `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
