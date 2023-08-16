@@ -1,5 +1,5 @@
 ---
-title: ModSecurity inschakelen om uw AEM te beschermen tegen DoS-aanval
+title: Gebruik ModSecurity om uw AEM te beschermen tegen DoS-aanval
 description: Leer hoe te om ModSecurity toe te laten om uw plaats tegen Ontkenning van de aanval van de Dienst (Dos) te beschermen gebruikend de Reeks van de Regel van de Kern van de WASPIS ModSecurity (CRS).
 feature: Security
 version: 6.5, Cloud Service
@@ -10,7 +10,7 @@ kt: 10385
 thumbnail: KT-10385.png
 doc-type: article
 last-substantial-update: 2023-08-15T00:00:00Z
-source-git-commit: fc183d88bf772944562d0dd825b4d590266f3ffd
+source-git-commit: 31d54b14fc6381e8b231cf85d3c808b88c7df098
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Deze zelfstudie laat zien hoe u de **DOS-BESCHERMING** CRS-regel om uw site te b
 
 1. Maak de `modsec/crs` mappen binnen `dispatcher/src/conf.d/` in de code van uw AEM project. Bijvoorbeeld in de lokale kopie van het dialoogvenster [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd).
 
-   ![CRS omslag binnen AEM projectcode - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png)
+   ![CRS omslag binnen AEM projectcode - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
 
 1. De `coreruleset-X.Y.Z/rules` map van het gedownloade CRS-releasepakket naar het `dispatcher/src/conf.d/modsec/crs` map.
 1. De `coreruleset-X.Y.Z/crs-setup.conf.example` bestand van het gedownloade CRS-releasepakket naar het `dispatcher/src/conf.d/modsec/crs` map en hernoemen `crs-setup.conf`.
@@ -69,7 +69,7 @@ Deze zelfstudie laat zien hoe u de **DOS-BESCHERMING** CRS-regel om uw site te b
 
    Zie anders genoemd regels CRS en configuratiedossier in de WKND projectcode.
 
-   ![Gehandicapte regels CRS binnen AEM projectcode - ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="100" zoomable="yes"}
+   ![Gehandicapte regels CRS binnen AEM projectcode - ModSecurity ](assets/modsecurity-crs/disabled-crs-rules.png){width="200" zoomable="yes"}
 
 ## De de beschermingsregel van de Ontkenning van de Dienst (Dos) toelaten en vormen
 
