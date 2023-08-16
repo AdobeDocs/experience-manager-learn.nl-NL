@@ -5,20 +5,20 @@ recommendations: disable
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: aem-assets-essentials-videos.jpg
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 137f7166a6a10ecd95a85114b27a1a3bd608b965
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
 
-# Assets Essentials-video&#39;s
+# Video&#39;s Assets Essentials
 
 ![Assets Essentials](./assets/overview/hero.png)
 
 Experience Manager Assets Essentials biedt een gestroomlijnde gebruikersinterface voor eenvoudig beheer van bedrijfsmiddelen en samenwerking.
 
-Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middelen te beheren en hoe u deze kunt integreren met Adobe Journey Orchestrator!
+Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middelen te beheren en hoe u deze kunt integreren met Adobe Workfront en Adobe Journey Orchestrator!
 
 ## Meer informatie over Assets Essentials
 
@@ -42,11 +42,11 @@ Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middel
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
-      <strong>Assets Essentials-documentatie</strong>
+      <strong>Documentatie Assets Essentials</strong>
       </a>
    </div>
    <p>
-      <em>Raadpleeg de documentatie bij het Assets Essentials-product.</em>
+      <em>Bekijk de productdocumentatie van de Assets Essentials!</em>
    <p>
 </td>
 <td>
@@ -59,7 +59,7 @@ Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middel
       </a>
    </div>
    <p>
-      <em>Ontdek hoe Assets Essentials geïntegreerd is met Adobe Journey Optimizer!</em>
+      <em>Leer hoe Assets Essentials integreren met Adobe Journey Optimizer!</em>
    <p>
 </td>
 </table>

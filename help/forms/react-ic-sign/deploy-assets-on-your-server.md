@@ -9,9 +9,9 @@ level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 44f4261b-d6fe-42ad-a3aa-2a36ca897b5e
-source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
+source-git-commit: 137f7166a6a10ecd95a85114b27a1a3bd608b965
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,14 @@ De volgende middelen/configuraties zijn geïmplementeerd op een AEM Forms-public
 
 * [De voorbeeldreactie-app downloaden](assets/mult-step-form1.zip)
 * Pak de inhoud van de reactieapp uit in een nieuwe map
-* Navigeer naar de map en voer de volgende opdrachten uit
+* Ga naar de map en voer de volgende opdrachten uit
 
 ```java
 npm install
 npm start
 ```
 
-Open het bestand EmergencyContact.js en wijzig de URL in de methode fetch in overeenstemming met uw omgeving.
+Open het bestand EmergencyContact.js en wijzig de URL in de methode fetch om deze aan te passen aan uw omgeving.
 
 
 ```javascript
@@ -56,6 +56,8 @@ Open het bestand EmergencyContact.js en wijzig de URL in de methode fetch in ove
  
 ```
 
-Om het maken van vraag van de POST aan het AEM eindpunt van uw REACT app toe te laten, zult u de aangewezen entiteiten in het Toegestane gebied van Oorsprong in Adobe graniet moeten specificeren het Delen van het Beleid van het Middel van de Cross-Origin.
+Om het maken van vraag van de POST aan het AEM eindpunt van uw REACT app toe te laten, zult u de aangewezen entiteiten in het Toegestane gebied van Oorsprong in het gebied van het Beleid van het Delen van het Middel van Granite van de Adobe moeten specificeren.
 
 ![cors-setting](assets/cors-settings.png)
+
+Zie [kennis van CORS met AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) voor meer details over de configuratieopties van CORS.
