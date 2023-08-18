@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,17 @@ ht-degree: 0%
 
 U kunt de velden van een adaptief formulier vooraf invullen met bestaande gegevens. Wanneer een gebruiker een formulier opent, worden de waarden voor die velden vooraf ingevuld. Er zijn meerdere manieren om aangepaste formuliervelden vooraf in te vullen. In dit artikel bekijken we het vooraf ingevulde adaptieve formulier met de AEM Forms Prefill-service.
 
-Voor meer informatie over verschillende methoden om aangepaste formulieren vooraf in te vullen, [gelieve deze documentatie te volgen](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Voor meer informatie over verschillende methoden om aangepaste formulieren vooraf in te vullen, [volg deze documentatie](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
 Als u een adaptief formulier wilt vooraf invullen met de Prefill-service, moet u een klasse maken die het `com.adobe.forms.common.service.DataXMLProvider` interface. De methode `getDataXMLForDataRef` bevat de logica voor het samenstellen en retourneren van gegevens die het aangepaste formulier zal gebruiken om de velden vooraf in te vullen. Met deze methode kunt u de gegevens van elke bron ophalen en de invoerstream van het gegevensdocument retourneren. De volgende voorbeeldcode haalt de gebruikersprofielinformatie van de aangemelde gebruiker op en maakt een XML-document waarvan de invoerstream wordt geretourneerd voor gebruik door de adaptieve formulieren.
 
 In het codefragment hieronder hebben we een klasse die de DataXMLProvider-interface implementeert. We krijgen toegang tot de aangemelde gebruiker en halen vervolgens de profielgegevens van de aangemelde gebruiker op. Vervolgens maken we een XML-document met het basisknooppuntelement &#39;data&#39; en voegen we de juiste elementen toe aan dit gegevensknooppunt. Wanneer het XML-document is samengesteld, wordt de invoerstream van het XML-document geretourneerd.
 
 Deze klasse wordt dan gemaakt in bundel OSGi en opgesteld in AEM. Zodra de bundel wordt opgesteld, is deze prefill dienst beschikbaar om als prefill dienst van uw Aangepast Vorm te worden gebruikt.
+
+>[!NOTE]
+>
+>U kunt het formulier vooraf invullen met XML- of JSON-gegevens op de manier die in dit artikel wordt beschreven.
 
 ```java
 package com.aem.prefill.core;

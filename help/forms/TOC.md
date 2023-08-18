@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 17f6148ce6f897052d9d13f23e3f1792646eb958
+source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1841'
 ht-degree: 1%
 
 ---
@@ -187,6 +187,7 @@ ht-degree: 1%
    + [ArrayList-variabele](variables-aem-workflow/part4.md)
    + [Formuliergegevensmodelvariabele](variables-aem-workflow/form-data-model.md)
    + [Regeleditor in AEM workflow](variables-aem-workflow/part5.md)
+   + [Logwerkstroomvariabelen](variables-aem-workflow/part6.md)
 + Formuliergegevens controleren{#review-form-data}
    + [1 - Inleiding](review-form-data/introduction.md)
    + [2 - Component maken](review-form-data/create-component.md)
