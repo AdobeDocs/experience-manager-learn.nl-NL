@@ -9,8 +9,8 @@ level: Experienced
 kt: 10385
 thumbnail: KT-10385.png
 doc-type: article
-last-substantial-update: 2023-08-15T00:00:00Z
-source-git-commit: 31d54b14fc6381e8b231cf85d3c808b88c7df098
+last-substantial-update: 2023-08-18T00:00:00Z
+source-git-commit: c6f954968fdc43ea9070df52a4709da2ed04cacc
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -21,6 +21,8 @@ ht-degree: 0%
 # Gebruik ModSecurity om uw AEM site te beschermen tegen DoS-aanvallen
 
 Leer hoe te om ModSecurity toe te laten om uw plaats tegen Ontkenning van de aanvallen van de Dienst (Dos) te beschermen gebruikend **OWASP ModSecurity Core Rule Set (CRS)** op de Adobe Experience Manager (AEM) Publish Dispatcher.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## Overzicht
 
