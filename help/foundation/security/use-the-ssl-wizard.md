@@ -3,7 +3,7 @@ title: De SSL-wizard in AEM gebruiken
 description: Adobe Experience Manager SSL opstellingstovenaar om het gemakkelijker te maken om een AEM instantie te plaatsen om over HTTPS te lopen.
 seo-description: Adobe Experience Manager's SSL setup wizard to make it easier to set up an AEM instance to run over HTTPS.
 version: 6.5, Cloud Service
-jira: KT-13465
+jira: KT-13839
 topics: security, operations
 feature: Security
 activity: use
@@ -15,7 +15,8 @@ topic: Security
 role: Developer
 level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
-source-git-commit: f6e9d1f1991abf34765b28e6e05382a58a6203e3
+last-substantial-update: 2023-08-08T00:00:00Z
+source-git-commit: 1a8e3f37554f98c1366a1a06cb4a7b867866dd1b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
@@ -37,7 +38,7 @@ Leer hoe u SSL in Adobe Experience Manager instelt om deze via HTTPS uit te voer
 
 ## De wizard SSL-configuratie gebruiken
 
-Navigeren naar __AEM-auteur > Gereedschappen > Beveiliging > SSL-configuratie__ en opent u de __wizard SSL-configuratie__.
+Navigeren naar __AEM Auteur > Hulpmiddelen > Veiligheid > SSL Configuratie__ en opent u de __wizard SSL-configuratie__.
 
 ![wizard SSL-configuratie](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
