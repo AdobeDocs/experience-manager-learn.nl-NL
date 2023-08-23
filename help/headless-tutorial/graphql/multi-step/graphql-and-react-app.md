@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
+source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Zo krijgt u de React-app:
    >
    > Zorg ervoor u projectconfiguratie, de modellen van het Fragment van de Inhoud, authored de Fragmenten van de Inhoud, GraphQL eindpunten en voortgeduurde vragen van vorige stappen hebt gepubliceerd.
    >
-   > Als u bovenstaande stappen hebt uitgevoerd op de lokale AEM-auteur-SDK, kunt u naar `http://localhost:4502` en `REACT_APP_AUTH_METHOD`s waarde aan `basic`.
+   > Als u bovenstaande stappen hebt uitgevoerd op de lokale AEM Auteur-SDK, kunt u naar `http://localhost:4502` en `REACT_APP_AUTH_METHOD`s waarde aan `basic`.
 
 
 1. Ga vanaf de opdrachtregel naar de `aem-guides-wknd-graphql/basic-tutorial` map
@@ -489,6 +489,10 @@ Als u de naam van een persoon hebt geselecteerd in de weergave Teams, wordt de w
 ## Probeer de app
 
 De app controleren [http://localhost:3000/](http://localhost:3000/) en klik op _Leden_ koppelingen. Ook kunt u meer teams en/of leden aan het Alpha- Team toevoegen door de Fragmenten van de Inhoud in AEM toe te voegen.
+
+>[!IMPORTANT]
+>
+>Als u de wijzigingen in de implementatie wilt controleren of als u de toepassing niet kunt laten werken nadat de bovenstaande wijzigingen zijn aangebracht, raadpleegt u de [basiszelfstudie](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial) oplossingsvertakking.
 
 ## Onder de hood
 
