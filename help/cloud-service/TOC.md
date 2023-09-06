@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+source-git-commit: 6cbd8f3c49d44e75337715c35c198008da8ae7b9
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1023'
 ht-degree: 11%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 11%
 + Local Development Environment Setup {#local-development-environment-set-up}
    + [Overzicht](./local-development-environment/overview.md)
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
-   + [Lokale AEM](./local-development-environment/aem-runtime.md)
+   + [Lokale AEM Runtime](./local-development-environment/aem-runtime.md)
    + [Lokale verzendprogramma&#39;s](./local-development-environment/dispatcher-tools.md)
 + Ontwikkeling{#developing}
    + Uitbreidbaarheid{#extensibility}
@@ -108,7 +108,7 @@ ht-degree: 11%
       + [Overzicht](./developing/rde/overview.md)
       + [Hoe kan ik-instellingen](./developing/rde/how-to-setup.md)
       + [Hoe wordt het gebruikt](./developing/rde/how-to-use.md)
-      + [Levenscyclus](./developing/rde/development-life-cycle.md)
+      + [Levenscyclus van ontwikkeling](./developing/rde/development-life-cycle.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Foutopsporing AEM{#debugging}
    + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
@@ -128,6 +128,10 @@ ht-degree: 11%
          + [Traversale waarschuwingen](./debugging/cloud-service/risks/traversals.md)
 + Inhoud leveren{#content-delivery}
    + [URL-omleidingen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
++ Caching{#caching}
+   + [Overzicht](./caching/overview.md)
+   + [AEM-publicatieservice](./caching/publish.md)
+   + [AEM Auteur-service](./caching/author.md)
 + Toegang tot AEM{#accessing}
    + [Overzicht](./accessing/overview.md)
    + [Adobe IMS-gebruikers](./accessing/adobe-ims-users.md)
@@ -159,7 +163,7 @@ ht-degree: 11%
       + [BPA en CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [AEM Moderniseringsinstrumenten](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernisering opslagplaats](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [asset compute microservices](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [Asset compute microservices](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [Zoeken en indexeren](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Inhoud migreren {#content-migration}
@@ -189,11 +193,11 @@ ht-degree: 11%
       + [1 - Aan de slag](./forms/developing-for-cloud-service/getting-started.md)
       + [2 - Installeer IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
       + [3 - Instellingsopening](./forms/developing-for-cloud-service/setup-git.md)
-      + [4 - Synchroniseer IntelliJ met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [4 - Sync IntelliJ met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [5 - Een formulier maken](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Aangepaste verzendhandler](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - Forms Portal-componenten inschakelen](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Inclusief Cloud Services en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [8 - Inclusief Cloud Servicen en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [9 - Contextbewuste cloudconfiguratie](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [10 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [11 - Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
@@ -279,7 +283,7 @@ ht-degree: 11%
       + [Adaptief formulier maken](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integreren met Salesforce{#integrate-with-salesforce}
       + [Inleiding](./forms/integrate-with-salesforce/introduction.md)
-      + [Een verbonden app maken](./forms/integrate-with-salesforce/create-connected-app.md)
+      + [Gekoppelde app maken](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Wagerbestand maken](./forms/integrate-with-salesforce/describe-rest-api.md)
       + [Gegevensbron maken](./forms/integrate-with-salesforce/create-data-source.md)
       + [Formuliergegevensmodel maken](./forms/integrate-with-salesforce/create-form-data-model.md)
@@ -295,7 +299,7 @@ ht-degree: 11%
       + [Lokale ontwikkelomgeving](./asset-compute/set-up/development-environment.md)
       + [App Builder](./asset-compute/set-up/app-builder.md)
    + Ontwikkelen{#develop}
-      + [Een Asset compute-project maken](./asset-compute/develop/project.md)
+      + [Een Asset compute maken](./asset-compute/develop/project.md)
       + [Omgevingsvariabelen configureren](./asset-compute/develop/environment-variables.md)
       + [Vorm manifest.yml](./asset-compute/develop/manifest.md)
       + [Een worker ontwikkelen](./asset-compute/develop/worker.md)
@@ -340,7 +344,7 @@ ht-degree: 11%
          + [Fragmenten](./expert-resources/cloud-5/season-2/cloud5-experience-v-content-fragments.md)
          + [Repo Modernizer](./expert-resources/cloud-5/season-2/cloud5-repo-modernizer.md)
          + [Admin Console](./expert-resources/cloud-5/season-2/cloud5-admin-console.md)
-         + [HERSTELLEN](./expert-resources/cloud-5/season-2/cloud5-repoinit.md)
+         + [OPNIEUW](./expert-resources/cloud-5/season-2/cloud5-repoinit.md)
          + [Sling Job Scheduler](./expert-resources/cloud-5/season-2/cloud5-sling-job-scheduler.md)
          + [Cache corrigeren](./expert-resources/cloud-5/season-2/cloud5-fix-your-cache.md)
          + [Herschrijvingen herstellen](./expert-resources/cloud-5/season-2/cloud5-fix-your-rewrites.md)
