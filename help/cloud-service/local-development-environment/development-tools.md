@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 7a240374c42e2555be25e682c803f51f442fb7f7
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1483'
 ht-degree: 0%
 
 ---
@@ -70,11 +70,27 @@ Homebrew is een opensource-pakketbeheer voor macOS, Windows en Linux. Alle onder
 1. Open uw terminal
 1. Controleer of Homebrew al is geïnstalleerd door de opdracht uit te voeren: `brew --version`.
 1. Als Homebrew niet is geïnstalleerd, installeert u Homebrew
-   + [Homebrew installeren op macOS](https://brew.sh/)
-      + Homebrew op macOS vereist [Xcode](https://apps.apple.com/us/app/xcode/id497799835) of [Opdrachtregelgereedschappen](https://developer.apple.com/download/more/), installeerbaar via het bevel:
-         + `xcode-select --install`
-   + [Homebrew installeren op Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
-   + [Homebrew installeren in Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+[Homebrew op macOS](https://brew.sh/) vereist [Xcode](https://apps.apple.com/us/app/xcode/id497799835) of [Opdrachtregelgereedschappen](https://developer.apple.com/download/more/), installeerbaar via het bevel:
+
+```shell
+$ xcode-select --install
+```
+
+>[!TAB Windows]
+
+[Homebrew installeren in Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!TAB Linux]
+
+[Homebrew installeren op Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!ENDTABS]
+
 1. Controleer of Homebrew is geïnstalleerd door de opdracht uit te voeren: `brew --version`
 
 ![Homebrew](./assets/development-tools/homebrew.png)
@@ -161,7 +177,7 @@ Apache Maven is het opensource Java-opdrachtregelprogramma dat wordt gebruikt om
 
 De [ADOBE I/O CLI](https://github.com/adobe/aio-cli), of `aio`biedt opdrachtregeltoegang tot diverse Adobe-services, waaronder [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) en [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O CLI speelt een integrale rol in ontwikkeling op AEM as a Cloud Service aangezien het ontwikkelaars de capaciteit verleent om:
 
-+ Logboeken van AEM als Cloud Services
++ Logboeken van AEM als Cloud Service
 + Cloud Manager-pijpleidingen beheren vanuit de CLI
 + Distribueren naar [AEM snelle-ontwikkelomgevingen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
@@ -173,7 +189,7 @@ De [ADOBE I/O CLI](https://github.com/adobe/aio-cli), of `aio`biedt opdrachtrege
 
 ### De plug-in Adobe I/O CLI Cloud Manager instellen{#aio-cloud-manager}
 
-Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI via de `aio cloudmanager` gebruiken.
+Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI communiceren met Adobe Cloud Manager via de `aio cloudmanager` gebruiken.
 
 1. Uitvoeren `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` om de [Insteekmodule AIR Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
@@ -223,7 +239,7 @@ __[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ is een krachtige IDE voor d
 
 ### Microsoft Visual Studio-code
 
-__[Visual Studio-code](https://code.visualstudio.com/)__ (VS-code) is een gratis opensource-programma voor ontwikkelaars aan de voorkant. De Code van Visual Studio kan opstelling zijn om inhoudsync met AEM met behulp van een hulpmiddel van Adobe te integreren, __[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)__.
+__[Visual Studio-code](https://code.visualstudio.com/)__ (VS-code) is een gratis opensource-programma voor ontwikkelaars aan de voorkant. De Code van Visual Studio kan opstelling zijn om inhoudssynchronisatie met AEM met behulp van een hulpmiddel van de Adobe te integreren, __[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)__.
 
 De Code van Visual Studio is de ideale keus voor front-end ontwikkelaars hoofdzakelijk die front-end code creëren; JavaScript, CSS en HTML. Terwijl VS-code Java-ondersteuning heeft via [extensions](https://code.visualstudio.com/docs/java/java-tutorial)bepaalde geavanceerde functies van meer Java-specifieke functies ontbreken.
 
