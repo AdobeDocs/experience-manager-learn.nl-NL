@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: adfb805615d2abe34458d5aea685ae47517c5548
+source-git-commit: bac637440d1cc5af0e0abb119ca2f4e93f69cf34
 workflow-type: tm+mt
-source-wordcount: '1845'
+source-wordcount: '1851'
 ht-degree: 1%
 
 ---
@@ -176,6 +176,7 @@ ht-degree: 1%
    + [Knooppunt extraheren uit XML-document](custom-workflow-steps/extract-xml-node.md)
    + [Document opslaan naar bestandssysteem](custom-workflow-steps/write-payload-document.md)
    + [Verzonden gegevens opslaan in tekenreeksvariabele](custom-workflow-steps/save-submitted-data-in-string-variable.md)
+   + [Document uitnemen uit lijst met documenten](custom-workflow-steps/extract-document-from-list.md)
 + Aangepaste workflowcomponent{#custom-workflow-component}
    + [1-Inleiding](custom-workflow-component/introduction.md)
    + [Java-code met 2 schrijven](custom-workflow-component/custom-process-step-aem-workflow.md)
