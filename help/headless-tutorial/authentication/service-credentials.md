@@ -14,16 +14,16 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: f8ed9fddb5f244860ba229b46a80638a7269d95e
+source-git-commit: 65d8fd58f421a186e3624918c70cc5d79ec23700
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1967'
 ht-degree: 0%
 
 ---
 
 # Servicegegevens
 
-Integraties met as a Cloud Service Adobe Experience Manager (AEM) moeten veilig kunnen worden geverifieerd voor AEM service. AEM Developer Console biedt toegang tot servicerecertificaten, die worden gebruikt om externe toepassingen, systemen en services te helpen programmatisch te communiceren met AEM Author Publish-services via HTTP.
+Integraties met as a Cloud Service Adobe Experience Manager (AEM) moeten veilig kunnen worden geverifieerd voor AEM service. AEM Developer Console verleent toegang tot servicerecenties, die worden gebruikt om externe toepassingen, systemen en services te vergemakkelijken voor programmacode met AEM auteur- of publicatieservices via HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -41,12 +41,12 @@ Zowel dienen de Geloofsbrieven van de Dienst als de toegangstoken zij produceren
 
 Het genereren van servicekredieten wordt in twee stappen opgedeeld:
 
-1. Een eenmalige technische account aanmaken door een Adobe IMS Org-beheerder
+1. Een eenmalige technische account aanmaken door een Adobe IMS-beheerder
 1. Het downloaden en gebruiken van JSON (Service Credentials) van de technische account
 
 ### Een technische account maken
 
-In tegenstelling tot Local Development Access Tokens moeten servicerecertificaten door een Adobe Org IMS-beheerder worden aangemaakt voordat ze kunnen worden gedownload. De afzonderlijke Technische Rekeningen zouden voor elke cliënt moeten worden gecreeerd die programmatic toegang tot AEM vereist.
+In tegenstelling tot Local Development Access Tokens, vereisen servicerecertificaten dat een technische account wordt aangemaakt door een Adobe of IMS-beheerder voordat deze kunnen worden gedownload. De afzonderlijke Technische Rekeningen zouden voor elke cliënt moeten worden gecreeerd die programmatic toegang tot AEM vereist.
 
 ![Een technische account maken](assets/service-credentials/initialize-service-credentials.png)
 
@@ -54,7 +54,7 @@ De technische Rekeningen worden gecreeerd eens, nochtans het gebruik van Privé 
 
 1. Controleer of u bent aangemeld als een:
    + __Systeembeheerder van Adobe IMS Org__
-   + Lid van de __AEM__ IMS-productprofiel op __AEM-auteur__
+   + Lid van de __AEM__ IMS-productprofiel op __AEM auteur__
 1. Aanmelden bij [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM as a Cloud Service omgeving bevat om de instelling van de servicekredieten voor
 1. Tik op de ellips naast de omgeving in het dialoogvenster __Omgevingen__ en selecteert u __Ontwerpconsole__
@@ -75,7 +75,7 @@ Het downloaden van de Referentieformals van de Dienst volgt de gelijkaardige sta
 
 1. Controleer of u bent aangemeld als een:
    + __Beheerder van Adobe IMS Org__
-   + Lid van de __AEM__ IMS-productprofiel op __AEM-auteur__
+   + Lid van de __AEM__ IMS-productprofiel op __AEM auteur__
 1. Aanmelden bij [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Open het programma dat de AEM as a Cloud Service omgeving bevat om mee te integreren
 1. Tik op de ellips naast de omgeving in het dialoogvenster __Omgevingen__ en selecteert u __Ontwerpconsole__
@@ -92,7 +92,7 @@ De referenties van de Dienst verstrekken de details nodig om een JWT te producer
 
 Voor eenvoud, gaat dit leerprogramma de Credentials van de Dienst binnen via de bevellijn over. Werk echter samen met uw IT-beveiligingsteam om te begrijpen hoe deze gegevens moeten worden opgeslagen en geopend in overeenstemming met de beveiligingsrichtlijnen van uw organisatie.
 
-1. Kopieer de [De Service Credentials JSON downloaden](#download-service-credentials) naar een bestand met de naam `service_token.json` in de basis van het project
+1. De [De Service Credentials JSON downloaden](#download-service-credentials) naar een bestand met de naam `service_token.json` in de hoofdmap van het project
    + Onthouden, nooit vastleggen _om het even welke geloofsbrieven_ naar Git!
 
 ## Servicereferenties gebruiken
@@ -124,7 +124,7 @@ Om tot AEM as a Cloud Service toegang te hebben gebruikend de Referenties van de
 
 + Wanneer de Referenties van de Dienst aanwezig zijn, gebruikt de externe toepassing dit toegangstoken in plaats van het Lokale Token van de Toegang van de Ontwikkeling, wanneer de toegang tot AEM as a Cloud Service
 
-In deze zelfstudie kiest u Adobe `@adobe/jwt-auth` De npm module wordt gebruikt aan allebei, (1) produceert JWT van de Referenties van de Dienst, en (2) ruilt het voor een toegangstoken, in één enkele functievraag. Als uw toepassing niet is gebaseerd op JavaScript, raadpleegt u de [voorbeeldcode in andere talen](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) voor hoe u een JWT maakt van de servicekredieten en deze uitwisselt voor een toegangstoken met Adobe IMS.
+In deze zelfstudie `@adobe/jwt-auth` De npm module wordt gebruikt aan allebei, (1) produceert JWT van de Referenties van de Dienst, en (2) ruilt het voor een toegangstoken, in één enkele functievraag. Als uw toepassing niet is gebaseerd op JavaScript, raadpleegt u de [voorbeeldcode in andere talen](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) voor hoe u een JWT maakt van de servicekredieten en deze uitwisselt voor een toegangstoken met Adobe IMS.
 
 ## Lees de Referenties van de Dienst
 
@@ -207,7 +207,7 @@ Deze voorbeeldtoepassing is gebaseerd op Node.js, dus is het beter om te gebruik
    403 - Forbidden @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
    ```
 
-   De __403 - Verboden__ lijnen, wijzen op fouten in de HTTP API vraag aan AEM as a Cloud Service. Deze 403 Verboden fouten treden op wanneer wordt geprobeerd de metagegevens van de elementen bij te werken.
+   De __403 - verboden__ lijnen, wijzen op fouten in de HTTP API vraag aan AEM as a Cloud Service. Deze 403 Verboden fouten treden op wanneer wordt geprobeerd de metagegevens van de elementen bij te werken.
 
    De reden voor dit is het de toegangstoken van Credentials-Afgeleide van de Dienst verklaart het verzoek om AEM gebruikend een auto-gecreeerde technische rekening AEM gebruiker voor authentiek, die door gebrek, slechts gelezen toegang heeft. Om de toepassing te verstrekken schrijf toegang tot AEM, moet de technische rekening AEM gebruiker verbonden aan het toegangstoken toestemming in AEM worden verleend.
 
@@ -220,10 +220,11 @@ Het toegangstoken op basis van servicerecertificaten gebruikt een technische acc
 Zodra de technische rekening AEM gebruiker in AEM (na eerste HTTP- verzoek met het toegangstoken) bestaat, kunnen de toestemmingen van deze AEM gebruiker het zelfde als andere AEM gebruikers worden beheerd.
 
 1. Zoek eerst de aanmeldnaam van de AEM van de technische account door de Service Credentials te openen die JSON van AEM Developer Console heeft gedownload, en zoek de `integration.email` waarde, die er ongeveer als volgt uitziet: `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
-1. Meld u als AEM beheerder aan bij de bijbehorende AEM-service Auteur
+1. Meld u als AEM beheerder aan bij de bijbehorende AEM-service Auteur.
 1. Navigeren naar __Gereedschappen__ > __Beveiliging__ > __Gebruikers__
 1. Zoek de AEM gebruiker met de __Aanmeldingsnaam__ die in Stap 1 worden geïdentificeerd, en opent zijn __Eigenschappen__
 1. Ga naar de __Groepen__ en voegt u de __DAM-gebruikers__ groep (die als schrijf toegang tot activa)
+   + [Zie de lijst met AEM opgegeven gebruikersgroepen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) om de de dienstgebruiker aan voor de optimale toestemmingen toe te voegen. Als geen AEM opgegeven gebruikersgroep voldoende is, maakt u uw eigen gebruikersgroep en voegt u de juiste machtigingen toe.
 1. Tikken __Opslaan en sluiten__
 
 Voer de toepassing opnieuw uit terwijl de technische account in AEM schrijfmachtigingen voor elementen mag hebben:
@@ -260,4 +261,4 @@ De output aan de terminal kijkt als:
 
 ## Gefeliciteerd!
 
-Nu wij programmatically hebben betreden AEM as a Cloud Service gebruikend een lokaal toegangstoken van de ontwikkelingstoegang, en een productie-klaar dienst-aan-dienst toegangstoken!
+Nu wij programmatically hebben betreden AEM as a Cloud Service gebruikend een lokaal toegangstoken van de ontwikkelings, en een productie-klaar dienst-aan-dienst toegangstoken!
