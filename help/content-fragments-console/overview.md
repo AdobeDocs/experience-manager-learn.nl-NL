@@ -9,10 +9,10 @@ level: Beginner
 doc-type: Catalog
 last-substantial-update: 2023-05-12T00:00:00Z
 exl-id: 68caf431-8d81-4a72-a768-7b04082870d3
-source-git-commit: 73c7a13586edc5dbe16c16e017ee6f8ac91c1380
+source-git-commit: 89bc02b9ead98063ea31301b2e1f5a4d43cb5760
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 1%
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
@@ -28,17 +28,17 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
 
 
 <div class="columns is-multiline">
-    <!-- Overview -->
+    <!-- Console overview -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Overview" tabindex="1">
+      aria-label="Console overview" tabindex="1">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./basics/content-fragments-console.md" title="Overzicht"
+            <a href="./basics/content-fragments-console.md" title="Overzicht van console"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3409492?format=jpeg"
-                alt="Overzicht">
+                alt="Overzicht van console">
             </a>
           </figure>
         </div>
@@ -47,7 +47,7 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./basics/content-fragments-console.md" title="Overzicht">Overzicht</a>
+              <a href="./basics/content-fragments-console.md" title="Overzicht">Overzicht van console</a>
             </p>
             <p class="is-size-6">Een kort overzicht van de console van de Fragmenten van de Inhoud.</p>
             <a href="./basics/content-fragments-console.md" class="spectrum-Button
@@ -60,16 +60,48 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
         </div>
       </div>
     </div>
+    <!-- Editor overview -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Editor overview" tabindex="1">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./basics/content-fragment-editor.md" title="Editor-overzicht"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3424373?format=jpeg"
+                alt="Editor-overzicht">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">4 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./basics/content-fragment-editor.md" title="Overzicht">Editor-overzicht</a>
+            </p>
+            <p class="is-size-6">Een kort overzicht van de editor voor inhoudsfragmenten.</p>
+            <a href="./basics/content-fragment-editor.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
     <!-- Fast filtering -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
       aria-label="Fast filtering" tabindex="2">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./search/fast-filtering.md" title="Snel filteren"
+            <a href="./search/fast-filtering.md" title="Snelle filtering"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Snel filteren">
+                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Snelle filtering">
             </a>
           </figure>
         </div>
@@ -78,7 +110,7 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./search/fast-filtering.md" title="Snel filteren">Snel filteren</a>
+              <a href="./search/fast-filtering.md" title="Snelle filtering">Snelle filtering</a>
             </p>
             <p class="is-size-6">Zoek snel inhoudsfragmenten op met inlinefiltering.</p>
             <a href="./search/fast-filtering.md" class="spectrum-Button

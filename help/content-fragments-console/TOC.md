@@ -10,10 +10,10 @@ feature: Content Fragments
 topic: Content Management
 role: User
 team: TM
-source-git-commit: 73c7a13586edc5dbe16c16e017ee6f8ac91c1380
+source-git-commit: 89bc02b9ead98063ea31301b2e1f5a4d43cb5760
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 4%
+source-wordcount: '70'
+ht-degree: 2%
 
 ---
 
@@ -22,13 +22,14 @@ ht-degree: 4%
 
 + [Overzicht](overview.md)
 + Basisbeginselen{#basics}
-   + [Overzicht](./basics/content-fragments-console.md)
-+ Zoeken en ontdekken{#search}
-   + [Snel filteren](search/fast-filtering.md)
+   + [Overzicht van console](./basics/content-fragments-console.md)
+   + [Editor-overzicht](./basics/content-fragment-editor.md)
++ Zoeken en detecteren{#search}
+   + [Snelle filtering](search/fast-filtering.md)
    + [Verwijzingen](search/references.md)
 + Editor{#editor}
    + [Taalkopieën](editor/language-copies.md)
-   + [Schakelen tussen nieuwe editors](editor/new-editor-toggle.md)
+   + [Nieuwe editor schakelen](editor/new-editor-toggle.md)
    + [Verwijzingen naar niet-elementaire inhoud](editor/non-asset-content-references.md)
    + [RTE-variant vergelijken](editor/rte-variant-compare.md)
 + [Uitbreidbaarheid](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/extensibility/content-fragments/overview.html)
