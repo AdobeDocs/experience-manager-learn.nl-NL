@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 6754ccd7c17bcfa30b7200cb67f5ebd290912cb4
+source-git-commit: 1114ec01555baa1c6ffc2ccc5e77165ec9827e4d
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 Een kort voorbeeld van hefboomwerking [!DNL CORS] om via JavaScript op de client toegang te krijgen tot AEM inhoud van een externe webtoepassing. Dit voorbeeld gebruikt de configuratie CORS OSGi om de toegang van CORS op AEM toe te laten. De OSGi-configuratiebenadering is levensvatbaar wanneer:
 
-+ Eén oorsprong benadert AEM inhoud publiceren
-+ Toegang tot CORS is vereist voor AEM auteur
+* Eén oorsprong benadert AEM inhoud publiceren
+* Toegang tot CORS is vereist voor AEM auteur
 
 Als toegang van meerdere oorsprong vereist is voor AEM Publiceren, raadpleegt u [deze documentatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
