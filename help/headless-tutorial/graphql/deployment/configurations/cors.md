@@ -10,7 +10,7 @@ kt: 10830
 thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2023-08-08T00:00:00Z
-source-git-commit: f619c431d91271b2031dcb233f3e08c3008b78ed
+source-git-commit: 58347d4f8ef50375385342671f68c26502aecba4
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -33,20 +33,20 @@ CORS is vereist voor browsergebaseerde verbindingen met AEM GraphQL API&#39;s, w
 |----------------------------:|:---------------------:|:-------------:|:---------:|:----------------:|
 | Vereist configuratie CORS | ✔ | ✔ | ✘ | ✘ |
 
-## AEM-auteur
+## AEM auteur
 
-Het inschakelen van CORS op de AEM-auteurservice verschilt van de services voor publiceren en AEM van AEM. De dienst van de Auteur AEM vereist een configuratie OSGi die aan de omslag van de loopgebiedwijze van de dienst van de Auteur AEM moet worden toegevoegd, en gebruikt geen configuratie van de Ontvanger.
+Het inschakelen van CORS op AEM Auteur-service verschilt van AEM Services voor publiceren en AEM. AEM de dienst van de Auteur vereist een configuratie OSGi die aan de de wijze omslag van de wijze van de AEM dienst van de Auteur moet worden toegevoegd, en gebruikt geen configuratie van de Ontvanger.
 
 ### OSGi-configuratie
 
 De AEM OSGi-configuratiefabriek van CORS definieert de toegestane criteria voor het accepteren van HTTP-aanvragen van CORS.
 
-| Client maakt verbinding met | AEM-auteur | AEM-publicatie | Voorvertoning AEM |
+| Client maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Vereist de configuratie CORS OSGi | ✔ | ✘ | ✘ |
 
 
-In het onderstaande voorbeeld wordt een OSGi-configuratie voor AEM-auteur gedefinieerd (`../config.author/..`) is dus alleen actief op de AEM Author-service.
+In het onderstaande voorbeeld wordt een OSGi-configuratie voor AEM auteur gedefinieerd (`../config.author/..`) is dus alleen actief op AEM Auteur-service.
 
 De belangrijkste configuratieeigenschappen zijn:
 
@@ -55,12 +55,12 @@ De belangrijkste configuratieeigenschappen zijn:
    + Voeg het volgende patroon toe ter ondersteuning van AEM door GraphQL voortgezette query&#39;s: `/graphql/execute.json.*`
    + Voeg het volgende patroon toe ter ondersteuning van Experience Fragments: `/content/experience-fragments/.*`
 + `supportedmethods` geeft de toegestane HTTP-methoden voor de CORS-aanvragen aan. Om AEM GraphQL persisted query&#39;s (en Experience Fragments) te ondersteunen, voegt u `GET` .
-+ `supportedheaders` include `"Authorization"` als verzoeken aan de AEM-auteur moeten worden toegestaan.
-+ `supportscredentials` is ingesteld op `true` op verzoek aan de AEM-auteur moet worden toegestaan.
++ `supportedheaders` include `"Authorization"` als verzoeken aan AEM auteur moeten worden toegestaan.
++ `supportscredentials` is ingesteld op `true` als verzoek aan AEM auteur moet worden toegestaan.
 
 [Leer meer over de configuratie CORS OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 
-In het volgende voorbeeld wordt het gebruik van AEM GraphQL-query&#39;s op AEM-auteur ondersteund. Als u door de client gedefinieerde GraphQL-query&#39;s wilt gebruiken, voegt u een GraphQL-eindpunt-URL toe in `allowedpaths` en `POST` tot `supportedmethods`.
+In het volgende voorbeeld wordt het gebruik van AEM GraphQL-query&#39;s op AEM auteur ondersteund. Als u door de client gedefinieerde GraphQL-query&#39;s wilt gebruiken, voegt u een GraphQL-eindpunt-URL toe in `allowedpaths` en `POST` tot `supportedmethods`.
 
 + `/ui.config/src/main/content/jcr_root/apps/wknd-examples/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~graphql.cfg.json`
 
@@ -99,29 +99,29 @@ In het volgende voorbeeld wordt het gebruik van AEM GraphQL-query&#39;s op AEM-a
 
 + [Een voorbeeld van de configuratie OSGi kan in het project worden gevonden WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json)
 
-## AEM-publicatie
+## AEM publiceren
 
-Het inschakelen van CORS op AEM-services voor publiceren (en voorvertonen) verschilt van de AEM-auteurservice. Voor AEM-publicatieservice is een AEM Dispatcher-configuratie vereist die aan de configuratie Dispatcher van AEM Publish moet worden toegevoegd. In AEM-publicatie wordt geen [OSGi-configuratie](#osgi-configuration).
+Het inschakelen van CORS voor AEM publicatieservices (en voorvertoningen) verschilt van de AEM Auteur-service. AEM publicatieservice vereist een AEM Dispatcher-configuratie die moet worden toegevoegd aan de configuratie Dispatcher van AEM publiceren. AEM Publiceren gebruikt geen [OSGi-configuratie](#osgi-configuration).
 
-Wanneer het vormen van CORS op publiceren AEM, zorg ervoor:
+Zorg bij het configureren van CORS bij AEM publiceren voor:
 
-+ De `Origin` De HTTP-aanvraagheader kan niet naar de AEM-publicatieservice worden verzonden door de `Origin` header (indien eerder toegevoegd) van het project van de AEM Dispatcher `clientheaders.any` bestand. Alle `Access-Control-` Koppen moeten worden verwijderd uit de `clientheaders.any` en Dispatcher beheren deze, niet de AEM-publicatieservice.
-+ Als u [CORS OSGi-configuraties](#osgi-configuration) ingeschakeld op uw AEM-publicatieservice, moet u deze verwijderen en de configuraties ervan migreren naar de [Dispatcher-hostconfiguratie](#set-cors-headers-in-vhost) hieronder beschreven.
++ De `Origin` De HTTP- verzoekkopbal kan niet naar AEM de Publish dienst worden verzonden, door te verwijderen `Origin` header (indien eerder toegevoegd) van het project van de AEM Dispatcher `clientheaders.any` bestand. Alle `Access-Control-` Koppen moeten worden verwijderd uit de `clientheaders.any` en Dispatcher beheren deze, niet AEM de publicatieservice.
++ Als u [CORS OSGi-configuraties](#osgi-configuration) ingeschakeld op uw AEM publicatieservice, moet u deze verwijderen en hun configuraties migreren naar de [Dispatcher-hostconfiguratie](#set-cors-headers-in-vhost) hieronder beschreven.
 
 ### Dispatcher-configuratie
 
-De Dispatcher van de AEM-service Publiceren (en Voorvertoning) moet zijn geconfigureerd om CORS te ondersteunen.
+AEM de Dispatcher van de dienst van de Publicatie (en van de Voorproef) moet worden gevormd om CORS te steunen.
 
-| Client maakt verbinding met | AEM-auteur | AEM-publicatie | Voorvertoning AEM |
+| Client maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Vereist de configuratie van Dispatcher CORS | ✘ | ✔ | ✔ |
 
 #### CORS-koppen instellen in host
 
-1. Open het vhost-configuratiebestand voor de AEM-publicatieservice in uw Dispatcher-configuratieproject, meestal bij `dispatcher/src/conf.d/available_vhosts/<example>.vhost`
+1. Open het dossier van de gastheerconfiguratie voor de AEM publiceer dienst, in uw de configuratieproject van de Ontvanger, typisch bij `dispatcher/src/conf.d/available_vhosts/<example>.vhost`
 2. Kopieer de inhoud van het dialoogvenster `<IfDefine ENABLE_CORS>...</IfDefine>` blok hieronder, in uw toegelaten dossier van de gastheerconfiguratie.
 
-   ```{ highlight="19"}
+   ```{ highlight="17"}
    <VirtualHost *:80>
      ...
      <IfModule mod_headers.c>
@@ -176,7 +176,7 @@ De Dispatcher van de AEM-service Publiceren (en Voorvertoning) moet zijn geconfi
    </VirtualHost>
    ```
 
-3. Pas de gewenste Origins aan die tot uw de Publicatie van AEM toegang hebben door de regelmatige uitdrukking in de lijn hieronder bij te werken. Als meerdere oorsprong vereist zijn, dupliceert u deze regel en werkt u deze bij voor elk oorsprong-/oorsprongspatroon.
+3. Pas de gewenste Origins aan die tot uw AEM toegang hebben publiceer dienst door de regelmatige uitdrukking in de hieronder lijn bij te werken. Als meerdere oorsprong vereist zijn, dupliceert u deze regel en werkt u deze bij voor elk oorsprong-/oorsprongspatroon.
 
    ```
    SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*.your-domain.tld(:\d+)?$)#" CORSTrusted=true
