@@ -7,16 +7,21 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 46728ac6ad37590413e247d23262233626b0575b
+source-git-commit: 6754ccd7c17bcfa30b7200cb67f5ebd290912cb4
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
 # Ontwikkelen voor het delen van bronnen tussen verschillende bronnen (CORS)
 
-Een kort voorbeeld van hefboomwerking [!DNL CORS] om via JavaScript op de client toegang te krijgen tot AEM inhoud van een externe webtoepassing.
+Een kort voorbeeld van hefboomwerking [!DNL CORS] om via JavaScript op de client toegang te krijgen tot AEM inhoud van een externe webtoepassing. Dit voorbeeld gebruikt de configuratie CORS OSGi om de toegang van CORS op AEM toe te laten. De OSGi-configuratiebenadering is levensvatbaar wanneer:
+
++ Eén oorsprong benadert AEM inhoud publiceren
++ Toegang tot CORS is vereist voor AEM auteur
+
+Als toegang van meerdere oorsprong vereist is voor AEM Publiceren, raadpleegt u [deze documentatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
@@ -109,7 +114,7 @@ Om de vereiste [HTTP-aanvraagheaders om door te gaan naar AEM voor verwerking](h
 
 ### CORS-responsheaders in cache plaatsen
 
-Als u het in cache plaatsen en serveren van CORS-kopteksten wilt toestaan voor inhoud in cache, voegt u het volgende toe [/cache /headers-configuratie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) naar de AEM-publicatie `dispatcher.any` bestand.
+Als u het in cache plaatsen en serveren van CORS-kopteksten wilt toestaan voor inhoud in cache, voegt u het volgende toe [/cache /headers-configuratie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) op de AEM Publiceren `dispatcher.any` bestand.
 
 ```
 /publishfarm {
