@@ -1,6 +1,6 @@
 ---
-title: Lokale AEM-runtime instellen voor AEM as a Cloud Service ontwikkeling
-description: Opstelling Lokale AEM Runtime gebruikend de AEM as a Cloud Service Jar van QuickStart van SDK.
+title: De lokale AEM SDK instellen voor AEM as a Cloud Service ontwikkeling
+description: Stel de lokale AEM SDK-runtime in met de QuickStart Jar van de AEM as a Cloud Service SDK.
 feature: Developer Tools
 version: Cloud Service
 kt: 4678, 4677
@@ -10,14 +10,14 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1793'
 ht-degree: 1%
 
 ---
 
-# Lokale AEM-runtime instellen {#set-up-local-aem-runtime}
+# SDK voor lokale AEM instellen {#set-up-local-aem-sdk}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
@@ -63,7 +63,7 @@ $ java --version
 
 ## Download de AEM as a Cloud Service SDK
 
-De AEM as a Cloud Service SDK, of AEM SDK, bevat de Quickstart Jar die wordt gebruikt om AEM Auteur in werking te stellen en plaatselijk te publiceren voor ontwikkeling, evenals de compatibele versie van de Hulpmiddelen van de Verzender.
+De AEM as a Cloud Service SDK, of AEM SDK, bevat de Quickstart Jar die wordt gebruikt om AEM Auteur en Publish plaatselijk voor ontwikkeling in werking te stellen, evenals de compatibele versie van de Hulpmiddelen van de Verzender.
 
 1. Aanmelden bij [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) met uw Adobe ID
    + Merk op dat uw organisatie van de Adobe __moet__ is ingericht voor AEM as a Cloud Service om de AEM as a Cloud Service SDK te downloaden.
@@ -76,18 +76,18 @@ De AEM as a Cloud Service SDK, of AEM SDK, bevat de Quickstart Jar die wordt geb
 
 1. De gedownloade gegevens decomprimeren `aem-sdk-XXX.zip` file
 
-## Lokale AEM-auteurservice instellen{#set-up-local-aem-author-service}
+## Lokale AEM Auteur-service instellen{#set-up-local-aem-author-service}
 
-De lokale AEM Author Service biedt ontwikkelaars een lokale ervaring met auteurs van digitale markten/content die ze delen om inhoud te maken en te beheren.  De AEM AuteurDienst wordt ontworpen zowel als creatie als voorproefmilieu, toestaand de meeste bevestigingen van eigenschapontwikkeling kunnen tegen het worden uitgevoerd, die tot het een essentieel element van het lokale ontwikkelingsproces maken.
+De lokale AEM Auteur Service biedt ontwikkelaars een lokale ervaring met ontwerpers van digitale markten/content die ze delen om inhoud te maken en te beheren.  AEM Auteursdienst wordt ontworpen zowel als creatie als voorproefmilieu, toestaand de meeste bevestigingen van eigenschapontwikkeling kunnen tegen het worden uitgevoerd, die tot het een essentieel element van het lokale ontwikkelingsproces maken.
 
 1. De map maken `~/aem-sdk/author`
 1. De __QuickStart JAR__ bestand naar  `~/aem-sdk/author` en hernoemen `aem-author-p4502.jar`
-1. Start de lokale AEM-auteurservice door het volgende uit te voeren vanaf de opdrachtregel:
+1. Start de lokale AEM Auteur Service door het volgende uit te voeren vanaf de opdrachtregel:
    + `java -jar aem-author-p4502.jar`
       + Geef het beheerderswachtwoord op als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert zijn om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
 
    U *kan* start de AEM als Cloud Service QuickStart Jar [door te dubbelklikken](#troubleshooting-double-click).
-1. Ga naar de lokale AEM-auteurservice op [http://localhost:4502](http://localhost:4502) in een webbrowser
+1. Ga naar de lokale AEM Auteur-service op [http://localhost:4502](http://localhost:4502) in een webbrowser
 
 >[!BEGINTABS]
 
@@ -121,18 +121,18 @@ $ java -jar aem-author-p4502.jar
 >[!ENDTABS]
 
 
-## Lokale AEM-publicatieservice instellen
+## Lokale AEM publicatieservice instellen
 
-De lokale AEM-publicatieservice biedt ontwikkelaars de lokale ervaring die eindgebruikers van de AEM zullen hebben, zoals bladeren door de website die op AEM wordt gehost. Een lokale AEM-publicatieservice is belangrijk omdat deze integreert met AEM SDK&#39;s [Verzendgereedschappen](./dispatcher-tools.md) en stelt ontwikkelaars in staat de ervaring voor eindgebruikers te testen en te verfijnen.
+De lokale AEM publicatieservice biedt ontwikkelaars de lokale ervaring die eindgebruikers van de AEM zullen hebben, zoals bladeren door de website die op AEM wordt gehost. Een lokale AEM publicatieservice is belangrijk omdat deze integreert met AEM SDK&#39;s [Verzendgereedschappen](./dispatcher-tools.md) en stelt ontwikkelaars in staat de ervaring voor eindgebruikers te testen en te verfijnen.
 
 1. De map maken `~/aem-sdk/publish`
 1. De __QuickStart JAR__ bestand naar  `~/aem-sdk/publish` en hernoemen `aem-publish-p4503.jar`
-1. Start de lokale AEM-publicatieservice door het volgende vanaf de opdrachtregel uit te voeren:
+1. Start de lokale AEM publicatieservice door het volgende vanaf de opdrachtregel uit te voeren:
    + `java -jar aem-publish-p4503.jar`
       + Geef het beheerderswachtwoord op als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert zijn om het gebrek voor lokale ontwikkeling te gebruiken om de behoefte te verminderen om te vormen.
 
    U *kan* start de AEM als Cloud Service QuickStart Jar [door te dubbelklikken](#troubleshooting-double-click).
-1. Ga naar de lokale AEM-publicatieservice op [http://localhost:4503](http://localhost:4503) in een webbrowser
+1. Heb toegang tot de lokale AEM publicatieservice bij [http://localhost:4503](http://localhost:4503) in een webbrowser
 
 >[!BEGINTABS]
 
@@ -168,7 +168,7 @@ $ java -jar aem-publish-p4503.jar
 
 ## Lokale AEM instellen in de pre-releasemodus
 
-De lokale AEM-runtime kan worden gestart in [pre-releasemodus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html) zodat een ontwikkelaar kan bouwen op basis van de functies van de volgende release van de AEM as a Cloud Service. Prerelease wordt ingeschakeld door het `-r prerelease` argument op het eerste begin van de lokale AEM runtime. Dit kan zowel met de lokale auteur van AEM als met de publicatieservices van AEM worden gebruikt.
+De lokale AEM-runtime kan worden gestart in [pre-releasemodus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html) zodat een ontwikkelaar kan bouwen op basis van de functies van de volgende release van de AEM as a Cloud Service. Prerelease wordt ingeschakeld door het `-r prerelease` argument op het eerste begin van de lokale AEM runtime. Dit kan zowel met lokale AEM Auteur als AEM de diensten van de Publicatie worden gebruikt.
 
 
 >[!BEGINTABS]
@@ -259,14 +259,14 @@ De beschikbare permutaties zijn als volgt:
 
 Merk op dat het havenaantal om het even welke beschikbare haven op de lokale ontwikkelingsmachine kan zijn, echter door overeenkomst:
 
-+ Poort __4502__ wordt gebruikt voor de __lokale AEM-auteur-service__
-+ Poort __4503__ wordt gebruikt voor de __lokale AEM-publicatieservice__
++ Poort __4502__ wordt gebruikt voor de __lokale AEM Auteur-service__
++ Poort __4503__ wordt gebruikt voor de __lokale AEM publicatieservice__
 
 Het wijzigen van deze instellingen kan aanpassingen in AEM SDK-configuraties vereisen
 
 ## Een lokale AEM-runtime stoppen
 
-Als u een lokale AEM-runtime wilt stoppen, opent u het opdrachtregelvenster dat is gebruikt om de AEM-runtime te starten, en tikt u op `Ctrl-C`. Wacht tot AEM is afgesloten. Wanneer het sluitingsproces volledig is, is de herinnering van de bevellijn beschikbaar.
+Als u een lokale AEM-runtime wilt stoppen, AEM de service Auteur of Publiceren, opent u het opdrachtregelvenster dat is gebruikt om de AEM-runtime te starten en tikt u op `Ctrl-C`. Wacht tot AEM is afgesloten. Wanneer het sluitingsproces volledig is, is de herinnering van de bevellijn beschikbaar.
 
 ## Optionele lokale AEM-runtime instellingstaken
 
@@ -300,7 +300,7 @@ Wanneer u dubbelklikt op de Quickstart Jar om te starten, wordt een modaal foutb
 
 Dit komt doordat AEM as a Cloud Service QuickStart Jar dubbelklikken van de QuickStart Jar om AEM lokaal te starten niet ondersteunt. In plaats daarvan moet u het Jar-bestand vanaf die opdrachtregel uitvoeren.
 
-AEM-auteurservice starten `cd` in de directory met de Quickstart Jar en voer de opdracht uit:
+Ga als volgt te werk om AEM Auteur te starten: `cd` in de directory met de Quickstart Jar en voer de opdracht uit:
 
 >[!BEGINTABS]
 
@@ -324,7 +324,7 @@ $ java -jar aem-author-p4502.jar
 
 >[!ENDTABS]
 
-of, om AEM Publish Service te starten, `cd` in de directory met de Quickstart Jar en voer de opdracht uit:
+of, om AEM publicatieservice te starten, `cd` in de directory met de Quickstart Jar en voer de opdracht uit:
 
 >[!BEGINTABS]
 

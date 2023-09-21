@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 6cbd8f3c49d44e75337715c35c198008da8ae7b9
+source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 11%
@@ -55,7 +55,7 @@ ht-degree: 11%
 + Local Development Environment Setup {#local-development-environment-set-up}
    + [Overzicht](./local-development-environment/overview.md)
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
-   + [Lokale AEM Runtime](./local-development-environment/aem-runtime.md)
+   + [Lokale AEM SDK](./local-development-environment/aem-runtime.md)
    + [Lokale verzendprogramma&#39;s](./local-development-environment/dispatcher-tools.md)
 + Ontwikkeling{#developing}
    + Uitbreidbaarheid{#extensibility}
