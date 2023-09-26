@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 237560dc634cb3d6c3553dd57386d2a9548ed4e5
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '361'
 ht-degree: 5%
 
 ---
@@ -18,27 +18,22 @@ ht-degree: 5%
 
 Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaringsbeheer. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Sites.
 
-
-<div id="whats-new-section">
+<div id="whats-new-section-skip"></div>
 
 ## Wat is er nieuw
 
-* **[Starten gebruiken met AEM Sites (video)](./page-authoring/launches.md)**
-  *Meer informatie over AEM Sites&#39;Launches en hoe u deze kunt gebruiken om inhoud van websites voor te bereiden voor toekomstige release.*
+* **[Overzicht van AEM en Edge Delivery Services (video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)**
+  *Ontdek de uitgebreide wereld van Adobe Experience Manager (AEM) die AEM Sites, AEM Assets, AEM Headless, AEM Forms en Edge Delivery Services omvat in deze informatieve overzichtsvideo.*
 
-* **[De gegevenslaag van de client-Adobe aanpassen met AEM componenten (zelfstudie)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
-  *Leer hoe te om de Laag van Gegevens van de Cliënt van de Adobe met inhoud van douane AEM Componenten bij te werken.*
+* **[Wat zijn AEM en Edge Delivery Services? (Video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html)**
+  *Meer informatie over de waarde die Adobe Experience Manager (AEM) en Edge Delivery Services bieden.*
 
-* **[Aan de slag met AEM GraphQL zonder koptekst (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
-  *Hoe u inhoud van AEM toegankelijk maakt voor gebruik door een systeemeigen mobiele app met behulp van GraphQL-API&#39;s.*
+* **[Meer informatie over de ontwikkeling van AEM (video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/evolution.html)**
+  *Leer over AEM evolutie en de waarde het, van AEM 6.5 tot AEM as a Cloud Service, en tenslotte aan Edge Delivery Services verstrekt.*
 
-* **[Inhoudsfragmenten gebruiken (videoreeks)](./content-fragments/content-fragments-feature-video-use.md)**
-  *Inhoudsfragmenten zijn akoestische stukken inhoud die opnieuw kunnen worden gebruikt.*
+* **[AEM met architecturaal overzicht van Edge Delivery Services (video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
+  *Meer weten over AEM as a Cloud Service architectuur!*
 
-* **[De SPA-editor gebruiken (video)](./spa-editor/spa-editor-framework-feature-video-use.md)**
-  *Meer informatie over AEM bewerkingsmogelijkheden voor toepassingen op één pagina (SPA).*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
