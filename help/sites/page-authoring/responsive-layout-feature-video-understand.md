@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c125c0e0-1ed2-463e-bd34-767d009479eb
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 1%
@@ -23,6 +23,8 @@ ht-degree: 1%
 ---
 
 # Responsieve lay-out begrijpen {#understanding-responsive-layout-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 Adobe Experience Manager Sites stelt een auteur in staat de breedte van een component te beheren op basis van de apparaatbreedte om een responsief siteontwerp mogelijk te maken. Met de lay-outmodus en de container voor lay-out kunnen gebruikers responsieve inhoud voor verschillende apparaten maken en een voorvertoning van de gebruikerservaring weergeven, zonder de AEM-interface te verlaten.
 

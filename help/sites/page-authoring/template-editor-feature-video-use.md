@@ -14,7 +14,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 ---
 
 # Bewerkbare paginasjablonen gebruiken{#using-template-editor-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken en bijwerken en geavanceerde beleidsconfiguraties beheren met Adobe Experience Manager-sites (AEM).
 
@@ -34,7 +36,7 @@ Bewerkbare sjablonen zijn de aanbevelingen voor het bouwen van nieuwe AEM Sites.
 **Geavanceerde beleidsconfiguraties** - In het volgende voorbeeld worden enkele geavanceerde beleidsconfiguraties gemarkeerd die beschikbaar zijn gesteld met Bewerkbare sjablonen:
 
 * **Layout Container** - de mogelijkheid om toegestane componenten te configureren, de toewijzing Slepen + neerzetten van elementen en responsieve rasterkolommen te beheren.
-* **Tekstcomponent** - mogelijkheid om Rich Text Editor-plug-ins te configureren met een nieuwe UI en RTE-beleid te hergebruiken in sjablonen.
+* **Tekstcomponent** - de capaciteit om de Insteekmodules van de Redacteur van de RTF met een nieuwe UI te vormen en het beleid van RTE over malplaatjes opnieuw te gebruiken.
 * **Afbeeldingscomponent** - de mogelijkheid om functies zoals uitsnijden, het uploaden van bestanden op het bureaublad in te schakelen of uit te schakelen met een nieuwe gebruikersinterface en het afbeeldingsbeleid te hergebruiken in sjablonen.
 
 Bewerkbare sjablonen vindt u onder **Gereedschappen** `>` **Algemeen** `>` **Sjablonen**.\
@@ -43,4 +45,4 @@ Bewerkbare URL voor sjablonen (lokale AEM): [http://localhost:4502/libs/wcm/core
 ## Aanvullende bronnen {#additional-resources}
 
 * [Bewerkbare paginasjablonen - Documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
-* [Bezig met maken van paginasjablonen - Documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
+* [Paginasjablonen maken - Documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)

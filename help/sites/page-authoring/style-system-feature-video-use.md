@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
@@ -23,6 +23,8 @@ ht-degree: 1%
 ---
 
 # Het stijlsysteem gebruiken {#using-the-style-system-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van componenten maken zonder back-endontwikkeling, waardoor AEM componenten beter kunnen worden hergebruikt en content flexibeler en efficiënter kan worden gemaakt. Het systeem van de Stijl, wanneer gebruikt samen met AEM de Componenten van de Kern, malplaatjeredacteur, en ontvankelijke lay-out, biedt krachtige mogelijkheden om rijke ervaringen snel samen te stellen.
 

@@ -9,7 +9,7 @@ level: Beginner
 kt: 4321
 thumbnail: 32192.jpg
 exl-id: 41b40982-9796-418e-9bfc-af6fc720e9b8
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 8%
@@ -17,6 +17,8 @@ ht-degree: 8%
 ---
 
 # Pagina-eigenschappen {#understanding-page-properties-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 In de volgende video worden de pagina-eigenschappen geïntroduceerd die aan een pagina in Adobe Experience Manager zijn gekoppeld.
 
@@ -48,7 +50,7 @@ In deze video worden de volgende pagina-eigenschapelementen behandeld:
    * Exporteren
 * Miniatuur
 * Delen via sociale media
-* Configuraties van Cloud Services
+* Configuraties van Cloud Servicen
 * Personalisatie
    * ContextHub-configuraties
    * Doelconfiguratie

@@ -1,5 +1,5 @@
 ---
-title: Hoe te om AEM React Editable Componenten v2 te gebruiken
+title: Hoe AEM React Editable Components v2 te gebruiken
 description: Leer hoe u AEM React Editable Components v2 kunt gebruiken om een React-app te activeren.
 version: Cloud Service
 topic: Headless
@@ -9,20 +9,22 @@ level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
 
 ---
 
-# Hoe te om AEM React Editable Componenten v2 te gebruiken
+# Hoe AEM React Editable Components v2 te gebruiken
+
+{{edge-delivery-services}}
 
 AEM biedt [AEM bewerkbare componenten React v2](https://www.npmjs.com/package/@adobe/aem-react-editable-components), een op Node.js-Gebaseerde SDK die de verwezenlijking van componenten van het Reageren toestaat, die in-context component het uitgeven gebruikend AEM Redacteur steunen SPA.
 
 + [npm-module](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 + [Github-project](https://github.com/adobe/aem-react-editable-components)
-+ [Adobe-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
++ [Documentatie Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
 
 
 Raadpleeg de technische documentatie voor meer informatie en codevoorbeelden voor AEM React Editable Components v2:
@@ -69,7 +71,7 @@ Als u de AEM Bewerkbare componenten Reageren gebruikt met een React-app die is g
 1. Hiermee wordt inhoud opgehaald van AEM
 1. Hiermee vult u de bewerkbare componenten React met AEM inhoud in
 
-Plaats de React-app met een geïnitialiseerde ModelManager en geef de React-app weer. De React-app moet één instantie van de `<Page>` component geëxporteerd uit `@adobe/aem-react-editable-components`. De `<Page>` component heeft logica om React componenten dynamisch tot stand te brengen die op `.model.json` verstrekt door AEM.
+Plaats de React-app met een geïnitialiseerde ModelManager en geef de React-app weer. De React-app moet één instantie van de `<Page>` component geëxporteerd uit `@adobe/aem-react-editable-components`. De `<Page>` component heeft logica om React componenten dynamisch te creëren die op `.model.json` verstrekt door AEM.
 
 + `src/index.js`
 
@@ -97,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-De `<Page>` wordt doorgegeven als de weergave van de AEM pagina als JSON, via de `pageModel` door de `ModelManager`. De `<Page>` maakt dynamisch componenten React voor objecten in de `pageModel` door de `resourceType` met een component React die zich bij het middeltype via registreert `MapTo(..)`.
+De `<Page>` wordt doorgegeven als de weergave van de AEM pagina als JSON, via de `pageModel` door de `ModelManager`. De `<Page>` component maakt dynamisch React-componenten voor objecten in de `pageModel` door de `resourceType` met een component React die zich bij het middeltype via registreert `MapTo(..)`.
 
 ## Bewerkbare componenten
 
@@ -117,7 +119,7 @@ De `<Page>` wordt de weergave van de AEM pagina als JSON doorgegeven via de `Mod
 ...
 ```
 
-Bovenstaande JSON die door AEM wordt verstrekt zou kunnen worden gebruikt om een editable component van de Reactie dynamisch te concretiseren en te bevolken.
+De bovenstaande JSON die door AEM wordt geboden, kan worden gebruikt om een bewerkbare React-component dynamisch te instantiëren en te vullen.
 
 ```javascript
 import React from "react";

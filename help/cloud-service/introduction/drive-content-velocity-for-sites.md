@@ -3,7 +3,7 @@ title: Snelheid van inhoud besturen met Adobe Experience Manager
 description: Leer meer over snelheid van inhoud en de waarde ervan in bedrijfsorganisaties. Duik in vier principes van effectieve implementatie en de valkuilen die onderweg moeten uitzien.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: de31d6e97b84781aa05ca441fc6e9fc4bc59ccc3
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '2814'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Snelheid van inhoud besturen met Adobe Experience Manager
+
+{{edge-delivery-services}}
 
 Als leider van de Ervaring van de Klant, weten wij hoe uitdagend het voor u kan zijn om ervoor te zorgen u het juiste kader en de principes hebt om inhoudssnelheid-componenten te drijven essentieel om de ware waarde van uw platform van Adobe Experience Manager te ontsluiten. In dit artikel bekijken we de snelheid van de inhoud en de waarde ervan binnen organisaties van bedrijven. Vervolgens duiken we in vier principes van effectieve implementatie en de valkuilen die we onderweg moeten uitzoeken.
 
@@ -44,14 +46,14 @@ De problemen u kunt ontmoeten omvatten:
 
 * Nieuwe productfuncties die niet kunnen worden geïmplementeerd vanwege aanpassingen
 * Werkstromen met stilstaande beelden
-* Gebrek aan communicatie
+* Geen communicatie
 * Creatieve frustratie met technische garanties
 
 Het tegelijkertijd aanpakken van deze problemen is ontmoedigend. Aan de andere kant leidt het proberen om elk stuk-voor-stuk op te lossen tot frustratie, aangezien elk van de werkstromen binnen de inhoudslevenscyclus onvermijdelijk met elkaar overlapt.
 
 Hoe een individuele belanghebbende-van creatief, de technische, of functionele zij-door de veelvoudige lagen van beheer, strategie, en administratieve doelstellingen wordt gegolden? Hoe worden silo&#39;s afgeschaft op basis van nevendoelstellingen en perifere strategische doelstellingen die elkaar zouden kunnen informeren? Hoe kunnen zij dat doen wanneer deze overlapping voor de belanghebbenden niet zichtbaar is?
 
-Het antwoord: een individuele belanghebbende kan dat niet . Wanneer het richten van de organisatie aan de oplossing, moet het besluit als geheel worden genomen omdat het het volledige team beïnvloedt.
+Het antwoord: een individuele belanghebbende kan dat niet. Wanneer het richten van de organisatie aan de oplossing, moet het besluit als geheel worden genomen omdat het het volledige team beïnvloedt.
 
 Belangrijker nog, de vonk van transformatie moet fundamenteel uit leiderschap komen. Slechts wanneer de leiding in organisatorische verandering wordt geïnvesteerd en de tastbare voordelen van het kan voorzien, zal het aangewezen organisatorische ontwerp en de processen-die kritiek zijn aan het gebruiken van een onderneming-vlakke oplossing-worden gecreeerd.
 
@@ -59,7 +61,7 @@ Dit komt omdat de snelheid van CMS op bedrijfsniveau uiteindelijk draait om inho
 
 Steeds weer hebben we gezien dat de reis van een zijdelings model naar een flexibel en snel model voortkomt uit die eerste en krachtige stem in het leiderschap. Voor een goed begrip dat de levenscyclus van de inhoud op een bepaalde manier moet worden benaderd, is een nieuwe beeldvorming nodig via het team: van de maker tot de tester. En dat besluit punt-dat realisatie-dat het drijven inhoud is geen vraag van welk hulpmiddel, maar hoe wij het ontwerpen.
 
-_&quot;Wanneer u op een andere manier over inhoud begint na te denken, brengt u verschillende groepen aan de lijst die misschien niet bij elkaar zijn geweest. Van product en ontwikkeling tot door de klant geleid ervaren ontwerp, hebt u natuurlijk verschillende partijen om die dingen te bouwen. Intern was leiderschapsondersteuning en &#39;buy-in&#39; de grootste factor voor onze digitale transformatie.&quot;_ - Monique Misrahi, T-Mobile
+_&quot;Wanneer u op een andere manier over inhoud begint na te denken, brengt u verschillende groepen aan de lijst die misschien niet samen waren. Van product en ontwikkeling tot door de klant geleid ervaren ontwerp, hebt u natuurlijk verschillende partijen om die dingen te bouwen. Intern was leiderschapsondersteuning en &#39;buy-in&#39; de grootste factor voor onze digitale transformatie.&quot;_ - Monique Misrahi, T-Mobile
 
 _&quot;De steun, de richting, en de visie van het leiderschap waren een kritieke factor. Het fantastische was dat ons leiderschap inclusief was en open voor input. Ze luisterden.&quot;_ - Amy Bergstrom, Deloitte
 
@@ -75,16 +77,16 @@ Om dit punt te illustreren, kijken een voorbeeld van een ondernemingsorganisatie
 
 De vraag is of u inhoud gaat tegenhouden tot alle merken op een uniforme manier werken. Is het verstandig om voor hen allemaal een oplossing te vinden voor verandering?
 
-Het antwoord is neen. Dit zou de complexiteit vergroten. Bovendien zullen veel belanghebbenden gefrustreerd raken door eindeloze gesprekken over de oude, waardoor pogingen om de nieuwe te bouwen worden gefrustreerd. Men wordt gesloten in een gesprek _info_ veranderen, in plaats van het te maken.
+Het antwoord is neen. Dit zou de complexiteit doen toenemen. Bovendien zullen veel belanghebbenden gefrustreerd raken door eindeloze gesprekken over de oude, waardoor pogingen om de nieuwe te bouwen worden gefrustreerd. Men wordt gesloten in een gesprek _info_ veranderen, in plaats van het te maken.
 
-Er is een concreet kader nodig. Een nieuw paradigma om voor te werken. Iets dat mensen kunnen zien en voelen. In het verleden kan inhoud worden beschouwd als een pagina, een campagne of alles wat in het singulaire wordt voorgesteld. De fundamentele verschuiving is om inhoud als inhoud zelf te zien: om opnieuw te worden gebruikt, opnieuw te worden vormgegeven en te worden gerecycled naar het ontwerpteam. De kern nieuwe ontwikkeling zou voor doel-rijke ervaringen moeten worden gebruikt.
+Er is een concreet kader nodig. Een nieuw paradigma om voor te werken. Iets dat mensen kunnen zien en voelen. In het verleden kan inhoud worden beschouwd als een pagina, een campagne of alles wat in het singulaire wordt voorgesteld. De fundamentele verschuiving is om inhoud als inhoud zelf te zien: om opnieuw te worden gebruikt, opnieuw te worden vormgegeven, en terug te keren naar het ontwerpteam. De kern nieuwe ontwikkeling zou voor doel-rijke ervaringen moeten worden gebruikt.
 
 Voor veel klanten is de beste manier om wijzigingen door te voeren het maken van een mini-site, een merk of een afzonderlijke sectie van de site die als testcase voor het nieuwe framework kan worden gebruikt. Als u één onderdeel van de organisatie kiest als concepttest, kunt u:
 
 * Een geïntegreerde groep belanghebbenden oprichten die het nieuwe kader wil begrijpen
 * cyclische detectiesessies reduceren en sneller bouwen
 * De waarschijnlijkheid en snelheid van de inkoop van belanghebbenden vergroten
-* Los de tactische moeren en bouten op en verbeter de hiaten alvorens de veranderingen in schaal opnieuw toe te passen
+* Los de tactische moeren en bouten op en verbeter de gaten voordat u de schaalwijzigingen opnieuw toepast
 
 _&quot;Wij hebben onze organisatie van het ervaringsontwerp veranderd in een meer online mening van de klant. We hebben een ontwerpsysteemkaderteam gebouwd dat volledig definieert wat onze inhoudcomponenten zullen zijn en hoe ze zullen worden gebruikt. Dit heeft ons geholpen om een niveau van inhoudssnelheid te bereiken dat we ons nooit konden voorstellen.&quot;_ - Monique Misrahi, T-Mobile
 
@@ -108,7 +110,7 @@ Hier zijn vier mijlpalen om tijdens de uitvoeringsfase uit te bouwen:
 
    Hoewel aanvankelijk een gecentraliseerde wijze van bestuur langzamer kan lijken, met de verzamelde procesinzichten, en de transparante verantwoordingsplicht over bedrijfsgebruikers die wordt geïnitieerd, is het algemene traject sneller.
 
-   De beslissing over de richting die moet worden ingeslagen, hangt uiteindelijk af van het algemene strategische doel van de organisatie. Het kan neerkomen op het kiezen tussen verbeterde flexibiliteit voor zakelijke gebruikers of een uniforme ervaring voor verschillende merken. Uitlijnen op het juiste model is essentieel voor een correcte uitvoering.
+   De beslissing over de richting die moet worden ingeslagen, hangt uiteindelijk af van het algemene strategische doel van de organisatie. Het kan neerkomen op het kiezen tussen verbeterde flexibiliteit voor zakelijke gebruikers of een uniforme ervaring voor verschillende merken. Het uitlijnen op het juiste model is essentieel voor een correcte uitvoering.
 
 1. **Een controle van de eigendom van inhoud uitvoeren**
 
@@ -138,31 +140,31 @@ Hier zijn vier mijlpalen om tijdens de uitvoeringsfase uit te bouwen:
 
    _&quot;Verschuiving van de indset is vereist rond de inhoud. Veel content-professionals hebben hun carrière doorgemaakt met de lens van kanaalspecifieke, merkspecifieke of paginaspecifieke inhoud. Het is tijd om holistisch te denken en tijd toe te staan voor die verkenning.&quot;_ - Monique Misrahi, T-Mobile
 
-   _&quot;Een gecentraliseerde inhoudsstrategie helpt ons dubbel werk te voorkomen. We oververzadigen de markt niet en zeggen geen verschillende dingen over vergelijkbare onderwerpen. Het helpt ons onze volledige bibliotheek van inhoud te optimaliseren, en met één verenigbare stem over de hele wereld te spreken.&quot;_ - Amy Bergstrom, Deloitte
+   _&quot;Een gecentraliseerde inhoudsstrategie helpt ons dubbel werk te voorkomen. We oververzadigen de markt niet, we zeggen geen verschillende dingen over vergelijkbare onderwerpen. Het helpt ons onze volledige bibliotheek van inhoud te optimaliseren, en met één verenigbare stem over de hele wereld te spreken.&quot;_ - Amy Bergstrom, Deloitte
 
-## Aanbevolen procedures: Snel, herbruikbaar model voor het maken van inhoud
+## Aanbevolen werkwijzen: Snel, herbruikbaar model voor het maken van inhoud
 
 Over het algemeen is het beter om deze duimregels te volgen:
 
 * Doel om niet minder dan 80% van de ervaringen te laten doorlopen [Buiten de box-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en) en [Stijlsystemen](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Door klantengetuigenverklaring, zal dit niet alleen een scalable stichting tot stand brengen die u toelaat om uit het product roadmap voordeel te halen, maar zal ook snelheid tot 50% verhogen.
-* [Instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[bewerkbare sjablonen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) en verplaatst u zich weg van statische sjablonen. Bij het instellen van bewerkbare sjablonen (die vereist zijn voor het gebruik van Stijlsystemen), moet een sjabloonauteur worden toegewezen die de verschillende stijlen beheert die beschikbaar zijn voor een pagina of sectie van de website. Deze updates van de sjabloon zelf zijn vrij minimaal wat betreft het dagelijkse werk.
+* [Instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[bewerkbare sjablonen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) en ga verder met statische sjablonen. Bij het instellen van bewerkbare sjablonen (die vereist zijn voor het gebruik van Stijlsystemen), moet een sjabloonauteur worden toegewezen die de verschillende stijlen beheert die beschikbaar zijn voor een pagina of sectie van de website. Deze updates van de sjabloon zelf zijn vrij minimaal wat betreft het dagelijkse werk.
 * Gebruiken [Ervaar fragmenten](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) waar mogelijk. Hoewel het algemene gebruiksscenario voor ervaringsfragmenten voor multikanaaldistributie is, kunnen deze ook op de hele site effectief worden gebruikt om inhoud in één gebied tegelijk te vullen in plaats van de inhoud handmatig in meerdere gebieden bij te werken. Dit kan overdreven tijd en moeite besparen en het ontwerpteam vrijmaken om aan specifiekere en rijkere ervaringen te werken.
 * Maak rijkere ervaringen. Door de 80/20-regel (boven) te gebruiken, kan een organisatie specifieke CSS- en back-endontwikkeling gebruiken voor bepaalde ervaringen in plaats van algemene onderhoudsupdates.
-* Kies voor een schaalbare basis en een snel hermerk. Stijlsystemen die worden uitgevoerd op basis van een moderne implementatie kunnen een efficiënte herbranding op het hele platform mogelijk maken. Door het bijwerken van een groot aantal sectoren van de inhoud door het wijzigen van CSS-skins kunt u snel testen en valideren en wordt de ervaringskwaliteit van de site verbeterd, wat een directe invloed heeft op het rendement van investeringen.
+* Kies voor een schaalbare basis en een snel hermerk. Stijlsystemen die worden uitgevoerd op basis van een moderne implementatie kunnen een efficiënte herbranding op het hele platform mogelijk maken. Door het bijwerken van een groot aantal sectoren van de inhoud via het wijzigen van CSS-skins kunt u snel testen en valideren en wordt de ervaringskwaliteit van de site verbeterd, wat een directe invloed heeft op het rendement van investeringen.
 
 ### Modellen van organisaties
 
 Er is geen enkel antwoord op hoe de personeelsmodellen van een AEM Sites-implementatie eruit zouden moeten zien. Er zijn echter archetypes die u voor een standaardnorm moet volgen.
 
-AEM Sites: basisbeheer &amp; werking
+AEM Sites: elementaire uitvoering en werking
 
 | Technische rol | Technische verantwoordelijkheden | Bedrijfstaken | Zakelijke rol |
 | --- | --- | --- | --- |
-| CSS-ontwikkelaar | <ul><li>Webontwikkeling (CSS of front-end)</li>Componenten opnieuw gebruiken<li>Ervaar artefacten maken met behulp van repurpose of net new</li></ul> | <ul><li>Bedrijfseigenaar van oplossing</li><li>Creeert onderhoudstaken en verhogingen</li><li>Werkt met BU om technische en strategische visies te trouwen</li></ul> | Eigenaar product |
+| CSS-ontwikkelaar | <ul><li>Webontwikkeling (CSS of front-end)</li>Componenten opnieuw gebruiken<li>Ervaar artefacten maken met behulp van repurpose of net new</li></ul> | <ul><li>Bedrijfseigenaar van oplossing</li><li>Creeert onderhoudstaken en verhogingen</li><li>Werkt met BU om technische en strategische visies te trouwen</li></ul> | Eigenaar van product |
 | Ontwikkelaar achterkant | <ul><li>Diepe ervaringen niet gedaan met eenvoudige front-end CSS</li>Toezicht op architectuur<li>Dynamische integratie/aansluiting met producteigenaar op strategische doelstellingen</li></ul> | <ul><li>Schrijvers van inhoud helpen</li><li>Governance</li><li>Coördinaten worden gestart, macrobewerkingen worden beheerd</li></ul> | Admin-auteur |
-| Release Manager | <ul><li>Release-beheer</li><li>Codeimplementaties</li></li>Adobe-accountteam</ul> | <ul><li>Hiermee past u inhoud toe (inclusief vooraf gemaakte stijlen)</li>Gelaagde eigendom<li>Levert en deelt kwesties en zorgen mee aangezien zij met CSM voortkomen</li></ul> | Inhoudsauteur |
+| Release Manager | <ul><li>Release-beheer</li><li>Codeimplementaties</li></li>Accountteam Adobe</ul> | <ul><li>Hiermee past u inhoud toe (inclusief vooraf gemaakte stijlen)</li>Gelaagde eigendom<li>Levert en deelt kwesties en zorgen mee aangezien zij met CSM voortkomen</li></ul> | Inhoudsauteur |
 
-## Mogelijke valkuilen
+## Potentiële valkuilen
 
 Hier zijn een paar potentiële valkuilen om te vermijden:
 
@@ -173,8 +175,8 @@ Hier zijn een paar potentiële valkuilen om te vermijden:
    * Maximaliseren we het biologische bereik?
 * Is de ervaring voor iedereen toegankelijk?
 
-* Oplossingen op een zijdelingse manier bekijken. Bijvoorbeeld, zal het concentreren op het technische aspect van AEM implementatie niet de volledige bedrijfsvoordelen realiseren. In plaats daarvan, adviseren wij het bekijken van zaken en scenario&#39;s van het bedrijfsgebruik, dan het schenken aan architectuur en ontwerp, aangezien dit een grotere mening van AEM mogelijkheden zal verstrekken. Anurandha Pentareddy van aandelen Adobe: _&quot;Eén ding wat ik adviseer is om uw waardedoelstellingen voor het platform te bekijken u uitvoert.&quot;_
+* Oplossingen op een zijdelingse manier bekijken. Bijvoorbeeld, zal het concentreren op het technische aspect van AEM implementatie niet de volledige bedrijfsvoordelen realiseren. In plaats daarvan, adviseren wij het bekijken van zaken en scenario&#39;s van het bedrijfsgebruik, dan het schenken aan architectuur en ontwerp, aangezien dit een grotere mening van AEM mogelijkheden zal verstrekken. Anurandha Pentareddy van aandelen in de Adobe: _&quot;Eén ding wat ik adviseer is om uw waardedoelstellingen voor het platform te bekijken u uitvoert.&quot;_
 
-Luister naar deze één uur voor een diepgaandere bespreking van de snelheid van de inhoud [panelgesprek](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) en Adobe Anuradha Pentareddy.
+Luister naar deze één uur voor een diepgaandere bespreking van inhoudssnelheid [panelgesprek](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) en Anuradha Pentareddy van Adobe.
 
 Meer informatie over strategie en leiderschap bij de [Klant geslaagd](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.

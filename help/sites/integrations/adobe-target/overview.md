@@ -13,7 +13,7 @@ level: Beginner
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -21,6 +21,8 @@ ht-degree: 0%
 ---
 
 # AEM Sites en Adobe Target integreren
+
+{{edge-delivery-services-and-page-editor}}
 
 Leer hoe u AEM Sites en Adobe Target kunt integreren om persoonlijke ervaringen te bieden.
 
@@ -30,21 +32,21 @@ Adobe Experience Manager (AEM) en Adobe Target zijn krachtige oplossingen met co
 
 In deze video bespreken we drie benaderingen voor het gebruik van AEM en Doel, en helpen u te begrijpen wat het beste werkt voor uw organisatie.
 
-* __Scenario 1:__ Personalisatie met AEM Experience Fragment-aanbiedingen
+* __Scenario 1__ Personalisatie met AEM Experience Fragment-aanbiedingen
 
    1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
    1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
-   1. [AEM Author Service integreren met Adobe Target](./setup-aem-target-cloud-service.md)
+   1. [AEM Auteursservice integreren met Adobe Target](./setup-aem-target-cloud-service.md)
    1. [Exporteer AEM ervaringsfragmenten naar Adobe Target](./export-experience-fragment-target.md)
    1. [Een deel van een webpagina aanpassen met de functie Gepresenteerde fragmentatieaanbiedingen](./create-target-activity.md)
 
-* __Scenario 2:__ Personalisatie met behulp van Visual Experience Composer (VEC)
+* __Scenario 2__ Personalisatie met behulp van Visual Experience Composer (VEC)
 
    1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
    1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
    1. [Een deel van een webpagina personaliseren met behulp van Visual Experience Composer](./personalization-using-vec.md)
 
-* __Scenario 3:__ Aanpassing van volledige webpaginabelessen
+* __Scenario 3__ Aanpassing van de volledige webpaginabeleving
 
    1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
    1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)

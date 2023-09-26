@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '3038'
 ht-degree: 0%
@@ -18,6 +18,8 @@ ht-degree: 0%
 ---
 
 # Pagina&#39;s en sjablonen {#pages-and-template}
+
+{{edge-delivery-services-and-page-editor}}
 
 In dit hoofdstuk, onderzoeken wij de verhouding tussen een component van de basispagina en editable malplaatjes. Leer een naamloze artikelsjabloon op basis van een aantal modellen op basis van [Adobe XD](https://helpx.adobe.com/support/xd.html). In het proces om het malplaatje uit te bouwen, zijn de Componenten van de Kern en de geavanceerde beleidsconfiguraties van de Bewerkbare Malplaatjes behandeld.
 
@@ -70,7 +72,7 @@ In dit gedeelte van de zelfstudie maakt u een nieuwe artikelpaginasjabloon die u
 
 ## UI-planning met Adobe XD {#adobexd}
 
-Gewoonlijk begint het plannen voor een nieuwe website met modellen en statische ontwerpen. [Adobe XD](https://helpx.adobe.com/support/xd.html) is een ontwerpgereedschap waarmee u gebruikerservaring kunt opbouwen. Vervolgens inspecteren we een UI-kit en -modellen om de structuur van het sjabloon voor artikelpagina te plannen.
+Gewoonlijk begint het plannen voor een nieuwe website met modellen en statische ontwerpen. [Adobe XD](https://helpx.adobe.com/support/xd.html) is een ontwerphulpmiddel dat gebruikerservaring bouwt. Vervolgens inspecteren we een UI-kit en -modellen om de structuur van het sjabloon voor artikelpagina te plannen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
@@ -86,11 +88,11 @@ Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt al
 
 Er zijn drie hoofdgebieden [Bewerkbare sjablonen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
 
-1. **Structuur** - definieert componenten die deel uitmaken van de sjabloon. Deze kunnen niet worden bewerkt door auteurs van inhoud.
+1. **Structuur** - definieert componenten die deel uitmaken van de sjabloon. Deze kunnen niet worden bewerkt door de auteurs van de inhoud.
 1. **Oorspronkelijke inhoud** - definieert componenten waarmee de sjabloon begint. Deze kunnen door makers van inhoud worden bewerkt en/of verwijderd.
 1. **Beleid** - definieert configuraties voor het gedrag van componenten en de opties die auteurs hebben.
 
-Maak vervolgens een sjabloon in AEM die overeenkomt met de structuur van de modellen. Dit gebeurt in een lokale AEM. Voer de stappen in de onderstaande video uit:
+Maak vervolgens een sjabloon in AEM die overeenkomt met de structuur van de modellen. Dit gebeurt in een lokale instantie van AEM. Voer de stappen in de onderstaande video uit:
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
 
@@ -99,45 +101,45 @@ Stappen op hoog niveau voor de bovenstaande video:
 ### Structuurconfiguraties
 
 1. Een sjabloon maken met de opdracht **Type paginasjabloon**, benoemd **Artikelpagina**.
-1. Overschakelen op **Structuur** in.
+1. Overschakelen op **Structuur** -modus.
 1. Een **Ervaar fragment** als de **Koptekst** boven aan de sjabloon.
    * Vorm de component om te richten `/content/experience-fragments/wknd/us/en/site/header/master`.
-   * Beleid instellen op **Paginakoptekst** en zorgt ervoor dat de **Standaardelement** is ingesteld op `header`. De `header`element is gericht met CSS in het volgende hoofdstuk.
+   * Beleid instellen op **Paginakoptekst** en ervoor zorgen dat de **Standaardelement** is ingesteld op `header`. De `header`element is gericht met CSS in het volgende hoofdstuk.
 1. Een **Ervaar fragment** als de **Voettekst** onder aan de sjabloon.
    * Vorm de component om te richten `/content/experience-fragments/wknd/us/en/site/footer/master`.
-   * Beleid instellen op **Paginavoettekst** en zorgt ervoor dat de **Standaardelement** is ingesteld op `footer`. De `footer` element is gericht met CSS in het volgende hoofdstuk.
-1. Vergrendel de **hoofd** container die was inbegrepen toen het malplaatje aanvankelijk werd gecreeerd.
-   * Beleid instellen op **Hoofdpagina van pagina** en zorgt ervoor dat de **Standaardelement** is ingesteld op `main`. De `main` element is gericht met CSS in het volgende hoofdstuk.
-1. Een **Afbeelding** aan de **hoofd** container.
+   * Beleid instellen op **Paginavoettekst** en ervoor zorgen dat de **Standaardelement** is ingesteld op `footer`. De `footer` element is gericht met CSS in het volgende hoofdstuk.
+1. De **hoofd** container die was inbegrepen toen het malplaatje aanvankelijk werd gecreeerd.
+   * Beleid instellen op **Hoofdpagina van pagina** en ervoor zorgen dat de **Standaardelement** is ingesteld op `main`. De `main` element is gericht met CSS in het volgende hoofdstuk.
+1. Een **Afbeelding** aan de component **hoofd** container.
    * Ontgrendel de **Afbeelding** component.
 1. Voeg een **Broodkruimel** component onder de component **Afbeelding** in de hoofdcontainer.
    * Een beleid maken voor de **Broodkruimel** component benoemd **Artikel pagina - Broodkruimel**. Stel de **Beginniveau navigatie** tot **4**.
-1. Voeg een **Container** component onder de component **Broodkruimel** en binnen de **hoofd** container. Dit fungeert als **Inhoudscontainer** voor de sjabloon.
+1. Voeg een **Container** component onder de component **Broodkruimel** en binnen de **hoofd** container. Dit fungeert als **Inhoud container** voor de sjabloon.
    * Ontgrendel de **Inhoud** container.
    * Beleid instellen op **Pagina-inhoud**.
-1. Nog een toevoegen **Container** component onder de component **Inhoudscontainer**. Dit fungeert als **Zijspoor** container voor de sjabloon.
+1. Nog een toevoegen **Container** component onder de component **Inhoud container**. Dit fungeert als **Zijspoor** container voor de sjabloon.
    * Ontgrendel de **Zijspoor** container.
    * Een beleid maken met de naam **Artikel Pagina - zijspoor**.
-   * Configureer de **Toegestane componenten** krachtens **WKND-siteproject - Inhoud** op te nemen: **Knop**, **Downloaden**, **Afbeelding**, **Lijst**, **Scheidingsteken**, **Delen van sociale media**, **Tekst**, en **Titel**.
-1. Werk het beleid van de container van de Wortel van de Pagina bij. Dit is de buitenste container op de sjabloon. Beleid instellen op **Hoofdmap van pagina**.
-   * Onder **Containerinstellingen** stelt u de **Layout** tot **Responsief raster**.
-1. Modus Lay-out inschakelen voor de **Inhoudscontainer**. Sleep de handgreep van rechts naar links en krimpt de container tot acht kolommen breed.
-1. Modus Lay-out inschakelen voor de **Zijspoor, container**. Sleep de greep van rechts naar links en krimpt de container in tot vier kolommen breed. Sleep vervolgens de linkergreep van links naar rechts om de container 3 kolommen breed te maken en een tussenruimte van 1 kolom tussen de kolommen te laten staan **Inhoudscontainer**.
-1. Open de mobiele emulator en schakel over naar een mobiel onderbrekingspunt. Modus Lay-out opnieuw inschakelen en de **Inhoudscontainer** en de **Zijspoor, container** de volledige breedte van de pagina. Hierdoor worden de containers verticaal in het mobiele onderbrekingspunt gestapeld.
-1. Het beleid van de **Tekst** in de **Inhoudscontainer**.
+   * Vorm **Toegestane componenten** krachtens **WKND-siteproject - Inhoud** op te nemen: **Knop**, **Downloaden**, **Afbeelding**, **Lijst**, **Scheidingsteken**, **Delen van sociale media**, **Tekst**, en **Titel**.
+1. Werk het beleid van de container van de Wortel van de Pagina bij. Dit is de buitenste container op de sjabloon. Beleid instellen op **Basispagina**.
+   * Onder **Containerinstellingen**, stelt u de **Layout** tot **Responsief raster**.
+1. Modus Lay-out inschakelen voor de **Inhoud container**. Sleep de handgreep van rechts naar links en krimpt de container tot acht kolommen breed.
+1. Modus Lay-out inschakelen voor de **Zijspoor, container**. Sleep de greep van rechts naar links en krimpt de container in tot vier kolommen breed. Sleep vervolgens de linkergreep van links naar rechts om de container 3 kolommen breed te maken en een tussenruimte van 1 kolom tussen de kolommen te laten staan **Inhoud container**.
+1. Open de mobiele emulator en schakel over naar een mobiel onderbrekingspunt. Schakel de lay-outmodus opnieuw in en maak de **Inhoud container** en de **Zijspoor, container** de volledige breedte van de pagina. Hierdoor worden de containers verticaal in het mobiele onderbrekingspunt gestapeld.
+1. Het beleid van de **Tekst** in de **Inhoud container**.
    * Beleid instellen op **Inhoudstekst**.
-   * Onder **Plug-ins** > **Alineastijlen**, controle **Alineastijlen inschakelen** en zorgt ervoor dat de **Offerteblok** is ingeschakeld.
+   * Onder **Plug-ins** > **Alineastijlen**, controle **Alineastijlen inschakelen** en ervoor zorgen dat de **Offerteblok** is ingeschakeld.
 
 ### Aanvankelijke inhoudsconfiguraties
 
-1. Overschakelen op **Oorspronkelijke inhoud** in.
-1. Voeg een **Titel** aan de **Inhoudscontainer**. Dit is de titel van artikel. Als de pagina leeg blijft, wordt automatisch de titel van de huidige pagina weergegeven.
+1. Overschakelen op **Oorspronkelijke inhoud** -modus.
+1. Voeg een **Titel** aan de component **Inhoud container**. Dit is de titel van artikel. Als de pagina leeg blijft, wordt automatisch de titel van de huidige pagina weergegeven.
 1. Een seconde toevoegen **Titel** component onder de eerste component Title.
-   * Configureer de component met de tekst: &quot;Door auteur&quot;. Dit is een tijdelijke aanduiding voor tekst.
+   * Configureer de component met de tekst &quot;Door auteur&quot;. Dit is een tijdelijke aanduiding voor tekst.
    * Te gebruiken tekst instellen `H4`.
 1. Voeg een **Tekst** component onder de component **Op auteur** Component Titel.
-1. Voeg een **Titel** aan de **Zijspoorcontainer**.
-   * Configureer de component met de tekst: &quot;Dit artikel delen&quot;.
+1. Voeg een **Titel** aan de component **Zijspoorcontainer**.
+   * Configureer de component met de tekst &quot;Dit artikel delen&quot;.
    * Te gebruiken tekst instellen `H5`.
 1. Voeg een **Delen van sociale media** component onder de component **Dit artikel delen** Component Titel.
 1. Voeg een **Scheidingsteken** component onder de component **Delen van sociale media** component.
@@ -169,7 +171,7 @@ Stappen op hoog niveau voor de bovenstaande video:
 1. Werk het malplaatje van de Variatie van het Web bij, dat het malplaatje voor de Fragmenten van de Ervaring bij wordt gebruikt [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html)
    * Werk het beleid bij **Container** op de sjabloon.
    * Beleid instellen op **XF-basiskleur**.
-   * Onder, **Toegestane componenten** Selecteer de componentgroep **WKND-siteproject - structuur** om **Taalnavigatie**, **Navigatie**, en **Snel zoeken** componenten.
+   * Onder, **Toegestane componenten** Selecteer de componentgroep **WKND-siteproject - structuur** op te nemen **Taalnavigatie**, **Navigatie**, en **Snel zoeken** componenten.
 
 ### Fragment voor koptekstervaring bijwerken
 
@@ -180,12 +182,12 @@ Stappen op hoog niveau voor de bovenstaande video:
    * De lay-out van de **WKND Donker logo** te worden **twee** kolommen breed. Sleep de handgrepen van rechts naar links.
    * Het logo configureren met **Alternatieve tekst** van &quot;WKND-logo&quot;.
    * Het logo configureren om **Koppeling** tot `/content/wknd/us/en` de startpagina.
-1. Configureer de **Navigatie** die al op de pagina is geplaatst.
+1. Vorm **Navigatie** die al op de pagina is geplaatst.
    * Stel de **Basisniveaus uitsluiten** tot **1**.
    * Stel de **Navigatiestructuurdiepte** tot **1**.
-   * De lay-out van de **Navigatie** onderdeel dat moet worden **acht** kolommen breed. Sleep de handgrepen van rechts naar links.
+   * De lay-out van de **Navigatie** te gebruiken component **acht** kolommen breed. Sleep de handgrepen van rechts naar links.
 1. Verwijder de **Taalnavigatie** component.
-1. De lay-out van de **Zoeken** onderdeel dat moet worden **twee** kolommen breed. Sleep de handgrepen van rechts naar links. Alle componenten moeten nu horizontaal op één rij worden uitgelijnd.
+1. De lay-out van de **Zoeken** te gebruiken component **twee** kolommen breed. Sleep de handgrepen van rechts naar links. Alle componenten moeten nu horizontaal op één rij worden uitgelijnd.
 
 ### Fragment Voettekstervaring bijwerken
 
@@ -196,11 +198,11 @@ Stappen op hoog niveau voor de bovenstaande video:
    * De lay-out van de **WKND-lichtlogo** te worden **twee** kolommen breed. Sleep de handgrepen van rechts naar links.
    * Het logo configureren met **Alternatieve tekst** van &quot;WKND Logo Light&quot;.
    * Het logo configureren om **Koppeling** tot `/content/wknd/us/en` de startpagina.
-1. Voeg een **Navigatie** onder het logo. Configureer de **Navigatie** component:
+1. Voeg een **Navigatie** onder het logo. Vorm **Navigatie** component:
    * Stel de **Basisniveaus uitsluiten** tot **1**.
    * Uitschakelen **Alle onderliggende pagina&#39;s verzamelen**.
    * Stel de **Navigatiestructuurdiepte** tot **1**.
-   * De lay-out van de **Navigatie** onderdeel dat moet worden **acht** kolommen breed. Sleep de handgrepen van rechts naar links.
+   * De lay-out van de **Navigatie** te gebruiken component **acht** kolommen breed. Sleep de handgrepen van rechts naar links.
 
 ## Een artikelpagina maken
 
@@ -210,7 +212,7 @@ Maak vervolgens een pagina met de sjabloon Artikelpagina. Maak de inhoud van de 
 
 Stappen op hoog niveau voor de bovenstaande video:
 
-1. Navigeer naar de Sites-console op [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
+1. Ga naar de Sites-console op [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
 1. Een onderliggende pagina maken **WKND** > **VS** > **NL** > **Tijdschrift**.
    * Kies de optie **Artikelpagina** sjabloon.
    * Onder **Eigenschappen** instellen **Titel** naar &quot;Ultimate Guide to LA Skateparks&quot;
@@ -218,14 +220,14 @@ Stappen op hoog niveau voor de bovenstaande video:
 1. Vervangen **Op auteur** Titel met de tekst &quot;Door Stacey Roswells&quot;.
 1. Werk de **Tekst** om een alinea op te nemen om het artikel te vullen. U kunt het volgende tekstbestand als kopie gebruiken: [la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt).
 1. Nog een toevoegen **Tekst** component.
-   * Werk de component bij om het citaat te omvatten: &quot;Er is geen betere plek om te delen dan Los Angeles.&quot;
+   * Werk de component bij om het aanhalingsteken op te nemen: &quot;Er is geen betere plaats om te delen dan Los Angeles.&quot;.
    * Bewerk de Rich Text Editor in de modus Volledig scherm en wijzig het bovenstaande citaat om de **Offerteblok** element.
 1. Blijf de tekst van het artikel vullen om deze aan te passen aan de modellen.
-1. Configureer de **Downloaden** om een PDF-versie van het artikel te gebruiken.
+1. Vorm **Downloaden** om een PDF-versie van het artikel te gebruiken.
    * Onder **Downloaden** > **Eigenschappen**, klik checkbox aan **De titel ophalen van de DAM-middelen**.
-   * Stel de **Beschrijving** tot: &quot;Get the full Story&quot;.
-   * Stel de **Tekst van handeling** tot: &quot;Download PDF&quot;.
-1. Configureer de **Lijst** component.
+   * Stel de **Beschrijving** naar: &quot;Get the Full Story&quot;.
+   * Stel de **Tekst van handeling** naar: &quot;Download PDF&quot;.
+1. Vorm **Lijst** component.
    * Onder **Lijstinstellingen** > **Lijst samenstellen met**, selecteert u **Onderliggende pagina&#39;s**.
    * Stel de **Bovenliggende pagina** tot `/content/wknd/us/en/magazine`.
    * Onder, **Iteminstellingen** controleren **Items koppelen** en controle **Datum tonen**.
@@ -238,7 +240,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
 1. Openen [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent) en gebruik de boomnavigatie om te navigeren naar `/content/wknd/us/en/magazine/guide-la-skateparks`.
 
-1. Klik op de knop `jcr:content` knooppunt onder `la-skateparks` pagina en bekijk de eigenschappen:
+1. Klik op de knop `jcr:content` knooppunt onder de `la-skateparks` pagina en bekijk de eigenschappen:
 
    ![Eigenschappen van JCR-inhoud](assets/pages-templates/jcr-content-properties-CRXDELite.png)
 
@@ -256,7 +258,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
    ![Eigenschappen van pagina-component](assets/pages-templates/page-component-properties.png)
 
-   Er zijn slechts twee HTML-scripts. `customfooterlibs.html` en `customheaderlibs.html` onder de paginacomponent. *Hoe geeft deze component de pagina weer?*
+   Er zijn slechts twee HTML-scripts. `customfooterlibs.html` en `customheaderlibs.html` onder de pagina-component. *Hoe geeft deze component de pagina weer?*
 
    De `sling:resourceSuperType` eigenschap verwijst naar `core/wcm/components/page/v2/page`. Met deze eigenschap kan de paginacomponent van de WKND overerven **alles** de functionaliteit van de pagina-component Core Component. Dit is het eerste voorbeeld van iets dat de [Proxycomponentpatroon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Meer informatie is beschikbaar op [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
@@ -266,7 +268,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
    >[!NOTE]
    >
-   > In AEM 6.5/6.4 bevinden de Core Components zich onder `/apps/core/wcm/components`. AEM as a Cloud Service bevinden de Core Components zich onder `/libs` en worden automatisch bijgewerkt.
+   > In AEM 6.5/6.4 bevinden de Core Components zich onder `/apps/core/wcm/components`. In, AEM as a Cloud Service, worden de Componenten van de Kern gevestigd onder `/libs` en worden automatisch bijgewerkt.
 
    ![Basiscomponentpagina](assets/pages-templates/core-page-component-properties.png)
 
@@ -310,7 +312,7 @@ Gebruik het hulpmiddel CRXDE-Lite op een lokale AEM instantie om de onderliggend
 
    U kunt meer weten over de manier waarop de bewerkbare sjabloon invloed heeft op de rendering van de [inhoudspagina door dit artikel te lezen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html).
 
-1. Inspect nog een Core Component, zoals de Breadcrumb op `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. De weergave van `breadcrumb.html` om te begrijpen hoe de prijsverhoging voor de component Breadcrumb uiteindelijk wordt geproduceerd.
+1. Inspect nog een Core Component, zoals de Breadcrumb op `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. De weergave `breadcrumb.html` om te begrijpen hoe de prijsverhoging voor de component Breadcrumb uiteindelijk wordt geproduceerd.
 
 ## Configuraties opslaan naar bronbeheer {#configuration-persistence}
 
@@ -324,7 +326,7 @@ De volgende paar stappen worden gedaan in winde VSCode gebruikend [VSCode AEM Sy
 
 1. In, opent VSCode `aem-guides-wknd` project.
 
-1. Breid uit **ui.content** in de ontdekkingsreiziger van het Project. Breid uit `src` en navigeer naar `/conf/wknd/settings/wcm/templates`.
+1. Breid uit **ui.content** in de explorator van het Project. Breid uit `src` en navigeer naar `/conf/wknd/settings/wcm/templates`.
 
 1. [!UICONTROL Right+Click] de `templates` map en selecteer **Importeren vanaf AEM server**:
 
@@ -353,7 +355,7 @@ De volgende paar stappen worden gedaan in winde VSCode gebruikend [VSCode AEM Sy
 
    De `filter.xml` is verantwoordelijk voor het identificeren van de paden van knooppunten die samen met het pakket zijn geïnstalleerd. Let op: `mode="merge"` op elk van de filters die aangeeft dat bestaande inhoud niet moet worden gewijzigd, wordt alleen nieuwe inhoud toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing doet **niet** overschrijven, inhoud. Zie de [FileVault-documentatie](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over het werken met filterelementen.
 
-   Vergelijken `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om de verschillende knopen te begrijpen die door elke module worden beheerd.
+   Ververgelijken `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om de verschillende knopen te begrijpen die door elke module worden beheerd.
 
    >[!WARNING]
    >

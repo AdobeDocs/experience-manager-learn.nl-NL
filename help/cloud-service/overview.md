@@ -4,7 +4,7 @@ description: Een verzameling zelfstudies voor Adobe Experience Manager (AEM) as 
 sub-product: Experience Manager as a Cloud Service
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 4%
@@ -12,6 +12,8 @@ ht-degree: 4%
 ---
 
 # as a Cloud Service video&#39;s en zelfstudies AEM {#overview}
+
+{{edge-delivery-services}}
 
 Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cloud Service introduceert de volgende generatie van de productlijn van de Experience Manager, voortbouwend op vroegere investeringen en innovaties, het bewaren en uitbreiden van alle gebruiksgevallen en -functies.
 
@@ -22,24 +24,19 @@ Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cl
 ## Wat is er nieuw
 
 * **[Tokengebaseerde verificatie (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
-
-   *Leer hoe te om op teken-gebaseerde authentificatie te gebruiken met AEM as a Cloud Service over HTTP in wisselwerking te staan*
+  *Leer hoe te om op teken-gebaseerde authentificatie te gebruiken met AEM as a Cloud Service over HTTP in wisselwerking te staan*
 
 * **[GraphQL zonder koppen (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
-
-   *Leer hoe u AEM GraphQL API&#39;s kunt gebruiken om ervaringen in een externe toepassing aan te zwengelen.*
+  *Leer hoe u AEM GraphQL API&#39;s kunt gebruiken om ervaringen in een externe toepassing in te schakelen.*
 
 * **[Bulk importeren (video)](./migration/bulk-import.md)**
+  *Leer hoe u importmiddelen in AEM kunt bulken van Azure Blob Storage of Amazon S3*
 
-   *Leer hoe u importmiddelen in AEM kunt bulken van Azure Blob Storage of Amazon S3*
-
-* **[asset compute metadata worker (zelfstudie)](./asset-compute/advanced/metadata.md)**
-
-   *Leer hoe u metagegevens van middelen van een Asset compute-worker naar AEM schrijft*
+* **[Asset compute metadata worker (zelfstudie)](./asset-compute/advanced/metadata.md)**
+  *Leer hoe u metagegevens van middelen van een Asset compute-worker naar AEM schrijft*
 
 * **[Uitbreidbaarheid van microservices voor asset compute (zelfstudie)](./asset-compute/overview.md)**
-
-   *Leer hoe u Asset compute-workers kunt ontwikkelen om aangepaste asset-uitvoeringen te genereren*
+  *Leer hoe u Asset compute-workers kunt ontwikkelen om aangepaste asset-uitvoeringen te genereren*
 
 </div>
 

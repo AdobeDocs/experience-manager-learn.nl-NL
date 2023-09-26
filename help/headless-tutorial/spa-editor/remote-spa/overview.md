@@ -9,7 +9,7 @@ kt: 7630
 thumbnail: 333272.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: 0fff8b53e3dffb835e070444b55a72f0b0cc3d14
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 1%
@@ -17,6 +17,8 @@ ht-degree: 1%
 ---
 
 # Overzicht
+
+{{edge-delivery-services}}
 
 Welkom bij de meerdelige zelfstudie voor ontwikkelaars die een bestaande, op React gebaseerde (of Next.js) externe SPA willen uitbreiden met bewerkbare AEM met AEM SPA Editor.
 
@@ -61,15 +63,15 @@ Deze zelfstudie gaat uit van:
 
 >[!NOTE]
 >
-> **Hebt u hulp nodig bij het instellen van uw lokale ontwikkelomgeving?** Kijk uit de [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met behulp van de AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Hebt u hulp nodig bij het instellen van uw lokale ontwikkelomgeving?** Kijk uit de [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-## 1. AEM configureren voor SPA Editor
+## 1. Configureer AEM voor SPA Editor
 
 AEM configuraties zijn vereist om de SPA te integreren met AEM SPA Editor. Deze configuraties worden beheerd en opgesteld via een AEM Project. In dit hoofdstuk, leer over welke configuraties noodzakelijk zijn en hoe te om hen te bepalen.
 
 + [Leer hoe u AEM voor SPA Editor configureert](./aem-configure.md)
 
-## 2. Bootstrap de SPA
+## 2. Bootstrap van de SPA
 
 Om AEM SPA Editor een SPA te kunnen integreren in de ontwerpcontext, moeten er enkele toevoegingen aan de SPA worden aangebracht.
 
@@ -89,7 +91,7 @@ Hierna kunt u een bewerkbare &#39;containercomponent&#39; aan de SPA toevoegen. 
 
 ## 5. Dynamische routes en bewerkbare componenten
 
-Ten slotte, gebruik de concepten die in vorige hoofdstukken zijn toegelicht aan dynamische routes; routes die verschillende inhoud tonen die op de parameter van de route wordt gebaseerd. Dit illustreert hoe AEM SPA Redacteur aan auteursinhoud op routes kan worden gebruikt die programmatically worden gedreven en worden afgeleid.
+Ten slotte, gebruik de concepten die in vorige hoofdstukken aan dynamische routes worden verklaard; routes die verschillende inhoud tonen die op de parameter van de route wordt gebaseerd. Dit illustreert hoe AEM SPA Redacteur aan auteursinhoud op routes kan worden gebruikt die programmatically worden gedreven en worden afgeleid.
 
 + [Meer informatie over dynamische routes en bewerkbare componenten](./spa-dynamic-routes.md)
 

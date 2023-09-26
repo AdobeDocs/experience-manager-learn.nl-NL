@@ -1,6 +1,6 @@
 ---
 title: Aan de slag met AEM Sites - WKND-zelfstudie
-description: Leer hoe u een AEM site implementeert voor een fictief levensstijlmerk met de naam WKND. Krijg een looppas-door op fundamentele onderwerpen van de Experience Manager zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
+description: Leer hoe u een AEM site implementeert voor een fictieve levensstijl, WKND genaamd. Krijg een looppas-door op fundamentele onderwerpen van de Experience Manager zoals projectopstelling, gemaakte archetypes, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling.
 topics: development
 version: Cloud Service
 activity: develop
@@ -15,7 +15,7 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 5f43db64f68218ed3d349508a2c4fd232601a9ef
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -23,6 +23,8 @@ ht-degree: 0%
 ---
 
 # Aan de slag met AEM Sites - WKND-zelfstudie {#introduction}
+
+{{edge-delivery-services}}
 
 Welkom bij een meerdelige zelfstudie die is ontworpen voor nieuwe ontwikkelaars in Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een AEM site voor een fictieve levensstijl, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, cliënt-zijbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
 
@@ -40,13 +42,13 @@ Er zijn twee basisbenaderingen voor het starten van een AEM Sites-project.
 
 [De zelfstudie starten met het AEM Project Archetype](./project-archetype/overview.md)
 
-**Sitesjablonen AEM** - Wordt ook wel Snel site maken genoemd, een low-code aanpak voor het genereren van een AEM site met behulp van een vooraf gedefinieerd Sjabloon. Gebruik componenten en sjablonen uit de keuzelijst om een site snel in bedrijf te stellen. Gebruik een themaworkflow om merkspecifieke stijlen en aanpassingen toe te passen met alleen CSS en JavaScript. Aanbevolen voor nieuwe projecten en ontwikkelaars. Alleen beschikbaar voor AEM as a Cloud Service.
+**Sitesjablonen AEM** - Wordt ook wel Snel site maken genoemd. Dit is een low-code aanpak voor het genereren van een AEM site met behulp van een vooraf gedefinieerd Sjabloon. Gebruik componenten en sjablonen uit de keuzelijst om een site snel in bedrijf te stellen. Gebruik een themaworkflow om merkspecifieke stijlen en aanpassingen toe te passen met alleen CSS en JavaScript. Aanbevolen voor nieuwe projecten en ontwikkelaars. Alleen beschikbaar voor AEM as a Cloud Service.
 
 [De zelfstudie starten met een sitesjabloon](./site-template/create-site.md)
 
 ## Adobe XD UI-kit
 
-Om deze zelfstudie dichter bij een werkelijk scenario te brengen Adobe getalenteerde ontwerpers van UX creeerden de modellen voor de plaats gebruikend [Adobe XD](https://www.adobe.com/products/xd.html). In de loop van de zelfstudie worden verschillende onderdelen van de ontwerpen geïmplementeerd in een volledig voor de auteur geschikte AEM. Speciale dank aan **Lorenzo Buosi** en **Kilian Amendola** die het prachtige ontwerp voor de WKND-site creëerde.
+Om deze zelfstudie dichter bij een werkelijk scenario te brengen maakten de getalenteerde ontwerpers van UX van de Adobe de modellen voor de plaats gebruikend [Adobe XD](https://www.adobe.com/products/xd.html). In de loop van de zelfstudie worden verschillende onderdelen van de ontwerpen geïmplementeerd in een volledig voor de auteur geschikte AEM. Speciale dank aan **Lorenzo Buosi** en **Kilian Amendola** die het prachtige ontwerp voor de WKND-site creëerde.
 
 Download de XD UI-kits:
 

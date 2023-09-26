@@ -13,7 +13,7 @@ feature: Authoring
 role: User
 level: Beginner
 exl-id: cc659581-031d-4f2a-90c1-cf721e481689
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -21,6 +21,8 @@ ht-degree: 0%
 ---
 
 # Paginaversies maken {#creating-page-versions-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 Met paginaversiebeheer kunnen auteurs van inhoud de wijzigingen bijhouden die aan een pagina zijn gekoppeld door een paginaversie te maken. Bovendien beschikt u over een optie om een voorvertoning van een versie weer te geven, een versie te herstellen en een versie te vergelijken met de huidige versie van een pagina.
 

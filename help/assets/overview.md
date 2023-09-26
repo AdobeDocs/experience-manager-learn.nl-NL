@@ -4,7 +4,7 @@ description: Bekijk onze video's voor ondersteuning en assistentie van AEM midde
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 2%
@@ -13,15 +13,17 @@ ht-degree: 2%
 
 # AEM Assets - video&#39;s en zelfstudies {#overview}
 
-Adobe Experience Manager (AEM) Assets is een hulpmiddel voor het beheer van digitale middelen op AEM Platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een opslagplaats op internet. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
+{{edge-delivery-services}}
+
+Adobe Experience Manager (AEM) Assets is een hulpprogramma voor digitaal middelenbeheer op AEM Platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een webgebaseerde opslagplaats. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
 >title="AEM Assets"
 >abstract="Leer hoe u snel de benodigde middelen kunt vinden en bewerken."
->additional-url="https://video.tv.adobe.com/v/336196" text="AEM Assets doorlopen"
+>additional-url="https://video.tv.adobe.com/v/336196" text="AEM Assets-doorloop"
 
-## AEM Assets doorlopen
+## AEM Assets-doorloop
 
 Leer wat AEM Assets is en hoe het gebruikt kan worden om de bedrijfsdoelstellingen van uw organisatie te bereiken.
 
@@ -88,4 +90,4 @@ Leer wat AEM Assets is en hoe het gebruikt kan worden om de bedrijfsdoelstelling
 * [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
 * [AEM Sites-zelfstudies](/help/sites/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)
-* [Zelfstudies voor AEM stichting](/help/foundation/overview.md)
+* [Zelfstudies AEM Stichting](/help/foundation/overview.md)

@@ -1,6 +1,6 @@
 ---
 title: Hoe te om de Blokjes van de Bouw van het Fragment van de Ervaring te gebruiken
-description: Bouwstenen zijn een subfunctie van de Fragmenten van de Ervaring die het hergebruik van authored componenten over variaties van de Fragmenten van de Ervaring toelaat.
+description: De blokken van de bouw zijn een ondereigenschap van de Fragmenten van de Ervaring die het hergebruik van authored componenten over variaties van de Fragmenten van de Ervaring toelaten.
 sub-product: Experience Manager Sites
 version: Cloud Service
 feature: Experience Fragments
@@ -11,7 +11,7 @@ doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -20,6 +20,7 @@ ht-degree: 0%
 
 # Blokken maken met ervaringsfragmenten {#building-blocks}
 
+{{edge-delivery-services-and-page-editor}}
 
 Bouwstenen zijn een onderdeel van Experience Fragments. Bouwstenen laten inhoudsauteurs toe om componenten over verschillende variaties van de Fragmenten van de Ervaring opnieuw te gebruiken.
 

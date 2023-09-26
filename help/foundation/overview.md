@@ -4,7 +4,7 @@ description: Bekijk onze video's en zelfstudies voor hulp met Adobe Experience M
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 
 # Video&#39;s en zelfstudies voor AEM stichting {#overview}
 
+{{edge-delivery-services}}
+
 Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is voor gebruikers van AEM Sites, Assets en Forms.
 
 <div id="whats-new-section">
@@ -20,14 +22,13 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 ## Wat is er nieuw
 
 * **[Workflow AEM gebruiken (video)](./workflow/use-workflow.md)**
-
-   *AEM Workflow biedt een manier om in AEM samen te werken, inhoud te beheren en te verwerken.*
+  *AEM Workflow biedt een manier om in AEM samen te werken, inhoud te beheren en te verwerken.*
 
 * **[Cloud Manager voor AEM begrijpen (video)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *Cloud Manager voor AEM maakt eenvoudig beheer, controle en zelfbediening van AEM omgevingen mogelijk.*
+  *Cloud Manager voor AEM maakt eenvoudig beheer, controle en zelfbediening van AEM omgevingen mogelijk.*
 
 * **[Cloud Manager CI/CD Pipeline (video) gebruiken](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-   *Leer hoe u de CI/CD-pijplijn van Cloud Manager kunt gebruiken voor een veilige en consistente implementatie.*
+  *Leer hoe u de CI/CD-pijplijn van Cloud Manager kunt gebruiken voor een veilige en consistente implementatie.*
 
 </div>
 

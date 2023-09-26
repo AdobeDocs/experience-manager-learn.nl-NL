@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 4%
@@ -23,6 +23,8 @@ ht-degree: 4%
 ---
 
 # AEM Sites UI en navigatie {#basic-handling-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 De volgende video biedt een overzicht van de basisafhandeling bij gebruik van de AEM-auteuromgeving. Het gebruikt de console van Plaatsen als basis.
 
@@ -34,14 +36,14 @@ In deze video worden de volgende mogelijkheden of functies behandeld:
 * Het algemene navigatievenster bestaat uit:
    * Navigatie - Vertegenwoordigd door een kompas
 
-      | Console | Doel |
-      |---|---|
-      | Assets | Met deze consoles kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd | Gemeenschappen | Met deze console kunt u gemeenschapssites maken en beheren voor betrokkenheid en activering | Handel | Op deze manier kunt u producten, productcatalogi en bestellingen beheren die betrekking hebben op uw handelsites |
-      | Ervaringsfragmenten | Een ervaringsfragment is een stand-alone ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan bevatten, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard |
-      | Forms | Met deze console kunt u formulieren en documenten maken, beheren en verwerken |
-      | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor het ontwerpen van gerichte inhoud en het presenteren van gepersonaliseerde ervaringen |
-      | Projecten | De console van Projecten geeft u directe toegang tot uw projecten. Projecten zijn virtuele dashboards. Zij kunnen worden gebruikt om een team te bouwen, dan dat teamtoegang tot middelen, werkschema&#39;s en taken te geven, die mensen toestaan om aan een gemeenschappelijk doel te werken |
-      | Sites | Met de Sites-consoles kunt u websites maken, weergeven en beheren die op uw AEM worden uitgevoerd. Via deze consoles kunt u websitepagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren |
+     | Console | Doel |
+     |---|---|
+     | Assets | Met deze consoles kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd | Gemeenschappen | Met deze console kunt u gemeenschapssites maken en beheren voor betrokkenheid en activering | Handel | Op deze manier kunt u producten, productcatalogi en bestellingen beheren die betrekking hebben op uw handelsites |
+     | Ervaringsfragmenten | Een ervaringsfragment is een stand-alone ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan bevatten, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard |
+     | Forms | Met deze console kunt u formulieren en documenten maken, beheren en verwerken |
+     | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor het ontwerpen van gerichte inhoud en het presenteren van gepersonaliseerde ervaringen |
+     | Projecten | De console van Projecten geeft u directe toegang tot uw projecten. Projecten zijn virtuele dashboards. Zij kunnen worden gebruikt om een team te bouwen, dan dat teamtoegang tot middelen, werkschema&#39;s en taken te geven, die mensen toestaan om aan een gemeenschappelijk doel te werken |
+     | Sites | Met de Sites-consoles kunt u websites maken, weergeven en beheren die op uw AEM worden uitgevoerd. Via deze consoles kunt u webpagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren |
 
    * Gereedschappen - vertegenwoordigd door een hamer
 * Universeel zoeken
