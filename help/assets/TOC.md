@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 7b98f583f8b54fb9c9c706521c310282dcc17ea3
+source-git-commit: 90d0d4876869b05c2ce00fd8cf18c474a6a00e27
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '401'
 ht-degree: 11%
 
 ---
@@ -57,12 +57,15 @@ ht-degree: 11%
    + [Machtigingen (CUG&#39;s)](./advanced/closed-user-groups.md)
    + [Watermerken](./advanced/watermarks.md)
 
-+ Geavanceerd metagegevensbeheer{#metadata}
++ Geavanceerde metagegevensbeheer{#metadata}
    + [Trapsgewijze metagegevens](metadata/cascade-metadata-feature-video-use.md)
    + [Slimme tags voor afbeeldingen](metadata/image-smart-tags.md)
    + [Aangepaste slimme tags voor afbeeldingen](metadata/custom-smart-tags.md)
    + [Slimme tags voor video&#39;s](metadata/video-smart-tags.md)
    + [Metagegevens importeren en exporteren](metadata/metadata-import-export.md)
+
++ Edge Delivery Services{#edge-delivery-services}
+   + [Sidekick-insteekmodule](./edge-delivery-services/sidekick-plugin.md)
 
 + Delen en distributie{#sharing}
    + [Middelen downloaden](./sharing/download.md)
@@ -88,7 +91,7 @@ ht-degree: 11%
 
 + Adobe-itemkoppeling{#adobe-asset-link}
    + [Instellen](./adobe-asset-link/setup.md)
-   + [Koppeling naar Adobe-element openen](./adobe-asset-link/launch-adobe-asset-link.md)
+   + [Koppeling met Adobe-elementen openen](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Overzicht van deelvensters](./adobe-asset-link/panel-overview.md)
    + [Bestanden en verzamelingen](./adobe-asset-link/files-and-collections.md)
    + [Downloaden en uploaden](./adobe-asset-link/download-and-upload.md)
@@ -142,7 +145,7 @@ ht-degree: 11%
       + [Dynamic Media Core-componenten gebruiken](dynamic-media/tutorials/using-dm-components-on-site-page.md)
       + [Dynamic Media-configuratie verwijderen](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Middelen downloaden in Dynamic Media Classic App](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
-      + [Dynamic Media Classic IPS API&#39;s](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
+      + [Dynamic Media Classic IPS-API&#39;s](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
 + Workfront-integratie{#workfront}
    + Verbeterde aansluiting{#enhanced-connector}
@@ -152,7 +155,7 @@ ht-degree: 11%
          + [Overzicht](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Instellen](./workfront/enhanced-connector/aem-experts-series/setup.md)
          + [Workfront-formulieren en AEM metagegevens](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
-         + [Tags, aan een project gekoppelde mappen en mapmetagegevens](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
+         + [Tags, aan een project gekoppelde mappen en metagegevens van mappen](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
          + [Geavanceerde instellingen en workflows](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 
 + Vertaling {#translation}
