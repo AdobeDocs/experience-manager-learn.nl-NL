@@ -1,7 +1,7 @@
 ---
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 7f7bffa24539d0bba0dc9ac8cc94d0c8d1f2e871
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -13,12 +13,12 @@ ht-degree: 0%
 
 ## Edge Delivery Services{#edge-delivery-services}
 
-[!BADGE Klik hier als u van AEM naar Edge Delivery Services wilt publiceren.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
+[!BADGE Klik hier als u vanuit AEM Sites wilt publiceren met Edge Delivery Services.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
 
 ## Edge Delivery Services en Pagina-editor{#edge-delivery-services-and-page-editor}
 
-[!BADGE Klik hier als u van AEM naar Edge Delivery Services wilt publiceren.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
+[!BADGE Klik hier als u vanuit AEM Sites wilt publiceren met Edge Delivery Services.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
 
 ## Edge Delivery Services en Universal Visual Editor{#edge-delivery-services-and-universal-visual-editor}
 
-[!BADGE Klik hier als u van AEM naar Edge Delivery Services wilt publiceren.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
+[!BADGE Klik hier als u vanuit AEM Sites wilt publiceren met Edge Delivery Services.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publiceren van AEM naar Edge Delivery Services"}
