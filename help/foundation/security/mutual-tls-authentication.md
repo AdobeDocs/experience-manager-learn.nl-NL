@@ -10,17 +10,19 @@ kt: 13881
 thumbnail: KT-13881.png
 doc-type: article
 last-substantial-update: 2023-10-10T00:00:00Z
-source-git-commit: d4835fac83f06482c1252ae962e867de06d326e8
+exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
+source-git-commit: 549b444d0a195fb9b5b8fd7ff48cf133746e5fd2
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
 
-
 # Wederzijdse de authentificatie van de Veiligheid van de Laag van het Vervoer (mTLS) van AEM
 
 Leer hoe te om vraag HTTPS van AEM aan Web APIs te maken die de Wederzijdse authentificatie van de Veiligheid van de Laag van het Vervoer (mTLS) vereisen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
 Met de mTLS- of bidirectionele TLS-verificatie wordt de beveiliging van het TLS-protocol verbeterd doordat **zowel de client als de server om elkaar te verifiëren**. Voor deze verificatie worden digitale certificaten gebruikt. Het wordt algemeen gebruikt in scenario&#39;s waar de sterke veiligheid en identiteitscontrole kritiek zijn.
 
@@ -221,3 +223,9 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 Een conventionele benadering om mTLS APIs met privé certificaten effectief aan te halen impliceert het wijzigen van JVM Keystore. Dit wordt bereikt door de persoonlijke certificaten te importeren met behulp van de Java™ [sleutelgereedschap](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) gebruiken.
 
 Deze methode is echter niet afgestemd op best practices op het gebied van beveiliging en AEM biedt een superieure optie via het gebruik van de **Gebruikersspecifieke sleutelwinkels en Global TrustStore** en [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+
+## Oplossingspakket
+
+Het voorbeeldproject Node.js dat in de video is gedemodeerd, kan worden gedownload van [hier](assets/internal-api-call/REST-APIs.zip).
+
+De AEM servlet-code is beschikbaar in de projecten van het WKND-project `tutorial/web-api-invocation` vertakking, [zie](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
