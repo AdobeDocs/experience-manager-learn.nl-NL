@@ -1,6 +1,6 @@
 ---
 title: Een doelaanroep laden en in werking stellen
-description: Leer hoe te om, parameters tot paginaverzoek over te brengen, en een vraag van het Doel van uw plaatspagina in werking te stellen gebruikend een Regel van de Lancering. De informatie van de pagina wordt teruggewonnen en overgegaan als parameters gebruikend de Laag van Gegevens van de Cliënt van de Adobe die u gegevens over de ervaring van bezoekers op een webpagina kunt verzamelen en opslaan en dan het gemakkelijk maken om tot deze gegevens toegang te hebben.
+description: Leer hoe te om, parameters tot paginaverzoek over te brengen, en een vraag van het Doel van uw plaatspagina in werking te stellen gebruikend een Regel van de Lancering. De informatie van de pagina wordt teruggewonnen en overgegaan als parameters gebruikend de Laag van de Gegevens van de Cliënt van de Adobe die u gegevens over de ervaring van bezoekers op een webpagina kunt verzamelen en opslaan en dan het gemakkelijk maken om tot deze gegevens toegang te hebben.
 feature: Core Components, Adobe Client Data Layer
 topics: integrations, administration, development
 audience: administrator, developer
@@ -14,22 +14,22 @@ level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 # Een doelaanroep laden en in werking stellen {#load-fire-target}
 
-Leer hoe te om, parameters tot paginaverzoek over te brengen, en een vraag van het Doel van uw plaatspagina in werking te stellen gebruikend een Regel van de Lancering. De informatie van de Web-pagina wordt teruggewonnen en overgegaan als parameters gebruikend de Laag van Gegevens van de Cliënt van de Adobe die u gegevens over de ervaring van bezoekers op een webpagina laat verzamelen en opslaan en dan het gemakkelijk maken om tot deze gegevens toegang te hebben.
+Leer hoe te om, parameters tot paginaverzoek over te brengen, en een vraag van het Doel van uw plaatspagina in werking te stellen gebruikend een Regel van de Lancering. De informatie van de Web-pagina wordt teruggewonnen en overgegaan als parameters gebruikend de Laag van de Gegevens van de Cliënt van de Adobe die u gegevens over de ervaring van bezoekers op een webpagina laat verzamelen en opslaan en dan het gemakkelijk maken om tot deze gegevens toegang te hebben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## Regel bij laden van pagina
 
-De gegevenslaag van de Cliënt van Adobe is een gebeurtenis gedreven gegevenslaag. Wanneer de gegevenslaag AEM pagina is geladen, wordt een gebeurtenis geactiveerd `cmp:show` . In de video worden de `Launch Library Loaded` regel wordt aangeroepen via een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
+De gegevenslaag van de Cliënt van de Adobe is een gebeurtenis-gedreven gegevenslaag. Wanneer de gegevenslaag AEM pagina is geladen, wordt een gebeurtenis geactiveerd `cmp:show` . In de video worden de `Launch Library Loaded` regel wordt aangeroepen via een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
 
 ### Aangepaste weergegeven pagina-gebeurtenis{#page-event}
 
@@ -41,7 +41,7 @@ Voeg een nieuwe **Gebeurtenis** aan de **Regel**
 + __Type gebeurtenis:__ Aangepaste code
 + __Naam:__ Pagina weergeven, gebeurtenishandler (of iets beschrijends)
 
-Tik op de knop __Editor openen__ en plakt in het volgende codefragment. Deze code __moet__ worden toegevoegd aan de __Gebeurtenisconfiguratie__ en daarna __Handeling__.
+Tik op de knop __Editor openen__ en plak in het volgende codefragment. Deze code __moet__ worden toegevoegd aan __Gebeurtenisconfiguratie__ en daarna __Handeling__.
 
 ```javascript
 // Define the event handler function
@@ -94,7 +94,7 @@ Indien `trigger(...)` wordt gebruikt buiten de context van het gebeurtenistype A
 
 ![Gegevenselementen](assets/data-elements.png)
 
-Adobe Data Elements starten wijst de gegevens van het gebeurtenisobject toe [geactiveerd in de aangepaste gebeurtenis Page Shown](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van Gegevens van het Element van de Code van de uitbreiding van de Kern.
+Adobe gegevenselementen starten wijst de gegevens van het gebeurtenisobject toe [geactiveerd in de aangepaste gebeurtenis Page Shown](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van Gegevens van het Element van de Code van de uitbreiding van de Kern.
 
 #### Pagina-ID-gegevenselement
 
@@ -104,7 +104,7 @@ if (event && event.id) {
 }
 ```
 
-Deze code keert de genereert unieke identiteitskaart van de Component van de Kern terug.
+Deze code retourneert de unieke id van de Core Component genereren.
 
 ![Pagina-id](assets/pageid.png)
 
@@ -161,8 +161,8 @@ window.targetGlobalSettings = {
 
 ## Ondersteunende koppelingen
 
-+ [Documentatie gegevenslaag Adobe-client](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Documentatie over de gegevenslaag van de client Adoben](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [Adobe Experience Cloud-foutopsporing - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-+ [Het gebruiken van de Laag van Gegevens van de Cliënt van Adobe en de Documentatie van de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
-+ [Inleiding tot het Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
++ [Het gebruiken van de Laag van Gegevens van de Cliënt van de Adobe en de Documentatie van de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
++ [Inleiding tot het Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

@@ -10,7 +10,7 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 2%
@@ -31,9 +31,9 @@ Leer hoe u uw SEO kunt verhogen door sitemaps voor AEM Sites te maken.
 
 ### Absolute sitemap-URL&#39;s{#absolute-sitemap-urls}
 
-AEM sitemap ondersteunt absolute URL&#39;s door [Verspreiding toewijzen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Dit wordt gedaan door toewijzingsknopen op de AEM diensten te creëren die sitemaps (typisch de publicatiedienst AEM) produceren.
+AEM sitemap ondersteunt absolute URL&#39;s met behulp van [Verspreiding toewijzen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Dit wordt gedaan door toewijzingsknopen op de AEM diensten te creëren die sitemaps (typisch de AEM publiceren dienst) produceren.
 
-Een voorbeeld van Sling-toewijzingsknoopdefinitie voor `https://wknd.com` kunnen worden gedefinieerd onder `/etc/map/https` als volgt:
+Een voorbeeld van het splitsen van toewijzingsknoopdefinitie voor `https://wknd.com` kunnen worden gedefinieerd onder `/etc/map/https` als volgt:
 
 | Pad | Eigenschapnaam | Type eigenschap | Waarde van eigenschap |
 |------|----------|---------------|-------|
@@ -48,7 +48,7 @@ De onderstaande schermafbeelding illustreert een vergelijkbare configuratie, maa
 
 ### OSGi-configuratie Sitemap-planner
 
-Definieert de [OSGi-fabrieksconfiguratie](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) voor de frequentie (gebruik [uitsnijdexpressies](http://www.cronmaker.com)) sitemaps worden opnieuw/gegenereerd en in AEM opgeslagen.
+Definieert de [OSGi-fabrieksconfiguratie](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) voor de frequentie (gebruik [uitsnijdexpressies](http://www.cronmaker.com/)) sitemaps worden opnieuw/gegenereerd en in AEM in cache geplaatst.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -62,7 +62,7 @@ Definieert de [OSGi-fabrieksconfiguratie](http://localhost:4502/system/console/c
 
 ### Filterregel toestaan voor verzending
 
-HTTP-aanvragen voor de sitemap-index en sitemap-bestanden toestaan.
+HTTP-aanvragen voor de sitemapindex en sitemapbestanden toestaan.
 
 `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
@@ -87,8 +87,8 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Bronnen
 
-+ [AEM Sitemap-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [AEM Sitemap-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentatie Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentatie Sitemap.org Sitemap](https://www.sitemaps.org/protocol.html)
-+ [Documentatie Sitemap.org Sitemap-indexbestand](https://www.sitemaps.org/protocol.html#index)
++ [Sitemap.org Sitemap-documentatie](https://www.sitemaps.org/protocol.html)
++ [Sitemap.org Documentatie van indexbestand Sitemap](https://www.sitemaps.org/protocol.html#index)
 + [Cronmaker](http://www.cronmaker.com/)

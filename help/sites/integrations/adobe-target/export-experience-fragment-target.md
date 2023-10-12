@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Leer hoe u AEM Ervaring Fragment als Adobe Target-aanbiedingen exporteert.
 
 #### Fout
 
-Als u het fragment Experience naar Adobe Target exporteert zonder de juiste machtigingen in Adobe Admin Console, treedt de volgende fout op bij de AEM Author-service:
+Als u het fragment Experience naar Adobe Target exporteert zonder de juiste machtigingen in Adobe Admin Console, treedt de volgende fout op bij de AEM Auteur-service:
 
     ![UI-fout doel-API](assets/error-target-offer.png)
 
@@ -47,9 +47,9 @@ Als u het fragment Experience naar Adobe Target exporteert zonder de juiste mach
 
 #### Resolutie
 
-1. Aanmelden bij [Admin Console](https://adminconsole.adobe.com/) met beheerrechten voor het Adobe Target-productprofiel dat wordt gebruikt, maar AEM integratie
+1. Aanmelden bij [Admin Console](https://adminconsole.adobe.com/) met beheerrechten voor het gebruikte Adobe Target-productprofiel, maar de AEM integratie
 2. Selecteren __Producten > Adobe Target > Productprofiel__
-3. Onder __Integraties__ tab, selecteer de integratie voor uw AEM as a Cloud Service omgeving (dezelfde naam als het Adobe I/O-project)
+3. Onder __Integraties__ selecteert u de integratie voor uw AEM as a Cloud Service omgeving (dezelfde naam als het Adobe Developer-project)
 4. Toewijzen __Editor__ of __Fiatteur__ rol
 
    ![DoelAPI-fout](assets/target-permissions.png)
@@ -58,5 +58,5 @@ Als u de juiste machtigingen toevoegt aan de Adobe Target-integratie, wordt deze
 
 ## Ondersteunende koppelingen
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud-foutopsporing - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

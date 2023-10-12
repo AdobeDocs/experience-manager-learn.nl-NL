@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Zo krijgt u de React-app:
 >
 > //************************************
 >
->  // TODO :: voer dit uit door de stappen van AEM zelfstudie zonder koppen te volgen.
+>  // TODO Implementeer dit door de stappen van AEM zelfstudie voor headless uit te voeren.
 >
 >  //*********************************
 >
@@ -488,7 +488,7 @@ Als u de naam van een persoon hebt geselecteerd in de weergave Teams, wordt de w
 
 ## Probeer de app
 
-De app controleren [http://localhost:3000/](http://localhost:3000/) en klik op _Leden_ koppelingen. Ook kunt u meer teams en/of leden aan het Alpha- Team toevoegen door de Fragmenten van de Inhoud in AEM toe te voegen.
+De app controleren [http://localhost:3000/](http://localhost:3000/) en klik op _Leden_ koppelingen. Ook kunt u meer teams en/of leden aan de Alpha van het Team toevoegen door de Fragmenten van de Inhoud in AEM toe te voegen.
 
 >[!IMPORTANT]
 >
@@ -496,7 +496,7 @@ De app controleren [http://localhost:3000/](http://localhost:3000/) en klik op _
 
 ## Onder de hood
 
-De browser openen **Gereedschappen voor ontwikkelaars** > **Netwerk** en _Filter_ for `all-teams` verzoek. Let op de GraphQL API-aanvraag `/graphql/execute.json/my-project/all-teams` is gemaakt tegen `http://localhost:3000` en **NOT** tegen de waarde van `REACT_APP_HOST_URI` (bijvoorbeeld <https://publish-p123-e456.adobeaemcloud.com>). De aanvragen worden ingediend op het domein van de React-app omdat [proxyinstelling](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) is ingeschakeld met `http-proxy-middleware` -module.
+De browser openen **Gereedschappen voor ontwikkelaars** > **Netwerk** en _Filter_ for `all-teams` verzoek. Let op de GraphQL API-aanvraag `/graphql/execute.json/my-project/all-teams` is gemaakt tegen `http://localhost:3000` en **NOT** tegen de waarde van `REACT_APP_HOST_URI`bijvoorbeeld `<https://publish-pxxx-exxx.adobeaemcloud.com`. De aanvragen worden ingediend op het domein van de React-app omdat [proxyinstelling](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) is ingeschakeld met `http-proxy-middleware` -module.
 
 
 ![GraphQL API-verzoek via Proxy](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)

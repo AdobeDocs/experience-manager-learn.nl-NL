@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun h
 
    ![A/B-activiteit](assets/ab-target-activity.png)
 
-1. Selecteer **Visual Experience Composer** , geeft u de URL van de activiteit op en klikt u op **Volgende**
+1. Selecteer de **Visual Experience Composer** , geeft u de URL van de activiteit op en klikt u op **Volgende**
 
    ![URL van activiteit](assets/ab-test-url.png)
 
-1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door **Ervaring toevoegen** knop.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen door **Ervaring toevoegen** knop.
 
    ![Ervingopties](assets/experience-options.png)
 
@@ -61,7 +61,7 @@ De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun h
 
 1. Klikken **Volgende** om over te stappen naar gericht en een handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
-   ![Doelstelling](assets/targeting.png)
+   ![Targeting](assets/targeting.png)
 
 1. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
 
@@ -82,5 +82,5 @@ Als markeerteken kunt u een activiteit maken om uw sitepagina&#39;s die op AEM w
 
 ## Ondersteunende koppelingen
 
-* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
+* [Adobe Experience Cloud-foutopsporing - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

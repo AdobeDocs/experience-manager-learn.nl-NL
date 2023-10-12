@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -27,30 +27,30 @@ Leer hoe te om een Activiteit van het Doel van de Test te creëren A/B gebruiken
 
 ## Vereisten
 
-Om VEC op een AEM website te kunnen gebruiken, moet de volgende instelling zijn voltooid:
+Als u VEC op een AEM website wilt gebruiken, moet u de volgende installatie uitvoeren:
 
 1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
 1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
 
 ## Overzicht van scenario
 
-Op de homepage van de WKND-site worden lokale activiteiten of de beste manier om rond een stad te doen weergegeven in de vorm van informatiekaarten. Als markeerteken, bent u toegewezen de taak om de homepage te wijzigen, door tekstveranderingen in het leerapparaat van de avontuursectie aan te brengen en te begrijpen hoe het omzetting verbetert.
+Op de homepage van de WKND-site worden lokale activiteiten of de beste dingen die u rondom een stad kunt doen, weergegeven in de vorm van informatiekaarten. Als markeerteken, bent u toegewezen de taak om de homepage te wijzigen, door tekstveranderingen in het leerapparaat van de avontuursectie aan te brengen en te begrijpen hoe het omzetting verbetert.
 
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
 1. Aanmelden bij [Adobe Experience Cloud](https://experience.adobe.com/)tikken op __Doel__, navigeert u naar de __Activiteiten__ tab
 
-   + Als u niet ziet __Doel__ op het dashboard van de Experience Cloud, zorg ervoor de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat u de gebruiker toegang tot Doel binnen hebt verleend [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Als u niet ziet __Doel__ op het dashboard van het Experience Cloud, zorg ervoor dat de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat de gebruiker toegang tot Doel heeft verleend binnen [Adobe Admin Console](https://adminconsole.adobe.com/).
 
 1. Klikken **Activiteit maken** en kies vervolgens **A/B-test** activiteit
 
    ![A/B-activiteit](assets/ab-target-activity.png)
 
-1. Selecteer **Visual Experience Composer** , geeft u de URL van de activiteit op en klikt u op **Volgende**
+1. Selecteer de **Visual Experience Composer** , geeft u de URL van de activiteit op en klikt u op **Volgende**
 
    ![URL van activiteit](assets/ab-test-url.png)
 
-1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een nieuwe activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen, door **Ervaring toevoegen** knop.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen door **Ervaring toevoegen** knop.
 
    ![Ervaring A](assets/experience.png)
 
@@ -69,7 +69,7 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste manier om
 
 1. Klikken **Volgende** om naar gericht te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
-   ![Doelstelling](assets/targeting.png)
+   ![Targeting](assets/targeting.png)
 
 1. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
 
@@ -86,9 +86,9 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste manier om
 
 ## Samenvatting
 
-In dit hoofdstuk, kon een teller een ervaring tot stand brengen gebruikend Visual Experience Composer door te slepen en neer te zetten, de lay-out en de inhoud van een Web-pagina te ruilen zonder enige code te veranderen om een test in werking te stellen.
+In dit hoofdstuk kon een teller een ervaring tot stand brengen gebruikend Visual Experience Composer door te slepen en neer te zetten, de lay-out en de inhoud van een Web-pagina te ruilen zonder enige code te veranderen om een test in werking te stellen.
 
 ## Ondersteunende koppelingen
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud-foutopsporing - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

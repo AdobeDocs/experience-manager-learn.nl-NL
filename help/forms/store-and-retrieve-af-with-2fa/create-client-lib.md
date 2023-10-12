@@ -10,16 +10,16 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
-source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
 
 # Clientbibliotheek maken
 
-Maken [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) die de code bevat om de methode aan te roepen `doAjaxSubmitWithFileAttachment` van de `guideBridge` API op de klikgebeurtenis van de knoop die door de CSS klasse wordt geïdentificeerd **saveknop**.  We geven de adaptieve formuliergegevens door, `fileMap`en de `mobileNumber` aan het eindpunt luisterend bij `**/bin/storeafdatawithattachments`
+Maken [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) die de code bevat om de methode aan te roepen `doAjaxSubmitWithFileAttachment` van de `guideBridge` API op de klikgebeurtenis van de knoop die door de CSS klasse wordt geïdentificeerd **knop Opslaan**.  We geven de adaptieve formuliergegevens door, `fileMap`en de `mobileNumber` aan het eindpunt luisterend bij `**/bin/storeafdatawithattachments`
 
 Nadat de formuliergegevens zijn opgeslagen, wordt een unieke toepassings-id gegenereerd en in een dialoogvenster aan de gebruiker getoond. Als de gebruiker het dialoogvenster sluit, wordt hij naar het formulier geleid waarmee hij het opgeslagen adaptieve formulier kan ophalen met de unieke toepassings-id.
 
@@ -67,9 +67,9 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> We hebben [javascript-bibliotheek bootbox](http://bootboxjs.com/examples.html) naar dialoogvenster
+> We hebben [box JavaScript-bibliotheek](https://bootboxjs.com/examples.html) naar dialoogvenster
 
-De in dit voorbeeld gebruikte clientbibliotheken kunnen [hier gedownload](assets/store-af-with-attachments-client-lib.zip)
+De in dit voorbeeld gebruikte clientbibliotheken kunnen [hier gedownload.](assets/store-af-with-attachments-client-lib.zip)
 
 ## Volgende stappen
 
