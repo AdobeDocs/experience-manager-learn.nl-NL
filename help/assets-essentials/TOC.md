@@ -8,10 +8,10 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 3%
    + [Metagegevensformulieren](configuring/metadata-forms.md)
    + [Machtigingsbeheer](configuring/permissions-management.md)
 
-+ [Creative Cloud-integratie](integrations/creative-cloud.md)
++ [Integratie van Creative Cloud](integrations/creative-cloud.md)
 
 + Adobe Workfront-integratie{#workfront}
    + [Overzicht](./integrations/workfront/overview.md)
@@ -44,6 +44,6 @@ ht-degree: 3%
    + [Documenten verzenden en elementen koppelen](./integrations/workfront/link-send.md)
    + [Versiehistorie](./integrations/workfront/versions.md)
 
-+ [Adobe Journey Optimizer-integratie](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html)
++ [Adobe Journey Optimizer-integratie](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html){target=_blank}
 
-+ [Documentatie](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html)
++ [Documentatie](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=_blank}

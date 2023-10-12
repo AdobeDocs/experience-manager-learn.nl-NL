@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: e7e5a07ecada8e5760cd1496bdb44b3d035373dd
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '459'
+ht-degree: 11%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 0%
    + [Webgeoptimaliseerde afbeeldingslevering](components/web-optimized-image-delivery.md)
    + [Onderdelenconsole](components/components-console-feature-video-use.md)
 + Contentfragmenten {#content-fragments}
-   + [Content Fragments-console](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html)
+   + [Content Fragments-console](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Inhoudsfragmenten ontwerpen](content-fragments/content-fragments-feature-video-use.md)
    + [Inhoudsfragmenten leveren](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Inhoudsfragmenten omzetten](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -51,13 +51,13 @@ ht-degree: 0%
 + Ervaringsfragmenten {#experience-fragments}
    + [Ervaringsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
    + [Bouwstenen](experience-fragments/building-blocks.md)
-   + [Content Fragments vs. Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + [Content Fragments vs. Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 
 + Ontwikkeling {#developing}
    + [Projectarchetype AEM](developing/aem-project-archetype.md)
-   + [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-   + [Aan de slag met AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-   + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+   + [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
+   + [Aan de slag met AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
+   + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Pagina-eigenschappen uitbreiden](developing/page-properties-technical-video-develop.md)
    + [Responsieve onderbrekingspunten](developing/responsive-breakpoints.md)
    + [Ontwikkelen met het Stijlsysteem](developing/style-system-technical-video-understand.md)
@@ -67,7 +67,7 @@ ht-degree: 0%
    + [Delen van sociale media](developing/social-media-sharing-technical-video-use.md)
    + [Componentpictogrammen aanpassen](developing/component-icons-technical-video-develop.md)
 + Personalisatie {#personalization}
-   + [Integratie met Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
+   + [Integratie met Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html){target=_blank}
    + [Fragmenten voor Setup-ervaring en Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Experience Fragments gebruiken met Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub instellen](personalization/context-hub-technical-video-setup.md)
@@ -75,7 +75,7 @@ ht-degree: 0%
    + [Sitemaps](./seo/sitemaps.md)
 + Toepassingen voor één pagina {#spa-editor}
    + [De SPA Editor gebruiken](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+   + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + Beheer van meerdere sites {#multi-site-management}
    + [Inleiding tot het kopiëren van talen](./multi-site-management/language-copy-overview.md)
    + [Live kopiëren en vervagen](./multi-site-management/live-copy-and-blueprint.md)
@@ -100,16 +100,16 @@ ht-degree: 0%
    + Experience Platform {#experience-platform}
       + [FPID&#39;s genereren](integrations/platform/fpid.md)
       + [Web SDK](integrations/platform/web-sdk.md)
-      + [Analyses die Platform Web SDK gebruiken](integrations/platform/analytics-using-web-sdk.md)
+      + [Analyses die gebruikmaken van Platform Web SDK](integrations/platform/analytics-using-web-sdk.md)
    + Experience Platform Data Collection Tags (Launch) {#experience-platform-data-collection-tags}
       + [Overzicht](integrations/experience-platform/data-collection/tags/overview.md)
       + [Een eigenschap voor een tag maken](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [AEM verbinden en eigenschappen labelen met IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
       + [Cloud Service AEM starten maken](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
       + [Fouten opsporen in een implementatie van tags (Starten)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
-   + Gegevenslaag Adobe-client {#adobe-client-data-layer}
-      + [De gegevenslaag van de Adobe-client gebruiken](integrations/adobe-client-data-layer/data-layer-overview.md)
-      + [De gegevenslaag Adobe Client aanpassen](integrations/adobe-client-data-layer/data-layer-customize.md)
+   + Gegevenslaag client-Adobe {#adobe-client-data-layer}
+      + [De gegevenslaag van de client Adoben gebruiken](integrations/adobe-client-data-layer/data-layer-overview.md)
+      + [De gegevenslaag van de client van de Adobe aanpassen](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Analyse {#analytics}
       + [Paginagegevens verzamelen met Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Aangeklikte component bijhouden met Adobe Analytics](integrations/analytics/track-clicked-component.md)

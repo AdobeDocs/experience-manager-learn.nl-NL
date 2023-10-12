@@ -8,7 +8,7 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 12%
@@ -20,7 +20,7 @@ ht-degree: 12%
 
 + [Overzicht van AEM headless](./overview.md)
 + GraphQL {#graphql}
-   + [AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html){target=_blank}
    + [Overzicht](./graphql/overview.md)
    + Snelle installatie {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
@@ -96,7 +96,7 @@ ht-degree: 12%
    + Externe SPA{#remote-spa}
       + [Overzicht](./spa-editor/remote-spa/overview.md)
       + [1 - AEM configureren](./spa-editor/remote-spa/aem-configure.md)
-      + [2 - Bootstrap de SPA](./spa-editor/remote-spa/spa-bootstrap.md)
+      + [2 - Bootstrap van de SPA](./spa-editor/remote-spa/spa-bootstrap.md)
       + [3 - Vaste componenten](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - Containeronderdelen](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - Dynamische routes](./spa-editor/remote-spa/spa-dynamic-routes.md)
@@ -113,7 +113,7 @@ ht-degree: 12%
    + [3 - Inhoudsfragmenten voor gebeurtenissen ontwerpen](./content-services/chapter-3.md)
    + [4 - Templates voor inhoudsservices definiëren](./content-services/chapter-4.md)
    + [5 - Pagina&#39;s met inhoudsservices ontwerpen](./content-services/chapter-5.md)
-   + [6 - De inhoud beschikbaar maken op AEM-publicaties voor levering](./content-services/chapter-6.md)
+   + [6 - De inhoud beschikbaar maken bij AEM publiceren voor levering](./content-services/chapter-6.md)
    + [7 - AEM Content Services gebruiken vanuit een mobiele app](./content-services/chapter-7.md)
 + Codevoorbeelden {#code-samples}
    + [Reactie-app filteren](./graphql/code-samples/filtering-react-app.md)
