@@ -12,8 +12,8 @@ level: Beginner
 feature: Interactive Communication
 last-substantial-update: 2023-04-19T00:00:00Z
 kt: 13126
-exl-id: f12ab119-ac8e-4cc8-af86-cbffa30e72c5
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+exl-id: e551ac8d-0bfc-4c94-b773-02ff9bba202e
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
 1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
 1. Maak in de map apps een map met de naam config met een pad/structuur die lijkt op de configuratiemap (libs/fd/cm/config). Ga hierbij als volgt te werk:
 
-   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/config`
 
@@ -176,7 +176,6 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
 
    1. Klikken **Alles opslaan**.
 
-
 ## Aangepaste lettertypen toevoegen aan de clientcomputer {#addcustomfonts}
 
 Wanneer u tot een doopvont in de Interactieve Communicatie tekstredacteur toegang hebt, moet het in de cliëntmachine aanwezig zijn u gebruikt om tot Interactieve Communicatie toegang te hebben. Als u een aangepast lettertype in de teksteditor wilt gebruiken, moet u dit eerst op de client installeren.
@@ -184,7 +183,7 @@ Wanneer u tot een doopvont in de Interactieve Communicatie tekstredacteur toegan
 Raadpleeg de volgende secties voor meer informatie over het installeren van lettertypen:
 
 * [Lettertypen installeren of verwijderen in Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
-* [Basisprincipes van Mac: Lettertypeboek](https://support.apple.com/en-us/HT201749)
+* [Mac-basisbeginselen: lettertypeboek](https://support.apple.com/en-us/HT201749)
 
 ## Lettertypeaanpassingen openen {#access-font-customizations}
 

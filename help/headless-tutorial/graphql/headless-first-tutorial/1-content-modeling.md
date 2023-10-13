@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 1%
 
 ---
-
 
 # Modellering van inhoud
 
@@ -36,11 +36,11 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 ## Contextbewuste configuratie
 
-1. Navigeren naar __Gereedschappen > Configuratiebrowser__ om een configuratie voor de headless ervaring te creëren.
+1. Navigeren naar __Gereedschappen > Configuratiebrowser__ om een configuratie voor de headless ervaring tot stand te brengen.
 
    ![Map maken](./assets/1/create-configuration.png)
 
-   Een __titel__ en __name__ en controleren __Aangehouden GraphQL-query&#39;s__ en __Modellen van inhoudsfragmenten__.
+   Geef een __titel__ en __name__ en controleren __Aangehouden GraphQL-query&#39;s__ en __Modellen van inhoudsfragmenten__.
 
 
 ## Modellen van contentfragmenten
@@ -75,7 +75,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    | Datatype | Naam | Vereist | Opties |
    |----------|------|----------|---------|
-   | Fragmentverwijzing | Lijstitems | ja | Renderen als meerdere velden. Toegestaan inhoudsfragmentmodel is aangeboden. |
+   | Fragmentverwijzing | Items weergeven | ja | Renderen als meerdere velden. Toegestaan inhoudsfragmentmodel is aangeboden. |
 
    ![Model afbeeldingenlijst](./assets/1/imagelist-model.png)
 
@@ -90,7 +90,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    ![Map met middelen AEM headless cloud config](./assets/1/cloud-config.png)
 
-   Klik in de nieuwe map en maak een gummetje. Klikken __Maken__ en __Inhoudsfragment__ en selecteert u de __Teaser__ model. Geef het model een naam __Hero__ en klik op __Maken__.
+   Klik in de nieuwe map en maak een teaser. Klikken __Maken__ en __Inhoudsfragment__ en selecteert u de __Teaser__ model. Geef het model een naam __Hero__ en klik op __Maken__.
 
    | Naam | Notities |
    |----------|------|
@@ -131,7 +131,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    Er moet een lijst met één fragment worden gemaakt [boven](#create-content).
 
-   Voor deze oefening maakt u een volledige query die de app zonder kop gebruikt. Maak een query die één teaser per pad retourneert. Voer de volgende query in in de query-editor:
+   Voor deze oefening, creeer een volledige vraag die de AEM headless app gebruikt. Maak een query die één teaser per pad retourneert. Voer de volgende query in in de query-editor:
 
    ```graphql
    query TeaserByPath($path: String!) {
@@ -192,6 +192,6 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 ## Volgende stappen
 
-Gefeliciteerd! U hebt met succes gevormd AEM as a Cloud Service om voor de verwezenlijking van de Fragments van de Inhoud en eindpunten van GraphQL toe te staan. U hebt ook een model van het Fragment van de Inhoud en een Fragment van de Inhoud, en bepaald een eindpunt van GraphQL en persisted vraag gecreeerd. U bent nu bereid om zich op het volgende zelfstudie- hoofdstuk te bewegen, waar u zult leren hoe te om een AEM toepassing van de Reactie van de Zwaartepunt tot stand te brengen die de Fragments van de Inhoud en het eindpunt van GraphQL verbruikt u in dit hoofdstuk creeerde.
+Gefeliciteerd! U hebt met succes gevormd AEM as a Cloud Service om voor de verwezenlijking van de Fragmenten van de Inhoud en eindpunten van GraphQL toe te staan. U hebt ook een model van het Fragment van de Inhoud en een Fragment van de Inhoud, en bepaald een eindpunt van GraphQL en persisted vraag gecreeerd. U bent nu bereid om zich op het volgende zelfstudie- hoofdstuk te bewegen, waar u zult leren hoe te om een AEM toepassing van de Reactie van de Zwaartepunt tot stand te brengen die de Fragments van de Inhoud en het eindpunt van GraphQL verbruikt u in dit hoofdstuk creeerde.
 
-[Volgende hoofdstuk: Koploze API&#39;s AEM en reageren](./2-aem-headless-apis-and-react.md)
+[Volgend hoofdstuk: AEM headless API&#39;s en Reageer](./2-aem-headless-apis-and-react.md)

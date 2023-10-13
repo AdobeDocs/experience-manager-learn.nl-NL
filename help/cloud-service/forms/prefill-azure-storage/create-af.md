@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 thumbnail: 335423.jpg
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: 0b543c6b-9cfd-4fac-b8d0-33153c036f4b
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Maak en adaptief formulier en zorg ervoor dat dit is gebaseerd op het juiste ada
 In het formulier hebben we 2 verborgen velden toegevoegd
 
 * Klodderidentiteitskaart - Dit gebied wordt bevolkt met een GUID wanneer het gebied wordt geïnitialiseerd. De waarde van dit veld wordt gebruikt als bindmiddel om blob-opslag van de formuliergegevens op unieke wijze te identificeren. Dit bindmiddel wordt gebruikt om de formuliergegevens te identificeren.
-* Klodder-id geretourneerd - Dit veld wordt gevuld met het resultaat van de serviceaanroep om gegevens op te slaan in Azure Storage. Deze waarde zal het zelfde als Klodderidentiteitskaart van de vorige stap zijn.
+* Klodder-id geretourneerd - Dit veld wordt gevuld met het resultaat van de serviceaanroep om gegevens op te slaan in Azure Storage. Deze waarde komt overeen met de Blob-id van de vorige stap.
 
 Het formulier heeft de volgende bedrijfsregels
 
@@ -37,4 +38,3 @@ Het formulier heeft de volgende bedrijfsregels
 ### Volgende stappen
 
 [De voorbeeldelementen implementeren](./deploy-sample-assets.md)
-

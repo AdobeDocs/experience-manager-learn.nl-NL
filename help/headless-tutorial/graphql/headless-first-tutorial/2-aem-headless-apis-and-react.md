@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+exl-id: 2b726473-5a32-4046-bce8-6da3c57a1b60
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
 
 ---
-
 
 # Koploze API&#39;s AEM en reageren
 
@@ -71,7 +71,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 ## De React-app uitvoeren
 
-1. De React-app starten door deze uit te voeren `npm run start` op de opdrachtregel.
+1. Start de React-app via uitvoeren `npm run start` op de opdrachtregel.
 
    ```
    $ npm run start
@@ -251,7 +251,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    );
    ```
 
-   U moet nu het gummetje zien met de inhoud die in het fragment is opgenomen.
+   U moet nu het gummetje zien met de inhoud in het fragment.
 
 
 ## Volgende stappen
@@ -260,4 +260,4 @@ Gefeliciteerd! U hebt de React-app bijgewerkt en geïntegreerd met AEM Headless 
 
 Daarna, maken wij een complexere component van de Lijst van het Beeld die dynamisch referenced Inhoudsfragmenten van AEM teruggeeft.
 
-[Volgende hoofdstuk: Een component Afbeeldingslijst maken](./3-complex-components.md)
+[Volgend hoofdstuk: Een component van de Lijst van het Beeld bouwen](./3-complex-components.md)

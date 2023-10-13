@@ -1,6 +1,6 @@
 ---
 title: Hiermee wordt een eindpunt beschikbaar gemaakt dat kan worden aangeroepen om de URL van het webformulier te retourneren
-description: AEM servlet maken om de URL van het webformulier te retourneren
+description: AEM servlet maken om URL van webformulier te retourneren
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -8,8 +8,8 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: d970d58b-77a4-4012-9e72-b97d60ef028a
-source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
+exl-id: 3b7632bd-3820-4c1e-aa3f-8a6a4fc26847
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
@@ -90,4 +90,3 @@ public class GetWidgetUrl extends SlingAllMethodsServlet {
 ## Volgende stappen
 
 [De lesbestanden op uw lokale systeem implementeren](./deploy-assets-on-your-server.md)
-

@@ -8,13 +8,13 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: 7469aa7f-1794-40dd-990c-af5d45e85223
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 1%
 
 ---
-
 
 # Pagina-component
 
@@ -36,7 +36,7 @@ Meld u aan bij uw lokale AEM Forms-exemplaar dat klaar is voor de cloud. De volg
 | jcr:titel | String | Aangepaste formuliersjabloonpagina |
 | sling:resourceSuperType | String | `fd/af/components/page2/aftemplatedpage` |
 
-Kopieer de `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` en plak het onder de `storeandfetch` knooppunt. De naam van de `aftemplatedpage.jsp` tot `storeandfetch.jsp`.
+De `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` en plak het onder de `storeandfetch` knooppunt. De naam van de `aftemplatedpage.jsp` tot `storeandfetch.jsp`.
 
 Openen `storeandfetch.jsp` en voeg de volgende regel toe:
 
@@ -84,4 +84,3 @@ In deze code krijgen we de waarde van de parameter request **guid** en sla deze 
 ### Volgende stappen
 
 [De paginacomponent aan de sjabloon koppelen](./associate-page-component.md)
-

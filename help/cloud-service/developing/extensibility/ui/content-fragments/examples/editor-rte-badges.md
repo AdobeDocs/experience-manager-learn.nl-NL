@@ -10,13 +10,13 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
+exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
 
 ---
-
 
 # Badges toevoegen aan Rich Text Editor (RTE)
 
@@ -36,7 +36,7 @@ In dit voorbeeld wordt getoond hoe u een widget met de naam _Klantenservice voor
 
 Ook de **Telefoonnummer** wordt anders opgemaakt (blauw). Dit is een extra gebruiksgeval voor de badges-functionaliteit.
 
-In dit voorbeeld wordt het volgende gebruikt om de [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) -framework voor het ontwikkelen van de interface van de widget of dialoog en hardgecodeerde WKND-telefoonnummers voor Klantenservice. Als u het niet-bewerken en andere stijlaspecten van de inhoud wilt bepalen, `#` teken wordt gebruikt in het dialoogvenster `prefix` en `suffix` kenmerk van de definitie van badges.
+In dit voorbeeld wordt het volgende gebruikt om de [Adobe Reageren spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) -framework voor het ontwikkelen van de interface van de widget of dialoog en hardgecodeerde WKND-telefoonnummers voor Klantenservice. Als u het niet-bewerken en andere stijlaspecten van de inhoud wilt bepalen, `#` teken wordt gebruikt in het dialoogvenster `prefix` en `suffix` kenmerk van de definitie van badges.
 
 ## Extensiepunten
 
@@ -134,14 +134,14 @@ In de hoofdcomponent React `App.js`, voegt u de `largeBookingsCustomerService` r
 
 ### Maken `LargeBookingsCustomerService` Reageercomponent{#create-widget-react-component}
 
-De widget- of dialoogvenster-UI wordt gemaakt met de [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) kader.
+De widget- of dialoogvenster-UI wordt gemaakt met de [Adobe Reageren spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) kader.
 
 De React componentencode wanneer het toevoegen van de details van de klantendienst, omring de variabele van het telefoonaantal met `#` gedeponeerd badges om dit om te zetten in badges, zoals `#${phoneNumber}#`en maakt het dus niet bewerkbaar.
 
 Hier zijn de belangrijkste hooglichten van `LargeBookingsCustomerService` code:
 
 + UI wordt teruggegeven gebruikend React de componenten van het Spectrum, zoals [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Knop](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ De `largeGroupCustomerServiceList` array heeft hardcoded mapping van representatieve naam en telefoonnummer. In echt scenario, kunnen deze gegevens van Adobe AppBuilder actie of externe systemen of huis worden teruggewonnen uitgegroeid of op wolk leverancier-gebaseerde API gateway.
++ De `largeGroupCustomerServiceList` array heeft hardcoded mapping van representatieve naam en telefoonnummer. In echt scenario, kunnen deze gegevens uit Adobe AppBuilder actie of externe systemen of huis worden teruggewonnen uitgegroeid of op wolk leverancier-gebaseerde API gateway.
 + De `guestConnection` is geïnitialiseerd met de `useEffect` [Reagehaak](https://react.dev/reference/react/useEffect) en beheerd als componentstatus. Het wordt gebruikt om met de AEM gastheer te communiceren.
 + De `handleCustomerServiceChange` de functie krijgt representatieve naam en telefoonaantal en werkt de variabelen van de componentenstaat bij.
 + De `addCustomerServiceDetails` functie gebruiken `guestConnection` -object bevat RTE-instructie die moet worden uitgevoerd. In dit geval `insertContent` codefragment voor instructies en HTML.

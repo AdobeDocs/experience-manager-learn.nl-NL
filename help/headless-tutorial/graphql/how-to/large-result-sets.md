@@ -10,8 +10,8 @@ doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
 jira: KT-13102
 thumbnail: 3418381.jpeg
-exl-id: f47ce344-310f-4b4c-9340-b0506289f468
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -24,7 +24,7 @@ AEM GraphQL-query&#39;s zonder koppen kunnen grote resultaten opleveren. In dit 
 
 AEM Headless ondersteunt een [offset/limiet](#list-query) en [cursorpaginering](#paginated-query) vragen aan kleinere subsets van een grotere resultaatset. Er kunnen meerdere verzoeken worden ingediend om zoveel resultaten te verzamelen als nodig is.
 
-In de onderstaande voorbeelden worden kleine subsets van resultaten (vier records per aanvraag) gebruikt om de technieken aan te tonen. In een echte toepassing gebruikt u een groter aantal records per aanvraag om de prestaties te verbeteren. 50 records per verzoek is een goede basislijn.
+In de onderstaande voorbeelden worden kleine subsets van resultaten (vier records per aanvraag) gebruikt om de technieken aan te tonen. In een echte toepassing zou u een groter aantal records per aanvraag gebruiken om de prestaties te verbeteren. 50 records per verzoek is een goede basislijn.
 
 ## Inhoudsfragmentmodel
 
@@ -64,7 +64,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 
 #### GraphQL-reactie
 
-De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben dezelfde prijs (`4500` dus [lijstquery](#list-queries) verwijst naar avonturen met dezelfde prijs en wordt vervolgens in oplopende volgorde gesorteerd op titel.)
+De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben dezelfde prijs (`4500` dus de [lijstquery](#list-queries) verwijst naar avonturen met dezelfde prijs en wordt vervolgens in oplopende volgorde gesorteerd op titel.)
 
 ```json
 {
@@ -133,7 +133,7 @@ query adventuresByPaginated($first:Int, $after:String) {
 
 #### GraphQL-reactie
 
-De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben dezelfde prijs (`4500` dus [lijstquery](#list-queries) verwijst naar avonturen met dezelfde prijs en wordt vervolgens in oplopende volgorde gesorteerd op titel.)
+De resulterende JSON-respons bevat de tweede, derde, vierde en vijfde duurste avonturen. De eerste twee avonturen in de resultaten hebben dezelfde prijs (`4500` dus de [lijstquery](#list-queries) verwijst naar avonturen met dezelfde prijs en wordt vervolgens in oplopende volgorde gesorteerd op titel.)
 
 ```json
 {
@@ -366,7 +366,7 @@ export function usePaginatedAdventures() {
 
 #### Component
 
-De component gebruikt de `usePaginatedAdventures` haak om een lijst van avonturen terug te winnen. De `queryCount` wordt gebruikt om het aantal HTTP-aanvragen weer te geven dat is gemaakt om de lijst met avonturen op te halen.
+De component gebruikt de `usePaginatedAdventures` haak om een lijst van avonturen terug te winnen. De `queryCount` Deze waarde wordt gebruikt om het aantal HTTP-aanvragen weer te geven dat is gemaakt om de lijst met avonturen op te halen.
 
 ```javascript
 import { useState } from "react";

@@ -10,19 +10,19 @@ jira: KT-13453
 thumbnail: KT-13453.jpeg
 doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
-
 # Aangepaste rasterkolommen
 
 ![Kolom voor aangepast raster van contentfragmentconsole](./assets/custom-grid-columns/hero.png){align="center"}
 
-Met de opdracht  `contentFragmentGrid` extensiepunt. In dit voorbeeld ziet u hoe u een aangepaste kolom toevoegt waarmee de pagina Inhoudsfragmenten op basis van de laatste gewijzigde datum in een leesbare indeling wordt weergegeven.
+U kunt aangepaste rasterkolommen aan de Content Fragment Console toevoegen met de opdracht  `contentFragmentGrid` extensiepunt. In dit voorbeeld ziet u hoe u een aangepaste kolom toevoegt waarmee de pagina Inhoudsfragmenten op basis van de laatste gewijzigde datum in een leesbare indeling wordt weergegeven.
 
 ## Extensiepunt
 
@@ -202,13 +202,13 @@ JSON-voorbeeldinhoudfragment dat beschikbaar is als een element van het dialoogv
 }
 ```
 
-Als andere gegevens nodig zijn om de aangepaste kolom te vullen, kunnen HTTP-aanvragen worden ingediend bij AEM-auteur om de gegevens op te halen.
+Als andere gegevens nodig zijn om de aangepaste kolom te vullen, kunnen HTTP-aanvragen worden ingediend bij AEM auteur om de gegevens op te halen.
 
 >[!IMPORTANT]
 >
-> Zorg ervoor dat de instantie van de AEM-auteur zo is geconfigureerd dat [verzoeken van oorsprong](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) vanuit de oorsprong waarop de AppBuilder-app wordt uitgevoerd. Toegestane oorsprong omvat `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de oorsprong van de AppBuilder-productie.
+> Zorg ervoor dat de instantie AEM Auteur is geconfigureerd om [verzoeken van oorsprong](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) vanuit de oorsprong waarop de AppBuilder-app wordt uitgevoerd. Toegestane oorsprong omvat `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de AppBuilder-productie.
 >
-> De extensie kan ook een aangepaste [Handeling AppBuilder](../../runtime-action.md) dat het verzoek namens de uitbreiding indient bij de AEM-auteur.
+> De extensie kan ook een aangepaste [Handeling AppBuilder](../../runtime-action.md) dat het verzoek indient aan AEM auteur namens de uitbreiding.
 
 
 ```javascript

@@ -9,13 +9,13 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 13520
-source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
+exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste verzending maken
 
@@ -87,7 +87,7 @@ public class HandleRegistrationFormSubmission implements FormSubmitActionService
 
 ## Een crx-knooppunt maken onder apps
 
-Het knooppunt ui.apps uitvouwen maakt een nieuw pakket met de naam **HandleRegistrationFormSubmission** onder het knooppunt Apps, zoals in de onderstaande schermafbeelding wordt getoond
+Het knooppunt ui.apps uitbreiden om een nieuw pakket met de naam **HandleRegistrationFormSubmission** onder het knooppunt Apps, zoals in de onderstaande schermafbeelding wordt getoond
 ![crx-node](./assets/crx-node.png)
 Maak een bestand met de naam .content.xml onder de lijst **HandleRegistrationFormSubmission**. Kopieer en plak de volgende code in de .content.xml
 
@@ -101,7 +101,7 @@ Maak een bestand met de naam .content.xml onder de lijst **HandleRegistrationFor
     submitService="Core Custom AF Submit"/>
 ```
 
-De waarde van de **submitService** element moet overeenkomen  **serviceName = &quot;Core Custom AF Submit&quot;** in de FormSubmitActionService-implementatie.
+De waarde van **submitService** element moet overeenkomen  **serviceName = &quot;Core Custom AF Submit&quot;** in de FormSubmitActionService-implementatie.
 
 ## De code naar uw lokale AEM Forms-instantie implementeren
 
@@ -117,7 +117,7 @@ Hiermee wordt de code als één pakket geïmplementeerd op uw auteurinstantie
 ## Push the code to cloud manager and Deploy the code
 
 Nadat u de code op uw lokale instantie hebt gecontroleerd, drukt u op de code naar uw cloudinstantie.
-Breng de wijzigingen aan in uw lokale opslagplaats voor it en vervolgens aan het cloudbeheerprogramma. U kunt de  [Git-instelling](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [AEM project naar cloudbeheergegevensopslagruimte duwen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) en [inzetten in de ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html) artikelen.
+Breng de wijzigingen aan in uw lokale opslagplaats voor it en vervolgens aan het cloudbeheerprogramma. U kunt verwijzen naar de  [Git-instelling](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [AEM project naar cloudbeheergegevensopslagruimte duwen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) en [inzetten in de ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html) artikelen.
 
 Zodra de pijplijn met succes is uitgevoerd, zou u de verzendactie van uw vorm aan de douane moeten kunnen associëren voorlegt manager zoals aangetoond in het hieronder ontsproten scherm.
 ![voorlegging](./assets/configure-submit-action.png)
@@ -125,15 +125,3 @@ Zodra de pijplijn met succes is uitgevoerd, zou u de verzendactie van uw vorm aa
 ## Volgende stappen
 
 [Aangepaste reactie weergeven in uw reactie-app](./handle-response-react-app.md)
-
-
-
-
-
-
-
-
-
-
-
-

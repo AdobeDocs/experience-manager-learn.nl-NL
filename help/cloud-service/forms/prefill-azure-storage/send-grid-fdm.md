@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: 4b2d1e50-9fa1-4934-820b-7dae984cee00
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden met AEM Forms. Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen.
 
-We hebben de SendGrid-API gebruikt om e-mails te verzenden met behulp van een dynamische sjabloon. Aangenomen wordt dat u bekend bent met SendGrid API voor het verzenden van e-mails met behulp van dynamische sjablonen. In deze zelfstudie hebt u een kwikstbestand voor een beschrijving van de API ontvangen.
+We hebben de SendGrid-API gebruikt om e-mails te verzenden met behulp van een dynamische sjabloon. Men veronderstelt dat u met SendGrid API voor het verzenden van e-mail gebruikend dynamische malplaatjes vertrouwd bent. In deze zelfstudie hebt u een kwikstbestand voor een beschrijving van de API ontvangen.
 
 ## De integratie maken
 
@@ -33,5 +34,3 @@ Het formuliergegevensmodel dat voor deze zelfstudie is gemaakt, maakt deel uit v
 ### Volgende stappen
 
 [Azure Storage Integration maken](./create-fdm.md)
-
-

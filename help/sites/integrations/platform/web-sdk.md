@@ -1,6 +1,6 @@
 ---
 title: AEM Sites en Experience Platform Web SDK integreren
-description: Leer hoe u AEM Sites as a Cloud Service kunt integreren met Experience Platform Web SDK. Deze basisstap is essentieel voor de integratie van Adobe Experience Cloud-producten, zoals Adobe Analytics, Target of recente innovatieve producten zoals Real-time Customer Data Platform, Customer Journey Analytics en Journey Optimizer.
+description: Leer hoe u AEM Sites as a Cloud Service kunt integreren met Experience Platform Web SDK. Deze fundamentele stap is essentieel voor de integratie van Adobe Experience Cloud-producten, zoals Adobe Analytics, Target of recente innovatieve producten zoals Real-time Customer Data Platform, Customer Journey Analytics en Journey Optimizer.
 version: Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
@@ -12,8 +12,8 @@ jira: KT-13156
 thumbnail: KT-13156.jpeg
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
-exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 0%
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 # AEM Sites en Experience Platform Web SDK integreren
 
-Leer hoe u AEM as a Cloud Service kunt integreren met Experience Platform [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Deze basisstap is essentieel voor de integratie van Adobe Experience Cloud-producten, zoals Adobe Analytics, Target of recente innovatieve producten zoals Real-time Customer Data Platform, Customer Journey Analytics en Journey Optimizer.
+Leer hoe u AEM as a Cloud Service kunt integreren met Experience Platform [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Deze fundamentele stap is essentieel voor de integratie van Adobe Experience Cloud-producten, zoals Adobe Analytics, Target of recente innovatieve producten zoals Real-time Customer Data Platform, Customer Journey Analytics en Journey Optimizer.
 
 U leert ook hoe u verzamelt en verzendt [WKND - voorbeeld Adobe Experience Manager-project](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) voorvertoningsgegevens in het dialoogvenster [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
 
-Na voltooiing van deze opstelling, hebt u een stevige stichting uitgevoerd. Ook bent u bereid om de implementatie van het Experience Platform te bevorderen gebruikend toepassingen zoals [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), en [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). De geavanceerde implementatie draagt bij aan een betere betrokkenheid van klanten door het web en de gegevens van klanten te standaardiseren.
+Na voltooiing van deze opstelling, hebt u een stevige stichting uitgevoerd. Ook bent u bereid om de implementatie van het Experience Platform te bevorderen gebruikend toepassingen zoals [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), en [Adobe Journey Optimizer (AJ)](https://experienceleague.adobe.com/docs/journey-optimizer.html). De geavanceerde implementatie draagt bij aan een betere betrokkenheid van klanten door het web en de gegevens van klanten te standaardiseren.
 
 ## Vereisten
 
@@ -34,7 +34,7 @@ Het volgende wordt vereist wanneer het integreren van het Web SDK van het Experi
 
 In **AEM als Cloud Service**:
 
-+ Toegang van AEM beheerder tot AEM as a Cloud Service omgeving
++ Toegang AEM tot AEM as a Cloud Service omgeving
 + Toegang tot Cloud Manager via Deployment Manager
 + Klonen en implementeren [WKND - voorbeeld Adobe Experience Manager-project](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) naar uw AEM as a Cloud Service omgeving.
 
@@ -43,7 +43,7 @@ In **Experience Platform**:
 + toegang tot de standaardproductie; **Prod** sandbox.
 + Toegang tot **Schemas** onder Gegevensbeheer
 + Toegang tot **Gegevenssets** onder Gegevensbeheer
-+ Toegang tot **DataStreams** onder Gegevensverzameling
++ Toegang tot **Gegevensstromen** onder Gegevensverzameling
 + Toegang tot **Tags** (voorheen bekend als Launch) onder Gegevensverzameling
 
 Als u niet de noodzakelijke toestemmingen hebt, gebruikt uw systeembeheerder [Adobe Admin Console](https://adminconsole.adobe.com/) kan de benodigde machtigingen verlenen.
@@ -61,11 +61,11 @@ Er zijn generieke en industrieën specifiek bijvoorbeeld Detailhandel, Financië
 
 Leer over het Schema XDM en verwante concepten zoals gebiedsgroepen, types, klassen, en gegevenstypes van [XDM System, overzicht](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-De [XDM System, overzicht](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) is een groot middel om over Schema XDM en verwante concepten zoals gebiedsgroepen, types, klassen, en gegevenstypes te leren. Het biedt een uitgebreid inzicht in het XDM-gegevensmodel en hoe u XDM-schema&#39;s kunt maken en beheren om gegevens in de hele onderneming te standaardiseren. Onderzoek het om een dieper inzicht in het schema te verkrijgen XDM en hoe het uw gegevensinzameling en beheersprocessen kan ten goede komen.
+De [XDM System, overzicht](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) is een groot middel om over het Schema XDM en verwante concepten zoals gebiedsgroepen, types, klassen, en gegevenstypes te leren. Het biedt een uitgebreid inzicht in het XDM-gegevensmodel en hoe u XDM-schema&#39;s kunt maken en beheren om gegevens in de hele onderneming te standaardiseren. Onderzoek het om een dieper inzicht in het schema te verkrijgen XDM en hoe het uw gegevensinzameling en beheersprocessen kan ten goede komen.
 
 ## DataStream maken - Experience Platform
 
-Een DataStream instrueert het Netwerk van de Rand van het Platform waar te om de verzamelde gegevens te verzenden. Het kan bijvoorbeeld worden verzonden naar Experience Platform, Analytics of Adobe Target.
+Een DataStream instrueert het Netwerk van de Rand van het Platform waar om de verzamelde gegevens te verzenden. Het kan bijvoorbeeld worden verzonden naar Experience Platform, Analytics of Adobe Target.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418895?quality=12&learn=on)
@@ -77,17 +77,17 @@ U vertrouwd maken met het concept van gegevensstromen en verwante onderwerpen zo
 Leer hoe u een tageigenschap (voorheen Launch genoemd) in Experience Platform maakt om de JavaScript-bibliotheek van de Web SDK aan de WKND-website toe te voegen. De nieuw gedefinieerde eigenschap tag heeft de volgende bronnen:
 
 + Tagextensies: [Kern](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) en [Adobe Experience Platform Web SDK](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
-+ Gegevenselementen: De gegevenselementen van het type van douanecode die pagina-naam, plaats-sectie, en gastheer-naam gebruikend de Laag van de Gegevens van de Cliënt van de Adobe van de plaats WKND halen. Ook, het het type van Objecten XDM gegevenselement dat met onlangs gecreeerd schema van WKND XDM bouwt vroeger in overeenstemming is [XDM-schema maken](#create-xdm-schema---experience-platform) stap.
-+ Regel: Gegevens verzenden naar Platform Edge Network wanneer een WKND-webpagina wordt bezocht met behulp van de Adobe Client Data Layer geactiveerd `cmp:show` gebeurtenis.
++ Gegevenselementen: de gegevenselementen van het type van douanecode die pagina-naam, plaats-sectie, en gastheer-naam gebruikend de Laag van de Gegevens van de Cliënt van de Adobe van de plaats WKND halen. Ook, het het type van Objecten XDM gegevenselement dat met onlangs gecreeerd schema van WKND XDM bouwt vroeger in overeenstemming is [XDM-schema maken](#create-xdm-schema---experience-platform) stap.
++ Regel: Verzend gegevens naar het Netwerk van de Rand van het Platform wanneer een Web-pagina wordt bezocht gebruikend de Adobe getriggerde Laag van Gegevens van de Cliënt `cmp:show` gebeurtenis.
 
-Tijdens het maken en publiceren van de tagbibliotheek met de **Publishing Flow** kunt u de **Alle gewijzigde bronnen toevoegen** knop. Om alle middelen zoals het Element van Gegevens, Regel, en de Uitbreidingen van de Markering in plaats van het identificeren van en het plukken van een individuele middel te selecteren. Tijdens de ontwikkelingsfase kunt u de bibliotheek ook alleen publiceren naar de _Ontwikkeling_ milieu, dan verifieert en bevordert het aan _Werkgebied_ of _Productie_ milieu.
+Tijdens het maken en publiceren van de tagbibliotheek met de **Publishing Flow**, kunt u de **Alle gewijzigde bronnen toevoegen** knop. Om alle middelen zoals het Element van Gegevens, Regel, en de Uitbreidingen van de Markering in plaats van het identificeren van en het plukken van een individuele middel te selecteren. Tijdens de ontwikkelingsfase kunt u de bibliotheek ook alleen publiceren naar de _Ontwikkeling_ milieu, dan verifieert en bevordert het aan _Werkgebied_ of _Productie_ milieu.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418896?quality=12&learn=on)
 
 
 >[!TIP]
 >
->Het gegevenselement en regel-gebeurtenis code in de video wordt getoond is beschikbaar voor uw verwijzing die, **het element onder accordeon uitvouwen**. Nochtans, als u de Laag van Gegevens van de Cliënt NIET gebruikt, moet u de hieronder code wijzigen maar het concept van het bepalen van de Elementen van Gegevens en het gebruiken van hen in de definitie van de Regel blijft van toepassing.
+>Het gegevenselement en regel-gebeurtenis code in de video wordt getoond is beschikbaar voor uw verwijzing die, **het element onder accordeon uitvouwen**. Nochtans, als u NIET de Laag van Gegevens van de Cliënt van de Adobe gebruikt, moet u de hieronder code wijzigen maar het concept van het bepalen van de Elementen van Gegevens en het gebruiken van hen in de definitie van de Regel blijft van toepassing.
 
 
 +++ Gegevenselement en code voor regelgebeurtenissen
@@ -169,13 +169,13 @@ Tijdens het maken en publiceren van de tagbibliotheek met de **Publishing Flow**
 
 De [Overzicht van codes](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) biedt diepgaande kennis van belangrijke concepten zoals Data Elements, Rules en Extensions.
 
-Voor extra informatie bij het integreren van AEM Componenten van de Kern met de Laag van de Gegevens van de Cliënt van Adobe raadpleegt u [De Adobe Client Data Layer gebruiken met AEM Core Components Guide](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
+Voor extra informatie bij het integreren van AEM Componenten van de Kern met de Laag van de Gegevens van de Cliënt van de Adobe, verwijs naar [Het gebruiken van de Laag van de Gegevens van de Cliënt van de Adobe met AEM gids van de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
 
 ## Eigenschap van Connect-tag AEM
 
-Ontdek hoe u de onlangs gemaakte tageigenschap koppelt aan AEM via Adobe IMS en Adobe Launch Configuration in AEM. Wanneer een AEM as a Cloud Service omgeving wordt ingesteld, worden automatisch verschillende configuraties van de technische account van Adobe IMS gegenereerd, waaronder Adobe Launch. Nochtans, voor AEM versie 6.5, moet u manueel vormen.
+Ontdek hoe u de onlangs gemaakte tageigenschap koppelt aan AEM via Adobe IMS en Adobe Starten in AEM. Wanneer een AEM as a Cloud Service omgeving wordt ingesteld, worden automatisch verschillende configuraties van de technische account van Adobe IMS gegenereerd, waaronder het starten van de Adobe. Nochtans, voor AEM versie 6.5, moet u manueel vormen.
 
-Nadat de eigenschap tag is gekoppeld, kan de WKND-site de JavaScript-bibliotheek van de tag-eigenschap op de webpagina&#39;s laden met de configuratie van de Adobe Launch-cloudservice.
+Nadat de eigenschap tag is gekoppeld, kan de WKND-site de JavaScript-bibliotheek van de tag-eigenschap op de webpagina&#39;s laden met behulp van de Adobe Cloud Service Configuration.
 
 ### Eigenschappen van tag verifiëren bij laden van WKND
 
@@ -206,18 +206,18 @@ Na de opstelling van SDK van het Web met AEM, in het bijzonder op de plaats WKND
 
 ## Samenvatting
 
-Geweldig werk! U hebt de opstelling van AEM met het Web SDK van het Experience Platform voltooid om gegevens van een website te verzamelen en in te voeren. Met deze basis kunt u nu verdere mogelijkheden verkennen om producten zoals Analytics, Target, Customer Journey Analytics (CJA) en vele andere te verbeteren en te integreren om rijke, gepersonaliseerde ervaringen voor uw klanten te creëren. Blijf leren en verkennen om het volledige potentieel van Adobe Experience Cloud te benutten.
+Geweldig werk! U hebt de opstelling van AEM met het Web SDK van het Experience Platform voltooid om gegevens van een website te verzamelen en in te voeren. Met deze stichting, kunt u verdere mogelijkheden onderzoeken om producten zoals Analytics, Doel, Customer Journey Analytics (CJA), en vele anderen te verbeteren en te integreren om rijke, gepersonaliseerde ervaringen voor uw klanten tot stand te brengen. Blijf leren en verkennen om het volledige potentieel van Adobe Experience Cloud te benutten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
 
 
 >[!AVAILABILITY]
 >
->Als u de voorkeur geeft aan **end-to-end video** dat het volledige integratieproces in plaats van individuele opstellingsstapvideo&#39;s behandelt, kunt u klikken [hier](https://video.tv.adobe.com/v/3418905/) om toegang te krijgen tot het bestand.
+>Als u liever **end-to-end video** dat het volledige integratieproces in plaats van individuele opstellingsstapvideo&#39;s behandelt, kunt u klikken [hier](https://video.tv.adobe.com/v/3418905/) om toegang te krijgen tot het bestand.
 
 ## Aanvullende bronnen
 
-+ [Het gebruiken van de Laag van de Gegevens van de Cliënt van Adobe met de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
++ [Het gebruiken van de Laag van de Gegevens van de Cliënt van de Adobe met de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
 + [Tags en AEM voor gegevensverzameling van Experience Platforms integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
 + [Overzicht van Adobe Experience Platform Web SDK en Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutorials voor gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)

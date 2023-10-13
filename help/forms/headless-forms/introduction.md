@@ -7,13 +7,13 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
+exl-id: 7b457ce8-f11a-4e2b-8548-6ac3910cb61e
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
 
 ---
-
 
 # Hoofdloos adaptief formulier insluiten
 
@@ -23,7 +23,7 @@ Dit artikel heeft betrekking op de verschillende API&#39;s zonder koppen die u w
 
 In dit artikel wordt ervan uitgegaan dat u een bestaande app van één pagina hebt en dat u de adaptieve formulieren zonder kop wilt weergeven in uw spa-website.
 
-In de volgende schermafbeelding ziet u een contactformulier dat wordt ingesloten in SPA
+De volgende schermafbeelding toont een contactformulier dat wordt ingesloten in SPA
 
 ![contact-us-vorm](./assets/contact-us-form.png)
 
@@ -38,4 +38,3 @@ In de volgende schermafbeelding ziet u een contactformulier dat wordt ingesloten
 ## Volgende stappen
 
 [Afhankelijkheden installeren](./install-af-react-libraries.md)
-

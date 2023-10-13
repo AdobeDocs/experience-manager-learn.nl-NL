@@ -9,19 +9,19 @@ level: Beginner
 recommendations: noDisplay
 thumbnail: null
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+exl-id: 73f5d90d-e007-41a0-9bb3-b8f36a9b1547
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
-
 # Uitbreidbaarheid AEM UI
 
-Adobe Experience Manager (AEM) biedt een krachtige gebruikersinterface (UI) voor het creëren van digitale ervaringen. Om UI aan te passen en uit te breiden, introduceerde Adobe App Builder. Met dit gereedschap kunnen ontwikkelaars de gebruikerservaring verbeteren zonder complexe codering met behulp van JavaScript en Reageren.
+Adobe Experience Manager (AEM) biedt een krachtige gebruikersinterface (UI) voor het creëren van digitale ervaringen. Om UI aan te passen en uit te breiden, introduceerde de Adobe App Builder. Met dit gereedschap kunnen ontwikkelaars de gebruikerservaring verbeteren zonder complexe codering met JavaScript en Reageren.
 
-App Builder biedt een implementatielaag voor het maken van extensies die in AEM extensiepunten moeten definiëren. App Builder kan naadloos worden geïntegreerd met AEM, zodat u in real-time voorvertoningen en tests kunt uitvoeren. Het implementeren van wijzigingen in AEM is snel en gestroomlijnd. Door App Builder te gebruiken besparen ontwikkelaars tijd en moeite, waardoor ze snel prototypen kunnen maken en kunnen samenwerken met belanghebbenden.
+App Builder biedt een implementatielaag voor het maken van extensies die in AEM extensiepunten moeten definiëren. App Builder kan naadloos worden geïntegreerd met AEM, zodat u in real-time voorvertoningen en tests kunt uitvoeren. Wijzigingen in AEM implementeren is snel en gestroomlijnd. Door App Builder te gebruiken besparen ontwikkelaars tijd en moeite, waardoor ze snel prototypen kunnen maken en kunnen samenwerken met belanghebbenden.
 
 ## Een AEM UI-extensie ontwikkelen
 

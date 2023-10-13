@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media-beelden verkennen met momentopname
+title: Dynamic Media-beeldverwerking verkennen met momentopname
 description: Dynamic Media Snapshot is een visueel demonstratieprogramma dat is ontworpen om de kracht van Dynamic Media te illustreren voor geoptimaliseerde en dynamische beeldlevering.
 feature: Smart Services, Image Sets, Image Profiles
 version: Cloud Service
@@ -8,7 +8,8 @@ thumbnail: 3419421.jpeg
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: a864f4f19135f7d6fb345a76f1d5c7dc3ee9a9dc
+exl-id: 3f2f3fe4-a3cf-4494-a318-bf82aee20dc7
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 3%

@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
 
 ---
-
 
 # Complexe component maken
 
@@ -190,7 +190,7 @@ Aan het einde van dit zelfstudie-hoofdstuk hebt u een volledig functionele en be
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. Laten wij aan de vraagredacteur terugkeren en deze nieuwe component halen.  Bericht dat wij van verwijzingen voorzien `OfferModel` in onze zoekopdracht en de metagegevens die wij zullen gebruiken voor de titel van de kaart.
+1. Laten wij aan de vraagredacteur terugkeren en deze nieuwe component halen.  U ziet dat we verwijzen naar de `OfferModel` in onze zoekopdracht en de metagegevens die wij zullen gebruiken voor de titel van de kaart.
 
    ```graphql
    query imageList {

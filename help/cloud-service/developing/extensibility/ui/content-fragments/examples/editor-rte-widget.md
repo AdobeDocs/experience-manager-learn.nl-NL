@@ -10,8 +10,8 @@ jira: KT-13465
 thumbnail: KT-13465.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-exl-id: be4c0a6a-5c1f-4408-9ac6-56b8f0653d42
-source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
+exl-id: 167a4b11-1202-4c7a-b022-f3f996348a4e
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -30,9 +30,9 @@ De widgets worden doorgaans gebruikt om de dynamische inhoud in te voegen die af
 
 De **widgets** worden toegevoegd aan **RTE** in de Inhoudsfragmenteditor met behulp van de `rte` extensiepunt. Gebruiken `rte` extensiepunt `getWidgets()` methode één of vele widgets worden toegevoegd. Ze worden geactiveerd door op de knop `{` Gebruik een speciale toets om de optie contextmenu te openen en selecteer vervolgens de gewenste widget om de aangepaste interface van het dialoogvenster te laden.
 
-In dit voorbeeld wordt getoond hoe u een widget met de naam _Lijst met kortingscodes_ om, de adventure-specific de disconteringscode van WKND binnen een inhoud van RTE te vinden te selecteren en toe te voegen. Deze kortingscodes kunnen worden beheerd in een extern systeem, zoals Order Management System (OMS), Product Information Management (PIM), een toepassing die op het thuisniveau wordt ontwikkeld of een Adobe AppBuilder-actie.
+In dit voorbeeld wordt getoond hoe u een widget met de naam _Lijst met kortingscodes_ om, de adventure-specific de disconteringscode van WKND binnen een inhoud van RTE te vinden te selecteren en toe te voegen. Deze kortingscodes kunnen in extern systeem worden beheerd, zoals het Systeem van het Beheer van de Orde (OMS), het Beheer van de Informatie van het Product (PIM), de huisgeteelde toepassing of een actie van de Adobe AppBuilder.
 
-In dit voorbeeld wordt het volgende gebruikt om de [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) -framework voor het ontwikkelen van de interface van de widget of dialoog en de hardgecodeerde WKND-avontuurnaam, kortingscodegegevens.
+In dit voorbeeld wordt het volgende gebruikt om de [Adobe Reageren spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) -framework voor het ontwikkelen van de interface van de widget of dialoog en de hardgecodeerde WKND-avontuurnaam, kortingscodegegevens.
 
 ## Extensiepunt
 
@@ -113,10 +113,10 @@ In de hoofdcomponent React `App.js`, voegt u de `discountCodes` route om UI voor
 
 ### Maken `DiscountCodes` Reageercomponent{#create-widget-react-component}
 
-De widget- of dialoogvenster-UI wordt gemaakt met de [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) kader. De `DiscountCodes` de componentencode is zoals hieronder, hier zijn zeer belangrijke hoogtepunten:
+De widget- of dialoogvenster-UI wordt gemaakt met de [Adobe Reageren spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) kader. De `DiscountCodes` de componentencode is zoals hieronder, hier zijn zeer belangrijke hoogtepunten:
 
 + UI wordt teruggegeven gebruikend React de componenten van het Spectrum, zoals [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Knop](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ De `adventureDiscountCodes` array heeft hardcoded mapping van avontuurnaam en kortingscode. In echt scenario, kunnen deze gegevens van Adobe AppBuilder actie of externe systemen zoals PIM, OMS of huis worden teruggewonnen of op wolkenleverancier-gebaseerde API gateway.
++ De `adventureDiscountCodes` array heeft hardcoded mapping van avontuurnaam en kortingscode. In echt scenario, kunnen deze gegevens van de actie van Adobe AppBuilder of externe systemen zoals PIM, OMS of huisgeteelde of op wolkenleverancier-gebaseerde API gateway worden teruggewonnen.
 + De `guestConnection` is geïnitialiseerd met de `useEffect` [Reagehaak](https://react.dev/reference/react/useEffect) en beheerd als componentstatus. Het wordt gebruikt om met de AEM gastheer te communiceren.
 + De `handleDiscountCodeChange` De functie krijgt de kortingscode voor de geselecteerde avontuurnaam en werkt de staatsvariabele bij.
 + De `addDiscountCode` functie gebruiken `guestConnection` -object bevat RTE-instructie die moet worden uitgevoerd. In dit geval `insertContent` Instructie en codefragment van HTML van de daadwerkelijke disconteringscode die in RTE moet worden opgenomen.
