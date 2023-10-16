@@ -9,9 +9,9 @@ role: Developer
 level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 5fc4a11b7f7f26a62f49cc8614e6bf699cc1697a
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ De volgende stappen zijn uitgevoerd voor het implementeren van trapsgewijze verv
 
 ## Ontwikkelaarsaccount maken
 
-Een ontwikkelaarsaccount maken met [Geonames](https://www.geonames.org/login). Noteer de gebruikersnaam. Deze gebruikersnaam is nodig om REST API&#39;s van de geonames.org aan te roepen.
+Een ontwikkelaarsaccount maken met [Geonames](https://www.geonames.org/login). Noteer de gebruikersnaam. Deze gebruikersnaam is nodig om REST API&#39;s van de map geonames.org aan te roepen.
 
 ## Swagger/OpenAPI-bestand maken
 
@@ -45,16 +45,13 @@ De OpenAPI-specificatie (voorheen Swagger Specification) is een API-beschrijving
 Als u uw eerste wagger/OpenAPI-bestand wilt maken, volgt u de [OpenAPI-documentatie](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
-> AEM Forms biedt ondersteuning voor OpenAPI Specification versie 2.0 (FKA Swagger).
+> AEM Forms ondersteunt OpenAPI Specification versie 2.0 (FKA Swagger).
 
-Gebruik de [wageneditor](https://editor.swagger.io/) om uw wagerbestand te maken waarin de bewerkingen worden beschreven die alle landen en onderliggende elementen van het land of de staat ophalen. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide wagerbestand kan worden gedownload van [hier](assets/swagger-files.zip)
-De kwikbestanden beschrijven de volgende REST API
-* [Alle landen ophalen](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Onderliggende items van Geoname-object ophalen](http://api.geonames.org/childrenJSON?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+Gebruik de [wagenbewerker](https://editor.swagger.io/) om uw wagerbestand te maken waarin de bewerkingen worden beschreven die alle landen en onderliggende elementen van het land of de staat ophalen. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt.
 
 ## Gegevensbronnen maken
 
-Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [gegevensbron maken](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van cloudservices. Gebruik de [wagenbestanden](assets/swagger-files.zip) om uw gegevensbronnen te maken.
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [gegevensbron maken](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van cloudservices. Gebruik de [wagenbestanden](assets/geonames-swagger-files.zip) om uw gegevensbronnen te maken.
 U moet twee gegevensbronnen maken (één om alle landen en andere op te halen om onderliggende elementen op te halen)
 
 
@@ -78,9 +75,19 @@ De lijst met landen wordt gevuld wanneer het formulier voor het eerst wordt geï
 #### De vervolgkeuzelijst Staat/provincie vullen
 
 De vervolgkeuzelijst Staat/provincie moet worden ingevuld op basis van het geselecteerde land. Het volgende scherm-schot toont u de configuratie van de regelredacteur
-![provincie-opties](assets/state-province-options.png)
+![state-Province-options](assets/state-province-options.png)
 
 ### Uitoefening
 
 Voeg twee vervolgkeuzelijsten met de naam provincies en steden toe in het formulier om de provincies en steden weer te geven op basis van het geselecteerde land en de geselecteerde staat/provincie.
 ![oefening](assets/cascading-drop-down-exercise.png)
+
+
+### Voorbeeldelementen
+
+U kunt de volgende middelen downloaden om een begin te maken met het maken van het trapsgewijze vervolgkeuzemenu. De voltooide wagerbestanden kunnen worden gedownload van [hier](assets/geonames-swagger-files.zip)
+De kwikbestanden beschrijven de volgende REST API
+* [Alle landen ophalen](http://api.geonames.org/countryInfoJSON?username=yourusername)
+* [Onderliggende items van Geoname-object ophalen](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+
+De voltooide [Formuliergegevensmodel kan hier worden gedownload](assets/geonames-api-form-data-model.zip)
