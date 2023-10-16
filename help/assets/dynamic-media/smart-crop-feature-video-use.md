@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+jira: KT-784
 exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: af9fe46643ce9bc4adf71b77eb49535d0ec5f949
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -29,7 +30,7 @@ Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare tak
 * AEM Asset-beheerders kunnen eenvoudig afbeeldingsprofielen maken voor slim uitsnijden op basis van de apparaatbreedte en -hoogte.
 * Slim uitsnijden kan worden uitgevoerd voor een afzonderlijk element of voor alle elementen in een map.
 * De grootte van de bewerkingslay-out voor slim uitsnijden kan worden aangepast voor een betere zichtbaarheid.
-* De Dynamic Media-component van AEM-sites ondersteunt Slim uitsnijden.
+* De Dynamic Media-component van AEM Sites ondersteunt Smart Crop.
 * De gepubliceerde URL voor het Smart Cropped-element is beschikbaar voor gebruik met toepassingen van derden die gehoste elementen accepteren.
 
 >[!NOTE]
