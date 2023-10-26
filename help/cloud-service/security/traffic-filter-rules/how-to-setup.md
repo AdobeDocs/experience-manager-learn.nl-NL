@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
+source-git-commit: 67e0a7530549a0d380e9ef82e3747c40d17b1b75
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Het installatieproces omvat het volgende:
 
 - _regels maken_ met een geschikte AEM projectstructuur en configuratiebestand.
 - _regels implementeren_ via de configuratiepijplijn van Adobe Cloud Manage.
-- _testregels_ het gebruiken van diverse hulpmiddelen om verkeer te produceren
+- _testregels_ het gebruiken van diverse hulpmiddelen om verkeer te produceren.
 - _de resultaten analyseren_ met AEMCS CDN-logboeken en dashboardwerkset.
 
 ### Regels maken in uw AEM project
@@ -37,7 +37,7 @@ Ga als volgt te werk om regels te maken:
 
 1. Maak op het hoofdniveau van uw AEM project een map `config`.
 
-1. Binnen de `config` map, een nieuwe aangeroepen map maken `cdn.yaml`.
+1. Binnen de `config` een nieuw bestand met de naam `cdn.yaml`.
 
 1. Voeg de volgende metagegevens toe aan de `cdn.yaml` bestand:
 
