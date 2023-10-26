@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: bac637440d1cc5af0e0abb119ca2f4e93f69cf34
+source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1874'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 1%
    + [Integreren met ServiceNow](some-useful-integrations/service-now.md)
    + [E-mails verzenden met SendGrid](some-useful-integrations/send-grid.md)
    + [Formuliergegevens opslaan in Azure Storage](some-useful-integrations/store-form-data-in-azure-storage.md)
+   + [Formulier vullen met Azure Blob](some-useful-integrations/fetch-form-data-from-azure-storage.md)
 + OSGi-bundel maken {#creating-your-first-osgi-bundle}
    + [1 - Uw omgeving instellen](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2 - OSGi-service maken](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -142,6 +143,12 @@ ht-degree: 1%
    + [9 - Het hoofdformulier maken](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [10 - Het MyAccount-formulier maken](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [11 - Het voorbeeld implementeren](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
++ Gegevens importeren uit PDF-bestand{#import-data-from-pdf-form}
+   + [1 - Inleiding](import-data-from-pdf-form/introduction.md)
+   + [2 - Adaptief formulier maken](import-data-from-pdf-form/create-adaptive-form.md)
+   + [3 - OSGi-service maken](import-data-from-pdf-form/create-osgi-service.md)
+   + [4 - Aangepast formulier vullen](import-data-from-pdf-form/populate-adaptive-form.md)
+   + [5 - Test de oplossing](import-data-from-pdf-form/test-the-solution.md)
 + Verzendgegevens exporteren in CSV-indeling{#export-submitted-data-csv-format}
    + [Verzonden gegevens exporteren](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
