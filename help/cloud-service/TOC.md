@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1054'
 ht-degree: 11%
 
 ---
@@ -155,6 +155,12 @@ ht-degree: 11%
       + [SQL-verbindingen met DataSourcePool](./networking/examples/sql-datasourcepool.md)
       + [SQL-verbindingen met Java SQL API&#39;s](./networking/examples/sql-java-apis.md)
       + [E-mailservice](./networking/examples/email-service.md)
++ Beveiliging {#security}
+   + Verkeersfilterregels inclusief WAF-regels{#traffic-filter-and-waf-rules}
+      + [Overzicht](./security/traffic-filter-rules/overview.md)
+      + [Hoe kan ik-instellingen](./security/traffic-filter-rules/how-to-setup.md)
+      + [Voorbeelden en resultaatanalyse](./security/traffic-filter-rules/examples-and-analysis.md)
+      + [Aanbevolen procedures](./security/traffic-filter-rules/best-practices.md)
 + Migratie {#migration}
    + [De tool Content Transfer](./migration/content-transfer-tool.md)
    + [Bulkimport van activa](./migration/bulk-import.md)
