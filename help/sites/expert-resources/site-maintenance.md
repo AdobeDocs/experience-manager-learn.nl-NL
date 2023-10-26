@@ -6,20 +6,21 @@ level: Beginner, Intermediate
 topic: Administration
 audience: author, marketer, developer
 feature: Learn From Your Peers
+jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 0%
 
 ---
 
-# Tips en trucs voor het onderhoud van sites
+# Tips en trucs voor het onderhoud van de site
 
 Er zijn drie opties voor het installeren en onderhouden van een AEM
 
-* AEMaaCS (cloudservice) - het systeem is altijd ingeschakeld, bijgewerkt en dynamisch geschaald naar wens
-* Adobe Managed Services waarbij Adobe Customer Service Engineers alle dagelijkse/wekelijkse/maandelijkse onderhoudswerkzaamheden uitvoeren en ervoor zorgen dat alle servicepakketten zijn geïnstalleerd en het systeem altijd veilig en probleemloos werkt
+* AEMaaCS (cloudservice) - het systeem is altijd actief, up-to-date en wordt dynamisch geschaald naar wens
+* Adobe Managed Services waar Adobe Customer Service Engineers alle dagelijkse/wekelijkse/maandelijkse onderhoudswerkzaamheden uitvoeren en ervoor zorgen dat alle servicepakketten worden geïnstalleerd en het systeem altijd veilig en probleemloos werkt
 * het uitvoeren van het op-gebouw, waar u het volledige systeem, met inbegrip van steunen, verbeteringen, en veiligheid moet behandelen.
 
 Als u ervoor kiest om uw eigen systeem op-gebouw uit te voeren, zijn er een paar dingen in mening om u te verzekeren hebt een veilig, prestatiessysteem. Naast de &quot;zorg en voeding&quot;-artikelen zal in dit artikel ook worden gewezen op verschillende punten AEM Ontwikkelaars zouden in gedachten moeten houden om het systeem goed te laten functioneren.
@@ -80,7 +81,7 @@ Met stijlsystemen kunnen de basiscomponenten, en zelfs aangepaste componenten, n
 
 ### [Lanceringen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=en)
 
-Met Starten kan het werk worden voltooid voor een nieuwe promotie-, verkoop- of websiteuitrol zonder dat dit gevolgen heeft voor de momenteel geïmplementeerde pagina&#39;s. Bovendien kunnen ze automatisch, zonder aanwezigheid of toezicht, live gaan, zodat auteurs nu hun werk van volgende week (of volgend kwartaal) kunnen doen en niet de dag voor het leven op de pagina komen - het is echt het geschenk van TIME!)
+Met Starten kan het werk worden voltooid voor een nieuwe promotie-, verkoop- of websiteuitrol zonder dat dit gevolgen heeft voor de momenteel geïmplementeerde pagina&#39;s. Bovendien kunnen ze automatisch, zonder aanwezigheid of toezicht, live gaan, zodat auteurs nu hun werk van volgende week (of volgend kwartaal) kunnen doen en niet de dag voor het leven op de pagina komen - het is echt de gave van TIME!)
 
 ### [Contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
 
