@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Voorbeelden en resultaatanalyse van de regels van de Filter van het Verkeer met inbegrip van de regels van WAF
+# Voorbeelden en resultaatanalyse van verkeersfilterregels inclusief WAF-regels
 
-Leer hoe te om diverse types van de regels van de Filter van het Verkeer te verklaren en de resultaten te analyseren gebruikend de logboeken van CDN van Adobe Experience Manager as a Cloud Service (AEMCS) en dashboard tooling.
+Leer hoe te om diverse types van de regels van de verkeersfilter te verklaren en de resultaten te analyseren gebruikend de logboeken van CDN van Adobe Experience Manager as a Cloud Service (AEMCS) en dashboard tooling.
 
-In deze sectie, verkent u praktische voorbeelden van de regels van de Filter van het Verkeer, met inbegrip van de regels van WAF. U leert hoe te om, verzoeken te registreren toe te staan en te blokkeren die op URI (of weg), IP adres, het aantal verzoeken, en verschillende aanvalstypes worden gebaseerd gebruikend [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+In deze sectie, verkent u praktische voorbeelden van de regels van de verkeersfilter, met inbegrip van de regels van WAF. U leert hoe te om, verzoeken te registreren toe te staan en te blokkeren die op URI (of weg), IP adres, het aantal verzoeken, en verschillende aanvalstypes worden gebaseerd gebruikend [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 Bovendien ontdekt u hoe te om dashboardtooling te gebruiken die logboeken opneemt AEMCS CDN om essentiële metriek door Adobe te visualiseren verstrekte steekproefdashboards.
 
@@ -30,7 +30,7 @@ Om zich aan uw specifieke vereisten te richten, kunt u verbeteren en douanedashb
 
 ## Voorbeelden
 
-Verken diverse voorbeelden van de regels van de Filter van het Verkeer, met inbegrip van de regels van WAF. Zorg ervoor dat u het vereiste installatieproces hebt voltooid zoals in het vorige [instellen](./how-to-setup.md) en u hebt het [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Laten we verschillende voorbeelden van verkeersfilterregels onderzoeken, waaronder WAF-regels. Zorg ervoor dat u het vereiste installatieproces hebt voltooid zoals in het vorige [instellen](./how-to-setup.md) en u hebt het [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 ### Registratieverzoeken
 
@@ -222,7 +222,7 @@ De de regelvoorbeelden van de verkeersfilter tot nu toe kunnen door alle Sites e
 
 Daarna, onderzoeken wij de ervaring voor een klant die een verbeterde vergunning van de Bescherming van de Veiligheid of WAF-DDoS heeft verworven. Dit machtigt u om geavanceerde regels te vormen om uw AEM tegen verfijndere aanvallen te beschermen.
 
-Alvorens verder te gaan, laat de bescherming WAF-DDoS voor uw programma, zoals die in de documentatie van de Regels van de Filter van het Verkeer wordt beschreven toe [installatiestappen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
+Alvorens verder te gaan, laat de bescherming WAF-DDoS voor uw programma, zoals die in de documentatie van de regels van de verkeersfilter wordt beschreven toe [installatiestappen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
 
 #### Zonder WAFFlags
 

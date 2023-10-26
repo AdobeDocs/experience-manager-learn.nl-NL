@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Hoe te de regels van de Filter van het opstellingenverkeer met inbegrip van de regels van WAF
 
-Meer informatie **instellen** De regels van de Filter van het verkeer, met inbegrip van de regels van WAF. Lees over het maken, implementeren, testen en analyseren van resultaten.
+Meer informatie **instellen** de regels van de verkeersfilter, met inbegrip van de regels van WAF. Lees over het maken, implementeren, testen en analyseren van resultaten.
 
 ## Instellen
 
@@ -118,7 +118,7 @@ Om regels te testen, zijn er verschillende hulpmiddelen van derden beschikbaar e
 
 Nadat u de regels hebt gemaakt, geïmplementeerd en getest, kunt u de resultaten analyseren met **Elasticsearch, Logstash en Kibana (ELK)** dashboardgereedschap. Het kan de logboeken van AEMCS CDN ontleden, die u toestaan om de resultaten in de vorm van diverse grafieken en grafieken te visualiseren.
 
-Gereedschap Dashboard kan rechtstreeks worden gekloond vanuit het dialoogvenster [AEMCS-CDN-Log-Analysis-ELK-Tool GitHub-opslagplaats](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) en voert u de stappen uit om de **Verkeersfilterregels (inclusief WAF)** dashboard.
+Gereedschap Dashboard kan rechtstreeks worden gekloond vanuit het dialoogvenster [AEMCS-CDN-Log-Analysis-ELK-Tool GitHub-opslagplaats](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) en voert u de stappen uit om de **verkeersfilterregels (inclusief WAF)** dashboard.
 
 - Nadat u het voorbeelddashboard hebt geladen, ziet de gereedschapspagina Elastic er als volgt uit:
 
@@ -131,4 +131,4 @@ Gereedschap Dashboard kan rechtstreeks worden gekloond vanuit het dialoogvenster
 
 ## Volgende stap
 
-Leer hoe te om de regels van de Filter van het Verkeer met inbegrip van de regels van WAF in te verklaren [Voorbeelden en resultaatanalyse](./examples-and-analysis.md) hoofdstuk, gebruikend het Project van de Plaatsen van AEM WKND.
+Leer hoe te om de regels van de verkeersfilter met inbegrip van de regels van WAF in te verklaren [Voorbeelden en resultaatanalyse](./examples-and-analysis.md) hoofdstuk, gebruikend het Project van de Plaatsen van AEM WKND.

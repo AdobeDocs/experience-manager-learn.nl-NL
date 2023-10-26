@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Aanbevolen werkwijzen voor verkeersfilterregels, inclusief WAF-regels
+# Beste praktijken voor de regels van het verkeersfilter met inbegrip van de regels van WAF
 
-Leer geadviseerde beste praktijken voor de regels van de Filter van het Verkeer, met inbegrip van de regels van WAF. Het is belangrijk om op te merken dat de beste praktijken die in dit artikel worden beschreven niet uitputtend zijn en niet bedoeld zijn om uw eigen veiligheidsbeleid en procedures te vervangen.
+Leer geadviseerde beste praktijken voor de regels van de verkeersfilter, met inbegrip van de regels van WAF. Het is belangrijk om op te merken dat de beste praktijken die in dit artikel worden beschreven niet uitputtend zijn en niet bedoeld zijn om uw eigen veiligheidsbeleid en procedures te vervangen.
 
 ## Algemene beste praktijken
 
@@ -33,9 +33,9 @@ Leer geadviseerde beste praktijken voor de regels van de Filter van het Verkeer,
 - Om kwaadwillig verkeer te blokkeren dat u zich na de analyse kunt bewust zijn, voeg om het even welke extra regels toe. Bijvoorbeeld, bepaalde IPs die uw plaats hebben aangevallen.
 - Het creëren, de plaatsing, en de analyse van de regel zouden een lopend, herhalend proces moeten zijn. Het is geen eenmalige activiteit.
 
-## Aanbevolen werkwijzen voor verkeersfilterregels
+## Beste werkwijzen voor verkeersfilterregels
 
-Laat onder de regels van de Filter van het Verkeer voor uw AEM project toe. De gewenste waarden voor `rateLimit` en `clientCountry` moeten worden bepaald in samenwerking met uw beveiligingsteam.
+Laat onder de regels van de verkeersfilter voor uw AEM project toe. De gewenste waarden voor `rateLimit` en `clientCountry` moeten worden bepaald in samenwerking met uw beveiligingsteam.
 
 ```yaml
 kind: CDN
