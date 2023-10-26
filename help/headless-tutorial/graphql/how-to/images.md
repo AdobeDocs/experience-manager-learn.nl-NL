@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Geoptimaliseerde afbeeldingen met AEM headless {#images-with-aem-headless}
 
-Afbeeldingen zijn een essentieel aspect van [ontwikkeling van rijke, dwingende AEM eindeloze ervaringen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html). AEM Headless ondersteunt het beheer van afbeeldingselementen en de geoptimaliseerde levering ervan.
+Afbeeldingen zijn een essentieel aspect van [ontwikkeling van rijke, overtuigende AEM eindeloze ervaringen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html). AEM Headless ondersteunt het beheer van afbeeldingselementen en de geoptimaliseerde levering ervan.
 
 Inhoudsfragmenten die worden gebruikt in AEM modellering van inhoud zonder kop, verwijzen vaak naar afbeeldingselementen die zijn bedoeld voor weergave in de headless-ervaring. AEM GraphQL-query&#39;s kunnen worden geschreven om URL&#39;s aan te bieden voor afbeeldingen op basis van de locatie waar naar de afbeelding wordt verwezen.
 
@@ -27,15 +27,15 @@ De `ImageRef` type heeft vier URL-opties voor inhoudsverwijzingen:
 
 + `_path` is het referenced weg in AEM, en omvat geen AEM oorsprong (gastheernaam)
 + `_dynamicUrl` is de volledige URL naar het voorkeursafbeeldingselement dat voor het web is geoptimaliseerd.
-   + De `_dynamicUrl` bevat geen AEM oorsprong, zodat het domein (AEM-auteur of AEM-publicatieservice) moet worden opgegeven door de clienttoepassing.
-+ `_authorUrl` is de volledige URL naar het afbeeldingselement op de AEM-auteur
-   + [AEM-auteur](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) kan worden gebruikt om een voorvertoning van de toepassing zonder kop weer te geven.
-+ `_publishUrl` is de volledige URL naar het afbeeldingselement in AEM Publish
-   + [AEM-publicatie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) is typisch waar de productie plaatsing van de hoofdloze toepassing beelden van toont.
+   + De `_dynamicUrl` bevat geen AEM oorsprong, zodat het domein (AEM Auteur of AEM publicatieservice) moet worden opgegeven door de clienttoepassing.
++ `_authorUrl` is de volledige URL naar het afbeeldingselement op AEM auteur
+   + [AEM auteur](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) kan worden gebruikt om een voorvertoning van de toepassing zonder kop weer te geven.
++ `_publishUrl` is de volledige URL naar het afbeeldingselement bij AEM Publiceren
+   + [AEM publiceren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) is typisch waar de productie plaatsing van de hoofdloze toepassing beelden van toont.
 
 De `_dynamicUrl` is de voorkeurs-URL die voor afbeeldingselementen moet worden gebruikt en moet het gebruik van `_path`, `_authorUrl`, en `_publishUrl` waar mogelijk.
 
-|  | AEM as a Cloud Service | as a Cloud Service RDE AEM | AEM SDK | AEM 6,5 |
+|                                | AEM as a Cloud Service | as a Cloud Service RDE AEM | AEM SDK | AEM 6,5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
 | Ondersteunt webgeoptimaliseerde afbeeldingen? | ✔ | ✔ | ✘ | ✘ |
 
@@ -97,8 +97,8 @@ De `_assetTransform` bepaalt hoe `_dynamicUrl` is ontworpen om de weergegeven af
 
 | GraphQL, parameter | URL-parameter | Beschrijving | Vereist | Variabele GraphQL-waarden | URL-parameterwaarden | Voorbeeld-URL, parameter |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | N.v.t. | De indeling van het afbeeldingselement. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N.v.t. | N.v.t. |
-| `seoName` | N.v.t. | Naam van bestandssegment in URL. Indien niet opgegeven, wordt de naam van het afbeeldingselement gebruikt. | ✘ | Alphanumeric `-`, of `_` | N.v.t. | N.v.t. |
+| `format` | NVT | De indeling van het afbeeldingselement. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | NVT | NVT |
+| `seoName` | NVT | Naam van bestandssegment in URL. Indien niet opgegeven, wordt de naam van het afbeeldingselement gebruikt. | ✘ | Alphanumeric `-`, of `_` | NVT | NVT |
 | `crop` | `crop` | Het uitsnijdkader dat uit de afbeelding is genomen, moet binnen de grootte van de afbeelding vallen | ✘ | Positieve gehele getallen die een snijgebied binnen de grenzen van de afmetingen van de oorspronkelijke afbeelding definiëren | Door komma&#39;s afgebakende reeks numerieke coördinaten `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
 | `size` | `size` | Grootte van de uitvoerafbeelding (zowel hoogte als breedte) in pixels. | ✘ | Positieve gehele getallen | Door komma&#39;s gescheiden positieve gehele getallen in de volgorde `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
 | `rotation` | `rotate` | Rotatie van de afbeelding in graden. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
@@ -129,7 +129,7 @@ Het resulterende JSON-antwoord bevat de aangevraagde velden met de voor het web 
 
 Als u de webgeoptimaliseerde afbeelding van de referentieafbeelding in uw toepassing wilt laden, gebruikt u de opdracht `_dynamicUrl` van de `primaryImage` als de bron-URL van de afbeelding.
 
-In React ziet het weergeven van een voor het web geoptimaliseerde afbeelding uit AEM Publish er als volgt uit:
+In React ziet het weergeven van een webgeoptimaliseerde afbeelding uit AEM Publiceren er als volgt uit:
 
 ```jsx
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
@@ -173,7 +173,7 @@ document.body.innerHTML=`<picture>
 
 ## Voorbeeld Reageren
 
-Laten we een eenvoudige React-toepassing maken waarmee voor het web geoptimaliseerde afbeeldingen worden weergegeven op basis van de volgende [responsieve afbeeldingspatronen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). Er zijn twee hoofdpatronen voor responsieve afbeeldingen:
+Laten we een eenvoudige React-toepassing maken waarmee voor het web geoptimaliseerde afbeeldingen worden weergegeven in de volgende [responsieve afbeeldingspatronen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). Er zijn twee hoofdpatronen voor responsieve afbeeldingen:
 
 + [Img-element met script](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) voor betere prestaties
 + [Figuurelement](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) voor ontwerpcontrole
@@ -182,7 +182,7 @@ Laten we een eenvoudige React-toepassing maken waarmee voor het web geoptimalise
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418556/?quality=12&learn=on)
 
-[Img-elementen met script](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) worden gebruikt met de `sizes` gebruiken om verschillende afbeeldingselementen voor verschillende schermgrootten te bieden. Img-sets zijn handig wanneer u verschillende afbeeldingselementen voor verschillende schermgrootten aanbiedt.
+[Img-elementen met srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) worden gebruikt met de `sizes` voor verschillende afbeeldingselementen voor verschillende schermgrootten. Img-sets zijn handig wanneer u verschillende afbeeldingselementen voor verschillende schermgrootten aanbiedt.
 
 ### Figuurelement
 

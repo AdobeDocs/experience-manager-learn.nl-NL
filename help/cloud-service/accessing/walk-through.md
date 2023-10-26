@@ -1,6 +1,6 @@
 ---
 title: Toegang tot AEM doorlopen configureren
-description: Een verkorte stap-niettemin het vormen van Gebruikers van Adobe IMS, Gebruikersgroepen en Profielen van het Product in Adobe AdminConsole, en hoe te hefboomwerking deze abstracties van Adobe IMS in Auteur AEM om specifieke op groep-gebaseerde toestemmingen te bepalen en te beheren.
+description: Een verkorte stap-niettemin het vormen van Gebruikers van Adobe IMS, Gebruikersgroepen en Profielen van het Product in Adobe AdminConsole, en hoe te hefboomwerking deze abstracties van Adobe IMS in AEM Auteur om specifieke op groep-gebaseerde toestemmingen te bepalen en te beheren.
 version: Cloud Service
 topic: Administration, Security
 feature: User and Groups
@@ -22,8 +22,8 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_aem_walkthrough"
 >title="Toegang tot AEM doorlopen configureren"
->abstract="Een verkorte stap-niettemin het vormen van Gebruikers van Adobe IMS, Gebruikersgroepen en Profielen van het Product in Adobe Admin Console, en hoe te hefboomwerking deze abstracties van Adobe IMS in Auteur AEM om specifieke op groep-gebaseerde toestemmingen te bepalen en te beheren."
+>abstract="Een verkorte stap-niettemin het vormen van Gebruikers van Adobe IMS, Gebruikersgroepen en Profielen van het Product in Adobe Admin Console, en hoe te hefboomwerking deze abstracties van Adobe IMS in AEM Auteur om specifieke op groep-gebaseerde toestemmingen te bepalen en te beheren."
 
-Een verkorte stap-niettemin het vormen van Gebruikers van Adobe IMS, Gebruikersgroepen en Profielen van het Product in Adobe AdminConsole, en hoe te hefboomwerking deze abstracties van Adobe IMS in Auteur AEM om specifieke op groep-gebaseerde toestemmingen te bepalen en te beheren.
+Een verkorte stap-niettemin het vormen van Gebruikers van Adobe IMS, Gebruikersgroepen en Profielen van het Product in Adobe AdminConsole, en hoe te hefboomwerking deze abstracties van Adobe IMS in AEM Auteur om specifieke op groep-gebaseerde toestemmingen te bepalen en te beheren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39155?quality=12&learn=on)

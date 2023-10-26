@@ -1,6 +1,6 @@
 ---
 title: Het opstellen van AEM codeprojecten aan AEM as a Cloud Service
-description: Ontdek hoe u een AEM codeproject kunt implementeren om as a Cloud Service te AEM met gebruik van Cloud Manager.
+description: Ontdek hoe u een AEM codeproject kunt implementeren om as a Cloud Service te AEM met Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial

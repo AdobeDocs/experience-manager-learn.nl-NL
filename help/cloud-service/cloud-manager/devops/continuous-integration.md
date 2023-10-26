@@ -1,6 +1,6 @@
 ---
 title: Continue integratie gebruiken met AEM Cloud Manager
-description: Werken met de beste werkwijzen en continue integratie met Adobe Cloud Manager.
+description: Begrijp beste praktijken en ononderbroken integratie gebruikend de Manager van de Wolk van de Adobe.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -21,9 +21,9 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_cicd"
 >title="Continue integratie en Cloud Manager"
->abstract="Werken met de beste werkwijzen en continue integratie met Adobe Cloud Manager."
+>abstract="Begrijp beste praktijken en ononderbroken integratie gebruikend de Manager van de Wolk van de Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#non-production-pipelines" text="De CI/CD-pipeline configureren"
 
-Werken met de beste werkwijzen en continue integratie met Adobe Cloud Manager.
+Begrijp beste praktijken en ononderbroken integratie gebruikend de Manager van de Wolk van de Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330536?quality=12&learn=on)

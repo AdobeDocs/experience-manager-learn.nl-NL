@@ -1,6 +1,6 @@
 ---
 title: Kernonderdelen
-description: AEM Core Components is een standaardset onderdelen die met Adobe Experience Manager worden gebruikt. De Core Components is gebouwd met de best practices en standaarden van Adobe en biedt een basislijnset functionaliteit voor elke implementatie van Sites.
+description: AEM Core Components is een standaardset onderdelen die met Adobe Experience Manager worden gebruikt. Core Components, die is gebaseerd op de best practices en standaarden van de Adobe, biedt een basisset functionaliteit voor elke implementatie van Sites.
 feature: Core Components
 topics: authoring
 audience: all
@@ -28,7 +28,7 @@ ht-degree: 1%
 >abstract="Op dit tabblad kunt u inhoud weergeven die u helpt bij het bouwen van moderne sites die compatibel zijn met AEM as a Cloud Service. De sleutel hiervoor is het gebruik van Core Components"
 >additional-url="https://video.tv.adobe.com/v/18926" text="Overzicht van kerncomponenten"
 
-AEM Core Components is een standaardset onderdelen die met Adobe Experience Manager worden gebruikt. De Core Components is gebouwd met de best practices en standaarden van Adobe en biedt een basislijnset functionaliteit voor elke implementatie van Sites.
+AEM Core Components is een standaardset onderdelen die met Adobe Experience Manager worden gebruikt. Core Components, die is gebaseerd op de best practices en standaarden van de Adobe, biedt een basisset functionaliteit voor elke implementatie van Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18926?quality=12&learn=on)
 

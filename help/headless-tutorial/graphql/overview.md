@@ -1,6 +1,6 @@
 ---
 title: Aan de slag met AEM Headless - GraphQL
-description: Meer informatie over de Experience Manager GraphQL API's en hun mogelijkheden.
+description: Leer meer over de Experience Manager GraphQL API's en hun mogelijkheden.
 feature: Content Fragments, GraphQL API, APIs
 topic: Headless, Content Management
 role: Developer
@@ -40,7 +40,7 @@ Deze video is een overzicht van de GraphQL API die in AEM is geïmplementeerd. D
 
 ## AEM GraphQL-videoreeks zonder hoofd
 
-Meer informatie over AEM GraphQL-mogelijkheden via de diepgaande doorlichting van Content Fragments en AEM GraphQL API&#39;s en ontwikkelingsprogramma&#39;s.
+Meer informatie over AEM GraphQL-mogelijkheden via de diepgaande doorlichting van Content Fragments en AEM GraphQL API&#39;s en ontwikkelingstools.
 
 * [AEM GraphQL-videoreeks zonder hoofd](./video-series/modeling-basics.md)
 
@@ -52,7 +52,7 @@ Ontdek AEM GraphQL-mogelijkheden door een React-app te ontwikkelen die contentfr
 
 ## AEM GraphQL versus AEM Content Services
 
-|  | GraphQL API&#39;s AEM | AEM Content Services |
+|                                | GraphQL API&#39;s AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | Schema-definitie | Modellen voor structuurinhoudsfragmenten | AEM componenten |
 | Inhoud | Contentfragmenten | AEM componenten |

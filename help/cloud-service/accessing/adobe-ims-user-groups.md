@@ -1,5 +1,5 @@
 ---
-title: Adobe IMS-gebruikersgroepen en -AEM
+title: Adobe IMS gebruikersgroepen en AEM
 description: Adobe IMS-gebruikersgroepen stellen logische gebruikersgroepen in die worden blootgesteld aan AEM, waar ze kunnen worden gebruikt om machtigingen voor afstemmen voor AEM gebruikers te definiëren.
 version: Cloud Service
 topic: Administration, Security

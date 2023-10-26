@@ -1,5 +1,5 @@
 ---
-title: Adobe Cloud Manager gebruiken - CI/CD Non Production Pipeline
+title: Werken met Adobe Cloud Manager - CI/CD Non Production Pipeline
 description: CI/CD de niet productiepijpleidingen zijn verdeeld in twee categorieën, de pijpleidingen van de Kwaliteit van de Code, en de pijpleidingen van de Plaatsing. Codekwaliteitpijplijnen zorgen ervoor dat alle code van een Git-vertakking wordt samengesteld en wordt geëvalueerd op basis van de codescanfunctie van Cloud Manager. Implementatiepijpleidingen ondersteunen de geautomatiseerde implementatie van code van de Git-opslagplaats naar elke niet-productieomgeving, wat betekent dat een voorziening AEM omgeving die geen werkgebied of productie is.
 topics: Administration
 audience: administrator

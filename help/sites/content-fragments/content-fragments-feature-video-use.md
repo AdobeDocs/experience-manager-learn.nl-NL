@@ -24,7 +24,7 @@ Inhoudsfragmenten zijn een inhoudsabstractie in AEM waarmee op tekst gebaseerde 
 
 AEM Inhoudsfragmenten zijn tekstgebaseerde redactionele inhoud die bepaalde gestructureerde gegevenselementen kan bevatten die zijn gekoppeld, maar die wordt beschouwd als zuivere inhoud zonder ontwerp- of layoutinformatie. Inhoudsfragmenten worden doorgaans gemaakt als agnostische inhoud voor kanalen, die bestemd is voor gebruik en hergebruik via kanalen, waardoor de inhoud zelf wordt verpakt in een contextspecifieke ervaring.
 
-Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Details over [het leveren van Inhoudsfragmenten vindt u hier](content-fragments-delivery-feature-video-use.md).
+Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Details over [het leveren van inhoudsfragmenten vindt u hier](content-fragments-delivery-feature-video-use.md).
 
 1. Modellen voor inhoudsfragmenten inschakelen en definiëren
 2. Inhoudsfragmenten ontwerpen
@@ -57,7 +57,7 @@ Inhoudsfragmenten kunnen meerdere varianten hebben, waarbij elke variant een and
 
 >[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
 
-AEM Inhoudsfragmenten kunnen van AEM-auteur worden gedownload als een ZIP-bestand met variabelen, elementen en metagegevens.
+AEM Inhoudsfragmenten kunnen van AEM auteur worden gedownload als een ZIP-bestand met varianten, elementen en metagegevens.
 
 *ZIP-bestand voor downloaden van voorbeeldinhoudsfragment:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
@@ -68,7 +68,7 @@ AEM Inhoudsfragmenten kunnen van AEM-auteur worden gedownload als een ZIP-bestan
 
 >[!NOTE]
 >
-> Aantekening en versievergelijking voor inhoudsfragmenten zijn geïntroduceerd in [AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) en [AEM 6.3 Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> Aantekening en versie vergelijken voor inhoudsfragmenten is geïntroduceerd in [AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) en [AEM 6.3 Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Volgende stappen
 
