@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Meer informatie **instellen** de regels van de verkeersfilter, met inbegrip van 
 Het installatieproces omvat het volgende:
 
 - _regels maken_ met een geschikte AEM projectstructuur en configuratiebestand.
-- _regels implementeren_ via de configuratiepijplijn van Adobe Cloud Manage.
+- _regels implementeren_ via de configuratiepijplijn van Adobe Cloud Manager.
 - _testregels_ het gebruiken van diverse hulpmiddelen om verkeer te produceren.
 - _de resultaten analyseren_ met AEMCS CDN-logboeken en dashboardwerkset.
 
@@ -118,7 +118,7 @@ Om regels te testen, zijn er verschillende hulpmiddelen van derden beschikbaar e
 
 Nadat u de regels hebt gemaakt, geïmplementeerd en getest, kunt u de resultaten analyseren met **Elasticsearch, Logstash en Kibana (ELK)** dashboardgereedschap. Het kan de logboeken van AEMCS CDN ontleden, die u toestaan om de resultaten in de vorm van diverse grafieken en grafieken te visualiseren.
 
-Gereedschap Dashboard kan rechtstreeks worden gekloond vanuit het dialoogvenster [AEMCS-CDN-Log-Analysis-ELK-Tool GitHub-opslagplaats](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) en voert u de stappen uit om de **verkeersfilterregels (inclusief WAF)** dashboard.
+Gereedschap Dashboard kan rechtstreeks worden gekloond vanuit het dialoogvenster [AEMCS-CDN-Log-Analysis-ELK-Tool GitHub-opslagplaats](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) en voert u de stappen uit om de **Verkeersfilterregels (inclusief WAF)** dashboard.
 
 - Nadat u het voorbeelddashboard hebt geladen, ziet de gereedschapspagina Elastic er als volgt uit:
 

@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -30,12 +30,13 @@ De filterregels van het verkeer worden opgesteld aan [ingebouwde CDN](https://ex
 
 Deze zelfstudie begeleidt u door het proces om de resultaten van de regels van de verkeersfilter, met inbegrip van de regels van WAF te creëren, op te stellen, te testen en te analyseren.
 
-U kunt meer over de regels van de verkeersfilter in lezen [dit artikel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en)
+U kunt meer over de regels van de verkeersfilter in lezen [dit artikel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en).
 
 >[!IMPORTANT]
 >
-> Een subcategorie van de regels van het verkeersfilter genoemd &quot;de regels van WAF&quot;vereisen een vergunning van de Bescherming WAF-DDoS
+> Een subcategorie van de regels van het verkeersfilter genoemd &quot;de regels van WAF&quot;vereisen een bescherming WAF-DDoS of de Uitgebreide vergunning van de Veiligheid.
 
+We nodigen u uit feedback te geven of vragen te stellen over regels voor het filter van het verkeer via e-mail **aemcs-waf-adopter@adobe.com**.
 
 ## Volgende stap
 

@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Leer geadviseerde beste praktijken voor de regels van de verkeersfilter, met inb
 
 ## Beste werkwijzen voor verkeersfilterregels
 
-Laat onder de regels van de verkeersfilter voor uw AEM project toe. De gewenste waarden voor `rateLimit` en `clientCountry` moeten worden bepaald in samenwerking met uw beveiligingsteam.
+Laat de hieronder regels van de verkeersfilter voor uw AEM project toe. De gewenste waarden voor `rateLimit` en `clientCountry` moeten worden bepaald in samenwerking met uw beveiligingsteam.
 
 ```yaml
 kind: CDN
@@ -84,7 +84,7 @@ data:
 
 >[!WARNING]
 >
->Voor uw productiemilieu, werk met uw team van de Veiligheid van het Web samen om de aangewezen waarden voor te bepalen `rateLimit`,
+>Voor uw productiemilieu, werk met uw team van de Veiligheid van het Web samen om de aangewezen waarden voor te bepalen `rateLimit`
 
 ## Aanbevolen procedures voor WAF-regels
 
