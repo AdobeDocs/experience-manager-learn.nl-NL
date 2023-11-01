@@ -1,20 +1,18 @@
 ---
 title: Wolk 5 - Seizoen 1
-description: Leer over Adobe Experience Manager (AEM) as a Cloud Service van de ingenieurs van de Adobe zelf die het bouwen, en de deskundige diensten die het leveren.
+description: Leer over Adobe Experience Manager (AEM) as a Cloud Service van de eigen deskundige ingenieurs van de Adobe die het bouwen, en de deskundige diensten die het leveren.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
+source-git-commit: cacac9b58678316cea6a3cac5ebdb56427690d7d
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
-# Wolk 5
-
-![AEM Deskundigenreeks](./imgs/masthead.png)
+# Wolk 5 seizoen 1
 
 ## Inleiding
 
@@ -33,7 +31,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
       <img alt="AEM CDN Deel 1" src="./imgs/001-thumb.png"/>
       </a>
       <div>
-         <a href="./cloud5-aem-cdn-part1.md"><strong>AEM CDN diep duiken (deel 1)</strong></a>         
+         <a href="./cloud5-aem-cdn-part1.md"><strong>AEM CDN Diep duiken (deel 1)</strong></a>         
          <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
@@ -105,7 +103,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
       </div>
       <p>
         <br/>
-         Deel één (van twee) van onze tips en trucs voor het migreren naar de cloud. Onze belangrijkste focus in deel één is de beste praktijken en voorbereidend werk die u klaar maken om te migreren.
+         Deel één (van twee) van onze tips en trucs voor het migreren naar de cloud. Onze belangrijkste focus in deel één is de beste praktijken en voorbereidend werk die u klaar maken voor migratie.
       </p>
    </td> 
   </tr>
@@ -120,7 +118,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
       </div>
       <p>
         <br/>
-         Deel twee (van twee) van onze tips en trucs voor het migreren naar de cloud. Deel twee gaat voornamelijk over het gebruik van de beschikbare instrumenten voor migratie.
+         Deel twee (van twee) van onze tips en trucs voor migratie naar de cloud. Deel twee gaat voornamelijk over het gebruik van de beschikbare instrumenten voor migratie.
       </p>
      </td>   
      <td>
@@ -133,7 +131,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
       </div>
       <p>
         <br/>
-         Als onderdeel van de eerdere migratiebesprekingen kijken we naar de validator van de verzender en naar enkele taken die deze kan uitvoeren.
+         Als onderdeel van de eerdere migratiebesprekingen kijken we naar de validator van de verzender en naar een aantal taken die deze kan uitvoeren.
       </p>
    </td>
      <td>

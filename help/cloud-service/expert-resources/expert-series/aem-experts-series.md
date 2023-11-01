@@ -1,29 +1,27 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Experts-reeks
-description: Leer over Adobe Experience Manager (AEM) die as a Cloud Service is van Adobe-technici die het bouwen, en professionele services die het leveren.
+description: Leer over Adobe Experience Manager (AEM) as a Cloud Service van zeer eigen deskundige ingenieurs van de Adobe die het bouwen, en professionele diensten die het leveren.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 topic: Administration, Development
 feature: Developer Tools
 exl-id: ae1cdbe3-0863-41de-bb27-2e88c4640866
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 4b634d8b3063375f7c135a3e3ef81b90c84e2579
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service Experts-reeks
+# AEM as a Cloud Service deskundigenreeks
 
-![AEM Deskundigenreeks](./assets/masthead.png)
-
-Leer over Adobe Experience Manager (AEM) as a Cloud Service van de ingenieurs van de Adobe die, en professionele de dienstenteam bouwen die het leveren. Deelnemen aan Adobe-experts in het onderzoeken van wat as a Cloud Service is, hoe het hetzelfde is en hoe het anders is dan AEM 6, en hoe van AEM naar AEM as a Cloud Service te gaan.
+Leer over Adobe Experience Manager (AEM) as a Cloud Service van deskundige ingenieurs van de Adobe die het bouwen, en professionele de dienstenteam die het leveren. Experts van de Adobe samenwerken bij het verkennen van wat AEM as a Cloud Service is, hoe hetzelfde is en verschilt van AEM 6, en hoe van AEM 6 naar AEM as a Cloud Service te gaan.
 
 <br/> 
 <br/>
 
 ## Aan de slag met AEM as a Cloud Service
 
-Leer de grondbeginselen van AEM als Cloud Services, en hoe het van AEM 6 verschilt, van de Hogere Architecten van de Wolk van de Techniek van Adobe.
+Leer de grondbeginselen van AEM als Cloud Servicen, en hoe het verschilt van AEM 6, van de Hogere Architecten van de Wolk van de Techniek van de Adobe.
 
 <table>
   <tr>
@@ -72,7 +70,7 @@ Leer de grondbeginselen van AEM als Cloud Services, en hoe het van AEM 6 verschi
 
 ## Overstappen naar AEM as a Cloud Service?
 
-Overstappen van AEM 6 naar AEM as a Cloud Service? Leer over Adobe methodologie voor het bewegen aan AEM as a Cloud Service, evenals de diverse hulpmiddelen en mogelijkheden die tot dit een overgang maken.
+Overstappen van AEM 6 naar AEM as a Cloud Service? Lees meer over de methode van de Adobe om over te stappen naar AEM as a Cloud Service, en over de verschillende hulpmiddelen en mogelijkheden die dit een vlotte overgang maken.
 
 <table>
   <tr>
@@ -81,7 +79,7 @@ Overstappen van AEM 6 naar AEM as a Cloud Service? Leer over Adobe methodologie 
       <img alt="De migratiemethode" src="./assets/bpa-and-cam.png"/>
       </a>
       <div>
-         <a href="../../migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md" target="_aem-experts-series-video"><strong>Migratiemethodologie</strong></a>
+         <a href="../../migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md" target="_aem-experts-series-video"><strong>Migratiemethode</strong></a>
          <br/><em>met Roger Blanton, Adobe Consulting Services Technical Architect</em>
       </div>
       <p>
@@ -113,7 +111,7 @@ Overstappen van AEM 6 naar AEM as a Cloud Service? Leer over Adobe methodologie 
       </div>
       <p>
         <br/>
-         Leer hoe te om de Maven van de het projectstructuur en organisatie van uw douane AEM toepassing automatisch te moderniseren om as a Cloud Service compatibel AEM te zijn en zich aan Adobe beste praktijken te richten.
+         Leer hoe u de Maven-projectstructuur en -organisatie van uw aangepaste AEM-toepassing automatisch kunt moderniseren zodat deze as a Cloud Service compatibel AEM en kunt worden afgestemd op de meest recente best practices van de Adobe.
       </p>
    </td> 
   </tr>
@@ -162,23 +160,23 @@ Overstappen van AEM 6 naar AEM as a Cloud Service? Leer over Adobe methodologie 
 </table>
 
 
-## AEM als Cloud Services
+## AEM als mogelijkheden van Cloud Servicen
 
-Meer informatie over de unieke mogelijkheden van AEM as a Cloud Service experts van Adobe.
+Ontdek de unieke mogelijkheden van AEM as a Cloud Service van experts van de Adobe.
 
 <table>
   <tr>
    <td>
       <a href="../../migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md" target="_aem-experts-series-video">
-      <img alt="asset compute microdiensten" src="./assets/asset-compute-microservices.png"/>
+      <img alt="Asset compute microdiensten" src="./assets/asset-compute-microservices.png"/>
       </a>
       <div>
-         <a href="../../migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md" target="_aem-experts-series-video"><strong>asset compute microdiensten</strong></a>
+         <a href="../../migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md" target="_aem-experts-series-video"><strong>Asset compute microdiensten</strong></a>
          <br/><em>met Amol Anand, Principal Cloud Architect</em>
       </div>
       <p>
         <br/>
-        Leer meer over de Asset compute-microservices van AEM Assets, hoe deze de verwerking van AEM 6 elementen vervangen en hoe deze kunnen worden uitgebreid om aangepaste uitvoeringen van elementen te genereren.
+        Meer informatie over de Asset compute microservices van AEM Assets, hoe deze services de verwerking van AEM 6-middelen vervangen en hoe deze kunnen worden uitgebreid om aangepaste uitvoeringen van elementen te genereren.
       </p>
    </td>   
    <td>
@@ -198,7 +196,7 @@ Meer informatie over de unieke mogelijkheden van AEM as a Cloud Service experts 
   </tr>
 </table>
 
-## Hebt u hulp nodig bij AEM als Cloud Services?
+## Hebt u hulp nodig bij AEM als Cloud Servicen?
 
 Leer hoe te om AEM as a Cloud Service en AEM SDK van de deskundigen te zuiveren en problemen op te lossen!
 
