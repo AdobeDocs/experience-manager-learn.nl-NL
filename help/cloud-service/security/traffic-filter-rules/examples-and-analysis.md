@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 0%
 
 ---
-
 
 # Voorbeelden en resultaatanalyse van verkeersfilterregels inclusief WAF-regels
 
@@ -27,6 +27,8 @@ In deze sectie, zult u praktische voorbeelden van de regels van de verkeersfilte
 Bovendien zult u ontdekken hoe te om dashboardtooling te gebruiken die de logboeken van AEMCS CDN opneemt om essentiële metriek door Adobe te visualiseren verstrekte steekproefdashboards.
 
 Om zich aan uw specifieke vereisten te richten, kunt u verbeteren en douanedashboards tot stand brengen, waarbij diepgaande inzichten en het optimaliseren van de regelconfiguraties voor uw AEM plaatsen worden verkregen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425404?quality=12&learn=on)
 
 ## Voorbeelden
 
@@ -351,4 +353,3 @@ Ga vertrouwd met aanbevolen [best practices](./best-practices.md) het risico van
 [Syntaxis verkeersfilterregels](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
 
 [CDN-logboekindeling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
-

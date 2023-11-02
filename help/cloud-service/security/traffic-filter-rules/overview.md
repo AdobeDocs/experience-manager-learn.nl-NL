@@ -10,17 +10,19 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: e6d67204-2f76-441c-a178-a34798fe266d
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
 
 ---
 
-
 # Websites beschermen met verkeersfilterregels (inclusief WAF-regels)
 
 Meer informatie over **verkeersfilterregels**, inclusief de subcategorie **WAF-regels (Web Application Firewall)** in AEM as a Cloud Service (AEMCS). Lees over hoe te om, de regels tot stand te brengen op te stellen en te testen. Analyseer ook de resultaten om uw AEM te beschermen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425401?quality=12&learn=on)
 
 ## Overzicht
 
@@ -41,6 +43,5 @@ We nodigen u uit feedback te geven of vragen te stellen over regels voor het fil
 ## Volgende stap
 
 Meer informatie [instellen](./how-to-setup.md) de eigenschap zodat kunt u, de regels van de verkeersfilter creëren opstellen en testen. Lees meer over het instellen van de **Elasticsearch, Logstash en Kibana (ELK)** stackdashboardwerkset om de resultaten van uw AEMCS CDN-logboeken te analyseren.
-
 
 

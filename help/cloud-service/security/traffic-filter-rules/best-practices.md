@@ -10,17 +10,19 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
 
-
 # Beste praktijken voor de regels van het verkeersfilter met inbegrip van de regels van WAF
 
 Leer geadviseerde beste praktijken voor de regels van de verkeersfilter, met inbegrip van de regels van WAF. Het is belangrijk om op te merken dat de beste praktijken die in dit artikel worden beschreven niet uitputtend zijn en niet bedoeld zijn om uw eigen veiligheidsbeleid en procedures te vervangen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425408?quality=12&learn=on)
 
 ## Algemene beste praktijken
 
@@ -150,3 +152,6 @@ data:
 ## Samenvatting
 
 Tot slot beschikt deze zelfstudie over de kennis en gereedschappen die nodig zijn om de beveiliging van uw webtoepassingen in Adobe Experience Manager as a Cloud Service (AEMCS) te versterken. Met praktische regelvoorbeelden en inzichten in resultaatanalyse kunt u uw website en toepassingen effectief beschermen.
+
+
+
