@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 237560dc634cb3d6c3553dd57386d2a9548ed4e5
+source-git-commit: ea9bf14d9a8f62382c43a50dbf65c4d2b88e6bcf
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 5%
+source-wordcount: '324'
+ht-degree: 6%
 
 ---
 
@@ -27,9 +27,6 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 
 * **[Wat zijn AEM en Edge Delivery Services? (Video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html)**
   *Meer informatie over de waarde die Adobe Experience Manager (AEM) en Edge Delivery Services bieden.*
-
-* **[Meer informatie over de ontwikkeling van AEM (video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/evolution.html)**
-  *Leer over AEM evolutie en de waarde het, van AEM 6.5 tot AEM as a Cloud Service, en tenslotte aan Edge Delivery Services verstrekt.*
 
 * **[AEM met architecturaal overzicht van Edge Delivery Services (video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
   *Meer weten over AEM as a Cloud Service architectuur!*
