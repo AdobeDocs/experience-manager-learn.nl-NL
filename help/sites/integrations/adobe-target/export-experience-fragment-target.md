@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: e9c0974d35493a607969124b2906564fc97bcdea
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '196'
 ht-degree: 1%
 
 ---
@@ -39,11 +39,11 @@ Leer hoe u AEM Ervaring Fragment als Adobe Target-aanbiedingen exporteert.
 
 Als u het fragment Experience naar Adobe Target exporteert zonder de juiste machtigingen in Adobe Admin Console, treedt de volgende fout op bij de AEM Auteur-service:
 
-    ![UI-fout doel-API](assets/error-target-offer.png)
+![Interface van doel-API](assets/error-target-offer.png)
 
 ... en de volgende logberichten in de `aemerror` logboek:
 
-    ![Fout doelAPI-console](assets/target-console-error.png)
+![Fout doelAPI-console](assets/target-console-error.png)
 
 #### Resolutie
 
