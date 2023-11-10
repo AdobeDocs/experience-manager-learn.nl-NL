@@ -3,9 +3,9 @@ title: Snelheid van inhoud besturen met Adobe Experience Manager
 description: Leer meer over snelheid van inhoud en de waarde ervan in bedrijfsorganisaties. Duik in vier principes van effectieve implementatie en de valkuilen die onderweg moeten uitzien.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: bd886704f10834bb07b42d6b5c0f116496da36de
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2795'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Hier zijn vier mijlpalen om tijdens de uitvoeringsfase uit te bouwen:
 Over het algemeen is het beter om deze duimregels te volgen:
 
 * Doel om niet minder dan 80% van de ervaringen te laten doorlopen [Buiten de box-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en) en [Stijlsystemen](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Door klantengetuigenverklaring, zal dit niet alleen een scalable stichting tot stand brengen die u toelaat om uit het product roadmap voordeel te halen, maar zal ook snelheid tot 50% verhogen.
-* [Instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[bewerkbare sjablonen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) en ga verder met statische sjablonen. Bij het instellen van bewerkbare sjablonen (die vereist zijn voor het gebruik van Stijlsystemen), moet een sjabloonauteur worden toegewezen die de verschillende stijlen beheert die beschikbaar zijn voor een pagina of sectie van de website. Deze updates van de sjabloon zelf zijn vrij minimaal wat betreft het dagelijkse werk.
+* [Bewerkbare sjablonen instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) en ga verder met statische sjablonen. Bij het instellen van bewerkbare sjablonen (die vereist zijn voor het gebruik van Stijlsystemen), moet een sjabloonauteur worden toegewezen die de verschillende stijlen beheert die beschikbaar zijn voor een pagina of sectie van de website. Deze updates van de sjabloon zelf zijn vrij minimaal wat betreft het dagelijkse werk.
 * Gebruiken [Ervaar fragmenten](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) waar mogelijk. Hoewel het algemene gebruiksscenario voor ervaringsfragmenten voor multikanaaldistributie is, kunnen deze ook op de hele site effectief worden gebruikt om inhoud in één gebied tegelijk te vullen in plaats van de inhoud handmatig in meerdere gebieden bij te werken. Dit kan overdreven tijd en moeite besparen en het ontwerpteam vrijmaken om aan specifiekere en rijkere ervaringen te werken.
 * Maak rijkere ervaringen. Door de 80/20-regel (boven) te gebruiken, kan een organisatie specifieke CSS- en back-endontwikkeling gebruiken voor bepaalde ervaringen in plaats van algemene onderhoudsupdates.
 * Kies voor een schaalbare basis en een snel hermerk. Stijlsystemen die worden uitgevoerd op basis van een moderne implementatie kunnen een efficiënte herbranding op het hele platform mogelijk maken. Door het bijwerken van een groot aantal sectoren van de inhoud via het wijzigen van CSS-skins kunt u snel testen en valideren en wordt de ervaringskwaliteit van de site verbeterd, wat een directe invloed heeft op het rendement van investeringen.
