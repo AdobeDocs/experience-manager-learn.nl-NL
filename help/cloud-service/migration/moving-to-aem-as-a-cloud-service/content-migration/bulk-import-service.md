@@ -1,6 +1,6 @@
 ---
 title: Migratie van inhoud met behulp van bulkimportservice
-description: Leer hoe AEM als de Dienst van de Invoer van het Bulk kan worden gebruikt om activa uit niet-AEM bronnen in te voeren.
+description: Leer hoe AEM als de Bulk Import Service van Cloud Servicen kan worden gebruikt om activa uit niet-AEM bronnen in te voeren.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -9,16 +9,18 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 8a4f4a1370d93aa592d5d67208ad5f85034db0bf
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # Bulkimportservice
 
-Leer hoe AEM als de Dienst van de Invoer van het Bulk kan worden gebruikt om activa uit niet-AEM bronnen in te voeren.
+Leer hoe AEM als de Bulk Import Service van Cloud Servicen kan worden gebruikt om activa uit niet-AEM bronnen in te voeren.
+
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
 
@@ -28,9 +30,13 @@ Leer hoe AEM als de Dienst van de Invoer van het Bulk kan worden gebruikt om act
 
 De Bulk Import Service wordt gebruikt om bestanden die zijn opgeslagen in Azure Blob Storage of Amazon S3-opslag, over te brengen naar AEM as a Cloud Service als elementen.
 
+>[!TIP]
+>
+> De inputbronnen in deze video tonen slechts Azure Blob Storage en Amazon S3; nochtans blijven de beschikbare bronnen in tijd groeien. Voor een volledige lijst met ondersteunde invoerbronnen raadpleegt u de beschikbare opties in het product, of [documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+
 ## Belangrijkste activiteiten
 
-+ Upload de bestanden die u wilt importeren naar uw cloudopslagprovider (Azure Blob Storage of Amazon S3).
++ Upload de bestanden die u wilt importeren naar uw cloudopslagprovider.
 + Vorm en stel de Bulk Dienst van de Invoer van AEM as a Cloud Service dienst van de Auteur in werking.
 + Voer de Bulk Service Importer als eenmalige import uit of plant een periodieke import.
 
