@@ -8,11 +8,11 @@ role: Developer
 level: Beginner
 doc-type: Technical Video
 last-substantial-update: 2023-11-15T00:00:00Z
-jira: KT-14477, KT-14478, KT-14479
+jira: KT-14477, KT-14478
 thumbnail: 3425712.jpeg
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+source-git-commit: 155790de88f6775a6624637dce3f98a018de4afc
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -26,26 +26,18 @@ Als u Adobe Experience Manager (AEM) wilt integreren met Edge Delivery Services,
 
 Er zijn twee ondersteunde opslagruimten voor inhoud voor [documentontwerpen](../../document-authoring/set-up.md), [SharePoint](#sharepoint) en [Google Drive](#google-drive).
 
-### SharePoint
+>[!BEGINTABS]
+
+>[!TAB SharePoint]
 
 Stel SharePoint in als opslagplaats voor inhoud voor gebruik met Edge Delivery Services.
 
-Deze video kan worden overgeslagen als [Google Drive](#google-drive) wordt in plaats daarvan gebruikt.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
 
-
-### Google Drive
+>[!TAB Google Drive]
 
 Stel Google Drive in als opslagplaats voor inhoud voor gebruik met Edge Delivery Services.
 
-Deze video kan worden overgeslagen als [SharePoint](#sharepoint) wordt in plaats daarvan gebruikt.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
 
-
-## Koppel de opslagplaats voor inhoud
-
-Als de gegevensopslagruimte is ingesteld, moet deze zijn gekoppeld aan het project Edge Delivery Services.
-
->[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)
+>[!ENDTABS]
