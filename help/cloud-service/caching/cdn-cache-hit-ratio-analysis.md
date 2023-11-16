@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-10T00:00:00Z
 jira: KT-13312
 thumbnail: KT-13312.jpeg
-source-git-commit: be503ba477d63a566b687866289a81a0aa7d01f7
+source-git-commit: 4e93bc88b0ee5a805f2aaf1e66900f084ae01247
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1433'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,12 @@ ht-degree: 0%
 
 # Analyse van de CDN-cache-raakverhouding
 
-Leer hoe u de as a Cloud Service AEM analyseert **CDN-logbestanden** en meer inzicht te krijgen, zoals **cacheverhouding**, en **top-URL&#39;s van _MISS_ en _PASS_ cachetypen** voor optimalisatie.
+Inhoud die in de CDN is opgeslagen, verkleint de latentie die websitegebruikers ervaren, die niet hoeven te wachten tot de aanvraag is verzonden om terug te keren naar de Apache/dispatcher of AEM te publiceren. Daarom is het nuttig om de CDN-verhouding voor cachefouten te optimaliseren om de hoeveelheid inhoud die op de CDN in cache kan worden geplaatst, te maximaliseren.
+
+Leer hoe u de as a Cloud Service AEM analyseert **CDN-logbestanden** en meer inzicht te krijgen, zoals **cacheverhouding**, en **top-URL&#39;s van _MISS_ en _PASS_ cachetypen** voor optimalisatiedoeleinden.
 
 
-De CDN-logboeken zijn beschikbaar in de JSON-indeling, die verschillende velden bevat, waaronder `url`, `cache`voor meer informatie raadpleegt u de [CDN-logboekindeling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). De `cache` veld bevat informatie over _status van de cache_ en de mogelijke waarden ervan zijn HIT, MISS of PASS. Laten we de details van mogelijke waarden bekijken.
+De CDN-logboeken zijn beschikbaar in de JSON-indeling, die verschillende velden bevat, waaronder `url`, `cache`. Zie de klasse [CDN-logboekindeling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). De `cache` veld bevat informatie over _status van de cache_ en de mogelijke waarden ervan zijn HIT, MISS of PASS. Laten we de details van mogelijke waarden bekijken.
 
 | Status van cache </br> Mogelijke waarde | Beschrijving |
 |------------------------------------|:-----------------------------------------------------:|
@@ -31,7 +33,12 @@ De CDN-logboeken zijn beschikbaar in de JSON-indeling, die verschillende velden 
 | MISS | De gevraagde gegevens zijn _niet gevonden in de CDN-cache en moet worden aangevraagd_ van de AEM server. |
 | PASS | De gevraagde gegevens zijn _expliciet ingesteld op niet in cache plaatsen_ en altijd van de AEM server worden opgehaald. |
 
-Voor deze zelfstudie [AEM WKND-project](https://github.com/adobe/aem-guides-wknd) wordt ingezet in de AEM as a Cloud Service omgeving en er wordt een kleine prestatietest geactiveerd met behulp van [Apache JMeter](https://jmeter.apache.org/).
+In deze zelfstudie wordt [AEM WKND-project](https://github.com/adobe/aem-guides-wknd) wordt ingezet in de AEM as a Cloud Service omgeving en er wordt een kleine prestatietest geactiveerd met behulp van [Apache JMeter](https://jmeter.apache.org/).
+
+Deze zelfstudie is zodanig gestructureerd dat u het volgende proces doorloopt:
+1. CDN-logbestanden downloaden via Cloud Manager
+1. De CDN-logboeken analyseren, die kunnen worden uitgevoerd met twee methoden: een lokaal geïnstalleerd dashboard of een extern geopend Jupityer-notebook (voor wie een licentie voor Adobe Experience Platform heeft)
+1. CDN-cacheconfiguratie optimaliseren
 
 ## CDN-logbestanden downloaden
 
@@ -52,12 +59,12 @@ Als het gedownloade logbestand afkomstig is van _vandaag_ de bestandsextensie is
 
 ## Gedownloade CDN-logboeken analyseren
 
-Om inzichten zoals geheim voorgeheugenklapverhouding, en hoogste URLs van MISS en PASS geheim voorgeheugentypes te bereiken analyseert het gedownloade CDN logboekdossier. Deze inzichten helpen om [CDN-cacheconfiguratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html) en verbetert u de prestaties van de site.
+Analyseer het gedownloade CDN-logbestand om inzicht te krijgen in bijvoorbeeld de verhouding van cachereeks en de URL&#39;s van de bovenste URL&#39;s van MISS- en PASS-cachetypen. Deze inzichten helpen om [CDN-cacheconfiguratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html) en verbetert u de prestaties van de site.
 
-Voor het analyseren van de CDN-logboeken gebruikt dit artikel de **Elasticsearch, Logstash en Kibana (ELK)** [dashboardgereedschap](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) en [Jupyter-laptop](https://jupyter.org/).
+Voor het analyseren van de CDN-logboeken worden in dit artikel twee opties voorgesteld: de **Elasticsearch, Logstash en Kibana (ELK)** [dashboardgereedschap](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) en [Jupyter-laptop](https://jupyter.org/). De ELK-dashboardwerkset kan lokaal op uw laptop worden geïnstalleerd, terwijl u vanaf een externe locatie toegang hebt tot de werkset Jupityr-laptop [als onderdeel van Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en) zonder aanvullende software te installeren, voor degenen die een licentie voor Adobe Experience Platform hebben verkregen.
 
 
-### De dashboardgereedschappen gebruiken
+### Optie 1: ELK-dashboard gebruiken
 
 De [ELK-stapel](https://www.elastic.co/elastic-stack) is een reeks hulpmiddelen die een scalable oplossing verstrekken om, de gegevens te zoeken te analyseren en te visualiseren. Het bestaat uit Elasticsearch, Logstash, en Kibana.
 
@@ -69,7 +76,7 @@ Om de belangrijkste details te identificeren, gebruiken wij [AEMCS-CDN-Log-Analy
 
    1. Kopieer het gedownloade CDN-logbestand of de gedownloade CDN-logbestanden in de omgevingsspecifieke map.
 
-   1. Open de **Hoogte-breedteverhouding CDN-cache** Klik op Hamburger Menu > Analytics > Dashboard > CDN Cache Hit Ratio.
+   1. Open de **Hoogte-breedteverhouding CDN-cache** Klik op het navigatiemenu linksboven > Analytics > Dashboard > CDN Cache Hit Ratio.
 
       ![CDN-cachehoogte-breedteverhouding - Kibana-dashboard](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -118,26 +125,24 @@ Voer de volgende stappen uit om de opgenomen logbestanden te filteren op hostnaa
 
 Voeg op basis van de analysevereisten ook meer filters toe aan het dashboard.
 
-### Jupyter-laptop gebruiken
+### Optie 2: Jupyter-laptop gebruiken
 
-De [Jupyter-laptop](https://jupyter.org/) is een opensource webtoepassing waarmee u documenten kunt maken die code, tekst en visualisatie bevatten. Het wordt gebruikt voor gegevenstransformatie, visualisatie, en statistische modellering.
+Voor degenen die liever geen software lokaal installeren (dat wil zeggen, het gereedschap voor het ELK-dashboard uit de vorige sectie), is er nog een andere optie, maar hiervoor is een licentie voor Adobe Experience Platform vereist.
 
-Als u de CDN-logbestandsanalyse wilt versnellen, downloadt u de [AEM-as-a-CloudService - CDN Logs Analysis - Jupyter-laptop](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb) bestand.
+De [Jupyter-laptop](https://jupyter.org/) is een opensource webtoepassing waarmee u documenten kunt maken die code, tekst en visualisatie bevatten. Het wordt gebruikt voor gegevenstransformatie, visualisatie, en statistische modellering. Het kan extern worden geopend [als onderdeel van Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en).
 
-De gedownloade `aemcs_cdn_logs_analysis.ipynb` Het dossier van de &quot;Interactive Python Laptop&quot;spreekt voor zich, echter de belangrijkste hoogtepunten van elke sectie zijn:
+#### Het interactieve Python-laptopbestand downloaden
+
+Download eerst de [AEM-as-a-CloudService - CDN Logs Analysis - Jupyter-laptop](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb) bestand, dat helpt bij de analyse van de CDN-logbestanden. Dit dossier van de &quot;Interactive Python Notitieboekje&quot;spreekt voor zich, echter de belangrijkste hoogtepunten van elke sectie zijn:
 
 - **Extra bibliotheken installeren**: installeert de `termcolor` en `tabulate` Pythonbibliotheken.
-- **CDN-logbestanden laden**: laadt het CDN-logbestand met `log_file` variabele waarde, zorg ervoor om zijn waarde bij te werken. Het zet ook dit CDN- logboek in [Pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html).
-- **Analyse uitvoeren**: het eerste codeblok is _Resultaat van de Analyse van de vertoning voor Totaal, HTML, JS/CSS en de Verzoeken van het Beeld_, biedt het een percentage voor de aanraakverhouding in het cache, een balk en schijfgrafieken.
-Het tweede codeblok is _Hoogste 5 MISS en PASS verzoek URLs voor HTML, JS/CSS, en Beeld_, worden URL&#39;s en hun aantallen weergegeven in tabelindeling.
+- **CDN-logbestanden laden**: laadt het CDN-logbestand met `log_file` variabele waarde; zorg ervoor om zijn waarde bij te werken. Het zet ook dit CDN- logboek in [Pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html).
+- **Analyse uitvoeren**: het eerste codeblok is _Resultaat van de Analyse van de vertoning voor Totaal, HTML, JS/CSS en de Verzoeken van het Beeld_; het verstrekt het percentage van de geheim voorgeheugenklap, bar, en schijfgrafieken.
+Het tweede codeblok is _Hoogste 5 MISS en PASS verzoek URLs voor HTML, JS/CSS, en Beeld_; URL&#39;s en hun aantallen worden in tabelindeling weergegeven.
 
-#### Jupyter-laptop uitvoeren in Experience Platform
+#### De Jupyter-laptop uitvoeren
 
->[!IMPORTANT]
->
->Als u het Experience Platform gebruikt of een licentie geeft, kunt u de Jupyter-laptop uitvoeren zonder extra software te installeren.
-
-Voer de volgende stappen uit om het Jupyter-notebook in Experience Platform uit te voeren:
+Voer vervolgens de Jupyter-laptop in Adobe Experience Platform uit door de volgende stappen uit te voeren:
 
 1. Aanmelden bij de [Adobe Experience Cloud](https://experience.adobe.com/), op de startpagina > **Snelle toegang** sectie > klik op **Experience Platform**
 
