@@ -6,7 +6,7 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+source-git-commit: 3f27a728bbaba1ff5a4c7d25e23c3979e59d73ea
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 11%
@@ -25,7 +25,6 @@ ht-degree: 11%
    + [Omleiding](document-authoring/redirects.md)
    + [Bulkmetagegevens](document-authoring/bulk-metadata.md)
    + [Metagegevens pagina](document-authoring/page-metadata.md)
-   + [Responsieve navigatie](document-authoring/responsive-navigation.md)
    + Procedure{#how-to}
       + [Documentcontrole](./document-authoring/how-to/document-audit.md)
       + [Documentmachtigingen](./document-authoring/how-to/document-permissions.md)
@@ -34,6 +33,7 @@ ht-degree: 11%
       + [iFrames insluiten](./document-authoring/how-to/iframes.md)
       + [Alternatieve tekst voor afbeelding](./document-authoring/how-to/image-alt-text.md)
       + [Indexering van zoekprogramma&#39;s voorkomen](./document-authoring/how-to/no-index.md)
+      + [Responsieve navigatie](document-authoring/how-to/responsive-navigation.md)
 + Pagina&#39;s ontwerpen {#page-authoring}
    + [Authoring](page-authoring/aem-sites-authoring-overview.md)
    + [Navigatie](page-authoring/basic-handling-sites-feature-video-use.md)
@@ -54,11 +54,6 @@ ht-degree: 11%
    + [Lanceringen](page-authoring/launches.md)
    + Leer van uw peers {#expert-advice}
       + [Tips voor sitehiërarchie](page-authoring/expert-advice/site-hierarchy.md)
-+ Onderdelen {#components}
-   + [Component Development](components/component-development.md)
-   + [Kernonderdelen](components/core-components-feature-video-understand.md)
-   + [Webgeoptimaliseerde afbeeldingslevering](components/web-optimized-image-delivery.md)
-   + [Onderdelenconsole](components/components-console-feature-video-use.md)
 + Contentfragmenten {#content-fragments}
    + [Content Fragments-console](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Inhoudsfragmenten ontwerpen](content-fragments/content-fragments-feature-video-use.md)
@@ -99,6 +94,11 @@ ht-degree: 11%
    + [Fragmenten voor Setup-ervaring en Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Experience Fragments gebruiken met Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub instellen](personalization/context-hub-technical-video-setup.md)
++ Onderdelen {#components}
+   + [Component Development](components/component-development.md)
+   + [Kernonderdelen](components/core-components-feature-video-understand.md)
+   + [Webgeoptimaliseerde afbeeldingslevering](components/web-optimized-image-delivery.md)
+   + [Onderdelenconsole](components/components-console-feature-video-use.md)
 + SEO {#seo}
    + [Sitemaps](./seo/sitemaps.md)
 + Toepassingen voor één pagina {#spa-editor}
