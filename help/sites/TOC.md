@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 521f11e24b2d1a89b9c26d4407ca417dc21caa29
+source-git-commit: 54827c36a33437a8bf090eb10cde8ed656446d0b
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 11%
 
 ---
@@ -67,17 +67,16 @@ ht-degree: 11%
    + [Content Fragments vs. Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + Ontwikkeling{#developing}
-      + [Vereisten](./edge-delivery-services/developing/prerequisites.md)
-      + [AEM](./edge-delivery-services/developing/aem-boilerplate.md)
-      + [Inhoudsopslagplaats](./edge-delivery-services/developing/content-repository.md)
-      + [AEM](./edge-delivery-services/developing/aem-boilerplate.md)
-      + [Voorvertonen en publiceren](./edge-delivery-services/developing/preview-and-publish.md)
-      + [AEM Sidekick](./edge-delivery-services/developing/sidekick.md)
-      + [Documentstructuur](./edge-delivery-services/developing/document-structure.md)
-      + [Lokale ontwikkeling](./edge-delivery-services/developing/local-development.md)
-      + [Git](./edge-delivery-services/developing/git.md)
+      + [Vereisten](edge-delivery-services/developing/prerequisites.md)
+      + [AEM](edge-delivery-services/developing/aem-boilerplate.md)
+      + [Inhoudsopslagplaats](edge-delivery-services/developing/content-repository.md)
+      + [Voorvertonen en publiceren](edge-delivery-services/developing/preview-and-publish.md)
+      + [AEM Sidekick](edge-delivery-services/developing/sidekick.md)
+      + [Documentstructuur](edge-delivery-services/developing/document-structure.md)
+      + [Lokale ontwikkeling](edge-delivery-services/developing/local-development.md)
+      + [Git](edge-delivery-services/developing/git.md)
    + Hoe kan ik{#how-to}
-      + [RSS-feeds](./edge-delivery-services/how-to/rss.md)
+      + [RSS-feeds](edge-delivery-services/how-to/rss.md)
 + Ontwikkeling {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Projectarchetype AEM](developing/aem-project-archetype.md)
