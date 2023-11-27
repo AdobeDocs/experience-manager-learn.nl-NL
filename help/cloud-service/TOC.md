@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: bfc4d843c53373010ee04cfa590272cedea7a686
+source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1084'
 ht-degree: 11%
 
 ---
@@ -204,12 +204,13 @@ ht-degree: 11%
       + [4 - Sync IntelliJ met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [5 - Een formulier maken](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Aangepaste verzendhandler](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
-      + [7 - Forms Portal-componenten inschakelen](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Inclusief Cloud Servicen en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [9 - Contextbewuste cloudconfiguratie](./forms/developing-for-cloud-service/context-aware-fdm.md)
-      + [10 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [11 - Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [12 - Gemaakt archetype bijwerken](./forms/developing-for-cloud-service/updating-project-archetype.md)
+      + [7 - servlet registreren met behulp van brontype](./forms/developing-for-cloud-service/registering-servlet-using-resourcetype.md)
+      + [8 - Forms Portal-componenten inschakelen](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [9 - Inclusief Cloud Servicen en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [10 - cloudconfiguratie met behoud van context](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [11 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [12 - Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [13 - Gemaakt archetype bijwerken](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Adaptief formulier maken{#create-first-af}
       + [Inleiding](./forms/create-first-af/introduction.md)
       + [Thema maken](./forms/create-first-af/create-theme.md)
@@ -254,6 +255,12 @@ ht-degree: 11%
       + [PDF/A-hulpprogramma](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [De oplossing testen](./forms/forms-cs-assembler/test.md)
       + [Uitdaging](./forms/forms-cs-assembler/challenge.md)
+   + Formulierverzendingen opslaan met BLOB-indexcodes{#store-submiited-data-with-metadata-tags}
+      + [Inleiding](./forms/store-submiited-data-with-metadata-tags/introduction.md)
+      + [Uitbreiden keuzegroep](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
+      + [OSGi-configuratie maken](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
+      + [Indexcodes maken](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
+      + [Aangepaste verzending maken](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
    + Azure Portal Storage{#forms-cs-azure-portal}
       + [Inleiding](./forms/forms-cs-azure-portal/introduction.md)
       + [Formuliergegevensmodel maken](./forms/forms-cs-azure-portal/create-fdm.md)
