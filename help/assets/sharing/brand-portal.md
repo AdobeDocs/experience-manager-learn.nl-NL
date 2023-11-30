@@ -1,14 +1,15 @@
 ---
 title: Brand Portal gebruiken
-description: Videodoorlopen van de integratie met AEM Author en AEM Assets Brand Portal.
+description: Videodoorlopen van de integratie AEM Auteur en AEM Assets Brand Portal.
 feature: Brand Portal
 version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
+doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 0%
@@ -29,7 +30,7 @@ Brand Portal Asset Sourcing wordt gebruikt om middelen te verzamelen van externe
 
 >[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
-*Auteur van Experience Manager 6.5 SP2 (6.5.2) of hoger is vereist om Asset Sourcing te kunnen gebruiken*
+*Experience Manager Auteur 6.5 SP2 (6.5.2) of hoger is vereist om Asset Sourcing te gebruiken*
 
 Controleren [Auteur van Experience Manager inschakelen voor middelenbron](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) voor instructies over het configureren en instellen van Asset Sourcing bij Experience Manager Author.
 
@@ -37,19 +38,19 @@ Controleren [Auteur van Experience Manager inschakelen voor middelenbron](https:
 
 >[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
-In de release van Brand Portal in februari 2019 wordt aandacht besteed aan verbeteringen in het zoeken naar tekst en aan verzoeken van klanten van het type top.
+De release van Brand Portal van februari 2019 richt zich op verbeteringen in het zoeken naar tekst en op verzoeken van klanten van topniveau.
 
 ### Verbeteringen voor zoeken
 
 Brand Portal verbetert het zoeken met gedeeltelijk zoeken naar tekst op voorspelling van eigenschappen in het filtervenster. Als u gedeeltelijk zoeken in tekst wilt toestaan, moet u Gedeeltelijk zoeken in Voorspelling eigenschap in het zoekformulier inschakelen.
 
-Lees verder voor meer informatie over gedeeltelijk zoeken naar tekst en zoeken naar jokertekens.
+Lees verder om meer te weten over gedeeltelijk tekstonderzoek en vervangingsonderzoek.
 
 #### Gedeeltelijke woordzoekopdracht
 
 U kunt nu naar elementen zoeken door alleen een deel (dat een woord of twee is) van de gezochte woordgroep op te geven in het filtervenster.
 
-**Hoofdletters gebruiken** : Gedeeltelijke woordzoekactie is handig wanneer u niet zeker weet welke combinatie van woorden in de gezochte uitdrukking voorkomt.
+**Hoofdletters gebruiken** : Gedeeltelijke woordzoekopdracht is handig wanneer u niet zeker weet welke combinatie van woorden in de gezochte uitdrukking voorkomt.
 
 Als uw zoekformulier in Brand Portal bijvoorbeeld Eigenschapvoorspelling gebruikt voor gedeeltelijke zoekopdrachten naar de titel van elementen, worden met de term kamp alle elementen geretourneerd die voorkomen in het woordkamp in de titelzin.
 
@@ -63,7 +64,7 @@ Als u bijvoorbeeld klimmen* opgeeft, worden alle elementen geretourneerd waarvan
 
 Op dezelfde manier specificeren:
 
-* \*klimt retourneert alle elementen waarbij woorden eindigen met tekens die in de titelzin klimmen.
+* \*klimt retourneert alle elementen met woorden die eindigen met tekens die in de titelzin klimmen.
 * \*klimt\* retourneert alle elementen met woorden die de tekens bevatten die in hun titelzin klimmen.
 
 #### Maphiërarchie inschakelen
@@ -71,7 +72,7 @@ Op dezelfde manier specificeren:
 Beheerders kunnen nu configureren hoe de mappen bij het aanmelden worden weergegeven aan gebruikers zonder beheer (Editors, Viewers en Gastgebruikers).
 [Maphiërarchie inschakelen](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) De configuratie wordt toegevoegd in Algemene Montages, in het admin paneel van hulpmiddelen. Als de configuratie:
 
-* Als deze optie is ingeschakeld, is de mappenstructuur die begint in de hoofdmap zichtbaar voor niet-beheerders. Aldus, die hen een navigatie ervaring gelijkend op beheerders verlenen.
+* Als deze optie is ingeschakeld, is de mappenstructuur die begint in de hoofdmap zichtbaar voor gebruikers zonder beheerdersrechten. Aldus, die hen een navigatie ervaring gelijkend op beheerders verlenen.
 * Uitgeschakeld. Alleen de gedeelde mappen worden op de bestemmingspagina weergegeven.
 
 [Maphiërarchie inschakelen](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) Met de functie (indien ingeschakeld) kunt u de mappen onderscheiden met dezelfde namen die worden gedeeld van verschillende hiërarchieën. Bij het aanmelden zien niet-beheerders nu de virtuele bovenliggende mappen (en vooroudermappen) van de gedeelde mappen.
@@ -82,7 +83,7 @@ De standaardminiatuur van de virtuele mappen is de miniatuurafbeelding van de ee
 
 ### Ondersteuning voor Dynamic Media-video-uitvoeringen
 
-Gebruikers van wie de AEM-auteur-instantie zich in de hybride Dynamic Media-modus bevindt, kunnen naast de originele videobestanden ook een voorvertoning van de dynamische media-uitvoeringen weergeven en deze downloaden.
+Gebruikers van wie de AEM Author-instantie zich in de hybride Dynamic Media-modus bevindt, kunnen naast de originele videobestanden ook een voorvertoning van de dynamische media-uitvoeringen weergeven en deze downloaden.
 
 Om voorproef en download van dynamische media vertoningen op specifieke huurdersrekeningen toe te staan, moeten de beheerders de Configuratie van Dynamic Media (videodienst URL (DM-Gateway URL) en registratie identiteitskaart specificeren om de dynamische video) in Videoconfiguratie van admin hulpmiddelenpaneel te halen.
 
@@ -92,7 +93,7 @@ Dynamic Media-video&#39;s kunnen worden voorvertoond op:
 * Weergave van de kaart van het element
 * Voorvertoningspagina voor delen koppelen
 
-Dynamic Media Video-codering kan worden gedownload van:
+Dynamic Media Video-coderingen kunnen worden gedownload van:
 
 * Brand Portal
 * Gedeelde koppeling
@@ -105,14 +106,14 @@ Gepubliceerde middelen kunnen ook op een latere datum (tijd) uit het portaal wor
 
 ### Configureerbare alias van huurder in URL
 
-Organisaties kunnen hun portal-URL aanpassen door een alternatief voorvoegsel in de URL te plaatsen. Om een alias voor huurdersnaam in hun bestaande portaal URL te krijgen, moeten de organisaties Adobe steun contacteren.
+Organisaties kunnen hun portaal-URL aanpassen door een alternatief voorvoegsel in de URL te hebben. Om een alias voor huurdersnaam in hun bestaande portaal URL te krijgen, moeten de organisaties Adobe steun contacteren.
 
 Merk op dat alleen het voorvoegsel van de Brand Portal URL kan worden aangepast en niet de volledige URL.
 Bijvoorbeeld een organisatie met een bestaand domein `wknd.brand-portal.adobe.com` kan `wkndinc.brand-portal.adobe.com` op verzoek gemaakt.
 
-De instantie AEM-auteur kan echter [geconfigureerd](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) alleen met de URL van de huurder en niet met alias (alternatief) URL van de huurder.
+AEM instantie Auteur kan echter [geconfigureerd](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) alleen met de URL van de huurder en niet met alias (alternatief) URL van de huurder.
 
-**Hoofdletters gebruiken** : Organisaties kunnen aan hun merkingsbehoeften voldoen door de portaal-URL aan te passen in plaats van zich aan de URL van Adobe te houden.
+**Hoofdletters gebruiken** : Organisaties kunnen aan hun merkingsbehoeften voldoen door de portaal-URL aan te passen in plaats van zich aan de URL van de Adobe te houden.
 
 ## Functies en verbeteringen in Brand Portal december 2018{#brand-portal-features-and-enhancements-642}
 
@@ -124,7 +125,7 @@ AEM Brand-portaal biedt gasten toegang tot het portaal. Een gastgebruiker vereis
 
 ### Versnelde download
 
-Brand Portal-gebruikers kunnen Aspera-gebaseerde snelle downloads gebruiken om snelheden tot 25x sneller te krijgen en genieten van een naadloze downloadervaring, ongeacht hun locatie over de hele wereld. Als gebruikers de elementen sneller van Brand Portal of een gedeelde koppeling willen downloaden, moeten ze de optie Downloadversnelling inschakelen selecteren in het dialoogvenster Downloaden, mits downloadversnelling is ingeschakeld in hun organisatie.
+Brand Portal-gebruikers kunnen Aspera-gebaseerde snelle downloads gebruiken om snelheden tot 25x sneller te krijgen en genieten van een naadloze downloadervaring, ongeacht hun locatie over de hele wereld. Als gebruikers de elementen sneller van Brand Portal of een gedeelde koppeling willen downloaden, moeten ze de optie Downloadversnelling inschakelen selecteren in het dialoogvenster Downloaden, op voorwaarde dat downloadversnelling is ingeschakeld in hun organisatie.
 
 * [Handleiding om downloads van Brand Portal te versnellen](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Aspera Connect Test Server](https://test-connect.asperasoft.com/)
@@ -168,7 +169,7 @@ Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen va
 ### Navigatieverbeteringen
 
 * Bijgewerkte gebruikersinterface die zich op de AEM richt en Coral3 UI gebruikt.
-* Snelle en eenvoudige toegang tot beheertools via het nieuwe logo van Adobe.
+* Snelle en eenvoudige toegang tot beheertools via het logo van de nieuwe Adobe.
 * Productnavigatie door middel van een bedekking
 * Snelle navigatie naar bovenliggende mappen vanuit een onderliggende map.
 * Optie voor Omnzoekopdrachten om naar beheergereedschappen en inhoud te navigeren.
@@ -181,7 +182,7 @@ Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen va
 * In het kader van het algemene onderzoek kunt u ook zoeken naar elementen in een bepaalde map of locatie
 * Automatische trefwoordsuggesties maken het zoeken gemakkelijker
 * Verbeter uw algemene zoekopdracht met extra filters. Optie om het onderzoeksresultaat in een Slimme Inzameling te bewaren voor u om uw onderzoek in een recentere tijd opnieuw te bezoeken.
-* Ondersteunt zoeken naar slimme tags
+* Ondersteunt zoeken naar slimme tags voor elementen
 * AEM Slimme gelabelde elementen kunnen worden gedeeld van AEM naar Brand Portal en worden gebruikt voor het zoeken naar elementen in Brand Portal.
 
 ### Verbeteringen voor het delen van bestanden
@@ -204,7 +205,7 @@ Nieuwe functies verbeteren de functionaliteit die gericht is op het uitlijnen va
 ## Aanvullende bronnen{#additional-resources}
 
 * [Nieuwe functies in Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)
-* [AEM-replicatieagents voor auteurs](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [AEM replicatieagenten van de Auteur](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Gids voor versnelde download](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [AEM Assets Brand Portal Adobe Docs](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [AEM Assets Dynamic Media Adobe Docs](https://experienceleague.adobe.com/docs/)

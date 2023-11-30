@@ -3,15 +3,12 @@ title: Projecten ontwikkelen in AEM
 description: Een zelfstudie over de ontwikkeling van AEM projecten.  In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om nieuwe projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
 version: 6.4, 6.5
 feature: Projects, Workflow
-topics: collaboration, development, governance
-activity: develop
-audience: developer, implementer, administrator
-doc-type: tutorial
+doc-type: Tutorial
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 0%
@@ -41,13 +38,13 @@ Deze zelfstudie doorloopt de code die nodig is om een aangepaste projectsjabloon
 * [Pakket met voltooide zelfstudies](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Volledige gegevensopslagruimte voor code op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Deze zelfstudie gaat uit van enige basiskennis van [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/the-basics.html) en enige kennis van [AEM Maven project instellen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Alle vermelde code is bedoeld als referentie en mag alleen worden geïmplementeerd op een [instantie voor lokale ontwikkeling AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Deze zelfstudie gaat uit van enige basiskennis van [Ontwikkelingspraktijken AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/the-basics.html) en enige kennis van [AEM Maven project instellen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Alle vermelde code is bedoeld als referentie en mag alleen worden geïmplementeerd op een [instantie voor lokale ontwikkeling AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
 
 ## Structuur van een projectsjabloon
 
 Projectsjablonen moeten onder broncontrole worden geplaatst en moeten onder de toepassingsmap onder /apps blijven. In het ideale geval moeten ze in een submap worden geplaatst met de naamgevingsconventie van **&#42;/projects/templates/**&lt;my-template>. Door na deze noemende overeenkomst te plaatsen zullen om het even welke nieuwe douanesjablonen automatisch beschikbaar worden aan auteurs wanneer het creëren van een project. De configuratie van beschikbare projectsjablonen is ingesteld op: **/content/projects/jcr:content** knoop door **cq:allowedTemplates** eigenschap. Dit is standaard een reguliere expressie: **/(apps|libs)/.&#42;/projects/templates/.&#42;**
 
-De wortelknoop van een Malplaatje van het Project zal een hebben **jcr:primaryType** van **cq:sjabloon**. Onder het basisknooppunt van er zijn 3 knooppunten: **gadgets**, **rollen**, en **workflows**. Deze knooppunten zijn allemaal **nt:ongestructureerd**. Onder het hoofdknooppunt kan ook een bestand miniatuur.png staan dat wordt weergegeven wanneer u de sjabloon selecteert in de wizard Project maken.
+De wortelknoop van een Malplaatje van het Project zal hebben **jcr:primaryType** van **cq:sjabloon**. Onder het basisknooppunt van er zijn 3 knooppunten: **gadgets**, **rollen**, en **workflows**. Deze knooppunten zijn allemaal **nt:ongestructureerd**. Onder het hoofdknooppunt kan ook een bestand miniatuur.png staan dat wordt weergegeven wanneer u de sjabloon selecteert in de wizard Project maken.
 
 De volledige nodestructuur:
 
@@ -63,7 +60,7 @@ De volledige nodestructuur:
 
 ### Hoofdmap projectsjabloon
 
-De wortelknoop van het projectmalplaatje is van type **cq:sjabloon**. Op dit knooppunt kunt u eigenschappen configureren **jcr:titel** en **jcr:beschrijving** dat wordt getoond in de Create Tovenaar van het Project. Er is ook een eigenschap met de naam **wizard** dat naar een formulier verwijst dat de eigenschappen van het project vult. De standaardwaarde van: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** zou in de meeste gevallen fijn moeten werken, aangezien het de gebruiker toestaat om de basiseigenschappen van het Project te bevolken en groepsleden toe te voegen.
+De wortelknoop van het projectmalplaatje is van type **cq:sjabloon**. Op dit knooppunt kunt u eigenschappen configureren **jcr:titel** en **jcr:beschrijving** dat wordt getoond in de Create Tovenaar van het Project. Er is ook een eigenschap die **wizard** dat naar een formulier verwijst dat de eigenschappen van het project vult. De standaardwaarde van: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** zou in de meeste gevallen fijn moeten werken, aangezien het de gebruiker toestaat om de basiseigenschappen van het Project te bevolken en groepsleden toe te voegen.
 
 *&#42;Merk op de Create Tovenaar van het Project niet Sling POST servlet gebruikt. In plaats daarvan worden waarden naar een aangepaste servlet gepost:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Hiermee moet rekening worden gehouden bij het toevoegen van aangepaste velden.*
 
@@ -71,7 +68,7 @@ Een voorbeeld van een douanetovenaar kan voor het Malplaatje van het Project van
 
 ### Gadgets {#gadgets}
 
-Er zijn geen extra eigenschappen op deze knoop maar de kinderen van de gadget knoopcontrole die de Tegels van het Project het dashboard van het Project bevolken wanneer een nieuw Project wordt gecreeerd. [Projectblokken](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (ook wel gadgets of pods genoemd) zijn eenvoudige kaarten die de werkplek van een project vullen. Een volledige lijst met de bovenste tegels vindt u onder: **/libs/cq/gui/components/projects/admin/pod. **Projecteigenaars kunnen altijd tegels toevoegen/verwijderen nadat een project is gemaakt.
+Er zijn geen extra eigenschappen op deze knoop maar de kinderen van de gadget knoopcontrole die de Tegels van het Project het dashboard van het Project bevolken wanneer een nieuw Project wordt gecreeerd. [Projectblokken](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (ook wel gadgets of pods genoemd) zijn eenvoudige kaarten die de werkplek van een project vullen. Een volledige lijst met voetbtegels vindt u onder: **/libs/cq/gui/components/projects/admin/pod. **Projecteigenaars kunnen altijd tegels toevoegen/verwijderen nadat een project is gemaakt.
 
 ### Rollen {#roles}
 
@@ -128,7 +125,7 @@ Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebrui
    ```
 
 1. Voor dit projectmalplaatje willen wij gebruik maken van Taken.
-   1. Een nieuwe toevoegen **nt:ongestructureerd** knooppunt onder authoring-project/gadgets aangeroepen **taken**.
+   1. Een nieuwe toevoegen **nt:ongestructureerd** knooppunt onder authoring-project/gadgets **taken**.
    1. Tekenreekseigenschappen toevoegen aan het taakknooppunt voor **cardWeight** = &quot;100&quot;, **jcr:titel**=&quot;Taken&quot;, en **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
    Nu de [Taken](https://experienceleague.adobe.com/docs/#Tasks) wordt standaard weergegeven wanneer een nieuw project wordt gemaakt.
@@ -155,7 +152,7 @@ Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebrui
    1. Tekenreeks-eigenschappen toevoegen **jcr:titel** = &quot;**Fiatteurs**&quot;, **rolecglas** =&quot;**eigenaar**&quot;, **rolid**=&quot;**fiatteurs**&quot;.
       1. De naam van het knooppunt fiatteurs en jcr:title en roleid kunnen elke tekenreekswaarde zijn (zolang roleid uniek is).
       1. **rolecglas** beheerst de toestemmingen die voor die rol worden toegepast die op worden gebaseerd [3 OOTB-rollen](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **eigenaar**, **editor**, en **waarnemer**.
-      1. In het algemeen geldt dat als de aangepaste rol meer een leidinggevende rol is, de roleclas **eigenaar;** als het een specifiekere ontwerprol is, zoals Fotograaf of Designer, **editor** roleclas moet voldoende zijn. Het grote verschil tussen **eigenaar** en **editor** is dat de projecteigenaars de projecteigenschappen kunnen bijwerken en nieuwe gebruikers aan het project kunnen toevoegen.
+      1. In het algemeen geldt dat als de aangepaste rol meer een leidinggevende rol is, de roleclas **eigenaar;** als het een specifiekere ontwerprol is, zoals Fotograaf of Designer, **editor** roleclas moet voldoende zijn. Het grote verschil tussen **eigenaar** en **editor** is dat de projecteigenaars de projecteigenschappen kunnen bijwerken en nieuwe gebruikers aan het project toevoegen.
 
    ```shell
    ../projects/templates/authoring-project
@@ -191,7 +188,7 @@ Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebrui
        + thumbnail.png (nt:file)
    ```
 
-Voltooide vertegenwoordiging van XML van het Malplaatje van het Project:
+Voltooide XML-representatie van het projectsjabloon:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -261,7 +258,7 @@ Nu kunnen wij ons Malplaatje van het Project testen door een nieuw Project te cr
 
 1. Klik op Maken om het maken van het project te voltooien op basis van de aangepaste sjabloon. U zult op het dashboard van het Project opmerken dat de Tegel van Taken en de andere tegels die onder gadgets worden gevormd automatisch verschijnen.
 
-   ![Taaktegel](./assets/develop-aem-projects/tasks-tile.png)
+   ![Tegel](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## Waarom workflow?
@@ -294,7 +291,7 @@ Zodra de eerste taak volledig is zal toegewezen drie opties hebben om het werksc
 
 **Normaal ** - het normale verpletteren leidt tot een taak die aan de groep van de fiatteur van het Project wordt toegewezen om te herzien en goed te keuren. De prioriteit van de taak is Normaal en de vervaldatum is vijf dagen vanaf het tijdstip waarop deze wordt gemaakt.
 
-**Rush** - het snel verpletteren leidt ook tot een taak die aan de groep van de Fiatteur van het Project wordt toegewezen. De prioriteit van de taak is Hoog en de vervaldatum is slechts 1 dag.
+**Rush** - het snel verpletteren leidt ook tot een taak die aan de groep van de Fiatteur van het Project wordt toegewezen. Prioriteit van de taak is Hoog en de vervaldatum is slechts 1 dag.
 
 **Weglaten** - in deze voorbeeldworkflow kan de eerste deelnemer de goedkeuringsgroep omzeilen. (ja dit zou het doel van een &quot;Goedkeuring&quot;werkschema kunnen verslaan maar het staat ons toe om extra verpletterende mogelijkheden te illustreren)
 
@@ -306,32 +303,32 @@ In de laatste stap van de workflow wordt gebruikgemaakt van de processtap Pagina
 
 1. Navigeer in het menu AEM Start naar Extra -> Workflow -> Modellen. Klik op &#39;Maken&#39; in de rechterbovenhoek om een nieuw workflowmodel te maken.
 
-   Geef het nieuwe model een titel: &quot;Workflow voor goedkeuring van inhoud&quot; en een URL-naam: &quot;content-approval-workflow&quot;.
+   Geef het nieuwe model een titel: &quot;Workflow voor inhoudsgoedkeuring&quot; en een URL-naam: &quot;workflow voor inhoudsgoedkeuring&quot;.
 
    ![Het dialoogvenster Workflow maken](./assets/develop-aem-projects/workflow-create-dialog.png)
 
    Voor meer informatie over [hier gelezen workflows maken](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-models.html).
 
-1. Aangepaste workflows kunt u het beste groeperen in een eigen map onder /etc/workflow/modellen. Maak in CRXDE Lite een nieuwe **&#39;nt:folder&#39;** onder /etc/workflow/modellen genoemd **&quot;aem-hulplijnen&quot;**. Door een submap toe te voegen, zorgt u ervoor dat aangepaste workflows niet per ongeluk worden overschreven tijdens upgrades of Service Pack-installaties.
+1. Aangepaste workflows kunt u het beste groeperen in een eigen map onder /etc/workflow/modellen. Maak in CRXDE Lite een nieuwe **&#39;nt:folder&#39;** onder /etc/workflow/modellen genoemd **&quot;amplijnen&quot;**. Door een submap toe te voegen, zorgt u ervoor dat aangepaste workflows niet per ongeluk worden overschreven tijdens upgrades of Service Pack-installaties.
 
    &#42;Houd er rekening mee dat het belangrijk is om de map of aangepaste workflows nooit onder submappen van het pad te plaatsen, zoals /etc/workflow/models/dam of /etc/workflow/models/projects, omdat de volledige submap ook kan worden overschreven door upgrades of servicepacks.
 
-   ![Locatie van workflowmodel in 6.3](./assets/develop-aem-projects/custom-workflow-subfolder.png)
+   ![Locatie van het workflowmodel in 6.3](./assets/develop-aem-projects/custom-workflow-subfolder.png)
 
-   Locatie van workflowmodel in 6.3
+   Locatie van het workflowmodel in 6.3
 
    >[!NOTE]
    >
    >Als AEM 6.4+ wordt gebruikt, is de locatie van de workflow gewijzigd. Zie [hier voor meer informatie .](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
 
-   Als AEM 6.4+ wordt gebruikt, wordt het workflowmodel onder `/conf/global/settings/workflow/models`. Herhaal bovenstaande stappen met de /conf folder en voeg een subfolder genoemd toe `aem-guides` en verplaatst u de `content-approval-workflow` eronder.
+   Als AEM 6.4+ wordt gebruikt, wordt het workflowmodel onder `/conf/global/settings/workflow/models`. Herhaal bovenstaande stappen met de /conf folder en voeg een subfolder genoemd toe `aem-guides` en verplaatst u `content-approval-workflow` eronder.
 
    ![Moderne locatie voor workflowdefinitie](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 Locatie van workflowmodel in 6.4+
 
 1. De introductie in AEM 6.3 is de mogelijkheid werkstroomfasen toe te voegen aan een bepaalde werkstroom. De fasen worden aan de gebruiker weergegeven vanuit het Postvak In op het tabblad Workflowinfo. Het toont de gebruiker het huidige werkgebied in het werkschema evenals de stadia voorafgaand aan en na het.
 
-   Als u de fasen wilt configureren, opent u het dialoogvenster Pagina-eigenschappen vanuit de SideKick. Het vierde tabblad heet &quot;Stages&quot;. Voeg de volgende waarden toe om de drie fasen van deze workflow te configureren:
+   Als u de fasen wilt configureren, opent u het dialoogvenster Pagina-eigenschappen vanuit de Sidekick. Het vierde tabblad heet &quot;Stages&quot;. Voeg de volgende waarden toe om de drie fasen van deze workflow te configureren:
 
    1. Inhoud bewerken
    1. Goedkeuring
@@ -349,11 +346,11 @@ Locatie van workflowmodel in 6.4+
 
 1. Het workflowproces Projecttaak maken is ontworpen om een taak te maken als een stap in de workflow. Pas na het voltooien van de taak gaat de workflow verder. Een krachtig aspect van de stap van de Taak van het Project creëren is dat het werkschema meta-gegevens waarden kan lezen en die gebruiken om de taak dynamisch tot stand te brengen.
 
-   Verwijder eerst de Stap van de Deelnemer die standaard wordt gemaakt. Vouw in het menu Componenten de optie **&quot;Projecten&quot;** subkop en slepen en neerzetten **&quot;Projecttaak maken&quot;** op het model.
+   Verwijder eerst de Stap van de Deelnemer die standaard wordt gemaakt. Van de Sidekick in het componentenmenu breid uit **Projecten** subkop en slepen en neerzetten **&quot;Projecttaak maken&quot;** op het model.
 
    Dubbelklik op de stap Projecttaak maken om het workflowdialoogvenster te openen. Configureer de volgende eigenschappen:
 
-   Dit tabblad wordt gebruikt voor alle stappen in het workflowproces en we stellen de Titel en Beschrijving in (deze zijn niet zichtbaar voor de eindgebruiker). Het belangrijke bezit dat wij zullen plaatsen is het Werkschemastadium aan **&quot;Inhoud bewerken&quot;** in de keuzelijst.
+   Dit tabblad wordt veel gebruikt voor alle stappen in het workflowproces en we stellen de Titel en Beschrijving in (deze zijn niet zichtbaar voor de eindgebruiker). Het belangrijke bezit dat wij zullen plaatsen is het Werkschemastadium aan **Inhoud bewerken** in de keuzelijst.
 
    ```shell
    Common Tab
@@ -363,7 +360,7 @@ Locatie van workflowmodel in 6.4+
        Workflow Stage = "Edit Content"
    ```
 
-   Het workflowproces Projecttaak maken is ontworpen om een taak te maken als een stap in de workflow. Met het tabblad Taak kunnen we alle waarden van de taak instellen. In ons geval willen we dat de ontvanger dynamisch is, dus laten we hem leeg. De rest van de eigenschapswaarden:
+   Het workflowproces Projecttaak maken is ontworpen om een taak te maken als een stap in de workflow. Met het tabblad Taak kunnen we alle waarden van de taak instellen. In ons geval willen we dat de ontvanger dynamisch is, dus laten we hem leeg. De overige eigenschapswaarden:
 
    ```shell
    Task Tab
@@ -393,7 +390,7 @@ Locatie van workflowmodel in 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. In de vorige stap hebben we verwezen naar een Pre-Create Taakscript. Wij zullen nu dat manuscript tot stand brengen waarin wij de Ontvanger van de Taak zullen plaatsen die op de waarde van een werkschemagegeven wordt gebaseerd &quot;**gevolmachtigde**&quot;. De **&quot;ontvanger&quot;** waarde wordt ingesteld wanneer de workflow wordt uitgeschakeld. We zullen ook de metagegevens van de workflow lezen om de prioriteit van de taak dynamisch te kiezen door het lezen van de &quot;**taskPriority&quot;** De waarde van de metagegevens van de workflow en de **&quot;taskdueDate&quot; **om dynamisch in te stellen wanneer de eerste taak moet worden uitgevoerd.
+1. In de vorige stap hebben we verwezen naar een Pre-Create Taakscript. Wij zullen nu dat manuscript tot stand brengen waarin wij de Ontvanger van de Taak zullen plaatsen die op de waarde van een werkschemagegeven wordt gebaseerd &quot;**cessionaris**&quot;. De **&quot;ontvanger&quot;** waarde wordt ingesteld wanneer de workflow wordt uitgeschakeld. We zullen ook de metagegevens van de workflow lezen om de prioriteit van de taak dynamisch te kiezen door het lezen van de opdracht &quot;**taskPriority&quot;** De waarde van de metagegevens van de workflow en de **&quot;taskdueDate&quot; **om dynamisch in te stellen wanneer de eerste taak moet worden uitgevoerd.
 
    Voor organisatorische doeleinden hebben we onder onze toepassingsmap een map gemaakt voor al onze projectgerelateerde scripts: **/apps/adobe-guides/projects-tasks/projects/scripts**. Een nieuw bestand maken onder de naam van deze map **&quot;start-task-config.ecma&quot;**. &#42;De nota zorgt ervoor de weg aan uw begin-taak-config.ecma- dossier de weg aanpast die op het Geavanceerde Lusje van Montages in Stap 4 wordt geplaatst.
 
@@ -418,7 +415,7 @@ Locatie van workflowmodel in 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Ga terug naar de workflow voor goedkeuring van inhoud. Slepen en neerzetten **OF Splitsen** component (gevonden in de Sidetrap onder de categorie &#39;Workflow&#39; onder de categorie **Taak starten** Stap. Selecteer in het dialoogvenster Algemeen het keuzerondje voor 3 vertakkingen. De OR Split leest de metagegevenswaarde van de workflow **&quot;lastTaskAction&quot;** om de route van het werkschema te bepalen. De **&quot;lastTaskAction&quot;** het bezit wordt geplaatst aan één van de waarden van het Verpletterende Lusje dat in Stap 4 wordt gevormd. Vul voor elk tabblad Vertakking de opties **Script** tekstgebied met de volgende waarden:
+1. Navigeer terug naar de workflow voor goedkeuring van inhoud. Sleep de **OF Splitsen** component (gevonden in de Sidekick onder de categorie &#39;Werkstroom&#39;) onder de categorie **Taak starten** Stap. Selecteer in het dialoogvenster Algemeen het keuzerondje voor 3 vertakkingen. De OR Split leest de metagegevenswaarde van de workflow **&quot;lastTaskAction&quot;** om de route van het werkschema te bepalen. De **&quot;lastTaskAction&quot;** het bezit wordt geplaatst aan één van de waarden van het Verpletterende Lusje dat in Stap 4 wordt gevormd. Vul voor elk tabblad Vertakking de opties in **Script** tekstgebied met de volgende waarden:
 
    ```
    function check() {
@@ -535,13 +532,13 @@ task.setCurrentAssignee(projectApproverGrp);
        Description = "Placeholder step to indicate that the original editor decided to bypass the approver group."
    ```
 
-   ![workflowmodel OR split](./assets/develop-aem-projects/workflow-stage-after-orsplit.png)
+   ![workflowmodel OF gesplitst](./assets/develop-aem-projects/workflow-stage-after-orsplit.png)
 
    Het model van het Werkschema zou als dit moeten kijken nadat alle drie takken in OF verdeeld zijn gevormd.
 
 1. Aangezien de groep fiatteurs de optie heeft de werkstroom voor verdere revisies terug te sturen naar de oorspronkelijke editor, vertrouwen we op de **Ga naar** stap om de laatste uitgevoerde actie te lezen en de werkstroom aan het begin te leiden of het te laten verdergaan.
 
-   Sleep en zet de component Goto Step (gevonden in de Sidetrap onder Workflow) onder OF splitst op de plaats waar deze opnieuw wordt samengevoegd. Dubbelklik op de volgende eigenschappen en configureer deze in het dialoogvenster:
+   Sleep en zet de component Goto Step (gevonden in de Sidekick onder Workflow) onder OF spleet waar deze opnieuw wordt samengevoegd. Dubbelklik op de volgende eigenschappen en configureer deze in het dialoogvenster:
 
    ```
    Common Tab
@@ -554,7 +551,7 @@ task.setCurrentAssignee(projectApproverGrp);
        The step to go to. = "Start Task Creation"
    ```
 
-   Het laatste stuk dat wij zullen vormen is het Manuscript als deel van de stap van het proces van Goto. De scriptwaarde kan worden ingesloten via het dialoogvenster of worden geconfigureerd om te wijzen naar een extern bestand. Het Goto-script moet een **function check()** en retourneert true als de workflow naar de opgegeven stap moet gaan. Als er false worden geretourneerd, gaat de workflow verder.
+   Het laatste stuk dat wij zullen vormen is het Manuscript als deel van Goto processtap. De scriptwaarde kan worden ingesloten via het dialoogvenster of worden geconfigureerd om te wijzen naar een extern bestand. Het Goto-script moet een **function check()** en retourneert true als de workflow naar de opgegeven stap moet gaan. Als er false worden geretourneerd, gaat de workflow verder.
 
    Als de groep met fiatteurs de optie **&quot;Terug voor revisie verzenden&quot;** actie (gevormd in Stap 7 en 8) dan willen wij het werkschema aan terug **&quot;Taak maken starten&quot;** stap.
 
@@ -574,7 +571,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Voor het publiceren van de lading gebruiken wij de knoop **Pagina/element activeren** Processtap. Deze processtap vereist weinig configuratie en zal de nuttige lading van het werkschema aan de replicatierij voor activering toevoegen. Wij zullen de stap onder de stap van de Goto toevoegen en op deze manier kan het slechts worden bereikt als de groep Approver de inhoud voor publicatie heeft goedgekeurd of de originele redacteur de route van de Goedkeuring van de Bypass koos.
 
-   Slepen en neerzetten **Pagina/element activeren** Processtap (gevonden in de Sidetrap onder WCM Workflow) onder Goto Step in het model.
+   Sleep de **Pagina/element activeren** De stap van het proces (die in de Sidekick onder Werkschema WCM wordt gevonden) onder Goto Stap in het model.
 
    ![workflowmodel voltooid](assets/develop-aem-projects/workflow-model-final.png)
 
@@ -625,7 +622,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 ## De wizard &quot;Startworkflow&quot; maken {#start-workflow-wizard}
 
-Wanneer u een workflow uit een project verwijdert, moet u een wizard opgeven om de workflow te starten. De standaardwizard: `/libs/cq/core/content/projects/workflowwizards/default_workflow` Hiermee kan de gebruiker een workflowtitel, een startopmerking en een payload-pad voor de workflow invoeren. Er zijn ook verschillende andere voorbeelden te vinden onder: `/libs/cq/core/content/projects/workflowwizards`.
+Wanneer u een workflow uit een project verwijdert, moet u een wizard opgeven om de workflow te starten. De standaardwizard: `/libs/cq/core/content/projects/workflowwizards/default_workflow` Hiermee kan de gebruiker een workflowtitel, een startopmerking en een payload-pad voor de workflow invoeren. Er zijn ook verschillende andere voorbeelden: `/libs/cq/core/content/projects/workflowwizards`.
 
 Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële informatie kunt verzamelen voordat de workflow start. De gegevens worden opgeslagen als onderdeel van de metagegevens van de werkstroom en werkstroomprocessen kunnen dit lezen en het gedrag dynamisch wijzigen op basis van de ingevoerde waarden. We maken een aangepaste wizard die de eerste taak dynamisch op basis van een beginwaarde van de wizard toewijst.
 
@@ -659,7 +656,7 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
 
    Beneath `/content-approval-start/jcr:content/items/column2/items` een nieuw knooppunt van het type maken `nt:unstructured` benoemd **prioriteit**. We gebruiken de [Graniet UI-component selecteren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) om het formulierveld te vullen.
 
-   Onder de **prioriteit** knooppunt waaraan we een **items** knooppunt van **nt:ongestructureerd**. Onder de **items** Voeg nog drie knooppunten toe om de selectieopties voor Hoog, Normaal en Laag te vullen. Elk knooppunt is van het type **nt:ongestructureerd** en moet **text** en **value** eigenschap. Zowel de tekst als de waarde moeten dezelfde waarde hebben:
+   Onder de **prioriteit** knooppunt waaraan we een **items** knooppunt van **nt:ongestructureerd**. Onder de **items** Voeg nog drie knooppunten toe om de selectieopties voor Hoog, Normaal en Laag te vullen. Elk knooppunt is van het type **nt:ongestructureerd** en moet een **text** en **value** eigenschap. Zowel de tekst als de waarde moeten dezelfde waarde hebben:
 
    1. Hoog
    1. Normaal
@@ -750,7 +747,7 @@ De configuratie van het Werkschema is een gebied van een Malplaatje van het Proj
    />
    ```
 
-1. Zodra het werkschema van de Goedkeuring van de Inhoud aan het Malplaatje van het Project is toegevoegd zou het beschikbaar moeten zijn om uit de Tegel van het Werkschema van het project te schoppen. Ga door en start en speel rond met de verschillende routines die we hebben gecreëerd.
+1. Zodra het werkschema van de Goedkeuring van de Inhoud aan het Malplaatje van het Project is toegevoegd zou het beschikbaar moeten zijn om van de Tegel van het Werkschema van het project af te schoppen. Ga door en start en speel rond met de verschillende routines die we hebben gecreëerd.
 
 ## Ondersteunende materialen
 

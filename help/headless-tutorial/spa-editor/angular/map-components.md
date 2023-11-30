@@ -2,18 +2,15 @@
 title: SPA componenten toewijzen aan AEM componenten | Aan de slag met de AEM SPA Editor en Angular
 description: Leer hoe u Angulars aan Adobe Experience Manager-componenten (AEM) toewijst met de AEM SPA Editor JS SDK. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen.
 feature: SPA Editor
-topics: development
-doc-type: tutorial
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5311
+jira: KT-5311
 thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 0%
@@ -28,7 +25,7 @@ In dit hoofdstuk wordt dieper ingegaan op de AEM JSON-model-API en wordt uitgele
 
 ## Doelstelling
 
-1. Leer hoe u AEM componenten kunt toewijzen aan SPA Componenten.
+1. Leer hoe u AEM componenten kunt toewijzen aan SPA.
 2. Begrijp het verschil tussen **Container** componenten en **Inhoud** componenten.
 3. Maak een nieuwe Angular die aan een bestaande AEM wordt toegewezen.
 
@@ -58,7 +55,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Als u [AEM 6,x](overview.md#compatibility) toevoegen `classic` profiel:
+   Als u [AEM 6,x](overview.md#compatibility) voeg toe `classic` profiel:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -76,14 +73,14 @@ Het basisconcept is om een SPA Component aan een AEM Component in kaart te breng
 
 ## De tekstcomponent Inspect
 
-De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt `Text` component die is toegewezen aan de AEM [Tekstcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Dit is een voorbeeld van een **content** component, in die zin dat deze wordt gerenderd *content* van AEM.
+De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt `Text` component die is toegewezen aan de AEM [Tekstcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Dit is een voorbeeld van **content** component, in die zin dat deze wordt gerenderd *content* van AEM.
 
 Laten we eens kijken hoe de component werkt.
 
 ### Inspect het JSON-model
 
 1. Voordat u in de SPA code springt, is het belangrijk dat u het JSON-model begrijpt dat AEM biedt. Ga naar de [Core Component Library](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) en bekijk de pagina voor de component Text. De Core Component Library bevat voorbeelden van alle AEM Core Components.
-2. Selecteer **JSON** tabblad voor een van de voorbeelden:
+2. Selecteer de **JSON** tabblad voor een van de voorbeelden:
 
    ![JSON-model tekst](./assets/map-components/text-json.png)
 
@@ -95,7 +92,7 @@ Laten we eens kijken hoe de component werkt.
 
 ### De component Text Inspect
 
-1. Open een nieuwe terminal en navigeer naar de `ui.frontend` in het project. Uitvoeren `npm install` en vervolgens `npm start` om de **webpack-ontwikkelserver**:
+1. Een nieuwe terminal openen en naar de `ui.frontend` in het project. Uitvoeren `npm install` en vervolgens `npm start` om de **webpack-ontwikkelserver**:
 
    ```shell
    $ cd ui.frontend
@@ -108,7 +105,7 @@ Laten we eens kijken hoe de component werkt.
 
    ![Webpack-ontwikkelserver met mock-inhoud](assets/map-components/initial-start.png)
 
-3. In winde van uw keus open omhoog het AEM Project voor de SPA WKND. Breid uit `ui.frontend` en het bestand openen **text.component.ts** krachtens `ui.frontend/src/app/components/text/text.component.ts`:
+3. In winde van uw keus open omhoog het AEM Project voor de SPA WKND. Breid uit `ui.frontend` en opent u het bestand **text.component.ts** krachtens `ui.frontend/src/app/components/text/text.component.ts`:
 
    ![Broncode van Angular Text.js](assets/map-components/vscode-ide-text-js.png)
 
@@ -135,7 +132,7 @@ Laten we eens kijken hoe de component werkt.
 
    `@HostBinding('innerHtml') get content()` is een methode die de geschreven tekstinhoud weergeeft van de waarde van `this.text`. Als de inhoud bestaat uit tekst met opmaak (bepaald door de `this.richText` markering) de ingebouwde veiligheid van de Angular wordt overgeslagen. Angular [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer) wordt gebruikt om de onbewerkte HTML te &#39;scrubben&#39; en kwetsbaarheden met scripts die verwijzen naar andere sites te voorkomen. De methode is gebonden aan de `innerHtml` eigenschap met de [@HostBinding](https://angular.io/api/core/HostBinding) decorator.
 
-5. Ga als volgt te werk `TextEditConfig` op ~regel 24:
+5. Controleer de `TextEditConfig` op ~regel 24:
 
    ```js
    const TextEditConfig = {
@@ -153,7 +150,7 @@ Laten we eens kijken hoe de component werkt.
    MapTo('wknd-spa-angular/components/text')(TextComponent, TextEditConfig );
    ```
 
-   **MapTo** wordt geleverd door de AEM SPA Editor JS SDK (`@adobe/cq-angular-editable-components`). Het pad `wknd-spa-angular/components/text` vertegenwoordigt `sling:resourceType` van de AEM component. Dit pad komt overeen met het `:type` door het JSON-model dat eerder werd waargenomen. **MapTo** parseert de JSON-modelreactie en geeft de juiste waarden door aan de `@Input()` variabelen van de SPA component.
+   **MapTo** wordt geleverd door de AEM SPA Editor JS SDK (`@adobe/cq-angular-editable-components`). Het pad `wknd-spa-angular/components/text` vertegenwoordigt de `sling:resourceType` van de AEM component. Dit pad komt overeen met het `:type` door het JSON-model dat eerder werd waargenomen. **MapTo** parseert de JSON-modelreactie en geeft de juiste waarden door aan de `@Input()` variabelen van de SPA component.
 
    U kunt de AEM vinden `Text` componentdefinitie bij `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/text`.
 
@@ -297,7 +294,7 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
 
    `ImageEditConfig` is de configuratie om te bepalen of om auteursplaceholder in AEM terug te geven, gebaseerd op als `src` eigenschap is gevuld.
 
-   `@Input()` van `src`, `alt`, en `title` zijn de eigenschappen die zijn toegewezen via de JSON API.
+   `@Input()` van `src`, `alt`, en `title` Dit zijn de eigenschappen die zijn toegewezen via de JSON API.
 
    `hasImage()` is een methode die bepaalt of de afbeelding moet worden gerenderd.
 
@@ -351,7 +348,7 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
 
    >[!NOTE]
    >
-   > **Bonusuitdaging**: Voer een nieuwe methode uit om de waarde van te tonen `title` als een bijschrift onder de afbeelding.
+   > **Bonusuitdaging**: Voer een nieuwe methode uit om de waarde van `title` als een bijschrift onder de afbeelding.
 
 ## Beleid bijwerken in AEM
 
@@ -370,7 +367,7 @@ De `ImageComponent` component is alleen zichtbaar in het dialoogvenster **webpac
 
    ![SPA paginasjabloon bewerken](assets/map-components/edit-spa-page-template.png)
 
-3. Selecteer **Layout Container** en klik op **beleid** pictogram om het beleid te bewerken:
+3. Selecteer de **Layout Container** en klik op **beleid** pictogram om het beleid te bewerken:
 
    ![Layoutcontainerbeleid](./assets/map-components/layout-container-policy.png)
 
@@ -394,7 +391,7 @@ De `ImageComponent` component is alleen zichtbaar in het dialoogvenster **webpac
 
    ![RTE-opmaak inschakelen](assets/map-components/enable-formatting-rte.png)
 
-   Onder **Plug-ins** > **Alineastijlen** > schakel het selectievakje in op **Alineastijlen inschakelen**:
+   Onder **Plug-ins** > **Alineastijlen** > selectievakje in **Alineastijlen inschakelen**:
 
    ![Alineastijlen inschakelen](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
@@ -402,11 +399,11 @@ De `ImageComponent` component is alleen zichtbaar in het dialoogvenster **webpac
 
 6. Ga naar de **Homepage** [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
 
-   U moet ook de opdracht `Text` en voeg extra alineastijlen toe in **volledig scherm** in.
+   U moet ook de opdracht `Text` en voeg extra alineastijlen toe in **volledig scherm** -modus.
 
    ![Tekst bewerken op volledig scherm](assets/map-components/full-screen-rte.png)
 
-7. U moet ook een afbeelding kunnen slepen en neerzetten vanuit de **Asset Finder**:
+7. U moet ook een afbeelding uit de **Asset Finder**:
 
    ![Afbeelding slepen en neerzetten](./assets/map-components/drag-drop-image.gif)
 
@@ -416,9 +413,9 @@ De `ImageComponent` component is alleen zichtbaar in het dialoogvenster **webpac
 
 ## Inspect the Layout Container
 
-Steun voor de **Layout Container** wordt automatisch verstrekt door de AEM SPA Editor SDK. De **Layout Container**, zoals aangegeven door de naam, **container** component. Containercomponenten zijn componenten die JSON-structuren accepteren die *overige* componenten te maken en ze dynamisch te instantiëren.
+Steun voor de **Layout Container** wordt automatisch verstrekt door de AEM SPA Editor SDK. De **Layout Container**, zoals aangegeven door de naam, een **container** component. Containercomponenten zijn componenten die JSON-structuren accepteren die *overige* componenten te maken en ze dynamisch te instantiëren.
 
-Laten we de container voor lay-out verder inspecteren.
+Controleer de container voor lay-out verder.
 
 1. In de winde open **responsive-grid.component.ts** om `ui.frontend/src/app/components/responsive-grid`:
 
@@ -452,7 +449,7 @@ Laten we de container voor lay-out verder inspecteren.
 
    Dit bestand bepaalt de onderbrekingspunten (`default`, `tablet`, en `phone`) gebruikt door de **Layout Container**. Dit dossier is bedoeld om per projectspecificaties worden aangepast. Momenteel zijn de onderbrekingspunten ingesteld op `1200px` en `650px`.
 
-6. U zou de ontvankelijke mogelijkheden en het bijgewerkte rijke tekstbeleid van moeten kunnen gebruiken `Text` aan auteur een mening als het volgende:
+6. U moet de responsieve mogelijkheden en het bijgewerkte rijke tekstbeleid van het `Text` aan auteur een mening als het volgende:
 
    ![Definitieve ontwerpversie van hoofdstukvoorbeeld](assets/map-components/final-page.png)
 
@@ -470,7 +467,7 @@ U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/a
 
 In veel gevallen, vooral aan het begin van een AEM project is het waardevol om configuraties, zoals malplaatjes en verwant inhoudsbeleid, aan broncontrole voort te zetten. Dit zorgt ervoor dat alle ontwikkelaars tegen de zelfde reeks inhoud en configuraties werken en extra consistentie tussen milieu&#39;s kunnen verzekeren. Wanneer een project een bepaald ontwikkelingsniveau heeft bereikt, kan het beheren van sjablonen worden overgedragen aan een speciale groep van energiegebruikers.
 
-De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar kon doen gebruikend om het even welk hulpmiddel en om het even welke winde die u hebt gevormd om **trekken** of **import** inhoud van een lokale instantie van AEM.
+De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar kon doen gebruikend om het even welk hulpmiddel en om het even welke winde die u hebt gevormd om **trekken** of **import** inhoud van een lokale AEM.
 
 1. In winde van de Code van Visual Studio, zorg ervoor dat u hebt **VSCode AEM Sync** geïnstalleerd via de Marketplace-extensie:
 
@@ -499,4 +496,4 @@ De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Vi
 
    De `filter.xml` is verantwoordelijk voor het identificeren van de paden van knooppunten die samen met het pakket zijn geïnstalleerd. Let op: `mode="merge"` op elk van de filters wordt aangegeven dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing doet **niet** overschrijven, inhoud. Zie de [FileVault-documentatie](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over het werken met filterelementen.
 
-   Vergelijken `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om de verschillende knopen te begrijpen die door elke module worden beheerd.
+   Ververgelijken `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om de verschillende knopen te begrijpen die door elke module worden beheerd.

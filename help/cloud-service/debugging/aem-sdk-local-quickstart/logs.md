@@ -7,12 +7,12 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5252
+jira: KT-5252
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 91aa4a10-47fe-4313-acd2-ca753e5484d9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Toegang tot de logboeken van de AEM SDK, of de lokale QuickStart Jar of Dispatch
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
 
-De logboeken handelen als frontline voor het zuiveren AEM toepassingen, maar zijn afhankelijk van het adequate registreren in de opgestelde AEM toepassing. Adobe adviseert het houden van lokale ontwikkeling en AEM as a Cloud Service Dev registrerenconfiguraties als gelijkaardig mogelijk, aangezien het logboekzicht op de lokale QuickStart van AEM SDK en AEM de milieu&#39;s van de Ontwikkelaar van as a Cloud Service normaliseert, die configuratietweeling en herplaatsing verminderen.
+De logboeken handelen als frontline voor het zuiveren AEM toepassingen, maar zijn afhankelijk van het adequate registreren in de opgestelde AEM toepassing. De Adobe adviseert het houden van lokale ontwikkeling en AEM as a Cloud Service Dev registrerende configuraties als gelijkaardig mogelijk, aangezien het logboekzicht op de lokale QuickStart van AEM SDK en AEM de milieu&#39;s van de Ontwikkelaar van de SDK normaliseert, die configuratietweeling en herplaatsing verminderen.
 
 De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) vormt registreren op het niveau van DEBUG voor de pakketten van Java van uw AEM toepassing voor lokale ontwikkeling via de Sling Logger OSGi configuratie die bij wordt gevonden
 

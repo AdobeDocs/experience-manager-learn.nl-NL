@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 recommendations: noDisplay, noCatalog
-kt: 11603
+jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: ef2290d9-ba40-429b-b10d-e82d6c1c20f6
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM UI-extensies zijn gespecialiseerde App Builder-apps, gebaseerd op React en gebruiken de extensies [Spectrum reageren](https://react-spectrum.adobe.com/react-spectrum/) UI-framework.
 
-Om te bepalen waar en hoe de AEM UI-extensie verschijnt, zijn twee configuraties vereist in de app Builder van de extensie App Builder: app routing en de extensieregistratie.
+Om te bepalen waar en hoe de AEM UI uitbreiding verschijnt, worden twee configuraties vereist in App Builder app van de uitbreiding: app het verpletteren en de uitbreidingsregistratie.
 
 ## Toepassingsroutes{#app-routes}
 
@@ -73,7 +73,7 @@ De meest gebruikte controles voor het laden van een extensie zijn:
 + De AEM host (`new URLSearchParams(window.location.search).get('repo')`) om te bepalen of de extensie moet worden geladen.
    + Alleen de extensie weergeven in AEM omgevingen die deel uitmaken van een specifiek programma (zoals in het onderstaande voorbeeld wordt getoond).
    + Alleen de extensie weergeven in een specifieke AEM (AEM host).
-+ Een [Adobe I/O Runtime-actie](./runtime-action.md) om een HTTP- vraag aan AEM te maken om te bepalen of de huidige gebruiker de uitbreiding zou moeten zien.
++ Een [Adobe I/O Runtime-actie](./runtime-action.md) om een vraag van HTTP aan AEM te maken om te bepalen of de huidige gebruiker de uitbreiding zou moeten zien.
 
 In het onderstaande voorbeeld ziet u hoe u de extensie beperkt tot alle omgevingen in het programma `p12345`.
 

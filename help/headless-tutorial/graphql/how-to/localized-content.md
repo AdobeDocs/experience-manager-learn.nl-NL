@@ -6,10 +6,10 @@ feature: GraphQL API
 topic: Headless
 role: Developer
 level: Intermediate
-kt: 10254
+jira: KT-10254
 thumbnail: KT-10254.jpeg
 exl-id: 5e3d115b-f3a1-4edc-86ab-3e0713a36d54
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Gelokaliseerde inhoud met AEM zonder kop
 
-AEM biedt een [Omzettingsintegratiekader](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) voor inhoud zonder kop, zodat Content Fragments en ondersteunende elementen eenvoudig kunnen worden vertaald voor gebruik in verschillende landinstellingen. Dit is hetzelfde framework dat wordt gebruikt om andere AEM inhoud te vertalen, zoals Pagina&#39;s, Experience Fragments, Assets en Forms. Eenmaal [inhoud zonder kop is omgezet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html), en gepubliceerd, is klaar voor consumptie door headless toepassingen.
+AEM biedt [Omzettingsintegratieframework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) voor inhoud zonder kop, zodat Content Fragments en ondersteunende elementen eenvoudig kunnen worden vertaald voor gebruik in verschillende landinstellingen. Dit is hetzelfde framework dat wordt gebruikt om andere AEM inhoud te vertalen, zoals Pagina&#39;s, Experience Fragments, Assets en Forms. Eenmaal [inhoud zonder kop is omgezet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html), en gepubliceerd, is klaar voor consumptie door headless toepassingen.
 
 ## Structuur van middelenmap{#assets-folder-structure}
 
@@ -30,7 +30,7 @@ De mappen met landinstellingen moeten op hetzelfde niveau staan en de mapnaam mo
 
 De landinstellingscode is ook de waarde die wordt gebruikt om de inhoudsfragmenten te filteren die door de GraphQL-query worden geretourneerd.
 
-| Landinstellingscode | AEM pad | Landinstelling inhoud |
+| Landinstellingscode | AEM pad | Landinstelling van inhoud |
 |--------------------------------|----------|----------|
 | de | /content/dam/.../**de**/... | Duitse inhoud |
 | en | /content/dam/.../**en**/... | Engelse inhoud |
@@ -38,7 +38,7 @@ De landinstellingscode is ook de waarde die wordt gebruikt om de inhoudsfragment
 
 ## GraphQL-query voortgezet
 
-AEM biedt een `_locale` GraphQL-filter dat inhoud automatisch filtert op landinstellingscode. U kunt bijvoorbeeld alle Engelse avonturen opvragen in het dialoogvenster [WKND-siteproject](https://github.com/adobe/aem-guides-wknd) kan met een nieuwe voortgezette vraag worden gedaan `wknd-shared/adventures-by-locale` gedefinieerd als:
+AEM biedt `_locale` GraphQL-filter dat inhoud automatisch filtert op landinstellingscode. U kunt bijvoorbeeld alle Engelse avonturen opvragen in het dialoogvenster [WKND-siteproject](https://github.com/adobe/aem-guides-wknd) kan met een nieuwe voortgezette vraag worden gedaan `wknd-shared/adventures-by-locale` gedefinieerd als:
 
 ```graphql
 query($locale: String!) {
@@ -55,7 +55,7 @@ De `$locale` in de `_locale` filter vereist de landinstellingscode (bijvoorbeeld
 
 ## Voorbeeld Reageren
 
-Laten we een eenvoudige React-toepassing maken die bepaalt welke Adventure-inhoud van AEM wordt gevraagd op basis van een locale-kiezer met behulp van de `_locale` filter.
+Laten we een eenvoudige React-toepassing maken die bepaalt welke Adventure-inhoud van AEM wordt gevraagd op basis van een locale-kiezer die de `_locale` filter.
 
 Wanneer __Engels__ is geselecteerd in de locatieselector, dan Engelse Adventure Content Fragments onder `/content/dam/wknd/en` worden geretourneerd, wanneer __Spaans__ is geselecteerd, dan Spaanse inhoudsfragmenten onder `/content/dam/wknd/es`enzovoort.
 
@@ -80,9 +80,9 @@ const LocaleContext = React.createContext({
 export default LocaleContext;
 ```
 
-### Een `LocaleSwitcher` Reageren, component{#locale-switcher}
+### Een `LocaleSwitcher` Reageercomponent{#locale-switcher}
 
-Vervolgens maakt u een component Reactie via een locale-switch die de instelling [LocaleContext&#39;s](#locale-context) aan de selectie van de gebruiker.
+Vervolgens maakt u een component Reactie via een locale-switch die de instelling [LocaleContext](#locale-context) aan de selectie van de gebruiker.
 
 Deze landinstellingswaarde wordt gebruikt om de GraphQL-query&#39;s aan te sturen, zodat deze alleen inhoud retourneren die overeenkomt met de geselecteerde landinstelling.
 
@@ -140,7 +140,7 @@ export default function Adventures() {
 
 ### Definieer de `App.js`{#app-js}
 
-Als laatste koppelt u dit alles door de React-toepassing in te pakken met de `LanguageContext.Provider` en de landinstellingswaarde instellen. Dit staat de andere componenten van het Reageren toe, [LocaleSwitcher](#locale-switcher), en [avonturen](#adventures) om de status van de landinstellingsselectie te delen.
+Als laatste koppelt u dit alles door de React-toepassing in te pakken met de `LanguageContext.Provider` en de landinstellingswaarde instellen. Dit staat de andere componenten van het Reageren toe, [LocaleSwitcher](#locale-switcher), en [avonturen](#adventures) om de status van de landselectie te delen.
 
 ```javascript
 // src/App.js

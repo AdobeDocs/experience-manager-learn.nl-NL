@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6266
+jira: KT-6266
 thumbnail: KT-6266.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Lokale ontwikkelomgeving instellen
 
-De projecten van de Asset compute van Adobe kunnen niet met lokale AEM runtime worden geïntegreerd die door AEM SDK wordt verstrekt en worden ontwikkeld gebruikend hun eigen hulpmiddelketting, los van die die door AEM toepassingen wordt vereist die op het AEM Maven projectarchetype worden gebaseerd.
+De projecten van de Asset compute van de Adobe kunnen niet met lokale AEM runtime worden geïntegreerd die door AEM SDK wordt verstrekt en worden ontwikkeld gebruikend hun eigen hulpmiddelketting, los van die die die door AEM toepassingen wordt vereist die op het AEM Maven projectarchetype worden gebaseerd.
 
 Als u de Asset compute-microservices wilt uitbreiden, moeten de volgende gereedschappen zijn geïnstalleerd op de lokale ontwikkelaarscomputer.
 
@@ -50,13 +50,13 @@ Lees de onderstaande secties voor meer informatie over de instructies voor een v
 
 ## Visual Studio-code installeren{#vscode}
 
-[Microsoft Visual Studio-code](https://code.visualstudio.com/download) wordt gebruikt voor het ontwikkelen van en het zuiveren van de arbeiders van de Asset compute. Terwijl andere [JavaScript-compatibele IDE](../../local-development-environment/development-tools.md#set-up-the-development-ide) kan worden gebruikt om de arbeider te ontwikkelen, slechts kan de Code van Visual Studio aan worden geïntegreerd [foutopsporing](../test-debug/debug.md) asset compute worker.
+[Microsoft Visual Studio-code](https://code.visualstudio.com/download) wordt gebruikt voor het ontwikkelen van en het zuiveren van de arbeiders van de Asset compute. Terwijl andere [JavaScript-compatibele IDE](../../local-development-environment/development-tools.md#set-up-the-development-ide) kan worden gebruikt om de arbeider te ontwikkelen, slechts kan de Code van Visual Studio aan worden geïntegreerd [foutopsporing](../test-debug/debug.md) Asset compute worker.
 
 Dit leerprogramma veronderstelt het gebruik van de Code van Visual Studio aangezien het de beste ontwikkelaarervaring voor het uitbreiden van Asset compute verstrekt.
 
 ## Docker-bureaublad installeren{#docker}
 
-Download en installeer de nieuwste, stabiele [Docker-bureaublad](https://www.docker.com/products/docker-desktop), aangezien dit vereist is [test](../test-debug/test.md) en [foutopsporing](../test-debug/debug.md) asset compute projecten lokaal.
+Download en installeer de nieuwste, stabiele [Docker Desktop](https://www.docker.com/products/docker-desktop), aangezien dit vereist is [test](../test-debug/test.md) en [foutopsporing](../test-debug/debug.md) Asset compute projecten lokaal.
 
 Nadat u Docker Desktop hebt geïnstalleerd, start u deze en installeert u de volgende Docker-afbeeldingen vanaf de opdrachtregel:
 
@@ -69,7 +69,7 @@ Ontwikkelaars op Windows-computers moeten ervoor zorgen dat ze Linux-containers 
 
 ## Node.js (en npm) installeren{#node-js}
 
-asset compute werknemers zijn [Node.js](https://nodejs.org/)-based, en dus vereist Node.js 10+ (en npm) om te ontwikkelen en te bouwen.
+Asset compute werknemers zijn [Node.js](https://nodejs.org/)-based, en dus vereist Node.js 10+ (en npm) om te ontwikkelen en te bouwen.
 
 + [Node.js (en npm) installeren](../../local-development-environment/development-tools.md#node-js) op dezelfde wijze als voor de traditionele AEM.
 

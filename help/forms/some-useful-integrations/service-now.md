@@ -3,13 +3,13 @@ title: Integreren met [!DNL ServiceNow]
 description: Maak en geef alle incidenten weer met behulp van het formuliergegevensmodel.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 9957
+jira: KT-9957
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
 last-substantial-update: 2022-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -46,11 +46,11 @@ De voorbeeldelementen die bij dit artikel worden geleverd, zijn onder andere:
 ## Toegangsreferenties van ServiceNow-instantie
 
 * Klik op uw gebruikersprofiel
-   ![klikken op gebruikersprofiel](assets/snow-1.png)
+  ![klikken op gebruikersprofiel](assets/snow-1.png)
 
 * Klik op Instantiewachtwoord beheren
 * De details van de instantie worden hieronder weergegeven
-   ![instantiedetails](assets/snow-3.png)
+  ![instantiedetails](assets/snow-3.png)
 
 ## Integratie testen
 

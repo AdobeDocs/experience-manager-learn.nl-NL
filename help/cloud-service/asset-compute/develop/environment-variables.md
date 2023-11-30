@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6270
+jira: KT-6270
 thumbnail: KT-6270.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
@@ -24,20 +24,20 @@ ht-degree: 0%
 
 ![puntenv-bestand](assets/environment-variables/dot-env-file.png)
 
-Voordat u begint met de ontwikkeling van workers in de Asset compute, moet u ervoor zorgen dat het project is geconfigureerd met informatie over Adobe I/O- en cloudopslag. Deze informatie wordt opgeslagen in de `.env`  wordt alleen gebruikt voor lokale ontwikkeling en niet in Git. De `.env` bestand biedt een handige manier om sleutel-/waardeparen toegankelijk te maken voor de lokale ontwikkelomgeving van de lokale Asset compute. Wanneer [implementeren](../deploy/runtime.md) asset compute werknemers naar Adobe I/O Runtime, de `.env` Het bestand wordt niet gebruikt, maar er wordt een subset van waarden doorgegeven via omgevingsvariabelen. Andere aangepaste parameters en geheimen kunnen worden opgeslagen in het dialoogvenster `.env` en andere bestanden, zoals ontwikkelingsgegevens voor webservices van derden.
+Voordat u begint met de ontwikkeling van workers in de Asset compute, moet u ervoor zorgen dat het project is geconfigureerd met informatie over Adobe I/O- en cloudopslag. Deze informatie wordt opgeslagen in de `.env`  die alleen wordt gebruikt voor lokale ontwikkeling en niet in Git. De `.env` bestand biedt een handige manier om sleutel-/waardeparen toegankelijk te maken voor de lokale ontwikkelomgeving van de lokale Asset compute. Wanneer [implementeren](../deploy/runtime.md) Asset compute werknemers naar Adobe I/O Runtime, `.env` Het bestand wordt niet gebruikt, maar er wordt een subset van waarden doorgegeven via omgevingsvariabelen. Andere aangepaste parameters en geheimen kunnen worden opgeslagen in het dialoogvenster `.env` en andere bestanden, zoals ontwikkelingsgegevens voor webservices van derden.
 
 ## Verwijs naar de `private.key`
 
 ![persoonlijke sleutel](assets/environment-variables/private-key.png)
 
-Open de `.env` bestand, verwijder de opmerking van het `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` en het absolute pad op uw bestandssysteem naar de `private.key` die paren met het openbare certificaat dat aan uw Adobe I/O App Builder-project wordt toegevoegd.
+Open de `.env` bestand, verwijder de commentaarmarkering voor `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` en het absolute pad op uw bestandssysteem naar de `private.key` die paren met het openbare certificaat dat aan uw Adobe I/O App Builder-project wordt toegevoegd.
 
 + Als uw sleutelpaar door Adobe I/O werd geproduceerd, werd het auto-gedownload als deel van  `config.zip`.
 + Als u de openbare sleutel aan Adobe I/O verstrekte, dan zou u ook in het bezit van de passende privé sleutel moeten zijn.
 + Als u deze sleutelparen niet hebt, kunt u nieuwe zeer belangrijke paren produceren of nieuwe openbare sleutels bij de bodem van uploaden:
-   [https://console.adobe.com](https://console.adobe.io) > Uw Asset compute App Builder-project > Werkruimten @ Development > Service Account (JWT).
+  [https://console.adobe.com](https://console.adobe.io) > Uw Asset compute App Builder-project > Werkruimten @ Development > Service Account (JWT).
 
-Onthoud de `private.key` Het bestand moet niet in Git worden gecontroleerd omdat het geheimen bevat, maar moet op een veilige plaats buiten het project worden opgeslagen.
+De `private.key` Het bestand moet niet in Git worden gecontroleerd omdat het geheimen bevat, maar moet op een veilige plaats buiten het project worden opgeslagen.
 
 Op macOS ziet dit er bijvoorbeeld als volgt uit:
 

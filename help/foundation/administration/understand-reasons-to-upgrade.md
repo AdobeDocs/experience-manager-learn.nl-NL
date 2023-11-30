@@ -6,8 +6,9 @@ topic: Upgrade
 feature: Release Information
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
+doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 1%
@@ -53,7 +54,7 @@ AEM Assets blijft voortbouwen op zijn rijke reeks mogelijkheden voor vermogensbe
 + **Adobe Stock** Dankzij de integratie hebt u rechtstreeks vanuit de AEM Assets-ervaring toegang tot Adobe Stock-images, zodat u probleemloos inhoud kunt detecteren.
 + **App AEM** versie 2.0 loslaat en zichzelf opnieuw instelt en tegelijkertijd de prestaties en stabiliteit verbetert.
 + **Verbonden elementen** ondersteunt afzonderlijke AEM Sites-instanties voor naadloze toegang tot en gebruik van elementen van een andere AEM Assets-instantie.
-+ Bijgewerkte videoondersteuning in **Dynamic Media**, met inbegrip van **360-video** en **Aangepaste videominiaturen**.
++ Bijgewerkte videoondersteuning in **Dynamic Media**, inclusief **360-video** en **Aangepaste videominiaturen**.
 
 ### Inhoudsinformatie
 
@@ -69,14 +70,14 @@ AEM groeit zijn vermogen om met andere diensten van Adobe te integreren:
 
 ### AMS Cloud Manager
 
-[Cloud Manager](https://adobe.ly/2HODmsv), een exclusieve service voor klanten van Adobe Managed Services (AMS), biedt de volgende functies:
+[Cloud Manager](https://adobe.ly/2HODmsv), een exclusieve Adobe Managed Services (AMS)-klanten, biedt de volgende functies:
 
-+ Cloud Manager-ondersteuning breidt AEM implementatieondersteuning uit van AEM Sites naar **AEM Assets**, met inbegrip van **geautomatiseerde prestatietests voor de verwerking van bedrijfsmiddelen**.
-+ **Automatisch schalen** van de AEM-publicatielaag op vooraf gedefinieerde drempelwaarden, zorgen voor een optimale ervaring voor de eindgebruiker.
-+ **Niet-productieleidingen** Ontwikkelingsteams toestaan om Cloud Manager te gebruiken om de kwaliteit van code voortdurend te controleren en te implementeren in lagere omgevingen (Development and QA).
++ Cloud Manager-ondersteuning breidt AEM implementatieondersteuning uit van AEM Sites naar **AEM Assets**, inclusief **geautomatiseerde prestatietests voor de verwerking van bedrijfsmiddelen**.
++ **Automatisch schalen** van het AEM publicatieniveau op vooraf gedefinieerde drempelwaarden, zorgen voor een optimale ervaring voor de eindgebruiker.
++ **Niet-productiepijpleidingen** Ontwikkelingsteams toestaan om Cloud Manager te gebruiken om de kwaliteit van code voortdurend te controleren en te implementeren in lagere omgevingen (Development and QA).
 + **CI/CD Pipeline-API&#39;s** klanten toestaan programmatisch contact op te nemen met Cloud Manager, waardoor de integratiemogelijkheden worden vergroot met on-premise ontwikkelinfrastructuren.
 
-## Functies van stichting
+## Functies van Stichting
 
 Hieronder ziet u een matrix van de belangrijkste basisfuncties die AEM biedt. Sommige van deze functies zijn geïntroduceerd in oudere versies van incrementele verbeteringen die in elke versie zijn toegevoegd.
 
@@ -363,7 +364,7 @@ Hieronder ziet u een matrix van de belangrijkste beveiligingsfuncties die AEM bi
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong>Ondersteuning voor OSGi-codering voor onbewerkte-tekstwachtwoorden<br>
+        <td><strong>OSGi-codering voor onbewerkte-tekstwachtwoorden<br>
  </strong>Wachtwoorden en andere vertrouwelijke waarden kunnen in gecodeerde vorm worden opgeslagen en automatisch worden gedecodeerd.</td>
         <td></td>
         <td></td>
@@ -408,7 +409,7 @@ Hieronder ziet u een matrix van de belangrijkste beveiligingsfuncties die AEM bi
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Ondersteuning voor Adobe IMS-verificatie</a><br>
- </strong>Exclusief voor Adobe Managed Services (AMS), centraal de toegang tot AEM Author-instanties beheren via Adobe IMS (Identity Management System).</td>
+ </strong>Uitsluitend voor Adobe Managed Services (AMS): centraal toegang tot AEM Author-instanties beheren via Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -555,7 +556,7 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Inhoudsfragmenten:</strong>
+            <td><strong>Content Fragments:</strong>
             Maak en curseer redactionele inhoud die losgekoppeld is van de presentatie, zodat u deze eenvoudig opnieuw kunt gebruiken.</td>
             <td> </td>
             <td> </td>
@@ -600,7 +601,7 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Adobe Target-integratie</a>:</strong>
-            De stapsgewijze tovenaar om gerichte ervaringen tot stand te brengen, herbruikbare aanbiedingsbibliotheken tot stand te brengen.</td>
+            De stapsgewijze tovenaar om gerichte ervaringen tot stand te brengen, herbruikbare aanbiedingsbibliotheken te creëren.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -621,8 +622,8 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Integratie met Adobe starten</a>:</strong>
-            Integreer met de service voor het beheer van tags van de volgende generatie.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Integratie van Adobe starten</a>:</strong>
+            Integreer met de volgende generatie cloudservice voor tagbeheer van de Adobe.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -681,7 +682,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
 <table>
     <thead>
         <tr>
-            <td>Elementfunctie</td>
+            <td>Functie voor elementen</td>
             <td>5,6 x</td>
             <td>6.0</td>
             <td>6.1</td>
@@ -694,7 +695,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
     <tbody>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html" target="_blank">Touch Optimized UI</a>:</strong>
-            Beheer middelen op een desktopcomputer of op apparaten met aanraakbediening.</td>
+            Elementen beheren op een desktopcomputer of op apparaten met aanraakbediening.</td>
             <td> </td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>
@@ -704,7 +705,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/metadata.html" target="_blank">Geavanceerd metagegevensbeheer</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/metadata.html" target="_blank">Geavanceerde metagegevensbeheer</a>:</strong>
             Metagegevenssjablonen, de metagegevensschemaeditor en de bewerking van bulkmetagegevens.</td>
             <td> </td>
             <td>✔</td>
@@ -771,7 +772,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">Verbonden elementen</a>:</strong>
-            AEM Sites-instanties kunnen naadloos toegang krijgen tot elementen van een andere AEM Assets-instantie en deze gebruiken.</td>
+            AEM Sites-instanties hebben naadloos toegang tot en kunnen elementen van een ander AEM Assets-exemplaar gebruiken.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -826,7 +827,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank">Adobe InDesign Server-integratie</a>:</strong>
-            Produccatalogi genereren. Maak brochures, flyers en druk advertenties op basis van InDesign-sjablonen.</td>
+            Produccatalogi genereren. Maak brochures, flyers en druk advertenties op basis van sjablonen voor InDesigns.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -848,7 +849,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Adobe Imaging Library</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Afbeeldingsbibliotheek Adobe</a>:</strong>
                 <br> Photoshop- en Acrobat-PDF-bibliotheken die worden gebruikt voor bestanden van hoge kwaliteit.</td>
             <td> </td>
             <td> </td>
@@ -860,7 +861,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         </tr>
         <tr>
             <td><strong><a href="https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank">Adobe-itemkoppeling</a>:</strong>
-            U kunt AEM Assets rechtstreeks openen vanuit Adobe Cloud-toepassingen maken.</td>
+            Open AEM Assets rechtstreeks vanuit de Adobe Cloud-toepassingen maken.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -973,7 +974,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         </tr>
         <tr>
             <td><strong>Upgrade van Scene7 naar Dynamic Media:</strong>
-            Mogelijkheid om master elementen te migreren en door te gaan met het gebruik van bestaande S7-URL's.</td>
+            Mogelijkheid om hoofdelementen te migreren en door te gaan met het gebruik van bestaande S7-URL's.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1075,7 +1076,7 @@ Hieronder ziet u een matrix met belangrijke AEM Forms Add-on-functies die AEM bi
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#AEMFormsdataintegration" target="_blank">Gegevensintegratie van derden</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#AEMFormsdataintegration" target="_blank">Integratie van gegevens van derden</a>:</strong>
             Met behulp van gegevensintegratie worden gegevens opgehaald van verschillende gegevensbronnen op basis van gebruikersinvoer in een formulier. Bij het verzenden van het formulier worden de vastgelegde gegevens teruggeschreven naar de gegevensbronnen.
             </td>
             <td> </td>

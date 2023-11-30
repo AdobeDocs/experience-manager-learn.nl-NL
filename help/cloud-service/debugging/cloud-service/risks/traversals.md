@@ -5,13 +5,13 @@ topics: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
-kt: 10427
+jira: KT-10427
 hidefromtoc: true
 hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 _Wat zijn traversale waarschuwingen?_
 
-Traversale waarschuwingen zijn __aemfout__ loginstructies die aangeven dat query&#39;s die slecht worden uitgevoerd, worden uitgevoerd op de AEM-publicatieservice. Traversale waarschuwingen worden gewoonlijk op twee manieren AEM:
+Traversale waarschuwingen zijn __aemfout__ loginstructies die aangeven dat query&#39;s slecht worden uitgevoerd, worden uitgevoerd op de AEM publicatieservice. Traversale waarschuwingen worden gewoonlijk op twee manieren AEM:
 
 1. __Langzame query&#39;s__ die geen indexen gebruiken, wat in langzame reactietijden resulteert.
 1. __Ontbrekende query&#39;s__, die een `RuntimeNodeTraversalException`, wat resulteert in een gebroken ervaring.
@@ -34,7 +34,7 @@ Door het ongecontroleerd laten van traversale waarschuwingen worden de AEM vertr
 
 ## Hoe te om traversale waarschuwingen op te lossen
 
-Het verminderen van traversale waarschuwingen kan worden aangepakt gebruikend drie eenvoudige stappen: analyseren, aanpassen en verifiëren. Verwacht verschillende versies van aanpassen en verifiëren voordat u de optimale aanpassingen aanbrengt.
+Het verminderen van traversale waarschuwingen kan worden aangepakt gebruikend drie eenvoudige stappen: analyseren, aanpassen, en verifieert. Verwacht verschillende versies van aanpassen en verifiëren voordat u de optimale aanpassingen aanbrengt.
 
 <div class="columns is-multiline">
 
@@ -108,9 +108,9 @@ Het verminderen van traversale waarschuwingen kan worden aangepakt gebruikend dr
 
 ## 1. Analyseren{#analyze}
 
-Bepaal eerst welke AEM-publicatieservices doorlopende waarschuwingen tonen. Dit doet u vanuit Cloud Manager: [Publicatieservices downloaden `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} uit alle omgevingen (Dev, Stage en Production) voor het verleden __drie dagen__.
+Bepaal eerst welke AEM publicatieservices doorlopende waarschuwingen tonen. Dit doet u vanuit Cloud Manager: [Publicatieservices downloaden `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} uit alle omgevingen (Dev, Stage en Production) voor het verleden __drie dagen__.
 
-![as a Cloud Service AEM downloaden](./assets/traversals/download-logs.jpg)
+![As a Cloud Service AEM downloaden](./assets/traversals/download-logs.jpg)
 
 Open de logbestanden en zoek naar de Java™-klasse `org.apache.jackrabbit.oak.plugins.index.Cursors$TraversingCursor`. Het logboek met traversal waarschuwingen bevat een reeks instructies die er ongeveer als volgt uitzien:
 
@@ -174,7 +174,7 @@ Aanpassingen aan de query&#39;s, indexen of beide moeten worden geverifieerd om 
 
 ![Query uitvoeren](./assets/traversals/verify.gif)
 
-Alleen [aanpassingen van de query](#adjust-the-query) worden gemaakt, kan de query rechtstreeks worden getest op AEM as a Cloud Service via de [Query uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"}. Verklaar de looppas van de Vraag tegen de dienst van de Auteur AEM, echter aangezien de indexdefinities het zelfde over de Auteur en de Publish diensten zijn, volstaat het bevestigen van vragen tegen de dienst van de Auteur AEM.
+Alleen als [aanpassingen van de query](#adjust-the-query) worden gemaakt, kan de query rechtstreeks worden getest op AEM as a Cloud Service via de [Query uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"}. Verklaar de looppas van de Vraag tegen de AEM dienst van de Auteur, echter aangezien de indexdefinities het zelfde over de Auteur en de Publish diensten zijn, volstaat het bevestigen van vragen tegen de AEM dienst van de Auteur.
 
 Indien [aanpassingen aan de index](#adjust-the-index) worden gemaakt, moet de index worden opgesteld aan AEM as a Cloud Service. Als de indexaanpassingen zijn geïmplementeerd, worden de [Query uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target="_blank"} Kan worden gebruikt om de query uit te voeren en verder af te stemmen.
 

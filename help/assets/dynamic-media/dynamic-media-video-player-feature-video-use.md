@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
@@ -48,8 +49,8 @@ De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers ku
   <tr>
    <td> <p>Desktop</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
-   <td> <p>Dynamic Media - modus Scène 7: HLS-videostreaming</p> 
-        <p>Dynamic Media - Hybride modus: Progressieve download</p>
+   <td> <p>Dynamic Media - Scene 7-modus: HLS-videostreaming</p> 
+        <p>Dynamic Media - Hybride modus: progressief downloaden</p>
    </td>
   </tr>
   <tr>

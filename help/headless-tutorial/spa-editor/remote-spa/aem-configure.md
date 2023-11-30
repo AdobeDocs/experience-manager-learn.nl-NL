@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7631
+jira: KT-7631
 thumbnail: kt-7631.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 0%
@@ -60,7 +61,7 @@ $ mv ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/wknd-app ~/Code/aem-guid
 
 _Het laatste bevel wijzigt eenvoudig de naam van de AEM projectomslag zodat is het duidelijk het AEM project, en niet om met Verre SPA worden verward__
 
-while `frontendModule="react"` wordt opgegeven, wordt de `ui.frontend` Het project wordt niet gebruikt voor het Verre SPA gebruiksgeval. De SPA wordt extern ontwikkeld en beheerd voor AEM en gebruikt alleen AEM als inhoud-API. De `frontendModule="react"` markering is vereist voor het project met  `spa-project` AEM Java™-afhankelijkheden en stel de externe SPA paginasjablonen in.
+while `frontendModule="react"` wordt opgegeven, wordt de `ui.frontend` Het project wordt niet gebruikt voor het Verre SPA gebruiksgeval. De SPA wordt extern ontwikkeld en beheerd om te AEM en gebruikt alleen AEM als inhoud-API. De `frontendModule="react"` markering is vereist voor het project met  `spa-project` AEM Java™-afhankelijkheden en stel de externe SPA paginasjablonen in.
 
 Het AEM Archetype van het Project produceert de volgende elementen die gebruikte om AEM voor integratie met de SPA te vormen.
 
@@ -79,7 +80,7 @@ Aangezien de SPA een Verre SPA is, veronderstel het buiten het AEM project wordt
 
 1. Het AEM-project openen (`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) in uw IDE
 1. De hoofdmap openen `pom.xml`
-1. Opmerkingen plaatsen bij `<module>ui.frontend</module` uit `<modules>` list
+1. Opmerkingen plaatsen bij `<module>ui.frontend</module` uit de `<modules>` list
 
    ```
    <modules>
@@ -139,7 +140,7 @@ U kunt de toewijzing uitvoeren met [Sling Mapping](https://sling.apache.org/docu
 1. Een map maken `etc`
 1. In `etc`, maakt u een map `map`
 1. In `map`, maakt u een map `http`
-1. In `http`, een bestand maken `.content.xml` met de inhoud:
+1. In `http`, maakt u een bestand `.content.xml` met de inhoud:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -150,7 +151,7 @@ U kunt de toewijzing uitvoeren met [Sling Mapping](https://sling.apache.org/docu
    ```
 
 1. In `http` , maakt u een map `localhost_any`
-1. In `localhost_any`, een bestand maken `.content.xml` met de inhoud:
+1. In `localhost_any`, maakt u een bestand `.content.xml` met de inhoud:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -162,7 +163,7 @@ U kunt de toewijzing uitvoeren met [Sling Mapping](https://sling.apache.org/docu
    ```
 
 1. In `localhost_any` , maakt u een map `wknd-app-routes-adventure`
-1. In `wknd-app-routes-adventure`, een bestand maken `.content.xml` met de inhoud:
+1. In `wknd-app-routes-adventure`, maakt u een bestand `.content.xml` met de inhoud:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -205,7 +206,7 @@ De `filter.xml` bestand moet er als volgt uitzien:
 
 Nu, wanneer het AEM project wordt opgesteld, zijn deze configuraties automatisch inbegrepen.
 
-De effecten voor AEM toewijzing van objecten die worden uitgevoerd op `http` en `localhost`, dus alleen lokale ontwikkeling. Wanneer het opstellen aan AEM as a Cloud Service, gelijkaardige het Schipen Toewijzingen moet worden toegevoegd dat doel `https` en de toepasselijke AEM as a Cloud Service domein(en). Zie voor meer informatie de [Documentatie over het toewijzen van objecten](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
+De effecten voor AEM toewijzing van objecten die worden uitgevoerd `http` en `localhost`, dus alleen lokale ontwikkeling. Wanneer het opstellen aan AEM as a Cloud Service, gelijkaardige het Schipen Toewijzingen moet worden toegevoegd dat doel `https` en de toepasselijke AEM as a Cloud Service domein(en). Zie de klasse [Documentatie over het toewijzen van objecten](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
 
 ## Beveiligingsbeleid voor het delen van bronnen tussen verschillende bronnen
 
@@ -316,7 +317,7 @@ Deze pagina kan ook worden verwijderd en opnieuw worden gemaakt als een externe 
 
 ## Implementeer het AEM Project naar AEM SDK
 
-1. Zorg ervoor dat de AEM-auteurservice wordt uitgevoerd op poort 4502
+1. Zorg ervoor dat AEM Auteur-service wordt uitgevoerd op poort 4502
 1. Navigeer vanaf de opdrachtregel naar de hoofdmap van het AEM Maven-project
 1. Gebruik Maven om het project op te stellen aan uw lokale AEM SDK Auteur-service
 
@@ -330,15 +331,15 @@ Deze pagina kan ook worden verwijderd en opnieuw worden gemaakt als een externe 
 
 Met AEM opgesteld Project, is er één laatste stap om SPA Redacteur voor te bereiden om onze Verre SPA te laden. Markeer in AEM de AEM pagina die overeenkomt met het SPA.`/content/wknd-app/us/en/home`, gegenereerd door het AEM Project Archetype.
 
-1. Aanmelden bij AEM-auteur
+1. Aanmelden bij AEM auteur
 1. Navigeren naar __Sites > WKND App > us > en__
-1. Selecteer __WKND App Home Page__ en tikken __Eigenschappen__
+1. Selecteer de __WKND App Home Page__ en tikken __Eigenschappen__
 
    ![WKND App Home Page - Eigenschappen](./assets/aem-content/edit-home-properties.png)
 
 1. Ga naar de __SPA__ tab
 1. Vul de __Configuratie van externe SPA__
-   + __URL van host SPA__: `http://localhost:3000`
+   + __URL SPA__: `http://localhost:3000`
       + De URL naar de hoofdmap van de externe SPA
 
    ![WKND App Home Page - Configuratie van externe SPA](./assets/aem-content/remote-spa-configuration.png)
@@ -356,7 +357,7 @@ U hebt nu AEM configuraties voorbereid en deze geïmplementeerd op uw lokale AEM
 + Verwijder het AEM Project Archetype-Gegenereerde SPA door de gebiedsdelen in te becommentariëren `ui.frontend`
 + Voeg het Verschuiven Toewijzingen toe aan AEM die de SPA routes aan middelen in AEM in kaart brengen
 + Stel AEM het beveiligingsbeleid voor het delen van bronnen van verschillende oorsprong in waarmee de externe SPA inhoud van AEM kunnen verbruiken
-+ Stel het AEM project aan uw lokale AEMdienst van de Auteur van SDK op
++ Implementeer het AEM project op uw lokale AEM SDK-auteurservice
 + Een AEM Pagina markeren als de externe SPA met de eigenschap URL van SPA host
 
 ## Volgende stappen

@@ -3,13 +3,14 @@ title: Een SPA integreren | Aan de slag met de AEM SPA Editor en reageren
 description: Begrijp hoe de broncode voor een toepassing van de Enige Pagina (SPA) die in React wordt geschreven met een Project van Adobe Experience Manager (AEM) kan worden geïntegreerd. Leer om moderne front-end hulpmiddelen, zoals een webpack dev server, te gebruiken om de SPA tegen AEM JSON model API snel te ontwikkelen.
 feature: SPA Editor
 version: Cloud Service
-kt: 4853
+jira: KT-4853
 thumbnail: 4853-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: c34c27955dbc084620ac4dd811ba4051ea83f447
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1835'
 ht-degree: 0%
@@ -29,7 +30,7 @@ Begrijp hoe de broncode voor een toepassing van de Enige Pagina (SPA) die in Rea
 ## Wat u gaat maken
 
 In dit hoofdstuk brengt u enkele kleine wijzigingen aan in de SPA om te begrijpen hoe deze is geïntegreerd met AEM.
-In dit hoofdstuk wordt een eenvoudig hoofdstuk toegevoegd `Header` aan de SPA. In het kader van de opbouw van deze **static** `Header` wordt gebruik gemaakt van verschillende benaderingen voor AEM SPA ontwikkeling.
+Dit hoofdstuk voegt een eenvoudig `Header` aan de SPA. In het kader van de opbouw van deze **static** `Header` wordt gebruik gemaakt van verschillende benaderingen voor AEM SPA ontwikkeling.
 
 ![Nieuwe koptekst in AEM](./assets/integrate-spa/final-header-component.png)
 
@@ -55,15 +56,15 @@ Aanvullende informatie over de front-end build kan [hier gevonden](https://exper
 
 Controleer vervolgens de `ui.frontend` om de SPA te begrijpen die automatisch door de [Project archetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-1. Open uw AEM Project in IDE van uw keuze. Deze zelfstudie gebruikt de [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+1. Open uw AEM Project in IDE van uw keuze. In deze zelfstudie worden de [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
    ![VSCode - AEM WKND SPA Project](./assets/integrate-spa/vscode-ide-openproject.png)
 
-1. Het deelvenster `ui.frontend` map. Het bestand openen `ui.frontend/package.json`
+1. De opdracht Uitvouwen en inspecteren `ui.frontend` map. Het bestand openen `ui.frontend/package.json`
 
 1. Onder de `dependencies` u dient verschillende meldingen te zien die betrekking hebben op `react` inclusief `react-scripts`
 
-   De `ui.frontend` is een React toepassing gebaseerd op [React-app maken](https://create-react-app.dev/) of CRA voor kort. De `react-scripts` versie geeft aan welke versie van CRA wordt gebruikt.
+   De `ui.frontend` is een React toepassing gebaseerd op [React-app maken](https://create-react-app.dev/) of CRA voor korte tijd. De `react-scripts` versie geeft aan welke versie van CRA wordt gebruikt.
 
 1. Er zijn ook diverse afhankelijkheden voorafgegaan met `@adobe`:
 
@@ -90,7 +91,7 @@ Controleer vervolgens de `ui.frontend` om de SPA te begrijpen die automatisch do
    }
    ```
 
-   Dit zijn standaardconstructiescripts die zijn gemaakt [beschikbaar](https://create-react-app.dev/docs/available-scripts) door de Create React App.
+   Dit zijn standaard gemaakte bouwscripts [beschikbaar](https://create-react-app.dev/docs/available-scripts) door de Create React App.
 
    Het enige verschil is de toevoeging van `&& clientlib` aan de `build` script. Deze extra instructie is verantwoordelijk voor het kopiëren van de gecompileerde SPA naar de `ui.apps` als client-side bibliotheek tijdens een build.
 
@@ -161,7 +162,7 @@ Voeg vervolgens een nieuwe component aan de SPA toe en implementeer de wijziging
    Hierboven bevindt zich een standaardcomponent React die een statische tekstreeks uitvoert.
 
 1. Het bestand openen `ui.frontend/src/App.js`. Dit is het ingangspunt van de toepassing.
-1. Voer de volgende updates uit om `App.js` om het statische `Header`:
+1. De volgende updates uitvoeren `App.js` om het statische `Header`:
 
    ```diff
      import { Page, withModel } from '@adobe/aem-react-editable-components';
@@ -214,9 +215,9 @@ Voeg vervolgens een nieuwe component aan de SPA toe en implementeer de wijziging
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Hiermee wordt het `ui.apps` verpakken naar een lokale actieve instantie van AEM.
+   Hierdoor wordt de `ui.apps` verpakken naar een lokale actieve instantie van AEM.
 
-1. Open een browsertabblad en navigeer naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). U moet nu de inhoud van het dialoogvenster `Header` die in de SPA worden weergegeven.
+1. Open een browsertabblad en navigeer naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). U moet nu de inhoud van de `Header` die in de SPA worden weergegeven.
 
    ![Eerste koptekstimplementatie](./assets/integrate-spa/initial-header-implementation.png)
 
@@ -226,7 +227,7 @@ Voeg vervolgens een nieuwe component aan de SPA toe en implementeer de wijziging
 
 Zoals u in de vorige oefeningen ziet, duurt het maken van een build en het synchroniseren van de clientbibliotheek naar een lokale AEM enkele minuten. Dit is acceptabel voor de uiteindelijke test, maar niet ideaal voor het grootste deel van de SPA ontwikkeling.
 
-A [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan worden gebruikt om de SPA snel te ontwikkelen. De SPA wordt aangedreven door een JSON-model dat door AEM wordt gegenereerd. In deze oefening is de JSON-inhoud van een actief exemplaar van AEM **geproxeerd** in de ontwikkelingsserver.
+A [webpack-server](https://webpack.js.org/configuration/dev-server/) kan worden gebruikt om de SPA snel te ontwikkelen. De SPA wordt aangedreven door een JSON-model dat door AEM wordt gegenereerd. In deze oefening is de JSON-inhoud van een actief exemplaar van AEM **geproxeerd** in de ontwikkelingsserver.
 
 1. Terugkeren naar IDE en het bestand openen `ui.frontend/package.json`.
 
@@ -255,7 +256,7 @@ A [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan wor
    To create a production build, use npm run build.
    ```
 
-1. Open een nieuw browsertabblad (indien nog niet geopend) en navigeer naar [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html).
+1. Open een nieuw browsertabblad (indien nog niet geopend) en ga naar [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html).
 
    ![Webpack-ontwikkelserver - proxyjson](./assets/integrate-spa/webpack-dev-server-1.png)
 
@@ -306,7 +307,7 @@ A [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan wor
 
 1. Navigeren naar [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html) om automatisch de wijzigingen in de stijl te zien.
 
-1. Het bestand openen `Page.css` om `ui.frontend/src/components/Page`. Breng de volgende wijzigingen aan om de opvulling te corrigeren:
+1. Het bestand openen `Page.css` om `ui.frontend/src/components/Page`. Breng de volgende wijzigingen aan om de opvulling te herstellen:
 
    ```css
    .page {
@@ -321,13 +322,13 @@ A [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) kan wor
 
    ![Stijl toegevoegd aan koptekst](assets/integrate-spa/added-logo-localhost.png)
 
-   U kunt inhoud blijven bijwerken in AEM en deze weergeven in **webpack-dev-server**, aangezien we de inhoud aan het proxen zijn.
+   U kunt inhoud blijven bijwerken in AEM en deze weergeven in **webpack-server**, aangezien we de inhoud aan het proxen zijn.
 
-1. Stop de webpack-ontwikkelserver met `ctrl+c` in de terminal.
+1. Stop de webpack Dev-server met `ctrl+c` in de terminal.
 
 ## SPA updates voor AEM implementeren
 
-De wijzigingen in de `Header` zijn momenteel alleen zichtbaar via **webpack-dev-server**. Implementeer de bijgewerkte SPA om de wijzigingen te AEM.
+De wijzigingen in de `Header` zijn momenteel alleen zichtbaar via **webpack-server**. Implementeer de bijgewerkte SPA om de wijzigingen te AEM.
 
 1. Ga naar de hoofdmap van het project (`aem-guides-wknd-spa`) en het project te implementeren om het te AEM met Maven:
 
@@ -344,7 +345,7 @@ De wijzigingen in de `Header` zijn momenteel alleen zichtbaar via **webpack-dev-
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, u hebt de SPA bijgewerkt en de integratie met AEM onderzocht! U weet nu hoe u de SPA kunt ontwikkelen tegen de AEM JSON-model-API met behulp van een **webpack-dev-server**.
+Gefeliciteerd, u hebt de SPA bijgewerkt en de integratie met AEM onderzocht! U weet nu hoe u de SPA kunt ontwikkelen tegen de AEM JSON-model-API met behulp van een **webpack-server**.
 
 ### Volgende stappen {#next-steps}
 
@@ -393,7 +394,7 @@ De eerste configuratie van het model-JSON doet het volgende **een lokale AEM-ins
    REACT_APP_ROOT=/content/wknd-spa-react/us/en/home.html
    ```
 
-1. Als het programma op dat moment wordt uitgevoerd, moet u het **webpack-dev-server**. Start de **webpack-dev-server** vanaf de terminal:
+1. Als het programma op dat moment wordt uitgevoerd, moet u het **webpack-server**. Start de **webpack-server** vanaf de terminal:
 
    ```shell
    $ cd ui.frontend
@@ -402,11 +403,11 @@ De eerste configuratie van het model-JSON doet het volgende **een lokale AEM-ins
 
    Navigeren naar [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html) en u moet de SPA met dezelfde inhoud zien die in de **proxy** json.
 
-1. Breng een kleine wijziging aan in de `mock.model.json` eerder gemaakt bestand. De bijgewerkte inhoud wordt direct weergegeven in het dialoogvenster **webpack-dev-server**.
+1. Breng een kleine wijziging aan in de `mock.model.json` eerder gemaakt bestand. De bijgewerkte inhoud wordt direct weergegeven in het dialoogvenster **webpack-server**.
 
    ![model json-update](./assets/integrate-spa/webpack-mock-model.gif)
 
-Als u het JSON-model kunt manipuleren en de effecten op een live SPA kunt bekijken, kan een ontwikkelaar de JSON-model-API beter begrijpen. Het maakt ook zowel front-end als back-end ontwikkeling mogelijk.
+Als u het JSON-model kunt manipuleren en de effecten op een live SPA kunt bekijken, kan een ontwikkelaar de JSON-model-API beter begrijpen. Het maakt ook zowel front-end als back-end ontwikkeling parallel mogelijk.
 
 U kunt nu schakelen tussen de locatie waar de JSON-inhoud moet worden gebruikt door de items in het dialoogvenster `env.development` bestand:
 

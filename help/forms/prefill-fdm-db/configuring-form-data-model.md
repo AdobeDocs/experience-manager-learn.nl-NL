@@ -3,13 +3,13 @@ title: Formuliergegevensmodel configureren
 description: Formuliergegevensmodel maken op basis van RDBMS-gegevensbron
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5812
+jira: KT-5812
 thumbnail: kt-5812.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -58,7 +58,7 @@ De eerste stap bij het maken van een formulier met RDBMS-ondersteuning is het co
 >[!NOTE]
 > De get-service verwacht een waarde die is toegewezen aan de empID-kolom van een nieuwe entiteit. Er zijn meerdere manieren om deze waarde door te geven en in deze zelfstudie wordt de empID doorgegeven via de aanvraagparameter empID.
 * Klikken _Gereed_ om de argumenten voor de get dienst te bewaren
-* Klikken _Gereed_ om wijzigingen in het formuliergegevensmodel op te slaan
+* Klikken _Gereed_ wijzigingen in het formuliergegevensmodel opslaan
 
 ## Koppeling toevoegen tussen 2 entiteiten
 
@@ -67,7 +67,7 @@ De volgende stappen zullen u door het proces lopen om de één-aan-vele verenigi
 
 * Selecteer een nieuwe entiteit en klik op _Koppeling toevoegen_
 * Geef de koppeling en andere eigenschappen een betekenisvolle titel en id, zoals in de onderstaande schermafbeelding wordt getoond
-   ![associatie](assets/association-entities-1.png)
+  ![associatie](assets/association-entities-1.png)
 
 * Klik op de knop _bewerken_ pictogram onder de sectie Argumenten
 

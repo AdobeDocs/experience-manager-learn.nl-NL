@@ -1,13 +1,14 @@
 ---
 title: Dispatcher Understanding caching
-description: Begrijp hoe de module Dispatcher het geheime voorgeheugen in werking stelt.
+description: Begrijp hoe de module van de Verzender het geheime voorgeheugen in werking stelt.
 topic: Administration, Performance
 version: 6.5
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 [Inhoudsopgave](./overview.md)
 
-[&lt;- Vorige: Uitleg van configuratiebestanden](./explanation-config-files.md)
+[&lt;- Vorige: uitleg van configuratiebestanden](./explanation-config-files.md)
 
 In dit document wordt uitgelegd hoe het in cache plaatsen van een Dispatcher plaatsvindt en hoe het kan worden geconfigureerd
 
@@ -35,7 +36,7 @@ Wanneer elk verzoek de Dispatcher oversteekt volgen de verzoeken de gevormde reg
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
 
-We houden gepubliceerde werklasten bewust gescheiden van de werkbelasting van de auteur, omdat Apache bij het zoeken naar een bestand in de DocumentRoot niet weet van welke AEM instantie het afkomstig is. Dus zelfs als u cache in de auteurshandel hebt uitgeschakeld, als DocumentRoot van de auteur het zelfde is als uitgever zal het dossiers van het geheime voorgeheugen indien heden dienen. Dit betekent dat u de auteursdossiers van de auteur voor van gepubliceerde geheime voorgeheugen zult dienen en voor een werkelijk afschuwelijke mengeling ervaring voor uw bezoekers zal maken.
+We houden gepubliceerde werklasten bewust gescheiden van de werkbelasting van de auteur, omdat Apache bij het zoeken naar een bestand in de DocumentRoot niet weet van welke AEM instantie het afkomstig is. Dus zelfs als u cache in de auteurshandel hebt uitgeschakeld, als DocumentRoot van de auteur het zelfde is als uitgever zal het dossiers van het geheime voorgeheugen indien heden dienen. Dit betekent dat u ontwerpbestanden vanaf de gepubliceerde cache kunt bedienen en dat u voor uw bezoekers een zeer vreselijke mix-match-ervaring zult creëren.
 
 Het is ook een erg slecht idee om afzonderlijke DocumentRoot-mappen voor verschillende gepubliceerde inhoud te houden. U zult veelvoudige re-caching punten moeten tot stand brengen die niet tussen plaatsen zoals clientlibs verschillen evenals het moeten opstelling een replicatie spoelagent voor elke DocumentRoot u opstelling. Met activering van elke pagina wordt de mate van doorspoelen over de kop verhoogd. Vertrouw op naamruimte van bestanden en de bijbehorende paden in de volledige cache en vermijd meerdere DocumentRoot&#39;s voor gepubliceerde sites.
 </div>
@@ -95,10 +96,10 @@ Het is belangrijk dat de `/docroot` wordt ingesteld op de cachemap voor de auteu
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
 
-Zorg ervoor dat u `DocumentRoot` in de `.vhost` bestand komt overeen met de boerderijen `/docroot` parameter
+Zorg ervoor dat u `DocumentRoot` in de auteur `.vhost` bestand komt overeen met de boerderijen `/docroot` parameter
 </div>
 
-De cacheregels bevatten de instructie die het bestand bevat `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` die deze regels bevat:
+De cacheregels bevatten de instructie die het bestand bevat `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` die de volgende regels bevat:
 
 ```
 /0000 { 
@@ -131,7 +132,7 @@ De cacheregels bevatten de instructie die het bestand bevat `/etc/httpd/conf.dis
 }
 ```
 
-In een auteurscenario, verandert de inhoud voortdurend en doelgericht. U wilt alleen items in cache plaatsen die niet vaak worden gewijzigd.
+In een auteurscenario, verandert de inhoud voortdurend en doelgericht. U wilt slechts punten in het voorgeheugen onderbrengen die niet vaak zullen veranderen.
 We hebben regels om in cache te plaatsen `/libs` omdat ze onderdeel zijn van de basislijn AEM installeren en worden gewijzigd totdat u een Service Pack, Cumulative Fix Pack, Upgrade of Hotfix hebt geïnstalleerd. Het in cache plaatsen van deze elementen heeft veel zin en heeft echt enorme voordelen van de ervaring van auteurs van eindgebruikers die de site gebruiken.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
@@ -259,7 +260,7 @@ Het bijhouden van deze pagina&#39;s vereist wel enige upkeep, maar is de prestat
 
 ## Responsheaders in cache plaatsen
 
-Het is vrij duidelijk dat de Dispatcher in de cache zit `.html` pagina&#39;s en clientlibs (d.w.z. `.js`, `.css`), maar wist u dat het bepaalde antwoordkopballen langs de inhoud in een dossier met de zelfde naam maar ook kan in het voorgeheugen onder brengen `.h` bestandsextensie. Hierdoor is de volgende reactie niet alleen mogelijk op de inhoud, maar ook op de antwoordheaders die ermee moeten worden verbonden vanuit de cache.
+Het is vrij duidelijk dat de Dispatcher in de cache zit `.html` pagina&#39;s en clientlibs (bv. `.js`, `.css`), maar wist u dat het bepaalde antwoordkopballen langs de inhoud in een dossier met de zelfde naam maar ook kan in het voorgeheugen onder brengen `.h` bestandsextensie. Hierdoor is de volgende reactie niet alleen mogelijk op de inhoud, maar ook op de antwoordheaders die ermee moeten worden verbonden vanuit de cache.
 
 AEM kan meer dan alleen UTF-8-codering verwerken
 
@@ -299,7 +300,7 @@ Op AEM systemen die veel activiteit hebben van auteurs die veel paginanavigaties
 
 ### Voorbeeld van hoe dit werkt:
 
-Als u 5 verzoeken hebt om de validatie ongeldig te maken `/content/exampleco/en/` alles gebeurt binnen een periode van 3 seconden .
+Als u 5 verzoeken hebt om de validatie ongeldig te maken `/content/exampleco/en/` dit alles gebeurt binnen een periode van drie seconden .
 
 Met deze functie zou u de cachemap ongeldig maken `/content/exampleco/en/` 5 keer
 
@@ -314,7 +315,7 @@ Hier is een voorbeeldsyntaxis van deze eigenschap die voor 5 tweede graadperiode
 
 ## Op TTL gebaseerde validatie
 
-Een nieuwere functie van de module Dispatcher is `Time To Live (TTL)` gebaseerde validatieopties voor items in de cache. Wanneer een item in de cache wordt geplaatst, zoekt het naar de aanwezigheid van cachebeheerkoppen en genereert het een bestand in de cachemap met dezelfde naam en een `.ttl` extensie.
+Een nieuwere functie van de module Dispatcher is `Time To Live (TTL)` gebaseerde validatieopties voor items die in cache zijn geplaatst. Wanneer een item in de cache wordt geplaatst, zoekt het naar de aanwezigheid van cachebeheerkoppen en genereert het een bestand in de cachemap met dezelfde naam en een `.ttl` extensie.
 
 Hier is een voorbeeld van de eigenschap die in het dossier van de landbouwbedrijfconfiguratie wordt gevormd:
 

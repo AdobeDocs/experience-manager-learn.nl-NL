@@ -3,7 +3,7 @@ title: Android-toepassing - Voorbeeld AEM zonder kop
 description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze Android-toepassing laat zien hoe u inhoud kunt opvragen met de GraphQL API's van AEM.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 10588
+jira: KT-10588
 thumbnail: KT-10588.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 679b9bf9f0948e2b24d613b530d3ae644c92057d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%
@@ -41,7 +41,7 @@ De Android-toepassing werkt met de volgende AEM implementatieopties. Alle implem
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 
-De Android-toepassing is ontworpen voor verbinding met een __AEM-publicatie__ omgeving, maar deze kan inhoud van AEM Author bron als de verificatie wordt opgegeven in de configuratie van de Android-toepassing.
+De Android-toepassing is ontworpen voor verbinding met een __AEM publiceren__ -omgeving, maar de toepassing kan inhoud van AEM auteur aanmaken als de configuratie van de Android-toepassing verificatie bevat.
 
 ## Hoe wordt het gebruikt
 

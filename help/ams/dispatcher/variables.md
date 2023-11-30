@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 299b32c3-7922-4eee-aa3a-56039a654f70
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -31,7 +32,7 @@ We kunnen deze gebruiken om een hoop nuttige dingen te doen zoals:
 
 - Zorg ervoor om het even wat dat milieu specifiek is niet inline in de configuraties maar wordt gehaald om configuratiedossiers van te verzekeren dev werkt in prod met de zelfde functionele output.
 - Met AMS kunt u functies in- en uitschakelen en logniveaus van onveranderbare bestanden wijzigen. U kunt deze ook wijzigen.
-- Hiermee wijzigt u het gebruik op basis van bijvoorbeeld variabelen `RUNMODE` en `ENV_TYPE`
+- Wijzigen wat voor gebruik op basis van variabelen als `RUNMODE` en `ENV_TYPE`
 - Overeenkomst `DocumentRoot`s en `VirtualHost` DNS-namen tussen Apache-configuraties en moduleconfiguraties.
 
 ## Basislijnvariabelen gebruiken
@@ -84,9 +85,9 @@ Hier is het syntaxisvoorbeeld dat in de dossiers van de de basislijnconfiguratie
 </IfModule>
 ```
 
-Als u het registratieniveau van de Dispatcher moet verhogen werkt u gewoon de `ams_default.vars` variabele `DISP_LOG_LEVEL` op het gewenste niveau.
+Als u het registratieniveau van de Dispatcher moet verhogen werkt u gewoon de `ams_default.vars` variabel `DISP_LOG_LEVEL` op het gewenste niveau.
 
-Voorbeelden kunnen een geheel getal of het woord zijn:
+Voorbeeldwaarden kunnen een geheel getal of het woord zijn:
 
 | Logboekniveau | Waarde van geheel getal | Woordwaarde |
 | --- | --- | --- |
@@ -122,7 +123,7 @@ Hier volgen enkele syntaxisvoorbeelden van de manier waarop de variabele de opna
 </RequireAny>
 ```
 
-Zoals u het `sample_whitelist.rules` dwingt de IP beperking af maar het knepen van de variabele staat het toe om in te omvatten `sample.vhost`
+Zoals u kunt zien `sample_whitelist.rules` dwingt de IP beperking af maar het knepen van de variabele staat het toe om in te omvatten `sample.vhost`
 
 ## Waar moeten de variabelen worden geplaatst?
 
@@ -143,7 +144,7 @@ ENV_TYPE='dev'
 RUNMODE='sites'
 ```
 
-Dit zijn niet iets u kunt veranderen maar aan hefboomwerking in uw configuratiedossiers goed
+Dit is niet iets u kunt veranderen maar aan hefboomwerking in uw configuratiedossiers goed zijn
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
 
@@ -246,7 +247,7 @@ Deze variabelen worden enorm hergebruikt om de instellingen te individualiseren 
 
 ## Waarden van variabelen weergeven
 
-Soms wanneer het gebruiken van variabelen moeten wij zoeken om te zien wat de waarden in onze configuratiedossiers zouden kunnen zijn.  Er is een manier om de opgeloste variabelen te bekijken door de volgende bevelen op de server in werking te stellen:
+Soms wanneer het gebruiken van variabelen moeten wij zoeken om te zien wat de waarden in onze configuratiedossiers zouden kunnen zijn.  U kunt de opgeloste variabelen weergeven door de volgende opdrachten op de server uit te voeren:
 
 ```
 source /etc/sysconfig/httpd;/sbin/httpd -S | grep Define | grep "="
@@ -272,7 +273,7 @@ Voorbeeldconfiguratie
 
 ```
 <VirtualHost *:80> 
-	DocumentRoot	${PUBLISH_DOCROOT} 
+    DocumentRoot    ${PUBLISH_DOCROOT} 
 ```
 
 Voer nu de opdrachten uit om de gecompileerde uitvoer te zien

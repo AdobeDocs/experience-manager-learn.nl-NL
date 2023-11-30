@@ -6,10 +6,11 @@ feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Tutorial
 exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 # Eenvoudige gids voor implementatie van zoekopdrachten{#simple-search-implementation-guide}
 
-De eenvoudige onderzoeksimplementatie is de materialen van **Adobe Summit laboratorium AEM Onderzoek Demystified**. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
+De eenvoudige onderzoeksimplementatie is de materialen van **Adobe Summit lab AEM zoekopdracht gedemystificeerd**. Deze pagina bevat de materialen van dit laboratorium. Voor een geleide rondleiding van het laboratorium, te bekijken gelieve het werkboek van het Laboratorium in de sectie van de Presentatie van deze pagina.
 
 ![Overzicht van zoekarchitectuur](assets/l4080/simple-search-application.png)
 
@@ -40,7 +41,7 @@ De eenvoudige onderzoeksimplementatie is de materialen van **Adobe Summit labora
 
 ### Hoofdstukken {#chapters}
 
-*De onderstaande hoofdstukkoppelingen gaan uit van de [Eerste pakketten](#initialpackages) zijn geïnstalleerd op AEM-auteur op`http://localhost:4502`*
+*De onderstaande hoofdstukkoppelingen gaan uit van de [Eerste pakketten](#initialpackages) zijn geïnstalleerd op AEM auteur op`http://localhost:4502`*
 
 * [Hoofdstuk 1](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [Hoofdstuk 2](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -57,7 +58,7 @@ De eenvoudige onderzoeksimplementatie is de materialen van **Adobe Summit labora
 ### Eerste pakketten {#initial-packages}
 
 * [Tags](assets/l4080/summit-tags.zip)
-* [Eenvoudig toepassingspakket voor zoekopdrachten](assets/l4080/simple.ui.apps-0.0.1-snapshot.zip)
+* [Eenvoudig pakket met zoektoepassingen](assets/l4080/simple.ui.apps-0.0.1-snapshot.zip)
 
 ### Hoofdstukpakketten {#chapter-packages}
 
@@ -93,7 +94,7 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
 
 2. **Hoe kunnen eak-indexen meerdere huurders ondersteunen?**
 
-   Met de optie Eak kunt u indexen plaatsen door de inhoudsstructuur heen. Deze indexen indexeren alleen binnen die substructuur. Bijvoorbeeld **`/content/site-a/oak:index/cqPageLucene`** kan alleen worden gemaakt om inhoud te indexeren onder **`/content/site-a`.**
+   Met de optie Eak kunt u indexen plaatsen door de inhoudsstructuur heen. Deze indexen indexeren alleen binnen die substructuur. Bijvoorbeeld **`/content/site-a/oak:index/cqPageLucene`** kan alleen onder **`/content/site-a`.**
 
    Een gelijkwaardige aanpak is het gebruik van de **`includePaths`** en **`queryPaths`** eigenschappen op een index onder **`/oak:index`**. Bijvoorbeeld:
 
@@ -103,10 +104,9 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
    De overwegingen met deze benadering zijn:
 
    * De vragen MOETEN een wegbeperking specificeren die aan het werkingsgebied van de de vraagweg van de index gelijk is, of daar een nakomeling van zijn.
-   * Bereikindexen van de grotere (bijvoorbeeld `/oak:index/cqPageLucene`) zal de gegevens ook indexeren, wat leidt tot dubbele inname en kosten voor schijfgebruik.
-   * Mogelijk is dubbel configuratiebeheer vereist (bijv. het toevoegen van zelfde indexRules over veelvoudige huurdersindexen als zij de zelfde vraagreeksen moeten voldoen)
-   * Deze benadering wordt het best gediend op AEM publiceer rij voor het onderzoek van de douaneplaats, aangezien op Auteur AEM, het voor vragen gemeenschappelijk is om bij hoog de inhoudsboom voor verschillende huurders (bijvoorbeeld, via OmniSearch) te worden uitgevoerd - de verschillende indexdefinities kunnen in verschillend gedrag resulteren die slechts op de wegbeperking wordt gebaseerd.
-
+   * Bereikindexen van de bredere klasse (bijvoorbeeld `/oak:index/cqPageLucene`) zal de gegevens ook indexeren, wat leidt tot dubbele inname en kosten voor schijfgebruik.
+   * Mogelijk is dubbel configuratiebeheer vereist (bijvoorbeeld het toevoegen van zelfde indexRules over veelvoudige huurdersindexen als zij de zelfde vraagreeksen moeten voldoen)
+   * Deze benadering wordt het best gediend op de AEM Publish rij voor het onderzoek van de douanesite, aangezien op AEM Auteur, het voor vragen gemeenschappelijk is dat bij hoog de inhoudsboom voor verschillende huurders (bijvoorbeeld, via OmniSearch) worden uitgevoerd - de verschillende indexdefinities in verschillend gedrag kunnen resulteren dat slechts op de wegbeperking wordt gebaseerd.
 
 3. **Waar is een lijst van alle beschikbare Analysatoren?**
 
@@ -115,7 +115,7 @@ Correcties en verduidelijkingen uit de laboratoriumdiscussies en antwoorden op v
    * [Documentatie Apache Oak-analyse](https://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [Tokenizers](https://cwiki.apache.org/confluence/display/solr/Tokenizers)
       * [Filters](https://cwiki.apache.org/confluence/display/solr/Filter+Descriptions)
-      * [CharFilters](https://cwiki.apache.org/confluence/display/solr/CharFilterFactories)
+      * [Tekstfilters](https://cwiki.apache.org/confluence/display/solr/CharFilterFactories)
 
 4. **Hoe te om naar Pagina&#39;s en Middelen in de zelfde vraag te zoeken?**
 

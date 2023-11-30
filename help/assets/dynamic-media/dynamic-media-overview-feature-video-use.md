@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -26,9 +27,9 @@ Deze videoreeks met meerdere delen geeft u een overzicht van hoe media-inhoud wo
 >
 >De hier getoonde functionaliteit is beschikbaar met Dynamic Media DMS7 loopwijze, onze momenteel gesteunde looppas wijze, niet noodzakelijk DMHybrid looppas wijze, die DMS7 heeft vervangen.
 
-In deze video wordt beschreven hoe media-inhoud wordt beheerd en geopend met Adobe Experience Manager Dynamic Media als een service voor inhoud. Dynamic Media werkt met één Master-middelenmethode waarbij u een afbeeldingselement of video-element uploadt waarvoor u een verzoek kunt indienen om te voldoen aan een onbeperkt aantal benodigde verbruiksvariaties of afgeleide uitvoeringen. Inbegrepen:
+In deze video wordt beschreven hoe media-inhoud wordt beheerd en geopend met Adobe Experience Manager Dynamic Media als een service voor inhoud. Dynamic Media werkt op basis van één methodiek voor basiselementen, waarbij u een afbeeldingselement of video-element uploadt waarvoor u een verzoek kunt indienen om te voldoen aan een onbeperkt aantal benodigde verbruiksvariaties of afgeleide uitvoeringen. Inbegrepen:
 
-* Single Master Asset to URL product leverbaar-uitleg
+* Single Master-element naar URL-product leverbaar, uitgelegd
 * Opties voor afbeeldingsverwerking
 * Opties voor de inhoudviewer
 * URL&#39;s kopiëren naar afbeeldingen en responsieve viewers
@@ -70,7 +71,7 @@ In deze video wordt het eenvoudige proces beschreven voor het maken van een coll
 In deze video wordt beschreven hoe Voorinstellingen afbeelding worden gemaakt en wat een voorinstelling voor een afbeelding is. Deze video bevat een URL die korter is voor een reeks argumenten van de afbeeldingsserver die op een afbeelding worden toegepast wanneer een URL hierom vraagt. Leer kostbare technieken voor het uitbreiden en bewerken van voorinstellingen voor afbeeldingen.
 
 * Kortere weg verbergen voor voorinstelling afbeelding verzameling van expliciete opdrachten voor afbeeldingsserver
-* Gebruik slechts één pixelafmeting (breedte OF hoogte) om nieuwe vergroot- of verkleingedeelde afbeeldingen zonder opvulling in overeenstemming te brengen
+* Gebruik slechts één pixelafmeting (breedte OF hoogte) om nieuwe vergroot- of verkleingedeelde afbeeldingen zonder opvulling te gebruiken
 * Altijd verscherpen gebruiken
 * URL Modifier-veld om extra opdrachten toe te voegen voor het wijzigen van het formaat van de voorinstelling Afbeelding
 
@@ -78,13 +79,13 @@ In deze video wordt beschreven hoe Voorinstellingen afbeelding worden gemaakt en
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
-In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen om gebruik te maken van functies van het bronbestand zelf, zoals achtergrondtransparantie, ingebouwde uitknippaden en uitsnijdpaden en tekst als variabelen, met de URL-opties van Dynamic Media.
+In deze video wordt beschreven hoe u afbeeldingen kunt vergroten of verkleinen om gebruik te maken van functies van het bronbestand zelf, zoals achtergrondtransparantie, ingebouwde uitknippaden en uitsnijdpaden en tekst als variabelen, met de URL-modifiers van Dynamic Media.
 
 * URL-wijzigingstoetsen gebruiken in het veld Dynamic Media Modifier
 * Achtergrondkleur wijzigen voor afbeeldingen met transparantie
 * Uitknippen naar een afbeeldingspad
 * Uitsnijden naar een afbeeldingspad
-* Een tekstsjabloon maken op basis van een Photoshop-bestand
+* Een tekstsjabloon maken van een Photoshop-bestand
 
 ## Bestandsgroottebeheer JPEG
 

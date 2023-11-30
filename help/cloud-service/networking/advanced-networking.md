@@ -6,11 +6,11 @@ feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
 level: Intermediate
-kt: 9354
+jira: KT-9354
 thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 AEM as a Cloud Service verstrekt geavanceerde voorzien van een netwerkeigenschappen die voor nauwkeurige beheer van verbindingen aan en van AEM as a Cloud Service programma&#39;s toestaan.
 
-|  | [Productieprogramma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Sandbox-programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
+|                                                   | [Productieprogramma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Sandbox-programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | Ondersteunt geavanceerd netwerken | ✔ | ✘ |
 
 
 AEM geavanceerde voorzien van een netwerk wordt samengesteld uit drie opties om connectiviteit met de externe diensten te beheren. Een programma van de Manager van de Wolk, en zijn AEM as a Cloud Service milieu&#39;s, kunnen slechts één enkel type van geavanceerde voorzien van een netwerkconfiguratie tegelijkertijd gebruiken, zodat ervoor zorgt dat het meest aangewezen type wordt geselecteerd.
 
-|  | HTTP/HTTPS op standaardpoorten | HTTP/HTTPS op niet-standaardpoorten | Niet-HTTP/HTTPS-verbindingen | Speciale IP-adressen | Lijst met &quot;Geen proxy-hosts&quot; | Verbinding maken met VPN-beveiligde services | Beperk AEM publicatieverkeer door IP |
+|                                   | HTTP/HTTPS op standaardpoorten | HTTP/HTTPS op niet-standaardpoorten | Niet-HTTP/HTTPS-verbindingen | Speciale IP-adressen | Lijst met &quot;Geen proxy-hosts&quot; | Verbinding maken met VPN-beveiligde services | Beperk AEM publicatieverkeer door IP |
 |-----------------------------------|:----------------------------:|:--------------------------------:|:--------------------------:|:-------------------:|:-------------------------------------:|:-------------------------------------:|:----:|
 | __Geen geavanceerde netwerken__ | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ |
 | [__Flexibele poortuitgang__](./flexible-port-egress.md) | ✔ | ✔ | ✔ | ✘ | ✘ | ✘ | ✘ |
@@ -98,7 +98,7 @@ Zorgen voor de juiste [geavanceerde netwerkconfiguratie](#advanced-networking) i
     </td>   
     </tr><tr>
     <td>
-      <a  href="./examples/sql-java-apis.md"><img alt="SQL-verbinding met Java API's" src="./assets/code-examples__sql-java-api.png"/></a>
+      <a  href="./examples/sql-java-apis.md"><img alt="SQL-verbinding met Java API&apos;s" src="./assets/code-examples__sql-java-api.png"/></a>
       <div><strong><a href="./examples/sql-java-apis.md">SQL-verbinding met Java™ API's</a></strong></div>
       <p>
             Java™-codevoorbeeld voor verbinding met externe SQL-databases met SQL API's van Java™.
@@ -112,10 +112,10 @@ Zorgen voor de juiste [geavanceerde netwerkconfiguratie](#advanced-networking) i
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Op pad gebaseerde VPN-toegangsbeperkingen voor AEM-publicatie" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Op pad gebaseerde VPN-toegangsbeperkingen voor AEM-publicatie</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Op pad gebaseerde VPN-toegangsbeperkingen voor AEM publiceren" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Op pad gebaseerde VPN-toegangsbeperkingen voor AEM publiceren</a></strong></div>
       <p>
-            Vereis de toegang van VPN voor specifieke wegen op publiceren AEM.
+            Vereis de toegang van VPN voor specifieke wegen op AEM publiceren.
       </p>
     </td>
 </tr>

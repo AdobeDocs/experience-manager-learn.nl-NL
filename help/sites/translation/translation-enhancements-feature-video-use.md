@@ -6,8 +6,9 @@ topic: Localization
 feature: Multi Site Manager, Language Copy
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 21633308-ffe4-4023-affe-59269504da69
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
@@ -24,13 +25,13 @@ AEM robuust vertaalframework kan AEM inhoud naadloos worden vertaald door onders
 
 AEM 6.5 vertaalverbeteringen zijn onder meer:
 
-**Vertaaltaken automatisch goedkeuren**: De goedkeuringsvlag in de vertaalbaan is een binair bezit. Het bestuurt niet of integreert niet met uit-van-de-doos overzicht en goedkeuringswerkschema&#39;s. Als u het aantal stappen in een vertaaltaak minimaal wilt houden, wordt Standaard ingesteld op &quot;automatisch goedkeuren&quot; in [!UICONTROL Advanced Properties] van een vertaalproject. Als uw organisatie goedkeuring voor een vertaaltaak vereist, kunt u de optie &quot;automatisch goedkeuren&quot; uitschakelen in [!UICONTROL Advanced Properties] van een vertaalproject.
+**Vertaaltaken automatisch goedkeuren**: De goedkeuringsvlag in de vertaalbaan is een binaire bezit. Het bestuurt niet of integreert niet met uit-van-de-doos overzicht en goedkeuringswerkschema&#39;s. Als u het aantal stappen in een vertaaltaak minimaal wilt houden, wordt Standaard ingesteld op &quot;automatisch goedkeuren&quot; in [!UICONTROL Advanced Properties] van een vertaalproject. Als uw organisatie goedkeuring voor een vertaaltaak vereist, kunt u de optie &quot;automatisch goedkeuren&quot; uitschakelen in [!UICONTROL Advanced Properties] van een vertaalproject.
 
-**Laden van vertalingen automatisch verwijderen**: In plaats van na het feit de lanceringen van vertalingen handmatig te verwijderen in Launches Admin, is het nu mogelijk om gelanceerde vertalingen automatisch te verwijderen nadat deze zijn gepromoveerd.
+**Laden van vertalingen automatisch verwijderen**: In plaats van na deze gebeurtenis handmatig de lanceringen van vertalingen te verwijderen in Launches Admin, is het nu mogelijk om gelanceerde vertalingen automatisch te verwijderen nadat deze zijn gepromoveerd.
 
 **Vertaalobjecten exporteren in JSON-indeling**: AEM 6.4 en eerdere versies ondersteunen XML- en XLIFF-indelingen van omzettingsobjecten. U kunt de exportindeling nu configureren naar de JSON-indeling met behulp van uw systeemconsole [!UICONTROL Config Manager]. Zoeken naar [!UICONTROL Translation Platform Configuration]en vervolgens kunt u de exportindeling selecteren als JSON.
 
-**Vertaalde AEM in het vertaalgeheugen (TMS) bijwerken**: lokale auteur die geen toegang tot AEM heeft, kan updates uitvoeren voor vertaalde inhoud, die al in AEM werd opgenomen, rechtstreeks in de TM (Vertaalgeheugen, in TMS) en de vertalingen in AEM bijwerken door de vertaalbaan van TMS aan AEM opnieuw te sturen
+**Vertaalde AEM in het vertaalgeheugen (TMS) bijwerken**: lokale auteur die geen toegang tot AEM heeft, kan updates uitvoeren naar vertaalde inhoud die al in AEM was opgenomen, rechtstreeks in de TM (vertaalgeheugen, in TMS) en de vertalingen in AEM bijwerken door de vertaaltaak van TMS naar AEM te verplaatsen
 
 ## Verbeteringen op gebied van vertaling in AEM 6.4
 

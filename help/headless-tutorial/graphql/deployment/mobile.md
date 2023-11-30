@@ -6,10 +6,10 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10796
+jira: KT-10796
 thumbnail: KT-10796.jpg
 exl-id: 1f536079-b3ce-4807-be88-804378e75d37
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -18,15 +18,15 @@ ht-degree: 0%
 
 # Mobiele implementaties zonder koptelefoon AEM
 
-AEM mobiele implementaties zonder koptelefoon zijn systeemeigen mobiele apps voor iOS, Android™, enz. die op een krantenloze manier inhoud verbruiken en interageren.
+AEM mobiele implementaties zonder koptelefoon zijn systeemeigen mobiele apps voor iOS, Android™, enz. die op een krantenloze manier inhoud verbruiken en interageren AEM.
 
 Mobiele implementaties vereisen een minimale configuratie, aangezien HTTP-verbindingen met AEM headless API&#39;s niet in de context van een browser worden gestart.
 
 ## Implementatieconfiguraties
 
-De volgende implementatieconfiguratie moet op zijn plaats zijn voor mobiele app-implementaties.
+De volgende implementatieconfiguratie moet op zijn plaats zijn voor mobiele apps.
 
-| Mobiele app maakt verbinding met | AEM-auteur | AEM-publicatie | Voorvertoning AEM |
+| Mobiele app maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |

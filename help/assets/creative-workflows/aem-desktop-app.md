@@ -6,31 +6,32 @@ topic: Content Management
 feature: Desktop App
 role: User
 level: Beginner
-kt: 2551
+jira: KT-2551
 thumbnail: 28868.jpeg
 last-substantial-update: 2022-06-24T00:00:00Z
+doc-type: Feature Video
 exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 1%
 
 ---
 
-# App AEM gebruiken
+# App voor AEM gebruiken
 
 Gebruik AEM Desktop App om de toegang tot middelen te vereenvoudigen die in AEM op Desktop, voor om het even welke toepassing en dossierformaat worden beheerd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
 
 + Middelen in AEM ontdekken via bladeren en zoeken met een toegewijde bureaubladtoepassing
-+ Geoptimaliseerd bandbreedtebeheer maakt het mogelijk veel grote middelen te uploaden en te downloaden
++ Met geoptimaliseerd bandbreedtebeheer kunt u veel grote middelen uploaden en downloaden
 + Mappen en middelen voor uploaden en downloaden in bulk
 + Gesynchroniseerde elementen offline openen
 
 >[!NOTE]
 >
-> [Adobe-itemkoppeling](./adobe-asset-link.md) is een speciale oplossing voor het werken met AEM Adobe Creative Cloud-toepassingen: Photoshop, Illustrator, InDesign. Als u AEM Assets in deze toepassingen gebruikt, heeft Adobe Asset Link de voorkeur boven AEM Desktop App.
+> [Adobe-itemkoppeling](./adobe-asset-link.md) is de speciale oplossing van Adobe voor het werken met AEM middelen binnen Adobe Creative Cloud toepassingen: Photoshop, Illustrator, InDesign. Als u AEM Assets in deze toepassingen gebruikt, heeft de Adobe Asset Link de voorkeur boven AEM Desktop App.
 
 ## Aanvullende bronnen
 

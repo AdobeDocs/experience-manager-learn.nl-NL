@@ -3,13 +3,13 @@ title: adaptief formulier maken
 description: Aangepast formulier maken en configureren voor gebruik van de vooraf ingevulde service van het formuliergegevensmodel
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5813
+jira: KT-5813
 thumbnail: kt-5813.jpg
 topic: Development
 role: User
 level: Beginner
 exl-id: c8d4eed8-9e2b-458c-90d8-832fc9e0ad3f
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Tot nu toe hebben we het volgende gecreëerd:
 * Gevormde Apache Sling Connection Pooled DataSource
 * Op RDBMS gebaseerd formuliergegevensmodel
 
-De volgende stap bestaat uit het maken en configureren van een adaptief formulier voor het gebruik van het formuliergegevensmodel.  Je kunt beginnen [downloaden en importeren](assets/fdm-demo-af.zip) voorbeeldformulier. Het voorbeeldformulier bevat een sectie waarin de werknemersgegevens worden weergegeven en een ander gedeelte waarin de begunstigden van de werknemers worden vermeld.
+De volgende stap bestaat uit het maken en configureren van een adaptief formulier voor het gebruik van het formuliergegevensmodel.  Je kunt een eerste start maken [downloaden en importeren](assets/fdm-demo-af.zip) voorbeeldformulier. Het voorbeeldformulier bevat een sectie waarin de werknemersgegevens worden weergegeven en een ander gedeelte waarin de begunstigden van de werknemers worden vermeld.
 
 ## Formulier koppelen aan formuliergegevensmodel
 
@@ -32,7 +32,7 @@ Het voorbeeldformulier dat bij deze cursus wordt geleverd, is niet gekoppeld aan
 
 * Het FDMDemo-formulier selecteren
 * Klikken op _Eigenschappen_->_Formuliermodel_
-* Selecteer Formuliergegevensmodel in de vervolgkeuzelijst
+* Selecteer een formuliergegevensmodel in de vervolgkeuzelijst
 * Zoek en selecteer het formuliergegevensmodel dat u in de vorige les hebt gemaakt.
 * Klikken op _Opslaan en sluiten_
 
@@ -40,10 +40,10 @@ Het voorbeeldformulier dat bij deze cursus wordt geleverd, is niet gekoppeld aan
 
 De eerste stap bestaat uit het koppelen van de vooraf ingevulde service voor het formulier. Volg de onderstaande stappen om vooraf ingevulde services te koppelen
 
-* Selecteer `FDMDemo` formulier
-* Klikken _Bewerken_ om het formulier te openen in de bewerkingsmodus
+* Selecteer de `FDMDemo` formulier
+* Klikken _Bewerken_ het formulier openen in de bewerkingsmodus
 * Selecteer Formuliercontainer in de inhoudshiërarchie en klik op het moersleutelpictogram om het eigenschappenblad te openen
-* Selecteren _Vooraf ingevulde service Formuliergegevensmodel_ in de vervolgkeuzelijst Prefill Service
+* Selecteren _Vooraf ingevulde service Formuliergegevensmodel_ in de vervolgkeuzelijst Prefill-service
 * Klik op blauwe ☑ om uw wijzigingen op te slaan
 
 * ![Prefill-service](assets/fdm-prefill.png)
@@ -72,7 +72,7 @@ De volgende stap is de begunstigden van de werknemer in tabelvorm te tonen. Het 
 * De bindingsverwijzing instellen op **/newhire/GetEmployeeBeneficiaries**
 * Stel Herhalingsinstellingen - Minimum aantal in op 1 en Maximum aantal op 5.
 * Uw configuratie Row1 zou als het scherm moeten kijken dat hieronder wordt ontsproten
-   ![row-configure](assets/configure-row.PNG)
+  ![row-configure](assets/configure-row.PNG)
 * Klik op de blauwe ☑ om uw wijzigingen op te slaan
 
 ## Rijcellen binden
@@ -108,5 +108,5 @@ Mijn formulier is leeg en bevat geen gegevens
 
 Tabel is niet gevuld
 
-* Controleer de binding Row1
+* De binding Row1 controleren
 * Controleer of de herhalingsinstellingen voor Rij1 correct zijn ingesteld (Min =1 en Max = 5 of meer)

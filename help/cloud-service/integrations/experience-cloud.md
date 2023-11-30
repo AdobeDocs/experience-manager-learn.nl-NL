@@ -6,14 +6,14 @@ feature: Integrations
 topic: Integrations
 role: Leader, Architect, Admin, Developer
 level: Beginner
-kt: 10718
+jira: KT-10718
 thumbnail: KT-10718.png
 last-substantial-update: 2022-11-17T00:00:00Z
 mini-toc-levels: 1
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 # AEM as a Cloud Service integratie met Adobe Experience Cloud
 
 Meer informatie over AEM door as a Cloud Service ondersteunde integratie met andere Adobe Experience Cloud-producten.
-Klik op het product van de Experience Cloud voor documentatie over om de integratie te vormen en te gebruiken.
+Klik op het product van het Experience Cloud voor documentatie over om de integraties te vormen en te gebruiken.
 
 |                                                                   | AEM Sites | AEM Assets | AEM Forms |
 |-------------------------------------------------------------------|:---------:|:----------:|:---------:|
@@ -47,7 +47,7 @@ Klik op het product van de Experience Cloud voor documentatie over om de integra
 
 ## Adobe Acrobat Sign
 
-Adobe Acrobat Sign (voorheen Acrobat Sign) maakt workflows voor e-handtekeningen mogelijk voor adaptieve formulieren van AEM Forms door workflows te verbeteren voor het verwerken van documenten voor juridische documenten, verkoop, salaris, HR en andere gebieden.
+Adobe Acrobat Sign (voorheen Acrobat Sign) maakt workflows voor e-handtekeningen mogelijk voor adaptieve formulieren van AEM Forms door workflows te verbeteren voor het verwerken van documenten voor juridische documenten, verkoop, salarisgegevens, HR en andere gebieden.
 
 ### AEM Forms
 
@@ -56,7 +56,7 @@ Adobe Acrobat Sign (voorheen Acrobat Sign) maakt workflows voor e-handtekeningen
 
 ## Adobe Analytics
 
-Dankzij de Adobe Analytics-integratie met AEM as a Cloud Service kunt u de activiteit van de inhoud volgen en gegevens van overal in de reis van de klant analyseren. En kies voor veelzijdige rapportering, voorspellende intelligentie en nog veel meer.
+Dankzij de Adobe Analytics-integratie met AEM as a Cloud Service kunt u de activiteit van de inhoud volgen en gegevens van elke locatie in de reis van de klant analyseren. En kies voor veelzijdige rapportering, voorspellende intelligentie en nog veel meer.
 
 ### AEM Sites
 
@@ -96,17 +96,17 @@ Dankzij de Adobe Commerce-integratie met AEM as a Cloud Service kunnen merken sn
 
 ## Adobe Experience Platform-tags
 
-Adobe Experience Platform-tags (voorheen Adobe Launch, DTM) kunnen naadloos worden geïntegreerd met AEM, zodat u eenvoudig kunt implementeren en beheren [analyse](#adobe-analytics), [doelgericht](#adobe-target), marketing en advertentietags die nodig zijn voor aantrekkelijke ervaringen van klanten.
+Adobe Experience Platform-tags (voorheen Adobe Launch, DTM) worden naadloos geïntegreerd met AEM, waardoor een eenvoudige manier wordt geboden om te implementeren en te beheren [analyse](#adobe-analytics), [doelgerichtheid](#adobe-target), marketing en advertentietags die nodig zijn voor aantrekkelijke ervaringen van klanten.
 
 ### AEM Sites
 
 + [Gebruikershandleiding voor tags Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Zelfstudie over Experience Platforms](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
++ [Zelfstudie over Experience Platform-tags](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
 ### AEM Forms
 
 + [Gebruikershandleiding voor tags Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Zelfstudie over Experience Platforms](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
++ [Zelfstudie over Experience Platform-tags](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
 ## Adobe Journey Optimizer
 
@@ -116,9 +116,9 @@ Met Adobe Journey Optimizer kunt u omnichannel-campagnes en een-op-een-momenten 
 
 + [AEM Assets Essentials integreren met Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html)
 
-## Adobe Learning Manager
+## Adobe Leerbeheer
 
-Adobe Learning Manager (voorheen Adobe Captivate Prime) biedt gepersonaliseerde leermogelijkheden voor klanten en werknemers.
+De Leermanager van de Adobe (vroeger Adobe Captivate Prime) levert gepersonaliseerd leren aan klanten en werknemers.
 
 ### AEM Sites
 
@@ -142,7 +142,7 @@ Adobe Sensei biedt AI- en computerleertechnologie om het proces van contentbehee
 
 ### AEM Forms
 
-+ [automatede form conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
++ [Automatede form conversion-service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 
 ## Adobe Target

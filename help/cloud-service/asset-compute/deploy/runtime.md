@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6286
+jira: KT-6286
 thumbnail: KT-6286.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 0327cf61-fd51-4fa7-856d-3febd49c01a0
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -27,9 +27,9 @@ De projecten van de asset compute, en de arbeiders die zij bevatten, moeten aan 
 Bij de implementatie naar Adobe I/O Runtime voor gebruik door AEM as a Cloud Service auteur zijn slechts twee omgevingsvariabelen vereist:
 
 + `AIO_runtime_namespace` wijst de Werkruimte van de Bouwer van de App om op te stellen
-+ `AIO_runtime_auth` zijn de verificatiereferenties van de App Builder-werkruimte
++ `AIO_runtime_auth` zijn de verificatiegegevens van de App Builder-werkruimte
 
-De andere standaardvariabelen die in het `.env` Het bestand wordt impliciet door AEM as a Cloud Service verschaft wanneer de Asset compute worker wordt aangeroepen.
+De andere standaardvariabelen die in het `.env` Het bestand wordt impliciet door AEM as a Cloud Service verschaft wanneer de Asset compute-worker wordt aangeroepen.
 
 ## Werkruimte Ontwikkeling
 
@@ -51,11 +51,11 @@ De werkruimten Werkgebied en Productie worden typisch opgesteld door uw systeem 
 
 Als u werkelijke omgevingsvariabelen instelt, worden de waarden voor dezelfde variabelen overschreven in `.env`.
 
-![Implementatie van apps met behulp van exportvariabelen](./assets/runtime/stage__export-and-aio.png)
+![Implementatie van een AIR-toepassing met behulp van exportvariabelen](./assets/runtime/stage__export-and-aio.png)
 
 De algemene aanpak, die doorgaans door een CI/CD-systeem wordt geautomatiseerd, voor de implementatie in werkgebied- en productieomgevingen is:
 
-1. Zorg ervoor dat de [Adobe I/O CLI npm module en Asset compute plug-in](../set-up/development-environment.md#aio) zijn geïnstalleerd
+1. Zorg ervoor dat [Adobe I/O CLI npm module en Asset compute plug-in](../set-up/development-environment.md#aio) zijn geïnstalleerd
 1. Controle uit het project van de Asset compute om van Git op te stellen
 1. De omgevingsvariabelen instellen met de waarden die overeenkomen met de doelwerkruimte (werkgebied of productie)
    + De twee vereiste variabelen zijn `AIO_runtime_namespace` en `AIO_runtime_auth` en worden per werkruimte in de Adobe I/O Developer Console verkregen via de Workspace __Alles downloaden__ gebruiken.
@@ -80,6 +80,6 @@ Als de projectversie van de Asset compute verandert, veranderen de worker-URL&#3
 
 ## Workspace API-provisioning{#workspace-api-provisioning}
 
-Wanneer [vestiging App Builder project in Adobe I/O](../set-up/app-builder.md) ter ondersteuning van lokale ontwikkeling is een nieuwe werkruimte voor ontwikkeling gecreëerd en __asset compute, I/O-gebeurtenissen__ en __API&#39;s voor I/O Events Management__ zijn toegevoegd.
+Wanneer [vestiging App Builder project in Adobe I/O](../set-up/app-builder.md) ter ondersteuning van lokale ontwikkeling is een nieuwe werkruimte voor ontwikkeling gecreëerd en __Asset compute, I/O-gebeurtenissen__ en __API&#39;s voor I/O Events Management__ zijn toegevoegd.
 
-De __asset compute, I/O-gebeurtenissen__ en __API&#39;s voor I/O Events Management__ APIS wordt alleen expliciet toegevoegd aan de werkruimten die worden gebruikt voor lokale ontwikkeling. Werkruimten die (uitsluitend) integreren met AEM as a Cloud Service omgevingen doen __niet__ Deze API&#39;s moeten expliciet worden toegevoegd omdat de API&#39;s van nature beschikbaar worden gemaakt voor AEM as a Cloud Service.
+De __Asset compute, I/O-gebeurtenissen__ en __API&#39;s voor I/O Events Management__ APIS wordt alleen expliciet toegevoegd aan de werkruimten die worden gebruikt voor lokale ontwikkeling. Werkruimten die (uitsluitend) integreren met AEM as a Cloud Service omgevingen doen __niet__ Deze API&#39;s moeten expliciet worden toegevoegd omdat de API&#39;s van nature beschikbaar worden gemaakt voor AEM as a Cloud Service.

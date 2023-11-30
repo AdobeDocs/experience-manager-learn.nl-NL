@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 96c8dd09-e0a7-4abc-b04b-a805aaa67502
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 1%
@@ -27,7 +28,7 @@ Begin met een basisinstallatie van Apache Web Server op een Linux-server.
 
 Basisuitleg van wat een Apache-server doet:
 
-- Volg eenvoudige regels om bestanden via de HTTP(S)-protocollen vanuit de statische documentmap te bedienen (`DocumentRoot`)
+- Volg eenvoudige regels om bestanden via de HTTP(S)-protocollen vanuit de statische documentmap (`DocumentRoot`)
 - Bestanden die op een standaardlocatie zijn opgeslagen (`/var/www/html`) op aanvragen worden afgehandeld en in de browser van de verzoekende client worden weergegeven
 
 
@@ -39,7 +40,7 @@ Voeg vervolgens een plug-in toe aan de Apache Web Server, de zogenaamde Dispatch
 
 Basisuitleg van wat de module Adobe AEM Dispatcher doet:
 
-- Hiermee wordt de standaardbestandshandler vergroot
+- Hiermee wordt de standaardbestandshandler versterkt
 - Filtert uit slechte verzoeken/beschermt AEM zachte buik/eindpunten
 - Taakbalansen als er meer dan één renderer aanwezig is
 - Staat voor een levende geheim voorgeheugenfolder/steunt het spoelen van stagnerende dossiers toe
@@ -49,7 +50,7 @@ Basisuitleg van wat de module Adobe AEM Dispatcher doet:
 
 ## Workflow voor webverkeer
 
-Als u begrijpt welke onderdelen samen zijn geïnstalleerd om een standaard Dispatcher-server te maken, krijgt u begrip van de basisworkflow voor webverkeer voor een Adobe Manager-configuratie.
+Begrijpen welke stukken samen worden geïnstalleerd om een basisserver van de Verzender te bouwen leidt ons om u te hebben de basiswerkschema van het Webverkeer voor een configuratie van de Diensten van de Manager van de Adobe begrijpen.
 Dit zou u moeten helpen begrijpen welke rol het in de ketting van systemen speelt die inhoud aan bezoekers van uw AEM inhoud dienen.
 
 <b>Reeds in cache opgeslagen inhoud verzenden</b>

@@ -3,13 +3,13 @@ title: Problemen oplossen met het ondertekenen van meerdere documenten
 description: De oplossing testen en problemen oplossen
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 6960
+jira: KT-6960
 thumbnail: 6960.jpg
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -27,7 +27,7 @@ De workflow Meerdere Forms ondertekenen leidt tot het verzenden van dit formulie
 
 ## Formulieren invullen in het pakket
 
-De klant wordt voorgesteld om het eerste formulier in het pakket in te vullen en te ondertekenen. Nadat het formulier is ondertekend, kan de klant naar het volgende formulier in het pakket navigeren. Nadat alle formulieren zijn ingevuld en ondertekend, wordt de klant de &quot;**AllDone**&quot;formulier.
+De klant wordt voorgesteld om het eerste formulier in het pakket in te vullen en te ondertekenen. Nadat het formulier is ondertekend, kan de klant naar het volgende formulier in het pakket navigeren. Nadat alle formulieren zijn ingevuld en ondertekend, krijgt de klant de aanduiding &quot;**AllDone**&quot;formulier.
 
 ## Problemen oplossen
 
@@ -45,7 +45,7 @@ Dit kan gebeuren als het formulier niet correct is ingevuld door de gegevens van
 
 ### Kan niet naar het volgende formulier in het pakket navigeren
 
-Wanneer een formulier met succes is ondertekend in het pakket, wordt de workflow Handtekeningstatus bijwerken geactiveerd. De eerste stap in de workflow werkt de status van de handtekening van het formulier in de database bij. Controleer of de status voor het formulier is bijgewerkt van 0 tot en met 1.
+Wanneer een formulier met succes is ondertekend in het pakket, wordt de workflow Handtekeningstatus bijwerken geactiveerd. De eerste stap in de workflow werkt de status van de handtekening van het formulier in de database bij. Controleer of de status voor het formulier is bijgewerkt van 0 tot 1.
 
 ### Het AllDone-formulier niet zien
 

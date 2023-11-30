@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 feature: Core Components
-kt: 10373
+jira: KT-10373
 exl-id: ab01573a-e95f-4041-8ccf-16046d723aba
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -22,7 +22,7 @@ AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 
 **Zoeken en registreren**: Met deze component kunt u formulieren weergeven vanuit de formulieropslagplaats naar uw portalpagina en configuratieopties voor het weergeven van formulieren op basis van opgegeven criteria.
 
-**Concepten en verzendingen**: In het onderdeel Zoeken en opslaan worden formulieren weergegeven die door de auteur van Forms openbaar zijn gemaakt, maar in het onderdeel Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Deze component verstrekt gepersonaliseerde ervaring aan om het even welke het programma geopende gebruiker.
+**Concepten en verzendingen**: In de component Zoeken en opslaan worden formulieren weergegeven die door de auteur van Forms openbaar zijn gemaakt, maar in de component Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Deze component verstrekt gepersonaliseerde ervaring aan om het even welke aangemelde gebruiker.
 
 **Koppeling**: Met deze component kunt u overal op de pagina een koppeling naar een formulier maken.
 

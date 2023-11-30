@@ -1,14 +1,15 @@
 ---
 title: AMS Dispatcher Basic File Layout
-description: Begrijp de basisbestandslay-out van Apache en Dispatcher.
+description: Begrijp de basisbestandsindeling van Apache en Dispatcher.
 version: 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 [Inhoudsopgave](./overview.md)
 
-[&lt;- Vorige: Wat is &quot;De verzender&quot;?](./what-is-the-dispatcher.md)
+[&lt;- Vorige: wat is &quot;De verzender&quot;](./what-is-the-dispatcher.md)
 
 In dit document wordt de standaardset configuratiebestanden van AMS beschreven en wordt de gedachte achter deze configuratiestandaard uitgelegd
 
@@ -53,12 +54,12 @@ In AMS gebruikt de basisinstallatie Enterprise Linux als het basisbesturingssyst
 Wanneer het volgende en het naleven van het installatieontwerp/de structuur krijgen wij de volgende voordelen:
 
 - Eenvoudiger ondersteuning voor een voorspelbare indeling
-- Automatisch bekend bij iedereen die in het verleden aan Enterprise Linux HTTPD-installaties heeft gewerkt
+- Automatisch bekend bij iedereen die in het verleden aan Enterprise Linux HTTPD heeft gewerkt
 - Hiermee worden patchcycli toegestaan die volledig worden ondersteund door het besturingssysteem zonder conflicten of handmatige aanpassingen
 - Hiermee voorkomt u schendingen van SELinux van verkeerd gelabelde bestandskaders
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-De serverimages van Adobe Managed Services bevatten doorgaans kleine hoofdstations van het besturingssysteem.  Wij zetten onze gegevens in een afzonderlijk volume dat typisch in `/mnt"wordt opgezet dan gebruiken wij dat volume in plaats van de gebreken voor de volgende standaardfolders
+De Adobe Managed Services-serverimages hebben doorgaans kleine hoofdstations van het besturingssysteem.  Wij zetten onze gegevens in een afzonderlijk volume dat typisch in `/mnt"wordt opgezet dan gebruiken wij dat volume in plaats van de gebreken voor de volgende standaardfolders
 
 `DocumentRoot`
 - Standaard:`/var/www/html`
@@ -83,7 +84,7 @@ AMS-standaardachterbasis voor documenten:
    - `/mnt/var/www/author/`
 - Publicatie:
    - `/mnt/var/www/html/`
-- Onderhoud van alle vangsten en health check
+- Onderhoud van alle vangsten en de health check
    - `/mnt/var/www/default/`
 
 ### Staging en Enabled VirtualHost Directories
@@ -126,11 +127,11 @@ We volgen de beste praktijken en creëerden onze eigen
 
 - `/etc/httpd/conf.dispatcher.d/`
 
-#### Staging en ingeschakelde boerderij
+#### Staging en ingeschakelde kwekerij
 
 Met de volgende mappen kunt u configuratiebestanden samenstellen met een parkeergebied dat u kunt bewerken aan bestanden en vervolgens alleen kunt inschakelen wanneer deze gereed zijn.
 - `/etc/httpd/conf.dispatcher.d/available_farms/`
-   - In deze map worden alle `/myfarm {` bestanden die `_farm.any`
+   - In deze map worden alle `/myfarm {` bestanden aangeroepen `_farm.any`
 - `/etc/httpd/conf.dispatcher.d/enabled_farms/`
    - Wanneer u bereid bent om het landbouwbedrijfdossier te gebruiken, hebt u binnen de available_farm omslag symlink hen gebruikend een relatieve weg in de enabled_farm folder
 
@@ -273,9 +274,9 @@ Hoe minder geïnstalleerde standaardbestanden u hoe beter verandert, omdat als e
 
 In plaats daarvan wordt een `.rpmnew` naast het origineel.  Dit betekent u sommige veranderingen zult missen u zou kunnen gewild en meer huisvuil in uw configuratiemappen tot stand gebracht hebben.
 
-De RPM tijdens de installatie van de update zal dus kijken naar `httpd.conf` als het in `unaltered` verklaren dat *vervangen* en u krijgt de essentiële updates.  Als de `httpd.conf` was `altered` dan *niet vervangen* het bestand en maakt in plaats daarvan een referentiebestand met de naam `httpd.conf.rpmnew` en de vele gewenste moeilijke situaties zullen in dat dossier zijn dat niet op de dienstopstarten van toepassing is.
+dat wil zeggen: De RPM tijdens updateinstallatie zal bekijken `httpd.conf` als het in `unaltered` verklaren dat *vervangen* en u krijgt de essentiële updates.  Als de `httpd.conf` was `altered` dan *niet vervangen* het bestand en maakt een referentiebestand met de naam `httpd.conf.rpmnew` en de vele gewenste moeilijke situaties zullen in dat dossier zijn dat niet op de dienstopstarten van toepassing is.
 
-Enterprise Linux is op de juiste wijze ingesteld om deze gebruiksaanwijzing op een betere manier af te handelen.  U krijgt gebieden waarin u de standaardinstellingen die u voor u instelt, kunt uitbreiden of overschrijven.  In de basisinstallatie van httpd vindt u het bestand `/etc/httpd/conf/httpd.conf`en bevat de syntaxis zoals:
+Enterprise Linux is op de juiste wijze ingesteld om deze gebruikszaak op een betere manier te verwerken.  U krijgt gebieden waarin u de standaardinstellingen die u voor u instelt, kunt uitbreiden of overschrijven.  In de basisinstallatie van httpd vindt u het bestand `/etc/httpd/conf/httpd.conf`en bevat de syntaxis zoals:
 
 ```
 Include conf.modules.d/.conf

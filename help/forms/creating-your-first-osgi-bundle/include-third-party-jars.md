@@ -1,16 +1,16 @@
 ---
 title: Inclusief jars van derden
-description: Leer jar-bestand van derden te gebruiken in uw AEM project
+description: Leer jar-bestand van derden te gebruiken in uw AEM-project
 version: 6.4,6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Beginner
-kt: 11245
+jira: KT-11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
 exl-id: e8841c63-3159-4f13-89a1-d8592af514e3
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Als uw bundel OSGi op uw dossiersysteem is, creeer een omslag genoemd **localjar
 
 We voegen deze bundel toe aan ons AEM project **AEMFormsProcessStep** die in het **c:\aemformsbundles** map
 
-* Open de **filter.xml** van C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault folder of your project Make a note of the root attribute of the filter element.
+* Open de **filter.xml** in de map C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault van uw project Noteer het hoofdkenmerk van het filterelement.
 
 * De volgende mapstructuur C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\jcr_root\apps\AEMFormsProcessStep-vendor-packages\application\install maken
 * De **apps/AEMFormsProcessStep-vendor-packages** is de waarde van het wortelattribuut in filter.xml
@@ -60,5 +60,5 @@ We voegen deze bundel toe aan ons AEM project **AEMFormsProcessStep** die in het
 mvn clean install -PautoInstallSinglePackage
 ```
 
-Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM-instantie geïnstalleerd. U kunt op de bundel controleren gebruikend [felix-webconsole](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van het dialoogvenster `crx` opslagplaats zoals hieronder weergegeven
+Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM geïnstalleerd. U kunt op de bundel controleren gebruikend [felix-webconsole](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van het dialoogvenster `crx` opslagplaats zoals hieronder weergegeven
 ![derde](assets/custom-bundle1.png)

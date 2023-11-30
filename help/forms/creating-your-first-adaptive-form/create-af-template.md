@@ -5,9 +5,9 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Beginner
-kt: 5859
+jira: KT-5859
 thumbnail: 37324.jpg
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Aangepaste formuliersjabloon maken
 
-Elk adaptief formulier is gebaseerd op een adaptief formuliersjabloon. De sjabloon definieert de structuur, de initiële inhoud, het thema, enz. van het aangepaste formulier. U kunt een nieuwe adaptieve formuliersjabloon maken of de sjabloon uit het vak gebruiken wanneer u het aangepaste formulier maakt.
+Elk adaptief formulier is gebaseerd op een adaptief formulier. De sjabloon definieert de structuur, de initiële inhoud, het thema, enz. van het aangepaste formulier. U kunt een nieuwe adaptieve formuliersjabloon maken of de sjabloon uit het vak gebruiken wanneer u het aangepaste formulier maakt.
 Het sjabloon dat hier is gemaakt, vormt de basis voor ons adaptieve formulier.
 In de volgende video ziet u het basisproces voor het maken van een adaptieve formuliersjabloon
 

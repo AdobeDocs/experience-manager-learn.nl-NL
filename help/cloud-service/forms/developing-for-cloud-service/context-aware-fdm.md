@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 feature: Developer Tools
-kt: 10423
+jira: KT-10423
 exl-id: 2ce0c07b-1316-4170-a84d-23430437a9cc
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Contextbewuste cloudconfiguraties
 
-Wanneer u wolkenconfiguratie in uw lokale milieu en bij succesvol het testen creeert zou u de zelfde wolkenconfiguratie in uw stroomopwaartse milieu&#39;s maar zonder het moeten het eindpunt, geheime sleutel/wachtwoord en of gebruikersbenaming veranderen. Om dit gebruiksgeval te bereiken, heeft AEM Forms on Cloud Service de mogelijkheid geïntroduceerd om context-bewuste wolkenconfiguraties te definiëren.
+Wanneer u wolkenconfiguratie in uw lokale milieu en bij succesvol het testen creeert zou u de zelfde wolkenconfiguratie in uw stroomopwaartse milieu&#39;s willen gebruiken maar zonder het moeten het eindpunt, geheime sleutel/wachtwoord en of gebruikersbenaming veranderen. Om dit gebruiksgeval te bereiken, heeft AEM Forms on Cloud Service de mogelijkheid geïntroduceerd om context-bewuste wolkenconfiguraties te definiëren.
 De cloudconfiguratie van de Azure-opslagaccount kan bijvoorbeeld opnieuw worden gebruikt in ontwikkelings-, werkgebied- en productieomgevingen met behulp van verschillende verbindingstekenreeksen en -sleutels.
 
 De volgende stappen zijn nodig om een contextbewuste cloudconfiguratie te maken

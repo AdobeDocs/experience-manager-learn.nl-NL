@@ -4,15 +4,12 @@ description: Een videodemo over het installeren en gebruiken van Apache Sling Dy
 version: 6.4, 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
-topics: caching
-activity: develop
-audience: architect, developer
-doc-type: technical video
+doc-type: Technical Video
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -80,7 +77,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
    -->
    ```
 
-1. Bijwerken [!DNL Apache HTTPD Web server]s `httpd.conf` bestand om het [!DNL Include] module.
+1. Bijwerken [!DNL Apache HTTPD Web server]s `httpd.conf` bestand om het [!DNL Include] -module.
 
    ```shell
    $ sudo vi .../httpd.conf
@@ -115,7 +112,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
    </VirtualHost>
    ```
 
-1. Update het dispatcher.any-configuratiebestand dat moet worden ondersteund (1) `nocache` selecteurs en (2) laat de steun van TTL toe.
+1. Update het dispatcher.any-configuratiebestand ter ondersteuning (1) `nocache` selecteurs en (2) laat de steun van TTL toe.
 
    ```shell
    $ sudo vi .../conf/dispatcher.any
@@ -133,7 +130,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
 
    >[!TIP]
    >
-   > De slede verlaten `*` in de wereld `*.nocache.html*` lijn boven, kan resulteren in [kwesties in verzoeken om submiddelen](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
+   > De slede verlaten `*` op de gloed `*.nocache.html*` lijn boven, kan resulteren in [kwesties in verzoeken om submiddelen](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
 
    ```shell
    /cache {
@@ -161,7 +158,6 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
 >* &quot;X-Content-Type-Options&quot;
 >* &quot;Laatst gewijzigd&quot;
 >
-
 
 ## Ondersteunende materialen
 

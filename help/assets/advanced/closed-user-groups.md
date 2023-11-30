@@ -1,16 +1,17 @@
 ---
 title: Gesloten gebruikersgroepen in AEM Assets
-description: Gesloten gebruikersgroepen (CUG's) is een functie die wordt gebruikt om de toegang tot inhoud te beperken tot een bepaalde groep gebruikers op een gepubliceerde site. In deze video ziet u hoe groepen van gebruikers met gesloten deuren kunnen worden gebruikt met Adobe Experience Manager Assets om de toegang tot een specifieke map met middelen te beperken.
+description: Gesloten gebruikersgroepen (CUG's) is een functie die wordt gebruikt om de toegang tot inhoud te beperken tot een bepaalde groep gebruikers op een gepubliceerde site. In deze video ziet u hoe gebruikersgroepen met gesloten deuren met Adobe Experience Manager Assets kunnen worden gebruikt om de toegang tot een specifieke map met elementen te beperken.
 version: 6.4, 6.5, Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
 level: Intermediate
-kt: 649
+jira: KT-649
 thumbnail: 22155.jpg
 last-substantial-update: 2022-06-06T00:00:00Z
+doc-type: Feature Video
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -19,13 +20,13 @@ ht-degree: 0%
 
 # Gesloten gebruikersgroepen{#using-closed-user-groups-with-aem-assets}
 
-Gesloten gebruikersgroepen (CUG&#39;s) is een functie die wordt gebruikt om de toegang tot inhoud te beperken tot een bepaalde groep gebruikers op een gepubliceerde site. In deze video ziet u hoe groepen van gebruikers met gesloten deuren kunnen worden gebruikt met Adobe Experience Manager Assets om de toegang tot een specifieke map met middelen te beperken. Ondersteuning voor gesloten gebruikersgroepen met AEM Assets werd voor het eerst geïntroduceerd in AEM 6.4.
+Gesloten gebruikersgroepen (CUG&#39;s) is een functie die wordt gebruikt om de toegang tot inhoud te beperken tot een bepaalde groep gebruikers op een gepubliceerde site. In deze video ziet u hoe gebruikersgroepen met gesloten deuren met Adobe Experience Manager Assets kunnen worden gebruikt om de toegang tot een specifieke map met elementen te beperken. Ondersteuning voor gesloten gebruikersgroepen met AEM Assets werd voor het eerst geïntroduceerd in AEM 6.4.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22155?quality=12&learn=on)
 
-## Gesloten gebruikersgroep (CUG) met AEM Assets
+## Gebruikersgroep (CUG) met AEM Assets
 
-* Ontworpen om toegang tot elementen op een AEM-publicatie-instantie te beperken.
+* Ontworpen om toegang tot elementen op een AEM instantie Publish te beperken.
 * Subsidies lezen toegang tot een set gebruikers/groepen.
 * CUG kan alleen op mapniveau worden geconfigureerd. CUG kan niet worden ingesteld voor afzonderlijke elementen.
 * Het CUG-beleid wordt automatisch overgeërfd door submappen en toegepaste elementen.
@@ -35,10 +36,10 @@ Gesloten gebruikersgroepen (CUG&#39;s) is een functie die wordt gebruikt om de t
 
 Zowel worden de Gesloten Groepen van de Gebruiker (KUG) als de Lijsten van het Toegangsbeheer (ACL) gebruikt om toegang tot inhoud in AEM te controleren en op AEM gebruikers en groepen van de Veiligheid gebaseerd. De toepassing en implementatie van deze functies is echter heel anders. De volgende tabel geeft een overzicht van het onderscheid tussen de twee functies.
 
-|  | ACL | CUG |
+|                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Beoogd gebruik | Machtigingen configureren en toepassen voor inhoud op de **huidig** AEM. | CUG-beleid configureren voor inhoud op AEM **auteur** -instantie. CUG-beleid toepassen op inhoud op AEM **publish** instantie(s). |
-| Machtigingsniveaus | Bepaalt verleende/ontkende toestemmingen voor gebruikers/groepen voor alle niveaus: Lees, wijzig, creeer, schrap, leest ACL, geef ACL uit, herhaal. | Subsidies lezen toegang tot een set gebruikers/groepen. Leestoegang wordt geweigerd *alle andere* gebruikers/groepen. |
+| Beoogd gebruik | Machtigingen configureren en toepassen voor inhoud op de **huidig** AEM instantie. | CUG-beleid configureren voor inhoud op AEM **auteur** -instantie. CUG-beleid toepassen op inhoud op AEM **publish** instantie(s). |
+| Machtigingsniveaus | Bepaalt verleende/ontkende toestemmingen voor gebruikers/groepen voor alle niveaus: Lees, wijzig, creeer, schrap, leest ACL, geef ACL uit, kopieer. | Subsidies lezen toegang tot een set gebruikers/groepen. Leestoegang wordt geweigerd *alle andere* gebruikers/groepen. |
 | Publicatie | ACLs is *niet* gepubliceerd met inhoud. | CUG-beleid *zijn* gepubliceerd met inhoud. |
 
 ## Ondersteunende koppelingen {#supporting-links}

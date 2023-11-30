@@ -6,10 +6,10 @@ feature: Security
 topic: Development, Security
 role: Architect, Developer
 level: Intermediate
-kt: 9353
+jira: KT-9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
-source-git-commit: c34c27955dbc084620ac4dd811ba4051ea83f447
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -22,7 +22,7 @@ E-mails verzenden vanuit AEM as a Cloud Service door AEM te configureren `Defaul
 
 Omdat (de meeste) de postdiensten niet over HTTP/HTTPS lopen, moeten de verbindingen aan de postdiensten van AEM as a Cloud Service proxied uit zijn.
 
-+ `smtp.host` wordt ingesteld op de OSGi-omgevingsvariabele `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` het wordt dus door het egress geleid .
++ `smtp.host` wordt ingesteld op de OSGi-omgevingsvariabele `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` het wordt dus door het egress gerouteerd .
    + `$[env:AEM_PROXY_HOST]` is een gereserveerde variabele die AEM as a Cloud Service toewijzingen naar de interne `proxy.tunnel` host.
    + Probeer NIET om de `AEM_PROXY_HOST` via Cloud Manager.
 + `smtp.port` is ingesteld op `portForward.portOrig` poort die is toegewezen aan de host en poort van de e-mailservice van de bestemming. In dit voorbeeld wordt de toewijzing gebruikt: `AEM_PROXY_HOST:30465` → `smtp.sendgrid.com:465`.
@@ -30,7 +30,7 @@ Omdat (de meeste) de postdiensten niet over HTTP/HTTPS lopen, moeten de verbindi
 
 Aangezien geheimen niet in code moeten worden opgeslagen, kunnen de gebruikersnaam en het wachtwoord van de e-mailservice het beste worden opgegeven met [geheime OSGi configuratievariabelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), instellen met behulp van AIO CLI of de Cloud Manager-API.
 
-Doorgaans [flexibel poortbereik](../flexible-port-egress.md) wordt gebruikt om te voldoen aan integratie met een e-mailservice, tenzij het nodig is `allowlist` het IP van de Adobe, in welk geval [toegewezen IP-adres egress](../dedicated-egress-ip-address.md) kan worden gebruikt.
+Doorgaans [flexibel poortbereik](../flexible-port-egress.md) wordt gebruikt om te voldoen aan integratie met een e-mailservice, tenzij het nodig is `allowlist` de Adobe IP, in welk geval [toegewezen IP-adres egress](../dedicated-egress-ip-address.md) kan worden gebruikt.
 
 Raadpleeg de documentatie AEM aanvullende informatie over [e-mail verzenden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
@@ -46,7 +46,7 @@ Zorg ervoor dat de [passend](../advanced-networking.md#advanced-networking) de g
 
 ## OSGi-configuratie
 
-Dit OSGi configuratievoorbeeld vormt AEM de Dienst van Mail OSGi om een externe postdienst, als volgende Manager van de Wolk te gebruiken `portForwards` de [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) bewerking.
+Dit OSGi configuratievoorbeeld vormt AEM de Dienst van Mail OSGi om een externe postdienst, als volgende Manager van de Wolk te gebruiken `portForwards` van de [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) -bewerking.
 
 ```json
 ...
@@ -82,6 +82,6 @@ De `EMAIL_USERNAME` en `EMAIL_PASSWORD` De variabele OSGi en het geheim kunnen p
 + [Configuratie van Cloud Manager-omgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
 + of door `aio CLI` command
 
-   ```shell
-   $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret EMAIL_USERNAME "myApiKey" --secret EMAIL_PASSWORD "password123"
-   ```
+  ```shell
+  $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret EMAIL_USERNAME "myApiKey" --secret EMAIL_PASSWORD "password123"
+  ```

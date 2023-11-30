@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6281
+jira: KT-6281
 thumbnail: KT-6281.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -30,7 +30,7 @@ De `manifest.yml`, die zich in de wortel van het project van de Asset compute be
 
 Workers worden gedefinieerd als Adobe I/O Runtime-actitems onder `actions`en bestaat uit een set configuraties.
 
-Werknemers die toegang krijgen tot andere Adobe I/O-integratie moeten de `annotations -> require-adobe-auth` eigenschap aan `true` als [stelt de Adobe I/O-referenties van de worker beschikbaar](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) via de `params.auth` object. Dit is doorgaans vereist wanneer de worker API&#39;s van het type Adobe I/O, zoals de API&#39;s van Adobe Photoshop, Lightroom of Sensei, aanroept en per worker in- en uitschakelen kan worden uitgevoerd.
+Werknemers die toegang krijgen tot andere Adobe I/O-integratie, moeten de `annotations -> require-adobe-auth` eigenschap aan `true` als [stelt de Adobe I/O-referenties van de worker beschikbaar](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) via de `params.auth` object. Dit is doorgaans vereist wanneer de worker API&#39;s van het type Adobe I/O, zoals de API&#39;s van Adobe Photoshop, Lightroom of Sensei, aanroept en per worker in- en uitschakelen kan worden uitgevoerd.
 
 1. De automatisch gegenereerde worker openen en bekijken `manifest.yml`. Projecten die meerdere workers in de Asset compute bevatten, moeten een vermelding definiëren voor elke worker onder de `actions` array.
 
@@ -53,7 +53,7 @@ packages:
 
 Elke worker kan de [limieten](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) voor de uitvoeringscontext in Adobe I/O Runtime. Deze waarden moeten zodanig worden ingesteld dat de worker een optimale grootte krijgt op basis van het volume, de snelheid en het type elementen dat de worker berekent, en het type werk dat de worker uitvoert.
 
-Controleren [Adobe-formaatrichtlijnen](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) voordat u limieten instelt. De arbeiders van de asset compute kunnen uit geheugen opraken wanneer het verwerken van activa, resulterend in de uitvoering van Adobe I/O Runtime die wordt gedood, zodat wordt de arbeider aangepast aangepast om alle kandidaatactiva te behandelen.
+Controleren [Richtlijnen voor de grootte van Adoben](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) voordat u limieten instelt. De arbeiders van de asset compute kunnen uit geheugen opraken wanneer het verwerken van activa, resulterend in de uitvoering van Adobe I/O Runtime die wordt gedood, zodat wordt de arbeider aangepast aangepast om alle kandidaatactiva te behandelen.
 
 1. Een `inputs` aan de nieuwe `wknd-asset-compute` actievermelding. Dit staat het stemmen van de algemene prestaties van de Asset compute arbeider en middeltoewijzing toe.
 

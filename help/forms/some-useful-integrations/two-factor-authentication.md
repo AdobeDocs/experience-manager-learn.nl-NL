@@ -3,13 +3,13 @@ title: Verificatie van SMS Twee factoren
 description: Voeg een extra laag van veiligheid toe helpen de identiteit van een gebruiker bevestigen wanneer zij bepaalde activiteiten willen uitvoeren
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 6317
+jira: KT-6317
 topic: Development
 role: Developer
 level: Experienced
 exl-id: c2c55406-6da6-42be-bcc0-f34426b3291a
 last-substantial-update: 2021-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -40,9 +40,9 @@ De OpenAPI-specificatie (voorheen Swagger Specification) is een API-beschrijving
 Als u uw eerste wagger/OpenAPI-bestand wilt maken, volgt u de [OpenAPI-documentatie](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
-> AEM Forms biedt ondersteuning voor OpenAPI Specification versie 2.0 (fka Swagger).
+> AEM Forms ondersteunt OpenAPI Specification versie 2.0 (fka Swagger).
 
-Gebruik de [wageneditor](https://editor.swagger.io/) om uw wagerbestand te maken om de bewerkingen te beschrijven die OTP-code verzenden en verifiëren die met SMS is verzonden. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide wagerbestand kan worden gedownload van [hier](assets/two-factore-authentication-swagger.zip)
+Gebruik de [wagenbewerker](https://editor.swagger.io/) om uw wagerbestand te maken om de bewerkingen te beschrijven die OTP-code verzenden en verifiëren die met SMS is verzonden. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide wagerbestand kan worden gedownload van [hier](assets/two-factore-authentication-swagger.zip)
 
 ## Gegevensbron maken
 
@@ -62,7 +62,7 @@ Integreer de aanroepen van de POST van het formuliergegevensmodel met het aangep
 Voer de volgende stappen uit als u de voorbeeldbestanden met uw API-toetsen wilt gebruiken:
 
 * [Het formuliergegevensmodel downloaden](assets/sms-2fa-fdm.zip) en importeren in AEM [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Download het voorbeeldadaptieve formulier dat u kunt [hier gedownload](assets/sms-2fa-verification-af.zip). In dit voorbeeldformulier worden de serviceaanroepen van het formuliergegevensmodel gebruikt die als onderdeel van dit artikel worden aangeboden.
+* Download het voorbeeldadaptieve formulier kan [hier gedownload](assets/sms-2fa-verification-af.zip). In dit voorbeeldformulier worden de serviceaanroepen van het formuliergegevensmodel gebruikt die als onderdeel van dit artikel worden aangeboden.
 * Het formulier importeren in AEM van de [UI Forms en Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Open het formulier in de bewerkingsmodus. De regeleditor voor het volgende veld openen
 

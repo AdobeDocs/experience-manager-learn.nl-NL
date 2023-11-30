@@ -2,17 +2,17 @@
 title: Implementeren met behulp van de front-end pijplijn
 description: Leer hoe te om een front-end pijpleiding tot stand te brengen en in werking te stellen die front-end middelen bouwt en aan ingebouwde CDN in AEM as a Cloud Service opstelt.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Implementeren met behulp van de front-end pijplijn
 
-In dit hoofdstuk, creëren wij en stellen een front-end pijpleiding in de Manager van de Adobe Cloud in werking. De bestanden worden alleen samengesteld op basis van `ui.frontend` en zet hen aan ingebouwde CDN in as a Cloud Service AEM op. Op die manier wordt de  `/etc.clientlibs` gebaseerde front-end levering van resources.
+In dit hoofdstuk maken en uitvoeren we een front-end pijplijn in Adobe Cloud Manager. De bestanden worden alleen samengesteld op basis van `ui.frontend` en zet hen aan ingebouwde CDN in as a Cloud Service AEM op. Op die manier wordt de  `/etc.clientlibs` gebaseerde front-end levering van resources.
 
 
 ## Doelstellingen {#objectives}
@@ -35,7 +35,7 @@ In dit hoofdstuk, creëren wij en stellen een front-end pijpleiding in de Manage
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worden beschreven in het dialoogvenster [Standaard AEM project bijwerken](./update-project.md) zijn voltooid.
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in het dialoogvenster [Standaard AEM project bijwerken](./update-project.md) zijn voltooid.
 
 Zorg ervoor dat u [rechten om pijpleidingen te maken en te implementeren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) en [toegang tot een AEM as a Cloud Service omgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
@@ -55,7 +55,7 @@ Ook in de __Broncode__ , zorgt u ervoor dat de waarden in de velden Opslagplaats
 
 Naar __ALLEEN__ bouwen en de front-end middelen van `ui.frontend` voert u de volgende stappen uit:
 
-1. In de interface van Cloud Manager gaat u van de __Pijpleidingen__ sectie, klikt u op __Toevoegen__ selecteert u vervolgens __Niet-productiepijpleiding toevoegen__ (of __Productiepijpleiding toevoegen__) gebaseerd op de AEM as a Cloud Service omgeving waarin u wilt implementeren.
+1. In de interface van Cloud Manager gaat u van de __Pijpleidingen__ sectie, klikken __Toevoegen__ en vervolgens selecteert u __Niet-productiepijpleiding toevoegen__ (of __Productiepijpleiding toevoegen__) gebaseerd op de AEM as a Cloud Service omgeving waarin u wilt implementeren.
 
 1. In de __Niet-productiepijpleiding toevoegen__ als onderdeel van de __Configuratie__ stappen selecteert u de __Implementatiepijp__ optie, naam geven als __FrontEnd WKND-implementatie naar Dev__ en klik op __Doorgaan__
 
@@ -104,7 +104,7 @@ en __belangrijkste__ voor de __Codelocatie__ veld de waarde is `/ui.frontend` en
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd, creeerde u, in werking stelde, en verifieerde de voorste-Eind pijpleiding die slechts bouwt en de module &quot;ui.frontend&quot;van het project van Plaatsen WKND opstelt. Nu kan uw front-end team snel het ontwerp en front-end gedrag van de site doorlopen, buiten de levenscyclus van het volledige AEM project.
+Gefeliciteerd, creeerde u, in werking stelde, en verifieerde de voorste-Eind pijpleiding die slechts bouwt en de module &quot;ui.frontend&quot;van het project van Plaatsen WKND opstelt. Nu kan uw front-end team snel het ontwerp en het gedrag van de site doorlopen, buiten de levenscyclus van het volledige AEM project.
 
 ## Volgende stappen {#next-steps}
 

@@ -7,9 +7,9 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
-kt: 8848
+jira: KT-8848
 exl-id: 31487027-d528-48ea-b626-a740b94dceb8
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 
 [Installatiegit](https://git-scm.com/downloads). U kunt de standaardinstellingen selecteren en het installatieproces voltooien.
-Ga naar de opdrachtprompt Ga naar c:\cloudmanager\aem-banking-app type in git —versie. U moet de versie van de GIT zien die op uw systeem is geïnstalleerd
+Ga naar de opdrachtprompt Navigeer naar c:\cloudmanager\aem-banking-app type in git —version. U moet de versie van de GIT zien die op uw systeem is geïnstalleerd
 
 ## Opslagplaats lokale it initialiseren
 
-Zorg ervoor u in c:\cloudmanager\aem-banking-app folder bent
+Zorg ervoor dat u in de map c:\cloudmanager\aem-banking-app bent
 
 ```
 git init
@@ -49,7 +49,7 @@ Hierdoor worden de bestanden toegewezen aan de git-opslagplaats
 ## Registreer de cloudbeheeropslagplaats bij onze lokale Git-opslagplaats
 
 Toegang tot het rapport van de cloud Manager
-![de rep info openen](assets/cloud-manager-repo.png)
+![toegang krijgen tot de rep info](assets/cloud-manager-repo.png)
 Geef de repo-gegevens van de cloud Manager op
 ![getCredits](assets/cloud-manager-repo1.png)
 

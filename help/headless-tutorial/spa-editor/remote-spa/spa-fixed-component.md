@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7634
+jira: KT-7634
 thumbnail: kt-7634.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -23,7 +24,7 @@ Bewerkbare React-componenten kunnen &#39;vast&#39; zijn of hard gecodeerd in de 
 
 ![Vaste componenten](./assets/spa-fixed-component/intro.png)
 
-In dit hoofdstuk vervangen we de titel &quot;Huidige avonturen&quot; van de weergave Home. Dit is een hard gecodeerde tekst in `Home.js` met een vaste, maar bewerkbare component Titel. Vaste componenten garanderen de plaatsing van de titel, maar staan ook toe dat de tekst van de titel wordt geschreven en dat de titel buiten de ontwikkelingscyclus wordt gewijzigd.
+In dit hoofdstuk vervangen we de titel &quot;Huidige avonturen&quot; van de weergave Home. Dit is een harde tekst in `Home.js` met een vaste, maar bewerkbare component Titel. Vaste componenten garanderen de plaatsing van de titel, maar staan ook toe dat de tekst van de titel wordt geschreven en dat de titel buiten de ontwikkelingscyclus wordt gewijzigd.
 
 ## De WKND-app bijwerken
 
@@ -163,7 +164,7 @@ De `Home.js` bestand moet er als volgt uitzien:
 
 ## De component Titel in AEM maken
 
-1. Aanmelden bij AEM-auteur
+1. Aanmelden bij AEM auteur
 1. Navigeren naar __Sites > WKND App__
 1. Tikken __Home__ en selecteert u __Bewerken__ van de bovenste actiebalk
 1. Selecteren __Bewerken__ in de bewerkingsmoduskiezer rechtsboven in de Pagina-editor
@@ -176,7 +177,7 @@ De `Home.js` bestand moet er als volgt uitzien:
    + Titel: __WKND Adventures__
    + Type/grootte: __H2__
 
-      ![Dialoogvenster Titelcomponent](./assets/spa-fixed-component/title-dialog.png)
+     ![Dialoogvenster Titel](./assets/spa-fixed-component/title-dialog.png)
 
 1. Tikken __Gereed__ opslaan
 1. Wijzigingen voorvertonen in AEM SPA Editor

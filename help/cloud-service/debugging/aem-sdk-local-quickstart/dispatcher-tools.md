@@ -1,13 +1,13 @@
 ---
 title: Fouten opsporen in Dispatcher-gereedschappen
-description: De Dispatcher Tools verstrekt een inperkt milieu van de Server van het Web van Apache dat kan worden gebruikt om AEM als Verzender van de Diensten van de Publicatie van AEM plaatselijk te simuleren. Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cachegeheugen kunnen van essentieel belang zijn om ervoor te zorgen dat de end-to-end AEM toepassing correct is en dat ondersteuning wordt geboden voor cache- en beveiligingsconfiguraties.
+description: De Dispatcher Tools verstrekt een inperkt milieu van de Server van het Web Apache dat kan worden gebruikt om AEM als Verzender van de AEM van de Dienst van de Publicatie plaatselijk te simuleren Cloud Servicen. Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cachegeheugen kunnen van essentieel belang zijn om ervoor te zorgen dat de end-to-end AEM toepassing correct is en dat ondersteuning wordt geboden voor cache- en beveiligingsconfiguraties.
 feature: Dispatcher
-kt: 5918
+jira: KT-5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Fouten opsporen in Dispatcher-gereedschappen
 
-De Dispatcher Tools verstrekt een inperkt milieu van de Server van het Web van Apache dat kan worden gebruikt om AEM als Verzender van de Diensten van de Publicatie van AEM plaatselijk te simuleren.
+De Dispatcher Tools verstrekt een inperkt milieu van de Server van het Web Apache dat kan worden gebruikt om AEM als Verzender van de AEM van de Dienst van de Publicatie plaatselijk te simuleren Cloud Servicen.
 
 Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cachegeheugen kunnen van essentieel belang zijn om ervoor te zorgen dat de end-to-end AEM toepassing correct is en dat ondersteuning wordt geboden voor cache- en beveiligingsconfiguraties.
 
@@ -54,7 +54,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd
 
-De logboekbestanden van de Dispatcher kunnen uit de Docker-container worden gekopieerd op `/mnt/var/www/html` naar het lokale bestandssysteem voor inspectie met behulp van uw favoriete gereedschappen. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan het geheime voorgeheugen verstrekt.
+De logboekbestanden van de Dispatcher kunnen uit de Docker-container worden gekopieerd op `/mnt/var/www/html` naar het lokale bestandssysteem voor inspectie met uw favoriete gereedschappen. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan het geheime voorgeheugen verstrekt.
 
 ```shell
 $ docker ps

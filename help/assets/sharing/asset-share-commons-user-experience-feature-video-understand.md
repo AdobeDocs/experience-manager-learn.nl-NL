@@ -1,5 +1,5 @@
 ---
-title: Werken met de gebruikerservaring van de Commentaar voor het delen van bedrijfsmiddelen
+title: Werken met de gebruikerservaring van Share-opdrachten voor bedrijfsmiddelen
 description: Materialen voor zowel de functionele als de technische overeenkomst Activa Share Commons
 version: 6.4, 6.5
 topic: Content Management
@@ -7,15 +7,16 @@ feature: Asset Distribution
 role: User
 level: Intermediate
 last-substantial-update: 2022-06-20T00:00:00Z
+doc-type: Feature Video
 exl-id: 500a9b10-462a-4f41-9b07-67138955cc3d
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 1%
 
 ---
 
-# Werken met de gebruikerservaring van de Commentaar voor het delen van bedrijfsmiddelen{#understanding-asset-share-commons}
+# Werken met de gebruikerservaring van Share-opdrachten voor bedrijfsmiddelen{#understanding-asset-share-commons}
 
 Een cursieve inleiding aan de gebruiker en het auteurservaring van het Aandeel van Activa.
 

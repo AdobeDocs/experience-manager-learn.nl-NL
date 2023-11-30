@@ -2,18 +2,18 @@
 title: Verifiëren voor AEM as a Cloud Service vanuit een externe toepassing
 description: Onderzoek hoe een externe toepassing programmatically met AEM as a Cloud Service over HTTP kan voor authentiek verklaren en in wisselwerking staan gebruikend de Tokens van de Toegang van de Lokale Ontwikkeling en de Referenties van de Dienst.
 version: Cloud Service
-doc-type: tutorial
 topics: Development, Security
 feature: APIs
 activity: develop
 audience: developer
-kt: 6785
+jira: KT-6785
 thumbnail: 330460.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+doc-type: Tutorial
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 0%
@@ -51,10 +51,10 @@ De uitvoeringsstroom van de toepassing Node.js is als volgt:
    + De map met AEM elementen waarvan de elementen zijn bijgewerkt (`folder`)
    + De eigenschap en waarde van de metagegevens die moeten worden bijgewerkt (`propertyName` en `propertyValue`)
    + Het lokale pad naar het bestand met de vereiste gegevens voor toegang tot AEM as a Cloud Service (`file`)
-1. Het toegangstoken dat wordt gebruikt om voor authentiek te verklaren aan AEM wordt afgeleid uit het JSON- dossier dat via bevellijnparameter wordt verstrekt `file`
+1. Het toegangstoken dat wordt gebruikt voor verificatie aan AEM wordt afgeleid van het JSON-bestand dat via opdrachtregelparameter wordt aangeboden `file`
 
-   a. Als de Referenties van de Dienst die voor niet lokale ontwikkeling worden gebruikt in het JSON dossier worden verstrekt (`file`), wordt het toegangstoken opgehaald van Adobe IMS API&#39;s
-1. De toepassing gebruikt het toegangstoken om tot AEM toegang te hebben en van alle activa in de omslag een lijst te maken die in de parameter van de bevellijn wordt gespecificeerd `folder`
+   a. Indien dienstreferenties die worden gebruikt voor niet-lokale ontwikkeling, worden verstrekt in het JSON-bestand (`file`), wordt het toegangstoken opgehaald van Adobe IMS API&#39;s
+1. De toepassing gebruikt het toegangstoken om tot AEM toegang te hebben en van alle activa in de omslag een lijst te maken die in de bevellijnparameter wordt gespecificeerd `folder`
 1. Voor elk element in de map werkt de toepassing de metagegevens bij op basis van de naam en de waarde van de eigenschap die zijn opgegeven in de opdrachtregelparameters. `propertyName` en `propertyValue`
 
 Hoewel deze voorbeeldtoepassing Node.js is, kunnen deze interacties worden ontwikkeld gebruikend verschillende programmeertalen en uit andere externe systemen worden uitgevoerd.
@@ -74,6 +74,6 @@ De geloofsbrieven van de dienst zijn de bonafide geloofsbrieven die in om het ev
 ## Aanvullende bronnen
 
 + [De voorbeeldtoepassing downloaden](./assets/aem-guides_token-authentication-external-application.zip)
-+ Andere codevoorbeelden van JWT-creatie en -uitwisseling
-   + [Node.js, Java, Python, C#.NET en PHP codesteekproeven](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
++ Andere codevoorbeelden van JWT maken en uitwisselen
+   + [Node.js, Java, Python, C#.NET, en PHP codesteekproeven](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
    + [Codevoorbeeld op basis van JavaScript/Axios](https://github.com/adobe/aemcs-api-client-lib)

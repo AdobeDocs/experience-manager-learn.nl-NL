@@ -1,16 +1,17 @@
 ---
-title: Openbare koppelingen in Assets Essentials delen
-description: Leer hoe gebruikers met de Share Link van de Hoofdzaak van Elementen middelen kunnen delen met interne en externe belanghebbenden en hoe het risico van het delen van verkeerde elementen tot een minimum wordt beperkt ... (Beschrijvingen moeten tussen 60 en 160 tekens lang zijn)
+title: Assets Essentials delen van openbare koppelingen
+description: Leer hoe gebruikers met de Share Link van Assets Essentials elementen kunnen delen met interne en externe belanghebbenden en hoe het risico op het delen van verkeerde elementen tot een minimum wordt beperkt... (Beschrijvingen moeten tussen 60 en 160 tekens lang zijn)
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
 role: User
 level: Beginner
-kt: 9763
+jira: KT-9763
 thumbnail: 341025.jpeg
 last-substantial-update: 2022-10-08T00:00:00Z
+doc-type: Feature Video
 exl-id: 719d3101-2c27-4165-a9d7-97e6f637d71f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -19,6 +20,6 @@ ht-degree: 0%
 
 # Openbare koppeling delen
 
-Leer hoe gebruikers met de Share Link van de Hoofdzaak van middelen middelen middelen kunnen delen met interne en externe belanghebbenden, terwijl het risico van het delen van verkeerde middelen of informatie tot een minimum wordt beperkt.
+Leer hoe gebruikers met de Share Link van Assets Essentials middelen kunnen delen met interne en externe belanghebbenden en hoe het risico op het delen van verkeerde middelen of informatie tot een minimum wordt beperkt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)

@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Personalization
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 9ee826cf-389f-4570-bfe1-0d43d3fed3e1
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 1%
@@ -22,7 +23,7 @@ Adobe Experience Manager herstelt de personalisatieworkflow tussen AEM en Target
 
 >[!NOTE]
 >
->Aanbevolen voor gebruik `at.js` De clientbibliotheek en de beste manier is om oplossingen voor tagbeheer, zoals Launch by Adobe, Adobe DTM of elke andere oplossing voor tagbeheer van derden, te gebruiken om doelbibliotheken aan uw sitepagina&#39;s toe te voegen
+>Aanbevolen voor gebruik `at.js` De clientbibliotheek en de beste manier is om oplossingen voor tagbeheer te gebruiken, zoals Launch by Adobe, Adobe DTM of elke andere oplossing voor tagbeheer van derden, om doelbibliotheken aan uw sitepagina&#39;s toe te voegen
 
 
 * Adobe Experience Manager maakt eenvoudig te gebruiken en krachtige inhoud, samen met Adobe Target Artificial Intelligence (AI) en Machine Learning, en helpt inhoudsauteurs om inhoud te maken en te beheren voor alle kanalen op een gecentraliseerde locatie. Met de mogelijkheid om Experience Fragments naar Adobe Target te exporteren als HTML-aanbiedingen, hebben marketers nu meer flexibiliteit om een meer persoonlijke ervaring te creëren met deze aanbiedingen en kunnen ze nu elke ervaring die ze maken testen en schalen.

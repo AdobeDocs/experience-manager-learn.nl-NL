@@ -1,17 +1,14 @@
 ---
 title: De componentenconsole gebruiken met AEM Sites
 description: De Console van Componenten verstrekt ontwikkelaars en beheer een centrale plaats om alle diverse componenten in een implementatie van Plaatsen te beheren. In de volgende video worden de functies van de Componentenconsole beschreven.
-topics: components
-audience: all
-doc-type: feature video
 version: 6.4, 6.5
-activity: use
 feature: Core Components
 topic: Content Management
 role: User
 level: Intermediate
+doc-type: Feature Video
 exl-id: 6f33f121-5564-4c46-ab56-7ea382a0ab5a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 1%
@@ -26,13 +23,13 @@ De Console van Componenten verstrekt ontwikkelaars en beheer een centrale plaats
 
 De componentconsole biedt de volgende functionaliteit:
 
-* Overzicht: lijst van alle geïnstalleerde componenten beschikbaar op het huidige AEM instantie
+* Overzicht: lijst met alle geïnstalleerde componenten die beschikbaar zijn op de huidige AEM
 * [!UICONTROL Properties]: geeft metagegevens weer zoals de titel, de groep en de beschrijving van een component
-* [!UICONTROL Policies]: toont om het even welk bestaand beleid voor een bepaalde component en het bijbehorende malplaatje
+* [!UICONTROL Policies]: geeft een bestaand beleid voor een bepaalde component en de bijbehorende sjabloon weer
 * [!UICONTROL Live Usage]: geeft een lijst weer van pagina&#39;s waarin de component is opgenomen
 
 De componentconsole is te vinden onder **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Components]**.
-Component Console URL (lokale AEM-auteur): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
+Component Console URL (lokale AEM auteur): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## Aanvullende bronnen {#additional-resources}
 

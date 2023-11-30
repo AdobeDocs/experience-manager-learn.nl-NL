@@ -7,9 +7,9 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
-kt: 8842
+jira: KT-8842
 exl-id: 274018b9-91fe-45ad-80f2-e7826fddb37e
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -27,13 +27,13 @@ Deze zelfstudie begeleidt u door de stappen die nodig zijn om een AEM Forms-proj
 In deze zelfstudie wordt de volgende stap gezet in de mapstructuur.
 
 * [JDK 11 installeren](https://www.oracle.com/java/technologies/downloads/#java11-windows). Ik heb jdk-11.0.6_windows-x64_bin.zip gedownload
-* [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).Als u bijvoorbeeld Maven hebt geïnstalleerd in c:\maven folder, moet u een omgevingsvariabele maken met de naam M2_HOME met de waarde C:\maven\apache-maven-3.6.0. Voeg vervolgens M2_HOME\bin toe aan het pad en sla uw instelling op.
+* [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).Als u bijvoorbeeld Maven hebt geïnstalleerd in de map c:\maven, moet u een omgevingsvariabele met de naam M2_HOME maken met de waarde C:\maven\apache-maven-3.6.0. Voeg vervolgens M2_HOME\bin toe aan het pad en sla uw instelling op.
 
 ## Maven-project maken met AEM projectarchetype
 
-* Een map maken met de naam **cloudmanager**(u kunt het om het even welke naam geven) in uw aandrijving van c
+* Een map maken met de naam **cloudmanager**(u kunt het om het even welke naam geven) in uw c aandrijving
 * Open uw opdrachtpromptvenster en navigeer naar **c:\cloudmanager**
-* Kopieer en plak de inhoud van de [tekstbestand](assets/creating-maven-project.txt) in uw opdrachtpromptvenster. Afhankelijk van het [nieuwste versie](https://github.com/adobe/aem-project-archetype/releases). De meest recente versie was 30 op het moment dat dit artikel werd geschreven.
+* Kopieer en plak de inhoud van de [tekstbestand](assets/creating-maven-project.txt) in uw opdrachtpromptvenster. Afhankelijk van het dialoogvenster [nieuwste versie](https://github.com/adobe/aem-project-archetype/releases). De meest recente versie was 30 op het moment dat dit artikel werd geschreven.
 * Voer het bevel uit door op Enter te drukken.Als alles correct gaat zou u het bericht van het bouwstijlsucces moeten zien.
 
 ## Volgende stappen

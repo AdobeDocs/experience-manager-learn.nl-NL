@@ -2,24 +2,24 @@
 title: De module ui.frontend van het volledige-stapelproject van het overzicht
 description: Herzie de front-end ontwikkeling, plaatsing, en leveringslevenscyclus van een op beproefd-gebaseerd volledig-stapel AEM Sites Project.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
-# Bekijk de module &#39;ui.frontend&#39; van het AEM &#39;full-stack&#39;-project {#aem-full-stack-ui-frontent}
+# Bekijk de module &#39;ui.frontend&#39; van het AEM &#39;full-stack&#39; project {#aem-full-stack-ui-frontent}
 
 In dit hoofdstuk bekijken we de ontwikkeling, implementatie en levering van front-end artefacten van een full-stack AEM project, door ons te richten op de &#39;ui.frontend&#39; module van de __WKND-siteproject__.
 
@@ -53,11 +53,11 @@ Hieronder ziet u een vertegenwoordiging op hoog niveau van de __ontwikkeling, im
 ![Ontwikkeling, implementatie en levering van front-end artefacten](assets/Dev-Deploy-Delivery-AEM-Project.png)
 
 
-Tijdens de ontwikkelingsfase worden front-end wijzigingen zoals opmaak en herbranding uitgevoerd door de CSS- en JS-bestanden van de `ui.frontend/src/main/webpack` map. Tijdens de build-tijd [webpack](https://webpack.js.org/) module-bundelaar en gefabriceerde stop zet deze dossiers in geoptimaliseerde AEM clientlibs onder `ui.apps` module.
+Tijdens de ontwikkelingsfase worden front-end wijzigingen zoals opmaak en herbranding uitgevoerd door de CSS- en JS-bestanden van de `ui.frontend/src/main/webpack` map. Tijdens de build-tijd [webpack](https://webpack.js.org/) module-bundelaar en gefabriceerde stop zet deze dossiers in geoptimaliseerde AEM clientlibs onder `ui.apps` -module.
 
 Voorste veranderingen worden opgesteld aan AEM as a Cloud Service milieu wanneer het runnen van [__Volledig stapelen__ pijplijn in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html).
 
-De front-end bronnen worden via URI-paden aan de webbrowsers geleverd, te beginnen met `/etc.clientlibs/`en worden doorgaans in het cachegeheugen opgeslagen op AEM Dispatcher en CDN.
+De front-end bronnen worden via URI-paden aan de webbrowsers geleverd, te beginnen met `/etc.clientlibs/`en worden doorgaans in de cache opgeslagen op AEM Dispatcher en CDN.
 
 
 >[!NOTE]
@@ -70,41 +70,41 @@ De front-end bronnen worden via URI-paden aan de webbrowsers geleverd, te beginn
 
    1. `webpack.common` - Dit bevat de __gemeenschappelijk__ configuratie om de WKND middelbundeling en optimalisering te instrueren. De __output__ Deze eigenschap vertelt waar de geconsolideerde bestanden (ook wel JavaScript-bundels genoemd, maar niet mogen worden verward met AEM OSGi-bundels) die worden gemaakt. De standaardnaam is ingesteld op `clientlib-site/js/[name].bundle.js`.
 
-   ```javascript
-       ...
-       output: {
-               filename: 'clientlib-site/js/[name].bundle.js',
-               path: path.resolve(__dirname, 'dist')
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      output: {
+              filename: 'clientlib-site/js/[name].bundle.js',
+              path: path.resolve(__dirname, 'dist')
+          }
+      ...    
+  ```
 
    1. `webpack.dev.js` bevat de __ontwikkeling__ -configuratie voor de webpack-dev-server en wijst naar de HTML-sjabloon die moet worden gebruikt. Het bevat ook een volmachtsconfiguratie aan een AEM instantie die op loopt `localhost:4502`.
 
-   ```javascript
-       ...
-       devServer: {
-           proxy: [{
-               context: ['/content', '/etc.clientlibs', '/libs'],
-               target: 'http://localhost:4502',
-           }],
-       ...    
-   ```
+  ```javascript
+      ...
+      devServer: {
+          proxy: [{
+              context: ['/content', '/etc.clientlibs', '/libs'],
+              target: 'http://localhost:4502',
+          }],
+      ...    
+  ```
 
    1. `webpack.prod.js` bevat de __productie__ en gebruikt de plug-ins om de ontwikkelingsbestanden om te zetten in geoptimaliseerde bundels.
 
-   ```javascript
-       ...
-       module.exports = merge(common, {
-           mode: 'production',
-           optimization: {
-               minimize: true,
-               minimizer: [
-                   new TerserPlugin(),
-                   new CssMinimizerPlugin({ ...})
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      module.exports = merge(common, {
+          mode: 'production',
+          optimization: {
+              minimize: true,
+              minimizer: [
+                  new TerserPlugin(),
+                  new CssMinimizerPlugin({ ...})
+          }
+      ...    
+  ```
 
 
 * De gebundelde bronnen worden verplaatst naar de `ui.apps` module gebruiken [aem-clientlib-generator](https://www.npmjs.com/package/aem-clientlib-generator) insteekmodule, de configuratie gebruiken die in de `clientlib.config.js` bestand.

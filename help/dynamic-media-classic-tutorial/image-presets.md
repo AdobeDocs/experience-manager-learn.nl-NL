@@ -2,15 +2,12 @@
 title: Voorinstellingen afbeelding
 description: Voorinstellingen voor afbeeldingen in Dynamic Media Classic bevatten alle instellingen die nodig zijn om een afbeelding met een bepaalde grootte, indeling, kwaliteit en verscherping te maken. Voorinstellingen voor afbeeldingen vormen een belangrijk onderdeel van het dynamische formaat. Als u in Dynamic Media Classic naar een URL kijkt, kunt u gemakkelijk zien of een voorinstelling voor afbeeldingen in gebruik is. Meer informatie over voorinstellingen voor afbeeldingen, waarom ze zo nuttig zijn en hoe u ze kunt maken.
 feature: Dynamic Media Classic, Image Presets
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: e472db7c-ac3f-4f66-85af-5a4c68ba609e
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -60,12 +57,12 @@ In de volgende afbeelding ziet u drie verscherpingsniveaus. Van rechts naar link
 
 ![afbeelding](assets/image-presets/image-presets-1.jpg)
 
-In Dynamic Media Classic kunt u drie soorten verscherpen: Eenvoudig verscherpen, Nieuwe pixels berekenen in modus en Onscherp masker.
+In Dynamic Media Classic kunt u drie typen verscherpen: Eenvoudig verscherpen, Nieuwe pixels berekenen en Onscherp masker.
 
 Meer informatie over [Opties voor Dynamic Media Classic verscherpen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Aanvullende bronnen
 
-[Handleiding voor voorinstellingen afbeelding](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Te gebruiken instellingen voor optimalisatie voor afbeeldingskwaliteit en laadsnelheid.
+[Handleiding voor voorinstellingen afbeelding](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Instellingen voor optimalisatie voor afbeeldingskwaliteit en laadsnelheid.
 
-[Afbeelding is Alles deel 2: Het is nooit alleen een vervaging — Kwaliteit versus snelheid](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Een blogbericht waarin het gebruik van Voorinstellingen voor afbeeldingen wordt besproken voor het aanbieden van afbeeldingen van hoge kwaliteit die snel worden geladen.
+[Afbeelding is Alles Deel 2: Het is nooit alleen maar een vervaging — Kwaliteit versus snelheid](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Een blogbericht waarin het gebruik van Voorinstellingen voor afbeeldingen wordt besproken voor het aanbieden van afbeeldingen van hoge kwaliteit die snel worden geladen.

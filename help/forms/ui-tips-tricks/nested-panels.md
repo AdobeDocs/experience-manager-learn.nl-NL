@@ -7,10 +7,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-kt: 9335
+jira: KT-9335
 exl-id: c60d019e-da26-4f67-8579-ef707e2348bb
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Wanneer uw formulier navigatietabels links heeft en een van de tabbladen meerder
 
 ## Adaptief formulier maken
 
-Maak een adaptief formulier met de volgende structuur. Het hoofddeelvenster bevat onderliggende deelvensters die links als tabbladen worden weergegeven. Sommige van deze &quot;**tabs**&quot; hebt extra onderliggende deelvensters. Het tabblad Familie heeft bijvoorbeeld twee onderliggende deelvensters: Echtgenoot en Onderliggende.
+Maak een adaptief formulier met de volgende structuur. Het hoofddeelvenster bevat onderliggende deelvensters die links als tabbladen worden weergegeven. Sommige van deze &quot;**tabs**&quot; hebt extra onderliggende deelvensters. Het tabblad Familie heeft bijvoorbeeld twee onderliggende deelvensters: Echtgenote en Onderliggende deelvensters.
 
 Er wordt ook een werkbalk toegevoegd onder de FormContainer met de knoppen Vorige en Volgende
 
@@ -33,7 +33,7 @@ Er wordt ook een werkbalk toegevoegd onder de FormContainer met de knoppen Vorig
 
 Standaard worden in dit formulier alle deelvensters aan de linkerkant weergegeven en wordt vervolgens van de ene tab naar de andere gegaan wanneer u op de volgende knop klikt.
 
-Als u dit standaardgedrag wilt wijzigen, moet u het volgende doen:
+Om dit standaardgedrag te veranderen, moeten wij het volgende doen
 
 >[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
@@ -54,7 +54,7 @@ Met de bovenstaande code kunt u gemakkelijk navigeren tussen de tabbladen en de 
 
 ## De titel van onderliggende deelvensters verbergen
 
-Gebruik de stijleditor om de titel van de onderliggende tabbladen te verbergen.
+Met de stijleditor kunt u de titel van de onderliggende tabbladen verbergen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
 

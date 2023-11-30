@@ -7,10 +7,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-kt: 9291
+jira: KT-9291
 exl-id: 1b55b6d2-3bab-4907-af89-c81a3b1a44cb
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # De werkbalkknop verdelen
 
-Wanneer u de knoppen Volgende en Vorige aan de werkbalk in AEM Forms toevoegt, worden de knoppen standaard naast elkaar geplaatst. U kunt de knop Volgende helemaal rechts op de werkbalk drukken terwijl u de knop Vorige/Vorige links houdt
+Wanneer u de knoppen Volgende en Vorige aan de werkbalk in AEM Forms toevoegt, worden de knoppen standaard naast elkaar geplaatst. U kunt de knop Volgende helemaal naar rechts op de werkbalk drukken terwijl u de knop Vorige/Vorige links houdt
 
 ![werkbalkafstand](assets/toolbar-spacing.png)
 
 
 ## De werkbalk opmaken
 
-Het bovenstaande gebruiksgeval kan eenvoudig worden verwezenlijkt door de stijlredacteur te gebruiken. Nadat u de knop Vorige/Volgende aan de werkbalk hebt toegevoegd, selecteert u de laag Stijl in het menu Bewerken. Selecteer de stijlmodus en selecteer de werkbalk om het stijleigenschappenblad te openen. Vouw de sectie Dimension en Positie uit en controleer of u alle eigenschappen ziet. De volgende eigenschappen instellen
-* Dimension en positie
+Het bovenstaande gebruiksgeval kan eenvoudig worden verwezenlijkt door de stijlredacteur te gebruiken. Nadat u de knop Vorige/Volgende aan de werkbalk hebt toegevoegd, selecteert u de laag Stijl in het menu Bewerken. Selecteer de stijlmodus en selecteer de werkbalk om de stijlpagina te openen. Vouw de sectie Dimensionen en Positie uit en controleer of u alle eigenschappen ziet. De volgende eigenschappen instellen
+* Dimensionen en positie
    * Breedte: 100%
    * Positie: relatief
 
@@ -36,9 +36,9 @@ Uw wijzigingen opslaan
 ## De knop Volgende opmaken
 
 Selecteer de knop Volgende en zorg ervoor dat u het stijleigenschappenblad van de volgende knop (niet de volgende knoptekst) opent. De volgende eigenschappen instellen
-* Dimension en positie
-   * positie: absolute top 1 px rechts 1 px
+* Dimensionen en positie
+   * positie: absoluut 1 px rechtsboven, 1 px
 * Rand
-   * Straal rand: 4px(Boven,Rechts,Onder,Links)
+   * Randstraal: 4 px (boven, rechts, onder, links)
 
 Uw wijzigingen opslaan

@@ -3,14 +3,14 @@ title: Formulierbijlagen samenstellen
 description: Formulierbijlagen samenstellen in de opgegeven volgorde
 feature: Assembler
 version: 6.4,6.5
-kt: 6406
+jira: KT-6406
 thumbnail: kt-6406.jpg
 topic: Development
 role: Developer
 level: Experienced
 exl-id: a5df8780-b7ab-4b91-86f6-a24392752107
 last-substantial-update: 2021-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Formulierbijlagen samenstellen
 
-Dit artikel bevat elementen waarmee u aangepaste formulierbijlagen in een bepaalde volgorde kunt samenstellen. Deze voorbeeldcode werkt alleen als de formulierbijlagen de PDF-indeling hebben. Het volgende is het gebruiksgeval.
+Dit artikel bevat elementen waarmee u adaptieve formulierbijlagen in een bepaalde volgorde kunt samenstellen. Deze voorbeeldcode werkt alleen als de formulierbijlagen de PDF-indeling hebben. Het volgende is het gebruiksgeval.
 Door het invullen van een adaptief formulier worden een of meer PDF-documenten aan het formulier gekoppeld.
-Bij het verzenden van formulieren stelt u in dat de formulierbijlagen één PDF moeten genereren. U kunt de volgorde opgeven waarin de bijlagen worden samengevoegd om de uiteindelijke PDF te genereren.
+Bij het verzenden van een formulier stelt u in dat de formulierbijlagen één PDF moeten genereren. U kunt de volgorde opgeven waarin de bijlagen worden samengevoegd om de uiteindelijke PDF te genereren.
 
 ## Creeer component OSGi die WorkflowProcess interface uitvoert
 

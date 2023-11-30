@@ -1,15 +1,15 @@
 ---
 title: AEM servicekredieten
-description: Download servicegegevens van AEM Developer Console.
+description: Download de servicegegevens van AEM Developer Console.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
 topic: Development
-kt: 9980
+jira: KT-9980
 exl-id: 4c5173f1-d57d-43ac-83e6-399ce4ead203
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Servicereferenties
 
-Integraties met AEM as a Cloud Service moeten veilig kunnen worden geverifieerd op AEM. De Console van de Ontwikkelaar van AEM produceert de Referenties van de Dienst, die door externe toepassingen, systemen, en de diensten worden gebruikt om programmatically met de Auteur van AEM of de Publish diensten van HTTP in wisselwerking te staan.
+Integraties met AEM as a Cloud Service moeten veilig kunnen worden geverifieerd op AEM. De Console van de Ontwikkelaar van AEM produceert de Credentials van de Dienst, die door externe toepassingen, systemen, en de diensten worden gebruikt programmatically met AEM de Auteur of publiceren diensten over HTTP in wisselwerking te staan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

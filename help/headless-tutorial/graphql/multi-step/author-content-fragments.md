@@ -3,14 +3,14 @@ title: Inhoudsfragmenten ontwerpen - Aan de slag met AEM headless - GraphQL
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Maak en bewerk een nieuw inhoudsfragment op basis van een inhoudsfragmentmodel. Leer hoe u variaties van inhoudsfragmenten maakt.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6713
+jira: KT-6713
 thumbnail: 22451.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In dit hoofdstuk maakt en bewerkt u een nieuw inhoudsfragment op basis van de [n
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worden beschreven in het dialoogvenster [Modellen voor inhoudsfragmenten definiëren](./content-fragment-models.md) zijn voltooid.
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in het dialoogvenster [Modellen voor inhoudsfragmenten definiëren](./content-fragment-models.md) zijn voltooid.
 
 ## Doelstellingen {#objectives}
 
@@ -45,19 +45,19 @@ Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragme
 
    ![Map maken, dialoogvenster](assets/author-content-fragments/create-folder-dialog.png)
 
-1. Selecteer **Mijn map** map en tik **Eigenschappen**.
+1. Selecteer de **Mijn map** map en tik **Eigenschappen**.
 
    ![Mapeigenschappen openen](assets/author-content-fragments/open-folder-properties.png)
 
-1. Tik op de knop **Cloud Services** tab. Selecteer op het tabblad Cloudconfiguratie de padFinder **Mijn project** configuratie. De waarde moet `/conf/my-project`.
+1. Tik op de knop **Cloud Servicen** tab. Selecteer op het tabblad Cloudconfiguratie de padFinder **Mijn project** configuratie. De waarde moet `/conf/my-project`.
 
    ![Cloudconfiguratie instellen](assets/author-content-fragments/set-cloud-config-my-project.png)
 
    Als u deze eigenschap instelt, kunnen inhoudsfragmenten worden gemaakt met behulp van de modellen die in het vorige hoofdstuk zijn gemaakt.
 
-1. Tik op de knop **Beleid** onder de **Modellen voor toegestane inhoudsfragmenten** veld gebruikt padzoeker om de **Persoon** en **Team** model dat eerder is gemaakt.
+1. Tik op de knop **Beleid** onder de **Modellen voor toegestane inhoudsfragmenten** veld gebruikt padzoeker om de **Persoon** en **Team** eerder gemaakt model.
 
-   ![Modellen voor inhoudsfragmenten toestaan](assets/author-content-fragments/allowed-content-fragment-models.png)
+   ![Toegestane modellen van inhoudsfragmenten](assets/author-content-fragments/allowed-content-fragment-models.png)
 
    Dit beleid wordt automatisch door submappen overgeërfd en kan worden overschreven. U kunt modellen door markeringen ook toestaan of modellen van andere projectconfiguraties toelaten. Dit mechanisme biedt een krachtige manier om uw inhoudshiërarchie te beheren.
 
@@ -82,7 +82,7 @@ Er worden nu verschillende inhoudsfragmenten gemaakt op basis van de **Team** en
    ![UI voor inhoudsfragment](assets/author-content-fragments/cf-fragment-ui.png)
 
 1. Breid in de linkerspoorstaaf uit **Mijn project** en tikken **Engels**.
-1. Tikken **Maken** om **Nieuw inhoudsfragment** en voert u de volgende waarden in:
+1. Tikken **Maken** om de **Nieuw inhoudsfragment** en voert u de volgende waarden in:
 
    * Locatie: `/content/dam/my-project/en`
    * Inhoudsfragmentmodel: **Persoon**
@@ -98,13 +98,13 @@ Er worden nu verschillende inhoudsfragmenten gemaakt op basis van de **Team** en
    * Titel: **Alison Smith**
    * Naam: `alison-smith`
 
-   Tikken **Maken** om het Person-fragment te maken.
+   Tikken **Maken** om het persoonlijk fragment te maken.
 
-1. Herhaal de stappen om een **Team** fragment dat **Team Alpha**:
+1. Herhaal de stappen om een **Team** fragment dat **TeamAlpha**:
 
    * Locatie: `/content/dam/my-project/en`
    * Inhoudsfragmentmodel: **Team**
-   * Titel: **Team Alpha**
+   * Titel: **TeamAlpha**
    * Naam: `team-alpha`
 
    Tikken **Maken** om het fragment Team te maken.
@@ -127,13 +127,13 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
 
 1. Tikken **Opslaan en sluiten** om de wijzigingen in het fragment Jan Smit op te slaan.
 1. Ga terug naar de interface van het inhoudsfragment en open de interface **Alison Smith** bestand voor bewerking.
-1. Herhaal de bovenstaande stappen om de **Alison Smith** fragment met inhoud.
+1. Herhaal de bovenstaande stappen om de **Alison Smith** met inhoud.
 
 ## Inhoudsfragment team bewerken {#edit-team-content-fragment}
 
-1. Open de **Team Alpha** Inhoudsfragment met de gebruikersinterface van het inhoudsfragment.
+1. Open de **TeamAlpha** Inhoudsfragment met de gebruikersinterface van het inhoudsfragment.
 1. Vul de velden in voor **Titel**, **Korte naam**, en **Beschrijving**.
-1. Selecteer **John Doe** en **Alison Smith** Inhoudsfragmenten om de **Teamleden** veld:
+1. Selecteer de **John Doe** en **Alison Smith** Inhoudsfragmenten om de **Teamleden** veld:
 
    ![Teamleden instellen](assets/author-content-fragments/select-team-members.png)
 
@@ -141,11 +141,11 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
    >
    >U kunt inhoudsfragmenten ook online maken met de opdracht **Nieuw inhoudsfragment** knop.
 
-1. Tikken **Opslaan en sluiten** om de wijzigingen in het Team Alpha- fragment op te slaan.
+1. Tikken **Opslaan en sluiten** om de veranderingen in het fragment van de Alpha van het Team op te slaan.
 
 ## Inhoudsfragmenten publiceren
 
-Na revisie en verificatie publiceert u de geautoriseerde `Content Fragments`
+Publiceer de geautoriseerde `Content Fragments`
 
 1. Tik vanaf het AEM beginscherm op **Inhoudsfragmenten** om de interface voor inhoudsfragmenten te openen.
 

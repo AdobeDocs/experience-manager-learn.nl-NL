@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7629
+jira: KT-7629
 thumbnail: 333181.jpg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 0%
@@ -55,8 +56,8 @@ Deze zelfstudie gaat uit van:
 Download en installeer de AEM SDK QuickStart op poort 4502, standaard `admin/admin` referenties.
 
 1. [De nieuwste AEM SDK downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)
-1. Pak de AEM SDK uit naar `~/aem-sdk`
-1. De AEM SDK QuickStart Jar uitvoeren
+1. De AEM SDK decomprimeren naar `~/aem-sdk`
+1. Voer de AEM SDK QuickStart Jar uit
 
    ```
    $ java -jar aem-sdk-quickstart-xxx.jar
@@ -92,7 +93,7 @@ Om een snelle opstelling uit te voeren, worden AEM pakketten verstrekt hier die 
 
 ## De WKND App-bron downloaden
 
-Download de broncode van de WKND-app van Github.com en schakel de vertakking met de wijzigingen in de SPA die in deze zelfstudie worden uitgevoerd over.
+Download de broncode van de WKND App door van Github.com, en schakelaar de tak die de veranderingen in de SPA bevat die in dit leerprogramma worden uitgevoerd.
 
 ```
 $ mkdir -p ~/Code/wknd-app
@@ -124,7 +125,7 @@ Controleren of de SPA wordt uitgevoerd op [http://localhost:3000](http://localho
 
 ## Inhoud van auteur in AEM SPA Editor
 
-Voordat u inhoud gaat ontwerpen, moet u uw browservensters zodanig rangschikken dat AEM-auteur (`http://localhost:4502`) staat links en de SPA (`http://localhost:3000`) aan de rechterkant. Op deze manier kunt u zien hoe wijzigingen in inhoud op basis van AEM direct in de SPA worden doorgevoerd.
+Voordat u inhoud gaat ontwerpen, rangschikt u de browservensters zodanig dat AEM Auteur (`http://localhost:4502`) staat links en de SPA (`http://localhost:3000`) aan de rechterkant. Op deze manier kunt u zien hoe wijzigingen in inhoud op basis van AEM direct in de SPA worden doorgevoerd.
 
 1. Aanmelden bij [AEM SDK-auteurservice](http://localhost:4502) als `admin`
 1. Navigeren naar __Sites > WKND App > us > en__
@@ -141,7 +142,7 @@ Voordat u inhoud gaat ontwerpen, moet u uw browservensters zodanig rangschikken 
 ### Auteur van de containercomponent van de weergave Home
 
 1. Tijdens het bewerken van de __WKND App Home Page__...
-1. Breid uit __SPA zijbalk van de Editor__ (links)
+1. Breid uit __Zijbalk van SPA Editor__ (links)
 1. Tik op de knop __Componenten__ pictogrammen
 1. Componenten toevoegen, wijzigen of verwijderen uit de containercomponent die zich onder het WKND-logo en boven de vaste component Title bevindt
 1. De SPA die wordt uitgevoerd vernieuwen `http://localhost:3000` en zie de wijzigingen

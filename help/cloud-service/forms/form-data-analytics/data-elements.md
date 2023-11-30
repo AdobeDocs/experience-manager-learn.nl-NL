@@ -8,11 +8,11 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
 topic: Integrations, Development
-kt: 12557
+jira: KT-12557
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: b9dc505d-72c8-4b6a-974b-fc619ff7c256
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 In het bezit van Markeringen hebben wij twee nieuwe gegevenselementen (ApplicantsStateOfResidence en validationError) toegevoegd.
 
-![adaptief](assets/data_elements.png)
+![adaptieve vorm](assets/data_elements.png)
 
 ## Verzoekende partijStateOfResidence
 
-De **Verzoekende partijStateOfResidence** data element was gevormd door te selecteren **Kern** in de vervolgkeuzelijst met extensies en **Aangepaste code** voor het type gegevenselement, zoals wordt weergegeven in de onderstaande schermafbeelding
+De **Verzoekende partijStateOfResidence** data element was gevormd door te selecteren **Kern** in de vervolgkeuzelijst met extensies en **Aangepaste code** voor het type gegevenselement, zoals hieronder weergegeven in het scherm
 ![ingezetene van de verzoekende staat](assets/applicantstateofresidence.png)
 
 De volgende aangepaste code is gebruikt om de waarde van de **_state_** adaptief formulierveld.
@@ -42,7 +42,7 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-De **ValidationError** data element was gevormd door te selecteren **Kern** in de vervolgkeuzelijst met extensies en **Aangepaste code** voor het type gegevenselement, zoals wordt weergegeven in de onderstaande schermafbeelding
+De **ValidationError** data element was gevormd door te selecteren **Kern** in de vervolgkeuzelijst met extensies en **Aangepaste code** voor het type gegevenselement, zoals hieronder weergegeven in het scherm
 
 ![validatiefout](assets/validation-error.png)
 

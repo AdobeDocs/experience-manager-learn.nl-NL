@@ -1,15 +1,15 @@
 ---
 title: Dispatcher-filters voor AEM GraphQL
-description: Leer hoe u AEM Publish Dispatcher-filters configureert voor gebruik met AEM GraphQL.
+description: Leer hoe u AEM filters voor publicatieverzending configureert voor gebruik met AEM GraphQL.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10829
+jira: KT-10829
 thumbnail: kt-10829.jpg
 exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Verzendingsfilters
 
-Adobe Experience Manager as a Cloud Service gebruikt de filters van de Verzender van de Publicatie AEM om slechts verzoeken te verzekeren die zouden moeten bereiken AEM bereiken AEM. Standaard worden alle aanvragen geweigerd en moeten patronen voor toegestane URL&#39;s expliciet worden toegevoegd.
+Adobe Experience Manager as a Cloud Service gebruikt AEM de filters van de Verzender van de Publicatie om slechts verzoeken te verzekeren die AEM zouden moeten bereiken AEM. Standaard worden alle aanvragen geweigerd en moeten patronen voor toegestane URL&#39;s expliciet worden toegevoegd.
 
 | Type client | [App van één pagina (SPA)](../spa.md) | [Webcomponent/JS](../web-component.md) | [Mobiel](../mobile.md) | [Server-naar-server](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
@@ -26,18 +26,18 @@ Adobe Experience Manager as a Cloud Service gebruikt de filters van de Verzender
 
 >[!TIP]
 >
-> De volgende configuraties zijn voorbeelden. Zorg ervoor dat u de instellingen aanpast aan de vereisten van uw project.
+> De volgende configuraties zijn voorbeelden. Zorg ervoor dat u de instellingen aanpast en aanpast aan de vereisten van uw project.
 
 ## Configuratie van filter Dispatcher
 
-De AEM-filterconfiguratie van Dispatcher publiceren definieert de URL-patronen die zijn toegestaan om AEM te bereiken, en moet het URL-voorvoegsel bevatten voor het AEM voortgezette queryeindpunt.
+De AEM publiceer de filterconfiguratie van de Verzender bepaalt de patronen URL die worden toegestaan om AEM te bereiken, en moet de prefix URL voor het AEM persisted vraageindpunt omvatten.
 
-| Client maakt verbinding met | AEM-auteur | AEM-publicatie | Voorvertoning AEM |
+| Client maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
 | Vereist configuratie Dispatcher-filters | ✘ | ✔ | ✔ |
 
 Een `allow` regel met het URL-patroon `/graphql/execute.json/*`en controleer de bestands-id (bijvoorbeeld `/0600`, is uniek in het dossier van het voorbeeldlandbouwbedrijf).
-Dit staat HTTP- GET- verzoek aan het persistente vraageindpunt toe, zoals `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` tot en met AEM Publish.
+Dit staat HTTP- GET- verzoek aan het persistente vraageindpunt toe, zoals `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` tot AEM Publiceren.
 
 Als het gebruiken van de Fragmenten van de Ervaring in uw AEM Headless ervaring, doe het zelfde voor deze wegen.
 

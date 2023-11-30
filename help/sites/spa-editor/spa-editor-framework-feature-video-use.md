@@ -6,10 +6,11 @@ topic: SPA
 feature: SPA Editor
 role: Developer
 level: Beginner
-kt: 1047
+jira: KT-1047
 thumbnail: 22229.jpg
+doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -36,6 +37,6 @@ De WKND SPA-implementatie biedt alleen ondersteuning voor AEM 6.4.8+, AEM 6.5.5+
 
 Download en installeer de juiste [WKND-SPA](https://github.com/adobe/aem-guides-wknd-spa/releases) op basis van uw versie van AEM. Er zijn verschillende versies voor **Reageren**.
 
-Voor een gedetailleerde zelfstudie over het ontwikkelen met de SPA Editor gaat u naar:
+Zie voor een gedetailleerde zelfstudie over het ontwikkelen met de SPA Editor:
 
 * [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)

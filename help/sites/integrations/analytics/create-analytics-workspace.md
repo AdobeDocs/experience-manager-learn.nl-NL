@@ -6,12 +6,13 @@ topic: Integrations
 feature: Adobe Client Data Layer
 role: User
 level: Intermediate
-kt: 6409
+jira: KT-6409
 thumbnail: KT-6296.jpg
+doc-type: Tutorial
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integratie" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2162'
 ht-degree: 0%
@@ -53,13 +54,13 @@ Deze zelfstudie is een voortzetting van de [Aangeklikte component bijhouden met 
 
 * A **Tageigenschap** met de [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) enabled
 * **Adobe Analytics** test/dev rapportsuite-id en trackingserver. Zie de volgende documentatie voor [een rapportenpakket maken](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) browser uitbreiding die met een markeringsbezit wordt gevormd die op [WKND-site](https://wknd.site/us/en.html) of een AEM plaats met de Toegelaten Laag van Gegevens van de Adobe.
+* [Foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) browser uitbreiding die met een markeringsbezit wordt gevormd die op [WKND-site](https://wknd.site/us/en.html) of een AEM plaats met de Laag van Gegevens van de Adobe toegelaten.
 
 ## Conversievariabelen (eVars) en succesgebeurtenissen (gebeurtenis)
 
-De Custom Insight-conversievariabele (of -eVar) wordt in de Adobe-code op de geselecteerde webpagina&#39;s van uw site geplaatst. Zijn belangrijkste doel is omzettingssuccesmetriek in douane marketing rapporten te segmenteren. Een eVar kan een op een bezoek gebaseerde functie zijn en werkt net als cookies. De waarden die worden doorgegeven aan eVar-variabelen volgen de gebruiker gedurende een vooraf bepaalde periode.
+De Custom Insight-conversievariabele (of eVar) wordt in de Adobe-code op de geselecteerde webpagina&#39;s van uw site geplaatst. Zijn belangrijkste doel is omzettingssuccesmetriek in douane marketing rapporten te segmenteren. Een eVar kan een op een bezoek gebaseerde functie zijn en werkt net als cookies. De waarden die in eVar variabelen worden overgegaan volgen de gebruiker voor een vooraf bepaalde periode.
 
-Wanneer een eVar aan de waarde van een bezoeker wordt geplaatst, onthoudt Adobe automatisch die waarde tot het verloopt. Eventuele succesgebeurtenissen die een bezoeker tegenkomt terwijl de waarde eVar actief is, worden geteld bij de waarde eVar.
+Wanneer een eVar aan de waarde van een bezoeker wordt geplaatst, onthoudt de Adobe automatisch die waarde tot het verloopt. Eventuele succesgebeurtenissen die een bezoeker tegenkomt terwijl de eVar-waarde actief is, worden geteld bij de eVar-waarde.
 
 Vars kunnen het beste worden gebruikt om oorzaak en effect te meten, zoals:
 
@@ -75,13 +76,13 @@ Gebeurtenissen met succes zijn handelingen die kunnen worden bijgehouden. U bepa
 
    ![Analytics AEP](assets/create-analytics-workspace/analytics-aep.png)
 
-1. Klik op de werkbalk Analyse op **Beheer** > **Rapportageopties** en zoek naar de rapportsuite.
+1. Klik op de werkbalk Analyse op **Beheerder** > **Rapportageopties** en zoek naar de rapportsuite.
 
    ![Analyserapportsuite](assets/create-analytics-workspace/select-report-suite.png)
 
 1. Selecteer de rapportsuite > **Instellingen bewerken** > **Conversie** > **Conversievariabelen**
 
-   ![Variabelen voor analytische omzetting](assets/create-analytics-workspace/conversion-variables.png)
+   ![Variabelen voor analytische conversie](assets/create-analytics-workspace/conversion-variables.png)
 
 1. Met de **Nieuw toevoegen** Laten we Conversievariabelen maken om het schema als volgt toe te wijzen:
 
@@ -126,7 +127,7 @@ Maak vervolgens een [project](https://experienceleague.adobe.com/docs/analytics/
 
    * **[Componenten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)** - Componenten zijn dimensies, metriek, segmenten of datumbereiken, die allemaal kunnen worden gecombineerd in een tabel met vrije vorm om te beginnen met het beantwoorden van uw zakelijke vraag. Zorg ervoor dat u bekend bent met elk type component voordat u in de analyse gaat duiken. Als u de componentterminologie onder de knie hebt, kunt u beginnen met slepen en neerzetten om uw analyse te maken in een tabel met vrije vorm.
    * **[Visualisaties](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)** - Visualisaties, zoals een staaf of een lijndiagram, worden vervolgens toegevoegd boven op de gegevens om deze visueel tot leven te brengen. In de uiterst linkse spoorlijn, selecteer het middenpictogram van Visualisaties om de volledige lijst van beschikbare visualisaties te zien.
-   * **[Deelvensters](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html)** - Een deelvenster is een verzameling tabellen en visualisaties. U hebt toegang tot deelvensters via het pictogram linksboven in de werkruimte. Deelvensters zijn handig wanneer u uw projecten wilt ordenen op basis van tijdsperiodes, rapportreeksen of gevallen waarin u de analyse wilt gebruiken. De volgende deelvenstertypen zijn beschikbaar in Analysis Workspace:
+   * **[Deelvensters](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html)** - Een deelvenster is een verzameling tabellen en visualisaties. U hebt toegang tot deelvensters via het pictogram linksboven in de werkruimte. Deelvensters zijn handig wanneer u uw projecten wilt ordenen op basis van tijdsperiodes, rapportreeksen of gebruik van analyses. De volgende deelvenstertypen zijn beschikbaar in Analysis Workspace:
 
    ![Sjabloonselectie](assets/create-analytics-workspace/workspace-tools.png)
 
@@ -144,9 +145,9 @@ Daarna, bouw een lijst om een visuele vertegenwoordiging tot stand te brengen va
 
 1. Sleep de **Pagina** dimensiecomponent op de Lijst van de Vrije Vorm. U moet nu een visualisatie kunnen weergeven die de paginanaam (eVar9) en de bijbehorende paginaweergaven (voorvallen) weergeeft die in de tabel worden weergegeven.
 
-   ![Pagina Dimension](assets/create-analytics-workspace/evar9-dimension.png)
+   ![Pagina-Dimension](assets/create-analytics-workspace/evar9-dimension.png)
 
-1. Sleep de **CTA-klik** (event8) metrisch op het voorkomen en vervangt het metrisch. U kon nu een visualisatie bekijken die de Naam van de Pagina (eVar9) en een overeenkomstige telling van CTA Klikken gebeurtenissen op een pagina toont.
+1. Sleep de **CTA-klik** (event8) metrisch op het voorkomen en vervangt het metrisch. U kon nu een visualisatie bekijken die de Naam van de Pagina (eVar9) en een overeenkomstige telling van CTA klikgebeurtenissen op een pagina toont.
 
    ![Metrisch, CTA-klik](assets/create-analytics-workspace/evar8-cta-click.png)
 
@@ -156,7 +157,7 @@ Daarna, bouw een lijst om een visuele vertegenwoordiging tot stand te brengen va
      ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Na**
-     ![eVar5](assets/create-analytics-workspace/evar5-metrics.png)
+     ![eVar5-cijfers](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Om te begrijpen hoe de gebruikers met Knopen CTA in wisselwerking staan wanneer zij op de pagina&#39;s van de Plaats WKND zijn, is de verdere verdeling door de metrisch van Knoop identiteitskaart (eVar8) toe te voegen nodig.
 
@@ -178,12 +179,12 @@ De Classificatie van Analytics is een manier om de veranderlijke gegevens van An
 
 Laten we nu een variabele Classificatie maken voor Analytics.
 
-1. Van de **Beheer** werkbalkmenu, selecteert u **Rapportageopties**
-1. Selecteer **Set-id rapporteren** van de **Report Suite Manager** venster en klik op **Instellingen bewerken** > **Conversie** > **Conversie-classificaties**
+1. Van de **Beheerder** werkbalkmenu, selecteert u **Rapportageopties**
+1. Selecteer de **Set-id rapporteren** van de **Report Suite Manager** venster en klik op **Instellingen bewerken** > **Conversie** > **Conversie-classificaties**
 
    ![Conversieclassificatie](assets/create-analytics-workspace/conversion-classification.png)
 
-1. Van de **Classificatietype selecteren** vervolgkeuzelijst, selecteert u de variabele (eVar8-knop-id) om een classificatie toe te voegen.
+1. Van de **Classificatietype selecteren** vervolgkeuzelijst, selecteert u de variabele (eVar8-Button ID) om een classificatie toe te voegen.
 1. Klik op de pijl rechts naast de variabele Classificatie onder de sectie Classificaties om een nieuwe classificatie toe te voegen.
 
    ![Type conversieclassificatie](assets/create-analytics-workspace/select-classification-variable.png)
@@ -196,7 +197,7 @@ Laten we nu een variabele Classificatie maken voor Analytics.
 
 ### Classificatieimportmodule
 
-Gebruik de importer om classificaties te uploaden naar Adobe Analytics. U kunt de gegevens ook exporteren voor bijwerken vóór het importeren. De gegevens die u met het gereedschap Importeren importeert, moeten een specifieke indeling hebben. Adobe biedt u de mogelijkheid om een gegevenssjabloon te downloaden met alle juiste headerdetails in een door tabs gescheiden gegevensbestand. U kunt nieuwe gegevens aan deze sjabloon toevoegen en het gegevensbestand vervolgens met FTP in de browser importeren.
+Gebruik de importer om classificaties te uploaden naar Adobe Analytics. U kunt de gegevens ook exporteren voor bijwerken vóór het importeren. De gegevens die u met het gereedschap Importeren importeert, moeten een specifieke indeling hebben. Met Adobe kunt u een gegevenssjabloon downloaden met alle juiste koptekstdetails in een door tabs gescheiden gegevensbestand. U kunt nieuwe gegevens aan deze sjabloon toevoegen en het gegevensbestand vervolgens met FTP in de browser importeren.
 
 #### Indelingssjabloon
 
@@ -204,7 +205,7 @@ Voordat u classificaties importeert in marketingrapporten, kunt u een sjabloon d
 
 Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (eVar8)
 
-1. Navigeren naar **Beheer** > **Classificatieimportmodule**
+1. Navigeren naar **Beheerder** > **Classificatieimportmodule**
 1. Laten we een classificatiesjabloon voor de conversievariabele downloaden van de **Sjabloon downloaden** Tab.
    ![Type conversieclassificatie](assets/create-analytics-workspace/classification-importer.png)
 
@@ -215,15 +216,15 @@ Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (e
 
 1. Klikken **Downloaden** en sla het sjabloonbestand op uw lokale systeem op. Het sjabloonbestand is een door tabs gescheiden gegevensbestand (bestandsnaamextensie .tab) dat door de meeste spreadsheettoepassingen wordt ondersteund.
 1. Open het door tabs gescheiden gegevensbestand met een editor van uw keuze.
-1. Voeg de knop-id (eVar9) en een bijbehorende knopnaam toe aan het door tabs gescheiden bestand voor elke eVar-9-waarde uit stap 9 in de sectie.
+1. Voeg de Knoop ID (eVar9) en een overeenkomstige knoopnaam aan het lusje-afgebakende dossier voor elke eVar9 waarde van Stap 9 in de sectie toe.
 
    ![Sleutelwaarde](assets/create-analytics-workspace/key-value.png)
 
 1. **Opslaan** het door tabs gescheiden bestand.
 1. Ga naar de **Bestand importeren** tab.
-1. Configureer de bestemming voor het importeren van het bestand.
-   * **Rapportsuite selecteren** : WKND Site AEM (rapportsuite)
-   * **Te classificeren gegevensset** : Knop-id (conversievariabele eVar8)
+1. Configureer de bestemming voor het importeren van bestanden.
+   * **Rapportsuite selecteren** : WKND-site AEM (rapportsuite)
+   * **Te classificeren gegevensset** : Button-id (conversievariabele eVar8)
 1. Klik op de knop **Bestand kiezen** uploadt u het door tabs gescheiden bestand van uw systeem en klikt u vervolgens op **Bestand importeren**
 
    ![Bestandsimporteur](assets/create-analytics-workspace/file-importer.png)

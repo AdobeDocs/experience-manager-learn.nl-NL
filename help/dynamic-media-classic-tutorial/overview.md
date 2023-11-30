@@ -1,15 +1,13 @@
 ---
 title: Zelfstudie over best practices voor Dynamic Media Classic
 description: Dynamic Media Classic is het knooppunt waar klanten veelzijdige media-inhoud kunnen maken, schrijven en leveren. Deze zelfstudie over best practices is gemaakt om huidige en nieuwe gebruikers van Dynamic Media Classic te helpen beter te begrijpen wat ze kunnen doen met deze krachtige, rijke mediaoplossing van Adobe. In dit gedeelte van de zelfstudie leert u wat Dynamic Media Classic is en bekijkt u de kernmogelijkheden en gebruikersinterface van.
-doc-type: tutorial
-audience: all
-activity: develop, use
 feature: Dynamic Media Classic
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%
@@ -20,7 +18,7 @@ ht-degree: 0%
 
 Deze handleiding is bedoeld om huidige en nieuwe gebruikers van Dynamic Media Classic te helpen beter te begrijpen wat ze kunnen doen met hun krachtige, rijke mediaoplossing van Adobe. Dat doen we door:
 
-- Maak kennis met Dynamic Media Classic, beschrijf wat het is en geef een overzicht van de kernmogelijkheden en gebruikersinterface.
+- Maak kennis met Dynamic Media Classic, beschrijf wat het is en geef een overzicht van de kernmogelijkheden en gebruikersinterface (UI).
 - Uitleg over de algemene workflow Maken, Auteur en Leveren die u zult volgen wanneer u met middelen in de oplossing werkt.
 - Belangrijke onderdelen die moeten worden ingesteld voordat u de oplossing gaat gebruiken.
 - Een diepe duik in het gebruik van verschillende van de kernmogelijkheden van de oplossing.
@@ -39,7 +37,7 @@ Het dienen van afbeeldingen is misschien wel de meest gebruikte functie van Dyna
 
 In deze handleiding bespreken we de volgende kernmogelijkheden van Dynamic Media Classic.
 
-- **Dynamic Imaging.** De overkoepelende term voor realtime bewerken, opmaken en vergroten/verkleinen, en interactief zoomen en pannen; kleur- en structuurobservatie; 360 graden centrifuge; afbeeldingssjablonen; en multimediaviewers.
+- **Dynamic Imaging.** De overkoepelende term voor real-time bewerken, opmaken en vergroten, interactief zoomen en pannen, het bekijken van kleuren en structuren, ronddraaien van 360 graden, afbeeldingssjablonen en multimediaviewers.
 - **Video.** Upload definitieve video&#39;s, publiceer ze en download ze progressief naar configureerbare videoviewers.
 - **Smart Imaging.** Technologie die gebruikmaakt van Adobe Sensei AI-mogelijkheden en met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de beeldlevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
@@ -47,11 +45,11 @@ Ga naar de [Documentatie voor Dynamic Media Classic](https://experienceleague.ad
 
 ## De gebruikersinterface van Dynamic Media Classic (UI)
 
-De belangrijkste gebruikersinterface van Dynamic Media Classic bestaat uit drie belangrijke gebieden: De globale bar van de Navigatie, de Bibliotheek van Activa, en doorbladert Comité/bouwt Comité.
+De belangrijkste UI van Dynamic Media Classic bestaat uit drie belangrijke gebieden: de Globale bar van de Navigatie, de Bibliotheek van Activa, en Browse Comité/bouwt Comité.
 
 ![afbeelding](assets/overview/overview-dmc-ui-ew.png)
 
-_Dynamic Media Classic-gebruikersinterface_
+_DYNAMIC MEDIA CLASSIC UI_
 
 **Algemene navigatiebalk.** U bevindt zich boven aan het scherm en gebruikt de knoppen op deze balk voor toegang tot de belangrijkste gebieden en mogelijkheden van de oplossing. U gebruikt dit programma bijvoorbeeld om uploadmogelijkheden te openen, verschillende gebieden voor het samenstellen van elementen te openen (afbeeldingsset, centrifugeset, enz.), belangrijke taken uit te voeren, zoals het instellen van Voorinstellingen afbeelding en Voorinstellingen viewer, en uw elementen te publiceren. Hier kunt u ook uw taken controleren, recente activiteiten bekijken en een keuze maken uit diverse opties voor hulp.
 
@@ -71,6 +69,6 @@ _Dynamic Media Classic-gebruikersinterface_
 
 >[!TIP]
 >
->Selecteer **Publiceren na uploaden** Schakel in het dialoogvenster Uploaden in om elementen automatisch te publiceren tijdens het uploaden.
+>Selecteer de **Publiceren na uploaden** Schakel in het dialoogvenster Uploaden in om elementen automatisch te publiceren tijdens het uploaden.
 
 Meer informatie over [Navigeren door de gebruikersinterface van Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).

@@ -3,14 +3,14 @@ title: Acrobat Sign Cloud-configuratie maken
 description: Met de configuratie van cloudservices in AEM kunt u integratie tussen AEM en andere cloudtoepassingen maken. De volgende video zal u door de stappen lopen nodig om de configuratie van de wolkendiensten tot stand te brengen om AEM met Acrobat Sign te integreren.
 feature: Adaptive Forms
 thumbnail: 38179.jpg
-kt: 6033
+jira: KT-6033
 topic: Development
 role: Developer
 level: Beginner
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7a62ae37-d391-4136-99f3-b32181afd475
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%

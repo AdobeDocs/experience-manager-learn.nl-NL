@@ -1,17 +1,14 @@
 ---
 title: Delen van sociale media gebruiken in AEM Sites
-description: Ontdek het instellen en gebruiken van de component Sociale media delen.
+description: Ontdek het instellen en gebruiken van de component voor sociale media delen.
 feature: Core Components
-topics: integrations
-audience: developer, implementer
-doc-type: technical video
-activity: setup
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
+doc-type: Technical Video
 exl-id: 569069e8-7964-49f1-96ed-7dfa4f8ed96c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -20,7 +17,7 @@ ht-degree: 0%
 
 # Delen via sociale media gebruiken {#using-social-media-sharing-in-aem-sites}
 
-Ontdek het instellen en gebruiken van de component Sociale media delen.
+Ontdek het instellen en gebruiken van de component voor sociale media delen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18897?quality=12&learn=on)
 
@@ -37,9 +34,9 @@ In deze video worden de volgende mogelijkheden van de component voor het delen v
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) moet worden ingesteld op zowel AEM-auteur als AEM-publicatie, om de publicatierunmode toe te wijzen aan het openbaar toegankelijke domein dat wordt gebruikt voor toegang tot AEM-publicatie.
+[AEM externalizer](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) moet worden ingesteld op zowel AEM Auteur als AEM Publiceren, om de publicatierunmode toe te wijzen aan het openbaar toegankelijke domein dat wordt gebruikt voor toegang tot AEM Publiceren.
 
-In deze video gebruiken we `/etc/hosts` naar spul *www.example.com* om op te lossen aan localhost, en gebruik [basis AEM Dispatcher-configuratie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) om toe te staan dat www.example.com voor publicatie in AEM wordt weergegeven.
+In deze video gebruiken we `/etc/hosts` naar spul *www.example.com* om op te lossen aan localhost, en gebruik [basis AEM Dispatcher-configuratie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) om toe te staan dat www.example.com AEM Publiceren.
 
 ## Ondersteunende materialen {#supporting-materials}
 

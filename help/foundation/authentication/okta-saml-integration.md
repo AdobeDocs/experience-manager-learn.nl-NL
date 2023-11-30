@@ -8,21 +8,22 @@ role: Admin
 level: Experienced
 jira: KT-12305
 last-substantial-update: 2023-03-01T00:00:00Z
+doc-type: Tutorial
 exl-id: 460e9bfa-1b15-41b9-b8b7-58b2b1252576
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
 
 ---
 
-# Verifiëren voor AEM-auteur met OKTA
+# Verifiëren voor AEM auteur met OKTA
 
 > Zie [SAML 2.0-verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html) voor instructies over hoe te opstelling OKTA met AEM as a Cloud Service.
 
 De eerste stap bestaat uit het configureren van uw app op de OKTA-portal. Nadat uw app is goedgekeurd door uw OKTA-beheerder, hebt u toegang tot het IdP-certificaat en een Single Sign on URL. Hieronder ziet u de instellingen die gewoonlijk worden gebruikt voor de registratie van nieuwe toepassingen.
 
-* **Toepassingsnaam:** Dit is de naam van uw toepassing. Geef uw toepassing een unieke naam.
+* **Toepassingsnaam:** Dit is uw toepassingsnaam. Geef uw toepassing een unieke naam.
 * **SAML-ontvanger:** Na authentificatie van OKTA, is dit URL die op uw AEM instantie met de reactie SAML zou worden geraakt. SAML de authentificatiemanager onderschept normaal al URL&#39;s met / saml_login maar het zou verkieslijk zijn om het na uw toepassingswortel toe te voegen.
 * **SAML-publiek**: Dit is de domein-URL van uw toepassing. Gebruik geen protocol (http of https) in het domein-URL.
 * **SAML-naam-id:** Selecteer E-mail in de vervolgkeuzelijst.
@@ -42,9 +43,9 @@ Onthoud het wachtwoord voor de vertrouwde opslag. Dit wachtwoord moeten we later
 * Navigeren naar [Global Trust Store](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Klik op Certificaat toevoegen uit CER-bestand. Voeg het IdP-certificaat toe dat door OKTA is opgegeven en klik op Verzenden.
 
-   >[!NOTE]
-   >
-   >Wijs het certificaat niet toe aan gebruikers
+  >[!NOTE]
+  >
+  >Wijs het certificaat niet toe aan gebruikers
 
 Als u het certificaat toevoegt aan de vertrouwde opslag, krijgt u de certificaatalias zoals in de onderstaande schermafbeelding wordt getoond. De naam van de alias kan in uw geval anders zijn.
 
@@ -55,14 +56,14 @@ Als u het certificaat toevoegt aan de vertrouwde opslag, krijgt u de certificaat
 ### SAML-verificatiehandler configureren
 
 Navigeren naar [configMgr](http://localhost:4502/system/console/configMgr).
-Zoek en open &quot;Adobe Granite SAML 2.0 Authentication Handler&quot;.
+Zoek en open &quot;Adobe granite SAML 2.0 Authentication Handler&quot;.
 Verstrek de volgende eigenschappen zoals hieronder gespecificeerd zijn de belangrijkste eigenschappen die moeten worden gespecificeerd:
 
 * **pad** - Dit is het pad waar de verificatiehandler wordt geactiveerd.
 * **IdP URL**:Dit is uw IdP-URL die wordt geleverd door OKTA
-* **IDP-certificaatalias**:Dit is de alias die u hebt gekregen toen u het IdP-certificaat aan AEM vertrouwde opslag toevoegde
-* **Entiteit-id van serviceprovider**:Dit is de naam van uw AEM
-* **Wachtwoord sleutelarchief**:Dit is het wachtwoord voor de vertrouwde opslag dat u hebt gebruikt
+* **IdP-certificaatalias**:Dit is de alias die u hebt gekregen toen u het IdP-certificaat aan AEM vertrouwde opslag toevoegde
+* **Entiteit-id van serviceprovider**:Dit is de naam van uw AEM Server
+* **Wachtwoord sleutelarchief**:Dit is het vertrouwensopslagwachtwoord dat u hebt gebruikt
 * **Standaardomleiding**:Dit is de URL waarnaar een geslaagde verificatie moet worden omgeleid
 * **Kenmerk gebruikersnaam**:uid
 * **Codering gebruiken**:false
@@ -80,14 +81,14 @@ Navigeren naar [configMgr](http://localhost:4502/system/console/configMgr).
 Zoek en open &quot;Apache Sling Referrer Filter&quot;.Stel de volgende eigenschappen in zoals hieronder opgegeven:
 
 * **Lege waarden toestaan**: false
-* **Hosts toestaan**: Hostnaam van idP (dit is anders in uw geval)
-* **Regexp-host toestaan**: Hostnaam van idP (dit is anders in uw geval) De eigenschappen screenshot van de Verwijzing van de Filter van de Verkoper van de Verkoper van de Verkoop
+* **Hosts toestaan**: IdP&#39;s hostname (dit is anders in uw geval)
+* **Regexp-host toestaan**: hostnaam van idP (dit is anders in uw geval) Schermafbeelding van de eigenschappen van de Verwijzing van de Filter van de Verkenner van de Verkoper
 
 ![referentie-filter](assets/okta-referrer.png)
 
 #### Logboekregistratie voor FOUTOPSPORING configureren voor de OKTA-integratie
 
-Wanneer vestiging de integratie OKTA op AEM, kan het nuttig zijn om de DEBUG logboeken voor AEM de manager van de Authentificatie van SAML te herzien. Om het logboekniveau aan DEBUG te plaatsen, creeer een nieuwe Sling Logger configuratie via de Console van het Web AEM OSGi.
+Wanneer vestiging de integratie OKTA op AEM, kan het nuttig zijn om de DEBUG- logboeken voor AEM de manager van de Authentificatie van SAML te herzien. Om het logboekniveau aan DEBUG te plaatsen, creeer een nieuwe Sling Logger configuratie via de Console van het Web AEM OSGi.
 
 Vergeet niet dit logger in het werkgebied en de productie te verwijderen of uit te schakelen om logruis te verminderen.
 
@@ -104,4 +105,4 @@ Wanneer vestiging de integratie OKTA op AEM, kan het nuttig zijn om DEBUG logboe
 
 #### Uw OKTA-configuratie testen
 
-Afmelden bij AEM instantie. Probeer de koppeling te openen. U moet OKTA SSO in actie zien.
+Afmelden van uw AEM-instantie. Probeer de koppeling te openen. U moet OKTA SSO in actie zien.

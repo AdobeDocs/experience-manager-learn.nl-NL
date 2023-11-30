@@ -3,13 +3,13 @@ title: OCR-gegevensextractie
 description: Gegevens uit door de overheid uitgegeven documenten extraheren om formulieren in te vullen.
 feature: Barcoded Forms
 version: 6.4,6.5
-kt: 6679
+jira: KT-6679
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
@@ -40,16 +40,16 @@ De OpenAPI-specificatie (voorheen Swagger Specification) is een API-beschrijving
 Als u uw eerste wagger/OpenAPI-bestand wilt maken, volgt u de [OpenAPI-documentatie](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
-> AEM Forms biedt ondersteuning voor OpenAPI Specification versie 2.0 (fka Swagger).
+> AEM Forms ondersteunt OpenAPI Specification versie 2.0 (fka Swagger).
 
-Gebruik de [wageneditor](https://editor.swagger.io/) om uw wagerbestand te maken om de bewerkingen te beschrijven die OTP-code verzenden en verifiëren die met SMS is verzonden. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide wagerbestand kan worden gedownload van [hier](assets/drivers-license-swagger.zip)
+Gebruik de [wagenbewerker](https://editor.swagger.io/) om uw wagerbestand te maken om de bewerkingen te beschrijven die OTP-code verzenden en verifiëren die met SMS is verzonden. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide wagerbestand kan worden gedownload van [hier](assets/drivers-license-swagger.zip)
 
 ## Overwegingen bij het definiëren van het wagerbestand
 
 * Definities zijn vereist
 * $ref moet worden gebruikt voor methodedefinities
 * Voorkeur om te hebben verbruikt en secties bepaalt
-* Definieer de hoofdparameters of responsparameters van inline-verzoeken niet. Probeer zo veel mogelijk te moduleren. De volgende definitie wordt bijvoorbeeld niet ondersteund
+* Definieer de hoofdparameters of responsparameters van inline-verzoeken niet. Probeer zo veel mogelijk te modulariseren. De volgende definitie wordt bijvoorbeeld niet ondersteund
 
 ```json
  "name": "body",
@@ -105,9 +105,9 @@ Voer de volgende stappen uit als u de voorbeeldbestanden met uw API-sleutel wilt
 * [De gegevensbron downloaden](assets/drivers-license-source.zip) en importeren in AEM [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 * [Het formuliergegevensmodel downloaden](assets/drivers-license-fdm.zip) en importeren in AEM [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 * [Clientbibliotheek downloaden](assets/drivers-license-client-lib.zip)
-* Download het voorbeeldadaptieve formulier dat u kunt [hier gedownload](assets/adaptive-form-dl.zip). In dit voorbeeldformulier worden de serviceaanroepen van het formuliergegevensmodel gebruikt die als onderdeel van dit artikel worden aangeboden.
+* Download het voorbeeldadaptieve formulier kan [hier gedownload](assets/adaptive-form-dl.zip). In dit voorbeeldformulier worden de serviceaanroepen van het formuliergegevensmodel gebruikt die als onderdeel van dit artikel worden aangeboden.
 * Het formulier importeren in AEM van de [UI Forms en Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Open het formulier in [bewerkingsmodus.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
+* Open het formulier in [bewerken.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
 * Geef uw API-sleutel op als standaardwaarde in het veld Toepassen en sla uw wijzigingen op
 * Open de regelredacteur voor Basis 64 gebied van het Koord. Let op de service-aanroep wanneer de waarde van dit veld wordt gewijzigd.
 * Het formulier opslaan

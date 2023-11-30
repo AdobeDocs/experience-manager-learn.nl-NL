@@ -6,10 +6,10 @@ topic: Headless
 feature: GraphQL API
 role: Developer
 level: Intermediate
-kt: 10269
+jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -44,9 +44,9 @@ Installeer de [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headl
 $ npm i @adobe/aem-headless-client-js
 ```
 
-In dit codevoorbeeld wordt getoond hoe u een query kunt uitvoeren AEM het [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) npm-module gebruiken `async/await` syntaxis. De AEM Headless SDK voor JavaScript ondersteunt ook [Promise syntaxis](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
+In dit codevoorbeeld wordt getoond hoe u een query kunt uitvoeren AEM het [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) npm-module gebruiken `async/await` syntaxis. De AEM Headless SDK voor JavaScript ondersteunt ook [Promise-syntaxis](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
-In deze code wordt ervan uitgegaan dat de query met de naam doorloopt `wknd/adventureNames` is gemaakt op AEM-auteur en gepubliceerd naar AEM-publicatie.
+In deze code wordt ervan uitgegaan dat de query met de naam doorloopt `wknd/adventureNames` is gemaakt op AEM auteur en gepubliceerd voor AEM publiceren.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -102,7 +102,7 @@ Gebruiken `useEffect` Het is handig om de asynchrone GraphQL-aanroep in React te
 1. Het verstrekt synchrone omslag voor de asynchrone vraag aan AEM.
 1. Het vermindert onnodig AEM.
 
-In deze code wordt ervan uitgegaan dat de query met de naam doorloopt `wknd-shared/adventure-by-slug` is gemaakt op AEM-auteur en gepubliceerd naar AEM Publish met behulp van GraphiQL.
+In deze code wordt ervan uitgegaan dat de query met de naam doorloopt `wknd-shared/adventure-by-slug` is gemaakt op AEM auteur en gepubliceerd voor AEM publiceren met GraphiQL.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';

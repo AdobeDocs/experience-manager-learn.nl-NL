@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 5%
@@ -25,12 +26,12 @@ Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
-In deze zelfstudie wordt uitgelegd hoe AEM Content Services kan worden gebruikt om de ervaring van een mobiele app die gebeurtenisinformatie weergeeft (muziek, prestaties, illustraties, enz.), te verbeteren die wordt geleid door het WKND-team.
+In deze zelfstudie wordt uitgelegd hoe AEM Content Services kan worden gebruikt om de ervaring van een mobiele app die gebeurtenisinformatie weergeeft (muziek, prestaties, illustraties, enz.), te verbeteren. die wordt geleid door het WKND-team.
 
 In deze zelfstudie worden de volgende onderwerpen behandeld:
 
 * Inhoud maken die een gebeurtenis vertegenwoordigt met behulp van inhoudfragmenten
-* Definieer eindpunten voor AEM Content Services met behulp van sjablonen en pagina&#39;s van AEM-sites die de gebeurtenisgegevens weergeven als JSON
+* Definieer eindpunten voor AEM Content Services met behulp van de sjablonen en pagina&#39;s van AEM Sites die de gebeurtenisgegevens weergeven als JSON
 * Ontdek hoe AEM WCM Core Components kan worden gebruikt om marketers in staat te stellen JSON-eindpunten te maken
 * AEM Content Services JSON vanuit een mobiele app gebruiken
    * Android wordt gebruikt omdat het een platformonafhankelijke emulator heeft die alle gebruikers (Windows, macOS en Linux) van deze zelfstudie kunnen gebruiken om de native app uit te voeren.
@@ -43,7 +44,7 @@ Als u een probleem hebt met de zelfstudie of de code, kunt u een [GitHub-problee
 
 ## AEM GraphQL versus AEM Content Services
 
-|  | GraphQL API&#39;s AEM | AEM Content Services |
+|                                | GraphQL API&#39;s AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | Schema-definitie | Modellen voor structuurinhoudsfragmenten | AEM componenten |
 | Inhoud | Contentfragmenten | AEM componenten |

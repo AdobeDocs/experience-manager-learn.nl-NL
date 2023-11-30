@@ -6,10 +6,10 @@ version: 6.5
 topic: Development
 role: User
 level: Beginner
-kt: 9685
+jira: KT-9685
 exl-id: 07fed661-0995-41ab-90c4-abde35a14a4c
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -22,17 +22,17 @@ AEM Forms 6.5 introduceerde de capaciteit om functies te bepalen JavaScript die 
 AEM Forms biedt een aantal van dergelijke aangepaste functies uit de verpakking, maar u hebt de behoefte om uw eigen aangepaste functies te definiëren en deze in meerdere formulieren te gebruiken.
 
 Voer de volgende stappen uit om uw eerste aangepaste functie te definiëren:
-* [Log in crx](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
+* [Aanmelden bij crx](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
 * Een nieuwe map maken onder de apps met de naam Experience-League (deze mapnaam kan een naam naar keuze zijn)
 * Sla uw wijzigingen op.
-* Maak in de map Experience-League een nieuw knooppunt van het type cq:ClientLibraryFolder met de naam clientlibs.
+* Maak in de map Experience-League een nieuw knooppunt van het type cq:ClientLibraryFolder genaamd clientlibs.
 * Selecteer de map Clientlibs die u net hebt gemaakt en voeg de eigenschappen allowProxy en category toe, zoals weergegeven in de schermafbeelding, en sla uw wijzigingen op.
 
 ![client-lib](assets/custom-functions.png)
 * Een map maken met de naam **js** onder de **clientlibs** map
 * Een bestand maken met de naam **functies.js** onder de **js** map
 * Een bestand maken met de naam **js.txt** onder de **clientlibs** map. Sla uw wijzigingen op.
-* De mapstructuur moet er als volgt uitzien:
+* De mapstructuur moet eruitzien als de onderstaande schermafbeelding.
 
 ![Regeleditor](assets/folder-structure.png)
 
@@ -71,7 +71,7 @@ function convertUTC(strUTCString)
 }
 ```
 
-Gelieve [verwijzen naar jsdoc ](https://jsdoc.app/index.html)voor meer informatie over het annoteren van javascript-functies.
+Gelieve [verwijzen naar jsdoc](https://jsdoc.app/index.html)voor meer informatie over het annoteren van javascript-functies.
 De bovenstaande code heeft twee functies:
 **getCountyNamesList** - retourneert een array met tekenreeks
 **convertUTC** - UTC-tijdstempel converteren naar lokale tijdzone

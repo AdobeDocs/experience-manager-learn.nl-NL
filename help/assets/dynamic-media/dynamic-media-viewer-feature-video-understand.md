@@ -7,8 +7,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
+doc-type: Feature Video
 exl-id: db4fc561-2368-4df8-9b02-fc08afa00805
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
@@ -25,6 +26,6 @@ Enkele belangrijke verbeteringen zijn:
 
 * Selecteer op intuïtieve wijze een viewer-element in de viewer-voorinstelling en pas de instellingen aan, zonder dat u de viewercomponent hoeft te kennen.
 * Nuttige knopinfo voor wijzigingstoetsen waarin de viewerinstellingen en -parameters worden uitgelegd.
-* CSS-optie tonen/verbergen om geavanceerde CSS-wijzigingen aan te brengen. Mogelijkheid om aangepaste CSS te importeren.
+* CSS tonen/verbergen om geavanceerde CSS-wijzigingen aan te brengen. Mogelijkheid om aangepaste CSS te importeren.
 * OOTB-galerie met hotspotknoppen om de ontwikkeling van nieuwe knoppen te minimaliseren.
 * Rendermogelijkheden voor illustraties met hoge pixelknoppen voor Retina-schermen.

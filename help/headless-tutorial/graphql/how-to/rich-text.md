@@ -3,13 +3,13 @@ title: RTF-tekst gebruiken met AEM zonder kop
 description: Leer om inhoud te schrijven en referenced inhoud in te bedden gebruikend een multi-line rijke tekstredacteur met de Fragments van de Inhoud van Adobe Experience Manager, en hoe de rijke tekst door AEM GraphQL APIs als JSON wordt geleverd om door koploze toepassingen te worden verbruikt.
 version: Cloud Service
 doc-type: article
-kt: 9985
+jira: KT-9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 0%
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 Het tekstveld met meerdere regels is een gegevenstype van inhoudsfragmenten waarmee auteurs RTF-inhoud kunnen maken. Verwijzingen naar andere inhoud, zoals afbeeldingen of andere Content Fragments, kunnen dynamisch in regel worden ingevoegd in de tekstflow. Het tekstveld Eén regel is een ander gegevenstype van inhoudsfragmenten dat moet worden gebruikt voor eenvoudige tekstelementen.
 
-AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als HTML, platte tekst of als pure JSON-tekst. De vertegenwoordiging JSON is krachtig aangezien het de cliënttoepassing volledige controle over geeft hoe te om de inhoud terug te geven.
+AEM GraphQL API biedt een robuuste mogelijkheid om RTF-tekst te retourneren als HTML, platte tekst of als pure JSON. De vertegenwoordiging JSON is krachtig aangezien het de cliënttoepassing volledige controle over geeft hoe te om de inhoud terug te geven.
 
 ## Meerdere regels bewerken
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
-In de Inhoudsfragmenteditor biedt de menubalk van het tekstveld met meerdere regels auteurs standaard rijke tekstopmaakmogelijkheden, zoals **vet**, *cursief* en onderstrepen. Als u het veld met meerdere regels opent in de modus Volledig scherm, schakelt u [aanvullende opmaakgereedschappen, zoals Alineatekst, zoeken en vervangen, spellingcontrole en meer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+In de Inhoudsfragmenteditor biedt de menubalk van het tekstveld met meerdere regels auteurs standaard rijke tekstopmaakmogelijkheden, zoals **vet**, *cursief* en onderstrepen. Als u het veld met meerdere regels opent in de modus Volledig scherm, wordt [aanvullende opmaakgereedschappen, zoals Alineatekst, zoeken en vervangen, spellingcontrole en meer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ De **Standaardtype** kan worden ingesteld op:
 
 De **Standaardtype** Deze optie heeft rechtstreeks invloed op de bewerkingservaring en bepaalt of de tekstopties opgebouwd zijn.
 
-U kunt ook [inline-verwijzingen inschakelen](#insert-fragment-references) aan andere Inhoudsfragmenten controleren **Fragmentverwijzing toestaan** en het vormen van **Modellen voor toegestane inhoudsfragmenten**.
+U kunt [inline-verwijzingen inschakelen](#insert-fragment-references) aan andere Inhoudsfragmenten controleren **Fragmentverwijzing toestaan** en het vormen van **Modellen voor toegestane inhoudsfragmenten**.
 
 Controleer de **Vertaalbaar** als de inhoud moet worden gelokaliseerd. Alleen RTF en normale tekst kunnen worden gelokaliseerd. Zie [werken met gelokaliseerde inhoud voor meer informatie](./localized-content.md).
 
@@ -66,9 +66,9 @@ Ontwikkelaars kunnen de [JSON-voorvertoning](https://experienceleague.adobe.com/
 
 ## GraphQL-query voortgezet
 
-Het selecteren van `json` De responsindeling voor het veld met meerdere regels biedt de meeste flexibiliteit bij het werken met RTF-inhoud. De rijke tekstinhoud wordt geleverd als een serie van JSON knooptypes die uniek op het cliëntplatform kunnen worden verwerkt.
+De `json` De responsindeling voor het veld met meerdere regels biedt de meeste flexibiliteit bij het werken met RTF-inhoud. De rijke tekstinhoud wordt geleverd als een serie van JSON knooptypes die uniek op het cliëntplatform kunnen worden verwerkt.
 
-Hieronder ziet u een JSON-reactietype van een veld met meerdere regels met de naam `main` die een alinea bevat: &quot;*Dit is een alinea die **belangrijk**inhoud.*&quot; waarbij &quot;belangrijk&quot; wordt aangeduid als **vet**.
+Hieronder ziet u een JSON-reactietype van een veld met meerdere regels met de naam `main` die een alinea bevat : &quot;*Dit is een alinea die **belangrijk**inhoud.*&quot; waarbij &quot;belangrijk&quot; wordt gemarkeerd als **vet**.
 
 ```graphql
 query ($path: String!) {
@@ -332,7 +332,7 @@ De `nodeMap` is een letterlijke JavaScript-object dat wordt gebruikt als een kaa
 
 ### Voorbeeld van volledige code
 
-Een herbruikbaar Rich Text Rendering-hulpprogramma is te vinden in het dialoogvenster [WKND GraphQL React, voorbeeld](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Een herbruikbaar Rich Text Rendering-nut kan in worden gevonden [WKND GraphQL React, voorbeeld](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 * [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - herbruikbaar hulpprogramma dat een functie toegankelijk maakt `mapJsonRichText`. Dit nut kan door componenten worden gebruikt die een rijke tekstJSON reactie als React JSX willen teruggeven.
 * [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - Voorbeeldcomponent die een GraphQL-aanvraag doet die RTF-tekst bevat. De component gebruikt de `mapJsonRichText` gebruiken om de tekst met opmaak en eventuele verwijzingen te renderen.
@@ -340,7 +340,7 @@ Een herbruikbaar Rich Text Rendering-hulpprogramma is te vinden in het dialoogve
 
 ## In-line verwijzingen toevoegen aan RTF-tekst {#insert-fragment-references}
 
-In het veld Mutliline kunnen auteurs afbeeldingen of andere digitale elementen uit AEM Assets invoegen in de tekstflow met tekstopmaak.
+In het veld Mutliline kunnen auteurs afbeeldingen of andere digitale elementen uit AEM Assets invoegen in de tekststroom met tekstopmaak.
 
 ![afbeelding invoegen](assets/rich-text/insert-image.png)
 
@@ -391,7 +391,7 @@ query ($path: String!) {
 }
 ```
 
-In de bovenstaande vraag, `main` wordt geretourneerd als JSON. De `_references` object bevat fragmenten voor de afhandeling van alle verwijzingen van het type `ImageRef` of van het type `ArticleModel`.
+In de bovenstaande vraag, `main` wordt geretourneerd als JSON. De `_references` object bevat fragmenten voor de afhandeling van alle verwijzingen van het type `ImageRef` of type `ArticleModel`.
 
 **JSON-antwoord:**
 
@@ -536,7 +536,7 @@ Een volledig voorbeeld van het schrijven van een renderer van douaneverwijzingen
 
 >[!NOTE]
 >
-> De bovenstaande video gebruikt `_publishUrl` om de afbeeldingsverwijzing te renderen. In plaats daarvan geeft u de voorkeur `_dynamicUrl` zoals uiteengezet in de [webgeoptimaliseerde afbeeldingen](./images.md);
+> De bovenstaande video gebruikt `_publishUrl` om de afbeeldingsverwijzing te renderen. In plaats daarvan, verkies `_dynamicUrl` zoals uiteengezet in de [webgeoptimaliseerde afbeeldingen](./images.md);
 
 
 De voorgaande video toont een voorbeeld van begin tot eind:

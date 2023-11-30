@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6448
+jira: KT-6448
 thumbnail: 327313.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 0%
@@ -27,7 +27,7 @@ De arbeiders van de Asset compute van de douane kunnen XMP (XML) gegevens produc
 Vaak voorkomende gevallen van gebruik zijn:
 
 + Integraties met systemen van derden, zoals een PIM (Product Information Management System), waar aanvullende metagegevens moeten worden opgehaald en opgeslagen op het middel
-+ Integratie met Adobe-services, zoals Content and Commerce AI, om metagegevens over elementen te verfraaien met extra leerkenmerken voor computers
++ Integratie met Adobe-services, zoals Content and Commerce AI, om metagegevens over elementen te verhogen met extra leerkenmerken voor computers
 + Metagegevens over het element afgeleid van zijn binair getal en opslaan als metagegevens over elementen in AEM as a Cloud Service
 
 ## Wat u gaat doen
@@ -40,17 +40,17 @@ In deze zelfstudie maken we een metagegevensworker voor de Asset compute die de 
 
 De aanroep van metagegevensworkers voor Asset computen is vrijwel gelijk aan die van [binaire rendering genereert workers](../develop/worker.md), waarbij het belangrijkste verschil het retourneringstype een XMP (XML)-uitvoering is waarvan de waarden ook naar de metagegevens van het element worden geschreven.
 
-asset compute workers implementeren het Asset compute SDK worker API-contract in de `renditionCallback(...)` functie, die conceptueel is:
+Asset compute workers implementeren het Asset compute SDK worker API-contract in de `renditionCallback(...)` functie, die conceptueel is:
 
 + __Invoer:__ De oorspronkelijke binaire en verwerkingsprofielparameters van een AEM element
 + __Uitvoer:__ Een XMP (XML)-uitvoering is als een uitvoering aan het AEM-element vastgehouden en de metagegevens van het element
 
 ![Logische stroom van de worker voor metagegevens van asset compute](./assets/metadata/logical-flow.png)
 
-1. De AEM Auteursdienst roept de Asset compute meta-gegevensarbeider aan, die de activa verstrekt __(1 bis)__ origineel binair, en __(1 ter)__ alle parameters die zijn gedefinieerd in het verwerkingsprofiel.
+1. AEM de auteursdienst roept de Asset compute meta-gegevensarbeider aan, die de activa verstrekt __(1 bis)__ origineel binair, en __(1 ter)__ alle parameters die zijn gedefinieerd in het verwerkingsprofiel.
 1. De Asset compute SDK organiseert de uitvoering van de metagegevens van de aangepaste Asset compute `renditionCallback(...)` functie, die een XMP (XML) vertoning afleidt, die op het binaire element van het element wordt gebaseerd __(1 bis)__ en alle parameters van het verwerkingsprofiel __(1 ter)__.
 1. De Asset compute-worker slaat de XMP (XML)-weergave op `rendition.path`.
-1. De XMP (XML) gegevens waarnaar wordt geschreven `rendition.path` wordt via de Asset compute SDK naar de AEM Author Service vervoerd en wordt aangeboden als __(4 bis)__ een tekstuitvoering en __(4 ter)__ Doorgegaan naar het metagegevensknooppunt van het element.
+1. De XMP (XML) gegevens waarnaar wordt geschreven `rendition.path` wordt via de Asset compute SDK naar AEM Auteur Service vervoerd en beschikbaar gesteld als __(4 bis)__ een tekstuitvoering en __(4 ter)__ Doorgegaan naar het metagegevensknooppunt van het element.
 
 ## Vorm manifest.yml{#manifest}
 
@@ -83,7 +83,7 @@ packages:
           memorySize: 512 # in MB   
 ```
 
-`function` verwijst naar de implementatie van de worker die is gemaakt in het dialoogvenster [volgende stap](#metadata-worker). De arbeiders van de naam semantisch (bijvoorbeeld `actions/worker/index.js` had een betere naam kunnen hebben `actions/rendition-circle/index.js`), zoals deze in de [URL van worker](#deploy) en bepaalt tevens de [naam testsuite van worker](#test).
+`function` verwijst naar de implementatie van de worker die in het dialoogvenster [volgende stap](#metadata-worker). De arbeiders van de naam semantisch (bijvoorbeeld `actions/worker/index.js` had een betere naam kunnen hebben `actions/rendition-circle/index.js`), zoals deze in de [URL van worker](#deploy) en bepaalt tevens de [naam testsuite van worker](#test).
 
 De `limits` en `require-adobe-auth` per worker afzonderlijk worden geconfigureerd. In deze worker `512 MB` Er wordt geheugen toegewezen als de code (potentieel) grote binaire afbeeldingsgegevens inspecteert. De andere `limits` worden verwijderd om standaardwaarden te gebruiken.
 
@@ -184,12 +184,12 @@ function getColorName(colorsFamily, color) {
 
 Als de code van de worker is voltooid, kan deze worden uitgevoerd met het lokale hulpprogramma voor ontwikkeling van Asset computen.
 
-Omdat ons Asset compute project twee arbeiders (vorige) bevat [cirkeluitvoering](../develop/worker.md) en `metadata-colors` worker), de [asset compute Development Tool](../develop/development-tool.md) bij profieldefinitie worden uitvoeringsprofielen voor beide workers weergegeven. De tweede profieldefinitie verwijst naar de nieuwe `metadata-colors` worker.
+Omdat ons Asset compute project twee arbeiders (vorige) bevat [cirkeluitvoering](../develop/worker.md) en dit `metadata-colors` worker), de [Asset compute Development Tool](../develop/development-tool.md) bij profieldefinitie worden uitvoeringsprofielen voor beide workers weergegeven. De tweede profieldefinitie verwijst naar de nieuwe `metadata-colors` worker.
 
 ![XML-metagegevensuitvoering](./assets/metadata/metadata-rendition.png)
 
 1. Van de wortel van het project van de Asset compute
-1. Uitvoeren `aio app run` om het Asset compute Development Tool te starten
+1. Uitvoeren `aio app run` om het Asset compute-ontwikkelingsinstrument te starten
 1. In de __Een bestand selecteren...__ vervolgkeuzelijst, kies een [voorbeeldafbeelding](../assets/samples/sample-file.jpg) om te verwerken
 1. In de tweede profieldefinitieconfiguratie, die naar `metadata-colors` worker, update `"name": "rendition.xml"` terwijl deze worker een XMP (XML)-uitvoering genereert. Voeg desgewenst een `colorsFamily` parameter (ondersteunde waarden) `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`).
 
@@ -211,7 +211,7 @@ Omdat ons Asset compute project twee arbeiders (vorige) bevat [cirkeluitvoering]
 
 ## De worker testen{#test}
 
-Metagegevensworkers kunnen worden getest met de [zelfde Asset compute testframework als binaire uitvoeringen](../test-debug/test.md). Het enige verschil is `rendition.xxx` bestand in het testgeval moet de verwachte XMP (XML)-uitvoering zijn.
+Metagegevensworkers kunnen worden getest met de [zelfde Asset compute testend kader zoals binaire vertoningen](../test-debug/test.md). Het enige verschil is `rendition.xxx` bestand in het testgeval moet de verwachte XMP (XML)-uitvoering zijn.
 
 1. Maak de volgende structuur in het project Asset compute:
 
@@ -279,7 +279,7 @@ Roep de worker van AEM aan door een nieuwe aangepaste verwerkingsprofielservice 
       + __Omvat:__ `image/jpeg`, `image/png`, `image/gif`, `image/svg`
          + Dit zijn de enige MIME types die door de derde npm modules worden gesteund die worden gebruikt om de kleuren af te leiden.
       + __Omvat niet:__ `Leave blank`
-1. Tikken __Opslaan__ rechtsboven
+1. Tikken __Opslaan__ in de rechterbovenhoek
 1. Verwerkingsprofiel toepassen op een AEM Assets-map als dit nog niet is gebeurd
 
 ### Metagegevensschema bijwerken{#metadata-schema}
@@ -288,7 +288,7 @@ Als u de metagegevens van kleuren wilt bekijken, wijst u twee nieuwe velden in h
 
 ![Metadataschema](./assets/metadata/metadata-schema.png)
 
-1. Navigeer in de AEM-auteurservice naar __Gereedschappen > Elementen > Metagegevensschema&#39;s__
+1. Navigeer in de AEM Auteur naar __Gereedschappen > Elementen > Metagegevensschema&#39;s__
 1. Navigeren naar __default__ en selecteren en bewerken __image__ en voeg alleen-lezen formuliervelden toe om de gegenereerde metagegevens in kleur weer te geven
 1. Voeg een __Tekst met één regel__
    + __Veldlabel__: `Colors Family`
@@ -297,16 +297,16 @@ Als u de metagegevens van kleuren wilt bekijken, wijst u twee nieuwe velden in h
 1. Voeg een __Meerdere waardetekst__
    + __Veldlabel__: `Colors`
    + __Toewijzen aan eigenschap__: `./jcr:content/metadata/wknd:colors`
-1. Tikken __Opslaan__ rechtsboven
+1. Tikken __Opslaan__ in de rechterbovenhoek
 
-## Bezig met verwerken elementen
+## Bezig met verwerken van elementen
 
 ![Details van element](./assets/metadata/asset-details.png)
 
-1. Navigeer in de AEM-auteurservice naar __Middelen > Bestanden__
+1. Navigeer in de AEM Auteur naar __Middelen > Bestanden__
 1. Navigeer naar de map (of submap) waarop het verwerkingsprofiel is toegepast
-1. Een nieuwe afbeelding (JPEG, PNG, GIF of SVG) uploaden naar de map of bestaande afbeeldingen opnieuw verwerken met de bijgewerkte [Profiel verwerken](#processing-profile)
-1. Selecteer het element als de verwerking is voltooid en tik op __eigenschappen__ in de bovenste actiebalk om de metagegevens van de balk weer te geven
+1. Een nieuwe afbeelding (JPEG, PNG, GIF of SVG) uploaden naar de map of bestaande afbeeldingen opnieuw verwerken met de bijgewerkte [Bezig met verwerken profiel](#processing-profile)
+1. Selecteer het element als de verwerking is voltooid en tik op __eigenschappen__ in de bovenste actiebalk om de metagegevens ervan weer te geven
 1. Controleer de `Colors Family` en `Colors` [metagegevensvelden](#metadata-schema) voor de metagegevens die zijn teruggeschreven van de aangepaste Asset compute-metagegevensworker.
 
 Als de metagegevens voor kleuren naar de metagegevens van het element zijn geschreven, kunt u de `[dam:Asset]/jcr:content/metadata` bron, deze meta-gegevens wordt geïndexeerd verhoogde activa ontdekkingsvermogen gebruikend deze termijnen via onderzoek, en zij kunnen zelfs aan het binaire getal van de activa worden geschreven als dan __DAM-metagegevensterugkoppeling__ de workflow wordt erop aangeroepen.

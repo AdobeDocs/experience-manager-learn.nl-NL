@@ -1,15 +1,15 @@
 ---
 title: Formulierbijlage invoegen in database
-description: Voeg formulierbijlage in de database in met AEM workflow.
+description: Voeg formulierbijlage in de database in met behulp van AEM workflow.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Experienced
-kt: 10488
+jira: KT-10488
 exl-id: e8a6cab8-423b-4a8e-b2b7-9b24ebe23834
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Om dit te verwezenlijken het gebruikscase werd de volgende stappen gevolgd
 
 ## Databasetabel maken voor de formuliergegevens en de bijlage
 
-Er is een tabel met de naam NewWire gemaakt voor de opslag van de formuliergegevens. Let op de kolomnaamafbeelding van het type **LONGBLOB** om de formulierbijlage op te slaan
+Er is een tabel met de naam NewWire gemaakt voor de opslag van de formuliergegevens. Let op de kolomnaamafbeelding van het type **LONGBLOB** de formulierbijlage opslaan
 ![table-schema](assets/insert-picture-table.png)
 
 ## Formuliergegevensmodel maken
@@ -62,5 +62,5 @@ De volgende stap in de workflow bestaat uit het invoegen van gegevens en de form
 
 ## Adaptief formulier maken
 
-Maak een adaptief formulier op basis van het formuliergegevensmodel dat in de vorige stap is gemaakt. Sleep de elementen van het formuliergegevensmodel naar het formulier. Configureer de formulierverzending om de workflow te activeren en geef de volgende eigenschappen op, zoals hieronder weergegeven in de schermafbeelding
+Maak een adaptief formulier op basis van het formuliergegevensmodel dat u in de vorige stap hebt gemaakt. Sleep de elementen van het formuliergegevensmodel naar het formulier. Configureer de formulierverzending om de workflow te activeren en geef de volgende eigenschappen op, zoals hieronder weergegeven in de schermafbeelding.
 ![formulierbijlagen](assets/form-attachments.png)

@@ -6,12 +6,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10797
+jira: KT-10797
 thumbnail: kt-10797.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
-source-git-commit: 701d6d46d716faf51ba5ce3ed31de68928963e54
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Deze voorbeeldtoepassing is afhankelijk van [basic-tutorial-solution.content.zip
 
 >[!IMPORTANT]
 >
->De component Web wordt ontworpen om met een __AEM-publicatie__ milieu, nochtans kan het inhoud van auteur AEM als de authentificatie in de Component van het Web wordt verstrekt [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) bestand.
+>De component Web wordt ontworpen om met een __AEM publiceren__ milieu, nochtans kan het inhoud van AEM Auteur als de authentificatie in de Component van het Web wordt verstrekt [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) bestand.
 
 ## Hoe wordt het gebruikt
 
@@ -64,7 +64,7 @@ Deze voorbeeldtoepassing is afhankelijk van [basic-tutorial-solution.content.zip
 
 1. Bewerk de `.../src/person.js` bestand dat de AEM verbindingsgegevens bevat:
 
-   In de `aemHeadlessService` object, het `aemHost` om naar uw AEM-publicatieservice te verwijzen.
+   In de `aemHeadlessService` object, het `aemHost` om naar uw AEM publicatieservice te verwijzen.
 
    ```plain
    # AEM Server namespace
@@ -77,7 +77,7 @@ Deze voorbeeldtoepassing is afhankelijk van [basic-tutorial-solution.content.zip
    queryParamName=name
    ```
 
-   Als u verbinding maakt met een AEM-auteurservice, kunt u in het dialoogvenster `aemCredentials` -object, lokale AEM gebruikersgegevens opgeven.
+   Als u verbinding maakt met een AEM Auteur, kunt u in het dialoogvenster `aemCredentials` -object, lokale AEM gebruikersgegevens opgeven.
 
    ```plain
    # For Basic auth, use AEM ['user','pass'] pair (for example, when connecting to local AEM Author instance)
@@ -185,6 +185,6 @@ class PersonInfo extends HTMLElement {
 
 ### Delen van bronnen van oorsprong (CORS)
 
-Deze Component van Web baseert zich op een op AEM-Gebaseerde configuratie CORS die op het doel AEM milieu loopt en veronderstelt dat de gastheerpagina op loopt `http://localhost:8080` in ontwikkelingswijze en hieronder is een steekproefCORS OSGi configuratie voor de lokale dienst van de Auteur AEM.
+Deze Component van Web baseert zich op een op AEM-Gebaseerde configuratie CORS die op het doel AEM milieu loopt en veronderstelt dat de gastheerpagina op loopt `http://localhost:8080` in ontwikkelingswijze en hieronder is een steekproefCORS OSGi configuratie voor de lokale dienst van de AEMAuteur.
 
 Gelieve te herzien [implementatieconfiguraties](../deployment/web-component.md) voor de respectieve AEM.

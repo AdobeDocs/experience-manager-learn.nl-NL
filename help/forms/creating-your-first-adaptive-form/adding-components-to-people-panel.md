@@ -3,13 +3,13 @@ title: Componenten toevoegen aan het deelvenster Personen
 description: Configureer het deelvenster Personen door het fragment met de muisdetails toe te voegen. Er wordt een regel ingesteld om het fragment met de gegevens van de echtgenoot weer te geven wanneer de huwelijkse staat van de aanvrager gehuwd is.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 4210
+jira: KT-4210
 thumbail: 28385.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 16170f0d-6933-47f2-aefa-951599d163c0
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%

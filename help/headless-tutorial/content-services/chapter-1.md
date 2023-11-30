@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -25,14 +26,14 @@ De nieuwste versie van AEM en AEM WCM Core Components wordt altijd aanbevolen.
 
 Voordat u deze zelfstudie start, moet u controleren of de volgende AEM exemplaren zijn [geïnstalleerd en uitgevoerd op uw lokale computer](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
-* **AEM-auteur** op **poort 4502**
-* **AEM-publicatie** op **poort 4503**
+* **AEM auteur** op **poort 4502**
+* **AEM publiceren** op **poort 4503**
 
 ## WKND Mobile-toepassingspakketten{#wknd-mobile-application-packages}
 
-Installeer de volgende AEM Inhoudspakketten op **beide** AEM-auteur en AEM-publicatie, gebruiken [!DNL AEM Package Manager].
+Installeer de volgende AEM Inhoudspakketten op **beide** Auteur AEM en AEM publiceren, gebruiken [!DNL AEM Package Manager].
 
-* [ui.apps: GitHub > Middelen > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [ui.apps: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
    * [!DNL WKND Mobile] Proxycomponent voor AEM WCM Core-componenten
    * [!DNL WKND Mobile] CSS van pagina&#39;s voor inhoudsservices AEM (voor kleine opmaak)
@@ -41,7 +42,7 @@ Installeer de volgende AEM Inhoudspakketten op **beide** AEM-auteur en AEM-publi
    * [!DNL WKND Mobile] DAM-mapstructuur
    * [!DNL WKND Mobile] afbeeldingselementen
 
-In [Hoofdstuk 7](./chapter-7.md) wij zullen [!DNL WKND Mobile] Android Mobile-toepassing gebruiken [Android Studio](https://developer.android.com/studio) en de meegeleverde APK (Android Application Package):
+In [Hoofdstuk 7](./chapter-7.md) wij zullen de [!DNL WKND Mobile] Android Mobile-toepassing gebruiken [Android Studio](https://developer.android.com/studio) en de geleverde APK (Android Application Package):
 
 * [[!DNL Android Mobile App: GitHub > Assets > wknd-mobile.x.x.x.apk]](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
@@ -62,7 +63,7 @@ Als u een probleem hebt met de zelfstudie of de code, kunt u een [GitHub-problee
 
 ## Overslaan naar het einde
 
-Als u het einde van de zelfstudie wilt bereiken, kunt u het volgende doen: [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket kan worden geïnstalleerd op **beide** AEM-auteur en AEM-publicatie. Merk op dat de inhoud en de configuratie niet zullen tonen zoals die in Auteur AEM wordt gepubliceerd, nochtans wegens de handplaatsing, al vereiste inhoud en de configuratie beschikbaar op Publiceren AEM die toestaat [!DNL WKND Mobile App] om toegang te krijgen tot de inhoud.
+Als u het einde van de zelfstudie wilt bereiken, kunt u het volgende doen: [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket kan worden geïnstalleerd op **beide** AEM Auteur en AEM publiceren. Merk op dat de inhoud en de configuratie niet zullen tonen zoals die in AEM Auteur wordt gepubliceerd, echter wegens de handplaatsing, al vereiste inhoud en configuratie op AEM publiceren beschikbaar zijn die toestaat [!DNL WKND Mobile App] om de inhoud te openen.
 
 
 ## Volgende stap

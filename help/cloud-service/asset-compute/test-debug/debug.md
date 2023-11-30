@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6285
+jira: KT-6285
 thumbnail: 40383.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 4dea9cc4-2133-4ceb-8ced-e9b9874f6d89
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
@@ -26,16 +26,16 @@ De arbeiders van de asset compute kunnen op verscheidene manieren, van eenvoudig
 
 ## Logboekregistratie
 
-De eenvoudigste vorm van het zuiveren van de arbeiders van de Asset compute gebruikt traditioneel `console.log(..)` instructies in de code van de worker. De `console` JavaScript-object is een impliciet, globaal object, zodat het niet hoeft te worden geïmporteerd of vereist, omdat het altijd in alle contexten voorkomt.
+De eenvoudigste vorm van het zuiveren van de arbeiders van de Asset compute gebruikt traditionele `console.log(..)` instructies in de code van de worker. De `console` JavaScript-object is een impliciet, globaal object, zodat het niet hoeft te worden geïmporteerd of vereist, omdat het altijd in alle contexten voorkomt.
 
 Deze logboekverklaringen zijn beschikbaar voor overzicht verschillend gebaseerd op hoe de Asset compute arbeider wordt uitgevoerd:
 
 + Van `aio app run`, worden logbestanden standaard afgedrukt en worden de [Ontwikkelingsinstrumenten](../develop/development-tool.md) Activeringslogboeken
-   ![air app run console.log(...)](./assets/debug/console-log__aio-app-run.png)
+  ![air app run console.log(...)](./assets/debug/console-log__aio-app-run.png)
 + Van `aio app test`, logbestanden afdrukken naar `/build/test-results/test-worker/test.log`
-   ![air app test console.log(...)](./assets/debug/console-log__aio-app-test.png)
+  ![air app test console.log(...)](./assets/debug/console-log__aio-app-test.png)
 + Gebruiken `wskdebug`, worden logboekinstructies afgedrukt naar de VS-console voor foutopsporing van code (Weergave > Foutopsporingsconsole), standaard uit
-   ![wskdebug console.log(..)](./assets/debug/console-log__wskdebug.png)
+  ![wskdebug console.log(..)](./assets/debug/console-log__wskdebug.png)
 + Gebruiken `aio app logs`, loginstructies worden afgedrukt naar het activeringslogbestand
 
 ## Foutopsporing op afstand via aangesloten foutopsporing
@@ -97,10 +97,10 @@ _Doorklikken van foutopsporing in een Asset compute-worker met wskdebug (geen au
 
 [AEM as a Cloud Service gebruikt Asset compute-workers via verwerkingsprofielen](../deploy/processing-profiles.md) door ze rechtstreeks in Adobe I/O Runtime aan te roepen. Omdat deze aanroepen geen lokale ontwikkeling impliceren, kunnen hun uitvoeringen niet worden gezuiverd gebruikend lokaal hulpmiddel zoals het Hulpmiddel van de Ontwikkeling van de Asset compute of wskdebug. In plaats daarvan, kan Adobe I/O CLI worden gebruikt om logboeken van de worker te halen die in een bepaalde werkruimte in Adobe I/O Runtime wordt uitgevoerd.
 
-1. Zorg ervoor dat de [specifieke omgevingsvariabelen voor de werkruimte](../deploy/runtime.md) worden ingesteld via `AIO_runtime_namespace` en `AIO_runtime_auth`, op basis van de werkruimte die foutopsporing vereist.
+1. Zorg ervoor dat [specifieke omgevingsvariabelen voor de werkruimte](../deploy/runtime.md) worden ingesteld via `AIO_runtime_namespace` en `AIO_runtime_auth`, op basis van de werkruimte die foutopsporing vereist.
 1. Vanuit de opdrachtregel uitvoeren `aio app logs`
    + Als de werkruimte zwaar verkeer ondergaat, breid het aantal activeringslogboeken via uit `--limit` markering:
-      `$ aio app logs --limit=25`
+     `$ aio app logs --limit=25`
 1. De meest recente (tot en met de geleverde `--limit`) de activeringslogboeken zijn teruggekeerd als output van het bevel voor overzicht.
 
    ![aio-toepassingslogboeken](./assets/debug/aio-app-logs.png)

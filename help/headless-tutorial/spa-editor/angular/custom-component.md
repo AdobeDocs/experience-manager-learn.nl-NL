@@ -2,18 +2,15 @@
 title: Een aangepaste component maken | Aan de slag met de AEM SPA Editor en Angular
 description: Leer hoe u een aangepaste component maakt die wordt gebruikt met de AEM SPA Editor. Leer hoe u dialoogvensters met auteurs en Sling Models ontwikkelt om het JSON-model uit te breiden en een aangepaste component te vullen.
 feature: SPA Editor
-doc-type: tutorial
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5831
+jira: KT-5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 0%
@@ -27,7 +24,7 @@ Leer hoe u een aangepaste component maakt die wordt gebruikt met de AEM SPA Edit
 ## Doelstelling
 
 1. Begrijp de rol van Sling Models in het manipuleren van JSON model API die door AEM wordt verstrekt.
-2. Begrijp hoe te om AEM componentendialogen tot stand te brengen.
+2. Begrijp hoe u AEM componentdialoogvensters maakt.
 3. Leer een **aangepast** AEM Component die met het SPA redacteurskader compatibel is.
 
 ## Wat u gaat maken
@@ -58,7 +55,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Als u [AEM 6,x](overview.md#compatibility) toevoegen `classic` profiel:
+   Als u [AEM 6,x](overview.md#compatibility) voeg toe `classic` profiel:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -72,7 +69,7 @@ U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/a
 
 ## De AEM component definiëren
 
-Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het project worden deze knooppunten en eigenschappen vertegenwoordigd als XML-bestanden in de `ui.apps` module. Maak vervolgens de AEM component in het dialoogvenster `ui.apps` module.
+Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het project worden deze knooppunten en eigenschappen vertegenwoordigd als XML-bestanden in de `ui.apps` -module. Maak vervolgens de AEM component in het dialoogvenster `ui.apps` -module.
 
 >[!NOTE]
 >
@@ -152,7 +149,7 @@ Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
 
    Het bovenstaande XML-bestand genereert een eenvoudig dialoogvenster voor het `Custom Component`. Het kritieke deel van het bestand is de binnenzijde `<message>` knooppunt. Dit dialoogvenster bevat een eenvoudig `textfield` benoemd `Message` en blijft de waarde van het tekstveld behouden in een eigenschap met de naam `message`.
 
-   Er wordt een verkoopmodel gemaakt naast de waarde van de optie `message` via het JSON-model.
+   Naast de waarde van de optie `message` via het JSON-model.
 
    >[!NOTE]
    >
@@ -166,7 +163,7 @@ Sling-modellen zijn annotaties die worden aangedreven door Java™ &quot;POJO&#3
 
 In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud van een component door het model JSON door een eigenschap bloot gebruikend [Verkoopmodel exporteren](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
-1. Open in de IDE van uw keuze de `core` module. `CustomComponent.java` en `CustomComponentImpl.java` zijn al gemaakt en uitgestald als onderdeel van de hoofdstukstartcode.
+1. Open in de IDE van uw keuze de `core` -module. `CustomComponent.java` en `CustomComponentImpl.java` zijn al gemaakt en uitgestald als onderdeel van de hoofdstukstartcode.
 
    >[!NOTE]
    >
@@ -178,7 +175,7 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
 
    Dit is de Java™ interface die door het het Verkopen Model wordt uitgevoerd.
 
-3. Bijwerken `CustomComponent.java` zodat de `ComponentExporter` interface:
+3. Bijwerken `CustomComponent.java` zodat het de `ComponentExporter` interface:
 
    ```java
    package com.adobe.aem.guides.wknd.spa.angular.core.models;
@@ -191,7 +188,7 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
    }
    ```
 
-   De `ComponentExporter` -interface is een vereiste dat het Sling-model automatisch wordt opgenomen door de JSON-model-API.
+   De uitvoering van `ComponentExporter` -interface is een vereiste dat het Sling-model automatisch wordt opgenomen door de JSON-model-API.
 
    De `CustomComponent` interface bevat één methode getter `getMessage()`. Dit is de methode die de waarde van de auteurdialoog door het model JSON blootstelt. Alleen methoden getter met lege parameters `()` worden geëxporteerd in het JSON-model.
 
@@ -236,6 +233,7 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
    Er worden extra &#39;bedrijfslogica&#39; toegevoegd om de waarde van het bericht als hoofdletter te retourneren. Hierdoor kunnen we het verschil zien tussen de onbewerkte waarde die is opgeslagen door het dialoogvenster van de auteur en de waarde die wordt weergegeven door het model Sling.
 
    >[!NOTE]
+   >
    U kunt de [voltooid CustomComponentImpl.java hier](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## De component Angular bijwerken
@@ -243,7 +241,7 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
 De code van de Angular voor de Component van de Douane is reeds gecreeerd. Voer vervolgens een aantal updates uit om de component Angular toe te wijzen aan de AEM.
 
 1. In de `ui.frontend` -module het bestand openen `ui.frontend/src/app/components/custom/custom.component.ts`
-2. Waarnemen `@Input() message: string;` lijn. Verwacht wordt dat de getransformeerde hoofdletterwaarde aan deze variabele wordt toegewezen.
+2. Waarnemen van `@Input() message: string;` lijn. Verwacht wordt dat de getransformeerde hoofdletterwaarde aan deze variabele wordt toegewezen.
 3. Het dialoogvenster Importeren `MapTo` -object van de AEM SPA Editor JS SDK en deze gebruiken om toe te wijzen aan de AEM-component:
 
    ```diff
@@ -257,7 +255,7 @@ De code van de Angular voor de Component van de Douane is reeds gecreeerd. Voer 
    + MapTo('wknd-spa-angular/components/custom-component')(CustomComponent, CustomEditConfig);
    ```
 
-4. Openen `cutom.component.html` en merkt op dat de waarde van `{{message}}` wordt weergegeven op een `<h2>` tag.
+4. Openen `cutom.component.html` en merkt op dat de `{{message}}` wordt weergegeven op een zijde van `<h2>` -tag.
 5. Openen `custom.component.css` en voeg de volgende regel toe:
 
    ```css
@@ -266,7 +264,7 @@ De code van de Angular voor de Component van de Douane is reeds gecreeerd. Voer 
    }
    ```
 
-   De tijdelijke aanduiding voor de AEM Editor moet correct worden weergegeven wanneer de component leeg is. `:host-context` of een andere `<div>` moet worden ingesteld op `display: block;`.
+   De tijdelijke aanduiding voor de AEM Editor moet correct worden weergegeven wanneer de component leeg is. `:host-context` of een `<div>` moet worden ingesteld op `display: block;`.
 
 6. Stel de updates aan een lokaal AEM milieu van de wortel van de projectfolder op, gebruikend uw Maven vaardigheden:
 
@@ -303,7 +301,7 @@ Navigeer vervolgens naar AEM om de updates te controleren en de `Custom Componen
 Nu, auteur `Custom Component` met de AEM SPA Editor.
 
 1. Navigeren naar [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
-2. In `Edit` modus, voegt u de `Custom Component` aan de `Layout Container`:
+2. In `Edit` in de modus, voegt u de `Custom Component` aan de `Layout Container`:
 
    ![Nieuwe component invoegen](assets/custom-component/insert-custom-component.png)
 

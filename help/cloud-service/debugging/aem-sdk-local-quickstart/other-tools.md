@@ -7,12 +7,12 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5251
+jira: KT-5251
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 11fb83e9-dbaf-46e5-8102-ae8cc716c6ba
-source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
@@ -67,7 +67,7 @@ De resultaten worden hieronder weergegeven:
 + __Pad__ herhaalt de ingeslagen weg
 + __Opdrachtgever__ herhaalt de gebruiker of groep waarvoor het pad is geëvalueerd
 + __Principes__ maakt een lijst van alle principes het geselecteerde hoofd deel van is.
-   + Dit is nuttig om de transitieve groepslidmaatschappen te begrijpen die toestemmingen via overerving kunnen verstrekken
+   + Dit is nuttig om het overgangsgroepslidmaatschap te begrijpen dat toestemmingen via overerving kan verlenen
 + __Rechten op pad__ Hiermee worden alle JCR-machtigingen weergegeven die de geselecteerde principal op het geëvalueerde pad heeft
 
 ## Query uitvoeren
@@ -87,6 +87,6 @@ Verklaar de Vraag wordt gevestigd bij:
 
 Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvragen zuiveren en begrijpen gebruikend AEM [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) syntaxis.
 
-Foutopsporing van QueryBuilder bevindt zich op de volgende locatie:
+Foutopsporing van QueryBuilder bevindt zich in:
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)

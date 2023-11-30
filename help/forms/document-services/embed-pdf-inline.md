@@ -6,10 +6,10 @@ feature: Forms Service
 topic: Development
 role: Developer
 level: Experienced
-kt: 9411
+jira: KT-9411
 exl-id: 327ffe26-e88e-49f0-9f5a-63e2a92e1c8a
 last-substantial-update: 2021-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -92,7 +92,7 @@ $(document).ready(function() {
 
 ## XSD genereren op basis van de XML-gegevens
 
-U kunt alle gratis online gereedschappen gebruiken om [XSD genereren](https://www.freeformatter.com/xsd-generator.html) uit de XML-gegevens die in de vorige stap zijn gegenereerd.
+U kunt alle gratis onlinegereedschappen gebruiken om [XSD genereren](https://www.freeformatter.com/xsd-generator.html) uit de XML-gegevens die in de vorige stap zijn gegenereerd.
 
 ## De sjabloon uploaden
 
@@ -228,7 +228,7 @@ Voer de volgende stappen uit om dit op uw lokale server te testen:
 
 1. [De ingesloten pdf-bundel downloaden en installeren](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen.
-1. Voeg het pad /bin/getPDFToEmbed toe in de uitgesloten padsectie van het Adobe Granite CSRF-filter met behulp van het [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). In uw productieomgeving is het raadzaam de [Beschermingskader van de GVTO](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. Voeg het pad /bin/getPDFToEmbed toe in de uitgesloten padsectie van het Adobe Granite CSRF-filter met behulp van de [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). In uw productieomgeving is het raadzaam de [Beschermingskader van de GVTO](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
 1. [De clientbibliotheek en de aangepaste component importeren](assets/embed-pdf.zip)
 1. [Het adaptieve formulier en de sjabloon importeren](assets/embed-pdf-form-and-xdp.zip)
 1. [Voorbeeld van adaptief formulier](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)

@@ -3,7 +3,7 @@ title: iOS App - voorbeeld zonder kop AEM
 description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze iOS-toepassing laat zien hoe u inhoud kunt opvragen met behulp van AEM GraphQL API's met behulp van doorlopende query's.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 10587
+jira: KT-10587
 thumbnail: KT-10587.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 3e4960bf2d243e33fb9f36fd3fbb45f57260229a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
@@ -41,7 +41,7 @@ De iOS-toepassing werkt met de volgende AEM implementatieopties. Alle implementa
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Lokale instelling met [de SDK van AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-De iOS-toepassing is ontworpen om verbinding te maken met een __AEM-publicatie__ omgeving, maar het kan inhoud van AEM Author bron als de authentificatie in de configuratie van de toepassing van iOS wordt verstrekt.
+De iOS-toepassing is ontworpen om verbinding te maken met een __AEM publiceren__ omgeving, maar het kan inhoud van AEM auteur als de authentificatie in de configuratie van de toepassing van iOS wordt verstrekt.
 
 ## Hoe wordt het gebruikt
 
@@ -52,7 +52,7 @@ De iOS-toepassing is ontworpen om verbinding te maken met een __AEM-publicatie__
    ```
 
 1. Starten [Xcode](https://developer.apple.com/xcode/) en opent u de map `ios-app`
-1. Het bestand wijzigen `Config.xcconfig` bestand en update `AEM_SCHEME` en `AEM_HOST` om overeen te komen met uw doel-AEM-publicatieservice.
+1. Het bestand wijzigen `Config.xcconfig` bestand en update `AEM_SCHEME` en `AEM_HOST` die overeenkomen met uw doel AEM publicatieservice.
 
    ```plain
    // The http/https protocol scheme used to access the AEM_HOST
@@ -61,7 +61,7 @@ De iOS-toepassing is ontworpen om verbinding te maken met een __AEM-publicatie__
    AEM_HOST = publish-p123-e456.adobeaemcloud.com
    ```
 
-   Als u verbinding maakt met AEM-auteur, voegt u de opdracht `AEM_AUTH_TYPE` en ondersteunende authenticatie-eigenschappen voor de `Config.xcconfig`.
+   Als u verbinding maakt met AEM auteur, voegt u de opdracht `AEM_AUTH_TYPE` en ondersteunende authenticatie-eigenschappen voor de `Config.xcconfig`.
 
    __Basisverificatie__
 
@@ -285,7 +285,7 @@ Als verbinding wordt gemaakt met beveiligde bronnen op AEM waarvoor toestemming 
 
 De `aem` klasse (in `AEM/Aem.swift`) vergemakkelijkt het gebruik van AEM afbeeldingen op twee manieren:
 
-1. `aem.imageUrl(path: String)` wordt gebruikt in weergaven om het AEM-schema voor te bereiden en als host op te nemen voor het afbeeldingspad, zodat een volledig gekwalificeerde URL wordt gemaakt.
+1. `aem.imageUrl(path: String)` wordt gebruikt in weergaven om het AEM-schema voor te bereiden en als host op te nemen voor het afbeeldingspad, zodat volledig gekwalificeerde URL wordt gemaakt.
 
    ```swift
    // adventure.image() => /adobe/dynamicmedia/deliver/dm-aid--741ed388-d5f8-4797-8095-10c896dc9f1d/example.jpg?quality=80&preferwebp=true

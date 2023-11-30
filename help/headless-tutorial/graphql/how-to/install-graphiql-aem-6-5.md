@@ -6,10 +6,10 @@ topic: Headless
 feature: GraphQL API
 role: Developer
 level: Intermediate
-kt: 11614
+jira: KT-11614
 thumbnail: KT-10253.jpeg
 exl-id: 04fcc24c-7433-4443-a109-f01840ef1a89
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 3%
@@ -29,7 +29,7 @@ In AEM 6.5 moet het hulpmiddel GraphiQL IDE manueel worden geïnstalleerd.
    Het ZIP-bestand is een AEM pakket dat rechtstreeks kan worden geïnstalleerd.
 
 1. Navigeer in het menu AEM Start naar **Gereedschappen** > **Implementatie** > **Pakketten**.
-1. Klikken **Pakket uploaden** en kiest u het pakket dat u in de vorige stap hebt gedownload. Klikken **Installeren** om het pakket te installeren.
+1. Klikken **Pakket uploaden** en kiest u het pakket dat u eerder hebt gedownload. Klikken **Installeren** het pakket installeren.
 
    ![GraphiQL-pakket installeren](assets/graphiql/install-graphiql-package.png)
 
@@ -42,7 +42,7 @@ In AEM 6.5 moet het hulpmiddel GraphiQL IDE manueel worden geïnstalleerd.
 
 ![Waarde van padeigenschap uitsluiten](assets/graphiql/exclude-paths-value-change.png)
 
-1. Heb toegang tot de redacteur GraphiQL gebruikend `//HOST:PORT/content/graphiql.html`en verifieer u kunt een nieuwe query samenstellen of een bestaande query uitvoeren. (bijv. <http://localhost:4502/content/graphiql.html>)
+1. Heb toegang tot de redacteur GraphiQL gebruikend `//HOST:PORT/content/graphiql.html`en verifieer u kunt een nieuwe query samenstellen of een bestaande query uitvoeren. (bijvoorbeeld <http://localhost:4502/content/graphiql.html>)
 
 ![GraphiQL Editor](assets/graphiql/graphiql-editor.png)
 

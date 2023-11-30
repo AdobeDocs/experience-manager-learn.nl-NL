@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 feature: Code Deployment
-kt: 8851
+jira: KT-8851
 exl-id: daf7d316-e9ec-41b5-89c8-fe4f4ada9701
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Distribueren naar ontwikkelomgeving
 
-In de vorige stap duwden we onze master vertakking van onze lokale git-opslagplaats naar de MyFirstAF-vertakking van de cloudbeheeropslagplaats.
+In de vorige stap duwden we onze hoofdvertakking van onze lokale git-opslagplaats naar de MyFirstAF-vertakking van de cloudbeheeropslagplaats.
 
 De volgende stap is de code aan het ontwikkelmilieu op te stellen.
 Meld u aan bij Cloud Manager en selecteer uw programma
@@ -44,4 +44,4 @@ Als de code eenmaal is geïmplementeerd, worden de wijzigingen weergegeven in de
 
 ## Volgende stappen
 
-[Bezig met bijwerken van toegepast archetype-project](./updating-project-archetype.md)
+[Geweven archetype-project bijwerken](./updating-project-archetype.md)

@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 [Inhoudsopgave](./overview.md)
 
-[&lt;- Vorige: Vanity URL&#39;s](./disp-vanity-url.md)
+[&lt;- Vorige: URL&#39;s met Vanity](./disp-vanity-url.md)
 
 ## Overzicht
 
@@ -27,7 +28,7 @@ Het document zal gemeenschappelijke logboekingangen beschrijven u zult zien en w
 
 ## GLOB-waarschuwing
 
-Voorbeeld van logbestandvermelding:
+Voorbeeldlogbestandvermelding:
 
 ```
 Fri Jul 20 03:35:09 2018 W pid 8300 (tid 139937910880384) /etc/httpd/conf/publish-filters.any:5: Allowing requests with globs is considered unsafe.
@@ -109,7 +110,7 @@ Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect socket to 10.43.3.40:4502:
 Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect to any backend in farm authorfarm
 ```
 
-Dit komt voor wanneer u het verkeerde IP adres hebt dat in de rendersectie van uw landbouwbedrijf wordt gevormd. Dat of de AEM instantie reageerde of luisterde niet meer en de Dispatcher kan het niet bereiken.
+Dit komt voor wanneer u het verkeerde IP adres hebt dat in de renderensectie van uw landbouwbedrijf wordt gevormd. Dat of de AEM instantie reageerde of luisterde niet meer en de Dispatcher kan het niet bereiken.
 
 Controleer uw firewallregels en of de AEM-instantie actief en gezond is.
 
@@ -140,7 +141,7 @@ Zelfs als u uw geheim voorgeheugenmontages in het landbouwbedrijfdossier hebt om
 
 ## Ontbrekende map
 
-Voorbeeld van logbestandvermelding:
+Voorbeeldlogbestandvermelding:
 
 ```
 Fri Jul 20 14:02:43 2018 E pid 4728 (tid 140662586435328) Unable to create parent directory /mnt/var/www/author/libs/dam/content/asseteditors/formitems.overlay.infinity.json/application: Not a directory
@@ -159,7 +160,7 @@ drwxr-xr-x+ apache apache system_u:object_r:httpd_sys_content_t:s0 html
 
 ## Vanity URL niet gevonden
 
-Voorbeeld van logbestandvermelding:
+Voorbeeldlogbestandvermelding:
 
 ```
 Thu Sep 27 17:35:11 2018 D pid 18936 Checking vanity URLs 
@@ -181,13 +182,13 @@ Thu Sep 27 17:40:29 2018 D pid 21844 Loaded 18 vanity URLs from file /tmp/vanity
 
 ## Ontbrekende boerderij
 
-Voorbeeld van logbestandvermelding:
+Voorbeeldlogbestandvermelding:
 
 ```
 Wed Nov 13 17:17:26 2019 W pid 19173:tid 140542738364160 No farm matches host 'we-retail.com', selected last farm 'publishfarm'
 ```
 
-Deze fout wijst erop dat van alle landbouwbedrijfdossiers beschikbaar in `/etc/httpd/conf.dispatcher.d/enabled_farms/` ze konden geen overeenkomstige ingang vinden van `/virtualhost` sectie.
+Deze fout wijst erop dat van alle landbouwbedrijfdossiers beschikbaar in `/etc/httpd/conf.dispatcher.d/enabled_farms/` ze konden geen overeenkomende vermelding vinden in het `/virtualhost` sectie.
 
 De landbouwbedrijfdossiers passen verkeer aan dat op de domeinnaam of de weg wordt gebaseerd waarin het verzoek binnen kwam met. Het gebruikt glob aanpassing en als het niet dan aanpast hebt u of niet uw landbouwbedrijf behoorlijk gevormd, typt de ingang in het landbouwbedrijf, of heeft de ingang volledig missen. Wanneer het landbouwbedrijf om het even welke ingangen niet aanpast blijft het definitief aan het laatste landbouwbedrijf inbegrepen in de stapel landbouwbedrijfdossiers inbegrepen in gebreke. In dit voorbeeld is `999_ams_publish_farm.any` die de generieke naam van een uitgeverij heeft.
 
@@ -195,12 +196,12 @@ Hier volgt een voorbeeld van een bedrijfsbestand `/etc/httpd/conf.dispatcher.d/e
 
 ## Object verzonden van
 
-Voorbeeld van logbestandvermelding:
+Voorbeeldlogbestandvermelding:
 
 ```
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-De pagina is opgehaald via de http-methode GET voor de inhoud `/content/we-retail/us/en.html` en het kostte 24034 milliseconden . Het deel waar we aandacht aan wilden besteden is aan het eind `publishfarm/0`. U zult zien dat het doelt en aanpast `publishfarm`. Het verzoek werd opgehaald van render 0. Dit betekende dat deze pagina moest worden opgevraagd van AEM toen caching. Nu vragen wij deze pagina opnieuw en zien wat met het logboek gebeurt.
+De pagina is opgehaald via de methode GET http voor de inhoud `/content/we-retail/us/en.html` en het kostte 24034 milliseconden . Het deel waar we aandacht aan wilden besteden is aan het eind `publishfarm/0`. U zult zien dat het doelt en aanpast `publishfarm`. Het verzoek werd opgehaald van render 0. Dit betekende dat deze pagina moest worden opgevraagd van AEM toen caching. Nu vragen wij deze pagina opnieuw en zien wat met het logboek gebeurt.
 
 [Volgende -> Alleen-lezen bestanden](./immutable-files.md)

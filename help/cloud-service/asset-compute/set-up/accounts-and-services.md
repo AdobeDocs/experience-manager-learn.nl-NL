@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6264
+jira: KT-6264
 thumbnail: 40377.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Deze zelfstudie vereist dat de volgende services worden geleverd en toegankelijk zijn via de Adobe ID van de leerling.
 
-Alle Adobe-services moeten toegankelijk zijn via dezelfde Adobe Org, die uw Adobe ID gebruikt.
+Alle Adobe-services moeten toegankelijk zijn via dezelfde Adobe, met dezelfde Adobe ID.
 
 + [AEM as a Cloud Service](#aem-as-a-cloud-service)
 + [App Builder](#app-builder)
@@ -49,7 +49,7 @@ Merk op dat een lokale AEM SDK ontoereikend is om deze zelfstudie te voltooien, 
 
 ## App Builder{#app-builder}
 
-De [App Builder](https://developer.adobe.com/app-builder/) framework wordt gebruikt voor het maken en implementeren van aangepaste acties op Adobe I/O Runtime, een platform zonder Adobe. AEM projecten van de Asset compute zijn speciaal gebouwde projecten van de Bouwer van de App die met AEM Assets via de Profielen van de Verwerking integreren, en de capaciteit verstrekken om tot activa binaire getallen toegang te hebben en te verwerken.
+De [App Builder](https://developer.adobe.com/app-builder/) -framework wordt gebruikt voor het maken en implementeren van aangepaste acties voor Adobe I/O Runtime, het serverloze platform van Adobe. AEM projecten van de Asset compute zijn speciaal gebouwde projecten van de Bouwer van de App die met AEM Assets via de Profielen van de Verwerking integreren, en de capaciteit verstrekken om tot activa binaire getallen toegang te hebben en te verwerken.
 
 Meld u aan voor de voorvertoning om toegang te krijgen tot App Builder.
 
@@ -63,7 +63,7 @@ Opslag in de cloud is vereist voor lokale ontwikkeling van Asset compute-project
 
 Wanneer medewerkers van de Asset compute naar de Adobe I/O Runtime worden geïmplementeerd voor rechtstreeks gebruik door AEM as a Cloud Service, is deze cloudopslag niet strikt vereist, omdat AEM de cloudopslag biedt van waaruit het middel wordt gelezen en waarnaar wordt geschreven.
 
-### Microsoft Azure Blob Storage{#azure-blob-storage}
+### Microsoft Azure Blob-opslag{#azure-blob-storage}
 
 Als u nog geen toegang hebt tot Microsoft Azure Blob Storage, meldt u zich aan voor een [gratis account voor 12 maanden](https://azure.microsoft.com/en-us/free/).
 
@@ -73,11 +73,11 @@ Deze zelfstudie maakt echter gebruik van Azure Blob Storage [Amazon S3](#amazon-
 
 _Doorklikken van provisioning Azure Blob Storage (Geen audio)_
 
-1. Meld u aan bij uw [Microsoft Azure-account](https://azure.microsoft.com/en-us/account/).
+1. Aanmelden bij uw [Microsoft Azure-account](https://azure.microsoft.com/en-us/account/).
 1. Ga naar de __Opslagaccounts__ Azure Services-sectie
 1. Tikken __+ Toevoegen__ om een nieuwe Blob Storage-account te maken
 1. Een nieuwe __Brongroep__ indien nodig, bijvoorbeeld: `aem-as-a-cloud-service`
-1. Een __Naam opslagaccount__, bijvoorbeeld: `aemguideswkndassetcomput`
+1. Geef een __Naam opslagaccount__, bijvoorbeeld: `aemguideswkndassetcomput`
    + De __Naam opslagaccount__  gebruikt voor [configureren van cloudopslag](../develop/environment-variables.md) in het lokale ontwikkelingsinstrument voor Asset compute
    + De __Toegangstoetsen__ gekoppeld aan de opslagaccount ook vereist wanneer [configureren van cloudopslag](../develop/environment-variables.md).
 1. Laat alle andere opties standaard staan en tik op de knop __Revisie + maken__ knop
@@ -86,7 +86,7 @@ _Doorklikken van provisioning Azure Blob Storage (Geen audio)_
 
 ### Amazon S3{#amazon-s3}
 
-Gebruiken [Microsoft Azure Blob Storage](#azure-blob-storage) wordt aanbevolen voor het voltooien van deze zelfstudie, maar [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card) kan ook worden gebruikt.
+Gebruiken [Microsoft Azure Blob-opslag](#azure-blob-storage) wordt aanbevolen voor het voltooien van deze zelfstudie, maar [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card) kan ook worden gebruikt.
 
 Als u Amazon S3-opslag gebruikt, geeft u de gegevens voor de Amazon S3-cloudopslag op wanneer [configureren van de omgevingsvariabelen van het project](../develop/environment-variables.md#amazon-s3).
 

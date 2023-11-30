@@ -1,12 +1,8 @@
 ---
 title: Een eigenschap voor een tag maken
 description: Leer hoe te om een bezit van de Markering met de kale-minimumconfiguratie tot stand te brengen om met AEM te integreren. Gebruikers worden nu toegevoegd aan de interface van de tag en leren meer over extensies, regels en publicatieworkflows.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5980
+jira: KT-5980
 thumbnail: 38553.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: d5de62ef-a2aa-4283-b500-e1f7cb5dec3b
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -38,7 +35,7 @@ Voer de volgende stappen uit om een eigenschap Tag te maken.
 
 1. Klik op de knop **Tags** menu-item in de linkernavigatie en klik vervolgens op **Nieuwe eigenschap** in de rechterbovenhoek.
 
-1. Geef de eigenschap Tag een naam met de opdracht **Naam** vereist veld. Voer in het veld Domeinen uw domeinnaam in of voer AEM as a Cloud Service omgeving in `adobeaemcloud.com` en klik op **Opslaan**.
+1. Geef de eigenschap Tag een naam met de opdracht **Naam** vereist veld. Voer bij Domeinen uw domeinnaam in of voer AEM as a Cloud Service omgeving in `adobeaemcloud.com` en klik op **Opslaan**.
 
    ![Eigenschappen van label](assets/tag-properties.png)
 
@@ -54,7 +51,7 @@ Voer de volgende stappen uit om een regel te maken.
 
 1. Noem uw regel gebruikend **Naam** vereist veld.
 
-1. Klikken **Toevoegen** van de _GEBEURTENISSEN_ en vervolgens in de _Gebeurtenisconfiguratie_ in het **Type gebeurtenis** vervolgkeuzelijst selecteren _Bibliotheek geladen (pagina boven)_ en klik op **Wijzigingen behouden**.
+1. Klikken **Toevoegen** van de _EVENTS_ en vervolgens in de _Gebeurtenisconfiguratie_ in het **Type gebeurtenis** vervolgkeuzelijst selecteren _Bibliotheek geladen (pagina boven)_ en klik op **Wijzigingen behouden**.
 
 1. Klikken **Toevoegen** van de _ACTIES_ en vervolgens in de _Configuratie van handelingen_ in het **Type handeling** vervolgkeuzelijst selecteren _Aangepaste code_ en klik op **Editor openen**.
 
@@ -77,11 +74,11 @@ De eigenschap Tag _Regels_ worden geactiveerd met een bibliotheek. U kunt de bib
 
 1. Geef uw bibliotheek een naam met de **Naam** veld en selecteer _Ontwikkeling (ontwikkeling)_ optie voor **Omgeving** vervolgkeuzelijst.
 
-1. Als u alle gewijzigde bronnen wilt selecteren sinds het maken van de eigenschap Tag, klikt u op **+ Alle gewijzigde bronnen toevoegen**. Deze actie voegt de pas gecreëerde regel en de bron van de kernuitbreiding aan de bibliotheek toe. Klik op Tot slot **Opslaan en samenstellen tot ontwikkeling**.
+1. Als u alle gewijzigde bronnen wilt selecteren sinds het maken van de eigenschap Tag, klikt u **+ Alle gewijzigde bronnen toevoegen**. Deze actie voegt de pas gecreëerde regel en de bron van de kernuitbreiding aan de bibliotheek toe. Klik op Tot slot **Opslaan en samenstellen tot ontwikkeling**.
 
 1. Nadat de bibliotheek voor de **Ontwikkeling** swim lane, gebruiken _ovalen_ Selecteer de **Ter goedkeuring verzenden**
 
-1. Dan in **Verzonden** zwembaan met _ovalen_ Selecteer de **Goedkeuren voor publicatie** eveneens **Samenstellen en publiceren naar productie** in de **Goedgekeurd** zwembaan.
+1. Dan in **Verzonden** zwembaan met _ovalen_ Selecteer de **Goedkeuren voor publicatie**, eveneens **Samenstellen en publiceren naar productie** in de **Goedgekeurd** zwembaan.
 
 ![Gepubliceerde bibliotheek](assets/published-library.png)
 

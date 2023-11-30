@@ -7,8 +7,8 @@ role: Developer
 level: Beginner
 version: Cloud Service
 topic: Integrations
-kt: 8474
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+jira: KT-8474
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Het kwikbestand, het formuliergegevensmodel en de configuratie van de cloudservi
 U moet een SendGrid-account maken, een dynamische sjabloon die gegevens kan opnemen die zijn vastgelegd in het adaptieve formulier.
 
 
-Hier volgt een fragment van HTML-code die in de dynamische sjabloon wordt gebruikt. De waarde van de parameter blobID wordt doorgegeven met behulp van de aanroepservice van het formuliergegevensmodel.
+Hier volgt een fragment van HTML-code die in de dynamische sjabloon wordt gebruikt. De waarde van de parameter blobID wordt doorgegeven met behulp van het formuliergegevensmodel invoke service.
 
 ```html
 You can  <a href='https://forms.enablementadobe.com/content/dam/formsanddocuments/azureportalstorage/creditcardapplication/jcr:content?wcmmode=disabled&ampguid={{blobID}}'>access your application here</a> and complete it.

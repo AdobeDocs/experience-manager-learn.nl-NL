@@ -2,16 +2,13 @@
 title: Best practices voor stijlsystemen met AEM Sites
 description: Een gedetailleerd artikel waarin de beste werkwijzen worden uitgelegd voor het implementeren van het stijlsysteem met Adobe Experience Manager Sites.
 feature: Style System
-topics: development, components, front-end-development
-audience: developer
-doc-type: article
-activity: understand
 version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Article
 exl-id: c51da742-5ce7-499a-83da-227a25fb78c9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 0%
@@ -33,7 +30,7 @@ Er zijn twee hoofdstijlen of stijlen die voor het Systeem van de Stijl van de AE
 
 **Stijlen weergeven** worden gebruikt om kleine variaties in layoutstijlen aan te passen, maar ze veranderen de fundamentele aard of intentie van de layoutstijl niet. Een hoofdopmaakstijl kan bijvoorbeeld weergavestijlen hebben die het kleurenschema wijzigen van het kleurenschema voor het primaire merk in het kleurenschema voor het secundaire merk.
 
-## Tips en trucs voor organisatie {#style-organization-best-practices}
+## Best practices voor organisatie {#style-organization-best-practices}
 
 Wanneer u de stijlnamen definieert die beschikbaar zijn voor AEM auteurs, kunt u het beste:
 
@@ -59,7 +56,7 @@ De stijlnaam van **Groen** is toegewezen aan `.cmp-component--primary-color`, en
 
 Als de merkkleur van het bedrijf in de toekomst verandert, is het enige dat moet worden veranderd de enige implementatie van `.cmp-component--primary-color` en `.cmp-component--secondary-color`en de stijlnamen.
 
-## De component Teaser als voorbeeld gebruikt hoofdletters/kleine letters {#the-teaser-component-as-an-example-use-case}
+## De component Teaser als voorbeeld gebruikt case {#the-teaser-component-as-an-example-use-case}
 
 Hieronder ziet u een voorbeeld van het gebruik van de stijl van een Taser-component voor verschillende lay-out- en weergavestijlen.
 
@@ -73,7 +70,7 @@ De [!UICONTROL Style Group] namen, lay-out en weergave komen per geval overeen m
 
 De [!UICONTROL Style Group] en het aantal [!UICONTROL Style Groups] moet worden aangepast aan de gebruiksscenario&#39;s van de component en aan de stijlconventies van de projectspecifieke component.
 
-De **Weergave** naam stijlgroep had kunnen worden genoemd **Kleuren**.
+Bijvoorbeeld de **Weergave** naam stijlgroep had kunnen worden genoemd **Kleuren**.
 
 ![Stijlgroep weergeven](assets/style-config.png)
 
@@ -123,7 +120,7 @@ Om dit te bereiken **indelingsstijl** van **Aanbieding** en de **weergavestijlen
 
 #### Standaardwaarde voor aanbieding
 
-![standaard](assets/promo-default.png)
+![standaard promo](assets/promo-default.png)
 
 * **Lay-outstijl**
    * Stijlnaam: **Aanbieding**
@@ -166,7 +163,7 @@ De juiste uitlijning, in de kern, is een weergavestijl die u in het AEM Stijlsys
 
 ..die reeds is geschonden in de [Standaardstijl](#default-style).
 
-Omdat de juiste uitlijning alleen van invloed is op de indelingsstijl Promo en niet op de andere 2 lay-outstijlen: Standaard en als held kunnen we een nieuwe indelingsstijlpromotie maken (rechts uitgelijnd) die de CSS-klasse bevat die de inhoud van de Promo-lay-outstijlen rechts uitlijnt: `cmp -teaser--alternate`.
+Omdat de juiste uitlijning alleen van invloed is op de stijl van de Promo-lay-out en niet op de andere twee lay-outstijlen: standaard en held, kunnen we een nieuwe lay-outstijlpromotie (rechts uitgelijnd) maken die de CSS-klasse bevat die de inhoud van de Promo-lay-outstijlen rechts uitlijnt: `cmp -teaser--alternate`.
 
 Deze combinatie van meerdere stijlen tot één Stijl-item kan ook het aantal beschikbare stijlen en stijlpermutaties verminderen. Dit is het beste om deze te minimaliseren.
 
@@ -217,7 +214,7 @@ Per component wordt de stijlnaam toegewezen aan de enkele set CSS-klassen. Dit b
 
 Dit kan triviaal worden bereikt door de CSS-regels te verkennen, maar dit vereist wel dat de CSS-ontwikkelaars begrijpen hoe deze permutaties worden toegepast op AEM.
 
-CSS voor het kleuren van de achtergrond **Bevorderen** lay-outstijl met de primaire (groene) kleur:
+CSS voor het kleuren van de achtergrond **Bevorderen** layout met de primaire (groene) kleur:
 
 ```css
 .cmp-teaser--promo.cmp-teaser--primary--color {
@@ -227,7 +224,7 @@ CSS voor het kleuren van de achtergrond **Bevorderen** lay-outstijl met de prima
 }
 ```
 
-CSS voor het kleuren van de tekst van **Hero** lay-outstijl met de primaire (groene) kleur:
+CSS voor het kleuren van de tekst van **Hero** layout met de primaire (groene) kleur:
 
 ```css
 .cmp-teaser--hero.cmp-teaser--primary--color {

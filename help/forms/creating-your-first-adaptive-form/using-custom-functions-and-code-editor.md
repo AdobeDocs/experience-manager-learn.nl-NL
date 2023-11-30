@@ -3,13 +3,13 @@ title: Functies en code-editor gebruiken
 description: Functies en code-editor gebruiken om de bedrijfsregel van de auteur te schrijven
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 4270
+jira: KT-4270
 thumbnail: 22282.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 7b2a4075-bfdf-49f3-b507-34d86193bf64
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Een clientbibliotheek bestaat meestal uit CSS- en JavaScript-bestanden. Deze cli
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
 
-Hier volgt de code waarmee deelvenstervelden worden gevalideerd.
+Hier volgt de code waarmee deelvenstervelden worden gevalideerd:
 
 ```javascript
 //debugger;

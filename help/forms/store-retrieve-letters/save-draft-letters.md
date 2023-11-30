@@ -10,9 +10,9 @@ version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
-kt: 10208
+jira: KT-10208
 exl-id: dc6f64a0-7059-4392-9c29-e66bdef4fd4d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -70,7 +70,7 @@ public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException
 ## Letter ophalen
 
 De volgende code is geschreven om de opgeslagen conceptbrief op te halen.
-Als u een opgeslagen letter-instantie wilt laden, moet u de conceptID opgeven. Gebaseerd op dit conceptID vragen wij het gegevensbestand om de extra meta-gegevens over de brief te krijgen. Dezelfde conceptID wordt gebruikt om de gegevens van de letter te maken door de juiste xml uit het bestandssysteem te lezen. Vervolgens wordt een object CCRDocumentInstance geconstrueerd en geretourneerd.
+Als u een opgeslagen letter-instantie wilt laden, moet u de conceptID opgeven. Gebaseerd op dit conceptID vragen wij het gegevensbestand om de extra meta-gegevens over de brief te krijgen. Dezelfde conceptID wordt gebruikt om de gegevens van de letter te maken door de juiste xml uit het bestandssysteem te lezen. Een voorwerp CCRDocumentInstance wordt dan gebouwd en teruggekeerd.
 
 
 ```java
@@ -168,6 +168,6 @@ U kunt de query aanpassen om de opgeslagen letter-instanties op te halen. In dit
     }
 ```
 
-### Eclipse-project
+### Eclipse Project
 
 Het eclipse-project met voorbeeldimplementatie kan [hier gedownload](assets/icdrafts-eclipse-project.zip)

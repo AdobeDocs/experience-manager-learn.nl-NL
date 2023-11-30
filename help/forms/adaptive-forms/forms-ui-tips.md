@@ -7,9 +7,9 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-kt: 9270
+jira: KT-9270
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Voor dit gebruik heb ik het oogpictogram van het [Font Awesome Library](https://
 
 ## Voorbeeldcode
 
-Het adaptieve formulier heeft een veld van het type PasswordBox met de naam **ssnField**.
+Het adaptieve formulier heeft een veld van het type PasswordBox genaamd **ssnField**.
 
 De volgende code wordt uitgevoerd wanneer het formulier wordt geladen
 

@@ -2,15 +2,12 @@
 title: Dynamic Media Classic Belangrijkste workflow en voorvertoningsmiddelen
 description: 'Leer meer over de hoofdworkflow in Dynamic Media Classic, die de drie stappen bevat: Maken (en uploaden), Auteur (en Publiceren) en Afleveren. Leer vervolgens hoe u een voorvertoning van elementen in Dynamic Media Classic kunt bekijken.'
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, architecture, publishing
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2703'
 ht-degree: 0%
@@ -57,11 +54,11 @@ Er zijn vier variaties van de optie Afbeelding overschrijven die u voor het hele
 - **Overschrijven in huidige map, dezelfde naam/extensie voor basisafbeelding**.
 Deze optie is de strengste regel voor vervanging. Hiervoor moet u de vervangende afbeelding uploaden naar dezelfde map als het origineel en moet de vervangende afbeelding dezelfde bestandsnaamextensie hebben als het origineel. Als niet aan deze vereisten wordt voldaan, wordt een dubbel gecreeerd.
 
-- **Overschrijven in huidige map, dezelfde naam van basiselement, ongeacht de extensie**.
+- **Overschrijven in huidige map, dezelfde naam van basiselement ongeacht extensie**.
 U moet de vervangende afbeelding uploaden naar dezelfde map als het origineel, maar de bestandsnaamextensie kan afwijken van het origineel. bijvoorbeeld stoel.tif vervangt stoel.jpg.
 
 - **Overschrijven in een willekeurige map, dezelfde naam/extensie van basiselement**.
-Vereist dat de vervangende afbeelding dezelfde bestandsnaamextensie heeft als de oorspronkelijke afbeelding (bijvoorbeeld stoel.jpg moet de naam stoel.jpg vervangen, niet stoel.tif ). U kunt de vervangende afbeelding echter naar een andere map uploaden dan het origineel. De bijgewerkte afbeelding staat in de nieuwe map; het bestand kan niet meer op de oorspronkelijke locatie worden gevonden.
+Vereist dat de vervangende afbeelding dezelfde bestandsnaamextensie heeft als de oorspronkelijke afbeelding (bijvoorbeeld stoel.jpg moet de naam stoel.jpg vervangen, niet stoel.tif ). U kunt de vervangende afbeelding echter naar een andere map uploaden dan het origineel. De bijgewerkte afbeelding bevindt zich in de nieuwe map. Het bestand is niet meer gevonden op de oorspronkelijke locatie.
 
 - **Overschrijven in een willekeurige map, dezelfde naam van basiselement, ongeacht de extensie**.
 Deze optie is de meest inclusieve vervangingsregel. U kunt een vervangende afbeelding uploaden naar een andere map dan het origineel, een bestand met een andere bestandsnaamextensie uploaden en het oorspronkelijke bestand vervangen. Als het oorspronkelijke bestand zich in een andere map bevindt, bevindt de vervangende afbeelding zich in de nieuwe map waarnaar het is geüpload.
@@ -76,15 +73,15 @@ Uploaden is de eerste noodzakelijke stap in een workflow, omdat Dynamic Media Cl
 
 ### Concept: Dit is wat er gebeurt met afbeeldingen wanneer u deze uploadt naar Dynamic Media Classic
 
-Wanneer u een afbeelding van een willekeurig type uploadt naar Dynamic Media Classic, wordt deze omgezet in een master afbeeldingsindeling die een Piramid-TIFF of P-TIFF wordt genoemd. Een P-TIFF is vergelijkbaar met de indeling van een gelaagde TIFF bitmapafbeelding, behalve dat het bestand in plaats van verschillende lagen meerdere formaten (resoluties) van dezelfde afbeelding bevat.
+Wanneer u een afbeelding van een willekeurig type uploadt naar Dynamic Media Classic, wordt deze omgezet in een indeling voor hoofdafbeeldingen die een Piramid-TIFF of P-TIFF wordt genoemd. Een P-TIFF is vergelijkbaar met de indeling van een gelaagde TIFF bitmapafbeelding, met dit verschil dat het bestand in plaats van verschillende lagen meerdere formaten (resoluties) van dezelfde afbeelding bevat.
 
 ![afbeelding](assets/main-workflow/pyramid-p-tiff.png)
 
-Tijdens het omzetten van de afbeelding maakt Dynamic Media Classic gebruik van een &#39;momentopname&#39; van de volledige grootte van de afbeelding, schaalt deze met de helft en slaat deze op, schaalt deze met de helft en slaat deze op, enzovoort, totdat deze wordt gevuld met even veelvouden van de oorspronkelijke grootte. Een P-TIFF van 2000 pixels heeft bijvoorbeeld een grootte van 1000, 500, 250 en 125 pixels (en kleiner) in hetzelfde bestand. Het P-TIFF-bestand is de indeling van een zogenaamde &quot;master afbeelding&quot; in Dynamic Media Classic.
+Tijdens het omzetten van de afbeelding maakt Dynamic Media Classic gebruik van een &#39;momentopname&#39; van de volledige grootte van de afbeelding, schaalt deze met de helft en slaat deze op, schaalt deze met de helft en slaat deze op, enzovoort, totdat deze wordt gevuld met even veelvouden van de oorspronkelijke grootte. Een P-TIFF van 2000 pixels heeft bijvoorbeeld een grootte van 1000, 500, 250 en 125 pixels (en kleiner) in hetzelfde bestand. Het P-TIFF-bestand is de indeling van wat in Dynamic Media Classic een &quot;hoofdafbeelding&quot; wordt genoemd.
 
-Wanneer u om een bepaalde groottebeeld verzoekt, staat het creëren van P-TIFF de Server van het Beeld voor Dynamic Media Classic toe om de volgende grotere grootte snel te vinden en het neer te schrapen. Als u bijvoorbeeld een afbeelding van 2000 pixels uploadt en een afbeelding van 100 pixels aanvraagt, zoekt Dynamic Media Classic de versie van 125 pixels en schaalt het deze naar 100 pixels in plaats van het formaat te wijzigen van 2000 tot 100 pixels. Dit maakt de bewerking zeer snel. Wanneer u op een afbeelding zoomt, kan de zoomviewer bovendien alleen een tegel van de afbeelding waarop wordt ingezoomd aanvragen in plaats van de volledige afbeelding met volledige resolutie. Zo ondersteunt de master afbeeldingsindeling, het P-TIFF-bestand, zowel dynamische vergroting als zoomen.
+Wanneer u om een bepaalde groottebeeld verzoekt, staat het creëren van P-TIFF de Server van het Beeld voor Dynamic Media Classic toe om de volgende grotere grootte snel te vinden en het neer te schrapen. Als u bijvoorbeeld een afbeelding van 2000 pixels uploadt en een afbeelding van 100 pixels aanvraagt, zoekt Dynamic Media Classic de versie van 125 pixels en schaalt het deze naar 100 pixels in plaats van het formaat te wijzigen van 2000 tot 100 pixels. Dit maakt de bewerking zeer snel. Wanneer u op een afbeelding zoomt, kan de zoomviewer bovendien alleen een tegel van de afbeelding waarop wordt ingezoomd aanvragen in plaats van de volledige afbeelding met volledige resolutie. Zo ondersteunt de indeling van de hoofdafbeelding, het P-TIFF-bestand, zowel dynamisch vergroten/verkleinen als zoomen.
 
-Op dezelfde manier kunt u uw master bronvideo uploaden naar Dynamic Media Classic en tijdens het uploaden kan Dynamic Media Classic de grootte ervan automatisch wijzigen en deze omzetten in de webvriendelijke MP4-indeling.
+Op dezelfde manier kunt u de hoofdbronvideo uploaden naar Dynamic Media Classic en tijdens het uploaden kan Dynamic Media Classic de grootte ervan automatisch wijzigen en deze converteren naar de webvriendelijke MP4-indeling.
 
 ### Miniatuurregels voor het bepalen van de optimale grootte voor de afbeeldingen die u uploadt
 
@@ -97,11 +94,11 @@ Op dezelfde manier kunt u uw master bronvideo uploaden naar Dynamic Media Classi
 
 **Er is geen minimumgrootte voor zoomen, maar de viewers zoomen standaard niet verder dan 100%.** Als uw afbeelding te klein is, zoomt u helemaal niet of slechts in een kleine hoeveelheid om te voorkomen dat de afbeelding er slecht uitziet.
 
-**Hoewel er geen minimale afbeeldingsgrootte is, raden we u niet aan gigantische afbeeldingen te uploaden.** Een gigantische afbeelding kan worden beschouwd als meer dan 4000 pixels. Bij het uploaden van afbeeldingen van deze grootte kunnen mogelijke onvolkomenheden optreden, zoals stofkorrels of haren in de afbeelding. Dergelijke afbeeldingen nemen meer ruimte in op de Dynamic Media Classic-server, waardoor u uw contractueel vastgelegde opslaglimiet kunt overschrijden.
+**Hoewel er geen minimale afbeeldingsgrootte is, raden we u niet aan gigantische afbeeldingen te uploaden.** Een gigantische afbeelding kan worden beschouwd als meer dan 4000 pixels. Het uploaden van afbeeldingen van deze grootte kan mogelijke onvolkomenheden zoals stofkorrels of haren in de afbeelding laten zien. Dergelijke afbeeldingen nemen meer ruimte in op de Dynamic Media Classic-server, waardoor u uw contractueel vastgelegde opslaglimiet kunt overschrijden.
 
 Meer informatie over [Bestanden uploaden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
-## Stap 2: Auteur (en publiceren)
+## Stap 2: Auteur (en Publiceren)
 
 Nadat u de inhoud hebt gemaakt en geüpload, gaat u nieuwe rich media-elementen van uw geüploade elementen maken door een of meer subworkflows uit te voeren. Dit omvat alle verschillende types van vastgestelde inzamelingen — Beeld, Monster, Spin, en Gemengde Reeksen van Media, evenals Malplaatjes. Het omvat ook video. We gaan later veel meer details bekijken over elk type verzameling afbeeldingen en video-rijke media. In bijna alle gevallen begint u echter met het selecteren van een of meer elementen (of hebt u geen elementen geselecteerd) en het kiezen van het type element dat u wilt maken. U kunt bijvoorbeeld een hoofdafbeelding en een paar weergaven van die afbeelding selecteren en een set afbeeldingen samenstellen, een verzameling alternatieve weergaven van hetzelfde product.
 
@@ -119,9 +116,9 @@ Bij het publiceren wordt alle inhoud gepubliceerd die is gemarkeerd voor publica
 >
 >Automatiseer uw publicatietaken en plant een Volledige publicatie die elke dag om 12.00 uur of om het even welke tijd laat in de avond wordt uitgevoerd.
 
-### Concept: De Dynamic Media Classic-URL begrijpen
+### Concept: De Dynamic Media Classic URL begrijpen
 
-Het uiteindelijke product van een Dynamic Media Classic-workflow is een URL die naar het element verwijst (of het nu gaat om een afbeeldingsset of een adaptieve videoset). Deze URL&#39;s zijn zeer voorspelbaar en volgen hetzelfde patroon. In het geval van afbeeldingen wordt elke afbeelding gegenereerd op basis van de master P-TIFF-afbeelding.
+Het uiteindelijke product van een Dynamic Media Classic-workflow is een URL die naar het element verwijst (of het nu gaat om een afbeeldingsset of een adaptieve videoset). Deze URL&#39;s zijn zeer voorspelbaar en volgen hetzelfde patroon. In het geval van afbeeldingen wordt elke afbeelding gegenereerd op basis van de P-TIFF-hoofdafbeelding.
 
 Hier volgt de syntaxis voor de URL van een afbeelding met een aantal voorbeelden:
 
@@ -135,7 +132,7 @@ In het tweede voorbeeld wordt een zogenaamde &quot;voorinstelling afbeelding&quo
 
 Als u eenmaal begrijpt hoe Dynamic Media Classic URL&#39;s worden samengesteld, begrijpt u hoe u ze via programmacode kunt wijzigen en hoe u ze dieper kunt integreren in uw site en back-endsystemen.
 
-### Concept: De vertraging in cache
+### Concept: De vertraging bij het in cache plaatsen
 
 Nieuw geüploade en gepubliceerde elementen worden meteen zichtbaar, terwijl bijgewerkte elementen mogelijk worden vertraagd door caching binnen 10 uur. Standaard hebben alle gepubliceerde elementen minimaal 10 uur voordat ze verlopen. We zeggen een minimum, omdat elke keer dat de afbeelding wordt bekeken, deze begint met een klok die niet vervalt tot 10 uur is verstreken en waarin niemand die afbeelding heeft bekeken. Deze periode van 10 uur is de &quot;Tijd om te leven&quot;voor activa. Nadat de cache voor dat element is verlopen, kan de bijgewerkte versie worden afgeleverd.
 
@@ -162,7 +159,7 @@ Voorbeeld van de integratie van de Dynamic Media Classic-URL voor een afbeelding
 
 De rode URL is het enige element dat specifiek is voor Dynamic Media Classic.
 
-Uw IT-team of integratiepartner kan het voortouw nemen bij het schrijven en wijzigen van code om Dynamic Media Classic-URL&#39;s in uw site te integreren. Adobe beschikt over een consultancyteam dat u hierbij kan helpen door technische, creatieve of algemene begeleiding te bieden.
+Uw IT-team of integratiepartner kan het voortouw nemen bij het schrijven en wijzigen van code om Dynamic Media Classic-URL&#39;s in uw site te integreren. Adobe beschikt over een adviesteam dat u hierbij kan helpen door technische, creatieve of algemene begeleiding te bieden.
 
 Voor complexere oplossingen, zoals zoomviewers of viewers die zoomen combineren met alternatieve weergaven, verwijst de URL doorgaans naar een viewer die wordt gehost door Dynamic Media Classic. Ook binnen die URL verwijst de URL naar een element-id.
 

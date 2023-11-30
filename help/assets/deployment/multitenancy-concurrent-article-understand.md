@@ -1,13 +1,14 @@
 ---
 title: Werken met multimedia en gelijktijdige ontwikkeling
-description: Leer over de voordelen, de uitdagingen, en de technieken om een multi-huurdersimplementatie met de Middelen van Adobe Experience Manager te beheren.
+description: Leer over de voordelen, de uitdagingen, en de technieken om een multi-huurdersimplementatie met Adobe Experience Manager Assets te beheren.
 feature: Connected Assets
 version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
+doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 0%
@@ -51,11 +52,11 @@ Als de zaken ware multi-tenancy, met nul kennis van andere huurders en geen gede
 
 Wanneer het leiden Geweven projectgebiedsdelen, is het belangrijk dat alle teams de zelfde versie van een bepaalde bundel OSGi op de server gebruiken. Om te illustreren wat er mis kan gaan wanneer Maven-projecten verkeerd worden beheerd, geven we een voorbeeld:
 
-Project A is afhankelijk van versie 1.0 van de bibliotheek, foo; foo versie 1.0 is ingesloten in hun implementatie op de server. Project B is afhankelijk van versie 1.1 van de bibliotheek, foo; foo versie 1.1 is ingebed in hun plaatsing.
+Project A is afhankelijk van versie 1.0 van de bibliotheek foo; foo versie 1.0 is ingesloten in de implementatie op de server. Project B is afhankelijk van versie 1.1 van de bibliotheek foo; foo versie 1.1 is ingesloten in de implementatie.
 
 Bovendien, veronderstellen wij dat API in deze bibliotheek tussen versies 1.0 en 1.1 is veranderd. Op dit moment zal een van deze twee projecten niet meer naar behoren werken.
 
-Om dit probleem aan te pakken, raden we aan alle Maven-projecten kinderen te maken van één ouder reactorproject. Dit reactorproject heeft twee doelen: het staat voor de bouw en de plaatsing van alle projecten samen toe indien zo gewenst, en het bevat de gebiedsdeelverklaringen voor alle kindprojecten. Het ouderproject bepaalt de gebiedsdelen en hun versies terwijl de kindprojecten slechts de gebiedsdelen verklaren die zij vereisen, die de versie van het ouderproject erven.
+Om dit probleem aan te pakken, raden we aan alle Maven-projecten kinderen te maken van één ouder reactorproject. Dit reactorproject heeft twee doelen: het maakt het mogelijk om alle projecten samen te bouwen en uit te voeren, indien gewenst, en het bevat de afhankelijkheidsverklaringen voor alle onderliggende projecten. Het ouderproject bepaalt de gebiedsdelen en hun versies terwijl de kindprojecten slechts de gebiedsdelen verklaren die zij vereisen, die de versie van het ouderproject erven.
 
 In dit scenario, als het team dat aan Project B werkt functionaliteit in versie 1.1 van foo vereist, zal het snel duidelijk in de ontwikkelomgeving worden dat deze verandering Project A zal breken. Op dit punt kunnen de teams deze verandering bespreken en of Project A compatibel maken met de nieuwe versie of zoeken naar een alternatieve oplossing voor Project B.
 
@@ -65,7 +66,7 @@ Merk op dat dit niet de behoefte voor deze teams elimineert om dit gebiedsdeel t
 
 Wanneer het werken aan veelvoudige projecten, is het belangrijk om ervoor te zorgen dat de code niet wordt gedupliceerd. Codeduplicatie verhoogt de kans op fouten, de kosten van wijzigingen in het systeem en de algemene rigiditeit in de codebasis. Om dubbel werk te voorkomen, refactor gemeenschappelijke logica in herbruikbare bibliotheken die over veelvoudige projecten kunnen worden gebruikt.
 
-Om deze behoefte te steunen, adviseren wij de ontwikkeling en het onderhoud van een kernproject dat alle teams van kunnen afhangen en tot bijdragen. Daarbij is het van belang ervoor te zorgen dat dit kernproject op zijn beurt niet afhankelijk is van de projecten van de afzonderlijke teams. dit maakt een onafhankelijke inzetbaarheid mogelijk terwijl het hergebruik van code nog steeds wordt bevorderd .
+Om deze behoefte te steunen, adviseren wij de ontwikkeling en het onderhoud van een kernproject dat alle teams van kunnen afhangen en tot bijdragen. Daarbij is het van belang ervoor te zorgen dat dit kernproject op zijn beurt niet afhankelijk is van de projecten van de afzonderlijke teams; dit maakt onafhankelijke inzetbaarheid mogelijk terwijl het hergebruik van code nog steeds wordt bevorderd.
 
 Enkele voorbeelden van code die algemeen in een kernmodule zijn:
 
@@ -88,17 +89,17 @@ Enkele voorbeelden van code die algemeen in een kernmodule zijn:
 
 Dit elimineert niet de behoefte voor veelvoudige teams om van en potentieel de zelfde reeks code af te hangen bij te werken. Door een kernproject te creëren, hebben wij de grootte van codebase verminderd die tussen teams-dalend maar niet de behoefte aan gedeelde middelen wordt gedeeld.
 
-Om ervoor te zorgen dat de veranderingen die aan dit kernpakket worden aangebracht de functionaliteit van het systeem niet verstoren, adviseren wij dat een senior ontwikkelaar of een team van ontwikkelaars toezicht handhaven. Eén mogelijkheid is één team te hebben dat alle wijzigingen in dit pakket beheert. een andere is dat teams pull-verzoeken indienen die door deze middelen worden herzien en samengevoegd. Het is belangrijk dat de teams een bestuursmodel opstellen en ermee instemmen en dat ontwikkelaars dit model volgen.
+Om ervoor te zorgen dat de veranderingen die aan dit kernpakket worden aangebracht de functionaliteit van het systeem niet verstoren, adviseren wij dat een senior ontwikkelaar of een team van ontwikkelaars toezicht handhaven. Eén optie is één team te hebben dat alle wijzigingen in dit pakket beheert. Een andere optie is dat teams pull-aanvragen moeten indienen die door deze bronnen worden gecontroleerd en samengevoegd. Het is belangrijk dat de teams een bestuursmodel opstellen en ermee instemmen en dat ontwikkelaars dit model volgen.
 
 ## Implementatiebereik beheren  {#managing-deployment-scope}
 
 Aangezien de verschillende teams hun code aan de zelfde bewaarplaats opstellen, is het belangrijk dat zij elkaars veranderingen niet beschrijven. AEM heeft een mechanisme om dit te controleren wanneer het opstellen van inhoudspakketten, de filter. xml-bestand. Het is belangrijk dat er geen overlapping is tussen filters.  xml- dossiers, anders kon de plaatsing van één team potentieel de vorige plaatsing van een ander team wissen. Ter illustratie hiervan raadpleegt u de volgende voorbeelden van goed gemaakte versus problematische filterbestanden:
 
-/apps/my-company vs. /apps/my-company/my-site
+/apps/my-company vs/apps/my-company/my-site
 
 /etc/clientlibs/my-company vs. /etc/clientlibs/my-company/my-site
 
-/etc/designs/my-company vs. /etc/designs/my-company/my-site
+/etc/designs/my-company vs/etc/designs/my-company/my-site
 
 Als elk team expliciet hun filterbestand configureert tot de site(s) waaraan ze werken, kan elk team hun componenten, clientbibliotheken en siteontwerpen onafhankelijk implementeren zonder elkaars wijzigingen te wissen.
 
@@ -132,7 +133,7 @@ Hoewel een goede architectuur en open communicatiekanalen de introductie van def
 
 ### Gedeelde bronnen {#shared-resources}
 
-AEM binnen één JVM wordt uitgevoerd; om het even welke opgestelde AEM toepassingen delen inherent middelen met elkaar, bovenop middelen die reeds in het normale lopen van AEM worden verbruikt. Binnen de ruimte JVM zelf, is er geen logische scheiding van draden, en de eindige middelen beschikbaar aan AEM, zoals geheugen, cpu, en schijf I/O wordt ook gedeeld. Om het even welke huurder die middelen verbruikt zal onvermijdelijk andere systeemhuurders beïnvloeden.
+AEM wordt uitgevoerd binnen één JVM; alle geïmplementeerde AEM toepassingen delen bronnen inherent met elkaar, bovenop de bronnen die al worden verbruikt tijdens de normale AEM. Binnen de ruimte JVM zelf, is er geen logische scheiding van draden, en de eindige middelen beschikbaar aan AEM, zoals geheugen, cpu, en schijf I/O wordt ook gedeeld. Om het even welke huurder die middelen verbruikt zal onvermijdelijk andere systeemhuurders beïnvloeden.
 
 ### Prestaties {#performance}
 
@@ -144,7 +145,7 @@ AEM verstrekt uit de doosinterfaces voor robuuste logboekconfiguratie die aan on
 
 ### Back-up en herstel {#backup-and-restore}
 
-Vanwege de aard van de JCR-opslagplaats werken traditionele back-ups in de gehele opslagplaats in plaats van op een afzonderlijk inhoudspad. Het is daarom niet mogelijk om steunen op een per-huurdersbasis gemakkelijk te scheiden. Omgekeerd worden bij het herstellen van een back-up inhoud en opslagknooppunten teruggedraaid voor alle gebruikers van het systeem. Terwijl het mogelijk is om gerichte inhoudsteunen uit te voeren, gebruikend hulpmiddelen zoals VLT, of om inhoud te koesteren om te herstellen door een pakket in een afzonderlijke milieu te bouwen, deze\
+Vanwege de aard van de JCR-opslagplaats werken traditionele back-ups in de gehele opslagplaats in plaats van op een afzonderlijk inhoudspad. Het is daarom niet mogelijk om steunen op een per-huurdersbasis gemakkelijk te scheiden. Omgekeerd worden bij het herstellen van een back-up inhoud en opslagknooppunten teruggedraaid voor alle gebruikers van het systeem. Terwijl het mogelijk is om gerichte inhoudsteunen uit te voeren, gebruikend hulpmiddelen zoals VLT, of om inhoud te kiezen om te herstellen door een pakket in een afzonderlijke milieu te bouwen, deze\
 de benaderingen omvatten niet gemakkelijk configuratiemontages of toepassingslogica en kunnen omslachtig zijn te beheren.
 
 ## Beveiligingsoverwegingen {#security-considerations}

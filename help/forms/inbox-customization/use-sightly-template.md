@@ -7,12 +7,12 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-kt: 5830
+jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -92,7 +92,7 @@ return val;
 * Beheer beheren openen door te klikken op Lijstweergave naast de knop Maken
 * Kolom Inkomen toevoegen aan Postvak In en uw wijzigingen opslaan
 * [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selecteer _huwelijkse staat_ en het formulier verzenden
+* Selecteer de _huwelijkse staat_ en het formulier verzenden
 * [Inbox weergeven](http://localhost:4502/aem/inbox)
 
 Als u het formulier verzendt, wordt de workflow geactiveerd en wordt een taak toegewezen aan de gebruiker van de &quot;beheerder&quot;. U moet het juiste pictogram zien onder de inkomenskolom

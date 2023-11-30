@@ -2,15 +2,15 @@
 title: Een kerncomponent uitbreiden | Aan de slag met de AEM SPA Editor en reageren
 description: Leer hoe u het JSON-model kunt uitbreiden voor een bestaande Core Component die u wilt gebruiken met de AEM SPA Editor. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden. Leer om het delegatiepatroon te gebruiken voor het uitbreiden van Sling Models en eigenschappen van de Verzameling van Middel.
 feature: SPA Editor, Core Components
-doc-type: tutorial
 version: Cloud Service
-kt: 5879
+jira: KT-5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Red
 
 1. Breid een bestaande Component van de Kern met extra eigenschappen en inhoud uit.
 2. Begrijp de basis van Componentovererving met het gebruik van `sling:resourceSuperType`.
-3. Leer hoe u de [Delegatiepatroon](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) voor Sling Models om bestaande logica en functionaliteit opnieuw te gebruiken.
+3. Leer hoe u de [Delegatiepatroon](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) voor verkoopmodellen om bestaande logica en functionaliteit opnieuw te gebruiken.
 
 ## Wat u gaat maken
 
@@ -41,7 +41,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
 
 Een bestaande componentset uitbreiden met een eigenschap met de naam `sling:resourceSuperType` op de definitie van uw component.  `sling:resourceSuperType`is een [eigenschap](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) die kunnen worden ingesteld in de definitie van een AEM die naar een andere component wijst. Dit plaatst uitdrukkelijk de component om alle functionaliteit van de component te erven die als wordt geïdentificeerd `sling:resourceSuperType`.
 
-Als we de `Image` component bij `wknd-spa-react/components/image` de code in het dialoogvenster `ui.apps` module.
+Als we de `Image` component bij `wknd-spa-react/components/image` de code in het dialoogvenster `ui.apps` -module.
 
 1. Een nieuwe map maken onder de `ui.apps` module voor `banner` om `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/banner`.
 1. Beneath `banner` een componentdefinitie maken (`.content.xml`) als volgt:
@@ -173,9 +173,9 @@ De `_cq_editConfig.xml` dicteert het slepen en neerzetten gedrag in AEM auteursi
 
 ## Het dialoogvenster uitbreiden {#extend-dialog}
 
-Ons `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText`. Aangezien wij het Verkopen overerving gebruiken, kunnen wij eigenschappen van gebruiken [Samenvoegen van verkoopbronnen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) om gedeelten van het dialoogvenster te overschrijven of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
+Ons `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText`. Aangezien wij het Verkopen overerving gebruiken, kunnen wij eigenschappen van gebruiken [Samenvoeging van verkoopbronnen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) delen van het dialoogvenster overschrijven of uitbreiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
 
-1. In de `ui.apps` -module, onder de `banner` map, een map maken met de naam `_cq_dialog`.
+1. In de `ui.apps` onder de `banner` map, een map maken met de naam `_cq_dialog`.
 1. Beneath `_cq_dialog` een Dialog-definitiebestand maken `.content.xml`. Vul de selectie met de volgende code:
 
    ```xml
@@ -240,9 +240,9 @@ Ons `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerTex
 
    Voordat we een voorvertoning van het dialoogvenster kunnen bekijken, moeten we de SPA component en de `MapTo` functie.
 
-## SPA {#implement-spa-component}
+## SPA implementeren {#implement-spa-component}
 
-Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SPA maken die u wilt toewijzen aan `wknd-spa-react/components/banner`. Dit wordt gedaan in `ui.frontend` module.
+Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SPA maken die u wilt toewijzen aan `wknd-spa-react/components/banner`. Dit gebeurt in het dialoogvenster `ui.frontend` -module.
 
 1. In de `ui.frontend` een nieuwe map maken voor `Banner` om `ui.frontend/src/components/Banner`.
 1. Een nieuw bestand maken met de naam `Banner.js` onder de `Banner` map. Vul de selectie met de volgende code:
@@ -314,17 +314,17 @@ Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SP
 
 1. Werk het beleid van het Malplaatje van de SPA bij om toe te voegen `Banner` component als een **toegestane component**.
 
-1. Navigeer naar een SPA pagina en voeg de `Banner` op een van de SPA pagina&#39;s:
+1. Ga naar een SPA pagina en voeg de `Banner` op een van de SPA pagina&#39;s:
 
    ![Bannercomponent toevoegen](assets/extend-component/add-banner-component.png)
 
    >[!NOTE]
    >
-   > In het dialoogvenster kunt u een waarde opslaan voor **Bannertekst** maar deze waarde wordt niet weerspiegeld in de SPA component. Om toe te laten, moeten wij het het Verkopen Model voor de component uitbreiden.
+   > In het dialoogvenster kunt u een waarde opslaan voor **Bannertekst** maar deze waarde wordt niet in de SPA weergegeven. Om toe te laten, moeten wij het het Verkopen Model voor de component uitbreiden.
 
 ## Java-interface toevoegen {#java-interface}
 
-Als u uiteindelijk de waarden uit het dialoogvenster Component toegankelijk wilt maken voor de component React, moet het Sling-model dat de JSON-code voor de component vult, worden bijgewerkt `Banner` component. Dit wordt gedaan in `core` die alle code van Java voor ons SPA project bevat.
+Als u uiteindelijk de waarden uit het dialoogvenster Component toegankelijk wilt maken voor de component React, moet het Sling-model dat de JSON-code voor de component vult, worden bijgewerkt `Banner` component. Dit gebeurt in het dialoogvenster `core` die alle code van Java voor ons SPA project bevat.
 
 Eerst maken we een nieuwe Java-interface voor `Banner` die de `Image` Java-interface.
 
@@ -469,7 +469,7 @@ Implementeer vervolgens het Sling-model voor de `BannerModel` interface.
 
    ![Afbeelding toevoegen aan bannerdialoogvenster](assets/extend-component/banner-dialog-image.png)
 
-   Sla de updates van het dialoogvenster op.
+   Sla de dialoogupdates op.
 
 1. U moet nu de gerenderde waarde zien van **Bannertekst**:
 

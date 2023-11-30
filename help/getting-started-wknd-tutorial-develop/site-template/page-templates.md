@@ -2,16 +2,16 @@
 title: Paginasjablonen
 description: Leer hoe u paginasjablonen maakt en wijzigt. Begrijp de verhouding tussen een Malplaatje van de Pagina en een Pagina. Leer hoe u beleid van een paginasjabloon configureert voor korrelig beheer en consistentie van merken voor inhoud.  Een goed gestructureerde sjabloon voor artikel van het tijdschrift wordt gemaakt op basis van een model van Adobe XD.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Editable Templates, Page Editor
 role: Developer
 level: Beginner
-kt: 7498
+jira: KT-7498
 thumbnail: KT-7498.jpg
+doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -24,7 +24,7 @@ In dit hoofdstuk onderzoeken we de relatie tussen een paginasjabloon en een pagi
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worden beschreven in het dialoogvenster [Inhoud ontwerpen en wijzigingen publiceren](./author-content-publish.md) is voltooid.
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in het dialoogvenster [Inhoud ontwerpen en wijzigingen publiceren](./author-content-publish.md) hoofdstuk is voltooid.
 
 ## Doelstelling
 
@@ -36,13 +36,13 @@ Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worde
 
 In dit gedeelte van de zelfstudie maakt u een nieuwe sjabloon voor de artikelpagina van tijdschriften waarmee u nieuwe artikelen voor tijdschriften kunt maken en uitlijnt op een algemene structuur. De sjabloon is gebaseerd op ontwerpen en een UI-kit die in AdobeXD is gemaakt. Dit hoofdstuk is alleen gericht op het opbouwen van de structuur of het skelet van de sjabloon. Er worden geen stijlen geïmplementeerd, maar de sjabloon en pagina&#39;s zijn functioneel.
 
-## De sjabloon voor artikelpagina voor tijdschriften maken
+## De sjabloon voor artikelpagina in het tijdschrift maken
 
 Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt als basis voor het maken van de nieuwe pagina. De sjabloon definieert de structuur van de resulterende pagina, de initiële inhoud en de toegestane componenten.
 
 Er zijn drie hoofdgebieden [Paginasjablonen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html):
 
-1. **Structuur** - definieert componenten die deel uitmaken van de sjabloon. Deze kunnen niet worden bewerkt door auteurs van inhoud.
+1. **Structuur** - definieert componenten die deel uitmaken van de sjabloon. Deze kunnen niet worden bewerkt door de auteurs van de inhoud.
 1. **Oorspronkelijke inhoud** - definieert componenten waarmee de sjabloon begint. Deze kunnen door makers van inhoud worden bewerkt en/of verwijderd.
 1. **Beleid** - definieert configuraties op basis van het gedrag van componenten en de opties waarover auteurs beschikken.
 
@@ -50,7 +50,7 @@ Maak vervolgens een nieuwe sjabloon in AEM die overeenkomt met de structuur van 
 
 >[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 
-U kunt de volgende miniatuur gebruiken om uw sjabloon te identificeren (of uw eigen sjabloon te uploaden!)
+Met de volgende miniatuur kunt u uw sjabloon identificeren (of uw eigen sjabloon uploaden!)
 
 ![Miniatuur van artikelpaginasjabloon](./assets/page-templates/article-page-template-thumbnail.png)
 
@@ -79,7 +79,7 @@ Maak vervolgens een nieuwe pagina met de sjabloon Artikelpagina tijdschrift. Maa
 
 >[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
 
-Gebruik de [opgegeven tekst](./assets/page-templates/la-skateparks-copy.txt) om de inhoud van het artikel te vullen.
+Gebruik de [opgegeven tekst](./assets/page-templates/la-skateparks-copy.txt) om de artikeltekst te vullen.
 
 ## Gefeliciteerd! {#congratulations}
 

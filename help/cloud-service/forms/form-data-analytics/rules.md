@@ -8,11 +8,11 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
 topic: Integrations, Development
-kt: 12557
+jira: KT-12557
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 9982e041-fff7-4be6-91c9-e322d2fd3e01
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 In het bezit van Markeringen hebben wij 2 nieuw gecreeerd [regels](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Veldvalidatiefout en FormSubmit**).
 
-![adaptief](assets/rules.png)
+![adaptieve vorm](assets/rules.png)
 
 
 ## Veldvalidatiefout
@@ -36,7 +36,7 @@ De regel van de Fout van de Bevestiging van het Gebied wordt gevormd door de geb
 
 ![ingezetene van de verzoekende staat](assets/field_validation_error_rule.png)
 
-De Adobe Analytics - Vastgestelde Variabelen worden gevormd als volgt
+De Adobe Analytics - de Vastgestelde Variabelen worden gevormd als volgt
 
 ![handeling instellen](assets/field_validation_action_rule.png)
 

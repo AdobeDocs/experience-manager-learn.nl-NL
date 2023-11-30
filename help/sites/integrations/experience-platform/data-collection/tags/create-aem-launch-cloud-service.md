@@ -1,12 +1,8 @@
 ---
 title: Een configuratie voor Cloud Servicen starten in AEM Sites maken
 description: Leer hoe te om een configuratie van de Cloud Service van de Lancering in AEM tot stand te brengen. De configuratie van de Cloud Service Launch kan dan worden toegepast op een bestaande Site en de tagbibliotheken kunnen worden waargenomen tijdens het laden in zowel de auteur- als de publicatieomgeving.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5982
+jira: KT-5982
 thumbnail: 38566.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -34,17 +31,17 @@ Leer hoe u een configuratie voor een Cloud Service starten maakt in Adobe Experi
 
 Maak de configuratie van de cloudservice starten met onderstaande stappen.
 
-1. Van de **Gereedschappen** menu, selecteert u **Cloud Services** en klik op **Adobe-startconfiguraties**
+1. Van de **Gereedschappen** menu, selecteert u **Cloud Servicen** sectie en klik op **Adobe-startconfiguraties**
 
 1. Selecteer de configuratiemap van uw site of selecteer **WKND-site** (als het gebruiken van het WKND gids project) en klik **Maken**
 
-1. Van de _Algemeen_ tab, noem uw configuratie gebruikend **Titel** en selecteer **Adobe starten** van de _Gekoppelde Adobe IMS-configuratie_ vervolgkeuzelijst. Selecteer vervolgens uw bedrijfsnaam in het menu _Bedrijf_ vervolgkeuzelijst en selecteer eerder gemaakte eigenschap in het menu _Eigenschap_ vervolgkeuzelijst.
+1. Van de _Algemeen_ tab, noem uw configuratie gebruikend **Titel** veld en selecteer **Adobe starten** van de _Gekoppelde Adobe IMS-configuratie_ vervolgkeuzelijst. Selecteer vervolgens uw bedrijfsnaam in het menu _Bedrijf_ vervolgkeuzelijst en selecteer eerder gemaakte eigenschap in het menu _Eigenschap_ vervolgkeuzelijst.
 
 1. Van de _Staging_ en _Productie_ de standaardconfiguraties behouden. Nochtans wordt het geadviseerd het herzien en de configuraties voor echte productie opstelling, specifiek te veranderen _Bibliotheek asynchroon laden_ schakelen op basis van uw prestatie- en optimalisatievereisten. Let ook op het volgende: _Bibliotheek-URI_ De waarde is anders voor Staging en Productie.
 
 1. Tot slot klikt u op **Maken** om de Launch Cloud Services te voltooien.
 
-   ![Configuratie van Cloud Services starten](assets/launch-cloud-services-config.png)
+   ![Configuratie van Cloud Servicen starten](assets/launch-cloud-services-config.png)
 
 ## Cloudservice starten toepassen op de site
 
@@ -54,7 +51,7 @@ Als u de eigenschap Tag en de bijbehorende bibliotheken op de AEM site wilt lade
 
 1. Selecteer de hoofdpagina van de AEM Site en klik op **Eigenschappen**. Navigeer vervolgens naar de **Geavanceerd** tab en onder **Configuratie** sectie, controleert u of de waarde voor Cloud Configuration naar uw sitespecifieke `conf` map.
 
-   ![Configuratie van Cloud Services toepassen op de site](assets/apply-cloud-services-config-to-site.png)
+   ![Configuratie van Cloud Servicen toepassen op de site](assets/apply-cloud-services-config-to-site.png)
 
 ## Het laden van de eigenschap Tag op de pagina&#39;s Auteur en Publiceren controleren
 

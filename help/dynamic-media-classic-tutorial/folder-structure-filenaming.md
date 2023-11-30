@@ -1,23 +1,21 @@
 ---
-title: Bepaal de structuur van uw map en de naamgevingsconventie voor bestanden
-description: Bestandsnaamgeving is misschien wel de belangrijkste beslissing die u neemt bij het implementeren van Dynamic Media Classic. De mapstructuur is ook belangrijk. Leer waarom het zo belangrijk en mogelijk is om voor uw omslagstructuur en dossiernamen te kiezen.
+title: Bepaal de structuur van uw map en de naamgevingsconventie voor uw bestand
+description: Bestandsnaamgeving is misschien wel de belangrijkste beslissing die u neemt bij het implementeren van Dynamic Media Classic. De mapstructuur is eveneens van belang. Leer waarom het zo belangrijk en mogelijk is om voor uw omslagstructuur en dossiernamen te kiezen.
 feature: Dynamic Media Classic
-doc-type: tutorial
 activity: develop
-topics: development, authoring, configuring, architecture
-audience: all
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
 
 ---
 
-# Bepaal de structuur van uw map en de naamgevingsconventie voor bestanden {#folder-structure-filenaming}
+# Bepaal de structuur van uw map en de naamgevingsconventie voor uw bestand {#folder-structure-filenaming}
 
 Voordat u naar binnen gaat en al uw inhoud gaat uploaden, is het verstandig om rekening te houden met de mapstructuur die u gebruikt en met name met de naamgevingsconventie voor bestanden. Het zal u waarschijnlijk tijd besparen en het moeten taken later opnieuw doen. Het is beter om deze besluiten over alle groepen te coördineren.
 
@@ -31,23 +29,23 @@ Maphiërarchie is alleen voor u en uw bedrijf van belang voor organisatorische d
 
 Een andere belangrijke overweging is het aantal elementen of mappen dat in elke map moet worden opgeslagen. Als er veel middelen in een map zijn opgeslagen, neemt de prestatie af bij het weergeven van middelen in Dynamic Media Classic. Sla duizenden bestanden niet op in een map. In plaats daarvan, ontwikkelt een organisatorische hiërarchie met minder dan ongeveer 500 activa of omslagen binnen een bepaalde tak van uw hiërarchie. Dit is geen strikte voorwaarde, maar het helpt om aanvaardbare reactietijden te handhaven wanneer het bekijken van of het zoeken van activa. In feite is de aanbeveling om hiërarchieën te creëren die breed en oppervlakkig zijn in plaats van smal en diep.
 
-De eenvoudigste manier om uw mappen te maken is om de volledige mapstructuur te uploaden met behulp van FTP en de optie in te schakelen **Inclusief submappen**. Met deze optie maakt Dynamic Media Classic de mapstructuur opnieuw op de FTP-site in Dynamic Media Classic.
+De eenvoudigste manier om uw mappen te maken, is om de volledige mapstructuur te uploaden met behulp van FTP en de optie in te schakelen **Inclusief submappen**. Met deze optie maakt Dynamic Media Classic de mapstructuur opnieuw op de FTP-site in Dynamic Media Classic.
 
 We willen dat u rekening houdt met uw mapstructuur voordat u al uw bestanden gaat uploaden, omdat het veel eenvoudiger is om uw bestanden en mappen lokaal op uw computer te ordenen en te beheren dan in Dynamic Media Classic. U kunt bijvoorbeeld alleen bestanden, maar niet volledige mappen, slepen en neerzetten in Dynamic Media Classic.
 
 ### Mapstrategieën
 
-Overweeg voor uw mapstrategie wat voor uw organisatie zinnig is. Hier volgen een aantal veelvoorkomende naamgevingsscenario&#39;s voor mappen:
+Overweeg voor uw omslagstrategie wat aan uw organisatie zinvol is. Hier volgen een aantal veelvoorkomende naamgevingsscenario&#39;s voor mappen:
 
 - De website van de spiegel of productverdeling. Als u bijvoorbeeld kleding hebt verkocht, hebt u mogelijk mappen voor Men, Vrouwen en Bureau-accessoires en submappen voor Zijden en Shoes.
 - Op SKU of product-id gebaseerde strategie. Bij detailhandelaren met duizenden items is het bijvoorbeeld handig SKU-nummers of product-id&#39;s als mapnamen te gebruiken.
 - Merkstrategie. Fabrikanten die meerdere merken hebben, kunnen bijvoorbeeld hun merknaam kiezen als mappen op hoofdniveau.
 
-## Naamgevingsconventie voor bestanden
+## Overeenkomst bestandsnaamgeving
 
 Hoe u ervoor kiest om uw bestanden een naam te geven, is wellicht de belangrijkste beslissing die u in een vroeg stadium zult nemen met betrekking tot Dynamic Media Classic. Dit komt doordat alle elementen in Dynamic Media Classic unieke namen moeten hebben, ongeacht de locatie van de elementen op de account.
 
-Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een element-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. Bijvoorbeeld: _896649,jpg_ get-element _ID 896649_.
+Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een element-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. Bijvoorbeeld: _896649,jpg_ get-element _ID 89649_.
 
 Regels betreffende ID&#39;s van activa:
 
@@ -77,9 +75,9 @@ Dit is een heel eenvoudig systeem, en goed als u bescheiden behoeften hebt. Het 
 | SKU/PID | Categorie | Bestandsnaam | Element-id |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |
 | AA123 | Alt-weergaven | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
-|  | Gekleurde weergaven | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
-|  | Stalen | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | Afbeeldingsset of stalenset |  | AA123 of AA123_SET | — |
+|         | Kleurweergaven | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
+|         | Stalen | AA123_BLU_SW.tif | AA123_BLU_SW |
+|         | Afbeeldingsset of stalenset |                                             | AA123 of AA123_SET | — |
 
 Wanneer u werkt met ingestelde verzamelingen, zoals Afbeeldingssets en Staalsets, moet de set zelf ook een unieke naam hebben. In dit geval kan de set dus de basis-SKU als naam krijgen, of de SKU met de extensie &quot;_SET&quot;.
 

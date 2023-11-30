@@ -1,12 +1,8 @@
 ---
 title: Tags voor gegevensverzameling van Experience Platforms integreren (Starten) en AEM
-description: De Inzameling van de Gegevens van het Experience Platform van labels is Adobe in volgende-generatie oplossing van het markeringsbeheer de beste manier om Adobe Analytics, Doel, Audience Manager, en vele meer oplossingen op te stellen. Bekijk een overzicht van de labels (voorheen Launch genoemd) en de aanbevolen integratie met Adobe Experience Manager.
-topics: integrations
-audience: administrator
+description: De markeringen in de Inzameling van de Gegevens van het Experience Platform zijn de volgende-generatieoplossing van het markeringsbeheer van de Adobe en de beste manier om Adobe Analytics, Doel, Audience Manager, en vele meer oplossingen op te stellen. Bekijk een overzicht van de labels (voorheen Launch genoemd) en de aanbevolen integratie met Adobe Experience Manager.
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5979
+jira: KT-5979
 thumbnail: 39090.jpg
 topic: Integrations
 feature: Integrations
@@ -15,8 +11,9 @@ level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
@@ -61,4 +58,4 @@ Het volgende wordt vereist wanneer het integreren van de Markeringen van de Inza
 
 + [Integratie van Experience Platforms met Experience Cloud-toepassingen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
 + [Overzicht van codes](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [De Experience Cloud in websites implementeren met tags](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [Het Experience Cloud implementeren in websites met tags](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)

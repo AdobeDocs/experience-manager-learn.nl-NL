@@ -3,14 +3,14 @@ title: Modellen voor inhoudsfragmenten definiëren - Aan de slag met AEM headles
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Leer hoe u inhoud modelleert en een schema samenstelt met Content Fragment Models in AEM. Beoordeel bestaande modellen en maak een model. Leer over de verschillende gegevenstypes die kunnen worden gebruikt om een schema te bepalen.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6712
+jira: KT-6712
 thumbnail: 22452.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 0%
@@ -65,8 +65,8 @@ Een model maken voor een **Persoon**, dit is het gegevensmodel dat een persoon v
 
    ![Navigeren naar Modellen van inhoudsfragmenten](assets/content-fragment-models/navigate-cf-models.png)
 
-1. Navigeer in de **Mijn project** map.
-1. Tikken **Maken** in de rechterbovenhoek om de **Model maken** wizard.
+1. Ga in **Mijn project** map.
+1. Tikken **Maken** in de rechterbovenhoek **Model maken** wizard.
 1. In **Modeltitel** veld, Enter **Persoon** en tikken **Maken**. Tik in het resulterende dialoogvenster op **Openen** om het model te bouwen.
 
 1. Sleep een **Tekst met één regel** element aan het belangrijkste paneel. Voer de volgende eigenschappen in op de knop **Eigenschappen** tab:
@@ -105,19 +105,19 @@ Een model maken voor een **Persoon**, dit is het gegevensmodel dat een persoon v
 
 1. Diverse toevoegen **Opties** met de **Een optie toevoegen** knop. Dezelfde waarde gebruiken voor **Option-label** en **Optiewaarde**:
 
-   **Artiest**, **Influencer**, **Fotograaf**, **Reiziger**, **Schrijver**, **YouTuber**
+   **Artiest**, **Influencer**, **Fotograaf**, **Reizen**, **Schrijver**, **YouTuber**
 
 1. De definitieve **Persoon** Het model moet er als volgt uitzien:
 
    ![Model eindpersoon](assets/content-fragment-models/final-author-model.png)
 
-1. Klikken **Opslaan** om de wijzigingen op te slaan.
+1. Klikken **Opslaan** om de wijzigingen op te slaan
 
 ### Het teammodel maken
 
 Een model maken voor een **Team**, het gegevensmodel voor een team van mensen. Het model van het Team verwijzingen het model van de Persoon om de leden van het team te vertegenwoordigen.
 
-1. In de **Mijn project** map, tikken **Maken** in de rechterbovenhoek om de **Model maken** wizard.
+1. In de **Mijn project** map, tikken **Maken** in de rechterbovenhoek **Model maken** wizard.
 1. In **Modeltitel** veld, Enter **Team** en tikken **Maken**.
 
    Tikken **Openen** in het resulterende dialoogvenster om het nieuwe model te openen.
@@ -150,13 +150,13 @@ Een model maken voor een **Team**, het gegevensmodel voor een team van mensen. H
    * **Renderen als**: **Meerdere velden**
    * **Veldlabel**: **Teamleden**
    * **Eigenschapnaam**: `teamMembers`
-   * **Modellen voor toegestane inhoudsfragmenten**: Gebruik het mappictogram om het **Persoon** model.
+   * **Modellen voor toegestane inhoudsfragmenten**: Gebruik het mappictogram om de optie **Persoon** model.
 
 1. De definitieve **Team** Het model moet er als volgt uitzien:
 
    ![Eindteammodel](assets/content-fragment-models/final-team-model.png)
 
-1. Klikken **Opslaan** om de wijzigingen op te slaan.
+1. Klikken **Opslaan** om de wijzigingen op te slaan
 
 1. U moet nu twee modellen hebben waaruit u kunt werken:
 
@@ -174,7 +174,7 @@ Na revisie en verificatie publiceert u de `Project Configuration` &amp; `Content
 
 1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**.
 
-1. Navigeer in de **Mijn project** map.
+1. Ga in **Mijn project** map.
 
 1. Tikken **Persoon** en **Team** modellen en tikken **Publiceren**
 

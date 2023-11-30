@@ -1,17 +1,14 @@
 ---
 title: Ontwikkelen voor paginaverschil in AEM Sites
-description: In deze video ziet u hoe u aangepaste stijlen voor de functionaliteit Paginaverschil van AEM-sites kunt gebruiken.
+description: In deze video ziet u hoe u aangepaste stijlen voor de functionaliteit Paginaverschil van AEM Sites kunt gebruiken.
 feature: Authoring
-topics: development
-audience: developer
-doc-type: technical video
-activity: develop
 version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Beginner
+doc-type: Technical Video
 exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
@@ -20,7 +17,7 @@ ht-degree: 0%
 
 # Ontwikkelen voor paginaverschil {#developing-for-page-difference}
 
-In deze video ziet u hoe u aangepaste stijlen voor de functionaliteit Paginaverschil van AEM-sites kunt gebruiken.
+In deze video ziet u hoe u aangepaste stijlen voor de functionaliteit Paginaverschil van AEM Sites kunt gebruiken.
 
 ## Paginaverschilstijlen aanpassen {#customizing-page-difference-styles}
 
@@ -28,7 +25,7 @@ In deze video ziet u hoe u aangepaste stijlen voor de functionaliteit Paginavers
 
 >[!NOTE]
 >
->Deze video voegt douane CSS aan de wij.Retail cliëntbibliotheek toe, waar aangezien deze veranderingen in het project van AEM Sites van de klant zouden moeten worden aangebracht; in de onderstaande voorbeeldcode: `my-project`.
+>Deze video voegt aangepaste CSS aan de wij.Retail cliëntbibliotheek toe, waar aangezien deze veranderingen in het project van AEM Sites van de klant zouden moeten worden aangebracht; in de voorbeeldcode hieronder: `my-project`.
 
 AEM paginaverschil verkrijgt de OOTB CSS via een directe lading van `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
@@ -117,7 +114,7 @@ Deze stijlen moeten beperkt blijven tot [!UICONTROL Edit] en [!UICONTROL preview
 </head>
 ```
 
-Het eindresultaat van een diff&#39;d-pagina waarop de bovenstaande stijlen zijn toegepast, ziet er als volgt uit (HTML toegevoegd en Component gewijzigd).
+Het eindresultaat van een diff&#39;d pagina met de bovenstaande stijlen toegepast zou er als volgt uitzien (HTML toegevoegd en Component gewijzigd).
 
 ![Paginaverschil](assets/page-diff.png)
 

@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5433
+jira: KT-5433
 thumbnail: kt-5433.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 8ca9535866cc1a673a59ac3743847e68dfedd156
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 0%
@@ -38,28 +38,28 @@ Developer Console is per AEM as a Cloud Service omgeving toegankelijk via Cloud 
 4. Selecteren __Ontwerpconsole__ in de vervolgkeuzelijst.
 
 
-## Toegang tot ontwikkelaarsconsole
+## Toegang tot ontwikkelconsole
 
-Voor toegang tot en gebruik van de Developer Console moeten de volgende machtigingen aan de Adobe ID van de ontwikkelaar worden gegeven via [Adobe](https://adminconsole.adobe.com).
+Voor toegang tot en gebruik van de Developer Console moeten de volgende machtigingen aan de Adobe ID van de ontwikkelaar worden gegeven via [Admin Console Adobe](https://adminconsole.adobe.com).
 
 1. Zorg ervoor dat de Adobe Org die Cloud Manger en AEM as a Cloud Service producten heeft beïnvloed, actief is in de Adobe Org-switch.
 1. De ontwikkelaar moet lid zijn van de [Product van Cloud Manager __Ontwikkelaar - Cloud Service__ Productprofiel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
    + Als dit lidmaatschap niet bestaat, kan de ontwikkelaar zich niet aanmelden bij de Developer Console.
-1. De ontwikkelaar moet lid zijn van de [__AEM__ of __AEM__ Productprofiel op AEM-auteur en/of AEM-publicatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
+1. De ontwikkelaar moet lid zijn van de [__AEM__ of __AEM__ Productprofiel op AEM auteur en/of in Publicatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + Als dit lidmaatschap niet bestaat, [status](#status) dumps wordt een time-out met een fout van 401 die niet is geautoriseerd.
 
-### Toegang tot ontwikkelaarsconsole voor probleemoplossing
+### Toegang tot ontwikkelconsole voor probleemoplossing
 
 #### 401 Ongeoorloofde fout bij de status van dumping
 
-![Ontwikkelaarsconsole - 401 niet-geautoriseerd](./assets/developer-console/troubleshooting__401-unauthorized.png)
+![Ontwikkelaarsconsole - 401 onbevoegd](./assets/developer-console/troubleshooting__401-unauthorized.png)
 
 Als er een status met 401 niet-geautoriseerde fout wordt geplakt, betekent dit dat de gebruiker nog niet beschikt over de benodigde machtigingen in AEM as a Cloud Service of dat het gebruik van de aanmeldingstokens ongeldig is of is verlopen.
 
 Het 401-probleem met onbevoegden oplossen:
 
 1. Zorg ervoor dat uw gebruiker lid is van het juiste Adobe IMS-productprofiel (AEM beheerders of AEM gebruikers) voor de bijbehorende AEM as a Cloud Service productinstantie van de Developer Console.
-   + Houd er rekening mee dat Developer Console toegang heeft tot 2 Adobe IMS-productinstanties. de AEM as a Cloud Service auteur en publiceer productinstanties, zodat de correcte Profiles van het Product worden gebruikt afhankelijk van welke de dienstrij toegang via de Console van de Ontwikkelaar vereist.
+   + Houd er rekening mee dat Developer Console toegang heeft tot 2 Adobe IMS-productinstanties; de AEM as a Cloud Service auteur- en publicatieproductinstanties, zodat de juiste productprofielen worden gebruikt, afhankelijk van de servicelaag die toegang via de Developer Console vereist.
 1. Meld u aan bij de as a Cloud Service AEM (Auteur of Publiceren) en controleer of de gebruiker en de groepen correct zijn gesynchroniseerd in AEM.
    + De Console van de ontwikkelaar vereist dat uw gebruikersverslag in de overeenkomstige AEM de dienstrij voor het voor authentiek verklaart aan die de dienstrij wordt gecreeerd.
 1. Wis uw browservercookies en de status van de toepassing (lokale opslag) en meld u opnieuw aan in de Developer Console. Op deze manier zorgt u ervoor dat het toegangstoken dat de Developer Console gebruikt, correct en niet verlopen is.
@@ -73,7 +73,7 @@ AEM de as a Cloud Service auteur en de Publish diensten bestaan uit veelvoudige 
 + Een pod is een afzonderlijk exemplaar dat deel uitmaakt van een AEM (Auteur of Publiceren)
 + Pods zijn van voorbijgaande aard, wat betekent dat AEM as a Cloud Service ze naar behoefte maakt en vernietigt
 + Alleen pods die deel uitmaken van de bijbehorende AEM as a Cloud Service omgeving, worden weergegeven in de pod-switch van de ontwikkelaarsconsole.
-+ U kunt onder aan de podschakelaar onder aan de pod de opties voor het gebruiksgemak kiezen om pods te selecteren op basis van het servicetype:
++ U kunt onder aan de pod-schakeloptie de optie Pods selecteren op basis van het servicetype:
    + Alle auteurs
    + Alle uitgevers
    + Alle instanties
@@ -91,7 +91,7 @@ Bij bundels worden alle OSGi-bundels in AEM weergegeven. Deze functionaliteit is
 Bundels helpen bij het opsporen van fouten door:
 
 + Een lijst maken van alle OSGi-bundels die worden geïmplementeerd als een service AEM
-+ vermelding van de staat van elke OSGi-bundel; inclusief of ze al dan niet actief zijn
++ Een overzicht geven van de status van elke OSGi-bundel, ook als deze actief is of niet.
 + Het verstrekken van details in onopgeloste gebiedsdelen die OSGi- bundels veroorzaken om actief te worden
 
 ### Onderdelen
@@ -101,7 +101,7 @@ De componenten maken een lijst van alle componenten OSGi in AEM. Deze functional
 Componenten helpen bij het opsporen van fouten door:
 
 + Een lijst maken van alle OSGi-componenten die zijn geïmplementeerd voor AEM as a Cloud Service
-+ Verstrekken van de staat van elke component OSGi; inclusief of ze actief of ontevreden zijn
++ Het verstrekken van de staat van elke component OSGi; met inbegrip van als zij actief of ontevreden zijn
 + Het verstrekken van details in ontevreden de dienstverwijzingen kan componenten OSGi veroorzaken om actief te worden
 + OSGi-eigenschappen vermelden en hun waarden koppelen aan de OSGi-component.
    + Hiermee worden de werkelijke waarden weergegeven die via [OSGi-omgevingsconfiguratievariabelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values).
@@ -113,7 +113,7 @@ De configuraties maken een lijst van alle configuraties van de component OSGi (e
 Configuraties helpen bij het opsporen van fouten door:
 
 + OSGi-eigenschappen en hun waarden per OSGi-component vermelden
-   + Hierdoor worden GEEN werkelijke waarden weergegeven die via [OSGi-omgevingsconfiguratievariabelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values). Zie [Componenten](#components) hierboven, voor de geïnjecteerde waarden.
+   + Hierdoor worden GEEN werkelijke waarden weergegeven die via [OSGi-omgevingsconfiguratievariabelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values). Zie [Componenten](#components) voor de geïnjecteerde waarden.
 + Onjuist geconfigureerde eigenschappen zoeken en identificeren
 
 ### eiken indexen
@@ -126,7 +126,7 @@ De Indexen van het eiken helpen in het zuiveren door:
 
 ### OSGi Services
 
-De componenten maken een lijst van alle diensten OSGi. Deze functionaliteit is vergelijkbaar met [AEM de lokale QuickStart-services van SDK](http://localhost:4502/system/console/services) om `/system/console/services`.
+De componenten maken een lijst van alle diensten OSGi. Deze functionaliteit is vergelijkbaar met [AEM lokale QuickStart-services (OSGi) van SDK](http://localhost:4502/system/console/services) om `/system/console/services`.
 
 De hulp van OSGi Services in het zuiveren door:
 
@@ -158,7 +158,7 @@ Java Packages wordt gebruikt om problemen op te lossen met bundels die niet word
 
 De servers worden gebruikt om inzicht te verstrekken over hoe AEM een URL aan een servlet of manuscript van Java (HTML, JSP) oplost die uiteindelijk het verzoek behandelt. Deze functionaliteit is hetzelfde als [AEM lokale quickstart-oplossing voor Sling Servlet van SDK](http://localhost:4502/system/console/servletresolver) om `/system/console/servletresolver`.
 
-![Ontwerpconsole - Servlets](./assets/developer-console/servlets.png)
+![Ontwerpconsole - Services](./assets/developer-console/servlets.png)
 
 Servlets helpt bij het bepalen van foutopsporing:
 
@@ -167,7 +167,7 @@ Servlets helpt bij het bepalen van foutopsporing:
 
 ## Zoekopdrachten
 
-Zoekopdrachten helpen u inzicht te verschaffen in wat en hoe zoekopdrachten worden uitgevoerd op AEM. Deze functionaliteit is hetzelfde als  [AEM lokale quickstart-tools van SDK > Query-prestaties ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console.
+Zoekopdrachten helpen u inzicht te verschaffen in wat en hoe zoekopdrachten worden uitgevoerd op AEM. Deze functionaliteit is hetzelfde als  [AEM lokale quickstart-tools van SDK > Query-prestaties](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console.
 
 Zoekopdrachten werken alleen wanneer een specifieke pod is geselecteerd, omdat deze de webconsole van Query Performance van die pod opent, waarbij de ontwikkelaar toegang moet hebben om zich aan te melden bij de AEM.
 

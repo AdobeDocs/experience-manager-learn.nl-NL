@@ -7,8 +7,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -21,9 +22,9 @@ AEM en Target zijn beide krachtige oplossingen met schijnbaar overlappende mogel
 
 In deze zelfstudie behandelen wij drie verschillende scenario&#39;s voor AEM en Doel, die u helpen begrijpen wat het beste voor uw organisatie werkt en hoe de verschillende teams samenwerken.
 
-* Scenario 1 : Personalisatie met AEM Experience Fragments
-* Scenario 2: Personalisatie met behulp van Visual Experience Composer
-* Scenario 3: Aanpassing van de volledige webpaginamogelijkheden
+* Scenario 1: Personalisatie met behulp van AEM ErvEIDFragmenten
+* Scenario 2: Personalisatie die de Composer van de Ervaring gebruikt
+* Scenario 3: Personalisatie van de Volledige Ervaringen van de Web-pagina
 
 ## Personalisatie met AEM Experience Fragments {#personalization-using-aem-experience-fragment}
 
@@ -35,7 +36,7 @@ We hebben nu persoonlijke inhoud in de vorm van voorstellen van AEM in Target. M
 
 **Ervaar fragmenten** Een enorme stap voorwaarts om de creators van de inhoud/ervaring aan de verpersoonlijkingsberoeps te verbinden die bedrijfsresultaten gebruikend Doel drijven.
 
-* AEM auteurs van inhoudeditors gepersonaliseerde inhoud als Fragmenten van de Ervaring en zijn variaties
+* AEM auteurs van inhoudeditors gepersonaliseerde inhoud als Fragmenten van de Ervaring en zijn verschillen
 * AEM exporteert ervaringsfragment HTML naar doel &#x200B;
 * Het doel &#x200B; gebruikt AEM de prijsverhoging van het Fragment van de Ervaring als Aanbiedingen in Activiteiten
 * Doel levert Experience Fragment HTML, AEM levert afbeeldingen waarnaar wordt verwezen
@@ -45,7 +46,7 @@ We hebben nu persoonlijke inhoud in de vorm van voorstellen van AEM in Target. M
 **Om dit scenario uit te voeren, moet u:**
 
 * [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
-* [AEM en Adobe Target met behulp van verouderde Cloud Services](./implementation.md#integrating-aem-target-options)
+* [AEM en Adobe Target met behulp van verouderde Cloud Servicen](./implementation.md#integrating-aem-target-options)
 
 ***Na de implementatie van de bovenstaande integratie, kunt u de [scenario in detail](./personalization-use-case-1.md).***
 

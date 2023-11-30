@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -41,7 +42,7 @@ Android wordt gebruikt voor zelfstudie vanwege de mogelijkheid om een Android-em
 
 ### De mobiele app configureren voor gebruik buiten de landinstelling
 
-Als AEM-publicatie niet wordt uitgevoerd **http://localhost:4503** de host en poort kunnen worden bijgewerkt in de mobiele app [!DNL Settings] om naar de eigenschap AEM Publish host/port te wijzen.
+Als AEM Publiceren niet is ingeschakeld **http://localhost:4503** de host en poort kunnen worden bijgewerkt in de mobiele app [!DNL Settings] om naar de eigenschap AEM Publish host/port te wijzen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28344?quality=12&learn=on)
 
@@ -53,11 +54,11 @@ Als AEM-publicatie niet wordt uitgevoerd **http://localhost:4503** de host en po
    * Als Android Studio voor het eerst wordt gestart, wordt u gevraagd om het programma [!DNL Android SDK] aanwezig zal zijn. Accepteer de standaardinstellingen en voltooi de installatie.
 1. Open Android Studio en selecteer **APK voor profiel of foutopsporing**
 1. Selecteer het APK-bestand (**wknd-mobile.x.x.x.apk**) gedownload in Stap 2 en klik op **OK**
-   * Indien ertoe aangezet aan **Een nieuwe map maken**, of **Bestaande gebruiken**, selecteert u **Bestaande gebruiken**.
-1. Klik bij de eerste start van Android Studio met de rechtermuisknop op de knop **wknd-mobile.x.x.x** in de lijst Projecten en selecteer **Module-instellingen openen**.
-   * Onder **Modules > wknd-mobile.x.x.x > tabblad Afhankelijkheden**, selecteert u **Android API 29-Platform**. Tik op OK om de wijzigingen te sluiten en op te slaan.
+   * Indien ertoe aangezet **Een nieuwe map maken**, of **Bestaande gebruiken**, selecteert u **Bestaande gebruiken**.
+1. Klik met de rechtermuisknop op de knop **wknd-mobile.x.x.x** in de lijst Projecten en selecteer **Module-instellingen openen**.
+   * Onder **Modules > wknd-mobile.x.x.x > tabblad Afhankelijkheden**, selecteert u **Android API 29-platform**. Tik op OK om de wijzigingen te sluiten en op te slaan.
    * Als u dit niet doet, wordt de fout &quot;Selecteer de Android-SDK&quot; weergegeven wanneer u de emulator probeert te starten.
-1. Open de **AVD Manager** door **Gereedschappen > AVD Manager** of tikken op de **AVD Manager** in de bovenste balk.
+1. Open de **AVD Manager** door **Gereedschappen > AVD Manager** of tikken op de knop **AVD Manager** in de bovenste balk.
 1. In de **AVD Manager** venster, klikt u op **+ Virtueel apparaat maken...** als u nog geen apparaat hebt geregistreerd.
    1. Selecteer in het linkergedeelte de optie **Telefoon** categorie.
    1. Selecteer een **Pixel 2**.
@@ -66,13 +67,13 @@ Als AEM-publicatie niet wordt uitgevoerd **http://localhost:4503** de host en po
       * Wanneer u AVD Manager voor de eerste keer start, wordt u gevraagd de versioned API te downloaden. Klik op de koppeling Downloaden naast de release Q en voltooi het downloaden en installeren.
    1. Klik op de knop **Volgende** knop.
    1. Klik op de knop **Voltooien** knop.
-1. Sluit de **AVD Manager** venster.
-1. Selecteer in de bovenste menubalk **wknd-mobile.x.x.x** van de **Configuraties uitvoeren/bewerken** vervolgkeuzelijst.
+1. Sluit het dialoogvenster **AVD Manager** venster.
+1. Selecteer in de bovenste menubalk **wknd-mobile.x.x.x** van de **Configuraties uitvoeren/bewerken** vallen.
 1. Tik op de knop **Uitvoeren** naast de geselecteerde **Configuratie uitvoeren/bewerken**
 1. Selecteer in het pop-upmenu de nieuwe **[!DNL Pixel 2 API 29]** virtueel apparaat en tikken **OK**
 1. Als de [!DNL WKND Mobile] de toepassing laadt, zoekt en tikt niet onmiddellijk op de **[!DNL WKND]** uit het Android-beginscherm in de emulator.
    * Als de emulator wordt gestart maar het scherm van de emulator zwart blijft, tikt u op de **macht** in het gereedschapsvenster van de emulator naast het emulatorvenster.
-   * Als u in het virtuele apparaat wilt schuiven, klikt u en houdt u de muisknop ingedrukt en sleept u.
+   * Klik en sleep om binnen het virtuele apparaat te schuiven.
    * Als u de inhoud van AEM wilt vernieuwen, trekt u van boven naar beneden totdat het pictogram Vernieuwen wordt weergegeven en geeft u de inhoud vrij.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28341?quality=12&learn=on)
@@ -87,8 +88,8 @@ Omdat de bewerkbare sjabloon van de API voor gebeurtenissen (`/content/wknd-mobi
 
 ### Codestroom op hoog niveau
 
-1. Het openen van de [!DNL WKND Mobile] App roept een `HTTP GET` verzoek aan de AEM-publicatie op `/content/wknd-mobile/en/api/events.model.json` om de inhoud te verzamelen om de gebruikersinterface van de mobiele app te vullen.
-2. Wanneer u de inhoud van AEM ontvangt, wordt met elk van de drie weergaveelementen van de Mobile-app het **logo, labellijn en gebeurtenissenlijst**, worden geïnitialiseerd met de inhoud van AEM.
+1. Het openen van de [!DNL WKND Mobile] App roept een `HTTP GET` verzoek aan de AEM op `/content/wknd-mobile/en/api/events.model.json` om de inhoud te verzamelen om de gebruikersinterface van de mobiele app te vullen.
+2. Wanneer u de inhoud van AEM ontvangt, wordt met elk van de drie weergaveelementen van de Mobile-app het **logo, labellijn en gebeurtenislijst**, worden geïnitialiseerd met de inhoud van AEM.
    * Om aan de AEM inhoud aan het de meningselement van de Mobiele App te binden, wordt JSON die elke AEM component vertegenwoordigt, voorwerp in kaart gebracht aan een POJO van Java, die beurtelings aan het element van de Mening van Android verbindend is.
       * Afbeeldingscomponent JSON → Logo POJO → Logo ImageView
       * Tekstcomponent JSON → TagLine POJO → Text ImageView
@@ -130,7 +131,7 @@ private void initApp(final List<ViewBinder> viewBinders) {
 
 `onCreate(..)` is de initialisatiehaak voor Mobiele App, en registreert 3 douane `ViewBinders` verantwoordelijk voor het parseren van de JSON en het binden van de waarden aan de `View` elementen.
 
-`initApp(...)` wordt dan geroepen die het HTTP- GET verzoek aan het eindpunt van de Diensten van de Inhoud van de AEM op AEM publiceert om de inhoud te verzamelen. Bij ontvangst van een geldige JSON-respons wordt de JSON-respons doorgegeven aan elke patiënt `ViewBinder` die verantwoordelijk is voor het parseren van de JSON en het binden ervan aan de mobiele telefoon `View` elementen.
+`initApp(...)` wordt dan geroepen die het HTTP- GET verzoek aan het eindpunt van de Diensten van de Inhoud van de AEM bij AEM Publish doet om de inhoud te verzamelen. Bij ontvangst van een geldige JSON-respons wordt de JSON-respons doorgegeven aan elke patiënt `ViewBinder` die verantwoordelijk is voor het parseren van de JSON en het binden ervan aan de mobiele telefoon `View` elementen.
 
 #### De JSON-respons parseren
 
@@ -158,11 +159,11 @@ De eerste regel van `bind(...)` navigeert onderaan de Reactie van JSON via de sl
 
 Hier wordt gecontroleerd op een sleutel met de naam **image**, die staat voor de component Image (het is ook hier belangrijk dat deze knooppuntnaam → JSON-sleutel stabiel is). Als dit object bestaat, wordt het gelezen en toegewezen aan de [aangepaste afbeeldingspOJO](#image-pojo) via Jackson `ObjectMapper` bibliotheek. De POJO van de afbeelding wordt hieronder besproken.
 
-Tot slot de `src` wordt in de Android ImageView geladen met de [!DNL Glide] helperbibliotheek.
+Tot slot de `src` wordt met de klasse [!DNL Glide] helperbibliotheek.
 
-Bericht dat wij het AEM schema, de gastheer en de haven (via `aemHost`) naar de AEM-publicatie-instantie omdat AEM Content Services alleen het JCR-pad (dat wil zeggen: `/content/dam/wknd-mobile/images/wknd-logo.png`) aan de inhoud waarnaar wordt verwezen.
+Bericht dat wij het AEM schema, de gastheer en de haven (via `aemHost`) naar de AEM Publish-instantie omdat AEM Content Services alleen het JCR-pad (dat wil zeggen: `/content/dam/wknd-mobile/images/wknd-logo.png`) aan de inhoud waarnaar wordt verwezen.
 
-#### De POJO van de afbeelding{#image-pojo}
+#### De afbeeldingspo{#image-pojo}
 
 Het gebruik van de [Jackson ObjectMapper](https://fasterxml.github.io/jackson-databind/javadoc/2.9/com/fasterxml/jackson/databind/ObjectMapper.html) of vergelijkbare mogelijkheden die andere bibliotheken zoals Gson bieden, helpen complexe JSON-structuren toe te wijzen aan Java POJO&#39;s zonder dat ze rechtstreeks met de native JSON-objecten zelf moeten werken. In dit eenvoudige geval geven we de `src` van de `image` JSON-object, naar de `src` rechtstreeks via het `@JSONProperty` aantekening.
 
@@ -187,7 +188,7 @@ De POJO van de Gebeurtenis, die het selecteren van vele meer gegevenspunten van 
 
 Nu u weet hoe AEM Content Services native mobiele ervaring kan aansturen, kunt u gebruiken wat u hebt geleerd om de volgende stappen uit te voeren en uw wijzigingen te bekijken in de mobiele app.
 
-Na elke stap vernieuwt u de mobiele app en controleert u de update van de mobiele ervaring.
+Na elke stap vernieuwt u de Mobile-app en controleert u de update van de mobiele ervaring.
 
 1. Maken en publiceren **new [!DNL Event] Inhoudsfragment**
 1. Publiceren van een **bestaand [!DNL Event] Inhoudsfragment**
@@ -197,7 +198,7 @@ Na elke stap vernieuwt u de mobiele app en controleert u de update van de mobiel
 
 **U hebt de AEM zelfstudie zonder koppen voltooid!**
 
-Voor meer informatie over Content Services en AEM als Headless CMS raadpleegt u de documentatie AEM Adobe en activering:
+Voor meer informatie over AEM Content Services en AEM als een Headless CMS raadpleegt u de andere documentatie en materialen voor activering van de Adobe:
 
 * [Inhoudsfragmenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 * [Gebruikershandleiding voor WCM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

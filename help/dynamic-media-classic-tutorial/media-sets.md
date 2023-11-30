@@ -5,8 +5,9 @@ feature: Dynamic Media Classic, Image Sets, Mixed Media Sets, Spin Sets
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 45c86ff2-d991-46a7-a8d1-25c9fec142d9
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 0%
@@ -32,7 +33,7 @@ Wanneer u een set maakt, wordt die set beheerd als een afzonderlijk element dat 
 
 ### Typen sets
 
-Meer informatie over de vier typen sets die u kunt maken in Dynamic Media Classic: Afbeeldings-, staal-, centrifuge- en gemengde-mediasets.
+Meer informatie over de vier typen sets die u kunt maken in Dynamic Media Classic: Afbeelding, Staal, Draaien en Gemengde Mediasets.
 
 ## Afbeeldingsset
 
@@ -76,7 +77,7 @@ Draaiingsets kunnen in één richting draaien langs één as of, indien ze afwis
 
 ![afbeelding](assets/media-sets/image-set-3.png)
 
-_Voorbeeld van een centrifugeerset_
+_Voorbeeld van een centrifuge_
 
 De URL voor de bovenstaande centrifugeset kan er als volgt uitzien:
 
@@ -109,7 +110,7 @@ Meer informatie over [Viewers voor AEM Assets en Dynamic Media Classic](https://
 
 Tot nu toe hebben wij besproken hoe te om reeksen manueel te bouwen gebruikend de functie van de Bouwstijl van Dynamic Media Classic. Het is echter mogelijk om het maken van afbeeldingssets en centrifuges te automatiseren met behulp van een voorinstelling voor batchset, zolang u een standaardnaamgevingsconventie hebt.
 
-Elke voorinstelling is een unieke, op zichzelf staande verzameling instructies die definiëren hoe de set moet worden samengesteld met afbeeldingen die overeenkomen met de gedefinieerde naamgevingsconventies. In de voorinstelling definieert u eerst naamgevingsconventies voor de elementen die u in een set wilt groeperen. Vervolgens kunt u een voorinstelling Batch maken die naar deze afbeeldingen verwijst.
+Elke voorinstelling is een unieke, op zichzelf staande verzameling instructies die definiëren hoe de set moet worden samengesteld met afbeeldingen die overeenkomen met de gedefinieerde naamgevingsconventies. In de voorinstelling definieert u eerst naamgevingsconventies voor de elementen die u in een set wilt groeperen. Vervolgens kunt u een voorinstelling voor een batch-set maken die naar deze afbeeldingen verwijst.
 
 U kunt de voorinstelling zelf maken (deze vindt u onder **Setup > Application Setup > Batch Set Presets** ), als beste praktijken u uw het Consulting team of Technische Steun zou moeten hebben het voor u oprichten. Dit is de reden waarom:
 

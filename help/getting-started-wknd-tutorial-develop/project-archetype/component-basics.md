@@ -1,18 +1,18 @@
 ---
 title: Aan de slag met AEM Sites - Basisprincipes van componenten
-description: Begrijp de onderliggende technologie van een Component van de Plaatsen van Adobe Experience Manager (AEM) door een eenvoudig "HelloWorld"voorbeeld. De onderwerpen van HTML, Verzamelmodellen, cliënt-zijbibliotheken en auteursdialogen worden onderzocht.
+description: Begrijp de onderliggende technologie van een Component van de Plaatsen van Adobe Experience Manager (AEM) door een eenvoudig "HelloWorld"voorbeeld. De onderwerpen van HTML, het Verdelen Modellen, cliënt-zijbibliotheken en auteursdialogen worden onderzocht.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Developer Tools
 topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 4081
+jira: KT-4081
 thumbnail: 30177.jpg
+doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 0%
@@ -41,7 +41,7 @@ In dit hoofdstuk voert u verschillende wijzigingen in een eenvoudig `HelloWorld`
 
 ## Hoofdstukstartproject {#starter-project}
 
-Dit hoofdstuk bouwt op een generisch project voort dat door wordt geproduceerd [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype). Bekijk de onderstaande video en bekijk de [voorwaarden](#prerequisites) om aan de slag te gaan!
+Dit hoofdstuk bouwt op een generisch project voort dat door wordt geproduceerd [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype). Bekijk de onderstaande video en bekijk de [voorwaarden](#prerequisites) om te beginnen!
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
    >
    > U kunt desgewenst het in het vorige hoofdstuk gegenereerde project blijven gebruiken. [Projectinstelling](./project-setup.md).
 
-1. Navigeer in de  `aem-guides-wknd` map.
+1. Ga in  `aem-guides-wknd` map.
 
    ```shell
    $ cd aem-guides-wknd
@@ -99,7 +99,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 ## HTL (Sjabloontaal HTML) en dialoogvensters {#htl-dialogs}
 
-HTML Sjabloontaal of **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** is een lichtgewicht, server-side sjabloontaal die door AEM componenten wordt gebruikt om inhoud te renderen.
+HTML Template Language of **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** is een lichtgewicht, server-side sjabloontaal die door AEM componenten wordt gebruikt om inhoud te renderen.
 
 **Dialoogvensters** definieert de beschikbare configuraties die voor een component kunnen worden gemaakt.
 
@@ -109,7 +109,7 @@ Laten we nu de `HelloWorld` HTML- manuscript om een extra groet vóór het tekst
 
 Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
-1. Schakelaar aan winde en open het project aan `ui.apps` module.
+1. Schakelaar aan winde en open het project aan `ui.apps` -module.
 1. Open de `helloworld.html` en werk de HTML Markup bij.
 1. Gebruik de hulpmiddelen van winde zoals [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) om de bestandswijziging te synchroniseren met de lokale AEM.
 1. Ga terug naar de browser en bekijk hoe de component is gerenderd.
@@ -119,7 +119,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
    <code>/aem-guides-wknd/ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/.content.xml
    ```
 
-1. Het dialoogvenster bijwerken om een extra tekstveld met de naam **Titel** met de naam `./title`:
+1. Het dialoogvenster bijwerken om een extra tekstveld met de naam **Titel** met een naam van `./title`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -255,7 +255,7 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
    >
    > Voor AEM 6.4/6.5 `mvn clean install -PautoInstallBundle -Pclassic`
 
-1. Het bestand bijwerken `helloworld.html` om `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` om de nieuw gecreëerde methodes van te gebruiken `HelloWorld` model.
+1. Het bestand bijwerken `helloworld.html` om `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` om de nieuw gecreëerde methodes van `HelloWorld` model.
 
    De `HelloWorld` model wordt voor deze componentinstantie geïnstantieerd via de HTL-instructie: `data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel"`, de instantie opslaan in de variabele `model`.
 
@@ -282,9 +282,9 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
 
 ## Client-Side bibliotheken {#client-side-libraries}
 
-Client-Side bibliotheken, `clientlibs` Kortom, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
+Client-Side Libraries, `clientlibs` Kortom, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
 
-De [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module is een ontkoppelde [webpack](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. Hierdoor kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` wordt meer in detail besproken in de [Hoofdstuk Client-Side Bibliotheken](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+De [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module is een ontkoppelde [webpack](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` wordt meer in detail besproken in de [Hoofdstuk Client-Side Bibliotheken](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Werk vervolgens de CSS-stijlen bij voor de `HelloWorld` component.
 
@@ -302,7 +302,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
    $ npm run watch
    ```
 
-1. Schakelaar aan winde en open het project aan `ui.frontend` module.
+1. Schakelaar aan winde en open het project aan `ui.frontend` -module.
 1. Het bestand openen `ui.frontend/src/main/webpack/components/_helloworld.scss`.
 1. Werk het bestand bij om een rode titel weer te geven:
 

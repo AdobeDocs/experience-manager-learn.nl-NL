@@ -6,10 +6,10 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10831
+jira: KT-10831
 thumbnail: KT-10831.jpg
 exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
-source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Om plaatsingstype permutaties te behandelen, wordt elke app plaatsing gebouwd ge
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
 | Configuratie AEM hosts | ✔ | ✔ | ✔ | ✔ |
 
-Hieronder volgen voorbeelden van mogelijke benaderingen voor het samenstellen van URL&#39;s voor [GraphQL API AEM](#aem-graphql-api-requests) en [afbeeldingsverzoeken](#aem-image-requests), voor verschillende populaire headless frameworks en platforms.
+Hieronder volgen voorbeelden van mogelijke benaderingen voor het samenstellen van URL&#39;s voor [GRAPHQL API AEM](#aem-graphql-api-requests) en [afbeeldingsverzoeken](#aem-image-requests), voor verschillende populaire headless frameworks en platforms.
 
 ## GraphQL API-aanvragen AEM
 
@@ -57,9 +57,9 @@ In dit voorbeeld wordt losjes gebaseerd op de [AEM toepassing zonder hoofd Reage
 
 Reactie-apps moeten de [AEM headless-client voor JavaScript](../../how-to/aem-headless-sdk.md) om te communiceren met AEM GraphQL API&#39;s. De AEM Headless-client, die wordt geleverd door de AEM Headless-client voor JavaScript, moet worden geïnitialiseerd met de AEM Service-host waarmee deze verbinding maakt.
 
-#### Omgevingsbestand reageren
+#### Omgevingsbestand Reageren
 
-Reageergebruik [aangepaste omgevingsbestanden](https://create-react-app.dev/docs/adding-custom-environment-variables/), of `.env` bestanden, opgeslagen in de hoofdmap van het project om ontwikkelspecifieke waarden te definiëren. De `.env.development` het bestand bevat waarden die worden gebruikt tijdens de ontwikkeling, terwijl `.env.production` bevat waarden die worden gebruikt voor productiebuilds.
+Reageergebruik [aangepaste omgevingsbestanden](https://create-react-app.dev/docs/adding-custom-environment-variables/), of `.env` bestanden, opgeslagen in de hoofdmap van het project om ontwikkelspecifieke waarden te definiëren. Bijvoorbeeld de `.env.development` het bestand bevat waarden die worden gebruikt tijdens de ontwikkeling, terwijl `.env.production` bevat waarden die worden gebruikt voor productiebuilds.
 
 + `.env.development`
 
@@ -71,7 +71,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 
 `.env` bestanden voor ander gebruik [kan worden opgegeven](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) bij postfixatie `.env` en een semantische descriptor, zoals `.env.stage` of `.env.production`. Verschil `.env` bestanden kunnen worden gebruikt bij het uitvoeren of samenstellen van de React-app door de instelling van de `REACT_APP_ENV` voordat u een `npm` gebruiken.
 
-Bijvoorbeeld, React app `package.json` kan het volgende bevatten `scripts` config:
+Bijvoorbeeld, React app `package.json` kan het volgende bevatten: `scripts` config:
 
 + `package.json`
 
@@ -144,7 +144,7 @@ const executePersistedQuery = async function(persistedQueryPath, queryVariables)
 }
 ```
 
-#### Reageren, component
+#### Reageercomponent
 
 De aangepaste useEffect-haak, `useAdventureByPath` wordt geïmporteerd en gebruikt om de gegevens op te halen met de AEM Headless-client en de inhoud uiteindelijk weer te geven aan de eindgebruiker.
 
@@ -165,11 +165,11 @@ let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures
 
 Dit voorbeeld, gebaseerd op [Voorbeeld AEM iOS™-app zonder headless](../../example-apps/ios-swiftui-app.md), illustreert hoe AEM GraphQL API-aanvragen kunnen worden geconfigureerd om verbinding te maken met verschillende AEM hosts op basis van [bouwstijlspecifieke configuratievariabelen](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
 
-iOS™-toepassingen vereisen een aangepaste AEM Headless-client voor interactie met AEM GraphQL API&#39;s. De cliënt van de AEM Zwaartepunt moet worden geschreven zodat de AEM de dienstgastheer configureerbaar is.
+iOS™-toepassingen vereisen een aangepaste AEM Headless-client voor interactie met AEM GraphQL API&#39;s. De cliënt van de Zwaartepunt van de AEM moet worden geschreven zodat de AEM de dienstgastheer configureerbaar is.
 
 #### Configuratie samenstellen
 
-Het XCode-configuratiebestand bevat de standaardconfiguratiedetails.
+Het XCode-configuratiebestand bevat de standaardconfiguratiegegevens.
 
 + `Config.xcconfig`
 
@@ -194,7 +194,7 @@ let aemHost: String = try Configuration.value(for: "AEM_HOST")      // publish-p
 let aemHeadlessClient = Aem(scheme: aemScheme, host: aemHost);
 ```
 
-De aangepaste AEM headless-client (`api/Aem.swift`) bevat een methode `makeRequest(..)` dat AEM GraphQL APIs verzoeken met de gevormde AEM prefixen `scheme` en `host`.
+De aangepaste AEM headless-client (`api/Aem.swift`) bevat een methode `makeRequest(..)` die AEM GraphQL APIs verzoeken met de gevormde AEM prefixen `scheme` en `host`.
 
 + `api/Aem.swift`
 
@@ -224,7 +224,7 @@ private func makeRequest(persistedQueryName: String, params: [String: String] = 
 
 Dit voorbeeld, gebaseerd op [voorbeeld AEM Android™-app zonder headless](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app), illustreert hoe AEM GraphQL API-aanvragen kunnen worden geconfigureerd om verbinding te maken met verschillende AEM Services op basis van ontwikkelings-specifieke (of flavors)configuratievariabelen.
 
-Android™-apps (indien geschreven in Java™) moeten de [AEM headless Client voor Java™](https://github.com/adobe/aem-headless-client-java) om te communiceren met AEM GraphQL API&#39;s. De AEM Headless-client, die wordt geleverd door de AEM Headless Client voor Java™, moet worden geïnitialiseerd met de AEM Service-host waarmee deze verbinding maakt.
+Android™-apps (indien geschreven in Java™) moeten de [AEM headless-client voor Java™](https://github.com/adobe/aem-headless-client-java) om te communiceren met AEM GraphQL API&#39;s. De AEM Headless-client, die wordt geleverd door de AEM Headless Client voor Java™, moet worden geïnitialiseerd met de AEM Service-host waarmee deze verbinding maakt.
 
 #### Configuratiebestand samenstellen
 
@@ -289,7 +289,7 @@ Geef bij het maken van de Android™-app voor verschillende toepassingen de `env
 
 De afbeeldingsaanvragen van de headless-app voor AEM moeten zo zijn geconfigureerd dat ze communiceren met de juiste AEM, zoals wordt beschreven in het dialoogvenster [boven tabel](#managing-aem-hosts).
 
-Adobe raadt u aan [geoptimaliseerde afbeeldingen](../../how-to/images.md) via `_dynamicUrl` in AEM GraphQL API&#39;s. De `_dynamicUrl` Het veld retourneert een URL zonder host die kan worden voorafgegaan door de AEM-servicehost die wordt gebruikt voor het zoeken AEM GraphQL API&#39;s. Voor de `_dynamicUrl` Het veld in het GraphQL-antwoord ziet er als volgt uit:
+Adobe raadt u aan [geoptimaliseerde afbeeldingen](../../how-to/images.md) beschikbaar gesteld via `_dynamicUrl` in AEM GraphQL API&#39;s. De `_dynamicUrl` Het veld retourneert een URL zonder host die kan worden voorafgegaan door de AEM-servicehost die wordt gebruikt voor het opvragen AEM GraphQL API&#39;s. Voor de `_dynamicUrl` Het veld in het GraphQL-antwoord ziet er als volgt uit:
 
 ```json
 {
@@ -301,7 +301,7 @@ Adobe raadt u aan [geoptimaliseerde afbeeldingen](../../how-to/images.md) via `_
 
 ### Voorbeelden
 
-Hieronder ziet u voorbeelden van hoe afbeeldings-URL&#39;s de waarde van de AEM host kunnen voorvoegsel die voor verschillende raamwerken zonder kop kan worden geconfigureerd. In de voorbeelden wordt ervan uitgegaan dat GraphQL-query&#39;s worden gebruikt die afbeeldingsreferenties retourneren met behulp van de `_dynamicUrl` veld.
+Hieronder ziet u voorbeelden van hoe afbeeldings-URL&#39;s de waarde van de AEM host kunnen voorvoegsel die voor verschillende raamwerken zonder kop kan worden geconfigureerd. In de voorbeelden wordt ervan uitgegaan dat GraphQL-query&#39;s worden gebruikt die afbeeldingsreferenties retourneren met de `_dynamicUrl` veld.
 
 Bijvoorbeeld:
 
@@ -348,9 +348,9 @@ Dit voorbeeld, gebaseerd op [Voorbeeld AEM de toepassing Headless React](../../e
 
 In dit voorbeeld wordt getoond hoe voorvoegsel de afbeeldingsverwijzing `_dynamicUrl` veld, met een configureerbaar `REACT_APP_AEM_HOST` Reageer omgevingsvariabele.
 
-#### Omgevingsbestand reageren
+#### Omgevingsbestand Reageren
 
-Reageergebruik [aangepaste omgevingsbestanden](https://create-react-app.dev/docs/adding-custom-environment-variables/), of `.env` bestanden, opgeslagen in de hoofdmap van het project om ontwikkelspecifieke waarden te definiëren. De `.env.development` het bestand bevat waarden die worden gebruikt tijdens de ontwikkeling, terwijl `.env.production` bevat waarden die worden gebruikt voor productiebuilds.
+Reageergebruik [aangepaste omgevingsbestanden](https://create-react-app.dev/docs/adding-custom-environment-variables/), of `.env` bestanden, opgeslagen in de hoofdmap van het project om ontwikkelspecifieke waarden te definiëren. Bijvoorbeeld de `.env.development` het bestand bevat waarden die worden gebruikt tijdens de ontwikkeling, terwijl `.env.production` bevat waarden die worden gebruikt voor productiebuilds.
 
 + `.env.development`
 
@@ -362,7 +362,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 
 `.env` bestanden voor ander gebruik [kan worden opgegeven](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) bij postfixatie `.env` en een semantische descriptor, zoals `.env.stage` of `.env.production`. Verschil `.env` kan worden gebruikt bij het uitvoeren of samenstellen van de React-app door het instellen van de `REACT_APP_ENV` voordat u een `npm` gebruiken.
 
-Bijvoorbeeld, React app `package.json` kan het volgende bevatten `scripts` config:
+Bijvoorbeeld, React app `package.json` kan het volgende bevatten: `scripts` config:
 
 + `package.json`
 
@@ -376,7 +376,7 @@ Bijvoorbeeld, React app `package.json` kan het volgende bevatten `scripts` confi
 ...
 ```
 
-#### Reageren, component
+#### Reageercomponent
 
 De component React importeert de `REACT_APP_AEM_HOST` omgevingsvariabele en voorvoegsel van de afbeelding `_dynamicUrl` waarde, om een volledig oplosbare afbeeldings-URL op te geven.
 
@@ -406,7 +406,7 @@ Dit voorbeeld, gebaseerd op [Voorbeeld AEM iOS™-app zonder headless](../../exa
 
 #### Configuratie samenstellen
 
-Het XCode-configuratiebestand bevat de standaardconfiguratiedetails.
+Het XCode-configuratiebestand bevat de standaardconfiguratiegegevens.
 
 + `Config.xcconfig`
 

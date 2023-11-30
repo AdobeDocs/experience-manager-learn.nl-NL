@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 [Inhoudsopgave](./overview.md)
 
-[&lt;- Vorige: Basisbestandsindeling](./basic-file-layout.md)
+[&lt;- Vorige: basisbestandsindeling](./basic-file-layout.md)
 
 In dit document worden de configuratiebestanden die zijn geïmplementeerd in een standaard geïntegreerde Dispatcher-server die is ingericht in Adobe Managed Services, uitgesplitst en uitgelegd. Het gebruik ervan, de naamgevingsconventie, enz.
 
@@ -41,7 +42,7 @@ De Server van het Web van Apache geeft eigenlijk niet wat de dossieruitbreiding 
 | Bestand | Bestandsbestemming | Beschrijving |
 | --- | --- | --- |
 | FILENAME`.any` | `/etc/httpd/conf.dispatcher.d/` | De Apache Module van de AEM Dispatcher produceert het montages van `*.any` bestanden. Het standaard bovenliggende include-bestand is `conf.dispatcher.d/dispatcher.any` |
-| FILENAME`_farm.any` | Staand: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Actief: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b> deze landbouwbedrijfdossiers moeten niet in worden gekopieerd `enabled_farms` map maar gebruik `symlinks` naar een relatief pad naar `available_farms/*_farm.any` file </div> <br/>`*_farm.any` bestanden worden opgenomen in de `conf.dispatcher.d/dispatcher.any` bestand. Deze ouderlandbouwbedrijfdossiers bestaan om modulegedrag voor elk te controleren teruggeeft of websitetype. Bestanden worden gemaakt in het dialoogvenster `available_farms` en ingeschakeld met een `symlink` in de `enabled_farms` directory.  <br/>Deze worden automatisch op naam opgenomen vanuit het menu `dispatcher.any` bestand.<br/><b>Basislijn</b> de landbouwbedrijfdossiers beginnen met `000_` om ervoor te zorgen dat ze eerst worden geladen.<br><b>Aangepast</b> de landbouwbedrijfdossiers zouden na moeten worden geladen door hun aantalregeling te beginnen bij `100_` om ervoor te zorgen dat het gedrag van include correct is. |
+| FILENAME`_farm.any` | Staand: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Actief: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b> deze landbouwbedrijfdossiers moeten niet in worden gekopieerd `enabled_farms` map, maar gebruik `symlinks` naar een relatief pad naar `available_farms/*_farm.any` file </div> <br/>`*_farm.any` bestanden worden opgenomen in de `conf.dispatcher.d/dispatcher.any` bestand. Deze ouderlandbouwbedrijfdossiers bestaan om modulegedrag voor elk terug te geven of websitetype te controleren. Bestanden worden gemaakt in het dialoogvenster `available_farms` en ingeschakeld met een `symlink` in de `enabled_farms` directory.  <br/>Deze worden automatisch op naam opgenomen vanuit het menu `dispatcher.any` bestand.<br/><b>Basislijn</b> de landbouwbedrijfdossiers beginnen met `000_` om ervoor te zorgen dat ze eerst worden geladen.<br><b>Aangepast</b> de landbouwbedrijfdossiers zouden na moeten worden geladen door hun aantalregeling te beginnen bij `100_` om ervoor te zorgen dat het gedrag van include correct is. |
 | FILENAME`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any` bestanden worden opgenomen vanuit de `conf.dispatcher.d/enabled_farms/*_farm.any` bestanden. Elk landbouwbedrijf heeft een reeks regels die veranderen welk verkeer uit zou moeten worden gefiltreerd en niet het aan renderers maken. |
 | FILENAME`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any` bestanden worden opgenomen vanuit de `conf.dispatcher.d/enabled_farms/*_farm.any` bestanden. Deze bestanden zijn een lijst met hostnamen of uri-paden die door blob-overeenkomsten moeten worden aangepast om te bepalen welke renderer moet worden gebruikt om die aanvraag te bedienen |
 | FILENAME`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any` bestanden worden opgenomen vanuit de `conf.dispatcher.d/enabled_farms/*_farm.any` bestanden. Deze bestanden geven aan welke items in cache worden geplaatst en welke niet |
@@ -93,7 +94,7 @@ De bestandsextensies zijn gelijk en gebruiken de automatisch opgenomen extensie 
 
 <b>Hoe dit typisch een kwestie wordt</b>
 
-Als het vhost-bestand met de extensie `.conf` wordt in de `/etc/httpd/conf.d/` map wordt geprobeerd deze te laden in het geheugen van Apache. Dit is normaal gesproken OK, maar als het bestand met herschrijfregels wordt bijgewerkt met de extensie `.conf` wordt geplaatst in `/etc/httpd/conf.d/` automatisch worden opgenomen en worden globaal toegepast, wat leidt tot verwarring en ongewenste resultaten.
+Als het vhost-bestand met de extensie `.conf` wordt in de `/etc/httpd/conf.d/` map wordt geprobeerd deze te laden in het geheugen van Apache. Dit is doorgaans OK, maar als het bestand met herschrijfregels wordt bijgewerkt tot `.conf` wordt geplaatst in `/etc/httpd/conf.d/` automatisch worden opgenomen en worden globaal toegepast, wat leidt tot verwarring en ongewenste resultaten.
 
 ## Resolutie
 
@@ -131,9 +132,9 @@ IncludeOptional conf.d/*.conf
 Toen wij onze norm toepasten, voegden wij enkele extra dossiertypes en van onze toe.
 
 Hier zijn de basislijnmappen van AMS en de bovenste include-bestanden op het niveau
-![AMS Baseline omvat begin met een dispatcher_vhost.conf die om het even welk dossier met *.vhost van de folder /etc/httpd/conf.d/enabled_vhosts/ zal omvatten.  Items in de map /etc/httpd/conf.d/enabled_vhosts/ zijn symbolische koppelingen naar het feitelijke configuratiebestand dat zich in /etc/httpd/conf.d/available_vhosts/ bevindt](assets/explanation-config-files/Apache-Webserver-AMS-Baseline-Includes.png "Apache-Webserver-AMS-Baseline-Includes")
+![AMS Baseline omvat begin met een dispatcher_vhost.conf die om het even welk dossier met *.vhost van de folder /etc/httpd/conf.d/enabled_vhosts/ zal omvatten.  Items in de map /etc/httpd/conf.d/enabled_vhosts/ zijn symbolische koppelingen naar het feitelijke configuratiebestand dat in /etc/httpd/conf.d/available_vhosts/](assets/explanation-config-files/Apache-Webserver-AMS-Baseline-Includes.png "Apache-Webserver-AMS-Baseline-Includes")
 
-Bij het samenstellen van de basislijn van Apache laten we zien hoe AMS aanvullende mappen en include-bestanden op hoofdniveau heeft gemaakt voor `conf.d` mappen en modulespecifieke mappen die onder `/etc/httpd/conf.dispatcher.d/`
+Bij het samenstellen van de basislijn van Apache laten we zien hoe AMS aanvullende mappen en include-bestanden op hoofdniveau heeft gemaakt voor `conf.d` mappen en modulespecifieke mappen die zijn genest onder `/etc/httpd/conf.dispatcher.d/`
 
 Wanneer Apache wordt geladen, wordt deze `/etc/httpd/conf.modules.d/02-dispatcher.conf` en dat bestand bevat het binaire bestand `/etc/httpd/modules/mod_dispatcher.so` in staat van rennen.
 
@@ -189,9 +190,9 @@ Nadat het hoogste niveau omvat oplossen hebben zij andere sub omvat die het verm
 
 ### Inclusief virtuele AMS-host
 
-![In deze afbeelding ziet u hoe een .vhost-bestand bestanden bevat van variabelen, whitelists en mappen opnieuw schrijven](assets/explanation-config-files/Apache-Webserver-AMS-Vhost-Includes.png "Apache-Webserver-AMS-Vhost-Includes")
+![In deze afbeelding ziet u hoe één .vhost-bestand bestanden bevat van variabelen, whitelists en mappen opnieuw schrijven](assets/explanation-config-files/Apache-Webserver-AMS-Vhost-Includes.png "Apache-Webserver-AMS-Vhost-Includes")
 
-Indien `.vhost` bestanden van `/etc/httpd/conf.d/availabled_vhosts/` directory wordt gesymkoppeld in de `/etc/httpd/conf.d/enabled_vhosts/` directory zij zullen in de lopende configuratie worden gebruikt.
+Als er `.vhost` bestanden van `/etc/httpd/conf.d/availabled_vhosts/` directory wordt gesymkoppeld in de `/etc/httpd/conf.d/enabled_vhosts/` directory zij zullen in de lopende configuratie worden gebruikt.
 
 De `.vhost` bestanden hebben subinclude-bestanden op basis van gemeenschappelijke gegevens die we hebben gevonden.  Dingen als variabelen, whitelisten en herschrijven van regels.
 
@@ -234,7 +235,7 @@ U kunt ook een regel zien die een lijst bevat met `_whitelist.rules` bestanden d
 </RequireAny>
 ```
 
-U kunt ook een regel zien die een set herschrijfregels bevat.  Laten we eens kijken naar de inhoud van de `weretail_rewrite.rules` bestand:
+U kunt ook een regel zien die een set herschrijfregels bevat.  Laten we de inhoud van de `weretail_rewrite.rules` bestand:
 
 ```
 RewriteRule ^/robots.txt$ /content/dam/weretail/robots.txt [NC,PT] 

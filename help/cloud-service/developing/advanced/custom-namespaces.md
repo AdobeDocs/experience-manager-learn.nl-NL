@@ -6,11 +6,11 @@ topic: Development, Content Management
 feature: Metadata
 role: Developer
 level: Intermediate
-kt: 11618
+jira: KT-11618
 thumbnail: 3412319.jpg
 last-substantial-update: 2022-12-14T00:00:00Z
 exl-id: e86ddc9d-ce44-407a-a20c-fb3297bb0eb2
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Aangepaste naamruimten
 
-Leer hoe u aangepaste toepassingen definieert en implementeert [naamruimten](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) AEM as a Cloud Service.
+Leer hoe u aangepaste toepassingen definieert en implementeert [naamruimten](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) naar AEM as a Cloud Service.
 
 Aangepaste naamruimten zijn het optionele deel van een JCR-eigenschap dat voorafgaat aan een `:`. AEM gebruikt verschillende naamruimten, zoals:
 
@@ -38,7 +38,7 @@ Aangepaste naamruimten worden beheerd in [Initialisatie van opslagplaats verkope
 
 ## Bronnen
 
-+ [Initialisatiedocumentatie (repoint-it) voor Sling Repository](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
++ [Initialisatiedocumentatie (repoint-it) voor opslagplaats](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
 ## Code
 
@@ -57,4 +57,4 @@ De volgende code wordt gebruikt om een `wknd` naamruimte.
 }
 ```
 
-Hierdoor kunnen aangepaste eigenschappen `wknd` naamruimte, zoals wordt aangegeven als de eerste parameter na de `register namespace` instructie, te gebruiken in AEM. Voor geavanceerdere scriptdefinities raadpleegt u de voorbeelden in het dialoogvenster [Initialisatiedocumentatie (repoint-it) voor Sling Repository](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
+Hierdoor kunnen aangepaste eigenschappen `wknd` naamruimte, zoals wordt aangegeven als de eerste parameter na de instelling `register namespace` instructie, te gebruiken in AEM. Voor geavanceerdere scriptdefinities raadpleegt u de voorbeelden in het dialoogvenster [Initialisatiedocumentatie (repoint-it) voor opslagplaats](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).

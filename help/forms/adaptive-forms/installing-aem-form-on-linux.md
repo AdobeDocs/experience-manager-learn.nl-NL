@@ -7,10 +7,10 @@ version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Beginner
-kt: 7593
+jira: KT-7593
 exl-id: b9809561-e9bd-4c67-bc18-5cab3e4aa138
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Wanneer AEM FORMS OSGi of AEM Forms j2EE op Linux wordt opgesteld, moet u ervoor
 
 Vanaf Red Hat Enterprise Linux 6 heeft de 32-bits editie van een bibliotheek de bestandsnaamextensie .686, terwijl de 64-bits editie .x86_64 heeft. Voorbeeld, expat.i686. Vóór RHEL 6 hadden 32-bits edities de extensie .i386. Voordat u de 32-bits versies installeert, moet u controleren of de nieuwste 64-bits versies zijn geïnstalleerd. Als de 64-bits versie van een bibliotheek ouder is dan de 32-bits versie die wordt geïnstalleerd, wordt een fout als volgt weergegeven:
 
-0mError: Beveiligde multilib-versies: libsepol-2.5-10.el7.x86_64 != libsepol-2.5-6.el7.i686 [0mError: Problemen met meerdere versies gevonden.]
+0mError: Protected multilib versions: libsepol-2.5-10.el7.x86_64 != libsepol-2.5-6.el7.i686 [0mError: Multilib version problem found.]
 
 ## Eerste installatie
 
@@ -69,20 +69,20 @@ Gebruik in Red Hat Enterprise Linux de YUM-update Modifier (YUM) om te installer
 
 ## Symlinks
 
-Bovendien moet u libcurl.so, libcrypto.so, en libssl.so symlinks tot stand brengen die aan de recentste versies met 32 bits van de bibliotheken libcurl, libcrypto, en libssl richten. U vindt de bestanden in /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
+Bovendien moet u libcurl.so, libcrypto.so, en libssl.so symlinks tot stand brengen die aan de recentste versies met 32 bits van de bibliotheken libcurl, libcrypto, en libssl richten. U kunt de bestanden vinden in /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
 
 ## Updates voor bestaand systeem
 
-Er kunnen conflicten optreden tussen de x86_64- en i686-architecturen tijdens updates, zoals: Fout: Transactiecontrolefout: bestand /lib/ld-2.28.so uit de installatie van glibc-2.28-72.el8.i686 veroorzaakt een conflict met het bestand uit het pakket glibc32-2.28-42.1.el8.x86_64
+Er kunnen conflicten optreden tussen de x86_64- en i686-architecturen tijdens updates, zoals: Fout: Transactiecontrolefout: bestand /lib/ld-2.28.so van installatie van glibc-2.28-72.el8.i686 veroorzaakt conflict met bestand van pakket glibc32-2.28-6 42.1.el8.x86_64
 
 Als u dit doet, moet u eerst de installatie van het betreffende pakket ongedaan maken, zoals in dit geval: yum remove glibc32-2.28-42.1.el8.x86_64
 
 Alles gezegd en gedaan, wilt u de x86_64 en i686 versies precies het zelfde zijn, zoals bijvoorbeeld van deze output aan het bevel: yum info glibc
 
 Laatste vervalcontrole van metagegevens: 0:41:33 geleden op 18 januari 2020 11:37:08 UUR EST.
-Naam van geïnstalleerde pakketten: glibc-versie: 2.28 Vrijgave: 72.el8 Architectuur: i686 Grootte: 13 M Bron: glibc-2.28-72.el8.src.rpm Opslagruimte: @System van repo: BaseOS-overzicht: De URL van de GNU-bibliotheken voor bibliotheken: http://www.gnu.org/software/glibc/ Licentie: LGPLv2+ en LGPLv2+ met uitzonderingen en GPLv2+ en GPLv2+ met uitzonderingen en BSD en Inner-Net en ISC en Public Domain en GFDL Description: Het glibc-pakket bevat standaardbibliotheken die worden gebruikt door: meerdere programma&#39;s op het systeem. Om schijfruimte te besparen en: geheugen, en om de bevordering gemakkelijker te maken, gemeenschappelijke systeemcode is: op één plaats worden gehouden en tussen programma&#39;s worden gedeeld. Dit specifieke pakket: bevat de belangrijkste sets met gedeelde bibliotheken: de norm C : bibliotheek en de standaard wiskundige bibliotheek. Zonder deze twee bibliotheken, a: Linux-systeem werkt niet.
+Naam van geïnstalleerde pakketten : glibc versie : 2.28 Release : 72.el8 Architecture : i686 Size : 13 M Source : glibc-2.28-72.el8.src.rpm Repository : @System From repo : BaseOS Summary : The GNU libc libraries URL : http://www.gnu.org/software/glibc/ License : LGPLv2+ en LGPLv2+ met uitzonderingen en GPLv2+ en GPLv2+ met uitzonderingen en BSD en Inner-Net en ISC en Public Domain en GFDL Description: Het glibc-pakket bevat standaardbibliotheken die worden gebruikt door : meerdere programma&#39;s op het systeem. Om schijfruimte en geheugen te besparen en de upgrade te vereenvoudigen, wordt algemene systeemcode opgeslagen op één locatie en gedeeld tussen programma&#39;s. This particular package : contains the main sets of shared libraries: the standard C : library and the standard math library. Zonder deze twee bibliotheken werkt a: Linux niet.
 
-Naam: glibc-versie: 2.28 Vrijgave: 72.el8 Architectuur: x86_64 Grootte: 15 M Bron: glibc-2.28-72.el8.src.rpm Opslagruimte: @System van repo: BaseOS-overzicht: De URL van de GNU-bibliotheken voor bibliotheken: http://www.gnu.org/software/glibc/ Licentie: LGPLv2+ en LGPLv2+ met uitzonderingen en GPLv2+ en GPLv2+ met uitzonderingen en BSD en Inner-Net en ISC en Public Domain en GFDL Description: Het glibc-pakket bevat standaardbibliotheken die worden gebruikt door: meerdere programma&#39;s op het systeem. Om schijfruimte te besparen en: geheugen, en om de bevordering gemakkelijker te maken, gemeenschappelijke systeemcode is: op één plaats worden gehouden en tussen programma&#39;s worden gedeeld. Dit specifieke pakket: bevat de belangrijkste sets met gedeelde bibliotheken: de norm C : bibliotheek en de standaard wiskundige bibliotheek. Zonder deze twee bibliotheken, a: Linux-systeem werkt niet.
+Naam: glibc Versie: 2.28 Release: 72.el8 Architecture : x86_64 Size : 15 M Source : glibc-2.28-72.el8.src.rpm Repository : @System From repo : BaseOS Summary : The GNU libc libraries URL : http://www.gnu.org/software/glibc/ License : LGPLv2+ and LGPLv2+ met uitzonderingen en GPLv2+ en GPLv2+ met uitzonderingen en BSD en Inner-Net en ISC en Public Domain en GFDL Description: Het glibc-pakket bevat standaardbibliotheken die worden gebruikt door : meerdere programma&#39;s op het systeem. Om schijfruimte en geheugen te besparen en de upgrade te vereenvoudigen, wordt algemene systeemcode opgeslagen op één locatie en gedeeld tussen programma&#39;s. This particular package : contains the main sets of shared libraries: the standard C : library and the standard math library. Zonder deze twee bibliotheken werkt a: Linux niet.
 
 ## Enkele handige yum-opdrachten
 

@@ -1,14 +1,15 @@
 ---
 title: Dynamic Media Viewers gebruiken met Adobe Analytics en Adobe Launch
-description: Met de Dynamic Media Viewers-extensie voor het starten van Adobe en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van Adobe.
+description: Met de Dynamic Media Viewers-extensie voor het starten van de Adobe en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van de Adobe.
 sub-product: Dynamic Media
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 3%
@@ -120,7 +121,7 @@ De volgende tabel bevat een lijst met Dynamic Media Viewer-gebeurtenissen en de 
          <td> %event.detail.dm.PAGE.label% </td>
       </tr>
       <tr>
-         <td> PAUZEREN </td>
+         <td> PAUZE </td>
          <td> %event.detail.dm.PAUSE.timestamp% </td>
       </tr>
       <tr>
@@ -136,7 +137,7 @@ De volgende tabel bevat een lijst met Dynamic Media Viewer-gebeurtenissen en de 
          <td> %event.detail.dm.STOP.timestamp% </td>
       </tr>
       <tr>
-         <td> SWAP </td>
+         <td> WISSELEN </td>
          <td> %event.detail.dm.SWAP.asset% </td>
       </tr>
       <tr>

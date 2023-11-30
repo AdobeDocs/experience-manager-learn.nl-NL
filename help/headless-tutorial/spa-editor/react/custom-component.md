@@ -2,16 +2,16 @@
 title: Een aangepaste weercomponent maken | Aan de slag met de AEM SPA Editor en reageren
 description: Leer hoe u een aangepaste weercomponent maakt die u kunt gebruiken met de AEM SPA Editor. Leer hoe u dialoogvensters met auteurs en Sling Models ontwikkelt om het JSON-model uit te breiden en een aangepaste component te vullen. De Open Weather-API en React Open Weather-componenten worden gebruikt.
 feature: SPA Editor
-doc-type: tutorial
 topics: development
 version: Cloud Service
-kt: 5878
+jira: KT-5878
 thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Leer hoe u een aangepaste weercomponent maakt die u kunt gebruiken met de AEM SP
 ## Doelstelling
 
 1. Begrijp de rol van Sling Models in het manipuleren van JSON model API die door AEM wordt verstrekt.
-2. Begrijp hoe te om nieuwe AEM componentendialogen tot stand te brengen.
+2. Begrijp hoe u dialoogvensters met nieuwe AEM maakt.
 3. Leer een **aangepast** AEM Component die met het SPA redacteurskader compatibel is.
 
 ## Wat u gaat maken
@@ -44,7 +44,7 @@ Een API-sleutel van [Weer openen](https://openweathermap.org/) is nodig om de ze
 
 ## De AEM component definiëren
 
-Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het project worden deze knooppunten en eigenschappen vertegenwoordigd als XML-bestanden in de `ui.apps` module. Maak vervolgens de AEM component in het dialoogvenster `ui.apps` module.
+Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het project worden deze knooppunten en eigenschappen vertegenwoordigd als XML-bestanden in de `ui.apps` -module. Maak vervolgens de AEM component in het dialoogvenster `ui.apps` -module.
 
 >[!NOTE]
 >
@@ -136,9 +136,9 @@ Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
 
    ![Aangepaste componentdefinitie](assets/custom-component/dialog-custom-component-defintion.png)
 
-   Het bovenstaande XML-bestand genereert een zeer eenvoudig dialoogvenster voor het `Weather Component`. Het kritieke deel van het bestand is de binnenzijde `<label>`, `<lat>` en `<lon>` knooppunten. Dit dialoogvenster bevat twee `numberfield`s en a `textfield` dat een gebruiker toestaat om het weer te vormen dat moet worden getoond.
+   Het bovenstaande XML-bestand genereert een zeer eenvoudig dialoogvenster voor het `Weather Component`. Het kritieke deel van het bestand is de binnenzijde `<label>`, `<lat>` en `<lon>` knooppunten. Dit dialoogvenster bevat twee `numberfield`s en `textfield` dat een gebruiker toestaat om het weer te vormen dat moet worden getoond.
 
-   Er wordt een verkoopmodel gemaakt naast de waarde van de optie `label`,`lat` en `long` eigenschappen via het JSON-model.
+   Naast de waarde van de optie `label`,`lat` en `long` eigenschappen via het JSON-model.
 
    >[!NOTE]
    >
@@ -315,7 +315,7 @@ Werk vervolgens de React-code bij en voeg de [Reageren op Open Weather-component
    MapTo('wknd-spa-react/components/open-weather')(OpenWeather, OpenWeatherEditConfig);
    ```
 
-1. Bijwerken `import-components.js` om `ui.frontend/src/components/import-components.js` de `OpenWeather` component:
+1. Bijwerken `import-components.js` om `ui.frontend/src/components/import-components.js` om de `OpenWeather` component:
 
    ```diff
      // import-component.js
@@ -359,7 +359,7 @@ Navigeer vervolgens naar AEM om de updates te controleren en de `OpenWeather` aa
 Nu, auteur `Open Weather` met de AEM SPA Editor.
 
 1. Navigeren naar [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
-1. In `Edit` modus, voegt u de `Open Weather` aan de `Layout Container`:
+1. In `Edit` in de modus, voegt u de `Open Weather` aan de `Layout Container`:
 
    ![Nieuwe component invoegen](assets/custom-component/insert-custom-component.png)
 

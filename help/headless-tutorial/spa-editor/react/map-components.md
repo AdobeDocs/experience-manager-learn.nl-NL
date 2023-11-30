@@ -6,13 +6,14 @@ topics: development
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 4854
+jira: KT-4854
 thumbnail: 4854-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 0%
@@ -27,7 +28,7 @@ In dit hoofdstuk wordt dieper ingegaan op de AEM JSON-model-API en wordt uitgele
 
 ## Doelstelling
 
-1. Leer hoe u AEM componenten kunt toewijzen aan SPA Componenten.
+1. Leer hoe u AEM componenten kunt toewijzen aan SPA.
 1. Inspect hoe een component React dynamische eigenschappen gebruikt die van AEM worden overgegaan.
 1. Meer informatie over het gebruik van de doos [Reageren AEM kerncomponenten](https://github.com/adobe/aem-react-core-wcm-components-examples).
 
@@ -51,14 +52,14 @@ Het basisconcept is om een SPA Component aan een AEM Component in kaart te breng
 
 ## De tekstcomponent Inspect
 
-De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt `Text` component die is toegewezen aan de AEM [Tekstcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Dit is een voorbeeld van een **content** component, in die zin dat deze wordt gerenderd *content* van AEM.
+De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt `Text` component die is toegewezen aan de AEM [Tekstcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Dit is een voorbeeld van **content** component, in die zin dat deze wordt gerenderd *content* van AEM.
 
 Laten we eens kijken hoe de component werkt.
 
 ### Inspect het JSON-model
 
 1. Voordat u in de SPA code springt, is het belangrijk dat u het JSON-model begrijpt dat AEM biedt. Ga naar de [Core Component Library](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) en bekijk de pagina voor de component Text. De Core Component Library bevat voorbeelden van alle AEM Core Components.
-1. Selecteer **JSON** tabblad voor een van de voorbeelden:
+1. Selecteer de **JSON** tabblad voor een van de voorbeelden:
 
    ![JSON-model tekst](./assets/map-components/text-json.png)
 
@@ -82,7 +83,7 @@ Laten we eens kijken hoe de component werkt.
 
 ### De SPA Tekst Inspect
 
-1. In winde van uw keus open omhoog het AEM Project voor de SPA. Breid uit `ui.frontend` en het bestand openen `Text.js` krachtens `ui.frontend/src/components/Text/Text.js`.
+1. In winde van uw keus open omhoog het AEM Project voor de SPA. Breid uit `ui.frontend` en opent u het bestand `Text.js` krachtens `ui.frontend/src/components/Text/Text.js`.
 
 1. Het eerste gebied dat we zullen inspecteren is het `class Text` op ~regel 40:
 
@@ -131,7 +132,7 @@ Laten we eens kijken hoe de component werkt.
    export default MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
    ```
 
-   `MapTo` wordt geleverd door de AEM SPA Editor JS SDK (`@adobe/aem-react-editable-components`). Het pad `wknd-spa-react/components/text` vertegenwoordigt `sling:resourceType` van de AEM component. Dit pad komt overeen met het `:type` door het JSON-model dat eerder werd waargenomen. `MapTo` zorgt ervoor dat de JSON-modelrespons wordt geparseerd en dat de juiste waarden worden doorgegeven als `props` naar de SPA component.
+   `MapTo` wordt geleverd door de AEM SPA Editor JS SDK (`@adobe/aem-react-editable-components`). Het pad `wknd-spa-react/components/text` vertegenwoordigt de `sling:resourceType` van de AEM component. Dit pad komt overeen met het `:type` door het JSON-model dat eerder werd waargenomen. `MapTo` zorgt ervoor dat de JSON-modelrespons wordt geparseerd en dat de juiste waarden als `props` naar de SPA component.
 
    U kunt de AEM vinden `Text` componentdefinitie bij `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/text`.
 
@@ -160,7 +161,7 @@ Het beleid is een eigenschap van AEM malplaatjes geeft ontwikkelaars en macht-ge
 
 1. Selecteer en open **SPA pagina** sjabloon voor bewerken.
 
-1. Selecteer **Layout Container** en klik op **beleid** pictogram om het beleid te bewerken:
+1. Selecteer de **Layout Container** en klik op **beleid** pictogram om het beleid te bewerken:
 
    ![indelingscontainerbeleid](assets/map-components/edit-spa-page-template.png)
 
@@ -182,7 +183,7 @@ Het beleid is een eigenschap van AEM malplaatjes geeft ontwikkelaars en macht-ge
 
    ![RTE-opmaak inschakelen](assets/map-components/enable-formatting-rte.png)
 
-   Onder **Plug-ins** > **Alineastijlen** > schakel het selectievakje in op **Alineastijlen inschakelen**:
+   Onder **Plug-ins** > **Alineastijlen** > selectievakje in **Alineastijlen inschakelen**:
 
    ![Alineastijlen inschakelen](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
@@ -196,11 +197,11 @@ Het beleid is een eigenschap van AEM malplaatjes geeft ontwikkelaars en macht-ge
 
    ![Aanvullende componenten](assets/map-components/additional-components.png)
 
-1. U moet ook de opdracht `Text` en voeg extra alineastijlen toe in **volledig scherm** in.
+1. U moet ook de opdracht `Text` en voeg extra alineastijlen toe in **volledig scherm** -modus.
 
    ![Tekst bewerken op volledig scherm](assets/map-components/full-screen-rte.png)
 
-1. U moet ook een afbeelding kunnen slepen en neerzetten vanuit de **Asset Finder**:
+1. U moet ook een afbeelding uit de **Asset Finder**:
 
    ![Afbeelding slepen en neerzetten](assets/map-components/drag-drop-image.png)
 
@@ -212,9 +213,9 @@ Het beleid is een eigenschap van AEM malplaatjes geeft ontwikkelaars en macht-ge
 
 ## Inspect the Layout Container
 
-Steun voor de **Layout Container** wordt automatisch verstrekt door de AEM SPA Editor SDK. De **Layout Container**, zoals aangegeven door de naam, **container** component. Containercomponenten zijn componenten die JSON-structuren accepteren die *overige* componenten te maken en ze dynamisch te instantiëren.
+Steun voor de **Layout Container** wordt automatisch verstrekt door de AEM SPA Editor SDK. De **Layout Container**, zoals aangegeven door de naam, een **container** component. Containercomponenten zijn componenten die JSON-structuren accepteren die *overige* componenten te maken en ze dynamisch te instantiëren.
 
-Laten we de container voor lay-out verder inspecteren.
+Controleer de container voor lay-out verder.
 
 1. Blader in een browser naar [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
 
@@ -238,7 +239,7 @@ Laten we de container voor lay-out verder inspecteren.
 
    Dit bestand bepaalt de onderbrekingspunten (`default`, `tablet`, en `phone`) gebruikt door de **Layout Container**. Dit dossier is bedoeld om per projectspecificaties worden aangepast. Momenteel zijn de onderbrekingspunten ingesteld op `1200px` en `768px`.
 
-5. U zou de ontvankelijke mogelijkheden en het bijgewerkte rijke tekstbeleid van moeten kunnen gebruiken `Text` aan auteur een mening als het volgende:
+5. U moet de responsieve mogelijkheden en het bijgewerkte rijke tekstbeleid van het `Text` aan auteur een mening als het volgende:
 
    ![Definitieve ontwerpversie van hoofdstukvoorbeeld](assets/map-components/final-page.png)
 
@@ -254,7 +255,7 @@ Gefeliciteerd, leerde u hoe te om SPA componenten aan AEM Componenten in kaart t
 
 In veel gevallen, vooral aan het begin van een AEM project is het waardevol om configuraties, zoals malplaatjes en verwant inhoudsbeleid, aan broncontrole voort te zetten. Dit zorgt ervoor dat alle ontwikkelaars tegen de zelfde reeks inhoud en configuraties werken en extra consistentie tussen milieu&#39;s kunnen verzekeren. Wanneer een project een bepaald ontwikkelingsniveau heeft bereikt, kan het beheren van sjablonen worden overgedragen aan een speciale groep van energiegebruikers.
 
-De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar kon doen gebruikend om het even welk hulpmiddel en om het even welke winde die u hebt gevormd om **trekken** of **import** inhoud van een lokale instantie van AEM.
+De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Visual Studio en [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) maar kon doen gebruikend om het even welk hulpmiddel en om het even welke winde die u hebt gevormd om **trekken** of **import** inhoud van een lokale AEM.
 
 1. In winde van de Code van Visual Studio, zorg ervoor dat u hebt **VSCode AEM Sync** geïnstalleerd via de Marketplace-extensie:
 
@@ -283,7 +284,7 @@ De volgende paar stappen zullen plaatsvinden gebruikend winde van de Code van Vi
 
    De `filter.xml` is verantwoordelijk voor het identificeren van de paden van knooppunten die samen met het pakket zijn geïnstalleerd. Let op: `mode="merge"` op elk van de filters wordt aangegeven dat bestaande inhoud niet wordt gewijzigd, alleen nieuwe inhoud toegevoegd. Aangezien de inhoudsauteurs deze wegen kunnen bijwerken, is het belangrijk dat een codeplaatsing doet **niet** overschrijven, inhoud. Zie de [FileVault-documentatie](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over het werken met filterelementen.
 
-   Vergelijken `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om de verschillende knopen te begrijpen die door elke module worden beheerd.
+   Ververgelijken `ui.content/src/main/content/META-INF/vault/filter.xml` en `ui.apps/src/main/content/META-INF/vault/filter.xml` om de verschillende knopen te begrijpen die door elke module worden beheerd.
 
 ## (Bonus) Aangepaste afbeeldingscomponent maken {#bonus-image}
 
@@ -317,7 +318,7 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
    import {MapTo} from '@adobe/aem-react-editable-components';
    ```
 
-1. Voeg vervolgens de `ImageEditConfig` bepalen wanneer de tijdelijke aanduiding in AEM moet worden weergegeven:
+1. Voeg vervolgens de knop `ImageEditConfig` bepalen wanneer de tijdelijke aanduiding in AEM moet worden weergegeven:
 
    ```js
    export const ImageEditConfig = {
@@ -397,7 +398,7 @@ Voordat u in de SPA code gaat springen, moet u het JSON-model controleren dat AE
    import './Image/Image'; //add reference to Image component
    ```
 
-1. In `import-components.js` Bekijk de React Core Component Image:
+1. In `import-components.js` Bekijk de React Core Component Image (React Core-componentafbeelding):
 
    ```js
    //MapTo('wknd-spa-react/components/image')(ImageV2, {isEmpty: ImageV2IsEmptyFn});

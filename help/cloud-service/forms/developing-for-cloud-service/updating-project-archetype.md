@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 feature: AEM Project Archetype
-kt: 9534
+jira: KT-9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -28,11 +28,11 @@ De volgende stappen werden gevolgd om het gemaakte project te migreren gebruiken
 * Opdrachtprompt openen en naar c:\cloudmanager navigeren
 * Gemaakt project maken met het nieuwste archetype.
 * Kopieer en plak de inhoud van de [tekstbestand](assets/creating-maven-project.txt) in uw opdrachtpromptvenster. Afhankelijk van het [nieuwste versie](https://github.com/adobe/aem-project-archetype/releases). Archetype 33 bevat nieuwe AEM Forms-thema&#39;s.
-Aangezien we het nieuwe gefabriceerde project maken in de cloudmanager-map die al een aem-banking-applicatieproject bevat, moet u het **DartifactId** van een &#39;aem-banking&#39;-toepassing naar iets anders. Ik heb voor dit artikel gebruik gemaakt van aem-banking-application1.
+Aangezien we het nieuwe gefabriceerde project maken in de cloudmanager-map die al een aem-banking-applicatieproject heeft, moet u het **DartifactId** van een &#39;aem-banking&#39;-toepassing naar iets anders. Ik heb voor dit artikel gebruik gemaakt van aem-banking-application1.
 
 >[!NOTE]
 >
->Als u dit nieuwe project zoals is de instantie van de wolkendienst opstelt zal niet HandleFormSubmission en SubmitToAEMServlet hebben. Dit komt omdat elke keer dat u een project implementeert met gebruik van Cloud Manager alles onder de `/apps` map wordt verwijderd en overschreven.
+>Als u dit nieuwe project zoals is de instantie van de cloudservice zal niet HandleFormSubmission en SubmitToAEMServlet hebben. Dit komt omdat elke keer dat u een project implementeert met gebruik van Cloud Manager alles onder de `/apps` map wordt verwijderd en overschreven.
 
 ## Java-code kopiëren
 

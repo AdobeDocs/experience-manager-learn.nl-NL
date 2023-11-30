@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 [Inhoudsopgave](./overview.md)
 
-[&lt;- Vorige: Alleen-lezen bestanden](./immutable-files.md)
+[&lt;- Vorige: alleen-lezen bestanden](./immutable-files.md)
 
 Wanneer u een AMS-basislijnverzendingsprogramma hebt geïnstalleerd, wordt deze geleverd met een paar freebies.  Een van deze functies is een set scripts voor health check.
 Met deze scripts kan het taakverdelingsmechanisme waarmee de AEM stapel wordt voorafgegaan, weten welke poten gezond zijn en in bedrijf blijven.
@@ -58,7 +59,7 @@ Wij zullen behandelen wat elk stuk aan opstelling en hun belang is
 
 Om aan te geven of AEM functioneert, hebt u het nodig om een basispagina-compilatie uit te voeren en de pagina te bedienen.  Adobe Managed Services heeft een basispakket gemaakt dat de testpagina bevat.  De pagina test dat de bewaarplaats omhoog is en dat de middelen en paginasjabloon kunnen teruggeven.
 
-![Afbeelding toont het AMS-pakket in CRX pakketbeheer](assets/load-balancer-healthcheck/health-check-package.png "gezondheidscontrole-pakket")
+![Afbeelding toont het AMS-pakket in CRX-pakketbeheer](assets/load-balancer-healthcheck/health-check-package.png "gezondheidscontrole-pakket")
 
 Hier is de pagina.  De opslagplaats-id van de installatie wordt weergegeven
 
@@ -118,7 +119,7 @@ Snijden bij het ophalen van de fout en reageren:
 I, [2022-11-23T20:34:19.213179 #2275]  INFO -- : ADDING VHOST symlink /etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost => /etc/httpd/conf.d/enabled_vhosts/000_unhealthy_author.vhost
 ```
 
-U kunt bepalen of de auteur of de gepubliceerde plaatsen deze foutenpagina kunnen hebben door het plaatsen van de herladingswijze te vormen binnen `/var/www/cgi-bin/health_check.conf`
+U kunt bepalen of de auteur of de gepubliceerde plaatsen deze foutenpagina kunnen hebben door het plaatsen van de herladingswijze te vormen `/var/www/cgi-bin/health_check.conf`
 
 ```
 # grep RELOAD_MODE /var/www/cgi-bin/health_check.conf
@@ -134,7 +135,7 @@ Geldige opties:
 - alles
    - Met deze optie wordt een onderhoudspagina voor auteur of uitgever of beide weergegeven als deze ongezond worden
 - none
-   - Met deze optie wordt dit onderdeel van de health check overgeslagen
+   - Deze optie slaat dit onderdeel van de health check over
 
 Wanneer u naar de `VirtualHost` het plaatsen voor deze zult u zult zien zij het zelfde document zoals een foutenpagina voor elk verzoek laden dat komt wanneer het wordt toegelaten:
 
@@ -183,21 +184,21 @@ Er zijn vijf verschillende scripts die door uw CSE in de taakverdelingsinstellin
 
 #### /bin/checkauteur
 
-Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `author` AEM instantie is ongezond
+Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `author` AEM-instantie is ongezond
 
 > `Note:` Houd er rekening mee dat als de publicatie AEM-instantie ongezond was, de verzender in service zou blijven zodat het verkeer naar de AEM-instantie van de auteur kan gaan.
 
 #### /bin/checkpublish (standaardwaarde)
 
-Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `publish` AEM instantie is ongezond
+Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `publish` AEM-instantie is ongezond
 
 > `Note:` Houd in mening dat als de auteur AEM instantie ongezond was de verzender in dienst zou blijven om verkeer toe te staan om aan de publicatie AEM instantie te stromen
 
 #### /bin/checkeeither
 
-Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `author` of de `publisher` AEM instantie is ongezond
+Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `author` of de `publisher` AEM-instantie is ongezond
 
-> `Note:` Houd er rekening mee dat als de publicatie AEM instantie of de auteur AEM instantie ongezond was, de verzender de service zou verlaten.  Betekenis dat als een van hen gezond was, het ook geen verkeer zou krijgen
+> `Note:` Houd er rekening mee dat als de publicatie AEM instantie of de auteur AEM instantie ongezond was, de verzender de service zou verlaten.  Betekenis dat als een van hen gezond zou zijn, het ook geen verkeer zou krijgen
 
 #### /bin/checkboth
 

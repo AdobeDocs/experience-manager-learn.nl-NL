@@ -6,10 +6,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Experienced
-kt: 11470
+jira: KT-11470
 last-substantial-update: 2020-11-12T00:00:00Z
 exl-id: 14ac6ff9-36b4-415e-a878-1b01ff9d3888
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Adaptieve Forms vooraf vullen met queryparameters
 
-Een van onze klanten had de vereiste om adaptief formulier in te vullen met de queryparameters. In de volgende URL worden bijvoorbeeld de velden FirstName en LastName in het adaptieve formulier ingesteld op respectievelijk Jan en Doe
+Een van onze klanten had de vereiste om adaptief formulier in te vullen met behulp van de queryparameters. In de volgende URL worden bijvoorbeeld de velden FirstName en LastName in het adaptieve formulier ingesteld op respectievelijk Jan en Doe
 
 ```html
 https://forms.enablementadobe.com/content/forms/af/testingxml.html?FirstName=John&LastName=Doe
@@ -56,4 +56,4 @@ slingRequest.setAttribute("data", dataXml);
 * [Download en installeer het voorbeeldadaptieve formulier](assets/populate-af-with-query-paramters-form.zip)
 
 * [Een voorbeeld van het adaptieve formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/testingxml/jcr:content?wcmmode=disabled&amp;FirstName=John&amp;LastName=Doe)
-Het adaptieve formulier moet worden gevuld met de waarde Jan en Doe
+Het adaptieve formulier moet worden gevuld met de waarde Jan en Smit

@@ -3,17 +3,17 @@ title: Ontwikkelen met het Stijlsysteem
 seo-title: Developing with the Style System
 description: Leer hoe te om individuele stijlen uit te voeren en de Componenten van de Kern te hergebruiken gebruikend het Systeem van de Stijl van de Experience Manager. Deze zelfstudie behandelt het ontwikkelen voor het Systeem van de Stijl om de Componenten van de Kern met merkspecifieke CSS en geavanceerde beleidsconfiguraties van de Redacteur van het Malplaatje uit te breiden.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Style System
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4128
+jira: KT-4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
+doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 0%
@@ -85,11 +85,11 @@ U kunt zoeken [gedetailleerde documentatie voor het Stijlsysteem hier](https://e
 
 ## Onderstrepingsstijl - Titel {#underline-style}
 
-De [Component Title](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) in het kader van het project `/apps/wknd/components/title` als onderdeel van de **ui.apps** module. De standaardstijlen van Kop-elementen (`H1`, `H2`, `H3`...) reeds in de **ui.frontend** module.
+De [Component Title](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) in het kader van het project `/apps/wknd/components/title` als onderdeel van de **ui.apps** -module. De standaardstijlen van Kop-elementen (`H1`, `H2`, `H3`...) reeds in de **ui.frontend** -module.
 
-De [WKND-artikelontwerpen](assets/pages-templates/wknd-article-design.xd) bevat een unieke stijl voor de component Title met een onderstreping. In plaats van twee componenten te maken of het dialoogvenster van de component te wijzigen, kunt u het Stijlsysteem gebruiken om auteurs de optie toe te staan een onderstrepingsstijl toe te voegen.
+De [WKND-artikelontwerpen](assets/pages-templates/wknd-article-design.xd) bevatten een unieke stijl voor de component Title met een onderstreping. In plaats van twee componenten te maken of het dialoogvenster van de component te wijzigen, kunt u het Stijlsysteem gebruiken om auteurs de optie toe te staan een onderstrepingsstijl toe te voegen.
 
-![Onderstrepingsstijl - Titelcomponent](assets/style-system/title-underline-style.png)
+![Stijl onderstrepen - component Titel](assets/style-system/title-underline-style.png)
 
 ### Titelbeleid toevoegen
 
@@ -146,9 +146,9 @@ Laten we als auteur de onderstrepingsstijl toepassen op bepaalde titelcomponente
 
 ### Implementeer de onderstrepingsstijl - ui.frontend
 
-Implementeer vervolgens de stijl Onderstrepen met de **ui.frontend** van het AEM project. De webpack-ontwikkelingsserver die is meegeleverd bij de **ui.frontend** een voorvertoning van de stijlen weergeven *voor* het opstellen aan een lokaal geval van AEM wordt gebruikt.
+Implementeer vervolgens de stijl Onderstrepen met de **ui.frontend** van het AEM project. De webpack-ontwikkelingsserver die bij de **ui.frontend** een voorvertoning van de stijlen weergeven *voor* het opstellen aan een lokaal geval van AEM wordt gebruikt.
 
-1. Start de `watch` van binnen **ui.frontend** module:
+1. Start de `watch` proces vanuit de **ui.frontend** module:
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
@@ -195,7 +195,7 @@ Implementeer vervolgens de stijl Onderstrepen met de **ui.frontend** van het AEM
 
 ## Stijl prijsblok - Tekst {#text-component}
 
-Herhaal vervolgens vergelijkbare stappen om een unieke stijl toe te passen op de [Tekstcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). De component Text is uitgebreid naar het project onder `/apps/wknd/components/text` als onderdeel van de **ui.apps** module. De standaardstijlen van alinea-elementen zijn al geïmplementeerd in de **ui.frontend**.
+Herhaal vervolgens vergelijkbare stappen om een unieke stijl toe te passen op de [Tekstcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). De component Text is uitgebreid naar het project onder `/apps/wknd/components/text` als onderdeel van de **ui.apps** -module. De standaardstijlen van alinea-elementen zijn al geïmplementeerd in de **ui.frontend**.
 
 De [WKND-artikelontwerpen](assets/pages-templates/wknd-article-design.xd) bevat een unieke stijl voor de component Text met een aanhalingsteken:
 
@@ -254,7 +254,7 @@ Voeg vervolgens een beleid toe voor de tekstcomponenten.
 
 Nu implementeren we de stijl voor het aanhalingsteken met de **ui.frontend** van het AEM project.
 
-1. Als deze nog niet actief is, start u de `watch` van binnen **ui.frontend** module:
+1. Als deze nog niet actief is, start u de `watch` proces vanuit de **ui.frontend** module:
 
    ```shell
    $ npm run watch
@@ -300,7 +300,7 @@ Nu implementeren we de stijl voor het aanhalingsteken met de **ui.frontend** van
 
    >[!CAUTION]
    >
-   > In dit geval worden onbewerkte HTML-elementen bepaald door de stijlen. De reden hiervoor is dat de component Text een Rich Text Editor biedt voor inhoudsauteurs. Het rechtstreeks maken van stijlen tegen RTE-inhoud moet met de nodige voorzichtigheid gebeuren en het is nog belangrijker om de stijlen strak uit te breiden.
+   > In dit geval worden onbewerkte HTML-elementen bepaald door de stijlen. De reden hiervoor is dat de component Text een Rich Text Editor biedt voor auteurs van inhoud. Het rechtstreeks maken van stijlen tegen RTE-inhoud moet met de nodige voorzichtigheid gebeuren en het is nog belangrijker om de stijlen strak uit te breiden.
 
 1. Keer opnieuw aan browser en u zou moeten zien dat de het blokstijl van het Citaat wordt toegevoegd:
 
@@ -310,7 +310,7 @@ Nu implementeren we de stijl voor het aanhalingsteken met de **ui.frontend** van
 
 ## Vaste breedte - Container (Bonus) {#layout-container}
 
-Containercomponenten zijn gebruikt om de basisstructuur van het artikelpaginasjabloon te maken en om de neerzetzones voor inhoudsauteurs te bieden om inhoud aan een pagina toe te voegen. Containers kunnen ook het Stijlsysteem gebruiken, waardoor de auteurs van inhoud nog meer opties voor het ontwerpen van lay-outs krijgen.
+Containercomponenten zijn gebruikt om de basisstructuur van het artikelpaginasjabloon te maken en om de neerzetzones te bieden waar inhoudsauteurs inhoud aan een pagina kunnen toevoegen. Containers kunnen ook het Stijlsysteem gebruiken, waardoor de auteurs van inhoud nog meer opties voor het ontwerpen van lay-outs krijgen.
 
 De **Hoofdcontainer** van de artikelpaginamalplaatje bevat de twee voor de auteur geschikte containers en heeft een vaste breedte.
 
@@ -318,7 +318,7 @@ De **Hoofdcontainer** van de artikelpaginamalplaatje bevat de twee voor de auteu
 
 *Hoofdcontainer in het sjabloon voor artikelpagina*.
 
-Het beleid van de **Hoofdcontainer** stelt het standaardelement in als `main`:
+Het beleid van **Hoofdcontainer** stelt het standaardelement in als `main`:
 
 ![Hoofdcontainerbeleid](assets/style-system/main-container-policy.png)
 
@@ -334,7 +334,7 @@ main.container {
 }
 ```
 
-In plaats van zich op `main` HTML-element, kan het Stijlsysteem worden gebruikt om een **Vaste breedte** stijl als onderdeel van het containerbeleid. Met het Stijlsysteem kunnen gebruikers schakelen tussen **Vaste breedte** en **Dynamische breedte** containers.
+In plaats van de doelgroep `main` HTML-element, kan het Stijlsysteem worden gebruikt om een **Vaste breedte** stijl als onderdeel van het containerbeleid. Het Stijlsysteem kan gebruikers de mogelijkheid bieden te schakelen tussen **Vaste breedte** en **Dynamische breedte** containers.
 
 1. **Bonus Challenge** - lering uit de voorgaande oefeningen gebruiken en het Stijlsysteem gebruiken om een **Vaste breedte** en **Dynamische breedte** stijlen voor de component Container.
 

@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 [Inhoudsopgave](./overview.md)
 
-[&lt;- Vorige: Algemene logbestanden](./common-logs.md)
+[&lt;- Vorige: gemeenschappelijke logbestanden](./common-logs.md)
 
 ## Beschrijving
 
@@ -213,13 +214,13 @@ Hierboven ziet u de huidige waarde van `DISP_LOG_LEVEL` variable is `info`.  W
 
 ### Bedekkingsmethode
 
-Houd rekening met de include-bestanden op hoofdniveau, omdat dit de beginplaats is voor het maken van aanpassingen.  Om met een eenvoudig voorbeeld te beginnen, hebben wij een scenario waarin wij een nieuwe domeinnaam willen toevoegen die wij bij deze Verzender willen richten.  Het domeinvoorbeeld dat we zullen gebruiken is we-retail.adobe.com.  We beginnen met het kopiëren van een bestaand configuratiebestand naar een nieuw bestand waar we onze wijzigingen kunnen toevoegen:
+Houd rekening met de include-bestanden op hoofdniveau, omdat dit de beginplaats is voor het maken van aanpassingen.  Om met een eenvoudig voorbeeld te beginnen, hebben wij een scenario waarin wij een nieuwe domeinnaam willen toevoegen die wij bij deze Verzender willen richten.  Het domeinvoorbeeld dat we gebruiken is we-retail.adobe.com.  We beginnen met het kopiëren van een bestaand configuratiebestand naar een nieuw bestand waar we onze wijzigingen kunnen toevoegen:
 
 ```
 $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/available_vhosts/weretail_publish.vhost
 ```
 
-We hebben het bestaande bestand aem_publish.vhost gekopieerd omdat het al bevat wat we nodig hebben om dingen te laten werken en we geen reeds sterke start opnieuw willen uitvinden.  Nu bewerken we het nieuwe bestand weretail.vhost en brengen de benodigde wijzigingen aan.
+We hebben het bestaande bestand aem_publish.vhost gekopieerd omdat het al bevat wat we nodig hebben om dingen te laten werken en we geen reeds sterke start opnieuw willen uitvinden.  Nu bewerken we het nieuwe bestand weretail.vhost en brengen we de benodigde wijzigingen aan.
 
 Voor:
 
@@ -309,7 +310,7 @@ Nu kunnen we alleen de webserverservice opnieuw laden en ons nieuwe domein gebru
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
 
-Merk op wij slechts de stukken veranderden die wij nodig hadden om de bestaande omvat en de code te gebruiken die met de dossiers van de basislijnconfiguratie kwam.  We hoeven alleen maar af te bakenen wat we moeten veranderen.  Maakt het veel makkelijker en maakt het ons mogelijk minder code te handhaven
+Merk op wij slechts de stukken veranderden die wij nodig hadden om de bestaande omvat en de code te gebruiken die met de dossiers van de basislijnconfiguratie kwam.  We hoeven alleen maar af te wijken van het element dat we moeten veranderen.  Maakt het veel makkelijker en maakt het ons mogelijk minder code te handhaven
 </div>
 
 [Volgende -> Health check van Dispatcher](./health-check.md)

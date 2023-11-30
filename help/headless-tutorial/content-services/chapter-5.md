@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 873d8e69-5a05-44ac-8dae-bba21f82b823
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -19,12 +20,12 @@ Hoofdstuk 5 van de AEM zelfstudie zonder koptekst behandelt het maken van de pag
 
 >[!NOTE]
 >
-> De architectuur van de pagina-inhoud van `/content/wknd-mobile/en/api` is vooraf gebouwd. De basispagina&#39;s van `en` en `api` dienen een architectonisch en organisatorisch doel, maar zijn niet strikt vereist. Als API-inhoud kan worden gelokaliseerd, kunt u het beste de gebruikelijke best practices voor taalkopieën en beheer van meerdere pagina&#39;s volgen, aangezien API-pagina&#39;s net als elke AEM Sites-pagina kunnen worden gelokaliseerd.
+> De pagina-inhoudarchitectuur van `/content/wknd-mobile/en/api` is vooraf gebouwd. De basispagina&#39;s `en` en `api` dienen een architectonisch en organisatorisch doel, maar zijn niet strikt vereist. Als API-inhoud kan worden gelokaliseerd, kunt u het beste de gebruikelijke best practices voor taalkopieën en beheer van meerdere pagina&#39;s volgen, aangezien API-pagina&#39;s net als elke AEM Sites-pagina kunnen worden gelokaliseerd.
 
 ## De API-pagina voor gebeurtenissen maken
 
 1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**.
-1. **Tik op het label op de API-pagina** Tik vervolgens op de knop **Maken** in de bovenste actiebalk en maak een nieuwe API-pagina voor gebeurtenissen onder de API-pagina.
+1. **Tik op het label op de API-pagina** Tik vervolgens op de knop **Maken** in de bovenste actiebalk en maak een nieuwe API voor gebeurtenissen onder de API-pagina.
    1. Tikken **Maken** in de bovenste actiebalk
    1. Selecteren **API voor gebeurtenissen** template
    1. In de **Naam** veld enter **gebeurtenissen**
@@ -42,14 +43,14 @@ Hoofdstuk 5 van de AEM zelfstudie zonder koptekst behandelt het maken van de pag
 
 1. Bewerk de **API voor gebeurtenissen** pagina door naar **AEM > Sites > WKND Mobile > English > API**, selecteert u de **API voor gebeurtenissen** pagina, en tikken **Bewerken** in de bovenste actiebalk.
 1. Voeg een **logoafbeelding** om in de app weer te geven door deze van de Asset Finder naar de tijdelijke aanduiding voor de afbeeldingscomponent te slepen.
-   * Gebruik het opgegeven logo op `/content/dam/wknd-mobile/images/wknd-logo.png`.
+   * Gebruik het meegeleverde logo op `/content/dam/wknd-mobile/images/wknd-logo.png`.
 
 1. Toevoegen **labellijn** boven de gebeurtenissen weer te geven.
    1. Bewerk de **Tekst** component
    1. Voer de tekst in:
       * `The WKND is here.`
 
-1. Selecteer **gebeurtenissen** weer te geven:
+1. Selecteer de **gebeurtenissen** weer te geven:
    1. Stel de volgende configuratie in op de knop **Eigenschappen** tab:
       * Model: **Gebeurtenis**
       * Bovenliggend pad: **/content/dam/wknd-mobile/nl/events**
@@ -84,9 +85,8 @@ Als u dit contract niet toepast op een gepubliceerde API, kan dit leiden tot een
 > Deze JSON kan worden uitgevoerd in een **gespannen** (geformatteerd) wijze voor menselijke leesbaarheid door te gebruiken `.tidy` kiezer:
 > * [http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json](http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json)
 
-
 ## Volgende stap
 
-Installeer desgewenst de [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM-auteur via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
+Installeer desgewenst de [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM auteur via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit en vorige hoofdstukken van de zelfstudie worden beschreven.
 
-* [Hoofdstuk 6 - De inhoud in AEM-publicaties beschikbaar maken als JSON](./chapter-6.md)
+* [Hoofdstuk 6 - De inhoud beschikbaar maken bij AEM publiceren als JSON](./chapter-6.md)

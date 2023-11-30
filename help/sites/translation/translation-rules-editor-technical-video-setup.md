@@ -2,16 +2,13 @@
 title: Vertaalregels instellen in AEM
 description: Met de gebruikersinterface van de vertaalconfiguratie kan een gebruiker regels voor het vertalen van inhoud in AEM Sites beheren. In deze video wordt gedetailleerd ingegaan op het maken van een nieuwe vertaalregel voor een aangepaste component.
 feature: Language Copy
-topics: localization, content-architecture
-audience: developer, administrator
-doc-type: technical video
-activity: setup
 version: 6.4, 6.5
 topic: Localization
 role: User
 level: Beginner
+doc-type: Technical Video
 exl-id: 359da531-839c-4680-abf9-c880cc700159
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -32,7 +29,7 @@ De vertaalregels identificeren inhoud in AEM die voor vertaling moet worden geë
 
 1. Eigenschappen die op weg en/of middeltype moeten worden vertaald
 2. Filters voor eigenschappen die NIET moeten worden vertaald
-3. Inhoud waarnaar wordt verwezen die moet worden vertaald (bijvoorbeeld afbeeldingen of inhoudsfragmenten)
+3. Inhoud waarnaar wordt verwezen en die moet worden vertaald (bijvoorbeeld afbeeldingen of inhoudsfragmenten)
 
 De redacteur van vertaalregels die het vertaling xml- dossier zal bijwerken. De UI van de Configuratie van de Vertaling maakt het gemakkelijker om diverse vertaalregels te beheren en beschermt tegen typos wanneer het uitgeven van XML direct.
 

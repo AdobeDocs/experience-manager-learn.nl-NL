@@ -7,16 +7,16 @@ level: Intermediate
 version: 6.5
 feature: Output Service,Forms Service
 topic: Administration
-kt: 11091
+jira: KT-11091
 exl-id: 933ec5f6-3e9c-4271-bc35-4ecaf6dbc434
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
 
 ---
 
-# Hoe te om verwezenlijking van pdf- dossiers toe te laten door grote xml- gegevensdossiers met xdp malplaatjes samen te voegen
+# Het maken van pdf-bestanden inschakelen door grote XML-gegevensbestanden samen te voegen met xdp-sjablonen
 
 Bij het samenvoegen van grote XML-gegevensbestanden met de xdp-sjabloon ziet u mogelijk de volgende fout in het logbestand
 
@@ -33,7 +33,7 @@ Ga als volgt te werk om de bovenstaande fout op te lossen
 * Een bestand maken met de naam **org.apache.aries.transaction.config** met de volgende inhoud aries.transaction.timeout=&quot;1200&quot; in de installatiemap. U kunt de time-outwaarde naar wens wijzigen. De time-outwaarde is in seconden
 
 >[!NOTE]
-> Als u de configuratie org.apache.aries.transaction hebt gemaakt, kunt u de time-outwaarden voor de transactie bewerken vanuit het menu [configMgr](http://localhost:4502/system/console/configMgr) in plaats van het bestand te bewerken
+> Als u de configuratie org.apache.aries.transaction hebt gemaakt, kunt u de time-outwaarden voor de transactie bewerken vanuit het menu [configMgr](http://localhost:4502/system/console/configMgr) en niet het bestand bewerken
 
 
 ## De instellingen van de Jacorb ORB-provider wijzigen

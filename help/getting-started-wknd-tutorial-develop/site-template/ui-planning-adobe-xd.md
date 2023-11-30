@@ -2,16 +2,16 @@
 title: UI-planning met Adobe XD | AEM Snel site maken
 description: Leer hoe u met Adobe XD UI-kits uw Adobe Experience Manager Sites-implementatie kunt ontwerpen en versnellen.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components
 role: Developer
 level: Beginner
-kt: 9371
+jira: KT-9371
 thumbnail: 338680.jpg
+doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # UI-planning met Adobe XD {#ui-planning-adobe-xd}
 
-In de meeste gevallen begint de planning voor een nieuwe website met modellen en statische ontwerpen. [Adobe XD](https://www.adobe.com/products/xd.html) is een best-in-klasse ontwerphulpmiddel om gebruikerservaring op te bouwen. Adobe raadt u aan de implementatie van Sites te plannen met behulp van UI-modellen voor het gebruik van Adobe XD of een ander gereedschap.
+In de meeste gevallen begint de planning voor een nieuwe website met modellen en statische ontwerpen. [Adobe XD](https://www.adobe.com/products/xd.html) is een best-in-klasse ontwerphulpmiddel om gebruikerservaring op te bouwen. Adobe raadt u aan uw Sites-implementatie te plannen met behulp van UI-modellen voor het gebruik van Adobe XD of een ander hulpprogramma.
 
 ## Vereisten {#prerequisites}
 
 Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat de in het vorige hoofdstuk beschreven stappen zijn voltooid. Dit hoofdstuk is gewoon een &#39;watch &amp; learn&#39;-gedeelte. Er is geen actie vereist om verder te kunnen gaan met volgende hoofdstukken.
 
-Als u de video&#39;s wilt volgen die u nodig hebt [Adobe XD](https://www.adobe.com/products/xd/pricing/free-trial.html) geïnstalleerd, een [gratis proefversie beschikbaar](https://www.adobe.com/products/xd/pricing/free-trial.html).
+Als u de gewenste video&#39;s wilt volgen [Adobe XD](https://www.adobe.com/products/xd/pricing/free-trial.html) geïnstalleerd, een [gratis proefversie beschikbaar](https://www.adobe.com/products/xd/pricing/free-trial.html).
 
 ## Doelstelling
 
@@ -61,7 +61,7 @@ Stappen op hoog niveau:
 
 Gefeliciteerd, u hebt geleerd hoe de Uitrustingen van UI van Adobe XD kunnen worden gebruikt om een implementatie van AEM Sites in kaart te brengen en te plannen.
 
-Extra [UI-kits beschikbaar](https://www.adobe.com/products/xd/features/ui-kits.html) om te inspecteren en te downloaden.
+Extra [UI-kits zijn beschikbaar](https://www.adobe.com/products/xd/features/ui-kits.html) om te inspecteren en te downloaden.
 
 ### Volgende stappen {#next-steps}
 

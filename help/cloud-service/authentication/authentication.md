@@ -1,16 +1,16 @@
 ---
 title: Verificatie in AEM as a Cloud Service
-description: Leer over authentificatie in AEM as a Cloud Service's.
+description: Leer over authentificatie in AEM as a Cloud Service.
 version: Cloud Service
 feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
 level: Intermediate
-kt: 10436
+jira: KT-10436
 thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
-source-git-commit: 171daf292355203b903a6c29bebad9216dfd95b7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service steunt veelvoudige van authentificatieopties en varieert door de diensttype.
 
-|  | AEM-auteur | AEM-publicatie |
+|                       | AEM auteur | AEM publiceren |
 |-----------------------|:----------:|:-----------:|
 | [Adobe IMS](../accessing/overview.md) | ✔ | ✘ |
 | ・ [SAML 2.0 via Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✘ |
@@ -40,14 +40,14 @@ Klik in de overeenkomstige verbinding hieronder aan voor details over opstelling
       <a  href="../accessing/overview.md"><img alt="Adobe IMS" src="./assets/card--adobe-ims.png"/></a>
       <div><strong><a href="../accessing/overview.md">Adobe IMS</a></strong></div>
       <p>
-          Toegang tot AEM-auteurs beheren met Adobe IMS via de Adobe Admin Console.
+          Toegang tot AEM auteur beheren met Adobe IMS via de Adobe Admin Console.
       </p>
     </td>   
    <td>
       <a  href="./saml-2-0.md"><img alt="SAML 2.0" src="./assets/card--saml-2-0.png"/></a>
       <div><strong><a href="./saml-2-0.md">SAML 2.0</a></strong></div>
       <p>
-        Verifieer de gebruiker van uw website aan IDP gebruikend de integratie van SAML 2.0 van de Dienst van de Publicatie AEM.
+        Verifieer de gebruiker van uw website aan IDP gebruikend AEM de integratie van SAML 2.0 van de Publish dienst.
       </p>
     </td>   
    <td>

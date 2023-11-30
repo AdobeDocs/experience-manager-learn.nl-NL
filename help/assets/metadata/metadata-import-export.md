@@ -9,8 +9,9 @@ level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
 last-substantial-update: 2022-06-13T00:00:00Z
+doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 1%
@@ -46,7 +47,7 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
 * Single Value, indeling voor eigenschappen
 
    * `<metadata property name> {{<property type}}`
-   * Als het type eigenschap niet wordt opgegeven, wordt standaard String gebruikt.
+   * Als het type eigenschap niet is opgegeven, wordt standaard String gebruikt.
    * Bijvoorbeeld: `dc:title {{String}}`
 
 * Eigenschapnaam is hoofdlettergevoelig

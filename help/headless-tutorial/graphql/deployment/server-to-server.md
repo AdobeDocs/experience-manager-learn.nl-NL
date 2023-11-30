@@ -6,10 +6,10 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10798
+jira: KT-10798
 thumbnail: kt-10798.jpg
 exl-id: d4ae08d9-dc43-4414-ab75-26853186a301
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Server-aan-server plaatsingen vereisen minimale configuratie, aangezien de verbi
 
 De volgende plaatsingsconfiguratie moet op zijn plaats voor server-aan-server toepassingsplaatsen zijn.
 
-| Server-naar-server-app maakt verbinding met | AEM-auteur | AEM-publicatie | Voorvertoning AEM |
+| Server-naar-server-app maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
@@ -36,7 +36,7 @@ De volgende plaatsingsconfiguratie moet op zijn plaats voor server-aan-server to
 
 Aangeautoriseerde aanvragen voor AEM GraphQL API&#39;s vinden doorgaans plaats in de context van server-naar-server-apps, aangezien andere app-typen, zoals [apps van één pagina](./spa.md), [mobiel](./mobile.md), of [Webcomponenten](./web-component.md), gebruikt doorgaans geen autorisatie omdat het moeilijk is om de gegevens te beveiligen.
 
-Wanneer het autoriseren van verzoeken om as a Cloud Service AEM, gebruik [op referenties gebaseerde tokenverificatie van de service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). Als u meer wilt weten over het verifiëren van aanvragen voor AEM as a Cloud Service, raadpleegt u de [tokengebaseerde zelfstudie over verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). De zelfstudie verkent tokengebaseerde verificatie met [AEM Assets HTTP-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) Maar dezelfde concepten en benaderingen zijn van toepassing op toepassingen die werken met AEM Headless GraphQL-API&#39;s.
+Wanneer het autoriseren van verzoeken om as a Cloud Service te AEM, gebruik [op referenties gebaseerde tokenverificatie van de service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). Als u meer wilt weten over het verifiëren van aanvragen voor AEM as a Cloud Service, raadpleegt u de [tokengebaseerde zelfstudie over verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). De zelfstudie verkent tokengebaseerde verificatie met behulp van [AEM Assets HTTP-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) Maar dezelfde concepten en benaderingen zijn van toepassing op toepassingen die werken met AEM Headless GraphQL-API&#39;s.
 
 ## Voorbeeld van een server-naar-server-app
 

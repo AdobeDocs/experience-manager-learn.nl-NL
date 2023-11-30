@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 thumbnail: 7837.jpg
-kt: 7837
+jira: KT-7837
 exl-id: 24a788bb-f0dc-4774-91ab-26fde2de098f
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Aangepaste processtap
 
-Hieronder volgt de volledige code van de stap voor aangepast proces waarmee de native bestanden worden geconverteerd en vervangen door de geconverteerde pdf&#39;s. Deze aangepaste stap zoekt naar alle bijlagen onder de mapnaam die als procesargument in de workflow wordt opgegeven.
+Hieronder volgt de volledige code van de stap voor aangepast proces waarmee de native bestanden worden geconverteerd en vervangen door de geconverteerde pdf&#39;s. Deze aangepaste stap zoekt naar alle bijlagen onder de mapnaam die als een procesargument in de workflow wordt opgegeven.
 Deze aangepaste processtap gebruikt de methoden van de aangepaste DocumentCloudSDKS-service om PDF te maken.
 
 

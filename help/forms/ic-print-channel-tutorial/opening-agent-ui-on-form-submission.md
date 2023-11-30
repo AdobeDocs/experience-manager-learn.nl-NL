@@ -10,13 +10,13 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-kt: 6168
+jira: KT-6168
 thumbnail: 40122.jpg
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -49,15 +49,15 @@ CustomParameterRequest wrapperRequest = new CustomParameterRequest(slingRequest,
 wrapperRequest.getRequestDispatcher("/aem/forms/createcorrespondence.html").include(wrapperRequest, response);
 ```
 
-Regel 1: Hiermee wordt het accountnummer opgehaald uit de parameter request
+Regel 1: Krijg het accountnummer van de aanvraagparameter
 
-Lijn 2-8: Maak parametertoewijzing en stel de juiste sleutels en waarden in om de willekeurige document-id weer te geven.
+Lijn 2-8: Creeer parameterkaart en plaats aangewezen sleutels en waarden om documentId, Willekeurig te weerspiegelen.
 
-Lijn 9-10: Maak een ander object Map voor de invoerparameter die in het formuliergegevensmodel is gedefinieerd.
+Regel 9-10: Maak een ander object Map voor de invoerparameter die in het formuliergegevensmodel is gedefinieerd.
 
-Regel 11: Stel het kenmerk slingRequest &quot;paramMap&quot; in
+Regel 11: Plaats het slingRequest attribuut &quot;paramMap&quot;
 
-Lijn 12-13: Het verzoek doorsturen naar de servlet
+Lijn 12-13: Door:sturen het verzoek aan servlet
 
 Deze mogelijkheid testen op uw server
 

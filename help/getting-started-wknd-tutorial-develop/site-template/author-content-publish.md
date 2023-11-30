@@ -1,17 +1,17 @@
 ---
 title: Inleiding tot ontwerpen en publiceren | AEM Snel site maken
-description: Gebruik de pagina-editor in Adobe Experience Manager AEM om de inhoud van de website bij te werken. Leer hoe Componenten worden gebruikt om ontwerpen te vergemakkelijken. Begrijp het verschil tussen een auteur AEM en publiceer milieu's en leer hoe te om veranderingen in de levende plaats te publiceren.
+description: Gebruik de pagina-editor in Adobe Experience Manager AEM om de inhoud van de website bij te werken. Leer hoe Componenten worden gebruikt om ontwerpen te vergemakkelijken. Begrijp het verschil tussen een AEM auteur- en publicatieomgeving en leer hoe u wijzigingen in de livesite publiceert.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Page Editor
 role: Developer
 level: Beginner
-kt: 7497
+jira: KT-7497
 thumbnail: KT-7497.jpg
+doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 0%
@@ -24,19 +24,19 @@ Het is belangrijk om te begrijpen hoe een gebruiker inhoud voor de website zal b
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worden beschreven in het dialoogvenster [Een site maken](./create-site.md) is voltooid.
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in het dialoogvenster [Een site maken](./create-site.md) hoofdstuk is voltooid.
 
 ## Doelstelling {#objective}
 
 1. Begrijp de concepten van **Pagina&#39;s** en **Componenten** in AEM Sites.
-1. Leer hoe u inhoud van de website kunt bijwerken.
+1. Leer hoe u de inhoud van de website kunt bijwerken.
 1. Leer hoe u wijzigingen op de livesite publiceert.
 
 ## Een nieuwe pagina maken {#create-page}
 
 Een website wordt doorgaans opgedeeld in pagina&#39;s en vormt zo een ervaring van meerdere pagina&#39;s. AEM de inhoud van structuren op dezelfde manier. Maak vervolgens een nieuwe pagina voor de site.
 
-1. Aanmelden bij de AEM **Auteur** Service gebruikt in het vorige hoofdstuk.
+1. Aanmelden bij de AEM **Auteur** De dienst die in het vorige hoofdstuk wordt gebruikt.
 1. Klik in het scherm AEM starten op **Sites** > **WKND-site** > **Engels** > **Artikel**
 1. Klik in de rechterbovenhoek op **Maken** > **Pagina**.
 
@@ -46,7 +46,7 @@ Een website wordt doorgaans opgedeeld in pagina&#39;s en vormt zo een ervaring v
 
 1. Kies de optie **Artikelpagina** sjabloon en klik op **Volgende**.
 
-   Pagina&#39;s in AEM worden gemaakt op basis van een paginasjabloon. Paginasjablonen worden in het dialoogvenster [Paginasjablonen](page-templates.md) hoofdstuk
+   Pagina&#39;s in AEM worden gemaakt op basis van een paginasjabloon. Paginasjablonen worden in het dialoogvenster [Paginasjablonen](page-templates.md) hoofdstuk.
 
 1. Onder **Eigenschappen** Voer een **Titel** van &quot;Hello World&quot;.
 1. Stel de **Naam** te worden `hello-world` en klik op **Maken**.
@@ -70,11 +70,11 @@ Vervolgens maakt u enkele componenten met de AEM Pagina-editor.
 
    Hiermee wordt de componentbibliotheek geopend en worden de beschikbare componenten weergegeven die op de pagina kunnen worden gebruikt.
 
-1. Omlaag schuiven en **Slepen en neerzetten** a **Tekst (v2)** op het hoofdbewerkbare gebied van de pagina.
+1. Omlaag en **Drag+Drop** a **Tekst (v2)** op het hoofdbewerkbare gebied van de pagina.
 
    ![Slepen en tekstcomponent slepen](assets/author-content-publish/drag-drop-text-cmp.png)
 
-1. Klik op de knop **Tekst** om te markeren en klik vervolgens op **moersleutel** pictogram ![Perictogram](assets/author-content-publish/wrench-icon.png) om het dialoogvenster van de component te openen. Voer tekst in en sla de wijzigingen op in het dialoogvenster.
+1. Klik op de knop **Tekst** om te markeren en klik vervolgens op **moersleutel** pictogram ![Perictogram](assets/author-content-publish/wrench-icon.png) om het dialoogvenster Component te openen. Voer tekst in en sla de wijzigingen op in het dialoogvenster.
 
    ![RTF-component](assets/author-content-publish/rich-text-populated-component.png)
 
@@ -83,13 +83,13 @@ Vervolgens maakt u enkele componenten met de AEM Pagina-editor.
 1. Herhaal de bovenstaande stappen, behalve een instantie van het gereedschap **Afbeelding (v2)** op de pagina. Open de **Afbeelding** het dialoogvenster van de component.
 
 1. Schakel in de linkerspoorstaaf over naar de **Asset Finder** door op de knop **Activa** pictogram ![middelenpictogram](assets/author-content-publish/asset-icon.png).
-1. **Slepen en neerzetten** een afbeelding in het dialoogvenster van de component en klik op **Gereed** om de wijzigingen op te slaan.
+1. **Drag+Drop** een afbeelding in het dialoogvenster van de component en klik op **Gereed** om de wijzigingen op te slaan
 
    ![Middelen toevoegen aan dialoogvenster](assets/author-content-publish/add-asset-dialog.png)
 
 1. Merk op dat er componenten op de pagina zijn, zoals **Titel**, **Navigatie**, **Zoeken** die vast zijn. Deze gebieden zijn geconfigureerd als onderdeel van het paginasjabloon en kunnen niet worden gewijzigd op een afzonderlijke pagina. Dit wordt meer onderzocht in het volgende hoofdstuk.
 
-Voel u vrij om te experimenteren met enkele andere componenten. Documentatie over elke [Kerncomponent vindt u hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Een gedetailleerde videoreeks over [Hier kunt u de pagina&#39;s ontwerpen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
+Voel u vrij om te experimenteren met enkele andere componenten. Documentatie over elke [Kerncomponent vindt u hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Een gedetailleerde videoreeks over [Hier kunt u de pagina ontwerpen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
 
 ## Updates publiceren {#publish-updates}
 
@@ -116,8 +116,8 @@ Laten we nu de wijzigingen publiceren.
 
    Aangezien dit een gloednieuwe site is, willen we alle pagina&#39;s publiceren en kunnen we met de wizard Publicatie beheren precies bepalen wat er moet worden gepubliceerd.
 
-1. Onder **Opties** de standaardinstellingen laten staan aan **Publiceren** en deze plannen **Nu**. Klik op **Next**.
-1. Onder **Toepassingsgebied**, selecteert u de **WKND-site** en klik op **Inclusief onderliggende instellingen**. Controleer in het dialoogvenster **Inclusief kinderen**. Schakel de overige selectievakjes uit om ervoor te zorgen dat de hele site wordt gepubliceerd.
+1. Onder **Opties** de standaardinstellingen laten staan **Publiceren** en deze plannen **Nu**. Klik op **Next**.
+1. Onder **Toepassingsgebied**, selecteert u de **WKND-site** en klik op **Inclusief onderliggende instellingen**. Controleer in het dialoogvenster **Inclusief onderliggende items**. Schakel de overige selectievakjes uit om ervoor te zorgen dat de hele site wordt gepubliceerd.
 
    ![Publicatiebereik bijwerken](assets/author-content-publish/update-scope-publish.png)
 
@@ -125,8 +125,8 @@ Laten we nu de wijzigingen publiceren.
 
    ![Referenties publiceren](assets/author-content-publish/publish-references.png)
 
-1. Schakel ten slotte het selectievakje naast **WKND-site** en klik op **Volgende** in de rechterbovenhoek.
-1. In de **Workflows** stap, voer een **Titel werkstroom**. Dit kan om het even welke tekst zijn en kan als deel van een controletraject later nuttig zijn. Voer &quot;Aanvankelijke publicatie&quot; in en klik op **Publiceren**.
+1. Schakel ten slotte het selectievakje naast **WKND-site** en klik op **Volgende** in de rechterbovenhoek
+1. In de **Workflows** stap, voer een **Titel werkstroom**. Dit kan om het even welke tekst zijn en als deel van een controletraject later nuttig. Voer &quot;Aanvankelijke publicatie&quot; in en klik op **Publiceren**.
 
 ![Startversie van werkstroom publiceren](assets/author-content-publish/workflow-step-publish.png)
 
@@ -150,12 +150,12 @@ Navigeer vervolgens naar de service Publiceren om de wijzigingen weer te geven.
    ![Gepubliceerde site](assets/author-content-publish/publish-url-update.png)
 
 1. Met de **Navigatie** menu klikken **Artikel** > **Hallo wereld** om naar de vroeger gemaakte Hello World-pagina te navigeren.
-1. Terugkeren naar de **AEM-auteurservice** en brengt u enkele extra inhoudswijzigingen aan in de Pagina-editor.
-1. Publiceer deze veranderingen direct van binnen de paginaredacteur door te klikken **Pagina-eigenschappen** pictogram > **Pagina publiceren**
+1. Terugkeren naar de **AEM Auteur-service** en brengt u enkele extra inhoudswijzigingen aan in de Pagina-editor.
+1. Deze wijzigingen rechtstreeks vanuit de paginaeditor publiceren door op de knop **Pagina-eigenschappen** pictogram > **Pagina publiceren**
 
    ![direct publiceren](assets/author-content-publish/page-editor-publish.png)
 
-1. Terugkeren naar de **AEM-publicatieservice** om de wijzigingen weer te geven. Waarschijnlijk zult u **niet** zie de updates onmiddellijk. Dit komt omdat de **AEM-publicatieservice** include [caching via een Apache-webserver en CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html). Standaard wordt HTML-inhoud gedurende ~5 minuten in cache geplaatst.
+1. Terugkeren naar de **AEM publicatieservice** om de wijzigingen weer te geven. Waarschijnlijk zult u **niet** zie de updates onmiddellijk. Dit komt omdat de **AEM publicatieservice** include [caching via een Apache-webserver en CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html). Standaard wordt HTML-inhoud gedurende ~5 minuten in cache geplaatst.
 
 1. Als u het cachegeheugen voor test- en foutopsporingsdoeleinden wilt omzeilen, voegt u eenvoudig een queryparameter toe, zoals `?nocache=true`. De URL ziet er zo uit `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Meer informatie over de cachestrategie en de beschikbare configuraties [hier te vinden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
 
@@ -173,6 +173,6 @@ U hebt zojuist wijzigingen in uw AEM-site gemaakt en gepubliceerd.
 
 In een real-world implementatie die een plaats met modellen en ontwerpen UI plant gaat typisch aan verwezenlijking van de Plaats vooraf. Leer hoe u met Adobe XD UI-kits uw Adobe Experience Manager Sites-implementatie kunt ontwerpen en versnellen in [UI-planning met Adobe XD](./ui-planning-adobe-xd.md).
 
-Wilt u doorgaan met het verkennen van AEM Sites-mogelijkheden? Ga naar het hoofdstuk [Paginasjablonen](./page-templates.md) om de relatie tussen een paginasjabloon en een pagina te begrijpen.
+Wilt u doorgaan met het verkennen van AEM Sites-mogelijkheden? Ga naar het hoofdstuk op [Paginasjablonen](./page-templates.md) om de relatie tussen een paginasjabloon en een pagina te begrijpen.
 
 

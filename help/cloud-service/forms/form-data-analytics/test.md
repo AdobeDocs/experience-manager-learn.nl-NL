@@ -8,11 +8,11 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
 topic: Integrations, Development
-kt: 12557
+jira: KT-12557
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Uw oplossing testen
 
-Bekijk een voorbeeld van een formulier en verzend het formulier met behulp van verschillende combinaties van formulierwaarden. Sta meerdere tot 30 minuten toe om uw gegevens te bekijken in Adobe Analytics-rapporten. Gegevensset die naar PROPS wordt gestuurd, wordt eerder weergegeven dan gegevensset die naar Vars wordt ingesteld.
+Bekijk een voorbeeld van een formulier en verzend het formulier met behulp van verschillende combinaties van formulierwaarden. Sta meerdere tot 30 minuten toe om uw gegevens te bekijken in Adobe Analytics-rapporten. Gegevensset die naar props wordt gestuurd, wordt eerder weergegeven dan gegevensset die naar eVars wordt ingesteld.
 
 ## Rapportsuite
 
@@ -37,7 +37,7 @@ Veldvalidatiefouten
 
 ## Foutopsporing
 
-Zorg ervoor dat het Adaptieve formulier dezelfde configuratiecontainer gebruikt die de configuratie voor het starten van de Adobe bevat.
+Zorg ervoor dat het Adaptieve formulier dezelfde configuratiecontainer gebruikt die de Adobe Launch Configuration bevat.
 
 Ga als volgt te werk om te bevestigen dat het formulier gegevens naar Adobe Analytics verzendt
 
@@ -54,7 +54,7 @@ Communiceer met uw formulier terwijl u het consolevenster open houdt. Je moet zo
 
 ## Adobe Experience Platform Debugger gebruiken
 
-Voeg de [AEP-extensie voor foutopsporing](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) aan uw browser (u moet zich aanmelden) om meer het zuiveren informatie te krijgen
+Voeg de [AEP-extensie foutopsporing](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) aan uw browser (u moet zich aanmelden) om meer het zuiveren informatie te krijgen
 
 ![platform-debugger](assets/platform-debugger.png)
 

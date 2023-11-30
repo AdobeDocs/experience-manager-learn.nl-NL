@@ -9,8 +9,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -60,19 +61,19 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
    1. Navigeer vanuit uw Adobe Target-venster naar **Activiteiten** tab.
    2. Klikken **Activiteit maken** en selecteer het type activiteit als **A/B-test**
       ![Adobe Target - Activiteiten maken](assets/personalization-use-case-2/create-ab-activity.png)
-   3. Selecteer **Web** kanaal en kies **Visual Experience Composer**.
+   3. Selecteer de **Web** kanaal en kies **Visual Experience Composer**.
    4. Voer de **URL van activiteit** en klik op **Volgende** om Visual Experience Composer te openen.
       ![Adobe Target - Activiteiten maken](assets/personalization-use-case-2/create-activity-ab-name.png)
-   5. Voor **Visual Experience Composer** om te laden, inschakelen **Onveilige scripts laden** op uw browser en de pagina opnieuw laden.
+   5. Voor **Visual Experience Composer** om te laden, inschakelen **Onveilige scripts laden** op uw browser en laad de pagina opnieuw.
       ![Gericht op ervaring](assets/personalization-use-case-1/load-unsafe-scripts.png)
    6. Merk op de WKND homepage van de Plaats open in de redacteur van Composer van de Visuele Ervaring.
       ![VEC](assets/personalization-use-case-2/vec.png)
    7. Overslaan **Ervaring B** en selecteert u andere opties.
       ![Ervaring B](assets/personalization-use-case-2/redirect-url.png)
-   8. Selecteren **Omleiden naar URL** en voert u de URL in naar de nieuwe WKND-startpagina. (http://localhost:4503/content/wknd/en1.html)
+   8. Selecteren **Omleiden naar URL** en voert u de URL in naar de nieuwe WKND-startpagina. http://localhost:4503/content/wknd/en1.html)
       ![Ervaring B](assets/personalization-use-case-2/redirect-url-2.png)
    9. **Opslaan** uw wijzigingen aanbrengt en verdergaat met de volgende stappen van Activity Creation.
-   10. Selecteer **Methode voor verkeerstoewijzing** als handmatig en 100% verkeer toewijzen aan **Ervaring B**.
+   10. Selecteer de **Methode voor verkeerstoewijzing** als handmatig en 100% verkeer toewijzen aan **Ervaring B**.
       ![Ervaring B Verkeer](assets/personalization-use-case-2/traffic.png)
    11. Klik op **Next**.
    12. Verlenen **Goederenstatistieken** voor uw Activiteit en sparen en sluit uw Test A/B.
@@ -85,4 +86,4 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 
 ## Samenvatting
 
-In dit hoofdstuk kan een markeerteken een activiteit maken om uw sitepagina&#39;s die op AEM worden gehost, om te leiden naar een nieuwe pagina met Adobe Target.
+In dit hoofdstuk kan een markeerteken een activiteit maken om uw sitepagina&#39;s die op AEM worden gehost, om te leiden naar een nieuwe pagina met behulp van Adobe Target.

@@ -3,16 +3,14 @@ title: Een ontwikkelomgeving voor lokale AEM instellen
 description: Leer hoe u een lokale ontwikkelomgeving instelt voor Experience Manager. Ga vertrouwd met lokale installatie, Apache Maven, geïntegreerde ontwikkelomgevingen en foutopsporing en probleemoplossing. Eclipse IDE van het gebruik, CRXDE-Lite, de Code van Visual Studio, en IntelliJ.
 version: 6.5
 feature: Developer Tools
-topics: development
-activity: develop
-audience: developer
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
+doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 0%
@@ -70,7 +68,7 @@ Het is ook *kritisch* testcode tegen een lokale ***Publiceren*** -instantie. De 
 
 1. Dubbelklik op de knop ***aem-auteur-p4502.jar*** te installeren **Auteur** -instantie. Hiermee wordt de auteurinstantie gestart, die op de poort wordt uitgevoerd **4502** op de lokale computer.
 
-Dubbelklik op de knop ***aem-publish-p4503.jar*** te installeren **Publiceren** -instantie. Hiermee wordt de instantie Publiceren gestart, die op de poort wordt uitgevoerd **4503** op de lokale computer.
+Dubbelklik op de knop ***aem-publish-p4503.jar*** te installeren **Publiceren** -instantie. Hiermee wordt de instantie Publiceren gestart en wordt de poort uitgevoerd **4503** op de lokale computer.
 
 >[!NOTE]
 >
@@ -84,7 +82,7 @@ U kunt ook dubbelklikken op het JAR-bestand door AEM te starten vanaf de opdrach
 $ java -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=30303 -jar aem-author-p4502.jar -gui -r"author,localdev"
 ```
 
-Hier, de `-X` zijn JVM-opties en `-D` zijn aanvullende frameworkeigenschappen, zie voor meer informatie [Een AEM-instantie implementeren en onderhouden](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html) en [Meer opties beschikbaar in het QuickStart-bestand](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html#further-options-available-from-the-quickstart-file).
+Hier, `-X` zijn JVM-opties en `-D` zijn aanvullende frameworkeigenschappen, zie voor meer informatie [Een AEM-instantie implementeren en onderhouden](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html) en [Meer opties beschikbaar in het QuickStart-bestand](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html#further-options-available-from-the-quickstart-file).
 
 ## Apache Maven installeren
 
@@ -138,7 +136,7 @@ Wanneer, die een winde gebruiken gelieve te controleren `classic` op het tabblad
 
 ### [!DNL Eclipse] IDE
 
-De **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** is een van de populairste IDE&#39;s voor Java™-ontwikkeling, grotendeels omdat het een open-source is en ***vrij***! Adobe beschikt over een plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)**, for [!DNL Eclipse] om gemakkelijker ontwikkeling met een aardige GUI toe te staan om code met een lokale AEM instantie te synchroniseren. De [!DNL Eclipse] IDE wordt geadviseerd voor ontwikkelaars nieuw om grotendeels te AEM wegens GUI steun door [!DNL AEM Developer Tools].
+De **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** is een van de populairste IDE&#39;s voor Java™-ontwikkeling, grotendeels omdat het een open-source is en ***vrij***! Adobe biedt een insteekmodule, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)**, for [!DNL Eclipse] om gemakkelijker ontwikkeling met een aardige GUI toe te staan om code met een lokale AEM instantie te synchroniseren. De [!DNL Eclipse] IDE wordt geadviseerd voor ontwikkelaars nieuw om grotendeels te AEM wegens GUI steun door [!DNL AEM Developer Tools].
 
 #### Installatie en installatie
 
@@ -172,9 +170,9 @@ De **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** is een krachtige IDE voo
 
 ### [!DNL Visual Studio Code]
 
-**[Visual Studio-code](https://code.visualstudio.com/)** is al snel een favoriete tool geworden voor ***front-end ontwikkelaars*** met verbeterde JavaScript-ondersteuning, [!DNL Intellisense]en ondersteuning voor browserfoutopsporing. **[!DNL Visual Studio Code]** is opensource, gratis, met veel krachtige extensies. [!DNL Visual Studio Code] kan worden opgezet om met AEM te integreren met behulp van een Adobe-instrument, **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code).** Er zijn ook verschillende door de gemeenschap ondersteunde extensies die kunnen worden geïnstalleerd om met AEM te integreren.
+**[Visual Studio-code](https://code.visualstudio.com/)** is al snel een favoriete tool geworden voor ***front-end ontwikkelaars*** met verbeterde JavaScript-ondersteuning, [!DNL Intellisense]en ondersteuning voor browserfoutopsporing. **[!DNL Visual Studio Code]** is opensource, gratis, met veel krachtige extensies. [!DNL Visual Studio Code] kan worden opgezet om met AEM te integreren met behulp van een instrument voor Adobe, **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code).** Er zijn ook verschillende door de gemeenschap ondersteunde extensies die kunnen worden geïnstalleerd om met AEM te integreren.
 
-[!DNL Visual Studio Code] is een goede keuze voor front-end ontwikkelaars die vooral CSS/LESS en JavaScript-code schrijven om AEM clientbibliotheken te maken. Dit hulpmiddel kan niet de beste keus voor nieuwe AEM ontwikkelaars zijn aangezien de knoopdefinities (dialogen, componenten) in ruwe XML moeten worden uitgegeven. Er zijn verschillende Java™-extensies beschikbaar voor [!DNL Visual Studio Code]echter, als het vooral gaat om het ontwikkelen van Java™ [!DNL Eclipse IDE] of [!DNL IntelliJ] heeft de voorkeur.
+[!DNL Visual Studio Code] is een goede keuze voor front-end ontwikkelaars die vooral CSS/LESS en JavaScript-code schrijven om AEM clientbibliotheken te maken. Dit hulpmiddel kan niet de beste keus voor nieuwe AEM ontwikkelaars zijn aangezien de knoopdefinities (dialogen, componenten) in ruwe XML moeten worden uitgegeven. Er zijn verschillende Java™-extensies beschikbaar voor [!DNL Visual Studio Code]echter, als het vooral gaat om het ontwikkelen van Java™ [!DNL Eclipse IDE] of [!DNL IntelliJ] kan de voorkeur verdienen.
 
 #### Belangrijke koppelingen
 
@@ -202,7 +200,7 @@ De **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** is een krachtige IDE voo
 
 ## Problemen oplossen
 
-***Help!*** Mijn code werkt niet! Net als bij alle ontwikkelingen zijn er tijden (waarschijnlijk veel) waarin uw code niet naar behoren werkt. AEM is een krachtig platform, maar met veel kracht... komt tot grote complexiteit. Hieronder vindt u een aantal uitgangspunten op hoog niveau voor het oplossen van problemen en het opsporen van problemen (maar ver van een volledige lijst met dingen die fout kunnen gaan):
+***Help!*** Mijn code werkt niet! Net als bij alle ontwikkelingen zijn er tijden (waarschijnlijk veel) waarin uw code niet naar behoren werkt. AEM is een krachtig platform, maar met grote kracht.. komt er grote complexiteit. Hieronder vindt u een aantal uitgangspunten op hoog niveau voor het oplossen van problemen en het opsporen van problemen (maar ver van een volledige lijst met dingen die fout kunnen gaan):
 
 ### Codeimplementatie verifiëren
 
@@ -214,7 +212,7 @@ Een goede eerste stap, wanneer het ontmoeten van een kwestie moet verifiëren da
 
 #### Logbestanden controleren
 
-AEM is een chatplatform en registreert nuttige informatie in het **error.log**. De **error.log** kan worden gevonden waar AEM is geïnstalleerd: &lt; `aem-installation-folder>/crx-quickstart/logs/error.log`.
+AEM is een chatplatform en registreert nuttige informatie in het **error.log**. De **error.log** kan worden gevonden op de plaats waar AEM is geïnstalleerd: &lt; `aem-installation-folder>/crx-quickstart/logs/error.log`.
 
 Een handige techniek voor het bijhouden van problemen is het toevoegen van loginstructies in uw Java™-code:
 
@@ -236,7 +234,7 @@ public class MyClass {
 }
 ```
 
-Standaard worden de **error.log** is gevormd aan logboek *[!DNL INFO]* instructies. Als u het logboekniveau wilt veranderen, kunt u dit doen door te gaan [!UICONTROL Log Support]: [http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog). U kunt ook vaststellen dat de **error.log** is te chagrijnig. U kunt de [!UICONTROL Log Support] om logboekverklaringen voor enkel een gespecificeerd pakket Java™ te vormen. Dit is een beste praktijk voor projecten, om de kwesties van de douanecode van OTB AEM platformkwesties gemakkelijk te scheiden.
+Standaard worden de **error.log** is gevormd aan logboek *[!DNL INFO]* instructies. Als u het logboekniveau wilt veranderen, kunt u dit doen door te gaan [!UICONTROL Log Support]: [http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog). U kunt ook vaststellen dat de **error.log** is te chagrijnig. U kunt de [!UICONTROL Log Support] om logboekverklaringen voor enkel een gespecificeerd pakket Java™ te vormen. Dit is een beste praktijk voor projecten, om de kwesties van de douanecode van OTB AEM platformkwesties gemakkelijk van elkaar te scheiden.
 
 ![Logconfiguratie in AEM](./assets/set-up-a-local-aem-development-environment/logging.png)
 
@@ -252,7 +250,7 @@ Een handig gereedschap dat u kunt gebruiken is de [!UICONTROL Dependency Finder]
 
 ![Kernonderdelen](assets/set-up-a-local-aem-development-environment/core-components.png)
 
-Als u doorgaat met het bovenstaande voorbeeld, kunt u zien dat de versie die op de AEM is geïnstalleerd, **12,2** vs **12,6** dat de bundel had verwacht. Daar kun je achterwaarts werken en zien of de [!DNL Maven] afhankelijkheden van AEM komen overeen met de [!DNL Maven] afhankelijkheden in het AEM project. In, het bovenstaande voorbeeld [!DNL Core Components] **v2.2.0** is geïnstalleerd op de AEM instantie maar de codebundel is gebouwd met een afhankelijkheid van **v2.2.2**, vandaar de reden voor het probleem van de afhankelijkheid.
+Als u doorgaat met het bovenstaande voorbeeld, kunt u zien dat de versie die op de AEM is geïnstalleerd, **12,2** vs **12,6** dat de bundel had verwacht. Daar kun je achterwaarts werken en zien of de [!DNL Maven] afhankelijkheid van AEM komt overeen met [!DNL Maven] afhankelijkheden in het AEM project. In, het bovenstaande voorbeeld [!DNL Core Components] **v2.2.0** is geïnstalleerd op de AEM instantie maar de codebundel is gebouwd met een afhankelijkheid van **v2.2.2**, vandaar de reden voor het probleem van de afhankelijkheid.
 
 #### Registratie van verkoopmodellen verifiëren {#osgi-component-sling-models}
 
@@ -276,10 +274,10 @@ Een ander vaak ondervonden probleem bij het ontwikkelen van front-end code is ou
 
 Met de verschillende methodes van categorieën en bedden om veelvoudige cliëntbibliotheken te omvatten kan het lastig zijn om problemen op te lossen. AEM stelt verschillende hulpmiddelen beschikbaar om hierbij te helpen. Een van de belangrijkste instrumenten is [!UICONTROL Rebuild Client Libraries] die AEM dwingen om eventuele LESS-bestanden opnieuw te compileren en de CSS te genereren.
 
-* [Stompe lampen](http://localhost:4502/libs/granite/ui/content/dumplibs.html) - Hiermee worden alle clientbibliotheken weergegeven die in de AEM zijn geregistreerd. &lt;host>/libs/granite/ui/content/dumplibs.html
-* [Uitvoer testen](http://localhost:4502/libs/granite/ui/content/dumplibs.test.html) - stelt een gebruiker in staat de verwachte HTML-uitvoer van clientlib te zien op basis van categorie. &lt;host>/libs/granite/ui/content/dumplibs.test.html
-* [Validatie van bibliotheekafhankelijke onderdelen](http://localhost:4502/libs/granite/ui/content/dumplibs.validate.html) - Hiermee worden afhankelijkheden of ingesloten categorieën gemarkeerd die niet zijn gevonden. &lt;host>/libs/granite/ui/content/dumplibs.validate.html
-* [Client-bibliotheken opnieuw samenstellen](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) - kan een gebruiker de AEM dwingen alle clientbibliotheken opnieuw samen te stellen of de cache van clientbibliotheken ongeldig te maken. Dit gereedschap is effectief bij het ontwikkelen met LESS, omdat dit AEM ertoe kan dwingen de gegenereerde CSS opnieuw te compileren. Over het algemeen is het effectiever om de cache ongeldig te maken en vervolgens een pagina te vernieuwen in plaats van alle bibliotheken opnieuw samen te stellen. &lt;host>/libs/granite/ui/content/dumplibs.rebuild.html
+* [Reliëfstructuren](http://localhost:4502/libs/granite/ui/content/dumplibs.html) - Hiermee worden alle clientbibliotheken weergegeven die in de AEM zijn geregistreerd. &lt;host>/libs/granite/ui/content/dumplibs.html
+* [Uitvoer testen](http://localhost:4502/libs/granite/ui/content/dumplibs.test.html) - stelt een gebruiker in staat de verwachte HTML-uitvoer van clientlib te zien op basis van categorie. &lt;host>/libs/granite/ui/content/dumplibs.test
+* [Validatie van bibliotheekafhankelijke onderdelen](http://localhost:4502/libs/granite/ui/content/dumplibs.validate.html) - Hiermee worden afhankelijkheden of ingesloten categorieën gemarkeerd die niet zijn gevonden. &lt;host>/libs/granite/ui/content/dumplibs.validate
+* [Client-bibliotheken opnieuw samenstellen](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) - kan een gebruiker de AEM dwingen alle clientbibliotheken opnieuw samen te stellen of de cache van clientbibliotheken ongeldig te maken. Dit gereedschap is effectief bij het ontwikkelen met LESS, omdat dit AEM ertoe kan dwingen de gegenereerde CSS opnieuw te compileren. Over het algemeen is het effectiever om de cache ongeldig te maken en vervolgens een pagina te vernieuwen in plaats van alle bibliotheken opnieuw samen te stellen. &lt;host>/libs/granite/ui/content/dumplibs.rebuild
 
 ![Fouten opsporen in Clientlibs](assets/set-up-a-local-aem-development-environment/debugging-clientlibs.png)
 

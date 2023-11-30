@@ -4,13 +4,13 @@ description: Verifieer het mobiele aantal verbonden aan het toepassingsaantal ge
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
-kt: 6594
+jira: KT-6594
 thumbnail: 6594.jpg
 topic: Development
 role: Developer
 level: Experienced
 exl-id: d486d5de-efd9-4dd3-9d9c-1bef510c6073
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -41,9 +41,9 @@ De OpenAPI-specificatie (voorheen Swagger Specification) is een API-beschrijving
 Als u uw eerste wagger/OpenAPI-bestand wilt maken, volgt u de [OpenAPI-documentatie](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
-> AEM Forms biedt ondersteuning voor OpenAPI Specification versie 2.0 (fka Swagger).
+> AEM Forms ondersteunt OpenAPI Specification versie 2.0 (fka Swagger).
 
-Gebruik de [wageneditor](https://editor.swagger.io/) om uw wagerbestand te maken om de bewerkingen te beschrijven die OTP-code verzenden en verifiëren die met SMS is verzonden. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide wagerbestand kan worden gedownload van [hier](assets/two-factore-authentication-swagger.zip)
+Gebruik de [wagenbewerker](https://editor.swagger.io/) om uw wagerbestand te maken om de bewerkingen te beschrijven die OTP-code verzenden en verifiëren die met SMS is verzonden. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt. Het voltooide wagerbestand kan worden gedownload van [hier](assets/two-factore-authentication-swagger.zip)
 
 ## Gegevensbron maken
 

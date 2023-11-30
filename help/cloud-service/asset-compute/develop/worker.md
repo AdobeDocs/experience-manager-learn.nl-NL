@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6282
+jira: KT-6282
 thumbnail: KT-6282.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 7d51ec77-c785-4b89-b717-ff9060d8bda7
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -30,20 +30,20 @@ We maken een Asset compute-worker die een nieuwe horizontale afbeeldingsuitvoeri
 
 ## Logische stroom van een aanroep van een Asset compute-worker
 
-asset compute workers implementeren het Asset compute SDK worker API-contract in de `renditionCallback(...)` functie, die conceptueel is:
+Asset compute workers implementeren het Asset compute SDK worker API-contract in de `renditionCallback(...)` functie, die conceptueel is:
 
 + __Invoer:__ De oorspronkelijke binaire en verwerkingsprofielparameters van een AEM element
 + __Uitvoer:__ Een of meer uitvoeringen die aan het AEM-element moeten worden toegevoegd
 
 ![Logische stroom van asset compute worker](./assets/worker/logical-flow.png)
 
-1. De AEM Auteursdienst roept de Asset compute worker aan, die de activa verstrekt __(1 bis)__ origineel binair (`source` parameter), en __(1 ter)__ alle parameters die zijn gedefinieerd in het verwerkingsprofiel (`rendition.instructions` parameter).
+1. AEM de Auteursdienst roept de Asset compute worker aan, die de activa verstrekt __(1 bis)__ origineel binair (`source` parameter), en __(1 ter)__ alle parameters die zijn gedefinieerd in het verwerkingsprofiel (`rendition.instructions` parameter).
 1. De Asset compute SDK organiseert de uitvoering van de metagegevens van de aangepaste Asset compute `renditionCallback(...)` functie, die een nieuwe binaire vertoning produceert, die op het originele binaire getal van het element wordt gebaseerd __(1 bis)__ en alle parameters __(1 ter)__.
 
    + In dit leerprogramma wordt de vertoning &quot;in proces&quot;gecreeerd, betekenend de worker de vertoning samenstelt, nochtans kan het bronbinaire getal naar andere dienst APIs van het Web voor vertoningsgeneratie eveneens worden verzonden.
 
 1. De Asset compute-worker slaat de binaire gegevens van de nieuwe uitvoering op `rendition.path`.
-1. De binaire gegevens waarnaar wordt geschreven `rendition.path` wordt via de Asset compute SDK naar de AEM Auteur Service vervoerd en wordt blootgesteld als __(4 bis)__ een tekstuitvoering en __(4 ter)__ Doorgegaan naar het metagegevensknooppunt van het element.
+1. De binaire gegevens waarnaar wordt geschreven `rendition.path` wordt via de Asset compute SDK naar AEM Auteur Service vervoerd en wordt blootgesteld als __(4 bis)__ een tekstuitvoering en __(4 ter)__ Doorgegaan naar het metagegevensknooppunt van het element.
 
 In het bovenstaande diagram worden de problemen beschreven die de Asset compute ontwikkelaar onder ogen ziet en wordt een logische stroom weergegeven naar de aanroep van de Asset compute worker. Voor de nieuwsgierige [interne gegevens over de uitvoering van de Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) zijn beschikbaar, maar alleen van de SDK API-contracten voor openbare Asset computen kan worden afgeweken.
 
@@ -153,7 +153,7 @@ De arbeiders van de asset compute kunnen in parameters lezen die binnen via Prof
 
 Deze kunnen worden gelezen door toegang te krijgen tot `rendition.instructions.<parameterName>` in de code van de worker.
 
-Hier lezen we in de configureerbare uitvoering `SIZE`, `BRIGHTNESS` en `CONTRAST`, waarbij standaardwaarden worden opgegeven als er geen waarden zijn opgegeven via het verwerkingsprofiel. Let op: `renditions.instructions` worden doorgegeven als tekenreeksen wanneer deze worden aangeroepen vanuit AEM as a Cloud Service verwerkingsprofielen, zodat deze worden omgezet in de juiste gegevenstypen in de arbeiderscode.
+Hier lezen we in de configureerbare uitvoering `SIZE`, `BRIGHTNESS` en `CONTRAST`, met standaardwaarden als er geen waarden zijn opgegeven via het verwerkingsprofiel. Let op: `renditions.instructions` worden doorgegeven als tekenreeksen wanneer deze worden aangeroepen vanuit AEM as a Cloud Service verwerkingsprofielen, zodat deze worden omgezet in de juiste gegevenstypen in de arbeiderscode.
 
 ```javascript
 'use strict';
@@ -180,11 +180,11 @@ exports.main = worker(async (source, rendition, params) => {
 
 ## Fouten genereren{#errors}
 
-asset compute workers kunnen situaties tegenkomen die tot fouten leiden. De Adobe Asset compute SDK biedt [een reeks vooraf gedefinieerde fouten](https://github.com/adobe/asset-compute-commons#asset-compute-errors) die kunnen worden gegenereerd wanneer dergelijke situaties zich voordoen. Als er geen specifiek fouttype van toepassing is, `GenericError` kan worden gebruikt, of specifieke `ClientErrors` kan worden gedefinieerd.
+Workers van asset computen kunnen situaties tegenkomen die tot fouten leiden. De Adobe Asset compute SDK biedt [een reeks vooraf gedefinieerde fouten](https://github.com/adobe/asset-compute-commons#asset-compute-errors) die kunnen worden gegenereerd wanneer dergelijke situaties zich voordoen. Als er geen specifiek fouttype van toepassing is, `GenericError` kan worden gebruikt, of specifieke `ClientErrors` kan worden gedefinieerd.
 
 Voordat u begint met het verwerken van de uitvoering, moet u controleren of alle parameters geldig zijn en worden ondersteund in de context van deze worker:
 
-+ Zorg ervoor dat de parameters van de vertoningsinstructie voor `SIZE`, `CONTRAST`, en `BRIGHTNESS` zijn geldig. Als dat niet het geval is, genereert u een aangepaste fout `RenditionInstructionsError`.
++ Zorg ervoor dat de parameters van de vertoningsinstructie voor `SIZE`, `CONTRAST`, en `BRIGHTNESS` zijn geldig. Zo niet, dan genereert u een aangepaste fout `RenditionInstructionsError`.
    + Een aangepaste `RenditionInstructionsError` klasse die is uitgebreid `ClientError` wordt onder aan dit bestand gedefinieerd. Het gebruik van een specifieke aangepaste fout is handig wanneer [schriftelijke tests](../test-debug/test.md) voor de werknemer.
 
 ```javascript
@@ -250,7 +250,7 @@ Wanneer de parameters worden gelezen, ontsmet en gevalideerd, wordt code geschre
 1. De getransformeerde locatie plaatsen `image` in het midden van de `renditionImage` met een transparante achtergrond
 1. Schrijf de samengestelde, `renditionImage` tot `rendition.path` zodat het terug in AEM kan worden bewaard als activa worden uitgevoerd.
 
-Deze code gebruikt de [Jimp API&#39;s](https://github.com/oliver-moran/jimp#jimp) om deze afbeeldingstransformaties uit te voeren.
+In deze code worden de [Jimp API&#39;s](https://github.com/oliver-moran/jimp#jimp) om deze afbeeldingstransformaties uit te voeren.
 
 De werknemers van de asset compute moeten hun werk synchroon beëindigen, en `rendition.path` moet volledig worden teruggeschreven naar `renditionCallback` voltooid. Dit vereist dat de asynchrone functievraag synchroon wordt gemaakt gebruikend `await` operator. Als u niet bekend bent met asynchrone functies in JavaScript en hoe u deze synchroon kunt laten uitvoeren, moet u zich vertrouwd maken met [JavaScript-operator voor wachten](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await).
 
@@ -322,7 +322,7 @@ Nu de arbeiderscode volledig is, en eerder geregistreerd en gevormd in [manifest
 
 1. Van de wortel van het project van de Asset compute
 1. Uitvoeren `aio app run`
-1. Wacht tot het Hulpmiddel van de Ontwikkeling van de Asset compute in een nieuw venster wordt geopend
+1. Wacht tot Asset compute Development Tool in een nieuw venster wordt geopend
 1. In de __Een bestand selecteren...__ een voorbeeldafbeelding selecteren die u wilt verwerken
    + Selecteer een voorbeeldafbeeldingsbestand dat u wilt gebruiken als binair bronelement
    + Tik op de knop __(+)__ aan de linkerkant, en upload een [voorbeeldafbeelding](../assets/samples/sample-file.jpg) bestand, en vernieuw het browservenster Ontwikkelingsgereedschappen

@@ -6,13 +6,13 @@ topic: Content Management, Integrations
 feature: Asset Management
 role: Admin, User
 level: Beginner
-kt: 9754
+jira: KT-9754
 thumbnail: kt-9754.jpeg
 last-substantial-update: 2022-09-02T00:00:00Z
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 ![AEM Deskundigenreeks](./assets/banner.png)
 
-Sluit u aan bij de vier Workfront- en Experience Manager Assets-experts in deze videoreeks, terwijl ze de insteekmodules en indelingen van de integratie van Workfront en AEM Assets met behulp van de verbeterde connector bespreken.
+Deelnemen aan de Workfront- en Experience Manager Assets-experts van Adobe in deze videoreeks van vier delen, aangezien ze de in- en uitgangen van de integratie van Workfront en AEM Assets met behulp van de verbeterde connector demonstreren en bespreken.
 
-Deze vier deeldeskundigenreeksen volgen op een groep van Adobe-experts - van productmanagers, adviseurs en Adobe-partners - die discussiëren over:
+Deze vier deeldeskundigenreeksen volgen op een groep deskundigen van de Adobe - van productmanagers, adviseurs, en Adobe partners - die discussiëren over:
 
 1. [De eerste configuratie uitvoeren in Workfront en AEM](./setup.md)
 2. [Synchronisatie van metagegevens configureren tussen aangepaste Workfront-formulieren en AEM](./custom-forms.md)
-3. [Het gebruiken van AEM Markeringen, project verbonden omslagen, de Verbinding van de Activa van Adobe en omslag meta-gegevensschema&#39;s om waarde te maximaliseren](./aem-tags-project-linked-folders-and-folder-metadata.md)
+3. [Het gebruiken van AEM Markeringen, project verbonden omslagen, de Verbinding van Activa van de Adobe en de omslagmeta-gegevensschema&#39;s om waarde te maximaliseren](./aem-tags-project-linked-folders-and-folder-metadata.md)
 4. [Geavanceerde AEM gebruiken om bedrijfsprocessen in AEM en Workfront en andere geavanceerde instellingen te stroomlijnen](./advanced-settings-and-workflows.md)
 
 <table>

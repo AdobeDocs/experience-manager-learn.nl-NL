@@ -3,13 +3,14 @@ title: Project maken | Aan de slag met de AEM SPA Editor en reageren
 description: Leer hoe u een Adobe Experience Manager (AEM) Maven-project genereert als beginpunt voor een React-toepassing die is geïntegreerd met de AEM SPA Editor.
 feature: SPA Editor, AEM Project Archetype
 version: Cloud Service
-kt: 413
+jira: KT-413
 thumbnail: 413-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-source-git-commit: c489a033f34aecaa0af10e3868c258feba6aaae6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 0%
@@ -87,7 +88,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
        |--- .gitignore
    ```
 
-   Elke map vertegenwoordigt een afzonderlijke module Maven. In deze zelfstudie werken we in de eerste plaats samen met de `ui.frontend` -module, de React-app. Meer informatie over de afzonderlijke modules vindt u in de [AEM documentatie van het type Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+   Elke map vertegenwoordigt een afzonderlijke module Maven. In deze zelfstudie werken we in de eerste plaats samen met de `ui.frontend` -module. Dit is de React-app. Meer informatie over de afzonderlijke modules vindt u in de [AEM documentatie van het type Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
 ## Het project implementeren en bouwen
 
@@ -189,7 +190,7 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
    Maar *waar komt de inhoud vandaan ?*
 
 3. Terug naar de tab: [http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled)
-4. Open de de ontwikkelaarshulpmiddelen van browser en inspecteer het netwerkverkeer van de pagina tijdens verfrissen zich. De weergave van **XHR** verzoeken:
+4. Open de de ontwikkelaarshulpmiddelen van browser en inspecteer het netwerkverkeer van de pagina tijdens verfrissen zich. De weergave **XHR** verzoeken:
 
    ![XHR-verzoeken](./assets/create-project/xhr-requests.png)
 
@@ -216,7 +217,7 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
    ...
    ```
 
-   In het volgende hoofdstuk zullen wij inspecteren hoe deze inhoud JSON van AEM Componenten aan SPA Componenten wordt in kaart gebracht om de basis van de AEM SPA Ervaring van de Redacteur te vormen.
+   In het volgende hoofdstuk zullen we controleren hoe deze JSON-inhoud wordt toegewezen van AEM Componenten aan SPA Componenten om de basis te vormen van de AEM SPA Editor-ervaring.
 
    >[!NOTE]
    >

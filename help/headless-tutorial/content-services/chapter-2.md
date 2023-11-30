@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 1%
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 AEM Content Fragment Models definieert inhoudsschema&#39;s die kunnen worden gebruikt om het maken van onbewerkte inhoud door AEM auteurs te optimaliseren. Deze aanpak lijkt op steigers of op formulieren gebaseerde ontwerpen. Het belangrijkste concept bij Content Fragments is dat de geschreven inhoud presentatie-agnostisch is, wat betekent zijn voorgenomen voor multi-kanaals gebruik waar de het verbruiken toepassing, namelijk AEM, één enkele paginatoepassing, of een Mobiele app, controleert hoe de inhoud aan de gebruiker wordt getoond.
 
-Het belangrijkste doel van het inhoudsfragment is ervoor te zorgen dat:
+Het belangrijkste doel van het inhoudsfragment is:
 
 1. De juiste inhoud wordt verzameld van de auteur
 2. De inhoud kan in een gestructureerde, goed begrepen formaat aan het verbruiken van toepassingen worden blootgesteld.
@@ -36,17 +37,17 @@ Als modellen van inhoudsfragmenten bestaan **niet** die voor een configuratie wo
 >
 >AEM configuraties vertegenwoordigen een set [context-bewuste huurdersconfiguraties](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) opgeslagen onder `/conf`. AEM configuraties correleren doorgaans met een bepaalde website die wordt beheerd in AEM Sites of een bedrijfseenheid die verantwoordelijk is voor een subset met inhoud (elementen, pagina&#39;s, enz.) in AEM.
 >
->Een configuratie kan alleen invloed hebben op een inhoudshiërarchie als er naar de configuratie wordt verwezen via de `cq:conf` eigenschap in die inhoudshiërarchie. (Dit wordt bereikt voor de [!DNL WKND Mobile] configuratie in **Stap 5** hieronder).
+>Als een configuratie een inhoudshiërarchie kan beïnvloeden, moet de configuratie via `cq:conf` eigenschap in die inhoudshiërarchie. (Dit wordt bereikt voor de [!DNL WKND Mobile] configuratie in **Stap 5** hieronder).
 >
 >Wanneer de `global` de configuratie wordt gebruikt, is de configuratie op alle inhoud van toepassing, en `cq:conf` hoeft niet te worden ingesteld.
 >
 >Zie de [[!UICONTROL Configuration Browser] documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) voor meer informatie .
 
-1. Meld u aan bij AEM-auteur als een gebruiker met de juiste machtigingen om de relevante configuratie te wijzigen.
-   * Voor deze zelfstudie **beheerder** kan worden gebruikt.
+1. Meld u aan bij AEM auteur als een gebruiker met de juiste machtigingen om de relevante configuratie te wijzigen.
+   * Voor deze zelfstudie **admin** kan worden gebruikt.
 1. Ga naar **[!UICONTROL Tool]> [!UICONTROL General] >[!UICONTROL Configuration Browser]**
 1. Tik op de knop **mappictogram** naast **[!DNL WKND Mobile]** om te selecteren, en dan te tikken **[!UICONTROL Edit]knop** linksboven.
-1. Selecteren **[!UICONTROL Content Fragment Models]** en tikken **[!UICONTROL Save & Close]** in de rechterbovenhoek.
+1. Selecteren **[!UICONTROL Content Fragment Models]** en tikken **[!UICONTROL Save & Close]** rechtsboven.
 
    Dit maakt modellen van inhoudsfragmenten op inhoudstructuren van de elementenmap mogelijk die de [!DNL WKND Mobile] toegepaste configuratie.
 
@@ -57,14 +58,13 @@ Als modellen van inhoudsfragmenten bestaan **niet** die voor een configuratie wo
    >    1. Openen [CRXDE Lite](http://localhost:4502/crx/de)
    >    1. Ga naar `/conf/wknd-mobile/settings/dam/cfm`
    >    1. Verwijder de `models` node
-
    >    
    >Alle bestaande modellen van inhoudsfragmenten die in deze configuratie zijn gemaakt, worden verwijderd en de definities ervan worden opgeslagen onder `/conf/wknd-mobile/settings/dam/cfm/models`.
 
 1. Pas de **[!DNL WKND Mobile]** aan de **[!DNL WKND Mobile]Map Middelen** om toe te staan dat Content Fragments van Content Fragment Models binnen die de omslaghiërarchie van Elementen worden gecreeerd:
 
    1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Assets] >[!UICONTROL Files]**
-   1. Selecteer **[!UICONTROL WKND Mobile]map**
+   1. Selecteer de **[!UICONTROL WKND Mobile]map**
    1. Tik op de knop **[!UICONTROL Properties]** in de bovenste actiebalk om te openen [!UICONTROL Folder Properties]
    1. In [!UICONTROL Folder Properties]tikt u op **[!UICONTROL Cloud Services]** tab
    1. Controleer de **[!UICONTROL Cloud Configuration]** veld is ingesteld op **/conf/wknd-mobile**
@@ -91,14 +91,14 @@ Met de toewijzing kunnen we inhoudsfragment definiëren dat wordt gebruikt om de
 1. Ga naar **[!UICONTROL Tools]> [!UICONTROL General] >[!UICONTROL Content Fragment Models]**.
 1. Tik op de knop **[!DNL WKND Mobile]** te openen map.
 1. Tikken **[!UICONTROL Create]** om de wizard Inhoudsfragmentmodel te openen.
-1. Enter **[!DNL Event]** als de **[!UICONTROL Model Title]** *(beschrijving is optioneel)* en tikken **[!UICONTROL Create]** om op te slaan.
+1. Enter **[!DNL Event]** als de **[!UICONTROL Model Title]** *(beschrijving is optioneel)* en tikken **[!UICONTROL Create]** opslaan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28337?quality=12&learn=on)
 
 ## De structuur van het inhoudsfragmentmodel definiëren
 
 1. Ga naar **[!UICONTROL Tools]> [!UICONTROL General] > [!UICONTROL Content Fragment Models] >[!DNL WKND]**.
-1. Selecteer **[!DNL Event]** Inhoudsfragmentmodel en tik op **[!UICONTROL Edit]** in de bovenste actiebalk.
+1. Selecteer de **[!DNL Event]** Inhoudsfragmentmodel en tik **[!UICONTROL Edit]** in de bovenste actiebalk.
 1. Van de **[!UICONTROL Data Types]tab** Sleep aan de rechterkant de **[!UICONTROL Single line text input]** in de linkerdropzone om de **[!DNL Question]** veld.
 1. De nieuwe **[!UICONTROL Single line text input]** wordt links geselecteerd en **[!UICONTROL Properties]tab** is rechts geselecteerd. Vul de velden Eigenschappen als volgt in:
 
@@ -108,7 +108,7 @@ Met de toewijzing kunnen we inhoudsfragment definiëren dat wordt gebruikt om de
    * [!UICONTROL Max Length] : 25
    * [!UICONTROL Required] : `Yes`
 
-Herhaal deze stappen met de invoerdefinities die hieronder zijn gedefinieerd om de rest van het gebeurtenisinhoudsfragmentmodel te maken.
+Herhaal deze stappen met behulp van de invoerdefinities die hieronder zijn gedefinieerd om de rest van het gebeurtenisinhoudsfragmentmodel te maken.
 
 >[!NOTE]
 >
@@ -182,6 +182,6 @@ Nadat u het inhoudsfragmentmodel hebt gemaakt, krijgt u een definitie die er als
 
 ## Volgende stap
 
-Installeer desgewenst de [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM-auteur via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit gedeelte van de zelfstudie worden beschreven.
+Installeer desgewenst de [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) inhoudspakket op AEM auteur via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Dit pakket bevat de configuraties en inhoud die in dit gedeelte van de zelfstudie worden beschreven.
 
 * [Hoofdstuk 3 - Inhoudsfragmenten voor gebeurtenissen ontwerpen](./chapter-3.md)

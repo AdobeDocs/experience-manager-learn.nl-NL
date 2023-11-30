@@ -3,14 +3,14 @@ title: Snelle installatie AEM zonder koppen met de lokale AEM SDK
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Installeer de AEM SDK, voeg voorbeeldinhoud toe en implementeer een toepassing die inhoud van AEM gebruikt met de GraphQL API's. Zie hoe AEM machten omni-channel ervaart.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6386
+jira: KT-6386
 thumbnail: KT-6386.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Snelle installatie AEM zonder koppen met de lokale AEM SDK {#setup}
 
-Met de snelle installatie zonder AEM Headless kunt u de inhoud in de praktijk brengen met AEM Headless via inhoud van het WKND-voorbeeldproject Site en een voorbeeldtoepassing React (een SPA) die de inhoud gebruikt boven AEM Headless GraphQL API&#39;s. Deze handleiding gebruikt de [as a Cloud Service SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+Met de snelle installatie zonder AEM Headless kunt u de inhoud in de praktijk brengen met AEM Headless via inhoud van het WKND-voorbeeldproject Site en een voorbeeldtoepassing React (een SPA) die de inhoud gebruikt boven AEM Headless GraphQL API&#39;s. Deze handleiding gebruikt de [AS A CLOUD SERVICE SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
 
 ## Vereisten {#prerequisites}
 
@@ -29,9 +29,9 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 * [Node.js v18](https://nodejs.org/en/)
 * [Git](https://git-scm.com/)
 
-## 1. De AEM SDK installeren {#aem-sdk}
+## 1. Installeer de AEM SDK {#aem-sdk}
 
-Deze instelling gebruikt de instelling [as a Cloud Service SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) voor het verkennen van AEM GraphQL API&#39;s. In deze sectie vindt u een snelle handleiding voor het installeren van de AEM SDK en het uitvoeren ervan in de modus Auteur. Een meer gedetailleerde gids voor het opzetten van een lokale ontwikkelomgeving [hier te vinden](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
+Deze instelling gebruikt de instelling [AS A CLOUD SERVICE SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) voor het verkennen van AEM GraphQL API&#39;s. In deze sectie vindt u een snelle handleiding voor het installeren van de AEM SDK en het uitvoeren ervan in de modus Auteur. Een meer gedetailleerde gids voor het opzetten van een lokale ontwikkelomgeving [hier te vinden](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ De WKND-site bevat configuraties die vereist zijn om een [GraphQL-eindpunt](http
 
    ![Navigeren naar pakketten](assets/quick-setup/aem-sdk/aem-sdk__packages.png)
 
-1. Klikken **Pakket uploaden** en kiest u het WKND-pakket dat u in de vorige stap hebt gedownload. Klikken **Installeren** om het pakket te installeren.
+1. Klikken **Pakket uploaden** en kiest u het WKND-pakket dat u in de vorige stap hebt gedownload. Klikken **Installeren** het pakket installeren.
 
 1. Van de **AEM starten** menu, navigeren naar **Activa** > **Bestanden** > **WKND gedeeld** > **Engels** > **avonturen**.
 
@@ -81,7 +81,7 @@ De WKND-site bevat configuraties die vereist zijn om een [GraphQL-eindpunt](http
 
    Dit is een map met alle middelen die bestaan uit de verschillende avonturen die door het WKND-merk worden bevorderd. Dit omvat traditionele mediatypen zoals afbeeldingen en video en media die specifiek zijn voor AEM **Inhoudsfragmenten**.
 
-1. Klik in de **Downhill Skiing Wyoming** en klik op de knop **Wyoming-inhoudsfragment afnemen** kaart:
+1. Klik in het dialoogvenster **Downhill Skiing Wyoming** en klik op de knop **Wyoming-inhoudsfragment afnemen** kaart:
 
    ![Inhoudsfragmentcard](assets/quick-setup/aem-sdk/aem-sdk__content-fragment.png)
 
@@ -89,7 +89,7 @@ De WKND-site bevat configuraties die vereist zijn om een [GraphQL-eindpunt](http
 
    ![Inhoudsfragmenteditor](assets/quick-setup/aem-sdk/aem-sdk__content-fragment-editor.png)
 
-   Houd er rekening mee dat verschillende velden, zoals **Titel**, **Beschrijving**, en **Activiteit** definieert u het fragment.
+   Houd er rekening mee dat verschillende velden, zoals **Titel**, **Beschrijving**, en **Activiteit** het fragment definiëren.
 
    **Inhoudsfragmenten** Dit is een van de manieren waarop inhoud in AEM kan worden beheerd. Inhoudsfragment is herbruikbaar, presentatie-agnostische inhoud die bestaat uit gestructureerde gegevenselementen zoals tekst, tekst met opmaak, datums of verwijzingen naar andere inhoudsfragmenten. Inhoudsfragmenten worden later in de snelle installatie gedetailleerder onderzocht.
 
@@ -99,7 +99,7 @@ De WKND-site bevat configuraties die vereist zijn om een [GraphQL-eindpunt](http
 >
 > Als het gebruiken van een milieu van de Cloud Service zie de documentatie voor hoe te [Stel een codebasis zoals de plaats van de Verwijzing WKND aan een milieu van de Cloud Service op](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#coding-against-the-right-aem-version).
 
-## 3. De WKND React-app downloaden en uitvoeren {#sample-app}
+## 3. Download en voer de WKND React-app uit {#sample-app}
 
 Een van de doelstellingen van deze zelfstudie is om te tonen hoe u AEM inhoud van een externe toepassing kunt gebruiken met de GraphQL API&#39;s. In deze zelfstudie wordt een voorbeeld van React App gebruikt. De React-app is opzettelijk eenvoudig en richt zich op de integratie met AEM GraphQL-API&#39;s.
 
@@ -120,7 +120,7 @@ Een van de doelstellingen van deze zelfstudie is om te tonen hoe u AEM inhoud va
    REACT_APP_AUTHORIZATION=admin:admin
    ```
 
-   Zorgen `REACT_APP_HOST_URI` verwijst naar uw lokale AEM SDK. Voor het gemak wordt met deze snelle start de React-app verbonden met  **AEM-auteur**. **Auteur** voor services is verificatie vereist, zodat de app de `admin` gebruiker om de verbinding tot stand te brengen. Het is gebruikelijk om tijdens de ontwikkeling een app te verbinden met AEM Author, omdat dit het snel doorlopen van inhoud zonder dat wijzigingen hoeven te worden gepubliceerd vergemakkelijkt.
+   Zorgen `REACT_APP_HOST_URI` verwijst naar uw lokale AEM SDK. Voor het gemak wordt met deze snelle start de React-app verbonden met  **AEM auteur**. **Auteur** voor services is verificatie vereist, zodat de app de `admin` gebruiker om verbinding te maken. Het is gebruikelijk om tijdens de ontwikkeling een app te verbinden met AEM auteur, omdat dit het snel doorlopen van inhoud zonder dat wijzigingen hoeven te worden gepubliceerd vergemakkelijkt.
 
    >[!NOTE]
    >
@@ -145,7 +145,7 @@ Een van de doelstellingen van deze zelfstudie is om te tonen hoe u AEM inhoud va
 
    ![Adventure Details, weergave](assets/quick-setup/aem-sdk/react-app__adventure-view.png)
 
-1. Gebruik de ontwikkelaarsgereedschappen van de browser om de **Netwerk** verzoeken. De weergave van **XHR** verzoeken en nemen meerdere verzoeken van GET in acht `/graphql/execute.json/...`. Dit wegvoorvoegsel roept AEM voortgeduurde vraageindpunt aan, die de voortgeduurde uit te voeren vraag selecteren gebruikend de naam en gecodeerde parameters na de prefix.
+1. Gebruik de ontwikkelaarsgereedschappen van de browser om de **Netwerk** verzoeken. De weergave **XHR** verzoeken en nemen meerdere verzoeken van GET in acht `/graphql/execute.json/...`. Dit wegvoorvoegsel roept AEM voortgeduurde vraageindpunt aan, die de voortgeduurde uit te voeren vraag selecteren gebruikend de naam en gecodeerde parameters na de prefix.
 
    ![GraphQL Endpoint XHR-verzoek](assets/quick-setup/aem-sdk/react-app__graphql-request.png)
 
@@ -158,19 +158,19 @@ Zorg dat de React-app actief is en werk de inhoud bij in de AEM en controleer of
 
    ![De map Bali Surf Camp](assets/setup/bali-surf-camp-folder.png)
 
-1. Klik in de **Bali Surf Camp** inhoudfragment om de editor voor inhoudsfragmenten te openen.
-1. De **Titel** en de **Beschrijving** van het avontuur.
+1. Klik in het dialoogvenster **Bali Surf Camp** inhoudfragment om de editor voor inhoudsfragmenten te openen.
+1. Wijzig de **Titel** en de **Beschrijving** van het avontuur.
 
    ![Inhoudsfragment wijzigen](assets/setup/modify-content-fragment-bali.png)
 
-1. Klikken **Opslaan** om de wijzigingen op te slaan.
+1. Klikken **Opslaan** om de wijzigingen op te slaan
 1. De React-app vernieuwen op [http://localhost:3000](http://localhost:3000) om uw wijzigingen te zien:
 
    ![Bijgewerkt Bali Surf Camp Adventure](assets/setup/overnight-bali-surf-camp-changes.png)
 
-## 5. GrahiQL verkennen {#graphiql}
+## 5. Ontdek GraphiQL {#graphiql}
 
-1. Openen [GraphiQL](http://localhost:4502/aem/graphiql.html) door te navigeren naar **Gereedschappen** > **Algemeen** > **GraphQL Query-editor**
+1. Openen [GraphiQL](http://localhost:4502/aem/graphiql.html) door naar **Gereedschappen** > **Algemeen** > **GraphQL Query-editor**
 1. Selecteer bestaande voortgeduurde vragen op de linkerzijde, en stel hen in werking om de resultaten te zien.
 
    >[!NOTE]

@@ -7,14 +7,14 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-kt: 5269
+jira: KT-5269
 thumbnail: kt-5269.jpg
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 93e1262b-0e93-4ba8-aafc-f9c517688ce9
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -29,7 +29,7 @@ HTML5-formulieren kunnen worden ingediend bij servlet die in AEM wordt gehost. D
 
 U kunt een eenvoudige servlet maken voor het verzenden van het HTML5-formulier. De ingediende gegevens kunnen vervolgens worden geëxtraheerd met de volgende code. Dit [servlet](assets/html5-submit-handler.zip) wordt beschikbaar gesteld als onderdeel van deze zelfstudie. Installeer de [servlet](assets/html5-submit-handler.zip) gebruiken [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 
-De code van lijn 9 kan worden gebruikt om J2EE proces aan te halen. Zorg ervoor dat u bent geconfigureerd [Adobe LiveCycle client SDK-configuratie](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) als u de code wilt gebruiken om J2EE-proces aan te roepen.
+De code van lijn 9 kan worden gebruikt om J2EE proces aan te halen. Zorg ervoor dat u bent geconfigureerd [Adobe LiveCycle client SDK Configuration](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) als u de code wilt gebruiken om J2EE-proces aan te roepen.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();

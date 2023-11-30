@@ -7,10 +7,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-kt: 9359
+jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Open het formulier in de bewerkingsmodus Zorg dat u zich in de stijllaag bevindt
 U bevindt zich in de standaardstatus wanneer u de stijleditor voor de tab opent, zoals wordt weergegeven in de onderstaande schermafbeelding
 ![navigatietab](assets/navigation-tab.png)
 
-CSS-eigenschappen instellen voor de standaardstatus zoals hieronder wordt weergegeven | Categorie | Eigenschapnaam | Waarde van eigendom | |:—|:—|:—| | Dimension en positie | Breedte | 50 px | | Tekst | Tekendikte | Vet | | Tekst | Kleur | #FFF | |Tekst | Lijnhoogte| 3 | |Tekst | Tekst uitlijnen | Links | |Achtergrond| Kleur | #056dae |
+CSS-eigenschappen instellen voor de standaardstatus zoals hieronder wordt weergegeven | Categorie | Eigenschapnaam | Waarde van eigendom | |:—|:—|:—| | Dimensionen en positie | Breedte | 50 px | | Tekst | Tekendikte | Vet | | Tekst | Kleur | #FFF | |Tekst | Lijnhoogte| 3 | |Tekst | Tekst uitlijnen | Links | |Achtergrond| Kleur | #056dae |
 
 Uw wijzigingen opslaan
 
@@ -45,8 +45,8 @@ Zorg ervoor dat u de status Actief hebt en maak de volgende CSS-eigenschappen op
 
 | Categorie | Eigenschapnaam | Waarde van eigenschap |
 |:---|:---|:---|
-| Dimension en positie | Breedte | 50px |
-| Tekst | Tekendikte | Vet |
+| Dimensionen en positie | Breedte | 50px |
+| Tekst | Dikte lettertype | Vet |
 | Tekst | Kleur | #FFF |
 | Tekst | Lijnhoogte | 3 |
 | Tekst | Tekst uitlijnen | Links |
@@ -66,8 +66,8 @@ Zorg ervoor dat u in de bezochte staat bent en stijl de volgende eigenschappen
 
 | Categorie | Eigenschapnaam | Waarde van eigenschap |
 |:---|:---|:---|
-| Dimension en positie | Breedte | 50px |
-| Tekst | Tekendikte | Vet |
+| Dimensionen en positie | Breedte | 50px |
+| Tekst | Dikte lettertype | Vet |
 | Tekst | Kleur | #FFF |
 | Tekst | Lijnhoogte | 3 |
 | Tekst | Tekst uitlijnen | Links |

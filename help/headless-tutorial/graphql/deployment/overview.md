@@ -6,11 +6,11 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10794
+jira: KT-10794
 thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Implementaties zonder kop AEM
 
-AEM clientimplementaties zonder kop zijn in vele vormen te vinden; SPA die door AEM worden gehost, externe SPA, website, mobiele app of zelfs server-naar-server proces.
+AEM Clientimplementaties zonder koptelefoon hebben vele vormen: SPA, externe SPA, websites, mobiele apps of zelfs server-naar-server processen die door AEM worden gehost.
 
 Afhankelijk van de client en hoe deze wordt geïmplementeerd, hebben AEM headless-implementaties verschillende overwegingen.
 
@@ -27,15 +27,15 @@ Afhankelijk van de client en hoe deze wordt geïmplementeerd, hebben AEM headles
 
 Alvorens plaatsingsoverwegingen te onderzoeken, is het noodzakelijk om AEM logische architectuur, en de scheiding en de rollen van AEM as a Cloud Service de dienstrijen te begrijpen. AEM as a Cloud Service bestaat uit twee logische diensten:
 
-+ __AEM-auteur__ Dit is de service waar teams Content Fragments (en andere elementen) maken, samenwerken en publiceren.
-+ __AEM-publicatie__ is de dienst die gepubliceerde Contentfragmenten (en andere activa) werden herhaald voor algemeen gebruik.
-+ __Voorvertoning AEM__ Dit is de service die AEM Publish in gedrag bootst, maar inhoud heeft gepubliceerd voor voorproef- of revisiedoeleinden. AEM Voorvertoning is bedoeld voor intern publiek en niet voor de algemene levering van inhoud. Het gebruik van AEM voorvertoning is optioneel op basis van de gewenste workflow.
++ __AEM auteur__ Dit is de service waar teams Content Fragments (en andere elementen) maken, samenwerken en publiceren.
++ __AEM publiceren__ is de dienst die gepubliceerde Contentfragmenten (en andere activa) werden herhaald voor algemeen gebruik.
++ __Voorvertoning AEM__ Dit is de service die AEM Publiceren in gedrag bootst, maar inhoud heeft die er voor voorvertoning of revisiedoeleinden aan wordt gepubliceerd. AEM Voorvertoning is bedoeld voor intern publiek en niet voor de algemene levering van inhoud. Het gebruik van AEM voorvertoning is optioneel op basis van de gewenste workflow.
 
 ![AEM](./assets/overview/aem-service-architecture.png)
 
 Typische AEM as a Cloud Service implementatiearchitectuur zonder kop_
 
-AEM Koploze klanten die in een productiecapaciteit werken, communiceren doorgaans met AEM Publish, dat de goedgekeurde, gepubliceerde inhoud bevat. Clients die met AEM-auteur werken, moeten speciale aandacht besteden, aangezien AEM-auteur standaard veilig is en autorisatie voor alle aanvragen vereist, en kunnen ook werk in uitvoering of niet-goedgekeurde inhoud bevatten.
+AEM Koploze klanten die in een productiecapaciteit werken, werken doorgaans samen met AEM Publish, dat de goedgekeurde, gepubliceerde inhoud bevat. Clients die met AEM auteur werken, moeten speciale aandacht besteden, aangezien AEM auteur standaard veilig is en toestemming voor alle aanvragen vereist, en kunnen ook werk in uitvoering of niet-goedgekeurde inhoud bevatten.
 
 ## Hoofdloze clientimplementaties
 

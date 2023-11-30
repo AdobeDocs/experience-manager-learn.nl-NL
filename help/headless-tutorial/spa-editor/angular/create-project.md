@@ -4,16 +4,16 @@ description: Leer hoe u een Adobe Experience Manager (AEM) Maven-project gebruik
 feature: SPA Editor, AEM Project Archetype
 topics: development
 version: Cloud Service
-doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5309
+jira: KT-5309
 thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
 
 ## Het project ophalen
 
-Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand te brengen. Deze zelfstudie gebruikte de nieuwste [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) als basis voor de zelfstudiecode. De projectcode is gewijzigd om veelvoudige versies van AEM te steunen. Controleer [de opmerking over achterwaartse compatibiliteit](overview.md#compatibility).
+Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand te brengen. Deze zelfstudie gebruikte de nieuwste [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) als basis voor de zelfstudiecode. De projectcode is gewijzigd om veelvoudige versies van AEM te steunen. Gelieve te herzien [de opmerking over achterwaartse compatibiliteit](overview.md#compatibility).
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand
    |-----------------|---------------------------------------|
    | aemVersion | wolk |
    | appTitle | WKND SPA Angular |
-   | appId | wknd-spa-angular |
+   | appId | wknd-angular |
    | groupId | com.adobe.aem.guides |
    | frontendModule | angular |
    | package | com.adobe.aem.guides.wknd.spa.angular |
@@ -93,7 +93,7 @@ Er zijn verscheidene opties om een Maven Multi-module project voor AEM tot stand
 
 ## Het project bouwen
 
-Daarna, compileert, bouwt, en stelt de projectcode aan een lokaal geval van AEM op gebruikend Maven.
+Daarna, compileert, bouwt, en stelt de projectcode aan een lokale instantie van AEM op gebruikend Maven.
 
 1. Verzeker een geval van AEM plaatselijk op haven loopt **4502**.
 2. Van de terminal van de bevellijn verifieert dat Maven geïnstalleerd is:
@@ -117,7 +117,7 @@ Daarna, compileert, bouwt, en stelt de projectcode aan een lokaal geval van AEM 
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-   De veelvoudige modules van het project zouden moeten worden gecompileerd en aan AEM worden opgesteld.
+   De veelvoudige modules van het project zouden moeten worden opgesteld en aan AEM worden opgesteld.
 
    ```plain
    [INFO] ------------------------------------------------------------------------
@@ -198,13 +198,13 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
    *Waar komt de inhoud vandaan?*
 
 3. Terug naar de tab: [http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
-4. Open de de ontwikkelaarshulpmiddelen van browser en inspecteer het netwerkverkeer van de pagina tijdens verfrissen zich. De weergave van **XHR** verzoeken:
+4. Open de de ontwikkelaarshulpmiddelen van browser en inspecteer het netwerkverkeer van de pagina tijdens verfrissen zich. De weergave **XHR** verzoeken:
 
    ![XHR-verzoeken](./assets/create-project/xhr-requests.png)
 
    Er moet een verzoek worden ingediend om [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json). Dit bevat alle inhoud, geformatteerd in JSON, die de SPA zal drijven.
 
-5. In een nieuw tabblad opent u [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)
+5. Open op een nieuw tabblad de optie [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)
 
    Het verzoek `en.model.json` vertegenwoordigt het inhoudsmodel dat de toepassing zal drijven. Inspect de JSON-uitvoer en u moet het fragment kunnen vinden dat de **[!UICONTROL Text]** component(en).
 
@@ -224,7 +224,7 @@ Controleer vervolgens of dit een toepassing voor één pagina is met gebruik van
    ...
    ```
 
-   In het volgende hoofdstuk zullen wij inspecteren hoe de inhoud JSON van AEM Componenten aan SPA Componenten wordt in kaart gebracht om de basis van de AEM SPA Ervaring van de Redacteur te vormen.
+   In het volgende hoofdstuk zullen wij inspecteren hoe de inhoud JSON van AEM Componenten aan SPA Componenten wordt in kaart gebracht om de basis van de AEM SPA Ervaring te vormen.
 
    >[!NOTE]
    >

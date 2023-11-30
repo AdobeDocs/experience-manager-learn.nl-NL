@@ -1,16 +1,17 @@
 ---
 title: Assets Essentials gebruiken
-description: Leer hoe u middelen downloadt in Assets Essentials.
+description: Leer hoe u middelen in Assets Essentials kunt downloaden.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
 role: User
 level: Beginner
-kt: 8380
+jira: KT-8380
 thumbnai: 335861.jpeg
 last-substantial-update: 2022-10-05T00:00:00Z
+doc-type: Feature Video
 exl-id: 83bf8d76-2e36-45d4-bfff-03758e5f7bdc
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 0%
@@ -19,6 +20,6 @@ ht-degree: 0%
 
 # Assets Essentials gebruiken
 
-Leer hoe u middelen in Assets Essentials kunt filteren, zoeken en downloaden.
+Leer hoe u elementen in Assets Essentials kunt filteren, zoeken en downloaden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)

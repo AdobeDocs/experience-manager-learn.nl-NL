@@ -6,10 +6,10 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10797
+jira: KT-10797
 thumbnail: kt-10797.jpg
 exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -25,7 +25,7 @@ AEM zonder kop [Webcomponent](https://developer.mozilla.org/en-US/docs/Web/Web_C
 
 De volgende plaatsingsconfiguratie moet op zijn plaats voor de plaatsingen van de Component/JS van het Web zijn.
 
-| Webcomponent/JS-app maakt verbinding met | AEM-auteur | AEM-publicatie | Voorvertoning AEM |
+| Webcomponent/JS-app maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Delen van bronnen van oorsprong (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
@@ -33,7 +33,7 @@ De volgende plaatsingsconfiguratie moet op zijn plaats voor de plaatsingen van d
 
 ## Voorbeeld van webcomponent
 
-Adobe verstrekt een component van het voorbeeldWeb.
+Adobe biedt een voorbeeld van een webcomponent.
 
 <div class="columns is-multiline">
     <!-- Web Component -->

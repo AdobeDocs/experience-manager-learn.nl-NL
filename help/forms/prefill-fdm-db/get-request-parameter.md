@@ -3,13 +3,13 @@ title: Request-parameter ophalen
 description: Toegang tot de verzoekparameter tot de prefill dienst van een model van vormgegevens
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5815
+jira: KT-5815
 thumbnail: kt-5815.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: a640539d-c67f-4224-ad81-dd0b62e18c79
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -24,9 +24,9 @@ De volgende stap bestaat uit het benaderen van de empID-parameter vanaf de URL. 
 Met het oog op deze cursus hebben we het volgende gemaakt en verstrekt
 
 * Aangepast formuliersjabloon genaamd **_FDMDemo_**
-* Paginacomponent aangeroepen **_fdmdemo_**
+* Paginacomponent opgeroepen **_fdmdemo_**
 * De aangepaste JPEG-indeling is opgenomen in de paginacomponent
-* De adaptieve formuliersjabloon is gekoppeld aan de paginacomponent
+* De adaptieve formuliersjabloon is gekoppeld aan de pagina-component
 
 Op deze manier wordt onze code in de aangepaste jsp alleen uitgevoerd wanneer het adaptieve formulier dat is gebaseerd op deze aangepaste sjabloon, wordt weergegeven
 

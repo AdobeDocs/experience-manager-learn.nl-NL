@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6284
+jira: KT-6284
 thumbnail: KT-6284.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -68,9 +68,9 @@ Elke testgietvorm kan de volgende dossiers hebben:
 In dit testgeval wordt de geparametereerde invoer (`params.json`) voor het invoerbestand (`file.jpg`) genereert de verwachte PNG-uitvoering (`rendition.png`).
 
 1. Verwijder eerst de automatisch gegenereerde `simple-worker` test `/test/asset-compute/simple-worker` omdat dit ongeldig is, omdat onze worker de bron niet langer gewoon naar de uitvoering kopieert.
-1. Nieuwe testhoofdmap maken op `/test/asset-compute/worker/success-parameterized` om een geslaagde uitvoering te testen van de worker die een PNG-uitvoering genereert.
+1. Maak een nieuwe testhoofdmap op `/test/asset-compute/worker/success-parameterized` om een geslaagde uitvoering te testen van de worker die een PNG-uitvoering genereert.
 1. In de `success-parameterized` map, de test toevoegen [invoerbestand](./assets/test/success-parameterized/file.jpg) voor deze testcase en noem deze `file.jpg`.
-1. In de `success-parameterized` map, voeg een nieuw bestand met de naam `params.json` waarmee de invoerparameters van de worker worden gedefinieerd:
+1. In de `success-parameterized` map, voeg een nieuw bestand toe met de naam `params.json` waarmee de invoerparameters van de worker worden gedefinieerd:
 
    ```json
    { 
@@ -80,11 +80,11 @@ In dit testgeval wordt de geparametereerde invoer (`params.json`) voor het invoe
    }
    ```
 
-   Dit zijn dezelfde sleutel/waarden die worden doorgegeven aan de [Definitie van Asset compute-profiel van het ontwikkelingsgereedschap](../develop/development-tool.md), minder `worker` toets.
+   Dit zijn dezelfde sleutel/waarden die aan de [Definitie van Asset compute-profiel van het ontwikkelingsgereedschap](../develop/development-tool.md), met minder `worker` toets.
 
 1. Voeg de verwachte [weergavebestand](./assets/test/success-parameterized/rendition.png) naar deze testcase en noem deze `rendition.png`. Dit bestand vertegenwoordigt de verwachte uitvoer van de worker voor de opgegeven invoer `file.jpg`.
 1. Van de bevellijn, stel de tests in werking de projectwortel door uit te voeren `aio app test`
-   + Zorgen [Docker-bureaublad](../set-up/development-environment.md#docker) en ondersteunende Docker-afbeeldingen worden geïnstalleerd en gestart
+   + Zorgen [Docker Desktop](../set-up/development-environment.md#docker) en ondersteunende Docker-afbeeldingen worden geïnstalleerd en gestart
    + Beëindig alle actieve instanties van het Hulpmiddel voor Ontwikkeling
 
 ![Testen - Voltooid ](./assets/test/success-parameterized/result.png)
@@ -93,9 +93,9 @@ In dit testgeval wordt de geparametereerde invoer (`params.json`) voor het invoe
 
 Deze testcase test om te controleren of de worker de juiste fout genereert als de `contrast` parameter is ingesteld op een ongeldige waarde.
 
-1. Nieuwe testhoofdmap maken op `/test/asset-compute/worker/error-contrast` om een foutieve uitvoering van de worker te testen wegens een ongeldige `contrast` parameterwaarde.
+1. Maak een nieuwe testhoofdmap op `/test/asset-compute/worker/error-contrast` om een foutieve uitvoering van de worker te testen wegens een ongeldige `contrast` parameterwaarde.
 1. In de `error-contrast` map, de test toevoegen [invoerbestand](./assets/test/error-contrast/file.jpg) voor deze testcase en noem deze `file.jpg`. De inhoud van dit bestand is niet van belang voor deze test. Het bestand moet alleen bestaan om voorbij de controle &quot;Beschadigde bron&quot; te komen, zodat de `rendition.instructions` geldigheidscontroles, die door deze test worden gevalideerd.
-1. In de `error-contrast` map, voeg een nieuw bestand met de naam `params.json` die de invoerparameters van de worker met de inhoud definieert:
+1. In de `error-contrast` map, voeg een nieuw bestand toe met de naam `params.json` die de invoerparameters van de worker met de inhoud definieert:
 
    ```json
    {
@@ -109,7 +109,7 @@ Deze testcase test om te controleren of de worker de juiste fout genereert als d
 
 1. Aangezien er geen uitvoering moet worden gegenereerd tijdens een foutieve uitvoering, kan `rendition.<extension>` bestand is noodzakelijk.
 1. Voer de testsuite vanuit de hoofdmap van het project uit door de opdracht uit te voeren `aio app test`
-   + Zorgen [Docker-bureaublad](../set-up/development-environment.md#docker) en ondersteunende Docker-afbeeldingen worden geïnstalleerd en gestart
+   + Zorgen [Docker Desktop](../set-up/development-environment.md#docker) en ondersteunende Docker-afbeeldingen worden geïnstalleerd en gestart
    + Beëindig alle actieve instanties van het Hulpmiddel voor Ontwikkeling
 
 ![Testen - Foutcontrast](./assets/test/error-contrast/result.png)

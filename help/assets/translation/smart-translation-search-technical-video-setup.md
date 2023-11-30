@@ -6,8 +6,9 @@ feature: Search
 topic: Content Management
 role: Developer
 level: Beginner
+doc-type: Technical Video
 exl-id: 7be8c3d5-b944-4421-97b3-bd5766c1b1b5
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -26,41 +27,43 @@ Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse
 
 1. Download en installeer de OSGi-bundel van Oak Search Machine Translation
    * [Download de OSGi-bundel van Oak Search Machine Translation](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) die overeenkomt met AEM eik-versie.
-   * Installeer de gedownloade OSGi-bundel voor Oak Search Machine Translation in AEM via [ `/system/console/bundles`](http://localhost:4502/system/console/bundles).
+   * Installeer de gedownloade OSGi-bundel voor Oak Search Machine Translation in AEM via [`/system/console/bundles`](http://localhost:4502/system/console/bundles).
 
 2. Apache Joshua-taalpakketten downloaden en bijwerken
    * Download en decomprimeer de gewenste [Apache Joshua-taalpakketten](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs).
    * Bewerk de `joshua.config` file en commentaren uit de 2 lijnen die met beginnen:
 
-      ```
-      feature-function = LanguageModel ...
-      ```
+     ```
+     feature-function = LanguageModel ...
+     ```
 
    * Bepaal en registreer de grootte van de modelomslag van het taalpak, aangezien dit beïnvloedt hoeveel extra heapruimte AEM zal vereisen.
    * Verplaats de niet-gecomprimeerde Apache Joshua taalpakketmap (met de `joshua.config` bewerkingen) tot
 
-      ```
-      .../crx-quickstart/opt/<source_language-target_language>
-      ```
+     ```
+     .../crx-quickstart/opt/<source_language-target_language>
+     ```
 
-      Bijvoorbeeld:
+     Bijvoorbeeld:
 
-      ```
-       .../crx-quickstart/opt/es-en
-      ```
+     ```
+      .../crx-quickstart/opt/es-en
+     ```
 
 3. AEM opnieuw starten met bijgewerkte heapgeheugentoewijzing
    * AEM stoppen
    * De nieuwe vereiste heapgrootte voor AEM bepalen
 
       * AEM heapgrootte vóór het taalgebrek + de grootte van de modeldirectory afgerond naar de dichtstbijzijnde 2 GB
-      * Bijvoorbeeld: Als de prelanguage-pakketten de AEM installatie 8 GB van hoop vereisen te lopen, en de modelomslag van het taalpak niet gecomprimeerd is 3.8 GB, is de nieuwe heapgrootte:
+      * Bijvoorbeeld: als in de pretaal verpakte AEM 8 GB heap vereist is om te worden uitgevoerd en de modelmap van het taalpakket 3,8 GB niet is gecomprimeerd, is de nieuwe heapgrootte:
 
-         Het origineel `8GB` + ( `3.75GB` afgerond naar boven `2GB`, die `4GB`) voor een totaal van `12GB`
+        Het origineel `8GB` + ( `3.75GB` afgerond naar boven `2GB`, die `4GB`) voor een totaal van `12GB`
+
    * Controleer of de computer over deze hoeveelheid extra beschikbaar geheugen beschikt.
    * AEM opstartscripts bijwerken om deze aan te passen aan de nieuwe heapgrootte
 
       * Voorbeeld. `java -Xmx12g -jar cq-author-p4502.jar`
+
    * Start AEM opnieuw met de grotere heapgrootte.
 
    >[!NOTE]
@@ -81,7 +84,7 @@ Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse
       * `Node types` zijn de types van kandidaatknoop waarvan full-text onderzoek dit taalpak voor vertaling zal in dienst nemen.
       * `Minimum score` is de minimale betrouwbaarheidsscore voor een vertaalde term die moet worden gebruikt.
 
-         * Hombre (Spaans voor &quot;man&quot;) kan bijvoorbeeld worden vertaald naar het Engelse woord &quot;man&quot; met een betrouwbaarheidsscore van `0.9` en vertaalt u ook naar het engelse woord &quot; human &quot; met een betrouwbaarheidsscore `0.2`. De minimumscore aanpassen aan `0.3`, zou de vertaling &quot;hombre&quot; behouden aan &quot;man&quot;, maar het &#39;hombre&#39; in &quot;human&quot; vertaling negeren als de vertaalscore van `0.2` is kleiner dan de minimumscore van `0.3`.
+         * Hombre (Spaans voor &quot;man&quot;) kan bijvoorbeeld worden vertaald naar het Engelse woord &quot;man&quot; met een betrouwbaarheidsscore van `0.9` en vertalen naar het engelse woord &quot; human &quot; met een betrouwbaarheidsscore `0.2`. De minimumscore aanpassen aan `0.3`, zou de vertaling &quot;hombre&quot; behouden aan &quot;man&quot;, maar het &#39;hombre&#39; in &quot;human&quot; vertaling negeren als de vertaalscore van `0.2` is kleiner dan de minimumscore van `0.3`.
 
 5. Een zoekopdracht in volledige tekst uitvoeren op elementen
    * Omdat dam:Asset het knooptype is dit taalpak opnieuw wordt geregistreerd, moeten wij naar AEM Assets zoeken gebruikend full-text onderzoek om dit te bevestigen.
@@ -93,14 +96,14 @@ Met Smart Translation Search kunt u niet-Engelse zoektermen gebruiken om Engelse
    * Als een taalpakket wordt bijgewerkt en de updates in AEM worden geïnstalleerd, moeten de bovenstaande stappen 2 - 4 worden gevolgd en moet de heapgrootte naar boven of beneden worden aangepast.
 
       * Houd er rekening mee dat wanneer u het niet-gecomprimeerde taalpakket verplaatst naar de map crx-quickstart/opt, u een bestaande taalpakketmap verplaatst voordat u het nieuwe taalpakket kopieert.
-   * Als AEM geen nieuw begin vereist, dan moeten de relevante Apache Jackrabbit Oak Machine Translation Fulltext Query Terms Provider OSGi configuratie(s) die tot het bijgewerkte taalpak(s) behoren opnieuw worden opgeslagen zodat AEM de bijgewerkte bestanden verwerkt.
 
+   * Als AEM geen nieuw begin vereist, dan moeten de relevante Apache Jackrabbit Oak Machine Translation Fulltext Query Terms Provider OSGi configuratie(s) die tot het bijgewerkte taalpak(s) behoren opnieuw worden opgeslagen zodat AEM de bijgewerkte bestanden verwerkt.
 
 ## damAssetLucene Index bijwerken {#updating-damassetlucene-index}
 
 Om [Slimme tags AEM](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) waarop AEM Smart Translation van invloed is, AEM `/oak   :index  /damAssetLucene` De index moet worden bijgewerkt om de predictedTags (de systeemnaam voor &quot;Slimme tags&quot;) te markeren als onderdeel van de samengestelde Lucene-index van het element.
 
-Onder `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predicatedTags`dient de configuratie als volgt te zijn:
+Onder `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predicatedTags`dient u te zorgen dat de configuratie als volgt is:
 
 ```xml
  <damAssetLucene jcr:primaryType="oak:QueryIndexDefinition">

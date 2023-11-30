@@ -5,9 +5,10 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
 
 >[!TIP]
 >
->Deze verzameling zelfstudies is ontworpen voor gebruikers die liever **leren door**. Als u van de grond het leren van concepten verkiest, controleer uit [AEM Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
+>Deze verzameling zelfstudies is ontworpen voor gebruikers die liever **leren door te doen**. Als u van de grond het leren van concepten verkiest, controleer uit [AEM Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
 
 ## Tutorials via API
 
@@ -30,11 +31,11 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
-      <img alt="GraphQL API" src="./assets/graphql-icon.png" />
+      <img alt="GRAPHQL API" src="./assets/graphql-icon.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
-    <strong>GraphQL API</strong>
+    <strong>GRAPHQL API</strong>
     </a>
     </div>
     <p>

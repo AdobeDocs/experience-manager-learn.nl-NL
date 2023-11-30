@@ -7,21 +7,22 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 0%
 
 ---
 
-# URL&#39;s van waarheidsgetrouwheid van verzender
+# URL&#39;s van waarheidsgetrouwheid van afzender
 
 [Inhoudsopgave](./overview.md)
 
 [&lt;- Vorige: Variabelen gebruiken en begrijpen](./variables.md)
 
-In dit document wordt uitgelegd hoe flushing optreedt en wordt uitgelegd hoe het leegmaken en de ongeldigheid van de cache worden uitgevoerd.
+In dit document wordt uitgelegd hoe flushing optreedt en wordt uitgelegd hoe het leegmaken en de ongeldigmaking van de cache worden uitgevoerd.
 
 
 ## Hoe werkt het
@@ -36,7 +37,7 @@ Deze ketting van gebeurtenissen, benadrukt dat wij slechts punten spoelen wannee
 
 Op auteur is er een replicatieagent die wordt gevormd om bij de uitgever te wijzen dat wanneer iets wordt geactiveerd het teweegbrengt om het dossier en alle gebiedsdelen van het naar de uitgever te verzenden.
 
-Wanneer de uitgever het dossier ontvangt heeft het een replicatieagent die wordt gevormd om bij de Dispatcher te richten die op de gebeurtenis tereceive teweegbrengt.  Vervolgens serialiseert het programma een aanvraag om het leegmaken en plaatst het de Dispatcher.
+Wanneer de uitgever het dossier ontvangt heeft het een replicatieagent die wordt gevormd om bij de Dispatcher te richten die op de gebeurtenis tereceive teweegbrengt.  Vervolgens serialiseert het programma een aanvraag om het leegmaken en plaatst het dit op de Dispatcher.
 
 ### AUTEURREPLICATIE-AGENT
 
@@ -79,7 +80,7 @@ De `HTTP Method` voor spoelverzoeken is slechts een `GET` aanvraag met enkele sp
 - Host
    - Dit is waar de `Host` Koptekst krijgt spoofd om een specifiek item als doel in te stellen `VirtualHost` die is geconfigureerd op de Apache-webserver van de verzender (`/etc/httpd/conf.d/enabled_vhosts/aem_flush.vhost`).  Het is een harde gecodeerde waarde die overeenkomt met een item in het dialoogvenster `aem_flush.vhost` bestand `ServerName` of `ServerAlias`
 
-![Scherm van een standaard replicatieagent die toont dat de replicatieagent met reageert en teweegbrengt wanneer de nieuwe punten van een replicatiegebeurtenis van de auteur het publiceren inhoud zijn ontvangen](assets/disp-flushing/disp-flush-agent4.png "disp-flush-agent4")
+![Scherm van een standaard replicatieagent die toont dat de replicatieagent met reactie en trekker wanneer de nieuwe punten van een replicatiegebeurtenis van de auteur het publiceren inhoud zijn ontvangen](assets/disp-flushing/disp-flush-agent4.png "disp-flush-agent4")
 
 Op de `Triggers` tab nemen we nota van de schakelbare triggers die we gebruiken en wat ze zijn
 
@@ -103,13 +104,13 @@ $ curl \
 http://10.43.0.32:80/dispatcher/invalidate.cache
 ```
 
-Met dit uitlijnvoorbeeld wordt het `/content/dam` pad door het bijwerken van de `.stat` in die map.
+Met dit uitlijnvoorbeeld wordt het `/content/dam` pad door het bijwerken `.stat` in die map.
 
 ## De `.stat` file
 
 Het spoelmechanisme is eenvoudig van aard en wij willen het belang van het `.stat` bestanden die worden gegenereerd in de hoofdmap van het document waar de cachebestanden worden gemaakt.
 
-Binnen de `.vhost` en `_farm.any` bestanden die we configureren, geven een basisinstructie voor het document op waar de cache zich bevindt en waar de bestanden worden opgeslagen / opgeslagen wanneer een aanvraag van een eindgebruiker wordt ontvangen.
+Binnen de `.vhost` en `_farm.any` bestanden die we configureren, geven een basisinstructie voor het document op waar de cache zich bevindt en waar de bestanden moeten worden opgeslagen / opgeslagen wanneer een aanvraag van een eindgebruiker wordt ontvangen.
 
 Als u het volgende bevel op uw server van de Verzender in werking zou stellen zou u beginnen vinden `.stat` bestanden
 
@@ -213,7 +214,7 @@ Deze landbouwbedrijfdossiers doen niets behalve de folders van de documentwortel
 }
 ```
 
-### Hoofdmap van document
+### Hoofddocument
 
 Deze configuratieingang leeft in de volgende sectie van het landbouwbedrijfdossier:
 
@@ -307,7 +308,7 @@ Deze configuratieingang leeft in de volgende sectie van het landbouwbedrijfdossi
         /invalidate {
 ```
 
-Deze regels geven doorgaans aan welke bestanden ongeldig mogen worden gemaakt met een aanvraag om de bestandsextensie te verwijderen.
+Deze regels geven meestal aan welke bestanden ongeldig mogen worden gemaakt met een aanvraag om de bestandsextensie te verwijderen.
 
 Als u wilt voorkomen dat belangrijke bestanden ongeldig worden gemaakt met activering van een pagina, kunt u spelregels invoeren die aangeven welke bestanden ongeldig moeten worden gemaakt en welke bestanden handmatig ongeldig moeten worden gemaakt.  Hier volgt een voorbeeldset van configuraties waarmee alleen HTML-bestanden ongeldig kunnen worden gemaakt:
 
@@ -324,7 +325,7 @@ Wanneer u een pagina activeert en het groene licht krijgt dat de pagina-activeri
 
 Je vernieuwt je pagina en ziet het oude spul! wat ? er was een groen licht ?!
 
-Laten we een paar handmatige stappen door het spoelproces volgen om ons inzicht te geven in wat fout kan zijn.  Voer vanuit de uitgevers-shell het volgende uitlijningsverzoek met behulp van krullen uit:
+Laten we een paar handmatige stappen door het spoelproces volgen om ons inzicht te geven in wat verkeerd zou kunnen zijn.  Voer vanuit de uitgevers-shell het volgende uitlijningsverzoek met behulp van krullen uit:
 
 ```
 $ curl -H "CQ-Action: Activate" \ 

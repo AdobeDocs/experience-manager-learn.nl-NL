@@ -7,12 +7,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10721
+jira: KT-10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: 29b9e4a23d8f4ae0494fc43f76f7449062364843
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 0%
@@ -38,11 +38,11 @@ De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
 De app Next.js werkt met de volgende AEM implementatieopties. Alle implementaties vereisen [WKND Shared v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) of [WKND-site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) in de AEM as a Cloud Service omgeving te installeren.
 
-De volgende voorbeeldtoepassing is ontworpen om verbinding te maken met __AEM-publicatie__ service.
+De volgende voorbeeldtoepassing is ontworpen om verbinding te maken met __AEM publiceren__ service.
 
-### Vereisten voor AEM-auteur
+### Vereisten AEM auteur
 
-Next.js wordt ontworpen om met te verbinden __AEM-publicatie__ en hebt toegang tot niet-beveiligde inhoud. Next.js kan worden gevormd om met AEM Auteur via te verbinden `.env` hieronder beschreven eigenschappen. Voor afbeeldingen die worden aangeboden door AEM-auteur is verificatie vereist. De gebruiker die de app Next.js opent, moet daarom ook worden aangemeld bij AEM-auteur.
+Next.js wordt ontworpen om met te verbinden __AEM publiceren__ en hebt toegang tot niet-beveiligde inhoud. Next.js kan worden gevormd om met AEM Auteur via te verbinden `.env` hieronder beschreven eigenschappen. Voor afbeeldingen die worden aangeboden door AEM auteur is verificatie vereist. De gebruiker die de Next.js-app opent, moet daarom ook zijn aangemeld bij AEM auteur.
 
 ## Hoe wordt het gebruikt
 
@@ -60,7 +60,7 @@ Next.js wordt ontworpen om met te verbinden __AEM-publicatie__ en hebt toegang t
    ...
    ```
 
-   Als u verbinding maakt met de AEM Author-service, moet de verificatie worden opgegeven omdat de AEM Author-service standaard is beveiligd.
+   Als u verbinding maakt met AEM service Auteur, moet de verificatie worden opgegeven omdat AEM service Auteur standaard is beveiligd.
 
    Een lokale AEM gebruiken `AEM_AUTH_METHOD=basic` en geef de gebruikersnaam en het wachtwoord op in het dialoogvenster `AEM_AUTH_USER` en `AEM_AUTH_PASSWORD` eigenschappen.
 

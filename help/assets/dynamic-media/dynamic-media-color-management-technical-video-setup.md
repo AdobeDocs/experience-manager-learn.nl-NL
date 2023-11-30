@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
+doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 4%
@@ -84,7 +85,7 @@ Hier volgt de XML-sjabloon voor het configuratieknooppunt voor kleurbeheer. Dit 
 />
 ```
 
-### Lijst met standaardkleurprofielen voor Adobe wordt hieronder weergegeven {#list-of-default-adobe-color-profiles-are-listed-below}
+### Lijst met standaardkleurprofielen voor Adoben wordt hieronder weergegeven {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Naam | Kleurruimte | Beschrijving |
 | ------------------- | ---------- | ------------------------------------- |

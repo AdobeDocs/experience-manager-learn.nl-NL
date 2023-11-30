@@ -3,14 +3,14 @@ title: Maak een React-app die query's uitvoert AEM GraphQL API gebruiken - Aan d
 description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Maak een React-app waarmee inhoud/gegevens worden opgehaald van AEM GraphQL API. Zie ook hoe AEM Headless JS SDK wordt gebruikt.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6716
+jira: KT-6716
 thumbnail: KT-6716.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 0%

@@ -6,10 +6,11 @@ version: Cloud Service
 topic: Content Management
 role: Admin, User
 level: Beginner
-kt: 9401
+jira: KT-9401
 thumbnail: 338824.jpg
+doc-type: Feature Video
 exl-id: a62e936f-c231-474d-9671-58815b2cb652
-source-git-commit: 288eaf8bab20cfb0ecbfa8455198fa63252e2e71
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 # Adobe Asset Link instellen
 
-Breng snel invloed uit op uw organisatie door het voor creatieve en marketingteams gemakkelijker te maken om samen te werken aan middelen in het proces voor het maken van inhoud. Als u in IT bent, leer hoe te om Adobe Asset Link aan te zetten tegen geen kosten, die uw Creative Cloud apps met inbegrip van Photoshop, Illustrator, InDesign, en XD aan Adobe Experience Manager Middelen verbindt.
+Breng snel invloed uit op uw organisatie door het voor creatieve en marketingteams gemakkelijker te maken om samen te werken aan middelen in het proces voor het maken van inhoud. Als u in IT bent, leer hoe te om Adobe Asset Link aan te zetten tegen geen kosten, die uw Creative Cloud apps met inbegrip van Photoshop, Illustrator, InDesign, en XD met Adobe Experience Manager Assets verbindt.
 
 ## Asset Link instellen voor AEM as a Cloud Service
 

@@ -1,16 +1,17 @@
 ---
 title: Aangeklikte component bijhouden met Adobe Analytics
-description: Gebruik de gebeurtenisgestuurde Adobe Client Data-laag om kliks van specifieke componenten op een Adobe Experience Manager-site bij te houden. Leer hoe u tagregels gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics-rapportsuite te verzenden met behulp van een trackkoppelingsbaken.
+description: Gebruik de gebeurtenis-gedreven laag van de Gegevens van de Cliënt van de Adobe om kliks van specifieke componenten op een plaats van Adobe Experience Manager te volgen. Leer hoe u tagregels gebruikt om naar deze gebeurtenissen te luisteren en gegevens naar een Adobe Analytics-rapportsuite te verzenden met behulp van een trackkoppelingsbaken.
 version: Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
-kt: 6296
+jira: KT-6296
 thumbnail: KT-6296.jpg
 badgeIntegration: label="Integratie" type="positive"
+doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 1%
@@ -23,13 +24,13 @@ ht-degree: 1%
 >
 >Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Adobe Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende: [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) voor een geconsolideerde referentie van de terminologische wijzigingen.
 
-De gebeurtenisgestuurde [Adobe Clientgegevenslaag met AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) om kliks van specifieke componenten op een plaats van Adobe Experience Manager te volgen. Leer hoe u regels in de eigenschap tag gebruikt om te luisteren naar klikgebeurtenissen, deze te filteren op component en de gegevens te verzenden naar een Adobe Analytics met een spoorkoppelingsbaken.
+De gebeurtenisgestuurde functie gebruiken [Clientgegevenslaag Adoben met AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) om kliks van specifieke componenten op een plaats van Adobe Experience Manager te volgen. Leer hoe u regels in de eigenschap tag gebruikt om te luisteren naar klikgebeurtenissen, deze te filteren op component en de gegevens te verzenden naar een Adobe Analytics met een spoorkoppelingsbaken.
 
 ## Wat u gaat bouwen {#what-build}
 
 Het WKND-marketingteam wil graag weten welke `Call to Action (CTA)` de knoppen voeren het beste uit op de startpagina. In deze zelfstudie, laten wij een regel aan het markeringsbezit toevoegen dat op het `cmp:click` gebeurtenissen van **Teaser** en **Knop** componenten. Vervolgens verzendt u de component-id en een nieuwe gebeurtenis naar Adobe Analytics naast het trackkoppelingsbaken.
 
-![Wat u spoorklikken zult bouwen](assets/track-clicked-component/final-click-tracking-cta-analytics.png)
+![Wat u spoorklikjes zult bouwen](assets/track-clicked-component/final-click-tracking-cta-analytics.png)
 
 ### Doelstellingen {#objective}
 
@@ -43,20 +44,20 @@ Deze zelfstudie is een voortzetting van [Paginagegevens verzamelen met Adobe Ana
 
 * A **Tag, eigenschap** met de [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) enabled
 * **Adobe Analytics** test/dev rapportsuite-id en trackingserver. Zie de volgende documentatie voor [een rapportenpakket maken](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) browserextensie geconfigureerd met de eigenschap tag die is geladen op het tabblad [WKND-site](https://wknd.site/us/en.html) of een AEM plaats met de Toegelaten Laag van Gegevens van de Adobe.
+* [Foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) browserextensie geconfigureerd met de eigenschap tag die is geladen op het tabblad [WKND-site](https://wknd.site/us/en.html) of een AEM plaats met de Laag van Gegevens van de Adobe toegelaten.
 
 ## Inspect the Button and Teaser schema
 
 Voordat u regels maakt in de eigenschap tag, is het handig om de opdracht [schema voor de knop en de taser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) en inspecteer hen in de implementatie van de gegevenslaag.
 
 1. Navigeren naar [WKND-startpagina](https://wknd.site/us/en.html)
-1. Open de ontwikkelaarsgereedschappen van de browser en navigeer naar de **Console**. Voer de volgende opdracht uit:
+1. Open de ontwikkelaarsgereedschappen van de browser en ga naar de **Console**. Voer de volgende opdracht uit:
 
    ```js
    adobeDataLayer.getState();
    ```
 
-   Boven code keert de huidige staat van de Laag van Gegevens van de Cliënt van Adobe terug.
+   Boven code keert de huidige staat van de Gegevens van de Cliënt van de Adobe Laag terug.
 
    ![Toestand gegevenslaag via browserconsole](assets/track-clicked-component/adobe-data-layer-state-browser.png)
 
@@ -83,11 +84,11 @@ Voordat u regels maakt in de eigenschap tag, is het handig om de opdracht [schem
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   De bovenstaande gegevens zijn gebaseerd op de [Component-/containeritemschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). De nieuwe tagregel gebruikt dit schema.
+   De bovenstaande gegevensdetails zijn gebaseerd op de [Component-/containeritemschema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). De nieuwe tagregel gebruikt dit schema.
 
 ## Creeer een CTA klikte regel
 
-De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag. Wanneer op een Core-component wordt geklikt `cmp:click` -gebeurtenis wordt verzonden via de gegevenslaag. Als u wilt luisteren naar de `cmp:click` -gebeurtenis. Laten we een regel maken.
+De gegevenslaag van de Cliënt van de Adobe is **event** gestuurde gegevenslaag. Wanneer op een Core-component wordt geklikt `cmp:click` wordt verzonden via de gegevenslaag. Als u wilt luisteren naar de `cmp:click` -gebeurtenis. Laten we een regel maken.
 
 1. Navigeer naar het Experience Platform en naar de eigenschap tag die is geïntegreerd met de AEM Site.
 1. Ga naar de **Regels** in de gebruikersinterface voor eigenschappen van tags en klik vervolgens op **Regel toevoegen**.
@@ -128,9 +129,9 @@ De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag
    });
    ```
 
-   Het bovenstaande codefragment voegt een gebeurtenislistener toe door [een functie duwen](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) in de gegevenslaag. Wanneer `cmp:click` gebeurtenis wordt geactiveerd `componentClickedHandler` functie wordt aangeroepen. In deze functie worden een paar gezondheidscontroles toegevoegd en een nieuwe `event` object is samengesteld met de nieuwste [status van de gegevenslaag](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) voor de component die de gebeurtenis heeft geactiveerd.
+   Het bovenstaande codefragment voegt een gebeurtenislistener toe door [een functie duwen](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) in de gegevenslaag. Wanneer de `cmp:click` de gebeurtenis wordt geactiveerd `componentClickedHandler` functie wordt aangeroepen. In deze functie worden een paar gezondheidscontroles toegevoegd en een nieuwe `event` object is samengesteld met de nieuwste [status van de gegevenslaag](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) voor de component die de gebeurtenis heeft geactiveerd.
 
-   Tot slot `trigger(event)` functie wordt aangeroepen. De `trigger()` function is a reserved name in the tag property and it **triggers** de regel. De `event` object wordt doorgegeven als een parameter die vervolgens weer wordt weergegeven door een andere gereserveerde naam in de eigenschap tag. Gegevenselementen in de eigenschap tag kunnen nu verwijzen naar verschillende eigenschappen met een codefragment, zoals `event.component['someKey']`.
+   Tot slot de `trigger(event)` functie wordt aangeroepen. De `trigger()` function is a reserved name in the tag property and it **triggers** de regel. De `event` object wordt doorgegeven als een parameter die vervolgens weer wordt weergegeven door een andere gereserveerde naam in de eigenschap tag. Gegevenselementen in de eigenschap tag kunnen nu verwijzen naar verschillende eigenschappen met behulp van een codefragment, zoals `event.component['someKey']`.
 
 1. Sla de wijzigingen op.
 1. Volgende onder **Handelingen** klikken **Toevoegen** om de **Configuratie van handelingen** wizard.
@@ -155,7 +156,7 @@ De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag
    >
    > Het kan handig zijn om de [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) om de insluitcode over te schakelen op een **Ontwikkeling** milieu.
 
-1. Ga naar de [WKND-site](https://wknd.site/us/en.html) en open de ontwikkelaarshulpmiddelen om de console te bekijken. Selecteer ook de **Logbestand behouden** selectievakje.
+1. Ga naar de [WKND-site](https://wknd.site/us/en.html) en open de ontwikkelaarshulpmiddelen om de console te bekijken. Selecteer ook de optie **Logbestand behouden** selectievakje.
 
 1. Klik op een van de **Teaser** of **Knop** CTA knopen om aan een andere pagina te navigeren.
 
@@ -167,12 +168,12 @@ De gegevenslaag van de Cliënt van Adobe is een **event** gestuurde gegevenslaag
 
 ## Gegevenselementen maken
 
-Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen waarop is geklikt. Herinneren in de vorige oefening de output van `event.path` was vergelijkbaar met `component.button-b6562c963d` en de waarde van `event.component['dc:title']` was zoiets als &#39;Beeld Trips&#39;.
+Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen waarop is geklikt. Herinneren in de vorige oefening de output van `event.path` was vergelijkbaar met `component.button-b6562c963d` en de waarde van `event.component['dc:title']` was zoiets als &#39;Bezoekreizen&#39;.
 
 ### Component-id
 
 1. Navigeer naar het Experience Platform en naar de eigenschap tag die is geïntegreerd met de AEM Site.
-1. Ga naar de **Gegevenselementen** en klik op **Nieuw gegevenselement toevoegen**.
+1. Ga naar de **Gegevenselementen** sectie en klik op **Nieuw gegevenselement toevoegen**.
 1. Voor **Naam** veld, Enter **Component-id**.
 1. Voor **Type gegevenselement** veld, selecteren **Aangepaste code**.
 
@@ -196,7 +197,7 @@ Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen 
 
 ### Componenttitel
 
-1. Ga naar de **Gegevenselementen** en klik op **Nieuw gegevenselement toevoegen**.
+1. Ga naar de **Gegevenselementen** sectie en klik op **Nieuw gegevenselement toevoegen**.
 1. Voor **Naam** veld, Enter **Componenttitel**.
 1. Voor **Type gegevenselement** veld, selecteren **Aangepaste code**.
 1. Klikken **Editor openen** en voert u het volgende in de aangepaste code-editor in:
@@ -213,7 +214,7 @@ Maak vervolgens gegevenselementen om de component-id en de titel vast te leggen 
 
 Werk vervolgens de **CTA geklikt** om ervoor te zorgen dat de regel alleen wordt geactiveerd wanneer de `cmp:click` gebeurtenis wordt geactiveerd voor een **Teaser** of **Knop**. Aangezien Taser&#39;s CTA als een afzonderlijk object in de gegevenslaag wordt beschouwd, is het belangrijk dat u het bovenliggende element controleert om te controleren of het van een Taser afkomstig is.
 
-1. Navigeer in de interface Tageigenschap naar de **CTA geklikt** regel die eerder is gemaakt.
+1. Navigeer in de interface Tageigenschap naar de **CTA geklikt** regel eerder gemaakt.
 1. Onder **Voorwaarden** klikken **Toevoegen** om de **Condition Configuration** wizard.
 1. Voor **Type voorwaarde** veld, selecteren **Aangepaste code**.
 
@@ -256,7 +257,7 @@ Momenteel worden de **CTA geklikt** regel output eenvoudig een consoleverklaring
    * `prop8` - `%Component ID%`
    * `event8`
 
-   ![Prop en gebeurtenissen voor eVar instellen](assets/track-clicked-component/set-evar-prop-event.png)
+   ![EVar Prop en gebeurtenissen instellen](assets/track-clicked-component/set-evar-prop-event.png)
 
    >[!NOTE]
    >
@@ -266,7 +267,7 @@ Momenteel worden de **CTA geklikt** regel output eenvoudig een consoleverklaring
 
    ![Een extra handeling toevoegen aan labelregel](assets/track-clicked-component/add-additional-launch-action.png)
 
-1. Stel de **Extensie** tekst naar **Adobe Analytics** en stelt de **Type handeling** tot  **Band verzenden**.
+1. Stel de **Extensie** tekst naar **Adobe Analytics** en stelt de **Type handeling** tot  **Bandbaken verzenden**.
 1. Onder **Tekstspatiëring** het keuzerondje instellen op **`s.tl()`**.
 1. Voor **Koppelingstype** veld, kies **Aangepaste koppeling** en voor **Koppelingsnaam** Stel de waarde in op: **`%Component Title%: CTA Clicked`**:
 
@@ -291,7 +292,7 @@ Nu **CTA geklikt** regel verzendt het baken van Analytics, zou u de Analytics vo
 
 1. Open de [WKND-site](https://wknd.site/us/en.html) in uw browser.
 1. Klik op het pictogram Foutopsporing ![Het pictogram Foutopsporing op platform beleven](assets/track-clicked-component/experience-cloud-debugger.png) om Foutopsporing op Experience Platform te openen.
-1. Controleer of Foutopsporing de eigenschap tag toewijst aan *uw* Ontwikkelomgeving, zoals eerder beschreven, en **Logboekregistratie voor console** is ingeschakeld.
+1. Controleer of Foutopsporing de eigenschap tag toewijst aan *uw* Ontwikkelomgeving, zoals eerder beschreven, en de **Logboekregistratie voor console** is ingeschakeld.
 1. Open het menu Analytics en controleer of de rapportsuite is ingesteld op *uw* rapportsuite.
 
    ![Foutopsporing op het tabblad Analyse](assets/track-clicked-component/analytics-tab-debugger.png)
@@ -300,13 +301,13 @@ Nu **CTA geklikt** regel verzendt het baken van Analytics, zou u de Analytics vo
 
    ![CTA-knop om te klikken](assets/track-clicked-component/cta-button-to-click.png)
 
-1. Terug naar Foutopsporing Experience Platform en omlaag schuiven en uitvouwen **Netwerkverzoeken** > *Uw rapportsuite*. U zou moeten kunnen vinden **eVar**, **prop**, en **event** set.
+1. Terug naar Foutopsporing Experience Platform en omlaag schuiven en uitvouwen **Netwerkverzoeken** > *Uw rapportsuite*. U moet de **eVar**, **prop**, en **event** set.
 
    ![Analytische gebeurtenissen, evar en prop bijgehouden bij klikken](assets/track-clicked-component/evar-prop-link-clicked-tracked-debugger.png)
 
 1. Ga terug naar de browser en open de ontwikkelaarsconsole. Navigeer naar de voettekst van de site en klik op een van de navigatiekoppelingen:
 
-   ![Klik op Navigatiekoppeling in de voettekst](assets/track-clicked-component/click-navigation-link-footer.png)
+   ![Klik op Navigatie in de voettekst](assets/track-clicked-component/click-navigation-link-footer.png)
 
 1. Neem in de browser console het bericht waar *Er is niet voldaan aan &quot;Aangepaste code&quot; voor regel waarop wordt geklikt*.
 
@@ -314,8 +315,8 @@ Nu **CTA geklikt** regel verzendt het baken van Analytics, zou u de Analytics vo
 
    >[!NOTE]
    >
-   > Als u geen consolelogboeken ziet, zorg ervoor dat **Logboekregistratie voor console** is gecontroleerd onder **Experience Platform-tags** in de Foutopsporing van het Experience Platform.
+   > Als u geen consolelogboeken ziet, zorg ervoor dat **Logboekregistratie voor console** is gecontroleerd onder **Experience Platform-tags** in het Experience Platform Foutopsporing.
 
 ## Gefeliciteerd!
 
-U gebruikte enkel de gebeurtenis-gedreven de Gegevens van de Cliënt van de Adobe Laag en Markering in Experience Platform om de kliks van specifieke componenten op een AEM plaats te volgen.
+U gebruikte enkel de gebeurtenis-gedreven Laag en Markering van de Gegevens van de Adobe van de Cliënt in Experience Platform om de kliks van specifieke componenten op een AEM plaats te volgen.

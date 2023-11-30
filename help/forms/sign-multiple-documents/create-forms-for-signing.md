@@ -3,13 +3,13 @@ title: Forms maken voor ondertekening
 description: Maak formulieren die moeten worden opgenomen in het ondertekeningspakket.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 6893
+jira: KT-6893
 thumbnail: 6893.jpg
 topic: Development
 role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -23,11 +23,11 @@ De volgende stap bestaat uit het maken van de aangepaste formulieren die u in he
 * Zorg ervoor dat de formulieren zijn gebaseerd op de **SignMultipleForms** sjabloon. Op deze manier zorgt u ervoor dat de formulieren vooraf worden ingevuld met de gegevens die uit de database worden opgehaald.
 
 * De formulieren moeten zijn geconfigureerd voor het gebruik van Acrobat Sign en het veld signer1 moet zijn gekoppeld aan het veld Customer Email.
-* De formulieren moeten ook worden gekoppeld aan clientLib die **getnextform**
+* De formulieren moeten ook worden gekoppeld aan clientLib die wordt aangeroepen **getnextform**
 * De formulieren moeten de component Signature Step gebruiken.
 * Het formulier moet ook de aangepaste **Meerdere formulieren ondertekenen** component. Met deze component kunt u naar het volgende formulier navigeren om u aan te melden bij het pakket.
 * De verzending van het formulier moet zo zijn geconfigureerd dat AEM workflow wordt geactiveerd **Handtekeningstatus bijwerken**
-* Zorg ervoor dat het pad naar het gegevensbestand is ingesteld op **Data.xml**. Dit is erg belangrijk omdat de voorbeeldcode zoekt naar een bestand met de naam Data.xml in het laadproces van het verzenden van het formulier.
+* Zorg ervoor dat het pad naar het gegevensbestand is ingesteld op **Data.xml**. Dit is erg belangrijk omdat de voorbeeldcode zoekt naar een bestand met de naam Data.xml tijdens het laden van het formulier.
 
 Nadat u het formulier hebt gemaakt, neemt u de opdracht **alleenstaande velden** adaptief formulierfragment in het formulier. Het fragment wordt gemarkeerd als verborgen. Dit fragment bevat de volgende velden.
 

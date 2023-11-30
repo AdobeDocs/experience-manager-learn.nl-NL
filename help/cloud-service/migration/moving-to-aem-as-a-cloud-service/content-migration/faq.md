@@ -7,10 +7,10 @@ topic: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
-kt: 11200
+jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2296'
 ht-degree: 0%
@@ -30,13 +30,13 @@ Hiermee krijgt u antwoorden op veelgestelde vragen over de migratie van inhoud n
 + **IMS**: [Identity Management-systeem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
 + **DM**: [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
 
-Gebruik de onderstaande sjabloon voor het opgeven van meer informatie tijdens het maken van CTT-gerelateerde Adobe-ondersteuningstickets.
+Gebruik de onderstaande sjabloon voor het opgeven van meer informatie tijdens het maken van CTT-gerelateerde ondersteuningstickets voor Adoben.
 
-![Sjabloon voor Adobe-ondersteuningsticket voor-migratie](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot; }
+![Ondersteuningstabel voor Adobe voor inhoudsmigratie](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot; }
 
 ## Algemene vragen over migratie van inhoud
 
-### V: Wat zijn de verschillende methodes om inhoud in AEM als Cloud Services te migreren?
+### Q: Wat zijn de verschillende methodes om inhoud in AEM als Cloud Servicen te migreren?
 
 Er zijn drie verschillende methoden beschikbaar
 
@@ -44,7 +44,7 @@ Er zijn drie verschillende methoden beschikbaar
 + Via pakketbeheer (AEM → AEMaaCS)
 + Buiten de box Bulk Import Service for Assets (S3/Azure → AEMaaCS)
 
-### V: Is er een grens op de hoeveelheid inhoud die kan worden overgebracht gebruikend CTT?
+### Q: Is er een grens op de hoeveelheid inhoud die kan worden overgebracht gebruikend CTT?
 
 Nee. CTT als gereedschap kan uit AEM bron worden gehaald en in AEMaaCS worden opgenomen. Er zijn echter specifieke limieten voor het AEMaaCS-platform die vóór de migratie in overweging moeten worden genomen.
 
@@ -56,15 +56,15 @@ Exporteer het rapport als CSV en upload het vervolgens naar Cloud Acceleration M
 
 Controleer de evaluatie van de complexiteit van de code en inhoud die door het gereedschap wordt geleverd en noteer de bijbehorende actiepunten die leiden tot de evaluatie van de achtergrondcode voor het vernieuwen van code of de cloudmigratie.
 
-### V: Is het raadzaam om op de auteur van de bron te extraheren en in te voeren in de auteur AEMaaCS en te publiceren?
+### Q: Is het geadviseerd om op bronauteur te halen en in auteur AEMaaCS op te nemen en te publiceren?
 
 Het wordt altijd aangeraden een-op-een-uitname uit te voeren tussen auteur- en publicatielagen. Desalniettemin is het acceptabel om de auteur van de bronproductie uit te pakken en die in Dev, Stage en Production CS in te voeren.
 
-### V: Is er een manier om de tijd te schatten, het neemt om de inhoud van bron AEM in AEMaaCS gebruikend CTT te migreren?
+### Q: Is er een manier om de tijd te schatten, het vergt om de inhoud van bron AEM in AEMaaCS gebruikend CTT te migreren?
 
 Aangezien het migratieproces afhankelijk is van internetbandbreedte, voor het CTT-proces toegewezen heap, beschikbaar vrij geheugen en schijf-IO die aan elk bronsysteem zijn onderworpen, wordt aanbevolen om het bewijs van migratie in een vroeg stadium uit te voeren en die gegevenspunten te extrapoleren om schattingen te maken.
 
-### V: Hoe wordt mijn bron AEM prestaties beïnvloed als ik het CTT-extractieproces start?
+### Q: Hoe wordt mijn bron AEM prestaties beïnvloed als ik het CTT-extractieproces start?
 
 Het hulpmiddel CTT loopt in zijn eigen proces Java™ dat tot 4gb heap neemt, die door configuratie OSGi configureerbaar is. Dit getal kan veranderen, maar u kunt het Java™-proces opzoeken en daar achter komen.
 
@@ -76,29 +76,29 @@ De hoeveelheid middelen die het CTT-extractieproces nodig heeft, is afhankelijk 
 
 Als kloonomgevingen worden gebruikt voor migratie, heeft dit geen invloed op het gebruik van bronnen voor live productieservers, maar heeft het zijn eigen nadelen voor het synchroniseren van inhoud tussen live productie en kloon
 
-### V: In mijn bronauteurssysteem, hebben wij SSO voor de gebruikers wordt gevormd om in de instantie van de Auteur voor authentiek te verklaren. Moet ik de eigenschap van de Toewijzing van de Gebruiker van CTT in dit geval gebruiken?
+### Q: In mijn systeem van de bronauteur, hebben wij SSO voor de gebruikers wordt gevormd om in de instantie van de Auteur voor authentiek te verklaren. Moet ik de eigenschap van de Toewijzing van de Gebruiker van CTT in dit geval gebruiken?
 
-Het korte antwoord is &quot;**Ja**&quot;.
+Het korte antwoord is: &quot;**Ja**&quot;.
 
 De CTT-extractie en -inname **zonder** Door de gebruiker alleen de inhoud toe te wijzen, worden de bijbehorende beginselen (gebruikers, groepen) van bron AEM naar AEMaaCS gemigreerd. Maar deze gebruikers (id&#39;s) in Adobe IMS moeten toegang hebben (voorzien van) tot AEMaaCS-instantie om de verificatie te voltooien. De taak van [gereedschap voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) moet de lokale AEM gebruiker aan Gebruiker IMS in kaart brengen zodat de authentificatie en de vergunningen samenwerken.
 
 In dit geval is de SAML-identiteitsprovider geconfigureerd tegen Adobe IMS voor het gebruik van Federated / Enterprise ID in plaats van rechtstreeks voor het AEM met behulp van de verificatiehandler.
 
-### V: In mijn systeem van de bronauteur, hebben wij basisauthentificatie die voor de gebruikers wordt gevormd om in de instantie van de Auteur met lokale AEM gebruikers voor authentiek te verklaren. Moet ik de eigenschap van de Toewijzing van de Gebruiker van CTT in dit geval gebruiken?
+### Q: In mijn systeem van de bronauteur, hebben wij basisauthentificatie die voor de gebruikers wordt gevormd om in de instantie van de Auteur met lokale AEM gebruikers voor authentiek te verklaren. Moet ik de eigenschap van de Toewijzing van de Gebruiker van CTT in dit geval gebruiken?
 
-Het korte antwoord is &quot;**Ja**&quot;.
+Het korte antwoord is: &quot;**Ja**&quot;.
 
 De CTT-extractie en -opname zonder gebruikerstoewijzing migreert de inhoud, de bijbehorende beginselen (gebruikers, groepen) van bron AEM naar AEMaaCS. Maar deze gebruikers (id&#39;s) in Adobe IMS moeten toegang hebben (voorzien van) tot AEMaaCS-instantie om de verificatie te voltooien. De taak van [gereedschap voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) moet de lokale AEM gebruiker aan Gebruiker IMS in kaart brengen zodat de authentificatie en de vergunningen samenwerken.
 
 In dit geval gebruiken de gebruikers persoonlijke Adobe ID en wordt de Adobe ID door IMS-beheerder gebruikt om toegang te verlenen tot AEMaaCS.
 
-### V: Wat betekenen de termen &quot;vegen&quot; en &quot;overschrijven&quot; in de context van CTT?
+### Q: Wat betekenen de termen &quot;veeggen&quot; en &quot;overschrijven&quot; in de context van CTT?
 
 In de context van [extractiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase)De opties zijn of om de gegevens in de testcontainer van vorige extractiecycli te overschrijven of het differentieel (toegevoegd/bijgewerkt/verwijderd) in de container toe te voegen. De container van het opvoeren is niets, maar de blob opslagcontainer verbonden aan migratiereeks. Elke migratieset krijgt een eigen staging container.
 
 In de context van [innamefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html), De opties zijn + waarmee de volledige inhoudsopslagplaats van AEMaaCS wordt vervangen of de differentiële (toegevoegde/bijgewerkte/verwijderde) inhoud van de testmigratiecontainer wordt gesynchroniseerd.
 
-### V: Er zijn meerdere websites, gekoppelde elementen, gebruikers en groepen in het bronsysteem. Is het mogelijk om ze in fasen te migreren naar AEMaaCS?
+### Q: Er zijn veelvoudige websites, bijbehorende activa, gebruikers, groepen in het bronsysteem. Is het mogelijk om ze in fasen te migreren naar AEMaaCS?
 
 Ja, dat is mogelijk, maar er is een zorgvuldige planning nodig met betrekking tot:
 
@@ -109,15 +109,15 @@ Ja, dat is mogelijk, maar er is een zorgvuldige planning nodig met betrekking to
 
 Controleer het extractie- en innameproces voor de top-up zoals beschreven voordat u de migraties plant.
 
-### V: Zijn mijn websites beschikbaar voor eindgebruikers, ook al gebeurt er inname in AEMaaCS-auteur of publicatie-instanties?
+### V: Zijn mijn websites beschikbaar voor eindgebruikers, ook al gebeurt er inname in de auteur van AEMaaCS of in de publicatie?
 
 Ja. Eindgebruikersverkeer wordt niet onderbroken door de activiteit van de inhoudsmigratie. De opname van de auteur bevriest de inhoud echter totdat deze is voltooid.
 
-### V: In het BPA-rapport worden items weergegeven die betrekking hebben op ontbrekende originele uitvoeringen. Moet ik ze eerst opruimen aan de bron voordat ze worden geëxtraheerd?
+### Q: Het BPA rapport toont punten met betrekking tot ontbrekende originele vertoningen. Moet ik ze eerst opruimen aan de bron voordat ze worden geëxtraheerd?
 
 Ja. De ontbrekende oorspronkelijke vertoning betekent dat het binaire element niet correct is geüpload. Beschouw het als slechte gegevens, gelieve te herzien, steun gebruikend de Manager van het Pakket (zoals vereist) en hen te verwijderen uit bron AEM alvorens extractie in werking te stellen. De onjuiste gegevens hebben negatieve resultaten bij de verwerking van de elementen.
 
-### V: Het BPA-rapport bevat items die te maken hebben met ontbrekende `jcr:content` knooppunt voor mappen. Wat moet ik met hen doen?
+### Q: Het BPA-rapport bevat items die verband houden met het ontbreken `jcr:content` knooppunt voor mappen. Wat moet ik met hen doen?
 
 Wanneer `jcr:content` ontbreekt op mapniveau, elke actie voor het doorgeven van instellingen zoals verwerkingsprofielen, enz. de ouders zullen op dit niveau breken . Controleer de reden voor het ontbreken `jcr:content`. Hoewel deze mappen kunnen worden gemigreerd, wordt de gebruikerservaring door deze mappen afgebroken en worden later onnodige cycli voor probleemoplossing veroorzaakt.
 
@@ -125,11 +125,11 @@ Wanneer `jcr:content` ontbreekt op mapniveau, elke actie voor het doorgeven van 
 
 Ja, er is een [Formaat controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) onderdeel van de CTT.
 
-### V: Ik voer de migratie uit (extractie, inname). Kan worden gecontroleerd of al mijn geëxtraheerde inhoud in het doel is opgenomen?
+### Q: Ik voer de migratie uit (extractie, inname). Kan worden gecontroleerd of al mijn geëxtraheerde inhoud in het doel is opgenomen?
 
 Ja, er is een [validatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html) onderdeel van de CTT.
 
-### V: Mijn klant heeft de verplichting om inhoud te verplaatsen tussen AEMaaCS-omgevingen, zoals van AEMaaCS Dev naar AEMaaCS Stage of naar AEMaaCS Prod. Kan ik het hulpmiddel van de inhoudoverdracht voor deze gebruiksgevallen gebruiken?
+### Q: Mijn klant heeft de vereiste om inhoud te verplaatsen tussen AEMaaCS-omgevingen, zoals van AEMaaCS Dev naar AEMaaCS Stage of naar AEMaaCS Prod. Kan ik het hulpmiddel van de inhoudoverdracht voor deze gebruiksgevallen gebruiken?
 
 Helaas, nee. De gebruikscase van CTT is om inhoud van op-gebouw/AMS-ontvangen bron AEM 6.3+ aan AEMaaCS wolkenmilieu&#39;s te migreren. [Lees de CTT-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
 
@@ -151,13 +151,13 @@ Hier zijn mogelijke categorieën van kwesties (gelieve te beschouwen dit niet al
 
 
 
-### V: Moet mijn bronserver een uitgaande internetverbinding hebben om CTT te laten werken?
+### V: Moet mijn bronserver een uitgaande internetverbinding hebben om CTT te kunnen gebruiken?
 
-Het korte antwoord is &quot;**Ja**&quot;.
+Het korte antwoord is: &quot;**Ja**&quot;.
 
 Het proces CTT vereist connectiviteit aan de hieronder middelen:
 
-+ Het doel AEM de as a Cloud Service omgeving: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
++ Doel AEM as a Cloud Service omgeving: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
 + Het eindpunt van de Toewijzing van de Gebruiker IO: `usermanagement.adobe.io`
 
@@ -169,23 +169,23 @@ Raadpleeg de documentatie voor meer informatie over [bronconnectiviteit](https:/
 
 Nee. Om de activa te verwerken, moet het verzoek om opnieuw te verwerken in werking worden gesteld.
 
-### V: Zullen de activa automatisch na opname in AEMaaCS opnieuw worden gedestiveerd?
+### V: Zullen activa automatisch opnieuw worden gedesdexeerd na opname in AEMaaCS?
 
 Ja. De elementen worden opnieuw geïndexeerd op basis van de indexdefinities die beschikbaar zijn in AEMaaCS.
 
-### V: De bron AEM is geïntegreerd met Dynamic Media. Zijn er specifieke zaken die in overweging moeten worden genomen vóór de migratie van inhoud?
+### Q: De bron AEM is geïntegreerd met Dynamic Media. Zijn er specifieke zaken die in overweging moeten worden genomen vóór de migratie van inhoud?
 
 Ja, bedenk het volgende wanneer de bron AEM Dynamic Media Integration heeft.
 
 + AEMaaCS ondersteunt alleen de Dynamic Media Scene7-modus. Als het bronsysteem op Hybride Wijze is, dan wordt de migratie DM aan de wijzen van Scene7 vereist.
 + Als de benadering uit bronklooninstanties moet migreren, dan is het veilig om integratie DM op kloon onbruikbaar te maken die voor CTT zou worden gebruikt. Deze stap is puur om het even welk schrijven aan DM te vermijden of lading op verkeer te vermijden DM.
-+ Houd er rekening mee dat CTT knooppunten, metagegevens van een migratieset van bron AEM naar AEMaaCS migreert. Het zal geen handelingen op DM direct uitvoeren.
++ Houd er rekening mee dat CTT knooppunten, metagegevens van een migratieset van bron-AEM naar AEMaaCS migreert. Het zal geen handelingen op DM direct uitvoeren.
 
-### V: Wat zijn verschillende migratiebenaderingen wanneer de integratie DM op Bron AEM aanwezig is?
+### Q: Wat zijn verschillende migratiebenaderingen wanneer de integratie DM op Bron AEM aanwezig is?
 
 Lees de bovenstaande vraag en beantwoord deze eerder
 
-(Dit zijn twee mogelijke opties, maar zijn niet beperkt tot deze twee). Het hangt van hoe de klant de UAT, Prestaties het testen, het beschikbare milieu wil benaderen en of een kloon voor migratie of niet wordt gebruikt. Beschouw deze twee als uitgangspunt voor discussie
+(Dit zijn twee mogelijke opties, maar zijn niet beperkt tot deze twee). Het hangt van hoe de klant de UAT, Prestaties het testen, het beschikbare milieu wil benaderen en of een kloon voor migratie of niet wordt gebruikt. Beschouw deze twee als uitgangspunt voor de discussie
 
 **Optie 1**
 

@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 4ee0b68f-3897-4104-8615-9de8dbb8f327
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -43,7 +44,7 @@ Dynamic Media-video ondersteunt nu de mogelijkheid om een aangepaste miniatuur v
    <tr>
       <td> </td>
       <td>**Video360Social Viewer**</td>
-      <td>**Video360VR-viewer**</td>
+      <td>**Video360VR Viewer**</td>
    </tr>
    <tr>
       <td>Dynamic Media Run-modus</td>
@@ -73,7 +74,7 @@ Dynamic Media-video ondersteunt nu de mogelijkheid om een aangepaste miniatuur v
       <td>Ja</td>
    </tr>
    <tr>
-      <td>Navigatieweergave</td>
+      <td>Navigatieaanzicht</td>
       <td>
          <ul>
             <li>Muissleep (op desktopsystemen)</li>

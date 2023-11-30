@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6287
+jira: KT-6287
 thumbnail: KT-6287.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Integreren met AEM verwerkingsprofielen
 
-Workers van Asset computen kunnen alleen aangepaste uitvoeringen genereren in AEM as a Cloud Service als ze zijn geregistreerd bij AEM as a Cloud Service auteur via het verwerken van profielen. Op alle elementen die onder dat verwerkingsprofiel vallen, wordt de worker geactiveerd tijdens het uploaden of opnieuw verwerken en wordt de aangepaste uitvoering gegenereerd en beschikbaar gesteld via de uitvoeringen van het element.
+Workers van Asset computen kunnen alleen aangepaste uitvoeringen genereren in AEM as a Cloud Service als ze zijn geregistreerd in AEM as a Cloud Service auteur-service via het verwerken van profielen. Op alle elementen die onder dat verwerkingsprofiel vallen, wordt de worker geactiveerd tijdens het uploaden of opnieuw verwerken en wordt de aangepaste uitvoering gegenereerd en beschikbaar gesteld via de uitvoeringen van het element.
 
 ## Een verwerkingsprofiel definiëren
 
@@ -59,21 +59,21 @@ Maak eerst een nieuw verwerkingsprofiel dat de worker aanroept met de configuree
          + Deze MIME-typen zijn de enige typen van de npm-modules van de worker. Deze lijst bevat limieten die worden verwerkt door de aangepaste worker.
       + __Omvat niet:__ `Leave blank`
          + Verwerk nooit activa met deze Types MIME gebruikend deze de dienstconfiguratie. In dit geval gebruiken we alleen een lijst van gewenste personen.
-1. Tikken __Opslaan__ rechtsboven
+1. Tikken __Opslaan__ in de rechterbovenhoek
 
 ## Een verwerkingsprofiel toepassen en aanroepen
 
 1. Selecteer het nieuwe verwerkingsprofiel, `WKND Asset Renditions`
 1. Tikken __Profiel toepassen op map(pen)__ in de bovenste actiebalk
 1. Selecteer een map waarop u het verwerkingsprofiel wilt toepassen, bijvoorbeeld `WKND` en tikken __Toepassen__
-1. Navigeer naar de map waarop het verwerkingsprofiel niet is toegepast __AEM > Middelen > Bestanden__ en tikken in `WKND`.
+1. Navigeren naar de map waarop het verwerkingsprofiel niet is toegepast via __AEM > Middelen > Bestanden__ en tikken in `WKND`.
 1. Enkele nieuwe afbeeldingselementen uploaden ([sample-1.jpg](../assets/samples/sample-1.jpg), [sample-2.jpg](../assets/samples/sample-2.jpg), en [sample-3.jpg](../assets/samples/sample-3.jpg)) in een map in de map met het verwerkingsprofiel toegepast en wacht tot het geüploade element is verwerkt.
 1. Tik op het element om de details te openen
    + Standaarduitvoeringen worden mogelijk sneller gegenereerd en weergegeven in AEM dan aangepaste uitvoeringen.
 1. Open de __Uitvoeringen__ weergave in de linkerzijbalk
 1. Tik op het element met de naam `Circle.png` en bekijk de gegenereerde uitvoering
 
-   ![Gegenereerde uitvoering](./assets/processing-profiles/rendition.png)
+   ![Generatie](./assets/processing-profiles/rendition.png)
 
 ## Voltooid!
 
@@ -85,7 +85,7 @@ Het definitieve project voor de Asset compute is beschikbaar op Github op:
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, d.w.z. `.env`, `.config.json` of `.aio`._
+_Github bevat de definitieve staat van het project, volledig bevolkt met de arbeider en testgevallen, maar bevat geen geloofsbrieven, namelijk. `.env`, `.config.json` of `.aio`._
 
 ## Problemen oplossen
 

@@ -1,29 +1,28 @@
 ---
-title: Adobe Experience Manager integreren met Adobe Target met behulp van Cloud Services
-seo-title: Integrating Adobe Experience Manager (AEM) with Adobe Target using Legacy Cloud Services
+title: Adobe Experience Manager met Adobe Target integreren met behulp van Cloud Servicen
 description: Stap voor stap doorloopt u hoe u Adobe Experience Manager (AEM) met Adobe Target kunt integreren met AEM Cloud Service
-seo-description: Step by step walkthrough on how to integrate Adobe Experience Manager (AEM) with Adobe Target using AEM Cloud Service
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 9b191211-2030-4b62-acad-c7eb45b807ca
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
 
 ---
 
-# Werken met AEM oudere Cloud Services
+# Werken met AEM oudere Cloud Servicen
 
-In deze sectie bespreken we hoe we Adobe Experience Manager (AEM) met Adobe Target kunnen instellen met behulp van verouderde Cloud Services.
+In deze sectie bespreken we hoe we Adobe Experience Manager (AEM) met Adobe Target kunnen instellen met behulp van verouderde Cloud Servicen.
 
 >[!NOTE]
 >
-> De AEM Legacy Cloud Service met Adobe Target is **alleen** gebruikt om directe AEM-auteur aan Adobe Target back-end verbinding te maken die de publicatie van inhoud van AEM naar Target vergemakkelijkt. De Lancering van Adobe wordt gebruikt blootstelt Adobe Target op het publiek onder ogen ziende Web-site ervaring die door AEM wordt gediend.
+> De AEM Legacy Cloud Service met Adobe Target is **alleen** gebruikt om directe AEMauteur aan Adobe Target achterste-eindverbinding tot stand te brengen die de publicatie van inhoud van AEM aan Doel vergemakkelijkt. De Lancering van de Adobe wordt gebruikt blootstelt Adobe Target op het publiek onder ogen ziende Web-site ervaring die door AEM wordt gediend.
 
 Als u gebruik wilt maken van AEM Experience Fragment-aanbiedingen om uw personalisatieactiviteiten te stimuleren, kunt u verdergaan met het volgende hoofdstuk en AEM integreren met Adobe Target met behulp van de verouderde cloudservices. Deze integratie is vereist om Experience Fragments van AEM naar Target te duwen als HTML/JSON aanbiedingen en om de doelaanbiedingen gelijk te houden met AEM. Deze integratie is vereist voor de implementatie [Scenario 1 besproken in de overzichtssectie](./overview.md#personalization-using-aem-experience-fragment).
 
@@ -40,16 +39,16 @@ Als u gebruik wilt maken van AEM Experience Fragment-aanbiedingen om uw personal
 
      >[!NOTE]
      >
-     > De klant moet van Experience Platform Launch en Adobe I/O van worden voorzien [Adobe-ondersteuning](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) of reik uit uw systeembeheerder
+     > De klant moet van Experience Platform Launch en Adobe I/O van worden voorzien [Ondersteuning voor Adoben](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) of reik uit uw systeembeheerder
 
 ### AEM integreren met Adobe Target
 
 >[!VIDEO](https://video.tv.adobe.com/v/28428?quality=12&learn=on)
 
-1. Adobe Target-Cloud Service maken met Adobe IMS-verificatie (*Gebruikt Adobe Target API*) (00:34)
+1. Adobe Target-Cloud Service maken met Adobe IMS-verificatie (*Gebruikt Adobe Target API*(00:34)
 2. Adobe Target-clientcode verkrijgen (01:50)
 3. Adobe IMS-configuratie voor Adobe Target maken (02:08)
 4. Een technische account maken voor toegang tot doel-API in Adobe I/O Console (02:08)
 5. Adobe Target-Cloud Service toevoegen aan AEM Experience Fragments (04:12)
 
-U hebt nu de [AEM met Adobe Target met behulp van verouderde Cloud Services](./using-aem-cloud-services.md#integrating-aem-target-options) zoals beschreven in Optie 2. U moet nu een Experience Fragment kunnen maken binnen AEM en het Experience Fragment kunnen publiceren als HTML-aanbieding of JSON-aanbieding aan Adobe Target, en vervolgens kunnen worden gebruikt om een activiteit te maken.
+U hebt nu de [AEM met Adobe Target met behulp van verouderde Cloud Servicen](./using-aem-cloud-services.md#integrating-aem-target-options) zoals beschreven in Optie 2. U moet nu een Experience Fragment kunnen maken binnen AEM en het Experience Fragment kunnen publiceren als HTML-aanbieding of JSON-aanbieding aan Adobe Target, en vervolgens kunnen worden gebruikt om een activiteit te maken.

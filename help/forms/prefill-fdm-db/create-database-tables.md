@@ -3,13 +3,13 @@ title: Databasetabellen maken
 description: Database maken voor gebruik door formuliergegevensmodel
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5811
+jira: KT-5811
 thumbnail: kt-5811.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 1136244a-c3e6-45f6-8af8-eb3c100f838e
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # Databasetabellen maken
 
-Het formuliergegevensmodel kan worden gebaseerd op RDBMS-, RESTfull-, SOAP- of OData-bronnen. De focus van deze cursus ligt op het vooraf instellen van een adaptief formulier met behulp van een formuliergegevensmodel dat wordt ondersteund door de RDBMS-gegevensbron. Voor deze zelfstudie werd MYSQL-database gebruikt. We hebben de volgende twee tabellen gemaakt om het gebruiksgeval aan te tonen
+Het gegevensmodel van het formulier kan worden gebaseerd op bronnen van RDBMS, RESTfull, SOAP of OData. De focus van deze cursus ligt op het vooraf instellen van een adaptief formulier met behulp van een formuliergegevensmodel dat wordt ondersteund door de RDBMS-gegevensbron. Voor deze zelfstudie werd MYSQL-database gebruikt. We hebben de volgende twee tabellen gemaakt om het gebruiksgeval aan te tonen
 
 * **newheren** table - Deze lijst slaat de juiste informatie op
 
-   ![newheren](assets/newhire-table.png)
+  ![newheren](assets/newhire-table.png)
 
 
 * **begunstigden** Tabel - Hiermee worden alle begunstigden opgeslagen
 
-   ![begunstigden](assets/beneficiaries-table.png)
+  ![begunstigden](assets/beneficiaries-table.png)
 
 U kunt de [sql-bestand](assets/db-schema.sql) met MySQL-workbench maken van tabellen met voorbeeldgegevens.
 

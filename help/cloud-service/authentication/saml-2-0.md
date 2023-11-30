@@ -6,11 +6,11 @@ feature: Security
 topic: Development, Security
 role: Architect, Developer
 level: Intermediate
-kt: 9351
+jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: f6a9e7b32d876a8cd5ce7bf6a2e13aeb5faaf35b
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '3123'
 ht-degree: 0%
@@ -23,33 +23,33 @@ Leer hoe u eindgebruikers (niet AEM auteurs) instelt en verifieert voor een comp
 
 ## Welke SAML voor AEM as a Cloud Service?
 
-Dankzij SAML 2.0-integratie met AEM Publish (of Preview) kunnen eindgebruikers van een AEM webervaring verifiëren bij een niet-Adobe IDP (Identity Provider) en hebben ze toegang tot AEM als een benoemde, geautoriseerde gebruiker.
+SAML 2.0-integratie met AEM Publish (of Preview), maakt eindgebruikers van een AEM webervaring in staat om zich te verifiëren bij een niet-Adobe IDP (Identity Provider) en heeft toegang tot AEM als een benoemde, geautoriseerde gebruiker.
 
-|  | AEM-auteur | AEM-publicatie |
+|                       | AEM auteur | AEM publiceren |
 |-----------------------|:----------:|:-----------:|
 | SAML 2.0-ondersteuning | ✘ | ✔ |
 
 +++ Begrijp SAML 2.0 stroom met AEM
 
-De typische stroom van een integratie van SAML van de Publicatie AEM is als volgt:
+De typische stroom van een AEM Publish integratie van SAML is als volgt:
 
-1. De gebruiker doet een verzoek aan AEM publiceert het wijst op authentificatie wordt vereist.
+1. De gebruiker doet een verzoek om Publiceren te AEM de wijst op authentificatie wordt vereist.
    + De gebruiker verzoekt om een van CUGs/ACL beschermde middel.
    + De gebruiker vraagt een middel dat aan een Vereiste van de Authentificatie onderworpen is.
-   + De gebruiker volgt een verbinding aan AEM login eindpunt (d.w.z. `/system/sling/login`) die uitdrukkelijk om de login actie verzoekt.
+   + De gebruiker volgt een verbinding aan AEM login eindpunt (namelijk `/system/sling/login`) die uitdrukkelijk om de login actie verzoekt.
 1. AEM maakt een AuthnRequest aan IDP, die IDP verzoekt om authentificatieproces te beginnen.
 1. Gebruiker verifieert aan IDP.
    + De gebruiker wordt veroorzaakt door IDP voor geloofsbrieven.
    + De gebruiker is reeds voor authentiek verklaard met IDP en moet geen verdere geloofsbrieven verstrekken.
 1. IDP produceert een bevestiging van SAML die de gegevens van de gebruiker bevat, en ondertekent het gebruikend het privé certificaat van IDP.
-1. IDP verzendt de bevestiging van SAML via de POST van HTTP, als Webbrowser van de gebruiker, naar publiceren AEM.
-1. AEM publiceert ontvangt de bevestiging van SAML, en bevestigt de integriteit en de authenticiteit van de bevestiging SAML gebruikend het openbare certificaat IDP.
-1. AEM publiceert beheert het AEM gebruikersverslag dat op de configuratie van SAML 2.0 OSGi, en de inhoud van de Assertion van SAML wordt gebaseerd.
-   + Hiermee maakt u een gebruiker
+1. IDP verzendt de bevestiging van SAML via de POST van HTTP, als Webbrowser van de gebruiker, naar AEM Publish.
+1. AEM publiceer ontvangt de bevestiging van SAML, en bevestigt de integriteit en de authenticiteit van de bevestiging van SAML gebruikend het openbare certificaat IDP.
+1. AEM publiceer beheert het AEM gebruikersverslag dat op de configuratie van SAML 2.0 OSGi, en de inhoud van de Assertion van SAML wordt gebaseerd.
+   + Maakt gebruiker
    + Gebruikerskenmerken synchroniseren
    + Updates AEM gebruikersgroeplidmaatschap
-1. Met AEM-publicatie wordt de AEM ingesteld `login-token` cookie op de HTTP-respons, die wordt gebruikt voor het verifiëren van volgende aanvragen bij AEM Publish.
-1. In AEM-publicatie wordt de gebruiker omgeleid naar de URL in AEM-publicatie, zoals opgegeven door de `saml_request_path` cookie.
+1. AEM de AEM instellen `login-token` cookie op de HTTP-respons, die wordt gebruikt voor het verifiëren van volgende aanvragen voor AEM Publiceren.
+1. AEM publiceer richt gebruiker aan URL op AEM Publish zoals gespecificeerd door `saml_request_path` cookie.
 
 +++
 
@@ -64,11 +64,11 @@ Deze video doorloopt van vestiging SAML 2.0 integratie met AEM as a Cloud Servic
 Het volgende wordt vereist wanneer vestiging SAML 2.0 authentificatie:
 
 + Toegang tot Cloud Manager via Deployment Manager
-+ Toegang van AEM beheerder tot AEM as a Cloud Service omgeving
++ Toegang AEM tot AEM as a Cloud Service omgeving
 + Beheerderstoegang tot de IDP
 + Naar keuze, toegang tot openbaar/privé sleutelpaar wordt gebruikt aan encryptieSAML nuttige ladingen
 
-SAML 2.0 wordt alleen ondersteund voor het verifiëren van het gebruik van AEM-publicaties of -voorvertoningen. De verificatie van AEM-auteur beheren met behulp van en IDP, [Het IDP integreren met Adobe IMS](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
+SAML 2.0 wordt alleen ondersteund voor het verifiëren van het gebruik van AEM Publiceren of Voorvertoning. Om de authentificatie van AEM auteur te beheren die en IDP gebruikt, [Het IDP integreren met Adobe IMS](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
 
 
 ## Openbaar certificaat van IDP installeren op AEM
@@ -82,8 +82,8 @@ Het openbare certificaat van IDP wordt toegevoegd aan AEM Globale Opslag van het
 1. Gebruiker verifieert aan IDP.
 1. IDP produceert een bevestiging van SAML die de gegevens van de gebruiker bevat.
 1. IDP ondertekent de bevestiging van SAML gebruikend het privé certificaat van IDP.
-1. IDP stelt een client-side HTTP-POST in op het SAML-eindpunt van AEM-publicatie (`.../saml_login`) die de ondertekende SAML-bewering bevat.
-1. AEM publiceert ontvangt de POST van HTTP die de ondertekende bevestiging van SAML bevat, kan de handtekening bevestigen gebruikend het IDP openbare certificaat.
+1. IDP stelt een client-side HTTP-POST in werking om het SAML-eindpunt AEM publiceren (`.../saml_login`) die de ondertekende SAML-bewering bevat.
+1. AEM Publish ontvangt de POST van HTTP die de ondertekende bevestiging van SAML bevat, kan de handtekening bevestigen gebruikend het IDP openbare certificaat.
 
 +++
 
@@ -101,41 +101,41 @@ Het openbare certificaat van IDP wordt toegevoegd aan AEM Globale Opslag van het
    -----END CERTIFICATE-----
    ```
 
-1. Meld u aan bij AEM-auteur als AEM beheerder.
+1. Meld u aan bij AEM auteur als AEM beheerder.
 1. Navigeren naar __Gereedschappen > Beveiliging > Betrouwbaarheidswinkel__.
 1. Maak of open de Global Trust Store. Als u een Global Trust Store maakt, slaat u het wachtwoord op een veilige plaats op.
 1. Uitbreiden __Certificaat toevoegen uit CER-bestand__.
 1. Selecteren __Certificaatbestand selecteren__ en uploadt u het certificaatbestand dat door de IDP wordt geleverd.
 1. Verlaten __Certificaat toewijzen aan gebruiker__ leeg.
 1. Selecteren __Verzenden__.
-1. Het zojuist toegevoegde certificaat verschijnt boven de __Certificaat toevoegen uit CRT-bestand__ sectie.
+1. Het zojuist toegevoegde certificaat wordt weergegeven boven de __Certificaat toevoegen uit CRT-bestand__ sectie.
 1. Noteer de __alias__, aangezien deze waarde wordt gebruikt in het dialoogvenster [SAML 2.0 de Configuratie OSGi van de Handler van de Authentificatie](#saml-2-0-authentication-handler-osgi-configuration).
 1. Selecteren __Opslaan en sluiten__.
 
-De Global Trust Store wordt geconfigureerd met het openbare certificaat van IDP voor AEM-auteur, maar aangezien SAML alleen wordt gebruikt in AEM-publicatie, moet de Global Trust Store worden gerepliceerd naar AEM-publicatie om het openbare certificaat voor IDP daar toegankelijk te maken.
+De globale opslag van het Vertrouwen wordt gevormd met het openbare certificaat van IDP op AEM Auteur, maar aangezien SAML slechts op AEM Publish wordt gebruikt, moet de Globale Opslag van het Vertrouwen aan AEM worden herhaald publiceren voor het openbare certificaat IDP om daar toegankelijk te zijn.
 
-![Repliceer de Global Trust Store naar AEM-publicatie](./assets/saml-2-0/global-trust-store-replicate.png)
+![Repliceer de Global Trust Store om te AEM publiceren](./assets/saml-2-0/global-trust-store-replicate.png)
 
 1. Navigeren naar __Extra > Implementatie > Pakketten__.
 1. Een pakket maken
-   + Pakketnaam: `Global Trust Store`
+   + Naam pakket: `Global Trust Store`
    + Versie: `1.0.0`
    + Groep: `com.your.company`
-1. De nieuwe versie bewerken __Global Trust Store__ pakket.
-1. Selecteer __Filters__ en voegt een filter toe voor het hoofdpad `/etc/truststore`.
+1. De nieuwe bewerking __Global Trust Store__ pakket.
+1. Selecteer de __Filters__ en voegt een filter toe voor het hoofdpad `/etc/truststore`.
 1. Selecteren __Gereed__ en vervolgens __Opslaan__.
-1. Selecteer __Opbouwen__ knop voor de __Global Trust Store__ pakket.
-1. Selecteer __Meer__ > __Repliceren__ het knooppunt Global Trust Store (`/etc/truststore`) naar AEM-publicatie.
+1. Selecteer de __Opbouwen__ knop voor de __Global Trust Store__ pakket.
+1. Selecteer __Meer__ > __Repliceren__ het knooppunt Global Trust Store (`/etc/truststore`) AEM publiceren.
 
 ## Het sleutelarchief voor de verificatieservice maken{#authentication-service-keystore}
 
 _Het creëren van keystore voor authentificatie-dienst wordt vereist wanneer [SAML 2.0 authentificatiemanager OSGi configuratiebezit `handleLogout` is ingesteld op `true`](#saml-20-authenticationsaml-2-0-authentication) of wanneer [AuthnRequest-versleuteling/SAML-bevestiging](#install-aem-public-private-key-pair) is vereist_
 
-1. Meld u aan bij AEM-auteur als AEM beheerder om de persoonlijke sleutel te uploaden.
+1. Meld u aan bij AEM auteur als AEM beheerder om de persoonlijke sleutel te uploaden.
 1. Navigeren naar __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker, en selecteer __Eigenschappen__ in de bovenste actiebalk.
-1. Selecteer __Keystore__ tab.
+1. Selecteer de __Keystore__ tab.
 1. Maak of open het sleutelarchief. Houd het wachtwoord veilig als u een sleutelarchief maakt.
-   + A [openbare/persoonlijke sleutelarchief is geïnstalleerd in dit sleutelarchief](#install-aem-public-private-key-pair) alleen als AuthnRequest-versleuteling/SAML-bevestiging vereist is.
+   + A [openbare/persoonlijke sleutelarchief is geïnstalleerd in dit sleutelarchief](#install-aem-public-private-key-pair) alleen als AuthnRequest-versleuteling/SAML-assertie vereist is.
    + Als deze integratie SAML logout steunt, maar niet AuthnRequest het ondertekenen/SAML bewering, dan is een leeg sleutelarchief voldoende.
 1. Selecteren __Opslaan en sluiten__.
 1. Een pakket maken met de bijgewerkte versie __verificatie-service__ gebruiker.
@@ -144,48 +144,48 @@ _Het creëren van keystore voor authentificatie-dienst wordt vereist wanneer [SA
 
    1. Navigeren naar __Extra > Implementatie > Pakketten__.
    1. Een pakket maken
-      + Pakketnaam: `Authentication Service`
+      + Naam pakket: `Authentication Service`
       + Versie: `1.0.0`
       + Groep: `com.your.company`
-   1. De nieuwe versie bewerken __Verificatieservice sleutelarchief__ pakket.
-   1. Selecteer __Filters__ en voegt een filter toe voor het hoofdpad `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
-      + De `<AUTHENTICATION SERVICE UUID>` kan worden gevonden door naar __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker. De UUID is het laatste deel van de URL.
+   1. De nieuwe bewerking __Verificatieservice sleutelarchief__ pakket.
+   1. Selecteer de __Filters__ en voegt een filter toe voor het hoofdpad `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + De `<AUTHENTICATION SERVICE UUID>` kan worden gevonden door naar te navigeren __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker. De UUID is het laatste deel van de URL.
    1. Selecteren __Gereed__ en vervolgens __Opslaan__.
-   1. Selecteer __Opbouwen__ knop voor de __Verificatieservice sleutelarchief__ pakket.
-   1. Selecteer __Meer__ > __Repliceren__ om de sleutelarchief van de Authentificatieservice aan te zetten publiceren AEM.
+   1. Selecteer de __Opbouwen__ knop voor de __Verificatieservice sleutelarchief__ pakket.
+   1. Selecteer __Meer__ > __Repliceren__ om het sleutelarchief van de Dienst van de Authentificatie te activeren om te AEM publiceren.
 
 ## Paar AEM openbare/persoonlijke sleutel installeren{#install-aem-public-private-key-pair}
 
 _De AEM openbare/persoonlijke sleutelpaar installeren is optioneel_
 
-AEM publiceert kan worden gevormd om AuthnRequests (aan IDP) te ondertekenen, en de beweringen van SAML (aan AEM) te coderen. Dit wordt bereikt door een persoonlijke sleutel voor AEM-publicatie op te geven en deze komt overeen met de openbare sleutel voor de IDP.
+AEM publiceer kan worden gevormd om AuthnRequests (aan IDP) te ondertekenen, en de beweringen van SAML (aan AEM te coderen). Dit wordt bereikt door een persoonlijke sleutel voor AEM Publiceren op te geven, en deze komt overeen met de openbare sleutel voor de IDP.
 
 +++ Begrijp de ondertekeningsstroom AuthnRequest (optioneel)
 
-De AuthnRequest (de aanvraag aan IDP vanuit AEM Publish die het aanmeldingsproces initieert) kan worden ondertekend door AEM Publish. Hiertoe ondertekent AEM Publish het AuthnRequest gebruikend de privé sleutel, die IDP dan de handtekening gebruikend de openbare sleutel bevestigt. Dit garandeert aan de IDP dat AuthnRequest is gestart en aangevraagd door AEM Publish, en niet door een kwaadwillige derde.
+De AuthnRequest (de aanvraag aan IDP van AEM Publish die het login proces in werking stelt) kan door AEM worden ondertekend Publiceren. Hiertoe ondertekent AEM Publish het AuthnRequest gebruikend de privé sleutel, die IDP dan de handtekening gebruikend de openbare sleutel bevestigt. Dit garandeert aan de IDP dat AuthnRequest is gestart en aangevraagd door AEM Publish, en niet door een kwaadwillige derde.
 
 ![SAML 2.0 - SP AuthnRequest-ondertekening](./assets/saml-2-0/sp-authnrequest-signing-diagram.png)
 
-1. De gebruiker doet een HTTP- verzoek aan publiceren AEM die in een de authentificatieverzoek van SAML aan IDP resulteert.
+1. De gebruiker doet een HTTP- verzoek om te AEM publiceren die in een de authentificatieverzoek van SAML aan IDP resulteert.
 1. AEM publiceert produceert het SAML- verzoek om naar IDP te verzenden.
-1. AEM Publish ondertekent het SAML- verzoek gebruikend AEM privé sleutel.
-1. AEM publiceert initieert AuthnRequest, een cliënt-zijdoorverwijzing van HTTP naar IDP die het ondertekende verzoek van SAML bevat.
-1. IDP ontvangt de AuthnRequest en valideert de handtekening met AEM openbare sleutel, zodat AEM Publish de AuthnRequest heeft geïnitieerd.
-1. AEM publiceert dan bevestigt de gedecrypteerde integriteit en de authenticiteit van de bevestiging van SAML gebruikend het IDP openbare certificaat.
+1. AEM publiceer ondertekent het SAML- verzoek gebruikend AEM privé sleutel.
+1. AEM Publish initieert AuthnRequest, een cliënt-zijomleiding van HTTP aan IDP die het ondertekende verzoek van SAML bevat.
+1. IDP ontvangt het AuthnRequest, en bevestigt de handtekening gebruikend AEM openbare sleutel, die verzekert AEM Publish in werking gestelde AuthnRequest.
+1. AEM publiceer dan bevestigt de gedecrypteerde integriteit en de authenticiteit van SAML bewering gebruikend het IDP openbare certificaat.
 
 +++
 
 +++ Begrijp de de beweringsencryptiesstroom van SAML (facultatief)
 
-Alle HTTP-communicatie tussen IDP en AEM-publicatie moet via HTTPS plaatsvinden en moet daarom standaard worden beveiligd. Nochtans, zoals vereist, kunnen de beweringen van SAML worden gecodeerd in het geval wordt de extra vertrouwelijkheid vereist bovenop die verstrekt door HTTPS. Om dit te doen, codeert IDP de gegevens van de Bevestiging van SAML gebruikend de privé sleutel, en publiceert AEM decrypteert de bewering van SAML gebruikend de privé sleutel.
+Alle HTTP-communicatie tussen IDP en AEM Publiceren moet via HTTPS plaatsvinden en moet daarom standaard worden beveiligd. Nochtans, zoals vereist, kunnen de beweringen van SAML worden gecodeerd in het geval wordt de extra vertrouwelijkheid vereist bovenop die verstrekt door HTTPS. Om dit te doen, codeert IDP de gegevens van de Bevestiging van SAML gebruikend de privé sleutel, en AEM publiceert decrypteert de bewering van SAML gebruikend de privé sleutel.
 
 ![SAML 2.0 - SP SAML Asseringsencryptie](./assets/saml-2-0/sp-samlrequest-encryption-diagram.png)
 
 1. Gebruiker verifieert aan IDP.
 1. IDP produceert een bevestiging van SAML die de gegevens van de gebruiker bevat, en ondertekent het gebruikend het privé certificaat van IDP.
 1. IDP codeert dan de bewering van SAML met AEM openbare sleutel, die de AEM privé sleutel vereist om te decrypteren.
-1. De gecodeerde SAML-bevestiging wordt als de webbrowser van de gebruiker naar AEM Publish verzonden.
-1. AEM publiceert ontvangt de bevestiging van SAML, en decrypteert het gebruikend AEM privé sleutel.
+1. De gecodeerde SAML-bevestiging wordt verzonden via de webbrowser van de gebruiker naar AEM Publiceren.
+1. AEM publiceer ontvangt de bevestiging van SAML, en decrypteert het gebruikend AEM privé sleutel.
 1. Bij IDP wordt de gebruiker gevraagd om te verifiëren.
 
 +++
@@ -210,10 +210,10 @@ Zowel AuthnRequest het ondertekenen, als de bevestiging van SAML encryptie zijn 
 
 1. Upload de openbare sleutel aan IDP.
    + Met de `openssl` hierboven is de openbare sleutel de `aem-public.crt` bestand.
-1. Meld u aan bij AEM-auteur als AEM beheerder om de persoonlijke sleutel te uploaden.
+1. Meld u aan bij AEM auteur als AEM beheerder om de persoonlijke sleutel te uploaden.
 1. Navigeren naar __Gereedschappen > Beveiliging > Betrouwbaarheidswinkel__ en selecteert u __verificatie-service__ gebruiker, en selecteer __Eigenschappen__ in de bovenste actiebalk.
 1. Navigeren naar __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker, en selecteer __Eigenschappen__ in de bovenste actiebalk.
-1. Selecteer __Keystore__ tab.
+1. Selecteer de __Keystore__ tab.
 1. Maak of open het sleutelarchief. Houd het wachtwoord veilig als u een sleutelarchief maakt.
 1. Selecteren __Persoonlijke sleutel uit DER-bestand toevoegen__ en voeg het bestand met de persoonlijke sleutel en keten toe aan AEM:
    + __Alias__: Geef een betekenisvolle naam op, vaak de naam van de IDP.
@@ -222,7 +222,7 @@ Zowel AuthnRequest het ondertekenen, als de bevestiging van SAML encryptie zijn 
    + __Certificaatketenbestand selecteren__: Upload het bijbehorende ketenbestand (dit kan de openbare sleutel zijn).
       + Met de `openssl` methode hierboven, dit is de `aem-public.crt` file
    + Selecteren __Verzenden__
-1. Het zojuist toegevoegde certificaat verschijnt boven de __Certificaat toevoegen uit CRT-bestand__ sectie.
+1. Het zojuist toegevoegde certificaat wordt weergegeven boven de __Certificaat toevoegen uit CRT-bestand__ sectie.
    + Noteer de __alias__ aangezien dit wordt gebruikt in de [SAML 2.0 de configuratie van de authentificatiemanager OSGi](#saml-20-authentication-handler-osgi-configuration)
 1. Selecteren __Opslaan en sluiten__.
 1. Een pakket maken met de bijgewerkte versie __verificatie-service__ gebruiker.
@@ -231,49 +231,49 @@ Zowel AuthnRequest het ondertekenen, als de bevestiging van SAML encryptie zijn 
 
    1. Navigeren naar __Extra > Implementatie > Pakketten__.
    1. Een pakket maken
-      + Pakketnaam: `Authentication Service`
+      + Naam pakket: `Authentication Service`
       + Versie: `1.0.0`
       + Groep: `com.your.company`
-   1. De nieuwe versie bewerken __Verificatieservice sleutelarchief__ pakket.
-   1. Selecteer __Filters__ en voegt een filter toe voor het hoofdpad `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
-      + De `<AUTHENTICATION SERVICE UUID>` kan worden gevonden door naar __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker. De UUID is het laatste deel van de URL.
+   1. De nieuwe bewerking __Verificatieservice sleutelarchief__ pakket.
+   1. Selecteer de __Filters__ en voegt een filter toe voor het hoofdpad `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + De `<AUTHENTICATION SERVICE UUID>` kan worden gevonden door naar te navigeren __Gereedschappen > Beveiliging > Gebruikers__ en selecteert u __verificatie-service__ gebruiker. De UUID is het laatste deel van de URL.
    1. Selecteren __Gereed__ en vervolgens __Opslaan__.
-   1. Selecteer __Opbouwen__ knop voor de __Verificatieservice sleutelarchief__ pakket.
-   1. Selecteer __Meer__ > __Repliceren__ om de sleutelarchief van de Authentificatieservice aan te zetten publiceren AEM.
+   1. Selecteer de __Opbouwen__ knop voor de __Verificatieservice sleutelarchief__ pakket.
+   1. Selecteer __Meer__ > __Repliceren__ om het sleutelarchief van de Dienst van de Authentificatie te activeren om te AEM publiceren.
 
 ## SAML 2.0-verificatiehandler configureren{#configure-saml-2-0-authentication-handler}
 
-AEM SAML-configuratie wordt uitgevoerd via de __Adobe granite SAML 2.0-verificatiehandler__ OSGi-configuratie.
-De configuratie is een OSGi fabrieksconfiguratie, die één enkele AEM as a Cloud Service publicatiedienst betekent kan veelvoudige SAML configuratie hebben die discrete middelenbomen van de bewaarplaats behandelen; Dit is handig voor AEM-implementaties op meerdere locaties.
+AEM SAML-configuratie wordt uitgevoerd via de __Adobe graniet SAML 2.0-verificatiehandler__ OSGi-configuratie.
+De configuratie is een OSGi fabrieksconfiguratie, die één enkele AEM as a Cloud Service publicatiedienst betekent kan veelvoudige SAML configuratie hebben die discrete middelenbomen van de bewaarplaats behandelen; dit is nuttig voor multi-site AEM plaatsingen.
 
 +++ SAML 2.0 OSGi-configuratiegids van de Handler van de Authentificatie
 
-### Adobe granite SAML 2.0-verificatiehandler OSGi-configuratie{#configure-saml-2-0-authentication-handler-osgi-configuration}
+### Adobe granite SAML 2.0 de Configuratie van de Handler OSGi van de Verificatie{#configure-saml-2-0-authentication-handler-osgi-configuration}
 
-|  | OSGi, eigenschap | Vereist | Waarde-indeling | Standaardwaarde | Beschrijving |
+|                                   | OSGi, eigenschap | Vereist | Waarde-indeling | Standaardwaarde | Beschrijving |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
-| Paden | `path` | ✔ | String-array | `/` | AEM paden waarvoor deze verificatiehandler wordt gebruikt. |
-| IDP-URL | `idpUrl` | ✔ | String |  | IDP URL het de authentificatieverzoek van SAML wordt verzonden. |
-| IDP-certificaatalias | `idpCertAlias` | ✔ | String |  | De alias van het IDP-certificaat in de AEM Global Trust Store |
+| Paden | `path` | ✔ | Tekenreeksarray | `/` | AEM paden waarvoor deze verificatiehandler wordt gebruikt. |
+| IDP-URL | `idpUrl` | ✔ | String |                           | IDP URL het de authentificatieverzoek van SAML wordt verzonden. |
+| IDP-certificaatalias | `idpCertAlias` | ✔ | String |                           | De alias van het IDP-certificaat in de AEM Global Trust Store |
 | IDP HTTP-omleiding | `idpHttpRedirect` | ✘ | Boolean | `false` | Geeft aan of een HTTP-omleiding naar de IDP-URL plaatsvindt in plaats van een AuthnRequest te verzenden. Instellen op `true` voor door IDP geïnitieerde verificatie. |
-| IDP-id | `idpIdentifier` | ✘ | String |  | Unieke IDP-id om ervoor te zorgen dat AEM gebruiker en groep uniek zijn. Indien leeg, `serviceProviderEntityId` wordt in plaats daarvan gebruikt. |
-| Bevestigingsservice-URL | `assertionConsumerServiceURL` | ✘ | String |  | De `AssertionConsumerServiceURL` URL-kenmerk in de AuthnRequest die opgeeft waar de `<Response>` bericht moet naar AEM worden verzonden. |
-| SP-entiteit-id | `serviceProviderEntityId` | ✔ | String |  | AEM aan de IDP op unieke wijze identificeert; meestal de AEM hostnaam. |
+| IDP-id | `idpIdentifier` | ✘ | String |                           | Unieke IDP-id om ervoor te zorgen dat AEM gebruiker en groep uniek zijn. Indien leeg, `serviceProviderEntityId` wordt in plaats daarvan gebruikt. |
+| Bevestigingsservice-URL | `assertionConsumerServiceURL` | ✘ | String |                           | De `AssertionConsumerServiceURL` URL-kenmerk in de AuthnRequest die opgeeft waar de `<Response>` bericht moet naar AEM worden verzonden. |
+| SP-entiteit-id | `serviceProviderEntityId` | ✔ | String |                           | Identificeert uniek AEM aan IDP; gewoonlijk de AEM gastheernaam. |
 | SP-codering | `useEncryption` | ✘ | Boolean | `true` | Wijst erop als IDP de beweringen van SAML codeert. Vereisten `spPrivateKeyAlias` en `keyStorePassword` in te stellen. |
-| SP alias van persoonlijke sleutel | `spPrivateKeyAlias` | ✘ | String |  | De alias van de persoonlijke sleutel in de `authentication-service` sleutelarchief van de gebruiker. Vereist indien `useEncryption` is ingesteld op `true`. |
-| Wachtwoord voor opslagmap met SP-sleutel | `keyStorePassword` | ✘ | String |  | Het wachtwoord van de sleutelarchief van de &quot;authentificatie-dienst&quot;gebruiker. Vereist indien `useEncryption` is ingesteld op `true`. |
+| SP alias van persoonlijke sleutel | `spPrivateKeyAlias` | ✘ | String |                           | De alias van de persoonlijke sleutel in de `authentication-service` sleutelarchief van de gebruiker. Vereist indien `useEncryption` is ingesteld op `true`. |
+| Wachtwoord voor opslagmap met SP-sleutel | `keyStorePassword` | ✘ | String |                           | Het wachtwoord van de sleutelarchief van de &quot;authentificatie-dienst&quot;gebruiker. Vereist indien `useEncryption` is ingesteld op `true`. |
 | Standaardomleiding | `defaultRedirectUrl` | ✘ | String | `/` | De standaard omleidings-URL na geslaagde verificatie. Kan relatief zijn ten opzichte van de AEM host (bijvoorbeeld `/content/wknd/us/en/html`). |
 | Kenmerk Gebruikersnaam | `userIDAttribute` | ✘ | String | `uid` | De naam van het SAML-assertiekenmerk dat de gebruikers-id van de AEM gebruiker bevat. Leeg laten om de `Subject:NameId`. |
 | AEM gebruikers automatisch maken | `createUser` | ✘ | Boolean | `true` | Hiermee geeft u aan of AEM gebruikers worden gemaakt op geslaagde verificatie. |
-| Tussenpad AEM gebruiker | `userIntermediatePath` | ✘ | String |  | Wanneer u AEM gebruikers maakt, wordt deze waarde gebruikt als het tussenliggende pad (bijvoorbeeld `/home/users/<userIntermediatePath>/jane@wknd.com`). Vereisten `createUser` in te stellen op `true`. |
-| Gebruikerskenmerken AEM | `synchronizeAttributes` | ✘ | String-array |  | Lijst met SAML-kenmerktoewijzingen voor opslag op de AEM gebruiker, in de indeling `[ "saml-attribute-name=path/relative/to/user/node" ]` (bijvoorbeeld `[ "firstName=profile/givenName" ]`). Zie de [volledige lijst van native AEM kenmerken](#aem-user-attributes). |
+| Tussenpad voor gebruiker AEM | `userIntermediatePath` | ✘ | String |                           | Wanneer u AEM gebruikers maakt, wordt deze waarde gebruikt als het tussenliggende pad (bijvoorbeeld `/home/users/<userIntermediatePath>/jane@wknd.com`). Vereisten `createUser` in te stellen `true`. |
+| Gebruikerskenmerken AEM | `synchronizeAttributes` | ✘ | Tekenreeksarray |                           | Lijst met SAML-kenmerktoewijzingen voor opslag op de AEM gebruiker, in de indeling `[ "saml-attribute-name=path/relative/to/user/node" ]` (bijvoorbeeld `[ "firstName=profile/givenName" ]`). Zie de [volledige lijst van native AEM kenmerken](#aem-user-attributes). |
 | Gebruiker toevoegen aan AEM groepen | `addGroupMemberships` | ✘ | Boolean | `true` | Geeft aan of een AEM gebruiker automatisch wordt toegevoegd aan AEM gebruikersgroepen nadat de verificatie is voltooid. |
-| AEM kenmerk voor groepslidmaatschap | `groupMembershipAttribute` | ✘ | String | `groupMembership` | De naam van de de assertieattributen van SAML die een lijst van AEM gebruikersgroepen bevatten de gebruiker zou moeten worden toegevoegd aan. Vereisten `addGroupMemberships` in te stellen op `true`. |
-| AEM | `defaultGroups` | ✘ | String-array |  | Er wordt altijd een lijst met AEM gebruikersgroepen met geverifieerde gebruikers toegevoegd (bijvoorbeeld `[ "wknd-user" ]`). Vereisten `addGroupMemberships` in te stellen op `true`. |
+| AEM kenmerk voor groepslidmaatschap | `groupMembershipAttribute` | ✘ | String | `groupMembership` | De naam van de de assertieattributen van SAML die een lijst van AEM gebruikersgroepen bevatten de gebruiker zou moeten worden toegevoegd aan. Vereisten `addGroupMemberships` in te stellen `true`. |
+| Standaard AEM | `defaultGroups` | ✘ | Tekenreeksarray |                           | Er wordt altijd een lijst met AEM gebruikersgroepen met geverifieerde gebruikers toegevoegd (bijvoorbeeld `[ "wknd-user" ]`). Vereisten `addGroupMemberships` in te stellen `true`. |
 | NameIDPopolicy-indeling | `nameIdFormat` | ✘ | String | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` | De waarde van de NameIDPopolicy formaatparameter in het AuthnRequest bericht te verzenden. |
 | SAML-respons opslaan | `storeSAMLResponse` | ✘ | Boolean | `false` | Hiermee wordt aangegeven of de `samlResponse` waarde wordt opgeslagen op de AEM `cq:User` knooppunt. |
 | Afmelden handgreep | `handleLogout` | ✘ | Boolean | `false` | Wijst erop als het logout verzoek door deze de authentificatiemanager van SAML wordt behandeld. Vereisten `logoutUrl` in te stellen. |
-| Afmeldings-URL | `logoutUrl` | ✘ | String |  | De URL van IDP waar het SAML logout verzoek wordt verzonden naar. Vereist indien `handleLogout` is ingesteld op `true`. |
+| Afmeldings-URL | `logoutUrl` | ✘ | String |                           | De URL van IDP waar het SAML logout verzoek wordt verzonden naar. Vereist indien `handleLogout` is ingesteld op `true`. |
 | Kloktolerantie | `clockTolerance` | ✘ | Geheel | `60` | Bij het valideren van SAML-beweringen tekent IDP en AEM (SP) de tolerantie voor klokschuintrekken. |
 | Methode Digest | `digestMethod` | ✘ | String | `http://www.w3.org/2001/04/xmlenc#sha256` | Het samenvattingsalgoritme dat IDP gebruikt wanneer het ondertekenen van een SAML- bericht. |
 | Handtekeningmethode | `signatureMethod` | ✘ | String | `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` | Het handtekeningalgoritme dat IDP gebruikt bij het ondertekenen van een SAML-bericht. |
@@ -282,7 +282,7 @@ De configuratie is een OSGi fabrieksconfiguratie, die één enkele AEM as a Clou
 
 ### Gebruikerskenmerken AEM{#aem-user-attributes}
 
-AEM gebruikt de volgende gebruikerskenmerken, die via de `synchronizeAttributes` bezit in de Adobe Granite SAML 2.0 de configuratie OSGi van de Handler van de Authentificatie.  Om het even welke attributen IDP kunnen aan om het even welk AEM gebruikersbezit worden gesynchroniseerd, nochtans het in kaart brengen aan AEM (hieronder vermeld) eigenschappen van het gebruiksattribuut laat AEM toe om hen natuurlijk te gebruiken.
+AEM gebruikt de volgende gebruikerskenmerken, die via de `synchronizeAttributes` bezit in de Adobe granite SAML 2.0 de configuratie OSGi van de Handler van de Authentificatie.  Om het even welke attributen IDP kunnen aan om het even welk AEM gebruikersbezit worden gesynchroniseerd, nochtans het in kaart brengen aan AEM (hieronder vermeld) eigenschappen van het gebruiksattribuut laat AEM toe om hen natuurlijk te gebruiken.
 
 | Gebruikerskenmerk | Relatief eigenschapspad van `rep:User` node |
 |--------------------------------|--------------------------|
@@ -303,7 +303,7 @@ AEM gebruikt de volgende gebruikerskenmerken, die via de `synchronizeAttributes`
 1. Creeer een OSGi configuratiedossier in uw project bij `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` en open in uw winde.
    + Wijzigen `/wknd-examples/` aan uw `/<project name>/`
    + De id na de `~` in filename zou deze configuratie uniek moeten identificeren, zodat kan het de naam van IDP zijn, zoals `...~okta.cfg.json`. De waarde moet alfanumeriek zijn met afbreekstreepjes.
-1. Plak de volgende JSON in de `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json` en werkt de `wknd` indien nodig verwijzingen.
+1. Plak de volgende JSON in de `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json` en werkt de `wknd` indien nodig, verwijzingen.
 
    ```json
    {
@@ -364,18 +364,18 @@ Wanneer [het coderen van de bevestiging AuthnRequest en SAML](#encrypting-the-au
 1. De drie OSGi configuratieeigenschappen die voor encryptie worden vereist zijn:
 
 + `useEncryption` instellen op `true`
-+ `spPrivateKeyAlias` bevat de alias van het sleutelarchiefitem voor de persoonlijke sleutel die door de integratie van SAML wordt gebruikt.
++ `spPrivateKeyAlias` bevat de sleutelarchiefingang alias voor de privé sleutel die door de integratie van SAML wordt gebruikt.
 + `keyStorePassword` bevat een [OSGi, geheime configuratievariabele](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) met de `authentication-service` het wachtwoord van het sleutelarchief van de gebruiker.
 
 +++
 
 ## Referentiefilter configureren
 
-Tijdens het SAML authentificatieproces, stelt IDP een cliënt-kant POST van HTTP aan publiceren AEM in werking `.../saml_login` eindpunt. Als de publicatie van de IDP- en AEM-versie op een andere oorsprong staan, publiceert AEM __Refererfilter__ wordt gevormd via configuratie OSGi om HTTP POSTs van de oorsprong van IDP toe te staan.
+Tijdens het de authentificatieproces van SAML, stelt IDP een cliënt-kant POST van HTTP in werking om te AEM publiceren `.../saml_login` eindpunt. Als IDP en AEM publiceren op verschillende oorsprong bestaan, AEM Publiceren __Refererfilter__ wordt gevormd via configuratie OSGi om HTTP POSTs van de oorsprong van IDP toe te staan.
 
 1. Creeer (of geef uit) een OSGi configuratiedossier in uw project bij uit `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
    + Wijzigen `/wknd-examples/` aan uw `/<project name>/`
-1. Zorg ervoor dat de `allow.empty` waarde is ingesteld op `true`de `allow.hosts` (of indien u dat wenst, `allow.hosts.regexp`) de oorsprong van het IDP bevat, en `filter.methods` include `POST`. De OSGi-configuratie moet vergelijkbaar zijn met:
+1. Zorg ervoor dat `allow.empty` waarde is ingesteld op `true`de `allow.hosts` (of indien u dat wenst, `allow.hosts.regexp`) de oorsprong van het IDP bevat, en `filter.methods` include `POST`. De OSGi-configuratie moet vergelijkbaar zijn met:
 
    ```json
    {
@@ -391,15 +391,15 @@ Tijdens het SAML authentificatieproces, stelt IDP een cliënt-kant POST van HTTP
    }
    ```
 
-AEM publiceert steunt één enkele het filterconfiguratie van de Referateur, zo fusie de configuratievereisten van SAML, met om het even welke bestaande configuraties.
+AEM publiceer steunt één enkele het filterconfiguratie van de Referateur, zo fusie de configuratievereisten van SAML, met om het even welke bestaande configuraties.
 
-OSGi-configuraties per omgeving (`config.publish.dev`, `config.publish.stage`, en `config.publish.prod`) kan met specifieke kenmerken worden gedefinieerd als `allow.hosts` (of `allow.hosts.regex`) verschilt per omgeving.
+OSGi-configuraties per omgeving (`config.publish.dev`, `config.publish.stage`, en `config.publish.prod`) kan met specifieke kenmerken worden gedefinieerd als de `allow.hosts` (of `allow.hosts.regex`) verschilt per omgeving.
 
 ## Configureer CORS (Cross-Origin Resource Sharing)
 
-Tijdens het SAML authentificatieproces, stelt IDP een cliënt-kant POST van HTTP aan publiceren AEM in werking `.../saml_login` eindpunt. Als de IDP- en AEM-publicatie op verschillende hosts/domeinen bestaan, publiceert AEM __CRoss-Origin Resource Sharing (CORS)__ moet worden gevormd om POSTs van HTTP van de gastheer/het domein van IDP toe te staan.
+Tijdens het de authentificatieproces van SAML, stelt IDP een cliënt-kant POST van HTTP in werking om te AEM publiceren `.../saml_login` eindpunt. Als IDP en AEM publiceren bestaan op verschillende gastheren/domeinen, AEM publiceren __CRoss-Origin Resource Sharing (CORS)__ moet worden gevormd om POSTs van HTTP van de gastheer/het domein van IDP toe te staan.
 
-Deze HTTP-POST-aanvraag `Origin` de header heeft gewoonlijk een andere waarde dan de AEM Publish gastheer, waardoor CORS configuratie vereist is.
+Deze HTTP-POST-aanvraag `Origin` de kopbal heeft gewoonlijk een verschillende waarde dan de AEM Publish gastheer, waarbij de configuratie CORS wordt vereist.
 
 Bij het testen van SAML-verificatie op de lokale AEM SDK (`localhost:4503`), kan de IDP de `Origin` header naar `null`. Zo ja, voeg `"null"` aan de `alloworigin` lijst.
 
@@ -423,7 +423,7 @@ Bij het testen van SAML-verificatie op de lokale AEM SDK (`localhost:4503`), kan
 }
 ```
 
-OSGi-configuraties per omgeving (`config.publish.dev`, `config.publish.stage`, en `config.publish.prod`) kan met specifieke kenmerken worden gedefinieerd als `alloworigin` en `allowedpaths` verschilt per omgeving.
+OSGi-configuraties per omgeving (`config.publish.dev`, `config.publish.stage`, en `config.publish.prod`) kan met specifieke kenmerken worden gedefinieerd als de `alloworigin` en `allowedpaths` verschilt per omgeving.
 
 ## AEM Dispatcher configureren om SAML HTTP POST&#39;s toe te staan
 
@@ -443,12 +443,12 @@ Als de URL die bij de Apache-webserver wordt herschreven, is geconfigureerd (`di
 
 ## Gegevenssynchronisatie inschakelen en tokens inkapselen
 
-Zodra de de authentificatiestroom van SAML tot een gebruiker in publiceren AEM leidt, de AEM gebruikersknoop voor authentiek verklaard over de AEM publiceer de dienstrij.
-Dit vereist [gegevenssynchronisatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization) en [ingekapselde tokens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#sticky-sessions-and-encapsulated-tokens) in te schakelen door Adobe Support op de AEM-publicatieservice.
+Zodra de de authentificatiestroom van SAML tot een gebruiker in AEM leidt publiceren, verifieerbaar de AEM gebruikersknoop over de AEM Publish de dienstrij van de Dienst.
+Dit vereist [gegevenssynchronisatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization) en [ingekapselde tokens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#sticky-sessions-and-encapsulated-tokens) die door de Steun van de Adobe op de AEM Publish dienst worden toegelaten.
 
-Aanvraag verzenden naar Adobe Klantenondersteuning (via [AdminConsole](https://adminconsole.adobe.com) > Ondersteuning) met verzoek:
+Een verzoek verzenden naar de Adobe Klantenondersteuning (via [AdminConsole](https://adminconsole.adobe.com) > Ondersteuning) met verzoek:
 
-> De synchronisatie van gegevens en ingekapselde tokens worden toegelaten op de Publish dienst van AEM voor Programma X en Milieu Y.
+> De synchronisatie van gegevens en ingekapselde tokens worden toegelaten op AEM de Publish dienst voor Programma X en Milieu Y.
 
 ## SAML-configuratie implementeren
 

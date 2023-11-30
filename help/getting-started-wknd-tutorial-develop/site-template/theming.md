@@ -1,17 +1,17 @@
 ---
 title: Thematische workflow | AEM Snel site maken
-description: Leer hoe u de themabronnen van een Adobe Experience Manager-site kunt bijwerken om merkspecifieke stijlen toe te passen. Leer hoe u een proxyserver gebruikt om een live voorvertoning van CSS- en Javascript-updates weer te geven. In deze zelfstudie wordt ook uitgelegd hoe u met behulp van de Front End Pipeline van Adobe Cloud Manager thema-updates op een AEM site kunt implementeren.
+description: Leer hoe u de themabronnen van een Adobe Experience Manager-site kunt bijwerken om merkspecifieke stijlen toe te passen. Leer hoe u een proxyserver gebruikt om een live voorvertoning van CSS- en JavaScript-updates weer te geven. In deze zelfstudie wordt ook uitgelegd hoe u met behulp van de Front End Pipeline van Adobe Cloud Manager thema-updates op een AEM site kunt implementeren.
 version: Cloud Service
-type: Tutorial
 feature: Core Components
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 7498
+jira: KT-7498
 thumbnail: KT-7498.jpg
+doc-type: Tutorial
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Uiteindelijk wordt onze site bijgewerkt en worden er stijlen in opgenomen die pa
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die worden beschreven in het dialoogvenster [Paginasjablonen](./page-templates.md) is voltooid.
+Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in het dialoogvenster [Paginasjablonen](./page-templates.md) hoofdstuk is voltooid.
 
 ## Doelstellingen
 

@@ -8,12 +8,12 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
 topic: Development
-kt: 7428
+jira: KT-7428
 thumbnail: 332437.jpg
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -32,7 +32,7 @@ In de volgende video worden de stappen doorlopen die nodig zijn om de configurat
 
 Als er een fout optreedt bij het configureren van de cloudconfiguratie voor bovenstaande ondertekening, kunt u de volgende stappen uitvoeren om problemen op te lossen
 * Zorg ervoor dat de URL voor omleiding die is opgegeven in de Acrobat Sign API-toepassing de volgende notatie heeft
-&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
+&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/&lt;container>.
 Bijvoorbeeld: https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS is de naam van de container die de cloudconfiguratie zal bevatten
 * Controleer of de Auth-URL juist is
 * Controleer uw Client-id en clientgeheim

@@ -3,7 +3,7 @@ title: Aan de slag met AEM headless Hands-on zelfstudie - GraphQL
 description: Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u inhoud kunt samenstellen en beschikbaar maken met AEM GraphQL API's.
 doc-type: tutorial
 mini-toc-levels: 1
-kt: 6678
+jira: KT-6678
 thumbnail: KT-6678.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Deze zelfstudie behandelt de volgende onderwerpen:
 
 U hebt het volgende nodig om deze zelfstudie te volgen:
 
-* Basis HTML- en JavaScript-vaardigheden
+* Basisvaardigheden voor HTML en JavaScript
 * De volgende gereedschappen moeten lokaal zijn geïnstalleerd:
    * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)

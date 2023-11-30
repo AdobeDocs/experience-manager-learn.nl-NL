@@ -1,11 +1,8 @@
 ---
 title: De CI/CD-pijpleiding gebruiken in Adobe Cloud Manager
-description: Adobe Cloud Manager verstrekt een eenvoudige, maar flexibele zelfbediening CI/CD pijpleiding die AEM projectteams toestaat om code aan alle AEM milieu's snel, veilig en constant op te stellen die in AMS worden ontvangen. In deze videoreeks wordt het instellen en uitvoeren van de CI/CD Pipeline van Cloud Manager in zowel mislukkings- als successcenario's besproken.
+description: De Manager van de Wolk van de Adobe verstrekt een eenvoudige, maar flexibele zelfbediening CI/CD pijpleiding die AEM projectteams toestaat om code aan alle AEM milieu's snel, veilig en constant op te stellen die in AMS worden ontvangen. In deze videoreeks wordt het instellen en uitvoeren van de CI/CD Pipeline van Cloud Manager in zowel mislukkings- als successcenario's besproken.
 sub-product: Experience Manager Cloud Manager, Experience Manager
-topics: cicd, performance, best-practices, development, governance
-doc-type: feature video
-activity: understand
-audience: all
+doc-type: Feature Video
 topic: Architecture
 feature: Cloud Manager
 role: Developer
@@ -13,7 +10,7 @@ level: Beginner
 exl-id: d5d59ef5-9343-4ac2-9053-a010decdb9b6
 last-substantial-update: 2022-08-15T00:00:00Z
 thumbnail: cm-pipeline.jpg
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -22,7 +19,7 @@ ht-degree: 0%
 
 # De CI/CD-pijpleiding gebruiken in Adobe Cloud Manager
 
-Adobe Cloud Manager verstrekt een eenvoudige, maar flexibele zelfbediening CI/CD pijpleiding die AEM projectteams toestaat om code aan alle AEM milieu&#39;s snel, veilig en constant op te stellen die in AMS worden ontvangen. In deze videoreeks wordt het instellen en uitvoeren van de CI/CD Pipeline van Cloud Manager in zowel mislukkings- als successcenario&#39;s besproken.
+De Manager van de Wolk van de Adobe verstrekt een eenvoudige, maar flexibele zelfbediening CI/CD pijpleiding die AEM projectteams toestaat om code aan alle AEM milieu&#39;s snel, veilig en constant op te stellen die in AMS worden ontvangen. In deze videoreeks wordt het instellen en uitvoeren van de CI/CD Pipeline van Cloud Manager in zowel mislukkings- als successcenario&#39;s besproken.
 
 ## Inleiding
 
@@ -48,7 +45,7 @@ In deze video wordt de uitvoering van de CI/CD Pipeline-code besproken waarvoor 
 
 ## Een geslaagde pijpleiding uitvoeren
 
-In deze video wordt de geslaagde uitvoering van de CI/CD Pipeline onderzocht met behulp van code die de vereiste kwaliteitscontroles van Cloud Manager doorgeeft, met behulp van de **[!DNL master]** opslagplaats vertakking.
+In deze video wordt de geslaagde uitvoering van de CI/CD Pipeline onderzocht met behulp van code die de vereiste kwaliteitscontroles van Cloud Manager doorgeeft, waarbij de **[!DNL master]** opslagplaats vertakking.
 
 In deze video wordt ook ingegaan op de [!UICONTROL Activity] in Cloud Manager, waarmee u opnieuw toegang kunt krijgen tot actieve uitvoeringen of voltooide of mislukte uitvoeringen kunt controleren.
 

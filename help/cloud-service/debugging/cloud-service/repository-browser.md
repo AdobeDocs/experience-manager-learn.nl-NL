@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 10004
+jira: KT-10004
 thumbnail: 341464.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Toegang krijgen tot de Repository Browser op AEM as a Cloud Service:
 1. Aanmelden bij [Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Selecteer het Programma dat de AEM as a Cloud Service omgeving bevat die u wilt debuggen
 1. Open de [Ontwerpconsole](./developer-console.md) komt overeen met de AEM as a Cloud Service omgeving waarin fouten moeten worden opgespoord
-1. Selecteer __Browser voor opslagplaats__ tab
+1. Selecteer de __Browser voor opslagplaats__ tab
 1. Selecteer de AEM servicelaag om te bladeren
    + Alle auteurs
    + Alle uitgevers

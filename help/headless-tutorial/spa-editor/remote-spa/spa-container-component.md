@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7635
+jira: KT-7635
 thumbnail: kt-7635.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 0%
@@ -42,7 +43,7 @@ Een bewerkbaar gebied toevoegen aan de weergave Home:
    + `pagePath = '/content/wknd-app/us/en/home'`
    + `itemPath = 'root/responsivegrid'`
 
-   Dit draagt het `ResponsiveGrid` component om zijn inhoud van het AEM middel terug te winnen:
+   Dit instrueert het `ResponsiveGrid` component om zijn inhoud van het AEM middel terug te winnen:
 
    + `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
@@ -276,7 +277,7 @@ Het resultaat moet er als volgt uitzien:
 
 ![Home.js](./assets/spa-container-component/home-js-imports.png)
 
-Indien deze invoer _niet_ toegevoegd, de `EditableText` en `EditableImage` de code wordt niet aangehaald door SPA, en zo, worden de componenten niet in kaart gebracht aan de verstrekte middeltypes.
+Indien deze invoer _niet_ toegevoegd, `EditableText` en `EditableImage` de code wordt niet aangehaald door SPA, en zo, worden de componenten niet in kaart gebracht aan de verstrekte middeltypes.
 
 ## De container configureren in AEM
 
@@ -288,7 +289,7 @@ AEM containercomponenten gebruiken beleid om hun toegestane componenten te dicte
 
 De reponsivegrid-container van de sjabloon Externe SPA pagina configureren:
 
-1. Aanmelden bij AEM-auteur
+1. Aanmelden bij AEM auteur
 1. Navigeren naar __Gereedschappen > Algemeen > Sjablonen > WKND App__
 1. Bewerken __SPA pagina rapporteren__
 
@@ -300,7 +301,7 @@ De reponsivegrid-container van de sjabloon Externe SPA pagina configureren:
 
    ![Beleid voor responsieve rasters](./assets/spa-container-component/templates-policies-action.png)
 
-1. Rechts, onder de __Toegestane componenten__ tab, uitvouwen __WKND APP - INHOUD__
+1. Rechts, onder de __Toegestane componenten__ tab, uitbreiden __WKND APP - INHOUD__
 1. Zorg ervoor dat alleen het volgende is geselecteerd:
    + Afbeelding
    + Tekst
@@ -314,7 +315,7 @@ De reponsivegrid-container van de sjabloon Externe SPA pagina configureren:
 
 Nadat de SPA is bijgewerkt om de `<ResponsiveGrid...>`, omvat drie bewerkbare React-componenten (`EditableTitle`, `EditableText`, en `EditableImage`), en AEM wordt bijgewerkt met een passend beleid van het Malplaatje, kunnen wij beginnen inhoud in de containercomponent te ontwerpen.
 
-1. Aanmelden bij AEM-auteur
+1. Aanmelden bij AEM auteur
 1. Navigeren naar __Sites > WKND App__
 1. Tikken __Home__ en selecteert u __Bewerken__ van de bovenste actiebalk
    + De componentenvertoningen van de Tekst van de &quot;Wereld van Hello&quot;aangezien dit automatisch werd toegevoegd toen het produceren van het project van het archetype van het AEM Project
@@ -336,7 +337,7 @@ Nadat de SPA is bijgewerkt om de `<ResponsiveGrid...>`, omvat drie bewerkbare Re
    1. Tikken __Gereed__
 1. __Auteur__ de __Afbeelding__ component
    1. Sleep een afbeelding vanuit de zijbalk (na het schakelen naar de weergave Elementen) naar de component Afbeelding
-   1. Tik op de component Image en tik op de __moersleutel__ pictogram om te bewerken
+   1. Tik op de component Image en tik op de __moersleutel__ pictogram dat u wilt bewerken
    1. Controleer de __Afbeelding is decoratief__ selectievakje
    1. Tikken __Gereed__
 1. __Auteur__ de __Tekst__ component

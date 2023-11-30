@@ -6,10 +6,10 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Experienced
-kt: 10292
+jira: KT-10292
 exl-id: c1d248c3-8208-476e-b0ae-cab25575cd6a
 last-substantial-update: 2021-10-12T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Voer de volgende stappen uit om dit op uw lokale server te testen:
 
 1. [De clientbibliotheek importeren](assets/pdf-carousel-client-lib.zip) in uw lokale AEM [pakketbeheer gebruiken](http://localhost:4502/crx/packmgr/index.jsp)
 1. [De PDF-carrouselcomponent importeren](assets/pdf-carousel-component.zip) in uw lokale AEM [pakketbeheer gebruiken](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Het adaptieve formulier importeren ](assets/adaptive-form-pdf-carousel.zip) in uw lokale AEM [pakketbeheer gebruiken](http://localhost:4502/crx/packmgr/index.jsp)
+1. [Het adaptieve formulier importeren](assets/adaptive-form-pdf-carousel.zip) in uw lokale AEM [pakketbeheer gebruiken](http://localhost:4502/crx/packmgr/index.jsp)
 1. [De voorbeeld-PDF&#39;s importeren om weer te geven](assets/pdf-carousel-sample-documents.zip) in uw lokale AEM [de koppeling voor het uploaden van het bestand met middelen gebruiken](http://localhost:4502/assets.html/content/dam)
 1. [Voorbeeld van adaptief formulier](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 1. Tab naar het tabblad Documenten dat moet worden gecontroleerd. In de carrouselcomponent moeten drie PDF-documenten worden weergegeven.

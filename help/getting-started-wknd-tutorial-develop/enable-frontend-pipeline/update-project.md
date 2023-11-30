@@ -2,17 +2,17 @@
 title: Werk volledig-stapel AEM project bij om front-end pijpleiding te gebruiken
 description: Leer hoe te om volledig-stapel AEM project bij te werken om het voor de front-end pijpleiding toe te laten, zodat bouwt het slechts en stelt de front-end artefacten op.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat u de [Module &#39
 
 Er zijn drie project-verwante config veranderingen en een stijlverandering om voor een testlooppas op te stellen, zo in totaal vier specifieke veranderingen in het project WKND om het voor het front-end pijpleidingscontract toe te laten.
 
-1. Verwijder de `ui.frontend` module van de volledige de bouwstijlcyclus van de stapel
+1. Verwijder de `ui.frontend` module van volledige-stapelbouwstijlcyclus
 
    * In, de wortel van het Project van de Plaatsen van WKND `pom.xml` de opmerking `<module>ui.frontend</module>` submodule-item.
 
@@ -99,7 +99,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
    ...
    ```
 
-   * Bestaande kopiëren `webpack.prod.js` als `webpack.theme.prod.js`en wijzigt u de `common` de locatie van de variabele naar het bovenstaande bestand als
+   * Bestaande kopiëren `webpack.prod.js` als `webpack.theme.prod.js`en wijzigt u de `common` locatie van variabele naar het bovenstaande bestand als
 
    ```javascript
    ...
@@ -116,7 +116,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
    >Het is aan jou hoe je ze wilt benoemen of organiseren.
 
 
-   * In de `package.json` bestand, zorg ervoor dat de  `name` eigenschapswaarde is gelijk aan de naam van de site `/conf` knooppunt. En onder de `scripts` eigenschap, a `build` script dat aangeeft hoe de bestanden aan de voorzijde van deze module moeten worden gemaakt.
+   * In de `package.json` bestand, zorg ervoor dat de  `name` eigenschapswaarde is gelijk aan de naam van de site `/conf` knooppunt. En onder de `scripts` eigenschap, `build` script dat aangeeft hoe de bestanden aan de voorzijde van deze module moeten worden gemaakt.
 
    ```javascript
        {
@@ -177,14 +177,14 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
    >
    >    Zie, de volledige [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) in de __AEM WKND-siteproject__.
 
-1. Een thema of de stijlen veranderen om via front-end pijpleiding voor een testlooppas op te stellen, veranderen wij `text-color` aan Adobe rood (of u kunt uw kiezen) door het bijwerken van `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
+1. Een thema of de stijlen veranderen om via front-end pijpleiding voor een testlooppas op te stellen, veranderen wij `text-color` aan Adobe rood (of u kunt uw kiezen) door bij te werken `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
 
    ```css
        $black:     #a40606;
        ...
    ```
 
-Ten slotte moet u deze wijzigingen doorvoeren in de Adobe git-opslagplaats van uw programma.
+Zet deze wijzigingen tot slot door in de git-opslagplaats voor Adoben van uw programma.
 
 
 >[!AVAILABILITY]

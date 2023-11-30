@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 recommendations: noDisplay, noCatalog
-kt: 11603
+jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: e7376eaf-f7d7-48fe-9387-a0e4089806c2
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -83,7 +83,7 @@ function App(props) {
 Om een modaal te openen, roept een vraag aan `guestConnection.host.modal.showUrl(..)` is gemaakt op basis van de `onClick(..)` functie. `showUrl(..)` wordt doorgegeven aan een JavaScript-object met sleutel/waarden:
 
 + `title` verstrekt de naam van titel van modaal die aan de gebruiker wordt getoond
-+ `url` is de URL die het [Reageerroute](#modal-routes) verantwoordelijk voor de eerste visie van het modaal.
++ `url` is de URL die het [Reageerroute](#modal-routes) verantwoordelijk voor de eerste visie van het modaal vervoer.
 
 Het is absoluut noodzakelijk dat de `url` doorgegeven aan `guestConnection.host.modal.showUrl(..)` wordt omgezet in route in de extensie, anders wordt er niets weergegeven in het modale.
 

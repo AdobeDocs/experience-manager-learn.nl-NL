@@ -6,11 +6,11 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10587
+jira: KT-10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -46,13 +46,13 @@ Een SPA en AEM delen domeinen wanneer beide toegang door eind - gebruikers van h
 + AEM is toegankelijk via: `https://wknd.site/`
 + SPA is toegankelijk via `https://wknd.site/spa`
 
-Omdat zowel AEM als de SPA vanuit hetzelfde domein worden benaderd, kunnen webbrowsers de SPA XHR maken naar AEM eindpunten zonder dat CORS nodig is, en staan ze het delen van HTTP-cookies toe (zoals AEM `login-token` cookie).
+Omdat zowel AEM als de SPA vanuit hetzelfde domein worden benaderd, kunnen webbrowsers de SPA XHR maken naar AEM eindpunten zonder dat CORS nodig is en kunnen HTTP-cookies (zoals AEM) worden gedeeld `login-token` cookie).
 
-Hoe SPA en AEM verkeer op het gedeelde domein wordt verpletterd, is tot u: CDN met meerdere afkomst, HTTP-server met reverse-proxy, die de SPA rechtstreeks in AEM host, enzovoort.
+Hoe SPA en AEM verkeer op het gedeelde domein wordt verpletterd, is aan u: CDN met veelvoudige oorsprong, de server van HTTP met omgekeerde volmacht, die de SPA direct in AEM ontvangen, etc.
 
 Hieronder vindt u implementatieconfiguraties die vereist zijn voor SPA productieimplementaties, wanneer deze worden gehost op hetzelfde domein als AEM.
 
-| SPA maakt verbinding met | AEM-auteur | AEM-publicatie | Voorvertoning AEM |
+| SPA maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
@@ -69,7 +69,7 @@ Omdat AEM en de SPA vanuit verschillende domeinen worden benaderd, passen webbro
 
 Hieronder vindt u implementatieconfiguraties die vereist zijn voor SPA productieimplementaties, wanneer deze worden gehost op een ander domein dan AEM.
 
-| SPA maakt verbinding met | AEM-auteur | AEM-publicatie | Voorvertoning AEM |
+| SPA maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Delen van bronnen van oorsprong (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
@@ -77,7 +77,7 @@ Hieronder vindt u implementatieconfiguraties die vereist zijn voor SPA productie
 
 #### Voorbeeld SPA implementatie op verschillende domeinen
 
-In dit voorbeeld wordt de SPA geïmplementeerd in een Netlify-domein (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) en de SPA gebruikt AEM GraphQL API&#39;s van het AEM-publicatiedomein (`https://publish-p65804-e666805.adobeaemcloud.com`). In de onderstaande schermafbeeldingen wordt de vereiste CORS benadrukt.
+In dit voorbeeld wordt de SPA geïmplementeerd in een Netlify-domein (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) en de SPA gebruikt AEM GraphQL API&#39;s van het AEM publicatiedomein (`https://publish-p65804-e666805.adobeaemcloud.com`). In de onderstaande schermafbeeldingen wordt de vereiste CORS benadrukt.
 
 1. De SPA wordt bediend van een domein van Netlify, maar maakt een XHR vraag aan AEM GraphQL APIs op een verschillend domein. Dit verzoek voor meerdere sites is vereist [CORS](./configurations/cors.md) op AEM moet worden ingesteld om verzoeken van het Netlify-domein toegang te verlenen tot de inhoud ervan.
 

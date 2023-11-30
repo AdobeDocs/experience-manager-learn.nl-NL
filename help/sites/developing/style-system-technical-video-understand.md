@@ -1,13 +1,14 @@
 ---
 title: Begrijpen hoe u code kunt schrijven voor het systeem AEM
-description: In deze video bekijken we de anatomie van de CSS (of LESS) en JavaScript die wordt gebruikt om de component van de Titel van Adobe Experience Manage te stijlen met behulp van het Stijlsysteem, en hoe deze stijlen worden toegepast op de HTML en DOM.
+description: In deze video bekijken we de anatomie van de CSS (of LESS) en JavaScript die wordt gebruikt om de component van de Titel van de Titel van het Beheer van de Kern van de Adobe te stileren gebruikend het Systeem van de Stijl, evenals hoe deze stijlen op de HTML en DOM worden toegepast.
 feature: Style System
-version: 6.4, 6.5
+version: 6.4, 6.5, Cloud Service
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Technical Video
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 0%
@@ -144,9 +145,9 @@ jQuery(function ($) {
 
 ## Best practices voor ontwikkeling {#development-best-practices}
 
-### Aanbevolen werkwijzen voor HTML {#html-best-practices}
+### Aanbevolen werkwijzen HTML {#html-best-practices}
 
-* HTML (gegenereerd via HTL) moet zo structureel mogelijk semantisch zijn; onnodige groepering/nesting van elementen vermijden.
+* HTML (gegenereerd via HTL) moet zo structureel mogelijk semantisch zijn; onnodige groepering/nesting van elementen moet worden vermeden.
 * HTML-elementen moeten kunnen worden benaderd via CSS-klassen in BEM-stijl.
 
 **Goed** - Alle elementen in de component kunnen worden opgenomen via BEM-notatie:
@@ -176,7 +177,7 @@ jQuery(function ($) {
    * Het uitvoeren van de auteur-able inhoudsknevels kan helpen in het houden van deze HTML mager, waarbij de auteurs kunnen selecteren welke inhoudselementen aan de HTML worden geschreven. De optie kan vooral belangrijk zijn wanneer u afbeeldingen naar de HTML schrijft die niet voor alle stijlen worden gebruikt.
    * De uitzondering op deze regel is wanneer dure bronnen, bijvoorbeeld afbeeldingen, standaard beschikbaar worden gemaakt, aangezien gebeurtenisafbeeldingen die door CSS worden verborgen, in dit geval onnodig worden opgehaald.
 
-      * Moderne afbeeldingscomponenten gebruiken vaak JavaScript om de meest geschikte afbeelding voor het gebruik van het hoofdlettergebruik (viewport) te selecteren en te laden.
+      * Moderne afbeeldingscomponenten gebruiken vaak JavaScript om de meest geschikte afbeelding voor het gebruikscase (viewport) te selecteren en te laden.
 
 ### Aanbevolen werkwijzen voor CSS {#css-best-practices}
 
@@ -190,14 +191,14 @@ jQuery(function ($) {
 
 * Voorprocessors zoals [MINDER](https://lesscss.org/) (ondersteund door AEM native) of [SCSS](https://sass-lang.com/) (vereist aangepast constructiesysteem) voor duidelijke CSS-definitie en herbruikbaarheid.
 
-* Gewicht/specificiteit van kiezer uniform houden; Hiermee kunt u conflicten met CSS-trapsgewijze opmaak voorkomen en oplossen.
+* Houd het gewicht/de specificiteit van de kiezer gelijk. Hiermee voorkomt en lost u conflicten met CSS-trapsgewijze opmaak op.
 * Elke stijl indelen in een afzonderlijk bestand.
    * Deze bestanden kunnen worden gecombineerd met LESS/SCSS `@imports` of als onbewerkte CSS is vereist, via het opnemen van bestanden in de HTML-clientbibliotheek of aangepaste front-end systemen voor het maken van elementen.
 * Vermijd het mengen van vele complexe stijlen.
    * Hoe meer stijlen tegelijk op een component kunnen worden toegepast, hoe groter de variatie aan permutaties. Dit kan moeilijk te handhaven/QA/verzekeren merkgroepering worden.
 * Gebruik altijd CSS-klassen (na BEM-notatie) om CSS-regels te definiëren.
    * Als het selecteren van elementen zonder CSS-klassen (dus blote elementen) absoluut noodzakelijk is, verplaatst u deze hoger in de CSS-definitie om duidelijk te maken dat ze minder specifiek zijn dan eventuele botsingen met elementen van dat type die wel selecteerbare CSS-klassen hebben.
-* Vermijd het opmaken van de `BLOCK--MODIFIER` direct aangezien dit aan het Responsieve Net in bijlage is. Het wijzigen van de weergave van dit element kan van invloed zijn op de rendering en functionaliteit van het responsieve raster. Stijl dus alleen op dit niveau wanneer de intentie bestaat om het gedrag van het responsieve raster te wijzigen.
+* Vermijd het opmaken van de `BLOCK--MODIFIER` direct aangezien dit aan het Responsieve Net in bijlage is. Het wijzigen van de weergave van dit element kan van invloed zijn op de rendering en functionaliteit van het responsieve raster. Stijl dus alleen op dit niveau wanneer u het gedrag van het responsieve raster wilt wijzigen.
 * Stijlbereik toepassen met `BLOCK--MODIFIER`. De `BLOCK__ELEMENT--MODIFIERS` kan in de component worden gebruikt, maar sinds `BLOCK` vertegenwoordigt de Component, en de Component is wat wordt gestileerd, is de Stijl &quot;bepaald&quot;en scoped via `BLOCK--MODIFIER`.
 
 Voorbeeld-CSS-selectiestructuur moet als volgt zijn:
@@ -205,7 +206,7 @@ Voorbeeld-CSS-selectiestructuur moet als volgt zijn:
 <table> 
  <tbody> 
   <tr> 
-   <td valign="bottom"><p>Selector op eerste niveau</p> <p>BLOK—MODIFIER</p> </td> 
+   <td valign="bottom"><p>Kiezer op het eerste niveau</p> <p>BLOK—MODIFIER</p> </td> 
    <td valign="bottom"><p>Selector op het tweede niveau</p> <p>BLOKKEN</p> </td> 
    <td valign="bottom"><p>Selector op het derde niveau</p> <p>BLOCK_ELEMENT</p> </td> 
    <td> </td> 
@@ -248,7 +249,7 @@ De in deze sectie gedefinieerde aanbevolen procedures hebben betrekking op &#39;
 #### Prestatieoverwegingen {#performance-considerations}
 
 * Stijl-JavaScript moet licht en mager worden gehouden.
-* Verberg eerst de component via `BLOCK--MODIFIER BLOCK`en deze weer te geven wanneer alle DOM-manipulaties in het JavaScript zijn voltooid.
+* Verberg eerst de component via `BLOCK--MODIFIER BLOCK`en deze weer te geven wanneer alle DOM-manipulaties in JavaScript zijn voltooid.
 * De prestaties van de stijl-JavaScript manipulaties zijn gelijkaardig aan basisjQuery stop-ins die aan elementen op DOMReady vastmaken en wijzigen.
 * Zorg ervoor dat aanvragen worden gecomprimeerd en dat CSS en JavaScript worden geminiateerd.
 

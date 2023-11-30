@@ -1,15 +1,15 @@
 ---
 title: Toegangstoken genereren in App Builder-actie
-description: Leer hoe te om een toegangstoken te produceren gebruikend geloofsbrieven JWT voor gebruik in een actie van de Bouwer van de App.
+description: Leer hoe u een toegangstoken genereert met JWT-referenties voor gebruik in een App Builder-actie.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
-kt: 11743
+jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Toegangstoken genereren in App Builder-actie
 
-App Builder-acties moeten mogelijk communiceren met Adobe API&#39;s die zijn gekoppeld aan Adobe Developer-consoleprojecten waaraan de App Builder-app is toegewezen.
+App Builder-acties moeten mogelijk communiceren met Adobe-API&#39;s die zijn gekoppeld aan Adobe Developer-consoleprojecten waaraan de App Builder-app is toegewezen.
 
 Dit kan de actie van App Builder vereisen om zijn eigen toegangstoken te produceren verbonden aan het gewenste project van de Console van Adobe Developer.
 
@@ -31,7 +31,7 @@ Dit kan de actie van App Builder vereisen om zijn eigen toegangstoken te produce
 
 ## .env-bestand
 
-In het project van de Bouwer van de App `.env` voeg aangepaste sleutels toe voor elk van de JWT-referenties van het Adobe Developer Console-project. De JWT-referentiewaarden kunnen worden verkregen via het Adobe Developer Console-project __Credentials__ > __Serviceaccount (JWT)__ voor een bepaalde werkruimte.
+In het project App Builder `.env` voeg aangepaste sleutels toe voor elk van de JWT-referenties van het Adobe Developer Console-project. De JWT-referentiewaarden kunnen worden verkregen via het Adobe Developer Console-project __Credentials__ > __Serviceaccount (JWT)__ voor een bepaalde werkruimte.
 
 ![Adobe Developer Console JWT Service Credentials](./assets/jwt-auth/jwt-credentials.png)
 
@@ -45,11 +45,11 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-De waarden voor `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, `JWT_IMS_ORG` U kunt rechtstreeks kopiëren vanuit het JWT Credentials-scherm van het Adobe Developer Console-project.
+De waarden voor `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, `JWT_IMS_ORG` kan rechtstreeks worden gekopieerd vanuit het JWT Credentials-scherm van het Adobe Developer Console-project.
 
 ### Metaretten
 
-Bepaal de Adobe APIs en hun metareeksen de actie App Builder met interactie. Metatomen met komma-scheidingstekens weergeven in het dialoogvenster `JWT_METASCOPES` toets. Geldige metafoons worden vermeld in [Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
+Bepaal de Adobe APIs en hun metareeksen de actie App Builder met interactie. Metatomen met komma-scheidingstekens weergeven in het dialoogvenster `JWT_METASCOPES` toets. Geldige metafoons worden vermeld in [JWT Metascope-documentatie van Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
 
 
 De volgende waarde kan bijvoorbeeld worden toegevoegd aan de `JWT_METASCOPES` in de `.env`:
@@ -62,7 +62,7 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 
 ### Persoonlijke sleutel
 
-De `JWT_PRIVATE_KEY` moet speciaal zijn opgemaakt omdat het een native waarde van meerdere regels betreft, die niet wordt ondersteund in `.env` bestanden. De eenvoudigste manier is om de persoonlijke sleutel te baseren64. Base64-codering van de persoonlijke sleutel (`-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----`) kunt u uitvoeren met de native gereedschappen die door het besturingssysteem worden geleverd.
+De `JWT_PRIVATE_KEY` moet speciaal zijn opgemaakt omdat het een native waarde van meerdere regels betreft, die niet wordt ondersteund in `.env` bestanden. De gemakkelijkste manier is om base64 de privé sleutel te coderen. Base64-codering van de persoonlijke sleutel (`-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----`) kunt u uitvoeren met de native gereedschappen die door het besturingssysteem worden geleverd.
 
 >[!BEGINTABS]
 

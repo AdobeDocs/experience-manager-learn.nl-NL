@@ -7,9 +7,9 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
-kt: 8851
+jira: KT-8851
 exl-id: e61cea37-b931-49c6-9e5d-899628535480
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 In de vorige stap hebben we ons AEM Project gesynchroniseerd met de Adaptive Forms en Thema&#39;s die in de AEM zijn gemaakt.
 We moeten deze wijzigingen nu toevoegen aan onze lokale git-opslagplaats en vervolgens de lokale git-opslagplaats naar de git-opslagplaats voor cloudbeheer duwen.
-Opdrachtprompt openen en naar c:\cloudmanager\aem-banking-app Execute the following commands navigeren
+Opdrachtprompt openen en naar c:\cloudmanager\aem-banking-app Voer de volgende opdrachten uit
 
 ```
 git add .
@@ -32,13 +32,13 @@ Hiermee voegt u de nieuwe bestanden toe aan de werkgebiedvertakking van de lokal
 git commit -m "My First AF"
 ```
 
-Hierdoor worden de bestanden toegewezen aan de master vertakking van onze lokale it-opslagruimte
+Hierdoor worden de bestanden toegewezen aan de hoofdvertakking van onze lokale it-opslagruimte
 
 ```
 git push -f bankingapp master:"MyFirstAF"
 ```
 
-In het bovenstaande bevel duwen we onze master tak van onze lokale git bewaarplaats in de afdeling MyFirstAF van de bewaarplaats van de wolkenmanager die door de bankingapp vriendelijke naam wordt geïdentificeerd.
+In het bovenstaande bevel duwen we onze hoofdtak van onze lokale git bewaarplaats in de afdeling MyFirstAF van de bewaarplaats van de wolkenmanager die door de bankingapp vriendelijke naam wordt geïdentificeerd.
 
 ## Volgende stappen
 

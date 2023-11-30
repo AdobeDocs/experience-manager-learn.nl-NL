@@ -1,15 +1,15 @@
 ---
 title: Onboarding van AEM as a Cloud Service
-description: Meer informatie over instapweigering tot AEM as a Cloud Service, vanaf de contractfase tot aan het instellen van omgevingen met gebruik van Cloud Manager.
+description: Meer informatie over instapweigering tot AEM as a Cloud Service, vanaf de contractfase tot aan het instellen van omgevingen met Cloud Manager.
 version: Cloud Service
 feature: Onboarding
 topic: Migration, Upgrade
 role: Developer
 level: Experienced
-kt: 8631
+jira: KT-8631
 thumbnail: 336959.jpeg
 exl-id: 9d2004e5-e928-4190-8298-695635c8e92c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 4%
@@ -32,7 +32,7 @@ Een belangrijk onderdeel van instapweigering is het maken van AEM as a Cloud Ser
 
 + Een systeembeheerder gebruikt de [Admin Console](https://adminconsole.adobe.com/) om een of meer gebruikers aan de [Cloud Manager - bedrijfseigenaar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) productprofiel.
 + Gebruiker(s) die is/zijn toegewezen aan het productprofiel van de eigenaar van het bedrijf, gebruikt de functies voor zelfbediening van [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) tot [programma(&#39;s) maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) en [omgevingen toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
-+ Gebruik de [Admin Console](https://adminconsole.adobe.com/) om Ontwikkelaars en gebruikers toe te wijzen aan verschillende [Rollen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) en geef toestemming aan verschillende AEM omgevingen.
++ Gebruik de [Admin Console](https://adminconsole.adobe.com/) om Ontwikkelaars en gebruikers aan verschillende [Rollen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) en geef toestemming aan verschillende AEM omgevingen.
 
 ## Handbeweging
 
@@ -63,7 +63,7 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session3-onboarding#bootcamp---session-3-on-boarding" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Uitproberen bij het instappen</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Probeer het aan boord</span>
             </a>
         </td>
     </tr>
