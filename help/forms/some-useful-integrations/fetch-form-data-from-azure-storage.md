@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2023-10-23T00:00:00Z
 kt: 14238
-source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
+source-git-commit: 23459de98420d2a489288df4a1b992c17d42972e
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ public String getBlobData(String blobID) {
 
     } catch (ClientProtocolException e) {
 
-        log.error("Got Client Protocol Exception " + e.getMessage());
+        log.debug("Got Client Protocol Exception " + e.getMessage());
     } catch (IOException e) {
 
-        log.error("Got IOEXception " + e.getMessage());
+        log.debug("Got IOEXception " + e.getMessage());
     }
 
     return null;
 }
 ```
 
-Wanneer een adaptief formulier wordt weergegeven met een `guid` in de URL wordt de aangepaste pagina-component die aan de sjabloon is gekoppeld, opgehaald en wordt het adaptieve formulier gevuld met de gegevens van Azure-opslag.
-De paginacomponent die aan de sjabloon is gekoppeld, heeft de volgende JSP-code.
+Wanneer een adaptief formulier wordt weergegeven met een hulplijnparameter in de URL, haalt de aangepaste pagina-component die aan de sjabloon is gekoppeld het adaptieve formulier op en vult deze met de gegevens van Azure-opslag.
+Hier volgt de code in de jsp van de pagina-component die aan de sjabloon is gekoppeld
 
 ```java
 com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage azureStorage = sling.getService(com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage.class);
@@ -81,9 +81,11 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Het adaptieve voorbeeldformulier importeren](./assets/bank-account-sample-form.zip)
 
-* Specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole
+* Specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole.
+
 * [Het bankrekeningformulier bekijken en verzenden](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Controleer of de gegevens zijn opgeslagen in de Azure-opslagcontainer van uw keuze. Kopieer de blob-id.
+
 * [Een voorbeeld weergeven van het formulier Bankrekening](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) en geef de Blob-id op als een guid-parameter in de URL voor het formulier dat vooraf moet worden ingevuld met de gegevens uit Azure-opslag
 
