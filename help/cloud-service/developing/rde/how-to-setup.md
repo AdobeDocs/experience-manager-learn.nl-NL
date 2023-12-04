@@ -10,9 +10,10 @@ jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: ab9ee81a-176e-4807-ba39-1ea5bebddeb2
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 528
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ In deze video wordt getoond:
 
 - Een RDE toevoegen aan uw programma met gebruik van Cloud Manager
 - RDE-aanmeldstroom met Adobe IMS, hoe deze vergelijkbaar is met andere AEM as a Cloud Service omgeving
-- Opstelling van [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook bekend als `aio CLI`
+- Instellen van [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook bekend als `aio CLI`
 - Opstelling en configuratie van AEM RDE en de Manager van de Wolk `aio CLI` insteekmodule
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490?quality=12&learn=on)
@@ -69,13 +70,13 @@ Als u de plug-ins wilt bijwerken, gebruikt u de `aio plugins:update` gebruiken.
 
 De AEM insteekmodules moeten worden gevormd om met uw RDE in wisselwerking te staan. Kopieer eerst met de interface van Cloud Manager de waarden van de organisatie-, programma- en milieu-id.
 
-1. Organisatie-id: De waarde kopiëren uit **Profielbeeld > Accountinformatie (intern) > Modal Window > Current Org ID**
+1. Organisatie-id: de waarde kopiëren van **Profielbeeld > Accountinformatie (intern) > Modal Window > Current Org ID**
 
    ![Organisatie-id](./assets/Org-ID.png)
 
-1. Programma-id: De waarde kopiëren uit **Overzicht van programma > Omgevingen > {ProgramName} > Browser URI > getallen tussen `program/` en`/environment`**
+1. Programma-id: de waarde kopiëren uit **Overzicht van programma > Omgevingen > {ProgramName}-rde > Browser URI > numbers between `program/` en`/environment`**
 
-1. Omgeving-id: De waarde kopiëren uit **Overzicht van programma > Omgevingen > {ProgramName} -regel > Browser URI > Getallen na`environment/`**
+1. Omgeving-id: de waarde kopiëren uit **Overzicht van programma > Omgevingen > {ProgramName}-rde > Browser URI > numbers after`environment/`**
 
    ![Programma- en milieu-id](./assets/Program-Environment-Id.png)
 
@@ -120,7 +121,7 @@ Meer informatie [gebruiken](./how-to-use.md) een RDE om code en inhoud van uw fa
 
 [RDE inschakelen in een programmadocumentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
 
-Opstelling van [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook bekend als `aio CLI`
+Instellen van [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook bekend als `aio CLI`
 
 [AIO CLI-gebruik en -opdrachten](https://github.com/adobe/aio-cli#usage)
 

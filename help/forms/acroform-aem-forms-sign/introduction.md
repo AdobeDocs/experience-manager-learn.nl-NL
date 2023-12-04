@@ -2,16 +2,14 @@
 title: Transformaties met AEM Forms
 description: Een zelfstudie die door het maken van een adaptief formulier met Acroform loopt en de gegevens samenvoegt om een PDF te verkrijgen. De PDF met de samengevoegde gegevens kunnen vervolgens worden verzonden voor ondertekening met behulp van Acrobat Sign.
 feature: adaptive-forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.5
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 69
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -37,7 +35,7 @@ Organisaties hebben een grote verscheidenheid aan formulieren. Sommige van deze 
 * [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
-* [Download en importeer dit pakket in AEM](assets/acro-form-aem-form.zip). Dit pakket bevat de voorbeeldworkflow en de HTML-pagina om XSD te maken op basis van acroform
+* [Download en importeer dit pakket in AEM](assets/acro-form-aem-form.zip). Dit pakket bevat de voorbeeldworkflow en de HTML-pagina om XSD te maken van acroform
 * Open de [configMgr](http://localhost:4502/system/console/configMgr)
    * Zoek naar &#39;Apache Sling Service User Mapper Service&#39; en klik om de eigenschappen te openen
    * Klik op de knop `+` pictogram (plus) om de volgende Toewijzing van de Dienst toe te voegen

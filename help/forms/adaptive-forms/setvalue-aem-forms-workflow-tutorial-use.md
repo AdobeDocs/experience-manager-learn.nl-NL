@@ -7,9 +7,10 @@ role: Developer
 level: Experienced
 exl-id: 3919efee-6998-48e8-85d7-91b6943d23f9
 last-substantial-update: 2020-01-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 140
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -20,11 +21,11 @@ Stel de waarde van een XML-element in Adaptief Forms verzonden gegevens in de AE
 
 ![SetValue](assets/setvalue.png)
 
-LiveCycle heeft een ingestelde waardecomponent waarmee u de waarde van een XML-element kunt instellen.
+LiveCycle dat wordt gebruikt voor een ingestelde-waardecomponent waarmee u de waarde van een XML-element kunt instellen.
 
 Als het formulier wordt gevuld met de XML, kunt u op basis van deze waarde bepaalde velden of deelvensters van het formulier verbergen/uitschakelen.
 
-In AEM Forms OSGI moeten we een aangepaste OSGi-bundel schrijven om de waarde in de XML in te stellen. De bundel wordt geleverd als onderdeel van deze zelfstudie.
+In AEM Forms OSGI- zullen wij een douane OSGi bundel moeten schrijven om waarde in XML te plaatsen. De bundel wordt geleverd als onderdeel van deze zelfstudie.
 We gebruiken processtap in AEM workflow. Wij associëren de &quot;Vastgestelde Waarde van Element in de bundel van XML&quot;OSGi met deze processtap.
 We moeten twee argumenten doorgeven aan de set value bundle. Het eerste argument is XPath van het element van XML de waarvan waarde moet worden geplaatst. Het tweede argument is de waarde die moet worden ingesteld.
 In de bovenstaande schermafbeelding stellen we bijvoorbeeld de waarde van het element in de eerste stap in op &quot;N&quot;.

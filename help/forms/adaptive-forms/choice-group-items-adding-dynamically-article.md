@@ -8,9 +8,10 @@ role: User
 level: Beginner
 exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 374
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ In het onderstaande schermafbeelding stellen we de opties voor de periode(jaren)
 
 ![Regeleditor](assets/ruleeditor.png)
 
-**De code-editor gebruiken**: Wanneer u de items in de keuzegroep dynamisch wilt instellen op basis van de waarden die u in het formulier hebt ingevoerd. In het volgende codefragment worden bijvoorbeeld de items van het selectievakje ingesteld op de waarden die zijn ingevoerd in de velden Naam en Muis van de aanvrager van het adaptieve formulier.
+**De code-editor gebruiken**: Wanneer u de items in de keuzegroep dynamisch wilt instellen op basis van de waarden die in het formulier zijn ingevoerd. In het volgende codefragment worden bijvoorbeeld de items van het selectievakje ingesteld op de waarden die zijn ingevoerd in de velden Naam en Muis van de aanvrager van het adaptieve formulier.
 
 In het codefragment, plaatsen wij de punten van WorkingMember, die een checkbox component is. De array voor de items wordt dynamisch samengesteld door de waarden van de tekstvelden requestName en spouse van de adaptieve formulieren op te halen
 
@@ -82,7 +83,7 @@ U kunt dit als volgt op uw systeem testen:
 * [Een voorbeeld van de formulieren bekijken](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Voer de naam van de aanvrager in en selecteer de huwelijksstatus die gehuwd moet worden
 * Voer de naam van de echtgenoot in
-* Klik op Next
+* Klik op Volgende
 * Het selectievakje moet worden ingevuld met de naam van de aanvrager en met de naam van de echtgenoot als de huwelijkse staat gehuwd is
 
 **De visuele editor gebruiken om items toe te voegen**

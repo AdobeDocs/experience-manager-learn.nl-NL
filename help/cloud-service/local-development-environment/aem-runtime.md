@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 9b733c7070191adb34c9e7c05c92b0567c080e14
+duration: 563
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 1%
+source-wordcount: '1695'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 1%
 >id="aemcloud_localdev_aemruntime"
 >title="Lokale AEM Runtime"
 >abstract="Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de QuickStart Jar van de AEM as a Cloud Service SDK. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie en inhoud te testen alvorens het aan broncontrole vast te leggen, en het op te stellen aan een AEM as a Cloud Service milieu."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AS A CLOUD SERVICE SDK AEM"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK downloaden"
 
 Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de QuickStart Jar van de AEM as a Cloud Service SDK. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie en inhoud te testen alvorens het aan broncontrole vast te leggen, en het op te stellen aan een AEM as a Cloud Service milieu.

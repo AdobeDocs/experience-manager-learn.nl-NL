@@ -1,18 +1,17 @@
 ---
 title: Hoofdstuk 2 - Fragmentmodellen voor gebeurtenisinhoud definiëren - Inhoudsservices
-seo-title: Getting Started with AEM Content Services - Chapter 2 - Defining Event Content Fragment Models
 description: Hoofdstuk 2 van de AEM zelfstudie zonder koppen omvat het inschakelen en definiëren van modellen van inhoudsfragmenten die worden gebruikt om een genormaliseerde gegevensstructuur en ontwerpinterface te definiëren voor het maken van gebeurtenissen.
-seo-description: Chapter 2 of the AEM Headless tutorial covers enabling and defining Content Fragment Models used to define a normalized data structure and authoring interface for creating Events.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 472
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 1%
+source-wordcount: '807'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +44,7 @@ Als modellen van inhoudsfragmenten bestaan **niet** die voor een configuratie wo
 
 1. Meld u aan bij AEM auteur als een gebruiker met de juiste machtigingen om de relevante configuratie te wijzigen.
    * Voor deze zelfstudie **admin** kan worden gebruikt.
-1. Ga naar **[!UICONTROL Tool]> [!UICONTROL General] >[!UICONTROL Configuration Browser]**
+1. Navigeren naar **[!UICONTROL Tool]> [!UICONTROL General] >[!UICONTROL Configuration Browser]**
 1. Tik op de knop **mappictogram** naast **[!DNL WKND Mobile]** om te selecteren, en dan te tikken **[!UICONTROL Edit]knop** linksboven.
 1. Selecteren **[!UICONTROL Content Fragment Models]** en tikken **[!UICONTROL Save & Close]** rechtsboven.
 
@@ -56,14 +55,14 @@ Als modellen van inhoudsfragmenten bestaan **niet** die voor een configuratie wo
    >Deze configuratieverandering is niet omkeerbaar van [!UICONTROL AEM Configuration] Webinterface. Deze configuratie ongedaan maken:
    >    
    >    1. Openen [CRXDE Lite](http://localhost:4502/crx/de)
-   >    1. Ga naar `/conf/wknd-mobile/settings/dam/cfm`
+   >    1. Navigeren naar `/conf/wknd-mobile/settings/dam/cfm`
    >    1. Verwijder de `models` node
    >    
    >Alle bestaande modellen van inhoudsfragmenten die in deze configuratie zijn gemaakt, worden verwijderd en de definities ervan worden opgeslagen onder `/conf/wknd-mobile/settings/dam/cfm/models`.
 
 1. Pas de **[!DNL WKND Mobile]** aan de **[!DNL WKND Mobile]Map Middelen** om toe te staan dat Content Fragments van Content Fragment Models binnen die de omslaghiërarchie van Elementen worden gecreeerd:
 
-   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Assets] >[!UICONTROL Files]**
+   1. Navigeren naar **[!UICONTROL AEM]> [!UICONTROL Assets] >[!UICONTROL Files]**
    1. Selecteer de **[!UICONTROL WKND Mobile]map**
    1. Tik op de knop **[!UICONTROL Properties]** in de bovenste actiebalk om te openen [!UICONTROL Folder Properties]
    1. In [!UICONTROL Folder Properties]tikt u op **[!UICONTROL Cloud Services]** tab
@@ -88,7 +87,7 @@ Met de toewijzing kunnen we inhoudsfragment definiëren dat wordt gebruikt om de
 
 ## Het model van het inhoudsfragment maken
 
-1. Ga naar **[!UICONTROL Tools]> [!UICONTROL General] >[!UICONTROL Content Fragment Models]**.
+1. Navigeren naar **[!UICONTROL Tools]> [!UICONTROL General] >[!UICONTROL Content Fragment Models]**.
 1. Tik op de knop **[!DNL WKND Mobile]** te openen map.
 1. Tikken **[!UICONTROL Create]** om de wizard Inhoudsfragmentmodel te openen.
 1. Enter **[!DNL Event]** als de **[!UICONTROL Model Title]** *(beschrijving is optioneel)* en tikken **[!UICONTROL Create]** opslaan.
@@ -97,7 +96,7 @@ Met de toewijzing kunnen we inhoudsfragment definiëren dat wordt gebruikt om de
 
 ## De structuur van het inhoudsfragmentmodel definiëren
 
-1. Ga naar **[!UICONTROL Tools]> [!UICONTROL General] > [!UICONTROL Content Fragment Models] >[!DNL WKND]**.
+1. Navigeren naar **[!UICONTROL Tools]> [!UICONTROL General] > [!UICONTROL Content Fragment Models] >[!DNL WKND]**.
 1. Selecteer de **[!DNL Event]** Inhoudsfragmentmodel en tik **[!UICONTROL Edit]** in de bovenste actiebalk.
 1. Van de **[!UICONTROL Data Types]tab** Sleep aan de rechterkant de **[!UICONTROL Single line text input]** in de linkerdropzone om de **[!DNL Question]** veld.
 1. De nieuwe **[!UICONTROL Single line text input]** wordt links geselecteerd en **[!UICONTROL Properties]tab** is rechts geselecteerd. Vul de velden Eigenschappen als volgt in:

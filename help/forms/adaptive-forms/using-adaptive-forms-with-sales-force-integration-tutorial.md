@@ -2,16 +2,16 @@
 title: Gegevensbron configureren met Salesforce in AEM Forms 6.3 en 6.4
 description: AEM Forms integreren met Salesforce met behulp van formuliergegevensmodel
 feature: Adaptive Forms, Form Data Model
-topics: integrations
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
 last-substantial-update: 2020-02-14T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 232
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisites}
 
-In dit artikel, lopen wij door het proces om Gegevensbron met Salesforce tot stand te brengen
+In dit artikel, lopen wij door het proces om Gegevensbron met Salesforce te creëren
 
 Vereisten voor deze zelfstudie:
 
@@ -59,18 +59,18 @@ De volgende stap bestaat uit het maken van een gegevensbron in AEM Forms. Voer d
    * Naam: CreateLeadInSalesForce
    * Titel: CreateLeadInSalesForce
 
-* Klik op &quot;Maken&quot;
+* Klik op Maken
 
 **In het volgende scherm **
 
 * Selecteer &quot;Bestand&quot; als optie voor het bronbestand van de computer. Bladeren naar het bestand dat u eerder hebt gedownload
 * Verificatietype selecteren als OAuth2.0
-* Geef de waarden voor ClientID en Client Secret op
+* De waarden ClientID en Client Secret opgeven
 * OAuth-URL is - **https://login.salesforce.com/services/oauth2/authorize**
 * Token-URL vernieuwen - **https://na5.salesforce.com/services/oauth2/token**
 * **URL voor toegangstoek - https://na5.salesforce.com/services/oauth2/token**
-* Bereik vergunning: ** api chatter_api full id openid refresh_token visualforce web**
-* Verificatiehandler: Vergunninghouder
+* Autorisatiebereik: ** api chatter_api full id open id refresh_token visualforce web**
+* Verificatiehandler: houder van autorisatie
 * Klik op &quot;Verbinding maken met OAUTH&quot;. Als alles goed gaat, worden geen fouten weergegeven
 
 Nadat u het formuliergegevensmodel hebt gemaakt met Salesforce, kunt u vervolgens de formuliergegevensintegratie maken met de gegevensbron die u zojuist hebt gemaakt. De officiële documentatie voor het maken van formuliergegevensintegratie is [hier](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
@@ -93,18 +93,18 @@ Nadat u het formuliergegevensmodel hebt gemaakt, kunt u op dit model gebaseerde 
       * Naam: CreateLeadInSalesForce
       * Titel: CreateLeadInSalesForce
       * Servicetype: RESTful-service
-   * Klik op Next
+
+   * Klik op Volgende
    * Bron wagen: Bestand
    * Blader naar en selecteer het gummetje dat u in de vorige stap hebt gedownload
    * Type verificatie: OAuth 2.0. Geef de volgende waarden op
-   * Geef de waarden voor ClientID en Client Secret op
+   * De waarden ClientID en Client Secret opgeven
    * OAuth-URL is - **https://login.salesforce.com/services/oauth2/authorize**
    * Token-URL vernieuwen - **https://na5.salesforce.com/services/oauth2/token**
    * Token-Ur openen **l - https://na5.salesforce.com/services/oauth2/token**
-   * Bereik vergunning: ** api chatter_api full id openid refresh_token visualforce web**
-   * Verificatiehandler: Vergunninghouder
-   * Klik op de knop &quot;Verbinding maken met OAuth&quot;. Als er fouten optreden, controleert u de voorgaande stappen om ervoor te zorgen dat alle gegevens correct zijn ingevoerd.
-
+   * Autorisatiebereik: ** api chatter_api full id open id refresh_token visualforce web**
+   * Verificatiehandler: houder van autorisatie
+   * Klik op &quot;Verbinding maken met OAuth&quot;. Als er fouten optreden, controleert u de voorgaande stappen om ervoor te zorgen dat alle gegevens correct zijn ingevoerd.
 
 Zodra u uw Gegevensbron gebruikend SalesForce hebt gecreeerd, kunt u de Integratie van de Gegevens van de Vorm dan tot stand brengen gebruikend de Gegevensbron die u net hebt gecreeerd. De documentatiekoppeling hiervoor is [hier](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 

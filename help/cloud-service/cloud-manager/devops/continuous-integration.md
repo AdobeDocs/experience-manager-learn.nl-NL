@@ -9,10 +9,11 @@ feature: Developer Tools
 jira: KT-6914
 thumbnail: 330536.jpg
 exl-id: 8fd8eb06-bbd9-489a-b41b-f8785e140f58
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 21
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 6%
+source-wordcount: '52'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 6%
 >id="aemcloud_devops_cicd"
 >title="Continue integratie en Cloud Manager"
 >abstract="Begrijp beste praktijken en ononderbroken integratie gebruikend de Manager van de Wolk van de Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#non-production-pipelines" text="De CI/CD-pipeline configureren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#non-production-pipelines" text="Het vormen van uw CI-CD Pijpleiding"
 
 Begrijp beste praktijken en ononderbroken integratie gebruikend de Manager van de Wolk van de Adobe.
 

@@ -7,10 +7,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: b33d1509-531d-40c3-9b26-1d18c8d86a97
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 235
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 1%
+source-wordcount: '434'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +32,7 @@ Omdat AEM Content Services is samengesteld uit Configuration (Content Fragment M
    * [http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
 
 1. Publiceer de **[!DNL WKND Mobile Events API]Bewerkbare sjabloon**
-   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Tools] > [!UICONTROL General] > [!UICONTROL Templates] >[!DNL WKND Mobile]**
+   1. Navigeren naar **[!UICONTROL AEM]> [!UICONTROL Tools] > [!UICONTROL General] > [!UICONTROL Templates] >[!DNL WKND Mobile]**
    1. Selecteer de **[!DNL Event API]** template
    1. Tikken **[!UICONTROL Publish]** in de bovenste actiebalk
    1. Publiceer de **template** en **alle verwijzingen** (inhoudsbeleid, inhoudspolitieke toewijzingen en sjablonen)
@@ -40,7 +41,7 @@ Omdat AEM Content Services is samengesteld uit Configuration (Content Fragment M
 
    Dit is vereist omdat de API voor gebeurtenissen de component Lijst met inhoudsfragmenten gebruikt, die niet specifiek verwijst naar inhoudsfragmenten.
 
-   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Assets] > [!UICONTROL Files] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**
+   1. Navigeren naar **[!UICONTROL AEM]> [!UICONTROL Assets] > [!UICONTROL Files] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**
    1. Alle opties selecteren **[!DNL Event]** inhoudsfragmenten
    1. Tik op de knop **[!UICONTROL Manage Publication]** in de bovenste actiebalk
    1. De standaardinstelling behouden **Publiceren** handeling ongewijzigd, tikken **[!UICONTROL Next]** in de bovenste actiebalk
@@ -49,7 +50,7 @@ Omdat AEM Content Services is samengesteld uit Configuration (Content Fragment M
       * *De [!DNL Events] Content Fragment Model and references Event Images will automatically be published with the content fragments.*
 
 1. Publiceer de **[!DNL Events API]page**.
-   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**
+   1. Navigeren naar **[!UICONTROL AEM]> [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**
    1. Selecteer de **[!DNL Events]** page
    1. Tik op de knop **[!UICONTROL Manage Publication]** in de bovenste actiebalk
    1. De standaardinstelling behouden **Publiceren** handeling ongewijzigd, tikken **[!UICONTROL Next]** in de bovenste actiebalk

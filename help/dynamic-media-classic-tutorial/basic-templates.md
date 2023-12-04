@@ -7,9 +7,10 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: d4e16b45-0095-44b4-8c16-89adc15e0cf9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1644
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '6260'
+source-wordcount: '6219'
 ht-degree: 0%
 
 ---
@@ -339,7 +340,7 @@ Het maken van een voorinstelling voor uw sjabloon is geen vereiste stap. We rade
 
 Er is niets bijzonders aan een Voorinstelling voor afbeelding voor een sjabloon. Als u al een voorinstelling hebt voor een statische afbeelding van dezelfde grootte, kunt u deze gebruiken.
 
-### Publicatie
+### Publiceren
 
 U zult moeten in werking stellen publiceert om uw veranderingen te zien die levend aan de Server van het Beeld worden gebracht. Houd rekening met wat u moet publiceren: de verschillende lagen met afbeeldingselementen, de lettertypen voor dynamische tekst en de sjabloon zelf. Net als andere rijke media-elementen van Dynamic Media Classic, zoals Afbeeldingssets en Draaisets, is een standaardsjabloon een kunstmatige constructie. Het is een regelitem in de database dat verwijst naar de afbeeldingen en fonts met behulp van een reeks opdrachten in de afbeeldingsservice. Zo wanneer u het malplaatje publiceert, allen u doet bijwerkt gegevens over de Server van het Beeld.
 

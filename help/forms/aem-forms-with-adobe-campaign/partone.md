@@ -9,9 +9,10 @@ level: Experienced
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 236
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ Om ACS API met AEM Forms te gebruiken, moeten wij JWT binnen een bundel OSGi tot
 
 **A.** De hier weergegeven waarden zijn dummywaarden
 
-De volgende code haalt de details over de Server van Adobe Campaign van de configuratie OSGI. We maken een persoonlijke sleutel van de lijnen 80 tot en met 104.
+De volgende code haalt de details over de Server van Adobe Campaign van de configuratie OSGI. Wij creëren een privé sleutel van lijnen 80 tot 104.
 
 Als we eenmaal de persoonlijke sleutel hebben, maken we JSON Web Token.
 

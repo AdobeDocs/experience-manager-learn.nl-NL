@@ -1,15 +1,16 @@
 ---
 title: Geavanceerde concepten van AEM headless - GraphQL
-description: Een end-to-end zelfstudie waarin geavanceerde concepten van Adobe Experience Manager (AEM) GraphQL API's worden geïllustreerd.
+description: Een end-to-end zelfstudie die geavanceerde concepten van Adobe Experience Manager (AEM) GraphQL APIs illustreert.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+duration: 508
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Deze end-to-end zelfstudie vervolgt de [basiszelfstudie](../multi-step/overview.
 
 Voltooi de [snelle installatie voor AEM as a Cloud Service](../quick-setup/cloud-service.md) om uw AEM as a Cloud Service omgeving te configureren.
 
-U wordt ten zeerste aangeraden het vorige [basiszelfstudie](../multi-step/overview.md) en [videoreeks](../video-series/modeling-basics.md) zelfstudies voordat u verdergaat met deze geavanceerde zelfstudie. Hoewel u de zelfstudie kunt voltooien met een lokale AEM, wordt in deze zelfstudie alleen ingegaan op de workflow voor AEM as a Cloud Service.
+U wordt ten zeerste aangeraden het voorgaande te voltooien [basiszelfstudie](../multi-step/overview.md) en [videoreeks](../video-series/modeling-basics.md) zelfstudies voordat u verdergaat met deze geavanceerde zelfstudie. Hoewel u de zelfstudie kunt voltooien met een lokale AEM, wordt in deze zelfstudie alleen ingegaan op de workflow voor AEM as a Cloud Service.
 
 >[!CAUTION]
 >
@@ -37,9 +38,9 @@ U wordt ten zeerste aangeraden het vorige [basiszelfstudie](../multi-step/overvi
 Deze zelfstudie behandelt de volgende onderwerpen:
 
 * Maak modellen van inhoudsfragmenten met behulp van validatieregels en meer geavanceerde gegevenstypen, zoals tijdelijke aanduidingen voor tabbladen, geneste fragmentverwijzingen, JSON-objecten en gegevenstypen voor datum en tijd.
-* Inhoudsfragmenten schrijven terwijl u werkt met geneste inhoud en fragmentverwijzingen, en mapbeleid configureren voor governance voor het schrijven van inhoudsfragmenten.
+* Inhoudsfragmenten schrijven terwijl u werkt met geneste inhoud en fragmentverwijzingen, en mapbeleid configureren voor governance voor het schrijven van inhoud.
 * Ontdek AEM GraphQL API-mogelijkheden met behulp van GraphQL-query&#39;s met variabelen en instructies.
-* Blijft GraphQL vragen met parameters in AEM en leer hoe te om cache-controle parameters met persisted query&#39;s te gebruiken.
+* Blijft GraphQL vragen met parameters in AEM en leer hoe te om cache-controle parameters met voortgezette vragen te gebruiken.
 * Integreer aanvragen voor doorlopende query&#39;s in de voorbeeldtoepassing WKND GraphQL React met de AEM Headless JavaScript SDK.
 
 ## Geavanceerde concepten van AEM overzicht zonder kop
@@ -92,7 +93,7 @@ Ga naar **Navigatie** > **Activa** > **Bestanden**.
 
 ![Naar bestanden navigeren](assets/overview/files.png)
 
-Navigeer in de **WKND gedeeld** map. Neem de map waar met de titel &quot;Engels&quot; en de naam &quot;EN&quot;. Deze map is de hoofdmap van de taal voor het WKND-siteproject.
+Ga in **WKND gedeeld** map. Neem de map waar met de titel &quot;Engels&quot; en de naam &quot;EN&quot;. Deze map is de hoofdmap van de taal voor het WKND-siteproject.
 
 ![Engelse map](assets/overview/english.png)
 
@@ -102,11 +103,11 @@ Voor uw eigen project, creeer een omslag van de taalwortel binnen uw configurati
 
 Tot slot moet u de configuratie van uw project aan de omslag van de taalwortel toewijzen. Deze toewijzing laat de verwezenlijking van de Fragmenten van de Inhoud toe die op de Modellen worden gebaseerd van het Fragment van de Inhoud in de configuratie van uw project wordt bepaald.
 
-Als u de hoofdmap van de taal aan de configuratie wilt toewijzen, selecteert u de map en selecteert u **Eigenschappen** in de bovenste navigatiebalk.
+Als u de hoofdmap van de taal aan de configuratie wilt toewijzen, selecteert u de map en selecteert u vervolgens **Eigenschappen** in de bovenste navigatiebalk.
 
 ![Eigenschappen selecteren](assets/overview/properties.png)
 
-Navigeer vervolgens naar de **Cloud Services** en selecteert u het mappictogram in het dialoogvenster **Cloud Configuration** veld.
+Navigeer vervolgens naar de **Cloud Servicen** en selecteert u het mappictogram in het dialoogvenster **Cloud Configuration** veld.
 
 ![Cloud Configuration](assets/overview/cloud-conf.png)
 
@@ -124,7 +125,7 @@ Hier volgt een overzicht van aanbevolen procedures voor het maken van uw eigen p
 Twee AEM **pakketten** zijn beschikbaar en kunnen worden geïnstalleerd via [Pakketbeheer](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md#sample-content)
 
 * [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip) wordt later in de zelfstudie gebruikt en bevat voorbeeldafbeeldingen en mappen.
-* [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) Bevat de gebeëindigde oplossing voor Hoofdstuk 1-4 met inbegrip van de nieuwe Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en de Persisted vragen van GraphQL. Nuttig voor degenen die naar de [Integratie van clienttoepassingen](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) hoofdstuk
+* [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) Bevat de gebeëindigde oplossing voor Hoofdstuk 1-4 met inbegrip van de nieuwe Modellen van het Fragment van de Inhoud, de Fragmenten van de Inhoud, en de Persisted vragen van GraphQL. Nuttig voor degenen die naar de [Integratie van clienttoepassingen](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) hoofdstuk.
 
 
 De [React App - Advanced Tutorial - WKND Adventures](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) Het project is beschikbaar om de steekproeftoepassing te herzien en te onderzoeken. Deze voorbeeldtoepassing haalt de inhoud van AEM op door de voortgezette GraphQL-query&#39;s aan te roepen en rendert deze in een overweldigende ervaring.

@@ -10,10 +10,11 @@ level: Beginner
 jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 111
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 1%
+source-wordcount: '328'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +46,7 @@ Zorg ervoor dat u de status Actief hebt en maak de volgende CSS-eigenschappen op
 
 | Categorie | Eigenschapnaam | Waarde van eigenschap |
 |:---|:---|:---|
-| Dimensionen en positie | Breedte | 50px |
+| Dimensionen en positie | Breedte | 50 px |
 | Tekst | Dikte lettertype | Vet |
 | Tekst | Kleur | #FFF |
 | Tekst | Lijnhoogte | 3 |
@@ -66,7 +67,7 @@ Zorg ervoor dat u in de bezochte staat bent en stijl de volgende eigenschappen
 
 | Categorie | Eigenschapnaam | Waarde van eigenschap |
 |:---|:---|:---|
-| Dimensionen en positie | Breedte | 50px |
+| Dimensionen en positie | Breedte | 50 px |
 | Tekst | Dikte lettertype | Vet |
 | Tekst | Kleur | #FFF |
 | Tekst | Lijnhoogte | 3 |

@@ -1,5 +1,5 @@
 ---
-title: Tools voor herstructurering van code
+title: Gereedschappen voor het verfijnen van code
 description: Leer hoe AEM de Hulpmiddelen van de Refactoring van de Code de omzetting van bestaande AEM projecten automatiseren om as a Cloud Service compatibel AEM te zijn.
 version: Cloud Service
 feature: Migration
@@ -9,14 +9,15 @@ level: Intermediate
 jira: KT-8662
 thumbnail: 336693.jpeg
 exl-id: 9a607307-4f00-41db-a9e2-64bd7c18e3f8
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 190
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '50'
-ht-degree: 12%
+ht-degree: 0%
 
 ---
 
-# Tools voor herstructurering van code
+# Gereedschappen voor het verfijnen van code
 
 Leer hoe AEM de Hulpmiddelen van de Refactoring van de Code de omzetting van bestaande AEM projecten automatiseren om as a Cloud Service compatibel AEM te zijn.
 

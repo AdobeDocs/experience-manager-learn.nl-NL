@@ -8,9 +8,10 @@ role: Leader, Architect, Developer, Admin, User
 level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2602'
+source-wordcount: '2586'
 ht-degree: 1%
 
 ---
@@ -92,12 +93,12 @@ Hieronder ziet u een matrix van de belangrijkste basisfuncties die AEM biedt. So
         <tr>
             <td>Functie van Stichting</td>
             <td>5,6 x</td>
-            <td>6.0</td>
-            <td>6.1</td>
-            <td>6.2</td>
-            <td>6.3</td>
-            <td>6.4</td>
-            <td>6.5</td>
+            <td>6,0</td>
+            <td>6,1</td>
+            <td>6,2</td>
+            <td>6,3</td>
+            <td>6,4</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -286,12 +287,12 @@ Hieronder ziet u een matrix van de belangrijkste beveiligingsfuncties die AEM bi
         <tr>
             <td>Beveiligingsonderdeel</td>
             <td>5,6 x</td>
-            <td>6.0</td>
-            <td>6.1</td>
-            <td>6.2</td>
-            <td>6.3</td>
-            <td>6.4</td>
-            <td>6.5</td>
+            <td>6,0</td>
+            <td>6,1</td>
+            <td>6,2</td>
+            <td>6,3</td>
+            <td>6,4</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -436,12 +437,12 @@ Hieronder ziet u een matrix van belangrijke Sites-functies die AEM biedt. Sommig
         <tr>
             <td><strong>Functie Sites</strong></td>
             <td>5,6 x</td>
-            <td>6.0</td>
-            <td>6.1</td>
-            <td>6.2</td>
-            <td>6.3</td>
-            <td>6.4</td>
-            <td>6.5</td>
+            <td>6,0</td>
+            <td>6,1</td>
+            <td>6,2</td>
+            <td>6,3</td>
+            <td>6,4</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -684,12 +685,12 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         <tr>
             <td>Functie voor elementen</td>
             <td>5,6 x</td>
-            <td>6.0</td>
-            <td>6.1</td>
-            <td>6.2</td>
-            <td>6.3</td>
-            <td>6.4</td>
-            <td>6.5</td>
+            <td>6,0</td>
+            <td>6,1</td>
+            <td>6,2</td>
+            <td>6,3</td>
+            <td>6,4</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -896,12 +897,12 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
         <tr>
             <td>Dynamic Media-functie</td>
             <td>5,6 x</td>
-            <td>6.0</td>
-            <td>6.1</td>
-            <td>6.2</td>
+            <td>6,0</td>
+            <td>6,1</td>
+            <td>6,2</td>
             <td>6,3 +FP</td>
-            <td>6.4</td>
-            <td>6.5</td>
+            <td>6,4</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -999,12 +1000,12 @@ Hieronder ziet u een matrix met belangrijke AEM Forms Add-on-functies die AEM bi
         <tr>
             <td>Forms-functie</td>
             <td>5,6 x</td>
-            <td>6.0</td>
-            <td>6.1</td>
-            <td>6.2</td>
-            <td>6.3</td>
-            <td>6.4</td>
-            <td>6.5</td>
+            <td>6,0</td>
+            <td>6,1</td>
+            <td>6,2</td>
+            <td>6,3</td>
+            <td>6,4</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>

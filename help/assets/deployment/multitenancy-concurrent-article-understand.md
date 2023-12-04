@@ -8,9 +8,10 @@ role: Developer
 level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 543
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2022'
 ht-degree: 0%
 
 ---
@@ -117,7 +118,7 @@ Als er geen consensus kan worden bereikt tussen de verschillende bedrijfseenhede
 
 AEM gebruikt werkstroomdraagraketten om werkstroomuitvoering automatisch te starten wanneer opgegeven wijzigingen in de opslagplaats worden aangebracht. AEM biedt verschillende draagraketten uit het vak, bijvoorbeeld om processen voor het genereren van vertoningen en het ophalen van metagegevens uit te voeren voor nieuwe en bijgewerkte elementen. Terwijl het mogelijk is om deze draagraketten zoals-is, in een multi-huurdermilieu te verlaten, als de huurders verschillende lancerings en/of werkschemamodel vereisten hebben, dan is het waarschijnlijk dat individuele draagraketten voor elke huurder zullen moeten worden gecreeerd en worden gehandhaafd. Deze draagraketten zullen moeten worden gevormd om op de updates van hun huurder uit te voeren terwijl het verlaten van inhoud van andere huurders onaangeroerd. Dit kunt u eenvoudig bereiken door draagraketten toe te passen op opgegeven opslagpaden die huurspecifiek zijn.
 
-### Vanity-URL&#39;s {#vanity-urls}
+### Vanity URL&#39;s {#vanity-urls}
 
 AEM biedt vanity URL-functionaliteit die per pagina kan worden ingesteld. De zorg met deze benadering in een multi-huurdersscenario is dat AEM geen uniciteit tussen de ijdelheid URLs verzekert die op deze manier wordt gevormd. Als twee verschillende gebruikers hetzelfde ijdelingspad voor verschillende pagina&#39;s configureren, kan onverwacht gedrag optreden. Om deze reden, adviseren wij het gebruiken van mod_rewrite regels in de Apache berichtcher instanties, die voor een centraal punt van configuratie in overleg met de uitgaande-enige regels van de Resolver van het Middel toestaan.
 

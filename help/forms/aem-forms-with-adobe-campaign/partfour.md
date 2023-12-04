@@ -9,9 +9,10 @@ level: Experienced
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 59d5ba6d-91c1-48c7-8c87-8e0caf4f2d7e
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 157
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -107,7 +108,7 @@ De eerste stap bestaat uit het maken van het wagerbestand. Het waggerbestand def
 
 Er wordt een gegevensbron gemaakt met behulp van het wagerbestand. Wanneer u een gegevensbron maakt, kunt u het verificatietype opgeven. In dit geval gebruiken we aangepaste verificatie om verificatie uit te voeren met Adobe Campaign. De bovenstaande code is gebruikt voor verificatie met Adobe Campaign.
 
-Voorbeeldwagerbestand wordt aan u gegeven als onderdeel van het element dat betrekking heeft op dit artikel.**Zorg ervoor u de gastheer en basePath in het wagerdossier verandert om uw ACS instantie aan te passen**
+Voorbeeldwagerbestand wordt aan u gegeven als onderdeel van het element dat betrekking heeft op dit artikel.**Zorg ervoor u de gastheer en basePath in het wagerdossier om uw ACS instantie te passen**
 
 ## De oplossing testen {#test-the-solution}
 

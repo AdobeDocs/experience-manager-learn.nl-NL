@@ -1,15 +1,15 @@
 ---
 title: Formuliergegevens opslaan en ophalen vanuit MySQL-database - Aangepaste formuliersjabloon en paginacomponent maken
-description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens
+description: Zelfstudie met meerdere onderdelen om door de stappen te bladeren die nodig zijn voor het opslaan en ophalen van formuliergegevens
 feature: Adaptive Forms
 type: Tutorial
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: fcef5adc-10fb-42b2-ab46-c7674e94e805
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 251
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%

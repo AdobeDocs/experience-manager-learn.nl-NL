@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
 last-substantial-update: 2020-10-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 100
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Voer de volgende stappen uit om deze mogelijkheid op uw systeem te testen:
 
 * [De gebruikersbundel DevelopingWithService implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [De SetValue-bundel implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Deze bundel bevat de voorbeeldcode voor het vastleggen van de opmerkingen en het opslaan als een eigenschap voor metagegevens
+* [De SetValue-bundel implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Deze bundel bevat de voorbeeldcode voor het vastleggen van de opmerkingen en het opslaan als eigenschap metadata
 
 * [De aan dit artikel gerelateerde elementen downloaden en uitpakken naar uw bestandssysteem](assets/capturecomments.zip) De elementen bevatten workflowmodel en voorbeeld Adaptief formulier.
 
@@ -42,11 +43,11 @@ Voer de volgende stappen uit om deze mogelijkheid op uw systeem te testen:
 
 * De formuliervelden invullen en het formulier verzenden
 
-* [Controleer uw AEM](http://localhost:4502/aem/inbox)
+* [Controleer uw AEM.](http://localhost:4502/aem/inbox)
 
 * Open de taak vanuit het Postvak IN en verzend het formulier. Voer opmerkingen in wanneer hierom wordt gevraagd.
 
-De opmerkingen worden opgeslagen in de metagegevenseigenschap met de naam `managerComments` in AEM opslagplaats. Als u wilt controleren op de opmerkingen, meldt u zich aan bij crx als beheerder. De workflowinstanties worden opgeslagen in het volgende pad:
+De opmerkingen worden opgeslagen in de metagegevenseigenschap genaamd `managerComments` in AEM opslagplaats. Als u wilt controleren op de opmerkingen, meldt u zich aan bij crx als beheerder. De workflowinstanties worden opgeslagen in het volgende pad:
 
 `/var/workflow/instances/server0`
 

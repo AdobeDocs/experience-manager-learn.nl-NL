@@ -1,15 +1,16 @@
 ---
 title: Aangepaste formuliergegevens opslaan en ophalen
-description: Aangepaste formuliergegevens opslaan en ophalen uit de database. Met deze functie kunnen invullers het formulier opslaan en het formulier op een latere datum invullen.
+description: Aangepaste formuliergegevens opslaan en ophalen uit de database. Hierdoor kunnen invullers het formulier opslaan en het formulier op een latere datum invullen.
 feature: Adaptive Forms
 topic: Development
 role: Developer
 type: Tutorial
 version: 6.4,6.5
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 851
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ In dit artikel worden de stappen beschreven die nodig zijn voor het opslaan en o
 
 ## Gegevensbron configureren {#Configure-Data-Source}
 
-Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar de database die wordt gebruikt om de Adaptive Form-gegevens op te slaan. Het volgende schermafbeelding toont de configuratie voor mijn instantie. De volgende eigenschappen kunnen worden gekopieerd en geplakt
+Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar de database die wordt gebruikt om de Adaptive Form-gegevens op te slaan. Het volgende schermafbeelding toont de configuratie voor mijn instantie. U kunt de volgende eigenschappen kopiëren en plakken
 
 * Naam gegevensbron:informatieStutorial - dit is de naam die in mijn code wordt gebruikt.
 
@@ -209,7 +210,7 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 }
 ```
 
-## OSGI-service maken om gegevens op te halen {#create-osgi-service}
+## OSGI-service maken voor het ophalen van gegevens {#create-osgi-service}
 
 De volgende code is geschreven om de opgeslagen gegevens van het Adaptieve formulier op te halen. Een eenvoudige vraag wordt gebruikt om de Adaptieve gegevens van de Vorm te halen verbonden aan een bepaalde GUID. De opgehaalde gegevens worden vervolgens geretourneerd aan de aanroepende toepassing. Dezelfde gegevensbron gemaakt in de eerste stap waarnaar in deze code wordt verwezen.
 
@@ -416,7 +417,7 @@ $(document).ready(function()
 Voer de volgende stappen uit om deze mogelijkheid te testen op uw AEM Forms-exemplaar
 
 * [Download en decomprimeer de DemoAssets.zip naar uw lokale systeem](assets/demoassets.zip)
-* Implementeer en start de bundels techmarketingdemos.jar en mysqldriver.jar met de Felix-webconsole.
+* Implementeer en start de bundels techmarketingdemos.jar en mysqldriver.jar met behulp van de Felix-webconsole.
 *** Importeer het bestand aemformstutorial.sql met MYSQL Workbench. Hierdoor worden het benodigde schema en de benodigde tabellen in uw database gemaakt
 * Importeer StoreAndRetrieve.zip met AEM pakketbeheer. Dit pakket bevat de adaptieve formuliersjabloon, de client lib van de paginacomponent en een voorbeeldconfiguratie voor adaptieve formulieren en gegevensbronnen.
 * Aanmelden bij configMgr. Zoek naar &quot;Apache Sling Connection Pooled DataSource. Open de gegevensbroningang verbonden aan een modelstudie en ga de gebruikersbenaming en het wachtwoord in specifiek voor uw gegevensbestandinstantie.

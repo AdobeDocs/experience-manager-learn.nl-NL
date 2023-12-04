@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 224
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ Het gebruiksscenario is dat een AEM workflow wordt geactiveerd voor het verzende
    * Formuliernaam - Kolomnaam voor de naam van het formulier
    * Kolomnaam - Kolomnaam om de AF-gegevens te bevatten
 
-   ![Specificeer de details van het Gegevensbestand OSGi configuratie](assets/specify-database-details.png)
+  ![Specificeer de details van het Gegevensbestand OSGi configuratie](assets/specify-database-details.png)
 
 
 

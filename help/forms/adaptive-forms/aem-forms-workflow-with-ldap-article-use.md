@@ -8,9 +8,10 @@ version: 6.4,6.5
 level: Intermediate
 exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
 last-substantial-update: 2021-09-18T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 149
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -61,14 +62,14 @@ We krijgen de greep van de persoon die de workflow heeft gestart. Wij krijgen da
 
 Afhankelijk van hoe het managerbezit in uw LDAP wordt opgeslagen, kunt u wat koordmanipulatie moeten doen om manageridentiteitskaart te krijgen.
 
-Lees dit artikel om uw eigen artikel te implementeren [  Deelnemerkiezer.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Lees dit artikel om uw eigen artikel te implementeren [ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
-Om dit op uw systeem te testen (Voor de Medewerkers van Adobe kunt u dit steekproef uit de doos gebruiken)
+Om dit op uw systeem te testen (Voor de Medewerkers van de Adobe kunt u dit steekproef uit de doos gebruiken)
 
 * [De setvalue-bundel downloaden en implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel voor het instellen van de eigenschap van de manager.
 * [Download en installeer de DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [De aan dit artikel gekoppelde elementen met pakketbeheer importeren in AEM](assets/aem-forms-ldap.zip).Opgenomen als onderdeel van dit pakket zijn LDAP-configuratiebestanden, een workflow en een adaptief formulier.
-* Configureer AEM met uw LDAP met de juiste LDAP-referenties.
+* Configureer AEM met uw LDAP met behulp van de juiste LDAP-referenties.
 * Meld u aan bij AEM met uw LDAP-referenties.
 * Open de [timeoffrequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Vul het formulier in en verzend het.
@@ -76,4 +77,4 @@ Om dit op uw systeem te testen (Voor de Medewerkers van Adobe kunt u dit steekpr
 
 >[!NOTE]
 >
->Deze aangepaste code voor het uitpakken van de naam van de manager is getest op basis van Adobe LDAP. Als u deze code uitvoert tegen een andere LDAP, zult u uw eigen getParticipant implementatie moeten wijzigen of schrijven om de naam van de manager te krijgen.
+>Deze aangepaste code voor het uitpakken van de naam van de manager is getest met Adobe LDAP. Als u deze code uitvoert tegen een andere LDAP, zult u uw eigen getParticipant implementatie moeten wijzigen of schrijven om de naam van de manager te krijgen.

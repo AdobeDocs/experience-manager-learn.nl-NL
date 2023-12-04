@@ -2,10 +2,7 @@
 title: SPA componenten toewijzen aan AEM componenten | Aan de slag met de AEM SPA Editor en reageren
 description: Leer hoe u React-componenten toewijst aan Adobe Experience Manager (AEM)-componenten met de AEM SPA Editor JS SDK. Met componenttoewijzing kunnen gebruikers dynamische updates uitvoeren naar SPA componenten in de AEM SPA Editor, net als bij traditionele AEM ontwerpen. U zult ook leren hoe te om uit de doos AEM React de Componenten van de Kern te gebruiken.
 feature: SPA Editor
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-4854
 thumbnail: 4854-spa-react.jpg
 topic: SPA
@@ -13,9 +10,10 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 657
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---

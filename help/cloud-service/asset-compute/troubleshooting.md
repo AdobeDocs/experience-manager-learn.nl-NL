@@ -2,20 +2,18 @@
 title: Problemen met uitbreidbaarheid van Asset compute voor AEM Assets oplossen
 description: Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de resoluties, die kunnen optreden bij het ontwikkelen en implementeren van aangepaste Asset compute-workers voor AEM Assets.
 feature: Asset Compute Microservices
-topics: renditions, metadata, development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 355
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1230'
 ht-degree: 0%
 
 ---

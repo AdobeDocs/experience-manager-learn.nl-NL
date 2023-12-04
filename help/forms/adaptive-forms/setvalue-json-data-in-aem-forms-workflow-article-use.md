@@ -1,5 +1,5 @@
 ---
-title: Waarde van Json-gegevenselement instellen in AEM Forms-workflow
+title: Waarde van Json-gegevenselement instellen in AEM Forms Workflow
 description: Aangezien een adaptief formulier naar verschillende gebruikers wordt gerouteerd in AEM workflow, zijn er vereisten voor het verbergen of uitschakelen van bepaalde velden of deelvensters afhankelijk van de persoon die het formulier controleert. Om aan deze gebruiksgevallen te voldoen, stellen wij typisch een waarde van een verborgen gebied in. Op basis van de waarde van dit verborgen veld kunnen bedrijfsregels worden ontworpen om de juiste deelvensters of velden te verbergen/uitschakelen.
 feature: Adaptive Forms
 version: 6.4
@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 167
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ In de bovenstaande schermafbeelding stellen we bijvoorbeeld de waarde van het el
 
 afData.afUnboundData.data.initialStep,N
 
-In ons voorbeeld hebben we een eenvoudig aanvraagformulier voor een time-off. De aanvrager van dit formulier vult zijn/haar naam en de datums in. Bij verzending gaat dit formulier naar &quot;manager&quot; voor revisie. Wanneer de manager het formulier opent, worden de velden in het eerste deelvenster uitgeschakeld. Dit omdat we de waarde van het element met de eerste stap in de JSON-gegevens hebben ingesteld op N.
+In ons voorbeeld hebben we een eenvoudig aanvraagformulier voor een time-off. De aanvrager van dit formulier vult zijn/haar naam en de datums in. Bij verzending gaat dit formulier naar &quot;manager&quot; voor revisie. Wanneer de manager het formulier opent, worden de velden in het eerste deelvenster uitgeschakeld. Dit omdat wij de waarde van het aanvankelijke stapelement in de gegevens JSON aan N hebben geplaatst.
 
 Op basis van de waarde van de velden voor de eerste stap tonen we in het venster met fiatteurs waar de &#39;manager&#39; het verzoek kan goedkeuren of afwijzen.
 
@@ -50,7 +51,7 @@ De elementen op uw lokale systeem implementeren:
 * Wijs uw browser aan [Forms en Documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op Maken | Bestand uploaden
 * Het bestand TimeOffRequestForm.zip uploaden
-   **Dit formulier is gemaakt met AEM Forms 6.4. Controleer of je op AEM Forms 6.4 of hoger bent**
+  **Dit formulier is gemaakt met AEM Forms 6.4. Controleer of je op AEM Forms 6.4 of hoger bent**
 * Open de [formulier](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Vul de begin- en einddatum in en verzend het formulier.
 * Ga naar [&quot;Inbox&quot;](http://localhost:4502/aem/inbox)
@@ -60,7 +61,7 @@ De elementen op uw lokale systeem implementeren:
 
 >[!NOTE]
 >
->Aangezien het adaptieve formulier al wordt ingevuld met een gebruikersprofiel, moet u ervoor zorgen dat de beheerder [gebruikersprofielgegevens ](http://localhost:4502/security/users.html). Zorg er minimaal voor dat u de veldwaarden FirstName, LastName en Email hebt ingesteld.
+>Aangezien het adaptieve formulier al wordt ingevuld met een gebruikersprofiel, moet u ervoor zorgen dat de beheerder [gebruikersprofielgegevens](http://localhost:4502/security/users.html). Zorg er minimaal voor dat u de veldwaarden FirstName, LastName en Email hebt ingesteld.
 >U kunt registratie van foutopsporing inschakelen door logger in te schakelen voor com.aemforms.setvalue.core.SetValueInJson [van hier](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]

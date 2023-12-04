@@ -7,16 +7,17 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 404c345b-efc3-44b9-bc38-6d911627ff5a
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+duration: 278
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
 # Aangepaste formuliersjabloon maken
 
-Elk adaptief formulier is gebaseerd op een adaptief formuliersjabloon. De sjabloon definieert de structuur, de eerste inhoud, het thema, enzovoort, en het aangepaste formulier neemt overerving over. U kunt een nieuwe adaptieve formuliersjabloon maken of de sjabloon uit het vak gebruiken wanneer u het aangepaste formulier maakt.
+Elk adaptief formulier is gebaseerd op een adaptief formulier. De sjabloon definieert de structuur, de eerste inhoud, het thema, enzovoort, en het aangepaste formulier neemt overerving over. U kunt een nieuwe adaptieve formuliersjabloon maken of de sjabloon uit het vak gebruiken wanneer u het aangepaste formulier maakt.
 Het sjabloon dat hier is gemaakt, vormt de basis voor ons adaptieve formulier.
 In de volgende video ziet u het basisproces voor het maken van een adaptieve formuliersjabloon
 

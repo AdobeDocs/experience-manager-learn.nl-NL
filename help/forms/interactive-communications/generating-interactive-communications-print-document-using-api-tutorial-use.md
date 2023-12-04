@@ -1,22 +1,18 @@
 ---
 title: Interactief communicatiedocument genereren voor afdrukkanaal met behulp van controlemap
-seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
 description: Gecontroleerde map gebruiken om kanaaldocumenten voor afdrukken te genereren
-seo-description: Use watched folder to generate print channel documents
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 161
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -43,21 +39,21 @@ Het bestand dat naar de gecontroleerde map is neergezet, heeft de volgende struc
 
 &lt;/accountnumbers>
 
-In de onderstaande code wordt het volgende gedaan:
+In de onderstaande code ziet u het volgende:
 
 Lijn 1 - Weg aan InteractiveCommunicationsDocument
 
-Lijnen 15-20: Hiermee wordt de lijst met accountnummers uit het XML-document opgehaald en in de controlemap geplaatst
+Regels 15-20: hiermee wordt de lijst met accountnummers uit het XML-document in de gecontroleerde map geplaatst
 
-Lijnen 24-25: Haal de PrintChannelService en het Kanaal van de Druk verbonden aan het document op.
+Lijnen 24 -25: krijg PrintChannelService en het Kanaal van de Druk verbonden aan het document.
 
-Regel 30: Geef het accountnummer als het sleutelelement door aan het formuliergegevensmodel.
+Regel 30: Geef het accountnummer als het sleutelelement door aan het Model van de Gegevens van het Vorm.
 
-Lijnen 32-36: Stel de gegevensopties in voor het document dat moet worden gegenereerd.
+Lijnen 32-36: plaats de Opties van Gegevens voor het Document dat moet worden geproduceerd.
 
 Regel 38: Render het document.
 
-Regels 39-40 - Hiermee slaat u het gegenereerde document op in het bestandssysteem.
+Lijnen 39-40 - Slaat het geproduceerde document aan het dossiersysteem op.
 
 Het REST-eindpunt van het Form Data Model verwacht een id als invoerparameter. deze id wordt in kaart gebracht aan een Attribuut van het Verzoek genoemd accountnummer zoals aangetoond in het hieronder schroevingsschot.
 
@@ -144,7 +140,7 @@ Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop he
 ```
 
 
-* Zet de accountnumbers.xml neer in de map C:\RenderPrintChannel\input folder.
+* Zet de accountnumbers.xml neer in de map C:\RenderPrintChannel\input.
 
 * De gegenereerde PDF-bestanden worden naar saveLocation geschreven, zoals in het ecma-script is opgegeven.
 

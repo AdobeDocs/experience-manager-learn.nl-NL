@@ -2,7 +2,6 @@
 title: Reader-extensies configureren in AEM Forms OSGi
 description: Voeg de credentie van de Uitbreidingen van de Reader aan de vertrouwensopslag in AEM Forms OSGi toe
 feature: Reader Extensions
-audience: developer
 type: Tutorial
 version: 6.4,6.5
 topic: Administration
@@ -10,7 +9,8 @@ role: Admin
 level: Beginner
 exl-id: 1f16acfd-e8fd-4b0d-85c4-ed860def6d02
 last-substantial-update: 2020-08-01T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 328
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De dienst DocAssurance kan gebruiksrechten toepassen op PDF documenten. Als u ge
 
 De referentie voor de lezerextensies is gekoppeld aan de gebruiker van de fd-service. Voer de volgende stappen uit om de referentie aan de gebruiker van de fd-service toe te voegen. Als u reeds keystore voor de fd-dienst gebruiker hebt gecreeerd sla deze sectie over
 
-* Aanmelden bij de instantie van AEM-auteur als beheerder
+* Aanmelden bij de AEM Author-instantie als beheerder
 * Ga naar Tools-Security-Users
 * Schuif omlaag in de lijst met gebruikers totdat u een gebruikersaccount voor fd-service vindt
 * Klik op de gebruiker van de fd-dienst

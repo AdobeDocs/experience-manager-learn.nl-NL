@@ -2,20 +2,18 @@
 title: Een Asset compute metagegevensworker ontwikkelen
 description: Leer hoe u een Asset compute-metagegevensworker maakt die de meest gebruikte kleuren in een afbeeldingselement afleidt en de namen van de kleuren in AEM terugschrijft naar de metagegevens van het element.
 feature: Asset Compute Microservices
-topics: metadata, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6448
 thumbnail: 327313.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 526
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---

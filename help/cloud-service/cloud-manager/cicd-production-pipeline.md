@@ -1,10 +1,7 @@
 ---
 title: Adobe Cloud Manager gebruiken - CI/CD Production Pipeline
 description: De productiepijpleiding CI/CD wordt gebruikt om code door Stadium aan het milieu van de Productie te bouwen en op te stellen, die tijd aan waarde verminderen. De configuratie van de Pijpleiding van de Productie CI/CD bepaalt de trekker die de pijpleiding, parameters zal in werking stellen die de plaatsing van de productie en de parameters van de prestatietest controleren.
-topics: Administration
-audience: administrator
 doc-type: feature video
-activity: use
 version: Cloud Service
 kt: 6872, 6875
 thumbnail: 26317.jpg
@@ -13,9 +10,10 @@ feature: Cloud Manager, CI-CD Pipeline
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+duration: 423
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---

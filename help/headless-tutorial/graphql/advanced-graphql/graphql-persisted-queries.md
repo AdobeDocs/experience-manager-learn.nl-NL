@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 6a8e90ae-0765-4066-9df4-a3e4d2cda285
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 253
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -162,7 +163,7 @@ In deze sectie, laten wij de vraag van GraphQL voortzetten die later in de clië
 
 ## Doorlopende query uitvoeren met variabelen door speciale tekens te coderen
 
-Laten we begrijpen hoe voortgezette query&#39;s met variabelen worden uitgevoerd door de toepassing op de client door de speciale tekens te coderen.
+Laten we begrijpen hoe voortgezette query&#39;s met variabelen worden uitgevoerd door de toepassing aan de clientzijde door de speciale tekens te coderen.
 
 Om een voortgezette vraag uit te voeren, doet de cliënttoepassing een verzoek van de GET gebruikend de volgende syntaxis:
 
@@ -180,7 +181,7 @@ De speciale tekens zoals puntkomma&#39;s (;), gelijkteken (=), slashes (/) en sp
 
 Door het `getAllAdventureDetailsBySlug` vraag van de bevel-lijn terminal, herzien wij deze concepten in actie.
 
-1. Open de GrahiQL Explorer en klik op de knop **ovalen** (...) naast de permanente query `getAllAdventureDetailsBySlug`en klik vervolgens op **URL kopiëren**. Plak gekopieerde URL in een tekstblok en ziet er als volgt uit:
+1. Open de GrahiQL Explorer en klik op **ovalen** (...) naast de permanente query `getAllAdventureDetailsBySlug`en klik vervolgens op **URL kopiëren**. Plak gekopieerde URL in een tekstblok en ziet er als volgt uit:
 
    ```code
        http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug;slug=
@@ -206,7 +207,7 @@ Door het `getAllAdventureDetailsBySlug` vraag van de bevel-lijn terminal, herzie
 
 >[!TIP]
 >
->    Als u de bovenstaande query uitvoert tegen de AEM-auteuromgeving, moet u de referenties verzenden. Zie [Toegangstoken lokale ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) ter demonstratie daarvan en [De AEM-API aanroepen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) voor meer informatie.
+>    Als het runnen van de bovengenoemde vraag tegen het milieu van de AEM Auteur, moet u de geloofsbrieven verzenden. Zie [Toegangstoken lokale ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) ter demonstratie daarvan en [De AEM-API aanroepen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) voor meer informatie.
 
 Ook, revisie [Hoe te om een Verlengde vraag uit te voeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Query-variabelen gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables), en [De URL van de query coderen voor gebruik door een app](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) om aanhoudende vraaguitvoering door cliënttoepassingen te leren.
 
@@ -216,11 +217,11 @@ Met de AEM GraphQL API kunt u de standaardparameters voor het beheren van cache 
 
 * 60 seconden is het gebrek (maxage=60) TTL voor de cliënt (bijvoorbeeld, browser)
 
-* 7200 seconden is het gebrek (s-maxage=7200) TTL voor de Verzender en CDN; ook bekend als gedeelde caches
+* 7200 seconden is het gebrek (s-maxage=7200) TTL voor de Verzender en CDN; ook gekend als gedeelde geheime voorgeheugens
 
 Gebruik de `adventures-all` vraag om de geheim voorgeheugen-controle parameters bij te werken. De vraagreactie is groot en het is nuttig om zijn te controleren `age` in de cache. Deze voortgezette query wordt later gebruikt om de [clienttoepassing](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md).
 
-1. Open de GrahiQL Explorer en klik op de knop **ovalen** (...) naast de permanente query klikt u op **Kopteksten** openen **Cacheconfiguratie** modal.
+1. Open de GrahiQL Explorer en klik op **ovalen** (...) naast de permanente query klikt u op **Kopteksten** openen **Cacheconfiguratie** modal.
 
    ![Optie GraphQL-koptekst behouden](assets/graphql-persisted-queries/persist-graphql-header-option.png)
 

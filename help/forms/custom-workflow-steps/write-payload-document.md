@@ -9,7 +9,8 @@ level: Beginner
 kt: kt-9859
 exl-id: bab7c403-ba42-4a91-8c86-90b43ca6026c
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 43
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 Het is gebruikelijk dat de gegenereerde documenten in de workflow naar het bestandssysteem worden geschreven.
 Deze stap van het douanewerkschemaproces maakt het gemakkelijk om de werkschemadocumenten aan dossiersysteem te schrijven.
-Voor het aangepaste proces worden de volgende door komma&#39;s gescheiden argumenten gebruikt
+Het aangepaste proces heeft de volgende door komma&#39;s gescheiden argumenten
 
 ```java
 ChangeBeneficiary.pdf,c:\confirmation
@@ -31,4 +32,4 @@ Het eerste argument is de naam van het document dat u wilt opslaan in het bestan
 Het volgende het schermschot toont u de argumenten die u tot de stap van het douaneproces moet overgaan
 ![write-payload-file-system](assets/write-payload-file-system.png)
 
-[Aangepaste bundel kan hier worden gedownload](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
+[U kunt hier aangepaste bundel downloaden](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)

@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+duration: 88
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ Een server is een klasse die wordt gebruikt om de mogelijkheden van servers uit 
 Alle servlets moeten de interface uitvoeren Servlet, die levenscyclusmethodes bepaalt.
 
 
-Een servlet in AEM kan als dienst OSGi worden geregistreerd: u kunt SlingSafeMethodsServlet voor read-only implementatie of SlingAllMethodsServlet uitbreiden om alle verrichtingen uit te voeren RESTful.
+Een servlet in AEM kan als dienst worden geregistreerd OSGi: u kunt SlingSafeMethodsServlet voor read-only implementatie of SlingAllMethodsServlet uitbreiden om alle verrichtingen uit te voeren RESTful.
 
 ## Servlet-code
 
@@ -75,7 +76,7 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 Voer de volgende stappen uit om uw project te maken:
 
 * Openen **opdrachtpromptvenster**
-* Ga naar `c:\aemformsbundles\mysite\core`
+* Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
 * Het bovenstaande bevel bouwt automatisch de bundel aan uw AEM instantie die op localhost loopt op en stelt op:4502
 
@@ -84,7 +85,7 @@ De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\c
 
 ## Servlet Resolver testen
 
-Wijs uw browser aan [servlet resolver-URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Dit vertelt u servlet die voor een bepaalde weg zoals gezien in het hieronder ontsproten scherm wordt aangehaald
+Wijs uw browser aan [servlet resolver URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Dit vertelt u servlet die voor een bepaalde weg zoals gezien in het hieronder ontsproten scherm wordt aangehaald
 ![servlet-resolver](assets/servlet-resolver.JPG)
 
 ## Serlet testen met Postman

@@ -7,9 +7,10 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 873d8e69-5a05-44ac-8dae-bba21f82b823
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 236
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Hoofdstuk 5 van de AEM zelfstudie zonder koptekst behandelt het maken van de pag
 
 ## De API-pagina voor gebeurtenissen maken
 
-1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**.
+1. Navigeren naar **[!UICONTROL AEM]> [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**.
 1. **Tik op het label op de API-pagina** Tik vervolgens op de knop **Maken** in de bovenste actiebalk en maak een nieuwe API voor gebeurtenissen onder de API-pagina.
    1. Tikken **Maken** in de bovenste actiebalk
    1. Selecteren **API voor gebeurtenissen** template

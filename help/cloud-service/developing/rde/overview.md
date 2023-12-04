@@ -10,9 +10,10 @@ jira: KT-11860
 thumbnail: KT-11860.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 8fc6d0ef-8753-480b-a504-e7943de8883c
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 113
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 Leer over Snelle Ontwikkelomgeving (RDE) in AEM as a Cloud Service.
 
-Dit videooverzicht:
+Deze videoomtrek:
 
 - Wat zijn RDEs?
 - Hoe helpen ze bij een snellere ontwikkeling tot implementatiecycli?

@@ -1,15 +1,15 @@
 ---
 title: Uw AEM Sites-ontwikkelingsbeoordeling
 description: Deze controlelijst biedt een overzicht van de belangrijkste vragen die u en uw team moeten beantwoorden wanneer ze de rijpheid van uw AEM Sites-exemplaar evalueren
-audience: author, marketer, developer
 role: Admin
 level: Intermediate
 topic: Administration
 feature: Learn From Your Peers
 exl-id: 22164a0e-7239-43f4-8356-c12f68133255
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,8 @@ Zie de volgende bronnen voor beste praktijken voor het beheren, ontwikkelen of o
 
 Elk van deze beste praktijkgebieden hierboven omvat ook verdere beste praktijken in creatie, het ontwikkelen en het opstellen van AEM.
 
-In de meeste gevallen zal de beoordeling van de AEM rijpheid helpen bij het uitvoeren van een diagnostische evaluatie van AEM beste praktijken en resulteren in een routekaart voor het proactief ontdekken, oplossen en voorkomen van potentiële problemen. Aanbevolen wordt dat de beoordelingen worden uitgevoerd met de teams die ook deel uitmaakten van de fase van AEM implementatie-detectie (AEM migratie). De volgende taken zouden daarbij moeten worden betrokken: Eigenaars van toepassingen, eigenaren van sites, ontwikkelingsteams, technische leiders, beveiligings-/infrastructuurteams, SEO-teams en ondersteuningsteams (bijvoorbeeld auteurs van inhoud, beheerders).
+In de meeste gevallen zal de beoordeling van de AEM rijpheid helpen bij het uitvoeren van een diagnostische evaluatie van AEM beste praktijken en resulteren in een routekaart voor het proactief ontdekken, oplossen en voorkomen van potentiële problemen. Aanbevolen wordt dat de beoordelingen worden uitgevoerd met de teams die ook deel uitmaakten van de fase van AEM implementatie-detectie (AEM migratie). De volgende taken moeten daarbij worden betrokken: eigenaars van toepassingen, eigenaars van sites, ontwikkelingsteams, technische leiders, beveiligings-/infrastructuurteams, SEO-teams en ondersteuningsteams (bijvoorbeeld auteurs van inhoud, beheerders).
 
-Aanbevolen AEM aandachtsgebieden voor looptijdbeoordeling: Ontwerp en architectuur, productbeheer en -strategie, beheer en levering van digitale bedrijfsmiddelen, analyse, tests en beveiliging.
+Aanbevolen AEM aandachtsgebieden voor de beoordeling van de rijpheid: ontwerp en architectuur, productbeheer en -strategie, beheer en levering van digitale bedrijfsmiddelen, analyse, tests en beveiliging.
 
 AEM Champion Greg Dimeris vraagt zich enorm uit om deze informatie uit meerdere artikelen in de Experience League samen te voegen, evenals zijn eigen beste praktijken!

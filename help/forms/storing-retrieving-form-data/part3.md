@@ -1,6 +1,6 @@
 ---
 title: Formuliergegevens opslaan en ophalen vanuit MySQL-database
-description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens
+description: Zelfstudie met meerdere onderdelen om door de stappen te bladeren die nodig zijn voor het opslaan en ophalen van formuliergegevens
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -8,7 +8,8 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 9cce47e7-07b4-43c3-8746-197620855c3f
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+duration: 135
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 0%

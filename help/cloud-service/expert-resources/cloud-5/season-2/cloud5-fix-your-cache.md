@@ -1,5 +1,5 @@
 ---
-title: Wolk 5 - Uw problemen oplossen.. Cache
+title: Wolk 5 - Uw problemen verhelpen.. Cache
 description: Enkele eenvoudige tips voor het optimaliseren van de cache en het versnellen van uw site
 version: Cloud Service
 role: Admin, Developer
@@ -8,14 +8,15 @@ thumbnail: 343475.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 591ed430-80b3-49fa-b52f-0d07a2e5ac0e
-source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
+duration: 323
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '61'
 ht-degree: 0%
 
 ---
 
-# Wolk 5 - Uw problemen oplossen.. Cache
+# Wolk 5 - Uw problemen verhelpen.. Cache
 
 In een tweedelige seizoen, twee reeksen, verkennen we enkele dingen die je kunt bekijken die het in cache plaatsen van AEM as a Cloud Service versnellen.
 

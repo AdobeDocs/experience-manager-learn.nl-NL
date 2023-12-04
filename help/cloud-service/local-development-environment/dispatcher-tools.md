@@ -10,10 +10,11 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 765
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 1%
+source-wordcount: '1622'
+ht-degree: 0%
 
 ---
 
@@ -234,9 +235,9 @@ Logboeken van Dispatcher Tools worden uitgestraald naar de standaard wanneer `do
 Nuttige parameters voor het zuiveren Dispatcher omvatten:
 
 + `DISP_LOG_LEVEL=Debug` Hiermee stelt u de logboekregistratie van de module Dispatcher in op het niveau Foutopsporing
-   + De standaardwaarde is: `Warn`
+   + Standaardwaarde is: `Warn`
 + `REWRITE_LOG_LEVEL=Debug` stelt Apache HTTP Web server herwrite module logging to Debug level in
-   + De standaardwaarde is: `Warn`
+   + Standaardwaarde is: `Warn`
 + `DISP_RUN_MODE` Hiermee stelt u de &quot;uitvoeringsmodus&quot; van de Dispatcher-omgeving in en laadt u de bijbehorende uitvoermodi Dispatcher-configuratiebestanden.
    + Standaardwaarden: `dev`
 + Geldige waarden: `dev`, `stage`, of `prod`

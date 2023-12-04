@@ -9,9 +9,10 @@ level: Intermediate
 jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 229
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -68,14 +69,14 @@ De `JWT_PRIVATE_KEY` moet speciaal zijn opgemaakt omdat het een native waarde va
 
 >[!TAB macOS]
 
-1. Open `Terminal`
+1. Openen `Terminal`
 1. De opdracht uitvoeren `base64 -i /path/to/private.key | pbcopy`
 1. De base64-uitvoer wordt automatisch gekopieerd naar het klembord
 1. Plakken in `.env` als waarde voor corresponderende sleutel
 
 >[!TAB Windows]
 
-1. Open `Command Prompt`
+1. Openen `Command Prompt`
 1. De opdracht uitvoeren `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
 1. De opdracht uitvoeren `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
 1. De base64-uitvoer naar het klembord kopiëren

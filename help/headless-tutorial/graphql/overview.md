@@ -8,9 +8,10 @@ level: Beginner
 exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
 thumbnail: 328618.jpg
 last-substantial-update: 2022-07-20T00:00:00Z
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+duration: 654
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -55,6 +56,6 @@ Ontdek AEM GraphQL-mogelijkheden door een React-app te ontwikkelen die contentfr
 |                                | GraphQL API&#39;s AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | Schema-definitie | Modellen voor structuurinhoudsfragmenten | AEM componenten |
-| Inhoud | Contentfragmenten | AEM componenten |
+| Inhoud | Inhoudsfragmenten | AEM componenten |
 | Inhoud detecteren | Op GraphQL-query | Op AEM pagina |
 | Afleveringsformaat | GraphQL JSON | AEM ComponentExporter JSON |

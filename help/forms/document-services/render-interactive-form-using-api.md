@@ -8,9 +8,10 @@ role: Developer
 level: Intermediate
 exl-id: 9b2ef4c9-8360-480d-9165-f56a959635fb
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 106
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -41,13 +42,13 @@ interactivePDF = formsService.renderPDFForm("schengen.xdp", xmlData, renderOptio
 return interactivePDF;
 ```
 
-Regel 1: Locatie van de map die de xdp-sjabloon bevat
+Regel 1: Plaats van de omslag die het xdp malplaatje bevat
 
-Lijn 2-4: PDFFormRenderOptions maken en de eigenschappen ervan instellen
+Regel 2-4: Maak PDFFormRenderOptions en stel de eigenschappen ervan in
 
-Regel 7: Interactieve PDF genereren met behulp van de renderPDFForm-servicebewerking van FormsService
+Lijn 7: produceer Interactieve PDF gebruikend de renderPDFForm dienstverrichting van FormsService
 
-Regel 11: Hiermee wordt de gegenereerde interactieve PDF naar de opvragende toepassing geretourneerd
+Regel 11: Keert geproduceerde interactieve pdf aan de roepende toepassing terug
 
 **De monsterverpakking op uw systeem testen**
 1. [DevelopingWithServiceUserBundle downloaden en installeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
@@ -55,7 +56,7 @@ Regel 11: Hiermee wordt de gegenereerde interactieve PDF naar de opvragende toep
 1. [Download en installeer het pakket met AEM pakketbeheer](assets/downloadinteractivepdffrommobileform.zip)
 
 1. [Aanmelden bij configMgr](http://localhost:4502/system/console/configMgr)
-1. Zoeken naar Adobe Granite CSRF-filter
+1. Zoeken naar graniet-CSRF-filter voor Adobe
 1. Het volgende pad toevoegen aan de uitgesloten secties en opslaan
 1. /bin/generateinteractivepdf
 1. Zoeken naar _Apache Sling Service User Mapper Service_ en klik om de eigenschappen te openen
@@ -63,7 +64,7 @@ Regel 11: Hiermee wordt de gegenereerde interactieve PDF naar de opvragende toep
       * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
    1. Klik op Opslaan &#39;
 1. [Het mobiele formulier openen](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Vul een paar gebieden in en klik dan ***Downloaden en vullen....*** knop
+1. Vul een paar gebieden in en klik dan ***Downloaden en vullen...*** knop
 1. De interactieve pdf moet naar uw lokale systeem worden gedownload
 
 

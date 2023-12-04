@@ -7,9 +7,10 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: dfbf316f-3922-4bc7-b3f3-2a5bbdeb7063
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1587
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '6118'
+source-wordcount: '6032'
 ht-degree: 0%
 
 ---
@@ -112,8 +113,8 @@ Voordat we aan de slag gaan, bespreken we enkele termen waarmee u vertrouwd moet
 
 - **Hoogte-breedteverhouding weergeven.** Verhouding van de breedte van een video tot de hoogte van een video. Wanneer de hoogte-breedteverhouding van de video niet overeenkomt met de verhouding van de speler, ziet u mogelijk zwarte balken of lege ruimte. De volgende twee veelvoorkomende hoogte-breedteverhoudingen worden gebruikt voor het weergeven van video:
 
-   - 4:3 (1.33:1). Deze indeling wordt gebruikt voor bijna alle tv-inhoud met standaarddefinitie.
-   - 16:9 (1.78:1). Deze indeling wordt gebruikt voor vrijwel alle HDTV-inhoud (High-Definition TV) en films voor een groot scherm.
+   - 4:3 (1,33:1). Deze indeling wordt gebruikt voor bijna alle tv-inhoud met standaarddefinitie.
+   - 16:9 (1,78:1). Deze indeling wordt gebruikt voor vrijwel alle HDTV-inhoud (High-Definition TV) en films voor een groot scherm.
 
 - **Bitsnelheid/gegevenssnelheid.** De hoeveelheid gegevens die wordt gecodeerd om één seconde video af te spelen (in kilobits per seconde).
 

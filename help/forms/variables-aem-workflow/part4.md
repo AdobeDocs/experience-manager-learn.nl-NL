@@ -7,9 +7,10 @@ feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+duration: 139
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 Variabelen van het type ArrayList zijn geïntroduceerd in AEM Forms 6.5. Een gemeenschappelijk gebruiksgeval voor het gebruiken van variabele ArrayList moet douaneroutes bepalen die in AssignTask moeten worden gebruikt.
 
-Als u de variabele ArrayList in een AEM workflow wilt gebruiken, moet u een adaptief formulier maken dat herhalende elementen in de verzonden gegevens genereert. Een veel voorkomende praktijk is het definiëren van een schema dat een arrayelement bevat. In het kader van dit artikel heb ik een eenvoudig JSON-schema met arrayelementen gemaakt. Het gebruiksgeval is van een werknemer die een uitgavenrapport invult. In het onkostenrapport leggen we de naam van de manager en de manager van de verzender vast. De namen van de manager worden opgeslagen in een serie genoemd managerchain. In de onderstaande screenshot ziet u het formulier met het onkostenrapport en de gegevens van de Adaptive Forms-verzending.
+Als u de variabele ArrayList in een AEM workflow wilt gebruiken, moet u een adaptief formulier maken dat herhalende elementen in de verzonden gegevens genereert. Een veel voorkomende praktijk is het definiëren van een schema dat een arrayelement bevat. In het kader van dit artikel heb ik een eenvoudig JSON-schema met arrayelementen gemaakt. Het gebruiksgeval is van een werknemer die een uitgavenrapport invult. In het onkostenrapport leggen we de naam van de manager van de verzender en de naam van de manager vast. De namen van de manager worden opgeslagen in een serie genoemd managerchain. In de onderstaande screenshot ziet u het formulier met het onkostenrapport en de gegevens van de Adaptive Forms-verzending.
 
 ![expensereport](assets/expensereport.jpg)
 
@@ -63,7 +64,7 @@ Hieronder volgt een overzicht van de gegevens uit het aangepaste formulier dat w
 }
 ```
 
-Als u de ArrayList-variabele van een subtype-tekenreeks wilt initialiseren, kunt u de JSON-puntnotatie of de XPath-toewijzingsmodus gebruiken. In de volgende schermafbeelding ziet u hoe u een variabele ArrayList met de naam CustomRoutes vult met behulp van de JSON-puntnotatie. Zorg ervoor dat u naar een element in een matrixobject wijst, zoals in de onderstaande schermafbeelding wordt getoond. Wij bevolken CustomRoutes ArrayList met de namen van het managerchain serievoorwerp.
+Als u de ArrayList-variabele van een subtype-tekenreeks wilt initialiseren, kunt u de JSON-puntnotatie of de XPath-toewijzingsmodus gebruiken. In de volgende schermafbeelding ziet u hoe u een variabele ArrayList met de naam CustomRoutes vult met de JSON-puntnotatie. Zorg ervoor dat u naar een element in een matrixobject wijst, zoals in de onderstaande schermafbeelding wordt getoond. Wij bevolken CustomRoutes ArrayList met de namen van het managerchain serievoorwerp.
 CustomRoutes ArrayList wordt dan gebruikt om de Routes in de component AssignTask te bevolken
 ![klantroutes](assets/arraylist.jpg)
 Zodra de variabele CustomRoutes ArrayList met de waarden van de voorgelegde gegevens wordt geïnitialiseerd, worden de Routes van de component AssignTask dan bevolkt gebruikend de variabele CustomRoutes. Het schermafbeelding hieronder toont u de aangepaste routes in een AssignTask
@@ -80,4 +81,4 @@ Voer de volgende stappen uit om deze workflow op uw systeem te testen
 * U zou een nieuwe taak moeten zien getiteld &quot;toewijzen aan uitgavenbeheerder&quot;
 * Het formulier openen dat is gekoppeld aan de taak
 * U zou twee douanerouten met de managernamen moeten zien
-  [Ontdek de ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Deze workflow gebruikt de variabele ArrayList, het JSON-type variabele, de regeleditor in of-gesplitst component
+  [Ontdek de ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Deze workflow gebruikt de variabele ArrayList, variabele van het JSON-type, regeleditor in of-gesplitst component

@@ -2,7 +2,6 @@
 title: Paginaverschil gebruiken met AEM Sites
 description: De mogelijkheden van AEM Sites voor het wijzigen van pagina's geven een snelle, kleurgecodeerde weergave van de inhoud die in een pagina is gewijzigd (versie, live kopie, lanceringen, taalkopie).
 version: 6.4, 6.5
-uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
 jira: KT-4633
 thumbnail: 32152.jpg
 topic: Content Management
@@ -11,10 +10,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 518
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 1%
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 

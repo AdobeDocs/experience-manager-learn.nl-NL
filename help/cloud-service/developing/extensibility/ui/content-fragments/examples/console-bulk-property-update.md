@@ -11,9 +11,10 @@ thumbnail: KT-11604.png
 doc-type: article
 last-substantial-update: 2022-12-09T00:00:00Z
 exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+duration: 1550
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ In het voorbeeld wordt een bestaand Adobe Developer Console-project gebruikt en 
 
 + Welke sjablonen wilt u zoeken?: `All Extension Points`
 + Kies de sjabloon die u wilt installeren:` @adobe/aem-cf-admin-ui-ext-tpl`
-+ Wat wilt u de extensie een naam geven?: `Bulk property update`
++ Wat wilt u de extensie een naam geven? `Bulk property update`
 + Geef een korte beschrijving van uw extensie op: `An example action bar extension that bulk updates a single property one or more content fragments.`
 + Met welke versie wilt u beginnen?: `0.0.1`
 + Wat wilt u nu doen?
@@ -146,8 +147,8 @@ Elke route van de uitbreiding, zoals bepaald in [`App.js`](#app-routes), wordt t
 
 In deze voorbeeld-app is er een modale React-component (`BulkPropertyUpdateModal.js`) dat drie staten heeft:
 
-1. Laden, wat aangeeft dat de gebruiker moet wachten
-1. Het formulier voor updates van eigenschappen met opsommingstekens waarmee de gebruiker de naam en de waarde van de eigenschap kan opgeven om bij te werken
+1. Laden. De gebruiker moet wachten
+1. Het formulier voor updates van eigenschappen met opsommingstekens waarmee de gebruiker de naam en de waarde van de eigenschap kan opgeven voor bijwerken
 1. De reactie van de bulkeigenschapsupdate-bewerking, waarin de inhoudsfragmenten worden vermeld die zijn bijgewerkt en de fragmenten die niet konden worden bijgewerkt
 
 Belangrijk is dat elke interactie met AEM van de extensie wordt gedelegeerd aan een [Handeling AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), dat een afzonderlijk serverloos proces is dat wordt uitgevoerd in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
@@ -415,7 +416,7 @@ export default function BulkPropertyUpdateModal() {
 ### Adobe I/O Runtime-actie
 
 Een AEM extensie App Builder-app kan 0 of veel Adobe I/O Runtime-acties definiëren of gebruiken.
-Adobe Runtime acties zouden verantwoordelijk werk moeten zijn dat interactie met AEM, of andere de Webdiensten van Adobe vereist.
+De acties van de Adobe Runtime zouden verantwoordelijk werk moeten zijn dat interactie met AEM, of andere de Webdiensten van de Adobe vereist.
 
 In deze voorbeeldapp is de Adobe I/O Runtime-actie - die de standaardnaam gebruikt `generic` - is verantwoordelijk voor:
 

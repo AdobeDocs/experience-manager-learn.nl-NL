@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 121
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -116,11 +117,10 @@ Om deze functie te laten werken op uw AEM
 >
 >Zorg ervoor u hebt toegevoegd - de bibliotheken van RSA en BouncyCastle van de Vraag zoals vermeld in dit [AEM Forms installeren](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
->**Voorzorgsmaatregelen voor deze demo**
+>**Voorschriften voor deze demo**
 >
 > * De code verwerkt geen op XFA gebaseerde PDF-documenten
 >
 > * Alleen PDF-bestanden slepen en neerzetten
 >
 >
-

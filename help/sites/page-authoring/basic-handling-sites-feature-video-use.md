@@ -10,10 +10,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 310
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 4%
+source-wordcount: '320'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +35,7 @@ In deze video worden de volgende mogelijkheden of functies behandeld:
      | Console | Doel |
      |---|---|
      | Assets | Met deze consoles kunt u digitale elementen importeren en beheren, zoals afbeeldingen, video&#39;s, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd | Gemeenschappen | Met deze console kunt u gemeenschapssites maken en beheren voor betrokkenheid en activering | Handel | Op deze manier kunt u producten, productcatalogi en bestellingen beheren die betrekking hebben op uw handelsites |
-     | Ervaringsfragmenten | Een ervaringsfragment is een stand-alone ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan bevatten, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard |
+     | Ervaar fragmenten | Een ervaringsfragment is een stand-alone ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan bevatten, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard |
      | Forms | Met deze console kunt u formulieren en documenten maken, beheren en verwerken |
      | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor het ontwerpen van gerichte inhoud en het presenteren van gepersonaliseerde ervaringen |
      | Projecten | De console van Projecten geeft u directe toegang tot uw projecten. Projecten zijn virtuele dashboards. Zij kunnen worden gebruikt om een team te bouwen, dan dat teamtoegang tot middelen, werkschema&#39;s en taken te geven, die mensen toestaan om aan een gemeenschappelijk doel te werken |

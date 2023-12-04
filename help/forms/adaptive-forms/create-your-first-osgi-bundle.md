@@ -2,18 +2,16 @@
 title: Uw eerste OSGi-bundel maken met AEM formulieren
 description: Bouw uw eerste bundel OSGi gebruikend maven en eclipse
 feature: Adaptive Forms
-topics: development
-audience: developer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 240
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
@@ -26,7 +24,7 @@ Een bundel OSGi is een Java™ archiefdossier dat code Java, middelen, en manife
 
 ## JDK installeren
 
-Installeer de ondersteunde versie van JDK. Ik heb JDK1.8 gebruikt. Zorg ervoor dat u hebt toegevoegd **JAVA_HOME** in uw omgevingsvariabelen en verwijst naar de hoofdmap van uw JDK-installatie.
+De ondersteunde versie van JDK installeren. Ik heb JDK1.8 gebruikt. Zorg ervoor dat u hebt toegevoegd **JAVA_HOME** in uw milieuvariabelen en wijst naar de wortelomslag van uw installatie JDK.
 De %JAVA_HOME%/bin toevoegen aan het pad
 
 ![gegevensbron](assets/java-home.JPG)
@@ -36,7 +34,7 @@ De %JAVA_HOME%/bin toevoegen aan het pad
 
 ### Uw JDK-versie testen
 
-Open een nieuw opdrachtpromptvenster en typ: `java -version`. U moet de JDK-versie die door de `JAVA_HOME` variabele
+Open een nieuw opdrachtpromptvenster en typ: `java -version`. U moet de JDK-versie die door de `JAVA_HOME` variabel
 
 ![gegevensbron](assets/java-version.JPG)
 
@@ -61,13 +59,13 @@ A Maven `settings.xml` In dit bestand worden waarden gedefinieerd die de uitvoer
 Navigeren naar `C:\Users\<username>\.m2 folder`
 De inhoud van [settings.zip](assets/settings.zip) en plaatst deze in het `.m2` map.
 
-## Verduistering installeren
+## Eclipse installeren
 
 De nieuwste versie van [verduisteren](https://www.eclipse.org/downloads/)
 
 ## Uw eerste project maken
 
-Archetype is een Maven project sjabloonkit. Een archetype wordt gedefinieerd als een origineel patroon of model waaruit alle andere dingen van dezelfde soort zijn gemaakt. De naam past bij de manier waarop we proberen een systeem te bieden dat een consistente manier biedt om Maven-projecten te genereren. Archetype helpt auteurs Maven projectmalplaatjes voor gebruikers, en voorziet gebruikers van de middelen om geparameterized versies van die projectmalplaatjes te produceren.
+Archetype is een Maven project sjabloonkit. Een archetype wordt gedefinieerd als een origineel patroon of model waaruit alle andere dingen van dezelfde soort zijn gemaakt. De naam past bij de manier waarop we proberen een systeem te bieden dat een consistente manier biedt om Maven-projecten te genereren. Archetype helpt auteurs Maven projectmalplaatjes voor gebruikers tot stand brengen, en voorziet gebruikers van de middelen om geparameterized versies van die projectmalplaatjes te produceren.
 Voer de volgende stappen uit om uw eerste gemaakte project te maken:
 
 * Een nieuwe map maken met de naam `aemformsbundles` in uw C-station
@@ -81,11 +79,11 @@ Het Maven project wordt op interactieve wijze geproduceerd en u wordt gevraagd o
 |------------------------|---------------------------------------|---------------------|
 | groupId | groupId identificeert uniek uw project over alle projecten | com.learningaemforms.adobe |
 | appsFolderName | Naam van de map die de projectstructuur bevat | leervormen |
-| artifactId | artifactId is de naam van de pot zonder versie. Als u het creeerde, dan kunt u kiezen welke naam u met kleine letters en geen vreemde symbolen wilt. | leervormen |
-| versie | Als u het verspreidt, kunt u elke typische versie kiezen met nummers en punten (1.0, 1.1, 1.0.1, ...). | 1.0 |
+| artefactId | artifactId is de naam van de pot zonder versie. Als u het creeerde, dan kunt u kiezen welke naam u met kleine letters en geen vreemde symbolen wilt. | leervormen |
+| versie | Als u het verspreidt, kunt u elke typische versie kiezen met nummers en punten (1.0, 1.1, 1.0.1, ...). | 1,0 |
 
 Accepteer de standaardwaarden voor de andere eigenschappen door op Enter te drukken.
-Als alles goed gaat zou u een bericht van het bouwstijlsucces in uw bevelvenster moeten zien
+Als alles goed gaat zou u een bouwstijlsuccesbericht in uw bevelvenster moeten zien
 
 ## Overschrijvingsproject maken van uw in kaart gebrachte project
 
@@ -100,9 +98,9 @@ Ga naar **Bestand -> Importeren** en selecteert u **Bestaande Maven Projecten** 
 
 ![gegevensbron](assets/import-mvn-project.JPG)
 
-Klik op Next
+Klik op Volgende
 
-Selecteer `c:\aemformsbundles\learningaemform`s door op de knop **Bladeren** knop
+Selecteer de `c:\aemformsbundles\learningaemform`s door op de knop **Bladeren** knop
 
 ![gegevensbron](assets/select-mvn-project.JPG)
 
@@ -132,6 +130,6 @@ Zodra u uw dienst OSGi, of servlet hebt geschreven, moet u uw project bouwen om 
 Voer de volgende stappen uit om uw project te maken:
 
 * Openen **opdrachtpromptvenster**
-* Ga naar `c:\aemformsbundles\learningaemforms\core`
+* Navigeren naar `c:\aemformsbundles\learningaemforms\core`
 * De opdracht uitvoeren `mvn clean install`
 Als alles goed gaat, moet u de bundel op de volgende locatie zien `C:\AEMFormsBundles\learningaemforms\core\target`. Deze bundel kan nu worden geïmplementeerd in AEM met de Felix-webconsole.

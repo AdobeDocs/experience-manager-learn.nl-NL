@@ -1,14 +1,8 @@
 ---
 title: Adaptief formulier verzenden naar externe server
-seo-title: Submitting Adaptive Form to External Server
 description: Aangepast formulier verzenden naar REST-eindpunt dat wordt uitgevoerd op externe server
-seo-description: Submitting Adaptive Form to REST endpoint running on external server
-uuid: 1a46e206-6188-4096-816a-d59e9fb43263
 feature: Adaptive Forms
-topics: developing
-audience: implementer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 discoiquuid: 9e936885-4e10-4c05-b572-b8da56fcac73
 topic: Development
@@ -16,9 +10,10 @@ role: Developer
 level: Beginner
 exl-id: 5363c3f7-9006-4430-b647-f3283a366a64
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 109
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -61,7 +56,7 @@ Ga als volgt te werk om dit op uw server te testen
 1. Installeer Tomcat als u dit nog niet hebt. [Hier zijn instructies voor het installeren van tomcat beschikbaar](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
 1. Download de [zip-bestand](assets/aemformsenablement.zip) aan dit artikel zijn gekoppeld. Pak het bestand uit om het oorlogsbestand op te halen.
 1. Implementeer het oorlogsbestand in uw tomcat-server.
-1. Maak een eenvoudig adaptief formulier met de component Bestandsbijlage en configureer de verzendactie zoals in de bovenstaande schermafbeelding wordt getoond. De POST-URL is <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Als uw AEM en tomcat niet worden uitgevoerd op localhost, wijzigt u de URL dienovereenkomstig.
+1. Maak een eenvoudig adaptief formulier met de component Bestandsbijlage en configureer de verzendactie zoals in de bovenstaande schermafbeelding wordt getoond. De POST-URL is <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Wijzig de URL als uw AEM en tomcat niet worden uitgevoerd op localhost.
 1. Als u het verzenden van formuliergegevens met meerdere delen naar Tomcat wilt inschakelen, voegt u het volgende kenmerk toe aan het contextelement van het dialoogvenster &lt;tomcatinstalldir>\conf\context.xml en start de Tomcat-server opnieuw op.
 1. **&lt;Context allowCasualMultipartParsing=&quot;true&quot;>**
 1. Geef een voorbeeld van het adaptieve formulier weer, voeg een bijlage toe en verzend deze. Controleer het venster van de tomcat console voor berichten.

@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 226
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Vanaf AEM Forms 6.4 kunnen we nu het formuliergegevensmodel gebruiken als onderd
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen
 * [De setvalue-bundel downloaden en implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee eigenschappen van metagegevens worden ingesteld.
->!![NOTE]In AEM Forms 6.5 en hoger is deze mogelijkheid beschikbaar vanuit de verpakking als [hier beschrijven](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+>In AEM Forms 6.5 en hoger is deze mogelijkheid beschikbaar vanuit de verpakking als [hier beschrijven](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
 * Setup tomcat met SampleRest.war-bestand zoals beschreven [hier](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).Het oorlogsdossier dat in Tomcat wordt opgesteld heeft de code om de kredietscore van de aanvrager terug te geven. De creditscore is een willekeurig getal tussen 200 en 800
 

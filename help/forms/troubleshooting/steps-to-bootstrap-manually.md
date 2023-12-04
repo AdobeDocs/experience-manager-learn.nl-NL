@@ -8,14 +8,15 @@ version: 6.5
 topic: Administration
 index: y
 exl-id: a6f62d9e-0263-4843-8521-93e8c3c5be5b
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 58
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%
 
 ---
 
-# Stappen om handmatig op te starten als de database niet wordt geïnitialiseerd
+# Stappen om handmatig op te starten als de database niet werkt
 
 *Deze video doorloopt het proces om manueel te bootstrap als het gegevensbestand initialiseert niet werkt.*
 

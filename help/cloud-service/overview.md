@@ -5,10 +5,11 @@ sub-product: Experience Manager as a Cloud Service
 jira: KT-3289
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 498
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 4%
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +17,13 @@ ht-degree: 4%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager (AEM) is nu beschikbaar as a Cloud Service. AEM as a Cloud Service introduceert de volgende generatie van de productlijn van de Experience Manager, voortbouwend op vroegere investeringen en innovaties, het bewaren en uitbreiden van alle gebruiksgevallen en -functies.
+Adobe Experience Manager (AEM) is nu as a Cloud Service beschikbaar. AEM as a Cloud Service introduceert de volgende generatie van de productlijn van de Experience Manager, voortbouwend op vroegere investeringen en innovaties, het bewaren en uitbreiden van alle gebruiksgevallen en -functies.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
 
 <div id="whats-new-section">
 
-## Wat is er nieuw
+## Nieuwe functies
 
 * **[Websites beschermen met verkeersfilterregels, waaronder WAF-regels (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)**
   *Leer hoe te om de regels van de verkeersfilter met inbegrip van de regels van WAF te gebruiken om websites te beschermen*

@@ -11,9 +11,10 @@ thumbnail: KT-11649.png
 doc-type: article
 last-substantial-update: 2023-01-04T00:00:00Z
 exl-id: f3047f1d-1c46-4aee-9262-7aab35e9c4cb
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+duration: 1773
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1289'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ De functionele stroom van de voorbeeldextensie is als volgt:
 1. De gebruiker die het formulier verzendt, verzendt het formulier `Image Description` tekst, het geselecteerde inhoudsfragment en de AEM host naar de [aangepaste Adobe I/O Runtime-actie](#adobe-io-runtime-action).
 1. De [Adobe I/O Runtime-actie](#adobe-io-runtime-action) valideert de invoer.
 1. Vervolgens worden de OpenAI&#39;s [Afbeelding genereren](https://beta.openai.com/docs/guides/images/image-generation-beta) API en gebruikt `Image Description` tekst om aan te geven welke afbeelding moet worden gegenereerd.
-1. De [image genereren](https://beta.openai.com/docs/guides/images/image-generation-beta) eindpunt leidt tot een origineel beeld van grootte _1024x1024_ pixels die de parameterwaarde van de prompt request gebruiken en retourneert de gegenereerde afbeeldings-URL als reactie.
+1. De [image genereren](https://beta.openai.com/docs/guides/images/image-generation-beta) maakt een oorspronkelijke afbeelding van grootte _1024x1024_ pixels die de parameterwaarde van de prompt request gebruiken en retourneert de gegenereerde afbeeldings-URL als reactie.
 1. De [Adobe I/O Runtime-actie](#adobe-io-runtime-action) Hiermee downloadt u de gegenereerde afbeelding naar de App Builder-runtime.
 1. Vervolgens wordt het uploaden van de afbeelding vanuit de App Builder-runtime naar AEM DAM gestart onder een vooraf gedefinieerd pad.
 1. De AEM as a Cloud Service slaat afbeelding op naar de DAM en retourneert een geslaagde of mislukte reactie op de Adobe I/O Runtime-actie. De geslaagde upload reactie werkt de geselecteerde de bezitswaarde van het Beeld van het Fragment van de Inhoud bij gebruikend een andere HTTP- verzoek aan AEM van de actie van Adobe I/O Runtime.
@@ -61,7 +62,7 @@ In het voorbeeld wordt een bestaand Adobe Developer Console-project gebruikt en 
 
 + Welke sjablonen wilt u zoeken?: `All Extension Points`
 + Kies de sjabloon die u wilt installeren:` @adobe/aem-cf-admin-ui-ext-tpl`
-+ Wat wilt u de extensie een naam geven?: `Image generation`
++ Wat wilt u de extensie een naam geven? `Image generation`
 + Geef een korte beschrijving van de extensie: `An example action bar extension that generates an image using OpenAI and uploads it to AEM DAM.`
 + Met welke versie wilt u beginnen?: `0.0.1`
 + Wat wilt u nu doen?
@@ -203,7 +204,7 @@ Elke route van de uitbreiding, zoals bepaald in [`App.js`](#app-routes), wordt t
 
 In deze voorbeeld-app is er een modale React-component (`GenerateImageModal.js`) dat vier staten heeft:
 
-1. Laden, wat aangeeft dat de gebruiker moet wachten
+1. Laden. De gebruiker moet wachten
 1. Het waarschuwingsbericht dat de gebruikers de suggestie geeft slechts één inhoudsfragment tegelijk te selecteren
 1. Het formulier Afbeelding genereren waarmee de gebruiker een beschrijving van de afbeelding in de natuurlijke taal kan opgeven.
 1. De reactie van de afbeeldingsgeneratiebewerking die de koppeling bevat met de AEM elementdetails van de nieuw gegenereerde, geüploade afbeelding.
@@ -472,13 +473,13 @@ export default function GenerateImageModal() {
 
 >[!NOTE]
 >
->In de `buildAssetDetailsURL()` functie, de `aemAssetdetailsURL` waarde variable veronderstelt dat [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) is ingeschakeld. Als u Verenigde Shell hebt onbruikbaar gemaakt, moet u verwijderen `/ui#/aem` van de waarde van de variabele.
+>In de `buildAssetDetailsURL()` functie, de `aemAssetdetailsURL` waarde variable veronderstelt dat [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) is ingeschakeld. Als u Verenigde Shell hebt onbruikbaar gemaakt, moet u verwijderen `/ui#/aem` van de variabele waarde.
 
 
 ### Adobe I/O Runtime-actie
 
 Een AEM extensie App Builder-app kan 0 of veel Adobe I/O Runtime-acties definiëren of gebruiken.
-Adobe Runtime actie is de oorzaak van het werk dat interactie met AEM of Adobe of derdeWebdiensten vereist.
+De Runtime van de Adobe actie is verantwoordelijk voor het werk dat interactie met AEM of Adobe of derdeWebdiensten vereist.
 
 In deze voorbeeldapp `generate-image` Adobe I/O Runtime-actie is verantwoordelijk voor:
 

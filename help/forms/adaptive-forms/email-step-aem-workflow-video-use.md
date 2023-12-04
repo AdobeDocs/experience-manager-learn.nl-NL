@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 21e58bbc-c1d6-4d41-a4d4-f522a3a5d4a7
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 345
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Voordat u de stap E-mail verzenden gebruikt, moet u de Day CQ Mail Service confi
 
 Als onderdeel van de elementen die aan dit artikel zijn gekoppeld, krijgt u het volgende
 
-1. Adaptief formulier dat de workflow bij verzending activeert
+1. Adaptief formulier dat de workflow bij verzending start
 1. Voorbeeld van een workflow die een e-mail met DOR als bijlage verzendt
 1. OSGi-bundel die de eigenschappen van metagegevens maakt
 

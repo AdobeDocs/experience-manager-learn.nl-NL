@@ -9,9 +9,10 @@ level: Experienced
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 95
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ De gebruiker voert de Lead-id in en bij het uitlijnen van de Marketo-service om 
 1. Plaats de Naam en de Titel van de 2 componenten TextField als FirstName en LastName
 1. Vorm de component van het Comité om een herhaalbare component te zijn door Minimum aan 1 en Maximum aan -1 te plaatsen. Dit is vereist omdat de Marketo-service een array van hoofdobjecten retourneert en u een herhaalbare component nodig hebt om de resultaten weer te geven. In dit geval krijgen we echter maar één object Lead terug, omdat we op Lead-objecten zoeken aan de hand van de id.
 1. Maak een regel in het veld LeadId, zoals in de onderstaande afbeelding wordt getoond
-1. Geef een voorbeeld van het formulier weer en voer een geldige lead-id in het veld en de tab LeadID in. De velden Voornaam en Achternaam moeten worden gevuld met de resultaten van de serviceaanroep.
+1. Geef een voorbeeld van het formulier weer en voer een geldige lead-id in het veld en de tab LeadID in. De gebieden Voornaam en Achternaam zouden met de resultaten van de de dienstvraag moeten worden bevolkt.
 
 Het volgende schermschot verklaart de montages van de regelredacteur
 

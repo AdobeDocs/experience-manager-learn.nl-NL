@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+duration: 628
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -49,7 +50,7 @@ Verken vervolgens de kracht van AEM GraphQL API met behulp van de ingebouwde Gra
 >
 >In, sommige versies van AEM (6.X.X) moet de Ontdekkingsreiziger GraphiQL (alias GrahiQL IDE) hulpmiddel manueel worden geïnstalleerd, volgen [instructie van hier](../how-to/install-graphiql-aem-6-5.md).
 
-1. Zorg ervoor dat in de rechterbovenhoek het eindpunt is ingesteld op **WKND Shared Endpoint**. Het wijzigen van _Endpoint_ dropdown-waarde geeft hier de bestaande _Blijvende query&#39;s_ in de linkerbovenhoek.
+1. Zorg ervoor dat in de rechterbovenhoek het eindpunt is ingesteld op **WKND Shared Endpoint**. Het wijzigen van _Endpoint_ dropdown-waarde geeft hier de bestaande _Blijvende query&#39;s_ in de linkerbovenhoek
 
    ![GraphQL-eindpunt instellen](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
 
@@ -189,7 +190,7 @@ Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vori
    }
    ```
 
-   De `getAdventureAdministratorDetailsByAdministratorName` query filtert all Adventures for any `administrator` van `fullName` &quot;Jacob Wester&quot;, die informatie van over twee genestelde Fragments van de Inhoud terugkeert: Adventure en instructeur.
+   De `getAdventureAdministratorDetailsByAdministratorName` query filtert all Adventures for any `administrator` van `fullName` &quot;Jacob Wester&quot;, die informatie van over twee genestelde Fragments van de Inhoud terugkeert: Adventure en Instructeur.
 
 1. Voer de vraag uit. Het resultaat moet er ongeveer als volgt uitzien:
 
@@ -350,7 +351,7 @@ Met de AEM GraphQL API kunt u zoeken naar inhoud en fragmentverwijzingen binnen 
 
 Soms moet u bij het ontwikkelen van clienttoepassingen de structuur van uw query&#39;s voorwaardelijk wijzigen. In dit geval kunt u met de AEM GraphQL API GraphQL-instructies gebruiken om het gedrag van uw query&#39;s te wijzigen op basis van de opgegeven criteria. Voor meer informatie over GraphQL-richtlijnen raadpleegt u de [GraphQL-documentatie](https://graphql.org/learn/queries/#directives).
 
-In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt uitvoeren voor inline-verwijzingen binnen tekstvelden met meerdere regels. De inhoud is opgehaald uit het dialoogvenster `description` ingediend in `plaintext` gebruiken. Daarna, breiden die vraag uit en gebruiken een richtlijn om voorwaardelijk terug te winnen `description` in de `json` ook de notatie.
+In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt uitvoeren voor inline-verwijzingen binnen tekstvelden met meerdere regels. De inhoud is opgehaald uit het dialoogvenster `description` ingediend in de `plaintext` gebruiken. Daarna, breiden die vraag uit en gebruiken een richtlijn om voorwaardelijk terug te winnen `description` in de `json` ook de notatie.
 
 1. In GrahiQL winde, kleef de volgende vraag in het linkerpaneel:
 
@@ -397,7 +398,7 @@ In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt
    }
    ```
 
-   De bovenstaande query accepteert nog een variabele (`includeJson`) is vereist `Boolean`, ook wel bekend als de queryrichtlijn. Een richtlijn kan worden gebruikt om voorwaardelijk gegevens van te omvatten `description` in het `json` formaat dat op boolean wordt gebaseerd die binnen wordt overgegaan `includeJson`.
+   De bovenstaande query accepteert nog een variabele (`includeJson`) is vereist `Boolean`, ook wel bekend als de queryrichtlijn. Een richtlijn kan worden gebruikt om voorwaardelijk gegevens van te omvatten `description` in het veld `json` formaat dat op boolean wordt gebaseerd die binnen wordt overgegaan `includeJson`.
 
 1. Vervolgens plakt u de volgende JSON-tekenreeks in het deelvenster Query-variabelen:
 

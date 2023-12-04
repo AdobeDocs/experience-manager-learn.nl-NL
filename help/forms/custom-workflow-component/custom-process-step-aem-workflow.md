@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+duration: 192
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ De volgende stappen worden vereist om de klasse te schrijven java en de klasse a
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemodelleerd project met het juiste type Adobe Maven Archetype. De gedetailleerde stappen worden in dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemodelleerd project met de juiste Adobe Maven Archetype. De gedetailleerde stappen worden in dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
@@ -34,7 +35,7 @@ In deze zelfstudie gaan we de bijlagen die zijn toegevoegd aan Adaptief formulie
 
 Voor dit gebruik is de volgende Java-klasse geschreven
 
-Laten we deze code eens bekijken
+Laten we eens naar deze code kijken
 
 ```java
 package com.mysite.core;

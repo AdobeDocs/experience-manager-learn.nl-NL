@@ -2,19 +2,17 @@
 title: Foutopsporing AEM SDK met de OSGi-webconsole
 description: De lokale QuickStart van de AEM SDK heeft een OSGi-webconsole die een verscheidenheid aan informatie en introspecties in de lokale AEM runtime biedt die nuttig zijn om te begrijpen hoe uw toepassing door, en functies binnen AEM wordt erkend.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 kt: 5265, 5366, 5267
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 516
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -58,14 +56,14 @@ Belangrijke aspecten die u helpen bij de foutopsporingsactiviteiten:
 + De OSGi-bundel valideren is aanwezig
 + Valideren als een OSGi-bundel actief is
 + Bepalen of een OSGi-bundel niet-bevredigde invoer bevat waardoor het niet kan beginnen
-+ Het verkrijgen van PID van de component, om configuraties OSGi voor hen in Git tot stand te brengen
++ Het verkrijgen van PID van de component, om configuraties OSGi voor hen in Git te creëren
 + Het identificeren van OSGi bezitswaarden verbindend aan de actieve configuratie OSGi
 
 ## Verkoopmodellen
 
 >[!VIDEO](https://video.tv.adobe.com/v/34337?quality=12&learn=on)
 
-De Sling Models-console bevindt zich op de volgende locatie:
+De Sling Models-console bevindt zich in:
 
 + Gereedschappen > Bewerkingen > Webconsole > Status > Modellen verkopen
 + Of rechtstreeks bij: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -73,5 +71,5 @@ De Sling Models-console bevindt zich op de volgende locatie:
 Belangrijke aspecten die u helpen bij de foutopsporingsactiviteiten:
 
 + Validatie van modellen van het Verdelen wordt geregistreerd aan het juiste middeltype
-+ Validatiemodellen voor splitsingen kunnen worden aangepast aan de hand van de juiste objecten (Resource of SlingHttpRequestServlet)
++ Validatiemodellen voor splitsingen zijn aanpasbaar vanuit de juiste objecten (Resource of SlingHttpRequestServlet)
 + Exporteurs van verkoopmodellen valideren is correct geregistreerd

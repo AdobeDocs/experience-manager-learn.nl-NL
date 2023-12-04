@@ -1,14 +1,8 @@
 ---
 title: Gegevensbronconfiguratie maken in AEM Forms
-seo-title: Creating DataSource Configuration in AEM Forms
 description: Dit is deel 2 van de zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel maken we een REST-gegevensbron.  De volgende video doorloopt de stappen om de gegevensbron tot stand te brengen.
-seo-description: This is part 2 of multistep tutorial for creating your first interactive communications document. In this part, we will create a REST backed data source.  The following video walks thru the steps to create the data source.
-uuid: b9d5c220-3e86-4e7d-8ea0-a7f604dde925
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 targetaudience: target-audience ongoing
 thumbnail: 27765.jpg
@@ -17,9 +11,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1f4d88ad-ace1-4f78-be40-da80b3b4d40c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 181
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---

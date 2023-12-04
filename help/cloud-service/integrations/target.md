@@ -13,9 +13,10 @@ thumbnail: KT-12433.jpeg
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1721
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1618'
 ht-degree: 0%
 
 ---
@@ -174,7 +175,7 @@ An [Adobe Experience Platform DataStream](https://experienceleague.adobe.com/doc
 1. Selecteren __Gegevensverzameling > Gegevensstromen__ en selecteert u __Nieuwe DataStream__
 1. In de Nieuwe tovenaar DataStream, ga binnen:
    + Naam: `AEM Target integration`
-   + Beschrijving: `Datastream used by the Adobe Web SDK to serve personalized Content Fragments Offers.`
+   + Omschrijving: `Datastream used by the Adobe Web SDK to serve personalized Content Fragments Offers.`
    + Gebeurtenisschema: `Leave blank`
 1. Selecteren __Opslaan__
 1. Selecteren __Service toevoegen__

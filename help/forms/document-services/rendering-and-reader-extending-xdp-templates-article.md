@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 221
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -34,11 +35,11 @@ Voor dit gebruiksgeval moeten we het volgende doen.
 
 ## XDP renderen en gebruiksrechten toepassen {#render-xdp-and-apply-usage-rights}
 
-* Regel 7: Gebruikend renderPDFForm van FormsService produceren wij PDF van XDP.
+* Lijn 7: Gebruikend renderPDFForm van FormsService produceren wij PDF van XDP.
 
-* Lijnen 8-14: De juiste gebruiksrechten worden ingesteld. Deze gebruiksrechten worden opgehaald van de OSGi-configuratiemontages.
+* Lijnen 8 tot en met 14: De toepasselijke gebruiksrechten worden vastgesteld. Deze gebruiksrechten worden opgehaald van de OSGi-configuratiemontages.
 
-* Regel 20: Gebruik resourceresolver verbonden aan de dienst van de de dienstgebruiker
+* Lijn 20: Gebruik resourceresolver verbonden aan de dienst van de de dienstgebruiker
 
 * Regel 24: De methode secureDocument van DocumentAssuranceService wordt gebruikt om de gebruiksrechten toe te passen
 

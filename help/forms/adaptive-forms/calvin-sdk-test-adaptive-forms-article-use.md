@@ -3,16 +3,16 @@ title: Automatische tests gebruiken met AEM adaptieve Forms
 description: Automatisch testen van Adaptive Forms met Calvin SDK
 feature: Adaptive Forms
 doc-type: article
-activity: develop
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 5a1364f3-e81c-4c92-8972-4fdc24aecab1
 last-substantial-update: 2020-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 142
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ In deze zelfstudie maakt u het volgende:
 
 * Testsuite
 * Testsuite bevat een of meer testgevallen
-* De Gevallen van de test zullen één of meerdere acties bevatten
+* Testgevallen bevatten een of meer acties
 
 ## Aan de slag {#getting-started}
 
@@ -67,12 +67,12 @@ De bovenstaande code maakt een nieuwe testsuite.
 >
 >Als u deze functie test op AEM Forms 6.4 of hoger, maakt u een nieuw adaptief formulier en gebruikt u dit voor de test. Het gebruik van het adaptieve formulier dat bij het pakket wordt geleverd, wordt niet aanbevolen.
 
-Testgevallen kunnen worden toegevoegd aan een testsuite die wordt uitgevoerd met een adaptief formulier.
+Testgevallen kunnen worden toegevoegd aan een testsuite die kan worden uitgevoerd op een adaptief formulier.
 
 * Als u een testcase wilt toevoegen aan een testsuite, gebruikt u de `addTestCase` methode van het object TestSuite.
 * De `addTestCase` methode neemt een Voorwerp TestCase als parameter.
 * Als u TestCase wilt maken, gebruikt u de opdracht `hobs.TestCase(..)` methode.
-* Opmerking: De eerste parameter is de naam van het Geval van de Test dat in UI zal verschijnen.
+* Nota: De eerste parameter is de naam van het Geval van de Test dat in UI zal verschijnen.
 * Nadat u een testcase hebt gemaakt, kunt u vervolgens handelingen toevoegen aan uw testcase.
 * Acties inclusief `navigateTo`, `asserts.isTrue` kan als acties aan het testgeval worden toegevoegd.
 

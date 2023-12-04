@@ -1,18 +1,15 @@
 ---
 title: Transformaties met AEM Forms
-seo-title: Merge Adaptive Form data with Acroform
-description: Deel 2 van de integratie van Acroforms met AEM Forms. Maak een schema van een Acrobat-formulier.
+description: Deel 2 van de integratie van Acrobat met AEM Forms. Maak een schema van een Acrobat-formulier.
 feature: adaptive-forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.5
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 54
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -25,7 +22,7 @@ De volgende stap bestaat uit het maken van een schema op basis van het Acrobat-f
 1. Aanmelden bij [CRXDE Lite](http://localhost:4502/crx/de)
 2. Openen naar het bestand `/apps/AemFormsSamples/components/createxsd/POST.jsp`
 3. Wijzig de `saveLocation` naar een geschikte map op uw vaste schijf. Zorg ervoor dat de map waarin u opslaat, al is gemaakt.
-4. Wijs uw browser aan [XSD maken](http://localhost:4502/content/DocumentServices/CreateXsd.html) pagina gehost op AEM.
+4. Wijs uw browser aan [XSD maken](http://localhost:4502/content/DocumentServices/CreateXsd.html) op AEM.
 5. Sleep de Acroform.
 6. Controleer de map die in Stap 3 is opgegeven. Het schemabestand wordt opgeslagen op deze locatie.
 

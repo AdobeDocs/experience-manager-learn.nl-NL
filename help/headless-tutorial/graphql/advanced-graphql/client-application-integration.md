@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 345
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Controleer
 
 * Projectconfiguraties
 * GraphQL-eindpunten
-* Modellen van contentfragmenten
+* Modellen van inhoudsfragmenten
 * Geautoriseerde inhoudsfragmenten
 * GraphQL blijft vragen
 
@@ -37,9 +38,9 @@ De _IDE screenshots in dit hoofdstuk komen van [Visual Studio-code](https://code
 Er is een oplossingspakket beschikbaar om te worden geïnstalleerd dat de stappen in AEM UI voor hoofdstukken 1-4 voltooit. Dit pakket is **niet nodig** indien de vorige hoofdstukken zijn afgesloten.
 
 1. Downloaden [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
-1. Navigeer in AEM naar **Gereedschappen** > **Implementatie** > **Pakketten** toegang **Pakketbeheer**.
+1. Navigeer in AEM naar **Gereedschappen** > **Implementatie** > **Pakketten** toegang tot **Pakketbeheer**.
 1. Upload en installeer het pakket (ZIP-bestand) dat u in de vorige stap hebt gedownload.
-1. Repliceer het pakket naar de AEM-publicatieservice
+1. Repliceer het pakket naar de AEM-service Publiceren
 
 ## Doelstellingen {#objectives}
 
@@ -83,7 +84,7 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
 
    >[!NOTE]
    > 
-   > De bovenstaande instructies zijn om de React-app te verbinden met de **AEM-publicatieservice**, echter om verbinding te maken met de **AEM-auteurservice** verkrijg een lokale ontwikkelingstoken voor uw doel AEM as a Cloud Service milieu.
+   > De bovenstaande instructies zijn om de React-app te verbinden met de **AEM-publicatieservice**, echter om verbinding te maken met de **AEM Auteur-service** verkrijg een lokale ontwikkelingstoken voor uw doel AEM as a Cloud Service milieu.
    >
    > Het is ook mogelijk om de app te verbinden met een [lokale instantie van Auteur die AEMaaCS SDK gebruikt](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) basisverificatie gebruiken.
 
@@ -111,7 +112,7 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
 
 >[!IMPORTANT]
 >
->    Als u zich afvraagt waarom de GraphQL API-aanvraag is ingediend tegen de `http://localhost:3000` en NIET tegen het domein van de Dienst van de Publicatie AEM, herzie [Onder de hood](../multi-step/graphql-and-react-app.md#under-the-hood) uit de basiszelfstudie.
+>    Als u zich afvraagt waarom de GraphQL API-aanvraag is ingediend tegen de `http://localhost:3000` en NIET tegen het AEM Publish Service domein, overzicht [Onder de hood](../multi-step/graphql-and-react-app.md#under-the-hood) uit de basiszelfstudie.
 
 
 ## De code controleren
@@ -132,9 +133,9 @@ De hoofdweergave van de WKND React-app is de lijst met alle avonturen en u kunt 
 
 * De haak gebruikt het hoofdmenu `fetchPersistedQuery(..)` functie die de vraaguitvoering aan delegeert `AEMHeadless` via `aemHeadlessClient.js`.
 
-* De haak geeft ook alleen de relevante gegevens van de reactie van AEM GraphQL op `response.data?.adventureList?.items`de `Adventures` Reageer de weergavecomponenten om niet op de hoogte te zijn van de bovenliggende JSON-structuren.
+* De haak retourneert ook alleen de relevante gegevens van de reactie van AEM GraphQL op `response.data?.adventureList?.items`, waarbij de `Adventures` Reageer de weergavecomponenten om niet op de hoogte te zijn van de bovenliggende JSON-structuren.
 
-* Als de query succesvol is uitgevoerd, wordt de `AdventureListItem(..)` renderfunctie van `Adventures.js` voegt HTML-element toe om het _Afbeelding, Lengte van reisband, Prijs en Titel_ informatie.
+* Bij een geslaagde query-uitvoering wordt de opdracht `AdventureListItem(..)` renderfunctie van `Adventures.js` voegt HTML-element toe om het _Afbeelding, Lengte van reisband, Prijs en Titel_ informatie.
 
 ### Controleren `AdventureDetail` Component Reageren
 
@@ -142,9 +143,9 @@ De `AdventureDetail` De component React geeft de details van het avontuur terug.
 
 * De `src/components/AdventureDetail.js` oproepen `useAdventureBySlug(slug)` haak en hier `slug` argument is queryparameter.
 
-* Zoals hierboven, `useAdventureBySlug(slug)` haak wordt gedefinieerd in het dialoogvenster `src/api/usePersistedQueries.js` bestand. Het roept `wknd-shared/adventure-by-slug` persistente query door delegeren aan `AEMHeadless` via `aemHeadlessClient.js`.
+* Zoals hierboven, `useAdventureBySlug(slug)` haak wordt gedefinieerd in het dialoogvenster `src/api/usePersistedQueries.js` bestand. Het roept `wknd-shared/adventure-by-slug` persistente query door te delegeren aan `AEMHeadless` via `aemHeadlessClient.js`.
 
-* Als de query succesvol is uitgevoerd, wordt de `AdventureDetailRender(..)` renderfunctie van `AdventureDetail.js` voegt HTML toe element om de details van het Avontuur te tonen.
+* Bij een geslaagde query-uitvoering wordt de opdracht `AdventureDetailRender(..)` renderfunctie van `AdventureDetail.js` voegt HTML toe element om de details van het Avontuur te tonen.
 
 
 ## De code verbeteren

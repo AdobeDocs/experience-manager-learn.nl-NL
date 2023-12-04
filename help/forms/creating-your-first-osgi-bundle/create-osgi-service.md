@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+duration: 126
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ De dienst OSGi wordt semantisch bepaald door zijn de dienstinterface en als de d
 
 ## De interface definiëren
 
-Een eenvoudige interface met één methode om gegevens samen te voegen met de <span class="x x-first x-last">XDP</span> sjabloon.
+Een eenvoudige interface met één methode om gegevens met het <span class="x x-first x-last">XDP</span> sjabloon.
 
 ```java
 package com.mysite.samples;
@@ -85,7 +86,7 @@ De `@Reference` De annotatie maakt deel uit van de verklarende diensten van OSGi
 ## De bundel maken en implementeren
 
 * Openen **opdrachtpromptvenster**
-* Ga naar `c:\aemformsbundles\mysite\core`
+* Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
 * Het bovenstaande bevel zal automatisch de bundel aan uw AEM instantie bouwen en opstellen die op localhost loopt:4502
 
@@ -108,7 +109,7 @@ Het voorbeeldpakket met de JSP-pagina kan [hier gedownload](assets/learning_aem_
 
 Importeer en installeer het pakket in AEM met de [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 
-Gebruik postman om een POST aan te roepen en de invoerparameters te verstrekken zoals die in het hieronder ontsproten scherm worden getoond
+Gebruik postman om een POST aan te roepen en de invoerparameters te verstrekken zoals hieronder getoond in het scherm ontsproten
 ![postbode](assets/test-service-postman.JPG)
 
 ## Volgende stappen

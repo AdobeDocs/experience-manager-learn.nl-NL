@@ -9,7 +9,8 @@ level: Beginner
 kt: kt-9860
 exl-id: 5282034f-275a-479d-aacb-fc5387da793d
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 53
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -31,4 +32,4 @@ Hieronder volgen de parameters
 Het volgende schermschot toont u datamerge.xml die onder de ladingsomslag wordt gecreeerd
 ![create-xml](assets/create-xml.png)
 
-[Aangepaste bundel kan hier worden gedownload](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
+[U kunt hier aangepaste bundel downloaden](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)

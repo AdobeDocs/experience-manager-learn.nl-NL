@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 272
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Om het bovengenoemde gebruikscase te verwezenlijken, zult u typisch een dienst O
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemodelleerd project met het juiste type Adobe Maven Archetype. De gedetailleerde stappen worden in dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemodelleerd project met de juiste Adobe Maven Archetype. De gedetailleerde stappen worden in dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
@@ -37,7 +38,7 @@ Open het beproefde project in uw eclipse winde. Uitbreiden **projectnaam** > **k
 
 **WorkItem**: De variabele workItem geeft toegang tot gegevens die betrekking hebben op de workflow. De openbare API-documentatie is beschikbaar [hier.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Deze workflowSession-variabele geeft u de mogelijkheid om de workflow te beheren. De openbare API-documentatie is beschikbaar [hier](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**: Deze workflowvariabele geeft u de mogelijkheid om de workflow te beheren. De openbare API-documentatie is beschikbaar [hier](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
 **MetaDataMap**: Alle metagegevens die aan de workflow zijn gekoppeld. Alle procesargumenten die aan de processtap worden doorgegeven, zijn beschikbaar via het object MetaDataMap.[API-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -45,7 +46,7 @@ In deze zelfstudie gaan we de bijlagen die zijn toegevoegd aan Adaptief formulie
 
 Voor dit gebruik is de volgende Java-klasse geschreven
 
-Laten we deze code eens bekijken
+Laten we eens naar deze code kijken
 
 ```java
 package com.learningaemforms.adobe.core;

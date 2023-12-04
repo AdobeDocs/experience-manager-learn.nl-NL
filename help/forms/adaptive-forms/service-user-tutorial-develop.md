@@ -7,9 +7,10 @@ role: Developer
 level: Experienced
 exl-id: 5fa3d52a-6a71-45c4-9b1a-0e6686dd29bc
 last-substantial-update: 2020-09-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 187
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -52,7 +53,7 @@ We kunnen ook resourceresolver krijgen namens gebruikers van fd-service. Deze se
 
    1. Navigeren naar [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
    1. Zoeken naar gegevens van gebruiker &#39;. Dit is dezelfde systeemgebruiker die u in de vorige stap hebt gemaakt.
-   1. Dubbelklik op de gebruiker en klik vervolgens op het tabblad &#39;Machtigingen&#39;
+   1. Dubbelklik op de gebruiker en klik vervolgens op het tabblad Machtigingen
    1. &#39; read &#39; toegang geven tot de map &#39;content&#39;.
    1. Om de de dienstgebruiker te gebruiken om toegang tot /content omslag te verkrijgen gebruik de volgende code
 

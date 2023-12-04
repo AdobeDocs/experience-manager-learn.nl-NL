@@ -1,13 +1,14 @@
 ---
 title: AEM Forms-Tutorials en -video's
-description: Verzameling van AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
+description: Collectie AEM Forms-bronnen voor beginners en ervaren AEM Forms-ontwikkelaars
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+duration: 152
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 6%
+source-wordcount: '405'
+ht-degree: 4%
 
 ---
 
@@ -18,18 +19,15 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 ## Wat is er nieuw?
 
 * **[Foutberichten verwerken in de stap Formuliergegevensmodel aanroepen](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-
-   *Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype*
+  *Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype*
 
 * **[Diagrammen uit meerdere reeksen in interactieve communicatiedocumenten (video)](./interactive-communications/multiseriescharts.md)**
-
-   *Plot meer dan één reeks in de zelfde grafiek. De veelvoudige reekskaarten worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom.*
+  *Plot meer dan één reeks in de zelfde grafiek. De veelvoudige reekskaarten worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom.*
 
 * **[Herbruikbare workflowmodellen maken](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
+  *Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld*
 
-   *Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld*
-
-## Personeelspictogrammen
+## Personeelspikkels
 
 <table>
 <tr>

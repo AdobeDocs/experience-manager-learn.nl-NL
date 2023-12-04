@@ -1,10 +1,7 @@
 ---
 title: Werken met Adobe Cloud Manager - CI/CD Non Production Pipeline
 description: CI/CD de niet productiepijpleidingen zijn verdeeld in twee categorieën, de pijpleidingen van de Kwaliteit van de Code, en de pijpleidingen van de Plaatsing. Codekwaliteitpijplijnen zorgen ervoor dat alle code van een Git-vertakking wordt samengesteld en wordt geëvalueerd op basis van de codescanfunctie van Cloud Manager. Implementatiepijpleidingen ondersteunen de geautomatiseerde implementatie van code van de Git-opslagplaats naar elke niet-productieomgeving, wat betekent dat een voorziening AEM omgeving die geen werkgebied of productie is.
-topics: Administration
-audience: administrator
 doc-type: feature video
-activity: use
 version: Cloud Service
 jira: KT-6873
 thumbnail: 26316.jpg
@@ -13,9 +10,10 @@ feature: Cloud Manager, CI-CD Pipeline
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: b28805d3-bb2d-4f66-8daa-9a8eb7ecf0a1
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 227
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---

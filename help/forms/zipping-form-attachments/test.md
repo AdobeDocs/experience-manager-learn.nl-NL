@@ -8,16 +8,17 @@ role: Developer
 level: Beginner
 kt: kt-8049
 exl-id: ce9b9203-b44c-4a52-821c-ae76e93312d2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 62
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
 # Benodigde stappen om de twee naderingen te testen
 
-* Configureren [CQ-mailservice op dag](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service) om e-mails te verzenden vanaf de AEM Forms-server
+* Configureren [Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service) om e-mails te verzenden vanaf de AEM Forms-server
 * Implementeer de [bijlagen](assets/formattachments.formattachments.core-1.0-SNAPSHOT.jar) bundelen met [felix-webconsole](http://localhost:4502/system/console/bundles)
 
 ## ZIP-bestand verzenden als e-mailbijlage

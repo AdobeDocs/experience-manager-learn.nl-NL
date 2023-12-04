@@ -1,5 +1,5 @@
 ---
-title: Smart Imaging
+title: Slimme afbeeldingen
 description: Smart Imaging in Dynamic Media Classic verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser. Dit gebeurt door Adobe Sensei AI-mogelijkheden te benutten en met bestaande voorinstellingen voor afbeeldingen te werken. Meer informatie over Smart Imaging en hoe u deze kunt gebruiken om klanten betere ervaringen te bieden dankzij snellere paginabelasting.
 feature: Dynamic Media Classic
 topic: Content Management
@@ -7,14 +7,15 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 166
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 1%
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
-# Smart Imaging {#smart-imaging}
+# Slimme afbeeldingen {#smart-imaging}
 
 Een van de belangrijkste aspecten van de klantervaring op uw website of mobiele site of app is de laadtijd van de pagina. Klanten zullen vaak een site of app verlaten als het te lang duurt om een pagina te laden. Afbeeldingen vormen het grootste deel van de laadtijd van de pagina. Smart Imaging in Dynamic Media Classic verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser. Dit gebeurt door Adobe Sensei AI-mogelijkheden te benutten en met bestaande voorinstellingen voor afbeeldingen te werken. Met Smart Imaging verkleint u de afbeeldingsgrootte met 30 procent of meer. Dit betekent dat pagina&#39;s sneller worden geladen en dat de klant er beter van wordt.
 

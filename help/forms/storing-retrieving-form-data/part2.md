@@ -1,6 +1,6 @@
 ---
 title: Opslaan en ophalen van formuliergegevens uit MySQL-database - Servlet om formuliergegevens op te slaan
-description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het opslaan en ophalen van formuliergegevens
+description: Zelfstudie met meerdere onderdelen om door de stappen te bladeren die nodig zijn voor het opslaan en ophalen van formuliergegevens
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -8,7 +8,8 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: dd82f309-dd4e-42ce-8856-e51c898024f5
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 75
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # Servlet voor het opslaan van formuliergegevens
 
-De volgende stap bestaat uit het maken van een servlet die formuliergegevens invoegt of bijwerkt. servlet roept de aangewezen methodes van de dienst OSGi om of het gegevensbestand op te nemen of bij te werken. De opgeslagen Adaptieve gegevens van de Vorm worden geassocieerd met een GUID. Dezelfde GUID wordt vervolgens gebruikt om de formuliergegevens bij te werken. Deze servlet wordt geroepen wanneer &quot;SaveAndContinueLater&quot;knoop wordt geklikt.
+In de volgende stap wordt een servlet gemaakt die formuliergegevens invoegt of bijwerkt. servlet roept de aangewezen methodes van de dienst OSGi om of het gegevensbestand op te nemen of bij te werken. De opgeslagen Adaptieve gegevens van de Vorm worden geassocieerd met een GUID. Dezelfde GUID wordt vervolgens gebruikt om de formuliergegevens bij te werken. Deze servlet wordt geroepen wanneer &quot;SaveAndContinueLater&quot;knoop wordt geklikt.
 
 ```java
 package com.aemforms.saveandcontinue.core.servlets;

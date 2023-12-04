@@ -1,21 +1,17 @@
 ---
 title: AEM Forms met JSON-schema en -gegevens[Deel 1]
-seo-title: AEM Forms with JSON Schema and Data[Part1]
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
-seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 70
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -29,7 +25,7 @@ Als u een adaptief formulier hebt gemaakt op basis van het JSON-schema, moet u d
 
 MySql 8 database is gebruikt voor dit artikel. MySQL introduceerde een nieuw gegevenstype genaamd [JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html). Hierdoor is het gemakkelijker om JSON-objecten op te slaan en te zoeken. We slaan de verzonden gegevens op in een kolom van het type JSON in onze database.
 
-De volgende schermafbeelding toont de verzonden formuliergegevens die zijn opgeslagen in het gegevenstype JSON. De kolom &quot;formdata&quot; is van het type JSON. We hebben ook de naam opgeslagen van het formulier dat is gekoppeld aan de gegevens in de naam van de kolomnotatie
+De volgende schermafbeelding toont de verzonden formuliergegevens die zijn opgeslagen in het gegevenstype JSON. De kolom &quot;formdata&quot; is van het type JSON. We hebben ook de naam opgeslagen van het formulier dat is gekoppeld aan de gegevens in de naam van de kolomindeling
 
 >[!NOTE]
 >
@@ -39,4 +35,4 @@ De volgende schermafbeelding toont de verzonden formuliergegevens die zijn opges
 ![datastast](assets/datastored.gif)
 
 
-[Voorbeeld-JSON-schema&#39;s die kunnen worden gebruikt om Adaptieve Forms te maken.](assets/samplejsonschemas.zip). Het ZIP-bestand downloaden en uitpakken om de JSON-schema&#39;s op te halen
+[Voorbeeld-JSON-schema&#39;s die kunnen worden gebruikt om Adaptieve Forms te maken.](assets/samplejsonschemas.zip). Download en decomprimeer het ZIP-bestand om de JSON-schema&#39;s op te halen

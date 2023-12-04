@@ -1,20 +1,16 @@
 ---
 title: Triggerwerkstroom AEM HTM5 Form Submission Introduction
-seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
-seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 88295af5-3022-4462-9194-46d8c979bc8b
 last-substantial-update: 2021-04-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 360
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -30,7 +26,7 @@ Voor dit gebruiksgeval moeten de volgende stappen worden uitgevoerd:
 * De PDF-verzending van Acrobat/Reader afhandelen
 * De Adobe Experience Manager-workflow (AEM) activeren om de verzonden PDF te bekijken
 
-Deze zelfstudie doorloopt de stappen die nodig zijn om het bovenstaande gebruiksgeval te voltooien. Voorbeeldcode en elementen die aan deze zelfstudie zijn gerelateerd, zijn [hier beschikbaar.](part-four.md)
+Deze zelfstudie doorloopt de stappen die nodig zijn voor het uitvoeren van het bovenstaande gebruiksgeval. Voorbeeldcode en elementen die aan deze zelfstudie zijn gerelateerd, zijn [hier beschikbaar.](part-four.md)
 
 In de volgende video ziet u een overzicht van het gebruik
 

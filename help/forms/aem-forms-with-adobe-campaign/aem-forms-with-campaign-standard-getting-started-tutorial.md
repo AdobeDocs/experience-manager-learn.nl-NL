@@ -10,9 +10,10 @@ exl-id: e028837b-13d8-4058-ac25-ed095f49524c
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 66
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Om AEM Forms met ACS te integreren zult u de volgende stappen moeten volgen:
 
 * [Opstelling API toegang op uw instantie ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
 * JSON-webtoken maken.
-* Uitwisseling het Token van het Web JSON met de Dienst van Adobe Identity Management voor een Token van de Toegang.
+* Uitwisseling de Token van het Web JSON met de Dienst van Adobe Identity Management voor een Token van de Toegang.
 * Neem dit toegangstoken op in HTTP-header voor autorisatie, samen met de X-API-sleutel in elke aanvraag voor een ACS-instantie.
 
 Volg de volgende instructies om aan de slag te gaan

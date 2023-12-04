@@ -3,16 +3,17 @@ title: Model en archetypen voor bestuur en personeel
 description: Leer hoe u uw Adobe Experience Manager-platform (AEM) kunt exploiteren en de meeste waarde van uw inspanningen krijgt.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: dcd69c7444eae0f8c86464c1963bff35e6f11238
+duration: 333
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager (AEM) - Model en archetypen voor bestuur en personeel
 
-Als leider van de klantenervaring, begrijpt Adobe hoe uitdagend het voor u kan zijn om ervoor te zorgen u de juiste mensen en het beheerskader hebt om operationele efficiency te drijven. Met Adobe-bewezen bestuur en het personeel, hebt u de hulpmiddelen en de kennis om een stevige inhoud en activa beheer te creëren. In dit artikel bespreken we manieren om uw Adobe Experience Manager-platform (AEM) te exploiteren en de meeste waarde uit uw inspanningen te halen.
+Als leider van de klantenervaring, begrijpt de Adobe hoe de uitdaging voor u kan zijn om ervoor te zorgen u de juiste mensen en het governancekader hebt om operationele efficiency te drijven. Met de door de industrie bewezen governance- en personeelsmodellen van Adobe beschikt u over de instrumenten en kennis om een solide basis voor inhoud en beheer van bedrijfsmiddelen te creëren. In dit artikel bespreken we manieren om uw Adobe Experience Manager-platform (AEM) te exploiteren en de meeste waarde uit uw inspanningen te halen.
 
 ## Een superieur operationeel kader maken
 
@@ -47,9 +48,9 @@ Er zijn twee operationele stromen voor [!DNL AEM Sites] en [!DNL AEM Assets]:
 1. Basisfuncties voor uitvoeren en werken
 
    * Technische bron: iemand die AEM ervaring heeft, begrijpt toestemming en kan het schema voor metagegevens bijwerken
-   * Release Manager
+   * Releasebeheer
    * Eigenaar van product - Dit is een rol die aan de oplossing wordt gericht. Sommige eigenaars van producten kunnen bij analyses worden betrokken.
-   * DAM-bibliothecaris - Dit is iemand die de integratieve kaderprocessen kan helpen hervormen. Deze creatieve rol kan met andere rollen overlappen. (Opmerking: deze rol is de afgelopen vijf jaar in populariteit toegenomen . )
+   * DAM-bibliothecaris - Dit is iemand die de integratieve kaderprocessen kan helpen hervormen. Deze creatieve rol kan met andere rollen overlappen. (Opmerking: dit is een rol die de afgelopen vijf jaar populair is geworden.)
    * Creatief
 
 1. Strategie en transformatie
@@ -84,15 +85,15 @@ Hieronder volgen voorbeelden van een licht (sportkleding) en zwaar (cosmetisch b
 
 1. Basis uitvoeren en werken
 
-   **Algemene tussenruimte:** CSS-ontwikkelaars maken nieuwe skins voor componenten. Adobe Sr Business Consultant, Joseph Van Buskirk, adviseert om &quot;ongecorkte onderdelen en stijlsystemen te krijgen. Dit is de rol die kostenbesparingen stimuleert. 80% van de gemaakte ervaringen moet worden uitgevoerd met eerder gemaakte of kerncomponenten.&quot; Het doel is om kern of douanecomponenten met nieuwe stijlen opnieuw te gebruiken gebruikend een CSS ontwikkelaar (of front-end ontwikkelingsteam).
+   **Algemene tussenruimte:** CSS-ontwikkelaars maken nieuwe skins voor componenten. Joseph Van Buskirk, bedrijfsadviseur van Adobe Sr, adviseert om &quot;ongecorked componenten en stijlsystemen te krijgen. Dit is de rol die kostenbesparingen stimuleert. 80% van de gemaakte ervaringen moet worden uitgevoerd met eerder gemaakte of kerncomponenten.&quot; Het doel is om kern of douanecomponenten met nieuwe stijlen opnieuw te gebruiken gebruikend een CSS ontwikkelaar (of front-end ontwikkelingsteam).
 
    Voorbeelden van rollen:
 
    * CSS ontwikkelen - creëert ervaringsartefacten door componenten met nieuwe stijlen opnieuw te gebruiken.
    * De ontwikkeling van het achterste deel - leidt tot nieuwe componenten of kan een kerncomponent uitbreiden. Indien correct gedaan, zou deze rol niet meer dan één persoon moeten hebben, tenzij er behoefte aan grote animatietaken is.
-   * Release-beheer - houdt toezicht op de implementatie van code en fungeert als het huidige Adobe Account Team.
-   * Eigenaar van producten - werkt samen met de BU aan het samenbrengen van technische en strategische visies; leidt tot onderhoudstaken en verhogingen en dient als bedrijfseigenaar van de oplossing.
-   * Admin Authors - werkt de CSS huid bij en verstrekt raad aan de auteurs die inhoud bijwerken en toepassen. Deze rol werkt aan werkschemeconfiguraties en leidt tot leidingendocumentatie voor de inhoudsauteurs om toe te passen. OPMERKING: In versie 6.5 raadt Adobe aan bewerkbare sjablonen te gebruiken.
+   * Release-beheer - houdt toezicht op de implementatie van code en fungeert als het huidige accountteam van de Adobe.
+   * Eigenaar van product - werkt samen met BU aan het samenstellen van technische en strategische visies; creëert onderhoudstaken en -verbeteringen en fungeert als de eigenaar van de oplossing.
+   * Admin Authors - werkt de CSS huid bij en verstrekt raad aan de auteurs die inhoud bijwerken en toepassen. Deze rol werkt aan werkschemeconfiguraties en leidt tot leidingendocumentatie voor de inhoudsauteurs om toe te passen. OPMERKING: in versie 6.5 beveelt de Adobe het gebruik van bewerkbare sjablonen aan.
    * Inhoudsauteurs - passen inhoud, gelaagde eigendom toe en bieden communicatieproblemen en zorgen die zich voordoen met CSM.
 
 1. Strategie en transformatie

@@ -1,20 +1,21 @@
 ---
-title: Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial
-description: Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken vernieuwen? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën.
+title: Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie
+description: Nieuw bij het ontwikkelen van AEM? Wilt u een vernieuwde versie van de beste praktijken? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën.
 feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
 topic: Development
 role: Developer
 level: Beginner
 thumbnail: 30476.jpeg
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
+duration: 433
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 5%
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
 
-# Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
+# Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Overzicht {#overview}
 
@@ -39,7 +40,7 @@ Na de voltooiing van de WKND zelfstudie, bekijk video hieronder voor een overzic
 De video toont hoe het project van de Plaats WKND kan zijn:
 
 1. Git-opslagruimte van derden, in dit geval Github.com, wordt aangeschaft, maar kan elke Git-opslagplaats zijn
-2. Overstappen naar een stroomopslagplaats voor Adobe Cloud Manager Git die is geregistreerd met een AEM as a Cloud Service programma
+2. Overstappen naar een stroomopwaartse Adobe Cloud Manager Git-opslagplaats die is geregistreerd bij een AEM as a Cloud Service programma
 3. Distribueren via leidingen van Cloud Manager naar AEM as a Cloud Service omgevingen
 
 Voor een volledig overzicht van hoe te om AEM project op te stellen om als dienst van de Wolk te AEM, bekijk de videoreeks over hoe te [Git integreren met Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).

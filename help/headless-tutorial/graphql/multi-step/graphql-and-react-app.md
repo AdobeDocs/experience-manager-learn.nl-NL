@@ -10,9 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 611
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -102,7 +103,7 @@ Zo krijgt u de React-app:
 >
 >  // TODO Implementeer dit door de stappen van AEM zelfstudie voor headless uit te voeren.
 >
->  //*********************************
+>  //************************************
 >
 
 ## Anatomie van de React-app
@@ -235,7 +236,7 @@ Als de hoofdweergave van de app is voltooid, worden de teamgegevens uit AEM inge
    }
    ```
 
-1. Open `src/components/Teams.js`
+1. Openen `src/components/Teams.js`
 
 1. In de `Teams` Reageer component, haal de lijst van teams van AEM gebruikend `useAllTeams()` haak.
 
@@ -393,7 +394,7 @@ Als u de naam van een persoon hebt geselecteerd in de weergave Teams, wordt de w
    }
    ```
 
-1. Open `src/components/Person.js`
+1. Openen `src/components/Person.js`
 1. In de `Person` Reageren, component, parseren `fullName` routeparameter, en haal de persoongegevens van AEM gebruikend `usePersonByName(fullName)` haak.
 
    ```javascript

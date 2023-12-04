@@ -1,6 +1,6 @@
 ---
 title: Stappen om Workbench via HTTPS te verbinden met de AEM Forms-server
-description: In dit artikel worden de stappen beschreven waarmee u via SSL (via HTTPS) verbinding maakt tussen de Workbench en de AEM Forms-server
+description: In dit artikel worden de stappen beschreven waarmee u via SSL (via HTTPS) verbinding maakt tussen Workbench en AEM Forms-server
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -9,7 +9,8 @@ feature: Workbench
 topic: Administration
 index: y
 exl-id: 89f485c3-cd6f-4814-8538-de9c07b33ba4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 64
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%

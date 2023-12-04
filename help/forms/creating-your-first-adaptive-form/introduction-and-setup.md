@@ -1,6 +1,6 @@
 ---
 title: Aan de slag met Adaptive Forms
-description: In deze zelfstudie worden de stappen besproken die nodig zijn voor het maken van adaptief formulier met meerdere tabbladen. U zult leren om Lijsten, de Lay-out van de Accordeon, en de Redacteur van de Regel aan auteur bedrijfsregels te gebruiken.
+description: Deze zelfstudie begeleidt u door de stappen die nodig zijn voor het maken van adaptief formulier met meerdere tabbladen. U zult leren om Lijsten, de Lay-out van de Accordeon, en de Redacteur van de Regel aan auteur bedrijfsregels te gebruiken.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -8,16 +8,17 @@ role: Developer
 level: Beginner
 exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
 last-substantial-update: 2020-02-10T00:00:00Z
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+duration: 59
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
 # Aan de slag met Adaptive Forms {#getting-started-with-adaptive-forms}
 
-In deze zelfstudie worden de stappen besproken die nodig zijn voor het maken van adaptief formulier met meerdere tabbladen. U zult leren om Lijsten, de Lay-out van de Accordeon, en de Redacteur van de Regel aan auteur bedrijfsregels te gebruiken.
+Deze zelfstudie begeleidt u door de stappen die nodig zijn voor het maken van adaptief formulier met meerdere tabbladen. U zult leren om Lijsten, de Lay-out van de Accordeon, en de Redacteur van de Regel aan auteur bedrijfsregels te gebruiken.
 
 Met adaptieve formulieren kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een intuïtieve gebruikersinterface en kant-en-klare componenten voor het maken van en werken met adaptieve formulieren. U kunt desgewenst een adaptief formulier maken op basis van een formuliermodel of -schema of zonder formuliermodel. Het is belangrijk om zorgvuldig het formuliermodel te kiezen dat niet alleen aan uw vereisten voldoet, maar ook uw bestaande infrastructurele investeringen en middelen uitbreidt.
 
@@ -31,9 +32,9 @@ U hebt het volgende nodig:
 
 * **Aangenomen wordt dat u AEM Forms versie 6.4 of hoger uitvoert op localhost:4502.**
 
-* [Download het client-libs-and-logo](assets/client-libs-and-logo.zip) en [aan de slag-fragment](assets/getting-started-fragment.zip) op uw vaste schijf.
+* [Download het clientlogo](assets/client-libs-and-logo.zip) en [aan de slag-fragment](assets/getting-started-fragment.zip) op uw vaste schijf.
 
-* ZIP-bestanden importeren in AEM [pakketbeheer ](http://localhost:4502/crx/packmgr/index.jsp)
+* ZIP-bestanden importeren in AEM [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Volgende stappen
 

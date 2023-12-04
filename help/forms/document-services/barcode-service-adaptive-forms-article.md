@@ -8,9 +8,10 @@ role: Developer
 level: Intermediate
 exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
 last-substantial-update: 2020-02-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 169
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Dit artikel toont het gebruik van de streepjescodeservice voor het invullen van 
 1. De gebruiker voegt PDF met streepjescode toe als adaptieve formulierbijlage
 1. Het pad van de bijlage wordt naar de servlet verzonden
 1. De servlet decodeerde de streepjescode en retourneert de gegevens in JSON-indeling
-1. Het adaptieve formulier wordt vervolgens gevuld met behulp van de gedecodeerde gegevens
+1. Het adaptieve formulier wordt vervolgens ingevuld met de gedecodeerde gegevens
 
 De volgende code decodeert de streepjescode en vult een JSON-object met de gedecodeerde waarden. De servlet retourneert vervolgens het JSON-object in zijn reactie op de aanroepende toepassing.
 
@@ -133,7 +134,7 @@ $(document).ready(function()
 >
 >Het adaptieve formulier dat bij dit pakket is geleverd, is gemaakt met AEM Forms 6.4. Als u dit pakket wilt gebruiken in de AEM Forms 6.3-omgeving, maakt u het adaptieve formulier in AEM formulier 6.3
 
-Regel 12 - de code van de douane om de dienstoplosser te krijgen. Deze bundel maakt deel uit van deze artikelen.
+Regel 12 - de code van de douane om de dienstoplosser te krijgen. Deze bundel is opgenomen als onderdeel van deze artikelen.
 
 Regel 23 - Roep de methode DocumentServices extractBarCode aan om het JSON-object te krijgen dat is gevuld met gedecodeerde gegevens
 

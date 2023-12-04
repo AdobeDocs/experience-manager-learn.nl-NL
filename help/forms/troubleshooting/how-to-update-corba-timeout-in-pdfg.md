@@ -1,6 +1,6 @@
 ---
 title: Hoe te om onderbreking CORBA in PDFG bij te werken om de kwesties van het terugdraaien van transacties te verlichten?
-description: CORBA-time-out configureren in AEM Forms PDF Generator om problemen op te lossen die te maken hebben met het terugdraaien van transacties
+description: CORBA-time-out in AEM Forms PDF Generator configureren om problemen op te lossen die te maken hebben met het terugdraaien van transacties
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -9,7 +9,8 @@ feature: PDF Generator
 topic: Administration
 index: y
 exl-id: 397f5580-d982-46f3-b63a-7fc6def07ec5
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 140
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 0%

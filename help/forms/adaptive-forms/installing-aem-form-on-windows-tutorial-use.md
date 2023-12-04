@@ -9,9 +9,10 @@ role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 757c8ad251d058bbe48cc3cd354fec533ec4e968
+duration: 158
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 >
 >Zorg er ook voor dat het pad naar de installatiemap van AEM Forms geen spaties bevat.
 >
->Installeer AEM Forms bijvoorbeeld niet in c:\jack and jill\AEM Forms folder
+>Installeer AEM Forms bijvoorbeeld niet in de map c:\jack en jill\AEM Forms
 
 >[!NOTE]
 >
@@ -35,11 +36,10 @@ ht-degree: 0%
 >* Microsoft Visual C++ 2012 herdistribueerbaar
 >* Microsoft Visual C++ 2013 herdistribueerbaar (vanaf 6.5)
 
-
 Hoewel we het volgende aanbevelen [officiële documentatie](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) voor het installeren van AEM Forms. U kunt de volgende stappen volgen om AEM Forms in Windows-omgeving te installeren en configureren:
 
 * Zorg ervoor dat de juiste JDK is geïnstalleerd
-   * AEM 6.2 hebt u nodig: Oracle SE 8 JDK 1.8.x (64-bits)
+   * AEM 6.2 hebt u nodig: Oracle SE 8 JDK 1.8.x (64 bits)
    * AEM 6.3 en AEM 6.4 hebt u nodig: Oracle SE 8 JDK 1.8.x (64-bits)
    * AEM 6.5 hebt u JDK 8 of JDK 11 nodig
    * [Officiële JDK-vereisten](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=en) hier vermeld
@@ -50,31 +50,31 @@ Hoewel we het volgende aanbevelen [officiële documentatie](https://helpx.adobe.
       * Stel de waarde van de variabele in op de JDK die op uw systeem is geïnstalleerd. Bijvoorbeeld c:\program files\java\jdk1.8.0_25
 
 * Maak een map met de naam AEMForms op station C
-* Zoek het bestand AEMQuickStart.Jar en verplaats het naar de map AEMForms
+* Zoek AEMQuickStart.Jar en verplaats het naar de map AEMForms
 * Kopieer het bestand license.properties naar deze map van AEMForms
 * Maak een batchbestand met de naam &quot;StartAemForms.bat&quot; met de volgende inhoud:
    * `java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui`
       * Hier AEM_6.5_Quickstart.jar is de naam van mijn AEM quickstart jar.
    * U kunt de naam van de jar wijzigen, maar zorg dat de naam wordt weergegeven in het batchbestand. Sla het batchbestand op in de map AEMForms.
 
-* Open een nieuwe bevelherinnering, en navigeer aan _c:\aemforms_.
+* Een nieuwe opdrachtprompt openen en naar _c:\aemforms_.
 
 * Voer het StartAemForms.bat- dossier van de bevelherinnering uit.
 
 * Er moet een klein dialoogvenster verschijnen waarin de voortgang van het opstarten wordt aangegeven.
 
-* Wanneer het opstarten is voltooid, opent u het bestand sling.properties. U vindt deze in c:\AEMForms\crx-quickstart\conf folder.
+* Wanneer het opstarten is voltooid, opent u het bestand sling.properties. U vindt deze in de map c:\AEMForms\crx-quickstart\conf.
 
 * Kopieer de volgende twee regels naar de onderkant van het bestand
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
-* Deze twee eigenschappen zijn vereist voor documentservices om te kunnen werken
+* Deze twee eigenschappen zijn vereist voor documentservices die werken
 * Het bestand sling.properties opslaan
 * [Download het juiste adrespakket voor formulieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
 * De toegevoegde formulieren op het pakket installeren met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp).
 * Nadat u het pakket hebt geïnstalleerd, moet u de volgende stappen volgen
 
    * **Zorg ervoor dat alle bundels actief zijn. (Met uitzondering van de bundel voor AEMFD-handtekeningen).**
-   * **Het duurt meestal 5 of meer minuten voordat alle bundels actief worden.**
+   * **Doorgaans duurt het 5 of meer minuten voordat alle bundels actief worden.**
 
    * **Zodra alle bundels actief zijn (behalve de bundel van Handtekeningen AEMFD), begin uw systeem opnieuw om de installatie van AEM Forms te voltooien**
 
@@ -86,4 +86,4 @@ Hoewel we het volgende aanbevelen [officiële documentatie](https://helpx.adobe.
 1. Sla de wijzigingen op.
 
 Gefeliciteerd!! U hebt nu AEM Forms op uw systeem geïnstalleerd en geconfigureerd.
-Afhankelijk van uw behoeften kunt u configureren  [Reader-extensies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) of [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) op uw server
+Afhankelijk van uw behoeften kunt u configureren  [Reader-extensies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) of [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) op uw server

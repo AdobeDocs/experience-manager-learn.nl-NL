@@ -2,20 +2,18 @@
 title: Samenstellen en implementeren
 description: Adobe Cloud Manager vereenvoudigt het samenstellen van code en implementaties tot AEM as a Cloud Service. De mislukkingen kunnen tijdens stappen in het bouwstijlproces voorkomen, die actie vereisen om hen op te lossen. Deze gids loopt door het begrip gemeenschappelijke mislukkingen in de plaatsing, en hoe te om hen het best te benaderen.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5434
 thumbnail: kt-5424.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 694
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2523'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---

@@ -11,42 +11,43 @@ last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 532
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
 # Voorvertoning van inhoudsfragment
 
-AEM toepassingen zonder koppen ondersteunen geïntegreerde ontwerpvoorvertoning. De ervaring in de voorvertoning koppelt de Inhoudsfragmenteditor van de AEM-auteur aan uw aangepaste app (adresseerbaar via HTTP), zodat er een uitgebreide koppeling kan plaatsvinden in de app die de voorvertoning van het Inhoudsfragment weergeeft.
+AEM toepassingen zonder koppen ondersteunen geïntegreerde ontwerpvoorvertoning. De voorvertoning koppelt de AEM Inhoudsfragmenteditor van de auteur aan uw aangepaste app (adresseerbaar via HTTP), zodat er een diepe koppeling ontstaat naar de app die de voorvertoning van het Inhoudsfragment weergeeft.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Aan verschillende voorwaarden moet zijn voldaan om een voorbeeld van een inhoudsfragment te kunnen gebruiken:
 
 1. De app moet worden geïmplementeerd op een URL die toegankelijk is voor auteurs
-1. De app moet zo zijn geconfigureerd dat deze verbinding maakt met de AEM-auteurservice (in plaats van met de AEM-publicatieservice)
+1. De app moet zijn geconfigureerd om verbinding te maken met AEM Auteur-service (in plaats van de AEM Publish-service)
 1. De app moet zijn ontworpen met URL&#39;s of routes die kunnen worden gebruikt [Pad of id van inhoudsfragment](#url-expressions) om de Content Fragments te selecteren om voor voorproef in app ervaring te tonen.
 
 ## Voorvertoning van URL&#39;s
 
-URL&#39;s voorvertonen met [URL-expressies](#url-expressions), worden ingesteld in de eigenschappen van het inhoudsfragmentmodel.
+Voorvertoning van URL&#39;s weergeven met [URL-expressies](#url-expressions), worden ingesteld in de eigenschappen van het inhoudsfragmentmodel.
 
 ![Voorvertoning-URL van inhoudsfragmentmodel](./assets/preview/cf-model-preview-url.png)
 
-1. Aanmelden bij de AEM Author-service als beheerder
+1. Aanmelden bij AEM Auteur-service als beheerder
 1. Navigeren naar __Gereedschappen > Algemeen > Modellen van inhoudsfragmenten__
-1. Selecteer __Inhoudsfragmentmodel__ en selecteert u __Eigenschappen__ van de bovenste actiebalk.
+1. Selecteer de __Inhoudsfragmentmodel__ en selecteert u __Eigenschappen__ van de bovenste actiebalk.
 1. Geef de URL van de voorvertoning voor het inhoudsfragmentmodel op met [URL-expressies](#url-expressions)
-   + De URL van de voorvertoning moet verwijzen naar een implementatie van de app die verbinding maakt met de AEM-auteurservice.
+   + De URL van de voorvertoning moet verwijzen naar een implementatie van de app die verbinding maakt met AEM Auteur-service.
 
 ### URL-expressies
 
 Elk inhoudsfragmentmodel kan een voorbeeld-URL hebben. De URL van de voorvertoning kan per inhoudsfragment worden geparametriseerd met behulp van de URL-expressies die in de onderstaande tabel worden vermeld. Meerdere URL-expressies kunnen worden gebruikt in één voorbeeld-URL.
 
-|  | URL-uitdrukking | Waarde |
+|                                         | URL-uitdrukking | Waarde |
 | --------------------------------------- | ----------------------------------- | ----------- |
 | Pad inhoudfragment | `${contentFragment.path}` | `/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali` |
 | Inhoudsfragment-id | `${contentFragment.id}` | `12c34567-8901-2aa3-45b6-d7890aa1c23c` |

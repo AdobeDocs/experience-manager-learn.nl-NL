@@ -2,24 +2,22 @@
 title: Kanaaldocument afdrukken genereren door gegevens samen te voegen
 description: Leer hoe u een document met een afdrukkanaal genereert door de gegevens in de invoerstroom samen te voegen
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 223
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
-# Kanaaldocumenten afdrukken met behulp van verzonden gegevens
+# Kanaaldocumenten afdrukken met ingediende gegevens
 
 Afdrukkanaaldocumenten worden doorgaans gegenereerd door gegevens op te halen van een gegevensbron op de achtergrond via de ophalen-service van het formuliergegevensmodel. In sommige gevallen moet u mogelijk afdrukkanaaldocumenten genereren met de verschafte gegevens. De klant vult bijvoorbeeld de wijziging van het formulier in en u wilt mogelijk een document voor het afdrukkanaal genereren met gegevens uit het verzonden formulier. Om dit te bereiken moet deze gebruikscase de volgende stappen volgen
 
@@ -179,7 +177,7 @@ Voer de volgende stappen uit om dit op uw server te testen:
 
 * [Open ChangeOfBeneficiaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * Zorg ervoor dat het adaptieve formulier is geconfigureerd voor verzending naar AEM workflow, zoals hieronder wordt weergegeven
-   ![afbeelding](assets/generateic.PNG)
+  ![afbeelding](assets/generateic.PNG)
 * [Configureer het workflowmodel.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Zorg ervoor dat de processtap en het verzenden van e-mailcomponenten zijn geconfigureerd volgens uw omgeving
 * [Geef een voorvertoning weer van het formulier ChangeOfBeneficiary.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Vul enkele details in en verzend
 * De workflow moet worden aangeroepen en het document met het IC-afdrukkanaal moet worden verzonden naar de ontvanger die is opgegeven in het onderdeel E-mail verzenden als bijlage

@@ -10,16 +10,17 @@ recommendations: noDisplay, noCatalog
 jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+duration: 665
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
 
 # Een extensie verifiëren
 
-AEM UI-extensies kunnen worden geverifieerd op basis van AEM as a Cloud Service omgeving in de Adobe Org waarvan de extensie behoort.
+AEM UI-extensies kunnen worden geverifieerd op basis van AEM as a Cloud Service omgeving in de Adobe of de extensie tot behoort.
 
 Het testen van een extensie wordt uitgevoerd via een speciaal gemaakte URL die AEM de instructie geeft de extensie alleen voor die aanvraag te laden.
 
@@ -31,14 +32,14 @@ Het testen van een extensie wordt uitgevoerd via een speciaal gemaakte URL die A
 
 ## URL AEM
 
-![URL van AEM Content Fragment Console](./assets/verify/content-fragment-console-url.png){align="center"}
+![URL van console-AEM voor inhoudsfragmenten](./assets/verify/content-fragment-console-url.png){align="center"}
 
 Als u een URL wilt maken die de extensie non-production in AEM koppelt, moet de URL van de AEM UI waarin de extensie wordt geïnjecteerd, worden verkregen. Navigeer naar de AEM as a Cloud Service omgeving om de extensie te controleren en open de interface waarin de extensie moet worden voorvertoond.
 
 Als u bijvoorbeeld een extensie wilt voorvertonen voor de Content Fragment-console:
 
 1. Meld u aan bij de gewenste AEM as a Cloud Service omwenteling.
-2. Selecteer __Inhoudsfragmenten__ pictogram.
+2. Selecteer de __Inhoudsfragmenten__ pictogram.
 3. Wacht tot de AEM Content Fragment Console in de browser is geladen.
 4. Kopieer de URL van de AEM Content Fragment Console van de adresbalk van de browser en het lijkt erop:
 
@@ -70,7 +71,7 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, gewoonlijk `&ext=https://localhost:9080`.
 
-   Voeg de twee bovenstaande queryparameters toe (`devMode` en `ext`) als de __first__ query-parameters in de URL. AEM verlengbare UI gebruikshash routes (`#/@wknd/aem/...`), zodat de parameters na de `#` werkt niet.
+   Twee bovenstaande queryparameters toevoegen (`devMode` en `ext`) als __first__ query-parameters in de URL. AEM verlengbare UI gebruikshash routes (`#/@wknd/aem/...`), zodat de parameters na de `#` werkt niet.
 
    De voorbeeld-URL moet er als volgt uitzien:
 
@@ -99,7 +100,7 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
 
    Alle wijzigingen samenvoegen in `.env` en `.aio`.
 
-1. Implementeer de bijgewerkte extensie App Builder-app. Als u zich niet hebt aangemeld, uitvoeren `aio login` eerst.
+1. Implementeer de bijgewerkte app App Builder. Als u zich niet hebt aangemeld, uitvoeren `aio login` eerst.
 
    ```shell
    $ aio app deploy
@@ -119,7 +120,7 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
-   Voeg de twee bovenstaande queryparameters toe (`devMode` en `ext`) als de __first__ de vraagparameters in URL, als verlengbare AEM UIs gebruiken een knoeiboelroute (`#/@wknd/aem/...`), zodat de parameters na de `#` werkt niet.
+   Twee bovenstaande queryparameters toevoegen (`devMode` en `ext`) als __first__ de vraagparameters in URL, als verlengbare AEM UIs gebruiken een knoeiboelroute (`#/@wknd/aem/...`), zodat de parameters na de `#` werkt niet.
 
    De voorbeeld-URL moet er als volgt uitzien:
 
@@ -130,7 +131,7 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
 1. Kopieer en plak de URL van de voorvertoning in uw browser.
 1. Met de AEM Content Fragment Console wordt de versie van de extensie geïnjecteerd die is geïmplementeerd in de werkruimte van het werkgebied. Deze werkgebied-URL kan ter verificatie worden gedeeld met een kwaliteitscontrole of zakelijke gebruikers.
 
-Houd er rekening mee dat wanneer u deze methode gebruikt, de extensie Staged alleen wordt geïnjecteerd op AEM Content Fragment Console&#39;s bij toegang tot de URL van het werkgebied van het vaartuig.
+Houd er rekening mee dat wanneer u deze methode gebruikt, de extensie Staged alleen wordt geïnjecteerd op AEM Content Fragment Console&#39;s wanneer u toegang hebt tot de URL van het werkgebied van het vaartuig.
 
 1. Ingevoerde extensies kunnen worden bijgewerkt door `aio app deploy` en deze wijzigingen worden automatisch doorgevoerd wanneer u de voorbeeld-URL gebruikt.
 1. Als u een extensie voor verificatie wilt verwijderen, voert u `aio app undeploy`.

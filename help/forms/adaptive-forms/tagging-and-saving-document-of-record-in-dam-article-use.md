@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 274
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 Dit artikel zal door het gebruik geval lopen van het opslaan en etiketteren van DoR die door AEM Forms in AEM DAM wordt geproduceerd. Het document wordt gelabeld op basis van de verzonden formuliergegevens.
 
-Een veelvoorkomende vraag van klanten is om het Document of Record (DoR) dat door AEM Forms is gegenereerd, op te slaan en te labelen in AEM DAM. De codering van het document moet gebaseerd zijn op de door Adaptive Forms ingediende gegevens. Als de werkgelegenheidsstatus in de verzonden gegevens bijvoorbeeld &quot;In ruste&quot; is, willen we het document labelen met de tag &quot;In ruste&quot; en het document opslaan in DAM.
+Een veelvoorkomende vraag van klanten is het opslaan en labelen van het Document of Record (DoR) dat door AEM Forms in AEM DAM wordt gegenereerd. De codering van het document moet gebaseerd zijn op de door Adaptive Forms ingediende gegevens. Als de werkgelegenheidsstatus in de verzonden gegevens bijvoorbeeld &quot;In ruste&quot; is, willen we het document labelen met de tag &quot;In ruste&quot; en het document opslaan in DAM.
 
 Het gebruiksgeval is als volgt:
 
@@ -169,7 +170,7 @@ Volg onderstaande stappen om dit voorbeeld op uw systeem te laten werken:
 
 * [Artikelelementen importeren](assets/tag-and-store-in-dam-assets.zip) met AEM pakketbeheer
 * Open de [voorbeeldformulier in voorbeeldmodus](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Alle velden invullen** en het formulier verzenden.
-* [Navigeren naar de map Peak in DAM](http://localhost:4502/assets.html/content/dam/Peak). U zou DoR in de Piek omslag moeten zien. Controleer de eigenschappen van het document. Het moet op passende wijze worden gelabeld.
+* [Navigeren naar de map Peak in DAM](http://localhost:4502/assets.html/content/dam/Peak). U zou DoR in de Piekomslag moeten zien. Controleer de eigenschappen van het document. Het moet op passende wijze worden gelabeld.
 Gefeliciteerd! U hebt het voorbeeld op uw systeem geïnstalleerd
 
 * Laten we de [werkstroom](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) die wordt geactiveerd bij het verzenden van het formulier.

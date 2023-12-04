@@ -1,21 +1,17 @@
 ---
 title: Trigger AEM workflow voor HTML5-formulierverzending - Aangepast profiel maken
-seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
-seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: b6e3acee-4a07-4d00-b3a1-f7aedda21e6e
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+duration: 151
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -151,4 +147,4 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 U kunt als volgt de mogelijkheid weergeven om interactieve PDF te downloaden van een gedeeltelijk voltooid mobiel formulier: [klik hier](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
 Wanneer de PDF is gedownload, moet u de PDF indienen om een AEM workflow te activeren. Deze workflow voegt de gegevens van de verzonden PDF samen en genereert niet-interactieve PDF voor revisie.
 
-Het aangepaste profiel dat voor dit gebruiksgeval is gemaakt, is beschikbaar als onderdeel van deze zelfstudie.
+Het aangepaste profiel dat voor dit gebruiksgeval is gemaakt, is beschikbaar als onderdeel van deze zelfstudie-elementen.

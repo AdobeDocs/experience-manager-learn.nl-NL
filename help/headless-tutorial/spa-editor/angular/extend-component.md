@@ -2,10 +2,7 @@
 title: Een component uitbreiden | Aan de slag met de AEM SPA Editor en Angular
 description: Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Redacteur van de SPA van de AEM moet worden gebruikt. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden. Leer om het delegatiepatroon te gebruiken voor het uitbreiden van Sling Models en eigenschappen van het Verkopen van Middel.
 feature: SPA Editor, Core Components
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-5871
 thumbnail: 5871-spa-angular.jpg
 topic: SPA
@@ -13,9 +10,10 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 621
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -261,7 +259,7 @@ Ga terug naar de IDE van uw keuze en open de `core` -module.
 
    Deze methoden worden beschikbaar gemaakt via de JSON-model-API en doorgegeven aan de Angular-component.
 
-3. Open `CardImpl.java`. Dit is de uitvoering van `Card.java` interface. Deze implementatie is gedeeltelijk stopgezet om de zelfstudie te versnellen.  Let op het gebruik van de `@Model` en `@Exporter` annotaties die ervoor zorgen dat het verkoopmodel met serienummering kan worden gecodeerd als JSON via de verkoopmodel-exportfunctie.
+3. Openen `CardImpl.java`. Dit is de uitvoering van `Card.java` interface. Deze implementatie is gedeeltelijk stopgezet om de zelfstudie te versnellen.  Let op het gebruik van de `@Model` en `@Exporter` annotaties die ervoor zorgen dat het verkoopmodel met serienummering kan worden gecodeerd als JSON via de verkoopmodel-exportfunctie.
 
    `CardImpl.java` gebruikt ook [Delegatiepatroon voor verkoopmodellen](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) om te voorkomen dat de logica wordt herschreven van de Image Core-component.
 

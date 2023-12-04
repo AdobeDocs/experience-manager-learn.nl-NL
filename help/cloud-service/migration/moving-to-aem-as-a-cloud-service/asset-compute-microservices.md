@@ -9,10 +9,11 @@ level: Experienced
 jira: KT-8635
 thumbnail: 336990.jpeg
 exl-id: 327e8663-086b-4b31-b159-a0cf30480b45
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1006
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 1%
+source-wordcount: '291'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +25,7 @@ Leer hoe u met de asset compute-microservices van AEM Assets as a Cloud Service 
 
 ## Workflow-migratiehulpprogramma
 
-![De tool Asset Workflow Migration](./assets/asset-workflow-migration.png)
+![Hulpprogramma voor migratie van workflows](./assets/asset-workflow-migration.png)
 
 Als deel van het refactoring van uw codebasis, gebruik [Hulpprogramma voor workflowmigratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html) bestaande workflows migreren om de Asset compute microservices in AEM as a Cloud Service te gebruiken.
 

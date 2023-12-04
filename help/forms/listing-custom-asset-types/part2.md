@@ -1,12 +1,8 @@
 ---
 title: Aangepaste assettypen aanbieden in AEM Forms
 description: Deel 2 van Aangepaste assettypen in AEM Forms
-uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
 topic: Development
@@ -14,9 +10,10 @@ role: Developer
 level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
 last-substantial-update: 2019-07-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 184
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 In het kader van dit artikel maken we een aangepaste sjabloon om de typen aangepaste elementen en de typen OOTB-elementen op dezelfde pagina weer te geven. Volg de onderstaande instructies om een aangepaste sjabloon te maken
 
-1. Een schuine streep maken: map onder /apps. Geef het veld de naam &quot; myportalcomponent &quot;
+1. Een deelmap maken: onder /apps. Geef het veld de naam &quot; myportalcomponent &quot;
 1. Voeg een eigenschap &quot;fpContentType&quot; toe. Stel de waarde in op &quot;**/libs/fd/ fp/formTemplate&quot;.**
 1. Voeg een eigenschap &quot;title&quot; toe en stel de waarde ervan in op &quot;custom template&quot;. Dit is de naam die u zult zien in de vervolgkeuzelijst van de component Search and Lister
 1. Maak een &#39;&#39;template.html&#39;&#39; in deze map. Dit bestand bevat de code voor het opmaken en weergeven van de verschillende elementtypen.
@@ -78,7 +75,7 @@ De volgende code geeft een overzicht van de verschillende typen elementen die de
 
 ## De component Search en Lister configureren {#configure-search-and-lister-component}
 
-Zodra wij het douanemalplaatje hebben bepaald, moeten wij dit douanemalplaatje met de component &quot;van het Onderzoek en van de Registratie&quot;associëren. Wijs uw browser aan [naar deze URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Zodra wij het douanemalplaatje hebben bepaald, moeten wij dit douanemalplaatje met de component &quot;van het Onderzoek en van de Registratie&quot;associëren. Wijs uw browser aan [naar deze URL](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Schakel over naar de ontwerpmodus en configureer het alineasysteem om de component Zoeken en registreren op te nemen in de toegestane componentengroep. De component Search en Lister maakt deel uit van de groep Document Services.
 
@@ -91,7 +88,7 @@ Open de configuratie-eigenschappen van de component &quot;Search and Lister&quot
 
 ![assetmap](assets/selectingassetfolders.png)
 
-Tab naar het tabblad &quot;Weergave&quot;. Hier kiest u de sjabloon die u wilt weergeven in de zoekopdracht en de bibliotheekcomponent.
+Tab naar het tabblad Weergave. Hier kiest u de sjabloon die u wilt weergeven in de zoekopdracht en de bibliotheekcomponent.
 
 Selecteer &#39;aangepaste sjabloon&#39; in de vervolgkeuzelijst, zoals hieronder wordt weergegeven.
 
@@ -106,13 +103,13 @@ Vorm de types van activa die u in het portaal wilt een lijst maken. De typen ele
 
 Het volgende het schermschot toont u de activa die voor lijst worden gevormd
 
-![assetypen](assets/assettypes.png)
+![assettypen](assets/assettypes.png)
 
-Nu u uw Onderzoek en de Kleine Component van het Portaal hebt gevormd, is het tijd om de lijst in actie te zien. Wijs uw browser aan [naar deze URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). De resultaten moeten ongeveer overeenkomen met de onderstaande afbeelding.
+Nu u uw Onderzoek en de Kleine Component van het Portaal hebt gevormd, is het tijd om de lijst in actie te zien. Wijs uw browser aan [naar deze URL](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). De resultaten moeten ongeveer overeenkomen met de onderstaande afbeelding.
 
 >[!NOTE]
 >
 >Als in uw portal aangepaste elementtypen worden vermeld op een publicatieserver, moet u de gebruiker &quot;read&quot; toestemming geven voor het verzenden van het knooppunt **/apps/fd/fp/extensions/querybuilder**
 
-![assetypen](assets/assettypeslistings.png)
+![assettypen](assets/assettypeslistings.png)
 [Download en installeer dit pakket met pakketbeheer.](assets/customassettypekt1.zip) Dit bevat voorbeeld-mp4- en tekstdocumenten en xdp-bestanden die worden gebruikt als elementtypen om te worden weergegeven met de component search en lister

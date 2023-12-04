@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+duration: 199
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Een bundel OSGi is een Java™ archiefdossier dat code Java, middelen, en manife
 
 ## JDK installeren
 
-Installeer de ondersteunde versie van JDK. Ik heb JDK1.8 gebruikt. Zorg ervoor dat u hebt toegevoegd **JAVA_HOME** in uw omgevingsvariabelen en verwijst naar de hoofdmap van uw JDK-installatie.
+De ondersteunde versie van JDK installeren. Ik heb JDK1.8 gebruikt. Zorg ervoor dat u hebt toegevoegd **JAVA_HOME** in uw milieuvariabelen en wijst naar de wortelomslag van uw installatie JDK.
 De %JAVA_HOME%/bin toevoegen aan het pad
 
 ![gegevensbron](assets/java-home.JPG)
@@ -32,7 +33,7 @@ De %JAVA_HOME%/bin toevoegen aan het pad
 
 ### Uw JDK-versie testen
 
-Open een nieuw opdrachtpromptvenster en typ: `java -version`. U moet de JDK-versie die door de `JAVA_HOME` variabele
+Open een nieuw opdrachtpromptvenster en typ: `java -version`. U moet de JDK-versie die door de `JAVA_HOME` variabel
 
 ![gegevensbron](assets/java-version.JPG)
 
@@ -51,13 +52,13 @@ Maven is een tool voor automatisering van build die voornamelijk wordt gebruikt 
 ![gegevensbron](assets/mvn-version.JPG)
 
 
-## Verduistering installeren
+## Eclipse installeren
 
 De nieuwste versie van [verduisteren](https://www.eclipse.org/downloads/)
 
 ## Uw eerste project maken
 
-Archetype is een Maven project sjabloonkit. Een archetype wordt gedefinieerd als een origineel patroon of model waaruit alle andere dingen van dezelfde soort zijn gemaakt. De naam past bij de manier waarop we proberen een systeem te bieden dat een consistente manier biedt om Maven-projecten te genereren. Archetype helpt auteurs Maven projectmalplaatjes voor gebruikers, en voorziet gebruikers van de middelen om geparameterized versies van die projectmalplaatjes te produceren.
+Archetype is een Maven project sjabloonkit. Een archetype wordt gedefinieerd als een origineel patroon of model waaruit alle andere dingen van dezelfde soort zijn gemaakt. De naam past bij de manier waarop we proberen een systeem te bieden dat een consistente manier biedt om Maven-projecten te genereren. Archetype helpt auteurs Maven projectmalplaatjes voor gebruikers tot stand brengen, en voorziet gebruikers van de middelen om geparameterized versies van die projectmalplaatjes te produceren.
 Voer de volgende stappen uit om uw eerste gemaakte project te maken:
 
 * Een nieuwe map maken met de naam `aemformsbundles` in uw C-station
@@ -83,9 +84,9 @@ Ga naar **Bestand -> Importeren** en selecteert u **Bestaande Maven Projecten** 
 
 ![gegevensbron](assets/import-mvn-project.JPG)
 
-Klik op Next
+Klik op Volgende
 
-Selecteer de map c:\aemformsbundles\mysite by clicking the **Bladeren** knop
+Selecteer de site C:\aemformsbundles\mijndoor op de knop **Bladeren** knop
 
 ![gegevensbron](assets/mysite-eclipse-project.png)
 
@@ -115,10 +116,10 @@ U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren 
 Voer de volgende stappen uit om uw project te maken:
 
 * Openen **opdrachtpromptvenster**
-* Ga naar `c:\aemformsbundles\mysite\core`
+* Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
 Bovenstaande opdracht bouwt en installeert de bundel op de AEM server waarop `http://localhost:4502`. De bundel is ook beschikbaar in het bestandssysteem op
-   `C:\AEMFormsBundles\mysite\core\target` en kan worden ingezet met behulp van [Felix-webconsole](http://localhost:4502/system/console/bundles)
+  `C:\AEMFormsBundles\mysite\core\target` en kan worden ingezet met behulp van [Felix-webconsole](http://localhost:4502/system/console/bundles)
 
 ## Volgende stappen
 

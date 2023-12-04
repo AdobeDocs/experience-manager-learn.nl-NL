@@ -1,19 +1,15 @@
 ---
 title: AEM Forms met JSON-schema en -gegevens[Deel3]
-seo-title: AEM Forms with JSON Schema and Data[Part3]
 description: Zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een adaptief formulier met JSON-schema en het opvragen van de verzonden gegevens.
-seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 163
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -25,7 +21,7 @@ ht-degree: 0%
 
 Als u een query wilt uitvoeren op de verzonden gegevens, moet u het JSON-schema opslaan dat is gekoppeld aan het verzonden formulier. Het schema JSON wordt gebruikt in de vraagbouwer om de vraag te bouwen.
 
-Wanneer een Adaptief formulier wordt verzonden, controleren we of het bijbehorende JSON-schema zich in de database bevindt. Als het JSON-schema niet bestaat, wordt het JSON-schema opgehaald en wordt het schema in de juiste tabel opgeslagen. We koppelen de formuliernaam ook aan het JSON-schema. In de volgende schermafbeelding ziet u de tabel waarin de JSON-schema&#39;s zijn opgeslagen.
+Wanneer een Adaptief formulier wordt verzonden, controleren we of het bijbehorende JSON-schema zich in de database bevindt. Als het JSON-schema niet bestaat, wordt het JSON-schema opgehaald en wordt het schema in de juiste tabel opgeslagen. De formuliernaam wordt ook gekoppeld aan het JSON-schema. In de volgende schermafbeelding ziet u de tabel waarin de JSON-schema&#39;s zijn opgeslagen.
 
 ![jsonschema](assets/jsonschemas.gif)
 
@@ -148,7 +144,7 @@ public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
 Om samen te vatten hebben we tot nu toe het volgende gedaan
 
 * Adaptief formulier maken op basis van JSON-schema
-* Als het formulier de eerste keer wordt verzonden, wordt het JSON-schema dat aan het formulier is gekoppeld, opgeslagen in de database.
+* Als het formulier de eerste keer wordt verzonden, wordt het JSON-schema opgeslagen dat aan het formulier is gekoppeld in de database.
 * De gebonden gegevens van het adaptieve formulier worden opgeslagen in de database.
 
 De volgende stappen zouden moeten gebruiken QueryBuilder om de gebieden aan onderzoek te tonen die op het Schema JSON worden gebaseerd

@@ -9,9 +9,10 @@ level: Intermediate
 jira: KT-10831
 thumbnail: KT-10831.jpg
 exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 714
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -27,9 +28,9 @@ Een AEM Headless-app communiceert doorgaans met één AEM voor zowel GraphQL API
 
 | AEM implementatietype voor headless | AEM | AEM |
 |-------------------------------|:---------------------:|:----------------:|
-| Productie | Productie | Publicatie |
+| Productie | Productie | Publiceren |
 | Voorvertoning ontwerpen | Productie | Voorvertoning |
-| Ontwikkeling | Ontwikkeling | Publicatie |
+| Ontwikkeling | Ontwikkeling | Publiceren |
 
 Om plaatsingstype permutaties te behandelen, wordt elke app plaatsing gebouwd gebruikend een configuratie die de AEM te verbinden dienst specificeert. De host/het domein van de geconfigureerde AEM service wordt vervolgens gebruikt om de AEM GraphQL API-URL&#39;s en afbeeldings-URL&#39;s samen te stellen. Als u de juiste benadering voor het beheer van build-afhankelijke configuraties wilt bepalen, raadpleegt u de documentatie van de AEM Headless-app (bijvoorbeeld React, iOS, Android™, enzovoort), aangezien de aanpak per framework verschilt.
 

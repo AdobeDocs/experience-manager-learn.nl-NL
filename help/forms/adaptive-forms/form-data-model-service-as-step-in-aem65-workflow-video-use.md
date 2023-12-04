@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 259
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 Vanaf AEM Forms 6.4 kunnen we nu Form Data Model Service gebruiken als onderdeel van AEM Workflow. De volgende video loopt door de stappen nodig om de stap van het Model van de Gegevens van de Vorm in AEM Werkschema te vormen
 
->!![NOTE]Voor de in deze video gedemonstreerde functionaliteit is AEM Forms 6.5.1 vereist
+>Voor de in deze video gedemonstreerde functionaliteit is AEM Forms 6.5.1 vereist
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
@@ -29,7 +30,7 @@ Volg onderstaande instructies om deze mogelijkheid op uw server te testen
 
 * Setup tomcat met SampleRest.war-bestand zoals beschreven [hier](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).Het oorlogsdossier in Tomcat heeft de code om de creditscore van de aanvrager terug te geven.De creditscore is een willekeurig getal tussen 200 en 800
 
-* [ Elementen in AEM importeren met pakketbeheer](assets/aem65-loanapplication.zip)
+* [Elementen in AEM importeren met pakketbeheer](assets/aem65-loanapplication.zip)
 * Het pakket bevat het volgende:
 
    * Workflowmodel dat gebruikmaakt van FDM-stap.

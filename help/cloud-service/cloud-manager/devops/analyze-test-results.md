@@ -9,10 +9,11 @@ feature: Developer Tools
 jira: KT-6917
 thumbnail: 330540.jpg
 exl-id: 2ddd241a-0e8a-4397-8006-6f807be4fb12
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 26
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 4%
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 4%
 >id="aemcloud_devops_testresult"
 >title="Testresultaten analyseren"
 >abstract="IExeer om het even welke compilatiefouten in uw code en of deze code best practices voor AEM as a Cloud Service volgt"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use" text="Inzicht in de testresultaten"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use" text="De testresultaten begrijpen"
 
 Onderzoek om het even welke compilatiefouten in uw code en of deze code best practices voor AEM as a Cloud Service volgt of niet
 

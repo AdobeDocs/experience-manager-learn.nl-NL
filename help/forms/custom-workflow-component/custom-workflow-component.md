@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 last-substantial-update: 2021-11-28T00:00:00Z
 exl-id: acc701ec-b57d-4c20-8f97-a5a69bb180cd
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 95
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -59,7 +60,7 @@ De cq:EditConfig is eenvoudig een knoop met het primaire type cq:EditConfig en d
 
 ![bewerken-config](assets/cq-edit-config.png)
 
-cq:formParameters (knooppunttype niet:unStructured): Hiermee definieert u aanvullende parameters die aan het dialoogvenster worden toegevoegd.
+cq:formParameters (knooppunttype nt:unStructured): definieert aanvullende parameters die aan het dialoogvenster worden toegevoegd.
 
 
 De eigenschappen van het knooppunt cq:formParameters

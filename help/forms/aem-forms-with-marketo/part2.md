@@ -9,9 +9,10 @@ level: Experienced
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 205
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 Marketo REST API&#39;s worden geverifieerd met OAuth 2.0 met twee poten. We moeten aangepaste verificatie maken voor verificatie op basis van Marketo. Deze aangepaste verificatie wordt doorgaans in een OSGI-bundel geschreven. De volgende code toont de aangepaste authenticator die is gebruikt als onderdeel van deze zelfstudie.
 
-## Aangepaste verificatieservice
+## Custom Authentication Service
 
 Met de volgende code wordt het object AuthenticationDetails gemaakt met het toegangs_token dat nodig is voor verificatie met Marketo
 

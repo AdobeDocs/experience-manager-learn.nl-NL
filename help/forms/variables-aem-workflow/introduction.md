@@ -8,16 +8,17 @@ role: Developer
 level: Beginner
 exl-id: e84b70a0-c51b-4fe3-80e8-f3156931297a
 last-substantial-update: 2020-01-26T00:00:00Z
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+duration: 40
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
 
 # Variabelen in AEM workflow
 
-Vanaf AEM 6.5 kunt u nu variabelen maken en gebruiken in AEM workflow. Voorafgaand aan deze mogelijkheid creëerden ontwerpers van workflows doorgaans sleutels met behulp van de metagegevenstoewijzing voor de workflow. Dit betekende het schrijven van wat douanecode om deze sleutels tot stand te brengen en te bevolken. Met deze nieuwe capaciteitsworkflow kunnen auteurs nu gemakkelijk variabelen maken en deze variabelen overal in de workflow gebruiken.
+Vanaf AEM 6.5 kunt u nu variabelen maken en gebruiken in AEM workflow. Voorafgaand aan deze mogelijkheid creëerden ontwerpers van workflows doorgaans sleutels met behulp van de metagegevenstoewijzing voor de workflow. Dit betekende het schrijven van één of andere douanecode om deze sleutels tot stand te brengen en te bevolken. Met deze nieuwe capaciteitsworkflow kunnen auteurs nu gemakkelijk variabelen maken en deze variabelen overal in de workflow gebruiken.
 
 De variabelen kunnen van de volgende types zijn
 

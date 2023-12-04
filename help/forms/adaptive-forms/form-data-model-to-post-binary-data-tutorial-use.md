@@ -8,9 +8,10 @@ role: Developer
 level: Intermediate
 exl-id: 9c62a7d6-8846-424c-97b8-2e6e3c1501ec
 last-substantial-update: 2021-01-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 127
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -43,7 +44,7 @@ Service-invoer
 >
 >Tips voor het oplossen van problemen - Als om een of andere reden DOR.pdf niet in DAM wordt gemaakt, herstelt u de instellingen voor gegevensbronverificatie door op [hier](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Dit zijn de instellingen voor AEM verificatie, die standaard admin/admin zijn.
 
-Volg onderstaande stappen om deze mogelijkheid op uw server te testen:
+Volg de onderstaande stappen om deze mogelijkheid op uw server te testen:
 
 1.[De gebruikersbundel DevelopingWithService implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 

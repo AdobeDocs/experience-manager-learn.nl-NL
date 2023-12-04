@@ -10,9 +10,10 @@ jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2511
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '3123'
+source-wordcount: '3137'
 ht-degree: 0%
 
 ---
@@ -395,7 +396,7 @@ AEM publiceer steunt één enkele het filterconfiguratie van de Referateur, zo f
 
 OSGi-configuraties per omgeving (`config.publish.dev`, `config.publish.stage`, en `config.publish.prod`) kan met specifieke kenmerken worden gedefinieerd als de `allow.hosts` (of `allow.hosts.regex`) verschilt per omgeving.
 
-## Configureer CORS (Cross-Origin Resource Sharing)
+## Resource Sharing (CORS) voor meerdere bronnen configureren
 
 Tijdens het de authentificatieproces van SAML, stelt IDP een cliënt-kant POST van HTTP in werking om te AEM publiceren `.../saml_login` eindpunt. Als IDP en AEM publiceren bestaan op verschillende gastheren/domeinen, AEM publiceren __CRoss-Origin Resource Sharing (CORS)__ moet worden gevormd om POSTs van HTTP van de gastheer/het domein van IDP toe te staan.
 

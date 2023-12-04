@@ -8,9 +8,10 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-09T00:00:00Z
 exl-id: d7887e2e-c2d4-4f0c-b117-ba7c41ea539a
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 147
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -18,10 +19,10 @@ ht-degree: 0%
 # PDF-documenten genereren met fragmenten{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-In dit artikel gebruiken we de uitvoerservice om PDF-bestanden te genereren met behulp van xdp-fragmenten. De hoofd xdp en de fragmenten verblijven in de crx bewaarplaats. Het is belangrijk dat u de mapstructuur van het bestandssysteem in AEM nabootst. Als u bijvoorbeeld een fragment in de fragmentmap in uw xdp gebruikt, moet u een map maken met de naam **fragmenten** onder de basismap in AEM. De basismap bevat uw basis-xdp-sjabloon. Bijvoorbeeld, als u de volgende structuur op uw dossiersysteem hebt
-* c:\xdptemplates - This will contain your base xdp template
-* c:\xdptemplates\fragments - This folder will contain fragments and the main template will reference the fragment as shown below
-   ![fragment-xdp](assets/survey-fragment.png).
+In dit artikel gebruiken we de uitvoerservice om PDF-bestanden te genereren met xdp-fragmenten. De hoofd xdp en de fragmenten verblijven in de crx bewaarplaats. Het is belangrijk dat u de mapstructuur van het bestandssysteem in AEM nabootst. Als u bijvoorbeeld een fragment in de fragmentmap in uw xdp gebruikt, moet u een map maken met de naam **fragmenten** onder de basismap in AEM. De basismap bevat uw basis-xdp-sjabloon. Bijvoorbeeld, als u de volgende structuur op uw dossiersysteem hebt
+* c:\xdptemplates - Deze bevat uw basis-xdp-sjabloon
+* c:\xdptemplates\fragments - Deze map bevat fragmenten en de hoofdsjabloon verwijst naar het fragment zoals hieronder wordt weergegeven
+  ![fragment-xdp](assets/survey-fragment.png).
 * De map xdpdocuments bevat uw basissjabloon en de fragmenten in **fragmenten** map
 
 U kunt de vereiste structuur maken met de [formulieren en document-ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
@@ -69,11 +70,11 @@ out.println("Document genreated and saved to " + filePath);
 * [Download en installeer het pakket met AEM pakketbeheer](assets/using-fragments-assets.zip)
 * [De voorbeeld-xdp en -fragmenten kunnen hier worden gedownload](assets/xdptemplates.zip)
 
-**Nadat u het pakket installeert, zult u volgende URLs in de Filter van CSRF van de Adobe moeten lijsten van gewenste personen Granite.**
+**Nadat u het pakket installeert, zult u volgende URLs in de Filter van de Adobe moeten lijsten van gewenste personen Granite CSRF.**
 
 1. Volg de onderstaande stappen om de hierboven vermelde paden te lijsten van gewenste personen.
 1. [Aanmelden bij configMgr](http://localhost:4502/system/console/configMgr)
-1. Zoeken naar Adobe Granite CSRF-filter
+1. Zoeken naar graniet-CSRF-filter voor Adobe
 1. Het volgende pad toevoegen aan de uitgesloten secties en opslaan
 1. /content/AemFormsSamples/usingfragments
 
@@ -82,6 +83,6 @@ Start de app en voer de volgende URL in om de API voor exportgegevens te testen
 
 Controleer of u &quot;POST&quot; hebt geselecteerd in de vervolgkeuzelijst http://localhost:4502/content/AemFormsSamples/usingfragments.html Controleer of u &quot;Autorisatie&quot; opgeeft als &quot;Basisauth&quot;. Geef de gebruikersnaam en het wachtwoord voor AEM server op en ga naar het tabblad Body en geef de aanvraagparameters op zoals in de onderstaande afbeelding wordt getoond
 ![export](assets/using-fragment-postman.png)
-Klik vervolgens op de knop Verzenden
+Klik vervolgens op Verzenden
 
 [U kunt deze postmanverzameling importeren om de API te testen](assets/usingfragments.postman_collection.json)

@@ -2,18 +2,16 @@
 title: CRXDE Lite
 description: CRXDE Lite is een klassiek, maar krachtig hulpmiddel voor het zuiveren AEM as a Cloud Service milieu's van de Ontwikkelaar. CRXDE Lite verstrekt een reeks van functionaliteit die het zuiveren van het inspecteren van alle middelen en eigenschappen, het manipuleren van de veranderlijke gedeelten van JCR en het onderzoeken van toestemmingen helpt.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 kt: KT-5481
 thumbnail: kt-5481.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f3f2c89f-6ec1-49d3-91c7-10a42b897780
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+duration: 168
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -24,16 +22,16 @@ ht-degree: 0%
 
 CRXDE Lite is __ALLEEN__ beschikbaar in AEM as a Cloud Service ontwikkelomgevingen (en de lokale AEM SDK).
 
-## CRXDE Lite benaderen op AEM-auteur
+## CRXDE Lite benaderen bij AEM auteur
 
 CRXDE Lite is __alleen__ toegankelijk zijn in AEM as a Cloud Service-ontwikkelingsomgevingen en __niet__ beschikbaar in werkgebied- of productieomgevingen.
 
-CRXDE Lite openen op AEM-auteur:
+CRXDE Lite benaderen op AEM auteur:
 
-1. Meld u aan bij de AEM as a Cloud Service AEM-auteurservice.
+1. Meld u aan bij de AEM as a Cloud Service AEM Auteur-service.
 1. Ga naar Gereedschappen > Algemeen > CRXDE Lite
 
-Hiermee wordt CRXDE Lite geopend met de referenties en machtigingen waarmee u zich aanmeldt bij de AEM-auteur.
+Hiermee wordt CRXDE Lite geopend met de referenties en machtigingen waarmee u zich aanmeldt bij AEM auteur.
 
 ## Fouten opsporen in inhoud
 
@@ -71,7 +69,7 @@ De resultaten worden hieronder weergegeven:
 + __Pad__ herhaalt de ingeslagen weg
 + __Opdrachtgever__ herhaalt de gebruiker of groep waarvoor het pad is geëvalueerd
 + __Principes__ maakt een lijst van alle principes het geselecteerde hoofd deel van is.
-   + Dit is nuttig om de transitieve groepslidmaatschappen te begrijpen die toestemmingen via overerving kunnen verstrekken
+   + Dit is nuttig om het overgangsgroepslidmaatschap te begrijpen dat toestemmingen via overerving kan verlenen
 + __Rechten op pad__ Hiermee worden alle JCR-machtigingen weergegeven die de geselecteerde principal op het geëvalueerde pad heeft
 
 ### Niet-ondersteunde foutopsporingsactiviteiten
@@ -82,4 +80,4 @@ Het volgende is het zuiveren activiteiten die kunnen __niet__ worden uitgevoerd 
 
 De opgestelde configuraties OSGi kunnen niet via CRXDE Lite worden herzien. De configuraties OSGi worden gehandhaafd in de AEM van het Project `ui.apps` codepakket op `/apps/example/config.xxx`Bij de implementatie in AEM as a Cloud Service omgevingen blijven de OSGi-configuratiebronnen echter niet behouden voor het JCR, zodat deze dus niet zichtbaar zijn via CRXDE Lite.
 
-Gebruik in plaats daarvan de [Developer Console > Configurations](./developer-console.md#configurations) aan overzicht opgestelde configuraties OSGi.
+Gebruik in plaats daarvan de opdracht [Developer Console > Configurations](./developer-console.md#configurations) aan overzicht opgestelde configuraties OSGi.

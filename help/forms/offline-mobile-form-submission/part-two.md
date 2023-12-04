@@ -1,19 +1,15 @@
 ---
 title: Trigger-AEM-workflow voor het verzenden van HTML5-formulieren - PDF afhandelen
-seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
-seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: eafeafe1-7a72-4023-b5bb-d83b056ba207
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+duration: 182
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -22,9 +18,9 @@ ht-degree: 0%
 
 # PDF-verzending verwerken
 
-In dit onderdeel maken we een eenvoudige servlet die wordt uitgevoerd op AEM Publish om de PDF-verzending van Acrobat/Reader af te handelen. Deze servlet zal beurtelings een verzoek van de POST van HTTP aan servlet doen die in een AEM auteursinstantie loopt verantwoordelijk voor het opslaan van de voorgelegde gegevens als `nt:file` in de gegevensopslagruimte van AEM Author.
+In dit deel zullen wij een eenvoudige servlet creëren die op AEM Publish loopt om de PDF indiening van Acrobat/Reader te behandelen. Deze servlet zal beurtelings een verzoek van de POST van HTTP aan servlet doen die in een AEM auteursinstantie loopt verantwoordelijk voor het opslaan van de voorgelegde gegevens als `nt:file` knooppunt in AEM gegevensopslagruimte van auteur.
 
-Hier volgt de code van de servlet die de PDF-verzending afhandelt. In deze servlet roepen we een POST op naar een servlet gemonteerd op **/bin/startworkflow** in een instantie van AEM-auteur. Deze server slaat de formuliergegevens op in de gegevensopslagruimte van de AEM-auteur.
+Hier volgt de code van de servlet die de PDF-verzending afhandelt. In deze servlet roepen we een POST op naar een servlet gemonteerd op **/bin/startworkflow** in een AEM instantie Auteur. Deze server slaat de formuliergegevens op in de opslagplaats van de AEM auteur.
 
 
 ## AEM Publish servlet
@@ -102,9 +98,9 @@ public class HandlePDFSubmission extends SlingAllMethodsServlet {
 }
 ```
 
-## AEM Author servlet
+## AEM Auteur servlet
 
-De volgende stap bestaat uit het opslaan van de verzonden gegevens in de gegevensopslagruimte van de AEM-auteur. De servlet gemonteerd op `/bin/startworkflow` slaat de voorgelegde gegevens op.
+De volgende stap bestaat uit het opslaan van de verzonden gegevens in de opslagplaats van de AEM auteur. De servlet gemonteerd op `/bin/startworkflow` slaat de voorgelegde gegevens op.
 
 ```java
 import java.io.BufferedReader;
@@ -204,4 +200,4 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 
 Een AEM werkstroomlanceerprogramma wordt gevormd om telkens als een nieuw middel van type teweeg te brengen `nt:file` wordt gemaakt onder de `/content/pdfsubmissions` knooppunt. Met deze workflow worden niet-interactieve of statische PDF gemaakt door de verzonden gegevens samen te voegen met de xdp-sjabloon. Het gegenereerde PDF-bestand wordt vervolgens ter controle en goedkeuring aan een gebruiker toegewezen.
 
-De ingediende gegevens opslaan onder `/content/pdfsubmissions` node, maken we gebruik van `GetResolver` De dienst OSGi staat ons toe om de voorgelegde gegevens te bewaren gebruikend `fd-service` systeemgebruiker die beschikbaar is in elke AEM Forms-installatie.
+De ingediende gegevens opslaan onder `/content/pdfsubmissions` node, gebruiken we `GetResolver` De dienst OSGi staat ons toe om de voorgelegde gegevens te bewaren gebruikend `fd-service` systeemgebruiker die beschikbaar is in elke AEM Forms-installatie.

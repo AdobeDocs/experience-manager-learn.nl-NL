@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: ab0f5282-383b-4be6-9c57-cded6ab37528
 last-substantial-update: 2020-01-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 123
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -24,17 +25,17 @@ Er zijn twee manieren om gegevens met het xdp malplaatje samen te voegen wanneer
 
 **dataRef**: U kunt de parameter dataRef in URL gebruiken. Deze parameter geeft het absolute pad aan van het gegevensbestand dat met de sjabloon wordt samengevoegd. Deze parameter kan een URL zijn naar een andere service die de gegevens retourneert in XML-indeling.
 
-**data**: Deze parameter geeft de UTF-8-gecodeerde gegevensbytes aan die met de sjabloon worden samengevoegd. Als deze parameter wordt opgegeven, negeert de HTML5-vorm de parameter dataRef. Als beste praktijken, adviseren wij het gebruiken van de gegevensbenadering.
+**data**: Deze parameter geeft de UTF-8-gecodeerde gegevensbytes op die met de sjabloon worden samengevoegd. Als deze parameter wordt opgegeven, negeert de HTML5-vorm de parameter dataRef. Als beste praktijken, adviseren wij het gebruiken van de gegevensbenadering.
 
 De aanbevolen methode is om het gegevenskenmerk in de aanvraag in te stellen met de gegevens die u vooraf in het formulier wilt invullen.
 
 slingRequest.setAttribute(&quot;data&quot;, content);
 
-In dit voorbeeld stellen we het gegevenskenmerk in met de inhoud. De inhoud vertegenwoordigt de gegevens waarmee u het formulier vooraf wilt invullen. Typisch zou u de &quot;inhoud&quot;door een vraag REST aan de interne dienst te maken halen halen.
+In dit voorbeeld stellen we het gegevenskenmerk in met de inhoud. De inhoud vertegenwoordigt de gegevens waarmee u het formulier vooraf wilt invullen. Typisch zou u de &quot;inhoud&quot;door een REST vraag aan de interne dienst halen.
 
 Voor dit gebruiksgeval moet u een aangepast profiel maken. De details over het maken van een aangepast profiel worden duidelijk beschreven in [Hier AEM Forms-documentatie](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
 
-Zodra u uw douaneprofiel creeert, zult u dan een JSP dossier creëren dat de gegevens door vraag aan uw achterste deelsysteem zal halen. Nadat de gegevens zijn opgehaald, gebruikt u de slingRequest.setAttribute(&quot;data&quot;, content); om het formulier vooraf in te vullen
+Zodra u uw douaneprofiel creeert, zult u dan een JSP dossier creëren dat de gegevens door vraag aan uw achterste deelsysteem zal halen. Nadat de gegevens zijn opgehaald, gebruikt u de slingRequest.setAttribute(&quot;data&quot;, inhoud); om het formulier vooraf in te vullen
 
 Wanneer XDP wordt teruggegeven, kunt u in sommige parameters tot xdp ook overgaan en op de waarde van de parameter gebaseerd u de gegevens van het achterste deelsysteem kunt halen.
 

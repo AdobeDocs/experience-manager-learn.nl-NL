@@ -4,13 +4,13 @@ description: Ongeacht of u een beheerder, auteur of ontwikkelaar bent, siteonder
 role: Admin
 level: Beginner, Intermediate
 topic: Administration
-audience: author, marketer, developer
 feature: Learn From Your Peers
 jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+duration: 266
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Probeer geen aangepaste componenten te gebruiken - gebruik [kerncomponenten](htt
 
 Met stijlsystemen kunnen de basiscomponenten, en zelfs aangepaste componenten, naar eigen goeddunken naar wens van de auteur hun uiterlijk veranderen om geheel nieuwe, kijkende componenten te maken. Deze stilistische veranderingen impliceren over het algemeen slechts een front-end ontwerper en een goed geïnformeerde auteur (die vaak naar een &quot;Super Auteur&quot;wordt verwezen
 
-### [Lanceringen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=en)
+### [Starten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=en)
 
 Met Starten kan het werk worden voltooid voor een nieuwe promotie-, verkoop- of websiteuitrol zonder dat dit gevolgen heeft voor de momenteel geïmplementeerde pagina&#39;s. Bovendien kunnen ze automatisch, zonder aanwezigheid of toezicht, live gaan, zodat auteurs nu hun werk van volgende week (of volgend kwartaal) kunnen doen en niet de dag voor het leven op de pagina komen - het is echt de gave van TIME!)
 

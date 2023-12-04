@@ -1,23 +1,18 @@
 ---
 title: De levering van een webkanaaldocument instellen
-seo-title: Setting up the delivery of web channel document
 description: Dit is het laatste deel van een zelfstudie met meerdere stappen voor het maken van uw eerste interactieve communicatiedocument. In dit deel bekijken we de levering van een webkanaaldocument via e-mail.
-seo-description: This is the final part of a multistep tutorial for creating your first interactive communications document. In this part, we look at the delivery of web channel document via email.
-uuid: c1066600-1abd-4401-b04f-b93c28603cc7
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 510d1782-59b9-41a6-a071-a16170f2cd06
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 97
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -33,7 +28,7 @@ Als u e-mail wilt gebruiken als een leveringsmechanisme voor ons webkanaaldocume
 
 [Meer informatie over webkanaallevering via e-mail](/help/forms/interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
 
-Meld u aan bij AEM Forms.
+Aanmelden bij AEM Forms.
 
 * Ga naar Forms ->Gegevensintegratie
 
@@ -49,8 +44,8 @@ Meld u aan bij AEM Forms.
 
 * Op deze manier geven we het accountnummer door via het aanvraagkenmerk aan het formuliergegevensmodel.
 
-* Sla de wijzigingen op.
-   ![fdm](assets/requestattribute.gif)
+* Zorg ervoor dat u de wijzigingen opslaat.
+  ![fdm](assets/requestattribute.gif)
 
 ## E-maillevering van webkanaaldocument testen {#test-email-delivery-of-web-channel-document}
 

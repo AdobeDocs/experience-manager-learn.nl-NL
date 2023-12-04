@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
-source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
+duration: 74
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 1%
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
@@ -30,10 +31,10 @@ In dit artikel worden de stappen doorlopen die nodig zijn om een aangepaste verz
 |----------------    | ---------------------------------|
 | guideComponentType | fd/af/components/guidesubmittype |
 | guideDataModel | xfa,xsd,basic |
-| jcr:beschrijving | CustomSubmitHelpx |
+| jcr:beschrijving | CustomSubmitHelp |
 
 
-* Sla de wijzigingen op
+* De wijzigingen opslaan
 * Maak een nieuw bestand met de naam post.POST.jsp onder het knooppunt CustomSubmitHelpx. Wanneer een adaptief formulier wordt verzonden, wordt dit JSP aangeroepen. U kunt de JSP-code naar wens in dit bestand schrijven. De volgende code stuurt het verzoek door naar de servlet.
 
 ```java

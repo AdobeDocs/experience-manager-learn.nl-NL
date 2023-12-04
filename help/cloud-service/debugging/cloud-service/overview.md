@@ -2,17 +2,15 @@
 title: Foutopsporing AEM as a Cloud Service
 description: op zelfbediening, schaalbare cloudinfrastructuur, waardoor AEM ontwikkelaars moeten begrijpen hoe ze verschillende facetten van AEM as a Cloud Service kunnen begrijpen en debuggen, van het bouwen en implementeren tot het verkrijgen van details over het uitvoeren van AEM toepassingen.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5346
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 8092fbb4-234f-472e-a405-8a45734b7c65
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -35,7 +33,7 @@ De pijpleidingen van de Manager van de Wolk van de Adobe voeren AEM toepassing d
 
 [Fouten opsporen AEM as a Cloud Service build en implementatie](./build-and-deployment.md)
 
-## Developer Console
+## Ontwerpconsole
 
 De console van de Ontwikkelaar verstrekt een verscheidenheid van informatie en introspecties in AEM as a Cloud Service milieu&#39;s die nuttig zijn om te begrijpen hoe uw toepassing door wordt erkend en binnen AEM as a Cloud Service functioneert.
 

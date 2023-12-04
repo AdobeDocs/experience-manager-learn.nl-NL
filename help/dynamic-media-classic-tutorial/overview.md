@@ -7,9 +7,10 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 221
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ In deze handleiding bespreken we de volgende kernmogelijkheden van Dynamic Media
 
 - **Dynamic Imaging.** De overkoepelende term voor real-time bewerken, opmaken en vergroten, interactief zoomen en pannen, het bekijken van kleuren en structuren, ronddraaien van 360 graden, afbeeldingssjablonen en multimediaviewers.
 - **Video.** Upload definitieve video&#39;s, publiceer ze en download ze progressief naar configureerbare videoviewers.
-- **Smart Imaging.** Technologie die gebruikmaakt van Adobe Sensei AI-mogelijkheden en met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de beeldlevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
+- **Slimme afbeeldingen.** Technologie die gebruikmaakt van Adobe Sensei AI-mogelijkheden en met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de beeldlevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
 Ga naar de [Documentatie voor Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
@@ -53,7 +54,7 @@ _DYNAMIC MEDIA CLASSIC UI_
 
 **Algemene navigatiebalk.** U bevindt zich boven aan het scherm en gebruikt de knoppen op deze balk voor toegang tot de belangrijkste gebieden en mogelijkheden van de oplossing. U gebruikt dit programma bijvoorbeeld om uploadmogelijkheden te openen, verschillende gebieden voor het samenstellen van elementen te openen (afbeeldingsset, centrifugeset, enz.), belangrijke taken uit te voeren, zoals het instellen van Voorinstellingen afbeelding en Voorinstellingen viewer, en uw elementen te publiceren. Hier kunt u ook uw taken controleren, recente activiteiten bekijken en een keuze maken uit diverse opties voor hulp.
 
-**Assetbibliotheek.** Links op het scherm bevindt zich de Asset Library, een deelvenster waarmee u elementen kunt ordenen in mappen en submappen die u maakt. Bovenaan in het deelvenster vindt u zoekopdrachten en filters waarmee u elementen kunt zoeken. Met Geavanceerd zoeken kunt u zoeken door meerdere opties op te geven als criteria voor uw zoekopdracht, inclusief verborgen metagegevensvelden die aan dat element zijn gekoppeld. U kunt verwijderde items onder aan het deelvenster zien door op het prullenbakpictogram te klikken. In eerste instantie start u niet met mappen, behalve met de map op hoofdniveau, die dezelfde naam heeft als de naam van uw account.
+**Elementenbibliotheek.** Links op het scherm bevindt zich de Asset Library, een deelvenster waarmee u elementen kunt ordenen in mappen en submappen die u maakt. Bovenaan in het deelvenster vindt u zoekopdrachten en filters waarmee u elementen kunt zoeken. Met Geavanceerd zoeken kunt u zoeken door meerdere opties op te geven als criteria voor uw zoekopdracht, inclusief verborgen metagegevensvelden die aan dat element zijn gekoppeld. U kunt verwijderde items onder aan het deelvenster zien door op het prullenbakpictogram te klikken. In eerste instantie start u niet met mappen, behalve met de map op hoofdniveau, die dezelfde naam heeft als de naam van uw account.
 
 >[!NOTE]
 >

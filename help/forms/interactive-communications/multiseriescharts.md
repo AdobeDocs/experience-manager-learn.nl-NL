@@ -2,19 +2,17 @@
 title: Diagrammen uit meerdere reeksen in AEM Forms
 description: Maak het juiste formuliergegevensmodel om grafieken met meerdere reeksen te maken in afdruk- en webkanaaldocumenten.
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 454
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -25,7 +23,7 @@ AEM Forms 6.5 introduceerde de capaciteit om veelvoudige reekskaarten tot stand 
 
 ![Diagram met meerdere reeksen](assets/seriescharts.jfif)
 
-Als u grafieken met meerdere reeksen wilt maken in AEM Forms, moet u een geschikt formuliergegevensmodel maken met de benodigde entiteiten en koppelingen tussen de entiteiten. In de volgende screenshot worden de entiteiten en de koppelingen tussen de drie entiteiten gemarkeerd. Op het hoogste niveau hebben we een entiteit genaamd &quot;Organisatie&quot;, die een één-op-veel associatie heeft met een fondsentiteit. De fondsentiteit heeft op haar beurt een een-op-een-relatie met de prestatieentiteit.
+Als u grafieken met meerdere reeksen wilt maken in AEM Forms, moet u een geschikt formuliergegevensmodel maken met de benodigde entiteiten en koppelingen tussen de entiteiten. In de volgende schermafbeelding worden de entiteiten en de koppelingen tussen de drie entiteiten gemarkeerd. Op het hoogste niveau hebben we een entiteit genaamd &quot;Organisatie&quot;, die een één-op-veel associatie heeft met een fondsentiteit. De fondsentiteit heeft op haar beurt een een-op-een-relatie met de prestatieentiteit.
 
 ![Formuliergegevensmodel](assets/formdatamodel.jfif)
 
@@ -41,7 +39,7 @@ Voer de volgende stappen uit om dit op uw systeem te testen
 
 * [Download en importeer het bestand MutualFundFactSheet.zip met AEM Package Manager.](assets/mutualfundfactsheet.zip)
 * [Download SeriesChartSampleData.json op uw harde aandrijving.](assets/serieschartsampledata.json) Dit zijn de steekproefgegevens die worden gebruikt om de grafiek te bevolken.
-* [Navigeer naar Forms en Documenten.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Navigeer naar Forms en Documents.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Selecteer voorzichtig de interactieve communicatiesjabloon &quot;MutualFundGrowthFactSheet&quot;.
 * Klik op Voorvertoning | Afdrukkanaal | Voorbeeldgegevens uploaden.
 * Blader naar het bestand met voorbeeldgegevens dat u als onderdeel van dit artikel hebt opgegeven.

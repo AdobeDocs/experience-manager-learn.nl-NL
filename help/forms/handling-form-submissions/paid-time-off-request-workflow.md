@@ -1,12 +1,8 @@
 ---
 title: Workflow voor eenvoudig uitstel van betaling
 description: Deelvensters Adaptief formulier verbergen en tonen in AEM workflow
-uuid: 28ceb72b-24d9-488e-92af-7e85775dc682
 feature: Adaptive Forms
-topics: workflow
-audience: developer
 doc-type: article
-activity: use
 version: 6.4,6.5
 discoiquuid: 1c4822e6-76ce-446b-98cb-408900d68b24
 topic: Development
@@ -14,9 +10,10 @@ role: Developer
 level: Experienced
 exl-id: 9342bd2f-2ba9-42ee-9224-055649ac3c90
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 618
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -30,7 +27,7 @@ In dit artikel bekijken we een eenvoudige workflow die wordt gebruikt voor het a
 * Admin opent het formulier. Beheerders mogen de door de indiener ingevulde gegevens niet bewerken.
 * De sectie Fiatteur moet zichtbaar zijn voor de fiatteur (In dit geval is dit de AEM gebruiker).
 
-Voor het uitvoeren van de bovenstaande vereiste gebruiken we een verborgen veld met de naam **initialstep** in het formulier en de standaardwaarde ervan is ingesteld op Ja. Wanneer het formulier wordt verzonden, stelt de eerste stap in de workflow de waarde van de eerste stap in op Nee. Het formulier bevat bedrijfsregels voor het verbergen en weergeven van de juiste secties op basis van de beginstapwaarde.
+Voor het uitvoeren van de bovenstaande vereiste gebruiken we een verborgen veld genaamd **initialstep** in het formulier en de standaardwaarde ervan is ingesteld op Ja. Wanneer het formulier wordt verzonden, stelt de eerste stap in de workflow de waarde van de eerste stap in op Nee. Het formulier bevat bedrijfsregels voor het verbergen en weergeven van de juiste secties op basis van de beginstapwaarde.
 
 **Formulier configureren voor activering AEM workflow**
 

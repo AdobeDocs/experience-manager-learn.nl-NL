@@ -10,9 +10,10 @@ jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
-source-git-commit: 27d065761643030de68176ebb4ca10bc152844df
+duration: 883
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -68,7 +69,7 @@ Verifieer de WKND-site op zowel de auteur- als de publicatieservices bij een ges
 
 Laten we de `Hello World Component` en zet het aan RDE op.
 
-1. Dialoogvenster XML openen (`.content.xml`) bestand van `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` map
+1. Het dialoogvenster XML openen (`.content.xml`) bestand van `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` map
 1. Voeg de `Description` tekstveld na het bestaande `Text` dialoogveld
 
    ```xml
@@ -82,7 +83,7 @@ Laten we de `Hello World Component` en zet het aan RDE op.
    ```
 
 1. Open de `helloworld.html` bestand van `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld` map
-1. Render de `Description` eigenschap na de bestaande `<div>` van het `Text` eigenschap.
+1. Render de `Description` eigenschap na de bestaande `<div>` element van het `Text` eigenschap.
 
    ```html
    ...
@@ -126,7 +127,7 @@ De vlaggen zijn vanzelfsprekend, de `-s` De markering is nuttig om de plaatsing 
 
 ### OSGi-bundel implementeren
 
-Om te leren hoe te om de bundel op te stellen OSGi, verbeteren wij `HelloWorldModel` Java™-klasse en implementeer deze in de RDE.
+Om te leren hoe te om de bundel op te stellen OSGi, verbeteren wij `HelloWorldModel` Java™-klasse en implementeren in de RDE.
 
 1. Open de `HelloWorldModel.java` bestand van `core/src/main/java/com/adobe/aem/guides/wknd/core/models` map
 1. Werk de `init()` methode als hieronder:

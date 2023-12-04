@@ -10,22 +10,23 @@ exl-id: 45047852-4fdb-4702-8a99-faaad7213b61
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 105
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # AEM Forms en Marketo integreren
 
-Marketo, een onderdeel van Adobe, beschikt over software voor marketingautomatisering die is gericht op marketing op basis van account, zoals e-mail, mobiele, sociale, digitale advertenties, webbeheer en analyses.
+Marketo, een onderdeel van de Adobe, beschikt over software voor marketingautomatisering die is gericht op marketing op basis van account, zoals e-mail, mobiele, sociale, digitale advertenties, webbeheer en analyses.
 
 Met het formuliergegevensmodel van AEM Forms kunnen we nu AEM formulier naadloos integreren met Marketo.
 
 [Meer informatie over het formuliergegevensmodel](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
-Marketo maakt een REST API beschikbaar waarmee een groot aantal mogelijkheden van het systeem op afstand kan worden uitgevoerd. Er zijn veel opties, variërend van het maken van programma&#39;s tot het bulksgewijs importeren van leads, waarmee u een Marketo-instantie met fijnkorrelige besturing kunt besturen. Met het formuliergegevensmodel is het heel eenvoudig om AEM Forms te integreren met Marketo.
+Marketo maakt een REST API beschikbaar waarmee een groot aantal mogelijkheden van het systeem op afstand kan worden uitgevoerd. Er zijn veel opties, variërend van het maken van programma&#39;s tot het bulksgewijs importeren van leads, waarmee u een Marketo-instantie met fijnkorrelige besturing kunt besturen. Met behulp van het formuliergegevensmodel is het heel eenvoudig om AEM Forms te integreren met Marketo.
 
 In deze zelfstudie worden de stappen besproken die nodig zijn voor de integratie van AEM Forms met Marketo met behulp van het formuliergegevensmodel. Bij het voltooien van de zelfstudie hebt u een OSGi-bundel die de aangepaste verificatie uitvoert tegen Marketo. U hebt ook de gegevensbron geconfigureerd met behulp van het meegeleverde wagerbestand.
 
@@ -34,7 +35,7 @@ Om te beginnen wordt het hoogst geadviseerd dat u met de volgende onderwerpen ve
 ## Vereiste
 
 1. [AEM server met AEM Forms Add op pakket geïnstalleerd](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
-1. Ontwikkelomgeving voor lokale AEM
+1. Lokale AEM ontwikkelomgeving
 1. Kennis hebben van formuliergegevensmodel
 1. Basiskennis van wagerbestanden
 1. Adaptieve Forms maken

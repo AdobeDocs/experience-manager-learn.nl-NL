@@ -2,7 +2,6 @@
 title: Een aangepaste weercomponent maken | Aan de slag met de AEM SPA Editor en reageren
 description: Leer hoe u een aangepaste weercomponent maakt die u kunt gebruiken met de AEM SPA Editor. Leer hoe u dialoogvensters met auteurs en Sling Models ontwikkelt om het JSON-model uit te breiden en een aangepaste component te vullen. De Open Weather-API en React Open Weather-componenten worden gebruikt.
 feature: SPA Editor
-topics: development
 version: Cloud Service
 jira: KT-5878
 thumbnail: 5878-spa-react.jpg
@@ -11,9 +10,10 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 472
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1105'
 ht-degree: 0%
 
 ---

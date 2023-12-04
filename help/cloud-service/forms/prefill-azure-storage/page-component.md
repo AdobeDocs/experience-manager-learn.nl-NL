@@ -9,10 +9,11 @@ version: Cloud Service
 topic: Integrations
 jira: KT-13717
 exl-id: 7469aa7f-1794-40dd-990c-af5d45e85223
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 105
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -26,7 +27,7 @@ Meld u aan bij uw lokale AEM Forms-exemplaar dat klaar is voor de cloud. De volg
 ![pageComponent](./assets/page-component1.png)
 
 1. Klik met de rechtermuisknop op de paginamap en maak een knooppunt met de naam storeandfetch van het type cq:Component
-1. Sla de wijzigingen op
+1. De wijzigingen opslaan
 1. Voeg de volgende eigenschappen toe aan de `storeandfetch` knooppunt en opslaan
 
 | **Eigenschapnaam** | **Type eigenschap** | **Waarde van eigenschap** |

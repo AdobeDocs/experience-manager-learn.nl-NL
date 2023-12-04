@@ -13,9 +13,10 @@ thumbnail: KT-13156.jpeg
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1398
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -220,5 +221,5 @@ Geweldig werk! U hebt de opstelling van AEM met het Web SDK van het Experience P
 + [Het gebruiken van de Laag van de Gegevens van de Cliënt van de Adobe met de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
 + [Tags en AEM voor gegevensverzameling van Experience Platforms integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
 + [Overzicht van Adobe Experience Platform Web SDK en Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [Tutorials voor gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [Zelfstudies voor gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Overzicht van Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

@@ -8,9 +8,10 @@ role: Developer
 level: Intermediate
 exl-id: abb74d44-d1b9-44d6-a49f-36c01acfecb4
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 115
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -27,14 +28,14 @@ In dit artikel wordt beschreven hoe gegevens via het mechanisme voor gecontrolee
 
 De dienst van de output is de dienst OSGi die deel van AEM Diensten van het Document uitmaakt. De uitvoerservice ondersteunt verschillende uitvoerindelingen en functies voor het ontwerpen van uitvoer van AEM Forms Designer. De uitvoerservice kan XFA-sjablonen en XML-gegevens converteren om afdrukdocumenten in verschillende indelingen te genereren.
 
-Meer over de outputdienst leren, [klik hier](https://helpx.adobe.com/aem-forms/6/output-service.html).
+Meer informatie over de uitvoerservice [klik hier](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Volg onderstaande stappen om een gecontroleerde map op uw systeem in te stellen:
 * [De inhoud van het ZIP-bestand downloaden en uitpakken](assets/outputservicewatchedfolderkt.zip).Dit ZIP-bestand bevat een pakket voor het maken van gecontroleerde mappen en voorbeeldbestanden om de uitvoerservice te testen met behulp van het mechanisme voor gecontroleerde mappen
    * Windows-systeem
 
       * Importeer de uitvoerservicewatchedfolder.zip in AEM met behulp van pakketbeheer
       * Hiermee maakt u een gecontroleerde map met de naam outputservice watchedfolder op het station C.
-   * Niet Windows-systeem
+   * Niet-Windows-systeem
       * [De configuratie-instelling van de controlemap openen](http://localhost:4502/crx/de/index.jsp#/etc/fd/watchfolder/config/outputservice)
       * Stel de eigenschap voor het mappad van het serviceknooppunt zo in dat deze naar een geschikte locatie wijst
       * Uw wijzigingen opslaan

@@ -9,9 +9,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 146
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -37,7 +38,7 @@ De eerste stap bij het maken van een formulier met RDBMS-ondersteuning is het co
 * Wijs uw browser aan [Gegevensintegratie](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
 * Klikken _Maken_->_Formuliergegevensmodel_
 * Geef een betekenisvolle naam en titel op voor het gegevensmodel van het formulier, zoals **Werknemer**
-* Klik op _Next_
+* Klikken _Volgende_
 * Selecteer de gegevensbron die in de vorige sectie (forums) is gemaakt
 * Klikken _Maken_->Bewerken om het nieuwe formuliergegevensmodel te openen in de bewerkingsmodus
 * Breid uit _forums_ knoop om het werknemersschema te zien. Breid de werknemersknoop uit om de 2 lijsten te zien

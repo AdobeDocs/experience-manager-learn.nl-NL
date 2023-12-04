@@ -2,18 +2,16 @@
 title: Verzonden formuliergegevens in CSV-indeling exporteren
 description: Verzonden adaptieve formuliergegevens exporteren in CSV-indeling
 feature: Adaptive Forms
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 6cd892e4-82c5-4201-8b6a-40c2ae71afa9
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 316
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -29,9 +27,9 @@ Klanten willen de ingediende formuliergegevens doorgaans exporteren in CSV-indel
 ![Tabelstructuur](assets/tablestructure.PNG)
 Aangezien u kunt zien de naam van het schema is modelstudie.Binnen dit schema zijn de indieningen van de lijstformaten met de volgende gedefinieerde kolommen
 
-* formatiegegevens: Deze kolom bevat de ingediende formuliergegevens
-* naam van de indeling: Deze kolom bevat de naam van het ingediende formulier
-* id: Dit is de primaire sleutel en wordt ingesteld op automatisch verhogen
+* formdata: Deze kolom bevat de ingediende formuliergegevens
+* Formuliernaam: Deze kolom bevat de naam van het ingediende formulier
+* id: Dit is de primaire sleutel en is ingesteld op automatisch verhogen
 
 De lijstnaam en de twee-kolomnamen worden blootgesteld als OSGi configuratieeigenschappen zoals aangetoond in het hieronder scherm:
 ![osgi-configuratie](assets/configuration.PNG)
@@ -45,7 +43,7 @@ In de bovenstaande query wordt de naam van het formulier (timeoffrequestform) al
 
 De volgende dienst OSGI werd gecreeerd om de voorgelegde gegevens in CSV formaat uit te voeren.
 
-* Regel 37: We benaderen Apache Sling Connection Pooled DataSource.
+* Lijn 37: Wij hebben toegang tot Apache Sling Connection Pooled DataSource.
 
 * Regel 89: Dit is het ingangspunt aan de dienst.De methode `getCSVFile(..)` neemt in formName als inputparameter en haalt de voorgelegde gegevens met betrekking tot de bepaalde vormnaam.
 

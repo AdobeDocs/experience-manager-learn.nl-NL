@@ -1,14 +1,8 @@
 ---
 title: Aangepaste elementtypen registreren
-seo-title: Registering Custom Asset Types
 description: Aangepaste elementtypen inschakelen voor aanbieding in AEMForms Portal
-seo-description: Enabling custom asset types for listing in AEMForms Portal
-uuid: eaf29eb0-a0f6-493e-b267-1c5c4ddbe6aa
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
 topic: Development
@@ -16,9 +10,10 @@ role: Developer
 level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
 last-substantial-update: 2019-07-11T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 173
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -74,7 +69,7 @@ Er is een nieuw tabblad (Lijst met elementen) toegevoegd aan de zoek- en listerc
    1. Voeg de eigenschap jcr:title toe om de weergavenaam van het elementtype op te geven. Stel de waarde van jcr:title in op &quot;MP4-bestanden&quot;.
    1. Voeg de eigenschap &quot;type&quot; toe en stel de waarde ervan in op &quot;videos&quot;. Dit is de waarde die we in onze sjabloon gebruiken om elementen van het type video&#39;s weer te geven. Sla uw wijzigingen op.
 
-1. Maak een knooppunt van het type &quot;nt:unStructured&quot; onder mp4files. Noem dit knooppunt &quot;zoekcriteria&quot;
+1. Maak een knooppunt van het type &quot;nt:unStructured&quot; onder mp4files. Noem deze knoop &quot;onderzoekscriteria&quot;
 1. Voeg een of meer filters toe onder zoekcriteria. Als de gebruiker bijvoorbeeld een zoekfilter wil hebben voor het weergeven van MP4Files waarvan het mime-type &quot;video/mp4&quot; is, kunt u dit hier doen
 1. Maak een knooppunt van het type &quot;nt:unStructured&quot; onder de zoekcriteria voor knooppunten. Noem deze knoop &quot;filetypes&quot;
 1. Voeg de volgende 2 eigenschappen toe aan dit knooppunt &quot;filetypes&quot;

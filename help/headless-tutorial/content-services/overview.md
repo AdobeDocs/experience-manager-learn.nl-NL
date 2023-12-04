@@ -7,14 +7,15 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 342
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 3%
 
 ---
 
-# Aan de slag met AEM Headless - Inhoudsservices
+# Aan de slag met AEM headless - Content Services
 
 AEM Content Services maakt gebruik van traditionele AEM Pagina&#39;s om eindpunten van REST API zonder kop samen te stellen, en AEM Components definiëren (verwijzen naar) de inhoud die op deze eindpunten moet worden weergegeven.
 
@@ -47,6 +48,6 @@ Als u een probleem hebt met de zelfstudie of de code, kunt u een [GitHub-problee
 |                                | GraphQL API&#39;s AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | Schema-definitie | Modellen voor structuurinhoudsfragmenten | AEM componenten |
-| Inhoud | Contentfragmenten | AEM componenten |
+| Inhoud | Inhoudsfragmenten | AEM componenten |
 | Inhoud detecteren | Op GraphQL-query | Op AEM pagina |
 | Afleveringsformaat | GraphQL JSON | AEM ComponentExporter JSON |

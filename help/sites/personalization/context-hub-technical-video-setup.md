@@ -1,6 +1,6 @@
 ---
 title: ContextHub van de opstelling voor Personalisatie met AEM Sites
-description: ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina's. Deze pagina beschrijft hoe te om contexthub aan uw AEM sitepagina's toe te voegen.
+description: ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina's. Deze pagina beschrijft hoe te om contexthub aan uw AEM sitepagina's toe te voegen.
 feature: Context Hub
 version: 6.4, 6.5
 topic: Personalization
@@ -8,9 +8,10 @@ role: Developer
 level: Intermediate
 doc-type: Technical Video
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 385
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '381'
 ht-degree: 1%
 
 ---

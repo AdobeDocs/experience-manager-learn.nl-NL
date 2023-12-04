@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 127
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -88,13 +89,12 @@ De JSON die door de API wordt geretourneerd, wordt vervolgens geparseerd om de v
 >
 >Voor de productieserver, zult u SSL voor uw AEMServer moeten toelaten om dit vermogen te krijgen.
 >
->Het voorbeeld dat aan dit artikel is gekoppeld, is getest met het Amerikaanse adres. Als u deze mogelijkheid wilt gebruiken op andere geografische locaties, moet u mogelijk de JSON-parsering afstellen.
+>Het voorbeeld dat aan dit artikel is gekoppeld, is getest met het adres van de VS. Als u deze mogelijkheid wilt gebruiken op andere geografische locaties, moet u mogelijk de JSON-parsering afstellen.
 
 Voer de volgende stappen uit om deze functie op uw server te plaatsen
 
 * AEM Forms-server installeren en starten.
-
->!![NOTE] Deze mogelijkheid is getest op AEM Forms 6.3 en hoger
+> Deze mogelijkheid is getest op AEM Forms 6.3 en hoger
 * [Google API-sleutel ophalen](https://developers.google.com/maps/documentation/javascript/get-api-key).
 * [Importeer de aan dit artikel gerelateerde elementen in AEM.](assets/geolocationapi.zip)
 * [Open het fragment Adaptief formulier in de bewerkingsmodus.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)

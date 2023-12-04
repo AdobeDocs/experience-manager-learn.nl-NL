@@ -8,16 +8,17 @@ role: Developer
 level: Beginner
 exl-id: 3354a58b-d58e-4ddb-8f90-648554a64db8
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
 # Herbruikbare AEM Forms-workflowmodellen maken{#create-re-usable-aem-forms-workflow-models}
 
-Vanaf AEM Forms 6.5 kunnen we nu workflowmodellen maken die niet zijn gekoppeld aan een specifiek adaptief formulier. Met deze functie kunt u nu één workflowmodel maken dat kan worden aangeroepen voor verschillende adaptieve formulierverzendingen. Met deze functie kunt u een algemene workflow gebruiken voor het verwerken van alle aangepaste formulierverzendingen voor revisie en goedkeuring.
+Vanaf AEM Forms 6.5 kunnen we nu workflowmodellen maken die niet zijn gekoppeld aan een specifiek adaptief formulier. Met deze functie kunt u nu één workflowmodel maken dat kan worden aangeroepen voor verschillende adaptieve formulierverzendingen. Met deze functie kunt u een algemene workflow gebruiken voor het verwerken van alle adaptieve formulierverzendingen voor revisie en goedkeuring.
 
 Voer de volgende stappen uit om een dergelijke workflow te ontwerpen
 
@@ -26,12 +27,12 @@ Voer de volgende stappen uit om een dergelijke workflow te ontwerpen
 1. Klikken __Maken > Model maken__ om een workflowmodel toe te voegen
 1. Geef de juiste naam en titel op voor het workflowmodel en klik op Gereed
 1. Het nieuwe model openen in de bewerkingsmodus
-1. De belemmering en laat vallen wijst de component van de Taak op uw werkschemamodel toe
+1. Sleep de taakcomponent toewijzen aan het workflowmodel en zet deze neer
 1. Open de de configuratieeigenschappen van de component van de Taak toewijzen
-1. Tab naar het tabblad Forms en Documenten
+1. Tabblad Forms en Documenten
 1. Selecteer het type Adaptief formulier of Alleen-lezen adaptief formulier.
 
-Er zijn drie manieren waarop het formulierpad kan worden opgegeven
+Het formulierpad kan op drie manieren worden opgegeven
 
 1. Beschikbaar op een absoluut pad - Dit betekent dat de workflow nauw gekoppeld is aan een adaptief formulier. Dat is niet wat wij hier willen
 1. **Verzonden naar de workflow** - Dit betekent dat wanneer het adaptieve formulier wordt ingediend, de workflow-engine de naam van het formulier uit de ingediende gegevens haalt. Dit is de optie die moet worden geselecteerd

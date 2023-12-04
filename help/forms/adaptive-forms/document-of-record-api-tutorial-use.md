@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 9a3b2128-a383-46ea-bcdc-6015105c70cc
 last-substantial-update: 2023-01-26T00:00:00Z
-source-git-commit: ddef90067d3ae4a3c6a705b5e109e474bab34f6d
+duration: 102
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 Document met opnamen (DOR) programmatisch genereren
 
-Dit artikel illustreert het gebruik van het `com.adobe.aemds.guide.addon.dor.DoRService API` genereren **Document van record** programmatisch. [Document van record](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) is een PDF-versie van de gegevens die zijn vastgelegd in Adaptief formulier.
+Dit artikel illustreert het gebruik van het `com.adobe.aemds.guide.addon.dor.DoRService API` om te genereren **Document van record** programmatisch. [Document van record](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) is een PDF-versie van de gegevens die zijn vastgelegd in Adaptief formulier.
 
 1. Hier volgt het codefragment. De eerste regel krijgt de DOR-service.
 1. Stel de DoROptions in.
@@ -70,7 +71,7 @@ Voer de volgende stappen uit om dit op uw lokale systeem te proberen
 1. Zoeken naar Apache Sling Service User Mapper Service
 1. Controleer of u de volgende vermelding hebt ingevoerd _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ in de sectie Servicemappingen
 1. [Het formulier openen](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
-1. Vul het formulier in en klik op &#39; View PDF &#39;
+1. Vul het formulier in en klik op PDF weergeven
 1. U moet DOR zien op een nieuw tabblad in uw browser
 
 
@@ -81,4 +82,4 @@ PDF wordt niet weergegeven op het tabblad Nieuwe browser:
 1. Let erop dat u pop-ups in uw browser niet blokkeert
 1. Zorg ervoor u AEM server als beheerder (minstens op vensters) begint
 1. Zorg ervoor dat de bundel &#39;DevelopingWithServiceUser&#39; zich in de *actieve status*
-1. [Zorg ervoor dat de gebruiker van het systeem](http://localhost:4502/useradmin) &#39;fd-service&#39; heeft lees-, wijzig- en aanmaakmachtigingen voor het volgende knooppunt `/content/usergenerated/content/aemformsenablement`
+1. [Zorg ervoor dat de systeemgebruiker](http://localhost:4502/useradmin) &#39;fd-service&#39; heeft lees-, wijzig- en aanmaakmachtigingen voor het volgende knooppunt `/content/usergenerated/content/aemformsenablement`

@@ -5,9 +5,10 @@ topic: Development
 role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 96ff44c4b9806205682ab305d391614f92bb2536
+duration: 98
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -18,19 +19,16 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 <div id="whats-new-section">
 
-## Wat is er nieuw
+## Nieuwe functies
 
 * **[Foutberichten verwerken in de stap Formuliergegevensmodel aanroepen](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-
-   *Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype*
+  *Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype*
 
 * **[Diagrammen uit meerdere reeksen in interactieve communicatiedocumenten (video)](./interactive-communications/multiseriescharts.md)**
-
-   *Plot meer dan één reeks in de zelfde grafiek. De veelvoudige reekskaarten worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom.*
+  *Plot meer dan één reeks in de zelfde grafiek. De veelvoudige reekskaarten worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom.*
 
 * **[Herbruikbare workflowmodellen maken](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-
-   *Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld*
+  *Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld*
 
 </div>
 
@@ -103,4 +101,4 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 * [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
 * [AEM Assets-zelfstudies](/help/assets/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)
-* [Zelfstudies voor AEM stichting](/help/foundation/overview.md)
+* [Zelfstudies AEM Stichting](/help/foundation/overview.md)

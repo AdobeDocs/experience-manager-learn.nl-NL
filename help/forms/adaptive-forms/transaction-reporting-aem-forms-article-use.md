@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 96
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Zodra transactierapportage is ingeschakeld, kunt u Adaptief Forms verzenden, doc
 
 Meld u aan bij AEM Forms als beheerder om het transactierapport weer te geven. Alleen leden van de groep fd-beheerder kunnen het transactierapport weergeven.
 
-Gereedschappen selecteren | Forms | Transactierapport weergeven
+Gereedschappen selecteren | FORMS | Transactierapport weergeven
 
 of bekijk het transactierapport door te klikken [hier](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 

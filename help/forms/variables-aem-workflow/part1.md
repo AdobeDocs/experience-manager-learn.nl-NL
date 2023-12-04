@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: f9782684-3a74-4080-9680-589d3f901617
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+duration: 590
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 Variabelen van het type XML worden doorgaans gebruikt wanneer u een op XSD gebaseerd adaptief formulier hebt en waarden wilt extraheren uit de verzending van het adaptieve formulier in uw workflow.
 
-In de volgende video worden de stappen doorlopen die nodig zijn om variabelen van het type String en XML te maken en deze in uw workflow te gebruiken.
+De volgende video doorloopt u de stappen nodig om variabelen van het type Koord en XML tot stand te brengen en hen in uw werkschema te gebruiken.
 
 De XML-variabele kan worden gebruikt om het aangepaste formulier vooraf in te vullen of om de verzendingsgegevens van het aangepaste formulier in uw workflow op te slaan.
 

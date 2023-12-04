@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 1f6f1bb6-3437-4fae-b5a1-698ab357ff23
 last-substantial-update: 2020-09-10T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 391
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
@@ -21,11 +22,11 @@ Met de elementen van het gegevensmodel van een berekend formulier kunt u het man
 
 Een ander voorbeeld voor het maken van een berekend formuliergegevensmodel is het samenvoegen van twee of meer formuliergegevensmodelelementen. U kunt bijvoorbeeld de elementen van het formuliergegevensmodel samenvoegen met een koppelteken tussen de twee elementen.
 
-In de volgende screenshot ziet u de berekende elementen StateaandZip en monthSalary
+In de volgende screenshot ziet u de berekende elementen StatusZip en monthSalary
 
 ![computedFmelement](assets/computedfdmelement.gif)
 
-## Maken van maandsalaris berekend element
+## Het maandsalaris berekenen element
 
 >[!VIDEO](https://video.tv.adobe.com/v/23855?quality=12&learn=on)
 

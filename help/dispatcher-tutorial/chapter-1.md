@@ -1,5 +1,5 @@
 ---
-title: "Hoofdstuk 1 - Concepten, patronen en antipatronen van de verzender"
+title: Hoofdstuk 1 - Concepten, patronen en antipatronen van Dispatcher
 description: In dit hoofdstuk wordt een korte inleiding gegeven over de geschiedenis en de mechanica van de Dispatcher en wordt besproken hoe dit van invloed is op hoe een AEM ontwikkelaar zijn componenten zou ontwerpen.
 feature: Dispatcher
 topic: Architecture
@@ -7,9 +7,10 @@ role: Architect
 level: Beginner
 doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 4820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '17460'
+source-wordcount: '17384'
 ht-degree: 0%
 
 ---
@@ -1180,7 +1181,7 @@ De klant had een site-structuur zoals die in het laatste hoofdstuk werd geschets
 /content/brand/country/language
 ```
 
-Bijvoorbeeld,
+Bijvoorbeeld:
 
 ```
 /content/shiny-brand/switzerland/fr

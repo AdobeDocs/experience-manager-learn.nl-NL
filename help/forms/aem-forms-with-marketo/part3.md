@@ -9,9 +9,10 @@ level: Experienced
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 108
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -42,11 +43,11 @@ Wijs uw browser aan [pagina voor gegevensintegratie.](http://localhost:4502/aem/
 1. Klik op Maken | Formuliergegevensmodel
 1. Geef een betekenisvolle titel op, zoals FormsAndMarketo, en klik op Volgende
 1. Selecteer de gegevensbron die in de vorige stap is geconfigureerd en klik op Maken en bewerken om het formuliergegevensmodel te openen in de bewerkingsmodus
-1. Vouw het knooppunt &quot;FormsAndMarketo&quot; uit. Vouw het knooppunt Services uit
-1. Selecteer de eerste bewerking &quot;Ophalen&quot;
+1. Vouw het knooppunt FormsAndMarketo uit. Vouw het knooppunt Services uit
+1. Selecteer de eerste bewerking Ophalen
 1. Klik op Geselecteerde toevoegen
 1. Klik op Alles selecteren in het dialoogvenster &quot;Gekoppelde modelobjecten toevoegen&quot; en klik vervolgens op Toevoegen
-1. Sla het formuliergegevensmodel op door op de knop Opslaan te klikken
+1. Sla het formuliergegevensmodel op door op Opslaan te klikken
 1. Tab naar het tabblad Services
 1. Selecteer de enige dienst die wordt vermeld en klik op de Dienst van de Test
 1. Geef een geldige leadId op en klik op Testen. Als alles goed gaat, moet u de hoofddetails terugkrijgen, zoals hieronder in de schermafbeelding wordt getoond
