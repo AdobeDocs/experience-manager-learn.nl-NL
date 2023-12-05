@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 54827c36a33437a8bf090eb10cde8ed656446d0b
+source-git-commit: bd33d076cf9caa7c900ef4fe8b1a17e27a791cae
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 11%
+source-wordcount: '491'
+ht-degree: 6%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 11%
 
 + [Overzicht](overview.md)
 + Document ontwerpen {#document-authoring}
+   + [Overzicht](document-authoring/overview.md)
    + [Instellen](document-authoring/set-up.md)
    + [Voorvertonen en publiceren](document-authoring/preview-and-publish.md)
    + [Documentstructuur](document-authoring/document-structure.md)
@@ -61,12 +62,13 @@ ht-degree: 11%
    + [Inhoudsfragmenten leveren](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Inhoudsfragmenten omzetten](content-fragments/content-fragments-translation-feature-video-use.md)
    + [Content Fragments vs. Experience Fragments](content-fragments/understand-content-fragments-and-experience-fragments.md)
-+ Ervaringsfragmenten {#experience-fragments}
-   + [Ervaringsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
++ Ervaar fragmenten {#experience-fragments}
+   + [Beleidsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
    + [Bouwstenen](experience-fragments/building-blocks.md)
    + [Content Fragments vs. Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
-   + Ontwikkeling{#developing}
+   + [Overzicht](./edge-delivery-services/overview.md)
+   + Ontwikkelen{#developing}
       + [Vereisten](edge-delivery-services/developing/prerequisites.md)
       + [AEM](edge-delivery-services/developing/aem-boilerplate.md)
       + [Inhoudsopslagplaats](edge-delivery-services/developing/content-repository.md)
@@ -81,7 +83,7 @@ ht-degree: 11%
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Projectarchetype AEM](developing/aem-project-archetype.md)
    + [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
-   + [Aan de slag met AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
+   + [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
    + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Pagina-eigenschappen uitbreiden](developing/page-properties-technical-video-develop.md)
    + [Responsieve onderbrekingspunten](developing/responsive-breakpoints.md)
@@ -96,11 +98,11 @@ ht-degree: 11%
    + [Fragmenten voor Setup-ervaring en Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Experience Fragments gebruiken met Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [ContextHub instellen](personalization/context-hub-technical-video-setup.md)
-+ Onderdelen {#components}
++ Componenten {#components}
    + [Component Development](components/component-development.md)
    + [Kernonderdelen](components/core-components-feature-video-understand.md)
    + [Webgeoptimaliseerde afbeeldingslevering](components/web-optimized-image-delivery.md)
-   + [Onderdelenconsole](components/components-console-feature-video-use.md)
+   + [Componentenconsole](components/components-console-feature-video-use.md)
 + SEO {#seo}
    + [Sitemaps](./seo/sitemaps.md)
 + Toepassingen voor één pagina {#spa-editor}
@@ -126,7 +128,7 @@ ht-degree: 11%
    + [Taalkopie gebruiken](translation/language-copy-feature-video-use.md)
    + [Vertaalregels instellen](translation/translation-rules-editor-technical-video-setup.md)
    + [Verbeteringen op gebied van vertaling](translation/translation-enhancements-feature-video-use.md)
-+ Integrations {#integrations}
++ Integraties {#integrations}
    + Experience Platform {#experience-platform}
       + [FPID&#39;s genereren](integrations/platform/fpid.md)
       + [Web SDK](integrations/platform/web-sdk.md)
