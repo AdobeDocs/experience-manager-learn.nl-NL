@@ -11,7 +11,7 @@ role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
 duration: 423
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 8a042c561c1a7e48152c2b067d92d709ab5fd53e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -24,17 +24,17 @@ ht-degree: 0%
 >id="aemcloud_devops_prodpipeline"
 >title="Productiepijpleiding CI/CD"
 >abstract="De configuratie van de Pijpleiding van de Productie CI/CD bepaalt de trekker die de pijpleiding, parameters zal in werking stellen die de plaatsing van de productie en de parameters van de prestatietest controleren."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-process" text="Uw code implementeren"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Implementatie naar productiefase"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Uw code implementeren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Implementatie naar productiefase"
 
 ## Configuratie
 
-De [Productiepijpleiding CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) de configuratie bepaalt de trekker die de pijpleiding, parameters zal in werking stellen die de de plaatsing van de productie en parameters van de prestatietest controleren.
+De [Productiepijpleiding CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html) de configuratie bepaalt de trekker die de pijpleiding, parameters zal in werking stellen die de de plaatsing van de productie en parameters van de prestatietest controleren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Uitvoering pijpleiding
 
-De [Productiepijpleiding CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) wordt gebruikt om code door Stadium aan het milieu van de Productie te bouwen en op te stellen, die tijd aan waarde verminderen.
+De [Productiepijpleiding CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) wordt gebruikt om code door Stadium aan het milieu van de Productie te bouwen en op te stellen, die tijd aan waarde verminderen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
