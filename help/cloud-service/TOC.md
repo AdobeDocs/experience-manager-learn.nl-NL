@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
+source-git-commit: 43c021b051806380b3211f2d7357555622217b91
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 11%
+source-wordcount: '1072'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 11%
       + [Experience Manager - Bestuur en personeelsmodellen en archetypen](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Snelheid van inhoud besturen met Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
       + [De snelheid van de inhoud versnellen met AEM stijlsystemen](./introduction/accelerate-content-velocity-aem.md)
-+ Experience Cloud-integraties{#integrations}
++ Integratie van Experiencen Cloud{#integrations}
    + [Integrations](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
 + Onderliggende technologie {#underlying-technology}
@@ -58,7 +58,7 @@ ht-degree: 11%
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
    + [Lokale AEM SDK](./local-development-environment/aem-runtime.md)
    + [Lokale verzendprogramma&#39;s](./local-development-environment/dispatcher-tools.md)
-+ Ontwikkeling{#developing}
++ Ontwikkelen{#developing}
    + Uitbreidbaarheid{#extensibility}
       + App Builder{#app-builder}
          + [Toegangstoken genereren](./developing/extensibility/app-builder/jwt-auth.md)
@@ -71,7 +71,7 @@ ht-degree: 11%
          + [Adobe I/O Runtime-actie](./developing/extensibility/ui/runtime-action.md)
          + [Verifiëren](./developing/extensibility/ui/verify.md)
          + [Implementeren](./developing/extensibility/ui/deploy.md)
-         + Contentfragmenten{#content-fragments}
+         + Inhoudsfragmenten{#content-fragments}
             + [Overzicht](./developing/extensibility/ui/content-fragments/overview.md)
             + Voorbeelden{#examples}
                + [Genereren van AI-afbeelding](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
@@ -85,7 +85,7 @@ ht-degree: 11%
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Lokale ontwikkelomgeving](./developing/basics/local-development-environment.md)
       + [Projectarchetype AEM](./developing/basics/aem-project-archetype.md)
-      + [AEM-projectstructuur](./developing/basics/project-structure.md)
+      + [AEM projectstructuur](./developing/basics/project-structure.md)
       + [Mutable versus Immuable Content](./developing/basics/mutable-immutable.md)
       + [Structuurpakket opslagplaats](./developing/basics/repository-structure-package.md)
       + [Inhoud publiceren](./developing/basics/content-publishing.md)
@@ -123,7 +123,7 @@ ht-degree: 11%
       + [Overzicht](./debugging/cloud-service/overview.md)
       + [Logboeken](./debugging/cloud-service/logs.md)
       + [Opbouwen en implementeren](./debugging/cloud-service/build-and-deployment.md)
-      + [Developer Console](./debugging/cloud-service/developer-console.md)
+      + [Ontwerpconsole](./debugging/cloud-service/developer-console.md)
       + [Browser voor opslagplaats](./debugging/cloud-service/repository-browser.md)
       + Risico&#39;s{#risks}
          + [Traversale waarschuwingen](./debugging/cloud-service/risks/traversals.md)
@@ -134,6 +134,9 @@ ht-degree: 11%
    + [AEM-publicatieservice](./caching/publish.md)
    + [AEM Auteur-service](./caching/author.md)
    + [Analyse van hoogte-breedteverhouding CDN-cache](./caching/cdn-cache-hit-ratio-analysis.md)
+   + Procedure{#how-to}
+      + [Opslaan in cache inschakelen](./caching/how-to/enable-caching.md)
+      + [Cache uitschakelen](./caching/how-to/disable-caching.md)
 + Toegang tot AEM{#accessing}
    + [Overzicht](./accessing/overview.md)
    + [Adobe IMS-gebruikers](./accessing/adobe-ims-users.md)
@@ -162,7 +165,7 @@ ht-degree: 11%
       + [Voorbeelden en resultaatanalyse](./security/traffic-filter-rules/examples-and-analysis.md)
       + [Aanbevolen procedures](./security/traffic-filter-rules/best-practices.md)
 + Migratie {#migration}
-   + [De tool Content Transfer](./migration/content-transfer-tool.md)
+   + [Inhoud overbrengen](./migration/content-transfer-tool.md)
    + [Bulkimport van activa](./migration/bulk-import.md)
    + Overstappen naar AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
       + [Inleiding](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
@@ -176,7 +179,7 @@ ht-degree: 11%
       + [Zoeken en indexeren](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Inhoud migreren {#content-migration}
          + [Bulkimportservice](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
-         + [De tool Content Transfer](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
+         + [Inhoud overbrengen](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [Veelgestelde vragen](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
       + [Problemen oplossen](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
@@ -187,7 +190,7 @@ ht-degree: 11%
       + [Inleiding](./migration/cloud-acceleration-manager/introduction.md)
       + [Gereedheid en analyse van best practices](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [Implementatiefase](./migration/cloud-acceleration-manager/implementation-phase.md)
-      + [De tool Content Transfer](./migration/cloud-acceleration-manager/content-transfer-tool.md)
+      + [Inhoud overbrengen](./migration/cloud-acceleration-manager/content-transfer-tool.md)
       + [Gereedschappen voor het reviseren van code](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
       + [Modernizer van opslagplaats voor code](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
@@ -195,7 +198,7 @@ ht-degree: 11%
       + [De tool Asset Workflow Migration](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navigeren door het beheer voor cloudversnelling](./migration/cloud-acceleration-manager/navigating.md)
       + [Cloud Acceleration Manager gebruiken](./migration/cloud-acceleration-manager/using.md)
-+ [Contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
++ [Inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + Forms{#forms}
    + Ontwikkelen voor Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Aan de slag](./forms/developing-for-cloud-service/getting-started.md)
