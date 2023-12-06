@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: f6491d04f7f23da75366904a7965103465d33f87
+source-git-commit: e5c50ffb379f497ed72efd63528af4f874b18ade
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 12%
+source-wordcount: '402'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 12%
    + [Machtigingen basislijn](configuring/baseline-permissions.md)
    + [Tags](configuring/tagging.md)
    + [Metagegevensschema&#39;s](configuring/metadata-schemas.md)
-   + [Metadataprofielen](configuring/metadata-profiles.md)
+   + [Metagegevensprofielen](configuring/metadata-profiles.md)
    + [Metagegevensmappenschema&#39;s](configuring/metadata-folder-schemas.md)
    + [Elementenbeheerder zoekrails](configuring/assets-admin-search-rail.md)
    + [Profielen verwerken](configuring/processing-profiles.md)
@@ -52,7 +52,7 @@ ht-degree: 12%
 + Geavanceerde mogelijkheden{#advanced}
    + [3D-middelen](./advanced/3d-assets.md)
    + [Uitvoer PDF van annotaties](./advanced/customizing-annotations-pdf-output.md)
-   + [Asset Insights ](./advanced/asset-insights-launch-tutorial.md)
+   + [Asset Insights](./advanced/asset-insights-launch-tutorial.md)
    + [Elementen rapporteren](./advanced/asset-reports.md)
    + [Machtigingen (CUG&#39;s)](./advanced/closed-user-groups.md)
    + [Watermerken](./advanced/watermarks.md)
@@ -82,10 +82,11 @@ ht-degree: 12%
       + [Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM](./sharing/asset-share-commons-technical-video-setup.md)
       + [Commentaar voor het delen van elementen](./sharing/asset-share-commons-feature-video-theming.md)
       + [Asset Share Commons Asset Kits](./sharing/asset-share/asset-share-commons-asset-kits.md)
-   + [Gekoppelde assets](./sharing/connected-assets.md)
+   + [Verbonden elementen](./sharing/connected-assets.md)
 
-+ Integreren met Creative Workflows{#creative-workflows}
++ Creatieve workflows{#creative-workflows}
    + [Adobe Express](./creative-workflows/adobe-express.md)
+   + [Adobe Express AEM Assets-invoegtoepassing](./creative-workflows/adobe-express-aem-assets-add-on.md)
    + [App AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe-itemkoppeling](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
@@ -108,7 +109,7 @@ ht-degree: 12%
    + [Creatieve bewerkingen](./content-automation/creative-operations.md)
    + [Photoshop-handelingen](./content-automation/photoshop-actions.md)
 
-+  Dynamic Media {#dynamic-media}
++ Dynamic Media{#dynamic-media}
    + [Dynamic Media - Overzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Dynamic Media Classic Desktop-toepassing](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Afbeeldingen {#images}
@@ -129,7 +130,7 @@ ht-degree: 12%
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + Werken met AEM Sites {#dm-with-aem-sites}
-      + [Ervaringsfragmenten](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
+      + [Ervaar fragmenten](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Dynamic Media Core-componenten](dynamic-media/dynamic-media-core-components.md)
 
    + Tutorials {#tutorials}

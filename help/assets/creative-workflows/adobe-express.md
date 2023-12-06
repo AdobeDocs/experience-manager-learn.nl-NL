@@ -1,26 +1,28 @@
 ---
-title: Adobe Express-integratie
-description: Leer hoe u de toeleveringsketens voor inhoud optimaliseert met AEM Assets en Adobe Express, waardoor de productiviteit en toegankelijkheid voor alle teamleden wordt verbeterd.
+title: AEM Assets en Adobe Express
+description: Ontdek hoe u eenvoudig inhoud kunt maken en bewerken in AEM Assets met behulp van Adobe Express.
 version: Cloud Service
 feature: Integrations
-topic: Integrations, Content Management
-role: User
-level: Intermediate
-last-substantial-update: 2023-10-26T00:00:00Z
-jira: KT-14192
-thumbnail: 3425193.jpeg
+topic: Integrations, Content Management, Content Supply Chain
+role: Admin, User
+level: Beginner
 doc-type: Feature Video
-exl-id: 4da1b1ff-5472-4282-a998-ae344e7b8309
-duration: 610
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 500
+last-substantial-update: 2023-12-06T00:00:00Z
+jira: KT-14645
+thumbnail: 3425972.jpeg
+source-git-commit: e5c50ffb379f497ed72efd63528af4f874b18ade
 workflow-type: tm+mt
-source-wordcount: '49'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
-# Adobe Express-integratie
 
-Leer hoe u de toeleveringsketens voor inhoud kunt optimaliseren met AEM Assets en [Adobe Express](https://www.adobe.com/express/), verbetering van de productiviteit en de toegankelijkheid voor alle teamleden.
+# AEM Assets en Adobe Express
 
->[!VIDEO](https://video.tv.adobe.com/v/3425193/?learn=on)
+Ontdek hoe u eenvoudig inhoud kunt maken en bewerken in Adobe Experience Manager Assets met behulp van Adobe Express. Deze video begeleidt u bij het verbeteren van de workflows voor inhoud, waarbij zowel het bewerken van bestaande middelen als het maken van nieuwe elementen worden getoond, allemaal gestroomlijnd voor efficiëntie en gebruiksvriendelijkheid.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
+
+Leer hoe u de [AEM Assets-invoegtoepassing voor Adobe Express](./adobe-express-aem-assets-add-on.md) om AEM Assets naadloos vanuit Adobe Express te benaderen.
