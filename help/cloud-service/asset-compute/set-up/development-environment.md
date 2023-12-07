@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
 duration: 140
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 6995b0221e381979aca0aeb540fe04d71b16eaae
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Hier volgt een korte set-upinstructies. Nadere bijzonderheden over deze ontwikke
 1. Installeer de vereiste npm modules en Adobe I/O CLI stop-ins van de bevellijn:
 
    ```
-   $ npm i -g @adobe/aio-cli@7.1.0 @openwhisk/wskdebug ngrok --unsafe-perm=true \
+   $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
    && aio plugins:install @adobe/aio-cli-plugin-asset-compute
    ```
 
@@ -76,11 +76,8 @@ Asset compute werknemers zijn [Node.js](https://nodejs.org/)-based, en dus verei
 [De Adobe I/O CLI installeren](../../local-development-environment/development-tools.md#aio-cli), of __aio__ is een bevel-lijn (CLI) npm module die gebruik van en interactie met de technologieën van Adobe I/O vergemakkelijkt, en voor zowel produceert als plaatselijk gebruikt ontwikkelt de arbeiders van de douaneAsset compute.
 
 ```
-$ npm install -g @adobe/aio-cli@7.1.0
+$ npm install -g @adobe/aio-cli
 ```
-
-_Adobe I/O CLI versie 7.1.0 is vereist. Later versies van Adobe I/O CLI worden op dit moment niet ondersteund._
-
 
 ## De Adobe I/O CLI-Asset compute-insteekmodule installeren{#aio-asset-compute}
 
