@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-30T00:00:00Z
 jira: KT-14224
 thumbnail: KT-14224.jpeg
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
+source-git-commit: 783f84c821ee9f94c2867c143973bf8596ca6437
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # CDN in cache plaatsen uitschakelen
 
@@ -48,16 +48,16 @@ Laten we elk van deze opties bekijken.
 
 Deze optie is de aanbevolen aanpak voor het uitschakelen van caching, maar is alleen beschikbaar voor AEM Publiceren. Als u de cachekoppen wilt bijwerken, gebruikt u de optie `mod_headers` en `<LocationMatch>` in het hostbestand van Apache HTTP Server. De algemene syntaxis ziet er als volgt uit:
 
-    &quot;conf
-    &lt;locationmatch url=&quot;&quot; url_regex=&quot;&quot;>
-    # Verwijdert de antwoordkopbal van deze naam, als het bestaat. Als er meerdere koppen met dezelfde naam zijn, worden alle koppen verwijderd.
-    Cache-control voor header ongedaan maken
-    Oningestelde koptekst verloopt
-    
-    # instrueert CDN om de reactie niet in cache op te slaan.
-    Cache-Control &#39;private&#39; voor koptekstset
-    &lt;/locationmatch>
-    &quot;
+```
+<LocationMatch "$URL$ || $URL_REGEX$">
+    # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+    Header unset Cache-Control
+    Header unset Expires
+
+    # Instructs the CDN to not cache the response.
+    Header set Cache-Control "private"
+</LocationMatch>
+```
 
 #### Voorbeeld
 
@@ -68,16 +68,17 @@ Als u de bestaande CSS-cache wilt overslaan, moet u het CSS-bestand wijzigen om 
 1. Zoek in uw AEM-project het gewenste vhsot-bestand vanuit `dispatcher/src/conf.d/available_vhosts` directory.
 1. De vhost bijwerken (bijvoorbeeld `wknd.vhost`), als volgt:
 
-       &quot;conf
-       &lt;locationmatch etc.clientlibs=&quot;&quot;>*\.(css)$&quot;>
-       # Verwijdert de antwoordkopbal van deze naam, als het bestaat. Als er meerdere koppen met dezelfde naam zijn, worden alle koppen verwijderd.
-       Cache-control voor header ongedaan maken
-       Oningestelde koptekst verloopt
-       
-       # instrueert CDN om de reactie niet in cache op te slaan.
-       Cache-Control &#39;private&#39; voor koptekstset
-       &lt;/locationmatch>
-       &quot;
+   ```
+   <LocationMatch "^/etc.clientlibs/.*\.(css)$">
+       # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+       Header unset Cache-Control
+       Header unset Expires
+   
+       # Instructs the CDN to not cache the response.
+       Header set Cache-Control "private"
+   </LocationMatch>
+   ```
+
    De hostbestanden in `dispatcher/src/conf.d/enabled_vhosts` directory is **symlinks** naar de bestanden in `dispatcher/src/conf.d/available_vhosts` , zorg er dus voor dat u symlinks maakt als deze niet aanwezig zijn.
 1. Implementeer de hostwijzigingen in de gewenste AEM as a Cloud Service omgeving met de [Cloud Manager - Web Tier Config Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) of [RDE-opdrachten](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
@@ -85,6 +86,6 @@ Als u de bestaande CSS-cache wilt overslaan, moet u het CSS-bestand wijzigen om 
 
 Deze optie is beschikbaar voor zowel AEM Publiceren als Auteur. Als u de cachekoppen wilt bijwerken, gebruikt u de optie `SlingHttpServletResponse` -object in aangepaste Java™-code (Sling servlet, Sling servlet-filter). De algemene syntaxis ziet er als volgt uit:
 
-    &quot;java
-    response.setHeader(&quot;Cache-Control&quot;, &quot;private&quot;);
-    &quot;
+```java
+response.setHeader("Cache-Control", "private");
+```
