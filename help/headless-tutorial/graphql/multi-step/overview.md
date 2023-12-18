@@ -12,9 +12,9 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 81
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 90c3ef479b289c9b319735fd28a1e39875c421a9
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ U hebt het volgende nodig om deze zelfstudie te volgen:
 
 ### AEM
 
-Om deze zelfstudie te voltooien, wordt AEM beheerder aangeraden toegang te krijgen tot een AEM as a Cloud Service omgeving. Als u geen toegang hebt tot AEM as a Cloud Service omgeving, kunt u de opdracht [Lokale AEM as a Cloud Service Quickstart SDK](/help/cloud-service/local-development-environment/aem-runtime.md). Het is echter belangrijk om op te merken dat sommige producten-UI-schermen, zoals Content Fragment navigation, verschillend zijn.
+Als u deze zelfstudie wilt voltooien, kunt u het beste AEM Beheerders toegang geven tot een AEM as a Cloud Service omgeving. Als u geen toegang hebt tot een AEM as a Cloud Service omgeving, gelieve [aanmelden voor de proefversie AEM zonder hoofdtelefoon](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) om AEM headless mogelijkheden te verkennen.
 
 ## Laten we beginnen!
 
