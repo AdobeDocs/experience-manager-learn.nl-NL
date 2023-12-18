@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 227
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 234c163a2936ca07bdf259038f1b22c4363fae3c
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,10 @@ Inhoudsfragmenten worden opgeslagen in mappen in AEM Assets. Als u inhoudsfragme
 
 
 ## Een inhoudsfragment maken {#create-content-fragment}
+
+>[!TIP]
+>
+>Voor lokale AEM SDK-gebruikers: gebruik de interface van AEM Assets om inhoudsfragmenten te maken en te maken in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Raadpleeg voor gedetailleerde instructies de [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
 
 Er worden nu verschillende inhoudsfragmenten gemaakt op basis van de **Team** en **Persoon** modellen.
 
@@ -145,6 +149,10 @@ Vervolgens vult u de nieuwe fragmenten met gegevens.
 1. Tikken **Opslaan en sluiten** om de veranderingen in het fragment van de Alpha van het Team op te slaan.
 
 ## Inhoudsfragmenten publiceren
+
+>[!TIP]
+>
+>Voor lokale AEM SDK-gebruikers: gebruik de interface van AEM Assets om inhoudsfragmenten te publiceren in plaats van de hieronder beschreven interface voor inhoudsfragmenten. Raadpleeg voor gedetailleerde instructies de [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
 
 Publiceer de geautoriseerde `Content Fragments`
 
