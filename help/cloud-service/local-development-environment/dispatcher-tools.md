@@ -11,9 +11,9 @@ thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
 duration: 765
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_dispatcher"
 >title="Lokale verzendprogramma&#39;s"
->abstract="Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet onderdeel zijn van de lokale ontwikkelinstellingen. De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools, waarmee u Dispatcher lokaal kunt configureren, valideren en simuleren."
+>abstract="Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet onderdeel zijn van de lokale ontwikkelinstellingen. De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren kunt configureren en de Dispatcher lokaal kunt simuleren."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html" text="Dispatcher in de cloud"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK downloaden"
+>additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html" text="AEM as a Cloud Service SDK downloaden"
 
 De Verzender van Adobe Experience Manager (AEM) is een Apache HTTP- de servermodule die een veiligheid en prestatieslaag tussen CDN en AEM publicatielaag verstrekt. Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet onderdeel zijn van de lokale ontwikkelinstellingen.
 
-De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools, waarmee u Dispatcher lokaal kunt configureren, valideren en simuleren. Dispatcher Tools bestaat uit:
+De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren kunt configureren en de Dispatcher lokaal kunt simuleren. Dispatcher Tools bestaat uit:
 
 + een basislijnset van Apache HTTP Web server and Dispatcher configuration files, gevestigd op `.../dispatcher-sdk-x.x.x/src`
 + een CLI-hulpprogramma voor configuratievalidatie, dat zich bevindt op `.../dispatcher-sdk-x.x.x/bin/validate`
@@ -47,7 +47,7 @@ Let op: `~` wordt gebruikt als steno voor de Folder van de Gebruiker. In Windows
 ## Vereisten
 
 1. Windows-gebruikers moeten Windows 10 Professional gebruiken (of een versie die Docker ondersteunt)
-1. Installeren [Experience Manager publiceert QuickStart Jar](./aem-runtime.md) op de lokale ontwikkelmachine.
+1. Installeren [Experience Manager publiceert QuickStart Jar](./aem-runtime.md) op de lokale ontwikkelingsmachine.
 
 + Installeer indien nodig de nieuwste [AEM website](https://github.com/adobe/aem-guides-wknd/releases) op de lokale AEM-publicatieservice. Deze website wordt in deze zelfstudie gebruikt om een werkende Dispatcher te visualiseren.
 
@@ -87,7 +87,7 @@ $ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
 
 Unzip `aem-sdk-dispatcher-tools-x.x.x-windows.zip` in `C:\Users\<My User>\aem-sdk\dispatcher` (ontbrekende mappen maken, indien nodig).
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh
@@ -105,11 +105,11 @@ Alle hieronder uitgegeven bevelen veronderstellen dat de huidige het werk folder
 ## De Dispatcher-configuratiebestanden begrijpen
 
 >[!TIP]
-> Experience Manager projecten die zijn gemaakt op basis van de [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) Deze set Dispatcher-configuratiebestanden zijn vooraf ingevuld. U hoeft daarom niet meer te kopiëren uit de bronmap Dispatcher Tools.
+Experience Manager projecten die zijn gemaakt op basis van de [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) Deze set Dispatcher-configuratiebestanden zijn vooraf ingevuld. U hoeft daarom niet meer te kopiëren uit de bronmap Dispatcher Tools.
 
 De Dispatcher Tools biedt een set Apache HTTP Web-server- en Dispatcher-configuratiebestanden die gedrag voor alle omgevingen, inclusief lokale ontwikkeling, definiëren.
 
-Deze bestanden zijn bedoeld om naar een Experience Manager Maven-project te worden gekopieerd `dispatcher/src` als deze nog niet bestaan in het Experience Manager Maven-project.
+Deze bestanden zijn bedoeld om naar een Experience Manager Maven-project te worden gekopieerd `dispatcher/src` als deze niet bestaan in het Experience Manager Maven-project.
 
 Een volledige beschrijving van de configuratiebestanden is beschikbaar in de onverpakte Dispatcher Tools als `dispatcher-sdk-x.x.x/docs/Config.html`.
 
@@ -132,7 +132,7 @@ $ ./bin/validate.sh ./src
 $ bin\validate src
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ ./bin/validate.sh ./src
@@ -161,7 +161,7 @@ De `docker_run_hot_reload` uitvoerbaar bestand heeft de voorkeur boven `docker_r
 $ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
@@ -191,7 +191,7 @@ $ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 $ bin\docker_run src host.docker.internal:4503 8080
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
@@ -217,7 +217,7 @@ $ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.in
 $ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
@@ -258,7 +258,7 @@ $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run_hot_reload.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
@@ -331,7 +331,7 @@ Nu, wanneer het bevestigen van uw project-specifieke configuraties van de Verzen
 
 + De bijgewerkte onveranderbare bestanden controleren zoals `dispatcher_vhost.conf`, `default.vhost`, en `default.farm` en breng indien nodig relevante wijzigingen aan in uw aangepaste bestanden die zijn afgeleid van deze bestanden.
 
-+ Revalideer de configuraties, moet deze doorgeven
++ Wijzig de configuratie en geef deze door
 
 ```shell
 $ ./bin/validate.sh ${YOUR-AEM-PROJECT}/dispatcher/src
@@ -353,7 +353,7 @@ Phase 3 finished
 
 De `host.docker.internal` is hostname die aan Docker wordt verstrekt die aan de gastheer oplost. Per docs.docker.com ([macOS](https://docs.docker.com/desktop/networking/), [Windows](https://docs.docker.com/desktop/networking/)):
 
-> Vanaf Docker 18.03 moet de aanbeveling met de speciale DNS naam host.docker.internal verbinden, die aan het interne IP adres oplost dat door de gastheer wordt gebruikt
+>Vanaf Docker 18.03 moet de aanbeveling met de speciale DNS naam host.docker.internal verbinden, die aan het interne IP adres oplost dat door de gastheer wordt gebruikt
 
 Wanneer `bin/docker_run src host.docker.internal:4503 8080` resulteert in het bericht __Wachten tot host.docker.internal beschikbaar is__, dan:
 
@@ -372,7 +372,7 @@ Wanneer `bin/docker_run src host.docker.internal:4503 8080` resulteert in het be
 + Vanuit de opdrachtprompt uitvoeren `ipconfig`en registreert de host __IPv4-adres__ van de hostcomputer.
 + Dan, voer uit `docker_run` het gebruiken van dit IP adres: `$ bin\docker_run src <HOST IP>:4503 8080`
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 + Vanuit terminal uitvoeren `ifconfig` en registreer de gastheer __kabinet__ IP adres, gewoonlijk __nl0__ apparaat.
 + Dan uitvoeren `docker_run` het gebruiken van het gastheerIP adres: `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
