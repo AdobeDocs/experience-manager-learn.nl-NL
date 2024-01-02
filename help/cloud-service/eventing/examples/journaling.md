@@ -9,11 +9,11 @@ level: Beginner
 doc-type: Tutorial
 duration: 0
 last-substantial-update: 2023-12-07T00:00:00Z
-jira: KT-14649
-thumbnail: KT-14649.jpeg
-source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
+jira: KT-14734
+thumbnail: KT-14734.jpeg
+source-git-commit: 839d552199fe7d10a0cde4011bdfe8cf42cc8ec9
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,6 @@ Om dingen eenvoudig te houden, haalt deze ontvangen Webtoepassing slechts de eer
 
 ## Aanvullende bronnen
 
-- [Broncode van Glitch-webhaak](https://glitch.com/edit/#!/indigo-speckle-antler)
+- [Broncode van Glitch-webhaak](https://glitch.com/edit/#!/indigo-speckle-antler) is beschikbaar ter referentie. Het is een eenvoudige React-toepassing die [Adobe Reageren spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) componenten om UI terug te geven.
+
+- [Adobe I/O Events Journaling API](https://developer.adobe.com/events/docs/guides/api/journaling_api/) biedt gedetailleerde informatie over de API, zoals eerst, volgende en laatste batch gebeurtenissen, paginering en meer.
