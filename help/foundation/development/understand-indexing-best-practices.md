@@ -12,9 +12,9 @@ duration: 0
 last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
-source-git-commit: 5fe651bc0dc73397ae9602a28d63b7dc084fcc70
+source-git-commit: 7f69fc888a7b603ffefc70d89ea470146971067e
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,9 @@ Soms moet u aangepaste indexen maken ter ondersteuning van uw zoekvereisten. Vol
 
 ### De OOTB-index aanpassen
 
-- Bij het aanpassen van de OOTB-index **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** naamgevingsconventie. Bijvoorbeeld: `cqPageLucene-custom-1` of `damAssetLucene-8-custom-1`. Zo kunt u de aangepaste indexdefinitie samenvoegen wanneer de OTB-index wordt bijgewerkt. Zie [Wijzigingen in indexen buiten de box](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#changes-to-out-of-the-box-indexes) voor meer informatie .
+- In **AEMCS**, bij het aanpassen van het OOTB-indexgebruik **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** naamgevingsconventie. Bijvoorbeeld: `cqPageLucene-custom-1` of `damAssetLucene-8-custom-1`. Zo kunt u de aangepaste indexdefinitie samenvoegen wanneer de OTB-index wordt bijgewerkt. Zie [Wijzigingen in indexen buiten de box](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#changes-to-out-of-the-box-indexes) voor meer informatie .
+
+- In **AEM 6,X**, de bovenstaande naam _werkt niet_ U kunt de OOTB-index echter eenvoudig bijwerken met extra eigenschappen in het deelvenster `indexRules` knooppunt.
 
 - Kopieer altijd de nieuwste OTB-indexdefinitie van de AEM-instantie met behulp van CRX DE Package Manager (/crx/packmgr/), wijzig de naam en voeg aanpassingen toe in het XML-bestand.
 
@@ -57,11 +59,13 @@ Soms moet u aangepaste indexen maken ter ondersteuning van uw zoekvereisten. Vol
 
 ### Volledig aangepaste index
 
-- Gebruik bij het maken van een volledig aangepaste index **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** naamgevingsconventie. Bijvoorbeeld: `wknd.adventures-1-custom-1`. Zo voorkomt u naamconflicten. Hier, `wknd` is het voorvoegsel en `adventures` is de aangepaste indexnaam.
+Het maken van een volledig aangepaste index moet de laatste optie zijn en alleen als de bovenstaande optie niet werkt.
+
+- Gebruik bij het maken van een volledig aangepaste index **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** naamgevingsconventie. Bijvoorbeeld: `wknd.adventures-1-custom-1`. Zo voorkomt u naamconflicten. Hier, `wknd` is het voorvoegsel en `adventures` is de aangepaste indexnaam. Deze conventie is zowel van toepassing op AEM 6.X als op AEMCS en helpt bij de voorbereiding op toekomstige migratie naar AEMCS.
 
 - AEMCS steunt slechts indexen van Lucene, zodat om voor toekomstige migratie aan AEMCS voor te bereiden, gebruik altijd indexen van Lucene. Zie [Lucene-indexen vs. eigenschapsindexen](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing.html?#lucene-or-property-indexes) voor meer informatie .
 
-- Maak geen aangepaste index op het tabblad `dam:Asset` knooppunttype maar pas OOTB aan `damAssetLucene` index. Het is een gemeenschappelijke oorzaak van prestaties en functionele kwesties geweest.
+- Maak geen aangepaste index op hetzelfde knooppunttype als de OOTB-index. Pas in plaats daarvan de OOTB-index aan met extra eigenschappen in het dialoogvenster `indexRules` knooppunt. Maak bijvoorbeeld geen aangepaste index voor de `dam:Asset` knooppunttype maar pas OOTB aan `damAssetLucene` index. _Het is een gemeenschappelijke oorzaak van prestaties en functionele kwesties geweest_.
 
 - Vermijd ook het toevoegen van bijvoorbeeld meerdere knooppunttypen `cq:Page` en `cq:Tag` volgens de indexeringsregels (`indexRules`) node. Maak in plaats daarvan afzonderlijke indexen voor elk type knooppunt.
 
@@ -70,7 +74,7 @@ Soms moet u aangepaste indexen maken ter ondersteuning van uw zoekvereisten. Vol
 - De richtlijnen voor indexdefinitie zijn:
    - Het knooppunttype (`jcr:primaryType`) `oak:QueryIndexDefinition`
    - Het indextype (`type`) `lucene`
-   - De eigenschap async (`async`) `async, rt`
+   - De eigenschap async (`async`) `async,nrt`
    - Gebruiken `includedPaths` en vermijden `excludedPaths` eigenschap. Altijd instellen `queryPaths` waarde voor dezelfde waarde als `includedPaths` waarde.
    - Om de wegbeperking te handhaven, gebruik `evaluatePathRestrictions` eigenschap en instellen op `true`.
    - Gebruiken `tags` eigenschap om de index te labelen en tijdens het opvragen geeft u deze tagwaarde op om de index te gebruiken. De algemene querysyntaxis is `<query> option(index tag <tagName>)`.
@@ -80,7 +84,7 @@ Soms moet u aangepaste indexen maken ter ondersteuning van uw zoekvereisten. Vol
       - jcr:primaryType = "oak:QueryIndexDefinition"
       - type = "lucene"
       - compatVersion = 2
-      - async = ["async", "rt"]
+      - async = ["async", "nrt"]
       - includedPaths = ["/content/wknd"]
       - queryPaths = ["/content/wknd"]
       - evaluatePathRestrictions = true
@@ -90,7 +94,7 @@ Soms moet u aangepaste indexen maken ter ondersteuning van uw zoekvereisten. Vol
 
 ### Voorbeelden
 
-Laten we enkele voorbeelden bekijken om de beste praktijken te begrijpen.
+Om de beste praktijken te begrijpen, herzien enkele voorbeelden.
 
 #### Onjuist gebruik van eigenschap tags
 
