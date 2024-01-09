@@ -1,6 +1,6 @@
 ---
 title: Projecten ontwikkelen in AEM
-description: Een zelfstudie over de ontwikkeling van AEM projecten.  In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om nieuwe projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
+description: Een zelfstudie over de ontwikkeling van AEM projecten. In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om nieuwe projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
 version: 6.4, 6.5
 feature: Projects, Workflow
 doc-type: Tutorial
@@ -9,16 +9,16 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1753
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: b9b8dd9d815d7a0ef800635a74b030c50821b9df
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4441'
 ht-degree: 0%
 
 ---
 
 # Projecten ontwikkelen in AEM
 
-Dit is een zelfstudie over ontwikkeling die laat zien hoe u zich kunt ontwikkelen voor [!DNL AEM Projects].  In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om nieuwe projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
+Dit is een zelfstudie over ontwikkeling die laat zien hoe u zich kunt ontwikkelen voor [!DNL AEM Projects]. In deze zelfstudie maken we een aangepaste projectsjabloon die kan worden gebruikt om projecten te maken binnen AEM voor het beheer van workflows en taken voor het schrijven van inhoud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
@@ -26,9 +26,9 @@ Dit is een zelfstudie over ontwikkeling die laat zien hoe u zich kunt ontwikkele
 
 ## Inleiding {#introduction}
 
-[[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) is een functie van AEM die is ontworpen om het eenvoudiger te maken om alle workflows en taken die aan het maken van inhoud zijn gekoppeld, te beheren en te groeperen als onderdeel van een AEM Sites- of middelenimplementatie.
+[[!DNL AEM Projects]](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) is een functie van AEM die is ontworpen om het eenvoudiger te maken om alle workflows en taken die aan het maken van inhoud zijn gekoppeld, te beheren en te groeperen als onderdeel van een AEM Sites- of middelenimplementatie.
 
-AEM projecten worden geleverd met verschillende [OOTB-projectsjablonen](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Wanneer het creëren van een nieuw project, kunnen de auteurs van deze beschikbare malplaatjes kiezen. De grote AEM implementaties met unieke bedrijfsvereisten zullen de malplaatjes van het douaneProject willen tot stand brengen, die aan hun behoeften worden aangepast. Door een malplaatje van het douaneproject tot stand te brengen kunnen de ontwikkelaars het projectdashboard vormen, in douanewerkschema&#39;s, koppelen en extra bedrijfsrollen voor een project tot stand brengen. We zullen de structuur van een projectsjabloon bekijken en een voorbeeldsjabloon maken.
+AEM projecten worden geleverd met verschillende [OOTB-projectsjablonen](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html). Wanneer het creëren van een project, kunnen de auteurs van deze beschikbare malplaatjes kiezen. De grote AEM implementaties met unieke bedrijfsvereisten zullen de malplaatjes van het douaneProject willen tot stand brengen, die aan hun behoeften worden aangepast. Door een malplaatje van het douaneproject tot stand te brengen kunnen de ontwikkelaars het projectdashboard vormen, in douanewerkschema&#39;s, koppelen en extra bedrijfsrollen voor een project tot stand brengen. We zullen de structuur van een projectsjabloon bekijken en een voorbeeldsjabloon maken.
 
 ![Aangepaste projectkaart](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,13 +39,13 @@ Deze zelfstudie doorloopt de code die nodig is om een aangepaste projectsjabloon
 * [Pakket met voltooide zelfstudies](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Volledige gegevensopslagruimte voor code op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Deze zelfstudie gaat uit van enige basiskennis van [Ontwikkelingspraktijken AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/the-basics.html) en enige kennis van [AEM Maven project instellen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Alle vermelde code is bedoeld als referentie en mag alleen worden geïmplementeerd op een [instantie voor lokale ontwikkeling AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Deze zelfstudie gaat uit van enige basiskennis van [Ontwikkelingspraktijken AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/the-basics.html) en enige kennis van [AEM Maven project instellen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Alle vermelde code is bedoeld als referentie en mag alleen worden geïmplementeerd op een [instantie voor lokale ontwikkeling AEM](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html).
 
 ## Structuur van een projectsjabloon
 
 Projectsjablonen moeten onder broncontrole worden geplaatst en moeten onder de toepassingsmap onder /apps blijven. In het ideale geval moeten ze in een submap worden geplaatst met de naamgevingsconventie van **&#42;/projects/templates/**&lt;my-template>. Door na deze noemende overeenkomst te plaatsen zullen om het even welke nieuwe douanesjablonen automatisch beschikbaar worden aan auteurs wanneer het creëren van een project. De configuratie van beschikbare projectsjablonen is ingesteld op: **/content/projects/jcr:content** knoop door **cq:allowedTemplates** eigenschap. Dit is standaard een reguliere expressie: **/(apps|libs)/.&#42;/projects/templates/.&#42;**
 
-De wortelknoop van een Malplaatje van het Project zal hebben **jcr:primaryType** van **cq:sjabloon**. Onder het basisknooppunt van er zijn 3 knooppunten: **gadgets**, **rollen**, en **workflows**. Deze knooppunten zijn allemaal **nt:ongestructureerd**. Onder het hoofdknooppunt kan ook een bestand miniatuur.png staan dat wordt weergegeven wanneer u de sjabloon selecteert in de wizard Project maken.
+De wortelknoop van een Malplaatje van het Project zal hebben **jcr:primaryType** van **cq:sjabloon**. Onder het basisknooppunt van er zijn drie knooppunten: **gadgets**, **rollen**, en **workflows**. Deze knooppunten zijn allemaal **nt:ongestructureerd**. Onder het hoofdknooppunt kan ook een bestand miniatuur.png staan dat wordt weergegeven wanneer u de sjabloon selecteert in de wizard Project maken.
 
 De volledige nodestructuur:
 
@@ -69,15 +69,15 @@ Een voorbeeld van een douanetovenaar kan voor het Malplaatje van het Project van
 
 ### Gadgets {#gadgets}
 
-Er zijn geen extra eigenschappen op deze knoop maar de kinderen van de gadget knoopcontrole die de Tegels van het Project het dashboard van het Project bevolken wanneer een nieuw Project wordt gecreeerd. [Projectblokken](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (ook wel gadgets of pods genoemd) zijn eenvoudige kaarten die de werkplek van een project vullen. Een volledige lijst met voetbtegels vindt u onder: **/libs/cq/gui/components/projects/admin/pod. **Projecteigenaars kunnen altijd tegels toevoegen/verwijderen nadat een project is gemaakt.
+Er zijn geen extra eigenschappen op deze knoop maar de kinderen van de gadget knoopcontrole die de Tegels van het Project het dashboard van het Project bevolken wanneer een nieuw Project wordt gecreeerd. [Projectblokken](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) (ook wel gadgets of pods genoemd) zijn eenvoudige kaarten die de werkplek van een project vullen. Een volledige lijst met voetbtegels vindt u onder: **/libs/cq/gui/components/projects/admin/pod. **Projecteigenaars kunnen altijd tegels toevoegen/verwijderen nadat een project is gemaakt.
 
 ### Rollen {#roles}
 
-Er zijn 3 [standaardrollen](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#UserRolesinaProject) voor elk project: **Waarnemers**, **Editors**, en **Eigenaars**. Door kindknopen onder de rolknoop toe te voegen kunt u extra bedrijfsspecifieke Rollen van het Project voor het malplaatje toevoegen. U kunt deze rollen aan specifieke werkschema&#39;s dan verbinden verbonden aan het project.
+Er zijn drie [standaardrollen](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) voor elk project: **Waarnemers**, **Editors**, en **Eigenaars**. Door kindknopen onder de rolknoop toe te voegen, kunt u extra zaken-specifieke Rollen van het Project voor het malplaatje toevoegen. U kunt deze rollen aan specifieke werkschema&#39;s dan verbinden verbonden aan het project.
 
 ### Workflows {#workflows}
 
-Één de meest verleidelijke redenen voor het creëren van een Malplaatje van het douaneproject is dat het u de capaciteit geeft om de beschikbare werkschema&#39;s voor gebruik met het project te vormen. Dit kan OTB-workflows of aangepaste workflows zijn. Onder de **workflows** knooppunt daar moet een **modellen** node (ook `nt:unstructured`) en onderliggende knooppunten hieronder geeft u de beschikbare workflowmodellen op. De eigenschap **modelId **wijst naar het workflowmodel onder /etc/workflow en de eigenschap **wizard** verwijst naar het dialoogvenster dat wordt gebruikt bij het starten van de workflow. Een groot voordeel van Projecten is de capaciteit om een douanedialoog (tovenaar) toe te voegen om bedrijfsspecifieke meta-gegevens bij het begin van het werkschema te vangen die verdere acties binnen het werkschema kunnen drijven.
+Één de meest verleidelijke redenen voor het creëren van een Malplaatje van het douaneproject is dat het u de capaciteit geeft om de beschikbare werkschema&#39;s voor gebruik met het project te vormen. Dit kan OTB-workflows of aangepaste workflows zijn. Onder de **workflows** knooppunt daar moet een **modellen** node (ook `nt:unstructured`) en onderliggende knooppunten hieronder geeft u de beschikbare workflowmodellen op. De eigenschap **modelId **wijst naar het workflowmodel onder /etc/workflow en de eigenschap **wizard** verwijst naar het dialoogvenster dat wordt gebruikt bij het starten van de workflow. Een significant voordeel van Projecten is de capaciteit om een douanedialoog (tovenaar) toe te voegen om zaken-specifieke meta-gegevens bij het begin van het werkschema te vangen die verdere acties binnen het werkschema kunnen drijven.
 
 ```shell
 <projects-template-root> (cq:Template)
@@ -90,9 +90,9 @@ Er zijn 3 [standaardrollen](https://helpx.adobe.com/experience-manager/6-5/sites
 
 ## Een projectsjabloon maken {#creating-project-template}
 
-Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebruiken. In uw lokale AEM openen [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Omdat wij hoofdzakelijk knopen kopiëren/vormen, zullen wij CRXDE Lite gebruiken. Open in uw lokale AEM [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
-1. Begin door een nieuwe omslag onder te creëren `/apps/&lt;your-app-folder&gt;` benoemd `projects`. Een andere map maken onder de naam `templates`.
+1. Begin door een omslag onder te creëren `/apps/&lt;your-app-folder&gt;` benoemd `projects`. Een andere map maken onder de naam `templates`.
 
    ```shell
    /apps/aem-guides/projects-tasks/
@@ -100,7 +100,7 @@ Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebrui
                                 + templates (nt:folder)
    ```
 
-1. Om dingen gemakkelijker te maken zullen wij onze douanemalplaatje van het bestaande Eenvoudige malplaatje van het Project beginnen.
+1. Om dingen gemakkelijker te maken, zullen wij ons douanemalplaatje van het bestaande Eenvoudige malplaatje van het Project beginnen.
 
    1. Het knooppunt kopiëren en plakken **/libs/cq/core/content/projects/templates/default** onder de *sjablonen* map gemaakt in Stap 1.
 
@@ -148,11 +148,11 @@ Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebrui
 
 1. We voegen een aangepaste rol fiatteur toe aan ons projectsjabloon.
 
-   1. Onder het projectmalplaatje (creatie-project) voegt de knoop een nieuw toe **nt:ongestructureerd** knooppunt met label **rollen**.
+   1. Onder het projectmalplaatje (creatie-project) voegt de knoop een nieuw toe **nt:ongestructureerd** met nodenummer **rollen**.
    1. Nog een toevoegen **nt:ongestructureerd** knoop geëtiketteerde fiatvers als kind van de rolknoop.
    1. Tekenreeks-eigenschappen toevoegen **jcr:titel** = &quot;**Fiatteurs**&quot;, **rolecglas** =&quot;**eigenaar**&quot;, **rolid**=&quot;**fiatteurs**&quot;.
       1. De naam van het knooppunt fiatteurs en jcr:title en roleid kunnen elke tekenreekswaarde zijn (zolang roleid uniek is).
-      1. **rolecglas** beheerst de toestemmingen die voor die rol worden toegepast die op worden gebaseerd [3 OOTB-rollen](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **eigenaar**, **editor**, en **waarnemer**.
+      1. **rolecglas** beheerst de toestemmingen die voor die rol worden toegepast die op worden gebaseerd [drie OOTB-rollen](https://docs.adobe.com/content/docs/en/aem/6-3/author/projects.html): **eigenaar**, **editor**, en **waarnemer**.
       1. In het algemeen geldt dat als de aangepaste rol meer een leidinggevende rol is, de roleclas **eigenaar;** als het een specifiekere ontwerprol is, zoals Fotograaf of Designer, **editor** roleclas moet voldoende zijn. Het grote verschil tussen **eigenaar** en **editor** is dat de projecteigenaars de projecteigenschappen kunnen bijwerken en nieuwe gebruikers aan het project toevoegen.
 
    ```shell
@@ -165,7 +165,7 @@ Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebrui
                 - roleid = "approver"
    ```
 
-1. Door het Eenvoudige malplaatje van het Project te kopiëren zult u 4 gevormde werkschema&#39;s OOTB krijgen. Elk knooppunt onder workflows/modellen verwijst naar een specifieke workflow en een wizard voor begindialoogvenster voor die workflow. Later in deze zelfstudie maken we een aangepaste workflow voor dit project. Verwijder voorlopig de knooppunten onder workflow(en):
+1. Door het Eenvoudige malplaatje van het Project te kopiëren, zult u vier gevormde werkschema&#39;s OOTB krijgen. Elk knooppunt onder workflows/modellen verwijst naar een specifieke workflow en een wizard voor begindialoogvenster voor die workflow. Later in deze zelfstudie maken we een aangepaste workflow voor dit project. Verwijder voorlopig de knooppunten onder workflow(en):
 
    ```shell
    ../projects/templates/authoring-project
@@ -177,7 +177,7 @@ Aangezien wij hoofdzakelijk kopiëren/knopen vormen zullen wij CRXDE Lite gebrui
    ```
 
 1. Om het voor inhoudsauteurs gemakkelijk te maken om het Malplaatje van het Project te identificeren kunt u een douaneminiatuur toevoegen. De aanbevolen grootte is 319x319 pixels.
-   1. Maak in CRXDE Lite een nieuw bestand op hetzelfde niveau als gadgets, rollen en workflowknooppunten met de naam **miniatuur.png**.
+   1. Maak in CRXDE Lite een bestand op hetzelfde niveau als gadgets, rollen en workflowknooppunten met de naam **miniatuur.png**.
    1. Opslaan en vervolgens naar het dialoogvenster `jcr:content` en dubbelklik op de knop `jcr:data` eigenschap (klik niet op &#39;view&#39;).
       1. Hiermee wordt u gevraagd een bewerking uit te voeren `jcr:data` en kunt u een aangepaste miniatuur uploaden.
 
@@ -247,13 +247,13 @@ Voltooide XML-representatie van het projectsjabloon:
 
 ## Het testen van het malplaatje van het douaneproject
 
-Nu kunnen wij ons Malplaatje van het Project testen door een nieuw Project te creëren.
+Nu kunnen wij ons Malplaatje van het Project testen door een Project te creëren.
 
 1. U zou het douanemalplaatje als één van de opties voor projectverwezenlijking moeten zien.
 
    ![Sjabloon kiezen](./assets/develop-aem-projects/choose-template.png)
 
-1. Na het selecteren van het douanemalplaatje klik &quot;daarna&quot;en merk op dat wanneer het bevolken van de Leden van het Project u hen als rol kunt toevoegen Approver.
+1. Na het selecteren van het douanemalplaatje klik &quot;daarna&quot;en merk op dat wanneer het bevolken van de Leden van het Project, u hen als rol kunt toevoegen Approver.
 
    ![Goedkeuren](./assets/develop-aem-projects/user-approver.png)
 
@@ -264,7 +264,7 @@ Nu kunnen wij ons Malplaatje van het Project testen door een nieuw Project te cr
 
 ## Waarom workflow?
 
-Traditioneel AEM workflows die rond een goedkeuringsproces worden gecentreerd, hebben workflowstappen van deelnemers gebruikt. AEM Inbox omvat detail rond Taken en Werkschema en verbeterde integratie met AEM Projecten. Deze eigenschappen maken het gebruiken van de het processtappen van de Taak van Projecten creëren een aantrekkelijkere optie.
+Traditioneel AEM workflows die rond een goedkeuringsproces worden gecentreerd, hebben workflowstappen van deelnemers gebruikt. AEM Inbox omvat details rond Taken en Werkschema en verbeterde integratie met AEM Projecten. Deze eigenschappen maken het gebruiken van de het processtappen van de Taak van Projecten creëren een aantrekkelijkere optie.
 
 ### Waarom taken?
 
@@ -290,29 +290,29 @@ De eerste stap bestaat uit het maken van een taak om het bewerken van een stuk i
 
 Zodra de eerste taak volledig is zal toegewezen drie opties hebben om het werkschema te verpletteren:
 
-**Normaal ** - het normale verpletteren leidt tot een taak die aan de groep van de fiatteur van het Project wordt toegewezen om te herzien en goed te keuren. De prioriteit van de taak is Normaal en de vervaldatum is vijf dagen vanaf het tijdstip waarop deze wordt gemaakt.
+**Normaal ** - het normale verpletteren leidt tot een taak die aan de groep van de fiatteur van het Project wordt toegewezen om te herzien en goed te keuren. De prioriteit van de taak is Normaal en de vervaldatum is vijf dagen vanaf het tijdstip waarop deze wordt gecreëerd.
 
-**Rush** - het snel verpletteren leidt ook tot een taak die aan de groep van de Fiatteur van het Project wordt toegewezen. Prioriteit van de taak is Hoog en de vervaldatum is slechts 1 dag.
+**Rush** - het snel verpletteren leidt ook tot een taak die aan de groep van de Fiatteur van het Project wordt toegewezen. Prioriteit van de taak is Hoog en de vervaldatum is slechts één dag.
 
 **Weglaten** - in deze voorbeeldworkflow kan de eerste deelnemer de goedkeuringsgroep omzeilen. (ja dit zou het doel van een &quot;Goedkeuring&quot;werkschema kunnen verslaan maar het staat ons toe om extra verpletterende mogelijkheden te illustreren)
 
-De Approver Groep kan de inhoud goedkeuren of het terugsturen naar de aanvankelijke toegewezen voor herwerk. Als een nieuwe taak wordt teruggestuurd voor een nieuwe taak, wordt er een nieuwe taak gemaakt met het label &#39;Terugsturen voor opnieuw werken&#39;.
+De Fiatteur-groep kan de inhoud goedkeuren of deze terugsturen naar de eerste toegewezen persoon voor herbewerking. Als u een nieuwe taak wilt terugsturen, maakt u deze opnieuw en geeft u het desbetreffende label &#39;Naar achteren sturen voor opnieuw samenstellen&#39; op.
 
 In de laatste stap van de workflow wordt gebruikgemaakt van de processtap Pagina/element activeren en wordt de lading gerepliceerd.
 
 ## Het workflowmodel maken
 
-1. Navigeer in het menu AEM Start naar Extra -> Workflow -> Modellen. Klik op &#39;Maken&#39; in de rechterbovenhoek om een nieuw workflowmodel te maken.
+1. Navigeer in het menu Start AEM naar Extra -> Workflow -> Modellen. Klik op &#39;Maken&#39; in de rechterbovenhoek om een workflowmodel te maken.
 
    Geef het nieuwe model een titel: &quot;Workflow voor inhoudsgoedkeuring&quot; en een URL-naam: &quot;workflow voor inhoudsgoedkeuring&quot;.
 
    ![Het dialoogvenster Workflow maken](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   Voor meer informatie over [hier gelezen workflows maken](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-models.html).
+   [Lees hier voor meer informatie over het maken van workflows](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 
-1. Aangepaste workflows kunt u het beste groeperen in een eigen map onder /etc/workflow/modellen. Maak in CRXDE Lite een nieuwe **&#39;nt:folder&#39;** onder /etc/workflow/modellen genoemd **&quot;amplijnen&quot;**. Door een submap toe te voegen, zorgt u ervoor dat aangepaste workflows niet per ongeluk worden overschreven tijdens upgrades of Service Pack-installaties.
+1. Aangepaste workflows kunt u het beste groeperen in een eigen map onder /etc/workflow/modellen. In CRXDE Lite maakt u een **&#39;nt:folder&#39;** onder /etc/workflow/modellen genoemd **&quot;amplijnen&quot;**. Als u een submap toevoegt, zorgt u ervoor dat aangepaste workflows niet per ongeluk worden overschreven tijdens upgrades of Service Pack-installaties.
 
-   &#42;Houd er rekening mee dat het belangrijk is om de map of aangepaste workflows nooit onder submappen van het pad te plaatsen, zoals /etc/workflow/models/dam of /etc/workflow/models/projects, omdat de volledige submap ook kan worden overschreven door upgrades of servicepacks.
+   &#42;Houd er rekening mee dat het belangrijk is om de map of aangepaste workflows nooit onder submappen van het pad te plaatsen, zoals /etc/workflow/models/dam of /etc/workflow/models/projects, aangezien de volledige submap ook kan worden overschreven door upgrades of servicepacks.
 
    ![Locatie van het workflowmodel in 6.3](./assets/develop-aem-projects/custom-workflow-subfolder.png)
 
@@ -320,7 +320,7 @@ In de laatste stap van de workflow wordt gebruikgemaakt van de processtap Pagina
 
    >[!NOTE]
    >
-   >Als AEM 6.4+ wordt gebruikt, is de locatie van de workflow gewijzigd. Zie [hier voor meer informatie .](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >Als AEM 6.4+ wordt gebruikt, is de locatie van de workflow gewijzigd. Zie [hier voor meer informatie .](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
 
    Als AEM 6.4+ wordt gebruikt, wordt het workflowmodel onder `/conf/global/settings/workflow/models`. Herhaal bovenstaande stappen met de /conf folder en voeg een subfolder genoemd toe `aem-guides` en verplaatst u `content-approval-workflow` eronder.
 
@@ -347,11 +347,11 @@ Locatie van workflowmodel in 6.4+
 
 1. Het workflowproces Projecttaak maken is ontworpen om een taak te maken als een stap in de workflow. Pas na het voltooien van de taak gaat de workflow verder. Een krachtig aspect van de stap van de Taak van het Project creëren is dat het werkschema meta-gegevens waarden kan lezen en die gebruiken om de taak dynamisch tot stand te brengen.
 
-   Verwijder eerst de Stap van de Deelnemer die standaard wordt gemaakt. Van de Sidekick in het componentenmenu breid uit **Projecten** subkop en slepen en neerzetten **&quot;Projecttaak maken&quot;** op het model.
+   Verwijder eerst de Stap van de Deelnemer die standaard wordt gemaakt. Van de Sidekick in het componentenmenu breid uit **Projecten** subrubriek en sleep + zet de **&quot;Projecttaak maken&quot;** op het model.
 
    Dubbelklik op de stap Projecttaak maken om het workflowdialoogvenster te openen. Configureer de volgende eigenschappen:
 
-   Dit tabblad wordt veel gebruikt voor alle stappen in het workflowproces en we stellen de Titel en Beschrijving in (deze zijn niet zichtbaar voor de eindgebruiker). Het belangrijke bezit dat wij zullen plaatsen is het Werkschemastadium aan **Inhoud bewerken** in de keuzelijst.
+   Dit tabblad wordt veel gebruikt voor alle stappen in het workflowproces en we stellen de Titel en Beschrijving in (deze zijn niet zichtbaar voor de eindgebruiker). Het belangrijke bezit dat wij zullen plaatsen is het Werkschemastadium aan **Inhoud bewerken** in het keuzemenu.
 
    ```shell
    Common Tab
@@ -372,7 +372,7 @@ Locatie van workflowmodel in 6.4+
        Due In - Days = "2"
    ```
 
-   Het verpletterende lusje is een facultatieve dialoog die beschikbare acties voor de gebruiker kan specificeren die de taak voltooit. Deze handelingen zijn alleen tekenreekswaarden en worden opgeslagen in de metagegevens van de workflow. Deze waarden kunnen door manuscripten en/of processtappen later in het werkschema worden gelezen om de werkschema dynamisch &quot;te leiden&quot;. Op basis van de [workflowdoelstellingen](#goals-tutorial) Er worden drie acties aan dit tabblad toegevoegd:
+   Het verpletterende lusje is een facultatieve dialoog die beschikbare acties voor de gebruiker kan specificeren die de taak voltooit. Deze handelingen zijn alleen tekenreekswaarden en worden opgeslagen in de metagegevens van de workflow. Deze waarden kunnen door manuscripten en/of processtappen later in het werkschema worden gelezen om de werkschema dynamisch &quot;te leiden&quot;. Op basis van de workflowdoelstellingen die we gaan uitvoeren, voegt u drie acties toe aan dit tabblad:
 
    ```shell
    Routing Tab
@@ -393,7 +393,7 @@ Locatie van workflowmodel in 6.4+
 
 1. In de vorige stap hebben we verwezen naar een Pre-Create Taakscript. Wij zullen nu dat manuscript tot stand brengen waarin wij de Ontvanger van de Taak zullen plaatsen die op de waarde van een werkschemagegeven wordt gebaseerd &quot;**cessionaris**&quot;. De **&quot;ontvanger&quot;** waarde wordt ingesteld wanneer de workflow wordt uitgeschakeld. We zullen ook de metagegevens van de workflow lezen om de prioriteit van de taak dynamisch te kiezen door het lezen van de opdracht &quot;**taskPriority&quot;** De waarde van de metagegevens van de workflow en de **&quot;taskdueDate&quot; **om dynamisch in te stellen wanneer de eerste taak moet worden uitgevoerd.
 
-   Voor organisatorische doeleinden hebben we onder onze toepassingsmap een map gemaakt voor al onze projectgerelateerde scripts: **/apps/adobe-guides/projects-tasks/projects/scripts**. Een nieuw bestand maken onder de naam van deze map **&quot;start-task-config.ecma&quot;**. &#42;De nota zorgt ervoor de weg aan uw begin-taak-config.ecma- dossier de weg aanpast die op het Geavanceerde Lusje van Montages in Stap 4 wordt geplaatst.
+   Voor organisatorische doeleinden hebben we onder onze toepassingsmap een map gemaakt voor al onze projectgerelateerde scripts: **/apps/adobe-guides/projects-tasks/projects/scripts**. Een bestand maken onder de naam van deze map **&quot;start-task-config.ecma&quot;**. &#42;De nota zorgt ervoor de weg aan uw begin-taak-config.ecma- dossier de weg aanpast die op het Geavanceerde Lusje van Montages in Stap 4 wordt geplaatst.
 
    Voeg het volgende toe als de inhoud van het bestand:
 
@@ -738,7 +738,7 @@ De configuratie van het Werkschema is een gebied van een Malplaatje van het Proj
    >Als AEM 6.4 wordt gebruikt, is de locatie van de workflow gewijzigd. Wijs de `modelId` eigenschap naar de locatie van het workflowmodel van de runtime onder `/var/workflow/models/aem-guides/content-approval-workflow`
    >
    >
-   >Zie [Hier vindt u meer informatie over de wijziging in de locatie van de workflow.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >Zie [Hier vindt u meer informatie over de wijziging in de locatie van de workflow.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
 
    ```xml
    <contentapproval
@@ -754,4 +754,4 @@ De configuratie van het Werkschema is een gebied van een Malplaatje van het Proj
 
 * [Voltooid lespakket downloaden](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Volledige gegevensopslagruimte voor code op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [Documentatie AEM projecten](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html)
+* [Documentatie AEM projecten](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html)
