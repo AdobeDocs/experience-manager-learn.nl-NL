@@ -9,16 +9,17 @@ version: Cloud Service
 topic: Integrations
 jira: KT-14501
 duration: 40
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+exl-id: a8531e82-18cd-4b32-8148-d6fc5f6e51c6
+source-git-commit: 016b06d3bd5b62945c168588839454544b2f7d41
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
 
 # Inleiding
 
-In deze zelfstudie implementeren we een eenvoudig gebruik van het opslaan van formulierverzendingen in Azure-opslag met blob-indextags. Blob-indextags bieden mogelijkheden voor gegevensbeheer en detectie met behulp van tagkenmerken voor sleutelwaarden-indextags. U kunt objecten in één container of in alle containers in uw opslagaccount categoriseren en zoeken.
+In deze zelfstudie leert u hoe u een eenvoudig gebruik van het opslaan van formulierverzendingen in Azure-opslag met blob-indextags kunt implementeren. Blob-indextags bieden mogelijkheden voor gegevensbeheer en detectie met behulp van tagkenmerken voor sleutelwaarden-indextags. U kunt objecten in één container of in alle containers in uw opslagaccount categoriseren en zoeken.
 ![blob-index-tags](assets/blob-with-index-tags.png)
 
 ## Voorwaarden
