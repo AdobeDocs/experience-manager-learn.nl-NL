@@ -10,7 +10,7 @@ level: Beginner
 doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
 duration: 242
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 7e1f538b111815a7934b798e0dac3587d8962c31
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Adobe Experience Manager Content Fragments and Experience Fragments kunnen er on
 <li>Een herbruikbare samenstelling van een of meer AEM Componenten die inhoud en presentatie definiëren die een <strong>ervaring</strong> dat op zichzelf zinvol is</li>
 </ul>
 </td>
-</tr><tr><td><strong>Core Tenders</strong></td>
+</tr><tr><td><strong>Core Tenets</strong></td>
 <td><ul>
 <li>Inhoud-centrisch</li>
 <li>Gedefinieerd door a <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">gestructureerd, op vorm-gebaseerd, gegevensmodel.</a></li>
