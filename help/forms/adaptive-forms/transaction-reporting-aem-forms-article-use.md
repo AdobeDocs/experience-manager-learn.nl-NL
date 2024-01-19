@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 96
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 4b88045a626b5e7bd1386e62ee54ac6fe2ce9282
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
 # Transactierapportage in AEM Forms gebruiken{#using-transaction-reporting-in-aem-forms}
 
-Transactierapporten om het aantal verzonden formulieren, het weergeven van documenten met behulp van documentservices en het weergeven van interactieve communicatie (web- en afdrukkanalen) vast te leggen, zijn geïntroduceerd in AEM Forms 6.4.1. Deze mogelijkheid is vooral bedoeld voor klanten die een licentie voor de software willen verkrijgen op basis van het aantal verzonden formulieren en/of documenten. Deze mogelijkheid is momenteel alleen beschikbaar in AEM Forms OSGI-stapels.
+Transactierapporten om het aantal verzonden formulieren, het weergeven van documenten met behulp van documentservices en het weergeven van interactieve communicatie (web- en afdrukkanalen) vast te leggen, zijn geïntroduceerd in AEM Forms 6.4.1. Deze mogelijkheid is momenteel alleen beschikbaar in AEM Forms OSGI-stapels.
 
 ## Transactierapportage inschakelen {#enabling-transaction-reporting}
 
@@ -35,7 +35,7 @@ Zodra transactierapportage is ingeschakeld, kunt u Adaptief Forms verzenden, doc
 
 Meld u aan bij AEM Forms als beheerder om het transactierapport weer te geven. Alleen leden van de groep fd-beheerder kunnen het transactierapport weergeven.
 
-Gereedschappen selecteren | FORMS | Transactierapport weergeven
+Gereedschappen selecteren | Forms | Transactierapport weergeven
 
 of bekijk het transactierapport door te klikken [hier](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
