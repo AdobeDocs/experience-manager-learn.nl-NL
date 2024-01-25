@@ -8,8 +8,8 @@ role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
-duration: 274
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 237
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -166,7 +166,7 @@ Volg onderstaande stappen om dit voorbeeld op uw systeem te laten werken:
 
 * [Ga naar Forms en Documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Klik op Maken | Bestanden uploaden en uploaden van de tag-and-store-in-dam-adaptive-form.zip
+* Klik op Maken | Bestand uploaden en uploaden van de tag-and-store-in-dam-adaptive-form.zip
 
 * [Artikelelementen importeren](assets/tag-and-store-in-dam-assets.zip) met AEM pakketbeheer
 * Open de [voorbeeldformulier in voorbeeldmodus](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Alle velden invullen** en het formulier verzenden.

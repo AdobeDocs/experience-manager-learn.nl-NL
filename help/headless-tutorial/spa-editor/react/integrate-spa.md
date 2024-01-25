@@ -1,5 +1,5 @@
 ---
-title: Een SPA integreren | Aan de slag met de AEM SPA Editor en reageren
+title: Een SPA integreren | Aan de slag met de AEM SPA Editor en Reageren
 description: Begrijp hoe de broncode voor een toepassing van de Enige Pagina (SPA) die in React wordt geschreven met een Project van Adobe Experience Manager (AEM) kan worden geïntegreerd. Leer om moderne front-end hulpmiddelen, zoals een webpack dev server, te gebruiken om de SPA tegen AEM JSON model API snel te ontwikkelen.
 feature: SPA Editor
 version: Cloud Service
@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-duration: 570
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 507
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 0%

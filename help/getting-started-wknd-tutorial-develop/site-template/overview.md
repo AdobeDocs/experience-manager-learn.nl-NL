@@ -1,5 +1,5 @@
 ---
-title: Aan de slag met AEM Sites | AEM Snel site maken
+title: Aan de slag met AEM Sites | Snel site maken AEM
 description: Leer hoe u een low-code aanpak gebruikt om uw eerste site te maken in Adobe Experience Manager met Snel site maken en een vooraf gedefinieerde Sjabloon. Gebruik componenten en sjablonen buiten de box om een site snel in bedrijf te stellen. Gebruik een door Adobe XD gestuurde ontwerpworkflow om merkspecifieke stijlen en aanpassingen toe te passen met alleen CSS en JavaScript. Aanbevolen voor nieuwe projecten en ontwikkelaars.
 version: Cloud Service
 topic: Content Management
@@ -10,8 +10,8 @@ jira: KT-7985
 thumbnail: 333477.jpg
 doc-type: Tutorial
 exl-id: a55c1dda-f74a-4914-aa1b-c4de8ad1253e
-duration: 445
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 430
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%

@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
-duration: 818
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 732
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 0%
@@ -163,7 +163,7 @@ Volg hetzelfde proces als in het dialoogvenster [vorige sectie](#fragment-refere
 | Profielafbeelding | /content/dam/wknd-shared/en/contributors/stacey-roswells.jpg |
 | Biografie | Stacey Roswells is een volmaakte rockklimmer en alpenavonturer. Geboren in Baltimore, Maryland, Stacey is de jongste van zes kinderen. De vader van Stacey was een luitenant-kolonel bij de Amerikaanse marine en de moeder was een moderne dansinstructeur. De familie van Stacey verhuisde regelmatig met de taken van de vader en nam de eerste foto toen de vader in Thailand was gestationeerd. Dit is ook waar Stacey leerde klimmen. |
 | Erviteitsniveau instructeur | Geavanceerd |
-| Vaardigheden | Rotsklimmen | Skien | Achtergrond |
+| Vaardigheden | Rotsklimmen | Skieten | Achteruitpakken |
 
 **Kumar Selvaraj**
 
@@ -175,7 +175,7 @@ Volg hetzelfde proces als in het dialoogvenster [vorige sectie](#fragment-refere
 | Profielafbeelding | /content/dam/wknd-shared/en/contributors/kumar-selvaraj.jpg |
 | Biografie | Kumar Selvaraj is een ervaren AMGA-gecertificeerde professionele instructeur die als belangrijkste doel heeft studenten te helpen hun klimmen- en wandelvaardigheden te verbeteren. |
 | Erviteitsniveau instructeur | Geavanceerd |
-| Vaardigheden | Rotsklimmen | Achtergrond |
+| Vaardigheden | Rotsklimmen | Achteruitpakken |
 
 **Ayo Ogunsede**
 
@@ -187,7 +187,7 @@ Volg hetzelfde proces als in het dialoogvenster [vorige sectie](#fragment-refere
 | Profielafbeelding | /content/dam/wknd-shared/en/contributors/ayo-ogunseinde-237739.jpg |
 | Biografie | Ayo Ogunsede is een professionele klimmer- en achtergrondinstructeur die in Fresno, Centraal-Californië woont. Ayo&#39;s doel is om fietsers te begeleiden op hun meest episch-nationale park avonturen. |
 | Erviteitsniveau instructeur | Geavanceerd |
-| Vaardigheden | Rotsklimmen | Fietsen | Achtergrond |
+| Vaardigheden | Rotsklimmen | Cycli | Achteruitpakken |
 
 Laat de **Aanvullende informatie** veld leeg.
 

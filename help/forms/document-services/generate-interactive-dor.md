@@ -9,8 +9,8 @@ level: Experienced
 jira: KT-9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
-duration: 258
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 218
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Als uw xdp niet is gebaseerd op XSD, voert u de volgende stappen uit om XSD(sche
 ### Voorbeeldgegevens genereren voor de XDP
 
 * Open XDP in de ontwerper van AEM Forms.
-* Klikken op bestand | Formuliereigenschappen | Voorbeeld
+* Klikken op bestand | Formuliereigenschappen | Voorvertoning
 * Klik op Voorbeeldgegevens genereren
 * Klik op Genereren
 * Geef een betekenisvolle bestandsnaam op, bijvoorbeeld &quot;form-data.xml&quot;

@@ -10,8 +10,8 @@ level: Beginner
 jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-duration: 111
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 102
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Open het formulier in de bewerkingsmodus Zorg dat u zich in de stijllaag bevindt
 U bevindt zich in de standaardstatus wanneer u de stijleditor voor de tab opent, zoals wordt weergegeven in de onderstaande schermafbeelding
 ![navigatietab](assets/navigation-tab.png)
 
-CSS-eigenschappen instellen voor de standaardstatus zoals hieronder wordt weergegeven | Categorie | Eigenschapnaam | Waarde van eigendom | |:—|:—|:—| | Dimensionen en positie | Breedte | 50 px | | Tekst | Tekendikte | Vet | | Tekst | Kleur | #FFF | |Tekst | Lijnhoogte| 3 | |Tekst | Tekst uitlijnen | Links | |Achtergrond| Kleur | #056dae |
+CSS-eigenschappen instellen voor de standaardstatus zoals hieronder wordt weergegeven | Categorie | Eigenschapnaam | Waarde van eigenschap | |:—|:—|:—| | Dimensionen en positie | Breedte | 50 px | | Tekst | Tekendikte| Vet | | Tekst | Kleur | #FFF | |Tekst | Lijnhoogte| 3 | |Tekst | Tekst uitlijnen | Links | |Achtergrond| Kleur | #056dae |
 
 Uw wijzigingen opslaan
 

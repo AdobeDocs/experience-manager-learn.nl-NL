@@ -9,8 +9,8 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
-duration: 439
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 373
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
@@ -275,7 +275,7 @@ Hoe minder geïnstalleerde standaardbestanden u hoe beter verandert, omdat als e
 
 In plaats daarvan wordt een `.rpmnew` naast het origineel.  Dit betekent u sommige veranderingen zult missen u zou kunnen gewild en meer huisvuil in uw configuratiemappen tot stand gebracht hebben.
 
-dat wil zeggen: De RPM tijdens updateinstallatie zal bekijken `httpd.conf` als het in `unaltered` verklaren dat *vervangen* en u krijgt de essentiële updates.  Als de `httpd.conf` was `altered` dan *niet vervangen* het bestand en maakt een referentiebestand met de naam `httpd.conf.rpmnew` en de vele gewenste moeilijke situaties zullen in dat dossier zijn dat niet op de dienstopstarten van toepassing is.
+De RPM tijdens de installatie van de update zal dus kijken naar `httpd.conf` als het in `unaltered` verklaren dat *vervangen* en u krijgt de essentiële updates.  Als de `httpd.conf` was `altered` dan *niet vervangen* het bestand en maakt een referentiebestand met de naam `httpd.conf.rpmnew` en de vele gewenste moeilijke situaties zullen in dat dossier zijn dat niet op de dienstopstarten van toepassing is.
 
 Enterprise Linux is op de juiste wijze ingesteld om deze gebruikszaak op een betere manier te verwerken.  U krijgt gebieden waarin u de standaardinstellingen die u voor u instelt, kunt uitbreiden of overschrijven.  In de basisinstallatie van httpd vindt u het bestand `/etc/httpd/conf/httpd.conf`en bevat de syntaxis zoals:
 

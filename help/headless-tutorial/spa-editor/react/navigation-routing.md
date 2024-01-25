@@ -1,5 +1,5 @@
 ---
-title: Navigatie en routering toevoegen | Aan de slag met de AEM SPA Editor en reageren
+title: Navigatie en routering toevoegen | Aan de slag met de AEM SPA Editor en Reageren
 description: Leer hoe meerdere weergaven in de SPA kunnen worden ondersteund door aan AEM Pagina's toe te wijzen met de SPA Editor SDK. De dynamische navigatie wordt uitgevoerd gebruikend React Router en React de Componenten van de Kern.
 feature: SPA Editor
 version: Cloud Service
@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-duration: 467
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 423
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1481'
 ht-degree: 0%

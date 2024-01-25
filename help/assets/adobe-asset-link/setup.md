@@ -1,6 +1,6 @@
 ---
 title: Adobe Asset Link instellen
-description: Leer hoe u Asset Link gratis kunt instellen, waardoor uw Creative Cloud-apps, zoals Photoshop, Illustrator, InDesign en XD, worden verbonden met Adobe Experience Manager Assets.
+description: Leer hoe u Asset Link gratis kunt instellen, waardoor uw Creative Cloud-apps, zoals Photoshop, Illustrator, InDesign en XD, met Adobe Experience Manager Assets worden verbonden.
 feature: Adobe Asset Link
 version: Cloud Service
 topic: Content Management
@@ -10,8 +10,8 @@ jira: KT-9401
 thumbnail: 338824.jpg
 doc-type: Feature Video
 exl-id: a62e936f-c231-474d-9671-58815b2cb652
-duration: 2440
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 2424
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
