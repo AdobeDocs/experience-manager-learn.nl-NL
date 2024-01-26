@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
+source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '2001'
 ht-degree: 1%
 
 ---
@@ -131,6 +131,11 @@ ht-degree: 1%
    + [2 - Zip-formulierbijlagen](zipping-form-attachments/custom-process-step.md)
    + [3 - E-mailformulierbijlagen](zipping-form-attachments/populating-list-of-documents.md)
    + [4 - Test de oplossing](zipping-form-attachments/test.md)
++ Formulier vooraf invullen met gegevens en bijlagen{#prefill-form-with-data-attachments}
+   + [1 - Inleiding](prefill-form-with-data-attachments/introduction.md)
+   + [2 - Aangepaste verzending maken](prefill-form-with-data-attachments/create-custom-submit.md)
+   + [3 - OSGi-configuratie maken](prefill-form-with-data-attachments/create-osgi-configuration.md)
+   + [4 - Prefill-service maken](prefill-form-with-data-attachments/create-prefill-service.md)
 + Adaptief formulier opslaan en ophalen{#store-and-retrieve-af-with-2fa}
    + [1 - Inleiding](store-and-retrieve-af-with-2fa/introduction.md)
    + [2 - Gegevensbron configureren](store-and-retrieve-af-with-2fa/configure-data-source.md)
