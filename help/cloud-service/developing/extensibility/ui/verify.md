@@ -11,7 +11,7 @@ jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
 duration: 637
-source-git-commit: 2a22a1bbe8474b8b7ca95f2b364fd7540b26b894
+source-git-commit: f48fb02887d909a102718dc5a0c4d1ecd2b1ef34
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -39,9 +39,9 @@ Als u een URL wilt maken die de extensie non-production in AEM koppelt, moet de 
 Als u bijvoorbeeld een extensie wilt voorvertonen voor de Content Fragment-console:
 
 1. Meld u aan bij de gewenste AEM as a Cloud Service omwenteling.
-2. Selecteer de __Inhoudsfragmenten__ pictogram.
-3. Wacht tot de AEM Content Fragment Console in de browser is geladen.
-4. Kopieer de URL van de AEM Content Fragment Console van de adresbalk van de browser en het lijkt erop:
+1. Selecteer de __Inhoudsfragmenten__ pictogram.
+1. Wacht tot de AEM Content Fragment Console in de browser is geladen.
+1. Kopieer de URL van de AEM Content Fragment Console van de adresbalk van de browser en het lijkt erop:
 
    ```
    https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
@@ -80,11 +80,11 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
    https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
-2. Kopieer en plak de URL van de voorvertoning in uw browser.
+1. Kopieer en plak de URL van de voorvertoning in uw browser.
 
    + U moet mogelijk eerst en dan periodiek [het HTTPS-certificaat accepteren](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) voor de host van de lokale toepassing (`https://localhost:9080`).
 
-3. De AEM-interface wordt geladen met de lokale versie van de extensie die in de interface is geïnjecteerd voor verificatie.
+1. De AEM-interface wordt geladen met de lokale versie van de extensie die in de interface is geïnjecteerd voor verificatie.
 
 >[!IMPORTANT]
 >
@@ -144,9 +144,9 @@ Om het maken van URL&#39;s met voorvertoningen en voorvertoningen zoals hierbove
 De onderstaande bladwijzer bevat een voorvertoning van de [plaatselijke ontwikkelingsgebouwen](#verify-local-development-builds) van de verlenging op `https://localhost:9080`. Aan voorvertoning [werkgebiedbuilds](#verify-stage-builds), maakt u een bladwijzer met de `previewApp` variabele die is ingesteld op de URL van de geïmplementeerde App Builder-app.
 
 1. Maak een bladwijzer in uw browser.
-2. Bewerk de bladwijzer.
-3. Een bladwijzer een betekenisvolle naam geven, zoals `AEM UI Extension Preview (localhost:9080)`.
-4. Stel de URL van de bladwijzer in op de volgende code:
+1. Bewerk de bladwijzer.
+1. Een bladwijzer een betekenisvolle naam geven, zoals `AEM UI Extension Preview (localhost:9080)`.
+1. Stel de URL van de bladwijzer in op de volgende code:
 
    ```javascript
    javascript: (() => {
@@ -161,7 +161,7 @@ De onderstaande bladwijzer bevat een voorvertoning van de [plaatselijke ontwikke
    })();
    ```
 
-5. Navigeer naar een uitbreidbare AEM UI om de voorvertoningsextensie te laden en klik vervolgens op de bladwijzer.
+1. Navigeer naar een uitbreidbare AEM UI om de voorvertoningsextensie te laden en klik vervolgens op de bladwijzer.
 
 >[!TIP]
 >
