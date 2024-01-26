@@ -3,8 +3,8 @@ title: De snelheid van de inhoud versnellen met AEM stijlsystemen
 description: Leer hoe u AEM Stijlsystemen kunt gebruiken om ontwerpers, makers van inhoud en ontwikkelaars in uw organisatie in staat te stellen ervaringen te maken en te leveren op de snelheid en schaal die uw klanten verwachten.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-duration: 191
-source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
+duration: 216
+source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 0%
