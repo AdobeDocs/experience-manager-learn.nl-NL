@@ -11,9 +11,9 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 2aec84f0fbd34678a4e25200ae0cdc6396beca95
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -27,14 +27,14 @@ Inhoudsfragmenten die worden gebruikt in AEM modellering van inhoud zonder kop, 
 De `ImageRef` type heeft vier URL-opties voor inhoudsverwijzingen:
 
 + `_path` is het referenced weg in AEM, en omvat geen AEM oorsprong (gastheernaam)
-+ `_dynamicUrl` is de volledige URL naar het voorkeursafbeeldingselement dat voor het web is geoptimaliseerd.
++ `_dynamicUrl` is de URL die moet worden gebruikt voor levering van afbeeldingselementen die voor het web zijn geoptimaliseerd.
    + De `_dynamicUrl` bevat geen AEM oorsprong, zodat het domein (AEM Auteur of AEM publicatieservice) moet worden opgegeven door de clienttoepassing.
 + `_authorUrl` is de volledige URL naar het afbeeldingselement op AEM auteur
    + [AEM auteur](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) kan worden gebruikt om een voorvertoning van de toepassing zonder kop weer te geven.
 + `_publishUrl` is de volledige URL naar het afbeeldingselement bij AEM Publiceren
    + [AEM publiceren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) is typisch waar de productie plaatsing van de hoofdloze toepassing beelden van toont.
 
-De `_dynamicUrl` is de voorkeurs-URL die voor afbeeldingselementen moet worden gebruikt en moet het gebruik van `_path`, `_authorUrl`, en `_publishUrl` waar mogelijk.
+De `_dynamicUrl` is de aanbevolen URL voor het leveren van afbeeldingselementen en moet het gebruik van `_path`, `_authorUrl`, en `_publishUrl` waar mogelijk.
 
 |                                | AEM as a Cloud Service | as a Cloud Service RDE AEM | AEM SDK | AEM 6,5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
@@ -96,17 +96,17 @@ De `$path` in de `_path` filter vereist het volledige pad naar het inhoudsfragme
 
 De `_assetTransform` bepaalt hoe `_dynamicUrl` is ontworpen om de weergegeven afbeelding te optimaliseren. URL&#39;s met webgeoptimaliseerde afbeeldingen kunnen ook op de client worden aangepast door de queryparameters van de URL te wijzigen.
 
-| GraphQL, parameter | URL-parameter | Beschrijving | Vereist | Variabele GraphQL-waarden | URL-parameterwaarden | Voorbeeld-URL, parameter |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | NVT | De indeling van het afbeeldingselement. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | NVT | NVT |
-| `seoName` | NVT | Naam van bestandssegment in URL. Indien niet opgegeven, wordt de naam van het afbeeldingselement gebruikt. | ✘ | Alphanumeric `-`, of `_` | NVT | NVT |
-| `crop` | `crop` | Het uitsnijdkader dat uit de afbeelding is genomen, moet binnen de grootte van de afbeelding vallen | ✘ | Positieve gehele getallen die een snijgebied binnen de grenzen van de afmetingen van de oorspronkelijke afbeelding definiëren | Door komma&#39;s afgebakende reeks numerieke coördinaten `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
-| `size` | `size` | Grootte van de uitvoerafbeelding (zowel hoogte als breedte) in pixels. | ✘ | Positieve gehele getallen | Door komma&#39;s gescheiden positieve gehele getallen in de volgorde `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
-| `rotation` | `rotate` | Rotatie van de afbeelding in graden. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
-| `flip` | `flip` | Draai de afbeelding om. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
-| `quality` | `quality` | Afbeeldingskwaliteit in procenten van oorspronkelijke kwaliteit. | ✘ | 1-100 | 1-100 | `?quality=80` |
-| `width` | `width` | Breedte van de uitvoerafbeelding in pixels. Wanneer `size` wordt verstrekt `width` wordt genegeerd. | ✘ | Positief geheel getal | Positief geheel getal | `?width=1600` |
-| `preferWebP` | `preferwebp` | Indien `true` en AEM een WebP dienen als browser het, ongeacht `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
+| GraphQL, parameter | Beschrijving | Vereist | Variabele GraphQL-waarden |
+|:---------|:----------|:-------------------------------|:--:|:--------------------------|
+| `format` | De indeling van het afbeeldingselement. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
+| `seoName` | Naam van bestandssegment in URL. Indien niet opgegeven, wordt de naam van het afbeeldingselement gebruikt. | ✘ | Alphanumeric `-`, of `_` |
+| `crop` | Het uitsnijdkader dat uit de afbeelding is genomen, moet binnen de grootte van de afbeelding vallen | ✘ | Positieve gehele getallen die een snijgebied binnen de grenzen van de afmetingen van de oorspronkelijke afbeelding definiëren |
+| `size` | Grootte van de uitvoerafbeelding (zowel hoogte als breedte) in pixels. | ✘ | Positieve gehele getallen |
+| `rotation` | Rotatie van de afbeelding in graden. | ✘ | `R90`, `R180`, `R270` |
+| `flip` | Draai de afbeelding om. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` |
+| `quality` | Afbeeldingskwaliteit in procenten van oorspronkelijke kwaliteit. | ✘ | 1-100 |
+| `width` | Breedte van de uitvoerafbeelding in pixels. Wanneer `size` wordt verstrekt `width` wordt genegeerd. | ✘ | Positief geheel getal |
+| `preferWebP` | Indien `true` en AEM een WebP dienen als browser het, ongeacht `format`. | ✘ | `true`, `false` |
 
 ## GraphQL-reactie
 
@@ -145,7 +145,7 @@ Onthoud, `_dynamicUrl` bevat niet het AEM domein, dus u moet de gewenste oorspro
 
 ## Responsieve URL&#39;s
 
-In het bovenstaande voorbeeld ziet u hoe u een afbeelding van één formaat gebruikt, maar in webervaringen zijn responsieve afbeeldingssets vaak vereist. Responsieve afbeeldingen kunnen worden geïmplementeerd met [img-srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) of [afbeeldingselementen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). Het volgende codefragment laat zien hoe u het `_dynamicUrl` als een basis, en voeg verschillende breedteparameters toe, aan macht verschillende ontvankelijke meningen. Niet alleen kan de `width` de vraagparameter wordt gebruikt, maar andere vraagparameters kunnen door de cliënt worden toegevoegd om het beeldactiva verder te optimaliseren die op zijn behoeften worden gebaseerd.
+In het bovenstaande voorbeeld ziet u hoe u een afbeelding van één formaat gebruikt, maar in webervaringen zijn responsieve afbeeldingssets vaak vereist. Responsieve afbeeldingen kunnen worden geïmplementeerd met [img-srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) of [afbeeldingselementen](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). Het volgende codefragment laat zien hoe u het `_dynamicUrl` als basis. `width` is een URL-parameter waaraan u vervolgens kunt toevoegen `_dynamicUrl` voor het aansturen van verschillende responsieve weergaven.
 
 ```javascript
 // The AEM host is usually read from a environment variable of the SPA.
