@@ -8,10 +8,10 @@ role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
 duration: 156
-last-substantial-update: 2023-12-07T00:00:00Z
+last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 # Webhaken en AEM
 
 Leer hoe u AEM gebeurtenissen op een webhaak ontvangt en de gebeurtenisdetails zoals lading, kopballen, en meta-gegevens bekijkt.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
 In dit voorbeeld gebruikt u een Adobe-geleverd _gehoste webhaak_ Hiermee kunt u AEM gebeurtenissen ontvangen zonder dat u uw eigen webhaak hoeft in te stellen. Deze door Adobe verschafte webhaak wordt gehost op [Glitch](https://glitch.com/), een platform dat bekend staat om het aanbieden van een webomgeving die bevorderlijk is voor het ontwikkelen en implementeren van webtoepassingen. De optie voor het gebruik van uw eigen webhaak is echter ook beschikbaar als u dat de voorkeur geeft.
 

@@ -8,10 +8,10 @@ role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
 duration: 163
-last-substantial-update: 2023-12-07T00:00:00Z
+last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 # Journalisten en AEM
 
 Leer hoe te om de aanvankelijke reeks AEM Gebeurtenissen van het dagboek terug te winnen en de details over elke gebeurtenis te onderzoeken.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427052?quality=12&learn=on)
 
 Journaling is een trekmethode om AEM Gebeurtenissen te verbruiken, en een dagboek is een geordende lijst van gebeurtenissen. Met Adobe I/O Events Journaling API kunt u de AEM Events ophalen uit het dagboek en deze verwerken in uw toepassing. Met deze aanpak kunt u gebeurtenissen beheren op basis van een opgegeven ervaring en deze efficiënt bulksgewijs verwerken. Zie de [Journalating](https://developer.adobe.com/events/docs/guides/journaling_intro/) voor diepgaande inzichten, met inbegrip van essentiële overwegingen zoals bewaartermijnen, paginering, en meer.
 

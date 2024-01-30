@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: aa6cd605c617de45003a96b1c14e37f055a8c566
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1119'
 ht-degree: 5%
 
 ---
@@ -169,6 +169,8 @@ ht-degree: 5%
    + Voorbeelden{#examples}
       + [Webhaak - Ontvang AEM gebeurtenissen](./eventing/examples/webhook.md)
       + [Journaling - AEM gebeurtenissen laden](./eventing/examples/journaling.md)
+      + [Adobe I/O Runtime-actie - AEM gebeurtenissen ontvangen](./eventing/examples/runtime-action.md)
+      + [Adobe I/O Runtime-actie - Procesgebeurtenissen AEM](./eventing/examples/event-processing-using-runtime-action.md)
 + Migratie {#migration}
    + [Inhoud overbrengen](./migration/content-transfer-tool.md)
    + [Bulkimport van activa](./migration/bulk-import.md)

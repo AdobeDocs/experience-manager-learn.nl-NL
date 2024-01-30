@@ -11,9 +11,9 @@ duration: 573
 last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Indien al ingeschakeld, zie [AEM Gebeurtenissen inschakelen in uw AEM Cloud Serv
 
 Als u zich wilt abonneren op AEM gebeurtenissen, hoeft u geen code in AEM te schrijven, maar een [Adobe Developer Console](https://developer.adobe.com/) project wordt gevormd. De Adobe Developer-console is een gateway naar Adobe-API&#39;s, SDK&#39;s, Events, Runtime en App Builder.
 
-In dit geval _project_ in de Adobe Developer Console kunt u zich abonneren op gebeurtenissen die vanuit AEM as a Cloud Service omgevingen worden uitgegeven en de levering van de gebeurtenis aan externe systemen configureren.
+In dit geval _project_ in de Adobe Developer Console kunt u zich abonneren op gebeurtenissen die vanuit AEM as a Cloud Service omgeving worden verzonden en de levering van de gebeurtenis aan externe systemen configureren.
 
 Zie voor meer informatie [Abonneren op AEM gebeurtenissen in de Adobe Developer-console](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
 
@@ -92,7 +92,7 @@ Zie voor meer informatie [Abonneren op AEM gebeurtenissen in de Adobe Developer-
 Er zijn twee primaire methoden voor het gebruik van AEM Events: de _duwen_ en de _trekken_ methode.
 
 - **Push, methode**: In deze aanpak wordt de gebeurtenisgebruiker proactief op de hoogte gebracht door Adobe I/O Events wanneer een gebeurtenis beschikbaar wordt. Tot de integratieopties behoren Webhooks, Adobe I/O Runtime en Amazon EventBridge.
-- **Pull, methode**: Hier opiniepeilt de gebeurtenisconsument actief Adobe I/O Events om te controleren op nieuwe gebeurtenissen. De primaire integratieoptie voor deze methode is de Adobe I/O Journaling API.
+- **Pull, methode**: Hier opiniepeilt de gebeurtenisconsument actief Adobe I/O Events om te controleren op nieuwe gebeurtenissen. De primaire integratieoptie voor deze methode is de Adobe Developer Journaling API.
 
 Zie voor meer informatie [AEM Gebeurtenissen verwerken via Adobe I/O Events](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#aem-events-processing-via-adobe-io).
 
@@ -101,7 +101,7 @@ Zie voor meer informatie [AEM Gebeurtenissen verwerken via Adobe I/O Events](htt
 <table>
   <tr>
     <td>
-        <a  href="./examples/webhook.md"><img alt="Ontvang AEM gebeurtenissen op een webhaak" src="./assets/examples/webhook/Eventing-webhook.png"/></a>
+        <a  href="./examples/webhook.md"><img alt="Ontvang AEM gebeurtenissen op een webhaak" src="./assets/examples/webhook/webhook-example.png"/></a>
         <div><strong><a href="./examples/webhook.md">Ontvang AEM gebeurtenissen op een webhaak</a></strong></div>
         <p>
           Gebruik de Adobe die u hebt opgegeven op de webhaak om AEM gebeurtenissen te ontvangen en de gebeurtenisdetails te bekijken.
@@ -115,4 +115,20 @@ Zie voor meer informatie [AEM Gebeurtenissen verwerken via Adobe I/O Events](htt
         </p>
       </td>
     </tr>
+  <tr>
+    <td>
+        <a  href="./examples/runtime-action.md"><img alt="AEM Gebeurtenissen ontvangen bij Adobe I/O Runtime-actie" src="./assets/examples/runtime-action/eventing-runtime.png"/></a>
+        <div><strong><a href="./examples/runtime-action.md">AEM Gebeurtenissen ontvangen bij Adobe I/O Runtime-actie</a></strong></div>
+        <p>
+          Ontvang AEM gebeurtenissen en bekijk de gebeurtenisdetails.
+        </p>
+      </td>
+      <td>
+        <a  href="./examples/event-processing-using-runtime-action.md"><img alt="AEM Gebeurtenissen verwerken met Adobe I/O Runtime Action" src="./assets/examples/event-processing-using-runtime-action/event-processing.png"/></a>
+        <div><strong><a href="./examples/event-processing-using-runtime-action.md">AEM Gebeurtenissen verwerken met Adobe I/O Runtime Action</a></strong></div>
+        <p>
+          Leer hoe u ontvangen AEM Gebeurtenissen verwerkt met Adobe I/O Runtime Action. De gebeurtenisverwerking omvat AEM callback, persistentie van gebeurtenisgegevens en het weergeven van deze gegevens in de SPA.
+        </p>
+      </td>
+  </tr>    
 </table>
