@@ -10,9 +10,9 @@ last-substantial-update: 2023-10-23T00:00:00Z
 jira: KT-14238
 duration: 81
 exl-id: 77f93aad-0cab-4e52-b0fd-ae5af23a13d0
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,10 @@ ht-degree: 0%
 # Gegevens ophalen uit Azure-opslag
 
 In dit artikel wordt uitgelegd hoe u een adaptief formulier kunt vullen met de gegevens die in Azure-opslag zijn opgeslagen.
-Aangenomen wordt dat u de adaptieve formuliergegevens in Azure-opslag hebt opgeslagen en nu het aangepaste formulier wilt vullen met die gegevens.
+Aangenomen wordt dat u de adaptieve formuliergegevens in Azure-opslag hebt opgeslagen en nu uw adaptieve formulier met die gegevens wilt vooraf invullen.
+>[!NOTE]
+>De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren.[Het equivalente artikel voor het op kerncomponenten gebaseerde adaptieve formulier is hier beschikbaar](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+
 
 ## GET-aanvraag maken
 
@@ -83,7 +86,7 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Het adaptieve voorbeeldformulier importeren](./assets/bank-account-sample-form.zip)
 
-* Specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole.
+* [Specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
 
 * [Het bankrekeningformulier bekijken en verzenden](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

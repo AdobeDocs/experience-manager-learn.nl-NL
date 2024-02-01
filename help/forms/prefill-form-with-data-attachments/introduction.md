@@ -8,9 +8,9 @@ level: Beginner
 version: 6.5
 topic: Integrations
 jira: KT-14794
-source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ In deze zelfstudie leert u hoe u een eenvoudig gebruiksgeval van prefilling impl
 
 Voor het implementeren van het bovenstaande gebruiksgeval in AEM Forms hebt u het volgende nodig
 
-* AEM Forms 6.5.19-exemplaar
+* AEM Forms 6.5.19 of hoger
 * [Azure Portal-account](https://portal.azure.com/)
 
 

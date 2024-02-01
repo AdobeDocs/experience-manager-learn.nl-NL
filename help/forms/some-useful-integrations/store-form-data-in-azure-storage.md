@@ -10,9 +10,9 @@ last-substantial-update: 2023-08-14T00:00:00Z
 jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 
 Dit artikel laat zien hoe u REST-oproepen kunt maken om verzonden AEM Forms-gegevens op te slaan in Azure Storage.
 Als u verzonden formuliergegevens wilt opslaan in Azure Storage, moet u de volgende stappen uitvoeren.
+
+>[!NOTE]
+>De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren. [Het equivalente artikel voor het op kerncomponenten gebaseerde adaptieve formulier is hier beschikbaar](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+
 
 ## Azure Storage-account maken
 
@@ -45,6 +49,7 @@ Zorg ervoor dat u de juiste machtigingen en de juiste einddatum opgeeft, zoals i
 ## De BLOB SAS-token en opslag-URI opgeven
 
 Om de code generischer te maken, kunnen de twee eigenschappen worden gevormd gebruikend de configuratie OSGi zoals hieronder getoond. De _**vormgeving**_ de naam van de opslagrekening is, _**formules**_ is de container waarin de gegevens worden opgeslagen.
+Zorg dat / aan het einde van de opslaguri staat en dat het SAS-token begint met?
 ![osgi-configuratie](./assets/azure-portal-osgi-configuration.png)
 
 
@@ -98,7 +103,8 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken D
 
 * [Het adaptieve voorbeeldformulier importeren](./assets/bank-account-sample-form.zip)
 
-* Specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole
+* [Specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+
 * [Het bankrekeningformulier bekijken en verzenden](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Controleer of de gegevens zijn opgeslagen in de Azure-opslagcontainer van uw keuze. Kopieer de blob-id.

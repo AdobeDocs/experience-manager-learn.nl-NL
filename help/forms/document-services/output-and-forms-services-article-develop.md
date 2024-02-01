@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
-source-git-commit: 959683f23b7b04e315a5a68c13045e1f7973cf94
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -61,12 +61,18 @@ Regel 6 voert xmlData uit het Dossier van PDF uit
 1. /content/AemFormsSamples/outputservice
 1. /content/AemFormsSamples/renderxdp
 1. Zoeken naar het filter Verticale verwijzing
-1. Schakel het selectievakje Lege toestaan in. (Deze instelling moet alleen voor testdoeleinden worden gebruikt) Er zijn verschillende manieren om de voorbeeldcode te testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POSTEN aanvragen bij uw server. Installeer de Postman-toepassing op uw systeem.
-Start de app en voer de volgende URL in om de API voor exportgegevens te testen
+1. Schakel het selectievakje Lege toestaan in. (Deze instelling mag alleen voor testdoeleinden worden gebruikt)
 
-Controleer of u &quot;POST&quot; hebt geselecteerd in de vervolgkeuzelijst http://localhost:4502/content/AemFormsSamples/exportdata.html Controleer of u &quot;Autorisatie&quot; opgeeft als &quot;Basisauth&quot;. Geef de gebruikersnaam en het wachtwoord voor AEM server op en ga naar het tabblad Body en geef de aanvraagparameters op zoals in de onderstaande afbeelding wordt getoond
-![export](assets/postexport.png)
-Klik vervolgens op Verzenden
+## De monsters testen
+
+U kunt de voorbeeldcode op verschillende manieren testen. De snelste en eenvoudigste manier is om Postman-app te gebruiken. Met Postman kunt u POSTEN aanvragen bij uw server.
+
+* Installeer de Postman-toepassing op uw systeem.
+* Start de app en voer de juiste URL in
+* Controleer of u &quot;POST&quot; hebt geselecteerd in de vervolgkeuzelijst
+* Zorg ervoor dat u &quot;Autorisatie&quot; opgeeft als &quot;Basic Auth&quot;. Geef de gebruikersnaam en het wachtwoord voor AEM server op
+* Geef de aanvraagparameters op op het tabblad body
+* Klik op Verzenden
 
 De verpakking bevat 4 monsters. De volgende paragrafen verklaren wanneer om de outputdienst of de Dienst van Forms te gebruiken, de url van de dienst, inputparameters die elke dienst verwacht
 
