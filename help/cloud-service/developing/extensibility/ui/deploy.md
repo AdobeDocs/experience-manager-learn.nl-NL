@@ -8,12 +8,12 @@ role: Developer
 level: Beginner
 recommendations: noDisplay, noCatalog
 jira: KT-11603
-last-substantial-update: 2024-01-26T00:00:00Z
+last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 214
-source-git-commit: 6f1245e804f0311c3f833ea8b2324cbc95272f52
+source-git-commit: 678bda0ea6f6c727170c596e9d3d5f0687ec830f
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,6 @@ ht-degree: 0%
 # Een extensie implementeren
 
 Voor gebruik in AEM as a Cloud Service omgevingen moet de extensie App Builder-app worden geÃ¯mplementeerd en goedgekeurd.
-
-![Adobe Exchange](./assets/deploy/adobe-exchange.png){align="center"}
 
 Er zijn verschillende aspecten die u moet onthouden wanneer u App Builder-apps voor extensies implementeert:
 
@@ -79,9 +77,9 @@ Implementeer de extensie in de werkruimte Productie. De uitbreidingen die aan de
 ![Goedkeuring van extensies](./assets/deploy/adobe-exchange.png){align="center"}
 
 1. Aanmelden bij [Adobe Exchange](https://exchange.adobe.com/)
-2. Navigeren naar __Beheren__ > __Experiencen Cloud__
-3. __Controleren__ de extensie App Builder-app
-4. Als de extensie wordt gewijzigd __Accepteren__ de evaluatie. Dit injecteert de verlenging onmiddellijk op alle AEM as a Cloud Service Auteur diensten binnen de Adobe Org.
+1. Navigeren naar __Beheren__ > __Apps in behandeling__
+1. __Controleren__ de extensie App Builder-app
+1. Als de extensie wordt gewijzigd __Accepteren__ de evaluatie. Dit injecteert de verlenging onmiddellijk op alle AEM as a Cloud Service Auteur diensten binnen de Adobe Org.
 
 Zodra het uitbreidingsverzoek wordt goedgekeurd, wordt de uitbreiding onmiddellijk actief in de AEM as a Cloud Service diensten van de Auteur.
 
@@ -94,7 +92,7 @@ De app App Builder bijwerken en uitbreiden volgt hetzelfde proces als de [initiÃ
 Als u een nieuwe versie van een extensie wilt implementeren, moet u deze eerst intrekken (of verwijderen). Hoewel de extensie is ingetrokken, is deze niet beschikbaar in AEM consoles.
 
 1. Aanmelden bij [Adobe Exchange](https://exchange.adobe.com/)
-1. Navigeren naar __Beheren__ > __Experiencen Cloud__
+1. Navigeren naar __Beheren__ > __App Builder-toepassingen__
 1. __Intrekken__ De extensie die moet worden bijgewerkt
 
 ### De extensie implementeren
@@ -130,10 +128,10 @@ Implementeer de extensie in de werkruimte Productie. De uitbreidingen die aan de
 
 #### De aanvraag voor implementatie goedkeuren
 
-![Goedkeuring van extensies](./assets/deploy/review.png){align="center"}
+![Goedkeuring van extensies](./assets/deploy/adobe-exchange.png){align="center"}
 
 1. Aanmelden bij [Adobe Exchange](https://exchange.adobe.com/)
-1. Navigeren naar __Beheren__ > __Experiencen Cloud__
+1. Navigeren naar __Beheren__ > __Apps in behandeling__
 1. __Controleren__ de extensie App Builder-app
 1. Als de extensie wordt gewijzigd __Accepteren__ de evaluatie. Dit injecteert de verlenging onmiddellijk op alle AEM as a Cloud Service Auteur diensten binnen de Adobe Org.
 
@@ -146,5 +144,5 @@ Zodra het uitbreidingsverzoek wordt goedgekeurd, wordt de uitbreiding onmiddelli
 Om een uitbreiding te verwijderen, herhaal (of verwijder) het uit de Uitwisseling van de Adobe. Wanneer de extensie wordt ingetrokken, wordt deze verwijderd uit alle AEM as a Cloud Service Auteursservices.
 
 1. Aanmelden bij [Adobe Exchange](https://exchange.adobe.com/)
-1. Navigeren naar __Beheren__ > __Experiencen Cloud__
+1. Navigeren naar __Beheren__ > __App Builder-toepassingen__
 1. __Intrekken__ De extensie die moet worden verwijderd
