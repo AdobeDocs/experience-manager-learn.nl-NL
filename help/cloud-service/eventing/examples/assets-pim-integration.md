@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: 5d8ee3b9ab6fb974f7faebb1d0ce42d699e2063c
+source-git-commit: f150a2517c4cafe55917e1aa50dca297c9bb3bc5
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Om de activa meta-gegevens in AEM van het bovengenoemde project van ADC bij te w
 
 Als u de metagegevens wilt ophalen en bijwerken, begint u met het bijwerken van de automatisch gemaakte _algemeen_ actiecode in `src/dx-excshell-1/actions/generic` map.
 
-Raadpleeg het bestand WKND-Assets-PIM-Integration.zip in de bijlage voor de volledige code en in de onderstaande sectie worden de belangrijkste bestanden gemarkeerd.
+Zie de bijgevoegde [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) voor de volledige code, en onder sectie benadrukt de belangrijkste dossiers.
 
 - De `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` het dossier controleert de vraag PIM API om extra meta-gegevens zoals SKU en leveranciersnaam terug te winnen.
 
