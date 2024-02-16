@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: f679b4e5e97c9ffba2f04fceaf554e8a231ddfa6
+source-git-commit: 6ef17e61190f58942dcf9345b2ea660d972a8f7e
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,19 @@ ht-degree: 0%
 
 # AEM Assets-gebeurtenissen voor PIM-integratie
 
-** OPMERKING: deze zelfstudie gebruikt experimentele AEM as a Cloud Service API&#39;s.  Als u toegang wilt krijgen tot deze API&#39;s, moet u een softwareovereenkomst voor de release accepteren en deze API&#39;s handmatig voor uw omgeving laten inschakelen door Adobe-engineering.  Neem contact op met de Adobe-ondersteuning om toegang aan te vragen. **
+>[!IMPORTANT]
+>
+>Deze zelfstudie maakt gebruik van experimentele AEM as a Cloud Service API&#39;s. Om toegang te krijgen tot deze API&#39;s, moet u een pre-release softwareovereenkomst accepteren en deze API&#39;s handmatig voor uw omgeving laten inschakelen door Adobe engineering. Om toegang te verzoeken bereiken tot de steun van de Adobe.
 
-Leer hoe u AEM Assets kunt integreren met een systeem van derden, zoals een PIM-systeem (Product Information Management) of een PLM-systeem (Product Line Management), om metagegevens van bedrijfsmiddelen bij te werken **native AEM-IO-gebeurtenissen gebruiken**. Als u een AEM Assets-gebeurtenis ontvangt, kunnen de metagegevens van de elementen op basis van de zakelijke vereisten worden bijgewerkt in AEM, de PIM of beide systemen. In dit voorbeeld zullen we echter aantonen dat de metagegevens van de elementen in AEM worden bijgewerkt.
+Leer hoe u AEM Assets kunt integreren met een systeem van derden, zoals een PIM-systeem (Product Information Management) of een PLM-systeem (Product Line Management), om metagegevens van bedrijfsmiddelen bij te werken **native AEM-IO-gebeurtenissen gebruiken**. Als u een AEM Assets-gebeurtenis ontvangt, kunnen de metagegevens van de elementen op basis van de zakelijke vereisten worden bijgewerkt in AEM, de PIM of beide systemen. In dit voorbeeld wordt echter getoond hoe de metagegevens van de elementen in AEM worden bijgewerkt.
 
-De update voor metagegevens van elementen uitvoeren **code buiten AEM**, wij zullen [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), een serverloos platform. De stroom voor gebeurtenisverwerking is als volgt:
+De update voor metagegevens van elementen uitvoeren **code buiten AEM** de [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), wordt een serverloos platform gebruikt.
+
+De stroom voor gebeurtenisverwerking is als volgt:
 
 ![AEM Assets-gebeurtenissen voor PIM-integratie](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
-1. De AEM-auteur activeert een _Middelverwerking voltooid_ gebeurtenis wanneer een asset upload is voltooid en alle activiteiten op het gebied van de verwerking van activa zijn voltooid.  Wachten tot de verwerking is voltooid, zorgt ervoor dat alle verwerking buiten de verpakking, zoals het extraheren van metagegevens, is voltooid voordat we verdergaan.
+1. De AEM-auteur activeert een _Middelverwerking voltooid_ gebeurtenis wanneer een asset upload is voltooid en alle activiteiten op het gebied van de verwerking van activa zijn voltooid. Wachten tot de verwerking is voltooid, zorgt ervoor dat alle verwerking buiten de verpakking, zoals het extraheren van metagegevens, is voltooid.
 1. De gebeurtenis wordt verzonden naar de [Adobe I/O Events](https://developer.adobe.com/events/) service.
 1. De dienst van de Gebeurtenissen van de Adobe I/O gaat de gebeurtenis tot over [Adobe I/O Runtime-actie](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) voor verwerking.
 1. De actie van Adobe I/O Runtime roept API van het PIM systeem om extra meta-gegevens zoals SKU, leveranciersinformatie, of andere details terug te winnen.
@@ -106,7 +110,7 @@ Als u de metagegevens wilt ophalen en bijwerken, begint u met het bijwerken van 
 
 Zie de bijgevoegde [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) voor de volledige code, en onder sectie benadrukt de belangrijkste dossiers.
 
-- De `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` het dossier controleert de vraag PIM API om extra meta-gegevens zoals SKU en leveranciersnaam terug te winnen.  Dit bestand wordt gebruikt voor demo-doeleinden.  Zodra u de stroom van begin tot eind het werken hebt, vervang deze functie met een vraag aan uw echt PIM systeem om meta-gegevens voor de activa terug te winnen.
+- De `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` het dossier controleert de vraag PIM API om extra meta-gegevens zoals SKU en leveranciersnaam terug te winnen. Dit bestand wordt gebruikt voor demo-doeleinden. Zodra u de stroom van begin tot eind het werken hebt, vervang deze functie met een vraag aan uw echt PIM systeem om meta-gegevens voor de activa terug te winnen.
 
   ```javascript
   /**
@@ -209,7 +213,7 @@ Zie de bijgevoegde [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-p
 
 - De `src/dx-excshell-1/actions/model` map bevat `aemAssetEvent.js` en `errors.js` bestanden, die door de handeling worden gebruikt om respectievelijk de ontvangen gebeurtenis te parseren en fouten te verwerken.
 
-- De `src/dx-excshell-1/actions/generic/index.js` in het bestand worden de bovenstaande modules gebruikt voor het inwinnen en bijwerken van metagegevens.
+- De `src/dx-excshell-1/actions/generic/index.js` het dossier gebruikt de eerder vermelde modules om de meta-gegevens terug te winnen en bij te werken.
 
   ```javascript
   ...
@@ -277,7 +281,7 @@ $ aio app deploy
 
 Voer de volgende stappen uit om de integratie met AEM Assets en PIM te controleren:
 
-- Als u de door PIM verschafte metagegevens zoals SKU en Naam leverancier wilt bekijken, maakt u een metagegevensschema in AEM Assets. Zie [Metagegevensschema&#39;s](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) die de eigenschappen van de metagegevens van de SKU- en leveranciersnaam weergeeft.
+- Als u de door PIM verschafte metagegevens zoals SKU en Naam leverancier wilt bekijken, maakt u een metagegevensschema in AEM Assets. Zie [Metagegevensschema](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) die de eigenschappen van de metagegevens van de SKU- en leveranciersnaam weergeeft.
 
 - Upload een element in AEM Auteur-service en controleer de update van de metagegevens.
 
@@ -291,5 +295,5 @@ De synchronisatie van de metagegevens van bedrijfsmiddelen tussen AEM en andere 
 - De nieuwe API voor middelenauteur wordt gebruikt om de metagegevens van elementen in AEM bij te werken.
 - De API-verificatie gebruikt OAuth server-to-server (ook wel clientverificatiestroom genoemd), zie [OAuth Server-to-Server referentie implementatiegids](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
 - In plaats van Adobe I/O Runtime-handelingen kunnen andere websites of Amazon EventBridge worden gebruikt om de AEM Assets-gebeurtenis te ontvangen en de update van de metagegevens te verwerken.
-- Asset Events via AEM Event stelt bedrijven in staat om kritieke processen te automatiseren en te stroomlijnen, waardoor de efficiëntie en de coherentie van het ecosysteem van de inhoud worden bevorderd.
+- Asset Events via AEM Event stellen bedrijven in staat om kritieke processen te automatiseren en te stroomlijnen, waardoor de efficiëntie en de coherentie tussen het ecosysteem van de inhoud worden bevorderd.
 
