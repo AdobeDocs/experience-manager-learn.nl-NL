@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 267
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 0deeaac90e9d181a60b407e17087650e0be1ff28
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -99,11 +99,27 @@ De afzender heeft een configuratiesectie in zijn landbouwbedrijfdossier:
 }
 ```
 
-Deze configuratie vertelt de Dispatcher om dit URL van zijn AEM instantie te halen het om de 300 seconden negeert om de lijst van punten te halen wij door willen toestaan.
+De `/delay` parameter, gemeten in seconden, werkt niet op een vaste intervalbasis maar eerder op een op voorwaarde-gebaseerde controle. De verzender beoordeelt de tijdstempel van de wijziging van de `/file` (die de lijst met herkende vanity-URL&#39;s opslaat) bij het ontvangen van een aanvraag voor een niet-vermelde URL. De `/file` worden niet vernieuwd als het tijdsverschil tussen het huidige en het `/file`De laatste wijziging is kleiner dan `/delay` duur. De `/file` onder twee omstandigheden plaatsvindt:
+
+1. De binnenkomende aanvraag is bedoeld voor een URL die niet in de cache is geplaatst of in het dialoogvenster `/file`.
+1. Minstens `/delay` seconden zijn verstreken sinds `/file` is voor het laatst bijgewerkt.
+
+Dit mechanisme wordt ontworpen om tegen Ontkenning van de aanvallen van de Dienst (Dos) te beschermen, die anders de Verzender met verzoeken konden overweldigen, die de eigenschap van Vanity URLs uitbuiten.
+
+In eenvoudigere termen worden de `/file` die vanity URLs bevat wordt bijgewerkt slechts als een verzoek voor een URL aankomt niet reeds in `/file` en als de `/file`De laatste wijziging is langer geleden dan `/delay` periode.
+
+Om uitdrukkelijk te teweegbrengen verfrist zich van `/file`, kunt u een niet-bestaande URL aanvragen nadat u de vereiste `/delay` er is tijd verstreken sinds de laatste update. Voorbeeld-URL&#39;s voor dit doel zijn:
+
+- `https://dispatcher-host-name.com/this-vanity-url-does-not-exist`
+- `https://dispatcher-host-name.com/please-hand-me-that-planet-maestro`
+- `https://dispatcher-host-name.com/random-vanity-url`
+
+Op deze manier wordt de Dispatcher gedwongen de `/file`, op voorwaarde dat `/delay` interval is verstreken sinds zijn laatste wijziging.
 
 Het slaat zijn geheime voorgeheugen van de reactie in op `/file` argument so in dit voorbeeld `/tmp/vanity_urls`
 
 Dus als u de AEM-instantie in de URI bezoekt, ziet u wat deze ophaalt:
+
 ![screenshot van de inhoud die is gerenderd via /libs/granite/dispatcher/content/vanityUrls.html](assets/disp-vanity-url/vanity-url-component.png "vanity-url-component")
 
 Het is letterlijk een lijst, super simpel
