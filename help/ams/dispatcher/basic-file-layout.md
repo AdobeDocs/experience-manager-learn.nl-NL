@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
 duration: 354
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -59,20 +59,23 @@ Wanneer het volgende en het naleven van het installatieontwerp/de structuur krij
 - Hiermee worden patchcycli toegestaan die volledig worden ondersteund door het besturingssysteem zonder conflicten of handmatige aanpassingen
 - Hiermee voorkomt u schendingen van SELinux van verkeerd gelabelde bestandskaders
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-De Adobe Managed Services-serverimages hebben doorgaans kleine hoofdstations van het besturingssysteem.  Wij zetten onze gegevens in een afzonderlijk volume dat typisch in `/mnt"wordt opgezet dan gebruiken wij dat volume in plaats van de gebreken voor de volgende standaardfolders
+>[!BEGINSHADEBOX &quot;Opmerking&quot;]
+
+De Adobe Managed Services-serverimages hebben doorgaans kleine hoofdstations van het besturingssysteem.  We zetten onze gegevens in een apart volume dat normaal gesproken in `/mnt`
+Dan gebruiken wij dat volume in plaats van de gebreken voor de volgende standaardfolders
 
 `DocumentRoot`
 - Standaard:`/var/www/html`
 - AMS:`/mnt/var/www/html`
 
 `Log Directory`
-- Standaard: `/var/log/httpd`
-- AMS: `/mnt/var/log/httpd`
+- Standaard: `/var/log/httpd`
+- AMS: `/mnt/var/log/httpd`
 
 Houd in mening dat de oude en nieuwe folders terug naar het originele onderstelpunt worden in kaart gebracht om verwarring te elimineren.
 Het gebruik van een afzonderlijk volume is niet van vitaal belang, maar het is een notitie die het waard is
-</div>
+
+>[!ENDSHADEBOX]
 
 ## AMS-invoegtoepassingen
 
@@ -292,9 +295,9 @@ Als perfect voorbeeld bij het toevoegen van de module Dispatcher aan Apache maak
 LoadModule dispatcher_module modules/mod_dispatcher.so
 ```
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-we hebben geen bestaande Apache-bestanden gewijzigd.  In plaats daarvan hebben we gewoon onze directory's toegevoegd.
-</div><br/>
+>[!NOTE]
+>
+>Er zijn geen bestaande Apache-bestanden gewijzigd. In plaats daarvan hebben we gewoon onze eigen directory&#39;s toegevoegd.
 
 Nu gebruiken we onze module in ons bestand <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> dat onze module initialiseert en het aanvankelijke module-specifieke configuratiedossier laadt
 

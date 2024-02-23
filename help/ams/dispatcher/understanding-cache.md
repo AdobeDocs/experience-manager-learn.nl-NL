@@ -9,9 +9,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
 duration: 491
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,11 @@ Wij gebruiken de volgende standaardgeheim voorgeheugenfolders in onze basislijni
 
 Wanneer elk verzoek de Dispatcher oversteekt volgen de verzoeken de gevormde regels om een plaatselijk caching versie aan antwoord van in aanmerking komende punten te houden
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-We houden gepubliceerde werklasten bewust gescheiden van de werkbelasting van de auteur, omdat Apache bij het zoeken naar een bestand in de DocumentRoot niet weet van welke AEM instantie het afkomstig is. Dus zelfs als u cache in de auteurshandel hebt uitgeschakeld, als DocumentRoot van de auteur het zelfde is als uitgever zal het dossiers van het geheime voorgeheugen indien heden dienen. Dit betekent dat u ontwerpbestanden vanaf de gepubliceerde cache kunt bedienen en dat u voor uw bezoekers een zeer vreselijke mix-match-ervaring zult creëren.
-
-Het is ook een erg slecht idee om afzonderlijke DocumentRoot-mappen voor verschillende gepubliceerde inhoud te houden. U zult veelvoudige re-caching punten moeten tot stand brengen die niet tussen plaatsen zoals clientlibs verschillen evenals het moeten opstelling een replicatie spoelagent voor elke DocumentRoot u opstelling. Met activering van elke pagina wordt de mate van doorspoelen over de kop verhoogd. Vertrouw op naamruimte van bestanden en de bijbehorende paden in de volledige cache en vermijd meerdere DocumentRoot&#39;s voor gepubliceerde sites.
-</div>
+>[!NOTE]
+>
+>We houden gepubliceerde werklasten bewust gescheiden van de werkbelasting van de auteur, omdat Apache bij het zoeken naar een bestand in de DocumentRoot niet weet van welke AEM instantie het afkomstig is. Dus zelfs als u cache in de auteurshandel hebt uitgeschakeld, als DocumentRoot van de auteur het zelfde is als uitgever zal het dossiers van het geheime voorgeheugen indien heden dienen. Dit betekent dat u ontwerpbestanden vanaf de gepubliceerde cache kunt bedienen en dat u voor uw bezoekers een zeer vreselijke mix-match-ervaring zult creëren.
+>
+>Het is ook een erg slecht idee om afzonderlijke DocumentRoot-mappen voor verschillende gepubliceerde inhoud te houden. U zult veelvoudige re-caching punten moeten tot stand brengen die niet tussen plaatsen zoals clientlibs verschillen evenals het moeten opstelling een replicatie spoelagent voor elke DocumentRoot u opstelling. Met activering van elke pagina wordt de mate van doorspoelen over de kop verhoogd. Vertrouw op naamruimte van bestanden en de bijbehorende paden in de volledige cache en vermijd meerdere DocumentRoot&#39;s voor gepubliceerde sites.
 
 ## Configuratiebestanden
 
@@ -95,10 +94,9 @@ Hier volgt een basisauteur `/cache {` sectie van ons auteur landbouwdossier:
 
 Het is belangrijk dat de `/docroot` wordt ingesteld op de cachemap voor de auteur.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Zorg ervoor dat u `DocumentRoot` in de auteur `.vhost` bestand komt overeen met de boerderijen `/docroot` parameter
-</div>
+>[!NOTE]
+>
+>Zorg ervoor dat u `DocumentRoot` in de auteur `.vhost` bestand komt overeen met de boerderijen `/docroot` parameter
 
 De cacheregels bevatten de instructie die het bestand bevat `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` die de volgende regels bevat:
 
@@ -136,20 +134,17 @@ De cacheregels bevatten de instructie die het bestand bevat `/etc/httpd/conf.dis
 In een auteurscenario, verandert de inhoud voortdurend en doelgericht. U wilt slechts punten in het voorgeheugen onderbrengen die niet vaak zullen veranderen.
 We hebben regels om in cache te plaatsen `/libs` omdat ze onderdeel zijn van de basislijn AEM installeren en worden gewijzigd totdat u een Service Pack, Cumulative Fix Pack, Upgrade of Hotfix hebt geïnstalleerd. Het in cache plaatsen van deze elementen heeft veel zin en heeft echt enorme voordelen van de ervaring van auteurs van eindgebruikers die de site gebruiken.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Onthoud dat deze regels ook in het cachegeheugen worden opgeslagen <b>`/apps`</b> dit is waar de code van de douanetoepassing leeft. Als u uw code op deze instantie ontwikkelt dan zal het zeer verwarrend blijken te zijn wanneer u sparen uw dossier en niet ziet of in UI wegens het dienen van een caching exemplaar nadenken. De bedoeling is hier dat als u een plaatsing van uw code in AEM het doet het ook niet vaak zou zijn en een deel van uw plaatsingsstappen zou moeten zijn om het auteursgeheime voorgeheugen te ontruimen. Ook hier is het voordeel enorm, waardoor uw code sneller kan worden uitgevoerd voor de eindgebruikers.
-</div>
-
+>[!NOTE]
+>
+>Onthoud dat deze regels ook in het cachegeheugen worden opgeslagen <b>`/apps`</b> dit is waar de code van de douanetoepassing leeft. Als u uw code op deze instantie ontwikkelt dan zal het zeer verwarrend blijken te zijn wanneer u sparen uw dossier en niet ziet of in UI wegens het dienen van een caching exemplaar nadenken. De bedoeling is hier dat als u een plaatsing van uw code in AEM het doet het ook niet vaak zou zijn en een deel van uw plaatsingsstappen zou moeten zijn om het auteursgeheime voorgeheugen te ontruimen. Ook hier is het voordeel enorm, waardoor uw code sneller kan worden uitgevoerd voor de eindgebruikers.
 
 ## ServeOnStale (AKA Serve on Stale / SOS)
 
 Dit is een van die onderdelen van een functie van de Dispatcher. Als de uitgever onder lading is of niet meer reageert zal het typisch een 502 of 503 http antwoordcode werpen. Als dat gebeurt en deze eigenschap wordt toegelaten zal de Dispatcher worden geïnstrueerd om nog te dienen wat de inhoud nog in het geheime voorgeheugen als beste inspanning is zelfs als het geen vers exemplaar is. Het is beter om iets te dienen als u het eerder dan enkel een foutenmelding hebt tonen die geen functionaliteit aanbiedt.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Onthoud dat deze functie niet wordt geactiveerd wanneer de uitgeverrenderer een sockettime-out of een foutbericht van 500 heeft. Als AEM enkel onbereikbaar is, doet deze eigenschap niets
-</div>
+>[!NOTE]
+>
+>Onthoud dat deze functie niet wordt geactiveerd wanneer de uitgeverrenderer een sockettime-out of een foutbericht van 500 heeft. Als AEM enkel onbereikbaar is, doet deze eigenschap niets
 
 Dit plaatsen kan in om het even welk landbouwbedrijf worden geplaatst maar slechts steek houdt om het op toe te passen publiceert landbouwbedrijfdossiers. Hier is een syntaxisvoorbeeld van de eigenschap die in een landbouwbedrijfdossier wordt toegelaten:
 
@@ -160,11 +155,9 @@ Dit plaatsen kan in om het even welk landbouwbedrijf worden geplaatst maar slech
 
 ## Pagina&#39;s met queryparams/argumenten in cache plaatsen
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Één van het normale gedrag van de module van de Verzender is dat als een verzoek een vraagparameter in URI heeft (typisch getoond als `/content/page.html?myquery=value`) slaat het caching van het dossier over en gaat direct naar de AEM instantie. Het overweegt dit verzoek om een dynamische pagina en zou niet in het voorgeheugen ondergebracht moeten worden. Dit kan negatieve gevolgen voor geheim voorgeheugenefficiency veroorzaken.
-</div>
-<br/>
+>[!NOTE]
+>
+>Één van het normale gedrag van de module van de Verzender is dat als een verzoek een vraagparameter in URI heeft (typisch getoond als `/content/page.html?myquery=value`) slaat het caching van het dossier over en gaat direct naar de AEM instantie. Het overweegt dit verzoek om een dynamische pagina en zou niet in het voorgeheugen ondergebracht moeten worden. Dit kan negatieve gevolgen voor geheim voorgeheugenefficiency veroorzaken.
 
 Zie dit [artikel](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) het tonen van hoe belangrijk de vraagparameters uw plaatsprestaties kunnen beïnvloeden.
 
@@ -172,7 +165,7 @@ Standaard wilt u de `ignoreUrlParams` voorschriften `*`.  Betekenis dat alle vra
 
 Hier is een voorbeeld waarin iemand een diepgaande-koppelingsverwijzingsmechanisme voor sociale media heeft gebouwd dat de argumentverwijzing in URI gebruikt om te weten waar de persoon uit kwam.
 
-<b>Genegeerd voorbeeld:</b>
+*Genegeerd voorbeeld:*
 
 - https://www.we-retail.com/home.html?reference=android
 - https://www.we-retail.com/home.html?reference=facebook
@@ -253,11 +246,9 @@ Voorbeeld:
 
 Pagina&#39;s die queryparameters gebruiken via Javascript, werken nog steeds volledig zonder de parameters in deze instelling te negeren.  Omdat ze het HTML-bestand in rust niet wijzigen.  Ze gebruiken javascript om de browsers in realtime bij te werken in de lokale browser.  Betekenis dat als u de vraagparameters met javascript verbruikt het hoogst waarschijnlijk u deze parameter voor pagina caching kunt negeren.  Laat die pagina in cache plaatsen en geniet van de prestatiewinst!
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Het bijhouden van deze pagina&#39;s vereist wel enige upkeep, maar is de prestatiewinst wel waard.  U kunt uw CSE vragen om een rapport op uw Websiteverkeer in werking te stellen om u een lijst van alle pagina&#39;s te geven die vraagparameters in de loop van de laatste 90 dagen voor u gebruiken om te analyseren en ervoor te zorgen u weet welke pagina&#39;s om te bekijken en welke vraagparameters om niet te negeren
-</div>
-<br/>
+>[!NOTE]
+>
+>Het bijhouden van deze pagina&#39;s vereist wel enige upkeep, maar is de prestatiewinst wel waard.  U kunt uw CSE vragen om een rapport op uw Websiteverkeer in werking te stellen om u een lijst van alle pagina&#39;s te geven die vraagparameters in de loop van de laatste 90 dagen voor u gebruiken om te analyseren en ervoor te zorgen u weet welke pagina&#39;s om te bekijken en welke vraagparameters om niet te negeren
 
 ## Responsheaders in cache plaatsen
 
@@ -289,11 +280,9 @@ Hier is een voorbeeld van een landbouwbedrijf met de kopballen aan gespecificeer
 
 In het voorbeeld hebben zij AEM gevormd om omhoog kopballen te dienen CDN zoekt om te weten wanneer om het cachegeheugen ongeldig te maken. Dit betekent dat AEM correct kan bepalen welke bestanden op basis van kopteksten ongeldig worden gemaakt.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Onthoud dat u reguliere expressies of overeenkomende glob-expressies niet kunt gebruiken. Het is een letterlijke lijst van kopballen aan geheime voorgeheugen. Plaats dit alleen in een lijst met de letterlijke koppen die u in de cache wilt plaatsen.
-</div>
-
+>[!NOTE]
+>
+>Onthoud dat u reguliere expressies of overeenkomende glob-expressies niet kunt gebruiken. Het is een letterlijke lijst van kopballen aan geheime voorgeheugen. Plaats dit alleen in een lijst met de letterlijke koppen die u in de cache wilt plaatsen.
 
 ## Respijtperiode automatisch ongeldig maken
 
@@ -325,9 +314,9 @@ Hier is een voorbeeld van de eigenschap die in het dossier van de landbouwbedrij
     /enableTTL "1"
 ```
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-Houd in mening dat AEM nog moet worden gevormd om de kopballen van TTL voor Verzender te verzenden om hen te respecteren. Als u deze functie inschakelt, kan de Dispatcher alleen weten wanneer de bestanden worden verwijderd waarvoor AEM cachebeheerkoppen heeft verzonden. Als AEM niet begint met het verzenden van TTL-headers, zal Dispatcher hier niets speciaals doen.
-</div>
+>[!NOTE]
+>
+>Houd in mening dat AEM nog moet worden gevormd om de kopballen van TTL voor Verzender te verzenden om hen te respecteren. Als u deze functie inschakelt, kan de Dispatcher alleen weten wanneer de bestanden worden verwijderd waarvoor AEM cachebeheerkoppen heeft verzonden. Als AEM niet begint met het verzenden van TTL-headers, zal Dispatcher hier niets speciaals doen.
 
 ## Regels voor filter Cache
 

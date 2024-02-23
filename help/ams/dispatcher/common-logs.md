@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -59,10 +59,9 @@ Als u een van de voorgestelde methoden gebruikt, wordt dat foutbericht uit de lo
 
 ## Filterafwijzingen
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-Deze ingangen tonen niet altijd omhoog zelfs als de verwerpingen gebeuren als het logboekniveau te laag wordt geplaatst. Stel deze in op Info of Foutopsporing om te controleren of de filters de aanvragen afwijzen.
-</div>
+>[!NOTE]
+>
+>Deze ingangen tonen niet altijd omhoog zelfs als de verwerpingen gebeuren als het logboekniveau te laag wordt geplaatst. Stel deze in op Info of Foutopsporing om te controleren of de filters de aanvragen afwijzen.
 
 Voorbeeld van logbestandvermelding:
 
@@ -76,10 +75,9 @@ of:
 Fri Jul 20 22:16:55 2018 I pid 128803 "GET /system/console/" ! - 8ms publishfarm/-
 ```
 
-<div style="color: #000;border-left: 6px solid red;background-color:#ddffff;"><b>Let op:</b>
-
-Begrijp dat de regels van de Verzender werden geplaatst om dat verzoek uit te filtreren. In dit geval werd de pagina die probeerde te worden bezocht opzettelijk verworpen en zouden we hier niets mee willen doen.
-</div>
+>[!CAUTION]
+>
+>Begrijp dat de regels van de Verzender werden geplaatst om dat verzoek uit te filtreren. In dit geval werd de pagina die probeerde te worden bezocht opzettelijk verworpen en zouden we hier niets mee willen doen.
 
 Als uw logbestand er als volgt uitziet:
 
@@ -136,9 +134,9 @@ Dit betekent dat het ophalen van gegevens uit het renderniveau versus uit de cac
 
 Dit getal zo hoog mogelijk ophalen.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-Zelfs als u uw geheim voorgeheugenmontages in het landbouwbedrijfdossier hebt om alles in het voorgeheugen onder te brengen zou u te vaak of te agressief kunnen spoelen die een lager percentage van geheim voorgeheugenklapverhouding kan veroorzaken om voor te komen
-</div>
+>[!NOTE]
+>
+>Zelfs als u uw geheim voorgeheugenmontages in het landbouwbedrijfdossier hebt om alles in het voorgeheugen onder te brengen zou u te vaak of te agressief kunnen spoelen die een lager percentage van geheim voorgeheugenklapverhouding kan veroorzaken om voor te komen
 
 ## Ontbrekende map
 

@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
 duration: 266
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -309,9 +309,8 @@ $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_w
 
 Nu kunnen we alleen de webserverservice opnieuw laden en ons nieuwe domein gebruiken!
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Merk op wij slechts de stukken veranderden die wij nodig hadden om de bestaande omvat en de code te gebruiken die met de dossiers van de basislijnconfiguratie kwam.  We hoeven alleen maar af te wijken van het element dat we moeten veranderen.  Maakt het veel makkelijker en maakt het ons mogelijk minder code te handhaven
-</div>
+>[!NOTE]
+>
+>Merk op wij slechts de stukken veranderden die wij nodig hadden om de bestaande omvat en de code te gebruiken die met de dossiers van de basislijnconfiguratie kwam.  We hoeven alleen maar af te wijken van het element dat we moeten veranderen.  Maakt het veel makkelijker en maakt het ons mogelijk minder code te handhaven
 
 [Volgende -> Health check van Dispatcher](./health-check.md)

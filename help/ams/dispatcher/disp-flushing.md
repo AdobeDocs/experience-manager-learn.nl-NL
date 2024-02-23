@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 653
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -133,16 +133,17 @@ Als de instelling voor het eerste bestandsniveau te hoog is, doorloopt elke aanv
 
 Als u dit bestandsniveau te laag instelt, kan een aanvraag voor uitspoelen ertoe leiden dat er meer wordt gewist dan u had bedoeld.  Wat beurtelings het geheime voorgeheugen zou veroorzaken vaker met minder verzoeken worden gediend van geheim voorgeheugen en kan prestatieskwesties veroorzaken.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
+>[!BEGINSHADEBOX &quot;Opmerking&quot;]
 
-Stel de `statfilelevel` op een redelijk niveau.  Bekijk de mapstructuur en zorg ervoor dat deze zo is ingesteld dat beknopte opmaakelementen mogelijk zijn zonder dat u te veel mappen hoeft te doorlopen.   Test het en zorg ervoor het aan uw behoeften tijdens een prestatietest van het systeem past.
+Stel de `statfilelevel` op een redelijk niveau. Bekijk de mapstructuur en zorg ervoor dat deze zo is ingesteld dat beknopte opmaakelementen mogelijk zijn zonder dat u te veel mappen hoeft te doorlopen. Test het en zorg ervoor het aan uw behoeften tijdens een prestatietest van het systeem past.
 
-Een goed voorbeeld is een site die talen ondersteunt.  De typische inhoudsboom zou de volgende folders hebben:
+Een goed voorbeeld is een site die talen ondersteunt. De typische inhoudsboom zou de volgende folders hebben:
 
 `/content/brand1/en/us/`
 
-In dit voorbeeld wordt een instelling 4 voor het basisbestandsniveau gebruikt.  Dit zorgt ervoor dat je inhoud die onder de <b>`us`</b> map die er niet toe leidt dat de taalmappen ook leeggemaakt worden.
-</div>
+In dit voorbeeld wordt een instelling 4 voor het basisbestandsniveau gebruikt. Dit zorgt ervoor dat je inhoud die onder de **`us`** map die er niet toe leidt dat de taalmappen ook leeggemaakt worden.
+
+>[!ENDSHADEBOX]
 
 ### TIJDSTEMPEL VAN BESTAND STAAN
 
@@ -227,11 +228,11 @@ Deze configuratieingang leeft in de volgende sectie van het landbouwbedrijfdossi
 
 U specificeert de folder waarin u de Dispatcher wilt bevolken en als geheim voorgeheugenfolder leiden.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-Deze map moet overeenkomen met de hoofdinstelling van het Apache-document voor het domein waarvoor uw webserver is geconfigureerd.
-
-Het is om vele redenen niet erg om per bedrijf een geneste docroot-map te hebben die een submap van de hoofdmap van het Apache-document bevat.
-</div>
+>[!NOTE]
+>
+>Deze map moet overeenkomen met de hoofdinstelling van het Apache-document voor het domein waarvoor uw webserver is geconfigureerd.
+>
+>Het is om vele redenen niet erg om per bedrijf een geneste docroot-map te hebben die een submap van de hoofdmap van het Apache-document bevat.
 
 ### Bestandsniveau starten
 
@@ -275,13 +276,11 @@ Deze instelling geeft de mate van diepte weer `.stat` bestanden moeten worden ge
    - `/var/www/html/content/damn/brand1/en/.stat`
    - `/var/www/html/content/damn/brand1/en/us/.stat`
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Houd er rekening mee dat wanneer de tijdstempelhandshake plaatsvindt, deze de dichtstbijzijnde handdruk zoekt `.stat` bestand.
-
-een `.stat` bestandsniveau 0 en een statusbestand alleen op `/var/www/html/.stat` betekent dat inhoud die onder `/var/www/html/content/dam/brand1/en/us/` zoekt naar de dichtstbijzijnde `.stat` bestand en 5 mappen naar boven verplaatsen om de enige map te vinden `.stat` bestand op niveau 0 en datum met dat bestand vergelijken.  Betekent dat één spoeling bij dat hoge niveau van een niveau eigenlijk alle punten in het cachegeheugen ongeldig zou maken.
-</div>
+>[!NOTE]
+>
+>Houd er rekening mee dat wanneer de tijdstempelhandshake plaatsvindt, deze de dichtstbijzijnde handdruk zoekt `.stat` bestand.
+>
+>Met een `.stat` bestandsniveau 0 en een statusbestand alleen op `/var/www/html/.stat` betekent dat inhoud die onder `/var/www/html/content/dam/brand1/en/us/` zoekt naar de dichtstbijzijnde `.stat` bestand en 5 mappen naar boven verplaatsen om de enige map te vinden `.stat` bestand op niveau 0 en datum met dat bestand vergelijken. Betekent dat één spoeling bij dat hoge niveau van een niveau eigenlijk alle punten in het cachegeheugen ongeldig zou maken.
 
 ### Ongeldige validatie toegestaan
 

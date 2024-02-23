@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 299b32c3-7922-4eee-aa3a-56039a654f70
 duration: 307
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -147,10 +147,9 @@ RUNMODE='sites'
 
 Dit is niet iets u kunt veranderen maar aan hefboomwerking in uw configuratiedossiers goed zijn
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Omdat dit bestand alleen wordt opgenomen wanneer de service wordt gestart.  U moet de service opnieuw starten om de wijzigingen op te halen.  Betekenis een herladen is niet genoeg maar een nieuw begin in plaats daarvan is nodig
-</div>
+>[!NOTE]
+>
+>Omdat dit bestand alleen wordt opgenomen wanneer de service wordt gestart.  U moet de service opnieuw starten om de wijzigingen op te halen.  Betekenis een herladen is niet genoeg maar een nieuw begin in plaats daarvan is nodig
 
 ### Variabelebestanden (`.vars`)
 

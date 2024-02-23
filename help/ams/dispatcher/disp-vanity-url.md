@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 267
-source-git-commit: 0deeaac90e9d181a60b407e17087650e0be1ff28
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -182,9 +182,8 @@ Gebruik beide methoden, maar u kunt de volgende adviezen en criteria gebruiken:
 - Als de ijdelheid een nietszeggend eindpunt is dat niet vaak verandert en vaak gebruikt dan gebruik `mod_rewrite` regel.
 - Als de naamruimte vanity (bijvoorbeeld: `/aboutus`) moet opnieuw worden gebruikt voor een groot aantal merken op hetzelfde AEM en vervolgens herschrijfregels gebruiken.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Opmerking:</b>
-
-Als u de functie AEM ijdelheid wilt gebruiken en naamruimte wilt vermijden, kunt u een naamgevingsconventie maken. Met ijdeloze URL&#39;s die zijn genest `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
-</div>
+>[!NOTE]
+>
+>Als u de functie AEM ijdelheid wilt gebruiken en naamruimte wilt vermijden, kunt u een naamgevingsconventie maken. Met ijdeloze URL&#39;s die zijn genest `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 
 [Volgende -> Gemeenschappelijke Logboekregistratie](./common-logs.md)
