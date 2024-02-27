@@ -6,9 +6,9 @@ jira: KT-3289
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
 duration: 490
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
@@ -20,27 +20,6 @@ ht-degree: 0%
 Adobe Experience Manager (AEM) is nu as a Cloud Service beschikbaar. AEM as a Cloud Service introduceert de volgende generatie van de productlijn van de Experience Manager, voortbouwend op vroegere investeringen en innovaties, het bewaren en uitbreiden van alle gebruiksgevallen en -functies.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
-
-<div id="whats-new-section">
-
-## Nieuwe functies
-
-* **[Websites beschermen met verkeersfilterregels, waaronder WAF-regels (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)**
-  *Leer hoe te om de regels van de verkeersfilter met inbegrip van de regels van WAF te gebruiken om websites te beschermen*
-
-* **[Tokengebaseerde verificatie (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
-  *Leer hoe te om op teken-gebaseerde authentificatie te gebruiken met AEM as a Cloud Service over HTTP in wisselwerking te staan*
-
-* **[GraphQL zonder koppen (zelfstudie)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
-  *Leer hoe u AEM GraphQL API&#39;s kunt gebruiken om ervaringen in een externe toepassing in te schakelen.*
-
-* **[Asset compute metadata worker (zelfstudie)](./asset-compute/advanced/metadata.md)**
-  *Leer hoe u metagegevens van middelen van een Asset compute-worker naar AEM schrijft*
-
-* **[Uitbreidbaarheid van microservices voor asset compute (zelfstudie)](./asset-compute/overview.md)**
-  *Leer hoe u Asset compute-workers kunt ontwikkelen om aangepaste asset-uitvoeringen te genereren*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>

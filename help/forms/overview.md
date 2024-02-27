@@ -6,9 +6,9 @@ role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 duration: 88
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -16,21 +16,6 @@ ht-degree: 0%
 # Zelfstudies en video&#39;s voor AEM Forms {#overview}
 
 Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het maken, beheren, publiceren en bijwerken van complexe digitale formulieren en voor integratie met back-endprocessen, bedrijfsregels en gegevens. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Forms
-
-<div id="whats-new-section">
-
-## Nieuwe functies
-
-* **[Foutberichten verwerken in de stap Formuliergegevensmodel aanroepen](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-  *Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype*
-
-* **[Diagrammen uit meerdere reeksen in interactieve communicatiedocumenten (video)](./interactive-communications/multiseriescharts.md)**
-  *Plot meer dan één reeks in de zelfde grafiek. De veelvoudige reekskaarten worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom.*
-
-* **[Herbruikbare workflowmodellen maken](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-  *Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -88,8 +73,6 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 </table>
 
 </div>
-
-
 
 
 ## Aanvullende bronnen
