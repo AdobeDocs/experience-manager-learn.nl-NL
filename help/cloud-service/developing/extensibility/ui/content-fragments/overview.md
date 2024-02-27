@@ -12,9 +12,9 @@ thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 9164423b-a609-4bc5-9777-112d229ae748
 duration: 388
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: bb902089a709ab00853f4856d9bf42c18a5097e7
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -329,6 +329,27 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-badges.md" title="Badge Rich Text Editor">Badge Rich Text Editor</a></p>
           <p class="is-size-6">Voeg badges toe aan de Rich Text Editor in de Content Fragment Editor.</p>
           <a href="./examples/editor-rte-badges.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Custom fields">
+    <div class="card" style="height: 100%">
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <a href="./examples/editor-custom-field.md" title="Aangepaste velden" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427585?format=jpeg" alt="Aangepaste velden">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small">
+        <div class="content">
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-custom-field.md" title="Aangepaste velden">Aangepaste velden</a></p>
+          <p class="is-size-6">Maak aangepaste velden voor inhoudsfragmenten.</p>
+          <a href="./examples/editor-custom-field.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
             <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
           </a>
         </div>
