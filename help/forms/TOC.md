@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
+source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2009'
 ht-degree: 1%
 
 ---
@@ -276,6 +276,7 @@ ht-degree: 1%
    + [ECMA-script voor het genereren van pdf met fragmenten](document-services/using-fragments-in-output-service-watched-folder.md)
    + [Meerdere PDF&#39;s genereren op basis van één gegevensbestand](document-services/generate-multi-record-pdf.md)
    + [PDF genereren op mobiele formulieren](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Op basis van een formulier verzonden PDF op basis van kerncomponent genereren](document-services/generate-pdf-from-core-component-form-submission.md)
    + [Interactieve PDF uit mobiel formulier genereren](document-services/render-interactive-form-using-api.md)
    + [Interactieve DoR genereren uit adaptief formulier](document-services/generate-interactive-dor.md)
    + [Credentiële Reader extensies configureren](document-services/configuring-reader-extension-osgi.md)
