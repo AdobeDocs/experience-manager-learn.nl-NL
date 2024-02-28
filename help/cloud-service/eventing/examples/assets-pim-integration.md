@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: 6ef17e61190f58942dcf9345b2ea660d972a8f7e
+source-git-commit: 6c01dc8a0e8fd3cc69b21c78da8678e872dcef0c
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
@@ -26,6 +26,8 @@ ht-degree: 0%
 >Deze zelfstudie maakt gebruik van experimentele AEM as a Cloud Service API&#39;s. Om toegang te krijgen tot deze API&#39;s, moet u een pre-release softwareovereenkomst accepteren en deze API&#39;s handmatig voor uw omgeving laten inschakelen door Adobe engineering. Om toegang te verzoeken bereiken tot de steun van de Adobe.
 
 Leer hoe u AEM Assets kunt integreren met een systeem van derden, zoals een PIM-systeem (Product Information Management) of een PLM-systeem (Product Line Management), om metagegevens van bedrijfsmiddelen bij te werken **native AEM-IO-gebeurtenissen gebruiken**. Als u een AEM Assets-gebeurtenis ontvangt, kunnen de metagegevens van de elementen op basis van de zakelijke vereisten worden bijgewerkt in AEM, de PIM of beide systemen. In dit voorbeeld wordt echter getoond hoe de metagegevens van de elementen in AEM worden bijgewerkt.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427592?quality=12&learn=on)
 
 De update voor metagegevens van elementen uitvoeren **code buiten AEM** de [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), wordt een serverloos platform gebruikt.
 
