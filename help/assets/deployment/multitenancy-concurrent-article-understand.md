@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
 duration: 524
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 3b6de935b5f1fb5ee2d0e50372188f1eba7baeaa
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Dit elimineert niet de behoefte voor veelvoudige teams om van en potentieel de z
 
 Om ervoor te zorgen dat de veranderingen die aan dit kernpakket worden aangebracht de functionaliteit van het systeem niet verstoren, adviseren wij dat een senior ontwikkelaar of een team van ontwikkelaars toezicht handhaven. Eén optie is één team te hebben dat alle wijzigingen in dit pakket beheert. Een andere optie is dat teams pull-aanvragen moeten indienen die door deze bronnen worden gecontroleerd en samengevoegd. Het is belangrijk dat de teams een bestuursmodel opstellen en ermee instemmen en dat ontwikkelaars dit model volgen.
 
-## Implementatiebereik beheren  {#managing-deployment-scope}
+## Implementatiebereik beheren {#managing-deployment-scope}
 
 Aangezien de verschillende teams hun code aan de zelfde bewaarplaats opstellen, is het belangrijk dat zij elkaars veranderingen niet beschrijven. AEM heeft een mechanisme om dit te controleren wanneer het opstellen van inhoudspakketten, de filter. xml-bestand. Het is belangrijk dat er geen overlapping is tussen filters.  xml- dossiers, anders kon de plaatsing van één team potentieel de vorige plaatsing van een ander team wissen. Ter illustratie hiervan raadpleegt u de volgende voorbeelden van goed gemaakte versus problematische filterbestanden:
 
