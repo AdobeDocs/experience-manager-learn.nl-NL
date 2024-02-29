@@ -1,6 +1,6 @@
 ---
-title: Toegangstoken genereren in App Builder-actie
-description: Leer hoe u een toegangstoken genereert met JWT-referenties voor gebruik in een App Builder-actie.
+title: JWT-toegangstoken genereren in App Builder-actie
+description: Leer hoe te om een toegangstoken te produceren door geloofsbrieven te gebruiken JWT voor gebruik in een actie van de Bouwer van de App.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -10,18 +10,18 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 161
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: c77dd9c2872e7e43863d83837cedbff50a7d3c1a
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
 
-# Toegangstoken genereren in App Builder-actie
+# JWT-toegangstoken genereren in App Builder-actie
 
 App Builder-acties moeten mogelijk communiceren met Adobe-API&#39;s die zijn gekoppeld aan Adobe Developer-consoleprojecten waaraan de App Builder-app is toegewezen.
 
-Dit kan de actie van App Builder vereisen om zijn eigen toegangstoken te produceren verbonden aan het gewenste project van de Console van Adobe Developer.
+Dit kan de actie van de Bouwer van de App vereisen om zijn eigen JWT toegangstoken te produceren verbonden aan het gewenste project van de Console van Adobe Developer.
 
 >[!IMPORTANT]
 >
