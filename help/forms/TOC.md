@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
+source-git-commit: b2062d9c67dc029c8d0e41f82f634f930e8249a6
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2032'
 ht-degree: 1%
 
 ---
@@ -285,6 +285,14 @@ ht-degree: 1%
    + [Documenten certificeren](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Formulierbijlagen samenstellen](document-services/assemble-form-attachments.md)
    + [Nuttige hulpprogramma&#39;s](document-services/useful-utility-services.md)
++ Forms Designer{#forms-designer}
+   + [Uw eerste formulier maken](forms-designer/create-simple-form.md)
+   + [Een script maken voor uw formulier](forms-designer/first-script-designer.md)
+   + [XML-gegevensbinding](forms-designer/xml-data-binding.md)
+   + [Databasebinding](forms-designer/binding-to-mysql-db.md)
+   + [Scripthandtekening gebruiken](forms-designer/scribble-signature-form.md)
+   + [Digitale handtekening gebruiken](forms-designer/adding-dig-signature-field.md)
+   + [Reader, formulier uitbreiden](forms-designer/reader-extending-j2ee.md)
 + Interactieve communicatie voor afdrukkanaal
 {#ic-print-channel-tutorial}
    + [1 - Inleiding](ic-print-channel-tutorial/introduction.md)
