@@ -1,12 +1,12 @@
 ---
 title: Wolk 5 - Seizoen 3
-description: Met Reden drie leert u over AEM Edge Delivery-service via diepgaande gesprekken met experts die aan gecompliceerde projecten hebben gewerkt
+description: Met Reden drie leert u over AEM Edge Delivery-service via diepgaande interviews met experts die aan gecompliceerde projecten hebben gewerkt
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
+source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Inleiding
 
-Welkom bij de Cloud 5 Series van het seizoen drie van AEM Techniek. Een van de belangrijkste problemen in de implementatiefase van een product is het hebben van voldoende codevoorbeelden en/of live demonstraties van deze samples, tools of API&#39;s. Het doel van deze reeks is nuttige informatie over AEM Edge Delivery-services binnen 5 minuten of minder te leveren.
+Welkom bij de Cloud 5 Series van het seizoen drie van AEM Techniek. Een van de belangrijkste problemen in de implementatiefase van een product is het hebben van voldoende codevoorbeelden en/of live demonstraties van deze voorbeelden, gereedschappen of API&#39;s. Het doel van deze reeks is nuttige informatie over AEM Edge Delivery Services in 5 minuten of minder te leveren.
 
 ## Suggestievak
 
@@ -56,7 +56,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 Onderzoek Real User Monitoring (RUM) werkt met Edge Delivery Services.
             </p>
         </td>   
- <td>
+        <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="Edge Workers" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
             </a>
@@ -70,5 +70,21 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 Onderzoek het belang van randarbeiders met Edge Delivery Services.
             </p>
         </td>   
-  </tr>  
+    </tr>
+    <tr>
+        <td>
+            <a href="./season-3/cloud5-publish-events.md">
+                <img alt="Publiceren, publicatie van gebeurtenissen in Edge Delivery Services ongedaan maken" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-publish-events.md">
+                <strong>Publiceren, publicatie van gebeurtenissen in Edge Delivery Services ongedaan maken</strong></a>        
+                <br/><em>met James Talbot &amp; Amol Anand, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>
+                Verken gebeurtenissen die worden geactiveerd bij het publiceren en ongedaan maken van publicatie in Edge Delivery Services en gebruik gevallen en voorbeelden voor het gebruik van deze gebeurtenissen.
+            </p>
+        </td>   
+    </tr>  
 </table>
