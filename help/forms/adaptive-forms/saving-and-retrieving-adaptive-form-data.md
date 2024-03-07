@@ -8,9 +8,9 @@ type: Tutorial
 version: 6.4,6.5
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 691
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ In dit artikel worden de stappen beschreven die nodig zijn voor het opslaan en o
 
 Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar de database die wordt gebruikt om de Adaptive Form-gegevens op te slaan. Het volgende schermafbeelding toont de configuratie voor mijn instantie. U kunt de volgende eigenschappen kopiëren en plakken
 
-* Naam gegevensbron:informatieStutorial - dit is de naam die in mijn code wordt gebruikt.
+* `Datasource Name:aemformstutorial` - Dit is de naam die in mijn code wordt gebruikt.
 
-* JDBC-stuurprogramma, klasse:com.mysql.jdbc.Driver
+* `JDBC Driver Class:com.mysql.jdbc.Driver`
 
-* URL JDBC-verbinding:jdbc:mysql://localhost:3306/aemformstutorial
+* `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
 ![connectionpool](assets/storingdata.PNG)
 

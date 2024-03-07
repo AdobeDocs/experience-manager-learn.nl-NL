@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 335
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de
 
 ### Het bestand Console.json ontbreekt in het project Asset compute{#missing-console-json}
 
-+ __Fout:__ Fout: ontbrekende vereiste bestanden bij validate (../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) bij async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:JJ)
++ __Fout:__ Fout: ontbrekende vereiste bestanden bij validatie (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) bij async setupAssetCompute (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
 + __Oorzaak:__ De `console.json` bestand ontbreekt in de hoofdmap van het Asset compute-project
 + __Resolutie:__ Een nieuwe download `console.json` vorm uw Adobe I/O-project
    1. In console.adobe.io, open het project van Adobe I/O het project van de Asset compute wordt gevormd om te gebruiken
