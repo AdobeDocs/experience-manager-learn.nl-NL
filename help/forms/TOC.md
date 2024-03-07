@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: b2062d9c67dc029c8d0e41f82f634f930e8249a6
+source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2034'
 ht-degree: 1%
 
 ---
@@ -220,12 +220,13 @@ ht-degree: 1%
    + [PDF-verzending verwerken](offline-mobile-form-submission/part-two.md)
    + [Workflow voor revisie PDF](offline-mobile-form-submission/part-three.md)
    + [Implementeren op uw systeem](offline-mobile-form-submission/part-four.md)
-+ Ingediende gegevens opvragen{#querying-submitted-data}
-   + [Inleiding](querying-submitted-data/introduction.md)
-   + [Formulier maken op basis van JSON-schema](querying-submitted-data/part1.md)
-   + [De verzonden gegevens opslaan](querying-submitted-data/part2.md)
-   + [Sla het JSON-schema op](querying-submitted-data/part3.md)
-   + [De verzonden gegevens opvragen](querying-submitted-data/part4.md)
++ Formulierverzendingen aanvragen{#query-form-submissions}
+   + [Inleiding](query-form-submissions/introduction.md)
+   + [Doorzoekbare velden maken](query-form-submissions/part1.md)
+   + [Aangepaste verzending maken](query-form-submissions/part2.md)
+   + [Query-interface samenstellen](query-form-submissions/part3.md)
+   + [Prefill-service schrijven](query-form-submissions/part4.md)
+   + [Het voorbeeld implementeren](query-form-submissions/part5.md)
 + Aangepaste elementtypen weergeven in Forms Portal{#listing-custom-asset-types}
    + [Deel 1-Aangepaste elementtypen registreren](listing-custom-asset-types/part1.md)
    + [Part2 - Aangepaste sjabloon maken](listing-custom-asset-types/part2.md)
@@ -286,7 +287,9 @@ ht-degree: 1%
    + [Formulierbijlagen samenstellen](document-services/assemble-form-attachments.md)
    + [Nuttige hulpprogramma&#39;s](document-services/useful-utility-services.md)
 + Forms Designer{#forms-designer}
+   + [Ontwerpweergave](forms-designer/design-view.md)
    + [Uw eerste formulier maken](forms-designer/create-simple-form.md)
+   + [Formuliersjabloon maken](forms-designer/creating-form-template.md)
    + [Een script maken voor uw formulier](forms-designer/first-script-designer.md)
    + [XML-gegevensbinding](forms-designer/xml-data-binding.md)
    + [Databasebinding](forms-designer/binding-to-mysql-db.md)
