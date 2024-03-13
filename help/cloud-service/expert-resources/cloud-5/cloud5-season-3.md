@@ -4,13 +4,13 @@ description: Met Reden drie leert u over AEM Edge Delivery-service via diepgaand
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
+exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
+source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
-
 
 # Wolk 5 seizoen 3
 
@@ -84,6 +84,20 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             <p>
                 <br/>
                 Verken gebeurtenissen die worden geactiveerd bij het publiceren en ongedaan maken van publicatie in Edge Delivery Services en gebruik gevallen en voorbeelden voor het gebruik van deze gebeurtenissen.
+            </p>
+        </td>  
+        <td>
+            <a href="./season-3/cloud5-query-indexes.md">
+                <img alt="Query-indexen en Excel-formules" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-query-indexes.md">
+                <strong>Query-indexen en Excel-formules</strong></a>        
+                <br/><em>met James Talbot &amp; Varun Mitra, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>
+                Onderzoek vraagindexen en hoe te om de formules van Excel te schrijven voor het manipuleren en het sorteren van datasets.
             </p>
         </td>   
     </tr>  
