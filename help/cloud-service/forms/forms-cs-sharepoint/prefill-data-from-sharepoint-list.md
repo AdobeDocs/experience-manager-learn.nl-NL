@@ -9,7 +9,8 @@ version: Cloud Service
 topic: Integrations
 jira: KT-14795
 duration: 60
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+exl-id: 9abe9f9d-8fb3-4e01-a830-1dad1c27274d
+source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 In de vorige versie van AEM formulier(6.5) moest aangepaste code worden geschreven naar het vooraf ingevulde formuliergegevensmodel met ondersteuning voor adaptief formulier met behulp van aanvraagkenmerk. In AEM Forms als cloudservice is het niet langer nodig aangepaste code te schrijven.
 
-In dit artikel worden de stappen beschreven die nodig zijn om het aangepaste formulier vooraf in te vullen of in te vullen met gegevens die zijn opgehaald uit de lijst met deelpunten met behulp van de Prefill-service van het formuliergegevensmodel.
+In dit artikel worden de stappen beschreven die nodig zijn om een adaptief formulier vooraf in te vullen of in te vullen met gegevens die uit de SharePoint-lijst zijn opgehaald met de service voor het vooraf invullen van het formuliergegevensmodel.
 
 In dit artikel wordt ervan uitgegaan dat u [adaptief formulier is geconfigureerd voor het verzenden van gegevens naar de SharePoint-lijst.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
@@ -52,7 +53,3 @@ Geef een voorbeeld van het formulier weer door de `submissionid` in de URL, zoal
 ```html
 http://localhost:4502/content/dam/formsanddocuments/contactusform/jcr:content?wcmmode=disabled&submissionid=57e12249-751a-4a38-a81f-0a4422b24412
 ```
-
-
-
-
