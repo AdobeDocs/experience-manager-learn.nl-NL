@@ -11,9 +11,9 @@ duration: null
 last-substantial-update: 2024-03-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
-source-git-commit: 466a19a30dd5f81d50c28cb57034800494255d4b
+source-git-commit: 8230991cebf1a9e994f0dfe96c5590d0c19ef887
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Leer hoe u een aangepaste domeinnaam aan AEM as a Cloud Service website kunt toe
 
 In deze zelfstudie wordt de branding van het voorbeeld [AEM WKND](https://github.com/adobe/aem-guides-wknd) site wordt verbeterd door een voor HTTPS adresseerbare aangepaste domeinnaam toe te voegen `wknd.enablementadobe.com` met TLS (Transport Layer Security).
 
->[!VIDEO](https://video.tv.adobe.com/v/3427817?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427903?quality=12&learn=on)
 
 De stappen op hoog niveau zijn:
 
@@ -33,16 +33,20 @@ De stappen op hoog niveau zijn:
 
 ## Vereisten
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427909?quality=12&learn=on)
+
 - [OpenSSL](https://www.openssl.org/) en [graven](https://www.isc.org/blogs/dns-checker/) zijn geïnstalleerd op uw lokale computer.
 - Toegang tot diensten van derden:
    - Certificaatinstantie (CA) - voor het aanvragen van het ondertekende certificaat voor uw sitedomein, zoals [DigitCert](https://www.digicert.com/)
    - De het ontvangen dienst van het Systeem van de Naam van het domein (DNS) - om DNS verslagen voor uw douanedomein, zoals Azure DNS, of Route 53 van AWS toe te voegen.
 - Toegang tot [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) als Business Owner of Deployment Manager.
-- Monster [AEM WKND](https://github.com/adobe/aem-guides-wknd) site wordt geïmplementeerd in de AEMCS-omgeving van [productieprogramma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) type.
+- Monster [AEM WKND](https://github.com/adobe/aem-guides-wknd) site wordt geïmplementeerd in de AEMCS-omgeving van [productieprogramma](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) type.
 
 Als u geen toegang hebt tot services van derden, _samenwerken met uw beveiligings- of hostingteam om de stappen te voltooien_.
 
 ## SSL-certificaat genereren
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
 
 U hebt twee opties:
 
@@ -78,14 +82,18 @@ In deze zelfstudie [DigitCert](https://www.digicert.com/) ondertekend certificaa
 
 ## SSL-certificaat toevoegen in Cloud Manager
 
-Ga als volgt te werk om het SSL-certificaat toe te voegen in Cloud Manager [SSL-certificaat toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html) documentatie.
+>[!VIDEO](https://video.tv.adobe.com/v/3427906?quality=12&learn=on)
+
+Ga als volgt te werk om het SSL-certificaat toe te voegen in Cloud Manager [SSL-certificaat toevoegen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate) documentatie.
 
 ## Domeinnaamverificatie
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427905?quality=12&learn=on)
+
 Voer de volgende stappen uit om de domeinnaam te controleren:
 
-- Domeinnaam toevoegen in Cloud Manager door de instelling [Aangepaste domeinnaam toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html) documentatie.
-- Een AEM toevoegen [TXT-record](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record.html) in uw DNS-hostingservice.
+- Domeinnaam toevoegen in Cloud Manager door de instelling [Aangepaste domeinnaam toevoegen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) documentatie.
+- Een AEM toevoegen [TXT-record](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) in uw DNS-hostingservice.
 - Verifieer de bovenstaande stappen door de DNS servers te vragen die DNS gebruiken `dig` gebruiken.
 
 ```bash
@@ -121,15 +129,17 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 In dit leerprogramma, wordt Azure DNS gebruikt als voorbeeld. Om het TXT- verslag toe te voegen, moet u de documentatie van uw DNS het ontvangen dienst volgen.
 
-Controleer de [Status domeinnaam controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html) documentatie als er een probleem is.
+Controleer de [Status domeinnaam controleren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status) documentatie als er een probleem is.
 
 ## DNS-record configureren
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427907?quality=12&learn=on)
+
 Om het DNS verslag voor uw douanedomein te vormen volg deze stappen:
 
-- Bepaal het DNS verslagtype (CNAME of APEX) dat op het domeintype, zoals worteldomein (APEX) of subdomain (CNAME) wordt gebaseerd, en volg [DNS-instellingen configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html) documentatie.
+- Bepaal het DNS verslagtype (CNAME of APEX) dat op het domeintype, zoals worteldomein (APEX) of subdomain (CNAME) wordt gebaseerd, en volg [DNS-instellingen configureren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings) documentatie.
 - Voeg het DNS-record toe aan uw DNS-hostingservice.
-- Trigger de DNS verslagbevestiging door te volgen [DNS-recordstatus controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html) documentatie.
+- Trigger de DNS verslagbevestiging door te volgen [DNS-recordstatus controleren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status) documentatie.
 
 In deze zelfstudie, als **subdomein** `wknd.enablementadobe.com` wordt gebruikt, het CNAME- verslagtype dat aan richt `cdn.adobeaemcloud.com` wordt toegevoegd.
 
@@ -137,6 +147,14 @@ Als u echter de opdracht **hoofddomein**, moet u APEX-recordtype (ook wel A, ALI
 
 ## Site-verificatie
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427904?quality=12&learn=on)
+
 Als u wilt controleren of de site toegankelijk is met de aangepaste domeinnaam, opent u een webbrowser en navigeert u naar de URL van het aangepaste domein. Controleer of de site toegankelijk is en of de browser een veilige verbinding met het hangslotpictogram heeft.
+
+## Video beëindigen tot einde
+
+U kunt de video van begin tot eind ook bekijken die het overzicht, de eerste vereisten, en bovenstaande stappen aantoont om een naam van het douanedomein aan AEM as a Cloud Service-ontvangen plaats toe te voegen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427817?quality=12&learn=on)
 
 
