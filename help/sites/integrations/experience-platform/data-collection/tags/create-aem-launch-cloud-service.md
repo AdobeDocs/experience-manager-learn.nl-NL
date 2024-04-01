@@ -1,6 +1,6 @@
 ---
-title: Een configuratie voor Cloud Servicen starten in AEM Sites maken
-description: Leer hoe te om een configuratie van de Cloud Service van de Lancering in AEM tot stand te brengen. De configuratie van de Cloud Service Launch kan dan worden toegepast op een bestaande Site en de tagbibliotheken kunnen worden waargenomen tijdens het laden in zowel de auteur- als de publicatieomgeving.
+title: Een configuratie met een Cloud Service voor tags maken in AEM Sites
+description: Leer hoe te om een configuratie van de Cloud Service van markeringen in AEM tot stand te brengen.
 solution: Experience Manager, Data Collection, Experience Platform
 jira: KT-5982
 thumbnail: 38566.jpg
@@ -13,40 +13,32 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
 duration: 139
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
-# Een configuratie van de Cloud Service Launch maken in AEM {#create-launch-cloud-service}
+# Een configuratie voor de Cloud Service van tags maken in AEM {#create-launch-cloud-service}
 
->[!NOTE]
->
->Het proces om Adobe Experience Platform Launch als reeks technologieën van de gegevensinzameling anders te noemen wordt uitgevoerd in AEM product UI, inhoud, en documentatie, zodat wordt de term Lanceren nog gebruikt hier.
+Leer hoe u een configuratie van een Cloud Service voor tags maakt in Adobe Experience Manager. AEM de configuratie van de Cloud Service van markeringen kan dan op een bestaande Plaats worden toegepast en de bibliotheken van Markeringen kunnen het laden in zowel auteur als Publish milieu&#39;s worden waargenomen.
 
-Leer hoe u een configuratie voor een Cloud Service starten maakt in Adobe Experience Manager. AEM de configuratie van de Cloud Service van de Lancering kan dan op een bestaande Plaats worden toegepast en de bibliotheken van Markeringen kunnen ladend in zowel auteur als Publish milieu&#39;s worden waargenomen.
+## Cloud-service voor tags maken
 
-## Launch Cloud Service maken
-
-Maak de configuratie van de cloudservice starten met onderstaande stappen.
+Maak de configuratie van de cloudservice met onderstaande stappen.
 
 1. Van de **Gereedschappen** menu, selecteert u **Cloud Servicen** sectie en klik op **Adobe-startconfiguraties**
-
 1. Selecteer de configuratiemap van uw site of selecteer **WKND-site** (als het gebruiken van het WKND gids project) en klik **Maken**
-
 1. Van de _Algemeen_ tab, noem uw configuratie gebruikend **Titel** veld en selecteer **Adobe starten** van de _Gekoppelde Adobe IMS-configuratie_ vervolgkeuzelijst. Selecteer vervolgens uw bedrijfsnaam in het menu _Bedrijf_ vervolgkeuzelijst en selecteer eerder gemaakte eigenschap in het menu _Eigenschap_ vervolgkeuzelijst.
-
 1. Van de _Staging_ en _Productie_ de standaardconfiguraties behouden. Nochtans wordt het geadviseerd het herzien en de configuraties voor echte productie opstelling, specifiek te veranderen _Bibliotheek asynchroon laden_ schakelen op basis van uw prestatie- en optimalisatievereisten. Let ook op het volgende: _Bibliotheek-URI_ De waarde is anders voor Staging en Productie.
+1. Tot slot klikt u op **Maken** om de cloudservices te voltooien.
 
-1. Tot slot klikt u op **Maken** om de Launch Cloud Services te voltooien.
+   ![Configuratie van Cloud Servicen voor tags](assets/launch-cloud-services-config.png)
 
-   ![Configuratie van Cloud Servicen starten](assets/launch-cloud-services-config.png)
+## Cloudservice voor tags toepassen op de site
 
-## Cloudservice starten toepassen op de site
-
-Als u de eigenschap Tag en de bijbehorende bibliotheken op de AEM site wilt laden, wordt de configuratie van de cloudservice starten toegepast op de site. In de vorige stap wordt de configuratie van de cloudservice gemaakt onder de map met sitenaam (WKND-site), zodat deze automatisch moet worden toegepast. Laten we controleren of de configuratie niet werkt.
+Als u de eigenschap Tag en de bijbehorende bibliotheken op de AEM site wilt laden, wordt de configuratie van de cloudservice op de site toegepast. In de vorige stap wordt de configuratie van de cloudservice gemaakt onder de map met sitenaam (WKND-site), zodat deze automatisch moet worden toegepast. Laten we controleren of de configuratie niet werkt.
 
 1. Van de **Navigatie** menu, selecteert u **Sites** pictogram.
 
@@ -60,7 +52,7 @@ Nu is het tijd om te controleren dat de eigenschap Tag en de bijbehorende biblio
 
 1. Open uw favoriete sitepagina in het dialoogvenster **Weergeven als gepubliceerd** in de browserconsole ziet u het logbericht. Het is hetzelfde bericht uit het JavaScript-codefragment van de tageigenschapregel dat wordt geactiveerd wanneer _Bibliotheek geladen (pagina boven)_ gebeurtenis wordt geactiveerd.
 
-1. Als u wilt controleren bij Publiceren, publiceert u eerst uw **Cloudservice starten** en opent u de sitepagina in de instantie Publiceren.
+1. Als u wilt controleren bij Publiceren, publiceert u eerst uw **tagcloudservice** en opent u de sitepagina in de instantie Publiceren.
 
    ![Eigenschap labelen op auteur- en publicatiepagina&#39;s](assets/tag-property-on-author-publish-pages.png)
 

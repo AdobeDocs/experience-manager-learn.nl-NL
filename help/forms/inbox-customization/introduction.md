@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 54
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -32,7 +32,7 @@ U kunt een Experience Manager Inbox aanpassen om de standaardtitel van een kolom
 
 ## Kolomaanpassing
 
-[AEM starten, inbox](http://localhost:4502/aem/inbox)
+[AEM openen](http://localhost:4502/aem/inbox)
 Open de beheerfunctie door op de knop _Lijstweergave_ pictogram en vervolgens selecteren _Beheer van beheerders_ zoals weergegeven in onderstaande schermafbeelding
 
 ![beheer](assets/open-customization.png)

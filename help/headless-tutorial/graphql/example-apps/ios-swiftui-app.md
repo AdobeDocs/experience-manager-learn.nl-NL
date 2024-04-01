@@ -13,7 +13,7 @@ last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
 duration: 308
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -52,7 +52,7 @@ De iOS-toepassing is ontworpen om verbinding te maken met een __AEM publiceren__
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Starten [Xcode](https://developer.apple.com/xcode/) en opent u de map `ios-app`
+1. Openen [Xcode](https://developer.apple.com/xcode/) en opent u de map `ios-app`
 1. Het bestand wijzigen `Config.xcconfig` bestand en update `AEM_SCHEME` en `AEM_HOST` die overeenkomen met uw doel AEM publicatieservice.
 
    ```plain

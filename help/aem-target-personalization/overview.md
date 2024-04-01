@@ -10,7 +10,7 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
 duration: 219
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -46,7 +46,7 @@ We hebben nu persoonlijke inhoud in de vorm van voorstellen van AEM in Target. M
 
 **Om dit scenario uit te voeren, moet u:**
 
-* [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [AEM en Adobe Target integreren met tags en Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM en Adobe Target met behulp van verouderde Cloud Servicen](./implementation.md#integrating-aem-target-options)
 
 ***Na de implementatie van de bovenstaande integratie, kunt u de [scenario in detail](./personalization-use-case-1.md).***
@@ -67,7 +67,7 @@ VEC is een van de belangrijkste kenmerken van Adobe Target. Met VEC kunnen marke
 
 **Om dit scenario uit te voeren, moet u:**
 
-* [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [AEM en Adobe Target integreren met tags en Adobe I/O](./implementation.md#integrating-aem-target-options)
 
 ***Nadat u de bovenstaande integratie hebt geïmplementeerd, kunt u de [scenario in detail.](./personalization-use-case-3.md)***
 
@@ -85,6 +85,6 @@ Door Adobe Experience Manager te integreren met Adobe Target kunt u uw sitegebru
 
 **Om dit scenario uit te voeren, moet u:**
 
-* [AEM en Adobe Target integreren met Launch en Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [AEM en Adobe Target integreren met tags en Adobe I/O](./implementation.md#integrating-aem-target-options)
 
 ***Nadat u de bovenstaande integratie hebt geïmplementeerd, kunt u de [scenario in detail.](./personalization-use-case-2.md)***

@@ -14,9 +14,9 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2330
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ In **Experience Platform**:
 + Toegang tot **Schemas** onder Gegevensbeheer
 + Toegang tot **Gegevenssets** onder Gegevensbeheer
 + Toegang tot **Gegevensstromen** onder Gegevensverzameling
-+ Toegang tot **Tags** (voorheen bekend als Launch) onder Gegevensverzameling
++ Toegang tot **Tags**  onder Gegevensverzameling
 
 Als u niet de noodzakelijke toestemmingen hebt, gebruikt uw systeembeheerder [Adobe Admin Console](https://adminconsole.adobe.com/) kan de benodigde machtigingen verlenen.
 

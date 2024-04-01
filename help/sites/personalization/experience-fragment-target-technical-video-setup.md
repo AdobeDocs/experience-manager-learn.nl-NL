@@ -1,6 +1,6 @@
 ---
 title: Maak ervaringsfragmenten en Adobe Target-integratie in AEM
-description: In Adobe Experience Manager 6.4 wordt de personalisatieworkflow tussen AEM en Target vernieuwd. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden aangeboden als HTML-aanbiedingen. Op deze manier kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
+description: Adobe Experience Manager 6.4 herstelt de personalisatieworkflow tussen AEM en Target. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden aangeboden als HTML-aanbiedingen. Op deze manier kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
 feature: Experience Fragments
 version: 6.4, 6.5
 discoiquuid: 16cb0b92-9398-4fd2-b8c3-f4b7675ef72c
@@ -10,7 +10,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
 duration: 248
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Fragmenten voor Adobe Target-integratie instellen{#set-up-experience-fragments-and-adobe-target-integration}
 
-In Adobe Experience Manager 6.4 wordt de personalisatieworkflow tussen AEM en Target vernieuwd. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden aangeboden als HTML-aanbiedingen. Op deze manier kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
+Adobe Experience Manager 6.4 herstelt de personalisatieworkflow tussen AEM en Target. Ervaringen die in AEM zijn gemaakt, kunnen nu rechtstreeks aan Adobe Target worden aangeboden als HTML-aanbiedingen. Op deze manier kunnen marketers inhoud op verschillende kanalen naadloos testen en aanpassen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22380?quality=12&learn=on)
 
 >[!NOTE]
 >
->Aanbevolen wordt om de at.js-clientbibliotheek te gebruiken. De beste manier is om oplossingen voor tagbeheer, zoals Launch by Adobe, Adobe DTM of elke andere oplossing voor tagbeheer van derden, te gebruiken om doelbibliotheken aan uw sitepagina&#39;s toe te voegen
+>Aanbevolen wordt om de at.js-clientbibliotheek te gebruiken. De beste manier is om oplossingen voor tagbeheer te gebruiken, zoals tags in Adobe Experience Platform of elke oplossing voor tagbeheer van derden, om doelbibliotheken aan uw sitepagina&#39;s toe te voegen
 
 * De de dienstconfiguratie van de Wolk van het doel die op de omslag van het Fragment van de Ervaring wordt toegepast erft aan alle die Fragments van de Ervaring direct onder de ouderomslag worden gecreeerd. De omslag van het kind erft niet de configuratie van de ouderwolkendiensten.
 * De doelclientcode kan worden verkregen via Adobe Experience Cloud > Start Target > Onder tabblad Instellen > Implementatie > Bewerken bij.js-instellingen.

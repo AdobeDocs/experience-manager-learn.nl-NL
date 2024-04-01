@@ -1,6 +1,6 @@
 ---
-title: Asset Insights instellen met AEM Assets en Adobe Launch
-description: In deze videoreeks van vijf delen, laten we door de opstelling en configuratie van de Inzichten van Activa voor Experience Manager lopen die via Launch by Adobe wordt opgesteld.
+title: Asset Insights instellen met AEM Assets en tags
+description: In deze videoreeks van vijf delen, laten we door de opstelling en configuratie van de Inzichten van Activa voor Experience Manager lopen die via markeringen wordt opgesteld.
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Integrations
@@ -12,16 +12,16 @@ badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-titl
 doc-type: Tutorial
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
 duration: 2051
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
-# Asset Insights instellen met AEM Assets en Adobe Experience Platform Launch
+# Asset Insights instellen met AEM Assets en tags
 
-In deze videoreeks van vijf delen, laten we door de opstelling en configuratie van de Inzichten van Activa voor Experience Manager lopen die via de Lancering van de Adobe wordt opgesteld.
+In deze videoreeks van vijf delen, laten we door de opstelling en configuratie van de Inzichten van Activa voor Experience Manager lopen die via markeringen wordt opgesteld.
 
 ## Deel 1: Overzicht van asset Insights {#overview}
 
@@ -81,9 +81,9 @@ Voor de configuratie van AEM Assets Insights hebt u de volgende referenties nodi
 * Gedeeld geheim (kan worden verkregen van *Adobe Analytics > Admin > Company Settings > Web Service*).
 * Rapportsuite (zorg dat u de juiste rapportsuite selecteert die wordt gebruikt voor Asset Reporting)
 
-## Deel 4: Adobe Experience Platform Launch gebruiken om Adobe Analytics-extensie toe te voegen {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
+## Deel 4: Tags gebruiken om Adobe Analytics-extensie toe te voegen {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
 
-Adobe Analytics-extensie toevoegen, regels voor het laden van pagina&#39;s maken en AEM integreren met Starten met Adobe IMS-technische account.
+Adobe Analytics-extensie toevoegen, regels voor het laden van pagina&#39;s maken en AEM integreren met tags met de technische account van Adobe IMS.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
@@ -175,13 +175,13 @@ document.querySelectorAll('[data-aem-asset-id]').forEach(function(element) {
 ### Foutopsporingsinstructies voor console {#console-debug-statements}
 
 ```javascript
-//Launch Build Info
+// Tags build info
 _satellite.buildInfo
 
 //Enables debug messages
 _satellite.setDebug(true);
 
-//Asset Insight JS Object
+//Asset Insight JavaScript Object
 assetAnalytics
 
 //List of trackable images
@@ -190,10 +190,8 @@ document.querySelectorAll(".cmp-image__image");
 
 Twee Google Chrome-browserextensies worden in de video gebruikt als manieren om fouten op te sporen in Analytics. Soortgelijke extensies zijn ook beschikbaar voor andere browsers.
 
-* [Chrome-extensie wijzigen starten](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
-* [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Het is ook mogelijk om van DTM op zuiveringswijze met de volgende Uitbreiding van Chrome over te schakelen: [Starten en DTM-switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Hierdoor is het eenvoudiger om te zien of er fouten zijn met betrekking tot DTM-implementatie. Daarnaast kunt u handmatig van DTM overschakelen op de foutopsporingsmodus via elke browser *tool voor ontwikkelaars -> JS Console* door het volgende fragment toe te voegen:
 
 ## Deel 5: Testen van gegevens over het analytisch bijhouden en synchroniseren van het inzicht{#analytics-tracking-asset-insights}
 

@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 29f1cc8d891c57e9878c650fd8e02a32bfa73051
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 6%
 
 ---
@@ -137,12 +137,12 @@ ht-degree: 6%
       + [FPID&#39;s genereren](integrations/platform/fpid.md)
       + [Web SDK](integrations/platform/web-sdk.md)
       + [Analyses die gebruikmaken van Platform Web SDK](integrations/platform/analytics-using-web-sdk.md)
-   + Experience Platform Data Collection Tags (Launch) {#experience-platform-data-collection-tags}
+   + Tags in Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Overzicht](integrations/experience-platform/data-collection/tags/overview.md)
       + [Een eigenschap voor een tag maken](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [AEM verbinden en eigenschappen labelen met IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
-      + [Cloud Service AEM starten maken](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
-      + [Fouten opsporen in een implementatie van tags (Starten)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
+      + [Cloud Service AEM maken](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Fouten opsporen in een implementatie van tags](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Gegevenslaag client-Adobe {#adobe-client-data-layer}
       + [De gegevenslaag van de client Adoben gebruiken](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [De gegevenslaag van de client van de Adobe aanpassen](integrations/adobe-client-data-layer/data-layer-customize.md)
@@ -152,7 +152,7 @@ ht-degree: 6%
       + [Gegevens analyseren met Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [Overzicht](integrations/adobe-target/overview.md)
-      + [Doelextensie toevoegen aan Starteigenschap](integrations/adobe-target/add-target-launch-extension.md)
+      + [Doelextensie toevoegen aan eigenschap Codes](integrations/adobe-target/add-target-launch-extension.md)
       + [Een doelaanroep laden en in werking stellen](integrations/adobe-target/load-and-fire-target.md)
       + [Adobe Target Cloud Service-account maken](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Fragmenten voor ervaring exporteren naar Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)

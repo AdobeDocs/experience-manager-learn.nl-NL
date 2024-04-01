@@ -10,14 +10,14 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 
-# Aanpassing van de volledige Web-pagina Ervaringen die Adobe Target gebruiken
+# Aanpassing van de volledige webpagina&#39;s met Adobe Target
 
 In het vorige hoofdstuk, leerden wij hoe te om een geo-plaats gebaseerde activiteit tot stand te brengen binnen Adobe Target gebruikend inhoud die als Fragments van de Ervaring wordt gecreeerd en uit AEM als Aanbiedingen van de HTML wordt uitgevoerd.
 
@@ -34,7 +34,7 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 * **Content Producer/Content Editor** (Adobe Experience Manager)
 * **Marketer** (Adobe Target / Optimalisatieteam)
 
-### Startpagina WKND-site
+### WKND-startpagina
 
 ![AEM doelscenario 1](assets/personalization-use-case-2/aem-target-use-case-2.png)
 
@@ -42,13 +42,13 @@ Voor deze oefening, moeten de volgende gebruikers worden betrokken en om sommige
 
 * **AEM**
    * [AEM auteur- en publicatieexemplaar](./implementation.md#getting-aem) uitgevoerd op respectievelijk localhost 4502 en 4503.
-   * [AEM geïntegreerd met Adobe Target met Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM geïntegreerd met Adobe Target met tags](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Toegang tot uw organisaties Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud voorzien van de volgende oplossingen
       * [Adobe Target](https://experiencecloud.adobe.com)
 
-## Activiteiten van de inhoudseditor
+## Inhoudsbewerkingsactiviteiten
 
 1. De Marketer start de discussie over het opnieuw ontwerpen van de WKND-introductiepagina met AEM Content Editor en geeft details over de vereisten.
    * ***Vereiste*** : Introductiepagina van WKND-site opnieuw ontwerpen met op kaarten gebaseerd ontwerp.

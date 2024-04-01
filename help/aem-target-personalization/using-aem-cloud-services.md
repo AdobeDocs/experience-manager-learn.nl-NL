@@ -10,9 +10,9 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 9b191211-2030-4b62-acad-c7eb45b807ca
 duration: 357
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ In deze sectie bespreken we hoe we Adobe Experience Manager (AEM) met Adobe Targ
 
 >[!NOTE]
 >
-> De AEM Legacy Cloud Service met Adobe Target is **alleen** gebruikt om directe AEMauteur aan Adobe Target achterste-eindverbinding tot stand te brengen die de publicatie van inhoud van AEM aan Doel vergemakkelijkt. De Lancering van de Adobe wordt gebruikt blootstelt Adobe Target op het publiek onder ogen ziende Web-site ervaring die door AEM wordt gediend.
+> De AEM Legacy Cloud Service met Adobe Target is **alleen** gebruikt om directe AEMauteur aan Adobe Target achterste-eindverbinding tot stand te brengen die de publicatie van inhoud van AEM aan Doel vergemakkelijkt. De markeringen in Adobe Experience Platform worden gebruikt stellen Adobe Target op het publiek onder ogen ziende Web-site ervaring bloot die door AEM wordt gediend.
 
 Als u gebruik wilt maken van AEM Experience Fragment-aanbiedingen om uw personalisatieactiviteiten te stimuleren, kunt u verdergaan met het volgende hoofdstuk en AEM integreren met Adobe Target met behulp van de verouderde cloudservices. Deze integratie is vereist om Experience Fragments van AEM naar Target te duwen als HTML/JSON aanbiedingen en om de doelaanbiedingen gelijk te houden met AEM. Deze integratie is vereist voor de implementatie [Scenario 1 besproken in de overzichtssectie](./overview.md#personalization-using-aem-experience-fragment).
 
@@ -40,7 +40,7 @@ Als u gebruik wilt maken van AEM Experience Fragment-aanbiedingen om uw personal
 
      >[!NOTE]
      >
-     > De klant moet van Experience Platform Launch en Adobe I/O van worden voorzien [Ondersteuning voor Adoben](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) of reik uit uw systeembeheerder
+     > De klant moet worden voorzien van gegevensverzameling en -Adobe I/O van [Ondersteuning voor Adoben](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) of reik uit uw systeembeheerder
 
 ### AEM integreren met Adobe Target
 

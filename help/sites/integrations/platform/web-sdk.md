@@ -14,9 +14,9 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ In **Experience Platform**:
 + Toegang tot **Schemas** onder Gegevensbeheer
 + Toegang tot **Gegevenssets** onder Gegevensbeheer
 + Toegang tot **Gegevensstromen** onder Gegevensverzameling
-+ Toegang tot **Tags** (voorheen bekend als Launch) onder Gegevensverzameling
++ Toegang tot **Tags** onder Gegevensverzameling
 
 Als u niet de noodzakelijke toestemmingen hebt, gebruikt uw systeembeheerder [Adobe Admin Console](https://adminconsole.adobe.com/) kan de benodigde machtigingen verlenen.
 
@@ -75,7 +75,7 @@ U vertrouwd maken met het concept van gegevensstromen en verwante onderwerpen zo
 
 ## Tag-eigenschap maken - Experience Platform
 
-Leer hoe u een tageigenschap (voorheen Launch genoemd) in Experience Platform maakt om de JavaScript-bibliotheek van de Web SDK aan de WKND-website toe te voegen. De nieuw gedefinieerde eigenschap tag heeft de volgende bronnen:
+Leer hoe u een eigenschap tag maakt in Experience Platform om de JavaScript-bibliotheek van de Web SDK aan de WKND-website toe te voegen. De nieuw gedefinieerde eigenschap tag heeft de volgende bronnen:
 
 + Tagextensies: [Kern](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) en [Adobe Experience Platform Web SDK](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + Gegevenselementen: de gegevenselementen van het type van douanecode die pagina-naam, plaats-sectie, en gastheer-naam gebruikend de Laag van de Gegevens van de Cliënt van de Adobe van de plaats WKND halen. Ook, het het type van Objecten XDM gegevenselement dat met onlangs gecreeerd schema van WKND XDM bouwt vroeger in overeenstemming is [XDM-schema maken](#create-xdm-schema---experience-platform) stap.
@@ -139,26 +139,26 @@ Tijdens het maken en publiceren van de tagbibliotheek met de **Publishing Flow**
   var pageShownEventHandler = function(evt) {
   // defensive coding to avoid a null pointer exception
   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-      //trigger Launch Rule and pass event
+      // trigger tags Rule and pass event
       console.debug("cmp:show event: " + evt.eventInfo.path);
       var event = {
-          //include the path of the component that triggered the event
+          // include the path of the component that triggered the event
           path: evt.eventInfo.path,
-          //get the state of the component that triggered the event
+          // get the state of the component that triggered the event
           component: window.adobeDataLayer.getState(evt.eventInfo.path)
       };
   
-      //Trigger the Launch Rule, passing in the new 'event' object
-      // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+      // Trigger the tags Rule, passing in the new 'event' object
+      // the 'event' obj can now be referenced by the reserved name 'event' by other tags data elements
       // i.e 'event.component['someKey']'
       trigger(event);
       }
   }
   
-  //set the namespace to avoid a potential race condition
+  // set the namespace to avoid a potential race condition
   window.adobeDataLayer = window.adobeDataLayer || [];
   
-  //push the event listener for cmp:show into the data layer
+  // push the event listener for cmp:show into the data layer
   window.adobeDataLayer.push(function (dl) {
       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
       dl.addEventListener("cmp:show", pageShownEventHandler);
@@ -174,9 +174,9 @@ Voor extra informatie bij het integreren van AEM Componenten van de Kern met de 
 
 ## Eigenschap van Connect-tag AEM
 
-Ontdek hoe u de onlangs gemaakte tageigenschap koppelt aan AEM via Adobe IMS en Adobe Starten in AEM. Wanneer een AEM as a Cloud Service omgeving wordt ingesteld, worden automatisch verschillende configuraties van de technische account van Adobe IMS gegenereerd, waaronder het starten van de Adobe. Nochtans, voor AEM versie 6.5, moet u manueel vormen.
+Ontdek hoe u de onlangs gemaakte eigenschap tag koppelt aan AEM via Adobe IMS en -tags in Adobe Experience Platform Configuration in AEM. Wanneer een AEM as a Cloud Service omgeving wordt ingesteld, worden automatisch meerdere configuraties van de technische account van Adobe IMS gegenereerd, inclusief codes. Nochtans, voor AEM versie 6.5, moet u manueel vormen.
 
-Nadat de eigenschap tag is gekoppeld, kan de WKND-site de JavaScript-bibliotheek van de tag-eigenschap op de webpagina&#39;s laden met behulp van de Adobe Cloud Service Configuration.
+Nadat de eigenschap tag is gekoppeld, kan de WKND-site de JavaScript-bibliotheek van de tag-eigenschap op de webpagina&#39;s laden met behulp van de tags in de configuratie van de Adobe Experience Platform-cloudservice.
 
 ### Eigenschappen van tag verifiëren bij laden van WKND
 

@@ -10,9 +10,9 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
 duration: 173
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 In deze sectie zullen we bespreken hoe we Adobe Experience Manager Sites voor verschillende scenario&#39;s kunnen instellen met Adobe Target. Gebaseerd op uw scenario en organisatorische vereisten.
 
 * **Adobe Target JavaScript-bibliotheek toevoegen (vereist voor alle scenario&#39;s)**
-Voor sites die worden gehost op AEM, kunt u doelbibliotheken aan uw site toevoegen met: [Starten](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). De lancering verstrekt een eenvoudige manier om alle markeringen noodzakelijk om relevante klantenervaringen op te stellen en te beheren.
+Voor sites die worden gehost op AEM, kunt u doelbibliotheken aan uw site toevoegen met: [tags in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Tags bieden een eenvoudige manier om alle tags te implementeren en te beheren die nodig zijn om relevante ervaringen van klanten te benutten.
 * **Voeg de Adobe Target-Cloud Servicen toe (vereist voor het scenario Experience Fragments)**
 Voor AEM klanten, die de aanbiedingen van het Fragment van de Ervaring willen gebruiken om een activiteit binnen Adobe Target tot stand te brengen, zult u Adobe Target met AEM moeten integreren gebruikend de Verouderde Cloud Servicen. Deze integratie is vereist om Experience Fragments van AEM naar Target te duwen als HTML/JSON aanbiedingen en om de aanbiedingen gelijk te houden met AEM. *Deze integratie is vereist voor de uitvoering van scenario 1.*
 
@@ -39,7 +39,7 @@ Voor AEM klanten, die de aanbiedingen van het Fragment van de Ervaring willen ge
 * **Experience Cloud**
    * Toegang tot uw organisaties Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud voorzien van de volgende oplossingen
-      * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
+      * [Gegevensverzameling](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
       * [Adobe I/O-console](https://console.adobe.io)
 
@@ -50,7 +50,7 @@ Voor AEM klanten, die de aanbiedingen van het Fragment van de Ervaring willen ge
 
 >[!NOTE]
 >
-> De klant moet van Experience Platform Launch en Adobe I/O van worden voorzien [Ondersteuning voor Adoben](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) of reik uit uw systeembeheerder
+> De klant moet worden voorzien van gegevensverzameling en -Adobe I/O van [Ondersteuning voor Adoben](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) of reik uit uw systeembeheerder
 
 ### AEM instellen{#set-up-aem}
 
@@ -82,4 +82,4 @@ password : **admin**
 10. Nadat u de pakketten op AEM Auteur hebt geïnstalleerd, selecteert u elk geüpload pakket in AEM Package Manager en selecteert u **Meer > Repliceren** om ervoor te zorgen dat de pakketten worden geïmplementeerd om te AEM publiceren.
 11. U hebt nu de WKND-referentiesite en alle aanvullende pakketten die vereist zijn voor deze zelfstudie geïnstalleerd.
 
-[VOLGENDE HOOFDSTUK](./using-launch-adobe-io.md): In het volgende hoofdstuk integreert u Starten met AEM.
+[VOLGENDE HOOFDSTUK](./using-launch-adobe-io.md): In het volgende hoofdstuk gaat u tags integreren met AEM.

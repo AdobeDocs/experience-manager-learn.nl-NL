@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
 duration: 278
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -35,7 +35,7 @@ In deze video bespreken we drie benaderingen voor het gebruik van AEM en Doel, e
 * __Scenario 1__ Personalisatie met AEM Experience Fragment-aanbiedingen
 
    1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
-   1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
+   1. [Een Adobe Target-aanroep vanuit tags activeren](./load-and-fire-target.md)
    1. [AEM Auteursservice integreren met Adobe Target](./setup-aem-target-cloud-service.md)
    1. [Exporteer AEM ervaringsfragmenten naar Adobe Target](./export-experience-fragment-target.md)
    1. [Een deel van een webpagina aanpassen met de functie Gepresenteerde fragmentatieaanbiedingen](./create-target-activity.md)
@@ -43,11 +43,11 @@ In deze video bespreken we drie benaderingen voor het gebruik van AEM en Doel, e
 * __Scenario 2__ Personalisatie met behulp van Visual Experience Composer (VEC)
 
    1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
-   1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
+   1. [Een Adobe Target-aanroep vanuit tags activeren](./load-and-fire-target.md)
    1. [Een deel van een webpagina personaliseren met behulp van Visual Experience Composer](./personalization-using-vec.md)
 
 * __Scenario 3__ Aanpassing van de volledige webpaginabeleving
 
    1. [Adobe Target toevoegen aan uw AEM website](./add-target-launch-extension.md)
-   1. [Een Adobe Target-aanroep vanuit Launch activeren](./load-and-fire-target.md)
+   1. [Een Adobe Target-aanroep vanuit tags activeren](./load-and-fire-target.md)
    1. [De volledige webpaginabeleving aanpassen](./personalization-web-page.md)

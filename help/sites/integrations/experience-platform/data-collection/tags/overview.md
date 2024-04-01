@@ -1,6 +1,6 @@
 ---
-title: Tags voor gegevensverzameling van Experience Platforms integreren (Starten) en AEM
-description: De markeringen in de Inzameling van de Gegevens van het Experience Platform zijn de volgende-generatieoplossing van het markeringsbeheer van de Adobe en de beste manier om Adobe Analytics, Doel, Audience Manager, en vele meer oplossingen op te stellen. Bekijk een overzicht van de labels (voorheen Launch genoemd) en de aanbevolen integratie met Adobe Experience Manager.
+title: Tags integreren in Adobe Experience Platform en AEM
+description: De markeringen in de Inzameling van de Gegevens van het Experience Platform zijn de volgende-generatieoplossing van het markeringsbeheer van de Adobe en de beste manier om Adobe Analytics, Doel, Audience Manager, en vele meer oplossingen op te stellen. Bekijk een overzicht van tags in Adobe Experience Platform en de aanbevolen integratie met Adobe Experience Manager.
 solution: Experience Manager, Data Collection, Experience Platform
 jira: KT-5979
 thumbnail: 39090.jpg
@@ -14,26 +14,20 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
 duration: 256
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
 # Tags en AEM voor gegevensverzameling van Experience Platforms integreren {#overview}
 
-Leer hoe u het Experience Platform kunt integreren _Labels voor gegevensverzameling_ (voorheen bekend als Launch) met Adobe Experience Manager.
-
->[!NOTE]
->
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Adobe Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende: [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) voor een geconsolideerde referentie van de terminologische wijzigingen.
-
+Leer hoe u de tags in Adobe Experience Platform kunt integreren met Adobe Experience Manager.
 
 Tags zijn Adobe Experience Platform van de volgende generatie technologie voor tagbeheer. Tags bieden de eenvoudigste manier om Adobe Analytics, Target, Audience Manager en nog veel meer oplossingen te implementeren. Bekijk een overzicht van Tags en de aanbevolen integratie met Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
-
 
 ## Vereisten
 
@@ -49,7 +43,7 @@ Het volgende wordt vereist wanneer het integreren van de Markeringen van de Inza
 
 + Maak in Adobe Experience Platform Data Collection een Tag-eigenschap en bewerk deze naar _Regel toevoegen_. Vervolgens _Bibliotheek toevoegen_ selecteert u de zojuist toegevoegde regel, keurt u deze goed en publiceert u deze.
 + AEM en tags verbinden met behulp van bestaande (of nieuwe) IMS-configuratie
-+ In AEM maakt u een configuratie van de cloudservices voor Starten, past u deze vervolgens toe op een bestaande site en controleert u ten slotte of de eigenschap Codes en de bijbehorende bibliotheken op de site Published of Auteur zijn geladen.
++ In AEM maakt u een cloudserviceconfiguratie voor tags, past u deze vervolgens toe op een bestaande site en controleert u ten slotte of de eigenschap Tags en de bibliotheken ervan op de site Published of Auteur zijn geladen.
 
 ## Volgende stappen
 
