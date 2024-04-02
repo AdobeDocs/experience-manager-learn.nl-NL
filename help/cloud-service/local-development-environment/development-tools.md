@@ -11,9 +11,9 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3592
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 23ae098a1fcb2e6c47fee30f6f45b10e7ff97824
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -199,17 +199,34 @@ Met de insteekmodule Adobe I/O Cloud Manager kan de AIR CLI communiceren met Ado
 Als u wilt dat de Adobe I/O CLI communiceert met Cloud Manager, kunt u [Integratie van Cloud Manager moet worden gemaakt in Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager)en gegevens moeten zijn verkregen om te worden geverifieerd.
 
 1. Aanmelden bij [console.adobe.io](https://console.adobe.io)
-1. Zorg ervoor dat uw organisatie die het product Cloud Manager bevat waarmee verbinding moet worden gemaakt, actief is in de Adobe Org-switch
+1. Zorg ervoor dat uw organisatie die het product Cloud Manager bevat waarmee verbinding moet worden gemaakt, actief is in de switch van de Adobe Organisatie
 1. Een nieuwe of bestaande [Adobe I/O-programma](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md)
-   + De programma&#39;s van de Console van Adobe I/O zijn eenvoudig organisatorische groeperingen van integratie, creeer of gebruik en bestaand programma gebaseerd op hoe u uw integratie wilt beheren
+   + De projecten van de Console van Adobe I/O zijn eenvoudig organisatorische groeperingen van integratie, creeer of gebruik en bestaand project gebaseerd op hoe u uw integratie wilt beheren.
    + Als u een nieuw project maakt, selecteert u &quot;Leeg project&quot; indien hierom wordt gevraagd (vs. &quot;Maken van sjabloon&quot;)
    + Adobe I/O Console-programma&#39;s zijn verschillende concepten voor programma&#39;s van Cloud Manager
-1. Maak een nieuwe API-integratie voor Cloud Manager met het profiel &quot;Developer - Cloud Service&quot;
+1. Een nieuwe integratie met de Cloud Manager API maken
+   + Selecteer het vervangen &quot;van de Rekening van de Dienst (JWT)&quot;authentificatietype (OAuth wordt momenteel niet gesteund voor CLI).
+   + Maak of upload toetsen.
+   + Selecteer het productprofiel &quot;Developer - Cloud Service&quot;
 1. Verkrijg de geloofsbrieven van de Rekening van de Dienst (JWT) moet Adobe I/O CLI bevolken [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication)
+
+   ```json
+   //config.json 
+   {
+      "client_id": "Client ID from Service Account (JWT) credential",
+      "client_secret": "Client Secret from Service Account (JWT) credential",
+      "technical_account_id": "Technical Account ID from Service Account (JWT) credential",
+      "ims_org_id": "Organization ID from Service Account (JWT) credential",
+      "meta_scopes": [
+        "ent_cloudmgr_sdk"
+      ]
+   }
+   ```
+
 1. Laad de `config.json` bestand in de Adobe I/O CLI
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager PATH_TO_CONFIG_JSON_FILE --file --json`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager ./path/to/config.json --file --json`
 1. Laad de `private.key` bestand in de Adobe I/O CLI
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key PATH_TO_PRIVATE_KEY_FILE --file`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key ./path/to/private.key --file`
 
 Beginnen [uitvoeren, opdrachten](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) voor Cloud Manager via de Adobe I/O CLI.
 
