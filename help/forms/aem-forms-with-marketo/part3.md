@@ -10,7 +10,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
 duration: 97
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren
 1. OData-diensten
 
 Voor de integratie van AEM Forms met Marketo gebruiken we RESTful-webservices. De eerste stap in het integreren is het vormen van een [gegevensbron.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Gebruik het wagerbestand dat u opgeeft als onderdeel van deze zelfstudie. De volgende schermafbeelding toont u de belangrijke eigenschappen die moeten worden opgegeven tijdens het configureren van de gegevensbron.
-![gegevensbron](assets/datasource.jfif)
+![gegevensbron](assets/datasource.png)
 
 Het bestand &quot;marketo.json&quot; is het gumerbestand en wordt geleverd als onderdeel van de elementen van deze zelfstudie.
 De Host van het bezit is specifiek voor uw instantie van Marketo.
@@ -51,7 +51,7 @@ Wijs uw browser aan [pagina voor gegevensintegratie.](http://localhost:4502/aem/
 1. Tab naar het tabblad Services
 1. Selecteer de enige dienst die wordt vermeld en klik op de Dienst van de Test
 1. Geef een geldige leadId op en klik op Testen. Als alles goed gaat, moet u de hoofddetails terugkrijgen, zoals hieronder in de schermafbeelding wordt getoond
-   ![testresultaten](assets/testresults.jfif)
+   ![testresultaten](assets/testresults.png)
 
 ## Volgende stappen
 

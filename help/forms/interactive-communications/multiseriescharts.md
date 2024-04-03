@@ -10,7 +10,7 @@ level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 446
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 AEM Forms 6.5 introduceerde de capaciteit om veelvoudige reekskaarten tot stand te brengen en te vormen. De veelvoudige reekskaarten worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom. De volgende grafiek is een goed voorbeeld van multi reeksengrafiek. De grafiek toont de groei van USD 10.000 in 3 verschillende onderlinge fondsen over een bepaalde periode. Als u dergelijke grafieken in AEM Forms wilt maken en gebruiken, moet u het juiste formuliergegevensmodel maken.
 
-![Diagram met meerdere reeksen](assets/seriescharts.jfif)
+![Diagram met meerdere reeksen](assets/series_charts.png)
 
 Als u grafieken met meerdere reeksen wilt maken in AEM Forms, moet u een geschikt formuliergegevensmodel maken met de benodigde entiteiten en koppelingen tussen de entiteiten. In de volgende schermafbeelding worden de entiteiten en de koppelingen tussen de drie entiteiten gemarkeerd. Op het hoogste niveau hebben we een entiteit genaamd &quot;Organisatie&quot;, die een één-op-veel associatie heeft met een fondsentiteit. De fondsentiteit heeft op haar beurt een een-op-een-relatie met de prestatieentiteit.
 
-![Formuliergegevensmodel](assets/formdatamodel.jfif)
+![Formuliergegevensmodel](assets/form_data_model.png)
 
 ## Formuliergegevensmodel maken voor grafieken uit meerdere reeksen
 
