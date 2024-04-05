@@ -5,9 +5,9 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
-source-git-commit: 2be59ef6c6e42854a614722ced9b40988d9d4881
+source-git-commit: 3f30c5bc85b09e2f3bc17fa591a85cd92c811126
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,20 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 <br/>
                 Onderzoek vraagindexen en hoe te om de formules van Excel te schrijven voor het manipuleren van en het sorteren van datasets in Edge Delivery Services.
             </p>
-        </td>   
+        </td>  
+        <td>
+            <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
+                <img alt="Uw eigen CDN van Cloudflare maken" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
+                <strong>Uw eigen CDN van Cloudflare maken</strong></a>        
+                <br/><em>met James Talbot &amp; Kunwar Saluja, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>
+                Onderzoek hoe te om uw eigen CDN van het Klantflare in Edge Delivery Services te vormen.
+            </p>
+        </td>           
     </tr>  
 </table>
