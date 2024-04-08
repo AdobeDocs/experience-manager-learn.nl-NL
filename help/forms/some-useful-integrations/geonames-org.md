@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 218
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Een trapsgewijze drop-down lijst is een reeks afhankelijke controles DropDownLis
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-Voor deze zelfstudie heb ik [Geonames REST API](http://api.geonames.org/) om deze bekwaamheid aan te tonen.
+Voor deze zelfstudie heb ik [Geonames REST API](https://www.geonames.org/export/web-services.html) om deze bekwaamheid aan te tonen.
 Er zijn een aantal organisaties die dit soort service aanbieden en zolang ze beschikken over goed gedocumenteerde REST API&#39;s kunt u eenvoudig integreren met AEM Forms met behulp van de mogelijkheden voor gegevensintegratie
 
 De volgende stappen zijn uitgevoerd voor het implementeren van trapsgewijze vervolgkeuzelijsten in AEM Forms
@@ -88,7 +88,7 @@ Voeg twee vervolgkeuzelijsten met de naam provincies en steden toe in het formul
 
 U kunt de volgende middelen downloaden om een begin te maken met het maken van het trapsgewijze vervolgkeuzemenu. De voltooide wagerbestanden kunnen worden gedownload van [hier](assets/geonames-swagger-files.zip)
 De kwikbestanden beschrijven de volgende REST API
-* [Alle landen ophalen](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Onderliggende items van Geoname-object ophalen](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Alle landen ophalen](https://secure.geonames.org/countryInfoJSON?username=yourusername)
+* [Onderliggende items van Geoname-object ophalen](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
 De voltooide [Formuliergegevensmodel kan hier worden gedownload](assets/geonames-api-form-data-model.zip)

@@ -14,9 +14,9 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,7 @@ Nadat de eigenschap tag is gekoppeld, kan de WKND-site de JavaScript-bibliotheek
 
 ### Eigenschappen van tag verifiëren bij laden van WKND
 
-Adobe Experience Platform Debugger gebruiken [Chroom](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) of [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) controleren of de eigenschap tag wordt geladen op WKND-pagina&#39;s. U kunt verifiëren,
+Adobe Experience Platform Debugger gebruiken [Chroom](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) controleren of de eigenschap tag wordt geladen op WKND-pagina&#39;s. U kunt verifiëren,
 
 + Eigenschappen van tags, zoals extensie, versie, naam en meer.
 + Platform Web SDK bibliotheekversie, DataStream ID

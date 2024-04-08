@@ -13,9 +13,9 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
 duration: 279
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -44,11 +44,11 @@ Als u foutopsporing op de client wilt inschakelen, roept u de `setDebug(true)` o
 
 ## Foutopsporing via Adobe Experience Platform Debugger
 
-Adobe biedt Adobe Experience Platform Debugger [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en [Firefox-invoegtoepassing](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) om fouten op te sporen, te begrijpen en inzicht te krijgen in de integratie.
+Adobe biedt Adobe Experience Platform Debugger [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om fouten op te sporen, te begrijpen en inzicht te krijgen in de integratie.
 
 1. Open de extensie Adobe Experience Platform Debugger en open de sitepagina op de instantie Publiceren
 
-1. In de **Adobe Experience Platform Debugger > Samenvatting > Adobe Experience Platform-tags** sectie, verifieer uw de bezitsdetails van de Markering zoals Naam, Versie, Bouwstijl Datum, Milieu, en Uitbreidingen.
+2. In de **Adobe Experience Platform Debugger > Samenvatting > Adobe Experience Platform-tags** sectie, verifieer uw de bezitsdetails van de Markering zoals Naam, Versie, Bouwstijl Datum, Milieu, en Uitbreidingen.
 
    ![Eigenschappengegevens Adobe Experience Platform Debugger en label](assets/tag-property-details.png)
 

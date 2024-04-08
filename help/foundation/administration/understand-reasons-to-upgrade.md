@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 809
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '2589'
+source-wordcount: '2588'
 ht-degree: 1%
 
 ---
@@ -717,7 +717,7 @@ Hieronder ziet u een matrix van de belangrijkste elementen die door AEM worden a
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Taak</a> en <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank">Workflow</a> Beheer:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Taak</a> en workflowbeheer:</strong>
             Vooraf gebouwde workflows en taken voor het beoordelen en goedkeuren van digitale middelen met behulp van AEM Projecten.</td>
             <td> </td>
             <td>✔</td>
