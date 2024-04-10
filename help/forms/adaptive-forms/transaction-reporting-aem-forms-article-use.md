@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 81
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 0f853040911ad92aea0ebac57011e659d7f0b7c0
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
 # Transactierapportage in AEM Forms gebruiken{#using-transaction-reporting-in-aem-forms}
 
-Transactierapporten om het aantal verzonden formulieren, het weergeven van documenten met behulp van documentservices en het weergeven van interactieve communicatie (web- en afdrukkanalen) vast te leggen, zijn geïntroduceerd in AEM Forms 6.4.1. Deze mogelijkheid is momenteel alleen beschikbaar in AEM Forms OSGI-stapels.
+Transactierapporten om het aantal verzonden formulieren, het weergeven van documenten met behulp van documentservices en het weergeven van interactieve communicatie (web- en afdrukkanalen) vast te leggen, zijn geïntroduceerd in AEM Forms 6.4.1. Deze mogelijkheid is geïntroduceerd met AEM Forms 6.4.1 voor AEM Forms OSGi stack en 6.5.20 voor AEM Forms JEE stack.
 
 ## Transactierapportage inschakelen {#enabling-transaction-reporting}
 
