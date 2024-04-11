@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 3f30c5bc85b09e2f3bc17fa591a85cd92c811126
+source-git-commit: d62332374e8885e077f8227bcdec6a908c782ccc
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 5%
 
 ---
@@ -393,3 +393,4 @@ ht-degree: 5%
          + [Publiceren, publicatie van gebeurtenissen in Edge Delivery Services ongedaan maken](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Query-indexen en Excel-formules](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [Uw eigen CDN van Cloudflare maken](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
+         + [AEM Assets integreren](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)

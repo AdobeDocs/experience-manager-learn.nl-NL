@@ -5,9 +5,9 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
-source-git-commit: c0e995566aad4fceb8bf8ef12ff989f03a626d0f
+source-git-commit: d62332374e8885e077f8227bcdec6a908c782ccc
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -115,5 +115,21 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </p>
         </td>           
     </tr>  
+    <tr>
+        <td>
+            <a href="./season-3/cloud5-integrate-assets.md">
+                <img alt="AEM Assets integreren met het ontwerpen van Edge Delivery Services-documenten" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-integrate-assets.md">
+                <strong>AEM Assets integreren met het maken van documenten</strong></a>        
+                <br/><em>met James Talbot &amp; Darin Kuntze, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>
+                Ontdek hoe u AEM Assets kunt integreren met het ontwerpen van documenten.
+            </p>
+        </td>        
+    </tr>      
 </table>
 
