@@ -10,10 +10,10 @@ thumbnail: 335476.jpeg
 last-substantial-update: 2022-09-16T00:00:00Z
 exl-id: a3a9bf59-e9a2-4322-ac93-9c12c70b9a75
 duration: 492
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: a18bf2c8b57eaaac3686a26fa1fb39e6fc075af5
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 1%
+source-wordcount: '122'
+ht-degree: 0%
 
 ---
 
@@ -94,3 +94,5 @@ package com.adobe.aem.wknd.examples.core.adventures;
 
 import org.osgi.annotation.versioning.Version;
 ```
+
+Een `package-info.java` is vereist om andere bundels OSGi in AEM te verzekeren kan de OSGi de dienstinterface (of om het even welke klasse van Java) oplossen. Als de `package-info.java` ontbreekt, worden het Java-pakket en de bijbehorende Java-interfaces of -klassen niet geëxporteerd. Andere OSGi-bundels die proberen deze Java-interfaces of -klassen te importeren vanuit dit Java-pakket, zullen een fout maken met het bericht __Kan niet worden opgelost__ in AEM OSGi Bundle console.
