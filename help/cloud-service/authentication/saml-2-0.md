@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2430
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 1f9736acbbccd09cb1b32c247860827b13e85129
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3060'
 ht-degree: 0%
 
 ---
@@ -441,15 +441,6 @@ Na succesvolle authentificatie aan IDP, zal IDP een POST van HTTP terug naar AEM
 ```
 
 Als de URL die bij de Apache-webserver wordt herschreven, is geconfigureerd (`dispatcher/src/conf.d/rewrites/rewrite.rules`), ervoor te zorgen dat verzoeken aan de `.../saml_login` eindpunten worden niet per ongeluk beheerd.
-
-## Gegevenssynchronisatie inschakelen en tokens inkapselen
-
-Zodra de de authentificatiestroom van SAML tot een gebruiker in AEM leidt publiceren, verifieerbaar de AEM gebruikersknoop over de AEM Publish de dienstrij van de Dienst.
-Dit vereist [gegevenssynchronisatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization) en [ingekapselde tokens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#sticky-sessions-and-encapsulated-tokens) die door de Steun van de Adobe op de AEM Publish dienst worden toegelaten.
-
-Een verzoek verzenden naar de Adobe Klantenondersteuning (via [AdminConsole](https://adminconsole.adobe.com) > Ondersteuning) met verzoek:
-
-> De synchronisatie van gegevens en ingekapselde tokens worden toegelaten op AEM de Publish dienst voor Programma X en Milieu Y.
 
 ## SAML-configuratie implementeren
 
