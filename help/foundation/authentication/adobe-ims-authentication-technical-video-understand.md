@@ -12,9 +12,9 @@ exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
 duration: 431
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: c692ad17a27f244764e3f7c63fc49f54ae4e97e6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -40,11 +40,7 @@ Adobe Experience Manager introduceert ondersteuning voor Admin Consoles voor AEM
 
 Het toepassen van machtigingen en toegang op gebruikersniveau moet zowel in de Admin Console als in Adobe Experience Manager worden vermeden.
 
-In, zouden de gebruikers van de Admin Console via Gebruikersgroepen op het niveau van de Context van het Product toegang moeten worden verleend. Gebruikersgroepen worden meestal het best uitgedrukt door de logische rol binnen de organisatie om de herbruikbaarheid van de groepen in Adobe Experience Cloud-producten te bevorderen.
-
->[!NOTE]
->
-> Als u AEM as a Cloud Service gebruikt, wijst u de gebruikers van de Admin Console rechtstreeks toe aan productprofielen. Overgangsmachtigingen tussen gebruikers van Admin Consoles naar productprofielen via gebruikersgroepen van Admin Consoles worden niet ondersteund voor AEM as a Cloud Service.
+In Admin Console, zouden de gebruikers via Gebruikersgroepen op het niveau van de Context van het Product toegang moeten worden verleend. Gebruikersgroepen worden meestal het best uitgedrukt door de logische rol binnen de organisatie om de herbruikbaarheid van de groepen in Adobe Experience Cloud-producten te bevorderen.
 
 ### Machtigingen toepassen in Adobe Experience Manager
 
