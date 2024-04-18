@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 626
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 7f0f4d1b739cb63b96afc08eb31ab72a507c4722
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -218,6 +218,8 @@ Deze keer ziet u er veel **Geblokkeerde aanvragen** en corresponderende waarden 
 Ook de **De hoogste 100 aanvallen door cliëntIP, land, en gebruiker-agent** de panelen tonen extra details, die kunnen worden gebruikt om de regelconfiguratie verder te optimaliseren.
 
 ![Dashboard DoS Top 100 van ELK-hulpprogramma](./assets/elk-tool-dashboard-dos-top-100.png)
+
+Voor meer informatie over hoe te om aanvallen van Dos en van DDoS te verhinderen, herzie [Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter](../dos/blocking-dos-attack-using-traffic-filter-rules.md) zelfstudie.
 
 ### WAF-regels
 
