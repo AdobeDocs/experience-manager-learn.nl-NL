@@ -12,7 +12,7 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 626
-source-git-commit: 9af60e1d45eb4569e05ba135fec43e4c744b2a0d
+source-git-commit: 2ab958f672b0d5b029bcdf7937b2f72d43ba651f
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
@@ -219,7 +219,7 @@ Ook de **De hoogste 100 aanvallen door cliëntIP, land, en gebruiker-agent** de 
 
 ![Dashboard DoS Top 100 van ELK-hulpprogramma](./assets/elk-tool-dashboard-dos-top-100.png)
 
-Voor meer informatie over hoe te om aanvallen van Dos en van DDoS te verhinderen, herzie [Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter](../dos/blocking-dos-attack-using-traffic-filter-rules.md) zelfstudie.
+Voor meer informatie over hoe te om aanvallen van Dos en van DDoS te verhinderen, herzie [Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter](../blocking-dos-attack-using-traffic-filter-rules.md) zelfstudie.
 
 ### WAF-regels
 
