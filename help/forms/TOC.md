@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
+source-git-commit: eb4463ae0270725c5b0bd96e9799bada25b06303
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2059'
 ht-degree: 1%
 
 ---
@@ -105,6 +105,10 @@ ht-degree: 1%
    + [HTML5-Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Formuliergegevensmodel met Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Items dynamisch aan keuzeselectie-component toevoegen](adaptive-forms/choice-group-items-adding-dynamically-article.md)
++ Een PDF-formulier vullen met ChatBot{#chatbot-and-aem-forms}
+   + [1 - Inleiding](chatbot-and-aem-forms/introduction.md)
+   + [2 - Parse ChatBot-gegevens](chatbot-and-aem-forms/parse-chat-bot-data.md)
+   + [3 - PDF maken](chatbot-and-aem-forms/merge-data-with-template.md)
 + Op kerncomponenten gebaseerde formulieren{#core-component-based-forms}
    + [Toegang tot formuliergegevens via GuideBridge API](core-components/submit-data-using-guidebridge-api.md)
 + DAM-mapinhoud selecteren en samenstellen{#select-dam-folder-content}
