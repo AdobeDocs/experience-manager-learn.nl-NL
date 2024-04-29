@@ -9,9 +9,10 @@ level: Intermediate
 jira: KT-13757
 thumbnail: xx.jpg
 doc-type: Tutorial
-source-git-commit: 3b500873ee7307df590ac66dea541a1adf14d726
+exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
+source-git-commit: 03cb7ef0cf79a21ec1b96caf6c11e6f5119f777c
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -42,15 +43,14 @@ Metagegevens gestuurde machtigingen implementeren:
    ```json
    {
      "restrictionPropertyNames":[
-       "status"
+       "status",
+       "brand"
      ],
-     "restrictionPaths":[
-       "/content/dam"
-     ]
+     "enabled":true
    }
    ```
 
-1. Vervang de namen van eigenschappen en restrictiepaden door de vereiste waarden.
+1. Vervang de eigenschapsnamen door de vereiste waarden.
 
 
 Alvorens op beperking-gebaseerde Ingangen van het Toegangsbeheer toe te voegen, zou een nieuwe top-level ingang moeten worden toegevoegd om gelezen toegang tot alle groepen eerst te ontkennen die aan toestemmingsevaluatie voor Activa (b.v. &quot;contribuanten&quot;of gelijkaardig) onderworpen zijn:
