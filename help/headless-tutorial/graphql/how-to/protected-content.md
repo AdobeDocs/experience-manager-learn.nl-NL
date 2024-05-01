@@ -7,18 +7,24 @@ feature: GraphQL API
 role: Developer, Architect
 level: Intermediate
 jira: KT-15233
-last-substantial-update: 2024-04-01T00:00:00Z
-source-git-commit: c498783aceaf3bb389baaeaeefbe9d8d0125a82e
+last-substantial-update: 2024-05-01T00:00:00Z
+exl-id: c4b093d4-39b8-4f0b-b759-ecfbb6e9e54f
+source-git-commit: a3d2b2343269d2cfc7cecc5817ef1e07a66a88d3
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
 
-
 # Inhoud in AEM zonder kop beschermen
 
 Het is van cruciaal belang dat u de integriteit en beveiliging van uw gegevens waarborgt wanneer u AEM inhoud zonder koppen vanuit AEM Publiceren aanbiedt. Zo kunt u de inhoud die wordt aangeboden door AEM GraphQL API-eindpunten zonder koppen beveiligen.
+
+De leidraad in deze zelfstudie waar strenge eisen gelden voor inhoud die uitsluitend beschikbaar moet zijn voor specifieke gebruikers of gebruikersgroepen. Er moet een onderscheid worden gemaakt tussen gepersonaliseerde marketinginhoud en particuliere inhoud, zoals PII of persoonlijke financiële gegevens, om verwarring en onbedoelde resultaten te voorkomen. Deze zelfstudie behandelt het beschermen van persoonlijke inhoud.
+
+Bij het bespreken van marketinginhoud hebben we het over inhoud die is toegesneden op individuele gebruikers of groepen, en die niet bestemd is voor algemene consumptie. Het is echter van essentieel belang om te begrijpen dat deze inhoud weliswaar op bepaalde gebruikers is gericht, maar dat de blootstelling buiten de beoogde context (bijvoorbeeld door het manipuleren van HTTP-aanvragen) geen risico voor de beveiliging, de wet of de reputatie oplevert.
+
+Benadrukt wordt dat alle inhoud die in dit artikel wordt besproken, als privé wordt beschouwd en alleen door aangewezen gebruikers of groepen kan worden bekeken. Marketing-inhoud vereist vaak geen bescherming, maar de levering ervan aan specifieke gebruikers kan door de toepassing worden beheerd en in cache worden geplaatst voor prestaties.
 
 Deze Hoe kan ik-onderwerpen bestrijken niet:
 
@@ -114,4 +120,3 @@ Merk op dat dit een prestatiesboete zal veroorzaken aangezien de inhoud niet doo
 ## Beveiliging van eindpunten van de GraphQL API zonder koppen
 
 In deze handleiding wordt het beveiligen van de [AEM GraphQL API-eindpunten zonder koppen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint) zelf, maar vooral om de inhoud te beveiligen die hen ten goede komt. Alle gebruikers, inclusief anonieme gebruikers, hebben toegang tot de eindpunten die beveiligde inhoud bevatten. Alleen de inhoud die toegankelijk is voor de gesloten gebruikersgroepen van de gebruiker, wordt geretourneerd. Als er geen inhoud toegankelijk is, heeft de AEM Headless API-respons nog steeds een 200 HTTP-antwoordstatuscode, maar zijn de resultaten leeg. Doorgaans is het beveiligen van de inhoud voldoende, omdat de eindpunten zelf vertrouwelijke gegevens niet intrinsiek toegankelijk maken. Als u de eindpunten moet beveiligen, pas ACLs op hen op AEM toe publiceren via [Scripts voor initialisatie van opslagplaats (repoint-it)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
-
