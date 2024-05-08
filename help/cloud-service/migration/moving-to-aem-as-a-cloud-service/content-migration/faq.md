@@ -11,9 +11,9 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 569
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85d516d57d818d23372ab7482d25e33242ef0426
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '1884'
 ht-degree: 0%
 
 ---
@@ -77,22 +77,6 @@ De hoeveelheid middelen die het CTT-extractieproces nodig heeft, is afhankelijk 
 
 Als kloonomgevingen worden gebruikt voor migratie, heeft dit geen invloed op het gebruik van bronnen voor live productieservers, maar heeft het zijn eigen nadelen voor het synchroniseren van inhoud tussen live productie en kloon
 
-### Q: In mijn systeem van de bronauteur, hebben wij SSO voor de gebruikers wordt gevormd om in de instantie van de Auteur voor authentiek te verklaren. Moet ik de eigenschap van de Toewijzing van de Gebruiker van CTT in dit geval gebruiken?
-
-Het korte antwoord is: &quot;**Ja**&quot;.
-
-De CTT-extractie en -inname **zonder** Door de gebruiker alleen de inhoud toe te wijzen, worden de bijbehorende beginselen (gebruikers, groepen) van bron AEM naar AEMaaCS gemigreerd. Maar deze gebruikers (id&#39;s) in Adobe IMS moeten toegang hebben (voorzien van) tot AEMaaCS-instantie om de verificatie te voltooien. De taak van [gereedschap voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) moet de lokale AEM gebruiker aan Gebruiker IMS in kaart brengen zodat de authentificatie en de vergunningen samenwerken.
-
-In dit geval is de SAML-identiteitsprovider geconfigureerd tegen Adobe IMS voor het gebruik van Federated / Enterprise ID in plaats van rechtstreeks voor het AEM met behulp van de verificatiehandler.
-
-### Q: In mijn systeem van de bronauteur, hebben wij basisauthentificatie die voor de gebruikers wordt gevormd om in de instantie van de Auteur met lokale AEM gebruikers voor authentiek te verklaren. Moet ik de eigenschap van de Toewijzing van de Gebruiker van CTT in dit geval gebruiken?
-
-Het korte antwoord is: &quot;**Ja**&quot;.
-
-De CTT-extractie en -opname zonder gebruikerstoewijzing migreert de inhoud, de bijbehorende beginselen (gebruikers, groepen) van bron AEM naar AEMaaCS. Maar deze gebruikers (id&#39;s) in Adobe IMS moeten toegang hebben (voorzien van) tot AEMaaCS-instantie om de verificatie te voltooien. De taak van [gereedschap voor gebruikerstoewijzing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) moet de lokale AEM gebruiker aan Gebruiker IMS in kaart brengen zodat de authentificatie en de vergunningen samenwerken.
-
-In dit geval gebruiken de gebruikers persoonlijke Adobe ID en wordt de Adobe ID door IMS-beheerder gebruikt om toegang te verlenen tot AEMaaCS.
-
 ### Q: Wat betekenen de termen &quot;veeggen&quot; en &quot;overschrijven&quot; in de context van CTT?
 
 In de context van [extractiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase)De opties zijn of om de gegevens in de testcontainer van vorige extractiecycli te overschrijven of het differentieel (toegevoegd/bijgewerkt/verwijderd) in de container toe te voegen. De container van het opvoeren is niets, maar de blob opslagcontainer verbonden aan migratiereeks. Elke migratieset krijgt een eigen staging container.
@@ -107,6 +91,7 @@ Ja, dat is mogelijk, maar er is een zorgvuldige planning nodig met betrekking to
    + Verifieer of het aanvaardbaar is om alle activa als deel van één migratiereeks te migreren en dan plaatsen te brengen die hen in fasen gebruiken
 + In de huidige staat maakt het auteursinvoerproces de auteursinstantie voor inhoudcreatie onbeschikbaar alhoewel de publicatielaag nog de inhoud kan dienen
    + Dit betekent dat de activiteiten voor het schrijven van inhoud worden bevroren totdat de opname is voltooid
++ Gebruikers worden niet meer gemigreerd, hoewel groepen
 
 Controleer het extractie- en innameproces voor de top-up zoals beschreven voordat u de migraties plant.
 
@@ -160,7 +145,6 @@ Het proces CTT vereist connectiviteit aan de hieronder middelen:
 
 + Doel AEM as a Cloud Service omgeving: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
-+ Het eindpunt van de Toewijzing van de Gebruiker IO: `usermanagement.adobe.io`
 
 Raadpleeg de documentatie voor meer informatie over [bronconnectiviteit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
 
@@ -198,7 +182,7 @@ Als het aantal elementen/knooppunten in de bronomgeving zich op een lager niveau
 + Doorgaan met werken aan on-premise / AMS Prod-auteur
 + Voer vanaf nu alle andere proefdrukken van migratiecycli uit met `wipe=true`
    + Merk op deze verrichting migreert volledige knooppuntenopslag, maar slechts gewijzigde vlekken in tegenstelling tot volledige vlekken. De vorige set lobs is te vinden in de Azure blob store van de AEMaaCS-doelinstantie.
-   + Gebruik dit bewijs van migraties voor het meten van de migratieduur, gebruikerstoewijzing, tests, validatie van alle andere functies
+   + Gebruik dit bewijs van migraties voor het meten van de migratieduur, het testen en valideren van alle andere functies
 + Tot slot, vóór de week van go-live, voer vepe=ware migratie uit
    + De Dynamic Media aansluiten op AEMaaCS
    + Verbinding met DM-config van AEM bron op locatie verbreken
