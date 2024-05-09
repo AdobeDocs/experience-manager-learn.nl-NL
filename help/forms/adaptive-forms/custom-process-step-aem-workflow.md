@@ -1,6 +1,6 @@
 ---
 title: Aangepaste processtap implementeren
-description: Aangepaste formulierbijlagen naar bestandssysteem schrijven met behulp van een stap voor aangepast proces
+description: Aangepaste formulierbijlagen naar het bestandssysteem schrijven met behulp van een aangepaste processtap
 feature: Workflow
 version: 6.5
 topic: Development
@@ -9,18 +9,18 @@ level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 226
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 7ebc33932153cf024e68fc5932b7972d9da262a7
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
 
 # Aangepaste processtap
 
-Deze zelfstudie is bedoeld voor AEM Forms-klanten die aangepaste processtappen moeten implementeren. Een processtap kan ECMA-script uitvoeren of aangepaste Java-code aanroepen om bewerkingen uit te voeren. Dit leerprogramma zal de stappen verklaren nodig om WorkflowProcess uit te voeren dat door de processtap wordt uitgevoerd.
+Deze zelfstudie is bedoeld voor AEM Forms-klanten die een aangepaste processtap moeten implementeren. Een processtap kan een ECMA-script uitvoeren of aangepaste Java™-code aanroepen om bewerkingen uit te voeren. Dit leerprogramma zal de stappen verklaren nodig om WorkflowProcess uit te voeren dat door de processtap wordt uitgevoerd.
 
-De belangrijkste reden voor het uitvoeren van de stap van het douaneproces is de AEMWerkstroom uit te breiden. Als u bijvoorbeeld AEM Forms-componenten in uw workflowmodel gebruikt, kunt u de volgende bewerkingen uitvoeren
+De belangrijkste reden voor het uitvoeren van een stap van het douaneproces is het uitbreiden van het AEMWerkschema. Als u bijvoorbeeld AEM Forms-componenten in uw workflowmodel gebruikt, kunt u de volgende bewerkingen uitvoeren
 
 * De adaptieve formulierbijlage(s) opslaan naar het bestandssysteem
 * De ingediende gegevens bewerken
@@ -29,24 +29,30 @@ Om het bovengenoemde gebruikscase te verwezenlijken, zult u typisch een dienst O
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemodelleerd project met de juiste Adobe Maven Archetype. De gedetailleerde stappen worden in dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemodelleerd project met de juiste Adobe Maven Archetype. De gedetailleerde stappen worden in dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw Geweven project hebt die in Eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
 
-Open het beproefde project in uw eclipse winde. Uitbreiden **projectnaam** > **kern** map. Vouw de map src/main/java uit. U moet een pakket zien dat eindigt met &quot;core&quot;. Maak een Java-klasse die WorkflowProcess in dit pakket implementeert. U moet de uitvoeringsmethode overschrijven. De handtekening van de uitvoeringsmethode is als volgt openbare void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) genereert WorkflowException De methode execute geeft toegang tot de volgende drie variabelen
+Open het Geweven project in uw winde van de Verduistering. Uitbreiden **projectnaam** > **kern** map. Breid uit `src/main/java` map. U moet een pakket zien dat eindigt met `core`. Maak een Java™-klasse die WorkflowProcess in dit pakket implementeert. U moet de uitvoeringsmethode overschrijven. De uitvoeringsmethode is als volgt ondertekend:
+
+```java
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException 
+```
+
+De methode execute geeft toegang tot de volgende drie variabelen:
 
 **WorkItem**: De variabele workItem geeft toegang tot gegevens die betrekking hebben op de workflow. De openbare API-documentatie is beschikbaar [hier.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Deze workflowvariabele geeft u de mogelijkheid om de workflow te beheren. De openbare API-documentatie is beschikbaar [hier](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**: Deze workflowvariabele geeft u de mogelijkheid om de workflow te beheren. De openbare API-documentatie is beschikbaar [hier](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
 
 **MetaDataMap**: Alle metagegevens die aan de workflow zijn gekoppeld. Alle procesargumenten die aan de processtap worden doorgegeven, zijn beschikbaar via het object MetaDataMap.[API-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
 In deze zelfstudie gaan we de bijlagen die zijn toegevoegd aan Adaptief formulier naar het bestandssysteem schrijven als onderdeel van de AEM workflow.
 
-Voor dit gebruik is de volgende Java-klasse geschreven
+Voor dit gebruik is de volgende Java™-klasse geschreven
 
-Laten we eens naar deze code kijken
+Laten we deze code bekijken
 
 ```java
 package com.learningaemforms.adobe.core;
@@ -127,7 +133,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
             }
 ```
 
-Regel 1 - bepaalt de eigenschappen voor onze component. Het process.label bezit is wat u zult zien wanneer het associëren van component OSGi met de processtap zoals aangetoond in één van de hieronder screenshots.
+Regel 1 - bepaalt de eigenschappen voor onze component. De `process.label` bezit is wat u wanneer het associëren van component OSGi met de processtap zoals aangetoond in één van de hieronder screenshots zult zien.
 
 Lijnen 13-15 - De procesargumenten die tot deze component OSGi worden overgegaan zijn verdeeld gebruikend &quot;,&quot;separator. De waarden voor attachPath en saveToLocation worden dan gehaald uit de koordserie.
 
@@ -139,12 +145,12 @@ Deze twee waarden worden doorgegeven als procesargumenten, zoals in de onderstaa
 
 ![ProcessStep](assets/implement-process-step.gif)
 
-De dienst QueryBuilder wordt gebruikt aan vraagknopen van type nt:dossier onder de omslag attachmentsPath. De rest van de code doorloopt de zoekresultaten om een object Document te maken en op te slaan in het bestandssysteem
+De dienst QueryBuilder wordt gebruikt aan vraagknopen van type `nt:file` onder de map attachmentsPath. De rest van de code doorloopt de zoekresultaten om een object Document te maken en op te slaan in het bestandssysteem.
 
 
 >[!NOTE]
 >
->Aangezien wij het voorwerp van het Document gebruiken dat voor AEM Forms specifiek is, wordt het vereist dat u aemfd-cliënt-sdk gebiedsdeel in uw beven project omvat. De groep-id is com.adobe.aemfd en de artifact-id is aemfd-client-sdk.
+>Aangezien wij een voorwerp van het Document gebruiken dat voor AEM Forms specifiek is, wordt het vereist dat u de aemfd-cliënt-sdk gebiedsdeel in uw gegeven project omvat. De groep-id is `com.adobe.aemfd` en artefacten-id is `aemfd-client-sdk`.
 
 #### Samenstellen en implementeren
 
