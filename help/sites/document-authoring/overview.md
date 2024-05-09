@@ -11,9 +11,9 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: a0fdc061d231fb68fa9bd11440d344be9701eca2
+source-git-commit: 43a8b1eb7e714b27972c0ea2b1327ab8db044d25
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '915'
 ht-degree: 0%
 
 ---
@@ -700,6 +700,262 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
           </div>
         </div>
       </div>
+    </div>
+    <!-- Using Adobe Target Audiences for Generate Variations -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Using Adobe Target audiences for Generate Variations" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/using-target-audiences-in-generate-variations.md" title="Adobe Target-publiek gebruiken voor het genereren van variaties"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428792/?format=jpeg"
+                alt="Adobe Target-publiek gebruiken voor het genereren van variaties">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/using-target-audiences-in-generate-variations.md" title="Adobe Target-publiek gebruiken voor het genereren van variaties">Adobe Target-publiek gebruiken voor het genereren van variaties</a>
+            </p>
+            <p class="is-size-6">Ontdek hoe u het Adobe Target-publiek kunt gebruiken om het juiste publiek te kiezen voor verschillende inhoud.</p>
+            <a href="./how-to/using-target-audiences-in-generate-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Using audience CSV files for Generate Variations -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Using audience CSV files for Generate Variations" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/using-audiences-csv-file-in-generate-variations.md" title="CSV-bestanden voor gebruikers gebruiken om variaties te genereren"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428793/?format=jpeg"
+                alt="CSV-bestanden voor gebruikers gebruiken om variaties te genereren">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/using-audiences-csv-file-in-generate-variations.md" title="CSV-bestanden voor gebruikers gebruiken om variaties te genereren">CSV-bestanden voor gebruikers gebruiken om variaties te genereren</a>
+            </p>
+            <p class="is-size-6">Onderzoek hoe te om publiekCSV dossiers te gebruiken om het juiste publiek voor uw inhoudvariaties te richten.</p>
+            <a href="./how-to/using-audiences-csv-file-in-generate-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>   
+    <!-- Use Adobe Firefly to create images -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Use Adobe Firefly to create images for Generate Variations" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/using-adobe-firefly-for-images-in-generate-variations.md" title="Adobe Firefly gebruiken om afbeeldingen te maken voor het genereren van variaties"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
+                alt="Adobe Firefly gebruiken om afbeeldingen te maken voor het genereren van variaties">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/using-adobe-firefly-for-images-in-generate-variations.md" title="Adobe Firefly gebruiken om afbeeldingen te maken voor het genereren van variaties">Adobe Firefly gebruiken om afbeeldingen te maken voor het genereren van variaties</a>
+            </p>
+            <p class="is-size-6">Ontdek hoe u Adobe Firefly kunt gebruiken om afbeeldingen te maken voor verschillende inhoud.</p>
+            <a href="./how-to/using-adobe-firefly-for-images-in-generate-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Generate Variations Actions -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Generative Variation actions" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/generate-variations-actions.md" title="Handelingen voor generatieve variatie"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428795/?format=jpeg"
+                alt="Handelingen voor generatieve variatie">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/generate-variations-actions.md" title="Handelingen voor generatieve variatie">Handelingen voor generatieve variatie</a>
+            </p>
+            <p class="is-size-6">Onderzoek de acties die op een geproduceerde variatie kunnen worden gebruikt</p>
+            <a href="./how-to/generate-variations-actions.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>    
+    <!-- Customizing prompts using metadata -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Customizing prompts using metadata" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/customizing-prompts-using-metadata.md" title="Vragen aanpassen met behulp van metagegevens"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
+                alt="Vragen aanpassen met behulp van metagegevens">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/customizing-prompts-using-metadata.md" title="Vragen aanpassen met behulp van metagegevens">Vragen aanpassen met behulp van metagegevens</a>
+            </p>
+            <p class="is-size-6">Het gebruik van metagegevens in aangepaste vragen verkennen</p>
+            <a href="./how-to/customizing-prompts-using-metadata.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Trust and privacy in Generative AI -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Trust and privacy in Generative AI" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/generate-variations-trust-privacy.md" title="Vertrouwen en privacy in Generative AI"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429060/?format=jpeg"
+                alt="Vertrouwen en privacy in Generative AI">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/generate-variations-trust-privacy.md" title="Vertrouwen en privacy in Generative AI">Vertrouwen en privacy in Generative AI</a>
+            </p>
+            <p class="is-size-6">Verkennen hoe de Adobe vertrouwen en privacy in het gebruik van Generative AI behandelt</p>
+            <a href="./how-to/generate-variations-trust-privacy.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Overview of experimentation framework -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Overview of experimentation framework" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/experimentation-framework.md" title="Overzicht van het kader voor experimenten"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429061/?format=jpeg"
+                alt="Overzicht van het kader voor experimenten">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/experimentation-framework.md" title="Overzicht van het kader voor experimenten">Overzicht van het kader voor experimenten</a>
+            </p>
+            <p class="is-size-6">Onderzoek het experimentatiekader dat marketers toestaat om te testen welke inhoudvariaties het meest effectief zijn.</p>
+            <a href="./how-to/experimentation-framework.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>                        
+    <!-- Setup experimentation framework -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Setting up experimentation framework" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/setup-experimentation-framework.md" title="Vaststelling van een kader voor experimenten"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429062/?format=jpeg"
+                alt="Vaststelling van een kader voor experimenten">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minuten</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/setup-experimentation-framework.md" title="Vaststelling van een kader voor experimenten">Vaststelling van een kader voor experimenten</a>
+            </p>
+            <p class="is-size-6">Ontdek hoe u het kader voor experimenten in Edge Delivery Services kunt instellen.</p>
+            <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">De video bekijken</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>                            
   </div>
 
