@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: eb4463ae0270725c5b0bd96e9799bada25b06303
+source-git-commit: 81026b569ae0dc9976f714715682448a41d9f8bc
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 1%
    + [PDF-formulier converteren naar adaptief formulier](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Geconverteerd adaptief formulier configureren](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [XDP-sjablonen gebruiken met Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
+   + [Acrobat Sign-helpermethoden gebruiken](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
 + Meerdere Forms ondertekenen{#sign-multiple-documents}
    + [1 - Inleiding](sign-multiple-documents/introduction.md)
    + [2 - Gegevensbron configureren](sign-multiple-documents/configure-data-source.md)
