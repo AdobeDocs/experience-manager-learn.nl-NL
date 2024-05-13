@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 5f2415b45a99a92c6e2b72dfc80d47f6f899c7ad
+source-git-commit: 14767141348d3d56c154704cc21d39722bb67aec
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1196'
 ht-degree: 5%
 
 ---
@@ -112,6 +112,11 @@ ht-degree: 5%
       + [Hoe kan ik-instellingen](./developing/rde/how-to-setup.md)
       + [Hoe wordt het gebruikt](./developing/rde/how-to-use.md)
       + [Levenscyclus van ontwikkeling](./developing/rde/development-life-cycle.md)
+   + Universele editor{#universal-editor}
+      + Toepassingen bewerken{#react-app-editing}
+         + [Overzicht](./developing/universal-editor/react-app/overview.md)
+         + [Instelling voor lokale ontwikkeling](./developing/universal-editor/react-app/local-development-setup.md)
+         + [Instrument React App](./developing/universal-editor/react-app/instrument-to-edit-content.md)
    + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Foutopsporing AEM{#debugging}
    + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
