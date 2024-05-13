@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 131008cfeb41789582bf821b724f996b7fb6fabb
+source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 5%
+source-wordcount: '532'
+ht-degree: 6%
 
 ---
 
@@ -36,19 +36,20 @@ ht-degree: 5%
       + [Alternatieve tekst voor afbeelding](./document-authoring/how-to/image-alt-text.md)
       + [Indexering van zoekprogramma&#39;s voorkomen](./document-authoring/how-to/no-index.md)
       + [Responsieve navigatie](document-authoring/how-to/responsive-navigation.md)
-      + [Variaties genereren](./document-authoring/how-to/generate-variations.md)
-      + [Sidekick configureren voor het genereren van variaties](./document-authoring/how-to/generate-variations-sidekick-config.md)
-      + [GenAI-promptsjablonen](./document-authoring/how-to/prompt-templates-for-content-variations.md)
-      + [Aangepaste snelle sjablonen voor GenAI](./document-authoring/how-to/custom-prompt-templates.md)
-      + [GenAI-bestanden opslaan aangepaste snelle sjablonen](./document-authoring/how-to/save-custom-prompt-template.md)
-      + [Doelpubliek voor genereren variatie](./document-authoring/how-to/using-target-audiences-in-generate-variations.md)
-      + [CSV-bestand voor publiek zoeken naar variatie genereren](./document-authoring/how-to/using-audiences-csv-file-in-generate-variations.md)
-      + [Adobe Firefly voor variatie genereren](./document-authoring/how-to/using-adobe-firefly-for-images-in-generate-variations.md)
-      + [Handelingen voor generatieve variatie](./document-authoring/how-to/generate-variations-actions.md)
-      + [Vragen aanpassen met behulp van metagegevens](./document-authoring/how-to/customizing-prompts-using-metadata.md)
-      + [GenAI-vertrouwen en privacy](./document-authoring/how-to/generate-variations-trust-privacy.md)
+      + Variaties genereren{#generate-variations}
+         + [Overzicht](./document-authoring/how-to/generate-variations/overview.md)
+         + [Sidekick configureren](./document-authoring/how-to/generate-variations/configure-sidekick.md)
+         + [Sjablonen vragen](./document-authoring/how-to/generate-variations/prompt-templates.md)
+         + [Aangepaste snelle sjablonen](./document-authoring/how-to/generate-variations/custom-prompt-templates.md)
+         + [Aangepaste promptsjablonen opslaan](./document-authoring/how-to/generate-variations/save-custom-prompt-template.md)
+         + [Adobe Target-publiek](./document-authoring/how-to/generate-variations/using-target-audiences.md)
+         + [Bestemming CSV-bestand](./document-authoring/how-to/generate-variations/using-csv-file-audiences.md)
+         + [Adobe Firefly](./document-authoring/how-to/generate-variations/using-adobe-firefly-for-images.md)
+         + [Handelingen](./document-authoring/how-to/generate-variations/actions.md)
+         + [Vertrouwen en privacy](./document-authoring/how-to/generate-variations/trust-privacy.md)
       + [Experimentenkader](./document-authoring/how-to/experimentation-framework.md)
       + [Onderzoekskader instellen](./document-authoring/how-to/setup-experimentation-framework.md)
+      + [Metagegevens voor experimenten](./document-authoring/how-to/experimentation-add-metadata.md)
 + Pagina&#39;s ontwerpen {#page-authoring}
    + [Authoring](page-authoring/aem-sites-authoring-overview.md)
    + [Navigatie](page-authoring/basic-handling-sites-feature-video-use.md)
