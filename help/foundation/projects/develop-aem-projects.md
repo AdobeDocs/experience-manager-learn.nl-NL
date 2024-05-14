@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1603
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: b778fa9334d70b61b0d0fa31b6c62ac03490b11e
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Deze zelfstudie doorloopt de code die nodig is om een aangepaste projectsjabloon
 * [Pakket met voltooide zelfstudies](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Volledige gegevensopslagruimte voor code op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Deze zelfstudie gaat uit van enige basiskennis van [Ontwikkelingspraktijken AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) en enige kennis van [AEM Maven project instellen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Alle vermelde code is bedoeld als referentie en mag alleen worden geïmplementeerd op een [instantie voor lokale ontwikkeling AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Deze zelfstudie gaat uit van enige basiskennis van [Ontwikkelingspraktijken AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) en enige kennis van [AEM Maven project instellen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). Alle vermelde code is bedoeld als referentie en mag alleen worden geïmplementeerd op een [instantie voor lokale ontwikkeling AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Structuur van een projectsjabloon
 
@@ -129,7 +129,7 @@ Omdat wij hoofdzakelijk knopen kopiëren/vormen, zullen wij CRXDE Lite gebruiken
    1. Een nieuwe toevoegen **nt:ongestructureerd** knooppunt onder authoring-project/gadgets **taken**.
    1. Tekenreekseigenschappen toevoegen aan het taakknooppunt voor **cardWeight** = &quot;100&quot;, **jcr:titel**=&quot;Taken&quot;, en **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Nu de [Taken](https://experienceleague.adobe.com/docs/#Tasks) wordt standaard weergegeven wanneer een nieuw project wordt gemaakt.
+   Nu de [Taken](https://experienceleague.adobe.com/en/docs) wordt standaard weergegeven wanneer een nieuw project wordt gemaakt.
 
    ```shell
    ../projects/templates/authoring-project
@@ -629,13 +629,13 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
 
 1. In CRXDE-Lite zullen wij een subomslag onder creëren `/apps/aem-guides/projects-tasks/projects` map genaamd &quot;wizards&quot;. Kopieer de standaardwizard van: `/libs/cq/core/content/projects/workflowwizards/default_workflow` onder de nieuwe wizards omslag en noem het anders aan **inhouds-goedkeuring-start**. Het volledige pad moet nu zijn: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   De standaardwizard is een wizard met twee kolommen en de eerste kolom bevat Titel, Beschrijving en Miniatuur van het workflowmodel geselecteerd. De tweede kolom bevat velden voor de titel van de workflow, Opmerking starten en Pad loonbelasting. De wizard is een standaardaanraakinterface-formulier en maakt gebruik van de standaard [Graniet UI-formuliercomponenten](https://experienceleague.adobe.com/docs/) om de velden te vullen.
+   De standaardwizard is een wizard met twee kolommen en de eerste kolom bevat Titel, Beschrijving en Miniatuur van het workflowmodel geselecteerd. De tweede kolom bevat velden voor de titel van de workflow, Opmerking starten en Pad loonbelasting. De wizard is een standaardaanraakinterface-formulier en maakt gebruik van de standaard [Graniet UI-formuliercomponenten](https://experienceleague.adobe.com/en/docs) om de velden te vullen.
 
    ![wizard voor inhoudsgoedkeuring](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. Er wordt een extra veld aan de wizard toegevoegd dat wordt gebruikt om de toewijzing van de eerste taak in de workflow in te stellen (zie [Het workflowmodel maken](#create-workflow-model): Stap 5).
 
-   Beneath `../content-approval-start/jcr:content/items/column2/items` een nieuw knooppunt van het type maken `nt:unstructured` benoemd **&quot;assign&quot;**. Wij zullen de component van de Plukker van de Gebruiker van Projecten gebruiken (die van wordt gebaseerd [Graniet-gebruikerskiezercomponent](https://experienceleague.adobe.com/docs/)). Met dit formulierveld kunt u eenvoudig de selectie van gebruikers en groepen beperken tot gebruikers die tot het huidige project behoren.
+   Beneath `../content-approval-start/jcr:content/items/column2/items` een nieuw knooppunt van het type maken `nt:unstructured` benoemd **&quot;assign&quot;**. Wij zullen de component van de Plukker van de Gebruiker van Projecten gebruiken (die van wordt gebaseerd [Graniet-gebruikerskiezercomponent](https://experienceleague.adobe.com/en/docs)). Met dit formulierveld kunt u eenvoudig de selectie van gebruikers en groepen beperken tot gebruikers die tot het huidige project behoren.
 
    Hieronder ziet u de XML-weergave van de **toewijzen** knooppunt:
 
@@ -655,7 +655,7 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
 
 1. Er wordt ook een prioritair selectieveld toegevoegd dat de prioriteit van de eerste taak in de workflow bepaalt (zie [Het workflowmodel maken](#create-workflow-model): Stap 5).
 
-   Beneath `/content-approval-start/jcr:content/items/column2/items` een nieuw knooppunt van het type maken `nt:unstructured` benoemd **prioriteit**. We gebruiken de [Graniet UI-component selecteren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) om het formulierveld te vullen.
+   Beneath `/content-approval-start/jcr:content/items/column2/items` een nieuw knooppunt van het type maken `nt:unstructured` benoemd **prioriteit**. We gebruiken de [Graniet UI-component selecteren](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) om het formulierveld te vullen.
 
    Onder de **prioriteit** knooppunt waaraan we een **items** knooppunt van **nt:ongestructureerd**. Onder de **items** Voeg nog drie knooppunten toe om de selectieopties voor Hoog, Normaal en Laag te vullen. Elk knooppunt is van het type **nt:ongestructureerd** en moet een **text** en **value** eigenschap. Zowel de tekst als de waarde moeten dezelfde waarde hebben:
 
@@ -691,7 +691,7 @@ Het maken van een aangepaste wizard kan zeer krachtig zijn, omdat u essentiële 
    </priority>
    ```
 
-1. De aanvrager van de workflow kan de vervaldatum van de eerste taak instellen. We gebruiken de [Graniet UI DatePicker](https://experienceleague.adobe.com/docs/) formulierveld om deze invoer vast te leggen. We voegen ook een verborgen veld toe met een [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) om ervoor te zorgen dat de invoer wordt opgeslagen als een eigenschap van het type Date in het JCR.
+1. De aanvrager van de workflow kan de vervaldatum van de eerste taak instellen. We gebruiken de [Graniet UI DatePicker](https://experienceleague.adobe.com/en/docs) formulierveld om deze invoer vast te leggen. We voegen ook een verborgen veld toe met een [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) om ervoor te zorgen dat de invoer wordt opgeslagen als een eigenschap van het type Date in het JCR.
 
    Twee toevoegen **nt:ongestructureerd** knooppunten met de volgende eigenschappen die hieronder in XML worden vertegenwoordigd:
 
