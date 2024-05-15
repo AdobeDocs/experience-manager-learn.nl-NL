@@ -10,8 +10,8 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-duration: 500
-source-git-commit: 0400242f6a99bc5209a8b483469d5fd88eac077e
+duration: 432
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De arbeiders van de Asset compute van de douane kunnen XMP (XML) gegevens produc
 Vaak voorkomende gevallen van gebruik zijn:
 
 + Integraties met systemen van derden, zoals een PIM (Product Information Management System), waar aanvullende metagegevens moeten worden opgehaald en opgeslagen op het middel
-+ Integratie met Adobe-services, zoals Content and Commerce AI, om metagegevens over elementen te verhogen met extra leerkenmerken voor computers
++ Integratie met Adobe-services, zoals Content en Commerce AI, om metagegevens van elementen te verfraaien met extra leerkenmerken voor computers
 + Metagegevens over het element afgeleid van zijn binair getal en opslaan als metagegevens over elementen in AEM as a Cloud Service
 
 ## Wat u gaat doen

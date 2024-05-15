@@ -3,8 +3,8 @@ title: Zoeken in AEM Assets gebruiken
 description: In deze video's bekijken we een aantal verbeteringen in het zoeken naar middelen die in AEM zijn geïntroduceerd. Auteurs kunnen bepaalde elementen in zoekresultaten met trefwoorden verhogen door de desbetreffende metagegevenseigenschappen bij te werken. We kijken ook naar enkele geavanceerde configuraties voor Elements OmniSearch-voorspellingen.
 version: 6.4, 6.5
 doc-type: Feature Video
-duration: 379
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 373
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%

@@ -13,8 +13,8 @@ thumbnail: KT-13156.jpeg
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
-duration: 1360
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+duration: 1303
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 0%
@@ -66,7 +66,7 @@ De [XDM System, overzicht](https://experienceleague.adobe.com/docs/experience-pl
 
 ## DataStream maken - Experience Platform
 
-Een DataStream instrueert het Netwerk van de Rand van het Platform waar om de verzamelde gegevens te verzenden. Het kan bijvoorbeeld worden verzonden naar Experience Platform, Analytics of Adobe Target.
+Een DataStream instrueert de Edge Network van het Platform waar te om de verzamelde gegevens te verzenden. Het kan bijvoorbeeld worden verzonden naar Experience Platform, Analytics of Adobe Target.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418895?quality=12&learn=on)
@@ -79,7 +79,7 @@ Leer hoe u een eigenschap tag maakt in Experience Platform om de JavaScript-bibl
 
 + Tagextensies: [Kern](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) en [Adobe Experience Platform Web SDK](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + Gegevenselementen: de gegevenselementen van het type van douanecode die pagina-naam, plaats-sectie, en gastheer-naam gebruikend de Laag van de Gegevens van de Cliënt van de Adobe van de plaats WKND halen. Ook, het het type van Objecten XDM gegevenselement dat met onlangs gecreeerd schema van WKND XDM bouwt vroeger in overeenstemming is [XDM-schema maken](#create-xdm-schema---experience-platform) stap.
-+ Regel: Verzend gegevens naar het Netwerk van de Rand van het Platform wanneer een Web-pagina wordt bezocht gebruikend de Adobe getriggerde Laag van Gegevens van de Cliënt `cmp:show` gebeurtenis.
++ Regel: Verzend gegevens naar de Edge Network van het Platform wanneer een Web-pagina wordt bezocht gebruikend de  van de Gegevens van de Cliënt van de Adobe teweeggebracht `cmp:show` gebeurtenis.
 
 Tijdens het maken en publiceren van de tagbibliotheek met de **Publishing Flow**, kunt u de **Alle gewijzigde bronnen toevoegen** knop. Om alle middelen zoals het Element van Gegevens, Regel, en de Uitbreidingen van de Markering in plaats van het identificeren van en het plukken van een individuele middel te selecteren. Tijdens de ontwikkelingsfase kunt u de bibliotheek ook alleen publiceren naar de _Ontwikkeling_ milieu, dan verifieert en bevordert het aan _Werkgebied_ of _Productie_ milieu.
 

@@ -3,8 +3,8 @@ title: Snelheid van inhoud besturen met Adobe Experience Manager
 description: Leer meer over snelheid van inhoud en de waarde ervan in bedrijfsorganisaties. Duik in vier principes van effectieve implementatie en de valkuilen die onderweg moeten uitzien.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-duration: 718
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 589
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2742'
 ht-degree: 0%

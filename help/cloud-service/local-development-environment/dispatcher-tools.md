@@ -10,8 +10,8 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-duration: 730
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 624
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Alle hieronder uitgegeven bevelen veronderstellen dat de huidige het werk folder
 ## De Dispatcher-configuratiebestanden begrijpen
 
 >[!TIP]
-Experience Manager projecten die zijn gemaakt op basis van de [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) Deze set Dispatcher-configuratiebestanden zijn vooraf ingevuld. U hoeft daarom niet meer te kopiëren uit de bronmap Dispatcher Tools.
+> Experience Manager projecten die zijn gemaakt op basis van de [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) Deze set Dispatcher-configuratiebestanden zijn vooraf ingevuld. U hoeft daarom niet meer te kopiëren uit de bronmap Dispatcher Tools.
 
 De Dispatcher Tools biedt een set Apache HTTP Web-server- en Dispatcher-configuratiebestanden die gedrag voor alle omgevingen, inclusief lokale ontwikkeling, definiëren.
 
@@ -353,7 +353,7 @@ Phase 3 finished
 
 De `host.docker.internal` is hostname die aan Docker wordt verstrekt die aan de gastheer oplost. Per docs.docker.com ([macOS](https://docs.docker.com/desktop/networking/), [Windows](https://docs.docker.com/desktop/networking/)):
 
->Vanaf Docker 18.03 moet de aanbeveling met de speciale DNS naam host.docker.internal verbinden, die aan het interne IP adres oplost dat door de gastheer wordt gebruikt
+> Vanaf Docker 18.03 moet de aanbeveling met de speciale DNS naam host.docker.internal verbinden, die aan het interne IP adres oplost dat door de gastheer wordt gebruikt
 
 Wanneer `bin/docker_run src host.docker.internal:4503 8080` resulteert in het bericht __Wachten tot host.docker.internal beschikbaar is__, dan:
 

@@ -11,8 +11,8 @@ thumbnail: KT-6265.jpg
 last-substantial-update: 2022-09-20T00:00:00Z
 doc-type: Tutorial
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
-duration: 547
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 452
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1813'
 ht-degree: 0%
@@ -424,7 +424,7 @@ Een hulpprogrammaklasse, `DataLayerBuilder`, bestaat om het grootste deel van de
 
    >[!NOTE]
    >
-   > Als het bouwen van een geavanceerde Laag van Gegevens voor voorwerpen die door een implementatie worden hergebruikt, wordt het geadviseerd om de elementen van de Laag van Gegevens in hun eigen gegeven laag-specifieke voorwerpen te halen Java™. Zo hebben de Componenten van de Kern van de Handel interfaces voor toegevoegd `ProductData` en `CategoryData` aangezien deze in het kader van een handelsuitvoering voor veel onderdelen kunnen worden gebruikt. Controleren [de code in de reactie aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) voor meer informatie .
+   > Als het bouwen van een geavanceerde Laag van Gegevens voor voorwerpen die door een implementatie worden hergebruikt, wordt het geadviseerd om de elementen van de Laag van Gegevens in hun eigen gegeven laag-specifieke voorwerpen te halen Java™. Commerce Core Components heeft bijvoorbeeld interfaces toegevoegd voor `ProductData` en `CategoryData` aangezien deze op vele componenten binnen een Commerce-implementatie kunnen worden gebruikt. Controleren [de code in de reactie aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) voor meer informatie .
 
 ## Gefeliciteerd! {#congratulations}
 

@@ -7,17 +7,17 @@ topic: Development, Architecture, Content Management
 role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
-duration: 0
+duration: 558
 last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
-source-git-commit: f0930e517254b6353fe50c3bbf9ae915d9ef6ca3
+exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
 
 ---
-
 
 # AEM Gebeurtenissen verwerken met Adobe I/O Runtime Action
 
@@ -263,8 +263,3 @@ De vereisten voor gebeurtenisverwerking verschillen van project tot project, maa
 - De gebeurtenisverwerking kan worden uitgevoerd met Adobe I/O Runtime Action.
 - De Runtime Actie kan met systemen zoals uw interne toepassingen, derdeoplossingen, en Adobe oplossingen communiceren.
 - De runtimeactie dient als ingangspunt voor een bedrijfsproces dat rond een inhoudsverandering wordt ontworpen.
-
-
-
-
-

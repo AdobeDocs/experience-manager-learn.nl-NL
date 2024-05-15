@@ -8,7 +8,9 @@ role: Developer
 level: Experienced
 jira: KT-15025
 last-substantial-update: 2024-02-26T00:00:00Z
-source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
+exl-id: cae160f2-21a5-409c-942d-53061451b249
+duration: 97
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -124,4 +126,3 @@ Voer de volgende gestroomlijnde stappen uit om dit op uw lokale server te testen
 1. Vul een aantal formuliervelden in.
 1. Verzend het formulier om de AEM te starten.
 1. Zoek de gerenderde PDF in de payload-map van de workflow.
-

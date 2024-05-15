@@ -10,8 +10,8 @@ recommendations: noDisplay, noCatalog
 jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
-duration: 214
-source-git-commit: 678bda0ea6f6c727170c596e9d3d5f0687ec830f
+duration: 166
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Zodra het uitbreidingsverzoek wordt goedgekeurd, wordt de uitbreiding onmiddelli
 
 ![Een extensie verwijderen](./assets/deploy/revoke.png)
 
-Om een uitbreiding te verwijderen, herhaal (of verwijder) het uit de Uitwisseling van de Adobe. Wanneer de extensie wordt ingetrokken, wordt deze verwijderd uit alle AEM as a Cloud Service Auteursservices.
+Als u een extensie wilt verwijderen, trekt u deze in de Adobe Exchange in (of verwijdert u deze. Wanneer de extensie wordt ingetrokken, wordt deze verwijderd uit alle AEM as a Cloud Service Auteursservices.
 
 1. Aanmelden bij [Adobe Exchange](https://exchange.adobe.com/)
 1. Navigeren naar __Beheren__ > __App Builder-toepassingen__

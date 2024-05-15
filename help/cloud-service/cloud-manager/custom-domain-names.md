@@ -7,17 +7,17 @@ topic: Administration, Architecture
 role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
-duration: null
+duration: 1042
 last-substantial-update: 2024-03-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
-source-git-commit: 8230991cebf1a9e994f0dfe96c5590d0c19ef887
+exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste domeinnaam toevoegen
 
@@ -156,5 +156,3 @@ Als u wilt controleren of de site toegankelijk is met de aangepaste domeinnaam, 
 U kunt de video van begin tot eind ook bekijken die het overzicht, de eerste vereisten, en bovenstaande stappen aantoont om een naam van het douanedomein aan AEM as a Cloud Service-ontvangen plaats toe te voegen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427817?quality=12&learn=on)
-
-

@@ -13,8 +13,8 @@ mini-toc-levels: 1
 badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-duration: 218
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+duration: 135
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 1%
@@ -88,11 +88,11 @@ Dankzij de Adobe Analytics-integratie met AEM as a Cloud Service kunt u de activ
 
 ## Adobe Commerce
 
-Dankzij de Adobe Commerce-integratie met AEM as a Cloud Service kunnen merken sneller schalen en innoveren om een onderscheid te maken tussen ervaringen op het gebied van handel en het online besteden van content te versnellen. AEM met de Handel combineert de indrukwekkende, omnichannel en gepersonaliseerde ervaringen in de Experience Manager met een aantal handelsoplossingen om verschillende ervaringen aan alle delen van de winkelreis te brengen, tijd aan waarde te verminderen en hogere omzettingsprocessen te drijven.
+Dankzij de Adobe Commerce-integratie met AEM as a Cloud Service kunnen merken sneller schalen en innoveren om een onderscheid te maken tussen ervaringen op het gebied van handel en het online besteden van content te versnellen. AEM met Commerce combineert de indrukwekkende, omnichannel en gepersonaliseerde ervaringen in de Experience Manager met een aantal handelsoplossingen om verschillende ervaringen te bieden aan alle delen van de boodschappenreis, waardoor tijd tot waarde wordt teruggebracht en een hogere conversie plaatsvindt.
 
 ### AEM Sites
 
-+ [Gebruikershandleiding voor inhoud en handel AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
++ [Gebruikershandleiding voor AEM en Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
 
 
 ## Tags in Adobe Experience Platform
@@ -117,9 +117,9 @@ Met Adobe Journey Optimizer kunt u omnichannel-campagnes en een-op-een-momenten 
 
 + [AEM Assets Essentials integreren met Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html)
 
-## Adobe Leerbeheer
+## Adobe Learning Manager
 
-De Leermanager van de Adobe (vroeger Adobe Captivate Prime) levert gepersonaliseerd leren aan klanten en werknemers.
+Adobe Learning Manager (voorheen Adobe Captivate Prime) biedt gepersonaliseerde training voor klanten en werknemers.
 
 ### AEM Sites
 
