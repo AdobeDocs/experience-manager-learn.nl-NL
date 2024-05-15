@@ -12,9 +12,9 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1458'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,14 @@ De CDN-logboeken zijn beschikbaar in de JSON-indeling, die verschillende velden 
 |------------------------------------|:-----------------------------------------------------:|
 | HIT | De gevraagde gegevens zijn _gevonden in de CDN-cache en hoeft niet te worden opgehaald_ verzoek aan de AEM server. |
 | MISS | De gevraagde gegevens zijn _niet gevonden in de CDN-cache en moet worden aangevraagd_ van de AEM server. |
-| PASS | De gevraagde gegevens zijn _expliciet ingesteld op niet in cache plaatsen_ en altijd van de AEM server worden opgehaald. |
+| PASS | De gevraagde gegevens zijn _expliciet instellen op niet in cache plaatsen_ en altijd van de AEM server worden opgehaald. |
 
 In deze zelfstudie wordt [AEM WKND-project](https://github.com/adobe/aem-guides-wknd) wordt ingezet in de AEM as a Cloud Service omgeving en er wordt een kleine prestatietest geactiveerd met behulp van [Apache JMeter](https://jmeter.apache.org/).
 
 Deze zelfstudie is zodanig gestructureerd dat u het volgende proces doorloopt:
+
 1. CDN-logbestanden downloaden via Cloud Manager
-1. De CDN-logboeken analyseren, die kunnen worden uitgevoerd met twee methoden: een lokaal geïnstalleerd dashboard of een extern geopend Jupityer-notebook (voor wie een licentie voor Adobe Experience Platform heeft)
+1. Door die CDN-logboeken te analyseren, kunt u deze uitvoeren met twee methoden: een lokaal geïnstalleerd dashboard of een extern geopend Splunk- of Jupityer-notebook (voor wie een licentie voor Adobe Experience Platform heeft)
 1. CDN-cacheconfiguratie optimaliseren
 
 ## CDN-logbestanden downloaden
@@ -60,24 +61,27 @@ Als het gedownloade logbestand afkomstig is van _vandaag_ de bestandsextensie is
 
 ## Gedownloade CDN-logboeken analyseren
 
-Analyseer het gedownloade CDN-logbestand om inzicht te krijgen in bijvoorbeeld de verhouding van cachereeks en de URL&#39;s van de bovenste URL&#39;s van MISS- en PASS-cachetypen. Deze inzichten helpen om [CDN-cacheconfiguratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html) en verbetert u de prestaties van de site.
+Analyseer het gedownloade CDN-logbestand om inzicht te krijgen in bijvoorbeeld de verhouding van cachereeks en de URL&#39;s van de bovenste URL&#39;s van MISS- en PASS-cachetypen. Deze inzichten helpen om [CDN-cacheconfiguratie](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) en verbetert u de prestaties van de site.
 
-Voor het analyseren van de CDN-logboeken worden in dit artikel twee opties voorgesteld: de **Elasticsearch, Logstash en Kibana (ELK)** [dashboardgereedschap](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) en [Jupyter-laptop](https://jupyter.org/). De ELK-dashboardwerkset kan lokaal op uw laptop worden geïnstalleerd, terwijl u vanaf een externe locatie toegang hebt tot de werkset Jupityr-laptop [als onderdeel van Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en) zonder aanvullende software te installeren, voor degenen die een licentie voor Adobe Experience Platform hebben verkregen.
+In deze zelfstudie worden drie opties beschreven voor het analyseren van de CDN-logboeken:
 
+1. **Elasticsearch, Logstash en Kibana (ELK)**: De [Gereedschap voor ELK-dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) kan lokaal worden geïnstalleerd.
+1. **Splunk**: De [Gereedschap voor gesponnen dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) vereist toegang tot Splunk en [AEMCS log-forward ingeschakeld](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) om de CDN-logboeken in te voeren.
+1. [Jupyter-laptop](https://jupyter.org/): Het kan extern worden benaderd als onderdeel van [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) zonder extra software te installeren, voor klanten die een licentie voor Adobe Experience Platform hebben verkregen.
 
 ### Optie 1: ELK-dashboard gebruiken
 
 De [ELK-stapel](https://www.elastic.co/elastic-stack) is een reeks hulpmiddelen die een scalable oplossing verstrekken om, de gegevens te zoeken te analyseren en te visualiseren. Het bestaat uit Elasticsearch, Logstash, en Kibana.
 
-Om de belangrijkste details te identificeren, gebruiken wij [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) dashboard-toolingproject. Dit project verstrekt een container van de Dok van de stapel van ELK en een vooraf gevormd dashboard van Kibana om de CDN- logboeken te analyseren.
+Om de belangrijkste details te identificeren, gebruiken wij [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) project. Dit project verstrekt een container van de Dok van de stapel van ELK en een vooraf gevormd dashboard van Kibana om de CDN- logboeken te analyseren.
 
-1. Voer de volgende stappen uit [De ELK Docker-container instellen](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool#how-to-set-up-the-elk-docker-container) en zorg ervoor dat u de **Hoogte-breedteverhouding CDN-cache** Kibana dashboard.
+1. Voer de volgende stappen uit [Hoe te opstelling de container van de Docker ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) en zorg ervoor dat u de **Hoogte-breedteverhouding CDN-cache** Kibana dashboard.
 
 1. Ga als volgt te werk om de CDN-raakverhouding in cache en URL&#39;s als bovenste URL te identificeren:
 
-   1. Kopieer het gedownloade CDN-logbestand of de gedownloade CDN-logbestanden in de omgevingsspecifieke map.
+   1. Kopieer het gedownloade CDN-logbestand of de gedownloade CDN-logbestanden bijvoorbeeld in de omgevingsspecifieke logboekmap. `ELK/logs/stage`.
 
-   1. Open de **Hoogte-breedteverhouding CDN-cache** Klik op het navigatiemenu linksboven > Analytics > Dashboard > CDN Cache Hit Ratio.
+   1. Open de **Hoogte-breedteverhouding CDN-cache** dashboard door op de linkerbovenhoek te klikken _Navigation Menu > Analytics > Dashboard > CDN Cache Hit Ratio_.
 
       ![CDN-cachehoogte-breedteverhouding - Kibana-dashboard](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -124,13 +128,24 @@ Voer de volgende stappen uit om de opgenomen logbestanden te filteren op hostnaa
 
    ![Hostfilter - Kibana-dashboard](assets/cdn-logs-analysis/add-host-filter.png){width="500" zoomable="yes"}
 
-Voeg op basis van de analysevereisten ook meer filters toe aan het dashboard.
+U kunt ook meer filters toevoegen aan het dashboard op basis van de analysevereisten.
 
-### Optie 2: Jupyter-laptop gebruiken
+### Optie 2: Werkset voor gesponnen dashboard gebruiken
 
-Voor degenen die liever geen software lokaal installeren (dat wil zeggen, het gereedschap voor het ELK-dashboard uit de vorige sectie), is er nog een andere optie, maar hiervoor is een licentie voor Adobe Experience Platform vereist.
+De [Splunk](https://www.splunk.com/) is een populair hulpmiddel van de logboekanalyse dat helpt logboeken samenvoegen, analyseren, en visualisaties voor controle en het oplossen van problemendoeleinden tot stand brengen.
 
-De [Jupyter-laptop](https://jupyter.org/) is een opensource webtoepassing waarmee u documenten kunt maken die code, tekst en visualisatie bevatten. Het wordt gebruikt voor gegevenstransformatie, visualisatie, en statistische modellering. Het kan extern worden geopend [als onderdeel van Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en).
+Om de belangrijkste details te identificeren, gebruiken wij [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) project. Dit project verstrekt een dashboard van het Splunk om de CDN- logboeken te analyseren.
+
+1. Voer de volgende stappen uit [Splunk dashboards voor de Analyse van het Logboek van AEMCS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) en zorg ervoor dat u de **Hoogte-breedteverhouding CDN-cache** Splunk dashboard.
+1. Werk indien nodig de _Index, type bron en andere_ filterwaarden in het dashboard Splunk.
+
+   ![Splunk Dashboard](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+
+### Optie 3: Jupyter-laptop gebruiken
+
+Voor degenen die liever geen software lokaal installeren (dat wil zeggen het gereedschap voor het ELK-dashboard uit de vorige sectie), is er een andere optie, maar is een licentie voor Adobe Experience Platform vereist.
+
+De [Jupyter-laptop](https://jupyter.org/) is een opensource webtoepassing waarmee u documenten kunt maken die code, tekst en visualisatie bevatten. Het wordt gebruikt voor gegevenstransformatie, visualisatie, en statistische modellering. Het kan extern worden geopend [als onderdeel van Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### Het interactieve Python-laptopbestand downloaden
 
@@ -181,6 +196,6 @@ U kunt het Notitieboekje van de Jupyter verbeteren om de logboeken te analyseren
 
 Nadat u de CDN-logboeken hebt geanalyseerd, kunt u de CDN-cacheconfiguratie optimaliseren om de siteprestaties te verbeteren. De AEM beste praktijken moeten een geheim voorgeheugenklapverhouding van 90% of hoger hebben.
 
-Zie voor meer informatie [CDN-cacheconfiguratie optimaliseren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#caching).
+Zie voor meer informatie [CDN-cacheconfiguratie optimaliseren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
 Het AEM WKND-project heeft een referentie-CDN-configuratie, voor meer informatie, zie [CDN-configuratie](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) van de `wknd.vhost` bestand.

@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Leer geadviseerde beste praktijken voor de regels van de verkeersfilter, met inb
 - Beginnen bij het declareren en valideren van regels altijd met `action` type `log` om ervoor te zorgen dat de regel geen legitiem verkeer blokkeert.
 - Voor bepaalde regels geldt de overgang van `log` tot `block` dient uitsluitend gebaseerd te zijn op een analyse van voldoende verkeer ter plaatse.
 - Introduceer regels incrementeel, en overweeg het betrekken van uw testteams (QA, prestaties, penetratietests) in het proces.
-- De impact van regels regelmatig analyseren met behulp van de [dashboardgereedschap](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool). Afhankelijk van het verkeersvolume van uw site kan de analyse dagelijks, wekelijks of maandelijks worden uitgevoerd.
+- De impact van regels regelmatig analyseren met behulp van de [dashboardgereedschap](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Afhankelijk van het verkeersvolume van uw site kan de analyse dagelijks, wekelijks of maandelijks worden uitgevoerd.
 - Om kwaadwillig verkeer te blokkeren dat u zich na de analyse kunt bewust zijn, voeg om het even welke extra regels toe. Bijvoorbeeld, bepaalde IPs die uw plaats hebben aangevallen.
 - Het creëren, de plaatsing, en de analyse van de regel zouden een lopend, herhalend proces moeten zijn. Het is geen eenmalige activiteit.
 
@@ -91,7 +91,7 @@ data:
 
 ## Aanbevolen procedures voor WAF-regels
 
-Zodra WAF vergunning en toegelaten voor uw programma wordt gegeven, verschijnen de vlaggen van WAF van het verkeer passende in grafieken en verzoeklogboeken, zelfs als u hen niet in een regel verklaarde. Dit is zodat bent u zich altijd bewust van potentieel nieuw kwaadwillig verkeer en kan regels tot stand brengen zoals nodig. Bekijk de vlaggen van WAF die niet in de verklaarde regels worden weerspiegeld en denk na verklarend hen.
+Zodra WAF vergunning en toegelaten voor uw programma wordt gegeven, verschijnen de vlaggen van WAF van het verkeer passende in grafieken en verzoeklogboeken, zelfs als u hen niet in een regel verklaarde. Zo, bent u zich altijd bewust van potentieel nieuw kwaadwillig verkeer en kan regels tot stand brengen zoals nodig. Bekijk de vlaggen van WAF die niet in de verklaarde regels worden weerspiegeld en denk na verklarend hen.
 
 Overweeg de WAF regels hieronder voor uw AEM project. De gewenste waarden voor `action` en `wafFlags` moet worden bepaald in samenwerking met uw beveiligingsteam.
 

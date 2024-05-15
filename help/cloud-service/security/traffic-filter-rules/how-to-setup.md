@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Zie een voorbeeld van de `cdn.yaml` bestand in het WKND-siteproject van de AEM:
 
 ### Regels implementeren via Cloud Manager {#deploy-rules-through-cloud-manager}
 
-Voer de volgende stappen uit om regels te implementeren:
+Voer de volgende stappen uit om de regels te implementeren:
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
@@ -95,7 +95,7 @@ Voer de volgende stappen uit om regels te implementeren:
 
 ### Regels testen door verkeer te genereren
 
-Om regels te testen, zijn er verschillende hulpmiddelen van derden beschikbaar en uw organisatie kan een aangewezen hulpmiddel hebben. Gebruik de volgende gereedschappen voor demo-doeleinden:
+Om regels te testen, zijn er verschillende hulpmiddelen van derden beschikbaar en uw organisatie kan een aangewezen hulpmiddel hebben. Voor het demodoel, gebruiken de volgende hulpmiddelen:
 
 - [Krol](https://curl.se/) voor basistests zoals het aanroepen van een URL en het controleren van de antwoordcode.
 
@@ -119,9 +119,11 @@ Om regels te testen, zijn er verschillende hulpmiddelen van derden beschikbaar e
 
 ### Resultaten analyseren met de dashboardgereedschappen
 
-Nadat u de regels hebt gemaakt, geïmplementeerd en getest, kunt u de resultaten analyseren met **Elasticsearch, Logstash en Kibana (ELK)** dashboardgereedschap. Het kan de logboeken van AEMCS CDN ontleden, die u toestaan om de resultaten in de vorm van diverse grafieken en grafieken te visualiseren.
+Nadat u de regels hebt gemaakt, geïmplementeerd en getest, kunt u de resultaten analyseren met **CDN** logboeken en **AEMCS-CDN-Log-Analysis-Tool**. Het hulpmiddel verstrekt een reeks dashboards om de resultaten voor Splunk en de stapel van ELK (Elasticsearch, Logstash, en Kibana) te visualiseren.
 
-Gereedschap Dashboard kan rechtstreeks worden gekloond vanuit het dialoogvenster [AEMCS-CDN-Log-Analysis-ELK-Tool GitHub-opslagplaats](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) en voert u de stappen uit om de **Verkeersfilterregels (inclusief WAF)** dashboard.
+Het gereedschap kan worden gekloond via het gereedschap [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub-opslagplaats. Volg vervolgens de instructies om de **CDN-verkeersdashboard** en **WAF-dashboard** dashboards voor uw voorkeurswaarneming.
+
+In deze zelfstudie gebruiken we de ELK-stapel. Volg de [ELK Docker-container voor AEMCS CDN-loganalyse](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) instructies voor het instellen van de ELK-stapel.
 
 - Nadat u het voorbeelddashboard hebt geladen, ziet de gereedschapspagina Elastic er als volgt uit:
 

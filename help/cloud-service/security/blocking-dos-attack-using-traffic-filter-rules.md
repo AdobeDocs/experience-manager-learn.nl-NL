@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1968'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Laten we de standaard DoS-beveiliging voor uw AEM website begrijpen:
 - **Blokkeren:** De Adobe CDN blokkeert verkeer aan de oorsprong als het een Adobe-bepaald tarief van een bepaald IP adres, per CDN PoP (Punt van Aanwezigheid) overschrijdt.
 - **Waarschuwing:** Het Centrum van Acties verzendt een verkeerspiek bij het bericht van de oorsprongsalarm wanneer het verkeer een bepaald tarief overschrijdt. Deze waarschuwing wordt geactiveerd wanneer het verkeer naar een CDN PoP groter is dan een _Adobe gedefinieerd_ aanvraagtarief per IP adres. Zie [Waarschuwing verkeersfilterregels](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) voor meer informatie .
 
-Deze ingebouwde bescherming zou als basislijn voor de capaciteit van een organisatie moeten worden beschouwd om het prestatieseffect van een aanval te minimaliseren DDoS. Aangezien elke website andere prestatiekenmerken heeft en prestatievermindering kan zien voordat aan de door de Adobe gedefinieerde snelheidslimiet wordt voldaan, wordt aanbevolen de standaardbeveiliging uit te breiden tot _klantconfiguratie_.
+Deze ingebouwde bescherming zou als basislijn voor de capaciteit van een organisatie moeten worden beschouwd om het prestatieseffect van een aanval te minimaliseren DDoS. Aangezien elke website andere prestatiekenmerken heeft en kan zien dat de prestaties achteruitgaan voordat aan de door de Adobe gedefinieerde snelheidslimiet wordt voldaan, wordt aanbevolen de standaardbeveiliging uit te breiden tot _klantconfiguratie_.
 
 Laten we eens kijken naar enkele aanvullende, aanbevolen maatregelen die klanten kunnen nemen om hun websites te beschermen tegen aanvallen van Digital Publishing Suite:
 
@@ -76,14 +76,20 @@ Adobe verzendt een verkeerspiek bij oorsprongsalarm als [Melding van actiecentra
 
 ## Verkeerspatronen analyseren {#analyze-traffic}
 
-Als uw site al actief is, kunt u de verkeerspatronen analyseren met CDN-logboeken en een van de volgende methoden:
+Als uw site al actief is, kunt u de verkeerspatronen analyseren met CDN-logboeken en door Adobe verschafte dashboards.
+
+- **CDN-verkeersdashboard**: biedt inzichten in het verkeer via CDN en de aanvraagsnelheid voor oorsprong, de foutsnelheden 4xx en 5xx en niet-in cache opgeslagen aanvragen. Verstrekt ook maximum CND en de verzoeken van de Oorsprong per seconde per cliëntIP adres en meer inzichten om de configuraties te optimaliseren CDN.
+
+- **Hoogte-breedteverhouding CDN-cache**: biedt inzicht in de totale verhouding van cacherechthoekbelasting en het totale aantal aanvragen door HIT, PASS en MISS-status. Bevat ook URL&#39;s met de hoogste HIT-, PASS- en MISS-adressen.
+
+De dashboardgereedschappen configureren met _een van de volgende opties_:
 
 ### ELK - dashboardgereedschappen configureren
 
 De **Elasticsearch, Logstash en Kibana (ELK)** U kunt de CDN-logboeken analyseren met behulp van dashboardgereedschappen van Adobe. Dit tooling omvat een dashboard dat de verkeerspatronen visualiseert, makend het gemakkelijker om de optimale drempels voor uw regels van de de filterfilter van de tariefgrens te bepalen.
 
-- Klonen met [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub-opslagplaats.
-- De gereedschappen instellen door de opdracht [Hoe te opstelling de container van de Docker ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool?tab=readme-ov-file#how-to-set-up-the-elk-docker-container) stappen.
+- Klonen met [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub-opslagplaats.
+- De gereedschappen instellen door de opdracht [Hoe te opstelling de container van de Docker ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) stappen.
 - Als onderdeel van de instelling importeert u de `traffic-filter-rules-analysis-dashboard.ndjson` bestand om de gegevens te visualiseren. De _CDN-verkeer_ Het dashboard omvat visualisaties die het maximumaantal verzoeken per IP/POP bij de Rand en de Oorsprong CDN tonen.
 - Van de [Cloud Manager](https://my.cloudmanager.adobe.com/)s _Omgevingen_ -kaart, downloadt u de CDN-logbestanden van de AEMCS-publicatieservice.
 
@@ -95,9 +101,9 @@ De **Elasticsearch, Logstash en Kibana (ELK)** U kunt de CDN-logboeken analysere
 
 ### Splunk - het vormen dashboard tooling
 
-Klanten die [Splunk Log-doorsturen ingeschakeld](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) U kunt een nieuw dashboard creëren om de verkeerspatronen te analyseren. Met het volgende XML-bestand kunt u bij Splunk een dashboard maken:
+Klanten die [Splunk Log-doorsturen ingeschakeld](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) U kunt nieuwe dashboards tot stand brengen om de verkeerspatronen te analyseren.
 
-- [CDN - Verkeerdashboard](./assets/traffic-dashboard.xml): Dit dashboard verschaft inzicht in de verkeerspatronen op de CDN-rand en -oorsprong. Het omvat visualisaties die het maximumaantal verzoeken per IP/POP bij de Rand en de Oorsprong CDN tonen.
+Ga als volgt te werk om dashboards in Splunk te maken [Splunk dashboards voor de Analyse van het Logboek van AEMCS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) stappen.
 
 ### Gegevens bekijken
 
