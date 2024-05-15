@@ -8,12 +8,12 @@ role: Architect, Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
-last-substantial-update: 2022-10-17T00:00:00Z
+last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-duration: 2177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+duration: 2200
+source-git-commit: 11c9173cbb2da75bfccba278e33fc4ca567bbda1
 workflow-type: tm+mt
-source-wordcount: '3060'
+source-wordcount: '3357'
 ht-degree: 0%
 
 ---
@@ -456,3 +456,66 @@ $ git push adobe saml-auth:develop
 ```
 
 Implementeer de doelvertakking Git voor Cloud Manager (in dit voorbeeld) `develop`), die een Volledige de plaatsingspijpleiding van de Stapel gebruiken.
+
+## De SAML-verificatie aanroepen
+
+De SAML authentificatiestroom kan van een AEM Web-pagina van de Plaats worden aangehaald, door een speciaal gemaakte verbindingen, of een knopen te creëren. De hieronder beschreven parameters kunnen indien nodig via programmacode worden ingesteld, zodat bijvoorbeeld een aanmeldknop de optie `saml_request_path`, waar de gebruiker naar wordt gestuurd bij geslaagde SAML-verificatie, naar verschillende AEM pagina&#39;s, op basis van de context van de knop.
+
+### Verzoek om GET
+
+De authentificatie van SAML kan worden aangehaald door een verzoek van de GET van HTTP in het formaat te creëren:
+
+`HTTP GET /system/sling/login`
+
+en het verstrekken van vraagparameters:
+
+| Naam van query-parameter | Parameterwaarde voor query |
+|----------------------|-----------------------|
+| `resource` | Willekeurig JCR-pad (of subpad) dat wil zeggen dat de SAML-verificatiehandler luistert, zoals gedefinieerd in het dialoogvenster [Adobe granite SAML 2.0 de Handler OSGi van de Authentificatie van de Handler](#configure-saml-2-0-authentication-handler) `path` eigenschap. |
+| `saml_request_path` | Het URL-pad waar de gebruiker naartoe moet gaan nadat de SAML-verificatie is voltooid. |
+
+Bijvoorbeeld, zal deze verbinding van HTML de het login van SAML stroom teweegbrengen, en op succes de gebruiker nemen om `/content/wknd/us/en/protected/page.html`. Deze vraagparameters kunnen programmatic worden geplaatst zoals nodig.
+
+```html
+<a href="/system/sling/login?resource=/content/wknd&saml_request_path=/content/wknd/us/en/protected/page.html">
+    Log in using SAML
+</a>
+```
+
+## Aanvraag POST
+
+De authentificatie van SAML kan worden aangehaald door een verzoek van de POST van HTTP in het formaat te creëren:
+
+`HTTP POST /system/sling/login`
+
+en het verstrekken van de formuliergegevens:
+
+| Naam van formuliergegevens | Waarde van formuliergegevens |
+|----------------------|-----------------------|
+| `resource` | Willekeurig JCR-pad (of subpad) dat wil zeggen dat de SAML-verificatiehandler luistert, zoals gedefinieerd in het dialoogvenster [Adobe granite SAML 2.0 de Handler OSGi van de Authentificatie van de Handler](#configure-saml-2-0-authentication-handler) `path` eigenschap. |
+| `saml_request_path` | Het URL-pad waar de gebruiker naartoe moet gaan nadat de SAML-verificatie is voltooid. |
+
+
+Bijvoorbeeld, zal deze knoop van HTML een POST van HTTP gebruiken om de het login van SAML stroom teweeg te brengen, en op succes, neem de gebruiker aan `/content/wknd/us/en/protected/page.html`. Deze parameters voor formuliergegevens kunnen zo nodig via programmacode worden ingesteld.
+
+```html
+<form action="/system/sling/login" method="POST">
+    <input type="hidden" name="resource" value="/content/wknd">
+    <input type="hidden" name="saml_request_path" value="/content/wknd/us/en/protected/page.html">
+    <input type="submit" value="Log in using SAML">
+</form>
+```
+
+### Dispatcher-configuratie
+
+Zowel voor de HTTP-methoden GET en POST is clienttoegang tot AEM vereist `/system/sling/login` eindpunten, en dus moeten zij via AEM Dispatcher worden toegestaan.
+
+De benodigde URL-patronen toestaan op basis van het gebruik van GET of POST
+
+```
+# Allow GET-based SAML authentication invocation
+/0191 { /type "allow" /method "GET" /url "/system/sling/login" /query="*" }
+
+# Allow POST-based SAML authentication invocation
+/0192 { /type "allow" /method "POST" /url "/system/sling/login" }
+```
