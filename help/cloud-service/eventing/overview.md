@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c0aa4049e846a0f24f8a5f5b014dbaf5bfc8eb2d
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Leer over AEM gebeurtenis, wat het is, waarom en wanneer om het en voorbeelden v
 
 >[!IMPORTANT]
 >
->AEM as a Cloud Service gebeurtenis is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Om AEM gebeurtenis op uw AEM as a Cloud Service milieu toe te laten, contacteer [AEM-team](mailto:grp-aem-events@adobe.com).
+>AEM as a Cloud Service gebeurtenis is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Als u AEM gebeurtenis op uw AEM as a Cloud Service omgeving wilt inschakelen, neemt u contact op met de <a href="mailto:grp-aem-events@adobe.com">AEM-team</a>.
 
 ## Wat het is
 
@@ -75,7 +75,7 @@ AEM Eventing, hoewel krachtig, heeft bepaalde beperkingen om te overwegen:
 
 ## Hoe te om toe te laten
 
-AEM Eventing wordt ingeschakeld per AEM as a Cloud Service omgeving en alleen beschikbaar voor omgevingen in de pre-releasemodus. Contact [AEM-team](mailto:grp-aem-events@adobe.com) om uw AEM met AEM Event toe te laten.
+AEM Eventing wordt ingeschakeld per AEM as a Cloud Service omgeving en alleen beschikbaar voor omgevingen in de pre-releasemodus. Contact opnemen met de <a href="mailto:grp-aem-events@adobe.com">AEM-team</a> om uw AEM met AEM Event toe te laten.
 
 Indien al ingeschakeld, zie [AEM Gebeurtenissen inschakelen in uw AEM Cloud Service-omgeving](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) voor de volgende stappen.
 
