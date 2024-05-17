@@ -10,9 +10,9 @@ topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e8e51fadaa824d615524a8c4c41aefb656d0391d
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -39,8 +39,9 @@ In dit artikel wordt ervan uitgegaan dat u [adaptief formulier is geconfigureerd
 * Vorm aanhalen FDM stap om het model van vormgegevens te gebruiken dat in de vorige stap wordt gecreeerd.
 * ![associatief-fdm](assets/fdm-insert-1.png)
 
-* ![map-input-parameters](assets/fdm-insert-2.png)
-* Let op het gebruik van JSON-puntnotatie. De verzonden gegevens hebben de onderstaande indeling en we extraheren het object ContactUS uit de verzonden gegevens.
+## Adaptief formulier op basis van kerncomponenten
+
+De ingediende gegevens hebben de volgende indeling. We moeten het ContactUS-object extraheren met behulp van puntnotatie in de workflowstap Formuliergegevensmodel aanroepen, zoals weergegeven in de schermafbeelding
 
 ```json
 {
@@ -54,6 +55,41 @@ In dit artikel wordt ervan uitgegaan dat u [adaptief formulier is geconfigureerd
 ```
 
 
+* ![map-input-parameters](assets/fdm-insert-2.png)
+
+
+## Adaptief formulier op basis van basiscomponenten
+
+De ingediende gegevens hebben de volgende indeling. Extraheer het ContactUS JSON-object met de puntnotatie in de workflowstap Formuliergegevensmodel aanroepen
+
+```json
+{
+    "afData": {
+        "afUnboundData": {
+            "data": {}
+        },
+        "afBoundData": {
+            "data": {
+                "ContactUS": {
+                    "Title": "Lord",
+                    "HighNetWorth": "true",
+                    "SubmitterName": "John Doe",
+                    "Products": "Forms"
+                }
+            }
+        },
+        "afSubmissionInfo": {
+            "lastFocusItem": "guide[0].guide1[0].guideRootPanel[0].afJsonSchemaRoot[0]",
+            "stateOverrides": {},
+            "signers": {},
+            "afPath": "/content/dam/formsanddocuments/foundationform",
+            "afSubmissionTime": "20240517100126"
+        }
+    }
+}
+```
+
+![op basis van stichting](assets/foundation-based-form.png)
 
 ## Adaptief formulier configureren om AEM workflow te activeren
 
