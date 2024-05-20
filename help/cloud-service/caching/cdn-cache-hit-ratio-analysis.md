@@ -12,7 +12,7 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Analyseer het gedownloade CDN-logbestand om inzicht te krijgen in bijvoorbeeld d
 In deze zelfstudie worden drie opties beschreven voor het analyseren van de CDN-logboeken:
 
 1. **Elasticsearch, Logstash en Kibana (ELK)**: De [Gereedschap voor ELK-dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) kan lokaal worden geïnstalleerd.
-1. **Splunk**: De [Gereedschap voor gesponnen dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) vereist toegang tot Splunk en [AEMCS log-forward ingeschakeld](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) om de CDN-logboeken in te voeren.
+1. **Splunk**: De [Gereedschap voor gesponnen dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) vereist toegang tot Splunk en [AEMCS log-forward ingeschakeld](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) om de CDN-logboeken in te voeren.
 1. **Jupyter-laptop**: Het kan extern worden benaderd als onderdeel van [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) zonder extra software te installeren, voor klanten die een licentie voor Adobe Experience Platform hebben verkregen.
 
 ### Optie 1: ELK-dashboard gebruiken
@@ -136,7 +136,7 @@ De [Splunk](https://www.splunk.com/) is een populair hulpmiddel van de logboekan
 
 Om de belangrijkste details te identificeren, gebruiken wij [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) project. Dit project verstrekt een dashboard van het Splunk om de CDN- logboeken te analyseren.
 
-1. Voer de volgende stappen uit [Splunk dashboards voor de Analyse van het Logboek van AEMCS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) en zorg ervoor dat u de **Hoogte-breedteverhouding CDN-cache** Splunk dashboard.
+1. Voer de volgende stappen uit [Splunk dashboards voor de Analyse van het Logboek van AEMCS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) en zorg ervoor dat u de **Hoogte-breedteverhouding CDN-cache** Splunk dashboard.
 1. Werk indien nodig de _Index, type bron en andere_ filterwaarden in het dashboard Splunk.
 
    ![Splunk Dashboard](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
