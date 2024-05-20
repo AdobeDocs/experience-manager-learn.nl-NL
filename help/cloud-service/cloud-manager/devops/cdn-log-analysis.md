@@ -11,13 +11,13 @@ duration: 219
 last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
-source-git-commit: d2c39b57982478badcd12682f082517ee9531d3e
+exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
+source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
-
 
 # Gereedschap voor CDN-loganalyse
 
@@ -67,6 +67,4 @@ U kunt beginnen met het [Splunk dashboards voor de Analyse van het Logboek van A
 
 De [ELK-stapel](https://www.elastic.co/elastic-stack), bestaande uit Elasticsearch, Logstash en Kibana, is een andere krachtige optie voor loganalyse. Het is nuttig voor organisaties die geen toegang tot een opstelling van de Splunk of logboek het door:sturen mogelijkheden hebben. Het lokaal instellen van de ELK-stapel is eenvoudig, dankzij de gereedschapset kunt u snel aan de slag met het bestand Docker Compose. Vervolgens kunt u de vooraf gebouwde dashboards importeren en de CDN-logboeken invoeren die worden gedownload met de Adobe Cloud Manager.
 
-U kunt beginnen met het [ELK Docker-container voor AEMCS CDN-loganalyse](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#elk-docker-container-for-aemcs-cdn-log-analysis)
-
-
+U kunt beginnen met het [ELK Docker-container voor AEMCS CDN-loganalyse](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#elk-docker-container-for-aemcs-cdn-log-analysis) hulplijn.

@@ -12,9 +12,9 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Ga als volgt te werk om de CDN-logboeken te downloaden:
 
    ![Logbestanden downloaden - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
-1. In de **Logbestanden downloaden** selecteert u de **Publiceren** De dienst van het drop-down menu, dan klik het downloadpictogram naast **cdn** rij.
+1. In de **Logbestanden downloaden** selecteert u de **Publiceren** De dienst van het drop-down menu, dan klik het downloadpictogram naast **CDN** rij.
 
    ![CDN-logbestanden - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
@@ -67,7 +67,7 @@ In deze zelfstudie worden drie opties beschreven voor het analyseren van de CDN-
 
 1. **Elasticsearch, Logstash en Kibana (ELK)**: De [Gereedschap voor ELK-dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) kan lokaal worden geïnstalleerd.
 1. **Splunk**: De [Gereedschap voor gesponnen dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) vereist toegang tot Splunk en [AEMCS log-forward ingeschakeld](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) om de CDN-logboeken in te voeren.
-1. [Jupyter-laptop](https://jupyter.org/): Het kan extern worden benaderd als onderdeel van [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) zonder extra software te installeren, voor klanten die een licentie voor Adobe Experience Platform hebben verkregen.
+1. **Jupyter-laptop**: Het kan extern worden benaderd als onderdeel van [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) zonder extra software te installeren, voor klanten die een licentie voor Adobe Experience Platform hebben verkregen.
 
 ### Optie 1: ELK-dashboard gebruiken
 
@@ -140,6 +140,10 @@ Om de belangrijkste details te identificeren, gebruiken wij [AEMCS-CDN-Log-Analy
 1. Werk indien nodig de _Index, type bron en andere_ filterwaarden in het dashboard Splunk.
 
    ![Splunk Dashboard](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+
+>[!NOTE]
+>
+>De UI en grafieken in het splunkdashboard verschillen van het ELK dashboard, echter, zijn de belangrijkste details gelijkaardig.
 
 ### Optie 3: Jupyter-laptop gebruiken
 
