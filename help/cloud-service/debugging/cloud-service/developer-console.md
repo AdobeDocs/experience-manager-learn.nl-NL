@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
 duration: 295
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 1d9aeb4e5bd41096a28e3375d124bd6b6b8784aa
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,21 @@ Developer Console is per AEM as a Cloud Service omgeving toegankelijk via Cloud 
 
 Voor toegang tot en gebruik van de Developer Console moeten de volgende machtigingen aan de Adobe ID van de ontwikkelaar worden gegeven via [Admin Console Adobe](https://adminconsole.adobe.com).
 
-1. Zorg ervoor dat de Adobe Org die Cloud Manger en AEM as a Cloud Service producten heeft beïnvloed, actief is in de Adobe Org-switch.
-1. De ontwikkelaar moet lid zijn van de [Product van Cloud Manager __Ontwikkelaar - Cloud Service__ Productprofiel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
-   + Als dit lidmaatschap niet bestaat, kan de ontwikkelaar zich niet aanmelden bij de Developer Console.
+1. Zorg ervoor dat de Adobe in de schakeloptie Org is ingeschakeld. U ziet dan de Adobe die is gerelateerd aan de omgevingen die u wilt inspecteren in de Developer Console.
+1. Als u zich wilt aanmelden bij de Developer Console, moet de ontwikkelaar lid zijn van een van de volgende rollen:
+   + [Product van Cloud Manager __Ontwikkelaar - Cloud Service__ Productprofiel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer): In dit geval ziet de ontwikkelaar de volledige lijst met omgevingen die beschikbaar zijn onder de geselecteerde URL van de Developer Console. Als een ontwikkelomgeving of RDE is geselecteerd in Cloud Manager, kunnen andere ontwikkelomgeving of RDE&#39;s in hetzelfde programma worden weergegeven.
+   + [__AEM__ Productprofiel op __AEM auteur__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles): In dit geval wordt de lijst met omgevingen die in het vorige opsommingsteken wordt beschreven, beperkt tot de gerelateerde productprofielen waaraan deze rol is toegewezen.
 1. De ontwikkelaar moet lid zijn van de [__AEM__ of __AEM__ Productprofiel op AEM auteur en/of in Publicatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + Als dit lidmaatschap niet bestaat, [status](#status) dumps wordt een time-out met een fout van 401 die niet is geautoriseerd.
 
 ### Toegang tot ontwikkelconsole voor probleemoplossing
+
+#### Als ik inlog, zie ik de omgeving waarnaar ik zoek niet in de lijst
+
+Zorg voor het volgende:
+
++ U hebt de juiste URL voor de ontwikkelaarsconsole geselecteerd door op de drie stippen voor de geselecteerde omgeving te klikken via Cloud Manager en Developer Console te selecteren.
++ U hebt [Product van Cloud Manager __Ontwikkelaar - Cloud Service__ Productprofiel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer) om de volledige lijst van milieu&#39;s te zien of u maakt deel uit van [__AEM__ Productprofiel op __AEM auteur__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles) voor de omgeving die u niet vindt.
 
 #### 401 Ongeoorloofde fout bij de status van dumping
 
