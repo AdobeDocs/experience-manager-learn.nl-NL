@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
+source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 6%
+source-wordcount: '547'
+ht-degree: 5%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 6%
    + [Omleiding](document-authoring/redirects.md)
    + [Bulkmetagegevens](document-authoring/bulk-metadata.md)
    + [Metagegevens pagina](document-authoring/page-metadata.md)
+   + [Auteursverificatie](document-authoring/author-authentication.md)
    + Procedure{#how-to}
       + [Documentcontrole](./document-authoring/how-to/document-audit.md)
       + [Documentmachtigingen](./document-authoring/how-to/document-permissions.md)
@@ -36,6 +37,10 @@ ht-degree: 6%
       + [Alternatieve tekst voor afbeelding](./document-authoring/how-to/image-alt-text.md)
       + [Indexering van zoekprogramma&#39;s voorkomen](./document-authoring/how-to/no-index.md)
       + [Responsieve navigatie](document-authoring/how-to/responsive-navigation.md)
+      + [Dynamic Media](./document-authoring/how-to/using-dynamic-media.md)
+      + [Sitemigratie met Importer](./document-authoring/how-to/migration-using-importer.md)
+      + [De importmodule aanpassen](./document-authoring/how-to/customizing-importer.md)
+      + [Bulkimport met behulp van importmodule](./document-authoring/how-to/bulk-importing-using-importer.md)
       + Variaties genereren{#generate-variations}
          + [Overzicht](./document-authoring/how-to/generate-variations/overview.md)
          + [Sidekick configureren](./document-authoring/how-to/generate-variations/configure-sidekick.md)
