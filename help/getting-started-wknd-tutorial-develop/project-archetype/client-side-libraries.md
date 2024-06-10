@@ -12,9 +12,9 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 58ef1c482f127981083c07e5de5a1aba2f7c3aec
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
@@ -184,6 +184,16 @@ Deze integratie wordt automatisch ingesteld door het AEM Project Archetype. Ga v
    >[!NOTE]
    >
    >`npm install` uitvoering is slechts eenmaal nodig , net als na een nieuwe kloon of generatie van het project .
+
+1. Openen `ui.frontend/package.json` en in de **scripts** **start** command add `--env writeToDisk=true`.
+
+   ```json
+   {
+     "scripts": { 
+       "start": "webpack-dev-server --open --config ./webpack.dev.js --env writeToDisk=true",
+     }
+   }
+   ```
 
 1. Start de webpack-ontwikkelserver in **horloge** door de volgende opdracht uit te voeren:
 
