@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 1a745f4b11007df5636c2fc0bea05d56393ef9c6
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1963'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 0%
 # Servicegegevens
 
 Integraties met as a Cloud Service Adobe Experience Manager (AEM) moeten veilig kunnen worden geverifieerd voor AEM service. AEM Developer Console verleent toegang tot servicerecenties, die worden gebruikt om externe toepassingen, systemen en services te vergemakkelijken voor programmacode met AEM auteur- of publicatieservices via HTTP.
+
+AEM integreert met andere producten van de Adobe die [S2S OAuth beheerd via de Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Voor douaneintegratie met de dienstrekeningen, worden de geloofsbrieven van JWT gebruikt en beheerd in de Console van de Ontwikkelaar van de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
