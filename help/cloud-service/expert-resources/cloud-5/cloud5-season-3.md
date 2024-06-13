@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: c67fad3da9b9eaa740c4351448108af3b1542912
+source-git-commit: 272ed4e4782b03f284886a3046440960df538286
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,20 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             <p>
                 <br/>
                 Onderzoek Real User Monitoring (RUM) werkt met Edge Delivery Services.
+            </p>
+        </td>   
+        <td>
+            <a href="./season-3/cloud5-rum-explorer.md">
+                <img alt="Real User Monitoring (RUM) Explorer" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-rum-explorer.md">
+                <strong>Real User Monitoring (RUM) Explorer</strong></a>        
+                <br/><em>met James Talbot &amp; Damian Langsweirdt, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>
+                Leer over de Ontdekkingsreiziger van de Controle van de Echte Gebruiker (RUM) en hoe te om tot het toegang te hebben.
             </p>
         </td>   
         <td>
