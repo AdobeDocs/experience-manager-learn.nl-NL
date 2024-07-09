@@ -1,14 +1,14 @@
 ---
 title: Wolk 5 - Seizoen 3
-description: Met Reden drie leert u over AEM Edge Delivery-service via diepgaande interviews met experts die aan gecompliceerde projecten hebben gewerkt
+description: Met Reden drie leert u over AEM Edge Delivery-service door diepgaande interviews met experts die aan gecompliceerde projecten hebben gewerkt
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 272ed4e4782b03f284886a3046440960df538286
+source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,7 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 Onderzoek Real User Monitoring (RUM) werkt met Edge Delivery Services.
             </p>
         </td>   
+        <!--
         <td>
             <a href="./season-3/cloud5-rum-explorer.md">
                 <img alt="Real User Monitoring (RUM) Explorer" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
@@ -64,13 +65,14 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             <div>
                 <a href="./season-3/cloud5-rum-explorer.md">
                 <strong>Real User Monitoring (RUM) Explorer</strong></a>        
-                <br/><em>met James Talbot &amp; Damian Langsweirdt, AEM Engineering</em>
+                <br/><em>with James Talbot & Damian Langsweirdt, AEM Engineering</em>
             </div>
             <p>
                 <br/>
-                Leer over de Ontdekkingsreiziger van de Controle van de Echte Gebruiker (RUM) en hoe te om tot het toegang te hebben.
+                Learn about Real User Monitoring (RUM) Explorer and how to access it.
             </p>
         </td>   
+        -->
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="Edge Workers" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
@@ -89,11 +91,11 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
     <tr>
         <td>
             <a href="./season-3/cloud5-publish-events.md">
-                <img alt="Publiceren, publicatie van gebeurtenissen in Edge Delivery Services ongedaan maken" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+                <img alt="Publish, publiceren van gebeurtenissen in Edge Delivery Services ongedaan maken" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
-                <strong>Publiceren, publicatie van gebeurtenissen in Edge Delivery Services ongedaan maken</strong></a>        
+                <strong>Publish, publiceren van gebeurtenissen in Edge Delivery Services ongedaan maken</strong></a>        
                 <br/><em>met James Talbot &amp; Amol Anand, AEM Engineering</em>
             </div>
             <p>

@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1229'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 5%
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Java Content Repository](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
-   + [Auteur- en publicatieservices](./underlying-technology/introduction-author-publish.md)
+   + [Auteur en Publish Services](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
    + [AEM Assets Sidekick-insteekmodule](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
@@ -53,13 +53,13 @@ ht-degree: 5%
       + [Pijpleidingen configureren](./cloud-manager/devops/configure-pipelines.md)
       + [Continue integratie](./cloud-manager/devops/continuous-integration.md)
       + [Testresultaten analyseren](./cloud-manager/devops/analyze-test-results.md)
-      + [Dispatcher Configurations](./cloud-manager/devops/dispatcher-configurations.md)
+      + [Dispatcher-configuraties](./cloud-manager/devops/dispatcher-configurations.md)
       + [CDN-loganalyse](./cloud-manager/devops/cdn-log-analysis.md)
 + Local Development Environment Setup {#local-development-environment-set-up}
    + [Overzicht](./local-development-environment/overview.md)
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
    + [Lokale AEM SDK](./local-development-environment/aem-runtime.md)
-   + [Lokale verzendprogramma&#39;s](./local-development-environment/dispatcher-tools.md)
+   + [Lokale Dispatcher-gereedschappen](./local-development-environment/dispatcher-tools.md)
 + Ontwikkelen{#developing}
    + Uitbreidbaarheid{#extensibility}
       + App Builder{#app-builder}
@@ -68,7 +68,7 @@ ht-degree: 5%
          + [Verificatie door Github-website](./developing/extensibility/app-builder/github-webhook-verification.md)
       + UI-uitbreidbaarheid{#ui}
          + [Overzicht](./developing/extensibility/ui/overview.md)
-         + [Adobe Developer Console-project](./developing/extensibility/ui/adobe-developer-console-project.md)
+         + [Adobe Developer Console Project](./developing/extensibility/ui/adobe-developer-console-project.md)
          + [App initialiseren](./developing/extensibility/ui/app-initialization.md)
          + [Extensie registreren](./developing/extensibility/ui/extension-registration.md)
          + [Modal](./developing/extensibility/ui/modal.md)
@@ -95,7 +95,7 @@ ht-degree: 5%
       + [Structuurpakket opslagplaats](./developing/basics/repository-structure-package.md)
       + [Inhoud publiceren](./developing/basics/content-publishing.md)
       + [OSGi-configuraties](./developing/basics/osgi-configurations.md)
-      + [Migratie van Dispatcher Configuration](./developing/basics/dispatcher-configuration.md)
+      + [Dispatcher-configuratiemigratie](./developing/basics/dispatcher-configuration.md)
    + AEM{#aem-projects}
       + [AEM Maven Project](./developing/projects/maven-project-structure.md)
       + [Een AEM Maven-project opschonen](./developing/projects/remove-samples.md)
@@ -127,13 +127,13 @@ ht-degree: 5%
       + [Logboeken](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Foutopsporing op afstand](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
       + [OSGi-webconsole](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
-      + [Verzendgereedschappen](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
+      + [Dispatcher Tools](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Ander gereedschap](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Foutopsporing AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Foutopsporing in AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Overzicht](./debugging/cloud-service/overview.md)
       + [Logboeken](./debugging/cloud-service/logs.md)
       + [Opbouwen en implementeren](./debugging/cloud-service/build-and-deployment.md)
-      + [Ontwerpconsole](./debugging/cloud-service/developer-console.md)
+      + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [Browser voor opslagplaats](./debugging/cloud-service/repository-browser.md)
       + Risico&#39;s{#risks}
          + [Traversale waarschuwingen](./debugging/cloud-service/risks/traversals.md)
@@ -141,7 +141,7 @@ ht-degree: 5%
    + [URL-omleidingen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Caching{#caching}
    + [Overzicht](./caching/overview.md)
-   + [AEM-publicatieservice](./caching/publish.md)
+   + [AEM Publish-service](./caching/publish.md)
    + [AEM Auteur-service](./caching/author.md)
    + [Analyse van hoogte-breedteverhouding CDN-cache](./caching/cdn-cache-hit-ratio-analysis.md)
    + Procedure{#how-to}
@@ -215,8 +215,8 @@ ht-degree: 5%
       + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Indexconversie](./migration/cloud-acceleration-manager/index-converter.md)
       + [De tool Asset Workflow Migration](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
-      + [Navigeren door het beheer voor cloudversnelling](./migration/cloud-acceleration-manager/navigating.md)
-      + [Cloud Acceleration Manager gebruiken](./migration/cloud-acceleration-manager/using.md)
+      + [Navigeren door de Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
+      + [De Cloud Acceleration Manager gebruiken](./migration/cloud-acceleration-manager/using.md)
 + [Inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + Forms{#forms}
    + Ontwikkelen voor Forms as a Cloud Service{#developing-for-cloud-service}
@@ -326,7 +326,7 @@ ht-degree: 5%
       + [Formulierbijlagen uitnemen van verzonden gegevens](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
    + Integreren met Microsoft Dynamics{#formscs-dynamics-crm}
       + [Dynamische toepassing maken](./forms/formscs-dynamics-crm/create-dynamics-account.md)
-      + [Gegevensbron configureren](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
+      + [Source van gegevens configureren](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [Formuliergegevensmodel maken](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [Adaptief formulier maken](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integreren met Salesforce{#integrate-with-salesforce}
@@ -373,8 +373,8 @@ ht-degree: 5%
 + Expertbronnen {#expert-resources}
    + AEM Champions {#aem-champions}
       + [Cloud Manager on boarding Playbook](./expert-resources/aem-champions/onboarding-playbook.md)
-      + [Omgevingstypen van Cloud Manager](./expert-resources/aem-champions/environment-types.md)
-      + [Gebruikersinterface van Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
+      + [Cloud Manager-omgevingstypen](./expert-resources/aem-champions/environment-types.md)
+      + [CLOUD MANAGER UI](./expert-resources/aem-champions/cloud-manager-ui.md)
    + [AEM Deskundigenreeks](./expert-resources/expert-series/aem-experts-series.md)
    + Wolk 5{#cloud-5}
       + [Inleiding](./expert-resources/cloud-5/cloud5-introduction.md)
@@ -388,7 +388,7 @@ ht-degree: 5%
       + [Cloud Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-cloud.md)
       + [Migratie 1](./expert-resources/cloud-5/cloud5-aem-content-migration-part-1.md)
       + [Migratie 2](./expert-resources/cloud-5/cloud5-aem-content-migration-part-2.md)
-      + [Validator van verzender](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
+      + [Dispatcher Validator](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
       + [Zoeken en indexeren](./expert-resources/cloud-5/cloud5-aem-search-and-indexing.md)
       + [Adobe App Builder](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
       + Seizoen 2{#season-2}
@@ -405,9 +405,8 @@ ht-degree: 5%
       + Seizoen 3{#season-3}
          + [Zoeken van derden](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [Real User Monitoring (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum.md)
-         + [Real User Monitoring (RUM) Explorer](./expert-resources/cloud-5/season-3/cloud5-rum-explorer.md)
          + [Edge Workers](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
-         + [Publiceren, publicatie van gebeurtenissen in Edge Delivery Services ongedaan maken](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
+         + [Publish, publiceren van gebeurtenissen in Edge Delivery Services ongedaan maken](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Query-indexen en Excel-formules](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [Uw eigen CDN van Cloudflare maken](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
          + [AEM Assets integreren](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
