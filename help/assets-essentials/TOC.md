@@ -8,15 +8,15 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: a5eb7cb6ba9b806a57a27ad1a0e01609af713656
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 2%
+source-wordcount: '68'
+ht-degree: 0%
 
 ---
 
 
-# AEM Assets Essentials-video&#39;s {#assets-essentials}
+# Video&#39;s over AEM Assets Essentials {#assets-essentials}
 
 + [Overzicht](overview.md)
 
@@ -34,6 +34,7 @@ ht-degree: 2%
    + [Mijn werkruimte](configuring/my-workspace.md)
    + [Metagegevensformulieren](configuring/metadata-forms.md)
    + [Machtigingsbeheer](configuring/permissions-management.md)
+   + [Taxonomiebeheer](configuring/taxonomy-management.md)
 
 + [Integratie van Creative Cloud](integrations/creative-cloud.md)
 
