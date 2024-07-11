@@ -12,9 +12,9 @@ last-substantial-update: 2022-06-13T00:00:00Z
 doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
 duration: 419
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 726715890d997ba3bb85f4833e220ac2222b3a42
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,22 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
 ## Metagegevens exporteren {#metadata-export}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
+
+>[!TIP]
+>
+> Als u CSV-bestand voor metagegevens wilt openen in Excel, gebruikt u de opdracht [Excel-importer](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) in plaats van te dubbelklikken op het bestand om problemen met UTF-8-gecodeerde CSV-bestanden te voorkomen.
+>
+> Voer de volgende stappen uit om het CSV-bestand voor het exporteren van metagegevens te openen in Excel:
+> 
+> 1. Microsoft Excel openen
+> 1. Selecteren __Bestand > Nieuw__ een leeg spreadsheet maken
+> 1. Open het lege werkblad en selecteer __Bestand > Importeren__
+> 1. Selecteren __Tekst__ bestand en klik op __Importeren__
+> 1. Selecteer het geëxporteerde CSV-bestand in het bestandssysteem en klik op __Gegevens ophalen__
+> 1. Selecteer in stap 1 van de wizard Importeren de optie __Gescheiden__ en instellen __Oorsprong bestand__ tot __Unicode (UTF-8)__ en klik op __Volgende__
+> 1. Bij stap 2 stelt u de __Scheidingstekens__ tot __Komma__ en klik op __Volgende__
+> 1. Bij stap 3 laat u de __Kolomgegevensindeling__ ongewijzigd, en klik __Voltooien__
+> 1. Selecteren __Importeren__ om de gegevens aan spreadsheet toe te voegen
 
 ## Metagegevens importeren {#metadata-import}
 
