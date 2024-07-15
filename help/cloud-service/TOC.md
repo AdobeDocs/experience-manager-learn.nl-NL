@@ -268,7 +268,7 @@ ht-degree: 5%
       + [De oplossing testen](./forms/doc-gen-forms-cs/test.md)
       + [Uitdaging](./forms/doc-gen-forms-cs/challenge.md)
    + DocAssurance API gebruiken {#doc-assurance-api}
-+ [ de codefragmenten van de Steekproef ](./forms/doc-assurance-api/using-doc-assurance-api.md)
+      + [ de codefragmenten van de Steekproef ](./forms/doc-assurance-api/using-doc-assurance-api.md)
    + Documentgeneratie met gebruik van batch-API {#formscs-batch-api}
       + [Inleiding](./forms/formscs-batch-api/introduction.md)
       + [Azure-opslag configureren](./forms/formscs-batch-api/configure-azure-storage.md)
