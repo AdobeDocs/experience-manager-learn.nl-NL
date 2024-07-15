@@ -38,11 +38,11 @@ Het dienen van afbeeldingen is misschien wel de meest gebruikte functie van Dyna
 
 In deze handleiding bespreken we de volgende kernmogelijkheden van Dynamic Media Classic.
 
-- **Dynamic Imaging.** De overkoepelende term voor real-time bewerken, opmaken en vergroten, interactief zoomen en pannen, het bekijken van kleuren en structuren, ronddraaien van 360 graden, afbeeldingssjablonen en multimediaviewers.
+- **Dynamic Imaging.** De overkoepelende term voor real-time bewerken, opmaken en vergroten, en interactief zoomen en pannen, het bekijken van kleuren en structuren, ronddraaien van 360 graden, afbeeldingssjablonen en multimediaminiaturen.
 - **Video.** Upload definitieve video&#39;s, publiceer ze en download ze progressief naar configureerbare videoviewers.
-- **Slimme afbeeldingen.** Technologie die gebruikmaakt van Adobe Sensei AI-mogelijkheden en met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de beeldlevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
+- **Slimme Beeldvorming.** Technologie die gebruikmaakt van Adobe Sensei AI-mogelijkheden en met bestaande &quot;Voorinstellingen afbeelding&quot; werkt om de prestaties van de afbeeldingslevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
-Ga naar de [Documentatie voor Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Om extra mogelijkheden van de oplossing te ontdekken, bezoek de [ Documentatie voor Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## De gebruikersinterface van Dynamic Media Classic (UI)
 
@@ -50,26 +50,26 @@ De belangrijkste UI van Dynamic Media Classic bestaat uit drie belangrijke gebie
 
 ![afbeelding](assets/overview/overview-dmc-ui-ew.png)
 
-_DYNAMIC MEDIA CLASSIC UI_
+_UI van Dynamic Media Classic_
 
-**Algemene navigatiebalk.** U bevindt zich boven aan het scherm en gebruikt de knoppen op deze balk voor toegang tot de belangrijkste gebieden en mogelijkheden van de oplossing. U gebruikt dit programma bijvoorbeeld om uploadmogelijkheden te openen, verschillende gebieden voor het samenstellen van elementen te openen (afbeeldingsset, centrifugeset, enz.), belangrijke taken uit te voeren, zoals het instellen van Voorinstellingen afbeelding en Voorinstellingen viewer, en uw elementen te publiceren. Hier kunt u ook uw taken controleren, recente activiteiten bekijken en een keuze maken uit diverse opties voor hulp.
+**globale bar van de Navigatie.** U bevindt zich boven aan het scherm en gebruikt de knoppen op deze balk om toegang te krijgen tot de belangrijkste gebieden en mogelijkheden van de oplossing. U gebruikt dit programma bijvoorbeeld om uploadmogelijkheden te openen, verschillende gebieden voor het samenstellen van elementen te openen (afbeeldingsset, centrifugeset, enz.), belangrijke taken uit te voeren, zoals het instellen van Voorinstellingen afbeelding en Voorinstellingen viewer, en uw elementen te publiceren. Hier kunt u ook uw taken controleren, recente activiteiten bekijken en een keuze maken uit diverse opties voor hulp.
 
-**Elementenbibliotheek.** Links op het scherm bevindt zich de Asset Library, een deelvenster waarmee u elementen kunt ordenen in mappen en submappen die u maakt. Bovenaan in het deelvenster vindt u zoekopdrachten en filters waarmee u elementen kunt zoeken. Met Geavanceerd zoeken kunt u zoeken door meerdere opties op te geven als criteria voor uw zoekopdracht, inclusief verborgen metagegevensvelden die aan dat element zijn gekoppeld. U kunt verwijderde items onder aan het deelvenster zien door op het prullenbakpictogram te klikken. In eerste instantie start u niet met mappen, behalve met de map op hoofdniveau, die dezelfde naam heeft als de naam van uw account.
+**Bibliotheek van Activa.** Linksonder in het scherm bevindt zich de Asset Library, een deelvenster waarmee u elementen kunt ordenen in mappen en submappen die u maakt. Bovenaan in het deelvenster vindt u zoekopdrachten en filters waarmee u elementen kunt zoeken. Met Geavanceerd zoeken kunt u zoeken door meerdere opties op te geven als criteria voor uw zoekopdracht, inclusief verborgen metagegevensvelden die aan dat element zijn gekoppeld. U kunt verwijderde items onder aan het deelvenster zien door op het prullenbakpictogram te klikken. In eerste instantie start u niet met mappen, behalve met de map op hoofdniveau, die dezelfde naam heeft als de naam van uw account.
 
 >[!NOTE]
 >
->Elementen in de prullenbak worden zeven dagen nadat ze zijn geplaatst automatisch permanent verwijderd, tenzij u ze herstelt.
+>Assets in de prullenmand wordt zeven dagen nadat ze zijn geplaatst automatisch permanent verwijderd, tenzij u ze herstelt.
 
-**Deelvenster Bladeren/Samenstellen.** Dit is het centrum van UI, waar u of activa op Browse wijze doorbladert of, als op de wijze van de Bouwstijl, zult u het als canvas voor de bouw van activa als deel van een werkschema gebruiken. Wanneer u zich voor het eerst aanmeldt, wordt het deelvenster Bladeren weergegeven. In het midden van het scherm staan miniatuurversies van uw afbeeldingen in een rasterweergave. U kunt overschakelen op een lijstweergave of een element selecteren en er details over weergeven in de detailweergave.
+**doorblader/bouwt Comité.** Dit is het centrum van UI, waar u of activa op Browse wijze doorbladert of, als in de wijze van de Bouwstijl, zult u het als canvas voor de bouw van activa als deel van een werkschema gebruiken. Wanneer u zich voor het eerst aanmeldt, wordt het deelvenster Bladeren weergegeven. In het midden van het scherm staan miniatuurversies van uw afbeeldingen in een rasterweergave. U kunt overschakelen op een lijstweergave of een element selecteren en er details over weergeven in de detailweergave.
 
 >[!IMPORTANT]
 >
->Naast elke element-id is de id **Markeren voor publicatie** switch. Wanneer de schakeloptie is ingeschakeld (groen), geeft dat aan dat het element is gemarkeerd voor publicatie.
+>Naast elke identiteitskaart van Activa is het **Teken voor Publish** schakelaar. Wanneer de schakeloptie is ingeschakeld (groen), geeft dat aan dat het element is gemarkeerd voor publicatie.
 
 ![afbeelding](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Selecteer de **Publiceren na uploaden** Schakel in het dialoogvenster Uploaden in om elementen automatisch te publiceren tijdens het uploaden.
+>Selecteer **Publish na het Uploaden** checkbox in de Upload dialoog om activa op upload automatisch te publiceren.
 
-Meer informatie over [Navigeren door de gebruikersinterface van Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Leer meer over [ Navigerend UI van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).

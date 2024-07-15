@@ -31,4 +31,4 @@ Met Adobe IMS-productprofielen kunnen gebruikers zich aanmelden bij een AEM-aute
 
 ## Aanvullende bronnen
 
-+ [Het beheren van Producten en Toegang van de Gebruiker in de documentatie van de Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
++ [ het Leiden Producten en Toegang van de Gebruiker in de documentatie van de Admin Console ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)

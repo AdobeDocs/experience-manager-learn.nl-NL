@@ -1,6 +1,6 @@
 ---
 title: AEM Forms Service Credentials
-description: Download de servicegegevens van AEM Developer Console.
+description: Download servicegegevens van AEM Developer Console.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Forms Service Credentials
 
-Integraties met AEM as a Cloud Service moeten veilig kunnen worden geverifieerd op AEM. AEM de Console van de Ontwikkelaar produceert de Referenties van de Dienst, die door externe toepassingen, systemen, en de diensten worden gebruikt om programmatically met AEM de Auteur of van de Publish diensten over HTTP in wisselwerking te staan.
+Integraties met AEM as a Cloud Service moeten veilig kunnen worden geverifieerd op AEM. AEM Developer Console genereert Service Credentials, die door externe toepassingen, systemen en services worden gebruikt om via HTTP programmatisch te communiceren met AEM auteur- of Publish-services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

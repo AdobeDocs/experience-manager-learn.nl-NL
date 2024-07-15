@@ -1,5 +1,5 @@
 ---
-title: Foutopsporing AEM as a Cloud Service
+title: Foutopsporing in AEM as a Cloud Service
 description: op zelfbediening, schaalbare cloudinfrastructuur, waardoor AEM ontwikkelaars moeten begrijpen hoe ze verschillende facetten van AEM as a Cloud Service kunnen begrijpen en debuggen, van het bouwen en implementeren tot het verkrijgen van details over het uitvoeren van AEM toepassingen.
 feature: Developer Tools
 version: Cloud Service
@@ -17,30 +17,30 @@ ht-degree: 0%
 
 ---
 
-# Foutopsporing AEM as a Cloud Service
+# Foutopsporing in AEM as a Cloud Service
 
-AEM as a Cloud Service is de in de cloud geïntegreerde manier om de AEM toepassingen te benutten. AEM as a Cloud Service looppas op zelfbediening, scalable, wolkeninfrastructuur, die AEM ontwikkelaars vereist om te begrijpen en te zuiveren diverse facetten van AEM as a Cloud Service, van bouw en implementatie aan het verkrijgen van details van het runnen van AEM toepassingen te begrijpen en te zuiveren.
+AEM as a Cloud Service is de &#39;cloud-native&#39; manier om de AEM toepassingen te benutten. AEM as a Cloud Service draait op zelfbediening, schaalbare cloudinfrastructuur. Hiervoor moeten AEM ontwikkelaars begrijpen hoe ze verschillende facetten van AEM as a Cloud Service kunnen begrijpen en er fouten in kunnen opsporen, van het bouwen en implementeren tot het verkrijgen van details over het uitvoeren van AEM toepassingen.
 
 ## Logboeken
 
-Logs verstrekt details in hoe uw toepassing in AEM as a Cloud Service werkt, evenals inzichten in kwesties met plaatsingen.
+Logs geeft details over hoe uw toepassing werkt in AEM as a Cloud Service en inzichten in problemen met implementaties.
 
-[Foutopsporing AEM as a Cloud Service met logbestanden](./logs.md)
+[Foutopsporing in AEM as a Cloud Service met behulp van logbestanden](./logs.md)
 
 ## Samenstellen en implementeren
 
-De pijpleidingen van de Manager van de Wolk van de Adobe voeren AEM toepassing door een reeks stappen uit om codekwaliteit en levensvatbaarheid te bepalen wanneer opgesteld aan AEM as a Cloud Service. Elk van de stappen kan in mislukking resulteren, die het belangrijk maken om te begrijpen hoe te zuivert bouwt om de worteloorzaak van te bepalen, en hoe te om het even welke mislukkingen op te lossen.
+De pijpleidingen van Cloud Manager van de Adobe voeren AEM toepassing door een reeks stappen uit om codekwaliteit en levensvatbaarheid te bepalen wanneer opgesteld aan AEM as a Cloud Service. Elk van de stappen kan in mislukking resulteren, die het belangrijk maken om te begrijpen hoe te zuivert bouwt om de worteloorzaak van te bepalen, en hoe te om het even welke mislukkingen op te lossen.
 
-[Fouten opsporen AEM as a Cloud Service build en implementatie](./build-and-deployment.md)
+[Fouten opsporen in AEM as a Cloud Service-build en -implementatie](./build-and-deployment.md)
 
-## Ontwerpconsole
+## Developer Console
 
-De console van de Ontwikkelaar verstrekt een verscheidenheid van informatie en introspecties in AEM as a Cloud Service milieu&#39;s die nuttig zijn om te begrijpen hoe uw toepassing door wordt erkend en binnen AEM as a Cloud Service functioneert.
+De Developer Console biedt verschillende informatie en introspecties in AEM as a Cloud Service-omgevingen die handig zijn om te begrijpen hoe uw toepassing wordt herkend door en functioneert binnen AEM as a Cloud Service.
 
-[Foutopsporing AEM as a Cloud Service met de ontwikkelaarsconsole](./developer-console.md)
+[ het Zuiveren AEM as a Cloud Service met Developer Console ](./developer-console.md)
 
 ## Browser voor opslagplaats
 
-Browser van de Bewaarplaats is een krachtig hulpmiddel dat zicht in AEM onderliggende gegevensopslag verstrekt, die voor gemakkelijke zuivering van AEM as a Cloud Service milieu toestaat. Browser van de Bewaarplaats steunt een read-only mening van de middelen en de eigenschappen van AEM op Productie, Stadium, en Ontwikkeling, evenals auteur, Publish, en de diensten van de Voorproef.
+Browser van de Bewaarplaats is een krachtig hulpmiddel dat zicht in AEM onderliggende gegevensopslag verstrekt, die voor gemakkelijke zuivering van het milieu van AEM as a Cloud Service toestaat. Browser van de Bewaarplaats steunt een read-only mening van de middelen en de eigenschappen van AEM op Productie, Stadium, en Ontwikkeling, evenals Auteur, Publish, en de diensten van de Voorproef.
 
-[Foutopsporing AEM as a Cloud Service met Repository Browser](./repository-browser.md)
+[Fouten opsporen in AEM as a Cloud Service met Repository Browser](./repository-browser.md)

@@ -1,6 +1,6 @@
 ---
 title: Thematische workflow | Snel site maken AEM
-description: Leer hoe u de themabronnen van een Adobe Experience Manager-site kunt bijwerken om merkspecifieke stijlen toe te passen. Leer hoe u een proxyserver gebruikt om een live voorvertoning van CSS- en JavaScript-updates weer te geven. In deze zelfstudie wordt ook uitgelegd hoe u met behulp van de Front End Pipeline van Adobe Cloud Manager thema-updates op een AEM site kunt implementeren.
+description: Leer hoe u de themabronnen van een Adobe Experience Manager-site kunt bijwerken om merkspecifieke stijlen toe te passen. Leer hoe u een proxyserver gebruikt om een live voorvertoning van CSS- en JavaScript-updates weer te geven. Dit leerprogramma zal ook behandelen hoe te om themaupdates aan een AEMPlaats op te stellen gebruikend Adobe Cloud Manager Front End Pipeline.
 version: Cloud Service
 feature: Core Components
 topic: Content Management, Development
@@ -21,19 +21,19 @@ ht-degree: 0%
 
 # Thematische workflow {#theming}
 
-In dit hoofdstuk werken we de themabronnen van een Adobe Experience Manager-site bij om merkspecifieke stijlen toe te passen. We leren hoe u een proxyserver kunt gebruiken om een voorvertoning van CSS- en JavaScript-updates weer te geven terwijl we code schrijven op de livesite. In deze zelfstudie wordt ook uitgelegd hoe u met behulp van de Front End Pipeline van Adobe Cloud Manager thema-updates op een AEM site kunt implementeren.
+In dit hoofdstuk werken we de themabronnen van een Adobe Experience Manager-site bij om merkspecifieke stijlen toe te passen. We leren hoe u een proxyserver kunt gebruiken om een voorvertoning van CSS- en JavaScript-updates weer te geven terwijl we code schrijven op de livesite. Dit leerprogramma zal ook behandelen hoe te om themaupdates aan een AEMPlaats op te stellen gebruikend Adobe Cloud Manager Front End Pipeline.
 
 Uiteindelijk wordt onze site bijgewerkt en worden er stijlen in opgenomen die passen bij het WKND-merk.
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in het dialoogvenster [Paginasjablonen](./page-templates.md) hoofdstuk is voltooid.
+Dit is een meerdelig leerprogramma en men veronderstelt dat de stappen die in het [ hoofdstuk van de Malplaatjes van de Pagina ](./page-templates.md) worden geschetst zijn voltooid.
 
 ## Doelstellingen
 
 1. Leer hoe u de themabronnen voor een site kunt downloaden en wijzigen.
 1. Leer hoe u code kunt vergelijken met de livesite voor een real-time voorvertoning.
-1. Begrijp de end-to-end workflow om gecompileerde CSS- en JavaScript-updates als onderdeel van een thema te leveren met de Front End Pipeline van Adobe Cloud Manager.
+1. Begrijp de werkschema van begin tot eind van het leveren van gecompileerde CSS en JavaScript updates als deel van een thema gebruikend de Adobe Voorste Pijpleiding van Cloud Manager.
 
 ## Een thema bijwerken {#theme-update}
 
@@ -50,18 +50,18 @@ Stappen op hoog niveau voor de video:
 
 ### Oplossingsbestanden
 
-Download de voltooide stijlen voor de [WKND-voorbeeldthema](assets/theming/WKND-THEME-src-1.1.zip)
+Download de gebeëindigde stijlen voor het [ Thema van de Steekproef WKND ](assets/theming/WKND-THEME-src-1.1.zip)
 
 ## Een thema implementeren met behulp van een vooruiteindepipet {#deploy-theme}
 
-Implementeer updates van een thema naar een AEM omgeving met gebruik van de Front End Pipeline van Cloud Manager.
+Implementeer updates van een thema in een AEM omgeving met behulp van Cloud Manager Front End Pipeline.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338722?quality=12&learn=on)
 
 Stappen op hoog niveau voor de video:
 
-1. Een nieuwe git maken [opslagplaats in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
-1. Voeg uw themabronproject toe aan de git-opslagplaats van Cloud Manager:
+1. Creeer een nieuwe git [ bewaarplaats in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Voeg uw project met themabronnen toe aan de Cloud Manager Git-opslagplaats:
 
    ```shell
    $ cd <PATH_TO_THEME_SOURCES_FOLDER>
@@ -71,15 +71,15 @@ Stappen op hoog niveau voor de video:
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. Een [Vooruiteinde pijp](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) in Cloud Manager om de front-end code te implementeren.
+1. Vorm a [ Voorste Pijpleiding van het Eind ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) in Cloud Manager om de front eindcode op te stellen.
 1. Stel de Voorste Pijpleiding van het Eind in werking om updates aan het doel AEM milieu op te stellen.
 
 ### Voorbeeldrepo&#39;s
 
 Er zijn een paar rapporten van voorbeeld GitHub die als verwijzing kunnen worden gebruikt:
 
-* [aem-site-template-standard](https://github.com/adobe/aem-site-template-standard)
-* [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e) - Wordt gebruikt als voorbeeld voor &quot;echte&quot; projecten.
+* [ aem-plaats-plaats-malplaatje-standaard ](https://github.com/adobe/aem-site-template-standard)
+* [ a-plaats-plaats-malplaatje-basic-theme-e2e ](https://github.com/adobe/aem-site-template-basic-theme-e2e) - gebruikt als voorbeeld voor &quot;real-world&quot;projecten.
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -87,4 +87,4 @@ U hebt zojuist een thema bijgewerkt en geïmplementeerd om dit te AEM.
 
 ### Volgende stappen {#next-steps}
 
-Ga dieper in op AEM ontwikkeling en begrijp meer van de onderliggende technologie door een site te maken met de [Projectarchetype AEM](../project-archetype/overview.md).
+Neem een diepere duik binnen aan AEM ontwikkeling en begrijp meer van de onderliggende technologie door een plaats te creëren gebruikend [ AEM Archetype van het Project ](../project-archetype/overview.md).

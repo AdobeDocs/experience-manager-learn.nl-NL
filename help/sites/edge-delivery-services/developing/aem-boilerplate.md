@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # AEM
 
-Stel de Git-gegevensopslagplaats voor de code in met de [AEM sjabloon](https://github.com/adobe/aem-boilerplate) voor Edge Delivery Services.
+Opstelling de bewaarplaats van de Git van de code met het [ AEM boilerplate malplaatje ](https://github.com/adobe/aem-boilerplate) voor Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)

@@ -15,7 +15,7 @@ ht-degree: 12%
 # AEM Foundation-video&#39;s en -tutorials {#foundation}
 
 + [Overzicht](./overview.md)
-+ Administratie {#administration}
++ Beheer {#administration}
    + [Redenen voor upgrade-AEM begrijpen](./administration/understand-reasons-to-upgrade.md)
    + [Gebruik oak-run.jar om indexen te beheren](./administration/use-oak-run-jar-to-manage-indexes.md)
    + [Onlinerevisie opschonen gebruiken](./administration/use-online-revision-clean-up.md)
@@ -26,7 +26,7 @@ ht-degree: 12%
    + [OAutbereik](authentication/oauth-code-sample-develop.md)
    + [Verificatie](authentication/authentication-support-article-understand.md)
    + [IMS-verificatie begrijpen op AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
-+ Adobe Cloud Manager{#cloud-manager}
++ Adobe Cloud Manager {#cloud-manager}
    + [Adobe Cloud Manager begrijpen](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [CI/CD-pijpleidingen](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
    + [Aangepaste machtigingen](./cloud-manager/cloud-permissions.md)
@@ -36,7 +36,7 @@ ht-degree: 12%
    + [Dynamische include-bestanden instellen](./development/set-up-sling-dynamic-include.md)
    + [Tips en trucs voor Java API](./development/understand-java-api-best-practices.md)
    + [Uitvoer van stijlmodel begrijpen](./development/understand-sling-model-exporter.md)
-   + [Begrijp het Indexeren van Oak Beste praktijken](./development/understand-indexing-best-practices.md)
+   + [Indexeren van beste praktijken in Oak begrijpen](./development/understand-indexing-best-practices.md)
 + Projecten {#projects}
    + [Ontwikkelen AEM projecten](./projects/develop-aem-projects.md)
    + [Projectstramienen gebruiken](./projects/use-project-masters.md)
@@ -58,7 +58,7 @@ ht-degree: 12%
    + [Hoe te om indexerende verwante kwesties in AEM te onderzoeken](./troubleshooting/how-to-investigate-indexing-related-issues.md)
    + [Hoe te om SAML verwante kwesties in AEM te onderzoeken](./troubleshooting/how-to-investigate-saml-related-issues.md)
    + [Hoe te onderzoek verwante kwesties in AEM onderzoeken](./troubleshooting/how-to-investigate-search-related-issues.md)
-   + [Hoe te om de Oak login symbolische zittingsvervaldag te plaatsen](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
+   + [De vervaldatum van de Oak-aanmeldingstoken instellen](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
    + [Hoe te om kwesties met betrekking tot de configuratie van de Jetty problemen op te lossen](./troubleshooting/how-to-troubleshoot-issues-related-to-jetty-configuration.md)
    + [Hoe te om prestatiesverwante kwesties problemen op te lossen](./troubleshooting/how-to-troubleshoot-performance-related-issues.md)
    + [Stappen om geheugengerelateerde problemen in AEM op te lossen](./troubleshooting/steps-to-resolve-memory-related-issues.md)

@@ -1,6 +1,6 @@
 ---
-title: De CI/CD-pijpleiding gebruiken in Adobe Cloud Manager
-description: De Manager van de Wolk van de Adobe verstrekt een eenvoudige, maar flexibele zelfbediening CI/CD pijpleiding die AEM projectteams toestaat om code aan alle AEM milieu's snel, veilig en constant op te stellen die in AMS worden ontvangen. In deze videoreeks wordt het instellen en uitvoeren van de CI/CD Pipeline van Cloud Manager in zowel mislukkings- als successcenario's besproken.
+title: Gebruik de CI/CD pijpleiding in Adobe Cloud Manager
+description: Adobe Cloud Manager biedt een eenvoudige, maar flexibele zelfbediening-CI/CD Pipeline die AEM projectteams toestaat om code snel, veilig en consequent in te voeren aan alle AEM milieu's die in AMS worden ontvangen. In deze videoreeks wordt het instellen en uitvoeren van Cloud Manager CI/CD Pipeline in zowel mislukking als successcenario's besproken.
 sub-product: Experience Manager Cloud Manager, Experience Manager
 doc-type: Feature Video
 topic: Architecture
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 ---
 
-# De CI/CD-pijpleiding gebruiken in Adobe Cloud Manager
+# Gebruik de CI/CD pijpleiding in Adobe Cloud Manager
 
-De Manager van de Wolk van de Adobe verstrekt een eenvoudige, maar flexibele zelfbediening CI/CD pijpleiding die AEM projectteams toestaat om code aan alle AEM milieu&#39;s snel, veilig en constant op te stellen die in AMS worden ontvangen. In deze videoreeks wordt het instellen en uitvoeren van de CI/CD Pipeline van Cloud Manager in zowel mislukkings- als successcenario&#39;s besproken.
+Adobe Cloud Manager biedt een eenvoudige, maar flexibele zelfbediening-CI/CD Pipeline die AEM projectteams toestaat om code snel, veilig en consequent in te voeren aan alle AEM milieu&#39;s die in AMS worden ontvangen. In deze videoreeks wordt het instellen en uitvoeren van Cloud Manager CI/CD Pipeline in zowel mislukking als successcenario&#39;s besproken.
 
 ## Inleiding
 
@@ -34,27 +34,27 @@ Een korte inleiding op de programma&#39;s van Cloud Manager en Cloud Manager.
 
 ## Installatie van de CI/CD-pijplijn
 
-In deze video wordt het instellen van de pijplijn voor het programma in Cloud Manager besproken.
+In deze video wordt het opzetten van de pijplijn voor het programma in Cloud Manager besproken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23083?quality=12&learn=on)
 
 ## Een mislukte uitvoering van een pijpleiding
 
-In deze video wordt de uitvoering van de CI/CD Pipeline-code besproken waarvoor de vereiste kwaliteitscontroles van Cloud Manager zijn mislukt. Hierbij wordt gebruikgemaakt van de **[!DNL yellow]** opslagplaats vertakking.
+In deze video wordt de uitvoering van de CI/CD Pipeline besproken met behulp van code die de vereiste kwaliteitscontroles door Cloud Manager niet heeft uitgevoerd. Hierbij wordt de **[!DNL yellow]** repository-vertakking gebruikt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084?quality=12&learn=on)
 
 ## Een geslaagde pijpleiding uitvoeren
 
-In deze video wordt de geslaagde uitvoering van de CI/CD Pipeline onderzocht met behulp van code die de vereiste kwaliteitscontroles van Cloud Manager doorgeeft, waarbij de **[!DNL master]** opslagplaats vertakking.
+In deze video wordt de succesvolle uitvoering van de CI/CD Pipeline onderzocht met behulp van code die vereiste kwaliteitscontroles door Cloud Manager doorgeeft, met behulp van de **[!DNL master]** repository vertakking.
 
-In deze video wordt ook ingegaan op de [!UICONTROL Activity] in Cloud Manager, waarmee u opnieuw toegang kunt krijgen tot actieve uitvoeringen of voltooide of mislukte uitvoeringen kunt controleren.
+Deze video raakt ook op de [!UICONTROL Activity] -console in Cloud Manager, die hertoegang tot actieve uitvoeringen toestaat, of revisie van voltooide of mislukte uitvoeringen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085?quality=12&learn=on)
 
 ## Ondersteunende materialen
 
-* [Gebruikershandleiding voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
-* [Codescannen downloaden [!DNL SonarQube] regels](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
-   * *XLSX beschikbaar onder aan de gekoppelde sectie*
-* [[!DNL SonarQube] Index met Java™-regels](https://rules.sonarsource.com/java/)
+* [ de Gids van de Gebruiker van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [ het aftasten van de code van de Download  [!DNL SonarQube]  regels ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+   * *XLSX beschikbaar bij de bodem van de verbonden sectie*
+* [[!DNL SonarQube]  Java™ regelingenindex ](https://rules.sonarsource.com/java/)

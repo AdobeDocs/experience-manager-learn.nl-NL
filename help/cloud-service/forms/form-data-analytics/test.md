@@ -28,13 +28,13 @@ Bekijk een voorbeeld van een formulier en verzend het formulier met behulp van v
 
 De formuliergegevens die in Adobe Analytics zijn vastgelegd, worden in donut-indeling weergegeven
 
-**Indiening per staat**
+**Voorleggen door Staat**
 
-![applicantsbystate](assets/donut.png)
+![ applicantsbystate ](assets/donut.png)
 
 Veldvalidatiefouten
 
-![field-validation-error](assets/donut-field-validation.png)
+![ gebied-bevestiging-fout ](assets/donut-field-validation.png)
 
 ## Foutopsporing
 
@@ -51,13 +51,13 @@ _satellite.setDebug(true)
 
 Communiceer met uw formulier terwijl u het consolevenster open houdt. Je moet zoiets zien
 
-![console-debug](assets/debug.png)
+![ console-debug ](assets/debug.png)
 
 ## Adobe Experience Platform Debugger gebruiken
 
-Voeg de [AEP-extensie foutopsporing](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) aan uw browser (u moet zich aanmelden) om meer het zuiveren informatie te krijgen
+Voeg de [ debugger van AEP uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) aan uw browser (u moet binnen ondertekenen) toe om meer het zuiveren informatie te krijgen
 
-![platform-debugger](assets/platform-debugger.png)
+![ platform-debugger ](assets/platform-debugger.png)
 
 ## Gefeliciteerd
 

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Hoe te om te toelaten zuivert output voor Workbench
 
-*Deze video loopt door het proces om toe te laten zuivert output voor Workbench.*
+*Deze video loopt door het proces om toe te laten zuiveren output voor Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335497?quality=12&learn=on)

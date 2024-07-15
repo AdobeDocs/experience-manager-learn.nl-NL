@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Een veelvoorkomend geval is het weergeven van een PDF-document met de gegevens die de invuller van het formulier heeft ingevoerd.
 
-Voor dit gebruiksgeval hebben we de [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Om dit gebruiksgeval te verwezenlijken hebben wij [ Adobe PDF ingebed API ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) gebruikt.
 
 De volgende stappen zijn uitgevoerd om de integratie te voltooien
 
@@ -31,7 +31,7 @@ Er is een aangepaste component (embed-pdf) gemaakt om de PDF in te sluiten die d
 
 ## Clientbibliotheek
 
-De volgende code wordt uitgevoerd wanneer de `viewPDF` op de knop Selectievakje wordt geklikt. We geven de adaptieve formuliergegevens, sjabloonnaam, door aan het eindpunt om de PDF te genereren. Het gegenereerde PDF-bestand wordt vervolgens weergegeven aan de invuller van het formulier met de PDF JavaScript-bibliotheek ingesloten.
+De volgende code wordt uitgevoerd wanneer op de knop voor het selectievakje `viewPDF` wordt geklikt. We geven de adaptieve formuliergegevens, sjabloonnaam, door aan het eindpunt om de PDF te genereren. Het gegenereerde PDF-bestand wordt vervolgens aan de gebruiker weergegeven met de PDF-bibliotheek van het formulier.
 
 ```javascript
 $(document).ready(function() {
@@ -93,31 +93,32 @@ $(document).ready(function() {
 
 ## XSD genereren op basis van de XML-gegevens
 
-U kunt alle gratis onlinegereedschappen gebruiken om [XSD genereren](https://www.freeformatter.com/xsd-generator.html) uit de XML-gegevens die in de vorige stap zijn gegenereerd.
+U kunt om het even welke vrije online hulpmiddelen gebruiken om [ XSD ](https://www.freeformatter.com/xsd-generator.html) van de xmlgegevens te produceren die in de vorige stap worden geproduceerd.
 
 ## De sjabloon uploaden
 
-Zorg ervoor dat u de xdp-sjabloon uploadt naar [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) de knop Maken gebruiken
+Zorg ervoor u het xdp malplaatje in [ AEM Forms ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) uploadt gebruikend creeer knoop
 
 
 ## Adaptief formulier maken
 
 Maak een adaptief formulier op basis van de XSD van de vorige stap.
-Voeg een nieuw tabblad toe aan het aanpassingsbestand. Voeg een component CheckBox en een component embed-pdf toe aan dit tabblad Geef het selectievakje viewPDF op.
+Voeg een nieuw tabblad toe aan het aanpassingsbestand. Een component selectievakje en een component embed-pdf toevoegen aan dit tabblad
+Geef het selectievakje de naam van de weergave-PDF.
 De component embed-pdf configureren, zoals hieronder in de schermafbeelding wordt weergegeven
-![embed-pdf](assets/embed-pdf-configuration.png)
+![ embed-pdf ](assets/embed-pdf-configuration.png)
 
-**API-sleutel voor PDF insluiten** - Dit is de sleutel die u kunt gebruiken om pdf in te sluiten. Deze sleutel werkt alleen met localhost. U kunt [uw eigen sleutel](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) en deze aan een ander domein koppelen.
+**bed PDF API Sleutel** in - dit is de sleutel die u kunt gebruiken om pdf in te bedden. Deze sleutel werkt alleen met localhost. U kunt [ uw eigen sleutel ](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) tot stand brengen en het associëren met ander domein.
 
-**Eindpunt dat de pdf retourneert** - Dit is de aangepaste servlet die de gegevens samenvoegt met de xdp-sjabloon en de PDF retourneert.
+**Eindpunt die pdf** terugkeren - dit is douaneserlet die de gegevens met het xdp malplaatje zal samenvoegen en pdf terugkeren.
 
-**Sjabloonnaam** - Dit is het pad naar de xdp. Doorgaans wordt het bestand opgeslagen in de map formsanddocuments.
+**naam van het Malplaatje** - dit is de weg aan xdp. Doorgaans wordt het bestand opgeslagen in de map formsanddocuments.
 
-**PDF-bestandsnaam** - Dit is de tekenreeks die wordt weergegeven in de ingesloten pdf-component.
+**de Naam van het Dossier van de PDF** - dit is het koord dat in ingebedde pdf component zal verschijnen.
 
 ## Aangepaste servlet maken
 
-Er is een aangepaste servlet gemaakt om de gegevens samen te voegen met de XDP-sjabloon en de PDF te retourneren. De code om dit te verwezenlijken is hieronder vermeld. De aangepaste servlet maakt deel uit van de [insluiten, pdf-bundel](assets/embedpdf.core-1.0-SNAPSHOT.jar)
+Er is een aangepaste servlet gemaakt om de gegevens samen te voegen met de XDP-sjabloon en de PDF te retourneren. De code om dit te verwezenlijken is hieronder vermeld. De douaneserlet maakt deel uit van de [ ingebedde pdf- bundel ](assets/embedpdf.core-1.0-SNAPSHOT.jar)
 
 ```java
 import java.io.ByteArrayInputStream;
@@ -227,11 +228,11 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 
 Voer de volgende stappen uit om dit op uw lokale server te testen:
 
-1. [De ingesloten pdf-bundel downloaden en installeren](assets/embedpdf.core-1.0-SNAPSHOT.jar).
+1. [ Download en installeer de ingebedde pdf- bundel ](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen.
-1. Voeg het pad /bin/getPDFToEmbed toe in de uitgesloten padsectie van het Adobe Granite CSRF-filter met behulp van de [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). In uw productieomgeving is het raadzaam de [Beschermingskader van de GVTO](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. Voeg de weg /bin/getPDFToEmbed in de uitgesloten wegensectie van de Filter van de Adobe toe Granite CSRF gebruikend [ AEM ConfigMgr ](http://localhost:4502/system/console/configMgr). In uw productiemilieu wordt het geadviseerd om het [ CSRF beschermingskader ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en) te gebruiken
 1. [De clientbibliotheek en de aangepaste component importeren](assets/embed-pdf.zip)
 1. [Het adaptieve formulier en de sjabloon importeren](assets/embed-pdf-form-and-xdp.zip)
-1. [Voorbeeld van adaptief formulier](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
+1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
 1. Enkele formuliervelden invullen
 1. Tab naar het tabblad PDF weergeven. Schakel het selectievakje PDF weergeven in. Er wordt een PDF weergegeven in het formulier dat is gevuld met de aangepaste formuliergegevens

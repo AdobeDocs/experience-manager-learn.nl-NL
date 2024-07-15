@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Hoe te om ladingstests in werking te stellen gebruikend FormsIVS en OutputIVS
 
-*Deze video doorloopt de stappen om ladingstests van UI in werking te stellen gebruikend steekproeven FormsIVS en OutputIVS.*
+*Deze video loopt door de stappen om ladingstests van UI in werking te stellen gebruikend steekproeven FormsIVS en OutputIVS.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)

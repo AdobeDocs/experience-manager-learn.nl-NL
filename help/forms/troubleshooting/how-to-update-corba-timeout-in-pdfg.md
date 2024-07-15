@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Hoe te om onderbreking CORBA in PDFG bij te werken om transactie terugdraaiende kwesties te verlichten
 
-*In deze video wordt beschreven hoe u de time-out van CORBA in Forms PDFG bijwerkt om problemen met het terugdraaien van transacties te verhelpen.*
+*Deze video beschrijft het proces om onderbreking CORBA in Forms PDFG bij te werken om de kwesties van de transactierolling te verlichten.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)

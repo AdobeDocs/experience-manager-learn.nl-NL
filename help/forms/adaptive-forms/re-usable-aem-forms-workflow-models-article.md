@@ -23,8 +23,8 @@ Vanaf AEM Forms 6.5 kunnen we nu workflowmodellen maken die niet zijn gekoppeld 
 Voer de volgende stappen uit om een dergelijke workflow te ontwerpen
 
 1. Aanmelden bij AEM
-1. Wijs uw browser aan [workflowmodel](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
-1. Klikken __Maken > Model maken__ om een workflowmodel toe te voegen
+1. Punt uw browser aan [ werkschemamodel ](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Klik __creëren > Model__ creëren om een werkschemamodel toe te voegen
 1. Geef de juiste naam en titel op voor het workflowmodel en klik op Gereed
 1. Het nieuwe model openen in de bewerkingsmodus
 1. Sleep de taakcomponent toewijzen aan het workflowmodel en zet deze neer
@@ -35,7 +35,8 @@ Voer de volgende stappen uit om een dergelijke workflow te ontwerpen
 Het formulierpad kan op drie manieren worden opgegeven
 
 1. Beschikbaar op een absoluut pad - Dit betekent dat de workflow nauw gekoppeld is aan een adaptief formulier. Dat is niet wat wij hier willen
-1. **Verzonden naar de workflow** - Dit betekent dat wanneer het adaptieve formulier wordt ingediend, de workflow-engine de naam van het formulier uit de ingediende gegevens haalt. Dit is de optie die moet worden geselecteerd
-1. Beschikbaar op een pad in een variabele - Dit betekent dat het adaptieve formulier wordt opgehaald uit de workflowvariabele. In de volgende screenshot ziet u de juiste optie die u moet kiezen voor ontkoppelde workflow in een adaptief formulier
+1. **Voorgelegd aan het werkschema** - dit betekent wanneer de adaptieve vorm wordt voorgelegd, haalt de werkschemamotor de naam van de vorm uit de voorgelegde gegevens. Dit is de optie die moet worden geselecteerd
+1. Beschikbaar op een pad in een variabele - Dit betekent dat het aangepaste formulier wordt opgehaald uit de variabele met de workflow.
+In de volgende schermafbeelding ziet u de juiste optie die u moet kiezen voor de ontkoppelingsworkflow in een adaptief formulier
 
-![Opnieuw bruikbare AEM Forms Workflow-modellen](assets/workflomodel.PNG)
+![ herbruikbare modellen van het Werkschema van AEM Forms ](assets/workflomodel.PNG)

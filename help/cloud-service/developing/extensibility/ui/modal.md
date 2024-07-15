@@ -20,24 +20,24 @@ ht-degree: 0%
 
 # Extensie, modaal
 
-![AEM UI-extensie, modaal](./assets/modal/modal.png){align="center"}
+![ AEM UI uitbreiding modaal ](./assets/modal/modal.png){align="center"}
 
 AEM de extensiemodel UI biedt een manier om aangepaste UI aan AEM UI-extensies te koppelen.
 
-Modals zijn React toepassingen, die op worden gebaseerd [Spectrum reageren](https://react-spectrum.adobe.com/react-spectrum/)en kan elke aangepaste UI maken die door de extensie wordt vereist, inclusief, maar niet beperkt tot:
+De modules zijn React toepassingen, die op [ worden gebaseerd Reageer Spectrum ](https://react-spectrum.adobe.com/react-spectrum/), en kunnen om het even welke douaneUI tot stand brengen die door de uitbreiding wordt vereist, die, maar niet beperkt tot:
 
 + Bevestigingsdialoogvensters
-+ [Invoerformulieren](https://react-spectrum.adobe.com/react-spectrum/#forms)
-+ [Voortgangsindicatoren](https://react-spectrum.adobe.com/react-spectrum/#status)
-+ [Overzicht van resultaten](https://react-spectrum.adobe.com/react-spectrum/#collections)
++ [ de vormen van de Input ](https://react-spectrum.adobe.com/react-spectrum/#forms)
++ [ de indicatoren van de Voortgang ](https://react-spectrum.adobe.com/react-spectrum/#status)
++ [ Overzicht van Resultaten ](https://react-spectrum.adobe.com/react-spectrum/#collections)
 + Foutberichten
 + ... of zelfs een volledige, multiview React toepassing!
 
 ## Modale routes
 
-De modale ervaring wordt gedefinieerd door de extensie App Builder React-app die is gedefinieerd onder de `web-src` map. Net als bij elke React-app wordt de volledige ervaring georkestreerd met [Reageerroutes](https://reactrouter.com/en/main/components/routes) die renderen [Reageren op componenten](https://reactjs.org/docs/components-and-props.html).
+De modale ervaring wordt gedefinieerd door de extensie App Builder React die is gedefinieerd in de map `web-src` . Zoals met om het even welke Reageren app, wordt de volledige ervaring georkestreerd gebruikend [ Reageer routes ](https://reactrouter.com/en/main/components/routes) die [ Reageren componenten ](https://reactjs.org/docs/components-and-props.html) teruggeven.
 
-Ten minste één route is vereist om de eerste modale weergave te genereren. Deze aanvankelijke route wordt aangehaald in [extensieverichting](#extension-registration)s `onClick(..)` functie, zoals hieronder getoond.
+Ten minste één route is vereist om de eerste modale weergave te genereren. Deze aanvankelijke route wordt aangehaald in de [ functie van de uitbreidingsregistratie ](#extension-registration) `onClick(..)`, zoals hieronder getoond.
 
 
 + `./src/aem-ui-extension/web-src/src/components/App.js`
@@ -81,12 +81,12 @@ function App(props) {
 
 ## Registratie van extensies
 
-Om een modaal te openen, roept een vraag aan `guestConnection.host.modal.showUrl(..)` is gemaakt op basis van de `onClick(..)` functie. `showUrl(..)` wordt doorgegeven aan een JavaScript-object met sleutel/waarden:
+Als u een modaal object wilt openen, wordt `guestConnection.host.modal.showUrl(..)` aangeroepen vanuit de functie `onClick(..)` van de extensie. `showUrl(..)` wordt doorgegeven aan een JavaScript-object met sleutel/waarden:
 
-+ `title` verstrekt de naam van titel van modaal die aan de gebruiker wordt getoond
-+ `url` is de URL die het [Reageerroute](#modal-routes) verantwoordelijk voor de eerste visie van het modaal vervoer.
++ `title` bevat de naam van de titel van het modaal dat aan de gebruiker wordt weergegeven
++ `url` is URL die de [ Reageer route ](#modal-routes) verantwoordelijk voor de aanvankelijke mening van modal aanhaalt.
 
-Het is absoluut noodzakelijk dat de `url` doorgegeven aan `guestConnection.host.modal.showUrl(..)` wordt omgezet in route in de extensie, anders wordt er niets weergegeven in het modale.
+Het is absoluut noodzakelijk dat de `url` die aan `guestConnection.host.modal.showUrl(..)` wordt doorgegeven, wordt omgezet in routebeschrijving in de extensie, anders wordt er niets weergegeven in het modaal.
 
 + `./src/aem-ui-extension/web-src/src/components/ExtensionRegistration.js`
 
@@ -109,7 +109,7 @@ function ExtensionRegistration() {
 
 ## Modal component
 
-Elke route van de extensie [dat is niet `index` route](./extension-registration.md#app-routes), wordt toegewezen aan een component React die kan worden gerenderd in de modale extensie.
+Elke route van de uitbreiding, [ die niet de `index` route ](./extension-registration.md#app-routes) is, kaarten aan een React component die in de modaal van de uitbreiding kan teruggeven.
 
 Een modaal kan uit om het even welk aantal routes van React, van eenvoudig één-route modaal aan een complex, multi-routemodel worden samengesteld.
 
@@ -185,9 +185,9 @@ export default function MyModal() {
 
 ## Het modaal sluiten
 
-![Modaal sluitknop voor UI-extensie AEM](./assets/modal/close.png){align="center"}
+![ AEM UI uitbreiding modaal dichte knoop ](./assets/modal/close.png){align="center"}
 
-Modals moeten hun eigen dichte controle verstrekken. Dit gebeurt door een beroep te doen op `guestConnection.host.modal.close()`.
+Modals moeten hun eigen dichte controle verstrekken. Dit gebeurt door `guestConnection.host.modal.close()` aan te roepen.
 
 ```javascript
 <ButtonGroup align="end">

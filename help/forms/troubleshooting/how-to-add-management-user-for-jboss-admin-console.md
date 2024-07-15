@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Beheergebruikers toevoegen voor JBoss-beheerconsole
 
-*Deze video doorloopt de stappen om beheersgebruiker voor JBoss admin console toe te voegen.*
+*Deze video loopt door de stappen om beheersgebruiker voor JBoss toe te voegen admin console.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335484?quality=12&learn=on)

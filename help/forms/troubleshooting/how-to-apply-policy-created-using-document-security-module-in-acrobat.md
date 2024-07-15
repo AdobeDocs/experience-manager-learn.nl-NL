@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Een beleid toepassen dat is gemaakt met de documentbeveiligingsmodule in Acrobat
 
-*Deze video doorloopt het proces om beleid toe te passen dat wordt gecreeerd gebruikend de module van de documentveiligheid in Acrobat.*
+*Deze video loopt door het proces om beleid toe te passen dat gebruikend de module van de documentveiligheid in Acrobat wordt gecreeerd.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335486?quality=12&learn=on)

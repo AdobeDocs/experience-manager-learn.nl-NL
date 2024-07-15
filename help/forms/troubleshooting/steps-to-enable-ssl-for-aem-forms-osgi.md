@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Stappen om SSL in te schakelen voor AEM Forms OSGi-instantie
 
-*Deze video doorloopt de stappen om SSL voor AEM Forms OSGi instantie toe te laten.*
+*Deze video loopt door de stappen om SSL voor instantie toe te laten AEM Forms OSGi.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335524?quality=12&learn=on)

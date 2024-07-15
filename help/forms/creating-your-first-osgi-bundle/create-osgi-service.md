@@ -24,7 +24,7 @@ De dienst OSGi wordt semantisch bepaald door zijn de dienstinterface en als de d
 
 ## De interface definiëren
 
-Een eenvoudige interface met één methode om gegevens met het <span class="x x-first x-last">XDP</span> sjabloon.
+Een eenvoudige interface met één methode om gegevens met het <span class="x x-first x-last"> XDP </span> malplaatje samen te voegen.
 
 ```java
 package com.mysite.samples;
@@ -40,7 +40,7 @@ public interface MyfirstInterface
 
 ## Implementeer de interface
 
-Een nieuw pakket maken met de naam `com.mysite.samples.impl` om de implementatie van de interface te houden.
+Maak een nieuw pakket met de naam `com.mysite.samples.impl` voor de implementatie van de interface.
 
 ```java
 package com.mysite.samples.impl;
@@ -78,19 +78,19 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 }
 ```
 
-De annotatie `@Component(...)` op lijn 10 maakt merken deze klasse van Java als Component OSGi evenals registreert het als Dienst OSGi.
+De aantekening `@Component(...)` op regel 10 maakt deze Java-klasse gemarkeerd als een OSGi-component en registreert deze als een OSGi-service.
 
-De `@Reference` De annotatie maakt deel uit van de verklarende diensten van OSGi, en wordt gebruikt om een verwijzing van te injecteren [Uitvoerservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) in de variabele `outputService`.
+De `@Reference` aantekening maakt deel uit van de verklarende diensten OSGi, en wordt gebruikt om een verwijzing van [ OutputService ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) in veranderlijk `outputService` te injecteren.
 
 
 ## De bundel maken en implementeren
 
-* Openen **opdrachtpromptvenster**
+* Open **bevel snel venster**
 * Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
 * Het bovenstaande bevel zal automatisch de bundel aan uw AEM instantie bouwen en opstellen die op localhost loopt:4502
 
-De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\core\target`. De bundel kan ook in AEM worden opgesteld gebruikend [Felix-webconsole.](http://localhost:4502/system/console/bundles)
+De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\core\target` . De bundel kan ook in AEM worden opgesteld gebruikend de [ het Webconsole van de Felix.](http://localhost:4502/system/console/bundles)
 
 ## De service gebruiken
 
@@ -101,16 +101,16 @@ MyFirstAEMFormsService myFirstAEMFormsService = sling.getService(com.mysite.samp
 com.adobe.aemfd.docmanager.Document generatedDocument = myFirstAEMFormsService.mergeDataWithXDPTemplate(xdp_or_pdf_template,xmlDocument);
 ```
 
-Het voorbeeldpakket met de JSP-pagina kan [hier gedownload](assets/learning_aem_forms.zip)
+Het steekproefpakket dat de JSP pagina bevat kan [ van hier worden gedownload ](assets/learning_aem_forms.zip)
 
 [De volledige bundel kan worden gedownload](assets/mysite.core-1.0.0-SNAPSHOT.jar)
 
 ## De verpakking testen
 
-Importeer en installeer het pakket in AEM met de [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+De invoer en installeert het pakket in AEM gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 
 Gebruik postman om een POST aan te roepen en de invoerparameters te verstrekken zoals hieronder getoond in het scherm ontsproten
-![postbode](assets/test-service-postman.JPG)
+![ postman ](assets/test-service-postman.JPG)
 
 ## Volgende stappen
 

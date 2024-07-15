@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen om DDX-gerelateerde problemen op te lossen
 
-*Deze video doorloopt de stappen om de vereiste informatie te vangen om DX verwante kwesties in de dienst van de Assembler van Forms problemen op te lossen.*
+*Deze video loopt door de stappen om de vereiste informatie te vangen om DX verwante kwesties in de dienst van de Assembler van Forms problemen op te lossen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335517?quality=12&learn=on)

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen om spoor in de opstelling van Unix toe te laten
 
-*Deze video doorloopt de stappen om tracering in Unix-configuratie voor AEM Forms PDFG in te schakelen.*
+*Deze video loopt door stappen om spoor in de opstelling van Unix voor AEM Forms PDFG toe te laten.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)

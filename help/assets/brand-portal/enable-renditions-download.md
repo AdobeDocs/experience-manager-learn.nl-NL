@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Downloaden van vertoningen inschakelen in de Brand Portal
 
-*Deze video doorloopt de stappen om het downloaden van uitvoeringen in de Brand Portal mogelijk te maken.*
+*Deze video loopt door de stappen om de download van vertoningen in Brand Portal toe te laten.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335449?quality=12&learn=on)

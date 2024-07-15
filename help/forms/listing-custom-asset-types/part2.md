@@ -25,13 +25,13 @@ ht-degree: 0%
 In het kader van dit artikel maken we een aangepaste sjabloon om de typen aangepaste elementen en de typen OOTB-elementen op dezelfde pagina weer te geven. Volg de onderstaande instructies om een aangepaste sjabloon te maken
 
 1. Een deelmap maken: onder /apps. Geef het veld de naam &quot; myportalcomponent &quot;
-1. Voeg een eigenschap &quot;fpContentType&quot; toe. Stel de waarde in op &quot;**/libs/fd/ fp/formTemplate&quot;.**
+1. Voeg een eigenschap &quot;fpContentType&quot; toe. Stel de waarde in op &quot;**/libs/fd/fp/formTemplate&quot;.**
 1. Voeg een eigenschap &quot;title&quot; toe en stel de waarde ervan in op &quot;custom template&quot;. Dit is de naam die u zult zien in de vervolgkeuzelijst van de component Search and Lister
 1. Maak een &#39;&#39;template.html&#39;&#39; in deze map. Dit bestand bevat de code voor het opmaken en weergeven van de verschillende elementtypen.
 
-![appsfolder](assets/appsfolder_.png)
+![ appsfolder ](assets/appsfolder_.png)
 
-De volgende code geeft een overzicht van de verschillende typen elementen die de zoek- en bibliotheekcomponent gebruiken. Er worden afzonderlijke html-elementen gemaakt voor elk type element, zoals wordt weergegeven door het gegevenstype = &quot;video&quot;-tag. Voor het elementtype &quot;video&#39;s&quot; gebruiken we de optie &lt;video> -element om de video inline af te spelen. Voor het elementtype &quot;worddocuments&quot; gebruiken we een andere HTML-markering.
+De volgende code geeft een overzicht van de verschillende typen elementen die de zoek- en bibliotheekcomponent gebruiken. Er worden afzonderlijke html-elementen gemaakt voor elk type element, zoals wordt weergegeven door het gegevenstype = &quot;video&quot;-tag. Voor middelentype van &quot;video&quot;gebruiken wij het &lt;video> element om de video inline te spelen. Voor het elementtype &quot;worddocuments&quot; gebruiken we een andere HTML-markering.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -75,7 +75,7 @@ De volgende code geeft een overzicht van de verschillende typen elementen die de
 
 ## De component Search en Lister configureren {#configure-search-and-lister-component}
 
-Zodra wij het douanemalplaatje hebben bepaald, moeten wij dit douanemalplaatje met de component &quot;van het Onderzoek en van de Registratie&quot;associëren. Wijs uw browser aan [naar deze URL](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Zodra wij het douanemalplaatje hebben bepaald, moeten wij dit douanemalplaatje met de component &quot;van het Onderzoek en van de Registratie&quot;associëren. Wijs uw browser [ aan dit url ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html) aan.
 
 Schakel over naar de ontwerpmodus en configureer het alineasysteem om de component Zoeken en registreren op te nemen in de toegestane componentengroep. De component Search en Lister maakt deel uit van de groep Document Services.
 
@@ -86,13 +86,13 @@ Open de configuratie-eigenschappen van de component &quot;Search and Lister&quot
 * /content/dam/VideosAndWordDocuments
 * /content/dam/formsanddocuments/assettypes
 
-![assetmap](assets/selectingassetfolders.png)
+![ assetfolder ](assets/selectingassetfolders.png)
 
 Tab naar het tabblad Weergave. Hier kiest u de sjabloon die u wilt weergeven in de zoekopdracht en de bibliotheekcomponent.
 
 Selecteer &#39;aangepaste sjabloon&#39; in de vervolgkeuzelijst, zoals hieronder wordt weergegeven.
 
-![zoekmachine](assets/searchandlistercomponent.gif)
+![ onderzoek andlister ](assets/searchandlistercomponent.gif)
 
 Vorm de types van activa die u in het portaal wilt een lijst maken. De typen elementen op het tabblad &quot;Lijst met elementen&quot; configureren en de typen elementen configureren. In dit voorbeeld zijn de volgende typen elementen geconfigureerd
 
@@ -103,13 +103,13 @@ Vorm de types van activa die u in het portaal wilt een lijst maken. De typen ele
 
 Het volgende het schermschot toont u de activa die voor lijst worden gevormd
 
-![assettypen](assets/assettypes.png)
+![ assettypes ](assets/assettypes.png)
 
-Nu u uw Onderzoek en de Kleine Component van het Portaal hebt gevormd, is het tijd om de lijst in actie te zien. Wijs uw browser aan [naar deze URL](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). De resultaten moeten ongeveer overeenkomen met de onderstaande afbeelding.
+Nu u uw Onderzoek en de Kleine Component van het Portaal hebt gevormd, is het tijd om de lijst in actie te zien. Wijs uw browser [ aan dit url ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled) aan. De resultaten moeten ongeveer overeenkomen met de onderstaande afbeelding.
 
 >[!NOTE]
 >
->Als in uw portal aangepaste elementtypen worden vermeld op een publicatieserver, moet u de gebruiker &quot;read&quot; toestemming geven voor het verzenden van het knooppunt **/apps/fd/fp/extensions/querybuilder**
+>Als uw portaal aangepaste elementtypen op een publicatieserver weergeeft, moet u &quot;read&quot;-machtigingen geven aan de gebruiker van de fd-service aan het knooppunt **/apps/fd/fp/extensions/querybuilder**
 
-![assettypen](assets/assettypeslistings.png)
-[Download en installeer dit pakket met pakketbeheer.](assets/customassettypekt1.zip) Dit bevat voorbeeld-mp4- en tekstdocumenten en xdp-bestanden die worden gebruikt als elementtypen om te worden weergegeven met de component search en lister
+![ assettypes ](assets/assettypeslistings.png)
+[ Download en installeer dit pakket met gebruik van pakketbeheer.](assets/customassettypekt1.zip) Dit bevat voorbeeld-MP4- en Word-documenten en xdp-bestanden die worden gebruikt als elementtypen om te worden weergegeven met de component search en lister

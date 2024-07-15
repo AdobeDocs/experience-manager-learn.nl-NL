@@ -23,7 +23,7 @@ Stappen die nodig zijn voor het maken van een Adobe Campaign Standard-profiel me
 
 ## Aangepaste verificatie maken {#create-custom-authentication}
 
-AEM Forms ondersteunt de volgende typen verificatie bij het maken van een gegevensbron met het zwembaarbestand
+Bij het maken van Data Source met het gumerbestand ondersteunt AEM Forms de volgende soorten verificatietypen
 
 * Geen
 * OAuth 2.0
@@ -31,7 +31,7 @@ AEM Forms ondersteunt de volgende typen verificatie bij het maken van een gegeve
 * API-sleutel
 * Aangepaste verificatie
 
-![campagne](assets/campaignfdm.gif)
+![ campagne fdm ](assets/campaignfdm.gif)
 
 Wij zullen douaneauthentificatie moeten gebruiken om REST vraag aan Adobe Campaign Standard te maken.
 
@@ -102,20 +102,21 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 }
 ```
 
-## Gegevensbron maken {#create-data-source}
+## Source voor gegevens maken {#create-data-source}
 
 De eerste stap bestaat uit het maken van het wagerbestand. Het waggerbestand definieert de REST API die wordt gebruikt om een profiel te maken in Adobe Campaign Standard. In het kwikbestand worden de invoerparameters en de uitvoerparameters van de REST API gedefinieerd.
 
-Er wordt een gegevensbron gemaakt met behulp van het wagerbestand. Wanneer u een gegevensbron maakt, kunt u het verificatietype opgeven. In dit geval gebruiken we aangepaste verificatie om verificatie uit te voeren met Adobe Campaign. De bovenstaande code is gebruikt voor verificatie met Adobe Campaign.
+Er wordt een gegevensbron gemaakt met behulp van het wagerbestand. Wanneer u Data Source maakt, kunt u het verificatietype opgeven. In dit geval gebruiken we aangepaste verificatie om verificatie uit te voeren met Adobe Campaign. De bovenstaande code is gebruikt voor verificatie met Adobe Campaign.
 
-Voorbeeldwagerbestand wordt aan u gegeven als onderdeel van het element dat betrekking heeft op dit artikel.**Zorg ervoor u de gastheer en basePath in het wagerdossier om uw ACS instantie te passen**
+Voorbeeldwagerbestand wordt aan u gegeven als onderdeel van het element dat betrekking heeft op dit artikel.**zorg ervoor u de gastheer en basePath in het wagerdossier verandert om uw instantie ACS** aan te passen
 
 ## De oplossing testen {#test-the-solution}
 
 Volg de volgende stappen om de oplossing te testen:
-* [Controleer of u de hier beschreven stappen hebt uitgevoerd](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [ zorg ervoor u de hier beschreven stappen hebt gevolgd ](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Download en decomprimeer dit bestand om het wagerbestand op te halen](assets/create-acs-profile-swagger-file.zip)
-* Gegevensbron maken met behulp van het waggbestand Formuliergegevensmodel maken en baseren op de gegevensbron die in de vorige stap is gemaakt
+* Source-gegevens maken met behulp van het wagerbestand
+Formuliergegevensmodel maken en dit baseren op de gegevens die in de vorige stap zijn gemaakt in de Source
 * Maak een adaptief formulier op basis van het formuliergegevensmodel dat u eerder hebt gemaakt.
 * Sleep de volgende elementen van het tabblad Gegevensbronnen naar het adaptieve formulier.
 

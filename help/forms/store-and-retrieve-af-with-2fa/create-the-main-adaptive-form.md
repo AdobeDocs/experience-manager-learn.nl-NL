@@ -20,18 +20,18 @@ ht-degree: 0%
 
 # Het belangrijkste adaptieve formulier maken
 
-Het formulier **StoreAFWithAttachments** is het belangrijkste adaptieve formulier. Dit adaptieve formulier is het ingangspunt voor het gebruiksgeval. In dit formulier worden gebruikersgegevens, waaronder het mobiele nummer, vastgelegd. Dit formulier kan ook enkele bijlagen toevoegen. Wanneer op de knop Opslaan en afsluiten wordt geklikt, wordt de code aan de serverzijde uitgevoerd om de formuliergegevens in de database op te slaan en wordt een unieke toepassings-id gegenereerd en aan de gebruiker gepresenteerd voor een veilige bewaring. Deze toepassings-id wordt gebruikt om het mobiele nummer op te halen dat aan de toepassing is gekoppeld.
+De vorm **StoreAFWithAttachments** is de belangrijkste adaptieve vorm. Dit adaptieve formulier is het ingangspunt voor het gebruiksgeval. In dit formulier worden gebruikersgegevens, waaronder het mobiele nummer, vastgelegd. Dit formulier kan ook enkele bijlagen toevoegen. Wanneer op de knop Opslaan en afsluiten wordt geklikt, wordt de code aan de serverzijde uitgevoerd om de formuliergegevens in de database op te slaan en wordt een unieke toepassings-id gegenereerd en aan de gebruiker gepresenteerd voor een veilige bewaring. Deze toepassings-id wordt gebruikt om het mobiele nummer op te halen dat aan de toepassing is gekoppeld.
 
-![hoofdaanvraagformulier](assets/6552.JPG)
+![ belangrijkste toepassingsvorm ](assets/6552.JPG)
 
-Dit formulier is gekoppeld aan **bootboxjs540,storeAFWithAttachments** clientbibliotheken die eerder in de cursus zijn gemaakt en een AEM die tijdens het verzenden van het formulier worden geactiveerd.
+Deze vorm wordt geassocieerd met **bootboxjs540, storeAFWithAttachments** cliëntbibliotheken die vroeger in de cursus en een AEM worden gecreeerd die op vormvoorlegging teweeggebracht.
 
 
-* De voorbeeldformulieren zijn gebaseerd op [aangepaste adaptieve formuliersjabloon](assets/custom-template-with-page-component.zip) die in AEM moeten worden geïmporteerd om de voorbeeldformulieren correct te kunnen weergeven.
+* De steekproefvormen zijn gebaseerd op [ douane adaptieve vormmalplaatje ](assets/custom-template-with-page-component.zip) dat in AEM voor de steekproefvormen moet worden ingevoerd om correct terug te geven.
 
-* De voltooide [FormStoreAfWithAttachments](assets/store-af-with-attachments-form.zip) kan worden gedownload en geïmporteerd in uw AEM.
+* De voltooide [ Vorm StoreAfWithAttachments ](assets/store-af-with-attachments-form.zip) kan in uw AEM instantie worden gedownload en worden ingevoerd.
 
-* De [Aan dit formulier gekoppelde AEM](assets/workflow-model-store-af-with-attachments.zip) het formulier werkt alleen als het in uw AEM exemplaar is geïmporteerd.
+* Het [ AEM werkschema verbonden aan deze vorm ](assets/workflow-model-store-af-with-attachments.zip) moet in uw AEM instantie worden ingevoerd opdat de vorm werkt.
 
 
 ## Volgende stappen

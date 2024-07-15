@@ -1,5 +1,5 @@
 ---
-title: App Builder-app voor AEM UI initialiseren
+title: Een App Builder-app voor AEM gebruikersinterface initialiseren
 description: Leer hoe u een AEM UI-extensie App Builder-app initialiseert die definieert waar de extensie wordt weergegeven en welk werk deze uitvoert.
 version: Cloud Service
 feature: Developer Tools
@@ -28,6 +28,6 @@ Initialiseer een AEM UI-extensie App Builder-app die definieert waar de extensie
 
 >[!IMPORTANT]
 >
-> In de bovenstaande video ziet u het gebruik van een extensie van Content Fragment Console om de initialisatie van de app voor de extensie App Builder te illustreren. Nochtans, is het belangrijk om op te merken dat de behandelde concepten op alle AEM uitbreidingen kunnen worden toegepast UI.
+> In de bovenstaande video ziet u het gebruik van een extensie van Content Fragment Console om de initialisatie van de App Builder-extensie-app te illustreren. Nochtans, is het belangrijk om op te merken dat de behandelde concepten op alle AEM uitbreidingen kunnen worden toegepast UI.
 
-Zie de Adobe Developer documentatie voor een [gedetailleerde doorloop van het initialisatieproces van de app](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization).
+Zie de documentatie van Adobe Developer voor a [ gedetailleerde looppas-door van het app initialiseringsproces ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization).

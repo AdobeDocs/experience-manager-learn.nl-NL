@@ -25,9 +25,9 @@ In deze zelfstudie worden de stappen beschreven die nodig zijn voor het opslaan 
 
 * Gebruik de GuideBridge-API om toegang te krijgen tot de Adaptief-formuliergegevens
 
-* Maak een POST vraag aan een servlet. Deze servlet slaat de gegevens in het gegevensbestand en de vormgehechtheid in de bewaarplaats CRX op. De opgeslagen gegevens in het gegevensbestand worden geassocieerd met een GUID.
+* Maak een POST vraag aan een servlet. Deze server slaat de gegevens op in de database en de formulierbijlagen in de CRX-opslagplaats. De opgeslagen gegevens in het gegevensbestand worden geassocieerd met een GUID.
 
-* Wanneer u het Adaptieve formulier wilt vullen met de opgeslagen gegevens, haalt u de gegevens die aan de GUID zijn gekoppeld op en vult u het Adaptieve formulier met het gereedschap **request.setAttribute** methode.
+* Wanneer u de Aangepaste Vorm met de opgeslagen gegevens wilt bevolken, wint u de gegevens verbonden aan GUID terug en bevolkt de Aanpassende Vorm gebruikend de {**methode 0} request.setAttribute.**
 
 ## Bewijs van de gebruikszaak
 
@@ -45,4 +45,4 @@ Het publiek van deze inhoud heeft naar verwachting enige ervaring op de volgende
 
 ## Volgende stappen
 
-[Gegevensbron configureren](./configure-data-source.md)
+[Source voor gegevens configureren](./configure-data-source.md)

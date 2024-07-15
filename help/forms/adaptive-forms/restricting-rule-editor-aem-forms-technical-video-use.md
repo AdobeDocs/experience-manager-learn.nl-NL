@@ -22,7 +22,7 @@ De aangepaste formulierregeleditor beperken tot specifieke groepen in AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/19470?quality=12&learn=on)
 
-*In deze video wordt het proces doorlopen waarbij de aangepaste formulierregeleditor wordt beperkt tot specifieke groepen in AEM.*
+*Deze video loopt door het proces om de adaptieve redacteur van de vormregel tot specifieke groepen in AEM te beperken.*
 
 >[!NOTE]
 >

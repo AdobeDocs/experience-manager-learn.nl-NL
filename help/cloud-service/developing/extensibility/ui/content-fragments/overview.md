@@ -1,6 +1,6 @@
 ---
 title: Extensies voor inhoudsfragmenten AEM
-description: Leer hoe u AEM extensies voor as a Cloud Service inhoudsfragmenten bouwt en implementeert
+description: Leer hoe u AEM as a Cloud Service Content Fragment-extensies kunt maken en implementeren
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -27,9 +27,9 @@ AEM de UI van de Fragmenten van de Inhoud is een krachtige verlengbare UI voor h
 
 De Content Fragment Console in AEM (Adobe Experience Manager) is een gebruikersinterface die een gecentraliseerde locatie biedt voor het beheren en ordenen van inhoudsfragmenten. Het biedt een uitgebreide reeks hulpmiddelen en eigenschappen aan om inhoudsfragmenten tot stand te brengen, uit te geven, te publiceren en te volgen, die gebruikers machtigen om gestructureerde inhoud over diverse kanalen en touchpoints efficiënt te beheren.
 
-![Console voor inhoudsfragmenten](./assets/overview/cfc.png)
+![ de Console van Fragmenten van de Inhoud ](./assets/overview/cfc.png)
 
-[Console AEM inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) is de uitbreidbare interface voor het weergeven en beheren van inhoudsfragmenten. [AEM extensies van Content Fragment Console worden gemaakt](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) met de `@adobe/aem-cf-admin-ui-ext-tpl` App Builder-sjabloon.
+[ AEM de Console van de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) is verlengbare UI voor het lijst van en het beheren van inhoudsfragmenten. [ AEM de uitbreidingen van de Console van het Fragment van de Inhoud worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) gebruikend het `@adobe/aem-cf-admin-ui-ext-tpl` malplaatje van App Builder.
 
 De volgende extensiepunten voor de Content Fragments Console zijn beschikbaar:
 
@@ -48,7 +48,7 @@ De volgende extensiepunten voor de Content Fragments Console zijn beschikbaar:
               <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/" title="Actiebalk" target="_blank" rel="referrer">Actiebalk</a></p>
               <p class="is-size-6">Pas handelingen aan wanneer een of meer inhoudsfragmenten zijn geselecteerd.</p>
               <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De documenten weergeven</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening de documenten </span>
               </a>
             </div>
           </div>
@@ -68,7 +68,7 @@ De volgende extensiepunten voor de Content Fragments Console zijn beschikbaar:
           <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/" title="Rasterkolommen" target="_blank" rel="referrer">Rasterkolommen</a></p>
           <p class="is-size-6">Pas de gegevens aan die in de lijst Inhoudsfragmenten worden weergegeven.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De documenten weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening de documenten </span>
           </a>
         </div>
       </div>
@@ -88,7 +88,7 @@ De volgende extensiepunten voor de Content Fragments Console zijn beschikbaar:
           <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/" title="Menu Koptekst" target="_blank" rel="referrer">Menu Koptekst</a></p>
           <p class="is-size-6">Pas acties aan voor wanneer er geen inhoudsfragmenten zijn geselecteerd.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De documenten weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening de documenten </span>
           </a>
         </div>
       </div>
@@ -100,9 +100,9 @@ De volgende extensiepunten voor de Content Fragments Console zijn beschikbaar:
 
 De Content Fragment Editor in AEM (Adobe Experience Manager) is een gebruikersinterfacecomponent waarmee gebruikers inhoudsfragmenten kunnen maken, bewerken en beheren. Het biedt een visueel intuïtieve en gebruiksvriendelijke omgeving voor het werken met gestructureerde inhoud, waarmee gebruikers inhoudselementen kunnen definiëren en indelen, sjablonen kunnen toepassen, variaties kunnen beheren en een voorvertoning kunnen weergeven van de inhoud die op verschillende kanalen wordt weergegeven. De Inhoudsfragmenteditor stroomlijnt het proces van het maken van herbruikbare en modulaire inhoud die eenvoudig kan worden gedistribueerd en gepubliceerd over meerdere digitale ervaringen.
 
-![Inhoudsfragmenteditor](./assets/overview/cfe.png)
+![ de Redacteur van Fragmenten van de Inhoud ](./assets/overview/cfe.png)
 
-AEM de Inhoudsfragmenteditor is de uitbreidbare UI voor het bewerken van inhoudsfragmenten. [AEM extensies van de Content Fragment Editor worden gemaakt](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) met de `@adobe/aem-cf-editor-ui-ext-tpl` App Builder-sjabloon.
+AEM de Inhoudsfragmenteditor is de uitbreidbare UI voor het bewerken van inhoudsfragmenten. [ AEM de uitbreidingen van de Redacteur van het Fragment van de Inhoud worden gecreeerd ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) gebruikend het `@adobe/aem-cf-editor-ui-ext-tpl` malplaatje van App Builder.
 
 De volgende extensiepunten van de Content Fragments Editor zijn beschikbaar:
 
@@ -121,7 +121,7 @@ De volgende extensiepunten van de Content Fragments Editor zijn beschikbaar:
             <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/" title="Menu Koptekst" target="_blank" rel="referrer">Menu Koptekst</a></p>
             <p class="is-size-6">Pas handelingen aan in het koptekstmenu van de Content Fragment Editor.</p>
             <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-              <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De documenten weergeven</span>
+              <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening de documenten </span>
             </a>
           </div>
         </div>
@@ -141,7 +141,7 @@ De volgende extensiepunten van de Content Fragments Editor zijn beschikbaar:
           <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/" title="Rich Text Editor, werkbalk"  target="_blank" rel="referrer">Rich Text Editor, werkbalk</a></p>
           <p class="is-size-6">Voeg een aangepaste knop toe aan de Rich Text Editor (RTE) van de Content Fragment Editor.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De documenten weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening de documenten </span>
           </a>
         </div>
       </div>
@@ -162,7 +162,7 @@ De volgende extensiepunten van de Content Fragments Editor zijn beschikbaar:
           <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/" title="Widgets van Rich Text Editor" target="_blank" rel="referrer">Widgets van Rich Text Editor</a></p>
           <p class="is-size-6">Pas acties in RTE aan die aan aanslagen worden gebonden.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De documenten weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening de documenten </span>
           </a>
         </div>
       </div>
@@ -182,7 +182,7 @@ De volgende extensiepunten van de Content Fragments Editor zijn beschikbaar:
           <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/ " title="Badges Rich Text Editor" target="_blank" rel="referrer">Badges Rich Text Editor</a></p>
           <p class="is-size-6">Pas niet-bewerkbare gestileerde blokken aan in RTE.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">De documenten weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening de documenten </span>
           </a>
         </div>
       </div>
@@ -209,7 +209,7 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-bulk-property-update.md" title="Bulkeigenschap bijwerken">Bulk Content Fragment property update</a></p>
           <p class="is-size-6">Een uitbreiding van de actiebalk van de inhoudsfragmentconsole met modale en Adobe I/O Runtime-actie.</p>
           <a href="./examples/console-bulk-property-update.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening het voorbeeld </span>
           </a>
         </div>
       </div>
@@ -229,7 +229,7 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
                     <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="Op OpenAI gebaseerde afbeelding genereren en uploaden naar AEM extensie">OpenAPI-afbeelding genereren</a></p>
                     <p class="is-size-6">Onderzoek een uitbreiding van de voorbeeldactie die een beeld gebruikend OpenAI produceert, uploadt het aan AEM en werkt beeldbezit op het geselecteerde Inhoudsfragment bij.</p>
                     <a href="./examples/console-image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening het voorbeeld </span>
                     </a>
                 </div>
             </div>
@@ -249,7 +249,7 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/custom-grid-columns.md" title="Aangepaste kolommen">Aangepaste kolommen</a></p>
           <p class="is-size-6">Voeg een aangepaste kolom toe aan de Content Fragment Console.</p>
           <a href="./examples/custom-grid-columns.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening het voorbeeld </span>
           </a>
         </div>
       </div>
@@ -269,7 +269,7 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-export-to-xml.md" title="Exporteren naar XML">Exporteren naar XML</a></p>
           <p class="is-size-6">Exporteer een inhoudsfragment als XML uit de Inhoudsfragmenteditor.</p>
           <a href="./examples/editor-export-to-xml.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening het voorbeeld </span>
           </a>
         </div>
       </div>
@@ -289,7 +289,7 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Rich Text Editor, werkbalkknop">Rich Text Editor, werkbalkknop</a></p>
           <p class="is-size-6">Voeg aangepaste werkbalkknoppen toe aan RTE-velden in de Inhoudsfragmenteditor.</p>
           <a href="./examples/editor-rte-toolbar.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening het voorbeeld </span>
           </a>
         </div>
       </div>
@@ -309,7 +309,7 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Widget Rich Text Editor">Widget Rich Text Editor</a></p>
           <p class="is-size-6">Voeg widgets toe aan de Rich Text Editor in de Content Fragment Editor.</p>
           <a href="./examples/editor-rte-widget.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening het voorbeeld </span>
           </a>
         </div>
       </div>
@@ -329,7 +329,7 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-badges.md" title="Badge Rich Text Editor">Badge Rich Text Editor</a></p>
           <p class="is-size-6">Voeg badges toe aan de Rich Text Editor in de Content Fragment Editor.</p>
           <a href="./examples/editor-rte-badges.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening het voorbeeld </span>
           </a>
         </div>
       </div>
@@ -350,7 +350,7 @@ Welkom bij een verzameling AEM voorbeelden van UI-uitbreidingscodes! Deze bron i
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-custom-field.md" title="Aangepaste velden">Aangepaste velden</a></p>
           <p class="is-size-6">Maak aangepaste velden voor inhoudsfragmenten.</p>
           <a href="./examples/editor-custom-field.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Het voorbeeld weergeven</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Mening het voorbeeld </span>
           </a>
         </div>
       </div>

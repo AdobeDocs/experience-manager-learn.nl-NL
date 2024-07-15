@@ -1,6 +1,6 @@
 ---
 title: Fouten opsporen in Dispatcher-gereedschappen
-description: De Dispatcher Tools verstrekt een inperkt milieu van de Server van het Web Apache dat kan worden gebruikt om AEM als Verzender van de AEM van de Dienst van de Publicatie plaatselijk te simuleren Cloud Servicen. Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cachegeheugen kunnen van essentieel belang zijn om ervoor te zorgen dat de end-to-end AEM toepassing correct is en dat ondersteuning wordt geboden voor cache- en beveiligingsconfiguraties.
+description: De hulpmiddelen van Dispatcher verstrekt een containerized milieu van de Server van het Web Apache die kan worden gebruikt om AEM als Dispatcher van de dienst van Publish van de Cloud Service plaatselijk te simuleren AEM. Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cachegeheugen kunnen van essentieel belang zijn om ervoor te zorgen dat de end-to-end AEM toepassing correct is en dat ondersteuning wordt geboden voor cache- en beveiligingsconfiguraties.
 feature: Dispatcher
 jira: KT-5918
 topic: Development
@@ -17,25 +17,25 @@ ht-degree: 0%
 
 # Fouten opsporen in Dispatcher-gereedschappen
 
-De Dispatcher Tools verstrekt een inperkt milieu van de Server van het Web Apache dat kan worden gebruikt om AEM als Verzender van de AEM van de Dienst van de Publicatie plaatselijk te simuleren Cloud Servicen.
+De hulpmiddelen van Dispatcher verstrekt een containerized milieu van de Server van het Web Apache die kan worden gebruikt om AEM als Dispatcher van de dienst van Publish van de Cloud Service plaatselijk te simuleren AEM.
 
 Fouten opsporen in de logbestanden van Dispatcher Tools en de inhoud van het cachegeheugen kunnen van essentieel belang zijn om ervoor te zorgen dat de end-to-end AEM toepassing correct is en dat ondersteuning wordt geboden voor cache- en beveiligingsconfiguraties.
 
 >[!NOTE]
 >
->Aangezien de Hulpmiddelen van de Ontvanger op container-gebaseerd zijn, telkens als het opnieuw is begonnen, worden de vroegere logboeken en de geheim voorgeheugeninhoud vernietigd.
+>Aangezien de Hulpmiddelen van Dispatcher op container-gebaseerd zijn, telkens als het opnieuw wordt begonnen, worden de vroegere logboeken en de geheim voorgeheugeninhoud vernietigd.
 
-## Logboeken voor Dispatcher Tools
+## Dispatcher Tools-logboeken
 
-Logboeken voor Dispatcher Tools zijn beschikbaar via de `stdout` of de `bin/docker_run` , of met meer details, beschikbaar in de container van de Dokker bij `/etc/https/logs`.
+Logbestanden met Dispatcher-gereedschappen zijn beschikbaar via de opdracht `stdout` of `bin/docker_run` , of met meer details, beschikbaar in de Docker-container op `/etc/https/logs` .
 
-Zie [Logboeken voor verzending](./logs.md#dispatcher-logs) voor instructies over hoe te om tot de logboeken van de container van de Dokker van de Hulpmiddelen van de Dispatcher rechtstreeks toegang te hebben.
+Zie [ de logboeken van Dispatcher ](./logs.md#dispatcher-logs) voor instructies op hoe te om tot de logboeken van de container van de Docker van Dispatcher van Hulpmiddelen direct toegang te hebben.
 
-## Cache van Dispatcher Tools
+## Dispatcher Tools-cache
 
 ### De toegang tot van logboeken in de container van de Dokker
 
-De Dispatcher-cache heeft rechtstreeks toegang tot de Docker-container op ` /mnt/var/www/html`.
+De Dispatcher-cache kan rechtstreeks worden geopend in de Docker-container op ` /mnt/var/www/html` .
 
 ```shell
 $ docker ps
@@ -55,7 +55,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd
 
-De logboekbestanden van de Dispatcher kunnen uit de Docker-container worden gekopieerd op `/mnt/var/www/html` naar het lokale bestandssysteem voor inspectie met uw favoriete gereedschappen. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan het geheime voorgeheugen verstrekt.
+Dispatcher-logbestanden kunnen met uw favoriete programma&#39;s uit de Docker-container in `/mnt/var/www/html` worden gekopieerd naar het lokale bestandssysteem. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan het geheime voorgeheugen verstrekt.
 
 ```shell
 $ docker ps

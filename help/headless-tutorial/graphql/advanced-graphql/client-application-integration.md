@@ -19,11 +19,11 @@ ht-degree: 0%
 
 In het vorige hoofdstuk, creeerde en bijwerkte voortgeduurde vragen gebruikend Ontdekkingsreiziger GraphiQL.
 
-In dit hoofdstuk worden de stappen doorlopen waarmee u de voortgezette query&#39;s kunt integreren met de WKND-clienttoepassing (ook wel WKND App genoemd) met gebruik van HTTP-GET-aanvragen binnen bestaande toepassingen **Reageren op componenten**. Het biedt ook een optionele uitdaging om uw AEM headless lessen toe te passen, codeerexpertise om de WKND-clienttoepassing te verbeteren.
+Dit hoofdstuk begeleidt u door de stappen om de voortgeduurde vragen met de WKND cliënttoepassing (alias WKND App) te integreren gebruikend de verzoeken van HTTP GET binnen bestaande **componenten van het Reageren**. Het biedt ook een optionele uitdaging om uw AEM headless lessen toe te passen, codeerexpertise om de WKND-clienttoepassing te verbeteren.
 
 ## Vereisten {#prerequisites}
 
-Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Controleer of de vorige hoofdstukken zijn voltooid voordat u verdergaat met dit hoofdstuk. De WKND cliënttoepassing verbindt met AEM publicatieservice, zodat is het belangrijk dat u **heeft het volgende gepubliceerd naar de AEM-publicatieservice**.
+Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Controleer of de vorige hoofdstukken zijn voltooid voordat u verdergaat met dit hoofdstuk. De WKND cliënttoepassing verbindt met AEM publiceer dienst, zodat is het belangrijk dat u **het volgende aan de AEM publicatiedienst** publiceerde.
 
 * Projectconfiguraties
 * GraphQL-eindpunten
@@ -31,32 +31,32 @@ Dit document is onderdeel van een zelfstudie met meerdere onderdelen. Controleer
 * Geautoriseerde inhoudsfragmenten
 * GraphQL blijft vragen
 
-De _IDE screenshots in dit hoofdstuk komen van [Visual Studio-code](https://code.visualstudio.com/)_
+De _IDE screenshots in dit hoofdstuk komen uit [ Code van Visual Studio ](https://code.visualstudio.com/)_
 
 ### Hoofdstuk 1-4 Oplossingspakket (optioneel) {#solution-package}
 
-Er is een oplossingspakket beschikbaar om te worden geïnstalleerd dat de stappen in AEM UI voor hoofdstukken 1-4 voltooit. Dit pakket is **niet nodig** indien de vorige hoofdstukken zijn afgesloten.
+Er is een oplossingspakket beschikbaar om te worden geïnstalleerd dat de stappen in AEM UI voor hoofdstukken 1-4 voltooit. Dit pakket is **niet nodig** als de vorige hoofdstukken zijn voltooid.
 
-1. Downloaden [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
-1. Navigeer in AEM naar **Gereedschappen** > **Implementatie** > **Pakketten** toegang tot **Pakketbeheer**.
+1. Download [ geavanceerd-GraphQL-Tutorial-Oplossing-Pakket-1.2.zip ](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
+1. In AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Pakketten** om tot **de Manager van het Pakket** toegang te hebben.
 1. Upload en installeer het pakket (ZIP-bestand) dat u in de vorige stap hebt gedownload.
-1. Repliceer het pakket naar de AEM-service Publiceren
+1. Repliceer het pakket naar de AEM Publish-service
 
 ## Doelstellingen {#objectives}
 
-In deze zelfstudie leert u hoe u de aanvragen voor voortgezette query&#39;s kunt integreren in de voorbeeldtoepassing WKND GraphQL React met de opdracht [AEM headless-client voor JavaScript](https://github.com/adobe/aem-headless-client-js).
+In dit leerprogramma, leert u hoe te om de verzoeken om voortgeduurde vragen in de steekproefWKND GraphQL React app te integreren gebruikend [ AEM Koploze Cliënt voor JavaScript ](https://github.com/adobe/aem-headless-client-js).
 
 ## De voorbeeldclienttoepassing klonen en uitvoeren {#clone-client-app}
 
 Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
 
-1. Klonen met [adobe/aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql) opslagplaats:
+1. Kloon de [ adobe/aem-guides-wknd-grafisch ](https://github.com/adobe/aem-guides-wknd-graphql) bewaarplaats:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Bewerk de `aem-guides-wknd-graphql/advanced-tutorial/.env.development` bestand en set `REACT_APP_HOST_URI` om naar uw doel te wijzen AEM publicatieservice.
+1. Bewerk het `aem-guides-wknd-graphql/advanced-tutorial/.env.development` -bestand en stel `REACT_APP_HOST_URI` zo in dat het naar uw doel AEM publicatieservice wijst.
 
    Werk de authentificatiemethode bij als het verbinden met een auteursinstantie.
 
@@ -79,14 +79,14 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
    REACT_APP_BASIC_AUTH_PASS=
    ```
 
-   ![Toepassingsontwikkelomgeving Reageren](assets/client-application-integration/react-app-dev-env-settings.png)
+   ![ Reageer de Milieu van de Ontwikkeling van de Toepassing ](assets/client-application-integration/react-app-dev-env-settings.png)
 
 
    >[!NOTE]
    > 
-   > De bovenstaande instructies zijn om de React-app te verbinden met de **AEM-publicatieservice**, echter om verbinding te maken met de **AEM Auteur-service** verkrijg een lokale ontwikkelingstoken voor uw doel AEM as a Cloud Service milieu.
+   > De bovenstaande instructies moeten Reageren app met de **AEM dienst van Publish** verbinden, nochtans om met de **AEM dienst van de Auteur** een lokaal ontwikkelingstoken voor uw milieu van doelAEM as a Cloud Service te verbinden.
    >
-   > Het is ook mogelijk om de app te verbinden met een [lokale instantie van Auteur die AEMaaCS SDK gebruikt](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) basisverificatie gebruiken.
+   > Het is ook mogelijk om app met a [ lokale instantie van de Auteur te verbinden gebruikend AEMaaCS SDK ](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) gebruikend basisauthentificatie.
 
 
 1. Open een terminal en voer de opdrachten uit:
@@ -97,62 +97,62 @@ Om de zelfstudie te versnellen, wordt een startapp van React JS geleverd.
    $ npm start
    ```
 
-1. Een nieuw browservenster moet worden geladen op [http://localhost:3000](http://localhost:3000)
+1. Een nieuw browser venster zou op [ http://localhost:3000 ](http://localhost:3000) moeten laden
 
 
-1. Tikken **Kamperen** > **Yosemite-achtergrondverpakking** om de Yosemite Backpackaging adventure details te bekijken.
+1. Tik **Camping** > **Yosemite Backpackaging** om de Yosemite details van het Backpackaging-avontuur te bekijken.
 
-   ![Yosemite-achtergrondscherm](assets/client-application-integration/yosemite-backpacking-adventure.png)
+   ![ Yosemite het BackpackagingScherm ](assets/client-application-integration/yosemite-backpacking-adventure.png)
 
-1. Open de ontwikkelaarsgereedschappen van de browser en controleer de `XHR` verzoek
+1. Open de ontwikkelaarsgereedschappen van de browser en inspecteer de aanvraag `XHR`
 
-   ![POST GraphQL](assets/client-application-integration/graphql-persisted-query.png)
+   ![ POST GraphQL ](assets/client-application-integration/graphql-persisted-query.png)
 
-   U moet `GET` verzoeken aan het eindpunt van GraphQL met project config naam (`wknd-shared`), naam van blijvende query (`adventure-by-slug`), variabelenaam (`slug`), waarde (`yosemite-backpacking`) en speciale tekencoderingen.
+   U zou `GET` verzoeken aan het eindpunt van GraphQL met project config naam (`wknd-shared`), voortgeduurde vraagnaam (`adventure-by-slug`), veranderlijke naam (`slug`), waarde (`yosemite-backpacking`), en speciale karaktercoderingen moeten zien.
 
 >[!IMPORTANT]
 >
->    Als u zich afvraagt waarom de GraphQL API-aanvraag is ingediend tegen de `http://localhost:3000` en NIET tegen het AEM Publish Service domein, overzicht [Onder de hood](../multi-step/graphql-and-react-app.md#under-the-hood) uit de basiszelfstudie.
+>    Als u zich afvraagt waarom het GraphQL API verzoek tegen `http://localhost:3000` en NIET tegen het AEM domein van de Dienst van Publish wordt gemaakt, herzie [ onder het Hood ](../multi-step/graphql-and-react-app.md#under-the-hood) van Basisleerprogramma.
 
 
 ## De code controleren
 
-In de [Basiszelfstudie - Een React-app ontwikkelen die gebruikmaakt van AEM GraphQL API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object) We hadden weinig belangrijke bestanden gereviseerd en uitgebreid om praktische expertise te krijgen. Controleer de belangrijkste bestanden voordat u de WKND-app verbetert.
+In het [ Basisleerprogramma - bouw een Reactie app die AEM 1} stap van GraphQL APIs gebruikt hadden wij herzien en enkele zeer belangrijke dossiers verbeterd om hands-on deskundigheid te krijgen. ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object) Controleer de belangrijkste bestanden voordat u de WKND-app verbetert.
 
-* [Het object AEMHeadless controleren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object)
+* [ herzie het voorwerp AEMHeadless ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object)
 
-* [Implementeren om AEM GraphQL doorlopende query&#39;s uit te voeren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#implement-to-run-aem-graphql-persisted-queries)
+* [ voert uit om AEM GraphQL gepresteerde vragen in werking te stellen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#implement-to-run-aem-graphql-persisted-queries)
 
-### Controleren `Adventures` Component Reageren
+### Component redigeren `Adventures` Reageren
 
-De hoofdweergave van de WKND React-app is de lijst met alle avonturen en u kunt deze avonturen filteren op basis van het type activiteit, zoals _Kamperen, fietsen_. Deze weergave wordt gerenderd door de `Adventures` component. Hieronder vindt u de belangrijkste implementatiedetails:
+De WKND React app belangrijkste mening is de lijst van alle avonturen en u kunt deze die avonturen filtreren op activiteitstype zoals _Camping, Cyclling_ worden gebaseerd. Deze weergave wordt gerenderd door de component `Adventures` . Hieronder vindt u de belangrijkste implementatiedetails:
 
-* De `src/components/Adventures.js` oproepen `useAllAdventures(adventureActivity)` haak en hier `adventureActivity` argument is activity type.
+* Het argument `src/components/Adventures.js` call `useAllAdventures(adventureActivity)` haak en here `adventureActivity` is activity type.
 
-* De `useAllAdventures(adventureActivity)` haak wordt gedefinieerd in het dialoogvenster `src/api/usePersistedQueries.js` bestand. Gebaseerd op `adventureActivity` waarde, bepaalt het welke blijvende vraag te roepen. Als de waarde niet null is, wordt deze aangeroepen `wknd-shared/adventures-by-activity`, anders krijgt alle beschikbare avonturen `wknd-shared/adventures-all`.
+* De `useAllAdventures(adventureActivity)` haak wordt gedefinieerd in het `src/api/usePersistedQueries.js` -bestand. Gebaseerd op `adventureActivity` waarde, bepaalt het welke voortgezette vraag om te roepen. Als de waarde null is, wordt `wknd-shared/adventures-by-activity` aangeroepen, anders worden alle beschikbare avonturen `wknd-shared/adventures-all` opgehaald.
 
-* De haak gebruikt het hoofdmenu `fetchPersistedQuery(..)` functie die de vraaguitvoering aan delegeert `AEMHeadless` via `aemHeadlessClient.js`.
+* De haak gebruikt de hoofdfunctie `fetchPersistedQuery(..)` die de uitvoering van de query aan `AEMHeadless` via `aemHeadlessClient.js` delegeert.
 
-* De haak retourneert ook alleen de relevante gegevens van de reactie van AEM GraphQL op `response.data?.adventureList?.items`, waarbij de `Adventures` Reageer de weergavecomponenten om niet op de hoogte te zijn van de bovenliggende JSON-structuren.
+* De haak retourneert ook alleen de relevante gegevens van de AEM GraphQL-respons op `response.data?.adventureList?.items` , zodat de `Adventures` React view-componenten niet op de hoogte zijn van de bovenliggende JSON-structuren.
 
-* Bij een geslaagde query-uitvoering wordt de opdracht `AdventureListItem(..)` renderfunctie van `Adventures.js` voegt HTML-element toe om het _Afbeelding, Lengte van reisband, Prijs en Titel_ informatie.
+* Op succesvolle vraaguitvoering, `AdventureListItem(..)` geef functie van `Adventures.js` terug voegt HTML element toe om het _Beeld, de Lengte van de Trip, de Prijs, en de informatie van de Titel_ te tonen.
 
-### Controleren `AdventureDetail` Component Reageren
+### Component redigeren `AdventureDetail` Reageren
 
-De `AdventureDetail` De component React geeft de details van het avontuur terug. Hieronder vindt u de belangrijkste implementatiedetails:
+De component `AdventureDetail` React geeft de details van het avontuur terug. Hieronder vindt u de belangrijkste implementatiedetails:
 
-* De `src/components/AdventureDetail.js` oproepen `useAdventureBySlug(slug)` haak en hier `slug` argument is queryparameter.
+* Het argument `src/components/AdventureDetail.js` call `useAdventureBySlug(slug)` haak en here `slug` is queryparameter.
 
-* Zoals hierboven, `useAdventureBySlug(slug)` haak wordt gedefinieerd in het dialoogvenster `src/api/usePersistedQueries.js` bestand. Het roept `wknd-shared/adventure-by-slug` persistente query door te delegeren aan `AEMHeadless` via `aemHeadlessClient.js`.
+* Zoals hierboven wordt de `useAdventureBySlug(slug)` haak gedefinieerd in het `src/api/usePersistedQueries.js` -bestand. `wknd-shared/adventure-by-slug` persisted query wordt aangeroepen door te delegeren aan `AEMHeadless` via `aemHeadlessClient.js` .
 
-* Bij een geslaagde query-uitvoering wordt de opdracht `AdventureDetailRender(..)` renderfunctie van `AdventureDetail.js` voegt HTML toe element om de details van het Avontuur te tonen.
+* Als de query met succes is uitgevoerd, voegt de renderfunctie `AdventureDetailRender(..)` van `AdventureDetail.js` het element HTML toe om de Adventure-details weer te geven.
 
 
 ## De code verbeteren
 
-### Gebruiken `adventure-details-by-slug` voortgezette query
+### Gebruik `adventure-details-by-slug` voortgezette query
 
-In het vorige hoofdstuk creëerden we de `adventure-details-by-slug` voortgezette vraag, verstrekt het extra informatie van het avontuur zoals _locatie, instructeurTeam en beheerder_. Laten we vervangen `adventure-by-slug` with `adventure-details-by-slug` blijvende vraag om deze extra informatie terug te geven.
+In het vorige hoofdstuk, creeerden wij de `adventure-details-by-slug` voortgezette vraag, verstrekt het extra informatie van het avontuur zoals _plaats, instructorTeam, en beheerder_. Vervang `adventure-by-slug` door `adventure-details-by-slug` aanhoudende query om deze extra informatie te renderen.
 
 1. Open `src/api/usePersistedQueries.js`.
 
@@ -172,9 +172,9 @@ In het vorige hoofdstuk creëerden we de `adventure-details-by-slug` voortgezett
 
 ### Aanvullende informatie weergeven
 
-1. Om extra avontuurinformatie te tonen, open `src/components/AdventureDetail.js`
+1. Open `src/components/AdventureDetail.js` als u aanvullende informatie over de avontuur wilt weergeven
 
-1. De functie zoeken `AdventureDetailRender(..)` en de terugkeerfunctie bijwerken als
+1. Zoek de functie `AdventureDetailRender(..)` en werk de retourfunctie bij als
 
    ```javascript
    ...
@@ -220,7 +220,7 @@ In het vorige hoofdstuk creëerden we de `adventure-details-by-slug` voortgezett
    }
    ```
 
-   **Locatie**
+   **Plaats**
 
    ```javascript
    function Location({ contactInfo }) {
@@ -285,7 +285,7 @@ In het vorige hoofdstuk creëerden we de `adventure-details-by-slug` voortgezett
 
 ### Nieuwe stijlen definiëren
 
-1. Openen `src/components/AdventureDetail.scss` en voeg volgende klassendefinities toe
+1. Open `src/components/AdventureDetail.scss` en voeg de volgende klassendefinities toe
 
    ```CSS
    .adventure-detail-administrator,
@@ -304,19 +304,19 @@ In het vorige hoofdstuk creëerden we de `adventure-details-by-slug` voortgezett
 
 >[!TIP]
 >
->De bijgewerkte bestanden zijn beschikbaar onder **AEM Guides WKND - GraphQL** project, zie [Geavanceerde zelfstudie](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/advanced-tutorial) sectie.
+>De bijgewerkte dossiers zijn beschikbaar onder **AEM Guides WKND - GraphQL** project, zie [ Geavanceerde sectie van het Leerprogramma ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/advanced-tutorial).
 
 
-Nadat de bovenstaande verbeteringen zijn voltooid, ziet de WKND-app er als volgt uit en toont de ontwikkelaarsgereedschappen van de browser `adventure-details-by-slug` voortgezette vraagvraag.
+Nadat de bovenstaande verbeteringen zijn voltooid, ziet de WKND-app er als volgt uit en toont de ontwikkelaarsgereedschappen van de browser `adventure-details-by-slug` de voortgezette queryaanroep.
 
-![Verbeterde WKND APP](assets/client-application-integration/Enhanced-WKND-APP.gif)
+![ Verbeterde APP van WKND ](assets/client-application-integration/Enhanced-WKND-APP.gif)
 
 ## Uitdaging voor uitbreiding (optioneel)
 
-Met de hoofdweergave van de WKND React-app kunt u deze avonturen filteren op basis van het type activiteit, zoals _Kamperen, fietsen_. Het WKND-zakelijke team wil echter een extra _Locatie_ gebaseerde filtermogelijkheden. De eisen zijn:
+WKND Reageer app&#39;s belangrijkste mening staat u toe om deze avonturen te filtreren die op activiteitentype zoals _worden gebaseerd Camping, het Cycliseren_. Nochtans het bedrijfsteam van WKND wil een extra _Gebaseerde het filtreren van de Plaats_ vermogen hebben. De eisen zijn:
 
-* Voeg in de hoofdweergave van de WKND-app linksboven of rechtsboven toe _Locatie_ filterpictogram.
-* Klikken _Locatie_ filterpictogram moet een lijst met locaties weergeven.
+* Op WKND App&#39;s belangrijkste mening, in de hoogste linkerzijde of juiste hoek voeg _het filtreren van de Plaats_ pictogram toe.
+* Het klikken _het filtreren van de Plaats_ pictogram zou lijst van plaatsen moeten tonen.
 * Als u op een gewenste locatie in de lijst klikt, worden alleen overeenkomende avonturen weergegeven.
 * Als er slechts één passend avontuur is, wordt de mening van de Details van het Avontuur getoond.
 

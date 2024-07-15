@@ -23,22 +23,22 @@ In bepaalde gevallen hebt u mogelijk de verplichting om een document voor handte
 
 ## De voorbeeldbundel OSGi implementeren
 
-[De OSGi-bundel implementeren](assets/AdobeSignHelperMethods.core-1.0.0-SNAPSHOT.jar) via de AEM OSGi-webconsole. Specificeer de API integratiesleutel en API gebruiker die de configuratie OSGi zoals hieronder getoond, via de Manager van de Configuratie van de Console van het Web van AEM OSGi gebruikt.
+[ stelt de bundel OSGi ](assets/AdobeSignHelperMethods.core-1.0.0-SNAPSHOT.jar) via de Console van het Web van AEM OSGi op. Specificeer de API integratiesleutel en API gebruiker die de configuratie OSGi zoals hieronder getoond, via de Manager van de Configuratie van de Console van het Web van AEM OSGi gebruikt.
 
- Houd er rekening mee dat de `AdobeSignHelperMethods` OSGi-bundel wordt niet herkend als Adobe Experience Manager (AEM)-productcode en wordt daarom niet ondersteund door ondersteuning van Adoben.
-![sign-configuration](assets/sign-configuration.png)
+ De `AdobeSignHelperMethods` OSGi-bundel wordt niet herkend als een Adobe Experience Manager-productcode (AEM) en wordt daarom niet ondersteund door ondersteuning voor Adoben.
+![ teken-configuratie ](assets/sign-configuration.png)
 
 
 ## API-documentatie
 
-Het volgende is beschikbaar via de `AcrobatSignHelperMethods` De OSGi-dienst werd geleverd in de OSGi-bundel.
+Het volgende is beschikbaar via de `AcrobatSignHelperMethods` OSGi-service in de OSGi-bundel.
 
 ### getTransientDocumentID
 
 `String getTransientDocumentID(Document documentForSigning) throws IOException`
 
 
-Het document waarmee een overeenkomst of een webformulier wordt gemaakt. Het document wordt eerst door de afzender geüpload naar Acrobat Sign. Dit wordt aangeduid als _transient_ omdat het slechts 7 dagen na het uploaden beschikbaar is voor gebruik. Deze methoden accepteren `com.adobe.aemfd.docmanager.Document` en retourneert tijdelijke document-id.
+Het document waarmee een overeenkomst of een webformulier wordt gemaakt. Het document wordt eerst door de afzender geüpload naar Acrobat Sign. Dit wordt bedoeld als _transient_ aangezien het voor gebruik slechts voor 7 dagen na uploaden beschikbaar is. Deze methoden accepteren `com.adobe.aemfd.docmanager.Document` en retourneren tijdelijke document-id.
 
 ### getAgreementID
 
@@ -60,7 +60,7 @@ Een widget-URL ophalen voor een specifieke widget-id. Deze widget-URL kan vervol
 
 ## De API gebruiken
 
-De `AcrobatSignHelperMethods` is een dienst OSGi, zodat moet het worden geannoteerd gebruikend de @annotation in uw java code.
+`AcrobatSignHelperMethods` is een OSGi-service, dus moet er een annotatie aan worden toegevoegd met de @Reference-annotatie in uw Java-code.
 
 ```java
 ...

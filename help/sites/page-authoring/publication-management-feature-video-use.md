@@ -30,13 +30,13 @@ AEM Sites biedt verschillende opties voor het publiceren en het niet publiceren 
 AEM Sites biedt verschillende methoden voor het publiceren en niet publiceren van inhoud, op basis van de workflow van de auteur.
 
 * De huidige pagina publiceren vanuit de AEM Sites Page Editor
-   * Huidige pagina publiceren en optionele selectie van verwijzingen toestaan
+   * Publish the current page and allows optional selection of references
    * Publicatie van de huidige pagina ongedaan maken
-* Snel publiceren via de AEM Sites-beheerder
+* Quick Publish van AEM Sites Admin
    * Met één klik de geselecteerde pagina&#39;s publiceren en alle niet-gepubliceerde verwijzingen automatisch gepubliceerd
 * Publicatie beheren via AEM Sites Admin
    * Robuuste console voor gedetailleerd beheer van bulkpublicaties en het niet publiceren van inhoud.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie voor pagina&#39;s publiceren](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [ het Publiceren de Documentatie van Pagina&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)

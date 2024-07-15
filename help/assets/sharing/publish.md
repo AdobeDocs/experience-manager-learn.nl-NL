@@ -1,6 +1,6 @@
 ---
-title: Elementen publiceren met AEM
-description: Leer hoe u elementen en de bijbehorende uitvoeringen publiceert van AEM auteur naar AEM Publiceren.
+title: Hoe Publish Assets te gebruiken AEM
+description: Leer hoe u elementen en de bijbehorende uitvoeringen publiceert van AEM auteur naar AEM Publish.
 feature: Asset Management
 version: Cloud Service
 jira: KT-330932
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 ---
 
-# Publiceren
+# Publish
 
-Leer hoe u elementen en de bijbehorende uitvoeringen publiceert van AEM auteur naar AEM Publiceren.
+Leer hoe u elementen en de bijbehorende uitvoeringen publiceert van AEM auteur naar AEM Publish.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330932?quality=12&learn=on)
 
-_Zorg ervoor dat voor de AEM Assets-implementatie een licentie voor AEM publicatieservice is verleend voordat u middelen publiceert._
+_verzeker u de plaatsing van AEM Assets heeft de dienst van AEM Publish voorafgaand aan het publiceren activa vergunning gegeven._

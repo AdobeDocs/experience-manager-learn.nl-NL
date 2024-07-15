@@ -1,5 +1,5 @@
 ---
-title: Samenwerking in Assets Essentials
+title: Collaboration in Assets Essentials
 description: Leer hoe u kunt samenwerken binnen middelenbeheer met opmerkingen, annotaties en taken.
 version: Cloud Service
 feature: Assets Essentials
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Samenwerking in Assets Essentials
+# Collaboration in Assets Essentials
 
 Leer hoe u kunt samenwerken aan middelenbeheer met opmerkingen, annotaties en taken.
 

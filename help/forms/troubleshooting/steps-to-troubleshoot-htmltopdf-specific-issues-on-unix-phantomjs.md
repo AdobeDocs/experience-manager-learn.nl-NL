@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen voor het oplossen van specifieke problemen HtmltoPDF op een Unix opstelling (PhantomJS)
 
-*Deze video doorloopt de stappen om specifieke problemen met HTMLtoPDF op een Unix-instelling (PhantomJS) op te lossen.*
+*Deze video loopt door de stappen om specifieke kwesties HtmltoPDF op een Opstelling van Unix (PhantomJS) problemen op te lossen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335546?quality=12&learn=on)

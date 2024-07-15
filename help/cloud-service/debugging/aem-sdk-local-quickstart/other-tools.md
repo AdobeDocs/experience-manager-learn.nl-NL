@@ -30,7 +30,7 @@ CRXDE Lite is een webinterface voor interactie met het JCR, AEM gegevensopslagru
 CRXDE Lite bevindt zich in:
 
 + Gereedschappen > Algemeen > CRXDE Lite
-+ of rechtstreeks om [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
++ of direct bij [ http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 
 ### Fouten opsporen in inhoud
 
@@ -42,9 +42,9 @@ CRXDE Lite biedt directe toegang tot het JCR. De inhoud die zichtbaar is via CRX
 + Als u dubbelklikt op een bestandsknooppunt in de linkernavigatie, wordt de inhoud van het bestand geopend in het rechterbovenvenster
 + Tik op de knop Alles opslaan linksboven om de wijzigingen te handhaven of op de pijl omlaag naast Alles opslaan om alle niet-opgeslagen wijzigingen te herstellen.
 
-![CRXDE Lite - Fouten opsporen in inhoud](./assets/other-tools/crxde-lite__debugging-content.png)
+![ CRXDE Lite - het Zuiveren Inhoud ](./assets/other-tools/crxde-lite__debugging-content.png)
 
-Wijzigingen die rechtstreeks via CRXDE Lite in AEM SDK worden aangebracht, kunnen moeilijk te volgen en te beheren zijn. Zorgt ervoor dat wijzigingen die via CRXDE Lite zijn aangebracht, terugkeren naar de veranderbare inhoudspakketten van het AEM-project (`ui.content`) en zich heeft geëngageerd aan Git. In het ideale geval komen alle wijzigingen in de toepassingsinhoud van de basis van de code en gaan deze via implementaties naar AEM SDK in plaats van rechtstreeks wijzigingen aan te brengen in de AEM SDK via CRXDE Lite.
+Wijzigingen die rechtstreeks via CRXDE Lite in AEM SDK worden aangebracht, kunnen moeilijk te volgen en te beheren zijn. Indien van toepassing, zorg ervoor dat de veranderingen via CRXDE Lite worden aangebracht hun weg terug naar de veranderbare inhoudspakketten van het AEM project (`ui.content`) maken en aan Git begaan. In het ideale geval komen alle wijzigingen in de toepassingsinhoud van de basis van de code en gaan deze via implementaties naar AEM SDK in plaats van rechtstreeks wijzigingen aan te brengen in de AEM SDK via CRXDE Lite.
 
 ### Toegangsbesturingselementen voor foutopsporing
 
@@ -54,7 +54,7 @@ Om tot de console van het Toegangsbeheer van de Test in CRXDE Lite toegang te he
 
 + CRXDE Lite > Gereedschappen > Toegangsbeheer testen...
 
-![CRXDE Lite - Toegangscontrole testen](./assets/other-tools/crxde-lite__test-access-control.png)
+![ CRXDE Lite - de Controle van de Toegang van de Test ](./assets/other-tools/crxde-lite__test-access-control.png)
 
 1. Selecteer in het veld Pad een JCR-pad dat u wilt evalueren
 1. Selecteer in het veld Hoofd de gebruiker of de groep aan de hand waarvan u het pad wilt beoordelen
@@ -62,29 +62,29 @@ Om tot de console van het Toegangsbeheer van de Test in CRXDE Lite toegang te he
 
 De resultaten worden hieronder weergegeven:
 
-+ __Pad__ herhaalt de ingeslagen weg
-+ __Opdrachtgever__ herhaalt de gebruiker of groep waarvoor het pad is geëvalueerd
-+ __Principes__ maakt een lijst van alle principes het geselecteerde hoofd deel van is.
++ __Weg__ herhaalt de weg die werd geëvalueerd
++ __Belangrijk__ herhaalt de gebruiker of de groep waarvoor de weg werd geëvalueerd
++ __Belangrijkste__ maakt een lijst van alle hoofden het geselecteerde hoofd deel van is.
    + Dit is nuttig om het overgangsgroepslidmaatschap te begrijpen dat toestemmingen via overerving kan verlenen
-+ __Rechten op pad__ Hiermee worden alle JCR-machtigingen weergegeven die de geselecteerde principal op het geëvalueerde pad heeft
++ __Bevoegdheden bij Weg__ maakt een lijst van alle JCR toestemmingen het geselecteerde hoofd op de geëvalueerde weg heeft
 
 ## Query uitvoeren
 
-![Query uitvoeren](./assets/other-tools/explain-query.png)
+![ verklaart Vraag ](./assets/other-tools/explain-query.png)
 
 Verklaar het Web-based hulpmiddel van de Vraag in AEM lokale QuickStart van SDK, die zeer belangrijke inzichten in verstrekt hoe AEM en vragen interpreteert uitvoert, en een onschatbaar hulpmiddel om vragen te verzekeren op een prestatieswijze door AEM worden uitgevoerd.
 
 Verklaar de Vraag wordt gevestigd bij:
 
 + Gereedschappen > Diagnose > Query-prestaties > Het tabblad Query uitvoeren
-+ [http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) > Het tabblad Query uitvoeren
++ [ http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) > verklaart het lusje van de Vraag
 
 ## QueryBuilder-foutopsporing
 
-![QueryBuilder-foutopsporing](./assets/other-tools/query-debugger.png)
+![ Foutopsporing QueryBuilder ](./assets/other-tools/query-debugger.png)
 
-Foutopsporing van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvragen zuiveren en begrijpen gebruikend AEM [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) syntaxis.
+debugger van QueryBuilder is web-based hulpmiddel dat u helpt onderzoeksvragen zuiveren en begrijpen gebruikend AEM [ ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) syntaxis QueryBuilder.
 
 Foutopsporing van QueryBuilder bevindt zich in:
 
-+ [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
++ [ http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)

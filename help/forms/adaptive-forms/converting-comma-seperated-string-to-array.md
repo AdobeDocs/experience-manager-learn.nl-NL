@@ -27,14 +27,14 @@ Een processtap wordt gebruikt in een AEM werkstroom wanneer wij onze werkschema 
 
 De ingediende gegevens hebben de volgende indeling. De waarde van het element businessUnits is een door komma&#39;s gescheiden tekenreeks, die moet worden omgezet in een array van tekenreeksen.
 
-![ingediende gegevens](assets/submitted-data-string.png)
+![ voorgelegde-gegevens ](assets/submitted-data-string.png)
 
 De inputgegevens voor het rest eindpunt verbonden aan het model van vormgegevens verwachten een serie van koorden zoals aangetoond in dit het schermschot. De douanecode in de processtap zet de voorgelegde gegevens in het correcte formaat om.
 
-![fdm-string-array](assets/string-array-fdm.png)
+![ fdm-koord-serie ](assets/string-array-fdm.png)
 
 We geven het JSON-objectpad en de elementnaam door aan de processtap. De code in de processtap vervangt de door komma&#39;s gescheiden waarden van het element in een array met tekenreeksen.
-![processtap](assets/create-string-array.png)
+![ proces-stap ](assets/create-string-array.png)
 
 >[!NOTE]
 >
@@ -142,4 +142,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-De voorbeeldbundel kan [hier gedownload](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+De steekproefbundel kan [ van hier worden gedownload ](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)

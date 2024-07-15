@@ -21,32 +21,32 @@ ht-degree: 0%
 
 # Aangepaste rasterkolommen
 
-![Kolom voor aangepast raster van contentfragmentconsole](./assets/custom-grid-columns/hero.png){align="center"}
+![ de kolom van het het douaneraster van de Console van het Fragment van de Inhoud ](./assets/custom-grid-columns/hero.png){align="center"}
 
-U kunt aangepaste rasterkolommen aan de Content Fragment Console toevoegen met de opdracht  `contentFragmentGrid` extensiepunt. In dit voorbeeld ziet u hoe u een aangepaste kolom toevoegt waarmee de pagina Inhoudsfragmenten op basis van de laatste gewijzigde datum in een leesbare indeling wordt weergegeven.
+U kunt aangepaste rasterkolommen toevoegen aan de Content Fragment Console met het extensiepunt `contentFragmentGrid` . In dit voorbeeld ziet u hoe u een aangepaste kolom toevoegt waarmee de pagina Inhoudsfragmenten op basis van de laatste gewijzigde datum in een leesbare indeling wordt weergegeven.
 
 ## Extensiepunt
 
-In dit voorbeeld wordt het uitbreidingspunt uitgebreid `contentFragmentGrid` om een aangepaste kolom toe te voegen aan de Content Fragment Console.
+In dit voorbeeld wordt het uitbreidingspunt `contentFragmentGrid` uitgebreid om een aangepaste kolom toe te voegen aan de Content Fragment Console.
 
 | AEM UI uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
-| [Console voor inhoudsfragment](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Rasterkolommen](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
+| [ de Console van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [ Kolommen van het Net ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
 ## Voorbeeldextensie
 
-In het volgende voorbeeld wordt een aangepaste kolom gemaakt: `Age` Hiermee geeft u de leeftijd van het inhoudsfragment weer in een leesbare indeling. De pagina wordt berekend vanaf de laatste gewijzigde datum van het inhoudsfragment.
+In het volgende voorbeeld wordt een aangepaste kolom `Age` gemaakt waarmee de pagina van het inhoudsfragment in een leesbare indeling wordt weergegeven. De pagina wordt berekend vanaf de laatste gewijzigde datum van het inhoudsfragment.
 
 De code laat zien hoe de metagegevens van het inhoudsfragment kunnen worden verkregen in het registratiebestand van de extensie en hoe de JSON-inhoud van het inhoudsfragment kan worden getransformeerd.
 
-In dit voorbeeld wordt het [Luxon](https://moment.github.io/luxon/) bibliotheek voor het berekenen van de pagina van het inhoudsfragment, geïnstalleerd via `npm i luxon`.
+Dit voorbeeld gebruikt de [ ](https://moment.github.io/luxon/) bibliotheek van de Luxon om de leeftijd van het Fragment van de Inhoud te berekenen, die via `npm i luxon` wordt geïnstalleerd.
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js`, toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
+`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
 
-+ De locatie van de extensie injecteert zichzelf (`contentFragmentGrid`) in de AEM
-+ De definitie van de aangepaste kolom in het dialoogvenster `getColumns()` function
++ De locatie van de extensie injecteert zichzelf (`contentFragmentGrid`) in de AEM ontwerpervaring
++ De definitie van de aangepaste kolom in de functie `getColumns()`
 + De waarden voor elke aangepaste kolom, op rij
 
 ```javascript
@@ -149,7 +149,7 @@ export default ExtensionRegistration;
 
 #### Gegevens van inhoudsfragment
 
-De `render(..)` methode in `getColumns()` wordt doorgegeven aan een array met fragmenten. Elk object in de array vertegenwoordigt een rij in het raster en bevat de volgende metagegevens over het inhoudsfragment. Deze metagegevens kunnen worden gebruikt voor populaire aangepaste kolommen in het raster.
+De methode `render(..)` in `getColumns()` wordt doorgegeven aan een array met fragmenten. Elk object in de array vertegenwoordigt een rij in het raster en bevat de volgende metagegevens over het inhoudsfragment. Deze metagegevens kunnen worden gebruikt voor populaire aangepaste kolommen in het raster.
 
 
 ```javascript
@@ -161,7 +161,7 @@ render: async function (fragments) {
 }
 ```
 
-JSON-voorbeeldinhoudfragment dat beschikbaar is als een element van het dialoogvenster `fragments` in de `render(..)` methode.
+Voorbeeld van een JSON-inhoudsfragment dat beschikbaar is als element van de parameter `fragments` in de methode `render(..)` .
 
 ```json
 {
@@ -208,9 +208,9 @@ Als andere gegevens nodig zijn om de aangepaste kolom te vullen, kunnen HTTP-aan
 
 >[!IMPORTANT]
 >
-> Zorg ervoor dat de instantie AEM Auteur is geconfigureerd om [verzoeken van oorsprong](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) vanuit de oorsprong waarop de AppBuilder-app wordt uitgevoerd. Toegestane oorsprong omvat `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de AppBuilder-productie.
+> Zorg ervoor dat de AEM instantie van de Auteur wordt gevormd om [ dwars-oorsprong verzoeken ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) van de oorsprong toe te staan app AppBuilder loopt. Tot de toegestane oorsprong behoren `https://localhost:9080`, de oorsprong van het werkgebied van AppBuilder en de oorsprong van de AppBuilder-productie.
 >
-> De extensie kan ook een aangepaste [Handeling AppBuilder](../../runtime-action.md) dat het verzoek indient aan AEM auteur namens de uitbreiding.
+> Alternatief, kan de uitbreiding een actie van douane [ AppBuilder ](../../runtime-action.md) roepen die het verzoek om Auteur namens de uitbreiding AEM.
 
 
 ```javascript
@@ -227,9 +227,9 @@ const response = await fetch(`${context.aemHost}${fragment.id.slice('/content/da
 
 #### Kolomdefinitie
 
-Het resultaat van de rendermethode is een JavaScript-object waarvan de sleutels het pad van het inhoudsfragment (of de `fragment.id`) en de waarde is de waarde die in de kolom wordt weergegeven.
+Het resultaat van de rendermethode is een JavaScript-object waarvan de sleutels het pad van het inhoudsfragment (of de `fragment.id` ) zijn en de waarde de waarde die in de kolom wordt weergegeven.
 
-De resultaten van deze extensie voor de `age` kolom zijn:
+De resultaten van deze extensie voor de kolom `age` zijn bijvoorbeeld:
 
 ```json
 {

@@ -24,7 +24,7 @@ Een ander voorbeeld voor het maken van een berekend formuliergegevensmodel is he
 
 In de volgende screenshot ziet u de berekende elementen StatusZip en monthSalary
 
-![computedFmelement](assets/computedfdmelement.gif)
+![ gegevens verwerkteFDFemement ](assets/computedfdmelement.gif)
 
 ## Het maandsalaris berekenen element
 

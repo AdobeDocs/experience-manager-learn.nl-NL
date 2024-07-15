@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Stappen aan opstellings gemfire locators in een cluster en voeren verwante configuratie uit
 
-*In deze video worden de stappen doorlopen voor het instellen van gemfo-locators in een cluster en worden de bijbehorende configuratie uitgevoerd.*
+*Deze video loopt door de stappen aan opstellings gemfire locators in een cluster en voert verwante configuratie uit.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335544?quality=12&learn=on)

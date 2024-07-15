@@ -20,41 +20,41 @@ ht-degree: 0%
 
 # Een extensie implementeren
 
-Voor gebruik in AEM as a Cloud Service omgevingen moet de extensie App Builder-app worden geïmplementeerd en goedgekeurd.
+Voor gebruik in AEM as a Cloud Service-omgevingen moet de App Builder-extensie worden geïmplementeerd en goedgekeurd.
 
-Er zijn verschillende aspecten die u moet onthouden wanneer u App Builder-apps voor extensies implementeert:
+Houd rekening met verschillende aspecten bij het implementeren van App Builder-apps voor extensies:
 
 + Extensies worden geïmplementeerd in de Adobe Developer Console-projectwerkruimte. De standaardwerkruimten zijn:
-   + __Productie__ De werkruimte bevat extensies die beschikbaar zijn in alle AEM as a Cloud Service.
-   + __Werkgebied__ als ontwikkelaarswerkruimte. Extensies die worden geïmplementeerd in de werkruimte van het werkgebied, zijn niet beschikbaar in AEM as a Cloud Service.
-De werkruimten van Adobe Developer Console hebben geen directe correlatie met AEM as a Cloud Service omgevingstypen.
-+ Een uitbreiding die aan de werkruimte van de Productie wordt opgesteld toont in alle AEM as a Cloud Service milieu&#39;s in Adobe Org dat de uitbreiding binnen bestaat.
-Een extensie kan niet worden beperkt tot de omgevingen waarmee de extensie is geregistreerd door [voorwaardelijke logica die de AEM as a Cloud Service hostnaam controleert](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments).
-+ Meerdere extensies kunnen worden gebruikt voor AEM as a Cloud Service. Adobe raadt aan dat elke extensie App Builder-app wordt gebruikt om één bedrijfsdoel op te lossen. Toch kan één extensie App Builder-app meerdere extensiepunten implementeren die een gemeenschappelijk bedrijfsdoel ondersteunen.
+   + __de werkruimte van de Productie__ bevat uitbreidingsplaatsingen die in alle AEM as a Cloud Service beschikbaar zijn.
+   + __werkruimte van het Stadium__ dienst als ontwikkelaarwerkruimte. Extensies die worden geïmplementeerd in de werkruimte van het werkgebied, zijn niet beschikbaar in AEM as a Cloud Service.
+Adobe Developer Console-werkruimten hebben geen directe correlatie met AEM as a Cloud Service-omgevingstypen.
++ Een uitbreiding die aan de werkruimte van de Productie wordt opgesteld toont in alle milieu&#39;s van AEM as a Cloud Service in de Adobe Org dat de uitbreiding binnen bestaat.
+Een uitbreiding kan niet tot de milieu&#39;s worden beperkt het met door [ voorwaardelijke logica toe te voegen die de de gastheernaam van AEM as a Cloud Service ](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments) controleert.
++ Op AEM as a Cloud Service kunnen meerdere extensies worden gebruikt. Adobe raadt aan dat elke App Builder-extensie wordt gebruikt om één bedrijfsdoel op te lossen. Een App Builder-app met één extensie kan echter meerdere extensiepunten implementeren die een gemeenschappelijk bedrijfsdoel ondersteunen.
 
 ## Eerste implementatie
 
-Een extensie is alleen beschikbaar in AEM as a Cloud Service omgevingen als deze is geïmplementeerd in Adobe Developer Console.
+Een extensie die beschikbaar is in AEM as a Cloud Service-omgevingen, moet worden geïmplementeerd in Adobe Developer Console.
 
 Het plaatsingsproces verdeeld in twee logische stappen:
 
-1. Implementatie van de extensie App Builder-app in Adobe Developer Console door een ontwikkelaar.
+1. Implementatie van de extensie App Builder-app op Adobe Developer Console door een ontwikkelaar.
 1. Goedkeuring van de extensie door een implementatiebeheerder of bedrijfseigenaar.
 
 ### De extensie implementeren
 
-Implementeer de extensie in de werkruimte Productie. De uitbreidingen die aan de werkruimte van de Productie worden opgesteld worden automatisch toegevoegd aan alle AEM as a Cloud Service diensten van de Auteur in Adobe Org dat de uitbreiding wordt opgesteld aan.
+Implementeer de extensie in de werkruimte Productie. Extensies die worden geïmplementeerd in de werkruimte Productie, worden automatisch toegevoegd aan alle AEM as a Cloud Service Author-services in de Adobe Org waaraan de extensie wordt geïmplementeerd.
 
-1. Open een opdrachtregel naar de hoofdmap van de bijgewerkte extensie App Builder-app.
+1. Open een opdrachtregel naar de hoofdmap van de bijgewerkte App Builder-app voor extensies.
 1. Zorg ervoor dat de werkruimte Productie actief is
 
    ```shell
    $ aio app use -w Production
    ```
 
-   Alle wijzigingen samenvoegen in `.env` en `.aio`.
+   Voeg eventuele wijzigingen in `.env` en `.aio` samen.
 
-1. Implementeer de bijgewerkte app App Builder.
+1. Implementeer de bijgewerkte extensie App Builder-app.
 
    ```shell
    $ aio app deploy
@@ -62,53 +62,53 @@ Implementeer de extensie in de werkruimte Productie. De uitbreidingen die aan de
 
 #### Implementatiegoedkeuring aanvragen
 
-![Uitbreiding ter goedkeuring indienen](./assets/deploy/submit-for-approval.png){align="center"}
+![ legt uitbreiding voor goedkeuring voor ](./assets/deploy/submit-for-approval.png){align="center"}
 
-1. Aanmelden bij [Adobe Developer Console](https://developer.adobe.com)
-1. Selecteren __Console__
-1. Navigeren naar __Projecten__
+1. Login aan [ Adobe Developer Console ](https://developer.adobe.com)
+1. Selecteer __Console__
+1. Ga aan __Projecten__
 1. Selecteer het project dat aan de extensie is gekoppeld
 1. Selecteer de __Productie__ werkruimte
-1. Selecteren __Ter goedkeuring indienen__
+1. Selecteer __voorleggen voor goedkeuring__
 1. Vul het formulier in en verzend het, waarbij u de velden zo nodig bijwerkt.
 
 ### Implementatie-goedkeuring
 
-![Goedkeuring van extensies](./assets/deploy/adobe-exchange.png){align="center"}
+![ Goedkeuring van de Uitbreiding ](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. Aanmelden bij [Adobe Exchange](https://exchange.adobe.com/)
-1. Navigeren naar __Beheren__ > __Apps in behandeling__
-1. __Controleren__ de extensie App Builder-app
-1. Als de extensie wordt gewijzigd __Accepteren__ de evaluatie. Dit injecteert de verlenging onmiddellijk op alle AEM as a Cloud Service Auteur diensten binnen de Adobe Org.
+1. Login aan [ Adobe Exchange ](https://exchange.adobe.com/)
+1. Navigeer aan __leiden__ > __Apps in afwachting van overzicht__
+1. __Overzicht__ de uitbreiding App Builder app
+1. Als de uitbreidingsveranderingen aanvaardbaar ____ zijn keurt de overzicht goed. Dit injecteert de extensie onmiddellijk op alle AEM as a Cloud Service Author-services binnen de Adobe Org.
 
-Zodra het uitbreidingsverzoek wordt goedgekeurd, wordt de uitbreiding onmiddellijk actief in de AEM as a Cloud Service diensten van de Auteur.
+Zodra de extensieaanvraag is goedgekeurd, wordt de extensie onmiddellijk actief in de AEM as a Cloud Service Author-services.
 
 ## Een extensie bijwerken
 
-De app App Builder bijwerken en uitbreiden volgt hetzelfde proces als de [initiële implementatie](#initial-deployment), met dien verstande dat de bestaande uitrol van extensies eerst moet worden ingetrokken.
+Het bijwerken en de uitbreiding App Builder app volgt het zelfde proces zoals [ aanvankelijke plaatsing ](#initial-deployment), met de afwijking die de bestaande uitbreidingsplaatsing eerst moet worden ingetrokken.
 
 ### De extensie intrekken
 
 Als u een nieuwe versie van een extensie wilt implementeren, moet u deze eerst intrekken (of verwijderen). Hoewel de extensie is ingetrokken, is deze niet beschikbaar in AEM consoles.
 
-1. Aanmelden bij [Adobe Exchange](https://exchange.adobe.com/)
-1. Navigeren naar __Beheren__ > __App Builder-toepassingen__
-1. __Intrekken__ De extensie die moet worden bijgewerkt
+1. Login aan [ Adobe Exchange ](https://exchange.adobe.com/)
+1. Navigeer aan __leidt__ > __de Apps van App Builder__
+1. __trekt__ de bij te werken Uitbreiding in
 
 ### De extensie implementeren
 
-Implementeer de extensie in de werkruimte Productie. De uitbreidingen die aan de werkruimte van de Productie worden opgesteld worden automatisch toegevoegd aan alle AEM as a Cloud Service diensten van de Auteur in Adobe Org dat de uitbreiding wordt opgesteld aan.
+Implementeer de extensie in de werkruimte Productie. Extensies die worden geïmplementeerd in de werkruimte Productie, worden automatisch toegevoegd aan alle AEM as a Cloud Service Author-services in de Adobe Org waaraan de extensie wordt geïmplementeerd.
 
-1. Open een opdrachtregel naar de hoofdmap van de bijgewerkte extensie App Builder-app.
+1. Open een opdrachtregel naar de hoofdmap van de bijgewerkte App Builder-app voor extensies.
 1. Zorg ervoor dat de werkruimte Productie actief is
 
    ```shell
    $ aio app use -w Production
    ```
 
-   Alle wijzigingen samenvoegen in `.env` en `.aio`.
+   Voeg eventuele wijzigingen in `.env` en `.aio` samen.
 
-1. Implementeer de bijgewerkte app App Builder.
+1. Implementeer de bijgewerkte extensie App Builder-app.
 
    ```shell
    $ aio app deploy
@@ -116,33 +116,33 @@ Implementeer de extensie in de werkruimte Productie. De uitbreidingen die aan de
 
 #### Implementatiegoedkeuring aanvragen
 
-![Uitbreiding ter goedkeuring indienen](./assets/deploy/submit-for-approval.png){align="center"}
+![ legt uitbreiding voor goedkeuring voor ](./assets/deploy/submit-for-approval.png){align="center"}
 
-1. Aanmelden bij [Adobe Developer Console](https://developer.adobe.com)
-1. Selecteren __Console__
-1. Navigeren naar __Projecten__
+1. Login aan [ Adobe Developer Console ](https://developer.adobe.com)
+1. Selecteer __Console__
+1. Ga aan __Projecten__
 1. Selecteer het project dat aan de extensie is gekoppeld
 1. Selecteer de __Productie__ werkruimte
-1. Selecteren __Ter goedkeuring indienen__
+1. Selecteer __voorleggen voor goedkeuring__
 1. Vul het formulier in en verzend het, waarbij u de velden zo nodig bijwerkt.
 
 #### De aanvraag voor implementatie goedkeuren
 
-![Goedkeuring van extensies](./assets/deploy/adobe-exchange.png){align="center"}
+![ Goedkeuring van de Uitbreiding ](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. Aanmelden bij [Adobe Exchange](https://exchange.adobe.com/)
-1. Navigeren naar __Beheren__ > __Apps in behandeling__
-1. __Controleren__ de extensie App Builder-app
-1. Als de extensie wordt gewijzigd __Accepteren__ de evaluatie. Dit injecteert de verlenging onmiddellijk op alle AEM as a Cloud Service Auteur diensten binnen de Adobe Org.
+1. Login aan [ Adobe Exchange ](https://exchange.adobe.com/)
+1. Navigeer aan __leiden__ > __Apps in afwachting van overzicht__
+1. __Overzicht__ de uitbreiding App Builder app
+1. Als de uitbreidingsveranderingen aanvaardbaar ____ zijn keurt de overzicht goed. Dit injecteert de extensie onmiddellijk op alle AEM as a Cloud Service Author-services binnen de Adobe Org.
 
-Zodra het uitbreidingsverzoek wordt goedgekeurd, wordt de uitbreiding onmiddellijk actief in de AEM as a Cloud Service diensten van de Auteur.
+Zodra de extensieaanvraag is goedgekeurd, wordt de extensie onmiddellijk actief in de AEM as a Cloud Service Author-services.
 
 ## Een extensie verwijderen
 
-![Een extensie verwijderen](./assets/deploy/revoke.png)
+![ verwijder een uitbreiding ](./assets/deploy/revoke.png)
 
-Als u een extensie wilt verwijderen, trekt u deze in de Adobe Exchange in (of verwijdert u deze. Wanneer de extensie wordt ingetrokken, wordt deze verwijderd uit alle AEM as a Cloud Service Auteursservices.
+Als u een extensie wilt verwijderen, trekt u deze in de Adobe Exchange in (of verwijdert u deze. Wanneer de extensie wordt ingetrokken, wordt deze verwijderd uit alle AEM as a Cloud Service Author-services.
 
-1. Aanmelden bij [Adobe Exchange](https://exchange.adobe.com/)
-1. Navigeren naar __Beheren__ > __App Builder-toepassingen__
-1. __Intrekken__ De extensie die moet worden verwijderd
+1. Login aan [ Adobe Exchange ](https://exchange.adobe.com/)
+1. Navigeer aan __leidt__ > __de Apps van App Builder__
+1. __trekt__ de Uitbreiding in om te verwijderen

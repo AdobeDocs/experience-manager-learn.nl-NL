@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Account voor dynamiek maken en configureren
 
-[Aanmelden](https://dynamics.microsoft.com/en-us/) naar je Microsoft Dynamics-account. U kunt een [gratis proefaccount](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) als u geen rekening van de Dynamiek hebt.
+[ Login ](https://dynamics.microsoft.com/en-us/) aan uw rekening van de Dynamica van Microsoft. U kunt a [ vrije proefrekening ](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) tot stand brengen als u geen rekening van de Dynamiek hebt.
 
 >[!NOTE]
 >Vervang de server- en poortnummers in de URI hieronder om URI opnieuw te proberen. U zult dit opnieuw proberen URI nodig hebben wanneer het vormen van uw toepassing met Azure Actieve Folder.
->https://[server]:[poort]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+>https://[ server ]:[ haven ] /libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 De volgende video begeleidt u door de stappen om de Dynamica van Microsoft met Azure Actieve Folder te registreren.
 

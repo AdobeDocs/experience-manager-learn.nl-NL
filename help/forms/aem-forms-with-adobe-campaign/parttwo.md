@@ -29,7 +29,7 @@ In deze zelfstudie worden de stappen doorlopen voor het maken van een Campagnepr
 
 ## AEM maken {#create-aem-service}
 
-Maak AEM service om een Adobe Campaign-profiel te maken. Deze AEM dienst zal de geloofsbrieven van Adobe Campaign van de configuratie ophalen OSGI. Zodra de campagnegeloofsbrieven worden verkregen wordt het toegangstoken geproduceerd en het gebruiken van het toegangstoken de vraag van HTTP Post gemaakt om het profiel in Adobe Campaign tot stand te brengen. Hier volgt de code voor het maken van profielen.
+Maak AEM service om een Adobe Campaign-profiel te maken. Deze AEM dienst zal de geloofsbrieven van Adobe Campaign van de configuratie ophalen OSGI. Zodra de campagnegeloofsbrieven worden verkregen wordt het toegangstoken geproduceerd en het gebruiken van het toegangstoken wordt de vraag van HTTP Post gemaakt om het profiel in Adobe Campaign tot stand te brengen. Hier volgt de code voor het maken van profielen.
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -246,7 +246,7 @@ return null;
 
 Maak een aangepaste verzendhandler voor het verwerken van het verzenden van adaptieve formulieren. In deze douane verzend manager zullen wij een vraag aan de createProfile methode van CampaignService maken. De methode createProfile accepteert een JSONObject dat het profiel vertegenwoordigt dat moet worden gemaakt.
 
-Als u meer wilt weten over de aangepaste verzendhandler in AEM Forms, volgt u deze [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Om meer over douane te leren voorlegt manager in AEM Forms, te volgen gelieve deze [ verbinding ](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 Hier volgt de code in Aangepast verzenden
 
@@ -266,9 +266,9 @@ String pkey = addNewProfile.createProfile(profile);
 Zodra wij de dienst en de douane hebben bepaald voorlegt actie, zijn wij bereid om onze oplossing te testen. Voer de volgende stappen uit om de oplossing te testen
 
 
-* [Controleer of u de hier beschreven stappen hebt uitgevoerd](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Aangepast formulier en aangepaste verzendhandler importeren met pakketbeheer](assets/create-acs-profile-on-af-submission.zip).This package contains Adaptive Form configured to submit to custom submit action.
-* Voorvertoning van de [formulier](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [ zorg ervoor u de hier beschreven stappen hebt gevolgd ](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [ de Aangepaste Vorm van de Invoer en de Behandelaar van de Douane verzenden gebruikend pakketmanager ](assets/create-acs-profile-on-af-submission.zip).Dit pakket bevat Aangepaste Vorm die wordt gevormd om aan douane voor te leggen actie voor te leggen.
+* Voorproef de [ vorm ](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Alle velden invullen en verzenden
 * Een nieuw profiel wordt gecreeerd in uw instantie ACS
 

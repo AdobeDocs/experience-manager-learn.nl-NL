@@ -22,27 +22,27 @@ ht-degree: 0%
 
 Met de lokale QuickStart van de AEM SDK kunt u externe Java-foutopsporing vanaf uw IDE gebruiken, zodat u de uitvoering van live code in AEM kunt doorlopen om precies te weten wat de exacte uitvoeringsstroom is.
 
-Als u een extern foutopsporingsprogramma wilt aansluiten op AEM, moet de lokale QuickStart van de AEM-SDK zijn gestart met specifieke parameters (`-agentlib:...`) waarmee de IDE er verbinding mee kan maken.
+Om verre debugger aan AEM te verbinden, moet lokale QuickStart van AEM SDK met specifieke parameters (`-agentlib:...`) begonnen zijn toestaand winde om met het te verbinden.
 
 ```
 $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar aem-author-p4502.jar   
 ```
 
 + AEM SDK ondersteunt alleen Java 11
-+ `address` geeft de poort aan die AEM luistert naar externe foutopsporingsverbindingen en kan worden gewijzigd in elke beschikbare poort op de lokale ontwikkelcomputer.
-+ De laatste parameter (bijvoorbeeld `aem-author-p4502.jar`) is de AEM SKD Quickstart Jar. Dit kan de AEM Auteur-service zijn (`aem-author-p4502.jar`) of de AEM-publicatieservice (`aem-publish-p4503.jar`).
++ `address` geeft de poort aan AEM luistert naar externe foutopsporingsverbindingen en kan worden gewijzigd in een willekeurige beschikbare poort op de lokale ontwikkelcomputer.
++ De laatste parameter (bijvoorbeeld `aem-author-p4502.jar`) is de AEM SKD Quickstart Jar. Dit kan of de dienst van de Auteur van de AEM (`aem-author-p4502.jar`) of de dienst van AEM Publish (`aem-publish-p4503.jar`) zijn.
 
 
 ## IDE-installatie-instructies
 
 De meeste Java IDE&#39;s bieden ondersteuning voor foutopsporing op afstand van Java-programma&#39;s, maar de exacte instellingsstappen van elke IDE variëren. Gelieve te herzien de de opstellingsinstructies van de verre debugging van uw winde voor de nauwkeurige stappen. Typisch vereisen de configuraties van winde:
 
-+ De lokale quickstart van de host AEM SDK luistert aan, namelijk `localhost`.
-+ De lokale quickstart van de poort AEM SDK luistert naar een externe foutopsporingsverbinding. Dit is de poort die door de `address` parameter bij het starten van AEM lokale quickstart van SDK.
++ De lokale quickstart van de host AEM SDK luistert, namelijk `localhost` .
++ De lokale quickstart van de poort AEM SDK luistert naar een externe foutopsporingsverbinding. Dit is de poort die door de parameter `address` wordt opgegeven bij het starten AEM de lokale quickstart van SDK.
 + Af en toe, moeten het Gegrafeerde project (de Maven) die de broncode aan ver verstrekken zuivert worden gespecificeerd; dit is uw OSGi bundelmaven project(en).
 
 ### Instructies instellen
 
-+ [VS Code Java Remote Debugger instellen](https://code.visualstudio.com/docs/java/java-debugging)
-+ [IntelliJ IDEA Remote Debugger instellen](https://www.jetbrains.com/help/idea/tutorial-remote-debug.html)
-+ [Installatie van Eclipse Remote Debugger](https://javapapers.com/core-java/java-remote-debug-with-eclipse/)
++ [ de Verre debugger opstelling van Java van de Code Java ](https://code.visualstudio.com/docs/java/java-debugging)
++ [ IntelliJ IDEA Verre debugger opstelling ](https://www.jetbrains.com/help/idea/tutorial-remote-debug.html)
++ [ Verre debugger opstelling van de Verduistering ](https://javapapers.com/core-java/java-remote-debug-with-eclipse/)

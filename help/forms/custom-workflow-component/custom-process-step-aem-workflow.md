@@ -24,12 +24,13 @@ De volgende stappen worden vereist om de klasse te schrijven java en de klasse a
 
 ## Maven Project maken
 
-De eerste stap bestaat uit het maken van een gemodelleerd project met de juiste Adobe Maven Archetype. De gedetailleerde stappen worden in dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
+De eerste stap bestaat uit het maken van een gemodelleerd project met de juiste Adobe Maven Archetype. De gedetailleerde stappen worden vermeld in dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Zodra u uw beproefd die project hebt in eclipse wordt ingevoerd, bent u klaar beginnen uw eerste component te schrijven OSGi die in uw processtap kan worden gebruikt.
 
 
 ### Klasse maken die WorkflowProcess implementeert
 
-Open het beproefde project in uw eclipse winde. Uitbreiden **projectnaam** > **kern** map. Vouw de map src/main/java uit. U moet een pakket zien dat eindigt met &quot;core&quot;. Maak een Java-klasse die WorkflowProcess in dit pakket implementeert. U moet de uitvoeringsmethode overschrijven. De handtekening van de uitvoeringsmethode is als volgt openbare void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) genereert WorkflowException
+Open het beproefde project in uw eclipse winde. Breid **projectnaam** > **kern** omslag uit. Vouw de map src/main/java uit. U moet een pakket zien dat eindigt met &quot;core&quot;. Maak een Java-klasse die WorkflowProcess in dit pakket implementeert. U moet de uitvoeringsmethode overschrijven. De handtekening van de uitvoeringsmethode is als volgt
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)genereert WorkflowException
 
 In deze zelfstudie gaan we de bijlagen die zijn toegevoegd aan Adaptief formulier naar het bestandssysteem schrijven als onderdeel van de AEM workflow.
 
@@ -123,7 +124,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 
 Deze twee waarden worden als procesargumenten doorgegeven via het dialoogvenster van de workflowcomponent
 
-![ProcessStep](assets/custom-workflow-component.png)
+![ ProcessStep ](assets/custom-workflow-component.png)
 
 De dienst QueryBuilder wordt gebruikt aan vraagknopen van type nt:dossier onder de omslag attachmentsPath. De rest van de code doorloopt de zoekresultaten om een object Document te maken en op te slaan in het bestandssysteem
 
@@ -142,10 +143,10 @@ De dienst QueryBuilder wordt gebruikt aan vraagknopen van type nt:dossier onder 
 
 #### Samenstellen en implementeren
 
-[De bundel maken zoals hier beschreven](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
-[Zorg ervoor dat de bundel is geïmplementeerd en actief is](http://localhost:4502/system/console/bundles)
+[ bouwt de bundel zoals hier beschreven ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[ zorg ervoor de bundel wordt opgesteld en in actieve staat ](http://localhost:4502/system/console/bundles)
 
 ## Volgende stappen
 
-Maak uw [aangepaste workflowcomponent](./custom-workflow-component.md)
+Creeer uw [ component van het douanewerkschema ](./custom-workflow-component.md)
 

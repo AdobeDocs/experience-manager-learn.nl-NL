@@ -32,5 +32,5 @@ Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, -gebruikersgroepe
 
 ## Aanvullende bronnen
 
-+ [IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)
-+ [Door AEM opgegeven gebruikersgroepen en hun machtigingen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)
++ [ IMS Steun voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)
++ [ AEM-verstrekte gebruikersgroepen en hun toestemmingen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)

@@ -32,7 +32,7 @@ Terwijl de SPA codebase buiten AEM wordt beheerd, wordt een AEM project vereist 
 
 ## Download het basisproject van GitHub
 
-Download de `aem-guides-wknd-graphql` project van Github.com. Dit zal sommige basislijndossiers bevatten die in dit project worden gebruikt.
+Download het `aem-guides-wknd-graphql` -project van Github.com. Dit zal sommige basislijndossiers bevatten die in dit project worden gebruikt.
 
 ```
 $ mkdir -p ~/Code
@@ -42,9 +42,9 @@ $ cd remote-spa-tutorial
 
 ## Een AEM project maken
 
-Creeer een AEM project waarin configuraties en basislijninhoud worden beheerd. Dit project wordt gegenereerd binnen de gekloonde `aem-guides-wknd-graphql` project `remote-spa-tutorial` map.
+Creeer een AEM project waarin configuraties en basislijninhoud worden beheerd. Dit project wordt gegenereerd in de map `remote-spa-tutorial` van het gekloonde `aem-guides-wknd-graphql` project.
 
-_Gebruik altijd de nieuwste versie van het dialoogvenster [AEM Archetype](https://github.com/adobe/aem-project-archetype)._
+_gebruik altijd de recentste versie van [ AEM Archetype ](https://github.com/adobe/aem-project-archetype)._
 
 ```
 $ cd ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial
@@ -60,28 +60,28 @@ $ mvn -B archetype:generate \
 $ mv ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/wknd-app ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app
 ```
 
-_Het laatste bevel wijzigt eenvoudig de naam van de AEM projectomslag zodat is het duidelijk het AEM project, en niet om met Verre SPA worden verward__
+_het laatste bevel wijzigt eenvoudig de naam van de AEM projectomslag zodat is het duidelijk het AEM project, en niet om met Verre SPA__ te worden verward
 
-while `frontendModule="react"` wordt opgegeven, wordt de `ui.frontend` Het project wordt niet gebruikt voor het Verre SPA gebruiksgeval. De SPA wordt extern ontwikkeld en beheerd om te AEM en gebruikt alleen AEM als inhoud-API. De `frontendModule="react"` markering is vereist voor het project met  `spa-project` AEM Java™-afhankelijkheden en stel de externe SPA paginasjablonen in.
+Terwijl `frontendModule="react"` wordt gespecificeerd, wordt het `ui.frontend` project niet gebruikt voor het Verre SPA gebruik geval. De SPA wordt extern ontwikkeld en beheerd om te AEM en gebruikt alleen AEM als inhoud-API. De markering `frontendModule="react"` is vereist voor het project. Deze markering bevat de `spa-project` AEM Java™-afhankelijkheden en stelt de sjablonen voor de externe SPA pagina in.
 
 Het AEM Archetype van het Project produceert de volgende elementen die gebruikte om AEM voor integratie met de SPA te vormen.
 
-+ __Proxy&#39;s van WCM Core-componenten AEM__ om `ui.apps/src/.../apps/wknd-app/components`
-+ __Proxy voor externe SPA AEM__ om `ui.apps/src/.../apps/wknd-app/components/remotepage`
-+ __Paginasjablonen AEM__ om `ui.content/src/.../conf/wknd-app/settings/wcm/templates`
-+ __Subproject voor het definiëren van inhoudstoewijzingen__ om `ui.content/src/...`
-+ __Basislijnpagina&#39;s voor externe SPA AEM__ om `ui.content/src/.../content/wknd-app`
-+ __OSGi-configuratiemappen__ om `ui.config/src/.../apps/wknd-app/osgiconfig`
++ __AEM de volmachten van de Componenten van de Kern WCM__ bij `ui.apps/src/.../apps/wknd-app/components`
++ __AEM SPA de verre volmacht van de Pagina__ bij `ui.apps/src/.../apps/wknd-app/components/remotepage`
++ __AEM de Malplaatjes van de Pagina__ bij `ui.content/src/.../conf/wknd-app/settings/wcm/templates`
++ __Subproject om inhoudsafbeeldingen__ bij `ui.content/src/...` te bepalen
++ __Verre SPA van de Basislijn AEM pagina&#39;s__ bij `ui.content/src/.../content/wknd-app`
++ __OSGi configuratiemappen__ bij `ui.config/src/.../apps/wknd-app/osgiconfig`
 
 Met het basis AEM project wordt geproduceerd, verzekeren een paar aanpassingen SPA de verenigbaarheid van de Redacteur met Verre SPA.
 
 ## Ui.frontend-project verwijderen
 
-Aangezien de SPA een Verre SPA is, veronderstel het buiten het AEM project wordt ontwikkeld en geleid. Als u conflicten wilt voorkomen, verwijdert u de `ui.frontend` project van het opstellen. Als de `ui.frontend` project niet wordt verwijderd, twee SPA, de SPA die standaard in de `ui.frontend` project en de Verre SPA, wordt geladen tezelfdertijd in de AEM SPA Redacteur.
+Aangezien de SPA een Verre SPA is, veronderstel het buiten het AEM project wordt ontwikkeld en geleid. U voorkomt conflicten door het `ui.frontend` -project uit de implementatie te verwijderen. Als het `ui.frontend` -project niet wordt verwijderd, worden twee SPA, de standaard SPA in het `ui.frontend` -project en de externe SPA, tegelijkertijd geladen in de AEM SPA Editor.
 
-1. Het AEM-project openen (`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) in uw IDE
+1. Open het AEM project (`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) in uw winde
 1. De hoofdmap openen `pom.xml`
-1. Opmerkingen plaatsen bij `<module>ui.frontend</module` uit de `<modules>` list
+1. De opmerking `<module>ui.frontend</module` verwijderen uit de lijst `<modules>`
 
    ```
    <modules>
@@ -101,12 +101,12 @@ Aangezien de SPA een Verre SPA is, veronderstel het buiten het AEM project wordt
    </modules>
    ```
 
-   De `pom.xml` bestand moet er als volgt uitzien:
+   Het bestand `pom.xml` moet er als volgt uitzien:
 
-   ![Ui.frontend-module verwijderen uit reactorpom](./assets/aem-project/uifrontend-reactor-pom.png)
+   ![ verwijdert ui.frontend module uit reactorpom ](./assets/aem-project/uifrontend-reactor-pom.png)
 
-1. Open de `ui.apps/pom.xml`
-1. Maak een opmerking in het dialoogvenster `<dependency>` op `<artifactId>wknd-app.ui.frontend</artifactId>`
+1. De `ui.apps/pom.xml` openen
+1. Maak een opmerking over de `<dependency>` on `<artifactId>wknd-app.ui.frontend</artifactId>`
 
    ```
    <dependencies>
@@ -122,11 +122,11 @@ Aangezien de SPA een Verre SPA is, veronderstel het buiten het AEM project wordt
    </dependencies>
    ```
 
-   De `ui.apps/pom.xml` bestand moet er als volgt uitzien:
+   Het bestand `ui.apps/pom.xml` moet er als volgt uitzien:
 
-   ![Ui.frontend-afhankelijkheid verwijderen uit ui.apps](./assets/aem-project/uifrontend-uiapps-pom.png)
+   ![ verwijdert ui.frontend gebiedsdeel uit ui.apps ](./assets/aem-project/uifrontend-uiapps-pom.png)
 
-Als het AEM project vóór deze veranderingen werd gebouwd, schrap manueel `ui.frontend` gegenereerde clientbibliotheek vanuit de `ui.apps` project bij `ui.apps/src/main/content/jcr_root/apps/wknd-app/clientlibs/clientlib-react`.
+Als het AEM project vóór deze wijzigingen is gemaakt, verwijdert u handmatig de `ui.frontend` gegenereerde clientbibliotheek uit het `ui.apps` project at `ui.apps/src/main/content/jcr_root/apps/wknd-app/clientlibs/clientlib-react` .
 
 ## Inhoud toewijzen AEM
 
@@ -134,14 +134,14 @@ Voor AEM om de Verre SPA in de SPARedacteur te laden, moeten de afbeeldingen tus
 
 Het belang van deze configuratie wordt later onderzocht.
 
-U kunt de toewijzing uitvoeren met [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1) gedefinieerd in `/etc/map`.
+De afbeelding kan worden gedaan met [ het Schuiven Toewijzing ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1) die in `/etc/map` wordt bepaald.
 
-1. In winde, open `ui.content` subproject
-1. Navigeren naar  `src/main/content/jcr_root`
+1. Open het subproject `ui.content` in de IDE
+1. Navigeren naar `src/main/content/jcr_root`
 1. Een map maken `etc`
-1. In `etc`, maakt u een map `map`
-1. In `map`, maakt u een map `http`
-1. In `http`, maakt u een bestand `.content.xml` met de inhoud:
+1. Maak in `etc` een map `map`
+1. Maak in `map` een map `http`
+1. Maak in `http` een bestand `.content.xml` met de inhoud:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -151,8 +151,8 @@ U kunt de toewijzing uitvoeren met [Sling Mapping](https://sling.apache.org/docu
    </jcr:root>
    ```
 
-1. In `http` , maakt u een map `localhost_any`
-1. In `localhost_any`, maakt u een bestand `.content.xml` met de inhoud:
+1. Maak in `http` een map `localhost_any`
+1. Maak in `localhost_any` een bestand `.content.xml` met de inhoud:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -163,8 +163,8 @@ U kunt de toewijzing uitvoeren met [Sling Mapping](https://sling.apache.org/docu
    </jcr:root>
    ```
 
-1. In `localhost_any` , maakt u een map `wknd-app-routes-adventure`
-1. In `wknd-app-routes-adventure`, maakt u een bestand `.content.xml` met de inhoud:
+1. Maak in `localhost_any` een map `wknd-app-routes-adventure`
+1. Maak in `wknd-app-routes-adventure` een bestand `.content.xml` met de inhoud:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -182,7 +182,7 @@ U kunt de toewijzing uitvoeren met [Sling Mapping](https://sling.apache.org/docu
        sling:internalRedirect="/content/wknd-app/us/en/home/adventure/$1"/>
    ```
 
-1. Koppelingsknooppunten toevoegen aan `ui.content/src/main/content/META-INF/vault/filter.xml` aan hen die in het AEM zijn opgenomen.
+1. Voeg de toewijzingsknooppunten toe aan `ui.content/src/main/content/META-INF/vault/filter.xml` aan de knooppunten die in het AEM-pakket zijn opgenomen.
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -197,25 +197,25 @@ U kunt de toewijzing uitvoeren met [Sling Mapping](https://sling.apache.org/docu
    </workspaceFilter>
    ```
 
-De mapstructuur en `.context.xml` bestanden moeten er als volgt uitzien:
+De mapstructuur en `.context.xml` -bestanden moeten er als volgt uitzien:
 
-![Sling Mapping](./assets/aem-project/sling-mapping.png)
+![ het Schuiven Toewijzing ](./assets/aem-project/sling-mapping.png)
 
-De `filter.xml` bestand moet er als volgt uitzien:
+Het bestand `filter.xml` moet er als volgt uitzien:
 
-![Sling Mapping](./assets/aem-project/sling-mapping-filter.png)
+![ het Schuiven Toewijzing ](./assets/aem-project/sling-mapping-filter.png)
 
 Nu, wanneer het AEM project wordt opgesteld, zijn deze configuraties automatisch inbegrepen.
 
-De effecten voor AEM toewijzing van objecten die worden uitgevoerd `http` en `localhost`, dus alleen lokale ontwikkeling. Wanneer het opstellen aan AEM as a Cloud Service, gelijkaardige het Schipen Toewijzingen moet worden toegevoegd dat doel `https` en de toepasselijke AEM as a Cloud Service domein(en). Zie de klasse [Documentatie over het toewijzen van objecten](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
+De effecten voor het toewijzen van objecten aan AEM `http` en `localhost` worden uitgevoerd, zodat alleen lokale ontwikkeling wordt ondersteund. Bij implementatie naar AEM as a Cloud Service moeten vergelijkbare Sling Mappings-objecten worden toegevoegd aan dat doel `https` en het juiste AEM as a Cloud Service-domein of de juiste-domeinen. Voor meer informatie, zie de [ Verschuivende documentatie van de Afbeelding ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
 
 ## Beveiligingsbeleid voor het delen van bronnen tussen verschillende bronnen
 
-Configureer vervolgens AEM om de inhoud te beschermen, zodat alleen deze SPA toegang heeft tot de AEM inhoud. Configureren [Delen van bronnen tussen verschillende bronnen in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
+Configureer vervolgens AEM om de inhoud te beschermen, zodat alleen deze SPA toegang heeft tot de AEM inhoud. Vorm [ het Delen van het Middel van de Cross-Origin in in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
-1. In uw winde, open `ui.config` Maven-subproject
+1. Open het subproject `ui.config` Maven in uw IDE
 1. Navigeren `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
-1. Een bestand met de naam `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json`
+1. Een bestand met de naam `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json` maken
 1. Voeg het volgende toe aan het bestand:
 
    ```
@@ -252,24 +252,24 @@ Configureer vervolgens AEM om de inhoud te beschermen, zodat alleen deze SPA toe
    }
    ```
 
-De `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json` bestand moet er als volgt uitzien:
+Het bestand `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json` moet er als volgt uitzien:
 
-![SPA Editor CORS-configuratie](./assets/aem-project/cors-configuration.png)
+![ SPA de configuratie van de Redacteur CORS ](./assets/aem-project/cors-configuration.png)
 
 De belangrijkste configuratieelementen zijn:
 
-+ `alloworigin` Hiermee geeft u op welke hosts inhoud mogen ophalen van AEM.
-   + `localhost:3000` wordt toegevoegd ter ondersteuning van de SPA die lokaal wordt uitgevoerd
++ `alloworigin` geeft aan welke hosts inhoud mogen ophalen uit AEM.
+   + `localhost:3000` wordt toegevoegd ter ondersteuning van SPA die lokaal worden uitgevoerd
    + `https://external-hosted-app` fungeert als plaatsaanduiding die moet worden vervangen door het domein waarop de externe SPA wordt gehost.
-+ `allowedpaths` specificeren welke wegen in AEM door deze configuratie CORS worden behandeld. Standaard is toegang tot alle inhoud in AEM toegestaan, maar dit kan alleen worden toegepast op de specifieke paden waartoe de SPA toegang heeft, bijvoorbeeld: `/content/wknd-app`.
++ `allowedpaths` geeft op welke paden in AEM door deze CORS-configuratie worden gedekt. Standaard is toegang tot alle inhoud in AEM toegestaan, maar dit kan alleen worden toegepast op de specifieke paden waartoe de SPA toegang heeft, bijvoorbeeld: `/content/wknd-app` .
 
 ## AEM pagina instellen als sjabloon voor externe SPA
 
-Het AEM Project Archetype produceert een project dat voor AEM integratie met een Verre SPA wordt voorbereid, maar vereist een kleine, maar belangrijke aanpassing aan auto-geproduceerde AEM paginastructuur. Het type van de automatisch gegenereerde AEM moet worden gewijzigd in __Externe SPA__, in plaats van __SPA pagina__.
+Het AEM Project Archetype produceert een project dat voor AEM integratie met een Verre SPA wordt voorbereid, maar vereist een kleine, maar belangrijke aanpassing aan auto-geproduceerde AEM paginastructuur. De auto-geproduceerde AEM pagina moet zijn type hebben veranderd in __Verre SPA pagina__, eerder dan a __SPA pagina__.
 
-1. In uw winde, open `ui.content` subproject
+1. Open het subproject `ui.content` in uw IDE
 1. Openen naar `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml`
-1. Deze bijwerken `.content.xml` bestand met:
+1. Dit `.content.xml` -bestand bijwerken met:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -299,22 +299,22 @@ Het AEM Project Archetype produceert een project dat voor AEM integratie met een
    </jcr:root>
    ```
 
-De belangrijkste wijzigingen zijn updates voor de `jcr:content` knooppunten:
+De belangrijkste wijzigingen zijn updates van het knooppunt `jcr:content` :
 
-+ `cq:template` tot `/conf/wknd-app/settings/wcm/templates/spa-remote-page`
-+ `sling:resourceType` tot `wknd-app/components/remotepage`
++ `cq:template` t/m `/conf/wknd-app/settings/wcm/templates/spa-remote-page`
++ `sling:resourceType` t/m `wknd-app/components/remotepage`
 
-De `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml` bestand moet er als volgt uitzien:
+Het bestand `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml` moet er als volgt uitzien:
 
-![Updates van de startpagina.content.xml](./assets/aem-project/home-content-xml.png)
+![ pagina van het Huis .content.xml- updates ](./assets/aem-project/home-content-xml.png)
 
 Deze wijzigingen maken het mogelijk dat deze pagina, die de SPA hoofdmap in AEM vormt, de externe SPA in SPA Editor laadt.
 
 >[!NOTE]
 >
->Als dit project eerder aan AEM werd opgesteld, zorg ervoor om de AEM pagina te schrappen zoals __Sites > WKND App > us > en > WKND App Home Page__ als de `ui.content`  project is ingesteld op __samenvoegen__ knooppunten, in plaats van __update__.
+>Als dit project eerder aan AEM werd opgesteld, zorg ervoor om de AEM pagina als __Plaatsen te schrappen > WKND App > gebruiken > en > WKND App Homepage__, aangezien het `ui.content` project aan ____ knopen samenvoegt, eerder dan __update__ wordt geplaatst.
 
-Deze pagina kan ook worden verwijderd en opnieuw worden gemaakt als een externe SPA pagina op AEM zichzelf, maar deze pagina wordt automatisch gemaakt in het dialoogvenster `ui.content` het beste om het in de codebasis bij te werken.
+Deze pagina kan ook worden verwijderd en opnieuw worden gemaakt als een externe SPA pagina in AEM zelf, maar aangezien deze pagina automatisch wordt gemaakt in het `ui.content` -project, is het beter om deze pagina in de codebasis bij te werken.
 
 ## Implementeer het AEM Project naar AEM SDK
 
@@ -326,41 +326,41 @@ Deze pagina kan ook worden verwijderd en opnieuw worden gemaakt als een externe 
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   ![mvn clean install -PautoInstallSinglePackage](./assets/aem-project/mvn-install.png)
+   ![ mvn schone installatie -PautoInstallSinglePackage ](./assets/aem-project/mvn-install.png)
 
 ## De AEM van de hoofdmap configureren
 
-Met AEM opgesteld Project, is er één laatste stap om SPA Redacteur voor te bereiden om onze Verre SPA te laden. Markeer in AEM de AEM pagina die overeenkomt met het SPA.`/content/wknd-app/us/en/home`, gegenereerd door het AEM Project Archetype.
+Met AEM opgesteld Project, is er één laatste stap om SPA Redacteur voor te bereiden om onze Verre SPA te laden. In AEM, merk de AEM pagina die aan de SPA wortel, `/content/wknd-app/us/en/home` beantwoordt, die door het Archetype van het Project van de AEM wordt geproduceerd.
 
 1. Aanmelden bij AEM auteur
-1. Navigeren naar __Sites > WKND App > us > en__
-1. Selecteer de __WKND App Home Page__ en tikken __Eigenschappen__
+1. Navigeer aan __Plaatsen > App WKND > gebruiken > en__
+1. Selecteer de __WebND Pagina van het Huis van de App__, en tik __Eigenschappen__
 
-   ![WKND App Home Page - Eigenschappen](./assets/aem-content/edit-home-properties.png)
+   ![ WKND App Home Page - Eigenschappen ](./assets/aem-content/edit-home-properties.png)
 
-1. Ga naar de __SPA__ tab
-1. Vul de __Configuratie van externe SPA__
-   + __URL SPA__: `http://localhost:3000`
+1. Navigeer aan het __SPA__ lusje
+1. Vul de __Verre SPA Configuratie__ uit
+   + __SPA gastheer URL__: `http://localhost:3000`
       + De URL naar de hoofdmap van de externe SPA
 
-   ![WKND App Home Page - Configuratie van externe SPA](./assets/aem-content/remote-spa-configuration.png)
+   ![ WKND de Homepage van de App - Verre SPA Configuratie ](./assets/aem-content/remote-spa-configuration.png)
 
-1. Tikken __Opslaan en sluiten__
+1. Tik __sparen &amp; Sluiten__
 
-Onthoud dat het paginatype van deze pagina is gewijzigd in dat van een __Externe SPA__, wat ons in staat stelt de __SPA__ in zijn __Pagina-eigenschappen__.
+Herinner dat wij het type van deze pagina in dat van a __Verre SPA Pagina__ veranderden, die ons toestaat om het __SPA__ lusje in zijn __Eigenschappen van de Pagina__ te zien.
 
 Deze configuratie moet alleen worden ingesteld op de AEM pagina die overeenkomt met de hoofdmap van de SPA. Alle AEM pagina&#39;s onder deze pagina nemen de waarde over.
 
 ## Gefeliciteerd
 
-U hebt nu AEM configuraties voorbereid en deze geïmplementeerd op uw lokale AEM. Nu weet u hoe:
+U hebt nu AEM configuraties voorbereid en hen opgesteld aan uw lokale AEM auteur! Nu weet u hoe:
 
-+ Verwijder het AEM Project Archetype-Gegenereerde SPA door de gebiedsdelen in te becommentariëren `ui.frontend`
++ Verwijder de SPA van de Archetype van het AEM Project door opmerkingen te maken over de afhankelijkheden in `ui.frontend`
 + Voeg het Verschuiven Toewijzingen toe aan AEM die de SPA routes aan middelen in AEM in kaart brengen
-+ Stel AEM het beveiligingsbeleid voor het delen van bronnen van verschillende oorsprong in waarmee de externe SPA inhoud van AEM kunnen verbruiken
++ Opstelling AEM het Delen van het Middel van de Cross-Origin veiligheidsbeleid dat de Verre SPA toestaat om inhoud van AEM te verbruiken
 + Implementeer het AEM project op uw lokale AEM SDK-auteurservice
 + Een AEM Pagina markeren als de externe SPA met de eigenschap URL van SPA host
 
 ## Volgende stappen
 
-Met AEM geconfigureerd kunnen we ons richten op [bootstrapping de Verre SPA](./spa-bootstrap.md) met ondersteuning voor bewerkbare gebieden via AEM SPA Editor!
+Met AEM gevormd, kunnen wij zich op [ bootstrapping de Verre SPA ](./spa-bootstrap.md) met steun voor editable gebieden gebruikend AEM Redacteur concentreren SPA!

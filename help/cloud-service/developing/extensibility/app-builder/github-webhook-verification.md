@@ -1,6 +1,6 @@
 ---
 title: Github.com
-description: Leer hoe te om een webhaverzoek van Github.com in een actie van de Bouwer van de App te verifiëren.
+description: Leer hoe u een webhaverzoek van Github.com kunt verifiëren in een App Builder-actie.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -8,23 +8,23 @@ role: Developer
 level: Intermediate
 jira: KT-15714
 last-substantial-update: 2023-06-06T00:00:00Z
-source-git-commit: 4b9f784de5fff7d9ba8cf7ddbe1802c271534010
+exl-id: 5492dc7b-f034-4a7f-924d-79e083349e26
+source-git-commit: 8f64864658e521446a91bb4c6475361d22385dc1
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
 
 ---
 
-
 # Github.com
 
-Met webhooks kunt u integraties maken of instellen die zich abonneren op bepaalde gebeurtenissen op GitHub.com. Wanneer één van die gebeurtenissen wordt teweeggebracht, verzendt GitHub een nuttige lading van de POST van HTTP naar de gevormde URL van Webhaak. Nochtans, voor veiligheidsredenen, is het belangrijk om te verifiëren dat het inkomende webhaverzoek eigenlijk van GitHub en niet van een kwaadwillige actor is. Deze zelfstudie begeleidt u door de stappen om een GitHub.com webshverzoek in een actie van de Bouwer van de Adobe te verifiëren App gebruikend een gedeeld geheim.
+Met webhooks kunt u integraties maken of instellen die zich abonneren op bepaalde gebeurtenissen op GitHub.com. Wanneer één van die gebeurtenissen wordt teweeggebracht, verzendt GitHub een nuttige lading van de POST van HTTP naar de gevormde URL van Webhaak. Nochtans, voor veiligheidsredenen, is het belangrijk om te verifiëren dat het inkomende webhaverzoek eigenlijk van GitHub en niet van een kwaadwillige actor is. Deze zelfstudie begeleidt u door de stappen om een GitHub.com webshverzoek in een Adobe App Builder actie te verifiëren gebruikend een gedeeld geheim.
 
 ## Cadeaugeheim instellen in AppBuilder
 
-1. **geheim toevoegen aan `.env` bestand:**
+1. **voeg geheim aan `.env` dossier toe:**
 
-   In het project App Builder `.env` bestand, voeg een aangepaste sleutel toe voor het GitHub.com-websitegeheim:
+   Voeg in het `.env` -bestand van het App Builder-project een aangepaste sleutel toe voor het GitHub.com-websitegeheim:
 
    ```env
    # Specify your secrets here
@@ -33,15 +33,15 @@ Met webhooks kunt u integraties maken of instellen die zich abonneren op bepaald
    GITHUB_SECRET=my-github-webhook-secret-1234!
    ```
 
-2. **Bijwerken `ext.config.yaml` bestand:**
+2. **Update `ext.config.yaml` dossier:**
 
-   De `ext.config.yaml` bestand moet worden bijgewerkt om de aanvraag van de GitHub.com-webhaak te controleren.
+   Het bestand `ext.config.yaml` moet worden bijgewerkt om de aanvraag van de GitHub.com-website te controleren.
 
-   - De handeling AppBuilder instellen `web` configuratie aan `raw` om de ruwe aanvraaginstantie te ontvangen van GitHub.com.
-   - Onder `inputs` in de actieconfiguratie AppBuilder, voeg toe `GITHUB_SECRET` toets, toewijzen aan de `.env` veld dat het geheim bevat. De waarde van deze toets is de `.env` veldnaam, voorafgegaan door `$`.
-   - Stel de `require-adobe-auth` aantekening in de actieconfiguratie AppBuilder aan `false` om toe te staan dat de actie wordt geroepen zonder de authentificatie van de Adobe te vereisen.
+   - Stel de configuratie van de handeling AppBuilder `web` in op `raw` om de onbewerkte aanvraaginstantie van GitHub.com te ontvangen.
+   - Voeg onder `inputs` in de actieconfiguratie AppBuilder de `GITHUB_SECRET` -toets toe en wijs deze toe aan het `.env` -veld dat het geheim bevat. De waarde van deze toets is de veldnaam `.env` die vooraf is ingesteld door `$` .
+   - Stel de `require-adobe-auth` -annotatie in de actieconfiguratie AppBuilder in op `false` zodat de handeling kan worden aangeroepen zonder dat verificatie van de Adobe vereist is.
 
-   Het resultaat `ext.config.yaml` Het bestand moet er ongeveer als volgt uitzien:
+   Het resulterende `ext.config.yaml` -bestand moet er ongeveer als volgt uitzien:
 
    ```yaml
    operations:
@@ -69,7 +69,7 @@ Met webhooks kunt u integraties maken of instellen die zich abonneren op bepaald
 
 ## Verificatiecode toevoegen aan AppBuilder-actie
 
-Voeg vervolgens de hieronder opgegeven JavaScript-code toe (gekopieerd van [Documentatie van GitHub.com](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries#javascript-example)) aan uw handeling AppBuilder. Zorg ervoor dat u de `verifySignature` functie.
+Daarna, voeg de hieronder verstrekte code van JavaScript (die van [ wordt gekopieerd GitHub.com documentatie ](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries#javascript-example)) aan uw actie AppBuilder toe. Exporteer de functie `verifySignature` .
 
 ```javascript
 // src/dx-excshell-1/actions/generic/github-webhook-verification.js
@@ -124,9 +124,9 @@ module.exports = { verifySignature };
 
 ## Verificatie implementeren in AppBuilder-actie
 
-Daarna, verifieer dat het verzoek van GitHub door de handtekening in de verzoekkopbal aan de handtekening komt te vergelijken die door wordt geproduceerd `verifySignature` functie.
+Daarna, verifieer dat het verzoek van GitHub door de handtekening in de verzoekkopbal te vergelijken met de handtekening komt die door de `verifySignature` functie wordt geproduceerd.
 
-In de actie AppBuilder `index.js`voegt u de volgende code toe aan de `main` functie:
+Voeg de volgende code toe aan de functie `main` in het actiepakket AppBuilder `index.js` :
 
 
 ```javascript
@@ -208,10 +208,10 @@ async function main(params) {
 
 ## Webhaak configureren in GitHub
 
-Ga terug naar GitHub.com en geef GitHub.com dezelfde geheime waarde op wanneer u de webhaak maakt. Gebruik de geheime waarde die in uw `.env` bestand `GITHUB_SECRET` toets.
+Ga terug naar GitHub.com en geef GitHub.com dezelfde geheime waarde op wanneer u de webhaak maakt. Gebruik de geheime waarde die is opgegeven in de sleutel `GITHUB_SECRET` van het bestand `.env` .
 
-Ga in GitHub.com naar de instellingen van de opslagplaats en bewerk de webhaak. Geef in de instellingen van de webhaak de geheime waarde op in het dialoogvenster `Secret` veld. Klikken __Webhaak bijwerken__ onder aan om de wijzigingen op te slaan.
+Ga in GitHub.com naar de instellingen van de opslagplaats en bewerk de webhaak. Geef in de instellingen van de webhaak de geheime waarde op in het veld `Secret` . Klik __WebHaak van de Update__ bij de bodem om de veranderingen te bewaren.
 
-![Github Webhaak Secret](./assets/github-webhook-verification/github-webhook-settings.png)
+![ Github Webhaak Geheim ](./assets/github-webhook-verification/github-webhook-settings.png)
 
-Door deze stappen te volgen, kunt u ervoor zorgen dat uw actie App Builder veilig kan verifiëren dat de inkomende webhaverzoeken inderdaad van uw GitHub.com webhaak zijn.
+Als u deze stappen uitvoert, zorgt u ervoor dat uw App Builder-actie veilig kan controleren of binnenkomende webhaanvragen afkomstig zijn van uw GitHub.com-webhaak.

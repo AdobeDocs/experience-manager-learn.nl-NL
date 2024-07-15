@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-10797
 thumbnail: kt-10797.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
+badgeVersions: label="AEM, hoofdloos as a Cloud Service" before-title="false"
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
 duration: 129
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
@@ -21,51 +21,51 @@ ht-degree: 0%
 
 # Webcomponent
 
-Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing van de Component van Web toont hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted vragen en een gedeelte van UI terug te geven, verwezenlijkt gebruikend zuivere code JavaScript.
+Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze toepassing van de Component van Web toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted vragen en een gedeelte van UI terug te geven, verwezenlijkt gebruikend zuivere code van JavaScript.
 
-![Webcomponent met AEM headless](./assets/web-component/web-component.png)
+![ Component van het Web met AEM Zwaartepunt ](./assets/web-component/web-component.png)
 
-De weergave [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component)
+Bekijk de [ broncode op GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component)
 
 ## Vereisten {#prerequisites}
 
 De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
-+ [Node.js v18](https://nodejs.org/en/)
-+ [Git](https://git-scm.com/)
++ [ Node.js v18 ](https://nodejs.org/en/)
++ [ Git ](https://git-scm.com/)
 
 ## AEM
 
 De component van het Web werkt met de volgende AEM plaatsingsopties.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Lokale instelling met [de SDK van AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-   + Vereisten [11 JDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (als verbinding wordt gemaakt met lokale AEM 6.5 of AEM SDK)
++ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ De lokale opstelling die [ SDK van AEM Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) gebruikt
+   + Vereist [ JDK 11 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (als het verbinden met lokale AEM 6.5 of AEM SDK)
 
-Deze voorbeeldtoepassing is afhankelijk van [basic-tutorial-solution.content.zip](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip) en de vereiste [implementatieconfiguraties](../deployment/web-component.md) zijn geïnstalleerd.
+Dit voorbeeld app baseert zich op [ basis-tutorial-solution.content.zip ](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip) om worden geïnstalleerd en de vereiste [ plaatsingsconfiguraties ](../deployment/web-component.md) zijn op zijn plaats.
 
 
 >[!IMPORTANT]
 >
->De component Web wordt ontworpen om met een __AEM publiceren__ milieu, nochtans kan het inhoud van AEM Auteur als de authentificatie in de Component van het Web wordt verstrekt [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) bestand.
+>De Component van het Web wordt ontworpen om met een __AEM milieu van Publish__ te verbinden, nochtans kan het inhoud van AEM Auteur als de authentificatie in het 2} ](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) dossier van de Component van het Web {wordt verstrekt.[`person.js`
 
 ## Hoe wordt het gebruikt
 
-1. Klonen met `adobe/aem-guides-wknd-graphql` opslagplaats:
+1. De gegevensopslagruimte `adobe/aem-guides-wknd-graphql` klonen:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Navigeren naar `web-component` subdirectory.
+1. Ga naar de submap `web-component` .
 
    ```shell
    $ cd aem-guides-wknd-graphql/web-component
    ```
 
-1. Bewerk de `.../src/person.js` bestand dat de AEM verbindingsgegevens bevat:
+1. Bewerk het `.../src/person.js` -bestand om de AEM verbindingsgegevens op te nemen:
 
-   In de `aemHeadlessService` object, het `aemHost` om naar uw AEM publicatieservice te verwijzen.
+   Werk in het `aemHeadlessService` -object de `aemHost` bij zodat deze naar uw AEM Publish-service verwijst.
 
    ```plain
    # AEM Server namespace
@@ -78,7 +78,7 @@ Deze voorbeeldtoepassing is afhankelijk van [basic-tutorial-solution.content.zip
    queryParamName=name
    ```
 
-   Als u verbinding maakt met een AEM Auteur, kunt u in het dialoogvenster `aemCredentials` -object, lokale AEM gebruikersgegevens opgeven.
+   Als u verbinding maakt met een AEM-auteurservice, geeft u in het `aemCredentials` -object lokale AEM gebruikersgegevens op.
 
    ```plain
    # For Basic auth, use AEM ['user','pass'] pair (for example, when connecting to local AEM Author instance)
@@ -86,23 +86,23 @@ Deze voorbeeldtoepassing is afhankelijk van [basic-tutorial-solution.content.zip
    password=admin
    ```
 
-1. Open een terminal en voer de opdrachten uit vanuit `aem-guides-wknd-graphql/web-component`:
+1. Open een terminal en voer de opdrachten uit vanuit `aem-guides-wknd-graphql/web-component` :
 
    ```shell
    $ npm install
    $ npm start
    ```
 
-1. Een nieuw browser venster opent de statische pagina van de HTML die de Component van het Web bij insluit [http://localhost:8080](http://localhost:8080).
-1. De _Persoonsgegevens_ De Component van het Web wordt getoond op de Web-pagina.
+1. Een nieuw browser venster opent de statische pagina van de HTML die de Component van het Web in [ http://localhost:8080 ](http://localhost:8080) inbedt.
+1. De _Component van het Web van Info van de Persoon_ wordt getoond op de Web-pagina.
 
 ## De code
 
-Hieronder volgt een overzicht van hoe de Component van het Web wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL voortgeduurde vragen, en hoe dat gegeven wordt voorgesteld. De volledige code is te vinden op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component).
+Hieronder volgt een overzicht van hoe de Component van het Web wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL voortgeduurde vragen, en hoe dat gegeven wordt voorgesteld. De volledige code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component) worden gevonden.
 
 ### HTML-tag van webcomponent
 
-Een herbruikbare webcomponent (ook bekend als aangepast element) `<person-info>` wordt toegevoegd aan de `../src/assets/aem-headless.html` HTML pagina. Het ondersteunt `host` en `query-param-value` kenmerken om het gedrag van de component te bepalen. De `host` waardeoverschrijvingen van kenmerk `aemHost` waarde van `aemHeadlessService` object in `person.js`, en `query-param-value` wordt gebruikt om de persoon te selecteren die moet worden weergegeven.
+Een herbruikbare webcomponent (ook bekend als aangepast element) `<person-info>` wordt toegevoegd aan de pagina `../src/assets/aem-headless.html` HTML. De klasse ondersteunt `host` - en `query-param-value` -kenmerken om het gedrag van de component te stimuleren. De waarde van het kenmerk `host` overschrijft `aemHost` value from `aemHeadlessService` -object in `person.js` en `query-param-value` wordt gebruikt om de te renderen persoon te selecteren.
 
 ```html
     <person-info 
@@ -113,11 +113,11 @@ Een herbruikbare webcomponent (ook bekend als aangepast element) `<person-info>`
 
 ### Webcomponentimplementatie
 
-De `person.js` Hiermee definieert u de functionaliteit van de webcomponent en hieronder ziet u de belangrijkste hooglichten van de component.
+In `person.js` wordt de functionaliteit van de webcomponent gedefinieerd. Hieronder vindt u belangrijke markeringen.
 
 #### Implementatie van het element PersonInfo
 
-De `<person-info>` het klassenobject van het aangepaste element definieert de functionaliteit door het `connectedCallback()` levenscyclusmethoden, het koppelen van een schaduwhoofdmap, het ophalen van GraphQL-permanente query en DOM-manipulatie om de interne schaduw-DOM-structuur van het aangepaste element te maken.
+Het klassenobject van het `<person-info>` aangepaste element definieert de functionaliteit met behulp van de levenscyclusmethoden van `connectedCallback()` , het koppelen van een schaduwhoofdmap, het ophalen van GraphQL-query&#39;s die nog steeds worden uitgevoerd en DOM-manipulatie om de interne schaduw-DOM-structuur van het aangepaste element te maken.
 
 ```javascript
 // Create a Class for our Custom Element (person-info)
@@ -177,7 +177,7 @@ class PersonInfo extends HTMLElement {
 }
 ```
 
-#### Registreer de `<person-info>` element
+#### Het element `<person-info>` registreren
 
 ```javascript
     // Define the person-info element
@@ -186,6 +186,6 @@ class PersonInfo extends HTMLElement {
 
 ### Delen van bronnen van oorsprong (CORS)
 
-Deze Component van Web baseert zich op een op AEM-Gebaseerde configuratie CORS die op het doel AEM milieu loopt en veronderstelt dat de gastheerpagina op loopt `http://localhost:8080` in ontwikkelingswijze en hieronder is een steekproefCORS OSGi configuratie voor de lokale dienst van de AEMAuteur.
+Deze Component van Web baseert zich op een op AEM-gebaseerde configuratie CORS die op het doel AEM milieu loopt en veronderstelt dat de gastheerpagina op `http://localhost:8080` op ontwikkelingswijze en hieronder een configuratie van steekproefCORS OSGi voor de lokale dienst van de AEMAuteur loopt.
 
-Gelieve te herzien [implementatieconfiguraties](../deployment/web-component.md) voor de respectieve AEM.
+Gelieve te herzien [ plaatsingsconfiguraties ](../deployment/web-component.md) voor de respectieve AEM dienst.

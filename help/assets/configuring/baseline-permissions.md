@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Machtigingen basislijn
 
-Gebruikerstoegang beheren op de [basismappen voor elementen](./baseline-folders.md) is een essentieel aspect van het bestuur en zorgt ervoor dat de processen op de juiste wijze kunnen worden ondersteund.
+Het beheren van gebruikerstoegang op de [ omslagen van basislijnactiva ](./baseline-folders.md) is een kritiek aspect in bestuur, en verzekert de processen kunnen behoorlijk worden gesteund.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)

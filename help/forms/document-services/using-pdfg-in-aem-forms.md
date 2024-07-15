@@ -21,19 +21,19 @@ ht-degree: 0%
 Mogelijkheid voor slepen en neerzetten demonstreren om PDF te maken met AEM Forms
 
 PDFG staat voor het genereren van PDF. Dit betekent dat u verschillende bestandsindelingen kunt omzetten in PDF. De meest voorkomende zijn Microsoft Office-documenten. PDFG maakt sinds 6.1 deel uit van AEM Forms.
-[De javadoc voor PDFG API wordt hier weergegeven](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
+[ javadoc voor PDFG API is hier vermeld ](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
 
-Met de elementen die aan dit artikel zijn gekoppeld, kunt u MS Office-documenten of JPG-bestanden naar de neerzetzone van de pagina HTML slepen en neerzetten. Zodra het document wordt gelaten vallen, roept het de dienst PDFG aan en zet het document in PDF om en bewaar het op het dossiersysteem van AEM Server.
+Met de elementen die aan dit artikel zijn gekoppeld, kunt u MS Office-documenten of JPG bestand naar de neerzetzone van de pagina HTML slepen. Zodra het document wordt gelaten vallen, roept het de dienst PDFG aan en zet het document in PDF om en bewaar het op het dossiersysteem van AEM Server.
 
 Voer de volgende stappen uit om de demo-elementen te installeren
 
-1. PDFG configureren zoals vermeld in dit document [hier](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
+1. Vorm PDFG zoals vermeld in dit document [ hier ](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
 1. Volg de desbetreffende documentatie voor uw AEM Forms-versie.
 1. [Importeer en installeer elementen die verwant zijn aan dit artikel met gebruik van pakketbeheer.](assets/createpdfgdemov2.zip)
-1. [Navigeren naar post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) in uw CRX
+1. [ navigeer aan post.jsp ](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) in uw CRX
 1. De opslaglocatie naar uw voorkeur wijzigen (regel 9)
 1. Sla uw wijzigingen op.
-1. Open de [html-pagina](http://localhost:4502/content/DocumentServices/CreatePDFG.html) voor het slepen en neerzetten van bestanden voor conversie.
+1. Open de [ HTML- pagina ](http://localhost:4502/content/DocumentServices/CreatePDFG.html) voor het slepen van en het laten vallen van dossiers voor omzetting.
 1. Zet een tekstbestand of JPG neer in de neerzetzone.
 1. Het invoerdocument wordt geconverteerd naar PDF en opgeslagen op dezelfde locatie als in punt 4.
 

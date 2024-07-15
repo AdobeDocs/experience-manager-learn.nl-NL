@@ -20,21 +20,21 @@ ht-degree: 0%
 
 # Implementaties SPA zonder kop AEM
 
-AEM Headless single-page app (SPA)-implementaties zijn gebaseerd op JavaScript-toepassingen die zijn gebouwd met behulp van frameworks zoals React of Vue, die op een krantenloze manier inhoud verbruiken en interageren in AEM.
+AEM Headless single-page app (SPA)-implementaties zijn gebaseerd op JavaScript-toepassingen die zijn gebouwd met behulp van frameworks zoals React of Vue, die op een krantenloze manier inhoud in AEM verbruiken en interageren.
 
 Bij het implementeren van een SPA die zonder kop AEM interageert, moet u de SPA hosten en toegankelijk maken via een webbrowser.
 
 ## De SPA hosten
 
-Een SPA bestaat uit een verzameling native webbronnen: **HTML, CSS en JavaScript**. Deze bronnen worden gegenereerd tijdens de _build_ proces (bijvoorbeeld `npm run build`) en op een host geïmplementeerd voor gebruik door eindgebruikers.
+Een SPA bestaat uit een inzameling van inheemse Webmiddelen: **HTML, CSS, en JavaScript**. Deze middelen worden geproduceerd tijdens _bouwt_ proces (bijvoorbeeld, `npm run build`) en aan een gastheer voor consumptie door eind - gebruikers opgesteld.
 
-Er zijn verschillende **hosten** afhankelijk van de vereisten van uw organisatie:
+Er zijn diverse **het ontvangen** opties afhankelijk van de vereisten van uw organisatie:
 
-1. **Cloud-providers** zoals **Azure** of **AWS**.
+1. **de leveranciers van de Wolk** zoals **Azure** of **AWS**.
 
-2. **Op locatie** in een bedrijf **datacenter**
+2. **op gebouw** het ontvangen in een collectief **gegevenscentrum**
 
-3. **Front-end hostingplatforms** zoals **AWS Amplify**, **Azure App Service**, **Netlify**, **Heroku**, **Verzenden**, enz.
+3. **front-end het ontvangen platforms** zoals **AWS breidt**, **Azure App Service** uit, **verbeter**, **Heroku**, **Vercel**, enz.
 
 ## Implementatieconfiguraties
 
@@ -47,15 +47,15 @@ Een SPA en AEM delen domeinen wanneer beide toegang door eind - gebruikers van h
 + AEM is toegankelijk via: `https://wknd.site/`
 + SPA is toegankelijk via `https://wknd.site/spa`
 
-Omdat zowel AEM als de SPA vanuit hetzelfde domein worden benaderd, kunnen webbrowsers de SPA XHR maken naar AEM eindpunten zonder dat CORS nodig is en kunnen HTTP-cookies (zoals AEM) worden gedeeld `login-token` cookie).
+Omdat zowel AEM als de SPA worden benaderd vanuit hetzelfde domein, kunnen webbrowsers de SPA XHR maken naar AEM eindpunten zonder dat CORS nodig is, en staan ze het delen van HTTP-cookies toe (zoals AEM `login-token` cookie).
 
 Hoe SPA en AEM verkeer op het gedeelde domein wordt verpletterd, is aan u: CDN met veelvoudige oorsprong, de server van HTTP met omgekeerde volmacht, die de SPA direct in AEM ontvangen, etc.
 
 Hieronder vindt u implementatieconfiguraties die vereist zijn voor SPA productieimplementaties, wanneer deze worden gehost op hetzelfde domein als AEM.
 
-| SPA maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
+| SPA maakt verbinding met | AEM auteur | AEM Publish | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
 | AEM | ✘ | ✘ | ✘ |
 
@@ -66,29 +66,29 @@ Een SPA en AEM hebben verschillende domeinen wanneer zij door eind - gebruikers 
 + AEM is toegankelijk via: `https://wknd.site/`
 + SPA is toegankelijk via `https://wknd-app.site/`
 
-Omdat AEM en de SPA vanuit verschillende domeinen worden benaderd, passen webbrowsers beveiligingsbeleid toe, zoals [delen van bronnen tussen verschillende bronnen (CORS)](./configurations/cors.md)en voorkomen dat HTTP-cookies worden gedeeld (zoals AEM `login-token` cookie).
+Aangezien AEM en de SPA van verschillende domeinen worden betreden, Webbrowsers veiligheidspolitiek zoals [ dwars-oorsprong middel het delen (CORS) ](./configurations/cors.md) afdwingen, en verhinderen het delen van de koekjes van HTTP (zoals AEM `login-token` koekje).
 
 Hieronder vindt u implementatieconfiguraties die vereist zijn voor SPA productieimplementaties, wanneer deze worden gehost op een ander domein dan AEM.
 
-| SPA maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
+| SPA maakt verbinding met | AEM auteur | AEM Publish | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| [Delen van bronnen van oorsprong (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [ bron het delen van de kruis-oorsprong (CORS) ](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [ AEM gastheren ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 #### Voorbeeld SPA implementatie op verschillende domeinen
 
-In dit voorbeeld wordt de SPA geïmplementeerd in een Netlify-domein (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) en de SPA gebruikt AEM GraphQL API&#39;s van het AEM publicatiedomein (`https://publish-p65804-e666805.adobeaemcloud.com`). In de onderstaande schermafbeeldingen wordt de vereiste CORS benadrukt.
+In dit voorbeeld, wordt de SPA opgesteld aan een domein van Netlify (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) en de SPA gebruikt AEM GraphQL APIs van het domein van Publish van de AEM (`https://publish-p65804-e666805.adobeaemcloud.com`). In de onderstaande schermafbeeldingen wordt de vereiste CORS benadrukt.
 
-1. De SPA wordt bediend van een domein van Netlify, maar maakt een XHR vraag aan AEM GraphQL APIs op een verschillend domein. Dit verzoek voor meerdere sites is vereist [CORS](./configurations/cors.md) op AEM moet worden ingesteld om verzoeken van het Netlify-domein toegang te verlenen tot de inhoud ervan.
+1. De SPA wordt bediend van een domein van Netlify, maar maakt een XHR vraag aan AEM GraphQL APIs op een verschillend domein. Dit dwars-plaats verzoek vereist [ CORS ](./configurations/cors.md) om opstelling op AEM worden geplaatst om verzoek van het domein toe te staan Netlify om tot zijn inhoud toegang te hebben.
 
-   ![SPA van SPA &amp; AEM hosts ](assets/spa/cors-requirement.png)
+   ![SPA van SPA en AEM hosts ontvangen verzoek ](assets/spa/cors-requirement.png)
 
-2. Inspecteer het XHR-verzoek aan de AEM GraphQL API, de `Access-Control-Allow-Origin` aanwezig is, die aan Webbrowser erop wijzen dat AEM verzoek van dit domein van Netlify om tot zijn inhoud toestaat toegang te hebben.
+2. Wanneer de XHR-aanvraag wordt gecontroleerd op de AEM GraphQL API, is de `Access-Control-Allow-Origin` aanwezig en geeft deze aan de webbrowser aan dat AEM verzoek van dit Netlify-domein toestaat om toegang te krijgen tot de inhoud ervan.
 
-   Als de AEM [CORS](./configurations/cors.md) het Netlify-domein ontbreekt of er is geen Netlify-domein in opgenomen, mislukt de webbrowser het XHR-verzoek en rapporteert een CORS-fout.
+   Als de AEM [ CORS ](./configurations/cors.md) ontbrak of niet het Netlify domein omvatte, zou Webbrowser het XHR- verzoek ontbreken, en een fout melden CORS.
 
-   ![CORS Response Header AEM GraphQL API](assets/spa/cors-response-headers.png)
+   ![ Kopbal van de Reactie CORS AEM GraphQL API ](assets/spa/cors-response-headers.png)
 
 ## Voorbeeld-app van één pagina
 
@@ -110,7 +110,7 @@ Adobe biedt een voorbeeld van een app van één pagina die in React is gecodeerd
                <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/react-app.md" title="Toepassingen Reageren">Toepassingen Reageren</a></p>
                <p class="is-size-6">Een voorbeeld van een app van één pagina, geschreven in React, die inhoud van AEM GraphQL-API's zonder koppen verbruikt.</p>
                <a href="../example-apps/react-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Voorbeeld van de Mening </span>
                </a>
            </div>
        </div>
@@ -131,7 +131,7 @@ Adobe biedt een voorbeeld van een app van één pagina die in React is gecodeerd
                <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/next-js.md" title="De app Next.js">De app Next.js</a></p>
                <p class="is-size-6">Een voorbeeld van een app van één pagina, geschreven in Next.js, die inhoud van AEM GraphQL-API's zonder koppen verbruikt.</p>
                <a href="../example-apps/next-js.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Voorbeeld van de Mening </span>
                </a>
            </div>
        </div>

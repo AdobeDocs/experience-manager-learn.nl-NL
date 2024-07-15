@@ -1,6 +1,6 @@
 ---
-title: Het gebruiken van en het begrip van variabelen in uw Configuratie van de AEM Dispatcher
-description: Begrijp hoe te om variabelen in uw Apache en de modules van de Verzender configuratiedossiers te gebruiken om hen aan het volgende niveau te nemen.
+title: Variabelen in uw AEM Dispatcher-configuratie gebruiken en begrijpen
+description: Begrijp hoe u variabelen in uw configuratiebestanden van Apache- en Dispatcher-modules kunt gebruiken om deze naar het volgende niveau te brengen.
 version: 6.5
 topic: Administration, Development
 feature: Dispatcher
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 [&lt;- Vorige: Cache begrijpen](./understanding-cache.md)
 
-In dit document wordt uitgelegd hoe u de kracht van variabelen in Apache-webserver en in de configuratiebestanden van de module Dispatcher kunt benutten.
+In dit document wordt uitgelegd hoe u de mogelijkheden van variabelen in Apache-webservers en in Dispatcher-moduleconfiguratiebestanden kunt benutten.
 
 ## Variabelen
 
@@ -33,8 +33,8 @@ We kunnen deze gebruiken om een hoop nuttige dingen te doen zoals:
 
 - Zorg ervoor om het even wat dat milieu specifiek is niet inline in de configuraties maar wordt gehaald om configuratiedossiers van te verzekeren dev werkt in prod met de zelfde functionele output.
 - Met AMS kunt u functies in- en uitschakelen en logniveaus van onveranderbare bestanden wijzigen. U kunt deze ook wijzigen.
-- Wijzigen wat voor gebruik op basis van variabelen als `RUNMODE` en `ENV_TYPE`
-- Overeenkomst `DocumentRoot`s en `VirtualHost` DNS-namen tussen Apache-configuraties en moduleconfiguraties.
+- Wijzigen wat op variabelen als `RUNMODE` en `ENV_TYPE` wordt gebruikt
+- Kies dezelfde DNS-namen als `DocumentRoot` en `VirtualHost` tussen Apache-configuraties en moduleconfiguraties.
 
 ## Basislijnvariabelen gebruiken
 
@@ -42,9 +42,9 @@ Omdat basislijnbestanden van AMS alleen-lezen en onveranderlijk zijn, zijn er fu
 
 ### Basislijnvariabelen
 
-Standaardvariabelen van AMS worden gedeclareerd in het bestand `/etc/httpd/conf.d/variables/ootb.vars`.  Dit bestand kan niet worden bewerkt, maar bestaat om er zeker van te zijn dat variabelen geen null-waarden hebben.  Ze worden eerst daarna opgenomen dan we ze opnemen `/etc/httpd/conf.d/variables/ams_default.vars`.  U kunt dat bestand bewerken om de waarden van deze variabelen te wijzigen of zelfs dezelfde variabelennamen en -waarden in uw eigen bestand op te nemen!
+Standaardvariabelen van AMS worden gedeclareerd in het bestand `/etc/httpd/conf.d/variables/ootb.vars` .  Dit bestand kan niet worden bewerkt, maar bestaat om er zeker van te zijn dat variabelen geen null-waarden hebben.  Deze worden eerst en daarna opgenomen dan we `/etc/httpd/conf.d/variables/ams_default.vars` gebruiken.  U kunt dat bestand bewerken om de waarden van deze variabelen te wijzigen of zelfs dezelfde variabelennamen en -waarden in uw eigen bestand op te nemen!
 
-Hier volgt een voorbeeld van de inhoud van het bestand `/etc/httpd/conf.d/variables/ams_default.vars`:
+Hier volgt een voorbeeld van de inhoud van het bestand `/etc/httpd/conf.d/variables/ams_default.vars` :
 
 ```
 Define DISP_LOG_LEVEL info
@@ -56,7 +56,7 @@ Define PUBLISH_FORCE_SSL 0
 
 ### Voorbeeld 1 - SSL forceren
 
-De hierboven weergegeven variabelen `AUHOR_FORCE_SSL`, of `PUBLISH_FORCE_SSL` kan aan 1 worden geplaatst om regels te coderen herschrijft die eind - gebruikers dwingen wanneer binnen op HTTP- verzoek om aan https worden opnieuw gericht
+De hierboven weergegeven variabelen `AUHOR_FORCE_SSL` of `PUBLISH_FORCE_SSL` kunnen op 1 worden ingesteld om regels voor herschrijven van tags in te voeren die eindgebruikers dwingen om op http-verzoek om te worden omgeleid naar https
 
 Hier is de syntaxis van het configuratiedossier die deze knevel om toestaat te werken:
 
@@ -75,7 +75,7 @@ Aangezien u de herschrijfregels kunt zien omvatten is wat de code heeft om eindg
 
 ### Voorbeeld 2 - Logboekniveau
 
-De variabelen `DISP_LOG_LEVEL` kan worden gebruikt om te plaatsen wat u voor het logboekniveau wilt hebben dat eigenlijk in de lopende configuratie wordt gebruikt.
+De variabelen `DISP_LOG_LEVEL` kunnen worden gebruikt om te plaatsen wat u voor het logboekniveau wilt hebben dat eigenlijk in de lopende configuratie wordt gebruikt.
 
 Hier is het syntaxisvoorbeeld dat in de dossiers van de de basislijnconfiguratie van ams bestaat:
 
@@ -86,7 +86,7 @@ Hier is het syntaxisvoorbeeld dat in de dossiers van de de basislijnconfiguratie
 </IfModule>
 ```
 
-Als u het registratieniveau van de Dispatcher moet verhogen werkt u gewoon de `ams_default.vars` variabel `DISP_LOG_LEVEL` op het gewenste niveau.
+Als u het Dispatcher-registratieniveau wilt verhogen, werkt u gewoon de `ams_default.vars` variabele `DISP_LOG_LEVEL` bij tot het gewenste niveau.
 
 Voorbeeldwaarden kunnen een geheel getal of het woord zijn:
 
@@ -100,11 +100,11 @@ Voorbeeldwaarden kunnen een geheel getal of het woord zijn:
 
 ### Voorbeeld 3 - Whitelists
 
-De variabelen `AUTHOR_WHITELIST_ENABLED` en `PUBLISH_WHITELIST_ENABLED` kan aan 1 worden geplaatst om in werking te stellen herschrijft regels die regels omvatten om eindgebruikersverkeer toe te staan of te ontkennen dat op IP adres wordt gebaseerd.  Als u deze functie inschakelt, moet u deze ook combineren met het maken van een bestand met whitelist-regels.
+De variabelen `AUTHOR_WHITELIST_ENABLED` en `PUBLISH_WHITELIST_ENABLED` kunnen aan 1 worden geplaatst om herschrijfregels in werking te stellen die regels omvatten om eindgebruikersverkeer toe te staan of te verbieden dat op IP adres wordt gebaseerd.  Als u deze functie inschakelt, moet u deze ook combineren met het maken van een bestand met whitelist-regels.
 
 Hier volgen enkele syntaxisvoorbeelden van de manier waarop de variabele de opname van whitelist-bestanden en een whitelist-bestandsvoorbeeld inschakelt
 
-`sample.vhost`:
+`sample.vhost` :
 
 ```
 <VirtualHost *:80> 
@@ -124,13 +124,13 @@ Hier volgen enkele syntaxisvoorbeelden van de manier waarop de variabele de opna
 </RequireAny>
 ```
 
-Zoals u kunt zien `sample_whitelist.rules` dwingt de IP beperking af maar het knepen van de variabele staat het toe om in te omvatten `sample.vhost`
+Zoals u kunt zien `sample_whitelist.rules` dwingt de IP-beperking af, maar als u de variabele in- of uitschakelt, kan deze worden opgenomen in de `sample.vhost`
 
 ## Waar moeten de variabelen worden geplaatst?
 
 ### Opstartargumenten webserver
 
-AMS zal server/topologie specifieke variabelen in de startargumenten van het Apache-proces in het dossier zetten `/etc/sysconfig/httpd`
+AMS plaatst specifieke variabelen voor server/topologie in de opstartargumenten van het Apache-proces in het bestand `/etc/sysconfig/httpd`
 
 Dit bestand bevat vooraf gedefinieerde variabelen, zoals hieronder wordt weergegeven:
 
@@ -151,9 +151,9 @@ Dit is niet iets u kunt veranderen maar aan hefboomwerking in uw configuratiedos
 >
 >Omdat dit bestand alleen wordt opgenomen wanneer de service wordt gestart.  U moet de service opnieuw starten om de wijzigingen op te halen.  Betekenis een herladen is niet genoeg maar een nieuw begin in plaats daarvan is nodig
 
-### Variabelebestanden (`.vars`)
+### Variabelenbestanden (`.vars`)
 
-De variabelen van de douane die door uw code worden verstrekt zouden in moeten leven `.vars` bestanden in de map `/etc/httpd/conf.d/variables/`
+Aangepaste variabelen die door de code worden verschaft, moeten in `.vars` bestanden in de map staan `/etc/httpd/conf.d/variables/`
 
 Deze bestanden kunnen aangepaste variabelen bevatten die u wilt en enkele syntaxisvoorbeelden zijn te vinden in de volgende voorbeeldbestanden
 
@@ -178,42 +178,42 @@ Define WERETAIL_DOMAIN www.weretail.com
 Define WERETAIL_ALT_DOMAIN www..weretail.net
 ```
 
-Als u uw eigen variabelen maakt, geeft u deze bestanden een naam op basis van de inhoud en volgt u de naamgevingsstandaarden in de handleiding [hier](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html#naming-convention).  In het bovenstaande voorbeeld ziet u dat het variabelenbestand de verschillende DNS-vermeldingen bevat als variabelen die in de configuratiebestanden moeten worden gebruikt.
+Wanneer het creëren van uw eigen variabelendossiers noemen hen volgens hun inhoud en om de het noemen normen te volgen die in het handboek [ hier ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html#naming-convention) worden verstrekt.  In het bovenstaande voorbeeld ziet u dat het variabelenbestand de verschillende DNS-vermeldingen bevat als variabelen die in de configuratiebestanden moeten worden gebruikt.
 
 ## Variabelen gebruiken
 
 Nu u uw variabelen binnen uw variabelendossiers hebt bepaald zult u willen weten hoe te om hen behoorlijk binnen uw andere configuratiedossiers te gebruiken.
 
-We gebruiken het voorbeeld `.vars` bestanden van bovenaf om een juiste gebruiksaanwijzing te illustreren.
+De voorbeeldbestanden van `.vars` hierboven gebruiken om een juiste toepassing te illustreren.
 
-We willen alle op de omgeving gebaseerde variabelen opnemen die we maken. `/etc/httpd/conf.d/000_load_env_vars.conf`
+We willen alle omgevingsvariabelen opnemen die we maken `/etc/httpd/conf.d/000_load_env_vars.conf`
 
 ```
 IncludeOptional /etc/httpd/conf.d/variables/*_${ENV_TYPE}.vars
 IncludeOptional /etc/httpd/conf.d/variables/*_${RUNMODE}.vars
 ```
 
-We weten dat wanneer de httpd-service wordt opgestart, deze de variabelen ophaalt die AMS in `/etc/sysconfig/httpd` en heeft de variabele set van `ENV_TYPE` en `RUNMODE`
+We weten dat wanneer de httpd-service wordt gestart deze de variabelen ophaalt die door AMS zijn ingesteld in `/etc/sysconfig/httpd` en de variabele set `ENV_TYPE` en `RUNMODE` heeft
 
-Wanneer dit globaal `.conf` Het bestand wordt in het begin opgehaald, omdat de volgorde van de bestanden in het bestand `conf.d` is een alfanumerieke laadvolgorde, gemiddeld 000 in de bestandsnaam, zodat deze voor de andere bestanden in de map wordt geladen.
+Wanneer dit algemene `.conf` -bestand wordt opgehaald, wordt het vroeg opgehaald, omdat de volgorde waarin de bestanden in `conf.d` worden opgenomen gelijk is aan de numerieke laadvolgorde, betekent dit dat gemiddeld 000 in de bestandsnaam wordt geladen voordat de andere bestanden in de map worden geladen.
 
-De instructie include gebruikt ook een variabele in de bestandsnaam.  Hiermee kunt u wijzigen welk bestand daadwerkelijk wordt geladen op basis van de waarde in het dialoogvenster `ENV_TYPE` en `RUNMODE` variabelen.
+De instructie include gebruikt ook een variabele in de bestandsnaam.  Hierdoor kan worden gewijzigd welk bestand daadwerkelijk wordt geladen op basis van de waarde in de variabelen `ENV_TYPE` en `RUNMODE` .
 
-Als de `ENV_TYPE` waarde is `dev` het bestand dat wordt gebruikt, is:
+Als de `ENV_TYPE` waarde `dev` is, wordt het volgende bestand gebruikt:
 
 `/etc/httpd/conf.d/variables/weretail_domains_dev.vars`
 
-Als de `ENV_TYPE` waarde is `stage` het bestand dat wordt gebruikt, is:
+Als de `ENV_TYPE` waarde `stage` is, wordt het volgende bestand gebruikt:
 
 `/etc/httpd/conf.d/variables/weretail_domains_stage.vars`
 
-Als de `RUNMODE` waarde is `preview` het bestand dat wordt gebruikt, is:
+Als de `RUNMODE` waarde `preview` is, wordt het volgende bestand gebruikt:
 
 `/etc/httpd/conf.d/variables/weretail_domains_preview.vars`
 
 Als dat bestand wordt opgenomen, kunnen we de variabelenamen gebruiken die in dat bestand zijn opgeslagen.
 
-In onze `/etc/httpd/conf.d/available_vhosts/weretail.vhost` kunnen wij de normale syntaxis ruilen die slechts voor dev werkte:
+In ons `/etc/httpd/conf.d/available_vhosts/weretail.vhost` -bestand kunnen we de normale syntaxis omwisselen die alleen voor dev werkte:
 
 ```
 <VirtualHost *:80> 
@@ -229,7 +229,7 @@ Met een nieuwere syntaxis die de kracht van variabelen gebruikt om te werken voo
  ServerAlias ${WERETAIL_ALT_DOMAIN}
 ```
 
-In onze `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` kunnen wij de normale syntaxis ruilen die slechts voor dev werkte:
+In ons `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` -bestand kunnen we de normale syntaxis omwisselen die alleen voor dev werkte:
 
 ```
 "dev.weretail.com" 
@@ -259,7 +259,7 @@ Hoe de variabelen in uw gecompileerde configuratie Apache keken:
 $ source /etc/sysconfig/httpd;/sbin/httpd -t -D DUMP_CONFIG | grep -v "#"
 ```
 
-Hoe de variabelen in uw gecompileerde configuratie van de Verzender keken:
+Hoe de variabelen in uw gecompileerde configuratie van Dispatcher keken:
 
 ```
 $ source /etc/sysconfig/httpd;/sbin/httpd -t -D DUMP_ANY
@@ -285,7 +285,7 @@ $ source /etc/sysconfig/httpd;/sbin/httpd -t -D DUMP_CONFIG | grep DocumentRoot
 DocumentRoot /mnt/var/www/html
 ```
 
-Configuratieweergave gecompileerde verzendingen:
+Gecompileerde Dispatcher-configuratie:
 
 ```
 $ source /etc/sysconfig/httpd;/sbin/httpd -t -D DUMP_ANY | grep docroot

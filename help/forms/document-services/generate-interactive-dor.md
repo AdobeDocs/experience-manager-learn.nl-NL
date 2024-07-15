@@ -29,7 +29,7 @@ Als uw XDP- en Adaptief formulier niet zijn gebaseerd op een schema, voert u de 
 
 Maak een adaptief formulier en zorg ervoor dat de adaptieve namen van formuliervelden identiek zijn aan veldnamen in uw xdp-sjabloon.
 Noteer de naam van het hoofdelement van uw xdp-sjabloon.
-![root-element](assets/xfa-root-element.png)
+![ wortel-element ](assets/xfa-root-element.png)
 
 ### Clientbibliotheek
 
@@ -78,11 +78,12 @@ Als uw xdp niet is gebaseerd op XSD, voert u de volgende stappen uit om XSD(sche
 
 ### XSD genereren op basis van de XML-gegevens
 
-U kunt alle gratis onlinegereedschappen gebruiken om [XSD genereren](https://www.freeformatter.com/xsd-generator.html) uit de XML-gegevens die in de vorige stap zijn gegenereerd.
+U kunt om het even welke vrije online hulpmiddelen gebruiken om [ XSD ](https://www.freeformatter.com/xsd-generator.html) van de xmlgegevens te produceren die in de vorige stap worden geproduceerd.
 
 ### Adaptief formulier maken
 
-Maak een adaptief formulier op basis van de XSD van de vorige stap. Koppel het formulier aan het gebruik van de clientbibliotheek &quot;irs&quot;. Deze clientbibliotheek heeft de code om een POST aan te roepen naar de servlet die de PDF naar de aanroepende toepassing terugkeert. De volgende code wordt geactiveerd wanneer de _PDF downloaden_ is aangeklikt
+Maak een adaptief formulier op basis van de XSD van de vorige stap. Koppel het formulier aan het gebruik van de clientbibliotheek &quot;irs&quot;. Deze cliëntbibliotheek heeft de code om een POST te maken vraag aan servlet die de PDF aan de roepende toepassing terugkeert
+De volgende code wordt teweeggebracht wanneer de _PDF van de Download_ wordt geklikt
 
 ```javascript
 $(document).ready(function() {
@@ -117,7 +118,7 @@ $(document).ready(function() {
 
 ## Aangepaste servlet maken
 
-Maak een aangepaste servlet die de gegevens samenvoegt met een XDP-sjabloon en de PDF retourneert. De code om dit te verwezenlijken is hieronder vermeld. De aangepaste servlet maakt deel uit van de [AEMFormsDocumentServices.core-1.0-SNAPSHOT-bundel](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
+Maak een aangepaste servlet die de gegevens samenvoegt met een XDP-sjabloon en de PDF retourneert. De code om dit te verwezenlijken is hieronder vermeld. De douaneserlet maakt deel uit van [ AEMFormsDocumentServices.core-1.0-SNAPSHOT bundel ](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
@@ -217,14 +218,15 @@ In de voorbeeldcode extraheren we de xdp-naam en andere parameters uit het aanvr
 Voer de volgende stappen uit om dit op uw lokale server te testen:
 
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. Voeg de volgende vermelding toe in de Apache Sling Service User Mapper Service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
-1. [De aangepaste DocumentServices-bundel downloaden en installeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen
+1. Voeg het volgende item toe aan de Apache Sling Service User Mapper Service
+DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+1. [ Download en installeer de bundel van douaneDocumentServices ](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Dit heeft servlet om de gegevens met het malplaatje XDP samen te voegen en pdf terug te stromen
 1. [De clientbibliotheek importeren](assets/generate-interactive-dor-client-lib.zip)
-1. [De artikelelementen importeren (Adaptief formulier,XDP-sjablonen en XSD)](assets/generate-interactive-dor-sample-assets.zip)
-1. [Voorbeeld van adaptief formulier](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
+1. [Het artikel Assets (Adaptief formulier,XDP-sjablonen en XSD) importeren](assets/generate-interactive-dor-sample-assets.zip)
+1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Vul slechts enkele formuliervelden in.
 1. Klik op PDF downloaden om de PDF op te halen. U moet mogelijk een paar seconden wachten voordat de PDF kan worden gedownload.
 
 >[!NOTE]
 >
->U kunt hetzelfde gebruiksgeval proberen met [adaptief formulier op basis van niet-xsd](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Zorg ervoor dat u de juiste parameters doorgeeft aan het posteindpunt in streampdf.js in de irs clientlib.
+>U kunt het zelfde gebruiksgeval met [ proberen niet op xsd gebaseerde adaptieve vorm ](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Zorg ervoor dat u de juiste parameters doorgeeft aan het posteindpunt in streampdf.js in de irs clientlib.

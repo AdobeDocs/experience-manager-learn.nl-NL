@@ -1,6 +1,6 @@
 ---
 title: Verwijzingen - Inhoudsfragmenten
-description: Leer hoe AEM de Console en de Redacteur van het Fragment van de Inhoud het gemakkelijk maken om referenced inhoud te beheren.
+description: Leer hoe u inhoud waarnaar wordt verwezen, eenvoudig kunt beheren wanneer u AEM met de Console en de Editor van inhoudsfragmenten.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management

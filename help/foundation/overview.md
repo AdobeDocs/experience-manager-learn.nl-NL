@@ -33,15 +33,15 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 <tr>
   <td>
     <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <img alt="Cloud Manager begrijpen voor AEM" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
+    <img alt="Cloud Manager for AEM begrijpen" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
     </a>
     <div>
      <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <strong>Cloud Manager begrijpen voor AEM</strong>
+    <strong> Begrijp Cloud Manager voor AEM </strong>
     </a>
     </div>
     <p>
-    <em>Cloud Manager voor AEM biedt een eenvoudige, maar toch robuuste oplossing die eenvoudig beheer, inspectie en zelfbediening van AEM omgevingen mogelijk maakt.</em>
+    <em> Cloud Manager voor AEM verstrekt een eenvoudige, maar robuuste oplossing die gemakkelijk beheer, inspectie, en zelfbediening van AEM milieu's toestaat.</em>
     <p>
   </td>
    <td>
@@ -50,11 +50,11 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
     </a>
      <div>
      <a href="./development/set-up-sling-dynamic-include.md">
-    <strong>Sling Dynamic Include (SDI) instellen</strong>
+    <strong> Opstelling het Verdelen Dynamisch omvat (SDI) </strong>
     </a>
     </div>
     <p>
-    <em>Ontdek hoe u Sling Dynamic Include (SDI) kunt instellen en dynamische AEM altijd nieuwe inhoud kunt leveren.</em>
+    <em> Onderzoek hoe te opstelling het Verdelen Dynamisch omvat (SDI) en staat dynamische AEM componenten toe om altijd verse inhoud te dienen.</em>
     <p>
   </td>
   <td>
@@ -63,11 +63,11 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
     </a>
     <div>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <strong>Redenen voor upgrade-AEM begrijpen</strong>
+    <strong> Begrijp Redenen om AEM </strong> te bevorderen
     </a>
     </div>
     <p>
-    <em>Een uitsplitsing op hoog niveau van de belangrijkste kenmerken die u moet begrijpen, wanneer u overweegt een upgrade uit te voeren naar de nieuwste versie van AEM.</em>
+    <em> Een hoogtepunt van zeer belangrijke eigenschappen om te begrijpen, wanneer het overwegen van bevordering aan de recentste versie van AEM.</em>
     </p>
   </td>
 </tr>
@@ -77,7 +77,7 @@ Adobe Experience Manager biedt een algemene set mogelijkheden die beschikbaar is
 
 ## Aanvullende bronnen
 
-* [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
+* [AEM as a Cloud Service-zelfstudies](/help/cloud-service/overview.md)
 * [AEM Sites - video&#39;s en zelfstudies](/help/sites/overview.md)
 * [AEM Assets - video&#39;s en zelfstudies](/help/assets/overview.md)
 * [AEM Forms - video&#39;s en zelfstudies](/help/forms/overview.md)

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen voor het uitvoeren en interpreteren van uitvoer van het AEM Forms PDFG System Readiness Tool
 
-*Deze video doorloopt het proces om output van het Hulpmiddel van de Gereedheid van het Systeem van AEM Forms PDFG (SRT) in werking te stellen en te interpreteren.*
+*Deze video loopt door het proces om output van het Hulpmiddel van de Gereedheid van het Systeem van AEM Forms PDFG in werking te stellen en te interpreteren (SRT).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335543?quality=12&learn=on)

@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
+badgeVersions: label="AEM, hoofdloos as a Cloud Service" before-title="false"
 duration: 256
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
@@ -22,40 +22,40 @@ ht-degree: 0%
 
 # App Reageren{#react-app}
 
-Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze React-toepassing laat zien hoe u inhoud kunt zoeken met behulp van AEM GraphQL API&#39;s met behulp van doorlopende query&#39;s. De AEM Headless-client voor JavaScript wordt gebruikt om de GraphQL-query&#39;s uit te voeren die de toepassing blijven activeren.
+Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze React-toepassing laat zien hoe u inhoud kunt zoeken met behulp van AEM GraphQL API&#39;s met behulp van doorlopende query&#39;s. De AEM Headless-client voor JavaScript wordt gebruikt om de GraphQL-doorlopende query&#39;s uit te voeren die de toepassing van stroom voorzien.
 
-![Reageer app met AEM headless](./assets/react-app/react-app.png)
+![ Reageer app met AEM Zwaartepunt ](./assets/react-app/react-app.png)
 
-De weergave [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
+Bekijk de [ broncode op GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
-A [stapsgewijze zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) beschrijf hoe deze React-app is gemaakt.
+A [ volledig geleidelijke leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) beschrijvend hoe React app bouwde beschikbaar is.
 
 ## Vereisten {#prerequisites}
 
 De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
-+ [Node.js v18](https://nodejs.org/en/)
-+ [Git](https://git-scm.com/)
++ [ Node.js v18 ](https://nodejs.org/en/)
++ [ Git ](https://git-scm.com/)
 
 ## AEM
 
-De React toepassing werkt met de volgende AEM plaatsingsopties. Alle implementaties vereisen de [WKND-site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) te installeren.
+De React toepassing werkt met de volgende AEM plaatsingsopties. Alle plaatsingen vereisen de [ Plaats van WKND v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om worden geïnstalleerd.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Lokale instelling met [de SDK van AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-   + Vereisten [11 JDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
++ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ De lokale opstelling die [ SDK van AEM Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) gebruikt
+   + Vereist [ JDK 11 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 
-De React toepassing wordt ontworpen om met een __AEM publiceren__ milieu, nochtans kan het inhoud van AEM Auteur als de authentificatie in de configuratie van de toepassing van React wordt verstrekt.
+De React toepassing wordt ontworpen om met een __AEM milieu van Publish__ te verbinden, nochtans kan het inhoud van AEM Auteur als de authentificatie in de configuratie van de toepassing van het Reageren wordt verstrekt.
 
 ## Hoe wordt het gebruikt
 
-1. Klonen met `adobe/aem-guides-wknd-graphql` opslagplaats:
+1. De gegevensopslagruimte `adobe/aem-guides-wknd-graphql` klonen:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Bewerk de `aem-guides-wknd-graphql/react-app/.env.development` bestand en set `REACT_APP_HOST_URI` om naar uw AEM te wijzen.
+1. Bewerk het `aem-guides-wknd-graphql/react-app/.env.development` -bestand en stel `REACT_APP_HOST_URI` zo in dat het naar de AEM verwijst.
 
    Werk de authentificatiemethode bij als het verbinden met een auteursinstantie.
 
@@ -86,12 +86,12 @@ De React toepassing wordt ontworpen om met een __AEM publiceren__ milieu, nochta
    $ npm start
    ```
 
-1. Een nieuw browservenster moet worden geladen op [http://localhost:3000](http://localhost:3000)
+1. Een nieuw browser venster zou op [ http://localhost:3000 ](http://localhost:3000) moeten laden
 1. Op de toepassing moet een lijst met avonturen van de WKND-referentiesite worden weergegeven.
 
 ## De code
 
-Hieronder volgt een overzicht van hoe de React toepassing wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL persisted query&#39;s, en hoe die gegevens worden voorgesteld. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Hieronder volgt een overzicht van hoe de React toepassing wordt gebouwd, hoe het met AEM Headless verbindt om inhoud terug te winnen gebruikend GraphQL persisted query&#39;s, en hoe die gegevens worden voorgesteld. De volledige code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) worden gevonden.
 
 
 ### Blijvende query&#39;s
@@ -140,7 +140,7 @@ query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFor
 }
 ```
 
-+ `wknd/adventure-by-slug` persistente query, die één avontuur retourneert door `slug` (een douanebezit dat uniek een avontuur identificeert) met een volledige reeks eigenschappen. Dit bleef vraagbevoegdheden de meningen van het avontuurdetail.
++ `wknd/adventure-by-slug` persisted query, die één avontuur retourneert van `slug` (een aangepaste eigenschap die een avontuur op unieke wijze identificeert) met een volledige set eigenschappen. Dit bleef vraagbevoegdheden de meningen van het avontuurdetail.
 
 ```
 # Retrieves an Adventure Fragment based on it's unique slug.
@@ -211,11 +211,11 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### GraphQL-query uitgevoerd
 
-AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, [AEM headless client voor JavaScript](https://github.com/adobe/aem-headless-client-js) wordt gebruikt om [Geef de doorlopende GraphQL-query&#39;s op](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) tegen AEM en laad de adventure-inhoud in de app.
+AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, wordt de [ AEM Draadloze cliënt voor JavaScript ](https://github.com/adobe/aem-headless-client-js) gebruikt om [ de voortgeduurde vragen van GraphQL ](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) tegen AEM uit te voeren en de avontuurinhoud in app te laden.
 
-Elke voortgezette vraag heeft het overeenkomstige Reageren [useEffect](https://reactjs.org/docs/hooks-effect.html) haak in `src/api/usePersistedQueries.js`, die asynchroon roept de AEM GET van HTTP bleef vraageindpunt, en keert de avontuurgegevens terug.
+Elke voortgeduurde vraag heeft een overeenkomstige React [ useEffect ](https://reactjs.org/docs/hooks-effect.html) haak in `src/api/usePersistedQueries.js`, die asynchroon het AEM HTTP GET voortgeduurde vraageindpunt roept, en de avontuurgegevens terugkeert.
 
-Elke functie roept op zijn beurt de `aemHeadlessClient.runPersistedQuery(...)`, wordt de doorlopende GraphQL-query uitgevoerd.
+Elke functie roept op zijn beurt de `aemHeadlessClient.runPersistedQuery(...)` aan, die de voortgezette GraphQL query uitvoert.
 
 ```js
 // src/api/usePersistedQueries.js
@@ -285,33 +285,33 @@ De React toepassing gebruikt twee meningen om de avontuurgegevens in de Webervar
 
 + `src/components/Adventures.js`
 
-  Oproepen `getAdventuresByActivity(..)` van `src/api/usePersistedQueries.js` en geeft de geretourneerde avonturen weer in een lijst.
+  Roept `getAdventuresByActivity(..)` aan van `src/api/usePersistedQueries.js` en geeft de geretourneerde avonturen in een lijst weer.
 
 + `src/components/AdventureDetail.js`
 
-  Roept de `getAdventureBySlug(..)` met de `slug` param werd via de avontuurselectie op de `Adventures` en geeft de details van één avontuur weer.
+  Roept `getAdventureBySlug(..)` aan gebruikend de `slug` param die via de avontuurselectie op de `Adventures` component wordt overgegaan, en toont de details van één enkel avontuur.
 
 ### Omgevingsvariabelen
 
-Meerdere [omgevingsvariabelen](https://create-react-app.dev/docs/adding-custom-environment-variables) worden gebruikt om verbinding te maken met een AEM. Standaard maakt verbinding met AEM publiceren die wordt uitgevoerd op `http://localhost:4503`. Werk de `.env.development` bestand, om de AEM verbinding te wijzigen:
+Verscheidene [ milieuvariabelen ](https://create-react-app.dev/docs/adding-custom-environment-variables) worden gebruikt om met een AEM milieu te verbinden. Standaard wordt verbinding gemaakt met AEM Publish die wordt uitgevoerd op `http://localhost:4503` . Werk het bestand `.env.development` bij om de AEM verbinding te wijzigen:
 
 + `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`: Instellen op AEM doelhost
-+ `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: Stel het pad naar het eindpunt van GraphQL in. Dit wordt niet gebruikt door deze React-app, omdat deze app alleen voortgezette query&#39;s gebruikt.
++ `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: stel het pad naar het eindpunt van GraphQL in. Dit wordt niet gebruikt door deze React-app, omdat deze app alleen voortgezette query&#39;s gebruikt.
 + `REACT_APP_AUTH_METHOD=`: De voorkeursverificatiemethode. Optioneel wordt standaard geen verificatie gebruikt.
-   + `service-token`: Gebruik Service Credentials om een toegangstoken te verkrijgen op AEM as a Cloud Service
-   + `dev-token`: Gebruik dev-token voor lokale ontwikkeling op AEM as a Cloud Service
-   + `basic`: Gebruik gebruiker/pas voor lokale ontwikkeling met lokale AEM auteur
+   + `service-token`: Gebruik Servicereferenties om een toegangstoken op AEM as a Cloud Service te verkrijgen
+   + `dev-token`: Dev-token gebruiken voor lokale ontwikkeling op AEM as a Cloud Service
+   + `basic`: gebruiker/pas gebruiken voor lokale ontwikkeling met lokale AEM auteur
    + Leeg laten om verbinding te maken met AEM zonder verificatie
-+ `REACT_APP_AUTHORIZATION=admin:admin`: Stel de basisverificatiereferenties in die moeten worden gebruikt als u verbinding maakt met een AEM Auteur-omgeving (alleen voor ontwikkeling). Als u verbinding maakt met een publicatieomgeving, is deze instelling niet nodig.
++ `REACT_APP_AUTHORIZATION=admin:admin`: stel de basisverificatiereferenties in die moeten worden gebruikt als u verbinding maakt met een AEM Auteur-omgeving (alleen voor ontwikkeling). Als u verbinding maakt met een Publish-omgeving, is deze instelling niet nodig.
 + `REACT_APP_DEV_TOKEN`: Dev token string. Naast Basisverificatie (user:pass) kunt u naast verificatie op afstand ook Vierdere verificatie gebruiken met DEV-token van de Cloud-console. Dit probleem is nu opgelost.
-+ `REACT_APP_SERVICE_TOKEN`: Pad naar bestand met servicereferenties. Als u verbinding wilt maken met een externe instantie, kan verificatie ook worden uitgevoerd met het servicetoken (download het bestand vanuit de Developer Console).
++ `REACT_APP_SERVICE_TOKEN`: pad naar het bestand met servicereferenties. Als u verbinding wilt maken met een externe instantie, kan verificatie ook worden uitgevoerd met Service-token (downloadbestand van de Developer Console).
 
 ### AEM
 
-Bij gebruik van de webpack-ontwikkelingsserver (`npm start`) het project berust op een [proxyinstelling](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) gebruiken `http-proxy-middleware`. Het bestand is geconfigureerd op [src/setupProxy.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/setupProxy.js) en is gebaseerd op verschillende aangepaste omgevingsvariabelen die zijn ingesteld op `.env` en `.env.development`.
+Wanneer het gebruiken van de webpack ontwikkelingsserver (`npm start`) vertrouwt het project op a [ volmachtsopstelling ](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) gebruikend `http-proxy-middleware`. Het dossier wordt gevormd bij [ src/setupProxy.js ](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/setupProxy.js) en baseert zich op verscheidene variabelen van het douanemilieu die bij `.env` en `.env.development` worden geplaatst.
 
-Als u verbinding maakt met een AEM auteursomgeving, gaat u naar [verificatiemethode moet worden geconfigureerd](#environment-variables).
+Als het verbinden met een AEM auteursmilieu, moet de overeenkomstige [ authentificatiemethode worden gevormd ](#environment-variables).
 
 ### Delen van bronnen van oorsprong (CORS)
 
-Deze React toepassing baseert zich op een op AEM-Gebaseerde configuratie CORS die op het doel AEM milieu loopt en veronderstelt dat React app loopt op `http://localhost:3000` in de ontwikkelingsmodus.  Controleer de[AEM documentatie voor implementatie zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html) voor meer informatie om CORS te installeren en te vormen.
+Deze React toepassing baseert zich op een op AEM-gebaseerde configuratie CORS die op het doel AEM milieu loopt en veronderstelt dat React app op `http://localhost:3000` op ontwikkelingswijze loopt.  Herzie de [ AEM Hoofdloze plaatsingsdocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html) voor meer informatie hoe te opstelling en CORS te vormen.

@@ -1,5 +1,5 @@
 ---
-title: Hoe te om de Oak login symbolische zittingsvervaldag te plaatsen
+title: De vervaldatum van de Oak-aanmeldingstoken instellen
 description: Stappen voor instellen van time-out voor oak-oorsprongtoken
 type: Troubleshooting
 role: Admin
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Hoe te om de Oak login symbolische zittingsvervaldag te plaatsen
+# De vervaldatum van de Oak-aanmeldingstoken instellen
 
-*Deze video doorloopt de stappen om het einde van de aanmeldingstoken sessie te laten verlopen.*
+*Deze video loopt door de stappen om de login van Oak symbolische zittingsafloop te plaatsen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335468?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Aangepaste machtigingen voor Cloud Manager
-description: Leer hoe u aangepaste machtigingen voor Cloud Manager kunt gebruiken in AEM om de toegang voor verschillende teams strategisch te beheren, zodat u verzekerd bent van efficiënt en veilig projectbeheer en -implementatie.
+title: Aangepaste Cloud Manager-machtigingen
+description: Leer hoe u aangepaste Cloud Manager-machtigingen in AEM kunt gebruiken om de toegang voor verschillende teams strategisch te beheren, zodat u verzekerd bent van efficiënt en veilig projectbeheer en -implementatie.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 ---
 
-# Aangepaste machtigingen voor Cloud Manager
+# Aangepaste Cloud Manager-machtigingen
 
-Meer informatie over het gebruik van Cloud Manager [aangepaste machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html) in AEM om de toegang voor verschillende teams strategisch te beheren, waardoor een efficiënt en veilig projectbeheer en -implementatie worden gewaarborgd.
+Leer hoe te om de douanetoestemmingen van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html) in AEM te gebruiken om toegang voor verschillende teams strategisch te beheren, efficiënt en veilig projectbeheer en plaatsing te verzekeren.[
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425892/?learn=on)

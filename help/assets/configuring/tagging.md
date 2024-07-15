@@ -1,6 +1,6 @@
 ---
 title: Tags
-description: Tags zijn een integraal hulpmiddel voor het beheer van elementen in de maphiërarchie van de elementen. Het is van essentieel belang dat er een labeltaxonomie wordt ingesteld, zodat gebruikers elementen kunnen vinden en indelen in AEM.
+description: Tags zijn een integraal hulpmiddel voor het beheer van elementen in de volledige maphiërarchie van Assets. Het is van essentieel belang dat er een labeltaxonomie wordt ingesteld, zodat gebruikers elementen kunnen vinden en indelen in AEM.
 feature: Asset Management
 version: Cloud Service
 jira: KT-4871
@@ -21,6 +21,6 @@ ht-degree: 3%
 
 # Tags
 
-Tags zijn een integraal hulpmiddel voor het beheer van elementen in de maphiërarchie van de elementen. Het is van essentieel belang dat er een labeltaxonomie wordt ingesteld, zodat gebruikers elementen kunnen vinden en indelen in AEM.
+Tags zijn een integraal hulpmiddel voor het beheer van elementen in de volledige maphiërarchie van Assets. Het is van essentieel belang dat er een labeltaxonomie wordt ingesteld, zodat gebruikers elementen kunnen vinden en indelen in AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34073?quality=12&learn=on)

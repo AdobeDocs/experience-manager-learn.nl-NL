@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Formulier vooraf invullen met verzonden gegevens en bijlagen
 
-Wanneer de **Beheerder** Klik op ViewLink in de lijst van onderzoeksresultaten, wordt het formulier voorgevuld met de voorgelegde gegevens.
+Wanneer de **Beheerder** op ViewLink in de lijst van onderzoeksresultaten klikt, wordt de vorm voorgevuld met de voorgelegde gegevens.
 
 Er is een Prefill-service gebruikt om de gegevens die aan de BlobId zijn gekoppeld, op te halen van de Azure-portal.
 
-[Hier vindt u een apart artikel over het vooraf invullen van een formulier met gegevens en bijlage.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
+[ een afzonderlijk artikel op het prefilling van vorm met gegevens en gehechtheid is hier beschikbaar.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
 
 ## Volgende stappen
 

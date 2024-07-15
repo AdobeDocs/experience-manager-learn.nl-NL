@@ -28,32 +28,32 @@ Voorbeelden van gebruiksgevallen voor aangepaste Resource Status Providers zijn:
 * Auteurs ervan op de hoogte stellen dat een pagina in de afgelopen 15 minuten is geactiveerd
 * Auteurs ervan in kennis stellen dat een pagina in de laatste 5 minuten is bewerkt en door wie
 
-![Overzicht van de bronstatus van AEM editor](assets/sample-editor-resource-status-screenshot.png)
+![ overzicht van de het middelstatus van AEM redacteur ](assets/sample-editor-resource-status-screenshot.png)
 
 ## Resource Status Provider Framework {#resource-status-provider-framework}
 
 Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikkelingswerk samengesteld uit:
 
 1. De implementatie ResourceStatusProvider, die voor het bepalen of een status wordt vereist, en de basisinformatie over de status verantwoordelijk is: titel, bericht, prioriteit, variant, pictogram, en beschikbare acties.
-2. Alternatief, GraniteUI JavaScript die de functionaliteit van om het even welke beschikbare acties uitvoert.
+2. Naar keuze, JavaScript GraniteUI die de functionaliteit van om het even welke beschikbare acties uitvoert.
 
-   ![bronstatusarchitectuur](assets/sample-editor-resource-status-application-architecture.png)
+   ![ architectuur van de middelstatus ](assets/sample-editor-resource-status-application-architecture.png)
 
-3. De statusbron die als onderdeel van de editors Pagina, Ervingsfragment en Sjabloon wordt opgegeven, krijgt een type via de bronnen &quot;[!DNL statusType]&quot; eigenschap.
+3. Het statusmiddel dat als deel van de redacteurs van de Pagina, van het Fragment van de Ervaring en van het Malplaatje wordt verstrekt wordt een type via het bezit &quot;[!DNL statusType]&quot;van middelen gegeven.
 
    * Pagina-editor: `editor`
    * Experience Fragment Editor: `editor`
    * Sjablooneditor: `template-editor`
 
-4. De statusbron `statusType` komt overeen met geregistreerd `CompositeStatusType` OSGi geconfigureerd `name` eigenschap.
+4. De `statusType` van de statusbron komt overeen met de geregistreerde eigenschap `CompositeStatusType` OSGi configured `name` .
 
-   Voor alle overeenkomsten `CompositeStatusType's` de typen worden verzameld en gebruikt om de `ResourceStatusProvider` implementaties van dit type, via `ResourceStatusProvider.getType()`.
+   Voor alle overeenkomsten worden de `CompositeStatusType's` -typen verzameld en gebruikt om de `ResourceStatusProvider` -implementaties van dit type via `ResourceStatusProvider.getType()` te verzamelen.
 
-5. De overeenkomst `ResourceStatusProvider` wordt doorgegeven aan de `resource` in de redacteur, en bepaalt als `resource` heeft de status die moet worden weergegeven. Als de status vereist is, is deze implementatie verantwoordelijk voor het bouwen van 0 of veel `ResourceStatuses` om terug te keren, elk die een status aan vertoning vertegenwoordigen.
+5. De overeenkomende `ResourceStatusProvider` wordt doorgegeven aan de `resource` in de editor en bepaalt of de `resource` de status heeft die moet worden weergegeven. Als de status vereist is, is deze implementatie verantwoordelijk voor het bouwen van 0 of veel `ResourceStatuses` die moeten worden geretourneerd, elk met een status die moet worden weergegeven.
 
-   Doorgaans wordt een `ResourceStatusProvider` retourneert 0 of 1 `ResourceStatus` per `resource`.
+   Een `ResourceStatusProvider` retourneert doorgaans 0 of 1 `ResourceStatus` per `resource` .
 
-6. ResourceStatus is een interface die door de klant kan worden uitgevoerd, of nuttig `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` kan worden gebruikt om een status samen te stellen. Een status bestaat uit:
+6. ResourceStatus is een interface die door de klant kan worden uitgevoerd, of nuttig `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` kan worden gebruikt om een status te construeren. Een status bestaat uit:
 
    * Titel
    * Bericht
@@ -63,7 +63,7 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
    * Handelingen
    * Gegevens
 
-7. Optioneel, indien `Actions` worden `ResourceStatus` -object, zijn ondersteunende clientlibs vereist om functionaliteit te binden aan de actiekoppelingen in de statusbalk.
+7. Als `Actions` wordt opgegeven voor het `ResourceStatus` -object, is ondersteuning voor clientlibs vereist om functionaliteit te binden aan de handelingskoppelingen in de statusbalk.
 
    ```js
    (function(jQuery, document) {
@@ -76,17 +76,17 @@ Wanneer het ontwikkelen van de Statussen van het douaneMiddel, wordt het ontwikk
    })(jQuery, document);
    ```
 
-8. Elke ondersteunende JavaScript of CSS ter ondersteuning van de acties moet via de respectievelijke clientbibliotheken van elke editor worden uitgebreid om ervoor te zorgen dat de front-end code beschikbaar is in de editor.
+8. Elke ondersteunende JavaScript of CSS die de acties ondersteunt, moet worden uitgebreid via de respectievelijke clientbibliotheken van elke editor om ervoor te zorgen dat de front-end code beschikbaar is in de editor.
 
-   * Categorie Paginaeditor: `cq.authoring.editor.sites.page`
-   * Categorie Experience Fragment Editor: `cq.authoring.editor.sites.page`
-   * Categorie Sjablooneditor: `cq.authoring.editor.sites.template`
+   * Categorie in paginaeditor: `cq.authoring.editor.sites.page`
+   * Experience Fragment Editor category: `cq.authoring.editor.sites.page`
+   * Sjabloonbewerkingscategorie: `cq.authoring.editor.sites.template`
 
 ## De code weergeven {#view-the-code}
 
-[Zie code op GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
+[ zie code op GitHub ](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [`com.adobe.granite.resourcestatus` JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/resourcestatus/package-summary.html)
-* [`com.day.cq.wcm.commons.status.EditorResourceStatus` JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/status/EditorResourceStatus.html)
+* [`com.adobe.granite.resourcestatus` JavaDocs ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/resourcestatus/package-summary.html)
+* [`com.day.cq.wcm.commons.status.EditorResourceStatus` JavaDocs ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/status/EditorResourceStatus.html)

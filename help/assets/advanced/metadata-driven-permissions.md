@@ -30,14 +30,14 @@ Als u Metagegevens-gestuurde machtigingen inschakelt, moet u bepalen welke metag
 
 ## Vereisten
 
-Toegang tot een AEM as a Cloud Service omgeving die is bijgewerkt naar de nieuwste versie is vereist voor het instellen van machtigingen voor metagegevens.
+Toegang tot een AEM as a Cloud Service-omgeving die is bijgewerkt naar de nieuwste versie is vereist voor het instellen van machtigingen voor metagegevens.
 
 ## OSGi-configuratie {#configure-permissionable-properties}
 
-Om Metadata-Driven Toestemmingen uit te voeren moet een ontwikkelaar een configuratie OSGi opstellen om as a Cloud Service te AEM, die specifieke eigenschappen van activameta-gegevens aan macht meta-gegeven toestemmingen toelaat.
+Om Metadata-Driven Toestemmingen uit te voeren moet een ontwikkelaar een configuratie OSGi aan AEM as a Cloud Service opstellen, die specifieke eigenschappen van activameta-gegevens aan macht meta-gegeven toestemmingen toelaat.
 
-1. Bepaal welke eigenschappen van elementmetagegevens worden gebruikt voor toegangsbeheer. De eigenschapsnamen zijn de JCR-eigenschapnamen op het element `jcr:content/metadata` resource. In ons geval wordt het een eigenschap met de naam `status`.
-1. Een OSGi-configuratie maken `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` in uw AEM Maven-project.
+1. Bepaal welke eigenschappen van elementmetagegevens worden gebruikt voor toegangsbeheer. De eigenschapsnamen zijn de JCR-eigenschapnamen op de `jcr:content/metadata` -bron van het element. In ons geval wordt het een eigenschap met de naam `status` .
+1. Creeer een configuratie OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` in uw AEM Maven project.
 1. Plak de volgende JSON in het gemaakte bestand:
 
    ```json
@@ -54,45 +54,45 @@ Om Metadata-Driven Toestemmingen uit te voeren moet een ontwikkelaar een configu
 
 ## Rechten voor basiselementen opnieuw instellen
 
-Alvorens op beperking-gebaseerde Ingangen van het Toegangsbeheer toe te voegen, zou een nieuwe top-level ingang moeten worden toegevoegd om gelezen toegang tot alle groepen eerst te ontkennen die aan toestemmingsevaluatie voor Activa (b.v. &quot;contribuanten&quot;of gelijkaardig) onderworpen zijn:
+Alvorens op beperking-gebaseerde Ingangen van het Toegangsbeheer toe te voegen, zou een nieuwe top-level ingang moeten worden toegevoegd om gelezen toegang tot alle groepen eerst te ontkennen die aan toestemmingsevaluatie voor Assets (b.v. &quot;contribuanten&quot;of gelijkaardig) onderworpen zijn:
 
-1. Ga naar de __Gereedschappen → Beveiliging → Rechten__ scherm
-1. Selecteer de __Medewerkers__ groep (of een andere aangepaste groep waartoe alle gebruikersgroepen behoren)
-1. Klikken __ACE toevoegen__ rechtsboven in het scherm
-1. Selecteren `/content/dam` for __Pad__
-1. Enter `jcr:read` for __Rechten__
-1. Selecteren `Deny` for __Machtigingstype__
-1. Onder Beperkingen selecteert u `rep:ntNames` en betreden `dam:Asset` als de __Restrictiewaarde__
-1. Klikken __Opslaan__
+1. Navigeer aan __Hulpmiddelen → Veiligheid → Het scherm van Toestemmingen__
+1. Selecteer de __Medewerkers__ groep (of andere douanegroep dat alle gebruikersgroepen tot behoren)
+1. Klik __ACE__ in de hogere juiste hoek van het scherm toevoegen
+1. Selecteer `/content/dam` voor __Weg__
+1. Ga `jcr:read` voor __Bevoegdheden__ in
+1. Selecteer `Deny` voor __Type van Toestemming__
+1. Onder Beperkingen, selecteer `rep:ntNames` en ga `dam:Asset` als __Waarde van de Beperking__ in
+1. Klik __sparen__
 
-![Toegang weigeren](./assets/metadata-driven-permissions/deny-access.png)
+![ ontken Toegang ](./assets/metadata-driven-permissions/deny-access.png)
 
 ## Toegang tot elementen via metagegevens verlenen
 
-De ingangen van de toegangscontrole kunnen nu worden toegevoegd om gelezen toegang tot gebruikersgroepen te verlenen die op [De waarden van de metagegevens van het geconfigureerde element](#configure-permissionable-properties).
+De ingangen van de toegangscontrole kunnen nu worden toegevoegd om gelezen toegang tot gebruikersgroepen te verlenen die op de [ worden gebaseerd gevormde waarden van het bezit van meta-gegevens van Activa ](#configure-permissionable-properties).
 
-1. Ga naar de __Gereedschappen → Beveiliging → Rechten__ scherm
+1. Navigeer aan __Hulpmiddelen → Veiligheid → Het scherm van Toestemmingen__
 1. Selecteer de gebruikersgroepen die toegang moeten hebben tot de elementen
-1. Klikken __ACE toevoegen__ rechtsboven in het scherm
-1. Selecteren `/content/dam` (of een submap) voor __Pad__
-1. Enter `jcr:read` for __Rechten__
-1. Selecteren `Allow` for __Machtigingstype__
-1. Onder __Beperkingen__ selecteert u een van de [De gevormde namen van het de meta-gegevensbezit van Activa in de configuratie OSGi](#configure-permissionable-properties)
-1. Voer de vereiste waarde voor de eigenschap voor metagegevens in het dialoogvenster __Restrictiewaarde__ field
-1. Klik op de knop __+__ pictogram om de Beperking aan de Ingang van het Toegangsbeheer toe te voegen
-1. Klikken __Opslaan__
+1. Klik __ACE__ in de hogere juiste hoek van het scherm toevoegen
+1. Selecteer `/content/dam` (of een subfolder) voor __Weg__
+1. Ga `jcr:read` voor __Bevoegdheden__ in
+1. Selecteer `Allow` voor __Type van Toestemming__
+1. Onder __Beperkingen__, selecteer één van de [ gevormde namen van het de meta-gegevensbezit van Activa in de configuratie OSGi ](#configure-permissionable-properties)
+1. Ga de vereiste waarde van het meta-gegevensbezit op het __gebied van de Waarde van de Beperking__ in
+1. Klik op het pictogram __+__ om de beperking toe te voegen aan het toegangbeheeritem
+1. Klik __sparen__
 
-![Toegang toestaan](./assets/metadata-driven-permissions/allow-access.png)
+![ staat Toegang ](./assets/metadata-driven-permissions/allow-access.png) toe
 
 ## Machtigingen met metagegevens in feite
 
 De voorbeeldmap bevat een aantal elementen.
 
-![Admin View](./assets/metadata-driven-permissions/admin-view.png)
+![ Admin Mening ](./assets/metadata-driven-permissions/admin-view.png)
 
 Zodra u toestemmingen vormt en de eigenschappen van activa meta-gegevens dienovereenkomstig plaatst zullen de gebruikers (Gebruiker van de Marktspeler in ons geval) slechts goedgekeurde activa zien.
 
-![Marketingweergave](./assets/metadata-driven-permissions/marketeer-view.png)
+![ Mening van de Marktspeler ](./assets/metadata-driven-permissions/marketeer-view.png)
 
 ## Voordelen en overwegingen
 
@@ -106,10 +106,10 @@ De voordelen van metagegevensgestuurde machtigingen zijn onder meer:
 >
 > Het is belangrijk om op te merken:
 > 
-> - Eigenschappen van metagegevens worden aan de hand van de beperkingen beoordeeld met __Tekengelijkheid__ (`=`) (andere gegevenstypen of operatoren worden nog niet ondersteund voor groter dan (`>`) of Date, eigenschappen)
-> - Om veelvoudige waarden voor een beperkingsbezit toe te staan, kunnen de extra beperkingen aan de Ingang van het Toegangsbeheer worden toegevoegd door het zelfde bezit van de &quot;Uitgezochte Type&quot;drop-down te selecteren en een nieuwe Waarde van de Beperking in te gaan (b.v. `status=approved`, `status=wip`) en klikken op &quot;+&quot; om de beperking aan de vermelding toe te voegen
-> ![Meerdere waarden toestaan](./assets/metadata-driven-permissions/allow-multiple-values.png)
-> - __EN beperkingen__ worden ondersteund, via meerdere beperkingen in één toegangsbeheeritem met verschillende eigenschapsnamen (bijvoorbeeld `status=approved`, `brand=Adobe`) wordt beoordeeld als een AND-voorwaarde, d.w.z. de geselecteerde gebruikersgroep krijgt leestoegang tot elementen met `status=approved AND brand=Adobe`
-> ![Meerdere beperkingen toestaan](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
-> - __OR-beperkingen__ worden gesteund door een nieuw Toegang van het Toegangsbeheer met een meta-gegevensbezitsbeperking toe te voegen zal een OF voorwaarde voor de ingangen, bijvoorbeeld één enkele ingang met beperking vestigen `status=approved` en één item met `brand=Adobe` wordt beoordeeld als `status=approved OR brand=Adobe`
-> ![Meerdere beperkingen toestaan](./assets/metadata-driven-permissions/allow-multiple-aces.png)
+> - De eigenschappen van meta-gegevens worden geëvalueerd tegen de beperkingen gebruikend __gelijkheid van het Koord__ (`=`) (andere gegevenstypes of exploitanten worden nog niet gesteund, voor groter dan (`>`) of de eigenschappen van de Datum)
+> - Om veelvoudige waarden voor een beperkingsbezit toe te staan, kunnen de extra beperkingen aan de ingang van het Toegangsbeheer worden toegevoegd door het zelfde bezit van de &quot;Uitgezochte Type&quot;drop-down te selecteren en een nieuwe Waarde van de Beperking (b.v. `status=approved`, `status=wip`) in te gaan en &quot;+&quot;te klikken om de beperking aan de ingang toe te voegen
+> ![Meerdere waarden toestaan ](./assets/metadata-driven-permissions/allow-multiple-values.png)
+> - __EN de beperkingen__ worden gesteund, via veelvoudige beperkingen in één enkel Ingang van het Toegangsbeheer met verschillende bezitsnamen (b.v. `status=approved`, `brand=Adobe`) zullen als EN voorwaarde worden geëvalueerd, d.w.z. de geselecteerde gebruikersgroep zal lees toegang tot activa met `status=approved AND brand=Adobe` worden verleend
+> ![Meerdere beperkingen toestaan ](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
+> - __OF de beperkingen__ worden gesteund door een nieuw Toegang van het Toegangsbeheer met een beperking van het meta-gegevensbezit toe te voegen zullen een OF voorwaarde voor de ingangen, b.v. één enkel punt met beperking `status=approved` vestigen en één enkel punt met `brand=Adobe` zal als `status=approved OR brand=Adobe` worden geëvalueerd
+> ![Meerdere beperkingen toestaan ](./assets/metadata-driven-permissions/allow-multiple-aces.png)

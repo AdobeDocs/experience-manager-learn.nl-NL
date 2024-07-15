@@ -1,6 +1,6 @@
 ---
 title: Verificatie in AEM as a Cloud Service
-description: Leer over authentificatie in AEM as a Cloud Service.
+description: Meer informatie over verificatie in AEM as a Cloud Service.
 version: Cloud Service
 feature: Security
 topic: Development, Integrations, Security
@@ -18,18 +18,18 @@ ht-degree: 0%
 
 ---
 
-# as a Cloud Service verificatie AEM
+# AEM as a Cloud Service-verificatie
 
-AEM as a Cloud Service steunt veelvoudige van authentificatieopties en varieert door de diensttype.
+AEM as a Cloud Service ondersteunt meerdere verificatieopties en varieert per servicetype.
 
-|                       | AEM auteur | AEM publiceren |
+|                       | AEM auteur | AEM Publish |
 |-----------------------|:----------:|:-----------:|
-| [Adobe IMS](../accessing/overview.md) | ✔ | ✘ |
-| ・ [SAML 2.0 via Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✘ |
-| [SAML 2.0](./saml-2-0.md) | ✘ | ✔ |
-| [Single Sign On (SSO)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
-| [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
-| [Tokenverificatie](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
+| [ IMS van Adobe ](../accessing/overview.md) | ✔ | ✘ |
+| ・ [ SAML 2.0 via Adobe IMS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✘ |
+| [ SAML 2.0 ](./saml-2-0.md) | ✘ | ✔ |
+| [ enig-teken (SSO) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [ OAuth ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [ Symbolische authentificatie ](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
 | Basisverificatie | ✘ | ✘ |
 
 ## Verificatieopties
@@ -40,21 +40,21 @@ Klik in de overeenkomstige verbinding hieronder aan voor details over opstelling
   <tr>
    <td>
       <a  href="../accessing/overview.md"><img alt="Adobe IMS" src="./assets/card--adobe-ims.png"/></a>
-      <div><strong><a href="../accessing/overview.md">Adobe IMS</a></strong></div>
+      <div><strong><a href="../accessing/overview.md"> IMS van Adobe </a></strong></div>
       <p>
           Toegang tot AEM auteur beheren met Adobe IMS via de Adobe Admin Console.
       </p>
     </td>   
    <td>
       <a  href="./saml-2-0.md"><img alt="SAML 2.0" src="./assets/card--saml-2-0.png"/></a>
-      <div><strong><a href="./saml-2-0.md">SAML 2.0</a></strong></div>
+      <div><strong><a href="./saml-2-0.md"> SAML 2.0 </a></strong></div>
       <p>
-        Verifieer de gebruiker van uw website aan IDP gebruikend AEM de integratie van SAML 2.0 van de Publish dienst.
+        Verifieer de gebruiker van uw website aan IDP gebruikend AEM de integratie van SAML 2.0 van de dienst van Publish.
       </p>
     </td>   
    <td>
       <a  href="../../headless-tutorial/authentication/overview.md"><img alt="Token" src="./assets/card--token.png"/></a>
-      <div><strong><a href="../../headless-tutorial/authentication/overview.md">Tokenverificatie</a></strong></div>
+      <div><strong><a href="../../headless-tutorial/authentication/overview.md"> Symbolische authentificatie </a></strong></div>
       <p>
         Toepassingen en middleware kunnen worden geverifieerd voor AEM met behulp van een API-servicetoken.
       </p>

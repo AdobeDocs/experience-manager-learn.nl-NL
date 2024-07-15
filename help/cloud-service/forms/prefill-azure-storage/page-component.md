@@ -24,22 +24,22 @@ Een paginacomponent is een reguliere component die verantwoordelijk is voor het 
 ## Pagina-component maken
 
 Meld u aan bij uw lokale AEM Forms-exemplaar dat klaar is voor de cloud. De volgende structuur maken in de map apps
-![pageComponent](./assets/page-component1.png)
+![ pagina-component ](./assets/page-component1.png)
 
 1. Klik met de rechtermuisknop op de paginamap en maak een knooppunt met de naam storeandfetch van het type cq:Component
 1. De wijzigingen opslaan
-1. Voeg de volgende eigenschappen toe aan de `storeandfetch` knooppunt en opslaan
+1. Voeg de volgende eigenschappen toe aan het knooppunt `storeandfetch` en sla het bestand op
 
-| **Eigenschapnaam** | **Type eigenschap** | **Waarde van eigenschap** |
+| **de Naam van het Bezit** | **Type van Bezit** | **Waarde van het Bezit** |
 |-------------------------|-------------------|----------------------------------------|
 | componentGroup | String | verborgen |
 | jcr:beschrijving | String | Paginatype Adaptief formuliersjabloon |
 | jcr:titel | String | Aangepaste formuliersjabloonpagina |
 | sling:resourceSuperType | String | `fd/af/components/page2/aftemplatedpage` |
 
-De `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` en plak het onder de `storeandfetch` knooppunt. De naam van de `aftemplatedpage.jsp` tot `storeandfetch.jsp`.
+Kopieer `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` en plak het onder het knooppunt `storeandfetch` . Wijzig de naam `aftemplatedpage.jsp` in `storeandfetch.jsp` .
 
-Openen `storeandfetch.jsp` en voeg de volgende regel toe:
+Open `storeandfetch.jsp` en voeg de volgende regel toe:
 
 ```jsp
 <cq:include script="azureportal.jsp"/>
@@ -58,7 +58,8 @@ De uiteindelijke code moet er hieronder uitzien
 <cq:include script="azureportal.jsp"/>
 ```
 
-Maak een bestand genaamd azureportal.jsp onder het knooppunt storeandfetch en kopieer de volgende code naar azureportal.jsp en sla de wijzigingen op
+Maak een bestand genaamd azureportal.jsp onder het knooppunt storeandfetch
+kopieer de volgende code naar azureportal.jsp en sla de wijzigingen op
 
 ```jsp
 <%@page session="false" %>
@@ -78,9 +79,9 @@ Maak een bestand genaamd azureportal.jsp onder het knooppunt storeandfetch en ko
 %>
 ```
 
-In deze code krijgen we de waarde van de parameter request **guid** en sla deze op in een variabele met de naam BlobId. Dit BlobId wordt dan overgegaan in het hellingsverzoek gebruikend het paramMap attribuut. Om deze code te laten werken, wordt aangenomen dat u een formulier hebt dat is gebaseerd op een Azure Storage-ondersteund formuliergegevensmodel en dat de leesservice van het formuliergegevensmodel is gebonden aan een aanvraagkenmerk met de naam BlobId, zoals hieronder in de schermafbeelding wordt getoond.
+In deze code krijgen wij de waarde van de verzoekparameter **guid** en slaan het in een variabele genoemd BlobId op. Dit BlobId wordt dan overgegaan in het hellingsverzoek gebruikend het paramMap attribuut. Om deze code te laten werken, wordt aangenomen dat u een formulier hebt dat is gebaseerd op een Azure Storage-ondersteund formuliergegevensmodel en dat de leesservice van het formuliergegevensmodel is gebonden aan een aanvraagkenmerk met de naam BlobId, zoals hieronder in de schermafbeelding wordt getoond.
 
-![fdm-request-attribute](./assets/fdm-request-attribute.png)
+![ fdm-verzoek-attribuut ](./assets/fdm-request-attribute.png)
 
 ### Volgende stappen
 

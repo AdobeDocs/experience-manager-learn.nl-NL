@@ -26,8 +26,8 @@ Leer hoe u Contextual Search in Adobe Experience Manager Assets kunt gebruiken o
 
 ## Contextafhankelijke zoekopdracht in-/uitschakelen
 
-Als u contextafhankelijke zoekopdrachten voor alle gebruikers wilt in- of uitschakelen, kunnen AEM beheerders dit doen door naar de __Algemene instellingen__ en de __Contextueel zoeken__ Schakel over naar de gewenste instelling.
+Om contextafhankelijke onderzoek voor alle gebruikers toe te laten of onbruikbaar te maken, AEM beheerders kunnen dit doen door aan de __Algemene Montages__ te navigeren en de __Contextafhankelijke schakelaar van het Onderzoek__ van een knevel te voorzien aan het gewenste plaatsen.
 
 Contextafhankelijke zoekopdrachten zijn standaard ingeschakeld voor alle gebruikers.
 
-![Contextueel zoeken inschakelen](./assets/contextual-search/enable-contextual-search.png)
+![ laat Contextual Onderzoek ](./assets/contextual-search/enable-contextual-search.png) toe

@@ -21,7 +21,7 @@ Welkom bij de Cloud 5 Series van het seizoen drie van AEM Techniek. Een van de b
 
 ## Suggestievak
 
-Ga naar [Suggestievak](https://forms.office.com/r/74P5Xz4UH0) voor het indienen van onderwerpideeën.
+Bezoek het [ Vak van de Suggestie ](https://forms.office.com/r/74P5Xz4UH0) voor het voorleggen van onderwerpideeën.
 
 ## Seizoen 3
 
@@ -35,8 +35,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
-                <strong>Zoeken van derden</strong></a>        
-                <br/><em>met James Talbot &amp; Varun Mitra, AEM Engineering</em>
+                <strong> derdeonderzoek </strong> </a>        
+                <br/><em> met James Talbot &amp; Varun Mitra, AEM Techniek </em>
             </div>
             <p>
                 <br/>
@@ -49,8 +49,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </a>
             <div>
                 <a href="./season-3/cloud5-rum.md">
-                <strong>Real User Monitoring (RUM)</strong></a>        
-                <br/><em>met James Talbot &amp; Damian Langsweirdt, AEM Engineering</em>
+                <strong> Echte Controle van de Gebruiker (RUM) </strong> </a>        
+                <br/><em> met James Talbot &amp; Damian Langsweirdt, AEM Engineering </em>
             </div>
             <p>
                 <br/>
@@ -79,8 +79,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
-                <strong>Edge Workers</strong></a>        
-                <br/><em>met James Talbot &amp; Amol Anand, AEM Engineering</em>
+                <strong> de arbeiders van Edge </strong> </a>        
+                <br/><em> met James Talbot &amp; Amol Anand, AEM Techniek </em>
             </div>
             <p>
                 <br/>
@@ -95,8 +95,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
-                <strong>Publish, publiceren van gebeurtenissen in Edge Delivery Services ongedaan maken</strong></a>        
-                <br/><em>met James Talbot &amp; Amol Anand, AEM Engineering</em>
+                <strong> Publish, unpublish gebeurtenissen in Edge Delivery Services </strong> </a>        
+                <br/><em> met James Talbot &amp; Amol Anand, AEM Techniek </em>
             </div>
             <p>
                 <br/>
@@ -109,8 +109,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
-                <strong>Query-indexen en Excel-formules </strong></a>        
-                <br/><em>met James Talbot &amp; Varun Mitra, AEM Engineering</em>
+                <strong> de indexen van de Vraag en de formules van Excel </strong> </a>        
+                <br/><em> met James Talbot &amp; Varun Mitra, AEM Techniek </em>
             </div>
             <p>
                 <br/>
@@ -123,8 +123,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <strong>Uw eigen CDN van Cloudflare maken</strong></a>        
-                <br/><em>met James Talbot &amp; Kunwar Saluja, AEM Engineering</em>
+                <strong> breng uw eigen CDN van de Wolk </strong> </a>        
+                <br/><em> met James Talbot &amp; Kunwar Saluja, AEM Techniek </em>
             </div>
             <p>
                 <br/>
@@ -139,8 +139,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">
-                <strong>AEM Assets integreren met het maken van documenten</strong></a>        
-                <br/><em>met James Talbot &amp; Darin Kuntze, AEM Engineering</em>
+                <strong> integreer AEM Assets met document creatie </strong> </a>        
+                <br/><em> met James Talbot &amp; Darin Kuntze, AEM Techniek </em>
             </div>
             <p>
                 <br/>
@@ -153,8 +153,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </a>
             <div>
                 <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
-                <strong>Generatieve AI in AEM Sites</strong></a>        
-                <br/><em>met James Talbot &amp; Karthik Muralidharan, AEM Product Marketing</em>
+                <strong> Generatieve AI in AEM Sites </strong> </a>        
+                <br/><em> met James Talbot &amp; Karthik Muralidharan, AEM de Marketing van het Product </em>
             </div>
             <p>
                 <br/>                
@@ -167,8 +167,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </a>
             <div>
                 <a href="./season-3/cloud5-exploring-universal-editor.md">
-                <strong>Universele editor verkennen</strong></a>        
-                <br/><em>met James Talbot &amp; Dirk Rudolph, AEM Engineering</em>
+                <strong> het Verkennen van Universele Redacteur </strong> </a>        
+                <br/><em> met James Talbot &amp; Dirk Rudolph, AEM Techniek </em>
             </div>
             <p>
                 <br/>                

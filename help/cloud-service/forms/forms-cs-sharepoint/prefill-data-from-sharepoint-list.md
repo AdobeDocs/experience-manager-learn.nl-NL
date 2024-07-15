@@ -23,32 +23,32 @@ In de vorige versie van AEM formulier(6.5) moest aangepaste code worden geschrev
 
 In dit artikel worden de stappen beschreven die nodig zijn om een adaptief formulier vooraf in te vullen of in te vullen met gegevens die uit de SharePoint-lijst zijn opgehaald met de service voor het vooraf invullen van het formuliergegevensmodel.
 
-In dit artikel wordt ervan uitgegaan dat u [adaptief formulier is geconfigureerd voor het verzenden van gegevens naar de SharePoint-lijst.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Dit artikel veronderstelt u [ met succes gevormd adaptieve vorm hebt om gegevens naar de lijst van SharePoint voor te leggen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 Hier volgt een overzicht van de gegevens in de SharePoint-lijst
-![sharepoint-lijst](assets/list-data.png)
+![ sharepoint-list ](assets/list-data.png)
 
 Als u een adaptief formulier vooraf wilt invullen met de gegevens die bij een bepaalde hulplijn horen, moeten de volgende stappen worden uitgevoerd
 
 ## Vorm de get dienst
 
 * Een get-service maken voor het object op het hoogste niveau van het formuliergegevensmodel met het kenmerk guid
-  ![getService](assets/mapping-request-attribute.png)
+  ![ get-service ](assets/mapping-request-attribute.png)
 
-In deze schermafbeelding is de hulplijnkolom gebonden via een aanvraagkenmerk dat wordt aangeroepen `submissionid`.
+In deze schermafbeelding is de hulplijnkolom gebonden via een aanvraagkenmerk met de naam `submissionid` .
 
 De get dienst volledig gevormd kijkt als dit
 
-![getService](assets/fdm-request-attribute.png)
+![ get-service ](assets/fdm-request-attribute.png)
 
 ## Het aangepaste formulier configureren voor het gebruik van de vooraf ingevulde service van het formuliergegevensmodel
 
 * Open een adaptief formulier op basis van het formuliergegevensmodel van de lijst met deelpunten. De service Prefill-up formuliergegevensmodel koppelen
-  ![form-prefill-service](assets/form-prefill-service.png)
+  ![ vorm-prefill-dienst ](assets/form-prefill-service.png)
 
 ## Het formulier testen
 
-Geef een voorbeeld van het formulier weer door de `submissionid` in de URL, zoals hieronder weergegeven
+Geef een voorbeeld van het formulier weer door de `submissionid` op te nemen in de URL, zoals hieronder wordt weergegeven
 
 ```html
 http://localhost:4502/content/dam/formsanddocuments/contactusform/jcr:content?wcmmode=disabled&submissionid=57e12249-751a-4a38-a81f-0a4422b24412

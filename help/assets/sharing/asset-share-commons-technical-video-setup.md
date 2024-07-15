@@ -1,6 +1,6 @@
 ---
 title: Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM
-description: Materialen voor zowel de functionele als de technische overeenkomst Activa Share Commons
+description: Materialen voor zowel de functionele als de technische kennis van Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
 feature: Asset Distribution

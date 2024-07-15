@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Start je aem-banking project in IntelliJ.
 Creeer een eenvoudige servlet om de voorgelegde gegevens aan het logboekdossier uit te voeren.Zorg ervoor de code in het kernproject zoals aangetoond in het het schermschot hieronder is
-![create-servlet](assets/create-servlet.png)
+![ creeer-servlet ](assets/create-servlet.png)
 
 ```java
 package com.aem.bankingapplication.core.servlets;
@@ -45,7 +45,7 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## Aangepaste verzendhandler maken
 
-Aangepaste verzendactie maken in het dialoogvenster `apps/bankingapplication` dezelfde map maken als in het dialoogvenster [eerdere versies van AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Voor deze zelfstudie maak ik een map met de naam SubmitToAEMServlet onder de map `apps/bankingapplication` in de CRX-opslagplaats.
+Creeer uw douane voorlegt actie in de `apps/bankingapplication` omslag de zelfde manier u in de [ vroegere versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en) creeerde. In het kader van deze zelfstudie maak ik een map met de naam SubmitToAEMServlet onder het knooppunt `apps/bankingapplication` in de CRX-opslagplaats.
 
 De volgende code in post.POST.jsp door:sturen eenvoudig het verzoek aan servlet op /bin/formstutorial. Dit is dezelfde servlet die in de vorige stap is gemaakt
 
@@ -53,12 +53,12 @@ De volgende code in post.POST.jsp door:sturen eenvoudig het verzoek aan servlet 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-In uw AEM project in IntelliJ klik met de rechtermuisknop aan `apps/bankingapplication` en selecteer Nieuw | Verpak en typ in SubmitToAEMServlet na apps.bankingapplication in het nieuwe de pakketdialoogvakje. Klik met de rechtermuisknop op het knooppunt VerzendenToAEMServlet en selecteer Opnieuw | Krijg Bevel om het AEM project met de AEM serverbewaarplaats te synchroniseren.
+Klik in uw AEM project in IntelliJ met de rechtermuisknop op de map `apps/bankingapplication` en selecteer Nieuw | Verpak en typ in SubmitToAEMServlet na apps.bankingapplication in het nieuwe de pakketdialoogvakje. Klik met de rechtermuisknop op het knooppunt VerzendenToAEMServlet en selecteer Opnieuw | Krijg Bevel om het AEM project met de AEM serverbewaarplaats te synchroniseren.
 
 
 ## Adaptief formulier configureren
 
-U kunt nu elk adaptief formulier configureren voor verzending naar deze aangepaste verzendhandler, die u **Verzenden naar AEM servlet**
+U kunt om het even welke AanpassingsVorm nu vormen om aan deze douane voor te leggen voorlegt manager genoemd **voorlegt aan AEM Servlet**
 
 ## Volgende stappen
 

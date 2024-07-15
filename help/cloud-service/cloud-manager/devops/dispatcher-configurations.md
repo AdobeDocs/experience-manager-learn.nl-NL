@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Dispatcher-configuraties beheren in AEM Cloud Manager
 
-Gebruik de beste werkwijzen en voorbeelden om te zien hoe de verzender werkt met AEM als Cloud Service en Cloud Manager.
+Gebruik de beste praktijken en voorbeelden om te onderzoeken hoe de verzender met AEM als Cloud Service en Cloud Manager werkt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330538?quality=12&learn=on)

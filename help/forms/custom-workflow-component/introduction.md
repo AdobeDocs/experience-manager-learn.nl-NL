@@ -26,8 +26,8 @@ U hebt het volgende nodig:
 
 * Een werkende instantie van AEM waarop het pakket Form Add-on is geïnstalleerd
 
-* [Ontwikkelomgeving ingesteld overeenkomstig dit document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+* [ het milieu van de Ontwikkeling opstelling volgens dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 
 ## Volgende stappen
 
-Schrijf uw [aangepaste java-code door Workflowinterface te implementeren](./custom-process-step-aem-workflow.md)
+Schrijf uw [ douanecode java door interface WorkflowProcess uit te voeren ](./custom-process-step-aem-workflow.md)

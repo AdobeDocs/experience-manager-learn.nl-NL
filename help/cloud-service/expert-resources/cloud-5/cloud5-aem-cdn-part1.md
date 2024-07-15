@@ -1,6 +1,6 @@
 ---
 title: Wolk 5 AEM CDN Deel 1
-description: Dit is deel 1 van een diepe duik in CDN van AEM as a Cloud Service.
+description: Dit is deel 1 van een diepe duik in AEM as a Cloud Service CDN.
 version: Cloud Service
 feature: Developer Tools
 role: Admin, Developer
@@ -26,7 +26,7 @@ Dit is een diepe duik in CDN die als deel van AEM as a Cloud Service wordt verst
 
 ## Inhoud van deel 1 van deze reeks
 
-+ AEM CDN [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
++ AEM CDN [ Overzicht ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
 + WAF-mogelijkheden (Web Application Firewall)
 + IP-beperkingen
 + DDOS-beveiliging

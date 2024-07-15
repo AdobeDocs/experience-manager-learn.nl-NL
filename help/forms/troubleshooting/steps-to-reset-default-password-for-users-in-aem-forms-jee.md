@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Stappen om standaardwachtwoord voor beheerder in AEM Forms JEE opnieuw in te stellen
 
-*Deze video doorloopt de stappen om het standaardwachtwoord voor de beheerder in AEM Forms JEE opnieuw in te stellen.*
+*Deze video loopt door de stappen om standaardwachtwoord voor beheerder in AEM Forms JEE terug te stellen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335541?quality=12&learn=on)

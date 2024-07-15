@@ -1,6 +1,6 @@
 ---
 title: Analyse van de CDN-cache-raakverhouding
-description: Leer hoe u de AEM as a Cloud Service CDN-logboeken analyseert. Verbeter inzichten zoals geheim voorgeheugenklapverhouding, en hoogste URLs van MISS en PASS geheim voorgeheugentypes voor optimalisatiedoeleinden.
+description: Leer hoe u de door AEM as a Cloud Service verschafte CDN-logboeken analyseert. Verbeter inzichten zoals geheim voorgeheugenklapverhouding, en hoogste URLs van MISS en PASS geheim voorgeheugentypes voor optimalisatiedoeleinden.
 version: Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
@@ -23,18 +23,18 @@ ht-degree: 0%
 
 Inhoud die in de CDN is opgeslagen, verkleint de latentie die websitegebruikers ervaren, die niet hoeven te wachten tot de aanvraag is verzonden om terug te keren naar de Apache/dispatcher of AEM te publiceren. Daarom is het nuttig om de CDN-verhouding voor cachefouten te optimaliseren om de hoeveelheid inhoud die op de CDN in cache kan worden geplaatst, te maximaliseren.
 
-Leer hoe u de as a Cloud Service AEM analyseert **CDN-logbestanden** en meer inzicht te krijgen, zoals **cacheverhouding**, en **top-URL&#39;s van _MISS_ en _PASS_ cachetypen** voor optimalisatiedoeleinden.
+Leer hoe te om de AEM as a Cloud Service verstrekte **CDN logboeken** te analyseren en inzichten zoals **de verhouding van het geheim voorgeheugenhit**, en **bovenkant URLs van _MISS_ en _PASS_ geheim voorgeheugentypes**, voor optimalisatiedoeleinden.
 
 
-De CDN-logboeken zijn beschikbaar in de JSON-indeling, die verschillende velden bevat, waaronder `url`, `cache`. Zie de klasse [CDN-logboekindeling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). De `cache` veld bevat informatie over _status van de cache_ en de mogelijke waarden ervan zijn HIT, MISS of PASS. Laten we de details van mogelijke waarden bekijken.
+De CDN-logbestanden zijn beschikbaar in de JSON-indeling, die verschillende velden bevat, waaronder `url` , `cache` . Voor meer informatie, zie het [ Formaat van het Logboek CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). Het `cache` gebied verstrekt informatie over _staat van het geheime voorgeheugen_ en zijn mogelijke waarden zijn HIT, MISS, of PASS. Laten we de details van mogelijke waarden bekijken.
 
 | Status van cache </br> Mogelijke waarde | Beschrijving |
 |------------------------------------|:-----------------------------------------------------:|
-| HIT | De gevraagde gegevens zijn _gevonden in de CDN-cache en hoeft niet te worden opgehaald_ verzoek aan de AEM server. |
-| MISS | De gevraagde gegevens zijn _niet gevonden in de CDN-cache en moet worden aangevraagd_ van de AEM server. |
-| PASS | De gevraagde gegevens zijn _expliciet instellen op niet in cache plaatsen_ en altijd van de AEM server worden opgehaald. |
+| HIT | Het gevraagde gegeven wordt gevonden _in het CDN geheime voorgeheugen en vereist het maken van geen 1} verzoek van de haal {aan de AEM server._ |
+| MISS | Het gevraagde gegeven wordt _gevonden niet in het CDN geheime voorgeheugen en moet_ van de AEM server worden gevraagd. |
+| PASS | Het gevraagde gegeven is _uitdrukkelijk plaatste om niet_ in het voorgeheugen onder te brengen en altijd van de AEM server worden teruggewonnen. |
 
-In deze zelfstudie wordt [AEM WKND-project](https://github.com/adobe/aem-guides-wknd) wordt ingezet in de AEM as a Cloud Service omgeving en er wordt een kleine prestatietest geactiveerd met behulp van [Apache JMeter](https://jmeter.apache.org/).
+Voor dit leerprogramma, wordt het [ AEM WKND- project ](https://github.com/adobe/aem-guides-wknd) opgesteld aan het milieu van AEM as a Cloud Service en een kleine prestatietest wordt teweeggebracht gebruikend [ Apache JMeter ](https://jmeter.apache.org/).
 
 Deze zelfstudie is zodanig gestructureerd dat u het volgende proces doorloopt:
 
@@ -46,100 +46,100 @@ Deze zelfstudie is zodanig gestructureerd dat u het volgende proces doorloopt:
 
 Ga als volgt te werk om de CDN-logboeken te downloaden:
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u uw organisatie en programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert uw organisatie en programma.
 
-1. Voor een gewenste AEMCS-omgeving selecteert u **Logbestanden downloaden** in het ovaalmenu.
+1. Voor een gewenst milieu AEMCS, uitgezochte **Logboeken van de Download** van het elliptische menu.
 
-   ![Logbestanden downloaden - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
+   ![ Logboeken van de Download - Cloud Manager ](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
-1. In de **Logbestanden downloaden** selecteert u de **Publiceren** De dienst van het drop-down menu, dan klik het downloadpictogram naast **CDN** rij.
+1. In de **Logboeken van de Download** dialoog, selecteer de **Publish** Dienst van het drop-down menu, dan klik het downloadpictogram naast de **CDN** rij.
 
-   ![CDN-logbestanden - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
+   ![ Logs CDN - Cloud Manager ](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
 
-Als het gedownloade logbestand afkomstig is van _vandaag_ de bestandsextensie is `.log` anders voor oudere logbestanden is de extensie `.log.gz`.
+Als het gedownloade logboekdossier van _vandaag_ is de dossieruitbreiding `.log` anders voor vroegere logboekdossiers is de uitbreiding `.log.gz`.
 
 ## Gedownloade CDN-logboeken analyseren
 
-Analyseer het gedownloade CDN-logbestand om inzicht te krijgen in bijvoorbeeld de verhouding van cachereeks en de URL&#39;s van de bovenste URL&#39;s van MISS- en PASS-cachetypen. Deze inzichten helpen om [CDN-cacheconfiguratie](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) en verbetert u de prestaties van de site.
+Analyseer het gedownloade CDN-logbestand om inzicht te krijgen in bijvoorbeeld de verhouding van cachereeks en de URL&#39;s van de bovenste URL&#39;s van MISS- en PASS-cachetypen. Deze inzichten helpen om de [ CDN geheim voorgeheugenconfiguratie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) te optimaliseren en de plaatsprestaties te verbeteren.
 
 In deze zelfstudie worden drie opties beschreven voor het analyseren van de CDN-logboeken:
 
-1. **Elasticsearch, Logstash en Kibana (ELK)**: De [Gereedschap voor ELK-dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) kan lokaal worden geïnstalleerd.
-1. **Splunk**: De [Gereedschap voor gesponnen dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) vereist toegang tot Splunk en [AEMCS log-forward ingeschakeld](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) om de CDN-logboeken in te voeren.
-1. **Jupyter-laptop**: Het kan extern worden benaderd als onderdeel van [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) zonder extra software te installeren, voor klanten die een licentie voor Adobe Experience Platform hebben verkregen.
+1. **Elasticsearch, Logstash, en Kibana (ELK)**: Het [ ELK dashboard tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) kan plaatselijk worden geïnstalleerd.
+1. **Splunk**: Het [ dashboard van het Splunk ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) vereist toegang tot Splunk en [ AEMCS logboek door:sturen toegelaten ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) om de CDN- logboeken in te nemen.
+1. **Jupyter Notitieboekje**: Het kan ver als deel van [ Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) worden betreden zonder extra software te installeren, voor klanten die Adobe Experience Platform in licentie hebben gegeven.
 
 ### Optie 1: ELK-dashboard gebruiken
 
-De [ELK-stapel](https://www.elastic.co/elastic-stack) is een reeks hulpmiddelen die een scalable oplossing verstrekken om, de gegevens te zoeken te analyseren en te visualiseren. Het bestaat uit Elasticsearch, Logstash, en Kibana.
+De [ ELK stapel ](https://www.elastic.co/elastic-stack) is een reeks hulpmiddelen die een scalable oplossing verstrekken om, de gegevens te zoeken te analyseren en visualiseren. Het bestaat uit Elasticsearch, Logstash, en Kibana.
 
-Om de belangrijkste details te identificeren, gebruiken wij [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) project. Dit project verstrekt een container van de Dok van de stapel van ELK en een vooraf gevormd dashboard van Kibana om de CDN- logboeken te analyseren.
+Om de belangrijkste details te identificeren, gebruiken wij het [ AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) project. Dit project verstrekt een container van de Dok van de stapel van ELK en een vooraf gevormd dashboard van Kibana om de CDN- logboeken te analyseren.
 
-1. Voer de volgende stappen uit [Hoe te opstelling de container van de Docker ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) en zorg ervoor dat u de **Hoogte-breedteverhouding CDN-cache** Kibana dashboard.
+1. Volg de stappen van [ hoe te opstelling de ELK container van het Dok ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) en zorg ervoor om het **CDN Gehechte Verhouding van het Geheime voorgeheugen CDN** Kibana dashboard in te voeren.
 
 1. Ga als volgt te werk om de CDN-raakverhouding in cache en URL&#39;s als bovenste URL te identificeren:
 
-   1. Kopieer het gedownloade CDN-logbestand of de gedownloade CDN-logbestanden bijvoorbeeld in de omgevingsspecifieke logboekmap. `ELK/logs/stage`.
+   1. Kopieer het gedownloade CDN-logbestand of de gedownloade CDN-logbestanden bijvoorbeeld naar de map met omgevingsspecifieke logbestanden `ELK/logs/stage` .
 
-   1. Open de **Hoogte-breedteverhouding CDN-cache** dashboard door op de linkerbovenhoek te klikken _Navigation Menu > Analytics > Dashboard > CDN Cache Hit Ratio_.
+   1. Open het **dashboard van de Verhouding van het Bezit van het Geheime voorgeheugen CDN {door het top-linker hoek _Menu van de Navigatie > Analyses > Dashboard > CDN het Verhouding van het Geheime voorgeheugen CDN_ te klikken.**
 
-      ![CDN-cachehoogte-breedteverhouding - Kibana-dashboard](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
+      ![ CDN de Verhouding van de Actief van het Geheime voorgeheugen - het Dashboard van Kibana ](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
    1. Selecteer het gewenste tijdbereik in de rechterbovenhoek.
 
-      ![Tijdbereik - Kibana-dashboard](assets/cdn-logs-analysis/time-range.png){width="500" zoomable="yes"}
+      ![ Waaier van de Tijd - het Dashboard van Kibana ](assets/cdn-logs-analysis/time-range.png){width="500" zoomable="yes"}
 
-   1. De **Hoogte-breedteverhouding CDN-cache** Het dashboard spreekt voor zich.
+   1. Het **dashboard van de Verhouding van het Actief van het Geheime voorgeheugen 0} CDN is duidelijk.**
 
-   1. De _Totale verzoekanalyse_ in deze sectie worden de volgende details weergegeven:
+   1. De _Totale sectie van de Analyse van het Verzoek_ toont de volgende details:
       - Cacheverhoudingen per cachetype
       - Cacheaantallen per cachetype
 
-      ![Totale aanvraaganalyse - Kibana-dashboard](assets/cdn-logs-analysis/total-request-analysis.png){width="500" zoomable="yes"}
+      ![ Totale Analyse van het Verzoek - het Dashboard van Kibana ](assets/cdn-logs-analysis/total-request-analysis.png){width="500" zoomable="yes"}
 
-   1. De _Analyse op verzoek of MIME-typen_ geeft de volgende details weer:
+   1. De _Analyse door de Types van Verzoek of Mime_ toont de volgende details:
       - Cacheverhoudingen per cachetype
       - Cacheaantallen per cachetype
       - MISS- en PASS-URL&#39;s bovenaan
 
-      ![Analyse op verzoek- of MIME-typen - Kibana-dashboard](assets/cdn-logs-analysis/analysis-by-request-or-mime-types.png){width="500" zoomable="yes"}
+      ![ Analyse door de Types van Verzoek of van MIME - het Dashboard van Kibana ](assets/cdn-logs-analysis/analysis-by-request-or-mime-types.png){width="500" zoomable="yes"}
 
 #### Filteren op omgevingsnaam of programma-id
 
 Voer de volgende stappen uit om de opgenomen logs te filteren op de naam van de omgeving:
 
-1. Klik in het dashboard voor de hoogte-breedteverhouding van CDN-cache op de knop **Filter toevoegen** pictogram.
+1. In het dashboard van de Verhouding van het Geheime voorgeheugen CDN, klik **voeg het pictogram van de Filter** toe.
 
-   ![Filter - Kibana-dashboard](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
+   ![ Filter - het Dashboard van Kibana ](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
 
-1. In de **Filter toevoegen** modal, selecteer `aem_env_name.keyword` in het keuzemenu, en `is` operator en gewenste omgevingsnaam voor volgende veld en klik ten slotte op _Filter toevoegen_.
+1. In **voeg filter** modaal toe, selecteer het `aem_env_name.keyword` gebied van het drop-down menu, en `is` exploitant en gewenste omgevingsnaam voor volgend gebied en klik _filter_ ten slotte toevoegen.
 
-   ![Filter toevoegen - Kibana-dashboard](assets/cdn-logs-analysis/add-filter.png){width="500" zoomable="yes"}
+   ![ voeg Filter toe - het dashboard van Kibana ](assets/cdn-logs-analysis/add-filter.png){width="500" zoomable="yes"}
 
 #### Filteren op hostnaam
 
 Voer de volgende stappen uit om de opgenomen logbestanden te filteren op hostnaam:
 
-1. Klik in het dashboard voor de hoogte-breedteverhouding van CDN-cache op de knop **Filter toevoegen** pictogram.
+1. In het dashboard van de Verhouding van het Geheime voorgeheugen CDN, klik **voeg het pictogram van de Filter** toe.
 
-   ![Filter - Kibana-dashboard](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
+   ![ Filter - het Dashboard van Kibana ](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
 
-1. In de **Filter toevoegen** modal, selecteer `host.keyword` in het keuzemenu, en `is` operator en gewenste hostnaam voor volgende veld en klik ten slotte op _Filter toevoegen_.
+1. In **voeg filter** modaal toe, selecteer het `host.keyword` gebied van het drop-down menu, en `is` exploitant en gewenste hostname voor volgende gebied en klik _filter_ ten slotte toevoegen.
 
-   ![Hostfilter - Kibana-dashboard](assets/cdn-logs-analysis/add-host-filter.png){width="500" zoomable="yes"}
+   ![ Filter van de Gastheer - het Dashboard van Kibana ](assets/cdn-logs-analysis/add-host-filter.png){width="500" zoomable="yes"}
 
 U kunt ook meer filters toevoegen aan het dashboard op basis van de analysevereisten.
 
 ### Optie 2: Werkset voor gesponnen dashboard gebruiken
 
-De [Splunk](https://www.splunk.com/) is een populair hulpmiddel van de logboekanalyse dat helpt logboeken samenvoegen, analyseren, en visualisaties voor controle en het oplossen van problemendoeleinden tot stand brengen.
+[ Splunk ](https://www.splunk.com/) is een populair hulpmiddel van de logboekanalyse dat de hulp aggregeert, registreert analyseert, en visualisaties voor controle en het oplossen van problemendoeleinden creeert.
 
-Om de belangrijkste details te identificeren, gebruiken wij [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) project. Dit project verstrekt een dashboard van het Splunk om de CDN- logboeken te analyseren.
+Om de belangrijkste details te identificeren, gebruiken wij het [ AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) project. Dit project verstrekt een dashboard van het Splunk om de CDN- logboeken te analyseren.
 
-1. Voer de volgende stappen uit [Splunk dashboards voor de Analyse van het Logboek van AEMCS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) en zorg ervoor dat u de **Hoogte-breedteverhouding CDN-cache** Splunk dashboard.
-1. Werk indien nodig de _Index, type bron en andere_ filterwaarden in het dashboard Splunk.
+1. Volg de stappen van [ Splunk dashboards voor de Analyse van het Logboek van AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) en zorg ervoor om het **CDN de Verhouding van het Geheime voorgeheugen CDN** Splunk dashboard in te voeren.
+1. Indien nodig, werk de _Index, het Type van Source en andere_ filterwaarden in het Splunk dashboard bij.
 
-   ![Splunk Dashboard](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+   ![ Splunk Dashboard ](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -149,50 +149,50 @@ Om de belangrijkste details te identificeren, gebruiken wij [AEMCS-CDN-Log-Analy
 
 Voor degenen die liever geen software lokaal installeren (dat wil zeggen het gereedschap voor het ELK-dashboard uit de vorige sectie), is er een andere optie, maar is een licentie voor Adobe Experience Platform vereist.
 
-De [Jupyter-laptop](https://jupyter.org/) is een opensource webtoepassing waarmee u documenten kunt maken die code, tekst en visualisatie bevatten. Het wordt gebruikt voor gegevenstransformatie, visualisatie, en statistische modellering. Het kan extern worden geopend [als onderdeel van Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
+Het [ Jupyter Notitieboekje ](https://jupyter.org/) is een open-bronWebtoepassing die u documenten laat creëren die code, tekst, en visualisatie bevatten. Het wordt gebruikt voor gegevenstransformatie, visualisatie, en statistische modellering. Het kan ver worden betreden [ als deel van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### Het interactieve Python-laptopbestand downloaden
 
-Download eerst de [AEM-as-a-CloudService - CDN Logs Analysis - Jupyter-laptop](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb) bestand, dat helpt bij de analyse van de CDN-logbestanden. Dit dossier van de &quot;Interactive Python Notitieboekje&quot;spreekt voor zich, echter de belangrijkste hoogtepunten van elke sectie zijn:
+Eerst, download [ AEM-as-a-CloudService - de Analyse van Logboeken CDN - Jupyter Notitieboekdossier ](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb), dat met de CDN logboekanalyse zal helpen. Dit dossier van de &quot;Interactive Python Notitieboekje&quot;spreekt voor zich, echter de belangrijkste hoogtepunten van elke sectie zijn:
 
-- **Extra bibliotheken installeren**: installeert de `termcolor` en `tabulate` Pythonbibliotheken.
-- **CDN-logbestanden laden**: laadt het CDN-logbestand met `log_file` variabele waarde; zorg ervoor om zijn waarde bij te werken. Het zet ook dit CDN- logboek in [Pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html).
-- **Analyse uitvoeren**: het eerste codeblok is _Resultaat van de Analyse van de vertoning voor Totaal, HTML, JS/CSS en de Verzoeken van het Beeld_; het verstrekt het percentage van de geheim voorgeheugenklap, bar, en schijfgrafieken.
-Het tweede codeblok is _Hoogste 5 MISS en PASS verzoek URLs voor HTML, JS/CSS, en Beeld_; URL&#39;s en hun aantallen worden in tabelindeling weergegeven.
+- **installeer extra bibliotheken**: installeert de `termcolor` en `tabulate` bibliotheken van de Python.
+- **Logboeken van CDN van de Lading**: laadt het CDN logboekdossier gebruikend `log_file` veranderlijke waarde; zorg ervoor om zijn waarde bij te werken. Het zet ook dit CDN logboek in [ Pandas DataFrame ](https://pandas.pydata.org/docs/reference/frame.html) om.
+- **voer analyse** uit: het eerste codeblok is het Resultaat van de Analyse van de Vertoning voor Totaal, HTML, JS/CSS en de Verzoeken van het Beeld _; het verstrekt het percentage van de geheim voorgeheugenslag, bar, en cirkelgrafieken._
+Het tweede codeblok is _Hoogste 5 MISS en PASS Verzoek URLs voor HTML, JS/CSS, en Beeld_; het toont URLs en hun tellingen in lijstformaat.
 
 #### De Jupyter-laptop uitvoeren
 
 Voer vervolgens de Jupyter-laptop in Adobe Experience Platform uit door de volgende stappen uit te voeren:
 
-1. Aanmelden bij de [Adobe Experience Cloud](https://experience.adobe.com/), op de startpagina > **Snelle toegang** sectie > klik op **Experience Platform**
+1. Login aan [ Adobe Experience Cloud ](https://experience.adobe.com/), in de Homepage > **Snelle toegang** sectie > klikt het **Experience Platform**
 
-   ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="500" zoomable="yes"}
+   ![ Experience Platform ](assets/cdn-logs-analysis/experience-platform.png){width="500" zoomable="yes"}
 
-1. Klik op de startpagina van Adobe Experience Platform > sectie Data Science > op de knop **Laptops** menu-item. Als u de Jupyter-laptopomgeving wilt starten, klikt u op de knop **JupyterLab** tab.
+1. In de pagina van het Huis van Adobe Experience Platform > de sectie van de Wetenschap van Gegevens >, klik het **het menupunt van Notities**. Om het milieu van Notities van de Jupyter te beginnen, klik **JupyterLab** tabel.
 
-   ![Update voor de waarde van het logboekbestand voor laptops](assets/cdn-logs-analysis/datascience-notebook.png){width="500" zoomable="yes"}
+   ![ Update van de Waarde van het Dossier van het Logboek van het Notitieboekje ](assets/cdn-logs-analysis/datascience-notebook.png){width="500" zoomable="yes"}
 
-1. Gebruik in het menu JupyterLab de opdracht **Bestanden uploaden** het gedownloade CDN-logbestand uploaden en `aemcs_cdn_logs_analysis.ipynb` bestand.
+1. In het menu JupyterLab, die **gebruiken uploadt Dossiers** pictogram, upload het gedownloade CDN logboekdossier en `aemcs_cdn_logs_analysis.ipynb` dossier.
 
-   ![Bestanden uploaden - JupyteLab](assets/cdn-logs-analysis/jupyterlab-upload-file.png){width="500" zoomable="yes"}
+   ![ uploadt Dossiers - JupyteLab ](assets/cdn-logs-analysis/jupyterlab-upload-file.png){width="500" zoomable="yes"}
 
-1. Open de `aemcs_cdn_logs_analysis.ipynb` door te dubbelklikken.
+1. Open het `aemcs_cdn_logs_analysis.ipynb` -bestand door erop te dubbelklikken.
 
-1. In de **CDN-logbestand laden** van de laptop, werkt u de `log_file` waarde.
+1. In de **sectie van het Dossier van het Logboek van de Lading CDN** van de notitieboekje, werk de `log_file` waarde bij.
 
-   ![Update voor de waarde van het logboekbestand voor laptops](assets/cdn-logs-analysis/notebook-update-variable.png){width="500" zoomable="yes"}
+   ![ Update van de Waarde van het Dossier van het Logboek van het Notitieboekje ](assets/cdn-logs-analysis/notebook-update-variable.png){width="500" zoomable="yes"}
 
-1. Als u de geselecteerde cel wilt uitvoeren en verder wilt gaan, klikt u op de knop **Afspelen** pictogram.
+1. Om de geselecteerde cel in werking te stellen en vooruit te gaan, klik het **Spel** pictogram.
 
-   ![Update voor de waarde van het logboekbestand voor laptops](assets/cdn-logs-analysis/notebook-run-cell.png){width="500" zoomable="yes"}
+   ![ Update van de Waarde van het Dossier van het Logboek van het Notitieboekje ](assets/cdn-logs-analysis/notebook-run-cell.png){width="500" zoomable="yes"}
 
-1. Nadat u het **Resultaat van de Analyse van de vertoning voor Totaal, HTML, JS/CSS, en de Verzoeken van het Beeld** codecel, toont de output het percentage van de geheim voorgeheugentreffelijkheid, bar, en cirkeldiagrammen.
+1. Na het in werking stellen van het **Resultaat van de Analyse van de Vertoning voor Totaal, HTML, JS/CSS, en de 1} codecel van de Verzoeken van het Beeld, toont de output het percentage van de geheim voorgeheugenslag, bar, en cirkelgrafieken.**
 
-   ![Update voor de waarde van het logboekbestand voor laptops](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="500" zoomable="yes"}
+   ![ Update van de Waarde van het Dossier van het Logboek van het Notitieboekje ](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="500" zoomable="yes"}
 
-1. Nadat u het **Hoogste 5 MISS en PASS verzoek URLs voor HTML, JS/CSS, en Beeld** De codecel, de output toont Hoogste 5 MISS en PASS Verzoek URLs.
+1. Na het in werking stellen van **Hoogste 5 MISS en PLAKKEN verzoek URLs voor HTML, JS/CSS, en de codecel van het Beeld**, toont de output Top 5 MISS en PASS Verzoek URLs.
 
-   ![Update voor de waarde van het logboekbestand voor laptops](assets/cdn-logs-analysis/output-top-urls.png){width="500" zoomable="yes"}
+   ![ Update van de Waarde van het Dossier van het Logboek van het Notitieboekje ](assets/cdn-logs-analysis/output-top-urls.png){width="500" zoomable="yes"}
 
 U kunt het Notitieboekje van de Jupyter verbeteren om de logboeken te analyseren CDN die op uw vereisten worden gebaseerd.
 
@@ -200,6 +200,6 @@ U kunt het Notitieboekje van de Jupyter verbeteren om de logboeken te analyseren
 
 Nadat u de CDN-logboeken hebt geanalyseerd, kunt u de CDN-cacheconfiguratie optimaliseren om de siteprestaties te verbeteren. De AEM beste praktijken moeten een geheim voorgeheugenklapverhouding van 90% of hoger hebben.
 
-Zie voor meer informatie [CDN-cacheconfiguratie optimaliseren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
+Voor meer informatie, zie [ Optimize CDN de Configuratie van het Geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
-Het AEM WKND-project heeft een referentie-CDN-configuratie, voor meer informatie, zie [CDN-configuratie](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) van de `wknd.vhost` bestand.
+Het AEM WKND project heeft een configuratie van referentieCDN, voor meer informatie, zie ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) Configuratie CDN van het `wknd.vhost` dossier.[

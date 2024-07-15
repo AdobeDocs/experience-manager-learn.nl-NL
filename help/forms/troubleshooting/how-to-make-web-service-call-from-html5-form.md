@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Webservice-aanroep vanuit HTML5-formulier maken
 
-*Deze video doorloopt het proces om de Webdienst vraag van vorm te maken HTML5.*
+*Deze video loopt door het proces om de dienstvraag van het Web van vorm te maken HTML5.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335505?quality=12&learn=on)

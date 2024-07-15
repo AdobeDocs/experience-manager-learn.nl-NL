@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Stappen om het registreren van fouten voor om het even welke klasse in de server van de Toepassing toe te laten JBoss
 
-*Deze video doorloopt de stappen om foutopsporingslogbestanden voor elke klasse in de JBoss-toepassingsserver in te schakelen.*
+*Deze video loopt door de stappen om toe te laten zuivert registreren voor om het even welke klasse in de server van de Toepassing JBoss.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335522?quality=12&learn=on)

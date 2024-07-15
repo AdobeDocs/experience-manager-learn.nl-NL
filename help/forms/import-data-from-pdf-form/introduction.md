@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Een vaak voorkomend geval is de mogelijkheid om een adaptief formulier in te vullen vanaf een gedeeltelijk ingevuld PDF-formulier.
 
-Om dit geval aan te tonen, zullen wij gebruiken [IRS-formulier F23](./assets/f23.pdf)
+Om dit gebruiksgeval aan te tonen, gaan wij [ IRS vorm F23 ](./assets/f23.pdf) gebruiken
 
 ## Vereisten
 
@@ -28,7 +28,7 @@ U hebt het volgende nodig:
 
 * Een werkende instantie van AEM met het geïnstalleerde pakket van de toe:voegen-op van Forms.
 
-* [Ontwikkelomgeving ingesteld overeenkomstig dit document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+* [ het milieu van de Ontwikkeling opstelling volgens dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 
 * AEM Forms Designer
 

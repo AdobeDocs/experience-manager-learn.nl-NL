@@ -1,6 +1,6 @@
 ---
 title: Wolk 5 - Seizoen 1
-description: Leer over Adobe Experience Manager (AEM) as a Cloud Service van de eigen deskundige ingenieurs van de Adobe die het bouwen, en de deskundige diensten die het leveren.
+description: Leer over Adobe Experience Manager (AEM) as a Cloud Service van de eigen deskundige ingenieurs van Adobe die het bouwen, en de deskundige diensten die het leveren.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## Inleiding
 
-Welkom bij de Cloud 5 Series van AEM Engineering. Een van de belangrijkste problemen in de implementatiefase van een product is het hebben van voldoende codevoorbeelden en/of live demonstraties van deze samples, tools of API&#39;s. Het doel van deze reeks is nuttige informatie over AEM as a Cloud Service in 5 minuten of minder te leveren.
+Welkom bij de Cloud 5 Series van AEM Engineering. Een van de belangrijkste problemen in de implementatiefase van een product is het hebben van voldoende codevoorbeelden en/of live demonstraties van deze samples, tools of API&#39;s. Het doel van deze reeks is om binnen 5 minuten nuttige informatie over AEM as a Cloud Service te leveren.
 
-Ga naar [Suggestievak](https://forms.office.com/r/74P5Xz4UH0) voor het indienen van onderwerpideeën.
+Bezoek het [ Vak van de Suggestie ](https://forms.office.com/r/74P5Xz4UH0) voor het voorleggen van onderwerpideeën.
 
 ## Seizoen 1
 
@@ -32,8 +32,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
       <img alt="AEM CDN Deel 1" src="./imgs/001-thumb.png"/>
       </a>
       <div>
-         <a href="./cloud5-aem-cdn-part1.md"><strong>AEM CDN Diep duiken (deel 1)</strong></a>         
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+         <a href="./cloud5-aem-cdn-part1.md"><strong> AEM CDN Diep Duiken (deel 1) </strong></a>         
+         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
       </div>
       <p>
         <br/>
@@ -45,12 +45,12 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
          <img alt="AEM CDN Deel 2" src="./imgs/002-thumb.png"/>
       </a>
       <div>
-         <a href="./cloud5-aem-cdn-part2.md"><strong>AEM CDN Diep duiken (deel 2)</strong></a>
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+         <a href="./cloud5-aem-cdn-part2.md"><strong> AEM CDN Diep Duiken (deel 2) </strong></a>
+         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
       </div>
       <p>
         <br/>
-         Deel 2 is een voortzetting van onze blik op AEM as a Cloud Service CDN. We beantwoorden enkele van de meer algemene vragen en mythes over welke functies u krijgt met de nieuwe CDN.
+         Deel 2 is een voortzetting van onze blik op de AEM as a Cloud Service CDN. We beantwoorden enkele van de meer algemene vragen en mythes over welke functies u krijgt met de nieuwe CDN.
       </p>
    </td>
      <td>
@@ -58,12 +58,12 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             <img alt="Logbestanden en logbestanden" src="./imgs/003-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-log-files.md"><strong>Logbestanden en logbestanden</strong></a>
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+         <a href="./cloud5-aem-log-files.md"><strong> de Dossiers van het Logboek &amp; het Registreren </strong></a>
+         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
       </div>
       <p>
         <br/>
-         Dit is een snel onderzoek naar hoe te om tot logboeken toegang te hebben as a Cloud Service, met inbegrip van hoe te om tot hen via de gebruikersinterface evenals van APIs toegang te hebben.
+         Dit is een snel overzicht van hoe te om tot logboeken in AEM as a Cloud Service toegang te hebben, met inbegrip van hoe te om tot hen via het gebruikersinterface evenals van APIs toegang te hebben.
       </p>
    </td> 
   </tr>
@@ -73,8 +73,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             <img alt="Toegangstokens" src="./imgs/004-thumb.png"/>
         </a>
       <div>
-        <a href="./cloud5-getting-login-token-integrations.md"><strong>Integreren met Access Tokens</strong></a>        
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+        <a href="./cloud5-getting-login-token-integrations.md"><strong> Integrerend met de Tokens van de Toegang </strong></a>        
+         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
       </div>
       <p>
         <br/>
@@ -86,12 +86,12 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
       <img alt="Dispatcher in de cloud" src="./imgs/005-thumb.png"/>
        </a>  
       <div>
-        <a href="./cloud5-aem-dispatcher-cloud.md"><strong>Dispatcher in de cloud</strong></a>
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+        <a href="./cloud5-aem-dispatcher-cloud.md"><strong> Dispatcher in de Wolk </strong></a>
+         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
       </div>
       <p>
         <br/>
-        Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief enkele goede werkwijzen en verschillen van AMS/On-Prem. 
+        Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief een aantal beste praktijken en verschillen van AMS/On-Prem. 
       </p>
    </td>
      <td>
@@ -99,8 +99,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             <img alt="Migratie (deel 1)" src="./imgs/006-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-content-migration-part-1.md"><strong>Migratie (deel 1)</strong></a>
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects &amp; Dr Applesmith</em>
+         <a href="./cloud5-aem-content-migration-part-1.md"><strong> Migratie (deel 1) </strong></a>
+         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk &amp; Dr. Applesmith </em>
       </div>
       <p>
         <br/>
@@ -114,8 +114,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             <img alt="Migratie (deel 2)" src="./imgs/007-thumb.png"/>
         </a>
       <div>
-        <a href="./cloud5-aem-content-migration-part-2.md"><strong>Migratie (deel 2)</strong></a>     
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+        <a href="./cloud5-aem-content-migration-part-2.md"><strong> Migratie (deel 2) </strong></a>     
+         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
       </div>
       <p>
         <br/>
@@ -124,11 +124,11 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
      </td>   
      <td>
         <a href="./cloud5-aem-dispatcher-validator.md">
-            <img alt="Validator van verzender" src="./imgs/008-thumb.png"/>
+            <img alt="Dispatcher Validator" src="./imgs/008-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Validator van verzender</strong></a>
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+         <a href="./cloud5-aem-dispatcher-validator.md"><strong> Validator van Dispatcher </strong></a>
+         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
       </div>
       <p>
         <br/>
@@ -140,8 +140,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             <img alt="Tips voor indexeren en zoeken" src="./imgs/009-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-search-and-indexing.md"><strong>Tips voor indexeren en zoeken</strong></a>
-         <br/><em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
+         <a href="./cloud5-aem-search-and-indexing.md"><strong> het Indexeren en van het Onderzoek Uiteinden </strong></a>
+         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
       </div>
       <p>
         <br/>
@@ -155,11 +155,11 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 <img alt="Adobe App Builder" src="./imgs/010-thumb.png"/>
             </a>
             <div>
-                <a href="./cloud5-adobe-app-builder.md"><strong>Adobe App Builder</strong></a><br/>        
-                <em>met Darin Kuntze &amp; James Talbot, Senior Cloud Architects &amp; Amol Anand</em>
+                <a href="./cloud5-adobe-app-builder.md"><strong> Adobe App Builder </strong></a><br/>        
+                <em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk &amp; Anand Amol </em>
             </div>
             <p><br/>
-                Kom wat coole dingen uit die u met Adobe App Builder kunt doen en iets nieuws over de toekomst van aanpassingen in de cloud leren.
+                Kom wat coole dingen uit die je kunt doen met Adobe App Builder en leer iets nieuws over de toekomst van aanpassingen in de cloud.
             </p>
         </td>
         <td></td>

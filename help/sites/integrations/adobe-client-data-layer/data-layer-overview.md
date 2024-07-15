@@ -26,18 +26,18 @@ De gegevenslaag van de Cliënt van de Adobe introduceert een standaardmethode om
 
 >[!NOTE]
 >
-> Wilt u de Laag van Gegevens van de Cliënt van de Adobe op uw AEM plaats toelaten? [Zie hier de instructies](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> Wilt u de Laag van Gegevens van de Cliënt van de Adobe op uw AEM plaats toelaten? [ zie hier de instructies ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 ## De gegevenslaag verkennen
 
-U kunt een idee van de ingebouwde functionaliteit van de Laag van Gegevens van de Cliënt van de Adobe enkel krijgen door de ontwikkelaarshulpmiddelen van uw browser en levende te gebruiken [WKND-referentiesite](https://wknd.site/us/en.html).
+U kunt een idee van de ingebouwde functionaliteit van de Laag van Gegevens van de Cliënt van de Adobe enkel krijgen door de ontwikkelaarshulpmiddelen van uw browser en de levende [ WKND verwijzingsplaats ](https://wknd.site/us/en.html) te gebruiken.
 
 >[!NOTE]
 >
 > Hieronder worden screenshots genomen vanuit de Chrome-browser.
 
-1. Navigeren naar [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
-1. Open de ontwikkelaarsgereedschappen en voer de volgende opdracht in het dialoogvenster **Console**:
+1. Navigeer aan [ https://wknd.site/us/en.html](https://wknd.site/us/en.html)
+1. Open uw ontwikkelaarshulpmiddelen en ga het volgende bevel in de **Console** in:
 
    ```js
    window.adobeDataLayer.getState();
@@ -45,7 +45,7 @@ U kunt een idee van de ingebouwde functionaliteit van de Laag van Gegevens van d
 
    Om de huidige staat van de gegevenslaag op een AEM plaats te zien inspecteer de reactie. U moet informatie over de pagina en de afzonderlijke componenten bekijken.
 
-   ![Reactie gegevenslaag Adoben](assets/data-layer-state-response.png)
+   ![ Reactie van de Laag van Gegevens van de Adobe ](assets/data-layer-state-response.png)
 
 1. Duw een gegevensvoorwerp op de gegevenslaag door het volgende in de console in te gaan:
 
@@ -60,14 +60,14 @@ U kunt een idee van de ingebouwde functionaliteit van de Laag van Gegevens van d
    });
    ```
 
-1. De opdracht uitvoeren `adobeDataLayer.getState()` en zoek de informatie voor `training-data`.
+1. Voer de opdracht `adobeDataLayer.getState()` nogmaals uit en zoek de vermelding voor `training-data` .
 1. Voeg vervolgens een padparameter toe om alleen de specifieke status van een component te retourneren:
 
    ```js
    window.adobeDataLayer.getState('component.training-data');
    ```
 
-   ![Hiermee wordt slechts één componentgegevensitem geretourneerd](assets/return-just-single-component.png)
+   ![ terugkeer enkel één enkele ingang van componentengegevens ](assets/return-just-single-component.png)
 
 ## Werken met gebeurtenissen
 
@@ -92,13 +92,13 @@ Het is aan te raden om aangepaste code te activeren die is gebaseerd op een gebe
    }
    ```
 
-   De bovenstaande code inspecteert de `event` object en gebruikt het `adobeDataLayer.getState` methode om de huidige status op te halen van het object dat de gebeurtenis heeft geactiveerd. Vervolgens wordt met de hulplijnmethode de `filter` en alleen als de huidige `dataObject` voldoet aan de filtercriteria die worden geretourneerd.
+   De bovenstaande code inspecteert het object `event` en gebruikt de methode `adobeDataLayer.getState` om de huidige status op te halen van het object dat de gebeurtenis heeft geactiveerd. Vervolgens controleert de hulpmethode de `filter` en alleen als de huidige `dataObject` voldoet aan de filtercriteria die worden geretourneerd.
 
    >[!CAUTION]
    >
-   > Het is belangrijk **niet** als u de browser gedurende deze oefening wilt vernieuwen, anders gaat de console-JavaScript verloren.
+   > Het is belangrijk **niet** browser door deze oefening te verfrissen, anders wordt de console JavaScript verloren.
 
-1. Voer vervolgens een gebeurtenishandler in die wordt aangeroepen wanneer een **Teaser** component wordt weergegeven binnen een **Carousel**.
+1. Daarna, ga een gebeurtenismanager in die wordt geroepen wanneer de component van het a **Taser** binnen a **Carrousel** wordt getoond.
 
    ```js
    function teaserShownHandler(event) {
@@ -110,9 +110,9 @@ Het is aan te raden om aangepaste code te activeren die is gebaseerd op een gebe
    }
    ```
 
-   De `teaserShownHandler` functie roept de functie `getDataObjectHelper` en geeft een filter door van `wknd/components/carousel/item` als de `@type` om gebeurtenissen uit te filteren die door andere componenten worden teweeggebracht.
+   De functie `teaserShownHandler` roept de functie `getDataObjectHelper` aan en geeft een filter van `wknd/components/carousel/item` als `@type` door om gebeurtenissen uit te filteren die door andere componenten worden geactiveerd.
 
-1. Duw vervolgens een gebeurtenislistener op de gegevenslaag om te luisteren naar de `cmp:show` gebeurtenis.
+1. Vervolgens drukt u een gebeurtenislistener op de gegevenslaag om naar de gebeurtenis `cmp:show` te luisteren.
 
    ```js
    window.adobeDataLayer.push(function (dl) {
@@ -120,13 +120,13 @@ Het is aan te raden om aangepaste code te activeren die is gebaseerd op een gebe
    });
    ```
 
-   De `cmp:show` De gebeurtenis wordt geactiveerd door veel verschillende componenten, zoals wanneer een nieuwe dia wordt weergegeven in het dialoogvenster **Carousel** of wanneer een nieuw tabblad wordt geselecteerd in het dialoogvenster **Tab** component.
+   De `cmp:show` gebeurtenis wordt teweeggebracht door vele verschillende componenten, als wanneer een nieuwe dia in **Carousel** wordt getoond, of wanneer een nieuw lusje in de **4} component van het Lusje {wordt geselecteerd.**
 
 1. Schakel op de pagina de carrouseldia&#39;s in en bekijk de consoleinstructies:
 
-   ![Carousel in-/uitschakelen en gebeurtenislistener bekijken](assets/teaser-console-slides.png)
+   ![ Knevel van de knevel en zie gebeurtenisluisteraar ](assets/teaser-console-slides.png)
 
-1. Als u niet meer wilt luisteren naar de `cmp:show` gebeurtenis, de gebeurtenislistener verwijderen uit de gegevenslaag
+1. Als u niet meer wilt luisteren naar de gebeurtenis `cmp:show` , verwijdert u de gebeurtenislistener uit de gegevenslaag
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -149,9 +149,9 @@ Het is aan te raden om aangepaste code te activeren die is gebaseerd op een gebe
    }
    ```
 
-   Bericht dat het middeltype `wknd/components/page` wordt gebruikt om de gebeurtenis te filteren.
+   Het middeltype `wknd/components/page` wordt gebruikt om de gebeurtenis te filteren.
 
-1. Duw vervolgens een gebeurtenislistener op de gegevenslaag om te luisteren naar de `cmp:show` gebeurtenis, de `pageShownHandler`.
+1. Vervolgens drukt u een gebeurtenislistener op de gegevenslaag om naar de gebeurtenis `cmp:show` te luisteren en `pageShownHandler` aan te roepen.
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -162,21 +162,21 @@ Het is aan te raden om aangepaste code te activeren die is gebaseerd op een gebe
 
 1. U zou onmiddellijk een consoleverklaring moeten zien die met de paginagegevens in brand wordt gestoken:
 
-   ![Gegevens van paginaweergave](assets/page-show-console-data.png)
+   ![ Pagina toont gegevens ](assets/page-show-console-data.png)
 
-   De `cmp:show` gebeurtenis voor de pagina wordt geactiveerd bij elke pagina die boven aan de pagina wordt geladen. U zou kunnen vragen, waarom werd de gebeurtenismanager teweeggebracht, wanneer de pagina duidelijk reeds is geladen.
+   De gebeurtenis `cmp:show` voor de pagina wordt geactiveerd bij elke pagina die boven aan de pagina wordt geladen. U zou kunnen vragen, waarom werd de gebeurtenismanager teweeggebracht, wanneer de pagina duidelijk reeds is geladen.
 
-   Één van de unieke eigenschappen van de Laag van de Gegevens van de Cliënt van de Adobe is u gebeurtenisluisteraars kunt registreren **voor** of **na** Als de Laag van Gegevens is geïnitialiseerd, helpt het om de rasvoorwaarden te vermijden.
+   Één van de unieke eigenschappen van de Laag van de Gegevens van de Cliënt van de Adobe is u gebeurtenisluisteraars **vóór** of **kunt registreren nadat** de Laag van Gegevens is geïnitialiseerd, helpt het om de rasvoorwaarden te vermijden.
 
-   De gegevenslaag handhaaft een rijserie van alle gebeurtenissen die in opeenvolging zijn voorgekomen. De Laag van Gegevens door gebrek zal gebeurteniscallbacks voor gebeurtenissen teweegbrengen die in **verleden** en gebeurtenissen in het **toekomst**. Het is mogelijk gebeurtenissen uit het verleden of de toekomst te filteren. [Meer informatie vindt u in de documentatie](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   De gegevenslaag handhaaft een rijserie van alle gebeurtenissen die in opeenvolging zijn voorgekomen. De Laag van Gegevens door gebrek zal gebeurteniscallbacks voor gebeurtenissen teweegbrengen die in **voorbij** en gebeurtenissen in de **toekomst** voorkwamen. Het is mogelijk gebeurtenissen uit het verleden of de toekomst te filteren. [ Meer informatie kan in de documentatie ](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener) worden gevonden.
 
 
 ## Volgende stappen
 
-Er zijn twee opties om het leren te houden, eerst om uit te checken [pagina-gegevens verzamelen en naar Adobe Analytics verzenden](../analytics/collect-data-analytics.md) zelfstudie die het gebruik van de laag Gegevens van de Cliënt van de Adobe aantoont. De tweede optie is: leren hoe te [De gegevenslaag van de Cliënt van de Adobe met AEM Componenten aanpassen](./data-layer-customize.md)
+Er zijn twee opties om het leren te houden, eerste, controle uit [ paginagegegevens verzamelen en het verzenden naar Adobe Analytics ](../analytics/collect-data-analytics.md) leerprogramma dat het gebruik van de laag van de Gegevens van de Cliënt van de Adobe aantoont. De tweede optie is, om te leren hoe te [ de Laag van de Gegevens van de Cliënt van de Adobe met AEM Componenten ](./data-layer-customize.md) aanpassen
 
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie over de gegevenslaag van de client Adoben](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Het gebruiken van de Laag van Gegevens van de Cliënt van de Adobe en de Documentatie van de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [ de Documentatie van de Laag van Gegevens van de Cliënt van de Adobe ](https://github.com/adobe/adobe-client-data-layer/wiki)
+* [ Gebruikend de Laag van Gegevens van de Cliënt van de Adobe en de Documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)

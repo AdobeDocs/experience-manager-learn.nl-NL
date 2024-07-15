@@ -20,7 +20,7 @@ ht-degree: 0%
 
 We maken adaptief formulier op basis van de sjabloon die in de vorige les is gemaakt en configureren de werkbalk met de juiste knoppen.
 
-**Uw eerste adaptieve formulier maken**
+**creeer uw eerste Aangepaste Vorm**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
 

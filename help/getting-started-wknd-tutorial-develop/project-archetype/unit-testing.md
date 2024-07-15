@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Eenheid testen {#unit-testing}
 
-Deze zelfstudie behandelt de implementatie van een eenheidstest die het gedrag van het Sling Model van de component Byline bevestigt, dat in het [Aangepaste component](./custom-component.md) zelfstudie.
+Dit leerprogramma behandelt de implementatie van een eenheidstest die het gedrag van het het Schuiven Model van de component van de Byline bevestigt, dat in het ](./custom-component.md) leerprogramma van de Component van de 0} Douane {wordt gecreeerd.[
 
 ## Vereisten {#prerequisites}
 
-Controleer de vereiste gereedschappen en instructies voor het instellen van een [plaatselijke ontwikkelomgeving](overview.md#local-dev-environment).
+Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
 
-_Als zowel Java™ 8 als Java™ 11 op het systeem zijn geïnstalleerd, kan de testruntime van de Code van VS de lagere runtime van Java™ kiezen wanneer het uitvoeren van de tests, resulterend in testmislukkingen. Als dit gebeurt, verwijdert u Java™ 8._
+_als zowel Java™ 8 als Java™ 11 op het systeem geïnstalleerd zijn, kan de de testlooper van de Code van VS lagere runtime van Java™ selecteren wanneer het uitvoeren van de tests, resulterend in testmislukkingen. Als dit voorkomt, desinstalleer Java™ 8._
 
 ### Starter-project
 
@@ -38,7 +38,7 @@ _Als zowel Java™ 8 als Java™ 11 op het systeem zijn geïnstalleerd, kan de t
 
 Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
 
-1. Kijk uit de `tutorial/unit-testing-start` vertakking van [GitHub](https://github.com/adobe/aem-guides-wknd)
+1. Controle uit de `tutorial/unit-testing-start` tak van [ GitHub ](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
    $ cd aem-guides-wknd
@@ -53,13 +53,13 @@ Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
 
    >[!NOTE]
    >
-   > Indien u AEM 6.5 of 6.4 gebruikt, voegt u de `classic` aan om het even welke Gemaakt bevelen.
+   > Als u AEM 6.5 of 6.4 gebruikt, voegt u het `classic` -profiel toe aan Maven-opdrachten.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/unit-testing-start) of controleer de code plaatselijk door aan de tak over te schakelen `tutorial/unit-testing-start`.
+U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/unit-testing-start) altijd bekijken of de code plaatselijk controleren door aan de tak `tutorial/unit-testing-start` te schakelen.
 
 ## Doelstelling
 
@@ -69,19 +69,19 @@ U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/a
 
 ## Achtergrond {#unit-testing-background}
 
-In deze zelfstudie bekijken we hoe we schrijven [Eenheidstests](https://en.wikipedia.org/wiki/Unit_testing) voor onze component Byline [Verkoopmodel](https://sling.apache.org/documentation/bundles/models.html) (gemaakt in het dialoogvenster [Een aangepaste AEM maken](custom-component.md)). Eenheidstests zijn in Java™ geschreven ontwikkeltijdstests die het verwachte gedrag van Java™-code controleren. Elke eenheidstest is doorgaans klein en valideert de uitvoer van een methode (of werkeenheden) aan de hand van de verwachte resultaten.
+In dit leerprogramma, zullen wij onderzoeken hoe te om [ Tests van de Eenheid ](https://en.wikipedia.org/wiki/Unit_testing) voor 2} Sling Model van onze component Byline ](https://sling.apache.org/documentation/bundles/models.html) te schrijven (gecreeerd in [ Creërend een douane AEM Component ](custom-component.md)). [ Eenheidstests zijn in Java™ geschreven ontwikkeltijdstests die het verwachte gedrag van Java™-code controleren. Elke eenheidstest is doorgaans klein en valideert de uitvoer van een methode (of werkeenheden) aan de hand van de verwachte resultaten.
 
 We gebruiken AEM best practices en gebruiken:
 
-* [JUnit 5](https://junit.org/junit5/)
-* [Mockito Testing Framework](https://site.mockito.org/)
-* [wcm.io-testframework](https://wcm.io/testing/) (die voortbouwt op [Apache Sling Mocks](https://sling.apache.org/documentation/development/sling-mock.html))
+* [ JUnit 5 ](https://junit.org/junit5/)
+* [ Mockito het Testen Kader ](https://site.mockito.org/)
+* [ wcm.io het Kader van de Test ](https://wcm.io/testing/) (dat op [ Apache bouwt Sling Mocks ](https://sling.apache.org/documentation/development/sling-mock.html))
 
-## Testen en Adoben van eenheden - Cloud Manager {#unit-testing-and-adobe-cloud-manager}
+## Unit Testing and Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) de uitvoering van de eenheidstest integreren en [rapportage van codedekking](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) in de CI/CD-pijpleiding om de beste praktijk van eenheidstests AEM code te bevorderen en te bevorderen.
+[ Adobe Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) integreert de uitvoering van de eenheidstest en [ codedekking rapporterend ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) in zijn pijpleiding CI/CD helpen de beste praktijken van eenheid het testen AEM code aanmoedigen en bevorderen.
 
-Hoewel code voor eenheidstests een goede praktijk is voor elke codebasis, is het bij het gebruik van Cloud Manager belangrijk om te profiteren van de mogelijkheden voor het testen en rapporteren van de codekwaliteit door eenheidstests op te geven voor Cloud Manager om te worden uitgevoerd.
+Hoewel het testen van eenheden een goede praktijk voor om het even welke codebasis is, is het belangrijk om bij het gebruiken van Cloud Manager uit zijn het testen en rapporteringsfaciliteiten van de codekwaliteit voordeel te halen door eenheidstests voor Cloud Manager te verstrekken om te lopen.
 
 ## Werk de test Geweven gebiedsdelen bij {#inspect-the-test-maven-dependencies}
 
@@ -92,10 +92,10 @@ De eerste stap is Geweven gebiedsdelen te inspecteren om het schrijven en het ru
 1. Apache Sling Mocks
 1. AEM Mocks Test Framework (per io.wcm)
 
-De **JUnit5**, **Mockito, en **AEM** de testgebiedsdelen worden automatisch toegevoegd aan het project tijdens opstelling gebruikend [AEM Maven archetype](project-setup.md).
+**JUnit5**, **Mockito, en **AEM de testgebiedsdelen** automatisch toegevoegd aan het project tijdens opstelling gebruikend [ AEM Maven archetype ](project-setup.md).
 
-1. Om deze gebiedsdelen te bekijken, open het ParentReactor POM bij **aem-guides-wknd/pom.xml**, navigeert u naar de `<dependencies>..</dependencies>` en bekijk de afhankelijkheden voor JUnit, Mockito, Apache Sling Mocks en AEM Mock Tests via io.wcm onder `<!-- Testing -->`.
-1. Zorg ervoor dat `io.wcm.testing.aem-mock.junit5` is ingesteld op **4.1.0.**:
+1. Om deze gebiedsdelen te bekijken, open POM van de Bovenliggende Reactor in **aem-guides-wknd/pom.xml**, navigeer aan `<dependencies>..</dependencies>` en bekijk de gebiedsdelen voor JUnit, Mockito, Apache Sling Mocks, en AEM de Tests van het Mock door io.wcm onder `<!-- Testing -->`.
+1. Zorg ervoor dat `io.wcm.testing.aem-mock.junit5` aan **4.1.0** wordt geplaatst:
 
    ```xml
    <dependency>
@@ -108,23 +108,23 @@ De **JUnit5**, **Mockito, en **AEM** de testgebiedsdelen worden automatisch toeg
 
    >[!CAUTION]
    >
-   > Archetype **35** genereert het project met `io.wcm.testing.aem-mock.junit5` versie **4.1.8.**. Verlaag naar **4.1.0.** om de rest van dit hoofdstuk te volgen.
+   > Archetype **35** produceert het project met `io.wcm.testing.aem-mock.junit5` versie **4.1.8**. Gelieve te degraderen aan **4.1.0** om de rest van dit hoofdstuk te volgen.
 
-1. Openen **aem-guides-wknd/core/pom.xml** en te bekijken dat de overeenkomstige het testen gebiedsdelen beschikbaar zijn.
+1. Open **aem-guides-wknd/core/pom.xml** en mening dat de overeenkomstige het testen gebiedsdelen beschikbaar zijn.
 
-   Een parallelle bronmap in het dialoogvenster **kern** het project zal de eenheidstests en alle ondersteunende testbestanden bevatten . Dit **test** de omslag verstrekt scheiding van testklassen van de broncode maar staat de tests toe om te handelen alsof zij in de zelfde pakketten zoals de broncode leven.
+   Een parallelle bronomslag in het **kern** project zal de eenheidstests en om het even welke ondersteunende testdossiers bevatten. Deze **test** omslag verstrekt scheiding van testklassen van de broncode maar staat de tests toe om te handelen alsof zij in de zelfde pakketten zoals de broncode leven.
 
 ## De JUnit-test maken {#creating-the-junit-test}
 
-De tests van de eenheid brengen typisch 1-aan-1 met klassen Java™ in kaart. In dit hoofdstuk schrijven we een JUnit-test voor de **BylineImpl.java**, het verkoopmodel dat de Byline-component ondersteunt.
+De tests van de eenheid brengen typisch 1-aan-1 met klassen Java™ in kaart. In dit hoofdstuk, zullen wij een test JUnit voor **BylineImpl.java** schrijven, die het het Verlenen Model is dat de component van de Naamregel steunt.
 
-![Bron map voor eenheidstest](assets/unit-testing/core-src-test-folder.png)
+![ de testsrc van de Eenheid omslag ](assets/unit-testing/core-src-test-folder.png)
 
-*Locatie waar eenheidstests worden opgeslagen.*
+*Plaats waar de tests van de Eenheid worden opgeslagen.*
 
-1. Een eenheidstest maken voor de `BylineImpl.java` door een nieuwe Java™-klasse onder te maken `src/test/java` in een Java™-pakketmapstructuur die de locatie weerspiegelt van de Java™-klasse die moet worden getest.
+1. Maak een eenheidstest voor de `BylineImpl.java` door een nieuwe Java™-klasse onder `src/test/java` te maken in een Java™-pakketmapstructuur die de locatie van de te testen Java™-klasse weerspiegelt.
 
-   ![Nieuw BylineImplTest.java-bestand maken](assets/unit-testing/new-bylineimpltest.png)
+   ![ creeer een nieuw BylineImplTest.java- dossier ](assets/unit-testing/new-bylineimpltest.png)
 
    Aangezien we testen
 
@@ -134,10 +134,10 @@ De tests van de eenheid brengen typisch 1-aan-1 met klassen Java™ in kaart. In
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-   De `Test` achtervoegsel op het testbestand van de eenheid, `BylineImplTest.java` is een conventie die ons in staat stelt
+   Het achtervoegsel `Test` in het testbestand voor eenheden, `BylineImplTest.java` , is een conventie, waarmee we
 
-   1. Identificeer het gemakkelijk als testdossier _for_ `BylineImpl.java`
-   1. U kunt echter ook het testbestand onderscheiden _van_ de klasse die wordt getest; `BylineImpl.java`
+   1. Identificeer het gemakkelijk als testdossier _voor_ `BylineImpl.java`
+   1. Maar ook, onderscheidt het testdossier _van_ de klasse die wordt getest, `BylineImpl.java`
 
 ## BylineImplTest.java evalueren {#reviewing-bylineimpltest-java}
 
@@ -177,9 +177,9 @@ Het JUnit-testbestand is nu een lege Java™-klasse.
    }
    ```
 
-1. De eerste methode `public void setUp() { .. }` is geannoteerd met JUnit `@BeforeEach`, die de JUnit-testruntime de instructie geeft deze methode uit te voeren voordat elke testmethode in deze klasse wordt uitgevoerd. Dit verstrekt een handige plaats om gemeenschappelijke het testen staat te initialiseren die door alle tests wordt vereist.
+1. De eerste methode `public void setUp() { .. }` wordt voorzien van een annotatie met JUnit `@BeforeEach` , die de JUnit-testruntime de instructie geeft deze methode uit te voeren voordat elke testmethode in deze klasse wordt uitgevoerd. Dit verstrekt een handige plaats om gemeenschappelijke het testen staat te initialiseren die door alle tests wordt vereist.
 
-1. De volgende methoden zijn de testmethoden waarvan de namen vooraf zijn vastgesteld `test` bij overeenkomst en met de `@Test` aantekening. U ziet dat al onze tests standaard mislukken, omdat we ze nog niet hebben uitgevoerd.
+1. De volgende methoden zijn de testmethoden, waarvan de namen worden voorafgegaan door `test` volgens conventie en worden gemarkeerd met de `@Test` -annotatie. U ziet dat al onze tests standaard mislukken, omdat we ze nog niet hebben uitgevoerd.
 
    Om te beginnen, beginnen wij met één enkele testmethode voor elke openbare methode op de klasse wij testen, zo:
 
@@ -191,27 +191,27 @@ Het JUnit-testbestand is nu een lege Java™-klasse.
 
    Deze methoden kunnen zo nodig worden uitgebreid, zoals verderop in dit hoofdstuk wordt weergegeven.
 
-   Wanneer deze JUnit-testklasse (ook wel JUnit Test Case genoemd) wordt uitgevoerd, wordt elke methode gemarkeerd met de `@Test` wordt uitgevoerd als een test die kan slagen of mislukken.
+   Wanneer deze JUnit-testklasse (ook wel JUnit Test Case genoemd) wordt uitgevoerd, wordt elke met `@Test` gemarkeerde methode uitgevoerd als een test die kan slagen of afbreken.
 
-![gegenereerde BylineImplTest](assets/unit-testing/bylineimpltest-stub-methods.png)
+![ geproduceerde BylineImplTest ](assets/unit-testing/bylineimpltest-stub-methods.png)
 
 *`core/src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`*
 
-1. Voer de JUnit-testcase uit door met de rechtermuisknop op de knop `BylineImplTest.java` bestand en tikken **Uitvoeren**.
+1. Stel het Geval van de Test JUnit in werking door op het `BylineImplTest.java` dossier met de rechtermuisknop te klikken, en het tikken **Looppas**.
 Zoals verwacht, mislukken alle tests, omdat ze nog niet zijn uitgevoerd.
 
-   ![Uitvoeren als junitest](assets/unit-testing/run-junit-tests.png)
+   ![ Looppas als junit test ](assets/unit-testing/run-junit-tests.png)
 
-   *Klik met de rechtermuisknop op BylineImplTests.java > Uitvoeren*
+   *klik op BylineImplTests.java met de rechtermuisknop aan > Looppas*
 
 ## BylineImpl.java evalueren {#reviewing-bylineimpl-java}
 
 Bij het schrijven van eenheidstests zijn er twee primaire benaderingen:
 
-* [TDD of testontwikkeling](https://en.wikipedia.org/wiki/Test-driven_development), waarbij de eenheidstests stapsgewijs worden geschreven, onmiddellijk voordat de implementatie wordt ontwikkeld; een test schrijven, de implementatie schrijven om de test te laten slagen.
+* [ TDD of de Gedreven Ontwikkeling van de Test ](https://en.wikipedia.org/wiki/Test-driven_development), die impliceert het schrijven van de eenheidstests incrementeel, onmiddellijk alvorens de implementatie wordt ontwikkeld; schrijf een test, schrijf de implementatie om de testpas te maken.
 * Implementatie-eerste Ontwikkeling, die het ontwikkelen van werkende code eerst en dan het schrijven tests impliceert die genoemde code bevestigen.
 
-In deze zelfstudie wordt de laatste aanpak gebruikt (omdat we al een werkende **BylineImpl.java** in een vorig hoofdstuk). Daarom moeten we het gedrag van de openbare methoden van het systeem, maar ook een aantal van de toepassingsdetails ervan, herzien en begrijpen. Dit kan tegendeel klinken, aangezien een goede test alleen de inputs en outputs moet betreffen, maar wanneer men in AEM werkt, zijn er verschillende implementatieoverwegingen die moeten worden begrepen om werktests te kunnen uitvoeren.
+In dit leerprogramma, wordt de laatstgenoemde benadering gebruikt (aangezien wij reeds een werkende **BylineImpl.java** in een vorig hoofdstuk hebben gecreeerd). Daarom moeten we het gedrag van de openbare methoden van het systeem, maar ook een aantal van de toepassingsdetails ervan, herzien en begrijpen. Dit kan tegendeel klinken, aangezien een goede test alleen de inputs en outputs moet betreffen, maar wanneer men in AEM werkt, zijn er verschillende implementatieoverwegingen die moeten worden begrepen om werktests te kunnen uitvoeren.
 
 TDD in de context van AEM vereist een niveau van deskundigheid en kan het best worden aangenomen door AEM ontwikkelaars die deskundig zijn in AEM ontwikkeling en eenheidstests van AEM code.
 
@@ -219,9 +219,9 @@ TDD in de context van AEM vereist een niveau van deskundigheid en kan het best w
 
 De meeste code die voor AEM wordt geschreven, is afhankelijk van API&#39;s van het type JCR, Sling of AEM. Deze API&#39;s vereisen dat de context van een actieve AEM correct wordt uitgevoerd.
 
-Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM instantie worden uitgevoerd, is er geen dergelijke context. Om dit te vergemakkelijken, [AEM Mocks van wcm.io](https://wcm.io/testing/aem-mock/usage.html) maakt een mock-context waarin deze API&#39;s _meestal_ doen alsof ze in AEM lopen.
+Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM instantie worden uitgevoerd, is er geen dergelijke context. Om dit te vergemakkelijken, [ AEM Mocks van wcm.io ](https://wcm.io/testing/aem-mock/usage.html) creeert mock context die deze APIs __ toestaat dienst alsof zij in AEM lopen.
 
-1. Een AEM context maken met **wcm.io&#39;s** `AemContext` in **BylineImplTest.java** door deze toe te voegen als een JUnit-extensie die is ingericht met `@ExtendWith` aan de **BylineImplTest.java** bestand. De extensie zorgt voor alle vereiste initialisatie- en opschoningstaken. Een klassevariabele maken voor `AemContext` die voor alle testmethoden kunnen worden gebruikt.
+1. Creeer een AEM context gebruikend **wcm.io `AemContext` in** BylineImplTest.java **door het toe te voegen als uitbreiding JUnit die met `@ExtendWith` aan het {** dossier 6} wordt versierd BylineImplTest.java. **** De extensie zorgt voor alle vereiste initialisatie- en opschoningstaken. Maak een klassevariabele voor `AemContext` die voor alle testmethoden kan worden gebruikt.
 
    ```java
    import org.junit.jupiter.api.extension.ExtendWith;
@@ -235,18 +235,18 @@ Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM 
        private final AemContext ctx = new AemContext();
    ```
 
-   Deze variabele, `ctx`, maakt een AEM context bloot die sommige AEM en het Schuiven abstracties verstrekt:
+   Met deze variabele, `ctx` , wordt een AEM context belicht die enkele AEM- en Sling-abstracties biedt:
 
    * Het BylineImpl-opmaakmodel is in deze context geregistreerd
    * In deze context worden structuur voor JCR-inhoud van Mock gemaakt
    * Aangepaste OSGi-services kunnen in deze context worden geregistreerd
    * Verschillende veelvoorkomende vereiste modelobjecten en hulpelementen, zoals SlingHttpServletRequest-objecten, diverse services voor modelschaling en AEM OSGi, zoals ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag, enzovoort.
-      * *Niet alle methoden voor deze objecten zijn geïmplementeerd.*
-   * en [veel meer](https://wcm.io/testing/aem-mock/usage.html)!
+      * *niet alle methodes voor deze voorwerpen worden uitgevoerd!*
+   * En [ veel meer ](https://wcm.io/testing/aem-mock/usage.html)!
 
-   De **`ctx`** -object zal fungeren als toegangspunt voor het grootste deel van onze modelcontext.
+   Het **`ctx`** -object fungeert als ingangspunt voor het grootste deel van onze modelcontext.
 
-1. In de `setUp(..)` methode, die vóór elke methode wordt uitgevoerd `@Test` een algemene teststatus voor modellen definiëren:
+1. Definieer in de methode `setUp(..)` , die wordt uitgevoerd vóór elke methode `@Test` , een algemene status voor het testen van modellen:
 
    ```java
    @BeforeEach
@@ -256,13 +256,13 @@ Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM 
    }
    ```
 
-   * **`addModelsForClasses`** registreert het Te testen Model van de Schelling, in de AEMContext, zodat kan het in `@Test` methoden.
-   * **`load().json`** laadt middelstructuren in de modelcontext, toestaand de code om met deze middelen in wisselwerking te staan alsof zij door een echte bewaarplaats werden verstrekt. De brondefinities in het bestand **`BylineImplTest.json`** worden geladen in de standaard-JCR-context onder **/content**.
+   * **`addModelsForClasses`** registreert het te testen Sling Model, in de mock AEM Context, zodat kan het in de `@Test` methodes worden geconcretiseerd.
+   * **`load().json`** laadt bronstructuren in de modelcontext, die de code toestaat om met deze middelen in wisselwerking te staan alsof zij door een echte bewaarplaats werden verstrekt. De middeldefinities in het dossier **`BylineImplTest.json`** worden geladen in de mockJCR context onder **/content**.
    * **`BylineImplTest.json`** bestaat nog niet, dus laten we het maken en de JCR-bronstructuren definiëren die nodig zijn voor de test.
 
-1. De JSON-bestanden die de modelbronstructuren vertegenwoordigen, worden opgeslagen onder **core/src/test/resources** hetzelfde pakketpad volgen als het Java™-testbestand van de JUnit.
+1. De JSON- dossiers die de modelmiddelstructuren vertegenwoordigen worden opgeslagen onder **kern/src/test/resources** na het zelfde pakket dat als JUnit Java™ testdossier plakt.
 
-   Een JSON-bestand maken op `core/test/resources/com/adobe/aem/guides/wknd/core/models/impl` benoemd **BylineImplTest.json** met de volgende inhoud:
+   Creeer een JSON- dossier bij `core/test/resources/com/adobe/aem/guides/wknd/core/models/impl` genoemd **BylineImplTest.json** met de volgende inhoud:
 
    ```json
    {
@@ -273,19 +273,19 @@ Aangezien de eenheidstests bij bouwstijl, buiten de context van een lopende AEM 
    }
    ```
 
-   ![BylineImplTest.json](assets/unit-testing/bylineimpltest-json.png)
+   ![ BylineImplTest.json ](assets/unit-testing/bylineimpltest-json.png)
 
-   Deze JSON definieert een modelbron (JCR-knooppunt) voor de eenheidstest van de Byline-component. Op dit punt, heeft JSON de minimumreeks eigenschappen die worden vereist om een de inhoudsmiddel van de component van de Byline te vertegenwoordigen, `jcr:primaryType` en `sling:resourceType`.
+   Deze JSON definieert een modelbron (JCR-knooppunt) voor de eenheidstest van de Byline-component. Op dit punt heeft de JSON de minimale set eigenschappen die vereist is om een inhoudsbron van een component Byline, de `jcr:primaryType` en `sling:resourceType`, te vertegenwoordigen.
 
    Een algemene regel bij het werken met eenheidstests is het maken van de minimale set met mock-inhoud, -context en -code die nodig is om aan elke test te voldoen. Vermijd de verleiding om een complete mock-context op te bouwen voordat de tests worden geschreven, aangezien dit vaak tot ongewenste artefacten leidt.
 
-   Met het bestaan van **BylineImplTest.json**, wanneer `ctx.json("/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.json", "/content")` wordt uitgevoerd, worden de modelmiddeldefinities geladen in de context bij de weg **/content.**
+   Nu met het bestaan van **BylineImplTest.json**, wanneer `ctx.json("/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.json", "/content")` wordt uitgevoerd, worden de modelmiddeldefinities geladen in de context bij de weg **/content.**
 
 ## getName() testen {#testing-get-name}
 
-Nu we een basismodelcontext hebben, schrijven we onze eerste test voor **getName() van BylineImpl**. Deze test moet de methode waarborgen **getName()** retourneert de correct geschreven naam die is opgeslagen bij de bron &quot;**name&quot;** eigenschap.
+Nu wij een basismodelcontextopstelling hebben, schrijven wij onze eerste test voor **BylineImpl getName ()**. Deze test moet de methode **getName () verzekeren** keert de correct-geschreven naam terug die bij het 2} wordt opgeslagen naam van het middel &quot;**bezit.**
 
-1. Werk de **testGetName**() in **BylineImplTest.java** als volgt:
+1. Werk **testGetName** () methode in **BylineImplTest.java** als volgt bij:
 
    ```java
    import com.adobe.aem.guides.wknd.core.models.Byline;
@@ -303,17 +303,17 @@ Nu we een basismodelcontext hebben, schrijven we onze eerste test voor **getName
    }
    ```
 
-   * **`String expected`** stelt de verwachte waarde in. We stellen dit in op &quot;**Jane Done**&quot;.
-   * **`ctx.currentResource`** plaatst de context van het mock middel om de code tegen te evalueren, zodat wordt dit geplaatst aan **/content/byline** aangezien dat is waar het mock byline inhoudsmiddel wordt geladen.
+   * **`String expected`** stelt de verwachte waarde in. Wij zullen dit aan &quot;**Gedaan Jane** plaatsen.
+   * **`ctx.currentResource`** plaatst de context van het modelmiddel om de code tegen te evalueren, zodat wordt dit geplaatst aan **/content/byline** aangezien dat is waar de bron van de modelinhoud wordt geladen.
    * **`Byline byline`** instantieert het Byline Sling Model door het van het modelvoorwerp van het Verzoek aan te passen.
-   * **`String actual`** roept de methode aan die wij testen, `getName()`, op het object Byline Sling Model.
-   * **`assertEquals`** Geeft aan dat de verwachte waarde overeenkomt met de waarde die wordt geretourneerd door het byline Sling Model-object. Als deze waarden niet gelijk zijn, zal de test mislukken.
+   * **`String actual`** roept de methode aan die we testen, `getName()` , op het Byline Sling Model-object.
+   * **`assertEquals`** geeft aan dat de verwachte waarde overeenkomt met de waarde die wordt geretourneerd door het byline Sling Model-object. Als deze waarden niet gelijk zijn, zal de test mislukken.
 
-1. Voer de test uit... en deze mislukt met een `NullPointerException`.
+1. Voer de test uit... en deze mislukt met een `NullPointerException` .
 
-   Deze test mislukt NIET omdat we nooit een `name` eigenschap in de mock JSON, die de test zal laten mislukken, maar de uitvoering van de test is op dat punt nog niet bereikt! Deze test is mislukt als gevolg van een `NullPointerException` op het byline-object zelf.
+   Deze test mislukt NIET omdat we nooit een eigenschap `name` hebben gedefinieerd in de mock JSON, waardoor de test mislukt, maar de uitvoering van de test is op dat punt niet gekomen! Deze test mislukt als gevolg van een `NullPointerException` op het byline-object zelf.
 
-1. In de `BylineImpl.java`, als `@PostConstruct init()` genereert een uitzondering die voorkomt dat het Sling Model wordt geïnstantieerd en die ervoor zorgt dat het Sling Model-object null is.
+1. Als `@PostConstruct init()` in `BylineImpl.java` een uitzondering genereert, voorkomt dit dat het Sling Model wordt geïnstantieerd en wordt de waarde van dat Sling Model-object null.
 
    ```java
    @PostConstruct
@@ -322,11 +322,11 @@ Nu we een basismodelcontext hebben, schrijven we onze eerste test voor **getName
    }
    ```
 
-   Het blijkt dat de ModelFactory OSGi-service wordt geleverd via de `AemContext` (in de context van Apache Sling) worden niet alle methoden geïmplementeerd, inclusief `getModelFromWrappedRequest(...)` die in BylineImpl wordt geroepen `init()` methode. Dit leidt tot een [AbstractMethodError](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AbstractMethodError.html), die op termijn `init()` en de daaruit voortvloeiende aanpassing van de `ctx.request().adaptTo(Byline.class)` is een null-object.
+   Hoewel de OSGi-service ModelFactory via `AemContext` (als Apache Sling-context) wordt aangeboden, worden niet alle methoden geïmplementeerd, inclusief `getModelFromWrappedRequest(...)` die in de BylineImpl-methode `init()` wordt aangeroepen. Dit resulteert in een [ AbstractMethodError ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AbstractMethodError.html), die in termijn `init()` om veroorzaakt te ontbreken, en de resulterende aanpassing van `ctx.request().adaptTo(Byline.class)` is een ongeldig voorwerp.
 
-   Aangezien de geleverde modellen onze code niet kunnen aanpassen, moeten wij de modelcontext zelf uitvoeren voor dit, kunnen wij Mockito gebruiken om een modelobject ModelFactory te creëren, dat een modelvoorwerp van het Beeld terugkeert wanneer `getModelFromWrappedRequest(...)` wordt er op aangeroepen.
+   Aangezien de geleverde modellen onze code niet kunnen aanpassen, moeten wij de modelcontext zelf uitvoeren voor dit, kunnen wij Mockito gebruiken om een modelvoorwerp te creëren ModelFactory, dat een modelvoorwerp van het Beeld terugkeert wanneer `getModelFromWrappedRequest(...)` op het wordt aangehaald.
 
-   Omdat deze modelcontext aanwezig moet zijn om zelfs maar een instantie van het Byline Sling-model te kunnen maken, kunnen we deze toevoegen aan de `@Before setUp()` methode. We moeten ook de `MockitoExtension.class` aan de `@ExtendWith` aantekening boven de **BylineImplTest** klasse.
+   Omdat deze modelcontext aanwezig moet zijn om zelfs maar een instantie van het Byline Sling-model te kunnen maken, kunnen we deze toevoegen aan de methode `@Before setUp()` . Wij moeten ook `MockitoExtension.class` aan de `@ExtendWith` annotation boven de **BylineImplTest** klasse toevoegen.
 
    ```java
    package com.adobe.aem.guides.wknd.core.models.impl;
@@ -378,21 +378,21 @@ Nu we een basismodelcontext hebben, schrijven we onze eerste test voor **getName
    }
    ```
 
-   * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** markeert de klasse van het Geval van de Test om met te lopen [Mockito JUnit Jupiter Extension](https://www.javadoc.io/static/org.mockito/mockito-junit-jupiter/4.11.0/org/mockito/junit/jupiter/MockitoExtension.html) Hiermee kunt u de @Mock-annotaties gebruiken om mock-objecten op klasseniveau te definiëren.
-   * **`@Mock private Image`** maakt een mock-object van het type `com.adobe.cq.wcm.core.components.models.Image`. Dit wordt op klasseniveau zo gedefinieerd dat, indien nodig, `@Test` de methoden kunnen het gedrag naar behoefte wijzigen.
-   * **`@Mock private ModelFactory`** Maakt een mock-object van het type ModelFactory. Dit is een puur Mockito-mock en er zijn geen methoden op toegepast. Dit wordt op klasseniveau zo gedefinieerd dat, indien nodig, `@Test`de methoden kunnen het gedrag naar behoefte wijzigen.
-   * **`when(modelFactory.getModelFromWrappedRequest(..)`** registreert mock-gedrag voor wanneer `getModelFromWrappedRequest(..)` wordt aangeroepen voor het modelobject ModelFactory. Het in `thenReturn (..)` moet het modelafbeeldingsobject retourneren. Dit gedrag wordt alleen aangeroepen wanneer: de eerste parameter is gelijk aan `ctx`Het verzoekvoorwerp van &#39;s, tweede param is om het even welk voorwerp van het Middel, en derde param moet de klasse van het Beeld van de Componenten van de Kern zijn. Wij aanvaarden om het even welke Middel omdat wij door onze tests plaatsen `ctx.currentResource(...)` aan diverse in de **BylineImplTest.json**. Opmerking: we voegen de **lenient()** striktheid omdat wij later dit gedrag van ModelFactory zullen willen met voeten treden.
-   * **`ctx.registerService(..)`.** Registreert het modelobject ModelFactory in AemContext, met de hoogste de dienstrangschikking. Dit is vereist omdat ModelFactory in BylineImpl wordt gebruikt `init()` via de `@OSGiService ModelFactory model` veld. Voor injectie van AemContext **ons** mock-object, dat aanroepen van `getModelFromWrappedRequest(..)`, moeten wij het als hoogste rangordeDienst van dat type (ModelFactory) registreren.
+   * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** merkt de klasse van het Geval van de Test die met de [ Uitbreiding Jupiter van het Mockito JUnit ](https://www.javadoc.io/static/org.mockito/mockito-junit-jupiter/4.11.0/org/mockito/junit/jupiter/MockitoExtension.html) moet worden in werking gesteld die voor het gebruik van de @Mock annotaties toestaat om mock voorwerpen op het niveau van de Klasse te bepalen.
+   * **`@Mock private Image`** maakt een mock-object van het type `com.adobe.cq.wcm.core.components.models.Image` . Dit is gedefinieerd op klasseniveau, zodat `@Test` -methoden zo nodig hun gedrag kunnen wijzigen.
+   * **`@Mock private ModelFactory`** maakt een modelobject van het type ModelFactory. Dit is een puur Mockito-mock en er zijn geen methoden op toegepast. Dit wordt bepaald op het klassenniveau zodat, zoals nodig, `@Test` de methodes zijn gedrag kunnen veranderen zoals nodig.
+   * **`when(modelFactory.getModelFromWrappedRequest(..)`** registreert het modelgedrag voor wanneer `getModelFromWrappedRequest(..)` wordt aangeroepen voor het modelobject ModelFactory. Het resultaat dat in `thenReturn (..)` wordt gedefinieerd, is het retourneren van het modelafbeeldingsobject. Dit gedrag wordt alleen aangeroepen wanneer: de eerste parameter is gelijk aan het request-object van `ctx` , de tweede parameter een Resource-object is en de derde parameter de Core Components Image-klasse moet zijn. Wij aanvaarden om het even welk Middel omdat door onze tests wij `ctx.currentResource(...)` aan diverse modelmiddelen plaatsen die in **worden bepaald BylineImplTest.json**. Merk op dat wij **lenient ()** strengheid toevoegen omdat wij later dit gedrag van ModelFactory zullen willen met voeten treden.
+   * **`ctx.registerService(..)`.** registreert het modelobject ModelFactory in AemContext, met de hoogste de dienstrangschikking. Dit is vereist omdat de ModelFactory die in BylineImpl `init()` wordt gebruikt via het `@OSGiService ModelFactory model` gebied wordt ingespoten. Voor AemContext om **ons** modelvoorwerp te injecteren, dat vraag aan `getModelFromWrappedRequest(..)` behandelt, moeten wij het als hoogste rangschikkende Dienst van dat type (ModelFactory) registreren.
 
 1. Voer de test opnieuw uit, en nogmaals, het mislukt, maar dit keer is de boodschap duidelijk waarom de test is mislukt.
 
-   ![testnaam fout bewering](assets/unit-testing/testgetname-failure-assertion.png)
+   ![ bevestiging van de mislukking van de testnaam ](assets/unit-testing/testgetname-failure-assertion.png)
 
-   *testGetName() mislukt door bewering*
+   *testGetName () mislukking toe te schrijven aan bewering*
 
-   We ontvangen een **AssertionError** wat betekent dat de voorwaarde van de bevestiging in de test is mislukt, en het vertelt ons de **verwachte waarde is &quot;Jane Doe&quot;** maar de **werkelijke waarde is null**. Dit is logisch omdat &quot;**name&quot;** eigenschap is niet toegevoegd aan mock **/content/byline** resourcedefinitie in **BylineImplTest.json**, dus laten wij het toevoegen:
+   Wij ontvangen een **AssertionError** wat de bevestigingsvoorwaarde in de ontbroken test betekent, en het vertelt ons de **verwachte waarde is &quot;Jansen&quot;** maar de **daadwerkelijke waarde is ongeldig**. Dit maakt steek omdat het &quot;**naam&quot;** bezit niet aan mock **/content/byline** middeldefinitie in **BylineImplTest.json** is toegevoegd, zo laat het toevoegen:
 
-1. Bijwerken **BylineImplTest.json** om `"name": "Jane Doe".`
+1. Update **BylineImplTest.json** om te bepalen `"name": "Jane Doe".`
 
    ```json
    {
@@ -404,18 +404,18 @@ Nu we een basismodelcontext hebben, schrijven we onze eerste test voor **getName
    }
    ```
 
-1. de test opnieuw uitvoeren, en **`testGetName()`** nu gaat het!
+1. Voer de test opnieuw uit en **`testGetName()`** gaat nu door!
 
-   ![test name pass](assets/unit-testing/testgetname-pass.png)
+   ![ de omslag van de testnaam ](assets/unit-testing/testgetname-pass.png)
 
 
 ## getOccupations() testen {#testing-get-occupations}
 
-Ok, geweldig! De eerste test is geslaagd! Laten we verder gaan en testen `getOccupations()`. Sinds de initialisatie van de modelcontext in de `@Before setUp()`methode is beschikbaar voor iedereen `@Test` methoden in deze testcase, inclusief `getOccupations()`.
+Ok, geweldig! De eerste test is geslaagd! Laten we verder gaan en `getOccupations()` testen. Aangezien de initialisatie van de modelcontext in de `@Before setUp()` methode werd gedaan, is dit beschikbaar aan alle `@Test` methodes in dit Geval van de Test, met inbegrip van `getOccupations()`.
 
 Onthoud dat deze methode een alfabetisch gesorteerde lijst met beroepen (aflopend) moet retourneren die is opgeslagen in de eigenschap bezettingen.
 
-1. Bijwerken **`testGetOccupations()`** als volgt:
+1. **`testGetOccupations()`** als volgt bijwerken:
 
    ```java
    import java.util.List;
@@ -438,15 +438,15 @@ Onthoud dat deze methode een alfabetisch gesorteerde lijst met beroepen (aflopen
    }
    ```
 
-   * **`List<String> expected`** het verwachte resultaat te definiëren.
-   * **`ctx.currentResource`** plaatst het huidige middel om de context tegen de modelmiddeldefinitie bij /content/byline te evalueren. Dit zorgt ervoor dat **BylineImpl.java** wordt uitgevoerd in de context van onze mock resource.
+   * **`List<String> expected`** definieert het verwachte resultaat.
+   * **`ctx.currentResource`** plaatst het huidige middel om de context tegen de modelmiddeldefinitie bij /content/byline te evalueren. Dit verzekert **BylineImpl.java** in de context van ons modelmiddel uitvoert.
    * **`ctx.request().adaptTo(Byline.class)`** instantieert het Byline Sling Model door het van het modelvoorwerp van het Verzoek aan te passen.
-   * **`byline.getOccupations()`** roept de methode aan die wij testen, `getOccupations()`, op het object Byline Sling Model.
-   * **`assertEquals(expected, actual)`** De verwachte lijst van berichten is het zelfde als de daadwerkelijke lijst.
+   * **`byline.getOccupations()`** roept de methode aan die we testen, `getOccupations()` , op het Byline Sling Model-object.
+   * **`assertEquals(expected, actual)`** beweert dat de verwachte lijst gelijk is aan de werkelijke lijst.
 
-1. Herinner me, enkel **`getName()`** de **BylineImplTest.json** geen beroepen definieert, dus deze test zal mislukken als we ze uitvoeren, omdat `byline.getOccupations()` retourneert een lege lijst.
+1. Herinner me, enkel als **`getName()`** hierboven, **BylineImplTest.json** geen beroepen bepaalt, zodat zal deze test ontbreken als wij het in werking stellen, aangezien `byline.getOccupations()` een lege lijst zal terugkeren.
 
-   Bijwerken **BylineImplTest.json** om een lijst van beroepen op te nemen, en zij worden geplaatst in niet alfabetische orde om ervoor te zorgen dat onze tests bevestigen dat de beroepen alfabetisch door worden gesorteerd **`getOccupations()`**.
+   Werk **BylineImplTest.json** bij om een lijst van beroepen te omvatten, en zij worden geplaatst in niet alfabetische orde om ervoor te zorgen dat onze tests bevestigen dat de beroepen alfabetisch door **`getOccupations()`** worden gesorteerd.
 
    ```json
    {
@@ -461,28 +461,28 @@ Onthoud dat deze methode een alfabetisch gesorteerde lijst met beroepen (aflopen
 
 1. Voer de test uit, en nogmaals, we slagen! Het lijkt alsof de gesorteerde beroepen werken!
 
-   ![Bezettingspas ophalen](assets/unit-testing/testgetoccupations-pass.png)
+   ![ krijgt de Bezettingspas ](assets/unit-testing/testgetoccupations-pass.png)
 
-   *testGetOccupations() geslaagd*
+   *testGetOccupations () gaat over*
 
 ## Testing isEmpty() {#testing-is-empty}
 
-De laatste testmethode **`isEmpty()`**.
+De laatste methode om **`isEmpty()`** te testen.
 
-Testen `isEmpty()` Dit is interessant omdat het testen op verschillende omstandigheden vereist. Reviseren **BylineImpl.java** s `isEmpty()` methode moeten de volgende voorwaarden worden getest:
+Het testen `isEmpty()` is interessant omdat het testen op verschillende voorwaarden vereist. Het herzien van **BylineImpl.java** `isEmpty()` methode de volgende voorwaarden moeten worden getest:
 
 * Retourneer true wanneer de naam leeg is
 * Retourneer true wanneer de bezettingen null of leeg zijn
 * Retourneer true wanneer de afbeelding null is of geen src-URL heeft
 * Retourneer false wanneer de naam, de bezetting en de afbeelding (met een URL voor de bron) aanwezig zijn
 
-Hiervoor moeten we testmethoden maken, waarbij elke test een specifieke voorwaarde en nieuwe modelbronstructuren in `BylineImplTest.json` om deze tests uit te voeren.
+Hiervoor moeten we testmethoden maken, waarbij elke test een specifieke voorwaarde en nieuwe modelbronstructuren in `BylineImplTest.json` test om deze tests te starten.
 
-Met deze controle konden we het testen overslaan als `getName()`, `getOccupations()` en `getImage()` leeg zijn omdat het verwachte gedrag van die toestand via `isEmpty()`.
+Met deze controle konden we het testen overslaan als `getName()` , `getOccupations()` en `getImage()` leeg zijn, omdat het verwachte gedrag van die status via `isEmpty()` wordt getest.
 
 1. De eerste test zal de voorwaarde van een gloednieuwe component testen, die geen eigenschappen heeft geplaatst.
 
-   Een nieuwe brondefinitie toevoegen aan `BylineImplTest.json`, met de semantische naam &quot;**leeg**&quot;
+   Voeg een nieuwe middeldefinitie aan `BylineImplTest.json` toe, die het de semantische naam &quot;**leeg** geeft&quot;
 
    ```json
    {
@@ -499,11 +499,11 @@ Met deze controle konden we het testen overslaan als `getName()`, `getOccupation
    }
    ```
 
-   **`"empty": {...}`** een nieuwe brondefinitie definiëren met de naam &quot;empty&quot; die alleen een `jcr:primaryType` en `sling:resourceType`.
+   **`"empty": {...}`** definieert een nieuwe brondefinitie met de naam &#39;empty&#39; die alleen een `jcr:primaryType` en `sling:resourceType` heeft.
 
-   Onthoud dat we laden `BylineImplTest.json` in `ctx` vóór de uitvoering van elke testmethode in `@setUp`, zodat deze nieuwe hulpmiddeldefinitie onmiddellijk beschikbaar voor ons is in tests op **/content/empty.**
+   Vergeet niet dat we `BylineImplTest.json` in `ctx` laden voordat elke testmethode in `@setUp` wordt uitgevoerd. Deze nieuwe brondefinitie is dus direct beschikbaar voor ons in tests op **/content/empty.**
 
-1. Bijwerken `testIsEmpty()` als volgt de huidige bron instellen op de nieuwe &quot;**leeg**&quot; mock resource definition.
+1. Werk `testIsEmpty()` als volgt bij, plaatsend het huidige middel aan nieuwe &quot;**lege**&quot;modelmiddeldefinitie.
 
    ```java
    @Test
@@ -517,9 +517,9 @@ Met deze controle konden we het testen overslaan als `getName()`, `getOccupation
 
    Voer de test uit en controleer of deze slaagt.
 
-1. Maak vervolgens een set methoden om ervoor te zorgen dat een van de vereiste gegevenspunten (naam, beroep of afbeelding) leeg is. `isEmpty()` retourneert true.
+1. Maak vervolgens een set methoden om ervoor te zorgen dat `isEmpty()` true retourneert wanneer een van de vereiste gegevenspunten (naam, bezinking of afbeelding) leeg is.
 
-   Voor elke test wordt een discrete modelbrondefinitie gebruikt, update **BylineImplTest.json** met de aanvullende brondefinities voor **zonder naam** en **onbezet**.
+   Voor elke test, wordt een discrete modelmiddeldefinitie gebruikt, update **BylineImplTest.json** met de extra middeldefinities voor **zonder-naam** en **zonder-bezettingen**.
 
    ```json
    {
@@ -601,17 +601,17 @@ Met deze controle konden we het testen overslaan als `getName()`, `getOccupation
    }
    ```
 
-   **`testIsEmpty()`** test tegen de lege modelmiddeldefinitie en beweert dat `isEmpty()` is waar.
+   **`testIsEmpty()`** test de lege modelbrondefinitie en stelt dat `isEmpty()` waar is.
 
-   **`testIsEmpty_WithoutName()`** test tegen een mock middeldefinitie die beroepen maar geen naam heeft.
+   **`testIsEmpty_WithoutName()`** test op een modelbrondefinitie die beroepen maar geen naam heeft.
 
-   **`testIsEmpty_WithoutOccupations()`** test tegen een mock middeldefinitie die een naam maar geen beroepen heeft.
+   **`testIsEmpty_WithoutOccupations()`** test tegen een modelbrondefinitie die een naam maar geen beroepen heeft.
 
-   **`testIsEmpty_WithoutImage()`** test tegen een modelmiddeldefinitie met een naam en bezinkingen maar plaatst het modelBeeld om aan ongeldig terug te keren. Let op: we willen de `modelFactory.getModelFromWrappedRequest(..)`gedrag gedefinieerd in `setUp()` om ervoor te zorgen dat het voorwerp van het Beeld door deze vraag is teruggekeerd ongeldig is. De functie Mockito-stubs is strikt en wil geen dubbele code. Daarom hebben wij de zaak **`lenient`** instellingen om expliciet op te merken dat het gedrag in de `setUp()` methode.
+   **`testIsEmpty_WithoutImage()`** test tegen een mock middeldefinitie met een naam en bezinkingen maar plaatst het mockBeeld om aan ongeldig terug te keren. Merk op dat wij het `modelFactory.getModelFromWrappedRequest(..)` gedrag met voeten willen treden dat in `setUp()` wordt bepaald om het voorwerp van het Beeld te verzekeren door deze vraag is teruggekeerd ongeldig is. De functie Mockito-stubs is strikt en wil geen dubbele code. Daarom stellen we het model met **`lenient`** -instellingen zo in dat expliciet wordt aangegeven dat we het gedrag in de methode `setUp()` overschrijven.
 
-   **`testIsEmpty_WithoutImageSrc()`** test tegen een modelmiddeldefinitie met een naam en bezet, maar plaatst het modelBeeld om een leeg koord terug te keren wanneer `getSrc()` wordt aangeroepen.
+   **`testIsEmpty_WithoutImageSrc()`** test een modelbrondefinitie met een naam en een bezigheid, maar plaatst het modelBeeld om een leeg koord terug te keren wanneer `getSrc()` wordt aangehaald.
 
-1. Ten slotte moet u een test schrijven om ervoor te zorgen dat **isEmpty()** retourneert false wanneer de component correct is geconfigureerd. Voor deze voorwaarde kunnen we opnieuw gebruiken **/content/byline** die een volledig geconfigureerde Byline-component vertegenwoordigt.
+1. Tot slot schrijf een test om ervoor te zorgen dat **isEmpty ()** vals terugkeert wanneer de component behoorlijk wordt gevormd. Voor deze voorwaarde, kunnen wij **opnieuw gebruiken/content/byline** die een volledig gevormde component van de Byline vertegenwoordigt.
 
    ```java
    @Test
@@ -627,7 +627,7 @@ Met deze controle konden we het testen overslaan als `getName()`, `getOccupation
 
 1. Voer nu alle eenheidstests in het bestand BylineImplTest.java uit en bekijk de uitvoer van het Java™-testrapport.
 
-![Alle tests slagen](./assets/unit-testing/all-tests-pass.png)
+![ Alle tests overgaan ](./assets/unit-testing/all-tests-pass.png)
 
 ## Tests van de eenheid als onderdeel van de constructie {#running-unit-tests-as-part-of-the-build}
 
@@ -637,7 +637,7 @@ Eenheidstests worden uitgevoerd en moeten als onderdeel van de gefabriceerde bui
 $ mvn package
 ```
 
-![succes van mvn - pakket](assets/unit-testing/mvn-package-success.png)
+![ mvn pakketsucces ](assets/unit-testing/mvn-package-success.png)
 
 ```shell
 $ mvn package
@@ -645,8 +645,8 @@ $ mvn package
 
 Op dezelfde manier, als wij een testmethode veranderen om te ontbreken, ontbreekt de bouwstijl en rapporten die test ontbrak en waarom.
 
-![mvn-pakket mislukt](assets/unit-testing/mvn-package-fail.png)
+![ mvn pakket ontbreekt ](assets/unit-testing/mvn-package-fail.png)
 
 ## De code controleren {#review-the-code}
 
-De voltooide code weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van de it op `tutorial/unit-testing-solution`.
+Bekijk de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van het Git `tutorial/unit-testing-solution` op.

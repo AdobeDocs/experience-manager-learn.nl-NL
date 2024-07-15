@@ -19,21 +19,21 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## Voorbeelden van gebruiksgevallen
 
-+ Om het even welke dienstverlener die een verschillende reeks dienstenaanbod en overeenkomstige prijsstellingsopties aanbiedt die op de geo plaats van de gebruiker en het geheime voorgeheugen van pagina&#39;s met dynamische inhoud worden gebaseerd zou bij CDN en Verzender moeten worden beheerd.
++ Om het even welke dienstverlener die een verschillende reeks dienstenaanbod en overeenkomstige prijsstellingsopties aanbiedt die op de geo plaats van de gebruiker en het geheime voorgeheugen van pagina&#39;s met dynamische inhoud worden gebaseerd zou bij CDN en Dispatcher moeten worden beheerd.
 
-+ Een detailhandelaar heeft opslag over het land en elke opslag heeft verschillende aanbiedingen gebaseerd op waar zij worden gevestigd en het geheime voorgeheugen van pagina&#39;s met dynamische inhoud zou bij CDN en Dispatcher moeten worden beheerd.
++ Een detailhandelaar heeft winkels over het land en elke opslag heeft verschillende aanbiedingen gebaseerd op waar zij worden gevestigd en het geheime voorgeheugen van pagina&#39;s met dynamische inhoud zou bij CDN en Dispatcher moeten worden beheerd.
 
 ## Overzicht van oplossing
 
-+ Identificeer de variantsleutel en het aantal waarden het kan hebben. In ons voorbeeld variëren we per staat in de VS, dus het maximale aantal is 50. Dit is klein genoeg om geen problemen met de variantgrenzen bij CDN te veroorzaken. [Sectie met beperkingen voor variant controleren](#variant-limitations).
++ Identificeer de variantsleutel en het aantal waarden het kan hebben. In ons voorbeeld variëren we per staat in de VS, dus het maximale aantal is 50. Dit is klein genoeg om geen problemen met de variantgrenzen bij CDN te veroorzaken. [ sectie van de de variantbeperkingen van het Overzicht {](#variant-limitations).
 
-+ AEM code moet het cookie instellen __&quot;x-aem-variant&quot;__ naar de voorkeursstatus van de bezoeker (bijvoorbeeld `Set-Cookie: x-aem-variant=NY`) over de overeenkomstige HTTP-respons van de oorspronkelijke HTTP-aanvraag.
++ AEM code moet het koekje __&quot;x-aem-variant&quot;__ aan de aangewezen staat van de bezoeker (b.v. `Set-Cookie: x-aem-variant=NY` ) op de initiële HTTP-aanvraag die overeenkomt met de HTTP-respons.
 
-+ Volgende aanvragen van de bezoeker verzenden dat cookie (bijvoorbeeld `"Cookie: x-aem-variant=NY"`) en wordt het cookie op CDN-niveau omgezet in een vooraf gedefinieerde header (d.w.z. `x-aem-variant:NY`) die aan de verzender wordt doorgegeven.
++ Volgende aanvragen van de bezoeker verzenden dat cookie (bijvoorbeeld `"Cookie: x-aem-variant=NY"`) en de cookie wordt op CDN-niveau omgezet in een vooraf gedefinieerde header (d.w.z. `x-aem-variant:NY` ) die wordt doorgegeven aan de dispatcher.
 
-+ Een Apache-regel voor herschrijven wijzigt het aanvraagpad zodat de koptekstwaarde in de pagina-URL wordt opgenomen als een Apache Sling-kiezer (bijvoorbeeld `/page.variant=NY.html`). Hierdoor kan AEM publiceren verschillende inhoud leveren op basis van de kiezer en kan de verzender één pagina per variant in cache plaatsen.
++ Een Apache-regel voor herschrijven wijzigt het aanvraagpad zodat de koptekstwaarde in de pagina-URL wordt opgenomen als een Apache Sling-kiezer (bijvoorbeeld `/page.variant=NY.html`). Hierdoor kan AEM Publish verschillende inhoud leveren op basis van de kiezer en de verzender één pagina per variant in cache plaatsen.
 
-+ De reactie die wordt verzonden door AEM Dispatcher moet een HTTP-antwoordheader bevatten `Vary: x-aem-variant`. Dit instrueert CDN om verschillende geheim voorgeheugenexemplaren voor verschillende kopbalwaarden op te slaan.
++ De reactie die door AEM Dispatcher wordt verzonden, moet een HTTP-antwoordheader `Vary: x-aem-variant` bevatten. Dit instrueert CDN om verschillende geheim voorgeheugenexemplaren voor verschillende kopbalwaarden op te slaan.
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## HTTP-aanvraagstroom
 
-![Variant cache-aanvraagstroom](./assets/variant-cache-request-flow.png)
+![ de Stroom van het Verzoek van het Geheime voorgeheugen van de Variant ](./assets/variant-cache-request-flow.png)
 
 >[!NOTE]
 >
@@ -49,21 +49,21 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## Gebruik
 
-1. Om de functie te demonstreren, gebruiken we [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)De implementatie als voorbeeld.
+1. Om de eigenschap aan te tonen, zullen wij [ implementatie van WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) als voorbeeld gebruiken.
 
-1. Een [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) in AEM in te stellen `x-aem-variant` cookie op de HTTP-respons, met een variantwaarde.
+1. Voer a [ SlingServletFilter ](https://sling.apache.org/documentation/the-sling-engine/filters.html) in AEM uit om `x-aem-variant` koekje op de reactie van HTTP, met een variantwaarde te plaatsen.
 
-1. CDN wordt automatisch getransformeerd AEM `x-aem-variant` in een HTTP-header met dezelfde naam.
+1. Als u CDN AEM, wordt de `x-aem-variant` -cookie automatisch getransformeerd naar een HTTP-header met dezelfde naam.
 
-1. Voeg Apache Web server mod_rewrite regel aan uw toe `dispatcher` project, dat de verzoekweg wijzigt om de variantselecteur te omvatten.
+1. Voeg een Apache de servermod_rewrite regel van het Web aan uw `dispatcher` project toe, die het verzoekweg wijzigt om de variantselecteur te omvatten.
 
-1. Implementeer het filter en herschrijf de regels met gebruik van Cloud Manager.
+1. Implementeer het filter en herschrijf de regels met Cloud Manager.
 
 1. Test de algemene aanvraagstroom.
 
 ## Codevoorbeelden
 
-+ Monster nemen van SlingServletFilter `x-aem-variant` cookie met een waarde in AEM.
++ Voorbeeld van SlingServletFilter om `x-aem-variant` cookie in te stellen met een waarde in AEM.
 
   ```
   package com.adobe.aem.guides.wknd.core.servlets.filters;
@@ -120,7 +120,7 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
   }
   ```
 
-+ Voorbeeld van herschrijfregel in het dialoogvenster __dispatcher/src/conf.d/rewrite.rules__ bestand dat wordt beheerd als broncode in Git en wordt geïmplementeerd met Cloud Manager.
++ De steekproef herschrijft regel in het __dispatcher/src/conf.d/rewrite.rules__ dossier dat als broncode in Git wordt beheerd, en opgesteld gebruikend Cloud Manager.
 
   ```
   ...
@@ -134,7 +134,7 @@ Leer hoe u AEM instelt en gebruikt als cloudservice voor het ondersteunen van pa
 
 ## Variantbeperkingen
 
-+ AEM CDN kan maximaal 200 variaties beheren. Dat betekent dat `x-aem-variant` header kan maximaal 200 unieke waarden hebben . Voor meer informatie raadpleegt u de [CDN-configuratielimieten](https://docs.fastly.com/en/guides/resource-limits).
++ AEM CDN kan maximaal 200 variaties beheren. Dat betekent dat de header van `x-aem-variant` maximaal 200 unieke waarden kan hebben. Voor meer informatie, herzie de [ CDN configuratiegrenzen ](https://docs.fastly.com/en/guides/resource-limits).
 
 + Zorg ervoor dat de gekozen variantsleutel dit aantal nooit overschrijdt.  Een gebruikers-id is bijvoorbeeld geen goede sleutel omdat deze voor de meeste websites gemakkelijk 200 waarden overschrijdt, terwijl de staten/gebieden in een land beter geschikt zijn als er minder dan 200 staten in dat land zijn.
 

@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Welkom bij de meerdelige zelfstudie voor ontwikkelaars die een bestaande, op React gebaseerde (of Next.js) externe SPA willen uitbreiden met bewerkbare AEM met AEM SPA Editor.
 
-Deze zelfstudie bouwt verder op de [WKND GraphQL App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html), een React-app die AEM inhoud van inhoudsfragmenten via AEM GraphQL-API&#39;s gebruikt, maar die geen in-context-authoring van SPA inhoud biedt.
+Dit leerprogramma bouwt op [ WKND GraphQL App ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) voort, een React app die AEM inhoud van het Fragment van de Inhoud over AEM GraphQL APIs verbruikt, nochtans verstrekt geen in-context authoring van SPA inhoud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
@@ -32,40 +32,40 @@ Deze zelfstudie bouwt verder op de [WKND GraphQL App](https://experienceleague.a
 
 De zelfstudie die is bedoeld om te illustreren hoe een externe SPA, of een SPA die buiten de context van AEM wordt uitgevoerd, kan worden bijgewerkt om inhoud te verbruiken en te leveren die in AEM is geschreven.
 
-De meeste activiteiten in de zelfstudie richten zich op de ontwikkeling van JavaScript, maar kritieke aspecten worden behandeld die rond AEM draaien. Deze aspecten omvatten het definiëren van waar de inhoud wordt geschreven en opgeslagen in AEM en het toewijzen SPA routes naar AEM pagina&#39;s.
+De meeste activiteiten in de zelfstudie richten zich op de ontwikkeling van JavaScript, maar er worden kritische aspecten behandeld die om AEM gaan. Deze aspecten omvatten het definiëren van waar de inhoud wordt geschreven en opgeslagen in AEM en het toewijzen SPA routes naar AEM pagina&#39;s.
 
-De zelfstudie is ontworpen om te werken met **AEM as a Cloud Service** en bestaat uit twee projecten:
+Het leerprogramma wordt ontworpen om met **AEM as a Cloud Service** te werken en is samengesteld uit twee projecten:
 
-1. De __AEM project__ bevat configuratie en inhoud die moeten worden opgesteld aan AEM.
-1. __WKND-app__ project is de SPA die met AEM SPA Editor moet worden geïntegreerd
+1. Het __AEM Project__ bevat configuratie en inhoud die aan AEM moet worden opgesteld.
+1. __WKND App__ project is de SPA om met AEM SPA Redacteur worden geïntegreerd
 
 ## Laatste code
 
-+ Het beginpunt van de code van deze zelfstudie is te vinden op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) in de `remote-spa-tutorial` map.
++ Het uitgangspunt van de code van dit leerprogramma kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) in de `remote-spa-tutorial` omslag worden gevonden.
 
 ## Vereisten
 
 Voor deze zelfstudie is het volgende vereist:
 
 + [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
-+ [Node.js v18](https://nodejs.org/en/)
-+ [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-+ [Maven 3.6+](https://maven.apache.org/)
-+ [Git](https://git-scm.com/downloads)
-+ [aem-guides-wknd.all-2.1.0.zip of hoger](https://github.com/adobe/aem-guides-wknd/releases)
-+ [aem-guides-wknd-graphql broncode](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
++ [ Node.js v18 ](https://nodejs.org/en/)
++ [ Java™ 11 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
++ [ Gemaakt 3.6+ ](https://maven.apache.org/)
++ [ Git ](https://git-scm.com/downloads)
++ [ aem-guides-wknd.all-2.1.0.zip of groter ](https://github.com/adobe/aem-guides-wknd/releases)
++ [ aem-guides-wknd-grafisch broncode ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
 
 Deze zelfstudie gaat uit van:
 
-+ [Microsoft® Visual Studio-code](https://visualstudio.microsoft.com/) als IDE
++ [ Microsoft® Visual Studio Code ](https://visualstudio.microsoft.com/) als winde
 + Een werkmap van `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
-+ De AEM SDK uitvoeren als een auteurservice ingeschakeld `http://localhost:4502`
-+ De AEM SDK uitvoeren met de lokale `admin` account met wachtwoord `admin`
-+ De SPA uitvoeren `http://localhost:3000`
++ De AEM SDK uitvoeren als een auteurservice op `http://localhost:4502`
++ De AEM SDK uitvoeren met het lokale `admin` -account met het wachtwoord `admin`
++ De SPA uitvoeren op `http://localhost:3000`
 
 >[!NOTE]
 >
-> **Hebt u hulp nodig bij het instellen van uw lokale ontwikkelomgeving?** Kijk uit de [volgende handleiding voor het instellen van een lokale ontwikkelomgeving met de AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Heb hulp bij vestiging uw lokale ontwikkelomgeving nodig?** Controle uit de [ volgende gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ## 1. Configureer AEM voor SPA Editor
 
@@ -99,4 +99,4 @@ Ten slotte, gebruik de concepten die in vorige hoofdstukken aan dynamische route
 
 ## Aanvullende bronnen
 
-+ [Bewerkbare onderdelen SPA Reageren](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ [ AEM SPA Bewerkbare componenten Reageren ](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

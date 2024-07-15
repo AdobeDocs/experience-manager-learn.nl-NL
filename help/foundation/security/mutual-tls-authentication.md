@@ -25,7 +25,7 @@ Leer hoe te om vraag HTTPS van AEM aan Web APIs te maken die de Wederzijdse auth
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
-Met de mTLS- of bidirectionele TLS-verificatie wordt de beveiliging van het TLS-protocol verbeterd doordat **zowel de client als de server om elkaar te verifiëren**. Voor deze verificatie worden digitale certificaten gebruikt. Het wordt algemeen gebruikt in scenario&#39;s waar de sterke veiligheid en identiteitscontrole kritiek zijn.
+De mTLS of bidirectionele authentificatie van TLS verbetert de veiligheid van het protocol TLS door **zowel de cliënt als de server te vereisen om elkaar** voor authentiek te verklaren. Voor deze verificatie worden digitale certificaten gebruikt. Het wordt algemeen gebruikt in scenario&#39;s waar de sterke veiligheid en identiteitscontrole kritiek zijn.
 
 Wanneer u probeert een HTTPS-verbinding te maken met een web-API waarvoor mTLS-verificatie is vereist, mislukt de verbinding standaard met de fout:
 
@@ -35,7 +35,7 @@ javax.net.ssl.SSLHandshakeException: Received fatal alert: certificate_required
 
 Dit probleem doet zich voor wanneer de client geen certificaat voor verificatie presenteert.
 
-Leer hoe te met succes APIs roepen die mTLS authentificatie door te gebruiken vereisen [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) en **AEM KeyStore en TrustStore**.
+Leer hoe te om APIs met succes te roepen die mTLS authentificatie door [ Apache HttpClient ](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) en **vereist AEM KeyStore en TrustStore**.
 
 
 ## HttpClient en laden AEM KeyStore-materiaal
@@ -71,7 +71,7 @@ Voor demo-doeleinden genereert u de certificaatgerelateerde details, zoals sleut
   openssl verify -CAfile internal-ca-cert.pem client-cert.pem
   ```
 
-- Converteer de AEM Private Key naar de indeling DER AEM KeyStore vereist de persoonlijke sleutel in de indeling DER.
+- Zet AEM persoonlijke sleutel in de indeling DER om, AEM KeyStore vereist de persoonlijke sleutel in de indeling DER.
 
   ```shell
   openssl pkcs8 -topk8 -inform PEM -outform DER -in client-key.pem -out client-key.der -nocrypt
@@ -92,21 +92,21 @@ Als de API-provider een zelfondertekend CA-certificaat gebruikt, ontvangt u het 
 
 Voer de volgende stappen uit om AEM certificaat te importeren:
 
-1. Aanmelden bij **AEM auteur** als **beheerder**.
+1. Login aan **AEM Auteur** als **beheerder**.
 
-1. Navigeren naar **AEM Auteur > Gereedschappen > Beveiliging > Gebruikers > Een bestaande gebruiker maken of selecteren**.
+1. Navigeer aan **AEM Auteur > Hulpmiddelen > Veiligheid > Gebruikers > creeer of selecteer een bestaande gebruiker**.
 
-   ![Een bestaande gebruiker maken of selecteren](assets/mutual-tls-authentication/create-or-select-user.png)
+   ![ creeer of selecteer een bestaande gebruiker ](assets/mutual-tls-authentication/create-or-select-user.png)
 
-   Voor demo-doeleinden, een nieuwe gebruiker genoemd `mtl-demo-user` wordt gemaakt.
+   Voor demo-doeleinden wordt een nieuwe gebruiker met de naam `mtl-demo-user` gemaakt.
 
-1. Als u het dialoogvenster **Gebruikerseigenschappen**, klikt u op de gebruikersnaam.
+1. Om de **Eigenschappen van de Gebruiker** te openen, klik de gebruikersnaam.
 
-1. Klikken **Keystore** en klik vervolgens op **Keystore maken** knop. Dan in **Wachtwoord voor toegang sleutelarchief instellen** , stelt u een wachtwoord in voor het sleutelarchief van deze gebruiker en klikt u op Opslaan.
+1. Klik **Keystore** lusje en klik dan **creëren Keystore** knoop. Dan in de **Vastgestelde dialoog van het Wachtwoord van de Toegang KeyStore**, plaats een wachtwoord voor keystore van deze gebruiker en klik sparen.
 
-   ![Keystore maken](assets/mutual-tls-authentication/create-keystore.png)
+   ![ creeer Keystore ](assets/mutual-tls-authentication/create-keystore.png)
 
-1. In het nieuwe scherm, onder **PRIVATE SLEUTEL UIT DER-BESTAND TOEVOEGEN** voert u de volgende stappen uit:
+1. In het nieuwe scherm, onder **VOEG PRIVATE SLEUTEL VAN DER DOSSIER** sectie TOE, volg de hieronder stappen:
 
    1. Alias invoeren
 
@@ -116,19 +116,19 @@ Voer de volgende stappen uit om AEM certificaat te importeren:
 
    1. Klik op Verzenden
 
-      ![Importeren AEM persoonlijke sleutel](assets/mutual-tls-authentication/import-aem-private-key.png)
+      ![ de Invoer AEM Persoonlijke Sleutel ](assets/mutual-tls-authentication/import-aem-private-key.png)
 
 1. Controleer of het certificaat is geïmporteerd.
 
-   ![Geïmporteerde persoonlijke sleutel en certificaat AEM](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
+   ![ AEM Geïmporteerde Persoonlijke Sleutel &amp; Certificaat ](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-Als de API-provider een zelfondertekend CA-certificaat gebruikt, importeert u het ontvangen certificaat in AEM TrustStore, volgt u de stappen van [hier](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
+Als de API leverancier een zelf-ondertekend certificaat van CA gebruikt, voer het ontvangen certificaat in AEM TrustStore in, volg de stappen van [ hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
 
 En als AEM een zelfondertekend CA-certificaat gebruikt, vraagt u de API-provider om dit te importeren.
 
 ### Prototypische mTLS API-aanroepcode met gebruik van HttpClient
 
-Java™-code bijwerken zoals hieronder. Te gebruiken `@Reference` aantekening om AEM te krijgen `KeyStoreService` de dienst de roepende code moet een component OSGi/dienst, of een het Verdelen Model (en `@OsgiService` wordt daar gebruikt).
+Java™-code bijwerken zoals hieronder. Als u `@Reference` -annotatie wilt gebruiken voor het ophalen van AEM `KeyStoreService` -service, moet de aanroepende code een OSGi-component/service zijn of een Sling Model (en wordt `@OsgiService` daar gebruikt).
 
 
 ```java
@@ -212,21 +212,21 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 ...
 ```
 
-- Injecteer de OOTB `com.adobe.granite.keystore.KeyStoreService` De dienst OSGi in uw component OSGi.
-- De AEM KeyStore van de gebruiker ophalen met `KeyStoreService` en `ResourceResolver`de `getAEMKeyStore(...)` methode doet dat.
-- Als de API-provider een zelfondertekend CA-certificaat gebruikt, krijgt u de algemene AEM TrustStore, de `getAEMTrustStore(...)` methode doet dat.
-- Een object maken van `SSLContextBuilder`, zie Java™ [API-details](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
-- De AEM KeyStore van de gebruiker laden in `SSLContextBuilder` gebruiken `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)` methode.
-- Het keystore wachtwoord is het wachtwoord dat toen het creëren van keystore werd geplaatst, zou het in OSGi config moeten worden opgeslagen, zie [Geheime configuratiewaarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
+- Injecteer de OOTB `com.adobe.granite.keystore.KeyStoreService` OSGi-service in uw OSGi-component.
+- Haal de AEM KeyStore van de gebruiker op met `KeyStoreService` en `ResourceResolver` , de methode `getAEMKeyStore(...)` doet dat.
+- Als de API-provider een zelfondertekend CA-certificaat gebruikt, krijgt de algemene AEM TrustStore, doet de methode `getAEMTrustStore(...)` dat.
+- Creeer een voorwerp van `SSLContextBuilder`, zie Java™ [ API details ](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
+- Laad de AEM KeyStore van de gebruiker in `SSLContextBuilder` gebruikend `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)` methode.
+- Het keystore wachtwoord is het wachtwoord dat toen het creëren van keystore werd geplaatst, zou het in OSGi config moeten worden opgeslagen, zie {de Waarden van de Configuratie 0} Geheime ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).[
 
 ## Wijzigingen in JVM-sleutelarchief vermijden
 
-Een conventionele benadering om mTLS APIs met privé certificaten effectief aan te halen impliceert het wijzigen van JVM Keystore. Dit wordt bereikt door de persoonlijke certificaten te importeren met behulp van de Java™ [sleutelgereedschap](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) gebruiken.
+Een conventionele benadering om mTLS APIs met privé certificaten effectief aan te halen impliceert het wijzigen van JVM Keystore. Het wordt bereikt door de privé certificaten in te voeren gebruikend het Java™ [ keytool ](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) bevel.
 
-Deze methode is echter niet afgestemd op best practices op het gebied van beveiliging en AEM biedt een superieure optie via het gebruik van de **Gebruikersspecifieke sleutelwinkels en Global TrustStore** en [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+Nochtans, wordt deze methode niet gericht op veiligheid beste praktijken en AEM biedt een superieure optie door het gebruik van **User-specific KeyStores en Global TrustStore** en [ KeyStoreService ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html) aan.
 
 ## Oplossingspakket
 
-Het voorbeeldproject Node.js dat in de video is gedemodeerd, kan worden gedownload van [hier](assets/internal-api-call/REST-APIs.zip).
+Het steekproefproject Node.js dat in de video wordt gedemoed kan van [ hier ](assets/internal-api-call/REST-APIs.zip) worden gedownload.
 
-De AEM servlet-code is beschikbaar in de projecten van het WKND-project `tutorial/web-api-invocation` vertakking, [zie](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
+De AEM servlet code is beschikbaar in de 0} tak van het Project van Plaatsen WKND {, [ zie ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).`tutorial/web-api-invocation`

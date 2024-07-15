@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Doelextensie toevoegen aan een eigenschap Codes {#adobe-target-extension}
 
-Als u deze video wilt volgen, moet u al [geïntegreerde tags in Adobe Experience Platform met AEM](../experience-platform/data-collection/tags/overview.md).
+Om samen met deze video te volgen, moet u reeds [ geïntegreerde markeringen in Adobe Experience Platform met AEM ](../experience-platform/data-collection/tags/overview.md) hebben.
 
 Leer hoe u Adobe Target kunt inschakelen op uw AEM website met tags.
 
@@ -34,5 +34,5 @@ Leer hoe u Adobe Target kunt inschakelen op uw AEM website met tags.
 
 ## Ondersteunende koppelingen
 
-+ [Adobe Experience Cloud-foutopsporing - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [Inleiding tot het Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [ Inleiding aan het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

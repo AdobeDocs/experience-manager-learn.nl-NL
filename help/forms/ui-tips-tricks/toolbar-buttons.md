@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Wanneer u de knoppen Volgende en Vorige aan de werkbalk in AEM Forms toevoegt, worden de knoppen standaard naast elkaar geplaatst. U kunt de knop Volgende helemaal naar rechts op de werkbalk drukken terwijl u de knop Vorige/Vorige links houdt
 
-![werkbalkafstand](assets/toolbar-spacing.png)
+![ toolbar-uit elkaar plaatsen ](assets/toolbar-spacing.png)
 
 
 ## De werkbalk opmaken

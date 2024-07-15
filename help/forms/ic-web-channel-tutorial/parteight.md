@@ -29,7 +29,7 @@ Open de 401KStatement in bewerkingsmodus.
 
 AEM Forms 6.4 heeft het vrij eenvoudig gemaakt om gegevens te tonen gebruikend diverse types van grafieken. We gaan een Line-grafiek gebruiken om de balans per jaar weer te geven.
 
-Tik op de knop **Voortgang van account** aan de rechterkant van het doelgebied en klik op het pictogram &quot;+&quot; om het dialoogvenster Component invoegen weer te geven.
+Tik op het **doelgebied van de Voortgang van de Rekening 0} {op de rechterkant en klik &quot;+&quot;pictogram om de doos van de tussenvoegselcomponent te verhogen.**
 
 Selecteer Diagram om de diagramcomponent in te voegen.
 
@@ -37,13 +37,13 @@ Configureer de diagramcomponent volgens de instellingen in de onderstaande scher
 
 Selecteer het juiste formuliergegevensmodel op de x- en y-as.
 
-**Instellingen voor lijndiagram in AEM Forms 6.4**
+**de Montages van de Grafiek van de Lijn in AEM Forms 6.4**
 
-![linechart64](assets/linechart.png)
+![ linechart64 ](assets/linechart.png)
 
-**Instellingen voor lijndiagram in AEM Forms 6.5**
+**de Montages van de Grafiek van de Lijn in AEM Forms 6.5**
 
-![linechart64](assets/linechart65.PNG)
+![ linechart64 ](assets/linechart65.PNG)
 
 ## Volgende stappen
 

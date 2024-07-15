@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Gebruikers en groepen toevoegen in AEM JEE
 
-*Deze video doorloopt het proces om gebruikers en groepen in het Beheer van de Gebruiker toe te voegen.*
+*Deze video loopt door het proces om gebruikers en groepen in het Beheer van de Gebruiker toe te voegen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335485?quality=12&learn=on)

@@ -22,7 +22,7 @@ ht-degree: 0%
 In dit artikel wordt uitgelegd hoe u een adaptief formulier kunt vullen met de gegevens die in Azure-opslag zijn opgeslagen.
 Aangenomen wordt dat u de adaptieve formuliergegevens in Azure-opslag hebt opgeslagen en nu uw adaptieve formulier met die gegevens wilt vooraf invullen.
 >[!NOTE]
->De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren.[Het equivalente artikel voor het op kerncomponenten gebaseerde adaptieve formulier is hier beschikbaar](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren.[ het gelijkwaardige artikel voor kern op component gebaseerde adaptieve vorm is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
 
 
 ## GET-aanvraag maken
@@ -86,10 +86,10 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Het adaptieve voorbeeldformulier importeren](./assets/bank-account-sample-form.zip)
 
-* [Specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [ specificeer de aangewezen waarden in de Azure PortalConfiguratie gebruikend de OSGi configuratieconsole.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
 
-* [Het bankrekeningformulier bekijken en verzenden](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
+* [ Voorproef en voorlegt de vorm BankAccount ](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Controleer of de gegevens zijn opgeslagen in de Azure-opslagcontainer van uw keuze. Kopieer de blob-id.
 
-* [Een voorbeeld weergeven van het formulier Bankrekening](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) en geef de Blob-id op als een guid-parameter in de URL voor het formulier dat vooraf moet worden ingevuld met de gegevens uit Azure-opslag
+* [ Voorproef de vorm BankAccount ](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) en specificeer identiteitskaart van de Blob als begeleide parameter in URL voor de vorm die met de gegevens van Azure opslag moet worden vooraf bevolkt

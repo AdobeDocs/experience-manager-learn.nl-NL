@@ -21,20 +21,20 @@ ht-degree: 0%
 
 De volgende stap bestaat uit het maken van de aangepaste formulieren die u in het pakket wilt opnemen. Houd er rekening mee dat u zich aan de volgende punten houdt wanneer u formulieren maakt voor ondertekening:
 
-* Zorg ervoor dat de formulieren zijn gebaseerd op de **SignMultipleForms** sjabloon. Op deze manier zorgt u ervoor dat de formulieren vooraf worden ingevuld met de gegevens die uit de database worden opgehaald.
+* Zorg ervoor de vormen op het **SignMultipleForms** malplaatje gebaseerd zijn. Op deze manier zorgt u ervoor dat de formulieren vooraf worden ingevuld met de gegevens die uit de database worden opgehaald.
 
 * De formulieren moeten zijn geconfigureerd voor het gebruik van Acrobat Sign en het veld signer1 moet zijn gekoppeld aan het veld Customer Email.
-* De formulieren moeten ook worden gekoppeld aan clientLib die wordt aangeroepen **getnextform**
+* De vormen moeten ook met clientLib worden geassocieerd geroepen **getnextform**
 * De formulieren moeten de component Signature Step gebruiken.
-* Het formulier moet ook de aangepaste **Meerdere formulieren ondertekenen** component. Met deze component kunt u naar het volgende formulier navigeren om u aan te melden bij het pakket.
-* De verzending van het formulier moet zo zijn geconfigureerd dat AEM workflow wordt geactiveerd **Handtekeningstatus bijwerken**
-* Zorg ervoor dat het pad naar het gegevensbestand is ingesteld op **Data.xml**. Dit is erg belangrijk omdat de voorbeeldcode zoekt naar een bestand met de naam Data.xml tijdens het laden van het formulier.
+* De vorm moet de douane **Meerdere component van de Vorm van het Teken {ook gebruiken 1}.** Met deze component kunt u naar het volgende formulier navigeren om u aan te melden bij het pakket.
+* De voorlegging van de vorm moet worden gevormd om AEM werkschema **de Status van de Ondertekening van de Update** teweeg te brengen
+* Zorg ervoor de Weg van het Dossier van Gegevens aan **Data.xml** wordt geplaatst. Dit is erg belangrijk omdat de voorbeeldcode zoekt naar een bestand met de naam Data.xml tijdens het laden van het formulier.
 
-Nadat u het formulier hebt gemaakt, neemt u de opdracht **alleenstaande velden** adaptief formulierfragment in het formulier. Het fragment wordt gemarkeerd als verborgen. Dit fragment bevat de volgende velden.
+Zodra u uw vorm hebt authored, omvat **gemeenschappelijke gebieden** adaptief vormfragment in de vorm. Het fragment wordt gemarkeerd als verborgen. Dit fragment bevat de volgende velden.
 
-* **ondertekend** - Het veld dat de status van de handtekening bevat
-* **guid** - Unieke id om het formulier in het pakket te identificeren
-* **customerEmail** - Dit veld bevat de e-mail van de klant
+* **ondertekend** - het gebied om het statuut van de handtekening te houden
+* **leidraad** - Unieke herkenningsteken om de vorm in het pakket te identificeren
+* **customerEmail** - Dit gebied houdt e-mail van de klant
 
 
 
@@ -47,7 +47,7 @@ Nadat alle formulieren in het pakket zijn ingevuld en ondertekend, moeten we het
 
 ## Assets
 
-De voorbeeldformulieren, inclusief de formulieren die in deze zelfstudie worden gebruikt, kunnen [hier gedownload](assets/forms-for-signing.zip)
+De steekproefvormen met inbegrip van het gebruikte in dit leerprogramma kunnen [ van hier worden gedownload ](assets/forms-for-signing.zip)
 
 ## Volgende stappen
 

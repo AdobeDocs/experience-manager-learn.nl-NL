@@ -24,6 +24,7 @@ Met deze zelfstudie kunt u een AEM pagina met koppelingen samenstellen om versch
 
 U hebt het volgende nodig:
 
-Een werkende instantie van AEM met het pakket van de Toevoeging van de Vorm geïnstalleerde de componenten van de Kern
+Een werkende instantie van AEM waarop het pakket Form Add-on is geïnstalleerd
+Geïnstalleerde kerncomponenten
 
-[Ontwikkelomgeving ingesteld overeenkomstig dit document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[ het milieu van de Ontwikkeling opstelling volgens dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)

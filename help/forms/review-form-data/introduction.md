@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Een zelfstudie met meerdere onderdelen om u door de stappen te laten lopen die nodig zijn voor het maken van een overzichtscomponent voor het reviseren en bewerken van formuliergegevens voordat u het formulier verzendt.
 
-![review-form-data](assets/review-form-data.png)
+![ revisie-vorm-gegevens ](assets/review-form-data.png)
 
 Als u deze zelfstudie wilt volgen, is het raadzaam het volgende te installeren:
 

@@ -1,6 +1,6 @@
 ---
-title: Wat is Mutable en Immuable inhoud in AEM as a Cloud Service?
-description: Onderzoek hoe de bewaarplaatsen en de pakketten zowel veranderbare als onveranderlijke inhoud gebruiken en waarom het in AEM as a Cloud Service belangrijk is.
+title: Wat is Mutable en Immuable content in AEM as a Cloud Service?
+description: Ontdek hoe de repository's en pakketten zowel muteerbare als onveranderlijke inhoud gebruiken en waarom het belangrijk is in AEM as a Cloud Service.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Meerdere en onveranderlijke inhoud
 
-Meer informatie over het belang en de verschillen van [muteerbare en onveranderbare inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de AEM als cloud, en hoe deze invloed heeft op uw ontwikkeling.
+Leer over het belang en de verschillen van [ veranderbare en onveranderlijke inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de AEM als Wolk, en hoe het van invloed is hoe u zich ontwikkelt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330555?quality=12&learn=on)

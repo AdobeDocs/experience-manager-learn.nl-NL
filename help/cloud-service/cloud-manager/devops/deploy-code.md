@@ -1,6 +1,6 @@
 ---
-title: Het opstellen van AEM codeprojecten aan AEM as a Cloud Service
-description: Ontdek hoe u een AEM codeproject kunt implementeren om as a Cloud Service te AEM met Cloud Manager.
+title: AEM codeprojecten implementeren voor AEM as a Cloud Service
+description: Ontdek hoe u met Cloud Manager een AEM codeproject naar AEM as a Cloud Service kunt implementeren.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -22,10 +22,10 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_deploycode"
 >title="Code implementeren"
->abstract="Integreer de git-opslagplaats voor cloudbeheer met een externe git-opslagplaats en implementeer een project om as a Cloud Service AEM"
+>abstract="Integreer de git-opslagplaats voor cloudbeheer met een externe git-opslagplaats en implementeer een project naar AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=en#cloud-manager" text="Projecten samenvoegen"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Code implementeren met Cloud Manager"
 
-Integreer de git-opslagplaats voor cloudbeheer met een externe git-opslagplaats en implementeer een project om as a Cloud Service AEM
+Integreer de git-opslagplaats voor cloudbeheer met een externe git-opslagplaats en implementeer een project naar AEM as a Cloud Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/330534?quality=12&learn=on)

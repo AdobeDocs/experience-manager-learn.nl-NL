@@ -25,7 +25,7 @@ Voeg onderliggende deelvensters toe aan het hoofddeelvenster.
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
 
 >[!NOTE]
->Wanneer u onderliggende deelvensters aan het hoofddeelvenster toevoegt, moet u **Zorg ervoor dat u in de bewerkingsmodus werkt. De bewerkknop bevindt zich rechtsboven in de browser.**
+>Wanneer het toevoegen van kindpanelen aan het wortelpaneel, gelieve **ervoor te zorgen u op uitgeeft wijze bent. De Edit knoop wordt gevestigd op de hoogste rechterkant van browser.**
 
 ## Volgende stappen
 

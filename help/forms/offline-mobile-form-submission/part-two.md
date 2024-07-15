@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # PDF-verzending verwerken
 
-In dit deel zullen wij een eenvoudige servlet creëren die op AEM Publish loopt om de PDF indiening van Acrobat/Reader te behandelen. Deze servlet zal beurtelings een verzoek van de POST van HTTP aan servlet doen die in een AEM auteursinstantie loopt verantwoordelijk voor het opslaan van de voorgelegde gegevens als `nt:file` knooppunt in AEM gegevensopslagruimte van auteur.
+In dit deel maken we een eenvoudige servlet die op AEM Publish wordt uitgevoerd om de PDF-verzending van Acrobat/Reader af te handelen. Deze servlet zal op zijn beurt een HTTP-POST aanvragen bij een servlet die in een AEM auteur-instantie wordt uitgevoerd die verantwoordelijk is voor het opslaan van de verzonden gegevens als een `nt:file` -knooppunt in de gegevensopslagruimte van AEM auteur.
 
-Hier volgt de code van de servlet die de PDF-verzending afhandelt. In deze servlet roepen we een POST op naar een servlet gemonteerd op **/bin/startworkflow** in een AEM instantie Auteur. Deze server slaat de formuliergegevens op in de opslagplaats van de AEM auteur.
+Hier volgt de code van de servlet die de PDF-verzending afhandelt. In deze servlet maken wij een POST vraag aan servlet op **wordt opgezet/bin/startworkflow** in een AEM instantie van de Auteur die. Deze server slaat de formuliergegevens op in de opslagplaats van de AEM auteur.
 
 
 ## AEM Publish servlet
@@ -100,7 +100,7 @@ public class HandlePDFSubmission extends SlingAllMethodsServlet {
 
 ## AEM Auteur servlet
 
-De volgende stap bestaat uit het opslaan van de verzonden gegevens in de opslagplaats van de AEM auteur. De servlet gemonteerd op `/bin/startworkflow` slaat de voorgelegde gegevens op.
+De volgende stap bestaat uit het opslaan van de verzonden gegevens in de opslagplaats van de AEM auteur. De server die op `/bin/startworkflow` is gekoppeld, slaat de verzonden gegevens op.
 
 ```java
 import java.io.BufferedReader;
@@ -198,6 +198,6 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 }
 ```
 
-Een AEM werkstroomlanceerprogramma wordt gevormd om telkens als een nieuw middel van type teweeg te brengen `nt:file` wordt gemaakt onder de `/content/pdfsubmissions` knooppunt. Met deze workflow worden niet-interactieve of statische PDF gemaakt door de verzonden gegevens samen te voegen met de xdp-sjabloon. Het gegenereerde PDF-bestand wordt vervolgens ter controle en goedkeuring aan een gebruiker toegewezen.
+Een AEM workflow-starcher is geconfigureerd om te activeren telkens wanneer een nieuwe bron van het type `nt:file` onder het knooppunt `/content/pdfsubmissions` wordt gemaakt. Met deze workflow worden niet-interactieve of statische PDF gemaakt door de verzonden gegevens samen te voegen met de xdp-sjabloon. Het gegenereerde PDF-bestand wordt vervolgens ter controle en goedkeuring aan een gebruiker toegewezen.
 
-De ingediende gegevens opslaan onder `/content/pdfsubmissions` node, gebruiken we `GetResolver` De dienst OSGi staat ons toe om de voorgelegde gegevens te bewaren gebruikend `fd-service` systeemgebruiker die beschikbaar is in elke AEM Forms-installatie.
+Als u de verzonden gegevens wilt opslaan onder het knooppunt `/content/pdfsubmissions` , maken we gebruik van de `GetResolver` OSGi-service om de verzonden gegevens op te slaan met de systeemgebruiker van `fd-service` die beschikbaar is in elke AEM Forms-installatie.

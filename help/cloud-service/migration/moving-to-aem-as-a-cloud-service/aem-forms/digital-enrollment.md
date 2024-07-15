@@ -1,6 +1,6 @@
 ---
 title: AEM Forms as a Cloud Service digitaal inschrijven
-description: Leer hoe AEM Forms as a Cloud Service het gebruik van Digital Enrollment ondersteunt.
+description: Leer hoe AEM Forms as a Cloud Service de Digital Enrollment-case ondersteunt.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration

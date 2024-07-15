@@ -24,7 +24,7 @@ Een veelvoorkomend geval is het inline weergeven van de afbeelding(en) in de crx
 
 ## Afbeelding voor plaatsaanduiding toevoegen
 
-De eerste stap bestaat uit het vooraf toevoegen van een plaatsaanduiding voor div aan de deelvenstercomponent. In de code onder de deelvenstercomponent wordt de CSS-klassenaam van het uploaden van foto&#39;s aangeduid. De JavaScript-functie maakt deel uit van de clientbibliotheek die is gekoppeld aan de adaptieve formulieren. Deze functie wordt aangeroepen in de gebeurtenis initialize van de component voor bestandsbijlagen.
+De eerste stap bestaat uit het vooraf toevoegen van een plaatsaanduiding voor div aan de deelvenstercomponent. In de code onder de deelvenstercomponent wordt de CSS-klassenaam van het uploaden van foto&#39;s aangeduid. De JavaScript-functie is onderdeel van de clientbibliotheek die is gekoppeld aan de adaptieve formulieren. Deze functie wordt aangeroepen in de gebeurtenis initialize van de component voor bestandsbijlagen.
 
 ```javascript
 /**
@@ -83,8 +83,8 @@ async function createFile(imageName){
 
 ### Distribueren op uw server
 
-* Download en installeer de [clientbibliotheek en voorbeeldafbeeldingen](assets/InlineDAMImage.zip) op uw AEM met AEM Package Manager.
-* Download en installeer de [voorbeeldformulier](assets/FieldInspectionForm.zip) op uw AEM met AEM pakketbeheer.
-* Wijs uw browser aan [FileInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
+* Download en installeer de [ cliëntbibliotheek en steekproefbeelden ](assets/InlineDAMImage.zip) op uw AEM instantie gebruikend de Manager van het Pakket AEM.
+* Download en installeer de [ steekproefvorm ](assets/FieldInspectionForm.zip) op u uw AEM instantie gebruikend AEM pakketmanager.
+* Punt uw browser aan [ FileInspectionForm ](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
 * Selecteer een van de correcties
 * De afbeelding moet in het formulier worden weergegeven

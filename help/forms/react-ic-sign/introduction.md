@@ -20,7 +20,7 @@ ht-degree: 0%
 # AEM Forms met Acrobat Sign-webformulier
 
 
-In deze zelfstudie wordt uitgelegd hoe u een interactief communicatiedocument kunt genereren met de gegevens die door het [Reageren](https://react.dev/) en het gegenereerde document presenteren voor ondertekening met Acrobat Sign-webformulier.
+Dit leerprogramma begeleidt u door het gebruiksgeval van het produceren van een interactief communicatie document met de gegevens die van [ worden voorgelegd Reageer ](https://react.dev/) app en het voorstellen van het geproduceerde document voor het ondertekenen gebruikend Acrobat Sign webform.
 
 Hieronder ziet u de stroom van het gebruiksgeval
 
@@ -34,8 +34,8 @@ Hieronder ziet u de stroom van het gebruiksgeval
 U hebt het volgende nodig om het gebruik van hoofdletters en kleine letters te laten werken:
 
 * Een AEM server met Forms-add-on in pakket
-* An [integratiesleutel voor een Acrobat Sign-toepassing](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
+* Een [ integratiesleutel voor een toepassing van Acrobat Sign ](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
 
 ## Volgende stappen
 
-Een schrijven [De aangepaste dienst OSGi om Interactive Communication Document te produceren](./create-ic-document.md) gedocumenteerde API gebruiken
+Schrijf de dienst van A [ douane OSGi om Interactief Communicatie Document ](./create-ic-document.md) te produceren gebruikend gedocumenteerde API

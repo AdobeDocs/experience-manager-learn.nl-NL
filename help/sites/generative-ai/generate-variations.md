@@ -25,4 +25,4 @@ Het genereren van variaties in Adobe Experience Manager is een dynamisch hulpmid
 
 ## Variaties genereren in AEM ontwerpomgeving gebruiken
 
-+ __Document ontwerpen:__ Leer hoe u Variaties genereren gebruikt voor het dynamisch en gepersonaliseerd maken van documenten, zodat uw op documenten gebaseerde websites kunnen worden vergroot tot boeiende en boeiende ervaringen. [Documentatie weergeven](https://www.aem.live/docs/sidekick-generate-variations)
++ __Document Authoring:__ Leer hoe u Variaties genereert voor dynamisch en gepersonaliseerd document maken, waardoor uw op documenten gebaseerde websites worden verheven tot boeiendere en boeiende ervaringen. [ documentatie van de Mening ](https://www.aem.live/docs/sidekick-generate-variations)

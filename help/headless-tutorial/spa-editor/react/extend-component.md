@@ -26,26 +26,26 @@ Leer hoe te om een bestaande Component van de Kern uit te breiden die met de Red
 
 1. Breid een bestaande Component van de Kern met extra eigenschappen en inhoud uit.
 2. Begrijp de basis van Componentovererving met het gebruik van `sling:resourceSuperType`.
-3. Leer hoe u de [Delegatiepatroon](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) voor verkoopmodellen om bestaande logica en functionaliteit opnieuw te gebruiken.
+3. Leer hoe te hefboomwerking het [ Patroon van de Delegatie ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) voor het Verdelen Modellen om bestaande logica en functionaliteit opnieuw te gebruiken.
 
 ## Wat u gaat maken
 
-Dit hoofdstuk illustreert de extra code nodig om een extra bezit aan een norm toe te voegen `Image` om te voldoen aan de vereisten voor een nieuwe `Banner` component. De `Banner` component bevat dezelfde eigenschappen als de standaard `Image` component maar bevat een extra eigenschap voor gebruikers om het **Bannertekst**.
+In dit hoofdstuk wordt de aanvullende code weergegeven die nodig is om een extra eigenschap toe te voegen aan een standaard `Image` -component om te voldoen aan de vereisten voor een nieuwe `Banner` -component. De `Banner` component bevat alle zelfde eigenschappen zoals de standaard `Image` component maar omvat een extra bezit voor gebruikers om de **Tekst van de Banner** te bevolken.
 
-![Uiteindelijke authoring bannercomponent](assets/extend-component/final-author-banner-component.png)
+![ Definitief authored bannercomponent ](assets/extend-component/final-author-banner-component.png)
 
 ## Vereisten
 
-Controleer de vereiste gereedschappen en instructies voor het instellen van een [plaatselijke ontwikkelomgeving](overview.md#local-dev-environment). Op dit punt wordt aangenomen dat gebruikers van de zelfstudie een goed inzicht hebben in de functie AEM SPA Editor.
+Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment). Op dit punt wordt aangenomen dat gebruikers van de zelfstudie een goed inzicht hebben in de functie AEM SPA Editor.
 
 ## Overerving met Sling Resource Super Type {#sling-resource-super-type}
 
-Een bestaande componentset uitbreiden met een eigenschap met de naam `sling:resourceSuperType` op de definitie van uw component.  `sling:resourceSuperType`is een [eigenschap](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) die kunnen worden ingesteld in de definitie van een AEM die naar een andere component wijst. Dit plaatst uitdrukkelijk de component om alle functionaliteit van de component te erven die als wordt geïdentificeerd `sling:resourceSuperType`.
+Als u een bestaande component wilt uitbreiden, stelt u een eigenschap met de naam `sling:resourceSuperType` in voor de definitie van de component.  `sling:resourceSuperType` is a [ bezit ](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) dat op de definitie van een AEM component kan worden geplaatst die aan een andere component richt. Hiermee wordt de component expliciet ingesteld om alle functionaliteit over te nemen van de component die wordt aangeduid als de `sling:resourceSuperType` .
 
-Als we de `Image` component bij `wknd-spa-react/components/image` de code in het dialoogvenster `ui.apps` -module.
+Als we de component `Image` in `wknd-spa-react/components/image` willen uitbreiden, moeten we de code in de module `ui.apps` bijwerken.
 
-1. Een nieuwe map maken onder de `ui.apps` module voor `banner` om `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/banner`.
-1. Beneath `banner` een componentdefinitie maken (`.content.xml`) als volgt:
+1. Maak een nieuwe map onder de module `ui.apps` voor `banner` at `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/banner` .
+1. Onder `banner` maakt u als volgt een componentdefinitie (`.content.xml` ):
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -56,14 +56,14 @@ Als we de `Image` component bij `wknd-spa-react/components/image` de code in het
        componentGroup="WKND SPA React - Content"/>
    ```
 
-   Deze sets `wknd-spa-react/components/banner` om alle functionaliteit over te nemen van `wknd-spa-react/components/image`.
+   Hiermee wordt `wknd-spa-react/components/banner` ingesteld om alle functionaliteit van `wknd-spa-react/components/image` over te nemen.
 
 ## cq:editConfig {#cq-edit-config}
 
-De `_cq_editConfig.xml` dicteert het slepen en neerzetten gedrag in AEM auteursinterface. Wanneer het uitbreiden van de component van het Beeld is het belangrijk dat het middeltype de component zelf aanpast.
+In het `_cq_editConfig.xml` -bestand wordt het gedrag voor slepen en neerzetten voorgeschreven in de AEM-ontwerpinterface. Wanneer het uitbreiden van de component van het Beeld is het belangrijk dat het middeltype de component zelf aanpast.
 
-1. In de `ui.apps` een ander bestand maken onder `banner` benoemd `_cq_editConfig.xml`.
-1. Vullen `_cq_editConfig.xml` met de volgende XML:
+1. Maak in de module `ui.apps` nog een bestand onder `banner` genaamd `_cq_editConfig.xml` .
+1. Vul `_cq_editConfig.xml` met de volgende XML:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -159,7 +159,7 @@ De `_cq_editConfig.xml` dicteert het slepen en neerzetten gedrag in AEM auteursi
    </jcr:root>
    ```
 
-1. Het unieke aspect van het bestand is het `<parameters>` node die het resourceType instelt op `wknd-spa-react/components/banner`.
+1. Het unieke aspect van het bestand is het knooppunt `<parameters>` dat het resourceType instelt op `wknd-spa-react/components/banner` .
 
    ```xml
    <parameters
@@ -170,14 +170,14 @@ De `_cq_editConfig.xml` dicteert het slepen en neerzetten gedrag in AEM auteursi
        imageRotate=""/>
    ```
 
-   De meeste componenten vereisen geen `_cq_editConfig`. Afbeeldingscomponenten en afstammingen vormen hierop een uitzondering.
+   Voor de meeste componenten is geen `_cq_editConfig` vereist. Afbeeldingscomponenten en afstammingen vormen hierop een uitzondering.
 
 ## Het dialoogvenster uitbreiden {#extend-dialog}
 
-Ons `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText`. Aangezien wij het Verkopen overerving gebruiken, kunnen wij eigenschappen van gebruiken [Samenvoeging van verkoopbronnen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) delen van het dialoogvenster overschrijven of uitbreiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
+De component `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerText` vast te leggen. Aangezien wij het Verdelen overerving gebruiken, kunnen wij eigenschappen van de [ Verschuivende Fusie van het Middel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html) gebruiken om gedeelten van de dialoog met voeten te treden of uit te breiden. In dit voorbeeld is een nieuw tabblad toegevoegd aan het dialoogvenster om aanvullende gegevens van een auteur vast te leggen om de kaartcomponent te vullen.
 
-1. In de `ui.apps` onder de `banner` map, een map maken met de naam `_cq_dialog`.
-1. Beneath `_cq_dialog` een Dialog-definitiebestand maken `.content.xml`. Vul de selectie met de volgende code:
+1. Maak in de module `ui.apps` onder de map `banner` een map met de naam `_cq_dialog` .
+1. Onder `_cq_dialog` maakt u een definitiebestand voor het dialoogvenster `.content.xml` . Vul de selectie met de volgende code:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -231,22 +231,22 @@ Ons `Banner` vereist een extra tekstveld in het dialoogvenster om het `bannerTex
    </jcr:root>
    ```
 
-   De bovenstaande XML-definitie maakt een nieuw tabblad met de naam **Tekst** en bestellen *voor* de bestaande **Element** tab. Het bevat één veld **Bannertekst**.
+   De bovenstaande definitie van XML zal tot een nieuw lusje leiden genoemd **Tekst** en tot het *opdracht geven vóór* het bestaande **Activa** tabel. Het zal één enkel gebied **Tekst van de Banner** bevatten.
 
 1. Het dialoogvenster ziet er als volgt uit:
 
-   ![Dialoogvenster Banner](assets/extend-component/banner-dialog.png)
+   ![ Banner definitieve dialoog ](assets/extend-component/banner-dialog.png)
 
-   We hoefden niet de tabbladen te definiëren voor **Element** of **Metagegevens**. Deze worden via de `sling:resourceSuperType` eigenschap.
+   Merk op dat wij niet de lusjes voor **Activa** of **Meta-gegevens** moesten bepalen. Deze worden overgeërfd via de eigenschap `sling:resourceSuperType` .
 
-   Voordat we een voorvertoning van het dialoogvenster kunnen bekijken, moeten we de SPA component en de `MapTo` functie.
+   Voordat we een voorvertoning van het dialoogvenster kunnen weergeven, moeten we de SPA Component en de functie `MapTo` implementeren.
 
 ## SPA implementeren {#implement-spa-component}
 
-Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SPA maken die u wilt toewijzen aan `wknd-spa-react/components/banner`. Dit gebeurt in het dialoogvenster `ui.frontend` -module.
+Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SPA maken die wordt toegewezen aan `wknd-spa-react/components/banner` . Dit gebeurt in de module `ui.frontend` .
 
-1. In de `ui.frontend` een nieuwe map maken voor `Banner` om `ui.frontend/src/components/Banner`.
-1. Een nieuw bestand maken met de naam `Banner.js` onder de `Banner` map. Vul de selectie met de volgende code:
+1. Maak in de module `ui.frontend` een nieuwe map voor `Banner` at `ui.frontend/src/components/Banner` .
+1. Maak een nieuw bestand met de naam `Banner.js` onder de map `Banner` . Vul de selectie met de volgende code:
 
    ```js
    import React, {Component} from 'react';
@@ -296,9 +296,9 @@ Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SP
    MapTo('wknd-spa-react/components/banner')(Banner, BannerEditConfig);
    ```
 
-   Deze SPA wordt toegewezen aan de AEM component `wknd-spa-react/components/banner` eerder gemaakt.
+   Deze SPA component verwijst naar de AEM component `wknd-spa-react/components/banner` die u eerder hebt gemaakt.
 
-1. Bijwerken `import-components.js` om `ui.frontend/src/components/import-components.js` om de nieuwe `Banner` SPA component:
+1. Werk `import-components.js` bij `ui.frontend/src/components/import-components.js` bij om de nieuwe `Banner` SPA component op te nemen:
 
    ```diff
      import './ExperienceFragment/ExperienceFragment';
@@ -313,24 +313,24 @@ Als u de component Banner wilt gebruiken met de SPA Editor, moet u een nieuwe SP
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Werk het beleid van het Malplaatje van de SPA bij om toe te voegen `Banner` component als een **toegestane component**.
+1. Werk het beleid van het SPA van het Malplaatje bij om de `Banner` component als **toe te voegen toegestane component**.
 
-1. Ga naar een SPA pagina en voeg de `Banner` op een van de SPA pagina&#39;s:
+1. Navigeer naar een SPA pagina en voeg de component `Banner` toe aan een van de SPA pagina&#39;s:
 
-   ![Bannercomponent toevoegen](assets/extend-component/add-banner-component.png)
+   ![ voeg component Banner ](assets/extend-component/add-banner-component.png) toe
 
    >[!NOTE]
    >
-   > In het dialoogvenster kunt u een waarde opslaan voor **Bannertekst** maar deze waarde wordt niet in de SPA weergegeven. Om toe te laten, moeten wij het het Verkopen Model voor de component uitbreiden.
+   > De dialoog zal u toestaan om een waarde voor **Tekst van de Banner** te bewaren maar deze waarde wordt niet weerspiegeld in de SPA component. Om toe te laten, moeten wij het het Verkopen Model voor de component uitbreiden.
 
 ## Java-interface toevoegen {#java-interface}
 
-Als u uiteindelijk de waarden uit het dialoogvenster Component toegankelijk wilt maken voor de component React, moet het Sling-model dat de JSON-code voor de component vult, worden bijgewerkt `Banner` component. Dit gebeurt in het dialoogvenster `core` die alle code van Java voor ons SPA project bevat.
+Als u uiteindelijk de waarden uit het dialoogvenster Component toegankelijk wilt maken voor de component React, moet u het Sling-model bijwerken dat de JSON voor de component `Banner` vult. Dit wordt gedaan in de `core` module die alle code van Java voor ons SPA project bevat.
 
-Eerst maken we een nieuwe Java-interface voor `Banner` die de `Image` Java-interface.
+Eerst maken we een nieuwe Java-interface voor `Banner` die de Java-interface van `Image` uitbreidt.
 
-1. In de `core` module maakt een nieuw bestand met de naam `BannerModel.java` om `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
-1. Vullen `BannerModel.java` met het volgende:
+1. Maak in de module `core` een nieuw bestand met de naam `BannerModel.java` at `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models` .
+1. Vul `BannerModel.java` met het volgende:
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models;
@@ -346,15 +346,15 @@ Eerst maken we een nieuwe Java-interface voor `Banner` die de `Image` Java-inter
    }
    ```
 
-   Hierdoor worden alle methoden overgenomen van de Core Component `Image` interface en voeg één nieuwe methode toe `getBannerText()`.
+   Hiermee worden alle methoden overgenomen van de interface Core Component `Image` en wordt één nieuwe methode `getBannerText()` toegevoegd.
 
 ## Sling-model implementeren {#sling-model}
 
-Implementeer vervolgens het Sling-model voor de `BannerModel` interface.
+Implementeer vervolgens het Sling Model voor de interface `BannerModel` .
 
-1. In de `core` module maakt een nieuw bestand met de naam `BannerModelImpl.java` om `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models/impl`.
+1. Maak in de module `core` een nieuw bestand met de naam `BannerModelImpl.java` at `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models/impl` .
 
-1. Vullen `BannerModelImpl.java` met het volgende:
+1. Vul `BannerModelImpl.java` met het volgende:
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models.impl;
@@ -429,9 +429,9 @@ Implementeer vervolgens het Sling-model voor de `BannerModel` interface.
    }
    ```
 
-   Let op het gebruik van de `@Model` en `@Exporter` annotaties die ervoor zorgen dat het verkoopmodel met serienummering kan worden gecodeerd als JSON via de verkoopmodel-exportfunctie.
+   Let op het gebruik van de `@Model` - en `@Exporter` -aantekeningen om ervoor te zorgen dat het Sling-model via de Sling Model Exporter met serienummering kan worden gecodeerd als JSON.
 
-   `BannerModelImpl.java` gebruikt de [Delegatiepatroon voor verkoopmodellen](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) om te voorkomen dat alle logica van de kerncomponent Image wordt herschreven.
+   `BannerModelImpl.java` gebruikt het [ patroon van de Delegatie voor het Verdelen Modellen ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) om te vermijden herschrijvend alle logica van de kerncomponent van het Beeld.
 
 1. Controleer de volgende regels:
 
@@ -441,7 +441,7 @@ Implementeer vervolgens het Sling-model voor de `BannerModel` interface.
    private Image image;
    ```
 
-   Met de bovenstaande aantekening wordt een afbeeldingsobject met de naam `image` op basis van de `sling:resourceSuperType` erfenis van de `Banner` component.
+   In de bovenstaande aantekening wordt een afbeeldingsobject met de naam `image` geïnstantieerd op basis van de `sling:resourceSuperType` overerving van de component `Banner` .
 
    ```java
    @Override
@@ -450,9 +450,9 @@ Implementeer vervolgens het Sling-model voor de `BannerModel` interface.
    }
    ```
 
-   Het is dan mogelijk om de `image` object voor het implementeren van methoden die door de `Image` interface, zonder zelf de logica te moeten schrijven. Deze techniek wordt gebruikt voor `getSrc()`, `getAlt()` en `getTitle()`.
+   Het is dan mogelijk om het `image` -object eenvoudig te gebruiken voor het implementeren van methoden die zijn gedefinieerd door de `Image` -interface, zonder dat u zelf de logica hoeft te schrijven. Deze techniek wordt gebruikt voor `getSrc()` , `getAlt()` en `getTitle()` .
 
-1. Open een terminalvenster en stel alleen de updates in voor de `core` met de Maven `autoInstallBundle` van de `core` directory.
+1. Open een terminalvenster en implementeer alleen de updates voor de module `core` met behulp van het profiel Maven `autoInstallBundle` uit de map `core` .
 
    ```shell
    $ cd core/
@@ -461,22 +461,22 @@ Implementeer vervolgens het Sling-model voor de `BannerModel` interface.
 
 ## Alles samenvoegen {#put-together}
 
-1. Ga terug naar AEM en open de SPA pagina met de `Banner` component.
-1. Werk de `Banner` op te nemen component **Bannertekst**:
+1. Ga terug naar AEM en open de SPA pagina met de component `Banner` .
+1. Werk de `Banner` component bij om **Tekst van de Banner** te omvatten:
 
-   ![Bannertekst](assets/extend-component/banner-text-dialog.png)
+   ![ de Tekst van de Banner ](assets/extend-component/banner-text-dialog.png)
 
 1. De component vullen met een afbeelding:
 
-   ![Afbeelding toevoegen aan bannerdialoogvenster](assets/extend-component/banner-dialog-image.png)
+   ![ voeg beeld aan bannerdialoog toe ](assets/extend-component/banner-dialog-image.png)
 
    Sla de dialoogupdates op.
 
-1. U moet nu de gerenderde waarde zien van **Bannertekst**:
+1. U zou nu de teruggegeven waarde van **Tekst van de Banner** moeten zien:
 
-![Bannertekst weergegeven](assets/extend-component/banner-text-displayed.png)
+![ getoonde Tekst van de Banner ](assets/extend-component/banner-text-displayed.png)
 
-1. Bekijk de JSON-modelreactie op: [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) en zoek naar `wknd-spa-react/components/card`:
+1. Bekijk de JSON modelreactie bij: [ http://localhost:4502/content/wknd-spa-react/us/en.model.json ](http://localhost:4502/content/wknd-spa-react/us/en.model.json) en onderzoek naar `wknd-spa-react/components/card`:
 
    ```json
    "banner": {
@@ -487,7 +487,7 @@ Implementeer vervolgens het Sling-model voor de `BannerModel` interface.
     },
    ```
 
-   U ziet dat het JSON-model is bijgewerkt met extra sleutel-/waardeparen nadat het Sling-model is geïmplementeerd in `BannerModelImpl.java`.
+   U ziet dat het JSON-model wordt bijgewerkt met extra sleutel-/waardeparen nadat het Sling-model is geïmplementeerd in `BannerModelImpl.java` .
 
 ## Gefeliciteerd! {#congratulations}
 

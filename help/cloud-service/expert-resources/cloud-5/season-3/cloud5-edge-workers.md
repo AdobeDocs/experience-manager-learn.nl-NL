@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Wolk 5 - Edge Workers
+# Wolk 5 - Edge-workers
 
 Ontdek het belang van &#39;edge workers&#39; in AEM Sites en Edge Delivery Services en hoe u deze kunt integreren met uw back-end systemen.
 

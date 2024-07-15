@@ -1,6 +1,6 @@
 ---
-title: Stel de arbeiders van de Asset compute aan Adobe I/O Runtime voor gebruik met AEM as a Cloud Service op
-description: De projecten van de asset compute, en de werknemers die zij bevatten, moeten in Adobe I/O Runtime worden ingezet om door AEM as a Cloud Service te worden gebruikt.
+title: Workers voor Asset computen distribueren naar Adobe I/O Runtime voor gebruik met AEM as a Cloud Service
+description: Asset compute-projecten, en de werknemers die ze bevatten, moeten in Adobe I/O Runtime worden ingezet om door AEM as a Cloud Service te worden gebruikt.
 feature: Asset Compute Microservices
 version: Cloud Service
 doc-type: Tutorial
@@ -20,45 +20,45 @@ ht-degree: 0%
 
 # Distribueren naar Adobe I/O Runtime
 
-De projecten van de asset compute, en de arbeiders die zij bevatten, moeten aan Adobe I/O Runtime via Adobe I/O CLI worden opgesteld om door AEM as a Cloud Service te worden gebruikt.
+De projecten van de asset compute, en de werknemers die zij bevatten, moeten via de Adobe I/O CLI worden opgesteld aan Adobe I/O Runtime om door AEM as a Cloud Service te worden gebruikt.
 
-Bij de implementatie naar Adobe I/O Runtime voor gebruik door AEM as a Cloud Service auteur zijn slechts twee omgevingsvariabelen vereist:
+Bij implementatie naar Adobe I/O Runtime voor gebruik door AEM as a Cloud Service Author-services zijn slechts twee omgevingsvariabelen vereist:
 
-+ `AIO_runtime_namespace` wijst de Werkruimte van de Bouwer van de App om op te stellen
++ `AIO_runtime_namespace` wijst de App Builder Workspace aan implementatie toe
 + `AIO_runtime_auth` zijn de verificatiegegevens van de App Builder-werkruimte
 
-De andere standaardvariabelen die in het `.env` Het bestand wordt impliciet door AEM as a Cloud Service verschaft wanneer de Asset compute-worker wordt aangeroepen.
+De andere standaardvariabelen die in het `.env` -bestand zijn gedefinieerd, worden impliciet door AEM as a Cloud Service verschaft wanneer de Asset compute worker wordt aangeroepen.
 
 ## Werkruimte Ontwikkeling
 
-Omdat dit project is gegenereerd met `aio app init` met de `Development` werkruimte, `AIO_runtime_namespace` wordt automatisch ingesteld op `81368-wkndaemassetcompute-development` met de overeenkomst `AIO_runtime_auth` in onze lokale `.env` bestand.  Als een `.env` Het bestand bestaat in de map die wordt gebruikt om de implementatieopdracht uit te voeren, en de waarden ervan worden gebruikt, tenzij deze worden vervangen door een variabele export op besturingssysteemniveau. Zo ziet u [stadium en productie](#stage-and-production) de werkruimten zijn bedoeld.
+Omdat dit project is gegenereerd met `aio app init` in de `Development` -werkruimte, wordt `AIO_runtime_namespace` automatisch ingesteld op `81368-wkndaemassetcompute-development` met de overeenkomende `AIO_runtime_auth` in ons lokale `.env` -bestand.  Als een `.env` dossier in de folder bestaat die wordt gebruikt om het opstellen bevel uit te geven, worden zijn waarden gebruikt, tenzij zij via een OS niveau veranderlijke uitvoer worden vervangen, die is hoe [ stadium en productie ](#stage-and-production) werkruimten worden gericht.
 
-![Implementatie van AIR-apps met behulp van .env-variabelen](./assets/runtime/development__aio.png)
+![ de implementatie van de audio-app gebruikend variabelen .env ](./assets/runtime/development__aio.png)
 
-Om aan de werkruimte op te stellen die in de projecten wordt bepaald `.env` bestand:
+Distribueren naar de werkruimte die is gedefinieerd in het projectbestand `.env` :
 
 1. Open de bevellijn in de wortel van het project van de Asset compute
 1. De opdracht uitvoeren `aio app deploy`
-1. De opdracht uitvoeren `aio app get-url` om de worker-URL op te halen die in het AEM as a Cloud Service verwerkingsprofiel kan worden gebruikt om naar deze aangepaste Asset compute-worker te verwijzen. Als het project meerdere workers bevat, worden afzonderlijke URL&#39;s voor elke worker weergegeven.
+1. Voer de opdracht `aio app get-url` uit om de URL van de worker te verkrijgen voor gebruik in het AEM as a Cloud Service-verwerkingsprofiel om naar deze aangepaste Asset compute-worker te verwijzen. Als het project meerdere workers bevat, worden afzonderlijke URL&#39;s voor elke worker weergegeven.
 
-Als de lokale ontwikkeling en AEM as a Cloud Service Ontwikkelomgevingen afzonderlijke plaatsingen van de Asset compute gebruiken, kunnen de plaatsingen aan AEM as a Cloud Service Dev op de zelfde manier worden beheerd zoals [Implementatie van werkgebied en productie](#stage-and-production).
+Als de lokale ontwikkeling en de milieu&#39;s van de Ontwikkeling van AEM as a Cloud Service afzonderlijke plaatsingen van de Asset compute gebruiken, kunnen de plaatsingen aan AEM as a Cloud Service Dev op de zelfde manier zoals [ het Stadium en de plaatsingen van de Productie ](#stage-and-production) worden beheerd.
 
 ## Werkruimten voor werkruimten Werkgebied en Productie{#stage-and-production}
 
-De werkruimten Werkgebied en Productie worden typisch opgesteld door uw systeem van CI/CD van keus. Het project van de Asset compute moet aan elke Werkruimte (Stadium en toen Productie) afzonderlijk worden opgesteld.
+De werkruimten Werkgebied en Productie worden typisch opgesteld door uw systeem van CI/CD van keus. Het project van de Asset compute moet aan elke Workspace (Stadium en toen Productie) afzonderlijk worden opgesteld.
 
-Als u werkelijke omgevingsvariabelen instelt, worden de waarden voor dezelfde variabelen overschreven in `.env`.
+Als u echte omgevingsvariabelen instelt, overschrijft u de waarden voor variabelen met dezelfde naam in `.env` .
 
-![Implementatie van een AIR-toepassing met behulp van exportvariabelen](./assets/runtime/stage__export-and-aio.png)
+![ de implementatie van de audio-app gebruikend de uitvoervariabelen ](./assets/runtime/stage__export-and-aio.png)
 
 De algemene aanpak, die doorgaans door een CI/CD-systeem wordt geautomatiseerd, voor de implementatie in werkgebied- en productieomgevingen is:
 
-1. Zorg ervoor dat [Adobe I/O CLI npm module en Asset compute plug-in](../set-up/development-environment.md#aio) zijn geïnstalleerd
+1. Verzeker de [ Adobe I/O CLI npm module en de insteekmodule van de Asset compute ](../set-up/development-environment.md#aio) geïnstalleerd zijn
 1. Controle uit het project van de Asset compute om van Git op te stellen
 1. De omgevingsvariabelen instellen met de waarden die overeenkomen met de doelwerkruimte (werkgebied of productie)
-   + De twee vereiste variabelen zijn `AIO_runtime_namespace` en `AIO_runtime_auth` en worden per werkruimte in de Adobe I/O Developer Console verkregen via de Workspace __Alles downloaden__ gebruiken.
+   + De twee vereiste variabelen zijn `AIO_runtime_namespace` en `AIO_runtime_auth` en worden verkregen per werkruimte in Adobe I/O Developer Console via de Workspace __Download Al__ eigenschap.
 
-![Adobe Developer Console - AIO Runtime Namespace en Auth](./assets/runtime/stage-auth-namespace.png)
+![ Adobe Developer Console - AIO Runtime Namespace en Auth ](./assets/runtime/stage-auth-namespace.png)
 
 De waarden van deze toetsen kunnen worden ingesteld door exportopdrachten uit te voeren via de opdrachtregel:
 
@@ -71,13 +71,13 @@ Als uw medewerkers van de Asset compute andere variabelen nodig hebben, zoals cl
 
 1. Zodra alle milieuvariabelen voor de doelwerkruimte worden geplaatst om op te stellen, voer het opstellen bevel uit:
    + `aio app deploy`
-1. De URL(s) van de worker waarnaar wordt verwezen door het AEM as a Cloud Service verwerkingsprofiel is ook beschikbaar via:
+1. De worker-URL waarnaar wordt verwezen door het AEM as a Cloud Service-verwerkingsprofiel is ook beschikbaar via:
    + `aio app get-url`.
 
 Als de projectversie van de Asset compute verandert, veranderen de worker-URL&#39;s ook om de nieuwe versie weer te geven en moet de URL worden bijgewerkt in de verwerkingsprofielen.
 
 ## Workspace API-provisioning{#workspace-api-provisioning}
 
-Wanneer [vestiging App Builder project in Adobe I/O](../set-up/app-builder.md) ter ondersteuning van lokale ontwikkeling is een nieuwe werkruimte voor ontwikkeling gecreëerd en __Asset compute, I/O-gebeurtenissen__ en __API&#39;s voor I/O Events Management__ zijn toegevoegd.
+Toen [ vestiging het project van App Builder in Adobe I/O ](../set-up/app-builder.md) om lokale ontwikkeling te steunen, werd een nieuwe werkruimte van de Ontwikkeling gecreeerd en __Asset compute, werden de Gebeurtenissen I/O__ en __I/O het Beheer APIs van Gebeurtenissen__ toegevoegd aan het.
 
-De __Asset compute, I/O-gebeurtenissen__ en __API&#39;s voor I/O Events Management__ APIS wordt alleen expliciet toegevoegd aan de werkruimten die worden gebruikt voor lokale ontwikkeling. Werkruimten die (uitsluitend) integreren met AEM as a Cloud Service omgevingen doen __niet__ Deze API&#39;s moeten expliciet worden toegevoegd omdat de API&#39;s van nature beschikbaar worden gemaakt voor AEM as a Cloud Service.
+De __Asset compute, I/O Gebeurtenissen__ en __APIs van het Beheer van Gebeurtenissen I/O__ APIS worden slechts uitdrukkelijk toegevoegd aan de werkruimten die voor lokale ontwikkeling worden gebruikt. De werkruimten die (exclusief) met de milieu&#39;s van AEM as a Cloud Service integreren ____ hebben deze uitdrukkelijk toegevoegde APIs niet nodig aangezien APIs van nature ter beschikking van AEM as a Cloud Service wordt gesteld.

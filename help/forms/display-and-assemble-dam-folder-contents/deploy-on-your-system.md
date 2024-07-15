@@ -20,15 +20,15 @@ ht-degree: 0%
 
 Volg de onderstaande stappen om deze kwestie te laten werken aan uw lokale AEM.
 
-* [Implementeer de DevelopingWithServiceUser Bundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) in het ZIP-bestand.
+* [ stelt de Bundel DevelopingWithServiceUser ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) in het ZIP dossier op.
 
-* Voeg het volgende item toe aan de Apache Sling Service User Mapper Service **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** met de [configMgr](http://localhost:4502/system/console/configMgr).
+* Voeg de volgende ingang in de Dienst van het Mapper van de Gebruiker van de Dienst Apache Sling **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** toe gebruikend [ configMgr ](http://localhost:4502/system/console/configMgr).
 
-* [De bundel met nieuwsbrieven implementeren](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). Deze bundel bevat de code voor het weergeven van de inhoud van de map en het samenstellen van de geselecteerde nieuwsbrief(en).
+* [ stel de nieuwsbrief bundel ](assets/Newsletters.core-1.0.0-SNAPSHOT.jar) op. Deze bundel bevat de code voor het weergeven van de inhoud van de map en het samenstellen van de geselecteerde nieuwsbrief(en).
 
-* [Pakket importeren met Package Manager](assets/newsletter.zip). Dit pakket bevat clientbibliotheek en voorbeeld-PDF-bestanden om de oplossing te testen.
+* [ voer het pakket in gebruikend de Manager van het Pakket ](assets/newsletter.zip). Dit pakket bevat clientbibliotheek en voorbeeld-PDF-bestanden om de oplossing te testen.
 
-* [Het adaptieve voorbeeldformulier importeren](assets/sample-adaptive-form.zip). In dit formulier worden de nieuwsbrieven weergegeven die kunnen worden geselecteerd.
+* [ voer de steekproef aanpassende vorm ](assets/sample-adaptive-form.zip) in. In dit formulier worden de nieuwsbrieven weergegeven die kunnen worden geselecteerd.
 
-* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
+* [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
 Selecteer een paar nieuwsbrieven om te downloaden. De geselecteerde nieuwsbrieven zullen in één pdf worden gecombineerd en aan u teruggegeven.

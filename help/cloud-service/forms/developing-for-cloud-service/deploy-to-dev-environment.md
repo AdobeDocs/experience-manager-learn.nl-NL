@@ -28,18 +28,18 @@ Meld u aan bij Cloud Manager en selecteer uw programma
 Selecteer de Deplosie aan Dev zoals hieronder getoond
 
 
-![eerste stap](assets/deploy-first-step1.png)
+![ eerste-stap ](assets/deploy-first-step1.png)
 
 
 Distributiepijpleiding selecteren zoals wordt weergegeven
-![eerste stap](assets/deploy1.png)
+![ eerste-stap ](assets/deploy1.png)
 
 Selecteer de broncode en de juiste Git-vertakking
-![eerste stap](assets/deploy2.png)
+![ eerste-stap ](assets/deploy2.png)
 Controleer of uw wijzigingen zijn bijgewerkt
 
 De pijplijn uitvoeren
-![pijpleiding](assets/run-pipeline.png)
+![ looppas-pijpleiding ](assets/run-pipeline.png)
 
 Als de code eenmaal is geïmplementeerd, worden de wijzigingen weergegeven in de cloudservice-instantie van AEM Forms.
 

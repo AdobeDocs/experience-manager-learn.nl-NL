@@ -19,15 +19,15 @@ ht-degree: 5%
 + [Overzicht](./overview.md)
 + AEM {#aem-trials}
    + [Afbeeldingen](./aem-trials/images.md)
-+ Inleiding tot AEM as a Cloud Service{#introduction}
++ Inleiding tot AEM as a Cloud Service {#introduction}
    + [Wat is AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Architectuur](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
-   + Strategie en leiderschap{#strategy}
+   + Strategie en leiderschap bij gedachte {#strategy}
       + [Experience Manager - Bestuur en personeelsmodellen en archetypen](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Snelheid van inhoud besturen met Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
       + [De snelheid van de inhoud versnellen met AEM stijlsystemen](./introduction/accelerate-content-velocity-aem.md)
-+ Integratie van Experiencen Cloud{#integrations}
++ Integraties van Experiencen Cloud {#integrations}
    + [Integrations](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
 + Onderliggende technologie {#underlying-technology}
@@ -38,7 +38,7 @@ ht-degree: 5%
    + [Auteur en Publish Services](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [AEM Assets Sidekick-insteekmodule](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
+   + [ de insteekmodule van de Sidekick van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html) {target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programma&#39;s](./cloud-manager/programs.md)
    + [Omgevingen](./cloud-manager/environments.md)
@@ -47,7 +47,7 @@ ht-degree: 5%
    + [Niet-productiepijpleiding CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activiteit](./cloud-manager/activity.md)
    + [Aangepaste domeinnamen](./cloud-manager/custom-domain-names.md)
-   + Dev OPS{#devops}
+   + OPS ontwikkelen {#devops}
       + [Code implementeren](./cloud-manager/devops/deploy-code.md)
       + [Projecten samenvoegen](./cloud-manager/devops/merge-projects.md)
       + [Pijpleidingen configureren](./cloud-manager/devops/configure-pipelines.md)
@@ -60,13 +60,13 @@ ht-degree: 5%
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
    + [Lokale AEM SDK](./local-development-environment/aem-runtime.md)
    + [Lokale Dispatcher-gereedschappen](./local-development-environment/dispatcher-tools.md)
-+ Ontwikkelen{#developing}
-   + Uitbreidbaarheid{#extensibility}
++ Ontwikkelen {#developing}
+   + Uitbreidbaarheid {#extensibility}
       + App Builder{#app-builder}
          + [JWT-toegangstoken genereren](./developing/extensibility/app-builder/jwt-auth.md)
          + [Toegangstoken server-naar-server genereren](./developing/extensibility/app-builder/server-to-server-auth.md)
          + [Verificatie door Github-website](./developing/extensibility/app-builder/github-webhook-verification.md)
-      + UI-uitbreidbaarheid{#ui}
+      + UI-uitbreidbaarheid {#ui}
          + [Overzicht](./developing/extensibility/ui/overview.md)
          + [Adobe Developer Console Project](./developing/extensibility/ui/adobe-developer-console-project.md)
          + [App initialiseren](./developing/extensibility/ui/app-initialization.md)
@@ -75,9 +75,9 @@ ht-degree: 5%
          + [Adobe I/O Runtime-actie](./developing/extensibility/ui/runtime-action.md)
          + [Verifiëren](./developing/extensibility/ui/verify.md)
          + [Implementeren](./developing/extensibility/ui/deploy.md)
-         + Inhoudsfragmenten{#content-fragments}
+         + Inhoudsfragmenten {#content-fragments}
             + [Overzicht](./developing/extensibility/ui/content-fragments/overview.md)
-            + Voorbeelden{#examples}
+            + Voorbeelden {#examples}
                + [Genereren van AI-afbeelding](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
                + [Bulkeigenschappenupdate](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
                + [Aangepaste rasterkolommen](./developing/extensibility/ui/content-fragments/examples/custom-grid-columns.md)
@@ -86,7 +86,7 @@ ht-degree: 5%
                + [RTE-widgets](./developing/extensibility/ui/content-fragments/examples/editor-rte-widget.md)
                + [RTE-badges](./developing/extensibility/ui/content-fragments/examples/editor-rte-badges.md)
                + [Aangepaste velden](./developing/extensibility/ui/content-fragments/examples/editor-custom-field.md)
-   + Grondbeginselen van ontwikkeling{#basics}
+   + Grondbeginselen van ontwikkeling {#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Lokale ontwikkelomgeving](./developing/basics/local-development-environment.md)
       + [Projectarchetype AEM](./developing/basics/aem-project-archetype.md)
@@ -96,73 +96,73 @@ ht-degree: 5%
       + [Inhoud publiceren](./developing/basics/content-publishing.md)
       + [OSGi-configuraties](./developing/basics/osgi-configurations.md)
       + [Dispatcher-configuratiemigratie](./developing/basics/dispatcher-configuration.md)
-   + AEM{#aem-projects}
+   + AEM projecten {#aem-projects}
       + [AEM Maven Project](./developing/projects/maven-project-structure.md)
       + [Een AEM Maven-project opschonen](./developing/projects/remove-samples.md)
-   + OSGi Services{#osgi-services}
+   + OSGi Services {#osgi-services}
       + [OSGi Service Basics](./developing/osgi-services/basics.md)
       + [OSGi-componentlevenscyclus](./developing/osgi-services/lifecycle.md)
       + [Basisprincipes van OSGi-configuraties](./developing/osgi-services/configurations.md)
       + [OSGi Configurations die OCD gebruiken](./developing/osgi-services/configurations-ocd.md)
-   + Geavanceerd{#advanced}
-      + [Paginariabelen in cache plaatsen](./developing/advanced/variant-caching.md)
+   + Geavanceerd {#advanced}
+      + [ Caching de Varianten van de Pagina ](./developing/advanced/variant-caching.md)
       + [CSRF-beveiliging](./developing/advanced/csrf-protection.md)
       + [Aangepaste naamruimten](./developing/advanced/custom-namespaces.md)
       + [Servicegebruikers](./developing/advanced/service-users.md)
       + [Web-geoptimaliseerde beeld APIs](./developing/advanced/web-optimized-image-delivery-java-apis.md)
-   + Snelle ontwikkelomgeving{#rde}
+   + Snelle ontwikkelomgeving {#rde}
       + [Overzicht](./developing/rde/overview.md)
       + [Hoe kan ik-instellingen](./developing/rde/how-to-setup.md)
       + [Hoe wordt het gebruikt](./developing/rde/how-to-use.md)
       + [Levenscyclus van ontwikkeling](./developing/rde/development-life-cycle.md)
-   + Universele editor{#universal-editor}
-      + Toepassingen bewerken{#react-app-editing}
+   + Universal Editor {#universal-editor}
+      + Toepassingen bewerken reageren {#react-app-editing}
          + [Overzicht](./developing/universal-editor/react-app/overview.md)
          + [Instelling voor lokale ontwikkeling](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrument React App](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + [AEM SDK API JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + [ AEM SDK API JavaDocs ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html) {target=_blank}
 + Foutopsporing AEM{#debugging}
-   + Fouten opsporen in de AEM SDK{#debugging-aem-sdk}
+   + Het zuiveren van de AEM SDK {#debugging-aem-sdk}
       + [Overzicht](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Logboeken](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Foutopsporing op afstand](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
       + [OSGi-webconsole](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Dispatcher Tools](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Ander gereedschap](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Foutopsporing in AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Foutopsporing in AEM as a Cloud Service {#debugging-aem-as-a-cloud-service}
       + [Overzicht](./debugging/cloud-service/overview.md)
       + [Logboeken](./debugging/cloud-service/logs.md)
       + [Opbouwen en implementeren](./debugging/cloud-service/build-and-deployment.md)
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [Browser voor opslagplaats](./debugging/cloud-service/repository-browser.md)
-      + Risico&#39;s{#risks}
+      + Risks {#risks}
          + [Traversale waarschuwingen](./debugging/cloud-service/risks/traversals.md)
-+ Inhoud leveren{#content-delivery}
-   + [URL-omleidingen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
++ Inhoud leveren {#content-delivery}
+   + [ opnieuw richt URL ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html) {target=_blank}
 + Caching{#caching}
    + [Overzicht](./caching/overview.md)
    + [AEM Publish-service](./caching/publish.md)
    + [AEM Auteur-service](./caching/author.md)
    + [Analyse van hoogte-breedteverhouding CDN-cache](./caching/cdn-cache-hit-ratio-analysis.md)
-   + Procedure{#how-to}
+   + Procedure {#how-to}
       + [Opslaan in cache inschakelen](./caching/how-to/enable-caching.md)
-      + [Cache uitschakelen](./caching/how-to/disable-caching.md)
-+ Toegang tot AEM{#accessing}
+      + [ maak caching ](./caching/how-to/disable-caching.md) onbruikbaar
++ Toegang tot AEM {#accessing}
    + [Overzicht](./accessing/overview.md)
    + [Adobe IMS-gebruikers](./accessing/adobe-ims-users.md)
    + [Adobe IMS-gebruikersgroepen](./accessing/adobe-ims-user-groups.md)
    + [Adobe IMS-productprofielen](./accessing/adobe-ims-product-profiles.md)
    + [AEM gebruikers, groepen en machtigingen](./accessing/aem-users-groups-and-permissions.md)
    + [Toegang tot AEM doorlopen configureren](./accessing/walk-through.md)
-+ Verificatie{#authentication}
++ Verificatie {#authentication}
    + [Overzicht](./authentication/authentication.md)
    + [SAML 2.0](./authentication/saml-2-0.md)
-+ Geavanceerde netwerken{#networking}
++ Geavanceerde netwerken {#networking}
    + [Overzicht](./networking/advanced-networking.md)
    + [Flexibele poortuitgang](./networking/flexible-port-egress.md)
    + [IP-adres van specifiek egress](./networking/dedicated-egress-ip-address.md)
    + [Virtueel privé netwerk](./networking/vpn.md)
-   + Codevoorbeelden{#examples}
+   + Codevoorbeelden {#examples}
       + [HTTP/HTTPS op niet-standaardpoorten voor flexibel poortuitgang](./networking/examples/http-on-non-standard-ports-flexible-port-egress.md)
       + [HTTP/HTTPS voor specifiek uitgang IP adres/VPN](./networking/examples/http-dedicated-egress-ip-vpn.md)
       + [SQL-verbindingen met DataSourcePool](./networking/examples/sql-datasourcepool.md)
@@ -170,14 +170,14 @@ ht-degree: 5%
       + [E-mailservice](./networking/examples/email-service.md)
 + Beveiliging {#security}
    + [Het blokkeren Dos/DDoS aanvallen gebruikend de regels van de verkeersfilter](./security/blocking-dos-attack-using-traffic-filter-rules.md)
-   + Verkeersfilterregels inclusief WAF-regels{#traffic-filter-and-waf-rules}
+   + De regels van de Filter van het verkeer met inbegrip van de regels van WAF {#traffic-filter-and-waf-rules}
       + [Overzicht](./security/traffic-filter-rules/overview.md)
       + [Hoe kan ik-instellingen](./security/traffic-filter-rules/how-to-setup.md)
       + [Voorbeelden en resultaatanalyse](./security/traffic-filter-rules/examples-and-analysis.md)
       + [Aanbevolen procedures](./security/traffic-filter-rules/best-practices.md)
-+ AEM{#aem-eventing}
++ AEM {#aem-eventing}
    + [Overzicht](./eventing/overview.md)
-   + Voorbeelden{#examples}
+   + Voorbeelden {#examples}
       + [Webhaak - Ontvang AEM gebeurtenissen](./eventing/examples/webhook.md)
       + [Journaling - AEM gebeurtenissen laden](./eventing/examples/journaling.md)
       + [Adobe I/O Runtime-actie - AEM gebeurtenissen ontvangen](./eventing/examples/runtime-action.md)
@@ -217,9 +217,9 @@ ht-degree: 5%
       + [De tool Asset Workflow Migration](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navigeren door de Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [De Cloud Acceleration Manager gebruiken](./migration/cloud-acceleration-manager/using.md)
-+ [Inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
++ [ Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html) {target=_blank}
 + Forms{#forms}
-   + Ontwikkelen voor Forms as a Cloud Service{#developing-for-cloud-service}
+   + Ontwikkelen voor Forms as a Cloud Service {#developing-for-cloud-service}
       + [1 - Aan de slag](./forms/developing-for-cloud-service/getting-started.md)
       + [2 - Installeer IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
       + [3 - Instellingsopening](./forms/developing-for-cloud-service/setup-git.md)
@@ -233,7 +233,7 @@ ht-degree: 5%
       + [11 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [12 - Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
       + [13 - Gemaakt archetype bijwerken](./forms/developing-for-cloud-service/updating-project-archetype.md)
-   + Adaptief formulier maken{#create-first-af}
+   + Adaptief formulier maken {#create-first-af}
       + [Inleiding](./forms/create-first-af/introduction.md)
       + [Thema maken](./forms/create-first-af/create-theme.md)
       + [Sjabloon maken](./forms/create-first-af/create-template.md)
@@ -245,16 +245,16 @@ ht-degree: 5%
       + [Deelvenster Elementen configureren](./forms/create-first-af/configure-assets-panel.md)
       + [Deelvenster Start configureren](./forms/create-first-af/configure-start-panel.md)
       + [Werkbalk Toevoegen en configureren](./forms/create-first-af/add-configure-toolbar.md)
-   + Aangepaste verzendservice met headless-formulier{#custom-submit-headless-forms}
+   + Aangepaste verzendservice met koploze vorm {#custom-submit-headless-forms}
       + [1 - Inleiding](./forms/custom-submit-headless-forms/introduction.md)
       + [2 - Een aangepaste verzendservice maken](./forms/custom-submit-headless-forms/custom-submit-service.md)
       + [3 - Het antwoord weergeven](./forms/custom-submit-headless-forms/handle-response-react-app.md)
-   + Adresblokcomponent maken{#create-address-block}
+   + Adresblokcomponent maken {#create-address-block}
       + [1 - Inleiding](./forms/create-address-block-component/introduction.md)
       + [2 - Instellen](./forms/create-address-block-component/set-up.md)
       + [3 - Component maken](./forms/create-address-block-component/creating-address-component.md)
       + [4 - Component implementeren](./forms/create-address-block-component/deploy-your-project.md)
-   + AEM Forms en Analytics{#forms-and-analytics}
+   + AEM Forms en Analytics {#forms-and-analytics}
       + [Inleiding](./forms/form-data-analytics/introduction.md)
       + [Gegevenselementen maken](./forms/form-data-analytics/data-elements.md)
       + [Regels maken](./forms/form-data-analytics/rules.md)
@@ -267,15 +267,15 @@ ht-degree: 5%
       + [Gegevens samenvoegen met sjabloon](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [De oplossing testen](./forms/doc-gen-forms-cs/test.md)
       + [Uitdaging](./forms/doc-gen-forms-cs/challenge.md)
-   + DocAssurance API gebruiken{#doc-assurance-api}
-+[Voorbeeldcodefragmenten](./forms/doc-assurance-api/using-doc-assurance-api.md)
-   + Documentgeneratie met behulp van batch-API{#formscs-batch-api}
+   + DocAssurance API gebruiken {#doc-assurance-api}
++ [ de codefragmenten van de Steekproef ](./forms/doc-assurance-api/using-doc-assurance-api.md)
+   + Documentgeneratie met gebruik van batch-API {#formscs-batch-api}
       + [Inleiding](./forms/formscs-batch-api/introduction.md)
       + [Azure-opslag configureren](./forms/formscs-batch-api/configure-azure-storage.md)
       + [Configuratie USC-batch maken](./forms/formscs-batch-api/configure-usc-batch.md)
       + [Batchconfiguratie maken](./forms/formscs-batch-api/create-batch-config.md)
       + [Batch uitvoeren](./forms/formscs-batch-api/execute-batch-generate-documents.md)
-   + PDF-manipulatie in Forms CS{#forms-cs-assembler}
+   + PDF Manipulation in Forms CS{#forms-cs-assembler}
       + [Inleiding](./forms/forms-cs-assembler/introduction.md)
       + [Servicereferenties maken](./forms/forms-cs-assembler/service-credentials.md)
       + [JWT-token maken](./forms/forms-cs-assembler/create-jwt.md)
@@ -284,23 +284,23 @@ ht-degree: 5%
       + [PDF/A-hulpprogramma](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [De oplossing testen](./forms/forms-cs-assembler/test.md)
       + [Uitdaging](./forms/forms-cs-assembler/challenge.md)
-   + Formulierverzendingen opslaan met BLOB-indexcodes{#store-submiited-data-with-metadata-tags}
+   + Formulierverzendingen opslaan met BLOB-indexcodes {#store-submiited-data-with-metadata-tags}
       + [Inleiding](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Uitbreiden keuzegroep](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
       + [OSGi-configuratie maken](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
       + [Indexcodes maken](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
       + [Aangepaste verzending maken](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
-   + Op kerncomponenten gebaseerd formulier vooraf invullen{#prefill-core-component-based-form}
+   + Op kerncomponenten gebaseerde vorm vooraf invullen {#prefill-core-component-based-form}
       + [Inleiding](./forms/prefill-core-component-form/introduction.md)
       + [Prefill-service schrijven](./forms/prefill-core-component-form/pre-fill-service.md)
       + [De oplossing testen](./forms/prefill-core-component-form/test-solution.md)
-   + Azure Portal Storage{#forms-cs-azure-portal}
+   + Azure Portal Storage {#forms-cs-azure-portal}
       + [Inleiding](./forms/forms-cs-azure-portal/introduction.md)
       + [Formuliergegevensmodel maken](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Formuliergegevens opslaan in Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
       + [Vooraf ingevuld formulier](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Query-verzendingen](./forms/forms-cs-azure-portal/query-submitted-data.md)
-   + Formuliervulling opslaan en hervatten{#prefill-azure-storage}
+   + Formulier invullen opslaan en hervatten {#prefill-azure-storage}
       + [1- Inleiding](./forms/prefill-azure-storage/introduction.md)
       + [2- Het onderdeel Pagina maken](./forms/prefill-azure-storage/page-component.md)
       + [3- Een adaptieve formuliersjabloon maken](./forms/prefill-azure-storage/associate-page-component.md)
@@ -309,27 +309,27 @@ ht-degree: 5%
       + [6 - Het adaptieve formulier maken](./forms/prefill-azure-storage/create-af.md)
       + [7 - De voorbeeldelementen implementeren](./forms/prefill-azure-storage/deploy-sample-assets.md)
 
-   + Revisiewerkstroom maken{#create-aem-workflow}
+   + Revisieworkflow maken {#create-aem-workflow}
       + [Workflowopslag extern maken](./forms/create-aem-workflow/externalize-workflow.md)
       + [Workflowmodel maken](./forms/create-aem-workflow/create-workflow.md)
       + [Triggerwerkstroom](./forms/create-aem-workflow/configure-af.md)
-   + Acrobat Sign met AEM Forms{#forms-and-sign}
+   + Acrobat Sign met AEM Forms {#forms-and-sign}
       + [Inleiding](./forms/forms-and-sign/introduction.md)
       + [Acrobat Sign API-toepassing](./forms/forms-and-sign/create-sign-api-application.md)
       + [Acrobat Sign Cloud Configuration](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Adaptief formulier maken](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configureren voor invullen en ondertekenen](./forms/forms-and-sign/configure-form-fill-and-sign.md)
-   + Integreren met Microsoft Power Automate{#forms-cs-and-power-automate}
+   + Integreren met Microsoft Power Automate {#forms-cs-and-power-automate}
       + [De integratie configureren](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [Ingevulde formuliergegevens parseren](./forms/forms-cs-and-power-automate/send-email-notification.md)
       + [DoR verzenden als e-mailbijlage](./forms/forms-cs-and-power-automate/send-dor-email-attachment.md)
       + [Formulierbijlagen uitnemen van verzonden gegevens](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
-   + Integreren met Microsoft Dynamics{#formscs-dynamics-crm}
+   + Integreren met Microsoft Dynamics {#formscs-dynamics-crm}
       + [Dynamische toepassing maken](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Source van gegevens configureren](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [Formuliergegevensmodel maken](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [Adaptief formulier maken](./forms/formscs-dynamics-crm/create-adaptive-form.md)
-   + Integreren met Salesforce{#integrate-with-salesforce}
+   + Integreren met Salesforce {#integrate-with-salesforce}
       + [Inleiding](./forms/integrate-with-salesforce/introduction.md)
       + [Gekoppelde app maken](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Wagerbestand maken](./forms/integrate-with-salesforce/describe-rest-api.md)
@@ -337,46 +337,46 @@ ht-degree: 5%
       + [Formuliergegevensmodel maken](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Indiening van testformulieren](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Klikgebeurtenis testen](./forms/integrate-with-salesforce/create-lead-click-event.md)
-   + Formulierverzendingen opslaan in één station en één gedeeld aanspreekpunt{#one-drive}
+   + Formulierverzendingen opslaan in één station en sharepoint {#one-drive}
       + [Formuliergegevens opslaan in één station](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
       + [Formuliergegevens opslaan in SharePoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [Formulier vooraf invullen met gegevens uit SharePoint-lijst](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
       + [Gegevens in SharePoint-lijst invoegen met behulp van workflow](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
-+ Uitbreidbaarheid asset compute{#asset-compute}
++ Uitbreidbaarheid asset compute {#asset-compute}
    + [Overzicht](./asset-compute/overview.md)
-   + Instellen{#set-up}
+   + Instellen {#set-up}
       + [Account en service-provisioning](./asset-compute/set-up/accounts-and-services.md)
       + [Lokale ontwikkelomgeving](./asset-compute/set-up/development-environment.md)
       + [App Builder](./asset-compute/set-up/app-builder.md)
-   + Ontwikkelen{#develop}
+   + Ontwikkelen {#develop}
       + [Een Asset compute maken](./asset-compute/develop/project.md)
       + [Omgevingsvariabelen configureren](./asset-compute/develop/environment-variables.md)
       + [Vorm manifest.yml](./asset-compute/develop/manifest.md)
       + [Een worker ontwikkelen](./asset-compute/develop/worker.md)
       + [Het gereedschap Ontwikkeling gebruiken](./asset-compute/develop/development-tool.md)
-   + Testen en fouten opsporen{#test-debug}
+   + Testen en fouten opsporen {#test-debug}
       + [Een worker testen](./asset-compute/test-debug/test.md)
       + [Fouten opsporen in een worker](./asset-compute/test-debug/debug.md)
-   + Implementeren{#deploy}
+   + Implementeren {#deploy}
       + [Distribueren naar Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
       + [Integreren met AEM](./asset-compute/deploy/processing-profiles.md)
-   + Geavanceerd{#advanced}
+   + Geavanceerd {#advanced}
       + [Metagegevensworkers](./asset-compute/advanced/metadata.md)
    + [Problemen oplossen](./asset-compute/troubleshooting.md)
 
-+ Tutorials met meerdere stappen{#multi-step-tutorials}
-   + [AEM Sites-ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
-   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html){target=_blank}
-   + [SPA Editor (reageren)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [AEM Sites en Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
-   + [Op token gebaseerde verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
-+ Expertbronnen {#expert-resources}
++ Tutorials met meerdere stappen {#multi-step-tutorials}
+   + [ de ontwikkeling van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) {target=_blank}
+   + [ GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) {target=_blank}
+   + [ SPA Redacteur (Reageren) ](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html) {target=_blank}
+   + [ AEM Sites en Adobe Target ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html) {target=_blank}
+   + [ Op token-gebaseerde authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) {target=_blank}
++ Expert Resources {#expert-resources}
    + AEM Champions {#aem-champions}
       + [Cloud Manager on boarding Playbook](./expert-resources/aem-champions/onboarding-playbook.md)
       + [Cloud Manager-omgevingstypen](./expert-resources/aem-champions/environment-types.md)
       + [CLOUD MANAGER UI](./expert-resources/aem-champions/cloud-manager-ui.md)
    + [AEM Deskundigenreeks](./expert-resources/expert-series/aem-experts-series.md)
-   + Wolk 5{#cloud-5}
+   + Wolk 5 {#cloud-5}
       + [Inleiding](./expert-resources/cloud-5/cloud5-introduction.md)
       + [Seizoen 1](./expert-resources/cloud-5/cloud5-season-1.md)
       + [Seizoen 2](./expert-resources/cloud-5/cloud5-season-2.md)
@@ -391,7 +391,7 @@ ht-degree: 5%
       + [Dispatcher Validator](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
       + [Zoeken en indexeren](./expert-resources/cloud-5/cloud5-aem-search-and-indexing.md)
       + [Adobe App Builder](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
-      + Seizoen 2{#season-2}
+      + Seizoen 2 {#season-2}
          + [Fragmenten](./expert-resources/cloud-5/season-2/cloud5-experience-v-content-fragments.md)
          + [Repo Modernizer](./expert-resources/cloud-5/season-2/cloud5-repo-modernizer.md)
          + [Admin Console](./expert-resources/cloud-5/season-2/cloud5-admin-console.md)
@@ -402,7 +402,7 @@ ht-degree: 5%
          + [Cloud Manager - Experience Audit](./expert-resources/cloud-5/season-2/cloud5-mocm-experience-audit.md)
          + [Cloud Manager - Eenheidstests](./expert-resources/cloud-5/season-2/cloud5-mocm-unit-tests.md)
          + [Cloud Manager - Functionele tests](./expert-resources/cloud-5/season-2/cloud5-mocm-functional-tests.md)
-      + Seizoen 3{#season-3}
+      + Seizoen 3 {#season-3}
          + [Zoeken van derden](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [Real User Monitoring (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum.md)
          + [Edge Workers](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)

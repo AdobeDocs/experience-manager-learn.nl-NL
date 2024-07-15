@@ -1,6 +1,6 @@
 ---
-title: AMS Dispatcher Basic File Layout
-description: Begrijp de basisbestandsindeling van Apache en Dispatcher.
+title: AMS Dispatcher Basic-bestandsindeling
+description: Begrijp de basisbestandslay-out van Apache en Dispatcher.
 version: 6.5
 topic: Administration, Development
 feature: Dispatcher
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 [Inhoudsopgave](./overview.md)
 
-[&lt;- Vorige: wat is &quot;De verzender&quot;](./what-is-the-dispatcher.md)
+[&lt;- Vorige: wat is &quot;De Dispatcher&quot;](./what-is-the-dispatcher.md)
 
 In dit document wordt de standaardset configuratiebestanden van AMS beschreven en wordt de gedachte achter deze configuratiestandaard uitgelegd
 
@@ -59,13 +59,13 @@ Wanneer het volgende en het naleven van het installatieontwerp/de structuur krij
 - Hiermee worden patchcycli toegestaan die volledig worden ondersteund door het besturingssysteem zonder conflicten of handmatige aanpassingen
 - Hiermee voorkomt u schendingen van SELinux van verkeerd gelabelde bestandskaders
 
->[!BEGINSHADEBOX &quot;Opmerking&quot;]
+>[!BEGINSHADEBOX  &quot;Nota&quot;]
 
-De Adobe Managed Services-serverimages hebben doorgaans kleine hoofdstations van het besturingssysteem.  We zetten onze gegevens in een apart volume dat normaal gesproken in `/mnt`
+De Adobe Managed Services-serverimages hebben doorgaans kleine hoofdstations van het besturingssysteem.  We plaatsen onze gegevens in een afzonderlijk volume dat normaal gesproken in `/mnt` wordt gemonteerd
 Dan gebruiken wij dat volume in plaats van de gebreken voor de volgende standaardfolders
 
 `DocumentRoot`
-- Standaard:`/var/www/html`
+- Standaard: `/var/www/html`
 - AMS:`/mnt/var/www/html`
 
 `Log Directory`
@@ -86,7 +86,7 @@ AMS voegt een toevoeging toe aan de basisinstallatie van Apache Web Server.
 AMS-standaardachterbasis voor documenten:
 - Auteur:
    - `/mnt/var/www/author/`
-- Publiceren:
+- Publish:
    - `/mnt/var/www/html/`
 - Onderhoud van alle vangsten en de health check
    - `/mnt/var/www/default/`
@@ -95,29 +95,29 @@ AMS-standaardachterbasis voor documenten:
 
 Met de volgende mappen kunt u configuratiebestanden samenstellen met een parkeergebied dat u kunt bewerken aan bestanden en vervolgens alleen kunt inschakelen wanneer deze gereed zijn.
 - `/etc/httpd/conf.d/available_vhosts/`
-   - In deze map worden alle VirtualHost/-bestanden gehost die u noemt `.vhost`
+   - In deze map worden al uw VirtualHost / bestanden met de naam `.vhost` gehost
 - `/etc/httpd/conf.d/enabled_vhosts/`
-   - Wanneer u klaar bent om te gebruiken `.vhost` bestanden, hebt u binnen de `available_vhosts` map die hen een relatief pad naar het `enabled_vhosts` directory
+   - Als u klaar bent om de `.vhost` -bestanden te gebruiken, bevindt u zich in de `available_vhosts` -map en gebruikt u een relatief pad naar de `enabled_vhosts` -map
 
-### Extra `conf.d` Mappen
+### Aanvullende `conf.d` directory&#39;s
 
 Er zijn aanvullende onderdelen die veel voorkomen in Apache-configuraties en we hebben submappen gemaakt voor een schone manier om deze bestanden van elkaar te scheiden en niet alle bestanden in één directory te plaatsen
 
 #### Map opnieuw schrijven
 
-Deze map kan alle `_rewrite.rules` bestanden die u maakt en die uw standaard RewriteRulesyntax bevatten waarop Apache-webservers worden toegepast [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) module
+Deze folder kan alle `_rewrite.rules` dossiers bevatten u creeert die uw typische RewriteRulesyntax bevatten die Apache Webservers [ mod_rewrite ](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) module in dienst nemen
 
 - `/etc/httpd/conf.d/rewrites/`
 
 #### Map Whitelists
 
-Deze map kan alle `_whitelist.rules` bestanden die u maakt, die uw standaardbestanden bevatten `IP Allow` of `Require IP`syntaxis voor Apache-webservers [toegangsbesturingselementen](https://httpd.apache.org/docs/2.4/howto/access.html)
+Deze folder kan alle `_whitelist.rules` dossiers bevatten u creeert die uw typische `IP Allow` of `Require IP` syntaxis bevatten die Apache Webservers [ toegangscontroles ](https://httpd.apache.org/docs/2.4/howto/access.html) in dienst nemen
 
 - `/etc/httpd/conf.d/whitelists/`
 
 #### Directory voor variabelen
 
-Deze map kan alle `.vars` bestanden die u maakt en variabelen bevatten die u in uw configuratiebestanden kunt gebruiken
+Deze map kan alle `.vars` bestanden bevatten die u maakt en die variabelen bevatten die u kunt gebruiken in uw configuratiebestanden
 
 - `/etc/httpd/conf.d/variables/`
 
@@ -135,41 +135,41 @@ We volgen de beste praktijken en creëerden onze eigen
 
 Met de volgende mappen kunt u configuratiebestanden samenstellen met een parkeergebied dat u kunt bewerken aan bestanden en vervolgens alleen kunt inschakelen wanneer deze gereed zijn.
 - `/etc/httpd/conf.dispatcher.d/available_farms/`
-   - In deze map worden alle `/myfarm {` bestanden aangeroepen `_farm.any`
+   - Deze map bevat alle `/myfarm {` -bestanden die `_farm.any` worden genoemd
 - `/etc/httpd/conf.dispatcher.d/enabled_farms/`
    - Wanneer u bereid bent om het landbouwbedrijfdossier te gebruiken, hebt u binnen de available_farm omslag symlink hen gebruikend een relatieve weg in de enabled_farm folder
 
-### Extra `conf.dispatcher.d` Mappen
+### Aanvullende `conf.dispatcher.d` directory&#39;s
 
-Er zijn extra stukken die subsecties zijn van de configuraties van het de landbouwbedrijfdossier van de Verzender en wij creeerden subfolders om voor een schone manier toe te staan om die dossiers te scheiden en niet alle dossiers in één folder te hebben
+Er zijn extra stukken die subsecties zijn van de configuraties van het de landbouwbedrijfdossier van Dispatcher en wij creeerden subfolders om voor een schone manier toe te staan om die dossiers te scheiden en niet alle dossiers in één folder te hebben
 
 #### Cache Directory
 
-Deze map bevat alle `_cache.any`, `_invalidate.any` bestanden die u maakt, bevatten uw regels voor de manier waarop u wilt dat de module caching-elementen van AEM en syntaxis voor validatieregels afhandelt.  Meer informatie over deze sectie vindt u hier [hier](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Deze map bevat alle `_cache.any` , `_invalidate.any` -bestanden die u maakt en die uw regels bevatten over de manier waarop de module caching-elementen moet verwerken die afkomstig zijn van AEM en syntaxis van validatieregels.  Meer details op deze sectie zijn hier [ ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 
 #### Map met clientkoppen
 
-Deze map kan alle `_clientheaders.any` de dossiers u creeert die lijsten van de Kopballen van de Cliënt bevatten u tot AEM wilt overgaan wanneer een verzoek binnen komt.  Meer informatie over deze sectie vindt u in [hier](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en)
+Deze map kan alle `_clientheaders.any` bestanden bevatten die u maakt en lijsten met clientkoppen bevatten die u wilt doorgeven aan AEM wanneer een aanvraag wordt ingediend.  Meer details op deze sectie zijn [ hier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
 #### Filtermap
 
-Deze map kan alle `_filters.any` de dossiers u creeert die al uw filterregels bevatten om verkeer door de Verzender te blokkeren of toe te staan om AEM te bereiken
+Deze map kan alle `_filters.any` bestanden bevatten die u maakt en die al uw filterregels bevatten om het verkeer door de Dispatcher te blokkeren of te laten bereiken AEM
 
 - `/etc/httpd/conf.dispatcher.d/filters/`
 
 #### Map renderen
 
-Deze map kan alle `_renders.any` bestanden die u maakt en die de connectiviteitsgegevens bevatten voor elke back-endserver waarvan de verzender inhoud gebruikt
+Deze map kan alle `_renders.any` bestanden bevatten die u maakt en die de connectiviteitsgegevens bevatten voor elke backendserver waarvan de verzender inhoud gebruikt.
 
 - `/etc/httpd/conf.dispatcher.d/renders/`
 
 #### Vhosts-map
 
-Deze map kan alle `_vhosts.any` dossiers u creeert die een lijst van de domeinnamen en wegen bevatten om met een bepaald landbouwbedrijf aan een bepaalde achterste deelserver aan te passen
+Deze map kan alle `_vhosts.any` bestanden bevatten die u maakt en die een lijst bevatten met de domeinnamen en -paden die moeten worden aangepast aan een bepaalde farm aan een bepaalde back-end server
 
 - `/etc/httpd/conf.dispatcher.d/vhosts/`
 
@@ -276,20 +276,20 @@ Enterprise Linux heeft patchcycli voor het Apache Webserver Package (httpd).
 
 Hoe minder geïnstalleerde standaardbestanden u hoe beter verandert, omdat als er oplossingen voor patches of configuratieverbeteringen zijn toegepast via de opdracht RPM/Yum, de correcties niet boven op een gewijzigd bestand worden toegepast.
 
-In plaats daarvan wordt een `.rpmnew` naast het origineel.  Dit betekent u sommige veranderingen zult missen u zou kunnen gewild en meer huisvuil in uw configuratiemappen tot stand gebracht hebben.
+In plaats daarvan wordt een `.rpmnew` -bestand gemaakt naast het origineel.  Dit betekent u sommige veranderingen zult missen u zou kunnen gewild en meer huisvuil in uw configuratiemappen tot stand gebracht hebben.
 
-De RPM tijdens de installatie van de update zal dus kijken naar `httpd.conf` als het in `unaltered` verklaren dat *vervangen* en u krijgt de essentiële updates.  Als de `httpd.conf` was `altered` dan *niet vervangen* het bestand en maakt een referentiebestand met de naam `httpd.conf.rpmnew` en de vele gewenste moeilijke situaties zullen in dat dossier zijn dat niet op de dienstopstarten van toepassing is.
+d.w.z. RPM tijdens updateinstallatie zal `httpd.conf` bekijken als het in de `unaltered` staat is het ** het dossier zal vervangen en u zult de vitale updates krijgen.  Als `httpd.conf` `altered` toen was zal het *niet* het dossier vervangen en in plaats daarvan zal het een verwijzingsdossier genoemd `httpd.conf.rpmnew` creëren en de vele gewenste moeilijke situaties zullen in dat dossier zijn dat niet op de dienstopstarten van toepassing is.
 
-Enterprise Linux is op de juiste wijze ingesteld om deze gebruikszaak op een betere manier te verwerken.  U krijgt gebieden waarin u de standaardinstellingen die u voor u instelt, kunt uitbreiden of overschrijven.  In de basisinstallatie van httpd vindt u het bestand `/etc/httpd/conf/httpd.conf`en bevat de syntaxis zoals:
+Enterprise Linux is op de juiste wijze ingesteld om deze gebruikszaak op een betere manier te verwerken.  U krijgt gebieden waarin u de standaardinstellingen die u voor u instelt, kunt uitbreiden of overschrijven.  In de basisinstallatie van httpd vindt u het bestand `/etc/httpd/conf/httpd.conf` en bevat het de volgende syntaxis:
 
 ```
 Include conf.modules.d/.conf
 IncludeOptional conf.d/.conf
 ```
 
-Het idee is dat Apache wil dat u de modules en configuraties uitbreidt in het toevoegen van nieuwe bestanden aan de `/etc/httpd/conf.d/` en `/etc/httpd/conf.modules.d/` mappen met een bestandsextensie van `.conf`
+Apache wil dat u de modules en configuraties uitbreidt bij het toevoegen van nieuwe bestanden aan de mappen `/etc/httpd/conf.d/` en `/etc/httpd/conf.modules.d/` met de bestandsextensie `.conf` .
 
-Als perfect voorbeeld bij het toevoegen van de module Dispatcher aan Apache maakt u een module `.so` bestand in ` /etc/httpd/modules/` en neem het vervolgens op door een bestand toe te voegen in `/etc/httpd/conf.modules.d/02-dispatcher.conf` met de inhoud die uw module moet laden `.so` file
+Als perfect voorbeeld bij het toevoegen van de Dispatcher-module aan Apache maakt u een module `.so` -bestand in ` /etc/httpd/modules/` en neemt u dit bestand op door een bestand in `/etc/httpd/conf.modules.d/02-dispatcher.conf` toe te voegen met de inhoud om het module `.so` -bestand te laden
 
 ```
 LoadModule dispatcher_module modules/mod_dispatcher.so
@@ -299,7 +299,7 @@ LoadModule dispatcher_module modules/mod_dispatcher.so
 >
 >Er zijn geen bestaande Apache-bestanden gewijzigd. In plaats daarvan hebben we gewoon onze eigen directory&#39;s toegevoegd.
 
-Nu gebruiken we onze module in ons bestand <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> dat onze module initialiseert en het aanvankelijke module-specifieke configuratiedossier laadt
+Nu verbruiken wij onze module in ons dossier <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> dat onze module initialiseert en het aanvankelijke module-specifieke configuratiedossier laadt
 
 ```
 <IfModule disp_apache2.c> 

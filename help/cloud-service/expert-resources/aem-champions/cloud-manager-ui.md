@@ -1,6 +1,6 @@
 ---
-title: AEM Champion Tips and Tricks - Cloud Manager-interface
-description: Lees deze tips voor het gebruik van de interface van Cloud Manager van AEM kampioen en expert, Rakesh Pasupuleti.
+title: AEM Champion Tips and Tricks - gebruikersinterface van Cloud Manager
+description: Bekijk deze tips voor het gebruik van de gebruikersinterface van Cloud Manager van AEM kampioen en expert, Rakesh Pasupuleti.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 ---
 
-# AEM Champion Tips and Tricks - Cloud Manager-interface
+# AEM Champion Tips and Tricks - gebruikersinterface van Cloud Manager
 
-Ontdek deze tips van uw technische collega, Rakesh Pasupuleti. Rakesh is een Adobe Experience Manager-kampioen en legt uit hoe u door de gebruikersinterface van Cloud Manager kunt navigeren en deze kunt begrijpen.
+Ontdek deze tips van uw technische collega, Rakesh Pasupuleti. Rakesh is een Adobe Experience Manager-kampioen en legt uit hoe u door Cloud Manager kunt navigeren en hoe u de gebruikersinterface van begrijpt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419298?quality=12&learn=on)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) - Documentatie over het gebruik van Cloud Manager in AEM as a Cloud Service
+* [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) - Documentatie bij het gebruiken van Cloud Manager in AEM as a Cloud Service

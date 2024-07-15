@@ -27,14 +27,14 @@ Deze zelfstudie begeleidt u door de stappen die nodig zijn om een AEM Forms-proj
 
 In deze zelfstudie wordt de volgende stap gezet in de mapstructuur.
 
-* [JDK 11 installeren](https://www.oracle.com/java/technologies/downloads/#java11-windows). Ik heb jdk-11.0.6_windows-x64_bin.zip gedownload
-* [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).Als u bijvoorbeeld Maven hebt geïnstalleerd in de map c:\maven, moet u een omgevingsvariabele met de naam M2_HOME maken met de waarde C:\maven\apache-maven-3.6.0. Voeg vervolgens M2_HOME\bin toe aan het pad en sla uw instelling op.
+* [ installeer JDK 11 ](https://www.oracle.com/java/technologies/downloads/#java11-windows). Ik heb jdk-11.0.6_windows-x64_bin.zip gedownload
+* [ Gemaakt ](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).Bijvoorbeeld als u Geweven in c:\maven omslag hebt geïnstalleerd, zult u een milieuvariabele geroepen M2_HOME met waarde C:\maven\apache-maven-3.6.0 moeten tot stand brengen. Voeg vervolgens M2_HOME\bin toe aan het pad en sla uw instelling op.
 
 ## Maven-project maken met AEM projectarchetype
 
-* Een map maken met de naam **cloudmanager**(u kunt het om het even welke naam geven) in uw c aandrijving
-* Open uw opdrachtpromptvenster en navigeer naar **c:\cloudmanager**
-* Kopieer en plak de inhoud van de [tekstbestand](assets/creating-maven-project.txt) in uw opdrachtpromptvenster. Afhankelijk van het dialoogvenster [nieuwste versie](https://github.com/adobe/aem-project-archetype/releases). De meest recente versie was 30 op het moment dat dit artikel werd geschreven.
+* Creeer een omslag genoemd **cloudmanager** (u kunt het om het even welke naam) in uw aandrijving van c geven
+* Open uw venster van de bevelherinnering en navigeer aan **c:\cloudmanager**
+* Kopieer en kleef de inhoud van het [ tekstdossier ](assets/creating-maven-project.txt) in uw venster van de bevelherinnering. U kunt DarchetypeVersion=30 afhankelijk van de [ recentste versie ](https://github.com/adobe/aem-project-archetype/releases) moeten veranderen. De meest recente versie was 30 op het moment dat dit artikel werd geschreven.
 * Voer het bevel uit door op Enter te drukken.Als alles correct gaat zou u het bericht van het bouwstijlsucces moeten zien.
 
 ## Volgende stappen

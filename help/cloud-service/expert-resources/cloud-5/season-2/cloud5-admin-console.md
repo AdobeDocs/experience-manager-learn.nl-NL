@@ -24,5 +24,5 @@ Ik vraag me ooit af waarom elk artikel in het kader van AEM binnen de Admin Cons
 
 ## Inhoud die in deze video wordt behandeld
 
-+ [De Admin Console begrijpen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
-+ [Overzicht van Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html)
++ [ begrijp de Admin Console ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
++ [ Overzicht van de Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html)

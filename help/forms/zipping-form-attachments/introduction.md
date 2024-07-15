@@ -26,15 +26,15 @@ Klanten zouden de formulierbijlagen meestal comprimeren of de bijlagen als afzon
 
 ## De formulierbijlagen verzenden in een ZIP-bestand
 
-Om het gebruik te verwezenlijken werd een stap van het douanewerkschemaproces geschreven. In deze aangepaste processtap wordt een ZIP-bestand met de formulierbijlagen gemaakt en opgeslagen in de payload-map in een bestand met de naam *zipped_attachments.zip*
+Om het gebruik te verwezenlijken werd een stap van het douanewerkschemaproces geschreven. In deze stap van het douaneproces een gecomprimeerd dossier met de vormgehechtheid in gecreeerd en opgeslagen onder de ladingsomslag in een dossier genoemd *zipped_attachments.zip*
 
-![send-form-attachments](assets/send-form-attachments.JPG)
+![ verzenden-vorm-gehechtheid ](assets/send-form-attachments.JPG)
 
 ## De formulierbijlagen afzonderlijk verzenden
 
 Voor dit doel is een stap voor een aangepast workflowproces geschreven. In deze stap van het douaneproces bevolken wij werkschemariabelen van type ArrayList van Documenten en ArrayList van Koorden.
 
-![send-list-of-documents](assets/send-list-of-documents.JPG)
+![ send-list-of-documents ](assets/send-list-of-documents.JPG)
 
 ## Volgende stappen
 

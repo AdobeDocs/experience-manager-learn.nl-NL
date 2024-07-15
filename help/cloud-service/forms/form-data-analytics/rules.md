@@ -22,39 +22,39 @@ ht-degree: 0%
 
 # De regel definiëren
 
-In het bezit van Markeringen hebben wij 2 nieuw gecreeerd [regels](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Veldvalidatiefout en FormSubmit**).
+In het bezit van Markeringen creeerden wij 2 nieuwe [ regels ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**de Fout van de Bevestiging van het Gebied en FormSubmit**).
 
-![adaptieve vorm](assets/rules.png)
+![ adaptive-form ](assets/rules.png)
 
 
 ## Veldvalidatiefout
 
-De **Veldvalidatiefout** regel wordt geactiveerd telkens wanneer zich een validatiefout voordoet in het adaptieve formulierveld. Als het telefoonnummer of de e-mail bijvoorbeeld in ons formulier niet de verwachte indeling heeft, wordt een foutbericht voor validatie weergegeven.
+De **regel van de Fout van de Bevestiging van het Gebied** wordt teweeggebracht telkens als er bevestigingsfout op adaptief vormgebied is. Als het telefoonnummer of de e-mail bijvoorbeeld in ons formulier niet de verwachte indeling heeft, wordt een foutbericht voor validatie weergegeven.
 
-De regel van de Fout van de Bevestiging van het Gebied wordt gevormd door de gebeurtenis te plaatsen aan _**Adobe Experience Manager Forms-Error**_ zoals getoond in het het schermschot
+De regel van de Fout van de Bevestiging van het Gebied wordt gevormd door de gebeurtenis aan _**Adobe Experience Manager Forms-Fout**_ zoals aangetoond in het het schermschot te plaatsen
 
 
 
-![ingezetene van de verzoekende staat](assets/field_validation_error_rule.png)
+![ aanvrager-staat-verblijf ](assets/field_validation_error_rule.png)
 
 De Adobe Analytics - de Vastgestelde Variabelen worden gevormd als volgt
 
-![handeling instellen](assets/field_validation_action_rule.png)
+![ vastgestelde actie ](assets/field_validation_action_rule.png)
 
 ## Regel voor verzenden van formulier
 
 De regel Formulier verzenden wordt geactiveerd telkens wanneer een adaptief formulier is verzonden.
 
-De regel Formulier verzenden is geconfigureerd met de _**Adobe Experience Manager Forms - Verzenden**_ event
+De Vorm legt regel voor wordt gevormd gebruikend _**Adobe Experience Manager Forms - voorlegt**_ gebeurtenis
 
-![form-submit-rule](assets/form-submit-rule.png)
+![ vorm-voorlegt-regel ](assets/form-submit-rule.png)
 
-In de regel Formulier verzenden, de waarde van het gegevenselement _**ApplicantsStateOfResidence**_ wordt toegewezen aan prop5 en de waarde van het gegevenselement FormTitle wordt toegewezen aan prop8.
+In de Vorm legt regel voor, wordt de waarde van het gegevenselement _**ApplicantsStateOfResidence**_ in kaart gebracht aan prop5 en de waarde van het gegevenselement FormTitle wordt in kaart gebracht aan prop8.
 
 De variabelen Adobe Analytics - Set zijn als volgt geconfigureerd.
-![form-submit-rule-set-variables](assets/form-submit-set-variable.png)
+![ vorm-voorlegt-regel-reeks-variabelen ](assets/form-submit-set-variable.png)
 
-Wanneer u klaar bent om uw code van Markeringen te testen,[de aangebrachte wijzigingen in de labels publiceren](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) de publicatiestroom gebruiken.
+Wanneer u bereid bent om uw code van Markeringen te testen, [ publiceer uw veranderingen die aan de markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) worden aangebracht gebruikend de het publiceren stroom.
 
 ## Volgende stappen
 

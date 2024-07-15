@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Hier is de herziene tekst met &quot;Core Components&quot; met hoofdletters:
 
-Een typisch scenario is het genereren van een PDF op basis van gegevens die zijn ingediend via een adaptief formulier op basis van kerncomponenten. Deze gegevens hebben altijd de JSON-indeling. Als u een PDF wilt genereren met de API voor het renderen van de PDF, is het nodig dat u de JSON-gegevens omzet in XML-indeling. De `toString` methode `org.json.XML` wordt gebruikt voor deze conversie. Raadpleeg voor meer informatie de [documentatie van `org.json.XML.toString` methode](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
+Een typisch scenario is het genereren van een PDF op basis van gegevens die zijn ingediend via een adaptief formulier op basis van kerncomponenten. Deze gegevens hebben altijd de JSON-indeling. Als u een PDF wilt genereren met de API voor het renderen van de PDF, is het nodig dat u de JSON-gegevens omzet in XML-indeling. De `toString` -methode van `org.json.XML` wordt gebruikt voor deze conversie. Voor meer details, verwijs naar de [ documentatie van `org.json.XML.toString` methode ](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
 
 ## Adaptief, op basis van JSON-schema
 
@@ -35,15 +35,15 @@ Voer de volgende verfijnde stappen uit om het proces te stroomlijnen:
 1. Ga naar &quot;Bestand&quot; > &quot;Formuliereigenschappen&quot; > &quot;Voorbeeld&quot;.
 1. Selecteer &quot;Voorbeeldgegevens genereren&quot;.
 1. Klik op &quot;Genereren&quot;.
-1. Wijs een betekenisvolle bestandsnaam toe, zoals `form-data.xml`.
+1. Wijs een betekenisvolle bestandsnaam toe, bijvoorbeeld `form-data.xml` .
 
 ### JSON-schema genereren op basis van XML-gegevens
 
-U kunt elke gratis online tool gebruiken om [XML converteren naar JSON](https://jsonformatter.org/xml-to-jsonschema) de XML-gegevens gebruiken die in de vorige stap zijn gegenereerd.
+U kunt om het even welk vrij online hulpmiddel gebruiken om [ XML in JSON ](https://jsonformatter.org/xml-to-jsonschema) om te zetten gebruikend de gegevens van XML die in de vorige stap worden geproduceerd.
 
 ### Aangepast workflowproces voor conversie van JSON naar XML
 
-De opgegeven code converteert JSON naar XML en slaat de resulterende XML op in een variabele van het workflowproces met de naam `dataXml`.
+De opgegeven code converteert JSON naar XML en slaat de resulterende XML op in een werkstroomprocesvariabele met de naam `dataXml` .
 
 ```java
 import org.slf4j.LoggerFactory;
@@ -112,17 +112,17 @@ Als u formulierverzendingen wilt verwerken, maakt u een workflow die twee stappe
 1. In de eerste stap wordt een aangepast proces gebruikt om de verzonden JSON-gegevens te transformeren in XML.
 1. De volgende stap genereert een PDF door de XML-gegevens te combineren met de XDP-sjabloon.
 
-![json-to-xml](assets/json-to-xml-process-step.png)
+![ json-aan-xml ](assets/json-to-xml-process-step.png)
 
 
 ## De voorbeeldcode implementeren
 
 Voer de volgende gestroomlijnde stappen uit om dit op uw lokale server te testen:
 
-1. [Download en installeer de aangepaste bundel via de AEM OSGi-webconsole](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
-1. [Het workflowpakket importeren](assets/workflow_to_render_pdf.zip).
-1. [De voorbeeldsjabloon Adaptief formulier en XDP importeren](assets/adaptive_form_and_xdp_template.zip).
-1. [Voorbeeld van adaptief formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
+1. [ Download en installeer de douanebundel via de AEM OSGi Webconsole ](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
+1. [ voer het werkschemapakket ](assets/workflow_to_render_pdf.zip) in.
+1. [ voer de steekproef Aangepaste Vorm en het malplaatje XDP ](assets/adaptive_form_and_xdp_template.zip) in.
+1. [ Voorproef de Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. Vul een aantal formuliervelden in.
 1. Verzend het formulier om de AEM te starten.
 1. Zoek de gerenderde PDF in de payload-map van de workflow.

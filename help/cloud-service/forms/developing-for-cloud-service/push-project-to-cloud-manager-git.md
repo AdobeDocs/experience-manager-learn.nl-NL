@@ -21,7 +21,8 @@ ht-degree: 0%
 
 In de vorige stap hebben we ons AEM Project gesynchroniseerd met de Adaptive Forms en Thema&#39;s die in de AEM zijn gemaakt.
 We moeten deze wijzigingen nu toevoegen aan onze lokale git-opslagplaats en vervolgens de lokale git-opslagplaats naar de git-opslagplaats voor cloudbeheer duwen.
-Opdrachtprompt openen en naar c:\cloudmanager\aem-banking-app Voer de volgende opdrachten uit
+Opdrachtprompt openen en naar c:\cloudmanager\aem-banking-app navigeren
+De volgende opdrachten uitvoeren
 
 ```
 git add .

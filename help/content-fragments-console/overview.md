@@ -1,6 +1,6 @@
 ---
 title: Video's van de Console van inhoudsfragmenten
-description: Meer informatie over AEM Content Fragments Console die het beheren en schrijven van Content Fragments gemakkelijk maakt!
+description: Leer over AEM Console van de Fragmenten van de Inhoud die het beheren en het schrijven van de Fragmenten van de Inhoud gemakkelijk maakt!
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Video&#39;s van de Console van inhoudsfragmenten
 
-![AEM Inhoudsfragmenteditor](./assets/main.png)
+![ AEM de Redacteur van het Fragment van de Inhoud ](./assets/main.png)
 
 Met de Adobe Experience Manager Content Fragments Console kunt u heel eenvoudig inhoudsfragmenten beheren en ontwerpen. Leer hoe u de console voor inhoudsfragmenten optimaal kunt benutten met deze video&#39;s.
 
-Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)  voor volledige details over de Console van de Fragmenten van de Inhoud en zijn mogelijkheden.
+Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) voor volledige details van de Console en zijn mogelijkheden van de Fragmenten van de Inhoud.
 
 ## Video&#39;s
 
@@ -48,14 +48,15 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./basics/content-fragments-console.md" title="Overzicht">Overzicht van console</a>
+              <a href="./basics/content-fragments-console.md" title="Overzicht"> Overzicht van de Console </a>
             </p>
-            <p class="is-size-6">Een kort overzicht van de console van de Fragmenten van de Inhoud.</p>
+            <p class="is-size-6">Een kort overzicht van de inhoudsfragmenten
+              console.</p>
             <a href="./basics/content-fragments-console.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -80,14 +81,15 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">4 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./basics/content-fragment-editor.md" title="Overzicht">Editor-overzicht</a>
+              <a href="./basics/content-fragment-editor.md" title="Overzicht"> Overzicht van de Redacteur </a>
             </p>
-            <p class="is-size-6">Een kort overzicht van de editor voor inhoudsfragmenten.</p>
+            <p class="is-size-6">Een kort overzicht van de inhoudsfragmenten
+              editor.</p>
             <a href="./basics/content-fragment-editor.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -102,7 +104,8 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <a href="./search/fast-filtering.md" title="Snelle filtering"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Snelle filtering">
+                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Snel
+                filteren">
             </a>
           </figure>
         </div>
@@ -111,14 +114,16 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./search/fast-filtering.md" title="Snelle filtering">Snelle filtering</a>
+              <a href="./search/fast-filtering.md" title="Snelle filtering"> Snel
+                filteren </a>
             </p>
-            <p class="is-size-6">Zoek snel inhoudsfragmenten op met inlinefiltering.</p>
+            <p class="is-size-6">Snel inhoudsfragmenten zoeken met inline
+              filteren.</p>
             <a href="./search/fast-filtering.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -133,7 +138,8 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <a href="./editor/new-editor-toggle.md" title="Nieuwe editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Nieuwe editor">
+                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Nieuw
+                Editor-schakeloptie">
             </a>
           </figure>
         </div>
@@ -142,14 +148,16 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/new-editor-toggle.md" title="Nieuwe editor">Nieuwe editor</a>
+              <a href="./editor/new-editor-toggle.md" title="Nieuwe editor"> Nieuw
+                Editor-schakeloptie </a>
             </p>
-            <p class="is-size-6">Naadloze overgang van de klassieke naar de nieuwe editor.</p>
+            <p class="is-size-6">Naadloze overgang van de klassieke naar de nieuwe
+              editor.</p>
             <a href="./editor/new-editor-toggle.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -161,7 +169,8 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/non-asset-content-references.md" title="Verwijzingen naar niet-elementaire inhoud" tabindex="-1">
+            <a href="./editor/non-asset-content-references.md" title="Niet-actief
+              inhoudsverwijzingen" tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3419313?format=jpeg"
                 alt="Verwijzingen naar niet-elementaire inhoud">
@@ -173,14 +182,16 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/non-asset-content-references.md" title="Verwijzingen naar niet-elementaire inhoud">Verwijzingen naar niet-elementaire inhoud</a>
+              <a href="./editor/non-asset-content-references.md" title="Niet-actief
+                inhoudsverwijzingen"> niet-activa inhoudsverwijzingen </a>
             </p>
-            <p class="is-size-6">Neem de Fragmenten en de Pagina's van de Ervaring in uw Inhoudsfragmenten op.</p>
+            <p class="is-size-6">Ervaring opnemen in fragmenten en pagina's
+              uw inhoudsfragmenten.</p>
             <a href="./editor/non-asset-content-references.md"
               class="spectrum-Button spectrum-Button--outline
               spectrum-Button--primary spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -195,7 +206,8 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <a href="./editor/rte-variant-compare.md" title="RTE-variant vergelijken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419314?format=jpeg" alt="RTE-variant vergelijken">
+                src="https://video.tv.adobe.com/v/3419314?format=jpeg" alt="RTE
+                variant vergelijken">
             </a>
           </figure>
         </div>
@@ -204,14 +216,16 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/rte-variant-compare.md" title="RTE-variant vergelijken">RTE-variant vergelijken</a>
+              <a href="./editor/rte-variant-compare.md" title="RTE-variant
+                vergelijken"> de variant van RTE vergelijkt </a>
             </p>
-            <p class="is-size-6">Lijn uw rijke tekstinhoud gemakkelijk over kanalen uit.</p>
+            <p class="is-size-6">Lijn uw rijke tekstinhoud gemakkelijk uit over
+              kanalen.</p>
             <a href="./editor/rte-variant-compare.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -236,14 +250,16 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/language-copies.md" title="Taalkopieën">Taalkopieën</a>
+              <a href="./editor/language-copies.md" title="Taalkopieën"> Taal
+                kopieën </a>
             </p>
-            <p class="is-size-6">Eenvoudig kopieën van de taal van het inhoudsfragment beheren</p>
+            <p class="is-size-6">De taal van het inhoudsfragment eenvoudig beheren
+              exemplaren</p>
             <a href="./editor/language-copies.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -268,14 +284,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./search/references.md" title="Verwijzingen">Verwijzingen</a>
+              <a href="./search/references.md" title="Verwijzingen"> Verwijzingen </a>
             </p>
             <p class="is-size-6">Verwijzingen en relaties van inhoudsfragmenten begrijpen.</p>
             <a href="./search/references.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>

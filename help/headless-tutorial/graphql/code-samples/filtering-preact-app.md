@@ -22,11 +22,11 @@ ht-degree: 0%
 
 # Preact-app filteren
 
-Ontdek AEM GraphQL API&#39;s zonder koppen die gegevens kunnen filteren met een [Precies](https://preactjs.com/) app. Deze Preact app leidt tot een lijst van avonturen WKND die door Type van Activiteit kunnen worden gefilterd.
+Onderzoek AEM de capaciteit van GraphQL APIs zonder hoofd om gegevens te filtreren gebruikend a [ Preact ](https://preactjs.com/) app. Deze Preact app leidt tot een lijst van avonturen WKND die door Type van Activiteit kunnen worden gefilterd.
 
-Deze code demonstreert het gebruik van de Adobe [AEM headless-client voor JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) om aanhoudende GraphQL-query&#39;s van React aan te roepen. Deze app gebruikt de `wknd-shared/adventures-all` Voortdurende vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot `wknd-shared/adventures-by-activity` persisted query en haalt de avontuurdetails voor alleen die avonturen van het opgegeven Type activiteit op.
+Deze code toont het gebruiken van Adobe [ AEM Koploze Cliënt voor JavaScript ](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) aan om voortgeduurde vragen van GraphQL van React aan te halen. Deze app gebruikt de `wknd-shared/adventures-all` aanhoudend vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot de `wknd-shared/adventures-by-activity` persisted vraag en wint de avontuurdetails voor slechts die avonturen van het gespecificeerde Type van Activiteit terug.
 
 Deze code:
 
-+ Verbindt met de AEM publicatieservice, en vereist geen authentificatie
-+ Gebruikt de hardnekkige vragen van WKND: `wknd-shared/adventures-all` en `wknd-shared/adventures-by-activity`
++ Maakt verbinding met een AEM Publish-service en vereist geen verificatie
++ Gebruikt de aanhoudend vragen van WKND: `wknd-shared/adventures-all` en `wknd-shared/adventures-by-activity`

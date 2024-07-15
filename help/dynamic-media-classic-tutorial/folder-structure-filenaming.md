@@ -29,7 +29,7 @@ Maphiërarchie is alleen voor u en uw bedrijf van belang voor organisatorische d
 
 Een andere belangrijke overweging is het aantal elementen of mappen dat in elke map moet worden opgeslagen. Als er veel middelen in een map zijn opgeslagen, neemt de prestatie af bij het weergeven van middelen in Dynamic Media Classic. Sla duizenden bestanden niet op in een map. In plaats daarvan, ontwikkelt een organisatorische hiërarchie met minder dan ongeveer 500 activa of omslagen binnen een bepaalde tak van uw hiërarchie. Dit is geen strikte voorwaarde, maar het helpt om aanvaardbare reactietijden te handhaven wanneer het bekijken van of het zoeken van activa. In feite is de aanbeveling om hiërarchieën te creëren die breed en oppervlakkig zijn in plaats van smal en diep.
 
-De eenvoudigste manier om uw mappen te maken, is om de volledige mapstructuur te uploaden met behulp van FTP en de optie in te schakelen **Inclusief submappen**. Met deze optie maakt Dynamic Media Classic de mapstructuur opnieuw op de FTP-site in Dynamic Media Classic.
+De gemakkelijkste manier om uw omslagen te creëren is uw volledige omslagstructuur te uploaden gebruikend FTP, en de optie **toe te laten omvat Subfolders**. Met deze optie maakt Dynamic Media Classic de mapstructuur opnieuw op de FTP-site in Dynamic Media Classic.
 
 We willen dat u rekening houdt met uw mapstructuur voordat u al uw bestanden gaat uploaden, omdat het veel eenvoudiger is om uw bestanden en mappen lokaal op uw computer te ordenen en te beheren dan in Dynamic Media Classic. U kunt bijvoorbeeld alleen bestanden, maar niet volledige mappen, slepen en neerzetten in Dynamic Media Classic.
 
@@ -45,7 +45,7 @@ Overweeg voor uw omslagstrategie wat aan uw organisatie zinvol is. Hier volgen e
 
 Hoe u ervoor kiest om uw bestanden een naam te geven, is wellicht de belangrijkste beslissing die u in een vroeg stadium zult nemen met betrekking tot Dynamic Media Classic. Dit komt doordat alle elementen in Dynamic Media Classic unieke namen moeten hebben, ongeacht de locatie van de elementen op de account.
 
-Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een element-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. Bijvoorbeeld: _896649,jpg_ get-element _ID 89649_.
+Alle URL&#39;s en transacties in Dynamic Media Classic worden aangestuurd door een element-id, de unieke id van een element in de database. Wanneer u een bestand uploadt, wordt de element-id gemaakt door de bestandsnaam te nemen en de extensie te verwijderen. Bijvoorbeeld, _896649.jpg_ krijgt identiteitskaart 896649 van Activa __.
 
 Regels betreffende ID&#39;s van activa:
 
@@ -61,7 +61,7 @@ De meeste gebruikers baseren hun noemende overeenkomst rond hun interne SKU of p
 
 Uw naamgevingsstrategie moet flexibel zijn voor toekomstige uitbreidingen, zodat u niet hoeft te hernoemen nadat u de site hebt gestart. Hier volgen enkele typische naamgevingsstrategieën:
 
-**Geen alternatieve afbeeldingen.** In dit scenario hebt u slechts één afbeelding per product en geen alternatieve of gekleurde weergaven. U geeft elke afbeelding uitsluitend een naam op basis van het unieke SKU- of product-id-nummer. Wanneer de pagina wordt geladen, roept het paginasjabloon de Asset ID aan met hetzelfde SKU-nummer.
+**Geen afwisselende beelden.** In dit scenario hebt u slechts één afbeelding per product en geen alternatieve of gekleurde weergaven. U geeft elke afbeelding uitsluitend een naam op basis van het unieke SKU- of product-id-nummer. Wanneer de pagina wordt geladen, roept het paginasjabloon de Asset ID aan met hetzelfde SKU-nummer.
 
 | SKU/PID | Bestandsnaam | Element-id |
 | ------- | ---------- | -------- |
@@ -70,7 +70,7 @@ Uw naamgevingsstrategie moet flexibel zijn voor toekomstige uitbreidingen, zodat
 
 Dit is een heel eenvoudig systeem, en goed als u bescheiden behoeften hebt. Het is echter niet erg flexibel. Alleen al omdat u vandaag geen alternatieve afbeeldingen hebt, betekent dit niet dat u deze afbeeldingen morgen niet zult hebben. Het volgende scenario biedt meer flexibiliteit.
 
-**Met de afbeelding, alternatieve weergaven, gekleurde versies en stalen.** Deze strategie maakt alternatieve weergaven en/of gekleurde weergaven mogelijk, als u ze hebt. In plaats van de afbeelding een naam te geven na alleen de SKU, voegt u een modifier zoals &quot;_1&quot; en &quot;_2&quot; toe voor alternatieve weergaven en een kleurcode &quot;_RED&quot; of &quot;_BLU&quot; voor gekleurde weergaven. Als u zowel gekleurde afbeeldingen als alternatieve weergaven voor hetzelfde product hebt, voegt u wellicht &quot;_RED_1&quot; en &quot;_RED_2&quot; toe voor de eerste en tweede weergave met rode kleuren. Stalen krijgen de naam SKU, kleurcode en de extensie &quot;_SW&quot;.
+**Gebruikend het beeld, afwisselende meningen, gekleurde versies, monsters.** Deze strategie maakt alternatieve weergaven en/of gekleurde weergaven mogelijk, als u deze hebt. In plaats van de afbeelding een naam te geven na alleen de SKU, voegt u een modifier zoals &quot;_1&quot; en &quot;_2&quot; toe voor alternatieve weergaven en een kleurcode &quot;_RED&quot; of &quot;_BLU&quot; voor gekleurde weergaven. Als u zowel gekleurde afbeeldingen als alternatieve weergaven voor hetzelfde product hebt, voegt u wellicht &quot;_RED_1&quot; en &quot;_RED_2&quot; toe voor de eerste en tweede weergave met rode kleuren. Stalen krijgen de naam SKU, kleurcode en de extensie &quot;_SW&quot;.
 
 | SKU/PID | Categorie | Bestandsnaam | Element-id |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |

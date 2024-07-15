@@ -1,6 +1,6 @@
 ---
-title: De implementatiefasen van Cloud Acceleration Manager
-description: Bekijk en begrijp de belangrijkste implementatiefasen of ga naar AEM as a Cloud Service met gebruik van Cloud Acceleration Manager.
+title: De uitvoeringsfasen van Cloud Acceleration Manager
+description: De belangrijkste implementatiefasen evalueren en begrijpen of met Cloud Acceleration Manager naar AEM as a Cloud Service gaan.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# De implementatiefasen van Cloud Acceleration Manager
+# De uitvoeringsfasen van Cloud Acceleration Manager
 
-Bekijk en begrijp de belangrijkste implementatiefasen of ga naar AEM as a Cloud Service met gebruik van Cloud Acceleration Manager.
+De belangrijkste implementatiefasen evalueren en begrijpen of met Cloud Acceleration Manager naar AEM as a Cloud Service gaan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336691?quality=12&learn=on)

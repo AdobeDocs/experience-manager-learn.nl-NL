@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Hoofdwerkstroom maken
 
-De hoofdworkflow wordt geactiveerd wanneer de gebruiker het eerste formulier verzendt (**RefinanceForm**). Hier volgt de workflow
+Het belangrijkste werkschema wordt teweeggebracht wanneer de gebruiker de aanvankelijke vorm (**RefinanceForm**) voorlegt. Hier volgt de workflow
 
-![main-workflow](assets/main-workflow.PNG)
+![ main-workflow ](assets/main-workflow.PNG)
 
-**Forms opslaan om te ondertekenen** is een aangepaste processtap.
+**Opslag Forms aan Ondertekenen** is een stap van het douaneproces.
 
-De motivatie voor het uitvoeren van een stap van het douaneproces is een AEMWerkschema uit te breiden. De volgende code implementeert een aangepaste processtap. De code extraheert de namen van de formulieren om te ondertekenen en geeft de verzonden formuliergegevens door aan de `insertData` in de service SignMultipleForms. De `insertData` dan neemt de methode de rijen in het gegevensbestand op dat door de gegevensbron wordt geïdentificeerd **vormgeving**.
+De motivatie voor het uitvoeren van een stap van het douaneproces is een AEMWerkschema uit te breiden. De volgende code implementeert een aangepaste processtap. De code extraheert de namen van de formulieren om te ondertekenen en geeft de verzonden formuliergegevens door aan de methode `insertData` in de service SignMultipleForms. De `insertData` methode neemt dan de rijen in het gegevensbestand op dat door de gegevensbron **wordt geïdentificeerd aemformstutorial**.
 
-De code in deze stap van het douaneproces verwijst naar `SignMultipleForms` service.
+Code in deze stap voor aangepast proces verwijst naar de service `SignMultipleForms` .
 
 
 
@@ -118,7 +118,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-De workflow Meerdere Forms ondertekenen die in dit artikel wordt gebruikt, kan [hier gedownload](assets/sign-multiple-forms-workflows.zip)
+Het Meerdere werkschema van Forms van het Teken dat in dit artikel wordt gebruikt kan [ van hier worden gedownload ](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
 > Zorg ervoor dat u de Day CQ Mail Service configureert om e-mailmeldingen te verzenden. Het e-mailsjabloon is ook beschikbaar in het bovenstaande pakket.

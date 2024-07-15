@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Er wordt een tabel toegevoegd aan het paneel Inkomen. Vorm de lijstrijen en gebruik de regelredacteur om het grote totaal te berekenen.
 
-**Tabelcomponent toevoegen en configureren**
+**voeg en vorm de Component van de Lijst toe**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
 
@@ -29,7 +29,7 @@ Er wordt een tabel toegevoegd aan het paneel Inkomen. Vorm de lijstrijen en gebr
 
 ## De inkomstentabel dynamisch maken {#make-the-income-table-dynamic}
 
-**Zorg ervoor dat u in de bewerkingsmodus werkt. De bewerkknop bevindt zich rechtsboven in de browser.**
+**zorg ervoor u op uitgeeft wijze bent. De Edit knoop wordt gevestigd op de hoogste rechterkant van browser.**
 
 * Als u een tabel invoegt in Adaptief formulier, is de tabel standaard niet dynamisch. Dit betekent dat u tijdens runtime geen nieuwe rijen aan de tabel kunt toevoegen.
 
@@ -48,4 +48,4 @@ Er wordt een tabel toegevoegd aan het paneel Inkomen. Vorm de lijstrijen en gebr
 
 ## Volgende stappen
 
-[Het middelenpaneel configureren](./configuring-assets-panel.md)
+[Het deelvenster Assets configureren](./configuring-assets-panel.md)

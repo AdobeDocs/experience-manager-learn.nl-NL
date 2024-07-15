@@ -26,17 +26,17 @@ Om een douane te schrijven verzend de dienst, werden de volgende stappen gevolgd
 
 ## AEM project maken
 
-Als u al een bestaand AEM Forms Cloud Service-project hebt, kunt u [springen naar het schrijven van de aangepaste verzendservice](#Write-the-custom-submit-service)
+Als u reeds een bestaand project van de Cloud Service van AEM Forms hebt kunt u [ springen aan het schrijven van douane voorlegt dienst ](#Write-the-custom-submit-service)
 
 * Maak een map met de naam cloudmanager op het station C.
 * Naar deze nieuwe map navigeren
-* Inhoud van [dit tekstbestand](./assets/creating-maven-project.txt) in uw bevel snel venster.U kunt DarchetypeVersion=41 afhankelijk van moeten veranderen [nieuwste versie](https://github.com/adobe/aem-project-archetype/releases). De meest recente versie was 41 op het moment dat dit artikel werd geschreven.
+* Kopieer en kleef de inhoud van [ dit tekstdossier ](./assets/creating-maven-project.txt) in uw bevel snelle venster.U kunt DarchetypeVersion=41 afhankelijk van de [ recentste versie ](https://github.com/adobe/aem-project-archetype/releases) moeten veranderen. De meest recente versie was 41 op het moment dat dit artikel werd geschreven.
 * Voer het bevel uit door op Enter te drukken.Als alles correct gaat zou u het bericht van het bouwstijlsucces moeten zien.
 
 ## De aangepaste verzendservice schrijven{#Write-the-custom-submit-service}
 
-Start IntelliJ en open AEM project. Een nieuwe Java-klasse maken met de naam **HandleRegistrationFormSubmission** zoals weergegeven in onderstaande schermafbeelding
-![custom-submit-service](./assets/custom-submit-service.png)
+Start IntelliJ en open AEM project. Creeer een nieuwe klasse java genoemd **HandleRegistrationFormSubmission** zoals aangetoond in het hieronder ontsproten scherm
+![ douane-voorlegt-dienst ](./assets/custom-submit-service.png)
 
 De volgende code is geschreven om de service te implementeren
 
@@ -88,9 +88,9 @@ public class HandleRegistrationFormSubmission implements FormSubmitActionService
 
 ## Een crx-knooppunt maken onder apps
 
-Het knooppunt ui.apps uitbreiden om een nieuw pakket met de naam **HandleRegistrationFormSubmission** onder het knooppunt Apps, zoals in de onderstaande schermafbeelding wordt getoond
-![crx-node](./assets/crx-node.png)
-Maak een bestand met de naam .content.xml onder de lijst **HandleRegistrationFormSubmission**. Kopieer en plak de volgende code in de .content.xml
+Breid de knoop ui.apps uit creeert een nieuw pakket genoemd **HandleRegistrationFormSubmission** onder de appelknoop zoals aangetoond in hieronder scherm-schot
+![ crx-node ](./assets/crx-node.png)
+Creeer een dossier genoemd .content.xml onder **HandleRegistrationFormSubmission**. Kopieer en plak de volgende code in de .content.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -102,7 +102,7 @@ Maak een bestand met de naam .content.xml onder de lijst **HandleRegistrationFor
     submitService="Core Custom AF Submit"/>
 ```
 
-De waarde van **submitService** element moet overeenkomen  **serviceName = &quot;Core Custom AF Submit&quot;** in de FormSubmitActionService-implementatie.
+De waarde van het **submitService** element moet **serviceName = &quot;Eigen AF van de Kern voorleggen&quot;** in de implementatie aanpassen FormSubmitActionService.
 
 ## De code naar uw lokale AEM Forms-instantie implementeren
 
@@ -118,10 +118,10 @@ Hiermee wordt de code als één pakket geïmplementeerd op uw auteurinstantie
 ## Push the code to cloud manager and Deploy the code
 
 Nadat u de code op uw lokale instantie hebt gecontroleerd, drukt u op de code naar uw cloudinstantie.
-Breng de wijzigingen aan in uw lokale opslagplaats voor it en vervolgens aan het cloudbeheerprogramma. U kunt verwijzen naar de  [Git-instelling](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [AEM project naar cloudbeheergegevensopslagruimte duwen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) en [inzetten in de ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html) artikelen.
+Breng de wijzigingen aan in uw lokale opslagplaats voor it en vervolgens aan het cloudbeheerprogramma. U kunt naar de [ opstelling van het Git ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html) verwijzen, [ duwend AEM project in de bewaarplaats van de wolkenmanager ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) en [ plaatsend aan de artikelen van het ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
 
 Zodra de pijplijn met succes is uitgevoerd, zou u de verzendactie van uw vorm aan de douane moeten kunnen associëren voorlegt manager zoals aangetoond in het hieronder ontsproten scherm.
-![voorlegging](./assets/configure-submit-action.png)
+![ voorleggen-actie ](./assets/configure-submit-action.png)
 
 ## Volgende stappen
 

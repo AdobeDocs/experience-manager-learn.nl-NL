@@ -25,8 +25,8 @@ AEM Assets Dynamic Media integreert hotspots voor elementen met Experience Fragm
 
 >[!NOTE]
 >
->Het gebruik van AEM Experience Fragments met AEM Assets Dynamic Media Hotspots vereist [AEM die in de Dynamic Media worden uitgevoerd](https://experienceleague.adobe.com/docs/) -modus.
+>Het gebruiken van AEM Fragments van de Ervaring met Hotspots van AEM Assets Dynamic Media vereist [ AEM om op de Dynamic Media ](https://experienceleague.adobe.com/docs/) wijze worden in werking gesteld.
 
 De variant van het Fragment van de Pop-up Ervaring die in de video wordt getoond is beschikbaar als AEM hieronder pakket.
 
-Downloaden [Experience Fragments Dynamic Media Assets](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+De Fragmenten van de Ervaring van de download [ Dynamic Media Assets ](assets/experience-fragmentsdynamic-mediaassets-100.zip)

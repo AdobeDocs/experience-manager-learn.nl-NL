@@ -22,10 +22,10 @@ ht-degree: 0%
 
 # Aangepaste Workfront-formulieren en toewijzing van metagegevens
 
-![AEM Deskundigenreeks](./assets/banner.png)
+![ AEM de Reeks van Deskundigen ](./assets/banner.png)
 
 Leer hoe u Workfront en AEM Assets configureert voor het beheren en synchroniseren van metagegevens van elementen met behulp van aangepaste Workfront-formulieren en AEM metagegevensschema&#39;s.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
-_Deel twee van een [vier deskundigenreeksen voor onderdelen op de Workfront for Experience Manager Enhanced connector](./overview.md)_
+_Deel twee van a [ vier deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_

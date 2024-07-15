@@ -1,5 +1,5 @@
 ---
-title: Elementenrapporten in AEM Assets
+title: Assets-rapporten in AEM Assets
 description: AEM Assets biedt een rapportagekader op bedrijfsniveau dat schaalt voor grote opslagplaatsen door een intuïtieve gebruikerservaring.
 feature: Asset Reports
 topic: Administration
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Elementen rapporteren{#using-reports-in-aem-assets}
+# Assets-rapporten{#using-reports-in-aem-assets}
 
 AEM Assets biedt een rapportagekader op bedrijfsniveau dat schaalt voor grote opslagplaatsen door een intuïtieve gebruikerservaring.
 
@@ -28,4 +28,4 @@ AEM Assets biedt een rapportagekader op bedrijfsniveau dat schaalt voor grote op
 
 >[!IMPORTANT]
 >
->AEM 6.5 verstrekt het vermogen om te vormen [middelenrapporten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), zodat beheerders kunnen definiëren wat wordt bijgehouden en opgenomen in de rapporten.
+>AEM 6.5 verstrekt het vermogen om [ activarapporten ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting) te vormen, toestaand beheerders om te bepalen wat wordt gevolgd en inbegrepen in de rapporten.

@@ -22,29 +22,29 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-AEM biedt [AEM bewerkbare componenten React v2](https://www.npmjs.com/package/@adobe/aem-react-editable-components), een op Node.js-Gebaseerde SDK die de verwezenlijking van componenten van het Reageren toestaat, die in-context component het uitgeven gebruikend AEM Redacteur steunen SPA.
+AEM verstrekt [ AEM React Editable Componenten v2 ](https://www.npmjs.com/package/@adobe/aem-react-editable-components), een op Node.js-Gebaseerde SDK die de verwezenlijking van componenten van het Reageren toestaat, die in-context component het uitgeven gebruikend AEM Redacteur steunen SPA.
 
-+ [npm-module](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-+ [Github-project](https://github.com/adobe/aem-react-editable-components)
-+ [Documentatie Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
++ [ npm module ](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ [ het project van Github ](https://github.com/adobe/aem-react-editable-components)
++ [ documentatie van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
 
 
 Raadpleeg de technische documentatie voor meer informatie en codevoorbeelden voor AEM React Editable Components v2:
 
-+ [Integratie met AEM documentatie](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
-+ [Bewerkbare componentdocumentatie](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
-+ [Helpers, documentatie](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
++ [ Integratie met AEM documentatie ](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
++ [ Bewerkbare componentendocumentatie ](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
++ [ Helpers documentatie ](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
 
 ## AEM pagina&#39;s
 
-AEM bewerkbare componenten Reageren werken met zowel de SPA Editor als de externe SPA React-apps. Inhoud die de bewerkbare React-componenten vult, moet zichtbaar zijn via AEM pagina&#39;s die de [SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). AEM componenten, die aan editable React componenten in kaart brengen, moeten AEM uitvoeren [Component Exporter-framework](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - zoals [AEM Core WCM-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+AEM bewerkbare componenten Reageren werken met zowel de SPA Editor als de externe SPA React-apps. De inhoud die de editable componenten bevolkt van de Reactie, moet via AEM pagina&#39;s worden blootgesteld die de [ SPA component van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html) uitbreiden. AEM componenten, die kaarten aan editable componenten van het Reageren, moeten AEM [ kader van de Exporteur van de Component ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) uitvoeren - zoals [ AEM de Componenten van WCM van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 
 ## Afhankelijkheden
 
 Zorg ervoor dat de React-app actief is op Node.js 14+.
 
-De minimale set afhankelijkheden die de React-app kan gebruiken AEM React Editable Components v2 zijn: `@adobe/aem-react-editable-components`, `@adobe/aem-spa-component-mapping`, en  `@adobe/aem-spa-page-model-manager`.
+De minimale set afhankelijkheden die de React-app gebruikt AEM React Editable Components v2 zijn: `@adobe/aem-react-editable-components`, `@adobe/aem-spa-component-mapping` en `@adobe/aem-spa-page-model-manager` .
 
 
 + `package.json`
@@ -64,16 +64,16 @@ De minimale set afhankelijkheden die de React-app kan gebruiken AEM React Editab
 
 >[!WARNING]
 >
-> [AEM Reageren op basis van WCM-componenten](https://github.com/adobe/aem-react-core-wcm-components-base) en [AEM Reageren op WCM-SPA](https://github.com/adobe/aem-react-core-wcm-components-spa) zijn niet compatibel met AEM React Editable Components v2.
+> [ AEM Reageer de Basis van de Componenten WCM van de Reageren Kern ](https://github.com/adobe/aem-react-core-wcm-components-base) en [ AEM Reageren de Componenten van WCM SPA ](https://github.com/adobe/aem-react-core-wcm-components-spa) zijn niet compatibel met AEM React Editable Componenten v2.
 
 ## SPA Editor
 
-Als u de AEM Bewerkbare componenten Reageren gebruikt met een React-app die is gebaseerd op SPA Editor, AEM `ModelManager` SDK, als SDK:
+Wanneer u de AEM bewerkbare componenten React gebruikt met een SPA React-app op basis van de Editor, de AEM `ModelManager` SDK, als SDK:
 
 1. Hiermee wordt inhoud opgehaald van AEM
-1. Hiermee vult u de bewerkbare componenten React met AEM inhoud in
+1. De React Eetbare componenten met AEM inhoud vullen
 
-Plaats de React-app met een geïnitialiseerde ModelManager en geef de React-app weer. De React-app moet één instantie van de `<Page>` component geëxporteerd uit `@adobe/aem-react-editable-components`. De `<Page>` component heeft logica om React componenten dynamisch te creëren die op `.model.json` verstrekt door AEM.
+Plaats de React-app met een geïnitialiseerde ModelManager en geef de React-app weer. De React-app moet één instantie van de `<Page>` -component bevatten die is geëxporteerd uit `@adobe/aem-react-editable-components` . De component `<Page>` heeft logica voor het dynamisch maken van React-componenten op basis van de `.model.json` die door AEM wordt verschaft.
 
 + `src/index.js`
 
@@ -101,11 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-De `<Page>` wordt doorgegeven als de weergave van de AEM pagina als JSON, via de `pageModel` door de `ModelManager`. De `<Page>` component maakt dynamisch React-componenten voor objecten in de `pageModel` door de `resourceType` met een component React die zich bij het middeltype via registreert `MapTo(..)`.
+`<Page>` wordt doorgegeven als de weergave van de AEM pagina als JSON, via de lus `pageModel` die wordt geleverd door de `ModelManager` . De component `<Page>` maakt dynamisch React-componenten voor objecten in de `pageModel` door de `resourceType` aan te passen aan een component React die zich via `MapTo(..)` registreert bij het middeltype.
 
 ## Bewerkbare componenten
 
-De `<Page>` wordt de weergave van de AEM pagina als JSON doorgegeven via de `ModelManager`. De `<Page>` maakt vervolgens dynamisch React-componenten voor elk object in de JSON door de JS-objecten op elkaar af te stemmen `resourceType` waarde met een component React die zich aan het middeltype via de component registreert `MapTo(..)` oproepen. Het volgende wordt bijvoorbeeld gebruikt om een instantie te instantiëren
+De `<Page>` wordt via de `ModelManager` doorgegeven aan de weergave van de AEM pagina als JSON. De component `<Page>` maakt vervolgens dynamisch React-componenten voor elk object in de JSON door de waarde `resourceType` van het JS-object te koppelen aan een React-component die zich via de `MapTo(..)` -aanroep van de component registreert bij het brontype. Het volgende wordt bijvoorbeeld gebruikt om een instantie te instantiëren
 
 + `HTTP GET /content/.../home.model.json`
 
@@ -179,7 +179,7 @@ export default MapTo("wknd-examples/components/example")(EditableExample);
 Bewerkbare componenten kunnen opnieuw worden gebruikt en in elkaar worden ingesloten. Er zijn twee belangrijke overwegingen wanneer het inbedden van één editable component in een andere:
 
 1. De JSON-inhoud van AEM voor de insluitingscomponent moet de inhoud bevatten om aan de ingesloten componenten te voldoen. Dit wordt gedaan door een dialoog voor de AEM component te creëren die de vereiste gegevens verzamelt.
-1. De instantie &quot;niet-bewerkbaar&quot; van de component React moet worden ingesloten in plaats van de instantie &quot;bewerkbaar&quot; die is ingesloten met `<EditableComponent>`. De reden is dat de ingesloten component de `<EditableComponent>` verpakt, probeert de SPA Editor de binnencomponent te kleden met de bewerkingsinterface (blauwe aanwijsdoos) in plaats van met de buitenste insluitcomponent.
+1. De instantie &#39;niet-bewerkbaar&#39; van de component React moet worden ingesloten in plaats van de instantie &#39;bewerkbaar&#39; die met `<EditableComponent>` is ingesloten. Als de ingesloten component de `<EditableComponent>` -omslag heeft, probeert de SPA Editor de binnencomponent met de bewerkingsinterface (blauw aanwijsvak) aan te passen in plaats van met de buitenste insluitcomponent.
 
 + `HTTP GET /content/.../home.model.json`
 

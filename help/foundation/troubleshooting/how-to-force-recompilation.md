@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Hoe te om een recompilatie van alle manuscripten van het Sling te dwingen jsps, java, en siely
 
-*In deze video worden de stappen doorlopen waarmee een nieuwe compilatie van alle Sling-scripts, jsps, java en siely wordt afgedwongen.*
+*Deze video loopt door de stappen om een recompilatie van alle het Verschuiven manuscripten jsps, java, en siely te dwingen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335464?quality=12&learn=on)

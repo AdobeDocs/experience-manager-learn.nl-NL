@@ -1,6 +1,6 @@
 ---
 title: AEM Forms as a Cloud Service
-description: Klik hier als je wilt weten wat AEM Forms as a Cloud Service biedt voor gebruikskwesties en -functies.
+description: Meer informatie over gebruiksgevallen en functies die worden ondersteund door AEM Forms as a Cloud Service.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AEM Forms as a Cloud Service - Verplaatsen naar AEM CS
 
-Klik hier als je wilt weten wat AEM Forms as a Cloud Service biedt voor gebruikskwesties en -functies.
+Meer informatie over gebruiksgevallen en functies die worden ondersteund door AEM Forms as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336968?quality=12&learn=on)

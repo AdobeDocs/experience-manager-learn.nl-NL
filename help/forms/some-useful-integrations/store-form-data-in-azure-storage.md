@@ -23,41 +23,42 @@ Dit artikel laat zien hoe u REST-oproepen kunt maken om verzonden AEM Forms-gege
 Als u verzonden formuliergegevens wilt opslaan in Azure Storage, moet u de volgende stappen uitvoeren.
 
 >[!NOTE]
->De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren. [Het equivalente artikel voor het op kerncomponenten gebaseerde adaptieve formulier is hier beschikbaar](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren. [ het gelijkwaardige artikel voor kern op component gebaseerde adaptieve vorm is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
 
 
 ## Azure Storage-account maken
 
-[Meld u aan bij uw Azure Portal-account en maak een opslagaccount](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1). Geef uw opslagaccount een betekenisvolle naam, klik op Revisie en klik vervolgens op Maken. Hiermee maakt u uw opslagaccount met alle standaardwaarden. Voor dit artikel hebben we onze opslagaccount benoemd `aemformstutorial`.
+[ Login aan uw Azure portalaccount en creeer een opslagrekening ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1). Geef uw opslagaccount een betekenisvolle naam, klik op Revisie en klik vervolgens op Maken. Hiermee maakt u uw opslagaccount met alle standaardwaarden. In het kader van dit artikel hebben we onze opslagaccount `aemformstutorial` genoemd.
 
 
 ## Container maken
 
 Het volgende wat we moeten doen is een container maken om de gegevens van formulierverzendingen op te slaan.
-Van de pagina van de opslagrekening, klik op het het menupunt van Containers op de linkerzijde en creeer een container genoemd `formssubmissions`. Zorg ervoor dat het openbare toegangsniveau aan privé wordt geplaatst
-![container](./assets/new-container.png)
+Klik op de pagina met opslagaccounts op de menuoptie Containers aan de linkerkant en maak een container met de naam `formssubmissions` . Zorg ervoor dat het openbare toegangsniveau aan privé wordt geplaatst
+![ container ](./assets/new-container.png)
 
 ## SAS maken op de container
 
 Wij zullen ons van de Gedeelde Handtekening van de Toegang of SAS Methode van vergunning maken om met de Azure container van de Opslag in wisselwerking te staan.
 Navigeer naar de container in de opslagaccount, klik op de ellips en selecteer de optie Generate SAS (SAS genereren), zoals weergegeven in de schermafbeelding
-![sas-on-container](./assets/sas-on-container.png)
+![ sas-on-container ](./assets/sas-on-container.png)
 Zorg ervoor dat u de juiste machtigingen en de juiste einddatum opgeeft, zoals in de onderstaande schermafbeelding wordt weergegeven, en klik op SAS-token en URL genereren. Kopieer de Blob SAS-token en Blob SAS url. Wij zullen deze twee waarden gebruiken om onze HTTP- vraag te maken
-![gedeelde toegang-sleutels](./assets/shared-access-signature.png)
+![ delen-toegang-sleutels ](./assets/shared-access-signature.png)
 
 
 ## De BLOB SAS-token en opslag-URI opgeven
 
-Om de code generischer te maken, kunnen de twee eigenschappen worden gevormd gebruikend de configuratie OSGi zoals hieronder getoond. De _**vormgeving**_ de naam van de opslagrekening is, _**formules**_ is de container waarin de gegevens worden opgeslagen.
+Om de code generischer te maken, kunnen de twee eigenschappen worden gevormd gebruikend de configuratie OSGi zoals hieronder getoond. _**aemformstutorial**_ is de naam van de opslagrekening, _**formsubmission**_ is de container waarin de gegevens zullen worden opgeslagen.
 Zorg dat / aan het einde van de opslaguri staat en dat het SAS-token begint met?
-![osgi-configuratie](./assets/azure-portal-osgi-configuration.png)
+![ osgi-configuratie ](./assets/azure-portal-osgi-configuration.png)
 
 
 ## Aanvraag PUT maken
 
 De volgende stap bestaat uit het maken van een verzoek van een PUT om de ingediende formuliergegevens op te slaan in Azure Storage. Elke formulierverzending moet worden geïdentificeerd met een unieke BLOB-id. De unieke BLOB-id wordt gewoonlijk in de code gemaakt en ingevoegd in de URL van het verzoek om PUT.
-Hier volgt de gedeeltelijke URL van het verzoek om PUT. De `aemformstutorial` is de naam van de opslagaccount, formverzendingen is de container waarin de gegevens met een unieke BLOB-id worden opgeslagen. De rest van de URL blijft ongewijzigd.
-https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken De volgende functie is geschreven om de ingediende formuliergegevens op te slaan in Azure Storage met behulp van een aanvraag voor een PUT. Let op het gebruik van de containernaam en de uuid in de URL. U kunt een OSGi-service of een verkoopserver maken met de onderstaande voorbeeldcode en de formulierverzendingen opslaan in Azure Storage.
+Hier volgt de gedeeltelijke URL van het verzoek om PUT. De `aemformstutorial` is de naam van de opslagaccount, de ingevulde gegevens zijn de container waarin de gegevens met een unieke BLOB-id worden opgeslagen. De rest van de URL blijft ongewijzigd.
+https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken
+Hieronder vindt u een functie die wordt geschreven om de verzonden formuliergegevens op te slaan in Azure Storage met behulp van een aanvraag voor een PUT. Let op het gebruik van de containernaam en de uuid in de URL. U kunt een OSGi-service of een verkoopserver maken met de onderstaande voorbeeldcode en de formulierverzendingen opslaan in Azure Storage.
 
 ```java
  public String saveFormDatainAzure(String formData) {
@@ -93,7 +94,7 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken D
 
 ## Opgeslagen gegevens in de container verifiëren
 
-![form-data-in-container](./assets/form-data-in-container.png)
+![ vorm-gegeven-in-container ](./assets/form-data-in-container.png)
 
 ## De oplossing testen
 
@@ -103,10 +104,10 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken D
 
 * [Het adaptieve voorbeeldformulier importeren](./assets/bank-account-sample-form.zip)
 
-* [Specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [ specificeer de aangewezen waarden in de Azure Portal Configuratie gebruikend de OSGi configuratieconsole ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
 
-* [Het bankrekeningformulier bekijken en verzenden](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
+* [ Voorproef en voorlegt de vorm BankAccount ](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Controleer of de gegevens zijn opgeslagen in de Azure-opslagcontainer van uw keuze. Kopieer de blob-id.
-* [Een voorbeeld weergeven van het formulier Bankrekening](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) en geef de Blob-id op als een guid-parameter in de URL voor het formulier dat vooraf moet worden ingevuld met de gegevens uit Azure-opslag
+* [ Voorproef de vorm BankAccount ](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) en specificeer identiteitskaart van de Blob als begeleide parameter in URL voor de vorm die met de gegevens van Azure opslag moet worden vooraf bevolkt
 

@@ -25,7 +25,7 @@ Slim uitsnijden maakt gebruik van Adobe Sensei om de tijdrovende en kostbare tak
 
 >[!NOTE]
 >
->De video veronderstelt dat uw AEM instantie op Dynamic Media S7 wijze loopt. [Hier vindt u instructies voor het instellen van AEM met Dynamic Media.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>De video veronderstelt dat uw AEM instantie op Dynamic Media S7 wijze loopt. [ de Instructies bij vestiging AEM met Dynamic Media kunnen hier worden gevonden.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Adobe Experience Manager Dynamic Media Smart Crop-functionaliteit omvat
 

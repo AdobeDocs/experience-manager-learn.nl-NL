@@ -22,7 +22,7 @@ ht-degree: 0%
 Als u een batch-API wilt gebruiken, maakt u een batchconfiguratie en voert u op basis van die configuratie een uitvoering uit. In de volgende video ziet u een demonstratie van het maken van batchconfiguraties met behulp van de API.
 
 >[!NOTE]
->Zorg ervoor dat de AEM gebruiker tot ```forms-users``` groep om API-aanroepen uit te voeren.
+>Controleer of de AEM gebruiker tot de ```forms-users``` -groep behoort om API-aanroepen uit te voeren.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)

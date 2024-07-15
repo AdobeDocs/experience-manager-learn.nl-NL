@@ -24,22 +24,22 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
 
 >[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
-1. Download en open de [**Sjabloon voor InDesign-bestand**](assets/asset-templates-tutorial-video--supporting-files.zip)
-2. **Open het deelvenster Labels,** Controleer de naamgevingsconventie voor tags en noteer dat de elementen die door de auteur kunnen worden gemaakt, al zijn gecodeerd. Vergeet niet dat alleen gelabelde elementen in AEM kunnen worden bewerkt.
+1. De download en opent het [**malplaatje van het het dossierdossier van het InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
+2. **open het paneel van Markeringen,** herzie de markering noemende overeenkomst, en merk op dat de auteur-able elementen in het dossier van het InDesign reeds geëtiketteerd zijn. Vergeet niet dat alleen gelabelde elementen in AEM kunnen worden bewerkt.
 
-   * **Venster > Hulpmiddelen > Labels**
+   * **Venster > Hulpmiddelen > Markeringen**
 
-3. Voeg op de pagina een nieuw tekstelement toe, geef de tekst &quot;Koptekst&quot; op en pas de tekst **Kop** Alineastijl.
+3. Voor Pagina, voeg een nieuw tekstelement toe, verstrek de tekst &quot;Kopbal&quot;en pas de **Kop** Stijl van de Paragraaf toe.
 
-   * **Venster > Stijlen > Alineastijlen**
+   * **Venster > Stijlen > de Stijlen van de Paragraaf**
 
-   Maak vervolgens een nieuwe tag met de naam **Pagina2Kop.**
+   Dan, creeer en pas een nieuwe Markering toe genoemd **Page2Heading.**
 
-4. Voeg de afbeelding FPO-logo toe ([meegeleverd in het postvak](assets/asset-templates-tutorial-video--supporting-files.zip)) aan het element Logo op de stramienpagina.
+4. Voeg het beeld van het Logo FPO ([ dat in ZIP ](assets/asset-templates-tutorial-video--supporting-files.zip) wordt verstrekt) aan het element van het Logo op de Hoofdpagina toe.
 
-   * **Klikken met rechtermuisknop** en selecteert u **Aanpassen > Opties voor aanpassen aan kader.. > Inhoud passend maken > Kader proportioneel vullen**
+   * **klik met de rechtermuisknop** en selecteer **Aanpassen > Opties voor aanpassen aan kader.. > Inhoud aanpassen > Kader proportioneel vullen**
 
-   [Meer informatie over opties voor aanpassen aan kader](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames)en die het meest geschikt is voor uw gebruik.
+   [ Leer meer over Kader het Aanpassen opties ](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames), en die voor uw gebruiksgeval juist is.
 
 5. Kopieer de koptekst (Logo en bedrijfsnaam) van de hoofdsjabloon naar Pagina en Pagina via Op plaats plakken.
 
@@ -57,24 +57,24 @@ In deze videozelfstudie worden een InDesign-bestand en alle bijbehorende overweg
 
 >[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
-1. **InDesign Server starten** op poort 8080.
-2. Zorg ervoor dat **AEM instantie Auteur is geconfigureerd voor interactie met uw InDesign Server**(en omgekeerd).
+1. **InDesign Server van het Begin** op haven 8080.
+2. Verzeker de **AEM instantie van de Auteur wordt gevormd om met uw InDesign Server** (en vice versa) in wisselwerking te staan.
 
-   * [Configuratie van IDS Worker Cloud Service](http://localhost:4502/etc/cloudservices/proxy/ids.html)
-   * [Configuratie van Cloud Service voor cloudproxy](http://localhost:4502/etc/cloudservices/proxy.html)
-   * [AEM configuratie ExternalExternalSGi](http://localhost:4502/system/console/configMgr)
+   * [ Configuratie van de Cloud Service van de Arbeider IDS ](http://localhost:4502/etc/cloudservices/proxy/ids.html)
+   * [ de configuratie van de Cloud Service van de Volmacht van de Wolk ](http://localhost:4502/etc/cloudservices/proxy.html)
+   * [ AEM Configuratie ExternalExternalSGi ](http://localhost:4502/system/console/configMgr)
 
-3. **Het bestand InDesign is geüpload naar AEM Assets** en AEM workflow en InDesign Server in staat stellen de middelen volledig te verwerken.
-4. **Een nieuwe sjabloon maken** krachtens **Middelen > Sjablonen** en selecteert u het InDesign dat naar AEM is geüpload in stap 4.
-5. **De middelensjabloon bewerken** gemaakt in Stap 5 en ontwerpt de bewerkbare velden.
-6. Klikken **Gereed** om de definitieve afrekeningen met hoge getrouwheid van de activasjabloon te genereren.
+3. **uploadde het dossier van het InDesign aan AEM Assets** en staat AEM Werkschema en InDesign Server toe om de activa volledig te verwerken.
+4. **creeer een nieuw Malplaatje** onder **Assets > Malplaatjes** en selecteer het dossier van het InDesign dat aan AEM in Stap #4 wordt geupload.
+5. **geeft het Malplaatje van Activa** uit in Stap #5 wordt gecreeerd, en auteur de editable gebieden.
+6. Klik **Gereed** om de definitieve high-fidelity vertoningen van het Malplaatje van Activa te produceren.
 7. Klik op de Asset Template-kaart om deze te openen en bekijk de uitvoeringen van Elementen om de hifi-uitvoeringen te downloaden.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Sjabloonbestand voor InDesigns en ondersteunende afbeeldingen
 
-Downloaden [Sjabloonbestand voor InDesigns en ondersteunende afbeeldingen](assets/asset-templates-tutorial-video--supporting-files-1.zip)
+Het dossier van het InDesign van de download [ en ondersteunende Beelden ](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
-* [Proefversie van InDesign CC downloaden](https://creative.adobe.com/products/download/indesign)
-* De proefversie van het InDesign Server kan worden gedownload van [Prerelease-site Adobe](https://www.adobeprerelease.com/) of [CC Enterprise-klanten kunnen contact opnemen met hun accountmanager om een proeflicentie voor een InDesign Server aan te vragen](https://www.adobe.com/products/indesignserver/faq.html)
+* [ InDesign CC proefdownload ](https://creative.adobe.com/products/download/indesign)
+* De proefversie van het InDesign Server kan van [ de plaats van de Prerelease van de Adobe ](https://www.adobeprerelease.com/) worden gedownload of [ de klanten van de Onderneming van CC kunnen hun Uitvoerder van de Rekening contacteren om de vergunning van de InDesign Server te verzoeken ](https://www.adobe.com/products/indesignserver/faq.html)

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Gegevensbron maken
+# Source voor gegevens maken
 
 Een gegevensbron maken die door REST is ondersteund, met behulp van het wagerbestand dat in de vorige stap is gemaakt
 

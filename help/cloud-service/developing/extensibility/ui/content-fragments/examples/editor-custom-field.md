@@ -24,7 +24,7 @@ Leer hoe u aangepaste velden maakt in de AEM Content Fragment Editor.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-AEM UI-extensies moeten worden ontwikkeld met de [Adobe Reageren spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) -framework, aangezien dit een consistent uiterlijk behoudt met de rest van de AEM, en tevens een uitgebreide bibliotheek van vooraf gebouwde functionaliteit heeft, waardoor de ontwikkelingstijd afneemt.
+AEM uitbreidingen UI zouden moeten worden ontwikkeld gebruikend het ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader van het Spectrum van de Reactie van de Adobe [, aangezien dit een verenigbare blik en gevoel met de rest van AEM handhaaft, en ook een uitgebreide bibliotheek van pre-gebouwde functionaliteit heeft, dalende ontwikkelingstijd.
 
 ## Extensiepunt
 
@@ -32,26 +32,26 @@ In dit voorbeeld wordt een bestaand veld in de Inhoudsfragmenteditor vervangen d
 
 | AEM UI uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
-| [Inhoudsfragmenteditor](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Aangepaste rendering van formulierelementen](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
+| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ het vormelement teruggeven van de Douane ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
 ## Voorbeeldextensie
 
 In dit voorbeeld ziet u hoe u veldwaarden in de Content Fragment Editor beperkt tot een vooraf ingestelde set door het standaardveld te vervangen door een aangepaste vervolgkeuzelijst met vooraf gedefinieerde SKU&#39;s. Auteurs kunnen uit deze specifieke SKU-lijst kiezen. Hoewel SKUs gewoonlijk uit een systeem van het Beheer van de Informatie van het Product (PIM) komt, vereenvoudigt dit voorbeeld door de SKUs statisch op te nemen.
 
-De broncode voor dit voorbeeld is [beschikbaar voor downloaden](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
+De broncode voor dit voorbeeld is [ beschikbaar voor download ](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
 
 ### Definitie van inhoudsfragmentmodel
 
-In dit voorbeeld wordt een binding tot stand gebracht met een veld voor een inhoudsfragment met de naam `sku` (via een [reguliere expressie overeenkomst](#extension-registration) van `^sku$`) en wordt deze vervangen door een aangepast veld. Het voorbeeld gebruikt het model van het Fragment van de Inhoud van WKND Adventure van de Inhoud dat is bijgewerkt en de definitie is als volgt:
+Dit voorbeeld bindt aan om het even welk gebied van het Fragment van de Inhoud de waarvan naam `sku` is (via a [ regelmatige uitdrukkingsgelijke ](#extension-registration) van `^sku$`) en vervangt het met een douanegebied. Het voorbeeld gebruikt het model van het Fragment van de Inhoud van WKND Adventure van de Inhoud dat is bijgewerkt en de definitie is als volgt:
 
-![Definitie van inhoudsfragmentmodel](./assets/editor-custom-field/content-fragment-editor.png)
+![ Definitie van het Model van het Fragment van de Inhoud ](./assets/editor-custom-field/content-fragment-editor.png)
 
 Ondanks het gebied van douaneSKU dat als dropdown wordt getoond, wordt zijn onderliggend model gevormd als tekstgebied. De implementatie van het aangepaste veld hoeft alleen te worden uitgelijnd met de juiste naam en het juiste type eigenschap, waardoor het standaardveld gemakkelijker kan worden vervangen door de aangepaste vervolgkeuzelijst.
 
 
 ### Toepassingsroutes
 
-In de hoofdcomponent React `App.js`, inclusief de `/sku-field` route om terug te geven `SkuField` Reageer component.
+Neem in de hoofdcomponent React `App.js` de `/sku-field` -route op om de component `SkuField` React te renderen.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -85,14 +85,14 @@ function App() {
 ...
 ```
 
-Deze aangepaste route van `/sku-field` worden toegewezen aan `SkuField` component wordt hieronder in de [Registratie van extensies](#extension-registration).
+Deze douaneroute van `/sku-field` kaarten aan de `SkuField` component wordt gebruikt hieronder in de [ registratie van de Uitbreiding ](#extension-registration).
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js`, toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
+`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
 
-+ De widgetdefinitie in `getDefinitions()` functie met `fieldNameExp` en `url` kenmerken. De volledige lijst met beschikbare kenmerken is beschikbaar in het dialoogvenster [Aangepaste API-naslaggids voor het renderen van formulierelementen](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
-+ De `url` kenmerkwaarde, een relatief URL-pad (`/index.html#/skuField`) om de gebruikersinterface van het veld te laden.
++ De widgetdefinitie in de functie `getDefinitions()` met `fieldNameExp` - en `url` -kenmerken. De volledige lijst van beschikbare attributen is beschikbaar in [ het Element dat van de Vorm van de Douane API Verwijzing teruggeeft ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
++ De waarde van het kenmerk `url` , een relatief URL-pad ( `/index.html#/skuField` ) om de interface van het veld te laden.
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -132,13 +132,13 @@ export default ExtensionRegistration;
 
 ### Aangepast veld
 
-De `SkuField` De component React werkt de Redacteur van het Fragment van de Inhoud met een douane UI bij, gebruikend Adobe React Spectrum voor zijn kiezersvorm. Tot de hooglichten behoren:
+De component `SkuField` React werkt de Inhoudsfragmenteditor bij met een aangepaste UI en gebruikt Adobe React Spectrum voor de kiezervorm. Tot de hooglichten behoren:
 
-+ Gebruikmaken `useEffect` voor initialisatie en verbinding met AEM Content Fragment Editor, met een laadstatus weergegeven totdat de installatie is voltooid.
-+ Als u rendert binnen een iFrame, wordt de hoogte van de iFrame dynamisch aangepast via de `onOpenChange` voor het vervolgkeuzemenu van de Adobe Spectrum Picker reageren.
-+ Hiermee geeft u veldselecties weer aan de host via `connection.host.field.onChange(value)` in de `onSelectionChange` ervoor zorgen dat de geselecteerde waarde wordt gevalideerd en automatisch wordt opgeslagen volgens de richtlijnen van het inhoudsfragmentmodel.
++ `useEffect` gebruiken voor initialisatie en verbinding met AEM Content Fragment Editor, met een laadstatus weergegeven totdat de installatie is voltooid.
++ Bij weergave binnen een iFrame wordt de hoogte van de iFrame dynamisch aangepast via de functie `onOpenChange` om ruimte te maken voor het vervolgkeuzemenu van de Adobe Spectrum Picker React.
++ Hiermee geeft u veldselecties via `connection.host.field.onChange(value)` in de `onSelectionChange` -functie weer aan de host, zodat de geselecteerde waarde wordt gevalideerd en automatisch wordt opgeslagen volgens de richtlijnen van het Content Fragment Model.
 
-Aangepaste velden worden gerenderd binnen een iFrame dat wordt geïnjecteerd in de Content Fragment Editor. Communicatie tussen de aangepaste veldcode en de Content Fragment Editor verloopt uitsluitend via de `connection` door de `attach` van de `@adobe/uix-guest` pakket.
+Aangepaste velden worden gerenderd binnen een iFrame dat wordt geïnjecteerd in de Content Fragment Editor. Communicatie tussen de aangepaste veldcode en de Content Fragment Editor vindt uitsluitend plaats via het `connection` -object dat is ingesteld door de `attach` -functie van het `@adobe/uix-guest` -pakket.
 
 `src/aem-cf-editor-1/web-src/src/components/SkuField.js`
 

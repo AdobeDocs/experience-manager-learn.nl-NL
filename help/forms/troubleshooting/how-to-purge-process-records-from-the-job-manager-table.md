@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Procesrecords uit Taakbeheer wissen
 
-*Deze video doorloopt de stappen om procesverslagen van de Manager van de Baan te zuiveren.*
+*Deze video loopt door de stappen om procesverslagen van de Manager van de Baan te zuiveren.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335577?quality=12&learn=on)

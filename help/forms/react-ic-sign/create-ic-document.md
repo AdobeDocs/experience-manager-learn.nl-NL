@@ -24,7 +24,7 @@ Als u een interactief communicatiedocument wilt genereren met behulp van de API,
 * Prefill-service maken
 * Interactief communicatiedocument genereren
 
-De servicenaam `ccm-print-test` wordt gebruikt om tot deze dienst toegang te hebben. Zodra deze voorvulservice is gedefinieerd, kunt u deze service openen in uw servlet of in de implementatie van de stap voor workflowproces om het document voor het afdrukkanaal te genereren.
+De servicenaam `ccm-print-test` wordt gebruikt om toegang te krijgen tot deze service. Zodra deze voorvulservice is gedefinieerd, kunt u deze service openen in uw servlet of in de implementatie van de stap voor workflowproces om het document voor het afdrukkanaal te genereren.
 
 ```java
 package com.acrobatsign.core;
@@ -318,4 +318,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## Volgende stappen
 
-Schrijf een [OSGi service wrapper om Acrobat Sign API beschikbaar te maken](./wrapper-sign-api.md)
+Schrijf een [ OSGi de dienstomslag om Acrobat Sign API ](./wrapper-sign-api.md) bloot te stellen

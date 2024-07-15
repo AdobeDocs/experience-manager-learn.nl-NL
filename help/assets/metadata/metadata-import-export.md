@@ -29,19 +29,19 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
 
 >[!TIP]
 >
-> Als u CSV-bestand voor metagegevens wilt openen in Excel, gebruikt u de opdracht [Excel-importer](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) in plaats van te dubbelklikken op het bestand om problemen met UTF-8-gecodeerde CSV-bestanden te voorkomen.
+> Wanneer het openen van meta-gegevens voer CSV- dossier in Excel, gebruik de [ importeur van Excel ](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) eerder dan het tweemaal klikken van het dossier om kwesties met UTF-8 gecodeerde Csv- dossiers te vermijden.
 >
 > Voer de volgende stappen uit om het CSV-bestand voor het exporteren van metagegevens te openen in Excel:
 > 
 > 1. Microsoft Excel openen
-> 1. Selecteren __Bestand > Nieuw__ een leeg spreadsheet maken
-> 1. Open het lege werkblad en selecteer __Bestand > Importeren__
-> 1. Selecteren __Tekst__ bestand en klik op __Importeren__
-> 1. Selecteer het geëxporteerde CSV-bestand in het bestandssysteem en klik op __Gegevens ophalen__
-> 1. Selecteer in stap 1 van de wizard Importeren de optie __Gescheiden__ en instellen __Oorsprong bestand__ tot __Unicode (UTF-8)__ en klik op __Volgende__
-> 1. Bij stap 2 stelt u de __Scheidingstekens__ tot __Komma__ en klik op __Volgende__
-> 1. Bij stap 3 laat u de __Kolomgegevensindeling__ ongewijzigd, en klik __Voltooien__
-> 1. Selecteren __Importeren__ om de gegevens aan spreadsheet toe te voegen
+> 1. Selecteer __Dossier > Nieuw__ om een leeg spreadsheet tot stand te brengen
+> 1. Met het lege open spreadsheet, uitgezochte __Dossier > de Invoer__
+> 1. Selecteer __dossier van de Tekst 0} {en klik__ Invoer ____
+> 1. Selecteer het uitgevoerde CSV- dossier van het dossiersysteem en klik __krijgt Gegevens__
+> 1. Op stap 1 van de de invoertovenaar, selecteer __Gescheiden__ en plaats __oorsprong van het Dossier__ aan __Unicode (UTF-8)__, en klik __daarna__
+> 1. Op stap 2, plaats de __Scheidingstekens__ aan __komma__, en klik __daarna__
+> 1. Op stap 3, verlaat het __gegevensformaat van de Kolom__ zoals is, en klik __Afwerking__
+> 1. Selecteer __Invoer__ om de gegevens aan spreadsheet toe te voegen
 
 ## Metagegevens importeren {#metadata-import}
 
@@ -56,10 +56,10 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
 ### Eerste rij
 
 * De eerste rij van het CSV-bestand definieert het metagegevensschema.
-* De standaardinstellingen van de kolom Eerste `assetPath`, die het absolute JCR-pad voor een element bevat.
+* De eerste kolom heeft standaard de waarde `assetPath` , die het absolute JCR-pad voor een element bevat.
 
 * De volgende kolommen in de eerste rij wijzen naar andere meta-gegevenseigenschappen van een element.
-   * Bijvoorbeeld: `dc:title, dc:description, jcr:title`
+   * Bijvoorbeeld : `dc:title, dc:description, jcr:title`
 
 * Single Value, indeling voor eigenschappen
 
@@ -68,13 +68,13 @@ Leer hoe u de metagegevensfuncties voor importeren en exporteren van Adobe Exper
    * Bijvoorbeeld: `dc:title {{String}}`
 
 * Eigenschapnaam is hoofdlettergevoelig
-   * Juist: `dc:title {{String}}`
+   * Correct : `dc:title {{String}}`
    * Onjuist: `Dc:Title {{String}}`
 
 * Type eigenschap is niet hoofdlettergevoelig
-* Alles geldig [Typen JCR-eigenschappen](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden ondersteund
+* Alle geldige [ types van Bezit JCR ](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) worden gesteund
 
-* Opmaak Multi Value Property - `<metadata property name> {{<property type : MULTI }}`
+* Opmaak eigenschap van meerdere waarden - `<metadata property name> {{<property type : MULTI }}`
 
 ### Tweede rij naar N rijen
 

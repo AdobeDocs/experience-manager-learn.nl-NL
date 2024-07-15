@@ -18,11 +18,11 @@ ht-degree: 0%
 
 ---
 
-# Token-gebaseerde authentificatie aan AEM as a Cloud Service
+# Tokengebaseerde verificatie naar AEM as a Cloud Service
 
-AEM stelt een verscheidenheid van eindpunten van HTTP bloot die met op een krantenloze manier, van GraphQL, AEM de Diensten van de Inhoud aan de API van Activa kunnen worden in wisselwerking staan. Vaak moeten deze gebruikers zonder kop zich op AEM verifiëren om toegang te krijgen tot beveiligde inhoud of handelingen. Om dit te vergemakkelijken, steunt AEM symbolisch-gebaseerde authentificatie van HTTP- verzoeken van externe toepassingen, diensten of systemen.
+AEM stelt een verscheidenheid van eindpunten van HTTP bloot die met op een krantenloze manier, van GraphQL, AEM de Diensten van de Inhoud aan Assets HTTP API kunnen worden in wisselwerking staan. Vaak moeten deze gebruikers zonder kop zich op AEM verifiëren om toegang te krijgen tot beveiligde inhoud of handelingen. Om dit te vergemakkelijken, steunt AEM symbolisch-gebaseerde authentificatie van HTTP- verzoeken van externe toepassingen, diensten of systemen.
 
-In deze zelfstudie leert u goed hoe een externe toepassing programmatically kan verifiëren en met AEM as a Cloud Service over HTTP in wisselwerking staan gebruikend toegangstokens.
+In deze zelfstudie leert u goed hoe een externe toepassing via programmacode AEM as a Cloud Service kan verifiëren en ermee kan communiceren via HTTP. Hiervoor wordt gebruikgemaakt van toegangstokens.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330460?quality=12&learn=on)
 
@@ -30,42 +30,42 @@ In deze zelfstudie leert u goed hoe een externe toepassing programmatically kan 
 
 Zorg ervoor dat het volgende is geïnstalleerd voordat u deze zelfstudie gaat volgen:
 
-1. Toegang tot AEM as a Cloud Service omgeving (bij voorkeur een ontwikkelomgeving of een Sandbox-programma)
-1. Lidmaatschap in de AEM as a Cloud Service omgeving: Auteursservices AEM Beheerdersproductprofiel
-1. Lidmaatschap in of toegang tot uw Adobe IMS Org Administrator (deze moet een eenmalige initialisatie van de [Servicereferenties](./service-credentials.md))
-1. De nieuwste [WKND-site](https://github.com/adobe/aem-guides-wknd) geïmplementeerd in uw Cloud Service-omgeving
+1. Toegang tot de omgeving van am AEM as a Cloud Service (bij voorkeur een ontwikkelomgeving of een Sandbox-programma)
+1. Lidmaatschap in de AEM as a Cloud Service-services voor auteurs AEM Beheerdersproductprofiel
+1. Lidmaatschap in, of toegang, tot uw Beheerder van IMS van Adobe (zij zullen een eenmalige initialisering van de [ Referenties van de Dienst ](./service-credentials.md) moeten uitvoeren)
+1. De recentste [ Plaats van WKND ](https://github.com/adobe/aem-guides-wknd) die aan uw milieu van de Cloud Service wordt opgesteld
 
 ## Overzicht van externe toepassing
 
-Deze zelfstudie gebruikt een [simple Node.js, toepassing](./assets/aem-guides_token-authentication-external-application.zip) Voer vanaf de opdrachtregel uit om metagegevens van elementen bij te werken bij AEM as a Cloud Service met behulp van [Elementen HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html).
+Dit leerprogramma gebruikt a [ eenvoudige toepassing Node.js ](./assets/aem-guides_token-authentication-external-application.zip) looppas van de bevellijn om activa meta-gegevens op AEM as a Cloud Service bij te werken gebruikend [ HTTP API van Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html).
 
 De uitvoeringsstroom van de toepassing Node.js is als volgt:
 
-![Externe toepassing](./assets/overview/external-application.png)
+![ Externe Toepassing ](./assets/overview/external-application.png)
 
 1. De toepassing Node.js wordt aangeroepen vanaf de opdrachtregel
 1. Parameters voor opdrachtregel definiëren:
-   + De AEM as a Cloud Service host van de auteurservice waarmee verbinding moet worden gemaakt (`aem`)
+   + De AEM as a Cloud Service Author service host to connect to (`aem`)
    + De map met AEM elementen waarvan de elementen zijn bijgewerkt (`folder`)
-   + De eigenschap en waarde van de metagegevens die moeten worden bijgewerkt (`propertyName` en `propertyValue`)
+   + De eigenschap en waarde van metagegevens die moeten worden bijgewerkt (`propertyName` en `propertyValue`)
    + Het lokale pad naar het bestand met de vereiste gegevens voor toegang tot AEM as a Cloud Service (`file`)
 1. Het toegangstoken dat wordt gebruikt voor verificatie aan AEM wordt afgeleid van het JSON-bestand dat via opdrachtregelparameter wordt aangeboden `file`
 
-   a. Indien dienstreferenties die worden gebruikt voor niet-lokale ontwikkeling, worden verstrekt in het JSON-bestand (`file`), wordt het toegangstoken opgehaald van Adobe IMS API&#39;s
-1. De toepassing gebruikt het toegangstoken om tot AEM toegang te hebben en van alle activa in de omslag een lijst te maken die in de bevellijnparameter wordt gespecificeerd `folder`
-1. Voor elk element in de map werkt de toepassing de metagegevens bij op basis van de naam en de waarde van de eigenschap die zijn opgegeven in de opdrachtregelparameters. `propertyName` en `propertyValue`
+   a. Als Service Credentials gebruikt voor niet-lokale ontwikkeling wordt opgegeven in het JSON-bestand (`file`), wordt het toegangstoken opgehaald van Adobe IMS API&#39;s
+1. De toepassing gebruikt het toegangstoken om toegang te krijgen tot AEM en alle elementen weer te geven in de map die is opgegeven in de opdrachtregelparameter `folder`
+1. Voor elk element in de map werkt de toepassing de metagegevens bij op basis van de naam en de waarde van de eigenschap die zijn opgegeven in de opdrachtregelparameters `propertyName` en `propertyValue`
 
 Hoewel deze voorbeeldtoepassing Node.js is, kunnen deze interacties worden ontwikkeld gebruikend verschillende programmeertalen en uit andere externe systemen worden uitgevoerd.
 
 ## Toegangstoken lokale ontwikkeling
 
-De Tokens van de Toegang van de Lokale Ontwikkeling worden geproduceerd voor een specifieke AEM as a Cloud Service milieu en het verlenen van toegang tot de auteur en de Publish diensten.  Deze toegangstokens zijn tijdelijk, en moeten slechts tijdens de ontwikkeling van externe toepassingen of systemen worden gebruikt die met AEM over HTTP in wisselwerking staan. In plaats van dat een ontwikkelaar bonafide Service Credentials moet verkrijgen en beheren, kunnen ze snel en gemakkelijk zelf een tijdelijk toegangstoken genereren waarmee ze hun integratie kunnen ontwikkelen.
+De Tokens van de Toegang van de Lokale Ontwikkeling worden geproduceerd voor een specifieke milieu van AEM as a Cloud Service en het verlenen van toegang tot de diensten van de Auteur en van Publish.  Deze toegangstokens zijn tijdelijk, en moeten slechts tijdens de ontwikkeling van externe toepassingen of systemen worden gebruikt die met AEM over HTTP in wisselwerking staan. In plaats van dat een ontwikkelaar bonafide Service Credentials moet verkrijgen en beheren, kunnen ze snel en gemakkelijk zelf een tijdelijk toegangstoken genereren waarmee ze hun integratie kunnen ontwikkelen.
 
 + [Hoe te om het Token van de Toegang van de Lokale Ontwikkeling te gebruiken](./local-development-access-token.md)
 
 ## Servicereferenties
 
-De geloofsbrieven van de dienst zijn de bonafide geloofsbrieven die in om het even welke niet ontwikkelingsscenario&#39;s - het duidelijkst productie - worden gebruikt die een externe toepassing of de capaciteit van het systeem vergemakkelijken om aan voor authentiek te verklaren en met, AEM as a Cloud Service over HTTP in wisselwerking te staan. De servicereferenties zelf worden niet verzonden naar AEM voor verificatie, maar de externe toepassing gebruikt deze om een JWT te genereren, die wordt uitgewisseld met de API&#39;s van Adobe IMS _for_ een toegangstoken, dat dan kan worden gebruikt om de verzoeken van HTTP voor AEM as a Cloud Service voor authentiek te verklaren.
+De geloofsbrieven van de dienst zijn de bonafide geloofsbrieven die in om het even welke niet ontwikkelingsscenario&#39;s - het duidelijkst productie - worden gebruikt die een externe toepassing of de capaciteit van het systeem om aan voor authentiek te verklaren en met AEM as a Cloud Service over HTTP in wisselwerking te staan vergemakkelijken. De geloofsbrieven van de dienst zelf worden niet verzonden naar AEM voor authentificatie, in plaats daarvan gebruikt de externe toepassing deze om JWT te produceren, die met APIs van Adobe IMS _voor_ een toegangstoken wordt geruild, dat dan kan worden gebruikt om HTTP- verzoeken aan AEM as a Cloud Service voor authentiek te verklaren.
 
 + [Hoe te om de Referenties van de Dienst te gebruiken](./service-credentials.md)
 
@@ -73,5 +73,5 @@ De geloofsbrieven van de dienst zijn de bonafide geloofsbrieven die in om het ev
 
 + [De voorbeeldtoepassing downloaden](./assets/aem-guides_token-authentication-external-application.zip)
 + Andere codevoorbeelden van JWT maken en uitwisselen
-   + [Node.js, Java, Python, C#.NET, en PHP codesteekproeven](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
-   + [Codevoorbeeld op basis van JavaScript/Axios](https://github.com/adobe/aemcs-api-client-lib)
+   + [ Node.js, Java, Python, C#.NET, en PHP codesteekproeven ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
+   + [ JavaScript/Axios-Gebaseerde codesteekproef ](https://github.com/adobe/aemcs-api-client-lib)

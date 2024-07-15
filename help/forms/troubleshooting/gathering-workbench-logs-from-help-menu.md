@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Workbench-logbestanden verzamelen vanuit het menu Help
 
-*Deze video doorloopt het proces om de logboeken van Workbench van het Menu van de Hulp te verzamelen.*
+*Deze video loopt door het proces om logboeken Workbench van het Menu van de Hulp te verzamelen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335501?quality=12&learn=on)

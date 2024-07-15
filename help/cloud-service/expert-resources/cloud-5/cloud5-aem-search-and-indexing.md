@@ -25,6 +25,6 @@ Een snelle duik in de diepe wateren van onderzoek en indexering. Een uitdagend o
 
 ## Inhoud die in deze video wordt behandeld
 
-+ Zoeken en index [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
-+ AEM [Indexconversie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
-+ Expert-reeks [Diep duiken](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
++ Onderzoek en Index [ Overzicht ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
++ AEM [ Omzetter van de Index ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
++ De Deskundige Reeks [ Diep duiken ](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Hoe te om de transactieonderbreking van een toepassingsserver in de dienst te veranderen PDFG
 
-*In deze video wordt beschreven hoe de time-out van een transactie van een toepassingsserver in de Forms PDFG-service wordt gewijzigd.*
+*Deze video beschrijft het proces om de transactieonderbreking van een toepassingsserver in de dienst van Forms te veranderen PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)

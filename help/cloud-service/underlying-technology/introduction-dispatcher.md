@@ -1,5 +1,5 @@
 ---
-title: Introductie tot Dispatcher
+title: Inleiding tot Dispatcher
 description: Een inleiding aan de mogelijkheden en de eigenschappen van de verzender als deel van de AEM architectuur.
 doc-type: technical video
 version: Cloud Service
@@ -20,10 +20,10 @@ ht-degree: 0%
 
 # Inleiding tot [!DNL Dispatcher] {#introduction-dispatcher}
 
-Een inleiding tot de mogelijkheden en kenmerken van de [!DNL dispatcher] als onderdeel van de AEM architectuur.
+Een inleiding tot de mogelijkheden en eigenschappen van [!DNL dispatcher] als deel van de AEM architectuur.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32029?quality=12&learn=on)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [[!DNL Dispatcher] documentatie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [[!DNL Dispatcher]  documentatie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

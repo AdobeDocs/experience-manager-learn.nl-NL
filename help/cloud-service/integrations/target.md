@@ -11,7 +11,7 @@ last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
 badgeIntegration: label="Integratie" type="positive"
-badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
+badgeVersions: label="AEM, hoofdloos as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
 duration: 1549
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
@@ -23,26 +23,26 @@ ht-degree: 0%
 
 # AEM zonder kop en doel integreren
 
-Leer hoe u AEM Headless met Adobe Target kunt integreren, door AEM Content Fragments naar Adobe Target te exporteren en ze te gebruiken voor het personaliseren van ervaringen zonder kop met behulp van alloy.js van Adobe Experience Platform Web SDK. De [WKND-app Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) wordt gebruikt om te onderzoeken hoe een gepersonaliseerde activiteit van het Doel gebruikend de Aanbiedingen van de Fragmenten van de Inhoud aan de ervaring kan worden toegevoegd, om een avontuur te bevorderen WKND.
+Leer hoe u AEM Headless met Adobe Target kunt integreren, door AEM Content Fragments naar Adobe Target te exporteren en ze te gebruiken voor het personaliseren van ervaringen zonder kop met behulp van alloy.js van Adobe Experience Platform Web SDK. [ Reageer WKND App ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) wordt gebruikt om te onderzoeken hoe een gepersonaliseerde activiteit van het Doel gebruikend de Aanbiedingen van de Fragmenten van de Inhoud aan de ervaring kan worden toegevoegd, om een avontuur te bevorderen WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
 In de zelfstudie worden de stappen beschreven die nodig zijn voor het opzetten van AEM en Adobe Target:
 
-1. [Adobe IMS-configuratie voor Adobe Target maken](#adobe-ims-configuration) in AEM auteur
-2. [Adobe Target-Cloud Service maken](#adobe-target-cloud-service) in AEM auteur
-3. [Adobe Target-Cloud Service toepassen op AEM Assets-mappen](#configure-asset-folders) in AEM auteur
-4. [Machtiging voor de Adobe Target-Cloud Service](#permission) in Adobe Admin Console
-5. [Inhoudsfragmenten exporteren](#export-content-fragments) van AEM auteur naar doel
-6. [Een activiteit maken met Content Fragment-aanbiedingen](#activity) in Adobe Target
-7. [Een Experience Platform DataStream maken](#datastream-id) in Experience Platform
-8. [Integreer personalisatie in een React-gebaseerde AEM Headless-app](#code) het gebruiken van het Web SDK van de Adobe.
+1. [ creeer de Configuratie van Adobe IMS voor Adobe Target ](#adobe-ims-configuration) in AEM Auteur
+2. [ creeer de Cloud Service van Adobe Target ](#adobe-target-cloud-service) in AEM Auteur
+3. [ pas de Cloud Service van Adobe Target op de omslagen van AEM Assets ](#configure-asset-folders) in AEM Auteur toe
+4. [ Toestemming de Cloud Service van Adobe Target ](#permission) in Adobe Admin Console
+5. [ de Fragmenten van de Inhoud van de Uitvoer ](#export-content-fragments) van AEM Auteur aan Doel
+6. [ creeer een Activiteit gebruikend de Aanbiedingen van het Fragment van de Inhoud ](#activity) in Adobe Target
+7. [ creeer een Experience Platform DataStream ](#datastream-id) in Experience Platform
+8. [ integreer verpersoonlijking in React-Gebaseerde app AEM Headless ](#code) gebruikend het Web SDK van de Adobe.
 
 ## Adobe IMS-configuratie{#adobe-ims-configuration}
 
 Een configuratie van Adobe IMS die de authentificatie tussen AEM en Adobe Target vergemakkelijkt.
 
-Controleren [de documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html) voor stapsgewijze instructies voor het maken van een Adobe IMS-configuratie.
+Herzie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html) voor geleidelijke instructies op hoe te om een configuratie van Adobe te creëren IMS.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416495/?quality=12&learn=on)
 
@@ -50,7 +50,7 @@ Controleren [de documentatie](https://experienceleague.adobe.com/docs/experience
 
 In AEM wordt een Adobe Target-Cloud Service gemaakt om het exporteren van inhoudsfragmenten naar Adobe Target te vergemakkelijken.
 
-Controleren [de documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html) voor stapsgewijze instructies voor het maken van een Adobe Target-Cloud Service.
+Herzie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html) voor geleidelijke instructies op hoe te om een Cloud Service van Adobe Target tot stand te brengen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
 
@@ -61,13 +61,13 @@ De Adobe Target-Cloud Service, geconfigureerd in een contextbewuste configuratie
 
 +++Vergroten voor geleidelijke instructies
 
-1. Aanmelden bij __AEM Auteur-service__ als DAM-beheerder
-1. Navigeren naar __Middelen > Bestanden__, zoekt u de elementenmap met de `/conf` toegepast op
-1. Selecteer de elementenmap en selecteer __Eigenschappen__ van de bovenste actiebalk
-1. Selecteer de __Cloud Servicen__ tab
-1. Zorg ervoor dat de Configuratie van de Wolk aan de context-bewuste config wordt geplaatst (`/conf`) die de configuratie van de Adobe Target-Cloud Servicen bevat.
-1. Selecteren __Adobe Target__ van de __Configuraties van Cloud Servicen__ vervolgkeuzelijst.
-1. Selecteren __Opslaan en sluiten__ in de rechterbovenhoek
+1. Login aan __AEM de dienst van de Auteur__ als beheerder DAM
+1. Navigeer aan __Assets > Dossiers__, bepaal de plaats van de activa omslag die `/conf` heeft toegepast op
+1. Selecteer de activaomslag, en selecteer __Eigenschappen__ van de hoogste actiebar
+1. Selecteer het __Cloud Servicen__ lusje
+1. Zorg ervoor dat de Configuratie van de Wolk aan de context-bewuste config (`/conf`) wordt geplaatst die de configuratie van de Cloud Servicen van Adobe Target bevat.
+1. Selecteer __Adobe Target__ van __de Configuraties van de Cloud Service__ dropdown.
+1. Selecteer __sparen &amp; Sluiten__ in het hoogste recht
 
 +++
 
@@ -77,16 +77,16 @@ De Adobe Target-Cloud Service, geconfigureerd in een contextbewuste configuratie
 
 ## Toestemming voor de integratie AEM{#permission}
 
-De integratie van Adobe Target, die zich manifesteert als een developer.adobe.com-project, moet de __Editor__ productrol in Adobe Admin Console, om Content Fragments naar Adobe Target uit te voeren.
+De integratie van Adobe Target, die zich als developer.adobe.com project manifesteert, moet de __redacteur__ productrol in Adobe Admin Console worden verleend, om de Fragmenten van de Inhoud naar Adobe Target uit te voeren.
 
 +++Vergroten voor geleidelijke instructies
 
 1. Meld u aan bij het Experience Cloud als gebruiker die het Adobe Target-product in Adobe Admin Console kan beheren
-1. Open de [Adobe Admin Console](https://adminconsole.adobe.com)
-1. Selecteren __Producten__ en open vervolgens __Adobe Target__
-1. Op de __Productprofielen__ tab, selecteert u __*DefaultWorkspace*__
-1. Selecteer de __API-referenties__ tab
-1. Zoek uw developer.adobe.com-toepassing in deze lijst en stel de __Productrol__ tot __Editor__
+1. Open [ Adobe Admin Console ](https://adminconsole.adobe.com)
+1. Selecteer __Producten__ en open dan __Adobe Target__
+1. Op het __lusje van Profielen van het Product__, uitgezochte __*DefaultWorkspace*__
+1. Selecteer het __API geloofsbrieven__ lusje
+1. Bepaal de plaats van uw developer.adobe.com app in deze lijst en plaats zijn __Rol van het Product__ aan __Redacteur__
 
 +++
 
@@ -96,28 +96,28 @@ De integratie van Adobe Target, die zich manifesteert als een developer.adobe.co
 
 ## Inhoudsfragmenten exporteren naar doel{#export-content-fragments}
 
-Inhoudsfragmenten die onder de [geconfigureerde AEM Assets-maphiërarchie](#apply-adobe-target-cloud-service-to-aem-assets-folders) kan als Content Fragment-aanbiedingen naar Adobe Target worden geëxporteerd. Deze Content Fragment-aanbiedingen, een speciale vorm van JSON-aanbiedingen in Target, kunnen worden gebruikt in Target-activiteiten om persoonlijke ervaringen te bieden in toepassingen zonder kop.
+De Fragmenten van de inhoud die onder de [ gevormde de de de omslaghiërarchie van AEM Assets ](#apply-adobe-target-cloud-service-to-aem-assets-folders) bestaan kunnen aan Adobe Target als Aanbiedingen van het Fragment van de Inhoud worden uitgevoerd. Deze Content Fragment-aanbiedingen, een speciale vorm van JSON-aanbiedingen in Target, kunnen worden gebruikt in Target-activiteiten om persoonlijke ervaringen te bieden in toepassingen zonder kop.
 
 +++Vergroten voor geleidelijke instructies
 
-1. Aanmelden bij __AEM auteur__ als DAM-gebruiker
-1. Navigeren naar __Middelen > Bestanden__ en zoek Inhoudsfragmenten die u wilt exporteren als JSON naar Doel in de map &quot;Adobe Target ingeschakeld&quot;
+1. Login aan __AEM Auteur__ als gebruiker DAM
+1. Navigeer aan __Assets > Dossiers__, en bepaal de plaats van de Fragmenten van de Inhoud om als JSON aan Doel onder de &quot;toegelaten Adobe Target&quot;omslag uit te voeren
 1. Selecteer de inhoudsfragmenten die u wilt exporteren naar Adobe Target
-1. Selecteren __Exporteren naar Adobe Target-aanbiedingen__ van de bovenste actiebalk
+1. Selecteer __Uitvoer aan Aanbiedingen van Adobe Target__ van de hoogste actiebar
    + Met deze actie exporteert u de volledig gehydrateerde JSON-weergave van het inhoudsfragment naar Adobe Target als een &quot;Content Fragment-aanbieding&quot;
    + De volledig gehydrateerde JSON-representatie kan in AEM worden bekeken
       + Selecteer het inhoudsfragment
       + Het zijpaneel uitbreiden
-      + Selecteren __Voorvertoning__ pictogram in het linkerzijpaneel
+      + Selecteer __pictogram van de Voorproef 0} {in het linkerzijpaneel__
       + De JSON-representatie die naar Adobe Target wordt geëxporteerd, wordt weergegeven in de hoofdweergave
-1. Aanmelden bij [Adobe Experience Cloud](https://experience.adobe.com) met een gebruiker in de Editor-rol voor Adobe Target
-1. Van de [Experience Cloud](https://experience.adobe.com), selecteert u __Doel__ met de productschakelaar rechtsboven om Adobe Target te openen.
-1. Zorg ervoor dat de standaardwerkruimte is geselecteerd in het dialoogvenster __Werkruimteswitcher__ rechtsboven.
-1. Selecteer de __Aanbiedingen__ tabblad in de bovenste navigatie
-1. Selecteer de __Type__ vervolgkeuzelijst en selecteren __Inhoudsfragmenten__
+1. Login aan [ Adobe Experience Cloud ](https://experience.adobe.com) met een gebruiker in de rol van de Redacteur voor Adobe Target
+1. Van het [ Experience Cloud ](https://experience.adobe.com), uitgezochte __Doel__ van de productschakelaar in hoogste recht om Adobe Target te openen.
+1. Zorg ervoor dat Standaard Workspace in de __schakelaar van Workspace__ in het hoogste recht wordt geselecteerd.
+1. Selecteer het __lusje van Aanbiedingen__ in de hoogste navigatie
+1. Selecteer __Type__ dropdown, en het selecteren van __de Fragmenten van de Inhoud__
 1. Controleren of het uit AEM geëxporteerde inhoudsfragment in de lijst wordt weergegeven
-   + Houd de muis boven de aanbieding en selecteer de __Weergave__ knop
-   + Controleer de __Aanbiedingsgegevens__ en zie de __AEM diepe koppeling__ waarmee het inhoudsfragment rechtstreeks in AEM Auteur-service wordt geopend
+   + Beweeg over de aanbieding, en selecteer de __knoop van de Mening__
+   + Herzie het __Info van de Aanbieding__ en zie __AEM diepe verbinding__ die het Fragment van de Inhoud direct in de AEM dienst van de Auteur opent
 
 +++
 
@@ -133,30 +133,30 @@ In dit voorbeeld, gebruiken wij een eenvoudige activiteit A/B, nochtans kan om h
 
 +++Vergroten voor geleidelijke instructies
 
-1. Selecteer de __Activiteiten__ tabblad in de bovenste navigatie
-1. Selecteren __+ Activiteit maken__ en selecteer vervolgens het type activiteit dat u wilt maken.
-   + In dit voorbeeld wordt een eenvoudig __A/B-test__ maar Aanbiedingen voor inhoudsfragmenten kunnen elk type activiteit beïnvloeden
-1. In de __Activiteit maken__ wizard
-   + Selecteren __Web__
-   + In __Kies Experience Composer__, selecteert u __Formulier__
-   + In __Werkruimte kiezen__, selecteert u __Standaardwerkruimte__
-   + In __Eigenschap kiezen__ selecteert u de eigenschap waarin de activiteit beschikbaar is of selecteert u __Geen eigenschapsbeperkingen__ om het toe te staan om in alle Eigenschappen worden gebruikt.
-   + Selecteren __Volgende__ om de activiteit te creëren
-1. De naam van de activiteit wijzigen door __naam wijzigen__ linksboven
+1. Selecteer het __lusje van Activiteiten__ in de hoogste navigatie
+1. Selecteer __+ activiteit creëren__, en selecteer dan het type van activiteit om tot stand te brengen.
+   + Dit voorbeeld leidt tot een eenvoudige __A/B Test__ maar de Aanbiedingen van het Fragment van de Inhoud kunnen om het even welk activiteitstype aandrijven
+1. In __creeer de tovenaar van de Activiteit__
+   + Selecteer __Web__
+   + In __kies Composer van de Ervaring__, uitgezochte __Vorm__
+   + In __kies Workspace__, uitgezochte __Standaard Workspace__
+   + In __kies Bezit__, selecteer het Bezit de Activiteit binnen beschikbaar is, of selecteer __Geen Beperkingen van het Bezit__ om het toe te staan om in alle Eigenschappen worden gebruikt.
+   + Selecteer __daarna__ om de Activiteit tot stand te brengen
+1. Verander de naam van de Activiteit door __te selecteren anders noemen__ in de linkerbovenkant
    + Geef de activiteit een betekenisvolle naam
-1. In de eerste ervaring stelt u __Locatie 1__ voor de activiteit
-   + In dit voorbeeld verwijst u naar een aangepaste locatie met de naam `wknd-adventure-promo`
-1. Onder __Inhoud__ Selecteer de standaardinhoud en selecteer __Inhoudsfragment wijzigen__
-1. Selecteer het geëxporteerde inhoudsfragment dat u voor deze ervaring wilt gebruiken en selecteer __Gereed__
+1. In de aanvankelijke Ervaring, plaats __Plaats 1__ voor de Activiteit om te richten
+   + In dit voorbeeld, richt een douaneplaats genoemd `wknd-adventure-promo`
+1. Onder __Inhoud__ selecteert de Standaardinhoud, en selecteert __het Fragment van de Inhoud van de Verandering__
+1. Selecteer het uitgevoerde Fragment van de Inhoud om voor deze ervaring te dienen, en selecteer __Gereed__
 1. Controleer de JSON Content Fragment Offer in het tekstgebied Inhoud. Dit is dezelfde JSON die beschikbaar is in AEM Auteur via de Voorvertoning van Content Fragment.
 1. Voeg in de linkertrack een ervaring toe en selecteer een andere Content Fragment-aanbieding die u wilt gebruiken
-1. Selecteren __Volgende__ en configureer de doelregels zoals vereist voor de activiteit
+1. Selecteer __daarna__, en vorm de het richten regels zoals vereist voor de activiteit
    + In dit voorbeeld laat u de A/B-test handmatig 50/50 splitsen.
-1. Selecteren __Volgende__ en voltooi de activiteitinstellingen
-1. Selecteren __Opslaan en sluiten__ en een betekenisvolle naam geven
-1. Selecteer bij Activiteit in Adobe Target __Activeren__ in het vervolgkeuzemenu Inactief/Activeren/archiveren rechtsboven.
+1. Selecteer __daarna__, en voltooi de activiteitenmontages
+1. Selecteer __sparen &amp; Sluiten__ en geef het een betekenisvolle naam
+1. Van de Activiteit in Adobe Target, activeert de uitgezochte ____ van Inactief/activeert/archivedropdown in het hoogste recht.
 
-De Adobe Target-activiteit die gericht is op de `wknd-adventure-promo` De locatie kan nu worden geïntegreerd en weergegeven in een AEM headless-app.
+De Adobe Target-activiteit die gericht is op de `wknd-adventure-promo` -locatie kan nu worden geïntegreerd en weergegeven in een AEM Headless-app.
 
 +++
 
@@ -166,27 +166,27 @@ De Adobe Target-activiteit die gericht is op de `wknd-adventure-promo` De locati
 
 ## Experience Platform DataStream-id{#datastream-id}
 
-An [Adobe Experience Platform DataStream](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) De id is vereist voor AEM headless-apps die met Adobe Target werken met de [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+Een [ identiteitskaart van Adobe Experience Platform DataStream ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) wordt vereist voor AEM Geen apps om met Adobe Target in wisselwerking te staan gebruikend [ SDK van het Web van de Adobe ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
 
 +++Vergroten voor geleidelijke instructies
 
-1. Navigeren naar [Adobe Experience Cloud](https://experience.adobe.com/)
-1. Openen __Experience Platform__
-1. Selecteren __Gegevensverzameling > Gegevensstromen__ en selecteert u __Nieuwe DataStream__
+1. Ga aan [ Adobe Experience Cloud ](https://experience.adobe.com/)
+1. Open __Experience Platform__
+1. Selecteer __de Inzameling van Gegevens > de stromen van Gegevens__ en selecteer __Nieuwe DataStream__
 1. In de Nieuwe tovenaar DataStream, ga binnen:
    + Naam: `AEM Target integration`
-   + Omschrijving: `Datastream used by the Adobe Web SDK to serve personalized Content Fragments Offers.`
+   + Beschrijving: `Datastream used by the Adobe Web SDK to serve personalized Content Fragments Offers.`
    + Gebeurtenisschema: `Leave blank`
-1. Selecteren __Opslaan__
-1. Selecteren __Service toevoegen__
-1. In __Service__ selecteren __Adobe Target__
-   + Ingeschakeld: __Ja__
-   + Token eigenschap: __Leeg laten__
-   + Id doelomgeving: __Leeg laten__
-      + De doelomgeving kan in Adobe Target worden ingesteld op __Beheer > Gastheren__.
-   + Id-naamruimte van doel: __Leeg laten__
-1. Selecteren __Opslaan__
-1. Kopieer de knop __DataStream-id__ voor gebruik in [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) configuratieaanroep.
+1. Selecteer __sparen__
+1. Selecteer __toevoegen de Dienst__
+1. In __de Dienst__ uitgezochte __Adobe Target__
+   + Toegelaten: __ja__
+   + Token van het bezit: __verlaten leeg__
+   + Identiteitskaart van het Milieu van het doel: __Verlof__
+      + Het milieu van het Doel kan in Adobe Target bij __Beleid > Gastheren__ worden geplaatst.
+   + De Namespace van identiteitskaart van de Derde van het doel: __verlaten leeg__
+1. Selecteer __sparen__
+1. Op de rechterkant, kopieer identiteitskaart van 0} Datastream __voor gebruik in [ de configuratievraag van SDK van het Web van de Adobe ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).__
 
 +++
 
@@ -196,27 +196,27 @@ An [Adobe Experience Platform DataStream](https://experienceleague.adobe.com/doc
 
 ## Aanpassing toevoegen aan een app zonder koppen AEM{#code}
 
-In deze zelfstudie wordt uitgelegd hoe u een eenvoudige React-app kunt personaliseren met behulp van Content Fragment-aanbiedingen in Adobe Target via [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Deze benadering kan worden gebruikt om een JavaScript-webbeleving aan te passen.
+Dit leerprogramma verkent het personaliseren van een eenvoudige Reactie app gebruikend de Aanbiedingen van het Fragment van de Inhoud in Adobe Target via [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Deze aanpak kan worden gebruikt om elke JavaScript-webbeleving aan te passen.
 
-Mobiele Android™- en iOS-ervaringen kunnen op maat worden gemaakt met behulp van vergelijkbare patronen [De mobiele SDK van Adobe](https://developer.adobe.com/client-sdks/documentation/).
+De mobiele ervaringen van Android™ en van iOS kunnen na gelijkaardige patronen worden gepersonaliseerd gebruikend de [ Mobiele SDK van de Adobe ](https://developer.adobe.com/client-sdks/documentation/).
 
 ### Vereisten
 
 + Node.js 14
 + Git
-+ [WKND Shared 2.1.4+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) geïnstalleerd op AEM als Cloud Author and Publish-services
++ [ WKND Gedeelde 2.1.4+ ](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) geïnstalleerd op AEM als de Diensten van de Auteur van de Wolk en van Publish
 
 ### Instellen
 
-1. Download de broncode voor voorbeeld React app van [Github.com](https://github.com/adobe/aem-guides-wknd-graphql)
+1. Download de broncode voor steekproef React app van [ Github.com ](https://github.com/adobe/aem-guides-wknd-graphql)
 
    ```shell
    $ mkdir -p ~/Code
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Codebasis openen op `~/Code/aem-guides-wknd-graphql/personalization-tutorial` in uw favoriete IDE
-1. Werk de host bij van de AEM service waarmee de app verbinding moet maken `~/Code/aem-guides-wknd-graphql/personalization-tutorial/src/.env.development`
+1. Codebasis openen bij `~/Code/aem-guides-wknd-graphql/personalization-tutorial` in uw favoriete IDE
+1. Werk de host van de AEM service bij waarmee u verbinding wilt maken met de app `~/Code/aem-guides-wknd-graphql/personalization-tutorial/src/.env.development`
 
    ```
    ...
@@ -232,7 +232,7 @@ Mobiele Android™- en iOS-ervaringen kunnen op maat worden gemaakt met behulp v
    $ npm run start
    ```
 
-1. Installeer de [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package) als een NPM-pakket.
+1. Installeer het [ Web SDK van de Adobe ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package) als pakket NPM.
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/personalization-tutorial
@@ -243,10 +243,10 @@ Mobiele Android™- en iOS-ervaringen kunnen op maat worden gemaakt met behulp v
 
    Wanneer het vormen van SDK van het Web, zijn er twee vereiste identiteitskaarts:
 
-   + `edgeConfigId` de [DataStream-id](#datastream-id)
-   + `orgId` de AEM as a Cloud Service/Doel Adobe-Org-id die u kunt vinden op __Experience Cloud > Profiel > Accountinformatie > Huidige organisatie-id__
+   + `edgeConfigId` die [ identiteitskaart DataStream ](#datastream-id) is
+   + `orgId` AEM as a Cloud Service/Doel Adobe Org Id die in __Experience Cloud > Profiel > de info van de Rekening > Huidige identiteitskaart van het Org__ kan worden gevonden
 
-   Wanneer het aanhalen van SDK van het Web, de de activiteitenplaats van Adobe Target (in ons voorbeeld, `wknd-adventure-promo`) moet worden ingesteld als de waarde in het dialoogvenster `decisionScopes` array.
+   Wanneer de SDK van het Web wordt aangeroepen, moet de locatie van de Adobe Target-activiteit (in ons voorbeeld `wknd-adventure-promo` ) worden ingesteld als de waarde in de array `decisionScopes` .
 
    ```javascript
    import { createInstance } from "@adobe/alloy";
@@ -258,7 +258,7 @@ Mobiele Android™- en iOS-ervaringen kunnen op maat worden gemaakt met behulp v
 
 ### Implementatie
 
-1. Een component React maken `AdobeTargetActivity.js` aan de oppervlakte van Adobe Target.
+1. Maak een React-component `AdobeTargetActivity.js` om Adobe Target-activiteiten te oppervlakken.
 
    __src/components/AdobeTargetActivity.js__
 
@@ -347,7 +347,7 @@ Mobiele Android™- en iOS-ervaringen kunnen op maat worden gemaakt met behulp v
    <AdobeTargetActivity activityLocation={"wknd-adventure-promo"} OfferComponent={AdventurePromo}/>
    ```
 
-1. Een component React maken `AdventurePromo.js` om het avontuur te renderen dat JSON Adobe Target dient.
+1. Maak een React-component `AdventurePromo.js` om het avontuur te renderen dat JSON Adobe Target-servers biedt.
 
    Deze React component neemt volledig gehydrateerde JSON die een fragment van de avontuurinhoud vertegenwoordigt, en op een promotionele manier toont. De React componenten die JSON tonen die van de Aanbiedingen van het Fragment van de Inhoud van Adobe Target wordt onderhouden kunnen zo gevarieerd en complex zijn zoals vereist gebaseerd op de Inhoudsfragmenten die naar Adobe Target worden uitgevoerd.
 
@@ -435,7 +435,7 @@ Mobiele Android™- en iOS-ervaringen kunnen op maat worden gemaakt met behulp v
    <AdventurePromo adventure={adventureJSON}/>
    ```
 
-1. Voeg de component AdobeTargetActivity toe aan React app `Home.js` boven de lijst van avonturen.
+1. Voeg de component AdobeTargetActivity toe om de toepassing `Home.js` boven de lijst met avonturen te Reageren.
 
    __src/components/Home.js__
 
@@ -456,14 +456,14 @@ Mobiele Android™- en iOS-ervaringen kunnen op maat worden gemaakt met behulp v
    }
    ```
 
-1. Als de React-app niet wordt uitgevoerd, kunt u deze opnieuw starten met `npm run start`.
+1. Als de React-app niet wordt uitgevoerd, start u deze opnieuw met `npm run start` .
 
    Open de React-app in twee verschillende browsers, zodat de A/B-test de verschillende ervaringen voor elke browser kan weergeven. Als in beide browsers dezelfde avontuuraanbieding wordt weergegeven, probeert u een van de browsers te sluiten of opnieuw te openen totdat de andere ervaring wordt weergegeven.
 
-   In de onderstaande afbeelding ziet u de twee verschillende Content Fragment-aanbiedingen voor de `wknd-adventure-promo` Activiteit, gebaseerd op Adobe Target-logica.
+   In de onderstaande afbeelding ziet u de twee verschillende Content Fragment-aanbiedingen die worden weergegeven voor de `wknd-adventure-promo` Activity, op basis van Adobe Target-logica.
 
-   ![Ervaring biedt](./assets/target/offers-in-app.png)
+   ![ de aanbiedingen van de Ervaring ](./assets/target/offers-in-app.png)
 
 ## Gefeliciteerd!
 
-Nu we AEM as a Cloud Service hebben geconfigureerd voor het exporteren van inhoudsfragmenten naar Adobe Target, de Content Fragments-aanbiedingen in een Adobe Target-activiteit hebben gebruikt en die activiteit in een AEM Headless-app hebben opgezocht, waardoor de ervaring wordt aangepast.
+Nu wij AEM as a Cloud Service hebben gevormd om de Fragmenten van de Inhoud naar Adobe Target uit te voeren, de Aanbiedingen van de Fragments van de Inhoud in een Activiteit van Adobe Target gebruiken, en die Activiteit in een AEM Headless app te beluisteren, die de ervaring personaliseert.

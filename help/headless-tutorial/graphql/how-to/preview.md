@@ -28,19 +28,19 @@ AEM toepassingen zonder koppen ondersteunen geïntegreerde ontwerpvoorvertoning.
 Aan verschillende voorwaarden moet zijn voldaan om een voorbeeld van een inhoudsfragment te kunnen gebruiken:
 
 1. De app moet worden geïmplementeerd op een URL die toegankelijk is voor auteurs
-1. De app moet zijn geconfigureerd om verbinding te maken met AEM Auteur-service (in plaats van de AEM Publish-service)
-1. De app moet zijn ontworpen met URL&#39;s of routes die kunnen worden gebruikt [Pad of id van inhoudsfragment](#url-expressions) om de Content Fragments te selecteren om voor voorproef in app ervaring te tonen.
+1. De app moet zijn geconfigureerd om verbinding te maken met AEM Auteur-service (in plaats van met de AEM Publish-service)
+1. App moet met URLs of routes worden ontworpen die [ weg of identiteitskaart van het Fragment van de Inhoud ](#url-expressions) kunnen gebruiken om de Fragmenten van de Inhoud te selecteren om voor voorproef in de app ervaring te tonen.
 
 ## Voorvertoning van URL&#39;s
 
-Voorvertoning van URL&#39;s weergeven met [URL-expressies](#url-expressions), worden ingesteld in de eigenschappen van het inhoudsfragmentmodel.
+Voorproef URLs, gebruikend [ uitdrukkingen URL ](#url-expressions), wordt geplaatst op de Eigenschappen van het Model van het Fragment van de Inhoud.
 
-![Voorvertoning-URL van inhoudsfragmentmodel](./assets/preview/cf-model-preview-url.png)
+![ het ModelVoorproef URL van het Fragmentmodel van de Inhoud ](./assets/preview/cf-model-preview-url.png)
 
 1. Aanmelden bij AEM Auteur-service als beheerder
-1. Navigeren naar __Gereedschappen > Algemeen > Modellen van inhoudsfragmenten__
-1. Selecteer de __Inhoudsfragmentmodel__ en selecteert u __Eigenschappen__ van de bovenste actiebalk.
-1. Geef de URL van de voorvertoning voor het inhoudsfragmentmodel op met [URL-expressies](#url-expressions)
+1. Navigeer aan __Hulpmiddelen > Algemeen > de Modellen van het Fragment van de Inhoud__
+1. Selecteer het __Model van het Fragment van de Inhoud__ en selecteer __Eigenschappen__ van de hoogste actiebar.
+1. Ga voorproef URL voor het Model van het Fragment van de Inhoud in gebruikend [ uitdrukkingen URL ](#url-expressions)
    + De URL van de voorvertoning moet verwijzen naar een implementatie van de app die verbinding maakt met AEM Auteur-service.
 
 ### URL-expressies
@@ -57,14 +57,14 @@ Elk inhoudsfragmentmodel kan een voorbeeld-URL hebben. De URL van de voorvertoni
 
 Voorbeeld-URL&#39;s:
 
-+ Een voorbeeld-URL op het tabblad __Adventure__ model kan er zo uitzien `https://preview.app.wknd.site/adventure${contentFragment.path}` die wordt omgezet in `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`
-+ Een voorbeeld-URL op het tabblad __Artikel__ model kan er zo uitzien `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` de oplossingen `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
++ Een voorproef URL op het __model van het Adventure__ kon als `https://preview.app.wknd.site/adventure${contentFragment.path}` kijken die aan `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali` oplost
++ Een voorproef URL op het __model van het Artikel__ kon als `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` kijken oplossen `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
 
 ## Voorvertoning in app
 
-Voor elk inhoudsfragment dat gebruikmaakt van het geconfigureerde inhoudsfragmentmodel is een knop Voorvertoning beschikbaar. Met de knop Voorvertoning opent u de URL van de voorvertoning van het inhoudsfragmentmodel en injecteert u de waarden van het geopende inhoudsfragment in de [URL-expressies](#url-expressions).
+Voor elk inhoudsfragment dat gebruikmaakt van het geconfigureerde inhoudsfragmentmodel is een knop Voorvertoning beschikbaar. De knoop van de Voorproef opent de voorproef URL van het Model van het Fragment van de Inhoud en injecteert de open waarden van het Fragment van de Inhoud in de [ uitdrukkingen URL ](#url-expressions).
 
-![Knop Voorvertoning](./assets/preview/preview-button.png)
+![ knoop van de Voorproef ](./assets/preview/preview-button.png)
 
 Voer hard vernieuwen uit (wissen van de lokale cache van de browser) wanneer u een voorvertoning weergeeft van wijzigingen in inhoudsfragmenten in de app.
 
@@ -72,13 +72,13 @@ Voer hard vernieuwen uit (wissen van de lokale cache van de browser) wanneer u e
 
 Laten we eens kijken naar de WKND-app, een eenvoudige React-toepassing die avonturen van AEM weergeeft met behulp van AEM Headless GraphQL API&#39;s.
 
-De voorbeeldcode is beschikbaar op [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
+De voorbeeldcode is beschikbaar op [ Github.com ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
 
 ## URL&#39;s en routes
 
-De URL&#39;s of routes die worden gebruikt om een voorbeeld van een inhoudsfragment weer te geven, moeten kunnen worden samengesteld met [URL-expressies](#url-expressions). In deze voorvertoningsversie van de WKND-app worden de fragmenten voor avontuur-inhoud weergegeven via de `AdventureDetail` component gebonden aan de route `/adventure<CONTENT FRAGMENT PATH>`. De URL van de voorvertoning van het WKND-avontuurmodel moet daarom worden ingesteld op `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` om aan deze route op te lossen.
+URLs of de routes die aan voorproef worden gebruikt moeten een tevreden Fragment composable zijn gebruikend [ uitdrukkingen URL ](#url-expressions). In deze voorvertoningsversie van de WKND-app worden de fragmenten voor avontuurinhoud weergegeven via de `AdventureDetail` -component die aan de route `/adventure<CONTENT FRAGMENT PATH>` is gebonden. De URL van de voorvertoning van het WKND-avontuurmodel moet daarom zijn ingesteld op `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` om deze route te kunnen gebruiken.
 
-Voorvertoning van contentfragment werkt alleen als de app een adresseerbare route heeft, die kan worden gevuld [URL-expressies](#url-expressions) die dat inhoudsfragment in de app op een voor een voorvertoning geschikte manier renderen.
+De voorproef van het Fragment van de inhoud werkt slechts als app een adresseerbare route heeft, die met [ uitdrukkingen URL ](#url-expressions) kan worden bevolkt die dat Fragment van de Inhoud in app op een voorproefable manier teruggeven.
 
 + `src/App.js`
 
@@ -109,7 +109,7 @@ export default App;
 
 ### De geschreven inhoud weergeven
 
-De `AdventureDetail` parseert eenvoudig het pad van het inhoudsfragment en injecteert u dit via de URL van de voorvertoning `${contentFragment.path}` [URL-expressie](#url-expressions), van de route URL, en gebruikt het om het Adventure WKND te verzamelen en terug te geven.
+De `AdventureDetail` component ontleedt eenvoudig de weg van het Fragment van de Inhoud, die in Voorproef URL via de `${contentFragment.path}` [ wordt ingespoten uitdrukking URL ](#url-expressions), van de route URL, en gebruikt het om het Adventure WKND te verzamelen en terug te geven.
 
 + `src/components/AdventureDetail.js`
 

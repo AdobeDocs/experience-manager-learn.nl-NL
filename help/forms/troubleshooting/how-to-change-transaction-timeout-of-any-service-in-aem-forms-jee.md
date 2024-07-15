@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Hoe te om transactieonderbreking van de dienst in AEM Forms JEE te veranderen
 
-*Deze video doorloopt de stappen om transactieonderbreking van de dienst in AEM Forms JEE te veranderen.*
+*Deze video loopt door de stappen om transactiesonderbreking van de dienst in AEM Forms JEE te veranderen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335495?quality=12&learn=on)

@@ -25,68 +25,68 @@ Leer hoe te om de aanvankelijke reeks AEM Gebeurtenissen van het dagboek terug t
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427052?quality=12&learn=on)
 
-Journaling is een trekmethode om AEM Gebeurtenissen te verbruiken, en een dagboek is een geordende lijst van gebeurtenissen. Met Adobe I/O Events Journaling API kunt u de AEM Events ophalen uit het dagboek en deze verwerken in uw toepassing. Met deze aanpak kunt u gebeurtenissen beheren op basis van een opgegeven ervaring en deze efficiënt bulksgewijs verwerken. Zie de [Journalating](https://developer.adobe.com/events/docs/guides/journaling_intro/) voor diepgaande inzichten, met inbegrip van essentiële overwegingen zoals bewaartermijnen, paginering, en meer.
+Journaling is een trekmethode om AEM Gebeurtenissen te verbruiken, en een dagboek is een geordende lijst van gebeurtenissen. Met Adobe I/O Events Journaling API kunt u de AEM Events ophalen uit het dagboek en deze verwerken in uw toepassing. Met deze aanpak kunt u gebeurtenissen beheren op basis van een opgegeven ervaring en deze efficiënt bulksgewijs verwerken. Verwijs naar [ het Journaling ](https://developer.adobe.com/events/docs/guides/journaling_intro/) voor diepgaande inzichten, met inbegrip van essentiële overwegingen zoals bewaartermijnen, paginering, en meer.
 
-In het Adobe Developer-consoleproject wordt elke gebeurtenisregistratie automatisch ingeschakeld voor journalistiek, zodat naadloze integratie mogelijk is.
+In het Adobe Developer Console-project wordt elke gebeurtenisregistratie automatisch ingeschakeld voor journalistiek, zodat naadloze integratie mogelijk is.
 
-In dit voorbeeld gebruikt u een Adobe-geleverd _gehoste webtoepassing_ staat u toe om de eerste partij van AEM Gebeurtenissen van het dagboek zonder de behoefte te halen om uw toepassing te vestigen. Deze webtoepassing met Adobe wordt gehost op [Glitch](https://glitch.com/), een platform dat bekend staat om het aanbieden van een webomgeving die bevorderlijk is voor het ontwikkelen en implementeren van webtoepassingen. De optie voor het gebruik van uw eigen toepassing is echter ook beschikbaar als u daar de voorkeur aan geeft.
+In dit voorbeeld, dat een Adobe-Geleverde _ontvangen Webtoepassing_ gebruikt staat u toe om de eerste partij van AEM Gebeurtenissen van het dagboek zonder de behoefte te halen aan opstelling uw toepassing. Deze Adobe-verstrekte Webtoepassing wordt ontvangen op [ Glitch ](https://glitch.com/), een platform gekend voor het aanbieden van een web-based milieu dat aan de bouw van en het opstellen van Webtoepassingen bevordert. De optie voor het gebruik van uw eigen toepassing is echter ook beschikbaar als u daar de voorkeur aan geeft.
 
 ## Vereisten
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- as a Cloud Service omgeving AEM met [AEM Event ingeschakeld](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- Het milieu van AEM as a Cloud Service met [ toegelaten AEM Gebeurtenis ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
 
-- [Adobe Developer Console-project geconfigureerd voor AEM gebeurtenissen](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
+- [ Adobe Developer Console project dat voor AEM Gebeurtenissen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console) wordt gevormd.
 
 >[!IMPORTANT]
 >
->AEM as a Cloud Service gebeurtenis is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Om AEM gebeurtenis op uw AEM as a Cloud Service milieu toe te laten, contacteer [AEM-team](mailto:grp-aem-events@adobe.com).
+>AEM as a Cloud Service Event is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Om AEM gebeurtenis op uw milieu van AEM as a Cloud Service toe te laten, contacteer [ AEM-Toevend team ](mailto:grp-aem-events@adobe.com).
 
 ## Toegang tot webtoepassing
 
 Ga als volgt te werk om toegang te krijgen tot de door de Adobe verschafte webtoepassing:
 
-- Controleer of u toegang hebt tot de [Glitch - gehoste webtoepassing](https://indigo-speckle-antler.glitch.me/) in een nieuw browsertabblad.
+- Verifieer u tot [ Glitch kunt toegang hebben - ontvangen Webtoepassing ](https://indigo-speckle-antler.glitch.me/) in een nieuwe browser tabel.
 
-  ![Glitch - gehoste webtoepassing](../assets/examples/journaling/glitch-hosted-web-application.png)
+  ![ Glitch - ontvangen Webtoepassing ](../assets/examples/journaling/glitch-hosted-web-application.png)
 
-## Projectgegevens van Adobe Developer Console verzamelen
+## Adobe Developer Console-projectgegevens verzamelen
 
-Om de AEM Gebeurtenissen van het dagboek, geloofsbrieven zoals te halen _IMS-organisatie-id_, _Client-id_, en _Toegangstoken_ zijn vereist. Voer de volgende stappen uit om deze gegevens te verzamelen:
+Om de AEM Gebeurtenissen van het dagboek te halen, geloofsbrieven zoals _identiteitskaart van de Organisatie IMS_, _identiteitskaart van de Cliënt_, en _Token van de Toegang_ worden vereist. Voer de volgende stappen uit om deze gegevens te verzamelen:
 
-- In de [Adobe Developer Console](https://developer.adobe.com), navigeer naar uw project en klik om het te openen.
+- In [ Adobe Developer Console ](https://developer.adobe.com), navigeer aan uw project en klik om het te openen.
 
-- Onder de **Credentials** klikt u op de **OAuth Server-to-Server** de koppeling openen **Credentials details** tab.
+- Onder de **sectie van Referenties**, klik de **Server-aan-Server** verbinding van OAuth om de **details van Credentials** tabel te openen.
 
-- Klik op de knop **Toegangstoken genereren** knop om het toegangstoken te genereren.
+- Klik **produceren toegangstoken** knoop om het toegangstoken te produceren.
 
-  ![Toegangstoken genereren voor Adobe Developer-consolProject](../assets/examples/journaling/adobe-developer-console-project-generate-access-token.png)
+  ![ Adobe Developer Console Project produceert Token van de Toegang ](../assets/examples/journaling/adobe-developer-console-project-generate-access-token.png)
 
-- De **Gegenereerd toegangstoken**, **CLIENT-ID**, en **ORGANISATIE-ID**. U hebt ze later nodig in deze zelfstudie.
+- Kopieer het **Gegenereerde toegangstoken**, **identiteitskaart van de CLIENT**, en **identiteitskaart van de ORGANISATIE**. U hebt ze later nodig in deze zelfstudie.
 
-  ![Referenties van Adobe Developer Console-projectkopie](../assets/examples/journaling/adobe-developer-console-project-copy-credentials.png)
+  ![ Referenties van het Exemplaar van het Project van Adobe Developer Console ](../assets/examples/journaling/adobe-developer-console-project-copy-credentials.png)
 
-- Elke gebeurtenisregistratie wordt automatisch ingeschakeld voor journalistiek. Om de _uniek API-eindpunt voor journalisten_ Klik op de gebeurteniskaart waarop u zich hebt geabonneerd op AEM Gebeurtenissen. Van de **Registratiegegevens** -tabblad, kopieert u de **UNIEKE API-EINDPUNT VERPLAATSEN**.
+- Elke gebeurtenisregistratie wordt automatisch ingeschakeld voor journalistiek. Om het _unieke het journaling API eindpunt_ van uw gebeurtenisregistratie te krijgen, klik de gebeurteniskaart die aan AEM Gebeurtenissen wordt ingetekend. Van het **lusje van de Details van de Registratie**, kopieer **JOURNALING UNIQUE API EINDPUNT**.
 
-  ![Adobe Developer Console Project Events Card](../assets/examples/journaling/adobe-developer-console-project-events-card.png)
+  ![ de Kaart van de Gebeurtenissen van het Project van Adobe Developer Console ](../assets/examples/journaling/adobe-developer-console-project-events-card.png)
 
 ## AEM Events-journaal laden
 
-Om dingen eenvoudig te houden, haalt deze ontvangen Webtoepassing slechts de eerste partij van AEM Gebeurtenissen van het dagboek. Dit zijn de oudste beschikbare gebeurtenissen in het dagboek. Zie voor meer informatie [eerste reeks gebeurtenissen](https://developer.adobe.com/events/docs/guides/api/journaling_api/#fetching-your-first-batch-of-events-from-the-journal).
+Om dingen eenvoudig te houden, haalt deze ontvangen Webtoepassing slechts de eerste partij van AEM Gebeurtenissen van het dagboek. Dit zijn de oudste beschikbare gebeurtenissen in het dagboek. Voor meer details, zie [ eerste partij van gebeurtenissen ](https://developer.adobe.com/events/docs/guides/api/journaling_api/#fetching-your-first-batch-of-events-from-the-journal).
 
-- In de [Glitch - gehoste webtoepassing](https://indigo-speckle-antler.glitch.me/), voert u de **IMS-organisatie-id**, **Client-id**, en **Toegangstoken** u hebt eerder gekopieerd uit het Adobe Developer Console-project en klikt op **Verzenden**.
+- In het [ Glitch - ontvangen Webtoepassing ](https://indigo-speckle-antler.glitch.me/), ga **identiteitskaart van de Organisatie IMS**, **identiteitskaart van de Cliënt** in, en **Token van de Toegang** u vroeger van het project van Adobe Developer Console kopieerde en **klikt voorlegt**.
 
 - Als dit lukt, geeft de tabelcomponent de gegevens van het AEM Events Journal weer.
 
-  ![AEM Events Journal-gegevens](../assets/examples/journaling/load-journal.png)
+  ![ AEM de Gegevens van het Dagboek van Gebeurtenissen ](../assets/examples/journaling/load-journal.png)
 
-- Dubbelklik op de rij om de volledige gebeurtenislading weer te geven. U kunt zien dat de AEM gebeurtenisdetails alle noodzakelijke informatie hebben om de gebeurtenis in de webhaak te verwerken. Het gebeurtenistype (`type`), gebeurtenisbron (`source`), gebeurtenis-id (`event_id`), tijd van gebeurtenis (`time`) en gebeurtenisgegevens (`data`).
+- Dubbelklik op de rij om de volledige gebeurtenislading weer te geven. U kunt zien dat de AEM gebeurtenisdetails alle noodzakelijke informatie hebben om de gebeurtenis in de webhaak te verwerken. Bijvoorbeeld het gebeurtenistype (`type`), gebeurtenisbron (`source`), gebeurtenis id (`event_id`), gebeurtenistijd (`time`) en gebeurtenisgegevens (`data`).
 
-  ![AEM gebeurtenis Payload voltooien](../assets/examples/journaling/complete-journal-data.png)
+  ![ Volledige AEM Gebeurtenislading ](../assets/examples/journaling/complete-journal-data.png)
 
 ## Aanvullende bronnen
 
-- [Broncode van Glitch-webhaak](https://glitch.com/edit/#!/indigo-speckle-antler) is beschikbaar ter referentie. Het is een eenvoudige React-toepassing die [Adobe Reageren spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) componenten om UI terug te geven.
+- [ WebHaakbroncode van de Glitch ](https://glitch.com/edit/#!/indigo-speckle-antler) is beschikbaar voor verwijzing. Het is een eenvoudige React toepassing die [ Adobe gebruikt Reageer Spectrum ](https://react-spectrum.adobe.com/react-spectrum/index.html) componenten om UI terug te geven.
 
-- [Adobe I/O Events Journaling API](https://developer.adobe.com/events/docs/guides/api/journaling_api/) biedt gedetailleerde informatie over de API, zoals eerst, volgende en laatste batch gebeurtenissen, paginering en meer.
+- [ de Gebeurtenissen van de Adobe I/O die API ](https://developer.adobe.com/events/docs/guides/api/journaling_api/) reizen verstrekt gedetailleerde informatie over API als eerste, volgende, en laatste partij gebeurtenissen, paginering, en meer.

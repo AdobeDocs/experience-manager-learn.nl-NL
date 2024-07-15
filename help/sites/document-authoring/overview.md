@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Begrijp hoe te om document auteursrecht te vormen die AEM auteurs toestaan om documenten uit te geven en te publiceren gebruikend Microsoft Word of de Dokken van Google.
 
-Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) voor volledige informatie over het instellen van documentontwerpen.
+Herzie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) voor volledige details van vestiging document creatie.
 
 ## Aan de slag met het ontwerpen van documenten
 
@@ -46,14 +46,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="set-up.md" title="Documentontwerpen instellen">Document ontwerpen instellen</a>
+              <a href="set-up.md" title="Documentontwerpen instellen"> het document van de opstelling authoring </a>
             </p>
             <p class="is-size-6">Leer hoe u het maken van documenten instelt.</p>
             <a href="set-up.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -78,14 +78,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">4 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="preview-and-publish.md" title="Inhoud voorvertonen en publiceren">Editor-overzicht</a>
+              <a href="preview-and-publish.md" title="Inhoud voorvertonen en publiceren"> Overzicht van de Redacteur </a>
             </p>
             <p class="is-size-6">Een kort overzicht van het voorvertonen en publiceren van inhoud met de AEM Sidekick.</p>
             <a href="preview-and-publish.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -109,14 +109,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="document-structure.md" title="Documentstructuur">Documentstructuur</a>
+              <a href="document-structure.md" title="Documentstructuur"> de structuur van het Document </a>
             </p>
             <p class="is-size-6">De structuur van documenten verkennen.</p>
             <a href="document-structure.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -140,14 +140,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="default-content-and-sections.md" title="Standaardinhoud en -secties">Nieuwe editor schakelen</a>
+              <a href="default-content-and-sections.md" title="Standaardinhoud en -secties"> Nieuwe redacteur knevel </a>
             </p>
             <p class="is-size-6">Ontdek de ontwerpconcepten voor standaardinhoud en -secties.</p>
             <a href="default-content-and-sections.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -172,14 +172,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="blocks-and-autoblocks.md" title="Blokken en autoblokken">
-                Blokken en autoblokken</a>
+                Blokken en autoblokken </a>
             </p>
             <p class="is-size-6">Ontdek de concepten in documentauthoring van blokken en autoblokken.</p>
             <a href="blocks-and-autoblocks.md"
               class="spectrum-Button spectrum-Button--outline
               spectrum-Button--primary spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -203,14 +203,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="redirects.md" title="Omleiding">Omleidingen maken</a>
+              <a href="redirects.md" title="Omleiding"> creeer opnieuw richt </a>
             </p>
             <p class="is-size-6">Ontdek hoe omleidingen worden gemaakt door documenten te ontwerpen.</p>
             <a href="redirects.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -235,14 +235,15 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="bulk-metadata.md" title="Bulkmetagegevens">Taalkopieën</a>
+              <a href="bulk-metadata.md" title="Bulkmetagegevens"> Taal
+                kopieën </a>
             </p>
             <p class="is-size-6">Ontdek hoe bulkmetagegevens worden verwerkt in het ontwerpen van documenten.</p>
             <a href="bulk-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -267,14 +268,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="page-metadata.md" title="Metagegevens pagina">Metagegevens pagina</a>
+              <a href="page-metadata.md" title="Metagegevens pagina"> meta-gegevens van de Pagina </a>
             </p>
             <p class="is-size-6">Onderzoek hoe het document creatie paginadetagegevens beheert.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -299,14 +300,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="author-authentication.md" title="Authentificatie">Auteursverificatie</a>
+              <a href="author-authentication.md" title="Authentificatie"> Authorauthentificatie </a>
             </p>
             <p class="is-size-6">Leer hoe te om auteursauthentificatie te vormen.</p>
             <a href="author-authentication.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -336,14 +337,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/responsive-navigation.md" title="Responsieve navigatie">Responsieve navigatie</a>
+              <a href="./how-to/responsive-navigation.md" title="Responsieve navigatie"> Responsieve navigatie </a>
             </p>
             <p class="is-size-6">Ontdek hoe responsieve navigatie kan worden gedefinieerd door documenten te ontwerpen.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -368,14 +369,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-audit.md" title="Documentcontrole">Documentcontrole</a>
+              <a href="./how-to/document-audit.md" title="Documentcontrole"> de controle van het Document </a>
             </p>
             <p class="is-size-6">Ontdek hoe documentauteurs de controle van documenten afhandelen.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -400,14 +401,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-permissions.md" title="Documentmachtigingen">Documentmachtigingen </a>
+              <a href="./how-to/document-permissions.md" title="Documentmachtigingen"> Documentmachtigingen </a>
             </p>
             <p class="is-size-6">Ontdek hoe documentautorisaties door het ontwerpen worden verwerkt.</p>
             <a href="./how-to/document-permissions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -432,14 +433,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-versions.md" title="Documentversies">Documentversies</a>
+              <a href="./how-to/document-versions.md" title="Documentversies"> de versies van het Document </a>
             </p>
             <p class="is-size-6">Ontdek hoe documentversies worden verwerkt door ontwerpen.</p>
             <a href="./how-to/document-versions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -464,14 +465,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-workflows.md" title="Workflows voor documenten">Workflows voor documenten</a>
+              <a href="./how-to/document-workflows.md" title="Workflows voor documenten"> werkschema's van het Document </a>
             </p>
             <p class="is-size-6">Ontdek hoe documentontwerpen de workflows van documenten afhandelt.</p>
             <a href="./how-to/document-workflows.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -496,14 +497,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/iframes.md" title="iFrames gebruiken">iFrames gebruiken</a>
+              <a href="./how-to/iframes.md" title="iFrames gebruiken"> Gebruikend iFrames </a>
             </p>
             <p class="is-size-6">Ontdek hoe video's en iFrames worden verwerkt door het ontwerpen van documenten.</p>
             <a href="./how-to/iframes.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -528,14 +529,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/image-alt-text.md" title="Alt-tekst gebruiken">Alternatieve tekst voor afbeelding ontwerpen</a>
+              <a href="./how-to/image-alt-text.md" title="Alt-tekst gebruiken"> Authoring beeld alt tekst </a>
             </p>
             <p class="is-size-6">Ontdek hoe u met documentontwerpen omgaat met alt-tekst in afbeeldingen.</p>
             <a href="./how-to/image-alt-text.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -560,14 +561,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/no-index.md" title="Indexering voorkomen">Indexering van zoekprogramma's voorkomen</a>
+              <a href="./how-to/no-index.md" title="Indexering voorkomen"> verhindert onderzoeksmotor het indexeren </a>
             </p>
             <p class="is-size-6">Ontdek hoe u indexering door zoekprogramma's kunt voorkomen.</p>
             <a href="./how-to/no-index.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -592,14 +593,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/using-dynamic-media.md" title="Dynamic Media">Dynamic Media</a>
+              <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"> Dynamic Media </a>
             </p>
             <p class="is-size-6">Ontdek hoe u Dynamic Media kunt gebruiken voor geoptimaliseerde afbeeldingslevering.</p>
             <a href="./how-to/using-dynamic-media.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -624,14 +625,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/migration-using-importer.md" title="Sitemigratie met Importer">Sitemigratie met Importer</a>
+              <a href="./how-to/migration-using-importer.md" title="Sitemigratie met Importer"> migratie van de Plaats gebruikend Importeur </a>
             </p>
             <p class="is-size-6">Ontdek hoe u sites kunt migreren naar Edge Delivery Services met AEM gereedschap Importeren.</p>
             <a href="./how-to/migration-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -656,14 +657,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">3 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/customizing-importer.md" title="De importmodule aanpassen">De importmodule aanpassen</a>
+              <a href="./how-to/customizing-importer.md" title="De importmodule aanpassen"> het Aanpassen van de Importeur </a>
             </p>
             <p class="is-size-6">Ontdek hoe u het gereedschap AEM importmodule kunt aanpassen voor sitemigratie.</p>
             <a href="./how-to/customizing-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -688,14 +689,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">3 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/bulk-importing-using-importer.md" title="Bulk importeren met behulp van importmodule">Bulk importeren met behulp van importmodule</a>
+              <a href="./how-to/bulk-importing-using-importer.md" title="Bulk importeren met behulp van importmodule"> Bulk die het gebruiken van de Importeur </a> invoert
             </p>
             <p class="is-size-6">Ontdek hoe u bij het migreren van sites webpagina's voor grote hoeveelheden kunt importeren met het gereedschap AEM importmodule.</p>
             <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -725,14 +726,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/overview.md" title="Variaties genereren">Variaties genereren</a>
+              <a href="./how-to/generate-variations/overview.md" title="Variaties genereren"> produceer Variaties </a>
             </p>
             <p class="is-size-6">Introductie om Variaties in Edge Delivery Services te produceren en het begrijpen hoe het voor marketers nuttig kan zijn.</p>
             <a href="./how-to/generate-variations/overview.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -757,14 +758,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/configure-sidekick.md" title="Variaties genereren - Sidekick configureren">Variaties genereren - Sidekick configureren</a>
+              <a href="./how-to/generate-variations/configure-sidekick.md" title="Variaties genereren - Sidekick configureren"> produceer Variaties - vorm Sidekick </a>
             </p>
             <p class="is-size-6">Onderzoek hoe te om hulp te vormen voor Generate Variaties in het document van Edge Delivery Services creatie.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -789,14 +790,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/prompt-templates.md" title="Variaties genereren - Sjablonen vragen">Variaties genereren - Sjablonen vragen</a>
+              <a href="./how-to/generate-variations/prompt-templates.md" title="Variaties genereren - Sjablonen vragen"> produceer Variaties - Herinneren malplaatjes </a>
             </p>
             <p class="is-size-6">Ontdek hoe u snelle sjablonen kunt gebruiken voor het genereren van variaties.</p>
             <a href="./how-to/generate-variations/prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -821,14 +822,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Variaties genereren - Aangepaste snelle sjablonen">Variaties genereren - Aangepaste snelle sjablonen</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Variaties genereren - Aangepaste snelle sjablonen"> produceer Variaties - de snelle malplaatjes van de Douane </a>
             </p>
             <p class="is-size-6">Onderzoek hoe te om de malplaatjes van de douaneherinnering voor te bouwen produceerde Variaties.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -853,14 +854,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Variaties genereren - Aangepaste promptsjablonen opslaan">Variaties genereren - Aangepaste promptsjablonen opslaan</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Variaties genereren - Aangepaste promptsjablonen opslaan"> produceer Variaties - sparen de malplaatjes van de douaneherinnering </a>
             </p>
             <p class="is-size-6">Onderzoek hoe te om de malplaatjes van de douaneherinnering voor te bewaren produceren Variaties.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -885,14 +886,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-target-audiences.md" title="Variaties genereren - Adobe Target-publiek gebruiken">Variaties genereren - Adobe Target-publiek gebruiken</a>
+              <a href="./how-to/generate-variations/using-target-audiences.md" title="Variaties genereren - Adobe Target-publiek gebruiken"> produceer Variaties - Gebruikend het publiek van Adobe Target </a>
             </p>
             <p class="is-size-6">Ontdek hoe u het Adobe Target-publiek kunt gebruiken om het juiste publiek te kiezen voor verschillende inhoud.</p>
             <a href="./how-to/generate-variations/using-target-audiences.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -917,14 +918,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Variaties genereren - CSV-bestandsuitzendingen gebruiken">Variaties genereren - CSV-bestandsuitzendingen gebruiken</a>
+              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Variaties genereren - CSV-bestandsuitzendingen gebruiken"> produceer Variaties - Gebruikend Csv- dossierpubliek </a>
             </p>
             <p class="is-size-6">Onderzoek hoe te om publiekCSV dossiers te gebruiken om het juiste publiek voor uw inhoudvariaties te richten.</p>
             <a href="./how-to/generate-variations/using-csv-file-audiences.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -949,14 +950,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Variaties genereren - Adobe Firefly gebruiken">Variaties genereren - Adobe Firefly gebruiken</a>
+              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Variaties genereren - Adobe Firefly gebruiken"> produceer Variaties - de Adobe Firefly van het Gebruik </a>
             </p>
             <p class="is-size-6">Onderzoek hoe te om Adobe Firefly te gebruiken om beelden tot stand te brengen die in de inhoudvariaties worden gebruikt.</p>
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -981,14 +982,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/actions.md" title="Variaties genereren - Handelingen voor een gegenereerde variatie">Variaties genereren - Handelingen voor een gegenereerde variatie</a>
+              <a href="./how-to/generate-variations/actions.md" title="Variaties genereren - Handelingen voor een gegenereerde variatie"> produceer Variaties - Acties op een geproduceerde variatie </a>
             </p>
             <p class="is-size-6">Onderzoek de acties die op een geproduceerde inhoudsvariatie kunnen worden gebruikt.</p>
             <a href="./how-to/generate-variations/actions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -1013,14 +1014,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/trust-privacy.md" title="Variaties genereren - Vertrouwen en privacy">Variaties genereren - Vertrouwen en privacy</a>
+              <a href="./how-to/generate-variations/trust-privacy.md" title="Variaties genereren - Vertrouwen en privacy"> produceer Variaties - Vertrouwen en Privacy </a>
             </p>
             <p class="is-size-6">Het onderzoeken hoe de Adobe vertrouwen en privacy voor produceert Variaties behandelt.</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -1045,14 +1046,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/experimentation-framework.md" title="Overzicht van het kader voor experimenten">Overzicht van het kader voor experimenten</a>
+              <a href="./how-to/experimentation-framework.md" title="Overzicht van het kader voor experimenten"> Overzicht van het experimenteren kader </a>
             </p>
             <p class="is-size-6">Onderzoek het experimentatiekader dat marketers toestaat om te testen welke inhoudvariaties het meest effectief zijn.</p>
             <a href="./how-to/experimentation-framework.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -1077,14 +1078,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/setup-experimentation-framework.md" title="Vaststelling van een kader voor experimenten">Vaststelling van een kader voor experimenten</a>
+              <a href="./how-to/setup-experimentation-framework.md" title="Vaststelling van een kader voor experimenten"> het kader van de experimentatie van de Opstelling </a>
             </p>
             <p class="is-size-6">Ontdek hoe u het kader voor experimenten kunt instellen bij het ontwerpen van documenten in Edge Delivery Services.</p>
             <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -1109,14 +1110,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/experimentation-add-metadata.md" title="Metagegevens toevoegen voor experimenten">Metagegevens toevoegen voor experimenten</a>
+              <a href="./how-to/experimentation-add-metadata.md" title="Metagegevens toevoegen voor experimenten"> Toevoegend meta-gegevens voor experimentatie </a>
             </p>
             <p class="is-size-6">Metagegevens voor experimenten toevoegen</p>
             <a href="./how-to/experimentation-add-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>

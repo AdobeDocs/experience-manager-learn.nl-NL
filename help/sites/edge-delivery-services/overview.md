@@ -24,7 +24,7 @@ Leer hoe u websites snel kunt maken met Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) voor volledige informatie over de Edge Delivery Services en de mogelijkheden ervan.
+Herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) voor volledige details van Edge Delivery Services en zijn mogelijkheden.
 
 ## Aan de slag met Edge Delivery Services
 
@@ -48,14 +48,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/prerequisites.md" title="Vereisten">Voorwaarden voor ontwikkelaars</a>
+              <a href="./developing/prerequisites.md" title="Vereisten"> de eerste vereisten van de Ontwikkelaar </a>
             </p>
             <p class="is-size-6">Wat je nodig hebt om te ontwikkelen met Edge Delivery Services.</p>
             <a href="./developing/prerequisites.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -70,7 +70,8 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <a href="./developing/aem-boilerplate.md" title="Boilerplate-sjabloon gebruiken"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Boilerplate instellen">
+                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Instellen
+                Boilerplate">
             </a>
           </figure>
         </div>
@@ -79,14 +80,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/aem-boilerplate.md" title="Boilerplate-sjabloon gebruiken">AEM Boilerplate</a>
+              <a href="./developing/aem-boilerplate.md" title="Boilerplate-sjabloon gebruiken"> AEM Boilerplate </a>
             </p>
             <p class="is-size-6">Gebruik het AEM Boilerplate-sjabloon om de gegevensopslagruimte voor code in te stellen.</p>
             <a href="./developing/aem-boilerplate.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -110,14 +111,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/content-repository.md" title="Google Drive koppelen">Google Drive koppelen</a>
+              <a href="./developing/content-repository.md" title="Google Drive koppelen"> de Aandrijving van Google van de Verbinding </a>
             </p>
             <p class="is-size-6">Gebruik Google Drive als opslagplaats voor alle inhoud.</p>
             <a href="./developing/content-repository.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -141,14 +142,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/content-repository.md" title="Sharepoint koppelen">SharePoint koppelen</a>
+              <a href="./developing/content-repository.md" title="Sharepoint koppelen"> Verbinding SharePoint </a>
             </p>
             <p class="is-size-6">Gebruik SharePoint als opslagplaats voor al uw inhoud.</p>
             <a href="./developing/content-repository.md"
               class="spectrum-Button spectrum-Button--outline
               spectrum-Button--primary spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -160,10 +161,10 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="Inhoud voorvertonen en publiceren"
+            <a href="./developing/preview-and-publish.md" title="Voorvertonen en Publish-inhoud"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Inhoud voorvertonen en publiceren">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Voorvertonen en Publish-inhoud">
             </a>
           </figure>
         </div>
@@ -172,14 +173,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="Inhoud voorvertonen en publiceren">Inhoud voorvertonen en publiceren</a>
+              <a href="./developing/preview-and-publish.md" title="Voorvertonen en Publish-inhoud"> Voorproef en publiceer inhoud </a>
             </p>
             <p class="is-size-6">Inhoud voorvertonen en publiceren met de AEM Sidekick.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -204,14 +205,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/sidekick.md" title="De Sidekick gebruiken">De AEM Sidekick gebruiken</a>
+              <a href="./developing/sidekick.md" title="De Sidekick gebruiken"> Gebruik de AEM Sidekick </a>
             </p>
             <p class="is-size-6">Leer hoe u de AEM Sidekick gebruikt.</p>
             <a href="./developing/sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -236,14 +237,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuut</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/document-structure.md" title="Documentstructuur">Documentstructuur</a>
+              <a href="./developing/document-structure.md" title="Documentstructuur"> de structuur van het Document </a>
             </p>
             <p class="is-size-6">De documentstructuur verkennen, inclusief standaardinhoud, secties en blokken </p>
             <a href="./developing/document-structure.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -268,14 +269,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/local-development.md" title="Lokale ontwikkeling">Lokale ontwikkeling</a>
+              <a href="./developing/local-development.md" title="Lokale ontwikkeling"> Lokale ontwikkeling </a>
             </p>
             <p class="is-size-6">Vorm uw lokale ontwikkelomgeving.</p>
             <a href="./developing/local-development.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -300,14 +301,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/git.md" title="Integreren met Git">Integreren met Git</a>
+              <a href="./developing/git.md" title="Integreren met Git"> integreren met Git </a>
             </p>
             <p class="is-size-6">Configureer Git en Edge Delivery Services.</p>
             <a href="./developing/git.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -337,14 +338,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/rss.md" title="RSS-feeds maken">RSS-feeds maken</a>
+              <a href="./how-to/rss.md" title="RSS-feeds maken"> creeer RSS- voer </a>
             </p>
             <p class="is-size-6">Leer hoe u RSS-feeds maakt.</p>
             <a href="./how-to/rss.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -369,14 +370,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/social-media-sharing.md" title="Delen van sociale media">Delen van sociale media</a>
+              <a href="./how-to/social-media-sharing.md" title="Delen van sociale media"> Sociale Media die </a> delen
             </p>
             <p class="is-size-6">Leer hoe u uw inhoud optimaliseert voor het delen van sociale media.</p>
             <a href="./how-to/social-media-sharing.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>
@@ -401,14 +402,14 @@ Controleer de [documentatie](https://experienceleague.adobe.com/en/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuten</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/delete-page.md" title="Pagina&apos;s verwijderen">Pagina's verwijderen</a>
+              <a href="./how-to/delete-page.md" title="Pagina&apos;s verwijderen"> het Schrappen van Pagina's </a>
             </p>
             <p class="is-size-6">Leer hoe u pagina's verwijdert.</p>
             <a href="./how-to/delete-page.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">De video bekijken</span>
+                has-text-weight-bold"> bekijk de video </span>
             </a>
           </div>
         </div>

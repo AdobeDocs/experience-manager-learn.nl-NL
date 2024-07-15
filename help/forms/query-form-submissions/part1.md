@@ -28,11 +28,11 @@ Voor dit gebruik werden de volgende veldtypen uitgebreid om ze doorzoekbaar te m
 * keuzerondje
 
 De auteurs van formulieren kunnen deze veldtypen markeren als doorzoekbaar, zoals hieronder wordt weergegeven
-![doorzoekbaar veld](assets/searchable-fields.png)
+![ doorzoekbaar-gebied ](assets/searchable-fields.png)
 
 De velden zijn uitgebreid door de volgende structuur te maken
 
-![uitgebreide velden](assets/extend-component.png)
+![ uitgebreid-gebieden ](assets/extend-component.png)
 
 Hier volgt de inhoud van het bestand .content.xml
 

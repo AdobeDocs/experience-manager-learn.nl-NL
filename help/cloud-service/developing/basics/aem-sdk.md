@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Inleiding tot de AEM as a Cloud Service SDK
+# Inleiding tot de SDK van AEM as a Cloud Service
 
-Het gebruiken van en het vormen van SDK voor AEM as a Cloud Service.
+De SDK voor AEM as a Cloud Service gebruiken en configureren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330552?quality=12&learn=on)

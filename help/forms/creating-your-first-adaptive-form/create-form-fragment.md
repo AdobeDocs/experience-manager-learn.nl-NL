@@ -25,9 +25,9 @@ Een fragment is een herbruikbaar onderdeel van een formulier. Een fragment kan b
 
 
 
-Zie [documentatie over adaptieve formuliersjablonen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) voor meer informatie
+Gelieve te verwijzen naar [ adaptieve documentatie van het vormmalplaatje ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) voor meer details
 
-Indien nodig kunt u de [Spouse-details-fragment](assets/spouse-details-fragment.zip) en importeren in AEM met behulp van de [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+Indien nodig kunt u [ de muis-detail-fragment ](assets/spouse-details-fragment.zip) downloaden en in AEM het gebruiken van [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp) invoeren
 
 ## Volgende stappen
 

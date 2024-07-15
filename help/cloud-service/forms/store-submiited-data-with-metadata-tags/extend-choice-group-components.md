@@ -20,12 +20,12 @@ ht-degree: 0%
 # Groepcomponenten van keuzen uitbreiden
 
 De componenten checkboxGroup, dropdown en radioButtonCore zijn uitgebreid om een Extra lusje van Eigenschappen te omvatten. Het tabblad Extra-eigenschappen bevat een selectievakje om aan te geven of het veld moet worden gebruikt als tabblad voor een blob-index
-![aanvullende eigenschappen](assets/drop-down-additonal-properties.png). Wanneer het selectievakje is ingeschakeld, wordt een eigenschap met de naam Searchable gemaakt en wordt de waarde ervan ingesteld op true in de jcr-opslagplaats, zoals wordt weergegeven in de volgende schermafbeelding
-![doorzoekbaar](assets/searchable-true.png).
+![ extra-eigenschappen ](assets/drop-down-additonal-properties.png). Wanneer het selectievakje is ingeschakeld, wordt een eigenschap met de naam Searchable gemaakt en wordt de waarde ervan ingesteld op true in de jcr-opslagplaats, zoals wordt weergegeven in de volgende schermafbeelding
+![ doorzoekbaar ](assets/searchable-true.png).
 
 Het volgende .content.xml is gemaakt in de map _cq_dialog.
 
-![drop-down-project-view](assets/drop-down-project-view.png)
+![ drop-down-project-mening ](assets/drop-down-project-view.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

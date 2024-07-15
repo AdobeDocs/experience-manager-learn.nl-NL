@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Stappen om geheugengerelateerde problemen in AEM op te lossen
 
-*Deze video doorloopt de Stappen om Geheugengerelateerde problemen in AEM op te lossen.*
+*Deze video loopt door de Stappen om Geheugen verwante kwesties in AEM op te lossen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335473?quality=12&learn=on)

@@ -25,7 +25,7 @@ In de video worden de verschillende stappen uitgelegd die nodig zijn om een adap
 
 >[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
 
-Elementen die betrekking hebben op deze video kunnen worden gedownload via de volgende koppeling
+Assets voor deze video kan worden gedownload van de volgende koppeling
 
 * [Wijziging van de vorm van de begunstigde](assets/change-of-beneficiary-form.zip)
 

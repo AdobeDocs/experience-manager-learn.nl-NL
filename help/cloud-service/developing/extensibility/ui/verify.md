@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Een extensie verifiëren
 
-AEM UI-extensies kunnen worden geverifieerd op basis van AEM as a Cloud Service omgeving in de Adobe of de extensie tot behoort.
+AEM UI-extensies kunnen worden geverifieerd voor elke AEM as a Cloud Service-omgeving in de Adobe of de extensie behoort tot.
 
 Het testen van een extensie wordt uitgevoerd via een speciaal gemaakte URL die AEM de instructie geeft de extensie alleen voor die aanvraag te laden.
 
@@ -28,18 +28,18 @@ Het testen van een extensie wordt uitgevoerd via een speciaal gemaakte URL die A
 
 >[!IMPORTANT]
 >
-> In de bovenstaande video ziet u het gebruik van een extensie van Content Fragment Console om een voorbeeld en verificatie van de App Builder-extensie voor te vertonen. Nochtans, is het belangrijk om op te merken dat de behandelde concepten op alle AEM uitbreidingen kunnen worden toegepast UI.
+> In de bovenstaande video ziet u het gebruik van een extensie van Content Fragment Console om de voorvertoning en verificatie van de App Builder-extensie-app te illustreren. Nochtans, is het belangrijk om op te merken dat de behandelde concepten op alle AEM uitbreidingen kunnen worden toegepast UI.
 
 ## URL AEM
 
-![URL van console-AEM voor inhoudsfragmenten](./assets/verify/content-fragment-console-url.png){align="center"}
+![ AEM de Console URL van het Fragment van de Inhoud ](./assets/verify/content-fragment-console-url.png){align="center"}
 
-Als u een URL wilt maken die de extensie non-production in AEM koppelt, moet de URL van de AEM UI waarin de extensie wordt geïnjecteerd, worden verkregen. Navigeer naar de AEM as a Cloud Service omgeving om de extensie te controleren en open de interface waarin de extensie moet worden voorvertoond.
+Als u een URL wilt maken die de extensie non-production in AEM koppelt, moet de URL van de AEM UI waarin de extensie wordt geïnjecteerd, worden verkregen. Navigeer naar de AEM as a Cloud Service-omgeving om de extensie te controleren en open de gebruikersinterface waarin de extensie moet worden voorvertoond.
 
 Als u bijvoorbeeld een extensie wilt voorvertonen voor de Content Fragment-console:
 
-1. Meld u aan bij de gewenste AEM as a Cloud Service omwenteling.
-1. Selecteer de __Inhoudsfragmenten__ pictogram.
+1. Meld u aan bij de gewenste AEM as a Cloud Service-versie.
+1. Selecteer het __pictogram van de Fragmenten van de Inhoud__.
 1. Wacht tot de AEM Content Fragment Console in de browser is geladen.
 1. Kopieer de URL van de AEM Content Fragment Console van de adresbalk van de browser en het lijkt erop:
 
@@ -52,7 +52,7 @@ Deze URL wordt hieronder gebruikt bij het maken van de URL&#39;s voor ontwikkeli
 ## Builds voor lokale ontwikkeling controleren
 
 1. Open een opdrachtregel naar de hoofdmap van het extensieproject.
-1. De extensie AEM UI uitvoeren als een lokale App Builder-app
+1. De extensie AEM UI uitvoeren als een lokale App Builder-toepassing
 
    ```shell
    $ aio app run
@@ -65,14 +65,14 @@ Deze URL wordt hieronder gebruikt bij het maken van de URL&#39;s voor ontwikkeli
      -> https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=https://localhost:9080
    ```
 
-Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> https://localhost:9080`
+Noteer de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> https://localhost:9080`
 
-1. In eerste instantie (en telkens wanneer er een verbindingsfout optreedt) openen `https://localhost:9080` (of wat uw lokale toepassings-URL ook is) in uw webbrowser en kan handmatig [het HTTPS-certificaat](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users).
-1. Voeg de volgende twee vraagparams aan toe [URL van AEM gebruikersinterface](#aem-ui-url)
+1. Aanvankelijk (en wanneer u een Fout van de Verbinding ziet) open `https://localhost:9080` (of wat uw lokale toepassings URL) in uw Webbrowser is, en keurt manueel [ het HTTPS certificaat ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) goed.
+1. Voeg de volgende twee vraagparams aan [ toe AEM URL van UI ](#aem-ui-url)
    + `&devMode=true`
-   + `&ext=<LOCAL APPLICATION URL>`, gewoonlijk `&ext=https://localhost:9080`.
+   + `&ext=<LOCAL APPLICATION URL>` , meestal `&ext=https://localhost:9080` .
 
-   Twee bovenstaande queryparameters toevoegen (`devMode` en `ext`) als __first__ query-parameters in de URL. AEM verlengbare UI gebruikshash routes (`#/@wknd/aem/...`), zodat de parameters na de `#` werkt niet.
+   Voeg de twee bovengenoemde vraagparameters (`devMode` en `ext`) als __eerste__ vraagparameters in URL toe. AEM uitbreidbare UI gebruiken hash routes (`#/@wknd/aem/...`), zo verkeerd post-fixeert de parameters nadat `#` niet werkt.
 
    De voorbeeld-URL moet er als volgt uitzien:
 
@@ -82,7 +82,7 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
 
 1. Kopieer en plak de URL van de voorvertoning in uw browser.
 
-   + U moet mogelijk eerst en dan periodiek [het HTTPS-certificaat accepteren](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) voor de host van de lokale toepassing (`https://localhost:9080`).
+   + U kunt moeten aanvankelijk, en dan periodiek, [ het certificaat HTTPS ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) voor de gastheer van de lokale toepassing (`https://localhost:9080`) goedkeuren.
 
 1. De AEM-interface wordt geladen met de lokale versie van de extensie die in de interface is geïnjecteerd voor verificatie.
 
@@ -93,15 +93,15 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
 ## Werkgebiedbuilds verifiëren
 
 1. Open een opdrachtregel naar de hoofdmap van het extensieproject.
-1. Controleer of de werkruimte van het werkgebied actief is (of welke werkruimte voor verificatie wordt gebruikt).
+1. Controleer of de werkruimte van het werkgebied actief is (of welke Workspace ook wordt gebruikt voor verificatie).
 
    ```shell
    $ aio app use -w Stage
    ```
 
-   Alle wijzigingen samenvoegen in `.env` en `.aio`.
+   Voeg eventuele wijzigingen in `.env` en `.aio` samen.
 
-1. Implementeer de bijgewerkte app App Builder. Als u zich niet hebt aangemeld, uitvoeren `aio login` eerst.
+1. Implementeer de bijgewerkte extensie App Builder-app. Als u zich niet hebt aangemeld, voert u `aio login` eerst uit.
 
    ```shell
    $ aio app deploy
@@ -117,11 +117,11 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
    Successful deployment 🏄
    ```
 
-1. Voeg de volgende twee vraagparams aan toe [URL van AEM gebruikersinterface](#aem-ui-url)
+1. Voeg de volgende twee vraagparams aan [ toe AEM URL van UI ](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
-   Twee bovenstaande queryparameters toevoegen (`devMode` en `ext`) als __first__ de vraagparameters in URL, als verlengbare AEM UIs gebruiken een knoeiboelroute (`#/@wknd/aem/...`), zodat de parameters na de `#` werkt niet.
+   Voeg de twee bovengenoemde vraagparameters (`devMode` en `ext`) als __eerste__ vraagparameters in URL toe, aangezien uitbreidbare AEM UIs een knoeiboelroute (`#/@wknd/aem/...`) gebruiken, zo verkeerd post-bevestigend de parameters nadat `#` niet werkt.
 
    De voorbeeld-URL moet er als volgt uitzien:
 
@@ -134,18 +134,18 @@ Let op de URL van de lokale toepassing, die hierboven wordt weergegeven als `-> 
 
 Houd er rekening mee dat wanneer u deze methode gebruikt, de extensie Staged alleen wordt geïnjecteerd op AEM Content Fragment Console&#39;s wanneer u toegang hebt tot de URL van het werkgebied van het vaartuig.
 
-1. Ingevoerde extensies kunnen worden bijgewerkt door `aio app deploy` en deze wijzigingen worden automatisch doorgevoerd wanneer u de voorbeeld-URL gebruikt.
-1. Als u een extensie voor verificatie wilt verwijderen, voert u `aio app undeploy`.
+1. Geïmporteerde extensies kunnen worden bijgewerkt door `aio app deploy` opnieuw uit te voeren. Deze wijzigingen worden automatisch doorgevoerd wanneer u de URL van de voorvertoning gebruikt.
+1. Voer `aio app undeploy` uit om een extensie voor verificatie te verwijderen.
 
 ## Voorvertoning bladwijzer
 
 Om het maken van URL&#39;s met voorvertoningen en voorvertoningen zoals hierboven beschreven, te vergemakkelijken, kunt u een JavaScript-bladwijzer maken die de extensie laadt.
 
-De onderstaande bladwijzer bevat een voorvertoning van de [plaatselijke ontwikkelingsgebouwen](#verify-local-development-builds) van de verlenging op `https://localhost:9080`. Aan voorvertoning [werkgebiedbuilds](#verify-stage-builds), maakt u een bladwijzer met de `previewApp` variabele die is ingesteld op de URL van de geïmplementeerde App Builder-app.
+De referentie hieronder previews [ lokale ontwikkeling bouwt ](#verify-local-development-builds) van de uitbreiding op `https://localhost:9080`. Aan voorproef [ bouwt het stadium ](#verify-stage-builds), creeer een bookmarklet met de `previewApp` variabele die aan URL van opgestelde toepassing van App Builder wordt geplaatst.
 
 1. Maak een bladwijzer in uw browser.
 1. Bewerk de bladwijzer.
-1. Een bladwijzer een betekenisvolle naam geven, zoals `AEM UI Extension Preview (localhost:9080)`.
+1. Geef een bladwijzer een betekenisvolle naam, zoals `AEM UI Extension Preview (localhost:9080)`.
 1. Stel de URL van de bladwijzer in op de volgende code:
 
    ```javascript
@@ -165,4 +165,4 @@ De onderstaande bladwijzer bevat een voorvertoning van de [plaatselijke ontwikke
 
 >[!TIP]
 >
-> Als de extensie App Builder niet wordt geladen bij gebruik, `&ext=https://localhost:9080`, opent u die host en poort rechtstreeks in een browsertabblad en accepteert u het zelfondertekende certificaat. Probeer de bladwijzer opnieuw.
+> Als de App Builder-extensie niet wordt geladen en u gebruikt `&ext=https://localhost:9080`, opent u die host en poort rechtstreeks op een browsertabblad en accepteert u het zelfondertekende certificaat. Probeer de bladwijzer opnieuw.

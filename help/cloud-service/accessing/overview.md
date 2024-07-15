@@ -1,6 +1,6 @@
 ---
 title: Toegang tot AEM as a Cloud Service configureren
-description: AEM as a Cloud Service is de cloud-native manier om de AEM toepassingen te benutten en maakt als zodanig gebruik van Adobe IMS (Identity Management System) om het aanmelden van gebruikers, zowel beheerders als gewone gebruikers, voor AEM Auteur-service te vergemakkelijken. Leer hoe u Adobe IMS-gebruikers, gebruikersgroepen en productprofielen gebruikt in combinatie met AEM groepen en machtigingen om specifieke toegang te verlenen aan AEM auteur.
+description: AEM as a Cloud Service is de 'cloud-native' manier om de AEM toepassingen te benutten en maakt als zodanig gebruik van Adobe IMS (Identity Management System) om het aanmelden van gebruikers, zowel beheerders als gewone gebruikers, voor AEM Auteursservice te vergemakkelijken. Leer hoe u Adobe IMS-gebruikers, gebruikersgroepen en productprofielen gebruikt in combinatie met AEM groepen en machtigingen om specifieke toegang te verlenen aan AEM auteur.
 version: Cloud Service
 topic: Administration, Security
 feature: User and Groups
@@ -23,17 +23,17 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_overview"
 >title="Inleiding tot Adobe IMS"
->abstract="AEM as a Cloud Service maakt gebruik van Adobe IMS (Identity Management System) om het aanmelden van gebruikers, zowel beheerders als gewone gebruikers, voor AEM Auteursservice te vergemakkelijken. Leer hoe Adobe IMS-gebruikers, -groepen en -productprofielen worden gebruikt in overleg met AEM groepen en machtigingen om fijngeoriënteerde toegang tot AEM Auteur-service te bieden."
+>abstract="AEM as a Cloud Service maakt gebruik van Adobe IMS (Identity Management System) om het aanmelden van gebruikers, zowel beheerders als gewone gebruikers, voor AEM Auteur te vergemakkelijken. Leer hoe Adobe IMS-gebruikers, -groepen en -productprofielen worden gebruikt in overleg met AEM groepen en machtigingen om fijngeoriënteerde toegang tot AEM Auteur-service te bieden."
 
-AEM as a Cloud Service is de cloud-native manier om de AEM toepassingen te benutten en maakt als zodanig gebruik van Adobe IMS (Identity Management System) om het aanmelden van gebruikers, zowel beheerders als gewone gebruikers, voor AEM Auteur-service te vergemakkelijken.
+AEM as a Cloud Service is de &#39;cloud-native&#39; manier om de AEM toepassingen te benutten en maakt als zodanig gebruik van Adobe IMS (Identity Management System) om het aanmelden van gebruikers, zowel beheerders als gewone gebruikers, voor AEM Auteursservice te vergemakkelijken.
 
-![Adobe Admin Console](./assets/hero.png)
+![ Adobe Admin Console ](./assets/hero.png)
 
 Leer hoe Adobe IMS-gebruikers, -groepen en -productprofielen worden gebruikt in overleg met AEM groepen en machtigingen om fijngeoriënteerde toegang tot AEM Auteur-service te bieden.
 
 ## Adobe IMS-gebruikers
 
-Gebruikers die toegang tot AEM Auteur-service nodig hebben, worden beheerd als [Adobe IMS-gebruikers](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [AdminConsole van Adobe](https://adminconsole.adobe.com). Leer wat Adobe IMS-gebruikers zijn en hoe ze in de Admin Console worden benaderd en beheerd.
+De gebruikers die toegang tot AEM dienst van de Auteur vereisen worden beheerd als [ gebruikers van Adobe IMS ](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [ AdminConsole van de Adobe ](https://adminconsole.adobe.com). Leer wat Adobe IMS-gebruikers zijn en hoe ze in de Admin Console worden benaderd en beheerd.
 
 >[!NOTE]
 >
@@ -44,16 +44,16 @@ Gebruikers die toegang tot AEM Auteur-service nodig hebben, worden beheerd als [
 
 ## Adobe IMS-gebruikersgroepen
 
-Gebruikers die toegang krijgen tot AEM Auteur-service moeten in logische groepen worden ingedeeld met [Adobe IMS-gebruikersgroepen](https://helpx.adobe.com/enterprise/using/user-groups.html) in [AdminConsole van Adobe](https://adminconsole.adobe.com). Adobe IMS-gebruikersgroepen bieden geen directe machtigingen of toegang tot AEM (dit is de taak van [Adobe IMS-productprofielen](#adobe-ims-product-profiles)), echter, zijn zij een grote manier om logische groeperingen van gebruikers te bepalen die beurtelings aan specifieke niveaus van toegang in AEM dienst van de Auteur kunnen worden vertaald, gebruikend AEM groepen en toestemmingen.
+De gebruikers die tot AEM dienst van de Auteur toegang hebben zouden in logische groepen moeten worden georganiseerd gebruikend [ de gebruikersgroepen van Adobe IMS ](https://helpx.adobe.com/enterprise/using/user-groups.html) in [ AdminConsole van de Adobe ](https://adminconsole.adobe.com). De gebruikersgroepen van Adobe IMS verstrekken directe toestemmingen of geen toegang tot AEM (dit is de baan van [ het productprofielen van Adobe IMS ](#adobe-ims-product-profiles)), echter, zijn zij een grote manier om logische groeperingen van gebruikers te bepalen die beurtelings aan specifieke niveaus van toegang in de AEM dienst van de Auteur kunnen worden vertaald, gebruikend AEM groepen en toestemmingen.
 
 [Meer informatie over Adobe IMS-gebruikersgroepen](./adobe-ims-user-groups.md)
 
 ## Adobe IMS-productprofielen
 
-[Adobe IMS-productprofielen](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html), beheerd in [AdminConsole van Adobe](https://adminconsole.adobe.com)zijn de mechanismen die [Adobe IMS-gebruikers](#adobe-ims-users) toegang tot login aan AEM dienst van de Auteur met een basisniveau van toegang.
+[ de productprofielen van Adobe IMS ](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html), die in [ AdminConsole van de Adobe ](https://adminconsole.adobe.com) worden beheerd, is het mechanisme dat [ gebruikers IMS van Adobe ](#adobe-ims-users) toegang tot login aan AEM de dienst van de Auteur van een basisniveau van toegang verleent.
 
-+ De __AEM__ Met het productprofiel hebben gebruikers alleen-lezentoegang tot AEM via lidmaatschap in AEM Contribute-groep.
-+ De __AEM__ het productprofiel biedt gebruikers volledige, administratieve toegang tot AEM.
++ Het __AEM Gebruikers__ productprofiel verleent gebruikers read-only toegang tot AEM via lidmaatschap in AEM Groep van Medewerkers.
++ Het __AEM Beheerders__ productprofiel verleent gebruikers volledige, administratieve toegang tot AEM.
 
 [Meer informatie over Adobe IMS-productprofielen](./adobe-ims-product-profiles.md)
 
@@ -71,8 +71,8 @@ Een verkorte procedure door gebruikers, gebruikersgroepen en productprofielen va
 
 ## Aanvullende Adobe Admin Console-bronnen
 
-De volgende documentatie heeft betrekking op [Adobe Admin Console](https://adminconsole.adobe.com)-specifieke details en zorgen die kunnen helpen om de Adobe Admin Console beter te begrijpen en te gebruiken om gebruikers te beheren en toegang te krijgen tot producten in de Experience Cloud.
+De volgende documentatie behandelt ](https://adminconsole.adobe.com) - specifieke details van Adobe Admin Console [ {die in een beter inzicht in Adobe Admin Console kunnen helpen en het gebruiken om gebruikers en toegang over de producten van het Experience Cloud te beheren.
 
-+ [Adobe Admin Console-identiteitsoverzicht](https://helpx.adobe.com/enterprise/using/identity.html)
-+ [Adobe Admin Console Admin-rollen](https://helpx.adobe.com/enterprise/using/admin-roles.html)
-+ [Adobe Admin Console Developer-rollen](https://helpx.adobe.com/enterprise/using/manage-developers.html)
++ [ Overzicht van de Identiteit van Adobe Admin Console ](https://helpx.adobe.com/enterprise/using/identity.html)
++ [ Adobe Admin Console Admin rollen ](https://helpx.adobe.com/enterprise/using/admin-roles.html)
++ [ de rollen van de Ontwikkelaar van Adobe Admin Console ](https://helpx.adobe.com/enterprise/using/manage-developers.html)

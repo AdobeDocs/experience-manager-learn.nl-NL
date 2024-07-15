@@ -22,16 +22,16 @@ ht-degree: 0%
 # Taakmelding toewijzen aanpassen
 
 De taakcomponent toewijzen wordt gebruikt om taken toe te wijzen aan workflowdeelnemers. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of groepsleden.
-Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Deze dynamische gegevens worden opgehaald met het gegenereerde systeem [eigenschappen van metagegevens](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
+Dit e-mailbericht bevat meestal dynamische gegevens die betrekking hebben op de taak. Dit dynamische gegeven wordt opgehaald gebruikend het systeem [ geproduceerde meta-gegevenseigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
 Als u waarden uit de verzonden formuliergegevens wilt opnemen in het e-mailbericht, moet u een eigenschap voor aangepaste metagegevens maken en deze eigenschappen voor aangepaste metagegevens in de e-mailsjabloon gebruiken
 
 
 
 ## Aangepaste metagegevenseigenschap maken
 
-De geadviseerde benadering is een component te creëren OSGI die de getUserMetadata methode van [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+De geadviseerde benadering is een component tot stand te brengen OSGI die de methode getUserMetadata van [ WorkitemUserMetadataService ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--) uitvoert
 
-De volgende code maakt 4 eigenschappen van metagegevens (_firstName_,_lastName_,_reden_ en _amountRequested_) en stelt de waarde ervan in op basis van de ingediende gegevens. Bijvoorbeeld de eigenschap metadata _firstName_ De waarde wordt ingesteld op de waarde van het element met de naam firstName in de verzonden gegevens. De volgende code gaat ervan uit dat de verzonden gegevens van het adaptieve formulier de XML-indeling hebben. Adaptieve Forms op basis van JSON-schema of formuliergegevensmodel genereert gegevens in JSON-indeling.
+De volgende code leidt tot 4 meta-gegevenseigenschappen (_firstName_, _lastName_, _reden_ en _amountRequested_) en plaatst zijn waarde van de voorgelegde gegevens. Bijvoorbeeld wordt de waarde van het meta-gegevensbezit _firstName_ geplaatst aan de waarde van het element riep firstName van de voorgelegde gegevens. De volgende code gaat ervan uit dat de verzonden gegevens van het adaptieve formulier de XML-indeling hebben. Adaptieve Forms op basis van JSON-schema of formuliergegevensmodel genereert gegevens in JSON-indeling.
 
 
 ```java
@@ -120,24 +120,24 @@ In de e-mailsjabloon kunt u de eigenschap metadata opnemen door de volgende synt
 Nadat de component OSGi wordt gebouwd en in AEM server wordt opgesteld, vorm de Assign component van de Taak zoals hieronder getoond om de eigenschappen van douanemetagegevens te gebruiken.
 
 
-![Taakmelding](assets/task-notification.PNG)
+![ Bericht van de Taak ](assets/task-notification.PNG)
 
 ## Het gebruik van aangepaste eigenschappen van metagegevens inschakelen
 
-![Eigenschappen van Aangepaste metagegevens](assets/custom-meta-data-properties.PNG)
+![ eigenschappen van de Gegevens van Meta van de Douane ](assets/custom-meta-data-properties.PNG)
 
 ## Om dit op uw server te proberen
 
-* [CQ-mailservice op dag configureren](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* Een geldige e-mailid koppelen aan [beheerder](http://localhost:4502/security/users.html)
-* Download en installeer de [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) gebruiken [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Downloaden [Adaptief formulier](assets/request-travel-authorization.zip) en importeren in AEM uit de [formulieren en documenten ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Implementeer en start de [Aangepast pakket](assets/work-items-user-service-bundle.jar) met de [webconsole](http://localhost:4502/system/console/bundles)
-* [Een voorbeeld van het formulier bekijken en het formulier verzenden](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
+* [ vorm de Dienst van de Post van de Dag CQ ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* Koppel een geldige e-mailidentiteitskaart met [ admin gebruiker ](http://localhost:4502/security/users.html)
+* De download en installeert [ werkschema-en-bericht-malplaatje ](assets/workflow-and-task-notification-template.zip) gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+* Download [ Aangepaste Vorm ](assets/request-travel-authorization.zip) en de invoer in AEM van de [ vormen en documenten ui ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Stel en begin de [ Bundel van de Douane ](assets/work-items-user-service-bundle.jar) op gebruikend de [ Webconsole ](http://localhost:4502/system/console/bundles)
+* [ Voorproef en verzend de vorm ](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 Bij het verzenden van een formulier wordt het toewijzingsbericht verzonden naar de e-mailid die is gekoppeld aan de beheerder. De volgende schermafbeelding laat u het voorbeeld van een taaktoewijzingsmelding zien
 
-![Melding](assets/task-nitification-email.png)
+![ Bericht ](assets/task-nitification-email.png)
 
 >[!NOTE]
 >De e-mailsjabloon voor het taakbericht toewijzen moet de volgende indeling hebben.
@@ -200,4 +200,4 @@ public class CaptureTaskComments implements WorkitemUserMetadataService {
 }
 ```
 
-De bundel met de bovenstaande code kan [hier gedownload](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)
+De bundel met de bovengenoemde code kan [ van hier worden gedownload ](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)

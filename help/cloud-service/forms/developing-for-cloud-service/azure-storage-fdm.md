@@ -20,10 +20,11 @@ ht-degree: 0%
 
 # Configuratie van cloudservices opnemen in uw project
 
-Maak een configuratiecontainer met de naam &#39;FormTutorial&#39; om uw configuratie voor cloudservices in te stellen. Maak een configuratie voor cloudservices voor Azure Storage met de naam &#39;FormsCSAndAzureBlob&#39; in de &#39;FormTutorial&#39;-container door de gegevens van de Azure-opslagaccount en de Azure-toegangssleutel op te geven.
+Een configuratiecontainer met de naam &#39;FormTutorial&#39; maken voor de configuratie van uw cloudservices
+Maak een configuratie voor cloudservices voor Azure Storage met de naam &#39;FormsCSAndAzureBlob&#39; in de container &#39;FormTutorial&#39; door de Azure-opslagaccountgegevens en de Azure-toegangssleutel op te geven.
 
 Open uw AEM project in IntelliJ. Zorg ervoor dat u de map FormTutorial toevoegt zoals hieronder in het project ui.content wordt weergegeven
-![cloud-services-configuratie](assets/cloud-services-configuration.png)
+![ wolk-diensten-configuratie ](assets/cloud-services-configuration.png)
 
 Zorg ervoor u de volgende ingang in het ui.content- project filter.xml toevoegt
 
@@ -31,12 +32,12 @@ Zorg ervoor u de volgende ingang in het ui.content- project filter.xml toevoegt
 <filter root="/conf/FormTutorial" mode="replace"/>
 ```
 
-![filter-xml](assets/ui-content-filter.png)
+![ filter-xml ](assets/ui-content-filter.png)
 
 ## Formuliergegevensmodel opnemen in uw project
 
 Maak een formuliergegevensmodel op basis van de configuratie voor cloudservices die u in de vorige stap hebt gemaakt. Om het model van vormgegevens in uw project te omvatten creeer de aangewezen omslagstructuur in uw AEM project in intelliJ. Mijn formuliergegevensmodel bevindt zich bijvoorbeeld in een map die registraties wordt genoemd
-![fdm-inhoud](assets/ui-content-fdm.png)
+![ fdm-inhoud ](assets/ui-content-fdm.png)
 
 Neem het juiste item op in het bestand filter.xml van het project ui.content
 
@@ -47,7 +48,7 @@ Neem het juiste item op in het bestand filter.xml van het project ui.content
 
 >[!NOTE]
 >
->Wanneer u nu uw project bouwt en implementeert met gebruik van cloudbeheer, moet u uw Azure-toegangssleutel opnieuw invoeren in de configuratie van cloudservices. Als u wilt voorkomen dat de toegangstoets opnieuw wordt ingevoerd, kunt u het beste contextbewuste configuratie maken met behulp van de omgevingsvariabelen die in het dialoogvenster [volgend artikel](./context-aware-fdm.md)
+>Wanneer u nu uw project bouwt en implementeert met gebruik van cloudbeheer, moet u uw Azure-toegangssleutel opnieuw invoeren in de configuratie van cloudservices. Vermijd het opnieuw ingaan van de toegangstoets, wordt het geadviseerd om context te creëren bewuste configuratie gebruikend de milieuvariabelen zoals die in het [ volgende artikel ](./context-aware-fdm.md) worden verklaard
 
 ## Volgende stappen
 

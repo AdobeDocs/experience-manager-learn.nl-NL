@@ -26,12 +26,12 @@ De componentconsole biedt de volgende functionaliteit:
 
 * Overzicht: lijst met alle geïnstalleerde componenten die beschikbaar zijn op de huidige AEM
 * [!UICONTROL Properties]: geeft metagegevens weer zoals de titel, de groep en de beschrijving van een component
-* [!UICONTROL Policies]: geeft een bestaand beleid voor een bepaalde component en de bijbehorende sjabloon weer
+* [!UICONTROL Policies]: geeft eventueel bestaand beleid voor een bepaalde component en de bijbehorende sjabloon weer
 * [!UICONTROL Live Usage]: geeft een lijst weer van pagina&#39;s waarin de component is opgenomen
 
-De componentconsole is te vinden onder **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Components]**.
-Component Console URL (lokale AEM auteur): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
+U vindt de componentconsole onder **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Components]** .
+De Console URL van de component (lokale AEM Auteur): [ http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie voor componentenconsole](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-console.html)
+* [ Documentatie van de Console van Componenten ](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-console.html)

@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # Het dashboard Systeemoverzicht gebruiken
 
-Adobe Experience Manager (AEM) [!UICONTROL System Overview] biedt vanuit één dashboard een weergave op hoog niveau van de configuratie, hardware en status van de AEM instantie.
+Adobe Experience Manager (AEM) [!UICONTROL System Overview] biedt een weergave op hoog niveau van de configuratie, hardware en status van de AEM-instantie vanuit één dashboard.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. Het Overzicht van het Systeem kan van worden betreden: **AEM starten** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL System Overview]**
+1. Het systeemoverzicht kan worden betreden van: **AEM Start** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL System Overview]**
 
-   Rechtstreeks om **`<server-host>/libs/granite/operations/content/systemoverview.html`**
+   Direct bij **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
-1. De informatie van de [!UICONTROL System Overview] kan worden geëxporteerd door op de knop [!UICONTROL Download] knop. De informatie wordt ook via het volgende weergegeven [!DNL REST] eindpunt:
-1. Hieronder ziet u een voorbeelduitvoer van de JSON die wordt geëxporteerd uit de [!UICONTROL System Overview]:
+1. U kunt de gegevens van de [!UICONTROL System Overview] exporteren door op de knop [!UICONTROL Download] te klikken. De informatie wordt ook beschikbaar gesteld via het volgende [!DNL REST] eindpunt:
+1. Hieronder ziet u een voorbeelduitvoer van de JSON die wordt geëxporteerd uit de [!UICONTROL System Overview] :
 
    ```json
    {

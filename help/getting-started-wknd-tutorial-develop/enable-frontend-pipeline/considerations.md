@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Ontwikkelingsoverwegingen
 
-Na het toelaten van de front-end pijpleiding om de front-end middelen in AEM as a Cloud Service milieu slechts op te stellen, is er één of andere invloed op de lokale AEM ontwikkeling en u moet het git vertakkende model aanpassen.
+Nadat u de front-end pijplijn hebt ingeschakeld om alleen de front-end bronnen in AEM as a Cloud Service-omgeving te implementeren, is er enige invloed op de lokale AEM ontwikkeling en moet u het git vertakkingsmodel aanpassen.
 
 ## Doelstelling
 
@@ -37,9 +37,9 @@ Na het toelaten van de front-end pijpleiding om de front-end middelen in AEM as 
 
 ## Aangepaste ontwikkelingsaanpak
 
-* Voor de lokale ontwikkeling die AEM SDK gebruikt, heeft het back-end dev-team nog steeds clientlib genereren via `ui.frontend` maar tijdens de implementatie van Cloud Manager in AEM as a Cloud Service omgeving moet u deze overslaan. Dit oppervlakte een uitdaging op hoe te om de project te isoleren config veranderingen die in worden geschetst in [Project bijwerken](update-project.md) hoofdstuk.
+* Voor de lokale ontwikkeling die AEM SDK gebruikt, heeft het back-end dev-team nog steeds clientlib-generatie via de module `ui.frontend` nodig, maar tijdens de implementatie van Cloud Manager naar de AEM as a Cloud Service-omgeving moet u dit team overslaan. Dit oppervlakt een uitdaging op hoe te om de project te isoleren config veranderingen die in het [ worden geschetst 1} hoofdstuk van het Project van de Update {worden geschetst.](update-project.md)
 
-A __oplossing__ zou kunnen zijn om uw git vertakkend model aan te passen en ervoor te zorgen de AEM project config veranderingen nooit terugstroom naar __lokale ontwikkeling__ vertakken het AEM achterste-eindontwikkelaars gebruiken.
+A __oplossing__ zou uw git vertakkend model kunnen aanpassen en ervoor zorgen de AEM projectconfig verandert nooit terugstromen naar de __lokale ontwikkeling__ tak het AEM achterste-eindontwikkelaarsgebruik.
 
 
-* Als deel van een aan de gang zijnde verhoging aan uw AEM project, als u nieuwe componenten introduceert of een bestaande component bijwerkt die veranderingen in allebei heeft `ui.app` en `ui.frontend` moet u zowel volledige-stapel als front-end pijpleidingen in werking stellen.
+* Als onderdeel van een voortdurende verbetering van uw AEM project, als u nieuwe componenten introduceert of een bestaande component bijwerkt die veranderingen in zowel `ui.app` als `ui.frontend` module heeft, moet u zowel volledig-stapel als front-end pijpleidingen in werking stellen.

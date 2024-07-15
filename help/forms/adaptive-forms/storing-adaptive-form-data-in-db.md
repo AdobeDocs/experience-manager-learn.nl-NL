@@ -25,22 +25,22 @@ Het gebruiksscenario is dat een AEM workflow wordt geactiveerd voor het verzende
 
 ## JDBC-verbindingsgroep
 
-* Ga naar [ConfigMgr](http://localhost:4502/system/console/configMgr)
+* Ga naar [ ConfigMgr ](http://localhost:4502/system/console/configMgr)
 
    * Zoek naar &quot;Pool van de Verbinding JDBC&quot;. Maak een nieuwe dag gemeenschappelijke JDBC-verbindingspool. Geef de specifieke instellingen voor uw database op.
 
-   * ![OSGi-configuratie van JDBC-verbindingspool](assets/aemformstutorial-jdbc.png)
+   * ![ JDBC de configuratie van de verbindingspool OSGi ](assets/aemformstutorial-jdbc.png)
 
 ## Databasegegevens opgeven
 
-* Zoeken naar &quot;**Databasedetails opgeven**&quot;
+* Onderzoek naar &quot;**specificeer de details van het Gegevensbestand**&quot;
 * Geef de specifieke eigenschappen voor uw database op.
    * DataSourceName:Naam van de gegevensbron u eerder vormde.
    * TableName - Naam van de lijst waarin u de Gegevens van AF wilt opslaan
    * Formuliernaam - Kolomnaam voor de naam van het formulier
    * Kolomnaam - Kolomnaam om de AF-gegevens te bevatten
 
-  ![Specificeer de details van het Gegevensbestand OSGi configuratie](assets/specify-database-details.png)
+  ![ specificeer de details OSGi van het Gegevensbestand configuratie ](assets/specify-database-details.png)
 
 
 
@@ -213,9 +213,9 @@ public class InsertAfData implements WorkflowProcess {
 * Geef de databasedetails op met behulp van configMgr
 * [Download het Zip-bestand en extraheer de inhoud ervan naar de vaste schijf](assets/article-assets.zip)
 
-   * Het jar-bestand implementeren met [AEM webconsole](http://localhost:4502/system/console/bundles). Dit jar-bestand bevat de code waarmee de formuliergegevens in de database worden opgeslagen.
+   * Stel het jar dossier op gebruikend [ AEM Webconsole ](http://localhost:4502/system/console/bundles). Dit jar-bestand bevat de code waarmee de formuliergegevens in de database worden opgeslagen.
 
-   * De twee ZIP-bestanden importeren in [AEM met pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp). Hiermee krijgt u de [voorbeeldworkflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) en de [adaptief voorbeeldformulier](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) dat de workflow voor het verzenden van formulieren activeert. Let op de procesargumenten in de workflowstap. Deze argumenten verwijzen naar de naam van de indeling en de naam van het gegevensbestand dat de adaptieve formuliergegevens zal bevatten. Het gegevensbestand wordt opgeslagen onder de ladingmap in de crx-opslagplaats. Let op het volgende [adaptieve vorm](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) is geconfigureerd om de AEM workflow bij verzending en de configuratie van het gegevensbestand (data.xml) te activeren
+   * Importeer de twee ZIP dossiers in [ AEM gebruikend pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp). Dit zal u het [ steekproefwerkschema ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) en de [ steekproef aanpassende vorm ](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) krijgen die het werkschema op vormvoorlegging zal teweegbrengen. Let op de procesargumenten in de workflowstap. Deze argumenten verwijzen naar de naam van de indeling en de naam van het gegevensbestand dat de adaptieve formuliergegevens zal bevatten. Het gegevensbestand wordt opgeslagen onder de ladingmap in de crx-opslagplaats. Bericht hoe de [ adaptieve vorm ](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) wordt gevormd om het AEM werkschema op voorlegging en de configuratie van het gegevensdossier (data.xml) teweeg te brengen
 
    * Bekijk een voorbeeld van het formulier, vul het in en verzend het. Er moet een nieuwe rij in uw database worden gemaakt
 

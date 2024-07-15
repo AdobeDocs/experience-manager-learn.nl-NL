@@ -1,6 +1,6 @@
 ---
-title: AEM Assets Microservices en overstappen op AEM as a Cloud Service
-description: Leer hoe u met de asset compute-microservices van AEM Assets as a Cloud Service automatisch en efficiënt elke uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM-workflow kunt vervangen.
+title: AEM Assets Microservices en overstappen naar AEM as a Cloud Service
+description: Leer hoe u met AEM Assets as a Cloud Service asset compute microservices automatisch en efficiënt elke uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM Workflow kunt vervangen.
 version: Cloud Service
 feature: Asset Compute Microservices
 topic: Migration, Upgrade
@@ -17,24 +17,24 @@ ht-degree: 0%
 
 ---
 
-# AEM Assets Microservices - Verplaatsen naar AEM as a Cloud Service
+# AEM Assets Microservices - Naar AEM as a Cloud Service
 
-Leer hoe u met de asset compute-microservices van AEM Assets as a Cloud Service automatisch en efficiënt elke uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM-workflow kunt vervangen.
+Leer hoe u met AEM Assets as a Cloud Service asset compute microservices automatisch en efficiënt elke uitvoering voor uw middelen kunt genereren en deze rol van de traditionele AEM Workflow kunt vervangen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
 
 ## Workflow-migratiehulpprogramma
 
-![Hulpprogramma voor migratie van workflows](./assets/asset-workflow-migration.png)
+![ Hulpmiddel van de Migratie van het Werkschema van Activa ](./assets/asset-workflow-migration.png)
 
-Als deel van het refactoring van uw codebasis, gebruik [Hulpprogramma voor workflowmigratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html) bestaande workflows migreren om de Asset compute microservices in AEM as a Cloud Service te gebruiken.
+Als deel van het refactoring van uw codebasis, gebruik het [ hulpmiddel van de Migratie van het Werkschema van Activa ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html) om bestaande werkschema&#39;s te migreren om de Asset compute microdiensten in AEM as a Cloud Service te gebruiken.
 
 ## Belangrijkste activiteiten
 
-+ Gebruik de [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) hulpmiddel om werkstromen voor middelenverwerking te migreren voor het gebruik van de Asset compute microservices.
-+ Een [plaatselijke ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) en implementeer de bijgewerkte workflows. Mogelijk is een handmatige aanpassing nodig voor complexe workflows.
++ Gebruik het ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) hulpmiddel van de Migrator van het Werkschema 0} Adobe I/O om werkschema&#39;s van de activaverwerking te migreren om de microdiensten van de Asset compute te gebruiken.[
++ Opstelling a [ lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) en stel de bijgewerkte werkschema&#39;s op. Mogelijk is een handmatige aanpassing nodig voor complexe workflows.
 + Doorgaan met herhalen in een lokale ontwikkelomgeving met de AEM SDK totdat de bijgewerkte workflow overeenkomt met de pariteit van de functie.
-+ Implementeer de bijgewerkte codebasis in een AEM as a Cloud Service ontwikkelomgeving en blijf valideren.
++ Implementeer de bijgewerkte codebasis in een AEM as a Cloud Service-ontwikkelomgeving en blijf valideren.
 
 ## Handbeweging
 
@@ -42,7 +42,7 @@ Pas je kennis toe door uit te proberen wat je geleerd hebt met deze praktische o
 
 Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaande video en de volgende materialen hebt bekeken en begrepen:
 
-+ [ anders denken over AEM as a Cloud Service](./introduction.md)
++ [AEM as a Cloud Service anders denken](./introduction.md)
 + [Onboarding](./onboarding.md)
 
 Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
@@ -65,7 +65,7 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session8-assets#cloud-acceleration-bootcamp---session-8-assets-and-microservices" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Elementenbeheer uitproberen</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> probeert uit activa beheer </span>
             </a>
         </td>
     </tr>

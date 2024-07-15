@@ -24,7 +24,7 @@ Marketo, een onderdeel van de Adobe, beschikt over software voor marketingautoma
 
 Met het formuliergegevensmodel van AEM Forms kunnen we nu AEM formulier naadloos integreren met Marketo.
 
-[Meer informatie over het formuliergegevensmodel](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
+[ leer meer over het Model van de Gegevens van de Vorm ](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
 Marketo maakt een REST API beschikbaar waarmee een groot aantal mogelijkheden van het systeem op afstand kan worden uitgevoerd. Er zijn veel opties, variërend van het maken van programma&#39;s tot het bulksgewijs importeren van leads, waarmee u een Marketo-instantie met fijnkorrelige besturing kunt besturen. Met behulp van het formuliergegevensmodel is het heel eenvoudig om AEM Forms te integreren met Marketo.
 
@@ -40,7 +40,7 @@ Om te beginnen wordt het hoogst geadviseerd dat u met de volgende onderwerpen ve
 1. Basiskennis van wagerbestanden
 1. Adaptieve Forms maken
 
-**Clientgeheim-id en clientgeheim-sleutel**
+**Geheime identiteitskaart van de Cliënt en Geheime Sleutel van de Cliënt**
 
 De eerste stap bij de integratie van Marketo met AEM Forms is het verkrijgen van de API-referenties die nodig zijn om de REST-aanroepen met behulp van API uit te voeren. U hebt het volgende nodig
 
@@ -49,11 +49,11 @@ De eerste stap bij de integratie van Marketo met AEM Forms is het verkrijgen van
 1. identity_end
 1. verificatie-URL
 
-[Volg de officiële documentatie van Marketo om de bovengenoemde eigenschappen te verkrijgen.](https://developers.marketo.com/rest-api/) U kunt ook contact opnemen met de beheerder van uw Marketo-exemplaar.
+[ Gelieve te volgen de officiële documentatie van Marketo om de bovengenoemde eigenschappen te krijgen.](https://developers.marketo.com/rest-api/) U kunt ook contact opnemen met de beheerder van uw Marketo-instantie.
 
-**Voordat u begint**
+**alvorens u** begint
 
-[Download en decomprimeer de middelen die aan dit artikel zijn gekoppeld.](assets/aemformsandmarketo.zip) Het ZIP-bestand bevat het volgende:
+[ Download en unzip de activa met betrekking tot dit artikel.](assets/aemformsandmarketo.zip) Het ZIP-bestand bevat het volgende:
 
 1. BlankTemplatePackage.zip - dit is het Adaptieve malplaatje van de Vorm. Importeer dit met het pakketbeheer.
 1. marketo.json - Dit is het wagerbestand dat wordt gebruikt om de gegevensbron te configureren.

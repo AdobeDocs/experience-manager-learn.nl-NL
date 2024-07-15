@@ -1,5 +1,5 @@
 ---
-title: Aanpassing van volledige webpaginabeleving
+title: Personalization of full web page Experience
 description: Leer hoe u een doelactiviteit maakt om uw AEM webpagina's met Adobe Target om te leiden naar nieuwe pagina's.
 jira: KT-6353
 thumbnail: 6353-personalization-web-page.jpg
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Aanpassing van volledige webpaginabeleving {#personalization-fpe}
+# Personalization of full web page Experience {#personalization-fpe}
 
 Leer hoe u een activiteit maakt om uw sitepagina&#39;s die op AEM worden gehost, om te leiden naar een nieuwe pagina met Adobe Target.
 
@@ -37,42 +37,42 @@ De WKND-site heeft zijn homepage opnieuw ontworpen en wil de bezoekers van hun h
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
 1. Aanmelden bij Adobe Target en navigeren naar het tabblad Activiteiten
-1. Klikken **Activiteit maken** en kies vervolgens **A/B-test** activiteit
+1. Klik **creëren de knoop van de Activiteit** en kies dan **A/B de Activiteit van de Test**
 
-   ![A/B-activiteit](assets/ab-target-activity.png)
+   ![ Activiteit A/B ](assets/ab-target-activity.png)
 
-1. Selecteer de **Visual Experience Composer** , geeft u de URL van de activiteit op en klikt u op **Volgende**
+1. Selecteer de **Visuele Composer van de Ervaring** optie, verstrek de Activiteit URL, en klik dan **daarna**
 
-   ![URL van activiteit](assets/ab-test-url.png)
+   ![ Activiteit URL ](assets/ab-test-url.png)
 
-1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen door **Ervaring toevoegen** knop.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen door **te gebruiken voeg Ervaring** knoop toe.
 
-   ![Ervingopties](assets/experience-options.png)
+   ![ de Opties van de Ervaring ](assets/experience-options.png)
 
-1. De opties van de mening beschikbaar voor Ervaring A en selecteert dan **Omleiden naar URL** en geef een URL op voor de nieuwe homepage van de WKND-site.
+1. De opties van de mening beschikbaar voor Ervaring A en selecteren dan de **Redirect aan URL** optie en verstrekken een URL voor de nieuwe WKND homepage van de Plaats.
 
-   ![URL omleiden](assets/redirect-url.png)
+   ![ Redirect URL ](assets/redirect-url.png)
 
-1. Naam wijzigen *Ervaring A* tot *Nieuwe WKND-startpagina* en *Ervaring B* tot *WKND-startpagina*
+1. Naam *Ervaring A* aan *Nieuwe WKND Homepage* en *Ervaring B* aan *WKND Homepage* anders
 
-   ![avonturen](assets/new-experiences.png)
+   ![ avonturen ](assets/new-experiences.png)
 
-1. Klikken **Volgende** om over te stappen naar gericht en een handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
+1. Klik **daarna** om zich aan het richten te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
-   ![Targeting](assets/targeting.png)
+   ![ gericht ](assets/targeting.png)
 
 1. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
 
-   ![Doelen](assets/goals.png)
+   ![ Doelen ](assets/goals.png)
 
 1. Geef een naam op voor uw activiteiten en sla deze op.
 1. Activeer je opgeslagen activiteit om je wijzigingen live te zetten.
 
-   ![Doelen](assets/activate.png)
+   ![ Doelen ](assets/activate.png)
 
-1. Open uw sitepagina (Activiteit URL van stap 3) op een nieuw tabblad en u moet een van de ervaringen (WKND-startpagina of Nieuwe WKND-startpagina) kunnen bekijken vanaf onze testactiviteit A/B. `us/en.html` omleiding naar `us/home.html`.
+1. Open uw sitepagina (Activiteit URL van stap 3) op een nieuw tabblad en u moet een van de ervaringen (WKND-startpagina of Nieuwe WKND-startpagina) kunnen bekijken vanaf onze testactiviteit A/B. `us/en.html` wordt omgeleid naar `us/home.html` .
 
-   ![Doelen](assets/redirect-test.png)
+   ![ Doelen ](assets/redirect-test.png)
 
 ## Samenvatting
 
@@ -80,4 +80,4 @@ Als markeerteken kunt u een activiteit maken om uw sitepagina&#39;s die op AEM w
 
 ## Ondersteunende koppelingen
 
-* [Adobe Experience Cloud-foutopsporing - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

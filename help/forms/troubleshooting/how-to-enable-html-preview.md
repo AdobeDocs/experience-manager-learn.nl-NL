@@ -1,5 +1,5 @@
 ---
-title: Voorvertoning HTML in Designer - Voorvertoning inschakelen HTML voorvertoning
+title: Designer Preview HTML-voorvertoning - Voorvertoning HTML inschakelen
 description: Stappen voor het configureren van HTML Preview in Designer
 type: Troubleshooting
 role: Developer
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Voorvertoning HTML inschakelen
 
-*In deze video worden de stappen doorlopen om HTML voor voorvertoningen in Designer in te schakelen.*
+*Deze video loopt door de stappen om voorproef HTML in Designer toe te laten.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335498?quality=12&learn=on)

@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # Asset Share Commons Asset Kit
 
-Meer informatie over het gebruik van Asset Share Common&#39;s [assetkit](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) om op maat gemaakte, deelbare webpagina&#39;s te genereren waarop elementen uit AEM Assets-mappen of -verzamelingen worden vermeld.
+Leer hoe te om Middelen Gemeenschappelijke van het Aandeel van Activa te gebruiken [ activakit ](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) om op maat gemaakte, deelbare Web-pagina&#39;s te produceren die activa van de omslagen of inzamelingen van AEM Assets een lijst maken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415467?quality=12&learn=on)
 
-_[Elementkit](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) is alleen beschikbaar op Commentaar voor het Aandeel van activa 2.5.4+_
+_[Kit van Activa ](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) is slechts beschikbaar op de Commons 2.5.4+ van het Aandeel van Activa_

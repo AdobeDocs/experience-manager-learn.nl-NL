@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Parse ChatBot-gegevens
 
-A [ChatBot-webhaak](https://www.chatbot.com/help/webhooks/what-are-webhooks/) is gebruikt om de ChatBot-gegevens naar een AEM servlet te verzenden.
+A [ WebHaak ChatBot ](https://www.chatbot.com/help/webhooks/what-are-webhooks/) werd gebruikt om de gegevens ChatBot naar AEM servlet te verzenden.
 De gegevens die in de ChatBot worden vastgelegd, hebben de JSON-indeling, waarbij de gebruiker gegevens in het attributenobject heeft ingevoerd, zoals hieronder wordt weergegeven
-![chatbogegevens](assets/chat-bot-data.png)
+![ chatbot-data ](assets/chat-bot-data.png)
 
 Als u de gegevens wilt samenvoegen met de XDP-sjabloon, moet u de volgende XML maken. Merk het wortelelement van xml op, dit moet met het wortelelement van het malplaatje XDP voor de gegevens aanpassen om met succes samen te voegen.
 
@@ -37,7 +37,7 @@ Als u de gegevens wilt samenvoegen met de XDP-sjabloon, moet u de volgende XML m
 </topmostSubForm>
 ```
 
-![xdp-template](assets/xdp-template.png)
+![ xdp-malplaatje ](assets/xdp-template.png)
 
 ## Volgende stappen
 

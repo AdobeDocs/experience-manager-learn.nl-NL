@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen voor het oplossen van specifieke problemen HtmltoPDF op een opstelling Unix (omzetting WebKit)
 
-*Deze video doorloopt het proces om het oplossen van problemenHtmltoPDF specifieke kwesties op een Opstelling van Unix (omzetting WebKit) te behandelen.*
+*Deze video loopt door het proces van het oplossen van problemenHtmltoPDF specifieke kwesties op een opstelling van Unix (omzetting WebKit).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335548?quality=12&learn=on)

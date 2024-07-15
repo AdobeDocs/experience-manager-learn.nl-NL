@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot AEM as a Cloud Service
-description: Leer hoe u anders kunt denken over AEM as a Cloud Service implementaties.
+description: Leer hoe u anders kunt denken over AEM as a Cloud Service-implementaties.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Inleiding tot AEM as a Cloud Service
 
-Leer hoe u anders kunt denken over AEM as a Cloud Service implementaties.
+Leer hoe u anders kunt denken over AEM as a Cloud Service-implementaties.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336956?quality=12&learn=on)

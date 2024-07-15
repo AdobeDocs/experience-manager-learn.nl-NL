@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 Adobe App Builder
-description: Deze aflevering komt neer op het externe integratiepatroon dat Adobe App Builder gebruikt
+description: Deze aflevering komt neer op het externe integratiepatroon dat gebruikmaakt van Adobe App Builder
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # Cloud 5 Adobe App Builder
 
-Amol Anand laat ons de ondergrens van de integratie met Adobe App Builder en waar en wanneer het gebruiken.
+Amol Anand laat vallen om ons de ondergrens te geven van de integratie met Adobe App Builder en waar en wanneer om het te gebruiken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
 
 ## Inhoud die in deze video wordt behandeld
 
-+ Overzicht van [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
-+ [Tutorials en code-labels](https://developer.adobe.com/app-builder/docs/resources/)
-+ [Logboekregistratie en controle](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
-+ Instelling [Systeemlimieten](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
-+ [Lokale ontwikkeling](https://developer.adobe.com/app-builder/docs/resources/debugging/) Tips
++ Overzicht van [ App Builder ](https://developer.adobe.com/app-builder/docs/overview/)
++ [ Tutorials en de Laboratoria van de Code ](https://developer.adobe.com/app-builder/docs/resources/)
++ [ Logging en Controle ](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
++ Plaatsende [ Limieten van het Systeem ](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
++ [ Lokale Ontwikkeling ](https://developer.adobe.com/app-builder/docs/resources/debugging/) Uiteinden

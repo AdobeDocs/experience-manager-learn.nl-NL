@@ -22,7 +22,7 @@ Inhoudsfragmenten zijn een inhoudsabstractie in AEM waarmee op tekst gebaseerde 
 
 AEM Inhoudsfragmenten zijn tekstgebaseerde redactionele inhoud die bepaalde gestructureerde gegevenselementen kan bevatten die zijn gekoppeld, maar die wordt beschouwd als zuivere inhoud zonder ontwerp- of layoutinformatie. Inhoudsfragmenten worden doorgaans gemaakt als agnostische inhoud voor kanalen, die bestemd is voor gebruik en hergebruik via kanalen, waardoor de inhoud zelf wordt verpakt in een contextspecifieke ervaring.
 
-Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Details over [het leveren van inhoudsfragmenten vindt u hier](content-fragments-delivery-feature-video-use.md).
+Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. De details over [ leverend de Fragments van de Inhoud kunnen hier ](content-fragments-delivery-feature-video-use.md) worden gevonden.
 
 1. Modellen voor inhoudsfragmenten inschakelen en definiëren
 2. Inhoudsfragmenten ontwerpen
@@ -38,7 +38,7 @@ Deze videoreeks bestrijkt de levenscyclus van inhoudsfragmenten in AEM. Details 
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
 
-AEM Content Fragments Models, de gegevensschema&#39;s van Content Fragments, moeten via AEM worden toegelaten [[!UICONTROL Configuration Browser]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html), waardoor Modellen van inhoudsfragmenten per configuratie kunnen worden gedefinieerd.
+AEM de Modellen van de Fragmenten van de Inhoud, de gegevensschema&#39;s van de Fragmenten van de Inhoud, moeten via AEM [[!UICONTROL Configuration Browser] worden toegelaten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html), die toestaat de Modellen van het Fragment van de Inhoud om op een per configuratiebasis worden bepaald.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
@@ -48,8 +48,8 @@ AEM configuraties worden toegepast op AEM Assets-maphiërarchieën zodat de bijb
 
 Inhoudsfragmenten kunnen meerdere varianten hebben, waarbij elke variant een ander gebruik (dus niet noodzakelijkerwijs een kanaal) voor de inhoud aanwijst.
 
-*Voorbeeld van atleetbiografie voor importeren:*\
-**[sandrasprient-bio.txt](assets/sandra-sprient-bio.txt)**
+*Biografie van de atleet van het voorbeeld voor de invoer:*\
+**[zandrasprient-bio.txt](assets/sandra-sprient-bio.txt)**
 
 ## Inhoudsfragmenten downloaden {#downloading-content-fragments}
 
@@ -57,7 +57,7 @@ Inhoudsfragmenten kunnen meerdere varianten hebben, waarbij elke variant een and
 
 AEM Inhoudsfragmenten kunnen van AEM auteur worden gedownload als een ZIP-bestand met varianten, elementen en metagegevens.
 
-*ZIP-bestand voor downloaden van voorbeeldinhoudsfragment:*\
+*dossier van het de downloadZIP van het Fragment van de Inhoud van het Voorbeeld:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
 
 ## Redactionele mogelijkheden van inhoudsfragmenten {#editorial-capabilities}
@@ -66,18 +66,18 @@ AEM Inhoudsfragmenten kunnen van AEM auteur worden gedownload als een ZIP-bestan
 
 >[!NOTE]
 >
-> Aantekening en versie vergelijken voor inhoudsfragmenten is geïntroduceerd in [AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) en [AEM 6.3 Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> De aantekening en de versie vergelijken voor de Fragmenten van de Inhoud werden geïntroduceerd in [ AEM 6.4 Service Pack 2 ](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) en [ AEM 6.3 Service Pack 3 ](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Volgende stappen
 
-Meer informatie over [Inhoudsfragmenten leveren](content-fragments-delivery-feature-video-use.md).
+Leer over [ leverend de Fragmenten van de Inhoud ](content-fragments-delivery-feature-video-use.md).
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inhoudsfragmenten leveren](content-fragments-delivery-feature-video-use.md)
-* [AEM WCM Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [AEM WCM Core-inhoudsfragmentcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [ AEM de Componenten van de Kern WCM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ AEM de Component van het Fragment van de Inhoud van WCM Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 U kunt als volgt het pakket hieronder downloaden en installeren op een AEM 6.4+-instantie voor de uiteindelijke status van de videoreeks:
 
-**[aem_demo_liquid-experienceContent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**
+**[aem_demo_liquid-ExperienceContent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

@@ -26,11 +26,11 @@ Nadat u het afdrukkanaaldocument hebt gemaakt en getest, hebt u een mechanisme n
 
 Wanneer u een gecontroleerde omslag in AEM vormt, associeert u een manuscript ECMA of Java code die wordt uitgevoerd wanneer een dossier in de gelete op omslag wordt gelaten vallen. In dit artikel richten we ons op het ECMA-script dat afdrukkanaaldocumenten genereert en opslaat in het bestandssysteem.
 
-De gecontroleerde omslagconfiguratie en het manuscript ECMA maken deel uit van de activa u bij invoerde [begin van deze zelfstudie](introduction.md)
+De gecontroleerde omslagconfiguratie en het manuscript ECMA maken deel uit van de activa u bij het [ begin van dit leerprogramma ](introduction.md) invoerde
 
 Het invoerbestand dat in de controlemap wordt neergezet, heeft de volgende structuur. Met ECMA-script worden de accountnummers gelezen en wordt een document met het afdrukkanaal voor elk van deze accounts gegenereerd.
 
-Voor meer informatie over het ECMA-script voor het genereren van documenten, [verwijzen naar dit artikel](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+Voor meer details op het manuscript ECMA voor het produceren van documenten, [ verwijs naar dit artikel ](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 ```xml
 <accountnumbers>
@@ -54,7 +54,7 @@ Voer de onderstaande stappen uit om een document met een afdrukkanaal te generer
 * Zorg ervoor dat het pad naar interactiveCommunicationsDocument naar het juiste document verwijst dat u wilt afdrukken.(regel 1)
 * Noteer de saveLocation(Line 2). U kunt deze naar wens wijzigen.
 * Zorg ervoor dat de invoerparameter voor het formuliergegevensmodel is gebonden aan het aanvraagkenmerk en dat de bindingswaarde is ingesteld op &quot;accountnummer&quot;. Raadpleeg de onderstaande schermafbeelding.
-  ![verzoek](assets/requestattributeprintchannel.gif)
+  ![ verzoek ](assets/requestattributeprintchannel.gif)
 
 * Het bestand accountnumbers.xml maken met de volgende inhoud
 

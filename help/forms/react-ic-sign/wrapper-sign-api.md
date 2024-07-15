@@ -21,15 +21,15 @@ ht-degree: 0%
 
 Er is een aangepaste AEM ontwikkeld om het webformulier te maken en terug te sturen naar de eindgebruiker
 
-* [Tijdelijk document maken](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). Het document dat via deze oproep wordt geüpload, wordt tijdelijk genoemd omdat het slechts 7 dagen na het uploaden beschikbaar is. De geretourneerde tijdelijke document-id kan worden gebruikt in de API-aanroepen waar naar het geüploade bestand moet worden verwezen. De tijdelijke documentaanvraag bestaat uit drie delen: bestandsnaam, mime-type en de bestandsstroom. In deze aanvraag kunt u slechts één bestand tegelijk uploaden.
-* [Webformulier maken](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Dit is een primair eindpunt dat wordt gebruikt om een nieuw Webvorm tot stand te brengen. Het webformulier is gemaakt met de status AcTIVE om het webformulier direct te hosten.
-* [Het webformulier ophalen](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Haal het web van de gebruiker op. Dit webformulier wordt vervolgens gepresenteerd aan de aanroepende toepassing voor het ondertekenen van het document.
+* [ creeer Overgaand Document ](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). Het document dat via deze oproep wordt geüpload, wordt tijdelijk genoemd omdat het slechts 7 dagen na het uploaden beschikbaar is. De geretourneerde tijdelijke document-id kan worden gebruikt in de API-aanroepen waar naar het geüploade bestand moet worden verwezen. De tijdelijke documentaanvraag bestaat uit drie delen: bestandsnaam, mime-type en de bestandsstroom. In deze aanvraag kunt u slechts één bestand tegelijk uploaden.
+* [ creeer Webvorm ](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Dit is een primair eindpunt dat wordt gebruikt om een nieuwe Webvorm tot stand te brengen. Het webformulier is gemaakt met de status AcTIVE om het webformulier direct te hosten.
+* [ wint de Webvorm ](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets) terug.Win het Web van de gebruiker terug. Dit webformulier wordt vervolgens gepresenteerd aan de aanroepende toepassing voor het ondertekenen van het document.
 
 ## Acrobat Sign OSGi-configuratie maken
 
 Acrobat Sign REST API vereist de integratietoets en e-mail die aan de integratietoets zijn gekoppeld. Deze twee waarden worden verstrekt als OSGi configuratieeigenschappen zoals hieronder getoond
 
-![sign-configuration](assets/sign-configuration.png)
+![ teken-configuratie ](assets/sign-configuration.png)
 
 ```java
 package com.acrobatsign.core.configuration;

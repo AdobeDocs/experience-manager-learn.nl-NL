@@ -33,9 +33,9 @@ Aan het einde van dit zelfstudie-hoofdstuk hebt u een volledig functionele en be
 
 1. We moeten nu enkele aanbiedingsfragmenten en een component voor de afbeeldingenlijst maken.  Navigeer naar de contentfragmentconsole.
 
-   ![create-imagelist-fragment](./assets/3/create-imagelist-fragment.png)
+   ![ creeer-imagelist-fragment ](./assets/3/create-imagelist-fragment.png)
 
-   We willen een fragment van het type maken `imagelist` (model is `imagelist`) en wij geven het de titel `imagelist`.
+   We willen een fragment maken van het type `imagelist` (model is `imagelist` ) en geven het de titel `imagelist` .
 
    In de Inhoudsfragmenteditor hebben we de mogelijkheid om een fragment te selecteren dat moet worden opgenomen of om een fragment te maken.  Selecteer een fragment maken.
 
@@ -191,7 +191,7 @@ Aan het einde van dit zelfstudie-hoofdstuk hebt u een volledig functionele en be
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. Laten wij aan de vraagredacteur terugkeren en deze nieuwe component halen.  U ziet dat we verwijzen naar de `OfferModel` in onze zoekopdracht en de metagegevens die wij zullen gebruiken voor de titel van de kaart.
+1. Laten wij aan de vraagredacteur terugkeren en deze nieuwe component halen.  U ziet dat we verwijzen naar de `OfferModel` in onze query en de metagegevens die we gebruiken voor de titel van de kaart.
 
    ```graphql
    query imageList {
@@ -227,7 +227,7 @@ Aan het einde van dit zelfstudie-hoofdstuk hebt u een volledig functionele en be
    }
    ```
 
-1. Maak nu verbinding met onze app.  In onze `home.js`, zullen wij onze nieuwe vraag van verwijzingen voorzien. Boven `useEffect()` wij zullen `list` en `setList`.
+1. Maak nu verbinding met onze app.  In onze `home.js` verwijzen we naar onze nieuwe query. Boven `useEffect()` worden `list` en `setList` ingesteld.
 
    ```javascript
    const [list, setList] = useState({});
@@ -295,7 +295,7 @@ Aan het einde van dit zelfstudie-hoofdstuk hebt u een volledig functionele en be
 
 ## Universele editor inschakelen
 
-1. Toevoegen `<meta />` naar de app.  Openen `App.js` en voeg de invoer bij de bovenkant van het dossier in.
+1. Voeg `<meta />` toe aan de app.  Open `App.js` en voeg de invoer bij de bovenkant van het dossier in.
 
    ```javascript
    import { Helmet } from 'react-helmet';
@@ -311,7 +311,7 @@ Aan het einde van dit zelfstudie-hoofdstuk hebt u een volledig functionele en be
 
    >[!TIP]
    >
-   > We gebruiken de Helmet-bibliotheek om deze dynamisch te maken op basis van de `.env` bestand, maar u kunt dit in de `index.html`.
+   > We gebruiken de Helmet-bibliotheek om dit dynamisch te maken op basis van het `.env` -bestand. U kunt dit echter wel in de `index.html` -bibliotheek coderen.
 
 1. Nu zijn de updates Kaart om het fragment en datatype voor het uitgeven van elke kaart te identificeren.
 
@@ -331,13 +331,13 @@ Aan het einde van dit zelfstudie-hoofdstuk hebt u een volledig functionele en be
 
 1. Bepaal nu wat bewerkbaar is.
 
-   Aan de `<h3 />` toevoegen:
+   Aan `<h3 />` toevoegen:
 
    ```javascript
    itemProp="_metadata" itemType="text"
    ```
 
-   Voor ons `<div />` toevoegen:
+   Aan onze `<div />` toevoegen:
 
    ```javascript
    itemProp="description" itemType="richtext"

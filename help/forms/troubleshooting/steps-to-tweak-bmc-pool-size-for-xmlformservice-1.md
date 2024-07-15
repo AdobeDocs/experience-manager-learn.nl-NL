@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Stappen voor het aanpassen van de Bmc-groepsgrootte voor XMLFormService (1 van 2)
 
-*In deze video worden de stappen doorlopen om de grootte van de bmc-pool voor XMLFormService(1 van 2) aan te passen.*
+*Deze video loopt door de stappen om bmc groepsgrootte voor XMLFormService (1 van 2) te tweken.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335552?quality=12&learn=on)

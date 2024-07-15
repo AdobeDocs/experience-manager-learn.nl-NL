@@ -26,25 +26,25 @@ ht-degree: 0%
 Wanneer u een AMS-basislijnverzendingsprogramma hebt geïnstalleerd, wordt deze geleverd met een paar freebies.  Een van deze functies is een set scripts voor health check.
 Met deze scripts kan het taakverdelingsmechanisme waarmee de AEM stapel wordt voorafgegaan, weten welke poten gezond zijn en in bedrijf blijven.
 
-![Geanimeerd GIF dat de verkeersstroom toont](assets/load-balancer-healthcheck/health-check.gif "Stappen voor health check")
+![ Geanimeerd GIF dat de Stappen van de Controle van de verkeersstroom ](assets/load-balancer-healthcheck/health-check.gif " toont van de Gezondheid ")
 
 ## Standaard taakverdelingscontrole
 
 Wanneer het klantenverkeer door Internet komt om uw AEM instantie te bereiken zullen zij door een ladingsverdelingsmechanisme gaan
 
-![Afbeelding toont verkeersstroom van internet naar een taakverdeler](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png "load-balancer-traffic-flow")
+![ Beeld toont verkeersstroom van Internet om via een lading verdelingsmechanisme ](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png " lading-verdeler-verkeer-stroom ") te noemen
 
 Elke aanvraag die via het taakverdelingsmechanisme wordt ontvangen, leidt elke aanvraag tot een verwijzing.  Het taakverdelingsmechanisme beschikt over een mechanisme voor gezondheidscontrole dat is ingebouwd om ervoor te zorgen dat het verkeer naar een gezonde host stuurt.
 
 De standaardcontrole is typisch een havencontrole om te zien of luisteren de servers die in het taakverdelingsmechanisme worden gericht op het havenverkeer binnen komt (d.w.z. TCP 80 en 443)
 
-> `Note:` Terwijl dit werkt, heeft het geen echte maatstaf als AEM gezond is.  Het test alleen of de Dispatcher (Apache-webserver) actief is.
+> `Note:` Hoewel dit werkt, wordt niet echt ingeschat of AEM gezond is.  Het test alleen of de Dispatcher (Apache-webserver) actief is.
 
 ## AMS Health Check
 
-Om te voorkomen dat verkeer naar een gezonde verzender wordt gestuurd die een ongezonde AEM-instantie voorgaat, heeft AMS enkele extra&#39;s gemaakt die de gezondheid van de poot evalueren en niet alleen de verzender.
+Om te voorkomen dat verkeer naar een gezonde verzender wordt gestuurd die een ongezonde AEM-instantie voorgaat, heeft AMS een paar extra&#39;s gemaakt die de gezondheid van de poot evalueren en niet alleen van de Dispatcher.
 
-![De afbeelding toont de verschillende onderdelen voor de health check om te werken](assets/load-balancer-healthcheck/health-check-pieces.png "proefstukken voor gezondheidscontrole")
+![ Beeld toont de verschillende stukken voor de gezondheidscontrole om ](assets/load-balancer-healthcheck/health-check-pieces.png " gezondheid-controle-stukken ") te werken
 
 De gezondheidscontrole bestaat uit de volgende stukken:
 - 1 `Load balancer`
@@ -60,13 +60,13 @@ Wij zullen behandelen wat elk stuk aan opstelling en hun belang is
 
 Om aan te geven of AEM functioneert, hebt u het nodig om een basispagina-compilatie uit te voeren en de pagina te bedienen.  Adobe Managed Services heeft een basispakket gemaakt dat de testpagina bevat.  De pagina test dat de bewaarplaats omhoog is en dat de middelen en paginasjabloon kunnen teruggeven.
 
-![Afbeelding toont het AMS-pakket in CRX-pakketbeheer](assets/load-balancer-healthcheck/health-check-package.png "gezondheidscontrole-pakket")
+![ Beeld toont het Pakket AMS in het pakketmanager van CRX ](assets/load-balancer-healthcheck/health-check-package.png " gezondheid-controle-pakket ")
 
 Hier is de pagina.  De opslagplaats-id van de installatie wordt weergegeven
 
-![Afbeelding toont de pagina AMS Regent](assets/load-balancer-healthcheck/health-check-page.png "health check-page")
+![ Beeld toont de pagina van het Regent van AMS ](assets/load-balancer-healthcheck/health-check-page.png " gezondheid-controle-pagina ")
 
-> `Note:` We zorgen ervoor dat de pagina niet in cache kan worden geplaatst.  Het zou niet de daadwerkelijke status controleren als het elke keer enkel een caching pagina terugkwam!
+> `Note:` We zorgen ervoor dat de pagina niet in cache kan worden opgeslagen.  Het zou niet de daadwerkelijke status controleren als het elke keer enkel een caching pagina terugkwam!
 
 Dit is het lichtgewichteindpunt dat we kunnen testen om te zien dat AEM in gebruik is.
 
@@ -74,13 +74,13 @@ Dit is het lichtgewichteindpunt dat we kunnen testen om te zien dat AEM in gebru
 
 Wij vormen de ladingsbalansen om aan een CGI-BIN eindpunt in plaats van het gebruiken van een havencontrole te richten.
 
-![Afbeelding toont de configuratie van de AWS-taakverdelingscontrole](assets/load-balancer-healthcheck/aws-settings.png "aws-lb-settings")
+![ Beeld toont de de controleconfiguratie van de de gezondheid van het taakverdelingsmechanisme van AWS ](assets/load-balancer-healthcheck/aws-settings.png " aws-lb-montages ")
 
-![Afbeelding toont de Azure load balancer health check configuratie](assets/load-balancer-healthcheck/azure-settings.png "azure-lb-instellingen")
+![ Beeld toont de Azure configuratie van de de gezondheidscontrole van het taakverdelingsmechanisme ](assets/load-balancer-healthcheck/azure-settings.png " azure-lb-settings ")
 
 ### Virtuele hosts voor Apache Health Check
 
-#### Virtuele host CGI-BIN `(/etc/httpd/conf.d/available_vhosts/ams_health.vhost)`
+#### Virtuele CGI-BIN-host `(/etc/httpd/conf.d/available_vhosts/ams_health.vhost)`
 
 Dit is het `<VirtualHost>` Apache-configuratiebestand waarmee de CGI-Bin-bestanden kunnen worden uitgevoerd.
 
@@ -101,7 +101,7 @@ Listen 81
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost`
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_publish.vhost`
 
-Deze bestanden krijgen een naam `000_` als voorvoegsel.  Het is opzettelijk gevormd om de zelfde domeinnaam te gebruiken zoals de levende plaats.  Het is de bedoeling dat dit bestand wordt ingeschakeld wanneer de health check vaststelt dat er een probleem is met een van de AEM achtergronden.  Geef vervolgens een foutpagina op in plaats van alleen een 503 HTTP-antwoordcode zonder pagina.  Het zal verkeer van het normale stelen `.vhost` bestand omdat het voor dat bestand is geladen `.vhost` bestand delen terwijl u hetzelfde deelt `ServerName` of `ServerAlias`.  Resulterend in pagina&#39;s die voor een bepaald domein worden bestemd om naar de ongezonde gastheer in plaats van het gebrek te gaan het normale verkeersstromen door is.
+Deze bestanden krijgen de naam `000_` als voorvoegsel.  Het is opzettelijk gevormd om de zelfde domeinnaam te gebruiken zoals de levende plaats.  Het is de bedoeling dat dit bestand wordt ingeschakeld wanneer de health check vaststelt dat er een probleem is met een van de AEM achtergronden.  Geef vervolgens een foutpagina op in plaats van alleen een 503 HTTP-antwoordcode zonder pagina.  Verkeer wordt uit het normale `.vhost` -bestand gestolen, omdat het voor dat `.vhost` -bestand is geladen en tegelijkertijd hetzelfde bestand `ServerName` of `ServerAlias` deelt.  Resulterend in pagina&#39;s die voor een bepaald domein worden bestemd om naar de ongezonde gastheer in plaats van het gebrek te gaan het normale verkeersstromen door is.
 
 Wanneer de scripts voor de health check worden uitgevoerd, melden ze hun huidige gezondheidsstatus af.  Eenmaal per minuut wordt er een concronjob uitgevoerd op de server die zoekt naar ongezonde items in het logbestand.  Als het ontdekt dat de auteur AEM instantie niet gezond is zal het dan de symlink toelaten:
 
@@ -120,7 +120,7 @@ Snijden bij het ophalen van de fout en reageren:
 I, [2022-11-23T20:34:19.213179 #2275]  INFO -- : ADDING VHOST symlink /etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost => /etc/httpd/conf.d/enabled_vhosts/000_unhealthy_author.vhost
 ```
 
-U kunt bepalen of de auteur of de gepubliceerde plaatsen deze foutenpagina kunnen hebben door het plaatsen van de herladingswijze te vormen `/var/www/cgi-bin/health_check.conf`
+U kunt bepalen of de auteur of de gepubliceerde plaatsen deze foutenpagina kunnen hebben door het herladen wijzeplaatsen te vormen in `/var/www/cgi-bin/health_check.conf`
 
 ```
 # grep RELOAD_MODE /var/www/cgi-bin/health_check.conf
@@ -138,7 +138,7 @@ Geldige opties:
 - none
    - Deze optie slaat dit onderdeel van de health check over
 
-Wanneer u naar de `VirtualHost` het plaatsen voor deze zult u zult zien zij het zelfde document zoals een foutenpagina voor elk verzoek laden dat komt wanneer het wordt toegelaten:
+Wanneer u de instelling `VirtualHost` voor deze instellingen bekijkt, ziet u dat ze hetzelfde document laden als een foutpagina voor elke aanvraag die wordt uitgevoerd wanneer deze is ingeschakeld:
 
 ```
 <VirtualHost *:80>
@@ -177,7 +177,7 @@ X-Vhost: unhealthy-author
 
 In plaats van een lege pagina krijgen ze deze pagina.
 
-![De afbeelding toont de standaardonderhoudspagina](assets/load-balancer-healthcheck/unhealthy-page.png "ongezonde pagina")
+![ Beeld toont het standaardonderhoud pagina ](assets/load-balancer-healthcheck/unhealthy-page.png " ongezond-pagina ")
 
 ### CGI-Bin-scripts
 
@@ -185,32 +185,32 @@ Er zijn vijf verschillende scripts die door uw CSE in de taakverdelingsinstellin
 
 #### /bin/checkauteur
 
-Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `author` AEM-instantie is ongezond
+Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `author` AEM-instantie ongezond is
 
-> `Note:` Houd er rekening mee dat als de publicatie AEM-instantie ongezond was, de verzender in service zou blijven zodat het verkeer naar de AEM-instantie van de auteur kan gaan.
+> `Note:` Houd er rekening mee dat als de publicatie-AEM ongezond was, de verzender in service zou blijven zodat het verkeer naar de AEM-instantie van de auteur kan gaan
 
 #### /bin/checkpublish (standaardwaarde)
 
-Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `publish` AEM-instantie is ongezond
+Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `publish` AEM-instantie ongezond is
 
-> `Note:` Houd in mening dat als de auteur AEM instantie ongezond was de verzender in dienst zou blijven om verkeer toe te staan om aan de publicatie AEM instantie te stromen
+> `Note:` Houd er rekening mee dat als de auteur AEM instantie ongezond was, de verzender in service zou blijven zodat het verkeer naar de AEM-instantie kan gaan publiceren
 
 #### /bin/checkeeither
 
-Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `author` of de `publisher` AEM-instantie is ongezond
+Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `author` - of `publisher` -AEM-instantie ongezond is
 
 > `Note:` Houd er rekening mee dat als de publicatie AEM instantie of de auteur AEM instantie ongezond was, de verzender de service zou verlaten.  Betekenis dat als een van hen gezond zou zijn, het ook geen verkeer zou krijgen
 
 #### /bin/checkboth
 
-Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de `author` en de `publisher` AEM-instantie is ongezond
+Dit script wanneer het wordt gebruikt, controleert en registreert alle instanties die worden voorafgegaan, maar retourneert alleen een fout als de instantie `author` en `publisher` AEM ongezond zijn
 
-> `Note:` Houd er rekening mee dat als de AEM instantie of de auteur AEM instantie ongezond was, de verzender de service niet zou hebben verlaten.  Betekenis dat als één van hen ongezond was, het verkeer zou blijven ontvangen en fouten zou geven aan mensen die om middelen vragen.
+> `Note:` Houd er rekening mee dat als de publicatie AEM instantie of de auteur AEM instantie ongezond was, de verzender de service niet zou hebben beëindigd.  Betekenis dat als één van hen ongezond was, het verkeer zou blijven ontvangen en fouten zou geven aan mensen die om middelen vragen.
 
 #### /bin/normal
 
 Dit manuscript wanneer gebruikt zal om het even welke instanties controleren en registreren het vooraf gaat maar zal enkel gezond terugkeren ongeacht of AEM een fout terugkeert of niet.
 
-> `Note:` Dit script wordt gebruikt wanneer de health check niet naar wens functioneert en een overschrijving toestaat om AEM instanties in het taakverdelingsmechanisme te houden.
+> `Note:` Dit script wordt gebruikt wanneer de health check niet naar wens functioneert en wanneer een overschrijving AEM instanties in het taakverdelingsmechanisme kan behouden.
 
 [Volgende -> GIT-symmetrieën](./git-symlinks.md)

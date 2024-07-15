@@ -27,7 +27,7 @@ https://forms.enablementadobe.com/content/forms/af/testingxml.html?FirstName=Joh
 
 Hiervoor is een nieuwe aangepaste formuliersjabloon gemaakt en gekoppeld aan een pagina-component. In deze paginacomponent hebben wij jsp om greep van de vraagparameters te krijgen en een xml structuur tot stand te brengen die kan worden gebruikt om de adaptieve vorm te bevolken.
 
-De details over het maken van een nieuwe adaptieve formuliersjabloon en een nieuwe pagina-component zijn [In deze video wordt uitgelegd.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en)
+De details bij het creëren van een nieuw Adaptief malplaatje van de Vorm en paginacomponent worden [ verklaard in deze video.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en)
 
 Hier volgt de code die is gebruikt op de JSP-pagina
 
@@ -56,5 +56,5 @@ slingRequest.setAttribute("data", dataXml);
 * [Download en installeer de adaptieve formuliersjabloon met Package Manager](assets/populate-with-xml.zip)
 * [Download en installeer het voorbeeldadaptieve formulier](assets/populate-af-with-query-paramters-form.zip)
 
-* [Een voorbeeld van het adaptieve formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/testingxml/jcr:content?wcmmode=disabled&amp;FirstName=John&amp;LastName=Doe)
+* [ Voorproef de adaptieve vorm ](http://localhost:4502/content/dam/formsanddocuments/testingxml/jcr:content?wcmmode=disabled&amp;FirstName=John&amp;LastName=Doe)
 Het adaptieve formulier moet worden gevuld met de waarde Jan en Smit

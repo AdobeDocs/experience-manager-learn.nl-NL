@@ -19,41 +19,41 @@ ht-degree: 0%
 
 # Foutopsporing AEM SDK met behulp van logbestanden
 
-Toegang tot de logboeken van de AEM SDK, of de lokale QuickStart Jar of Dispatcher Tools van AEM SDK kunnen zeer belangrijke inzichten in het zuiveren AEM toepassingen verstrekken.
+Toegang tot de logboeken van de AEM SDK, of de lokale QuickStart Jar of de Hulpmiddelen van Dispatcher van AEM SDK kunnen zeer belangrijke inzichten in het zuiveren AEM toepassingen verstrekken.
 
 ## Logbestanden AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
 
-De logboeken handelen als frontline voor het zuiveren AEM toepassingen, maar zijn afhankelijk van het adequate registreren in de opgestelde AEM toepassing. De Adobe adviseert het houden van lokale ontwikkeling en AEM as a Cloud Service Dev registrerende configuraties als gelijkaardig mogelijk, aangezien het logboekzicht op de lokale QuickStart van AEM SDK en AEM de milieu&#39;s van de Ontwikkelaar van de SDK normaliseert, die configuratietweeling en herplaatsing verminderen.
+De logboeken handelen als frontline voor het zuiveren AEM toepassingen, maar zijn afhankelijk van het adequate registreren in de opgestelde AEM toepassing. De Adobe raadt aan om de lokale ontwikkelings- en AEM as a Cloud Service Dev-logboekconfiguraties zo vergelijkbaar mogelijk te houden, aangezien deze de zichtbaarheid van logbestanden in de lokale QuickStart- en AEM as a Cloud Service Dev-omgevingen van de AEM SDK normaliseert, waardoor de configuratie-tweeling en de herimplementatie worden beperkt.
 
-De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) vormt registreren op het niveau van DEBUG voor de pakketten van Java van uw AEM toepassing voor lokale ontwikkeling via de Sling Logger OSGi configuratie die bij wordt gevonden
+Het [ AEM Archieftype van het Project ](https://github.com/adobe/aem-project-archetype) vormt registreren op het niveau van DEBUG voor de pakketten van Java van uw AEM toepassing voor lokale ontwikkeling via de Sling Logger OSGi configuratie die bij wordt gevonden
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
-die zich tot de `error.log`.
+die zich aanmeldt bij de `error.log` .
 
-Als de standaardlogboekregistratie onvoldoende is voor lokale ontwikkeling, kan ad-hoclogboekregistratie worden geconfigureerd via de lokale QuickStart-webconsole van AEM SDK voor logondersteuning op ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), echter, wordt het niet geadviseerd ad hoc veranderingen aan Git worden voortgeduurd tenzij deze zelfde logboekconfiguraties ook op AEM as a Cloud Service Dev milieu&#39;s nodig zijn. Wijzigingen via de Log Support-console blijven rechtstreeks doorgevoerd in de lokale opslagruimte van de AEM SDK.
+Als het standaard registreren voor lokale ontwikkeling ontoereikend is, kan het ad hoc registreren via de lokale het Webconsole van de Steun van het Logboek van SDK van AEM lokale QuickStart, bij ([/system/console/slinglog ](http://localhost:4502/system/console/slinglog)) worden gevormd, nochtans wordt het niet geadviseerd ad hoc veranderingen aan Git voort te zetten tenzij deze zelfde logboekconfiguraties ook op de milieu&#39;s van AEM as a Cloud Service Dev nodig zijn. Wijzigingen via de Log Support-console blijven rechtstreeks doorgevoerd in de lokale opslagruimte van de AEM SDK.
 
-Java-loginstructies kunnen worden weergegeven in het dialoogvenster `error.log` bestand:
+Java-loginstructies kunnen worden weergegeven in het bestand `error.log` :
 
 ```
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 ```
 
-Het is vaak handig om de `error.log` dat zijn output aan de terminal stroomt.
+Vaak is het handig om de `error.log` die de uitvoer naar de terminal stroomt, te &#39;staart&#39;.
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ Windows vereist [toepassingen van derden voor staart](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) of het gebruik van [Ophalen-Inhoud van PowerShell, opdracht](https://stackoverflow.com/a/46444596/133936).
++ De vensters vereist [ toepassingen van de 3de partijstaart ](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) of het gebruik van [ Powershell bevel krijgen-Inhoud ](https://stackoverflow.com/a/46444596/133936).
 
-## Logboeken voor verzending
+## Dispatcher-logboeken
 
-Logbestanden van de verzender worden uitgevoerd naar stdout wanneer `bin/docker_run` wordt aangehaald, nochtans kunnen de logboeken rechtstreeks tot in Docker toegang hebben bevatten.
+Dispatcher-logboeken worden uitgevoerd om te worden stopgezet wanneer `bin/docker_run` wordt aangeroepen, maar logbestanden kunnen rechtstreeks worden geopend in de Docker-inhoud.
 
 ### De toegang tot van logboeken in de container van de Dokker{#dispatcher-tools-access-logs}
 
-De logboekbestanden van de verzender kunnen rechtstreeks toegang krijgen tot de Docker-container op `/etc/httpd/logs`.
+Dispatcher-logbestanden kunnen rechtstreeks worden geopend in de Docker-container op `/etc/httpd/logs` .
 
 ```shell
 $ docker ps
@@ -73,12 +73,12 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-_De `<CONTAINER ID>` in `docker exec -it <CONTAINER ID> /bin/sh` moet worden vervangen door de doel Docker CONTAINER-id die wordt vermeld in het dialoogvenster `docker ps` gebruiken._
+_`<CONTAINER ID>` in `docker exec -it <CONTAINER ID> /bin/sh` moet met doelDocker worden vervangen CONTAINER identiteitskaart die van het `docker ps` bevel wordt vermeld._
 
 
 ### De Docker-logbestanden worden naar het lokale bestandssysteem gekopieerd{#dispatcher-tools-copy-logs}
 
-De logboekbestanden van de Dispatcher kunnen uit de Docker-container worden gekopieerd op `/etc/httpd/logs` naar het lokale bestandssysteem voor inspectie met uw favoriete programma voor loganalyse. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan de logboeken verstrekt.
+Dispatcher-logbestanden kunnen vanuit de Docker-container in `/etc/httpd/logs` naar het lokale bestandssysteem worden gekopieerd voor inspectie met uw favoriete programma voor logbestandsanalyse. Merk op dat dit een punt-in-tijd exemplaar is, en geen updates in real time aan de logboeken verstrekt.
 
 ```shell
 $ docker ps
@@ -93,4 +93,4 @@ $ ls
     dispatcher.log          healthcheck_access_log  httpd_access.log        httpd_error.log
 ```
 
-_De `<CONTAINER_ID>` in `docker cp <CONTAINER_ID>:/var/log/apache2 ./` moet worden vervangen door de doel Docker CONTAINER-id die wordt vermeld in het dialoogvenster `docker ps` gebruiken._
+_`<CONTAINER_ID>` in `docker cp <CONTAINER_ID>:/var/log/apache2 ./` moet met doelDocker worden vervangen CONTAINER identiteitskaart die van het `docker ps` bevel wordt vermeld._

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Hoe te om heapdumpen van JVM op een vensterserver te vangen
 
-*Deze video doorloopt de stappen om heapdumps van een JVM op een vensterserver vast te leggen.*
+*Deze video loopt door de stappen om heap dumps van een JVM op een vensterserver te vangen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335490?quality=12&learn=on)

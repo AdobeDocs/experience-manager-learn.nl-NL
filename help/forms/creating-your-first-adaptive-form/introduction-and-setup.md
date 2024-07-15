@@ -30,11 +30,11 @@ U hebt het volgende nodig:
 
 * Een werkende instantie van AEM waarop het pakket Form Add-on is geïnstalleerd
 
-* **Aangenomen wordt dat u AEM Forms versie 6.4 of hoger uitvoert op localhost:4502.**
+* **het wordt verondersteld dat u versie 6.4 of hoger van AEM Forms op localhost in werking stelt:4502.**
 
-* [Download het clientlogo](assets/client-libs-and-logo.zip) en [aan de slag-fragment](assets/getting-started-fragment.zip) op uw vaste schijf.
+* [ Download cliënt-libs-en-embleem ](assets/client-libs-and-logo.zip) en [ begonnen-fragment ](assets/getting-started-fragment.zip) aan uw harde aandrijving.
 
-* ZIP-bestanden importeren in AEM [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* Invoer de zip dossiers in AEM gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Volgende stappen
 

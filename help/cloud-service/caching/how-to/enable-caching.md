@@ -1,6 +1,6 @@
 ---
 title: CDN-caching inschakelen
-description: Leer hoe te om het in cache plaatsen van de reacties van HTTP in AEM as a Cloud Service CDN toe te laten.
+description: Leer hoe u het in cache plaatsen van HTTP-reacties in AEM as a Cloud Service CDN inschakelt.
 version: Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
@@ -21,32 +21,32 @@ ht-degree: 0%
 
 # CDN-caching inschakelen
 
-Leer hoe te om het in cache plaatsen van de reacties van HTTP in AEM as a Cloud Service CDN toe te laten. Het in cache plaatsen van reacties wordt beheerd door `Cache-Control`, `Surrogate-Control`, of `Expires` HTTP response cache headers.
+Leer hoe u het in cache plaatsen van HTTP-reacties in AEM as a Cloud Service CDN inschakelt. Het in cache plaatsen van reacties wordt geregeld door `Cache-Control` -, `Surrogate-Control` - of `Expires` HTTP-antwoordcache-headers.
 
-Deze cachekoppen worden doorgaans ingesteld in AEM Dispatcher-hostconfiguraties met `mod_headers`, maar kan ook worden ingesteld in aangepaste Java™-code die wordt uitgevoerd in AEM Publish zelf.
+Deze cacheheaders worden doorgaans ingesteld in AEM Dispatcher-hostconfiguraties met `mod_headers` , maar kunnen ook worden ingesteld in aangepaste Java™-code die wordt uitgevoerd in AEM Publish zelf.
 
 ## Standaardgedrag voor caching
 
-Wanneer aangepaste configuraties NIET aanwezig zijn, worden de standaardwaarden gebruikt. In de volgende schermafbeelding ziet u het standaardgedrag voor het in cache plaatsen van AEM Publiceren en Auteur wanneer een [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) gebaseerd `mynewsite` AEM project wordt uitgevoerd.
+Wanneer aangepaste configuraties NIET aanwezig zijn, worden de standaardwaarden gebruikt. In volgende schermafbeelding kunt u het standaardgedrag voor het in cache plaatsen van AEM Publish en Auteur zien wanneer een [ AEM Project Archetype ](https://github.com/adobe/aem-project-archetype) gebaseerd `mynewsite` AEM project wordt geïmplementeerd.
 
-![Standaardgedrag voor caching](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
+![ Standaard caching gedrag ](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 
-Controleer de [AEM publiceren - standaardlevensduur van cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) en [AEM auteur - Standaardlevensduur cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life) voor meer informatie .
+Herzie [ AEM Publish - het leven van het standaardgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) en [ AEM Auteur - het leven van het standaardgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life) voor meer informatie.
 
-Samengevat worden de meeste inhoudstypen (HTML, JSON, JS, CSS en Elementen) in AEM as a Cloud Service cache opgeslagen in AEM Publiceren en enkele inhoudstypen (JS, CSS) in AEM Auteur.
+Samengevat plaatst AEM as a Cloud Service de meeste inhoudstypen (HTML, JSON, JS, CSS en Assets) in AEM Publish en een aantal inhoudstypen (JS, CSS) in AEM Auteur.
 
 ## Opslaan in cache inschakelen
 
 Als u het standaardgedrag voor het in cache plaatsen wilt wijzigen, kunt u de cachekoppen op twee manieren bijwerken.
 
-1. **Hostconfiguratie van Dispatcher:** Alleen beschikbaar voor AEM publiceren.
-1. **Aangepaste Java™-code:** Beschikbaar voor zowel AEM Publiceren als Auteur.
+1. **de gastheerconfiguratie van Dispatcher:** slechts beschikbaar voor AEM Publish.
+1. **de code van Java™ van de Douane:** Beschikbaar voor zowel AEM Publish als Auteur.
 
 Laten we elk van deze opties bekijken.
 
 ### Dispatcher-hostconfiguratie
 
-Deze optie is de aanbevolen methode voor het inschakelen van caching, maar is alleen beschikbaar voor AEM Publiceren. Als u de cachekoppen wilt bijwerken, gebruikt u de optie `mod_headers` en `<LocationMatch>` in het hostbestand van Apache HTTP Server. De algemene syntaxis ziet er als volgt uit:
+Deze optie is de aanbevolen methode voor het inschakelen van caching, maar is alleen beschikbaar voor AEM Publish. Als u de cachekoppen wilt bijwerken, gebruikt u de instructies `mod_headers` module en `<LocationMatch>` in het hostbestand van Apache HTTP Server. De algemene syntaxis ziet er als volgt uit:
 
 ```
 <LocationMatch "$URL$ || $URL_REGEX$">
@@ -66,7 +66,7 @@ Deze optie is de aanbevolen methode voor het inschakelen van caching, maar is al
 </LocationMatch>
 ```
 
-Hieronder wordt het doel van elk **header** en van toepassing **attributes** voor de koptekst.
+Het volgende vat het doel van elke **kopbal** en toepasselijke **attributen** voor de kopbal samen.
 
 |                     | Webbrowser | CDN | Beschrijving |
 |---------------------|:-----------:|:---------:|:-----------:|
@@ -75,18 +75,18 @@ Hieronder wordt het doel van elk **header** en van toepassing **attributes** voo
 | Verloopt | ✔ | ✔ | Deze header bepaalt de webbrowser en de CDN-cache. |
 
 
-- **maximale leeftijd**: This attribute controls the TTL or &quot;time to live&quot; of the response content in seconds.
-- **stale-while-revalidate**: This attribute controls the _staat van stijl_ behandeling van de reactieinhoud bij laag CDN wanneer het ontvangen verzoek binnen de gespecificeerde periode in seconden is. De _staat van stijl_ is de tijdsperiode nadat de TTL is verlopen en voordat de reactie opnieuw wordt gevalideerd.
-- **stale-if-error**: This attribute controls the _staat van stijl_ behandeling van de reactieinhoud bij laag CDN wanneer de oorsprongsserver niet beschikbaar is en ontvangen verzoek binnen de gespecificeerde periode in seconden is.
+- **max-age**: Dit attribuut controleert TTL of &quot;tijd om&quot;van de reactieinhoud in seconden te leven.
+- **schaal-terwijl-revalidate**: Dit attribuut controleert de _stapelstaat_ behandeling van de antwoordinhoud bij CDN laag wanneer ontvangen verzoek binnen de gespecificeerde periode in seconden is. De _stapelstaat_ is de tijdperiode nadat TTL is verlopen en alvorens de reactie opnieuw wordt bevestigd.
+- **schaal-als-fout**: Dit attribuut controleert de _stapelstaat_ behandeling van de antwoordinhoud bij CDN laag wanneer de oorsprongsserver niet beschikbaar is en ontvangen verzoek binnen de gespecificeerde periode in seconden is.
 
-Controleer de [elastheid en herbevestiging](https://developer.fastly.com/learning/concepts/edge-state/cache/stale/) voor meer informatie .
+Herzie de [ staleness en herbevestiging ](https://developer.fastly.com/learning/concepts/edge-state/cache/stale/) details voor meer informatie.
 
 #### Voorbeeld
 
-De webbrowser en de CDN-cache langer in het **HTML-inhoudstype** tot _10 minuten_ zonder behandeling van de staat van de schaal, volg deze stappen:
+Om Webbrowser en CDN geheim voorgeheugenleven van het **HTML inhoudstype** aan _10 minuten_ zonder de behandeling van de stapelstaat te verhogen, volg deze stappen:
 
-1. Zoek in uw AEM-project het gewenste vhsot-bestand vanuit `dispatcher/src/conf.d/available_vhosts` directory.
-1. De vhost bijwerken (bijvoorbeeld `wknd.vhost`), als volgt:
+1. Zoek in uw AEM-project het gewenste vhst-bestand in de map `dispatcher/src/conf.d/available_vhosts` .
+1. Werk het vhost-bestand (bijvoorbeeld `wknd.vhost` ) als volgt bij:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -98,18 +98,18 @@ De webbrowser en de CDN-cache langer in het **HTML-inhoudstype** tot _10 minuten
    </LocationMatch>
    ```
 
-   De hostbestanden in `dispatcher/src/conf.d/enabled_vhosts` directory is **symlinks** naar de bestanden in `dispatcher/src/conf.d/available_vhosts` , zorg er dus voor dat u symlinks maakt als deze niet aanwezig zijn.
-1. Implementeer de hostwijzigingen in de gewenste AEM as a Cloud Service omgeving met de [Cloud Manager - Web Tier Config Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) of [RDE-opdrachten](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
+   De gastheerdossiers in `dispatcher/src/conf.d/enabled_vhosts` folder zijn **symlinks** aan de dossiers in `dispatcher/src/conf.d/available_vhosts` folder, zodat zorg ervoor om tot symlinks te leiden als niet aanwezig.
+1. Stel de vhost veranderingen in het gewenste milieu van AEM as a Cloud Service op gebruikend [ Cloud Manager - de Pijpleiding van Config van de Rij van het Web ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) of [ RDE bevelen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
-Als u echter verschillende waarden wilt hebben voor de levensduur van webbrowsers en CDN-cache, kunt u de opdracht `Surrogate-Control` in het bovenstaande voorbeeld. Evenzo kunt u de cache op een bepaalde datum en tijd laten verlopen met de `Expires` header. Gebruik ook de opdracht `stale-while-revalidate` en `stale-if-error` kenmerken, kunt u de manier bepalen waarop de responsinhoud met de status &#39;stale&#39; wordt behandeld. Het AEM WKND-project heeft een [behandeling van de status van referentiestand](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155) CDN-cacheconfiguratie.
+Als u echter verschillende waarden wilt hebben voor de webbrowser en de levensduur van de CDN-cache, kunt u de header `Surrogate-Control` in het bovenstaande voorbeeld gebruiken. Op dezelfde manier kunt u de header `Expires` gebruiken om de cache op een bepaalde datum en tijd te laten verlopen. Met de kenmerken `stale-while-revalidate` en `stale-if-error` kunt u ook de manier bepalen waarop de status van de reactie-inhoud in de schaal wordt verwerkt. Het AEM WKND-project heeft een [ CDN-cacheconfiguratie met de status van de verwijzingsstijl ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155) .
 
-Op dezelfde manier kunt u de cachekoppen ook bijwerken voor andere inhoudstypen (JSON, JS, CSS en Middelen).
+Op dezelfde manier kunt u de cachekoppen ook bijwerken voor andere inhoudstypen (JSON, JS, CSS en Assets).
 
 ### Aangepaste Java™-code
 
-Deze optie is beschikbaar voor zowel AEM Publiceren als Auteur. Het wordt echter afgeraden caching in AEM Auteur in te schakelen en het standaardgedrag voor caching te behouden.
+Deze optie is zowel beschikbaar voor AEM Publish als voor Auteur. Het wordt echter afgeraden caching in AEM Auteur in te schakelen en het standaardgedrag voor caching te behouden.
 
-Als u de cachekoppen wilt bijwerken, gebruikt u de optie `HttpServletResponse` -object in aangepaste Java™-code (Sling servlet, Sling servlet-filter). De algemene syntaxis ziet er als volgt uit:
+Gebruik het `HttpServletResponse` -object in de aangepaste Java™-code (Sling servlet, Sling servlet filter) om de cacheheaders bij te werken. De algemene syntaxis ziet er als volgt uit:
 
 ```java
 // Instructs the web browser and CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.

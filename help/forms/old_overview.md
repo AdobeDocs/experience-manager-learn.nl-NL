@@ -18,14 +18,14 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 ## Wat is er nieuw?
 
-* **[Foutberichten verwerken in de stap Formuliergegevensmodel aanroepen](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-  *Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype*
+* **[Behandelend de Berichten van de Fout in de Aangehaald Stap van de Dienst van het Gegevensmodel van de Vorm](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
+  *veranderlijke A in een werkschemamodel is een manier om een waarde op te slaan die op zijn gegevenstype* wordt gebaseerd
 
-* **[Diagrammen uit meerdere reeksen in interactieve communicatiedocumenten (video)](./interactive-communications/multiseriescharts.md)**
-  *Plot meer dan één reeks in de zelfde grafiek. De veelvoudige reekskaarten worden typisch gebruikt in verband met Lijn, Bar, het grafiektype van de Kolom.*
+* **[Meerdere Reeksen grafieken in Interactieve Communicatie Documenten (Video)](./interactive-communications/multiseriescharts.md)**
+  *Plot meer dan één reeks in de zelfde grafiek. De veelvoudige reeksengrafieken worden typisch gebruikt in verband met Lijn, Bar, het diagramtype van de Kolom.*
 
-* **[Herbruikbare workflowmodellen maken](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-  *Workflowmodellen maken die niet aan een specifiek formulier zijn gekoppeld*
+* **[Creërend herbruikbare werkschemamodellen](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
+  *creeer werkschemamodellen niet verbonden aan een specifieke vorm*
 
 ## Personeelspikkels
 
@@ -37,11 +37,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-    <strong>Uw eerste adaptieve formulier maken</strong>
+    <strong> creeer uw eerste Aangepaste Vorm </strong>
     </a>
     </div>
     <p>
-    <em>Adaptieve formulieren zijn formulieren van de nieuwe generatie die dynamisch zijn en reageren. U kunt adaptieve formulieren gebruiken om persoonlijke ervaringen te bieden</em>
+    <em> de Aangepaste vormen zijn nieuwe-generatieformulieren die dynamisch en ontvankelijk zijn. U kunt de Aangepaste vormen gebruiken om gepersonaliseerde ervaringen te leveren </em>
     <p>
   </td>
    <td>
@@ -50,11 +50,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
-    <strong>Uw eerste afdrukkanaaldocument maken</strong>
+    <strong> creeer uw eerste Document van het Kanaal van de Druk </strong>
     </a>
     </div>
     <p>
-    <em>De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits. </em>
+    <em> Interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits. </em>
     <p>
   </td>
   <td>
@@ -63,11 +63,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>Formuliergegevensmodel gebruiken in AEM workflow</strong>
+    <strong> Gebruikend het Model van de Gegevens van de Vorm in AEM Werkschema </strong>
     </a>
     </div>
     <p>
-    <em>De service van het formuliergegevensmodel aanroepen als een stap in AEM workflow</em>
+    <em> roept de dienst van de Gegevens van de Vorm als stap in AEM Werkschema </em> aan
     <p>
   </td>
 </tr>
@@ -88,11 +88,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
-    <strong>Google Captcha in adaptieve vorm</strong>
+    <strong> Google Captcha in AanpassingsVorm </strong>
     </a>
     </div>
     <p>
-    <em> Duidelijk maken tussen menselijke en geautomatiseerde toegang tot formulieren</em>
+    <em> Onderscheid maken tussen menselijke en geautomatiseerde toegang tot formulieren </em>
     <p>
   </td>
   <td>
@@ -101,11 +101,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
-    <strong>Formuliergegevens controleren</strong>
+    <strong> de vormgegevens van het Overzicht </strong>
     </a>
     </div>
     <p>
-    <em>Bekijk een voorbeeld van de formuliergegevens voordat u het formulier verzendt.</em>
+    <em> voorproef de vormgegevens alvorens de vorm voor te leggen.</em>
     </p>
   </td>
   <td>
@@ -114,11 +114,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
      <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
-        <strong>Inline-afbeelding weergeven</strong>
+        <strong> Inline beeld van de Vertoning </strong>
       </a>
     </div>
     <p>
-    <em>Geef de afbeelding weer die aan het formulier is toegevoegd.</em>
+    <em> Vertoning het beeld dat aan de vorm wordt toegevoegd.</em>
     <p>
   </td>
 </tr>
@@ -134,11 +134,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
-    <strong>Voorbeeldformulier voor huurovereenkomst</strong>
+    <strong> vorm van de de huurovereenkomst van de Steekproef </strong>
     </a>
     </div>
     <p>
-    <em>Huurovereenkomst tussen huurder en verhuurder ingevuld en ondertekend door AEM Forms en Acrobat Sign</em>
+    <em> Huur overeenkomst tussen huurder en huisbaas vulde en ondertekende gebruikend AEM Forms en Acrobat Sign </em>
     <p>
   </td>
   <td>
@@ -147,11 +147,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
-    <strong>Geen geheimhoudingsovereenkomst genereren</strong>
+    <strong> produceer de Overeenkomst van de Non-Disclosure </strong>
     </a>
     </div>
     <p>
-    <em>NDA dynamisch maken en verzenden voor ondertekening met Acrobat Sign</em>
+    <em> creeer dynamisch NDA en verzend voor het ondertekenen gebruikend Acrobat Sign </em>
     </p>
   </td>
   <td>
@@ -160,11 +160,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
      <div>
       <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
-        <strong>Pakket met documenten ondertekenen</strong>
+        <strong> het pakket van het Ondertekenen van documenten </strong>
       </a>
     </div>
     <p>
-    <em>Meerdere documenten naadloos ondertekenen met Forms en Acrobat Sign</em>
+    <em> naadloos ondertekent veelvoudige documenten gebruikend Forms en Acrobat Sign </em>
     <p>
   </td>
 </tr>
@@ -175,11 +175,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 ## Aanvullende bronnen
 
-* [Experience League - AEM verkennen](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [AEM Sites Authoring Documentation](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
-* [AEM Sites Developing Documentation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [AEM Sites-beheerdocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
-* [AEM Sites-documentatie implementeren](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
+* [ Experience League - onderzoek AEM ](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [ de Authoring Documentatie van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [ AEM Sites het Ontwikkelen Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [ AEM Sites die Documentatie beheren ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [ AEM Sites die Documentatie opstelt ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [Tutorials voor AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorials voor AEM Assets](/help/assets/overview.md)
 * [Tutorials voor AEM Forms](/help/forms/overview.md)

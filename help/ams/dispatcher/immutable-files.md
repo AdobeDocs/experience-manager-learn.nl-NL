@@ -32,7 +32,7 @@ Wanneer AMS een systeem voorziet, ontwikkelen zij een basislijnconfiguratie die 
 De lay-out verhindert u niet hun gedrag te veranderen en om het even welke veranderingen te schrappen u wenst.  In plaats van deze bestanden te wijzigen, bedekt u uw eigen bestand dat het origineel vervangt.
 
 Op deze manier kunt u er zeker van zijn dat wanneer AMS de Dispatcher patches met de meest recente correcties en beveiligingsverbeteringen patcheert, deze uw bestanden niet zullen wijzigen.  Dan kunt u blijven profiteren van de verbeteringen en slechts de veranderingen goedkeuren u zou willen.
-![Toont een bowlingbaan met een bal die langs de rijstrook rolt.  De bal heeft een pijl met het woord dat je toont.  De tegenstempels van de tussenruimte worden opgevoed en er staan de woorden onveranderlijke bestanden boven.](assets/immutable-files/bowling-file-immutability.png "bowling-file-imutability")
+![ toont een bowlingbaan met een bal die onderaan de weg rolt.  De bal heeft een pijl met het woord dat je toont.  De tegenstempels van de tussenruimte worden opgevoed en er staan de woorden onveranderlijke bestanden boven.](assets/immutable-files/bowling-file-immutability.png " bowling-dossier-onveranderbaarheid ")
 Zoals uit bovenstaande afbeelding blijkt, blokkeren onveranderlijke bestanden je niet om de game te spelen.  Ze houden je er gewoon van om je prestatiekracht te schaden en je in de rij te houden.  Met deze methode kunnen we de weinige sleutelfuncties gebruiken:
 
 - Aanpassingen worden verwerkt in hun eigen veilige ruimten
@@ -41,7 +41,7 @@ Zoals uit bovenstaande afbeelding blijkt, blokkeren onveranderlijke bestanden je
 - De testbasis installeert versus aangepaste configuraties kunnen gelijktijdig worden gedaan helpen als de kwesties door aanpassingen of iets anders worden veroorzaakt Welke Dossiers ontdekken?
 
 
-Hier volgt een typische lijst van dossiers die met een Verzender worden opgesteld:
+Hier volgt een lijst met bestanden die worden geïmplementeerd met een Dispatcher:
 
 ```
 /etc/httpd/
@@ -126,7 +126,7 @@ Hier volgt een typische lijst van dossiers die met een Verzender worden opgestel
     └── mod_dispatcher.so
 ```
 
-Om te bepalen welke dossiers onveranderlijk zijn kunt u het volgende bevel op een Verzender in werking stellen om te zien:
+Als u wilt bepalen welke bestanden onveranderlijk zijn, kunt u de volgende opdracht op een Dispatcher uitvoeren om te zien:
 
 ```
 $ lsattr -Rl /etc/httpd 2>/dev/null | grep Immutable
@@ -186,7 +186,7 @@ Hier volgt een voorbeeldreactie waarvan bestanden onveranderlijk zijn:
 
 ### Variabelen
 
-Met variabelen kunt u functionele wijzigingen doorvoeren zonder de configuratiebestanden zelf te wijzigen.  Bepaalde elementen van de configuratie kunnen worden aangepast door de waarden van variabelen aan te passen.  Een voorbeeld dat we uit het bestand kunnen markeren `/etc/httpd/conf.d/dispatcher_vhost.conf` wordt hier getoond:
+Met variabelen kunt u functionele wijzigingen doorvoeren zonder de configuratiebestanden zelf te wijzigen.  Bepaalde elementen van de configuratie kunnen worden aangepast door de waarden van variabelen aan te passen.  Hier wordt een voorbeeld van het bestand `/etc/httpd/conf.d/dispatcher_vhost.conf` weergegeven dat we kunnen markeren:
 
 ```
 Include /etc/httpd/conf.d/variables/ams_default.vars
@@ -199,7 +199,7 @@ IfModule disp_apache2.c
 /IfModule
 ```
 
-Zie hoe de DispatcherLogLevel-instructie een variabele heeft van `DISP_LOG_LEVEL` in plaats van de normale waarde zou je daar zien.  Boven die sectie van code zult u ook een omvat verklaring aan een veranderingendossier zien.  Het variabelenbestand `/etc/httpd/conf.d/variables/ams_default.vars` Daar willen we nu naartoe kijken.  Hier volgt de inhoud van het variabelenbestand:
+Zie hoe de DispatcherLogLevel-instructie een variabele van `DISP_LOG_LEVEL` heeft in plaats van de normale waarde die u daar ziet.  Boven die sectie van code zult u ook een omvat verklaring aan een veranderingendossier zien.  In het variabele bestand `/etc/httpd/conf.d/variables/ams_default.vars` wilt u het volgende zoeken.  Hier volgt de inhoud van het variabelenbestand:
 
 ```
 Define DISP_LOG_LEVEL info
@@ -211,11 +211,11 @@ Define PUBLISH_FORCE_SSL 0
 Define LIVECYCLE_FORCE_SSL 1
 ```
 
-Hierboven ziet u de huidige waarde van `DISP_LOG_LEVEL` variable is `info`.  Wij kunnen dit aanpassen aan spoor of zuiveren, of de aantalwaarde/het niveau van uw keus.  Nu overal die het logboekniveau controleert automatisch zal aanpassen.
+Hierboven ziet u dat de huidige waarde van `DISP_LOG_LEVEL` variable `info` is.  Wij kunnen dit aanpassen aan spoor of zuiveren, of de aantalwaarde/het niveau van uw keus.  Nu overal die het logboekniveau controleert automatisch zal aanpassen.
 
 ### Bedekkingsmethode
 
-Houd rekening met de include-bestanden op hoofdniveau, omdat dit de beginplaats is voor het maken van aanpassingen.  Om met een eenvoudig voorbeeld te beginnen, hebben wij een scenario waarin wij een nieuwe domeinnaam willen toevoegen die wij bij deze Verzender willen richten.  Het domeinvoorbeeld dat we gebruiken is we-retail.adobe.com.  We beginnen met het kopiëren van een bestaand configuratiebestand naar een nieuw bestand waar we onze wijzigingen kunnen toevoegen:
+Houd rekening met de include-bestanden op hoofdniveau, omdat dit de beginplaats is voor het maken van aanpassingen.  Om met een eenvoudig voorbeeld te beginnen, hebben we een scenario waarin we een nieuwe domeinnaam willen toevoegen die we op deze Dispatcher willen aanwijzen.  Het domeinvoorbeeld dat we gebruiken is we-retail.adobe.com.  We beginnen met het kopiëren van een bestaand configuratiebestand naar een nieuw bestand waar we onze wijzigingen kunnen toevoegen:
 
 ```
 $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/available_vhosts/weretail_publish.vhost
@@ -259,13 +259,13 @@ VirtualHost *:80
 /VirtualHost
 ```
 
-Nu hebben we onze `ServerName` en `ServerAlias` om de nieuwe domeinnamen aan te passen, en andere broodkruimelkopballen bij te werken.  Laten we nu het nieuwe bestand inschakelen zodat apache weet dat het ons nieuwe bestand gebruikt:
+Nu hebben we onze `ServerName` en `ServerAlias` bijgewerkt zodat deze overeenkomen met de nieuwe domeinnamen en andere headers van de broodkruimel bijgewerkt.  Laten we nu het nieuwe bestand inschakelen zodat apache weet dat het ons nieuwe bestand gebruikt:
 
 ```
 $ cd /etc/httpd/conf.d/enabled_vhosts/; ln -s ../available_vhosts/weretail_publish.vhost .
 ```
 
-Nu weet apache webserver dat domein iets is waarvoor verkeer moet worden opgewekt, maar we moeten de Dispatcher-module nog steeds informeren dat deze een nieuwe domeinnaam heeft die moet worden gerespecteerd.  We beginnen met het creëren van een nieuwe `*_vhost.any` file `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` en in dat bestand plaatsen we de domeinnaam die we willen respecteren:
+Nu weet apache webserver dat domein iets is waarvoor verkeer moet worden opgewekt, maar we moeten de Dispatcher-module nog steeds informeren dat deze een nieuwe domeinnaam heeft die moet worden gerespecteerd.  We maken eerst een nieuw `*_vhost.any` bestand `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` en plaatsen in dat bestand de domeinnaam die we willen respecteren:
 
 ```
 "we-retail.adobe.com"
@@ -301,7 +301,7 @@ Na:
 }
 ```
 
-Nu hebben wij de landbouwbedrijfsnaam bijgewerkt en omvat het gebruikt in `/virtualhosts` sectie van de landbouwbedrijfconfiguratie.  Wij moeten dit nieuwe landbouwbedrijfdossier toelaten zodat kan het het in de lopende configuratie gebruiken:
+Nu hebben wij de landbouwbedrijfnaam bijgewerkt, en omvat het gebruikt in de `/virtualhosts` sectie van de landbouwbedrijfconfiguratie.  Wij moeten dit nieuwe landbouwbedrijfdossier toelaten zodat kan het het in de lopende configuratie gebruiken:
 
 ```
 $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_weretail_publish_farm.any .
@@ -313,4 +313,4 @@ Nu kunnen we alleen de webserverservice opnieuw laden en ons nieuwe domein gebru
 >
 >Merk op wij slechts de stukken veranderden die wij nodig hadden om de bestaande omvat en de code te gebruiken die met de dossiers van de basislijnconfiguratie kwam.  We hoeven alleen maar af te wijken van het element dat we moeten veranderen.  Maakt het veel makkelijker en maakt het ons mogelijk minder code te handhaven
 
-[Volgende -> Health check van Dispatcher](./health-check.md)
+[Volgende -> Dispatcher Health Check](./health-check.md)

@@ -24,8 +24,9 @@ Relationele databases - MySQL, Microsoft SQL Server, IBM DB2 en Oracle RDBMS
 
 1. Gebruikersprofiel AEM
 1. RESTful-webservices
-1. SOAP-webservices
-1. OData-services In dit artikel wordt de integratie van AEM gebruikersprofielgegevens met Adaptive Forms benadrukt.
+1. SOAP webservices
+1. OData-diensten
+In dit artikel wordt de integratie van AEM gebruikersprofielgegevens met Adaptive Forms benadrukt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432?quality=12&learn=on)
 

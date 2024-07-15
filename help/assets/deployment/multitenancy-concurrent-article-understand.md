@@ -86,7 +86,7 @@ Enkele voorbeelden van code die algemeen in een kernmodule zijn:
 * Workflowstartprogramma&#39;s
 * Algemene ontwerpelementen die op verschillende sites worden gebruikt
 
-*Modulaire projectarchitectuur*
+*Modulaire Architectuur van het Project*
 
 Dit elimineert niet de behoefte voor veelvoudige teams om van en potentieel de zelfde reeks code af te hangen bij te werken. Door een kernproject te creëren, hebben wij de grootte van codebase verminderd die tussen teams-dalend maar niet de behoefte aan gedeelde middelen wordt gedeeld.
 

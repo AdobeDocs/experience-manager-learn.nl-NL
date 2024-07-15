@@ -24,6 +24,6 @@ Een korte inleiding aan Online Correctie van de Herziening die de behoefte aan f
 
 ## Ondersteunende materialen
 
-* [AEM [!DNL JMX MBean - SegmentRevisionGarbageCollection]](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
+* [ AEM  [!DNL JMX MBean - SegmentRevisionGarbageCollection] ](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
 
-* [AEM [!DNL OSGi Configuration] - [!UICONTROL Oak Segment NodeStore Service]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
+* [ AEM  [!DNL OSGi Configuration]  - [!UICONTROL Oak Segment NodeStore Service] ](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)

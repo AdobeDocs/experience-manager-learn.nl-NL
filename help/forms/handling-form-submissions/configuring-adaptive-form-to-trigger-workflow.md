@@ -27,16 +27,16 @@ Het voorbeeldformulier dat in deze workflow wordt gebruikt, is gebaseerd op een 
 
 ### De adaptieve formuliersjablonen ophalen
 
-* Downloaden [Adaptief formuliersjabloon](assets/af-form-template.zip)
-* [De sjabloon importeren met pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* [ het AanpassingsMalplaatje van de Vorm van de download ](assets/af-form-template.zip)
+* [ de Invoer het malplaatje gebruikend pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 * De adaptieve formuliersjabloon uploaden en installeren
 
 ### Het voorbeeldformulier Adaptief ophalen
 
-* Downloaden [Adaptief formulier](assets/peak-application-form.zip)
-* Bladeren naar [Formulier en documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [ Aangepaste Vorm van de download ](assets/peak-application-form.zip)
+* Blader aan [ Vorm en Documenten ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op Maken -> Bestand uploaden
-* Het voorbeeldadaptieve formulier wordt geplaatst in een map met de naam [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* De steekproef adaptieve vorm wordt geplaatst in een omslag genoemd [ Toepassing Forms ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 In de volgende video wordt uitgelegd hoe u een adaptief formulier configureert om een AEM workflow te activeren
 >[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)

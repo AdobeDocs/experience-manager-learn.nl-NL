@@ -19,15 +19,15 @@ ht-degree: 0%
 # Aangepaste processtap
 
 
-Er is een aangepaste processtap geïmplementeerd om workflowvariabelen van het type Array List te vullen met de bijlagen en bijlagenamen. Deze variabele wordt vervolgens gebruikt in de workflowcomponent E-mail verzenden. Als u niet bekend bent met het maken van een OSGi-bundel, [Volg deze instructies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Er is een aangepaste processtap geïmplementeerd om workflowvariabelen van het type Array List te vullen met de bijlagen en bijlagenamen. Deze variabele wordt vervolgens gebruikt in de workflowcomponent E-mail verzenden. Als u niet vertrouwd met het creëren van bundel OSGi bent, gelieve [ deze instructies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en) te volgen
 
 De code in de stap van het douaneproces doet het volgende
 
 * Vraag naar alle adaptieve formulierbijlagen in de payload-map. De mapnaam wordt als procesargument doorgegeven aan de processtap.
 
-* Vullen `listOfDocuments` workflowvariabele
-* Vullen `attachmentNames` workflowvariabele
-* De waarde van de workflowvariabele instellen (`no_of_attachments`)
+* Variabele voor `listOfDocuments` workflow invullen
+* Variabele voor `attachmentNames` workflow invullen
+* De waarde van een workflowvariabele instellen (`no_of_attachments`)
 
 ```java
  package com.aemforms.formattachments.core;
@@ -113,9 +113,9 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 >[!NOTE]
 >
 > Zorg ervoor dat de code werkt met de volgende variabelen in uw workflow
-> *listOfDocuments* - variabele van het type ArrayList of Documents
-> *gehechtheidNames* - variabele van het type ArrayList of String
-> *no_of_attachments* - variabele van het type Double
+> *listOfDocuments* - variabele van type ArrayList van Documenten
+> *gehechtheidNames* - variabele van type ArrayList van Koord
+> *no_of_attachments* - variabele van type Double
 
 ## Volgende stappen
 

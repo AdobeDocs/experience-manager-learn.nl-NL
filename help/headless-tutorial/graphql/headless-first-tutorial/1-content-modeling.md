@@ -37,20 +37,20 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 ## Contextbewuste configuratie
 
-1. Navigeren naar __Gereedschappen > Configuratiebrowser__ om een configuratie voor de headless ervaring tot stand te brengen.
+1. Navigeer aan __Hulpmiddelen > Browser van de Configuratie__ om een configuratie voor de headless ervaring tot stand te brengen.
 
-   ![Map maken](./assets/1/create-configuration.png)
+   ![ creeer omslag ](./assets/1/create-configuration.png)
 
-   Geef een __titel__ en __name__ en controleren __Aangehouden GraphQL-query&#39;s__ en __Modellen van inhoudsfragmenten__.
+   Verstrek a __titel__ en __naam__, en controleer __GraphQL de Verlengde Vragen__ en __Modellen van het Fragment van de Inhoud__.
 
 
 ## Modellen van inhoudsfragmenten
 
-1. Navigeren naar __Gereedschappen > Modellen van inhoudsfragmenten__ en selecteer de map met de naam van de configuratie die in stap 1 is gemaakt.
+1. Navigeer aan __Hulpmiddelen > de Modellen van het Fragment van de Inhoud__ en selecteer de omslag met de naam van de configuratie die in stap 1 wordt gecreeerd.
 
-   ![Modelmap](./assets/1/model-folder.png)
+   ![ Modelomslag ](./assets/1/model-folder.png)
 
-1. Binnen de map selecteert u __Maken__ en geef het model een naam __Teaser__. Voeg de volgende datatypen aan toe __Teaser__ model.
+1. Binnen de omslag, creeert de uitgezochte ____ en noemt het model __Taser__. Voeg de volgende datatypes aan het __1} model van het Taser {toe.__
 
    | Datatype | Naam | Vereist | Opties |
    |----------|------|----------|---------|
@@ -60,9 +60,9 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    | Tekst met meerdere regels | Beschrijving | nee | Zorg ervoor dat het standaardtype tekst met opmaak is |
    | Opsomming | Stijl | ja | Renderen als vervolgkeuzelijst. Opties zijn Hero -> hero en Topaanbieding -> aanbevolen |
 
-   ![Teasermodel](./assets/1/teaser-model.png)
+   ![ model van de Taser ](./assets/1/teaser-model.png)
 
-1. Maak binnen de map een tweede model met de naam __Voorstel__. Klik op Maken en geef het model de naam &quot;Aanbieding&quot; en voeg de volgende datatypen toe:
+1. Binnen de omslag, creeer een tweede model genoemd __Aanbieding__. Klik op Maken en geef het model de naam &quot;Aanbieding&quot; en voeg de volgende datatypen toe:
 
    | Datatype | Naam | Vereist | Opties |
    |----------|------|----------|---------|
@@ -70,28 +70,28 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    | Tekst met meerdere regels | Beschrijving | nee |  |
    | Tekst met meerdere regels | Artikel | nee |  |
 
-   ![Aanbiedingsmodel](./assets/1/offer-model.png)
+   ![ model van de Aanbieding ](./assets/1/offer-model.png)
 
-1. Maak in de map een derde model met de naam __Afbeeldingslijst__. Klik op Maken en geef het model de naam &quot;Lijst van afbeeldingen&quot; en voeg de volgende datatypen toe:
+1. Binnen de omslag, creeer een derde model genoemd __Lijst van het Beeld__. Klik op Maken en geef het model de naam &quot;Lijst van afbeeldingen&quot; en voeg de volgende datatypen toe:
 
    | Datatype | Naam | Vereist | Opties |
    |----------|------|----------|---------|
    | Fragmentverwijzing | Items weergeven | ja | Renderen als meerdere velden. Toegestaan inhoudsfragmentmodel is aangeboden. |
 
-   ![Model afbeeldingenlijst](./assets/1/imagelist-model.png)
+   ![ Model van de Lijst van het Beeld ](./assets/1/imagelist-model.png)
 
 ## Inhoudsfragmenten
 
-1. Navigeer nu naar Middelen en maak een map voor de nieuwe site. Klik op Maken en geef de map een naam.
+1. Navigeer nu naar Assets en maak een map voor de nieuwe site. Klik op Maken en geef de map een naam.
 
-   ![Map toevoegen](./assets/1/create-folder.png)
+   ![ voeg omslag ](./assets/1/create-folder.png) toe
 
-1. Nadat de map is gemaakt, selecteert u de map en opent u de bijbehorende map __Eigenschappen__.
-1. In de map __Cloudconfiguraties__ tabblad selecteert u de configuratie [eerder gemaakt](#enable-content-fragments-and-graphql).
+1. Nadat de omslag wordt gecreeerd, selecteer de omslag en open zijn __Eigenschappen__.
+1. In het lusje van de Configuraties van de Wolk van de omslag ____, selecteer de configuratie [ vroeger ](#enable-content-fragments-and-graphql) gecreeerd.
 
-   ![Map met middelen AEM headless cloud config](./assets/1/cloud-config.png)
+   ![ omslag van Activa AEM de Hoofdloze wolkenconfiguratie ](./assets/1/cloud-config.png)
 
-   Klik in de nieuwe map en maak een teaser. Klikken __Maken__ en __Inhoudsfragment__ en selecteert u de __Teaser__ model. Geef het model een naam __Hero__ en klik op __Maken__.
+   Klik in de nieuwe map en maak een teaser. Klik __creëren__ en __het Fragment van de Inhoud__ en selecteren het __Taser__ model. Noem het model __Hero__ en klik __creeer__.
 
    | Naam | Notities |
    |----------|------|
@@ -101,21 +101,21 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    | Beschrijving | Leeg laten |
    | Stijl | `Hero` |
 
-   ![hoofdfragment](./assets/1/teaser-model.png)
+   ![ heldfragment ](./assets/1/teaser-model.png)
 
 ## GraphQL-eindpunten
 
-1. Navigeren naar __Gereedschappen > GraphQL__
+1. Ga aan __Hulpmiddelen > GraphQL__
 
-   ![AEM GraphiQL](./assets/1/endpoint-nav.png)
+   ![ AEM GraphiQL ](./assets/1/endpoint-nav.png)
 
-1. Klikken __Maken__ en geef het nieuwe eindpunt een naam en kies de pas gecreëerde configuratie.
+1. Klik __creëren__ en geef het nieuwe eindpunt een naam en kies de pas gecreëerde configuratie.
 
-   ![AEM GraphQL-eindpunt zonder hoofd](./assets/1/endpoint.png)
+   ![ AEM het eindpunt van GraphQL zonder hoofd ](./assets/1/endpoint.png)
 
 ## Aangehouden GraphQL-query&#39;s
 
-1. Laten we het nieuwe eindpunt testen. Navigeren naar __Gereedschappen > GraphQL Query Editor__ en kiest u ons eindpunt voor de vervolgkeuzelijst rechtsboven in het venster.
+1. Laten we het nieuwe eindpunt testen. Navigeer aan __Hulpmiddelen > de Redacteur van de Vraag van GraphQL__ en kies ons eindpunt voor de daling neer in het hoogste recht van het venster.
 
 1. In de vraagredacteur, creeer een paar verschillende vragen.
 
@@ -130,7 +130,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    }
    ```
 
-   Er moet een lijst met één fragment worden gemaakt [boven](#create-content).
+   U zou een lijst moeten krijgen die het enige gemaakte fragment [ hierboven ](#create-content) bevatten.
 
    Voor deze oefening, creeer een volledige vraag die de AEM headless app gebruikt. Maak een query die één teaser per pad retourneert. Voer de volgende query in in de query-editor:
 
@@ -174,7 +174,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    }
    ```
 
-   In de __queryvariabelen__ Voer onderaan de invoer in:
+   In de __input van vraagvariabelen__ bij de bodem, ga binnen:
 
    ```json
    {
@@ -184,15 +184,15 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    >[!NOTE]
    >
-   > Mogelijk moet u de queryvariabele aanpassen `path` op basis van de map- en fragmentnamen.
+   > Mogelijk moet u de queryvariabele `path` aanpassen op basis van de map- en fragmentnamen.
 
 
    Voer de query uit om de resultaten van het eerder gemaakte inhoudsfragment te ontvangen.
 
-1. Klikken __Opslaan__  om de query voort te zetten (op te slaan) en de query een naam te geven __tepel__. Hierdoor kunnen we de query op naam weergeven in de toepassing.
+1. Klik __sparen__ om (sparen) de vraag voort te zetten en de vraag __teaser__ te noemen. Hierdoor kunnen we de query op naam weergeven in de toepassing.
 
 ## Volgende stappen
 
-Gefeliciteerd! U hebt met succes gevormd AEM as a Cloud Service om voor de verwezenlijking van de Fragmenten van de Inhoud en eindpunten van GraphQL toe te staan. U hebt ook een model van het Fragment van de Inhoud en een Fragment van de Inhoud, en bepaald een eindpunt van GraphQL en persisted vraag gecreeerd. U bent nu bereid om zich op het volgende zelfstudie- hoofdstuk te bewegen, waar u zult leren hoe te om een AEM toepassing van de Reactie van de Zwaartepunt tot stand te brengen die de Fragments van de Inhoud en het eindpunt van GraphQL verbruikt u in dit hoofdstuk creeerde.
+Gefeliciteerd! U hebt AEM as a Cloud Service geconfigureerd om het maken van Content Fragments en GraphQL-eindpunten toe te staan. U hebt ook een model van het Fragment van de Inhoud en een Fragment van de Inhoud, en bepaald een eindpunt van GraphQL en persisted vraag gecreeerd. U bent nu bereid om zich op het volgende zelfstudie- hoofdstuk te bewegen, waar u zult leren hoe te om een AEM toepassing van de Reactie van de Zwaartepunt tot stand te brengen die de Fragments van de Inhoud en het eindpunt van GraphQL verbruikt u in dit hoofdstuk creeerde.
 
 [Volgend hoofdstuk: AEM headless API&#39;s en Reageer](./2-aem-headless-apis-and-react.md)

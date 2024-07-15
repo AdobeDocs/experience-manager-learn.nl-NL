@@ -1,5 +1,5 @@
 ---
-title: Odata-bron maken en configureren
+title: Odata Source maken en configureren
 description: Maak en configureer de cloudserviceconfiguratie voor verbinding met Microsoft Dynamics.
 type: Documentation
 role: Developer

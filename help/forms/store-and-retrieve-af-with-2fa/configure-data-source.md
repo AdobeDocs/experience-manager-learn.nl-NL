@@ -1,5 +1,5 @@
 ---
-title: Gegevensbron configureren
+title: Source van gegevens configureren
 description: Gegevensbron maken die naar de MySQL-database verwijst
 feature: Adaptive Forms
 type: Tutorial
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 ---
 
-# Gegevensbron configureren
+# Source van gegevens configureren
 
-Er zijn vele manieren waarin AEM integratie met een externe gegevensbestand toelaat. Één van de gemeenschappelijkste &amp; standaardpraktijken van gegevensbestandintegratie is door de configuratieeigenschappen van de Verbinding van Apache Gepoolde DataSource door [configMgr](http://localhost:4502/system/console/configMgr).
-De eerste stap bestaat uit het downloaden en implementeren van de juiste [MySQL-stuurprogramma&#39;s](https://mvnrepository.com/artifact/mysql/mysql-connector-java) tot AEM.
+Er zijn vele manieren waarin AEM integratie met een externe gegevensbestand toelaat. Één van de gemeenschappelijkste &amp; standaardpraktijken van gegevensbestandintegratie is door Apache Te gebruiken die Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [ configMgr ](http://localhost:4502/system/console/configMgr) ruilt.
+De eerste stap moet de aangewezen [ bestuurders MySQL ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) downloaden en opstellen om te AEM.
 Vervolgens stelt u de specifieke eigenschappen voor de gegevensbron van uw database in voor de verzamelverbinding. In de volgende schermafbeelding ziet u de instellingen die voor deze zelfstudie worden gebruikt. Het databaseschema wordt als onderdeel van deze zelfstudie-elementen aan u verstrekt.
 
 >[!NOTE]
->Zorg ervoor dat u uw gegevensbron een naam geeft `StoreAndRetrieveAfData` aangezien dit de naam is die in de dienst OSGi wordt gebruikt.
+>Gelieve te zorgen u uw gegevensbron `StoreAndRetrieveAfData` noemt aangezien dit de naam in de dienst OSGi wordt gebruikt.
 
 
-![gegevensbron](assets/data-source.JPG)
+![ gegeven-bron ](assets/data-source.JPG)
 
 | Eigenschapnaam | Waarde van eigenschap |   |
 |---------------------|------------------------------------------------------------------------------------|---|
@@ -41,27 +41,27 @@ Vervolgens stelt u de specifieke eigenschappen voor de gegevensbron van uw datab
 ## Database maken
 
 
-De volgende database is gebruikt voor dit gebruiksgeval. De database heeft één tabel met de naam `formdatawithattachments` met de vier kolommen zoals weergegeven in de onderstaande schermafbeelding.
-![gegevensbank](assets/table-schema.JPG)
+De volgende database is gebruikt voor dit gebruiksgeval. De database heeft één tabel met de naam `formdatawithattachments` en de vier kolommen, zoals in de onderstaande schermafbeelding wordt weergegeven.
+![ gegeven-basis ](assets/table-schema.JPG)
 
-* De kolom **gegevens** bevat de aangepaste formuliergegevens.
-* De kolom **attachmentsInfo** bevat de informatie over de formulierbijlagen.
-* De kolommen **phoneNumber** bevat het mobiele nummer van de persoon die het formulier invult.
+* De kolom **afdata** zal de adaptieve vormgegevens houden.
+* De kolom **attachmentsInfo** zal de informatie over de vormgehechtheid houden.
+* De kolommen **phoneNumber** zullen het mobiele aantal van de persoon houden die de vorm invult.
 
-Maak een database door de [databaseschema](assets/data-base-schema.sql)
+Gelieve te creëren het gegevensbestand door het [ gegevensbestandschema ](assets/data-base-schema.sql) in te voeren
 MySQL-workbench gebruiken.
 
 ## Formuliergegevensmodel maken
 
 Creeer het model van vormgegevens en baseer het op de gegevensbron die in de vorige stap wordt gecreeerd.
-Vorm **get** service van dit formuliergegevensmodel, zoals wordt getoond in de onderstaande schermafbeelding.
-Zorg ervoor dat u geen array retourneert in het dialoogvenster **get** service.
+Vorm de **krijgen** dienst van dit model van vormgegevens zoals aangetoond in hieronder het schermschot.
+Zorg ervoor u geen serie in de **terugkeert krijgt** dienst.
 
-Het doel van deze **get** de dienst moet het telefoonaantal halen verbonden aan toepassings identiteitskaart
+Het doel van deze **krijgt** dienst moet het telefoonaantal halen verbonden aan toepassings identiteitskaart.
 
-![getService](assets/get-service.JPG)
+![ get-service ](assets/get-service.JPG)
 
-Dit formuliergegevensmodel wordt vervolgens gebruikt in het dialoogvenster **MyAccountForm** om het telefoonnummer op te halen dat aan toepassings-id is gekoppeld.
+Dit model van vormgegevens zal dan in **MyAccountForm** worden gebruikt om het telefoonaantal te halen verbonden aan toepassings identiteitskaart.
 
 ## Volgende stappen
 

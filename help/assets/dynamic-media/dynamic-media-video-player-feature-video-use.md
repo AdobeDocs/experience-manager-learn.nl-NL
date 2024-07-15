@@ -66,7 +66,7 @@ De browserondersteuning van HLS is als volgt: voor niet-ondersteunde browsers ku
   </tr>
   <tr> 
    <td> <p>Desktop</p> </td>
-   <td> <p>Chroom</p> </td>
+   <td> <p>Chrome</p> </td>
    <td> <p>HLS-videostreaming</p> </td>
   </tr>
   <tr> 

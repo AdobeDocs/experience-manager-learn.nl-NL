@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen om problemen met PDFG-conversie van meerdere gebruikers op te lossen bij een Windows-installatie
 
-*In deze video wordt beschreven hoe problemen met PDFG-conversie door meerdere gebruikers in Windows kunnen worden opgelost.*
+*Deze video beschrijft het proces van het oplossen van problemen van de Omzetting van PDFG van de multi-Gebruiker op een opstelling van Vensters.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335550?quality=12&learn=on)

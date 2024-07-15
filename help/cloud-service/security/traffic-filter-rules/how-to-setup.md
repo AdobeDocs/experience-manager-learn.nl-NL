@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Hoe te de regels van de Filter van het opstellingenverkeer met inbegrip van de regels van WAF
 
-Meer informatie **instellen** de regels van de verkeersfilter, met inbegrip van de regels van WAF. Lees over het maken, implementeren, testen en analyseren van resultaten.
+Leer **hoe te opstellings** regels van de verkeersfilter, met inbegrip van de regels van WAF. Lees over het maken, implementeren, testen en analyseren van resultaten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425407?quality=12&learn=on)
 
@@ -29,20 +29,20 @@ Meer informatie **instellen** de regels van de verkeersfilter, met inbegrip van 
 
 Het installatieproces omvat het volgende:
 
-- _regels maken_ met een geschikte AEM projectstructuur en configuratiebestand.
-- _regels implementeren_ via de configuratiepijplijn van Adobe Cloud Manager.
-- _testregels_ het gebruiken van diverse hulpmiddelen om verkeer te produceren.
-- _de resultaten analyseren_ met AEMCS CDN-logboeken en dashboardwerkset.
+- _creërend regels_ met een aangewezen AEM projectstructuur en configuratiedossier.
+- _het opstellen van regels_ gebruikend de configuratiepijplijn van Cloud Manager van de Adobe.
+- _testende regels_ gebruikend diverse hulpmiddelen om verkeer te produceren.
+- _analyserend de resultaten_ gebruikend de logboeken van AEMCS CDN en dashboardtooling.
 
 ### Regels maken in uw AEM project
 
 Ga als volgt te werk om regels te maken:
 
-1. Maak op het hoofdniveau van uw AEM project een map `config`.
+1. Maak een map `config` op het hoofdniveau van uw AEM project.
 
-1. Binnen de `config` een nieuw bestand met de naam `cdn.yaml`.
+1. Maak in de map `config` een nieuw bestand met de naam `cdn.yaml` .
 
-1. Voeg de volgende metagegevens toe aan de `cdn.yaml` bestand:
+1. Voeg de volgende metagegevens toe aan het `cdn.yaml` -bestand:
 
 ```yaml
 kind: CDN
@@ -57,51 +57,51 @@ data:
     rules:
 ```
 
-Zie een voorbeeld van de `cdn.yaml` bestand in het WKND-siteproject van de AEM:
+Zie een voorbeeld van het `cdn.yaml` -bestand in het AEM Guides WKND Sites Project:
 
-![WKND AEM bestand met projectregels en map](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
+![ WKND AEM het dossier en de omslag van projectregels ](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
 
 ### Regels implementeren via Cloud Manager {#deploy-rules-through-cloud-manager}
 
 Voer de volgende stappen uit om de regels te implementeren:
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Ga naar de _Pijpleidingen_ kaart van _Programmaoverzicht_ pagina en klik op de knop **+Toevoegen** en selecteert u het gewenste type pijplijn.
+1. Navigeer aan de _Pipelines_ kaart van de _pagina van het Overzicht van het Programma_ en klik **+ voeg** knoop toe en selecteer het gewenste pijpleidingstype.
 
-   ![Pipelinekaart van Cloud Manager](./assets/cloud-manager-pipelines-card.png)
+   ![ de Pipelinekaart van Cloud Manager ](./assets/cloud-manager-pipelines-card.png)
 
-   In het bovenstaande voorbeeld voor demo-doeleinden _Niet-productiepijpleiding toevoegen_ is geselecteerd omdat een ontwikkelomgeving wordt gebruikt.
+   In het voorbeeld hierboven, voor demodoeleinden _voeg niet-Productiepijpleiding_ toe wordt geselecteerd aangezien een ontwikkelomgeving wordt gebruikt.
 
-1. In de _Niet-productiepijpleiding toevoegen_ kiest en voert u de volgende gegevens in:
+1. In _voeg de dialoog van de Pijpleiding van de Niet-Productie_ toe, kies en ga de volgende details in:
 
    1. Configuratiestap:
 
-      - **Type**: Distributiepijplijn
-      - **Naam pijpleiding**: Dev-Config
+      - **Type**: De Pijpleiding van de Plaatsing
+      - **Naam van de Pijpleiding**: Dev-Config
 
-      ![Cloud Manager Config Pipeline, dialoogvenster](./assets/cloud-manager-config-pipeline-step1-dialog.png)
+      ![ Cloud Manager Config de dialoog van de Pijpleiding ](./assets/cloud-manager-config-pipeline-step1-dialog.png)
 
-   2. Stap broncode:
+   2. Stap Source-code:
 
-      - **Code voor implementatie**: doelgerichte implementatie
-      - **Inclusief**: Config
-      - **Implementatieomgeving**: Naam van uw omgeving, bijvoorbeeld wknd-program-dev.
-      - **Bewaarplaats**: De Git-opslagplaats van waar de pijpleiding de code moet ophalen, bijvoorbeeld `wknd-site`
-      - **Git Branch**: De naam van de Git-opslagvertakking.
-      - **Codelocatie**: `/config`, overeenkomend met de configuratiemap op hoofdniveau die in de vorige stap is gemaakt.
+      - **Code om** op te stellen: Gerichte plaatsing
+      - **omvatten**: Config
+      - **Milieu van de Plaatsing**: Naam van uw milieu, bijvoorbeeld, wknd-programma-dev.
+      - **Bewaarplaats**: De bewaarplaats van het Git van waar de pijpleiding de code zou moeten terugwinnen; bijvoorbeeld, `wknd-site`
+      - **de Tak van de Git**: De naam van de de bewaarplaats van de Git tak.
+      - **Plaats van de Code**: `/config`, die aan de top-level configuratiemap beantwoordt die in de vorige stap wordt gecreeerd.
 
-      ![Cloud Manager Config Pipeline, dialoogvenster](./assets/cloud-manager-config-pipeline-step2-dialog.png)
+      ![ Cloud Manager Config de dialoog van de Pijpleiding ](./assets/cloud-manager-config-pipeline-step2-dialog.png)
 
 ### Regels testen door verkeer te genereren
 
 Om regels te testen, zijn er verschillende hulpmiddelen van derden beschikbaar en uw organisatie kan een aangewezen hulpmiddel hebben. Voor het demodoel, gebruiken de volgende hulpmiddelen:
 
-- [Krol](https://curl.se/) voor basistests zoals het aanroepen van een URL en het controleren van de antwoordcode.
+- [ Kromme ](https://curl.se/) voor basis het testen als het aanhalen van een URL en het controleren van de antwoordcode.
 
-- [Vegeta](https://github.com/tsenart/vegeta) voor het uitvoeren van een Denial of Service (DOS). Volg de installatie-instructies van de [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
+- [ Vegeta ](https://github.com/tsenart/vegeta) om ontkenning van de dienst (DOS) uit te voeren. Volg de installatieinstructies van [ Vegeta GitHub ](https://github.com/tsenart/vegeta#install).
 
-- [Nikto](https://github.com/sullo/nikto/wiki) om potentiële problemen en veiligheidskwetsbaarheid zoals XSS, SQL injectie, en meer te vinden. Volg de installatie-instructies van de [Nikto GitHub](https://github.com/sullo/nikto).
+- [ Nikto ](https://github.com/sullo/nikto/wiki) om potentiële problemen en veiligheidskwetsbaarheid zoals XSS, SQL injectie, en meer te vinden. Volg installatieinstructies van [ Nikto GitHub ](https://github.com/sullo/nikto).
 
 - Controleer of de gereedschappen zijn geïnstalleerd en beschikbaar zijn in uw terminal door de onderstaande opdrachten uit te voeren:
 
@@ -119,15 +119,15 @@ Om regels te testen, zijn er verschillende hulpmiddelen van derden beschikbaar e
 
 ### Resultaten analyseren met de dashboardgereedschappen
 
-Nadat u de regels hebt gemaakt, geïmplementeerd en getest, kunt u de resultaten analyseren met **CDN** logboeken en **AEMCS-CDN-Log-Analysis-Tool**. Het hulpmiddel verstrekt een reeks dashboards om de resultaten voor Splunk en de stapel van ELK (Elasticsearch, Logstash, en Kibana) te visualiseren.
+Na het creëren van, het opstellen van, en het testen van de regels, kunt u de resultaten analyseren gebruikend **CDN** logboeken en **AEMCS-CDN-Logboek-Analyse-Tooling**. Het hulpmiddel verstrekt een reeks dashboards om de resultaten voor Splunk en de stapel van ELK (Elasticsearch, Logstash, en Kibana) te visualiseren.
 
-Het gereedschap kan worden gekloond via het gereedschap [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub-opslagplaats. Volg vervolgens de instructies om de **CDN-verkeersdashboard** en **WAF-dashboard** dashboards voor uw voorkeurswaarneming.
+Gereedschap kan van de [ AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats worden gekloond GitHub. Dan, volg de instructies om het **dashboard van het Verkeer CDN** en **dashboards van het Dashboard van WAF** voor uw aangewezen observatiehulpmiddel te installeren en te laden.
 
-In deze zelfstudie gebruiken we de ELK-stapel. Volg de [ELK Docker-container voor AEMCS CDN-loganalyse](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) instructies voor het instellen van de ELK-stapel.
+In deze zelfstudie gebruiken we de ELK-stapel. Volg de [ ELK container van het Dok voor de Analyse van het Logboek van AEMCS CDN ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) instructies aan opstelling de stapel van ELK.
 
 - Nadat u het voorbeelddashboard hebt geladen, ziet de gereedschapspagina Elastic er als volgt uit:
 
-  ![ELK-dashboard Regels verkeersfilter](./assets/elk-dashboard.png)
+  ![ het Dashboard van de Regels van de Filterregels van het Verkeer van de ELK ](./assets/elk-dashboard.png)
 
 >[!NOTE]
 >
@@ -136,4 +136,4 @@ In deze zelfstudie gebruiken we de ELK-stapel. Volg de [ELK Docker-container voo
 
 ## Volgende stap
 
-Leer hoe te om de regels van de verkeersfilter met inbegrip van de regels van WAF in te verklaren [Voorbeelden en resultaatanalyse](./examples-and-analysis.md) hoofdstuk, gebruikend het Project van de Plaatsen van AEM WKND.
+Leer hoe te om de regels van de verkeersfilter met inbegrip van de regels van WAF in het [ Voorbeelden en hoofdstuk van de resultaatanalyse ](./examples-and-analysis.md) te verklaren, gebruikend het AEM Project van Plaatsen WKND.

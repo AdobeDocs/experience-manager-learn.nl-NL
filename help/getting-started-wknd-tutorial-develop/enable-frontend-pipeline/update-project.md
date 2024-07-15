@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Werk volledig-stapel AEM project bij om front-end pijpleiding te gebruiken {#update-project-enable-frontend-pipeline}
 
-In dit hoofdstuk, maken wij config veranderingen in __WKND-siteproject__ om de front-end pijpleiding te gebruiken om JavaScript en CSS op te stellen, eerder dan het vereisen van een volledige stapelpijpleiding uitvoering. Dit ontkoppelt de ontwikkeling en plaatsingslevenscyclus van front-end en back-end artefacten, die voor een sneller, iteratief ontwikkelingsproces over het algemeen toestaan.
+In dit hoofdstuk, maken wij config veranderingen in het __project van Plaatsen WKND__ om de front-end pijpleiding te gebruiken om JavaScript en CSS op te stellen, eerder dan het vereisen van een volledige uitvoering van de stapelpijpleiding. Dit ontkoppelt de ontwikkeling en plaatsingslevenscyclus van front-end en back-end artefacten, die voor een sneller, iteratief ontwikkelingsproces over het algemeen toestaan.
 
 ## Doelstellingen {#objectives}
 
@@ -34,16 +34,16 @@ In dit hoofdstuk, maken wij config veranderingen in __WKND-siteproject__ om de f
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt van uitgegaan dat u de [Module &#39;ui.frontend&#39;](./review-uifrontend-module.md).
+Dit is een meerdelig leerprogramma en men veronderstelt dat u [ &quot;ui.frontend&quot;Module ](./review-uifrontend-module.md) hebt herzien.
 
 
 ## Veranderingen in het full-stack AEM project
 
 Er zijn drie project-verwante config veranderingen en een stijlverandering om voor een testlooppas op te stellen, zo in totaal vier specifieke veranderingen in het project WKND om het voor het front-end pijpleidingscontract toe te laten.
 
-1. Verwijder de `ui.frontend` module van volledige-stapelbouwstijlcyclus
+1. De module `ui.frontend` verwijderen uit de volledige constructiecyclus voor stapels
 
-   * In, de wortel van het Project van de Plaatsen van WKND `pom.xml` de opmerking `<module>ui.frontend</module>` submodule-item.
+   * In de hoofdmap van het WKND-siteproject `pom.xml` vindt u een opmerking over de submodulevermelding van `<module>ui.frontend</module>` .
 
    ```xml
        ...
@@ -57,7 +57,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
        ...
    ```
 
-   * En de opmerking heeft betrekking op afhankelijkheid van de `ui.apps/pom.xml`
+   * En aan opmerkingen gerelateerde afhankelijkheid van de `ui.apps/pom.xml`
 
    ```xml
        ...
@@ -76,9 +76,9 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
        ...
    ```
 
-1. De `ui.frontend` module voor het front-end pijpleidingscontract door twee nieuwe webpack configuratiedossiers toe te voegen.
+1. Bereid de `ui.frontend` module voor het front-end pijpleidingscontract door twee nieuwe webpack configuratiedossiers toe te voegen.
 
-   * Bestaande kopiëren `webpack.common.js` als `webpack.theme.common.js`en wijzigen `output` eigendom en `MiniCssExtractPlugin`, `CopyWebpackPlugin` config-parameters voor insteekmodule, zoals hieronder:
+   * Kopieer de bestaande eigenschappen `webpack.common.js` as `webpack.theme.common.js` en change `output` en `MiniCssExtractPlugin` , `CopyWebpackPlugin` plugin config params zoals hieronder:
 
    ```javascript
    ...
@@ -100,7 +100,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
    ...
    ```
 
-   * Bestaande kopiëren `webpack.prod.js` als `webpack.theme.prod.js`en wijzigt u de `common` locatie van variabele naar het bovenstaande bestand als
+   * Kopieer de bestaande `webpack.prod.js` als `webpack.theme.prod.js` en wijzig als volgt de locatie van de variabele `common` naar het bovenstaande bestand
 
    ```javascript
    ...
@@ -117,7 +117,7 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
    >Het is aan jou hoe je ze wilt benoemen of organiseren.
 
 
-   * In de `package.json` bestand, zorg ervoor dat de  `name` eigenschapswaarde is gelijk aan de naam van de site `/conf` knooppunt. En onder de `scripts` eigenschap, `build` script dat aangeeft hoe de bestanden aan de voorzijde van deze module moeten worden gemaakt.
+   * Zorg ervoor dat in het bestand `package.json` de waarde van de eigenschap `name` gelijk is aan de naam van de site uit het knooppunt `/conf` . En onder de eigenschap `scripts` voert u een `build` -script uit dat aangeeft hoe de front-end bestanden van deze module moeten worden gemaakt.
 
    ```javascript
        {
@@ -133,9 +133,9 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
        }
    ```
 
-1. De `ui.content` module voor de front-end pijpleiding door twee Sling toe te voegen vormt.
+1. Bereid de `ui.content` module voor de front-end pijpleiding door twee het Verdraaien vormen toe te voegen.
 
-   * Een bestand maken op `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` - dit omvat alle front-end bestanden die `ui.frontend` module genereert onder de `dist` map met gebruik van webpack-constructieproces.
+   * Maak een bestand in `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` - dit omvat alle front-end bestanden die de module `ui.frontend` onder de map `dist` genereert met behulp van het webpack-constructieproces.
 
    ```xml
    ...
@@ -158,10 +158,10 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
 
    >[!TIP]
    >
-   >    De volledige versie bekijken [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) in de __AEM WKND-siteproject__.
+   >    Zie volledige [ HtmlPageItemsConfig ](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) in het __AEM WKND project van Plaatsen__.
 
 
-   * Tweede `com.adobe.aem.wcm.site.manager.config.SiteConfig` met de `themePackageName` waarde gelijk aan `package.json` en `name` eigenschapswaarde en `siteTemplatePath` die verwijzen naar een `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` stub path value.
+   * Vervolgens wordt de waarde van `com.adobe.aem.wcm.site.manager.config.SiteConfig` met de waarde van `themePackageName` gelijk aan de waarde van de eigenschap `package.json` en `name` en `siteTemplatePath` gewijzigd, waarbij wordt verwezen naar de waarde van een `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` stub-pad.
 
    ```xml
    ...
@@ -176,9 +176,9 @@ Er zijn drie project-verwante config veranderingen en een stijlverandering om vo
 
    >[!TIP]
    >
-   >    Zie, de volledige [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) in de __AEM WKND-siteproject__.
+   >    Zie, volledige [ SiteConfig ](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) in het __AEM WKND project van Plaatsen__.
 
-1. Een thema of de stijlen veranderen om via front-end pijpleiding voor een testlooppas op te stellen, veranderen wij `text-color` aan Adobe rood (of u kunt uw kiezen) door bij te werken `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
+1. Als een thema of stijlen worden gewijzigd en via een front-end pijplijn voor een testrun worden geïmplementeerd, veranderen we `text-color` in Adobe rood (of u kunt uw eigen stijl kiezen) door de `ui.frontend/src/main/webpack/base/sass/_variables.scss` bij te werken.
 
    ```css
        $black:     #a40606;
@@ -190,14 +190,14 @@ Zet deze wijzigingen tot slot door in de git-opslagplaats voor Adoben van uw pro
 
 >[!AVAILABILITY]
 >
-> Deze veranderingen zijn beschikbaar op GitHub binnen [__front-end pijpleiding__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) tak van de __AEM WKND-siteproject__.
+> Deze veranderingen zijn beschikbaar op GitHub binnen de [__front-end pijpleiding__ ](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) tak van het __AEM WKND project van Plaatsen__.
 
 
-## Voorzichtigheid - _Vooruiteinde pijplijn inschakelen_ knop
+## De voorzichtigheid - _laat Voorste Pijl van het Eind_ knoop toe
 
-De [Spoorwegkiezer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) s [Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) geeft de optie **Vooruiteinde pijplijn inschakelen** als u de hoofdmap of sitepagina van uw site selecteert. Klikken **Vooruiteinde pijplijn inschakelen** De knop overschrijft het bovenstaande **Sling-configuraties**, zorg ervoor **u klikt niet** deze knop na het implementeren van de bovenstaande wijzigingen via de pijpleiding van Cloud Manager.
+De [ Selector van het Spoorspoor ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) &quot;s [ optie van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) toont **toelaten Voorste Pijpleiding van het Eind** op het selecteren van uw plaatswortel of plaatspagina. Het klikken **laat de Voorste knoop van het Eind toe** hierboven **het Schuiven vormt**, zorg ervoor **u** deze knoop na het opstellen boven veranderingen via de pijpleidingsuitvoering van Cloud Manager niet klikt.
 
-![Knop Pijl-vooruiteinde inschakelen](assets/enable-front-end-Pipeline-button.png)
+![ laat Voorste knoop van de Pijl van het Eind toe ](assets/enable-front-end-Pipeline-button.png)
 
 Als er per ongeluk op wordt geklikt, moet u de pijpleidingen opnieuw uitvoeren om ervoor te zorgen dat het frontend pijpleidingscontract en de veranderingen worden hersteld.
 
@@ -207,4 +207,4 @@ Gefeliciteerd, hebt u het project van Plaatsen WKND bijgewerkt om het voor het f
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk: [Implementeren met behulp van de voorste pijplijn](create-frontend-pipeline.md), zult u een front-end pijpleiding creëren en in werking stellen en zult verifiëren hoe wij __weg__ van de &#39;/etc.clientlibs&#39; gebaseerde front-end resources levering.
+In het volgende hoofdstuk, [ opstelt gebruikend de Voorste-Eind Pijpleiding ](create-frontend-pipeline.md), zult u een front-end pijpleiding creëren en in werking stellen en zult verifiëren hoe wij __weg__ van de &quot;/etc.clientlibs&quot;gebaseerde front-end middelenlevering bewogen.

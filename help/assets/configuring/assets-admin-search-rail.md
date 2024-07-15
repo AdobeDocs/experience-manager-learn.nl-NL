@@ -1,6 +1,6 @@
 ---
-title: Elementenbeheerder zoekrails
-description: Met behulp van de zoekrails voor middelenbeheer kunnen middelen worden gezocht op basis van aangepaste criteria in Omnsearch.
+title: Assets-zoekrail
+description: Met de zoekrail voor Assets-beheer kunnen middelen worden gezocht op basis van aangepaste criteria in het onderzoek.
 sub-product: Experience Manager Assets
 feature: Search
 version: Cloud Service
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 ---
 
-# Elementenbeheerder zoekrails
+# Assets-zoekrail
 
-Met behulp van de zoekrails voor middelenbeheer kunnen middelen worden gezocht op basis van aangepaste criteria in Omnsearch.
+Met de zoekrail voor Assets-beheer kunnen middelen worden gezocht op basis van aangepaste criteria in het onderzoek.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35842?quality=12&learn=on)

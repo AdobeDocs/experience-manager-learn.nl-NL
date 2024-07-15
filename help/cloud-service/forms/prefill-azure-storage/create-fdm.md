@@ -25,7 +25,7 @@ De volgende video bespreekt u de stappen die worden vereist om de integratie tot
 >[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)
 
 Voor deze zelfstudie is een formuliergegevensmodel met de naam SaveAndRetrieveFromAzurePortal gemaakt met de naam CreditApplications
-![fdm-entiteit](./assets/fdm-entity.png)
+![ fdm-entiteit ](./assets/fdm-entity.png)
 
 ## Volgende stappen
 

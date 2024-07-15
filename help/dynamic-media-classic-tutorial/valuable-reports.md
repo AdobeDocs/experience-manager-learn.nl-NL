@@ -25,7 +25,7 @@ In het rapport Bandbreedte en Opslag wordt aangegeven hoeveel bandbreedte van de
 
 ![afbeelding](assets/valuable-reports/reports-1.jpg)
 
-_In het Bandbreedte- en opslagrapport wordt deze account boven de opslaglimiet van 30 GB weergegeven._
+_het rapport van de Bandbreedte &amp; van de Opslag toont deze rekening als manier over zijn 30GB opslaggrens._
 
 ## Rapport met afbeeldingsfouten
 
@@ -33,7 +33,7 @@ Wanneer een URL om een beeld vraagt dat mist, produceert de Server van het Beeld
 
 ![afbeelding](assets/valuable-reports/reports-2.jpg)
 
-_Rapport Afbeeldingsfout._
+_het rapport van de Fout van het Beeld._
 
 ## Conclusie
 
@@ -41,7 +41,7 @@ We hopen dat u de inhoud in deze handleiding met best practices hebt gevonden om
 
 Raadpleeg de volgende bronnen voor meer informatie over Dynamic Media Classic:
 
-- [Dynamic Media Classic op Experience League - Get to Value](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Dynamic Media Classic op Experience League - Meer doen](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [De Dynamic Media-nieuwsbrieven archiveren](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Dynamic Media Classic-documentatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)
+- [ Dynamic Media Classic op Experience League - krijgt aan Waarde ](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [ Dynamic Media Classic op Experience League - doe meer ](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [ de Archives van de Nieuwsbrief van Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [ Documentatie van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)

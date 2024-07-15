@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Websites beschermen met verkeersfilterregels (inclusief WAF-regels)
 
-Meer informatie over **verkeersfilterregels**, inclusief de subcategorie **WAF-regels (Web Application Firewall)** in AEM as a Cloud Service (AEMCS). Lees over hoe te om, de regels tot stand te brengen op te stellen en te testen. Analyseer ook de resultaten om uw AEM te beschermen.
+Leer over **regels van de verkeersfilter**, met inbegrip van zijn subcategorie van **de regels van de Firewall van de Toepassing van het Web (WAF)** in AEM as a Cloud Service (AEMCS). Lees over hoe te om, de regels tot stand te brengen op te stellen en te testen. Analyseer ook de resultaten om uw AEM te beschermen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425401?quality=12&learn=on)
 
@@ -29,20 +29,20 @@ Meer informatie over **verkeersfilterregels**, inclusief de subcategorie **WAF-r
 
 Het verminderen van het risico van inbreuken op de beveiliging is een topprioriteit voor elke organisatie. AEMCS biedt de eigenschap van de het verkeersfilterregels, met inbegrip van de regels van WAF, aan om websites en toepassingen te beschermen.
 
-De filterregels van het verkeer worden opgesteld aan [ingebouwde CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) en worden geëvalueerd voordat het verzoek de AEM infrastructuur bereikt. Met deze functie kunt u de beveiliging van uw website aanzienlijk verbeteren, zodat alleen legitieme verzoeken toegang hebben tot de AEM-infrastructuur.
+De filterregels van het verkeer worden opgesteld aan [ ingebouwde CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) en worden geëvalueerd alvorens het verzoek de AEM infrastructuur bereikt. Met deze functie kunt u de beveiliging van uw website aanzienlijk verbeteren, zodat alleen legitieme verzoeken toegang hebben tot de AEM-infrastructuur.
 
 Deze zelfstudie begeleidt u door het proces om de resultaten van de regels van de verkeersfilter, met inbegrip van de regels van WAF te creëren, op te stellen, te testen en te analyseren.
 
-U kunt meer over de regels van de verkeersfilter in lezen [dit artikel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en).
+U kunt meer over de regels van de verkeersfilter in [ dit artikel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en) lezen.
 
 >[!IMPORTANT]
 >
 > Een subcategorie van de regels van het verkeersfilter genoemd &quot;de regels van WAF&quot;vereisen een bescherming WAF-DDoS of de Uitgebreide vergunning van de Veiligheid.
 
-We nodigen u uit feedback te geven of vragen te stellen over regels voor het filter van het verkeer via e-mail **aemcs-waf-adopter@adobe.com**.
+Wij nodigen u uit om terugkoppelen of vragen over de regels van de verkeersfilter te stellen door **aemcs-waf-adopter@adobe.com** te e-mailen.
 
 ## Volgende stap
 
-Meer informatie [instellen](./how-to-setup.md) de eigenschap zodat kunt u, de regels van de verkeersfilter creëren opstellen en testen. Lees meer over het instellen van de **Elasticsearch, Logstash en Kibana (ELK)** stackdashboardwerkset om de resultaten van uw AEMCS CDN-logboeken te analyseren.
+Leer [ hoe te opstelling ](./how-to-setup.md) de eigenschap zodat kunt u, de regels van de verkeersfilter creëren opstellen en testen. Lees over vestiging de **Elasticsearch, Logstash, en Kibana (ELK)** stackdashboardtooling om de resultaten van uw Logboeken te analyseren AEMCS CDN.
 
 

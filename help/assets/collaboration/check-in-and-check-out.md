@@ -1,6 +1,6 @@
 ---
 title: Inchecken en uitchecken
-description: Leer hoe u functies voor het in- en uitchecken van AEM kunt gebruiken om samenwerking met meerdere gebruikers op middelen te vergemakkelijken.
+description: Leer hoe u AEM inchecken en uitchecken kunt gebruiken om samenwerking met meerdere gebruikers op middelen te vergemakkelijken.
 feature: Asset Management
 version: Cloud Service
 jira: KT-4542
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Inchecken en uitchecken
 
-Leer hoe u functies voor het in- en uitchecken van AEM kunt gebruiken om samenwerking met meerdere gebruikers op middelen te vergemakkelijken.
+Leer hoe u AEM inchecken en uitchecken kunt gebruiken om samenwerking met meerdere gebruikers op middelen te vergemakkelijken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32048?quality=12&learn=on)

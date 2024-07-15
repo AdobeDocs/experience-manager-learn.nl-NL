@@ -1,6 +1,6 @@
 ---
 title: AEM servicekredieten
-description: Download de servicegegevens van AEM Developer Console.
+description: Download servicegegevens van AEM Developer Console.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Servicereferenties
 
-Integraties met AEM as a Cloud Service moeten veilig kunnen worden geverifieerd op AEM. De Console van de Ontwikkelaar van AEM produceert de Credentials van de Dienst, die door externe toepassingen, systemen, en de diensten worden gebruikt programmatically met AEM de Auteur of publiceren diensten over HTTP in wisselwerking te staan.
+Integraties met AEM as a Cloud Service moeten veilig kunnen worden geverifieerd op AEM. De Developer Console van AEM genereert Service Credentials. Deze worden gebruikt door externe toepassingen, systemen en services om via HTTP programmatisch te communiceren met AEM auteur- of Publish-services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

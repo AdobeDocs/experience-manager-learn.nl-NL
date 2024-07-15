@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # De Workfloweditor gebruiken
 
-De workflow maakt bedrijfsprocesbeheer in Experience Manager mogelijk en wordt gebruikt voor automatische verwerking van inhoud en voor het vergemakkelijken van governance en processen waarvoor menselijke besluitvorming vereist is. De workflow wordt gedefinieerd via workflowmodellen die bestaan uit een reeks stappen en worden gemaakt en beheerd in de [!UICONTROL Workflow Model Editor].
+De workflow maakt bedrijfsprocesbeheer in Experience Manager mogelijk en wordt gebruikt voor automatische verwerking van inhoud en voor het vergemakkelijken van governance en processen waarvoor menselijke besluitvorming vereist is. Workflow wordt gedefinieerd via workflowmodellen die bestaan uit een reeks stappen en worden gemaakt en beheerd in de [!UICONTROL Workflow Model Editor] .
 
 >[!VIDEO](https://video.tv.adobe.com/v/22201?quality=12&learn=on)

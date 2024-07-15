@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Hier volgt de volledige code die de klasse implementeert die de interface implementeert.
 
-Deze klasse maakt gebruik van 2 hulpprogrammamethoden `getAccessToken`, `getJWTToken` en statische methode `getContentAnalyserRequest` van `GetContentAnalyser` klasse.
+Deze klasse maakt gebruik van twee hulpprogrammamethoden `getAccessToken` , `getJWTToken` en de statische methode `getContentAnalyserRequest` van `GetContentAnalyser` -klasse.
 
 
 ```java

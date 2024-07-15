@@ -25,4 +25,4 @@ Aan de slag met REPOINIT — of de Sling Repository Initializer. Leer een paar t
 ## Inhoud die in deze video wordt behandeld
 
 + OVERZICHT VAN HERSTELLING
-+ [HERSTEL-syntaxis](https://sling.apache.org/documentation/bundles/repository-initialization.html#appendix-a-repoinit-syntax-parser-test-scenarios-1)
++ [ Syntaxis VAN HERSTEL ](https://sling.apache.org/documentation/bundles/repository-initialization.html#appendix-a-repoinit-syntax-parser-test-scenarios-1)

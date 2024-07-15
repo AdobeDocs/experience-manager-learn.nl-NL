@@ -9,7 +9,8 @@ role: Developer
 level: Beginner
 jira: KT-15603
 last-substantial-update: 2024-05-28T00:00:00Z
-source-git-commit: e20d9f80cc7e1c6f5f6c81233d9a5178551e2fa2
+exl-id: 0c6079f4-601e-4a82-976c-71dbb2faa671
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 Het insluiten van een QR-code in een adaptief formulier kan het voor gebruikers veel gemakkelijker en efficiënter maken om toegang te krijgen tot aanvullende informatie over het formulier.
 
-De voorbeeldcomponent maakt gebruik van [QRCode.js](https://davidshimjs.github.io/qrcodejs/).
+De steekproefcomponent maakt gebruik van [ QRCode.js ](https://davidshimjs.github.io/qrcodejs/).
 
 QRCode.js is een bibliotheek javascript voor het maken van QRCode, steunt het dwars-browser met HTML5 Canvas en lijstmarkering in DOM.
 
@@ -44,7 +45,7 @@ De &quot;url&quot; is de URL die moet worden ingesloten in de Qr-code. Deze url 
 
 
 
-De volgende code maakt gebruik van de methode makeCode van de bibliotheek QRCode.js in de cliëntbibliotheek van de qr-code-generator component.De geproduceerde QR code wordt toegevoegd aan div die door identiteitskaart wordt geïdentificeerd **&quot;qrcode&quot;**.
+De volgende code maakt gebruik van de makeCode methode van de bibliotheek QRCode.js in de cliëntbibliotheek van de qr-code-generator component.De geproduceerde QR code wordt toegevoegd aan div die door identiteitskaart **&quot;qrcode&quot;** wordt geïdentificeerd.
 
 ```javascript
 $(document).ready(function()
@@ -59,6 +60,4 @@ $(document).ready(function()
 
 * [Download en installeer de component QR-code met Package Manager.](assets/qrcode.zip)
 * [Download en installeer het voorbeeldadaptieve formulier met Package Manager.](assets/form-with-qr-code.zip)
-* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). De Help-sectie van het formulier heeft de QR-code.
-
-
+* [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). De Help-sectie van het formulier heeft de QR-code.

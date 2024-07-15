@@ -20,9 +20,9 @@ ht-degree: 0%
 
 U kunt de velden van een adaptief formulier vooraf invullen met bestaande gegevens. Wanneer een gebruiker een formulier opent, worden de waarden voor die velden vooraf ingevuld. Er zijn meerdere manieren om aangepaste formuliervelden vooraf in te vullen. In dit artikel bekijken we het vooraf ingevulde adaptieve formulier met de AEM Forms Prefill-service.
 
-Voor meer informatie over verschillende methoden om aangepaste formulieren vooraf in te vullen, [volg deze documentatie](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Om meer over diverse methodes te leren om adaptieve vormen vooraf in te vullen, [ te volgen gelieve deze documentatie ](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
-Als u een adaptief formulier wilt vooraf invullen met de Prefill-service, moet u een klasse maken die het `com.adobe.forms.common.service.DataXMLProvider` interface. De methode `getDataXMLForDataRef` bevat de logica voor het samenstellen en retourneren van gegevens die het aangepaste formulier zal gebruiken om de velden vooraf in te vullen. Met deze methode kunt u de gegevens van elke bron ophalen en de invoerstream van het gegevensdocument retourneren. De volgende voorbeeldcode haalt de gebruikersprofielinformatie van de aangemelde gebruiker op en maakt een XML-document waarvan de invoerstream wordt geretourneerd voor gebruik door de adaptieve formulieren.
+Als u een adaptief formulier wilt vooraf invullen met de Prefill-service, moet u een klasse maken die de interface `com.adobe.forms.common.service.DataXMLProvider` implementeert. De methode `getDataXMLForDataRef` bevat de logica voor het samenstellen en retourneren van gegevens die het aangepaste formulier gebruikt om de velden vooraf in te vullen. Met deze methode kunt u de gegevens van elke bron ophalen en de invoerstream van het gegevensdocument retourneren. De volgende voorbeeldcode haalt de gebruikersprofielinformatie van de aangemelde gebruiker op en maakt een XML-document waarvan de invoerstream wordt geretourneerd voor gebruik door de adaptieve formulieren.
 
 In het codefragment hieronder hebben we een klasse die de DataXMLProvider-interface implementeert. We krijgen toegang tot de aangemelde gebruiker en halen vervolgens de profielgegevens van de aangemelde gebruiker op. Vervolgens maken we een XML-document met het basisknooppuntelement &#39;data&#39; en voegen we de juiste elementen toe aan dit gegevensknooppunt. Wanneer het XML-document is samengesteld, wordt de invoerstream van het XML-document geretourneerd.
 
@@ -139,12 +139,12 @@ public class PrefillAdaptiveForm implements DataXMLProvider {
 
 Voer het volgende uit om deze mogelijkheid op uw server te testen
 
-* Controleer of u zich hebt aangemeld [gebruikersprofiel](http://localhost:4502/security/users.html) gegevens zijn ingevuld. Het voorbeeld zoekt naar de eigenschappen FirstName, LastName en Email van de aangemelde gebruiker.
+* Zorg ervoor het het programma geopende ](http://localhost:4502/security/users.html) het profiel van de gebruiker [ informatie wordt ingevuld. Het voorbeeld zoekt naar de eigenschappen FirstName, LastName en Email van de aangemelde gebruiker.
 * [Download en extraheer de inhoud van het ZIP-bestand naar uw computer](assets/prefillservice.zip)
-* Implementeer de bundel prefill.core-1.0.0-SNAPSHOT met behulp van de [AEM webconsole](http://localhost:4502/system/console/bundles)
-* Het adaptieve formulier importeren met het dialoogvenster Maken | Bestand uploaden vanaf de [Sectie FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Zorg ervoor dat de [formulier](http://localhost:4502/editor.html/content/forms/af/prefill.html) gebruikt **&quot;Custom AEM Forms PreFill Service&quot;** als de Prefill-service. Dit kan worden geverifieerd op basis van de configuratie-eigenschappen van de **Formuliercontainer** sectie.
-* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Het formulier moet de juiste waarden bevatten.
+* Stel de prefill.core-1.0.0-SNAPSHOT bundel op gebruikend de [ AEM Webconsole ](http://localhost:4502/system/console/bundles)
+* Het adaptieve formulier importeren met het dialoogvenster Maken | Het dossier uploadt van de [ sectie FormsAndDocuments ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Zorg ervoor de [ vorm ](http://localhost:4502/editor.html/content/forms/af/prefill.html) **&quot;De Dienst van de Prevulling van AEM Forms van de Douane&quot;** als prefill dienst gebruikt. Dit kan van de configuratieeigenschappen van de **sectie van de Container van de Vorm** worden geverifieerd.
+* [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Het formulier moet de juiste waarden bevatten.
 
 >[!NOTE]
 >

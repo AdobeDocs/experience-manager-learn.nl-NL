@@ -1,5 +1,5 @@
 ---
-title: AEM gegevensbron configureren
+title: Source voor AEM gegevens configureren
 description: Door MySQL ondersteunde gegevensbron configureren om formuliergegevens op te slaan en op te halen
 feature: Adaptive Forms
 topic: Development
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 # Gegevensbron configureren
 
-Er zijn vele manieren waarmee AEM integratie met een externe gegevensbestand toelaat. Één van de gemeenschappelijkste manieren om een gegevensbestand te integreren is door de configuratieeigenschappen van de Verbinding van Apache Gepoolde DataSource door [configMgr](http://localhost:4502/system/console/configMgr).
-De eerste stap bestaat uit het downloaden en implementeren van de juiste [MySql-stuurprogramma&#39;s](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM.
+Er zijn vele manieren waarmee AEM integratie met een externe gegevensbestand toelaat. Één van de gemeenschappelijkste manieren om een gegevensbestand te integreren is door Apache het Schipen Verbinding Gepoolde eigenschappen van de Configuratie DataSource door [ configMgr ](http://localhost:4502/system/console/configMgr) te gebruiken.
+De eerste stap is de aangewezen [ bestuurders MySql ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM te downloaden en op te stellen.
 Maak Apache Sling Connection Pooled DataSource en geef de eigenschappen op die zijn opgegeven in de onderstaande schermafbeelding. Het databaseschema wordt als onderdeel van deze zelfstudie-elementen aan u verstrekt.
 
-![gegevensbron](assets/data-source.PNG)
+![ gegeven-bron ](assets/data-source.PNG)
 
 Het gegevensbestand heeft één lijst genoemd formdata met de 3 kolommen zoals aangetoond in het scherm-schot hieronder.
 
-![gegevensbank](assets/data-base.PNG)
+![ gegeven-basis ](assets/data-base.PNG)
 
 
 >[!NOTE]
->Zorg ervoor dat u uw gegevensbron een naam geeft **vormgeving**. De voorbeeldcode gebruikt de naam om verbinding te maken met de database.
+>Gelieve te zorgen u uw gegevensbron **aemformstutorial** noemt. De voorbeeldcode gebruikt de naam om verbinding te maken met de database.
 
 | Eigenschapnaam | Waarde |
 | ------------------------|--------------------------------------- |
@@ -41,7 +41,7 @@ Het gegevensbestand heeft één lijst genoemd formdata met de 3 kolommen zoals a
 
 ## Assets
 
-Het SQL-bestand om het schema te maken, kan [hier gedownload](assets/sign-multiple-forms.sql). U zult dit dossier gebruikend MySql werkbank moeten invoeren om het schema en de lijst tot stand te brengen.
+Het SQL dossier om het schema tot stand te brengen kan [ van hier worden gedownload ](assets/sign-multiple-forms.sql). U zult dit dossier gebruikend MySql werkbank moeten invoeren om het schema en de lijst tot stand te brengen.
 
 ## Volgende stappen
 

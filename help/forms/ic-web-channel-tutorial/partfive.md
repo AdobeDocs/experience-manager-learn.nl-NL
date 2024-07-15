@@ -23,11 +23,11 @@ In dit deel maken we documentfragment waarin de naam en het adres van de ontvang
 
 >[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
 
-Documentfragmenten bevatten de tekstinhoud van interactieve communicatiedocumenten. Deze tekstinhoud kan statische tekst zijn of vanuit de onderliggende elementwaarden van het gegevensmodel worden ingevoegd. Bijvoorbeeld {name}, waarbij Beste tekst statisch is en {name} is de naam van het formuliergegevenselement. Tijdens runtime, zal dit aan Beste Gloria Rios of Beste John Jacobs afhankelijk van de waarde van het naamelement oplossen.
+Documentfragmenten bevatten de tekstinhoud van interactieve communicatiedocumenten. Deze tekstinhoud kan statische tekst zijn of vanuit de onderliggende elementwaarden van het gegevensmodel worden ingevoegd. Bijvoorbeeld Beste {name} , waarbij Beste statische tekst is en {name} de naam van het formuliergegevenselement is. Tijdens runtime, zal dit aan Beste Gloria Rios of Beste John Jacobs afhankelijk van de waarde van het naamelement oplossen.
 
 De rijke tekstredacteur is intuïtief genoeg voor een bedrijfsgebruiker aan auteur tekst en neemt vormgegevenselementen op. Met de fragmenteditor van het document kunt u tekst opmaken, lettertypen en stijlen opgeven, speciale tekens invoegen en hyperlinks maken.
 
-De fragmenteditor van het document kan ook inline voorwaarden in uw tekst invoegen, zoals in dit voorbeeld wordt getoond [video](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+De redacteur van het documentfragment heeft ook de capaciteit om inline voorwaarden in uw tekst op te nemen zoals aangetoond in deze [ video ](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >

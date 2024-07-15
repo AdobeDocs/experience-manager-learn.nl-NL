@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Snelle toegang
 
-Leer hoe de widget Snelle toegang van mijn werkruimte uw productiviteit kan verhogen en uw workflow kan stroomlijnen door als persoonlijke lens in AEM Assets te fungeren, zodat alle middelen die u nodig hebt voor uw toegewezen taken binnen handbereik blijven.
+Leer hoe mijn Workspace Quick Access-widget uw productiviteit kan verhogen en uw workflow kan stroomlijnen door als persoonlijke lens in AEM Assets te fungeren, zodat alle middelen die u nodig hebt voor uw toegewezen taken binnen handbereik blijven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420975/?learn=on)

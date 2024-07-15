@@ -10,8 +10,8 @@ audience: developer
 index: y
 source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 46%
+source-wordcount: '124'
+ht-degree: 37%
 
 ---
 
@@ -28,14 +28,14 @@ ht-degree: 46%
    + [5 - Stijlsysteem](./project-archetype/style-system.md)
    + [6 - Aangepaste component](./project-archetype/custom-component.md)
    + [7 - Eenheid testen](./project-archetype/unit-testing.md)
-+ Snel site maken {#site-template}
++ Snel sites maken {#site-template}
    + [Overzicht](./site-template/overview.md)
    + [1 - Een site maken](./site-template/create-site.md)
    + [2 - Introductie tot het ontwerpen en publiceren](./site-template/author-content-publish.md)
    + [3 - UI-planning met Adobe XD](./site-template/ui-planning-adobe-xd.md)
    + [4 - Paginasjablonen](./site-template/page-templates.md)
    + [5 - Thema](./site-template/theming.md)
-+ Voorste pijplijn inschakelen - DevOps{#enable-frontend-pipeline-devops}
++ Enable Front-End Pipeline - DevOps {#enable-frontend-pipeline-devops}
    + [Overzicht](./enable-frontend-pipeline/overview.md)
    + [1 - Volledige stackproject controleren](./enable-frontend-pipeline/review-uifrontend-module.md)
    + [2 - Werk Project bij om Voorste Pijpleiding te gebruiken](./enable-frontend-pipeline/update-project.md)

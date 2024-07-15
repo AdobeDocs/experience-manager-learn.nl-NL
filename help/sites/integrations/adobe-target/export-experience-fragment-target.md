@@ -38,23 +38,23 @@ Leer hoe u AEM Ervaring Fragment als Adobe Target-aanbiedingen exporteert.
 
 Als u het fragment Experience naar Adobe Target exporteert zonder de juiste machtigingen in Adobe Admin Console, treedt de volgende fout op bij de AEM Auteur-service:
 
-![Interface van doel-API](assets/error-target-offer.png)
+![ de Fout van doel API UI ](assets/error-target-offer.png)
 
-... en de volgende logberichten in de `aemerror` logboek:
+... en de volgende logberichten in het `aemerror` -logboek:
 
-![Fout doelAPI-console](assets/target-console-error.png)
+![ Fout van de Console van het Doel API ](assets/target-console-error.png)
 
 #### Resolutie
 
-1. Aanmelden bij [Admin Console](https://adminconsole.adobe.com/) met beheerrechten voor het gebruikte Adobe Target-productprofiel, maar de AEM integratie
-2. Selecteren __Producten > Adobe Target > Productprofiel__
-3. Onder __Integraties__ selecteert u de integratie voor uw AEM as a Cloud Service omgeving (dezelfde naam als het Adobe Developer-project)
-4. Toewijzen __Editor__ of __Fiatteur__ rol
+1. Login aan [ Admin Console ](https://adminconsole.adobe.com/) met administratieve rechten voor het Gebruikte Profiel van het Product van Adobe Target maar de AEM integratie
+2. Selecteer __Producten > Adobe Target > het Profiel van het Product__
+3. Onder __Integraties__ lusje, selecteer de integratie voor uw milieu van AEM as a Cloud Service (zelfde naam zoals het project van Adobe Developer)
+4. Wijs __Redacteur__ toe of __Approver__ rol
 
-   ![DoelAPI-fout](assets/target-permissions.png)
+   ![ de Fout van doel API ](assets/target-permissions.png)
 
 Als u de juiste machtigingen toevoegt aan de Adobe Target-integratie, wordt deze fout opgelost.
 
 ## Ondersteunende koppelingen
 
-+ [Adobe Experience Cloud-foutopsporing - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

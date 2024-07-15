@@ -23,46 +23,46 @@ Een bundel OSGi is een Java™ archiefdossier dat code Java, middelen, en manife
 
 ## JDK installeren
 
-De ondersteunde versie van JDK installeren. Ik heb JDK1.8 gebruikt. Zorg ervoor dat u hebt toegevoegd **JAVA_HOME** in uw milieuvariabelen en wijst naar de wortelomslag van uw installatie JDK.
+De ondersteunde versie van JDK installeren. Ik heb JDK1.8 gebruikt. Zorg ervoor u **JAVA_HOME** in uw milieuvariabelen hebt toegevoegd en aan de wortelomslag van uw installatie richt JDK.
 De %JAVA_HOME%/bin toevoegen aan het pad
 
-![gegevensbron](assets/java-home.JPG)
+![ gegeven-bron ](assets/java-home.JPG)
 
 >[!NOTE]
 > Gebruik JDK 15 niet. Dit wordt niet ondersteund door AEM.
 
 ### Uw JDK-versie testen
 
-Open een nieuw opdrachtpromptvenster en typ: `java -version`. U moet de JDK-versie die door de `JAVA_HOME` variabel
+Open een nieuw opdrachtpromptvenster en typ: `java -version` . De JDK-versie die wordt aangeduid door de variabele `JAVA_HOME` , moet worden hersteld
 
-![gegevensbron](assets/java-version.JPG)
+![ gegeven-bron ](assets/java-version.JPG)
 
 ## Gemaakt installeren
 
 Maven is een tool voor automatisering van build die voornamelijk wordt gebruikt voor Java-projecten. Voer de volgende stappen uit om te installeren op uw lokale systeem.
 
-* Een map maken met de naam `maven` in uw C-station
-* Download de [binair ZIP-archief](https://maven.apache.org/download.cgi)
+* Maak een map met de naam `maven` in station C
+* Download het [ binaire zip archief ](https://maven.apache.org/download.cgi)
 * De inhoud van het ZIP-archief extraheren naar `c:\maven`
-* Een omgevingsvariabele maken met de naam `M2_HOME` met een waarde van `C:\maven\apache-maven-3.6.0`. In mijn geval **mvn** versie is 3.6.0. Op het moment dat dit artikel wordt geschreven, is de nieuwste versie 3.6.3
-* Voeg de `%M2_HOME%\bin` naar uw pad
+* Maak een omgevingsvariabele met de naam `M2_HOME` met de waarde `C:\maven\apache-maven-3.6.0` . In mijn geval, is de **mvn** versie 3.6.0. Op het moment dat dit artikel wordt geschreven, is de nieuwste versie 3.6.3
+* Voeg de `%M2_HOME%\bin` toe aan het pad
 * Uw wijzigingen opslaan
-* Open een nieuwe opdrachtprompt en typ in `mvn -version`. U moet de **mvn** versie weergegeven zoals weergegeven in onderstaande schermafbeelding
+* Open een nieuwe opdrachtprompt en typ in `mvn -version` . U zou de **mvn** versie moeten zien die zoals hieronder getoond in het schermschot wordt vermeld
 
-![gegevensbron](assets/mvn-version.JPG)
+![ gegeven-bron ](assets/mvn-version.JPG)
 
 
 ## Eclipse installeren
 
-De nieuwste versie van [verduisteren](https://www.eclipse.org/downloads/)
+Installeer de recentste versie van [ eclipse ](https://www.eclipse.org/downloads/)
 
 ## Uw eerste project maken
 
 Archetype is een Maven project sjabloonkit. Een archetype wordt gedefinieerd als een origineel patroon of model waaruit alle andere dingen van dezelfde soort zijn gemaakt. De naam past bij de manier waarop we proberen een systeem te bieden dat een consistente manier biedt om Maven-projecten te genereren. Archetype helpt auteurs Maven projectmalplaatjes voor gebruikers tot stand brengen, en voorziet gebruikers van de middelen om geparameterized versies van die projectmalplaatjes te produceren.
 Voer de volgende stappen uit om uw eerste gemaakte project te maken:
 
-* Een nieuwe map maken met de naam `aemformsbundles` in uw C-station
-* Een opdrachtprompt openen en naar `c:\aemformsbundles`
+* Maak een nieuwe map met de naam `aemformsbundles` in station C
+* Een opdrachtprompt openen en naar `c:\aemformsbundles` navigeren
 * Voer het volgende bevel in uw bevelherinnering in werking
 
 ```java
@@ -73,37 +73,37 @@ Na succesvolle voltooiing zou u een bericht van het bouwstijlsucces in uw bevelv
 
 ## Overschrijvingsproject maken van uw in kaart gebrachte project
 
-* Wijzig uw werkmap in `mysite`
-* Uitvoeren `mvn eclipse:eclipse` vanaf de opdrachtregel. De opdracht leest uw pombestand en maakt Eclipse-projecten met de juiste metagegevens, zodat Eclipse de projecttypen, relaties, klassenpad enzovoort begrijpt.
+* De werkmap wijzigen in `mysite`
+* Voer `mvn eclipse:eclipse` uit vanaf de opdrachtregel. De opdracht leest uw pombestand en maakt Eclipse-projecten met de juiste metagegevens, zodat Eclipse de projecttypen, relaties, klassenpad enzovoort begrijpt.
 
 ## Het project in een ovaal importeren
 
-Starten **Eclipse**
+**Verduistering van de lancering**
 
-Ga naar **Bestand -> Importeren** en selecteert u **Bestaande Maven Projecten** zoals hier getoond
+Ga naar **Dossier -> de Invoer** en selecteer **Bestaande Gemaakte Projecten** zoals hier getoond
 
-![gegevensbron](assets/import-mvn-project.JPG)
+![ gegeven-bron ](assets/import-mvn-project.JPG)
 
 Klik op Volgende
 
-Selecteer de site C:\aemformsbundles\mijndoor op de knop **Bladeren** knop
+Selecteer c:\aemformsbundles\mysite door **te klikken doorbladert** knoop
 
-![gegevensbron](assets/mysite-eclipse-project.png)
+![ gegeven-bron ](assets/mysite-eclipse-project.png)
 
 >[!NOTE]
 >U kunt desgewenst de geschikte modules importeren. Selecteer en importeer alleen de kernmodule als u alleen Java-code gaat maken in uw project.
 
-Klikken **Voltooien** om het importproces te starten
+Klik **Afwerking** om het de invoerproces te beginnen
 
-Project wordt geïmporteerd in Eclipse en er wordt een aantal `mysite.xxxx` mappen
+Het project wordt geïmporteerd in Eclipse en u ziet een aantal `mysite.xxxx` mappen
 
-Breid uit `src/main/java` onder de `mysite.core` map. Dit is de map waarin u het grootste deel van uw code schrijft.
+Vouw `src/main/java` onder de map `mysite.core` uit. Dit is de map waarin u het grootste deel van uw code schrijft.
 
-![gegevensbron](assets/mysite-core-project.png)
+![ gegeven-bron ](assets/mysite-core-project.png)
 
 ## AEMFD Client SDK opnemen
 
-U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren van verschillende services die bij AEM Forms worden geleverd. Zie [AEMFD Client SDK](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliënt SDK in uw Geweven project op te nemen. U moet de AEM FD Client SDK opnemen in de sectie Afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder aangegeven.
+U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren van verschillende services die bij AEM Forms worden geleverd. Gelieve te verwijzen [ AEMFD de Cliënt SDK van SDK ](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) om de aangewezen cliënt SDK in uw Gemaakt project te omvatten. U moet de AEM FD Client SDK opnemen in de sectie voor afhankelijkheden van `pom.xml` van het kernproject, zoals hieronder wordt weergegeven.
 
 ```xml
 <dependency>
@@ -115,11 +115,11 @@ U moet de SDK van de AEMFD-client in uw project opnemen om te kunnen profiteren 
 
 Voer de volgende stappen uit om uw project te maken:
 
-* Openen **opdrachtpromptvenster**
+* Open **bevel snel venster**
 * Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
-Bovenstaande opdracht bouwt en installeert de bundel op de AEM server waarop `http://localhost:4502`. De bundel is ook beschikbaar in het bestandssysteem op
-  `C:\AEMFormsBundles\mysite\core\target` en kan worden ingezet met behulp van [Felix-webconsole](http://localhost:4502/system/console/bundles)
+De bovenstaande opdracht bouwt en installeert de bundel op de AEM server waarop `http://localhost:4502` wordt uitgevoerd. De bundel is ook beschikbaar in het bestandssysteem op
+  `C:\AEMFormsBundles\mysite\core\target` en kan worden opgesteld gebruikend [ het Webconsole van Felix ](http://localhost:4502/system/console/bundles)
 
 ## Volgende stappen
 

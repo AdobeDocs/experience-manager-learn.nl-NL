@@ -10,7 +10,7 @@ recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
 source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
 
 >[!TIP]
 >
->Deze verzameling zelfstudies is ontworpen voor gebruikers die liever **leren door te doen**. Als u van de grond het leren van concepten verkiest, controleer uit [AEM Headless Developer Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
+>Deze inzameling van leerprogramma&#39;s wordt ontworpen voor hen die verkiezen **te leren door** te doen. Als u het leren van concepten van de grond omhoog verkiest, controleer de [ AEM Zwaardeloze Reis van de Ontwikkelaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Deze set zelfstudies en de reis vullen elkaar aan.
 
 ## Tutorials via API
 
@@ -35,11 +35,11 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
-    <strong>GRAPHQL API</strong>
+    <strong> GraphQL API </strong>
     </a>
     </div>
     <p>
-    <em>Leer hoe een toepassing AEM GraphQL API kan gebruiken om inhoud te vragen.</em>
+    <em> leer hoe een toepassing AEM GraphQL API kan gebruiken om inhoud te vragen.</em>
     <p>
   </td>
   <td>
@@ -48,11 +48,11 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
-    <strong>Tokenverificatie</strong>
+    <strong> Symbolische authentificatie </strong>
     </a>
     </div>
     <p>
-    <em>Leer hoe een toepassing veilig kan worden geverifieerd met AEM.</em>
+    <em> leer hoe een toepassing met AEM veilig voor authentiek kan verklaren.</em>
     </p>
   </td>
   <td>
@@ -61,11 +61,11 @@ Adobe Experience Manager (AEM) heeft meerdere opties om eindpunten zonder kop te
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-        <strong>Inhoudsservices</strong>
+        <strong> de Diensten van de Inhoud </strong>
       </a>
     </div>
     <p>
-    <em>Leer hoe een toepassing een REST API kan gebruiken om inhoud te verbruiken.</em>
+    <em> leer hoe een toepassing REST API kan gebruiken om inhoud te verbruiken.</em>
     <p>
   </td>
 </tr>
@@ -83,24 +83,24 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
-    <strong>iOS SwiftUI-voorbeeld</strong>
+    <strong> iOS SwiftUI Voorbeeld </strong>
     </a>
     </div>
     <p>
-    <em>Een iOS-toepassing die wordt aangedreven door AEM GraphQL API's.</em>
+    <em> een toepassing van iOS die door GraphQL APIs wordt aangedreven AEM.</em>
     <p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
-    <img alt="Voorbeeld van Android" src="./assets/android-example.png" />
+    <img alt="Android-voorbeeld" src="./assets/android-example.png" />
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
-    <strong>Android™-voorbeeld</strong>
+    <strong> Android™ Voorbeeld </strong>
     </a>
     </div>
     <p>
-    <em>Een Android™-toepassing die wordt aangedreven door AEM GraphQL API's.</em>
+    <em> een toepassing Android™ die door GraphQL APIs wordt aangedreven te AEM.</em>
     </p>
   </td>
   <td>
@@ -109,11 +109,11 @@ Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop v
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
-        <strong>Voorbeeld Reageren</strong>
+        <strong> Reageer Voorbeeld </strong>
       </a>
     </div>
     <p>
-    <em>Een React toepassing aangedreven door AEM GraphQL APIs.</em>
+    <em> A React toepassing die door AEM wordt aangedreven GraphQL APIs.</em>
     <p>
   </td>
 </tr>
@@ -131,11 +131,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
-    <strong>Reageren - Hoofdloos</strong>
+    <strong> Reageren - Zwaartepunt </strong>
     </a>
     </div>
     <p>
-    <em>Creëer een React JS-app met GraphQL in een puur koploos scenario.</em>
+    <em> bouwt React JS app gebruikend GraphQL in een puur koploos scenario.</em>
     <p>
   </td>
   <td>
@@ -144,11 +144,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
-    <strong>Reageren - Externe editor</strong>
+    <strong> Reageren - Verre redacteur </strong>
     </a>
     </div>
     <p>
-    <em>De auteur in-context een gedeelte van een ver ontvangen toepassing van het Reageren.</em>
+    <em> Auteur in-context een gedeelte van ver ontvangen toepassing van het Reageren.</em>
     </p>
   </td>
   <td>
@@ -157,11 +157,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-        <strong>Reageren - SPA Editor</strong>
+        <strong> Reageren - SPA Redacteur </strong>
       </a>
     </div>
     <p>
-    <em>Gebruik de AEM SPA editor om de volledige ervaring van de React-app te beheren.</em>
+    <em> gebruik de AEM SPA redacteur om volledige React te leiden app ervaring.</em>
     <p>
   </td>
 </tr>
@@ -172,11 +172,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
-    <strong>Android - Inhoudsservices</strong>
+    <strong> Android - de Diensten van de Inhoud </strong>
     </a>
     </div>
     <p>
-    <em>Gebruik Content Services en REST om een mobiele Android™-toepassing van stroom te voorzien.</em>
+    <em> de Diensten van de Inhoud van het Gebruik en REST om een mobiele toepassing van Android™ aan te drijven.</em>
     </p>
   </td>
   <td>
@@ -185,11 +185,11 @@ Blader door de volgende zelfstudies op basis van de gebruikte technologie. Leer 
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
-        <strong>Node.js - Authentificatie</strong>
+        <strong> Node.js - Authentificatie </strong>
       </a>
     </div>
     <p>
-    <em>Maak een Node.js-app met ontwikkelaars- en servicetokens voor verificatie.</em>
+    <em> bouwt een toepassing Node.js gebruikend ontwikkelaar en de diensttokens voor authentiek te verklaren.</em>
     <p>
   </td>
   <td></td>

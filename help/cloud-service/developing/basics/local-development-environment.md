@@ -1,6 +1,6 @@
 ---
 title: Hoe te opstelling een Lokale AEM ontwikkelomgeving
-description: Leer hoe u een lokale ontwikkelomgeving downloadt en instelt met de AEM as a Cloud Service SDK.
+description: Leer hoe u een lokale ontwikkelomgeving downloadt en instelt met de SDK van AEM as a Cloud Service.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # Lokale ontwikkelomgeving instellen
 
-Leer hoe u een lokale ontwikkelomgeving downloadt en instelt met de AEM as a Cloud Service SDK.
+Leer hoe u een lokale ontwikkelomgeving downloadt en instelt met de SDK van AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330558?quality=12&learn=on)
 
-_De `license.properties` in deze video wordt getoond is niet meer nodig om de AEM SDK in werking te stellen._
+_`license.properties` getoond in deze video is niet meer nodig om AEM SDK in werking te stellen._
 
-Bekijk deze instructies voor [een volledige lokale ontwikkelomgeving instellen met behulp van de AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+Herzie deze instructies aan [ opstelling een volledige lokale ontwikkelomgeving gebruikend de AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).

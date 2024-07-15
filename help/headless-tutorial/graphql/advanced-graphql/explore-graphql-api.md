@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # De AEM GraphQL API verkennen
 
-Met de GraphQL API in AEM kunt u gegevens van inhoudsfragmenten toegankelijk maken voor downstreamtoepassingen. In de basiszelfstudie [GraphQL-zelfstudie met meerdere stappen](../multi-step/explore-graphql-api.md), gebruikte u de Ontdekkingsreiziger GraphiQL om de vragen van GraphQL te testen en te verfijnen.
+Met de GraphQL API in AEM kunt u gegevens van inhoudsfragmenten toegankelijk maken voor downstreamtoepassingen. In het basisleerprogramma [ multi-step zelfstudie van GraphQL ](../multi-step/explore-graphql-api.md), gebruikte u de Ontdekkingsreiziger GraphiQL om de vragen van GraphQL te testen en te raffineren.
 
-In dit hoofdstuk, gebruikt u de Ontdekkingsreiziger GraphiQL om geavanceerdere vragen te bepalen om gegevens van de Fragments van de Inhoud te verzamelen die u in creeerde [vorige hoofdstuk](../advanced-graphql/author-content-fragments.md).
+In dit hoofdstuk, gebruikt u de Ontdekkingsreiziger GraphiQL om geavanceerdere vragen te bepalen om gegevens van de Fragmenten van de Inhoud te verzamelen die u in het [ vorige hoofdstuk ](../advanced-graphql/author-content-fragments.md) creeerde.
 
 ## Vereisten {#prerequisites}
 
@@ -38,30 +38,30 @@ In dit hoofdstuk leert u hoe te:
 ## De GraphiQL Explorer gebruiken
 
 
-De [GraphiQL Explorer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) kunnen ontwikkelaars query&#39;s maken en testen op inhoud in de huidige AEM. Met het gereedschap GraphiQL kunnen gebruikers ook **aanhouden of opslaan** vragen die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
+Het ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) hulpmiddel van de Ontdekkingsreiziger 0} GraphiQL laat ontwikkelaars toe om, en testvragen tegen inhoud op het huidige AEM milieu tot stand te brengen. [ Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
 
-Verken vervolgens de kracht van AEM GraphQL API met behulp van de ingebouwde GraphiQL Explorer.
+Verken vervolgens de kracht van het AEM van de GraphQL API met behulp van de ingebouwde GraphiQL Explorer.
 
-1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**.
+1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**.
 
-   ![Navigeer aan GrahiQL winde](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+   ![ navigeer aan GrahiQL winde ](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
 >[!IMPORTANT]
 >
->In, sommige versies van AEM (6.X.X) moet de Ontdekkingsreiziger GraphiQL (alias GrahiQL IDE) hulpmiddel manueel worden geïnstalleerd, volgen [instructie van hier](../how-to/install-graphiql-aem-6-5.md).
+>In, moeten sommige versies van AEM (6.X.X) de Ontdekkingsreiziger GraphiQL (alias GrahiQL winde) hulpmiddel manueel worden geïnstalleerd, [ instructie van hier volgen ](../how-to/install-graphiql-aem-6-5.md).
 
-1. Zorg ervoor dat in de rechterbovenhoek het eindpunt is ingesteld op **WKND Shared Endpoint**. Het wijzigen van _Endpoint_ dropdown-waarde geeft hier de bestaande _Blijvende query&#39;s_ in de linkerbovenhoek
+1. In de hoger-juiste hoek, zorg ervoor dat het Eindpunt aan **WKND Gedeeld Eindpunt** wordt geplaatst. Het veranderen van de _drop-down waarde van het Eindpunt_ toont hier de bestaande _Gepersisteerde Vragen_ in de top-left hoek.
 
-   ![GraphQL-eindpunt instellen](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
+   ![ plaats GraphQL Eindpunt ](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
 
-Dit zal alle vragen aan modellen behandelen die in **WKND gedeeld** project.
+Dit zal werkingsgebied alle vragen aan modellen die in het **Gedeelde WKND** project worden gecreeerd.
 
 
 ## Een lijst met inhoudsfragmenten filteren met behulp van queryvariabelen
 
-In het vorige [GraphQL-zelfstudie met meerdere stappen](../multi-step/explore-graphql-api.md), bepaalde u, en gebruikte, basisvoortgeduurde vragen om de gegevens van Fragments van de Inhoud te krijgen. Hier, breidt u deze kennis uit en de gegevens van de Fragmenten van de filterinhoud door variabelen tot de persisted query over te gaan.
+In het vorige [ multi-step GraphQL leerprogramma ](../multi-step/explore-graphql-api.md), bepaalde u, en gebruikte, fundamentele voortgeduurde vragen om de gegevens van Fragments van de Inhoud te krijgen. Hier, breidt u deze kennis uit en de gegevens van de Fragmenten van de filterinhoud door variabelen tot de persisted query over te gaan.
 
-Wanneer het ontwikkelen van cliënttoepassingen, gewoonlijk moet u de Fragmenten van de Inhoud filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL API kunt u deze argumenten als variabelen in een query doorgeven om te voorkomen dat tekenreeksen op de client worden gemaakt tijdens runtime. Voor meer informatie over GraphQL-variabelen raadpleegt u de [GraphQL-documentatie](https://graphql.org/learn/queries/#variables).
+Wanneer het ontwikkelen van cliënttoepassingen, gewoonlijk moet u de Fragmenten van de Inhoud filtreren die op dynamische argumenten worden gebaseerd. Met de AEM GraphQL API kunt u deze argumenten als variabelen in een query doorgeven om te voorkomen dat tekenreeksen op de client worden gemaakt tijdens runtime. Voor meer informatie over de variabelen van GraphQL, zie de [ documentatie van GraphQL ](https://graphql.org/learn/queries/#variables).
 
 Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
 
@@ -94,9 +94,9 @@ Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
    }
    ```
 
-   De `listPersonBySkill` query hierboven accepteert één variabele (`skillFilter`) is vereist `String`. Deze query voert een zoekopdracht uit tegen alle Person Content Fragments en filtert deze op basis van de `skills` veld en de tekenreeks die wordt doorgegeven `skillFilter`.
+   De bovenstaande `listPersonBySkill` query accepteert één variabele ( `skillFilter` ) die een vereiste `String` is. Deze query voert een zoekopdracht uit tegen alle Person Content Fragments en filtert deze op basis van het `skills` -veld en de tekenreeks die wordt doorgegeven in `skillFilter` .
 
-   De `listPersonBySkill` bevat de `contactInfo` eigenschap, die een fragmentverwijzing is naar het contactinfo-model dat in de vorige hoofdstukken is gedefinieerd. Het model Contactinfo bevat `phone` en `email` velden. Ten minste een van deze velden in de query moet aanwezig zijn om correct te kunnen functioneren.
+   De eigenschap `listPersonBySkill` bevat de eigenschap `contactInfo` . Dit is een fragmentverwijzing naar het model Contactinfo dat in de vorige hoofdstukken is gedefinieerd. Het model Contactinfo bevat `phone` - en `email` -velden. Ten minste een van deze velden in de query moet aanwezig zijn om correct te kunnen functioneren.
 
    ```graphql
    contactInfo {
@@ -105,7 +105,7 @@ Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
          }
    ```
 
-1. Laten we nu definiëren `skillFilter` en krijg alle Instructeurs die in het skiën bekwaam zijn. Plak de volgende JSON-tekenreeks in het deelvenster Query-variabelen in de GraphiQL IDE:
+1. Vervolgens definiëren we `skillFilter` en krijgen we alle instructeurs die deskundig zijn op het gebied van skiën. Plak de volgende JSON-tekenreeks in het deelvenster Query-variabelen in de GraphiQL IDE:
 
    ```json
    {
@@ -145,13 +145,13 @@ Voor dit voorbeeld, vraag alle Instructeurs die een bepaalde vaardigheid hebben.
    }
    ```
 
-Druk op **Afspelen** in het bovenste menu om de query uit te voeren. De resultaten van de inhoudsfragmenten uit het vorige hoofdstuk worden weergegeven:
+Druk de **knoop van het Spel** in het hoogste menu om de vraag uit te voeren. De resultaten van de inhoudsfragmenten uit het vorige hoofdstuk worden weergegeven:
 
-![Persoon op de Resultaten van de Vaardigheid](assets/explore-graphql-api/person-by-skill.png)
+![ Persoon door de Resultaten van de Vaardigheid ](assets/explore-graphql-api/person-by-skill.png)
 
 ## Filter voor inhoud binnen een fragmentverwijzing
 
-Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vorige hoofdstuk hebt u drie nieuwe fragmentverwijzingen toegevoegd aan een Adventure Content-fragment: `location`, `instructorTeam`, en `administrator`. Nu, filter alle avonturen voor om het even welke Beheerder die een bepaalde naam heeft.
+Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vorige hoofdstuk hebt u drie nieuwe fragmentverwijzingen toegevoegd aan een Adventure Content-fragment: `location` , `instructorTeam` en `administrator` . Nu, filter alle avonturen voor om het even welke Beheerder die een bepaalde naam heeft.
 
 >[!CAUTION]
 >
@@ -190,7 +190,7 @@ Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vori
    }
    ```
 
-   De `getAdventureAdministratorDetailsByAdministratorName` query filtert all Adventures for any `administrator` van `fullName` &quot;Jacob Wester&quot;, die informatie van over twee genestelde Fragments van de Inhoud terugkeert: Adventure en Instructeur.
+   De query van `getAdventureAdministratorDetailsByAdministratorName` filtert alle avonturen op een `administrator` van `fullName` &quot;Jacob Wester&quot;, waarbij informatie uit twee geneste inhoudsfragmenten wordt geretourneerd: avontuur en instructeur.
 
 1. Voer de vraag uit. Het resultaat moet er ongeveer als volgt uitzien:
 
@@ -230,7 +230,7 @@ Met de AEM GraphQL API kunt u zoeken naar geneste inhoudsfragmenten. In het vori
 
 ## Query voor inline-verwijzingen vanuit een tekstveld met meerdere regels {#query-rte-reference}
 
-Met de AEM GraphQL API kunt u zoeken naar inhoud en fragmentverwijzingen binnen tekstvelden met meerdere regels. In het vorige hoofdstuk hebt u beide referentietypen toegevoegd aan het dialoogvenster **Beschrijving** veld van het Yosemite Team Content Fragment. Laten we deze referenties nu ophalen.
+Met de AEM GraphQL API kunt u zoeken naar inhoud en fragmentverwijzingen binnen tekstvelden met meerdere regels. In het vorige hoofdstuk, voegde u beide verwijzingstypes in het **gebied van de Beschrijving** van het Fragment van de Inhoud van het Team Yosemite toe. Laten we deze referenties nu ophalen.
 
 1. In GrahiQL winde, kleef de volgende vraag in het linkerpaneel:
 
@@ -276,13 +276,13 @@ Met de AEM GraphQL API kunt u zoeken naar inhoud en fragmentverwijzingen binnen 
    }
    ```
 
-   De `getTeamByAdventurePath` query filtert alle avonturen per pad en retourneert gegevens voor de `instructorTeam` fragmentverwijzing van een specifiek avontuur.
+   De query van `getTeamByAdventurePath` filtert alle avonturen per pad en retourneert gegevens voor de fragmentverwijzing van een specifiek avontuur van `instructorTeam` .
 
    `_references` is een door het systeem gegenereerd veld dat wordt gebruikt om verwijzingen weer te geven, inclusief die welke in tekstvelden met meerdere regels zijn ingevoegd.
 
-   De `getTeamByAdventurePath` query haalt meerdere verwijzingen op. Eerst wordt de ingebouwde `ImageRef` object om het `_path` en `__typename` van afbeeldingen die als inhoudsverwijzingen zijn ingevoegd in het tekstveld met meerdere regels. Vervolgens wordt `LocationModel` om de gegevens op te halen van het Locatie-inhoudfragment dat in hetzelfde veld wordt ingevoegd.
+   Met de query `getTeamByAdventurePath` worden meerdere referenties opgehaald. Eerst wordt het ingebouwde `ImageRef` -object gebruikt om de `_path` en `__typename` afbeeldingen op te halen die als inhoudsverwijzingen zijn ingevoegd in het tekstveld met meerdere regels. Vervolgens wordt `LocationModel` gebruikt om de gegevens op te halen van het Locatie-inhoudfragment dat in hetzelfde veld wordt ingevoegd.
 
-   De query bevat ook de `_metadata` veld. Hierdoor kunt u de naam van het Team Content Fragment ophalen en later in de WKND-app weergeven.
+   De query bevat ook het veld `_metadata` . Hierdoor kunt u de naam van het Team Content Fragment ophalen en later in de WKND-app weergeven.
 
 1. Vervolgens plakt u de volgende JSON-tekenreeks in het deelvenster Query-variabelen om het Yosemite Backpackaging Adventure op te halen:
 
@@ -344,14 +344,14 @@ Met de AEM GraphQL API kunt u zoeken naar inhoud en fragmentverwijzingen binnen 
    }
    ```
 
-   De `_references` in het veld wordt zowel de afbeelding met het logo als het fragment met de inhoud van de Yosemite-vallei weergegeven dat in het **Beschrijving** veld.
+   Het `_references` gebied onthult zowel het embleembeeld als het Fragment van de Inhoud van de Inhoud van de Bodge van de Vallei Yosemite dat in het **2} gebied van de Beschrijving werd opgenomen.**
 
 
 ## Query uitvoeren met instructies
 
-Soms moet u bij het ontwikkelen van clienttoepassingen de structuur van uw query&#39;s voorwaardelijk wijzigen. In dit geval kunt u met de AEM GraphQL API GraphQL-instructies gebruiken om het gedrag van uw query&#39;s te wijzigen op basis van de opgegeven criteria. Voor meer informatie over GraphQL-richtlijnen raadpleegt u de [GraphQL-documentatie](https://graphql.org/learn/queries/#directives).
+Soms moet u bij het ontwikkelen van clienttoepassingen de structuur van uw query&#39;s voorwaardelijk wijzigen. In dit geval kunt u met de AEM GraphQL API GraphQL-instructies gebruiken om het gedrag van uw query&#39;s te wijzigen op basis van de opgegeven criteria. Voor meer informatie over de richtlijnen van GraphQL, zie de [ documentatie van GraphQL ](https://graphql.org/learn/queries/#directives).
 
-In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt uitvoeren voor inline-verwijzingen binnen tekstvelden met meerdere regels. De inhoud is opgehaald uit het dialoogvenster `description` ingediend in de `plaintext` gebruiken. Daarna, breiden die vraag uit en gebruiken een richtlijn om voorwaardelijk terug te winnen `description` in de `json` ook de notatie.
+In de [ vorige sectie ](#query-rte-reference), leerde u hoe te voor gealigneerde verwijzingen binnen multi-line tekstgebieden vragen. De inhoud is opgehaald uit het `description` -veld in de `plaintext` -indeling. Vervolgens vouwen we die query uit en gebruiken we een instructie om `description` ook voorwaardelijk op te halen in de `json` -indeling.
 
 1. In GrahiQL winde, kleef de volgende vraag in het linkerpaneel:
 
@@ -398,7 +398,7 @@ In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt
    }
    ```
 
-   De bovenstaande query accepteert nog een variabele (`includeJson`) is vereist `Boolean`, ook wel bekend als de queryrichtlijn. Een richtlijn kan worden gebruikt om voorwaardelijk gegevens van te omvatten `description` in het veld `json` formaat dat op boolean wordt gebaseerd die binnen wordt overgegaan `includeJson`.
+   De vraag hierboven keurt één meer variabele (`includeJson`) goed die vereist `Boolean` is, die ook als richtlijn van de vraag wordt bekend. Een instructie kan worden gebruikt om gegevens van het veld `description` voorwaardelijk op te nemen in de `json` -indeling op basis van de Booleaanse waarde die wordt doorgegeven in `includeJson` .
 
 1. Vervolgens plakt u de volgende JSON-tekenreeks in het deelvenster Query-variabelen:
 
@@ -409,9 +409,9 @@ In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt
    }
    ```
 
-1. Voer de vraag uit. U krijgt hetzelfde resultaat als in de vorige sectie over [hoe u query&#39;s kunt uitvoeren voor inline-verwijzingen in tekstvelden met meerdere regels](#query-rte-reference).
+1. Voer de vraag uit. U zou het zelfde resultaat zoals in de vorige sectie op [ moeten krijgen hoe te om voor gealigneerde verwijzingen binnen multi-line tekstgebieden ](#query-rte-reference) te vragen.
 
-1. Werk de `includeJson` richtlijn `true` en voer de vraag opnieuw uit. Het resultaat moet er ongeveer als volgt uitzien:
+1. Werk de aanwijzing `includeJson` bij naar `true` en voer de query opnieuw uit. Het resultaat moet er ongeveer als volgt uitzien:
 
    ```json
    {
@@ -501,7 +501,7 @@ In de [vorige sectie](#query-rte-reference)hebt u geleerd hoe u query&#39;s kunt
 
 ## Query voor het inhoudstype JSON-object
 
-Vergeet niet dat u in het vorige hoofdstuk over het ontwerpen van inhoudsfragmenten een JSON-object hebt toegevoegd aan het dialoogvenster **Weer na seizoen** veld. Laten we die gegevens nu ophalen in het locatieinhoudsfragment.
+Herinner dat in het vorige hoofdstuk op het ontwerpen van de Fragmenten van de Inhoud, u een voorwerp JSON in het **Weather door het 1} gebied van de Verraad {toevoegde.** Laten we die gegevens nu ophalen in het locatieinhoudsfragment.
 
 1. In GrahiQL winde, kleef de volgende vraag in het linkerpaneel:
 
@@ -599,7 +599,7 @@ Vergeet niet dat u in het vorige hoofdstuk over het ontwerpen van inhoudsfragmen
    }
    ```
 
-   De `weatherBySeason` bevat het JSON-object dat in het vorige hoofdstuk is toegevoegd.
+   Het veld `weatherBySeason` bevat het JSON-object dat in het vorige hoofdstuk is toegevoegd.
 
 ## Query uitvoeren voor alle inhoud tegelijk
 
@@ -726,4 +726,4 @@ Gefeliciteerd! U hebt nu geavanceerde query&#39;s getest om gegevens te verzamel
 
 ## Volgende stappen
 
-In de [volgende hoofdstuk](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), zult u leren hoe te om GraphQL vragen voort te zetten en waarom het beste praktijken is om voortgezette vragen in uw toepassingen te gebruiken.
+In het [ volgende hoofdstuk ](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), zult u leren hoe te om de vragen van GraphQL voort te zetten en waarom het beste praktijken is om voortgeduurde vragen in uw toepassingen te gebruiken.

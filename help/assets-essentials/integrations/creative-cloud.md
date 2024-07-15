@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe u Assets Essentials kunt integreren met Adobe Creative Cloud Libraries, zodat:
 
-+ Bestanden van Assets Essentials die naadloos kunnen worden geopend via bibliotheken met Creatives Cloud
-+ Bestanden van bibliotheken met Creatives Cloud die moeten worden gedeeld met Assets Essentials
++ Bestanden van Assets Essentials die naadloos kunnen worden geopend via Creative Cloud Libraries
++ Bestanden van Creative Cloud Libraries die moeten worden gedeeld aan Assets Essentials
 
 >[!VIDEO](https://video.tv.adobe.com/v/336069?quality=12&learn=on)

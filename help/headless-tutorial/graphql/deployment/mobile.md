@@ -27,11 +27,11 @@ Mobiele implementaties vereisen een minimale configuratie, aangezien HTTP-verbin
 
 De volgende implementatieconfiguratie moet op zijn plaats zijn voor mobiele apps.
 
-| Mobiele app maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
+| Mobiele app maakt verbinding met | AEM auteur | AEM Publish | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
-| [AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [ AEM gastheren ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Voorbeeld van mobiele apps
 
@@ -53,7 +53,7 @@ Adobe biedt voorbeelden van mobiele apps voor iOS en Android™.
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/ios-swiftui-app.md" title="iOS-app">iOS-app</a></p>
                    <p class="is-size-6">Een voorbeeld van een iOS-app, geschreven in SwiftUI, die inhoud van AEM Headless GraphQL-API's gebruikt.</p>
                    <a href="../example-apps/ios-swiftui-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Voorbeeld van de Mening </span>
                    </a>
                </div>
            </div>
@@ -74,7 +74,7 @@ Adobe biedt voorbeelden van mobiele apps voor iOS en Android™.
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="Android™-app">Android™-app</a></p>
                    <p class="is-size-6">Een voorbeeld van een Java™ Android™-app die inhoud van AEM GraphQL-API's zonder koppen gebruikt.</p>
                    <a href="../example-apps/android-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Voorbeeld van de Mening </span>
                    </a>
                </div>
            </div>

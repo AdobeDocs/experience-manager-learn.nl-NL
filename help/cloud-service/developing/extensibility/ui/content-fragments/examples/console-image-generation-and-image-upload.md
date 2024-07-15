@@ -25,44 +25,44 @@ Leer hoe u een afbeelding genereert met OpenAI of DALL・E 2 en deze uploadt naa
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413093?quality=12&learn=on)
 
-Dit voorbeeld AEM de extensie Content Fragment Console is een [actiebalk](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) extensie die digitale beelden genereert op basis van invoer van natuurlijke talen met behulp van [OpenAI API](https://openai.com/api/) of [DALL・E 2](https://openai.com/dall-e-2/). De gegenereerde afbeelding wordt geüpload naar de AEM DAM en de afbeeldingseigenschap van het geselecteerde inhoudsfragment wordt bijgewerkt om deze nieuw gegenereerde, geüploade afbeelding van DAM te gebruiken.
+Dit voorbeeld AEM de uitbreiding van de Console van het Fragment van de Inhoud is een [ uitbreiding van de actiebar ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) die digitaal beeld van natuurlijke taalinput gebruikend [ OpenAI API ](https://openai.com/api/) of [ DALL・E 2 ](https://openai.com/dall-e-2/) produceert. De gegenereerde afbeelding wordt geüpload naar de AEM DAM en de afbeeldingseigenschap van het geselecteerde inhoudsfragment wordt bijgewerkt om deze nieuw gegenereerde, geüploade afbeelding van DAM te gebruiken.
 
 In dit voorbeeld leert u:
 
-1. Afbeelding genereren met [OpenAI API](https://beta.openai.com/docs/guides/images/image-generation-beta) of [DALL・E 2](https://openai.com/dall-e-2/)
+1. De generatie van het beeld gebruikend [ OpenAI API ](https://beta.openai.com/docs/guides/images/image-generation-beta) of [ DALL・E 2 ](https://openai.com/dall-e-2/)
 2. Afbeeldingen uploaden naar AEM
 3. Update van eigenschap Content Fragment
 
 De functionele stroom van de voorbeeldextensie is als volgt:
 
-![Adobe I/O Runtime-actiestroom voor het genereren van digitale afbeeldingen](./assets/digital-image-generation/flow.png){align="center"}
+![ de actiestroom van Adobe I/O Runtime voor digitale beeldgeneratie ](./assets/digital-image-generation/flow.png){align="center"}
 
-1. Selecteer Inhoudsfragment en klik op de extensie `Generate Image` in de [actiebalk](#extension-registration) opent de [modaal](#modal).
-1. De [modaal](#modal) geeft een aangepast invoerformulier weer dat is gebouwd met [Spectrum reageren](https://react-spectrum.adobe.com/react-spectrum/).
-1. De gebruiker die het formulier verzendt, verzendt het formulier `Image Description` tekst, het geselecteerde inhoudsfragment en de AEM host naar de [aangepaste Adobe I/O Runtime-actie](#adobe-io-runtime-action).
-1. De [Adobe I/O Runtime-actie](#adobe-io-runtime-action) valideert de invoer.
-1. Vervolgens worden de OpenAI&#39;s [Afbeelding genereren](https://beta.openai.com/docs/guides/images/image-generation-beta) API en gebruikt `Image Description` tekst om aan te geven welke afbeelding moet worden gegenereerd.
-1. De [image genereren](https://beta.openai.com/docs/guides/images/image-generation-beta) maakt een oorspronkelijke afbeelding van grootte _1024x1024_ pixels die de parameterwaarde van de prompt request gebruiken en retourneert de gegenereerde afbeeldings-URL als reactie.
-1. De [Adobe I/O Runtime-actie](#adobe-io-runtime-action) Hiermee downloadt u de gegenereerde afbeelding naar de App Builder-runtime.
+1. Selecteer het Fragment van de Inhoud en het klikken van de knoop van de uitbreiding `Generate Image` in de [ actiebar ](#extension-registration) opent [ modaal ](#modal).
+1. [ modaal ](#modal) toont een vorm van de douanetoevoer die met [ wordt gebouwd Reageer Spectrum ](https://react-spectrum.adobe.com/react-spectrum/).
+1. Het voorleggen van de vorm verzendt de gebruiker verstrekte `Image Description` tekst, het geselecteerde Fragment van de Inhoud, en de AEM gastheer aan de [ actie van douaneAdobe I/O Runtime ](#adobe-io-runtime-action).
+1. De [ actie van Adobe I/O Runtime ](#adobe-io-runtime-action) bevestigt de input.
+1. Daarna roept het de generatie van het Beeld OpenAI [ ](https://beta.openai.com/docs/guides/images/image-generation-beta) API en het gebruikt `Image Description` tekst om te specificeren welk beeld zou moeten worden geproduceerd.
+1. Het ](https://beta.openai.com/docs/guides/images/image-generation-beta) eindpunt van de beeldgeneratie van 0} {leidt tot een origineel beeld van grootte _1024x1024_ pixel gebruikend de waarde van de vraagparameter en keert het geproduceerde beeld URL als reactie terug.[
+1. De [ actie van Adobe I/O Runtime ](#adobe-io-runtime-action) downloadt het geproduceerde beeld aan runtime van App Builder.
 1. Vervolgens wordt het uploaden van de afbeelding vanuit de App Builder-runtime naar AEM DAM gestart onder een vooraf gedefinieerd pad.
-1. De AEM as a Cloud Service slaat afbeelding op naar de DAM en retourneert een geslaagde of mislukte reactie op de Adobe I/O Runtime-actie. De geslaagde upload reactie werkt de geselecteerde de bezitswaarde van het Beeld van het Fragment van de Inhoud bij gebruikend een andere HTTP- verzoek aan AEM van de actie van Adobe I/O Runtime.
+1. De AEM as a Cloud Service slaat de afbeelding op naar de DAM en retourneert een geslaagde of mislukte reactie op de Adobe I/O Runtime-actie. De geslaagde upload reactie werkt de geselecteerde de bezitswaarde van het Beeld van het Fragment van de Inhoud bij gebruikend een andere HTTP- verzoek aan AEM van de actie van Adobe I/O Runtime.
 1. Het modaal ontvangt de reactie van de actie van Adobe I/O Runtime, en verstrekt AEM verbinding van activa details van het onlangs geproduceerde, geüploade beeld.
 
 ## Extensiepunt
 
-In dit voorbeeld wordt het uitbreidingspunt uitgebreid `actionBar` om een aangepaste knop toe te voegen aan de Content Fragment Console.
+In dit voorbeeld wordt het uitbreidingspunt `actionBar` uitgebreid om een aangepaste knop toe te voegen aan de Content Fragment Console.
 
 | AEM UI uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
-| [Console voor inhoudsfragment](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Actiebalk](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
+| [ de Console van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [ de Bar van de Actie ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
 ## Voorbeeldextensie
 
-In het voorbeeld wordt een bestaand Adobe Developer Console-project gebruikt en worden de volgende opties gebruikt bij het initialiseren van de App Builder-app via `aio app init`.
+In het voorbeeld wordt een bestaand Adobe Developer Console-project gebruikt en worden de volgende opties gebruikt bij het initialiseren van de App Builder-toepassing via `aio app init` .
 
 + Welke sjablonen wilt u zoeken?: `All Extension Points`
-+ Kies de sjabloon die u wilt installeren:` @adobe/aem-cf-admin-ui-ext-tpl`
-+ Wat wilt u de extensie een naam geven? `Image generation`
++ Kies de sjabloon of sjablonen die u wilt installeren:` @adobe/aem-cf-admin-ui-ext-tpl`
++ Wat wilt u de extensie een naam geven?: `Image generation`
 + Geef een korte beschrijving van de extensie: `An example action bar extension that generates an image using OpenAI and uploads it to AEM DAM.`
 + Met welke versie wilt u beginnen?: `0.0.1`
 + Wat wilt u nu doen?
@@ -76,8 +76,8 @@ De gegenereerde App Builder-extensie-app wordt bijgewerkt zoals hieronder wordt 
 
 ### Eerste configuratie
 
-1. Meld u gratis aan [OpenAI API](https://openai.com/api/) een account maken en een [API-sleutel](https://beta.openai.com/account/api-keys)
-1. Voeg deze sleutel aan uw project App Builder toe `.env` file
+1. Teken omhoog voor een vrije [ OpenAI API ](https://openai.com/api/) rekening en creeer een [ API sleutel ](https://beta.openai.com/account/api-keys)
+1. Deze sleutel toevoegen aan het `.env` -bestand van uw App Builder-project
 
    ```
        # Specify your secrets here
@@ -91,7 +91,7 @@ De gegenereerde App Builder-extensie-app wordt bijgewerkt zoals hieronder wordt 
        ...
    ```
 
-1. Voldoende `OPENAI_API_KEY` Als param voor de Adobe I/O Runtime-actie, werkt u de `src/aem-cf-console-admin-1/ext.config.yaml`
+1. Geef `OPENAI_API_KEY` door als param voor de Adobe I/O Runtime-actie, werk de `src/aem-cf-console-admin-1/ext.config.yaml` bij
 
    ```yaml
        ...
@@ -112,30 +112,30 @@ De gegenereerde App Builder-extensie-app wordt bijgewerkt zoals hieronder wordt 
    ```
 
 1. Installeren onder Node.js-bibliotheken
-   1. [De OpenAI Node.js-bibliotheek](https://github.com/openai/openai-node#installation) - om de OpenAI API gemakkelijk aan te roepen
-   1. [AEM uploaden](https://github.com/adobe/aem-upload#install) - om afbeeldingen te uploaden naar AEM-CS-instanties.
+   1. [ De bibliotheek OpenAI Node.js ](https://github.com/openai/openai-node#installation) - om gemakkelijk OpenAI API aan te halen
+   1. [ AEM uploaden ](https://github.com/adobe/aem-upload#install) - om beelden aan instanties te uploaden AEM-CS.
 
 
 >[!TIP]
 >
->In de volgende secties leert u over de belangrijkste Reactie- en Adobe I/O Runtime-actie-JavaScript-bestanden. Als referentie kunt u de belangrijkste bestanden van `web-src` en  `actions` de omslag van het project AppBuilder wordt verstrekt, zie [adobe-appbuilder-cfc-ext-image-generation-code.zip](./assets/digital-image-generation/adobe-appbuilder-cfc-ext-image-generation-code.zip).
+>In de volgende secties leert u meer over de belangrijkste JavaScript-bestanden voor Reageren en Adobe I/O Runtime-actie. Voor uw verwijzing worden de belangrijkste dossiers van `web-src` en `actions` omslag van het project AppBuilder verstrekt, zie [ adobe-appbuilder-cfc-ext-image-generation-code.zip ](./assets/digital-image-generation/adobe-appbuilder-cfc-ext-image-generation-code.zip).
 
 
 ### Toepassingsroutes{#app-routes}
 
-De `src/aem-cf-console-admin-1/web-src/src/components/App.js` bevat de [Reageren router](https://reactrouter.com/en/main).
+`src/aem-cf-console-admin-1/web-src/src/components/App.js` bevat de [ React router ](https://reactrouter.com/en/main).
 
 Er zijn twee logische reeksen routes:
 
-1. De eerste routekaarten verzoeken aan `index.html`, die de component React aanroept die verantwoordelijk is voor de [extensieverichting](#extension-registration).
+1. De eerste routekaarten verzoeken aan `index.html`, die de component van het Reageren verantwoordelijk voor de [ uitbreidingsregistratie ](#extension-registration) aanhaalt.
 
    ```javascript
    <Route index element={<ExtensionRegistration />} />
    ```
 
-1. De tweede reeks routes brengt URLs in kaart om componenten te Reageren die de inhoud van de modaal van de uitbreiding teruggeven. De `:selection` param staat voor een pad met een als scheidingsteken weergegeven inhoudsfragment.
+1. De tweede reeks routes brengt URLs in kaart om componenten te Reageren die de inhoud van de modaal van de uitbreiding teruggeven. De `:selection` -param vertegenwoordigt een pad met een als scheidingsteken weergegeven inhoudsfragment.
 
-   Als de extensie meerdere knoppen heeft om afzonderlijke handelingen aan te roepen, moet elke knop [extensieverichting](#extension-registration) kaarten aan een hier bepaalde route.
+   Als de uitbreiding veelvoudige knopen heeft om discrete acties aan te halen, elke [ uitbreidingsregistratie ](#extension-registration) kaarten aan een hier bepaalde route.
 
    ```javascript
    <Route
@@ -146,11 +146,11 @@ Er zijn twee logische reeksen routes:
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js`, toegewezen aan de `index.html` route, is het ingangspunt voor de AEM uitbreiding en bepaalt:
+`ExtensionRegistration.js` , toegewezen aan de `index.html` -route, is het ingangspunt voor de AEM extensie en definieert:
 
-1. De locatie van de extensieknop wordt weergegeven in de AEM-ontwerpervaring (`actionBar` of `headerMenu`)
-1. De definitie van de extensieknop in `getButtons()` function
-1. De klikmanager voor de knoop, in `onClick()` function
+1. De locatie van de extensieknop wordt weergegeven in de AEM (`actionBar` of `headerMenu`)
+1. De definitie van de extensieknop in de functie `getButtons()`
+1. De klikhandler voor de knop, in de functie `onClick()`
 
 + `src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -211,19 +211,19 @@ export default ExtensionRegistration;
 
 ### Modal
 
-Elke route van de uitbreiding, zoals bepaald in [`App.js`](#app-routes), wordt toegewezen aan een component React die wordt weergegeven in het modale gedeelte van de extensie.
+Elke route van de extensie, zoals gedefinieerd in [`App.js`](#app-routes) , wordt toegewezen aan een component React die wordt weergegeven in het modale gebied van de extensie.
 
-In deze voorbeeld-app is er een modale React-component (`GenerateImageModal.js`) dat vier staten heeft:
+In deze voorbeeld-app is er een modale React-component (`GenerateImageModal.js`) met vier statussen:
 
 1. Laden. De gebruiker moet wachten
 1. Het waarschuwingsbericht dat de gebruikers de suggestie geeft slechts één inhoudsfragment tegelijk te selecteren
 1. Het formulier Afbeelding genereren waarmee de gebruiker een beschrijving van de afbeelding in de natuurlijke taal kan opgeven.
 1. De reactie van de afbeeldingsgeneratiebewerking die de koppeling bevat met de AEM elementdetails van de nieuw gegenereerde, geüploade afbeelding.
 
-Belangrijk is dat elke interactie met AEM van de extensie wordt gedelegeerd aan een [Handeling AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), dat een afzonderlijk serverloos proces is dat wordt uitgevoerd in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
+Belangrijk, zou om het even welke interactie met AEM van de uitbreiding aan een [ actie van Adobe I/O Runtime AppBuilder ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) moeten worden gedelegeerd, die een afzonderlijk serverless proces is dat in [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) loopt.
 Het gebruik van Adobe I/O Runtime-acties om te communiceren met AEM, en is bedoeld om kwesties met betrekking tot de connectiviteit tussen bronnen van verschillende oorsprong (CORS) te voorkomen.
 
-Wanneer de _Afbeelding genereren_ formulier is verzonden, een aangepaste `onSubmitHandler()` Hiermee wordt de Adobe I/O Runtime-handeling aangeroepen, waarbij de beschrijving van de afbeelding, de huidige AEM (domein) en het toegangstoken van de AEM van de gebruiker worden doorgegeven. De actie roept dan OpenAI [Afbeelding genereren](https://beta.openai.com/docs/guides/images/image-generation-beta) API om een afbeelding te genereren met de ingediende afbeeldingsbeschrijving. Volgende gebruiken [AEM uploaden](https://github.com/adobe/aem-upload) knooppuntmodule&#39;s `DirectBinaryUpload` klasse uploadt het geproduceerde beeld aan AEM en gebruikt definitief [AEM Content Fragment API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) om de inhoudsfragmenten bij te werken.
+Wanneer _produceer de vorm van het Beeld_ wordt voorgelegd, haalt een douane `onSubmitHandler()` de actie van Adobe I/O Runtime aan, die de beeldbeschrijving, de huidige AEM (domein), en het AEM toegangstoken van de gebruiker overgaat. De actie roept dan OpenAI [ generatie van het Beeld ](https://beta.openai.com/docs/guides/images/image-generation-beta) API om een beeld te produceren gebruikend de voorgelegde beeldbeschrijving. Daarna gebruikend [ AEM uploadt `DirectBinaryUpload` klasse van de 1} knoopmodule {het geüpload geproduceerd beeld aan AEM en gebruikt [ AEM de fragmenten van het Fragment van de Inhoud API ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) definitief om de inhoudsfragmenten bij te werken.](https://github.com/adobe/aem-upload)
 
 Wanneer de reactie van de Adobe I/O Runtime-actie wordt ontvangen, wordt het modaal bijgewerkt om de resultaten van de afbeeldingsgeneratiebewerking weer te geven.
 
@@ -482,25 +482,25 @@ export default function GenerateImageModal() {
 
 >[!NOTE]
 >
->In de `buildAssetDetailsURL()` functie, de `aemAssetdetailsURL` waarde variable veronderstelt dat [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) is ingeschakeld. Als u Verenigde Shell hebt onbruikbaar gemaakt, moet u verwijderen `/ui#/aem` van de variabele waarde.
+>In de `buildAssetDetailsURL()` functie, veronderstelt de `aemAssetdetailsURL` veranderlijke waarde dat [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) wordt toegelaten. Als u Verenigde Shell hebt onbruikbaar gemaakt, moet u `/ui#/aem` uit de veranderlijke waarde verwijderen.
 
 
 ### Adobe I/O Runtime-actie
 
-Een AEM extensie App Builder-app kan 0 of veel Adobe I/O Runtime-acties definiëren of gebruiken.
+Een App Builder-app met AEM extensie kan 0 of veel Adobe I/O Runtime-acties definiëren of gebruiken.
 De Runtime van de Adobe actie is verantwoordelijk voor het werk dat interactie met AEM of Adobe of derdeWebdiensten vereist.
 
-In deze voorbeeldapp `generate-image` Adobe I/O Runtime-actie is verantwoordelijk voor:
+In deze voorbeeldapp is de `generate-image` Adobe I/O Runtime-actie verantwoordelijk voor:
 
-1. Een afbeelding genereren met [OpenAI API Image Generation](https://beta.openai.com/docs/guides/images/image-generation-beta) service
-1. De gegenereerde afbeelding uploaden naar AEM-CS-instantie met [AEM uploaden](https://github.com/adobe/aem-upload) bibliotheek
+1. Het produceren van een beeld gebruikend ](https://beta.openai.com/docs/guides/images/image-generation-beta) de dienst van de Generatie van het Beeld OpenAI API[
+1. Het uploaden van het geproduceerde beeld in AEM-CS instantie gebruikend [ AEM uploadt ](https://github.com/adobe/aem-upload) bibliotheek
 1. Een HTTP-aanvraag indienen bij de AEM Content Fragment-API om de afbeeldingseigenschap van het inhoudsfragment bij te werken.
-1. De belangrijkste informatie van succes en mislukking voor vertoning door modal terugkeren (`GenerateImageModal.js`)
+1. Terugkerend de belangrijkste informatie van successen en mislukking voor vertoning door modal (`GenerateImageModal.js`)
 
 
-#### Punt van binnenkomst (`index.js`)
+#### Invoerpunt (`index.js`)
 
-De `index.js` organiseert boven 1 tot 3 taken door de respectieve modules JavaScript te gebruiken, namelijk `generate-image-using-openai, upload-generated-image-to-aem, update-content-fragement`. Deze modules en bijbehorende code worden beschreven in de volgende [subsecties](#image-generation-module---generate-image-using-openaijs).
+`index.js` organiseert meer dan 1 tot 3 taken door de respectieve modules van JavaScript, namelijk `generate-image-using-openai, upload-generated-image-to-aem, update-content-fragement` te gebruiken. Deze modules en bijbehorende code worden beschreven in volgende [ subsections ](#image-generation-module---generate-image-using-openaijs).
 
 + `src/aem-cf-console-admin-1/actions/generate-image/index.js`
 
@@ -595,7 +595,7 @@ exports.main = main;
 
 #### Afbeelding genereren
 
-Deze module is verantwoordelijk voor het aanroepen van OpenAI&#39;s [Afbeelding genereren](https://beta.openai.com/docs/guides/images/image-generation-beta) eindpunt gebruiken [openai](https://github.com/openai/openai-node) bibliotheek. De OpenAI API-geheimhoudingssleutel instellen in het dialoogvenster `.env` bestand, gebruikt `params.OPENAI_API_KEY`.
+Deze module is verantwoordelijk voor het roepen van het 1} eindpunt van de Generatie van het Beeld van OpenAI [ gebruikend [ open ](https://github.com/openai/openai-node) bibliotheek. ](https://beta.openai.com/docs/guides/images/image-generation-beta) Als u de OpenAI API-geheimhoudingssleutel wilt definiëren in het `.env` -bestand, wordt `params.OPENAI_API_KEY` gebruikt.
 
 + `src/aem-cf-console-admin-1/actions/generate-image/generate-image-using-openai.js`
 
@@ -653,9 +653,9 @@ module.exports = {
 
 #### Uploaden naar AEM
 
-Deze module is verantwoordelijk voor het uploaden van de OpenAI-afbeelding naar AEM. [AEM uploaden](https://github.com/adobe/aem-upload) bibliotheek. De gegenereerde afbeelding wordt eerst naar de App Builder-runtime gedownload met Node.js [Bestandssysteem](https://nodejs.org/api/fs.html) bibliotheek en zodra het uploaden naar AEM is voltooid, wordt deze verwijderd.
+Deze module is de oorzaak van het uploaden van het OpenAI geproduceerde beeld aan AEM gebruikend [ AEM uploadt ](https://github.com/adobe/aem-upload) bibliotheek. Het geproduceerde beeld wordt eerst gedownload aan runtime van App Builder gebruikend de bibliotheek van het Systeem van het Dossier Node.js ](https://nodejs.org/api/fs.html) en zodra uploaden aan AEM wordt voltooid wordt het geschrapt.[
 
-In onderstaande code `uploadGeneratedImageToAEM` Deze functie ordent het genereren van een download naar de runtime, uploadt deze naar AEM en verwijdert deze uit de runtime. De afbeelding wordt geüpload naar de `/content/dam/wknd-shared/en/generated` weg, zorg ervoor alle omslagen in DAM bestaan, zijn eerste vereiste om te gebruiken [AEM uploaden](https://github.com/adobe/aem-upload) bibliotheek.
+In het onderstaande voorbeeld organiseert de functie `uploadGeneratedImageToAEM` het gedownloade image naar de runtime, uploadt u het bestand naar AEM en verwijdert het uit de runtime. Het beeld wordt geupload aan de `/content/dam/wknd-shared/en/generated` weg, zorg ervoor alle omslagen in DAM bestaan, zijn voorwaarde om [ AEM te gebruiken uploadt ](https://github.com/adobe/aem-upload) bibliotheek.
 
 + `src/aem-cf-console-admin-1/actions/generate-image/upload-generated-image-to-aem.js`
 

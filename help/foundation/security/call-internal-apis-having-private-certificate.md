@@ -31,9 +31,9 @@ Wanneer u probeert een HTTPS-verbinding te maken met een web-API die een zelfond
 PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 ```
 
-Dit probleem doet zich doorgaans voor wanneer de **Het SSL-certificaat van de API wordt niet uitgegeven door een erkende certificeringsinstantie (CA)** en Java™-toepassing kan het SSL/TLS-certificaat niet valideren.
+Deze kwestie komt typisch voor wanneer het **SSL van API certificaat niet door een erkende certificaatgezag (CA)** wordt uitgegeven en de toepassing Java™ kan SSL/TLS certificaat niet bevestigen.
 
-Leer hoe te met succes APIs roepen die privé of zelf-ondertekende certificaten door te gebruiken hebben [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) en **AEM global TrustStore**.
+Leer hoe te met succes APIs roepen die privé of zelf-ondertekende certificaten door [ Apache HttpClient ](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) en **AEM globale TrustStore** te gebruiken hebben.
 
 
 ## Prototypische API-aanroepcode met gebruik van HttpClient
@@ -57,23 +57,23 @@ CloseableHttpResponse closeableHttpResponse = httpClient.execute(new HttpGet(API
 ...
 ```
 
-De code gebruikt de [Apache HttpComponent](https://hc.apache.org/)s [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) bibliotheekklassen en de bijbehorende methoden.
+De code gebruikt [ Apache HttpComponent ](https://hc.apache.org/) [ HttpClient ](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) bibliotheekklassen en hun methodes.
 
 
 ## HttpClient en load AEM TrustStore-materiaal
 
-Om een API eindpunt te roepen dat heeft _persoonlijk of zelfondertekend certificaat_ de [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html)s `SSLContextBuilder` moet worden geladen met AEM TrustStore en worden gebruikt om de verbinding te vergemakkelijken.
+Om een API eindpunt te roepen dat _privé of zelf-ondertekend certificaat_ heeft, moet [ HttpClient ](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) `SSLContextBuilder` met AEM TrustStore worden geladen, en worden gebruikt om de verbinding te vergemakkelijken.
 
 Voer de volgende stappen uit:
 
-1. Aanmelden bij **AEM auteur** als **beheerder**.
-1. Navigeren naar **AEM Auteur > Gereedschappen > Beveiliging > Betrouwbaarheidswinkel** en opent u de **Global Trust Store**. Als u voor het eerst een account opent, stelt u een wachtwoord in voor de Global Trust Store.
+1. Login aan **AEM Auteur** als **beheerder**.
+1. Navigeer aan **AEM Auteur > Hulpmiddelen > Veiligheid > de Opslag van het Vertrouwen**, en open de **Globale Opslag van het Vertrouwen**. Als u voor het eerst een account opent, stelt u een wachtwoord in voor de Global Trust Store.
 
-   ![Global Trust Store](assets/internal-api-call/global-trust-store.png)
+   ![ Globale opslag van het Vertrouwen ](assets/internal-api-call/global-trust-store.png)
 
-1. Als u een privé-certificaat wilt importeren, klikt u op **Certificaatbestand selecteren** en selecteer het gewenste certificaatbestand met `.cer` extensie. Importeren door erop te klikken **Verzenden** knop.
+1. Om een privé certificaat in te voeren, klik **Uitgezochte de knoop van het Dossier van het Certificaat** en selecteer gewenst certificaatdossier met `.cer` uitbreiding. Importeer het door te klikken op **Verzenden** knop.
 
-1. Java™-code bijwerken zoals hieronder. Let op: gebruik `@Reference` AEM `KeyStoreService` de roepende code moet een component OSGi/dienst, of een Model van de Schelling zijn (en `@OsgiService` wordt daar gebruikt).
+1. Java™-code bijwerken zoals hieronder. Als u `@Reference` wilt gebruiken om `KeyStoreService` AEM te krijgen, moet de aanroepende code een OSGi-component/service zijn of een Sling Model (en wordt `@OsgiService` daar gebruikt).
 
    ```java
    ...
@@ -133,28 +133,28 @@ Voer de volgende stappen uit:
    ...
    ```
 
-   * Injecteer de OOTB `com.adobe.granite.keystore.KeyStoreService` De dienst OSGi in uw component OSGi.
-   * De algemene AEM TrustStore ophalen met `KeyStoreService` en `ResourceResolver`de `getAEMTrustStore(...)` methode doet dat.
-   * Een object maken van `SSLContextBuilder`, zie Java™ [API-details](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
-   * Laad de algemene AEM TrustStore in `SSLContextBuilder` gebruiken `loadTrustMaterial(KeyStore truststore,TrustStrategy trustStrategy)` methode.
-   * Voldoende `null` for `TrustStrategy` in bovenstaande methode zorgt deze ervoor dat alleen AEM vertrouwde certificaten slagen tijdens het uitvoeren van de API.
+   * Injecteer de OOTB `com.adobe.granite.keystore.KeyStoreService` OSGi-service in uw OSGi-component.
+   * Haal de algemene AEM TrustStore op met `KeyStoreService` en `ResourceResolver` , de methode `getAEMTrustStore(...)` doet dat.
+   * Creeer een voorwerp van `SSLContextBuilder`, zie Java™ [ API details ](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
+   * Laad de globale AEM TrustStore in `SSLContextBuilder` gebruikend `loadTrustMaterial(KeyStore truststore,TrustStrategy trustStrategy)` methode.
+   * Als u `null` doorgeeft voor `TrustStrategy` in de bovenstaande methode, zorgt deze ervoor dat alleen AEM vertrouwde certificaten slagen tijdens het uitvoeren van de API.
 
 
 >[!CAUTION]
 >
 >API-aanroepen met geldige certificaten die door CA zijn uitgegeven, mislukken wanneer ze worden uitgevoerd met de vermelde aanpak. Alleen API-aanroepen met AEM vertrouwde certificaten zijn toegestaan wanneer deze methode wordt gevolgd.
 >
->Gebruik de [standaardbenadering](#prototypical-api-invocation-code-using-httpclient) voor het uitvoeren van API-aanroepen van geldige certificaten die door CA zijn uitgegeven, wat betekent dat alleen API&#39;s die zijn gekoppeld aan persoonlijke certificaten moeten worden uitgevoerd met behulp van de eerder genoemde methode.
+>Gebruik de [ standaardbenadering ](#prototypical-api-invocation-code-using-httpclient) voor het uitvoeren van API vraag van geldige CA-Uitgegeven certificaten, betekenend dat slechts APIs verbonden aan privé certificaten gebruikend de eerder genoemde methode zou moeten worden uitgevoerd.
 
 ## Wijzigingen in JVM-sleutelarchief vermijden
 
-Een conventionele benadering om interne APIs met privé certificaten effectief aan te halen impliceert het wijzigen van JVM Keystore. Dit wordt bereikt door de persoonlijke certificaten te importeren met behulp van de Java™ [sleutelgereedschap](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) gebruiken.
+Een conventionele benadering om interne APIs met privé certificaten effectief aan te halen impliceert het wijzigen van JVM Keystore. Het wordt bereikt door de privé certificaten in te voeren gebruikend het Java™ [ keytool ](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) bevel.
 
-Deze methode is echter niet afgestemd op best practices op het gebied van beveiliging en AEM biedt een superieure optie via het gebruik van de **Global Trust Store** en [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+Nochtans, wordt deze methode niet gericht op veiligheid beste praktijken en AEM biedt een superieure optie door het gebruik van de **Globale opslag van het Vertrouwen** en [ KeyStoreService ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html) aan.
 
 
 ## Oplossingspakket
 
-Het voorbeeldproject Node.js dat in de video is gedemodeerd, kan worden gedownload van [hier](assets/internal-api-call/REST-APIs.zip).
+Het steekproefproject Node.js dat in de video wordt gedemoed kan van [ hier ](assets/internal-api-call/REST-APIs.zip) worden gedownload.
 
-De AEM servlet-code is beschikbaar in de projecten van het WKND-project `tutorial/web-api-invocation` vertakking, [zie](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
+De AEM servlet code is beschikbaar in de 0} tak van het Project van Plaatsen WKND {, [ zie ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).`tutorial/web-api-invocation`

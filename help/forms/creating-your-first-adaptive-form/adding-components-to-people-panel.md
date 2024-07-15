@@ -21,15 +21,15 @@ ht-degree: 0%
 
 Configureer het deelvenster Personen door het fragment met de muisdetails toe te voegen. Er wordt een regel ingesteld om het fragment met de gegevens van de echtgenoot weer te geven wanneer de huwelijkse staat van de aanvrager gehuwd is.
 
-**Deelvenster Personen configureren in AEM Forms 6.3 en 6.4**
+**vormt het Comité van Mensen in AEM Forms 6.3 en 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
 
-**Deelvenster Personen configureren in AEM Forms 6.5 en hoger**
+**vorm het Comité van Mensen in AEM Forms 6.5 en hierboven**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
 
-**Artikelregels voor echtgenoten**
+**Regels van de Details van de Echtgenoot**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22195?quality=12&learn=on)
 

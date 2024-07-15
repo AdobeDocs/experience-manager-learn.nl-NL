@@ -1,6 +1,6 @@
 ---
 title: XML-gegevensbinding maken in op XDP gebaseerde formulieren
-description: Korte video waarin wordt beschreven hoe een AEM formulier wordt gebonden aan een XML-gegevensbron
+description: Short Video, waarin wordt beschreven hoe een AEM formulier wordt gebonden aan een XML Data Source
 version: 6.5
 feature: Forms Designer,Designer
 topic: Development
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # XML-gegevensbinding maken in AEM Forms Designer
 
-Korte video waarin wordt beschreven hoe een AEM formulier wordt gebonden aan een XML-gegevensbron
+Short Video, waarin wordt beschreven hoe een AEM formulier wordt gebonden aan een XML Data Source
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)

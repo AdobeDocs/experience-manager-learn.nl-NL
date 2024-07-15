@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Middelensourcing configureren met de Brand Portal
 
-*In deze video wordt het proces doorlopen waarbij bronnen van elementen worden geconfigureerd met de Brand Portal.*
+*Deze video loopt door het proces om activa te vormen die met Brand Portal van oorsprong zijn.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335451?quality=12&learn=on)

@@ -24,9 +24,9 @@ Volg de onderstaande instructies om deze functionaliteit te laten werken op uw A
 * [Het databaseschema maken](assets/icdrafts.sql)
 * [De clientbibliotheek importeren](assets/icdrafts.zip)
 * [Het adaptieve formulier importeren](assets/SavedDraftsAdaptiveForm.zip)
-* Gegevensbron genaamd _Opslaan en doorgaan_
+* Creeer gegevensbron genoemd _SaveAndContinue_
 
-![Gegevensbron maken](assets/data-source.png)
+![ creeer Gegevens Source ](assets/data-source.png)
 
 | Eigenschapnaam | Waarde van eigenschap |
 |---|---|
@@ -35,12 +35,12 @@ Volg de onderstaande instructies om deze functionaliteit te laten werken op uw A
 | URL JDBC-verbinding | `jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&useSSL=false&characterEncoding=utf8&useUnicode=true` |
 
 * [De bundel voor pictogrammen implementeren](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
-* Zorg ervoor dat u _Opslaan inschakelen met CCRDocumentInstanceService_ in OSGI config zoals hieronder weergegeven
-  ![Concepten inschakelen](assets/enable-drafts.png)
+* Zorg ervoor u _sparen gebruikend CCRDocumentInstanceService_ in config OSGI zoals hieronder getoond toelaat
+  ![ laat Concepten ](assets/enable-drafts.png) toe
 * Open interactieve communicatie. Klik op Opslaan als concept om op te slaan
-* [Opgeslagen concepten weergeven](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
+* [ Mening Bewaarde Concepten ](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
 
 >[!NOTE]
 >De xml-bestanden worden opgeslagen in de hoofdmap van de AEM serverinstallatie. Het ovaalproject >wordt aan u geleverd om de oplossing aan uw vereisten aan te passen.
 
-Het eclipse-project met voorbeeldimplementatie kan [hier gedownload](assets/icdrafts-eclipse-project.zip)
+Het eclipse- project met steekproefimplementatie kan [ van hier worden gedownload ](assets/icdrafts-eclipse-project.zip)

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen om acrobat specifieke kwesties op een opstelling van Vensters problemen op te lossen
 
-*Deze video doorloopt het proces van het oplossen van problemen acrobat specifieke kwesties op een opstelling van Vensters voor AEM Forms PDFG.*
+*Deze video loopt door het proces van het oplossen van problemenacrobat specifieke kwesties op een opstelling van Vensters voor AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335480?quality=12&learn=on)

@@ -33,17 +33,17 @@ Archetypen zijn specifieke, belangrijke rolideeën die aan specifieke attributen
 
 ### Streams van operationele processen
 
-Er zijn twee operationele stromen voor [!DNL AEM Sites] en [!DNL AEM Assets]:
+Er zijn twee bewerkingsstromen voor [!DNL AEM Sites] en [!DNL AEM Assets]:
 
 1. De basis stelt en werkt het werk van dag tot dag (meta-gegevensupdate) in werking
 
 1. Strategie- en transformatiewerkzaamheden, zoals grote projecten met meerdere organisaties
 
-![operationele stromen](assets/streams-of-operationalization.png)
+![ stromen van verrichting ](assets/streams-of-operationalization.png)
 
 ### Rollen AEM bedrijfsmiddelen op hoog niveau
 
-**Algemene tussenruimte:** Deze basislijn ondersteunt gecentraliseerde en gedecentraliseerde modellen. Als je een gedecentraliseerd model hebt, kan AEM abstract worden gebruikt. Merk op dat de rol van de Eigenaar van het Product creatief moet worden gebruikt, maar u moet ook een Eigenaar van het Product hebben die de verschillende stijlen voor één type van activa bezit, en een andere die de volledige organisatie controleert.
+**Algemene hiaat:** Deze basislijn steunt gecentraliseerde en gedecentraliseerde modellen. Als je een gedecentraliseerd model hebt, kan AEM abstract worden gebruikt. Merk op dat de rol van de Eigenaar van het Product creatief moet worden gebruikt, maar u moet ook een Eigenaar van het Product hebben die de verschillende stijlen voor één type van activa bezit, en een andere die de volledige organisatie controleert.
 
 1. Basisfuncties voor uitvoeren en werken
 
@@ -59,9 +59,9 @@ Er zijn twee operationele stromen voor [!DNL AEM Sites] en [!DNL AEM Assets]:
    * Bedrijfsarchitect - ontwikkelt vereisten voor hulp in technische mijlpalen en strategische initiatieven;kan worden gecompenseerd met een extra eigenaar van het Product
    * Technisch architect - iemand die inzicht heeft op ondernemingsniveau en een constante aanwezigheid in de hele organisatie is. Deze rol dient als centraal punt van waarheid voor de DAM.
 
-**Voorbeeldscenario&#39;s**
+**scenario&#39;s van de Steekproef**
 
-1. **Uitvoeren en uitvoeren:**
+1. **Looppas en stel in werking:**
 
 Hieronder volgen voorbeelden van een licht (sportkleding) en zwaar (cosmetisch bedrijf) scenario:
 
@@ -81,11 +81,11 @@ Hieronder volgen voorbeelden van een licht (sportkleding) en zwaar (cosmetisch b
    * 4 belangrijkste beheerders KMO per merk
    * 1 Technisch architect
 
-### Op hoog niveau [!DNL AEM Sites] rollen
+### [!DNL AEM Sites] rollen op hoog niveau
 
 1. Basis uitvoeren en werken
 
-   **Algemene tussenruimte:** CSS-ontwikkelaars maken nieuwe skins voor componenten. Joseph Van Buskirk, bedrijfsadviseur van Adobe Sr, adviseert om &quot;ongecorked componenten en stijlsystemen te krijgen. Dit is de rol die kostenbesparingen stimuleert. 80% van de gemaakte ervaringen moet worden uitgevoerd met eerder gemaakte of kerncomponenten.&quot; Het doel is om kern of douanecomponenten met nieuwe stijlen opnieuw te gebruiken gebruikend een CSS ontwikkelaar (of front-end ontwikkelingsteam).
+   **Algemene hiaat:** CSS de ontwikkelaars creëren nieuwe huiden voor componenten. Joseph Van Buskirk, bedrijfsadviseur van Adobe Sr, adviseert om &quot;ongecorked componenten en stijlsystemen te krijgen. Dit is de rol die kostenbesparingen stimuleert. 80% van de gemaakte ervaringen moet worden uitgevoerd met eerder gemaakte of kerncomponenten.&quot; Het doel is om kern of douanecomponenten met nieuwe stijlen opnieuw te gebruiken gebruikend een CSS ontwikkelaar (of front-end ontwikkelingsteam).
 
    Voorbeelden van rollen:
 
@@ -126,12 +126,12 @@ Hieronder volgen voorbeelden van rollen voor een licht en zwaar clientscenario:
 
 ### Key Takeaways
 
-**De archetypen begrijpen** — Begin langzaam, begrijp en analyseer de archetypen. Wees creatief en flexibel, en houd er rekening mee dat er niet één goed model te volgen is.
+**Begrijp de archetypes** — Het begin langzaam, begrijpt en analyseert de archetypes. Wees creatief en flexibel, en houd er rekening mee dat er niet één goed model te volgen is.
 
-**Begrijp uw roadmap** - Sommige organisaties hebben veel mijlpalen die zij willen uitvoeren. Wees bereid om meer technische middelen toe te wijzen dan u kunt schatten.
+**Begrijp uw roadmap** - sommige organisaties hebben veel mijlpalen die zij willen uitvoeren. Wees bereid om meer technische middelen toe te wijzen dan u kunt schatten.
 
-**Interne bronnen benutten** - Tussenruimten kunnen onverwacht ontstaan. U kunt hen kunnen sneller vullen door interne teamleden te betrekken, in tegenstelling tot het zoeken buiten uw organisatie.
+**interne middelen van de Leverage** - de Kaarten kunnen onverwacht komen. U kunt hen kunnen sneller vullen door interne teamleden te betrekken, in tegenstelling tot het zoeken buiten uw organisatie.
 
-Voor een diepgaandere bespreking van Governance en Staffing Modellen &amp; Archetypes, luister naar deze één-uurpaneldiscussie: [Rolarchetypen en het creëren van een operationeel kader voor [!DNL AEM Assets] en [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
+Voor een meer diepgaande bespreking van Governance en het Personelen Modellen &amp; Archetypes, luister aan deze één-uurpaneelbespreking: [ De Archetypes van de Rol en het Creëren van een Operationeel Kader voor  [!DNL AEM Assets]  en  [!DNL Sites] ](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Meer informatie over strategie en leiderschap bij de [Klant geslaagd](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Leer meer over strategie en gedachte leiderschap bij de [ hub van het Succes van de Klant ](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

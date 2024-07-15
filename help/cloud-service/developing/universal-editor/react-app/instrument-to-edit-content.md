@@ -25,26 +25,26 @@ Leer hoe u de React-app kunt gebruiken om de inhoud te bewerken met de Universal
 
 ## Vereisten
 
-U hebt de lokale ontwikkelomgeving ingesteld zoals beschreven in de voorgaande [Instelling voor lokale ontwikkeling](./local-development-setup.md) stap.
+U hebt opstelling het lokale ontwikkelmilieu zoals die in de vorige [ Lokale stap van de ontwikkelingsOpstelling ](./local-development-setup.md) wordt beschreven.
 
 ## De kernbibliotheek van de universele editor opnemen
 
-Laten we beginnen met het opnemen van de kernbibliotheek van de Universal Editor in de WKND Teams React-app. Het is een JavaScript-bibliotheek die de communicatielaag vormt tussen de bewerkte app en de universele editor.
+Laten we beginnen met het opnemen van de kernbibliotheek van de Universal Editor in de WKND Teams React-app. Het is een JavaScript-bibliotheek die de communicatielaag vormt tussen de bewerkte app en de Universal Editor.
 
 Er zijn twee manieren om de kernbibliotheek van de Universal Editor op te nemen in de React-app:
 
-1. De modulegebiedsdeel van de knoop van het npm register, zie [@adobe/Universal-editor-cors](https://www.npmjs.com/package/@adobe/universal-editor-cors).
-1. Script-tag (`<script>`) in het HTML-bestand.
+1. De moduleafhankelijkheid van de knoop van het npm- register, zie [@adobe/Universal-editor-cors ](https://www.npmjs.com/package/@adobe/universal-editor-cors).
+1. Scripttag (`<script>`) in het HTML-bestand.
 
 Voor deze zelfstudie gebruiken we de methode Scripttag.
 
-1. Installeer de `react-helmet-async` pakket om het `<script>` -tag in de React-app.
+1. Installeer het `react-helmet-async` -pakket om de `<script>` -tag in de React-app te beheren.
 
    ```bash
    $ npm install react-helmet-async
    ```
 
-1. Werk de `src/App.js` bestand van de WKND Teams React-app om de kernbibliotheek van de Universal Editor op te nemen.
+1. Werk het `src/App.js` -bestand van de React-app voor WKND-teams bij en voeg de kernbibliotheek van de Universal Editor toe.
 
    ```javascript
    ...
@@ -85,7 +85,7 @@ Voor deze zelfstudie gebruiken we de methode Scripttag.
 
 ## Metagegevens toevoegen - inhoudsbron
 
-De app Reageren voor WKND-teams verbinden _met de inhoudsbron_ voor het bewerken moet u verbindingsmetagegevens opgeven. De Universal Editor-service gebruikt deze metagegevens om een verbinding met de inhoudsbron tot stand te brengen.
+Om de WKND Teams te verbinden Reageer app _met de inhoudsbron_ voor het uitgeven, moet u verbindingsmeta-gegevens verstrekken. De Universal Editor-service gebruikt deze metagegevens om een verbinding met de inhoudsbron tot stand te brengen.
 
 De verbindingsmetagegevens worden opgeslagen als `<meta>` -tags in het HTML-bestand. De syntaxis voor de verbindingsmeta-gegevens is als volgt:
 
@@ -93,7 +93,7 @@ De verbindingsmetagegevens worden opgeslagen als `<meta>` -tags in het HTML-best
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-Voeg de verbindingsmetagegevens toe aan de React-app van de WKND-teams in het dialoogvenster `<Helmet>` component. Werk de `src/App.js` bestand met het volgende `<meta>` -tag. In dit voorbeeld is de inhoudsbron een lokale AEM-instantie waarop `https://localhost:8443`.
+Voeg de verbindingsmetagegevens toe aan de React-app van WKND-teams in de component `<Helmet>` . Werk het `src/App.js` -bestand bij met de volgende `<meta>` -tag. In dit voorbeeld is de inhoudsbron een lokale AEM-instantie die wordt uitgevoerd op `https://localhost:8443` .
 
 ```javascript
 ...
@@ -125,7 +125,7 @@ return (
 export default App;
 ```
 
-De `aemconnection` geeft een korte naam voor de inhoudsbron. De volgende instrumentatie gebruikt de korte naam om naar de inhoudsbron te verwijzen.
+`aemconnection` biedt een korte naam voor de inhoudsbron. De volgende instrumentatie gebruikt de korte naam om naar de inhoudsbron te verwijzen.
 
 ## Metagegevens toevoegen - lokale Universal Editor-serviceconfiguratie
 
@@ -137,7 +137,7 @@ Deze configuratie-instellingen worden ook opgeslagen als `<meta>` -tags in het H
 <meta name="urn:adobe:aue:config:service" content="<url>">
 ```
 
-Voeg de verbindingsmetagegevens toe aan de React-app van de WKND-teams in het dialoogvenster `<Helmet>` component. Werk de `src/App.js` bestand met het volgende `<meta>` -tag. In dit voorbeeld wordt de lokale Universal Editor-service uitgevoerd `https://localhost:8001`.
+Voeg de verbindingsmetagegevens toe aan de React-app van WKND-teams in de component `<Helmet>` . Werk het `src/App.js` -bestand bij met de volgende `<meta>` -tag. In dit voorbeeld wordt de lokale Universal Editor-service uitgevoerd op `https://localhost:8001` .
 
 ```javascript
 ...
@@ -178,16 +178,16 @@ export default App;
 
 ## Instrueer de React-componenten
 
-De inhoud van de Reactie-app voor WKND-teams bewerken, zoals _teamtitel en teambeschrijving_, moet u de React componenten instrumenten. De instrumenten betekenen het toevoegen van relevante gegevenskenmerken (`data-aue-*`) aan de HTML-elementen die u bewerkbaar wilt maken met de Universal Editor. Zie voor meer informatie over gegevenskenmerken [Kenmerken en typen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
+Om de inhoud van de Teams uit te geven WKND Reageer app zoals _teamtitel en teambeschrijving_, moet u de componenten van het Antwoord van instrumenten voorzien. De instrumentatie betekent het toevoegen van relevante gegevensattributen (`data-aue-*`) aan de elementen van de HTML die u editable gebruikend de Universele Redacteur wilt maken. Voor meer informatie over gegevensattributen, zie [ Attributen en Types ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
 
 ### Bewerkbare elementen definiëren
 
 Eerst definieert u de elementen die u wilt bewerken met de universele editor. In de React app van de Teams WKND, worden de teamtitel en de beschrijving opgeslagen in het Fragment van de Inhoud van het Team in AEM, zo de beste kandidaten voor het uitgeven.
 
-Laten we het instrument `Teams` Reageer component om de teamtitel en beschrijving bewerkbaar te maken.
+Instrueer de component `Teams` Reageren om de teamtitel en beschrijving bewerkbaar te maken.
 
-1. Open de `src/components/Teams.js` bestand van de React-app voor WKND-teams.
-1. Voeg de `data-aue-prop`, `data-aue-type` en `data-aue-label` attribuut aan de teamtitel en beschrijvingselementen.
+1. Open het bestand `src/components/Teams.js` van de React-app voor WKND-teams.
+1. Voeg het attribuut `data-aue-prop`, `data-aue-type` en `data-aue-label` toe aan de teamtitel en beschrijvingselementen.
 
    ```javascript
    ...
@@ -210,21 +210,21 @@ Laten we het instrument `Teams` Reageer component om de teamtitel en beschrijvin
 
 1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat de elementen van de teamtitel en beschrijving bewerkbaar zijn.
 
-   ![Universal Editor - WKND-teams Titel en Desc bewerkbaar](./assets/universal-editor-wknd-teams-title-desc-editable.png)
+   ![ Universele Redacteur - WKND de Titel van Teams en Desc editable ](./assets/universal-editor-wknd-teams-title-desc-editable.png)
 
 1. Als u de teamtitel of beschrijving probeert te bewerken via inline bewerken of de eigenschappencontrole, wordt een spinner weergegeven die wordt geladen, maar kunt u de inhoud niet bewerken. Omdat de Universele Redacteur zich niet van de AEM middeldetails voor het laden van en het bewaren van de inhoud bewust is.
 
-   ![Universal Editor - WKND-teams - Titel en Desc laden](./assets/universal-editor-wknd-teams-title-desc-editable-loading.png)
+   ![ Universele Redacteur - het laden van de Titel en van het Bureau van de Teams van WKND ](./assets/universal-editor-wknd-teams-title-desc-editable-loading.png)
 
-Samengevat, merken de bovengenoemde veranderingen de teamtitel en beschrijvingselementen zoals editable in de Universele Redacteur. Maar **u kunt de wijzigingen nog niet bewerken (via inline of properties rail) en opslaan**, voor dat moet u de AEM middeldetails toevoegen gebruikend `data-aue-resource` kenmerk. Laten we dat in de volgende stap doen.
+Samengevat, merken de bovengenoemde veranderingen de teamtitel en beschrijvingselementen zoals editable in de Universele Redacteur. Nochtans, **kunt u niet (via gealigneerde of eigenschappen spoorstaaf) uitgeven en de veranderingen nog opslaan**, voor dat moet u de AEM middeldetails toevoegen gebruikend het `data-aue-resource` attribuut. Laten we dat in de volgende stap doen.
 
 ### Brondetails AEM definiëren
 
 Als u de bewerkte inhoud wilt opslaan in AEM en ook als u de inhoud in de eigenschappenrails wilt laden, moet u de AEM-brongegevens opgeven voor de Universal Editor.
 
-In dit geval, is het AEM middel de weg van het Fragment van de Inhoud van het Team, zodat voeg de middeldetails aan toe `Teams` Reageer component op het hoogste niveau `<div>` element.
+In dit geval, is het AEM middel de weg van het Fragment van de Inhoud van het Team, zodat voegen de middeldetails aan de `Teams` component van het Reageren op het hoogste niveau `<div>` element.
 
-1. Werk de `src/components/Teams.js` bestand toevoegen `data-aue-resource`, `data-aue-type` en `data-aue-label` kenmerken op het hoogste niveau `<div>` element.
+1. Werk het `src/components/Teams.js` -bestand bij om de kenmerken `data-aue-resource` , `data-aue-type` en `data-aue-label` toe te voegen aan het element op hoofdniveau `<div>` .
 
    ```javascript
    ...
@@ -250,39 +250,39 @@ In dit geval, is het AEM middel de weg van het Fragment van de Inhoud van het Te
    export default Teams;
    ```
 
-   De waarde van `data-aue-resource` attribuut is de AEM middelweg van het Fragment van de Inhoud van het Team. De `urn:aemconnection:` gebruikt de korte naam van de inhoudsbron die is gedefinieerd in de verbindingsmetagegevens.
+   De waarde van het `data-aue-resource` attribuut is de AEM middelweg van het Fragment van de Inhoud van het Team. Het voorvoegsel `urn:aemconnection:` gebruikt de korte naam van de inhoudsbron die is gedefinieerd in de verbindingsmetagegevens.
 
-1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat het top-level element van het Team editable is maar de eigenschappen spoorstaaf laadt nog niet de inhoud. Op het netwerktabblad van de browser kunt u de fout 401 Niet-geautoriseerde voor de `details` verzoek om de inhoud te laden. Het probeert het IMS-token te gebruiken voor verificatie, maar de lokale AEM SDK ondersteunt IMS-verificatie niet.
+1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat het top-level element van het Team editable is maar de eigenschappen spoorstaaf laadt nog niet de inhoud. Op het netwerktabblad van de browser ziet u de fout 401 Niet-geautoriseerde voor de `details` -aanvraag waarmee de inhoud wordt geladen. Het probeert het IMS-token te gebruiken voor verificatie, maar de lokale AEM SDK ondersteunt IMS-verificatie niet.
 
-   ![Universal Editor - WKND-team bewerkbaar](./assets/universal-editor-wknd-teams-team-editable.png)
+   ![ Universele Redacteur - WKND Team editable van Teams ](./assets/universal-editor-wknd-teams-team-editable.png)
 
-1. Als u de fout 401 zonder toestemming wilt corrigeren, moet u de lokale AEM SDK-verificatiegegevens opgeven voor de Universal Editor met de opdracht **Verificatiekoppen** in de Universal Editor. Als lokale AEM SDK stelt u de waarde in op `Basic YWRtaW46YWRtaW4=` for `admin:admin` referenties.
+1. Om de 401 Onbevoegde fout te bevestigen, moet u de lokale AEM SDK authentificatiedetails aan de Universele Redacteur verstrekken gebruikend de **kopballen van de Authentificatie** optie in de Universele Redacteur. Als lokale AEM-SDK stelt u de waarde in op `Basic YWRtaW46YWRtaW4=` voor `admin:admin` -referenties.
 
-   ![Universal Editor - Verificatiekoppen toevoegen](./assets/universal-editor-wknd-teams-team-editable-auth.png)
+   ![ Universele Redacteur - voeg de Kopballen van de Authentificatie ](./assets/universal-editor-wknd-teams-team-editable-auth.png) toe
 
 1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U ziet nu dat de eigenschappenrails de inhoud laden en u kunt de teamtitel en beschrijving inline bewerken of de eigenschappenrails gebruiken.
 
-   ![Universal Editor - WKND-team bewerkbaar](./assets/universal-editor-wknd-teams-team-editable-props.png)
+   ![ Universele Redacteur - WKND Team editable van Teams ](./assets/universal-editor-wknd-teams-team-editable-props.png)
 
 #### Onder de kap
 
-De eigenschappen per spoor laden de inhoud van de AEM bron met behulp van de lokale Universal Editor-service. Gebruikend het netwerklusje van browser, kunt u het verzoek van de POST aan de lokale Universele dienst van de Redacteur zien (`https://localhost:8001/details`) voor het laden van de inhoud.
+De eigenschappen per spoor laden de inhoud van de AEM bron met behulp van de lokale Universal Editor-service. Gebruikend het netwerklusje van browser, kunt u het verzoek van de POST aan de lokale Universele dienst van de Redacteur (`https://localhost:8001/details`) zien om de inhoud te laden.
 
-Wanneer u de inhoud bewerkt met inline bewerken of eigenschappenrails, worden de wijzigingen met de lokale Universal Editor-service weer opgeslagen in de AEM. Gebruikend het netwerklusje van browser, kunt u het verzoek van de POST aan de lokale Universele dienst van de Redacteur zien (`https://localhost:8001/update` of `https://localhost:8001/patch`) voor het opslaan van de inhoud.
+Wanneer u de inhoud bewerkt met inline bewerken of eigenschappenrails, worden de wijzigingen met de lokale Universal Editor-service weer opgeslagen in de AEM. Met het netwerktabblad van de browser kunt u de aanvraag van de POST voor het opslaan van de inhoud bekijken bij de lokale Universal Editor-service ( `https://localhost:8001/update` of `https://localhost:8001/patch` ).
 
-![Universal Editor - WKND-team bewerkbaar](./assets/universal-editor-under-the-hood-request.png)
+![ Universele Redacteur - WKND Team editable van Teams ](./assets/universal-editor-under-the-hood-request.png)
 
-Het JSON-object voor aanvraaglading bevat de benodigde details, zoals de inhoudsserver (`connections`), resource path (`target`) en de bijgewerkte inhoud (`patch`).
+Het JSON-object voor aanvraaglading bevat de benodigde details, zoals de inhoudsserver (`connections`), het bronnenpad (`target`) en de bijgewerkte inhoud (`patch`).
 
-![Universal Editor - WKND-team bewerkbaar](./assets/universal-editor-under-the-hood-payload.png)
+![ Universele Redacteur - WKND Team editable van Teams ](./assets/universal-editor-under-the-hood-payload.png)
 
 ### De bewerkbare inhoud uitbreiden
 
-Vouw de bewerkbare inhoud uit en pas de instrumentatie toe op de **teamleden** zodat u de teamleden kunt bewerken met de eigenschappen rail.
+Laat de editable inhoud uitbreiden en de instrumentatie op de **teamleden** toepassen zodat u de teamleden kunt uitgeven gebruikend de eigenschappen spoorstaaf.
 
-Zoals hierboven, voegen wij relevante `data-aue-*` kenmerken voor de teamleden in de `Teams` Reageer component.
+Laten we, net als hierboven, de relevante `data-aue-*` -kenmerken toevoegen aan de teamleden in de `Teams` React-component.
 
-1. Werk de `src/components/Teams.js` bestand om gegevenskenmerken toe te voegen aan de `<li key={index} className="team__member">` element.
+1. Werk het `src/components/Teams.js` -bestand bij om gegevenskenmerken toe te voegen aan het `<li key={index} className="team__member">` -element.
 
    ```javascript
    ...
@@ -311,23 +311,23 @@ Zoals hierboven, voegen wij relevante `data-aue-*` kenmerken voor de teamleden i
    export default Teams;
    ```
 
-   De waarde van `data-aue-type` kenmerk is `component` als de teamleden worden opgeslagen als `Person` Inhoudsfragmenten in AEM en helpen u de beweegbare/verplaatsbare delen van de inhoud aan te geven.
+   De waarde van het kenmerk `data-aue-type` is `component` omdat de teamleden worden opgeslagen als `Person` Inhoudsfragmenten in AEM en u kunt hiermee de beweegbare/verwijderbare delen van de inhoud aangeven.
 
 1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat de teamleden bewerkbaar zijn met de eigenschappen rail.
 
-   ![Universal Editor - WKND-teamleden bewerkbaar](./assets/universal-editor-wknd-teams-team-members-editable.png)
+   ![ Universele Redacteur - WKND de Leden van het Team van Teams editable ](./assets/universal-editor-wknd-teams-team-members-editable.png)
 
 #### Onder de kap
 
-Zoals hierboven, worden de inhoudsherwinning en het bewaren gedaan door de lokale Universele dienst van de Redacteur. De `/details`, `/update` of `/patch` er worden aanvragen ingediend bij de lokale Universal Editor-service om de inhoud te laden en op te slaan.
+Zoals hierboven, worden de inhoudsherwinning en het bewaren gedaan door de lokale Universele dienst van de Redacteur. De aanvragen `/details` , `/update` of `/patch` worden ingediend bij de lokale Universal Editor-service voor het laden en opslaan van de inhoud.
 
 ### Inhoud toevoegen en verwijderen definiëren
 
 Tot nu toe hebt u de bestaande inhoud bewerkbaar gemaakt, maar wat als u nieuwe inhoud wilt toevoegen? Laten wij de capaciteit toevoegen om teamleden aan het team toe te voegen of te schrappen WKND gebruikend de Universele Redacteur. De auteurs van de inhoud hoeven dus niet naar de AEM te gaan om teamleden toe te voegen of te verwijderen.
 
-Nochtans, wordt een snelle recap, de leden van het Team WKND opgeslagen zoals `Person` De Fragmenten van de inhoud in AEM en worden geassocieerd met het Fragment van de Inhoud van het Team gebruikend `teamMembers` eigenschap. Om de modeldefinitie in AEM bezoek te herzien [mijn-project](http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf/my-project).
+Nochtans, een snelle rechthoek, worden de leden van het Team WKND opgeslagen als `Person` Fragments van de Inhoud in AEM en met het Fragment van de Inhoud van het Team gebruikend het `teamMembers` bezit geassocieerd. Om de modeldefinitie in AEM bezoek [ mijn-project ](http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf/my-project) te herzien.
 
-1. Maak eerst het componentdefinitiebestand `/public/static/component-definition.json`. Dit bestand bevat de componentdefinitie voor de `Person` Inhoud fragment. De `aem/cf` Met insteekmodule kunt u inhoudsfragmenten invoegen op basis van een model en een sjabloon met de standaardwaarden die u wilt toepassen.
+1. Maak eerst het componentdefinitiebestand `/public/static/component-definition.json` . Dit bestand bevat de componentdefinitie voor het `Person` Content Fragment. Met de insteekmodule `aem/cf` kunt u inhoudsfragmenten invoegen op basis van een model en een sjabloon met de standaardwaarden die u wilt toepassen.
 
    ```json
    {
@@ -360,7 +360,7 @@ Nochtans, wordt een snelle recap, de leden van het Team WKND opgeslagen zoals `P
    }
    ```
 
-1. Verwijs vervolgens boven componentdefinitiebestand in `index.html` van de WKND Team React App. Werk de `public/index.html` bestand `<head>` -sectie om het componentdefinitiebestand op te nemen.
+1. Raadpleeg vervolgens het bovenstaande componentdefinitiebestand in `index.html` van de WKND Team React-app. Werk de sectie `public/index.html` file `<head>` bij om het componentdefinitiebestand op te nemen.
 
    ```html
    ...
@@ -373,7 +373,7 @@ Nochtans, wordt een snelle recap, de leden van het Team WKND opgeslagen zoals `P
    ...
    ```
 
-1. Tot slot werkt u de `src/components/Teams.js` bestand om gegevenskenmerken toe te voegen. De **LEDEN** sectie om als container voor de teamleden te handelen, laten wij toevoegen `data-aue-prop`, `data-aue-type`, en `data-aue-label` aan de `<div>` element.
+1. Werk ten slotte het bestand `src/components/Teams.js` bij om gegevenskenmerken toe te voegen. De **sectie van LEDEN** om als container voor de teamleden te handelen, laten wij `data-aue-prop`, `data-aue-type`, en `data-aue-label` attributen aan het `<div>` element toevoegen.
 
    ```javascript
    ...
@@ -403,24 +403,24 @@ Nochtans, wordt een snelle recap, de leden van het Team WKND opgeslagen zoals `P
    export default Teams;
    ```
 
-1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat de **LEDEN** -sectie fungeert als een container. U kunt nieuwe teamleden invoegen met de eigenschappen rail en de **+** pictogram.
+1. Vernieuw de pagina Universal Editor in de browser die de React-app voor WKND-teams laadt. U kunt nu zien dat de **sectie 0} LEDEN {als container dienst doet.** U kunt nieuwe teamleden invoegen met de eigenschappen rail en het pictogram **+** .
 
-   ![Universal Editor - WKND-teamleden invoegen](./assets/universal-editor-wknd-teams-add-team-members.png)
+   ![ Universele Redacteur - de Leden van het Team van Teams van WKND nemen ](./assets/universal-editor-wknd-teams-add-team-members.png) in
 
-1. Om een teamlid te schrappen, selecteer het teamlid en klik **Verwijderen** pictogram.
+1. Om een teamlid te schrappen, selecteer het teamlid en klik het **pictogram van de Schrapping**.
 
-   ![Universal Editor - WKND-teamleden verwijderen](./assets/universal-editor-wknd-teams-delete-team-members.png)
+   ![ Universele Redacteur - de Leden van het Team van Teams van WKND schrappen ](./assets/universal-editor-wknd-teams-delete-team-members.png)
 
 #### Onder de kap
 
-De inhoud voegt en schrapt verrichtingen toe worden gedaan door de lokale Universele dienst van de Redacteur. Het verzoek van de POST aan `/add` of `/remove` met een gedetailleerde lading aan de lokale Universele dienst van de Redacteur wordt gemaakt om de inhoud aan de AEM toe te voegen of te schrappen.
+De inhoud voegt en schrapt verrichtingen toe worden gedaan door de lokale Universele dienst van de Redacteur. De POST van `/add` of `/remove` met een gedetailleerde lading wordt gemaakt aan de lokale Universele dienst van de Redacteur voor het toevoegen van of het schrappen van de inhoud aan de AEM.
 
 ## Oplossingsbestanden
 
-Als u de wijzigingen in uw implementatie wilt controleren of als u de WKND-teams Reageer-app die werkt met de Universal Editor niet kunt ophalen, raadpleegt u de [basic-tutorial-instrumentented-for-UE](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial-instrumented-for-UE) oplossingsvertakking.
+Om uw implementatieveranderingen te verifiëren of als u niet de Reageer app die van de Teams WKND met de Universele Redacteur werkt kunt krijgen, verwijs naar [ basis-tutorial-instrumentented-for-UE ](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial-instrumented-for-UE) oplossingstak.
 
-Bestands-per-dossier vergelijking met het werken **basiszelfstudie** vertakking is beschikbaar [hier](https://github.com/adobe/aem-guides-wknd-graphql/compare/solution/basic-tutorial...solution/basic-tutorial-instrumented-for-UE?expand=1).
+De vergelijking van dossier-door-dossier met de werkende **tak 0} basis-tutorial {is hier [ ](https://github.com/adobe/aem-guides-wknd-graphql/compare/solution/basic-tutorial...solution/basic-tutorial-instrumented-for-UE?expand=1) beschikbaar.**
 
 ## Gefeliciteerd
 
-U hebt met succes van instrumenten voorzien de WKND Teams React app om de inhoud toe te voegen, uit te geven en te schrappen gebruikend de Universele Redacteur. U hebt geleerd hoe u de kernbibliotheek kunt opnemen, verbinding kunt toevoegen en de lokale metagegevens van de Universal Editor-service kunt gebruiken en de component React kunt bewerken met behulp van diverse gegevens (`data-aue-*`).
+U hebt met succes van instrumenten voorzien de WKND Teams React app om de inhoud toe te voegen, uit te geven en te schrappen gebruikend de Universele Redacteur. U hebt geleerd hoe te om de kernbibliotheek te omvatten, verbinding en de lokale Universele dienst meta-gegevens van de Redacteur toe te voegen, en de component van het Reageren te instrumenten gebruikend diverse gegevens (`data-aue-*`) attributen.

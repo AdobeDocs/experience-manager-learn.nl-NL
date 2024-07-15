@@ -1,5 +1,5 @@
 ---
-title: Testresultaten AEM Cloud Manager analyseren
+title: AEM Cloud Manager-testresultaten analyseren
 description: De resultaten van rapporten van AEM Cloud Manager verkennen en corrigeren
 role: Developer
 level: Beginner
@@ -22,9 +22,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_testresult"
 >title="Testresultaten analyseren"
->abstract="IExeer om het even welke compilatiefouten in uw code en of deze code best practices voor AEM as a Cloud Service volgt"
+>abstract="Bekijk eventuele compilatiefouten in uw code en bepaal of deze code de beste praktijken voor AEM as a Cloud Service volgt"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use" text="De testresultaten begrijpen"
 
-Onderzoek om het even welke compilatiefouten in uw code en of deze code best practices voor AEM as a Cloud Service volgt of niet
+Verken eventuele compilatiefouten in uw code en bepaal of deze code de beste praktijken voor AEM as a Cloud Service volgt
 
 >[!VIDEO](https://video.tv.adobe.com/v/330540?quality=12&learn=on)

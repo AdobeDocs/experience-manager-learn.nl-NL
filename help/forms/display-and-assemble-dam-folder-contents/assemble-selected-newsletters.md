@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Geselecteerde nieuwsbrieven combineren tot één pdf
 
-De selecties van de gebruiker worden opgeslagen in een verborgen veld. De waarde van dit verborgen veld wordt doorgegeven aan het servlet, dat de selecties in één PDF combineert met [Forms Assembler-service](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
+De selecties van de gebruiker worden opgeslagen in een verborgen veld. De waarde van dit verborgen gebied wordt overgegaan tot servlet die de selecties in één pdf gebruikend [ de dienst van de Assembler van Forms ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html) zal combineren.
 
 
 ## Servlet voor het samenstellen van pdf-bestanden

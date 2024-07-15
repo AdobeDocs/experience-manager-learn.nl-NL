@@ -32,7 +32,7 @@ Het schema gebruiken om een adaptief formulier te maken
 * Klik op Genereren.
 * Geef een betekenisvolle bestandsnaam op, bijvoorbeeld `form-data.xml`
 
-U kunt alle gratis onlinegereedschappen gebruiken om [XSD genereren](https://www.freeformatter.com/xsd-generator.html) uit de XML-gegevens die in de vorige stap zijn gegenereerd.
+U kunt om het even welke vrije online hulpmiddelen gebruiken om [ XSD ](https://www.freeformatter.com/xsd-generator.html) van de xmlgegevens te produceren die in de vorige stap worden geproduceerd.
 
 Maak een adaptief formulier op basis van het schema van de vorige stap.
 
@@ -40,12 +40,12 @@ Maak een adaptief formulier op basis van het schema van de vorige stap.
 >Het wordt altijd aangeraden de gegevens te bekijken die worden gegenereerd bij het verzenden van het adaptieve formulier. Zo krijgt u een goed idee van de XML-indeling van de gegevens die moeten worden samengevoegd met het aangepaste formulier.
 
 Uit het adaptieve formulier verstrekte gegevens
-![ingediende gegevens](./assets/af-submitted-data.png)
+![ voorgelegde-gegevens ](./assets/af-submitted-data.png)
 
 Gegevens geëxporteerd uit de PDF
-![geëxporteerde gegevens](./assets/exported-data.png)
+![ uitgevoerd-gegevens ](./assets/exported-data.png)
 
-Uit de geëxporteerde gegevens moet u de **_topmostSubform_** -knooppunten met de juiste naamruimten behouden zodat gegevens met het aangepaste formulier kunnen worden samengevoegd.
+Van de uitgevoerde gegevens, zult u de **_topSubform_** knoop met de aangewezen namespaces moeten halen die voor met succes samenvoegen van gegevens met de adaptieve vorm wordt bewaard.
 
 ## Volgende stappen
 

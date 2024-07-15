@@ -21,6 +21,6 @@ ht-degree: 0%
 
 ## PDF-bestanden samenstellen
 
-Wijzig de `assemble2pdfs.ddx` bestand om 3 PDF-bestanden samen te stellen.
+Wijzig het `assemble2pdfs.ddx` -bestand om 3 PDF-bestanden samen te stellen.
 
 U plaatst de derde PDF onder de map resources/pdfiles.

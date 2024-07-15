@@ -24,7 +24,7 @@ In dit artikel bekijken we de volgende service
 
 * FormsService - Dit is een zeer veelzijdige dienst die u toestaat om gegevens uit en in het dossier van PDF uit te voeren/in te voeren en interactieve pdf ook te produceren door xml gegevens in het malplaatje samen te voegen xdp
 
-De ambtenaar [javadoc voor AEM Forms API wordt hier weergegeven](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+Officiële [ javadoc voor AEM Forms API is hier vermeld ](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Het volgende codefragment geeft interactief pdf terug gebruikend de renderPDFForm verrichting van FormsService. Het bestand schengen.xdp wordt gebruikt om de XML-gegevens samen te voegen.
 
@@ -50,22 +50,22 @@ Lijn 7: produceer Interactieve PDF gebruikend de renderPDFForm dienstverrichting
 
 Regel 11: Keert geproduceerde interactieve pdf aan de roepende toepassing terug
 
-**De monsterverpakking op uw systeem testen**
+**om het steekproefpakket op uw systeem** te testen
 1. [DevelopingWithServiceUserBundle downloaden en installeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Download en installeer de DocumentServices Sample Bundle met de Felix Web Console](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Download en installeer het pakket met AEM pakketbeheer](assets/downloadinteractivepdffrommobileform.zip)
 
-1. [Aanmelden bij configMgr](http://localhost:4502/system/console/configMgr)
+1. [ Login aan configMgr ](http://localhost:4502/system/console/configMgr)
 1. Zoeken naar graniet-CSRF-filter voor Adobe
 1. Het volgende pad toevoegen aan de uitgesloten secties en opslaan
 1. /bin/generateinteractivepdf
-1. Zoeken naar _Apache Sling Service User Mapper Service_ en klik om de eigenschappen te openen
-   1. Klik op de knop *+* pictogram (plus) om de volgende Toewijzing van de Dienst toe te voegen
+1. Onderzoek naar _de Dienst van het Mapper van de Gebruiker van de Dienst van Apache Sling_ en klik om de eigenschappen te openen
+   1. Klik op het pictogram *+* (plus) om de volgende servicetoewijzing toe te voegen
       * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
    1. Klik op Opslaan &#39;
-1. [Het mobiele formulier openen](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Vul een paar gebieden in en klik dan ***Downloaden en vullen...*** knop
+1. [ open de mobiele vorm ](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
+1. Vul een paar gebieden in en klik dan de ***Download en vult...*** knop
 1. De interactieve pdf moet naar uw lokale systeem worden gedownload
 
 
-Het voorbeeldpakket bevat het aangepaste profiel dat is gekoppeld aan het mobiele formulier. Verken de [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) bestand. Deze jsp haalt de gegevens uit het mobiele formulier en doet een verzoek om een POST naar servlet te installeren op ***/bin/generateinteractivepdf*** pad. De servlet keert interactieve pdf aan de roepende toepassing terug. De code in customtoolbar.jsp downloadt dan het dossier aan uw lokaal systeem
+Het voorbeeldpakket bevat het aangepaste profiel dat is gekoppeld aan het mobiele formulier. Gelieve te onderzoeken het {](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) dossier 0} customtoolbar.jsp. [ This jsp haalt de gegevens uit de mobiele vorm uit en doet een verzoek van de POST aan servlet opgemaakt op ***/bin/generateinteractivepdf*** weg. De servlet keert interactieve pdf aan de roepende toepassing terug. De code in customtoolbar.jsp downloadt dan het dossier aan uw lokaal systeem

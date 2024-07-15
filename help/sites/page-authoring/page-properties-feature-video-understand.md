@@ -53,13 +53,13 @@ In deze video worden de volgende pagina-eigenschapelementen behandeld:
 * Miniatuur
 * Delen via sociale media
 * Configuraties van Cloud Servicen
-* Personalisatie
+* Personalization
    * ContextHub-configuraties
    * Doelconfiguratie
 * Machtigingen
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie over pagina-eigenschappen bewerken](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Documentatie over pagina-inhoud bewerken](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [ het uitgeven Documentatie van de Eigenschappen van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
+* [ het uitgeven Documentatie van de Inhoud van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

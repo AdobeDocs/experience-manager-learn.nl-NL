@@ -32,4 +32,4 @@ Een dieptegids op hoe te om een login teken voor de integratie van de Cloud Serv
 + Technische rekeningverificatie
 + Eenvoudig gebruik van een gegenereerde token
 
-Voor een gedetailleerder overzicht van dit onderwerp kunt u de zelfstudie raadplegen op [tokenverificatie](/help/headless-tutorial/authentication/overview.md).
+Voor een meer gedetailleerde blik op dit onderwerp, kunt u het leerprogramma op [ op teken-gebaseerde authentificatie ](/help/headless-tutorial/authentication/overview.md) van verwijzingen voorzien.

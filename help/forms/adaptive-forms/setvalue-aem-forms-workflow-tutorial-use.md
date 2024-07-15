@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Stel de waarde van een XML-element in Adaptief Forms verzonden gegevens in de AEM Forms OSGI-workflow in.
 
-![SetValue](assets/setvalue.png)
+![ SetValue ](assets/setvalue.png)
 
 LiveCycle dat wordt gebruikt voor een ingestelde-waardecomponent waarmee u de waarde van een XML-element kunt instellen.
 
@@ -40,18 +40,18 @@ Volg onderstaande stappen om de middelen op uw lokale systeem te implementeren:
 
 * [De gebruikersbundel DevelopingWithService implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [De voorbeeldbundel implementeren](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden XML-gegevens kunt instellen
+* [ stel de steekproefbundel ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) op. Dit is de aangepaste OSGI-bundel waarmee u de waarden van een element in de verzonden XML-gegevens kunt instellen
 
 * [De inhoud van het ZIP-bestand downloaden en uitpakken](assets/setvalueassets.zip)
-* Wijs uw browser aan [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+* Punt uw browser aan [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 * Importeer en installeer de setValueWorkflow.zip. Dit heeft het model van het steekproefwerkschema.
-* Wijs uw browser aan [Forms en Documenten](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Punt uw browser aan [ Forms en Documenten ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Klik op Maken | Bestand uploaden
 * De tijdOfRequestForm.zip uploaden
-* Open de [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Open [ TimeOffRequest ](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Vul de 3 vereiste velden in en verzend
 * Meld u aan als &#39;admin&#39; in bij AEM (als u dat nog niet hebt gedaan)
-* Ga naar [&quot;AEM Inbox&quot;](http://localhost:4502/aem/inbox)
+* Ga naar [ &quot;AEM Inbox&quot;](http://localhost:4502/aem/inbox)
 * Open het formulier &quot;Verzoek om een revisie op tijd uit&quot;
 * De velden in het eerste deelvenster zijn uitgeschakeld. De reden hiervoor is dat het formulier wordt geopend door de controleur. U ziet ook dat het deelvenster voor het goedkeuren of afwijzen van de aanvraag nu zichtbaar is
 

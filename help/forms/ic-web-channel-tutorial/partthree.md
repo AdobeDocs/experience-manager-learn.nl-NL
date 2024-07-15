@@ -19,19 +19,19 @@ ht-degree: 0%
 
 In dit onderdeel maken we het formuliergegevensmodel. Met het formuliergegevensmodel kunt u verschillende gegevensbronnen configureren en verbinden. Een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen. De volgende video doorloopt de stappen om het Model van de Gegevens van de Vorm tot stand te brengen.
 
-**Formuliergegevensmodel maken in AEM Forms 6.4**
+**Creërend het Model van de Gegevens van de Vorm in AEM Forms 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/27763?quality=12&learn=on)
 
-**Formuliergegevensmodel maken in AEM Forms 6.5 en hoger**
+**Creërend het Model van de Gegevens van de Vorm in AEM Forms 6.5 en hierboven**
 
 >[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
-Het Model van de Gegevens van de vorm is afhankelijk van een correct gevormde Gegevensbron. Wij zullen de Gegevensbron gebruiken die in de vorige stap als basis voor dit Model van de Gegevens van Vorm wordt gevormd.
+Het Model van de Gegevens van de vorm is afhankelijk van correct gevormde Gegevens Source. De gegevens die in de vorige stap zijn geconfigureerd, worden gebruikt als basis voor dit formuliergegevensmodel.
 
 Het Model van de Gegevens van de vorm is de basis voor al uw Interactieve Mededelingen. Met de bewerking Ophalen/Lezen van het formuliergegevensmodel worden de gegevens opgehaald van de gegevensbron van de back-end en wordt het document Interactieve communicatie gevuld.
 
-Zie voor meer informatie [Gegevensbronnen configureren](parttwo.md).
+Voor meer informatie zie [ het Vormen Gegevensbronnen ](parttwo.md).
 
 Nadat u het formuliergegevensmodel hebt gemaakt, kunt u het gebruiken als basis voor het maken van documentfragmenten en interactieve communicatiedocumenten.
 

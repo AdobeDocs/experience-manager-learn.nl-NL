@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Aangepaste XDP&#39;s en gegevensbestanden bijwerken in FormsIVS en OutputIVS
 
-*Deze video doorloopt de stappen om uw douane XDPs en gegevensdossiers in FormsIVS en OutputIVS voor het testende doel bij te werken.*
+*Deze video loopt door de stappen om uw douane XDPs en gegevensdossiers in FormsIVS en OutputIVS voor het testen doel bij te werken.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335513?quality=12&learn=on)

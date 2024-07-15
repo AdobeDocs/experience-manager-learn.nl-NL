@@ -24,7 +24,7 @@ De verbeteringen van de Dynamic Media Viewer in AEM 6.5 omvatten de toevoeging v
 
 >[!NOTE]
 >
->De video veronderstelt dat uw AEM instantie op Dynamic Media S7 wijze loopt.  [Hier vindt u instructies voor het instellen van AEM met Dynamic Media](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Wanneer u een video uploadt, verwerkt Dynamic Media het beeldmateriaal standaard als een 360-video, als de hoogte-breedteverhouding 2:1 is. De verhouding tussen breedte en hoogte is dus 2:1.
+>De video veronderstelt dat uw AEM instantie op Dynamic Media S7 wijze loopt.  [ de Instructies bij vestiging AEM met Dynamic Media kunnen hier worden gevonden ](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Wanneer u een video uploadt, verwerkt Dynamic Media het beeldmateriaal standaard als een 360-video, als de hoogte-breedteverhouding 2:1 is. De verhouding tussen breedte en hoogte is dus 2:1.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Dynamic Media-video ondersteunt nu de mogelijkheid om een aangepaste miniatuur v
    <tr>
       <td>Dynamic Media Run-modus</td>
       <td>Alleen Dynamic Media Scene7-modus</td>
-      <td>Alleen Dynamic Media Scene7-modus<br>
+      <td>Alleen Dynamic Media Scene7-modus <br>
          <br>
       </td>
    </tr>
@@ -104,4 +104,4 @@ Dynamic Media-video ondersteunt nu de mogelijkheid om een aangepaste miniatuur v
 
 ## Aanvullende bronnen{#additional-resources}
 
-[Dynamic Media configureren in de Scene7-modus](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[ het Vormen Dynamic Media op de wijze van Scene7 ](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)

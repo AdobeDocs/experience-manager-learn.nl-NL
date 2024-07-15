@@ -31,9 +31,9 @@ Deze zelfstudie behandelt de volgende onderwerpen:
 
 - Een kort overzicht van de Universal Editor
 - Plaatsing van de lokale ontwikkelomgeving
-   - **AEM SDK**: De inhoud wordt geleverd in Content Fragments voor de React-app met GraphQL API&#39;s.
-   - **Toepassingen Reageren**: een eenvoudige gebruikersinterface die de inhoud van AEM weergeeft.
-   - **Universal Editor-service**: a _lokale kopie van de Universal Editor-service_ die de Universal Editor en de AEM SDK bindt.
+   - **AEM SDK**: het verstrekt de inhoud die binnen de Fragmenten van de Inhoud voor React app gebruikend GraphQL APIs wordt opgeslagen.
+   - **Reageer app**: een eenvoudig gebruikersinterface die de inhoud van AEM toont.
+   - **Universele Dienst van de Redacteur**: a _lokaal exemplaar van de Universele dienst van de Redacteur_ die Universele Redacteur en AEM SDK bindt.
 - De React-app instrumenten om de inhoud te bewerken met de Universal Editor
 - De inhoud van de React-app bewerken met Universal Editor
 
@@ -50,14 +50,14 @@ De Universele Redacteur machtigt inhoudsauteurs en ontwikkelaars (front-end en b
 
 ## Voorbeeld van React-app
 
-Deze zelfstudie gebruikt [**WKND-teams**](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) als het voorbeeld React app. De **WKND-teams** Reactie-app geeft een lijst met teamleden en hun gegevens weer.
+Dit leerprogramma gebruikt [**WKND Teams** ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) als steekproef Reageer app. De **Teams van WKND** Reageer app toont een lijst van teamleden en hun details.
 
-De gegevens van het Team zoals titel, beschrijving, en teamleden worden opgeslagen zoals _Team_ Content Fragments in AEM. Op dezelfde manier worden de Persoon-details zoals naam, biografie en profielfoto opgeslagen als _Persoon_ Content Fragments in AEM.
+De details van het Team zoals titel, beschrijving, en teamleden worden opgeslagen als _de Fragmenten van de Inhoud van het Team_ in AEM. Eveneens, worden de Persoon details zoals naam, biografie, en profielbeeld opgeslagen als _Persoon_ de Fragmenten van de Inhoud in AEM.
 
-De inhoud voor de React-app wordt geleverd door AEM met GraphQL API&#39;s en de gebruikersinterface is samengesteld met behulp van twee React-componenten. `Teams` en `Person`.
+De inhoud voor de React-app wordt geleverd door AEM met GraphQL API&#39;s en de gebruikersinterface is samengesteld met behulp van twee React-componenten, `Teams` en `Person` .
 
-Er is een corresponderende zelfstudie beschikbaar om te leren hoe u de **WKND-teams** Reageer de app. U vindt de zelfstudie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
+Een overeenkomstige leerprogramma is beschikbaar om te leren hoe te om de **Teams van WKND** Reageren app te bouwen. U kunt het leerprogramma [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview) vinden.
 
 ## Volgende stap
 
-Leer hoe u [de plaatselijke ontwikkelomgeving opzetten](./local-development-setup.md).
+Leer hoe te [ opstelling de lokale ontwikkelomgeving ](./local-development-setup.md).

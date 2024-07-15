@@ -22,7 +22,7 @@ ht-degree: 0%
 
 In dit artikel worden de stappen beschreven die nodig zijn om gegevens in te voegen in de SharePoint-lijst met de FDM-stap opvragen in AEM workflow.
 
-In dit artikel wordt ervan uitgegaan dat u [adaptief formulier is geconfigureerd voor het verzenden van gegevens naar de SharePoint-lijst.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Dit artikel veronderstelt u [ met succes gevormd adaptieve vorm hebt om gegevens naar de lijst van SharePoint voor te leggen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 
 ## Een formuliergegevensmodel maken op basis van de gegevensbron in de SharePoint-lijst
@@ -37,7 +37,7 @@ In dit artikel wordt ervan uitgegaan dat u [adaptief formulier is geconfigureerd
 
 * Maak een eenvoudige workflow met een FDM-stap aanroepen.
 * Vorm aanhalen FDM stap om het model van vormgegevens te gebruiken dat in de vorige stap wordt gecreeerd.
-* ![associatief-fdm](assets/fdm-insert-1.png)
+* ![ vennoot-fdm ](assets/fdm-insert-1.png)
 
 ## Adaptief formulier op basis van kerncomponenten
 
@@ -55,7 +55,7 @@ De ingediende gegevens hebben de volgende indeling. We moeten het ContactUS-obje
 ```
 
 
-* ![map-input-parameters](assets/fdm-insert-2.png)
+* ![ kaart-input-parameters ](assets/fdm-insert-2.png)
 
 
 ## Adaptief formulier op basis van basiscomponenten
@@ -89,14 +89,14 @@ De ingediende gegevens hebben de volgende indeling. Extraheer het ContactUS JSON
 }
 ```
 
-![op basis van stichting](assets/foundation-based-form.png)
+![ stichting-gebaseerd-vorm ](assets/foundation-based-form.png)
 
 ## Adaptief formulier configureren om AEM workflow te activeren
 
 * Maak een adaptief formulier met het formuliergegevensmodel dat u eerder hebt gemaakt.
 * Sleep enkele velden van de gegevensbron naar het formulier.
 * De verzendactie van het formulier configureren, zoals hieronder wordt weergegeven
-* ![voorlegging](assets/configure-af.png)
+* ![ voorleggen-actie ](assets/configure-af.png)
 
 
 

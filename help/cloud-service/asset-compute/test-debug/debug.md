@@ -1,6 +1,6 @@
 ---
 title: Fouten opsporen in een Asset compute-worker
-description: De arbeiders van de asset compute kunnen op verscheidene manieren, van eenvoudige zuivert logboekverklaringen, aan de Code van VS in bijlage als verre debugger, aan trekkend logboeken voor activeringen in Adobe I/O Runtime worden in werking gesteld van AEM as a Cloud Service.
+description: De arbeiders van de asset compute kunnen op verscheidene manieren, van eenvoudige zuivert logboekverklaringen, aan bijlage de Code van VS als verre debugger, aan trekkend logboeken voor activeringen in Adobe I/O Runtime worden gezeten die van AEM as a Cloud Service in werking worden gesteld.
 feature: Asset Compute Microservices
 version: Cloud Service
 doc-type: Tutorial
@@ -20,21 +20,21 @@ ht-degree: 0%
 
 # Fouten opsporen in een Asset compute-worker
 
-De arbeiders van de asset compute kunnen op verscheidene manieren, van eenvoudige zuivert logboekverklaringen, aan de Code van VS in bijlage als verre debugger, aan trekkend logboeken voor activeringen in Adobe I/O Runtime worden in werking gesteld van AEM as a Cloud Service.
+De arbeiders van de asset compute kunnen op verscheidene manieren, van eenvoudige zuivert logboekverklaringen, aan bijlage de Code van VS als verre debugger, aan trekkend logboeken voor activeringen in Adobe I/O Runtime worden gezeten die van AEM as a Cloud Service in werking worden gesteld.
 
 ## Logboekregistratie
 
-De eenvoudigste vorm van het zuiveren van de arbeiders van de Asset compute gebruikt traditionele `console.log(..)` instructies in de code van de worker. De `console` JavaScript-object is een impliciet, globaal object, zodat het niet hoeft te worden geïmporteerd of vereist, omdat het altijd in alle contexten voorkomt.
+De meest elementaire vorm van foutopsporing voor Asset compute-workers gebruikt traditionele `console.log(..)` -instructies in de code van de worker. Het JavaScript-object `console` is een impliciet, globaal object, zodat het niet hoeft te worden geïmporteerd of vereist, omdat het altijd in alle contexten voorkomt.
 
 Deze logboekverklaringen zijn beschikbaar voor overzicht verschillend gebaseerd op hoe de Asset compute arbeider wordt uitgevoerd:
 
-+ Van `aio app run`, worden logbestanden standaard afgedrukt en worden de [Ontwikkelingsinstrumenten](../develop/development-tool.md) Activeringslogboeken
-  ![air app run console.log(...)](./assets/debug/console-log__aio-app-run.png)
-+ Van `aio app test`, logbestanden afdrukken naar `/build/test-results/test-worker/test.log`
-  ![air app test console.log(...)](./assets/debug/console-log__aio-app-test.png)
-+ Gebruiken `wskdebug`, worden logboekinstructies afgedrukt naar de VS-console voor foutopsporing van code (Weergave > Foutopsporingsconsole), standaard uit
-  ![wskdebug console.log(..)](./assets/debug/console-log__wskdebug.png)
-+ Gebruiken `aio app logs`, loginstructies worden afgedrukt naar het activeringslogbestand
++ Van `aio app run`, drukken de logboeken aan standaard uit en de ](../develop/development-tool.md) Logboeken van de Activering van het 1} Hulpmiddel van de Ontwikkeling {[
+  ![ de looppasconsole.log van de AIR app (...) ](./assets/debug/console-log__aio-app-run.png)
++ Vanuit `aio app test` worden logbestanden afgedrukt naar `/build/test-results/test-worker/test.log`
+  ![ Ao app test console.log (...) ](./assets/debug/console-log__aio-app-test.png)
++ Met `wskdebug` worden loginstructies afgedrukt naar de VS-console voor foutopsporing van code (Weergave > Foutopsporingsconsole), standaard uit
+  ![ wskdebug console.log (...) ](./assets/debug/console-log__wskdebug.png)
++ Loginstructies worden met `aio app logs` afgedrukt naar het activeringslogbestand.
 
 ## Foutopsporing op afstand via aangesloten foutopsporing
 
@@ -42,27 +42,27 @@ Deze logboekverklaringen zijn beschikbaar voor overzicht verschillend gebaseerd 
 >
 >Microsoft Visual Studio Code 1.48.0 of groter van het gebruik voor verenigbaarheid met wskdebug
 
-De [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, steunt het vastmaken van debugger aan de arbeiders van de Asset compute, met inbegrip van de capaciteit om breekpunten in de Code van VS te plaatsen en door de code te stappen.
+[ wskdebug ](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, steunt het vastmaken van debugger aan de arbeiders van de Asset compute, met inbegrip van de capaciteit om breekpunten in de Code van VS te plaatsen en door de code te stappen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383?quality=12&learn=on)
 
-_Doorklikken van foutopsporing in een Asset compute-worker met wskdebug (geen audio)_
+_klik-door van het zuiveren van een arbeider van de Asset compute gebruikend wskdebug (Geen audio)_
 
-1. Zorgen [wskdebug](../set-up/development-environment.md#wskdebug) en [ngrot](../set-up/development-environment.md#ngork) npm-modules worden geïnstalleerd
-1. Zorgen [Docker Desktop en de ondersteunende Docker-afbeeldingen](../set-up/development-environment.md#docker) worden geïnstalleerd en uitgevoerd
+1. Verzeker [ wskdebug ](../set-up/development-environment.md#wskdebug) en [ ngrok ](../set-up/development-environment.md#ngork) npm modules worden geïnstalleerd
+1. Verzeker {de Desktop van 0} Docker en de ondersteunende beelden van Docker ](../set-up/development-environment.md#docker) geïnstalleerd en lopend zijn[
 1. Sluit alle actieve actieve actieve uitvoeringsinstanties van Development Tool.
-1. De nieuwste code implementeren met `aio app deploy`  en registreer de opgestelde actienaam (naam tussen `[...]`). Hiermee werkt u het dialoogvenster `launch.json` in stap 8.
+1. Implementeer de nieuwste code met `aio app deploy` en neem de naam van de geïmplementeerde actie op (naam tussen de `[...]` ). Hiermee werkt u de `launch.json` in stap 8 bij.
 
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
 
 
-1. Begin een nieuw geval van het Hulpmiddel van de Ontwikkeling van de Asset compute gebruikend het bevel `npx adobe-asset-compute devtool`
+1. Een nieuwe instantie van het gereedschap Asset compute ontwikkelen starten met de opdracht `npx adobe-asset-compute devtool`
 1. Tik in VS-code op het pictogram Foutopsporing in de linkernavigatie
-   + Tik indien nodig op __Een bestand launch.json maken > Node.js__ om een nieuwe `launch.json` bestand.
-   + Tik anders op de knop __Tandwiel__ pictogram rechts van __Programma starten__ vervolgkeuzelijst voor het openen van de bestaande `launch.json` in de editor.
-1. Voeg de volgende JSON-objectconfiguratie toe aan de `configurations` array:
+   + Indien ertoe aangezet, creeer de aanraking __een launch.json- dossier > Node.js__ om een nieuw `launch.json` dossier tot stand te brengen.
+   + Elders, tik het __pictogram van het Gear__ rechts van __Programma van de Lancering__ dropdown om het bestaan `launch.json` in de redacteur te openen.
+1. Voeg de volgende JSON-objectconfiguratie toe aan de array `configurations` :
 
    ```json
    {
@@ -84,24 +84,24 @@ _Doorklikken van foutopsporing in een Asset compute-worker met wskdebug (geen au
    }
    ```
 
-1. Selecteer de nieuwe __wskdebug__ uit de vervolgkeuzelijst
-1. Tik op groen __Uitvoeren__ links van __wskdebug__ druppel
-1. Openen `/actions/worker/index.js` en tik links van de regelnummers om onderbrekingspunten 1 toe te voegen. Navigeer aan het Browser van het Web van het Hulpmiddel van de Ontwikkeling van de Asset compute die venster in stap 6 wordt geopend
-1. Tik op de knop __Uitvoeren__ knop om de worker uit te voeren
-1. Ga terug naar de Code van VS, aan `/actions/worker/index.js` en doorlopen de code
-1. Tik op `Ctrl-C` in de terminal die `npx adobe-asset-compute devtool` opdracht in stap 6
+1. Selecteer nieuwe __wskdebug__ van dropdown
+1. Tik de groene __knoop van de Looppas__ links van __wskdebug__ dropdown
+1. Open `/actions/worker/index.js` en tik links van de regelnummers om onderbrekingspunten 1 toe te voegen. Navigeer aan het Browser van het Web van het Hulpmiddel van de Ontwikkeling van de Asset compute die venster in stap 6 wordt geopend
+1. Tik de __Looppas__ knoop om de worker uit te voeren
+1. Navigeer terug naar de VS-code, naar `/actions/worker/index.js` en doorloop de code
+1. Tik op `Ctrl-C` in de terminal die de opdracht `npx adobe-asset-compute devtool` in stap 6 heeft uitgevoerd om het hulpprogramma voor foutopsporing af te sluiten
 
 ## Logbestanden openen vanuit Adobe I/O Runtime{#aio-app-logs}
 
-[AEM as a Cloud Service gebruikt Asset compute-workers via verwerkingsprofielen](../deploy/processing-profiles.md) door ze rechtstreeks in Adobe I/O Runtime aan te roepen. Omdat deze aanroepen geen lokale ontwikkeling impliceren, kunnen hun uitvoeringen niet worden gezuiverd gebruikend lokaal hulpmiddel zoals het Hulpmiddel van de Ontwikkeling van de Asset compute of wskdebug. In plaats daarvan, kan Adobe I/O CLI worden gebruikt om logboeken van de worker te halen die in een bepaalde werkruimte in Adobe I/O Runtime wordt uitgevoerd.
+[ AEM as a Cloud Service hefboomwerkingen de arbeiders van de Asset compute via de Profielen van de Verwerking ](../deploy/processing-profiles.md) door hen in Adobe I/O Runtime direct aan te halen. Omdat deze aanroepen geen lokale ontwikkeling impliceren, kunnen hun uitvoeringen niet worden gezuiverd gebruikend lokaal hulpmiddel zoals het Hulpmiddel van de Ontwikkeling van de Asset compute of wskdebug. In plaats daarvan, kan Adobe I/O CLI worden gebruikt om logboeken van de worker te halen die in een bepaalde werkruimte in Adobe I/O Runtime wordt uitgevoerd.
 
-1. Zorg ervoor dat [specifieke omgevingsvariabelen voor de werkruimte](../deploy/runtime.md) worden ingesteld via `AIO_runtime_namespace` en `AIO_runtime_auth`, op basis van de werkruimte die foutopsporing vereist.
-1. Vanuit de opdrachtregel uitvoeren `aio app logs`
-   + Als de werkruimte zwaar verkeer ondergaat, breid het aantal activeringslogboeken via uit `--limit` markering:
+1. Verzeker de [ werkruimte-specifieke milieuvariabelen ](../deploy/runtime.md) via `AIO_runtime_namespace` en `AIO_runtime_auth` worden geplaatst, die op de werkruimte wordt gebaseerd die het zuiveren vereisen.
+1. Uitvoeren vanaf de opdrachtregel `aio app logs`
+   + Als er veel verkeer is in de werkruimte, vouwt u het aantal activeringslogboeken uit via de markering `--limit` :
      `$ aio app logs --limit=25`
-1. De meest recente (tot en met de geleverde `--limit`) de activeringslogboeken zijn teruggekeerd als output van het bevel voor overzicht.
+1. De meest recente (tot en met de meegeleverde `--limit` ) activeringslogboeken worden geretourneerd als uitvoer van de opdracht ter controle.
 
-   ![aio-toepassingslogboeken](./assets/debug/aio-app-logs.png)
+   ![ de logboeken van de ao app ](./assets/debug/aio-app-logs.png)
 
 ## Problemen oplossen
 

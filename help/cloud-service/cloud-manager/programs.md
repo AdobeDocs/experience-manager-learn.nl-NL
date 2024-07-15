@@ -1,6 +1,6 @@
 ---
 title: Adobe Cloud Manager gebruiken - Programma's
-description: De Programma's van de Manager van de wolk vertegenwoordigen reeksen AEM milieu's ondersteunend logische reeksen bedrijfsinitiatieven, typisch die aan een gekochte Overeenkomst van het Niveau van de Dienst (SLA) beantwoorden. Bijvoorbeeld, kan één Programma de AEM middelen vertegenwoordigen om de globale openbare Websites te steunen, terwijl een ander Programma een interne Centrale DAM vertegenwoordigt.
+description: Cloud Manager-programma's vertegenwoordigen een reeks AEM omgevingen die logische reeksen bedrijfsinitiatieven ondersteunen, die doorgaans overeenkomen met een aangeschafte Service Level Agreement (SLA). Bijvoorbeeld, kan één Programma de AEM middelen vertegenwoordigen om de globale openbare Websites te steunen, terwijl een ander Programma een interne Centrale DAM vertegenwoordigt.
 doc-type: feature video
 version: Cloud Service
 jira: KT-6845
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Adobe Cloud Manager gebruiken - Programma&#39;s
 
-Cloud Manager **Programma&#39;s** vertegenwoordigen reeksen AEM milieu&#39;s die logische reeksen bedrijfsinitiatieven steunen, typisch die aan een gekochte Overeenkomst van het Niveau van de Dienst (SLA) beantwoorden. Bijvoorbeeld, kan één Programma de AEM middelen vertegenwoordigen om de globale openbare Websites te steunen, terwijl een ander Programma een interne Centrale DAM vertegenwoordigt.
+Cloud Manager **Programma&#39;s** vertegenwoordigen reeksen AEM milieu&#39;s ondersteunend logische reeksen bedrijfsinitiatieven, typisch die aan een gekochte Overeenkomst van het Niveau van de Dienst (SLA) beantwoorden. Bijvoorbeeld, kan één Programma de AEM middelen vertegenwoordigen om de globale openbare Websites te steunen, terwijl een ander Programma een interne Centrale DAM vertegenwoordigt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)

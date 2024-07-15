@@ -42,6 +42,6 @@ Volg de video om de referenties aan de gebruiker van de fd-service toe te voegen
 
 De opdracht voor het weergeven van de details van het pfx-bestand is. Bij de volgende opdracht wordt ervan uitgegaan dat u zich in dezelfde map bevindt als het pfx-bestand.
 
-**keytool -v -list -storetype pkcs12 -keystore &lt;name of=&quot;&quot; your=&quot;&quot; pfx=&quot;&quot; file=&quot;&quot;>**
+**keytool -v -list -storetype pkcs12 - keystore &lt;name van uw .pfx dossier>**
 
 Bijvoorbeeld keytool -v -list -storetype pkcs12 -keystore 1005566.pfx waarbij 1005566.pfx de naam van mijn pfx-bestand is

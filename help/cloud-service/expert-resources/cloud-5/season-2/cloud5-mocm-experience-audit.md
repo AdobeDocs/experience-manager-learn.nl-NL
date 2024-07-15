@@ -1,6 +1,6 @@
 ---
 title: Wolk 5 - Mysteries van Cloud Manager - Experience Audit
-description: Cloud Manager onderzoeken en graven in de functie Experience Audit
+description: Cloud Manager onderzoeken en graven naar de functie Experience Audit
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Wolk 5 - Mysteries van Cloud Manager - Experience Audit
 
-In deel één van een reeks met drie delen verkennen we de basisbeginselen van Cloud Manager en gooien we onze tenen naar de mogelijkheden van Experience Audit.
+In deel één van een reeks van drie delen, verkennen we de basisbeginselen van Cloud Manager en gooien we onze tenen in de Experience Audit-mogelijkheden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
 
 ## Inhoud die in deze video wordt behandeld
 
-+ Overzicht van Cloud Manager
++ Cloud Manager - Overzicht
 + Interface Familiariation

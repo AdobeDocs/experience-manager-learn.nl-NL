@@ -26,18 +26,18 @@ Leer hoe u AEM met eigenschap tags verbindt met behulp van de IMS-configuratie (
 
 ## IMS-configuratie maken of opnieuw gebruiken
 
-De IMS-configuratie die gebruikmaakt van het Adobe Developer Console-project is vereist om AEM te integreren met de nieuwe tageigenschap. Dankzij deze configuratie kunnen AEM communiceren met de toepassing Tags met behulp van tags-API&#39;s en IMS wordt het beveiligingsaspect van deze integratie verwerkt.
+De configuratie IMS die het Adobe Developer Console-project gebruikt, is vereist om AEM te integreren met nieuw gemaakte eigenschap Tag. Dankzij deze configuratie kunnen AEM communiceren met de toepassing Tags met behulp van tags-API&#39;s en IMS wordt het beveiligingsaspect van deze integratie verwerkt.
 
-Wanneer een AEM als Cloud Service-omgeving wordt ingericht, worden een aantal IMS-configuraties zoals Asset compute, Adobe Analytics en tags automatisch gemaakt. De automatisch gemaakte **tags in Adobe Experience Platform** De configuratie IMS kan worden gebruikt of een nieuwe configuratie IMS zou moeten worden gecreeerd als u AEM milieu 6.X gebruikt.
+Wanneer een AEM als Cloud Service-omgeving wordt ingericht, worden een aantal IMS-configuraties zoals Asset compute, Adobe Analytics en tags automatisch gemaakt. De auto creeerde **markeringen in de configuratie van Adobe Experience Platform** IMS kunnen worden gebruikt of een nieuwe configuratie IMS zou moeten worden gecreeerd als u AEM milieu 6.X gebruikt.
 
-Automatisch gemaakte revisie **tags in Adobe Experience Platform** IMS-configuratie met de volgende stappen.
+De auto van het overzicht creeerde **markeringen in de configuratie van Adobe Experience Platform** IMS gebruikend volgende stappen.
 
-1. In AEM Auteur opent u de knop **Gereedschappen** menu
+1. In AEM Auteur open het **Hulpmiddelen** menu
 1. Selecteer Adobe IMS Configurations in de sectie Beveiliging.
-1. Selecteer de **Adobe starten** kaart en klik op **Eigenschappen**, bekijk de details van **Certificaat** en **Account** tabs. Klik vervolgens op **Annuleren** om terug te keren zonder automatisch gemaakte details te wijzigen.
-1. Selecteer de **Adobe starten** kaart en deze keer klikken **Health controleren** moet u de **Succes** bericht zoals hieronder.
+1. Selecteer de **kaart van de Lancering van de Adobe 0} {en klik** Eigenschappen **, herzie de details van** Certificaat **en** de lusjes van de Rekening **.** Dan klik **annuleert** om terug te keren zonder om het even welke auto gecreeerde details te wijzigen.
+1. Selecteer de **kaart van de Lancering van de Adobe 0} {en klik deze keer** Gezondheid van de Controle **, zou u het** 5} bericht van het Succes {als hieronder moeten zien.****
 
-   ![Tags Gezonde IMS-configuratie](assets/adobe-launch-healthy-ims-config.png)
+   ![ de Gezonde Configuratie IMS van Markeringen ](assets/adobe-launch-healthy-ims-config.png)
 
 ## Volgende stappen
 

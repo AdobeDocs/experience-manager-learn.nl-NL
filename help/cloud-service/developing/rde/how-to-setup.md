@@ -1,6 +1,6 @@
 ---
 title: De snelle ontwikkelomgeving instellen
-description: Leer hoe u Rapid Development Environment instelt voor AEM as a Cloud Service.
+description: Leer hoe u Rapid Development Environment voor AEM as a Cloud Service instelt.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 # De snelle ontwikkelomgeving instellen
 
-Meer informatie **instellen** Rapid Development Environment (RDE) in AEM as a Cloud Service.
+Leer **hoe te opstelling** Snelle Milieu van de Ontwikkeling (RDE) in AEM as a Cloud Service.
 
 In deze video wordt getoond:
 
-- Een RDE toevoegen aan uw programma met gebruik van Cloud Manager
-- RDE-aanmeldstroom met Adobe IMS, hoe deze vergelijkbaar is met andere AEM as a Cloud Service omgeving
-- Instellen van [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook bekend als `aio CLI`
-- Opstelling en configuratie van AEM RDE en de Manager van de Wolk `aio CLI` met een niet-interactieve modus. Voor interactieve modus raadpleegt u de [installatie-instructies](#setup-the-aem-rde-plugin)
+- Een RDE toevoegen aan uw programma met Cloud Manager
+- RDE-aanmeldstroom met Adobe IMS, hoe vergelijkbaar met andere AEM as a Cloud Service-omgevingen
+- Opstelling van [ Extensible CLI van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook gekend als `aio CLI`
+- Instellen en configureren van AEM RDE- en Cloud Manager `aio CLI` -insteekmodule in de niet-interactieve modus. Voor interactieve wijze, zie de [ opstellingsinstructies ](#setup-the-aem-rde-plugin)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490?quality=12&learn=on)
 
@@ -35,16 +35,16 @@ In deze video wordt getoond:
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-- [Node.js](https://nodejs.org/en/) (LTS - langdurige ondersteuning)
-- [npm 8+](https://docs.npmjs.com/)
+- [ Node.js ](https://nodejs.org/en/) (LTS - steun op lange termijn)
+- [ npm 8+ ](https://docs.npmjs.com/)
 
 ## Lokale instellingen
 
-Om het [WKND-siteprojecten](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) de code en de inhoud op RDE van uw lokale machine, voltooi de volgende stappen.
+Om de ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) code en inhoud van het Project van de Plaatsen van 0} WKND {op te stellen RDE van uw lokale machine, voltooi de volgende stappen.[
 
 ### Adobe I/O Runtime Extensible CLI
 
-Installeer de Extensible CLI van Adobe I/O Runtime, ook bekend als de `aio CLI` door het volgende bevel van de bevellijn in werking te stellen.
+Installeer de Extensible CLI van Adobe I/O Runtime, die ook als `aio CLI` wordt bekend door het volgende bevel van de bevellijn in werking te stellen.
 
 ```shell
 $ npm install -g @adobe/aio-cli
@@ -56,11 +56,11 @@ De AIR CLI moet geïnstalleerde insteekmodules en opstelling met de identiteitsk
 
 >[!BEGINTABS]
 
->[!TAB Interactieve modus]
+>[!TAB  Interactieve wijze ]
 
-De AEM RDE-plug-ins installeren en instellen met de `aio cli`s `plugins:install` gebruiken.
+Installeer en stel de AEM RDE-plug-ins in met de opdracht `aio cli`&#39;s `plugins:install` .
 
-1. Installeer de AEM RDE-plug-in van de AIR CLI met behulp van de `aio cli`s `plugins:install` gebruiken.
+1. Installeer de AEM RDE-plug-in van de AIR CLI met de opdracht `aio cli` &#39;&#39;s `plugins:install` .
 
    ```shell
    $ aio plugins:install @adobe/aio-cli-plugin-aem-rde    
@@ -88,9 +88,9 @@ De AEM RDE-plug-ins installeren en instellen met de `aio cli`s `plugins:install`
    ? Do you want to store the information you enter in this setup procedure locally? (y/N)
    ```
 
-   - Kies __Nee__  als u slechts met één enkele RDE werkt, en uw configuratie van RDE globaal op uw lokale machine wilt opslaan.
+   - Kies __Nr__ als u slechts met één enkele RDE werkt, en uw configuratie van RDE globaal op uw lokale machine wilt opslaan.
 
-   - Kies __Ja__ als u met veelvoudige RDEs werkt, of uw configuratie van RDE plaatselijk, in de huidige omslag wilt opslaan `.aio` bestand, voor elk project.
+   - Kies __ja__ als u met veelvoudige RDEs werkt, of uw configuratie van RDE, in het 2} dossier van de huidige omslag {, voor elk project lokaal wilt opslaan.`.aio`
 
 5. Selecteer de organisatie-id, de programma-id en de RDE-omgeving-id in de lijst met beschikbare opties.
 
@@ -100,9 +100,9 @@ De AEM RDE-plug-ins installeren en instellen met de `aio cli`s `plugins:install`
    $ aio aem rde setup --show
    ```
 
->[!TAB Niet-interactieve modus]
+>[!TAB  Niet-interactieve wijze ]
 
-Installeer en stel de insteekmodules Cloud Manager en AEM RDE in via de `aio cli`s `plugins:install` gebruiken.
+Installeer de Cloud Manager- en AEM RDE-plug-ins en stel deze in met de opdracht `aio cli` s `plugins:install` .
 
 ```shell
 $ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
@@ -110,7 +110,7 @@ $ aio plugins:install @adobe/aio-cli-plugin-aem-rde
 $ aio plugins:update
 ```
 
-Met de insteekmodule Cloud Manager kunnen ontwikkelaars via de opdrachtregel communiceren met Cloud Manager.
+Met de Cloud Manager-insteekmodule kunnen ontwikkelaars via de opdrachtregel communiceren met Cloud Manager.
 
 Met de AEM RDE-insteekmodule kunnen ontwikkelaars code en inhoud van de lokale computer implementeren.
 
@@ -118,19 +118,19 @@ De insteekmodules van airCLI moeten worden gevormd om met uw RDE in wisselwerkin
 
 1. Kopieer eerst met de Cloud Manager de waarden van de organisatie-, programma- en milieu-id.
 
-   - Organisatie-id: de waarde kopiëren van **Profielbeeld > Accountinformatie (intern) > Modal Window > Current Org ID**
+   - Organisatie-id: Kopieer de waarde van **Beeld van het Profiel > (interne) Accountinfo > Modal Venster > Huidige organisatie-id**
 
-   ![Organisatie-id](./assets/Org-ID.png)
+   ![ identiteitskaart van de Organisatie ](./assets/Org-ID.png)
 
-   - Programma-id: de waarde kopiëren uit **Overzicht van programma > Omgevingen > {ProgramName}-rde > Browser URI > numbers between `program/` en`/environment`**
+   - Programma-id: kopieer de waarde uit **Program Overview > Environments > {ProgramName} Rand > Browser URI > numbers between `program/` en`/environment`**
 
-   ![Programma- en milieu-id](./assets/Program-Environment-Id.png)
+   ![ identiteitskaart van het Programma en van het Milieu ](./assets/Program-Environment-Id.png)
 
-   - Omgeving-id: de waarde kopiëren uit **Overzicht van programma > Omgevingen > {ProgramName}-rde > Browser URI > numbers after`environment/`**
+   - Omgeving-id: kopieer de waarde uit **Program Overview > Environment > {ProgramName} -rd > Browser URI > numbers after`environment/`**
 
-   ![Programma- en milieu-id](./assets/Program-Environment-Id.png)
+   ![ identiteitskaart van het Programma en van het Milieu ](./assets/Program-Environment-Id.png)
 
-1. Gebruik de `aio cli`s `config:set` deze waarden in te stellen met de volgende opdracht.
+1. Gebruik de opdracht `aio cli` `config:set` om deze waarden in te stellen met de volgende opdracht.
 
    ```shell
    $ aio config:set cloudmanager_orgid <ORGANIZATION ID>
@@ -160,21 +160,21 @@ Verifieer de de insteekinstallatie en configuratie van AEMRDE door het volgende 
 $ aio aem:rde:status
 ```
 
-De RDE statusinformatie wordt weergegeven als een omgevingsstatus, de lijst met _uw AEM_ bundels en configuraties op auteur en publicatieservice.
+De RDE statusinformatie wordt getoond als milieustatus, de lijst van _uw AEM_ bundels en configuraties van het project op auteur en publiceer de dienst.
 
 ## Volgende stap
 
-Meer informatie [gebruiken](./how-to-use.md) een RDE om code en inhoud van uw favoriete Geïntegreerde Milieu van de Ontwikkeling (winde) voor snellere ontwikkelingscycli op te stellen.
+Leer [ hoe te om ](./how-to-use.md) RDE te gebruiken om code en inhoud van uw favoriete Geïntegreerde Milieu van de Ontwikkeling (winde) voor snellere ontwikkelingscycli op te stellen.
 
 
 ## Aanvullende bronnen
 
-[RDE inschakelen in een programmadocumentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
+[ toelatend RDE in een programmadocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
 
-Instellen van [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook bekend als `aio CLI`
+Opstelling van [ Extensible CLI van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) ook gekend als `aio CLI`
 
-[Gebruik en opdrachten van AIR CLI](https://github.com/adobe/aio-cli#usage)
+[ het gebruik en bevelen van ATM CLI ](https://github.com/adobe/aio-cli#usage)
 
-[Adobe I/O Runtime CLI-insteekmodule voor interactie met AEM Rapid Development Environment](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[ Adobe I/O Runtime CLI stop voor interactie met AEM Snelle Milieu&#39;s van de Ontwikkeling ](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Cloud Manager AIR CLI-plug-in](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+[ de insteekmodule van Cloud Manager CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager)

@@ -23,11 +23,11 @@ ht-degree: 0%
 
 # Uitdrukkelijke app filteren
 
-Ontdek AEM GraphQL API&#39;s zonder koppen die gegevens kunnen filteren met een [Express](https://expressjs.com/) en [Pug](https://pugjs.org/) app. Met deze Express-app maakt u een lijst met WKND-avonturen die kunnen worden gefilterd op Type activiteit.
+Onderzoek AEM de capaciteit van GraphQL APIs zonder hoofd om gegevens te filtreren gebruikend a [ Uitdrukkelijke ](https://expressjs.com/) en [ Pug ](https://pugjs.org/) app. Met deze Express-app maakt u een lijst met WKND-avonturen die kunnen worden gefilterd op Type activiteit.
 
-Deze code demonstreert het gebruik van de Adobe [AEM Headless-client voor NodeJS](https://github.com/adobe/aem-headless-client-nodejs#aem-headless-client-for-nodejs) om voortgezette GraphQL-query&#39;s aan te roepen met JavaScript op basis van Node.js. Deze app gebruikt de `wknd-shared/adventures-all` Voortdurende vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot `wknd-shared/adventures-by-activity` persisted query en haalt de avontuurdetails voor alleen die avonturen van het opgegeven Type activiteit op. De details van het avontuur worden teruggewonnen van AEM via `wknd-shared/adventures-by-slug` voortgezette query.
+Deze code toont het gebruiken van Adobe [ AEM Koploze Cliënt voor NodeJS ](https://github.com/adobe/aem-headless-client-nodejs#aem-headless-client-for-nodejs) aan om voortgeduurde vragen van GraphQL aan te halen gebruikend op Node.js-Gebaseerde JavaScript. Deze app gebruikt de `wknd-shared/adventures-all` aanhoudend vraag om alle avonturen te verzamelen, en een lijst van beschikbare Types van Activiteit af te leiden. Wanneer een gebruiker een Type van Activiteit selecteert, wordt het geselecteerde type overgegaan tot de `wknd-shared/adventures-by-activity` persisted vraag en wint de avontuurdetails voor slechts die avonturen van het gespecificeerde Type van Activiteit terug. De details van het avontuur worden teruggewonnen van AEM via `wknd-shared/adventures-by-slug` persisted vraag.
 
 Deze code:
 
-+ Verbindt met de AEM publicatieservice, en vereist geen authentificatie
-+ Gebruikt de hardnekkige vragen van WKND: `wknd-shared/adventures-all`, `wknd-shared/adventures-by-activity`, en `wknd-shared/adventures-by-slug`
++ Maakt verbinding met een AEM Publish-service en vereist geen verificatie
++ Gebruikt de aanhoudend vragen van WKND: `wknd-shared/adventures-all`, `wknd-shared/adventures-by-activity`, en `wknd-shared/adventures-by-slug`

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Stappen voor het oplossen van problemen met PDFG-conversie van meerdere gebruikers tijdens een Unix-installatie
 
-*In deze video wordt beschreven hoe problemen met PDFG-conversie door meerdere gebruikers tijdens een Unix-installatie kunnen worden opgelost.*
+*Deze video beschrijft het proces om de kwesties van de Omzetting van PDFG van de multi-Gebruiker op een Opstelling van Unix te oplossen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335549?quality=12&learn=on)

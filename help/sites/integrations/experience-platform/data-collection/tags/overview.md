@@ -33,15 +33,15 @@ Tags zijn Adobe Experience Platform van de volgende generatie technologie voor t
 
 Het volgende wordt vereist wanneer het integreren van de Markeringen van de Inzameling van de Gegevens van het Experience Platform.
 
-+ Toegang AEM tot AEM as a Cloud Service omgeving
-+ Een referentiesite als [WKND](https://github.com/adobe/aem-guides-wknd) op het worden ingezet.
++ Toegang AEM beheerder tot AEM as a Cloud Service-omgeving
++ Een verwijzingsplaats als [ WKND ](https://github.com/adobe/aem-guides-wknd) op het wordt opgesteld dat.
 + Toegang tot Adobe Experience Platform-oplossing voor gegevensverzameling
-+ Toegang van systeembeheerders tot [Adobe Developer Console](https://developer.adobe.com/developer-console/)
++ De toegang van de Beheerder van het systeem tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/)
 
 
 ## Stappen op hoog niveau
 
-+ Maak in Adobe Experience Platform Data Collection een Tag-eigenschap en bewerk deze naar _Regel toevoegen_. Vervolgens _Bibliotheek toevoegen_ selecteert u de zojuist toegevoegde regel, keurt u deze goed en publiceert u deze.
++ In de Inzameling van Gegevens van Adobe Experience Platform, creeer een bezit van de Markering en geef het uit aan _voeg Regel_ toe. Dan _voeg Bibliotheek_ toe, selecteer de onlangs toegevoegde regel, keur, en publiceer het goed.
 + AEM en tags verbinden met behulp van bestaande (of nieuwe) IMS-configuratie
 + In AEM maakt u een cloudserviceconfiguratie voor tags, past u deze vervolgens toe op een bestaande site en controleert u ten slotte of de eigenschap Tags en de bibliotheken ervan op de site Published of Auteur zijn geladen.
 
@@ -51,6 +51,6 @@ Het volgende wordt vereist wanneer het integreren van de Markeringen van de Inza
 
 ## Aanvullende bronnen {#additional-resources}
 
-+ [Integratie van Experience Platforms met Experience Cloud-toepassingen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-+ [Overzicht van codes](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Het Experience Cloud implementeren in websites met tags](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [ Integraties van het Experience Platform met de Toepassingen van het Experience Cloud ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
++ [ Overzicht van Markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [ Uitvoerend het Experience Cloud in Websites met Markeringen ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)

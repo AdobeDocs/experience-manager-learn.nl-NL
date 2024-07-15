@@ -27,8 +27,8 @@ Met geavanceerd metagegevensbeheer kunnen gebruikers trapsgewijze veldregels mak
 
 Er zijn drie dynamische regelsets die voor een bepaald metagegevensveld kunnen worden ingeschakeld:
 
-1. **Vereiste** : een veld kan dynamisch worden gemarkeerd als vereist om te worden gebaseerd op de waarde van een ander vervolgkeuzeveld.
+1. **Vereiste** : een gebied kan dynamisch worden gemerkt zoals vereist om op de waarde van een ander dropdown gebied worden gebaseerd.
 
-2. **Zichtbaarheid** : velden kunnen altijd zichtbaar of alleen zichtbaar zijn op basis van de waarde van een ander vervolgkeuzeveld.
+2. **Zichtbaarheid** : de gebieden kunnen altijd zichtbaar of slechts zichtbaar zijn gebaseerd op de waarde van een ander dropdown gebied.
 
-3. **Keuzen** : (alleen van toepassing op vervolgkeuzelijsten) filtert de weergegeven keuzen aan de gebruiker op basis van de geselecteerde waarde van een ander vervolgkeuzeveld.
+3. **Keuzen** : (slechts van toepassing op dropdown gebieden) filter de keuzen die aan de gebruiker worden getoond op de momenteel geselecteerde waarde van een ander dropdown gebied wordt gebaseerd.

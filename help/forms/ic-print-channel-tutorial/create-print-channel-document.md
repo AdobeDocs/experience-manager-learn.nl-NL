@@ -23,7 +23,7 @@ ht-degree: 0%
 
 In dit deel wordt Interactive Communication Document for Print channel gemaakt.
 
-Nadat we de gegevensbron en het formuliergegevensmodel hebben gedefinieerd en geconfigureerd, maken we nu onze interactieve communicatie voor het afdrukkanaal
+Na het definiëren en configureren van Data Source en Form Data Model maken we nu onze interactieve communicatie voor Print Channel
 
 >[!VIDEO](https://video.tv.adobe.com/v/37888?quality=12&learn=on)
 

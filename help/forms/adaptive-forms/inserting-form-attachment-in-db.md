@@ -26,19 +26,19 @@ Om dit te verwezenlijken het gebruikscase werd de volgende stappen gevolgd
 
 ## Databasetabel maken voor de formuliergegevens en de bijlage
 
-Er is een tabel met de naam NewWire gemaakt voor de opslag van de formuliergegevens. Let op de kolomnaamafbeelding van het type **LONGBLOB** de formulierbijlage opslaan
-![table-schema](assets/insert-picture-table.png)
+Er is een tabel met de naam NewWire gemaakt voor de opslag van de formuliergegevens. Bericht het beeld van de kolomnaam van type **LONGBLOB** om de vormgehechtheid op te slaan
+![ lijst-schema ](assets/insert-picture-table.png)
 
 ## Formuliergegevensmodel maken
 
 Er is een formuliergegevensmodel gemaakt voor communicatie met de MySQL-database. U moet het volgende maken:
 
 * [JDBC-gegevensbron in AEM](./data-integration-technical-video-setup.md)
-* [Formuliergegevensmodel gebaseerd op de JDBC-gegevensbron](./jdbc-data-model-technical-video-use.md)
+* [ Model van de Gegevens van de Vorm dat op JDBC Datasource ](./jdbc-data-model-technical-video-use.md) wordt gebaseerd
 
 ## Workflow maken
 
-Als u het Adaptief formulier configureert voor verzending naar een AEM, kunt u de formulierbijlagen opslaan in een workflowvariabele of de bijlagen opslaan in een opgegeven map onder de payload. Voor dit gebruik moeten we de bijlagen opslaan in een workflowvariabele van het type ArrayList of Document. Uit deze ArrayList moeten we het eerste item extraheren en een documentvariabele initialiseren. De workflowvariabelen worden **listOfDocuments** en **employeePhoto** zijn gemaakt.
+Als u het Adaptief formulier configureert voor verzending naar een AEM, kunt u de formulierbijlagen opslaan in een workflowvariabele of de bijlagen opslaan in een opgegeven map onder de payload. Voor dit gebruik moeten we de bijlagen opslaan in een workflowvariabele van het type ArrayList of Document. Uit deze ArrayList moeten we het eerste item extraheren en een documentvariabele initialiseren. De werkschemavariabelen riepen **listOfDocuments** en **employeePhoto** werden gecreeerd.
 Wanneer het adaptieve formulier wordt verzonden om de workflow te activeren, wordt met behulp van het ECMA-script een stap in de workflow de variabele employeePhoto geïnitialiseerd. Hier volgt de ECMA-scriptcode
 
 ```javascript
@@ -55,8 +55,8 @@ log.info("Employee Photo updated");
 ```
 
 De volgende stap in de workflow bestaat uit het invoegen van gegevens en de formulierbijlage in de tabel met de servicecomponent Formuliergegevensmodel aanroepen.
-![insert-pic](assets/fdm-insert-pic.png)
-[De volledige workflow met het voorbeeldscript kan hier worden gedownload](assets/add-new-employee.zip).
+![ tussenvoegsel-pic ](assets/fdm-insert-pic.png)
+[ het volledige werkschema met het manuscript van steekproefecma kan van hier worden gedownload ](assets/add-new-employee.zip).
 
 >[!NOTE]
 > U moet een nieuw op JDBC gebaseerd formuliergegevensmodel maken en dat formuliergegevensmodel gebruiken in de workflow
@@ -64,4 +64,4 @@ De volgende stap in de workflow bestaat uit het invoegen van gegevens en de form
 ## Adaptief formulier maken
 
 Maak een adaptief formulier op basis van het formuliergegevensmodel dat u in de vorige stap hebt gemaakt. Sleep de elementen van het formuliergegevensmodel naar het formulier. Configureer de formulierverzending om de workflow te activeren en geef de volgende eigenschappen op, zoals hieronder weergegeven in de schermafbeelding.
-![formulierbijlagen](assets/form-attachments.png)
+![ vorm-gehechtheid ](assets/form-attachments.png)

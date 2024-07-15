@@ -1,6 +1,6 @@
 ---
 title: Zoeken
-description: Leer hoe u AEM Omnissearch kunt gebruiken om snel middelen te zoeken.
+description: Leer hoe u met AEM van Omnissearch snel middelen kunt vinden.
 feature: Search
 version: Cloud Service
 jira: KT-4312
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Zoeken{#aem-assets-search}
 
-Leer hoe u AEM Omnissearch kunt gebruiken om snel middelen te zoeken.
+Leer hoe u met AEM van Omnissearch snel middelen kunt vinden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32054?quality=12&learn=on)

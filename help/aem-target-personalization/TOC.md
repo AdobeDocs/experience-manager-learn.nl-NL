@@ -17,9 +17,9 @@ ht-degree: 34%
 # Aan de slag met AEM en doel {#aem-target-tutorial}
 
 + [Overzicht](./overview.md)
-+ [Personalisatie met AEM Experience Fragments](./personalization-use-case-1.md)
-+ [Personalisatie met behulp van Visual Experience Composer](./personalization-use-case-3.md)
-+ [Aanpassing van de volledige webpaginamogelijkheden](./personalization-use-case-2.md)
++ [Personalization gebruikt AEM Experience Fragmenten](./personalization-use-case-1.md)
++ [Personalization die Visual Experience Composer gebruikt](./personalization-use-case-3.md)
++ [Personalization of Full Web Page Ervaringen](./personalization-use-case-2.md)
 + Implementatie {#aem-target-implementation}
    + [Inleiding](./implementation.md)
    + [AEM en Adobe Target met tags en Adobe I/O](./using-launch-adobe-io.md)

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Welkomstkit-component
 
-Er is een pagina-component gemaakt om de elementen op de pagina weer te geven die door de eindgebruiker kunnen worden gedownload. De paden naar de afzonderlijke elementen worden opgeslagen in een eigenschap die **paden**. De ingediende formuliergegevens bepalen welke elementen moeten worden opgenomen.
+Er is een pagina-component gemaakt om de elementen op de pagina weer te geven die door de eindgebruiker kunnen worden gedownload. De wegen aan de individuele activa worden bewaard in een bezit genoemd **wegen**. De ingediende formuliergegevens bepalen welke elementen moeten worden opgenomen.
 
 De volgende code geeft een overzicht van de elementen op de pagina:
 

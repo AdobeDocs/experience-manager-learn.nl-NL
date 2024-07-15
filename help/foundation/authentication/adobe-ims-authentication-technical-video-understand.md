@@ -26,13 +26,13 @@ Adobe Experience Manager introduceert ondersteuning voor Admin Consoles voor AEM
 >[!VIDEO](https://video.tv.adobe.com/v/26170?quality=12&learn=on)
 
 * Adobe Experience Manager IMS-verificatieondersteuning is alleen bedoeld voor &#39;interne&#39; gebruikers (auteurs, revisoren, beheerders, ontwikkelaars, enzovoort) en niet voor externe eindgebruikers, zoals bezoekers van websites.
-* [Admin Console](https://adminconsole.adobe.com/) vertegenwoordigt AEM klanten van Managed Services als IMS Orgs en de AEM instanties als Contexten van het Product. Systeem- en productbeheerders van Admin Consoles kunnen definiëren en beheren.
+* [ de Admin Console ](https://adminconsole.adobe.com/) vertegenwoordigt AEM klanten van Managed Services als IMS Orgs en de AEM instanties als Contexten van het Product. Systeem- en productbeheerders van Admin Consoles kunnen definiëren en beheren.
 * AEM Managed Services synchroniseert uw topologie met Admin Console, creërend een 1-aan-1 afbeelding tussen een Context van het Product en AEM instantie.
 * Het Profiel van het product in Admin Console bepaalt tot welke AEM instanties een gebruiker toegang heeft.
 * De steun van de authentificatie omvat klant SAML2 volgzame IDPs voor SSO.
 * Alleen Enterprise- of federatieve id&#39;s (voor SSO&#39;s van klanten) worden ondersteund (persoonlijke Adobe-id&#39;s worden niet ondersteund).
 
-*&#42;Deze eigenschap wordt gesteund voor AEM 6.4 SP3 en later voor de klanten van Adobe Managed Services.*
+*&#42;Deze functie wordt ondersteund voor AEM 6.4 SP3 en hoger voor Adobe Managed Services-klanten.*
 
 ## Aanbevolen procedures {#best-practices}
 
@@ -44,4 +44,4 @@ In Admin Console, zouden de gebruikers via Gebruikersgroepen op het niveau van d
 
 ### Machtigingen toepassen in Adobe Experience Manager
 
-In Adobe Experience Manager moeten gebruikersgroepen die zijn gesynchroniseerd met Adobe IMS, automatisch worden toegevoegd aan [Door AEM opgegeven gebruikersgroepen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html), die vooraf met de aangewezen toestemmingen worden gevormd om specifieke reeksen taken in AEM uit te voeren. Gebruikers die via Adobe IMS zijn gesynchroniseerd, mogen niet rechtstreeks worden toegevoegd aan [Door AEM opgegeven gebruikersgroepen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+In Adobe Experience Manager, zouden de gebruikersgroepen die van Adobe IMS worden gesynchroniseerd op termijn aan [ AEM-verstrekte gebruikersgroepen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html) moeten worden toegevoegd, die met de aangewezen toestemmingen preconfigured komen om specifieke reeksen taken in AEM uit te voeren. De gebruikers die van IMS van Adobe worden gesynchroniseerd zouden niet direct aan [ AEM-verstrekte gebruikersgroepen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html) moeten worden toegevoegd.

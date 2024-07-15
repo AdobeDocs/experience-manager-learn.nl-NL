@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ---
 
-# as a Cloud Service video&#39;s en zelfstudies AEM {#overview}
+# AEM as a Cloud Service - video&#39;s en zelfstudies {#overview}
 
 {{edge-delivery-services}}
 
@@ -39,11 +39,11 @@ Adobe Experience Manager (AEM) is nu as a Cloud Service beschikbaar. AEM as a Cl
       </a>
       <div>
          <a href="./accessing/overview.md">
-         <strong>Toegang tot AEM zelfstudie configureren</strong>
+         <strong> het Vormen toegang tot AEM Leerprogramma </strong>
          </a>
       </div>
       <p>
-         <em>Configureer IMS-gebruikers in Adobe Admin Console voor toegang tot AEM.</em>
+         <em> vorm IMS gebruikers in Adobe Admin Console om tot AEM toegang te hebben.</em>
       <p>
    </td>   
    <td>
@@ -52,11 +52,11 @@ Adobe Experience Manager (AEM) is nu as a Cloud Service beschikbaar. AEM as a Cl
       </a>
       <div>
          <a href="./local-development-environment/overview.md">
-         <strong>Zelfstudie voor instelling lokale ontwikkelomgeving</strong>
+         <strong> het Leerprogramma van de Opstelling van het Milieu van de Lokale Ontwikkeling </strong>
          </a>
       </div>
       <p>
-         <em>Bereid uw lokale ontwikkelmachine klaar voor AEM as a Cloud Service ontwikkeling!</em>
+         <em> krijg uw lokale dev machine klaar voor de ontwikkeling van AEM as a Cloud Service!</em>
       <p>
    </td>   
    <td>
@@ -65,11 +65,11 @@ Adobe Experience Manager (AEM) is nu as a Cloud Service beschikbaar. AEM as a Cl
       </a>
       <div>
          <a href="./debugging/aem-sdk-local-quickstart/overview.md">
-         <strong>Foutopsporing AEM SDK</strong>
+         <strong> het Zuiveren AEM SDK </strong>
          </a>
       </div>
       <p>
-         <em>Ontdek de tools die worden gebruikt om fouten in uw toepassing op te sporen in de lokale snelstartfunctie van de AEM as a Cloud Service SDK.</em>
+         <em> onderzoek hulpmiddelen die worden gebruikt om uw toepassing op lokale QuickStart van SDK van AEM as a Cloud Service te zuiveren.</em>
       <p>
    </td>
 </table>
@@ -78,4 +78,4 @@ Adobe Experience Manager (AEM) is nu as a Cloud Service beschikbaar. AEM as a Cl
 
 ## Aanvullende bronnen
 
-* [Adobe Experience Manager as a Cloud Service-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+* [ documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)

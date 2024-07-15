@@ -20,6 +20,6 @@ ht-degree: 2%
 
 # Inleiding
 
-Inleiding tot het gebruiksscenario voor de integratie van Adobe Experience Manager Forms-API&#39;s voor as a Cloud Service en Document Cloud.
+Inleiding tot het gebruiksscenario voor de integratie van Adobe Experience Manager Forms as a Cloud Service en Document Cloud API&#39;s.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333241?quality=12&learn=on)

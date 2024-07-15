@@ -24,54 +24,54 @@ ht-degree: 0%
 
 Voor het integreren van Adobe Experience Manager (AEM) Sites met Adobe Experience Platform (AEP) moet AEM een unieke FPID-cookie (FPID) van de eerste partij genereren en onderhouden om de gebruikersactiviteit op unieke wijze te kunnen volgen.
 
-Lees de ondersteunende documentatie voor [Meer informatie over de manier waarop ID&#39;s van apparaten en Experience Cloud-id&#39;s in eerste instantie samenwerken](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
+Lees de ondersteunende documentatie aan [ leren over de details van hoe eerste-deel apparaat IDs en Experience Cloud IDs samenwerken ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
 
 Hieronder vindt u een overzicht van de werking van FPID&#39;s wanneer u AEM als webhost gebruikt.
 
-![FPID en ECID&#39;s met AEM](./assets/aem-platform-fpid-architecture.png)
+![ FPID en ECIDs met AEM ](./assets/aem-platform-fpid-architecture.png)
 
 ## De FPID genereren en behouden met AEM
 
-AEM de publicatieservice optimaliseert prestaties door verzoeken in het voorgeheugen onder te brengen zo veel als mogelijk is, in zowel de CDN- als AEM Dispatcher-cache.
+AEM de dienst van Publish optimaliseert prestaties door verzoeken in het voorgeheugen onder te brengen zo veel als het kan, in zowel CDN als AEM de geheime voorgeheugens van Dispatcher.
 
 Het is dwingende HTTP- verzoeken die het uniek-per-gebruiker FPID koekje produceren en de waarde terugkeren FPID wordt nooit in het voorgeheugen ondergebracht, en direct gediend van AEM Publish die logica kan uitvoeren om uniciteit te waarborgen.
 
 Vermijd het genereren van het FPID-cookie op aanvragen voor webpagina&#39;s of andere cacheable resources, aangezien de combinatie van de unieke FPID-vereisten deze bronnen ontoegankelijk zou maken.
 
-In het volgende diagram wordt beschreven hoe AEM de publicatieservice FPID&#39;s beheert.
+In het volgende diagram wordt beschreven hoe AEM Publish-service FPID&#39;s beheert.
 
-![FPID- en AEM-stroomdiagram](./assets/aem-fpid-flow.png)
+![ FPID en AEM stroomdiagram ](./assets/aem-fpid-flow.png)
 
-1. Webbrowser vraagt een webpagina aan die wordt gehost door AEM. Het verzoek kan worden betekend in de cache van een kopie van de webpagina van CDN of AEM Dispatcher-cache.
-1. Als de webpagina niet kan worden aangeboden vanaf CDN of AEM Dispatcher caches, bereikt de aanvraag AEM de publicatieservice, die de gevraagde webpagina genereert.
-1. De webpagina wordt vervolgens teruggestuurd naar de webbrowser en vult de caches in die de aanvraag niet konden uitvoeren. Met AEM verwacht u CDN- en AEM Dispatcher-cache van meer dan 90%.
-1. De webpagina bevat JavaScript waarmee een niet-cachebaar asynchroon XHR-verzoek (AJAX) wordt ingediend bij een aangepaste FPID-server in AEM publicatieservice. Omdat dit een uncacheable verzoek (door het is willekeurige vraagparameter en Cachebeheer kopballen) is, wordt het nooit in het voorgeheugen ondergebracht door CDN of AEM Dispatcher, en bereikt altijd AEM de Publish dienst om de reactie te produceren.
-1. De aangepaste FPID-server in AEM publicatieservice verwerkt de aanvraag, genereert een nieuwe FPID wanneer er geen bestaande FPID-cookie wordt gevonden, of verlengt de levensduur van bestaande FPID-cookie. De servlet retourneert ook de FPID in de hoofdtekst van de reactie voor gebruik door JavaScript op de client. Gelukkig is de aangepaste FPID servlet-logica lichtgewicht, waardoor deze aanvraag geen invloed heeft op AEM serviceprestaties voor publiceren.
+1. Webbrowser vraagt een webpagina aan die wordt gehost door AEM. Het verzoek kan worden betekend via een kopie van de webpagina in de cache in de cache van CDN of AEM Dispatcher.
+1. Als de webpagina niet kan worden aangeboden vanaf CDN of AEM Dispatcher caches, bereikt de aanvraag AEM Publish service, die de gevraagde webpagina genereert.
+1. De webpagina wordt vervolgens teruggestuurd naar de webbrowser en vult de caches in die de aanvraag niet konden uitvoeren. Met AEM, verwacht CDN en AEM Dispatcher geheim voorgeheugenklaptarieven groter zijn dan 90%.
+1. De webpagina bevat JavaScript dat een ongecachebaar asynchroon XHR-verzoek (AJAX) indient bij een aangepaste FPID-server in AEM Publish-service. Omdat dit een uncacheable verzoek (door het is willekeurige vraagparameter en Cachebeheer kopballen) is, wordt het nooit in het voorgeheugen ondergebracht door CDN of AEM Dispatcher, en bereikt altijd AEM dienst van Publish om de reactie te produceren.
+1. De aangepaste FPID-server in AEM Publish-service verwerkt de aanvraag, genereert een nieuwe FPID wanneer er geen bestaande FPID-cookie wordt gevonden, of verlengt de levensduur van bestaande FPID-cookie. De servlet retourneert ook de FPID in de antwoordinstantie voor gebruik door client-side JavaScript. Gelukkig is de aangepaste FPID servlet-logica lichtgewicht, waardoor deze aanvraag geen invloed kan hebben op AEM Publish-serviceprestaties.
 1. De reactie voor het XHR- verzoek keert aan browser met het koekje FPID en FPID als JSON in het antwoordlichaam voor gebruik door het Web SDK van het Platform terug.
 
 ## Codevoorbeeld
 
-De volgende code en de configuratie kunnen aan AEM de Publish dienst worden opgesteld om een eindpunt tot stand te brengen dat produceert, of het leven van een bestaand FPID koekje uitbreidt en FPID als JSON terugkeert.
+De volgende code en configuratie kunnen aan de dienst van AEM Publish worden opgesteld om een eindpunt tot stand te brengen dat, het leven van een bestaand FPID koekje produceert of uitbreidt en FPID als JSON terugkeert.
 
 ### AEM FPID cookie servlet
 
-Een AEM HTTP-eindpunt moet worden gemaakt om een FPID-cookie te genereren of uit te breiden met een [Sling servlet](https://sling.apache.org/documentation/the-sling-engine/servlets.html#registering-a-servlet-using-java-annotations-1).
+Een AEM eindpunt van HTTP moet worden gecreeerd om een koekje te produceren of uit te breiden FPID, gebruikend a [ het Schipen servlet ](https://sling.apache.org/documentation/the-sling-engine/servlets.html#registering-a-servlet-using-java-annotations-1).
 
-+ De servlet is gebonden aan `/bin/aem/fpid` omdat verificatie niet vereist is om toegang te krijgen tot de verificatie. Als de authentificatie wordt vereist, verbind aan een Verschuivend middeltype.
-+ De servlet accepteert HTTP-GET-aanvragen. De reactie is gemarkeerd met `Cache-Control: no-store` om caching te verhinderen, maar dit eindpunt zou ook moeten worden gevraagd gebruikend unieke geheim voorgeheugensteunende vraagparameters.
++ De servlet is gebonden aan `/bin/aem/fpid` aangezien de authentificatie niet wordt vereist om tot het toegang te hebben. Als de authentificatie wordt vereist, verbind aan een Verschuivend middeltype.
++ De servlet accepteert HTTP-GET-aanvragen. De reactie wordt duidelijk met `Cache-Control: no-store` om caching te verhinderen, maar dit eindpunt zou ook moeten worden gevraagd gebruikend unieke cache-opstellende vraagparameters.
 
 Wanneer een HTTP-aanvraag de servlet bereikt, controleert de servlet of er een FPID-cookie bestaat op de aanvraag:
 
 + Als er een FPID-cookie bestaat, verlengt u de levensduur van de cookie en int u de waarde ervan om naar de reactie te schrijven.
 + Als een FPID-cookie niet bestaat, genereert u een nieuw FPID-cookie en slaat u de waarde op om naar het antwoord te schrijven.
 
-Vervolgens schrijft de servlet de FPID naar de reactie als een JSON-object in de vorm: `{ fpid: "<FPID VALUE>" }`.
+Vervolgens schrijft de servlet de FPID naar de reactie als een JSON-object in de vorm: `{ fpid: "<FPID VALUE>" }` .
 
-Het is belangrijk dat de FPID aan de client in de hoofdtekst wordt doorgegeven, aangezien het FPID-cookie is gemarkeerd `HttpOnly`, wat betekent dat alleen de server de waarde ervan kan lezen en JavaScript op de client niet.
+Het is belangrijk dat u de FPID aan de client in de hoofdtekst opgeeft, aangezien het FPID-cookie is gemarkeerd `HttpOnly` . Dit betekent dat alleen de server de waarde ervan kan lezen en dat JavaScript dat niet kan.
 
 De waarde FPID van het reactielichaam wordt gebruikt om vraag te bepalen gebruikend het Web SDK van het Platform.
 
-Hieronder ziet u de voorbeeldcode van een AEM servlet-eindpunt (beschikbaar via `HTTP GET /bin/aep/fpid`) die een FPID-cookie genereert of vernieuwt en de FPID retourneert als JSON.
+Hieronder ziet u voorbeeldcode van een AEM servlet-eindpunt (beschikbaar via `HTTP GET /bin/aep/fpid` ) waarmee een FPID-cookie wordt gegenereerd of vernieuwd en de FPID als JSON wordt geretourneerd.
 
 + `core/src/main/java/com/adobe/aem/guides/wkndexamples/core/aep/impl/FpidServlet.java`
 
@@ -150,22 +150,22 @@ public class FpidServlet extends SlingAllMethodsServlet {
 
 ### HTML-script
 
-Er moet een aangepaste JavaScript aan de clientzijde aan de pagina worden toegevoegd om de servlet asynchroon aan te roepen, het FPID-cookie te genereren of te vernieuwen en de FPID in de reactie te retourneren.
+Een aangepaste client-side JavaScript moet aan de pagina worden toegevoegd om de servlet asynchroon aan te roepen, het FPID-cookie te genereren of te vernieuwen en de FPID in de reactie te retourneren.
 
 Dit JavaScript-script wordt standaard toegevoegd aan de pagina met een van de volgende methoden:
 
-+ [Tags in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [AEM clientbibliotheek](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=en)
++ [ Markeringen in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [ AEM de Bibliotheek van de Cliënt ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=en)
 
 De XHR-aanroep naar de aangepaste AEM FPID-server is snel, maar asynchroon, zodat een gebruiker een webpagina kan bezoeken die wordt bediend door AEM en kan wegnavigeren voordat het verzoek kan worden voltooid.
 Als dit gebeurt, wordt hetzelfde proces opnieuw gestart bij het laden van de volgende pagina van een webpagina vanuit AEM.
 
-De HTTP-GET naar de AEM FPID-server (`/bin/aep/fpid`) wordt bepaald met een willekeurige vraagparameter om ervoor te zorgen dat om het even welke infrastructuur tussen browser en AEM de Publish dienst niet de reactie van het verzoek in het voorgeheugen onderbrengt.
-Op dezelfde manier `Cache-Control: no-store` De aanvraagkoptekst wordt toegevoegd ter ondersteuning van het voorkomen van caching.
+De GET van HTTP aan AEM FPID servlet (`/bin/aep/fpid`) wordt bepaald met een willekeurige vraagparameter om ervoor te zorgen dat om het even welke infrastructuur tussen browser en de AEM dienst van Publish niet de reactie van het verzoek in het voorgeheugen onderbrengt.
+Op dezelfde manier wordt de aanvraagheader van `Cache-Control: no-store` toegevoegd om caching te voorkomen.
 
-Bij een aanroep van de AEM FPID-servlet wordt de FPID opgehaald uit de JSON-reactie en gebruikt door de [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) om het naar Experience Platform APIs te verzenden.
+Op een aanroeping van AEM FPID servlet, wordt FPID teruggewonnen van de reactie JSON en door ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) gebruikt van het Web SDK van het 0} Platform om het naar Experience Platform APIs te verzenden.[
 
-Raadpleeg de documentatie bij het Experience Platform voor meer informatie over [FPID&#39;s gebruiken in identityMap](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html#identityMap)
+Zie de documentatie van het Experience Platform voor meer informatie over [ gebruikend FPIDs in identityMap ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html#identityMap)
 
 ```javascript
 ...
@@ -190,9 +190,9 @@ Raadpleeg de documentatie bij het Experience Platform voor meer informatie over 
 
 ### Dispatcher allow, filter
 
-Ten slotte moeten HTTP-aanvragen bij de aangepaste FPID-server via AEM Dispatcher zijn toegestaan `filter.any` configuratie.
+Ten slotte moeten HTTP-aanvragen bij de aangepaste FPID-server worden toegestaan via AEM Dispatcher `filter.any` -configuratie.
 
-Als deze Dispatcher-configuratie niet correct is geïmplementeerd, vraagt de HTTP-GET om `/bin/aep/fpid` resulteert in een waarde 404.
+Als deze Dispatcher-configuratie niet correct is geïmplementeerd, resulteert de HTTP-GET die `/bin/aep/fpid` aanvraagt in een 404-resultaat.
 
 + `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
@@ -204,6 +204,6 @@ Als deze Dispatcher-configuratie niet correct is geïmplementeerd, vraagt de HTT
 
 Herzie de volgende documentatie van het Experience Platform voor First-party apparaat IDs (FPIDs) en het beheren van identiteitsgegevens met het Web SDK van het Platform.
 
-+ [Apparaat-id&#39;s van de eerste fabrikant genereren](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html)
-+ [Eerste partij apparaat IDs in het Web SDK van het Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
-+ [Identiteitsgegevens in het Web SDK van het Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
++ [ produceer eerste-partijapparaat IDs ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html)
++ [ Eerste-partij apparaat IDs in het Web SDK van het Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
++ [ Gegevens van de Identiteit in het Web SDK van het Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)

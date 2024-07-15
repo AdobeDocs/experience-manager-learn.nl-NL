@@ -23,52 +23,52 @@ Deze technische wandeling door het instellen van AEM voor gebruik met Sling Mode
 
 Sling Model Exporter werd geïntroduceerd in Sling Models v1.3.0. Met deze nieuwe functie kunnen nieuwe annotaties worden toegevoegd aan Sling Models die definiëren hoe het model kan worden geëxporteerd als een ander Java-object, of meer algemeen, in een andere indeling, zoals JSON.
 
-Apache Sling biedt een Jackson JSON-exporter die het meest voorkomende geval van het exporteren van Sling Models als JSON-objecten voor gebruik door programmatische webgebruikers, zoals andere webservices en JavaScript-toepassingen, behandelt.
+Apache Sling biedt een Jackson JSON-exporter die het meest voorkomende geval van het exporteren van Sling Models als JSON-objecten voor gebruik door programmatische webconsumenten, zoals andere webservices en JavaScript-toepassingen, behandelt.
 
 ## AEM configureren voor Verkoopmodel-exportfunctie
 
 >[!VIDEO](https://video.tv.adobe.com/v/16862?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] is een kenmerk van de [!DNL Apache Sling] en niet rechtstreeks gebonden aan de AEM productreleasecyclus. [!DNL Sling Model Exporter] is compatibel met AEM 6.3 en hoger.
+[!DNL Sling Model Exporter] is een functie van het [!DNL Apache Sling] -project en is niet rechtstreeks gebonden aan de AEM productreleasecyclus. [!DNL Sling Model Exporter] is compatibel met AEM 6.3 en hoger.
 
-## Het gebruik-hoofdlettergebruik voor [!DNL Sling Model Exporter]
+## De use-case voor [!DNL Sling Model Exporter]
 
 >[!VIDEO](https://video.tv.adobe.com/v/16863?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] is ideaal voor het leveraging van Verschuivende Modellen die reeds bedrijfslogica bevatten die HTML vertoningen via HTL (of vroeger JSP) steunen, en de zelfde bedrijfsvertegenwoordiging zoals JSON voor consumptie door de programmatic diensten van het Web of toepassingen van JavaScript blootstellen.
+[!DNL Sling Model Exporter] is ideaal voor het leveraging van het Verkopen Modellen die reeds bedrijfslogica bevatten die HTML vertoningen via HTML (of vroeger JSP) steunen, en de zelfde bedrijfsvertegenwoordiging zoals JSON voor consumptie door de programmatic diensten van het Web of de toepassingen van JavaScript blootstellen.
 
 ## Een Verkoopmodel-exportfunctie maken
 
 >[!VIDEO](https://video.tv.adobe.com/v/16864?quality=12&learn=on)
 
-Inschakelen [!DNL Exporter] steun voor een [!DNL Sling Model] is net zo eenvoudig als het toevoegen van de `@Exporter` aantekening bij de klasse Java.
+U kunt [!DNL Exporter] -ondersteuning inschakelen voor een [!DNL Sling Model] net zo eenvoudig als de `@Exporter` -annotatie toevoegen aan de Java-klasse.
 
 ## Exportopties voor verkoopmodel toepassen
 
 >[!VIDEO](https://video.tv.adobe.com/v/16865?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] ondersteunt het doorgeven van exportopties per model aan de Exporter-implementatie om te bepalen hoe de [!DNL Sling Model] wordt definitief geëxporteerd. Deze opties zijn doorgaans &quot;globaal&quot; van toepassing op de manier waarop de [!DNL Sling Model] wordt geëxporteerd, versus per gegevenspunt dat kan worden uitgevoerd via inline-annotaties die hieronder worden beschreven.
+[!DNL Sling Model Exporter] ondersteunt het doorgeven van exportopties per model naar de Exporter-implementatie om te bepalen hoe de [!DNL Sling Model] uiteindelijk wordt geëxporteerd. Deze opties zijn over het algemeen &quot;globaal&quot; van toepassing op de manier waarop [!DNL Sling Model] wordt geëxporteerd, in tegenstelling tot per gegevenspunt dat kan worden uitgevoerd via inline-annotaties die hieronder worden beschreven.
 
-[!DNL Jackson Exporter] opties zijn:
+[!DNL Jackson Exporter] -opties zijn:
 
-* [Opties voor Mapper-functies](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
-* [Opties voor serialisatiefunctie](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
+* [ de opties van de Eigenschap van de Mapper ](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
+* [ de opties van de Eigenschap van de Rangschikking ](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
 
-## Toepassen [!DNL Jackson] annotaties
+## [!DNL Jackson] -annotaties toepassen
 
 >[!VIDEO](https://video.tv.adobe.com/v/16866?quality=12&learn=on)
 
-Implementaties van exportfuncties kunnen ook annotaties ondersteunen die inline kunnen worden toegepast op de [!DNL Sling Model] klasse, die een fijner niveau van controle kan verstrekken hoe de gegevens worden uitgevoerd.
+Exporters-implementaties kunnen ook annotaties ondersteunen die inline kunnen worden toegepast op de [!DNL Sling Model] -klasse, die een fijnere controle kunnen bieden over de manier waarop de gegevens worden geëxporteerd.
 
 * [[!DNL Jackson Exporter] annotaties](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)
 
 ## De code weergeven {#view-the-code}
 
-[SampleSlingModelExporter.java](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleSlingModelExporter.java)
+[ SampleSlingModelExporter.java ](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleSlingModelExporter.java)
 
 ## Ondersteunende materialen {#supporting-materials}
 
-* [[!DNL Jackson Mapper] Feature Javadoc](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
-* [[!DNL Jackson Serialization] Feature Javadoc](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
+* [[!DNL Jackson Mapper]  Eigenschap Javadoc ](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
+* [[!DNL Jackson Serialization]  Eigenschap Javadoc ](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
 
-* [[!DNL Jackson Annotations] Docs](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)
+* [[!DNL Jackson Annotations]  Dokken ](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)

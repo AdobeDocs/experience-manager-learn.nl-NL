@@ -27,7 +27,7 @@ Gesloten gebruikersgroepen (CUG&#39;s) is een functie die wordt gebruikt om de t
 
 ## Gebruikersgroep (CUG) met AEM Assets
 
-* Ontworpen om toegang tot elementen op een AEM instantie Publish te beperken.
+* Ontworpen om de toegang tot elementen op een AEM Publish-exemplaar te beperken.
 * Subsidies lezen toegang tot een set gebruikers/groepen.
 * CUG kan alleen op mapniveau worden geconfigureerd. CUG kan niet worden ingesteld voor afzonderlijke elementen.
 * Het CUG-beleid wordt automatisch overgeërfd door submappen en toegepaste elementen.
@@ -39,12 +39,12 @@ Zowel worden de Gesloten Groepen van de Gebruiker (KUG) als de Lijsten van het T
 
 |                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Beoogd gebruik | Machtigingen configureren en toepassen voor inhoud op de **huidig** AEM instantie. | CUG-beleid configureren voor inhoud op AEM **auteur** -instantie. CUG-beleid toepassen op inhoud op AEM **publish** instantie(s). |
-| Machtigingsniveaus | Bepaalt verleende/ontkende toestemmingen voor gebruikers/groepen voor alle niveaus: Lees, wijzig, creeer, schrap, leest ACL, geef ACL uit, kopieer. | Subsidies lezen toegang tot een set gebruikers/groepen. Leestoegang wordt geweigerd *alle andere* gebruikers/groepen. |
-| Publicatie | ACLs is *niet* gepubliceerd met inhoud. | CUG-beleid *zijn* gepubliceerd met inhoud. |
+| Beoogd gebruik | Vorm en pas toestemmingen voor inhoud op de **huidige** AEM instantie toe. | Vorm het beleid van de CUG voor inhoud op AEM **auteur** instantie. Pas het beleid van de CUG voor inhoud op AEM **toe publiceert** instantie(s). |
+| Machtigingsniveaus | Bepaalt verleende/ontkende toestemmingen voor gebruikers/groepen voor alle niveaus: Lees, wijzig, creeer, schrap, leest ACL, geef ACL uit, kopieer. | Subsidies lezen toegang tot een set gebruikers/groepen. Ontkent leestoegang tot *alle andere* gebruikers/groepen. |
+| Publicatie | ACLs wordt *niet* gepubliceerd met inhoud. | Het beleid van de CUG *wordt* gepubliceerd met inhoud. |
 
 ## Ondersteunende koppelingen {#supporting-links}
 
-* [Middelen en gesloten gebruikersgroepen beheren](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
-* [Een gesloten gebruikersgroep maken](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
-* [Documentatie voor gesloten gebruikersgroep afbreken](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)
+* [ het Leiden Assets en Gesloten Gebruikersgroepen ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
+* [ Creërend een Gesloten Groep van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
+* [ Oak Gesloten Documentatie van de Groep van de Gebruiker ](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)

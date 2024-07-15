@@ -33,7 +33,7 @@ Selecteer Tabel om een tabelcomponent in te voegen.
 
 De mogelijkheid om tabelgegevens weer te geven met behulp van tabellen in Interactive Communication Document is geïntroduceerd met de AEM Forms 6.4-release. De volgende video doorloopt de stappen die nodig zijn voor het configureren van een tabel in het webkanaaldocument.
 
-**Tabel configureren in webkanaaldocument - AEM Forms 6.4**
+**het Vormen lijst in het document van het Webkanaal - AEM Forms 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22360?quality=12&learn=on)
 

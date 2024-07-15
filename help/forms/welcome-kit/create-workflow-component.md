@@ -20,11 +20,11 @@ ht-degree: 0%
 
 De workflowcomponent legt informatie over de pagina met de elementen vast, zoals paginasjabloon, componentbrontype en de basismap voor het opslaan van de gegenereerde pagina&#39;s.
 
-![workflowcomponent](assets/workflow-component.png)
+![ werkschema-component ](assets/workflow-component.png)
 
 ## Implementatie van workflowproces
 
-De volgende Java-code is gekoppeld aan de workflowcomponent. De code leidt tot de welkomstkits pagina, haalt waarden uit de werkschemariabelen (submitterName en documentsSelected). Deze waarden worden vervolgens ingesteld als eigenschappen van de componenten die op de pagina worden gebruikt. De code stelt ook de waarde van de variabele van het werkschemaproces in **welkomstwoord**.
+De volgende Java-code is gekoppeld aan de workflowcomponent. De code leidt tot de welkomstkits pagina, haalt waarden uit de werkschemariabelen (submitterName en documentsSelected). Deze waarden worden vervolgens ingesteld als eigenschappen van de componenten die op de pagina worden gebruikt. De code plaatst ook de waarde van de variabele van het werkschemaproces **welcomekiturl**.
 
 ```java
 package com.welcomekit.core.workflowprocess;

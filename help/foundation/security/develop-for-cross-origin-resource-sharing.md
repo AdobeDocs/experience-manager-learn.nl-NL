@@ -18,33 +18,33 @@ ht-degree: 0%
 
 # Ontwikkelen voor het delen van bronnen tussen verschillende bronnen (CORS)
 
-Een kort voorbeeld van hefboomwerking [!DNL CORS] om via JavaScript op de client toegang te krijgen tot AEM inhoud van een externe webtoepassing. Dit voorbeeld gebruikt de configuratie CORS OSGi om de toegang van CORS op AEM toe te laten. De OSGi-configuratiebenadering is levensvatbaar wanneer:
+Een kort voorbeeld van het gebruik van [!DNL CORS] voor toegang tot AEM inhoud van een externe webtoepassing via client-side JavaScript. Dit voorbeeld gebruikt de configuratie CORS OSGi om de toegang van CORS op AEM toe te laten. De OSGi-configuratiebenadering is levensvatbaar wanneer:
 
-* Eén oorsprong benadert AEM inhoud publiceren
+* Eén herkomst heeft toegang tot AEM Publish-inhoud
 * Toegang tot CORS is vereist voor AEM auteur
 
-Als toegang van meerdere oorsprong vereist is voor AEM Publiceren, raadpleegt u [deze documentatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Als multi-oorsprongstoegang tot AEM Publish wordt vereist, verwijs naar [ dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
 In deze video:
 
-* **www.example.com** maps to localhost via `/etc/hosts`
-* **aem-publish.local** maps to localhost via `/etc/hosts`
-* SimpleHTTPServer (een wrapper voor [[!DNL Python]SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) geeft de pagina HTML via poort 8000 weer.
-   * _Niet meer beschikbaar in Mac App Store. Gebruik zoals [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
-* [!DNL AEM Dispatcher] is ingeschakeld [!DNL Apache HTTP Web Server] 2.4 en verzoek om een reverse-proxying `aem-publish.local` tot `localhost:4503`.
+* **www.example.com** kaarten aan localhost via `/etc/hosts`
+* **aem-publish.local** kaarten aan localhost via `/etc/hosts`
+* SimpleHTTPServer (een omslag voor [[!DNL Python] SimpleHTTPServer ](https://docs.python.org/2/library/simplehttpserver.html)) dient de pagina van de HTML via haven 8000.
+   * _niet meer beschikbaar in Mac App Store. Gebruik gelijkaardig zoals [ Jeeves ](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
+* [!DNL AEM Dispatcher] wordt uitgevoerd op [!DNL Apache HTTP Web Server] 2.4 en omgekeerd-proxying request to `aem-publish.local` to `localhost:4503` .
 
-Voor meer informatie raadpleegt u [Werken met het delen van bronnen tussen verschillende bronnen (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
+Voor meer details, herzie [ Begrijpend Middel dat van de Cross-Origin (CORS) in AEM ](./understand-cross-origin-resource-sharing.md) deelt.
 
 ## www.example.com HTML en JavaScript
 
 Deze webpagina heeft de logica dat
 
 1. Wanneer u op de knop klikt
-1. Maakt een [!DNL AJAX GET] verzoek om `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
-1. Hiermee wordt het dialoogvenster `jcr:title` het JSON-antwoord
-1. Hiermee wordt het `jcr:title` in het DOM
+1. Maakt een [!DNL AJAX GET] aanvraag aan `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
+1. Hiermee wordt de `jcr:title` opgehaald van het JSON-antwoord
+1. Injecteert de `jcr:title` in de DOM
 
 ```xml
 <html>
@@ -79,7 +79,7 @@ Deze webpagina heeft de logica dat
 
 ## OSGi-fabrieksconfiguratie
 
-De OSGi-configuratiefabriek voor [!DNL Cross-Origin Resource Sharing] is beschikbaar via:
+De OSGi Configuration factory for [!DNL Cross-Origin Resource Sharing] is beschikbaar via:
 
 * `http://<host>:<port>/system/console/configMgr > [!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]`
 
@@ -103,7 +103,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ### CORS-aanvraagheaders toestaan
 
-Om de vereiste [HTTP-aanvraagheaders om door te gaan naar AEM voor verwerking](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), moeten ze in de Disaptcher zijn toegestaan `/clientheaders` configuratie.
+Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) over te gaan, moeten zij in de 2} configuratie van Disaptcher worden toegestaan.`/clientheaders`
 
 ```
 /clientheaders {
@@ -116,7 +116,7 @@ Om de vereiste [HTTP-aanvraagheaders om door te gaan naar AEM voor verwerking](h
 
 ### CORS-responsheaders in cache plaatsen
 
-Als u het in cache plaatsen en serveren van CORS-kopteksten wilt toestaan voor inhoud in cache, voegt u het volgende toe [/cache /headers-configuratie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) op de AEM Publiceren `dispatcher.any` bestand.
+Om het in cache plaatsen en het dienen van kopballen CORS op caching inhoud toe te staan, voeg het volgende [ toe/cache /headers configuratie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers) aan het AEM Publish `dispatcher.any` dossier.
 
 ```
 /publishfarm {
@@ -140,15 +140,15 @@ Als u het in cache plaatsen en serveren van CORS-kopteksten wilt toestaan voor i
 }
 ```
 
-**De webservertoepassing opnieuw starten** na het aanbrengen van wijzigingen in de `dispatcher.any` bestand.
+**herstart de toepassing van de Webserver** na het aanbrengen van veranderingen in het `dispatcher.any` dossier.
 
-Waarschijnlijk wordt de cache volledig gewist om ervoor te zorgen dat de koppen op de juiste wijze in de cache worden geplaatst na een `/cache /headers` configuratie bijwerken.
+Het is waarschijnlijk dat het cachegeheugen volledig moet worden gewist om ervoor te zorgen dat de koppen op de juiste wijze in het cachegeheugen worden opgeslagen op het volgende verzoek na een `/cache /headers` configuratieupdate.
 
 ## Ondersteunende materialen {#supporting-materials}
 
-* [Jeeves voor macOS](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
-* [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html) (compatibel met Windows/macOS/Linux)
+* [ Jeeves voor macOS ](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
+* [ Python SimpleHTTPServer ](https://docs.python.o:qrg/2/library/simplehttpserver.html) (compatibel Windows/macOS/Linux)
 
 * [Werken met het delen van bronnen tussen verschillende bronnen (CORS) in AEM](./understand-cross-origin-resource-sharing.md)
-* [Delen van bronnen tussen verschillende bronnen (W3C)](https://www.w3.org/TR/cors/)
-* [HTTP Access Control (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+* [ het Delen van het Middel van de dwars-Oorsprong (W3C) ](https://www.w3.org/TR/cors/)
+* [ Controle van de Toegang van HTTP (Mozilla MDN) ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

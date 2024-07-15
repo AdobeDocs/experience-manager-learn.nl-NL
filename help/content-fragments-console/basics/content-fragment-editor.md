@@ -1,6 +1,6 @@
 ---
 title: Inhoudsfragmenteditor
-description: Een korte inleiding op AEM Inhoudsfragmenteditor.
+description: Een korte inleiding op AEM redacteur van het Fragment van de Inhoud.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Inhoudsfragmenteditor
 
-Een korte inleiding op AEM Inhoudsfragmenteditor.
+Een korte inleiding op AEM redacteur van het Fragment van de Inhoud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424373/?learn=on)

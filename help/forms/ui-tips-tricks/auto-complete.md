@@ -27,7 +27,7 @@ De code die wordt gebruikt voor het uitvoeren van de functie voor automatisch aa
 
 ## Voorstellen voor adres
 
-![suggesties per land](assets/auto-complete2.png)
+![ land-suggesties ](assets/auto-complete2.png)
 
 
 
@@ -66,7 +66,7 @@ $(".streetAddress input").autocomplete({
 
 ## Suggesties met emoji&#39;s
 
-![suggesties per land](assets/auto-complete3.png)
+![ land-suggesties ](assets/auto-complete3.png)
 
 De volgende code is gebruikt om emoji&#39;s weer te geven in de lijst met suggesties
 
@@ -79,8 +79,8 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-De [voorbeeldformulier kan worden gedownload](assets/auto-complete-form.zip) van hier. Zorg ervoor dat u uw eigen gebruikersnaam/API-sleutel opgeeft met de code-editor voor de code om REST-aanroepen te kunnen uitvoeren.
+De [ steekproefvorm kan ](assets/auto-complete-form.zip) van hier worden gedownload. Zorg ervoor dat u uw eigen gebruikersnaam/API-sleutel opgeeft met de code-editor voor de code om REST-aanroepen te kunnen uitvoeren.
 
 >[!NOTE]
 >
-> Controleer of het formulier de volgende clientbibliotheek gebruikt om automatisch te kunnen voltooien **cq.jquery.ui**. Deze clientbibliotheek wordt geleverd met AEM.
+> Voor auto volledig om te werken zorg ervoor uw vorm de volgende cliëntbibliotheek **cq.jquery.ui** gebruikt. Deze clientbibliotheek wordt geleverd met AEM.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Clientbibliotheek maken
 
-AEM Client Library beheert al uw JavaScript-code aan de clientzijde. Voor dit artikel heb ik een eenvoudig JavaScript gemaakt om de Adaptief-formuliergegevens op te halen met behulp van de bridge-API. Nadat de Adaptief-formuliergegevens zijn opgehaald, wordt de POST naar het servlet aangeroepen om de adaptieve formuliergegevens in de database in te voegen of bij te werken. De functie getALLUrlParams retourneert de parameters in de URL. Als de guid-parameter aanwezig is in de URL, moeten we de updatebewerking uitvoeren als dit geen invoegbewerking is. De rest van de functionaliteit wordt afgehandeld in de code die is gekoppeld aan de klikgebeurtenis van de klasse .savebutton.
+AEM Client Library beheert al uw JavaScript-code aan de clientzijde. Voor dit artikel heb ik een eenvoudige JavaScript gemaakt om de Adaptief-formuliergegevens op te halen met behulp van de bridge-API. Nadat de Adaptief-formuliergegevens zijn opgehaald, wordt de POST naar het servlet aangeroepen om de adaptieve formuliergegevens in de database in te voegen of bij te werken. De functie getALLUrlParams retourneert de parameters in de URL. Als de guid-parameter aanwezig is in de URL, moeten we de updatebewerking uitvoeren als dit geen invoegbewerking is. De rest van de functionaliteit wordt afgehandeld in de code die is gekoppeld aan de klikgebeurtenis van de klasse .savebutton.
 
 >[!NOTE]
 >

@@ -38,11 +38,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
-    <strong>Aan de slag met AEM Sites</strong>
+    <strong> Begonnen het worden met AEM Sites </strong>
     </a>
     </div>
     <p>
-    <em>Een gids aan de slag voor ontwikkelaars die AEM Sites willen implementeren.</em>
+    <em> A begonnen gids voor ontwikkelaars die AEM Sites proberen uit te voeren.</em>
     <p>
   </td>
   <td>
@@ -51,11 +51,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
-    <strong>Aan de slag met AEM headless</strong>
+    <strong> Begonnen het worden met AEM Titel </strong>
     </a>
     </div>
     <p>
-    <em>Een gids aan de slag voor ontwikkelaars die AEM als headless CMS willen gebruiken.</em>
+    <em> A begonnen gids voor ontwikkelaars die AEM als headless CMS kijken te gebruiken.</em>
     </p>
   </td>
   <td>
@@ -64,11 +64,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-        <strong>Aan de slag met AEM SPA Editor</strong>
+        <strong> Begonnen het Worden met AEM Redacteur SPA </strong>
       </a>
     </div>
     <p>
-    <em>Een gids Aan de slag voor ontwikkelaars om één enkele paginatoepassing (SPA) met AEM te integreren.</em>
+    <em> A begonnen gids voor ontwikkelaars om één enkele paginatoepassing (SPA) met AEM te integreren.</em>
     <p>
   </td>
 </tr>
@@ -78,11 +78,11 @@ Adobe Experience Manager (AEM) Sites is een toonaangevend platform voor ervaring
 
 ## Aanvullende bronnen
 
-* [AEM Sites Authoring documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
-* [AEM Sites Developing-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [AEM Sites-beheerdocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
-* [AEM Sites-implementatiedocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
+* [ AEM Sites Authoring documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [ AEM Sites het Ontwikkelen documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [ AEM Sites die documentatie beheren ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [ AEM Sites die documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html) opstelt
+* [AEM as a Cloud Service-zelfstudies](/help/cloud-service/overview.md)
 * [AEM Assets-zelfstudies](/help/assets/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)
 * [Zelfstudies AEM Stichting](/help/foundation/overview.md)

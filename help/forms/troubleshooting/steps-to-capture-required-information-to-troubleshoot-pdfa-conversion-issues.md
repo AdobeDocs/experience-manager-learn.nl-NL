@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen om problemen met PDFA-conversie en -validatie op te lossen
 
-*Deze video doorloopt de stappen om de vereiste informatie vast te leggen om PDF/A-omzettings- en validatieproblemen in de Forms Assembler-service op te lossen.*
+*Deze video loopt door de stappen om de vereiste informatie te vangen om PDF/A Omzetting en de Kwesties van de Bevestiging in de dienst van de Assembler van Forms problemen op te lossen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335518?quality=12&learn=on)

@@ -8,14 +8,14 @@ doc-type: Catalog
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
 source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
 
 # Video&#39;s Assets Essentials
 
-![Assets Essentials](./assets/overview/hero.png)
+![ Assets Essentials ](./assets/overview/hero.png)
 
 Experience Manager Assets Essentials biedt een gestroomlijnde gebruikersinterface voor eenvoudig beheer van bedrijfsmiddelen en samenwerking.
 
@@ -30,11 +30,11 @@ Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middel
    </a>
    <div>
       <a href="./basics/managing.md">
-      <strong>Aan de slag met Assets Essentials</strong>
+      <strong> Begonnen het worden met Assets Essentials </strong>
       </a>
    </div>
    <p>
-      <em>Leer de basisbeginselen van Assets Essentials!</em>
+      <em> leer de grondbeginselen van Assets Essentials!</em>
    </p>
 </td>
 <td>
@@ -43,11 +43,11 @@ Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middel
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
-      <strong>Documentatie Assets Essentials</strong>
+      <strong> documentatie van Assets Essentials </strong>
       </a>
    </div>
    <p>
-      <em>Bekijk de productdocumentatie van de Assets Essentials!</em>
+      <em> Controle uit de het productdocumentatie van Assets Essentials!</em>
    <p>
 </td>
 <td>
@@ -56,11 +56,11 @@ Bekijk deze video&#39;s over hoe u Assets Essentials kunt gebruiken om uw middel
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html">
-      <strong>Adobe Journey Optimizer-integratie</strong>
+      <strong> de integratie van Adobe Journey Optimizer </strong>
       </a>
    </div>
    <p>
-      <em>Leer hoe Assets Essentials integreren met Adobe Journey Optimizer!</em>
+      <em> leer hoe de Assets Essentials met Adobe Journey Optimizer integreren!</em>
    <p>
 </td>
 </table>

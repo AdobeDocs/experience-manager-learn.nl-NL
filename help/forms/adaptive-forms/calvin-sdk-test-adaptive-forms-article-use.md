@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Automatisch testen van Adaptive Forms met Calvin SDK
 
-Calvin SDK is een hulpprogramma-API waarmee Adaptive Forms-ontwikkelaars Adaptive Forms kunnen testen. Calvin SDK is bovenop de [Het testframework Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html). Calvin SDK is beschikbaar bij AEM Forms 6.3 en hoger.
+Calvin SDK is een hulpprogramma-API waarmee Adaptive Forms-ontwikkelaars Adaptive Forms kunnen testen. Calvin SDK wordt gebouwd bovenop het [ Hobbes.js testende kader ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html). Calvin SDK is beschikbaar bij AEM Forms 6.3 en hoger.
 
 In deze zelfstudie maakt u het volgende:
 
@@ -31,7 +31,7 @@ In deze zelfstudie maakt u het volgende:
 
 ## Aan de slag {#getting-started}
 
-[De middelen downloaden en installeren met Package Manager](assets/testingadaptiveformsusingcalvinsdk1.zip)Het pakket bevat voorbeeldscripts en diverse Adaptieve Forms. Deze Adaptieve Forms is gebouwd met AEM Forms 6.3-versie. Het wordt aanbevolen nieuwe formulieren te maken die specifiek zijn voor uw versie van AEM Forms als u deze test op AEM Forms 6.4 of hoger. De voorbeeldscripts tonen verschillende Calvin SDK API&#39;s die beschikbaar zijn om Adaptive Forms te testen. De algemene stappen voor het testen AEM Adaptive Forms zijn:
+[ Download en installeer Assets gebruikend de Manager van het Pakket ](assets/testingadaptiveformsusingcalvinsdk1.zip) Het pakket bevat steekproefmanuscripten en verscheidene Adaptieve Forms.Deze Aangepaste Forms wordt gebouwd gebruikend versie AEM Forms 6.3. Het wordt aanbevolen nieuwe formulieren te maken die specifiek zijn voor uw versie van AEM Forms als u deze test op AEM Forms 6.4 of hoger. De voorbeeldscripts tonen verschillende Calvin SDK API&#39;s die beschikbaar zijn om Adaptive Forms te testen. De algemene stappen voor het testen AEM Adaptive Forms zijn:
 
 * Navigeer naar het formulier dat u wilt testen
 * Waarde van veld instellen
@@ -39,7 +39,7 @@ In deze zelfstudie maakt u het volgende:
 * Controleren op foutberichten
 
 De voorbeeldscripts in het pakket tonen alle bovenstaande handelingen aan.
-Laten we de code van `mortgageForm.js`
+Bekijk de code van `mortgageForm.js`
 
 ```javascript
 var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
@@ -50,9 +50,9 @@ var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
 
 De bovenstaande code maakt een nieuwe testsuite.
 
-* De naam van de TestSuite in dit geval is &#39; `Mortgage Form Test` &quot;.
+* De naam van de TestSuite is in dit geval &#39; `Mortgage Form Test` &#39;.
 * Opgegeven is het absolute pad in AEM naar het JS-bestand dat de testsuite bevat.
-* De parameter register wanneer ingesteld op &#39; `true` &#39;, maakt de testsuite beschikbaar in de testgebruikersinterface.
+* De registerparameter wanneer deze is ingesteld op &#39; `true` &#39;, maakt de testsuite beschikbaar in de testgebruikersinterface.
 
 ```javascript
 .addTestCase(new hobs.TestCase("Calculate amount to borrow")
@@ -69,18 +69,18 @@ De bovenstaande code maakt een nieuwe testsuite.
 
 Testgevallen kunnen worden toegevoegd aan een testsuite die kan worden uitgevoerd op een adaptief formulier.
 
-* Als u een testcase wilt toevoegen aan een testsuite, gebruikt u de `addTestCase` methode van het object TestSuite.
-* De `addTestCase` methode neemt een Voorwerp TestCase als parameter.
-* Als u TestCase wilt maken, gebruikt u de opdracht `hobs.TestCase(..)` methode.
+* Als u een testcase wilt toevoegen aan een testsuite, gebruikt u de methode `addTestCase` van het object TestSuite.
+* De methode `addTestCase` neemt een voorwerp TestCase als parameter.
+* Gebruik de methode `hobs.TestCase(..)` om TestCase te maken.
 * Nota: De eerste parameter is de naam van het Geval van de Test dat in UI zal verschijnen.
 * Nadat u een testcase hebt gemaakt, kunt u vervolgens handelingen toevoegen aan uw testcase.
-* Acties inclusief `navigateTo`, `asserts.isTrue` kan als acties aan het testgeval worden toegevoegd.
+* Acties, waaronder `navigateTo` en `asserts.isTrue` , kunnen als handelingen aan het testhoofdlettergebruik worden toegevoegd.
 
 ## De geautomatiseerde tests uitvoeren {#running-the-automated-tests}
 
-[Openthetestsuite](http://localhost:4502/libs/granite/testing/hobbes.html)Breid de Testsuite uit en voer de tests uit. Als alles goed werkt, ziet u de volgende uitvoer.
+[ Openthetestsuite ](http://localhost:4502/libs/granite/testing/hobbes.html) breidt de Reeks van de Test uit en stelt de tests in werking. Als alles goed werkt, ziet u de volgende uitvoer.
 
-![calvinsdk](assets/calvinimage.png)
+![ calvinsdk ](assets/calvinimage.png)
 
 ## Probeer de testsuites van het monster uit {#try-out-the-sample-test-suites}
 

@@ -75,22 +75,22 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 
 Voer de volgende stappen uit om uw project te maken:
 
-* Openen **opdrachtpromptvenster**
+* Open **bevel snel venster**
 * Navigeren naar `c:\aemformsbundles\mysite\core`
 * De opdracht uitvoeren `mvn clean install -PautoInstallBundle`
 * Het bovenstaande bevel bouwt automatisch de bundel aan uw AEM instantie die op localhost loopt op en stelt op:4502
 
-De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\core\target`. De bundel kan ook in AEM worden opgesteld gebruikend [Felix-webconsole.](http://localhost:4502/system/console/bundles)
+De bundel is ook beschikbaar op de volgende locatie `C:\AEMFormsBundles\mysite\core\target` . De bundel kan ook in AEM worden opgesteld gebruikend de [ het Webconsole van de Felix.](http://localhost:4502/system/console/bundles)
 
 
 ## Servlet Resolver testen
 
-Wijs uw browser aan [servlet resolver URL](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Dit vertelt u servlet die voor een bepaalde weg zoals gezien in het hieronder ontsproten scherm wordt aangehaald
-![servlet-resolver](assets/servlet-resolver.JPG)
+Wijs uw browser aan [ servlet resolver URL ](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST) aan. Dit vertelt u servlet die voor een bepaalde weg zoals gezien in het hieronder ontsproten scherm wordt aangehaald
+![ servlet-resolver ](assets/servlet-resolver.JPG)
 
 ## Serlet testen met Postman
 
-![Serlet testen met Postman](assets/test-servlet-postman.JPG)
+![ Test servlet gebruikend Postman ](assets/test-servlet-postman.JPG)
 
 ## Volgende stappen
 

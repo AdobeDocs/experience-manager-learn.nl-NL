@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Lettertypen insluiten voor Forms en uitvoerservice-conversies
 
-*In deze video worden de stappen doorlopen voor het insluiten van lettertypen voor Forms en het omzetten van uitvoerservices.*
+*Deze video loopt door de stappen om Doopvonten voor Forms en de omzettingen van de outputdienst in te bedden.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335496?quality=12&learn=on)

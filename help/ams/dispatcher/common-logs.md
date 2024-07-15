@@ -1,6 +1,6 @@
 ---
-title: Gemeenschappelijke AEM voor verzending
-description: Neem een blik bij gemeenschappelijke logboekingangen van Dispatcher en het leren wat zij betekenen en hoe te om hen te richten.
+title: Gemeenschappelijke logbestanden voor Dispatcher AEM
+description: Bekijk de gemeenschappelijke logboekingangen van Dispatcher en leer wat zij betekenen en hoe te om hen te richten.
 version: 6.5
 topic: Administration, Performance
 feature: Dispatcher
@@ -77,7 +77,7 @@ Fri Jul 20 22:16:55 2018 I pid 128803 "GET /system/console/" ! - 8ms publishfarm
 
 >[!CAUTION]
 >
->Begrijp dat de regels van de Verzender werden geplaatst om dat verzoek uit te filtreren. In dit geval werd de pagina die probeerde te worden bezocht opzettelijk verworpen en zouden we hier niets mee willen doen.
+>Begrijp dat de regels van Dispatcher werden geplaatst om dat verzoek uit te filteren. In dit geval werd de pagina die probeerde te worden bezocht opzettelijk verworpen en zouden we hier niets mee willen doen.
 
 Als uw logbestand er als volgt uitziet:
 
@@ -86,8 +86,8 @@ Fri Jul 20 17:26:47 2018 D pid 20051 (tid 139937517123328) Filter rejects:
 GET /etc/designs/exampleco/fonts/montserrat-regular/montserrat-regular-webfont.eot HTTP/1.1
 ```
 
-Dat laat ons weten dat ons ontwerpbestand `.eot` wordt geblokkeerd en dat willen wij graag verhelpen.
-We moeten dus naar ons filterbestand kijken en de volgende regel toevoegen om `.eot` bestanden via
+Dat laat ons weten dat ons ontwerpbestand `.eot` wordt geblokkeerd en dat willen we verhelpen.
+We moeten dus naar ons filterbestand kijken en de volgende regel toevoegen om `.eot` -bestanden door te laten
 
 ```
 /0011 { /type "allow" /method "GET" /extension 'eot' /path "/etc/designs/*" }
@@ -109,7 +109,7 @@ Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect socket to 10.43.3.40:4502:
 Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect to any backend in farm authorfarm
 ```
 
-Dit komt voor wanneer u het verkeerde IP adres hebt dat in de renderensectie van uw landbouwbedrijf wordt gevormd. Dat of de AEM instantie reageerde of luisterde niet meer en de Dispatcher kan het niet bereiken.
+Dit komt voor wanneer u het verkeerde IP adres hebt dat in de renderensectie van uw landbouwbedrijf wordt gevormd. Die of AEM instantie reageerde of luisterde niet meer en de Dispatcher kan het niet bereiken.
 
 Controleer uw firewallregels en of de AEM-instantie actief en gezond is.
 
@@ -120,7 +120,7 @@ Fri Jul 20 22:32:42 2018 I pid 3648 "GET /favicon.ico" 502 - 54034ms authorfarm/
 Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/-
 ```
 
-Dit betekent dat de AEM instantie een open socket had die het met de reactie kon bereiken en er een time-out voor kon maken. Dit betekent uw AEM instantie te langzaam of ongezond was en de Verzender bereikte het gevormde onderbrekingsmontages in teruggeeft sectie van het landbouwbedrijf. Verhoog de time-outinstelling of zorg dat de AEM gezond is.
+Dit betekent dat de AEM instantie een open socket had die het met de reactie kon bereiken en er een time-out voor kon maken. Dit betekent uw AEM instantie te langzaam of ongezond was en Dispatcher bereikte het gevormde onderbrekingsmontages in teruggeeft sectie van het landbouwbedrijf. Verhoog de time-outinstelling of zorg dat de AEM gezond is.
 
 ## Cacheniveau
 
@@ -130,7 +130,7 @@ Voorbeeld van logbestandvermelding:
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-Dit betekent dat het ophalen van gegevens uit het renderniveau versus uit de cache wordt gemeten. U wilt 80+ percenten van geheim voorgeheugen raken, en u zou de hulp moeten volgen [hier](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html):
+Dit betekent dat het ophalen van gegevens uit het renderniveau versus uit de cache wordt gemeten. U wilt 80+ percenten van geheim voorgeheugen raken, en u zou de hulp [ hier ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) moeten volgen:
 
 Dit getal zo hoog mogelijk ophalen.
 
@@ -167,9 +167,9 @@ Thu Sep 27 17:35:11 2018 D pid 18936 Vanity URL file (/tmp/vanity_urls) not foun
 Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42:4503/libs/granite/dispatcher/content/vanityUrls.html: remote server returned: HTTP/1.1 404 Not Found
 ```
 
-Deze fout komt voor wanneer u uw Dispatcher hebt gevormd om het dynamische auto-filter te gebruiken staat vanity URLs toe, maar voltooit niet de opstelling door het pakket op AEM renderer te installeren.
+Deze fout komt voor wanneer u uw Dispatcher hebt gevormd om dynamisch auto-filter te gebruiken staat vanity URLs toe, maar voltooit niet de opstelling door het pakket op AEM renderer te installeren.
 
-Om dit te bevestigen, installeer gelieve het eigenschappak van de ijdelheid url op de AEM instantie en het toe te staan om door de anonieme gebruiker klaar te zijn. Details [hier](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
+Om dit te bevestigen, installeer gelieve het eigenschappak van de ijdelheid url op de AEM instantie en het toe te staan om door de anonieme gebruiker klaar te zijn. Details [ hier ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
 Een werkende vanity URL opstelling kijkt als dit:
 
@@ -187,11 +187,11 @@ Voorbeeldlogbestandvermelding:
 Wed Nov 13 17:17:26 2019 W pid 19173:tid 140542738364160 No farm matches host 'we-retail.com', selected last farm 'publishfarm'
 ```
 
-Deze fout wijst erop dat van alle landbouwbedrijfdossiers beschikbaar in `/etc/httpd/conf.dispatcher.d/enabled_farms/` ze konden geen overeenkomende vermelding vinden in het `/virtualhost` sectie.
+Deze fout geeft aan dat uit alle bestanden op de boerderij die beschikbaar zijn in `/etc/httpd/conf.dispatcher.d/enabled_farms/` geen overeenkomende vermelding is gevonden in de sectie `/virtualhost` .
 
-De landbouwbedrijfdossiers passen verkeer aan dat op de domeinnaam of de weg wordt gebaseerd waarin het verzoek binnen kwam met. Het gebruikt glob aanpassing en als het niet dan aanpast hebt u of niet uw landbouwbedrijf behoorlijk gevormd, typt de ingang in het landbouwbedrijf, of heeft de ingang volledig missen. Wanneer het landbouwbedrijf om het even welke ingangen niet aanpast blijft het definitief aan het laatste landbouwbedrijf inbegrepen in de stapel landbouwbedrijfdossiers inbegrepen in gebreke. In dit voorbeeld is `999_ams_publish_farm.any` die de generieke naam van een uitgeverij heeft.
+De landbouwbedrijfdossiers passen verkeer aan dat op de domeinnaam of de weg wordt gebaseerd waarin het verzoek binnen kwam met. Het gebruikt glob aanpassing en als het niet dan aanpast hebt u of niet uw landbouwbedrijf behoorlijk gevormd, typt de ingang in het landbouwbedrijf, of heeft de ingang volledig missen. Wanneer het landbouwbedrijf om het even welke ingangen niet aanpast blijft het definitief aan het laatste landbouwbedrijf inbegrepen in de stapel landbouwbedrijfdossiers inbegrepen in gebreke. In dit voorbeeld is dit `999_ams_publish_farm.any` , dat de algemene naam van een uitgeverij heet.
 
-Hier volgt een voorbeeld van een bedrijfsbestand `/etc/httpd/conf.dispatcher.d/enabled_farms/300_weretail_publish_farm.any` dat is gereduceerd om de relevante delen te benadrukken.
+Hier volgt een voorbeeld van een boerderijbestand `/etc/httpd/conf.dispatcher.d/enabled_farms/300_weretail_publish_farm.any` dat is verkleind om de relevante onderdelen te benadrukken.
 
 ## Object verzonden van
 
@@ -201,6 +201,6 @@ Voorbeeldlogbestandvermelding:
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-De pagina is opgehaald via de methode GET http voor de inhoud `/content/we-retail/us/en.html` en het kostte 24034 milliseconden . Het deel waar we aandacht aan wilden besteden is aan het eind `publishfarm/0`. U zult zien dat het doelt en aanpast `publishfarm`. Het verzoek werd opgehaald van render 0. Dit betekende dat deze pagina moest worden opgevraagd van AEM toen caching. Nu vragen wij deze pagina opnieuw en zien wat met het logboek gebeurt.
+De pagina is opgehaald via de http-methode van de GET voor de inhoud `/content/we-retail/us/en.html` en het duurde 24034 milliseconden. Het deel waar we aandacht aan wilden besteden is helemaal aan het eind `publishfarm/0` . U zult zien dat het doelt en `publishfarm` aanpast. Het verzoek werd opgehaald van render 0. Dit betekende dat deze pagina moest worden opgevraagd van AEM toen caching. Nu vragen wij deze pagina opnieuw en zien wat met het logboek gebeurt.
 
 [Volgende -> Alleen-lezen bestanden](./immutable-files.md)

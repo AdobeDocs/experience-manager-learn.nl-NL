@@ -25,29 +25,29 @@ Tot nu toe hebben we het volgende gecreëerd:
 * Gevormde Apache Sling Connection Pooled DataSource
 * Op RDBMS gebaseerd formuliergegevensmodel
 
-De volgende stap bestaat uit het maken en configureren van een adaptief formulier voor het gebruik van het formuliergegevensmodel.  Je kunt een eerste start maken [downloaden en importeren](assets/fdm-demo-af.zip) voorbeeldformulier. Het voorbeeldformulier bevat een sectie waarin de werknemersgegevens worden weergegeven en een ander gedeelte waarin de begunstigden van de werknemers worden vermeld.
+De volgende stap bestaat uit het maken en configureren van een adaptief formulier voor het gebruik van het formuliergegevensmodel.  Om hoofdbegin te krijgen kunt u ](assets/fdm-demo-af.zip) steekproefvorm downloaden en invoeren [. Het voorbeeldformulier bevat een sectie waarin de werknemersgegevens worden weergegeven en een ander gedeelte waarin de begunstigden van de werknemers worden vermeld.
 
 ## Formulier koppelen aan formuliergegevensmodel
 
 Het voorbeeldformulier dat bij deze cursus wordt geleverd, is niet gekoppeld aan een formuliergegevensmodel. Als u het formulier wilt configureren voor het gebruik van het gegevensmodel van het formulier, moet u het volgende doen:
 
 * Het FDMDemo-formulier selecteren
-* Klikken op _Eigenschappen_->_Formuliermodel_
+* Klik op _Eigenschappen_ -> _Model van de Vorm_
 * Selecteer een formuliergegevensmodel in de vervolgkeuzelijst
 * Zoek en selecteer het formuliergegevensmodel dat u in de vorige les hebt gemaakt.
-* Klikken op _Opslaan en sluiten_
+* Klik op _sparen &amp; Sluiten_
 
 ## Prefill-service configureren
 
 De eerste stap bestaat uit het koppelen van de vooraf ingevulde service voor het formulier. Volg de onderstaande stappen om vooraf ingevulde services te koppelen
 
-* Selecteer de `FDMDemo` formulier
-* Klikken _Bewerken_ het formulier openen in de bewerkingsmodus
+* Selecteer het `FDMDemo` -formulier
+* Klik _uitgeven_ om de vorm op uit te geven wijze te openen
 * Selecteer Formuliercontainer in de inhoudshiërarchie en klik op het moersleutelpictogram om het eigenschappenblad te openen
-* Selecteren _Vooraf ingevulde service Formuliergegevensmodel_ in de vervolgkeuzelijst Prefill-service
+* Selecteer _de ModelVooraf ingevulde dienst van de Gegevens van de Vorm_ van de Prefill drop-down lijst van de Dienst
 * Klik op blauwe ☑ om uw wijzigingen op te slaan
 
-* ![Prefill-service](assets/fdm-prefill.png)
+* ![ prefill-service ](assets/fdm-prefill.png)
 
 ## Werknemersgegevens configureren
 
@@ -70,10 +70,10 @@ De volgende stap is de begunstigden van de werknemer in tabelvorm te tonen. Het 
 * Open het formulier in de bewerkingsmodus.
 * Hoofdvenster uitvouwen->Uw begunstigden->Tabel
 * Selecteer Rij1 en klik op het moersleutelpictogram om het eigenschappenblad te openen.
-* De bindingsverwijzing instellen op **/newhire/GetEmployeeBeneficiaries**
+* Plaats de Bindverwijzing aan **/newhire/GetEmployeeBeneficiaries**
 * Stel Herhalingsinstellingen - Minimum aantal in op 1 en Maximum aantal op 5.
 * Uw configuratie Row1 zou als het scherm moeten kijken dat hieronder wordt ontsproten
-  ![row-configure](assets/configure-row.PNG)
+  ![ rij-vormt ](assets/configure-row.PNG)
 * Klik op de blauwe ☑ om uw wijzigingen op te slaan
 
 ## Rijcellen binden
@@ -95,8 +95,8 @@ Tot slot moeten wij de cellen van de Rij aan de Modelelementen van de Gegevens v
 ## Uw formulier testen
 
 We moeten het formulier nu openen met de juiste empID in de URL. De volgende twee koppelingen vullen formulieren met informatie uit de database
-[Formulier met empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
-[Formulier met empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
+[ Vorm met empID=207 ](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
+[ Vorm met empID=208 ](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
 ## Problemen oplossen
 

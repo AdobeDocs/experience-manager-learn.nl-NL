@@ -1,5 +1,5 @@
 ---
-title: Personalisatie met behulp van Visual Experience Composer
+title: Personalization die Visual Experience Composer gebruikt
 description: Leer hoe te om een Activiteit van Adobe Target tot stand te brengen gebruikend Visual Experience Composer.
 version: Cloud Service
 jira: KT-6352
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Personalisatie met behulp van Visual Experience Composer {#personalization-vec}
+# Personalization die Visual Experience Composer gebruikt {#personalization-vec}
 
 Leer hoe te om een Activiteit van het Doel van de Test te creëren A/B gebruikend Visuele Composer van de Ervaring (VEC).
 
@@ -37,51 +37,51 @@ Op de homepage van de WKND-site worden lokale activiteiten of de beste dingen di
 
 ## Stappen om een A/B-test te creëren met behulp van Visual Experience Composer (VEC)
 
-1. Aanmelden bij [Adobe Experience Cloud](https://experience.adobe.com/)tikken op __Doel__, navigeert u naar de __Activiteiten__ tab
+1. Login aan [ Adobe Experience Cloud ](https://experience.adobe.com/), ontvang op __Doel__, navigeer aan het __Activiteiten__ lusje
 
-   + Als u niet ziet __Doel__ op het dashboard van het Experience Cloud, zorg ervoor dat de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat de gebruiker toegang tot Doel heeft verleend binnen [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Als u niet __Doel__ op het dashboard van het Experience Cloud ziet, zorg ervoor dat de correcte organisatie van de Adobe in de organisatieschakelaar in het hoogste recht wordt geselecteerd, en dat de gebruiker toegang tot Doel in [ Adobe Admin Console ](https://adminconsole.adobe.com/) is verleend.
 
-1. Klikken **Activiteit maken** en kies vervolgens **A/B-test** activiteit
+1. Klik **creëren de knoop van de Activiteit** en kies dan **A/B de Activiteit van de Test**
 
-   ![A/B-activiteit](assets/ab-target-activity.png)
+   ![ Activiteit A/B ](assets/ab-target-activity.png)
 
-1. Selecteer de **Visual Experience Composer** , geeft u de URL van de activiteit op en klikt u op **Volgende**
+1. Selecteer de **Visuele Composer van de Ervaring** optie, verstrek de Activiteit URL, en klik dan **daarna**
 
-   ![URL van activiteit](assets/ab-test-url.png)
+   ![ Activiteit URL ](assets/ab-test-url.png)
 
-1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen door **Ervaring toevoegen** knop.
+1. De visuele Composer van de Ervaring toont twee lusjes op de linkerkant nadat u een activiteit creeert: *Ervaring A* en *Ervaring B*. Selecteer een ervaring in de lijst. U kunt nieuwe ervaringen aan de lijst toevoegen door **te gebruiken voeg Ervaring** knoop toe.
 
-   ![Ervaring A](assets/experience.png)
+   ![ Ervaring A ](assets/experience.png)
 
 1. Selecteer een afbeelding of tekst op de pagina die u wilt wijzigen of gebruik de code-editor om het element te selecteren en te HTML.
 
-   ![Element](assets/select-element.png)
+   ![ Element ](assets/select-element.png)
 
-1. De tekst wijzigen vanuit *Kamperen in West-Australië* tot *Vluchtelingen van Australië*. Een lijst met wijzigingen die aan een ervaring zijn toegevoegd, wordt weergegeven onder Wijzigingen. U kunt op het gewijzigde item klikken en dit bewerken om de CSS-kiezer weer te geven en de nieuwe inhoud die eraan is toegevoegd.
+1. Verander de tekst van *Camping in West Australië* aan *avonturen van Australië*. Een lijst met wijzigingen die aan een ervaring zijn toegevoegd, wordt weergegeven onder Wijzigingen. U kunt op het gewijzigde item klikken en dit bewerken om de CSS-kiezer weer te geven en de nieuwe inhoud die eraan is toegevoegd.
 
-   ![avonturen](assets/adventures.png)
+   ![ avonturen ](assets/adventures.png)
 
-1. Naam wijzigen *Ervaring A* tot *Adventure*
-1. Werk de tekst op dezelfde manier bij *Ervaring B* van *Kamperen in West-Australië* tot *Ontdek de Australische wilde natuur*.
+1. Verander *Ervaring A* aan *avontuur*
+1. Op dezelfde manier werk de tekst op *Ervaring B* van *Camping in West Australië* bij *ontdekken de Australische Wilderheid*.
 
-   ![Verkennen](assets/explore.png)
+   ![ ontdekken ](assets/explore.png)
 
-1. Klikken **Volgende** om naar gericht te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
+1. Klik **daarna** om zich aan het richten te bewegen en een Handmatige verkeerstoewijzing van 50-50 tussen de twee ervaringen te houden.
 
-   ![Targeting](assets/targeting.png)
+   ![ gericht ](assets/targeting.png)
 
 1. Voor Doelstellingen en instellingen kiest u de rapportbron als Adobe Target en selecteert u de metrische waarde Doel als Omzetting met een paginaweergaveactie.
 
-   ![Doelen](assets/goals.png)
+   ![ Doelen ](assets/goals.png)
 
 1. Geef een naam op voor uw activiteiten en sla deze op.
 1. Activeer je opgeslagen activiteit om je wijzigingen live te zetten.
 
-   ![Doelen](assets/activate.png)
+   ![ Doelen ](assets/activate.png)
 
 1. Open uw sitepagina (Activiteit URL van stap 3) in een nieuw tabblad en u zou één van beide ervaringen (avontuur of Onderzoek) van onze testactiviteit A/B moeten kunnen bekijken.
 
-   ![Doelen](assets/publish.png)
+   ![ Doelen ](assets/publish.png)
 
 ## Samenvatting
 
@@ -89,4 +89,4 @@ In dit hoofdstuk kon een teller een ervaring tot stand brengen gebruikend Visual
 
 ## Ondersteunende koppelingen
 
-+ [Adobe Experience Cloud-foutopsporing - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

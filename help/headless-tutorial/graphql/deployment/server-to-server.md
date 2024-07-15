@@ -27,17 +27,17 @@ Server-aan-server plaatsingen vereisen minimale configuratie, aangezien de verbi
 
 De volgende plaatsingsconfiguratie moet op zijn plaats voor server-aan-server toepassingsplaatsen zijn.
 
-| Server-naar-server-app maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
+| Server-naar-server-app maakt verbinding met | AEM auteur | AEM Publish | Voorvertoning AEM |
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
-| [AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [ AEM gastheren ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Vergunningsvereisten
 
-Aangeautoriseerde aanvragen voor AEM GraphQL API&#39;s vinden doorgaans plaats in de context van server-naar-server-apps, aangezien andere app-typen, zoals [apps van één pagina](./spa.md), [mobiel](./mobile.md), of [Webcomponenten](./web-component.md), gebruikt doorgaans geen autorisatie omdat het moeilijk is om de gegevens te beveiligen.
+Geautoriseerde verzoeken om GraphQL APIs te AEM zij voorkomen typisch in de context van server-aan-server apps, aangezien andere app types, zoals [ single-page apps ](./spa.md), [ mobiele ](./mobile.md), of [ Componenten van het Web ](./web-component.md), typisch vergunning gebruiken aangezien het moeilijk is om de geloofsbrieven te beveiligen.
 
-Wanneer het autoriseren van verzoeken om as a Cloud Service te AEM, gebruik [op referenties gebaseerde tokenverificatie van de service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). Als u meer wilt weten over het verifiëren van aanvragen voor AEM as a Cloud Service, raadpleegt u de [tokengebaseerde zelfstudie over verificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). De zelfstudie verkent tokengebaseerde verificatie met behulp van [AEM Assets HTTP-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) Maar dezelfde concepten en benaderingen zijn van toepassing op toepassingen die werken met AEM Headless GraphQL-API&#39;s.
+Wanneer het autoriseren van verzoeken aan AEM as a Cloud Service, gebruik [ de dienst op geloofsbrieven-gebaseerde symbolische authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). Meer over het voor authentiek verklaren van verzoeken aan AEM as a Cloud Service leren, herzie het [ op teken-gebaseerde authentificatieleerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). Het leerprogramma verkent op teken-gebaseerde authentificatie gebruikend [ AEM Assets HTTP APIs ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) maar de zelfde concepten en de benaderingen zijn van toepassing op apps die met AEM Headless GraphQL APIs in wisselwerking staan.
 
 ## Voorbeeld van een server-naar-server-app
 
@@ -59,7 +59,7 @@ Adobe biedt een voorbeeld van een server-naar-server-app die is gecodeerd in Nod
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/server-to-server-app.md" title="Server-naar-server-app">Server-naar-server-app</a></p>
                    <p class="is-size-6">Een voorbeeld van een server-naar-server-app, geschreven in Node.js, die inhoud van AEM Headless GraphQL APIs verbruikt.</p>
                    <a href="../example-apps/server-to-server-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Voorbeeld van de Mening </span>
                    </a>
                </div>
            </div>

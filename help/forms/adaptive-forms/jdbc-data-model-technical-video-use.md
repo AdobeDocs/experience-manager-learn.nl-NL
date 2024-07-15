@@ -24,4 +24,4 @@ In deze video ziet u hoe u een formuliergegevensmodel maakt op basis van een JDB
 
 >[!NOTE]
 >
->Elke RDBMS-gegevensbron kan worden gebruikt, zolang de vereiste databasestuurprogramma&#39;s als een OSGi-bundel worden AEM. Het opzetten van een gegevensbron RDBMS in AEM wordt behandeld in [Gegevensintegratie instellen met AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>Elke RDBMS-gegevensbron kan worden gebruikt, zolang de vereiste databasestuurprogramma&#39;s als een OSGi-bundel worden AEM. De vestiging een gegevensbron RDBMS in AEM wordt behandeld in [ de Integratie van Gegevens van de Opstelling met AEM Forms ](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).

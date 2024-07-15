@@ -1,5 +1,5 @@
 ---
-title: Cloud Manager-pijplijnen configureren
+title: Cloud Manager-pijpleidingen configureren
 description: Vorm een pijpleiding op AEM en onderzoek de verschillende types van pijpleidingen.
 role: Developer
 level: Beginner
@@ -22,9 +22,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_configurepipeline"
 >title="Pijpleidingen configureren"
->abstract="Onderzoek de verschillende types van pijpleidingen in de Manager van de Wolk en hoe te om hen voor een succesvol project te vormen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#config-pipeline-video" text="Pipeline configureren in Cloud Manager"
+>abstract="Onderzoek de verschillende types van pijpleidingen in Cloud Manager en hoe te om hen voor een succesvol project te vormen."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#config-pipeline-video" text="Pipet configureren in Cloud Manager"
 
-Onderzoek de verschillende types van pijpleidingen in de Manager van de Wolk en hoe te om hen voor een succesvol project te vormen.
+Onderzoek de verschillende types van pijpleidingen in Cloud Manager en hoe te om hen voor een succesvol project te vormen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330539?quality=12&learn=on)

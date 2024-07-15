@@ -25,12 +25,12 @@ Voor deze zelfstudie maken we een nieuwe adaptieve formuliersjabloon. Er is ook 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
 
-[U kunt dit artikel volgen om te begrijpen hoe u een adaptieve formuliersjabloon en een pagina-component maakt](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
+[ u kunt dit artikel volgen om het proces te begrijpen om een adaptief vormmalplaatje en een paginacomponent tot stand te brengen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
 
 
 ## Assets
 
-De sjabloon en de pagina-component die in deze zelfstudie worden gebruikt, kunnen [hier gedownload](assets/sign-multiple-forms-template.zip)
+Het malplaatje en de paginacomponent die in dit leerprogramma wordt gebruikt kunnen [ van hier worden gedownload ](assets/sign-multiple-forms-template.zip)
 
 ## Volgende stappen
 

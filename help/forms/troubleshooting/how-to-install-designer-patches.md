@@ -1,5 +1,5 @@
 ---
-title: Designer-patches installeren
+title: Designer Patches installeren
 description: In dit artikel worden de stappen beschreven voor het installeren van AEM Forms Designer-patches
 type: Troubleshooting
 role: Admin
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Designer-patches installeren
+# Designer Patches installeren
 
-*Deze video doorloopt het proces voor het installeren van patches voor Designer.*
+*Deze video loopt door het proces om de flarden van Designer te installeren.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335504?quality=12&learn=on)

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 De workflow UpdateSignatureStatus wordt geactiveerd wanneer de gebruiker de ondertekeningsceremonie heeft voltooid. Hier volgt de workflow
 
-![main-workflow](assets/update-signature.PNG)
+![ main-workflow ](assets/update-signature.PNG)
 
 De status van de handtekening bijwerken is een aangepaste processtap.
 De belangrijkste reden voor het uitvoeren van de stap van het douaneproces is een AEMWerkschema uit te breiden. Hieronder ziet u de aangepaste code die wordt gebruikt om de status van de handtekening bij te werken.
@@ -71,7 +71,7 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-De statusworkflow voor updatehandtekeningen kan [hier gedownload](assets/update-signature-status-workflow.zip)
+De werkschema van de de statusstatus van de updatehandtekening kan [ van hier worden gedownload ](assets/update-signature-status-workflow.zip)
 
 ## Volgende stappen
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In dit deel, zullen wij douanefuncties en de coderedacteur aan auteur bedrijfsregels gebruiken.
 
-u hebt de [ClientLib met aangepaste functie](assets/client-libs-and-logo.zip) eerder in deze zelfstudie.
+u hebt reeds [ ClientLib met douanefunctie ](assets/client-libs-and-logo.zip) vroeger in dit leerprogramma geïnstalleerd.
 
 Een clientbibliotheek bestaat meestal uit CSS- en JavaScript-bestanden. Deze clientbibliotheek bevat een javascript-bestand waarin een functie voor het invullen van vervolgkeuzelijstwaarden beschikbaar wordt gemaakt.
 

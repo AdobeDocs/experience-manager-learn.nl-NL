@@ -20,12 +20,12 @@ ht-degree: 0%
 # Zichtbaarheid wachtwoordveld in-/uitschakelen
 
 Een veelvoorkomend geval is dat de invullers van het formulier kunnen schakelen naar de zichtbaarheid van de tekst die in het wachtwoordveld wordt ingevoerd.
-Voor dit gebruik heb ik het oogpictogram van het [Font Awesome Library](https://fontawesome.com/). De vereiste CSS en eye.svg zijn opgenomen in de clientbibliotheek die voor deze demonstratie is gemaakt.
+Om dit gebruiksgeval te verwezenlijken, heb ik het oogpictogram van de [ Font Awesome Bibliotheek ](https://fontawesome.com/) gebruikt. De vereiste CSS en eye.svg zijn opgenomen in de clientbibliotheek die voor deze demonstratie is gemaakt.
 
 
 ## Voorbeeldcode
 
-Het adaptieve formulier heeft een veld van het type PasswordBox genaamd **ssnField**.
+De adaptieve vorm heeft een gebied van type PasswordBox genoemd **ssnField**.
 
 De volgende code wordt uitgevoerd wanneer het formulier wordt geladen
 
@@ -49,7 +49,7 @@ $(document).ready(function() {
 });
 ```
 
-De volgende CSS is gebruikt om de positie van **oog** pictogram in het wachtwoordveld
+Het volgende CSS werd gebruikt om het **oog** pictogram binnen het wachtwoordgebied te plaatsen
 
 ```javascript
 .svg-inline--fa {
@@ -66,10 +66,10 @@ De volgende CSS is gebruikt om de positie van **oog** pictogram in het wachtwoor
 
 ## Voorbeeld van wachtwoorden in-/uitschakelen implementeren
 
-* Download de [clientbibliotheek](assets/simple-ui-tips.zip)
-* Download de [voorbeeldformulier](assets/simple-ui-tricks-form.zip)
-* De clientbibliotheek importeren met de [interface van pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Het voorbeeldformulier importeren met het gereedschap [Forms en Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
+* Download de [ cliëntbibliotheek ](assets/simple-ui-tips.zip)
+* Download de [ steekproefvorm ](assets/simple-ui-tricks-form.zip)
+* Importeer de cliëntbibliotheek gebruikend [ pakketmanager UI ](http://localhost:4502/crx/packmgr/index.jsp)
+* Importeer de steekproefvorm gebruikend [ Forms en Document ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [ Voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 

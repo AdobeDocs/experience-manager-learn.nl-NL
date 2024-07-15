@@ -1,6 +1,6 @@
 ---
 title: Het gereedschap Inhoud overbrengen gebruiken
-description: Het gereedschap Inhoud overbrengen is de aanbevolen manier om inhoud van een op locatie of AMS gehoste versie van AEM te migreren naar een AEM as a Cloud Service omgeving.
+description: Het gereedschap Inhoud overbrengen is de aanbevolen manier om inhoud van een op locatie of AMS gehoste versie van AEM te migreren naar een AEM as a Cloud Service-omgeving.
 version: Cloud Service
 doc-type: technical-video
 feature: Migration
@@ -20,10 +20,10 @@ ht-degree: 0%
 
 # Het gereedschap Inhoud overbrengen gebruiken
 
-Het gereedschap Inhoud overbrengen is de aanbevolen manier om inhoud van een op locatie of AMS gehoste versie van AEM te migreren naar een AEM as a Cloud Service omgeving.
+Het gereedschap Inhoud overbrengen is de aanbevolen manier om inhoud van een op locatie of AMS gehoste versie van AEM te migreren naar een AEM as a Cloud Service-omgeving.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460?quality=12&learn=on)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Overzicht van het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
+* [ het Overzicht van het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)

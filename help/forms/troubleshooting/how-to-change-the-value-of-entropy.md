@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # De waarde van entropie wijzigen
 
-*Deze video doorloopt de stappen om de waarde van entropie te wijzigen.*
+*Deze video loopt door de stappen om de waarde van entropie te veranderen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335494?quality=12&learn=on)

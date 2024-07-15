@@ -21,13 +21,13 @@ ht-degree: 0%
 De indeling van de kaartweergave is een ontwerppatroon dat informatie of gegevens in de vorm van kaarten presenteert. Elke kaart vertegenwoordigt een afzonderlijk stuk van inhoud of gegevensingang en typisch bestaat uit een visueel verschillende container met specifieke elementen die daarin worden geschikt.
 De klikbare kaarten in React zijn interactieve componenten die op kaarten of tegels lijken en door de gebruiker kunnen worden geklikt of worden getikt. Wanneer een gebruiker op een klikbare kaart klikt of tikt, wordt een opgegeven handeling of gedrag geactiveerd, zoals navigeren naar een andere pagina, een modaal openen of de gebruikersinterface bijwerken.
 
-In dit artikel gebruiken we de [listforms-API](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) om de formulieren op te halen en de formulieren weer te geven in de vorm van een kaart en het aangepaste formulier te openen op de gebeurtenis click.
+In dit artikel, zullen wij [ lijsten API ](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) gebruiken om de vormen te halen en de vormen in kaartformaat te tonen en de adaptieve vorm op de klikgebeurtenis te openen.
 
-![kaartweergave](./assets/card-view-forms.png)
+![ kaart-mening ](./assets/card-view-forms.png)
 
 ## Kaartsjabloon
 
-De volgende code is gebruikt om de kaartsjabloon te ontwerpen. De kaartsjabloon toont de titel en beschrijving van het adaptieve formulier samen met het logo van de Adobe. [Materiële UI-componenten](https://mui.com/) zijn gebruikt bij het maken van deze lay-out.
+De volgende code is gebruikt om de kaartsjabloon te ontwerpen. De kaartsjabloon toont de titel en beschrijving van het adaptieve formulier samen met het logo van de Adobe. {de componenten van 0} Materiaal UI ](https://mui.com/) zijn gebruikt in het creëren van deze lay-out.[
 
 
 

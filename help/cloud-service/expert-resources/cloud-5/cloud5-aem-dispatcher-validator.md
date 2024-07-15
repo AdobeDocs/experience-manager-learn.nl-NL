@@ -1,5 +1,5 @@
 ---
-title: Validatie van AEM voor Dispatcher voor cloud 5
+title: Cloud 5 AEM Dispatcher Validator
 description: Deze uitzending is iets dieper op de validator van de verzender en de nuances die deze biedt.
 version: Cloud Service
 role: Admin, Developer
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Validatie van AEM voor Dispatcher voor cloud 5
+# Cloud 5 AEM Dispatcher Validator
 
 Een kort voorbeeld van hoe u de dispatchervalidator in uw AEM ontwikkelingswerkstromen kunt gebruiken.
 
@@ -26,6 +26,6 @@ Een kort voorbeeld van hoe u de dispatchervalidator in uw AEM ontwikkelingswerks
 ## Inhoud die in deze video wordt behandeld
 
 + Overzicht van verzender en SDK
-+ [Verzendgereedschappen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
++ [ de Hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
 + Problemen met fouten oplossen
 + De logboeken en runmodi van de verzender gebruiken voor foutopsporing

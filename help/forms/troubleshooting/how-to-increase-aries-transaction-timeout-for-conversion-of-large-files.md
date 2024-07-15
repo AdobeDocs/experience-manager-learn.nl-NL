@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Hoe te om &quot;aries.transactie.timeout&quot;te verhogen om de kwesties met betrekking tot omzetting van grote dossiers te behandelen
 
-*Deze video doorloopt het proces om &quot;aries.transaction.timeout&quot;te verhogen om de kwesties met betrekking tot omzetting van grote dossiers te behandelen.*
+*Deze video loopt door het proces om &quot;aries.transaction.timeout&quot;te verhogen om de kwesties te richten met betrekking tot omzetting van grote dossiers.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335502?quality=12&learn=on)

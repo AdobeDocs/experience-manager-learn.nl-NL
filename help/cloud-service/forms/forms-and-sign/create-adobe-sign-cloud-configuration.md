@@ -33,7 +33,7 @@ In de volgende video worden de stappen doorlopen die nodig zijn om de configurat
 
 Als er een fout optreedt bij het configureren van de cloudconfiguratie voor bovenstaande ondertekening, kunt u de volgende stappen uitvoeren om problemen op te lossen
 * Zorg ervoor dat de URL voor omleiding die is opgegeven in de Acrobat Sign API-toepassing de volgende notatie heeft
-&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/&lt;container>.
+&lt;uw instantienaam>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
 Bijvoorbeeld: https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS is de naam van de container die de cloudconfiguratie zal bevatten
 * Controleer of de Auth-URL juist is
 * Controleer uw Client-id en clientgeheim

@@ -28,13 +28,13 @@ Acroformulieren zijn formulieren die zijn gemaakt met Acrobat. U kunt een geheel
 
 >[!NOTE]
 >
->Als u het invulbare formulier voor ondertekening met Acrobat Sign wilt verzenden, moet u de velden een overeenkomstige naam geven. U kunt bijvoorbeeld een veld een naam geven **`Sig_es_:signer1:signature`**. Dit is de syntaxis die Acrobat Sign begrijpt.
+>Als u het invulbare formulier voor ondertekening met Acrobat Sign wilt verzenden, moet u de velden een overeenkomstige naam geven. U kunt bijvoorbeeld een veld een naam geven **`Sig_es_:signer1:signature`** . Dit is de syntaxis die Acrobat Sign begrijpt.
 
 >[!NOTE]
 >
 >Als u een XFA-document verzendt, moet u het document afvlakken en moeten de Acrobat Sign-handtekeningcodes aanwezig zijn als statische tekst in het document.
 
-[Acrobat Sign Text Tags Document](https://helpx.adobe.com/sign/using/text-tag.html)
+[ het Document van de Markeringen van de Tekst van Acrobat Sign ](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >

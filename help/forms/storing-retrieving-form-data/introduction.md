@@ -25,7 +25,7 @@ Deze zelfstudie begeleidt u door de stappen die nodig zijn voor het opslaan en o
 
 * Maak een POST vraag aan een servlet. Deze servlet slaat de gegevens in het gegevensbestand op. De opgeslagen gegevens worden geassocieerd met een GUID
 
-* Wanneer u het Adaptieve formulier wilt vullen met de opgeslagen gegevens, haalt u de gegevens die aan de GUID zijn gekoppeld op en vult u het Adaptieve formulier met het gereedschap **request.setAttribute** methode.
+* Wanneer u de Aangepaste Vorm met de opgeslagen gegevens wilt bevolken, wint u de gegevens verbonden aan GUID terug en bevolkt de Aanpassende Vorm gebruikend de {**methode 0} request.setAttribute.**
 
 ## Bewijs van de gebruikszaak
 

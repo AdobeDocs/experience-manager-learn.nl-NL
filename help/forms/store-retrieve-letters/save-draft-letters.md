@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Concepten opslaan en ophalen
 
-De volgende code wordt gebruikt om de letterinstantie op te slaan. De metagegevens van de letterinstantie worden opgeslagen in het dialoogvenster _pictogrammen_ tabel. Er wordt een unieke tekenreeks (conceptID) gegenereerd en geretourneerd. Deze unieke tekenreeks wordt vervolgens gebruikt om opgeslagen letterinstantie op te halen.
+De volgende code wordt gebruikt om de letterinstantie op te slaan. De meta-gegevens van de brieveninstantie worden opgeslagen in de _pictogrammen_ lijst. Er wordt een unieke tekenreeks (conceptID) gegenereerd en geretourneerd. Deze unieke tekenreeks wordt vervolgens gebruikt om opgeslagen letterinstantie op te halen.
 
 ```java
 public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException {
@@ -168,4 +168,4 @@ U kunt de query aanpassen om de opgeslagen letter-instanties op te halen. In dit
 
 ### Eclipse Project
 
-Het eclipse-project met voorbeeldimplementatie kan [hier gedownload](assets/icdrafts-eclipse-project.zip)
+Het eclipse- project met steekproefimplementatie kan [ van hier worden gedownload ](assets/icdrafts-eclipse-project.zip)

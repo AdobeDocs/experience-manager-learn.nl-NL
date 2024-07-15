@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # De serverconversie en algemene time-out bijwerken in de PDFG-service
 
-*In deze video wordt beschreven hoe de serverconversie en de wereldwijde time-out van de server in de Forms PDFG-service worden bijgewerkt.*
+*Deze video beschrijft het proces om de serveromzetting en server Globale onderbreking in de dienst van Forms PDFG bij te werken.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335514?quality=12&learn=on)

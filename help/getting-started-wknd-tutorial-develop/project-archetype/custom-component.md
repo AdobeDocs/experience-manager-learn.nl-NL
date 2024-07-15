@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Aangepaste component {#custom-component}
 
-In deze zelfstudie wordt uitgelegd hoe u een aangepaste versie van end to end kunt maken `Byline` AEM Component die inhoud toont authored in een Dialoog, en verkent het ontwikkelen van een het Verkopen Model om bedrijfslogica in te kapselen die HTML van de component bevolkt.
+Deze zelfstudie behandelt het maken van begin tot eind van een aangepaste `Byline` AEM Component die inhoud toont die in een Dialoog wordt geschreven, en verkent het ontwikkelen van een Sling Model om bedrijfslogica in te kapselen die HTML van de component bevolkt.
 
 ## Vereisten {#prerequisites}
 
-Controleer de vereiste gereedschappen en instructies voor het instellen van een [plaatselijke ontwikkelomgeving](overview.md#local-dev-environment).
+Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
 
 ### Starter-project
 
@@ -35,7 +35,7 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
 
 Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
 
-1. Kijk uit de `tutorial/custom-component-start` vertakking van [GitHub](https://github.com/adobe/aem-guides-wknd)
+1. Controle uit de `tutorial/custom-component-start` tak van [ GitHub ](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
    $ cd aem-guides-wknd
@@ -50,13 +50,13 @@ Bekijk de basislijncode waarop de zelfstudie is gebaseerd:
 
    >[!NOTE]
    >
-   > Indien u AEM 6.5 of 6.4 gebruikt, voegt u de `classic` aan om het even welke Gemaakt bevelen.
+   > Als u AEM 6.5 of 6.4 gebruikt, voegt u het `classic` -profiel toe aan Maven-opdrachten.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/custom-component-solution) of controleer de code plaatselijk door aan de tak over te schakelen `tutorial/custom-component-solution`.
+U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd/tree/tutorial/custom-component-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `tutorial/custom-component-solution` te schakelen.
 
 ## Doelstelling
 
@@ -68,9 +68,9 @@ U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/a
 
 In dit deel van de WKND-zelfstudie wordt een Byline-component gemaakt die wordt gebruikt om geschreven informatie over de auteur van een artikel weer te geven.
 
-![voorbeeld van byline-component](assets/custom-component/byline-design.png)
+![ byline componentenvoorbeeld ](assets/custom-component/byline-design.png)
 
-*Byline-component*
+*component Byline*
 
 De implementatie van de component Byline bevat een dialoogvenster waarin de inhoud van de bylijn wordt verzameld en een aangepast Sling-model waarin de details als volgt worden opgehaald:
 
@@ -82,16 +82,16 @@ De implementatie van de component Byline bevat een dialoogvenster waarin de inho
 
 Maak eerst de knooppuntstructuur van de component Byline en definieer een dialoogvenster. Dit vertegenwoordigt de Component in AEM en bepaalt impliciet het middeltype van de component door zijn plaats in JCR.
 
-In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud de interface kunnen bieden. Voor deze implementatie, de AEM WCM Core Component **Afbeelding** wordt gebruikt om het ontwerpen en het teruggeven van het beeld van de Byline te behandelen, zodat moet het als component worden geplaatst `sling:resourceSuperType`.
+In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud de interface kunnen bieden. Voor deze implementatie, wordt de AEM **component van het Beeld van de Kern WCM** gebruikt om het auteursrecht en het teruggeven van het beeld van de Band te behandelen, zodat moet het als 2} worden geplaatst van deze component.`sling:resourceSuperType`
 
 ### Componentdefinitie maken {#create-component-definition}
 
-1. In de **ui.apps** module, navigeren naar `/apps/wknd/components` en maak een map met de naam `byline`.
-1. Binnen de `byline` map, voeg een bestand met de naam `.content.xml`
+1. In de {**module 0} ui.apps, navigeer aan `/apps/wknd/components` en creeer een omslag genoemd `byline`.**
+1. Voeg in de map `byline` een bestand met de naam `.content.xml` toe
 
-   ![dialoogvenster om knooppunt te maken](assets/custom-component/byline-node-creation.png)
+   ![ dialoog om knoop ](assets/custom-component/byline-node-creation.png) te creëren
 
-1. Vul de `.content.xml` bestand met het volgende:
+1. Vul het bestand `.content.xml` met het volgende:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -103,13 +103,13 @@ In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud 
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   Het bovenstaande XML-bestand bevat de definitie voor de component, inclusief de titel, beschrijving en groep. De `sling:resourceSuperType` punten naar `core/wcm/components/image/v2/image`, die [Component Core Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html).
+   Het bovenstaande XML-bestand bevat de definitie voor de component, inclusief de titel, beschrijving en groep. `sling:resourceSuperType` richt aan `core/wcm/components/image/v2/image`, die de [ Component van het Beeld van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) is.
 
 ### HTML-script maken {#create-the-htl-script}
 
-1. Binnen de `byline` map, bestand toevoegen `byline.html`, die verantwoordelijk is voor de HTML-presentatie van de component. De naam van het bestand moet gelijk zijn aan de naam van de map, omdat dit het standaardscript wordt dat Sling gebruikt om dit brontype te renderen.
+1. Voeg in de map `byline` een bestand `byline.html` toe dat verantwoordelijk is voor de HTML-presentatie van de component. De naam van het bestand moet gelijk zijn aan de naam van de map, omdat dit het standaardscript wordt dat Sling gebruikt om dit brontype te renderen.
 
-1. Voeg de volgende code toe aan de `byline.html`.
+1. Voeg de volgende code toe aan `byline.html`.
 
    ```html
    <!--/* byline.html */-->
@@ -118,18 +118,18 @@ In het dialoogvenster wordt de interface weergegeven waarmee auteurs van inhoud 
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
    ```
 
-De `byline.html` is [later opnieuw bekeken](#byline-htl), zodra het verkoopmodel is gemaakt. Met de huidige status van het HTML-bestand kan de component in een lege staat worden weergegeven in de Pagina-editor van AEM Sites wanneer deze naar de pagina wordt gesleept en neergezet.
+`byline.html` wordt [ herzien later ](#byline-htl), zodra het het Verdelen Model wordt gecreeerd. Met de huidige status van het HTML-bestand kan de component in een lege staat worden weergegeven in de Pagina-editor van AEM Sites wanneer deze naar de pagina wordt gesleept en neergezet.
 
 ### De definitie van het dialoogvenster maken {#create-the-dialog-definition}
 
 Definieer vervolgens een dialoogvenster voor de component Byline met de volgende velden:
 
-* **Naam**: een tekstveld met de naam van de contribuant.
-* **Afbeelding**: een verwijzing naar het biobeeld van de contribuant.
-* **Beroepen**: een lijst van beroepen die aan de contribuant worden toegeschreven. De beroepen moeten alfabetisch in oplopende volgorde (a tot en met z) worden gesorteerd.
+* **Naam**: een tekstgebied de naam van de contribuant.
+* **Beeld**: een verwijzing naar het biobeeld van de contribuant.
+* **Bezetten**: een lijst van beroepen die aan de contribuant worden toegeschreven. De beroepen moeten alfabetisch in oplopende volgorde (a tot en met z) worden gesorteerd.
 
-1. Binnen de `byline` map, een map maken met de naam `_cq_dialog`.
-1. Binnen de `byline/_cq_dialog`, voegt u een bestand met de naam `.content.xml`. Dit is de XML-definitie voor het dialoogvenster. Voeg de volgende XML toe:
+1. Maak in de map `byline` een map met de naam `_cq_dialog` .
+1. Voeg in de `byline/_cq_dialog` een bestand met de naam `.content.xml` toe. Dit is de XML-definitie voor het dialoogvenster. Voeg de volgende XML toe:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -200,16 +200,16 @@ Definieer vervolgens een dialoogvenster voor de component Byline met de volgende
    </jcr:root>
    ```
 
-   In deze definities van dialoogknooppunten worden de [Samenvoeging van verkoopbronnen](https://sling.apache.org/documentation/bundles/resource-merger.html) om te bepalen welke dialooglusjes van worden geërft `sling:resourceSuperType` in dit geval de **Afbeeldingscomponent van kerncomponenten**.
+   Deze definities van de dialoogknoop gebruiken de [ Verzameling van het Middel ](https://sling.apache.org/documentation/bundles/resource-merger.html) om te controleren welke dialooglusjes van de `sling:resourceSuperType` component worden geërft, in dit geval de **component van het Beeld van de Componenten van de Kern**.
 
-   ![voltooid dialoogvenster voor byline](assets/custom-component/byline-dialog-created.png)
+   ![ voltooide dialoog voor byline ](assets/custom-component/byline-dialog-created.png)
 
 ### Het dialoogvenster Beleid maken {#create-the-policy-dialog}
 
 Na de zelfde benadering zoals met de verwezenlijking van de Dialoog, creeer een dialoog van het Beleid (die vroeger als Dialoog van het Ontwerp wordt bekend) om ongewenste gebieden in de configuratie van het Beleid te verbergen die van de component van het Beeld van de Componenten van de Kern wordt geërft.
 
-1. Binnen de `byline` map, een map maken met de naam `_cq_design_dialog`.
-1. Binnen de `byline/_cq_design_dialog`, maakt u een bestand met de naam `.content.xml`. Werk het bestand bij met het volgende: met de volgende XML. Het is het eenvoudigst om de `.content.xml` en kopieer/plak de onderstaande XML.
+1. Maak in de map `byline` een map met de naam `_cq_design_dialog` .
+1. Maak binnen de `byline/_cq_design_dialog` een bestand met de naam `.content.xml` . Werk het bestand bij met het volgende: met de volgende XML. Het is het eenvoudigst om de `.content.xml` -code te openen en de onderliggende XML erin te kopiëren/plakken.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -276,67 +276,67 @@ Na de zelfde benadering zoals met de verwezenlijking van de Dialoog, creeer een 
    </jcr:root>
    ```
 
-   De basis voor de voorgaande **Beleidsdialoogvenster** XML is verkregen uit de [Component Core Components](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_design_dialog/.content.xml).
+   De basis voor de voorafgaande **dialoog van het Beleid** XML werd verkregen van de [ component van het Beeld van de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_design_dialog/.content.xml).
 
-   Zoals in de configuratie van de Dialoog, [Samenvoeging van verkoopbronnen](https://sling.apache.org/documentation/bundles/resource-merger.html) wordt gebruikt om irrelevante velden te verbergen die anders van het `sling:resourceSuperType`, zoals in de nodedefinities met `sling:hideResource="{Boolean}true"` eigenschap.
+   Zoals in de configuratie van de Dialoog, [ wordt de Vergroting van het Middel ](https://sling.apache.org/documentation/bundles/resource-merger.html) gebruikt om irrelevante gebieden te verbergen die anders van `sling:resourceSuperType` worden geërft, zoals gezien door de knoopdefinities met `sling:hideResource="{Boolean}true"` bezit.
 
 ### De code implementeren {#deploy-the-code}
 
-1. Wijzigingen synchroniseren in `ui.apps` met uw IDE of het gebruiken van uw Maven vaardigheden.
+1. Synchroniseer de wijzigingen in `ui.apps` met uw IDE of met gebruik van uw Maven vaardigheden.
 
-   ![Exporteren naar AEM byline-component van de server](assets/custom-component/export-byline-component-aem.png)
+   ![ Uitvoer naar AEM server byline component ](assets/custom-component/export-byline-component-aem.png)
 
 ## De component aan een pagina toevoegen {#add-the-component-to-a-page}
 
-Om dingen eenvoudig te houden en zich op AEM componentenontwikkeling te concentreren, laten wij de component Byline in zijn huidige staat aan een pagina van het Artikel toevoegen om te verifiëren `cq:Component` de definitie van de knoop is correct. Ook om te verifiëren dat de AEM de nieuwe componentendefinitie en de de dialoogwerken van de component voor creatie erkent.
+Om dingen eenvoudig te houden en zich op AEM componentenontwikkeling te concentreren, laten wij de component Byline in zijn huidige staat aan een pagina van het Artikel toevoegen om te verifiëren de `cq:Component` knoopdefinitie correct is. Ook om te verifiëren dat de AEM de nieuwe componentendefinitie en de de dialoogwerken van de component voor creatie erkent.
 
 ### Een afbeelding toevoegen aan de AEM Assets
 
 Eerst uploadt u een voorbeeldkop die u naar AEM Assets hebt genomen om de afbeelding te vullen met de component Byline.
 
-1. Navigeer naar de map LA Skateparks in AEM Assets: [http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks](http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks).
+1. Navigeer aan de omslag van LA Skateparks in AEM Assets: [ http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks ](http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks).
 
-1. De scherpte uploaden voor  **[stapelroswells.jpg](assets/custom-component/stacey-roswells.jpg)** naar de map.
+1. Upload het hoofdschot voor **[stapel-roswells.jpg](assets/custom-component/stacey-roswells.jpg)** aan de omslag.
 
-   ![Titel geüpload naar AEM Assets](assets/custom-component/stacey-roswell-headshot-assets.png)
+   ![ Hoofdschot uploadde aan AEM Assets ](assets/custom-component/stacey-roswell-headshot-assets.png)
 
 ### Auteur van de component {#author-the-component}
 
-Voeg vervolgens de component Byline toe aan een pagina in AEM. Omdat de component Byline aan de **WKND-siteproject - Inhoud** Component Group, via de `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/.content.xml` definitie, is deze automatisch beschikbaar voor elke **Container** wiens **Beleid** stelt de **WKND-siteproject - Inhoud** groep. De pagina is dus beschikbaar in de container voor lay-out van de artikelpagina.
+Voeg vervolgens de component Byline toe aan een pagina in AEM. Omdat de component van de Naamregel aan het **WKND Project van Plaatsen - de Groep van de Component van de Inhoud**, via de `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/.content.xml` definitie wordt toegevoegd, is het automatisch beschikbaar aan om het even welke **Container** het waarvan **Beleid** het **Project van de Plaatsen WKND - de componentengroep van Inhoud** toestaat. De pagina is dus beschikbaar in de container voor lay-out van de artikelpagina.
 
-1. Navigeer naar het artikel LA Skatepark op: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. Navigeer aan het artikel van LA Skatepark bij: [ http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 
-1. Sleep vanuit de linkerzijbalk een **Byline-component** op **bottom** van de container met lay-out van de geopende artikelpagina.
+1. Van linkerzijbalk, belemmering en laat vallen a **component van de Byline** op **bodem** van de Container van de Lay-out van de geopende artikelpagina.
 
-   ![byline-component toevoegen aan pagina](assets/custom-component/add-to-page.png)
+   ![ voeg byline component aan pagina ](assets/custom-component/add-to-page.png) toe
 
-1. Zorg ervoor dat de linkerzijbalk is geopend **en zichtbaar zijn, en de** Asset Finder** is geselecteerd.
+1. Zorg ervoor dat linkerzijbalk open **en zichtbaar is, en** de Vinder van Activa** wordt geselecteerd.
 
-1. Selecteer de **Plaatsaanduiding van Byline-component**, die op zijn beurt de actiebalk weergeeft en op de knop **moersleutel** om het dialoogvenster te openen.
+1. Selecteer de **placeholder van de component Byline**, die beurtelings de actiebar toont en het **sleutel** pictogram tikt om de dialoog te openen.
 
 1. Open de linkerzijbalk terwijl het dialoogvenster geopend is en het eerste tabblad (element) actief is. Sleep een afbeelding vanuit de zoekfunctie naar de dropzone Afbeelding. Zoek naar &quot;stapey&quot; om Stacey Roswells biopicture te vinden die in het WKND ui.content pakket wordt verstrekt.
 
-   ![Afbeelding toevoegen aan dialoogvenster](assets/custom-component/add-image.png)
+   ![ voeg beeld aan dialoog toe ](assets/custom-component/add-image.png)
 
-1. Nadat u een afbeelding hebt toegevoegd, klikt u op de knop **Eigenschappen** om de **Naam** en **Beroepen**.
+1. Na het toevoegen van een beeld, klik op het **Eigenschappen** lusje om de **Naam** in te gaan en **Bezetten**.
 
-   Voer de namen in bij het betreden van beroepen **omgekeerd alfabetisch** bestellen zodat de alfabetiserende bedrijfslogica die in het Sling Model wordt uitgevoerd wordt geverifieerd.
+   Wanneer het ingaan van beroepen, ga hen in **omgekeerde alfabetische** orde in zodat wordt de alfabetiserende bedrijfslogica die in het het Verdelen Model wordt uitgevoerd geverifieerd.
 
-   Tik op de knop **Gereed** in de rechterbenedenhoek om de wijzigingen op te slaan.
+   Tik **Gedaan** knoop in het bodemrecht om de veranderingen te bewaren.
 
-   ![eigenschappen van byline-component vullen](assets/custom-component/add-properties.png)
+   ![ bevolkt eigenschappen van byline component ](assets/custom-component/add-properties.png)
 
    AEM auteurs configureren componenten en schrijven ze samen via de dialoogvensters. Op dit punt, in de ontwikkeling van de component Byline zijn de dialogen inbegrepen voor het verzamelen van de gegevens, nochtans is de logica om de geschreven inhoud terug te geven nog niet toegevoegd. Daarom wordt alleen de tijdelijke aanduiding weergegeven.
 
-1. Nadat u het dialoogvenster hebt opgeslagen, navigeert u naar [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) en bekijk hoe de inhoud van de component wordt opgeslagen op het knooppunt met inhoud van de bylinecomponent onder de AEM pagina.
+1. Na het bewaren van de dialoog, navigeer aan [ CRXDE Lite ](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) en herzie hoe de inhoud van de component op de de inhoudsknoop van de bylinecomponent onder de AEM pagina wordt opgeslagen.
 
-   Zoek het inhoudknooppunt van de component Byline onder de pagina LA Skate Parks, dat wil zeggen `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content/root/container/container/byline`.
+   Zoek het inhoudknooppunt van de component Byline onder de pagina LA Skate Parks, d.w.z. `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content/root/container/container/byline` .
 
-   Let op de eigenschapsnamen `name`, `occupations`, en `fileReference` worden opgeslagen op de **byline-knooppunt**.
+   Merk op de bezitsnamen `name`, `occupations`, en `fileReference` worden opgeslagen op de **byline knoop**.
 
-   Let ook op de `sling:resourceType` van het knooppunt is ingesteld op `wknd/components/content/byline` Dit is wat deze inhoudsknoop aan de de componentenimplementatie van de Byline bindt.
+   U ziet ook dat de `sling:resourceType` van het knooppunt is ingesteld op `wknd/components/content/byline` . Dit is wat dit inhoudsknooppunt bindt aan de implementatie van de Byline-component.
 
-   ![byline-eigenschappen in CRXDE](assets/custom-component/byline-properties-crxde.png)
+   ![ byline eigenschappen in CRXDE ](assets/custom-component/byline-properties-crxde.png)
 
 ## Byline Sling Model maken {#create-sling-model}
 
@@ -346,10 +346,10 @@ Sling-modellen zijn annotatiegestuurde Java™ POJO&#39;s (Plain Old Java™ Obj
 
 ### GeMaven afhankelijkheden controleren {#maven-dependency}
 
-Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. Deze API&#39;s zijn beschikbaar via de `dependencies` in de lijst `core` POM-bestand van de module. Het project dat voor deze zelfstudie wordt gebruikt, is gemaakt voor AEM as a Cloud Service. Nochtans is het uniek aangezien het achterwaarts compatibel met AEM 6.5/6.4 is. Daarom zijn zowel gebiedsdelen voor Cloud Service als AEM 6.x inbegrepen.
+Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. Deze API&#39;s worden beschikbaar gesteld via de `dependencies` die in het POM-bestand van de module `core` wordt vermeld. Het project dat voor deze zelfstudie wordt gebruikt, is gemaakt voor AEM as a Cloud Service. Nochtans is het uniek aangezien het achterwaarts compatibel met AEM 6.5/6.4 is. Daarom zijn zowel gebiedsdelen voor Cloud Service als AEM 6.x inbegrepen.
 
-1. Open de `pom.xml` bestand onder `<src>/aem-guides-wknd/core/pom.xml`.
-1. Zoek de afhankelijkheid voor `aem-sdk-api` - **Alleen AEM as a Cloud Service**
+1. Open het bestand `pom.xml` onder `<src>/aem-guides-wknd/core/pom.xml` .
+1. Vind het gebiedsdeel voor `aem-sdk-api` - **slechts AEM as a Cloud Service**
 
    ```xml
    <dependency>
@@ -358,9 +358,9 @@ Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. 
    </dependency>
    ```
 
-   De [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) bevat alle openbare Java™ API&#39;s die door AEM worden weergegeven. De `aem-sdk-api` wordt gebruikt door gebrek wanneer het bouwen van dit project. De versie blijft behouden in de hoofdreactorpom vanaf de basis van het project bij `aem-guides-wknd/pom.xml`.
+   [ aem-sdk-api ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) bevat alle openbare Java™ APIs die door AEM worden blootgesteld. `aem-sdk-api` wordt standaard gebruikt bij het bouwen van dit project. De versie blijft behouden in de bovenliggende reactorpom vanaf de basis van het project in `aem-guides-wknd/pom.xml` .
 
-1. Zoek de afhankelijkheid voor de `uber-jar` - **Alleen AEM 6.5/6.4**
+1. Vind de gebiedsdeel voor `uber-jar` - **AEM 6.5/6.4 slechts**
 
    ```xml
    ...
@@ -372,11 +372,11 @@ Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. 
    ...
    ```
 
-   De `uber-jar` wordt alleen opgenomen als de `classic` profiel wordt aangeroepen, d.w.z `mvn clean install -PautoInstallSinglePackage -Pclassic`. Nogmaals, dit is uniek voor dit project. In een echt project, dat uit de Archetype van het Project van de AEM wordt geproduceerd `uber-jar` Dit is de standaardinstelling als de opgegeven versie van AEM 6.5 of 6.4 is.
+   `uber-jar` wordt alleen opgenomen wanneer het `classic` -profiel wordt aangeroepen, dat wil zeggen `mvn clean install -PautoInstallSinglePackage -Pclassic` . Nogmaals, dit is uniek voor dit project. In een echt project, dat van het AEM Archieftype van het Project wordt geproduceerd is `uber-jar` het gebrek als de gespecificeerde versie van AEM 6.5 of 6.4 is.
 
-   De [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) bevat alle openbare Java™ API&#39;s die door AEM 6.x worden weergegeven. De versie blijft behouden in de hoofdreactorpom van het project `aem-guides-wknd/pom.xml`.
+   [ uber-jar ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) bevat alle openbare Java™ APIs die door AEM 6.x worden blootgesteld. De versie blijft behouden in de bovenliggende reactorpom vanaf de basis van het project `aem-guides-wknd/pom.xml` .
 
-1. Zoek de afhankelijkheid voor `core.wcm.components.core`:
+1. De afhankelijkheid van `core.wcm.components.core` zoeken:
 
    ```xml
     <!-- Core Component Dependency -->
@@ -386,21 +386,21 @@ Het Byline Sling-model is gebaseerd op verschillende Java™ API&#39;s van AEM. 
        </dependency>
    ```
 
-   Dit zijn de volledige openbare Java™ API&#39;s die worden weergegeven door AEM Core Components. AEM Core Components is een project dat buiten AEM wordt onderhouden en heeft daarom een aparte releasecyclus. Daarom is het een afhankelijkheid die afzonderlijk moet worden opgenomen en die **niet** opgenomen in de `uber-jar` of `aem-sdk-api`.
+   Dit zijn de volledige openbare Java™ API&#39;s die worden weergegeven door AEM Core Components. AEM Core Components is een project dat buiten AEM wordt onderhouden en heeft daarom een aparte releasecyclus. Om deze reden, is het een gebiedsdeel dat afzonderlijk moet omvatten en **niet** inbegrepen met `uber-jar` of `aem-sdk-api` is.
 
-   Net als de uber-jar blijft de versie voor deze afhankelijkheid behouden in het Parent-reactorpomabestand van `aem-guides-wknd/pom.xml`.
+   Net als de uber-jar blijft de versie voor deze afhankelijkheid behouden in het Parent-reactorpomabestand van `aem-guides-wknd/pom.xml` .
 
    Verderop in deze zelfstudie wordt de klasse Core Component Image gebruikt om de afbeelding weer te geven in de component Byline. Het is noodzakelijk om de afhankelijkheid van de Component van de Kern te hebben om het het Verkopen Model te bouwen en te compileren.
 
 ### Byline-interface {#byline-interface}
 
-Maak een openbare Java™-interface voor de naamregel. De `Byline.java` bepaalt de openbare methodes nodig om de `byline.html` HTML-script.
+Maak een openbare Java™-interface voor de naamregel. In `Byline.java` worden de methoden public gedefinieerd die nodig zijn om het `byline.html` HTML-script te sturen.
 
-1. Binnen, `core` binnen de `core/src/main/java/com/adobe/aem/guides/wknd/core/models` map maken een bestand met de naam `Byline.java`
+1. Binnen maakt de module `core` in de map `core/src/main/java/com/adobe/aem/guides/wknd/core/models` een bestand met de naam `Byline.java` .
 
-   ![byline-interface maken](assets/custom-component/create-byline-interface.png)
+   ![ creeer byline interface ](assets/custom-component/create-byline-interface.png)
 
-1. Bijwerken `Byline.java` met de volgende methoden:
+1. Werk `Byline.java` bij met de volgende methoden:
 
    ```java
    package com.adobe.aem.guides.wknd.core.models;
@@ -430,15 +430,15 @@ Maak een openbare Java™-interface voor de naamregel. De `Byline.java` bepaalt 
    }
    ```
 
-   De eerste twee methoden maken de waarden voor de **name** en **beroepen** voor de component Byline.
+   De eerste twee methodes stellen de waarden voor de **naam** en **bezettingen** voor de component van de Naamregel bloot.
 
-   De `isEmpty()` wordt gebruikt om te bepalen als de component om het even welke inhoud heeft om terug te geven of als het wacht om worden gevormd.
+   De methode `isEmpty()` wordt gebruikt om te bepalen als de component om het even welke inhoud heeft om terug te geven of als het wacht om worden gevormd.
 
-   Er is geen methode voor de afbeelding. [deze wordt later herzien](#tackling-the-image-problem).
+   Bericht er geen methode voor het Beeld is; [ dit wordt herzien later ](#tackling-the-image-problem).
 
-1. Java™-pakketten die openbare Java™-klassen, in dit geval een Sling Model, bevatten, moeten zijn voorzien van een versienummer via de  `package-info.java` bestand.
+1. Java™-pakketten die openbare Java™-klassen bevatten, in dit geval een Sling Model, moeten zijn versioned met behulp van het `package-info.java` -bestand van het pakket.
 
-   Sinds het Java™-pakket van de WKND-bron `com.adobe.aem.guides.wknd.core.models` declareert versie van `1.0.0`en er wordt een vaste openbare interface en methoden toegevoegd, moet de versie worden uitgebreid tot `1.1.0`. Open het bestand op `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` en bijwerken `@Version("1.0.0")` tot `@Version("2.1.0")`.
+   Aangezien in het Java™-pakket `com.adobe.aem.guides.wknd.core.models` van de WKND-bron de versie van `1.0.0` wordt gedeclareerd en er een vaste openbare interface en methoden worden toegevoegd, moet de versie worden verhoogd naar `1.1.0` . Open het bestand op `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` en werk `@Version("1.0.0")` bij `@Version("2.1.0")` .
 
    ```
    @Version("2.1.0")
@@ -447,18 +447,18 @@ Maak een openbare Java™-interface voor de naamregel. De `Byline.java` bepaalt 
    import org.osgi.annotation.versioning.Version;
    ```
 
-Wanneer de bestanden in dit pakket worden gewijzigd, wordt [pakketversie moet semantisch worden aangepast](https://semver.org/). Zo niet, dan is het Maven-project [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd) detecteert een ongeldige pakketversie en verbreekt de gebouwde versie. Gelukkig meldt de Maven-plug-in bij een storing de ongeldige Java™-pakketversie en de versie die deze moet hebben. Werk de `@Version("...")` declaratie in de schending van het Java™-pakket `package-info.java` naar de versie die door de plug-in wordt aanbevolen om te repareren.
+Wanneer een verandering in de dossiers in dit pakket wordt aangebracht, moet de [ pakketversie semantisch ](https://semver.org/) worden aangepast. Als niet, ontdekt het Maven project [ bnd-baseline-maven-plugin ](https://github.com/bndtools/bnd) een ongeldige pakketversie en breekt de gebouwde. Gelukkig meldt de Maven-plug-in bij een storing de ongeldige Java™-pakketversie en de versie die deze moet hebben. Werk de declaratie `@Version("...")` in het overtreden van het Java™-pakket `package-info.java` bij naar de versie die door de plug-in wordt aanbevolen om deze te herstellen.
 
 ### Bylineimplementatie {#byline-implementation}
 
-De `BylineImpl.java` is de implementatie van het Sling Model dat het `Byline.java` eerder gedefinieerde interface. De volledige code voor `BylineImpl.java` vindt u onder aan deze sectie.
+`BylineImpl.java` is de implementatie van het Sling Model dat de `Byline.java` interface uitvoert die vroeger wordt bepaald. De volledige code voor `BylineImpl.java` vindt u onder aan deze sectie.
 
-1. Een map maken met de naam `impl` beneide `core/src/main/java/com/adobe/aem/guides/core/models`.
-1. In de `impl` map, een bestand maken `BylineImpl.java`.
+1. Maak een map met de naam `impl` onder `core/src/main/java/com/adobe/aem/guides/core/models` .
+1. Maak een bestand `BylineImpl.java` in de map `impl` .
 
-   ![Byline-iml-bestand](assets/custom-component/byline-impl-file.png)
+   ![ Byline Impl- Dossier ](assets/custom-component/byline-impl-file.png)
 
-1. Openen `BylineImpl.java`. Opgeven dat het de `Byline` interface. Gebruik de auto-volledige eigenschappen van winde of werk manueel het dossier bij om de methodes te omvatten nodig om uit te voeren `Byline` interface:
+1. Openen `BylineImpl.java` . Geef op of de interface `Byline` moet worden geïmplementeerd. Gebruik de functies voor automatisch aanvullen van de IDE of werk het bestand handmatig bij en voeg de methoden toe die nodig zijn om de interface `Byline` te implementeren:
 
    ```java
    package com.adobe.aem.guides.wknd.core.models.impl;
@@ -487,7 +487,7 @@ De `BylineImpl.java` is de implementatie van het Sling Model dat het `Byline.jav
    }
    ```
 
-1. Annotaties van het verkoopmodel toevoegen door bijwerken `BylineImpl.java` met de volgende klasseniveau-annotaties. Dit `@Model(..)`annotatie is wat van de klasse een Sling Model maakt.
+1. Voeg de annotaties van het verkoopmodel toe door `BylineImpl.java` bij te werken met de volgende annotaties op klasseniveau. Deze `@Model(..)` aantekening is wat de klasse in een het Verschilderen Model verandert.
 
    ```java
    import org.apache.sling.api.SlingHttpServletRequest;
@@ -508,18 +508,18 @@ De `BylineImpl.java` is de implementatie van het Sling Model dat het `Byline.jav
 
    Laten we deze annotatie en de bijbehorende parameters bekijken:
 
-   * De `@Model` annotatieregisters BylineImpl als Sling Model wanneer het aan AEM wordt opgesteld.
-   * De `adaptables` parameter specificeert dat dit model door het verzoek kan worden aangepast.
-   * De `adapters` parameter staat toe dat de implementatieklasse onder de interface Byline wordt geregistreerd. Hierdoor kan het HTML-script het Sling Model via de interface aanroepen (in plaats van de implementatie rechtstreeks). [Meer informatie over adapters vindt u hier](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110).
-   * De `resourceType` verwijst naar het brontype van de component Byline (eerder gecreeerd) en helpt om het correcte model op te lossen als er veelvoudige implementaties zijn. [Meer details over het associëren van een modelklasse met een middeltype kunnen hier worden gevonden](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130).
+   * De `@Model` -annotatie registreert BylineImpl als een Sling-model wanneer deze wordt geïmplementeerd op AEM.
+   * Met de parameter `adaptables` wordt opgegeven dat dit model door de aanvraag kan worden aangepast.
+   * Met de parameter `adapters` kan de implementatieklasse worden geregistreerd onder de interface Byline. Hierdoor kan het HTML-script het Sling Model via de interface aanroepen (in plaats van de implementatie rechtstreeks). [ Meer details over adapters kunnen hier ](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110) worden gevonden.
+   * `resourceType` verwijst naar het brontype van de component Byline (eerder gecreeerd) en helpt om het correcte model op te lossen als er veelvoudige implementaties zijn. [ Meer details over het associëren van een modelklasse met een middeltype kunnen hier ](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130) worden gevonden.
 
 ### Implementatie van de methoden van het verkoopmodel {#implementing-the-sling-model-methods}
 
 #### getName() {#implementing-get-name}
 
-De eerste methode die wordt geïmplementeerd, is `getName()`, wordt de opgeslagen waarde geretourneerd naar het JCR-inhoudsknooppunt van de byline onder de eigenschap `name`.
+De eerste methode die wordt geïmplementeerd, is `getName()` . Hierin wordt de waarde geretourneerd die is opgeslagen in het JCR-inhoudsknooppunt van de byline onder de eigenschap `name` .
 
-Hiervoor `@ValueMapValue` De het verkopen modelaantekening wordt gebruikt om de waarde in een gebied te injecteren Java™ gebruikend ValueMap van het middel van het Verzoek.
+Hiervoor wordt de `@ValueMapValue` Sling Model-annotatie gebruikt om de waarde in een Java™-veld te injecteren met behulp van de ValueMap van de bron van het verzoek.
 
 
 ```java
@@ -539,15 +539,15 @@ public class BylineImpl implements Byline {
 }
 ```
 
-Omdat de JCR-eigenschap de naam deelt als het Java™-veld (beide zijn &quot;name&quot;), `@ValueMapValue` lost automatisch deze vereniging op en injecteert de waarde van het bezit in het gebied Java™.
+Omdat de JCR-eigenschap de naam deelt als het Java™-veld (beide zijn &quot;name&quot;), lost `@ValueMapValue` deze koppeling automatisch op en injecteert de waarde van de eigenschap in het Java™-veld.
 
 #### getOccupations() {#implementing-get-occupations}
 
-De volgende methode die moet worden geïmplementeerd is `getOccupations()`. Deze methode laadt de beroepen die in het bezit JCR worden opgeslagen `occupations` en retourneert een gesorteerde (alfabetische) verzameling ervan.
+De volgende methode die moet worden geïmplementeerd, is `getOccupations()` . Deze methode laadt de beroepen die in de eigenschap JCR `occupations` zijn opgeslagen en retourneert een gesorteerde (alfabetische) verzameling ervan.
 
-Dezelfde techniek gebruiken die in `getName()` De eigenschapswaarde kan in het veld Sling Model worden geïnjecteerd.
+Met dezelfde techniek die in `getName()` wordt beschreven, kan de eigenschapswaarde worden geïnjecteerd in het veld Sling Model.
 
-Zodra de JCR-eigenschapswaarden beschikbaar zijn in het Sling Model via het geïnjecteerde Java™ veld `occupations`, kan de sorteerbedrijfslogica worden toegepast in de `getOccupations()` methode.
+Zodra de JCR-eigenschapswaarden beschikbaar zijn in het Sling Model via het geïnjecteerde Java™-veld `occupations` , kan de zakelijke logica voor sorteren worden toegepast in de `getOccupations()` -methode.
 
 
 ```java
@@ -577,9 +577,9 @@ public class BylineImpl implements Byline {
 
 #### isEmpty() {#implementing-is-empty}
 
-De laatste methode public is `isEmpty()` dat bepaalt wanneer de component zich &quot;authored genoeg&quot;zou moeten overwegen om terug te geven.
+De laatste methode public is `isEmpty()` die bepaalt wanneer de component zichzelf als &#39;authored genoeg&#39; moet beschouwen om te renderen.
 
-Voor deze component zijn alle drie de gebieden het bedrijfsvereiste: `name, image and occupations` moet worden ingevuld *voor* de component kan worden gerenderd.
+Voor deze component, is het bedrijfsvereiste alle drie gebieden, `name, image and occupations` moet worden ingevuld *alvorens* de component kan worden teruggegeven.
 
 
 ```java
@@ -610,17 +610,17 @@ public class BylineImpl implements Byline {
 
 #### Het probleem van de &quot;afbeelding&quot; aanpakken {#tackling-the-image-problem}
 
-Het controleren van de naam en de gebruiksomstandigheden zijn triviaal en de Apache Commons Lang3 geeft het handige [StringUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html) klasse. Het is echter niet duidelijk hoe **aanwezigheid van de afbeelding** kan worden gevalideerd, aangezien de component Core Components Image wordt gebruikt om de afbeelding te bedekken.
+Het controleren van de naam en bezettingsvoorwaarden zijn triviaal en Apache Commons Lang3 verstrekt de handige ](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html) klasse 0} StringUtils. [ Nochtans, is het onduidelijk hoe de **aanwezigheid van het Beeld** kan worden bevestigd aangezien de component van het Beeld van de Componenten van de Kern aan oppervlakte het beeld wordt gebruikt.
 
 Er zijn twee manieren om dit aan te pakken:
 
-Controleer of de `fileReference` De JCR-eigenschap wordt omgezet in een element. *OF* Converteer deze resource naar een Core Component Image Sling Model en zorg ervoor dat de `getSrc()` methode is niet leeg.
+Controleer of de JCR-eigenschap `fileReference` wordt omgezet in een element. *OF* zet dit middel in een Model van het Afgeven van het Beeld van de Component van de Kern om en zorg ervoor de `getSrc()` methode niet leeg is.
 
-Laten we de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, maar in deze zelfstudie wordt deze laatste gebruikt om andere kenmerken van Sling Models te verkennen.
+Laten wij de **tweede** benadering gebruiken. De eerste aanpak is waarschijnlijk voldoende, maar in deze zelfstudie wordt deze laatste gebruikt om andere kenmerken van Sling Models te verkennen.
 
-1. Maak een methode van het type private waarmee de afbeelding wordt opgehaald. Deze methode wordt privé gelaten omdat er geen behoefte is om het voorwerp van het Beeld in HTML zelf bloot te stellen, en het wordt slechts gebruikt om te drijven `isEmpty().`
+1. Maak een methode van het type private waarmee de afbeelding wordt opgehaald. Deze methode blijft privé, omdat het afbeeldingsobject niet in de HTML zelf hoeft te worden weergegeven en alleen wordt gebruikt om te besturen `isEmpty().`
 
-   Voeg de volgende methode van het type private toe voor `getImage()`:
+   Voeg de volgende methode van het type private toe voor `getImage()` :
 
    ```java
    import com.adobe.cq.wcm.core.components.models.Image;
@@ -632,21 +632,21 @@ Laten we de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, ma
    }
    ```
 
-   Zoals hierboven vermeld, zijn er nog twee manieren om de **Afbeeldingsmodel**:
+   Zoals hierboven vermeld, zijn er twee meer benaderingen om het **Beeld Verzamelen Model** te krijgen:
 
-   De eerste toepassing van de `@Self` annotatie, om het huidige verzoek automatisch aan te passen aan de Component van de Kern `Image.class`
+   De eerste toepassing gebruikt de annotatie `@Self` om de huidige aanvraag automatisch aan te passen aan de toepassing van de Core Component `Image.class`
 
-   De tweede functie gebruikt de [Apache Sling ModelFactory](https://sling.apache.org/apidocs/sling10/org/apache/sling/models/factory/ModelFactory.html) De dienst OSGi, die een handige dienst is, en helpt ons het Verdelen Modellen van andere types in code tot stand brengen Java™.
+   De tweede gebruikt de [ Sling ModelFactory van Apache ](https://sling.apache.org/apidocs/sling10/org/apache/sling/models/factory/ModelFactory.html) dienst OSGi, die de handige dienst is, en helpt ons Sling Models van andere types in code tot stand brengen Java™.
 
    Laten we de tweede aanpak gebruiken.
 
    >[!NOTE]
    >
-   >In een real-world implementatie, benadering &quot;Één&quot;, gebruikend `@Self` heeft de voorkeur omdat het de eenvoudigere, elegantere oplossing is. In deze zelfstudie wordt de tweede aanpak gebruikt, omdat er meer facetten van Sling Models moeten worden verkend die handig zijn: complexere componenten!
+   >In een real-world implementatie, de benadering &quot;Één&quot;, het gebruiken van `@Self` wordt geprefereerd aangezien het de eenvoudigere, elegantere oplossing is. In deze zelfstudie wordt de tweede aanpak gebruikt, omdat er meer facetten van Sling Models moeten worden verkend die handig zijn: complexere componenten!
 
-   Omdat Sling Models Java™ POJO&#39;s zijn, en niet OSGi Services, zijn de gebruikelijke OSGi injectieannotaties `@Reference` **kan** worden gebruikt, in plaats daarvan bieden Sling Models een speciale **[@OSGiService](https://sling.apache.org/documentation/bundles/models.html#injector-specific-annotations)** annotatie die vergelijkbare functionaliteit biedt.
+   Aangezien het Verdelen Modellen POJO&#39;s Java™ zijn, en niet OSGi Services, kunnen de gebruikelijke OSGi injectieannotaties `@Reference` **niet** worden gebruikt, in plaats daarvan verstrekken het Verdelen Modellen een speciale **[@OSGiService ](https://sling.apache.org/documentation/bundles/models.html#injector-specific-annotations)** annotatie die gelijkaardige functionaliteit verstrekt.
 
-1. Bijwerken `BylineImpl.java` om de `OSGiService` annotatie voor het injecteren van `ModelFactory`:
+1. Werk `BylineImpl.java` bij om de `OSGiService` -annotatie voor het injecteren van de `ModelFactory` op te nemen:
 
    ```java
    import org.apache.sling.models.factory.ModelFactory;
@@ -659,7 +659,7 @@ Laten we de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, ma
    }
    ```
 
-   Met de `ModelFactory` Beschikbaar, kan een Model van de Verkoop van het Beeld van de Component van de Kern tot stand worden gebracht gebruikend:
+   Met de beschikbare `ModelFactory`, kan een Model van de Verzameling van het Beeld van de Component van de Kern worden gecreeerd gebruikend:
 
    ```java
    modelFactory.getModelFromWrappedRequest(SlingHttpServletRequest request, Resource resource, java.lang.Class<T> targetClass)
@@ -667,9 +667,9 @@ Laten we de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, ma
 
    Nochtans, vereist deze methode zowel een verzoek als een middel, nog niet beschikbaar in het het Verdelen Model. Om deze te verkrijgen, worden meer verkoopmodelannotaties gebruikt!
 
-   Om het huidige verzoek te krijgen **[@Self](https://sling.apache.org/documentation/bundles/models.html#injector-specific-annotations)** Er kan een annotatie worden gebruikt om de `adaptable` (gedefinieerd in het `@Model(..)` als `SlingHttpServletRequest.class`, in een Java™-klasseveld.
+   Om het huidige verzoek te krijgen kan de **[@Self ](https://sling.apache.org/documentation/bundles/models.html#injector-specific-annotations)** aantekening worden gebruikt om `adaptable` (die in `@Model(..)` als `SlingHttpServletRequest.class` wordt bepaald, in een Java™ klassengebied te injecteren.
 
-1. Voeg de **@Self** annotatie om de **SlingHttpServletRequest-verzoek**:
+1. Voeg de **@Self** aantekening toe om het **verzoek SlingHttpServletRequest** te krijgen:
 
    ```java
    import org.apache.sling.models.annotations.injectorspecific.Self;
@@ -678,13 +678,13 @@ Laten we de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, ma
    private SlingHttpServletRequest request;
    ```
 
-   Herinneren, gebruiken `@Self Image image` om het Core Component Image Sling Model te injecteren was een optie hierboven - de `@Self` annotatie probeert het aanpasbare object te injecteren (in dit geval een SlingHttpServletRequest) en zich aan te passen aan het veldtype annotatie. Aangezien het model voor het instellen van de afbeelding van de kerncomponent kan worden aangepast aan SlingHttpServletRequest-objecten, zou dit hebben gewerkt en is het minder code dan meer verkennend `modelFactory` aanpak.
+   Vergeet niet dat het gebruik van `@Self Image image` om het Core Component Image Sling Model te injecteren hierboven een optie was - de `@Self` -aantekening probeert het aanpasbare object te injecteren (in dit geval een SlingHttpServletRequest) en zich aan te passen aan het type annotatieveld. Aangezien het model voor het instellen van de afbeelding van de kerncomponent kan worden aangepast aan SlingHttpServletRequest-objecten, zou dit hebben gewerkt en is het minder code dan meer verkennende `modelFactory` aanpak.
 
-   Nu worden de variabelen die nodig zijn om het afbeeldingsmodel te instantiëren via de ModelFactory-API geïnjecteerd. Laten we Verkoopmodel gebruiken **[@PostConstruct](https://sling.apache.org/documentation/bundles/models.html#postconstruct-methods)** aantekening om dit object te verkrijgen nadat het Sling-model is geïnstantieerd.
+   Nu worden de variabelen die nodig zijn om het afbeeldingsmodel te instantiëren via de ModelFactory-API geïnjecteerd. Laten wij het Verschuiven Model **[@PostConstruct ](https://sling.apache.org/documentation/bundles/models.html#postconstruct-methods) gebruiken** aantekening om dit voorwerp te verkrijgen nadat het het Verzamelen Model concretiseert.
 
-   `@PostConstruct` is ongelooflijk nuttig en handelt in een zelfde hoedanigheid als aannemer, echter, wordt het aangehaald nadat de klasse wordt geconcretiseerd en alle geannoteerde gebieden Java™ worden geïnjecteerd. overwegende dat andere annotaties van het Sling Model Java™-klassevelden (variabelen) annoteren, `@PostConstruct` annotaties toevoegen aan een void, parametermethode nul, doorgaans genaamd `init()` (maar kan een willekeurige naam hebben).
+   `@PostConstruct` is ongelooflijk nuttig en werkt in een vergelijkbare hoedanigheid als een constructor, maar wordt aangeroepen nadat de klasse is geïnstantieerd en alle Java™-velden met aantekeningen zijn geïnjecteerd. Terwijl andere annotaties van het Model van het Sling aan de klassengebieden van Java™ (variabelen) aantekeningen maken, `@PostConstruct` annoteert een void, nulparametermethode, typisch genoemd `init()` (maar kan om het even wat worden genoemd).
 
-1. Toevoegen **@PostConstruct** methode:
+1. Voeg de methode **@PostConstruct** toe:
 
    ```java
    import javax.annotation.PostConstruct;
@@ -703,11 +703,11 @@ Laten we de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, ma
    }
    ```
 
-   Onthoud dat modellen voor verkoop zijn **NOT** OSGi Services, zodat is het veilig om klassenstaat te handhaven. Vaak `@PostConstruct` Hiermee wordt de klassestatus Sling Model afgeleid en ingesteld voor later gebruik, vergelijkbaar met wat een normale constructor doet.
+   Herinner me, zijn het Verdelen Modellen **NIET** OSGi Services, zodat is het veilig om klassenstaat te handhaven. `@PostConstruct` leidt vaak de klassestatus Sling Model af en stelt deze in voor toekomstig gebruik, vergelijkbaar met wat een gewone constructor doet.
 
-   Als de `@PostConstruct` methode genereert een uitzondering, het Sling-model wordt niet geïnstantieerd en is null.
+   Als de methode `@PostConstruct` een uitzondering genereert, wordt het Sling-model niet geïnstantieerd en is het null.
 
-1. **getImage()** kan nu worden bijgewerkt om het afbeeldingsobject te retourneren.
+1. **getImage ()** kan nu worden bijgewerkt om het beeldvoorwerp eenvoudig terug te keren.
 
    ```java
    /**
@@ -718,7 +718,7 @@ Laten we de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, ma
    }
    ```
 
-1. Laten we teruggaan naar `isEmpty()` en voltooi de implementatie:
+1. Laten we terugkeren naar `isEmpty()` en de implementatie voltooien:
 
    ```java
    @Override
@@ -741,9 +741,9 @@ Laten we de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, ma
    }
    ```
 
-   Noteer meerdere aanroepen van `getImage()` is geen probleem omdat de geïnitialiseerde `image` class variable en wordt niet aangeroepen `modelFactory.getModelFromWrappedRequest(...)` wat niet te duur is, maar het is de moeite waard om onnodig te bellen.
+   Meerdere aanroepen van `getImage()` zijn niet problematisch omdat de geïnitialiseerde variabele `image` class wordt geretourneerd en `modelFactory.getModelFromWrappedRequest(...)` niet wordt aangeroepen, wat niet te duur is, maar het onnodig aanroepen waard is.
 
-1. De definitieve `BylineImpl.java` zou als moeten kijken:
+1. De uiteindelijke `BylineImpl.java` moet er als volgt uitzien:
 
 
    ```java
@@ -845,7 +845,7 @@ Laten we de **seconde** aanpak. De eerste aanpak is waarschijnlijk voldoende, ma
 
 ## Naamregel HTL {#byline-htl}
 
-In de `ui.apps` module, openen `/apps/wknd/components/byline/byline.html` die in de vroegere opstelling van de Component van de AEM werd gecreeerd.
+Open in de module `ui.apps` `/apps/wknd/components/byline/byline.html` die is gemaakt in de eerdere setup van de AEM Component.
 
 ```html
 <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
@@ -855,13 +855,13 @@ In de `ui.apps` module, openen `/apps/wknd/components/byline/byline.html` die in
 
 Laten we bekijken wat dit HTML-script tot nu toe doet:
 
-* De `placeholderTemplate` verwijst naar de tijdelijke aanduiding voor kerncomponenten, die wordt weergegeven wanneer de component niet volledig is geconfigureerd. In de AEM Sites Page Editor wordt dit weergegeven als een vak met de componenttitel, zoals hierboven gedefinieerd in het dialoogvenster `cq:Component`s  `jcr:title` eigenschap.
+* `placeholderTemplate` verwijst naar de tijdelijke aanduiding voor kerncomponenten, die wordt weergegeven wanneer de component niet volledig is geconfigureerd. Dit wordt in de AEM Sites Page Editor weergegeven als een vak met de componenttitel, zoals hierboven gedefinieerd in de eigenschap `cq:Component` s `jcr:title` .
 
-* De `data-sly-call="${placeholderTemplate.placeholder @ isEmpty=false}` laadt de `placeholderTemplate` hierboven gedefinieerd en doorgegeven in een booleaanse waarde (momenteel hard gecodeerd tot `false`) in de plaatsaanduidingssjabloon. Wanneer `isEmpty` is waar, geeft het placeholder malplaatje het grijze vakje terug, anders geeft het niets terug.
+* `data-sly-call="${placeholderTemplate.placeholder @ isEmpty=false}` laadt de hierboven gedefinieerde `placeholderTemplate` en geeft een booleaanse waarde (momenteel gecodeerd als `false` ) door in de tijdelijke aanduiding. Als `isEmpty` true is, wordt het grijze vak weergegeven als de plaatsaanduidingssjabloon geen waarde heeft.
 
 ### Byline HTML bijwerken
 
-1. Bijwerken **byline.html** met de volgende skelet-HTML-structuur:
+1. Update **byline.html** met de volgende skeletale structuur van HTML:
 
    ```html
    <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
@@ -875,15 +875,15 @@ Laten we bekijken wat dit HTML-script tot nu toe doet:
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
    ```
 
-   Let op: de CSS-klassen volgen de [Benaming BEM-overeenkomst](https://getbem.com/naming/). Hoewel het gebruik van BEM-conventies niet verplicht is, wordt BEM aanbevolen omdat het wordt gebruikt in CSS-klassen voor kerncomponenten en doorgaans resulteert in schone, leesbare CSS-regels.
+   Merk op de CSS klassen de [ BEM noemende overeenkomst ](https://getbem.com/naming/) volgen. Hoewel het gebruik van BEM-conventies niet verplicht is, wordt BEM aanbevolen omdat het wordt gebruikt in CSS-klassen voor kerncomponenten en doorgaans resulteert in schone, leesbare CSS-regels.
 
 ### Instantiëren van objecten van het Sling Model in HTML {#instantiating-sling-model-objects-in-htl}
 
-De [Instructie blok gebruiken](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#221-use) wordt gebruikt om Sling Model-objecten te instantiëren in het HTML-script en deze toe te wijzen aan een HTML-variabele.
+De [ het blokverklaring van het Gebruik ](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#221-use) wordt gebruikt om het schrapen modelvoorwerpen in het manuscript te concretiseren HTML en het toe te wijzen aan een variabele van HTML.
 
-De `data-sly-use.byline="com.adobe.aem.guides.wknd.models.Byline"` gebruikt de interface Byline (com.adobe.aem.guides.wknd.models.Byline) die door BylineImpl wordt uitgevoerd en past het huidige SlingHttpServletRequest aan het aan, en het resultaat wordt opgeslagen in een HTML veranderlijke naam byline ( `data-sly-use.<variable-name>`).
+`data-sly-use.byline="com.adobe.aem.guides.wknd.models.Byline"` gebruikt de interface Byline (com.adobe.aem.guides.wknd.models.Byline) die door BylineImpl wordt uitgevoerd en past het huidige SlingHttpServletRequest aan het aan, en het resultaat wordt opgeslagen in een HTML veranderlijke naam byline ( `data-sly-use.<variable-name>`).
 
-1. De buitenste versie bijwerken `div` de **Naamregel** Verkoopmodel via openbare interface:
+1. Werk buiten `div` bij om naar het **Byline** het Verdelen Model door zijn openbare interface te verwijzen:
 
    ```xml
    <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
@@ -897,13 +897,13 @@ De `data-sly-use.byline="com.adobe.aem.guides.wknd.models.Byline"` gebruikt de i
 
 HTML leent vanuit JSTL en gebruikt dezelfde verkorting van namen van Java™ getter-methoden.
 
-Bijvoorbeeld, het aanhalen van het Model van het Sling van de Byline `getName()` kan worden ingekort tot `byline.name`, op dezelfde manier in plaats van `byline.isEmpty`kan worden ingekort tot `byline.empty`. Met volledige methodenamen, `byline.getName` of `byline.isEmpty`, werkt ook. Noteer de `()` worden nooit gebruikt om methoden in HTML aan te roepen (vergelijkbaar met JSTL).
+Het aanroepen van de methode `getName()` van het Byline Sling Model kan bijvoorbeeld worden ingekort tot `byline.name` , op dezelfde manier in plaats van `byline.isEmpty` , maar dit kan worden ingekort tot `byline.empty` . Het gebruik van volledige methodenamen, `byline.getName` of `byline.isEmpty` , werkt ook. Let op: `()` worden nooit gebruikt om methoden in HTML aan te roepen (vergelijkbaar met JSTL).
 
-Java™-methoden die een parameter vereisen **kan** worden gebruikt in HTML. Dit is door ontwerp om de logica in HTML eenvoudig te houden.
+Java™ de methodes die een parameter **vereisen kunnen niet** in HTML worden gebruikt. Dit is door ontwerp om de logica in HTML eenvoudig te houden.
 
-1. De naam van de Naamregel kan aan de component worden toegevoegd door de component aan te roepen `getName()` methode op het Byline Sling Model, of in HTML: `${byline.name}`.
+1. De naam van de Naamregel kan aan de component worden toegevoegd door de methode `getName()` op te roepen in het Byline Sling-model of in HTML: `${byline.name}` .
 
-   Werk de `h2` tag:
+   Werk de tag `h2` bij:
 
    ```xml
    <h2 class="cmp-byline__name">${byline.name}</h2>
@@ -911,9 +911,9 @@ Java™-methoden die een parameter vereisen **kan** worden gebruikt in HTML. Dit
 
 ### HTML-expressieopties gebruiken {#using-htl-expression-options}
 
-[Opties voor HTL-expressies](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#12-available-expression-options) fungeren als modifiers voor inhoud in HTML en variëren van datumnotatie tot i18n-vertaling. Expressies kunnen ook worden gebruikt om lijsten of arrays met waarden met elkaar te verbinden. Dit zijn de expressies die nodig zijn om de beroepen in een door komma&#39;s gescheiden indeling weer te geven.
+[ de Opties van Uitdrukkingen HTML ](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#12-available-expression-options) handelen als bepalingen op inhoud in HTML, en waaier van datum-het formatteren aan i18n vertaling. Expressies kunnen ook worden gebruikt om lijsten of arrays met waarden met elkaar te verbinden. Dit zijn de expressies die nodig zijn om de beroepen in een door komma&#39;s gescheiden indeling weer te geven.
 
-Expressies worden toegevoegd via de `@` in de HTML-expressie.
+Expressies worden toegevoegd via de operator `@` in de HTML-expressie.
 
 1. Als u de lijst met beroepen wilt samenvoegen met &quot;, &quot;, wordt de volgende code gebruikt:
 
@@ -923,11 +923,11 @@ Expressies worden toegevoegd via de `@` in de HTML-expressie.
 
 ### De tijdelijke aanduiding voorwaardelijk weergeven {#conditionally-displaying-the-placeholder}
 
-De meeste HTML-scripts voor AEM Components gebruiken de **plaatsaanduidingsparadigma** auteurs een visuele aanwijzing geven **erop wijzen dat een component verkeerd is ontworpen en niet op AEM Publish wordt getoond**. De conventie die dit besluit moet aansturen, is een methode op het ondersteunende Sling Model van de component uit te voeren, in dit geval: `Byline.isEmpty()`.
+De meeste manuscripten HTML voor AEM Componenten gebruiken het **placeholder paradigm** om visuele richtsnoer aan auteurs **te verstrekken die op een component wijzen verkeerd wordt geschreven en het wordt niet getoond op AEM Publish**. De conventie die deze beslissing aanstuurt, is het implementeren van een methode op het back-upmodel van de component, in dit geval: `Byline.isEmpty()` .
 
-De `isEmpty()` De methode wordt aangeroepen op het Byline Sling-model en het resultaat (of liever gezegd negatief, via de `!` operator) wordt opgeslagen in een HTML-variabele met de naam `hasContent`:
+De methode `isEmpty()` wordt aangeroepen op het Byline Sling-model en het resultaat (of liever gezegd negatief, via de operator `!` ) wordt opgeslagen naar een HTML-variabele met de naam `hasContent` :
 
-1. De buitenste versie bijwerken `div` om een genoemde variabele van HTML te bewaren `hasContent`:
+1. Werk de buitenste `div` bij om een HTML-variabele met de naam `hasContent` op te slaan:
 
    ```html
     <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
@@ -938,11 +938,11 @@ De `isEmpty()` De methode wordt aangeroepen op het Byline Sling-model en het res
    </div>
    ```
 
-   Het gebruik van `data-sly-test`, de HTL `test` blok is sleutel, plaatst het allebei een variabele van HTML en geeft/geeft niet het HTML element terug het is. Het is gebaseerd op het resultaat van de evaluatie van de HTL-expressie. Indien &quot;true&quot;, wordt het HTML-element weergegeven, anders wordt het niet gerenderd.
+   Let op het gebruik van `data-sly-test`, het HTL `test` -blok is key, het stelt beide een HTML-variabele in en rendert/rendert het HTML-element niet. Het is gebaseerd op het resultaat van de evaluatie van de HTL-expressie. Indien &quot;true&quot;, wordt het HTML-element weergegeven, anders wordt het niet gerenderd.
 
-   Deze HTL-variabele `hasContent` kan nu opnieuw worden gebruikt om de tijdelijke aanduiding voorwaardelijk weer te geven of te verbergen.
+   Deze HTML-variabele `hasContent` kan nu opnieuw worden gebruikt om de tijdelijke aanduiding voorwaardelijk weer te geven of te verbergen.
 
-1. Werk de voorwaardelijke vraag aan bij `placeholderTemplate` onder aan het bestand met de volgende gegevens:
+1. Werk de voorwaardelijke aanroep naar de `placeholderTemplate` onder aan het bestand bij met het volgende:
 
    ```html
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
@@ -950,20 +950,20 @@ De `isEmpty()` De methode wordt aangeroepen op het Byline Sling-model en het res
 
 ### De afbeelding weergeven met behulp van kerncomponenten {#using-the-core-components-image}
 
-Het HTML-script voor `byline.html` is nu bijna voltooid en de afbeelding ontbreekt.
+Het HTML-script voor `byline.html` is nu bijna voltooid en er ontbreekt alleen de afbeelding.
 
-Als de `sling:resourceSuperType` wijst naar de component Image van de Component van de Kern aan auteur het beeld, kan de component van het Beeld van de Component van de Kern worden gebruikt om het beeld terug te geven.
+Aangezien `sling:resourceSuperType` aan de component van het Beeld van de Component van de Kern wijst om het beeld te ontwerpen, kan de component van het Beeld van de Component van de Kern worden gebruikt om het beeld terug te geven.
 
-Voor dit, laten wij het huidige bylinemiddel omvatten, maar dwingen het middeltype van de component van het Beeld van de Component van de Kern, gebruikend middeltype `core/wcm/components/image/v2/image`. Dit is een krachtig patroon voor hergebruik van componenten. Voor dit, HTML `data-sly-resource` wordt gebruikt.
+Voor dit, laten wij het huidige bylinemiddel omvatten, maar dwingen het middeltype van de component van het Beeld van de Component van de Kern, gebruikend middeltype `core/wcm/components/image/v2/image`. Dit is een krachtig patroon voor hergebruik van componenten. Hiervoor wordt het blok `data-sly-resource` van HTML gebruikt.
 
-1. Vervang de `div` met een klasse van `cmp-byline__image` met het volgende:
+1. Vervang `div` door een klasse van `cmp-byline__image` door het volgende:
 
    ```html
    <div class="cmp-byline__image"
        data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v2/image' }"></div>
    ```
 
-   Dit `data-sly-resource`, inclusief de huidige bron via het relatieve pad `'.'`en forceert de opname van de huidige bron (of de bron van de bylineinhoud) met het resourcetype van `core/wcm/components/image/v2/image`.
+   Deze `data-sly-resource` bevat de huidige bron via het relatieve pad `'.'` en dwingt u de huidige bron (of de bron van de bylineinhoud) op te nemen met het resourcetype `core/wcm/components/image/v2/image` .
 
    Het middeltype van de Component van de Kern wordt gebruikt direct, en niet via een volmacht, omdat dit een in-manuscriptgebruik is, en het nooit aan de inhoud voortgeduurd.
 
@@ -984,7 +984,7 @@ Voor dit, laten wij het huidige bylinemiddel omvatten, maar dwingen het middelty
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
    ```
 
-3. Implementeer de basis van de code naar een lokale AEM-instantie. Aangezien er wijzigingen zijn aangebracht in `core` en `ui.apps` beide modules moeten worden ingezet .
+3. Implementeer de basis van de code naar een lokale AEM-instantie. Aangezien er wijzigingen zijn aangebracht in `core` en `ui.apps` , moeten beide modules worden geïmplementeerd.
 
    ```shell
    $ cd aem-guides-wknd/ui.apps
@@ -996,7 +996,7 @@ Voor dit, laten wij het huidige bylinemiddel omvatten, maar dwingen het middelty
    $ mvn clean install -PautoInstallBundle
    ```
 
-   Als u wilt implementeren naar AEM 6.5/6.4, roept u de `classic` profiel:
+   Als u wilt implementeren naar AEM 6.5/6.4, roept u het `classic` -profiel aan:
 
    ```shell
    $ cd ../core
@@ -1005,40 +1005,40 @@ Voor dit, laten wij het huidige bylinemiddel omvatten, maar dwingen het middelty
 
    >[!CAUTION]
    >
-   > U kon het volledige project van de wortel ook bouwen gebruikend het Geweven profiel `autoInstallSinglePackage` maar hierdoor kunnen de wijzigingen in de inhoud op de pagina worden overschreven. Dit komt omdat de `ui.content/src/main/content/META-INF/vault/filter.xml` is gewijzigd voor de begincode van de zelfstudie om de bestaande AEM-inhoud volledig te overschrijven. In een echt scenario is dit geen kwestie.
+   > U kunt ook het volledige project vanaf de hoofdmap maken met het profiel Geweven `autoInstallSinglePackage` , maar hierdoor kunnen de wijzigingen in de inhoud op de pagina worden overschreven. De reden hiervoor is dat de `ui.content/src/main/content/META-INF/vault/filter.xml` is gewijzigd voor de begincode van de zelfstudie om de bestaande AEM-inhoud op een zuivere manier te overschrijven. In een echt scenario is dit geen kwestie.
 
 ### De naamloze component Byline bekijken {#reviewing-the-unstyled-byline-component}
 
-1. Na het opstellen van de update, navigeer aan [Ultieme gids voor LA Skateparks](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) of waar u de component Byline eerder in het hoofdstuk hebt toegevoegd.
+1. Na het opstellen van de update, navigeer aan de [ Uiteindelijke Gids aan LA Skateparks ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) pagina, of waar u de component van de Byline vroeger in het hoofdstuk toevoegde.
 
-1. De **image**, **name**, en **beroepen** wordt nu weergegeven en er wordt een naamloze, maar werkende Byline-component weergegeven.
+1. Het **beeld**, **naam**, en **bezettingen** verschijnen nu en unstyled, maar het werken de component van de Byline is aanwezig.
 
-   ![bylinecomponent zonder stijl](assets/custom-component/unstyled.png)
+   ![ niet-gestileerde bylinecomponent ](assets/custom-component/unstyled.png)
 
 ### De registratie van het verkoopmodel bekijken {#reviewing-the-sling-model-registration}
 
-De [AEM de statusweergave van Sling Models van de webconsole](http://localhost:4502/system/console/status-slingmodels) geeft alle geregistreerde verkoopmodellen in AEM weer. Het Byline Sling-model kan worden gevalideerd als geïnstalleerd en herkend door deze lijst te herzien.
+De [ AEM het Verdelen van Modellen van de Console van het Web mening ](http://localhost:4502/system/console/status-slingmodels) toont alle geregistreerde het Verdelen Modellen in AEM. Het Byline Sling-model kan worden gevalideerd als geïnstalleerd en herkend door deze lijst te herzien.
 
-Als de **BylineImpl** wordt niet weergegeven in deze lijst, is het waarschijnlijk een probleem met de annotaties van het verkoopmodel of het model is niet toegevoegd aan het juiste pakket (`com.adobe.aem.guides.wknd.core.models`) in het kernproject.
+Als **BylineImpl** niet in deze lijst wordt getoond, is het waarschijnlijk een kwestie met de het Schipen van Model annotaties of het Model werd niet toegevoegd aan het correcte pakket (`com.adobe.aem.guides.wknd.core.models`) in het kernproject.
 
-![Byline Sling Model geregistreerd](assets/custom-component/osgi-sling-models.png)
+![ het Sling Model van de Byline geregistreerd ](assets/custom-component/osgi-sling-models.png)
 
 *<http://localhost:4502/system/console/status-slingmodels>*
 
 ## Byline-stijlen {#byline-styles}
 
-Als u de component Byline wilt uitlijnen met het meegeleverde creatieve ontwerp, moet u deze stijl gebruiken. Dit wordt bereikt door het SCSS-bestand te gebruiken en het bestand in het dialoogvenster **ui.frontend** -module.
+Als u de component Byline wilt uitlijnen met het meegeleverde creatieve ontwerp, moet u deze stijl gebruiken. Dit wordt bereikt door het dossier te gebruiken SCSS en het dossier in **ui.frontend** module bij te werken.
 
 ### Een standaardstijl toevoegen
 
 Standaardstijlen toevoegen voor de component Byline.
 
-1. Terugkeren naar de IDE en de **ui.frontend** project `/src/main/webpack/components`:
-1. Een bestand met de naam `_byline.scss`.
+1. Terugkeer naar winde en het {**project 0} ui.frontend onder `/src/main/webpack/components`:**
+1. Maak een bestand met de naam `_byline.scss` .
 
-   ![verkenner van byline-project](assets/custom-component/byline-style-project-explorer.png)
+   ![ de ontdekkingsreiziger van het bylineproject ](assets/custom-component/byline-style-project-explorer.png)
 
-1. Voeg de Byline implementaties CSS (geschreven als SCSS) in toe `_byline.scss`:
+1. Voeg de Byline implementaties CSS (geschreven als SCSS) in `_byline.scss` toe:
 
    ```scss
    .cmp-byline {
@@ -1074,17 +1074,17 @@ Standaardstijlen toevoegen voor de component Byline.
    }
    ```
 
-1. Open een terminal en navigeer in de `ui.frontend` -module.
-1. Start de `watch` proces met het volgende npm bevel:
+1. Open een terminal en navigeer naar de module `ui.frontend` .
+1. Start het `watch` -proces met de volgende npm-opdracht:
 
    ```shell
    $ cd ui.frontend/
    $ npm run watch
    ```
 
-1. Ga terug naar de browser en ga naar de [LA SkateParks, artikel](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). De bijgewerkte stijlen worden weergegeven in de component.
+1. Terugkeer aan browser en navigeer aan het [ artikel LA SkateParks ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). De bijgewerkte stijlen worden weergegeven in de component.
 
-   ![voltooide byline-component](assets/custom-component/final-byline-component.png)
+   ![ gebeëindigde byline component ](assets/custom-component/final-byline-component.png)
 
    >[!TIP]
    >
@@ -1100,7 +1100,7 @@ Ga verder met de ontwikkeling van AEM Component door te verkennen hoe u JUnit-te
 
 * [Eenheidstests of AEM-onderdelen schrijven](unit-testing.md)
 
-De voltooide code weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van de it op `tutorial/custom-component-solution`.
+Bekijk de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van het Git `tutorial/custom-component-solution` op.
 
-1. Klonen met [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd) opslagplaats.
-1. Kijk uit de `tutorial/custom-component-solution` vertakking
+1. Kloon de [ github.com/adobe/aem-guides-wknd ](https://github.com/adobe/aem-guides-wknd) bewaarplaats.
+1. De vertakking `tutorial/custom-component-solution` uitchecken

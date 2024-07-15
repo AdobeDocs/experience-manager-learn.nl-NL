@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Instellen [!DNL Sling Dynamic Include]
 
-Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Include] with [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) wordt uitgevoerd op [!DNL Apache HTTP Web Server].
+Een videolooppas-door van het installeren van en het gebruiken van [!DNL Apache Sling Dynamic Include] met [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) lopend op [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
 
@@ -27,10 +27,10 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
 >
 > Zorg ervoor dat de nieuwste versie van AEM Dispatcher lokaal is geïnstalleerd.
 
-1. Download en installeer de [[!DNL Sling Dynamic Include] bundelen](https://sling.apache.org/downloads.cgi).
-1. Configureren [!DNL Sling Dynamic Include] via de [!DNL OSGi Configuration Factory] om **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
+1. Download en installeer de [[!DNL Sling Dynamic Include]  bundel ](https://sling.apache.org/downloads.cgi).
+1. Vorm [!DNL Sling Dynamic Include] via [!DNL OSGi Configuration Factory] in **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
 
-   Of, om aan AEM code-basis toe te voegen, creeer aangewezen **sling:OsgiConfig** knooppunt bij:
+   Of, om aan een AEM code-basis toe te voegen, creeer de aangewezen **gooi:OsgiConfig** knoop bij:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -54,7 +54,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
    -->
    ```
 
-1. (Optioneel) Herhaal de laatste stap om componenten toe te staan op [vergrendelde (initiële) inhoud van bewerkbare sjablonen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) via [!DNL SDI] ook. De reden voor de extra configuratie is dat vergrendelde inhoud van bewerkbare sjablonen wordt aangeboden vanuit `/conf` in plaats van `/content`.
+1. (Facultatief) herhaal de laatste stap om voor componenten op [ gesloten (aanvankelijke) inhoud van editable malplaatjes ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) toe te staan om via [!DNL SDI] eveneens te worden gediend. De reden voor de extra configuratie is dat vergrendelde inhoud van bewerkbare sjablonen wordt aangeboden vanuit `/conf` in plaats van `/content` .
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -78,7 +78,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
    -->
    ```
 
-1. Bijwerken [!DNL Apache HTTPD Web server]s `httpd.conf` bestand om het [!DNL Include] -module.
+1. Werk het `httpd.conf` -bestand van [!DNL Apache HTTPD Web server] bij om de [!DNL Include] -module in te schakelen.
 
    ```shell
    $ sudo vi .../httpd.conf
@@ -88,7 +88,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
    LoadModule include_module libexec/apache2/mod_include.so
    ```
 
-1. Werk de [!DNL vhost] dossier om richtlijnen te respecteren.
+1. Werk het [!DNL vhost] -bestand bij om instructies te respecteren.
 
    ```shell
    $ sudo vi .../vhosts/aem-publish.local.conf
@@ -113,7 +113,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
    </VirtualHost>
    ```
 
-1. Update het dispatcher.any-configuratiebestand ter ondersteuning (1) `nocache` selecteurs en (2) laat de steun van TTL toe.
+1. Werk het dispatcher.any-configuratiebestand bij ter ondersteuning van (1) `nocache` kiezers en (2) schakel TTL-ondersteuning in.
 
    ```shell
    $ sudo vi .../conf/dispatcher.any
@@ -131,7 +131,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
 
    >[!TIP]
    >
-   > De slede verlaten `*` op de gloed `*.nocache.html*` lijn boven, kan resulteren in [kwesties in verzoeken om submiddelen](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
+   > Als u de `*` volgende regel in de algemene regel `*.nocache.html*` hierboven weglaat, kan dit resulteren in [ problemen in verzoeken om subresources ](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16) .
 
    ```shell
    /cache {
@@ -140,7 +140,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
    }
    ```
 
-1. Altijd opnieuw opstarten [!DNL Apache HTTP Web Server] na het aanbrengen van wijzigingen in de configuratiebestanden of de `dispatcher.any`.
+1. Start [!DNL Apache HTTP Web Server] altijd opnieuw nadat u wijzigingen hebt aangebracht in de configuratiebestanden of in `dispatcher.any` .
 
    ```shell
    $ sudo apachectl restart
@@ -148,7 +148,7 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
 
 >[!NOTE]
 >
->Als u [!DNL Sling Dynamic Includes] voor het dienen van edge-side include (ESI), dan zorg ervoor om relevant in het voorgeheugen op te slaan [antwoordheaders in de verzendercache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Mogelijke kopteksten zijn onder andere:
+>Als u [!DNL Sling Dynamic Includes] voor het dienen van rand-zij omvat (ESI) gebruikt, dan zorg ervoor om relevante [ reactiekopballen in het berichtchermgeheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders) in het voorgeheugen onder te brengen. Mogelijke kopteksten zijn onder andere:
 >
 >* &quot;Cache-control&quot;
 >* &quot;Content-Disposition&quot;
@@ -162,5 +162,5 @@ Een videodemo van het installeren en gebruiken [!DNL Apache Sling Dynamic Includ
 
 ## Ondersteunende materialen
 
-* [Dynamic Include-bundel downloaden](https://sling.apache.org/downloads.cgi)
-* [Apache Sling Dynamic Include-documentatie](https://github.com/Cognifide/Sling-Dynamic-Include)
+* [ Download Sling Dynamische Include bundel ](https://sling.apache.org/downloads.cgi)
+* [ Apache Sling Dynamic Include documentatie ](https://github.com/Cognifide/Sling-Dynamic-Include)

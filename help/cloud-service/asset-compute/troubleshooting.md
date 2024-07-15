@@ -26,141 +26,141 @@ Hieronder ziet u een index met veelvoorkomende problemen en fouten, samen met de
 
 ### Vertoning wordt gedeeltelijk getekend/beschadigd geretourneerd{#rendition-returned-partially-drawn-or-corrupt}
 
-+ __Fout__: Vertoning wordt onvolledig gerenderd (als een afbeelding beschadigd is) of kan niet worden geopend.
++ __Fout__: Vertoning geeft volledig (wanneer een beeld) terug of is corrupt en kan niet worden geopend.
 
-  ![Vertoning wordt gedeeltelijk getekend geretourneerd](./assets/troubleshooting/develop__await.png)
+  ![ de Vertoning is gedeeltelijk teruggegeven getekend ](./assets/troubleshooting/develop__await.png)
 
-+ __Oorzaak__: De `renditionCallback` functie wordt afgesloten voordat de vertoning volledig kan worden geschreven naar `rendition.path`.
-+ __Resolutie__: Controleer de code van de douanearbeider en zorg ervoor alle asynchrone vraag synchroon wordt gemaakt gebruikend `await`.
++ __Oorzaak__: De functie van de worker `renditionCallback` bestaat alvorens de vertoning volledig aan `rendition.path` kan worden geschreven.
++ __Resolutie__: Herzie de code van de douanearbeider en zorg ervoor alle asynchrone vraag synchroon wordt gemaakt gebruikend `await`.
 
 ## Ontwikkelingsinstrument{#development-tool}
 
 ### Het bestand Console.json ontbreekt in het project Asset compute{#missing-console-json}
 
-+ __Fout:__ Fout: ontbrekende vereiste bestanden bij validatie (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) bij async setupAssetCompute (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
-+ __Oorzaak:__ De `console.json` bestand ontbreekt in de hoofdmap van het Asset compute-project
-+ __Resolutie:__ Een nieuwe download `console.json` vorm uw Adobe I/O-project
++ __Fout:__ Fout: Ontbrekende vereiste dossiers bij bevestigt (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) bij async setupAssetCompute (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
++ __Oorzaak:__ het `console.json` dossier mist van de wortel van het project van de Asset compute
++ __Resolutie:__ Download een nieuw `console.json` van uw Adobe I/O project
    1. In console.adobe.io, open het project van Adobe I/O het project van de Asset compute wordt gevormd om te gebruiken
-   1. Tik op de knop __Downloaden__ knop rechtsboven
+   1. Tik de __knoop van de Download__ in het hoogste recht
    1. Sla het gedownloade bestand met de bestandsnaam op in de hoofdmap van het Asset compute-project `console.json`
 
 ### Onjuiste YAML-inspringing in manifest.yml{#incorrect-yaml-indentation}
 
-+ __Fout:__ YAMLException: bad indentation of a mapping entry at line X, column Y: (via standard out from `aio app run` (opdracht)
-+ __Oorzaak:__ Bij bestanden met witruimte is de inspringing waarschijnlijk onjuist.
-+ __Resolutie:__ Controleer uw `manifest.yml` en zorgt u ervoor dat alle inspringingen correct zijn.
++ __Fout:__ YAMLException: slechte inkeping van een afbeeldingsingang bij lijn X, kolom Y: (via standaard uit `aio app run` bevel)
++ __Oorzaak:__ Yaml de dossiers zijn gevoelig wit-uit elkaar geplaatst, het waarschijnlijk dat uw inkeping onjuist is.
++ __Resolutie:__ herzie uw `manifest.yml` en zorg ervoor al inspringing correct is.
 
 ### memorySize limit is set to low{#memorysize-limit-is-set-too-low}
 
-+ __Fout:__  Lokale Dev Server OpenWhiskError: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Geretourneerde HTTP 400 (Ongeldig verzoek) —> &quot;De aanvraaginhoud is onjuist geformuleerd:vereiste is mislukt: geheugen 64 MB onder de toegestane drempel van 134217728 B&quot;
-+ __Oorzaak:__ A `memorySize` limiet voor de werknemer in de `manifest.yml` is ingesteld onder de minimaal toegestane drempel die wordt gerapporteerd door het foutbericht in bytes.
-+ __Resolutie:__  Controleer de `memorySize` grenswaarden in de `manifest.yml` en ervoor te zorgen dat ze allemaal groter zijn dan de minimaal toegestane drempel.
++ __Fout:__ Lokale Dev Server OpenWhiskError: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Keerde HTTP 400 terug (Slecht Verzoek) —> &quot;De verzoekinhoud werd misvormd:vereiste ontbrak: geheugen 64 MB onder toegestane drempel van 134217728 B&quot;
++ __Oorzaak:__ A `memorySize` grens voor de worker in `manifest.yml` werd geplaatst onder de minimum toegestane drempel zoals die door het foutenbericht in bytes wordt gemeld.
++ __Resolutie:__ herzie de `memorySize` grenzen in `manifest.yml` en zorg ervoor zij allen groot zijn dan de minimaal toegestane drempel.
 
 ### Development Tool kan niet worden gestart omdat private.key ontbreekt{#missing-private-key}
 
-+ __Fout:__ Local Dev ServerError: Missing required files at validatePrivateKeyFile... (via standaard uit van `aio app run` (opdracht)
-+ __Oorzaak:__ De `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` waarde in `.env` bestand, verwijst niet naar `private.key` of `private.key` kan niet worden gelezen door de huidige gebruiker.
-+ __Resolutie:__ Controleer de `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` waarde in `.env` en zorg ervoor dat het het volledige, absolute pad naar het `private.key` op uw bestandssysteem.
++ __Fout:__ Lokale Dev ServerError: Ontbrekende vereiste dossiers bij validatePrivateKeyFile... (via standaard uit `aio app run` opdracht)
++ __Oorzaak:__ de `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` waarde in `.env` dossier, richt niet aan `private.key` of `private.key` is niet leesbaar door de huidige gebruiker.
++ __Resolutie:__ herzie de `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` waarde in `.env` dossier, en zorg ervoor het de volledige, absolute weg aan `private.key` op uw dossiersysteem bevat.
 
-### Vervolgkeuzelijst voor bronbestanden is onjuist{#source-files-dropdown-incorrect}
+### Vervolgkeuzelijst Source-bestanden is onjuist{#source-files-dropdown-incorrect}
 
-Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waar het stapelgegevens trekt, en het merkbaarst in het __Bronbestand__ vervolgkeuzelijst met onjuiste items.
+Het Hulpmiddel van de Ontwikkeling van de asset compute kan een staat ingaan waar het stapelgegevens trekt, en is het meest merkbaar in het __dossier van Source__ dropdown tonend onjuiste punten.
 
-+ __Fout:__ In het vervolgkeuzemenu Bronbestand worden onjuiste items weergegeven.
-+ __Oorzaak:__ De browserstatus van Stale in cache veroorzaakt de
-+ __Resolutie:__ In uw browser ontruimen volledig de browser staat van het lusje van de browser, het browser geheime voorgeheugen, lokale opslag en de dienstarbeider.
++ __Fout:__ het dossierdropdown van Source toont onjuiste punten.
++ __Oorzaak:__ de de browser van de Stale in het voorgeheugen ondergebrachte staat veroorzaakt
++ __Resolutie:__ in uw browser ontruimen volledig de browser &quot;toepassingsstaat van het lusje&quot;, het browser geheime voorgeheugen, lokale opslag en de dienstarbeider.
 
 ### Ontbrekende of ongeldige devToolToken-queryparameter{#missing-or-invalid-devtooltoken-query-parameter}
 
-+ __Fout:__ Melding &quot;Niet-geautoriseerd&quot; in Asset compute Development Tool
-+ __Oorzaak:__ `devToolToken` ontbreekt of is ongeldig
-+ __Resolutie:__ Sluit het browser venster van het Hulpmiddel van de Ontwikkeling van de Asset compute, beëindigt om het even welke lopende processen van het Hulpmiddel van de Ontwikkeling die via worden in werking gesteld `aio app run` en begin het Hulpmiddel van de Ontwikkeling opnieuw (gebruikend `aio app run`).
++ __Fout:__ &quot;Onbevoegd&quot;bericht in het Hulpmiddel van de Ontwikkeling van de Asset compute
++ __Oorzaak:__ `devToolToken` mist of ongeldig
++ __Resolutie:__ sluit het browser venster van het Hulpmiddel van de Ontwikkeling van de Asset compute, beëindigt om het even welke lopende processen van het Hulpmiddel van de Ontwikkeling die via het `aio app run` bevel worden in werking gesteld, en herstart het Hulpmiddel van de Ontwikkeling (gebruikend `aio app run`).
 
 ### Kan bronbestanden niet verwijderen{#unable-to-remove-source-files}
 
 + __Fout:__ Er is geen manier om toegevoegde brondossiers uit de UI van Hulpmiddelen van de Ontwikkeling te verwijderen
-+ __Oorzaak:__ Deze functionaliteit is niet geïmplementeerd
-+ __Resolutie:__ Meld u aan bij uw leverancier voor cloudopslag met de referenties die zijn gedefinieerd in `.env`. Zoek de container die wordt gebruikt door de Development Tools (ook opgegeven in `.env`), navigeert u naar de __bron__ en verwijder bronafbeeldingen. U moet mogelijk de stappen uitvoeren die worden beschreven in [Vervolgkeuzelijst voor bronbestanden is onjuist](#source-files-dropdown-incorrect) als de verwijderde bronbestanden in het vervolgkeuzemenu blijven weergeven omdat ze lokaal in de cache kunnen worden geplaatst in de &#39;toepassingsstatus&#39; van de ontwikkelingsprogramma&#39;s.
++ __Oorzaak:__ Deze functionaliteit is niet uitgevoerd
++ __Resolutie:__ Login uw leverancier van de wolkenopslag gebruikend de geloofsbrieven die in `.env` worden bepaald. Bepaal de plaats van de container die door de Hulpmiddelen van de Ontwikkeling (ook in `.env` wordt gespecificeerd) wordt gebruikt, navigeer in de __bron__ omslag, en schrap om het even welke bronbeelden die. U kunt de stappen moeten uitvoeren die in [ worden geschetst Source dossiers dropdown onjuist ](#source-files-dropdown-incorrect) als de geschrapte brondossiers in dropdown blijven tonen aangezien zij plaatselijk in de &quot;toepassingsstaat van de Ontwikkeling hulpmiddelen&quot;kunnen worden in het voorgeheugen ondergebracht.
 
-  ![Microsoft Azure Blob-opslag](./assets/troubleshooting/dev-tool__remove-source-files.png)
+  ![ Microsoft Azure Blob Storage ](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
 ## Testen{#test}
 
 ### Geen uitvoering gegenereerd tijdens de uitvoering van de test{#test-no-rendition-generated}
 
-+ __Fout:__ Fout: er is geen uitvoering gegenereerd.
-+ __Oorzaak:__ De worker kan geen uitvoering genereren vanwege een onverwachte fout, zoals een JavaScript-syntaxisfout.
-+ __Resolutie:__ De uitvoering van de test controleren `test.log` om `/build/test-results/test-worker/test.log`. Zoek de sectie in dit bestand die overeenkomt met de testcase voor mislukken en controleer of er fouten zijn opgetreden.
++ __Fout:__ Mislukking: Geen geproduceerde vertoning.
++ __Oorzaak:__ de worker slaagde erin om een vertoning te produceren wegens een onverwachte fout zoals een de syntaxisfout van JavaScript.
++ __Resolutie:__ herzie de 2} van de testuitvoering bij `/build/test-results/test-worker/test.log`. `test.log` Zoek de sectie in dit bestand die overeenkomt met de testcase voor mislukken en controleer of er fouten zijn opgetreden.
 
-  ![Problemen oplossen - Geen uitvoering gegenereerd](./assets/troubleshooting/test__no-rendition-generated.png)
+  ![ het Oplossen van problemen - Geen vertoning produceerde ](./assets/troubleshooting/test__no-rendition-generated.png)
 
 ### Test genereert onjuiste uitvoering, waardoor de test mislukt{#tests-generates-incorrect-rendition}
 
-+ __Fout:__ Fout: vertoning &#39;rendition.xxx&#39; is niet zoals verwacht.
-+ __Oorzaak:__ De worker voert een andere uitvoering uit dan de `rendition.<extension>` in het testgeval worden verstrekt.
-   + Als de verwachte `rendition.<extension>` bestand wordt niet op exact dezelfde manier gemaakt als de lokaal gegenereerde vertoning in het testgeval, de test kan mislukken omdat er een verschil in de bits kan zijn. Als de Asset compute worker bijvoorbeeld het contrast wijzigt met behulp van API&#39;s en het verwachte resultaat wordt gemaakt door het contrast in Adobe Photoshop CC aan te passen, kunnen de bestanden er hetzelfde uitzien, maar kleine variaties in de bits kunnen verschillend zijn.
-+ __Resolutie:__ De uitvoer van de vertoning van de vertoning controleren door naar te navigeren `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`en vergelijk het bestand met het verwachte vertoningsbestand in het testgeval. Om een exact verwacht actief te maken:
++ __Fout:__ Mislukking: Vertoning &quot;rendition.xxx&quot;niet zoals verwacht.
++ __Oorzaak:__ de arbeidersoutput een vertoning die niet het zelfde als `rendition.<extension>` in het testgeval verstrekte was.
+   + Als het verwachte `rendition.<extension>` -bestand niet op dezelfde manier wordt gemaakt als de lokaal gegenereerde uitvoering in het testgeval, kan de test mislukken omdat er een verschil in de bits kan zijn. Als de Asset compute worker bijvoorbeeld het contrast wijzigt met behulp van API&#39;s en het verwachte resultaat wordt gemaakt door het contrast in Adobe Photoshop CC aan te passen, kunnen de bestanden er hetzelfde uitzien, maar kleine variaties in de bits kunnen verschillend zijn.
++ __Resolutie:__ de uitvoeringen van de vertoning van de Overzicht van de test door aan `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>` te navigeren, en het te vergelijken met het verwachte vertoningsdossier in het testgeval. Om een exact verwacht actief te maken:
    + Gebruik het gereedschap Ontwikkeling om een vertoning te genereren, te valideren dat deze correct is en te gebruiken als het verwachte vertoningsbestand
-   + U kunt het bestand dat tijdens de test wordt gegenereerd ook valideren op `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, valideer het correct is en gebruik dat als het verwachte vertoningsbestand
+   + U kunt ook het bestand dat tijdens de test is gegenereerd op `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>` valideren, controleren of het bestand juist is en gebruiken als het verwachte renderingsbestand
 
 ## Foutopsporing
 
 ### Foutopsporing wordt niet gekoppeld{#debugger-does-not-attach}
 
-+ __Fout__: Fout bij het verwerken van de toepassing: Fout: kan geen verbinding maken met het foutopsporingsdoel op..
-+ __Oorzaak__: Docker Desktop wordt niet uitgevoerd op het lokale systeem. Verifieer dit door de Console van de Foutopsporing van de Code van VS (Mening > Debug Console) te herzien, bevestigend deze fout wordt gemeld.
-+ __Resolutie__: Start [De Desktop van de Docker en bevestigen de vereiste beelden van de Docker geïnstalleerd](./set-up/development-environment.md#docker).
++ __Fout__: De verwerkingslancering van de fout: Fout: Kon niet verbinden met zuiveren doel bij..
++ __Oorzaak__: De Desktop van de Docker loopt niet op het lokale systeem. Verifieer dit door de Console van de Foutopsporing van de Code van VS (Mening > Debug Console) te herzien, bevestigend deze fout wordt gemeld.
++ __Resolutie__: De Desktop van het Begin [ van de Dokker en bevestigt de vereiste beelden van de Dokker worden geïnstalleerd ](./set-up/development-environment.md#docker).
 
 ### Onderbrekingspunten worden niet gepauzeerd{#breakpoints-no-pausing}
 
-+ __Fout__: Wanneer het runnen van de Asset compute worker van het foutopsporingsprogramma voor ontwikkeling, wordt de code van VS niet gepauzeerd bij onderbrekingspunten.
++ __Fout__: Wanneer het runnen van de worker van de Asset compute van het zuivert-able Hulpmiddel van de Ontwikkeling, pauzeert de Code van VS niet bij breekpunten.
 
 #### Foutopsporing VS-code niet gekoppeld{#vs-code-debugger-not-attached}
 
-+ __Oorzaak:__ Foutopsporing van de Code van VS werd tegengehouden/losgemaakt.
-+ __Resolutie:__ Start de VS-foutopsporing opnieuw en controleer of deze is aangesloten via de VS Code Debug Output Console (Weergave > Foutopsporingsconsole)
++ __Oorzaak:__ debugger van de Code van VS werd tegengehouden/losgemaakt.
++ __Resolutie:__ herstart foutopsporing van de Code van VS, en verifieert het door de console van de Output van de Output van de Code van VS te bekijken zuivert (Mening > zuivert Console)
 
 #### Foutopsporing voor VS-code gekoppeld nadat uitvoering van worker is gestart{#vs-code-debugger-attached-after-worker-execution-began}
 
-+ __Oorzaak:__ Foutopsporing van de Code VS heeft voorafgaand aan het tikken niet vastgemaakt __Uitvoeren__ in Development Tool.
-+ __Resolutie:__ Verzeker debugger door de Foutopsporingsconsole van de Code van VS te herzien (Mening > zuivert Console), en dan de Asset compute worker van het Hulpmiddel van de Ontwikkeling opnieuw in werking te stellen.
++ __Oorzaak:__ de debugger van de Code van VS maakte niet vast voorafgaand aan het tappen __Looppas__ in het Hulpmiddel van de Ontwikkeling.
++ __Resolutie:__ verzeker debugger door de Foutopsporingsconsole van de Code van VS te herzien (Mening > zuivert Console), en dan de Asset compute worker van het Hulpmiddel van de Ontwikkeling opnieuw in werking te stellen.
 
 ### Worker-time-out tijdens foutopsporing{#worker-times-out-while-debugging}
 
-+ __Fout__: Foutopsporingsconsole meldt &quot;Action will timeout in -XXX milliseconds&quot; of [Asset compute Development Tool](./develop/development-tool.md) renditievoorvertoning draait oneindig of
-+ __Oorzaak__: De time-out van de worker zoals gedefinieerd in het dialoogvenster [manifest.yml](./develop/manifest.md) wordt tijdens foutopsporing overschreden.
-+ __Resolutie__: Verhoog tijdelijk de time-out van de worker in het dialoogvenster [manifest.yml](./develop/manifest.md) of versnelt de foutopsporingsactiviteiten.
++ __Fout__: Zuiver de rapporten van de Console &quot;Actie zal onderbreking in -XXX milliseconden&quot;of ](./develop/development-tool.md) de vertoningsvoorproef van de vertoning van het Hulpmiddel van de Ontwikkeling van de Asset compute [ eindeloos of
++ __Oorzaak__: De arbeidersonderbreking zoals bepaald in [ manifest.yml ](./develop/manifest.md) wordt overschreden tijdens het zuiveren.
++ __Resolutie__: Verhoog tijdelijk de onderbreking van de worker in [ manifest.yml ](./develop/manifest.md) of versnelt het zuiveren activiteiten.
 
 ### Kan foutopsporingsproces niet beëindigen{#cannot-terminate-debugger-process}
 
 + __Fout__: `Ctrl-C` op de bevellijn beëindigt niet het debugger proces (`npx adobe-asset-compute devtool`).
-+ __Oorzaak__: Een fout in `@adobe/aio-cli-plugin-asset-compute` 1.3.x, resulteert in `Ctrl-C` wordt niet herkend als een afsluitende opdracht.
-+ __Resolutie__: Update `@adobe/aio-cli-plugin-asset-compute` naar versie 1.4.1+
++ __Oorzaak__: Een insect in `@adobe/aio-cli-plugin-asset-compute` 1.3.x, resulteert in `Ctrl-C` die niet als beëindigend bevel wordt erkend.
++ __Resolutie__: Update `@adobe/aio-cli-plugin-asset-compute` aan versie 1.4.1+
 
   ```
   $ aio update
   ```
 
-  ![Problemen oplossen - AIR-update](./assets/troubleshooting/debug__terminate.png)
+  ![ het Oplossen van problemen - de update van het a-gebouw ](./assets/troubleshooting/debug__terminate.png)
 
 ## Implementeren{#deploy}
 
 ### Aangepaste uitvoering ontbreekt in element in AEM{#custom-rendition-missing-from-asset}
 
-+ __Fout:__ Nieuwe en opnieuw verwerkte elementen worden verwerkt, maar de aangepaste uitvoering ontbreekt
++ __Fout:__ Nieuwe en opnieuw verwerkte activa verwerken met succes, maar missen de douanevertoning
 
 #### Profiel verwerken dat niet is toegepast op de bovenliggende map
 
-+ __Oorzaak:__ Het element bestaat niet in een map met het verwerkingsprofiel dat de aangepaste worker gebruikt
-+ __Resolutie:__ Pas het verwerkingsprofiel toe op een bovenliggende map van het element
++ __Oorzaak:__ het element bestaat niet onder een omslag met het Profiel van de Verwerking dat de douanearbeider gebruikt
++ __Resolutie:__ pas het Profiel van de Verwerking op een voorouderomslag van de activa toe
 
 #### Bezig met verwerken van profiel vervangen door lager verwerkingsprofiel
 
-+ __Oorzaak:__ Het middel bestaat onder een omslag met het toegepaste Profiel van de de arbeidersverwerking van de douane, nochtans een verschillend Profiel van de Verwerking dat niet de klantenarbeider gebruikt is toegepast tussen die omslag en het middel.
-+ __Resolutie:__ De twee verwerkingsprofielen combineren of op een andere manier afstemmen en het tussentijdse verwerkingsprofiel verwijderen
++ __Oorzaak:__ het middel bestaat onder een omslag met het toegepaste Profiel van de douanearbeidersverwerking, nochtans een verschillend Profiel van de Verwerking dat niet de klantenarbeider gebruikt is toegepast tussen die omslag en het middel.
++ __Resolutie:__ combineer, of op een andere manier, de twee Profielen van de Verwerking en verwijder het middenProfiel van de Verwerking
 
 ### Verwerking van middelen mislukt in AEM{#asset-processing-fails}
 
-+ __Fout:__ Asset Processing Failed badge displayed on asset
-+ __Oorzaak:__ Er is een fout opgetreden bij de uitvoering van de aangepaste worker
-+ __Resolutie:__ Volg de instructies op [foutopsporing in Adobe I/O Runtime](./test-debug/debug.md#aio-app-logs) gebruiken `aio app logs`.
++ __Fout:__ Ontbroken symbool van de Verwerking van Activa dat op activa wordt getoond
++ __Oorzaak:__ een fout kwam in de uitvoering van de douanearbeider voor
++ __Resolutie:__ volg de instructies op [ het zuiveren Adobe I/O Runtime actities ](./test-debug/debug.md#aio-app-logs) gebruikend `aio app logs`.

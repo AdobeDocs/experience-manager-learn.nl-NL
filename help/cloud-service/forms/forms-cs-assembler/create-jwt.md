@@ -20,7 +20,7 @@ ht-degree: 0%
 # Een JSON-webtoken (JWT) maken
 
 JSON Webtokens zijn een open, industriestandaard methode RFC 7519 voor veilig het vertegenwoordigen van eisen tussen twee partijen. JWT.io-bibliotheken zijn in dit voorbeeld gebruikt om de JWT te genereren.
-De de dienstgeloofsbrieven die u in de vorige stap hebt gedownload bevatten de privé sleutel in formaat PKCS#1. Om de privé sleutel uit dit koord te halen hebben wij gebruikt [BouncyCastle](https://www.bouncycastle.org/) bibliotheken. De cryptobibliotheken die deel uitmaken van Java, ondersteunen de indeling PKCS#1 niet.
+De de dienstgeloofsbrieven die u in de vorige stap hebt gedownload bevatten de privé sleutel in formaat PKCS#1.Om de privé sleutel uit dit koord te halen hebben wij ](https://www.bouncycastle.org/) bibliotheken 0} BouncyCastle gebruikt. [ De cryptobibliotheken die deel uitmaken van Java, ondersteunen de indeling PKCS#1 niet.
 
 De volgende code is gebruikt om JWT te genereren:
 

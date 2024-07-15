@@ -27,14 +27,15 @@ De volgende stappen zijn nodig om een contextbewuste cloudconfiguratie te maken
 
 ## Omgevingsvariabelen maken
 
-Standaardomgevingsvariabelen kunnen worden geconfigureerd en beheerd via Cloud Manager. Zij worden verstrekt aan het runtime milieu en kunnen in configuraties worden gebruikt OSGi. [Omgevingsvariabelen kunnen milieuspecifieke waarden of omgevingsgeheimen zijn, op basis van wat wordt gewijzigd.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+Standaardomgevingsvariabelen kunnen worden geconfigureerd en beheerd via Cloud Manager. Zij worden verstrekt aan het runtime milieu en kunnen in configuraties worden gebruikt OSGi. [ de variabelen van het Milieu kunnen of milieu-specifieke waarden of milieu geheimen zijn, die op worden gebaseerd wat wordt veranderd.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
 
 
 
 De volgende schermafbeelding toont de omgevingsvariabelen azure_key en azure_connection_string die zijn gedefinieerd
-![environment_variables](assets/environment-variables.png)
+![ environment_variables ](assets/environment-variables.png)
 
-Deze omgevingsvariabelen kunnen vervolgens worden opgegeven in de configuratiebestanden die in de juiste omgeving moeten worden gebruikt. Als u bijvoorbeeld wilt dat alle auteur-instanties deze omgevingsvariabelen gebruiken, definieert u het configuratiebestand in de map config.auther hieronder.
+Deze omgevingsvariabelen kunnen vervolgens worden opgegeven in de configuratiebestanden die in de juiste omgeving moeten worden gebruikt
+Als u bijvoorbeeld wilt dat alle auteur-instanties deze omgevingsvariabelen gebruiken, definieert u het configuratiebestand in de map config.maker zoals hieronder opgegeven
 
 ## Configuratiebestand maken
 
@@ -44,9 +45,9 @@ Open uw project in IntelliJ. Navigeer naar config.auteur en creeer een dossier g
 org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json
 ```
 
-![config.author](assets/config-author.png)
+![ config.signer ](assets/config-author.png)
 
-Kopieer de volgende tekst naar het bestand dat u in de vorige stap hebt gemaakt. De code in dit bestand overschrijft de waarde van de eigenschappen accountName en accountKey met de omgevingsvariabelen **azure_connection_string** en **azure_key**.
+Kopieer de volgende tekst naar het bestand dat u in de vorige stap hebt gemaakt. De code in dit dossier treedt de waarde van accountName en accountKey eigenschappen met de milieuvariabelen **azure_connection_string** en **azure_key** met voeten.
 
 ```json
 {
@@ -66,7 +67,7 @@ Kopieer de volgende tekst naar het bestand dat u in de vorige stap hebt gemaakt.
 >[!NOTE]
 > Controleer of de eigenschap die wordt overschreven een geldige eigenschap van de cloudconfiguratie is. Navigeer naar de wolkenconfiguratie om het bezit te vinden dat u zoals hieronder getoond wilt met voeten treden.
 
-![cloud-config-eigenschap](assets/cloud-config-properties.png)
+![ wolk-config-bezit ](assets/cloud-config-properties.png)
 
 Voor op REST gebaseerde cloudconfiguratie met basisauthentificatie zult u typisch omgevingsvariabelen voor serviceEndPoint, userName, en wachtwoordeigenschappen willen tot stand brengen.
 

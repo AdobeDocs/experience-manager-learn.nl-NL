@@ -22,7 +22,7 @@ Een veelvoorkomend geval is het weergeven van de geüploade afbeelding als een i
 
 ## Afbeelding voor plaatsaanduiding toevoegen
 
-De eerste stap bestaat uit het vooraf toevoegen van een plaatsaanduiding voor een div-element aan de bestandsbijlage. In de code onder de component voor bestandsbijlagen wordt de CSS-klassennaam van het uploaden van foto&#39;s weergegeven. De JavaScript-functie maakt deel uit van de clientbibliotheek die is gekoppeld aan de adaptieve formulieren. Deze functie wordt aangeroepen in de gebeurtenis initialize van de component voor bestandsbijlagen.
+De eerste stap bestaat uit het vooraf toevoegen van een plaatsaanduiding voor een div-element aan de bestandsbijlage. In de code onder de component voor bestandsbijlagen wordt de CSS-klassennaam van het uploaden van foto&#39;s weergegeven. De JavaScript-functie is onderdeel van de clientbibliotheek die is gekoppeld aan de adaptieve formulieren. Deze functie wordt aangeroepen in de gebeurtenis initialize van de component voor bestandsbijlagen.
 
 ```javascript
 /**
@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### Distribueren op uw server
 
-* Download en installeer de [clientbibliotheek](assets/inline-image-client-library.zip) op uw AEM-instantie met AEM pakketbeheer.
-* Download en installeer de [voorbeeldformulier](assets/inline-image-af.zip) op uw AEM met AEM pakketbeheer.
-* Wijs uw browser aan [Inline-afbeelding toevoegen](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Download en installeer de [ cliëntbibliotheek ](assets/inline-image-client-library.zip) op uw AEM instantie gebruikend AEM pakketmanager.
+* Download en installeer de [ steekproefvorm ](assets/inline-image-af.zip) op u uw AEM instantie gebruikend AEM pakketmanager.
+* Punt uw browser aan [ voegt het Beeld Inline ](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled) toe
 * Klik op de knop &quot;Foto koppelen&quot; om een afbeelding toe te voegen

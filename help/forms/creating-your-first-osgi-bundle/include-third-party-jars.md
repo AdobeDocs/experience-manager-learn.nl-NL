@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Het opnemen van bundels van derden in uw AEM project
 
-In dit artikel doorlopen we de stappen die nodig zijn om een OSGi-bundel van derden op te nemen in uw AEM-project. Voor dit artikel nemen we de [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) in ons AEM project.  ALS OSGi in een bepaalde bewaarplaats beschikbaar is omvat de gebiedsafhankelijkheid van de bundel in het POM.xml- dossier van het project.
+In dit artikel zullen wij door de stappen betrokken bij het omvatten van de bundel van 3de partij OSGi in uw AEM project lopen.Voor het doel van dit artikel gaan wij [ jsch-0.1.55.jar ](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) in ons AEM project omvatten.  ALS OSGi in een bepaalde bewaarplaats beschikbaar is omvat de gebiedsafhankelijkheid van de bundel in het POM.xml- dossier van het project.
 
 >[!NOTE]
 > Aangenomen wordt dat de derde-partijpot een OSGi-bundel is
@@ -34,7 +34,7 @@ In dit artikel doorlopen we de stappen die nodig zijn om een OSGi-bundel van der
 </dependency>
 ```
 
-Als uw bundel OSGi op uw dossiersysteem is, creeer een omslag genoemd **localjar** onder de basisfolder van uw project (C:\aemformsbundles\AEMFormsProcessStep\localjar) zal het gebiedsdeel ongeveer als dit kijken
+Als uw bundel OSGi op uw dossiersysteem is, creeer een omslag genoemd **localjar** onder de basisfolder van uw project (C:\aemformsbundles\AEMFormsProcessStep\localjar) het gebiedsdeel zal ongeveer als dit kijken
 
 ```java
 <dependency>
@@ -48,12 +48,13 @@ Als uw bundel OSGi op uw dossiersysteem is, creeer een omslag genoemd **localjar
 
 ## De mapstructuur maken
 
-We voegen deze bundel toe aan ons AEM project **AEMFormsProcessStep** die in het **c:\aemformsbundles** map
+Wij voegen deze bundel aan ons AEM project **AEMFormsProcessStep** toe die in **c verblijft:\aemformsbundles** omslag
 
-* Open de **filter.xml** in de map C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault van uw project Noteer het hoofdkenmerk van het filterelement.
+* Open **filter.xml** van de C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault omslag van uw project
+Noteer het basiskenmerk van het filterelement.
 
 * De volgende mapstructuur C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\jcr_root\apps\AEMFormsProcessStep-vendor-packages\application\install maken
-* De **apps/AEMFormsProcessStep-vendor-packages** is de waarde van het wortelattribuut in filter.xml
+* **apps/AEMFormsProcessStep-verkoper-pakketten** is de waarde van wortelattributen in filter.xml
 * Werk de gebiedsdeelsectie van POM.xml van het project bij
 * Opdrachtprompt openen. Navigeer in mijn geval naar de map van uw project (c:\aemformsbundles\AEMFormsProcessStep). Voer het volgende bevel uit
 
@@ -61,5 +62,5 @@ We voegen deze bundel toe aan ons AEM project **AEMFormsProcessStep** die in het
 mvn clean install -PautoInstallSinglePackage
 ```
 
-Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM geïnstalleerd. U kunt op de bundel controleren gebruikend [felix-webconsole](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van het dialoogvenster `crx` opslagplaats zoals hieronder weergegeven
-![derde](assets/custom-bundle1.png)
+Als alles goed gaat, wordt het pakket samen met de bundel van derden in uw AEM geïnstalleerd. U kunt voor de bundel controleren gebruikend [ felix Webconsole ](http://localhost:4502/system/console/bundles). De bundel van derden is beschikbaar in de map /apps van de `crx` -opslagplaats, zoals hieronder wordt weergegeven
+![ derde ](assets/custom-bundle1.png)

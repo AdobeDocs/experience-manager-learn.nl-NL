@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Rapport voor het downloaden van bedrijfsmiddelen inschakelen
 
-*Deze video doorloopt de stappen om het rapport van de activadownload toe te laten.*
+*Deze video loopt door de stappen om het rapport van de activadownload toe te laten.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335463?quality=12&learn=on)

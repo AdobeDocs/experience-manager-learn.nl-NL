@@ -24,16 +24,18 @@ Het binden van servlets door wegen heeft verscheidene nadelen wanneer vergeleken
 
 * De verbindende servers van de weg kunnen niet worden gecontroleerd gebruikend standaardJCR bewaarplaats ACLs
 * Padgebonden servlets kunnen slechts aan een weg en niet een middeltype worden geregistreerd (d.w.z. geen achtervoegselbehandeling)
-* Als een verbindende servlet niet actief is, bijvoorbeeld als de bundel ontbreekt of niet begonnen is, zou een POST in onverwachte resultaten kunnen resulteren. gewoonlijk een knooppunt maken bij `/bin/xyz` die vervolgens het pad van de servlets bindt dat de toewijzing bindt, niet transparant is voor een ontwikkelaar die alleen naar de repository kijkt Gezien deze nadelen wordt het ten zeerste aanbevolen om servlets te binden aan middeltypes in plaats van paden
+* Als een verbindende servlet niet actief is, bijvoorbeeld als de bundel ontbreekt of niet begonnen is, zou een POST in onverwachte resultaten kunnen resulteren. meestal een knooppunt bij `/bin/xyz` maken dat vervolgens de padbinding van de servlets bedekt
+de toewijzing is niet transparant voor een ontwikkelaar die alleen naar de opslagplaats kijkt
+Gezien deze nadelen wordt het sterk geadviseerd om servers aan middeltypes eerder dan wegen te binden
 
 ## Servlet maken
 
 Start je aem-banking project in IntelliJ. Maak een servlet met de naam GetFieldChoices onder de servlets-map, zoals hieronder in de schermafbeelding wordt weergegeven.
-![keuzen](assets/fetchchoices.png)
+![ keuzen ](assets/fetchchoices.png)
 
 ## Sample Servlet
 
-Het volgende servlet is gebonden aan het het Verdraaien middeltype: _**azuur/keuzes**_
+De volgende servlet is verbindend aan het het Verspreiden middeltype: _**azure/fetchchoice**_
 
 
 
@@ -82,10 +84,10 @@ public class GetFieldChoices extends SlingAllMethodsServlet implements Serializa
 ## Bronnen maken in CRX
 
 * Meld u aan bij de lokale AEM SDK.
-* Een naam voor een bron maken `fetchchoices` (u kunt dit knooppunt toch een naam geven) van het type `cq:Page` onder inhoudsknooppunt.
+* Maak een bron met de naam `fetchchoices` (u kunt dit knooppunt desgewenst een naam geven) van het type `cq:Page` onder het inhoudsknooppunt.
 * Uw wijzigingen opslaan
-* Een knooppunt maken met de naam `jcr:content` van het type `cq:PageContent` en sla de wijzigingen op
-* Voeg de volgende eigenschappen toe aan de `jcr:content` node
+* Maak een knooppunt met de naam `jcr:content` type `cq:PageContent` en sla de wijzigingen op
+* Voeg de volgende eigenschappen toe aan het knooppunt `jcr:content`
 
 | Eigenschapnaam | Waarde van eigenschap |
 |--------------------|--------------------|
@@ -93,33 +95,33 @@ public class GetFieldChoices extends SlingAllMethodsServlet implements Serializa
 | sling:resourceType | `azure/fetchchoices` |
 
 
-De `sling:resourceType` value must match resourceTypes=&quot;azure/fetchchoice gespecificeerd in servlet.
+De `sling:resourceType` waarde moet resourceTypes=&quot;azure/fetchchoice aanpassen gespecificeerd in servlet.
 
-U kunt uw servlet nu aanhalen door de bron aan te vragen met `sling:resourceType` = `azure/fetchchoices` op zijn volledige weg, met om het even welke selecteurs of uitbreidingen die in het Sling servlet worden geregistreerd.
+U kunt nu uw servlet aanroepen door de bron met `sling:resourceType` = `azure/fetchchoices` aan te vragen bij het volledige pad, met alle kiezers of extensies die zijn geregistreerd in het Sling-servlet.
 
 ```html
 http://localhost:4502/content/fetchchoices/jcr:content.json?formPath=/content/forms/af/forrahul/jcr:content/guideContainer
 ```
 
-Het pad `/content/fetchchoices/jcr:content` is de weg van het middel en de uitbreiding `.json` is wat in servlet wordt gespecificeerd
+Het pad `/content/fetchchoices/jcr:content` is het pad van de bron en de extensie `.json` is wat is opgegeven in de servlet
 
 ## Uw AEM synchroniseren
 
 1. Open het AEM project in uw favoriete redacteur. Daar heb ik intelliJ voor gebruikt.
-1. Een map maken met de naam `fetchchoices` krachtens `\aem-banking-application\ui.content\src\main\content\jcr_root\content`
-1. Klikken met rechtermuisknop `fetchchoices` map en selecteer `repo | Get Command` (Dit menu-item is ingesteld in een vorig hoofdstuk van deze zelfstudie).
+1. Een map maken met de naam `fetchchoices` onder `\aem-banking-application\ui.content\src\main\content\jcr_root\content`
+1. Klik met de rechtermuisknop op de map `fetchchoices` en selecteer `repo | Get Command` (Dit menu-item is ingesteld in een vorig hoofdstuk van deze zelfstudie).
 
 Dit knooppunt moet worden gesynchroniseerd van AEM naar uw lokale AEM.
 
 Uw AEM projectstructuur moet er als volgt uitzien
-![resource-resolver](assets/mapping-servlet-resource.png)
+![ middel-resolver ](assets/mapping-servlet-resource.png)
 Filter.xml bijwerken in de map aem-banking-application\ui.content\src\main\content\META-INF\vault met de volgende vermelding
 
 ```xml
 <filter root="/content/fetchchoices" mode="merge"/>
 ```
 
-U kunt uw wijzigingen nu uitvoeren naar een AEM as a Cloud Service omgeving met gebruik van Cloud Manager.
+U kunt nu met Cloud Manager uw wijzigingen in een AEM as a Cloud Service-omgeving doorvoeren.
 
 ## Volgende stappen
 

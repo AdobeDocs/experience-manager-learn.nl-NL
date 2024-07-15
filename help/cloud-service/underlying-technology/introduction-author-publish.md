@@ -1,6 +1,6 @@
 ---
-title: Inleiding tot auteur- en publicatiereeks
-description: Een inleiding aan de Auteur en publicatieniveaus als deel van de architectuur in Adobe Experience Manager.
+title: Inleiding tot auteur- en Publish-niveau
+description: Een inleiding op de niveaus Auteur en Publish als deel van de architectuur in Adobe Experience Manager.
 doc-type: technical video
 version: Cloud Service
 jira: KT-4639
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Inleiding tot auteur- en publicatiereeks {#introduction-author-publish}
+# Inleiding tot auteur- en Publish-niveau {#introduction-author-publish}
 
-Een inleiding aan de Auteur en publicatieniveaus als deel van de architectuur in Adobe Experience Manager.
+Een inleiding op de niveaus Auteur en Publish als deel van de architectuur in Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32033?quality=12&learn=on)

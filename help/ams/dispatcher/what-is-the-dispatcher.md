@@ -1,5 +1,5 @@
 ---
-title: Wat is "De verzender"?
+title: Wat is "De Dispatcher"
 description: Begrijp wat een Dispatcher eigenlijk is.
 version: 6.5
 topic: Administration
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ---
 
-# Wat is &quot;De verzender&quot;?
+# Wat is &quot;De Dispatcher&quot;
 
 [Inhoudsopgave](./overview.md)
 
-Begin met de basisbeschrijving van wat een AEM Dispatcher impliceert.
+Om te beginnen de basisbeschrijving van wat een AEM Dispatcher inhoudt.
 
 ## Apache Web Server
 
@@ -29,8 +29,8 @@ Begin met een basisinstallatie van Apache Web Server op een Linux-server.
 
 Basisuitleg van wat een Apache-server doet:
 
-- Volg eenvoudige regels om bestanden via de HTTP(S)-protocollen vanuit de statische documentmap (`DocumentRoot`)
-- Bestanden die op een standaardlocatie zijn opgeslagen (`/var/www/html`) op aanvragen worden afgehandeld en in de browser van de verzoekende client worden weergegeven
+- Volg eenvoudige regels om dossiers over de HTTP(s) protocollen van zijn statische documentfolder (`DocumentRoot`) te dienen
+- Bestanden die op een standaardlocatie zijn opgeslagen (`/var/www/html`), worden op aanvragen afgehandeld en in de browser van de desbetreffende client weergegeven
 
 
 
@@ -39,7 +39,7 @@ Basisuitleg van wat een Apache-server doet:
 
 Voeg vervolgens een plug-in toe aan de Apache Web Server, de zogenaamde Dispatcher-module
 
-Basisuitleg van wat de module Adobe AEM Dispatcher doet:
+Basisuitleg van wat de Adobe AEM Dispatcher module doet:
 
 - Hiermee wordt de standaardbestandshandler versterkt
 - Filtert uit slechte verzoeken/beschermt AEM zachte buik/eindpunten
@@ -51,10 +51,10 @@ Basisuitleg van wat de module Adobe AEM Dispatcher doet:
 
 ## Workflow voor webverkeer
 
-Begrijpen welke stukken samen worden geïnstalleerd om een basisserver van de Verzender te bouwen leidt ons om u te hebben de basiswerkschema van het Webverkeer voor een configuratie van de Diensten van de Manager van de Adobe begrijpen.
+Als u begrijpt welke onderdelen samen zijn geïnstalleerd om een eenvoudige Dispatcher-server te bouwen, krijgt u meer inzicht in de basisworkflow voor webverkeer voor een configuratie met Adobe Manager Services.
 Dit zou u moeten helpen begrijpen welke rol het in de ketting van systemen speelt die inhoud aan bezoekers van uw AEM inhoud dienen.
 
-<b>Reeds in cache opgeslagen inhoud verzenden</b>
+<b> het dienen reeds caching inhoud </b>
 
 ```
 End User's Browser request 
@@ -65,7 +65,7 @@ End User's Browser request
                     → End User
 ```
 
-<b>Vernieuwde inhoud uit AEM verzenden</b>
+<b> Serving verse inhoud van AEM </b>
 
 ```
 End User's Browser request 
@@ -78,7 +78,7 @@ End User's Browser request
                             → End User
 ```
 
-<b>Publiceren/wijzigen van inhoud</b>
+<b> Inhoud publiceren/veranderingen </b>
 
 ```
 AEM Author User activates content 

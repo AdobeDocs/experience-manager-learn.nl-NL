@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Prestatieregistratie in AEM Forms inschakelen voor foutopsporing in Forms en uitvoerservice
 
-*Deze video doorloopt het proces om prestaties het Registreren in AEM Forms toe te laten om kwesties met betrekking tot Forms &amp; de outputdienst te zuiveren.*
+*Deze video loopt door het proces om prestaties het Registreren in AEM Forms toe te laten om kwesties met betrekking tot Forms &amp; de outputdienst te zuiveren.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)

@@ -39,7 +39,7 @@ In dit deel, zullen wij cirkelgrafieken toevoegen om de huidige en modelinvester
 
 * Let op het gegevensmodelobject dat aan de X- en Y-as is gebonden. U moet het hoofdelement van het formuliergegevensmodel selecteren en vervolgens naar beneden gaan om het juiste element te selecteren.
 
-* ![currentassetmix](assets/currentassetmixchart.png)
+* ![ currentassetmix ](assets/currentassetmixchart.png)
 
 ## Model Asset Mix {#model-asset-mix}
 
@@ -51,7 +51,7 @@ In dit deel, zullen wij cirkelgrafieken toevoegen om de huidige en modelinvester
 
 * Let op het gegevensmodelobject dat aan de X- en Y-as is gebonden. U moet het hoofdelement van het formuliergegevensmodel selecteren en vervolgens naar beneden gaan om het juiste element te selecteren.
 
-* ![assettype](assets/modelassettypechart.png)
+* ![ assettype ](assets/modelassettypechart.png)
 
 ## Volgende stappen
 

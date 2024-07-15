@@ -1,6 +1,6 @@
 ---
 title: Toegangstoken lokale ontwikkeling
-description: AEM de Tokens van de Toegang van de Lokale Ontwikkeling worden gebruikt om de ontwikkeling van integratie met AEM as a Cloud Service te versnellen die programmatically met AEM de Diensten van de Auteur of van de Publicatie over HTTP in wisselwerking staan.
+description: AEM de Tokens van de Toegang van de Lokale Ontwikkeling worden gebruikt om de ontwikkeling van integratie met AEM as a Cloud Service te versnellen die programmatically met AEM de diensten van de Auteur of van Publish over HTTP interactie aangaan.
 version: Cloud Service
 feature: APIs
 jira: KT-6785
@@ -21,52 +21,52 @@ ht-degree: 0%
 
 # Toegangstoken lokale ontwikkeling
 
-Ontwikkelaars die integraties bouwen die programmatische toegang tot AEM as a Cloud Service vereisen hebben een eenvoudige, snelle manier nodig om tijdelijke toegangstokens voor AEM te verkrijgen om lokale ontwikkelingsactiviteiten te vergemakkelijken. Om aan deze behoefte te voldoen, staat AEM Console van de Ontwikkelaar ontwikkelaars toe om tijdelijke toegangstokens zelf-te produceren die aan programmatically tot AEM kunnen worden gebruikt toegang te hebben.
+Ontwikkelaars die integraties bouwen die programmatische toegang tot AEM as a Cloud Service vereisen, hebben een eenvoudige, snelle manier nodig om tijdelijke toegangstokens voor AEM te verkrijgen om lokale ontwikkelingsactiviteiten te vergemakkelijken. Om aan deze behoefte te voldoen, staat AEM Developer Console ontwikkelaars toe om tijdelijke toegangstokens zelf te produceren die aan programmatically tot AEM kunnen worden gebruikt toegang te hebben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330477?quality=12&learn=on)
 
 ## Een token voor lokale ontwikkelingstoegang genereren
 
-![Token voor lokale ontwikkelingstoegang ophalen](assets/local-development-access-token/getting-a-local-development-access-token.png)
+![ het krijgen van een Lokaal Token van de Toegang van de Ontwikkeling ](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-Het token Local Development Access biedt toegang tot AEM services Auteur en Publiceren als de gebruiker die het token heeft gegenereerd, samen met zijn machtigingen. Ondanks dat dit een ontwikkelingstoken is, deel dit teken niet, of opslag in broncontrole.
+Het lokale Token van de Toegang van de Ontwikkeling verleent toegang tot AEM Auteur en de diensten van Publish als gebruiker die het teken, samen met hun toestemmingen produceerde. Ondanks dat dit een ontwikkelingstoken is, deel dit teken niet, of opslag in broncontrole.
 
-1. In [Adobe Admin Console](https://adminconsole.adobe.com/) zorgt ervoor dat u, de ontwikkelaar, lid bent van:
-   + __Cloud Manager - Ontwikkelaar__ IMS-productprofiel (verleent toegang tot AEM Developer Console)
-   + Of de __AEM__ of __AEM__ IMS-productprofiel voor de service van de AEM-omgeving waarin het toegangstoken kan worden geïntegreerd
-   + Sandbox AEM as a Cloud Service omgeving vereist alleen lidmaatschap van __AEM__ of __AEM__ Productprofiel
-1. Aanmelden bij [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
-1. Open het programma dat de AEM as a Cloud Service omgeving bevat om mee te integreren
-1. Tik op de knop __weglatingsteken__ naast het milieu in de __Omgevingen__ en selecteert u __Ontwerpconsole__
-1. Tik in het dialoogvenster __Integraties__ tab
-1. Tik op de knop __Lokaal token__ tab
-1. Tikken __Token voor lokale ontwikkeling ophalen__ knop
-1. Tik op de knop __downloadknop__ in de linkerbovenhoek om het JSON-bestand met `accessToken` en sla het JSON-bestand op een veilige locatie op uw ontwikkelcomputer op.
-   + Dit is uw 24 uur, toegangstoken voor ontwikkelaars tot het AEM as a Cloud Service milieu.
+1. In [ Adobe Admin Console ](https://adminconsole.adobe.com/) verzekert u, de ontwikkelaar, een lid van zijn:
+   + __Cloud Manager - het Profiel van het Product IMS van de Ontwikkelaar__ (verleent toegang tot AEM Developer Console)
+   + Of de __AEM Beheerders__ of __AEM het Profiel van het Product van Gebruikers__ IMS voor de dienst van het AEM milieu het toegangstoken integreert met
+   + Het milieu van de zandbak AEM as a Cloud Service vereist slechts lidmaatschap in of __AEM Beheerders__ of __AEM Gebruikers__ Profiel van het Product
+1. Login aan [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com)
+1. Open het programma dat de AEM as a Cloud Service-omgeving bevat om mee te integreren
+1. Tik de __ellips__ naast het milieu in de __sectie van Milieu__, en selecteer __Developer Console__
+1. Tik in het __lusje van de Integraties__
+1. Tik het __Lokale teken__ lusje
+1. Teken van de Ontwikkeling van het Teken van de Tik __van het Tik__ krijgen Lokale
+1. Tik op de __downloadknoop__ in de hoogste-linkerhoek om het JSON dossier te downloaden dat `accessToken` waarde bevat, en sparen het JSON dossier aan een veilige plaats op uw ontwikkelingsmachine.
+   + Dit is uw 24-uurs toegangstoken voor ontwikkelaars tot de AEM as a Cloud Service-omgeving.
 
-![AEM Developer Console - Integratie - Token voor lokale ontwikkeling ophalen](./assets/local-development-access-token/developer-console.png)
+![ AEM Developer Console - Integraties - krijg de Token van de Lokale Ontwikkeling ](./assets/local-development-access-token/developer-console.png)
 
 ## Gebruikt het Lokale Token van de Toegang van de Ontwikkeling{#use-local-development-access-token}
 
-![Token voor toegang tot lokale ontwikkeling - externe toepassing](assets/local-development-access-token/local-development-access-token-external-application.png)
+![ Token van de Toegang van de Lokale Ontwikkeling - Externe Toepassing ](assets/local-development-access-token/local-development-access-token-external-application.png)
 
 1. Download het tijdelijke Local Development Access Token van AEM Developer Console
    + De lokale Token van de Toegang van de Ontwikkeling verloopt om de 24 uur, zodat moeten de ontwikkelaars nieuwe toegangstokens dagelijks downloaden
-1. Er wordt een externe toepassing ontwikkeld die programmatisch werkt met AEM as a Cloud Service
+1. Er wordt een externe toepassing ontwikkeld die programmatisch communiceert met AEM as a Cloud Service
 1. De externe toepassing leest in het Token van de Toegang van de Lokale Ontwikkeling
-1. De externe toepassing construeert HTTP- verzoeken om as a Cloud Service te AEM, toevoegend het Lokale Token van de Toegang van de Ontwikkeling als teken van de Drager aan de kopbal van de Vergunning van HTTP- verzoeken
-1. AEM as a Cloud Service ontvangt het HTTP- verzoek, verklaart het verzoek voor authentiek, en voert het werk uit dat door het HTTP- verzoek wordt gevraagd en keert een reactie van HTTP terug naar de Externe Toepassing
+1. De externe toepassing construeert HTTP- verzoeken aan AEM as a Cloud Service, die het Lokale Token van de Toegang van de Ontwikkeling als teken van de Drager aan de kopbal van de Vergunning van HTTP- verzoeken toevoegen
+1. AEM as a Cloud Service ontvangt de HTTP-aanvraag, verifieert de aanvraag en voert het werk uit dat door de HTTP-aanvraag wordt aangevraagd en retourneert een HTTP-reactie terug naar de externe toepassing
 
 ### De externe voorbeeldtoepassing
 
-We maken een eenvoudige externe JavaScript-toepassing om te illustreren hoe AEM as a Cloud Service via HTTPS via het toegangstoken voor lokale ontwikkelaars programmatisch kan worden benaderd. Dit illustreert hoe _alle_ toepassing of systeem dat buiten AEM, ongeacht kader of taal loopt, kan het toegangstoken gebruiken programmatically voor authentiek verklaren aan, en toegang, AEM as a Cloud Service. In de [volgende sectie](./service-credentials.md), zullen wij deze toepassingscode bijwerken om de benadering te steunen om een token voor productiegebruik te produceren.
+Wij zullen een eenvoudige externe toepassing van JavaScript tot stand brengen om te illustreren hoe te om tot AEM as a Cloud Service over HTTPS programmatically toegang te hebben gebruikend het lokale toegangstoken van de ontwikkelaar. Dit illustreert hoe _om het even welke_ toepassing of systeem dat buiten AEM, ongeacht kader of taal loopt, het toegangstoken kan gebruiken programmatically voor authentiek te verklaren aan, en toegang te hebben, AEM as a Cloud Service. In de [ volgende sectie ](./service-credentials.md), zullen wij deze toepassingscode bijwerken om de benadering te steunen voor het produceren van een teken voor productiegebruik.
 
 Deze voorbeeldtoepassing wordt uitgevoerd vanaf de opdrachtregel en werkt metagegevens AEM elementen bij met behulp van AEM Assets HTTP-API&#39;s. Hierbij wordt de volgende stroom gebruikt:
 
-1. Leest in parameters vanaf de opdrachtregel (`getCommandLineParams()`)
-1. Hiermee verkrijgt u het toegangstoken dat wordt gebruikt voor verificatie bij AEM as a Cloud Service (`getAccessToken(...)`)
-1. Hiermee worden alle elementen in een AEM elementmap weergegeven die in een opdrachtregelparameter zijn opgegeven (`listAssetsByFolder(...)`)
-1. De metagegevens van de weergegeven elementen bijwerken met de waarden die zijn opgegeven in opdrachtregelparameters (`updateMetadata(...)`)
+1. Leest in parameters van de bevellijn (`getCommandLineParams()`)
+1. Verkrijgt het toegangstoken dat wordt gebruikt om aan AEM as a Cloud Service (`getAccessToken(...)`) voor authentiek te verklaren
+1. Maakt een lijst van alle activa in een AEM middelomslag die in een bevel-lijn parameters wordt gespecificeerd (`listAssetsByFolder(...)`)
+1. De meta-gegevens van de vermelde activa met waarden bijwerken die in bevel-lijn parameters worden gespecificeerd (`updateMetadata(...)`)
 
 Het belangrijkste element in programmatically het voor authentiek verklaren aan AEM gebruikend het toegangstoken voegt een de verzoekkopbal van HTTP van de Vergunning aan alle HTTP- verzoeken toe die aan AEM worden gemaakt, in het volgende formaat:
 
@@ -74,12 +74,12 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
 
 ## De externe toepassing uitvoeren
 
-1. Zorg ervoor dat [Node.js](/help/cloud-service/local-development-environment/development-tools.md?lang=en#node-js) is geïnstalleerd op uw lokale ontwikkelcomputer, die wordt gebruikt om de externe toepassing uit te voeren
-1. Download en decomprimeer de [externe voorbeeldtoepassing](./assets/aem-guides_token-authentication-external-application.zip)
-1. Vanaf de bevellijn, in de omslag van dit project, looppas `npm install`
-1. De [Het token Local Development Access gedownload](#download-local-development-access-token) naar een bestand met de naam `local_development_token.json` in de hoofdmap van het project
+1. Zorg ervoor dat [ Node.js ](/help/cloud-service/local-development-environment/development-tools.md?lang=en#node-js) op uw lokale ontwikkelingsmachine geïnstalleerd is, die wordt gebruikt om de externe toepassing in werking te stellen
+1. De download en unzip de [ steekproef externe toepassing ](./assets/aem-guides_token-authentication-external-application.zip)
+1. Voer vanuit de opdrachtregel in de map van dit project `npm install` uit
+1. Kopieer [ het Lokale Token van de Toegang van de Ontwikkeling ](#download-local-development-access-token) aan een dossier genoemd `local_development_token.json` in de wortel van het project
    + Maar vergeet niet dat u nooit aanmeldgegevens aan Git wilt toewijzen!
-1. Openen `index.js` en bekijk de externe toepassingscode en opmerkingen.
+1. Open `index.js` en bekijk de code en opmerkingen van de externe toepassing.
 
    ```javascript
    const fetch = require('node-fetch');
@@ -210,7 +210,7 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
    }
    ```
 
-   Controleer de `fetch(..)` oproepen in de `listAssetsByFolder(...)` en `updateMetadata(...)`, en `headers` de `Authorization` HTTP-aanvraagheader met een waarde van `Bearer ACCESS_TOKEN`. Op deze manier wordt de HTTP-aanvraag die afkomstig is van de externe toepassing geverifieerd op AEM as a Cloud Service.
+   Controleer de `fetch(..)` aanroepen in de `listAssetsByFolder(...)` en `updateMetadata(...)` en `headers` definieer de `Authorization` HTTP-aanvraagheader met de waarde `Bearer ACCESS_TOKEN` . Zo wordt de HTTP-aanvraag van de externe toepassing geverifieerd bij AEM as a Cloud Service.
 
    ```javascript
    ...
@@ -223,7 +223,7 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
    })...
    ```
 
-   Om het even welke HTTP- verzoeken om as a Cloud Service te AEM, moet het toegangstoken van de Drager in de kopbal van de Vergunning plaatsen. Herinner me, vereist elk AEM as a Cloud Service milieu zijn eigen toegangstoken. De toegangstoken van de ontwikkeling werkt niet op Stadium of Productie, het Stadium werkt niet aan Ontwikkeling of Productie, en Productie werkt niet op Ontwikkeling of Stadium!
+   Om het even welke HTTP- verzoeken aan AEM as a Cloud Service, moeten het toegangstoken van de Drager in de kopbal van de Vergunning plaatsen. Herinner me, vereist elke milieu van AEM as a Cloud Service zijn eigen toegangstoken. De toegangstoken van de ontwikkeling werkt niet op Stadium of Productie, het Stadium werkt niet aan Ontwikkeling of Productie, en Productie werkt niet op Ontwikkeling of Stadium!
 
 1. Gebruikend de bevellijn, van de wortel van het project voert de toepassing uit, die in de volgende parameters overgaat:
 
@@ -238,10 +238,10 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
 
    De volgende parameters worden doorgegeven:
 
-   + `aem`: Het schema en de hostnaam van de AEM as a Cloud Service omgeving waarmee de toepassing communiceert (bijvoorbeeld `https://author-p1234-e5678.adobeaemcloud.com`).
-   + `folder`: Het pad naar de elementenmap waarvan de elementen met het `propertyValue`; voeg GEEN `/content/dam` voorvoegsel (bijvoorbeeld `/wknd-shared/en/adventures/napa-wine-tasting`)
-   + `propertyName`: De elementeigenschapnaam die moet worden bijgewerkt, relatief ten opzichte van `[dam:Asset]/jcr:content` (bv. `metadata/dc:rights`).
-   + `propertyValue`: De waarde die moet worden ingesteld voor de `propertyName` to; waarden met spaties moeten worden ingekapseld `"` (bv. `"WKND Limited Use"`)
+   + `aem`: Het schema en de hostnaam van de AEM as a Cloud Service-omgeving waarmee de toepassing werkt (bijvoorbeeld `https://author-p1234-e5678.adobeaemcloud.com` ).
+   + `folder`: Het pad naar de elementenmap waarvan de elementen met `propertyValue` worden bijgewerkt; voeg het voorvoegsel `/content/dam` NIET toe (bijv. `/wknd-shared/en/adventures/napa-wine-tasting`)
+   + `propertyName`: De naam van de elementeigenschap die moet worden bijgewerkt, in verhouding tot `[dam:Asset]/jcr:content` (bijvoorbeeld `metadata/dc:rights` ).
+   + `propertyValue`: De waarde waarop de `propertyName` moet worden ingesteld; waarden met spaties moeten worden ingekapseld met `"` (bijv. `"WKND Limited Use"`)
    + `file`: Het relatieve bestandspad naar het JSON-bestand dat is gedownload van AEM Developer Console.
 
    Een geslaagde uitvoering van de resultaten van de toepassing voor elk bijgewerkt element:
@@ -256,19 +256,19 @@ Het belangrijkste element in programmatically het voor authentiek verklaren aan 
 
 ### Metagegevens bijwerken in AEM controleren
 
-Controleer of de metagegevens zijn bijgewerkt door u aan te melden bij de AEM as a Cloud Service omgeving (zorg ervoor dat dezelfde host is doorgegeven aan de `aem` opdrachtregelparameter wordt benaderd).
+Controleer of de metagegevens zijn bijgewerkt door u aan te melden bij de AEM as a Cloud Service-omgeving (zorg ervoor dat dezelfde host die is doorgegeven aan de opdrachtregelparameter `aem` wordt benaderd).
 
-1. Meld u aan bij de AEM as a Cloud Service omgeving waarmee de externe toepassing interactie heeft gehad (gebruik dezelfde host als in het dialoogvenster `aem` opdrachtregelparameter)
-1. Ga naar de __Activa__ > __Bestanden__
-1. Navigeren in de elementenmap die is opgegeven in het dialoogvenster `folder` opdrachtregelparameter, bijvoorbeeld __WKND__ > __Engels__ > __avonturen__ > __Napa Wine Tasting__
-1. Open de __Eigenschappen__ voor elk element (niet-Content Fragment) in de map
-1. Tik op de knop __Geavanceerd__ tab
-1. Controleer de waarde van de bijgewerkte eigenschap, bijvoorbeeld __Copyright__ die is toegewezen aan de bijgewerkte `metadata/dc:rights` JCR-eigenschap, die de waarde weergeeft die in de `propertyValue` parameter, bijvoorbeeld __Beperkt gebruik WKND__
+1. Meld u aan bij de AEM as a Cloud Service-omgeving waarmee de externe toepassing interactie heeft gehad (gebruik dezelfde host als in de opdrachtregelparameter van `aem` )
+1. Ga aan __Assets__ > __Dossiers__
+1. Navigeer het de activaomslag die door de `folder` bevel-lijn parameter, bijvoorbeeld __wordt gespecificeerd WKND__ > __Engels__ > __avonturen__ > __het Tasting van de Wijn van Napa__
+1. Open __Eigenschappen__ voor om het even welk (niet-Inhoud Fragment) activa in de omslag
+1. Tik aan het __Geavanceerde__ lusje
+1. Herzie de waarde van het bijgewerkte bezit, bijvoorbeeld __Copyright__ dat aan het bijgewerkte `metadata/dc:rights` bezit JCR in kaart wordt gebracht, dat op de waarde wijst die in de `propertyValue` parameter wordt verstrekt, bijvoorbeeld __Beperkt Gebruik WKND__
 
-![WKND Update metagegevens beperkt gebruik](./assets/local-development-access-token/asset-metadata.png)
+![ WKND de Beperkte Update van Metagegevens van het Gebruik ](./assets/local-development-access-token/asset-metadata.png)
 
 ## Volgende stappen
 
-Nu wij programmatically hebben betreden AEM as a Cloud Service gebruikend het lokale ontwikkelingstoken. Vervolgens moet de toepassing worden bijgewerkt zodat deze kan worden gebruikt in een productiecontext.
+Nu we AEM as a Cloud Service via programmacode hebben benaderd met het token voor lokale ontwikkeling. Vervolgens moet de toepassing worden bijgewerkt zodat deze kan worden gebruikt in een productiecontext.
 
 + [Hoe te om de Referenties van de Dienst te gebruiken](./service-credentials.md)

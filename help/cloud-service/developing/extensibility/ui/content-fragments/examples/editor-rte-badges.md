@@ -25,45 +25,45 @@ Leer hoe u badges aan de Rich Text Editor (RTE) toevoegt in de AEM Content Fragm
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
-[Rich Text Editor-badge](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/)  zijn extensies die tekst in de Rich Text Editor (RTE) niet-bewerkbaar maken. Dit betekent dat een als zodanig gedeclareerde badge alleen volledig kan worden verwijderd en niet gedeeltelijk kan worden bewerkt. Deze badges bieden ook ondersteuning voor speciale kleuren in de RTE, waarbij de auteur van de inhoud duidelijk wordt aangegeven dat de tekst een badge is en dus niet bewerkbaar. Bovendien geven ze visuele aanwijzingen over de betekenis van de badge-tekst.
+{het symbool van de Redacteur van de Tekst van 0} Rich ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) is uitbreidingen die tekst in de Rich Text Editor (RTE) niet-editable maken. [ Dit betekent dat een als zodanig gedeclareerde badge alleen volledig kan worden verwijderd en niet gedeeltelijk kan worden bewerkt. Deze badges bieden ook ondersteuning voor speciale kleuren in de RTE, waarbij de auteur van de inhoud duidelijk wordt aangegeven dat de tekst een badge is en dus niet bewerkbaar. Bovendien geven ze visuele aanwijzingen over de betekenis van de badge-tekst.
 
-Het meest gebruikelijke gebruiksgeval voor RTE-badges is het gebruik ervan in combinatie met [RTE-widgets](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/). Hierdoor kan inhoud die door de RTE-widget in de RTE wordt geïnjecteerd, niet-bewerkbaar zijn.
+Het gemeenschappelijkste gebruiksgeval voor RTE badges is hen samen met [ te gebruiken widgets RTE ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/). Hierdoor kan inhoud die door de RTE-widget in de RTE wordt geïnjecteerd, niet-bewerkbaar zijn.
 
-Gewoonlijk worden de badges in combinatie met de widgets gebruikt om de dynamische inhoud toe te voegen die een externe systeemafhankelijkheid heeft, maar _inhoudsauteurs kunnen geen wijzigingen aanbrengen_ de ingevoegde dynamische inhoud om de integriteit te behouden. Ze kunnen alleen als een geheel item worden verwijderd.
+Typisch, worden de badges in verband met widgets gebruikt om de dynamische inhoud toe te voegen die een externe systeemgebiedsafhankelijkheid heeft maar _inhoudsauteurs kunnen_ de opgenomen dynamische inhoud niet wijzigen om de integriteit te handhaven. Ze kunnen alleen als een geheel item worden verwijderd.
 
-De **badges** worden toegevoegd aan **RTE** in de Inhoudsfragmenteditor met behulp van de `rte` extensiepunt. Gebruiken `rte` extensiepunt `getBadges()` methode één of vele badges worden toegevoegd.
+De **badges** worden toegevoegd aan **RTE** in de Redacteur van het Fragment van de Inhoud gebruikend het `rte` uitbreidingspunt. Met de methode `getBadges()` van het `rte` extensiepunt worden een of meer badges toegevoegd.
 
-In dit voorbeeld wordt getoond hoe u een widget met de naam _Klantenservice voor grote groepsboekingen_ om de WKND adventure-specifieke details van de klantendienst zoals te vinden, te selecteren en toe te voegen **Naam vertegenwoordiger** en **Telefoonnummer** binnen een RTE-inhoud. Met behulp van de badfunctionaliteit **Telefoonnummer** is gemaakt **niet bewerkbaar** Maar WKND-inhoudsauteurs kunnen de naam van de vertegenwoordiger wel bewerken.
+Dit voorbeeld toont hoe te om een widget toe te voegen genoemd _de Grote Dienst van de Klant van de Boekingen van de Groep **om te vinden, te selecteren en, de adventure-specifieke details van de klantendienst van WKND zoals**Naam van de Vertegenwoordiger en **Aantal van de Telefoon**binnen een inhoud van RTE toe te voegen._ Gebruikend de bandenfunctionaliteit wordt het **Aantal van de Telefoon** gemaakt **niet-editable** maar WKND inhoudsauteurs kunnen de Naam van de Vertegenwoordiger uitgeven.
 
-Ook de **Telefoonnummer** wordt anders opgemaakt (blauw). Dit is een extra gebruiksgeval voor de badges-functionaliteit.
+Ook, wordt het **Aantal van de Telefoon** gestileerd verschillend (blauw) dat een extra gebruiksgeval van de bandenfunctionaliteit is.
 
-In dit voorbeeld wordt het volgende gebruikt om de [Adobe Reageren spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) -framework voor het ontwikkelen van de interface van de widget of dialoog en hardgecodeerde WKND-telefoonnummers voor Klantenservice. Als u het niet-bewerken en andere stijlaspecten van de inhoud wilt bepalen, `#` teken wordt gebruikt in het dialoogvenster `prefix` en `suffix` kenmerk van de definitie van badges.
+Om dingen eenvoudig te houden, gebruikt dit voorbeeld het ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader van het Spectrum van het Reageren van de Adobe [ om widget of dialoog UI en hard-gecodeerde de telefoonaantallen van de Klantendienst van WKND te ontwikkelen. Als u het niet-bewerken en verschillende stijlkenmerken van de inhoud wilt bepalen, wordt het teken `#` gebruikt in het kenmerk `prefix` en `suffix` van de definitie van badges.
 
 ## Extensiepunten
 
-In dit voorbeeld wordt het uitbreidingspunt uitgebreid `rte` om een badge aan RTE in de Redacteur van het Fragment van de Inhoud toe te voegen.
+Dit voorbeeld breidt zich tot uitbreidingspunt `rte` uit om een badge aan RTE in de Redacteur van het Fragment van de Inhoud toe te voegen.
 
 | AEM UI uitgebreid | Extensiepunten |
 | ------------------------ | --------------------- | 
-| [Inhoudsfragmenteditor](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Badges Rich Text Editor](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) en [Widgets Rich Text Editor](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
+| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) en [ Rich Text Editor Widgets ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) van de Redacteur van de Tekst[ |
 
 ## Voorbeeldextensie
 
-In het volgende voorbeeld wordt een _Klantenservice voor grote groepsboekingen_ widget. Door op de knop `{` sleutel binnen RTE, wordt het RTE widget contextmenu geopend. Als u _Klantenservice voor grote groepsboekingen_ in het contextmenu wordt het aangepaste modaal geopend.
+Het volgende voorbeeld leidt tot de Dienst van de Klant van de Boekjes van de a _Grote Groep_ widget. Door op de `{` -toets in de RTE te drukken, wordt het contextmenu van de RTE-widgets geopend. Door de _Grote optie van de Dienst van de Klant van de Boekingen van de Groep_ van het contextmenu te selecteren wordt de douane modaal geopend.
 
-Zodra het gewenste aantal van de klantendienst van modaal wordt toegevoegd, maken de badges _Telefoonnummer niet bewerkbaar_ en maakt deze in blauwe kleur.
+Zodra het gewenste aantal van de klantendienst van modaal wordt toegevoegd, maken de badges het _Aantal van de Telefoon niet-editable_ en stijlen het in blauwe kleur.
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js`, toegewezen aan de `index.html` route, is het ingangspunt voor de AEM uitbreiding en bepaalt:
+`ExtensionRegistration.js` , toegewezen aan de `index.html` -route, is het ingangspunt voor de AEM extensie en definieert:
 
-+ De definitie van de badge is gedefinieerd in `getBadges()` het gebruiken van de configuratieattributen `id`, `prefix`, `suffix`, `backgroundColor` en `textColor`.
-+ In dit voorbeeld wordt `#` teken wordt gebruikt om de grenzen van deze badge te bepalen - betekenend om het even welke koord in RTE die door wordt omringd `#` wordt behandeld als een geval van deze badge.
++ De definitie van de badge wordt in `getBadges()` gedefinieerd met de configuratiekenmerken `id` , `prefix` , `suffix` , `backgroundColor` en `textColor` .
++ In dit voorbeeld wordt het teken `#` gebruikt om de grenzen van deze badge te definiëren. Dit houdt in dat elke tekenreeks in de RTE die door `#` wordt omringd, wordt behandeld als een instantie van deze badge.
 
 Zie ook de belangrijkste details van de RTE-widget:
 
-+ De widgetdefinitie in `getWidgets()` functie met `id`, `label` en `url` kenmerken.
-+ De `url` kenmerkwaarde, een relatief URL-pad (`/index.html#/largeBookingsCustomerService`) om het modale object te laden.
++ De widgetdefinitie in `getWidgets()` functie met `id` -, `label` - en `url` kenmerken.
++ De waarde van het kenmerk `url` , een relatief URL-pad ( `/index.html#/largeBookingsCustomerService` ) om het modaal te laden.
 
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
@@ -113,9 +113,9 @@ function ExtensionRegistration() {
 export default ExtensionRegistration;
 ```
 
-### Toevoegen `largeBookingsCustomerService` route in `App.js`{#add-widgets-route}
+### `largeBookingsCustomerService` route toevoegen in `App.js`{#add-widgets-route}
 
-In de hoofdcomponent React `App.js`, voegt u de `largeBookingsCustomerService` route om UI voor de bovengenoemde relatieve weg terug te geven URL.
+Voeg in de hoofdcomponent React `App.js` de `largeBookingsCustomerService` -route toe om de gebruikersinterface voor het bovenstaande relatieve URL-pad te renderen.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -135,20 +135,20 @@ In de hoofdcomponent React `App.js`, voegt u de `largeBookingsCustomerService` r
 ...
 ```
 
-### Maken `LargeBookingsCustomerService` Reageercomponent{#create-widget-react-component}
+### Component `LargeBookingsCustomerService` React maken{#create-widget-react-component}
 
-De widget- of dialoogvenster-UI wordt gemaakt met de [Adobe Reageren spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) kader.
+De widget of de dialoog UI wordt gecreeerd gebruikend het [ React Spectrum van de Adobe ](https://react-spectrum.adobe.com/react-spectrum/index.html) kader.
 
-De React componentencode wanneer het toevoegen van de details van de klantendienst, omring de variabele van het telefoonaantal met `#` gedeponeerd badges om dit om te zetten in badges, zoals `#${phoneNumber}#`en maakt het dus niet bewerkbaar.
+De componentencode React wanneer het toevoegen van de details van de klantendienst, omring de variabele van het telefoonaantal met het `#` geregistreerde badges karakter om het in badges, zoals `#${phoneNumber}#` om te zetten, zo maakt het niet-editable.
 
-Hier zijn de belangrijkste hooglichten van `LargeBookingsCustomerService` code:
+Hier volgen enkele belangrijke markeringen van de code van `LargeBookingsCustomerService` :
 
-+ UI wordt teruggegeven gebruikend React de componenten van het Spectrum, zoals [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Knop](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ De `largeGroupCustomerServiceList` array heeft hardcoded mapping van representatieve naam en telefoonnummer. In echt scenario, kunnen deze gegevens uit Adobe AppBuilder actie of externe systemen of huis worden teruggewonnen uitgegroeid of op wolk leverancier-gebaseerde API gateway.
-+ De `guestConnection` is geïnitialiseerd met de `useEffect` [Reagehaak](https://react.dev/reference/react/useEffect) en beheerd als componentstatus. Het wordt gebruikt om met de AEM gastheer te communiceren.
-+ De `handleCustomerServiceChange` de functie krijgt representatieve naam en telefoonaantal en werkt de variabelen van de componentenstaat bij.
-+ De `addCustomerServiceDetails` functie gebruiken `guestConnection` -object bevat RTE-instructie die moet worden uitgevoerd. In dit geval `insertContent` codefragment voor instructies en HTML.
-+ Als u het **telefoonaantal niet bewerkbaar** met badges `#` een speciaal teken wordt toegevoegd voor en na de `phoneNumber` variabele, zoals `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
++ UI wordt teruggegeven gebruikend React de componenten van het Spectrum, als [ ComboBox ](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ ButtonGroup ](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [ Knoop ](https://react-spectrum.adobe.com/react-spectrum/Button.html)
++ De array `largeGroupCustomerServiceList` heeft een hardcoded toewijzing van een representatieve naam en telefoonnummer. In echt scenario, kunnen deze gegevens uit Adobe AppBuilder actie of externe systemen of huis worden teruggewonnen uitgegroeid of op wolk leverancier-gebaseerde API gateway.
++ `guestConnection` wordt geïnitialiseerd gebruikend `useEffect` [ Reageer haak ](https://react.dev/reference/react/useEffect) en geleid als componentenstaat. Het wordt gebruikt om met de AEM gastheer te communiceren.
++ De functie `handleCustomerServiceChange` krijgt representatieve naam en telefoonaantal en werkt de variabelen van de componentenstaat bij.
++ De functie `addCustomerServiceDetails` die `guestConnection` gebruikt, biedt RTE-instructie die moet worden uitgevoerd. In dit geval `insertContent` instructiecodefragment en HTML-codefragment.
++ Om het **telefoonaantal niet-editable** te maken gebruikend badges, wordt het `#` speciale karakter toegevoegd vóór en na de `phoneNumber` variabele, als `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
 
 `src/aem-cf-editor-1/web-src/src/components/LargeBookingsCustomerService.js`
 

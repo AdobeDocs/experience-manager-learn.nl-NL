@@ -16,7 +16,7 @@ ht-degree: 1%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager (AEM) Assets is een hulpprogramma voor digitaal middelenbeheer op AEM Platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een webgebaseerde opslagplaats. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
+Adobe Experience Manager (AEM) Assets is een hulpprogramma voor het beheer van digitale middelen op AEM Platform waarmee gebruikers hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen maken, beheren en delen in een opslagplaats op internet. Deze gebruikershandleiding bevat video&#39;s en zelfstudies over de vele functies en mogelijkheden van AEM Assets.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -48,11 +48,11 @@ Leer wat AEM Assets is en hoe u kunt gebruiken om de zakelijke doelstellingen va
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>AEM Desktop-app gebruiken</strong>
+      <strong> Gebruikend AEM Desktop App </strong>
       </a>
    </div>
    <p>
-      <em>Toegang tot elementen in AEM rechtstreeks vanaf het bureaublad</em>
+      <em> de activa van de Toegang in AEM direct van de Desktop </em>
    </p>
 </td>
 <td>
@@ -61,11 +61,11 @@ Leer wat AEM Assets is en hoe u kunt gebruiken om de zakelijke doelstellingen va
    </a>
    <div>
       <a href="../assets-essentials/overview.md">
-      <strong>Aan de slag met Assets Essentials</strong>
+      <strong> Begonnen het worden met Assets Essentials </strong>
       </a>
    </div>
    <p>
-      <em>Ervaar de creatie van concepten tot ontwerp en levering sneller.</em>
+      <em> versnelt ervaringsverwezenlijking van concept aan ontwerp aan levering.</em>
    <p>
 </td>
 <td>
@@ -74,11 +74,11 @@ Leer wat AEM Assets is en hoe u kunt gebruiken om de zakelijke doelstellingen va
    </a>
    <div>
       <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Dynamic Media - Overzicht</strong>
+      <strong> Overzicht van Dynamic Media </strong>
       </a>
    </div>
    <p>
-      <em>Media-inhoud beheren en openen met Dynamic Media</em>
+      <em> beheer en toegang media inhoud gebruikend Dynamic Media </em>
    <p>
 </td>
 </table>
@@ -87,8 +87,8 @@ Leer wat AEM Assets is en hoe u kunt gebruiken om de zakelijke doelstellingen va
 
 ## Aanvullende bronnen
 
-* [AEM Assets-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
-* [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
+* [ documentatie van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
+* [AEM as a Cloud Service-zelfstudies](/help/cloud-service/overview.md)
 * [AEM Sites-zelfstudies](/help/sites/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)
 * [Zelfstudies AEM Stichting](/help/foundation/overview.md)

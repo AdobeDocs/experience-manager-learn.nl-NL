@@ -1,6 +1,6 @@
 ---
 title: Dispatcher configureren bij overgang naar AEM as a Cloud Service
-description: Meer informatie over opmerkelijke wijzigingen in AEM Dispatcher voor AEM as a Cloud Service, het Dispatcher-conversieprogramma en het gebruik van de Dispatcher Tools SDK.
+description: Meer informatie over belangrijke wijzigingen in AEM Dispatcher for AEM as a Cloud Service, het Dispatcher-conversieprogramma en het gebruik van de Dispatcher Tools SDK.
 version: Cloud Service
 feature: Dispatcher
 topic: Migration, Upgrade
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Dispatcher
 
-Leer over AEM Dispatcher voor AEM as a Cloud Service, zich op opmerkelijke veranderingen van Dispatcher voor AEM 6, het hulpmiddel van de Omzetting van de Verzender en hoe te om de Dispatcher Tools SDK te gebruiken.
+Meer informatie over AEM Dispatcher for AEM as a Cloud Service, waarbij u zich richt op opmerkelijke wijzigingen van Dispatcher voor AEM 6, het Dispatcher-conversieprogramma en het gebruik van de SDK van Dispatcher Tools.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
@@ -28,13 +28,13 @@ Leer over AEM Dispatcher voor AEM as a Cloud Service, zich op opmerkelijke veran
 
 ![Dispatcher Converter](./assets/dispatcher-converter-diagram.png)
 
-Als deel van het refactoring van uw codebasis, gebruik [AEM Dispatcher Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) bestaande Managed Services Dispatcher-configuraties op locatie of Adobe te vernieuwen om de as a Cloud Service compatibele Dispatcher-configuratie te AEM.
+Als deel van het refactoring van uw codebasis, gebruik [ AEM de Convertor van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) om bestaande configuraties op-gebouw of van de Adobe Managed Services Dispatcher aan AEM as a Cloud Service compatibele configuratie van Dispatcher te bekrachtigen.
 
 ## Belangrijkste activiteiten
 
-+ Gebruik de [Adobe I/O Dispatcher Converter, gereedschap](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) om een bestaande Dispatcher-configuratie te migreren.
-+ Verwijs naar de module Dispatcher van de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) als beste praktijk.
-+ [Lokale gereedschappen voor Dispatcher instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) om de verzender te valideren, voordat u gaat testen in een Cloud Service-omgeving.
++ Gebruik het [ hulpmiddel van de Convertor van Adobe I/O Dispatcher ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) om een bestaande configuratie van Dispatcher te migreren.
++ Verwijs de module van Dispatcher van [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) als beste praktijken.
++ [ Opstelling lokale Hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) om verzender te bevestigen, alvorens in een milieu van de Cloud Service te testen.
 
 ## Handbeweging
 
@@ -48,7 +48,7 @@ Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaan
 
 Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
 
-+ [Praktische oefening van Cloud Manager](./cloud-manager.md#hands-on-exercise)
++ [Cloud Manager hands-on oefening](./cloud-manager.md#hands-on-exercise)
 
 <table style="border-width:0">
     <tr>
@@ -66,7 +66,7 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session5-dispatcher#cloud-acceleration-bootcamp---session-5-dispatcher" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Verzendprogramma's uitproberen</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> probeert uit Dispatcher Hulpmiddelen </span>
             </a>
         </td>
     </tr>

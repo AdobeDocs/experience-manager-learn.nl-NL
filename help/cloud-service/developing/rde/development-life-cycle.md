@@ -41,8 +41,8 @@ De belangrijkste voordelen van de RDE om de ontwikkelingsdynamiek te behouden.
 
 ## Aanvullende bronnen
 
-[Samenwerkingsscenario voor meerdere ontwikkelaars](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#multiple-developers-collaborating-on-the-same-rde)
+[ Veelvoudige scenario&#39;s van de ontwikkelaarssamenwerking ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#multiple-developers-collaborating-on-the-same-rde)
 
-[Local Development Environment Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+[ Lokale Opstelling van het Milieu van de Ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-[Adobe Cloud Manager gebruiken - CI/CD Production Pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)
+[ Gebruikend Adobe Cloud Manager - CI/CD de Pijpleiding van de Productie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)

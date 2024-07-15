@@ -26,17 +26,17 @@ In dit artikel wordt uitgelegd hoe u verschillende typen PDF kunt maken. Het hel
 
 Hieronder ziet u een voorbeeld van een PDF/A-bestand in Acrobat DC.
 
-![PDF](assets/pdfa-file-in-acrobat.png)
+![ PDF ](assets/pdfa-file-in-acrobat.png)
 
-Voorbeeldbestanden kunnen [hier gedownload](assets/pdf-file-types.zip)
+De dossiers van de steekproef kunnen [ van hier worden gedownload ](assets/pdf-file-types.zip)
 
 ## XML Forms Architecture PDF (XFA PDF)
 
 Adobe gebruikt de term XFA-PDF-formulier om te verwijzen naar de interactieve en dynamische Forms die u maakt met AEM Forms Designer. De Forms en de bestanden die u met Designer maakt, zijn gebaseerd op de XML Forms Architecture (XFA) van de Adobe. In veel opzichten is de XFA PDF-bestandsindeling dichter bij een HTML-bestand dan bij een traditioneel PDF-bestand. De volgende code toont bijvoorbeeld hoe een eenvoudig tekstobject eruitziet in een XFA-PDF-bestand.
 
-![Tekstveld](assets/text-field.JPG)
+![ tekst-gebied ](assets/text-field.JPG)
 
-XFA Forms is gebaseerd op XML. Met deze goed gestructureerde en flexibele indeling kan een AEM Forms Server uw Designer-bestanden omzetten in verschillende indelingen, zoals traditionele PDF, PDF/A en HTML. U kunt de volledige XML-structuur van uw Forms in Designer zien door het tabblad XML-bron van de Indelingseditor te selecteren. U kunt zowel statische als dynamische XFA Forms maken in AEM Forms Designer.
+XFA Forms is gebaseerd op XML. Met deze goed gestructureerde en flexibele indeling kan een AEM Forms Server uw Designer-bestanden omzetten in verschillende indelingen, zoals traditionele PDF, PDF/A en HTML. U kunt de volledige XML-structuur van uw Forms in Designer zien door het tabblad XML Source van de Indelingseditor te selecteren. U kunt zowel statische als dynamische XFA Forms maken in AEM Forms Designer.
 
 ## Statische PDF
 
@@ -50,7 +50,7 @@ De statische lay-out van PDF forms XFA verandert nooit bij runtime, maar zij kun
 
 >[!NOTE]
 >
-> U kunt statische PDF maken met AEM Forms Designer door de XDP op te slaan als Adobe statisch PDF formulier
+> U kunt statische PDF maken met AEM Forms Designer door de XDP op te slaan als een statisch PDF-formulier met Adobe
 
 
 
@@ -61,7 +61,7 @@ Dynamische XFA-PDF kunnen hun lay-out tijdens runtime wijzigen, zodat de functie
 * Dynamische formulieren ondersteunen clientscripts die de indeling en paginering van het formulier wijzigen. Zo wordt Purchase Order.xdp uitgevouwen en gepagineerd voor een eindeloze hoeveelheid gegevens als u deze opslaat als een dynamisch formulier
 * Dynamische formulieren ondersteunen alle eigenschappen van het formulier tijdens runtime, terwijl statische formulieren alleen een subset ondersteunen
 
-* [Raadpleeg dit document voor meer informatie over de verschillen tussen statische en dynamische PDF-formulieren](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
+* [ verwijs naar dit document om de verschillen tussen statische en dynamische pdf- vormen te begrijpen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >
@@ -86,7 +86,8 @@ Een gecertificeerd document biedt ontvangers van PDF-documenten en formulieren e
 
 ### Acrovormen
 
-Acroforms zijn de oudere interactieve formuliertechnologie van Adobe; ze zijn terug te vinden in Acrobat versie 3. Adobe biedt de [Acrobat Forms API-naslag](assets/FormsAPIReference.pdf), gedateerd mei 2003, om de technische details van deze technologie te verstrekken. Acrovormen zijn een combinatie van de volgende items:
+Acroforms zijn de oudere interactieve formuliertechnologie van Adobe; ze zijn terug te vinden in Acrobat versie 3. De Adobe verstrekt de [ Forms API Verwijzing van Acrobat ](assets/FormsAPIReference.pdf), gedateerd Mei 2003, om de technische details voor deze technologie te verstrekken. Acrovormen zijn een combinatie van de
+de volgende items:
 
 * Een traditionele PDF die de statische indeling en afbeeldingen van het formulier definieert.
 * Interactieve formuliervelden die op de voorgrond zijn bevestigd met de formuliergereedschappen van het Adobe Acrobat-programma. Deze formuliergereedschappen vormen een kleine subset van wat beschikbaar is in AEM Forms Designer.
@@ -115,7 +116,7 @@ Twee bestanden in de voorbeeldbestanden zijn gemaakt van hetzelfde Microsoft Wor
 
 Hoewel de documenten er hetzelfde uitzien, wordt het PDF/A-bestand geopend met een blauwe balk boven in het scherm, ten teken dat u dit document in de modus PDF/A weergeeft. Deze blauwe balk is een Acrobat-documentberichtenbalk die wordt weergegeven wanneer u bepaalde typen PDF-bestanden opent.
 
-![PDF-img](assets/pdfa-message.png)
+![ PDF-img ](assets/pdfa-message.png)
 
 De documentberichtenbalk bevat instructies en mogelijk knoppen waarmee u een taak kunt uitvoeren. Het heeft kleur-gecodeerd, en u zult de blauwe kleur zien wanneer u speciale types van PDF (zoals dit PDF/A dossier) evenals verklaarde en digitaal ondertekende PDF opent. De balk verandert in paars voor PDF forms en geel als u deelneemt aan een PDF-revisie.
 

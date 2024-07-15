@@ -25,10 +25,10 @@ De werkschema&#39;s worden typisch gebruikt om voorgelegde gegevens voor overzic
 
 ## Vereiste
 
-Controleer of je een werkende versie van AEM Forms hebt. Volg de [installatiegids](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) AEM Forms installeren en configureren
+Controleer of je een werkende versie van AEM Forms hebt. Gelieve te volgen de [ installatiegids ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) om AEM Forms te installeren en te vormen
 
 In de volgende video wordt uitgelegd hoe u de workflow Revisie en Goedkeuring kunt maken met AEM Forms Components
 >[!VIDEO](https://video.tv.adobe.com/v/40242?quality=12&learn=on)
 
 
-Als u om een of andere reden de workflow niet kunt samenstellen, kunt u de voltooide workflow downloaden van [hier](assets/review-submitted-data-workflow.zip) en importeer hetzelfde met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp) in op uw AEM.
+Als om wat reden u niet het werkschema kunt bouwen, kunt u het voltooide werkschema van [ hier downloaden ](assets/review-submitted-data-workflow.zip) en het zelfde invoeren gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp) binnen aan uw AEM instantie.

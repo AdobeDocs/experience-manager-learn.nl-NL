@@ -1,6 +1,6 @@
 ---
-title: AEM Forms as a Cloud Service communicatie
-description: Leer hoe AEM Forms as a Cloud Service Communicatie gebruiks-case steunt.
+title: AEM Forms as a Cloud Service
+description: Leer hoe AEM Forms as a Cloud Service de Communicatie gebruiks-case steunt.
 version: Cloud Service
 feature: Output Service
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Communicatie (uitvoerservice)
 
-Leer hoe AEM Forms as a Cloud Service het gebruik van communicatiekwesties ondersteunt.
+Leer hoe AEM Forms as a Cloud Service het gebruik van de communicatiekas ondersteunt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336967?quality=12&learn=on)

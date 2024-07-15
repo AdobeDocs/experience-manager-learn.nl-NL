@@ -20,7 +20,8 @@ ht-degree: 0%
 
 # Aangepaste processtap
 
-Hieronder volgt de volledige code van de stap voor aangepast proces waarmee de native bestanden worden geconverteerd en vervangen door de geconverteerde pdf&#39;s. Deze aangepaste stap zoekt naar alle bijlagen onder de mapnaam die als een procesargument in de workflow wordt opgegeven.
+Hieronder volgt de volledige code van de stap voor aangepast proces waarmee de native bestanden worden geconverteerd en vervangen door de geconverteerde pdf&#39;s.
+Deze aangepaste stap zoekt naar alle bijlagen onder de mapnaam die als een procesargument in de workflow wordt opgegeven.
 Deze aangepaste processtap gebruikt de methoden van de aangepaste DocumentCloudSDKS-service om PDF te maken.
 
 

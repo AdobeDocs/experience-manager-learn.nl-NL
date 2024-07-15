@@ -1,6 +1,6 @@
 ---
-title: Dispatcher Understanding caching
-description: Begrijp hoe de module van de Verzender het geheime voorgeheugen in werking stelt.
+title: Dispatcher begrijpen dat caching plaatsvindt
+description: Begrijp hoe de Dispatcher module het geheime voorgeheugen in werking stelt.
 topic: Administration, Performance
 version: 6.5
 role: Admin
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [&lt;- Vorige: uitleg van configuratiebestanden](./explanation-config-files.md)
 
-In dit document wordt uitgelegd hoe het in cache plaatsen van een Dispatcher plaatsvindt en hoe het kan worden geconfigureerd
+In dit document wordt uitgelegd hoe Dispatcher caching plaatsvindt en hoe het kan worden geconfigureerd
 
 ## Caching Directories
 
@@ -33,7 +33,7 @@ Wij gebruiken de volgende standaardgeheim voorgeheugenfolders in onze basislijni
 - Uitgever
    - `/mnt/var/www/html`
 
-Wanneer elk verzoek de Dispatcher oversteekt volgen de verzoeken de gevormde regels om een plaatselijk caching versie aan antwoord van in aanmerking komende punten te houden
+Wanneer elke aanvraag de Dispatcher doorloopt, volgen de aanvragen de geconfigureerde regels om een versie in de lokale cache te behouden als reactie op in aanmerking komende items
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Wanneer elk verzoek de Dispatcher oversteekt volgen de verzoeken de gevormde reg
 
 ## Configuratiebestanden
 
-Dispatcher bepaalt wat in het dialoogvenster `/cache {` sectie van om het even welk landbouwbedrijfdossier. 
+Dispatcher bepaalt wat als cacheable in de `/cache {` sectie van om het even welk landbouwbedrijfdossier kwalificeert. 
 In de de basislijnconfiguratielandbouwbedrijven van AMS, zult u onze hieronder getoonde omvat vinden:
 
 
@@ -55,7 +55,7 @@ In de de basislijnconfiguratielandbouwbedrijven van AMS, zult u onze hieronder g
 ```
 
 
-Raadpleeg de documentatie bij het maken van de regels voor wat u wilt opslaan of niet [hier](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Wanneer het creëren van de regels voor wat om al dan niet in het voorgeheugen onder te brengen, gelieve te verwijzen naar de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 
 ## Auteur in cache
@@ -65,7 +65,7 @@ Ze missen een enorme verbetering in prestaties en responsiviteit voor hun auteur
 
 Laten wij over de strategie spreken die in het vormen van onze auteurshandel wordt genomen om behoorlijk in het voorgeheugen onder te brengen.
 
-Hier volgt een basisauteur `/cache {` sectie van ons auteur landbouwdossier:
+Hier volgt een sectie van de basis auteur `/cache {` van ons dossier van de auteurshandel:
 
 
 ```
@@ -92,13 +92,13 @@ Hier volgt een basisauteur `/cache {` sectie van ons auteur landbouwdossier:
 }
 ```
 
-Het is belangrijk dat de `/docroot` wordt ingesteld op de cachemap voor de auteur.
+Het is belangrijk om hier op te merken dat `/docroot` aan de geheim voorgeheugenfolder voor auteur wordt geplaatst.
 
 >[!NOTE]
 >
->Zorg ervoor dat u `DocumentRoot` in de auteur `.vhost` bestand komt overeen met de boerderijen `/docroot` parameter
+>Zorg ervoor dat de `DocumentRoot` in het `.vhost` -bestand van de auteur overeenkomt met de `/docroot` -parameter
 
-De cacheregels bevatten de instructie die het bestand bevat `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` die de volgende regels bevat:
+De cacheregels bevatten een instructie die het bestand `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` bevat dat de volgende regels bevat:
 
 ```
 /0000 { 
@@ -132,15 +132,15 @@ De cacheregels bevatten de instructie die het bestand bevat `/etc/httpd/conf.dis
 ```
 
 In een auteurscenario, verandert de inhoud voortdurend en doelgericht. U wilt slechts punten in het voorgeheugen onderbrengen die niet vaak zullen veranderen.
-We hebben regels om in cache te plaatsen `/libs` omdat ze onderdeel zijn van de basislijn AEM installeren en worden gewijzigd totdat u een Service Pack, Cumulative Fix Pack, Upgrade of Hotfix hebt geïnstalleerd. Het in cache plaatsen van deze elementen heeft veel zin en heeft echt enorme voordelen van de ervaring van auteurs van eindgebruikers die de site gebruiken.
+We hebben regels om `/libs` in cache op te slaan, omdat ze onderdeel zijn van de basislijn AEM worden geïnstalleerd en worden gewijzigd totdat u een Service Pack, Cumulative Fix Pack, Upgrade of Hotfix hebt geïnstalleerd. Het in cache plaatsen van deze elementen heeft veel zin en heeft echt enorme voordelen van de ervaring van auteurs van eindgebruikers die de site gebruiken.
 
 >[!NOTE]
 >
->Onthoud dat deze regels ook in het cachegeheugen worden opgeslagen <b>`/apps`</b> dit is waar de code van de douanetoepassing leeft. Als u uw code op deze instantie ontwikkelt dan zal het zeer verwarrend blijken te zijn wanneer u sparen uw dossier en niet ziet of in UI wegens het dienen van een caching exemplaar nadenken. De bedoeling is hier dat als u een plaatsing van uw code in AEM het doet het ook niet vaak zou zijn en een deel van uw plaatsingsstappen zou moeten zijn om het auteursgeheime voorgeheugen te ontruimen. Ook hier is het voordeel enorm, waardoor uw code sneller kan worden uitgevoerd voor de eindgebruikers.
+>Onthoud dat deze regels ook <b>`/apps`</b> in cache plaatsen, dit is waar aangepaste toepassingscode zich bevindt. Als u uw code op deze instantie ontwikkelt dan zal het zeer verwarrend blijken te zijn wanneer u sparen uw dossier en niet ziet of in UI wegens het dienen van een caching exemplaar nadenken. De bedoeling is hier dat als u een plaatsing van uw code in AEM het doet het ook niet vaak zou zijn en een deel van uw plaatsingsstappen zou moeten zijn om het auteursgeheime voorgeheugen te ontruimen. Ook hier is het voordeel enorm, waardoor uw code sneller kan worden uitgevoerd voor de eindgebruikers.
 
 ## ServeOnStale (AKA Serve on Stale / SOS)
 
-Dit is een van die onderdelen van een functie van de Dispatcher. Als de uitgever onder lading is of niet meer reageert zal het typisch een 502 of 503 http antwoordcode werpen. Als dat gebeurt en deze eigenschap wordt toegelaten zal de Dispatcher worden geïnstrueerd om nog te dienen wat de inhoud nog in het geheime voorgeheugen als beste inspanning is zelfs als het geen vers exemplaar is. Het is beter om iets te dienen als u het eerder dan enkel een foutenmelding hebt tonen die geen functionaliteit aanbiedt.
+Dit is een van die uitingen van een kenmerk van de Dispatcher. Als de uitgever onder lading is of niet meer reageert zal het typisch een 502 of 503 http antwoordcode werpen. Als dat gebeurt en deze eigenschap wordt toegelaten zal Dispatcher worden geïnstrueerd om nog te dienen wat de inhoud nog in het geheime voorgeheugen als beste inspanning is zelfs als het geen vers exemplaar is. Het is beter om iets te dienen als u het eerder dan enkel een foutenmelding hebt tonen die geen functionaliteit aanbiedt.
 
 >[!NOTE]
 >
@@ -157,21 +157,21 @@ Dit plaatsen kan in om het even welk landbouwbedrijf worden geplaatst maar slech
 
 >[!NOTE]
 >
->Één van het normale gedrag van de module van de Verzender is dat als een verzoek een vraagparameter in URI heeft (typisch getoond als `/content/page.html?myquery=value`) slaat het caching van het dossier over en gaat direct naar de AEM instantie. Het overweegt dit verzoek om een dynamische pagina en zou niet in het voorgeheugen ondergebracht moeten worden. Dit kan negatieve gevolgen voor geheim voorgeheugenefficiency veroorzaken.
+>Een van de normale gedragingen van de Dispatcher-module is dat als een aanvraag een queryparameter in de URI heeft (wordt meestal weergegeven als `/content/page.html?myquery=value` ), deze het cachegeheugen van het bestand overslaat en rechtstreeks naar de AEM-instantie gaat. Het overweegt dit verzoek om een dynamische pagina en zou niet in het voorgeheugen ondergebracht moeten worden. Dit kan negatieve gevolgen voor geheim voorgeheugenefficiency veroorzaken.
 
-Zie dit [artikel](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) het tonen van hoe belangrijk de vraagparameters uw plaatsprestaties kunnen beïnvloeden.
+Zie dit [ artikel ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) tonen hoe de belangrijke vraagparameters uw plaatsprestaties kunnen beïnvloeden.
 
-Standaard wilt u de `ignoreUrlParams` voorschriften `*`.  Betekenis dat alle vraagparameters worden genegeerd en alle pagina&#39;s om ongeacht de gebruikte parameters in het voorgeheugen worden geplaatst.
+Standaard wilt u de `ignoreUrlParams` -regels zo instellen dat `*` wordt toegestaan.  Betekenis dat alle vraagparameters worden genegeerd en alle pagina&#39;s om ongeacht de gebruikte parameters in het voorgeheugen worden geplaatst.
 
 Hier is een voorbeeld waarin iemand een diepgaande-koppelingsverwijzingsmechanisme voor sociale media heeft gebouwd dat de argumentverwijzing in URI gebruikt om te weten waar de persoon uit kwam.
 
-*Genegeerd voorbeeld:*
+*Genegeerde Voorbeeld:*
 
 - https://www.we-retail.com/home.html?reference=android
 - https://www.we-retail.com/home.html?reference=facebook
 
 De pagina is 100% cacheable maar houdt geen cache omdat de argumenten aanwezig zijn. 
-Uw `ignoreUrlParams` als lijst van gewenste personen helpt dit probleem op te lossen:
+Als u `ignoreUrlParams` configureert als lijst van gewenste personen, kunt u dit probleem verhelpen:
 
 ```
 /cache { 
@@ -180,9 +180,9 @@ Uw `ignoreUrlParams` als lijst van gewenste personen helpt dit probleem op te lo
     }
 ```
 
-Wanneer de verzender het verzoek ziet, negeert hij het feit dat het verzoek de `query` parameter van `?` verwijzen en de pagina nog steeds in de cache plaatsen
+Nu de Dispatcher de aanvraag ziet, negeert deze het feit dat de aanvraag de `query` parameter of `?` reference heeft en toch de pagina in cache plaatst
 
-<b>Dynamisch voorbeeld:</b>
+<b> Dynamisch Voorbeeld:</b>
 
 - https://www.we-retail.com/search.html?q=fruit
 - https://www.we-retail.com/search.html?q=vegetables
@@ -191,7 +191,7 @@ Houd in mening dat als u vraagparameters hebt die een pagina maken het output te
 
 Hier is de HTML-bron van elke zoekopdracht:
 
-`/search.html?q=fruit`:
+`/search.html?q=fruit` :
 
 ```
 <html>
@@ -229,10 +229,10 @@ Hier is de HTML-bron van elke zoekopdracht:
 </html>
 ```
 
-Als u `/search.html?q=fruit` eerst zou het de html in de cache plaatsen met resultaten die vruchten afwerpen .
+Als u `/search.html?q=fruit` eerst bezocht, zou het HTML met resultaten in de cache plaatsen die fruit tonen.
 
-Vervolgens bezoekt u `/search.html?q=vegetables` in de tweede plaats zou het resultaat van de fruitteelt zijn .
-Dit komt omdat de queryparameter van `q` wordt genegeerd wat caching betreft.  Om deze kwestie te vermijden zult u nota moeten nemen van pagina&#39;s die verschillende HTML die op vraagparameters worden gebaseerd teruggeven en caching voor die ontkennen.
+Vervolgens bezoekt u `/search.html?q=vegetables` seconde, maar geeft u resultaten van fruit.
+De reden hiervoor is dat de queryparameter van `q` wordt genegeerd voor caching.  Om deze kwestie te vermijden zult u nota moeten nemen van pagina&#39;s die verschillende HTML die op vraagparameters worden gebaseerd teruggeven en caching voor die ontkennen.
 
 Voorbeeld:
 
@@ -252,7 +252,7 @@ Pagina&#39;s die queryparameters gebruiken via Javascript, werken nog steeds vol
 
 ## Responsheaders in cache plaatsen
 
-Het is vrij duidelijk dat de Dispatcher in de cache zit `.html` pagina&#39;s en clientlibs (bv. `.js`, `.css`), maar wist u dat het bepaalde antwoordkopballen langs de inhoud in een dossier met de zelfde naam maar ook kan in het voorgeheugen onder brengen `.h` bestandsextensie. Hierdoor is de volgende reactie niet alleen mogelijk op de inhoud, maar ook op de antwoordheaders die ermee moeten worden verbonden vanuit de cache.
+Het is vrij duidelijk dat de Dispatcher `.html` pagina&#39;s en clientlibs (d.w.z. `.js`, `.css`) in cache plaatst, maar wist u dat het ook bepaalde antwoordheaders kan opslaan naast de inhoud in een bestand met dezelfde naam maar met een `.h` -bestandsextensie. Hierdoor is de volgende reactie niet alleen mogelijk op de inhoud, maar ook op de antwoordheaders die ermee moeten worden verbonden vanuit de cache.
 
 AEM kan meer dan alleen UTF-8-codering verwerken
 
@@ -260,7 +260,7 @@ Soms hebben de punten speciale kopballen die helpen de het coderen van geheime v
 
 Deze waarden worden standaard verwijderd wanneer ze in de cache worden opgeslagen en de Apache httpd-webserver verwerkt het middel zelf met de normale bestandsafhandelingsmethoden. Normaal gesproken is dit beperkt tot Mime Type guessing op basis van bestandsextensies.
 
-Als u de Dispatcher-cache van het element en de gewenste koppen hebt, kunt u de juiste ervaring beschikbaar maken en ervoor zorgen dat alle details het aan de clientbrowser maken.
+Als u het element en de gewenste koppen in de Dispatcher-cache hebt opgeslagen, kunt u de juiste ervaring beschikbaar maken en ervoor zorgen dat alle gegevens dit in de clientbrowser doen.
 
 Hier is een voorbeeld van een landbouwbedrijf met de kopballen aan gespecificeerde geheime voorgeheugen:
 
@@ -290,11 +290,11 @@ Op AEM systemen die veel activiteit hebben van auteurs die veel paginanavigaties
 
 ### Voorbeeld van hoe dit werkt:
 
-Als u 5 verzoeken hebt om de validatie ongeldig te maken `/content/exampleco/en/` dit alles gebeurt binnen een periode van drie seconden .
+Als u 5 verzoeken hebt om `/content/exampleco/en/` ongeldig te maken, gebeurt dit allemaal binnen een periode van 3 seconden.
 
-Met deze functie zou u de cachemap ongeldig maken `/content/exampleco/en/` 5 keer
+Met deze functie zou u de cachemap vijf keer ongeldig maken `/content/exampleco/en/`
 
-Met deze functie ingeschakeld en ingesteld op 5 seconden, wordt de cachemap ongeldig gemaakt `/content/exampleco/en/` <b>eenmaal</b>
+Met deze eigenschap op en reeks aan 5 seconden zou het de geheim voorgeheugenfolder `/content/exampleco/en/` <b> eens </b> ongeldig maken
 
 Hier is een voorbeeldsyntaxis van deze eigenschap die voor 5 tweede graadperiode wordt gevormd:
 
@@ -305,7 +305,7 @@ Hier is een voorbeeldsyntaxis van deze eigenschap die voor 5 tweede graadperiode
 
 ## Op TTL gebaseerde validatie
 
-Een nieuwere functie van de module Dispatcher is `Time To Live (TTL)` gebaseerde validatieopties voor items die in cache zijn geplaatst. Wanneer een item in de cache wordt geplaatst, zoekt het naar de aanwezigheid van cachebeheerkoppen en genereert het een bestand in de cachemap met dezelfde naam en een `.ttl` extensie.
+Een nieuwere functie van de Dispatcher-module was op `Time To Live (TTL)` gebaseerde validatieopties voor items in de cache. Wanneer een item in de cache wordt geplaatst, zoekt het naar de aanwezigheid van cachebeheerkoppen en genereert het een bestand in de cachemap met dezelfde naam en een extensie `.ttl` .
 
 Hier is een voorbeeld van de eigenschap die in het dossier van de landbouwbedrijfconfiguratie wordt gevormd:
 
@@ -316,7 +316,7 @@ Hier is een voorbeeld van de eigenschap die in het dossier van de landbouwbedrij
 
 >[!NOTE]
 >
->Houd in mening dat AEM nog moet worden gevormd om de kopballen van TTL voor Verzender te verzenden om hen te respecteren. Als u deze functie inschakelt, kan de Dispatcher alleen weten wanneer de bestanden worden verwijderd waarvoor AEM cachebeheerkoppen heeft verzonden. Als AEM niet begint met het verzenden van TTL-headers, zal Dispatcher hier niets speciaals doen.
+>Houd in mening dat AEM nog moet worden gevormd om de kopballen van TTL voor Dispatcher te verzenden om hen te respecteren. Als u deze functie inschakelt, kan de Dispatcher alleen weten wanneer de bestanden worden verwijderd waarvoor AEM cachebeheerkoppen heeft verzonden. Als AEM niet begint met het verzenden van TTL-headers, zal Dispatcher hier niets speciaals doen.
 
 ## Regels voor filter Cache
 
@@ -336,6 +336,6 @@ Hier is een voorbeeld van een basislijnconfiguratie waarvoor elementen op een ui
 
 We willen onze gepubliceerde site zo hebzuchtig mogelijk maken en alles in de cache plaatsen.
 
-Als er elementen zijn die de ervaring breken wanneer caching u regels kunt toevoegen om de optie te verwijderen om dat punt in het voorgeheugen onder te brengen. Zoals u in het voorbeeld hierboven ziet, mogen de csrf-tokens nooit in de cache worden geplaatst en zijn deze uitgesloten. Nadere bijzonderheden over het schrijven van deze regels zijn te vinden [hier](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Als er elementen zijn die de ervaring breken wanneer caching u regels kunt toevoegen om de optie te verwijderen om dat punt in het voorgeheugen onder te brengen. Zoals u in het voorbeeld hierboven ziet, mogen de csrf-tokens nooit in de cache worden geplaatst en zijn deze uitgesloten. De verdere details bij het schrijven van deze regels kunnen [ hier worden gevonden ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 [Volgende -> Variabelen gebruiken en begrijpen](./variables.md)

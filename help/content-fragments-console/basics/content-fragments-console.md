@@ -1,6 +1,6 @@
 ---
 title: Overzicht van de Console van inhoudsfragmenten
-description: Leer over de basiseigenschappen en de functionaliteit van AEM as a Cloud Service de auteursconsole van de Fragments van de Inhoud.
+description: Meer informatie over de basisfuncties en -functies van de AEM as a Cloud Service Content Fragments authoring console.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Overzicht van de Console van inhoudsfragmenten
 
-Leer over de basiseigenschappen en de functionaliteit van AEM as a Cloud Service de auteursconsole van de Fragments van de Inhoud.
+Meer informatie over de basisfuncties en -functies van de AEM as a Cloud Service Content Fragments authoring console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409492?quality=12&learn=on)

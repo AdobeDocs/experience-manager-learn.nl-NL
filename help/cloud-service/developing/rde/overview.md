@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Snelle ontwikkelomgevingen
 
-Leer over Snelle Ontwikkelomgeving (RDE) in AEM as a Cloud Service.
+Meer informatie over Rapid Development Environment (RDE) in AEM as a Cloud Service.
 
 Deze videoomtrek:
 
@@ -31,12 +31,12 @@ Deze videoomtrek:
 
 ## Volgende stap
 
-Meer informatie [instellen](./how-to-setup.md) een RDE in AEM as a Cloud Service.
+Leer [ hoe te opstelling ](./how-to-setup.md) RDE in AEM as a Cloud Service.
 
 ## Aanvullende bronnen
 
-[Inleiding tot RDE-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#introduction)
+[ Inleiding aan de documentatie van RDE ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#introduction)
 
-[Cloud Manager CI/CD Pipelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)
+[ Cloud Manager CI/CD Pijpleidingen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)
 
-[De ontwikkelings-IDE instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html)
+[ opstelling ontwikkelingswinde ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html)

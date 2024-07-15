@@ -28,10 +28,10 @@ Acrobat Sign gebruiken met AEM Forms
 
 >[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
 
-*Deze video doorloopt het proces om de Acrobat Sign-cloudservice in te stellen en meerdere handtekeningvelden toe te voegen aan een AEM adaptief formulier.*
+*Deze video loopt door het proces om de de wolkendienst van Acrobat Sign te vestigen en veelvoudige handtekeningsgebieden toe te voegen aan een AEM Aangepaste Vorm.*
 
 >[!NOTE]
 >
 >Deze functie is alleen beschikbaar vanaf AEM 6.3.
 
-Ga naar [AEM Forms-voorbeelden](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) pagina voor een koppeling naar een live demo van deze mogelijkheid.
+Gelieve te bezoeken de [ steekproeven van AEM Forms ](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) pagina voor een verbinding aan een levende demo van dit vermogen.

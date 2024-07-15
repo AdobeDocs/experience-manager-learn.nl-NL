@@ -1,5 +1,5 @@
 ---
-title: Wolk 5 - Publiceren, publicatie van gebeurtenissen in Edge Delivery Services ongedaan maken
+title: Wolk 5 - Publish, publicatiegebeurtenissen in Edge Delivery Services ongedaan maken
 description: Verken gebeurtenissen die worden geactiveerd bij het publiceren en ongedaan maken van publicatie in Edge Delivery Services en gebruik gevallen en voorbeelden voor het gebruik van deze gebeurtenissen.
 feature: Edge Delivery Services
 topic: Development
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Wolk 5 - Publiceren, publicatie van gebeurtenissen in Edge Delivery Services ongedaan maken
+# Wolk 5 - Publish, publicatiegebeurtenissen in Edge Delivery Services ongedaan maken
 
 Verken gebeurtenissen die worden geactiveerd bij het publiceren en ongedaan maken van publicatie in Edge Delivery Services en gebruik gevallen en voorbeelden voor het gebruik van deze gebeurtenissen.
 

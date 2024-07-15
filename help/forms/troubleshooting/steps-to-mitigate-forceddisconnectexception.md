@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Stappen om ForcedDisconnectException te verlichten
 
-*Deze video loopt door de mogelijke oorzaken en de stappen om ForcedDisconnectException te verlichten*
+*Deze video loopt door de mogelijke oorzaken en de stappen om ForcedDisconnectException* te verlichten
 
 >[!VIDEO](https://video.tv.adobe.com/v/335483?quality=12&learn=on)

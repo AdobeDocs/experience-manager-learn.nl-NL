@@ -1,6 +1,6 @@
 ---
 title: Werken met de gebruikerservaring van Share-opdrachten voor bedrijfsmiddelen
-description: Materialen voor zowel de functionele als de technische overeenkomst Activa Share Commons
+description: Materialen voor zowel de functionele als de technische kennis van Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
 feature: Asset Distribution
@@ -35,5 +35,5 @@ Deze video verstrekt een beknopt overzicht van de basiscomponenten-authoring mog
 
 ## Aanvullende bronnen{#additional-resources}
 
-* [Downloads voor de release van Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
-* [ACS AEM Commons 3.11.0+ versiedownloads](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [ de versiedownloads van de Commons van het Aandeel van activa ](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
+* [ ACS AEM Commons 3.11.0+ versiedownloads ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)

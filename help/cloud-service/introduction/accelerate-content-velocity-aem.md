@@ -28,7 +28,7 @@ AEM stijlsystemen hebben vier belangrijke voordelen:
 
 De installatie in 5 stappen lijkt sterk op een standaardworkflow voor de ontwikkeling van componenten.
 
-| **Leiderschap** | **Designer** | **Ontwikkelaar/architect** | **Sjabloonauteur** | **Inhoudsauteur** |
+| **Leiding** | **Designer** | **Ontwikkelaar/Architect** | **Auteur van het Malplaatje** | **Inhoudsauteur** |
 | --- | --- | --- | --- | --- |
 | Bepaalt de inhoud en de doelstellingen voor die component | Bepaalt visuele en ervaringspresentatie van inhoud | Ontwikkelt CSS en JS om ervaring te steunen; bepaalt en verstrekt te gebruiken klassennamen | Vormt sjabloonbeleid voor opgemaakte componenten door CSS-klassennamen toe te voegen die door ontwikkelaars zijn gedefinieerd. Gebruikervriendelijke namen moeten voor elke stijl worden gebruikt. | Hiermee past u tijdens het ontwerpen van pagina&#39;s waar nodig stijlen toe om de gewenste vormgeving te bereiken |
 
@@ -53,7 +53,7 @@ Stijlsystemen hebben een aantal verschillende kleuren:
 
 >[!NOTE]
 >
->Voor een demo over deze functies raden we u aan onze [Webinar voor succes van klant](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) met Will Brisbane en Joseph Van Buskirk.
+>Voor een demo van deze eigenschappen, adviseren wij het letten op ons [ Wbinar van het Succes van de Klant ](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) met Will Brisbane en Joseph Van Buskirk.
 
 ## Aanbevolen procedures
 
@@ -91,6 +91,6 @@ Het is simpelweg schoner. De HTML binnen de kerncomponenten is zeer uitgebreid. 
 
 Tot slot is het gebruik van Stijlsystemen meer kunst dan wetenschap. Zoals wij hebben besproken, zijn er een aantal beste praktijken, maar u zult flexibiliteit in hoe te hebben de opstelling van uw organisatie aanpassen.
 
-Voor meer informatie raadpleegt u onze [Klantsucces Webinar](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) met Will Brisbane en Joseph Van Buskirk.
+Voor meer informatie, controleer ons [ Succes Webinar van de Klant ](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) met Will Brisbane en Joseph Van Buskirk.
 
-Meer informatie over strategie en leiderschap bij de [Klant geslaagd](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Leer meer over strategie en gedachte leiderschap bij de [ hub van het Succes van de Klant ](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

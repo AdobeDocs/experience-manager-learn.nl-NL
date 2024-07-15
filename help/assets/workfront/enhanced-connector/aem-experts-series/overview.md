@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Workfront en AEM Assets integreren met de verbeterde connector
 
-![AEM Deskundigenreeks](./assets/banner.png)
+![ AEM de Reeks van Deskundigen ](./assets/banner.png)
 
 Deelnemen aan de Workfront- en Experience Manager Assets-experts van Adobe in deze videoreeks van vier delen, aangezien ze de in- en uitgangen van de integratie van Workfront en AEM Assets met behulp van de verbeterde connector demonstreren en bespreken.
 
@@ -40,8 +40,8 @@ Deze vier deeldeskundigenreeksen volgen op een groep deskundigen van de Adobe - 
              src="./assets/setup.png">
       </a>
       <div>
-         <a href="./setup.md"><strong>Instellen en eerste configuratie</strong></a>
-         <br/><em>Deel 1/4</em>
+         <a href="./setup.md"><strong> Opstelling en aanvankelijke configuratie </strong></a>
+         <br/><em> Deel 1/4 </em>
       </div>
       <p>
         <br/>
@@ -55,8 +55,8 @@ Deze vier deeldeskundigenreeksen volgen op een groep deskundigen van de Adobe - 
              src="./assets/custom-forms.png">
       </a>
       <div>
-         <a href="./custom-forms.md"><strong>Aangepaste Workfront-formulieren en toewijzing van metagegevens</strong></a>
-         <br/><em>Deel 2/4</em>
+         <a href="./custom-forms.md"><strong> de douaneformulieren van Workfront en meta-gegevensafbeelding </strong></a>
+         <br/><em> Deel 2/4 </em>
       </div>
       <p>
         <br/>
@@ -70,8 +70,8 @@ Deze vier deeldeskundigenreeksen volgen op een groep deskundigen van de Adobe - 
              src="./assets/aem-tags.png">
       </a>
       <div>
-         <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong>AEM tags, aan een project gekoppelde mappen en mapmetagegevens</strong></a>
-         <br/><em>Deel 3/4</em> 
+         <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong> AEM Markeringen, project verbonden omslagen, en omslagmeta-gegevens </strong></a>
+         <br/><em> Deel 3/4 </em> 
       </div>
       <p>
         <br/>
@@ -85,8 +85,8 @@ Deze vier deeldeskundigenreeksen volgen op een groep deskundigen van de Adobe - 
              src="./assets/advanced.png">
       </a>
       <div>
-         <a href="./advanced-settings-and-workflows.md"><strong>Geavanceerde instellingen en workflows</strong></a>
-         <br/><em>Deel 4/4</em>
+         <a href="./advanced-settings-and-workflows.md"><strong> Geavanceerde montages en werkschema's </strong></a>
+         <br/><em> Deel 4/4 </em>
       </div>
       <p>
         <br/>

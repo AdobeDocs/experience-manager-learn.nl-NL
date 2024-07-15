@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen voor het vastleggen van logbestanden voor foutopsporing voor mobiele formulieren
 
-*Deze video doorloopt de stappen voor het vastleggen van logbestanden voor foutopsporing voor mobiele formulieren.*
+*Deze video loopt door de stappen om te vangen zuivert logboeken voor mobiele vormen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)

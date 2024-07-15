@@ -33,9 +33,9 @@ Als u deze zelfstudie wilt volgen, kunt u het beste het volgende doen:
 
 
 
-Als u een ontwikkelaar bent en de code en andere details van deze implementatie van het gebruiksgeval wilt begrijpen, gelieve dit in te voeren [AEM project in of VSCode of IntelliJ.](assets/azuredemoproject.zip)
+Als u een ontwikkelaar bent en de code en andere details van deze implementatie van het gebruiksgeval wilt begrijpen, gelieve dit [ AEM project in of VSCode of IntelliJ in te voeren.](assets/azuredemoproject.zip)
 
-Als u dit voorbeeld alleen wilt laten werken op uw lokale systeem, volgt u de vermelde stappen [deel5 van deze zelfstudie](./part5.md)
+Als u enkel deze steekproef die aan uw lokaal systeem werkt wilt krijgen, te volgen gelieve de vermelde stappen [ part5 van dit leerprogramma ](./part5.md)
 
 De volgende stappen waren betrokken bij het creëren van de oplossing
 

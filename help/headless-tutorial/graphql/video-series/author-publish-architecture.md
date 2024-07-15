@@ -1,6 +1,6 @@
 ---
-title: Auteur- en publicatiearchitectuur met AEM GraphQL
-description: Leer hoe en wanneer u AEM auteur- en publicatieomgevingen kunt gebruiken bij het gebruik van AEM GraphQL API's.
+title: Auteur- en Publish-architectuur met AEM GraphQL
+description: Leer hoe en wanneer u AEM auteur- en Publish-omgevingen kunt gebruiken wanneer u GraphQL API's AEM.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ---
 
-# Auteur- en publicatiearchitectuur
+# Auteur- en Publish-architectuur
 
-Leer hoe en wanneer u AEM auteur- en publicatieomgevingen kunt gebruiken bij het gebruik van AEM GraphQL API&#39;s.
+Leer hoe en wanneer u AEM auteur- en Publish-omgevingen kunt gebruiken wanneer u GraphQL API&#39;s AEM.
 
 In deze video zult u:
 
-+ Begrijp de AEM Auteur en publiceer architectuur en hoe de inhoud wordt gepubliceerd
-+ Leer de beste werkwijzen voor levering zonder kop met een AEM publicatieomgeving
++ Begrijp de AEM Auteur en de architectuur van Publish en hoe de inhoud wordt gepubliceerd
++ Leer beste praktijken voor hoofdloze levering met een milieu van AEM Publish
 
 >[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)

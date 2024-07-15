@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Hoe te om prestatiesverwante kwesties in AEM problemen op te lossen
 
-*Deze video doorloopt de stappen om prestatiegerelateerde kwesties in AEM problemen op te lossen.*
+*Deze video loopt door de stappen om prestaties verwante kwesties in AEM problemen op te lossen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335472?quality=12&learn=on)

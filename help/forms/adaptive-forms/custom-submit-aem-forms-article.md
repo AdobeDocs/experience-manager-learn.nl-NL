@@ -22,7 +22,7 @@ Snelle en eenvoudige manier om uw eigen aangepaste verzendactie te maken voor ad
 
 >[!NOTE]
 >De code in dit artikel werkt niet met op kerncomponenten gebaseerde adaptieve formulieren.
->[Het equivalente artikel voor het op kerncomponenten gebaseerde adaptieve formulier is hier beschikbaar](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
+>[Het gelijkwaardige artikel voor op kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
 
 
 In dit artikel worden de stappen doorlopen die nodig zijn om een aangepaste verzendactie te maken voor de verwerking van Adaptive Forms-verzendingen.
@@ -74,4 +74,4 @@ In dit artikel worden de stappen doorlopen die nodig zijn om een aangepaste verz
 
 Nu ziet u &quot;CustomSubmitHelpx&quot; in de verzendacties van uw Adaptief formulier, zoals in deze afbeelding wordt getoond.
 
-![Adaptief formulier met Aangepast verzenden](assets/capture-2.gif)
+![ Aangepast Vorm met Douane legt ](assets/capture-2.gif) voor

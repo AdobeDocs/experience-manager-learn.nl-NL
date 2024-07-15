@@ -28,23 +28,23 @@ De volgende stappen werden gevolgd om het gemaakte project te migreren gebruiken
 
 * Opdrachtprompt openen en naar c:\cloudmanager navigeren
 * Gemaakt project maken met het nieuwste archetype.
-* Kopieer en plak de inhoud van de [tekstbestand](assets/creating-maven-project.txt) in uw opdrachtpromptvenster. Afhankelijk van het [nieuwste versie](https://github.com/adobe/aem-project-archetype/releases). Archetype 33 bevat nieuwe AEM Forms-thema&#39;s.
-Aangezien we het nieuwe gefabriceerde project maken in de cloudmanager-map die al een aem-banking-applicatieproject heeft, moet u het **DartifactId** van een &#39;aem-banking&#39;-toepassing naar iets anders. Ik heb voor dit artikel gebruik gemaakt van aem-banking-application1.
+* Kopieer en kleef de inhoud van het [ tekstdossier ](assets/creating-maven-project.txt) in uw venster van de bevelherinnering. U kunt DarchetypeVersion=33 afhankelijk van de [ recentste versie ](https://github.com/adobe/aem-project-archetype/releases) moeten veranderen. Archetype 33 bevat nieuwe AEM Forms-thema&#39;s.
+Aangezien wij het nieuwe geleide project in de cloudmanager omslag creëren die reeds a-bank-toepassing project heeft, zou u **DartifactId** van a-bank-toepassing in iets anders moeten veranderen. Ik heb voor dit artikel gebruik gemaakt van aem-banking-application1.
 
 >[!NOTE]
 >
->Als u dit nieuwe project zoals is de instantie van de cloudservice zal niet HandleFormSubmission en SubmitToAEMServlet hebben. Dit komt omdat elke keer dat u een project implementeert met gebruik van Cloud Manager alles onder de `/apps` map wordt verwijderd en overschreven.
+>Als u dit nieuwe project zoals is de instantie van de cloudservice zal niet HandleFormSubmission en SubmitToAEMServlet hebben. Dit komt doordat elke keer dat u een project implementeert met Cloud Manager, alles in de map `/apps` wordt verwijderd en overschreven.
 
 ## Java-code kopiëren
 
 Zodra uw project met succes wordt gecreeerd, kunt u beginnen code/configuraties etc., van oud project aan dit nieuwe project te kopiëren
 
-* Kopieer de HandleFormSubmission servlet van ```C:\CloudManager\aem-banking-application\core\src\main\java\com\aem\bankingapplication\core\servlets```
+* Kopieer het HandleFormSubmission servlet van ```C:\CloudManager\aem-banking-application\core\src\main\java\com\aem\bankingapplication\core\servlets```
 tot
   ```C:\CloudManager\aem-banking-application1\core\src\main\java\com\aem\bankingapplication\core\servlets```
 
 * Kopieer de CustomSubmit vanuit
-  ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` van een elektronisch-bancaire toepassing tot een aem-banking-application1-project
+  ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` van aem-bank-application aan aem-banking-application1 project
 
 * het nieuwe project importeren in IntelliJ
 

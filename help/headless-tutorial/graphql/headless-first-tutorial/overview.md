@@ -25,11 +25,11 @@ ht-degree: 1%
 
 Welkom bij de zelfstudie over het ontwikkelen van een webervaring met React, volledig aangedreven door AEM headless API&#39;s en GraphQL. In deze zelfstudie begeleiden we u door het proces van het maken van een dynamische en interactieve webtoepassing door de kracht van React, Adobe Experience Manager (AEM) Headless API&#39;s en GraphQL te combineren.
 
-React is een populaire bibliotheek JavaScript voor het bouwen van gebruikersinterfaces, die voor zijn eenvoud, herbruikbaarheid, en op component-gebaseerde architectuur wordt gekend. AEM biedt robuuste mogelijkheden voor inhoudsbeheer en stelt Headless API&#39;s beschikbaar waarmee ontwikkelaars toegang hebben tot inhoud en gegevens die in AEM zijn opgeslagen via een groot aantal kanalen en toepassingen.
+React is een populaire JavaScript-bibliotheek voor het bouwen van gebruikersinterfaces, die bekend staat om de eenvoud, herbruikbaarheid en componentarchitectuur. AEM biedt robuuste mogelijkheden voor inhoudsbeheer en stelt Headless API&#39;s beschikbaar waarmee ontwikkelaars toegang hebben tot inhoud en gegevens die in AEM zijn opgeslagen via een groot aantal kanalen en toepassingen.
 
 Door gebruik te maken van AEM headless API&#39;s kunt u inhoud, elementen en gegevens ophalen van uw AEM-instantie en deze gebruiken om uw React-toepassing aan te sturen. GraphQL, een flexibele querytaal voor API&#39;s, biedt een efficiënte en nauwkeurige manier om specifieke gegevens van uw AEM-instantie aan te vragen, waardoor een naadloze integratie tussen React en AEM mogelijk wordt.
 
-![AEM eerste zelfstudie zonder hoofd](./assets/overview/overview.png)
+![ AEM Eerste zelfstudie zonder kop ](./assets/overview/overview.png)
 
 Tijdens deze zelfstudie doorlopen we u stap voor stap een webervaring opbouwen met React en AEM Headless API&#39;s met GraphQL. U leert hoe u uw ontwikkelomgeving kunt instellen, een verbinding tot stand kunt brengen tussen Reageren en AEM, inhoud kunt ophalen met GraphQL-query&#39;s en deze dynamisch kunt renderen in uw webtoepassing.
 
@@ -47,21 +47,21 @@ Aan het einde van deze zelfstudie hebt u een goed inzicht in hoe u React, AEM He
 
 ### AEM as a Cloud Service
 
-Deze zelfstudie vereist beheerderstoegang tot een AEM as a Cloud Service omgeving.
+Deze zelfstudie vereist beheerderstoegang tot een AEM as a Cloud Service-omgeving.
 
 ### Software
 
-+ [Node.js v16+](https://nodejs.org/en/)
-   + De nodeversie controleren door uit te voeren `node -v` vanaf de opdrachtregel
-+ [npm 6+](https://www.npmjs.com/)
-   + Controleer uw npm-versie door uit te voeren `npm -v` vanaf de opdrachtregel
-+ [Git](https://git-scm.com/)
-   + Uw it-versie controleren door uit te voeren `git -v` vanaf de opdrachtregel
++ [ Node.js v16+ ](https://nodejs.org/en/)
+   + Controleer uw knooppuntversie door `node -v` van de bevellijn in werking te stellen
++ [ npm 6+ ](https://www.npmjs.com/)
+   + Controleer uw npm-versie door `npm -v` vanaf de opdrachtregel uit te voeren
++ [ Git ](https://git-scm.com/)
+   + Controleer uw it-versie door `git -v` uit te voeren vanaf de opdrachtregel
 
-Gebruiken [node version Manager (nvm)](https://github.com/nvm-sh/nvm) om het hebben van veelvoudige versies van node.js op de zelfde machine te richten.
+De manager van de knoopversie van het gebruik [ (nvm) ](https://github.com/nvm-sh/nvm) om het hebben van veelvoudige versies van node.js op de zelfde machine te richten.
 
 Zorg ervoor dat u rechten hebt om software wereldwijd op uw computer te installeren.
 
 ## Volgende stap
 
-Nu uw omgeving is ingesteld, gaan we naar de volgende stap: [Inhoud instellen en ontwerpen in AEM as a Cloud Service](./1-content-modeling.md)
+Nu uw milieu opstelling is, gaan op de volgende stap: [ Opstelling en auteursinhoud in AEM as a Cloud Service ](./1-content-modeling.md)

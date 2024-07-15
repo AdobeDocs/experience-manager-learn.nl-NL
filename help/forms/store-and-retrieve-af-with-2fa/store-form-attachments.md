@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Formulierbijlagen opslaan
 
-Wanneer u bijlagen toevoegt aan een adaptief formulier, worden de bijlagen opgeslagen op een tijdelijke locatie in de CRX-opslagplaats. Als we de kwestie willen gebruiken om te werken, moeten we de formulierbijlagen opslaan op een nieuwe locatie in de CRX-opslagplaats.
+Wanneer u bijlagen toevoegt aan een adaptief formulier, worden de bijlagen opgeslagen op een tijdelijke locatie in de CRX-opslagplaats. Als u het gebruik van hoofdletters en kleine letters wilt gebruiken, moeten we de formulierbijlagen opslaan op een nieuwe locatie in de CRX-opslagplaats.
 
-De dienst OSGi wordt gecreeerd om de vormgehechtheid in een nieuwe plaats in de bewaarplaats van CRX op te slaan. Een nieuwe dossierkaart wordt gecreeerd met de nieuwe plaats van de gehechtheid in CRX en teruggekeerd aan de roepende toepassing.
+De dienst OSGi wordt gecreeerd om de vormgehechtheid in een nieuwe plaats in de bewaarplaats van CRX op te slaan. Er wordt een nieuwe bestandstoewijzing gemaakt met de nieuwe locatie van de bijlagen in de CRX en geretourneerd naar de aanroepende toepassing.
 Hier volgt de FileMap die naar de servlet wordt verzonden. De sleutel is het adaptieve formulierveld en de waarde is de tijdelijke locatie van de bijlage. In onze servlet zullen wij de gehechtheid halen en het opslaan in nieuwe plaats in de AEM bewaarplaats en het FileMap met de nieuwe plaats bijwerken
 
 ```java
@@ -32,7 +32,7 @@ Hier volgt de FileMap die naar de servlet wordt verzonden. De sleutel is het ada
 }
 ```
 
-Hier volgt de code die de bijlagen uit het verzoek extraheert en deze onder opslaat. **/content/bijvoegsels** map
+Hier volgt de code die de bijlagen uit de aanvraag extraheert en deze in de map **/content/bijattachments** opslaat.
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {

@@ -24,7 +24,7 @@ De volgende middelen/configuraties zijn geïmplementeerd op een AEM Forms-public
 * [Adobe Sign Wrapper Bundle](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
 
 * [Voorbeeld van interactieve communicatiesjabloon](assets/waiver-interactive-communication.zip)
-* [De DevelopingWithServiceUser-bundel implementeren](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
+* [ stel de bundel DevelopingWithServiceUser ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) op
 * Voeg de volgende ingang in de Dienst van het Mapper van de Gebruiker van de Dienst Apache Sling toe gebruikend OSGi configMgr
   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 
@@ -59,6 +59,6 @@ Open het bestand EmergencyContact.js en wijzig de URL in de methode fetch om dez
 
 Om het maken van vraag van de POST aan het AEM eindpunt van uw REACT app toe te laten, zult u de aangewezen entiteiten in het Toegestane gebied van Oorsprong in het gebied van het Beleid van het Delen van het Middel van Granite van de Adobe moeten specificeren.
 
-![cors-setting](assets/cors-settings.png)
+![ cors-setting ](assets/cors-settings.png)
 
-Zie [kennis van CORS met AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) voor meer details over de configuratieopties van CORS.
+Zie [ het begrip CORS met AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) voor meer details over de configuratieopties van CORS.

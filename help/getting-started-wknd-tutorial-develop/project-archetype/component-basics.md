@@ -26,9 +26,9 @@ In dit hoofdstuk, onderzoeken wij de onderliggende technologie van een Component
 
 ## Vereisten {#prerequisites}
 
-Controleer de vereiste gereedschappen en instructies voor het instellen van een [plaatselijke ontwikkelomgeving](./overview.md#local-dev-environment).
+Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](./overview.md#local-dev-environment).
 
-De IDE die in de video&#39;s wordt gebruikt is [Visual Studio-code](https://code.visualstudio.com/) en de [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) insteekmodule.
+IDE die in de video wordt gebruikt is [ Code van Visual Studio ](https://code.visualstudio.com/) en [ VSCode AEM de stop van de Synchronisatie ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync).
 
 ## Doelstelling {#objective}
 
@@ -38,11 +38,11 @@ De IDE die in de video&#39;s wordt gebruikt is [Visual Studio-code](https://code
 
 ## Wat u gaat bouwen {#what-build}
 
-In dit hoofdstuk voert u verschillende wijzigingen in een eenvoudig `HelloWorld` component. Tijdens het uitvoeren van updates voor de `HelloWorld` leert u over de belangrijkste gebieden van de ontwikkeling van AEM component.
+In dit hoofdstuk voert u verschillende wijzigingen uit in een eenvoudige `HelloWorld` -component. Wanneer u updates uitvoert naar de component `HelloWorld` , krijgt u meer informatie over de belangrijkste gebieden van AEM componentontwikkeling.
 
 ## Hoofdstukstartproject {#starter-project}
 
-Dit hoofdstuk bouwt op een generisch project voort dat door wordt geproduceerd [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype). Bekijk de onderstaande video en bekijk de [voorwaarden](#prerequisites) om te beginnen!
+Dit hoofdstuk bouwt op een generisch project voort dat door [ wordt geproduceerd AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype). Bekijk de hieronder video en herzie de [ eerste vereisten ](#prerequisites) om begonnen te worden!
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Dit hoofdstuk bouwt op een generisch project voort dat door wordt geproduceerd [
 
 Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
 
-1. In een lege map kloont u de [aem-hulplijnen](https://github.com/adobe/aem-guides-wknd) opslagplaats:
+1. In een lege folder, kloon de [ aem-gidsen-wint ](https://github.com/adobe/aem-guides-wknd) bewaarplaats:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd.git --branch tutorial/component-basics-start --single-branch
@@ -60,9 +60,9 @@ Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
 
    >[!NOTE]
    >
-   > U kunt desgewenst het in het vorige hoofdstuk gegenereerde project blijven gebruiken. [Projectinstelling](./project-setup.md).
+   > Naar keuze, kunt u blijven gebruikend het project dat in het vorige hoofdstuk, [ de Opstelling van het Project ](./project-setup.md) wordt geproduceerd.
 
-1. Ga in  `aem-guides-wknd` map.
+1. Navigeer naar de map `aem-guides-wknd` .
 
    ```shell
    $ cd aem-guides-wknd
@@ -76,13 +76,13 @@ Open een nieuwe opdrachtregelterminal en voer de volgende handelingen uit.
 
    >[!NOTE]
    >
-   > Indien u AEM 6.5 of 6.4 gebruikt, voegt u de `classic` aan om het even welke Gemaakt bevelen.
+   > Als u AEM 6.5 of 6.4 gebruikt, voegt u het `classic` -profiel toe aan Maven-opdrachten.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Importeer het project in uw gewenste IDE door de instructies voor het instellen van een [plaatselijke ontwikkelomgeving](overview.md#local-dev-environment).
+1. Importeer het project in uw aangewezen winde door de instructies te volgen aan opstelling a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
 
 ## Componentontwerp {#component-authoring}
 
@@ -92,35 +92,35 @@ Componenten kunnen worden beschouwd als kleine modulaire bouwstenen van een webp
 
 Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
-1. Een pagina maken met de naam **Basisbeginselen van componenten** beneide **WKND-site** `>` **VS** `>` **en**.
-1. Voeg de **Hello World-component** naar de nieuwe pagina.
+1. Creeer een pagina genoemd **Grondbeginselen van de Component** onder **Plaats WKND** `>` **VS** `>` ****.
+1. Voeg de **Component van de Wereld van Hello** aan de pas gecreëerde pagina toe.
 1. Open het dialoogvenster voor de component en voer tekst in. Sla de wijzigingen op om het bericht op de pagina weer te geven.
 1. Schakel in naar de modus Ontwikkelaar en bekijk het inhoudspad in CRXDE-Lite en controleer de eigenschappen van de componentinstantie.
-1. CRXDE-Lite gebruiken om de `cq:dialog` en `helloworld.html` script van `/apps/wknd/components/content/helloworld`.
+1. Gebruik CRXDE-Lite om het `cq:dialog` en `helloworld.html` script van `/apps/wknd/components/content/helloworld` weer te geven.
 
 ## HTL (Sjabloontaal HTML) en dialoogvensters {#htl-dialogs}
 
-HTML Template Language of **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** is een lichtgewicht, server-side sjabloontaal die door AEM componenten wordt gebruikt om inhoud te renderen.
+De Taal van het Malplaatje van de HTML of **[HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** is een licht-gewicht, server-zijhet bemonsteren taal die door AEM componenten wordt gebruikt om inhoud terug te geven.
 
-**Dialoogvensters** definieert de beschikbare configuraties die voor een component kunnen worden gemaakt.
+**de Dialogen** bepalen de beschikbare configuraties die voor een component kunnen worden gemaakt.
 
-Laten we nu de `HelloWorld` HTML- manuscript om een extra groet vóór het tekstbericht te tonen.
+Vervolgens werkt u het HTML-script van `HelloWorld` bij om een extra begroeting weer te geven vóór het tekstbericht.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330987?quality=12&learn=on)
 
 Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
-1. Schakelaar aan winde en open het project aan `ui.apps` -module.
-1. Open de `helloworld.html` en werk de HTML Markup bij.
-1. Gebruik de hulpmiddelen van winde zoals [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) om de bestandswijziging te synchroniseren met de lokale AEM.
+1. Ga naar winde en open het project aan de `ui.apps` module.
+1. Open het bestand `helloworld.html` en werk de HTML Markup bij.
+1. Gebruik de hulpmiddelen van winde zoals [ VSCode AEM Synchronisatie ](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) om de dossierverandering met de lokale AEM instantie te synchroniseren.
 1. Ga terug naar de browser en bekijk hoe de component is gerenderd.
-1. Open de `.content.xml` bestand dat het dialoogvenster voor het `HelloWorld` component bij:
+1. Open het bestand `.content.xml` dat het dialoogvenster voor de `HelloWorld` -component definieert op:
 
    ```plain
    <code>/aem-guides-wknd/ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/.content.xml
    ```
 
-1. Het dialoogvenster bijwerken om een extra tekstveld met de naam **Titel** met een naam van `./title`:
+1. Werk de dialoog bij om een extra genoemd tekstgebied **Titel** met een naam van `./title` toe te voegen:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -153,13 +153,13 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
    </jcr:root>
    ```
 
-1. Bestand opnieuw openen `helloworld.html`, die het belangrijkste HTML-script vertegenwoordigt dat verantwoordelijk is voor het renderen van de `HelloWorld` component van onder pad:
+1. Open het bestand `helloworld.html` opnieuw, dat het hoofd-HTML-script vertegenwoordigt dat verantwoordelijk is voor het renderen van de `HelloWorld` -component vanuit het onderliggende pad:
 
    ```plain
        <code>/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/helloworld.html
    ```
 
-1. Bijwerken `helloworld.html` om de waarde van de **Wenskaart** tekstveld als onderdeel van een `H1` tag:
+1. Update `helloworld.html` om de waarde van **Wensend** textfield als deel van een `H1` markering terug te geven:
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld">
@@ -174,11 +174,11 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 Sling-modellen zijn annotaties die worden aangedreven door Java™ &quot;POJO&#39;s&quot; (gewone oude Java™-objecten) en die het gemakkelijker maken gegevens van de JCR aan Java™-variabelen toe te wijzen. Ze bieden ook diverse andere genootschappen bij het ontwikkelen in het kader van AEM.
 
-Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de verkoop om wat bedrijfslogica op de waarden toe te passen die in JCR worden opgeslagen alvorens hen aan de pagina uit te voeren.
+Laten we nu enkele updates uitvoeren op het `HelloWorldModel` Sling-model om enige bedrijfslogica toe te passen op de waarden die zijn opgeslagen in de JCR voordat we deze op de pagina uitvoeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330988?quality=12&learn=on)
 
-1. Het bestand openen `HelloWorldModel.java`, dat het verkoopmodel is dat wordt gebruikt met de `HelloWorld` component.
+1. Open het bestand `HelloWorldModel.java` , het Sling-model dat wordt gebruikt met de component `HelloWorld` .
 
    ```plain
    <code>/aem-guides-wknd.core/src/main/java/com/adobe/aem/guides/wknd/core/models/HelloWorldModel.java
@@ -191,7 +191,7 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
    import org.apache.sling.models.annotations.DefaultInjectionStrategy;
    ```
 
-1. Werk de `@Model` aantekening om een `DefaultInjectionStrategy`:
+1. Werk de annotatie `@Model` bij als u een `DefaultInjectionStrategy` wilt gebruiken:
 
    ```java
    @Model(adaptables = Resource.class,
@@ -200,7 +200,7 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
       ...
    ```
 
-1. Voeg de volgende regels toe aan de `HelloWorldModel` klasse om de waarden van de JCR-eigenschappen van de component in kaart te brengen `title` en `text` naar Java™-variabelen:
+1. Voeg de volgende regels toe aan de klasse `HelloWorldModel` om de waarden van de JCR-eigenschappen `title` en `text` van de component toe te wijzen aan Java™-variabelen:
 
    ```java
    ...
@@ -221,7 +221,7 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
            ...
    ```
 
-1. De volgende methode toevoegen `getTitle()` aan de `HelloWorldModel` klasse, die de waarde van het genoemde bezit terugkeert `title`. Deze methode voegt de extra logica toe om een waarde van het Koord van &quot;StandaardWaarde hier terug te keren!&quot; if de eigenschap `title` is null of leeg:
+1. Voeg de volgende methode `getTitle()` toe aan de `HelloWorldModel` -klasse die de waarde van de eigenschap met de naam `title` retourneert. Deze methode voegt de extra logica toe om een waarde van het Koord van &quot;StandaardWaarde hier terug te keren!&quot; als de eigenschap `title` null of leeg is:
 
    ```java
    /***
@@ -233,7 +233,7 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
    }
    ```
 
-1. De volgende methode toevoegen `getText()` aan de `HelloWorldModel` klasse, die de waarde van het genoemde bezit terugkeert `text`. Deze methode transformeert de tekenreeks naar alle hoofdletters.
+1. Voeg de volgende methode `getText()` toe aan de `HelloWorldModel` -klasse die de waarde van de eigenschap met de naam `text` retourneert. Deze methode transformeert de tekenreeks naar alle hoofdletters.
 
    ```java
        /***
@@ -245,7 +245,7 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
    }
    ```
 
-1. De bundel maken en implementeren vanuit de `core` module:
+1. De bundel maken en implementeren vanuit de module `core` :
 
    ```shell
    $ cd core
@@ -254,15 +254,15 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
 
    >[!NOTE]
    >
-   > Voor AEM 6.4/6.5 `mvn clean install -PautoInstallBundle -Pclassic`
+   > Gebruik voor AEM 6.4/6.5 `mvn clean install -PautoInstallBundle -Pclassic`
 
-1. Het bestand bijwerken `helloworld.html` om `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` om de nieuw gecreëerde methodes van `HelloWorld` model.
+1. Werk het bestand `helloworld.html` bij `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` om de nieuwe methoden van het model `HelloWorld` te gebruiken.
 
-   De `HelloWorld` model wordt voor deze componentinstantie geïnstantieerd via de HTL-instructie: `data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel"`, de instantie opslaan in de variabele `model`.
+   Het `HelloWorld` -model wordt voor deze componentinstantie geïnstantieerd via de HTL-instructie: `data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel"` , waarbij de instantie wordt opgeslagen in de variabele `model` .
 
-   De `HelloWorld` modelexemplaar is nu beschikbaar in het HTML via `model` variabele die de `HelloWord`. Deze methodeaanroepen kunnen bijvoorbeeld een verkorte syntaxis gebruiken: `${model.getTitle()}` kan worden ingekort tot `${model.title}`.
+   De modelinstantie `HelloWorld` is nu beschikbaar in de HTML via de variabele `model` met behulp van `HelloWord` . Deze methodeaanroepen kunnen bijvoorbeeld gebruik maken van een verkorte syntaxis: `${model.getTitle()}` kan worden ingekort tot `${model.title}` .
 
-   Op dezelfde manier worden alle HTML-scripts geïnjecteerd met [algemene objecten](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) die kunnen worden benaderd met dezelfde syntaxis als de objecten van het verkoopmodel.
+   Op dezelfde manier worden alle manuscripten HTML geïnjecteerd met [ globale voorwerpen ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) die kunnen worden betreden gebruikend de zelfde syntaxis zoals de het Verdelen Modelvoorwerpen.
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld" 
@@ -283,28 +283,28 @@ Laten we nu enkele updates uitvoeren voor de `HelloWorldModel` Het Model van de 
 
 ## Client-Side bibliotheken {#client-side-libraries}
 
-Client-Side Libraries, `clientlibs` Kortom, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken op de client zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
+Client-Side Libraries, `clientlibs` for short, biedt een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM Sites-implementatie. Bibliotheken aan de clientzijde zijn de standaardmanier om CSS en JavaScript op een pagina in AEM op te nemen.
 
-De [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module is een ontkoppelde [webpack](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` wordt meer in detail besproken in de [Hoofdstuk Client-Side Bibliotheken](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+De {](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) module 0} ui.frontend is een ontkoppelde [ webpack ](https://webpack.js.org/) project dat in het bouwstijlproces wordt geïntegreerd. [ Hiermee kunt u populaire front-end bibliotheken gebruiken, zoals Sass, LESS en TypeScript. De `ui.frontend` module wordt verkend in meer diepte in het [ Client-Side hoofdstuk van Bibliotheken ](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
-Werk vervolgens de CSS-stijlen bij voor de `HelloWorld` component.
+Werk vervolgens de CSS-stijlen voor de component `HelloWorld` bij.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340750?quality=12&learn=on)
 
 Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden uitgevoerd.
 
-1. Open een terminalvenster en navigeer in de `ui.frontend` directory
+1. Open een terminalvenster en navigeer in de map `ui.frontend`
 
-1. Aanmelden `ui.frontend` directory voert de `npm install npm-run-all --save-dev` om de [npm-run-all](https://www.npmjs.com/package/npm-run-all) knooppuntmodule. Deze stap is **vereist voor AEM project Archetype 39**, in de komende versie van Archetype is dit niet vereist.
+1. Het zijn in `ui.frontend` folder stelt het `npm install npm-run-all --save-dev` bevel in werking om [ npm-looppas-alle ](https://www.npmjs.com/package/npm-run-all) knoopmodule te installeren. Deze stap wordt vereist op Archetype 39 geproduceerd AEM project **, in de komende versie van Archetype dit niet wordt vereist.**
 
-1. Voer vervolgens het `npm run watch` opdracht:
+1. Voer vervolgens de opdracht `npm run watch` uit:
 
    ```shell
    $ npm run watch
    ```
 
-1. Schakelaar aan winde en open het project aan `ui.frontend` -module.
-1. Het bestand openen `ui.frontend/src/main/webpack/components/_helloworld.scss`.
+1. Ga naar winde en open het project aan de `ui.frontend` module.
+1. Open het bestand `ui.frontend/src/main/webpack/components/_helloworld.scss` .
 1. Werk het bestand bij om een rode titel weer te geven:
 
    ```scss
@@ -314,7 +314,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
    }
    ```
 
-1. In de terminal moet u activiteit zien die erop wijst dat de id `ui.frontend` de wijzigingen worden gecompileerd en gesynchroniseerd met de lokale AEM.
+1. In de terminal ziet u activiteit die aangeeft dat de module `ui.frontend` de wijzigingen compileert en synchroniseert met de lokale instantie van AEM.
 
    ```shell
    Entrypoint site 214 KiB = clientlib-site/site.css 8.45 KiB clientlib-site/site.js 206 KiB
@@ -332,7 +332,7 @@ Hieronder vindt u de stappen op hoog niveau die in de bovenstaande video worden 
 
 1. Ga terug naar de browser en controleer of de titelkleur is gewijzigd.
 
-   ![Basisbeginselen van componenten bijwerken](assets/component-basics/color-update.png)
+   ![ update van de Basisbeginselen van de Component ](assets/component-basics/color-update.png)
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -340,6 +340,6 @@ Gefeliciteerd, u hebt de grondbeginselen van componentenontwikkeling in Adobe Ex
 
 ### Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk leren u vertrouwd met Adobe Experience Manager-pagina&#39;s en -sjablonen [Pagina&#39;s en sjablonen](pages-templates.md). Begrijp hoe de Componenten van de Kern in het project proxied zijn en geavanceerde beleidsconfiguraties van editable malplaatjes leren om een goed-gestructureerd malplaatje van de Pagina van het Artikel te bouwen.
+Krijg vertrouwd met de pagina&#39;s en de malplaatjes van Adobe Experience Manager in het volgende hoofdstuk [ Pagina&#39;s en Malplaatjes ](pages-templates.md). Begrijp hoe de Componenten van de Kern in het project proxied zijn en geavanceerde beleidsconfiguraties van editable malplaatjes leren om een goed-gestructureerd malplaatje van de Pagina van het Artikel te bouwen.
 
-De voltooide code weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van de it op `tutorial/component-basics-solution`.
+Bekijk de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd) of herzie en stel plaatselijk de code bij de tak van het Git `tutorial/component-basics-solution` op.

@@ -1,6 +1,6 @@
 ---
 title: Voor het web geoptimaliseerde aflevering van afbeeldingen
-description: Leer hoe u voor het web geoptimaliseerde afbeeldingslevering op AEM as a Cloud Service sites inschakelt met AEM Core Components.
+description: Leer hoe u voor het web geoptimaliseerde afbeeldingslevering op AEM as a Cloud Service-sites inschakelt met AEM Core Components.
 version: Cloud Service
 feature: Core Components, Configuring, Editable Templates
 topic: Performance, Administration
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Voor het web geoptimaliseerde aflevering van afbeeldingen
 
-Leer hoe u voor het web geoptimaliseerde afbeeldingslevering op AEM as a Cloud Service sites inschakelt met AEM Core Components.
+Leer hoe u voor het web geoptimaliseerde afbeeldingslevering op AEM as a Cloud Service-sites inschakelt met AEM Core Components.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346064?quality=12&learn=on)

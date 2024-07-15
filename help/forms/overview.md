@@ -37,11 +37,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-    <strong>Uw eerste adaptieve formulier maken</strong>
+    <strong> creeer uw eerste Aangepaste Vorm </strong>
     </a>
     </div>
     <p>
-    <em>Adaptieve formulieren zijn formulieren van de nieuwe generatie die dynamisch zijn en reageren. U kunt adaptieve formulieren gebruiken om persoonlijke ervaringen te bieden</em>
+    <em> de Aangepaste vormen zijn nieuwe-generatieformulieren die dynamisch en ontvankelijk zijn. U kunt de Aangepaste vormen gebruiken om gepersonaliseerde ervaringen te leveren </em>
     <p>
   </td>
    <td>
@@ -50,11 +50,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
-    <strong>Uw eerste afdrukkanaaldocument maken</strong>
+    <strong> creeer uw eerste Document van het Kanaal van de Druk </strong>
     </a>
     </div>
     <p>
-    <em>De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits. </em>
+    <em> Interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits. </em>
     <p>
   </td>
   <td>
@@ -63,11 +63,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>Formuliergegevensmodel gebruiken in AEM workflow</strong>
+    <strong> Gebruikend het Model van de Gegevens van de Vorm in AEM Werkschema </strong>
     </a>
     </div>
     <p>
-    <em>De service van het formuliergegevensmodel aanroepen als een stap in AEM workflow</em>
+    <em> roept de dienst van de Gegevens van de Vorm als stap in AEM Werkschema </em> aan
     <p>
   </td>
 </tr>
@@ -78,11 +78,11 @@ Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het
 
 ## Aanvullende bronnen
 
-* [AEM Sites Authoring documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
-* [AEM Sites Developing-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [AEM Sites-beheerdocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
-* [AEM Sites-implementatiedocumentatie](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [as a Cloud Service zelfstudies AEM](/help/cloud-service/overview.md)
+* [ AEM Sites Authoring documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [ AEM Sites het Ontwikkelen documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [ AEM Sites die documentatie beheren ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [ AEM Sites die documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html) opstelt
+* [AEM as a Cloud Service-zelfstudies](/help/cloud-service/overview.md)
 * [AEM Assets-zelfstudies](/help/assets/overview.md)
 * [AEM Forms-zelfstudies](/help/forms/overview.md)
 * [Zelfstudies AEM Stichting](/help/foundation/overview.md)

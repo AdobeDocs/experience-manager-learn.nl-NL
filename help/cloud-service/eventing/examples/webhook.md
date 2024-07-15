@@ -25,74 +25,74 @@ Leer hoe u AEM gebeurtenissen op een webhaak ontvangt en de gebeurtenisdetails z
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
-In dit voorbeeld gebruikt u een Adobe-geleverd _gehoste webhaak_ Hiermee kunt u AEM gebeurtenissen ontvangen zonder dat u uw eigen webhaak hoeft in te stellen. Deze door Adobe verschafte webhaak wordt gehost op [Glitch](https://glitch.com/), een platform dat bekend staat om het aanbieden van een webomgeving die bevorderlijk is voor het ontwikkelen en implementeren van webtoepassingen. De optie voor het gebruik van uw eigen webhaak is echter ook beschikbaar als u dat de voorkeur geeft.
+In dit voorbeeld, die een Adobe-Geleide _ontvangen webhaak_ gebruiken staat u toe om AEM gebeurtenissen zonder de behoefte te ontvangen om uw eigen webhaak te vestigen. Deze Adobe-verstrekte webhaak wordt ontvangen op [ Glitch ](https://glitch.com/), een platform dat voor het aanbieden van een web-based milieu wordt gekend dat aan de bouw van en het opstellen van Webtoepassingen bevordert. De optie voor het gebruik van uw eigen webhaak is echter ook beschikbaar als u dat de voorkeur geeft.
 
 ## Vereisten
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- as a Cloud Service omgeving AEM met [AEM Event ingeschakeld](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- Het milieu van AEM as a Cloud Service met [ toegelaten AEM Gebeurtenis ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
 
-- [Adobe Developer Console-project geconfigureerd voor AEM gebeurtenissen](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
+- [ Adobe Developer Console project dat voor AEM Gebeurtenissen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console) wordt gevormd.
 
 >[!IMPORTANT]
 >
->AEM as a Cloud Service gebeurtenis is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Om AEM gebeurtenis op uw AEM as a Cloud Service milieu toe te laten, contacteer [AEM-team](mailto:grp-aem-events@adobe.com).
+>AEM as a Cloud Service Event is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Om AEM gebeurtenis op uw milieu van AEM as a Cloud Service toe te laten, contacteer [ AEM-Toevend team ](mailto:grp-aem-events@adobe.com).
 
 ## Toegang tot webhaak
 
 Voer de volgende stappen uit om toegang te krijgen tot de door de Adobe verschafte webhaak:
 
-- Controleer of u toegang hebt tot de [Glitch - gehoste webhaak](https://lovely-ancient-coaster.glitch.me/) in een nieuw browsertabblad.
+- Verifieer u tot [ Glitch - ontvangen webhaak ](https://lovely-ancient-coaster.glitch.me/) in nieuwe browser tabel kunt toegang hebben.
 
-  ![Glitch - gehoste webhaak](../assets/examples/webhook/glitch-hosted-webhook.png)
+  ![ Glitch - ontvangen webhaak ](../assets/examples/webhook/glitch-hosted-webhook.png)
 
-- Voer bijvoorbeeld een unieke naam in voor uw webhaak `<YOUR_PETS_NAME>-aem-eventing` en klik op **Verbinden**. U moet `Connected to: ${YOUR-WEBHOOK-URL}` op het scherm verschijnt.
+- Ga een unieke naam voor uw webhaak in, bijvoorbeeld `<YOUR_PETS_NAME>-aem-eventing` en klik **verbinden**. U moet `Connected to: ${YOUR-WEBHOOK-URL}` -bericht op het scherm zien.
 
-  ![Glitch - webhaak maken](../assets/examples/webhook/glitch-create-webhook.png)
+  ![ Glitch - creeer webhaak ](../assets/examples/webhook/glitch-create-webhook.png)
 
-- Noteer de **Webhaak-URL**. U hebt het later nodig in deze zelfstudie.
+- Maak een nota van **Webhaak URL**. U hebt het later nodig in deze zelfstudie.
 
 ## Webhaak configureren in Adobe Developer Console-project
 
 Ga als volgt te werk om AEM gebeurtenissen op de bovenstaande URL van de webhaak te ontvangen:
 
-- In de [Adobe Developer Console](https://developer.adobe.com), navigeer naar uw project en klik om het te openen.
+- In [ Adobe Developer Console ](https://developer.adobe.com), navigeer aan uw project en klik om het te openen.
 
-- Onder **Producten en services** sectie, klikken op ovalen `...` naast de gewenste gebeurtenissenkaart die AEM gebeurtenissen naar de webhaak moet verzenden en selecteert u **Bewerken**.
+- Onder **Producten &amp; de diensten** sectie, klik ellipsen `...` naast de gewenste gebeurteniskaart die AEM gebeurtenissen naar Webhaak zou moeten verzenden en **uitgezocht geef** uit.
 
-  ![Adobe Developer Console Project bewerken](../assets/examples/webhook/adobe-developer-console-project-edit.png)
+  ![ het Project van Adobe Developer Console geeft uit ](../assets/examples/webhook/adobe-developer-console-project-edit.png)
 
-- In de nieuw geopende **Gebeurtenisregistratie configureren** dialoogvenster, klikt u op **Volgende** Ga door naar **Hoe kan ik gebeurtenissen ontvangen** stap.
+- In het onlangs geopende **vorm gebeurtenisregistratie** dialoog, klik **daarna** om aan **te werk te gaan hoe te gebeurtenissen** stap ontvangen.
 
-  ![Adobe Developer Console Project configureren](../assets/examples/webhook/adobe-developer-console-project-configure.png)
+  ![ Adobe Developer Console Project vormt ](../assets/examples/webhook/adobe-developer-console-project-configure.png)
 
-- In de **Hoe kan ik gebeurtenissen ontvangen** stap, selecteren **Webhaak** en plak de **Webhaak-URL** u hebt eerder gekopieerd vanaf de gehoste webhaak van Glitch en klikt op **geconfigureerde gebeurtenissen opslaan**.
+- In **hoe te om gebeurtenissen** stap te ontvangen, selecteer **WebHaak** optie en kleef **Webhaak URL** u vroeger van Glitch ontvangen webhaak en klik **sparen gevormde gebeurtenissen**.
 
-  ![Webhaak Adobe Developer Console-project](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
+  ![ WebHaak van het Project van Adobe Developer Console ](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
 
 - Op de pagina van het Webboek van Glitch, zou u een verzoek van de GET moeten zien, is het een uitdagingsverzoek die door de Gebeurtenissen van de Adobe I/O wordt verzonden om Web-haak URL te verifiëren.
 
-  ![Glitch - verzoek om betwisting](../assets/examples/webhook/glitch-challenge-request.png)
+  ![ Glitch - vraag ](../assets/examples/webhook/glitch-challenge-request.png)
 
 
 ## Triggergebeurtenissen AEM
 
-Ga als volgt te werk om AEM gebeurtenissen vanuit uw AEM as a Cloud Service omgeving die zijn geregistreerd in het bovenstaande Adobe Developer Console-project, te activeren:
+Ga als volgt te werk om AEM gebeurtenissen vanuit uw AEM as a Cloud Service-omgeving te activeren die zijn geregistreerd in het bovenstaande Adobe Developer Console-project:
 
-- Toegang tot en aanmelding bij uw AEM as a Cloud Service auteursomgeving via [Cloud Manager](https://my.cloudmanager.adobe.com/).
+- De toegang en login aan uw het auteursmilieu van AEM as a Cloud Service via [ Cloud Manager ](https://my.cloudmanager.adobe.com/).
 
-- Afhankelijk van uw **Geabonneerde gebeurtenissen**, een inhoudsfragment maken, bijwerken, verwijderen, publiceren of de publicatie ervan ongedaan maken.
+- Afhankelijk van uw **Geabonneerde Gebeurtenissen**, creeer, werk, schrap, publiceer of unpublish een Fragment van de Inhoud.
 
 ## Gebeurtenisdetails controleren
 
 Nadat u de bovenstaande stappen hebt uitgevoerd, ziet u dat de AEM Events aan de webhaak worden geleverd. Zoek het verzoek van de POST in de webhaakpagina van Glitch.
 
-![Glitch - verzoek om POST](../assets/examples/webhook/glitch-post-request.png)
+![ Glitch - verzoek van de POST ](../assets/examples/webhook/glitch-post-request.png)
 
 Hier volgen enkele belangrijke details van het verzoek om POST:
 
-- pad: `/webhook/${YOUR-WEBHOOK-URL}`bijvoorbeeld `/webhook/AdobeTM-aem-eventing`
+- path: `/webhook/${YOUR-WEBHOOK-URL}` , bijvoorbeeld `/webhook/AdobeTM-aem-eventing`
 
 - kopteksten: aanvraagheaders die worden verzonden door de Adobe I/O Events, bijvoorbeeld:
 
@@ -154,8 +154,8 @@ Hier volgen enkele belangrijke details van het verzoek om POST:
 }
 ```
 
-U kunt zien dat de AEM gebeurtenisdetails alle noodzakelijke informatie hebben om de gebeurtenis in de webhaak te verwerken. Het gebeurtenistype (`type`), gebeurtenisbron (`source`), gebeurtenis-id (`event_id`), tijd van gebeurtenis (`time`) en gebeurtenisgegevens (`data`).
+U kunt zien dat de AEM gebeurtenisdetails alle noodzakelijke informatie hebben om de gebeurtenis in de webhaak te verwerken. Bijvoorbeeld het gebeurtenistype (`type`), gebeurtenisbron (`source`), gebeurtenis id (`event_id`), gebeurtenistijd (`time`) en gebeurtenisgegevens (`data`).
 
 ## Aanvullende bronnen
 
-- [Broncode van Glitch-webhaak](https://glitch.com/edit/#!/nl-heerlijk-eeuwenoude kustgebied) is beschikbaar ter referentie.
+- [ WebHaakbroncode van de Glitch ](https://glitch.com/edit/#!/nl-heerlijk-eeuwenoude kustgebied) is beschikbaar voor verwijzing.

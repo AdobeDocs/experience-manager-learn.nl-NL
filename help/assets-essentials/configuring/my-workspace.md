@@ -1,6 +1,6 @@
 ---
-title: Assets Essentials Mijn werkruimte
-description: Leer hoe u efficiënter kunt werken met de door de gebruiker configureerbare widgets van Mijn werkruimte.
+title: Assets Essentials Mijn Workspace
+description: Leer hoe u efficiënter kunt werken met Mijn door de gebruiker ingestelde widgets voor Workspace.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 ---
 
-# Mijn werkruimte in Assets Essentials
+# Mijn Workspace in Assets Essentials
 
-Leer hoe u efficiënter kunt werken met de door de gebruiker configureerbare widgets van Mijn werkruimte.
+Leer hoe u efficiënter kunt werken met Mijn door de gebruiker ingestelde widgets voor Workspace.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413809?quality=12&learn=on)

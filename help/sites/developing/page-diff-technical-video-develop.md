@@ -26,9 +26,9 @@ In deze video ziet u hoe u aangepaste stijlen voor de functionaliteit Paginavers
 
 >[!NOTE]
 >
->Deze video voegt aangepaste CSS aan de wij.Retail cliëntbibliotheek toe, waar aangezien deze veranderingen in het project van AEM Sites van de klant zouden moeten worden aangebracht; in de voorbeeldcode hieronder: `my-project`.
+>In deze video worden aangepaste CSS toegevoegd aan de clientbibliotheek we.Retail, waar deze wijzigingen moeten worden aangebracht in het AEM Sites-project van de klant; in de voorbeeldcode hieronder: `my-project` .
 
-AEM paginaverschil verkrijgt de OOTB CSS via een directe lading van `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+AEM paginaverschil verkrijgt de CSS OOTB via een directe load van `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css` .
 
 Wegens deze directe lading van CSS eerder dan het gebruiken van een categorie van de cliëntbibliotheek, moeten wij een ander injectiepunt voor de douanestijlen vinden, en dit douaneinjectiepunt is het auteursclientlib van het project.
 
@@ -36,7 +36,7 @@ Dit heeft het voordeel om deze de stijloverschrijvingen van douanestijlen toe te
 
 ### Maak de ontwerpende clientlib klaar {#prepare-the-authoring-clientlib}
 
-Zorgen voor het bestaan van een `authoring` clientlib voor uw project op `/apps/my-project/clientlib/authoring.`
+Zorg ervoor dat er een `authoring` clientlib voor uw project bestaat op `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -47,7 +47,7 @@ Zorgen voor het bestaan van een `authoring` clientlib voor uw project op `/apps/
 
 ### Aangepaste CSS opgeven {#provide-the-custom-css}
 
-Toevoegen aan de projecten `authoring` clientlib `css.txt` dat wijst naar het minder bestand dat de overschrijvende stijlen levert. [Minder](https://lesscss.org/) heeft de voorkeur vanwege de vele handige functies, waaronder klassenomloop, die in dit voorbeeld wordt gebruikt.
+Voeg aan de `authoring` clientlib a `css.txt` van het project toe dat naar minder dossier wijst dat de met voeten tredende stijlen zal verstrekken. [ Minder ](https://lesscss.org/) wordt aangewezen toe te schrijven aan zijn vele geschikte eigenschappen, met inbegrip van klasse-verpakken die in dit voorbeeld leveraged is.
 
 ```shell
 base=./css
@@ -55,7 +55,7 @@ base=./css
 htmldiff.less
 ```
 
-Maak de `less` bestand met de stijloverschrijvingen op `/apps/my-project/clientlibs/authoring/css/htmldiff.less`en geef desgewenst de overtrekstijlen op.
+Maak het `less` -bestand dat de stijloverschrijvingen in `/apps/my-project/clientlibs/authoring/css/htmldiff.less` bevat en geef desgewenst de overtrekstijlen op.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -103,9 +103,9 @@ body {
 
 ### De CSS van de ontwerpclient opnemen via de paginacomponent {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Neem de categorie client-pc&#39;s voor het schrijven op in de basispagina van het project `/apps/my-project/components/structure/page/customheaderlibs.html` rechtstreeks voor de `</head>` om ervoor te zorgen dat de stijlen worden geladen.
+Neem de categorie client-libs die u gebruikt, direct vóór de tag `</head>` op in de basispagina van het project `/apps/my-project/components/structure/page/customheaderlibs.html` om ervoor te zorgen dat de stijlen worden geladen.
 
-Deze stijlen moeten beperkt blijven tot [!UICONTROL Edit] en [!UICONTROL preview] WCM-modi.
+Deze stijlen moeten worden beperkt tot de modi [!UICONTROL Edit] en [!UICONTROL preview] WCM.
 
 ```xml
 <head>
@@ -117,10 +117,10 @@ Deze stijlen moeten beperkt blijven tot [!UICONTROL Edit] en [!UICONTROL preview
 
 Het eindresultaat van een diff&#39;d pagina met de bovenstaande stijlen toegepast zou er als volgt uitzien (HTML toegevoegd en Component gewijzigd).
 
-![Paginaverschil](assets/page-diff.png)
+![ verschil van de Pagina ](assets/page-diff.png)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Download de voorbeeldsite Web.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Werken met AEM clientbibliotheken](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
-* [Minder CSS-documentatie](https://lesscss.org/)
+* [ Download de wij.Retail steekproefplaats ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
+* [ Gebruikend AEM de Bibliotheken van de Cliënt ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [ Minder CSS Documentatie ](https://lesscss.org/)

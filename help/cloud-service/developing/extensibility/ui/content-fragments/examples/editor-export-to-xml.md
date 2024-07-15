@@ -21,19 +21,19 @@ ht-degree: 0%
 
 # Inhoudsfragment exporteren naar XML
 
-![Inhoudsfragmenteditor menuextensievoorbeeld](./assets/export-to-xml/hero.png){align="center"}
+![ het de kopbalmenuuitbreidingsvoorbeeld van de Redacteur van het Fragment van de Inhoud ](./assets/export-to-xml/hero.png){align="center"}
 
-Aangepaste knoppen kunnen worden toegevoegd aan het kopmenu van de Content Fragment Editor met behulp van het dialoogvenster `headerMenu` extensiepunt. In dit voorbeeld wordt getoond hoe u een knop aan het kopmenu toevoegt en hoe u de klikgebeurtenis verwerkt om het actieve inhoudsfragment als XML of CSV te exporteren.
+U kunt aangepaste knoppen toevoegen aan het kopmenu van de Content Fragment Editor met het extensiepunt `headerMenu` . In dit voorbeeld wordt getoond hoe u een knop aan het kopmenu toevoegt en hoe u de klikgebeurtenis verwerkt om het actieve inhoudsfragment als XML of CSV te exporteren.
 
 Koptekstknoppen kunnen bestaan als één knop of als een knop met subitems. In dit voorbeeld ziet u hoe u een knop met subitems implementeert. De code met opmerkingen bevat echter ook de code waarmee één knop wordt geïmplementeerd.
 
 ## Extensiepunt
 
-In dit voorbeeld wordt het uitbreidingspunt uitgebreid `headerBar` om een aangepaste knop toe te voegen aan de Inhoudsfragmenteditor.
+In dit voorbeeld wordt het uitbreidingspunt `headerBar` uitgebreid om een aangepaste knop toe te voegen aan de Inhoudsfragmenteditor.
 
 | AEM UI uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
-| [Inhoudsfragmenteditor](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Menu Koptekst](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
+| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ Menu van de Kopbal ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 
 ## Voorbeeldextensie
 
@@ -43,9 +43,9 @@ De code toont hoe de inhoud van het inhoudsfragment kan worden verkregen in het 
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js`, toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
+`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
 
-+ De locatie van de extensieknop wordt weergegeven (`headerMenu`) in de AEM
++ De locatie van de extensieknop wordt weergegeven (`headerMenu`) in de AEM ontwerpervaring
 + De definitie van de extensieknop in de functie getButton()
 + De klikmanager voor de knoop, in de onClick () functie, of een lijst van subitems, en hun klikmanagers.
 
@@ -148,13 +148,13 @@ export default ExtensionRegistration;
 
 #### Gegevens van inhoudsfragment
 
-Het actieve inhoudsfragment kan worden opgehaald met de opdracht `getContentFragment()` op de `guestConnection.host.contentFragment` object.
+Het actieve inhoudsfragment kan worden opgehaald met de methode `getContentFragment()` op het `guestConnection.host.contentFragment` -object.
 
 ```javascript
 const contentFragment = await guestConnection.host.contentFragment.getContentFragment();
 ```
 
-De `contentFragment` Het object bevat alle informatie over het inhoudsfragment, inclusief het pad, het model, de metagegevens, de hoofdinhoud en eventuele varianten.
+Het `contentFragment` -object bevat alle informatie over het inhoudsfragment, inclusief het pad, het model, de metagegevens, de hoofdinhoud en eventuele varianten.
 
 ```json
 {

@@ -1,6 +1,6 @@
 ---
-title: Problemen oplossen AEM as a Cloud Service
-description: Leer hoe te om de AEM SDK problemen op te lossen en te zuiveren, as a Cloud Service AEM en, bouwt en proces opstelt.
+title: Problemen met AEM as a Cloud Service oplossen
+description: Leer hoe u problemen kunt oplossen met de SDK van de AEM, AEM as a Cloud Service en het ontwikkelings- en implementatieproces.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Problemen oplossen AEM as a Cloud Service
+# Problemen met AEM as a Cloud Service oplossen
 
-Leer hoe te om de AEM SDK problemen op te lossen en te zuiveren, as a Cloud Service AEM en, bouwt en proces opstelt.
+Leer hoe u problemen kunt oplossen met de SDK van de AEM, AEM as a Cloud Service en het ontwikkelings- en implementatieproces.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336964?quality=12&learn=on)

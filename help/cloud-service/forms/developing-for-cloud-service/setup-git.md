@@ -20,8 +20,10 @@ ht-degree: 0%
 # Installatiegit
 
 
-[Installatiegit](https://git-scm.com/downloads). U kunt de standaardinstellingen selecteren en het installatieproces voltooien.
-Ga naar de opdrachtprompt Navigeer naar c:\cloudmanager\aem-banking-app type in git —version. U moet de versie van de GIT zien die op uw systeem is geïnstalleerd
+[ installeer Git ](https://git-scm.com/downloads). U kunt de standaardinstellingen selecteren en het installatieproces voltooien.
+Ga naar de opdrachtprompt
+Ga naar c:\cloudmanager\aem-banking-app
+type in git —version. U moet de versie van de GIT zien die op uw systeem is geïnstalleerd
 
 ## Opslagplaats lokale it initialiseren
 
@@ -50,9 +52,9 @@ Hierdoor worden de bestanden toegewezen aan de git-opslagplaats
 ## Registreer de cloudbeheeropslagplaats bij onze lokale Git-opslagplaats
 
 Toegang tot het rapport van de cloud Manager
-![toegang krijgen tot de rep info](assets/cloud-manager-repo.png)
+![ toegang tot rep info ](assets/cloud-manager-repo.png)
 Geef de repo-gegevens van de cloud Manager op
-![getCredits](assets/cloud-manager-repo1.png)
+![ get-credentials ](assets/cloud-manager-repo1.png)
 
 De gebruikersnaam opslaan in het configuratiebestand
 
@@ -68,7 +70,7 @@ git config --global user.password "XXXX"
 
 (Het wachtwoord is het wachtwoord voor de gegevensopslagruimte van uw cloudmanager)
 
-Registreer de gegevensopslagruimte van de cloudmanager bij uw lokale opslagplaats voor it. De onderstaande opdracht is gekoppeld **bankapp** met de externe cloudbeheeropslagplaats. U had een naam kunnen gebruiken in plaats van **bankapp**
+Registreer de gegevensopslagruimte van de cloudmanager bij uw lokale opslagplaats voor it. Het bevel hieronder associeert **bankingapp** met de verre bewaarplaats van de wolkenmanager. U zou om het even welke naam in plaats van **bankingapp** kunnen gebruiken
 
 
 ```shell

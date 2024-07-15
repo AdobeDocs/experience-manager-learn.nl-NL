@@ -18,22 +18,22 @@ ht-degree: 0%
 
 # Beheer van meerdere sites gebruiken {#using-multi-site-manager-with-aem-sites}
 
-Live Copy Overview en Blueprint Configuration Manager zijn AEM Author-interfaces voor het werken met [Beheer van meerdere sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html) in Adobe Experience Manager Sites.
+De Levende Manager van de Configuratie van het Exemplaar van het Overzicht en van de Vervaging zijn AEM de interfaces van de Auteur voor het werken met [ Multi Manager van de Plaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html) in Adobe Experience Manager Sites.
 
 ## Overzicht van live kopiëren {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
-*Het overzicht van Actieve kopie is een interface van Touch die wordt gebruikt voor het beheer van live kopieën en hun respectievelijke blauwdrukken. Deze functie, die is geïntroduceerd in AEM 6.3, vervangt het klassieke UI-centrum voor de controle van blauwdrukken.*
+*Levend Overzicht van het Exemplaar is een interface van de Aanraking UI die voor het beheren van levende exemplaren en hun respectieve blauwdrukken wordt gebruikt. Deze eigenschap, die in AEM 6.3 wordt geïntroduceerd, vervangt het Klassieke Centrum van de Controle van de Vervaging UI.*
 
 ## Blueprint Configuration Manager - Touch UI {#blueprint-config-mgr}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
-*AEM 6.3 introduceert een interface van de Aanraking UI om de configuraties van de Vervaging voor gebruik in de Manager van de MultiPlaats te beheren.*
+*AEM 6.3 introduceert een interface van de Aanraking UI om de configuraties van de Vervaging voor gebruik in MultiManager van de Plaats te beheren.*
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Console voor live kopiëren](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
-* [Actieve kopieën maken en synchroniseren](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
-* [Aanbevolen MSM-procedures](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [ Levende Console van het Overzicht van het Exemplaar ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [ Creërend en het Synchroniseren Actieve Exemplaren ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
+* [ MSM Beste praktijken ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

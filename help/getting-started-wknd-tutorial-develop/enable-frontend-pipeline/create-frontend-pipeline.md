@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Implementeren met behulp van de front-end pijplijn
 
-In dit hoofdstuk maken en uitvoeren we een front-end pijplijn in Adobe Cloud Manager. De bestanden worden alleen samengesteld op basis van `ui.frontend` en zet hen aan ingebouwde CDN in as a Cloud Service AEM op. Op die manier wordt de  `/etc.clientlibs` gebaseerde front-end levering van resources.
+In dit hoofdstuk, creëren en leiden wij een front-end pijpleiding in Adobe Cloud Manager. De toepassing bouwt alleen de bestanden van de module `ui.frontend` en implementeert deze naar de ingebouwde CDN in AEM as a Cloud Service. Op die manier kunt u zich verplaatsen van de op `/etc.clientlibs` gebaseerde front-end resources levering.
 
 
 ## Doelstellingen {#objectives}
 
 * Creeer en stel een front-end pijpleiding in werking.
-* Controleren of front-end resources NIET worden geleverd vanuit `/etc.clientlibs` maar van een nieuwe hostnaam die begint met `https://static-`
+* Controleren of front-end bronnen NIET worden geleverd vanuit `/etc.clientlibs` maar vanuit een nieuwe hostnaam die begint met `https://static-`
 
 ## Het gebruiken van de front-end pijpleiding
 
@@ -36,70 +36,70 @@ In dit hoofdstuk maken en uitvoeren we een front-end pijplijn in Adobe Cloud Man
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in het dialoogvenster [Standaard AEM project bijwerken](./update-project.md) zijn voltooid.
+Dit is een meerdelig leerprogramma en het wordt verondersteld dat de stappen in de [ Standaard AEM van de Update Project ](./update-project.md) worden geschetst zijn voltooid.
 
-Zorg ervoor dat u [rechten om pijpleidingen te maken en te implementeren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) en [toegang tot een AEM as a Cloud Service omgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+Verzeker u [ voorrechten hebt om, pijpleidingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) te creëren en op te stellen en [ toegang tot een milieu van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ## Bestaande pijpleiding hernoemen
 
-De naam van de bestaande pijpleiding wijzigen vanuit __Distribueren naar Dev__ tot  __FullStack WKND-implementatie voor Dev__ door naar de __Configuratie__ tabs __Naam niet-productiepijpleiding__ veld. Dit moet het uitdrukkelijk maken of een pijpleiding volledig-stapel of front-end door enkel zijn naam te bekijken is.
+Wijzig de bestaande pijpleiding van __opstellen aan Dev__ aan __FullStack WKND opstellen aan Dev__ door naar het __van de Configuratie__ lusje __niet-Productie van de Pijpleiding van de Configuratie__ gebied te gaan. Dit moet het uitdrukkelijk maken of een pijpleiding volledig-stapel of front-end door enkel zijn naam te bekijken is.
 
-![Naam pijpleiding wijzigen](assets/fullstack-wknd-deploy-dev-pipeline.png)
+![ noem Pijpleiding anders ](assets/fullstack-wknd-deploy-dev-pipeline.png)
 
 
-Ook in de __Broncode__ , zorgt u ervoor dat de waarden in de velden Opslagplaats en Git Branch correct zijn en dat de vertakking de wijzigingen in uw eerstelijns pijpleidingcontract bevat.
+Ook in het __lusje van de Code van Source__, zorg ervoor dat de het gebiedswaarden van de Tak van de Bewaarplaats en van de Plaats correct zijn en de tak uw front-end pijpleidingscontractveranderingen heeft.
 
-![Broncodeconfiguratiepijp](assets/fullstack-wknd-source-code-config.png)
+![ de Pijpleiding van de Configuratie van de Code van Source ](assets/fullstack-wknd-source-code-config.png)
 
 
 ## Een front-end pijplijn maken
 
-Naar __ALLEEN__ bouwen en de front-end middelen van `ui.frontend` voert u de volgende stappen uit:
+__SLECHTS__ bouwt en stelt de front-end middelen van de `ui.frontend` module op, voert de volgende stappen uit:
 
-1. In de interface van Cloud Manager gaat u van de __Pijpleidingen__ sectie, klikken __Toevoegen__ en vervolgens selecteert u __Niet-productiepijpleiding toevoegen__ (of __Productiepijpleiding toevoegen__) gebaseerd op de AEM as a Cloud Service omgeving waarin u wilt implementeren.
+1. In Cloud Manager UI, van de __sectie 0} Pijpleidingen {, klik__ toevoegen __knoop, dan uitgezocht__ voeg niet-Productiepijpleiding __toe (of__ voeg de Pijpleiding van de Productie __toe) die op het milieu van AEM as a Cloud Service wordt gebaseerd u wilt opstellen aan.__
 
-1. In de __Niet-productiepijpleiding toevoegen__ als onderdeel van de __Configuratie__ stappen selecteert u de __Implementatiepijp__ optie, naam geven als __FrontEnd WKND-implementatie naar Dev__ en klik op __Doorgaan__
+1. In __voeg de dialoog van de Pijpleiding van de Niet-Productie__ toe, als deel van de __3} stappen van de Configuratie, selecteer de__ Optie van de Pijpleiding van de Plaatsing __, noem het als__ Op te stellen FrontEnd WKND __, en klik__ gaat __verder__
 
-![Voor-eindpijplijnconfiguraties maken](assets/create-frontend-pipeline-configs.png)
+![ creeer Voorste-Eind de Configuraties van de Pijpleiding ](assets/create-frontend-pipeline-configs.png)
 
-1. Als onderdeel van het __Broncode__ stappen selecteert u de __Code frontend__ en kiest u de omgeving uit __In aanmerking komende implementatieomgevingen__. In de __Broncode__ de sectie zorgt ervoor dat de waarden van de het gebiedswaarden van de Opslagplaats en van de Tak van het Bewaarplaats correct zijn en de tak uw voorste-eindveranderingen van het pijpleidingscontract heeft.
-en __belangrijkste__ voor de __Codelocatie__ veld de waarde is `/ui.frontend` en ten slotte klikt u op __Opslaan__.
+1. Als deel van de __stappen van de Code van 0} Source, selecteer de__ Voorste optie van de Code van het Eind __, en kies het milieu van__ In aanmerking komende Milieu&#39;s van de Plaatsing __.__ In de __sectie van de Code van Source__ zorgt ervoor dat de het gebiedswaarden van de Tak van de Bewaarplaats en van het Git correct zijn en de tak uw voorste veranderingen van het pijpleidingscontract heeft.
+En __het belangrijkst__ voor het __gebied van de Plaats van de Code__ is de waarde `/ui.frontend` en tenslotte, klik __sparen__.
 
-![Broncode voor voorkant pijpleiding maken](assets/create-frontend-pipeline-source-code.png)
+![ creeer Voorste-Eind de Code van Source van de Pijpleiding ](assets/create-frontend-pipeline-source-code.png)
 
 
 ## Implementatiereeks
 
-* Voer de nieuwe naam eerst uit __FullStack WKND-implementatie voor Dev__ pijpleiding om de KND clientlib dossiers uit de AEM bewaarplaats te verwijderen. En het belangrijkste is de AEM voor het front-end pijpleidingscontract door toe te voegen __Configureren__ bestanden (`SiteConfig`, `HtmlPageItemsConfig`).
+* Eerst in werking stelt nieuw anders genoemd __FullStack WKND opstelt om__ pijpleiding te ontwikkelen om de KND clientlib dossiers uit de AEM bewaarplaats te verwijderen. En het belangrijkst bereidt de AEM voor het front-end pijpleidingscontract voor door __het Sling config__ dossiers (`SiteConfig`, `HtmlPageItemsConfig`) toe te voegen.
 
-![Niet-opgemaakte WKND-site](assets/unstyled-wknd-site.png)
+![ Unstyled WKND Plaats ](assets/unstyled-wknd-site.png)
 
 >[!WARNING]
 >
->Na, __FullStack WKND-implementatie voor Dev__ voltooiing van de pijpleiding u zult hebben __ongestipt__ WKND-site, die mogelijk beschadigd lijkt. Gelieve te plannen voor een stroomonderbreking of op te stellen tijdens oneven uren, is dit een eenmalig onderbreking u voor tijdens de aanvankelijke schakelaar van het gebruiken van één enkele full-stack pijpleiding aan de front-end pijpleiding moet plannen.
+>Na, zal het __FullStack WKND opstellen om__ pijpleidingsvoltooiing te ontwikkelen u een __niet gestileerde__ Plaats hebben WKND, die gebroken kan lijken. Gelieve te plannen voor een stroomonderbreking of op te stellen tijdens oneven uren, is dit een eenmalig onderbreking u voor tijdens de aanvankelijke schakelaar van het gebruiken van één enkele full-stack pijpleiding aan de front-end pijpleiding moet plannen.
 
 
-* Als laatste voert u de __FrontEnd WKND-implementatie naar Dev__ pijpleiding om slechts te bouwen `ui.frontend` en stel direct de front-end middelen aan CDN op.
+* Tot slot stel __FrontEnd WKND in werking stelt om__ pijpleiding te ontwikkelen om slechts `ui.frontend` module te bouwen en de front-end middelen direct aan CDN op te stellen.
 
 >[!IMPORTANT]
 >
->U merkt dat de __ongestipt__ De WKND-site is weer normaal en dit keer __FrontEnd__ de pijpleiding uitvoerde veel sneller dan de full-stack pijpleiding.
+>U merkt dat de __ongestileerde__ plaats WKND terug naar normaal is en deze tijd __3} pijpleiding FrontEnd {was veel sneller dan de volledig-stapelpijpleiding.__
 
 ## Stijlwijzigingen en nieuw leveringsparadigma controleren
 
-* Open de WKND-site op een willekeurige pagina en u kunt de tekstkleur bekijken __Adobe rood__ en de front-end (CSS, JS) dossiers worden geleverd van CDN. De hostnaam van de resourceaanvraag begint met `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` en ook de site.js of andere statische bronnen waarnaar u verwijst in het dialoogvenster `HtmlPageItemsConfig` bestand.
+* Open de Plaats WKND om het even welke pagina en u kunt de tekstkleur zien gebruiken __Rode Adobe__ en de front-end middelen (CSS, JS) dossiers worden geleverd van CDN. De hostnaam van de bronaanvraag begint met `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` en op dezelfde manier met site.js of andere statische bronnen waarnaar u verwijst in het `HtmlPageItemsConfig` -bestand.
 
 
-![Nieuw opgemaakte WKND-site](assets/newly-styled-wknd-site.png)
+![ Nieuw gestileerde WKND Plaats ](assets/newly-styled-wknd-site.png)
 
 
 
 >[!TIP]
 >
->De `$HASH_VALUE$` hier is hetzelfde als wat je ziet in de __FrontEnd WKND-implementatie naar Dev__  pijpleiding __HASH INHOUD__ veld. AEM wordt op de hoogte gebracht van de CDN-URL van de front-end bron. De waarde wordt opgeslagen bij `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` krachtens __prefixPath__ eigenschap.
+>`$HASH_VALUE$` hier is het zelfde als wat u in __FrontEnd WKND ziet opstellen aan Dev__ 3} HASH van de INHOUD van de pijpleiding {__gebied.__ AEM wordt op de hoogte gebracht van CDN URL van het front-end middel, wordt de waarde opgeslagen bij `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` onder __prefixPath__ bezit.
 
 
-![Hash-waardecorrelatie](assets/hash-value-correlartion.png)
+![ Correlatie van de Waarde van de knoeiboel ](assets/hash-value-correlartion.png)
 
 
 
@@ -109,4 +109,4 @@ Gefeliciteerd, creeerde u, in werking stelde, en verifieerde de voorste-Eind pij
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk: [Overwegingen](considerations.md), zult u de gevolgen voor het front-end en back-end ontwikkelingsproces evalueren.
+In het volgende hoofdstuk, [ Overwegingen ](considerations.md), zult u het effect op het front-end en back-end ontwikkelingsproces herzien.

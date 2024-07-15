@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Oorspronkelijk formulier maken
 
-Het oorspronkelijke formulier (Refinance Form) wordt gebruikt voor het ondertekenen van meerdere formulieren door het activeren van de **Meerdere Forms ondertekenen** AEM workflow. U kunt naar keuze waarden invoeren, maar zorg dat de volgende velden aan het formulier worden toegevoegd.
+De aanvankelijke vorm (de Vorm van de Verfijning) wordt gebruikt voor het ondertekenen van veelvoudige vormen door het **Teken Veelvoudige van Forms** AEM werkschema in werking te stellen. U kunt naar keuze waarden invoeren, maar zorg dat de volgende velden aan het formulier worden toegevoegd.
 
 | Veldtype | Naam | Doel | Verborgen | Standaardwaarde |
 | ------------------------|---------------------------------------|--------------------|--------|----------------- |
@@ -29,12 +29,12 @@ Het oorspronkelijke formulier (Refinance Form) wordt gebruikt voor het onderteke
 | TextField | customerEmail | E-mailadres van klant om melding te verzenden | N |
 | CheckBox | formsToSign | De items identificeren de formulieren in het pakket | N |
 
-Het eerste formulier moet worden geconfigureerd om een AEM, genaamd **multipleforms**
-Zorg ervoor dat het pad naar het gegevensbestand is ingesteld op **Data.xml**. Dit is erg belangrijk omdat de voorbeeldcode zoekt naar een bestand met de naam Data.xml tijdens het laden van het formulier.
+De aanvankelijke vorm moet worden gevormd om een AEM te teweegbrengen genoemd **signmultipleforms**
+Zorg ervoor de Weg van het Dossier van Gegevens aan **Data.xml** wordt geplaatst. Dit is erg belangrijk omdat de voorbeeldcode zoekt naar een bestand met de naam Data.xml tijdens het laden van het formulier.
 
 ## Assets
 
-Het oorspronkelijke formulier (Refinantie-formulier) kan [hier gedownload](assets/refinance-form.zip)
+De aanvankelijke vorm (de Vorm van de Verfijning) kan [ van hier worden gedownload ](assets/refinance-form.zip)
 
 ## Volgende stappen
 

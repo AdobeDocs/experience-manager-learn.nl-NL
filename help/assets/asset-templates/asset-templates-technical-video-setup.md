@@ -24,11 +24,11 @@ Met Asset Templates kunnen marketers digitale middelen maken, beheren en leveren
 
 >[!NOTE]
 >
->AEM **moet** verbonden worden met een lopende server van het InDesign wanneer het malplaatje INDD wordt geupload. Voor een deel van de eerste verwerking in het INDD-bestand is een server met InDesigns vereist.
+>AEM **moet** met een lopende server van het InDesign worden verbonden wanneer het malplaatje INDD wordt geupload. Voor een deel van de eerste verwerking in het INDD-bestand is een server met InDesigns vereist.
 
 ## Proefversie van InDesign Server downloaden {#download-indesign-server-trial}
 
-Downloaden [Downloadwebsite InDesign Server](https://www.adobeprerelease.com/)
+De download [ website van de proefdownload van het InDesign Server ](https://www.adobeprerelease.com/)
 
 ## InDesign Server starten {#starting-indesign-server}
 

@@ -23,9 +23,9 @@ ht-degree: 0%
 
 {{aem-headless-trials-promo}}
 
-Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt ontwikkelen en beschikbaar maken met behulp van AEM GraphQL API&#39;s en die door een externe toepassing wordt verbruikt.
+Een end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt samenstellen en beschikbaar AEM met behulp van GraphQL API&#39;s en die door een externe toepassing wordt verbruikt.
 
-In deze zelfstudie wordt onderzocht hoe AEM GraphQL API&#39;s en headless mogelijkheden kunnen worden gebruikt om de ervaring die in een externe app wordt opgedaan, kracht bij te zetten.
+In deze zelfstudie wordt onderzocht hoe AEM GraphQL API&#39;s en headless mogelijkheden kunnen worden gebruikt om de ervaring die in een externe app is opgedaan, kracht bij te zetten.
 
 Deze zelfstudie behandelt de volgende onderwerpen:
 
@@ -40,22 +40,22 @@ Deze zelfstudie behandelt de volgende onderwerpen:
 
 U hebt het volgende nodig om deze zelfstudie te volgen:
 
-* Basisvaardigheden voor HTML en JavaScript
+* HTML- en JavaScript-vaardigheden
 * De volgende gereedschappen moeten lokaal zijn geïnstalleerd:
-   * [Node.js v18](https://nodejs.org/)
-   * [Git](https://git-scm.com/)
-   * Een IDE (bijvoorbeeld [Microsoft® Visual Studio-code](https://code.visualstudio.com/))
+   * [ Node.js v18 ](https://nodejs.org/)
+   * [ Git ](https://git-scm.com/)
+   * IDE (bijvoorbeeld, [ Microsoft® Visual Studio Code ](https://code.visualstudio.com/))
 
 ### AEM
 
-Als u deze zelfstudie wilt voltooien, kunt u het beste AEM Beheerders toegang geven tot een AEM as a Cloud Service omgeving. Als u geen toegang hebt tot een AEM as a Cloud Service omgeving, gelieve [aanmelden voor de proefversie AEM zonder hoofdtelefoon](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) om AEM headless mogelijkheden te verkennen.
+Als u deze zelfstudie wilt voltooien, kunt u het beste AEM Beheerders toegang geven tot een AEM as a Cloud Service-omgeving. Als u geen toegang tot een milieu van AEM as a Cloud Service hebt, gelieve [ omhoog voor de AEM Zwaardeloze proef ](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) te ondertekenen om AEM hoofdloze mogelijkheden te onderzoeken.
 
 ## Laten we beginnen!
 
-Zelfstudie starten met [Modellen voor inhoudsfragmenten definiëren](content-fragment-models.md).
+Begin het leerprogramma met [ het Bepalen Modellen van het Fragment van de Inhoud ](content-fragment-models.md).
 
 ## GitHub-project
 
-De broncode en inhoudspakketten zijn beschikbaar op de [AEM - WKND GraphQL GitHub Project](https://github.com/adobe/aem-guides-wknd-graphql).
+De broncode, en inhoudspakketten zijn beschikbaar op [ AEM Guides - het Project van GraphQL GitHub van WKND ](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Als u een probleem hebt met de zelfstudie of de code, laat u een [GitHub-probleem](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Als u een kwestie met het leerprogramma of de code vindt, verlaat de kwestie van a [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/issues).

@@ -24,7 +24,7 @@ Klanten willen de ingediende formuliergegevens doorgaans exporteren in CSV-indel
 >
 >Dit voorbeeld werkt alleen met Adaptief Forms dat niet is gebaseerd op het schema of het formuliergegevensmodel
 
-![Tabelstructuur](assets/tablestructure.PNG)
+![ Structuur van de Lijst ](assets/tablestructure.PNG)
 Aangezien u kunt zien de naam van het schema is modelstudie.Binnen dit schema zijn de indieningen van de lijstformaten met de volgende gedefinieerde kolommen
 
 * formdata: Deze kolom bevat de ingediende formuliergegevens
@@ -32,20 +32,20 @@ Aangezien u kunt zien de naam van het schema is modelstudie.Binnen dit schema zi
 * id: Dit is de primaire sleutel en is ingesteld op automatisch verhogen
 
 De lijstnaam en de twee-kolomnamen worden blootgesteld als OSGi configuratieeigenschappen zoals aangetoond in het hieronder scherm:
-![osgi-configuratie](assets/configuration.PNG)
+![ osgi-configuratie ](assets/configuration.PNG)
 De code leest deze waarden en stelt de juiste SQL-query samen die moet worden uitgevoerd. De volgende query wordt bijvoorbeeld uitgevoerd op basis van de bovenstaande waarden
 
 `SELECT formdata FROM aemformstutorial.formsubmissions where formname=timeoffrequestform`
 
 In de bovenstaande query wordt de naam van het formulier (timeoffrequestform) als parameter request doorgegeven aan de servlet.
 
-## **OSGi-service maken**
+## **creeer OSGi Dienst**
 
 De volgende dienst OSGI werd gecreeerd om de voorgelegde gegevens in CSV formaat uit te voeren.
 
 * Lijn 37: Wij hebben toegang tot Apache Sling Connection Pooled DataSource.
 
-* Regel 89: Dit is het ingangspunt aan de dienst.De methode `getCSVFile(..)` neemt in formName als inputparameter en haalt de voorgelegde gegevens met betrekking tot de bepaalde vormnaam.
+* Regel 89: Dit is het ingangspunt aan de dienst.De methode `getCSVFile(..)` neemt in formName als inputparameter en haalt de voorgelegde gegevens betreffende de bepaalde vormnaam.
 
 >[!NOTE]
 >
@@ -265,7 +265,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-Hier volgt de servletcode die de `getCSVFile(..)` de wijze van dienstverlening. De service retourneert een StringBuffer-object dat vervolgens wordt gestreamd naar de aanroepende toepassing
+Hier volgt de servletcode die de methode `getCSVFile(..)` van de service aanroept. De service retourneert een StringBuffer-object dat vervolgens wordt gestreamd naar de aanroepende toepassing
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -307,6 +307,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Distribueren op uw server
 
-* Het dialoogvenster Importeren [SQL-bestand](assets/formsubmissions.sql) in MySQL-server met MySQL Workbench. Hiermee maakt u een schema genaamd **vormgeving** en tabel opgeroepen **formules** met enkele voorbeeldgegevens.
-* Implementeren [OSGi Bundle](assets/store-export.jar) de Felix-webconsole gebruiken
-* [TimeOffRequest-verzendingen ophalen](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Het CSV-bestand moet naar u worden gestreamd.
+* Importeer het [ SQL dossier ](assets/formsubmissions.sql) in server MySQL gebruikend MySQL Workbench. Dit leidt tot schema genoemd **aemformstutorial** en lijst geroepen **formsubmission** met sommige steekproefgegevens.
+* Stel [ Bundel OSGi ](assets/store-export.jar) op gebruikend de het Webconsole van Felix
+* [ om Submissions te krijgen TimeOffRequest ](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Het CSV-bestand moet naar u worden gestreamd.

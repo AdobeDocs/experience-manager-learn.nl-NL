@@ -25,97 +25,97 @@ Leer hoe meerdere weergaven in de SPA kunnen worden ondersteund door aan AEM Pag
 ## Doelstelling
 
 1. Begrijp het SPA model verpletterend opties beschikbaar wanneer het gebruiken van de SPARedacteur.
-1. Leren gebruiken [Reageer Router](https://reacttraining.com/react-router) om te navigeren tussen verschillende weergaven van de SPA.
+1. Leer om [ Reageer Router ](https://reacttraining.com/react-router) te gebruiken om tussen verschillende meningen van de SPA te navigeren.
 1. Gebruik AEM React Core Components om een dynamische navigatie te implementeren die door de AEM paginahiërarchie wordt aangedreven.
 
 ## Wat u gaat maken
 
-In dit hoofdstuk wordt navigatie toegevoegd aan een SPA in AEM. Het navigatiemenu wordt aangestuurd door de AEM paginahiërarchie en maakt gebruik van het JSON-model dat wordt geleverd door de [Navigation Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
+In dit hoofdstuk wordt navigatie toegevoegd aan een SPA in AEM. Het navigatiemenu wordt gedreven door de AEM paginahiërarchie en zal gebruik maken van het model JSON dat door de [ Component van de Kern van de Navigatie ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html) wordt verstrekt.
 
-![Navigatie toegevoegd](assets/navigation-routing/navigation-added.png)
+![ toegevoegde Navigatie ](assets/navigation-routing/navigation-added.png)
 
 ## Vereisten
 
-Controleer de vereiste gereedschappen en instructies voor het instellen van een [plaatselijke ontwikkelomgeving](overview.md#local-dev-environment). Dit hoofdstuk is een voortzetting van het [Componenten toewijzen](map-components.md) hoofdstuk, nochtans om langs alles te volgen u wenst is een SPA-toegelaten AEM project dat aan een lokale AEM instantie wordt opgesteld.
+Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment). Dit hoofdstuk is een voortzetting van het [ hoofdstuk van de Componenten van de Kaart ](map-components.md), nochtans om langs al te volgen u nodig een SPA-toegelaten AEM project is dat aan een lokale AEM instantie wordt opgesteld.
 
 ## De navigatie toevoegen aan de sjabloon {#add-navigation-template}
 
-1. Open een browser en meld u aan bij AEM. [http://localhost:4502/](http://localhost:4502/). De begincodebasis zou reeds moeten worden opgesteld.
-1. Ga naar de **Paginasjabloon SPA**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
-1. De meest buitenste selecteren **Basislay-outcontainer** en klik op **Beleid** pictogram. Wees voorzichtig **niet** om de **Layout Container** niet-vergrendeld voor ontwerpen.
+1. Open browser en login aan AEM, [ http://localhost:4502/ ](http://localhost:4502/). De begincodebasis zou reeds moeten worden opgesteld.
+1. Navigeer aan het **SPA Malplaatje van de Pagina**: [ http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html ](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
+1. Selecteer de buitenste **Container van de Lay-out van de Wortel** en klik zijn **3} pictogram van het Beleid {.** Wees voorzichtig **niet** om de **Container van de Lay-out** niet-gesloten voor creatie te selecteren.
 
-   ![Selecteer het beleidspictogram voor de container van de hoofdlayout](assets/navigation-routing/root-layout-container-policy.png)
+   ![ selecteer het pictogram van het de containerbeleid van de wortellay-out ](assets/navigation-routing/root-layout-container-policy.png)
 
-1. Een nieuw beleid maken met de naam **SPA**:
+1. Creeer een nieuw beleid genoemd **SPA Structuur**:
 
-   ![SPA structuurbeleid](assets/navigation-routing/spa-policy-update.png)
+   ![ SPA het Beleid van de Structuur ](assets/navigation-routing/spa-policy-update.png)
 
-   Onder **Toegestane componenten** > **Algemeen** > selecteer de **Layout Container** component.
+   Onder **Toegestane Componenten** > **Algemene** > selecteer de **component van de Container van de Lay-out**.
 
-   Onder **Toegestane componenten** > **WKND SPA REACT - STRUCTUUR** > selecteer de **Navigatie** component:
+   Onder **Toegestane Componenten** > **WKND SPA REACT - STRUCTUUR** > selecteer de **5} component van de Navigatie {:**
 
-   ![Navigatie-component selecteren](assets/navigation-routing/select-navigation-component.png)
+   ![ Uitgezochte component van de Navigatie ](assets/navigation-routing/select-navigation-component.png)
 
-   Onder **Toegestane componenten** > **WKND SPA REACT - Inhoud** > selecteer de **Afbeelding** en **Tekst** componenten. Er moeten in totaal vier componenten zijn geselecteerd.
+   Onder **Toegestane Componenten** > **WKND SPA REACT - Inhoud** > selecteert het **Beeld** en **de componenten van de Tekst**. Er moeten in totaal vier componenten zijn geselecteerd.
 
-   Klikken **Gereed** om de wijzigingen op te slaan
+   Klik **Gedaan** om de veranderingen te bewaren.
 
-1. De pagina vernieuwen en de **Navigatie** component boven het niet-vergrendelde **Layout Container**:
+1. Vernieuw de pagina, en voeg de **component van de Navigatie** boven de niet-gesloten **Container van de Lay-out** toe:
 
-   ![Navigatiecomponent toevoegen aan sjabloon](assets/navigation-routing/add-navigation-component.png)
+   ![ voeg de component van de Navigatie aan malplaatje ](assets/navigation-routing/add-navigation-component.png) toe
 
-1. Selecteer de **Navigatie** component en klik op de component **Beleid** pictogram om het beleid te bewerken.
-1. Een nieuw beleid maken met een **Beleidstitel** van **SPA**.
+1. Selecteer de **component van de Navigatie** en klik zijn **pictogram van het Beleid** om het beleid uit te geven.
+1. Creeer een nieuw beleid met a **Titel van het Beleid** van **SPA Navigatie**.
 
    Onder de **Eigenschappen**:
 
-   * Stel de **Navigatieroot** tot `/content/wknd-spa-react/us/en`.
-   * Stel de **Basisniveaus uitsluiten** tot **1**.
-   * Uitschakelen **Alle onderliggende pagina&#39;s verzamelen**.
-   * Stel de **Navigatiestructuurdiepte** tot **3**.
+   * Plaats de **Wortel van de Navigatie** aan `/content/wknd-spa-react/us/en`.
+   * Plaats de **Exclude Niveaus van de Wortel** aan **1**.
+   * Uncheck **verzamel alle kindpagina&#39;s**.
+   * Plaats de **Diepte van de Structuur van de Navigatie** aan **3**.
 
-   ![Navigatiebeleid configureren](assets/navigation-routing/navigation-policy.png)
+   ![ vorm het Beleid van de Navigatie ](assets/navigation-routing/navigation-policy.png)
 
-   Hierdoor worden de navigatieniveaus 2 diep onder elkaar verzameld `/content/wknd-spa-react/us/en`.
+   Hierdoor worden de navigatieniveaus 2 diep onder `/content/wknd-spa-react/us/en` verzameld.
 
-1. Nadat u de wijzigingen hebt opgeslagen, ziet u de gevulde `Navigation` als onderdeel van de template:
+1. Nadat u de wijzigingen hebt opgeslagen, ziet u de gevulde `Navigation` als onderdeel van de sjabloon:
 
-   ![Bevolkt navigatiecomponent](assets/navigation-routing/populated-navigation.png)
+   ![ bevolkte navigatiecomponent ](assets/navigation-routing/populated-navigation.png)
 
 ## Onderliggende pagina&#39;s maken
 
 Maak vervolgens aanvullende pagina&#39;s in AEM die als de verschillende weergaven in de SPA dienen. We zullen ook de hiërarchische structuur van het JSON-model dat door AEM wordt aangeboden, controleren.
 
-1. Ga naar de **Sites** console: [http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home). Selecteer de **WKND SPA React Home Page** en klik op **Maken** > **Pagina**:
+1. Navigeer aan de **console van Plaatsen**: [ http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home ](http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home). Selecteer **WKND SPA Reageer Homepage** en klik **creeer** > **Pagina**:
 
-   ![Nieuwe pagina maken](assets/navigation-routing/create-new-page.png)
+   ![ creeer nieuwe pagina ](assets/navigation-routing/create-new-page.png)
 
-1. Onder **Sjabloon** selecteren **SPA pagina**. Onder **Eigenschappen** enter **Pagina 1** voor de **Titel** en **pagina 1** als de naam.
+1. Onder **Malplaatje** uitgezocht **SPA Pagina**. Onder **Eigenschappen** ga **Pagina 1** voor **Titel** en **pagina-1** in als naam.
 
-   ![De eigenschappen voor de eerste pagina invoeren](assets/navigation-routing/initial-page-properties.png)
+   ![ ga de aanvankelijke paginaeigenschappen ](assets/navigation-routing/initial-page-properties.png) in
 
-   Klikken **Maken** en in het dialoogvenster klikt u op **Openen** om de pagina te openen in de AEM SPA Editor.
+   Klik **creëren** en in de dialoog pop-up, klik **Open** om de pagina in de Redacteur van de SPA van de AEM te openen.
 
-1. Een nieuwe toevoegen **Tekst** aan de hoofdcomponent **Layout Container**. Bewerk de component en voer de tekst in: **Pagina 1** het gebruik van de RTE en de **H2** element.
+1. Voeg een nieuwe **component van de Tekst** {aan de belangrijkste **Container van de Lay-out** toe. Bewerk de component en ga de tekst in: **Pagina 1** gebruikend RTE en het **H2** element.
 
-   ![Voorbeeld van inhoudspagina 1](assets/navigation-routing/page-1-sample-content.png)
+   ![ pagina 1 van de de inhoudspagina van de Steekproef ](assets/navigation-routing/page-1-sample-content.png)
 
    Voel u vrij om extra inhoud toe te voegen, zoals een afbeelding.
 
-1. Ga terug naar de AEM Sites-console en herhaal de bovenstaande stappen en maak een tweede pagina met de naam **Pagina 2** als een **Pagina 1**.
-1. Ten slotte maakt u een derde pagina. **Pagina 3** maar als **kind** van **Pagina 2**. Na voltooiing zou de plaatshiërarchie als het volgende moeten kijken:
+1. Terugkeer aan de console van AEM Sites en herhaal de bovengenoemde stappen, die tot een tweede pagina leiden genoemd **Pagina 2** als sibling van **Pagina 1**.
+1. Tot slot creeer een derde pagina, **Pagina 3** maar als a **kind** van **Pagina 2**. Na voltooiing zou de plaatshiërarchie als het volgende moeten kijken:
 
-   ![Voorbeeld van sitehiërarchie](assets/navigation-routing/wknd-spa-sample-site-hierarchy.png)
+   ![ Hiërarchie van de Plaats van de Steekproef ](assets/navigation-routing/wknd-spa-sample-site-hierarchy.png)
 
 1. De navigatiecomponent kan nu worden gebruikt om naar verschillende gebieden van de SPA te navigeren.
 
-   ![Navigatie en routering](assets/navigation-routing/navigation-working.gif)
+   ![ Navigatie en het verpletteren ](assets/navigation-routing/navigation-working.gif)
 
-1. Open de pagina buiten de AEM Editor: [http://localhost:4502/content/wknd-spa-react/us/en/home.html](http://localhost:4502/content/wknd-spa-react/us/en/home.html). Gebruik de **Navigatie** om naar verschillende weergaven van de app te navigeren.
+1. Open de pagina buiten de Redacteur van de AEM: [ http://localhost:4502/content/wknd-spa-react/us/en/home.html ](http://localhost:4502/content/wknd-spa-react/us/en/home.html). Gebruik de **component van de Navigatie** om aan verschillende meningen van app te navigeren.
 
 1. Gebruik de ontwikkelaarshulpmiddelen van uw browser om de netwerkverzoeken te inspecteren, aangezien u navigeert. Onderstaande screenshots worden vastgelegd vanuit de Google Chrome-browser.
 
-   ![Netwerkverzoeken waarnemen](assets/navigation-routing/inspect-network-requests.png)
+   ![ neem de verzoeken van het Netwerk ](assets/navigation-routing/inspect-network-requests.png) waar
 
    Let op: na het laden van de eerste pagina wordt de volledige pagina niet volledig vernieuwd en wordt het netwerkverkeer tot een minimum beperkt wanneer wordt teruggekeerd naar eerder bezochte pagina&#39;s.
 
@@ -123,7 +123,7 @@ Maak vervolgens aanvullende pagina&#39;s in AEM die als de verschillende weergav
 
 Controleer vervolgens het JSON-model dat de multi-view ervaring van de SPA aanstuurt.
 
-1. Open op een nieuw tabblad de API van het JSON-model die wordt geleverd door AEM: [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Het kan handig zijn om een browserextensie te gebruiken voor [de JSON-indeling](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa).
+1. In een nieuw lusje, open JSON model API die door AEM wordt verstrekt: [ http://localhost:4502/content/wknd-spa-react/us/en.model.json ](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Het kan nuttig zijn om een browser uitbreiding aan [ formaat te gebruiken JSON ](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa).
 
    Deze JSON-inhoud wordt opgevraagd wanneer de SPA voor het eerst wordt geladen. De buitenste structuur ziet er als volgt uit:
 
@@ -148,25 +148,25 @@ Controleer vervolgens het JSON-model dat de multi-view ervaring van de SPA aanst
    }
    ```
 
-   Onder `:children` u zou een ingang voor elk van de gecreeerde pagina&#39;s moeten zien. De inhoud voor alle pagina&#39;s staat in dit eerste JSON-verzoek. Met navigatie die, worden de verdere meningen van de SPA geladen snel, aangezien de inhoud reeds beschikbare cliënt-kant is.
+   Onder `:children` ziet u een item voor elk van de gemaakte pagina&#39;s. De inhoud voor alle pagina&#39;s staat in dit eerste JSON-verzoek. Met navigatie die, worden de verdere meningen van de SPA geladen snel, aangezien de inhoud reeds beschikbare cliënt-kant is.
 
-   Het is niet verstandig om te laden **ALLES** van de inhoud van een SPA in het eerste JSON-verzoek, aangezien dit het laden van de eerste pagina zou vertragen. Vervolgens kunt u bekijken hoe de hiërarchiediepte van pagina&#39;s wordt verzameld.
+   Het is niet wijs om **ALLES** van de inhoud van een SPA in het aanvankelijke JSON- verzoek te laden, aangezien dit de aanvankelijke paginading zou vertragen. Vervolgens kunt u bekijken hoe de hiërarchiediepte van pagina&#39;s wordt verzameld.
 
-1. Ga naar de **SPA** sjabloon op: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-app-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-app-template/structure.html).
+1. Navigeer aan het **SPA van de Wortel** malplaatje bij: [ http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-app-template/structure.html ](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-app-template/structure.html).
 
-   Klik op de knop **Menu Pagina-eigenschappen** > **Paginabeleid**:
+   Klik het **menu van de eigenschappen van de Pagina** > **Beleid van de Pagina**:
 
-   ![Het paginabeleid voor SPA basispagina openen](assets/navigation-routing/open-page-policy.png)
+   ![ open het paginabeleid voor SPA Wortel ](assets/navigation-routing/open-page-policy.png)
 
-1. De **SPA** sjabloon heeft een extra **Hiërarchische structuur** om de verzamelde JSON-inhoud te beheren. De **Structuurdiepte** bepaalt hoe diep in de sitehiërarchie onderliggende pagina&#39;s onder de **basis**. U kunt ook de opdracht **Structuurpatronen** veld om extra pagina&#39;s te filteren op basis van een reguliere expressie.
+1. Het **SPA 1} malplaatje van de Wortel {heeft een extra** Hiërarchische 3} lusje van de Structuur om de verzamelde inhoud te controleren JSON. **** De **Diepte van de Structuur** bepaalt hoe diep in de plaatshiërarchie om kindpagina&#39;s onder de **wortel** te verzamelen. U kunt het **gebied van de Patronen van de Structuur** ook gebruiken om extra pagina&#39;s uit te filtreren die op een regelmatige uitdrukking worden gebaseerd.
 
-   Werk de **Structuurdiepte** tot **2**:
+   Werk de **Diepte van de Structuur** aan **** bij:
 
-   ![Structuurdiepte bijwerken](assets/navigation-routing/update-structure-depth.png)
+   ![ de structuurdiepte van de Update ](assets/navigation-routing/update-structure-depth.png)
 
-   Klikken **Gereed** de wijzigingen in het beleid opslaan.
+   Klik **Gedaan** om de veranderingen in het beleid te bewaren.
 
-1. Het JSON-model opnieuw openen [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json).
+1. Open het model JSON [ http://localhost:4502/content/wknd-spa-react/us/en.model.json ](http://localhost:4502/content/wknd-spa-react/us/en.model.json) opnieuw.
 
    ```json
    {
@@ -188,31 +188,31 @@ Controleer vervolgens het JSON-model dat de multi-view ervaring van de SPA aanst
    }
    ```
 
-   Let erop dat de **Pagina 3** pad is verwijderd: `/content/wknd-spa-react/us/en/home/page-2/page-3` uit het oorspronkelijke JSON-model. Dit komt omdat **Pagina 3** bevindt zich op niveau 3 in de hiërarchie en we hebben het beleid bijgewerkt om alleen inhoud op een maximale diepte van niveau 2 op te nemen.
+   Bericht dat **Pagina 3** weg is verwijderd: `/content/wknd-spa-react/us/en/home/page-2/page-3` van het aanvankelijke model JSON. Dit is omdat **Pagina 3** op een niveau 3 in de hiërarchie is en wij het beleid hebben bijgewerkt om inhoud bij een maximumdiepte van niveau 2 slechts te omvatten.
 
-1. Open de SPA homepage opnieuw: [http://localhost:4502/content/wknd-spa-react/us/en/home.html](http://localhost:4502/content/wknd-spa-react/us/en/home.html) en open de ontwikkelaarsgereedschappen van uw browser.
+1. Heropen de SPA homepage: [ http://localhost:4502/content/wknd-spa-react/us/en/home.html ](http://localhost:4502/content/wknd-spa-react/us/en/home.html) en open de ontwikkelaarshulpmiddelen van uw browser.
 
-   De pagina vernieuwen en de XHR-aanvraag wordt weergegeven voor `/content/wknd-spa-react/us/en.model.json`, dat is de SPA. U ziet dat er slechts drie onderliggende pagina&#39;s zijn opgenomen op basis van de configuratie van de hiërarchiediepte voor de SPA basissjabloon die eerder in de zelfstudie is gemaakt. Dit omvat niet **Pagina 3**.
+   Vernieuw de pagina en u zou het XHR- verzoek aan `/content/wknd-spa-react/us/en.model.json` moeten zien, dat de SPAWortel is. U ziet dat er slechts drie onderliggende pagina&#39;s zijn opgenomen op basis van de configuratie van de hiërarchiediepte voor de SPA basissjabloon die eerder in de zelfstudie is gemaakt. Dit omvat niet **Pagina 3**.
 
-   ![Aanvankelijk JSON-verzoek - SPA basis](assets/navigation-routing/initial-json-request.png)
+   ![ Aanvankelijk JSON verzoek - SPA Wortel ](assets/navigation-routing/initial-json-request.png)
 
-1. Gebruik, terwijl de ontwikkelaarsgereedschappen zijn geopend, de `Navigation` om rechtstreeks naar te navigeren **Pagina 3**:
+1. Met de ontwikkelaarshulpmiddelen open, gebruik de `Navigation` component om direct aan **Pagina 3** te navigeren:
 
-   Merk op dat een nieuw XHR-verzoek wordt ingediend aan: `/content/wknd-spa-react/us/en/home/page-2/page-3.model.json`
+   Merk op dat een nieuw XHR-verzoek wordt gedaan aan: `/content/wknd-spa-react/us/en/home/page-2/page-3.model.json`
 
-   ![Pagina drie XHR-verzoek](assets/navigation-routing/page-3-xhr-request.png)
+   ![ Pagina drie XHR- Verzoek ](assets/navigation-routing/page-3-xhr-request.png)
 
-   De AEM Model Manager begrijpt dat de **Pagina 3** JSON-inhoud is niet beschikbaar en activeert automatisch het aanvullende XHR-verzoek.
+   De AEM ModelManager begrijpt dat de **pagina 3** inhoud JSON niet beschikbaar is en automatisch het extra verzoek XHR teweegbrengt.
 
-1. Experimenteer met diepe koppelingen door rechtstreeks naar: [http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html). Let ook op dat de knop Terug van de browser nog steeds werkt.
+1. Experimenteer met diepe verbindingen door rechtstreeks te navigeren aan: [ http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html ](http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html). Let ook op dat de knop Terug van de browser nog steeds werkt.
 
 ## Inspect React-routering  {#react-routing}
 
-De navigatie en het verpletteren worden uitgevoerd met [Reageer Router](https://reactrouter.com/en/main). Reageer Router is een inzameling van navigatiecomponenten voor React toepassingen. [Core-componenten AEM Reageren](https://github.com/adobe/aem-react-core-wcm-components-base) de eigenschappen van React Router om uit te voeren **Navigatie** wordt gebruikt in de vorige stappen.
+De navigatie en het verpletteren wordt uitgevoerd met [ Reageer Router ](https://reactrouter.com/en/main). Reageer Router is een inzameling van navigatiecomponenten voor React toepassingen. [ AEM Reageer de Componenten van de Kern ](https://github.com/adobe/aem-react-core-wcm-components-base) gebruikseigenschappen van React Router om de **3} component uit te voeren van de Navigatie {die in de vorige stappen wordt gebruikt.**
 
-Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebruikend React Router wordt geïntegreerd [Koppeling](https://reactrouter.com/en/main/components/link) component.
+Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebruikend React de component van de Verbinding van de Router [ ](https://reactrouter.com/en/main/components/link) wordt geïntegreerd.
 
-1. In winde open het dossier `index.js` om `ui.frontend/src/index.js`.
+1. Open het bestand `index.js` at `ui.frontend/src/index.js` in de IDE.
 
    ```js
    /* index.js */
@@ -237,9 +237,9 @@ Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebru
    });
    ```
 
-   Let erop dat de `App` is verpakt in de `Router` component van [Reageer Router](https://reacttraining.com/react-router). De `ModelManager`, verstrekt door de AEM SPA Redacteur JS SDK, voegt de dynamische routes aan AEM Pagina&#39;s toe die op JSON model API worden gebaseerd.
+   Bericht dat `App` in de `Router` component van [ Reageer Router ](https://reacttraining.com/react-router) verpakt is. `ModelManager`, verstrekt door de AEM SPA Redacteur JS SDK, voegt de dynamische routes aan AEM Pagina&#39;s toe die op JSON model API worden gebaseerd.
 
-1. Het bestand openen `Page.js` om `ui.frontend/src/components/Page/Page.js`
+1. Open het bestand `Page.js` op `ui.frontend/src/components/Page/Page.js`
 
    ```js
    class AppPage extends Page {
@@ -256,10 +256,10 @@ Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebru
    );
    ```
 
-   De `Page` SPA component gebruikt de `MapTo` functie voor toewijzen **Pagina&#39;s** in AEM op een corresponderende SPA. De `withRoute` nut helpt om de SPA aan de aangewezen AEM pagina van het Kind dynamisch te leiden die op `cqPath` eigenschap.
+   De `Page` SPA component gebruikt de `MapTo` functie om **Pagina&#39;s** in kaart te brengen in AEM aan een overeenkomstige SPA component. Met het hulpprogramma `withRoute` kunt u de SPA dynamisch naar de juiste AEM onderliggende pagina routeren op basis van de eigenschap `cqPath` .
 
-1. Open de `Header.js` component bij `ui.frontend/src/components/Header/Header.js`.
-1. Werk de `Header` om de `<h1>` tag in een [Koppeling](https://reactrouter.com/en/main/components/link) op de homepage:
+1. Open de component `Header.js` op `ui.frontend/src/components/Header/Header.js` .
+1. Werk `Header` bij om de `<h1>` markering in a [ Verbinding ](https://reactrouter.com/en/main/components/link) aan de homepage te verpakken:
 
    ```diff
      //Header.js
@@ -282,9 +282,9 @@ Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebru
        }
    ```
 
-   In plaats van een standaard te gebruiken `<a>` ankertag die we gebruiken `<Link>` verstrekt door React Router. Als de `to=` de punten aan een geldige route, zal de SPA op die route schakelen en **niet** een volledige pagina vernieuwen. Hier kunnen we de koppeling naar de homepage eenvoudig coderen om het gebruik van `Link`.
+   In plaats van een standaard `<a>` ankertag te gebruiken, gebruiken we `<Link>` dat wordt geleverd door React Router. Zolang `to=` aan een geldige route richt, zal de SPA aan die route schakelen en **** voert geen volledige pagina uit vernieuwt. Hier kunt u de koppeling naar de startpagina eenvoudig coderen om het gebruik van `Link` te illustreren.
 
-1. De test bijwerken bij `App.test.js` om `ui.frontend/src/App.test.js`.
+1. Werk de test bij `App.test.js` om `ui.frontend/src/App.test.js` .
 
    ```diff
    + import { BrowserRouter as Router } from 'react-router-dom';
@@ -297,7 +297,7 @@ Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebru
      });
    ```
 
-   Aangezien wij eigenschappen van React Router binnen een statische component gebruiken die binnen van verwijzingen wordt voorzien `App.js` we moeten de eenheidstest bijwerken om er rekening mee te houden .
+   Aangezien wij eigenschappen van React Router binnen een statische component gebruiken die in `App.js` van verwijzingen wordt voorzien, moeten wij de eenheidstest aan rekening voor het bijwerken.
 
 1. Open een terminal, navigeer aan de wortel van het project, en stel het project in om het gebruiken van uw Geweven vaardigheden te AEM:
 
@@ -306,15 +306,15 @@ Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebru
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Navigeer naar een van de pagina&#39;s in de SPA in AEM: [http://localhost:4502/content/wknd-spa-react/us/en/home/page-1.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-1.html)
+1. Navigeer aan één van de pagina&#39;s in de SPA in AEM: [ http://localhost:4502/content/wknd-spa-react/us/en/home/page-1.html ](http://localhost:4502/content/wknd-spa-react/us/en/home/page-1.html)
 
-   In plaats van de `Navigation` om te navigeren, gebruikt u de koppeling in het dialoogvenster `Header`.
+   Gebruik de koppeling in `Header` in plaats van de component `Navigation` te gebruiken om te navigeren.
 
-   ![Koptekstkoppeling](assets/navigation-routing/header-link.png)
+   ![ Verbinding van de Kopbal ](assets/navigation-routing/header-link.png)
 
-   Merk op dat een volledige pagina wordt vernieuwd **niet** teweeggebracht en dat het SPA verpletteren werkt.
+   Merk op dat een volledige pagina **niet** getriggerd is en dat het SPA verpletteren werkt.
 
-1. Experimenteer desgewenst met de `Header.js` bestand met een standaard `<a>` ankertag:
+1. Experimenteer desgewenst met het `Header.js` -bestand met een standaard `<a>` -ankertag:
 
    ```js
    <a href="/content/wknd-spa-react/us/en/home.html">
@@ -326,4 +326,4 @@ Daarna, inspecteer hoe de Router van het Reageren met de SPA en experiment gebru
 
 ## Gefeliciteerd! {#congratulations}
 
-U hebt geleerd hoe meerdere weergaven in de SPA kunnen worden ondersteund door de SPA Editor SDK toe te wijzen aan AEM pagina&#39;s. De dynamische navigatie is uitgevoerd gebruikend React Router en toegevoegd aan `Header` component.
+U hebt geleerd hoe meerdere weergaven in de SPA kunnen worden ondersteund door de SPA Editor SDK toe te wijzen aan AEM pagina&#39;s. De dynamische navigatie is uitgevoerd gebruikend React Router en toegevoegd aan de `Header` component.

@@ -37,6 +37,6 @@ De Adobe Dynamic Media Classic-bureaubladtoepassing is compatibel met de volgend
 
 ## Ondersteunende materialen
 
-* [Adobe Dynamic Media Classic Desktop - toepassingsdocumentatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [Adobe Dynamic Media Veelgestelde vragen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
-* [Dynamic Media Classic Desktop-app downloaden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [ de documentatie van de Toepassing van de Desktop van Adobe Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
+* [ Adobe Dynamic Media vaak Gestelde Vragen ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [ Download Dynamic Media Classic Desktop app ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)

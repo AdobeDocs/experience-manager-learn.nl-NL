@@ -45,12 +45,12 @@ Aanmelden bij AEM Forms.
 * Op deze manier geven we het accountnummer door via het aanvraagkenmerk aan het formuliergegevensmodel.
 
 * Zorg ervoor dat u de wijzigingen opslaat.
-  ![fdm](assets/requestattribute.gif)
+  ![ fdm ](assets/requestattribute.gif)
 
 ## E-maillevering van webkanaaldocument testen {#test-email-delivery-of-web-channel-document}
 
 * [De voorbeeldbestanden installeren met pakketbeheer](assets/webchanneldelivery.zip)
-* [Aanmelden bij crx](http://localhost:4502/crx/de/index.jsp#)
+* [ Login aan crx ](http://localhost:4502/crx/de/index.jsp#)
 
 * Naar /home/users navigeren
 
@@ -62,13 +62,13 @@ Aanmelden bij AEM Forms.
 
 * Stel de waarde van deze eigenschap accountnumber in op &quot;3059827&quot;. U kunt deze waarde op elk willekeurig getal instellen zoals u wilt.
 
-* [Open getad.html](http://localhost:4502/content/getad.html)
+* [ Open getad.html ](http://localhost:4502/content/getad.html)
 
 * De code die aan deze URL is gekoppeld, krijgt het accountnummer van de aangemelde gebruiker. Dit accountnummer wordt vervolgens als aanvraagkenmerk aan de FDM doorgegeven. De FDM haalt dan de gegevens op die aan dit accountnummer zijn gekoppeld en vult het document met het webkanaal.
 
 >[!NOTE]
 >
->Kijk eens naar de **/apps/AEMForms/fetchad/GET.jsp** bestand in crx. Zorg ervoor dat de tekenreeksvariabele webChannelDocument naar een geldig communicatiedocumentpad verwijst.
+>Gelieve te nemen een blik bij het **/apps/AEMForms/fetchad/GET.jsp** dossier in crx. Zorg ervoor dat de tekenreeksvariabele webChannelDocument naar een geldig communicatiedocumentpad verwijst.
 
 ## Volgende stappen
 

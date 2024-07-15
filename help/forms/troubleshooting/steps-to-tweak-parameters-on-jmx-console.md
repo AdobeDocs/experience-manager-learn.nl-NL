@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Stappen voor het aanpassen van parameters op JMX-console
 
-*Deze video doorloopt de stappen om parameters op JMX-console aan te passen.*
+*Deze video loopt door de stappen om parameters op console te tweken JMX.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335554?quality=12&learn=on)

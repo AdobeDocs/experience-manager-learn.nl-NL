@@ -1,6 +1,6 @@
 ---
 title: Gereedheid en analyse van best practices
-description: Leer hoe de Analysator van Beste praktijken kan helpen uw toepassing klaar maken om aan Experience Manager as a Cloud Service te worden verplaatst
+description: Leer hoe de Analysator van Beste praktijken kan helpen uw toepassing om te leiden naar Experience Manager as a Cloud Service
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade

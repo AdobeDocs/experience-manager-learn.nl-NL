@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen om HtmltoPDF-specifieke problemen op te lossen bij een Windows-installatie
 
-*Deze video doorloopt het proces om het oplossen van problemen HtmltoPDF specifieke kwesties op een opstelling van Vensters te behandelen.*
+*Deze video loopt door het proces van het oplossen van problemenHtmltoPDF specifieke kwesties op een opstelling van Vensters.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335545?quality=12&learn=on)

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen om specifieke mislukkingen OpenOffice op een opstelling van Unix problemen op te lossen
 
-*Deze video doorloopt het proces van het oplossen van problemenOpenOffice specifieke mislukkingen op een opstelling van Unix voor AEM Forms PDFG.*
+*Deze video loopt door het proces van het oplossen van problemenOpenOffice specifieke mislukkingen op een opstelling van Unix voor AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335551?quality=12&learn=on)

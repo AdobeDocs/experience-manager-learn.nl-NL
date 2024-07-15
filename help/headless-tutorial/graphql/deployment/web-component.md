@@ -19,18 +19,18 @@ ht-degree: 0%
 
 # Implementaties van onderdelen van het web zonder koppen AEM
 
-AEM zonder kop [Webcomponent](https://developer.mozilla.org/en-US/docs/Web/Web_Components)/JS-implementaties zijn pure JavaScript-toepassingen die in een webbrowser worden uitgevoerd en die zonder kop inhoud verbruiken en interageren. Webcomponenten/JS-implementaties verschillen van [Implementaties SPA](./spa.md) in die zin dat ze geen robuust SPA gebruiken en dat ze naar verwachting in de context van een website worden ingesloten, leveren, aan oppervlakinhoud van AEM.
+AEM Koploze ](https://developer.mozilla.org/en-US/docs/Web/Web_Components) /JS plaatsingen van de Component van het Web [ de Zonder kop zijn zuivere JavaScript apps die in Webbrowser lopen, die en met inhoud in AEM op een krantenloze manier verbruiken en in wisselwerking staan. De plaatsingen van de Component/JS van het Web verschillen van [ SPA plaatsingen ](./spa.md) in zoverre dat zij geen robuust SPA kader gebruiken, en naar verwachting ingebed in de context van om het even welke website, leveren, aan oppervlakte inhoud van AEM.
 
 
 ## Implementatieconfiguraties
 
 De volgende plaatsingsconfiguratie moet op zijn plaats voor de plaatsingen van de Component/JS van het Web zijn.
 
-| Webcomponent/JS-app maakt verbinding met | AEM auteur | AEM publiceren | Voorvertoning AEM |
+| Webcomponent/JS-app maakt verbinding met | AEM auteur | AEM Publish | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Verzendingsfilters](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| [Delen van bronnen van oorsprong (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [ bron het delen van de kruis-oorsprong (CORS) ](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [ AEM gastheren ](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Voorbeeld van webcomponent
 
@@ -50,9 +50,9 @@ Adobe biedt een voorbeeld van een webcomponent.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/web-component.md" title="Webcomponent">Webcomponent</a></p>
-                   <p class="is-size-6">Een voorbeeld van een webcomponent, geschreven in zuiver JavaScript, die inhoud van AEM GraphQL-API's zonder koppen gebruikt.</p>
+                   <p class="is-size-6">Een voorbeeld van een webcomponent, geschreven in pure JavaScript, die inhoud gebruikt van AEM GraphQL-API's zonder koppen.</p>
                    <a href="../example-apps/web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Voorbeeld weergeven</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Voorbeeld van de Mening </span>
                    </a>
                </div>
            </div>

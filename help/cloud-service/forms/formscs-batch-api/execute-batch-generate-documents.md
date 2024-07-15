@@ -26,7 +26,7 @@ Als u de batch wilt uitvoeren, vraagt u een POST naar de volgende API
 ```
 
 Deze API verwacht een leeg json-object als een parameter in de aanvraaginstantie.
-Deze API retourneert een unieke URL in de responsheader die wordt bepaald door **locatie** toets.
+Deze API keert unieke URL in de reactiekop terug die door **wordt geïdentificeerd plaats** sleutel.
 Een GET-aanvraag voor deze unieke URL geeft de status van de uitvoering van de batch
 
 In de volgende video ziet u hoe de batchconfiguratie wordt geactiveerd

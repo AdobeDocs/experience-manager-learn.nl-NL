@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # De JSON van het formulier ophalen
 
-Meld u aan bij de AEM Forms-auteur en maak een nieuwe adapter met de **Leeg met kerncomponenten** sjabloon. Publiceer het formulier naar uw publicatie-exemplaar.
+Login aan uw de auteurinstantie van AEM Forms en creeer een nieuwe adaptief gebruikend **Leeg met het malplaatje van de Componenten van de Kern**. Publish uw formulier naar uw publicatieexemplaar.
 
 Als u het formulier wilt insluiten, haalt u eerst de json van het adaptieve formulier op door een get call uit te voeren met onze publicatieserver.
 
-Het volgende codefragment haalt de json van het adaptieve formulier genaamd **contactus**
+Het volgende codefragment haalt de json van de adaptieve vorm genoemd **contactus**
 
 ```javascript
 const getForm = async () => {
@@ -78,7 +78,7 @@ export default function Contact(){
 }
 ```
 
-De bovenstaande code gebruikt native HTML-componenten die zijn toegewezen aan de componenten die in het adaptieve formulier worden gebruikt. We wijzen bijvoorbeeld de adaptieve formuliercomponent voor tekstinvoer toe aan de component TextField. De native componenten die in het artikel worden gebruikt [kan hier worden gedownload](./assets/native-components.zip)
+De bovenstaande code gebruikt native HTML-componenten die zijn toegewezen aan de componenten die in het adaptieve formulier worden gebruikt. We wijzen bijvoorbeeld de adaptieve formuliercomponent voor tekstinvoer toe aan de component TextField. De inheemse componenten die in het artikel [ worden gebruikt kunnen van hier worden gedownload ](./assets/native-components.zip)
 
 ## Volgende stappen
 

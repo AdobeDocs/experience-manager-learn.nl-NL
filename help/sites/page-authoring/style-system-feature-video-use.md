@@ -28,10 +28,10 @@ Met het Adobe Experience Manager-stijlsysteem kunt u visuele variaties van compo
 
 Deze video laat zien hoe het Stijlsysteem kan worden gebruikt om sterk verschillende visuele weergaven te maken voor één component, met alleen CSS.
 
-De weergegeven stijlen worden geleverd door de [WKND-toepassing](https://github.com/adobe/aem-guides-wknd). Deze stijlen worden gedefinieerd als CSS en hoeven niet te worden gewijzigd in de backendlogica van de component, het HTML-script of het Sling Model.
+De getoonde stijlen worden verstrekt door de [ toepassing WKND ](https://github.com/adobe/aem-guides-wknd). Deze stijlen worden gedefinieerd als CSS en hoeven niet te worden gewijzigd in de backendlogica van de component, het HTML-script of het Sling Model.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Wilt u leren hoe u met het Stijlsysteem kunt ontwikkelen? Bekijk de volgende zelfstudies:
 
-* [Ontwikkelen met het Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [ het Ontwikkelen met het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)

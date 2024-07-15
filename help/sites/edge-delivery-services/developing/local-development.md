@@ -34,7 +34,7 @@ Hoe te om een lokale ontwikkelomgeving voor ontwikkeling voor Edge Delivery Serv
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. Map wijzigen in uw projectmap die een opslagplaats is die is gemaakt vanuit de [AEM](https://github.com/adobe/aem-boilerplate) sjabloon.
+1. De folder van de verandering aan uw projectfolder die een git bewaarplaats is die van het [ AEM boilerplate ](https://github.com/adobe/aem-boilerplate) malplaatje wordt gemaakt.
 
    ```
    $ git clone git@github.com:my-org/my-project.git

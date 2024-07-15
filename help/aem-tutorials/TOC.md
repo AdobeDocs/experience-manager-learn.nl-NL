@@ -15,16 +15,16 @@ ht-degree: 2%
 # Zelfstudies voor Experience Managers {#aem-tutorials}
 
 + [Zelfstudies AEM](overview.md)
-+ [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html){target=_blank}
-+ [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html){target=_blank}
-+ [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html){target=_blank}
-+ [AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html){target=_blank}
-+ [AEM zonder kop](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html){target=_blank}
-+ [AEM stichting](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html){target=_blank}
-+ [Hulplijnen AEM](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html){target=_blank}
++ [ AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html) {target=_blank}
++ [ AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html) {target=_blank}
++ [ AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html) {target=_blank}
++ [ AEM als Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html) {target=_blank}
++ [ AEM Zwaartepunt ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) {target=_blank}
++ [ AEM Stichting ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html) {target=_blank}
++ [ AEM Guides ](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html) {target=_blank}
 + Meerdere Tutorials {#multi}
-   + [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
-   + [Aan de slag met AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [Aan de slag met AEM en Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
-   + [Zelfstudie voor AEM 6.x Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html){target=_blank}
-   + [Zelfstudie AEM 6.x Dispatcher Cache](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html){target=_blank}
+   + [ Begonnen het worden met AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) {target=_blank}
+   + [ Begonnen het Worden met AEM Redacteur SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html) {target=_blank}
+   + [ Begonnen het worden met AEM en Adobe Target ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html) {target=_blank}
+   + [ AEM 6.x het Leerprogramma van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html) {target=_blank}
+   + [ AEM 6.x de Leerprogramma van het Geheime voorgeheugen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) {target=_blank}

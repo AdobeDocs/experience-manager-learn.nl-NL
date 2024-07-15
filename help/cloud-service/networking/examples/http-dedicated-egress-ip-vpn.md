@@ -19,28 +19,28 @@ ht-degree: 0%
 
 # HTTP/HTTPS verbindingen voor specifiek uitgang IP adres en VPN
 
-HTTP/HTTPS de verbindingen worden automatisch geproxideerd uit AEM as a Cloud Service met specifiek uitgangIP adres of VPN, en zij hebben geen speciale nodig `portForwards` regels.
+HTTP/HTTPS-verbindingen worden automatisch vanuit AEM as a Cloud Service met een toegewezen IP-adres of VPN opgewekt en hebben geen speciale `portForwards` -regels nodig.
 
 ## Geavanceerde netwerkondersteuning
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
-Zorg ervoor dat de [specifiek IP-adres van uitgang of VPN](../advanced-networking.md#advanced-networking) de geavanceerde voorzien van een netwerkconfiguratie is opstelling voorafgaand aan het volgen van dit leerprogramma.
+Verzeker het [ specifieke IP adres van de uitgang of VPN ](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie opstelling voorafgaand aan het volgen van dit leerprogramma is geweest.
 
-| Geen geavanceerde netwerken | [Flexibele poortuitgang](../flexible-port-egress.md) | [IP-adres van specifiek egress](../dedicated-egress-ip-address.md) | [Virtueel privé netwerk](../vpn.md) |
+| Geen geavanceerde netwerken | [ Flexibele havenuitgang ](../flexible-port-egress.md) | [ Dedicated egress IP adres ](../dedicated-egress-ip-address.md) | [ Virtueel Privé Netwerk ](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✘ | ✔ | ✔ |
 
 >[!CAUTION]
 >
-> Dit codevoorbeeld is alleen bedoeld voor [IP-adres van speciale egress](../dedicated-egress-ip-address.md) en [VPN](../vpn.md). Een vergelijkbaar, maar ander codevoorbeeld is beschikbaar voor [HTTP/HTTPS-verbindingen op niet-standaard poorten voor Flexible Port Egress](./http-on-non-standard-ports-flexible-port-egress.md).
+> Dit codevoorbeeld is slechts voor [ Speciale IP van de Eis adres ](../dedicated-egress-ip-address.md) en [ VPN ](../vpn.md). Een gelijkaardig, maar verschillend codevoorbeeld is beschikbaar voor [ verbindingen HTTP/HTTPS op niet-standaardhavens voor de Flexibele Nauw van de Haven ](./http-on-non-standard-ports-flexible-port-egress.md).
 
 ## Codevoorbeeld
 
 Dit Java™ codevoorbeeld is van de dienst OSGi die in AEM as a Cloud Service kan lopen die een verbinding van HTTP met een externe Webserver op 8080 maakt. De HTTPS (of HTTP) verbindingen worden automatisch verlengd uit AEM as a Cloud Service, en vereisen geen speciale ontwikkeling.
 
 >[!NOTE]
-> Het wordt aanbevolen [Java™ 11 HTTP API&#39;s](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) worden gebruikt om HTTP/HTTPS-aanroepen vanuit AEM te maken.
+> Het wordt geadviseerd [ Java™ 11 HTTP APIs ](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) wordt gebruikt om HTTP/HTTPS vraag van AEM te maken.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

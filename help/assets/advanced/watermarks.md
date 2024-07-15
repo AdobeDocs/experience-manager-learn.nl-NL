@@ -1,6 +1,6 @@
 ---
 title: Watermerken in AEM Assets
-description: AEM de mogelijkheden voor watermerken van as a Cloud Service afbeeldingen maken het mogelijk om aangepaste afbeeldingsuitvoeringen van een watermerk te voorzien met elke PNG-afbeelding.
+description: Met de AEM as a Cloud Service-mogelijkheden voor watermerken kunnen aangepaste afbeeldingsuitvoeringen worden voorzien van een watermerk op basis van een PNG-afbeelding.
 feature: Asset Compute Microservices
 version: Cloud Service
 jira: KT-6357
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Watermerken
 
-AEM de mogelijkheden voor watermerken van as a Cloud Service afbeeldingen maken het mogelijk om aangepaste afbeeldingsuitvoeringen van een watermerk te voorzien met elke PNG-afbeelding.
+Met de AEM as a Cloud Service-mogelijkheden voor watermerken kunnen aangepaste afbeeldingsuitvoeringen worden voorzien van een watermerk op basis van een PNG-afbeelding.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41536?quality=12&learn=on)

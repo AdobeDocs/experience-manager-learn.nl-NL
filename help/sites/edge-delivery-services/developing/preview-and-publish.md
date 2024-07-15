@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Inhoud voorvertonen en publiceren
 
-Inhoud met Edge Delivery Services voorvertonen en publiceren met de opdracht [AEM Sidekick](./sidekick.md).
+Voorproef en publiceer inhoud met Edge Delivery Services gebruikend [ AEM Sidekick ](./sidekick.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)

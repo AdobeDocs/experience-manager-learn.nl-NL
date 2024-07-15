@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Hoe te om indexerende verwante kwesties in AEM te onderzoeken
 
-*Deze video doorloopt de stappen om indexerende verwante kwesties in AEM te onderzoeken.*
+*Deze video loopt door de stappen om indexerende verwante kwesties in AEM te onderzoeken.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335465?quality=12&learn=on)

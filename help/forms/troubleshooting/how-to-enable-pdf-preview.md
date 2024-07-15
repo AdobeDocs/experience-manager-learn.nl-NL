@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Voorvertoning PDF inschakelen
 
-*In deze video worden de stappen doorlopen om PDF voor voorvertoningen in Designer in te schakelen.*
+*Deze video loopt door de stappen om voorproef PDF in Designer toe te laten.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335500?quality=12&learn=on)

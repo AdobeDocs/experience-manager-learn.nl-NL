@@ -22,45 +22,45 @@ ht-degree: 0%
 
 # Een configuratie voor de Cloud Service van tags maken in AEM {#create-launch-cloud-service}
 
-Leer hoe u een configuratie van een Cloud Service voor tags maakt in Adobe Experience Manager. AEM de configuratie van de Cloud Service van markeringen kan dan op een bestaande Plaats worden toegepast en de bibliotheken van Markeringen kunnen het laden in zowel auteur als Publish milieu&#39;s worden waargenomen.
+Leer hoe u een configuratie van een Cloud Service voor tags maakt in Adobe Experience Manager. AEM configuratie van de Cloud Service van labels kan dan worden toegepast op een bestaande site en de tagbibliotheken kunnen worden waargenomen tijdens het laden in zowel de auteur- als de Publish-omgeving.
 
 ## Cloud-service voor tags maken
 
 Maak de configuratie van de cloudservice met onderstaande stappen.
 
-1. Van de **Gereedschappen** menu, selecteert u **Cloud Servicen** sectie en klik op **Adobe-startconfiguraties**
-1. Selecteer de configuratiemap van uw site of selecteer **WKND-site** (als het gebruiken van het WKND gids project) en klik **Maken**
-1. Van de _Algemeen_ tab, noem uw configuratie gebruikend **Titel** veld en selecteer **Adobe starten** van de _Gekoppelde Adobe IMS-configuratie_ vervolgkeuzelijst. Selecteer vervolgens uw bedrijfsnaam in het menu _Bedrijf_ vervolgkeuzelijst en selecteer eerder gemaakte eigenschap in het menu _Eigenschap_ vervolgkeuzelijst.
-1. Van de _Staging_ en _Productie_ de standaardconfiguraties behouden. Nochtans wordt het geadviseerd het herzien en de configuraties voor echte productie opstelling, specifiek te veranderen _Bibliotheek asynchroon laden_ schakelen op basis van uw prestatie- en optimalisatievereisten. Let ook op het volgende: _Bibliotheek-URI_ De waarde is anders voor Staging en Productie.
-1. Tot slot klikt u op **Maken** om de cloudservices te voltooien.
+1. Van het **menu van Hulpmiddelen**, selecteer **Cloud Servicen** sectie en klik **de Configuraties van de Lancering van de Adobe**
+1. Selecteer de configuratiemap van uw plaats of selecteer **Plaats WKND** (als het gebruiken van het WKND gids project) en klik **creeer**
+1. Van het _Algemene_ lusje, noem uw configuratie gebruikend het **gebied van de Titel**, en selecteer **Lancering van de Adobe** van _Bijbehorende de Configuratie van Adobe IMS_ dropdown. Dan, selecteer uw bedrijfsnaam van _bedrijf_ dropdown en selecteer eerder gecreeerd bezit van het _Bezit_ dropdown.
+1. Van het _Staging_ en _Productie_ lusje houden de standaardconfiguraties. Nochtans wordt het geadviseerd het herzien en de configuraties voor echte productie opstelling, specifiek de _wisselaar van de Lading Asynchroon_ schakelen die op uw prestaties en optimaliseringsvereisten wordt gebaseerd. Merk ook op dat de _waarde van 0} Bibliotheek URI {voor het Opvoeren en de Productie verschillend is._
+1. Tot slot klik **creeer** om de diensten van de etiketwolk te voltooien.
 
-   ![Configuratie van Cloud Servicen voor tags](assets/launch-cloud-services-config.png)
+   ![ de Configuratie van Cloud Servicen van markeringen ](assets/launch-cloud-services-config.png)
 
 ## Cloudservice voor tags toepassen op de site
 
 Als u de eigenschap Tag en de bijbehorende bibliotheken op de AEM site wilt laden, wordt de configuratie van de cloudservice op de site toegepast. In de vorige stap wordt de configuratie van de cloudservice gemaakt onder de map met sitenaam (WKND-site), zodat deze automatisch moet worden toegepast. Laten we controleren of de configuratie niet werkt.
 
-1. Van de **Navigatie** menu, selecteert u **Sites** pictogram.
+1. Van het **menu van de Navigatie**, uitgezochte **het pictogram van Plaatsen**.
 
-1. Selecteer de hoofdpagina van de AEM Site en klik op **Eigenschappen**. Navigeer vervolgens naar de **Geavanceerd** tab en onder **Configuratie** sectie, controleert u of de waarde voor Cloud Configuration naar uw sitespecifieke `conf` map.
+1. Selecteer de wortelpagina van de AEM Plaats, en klik **Eigenschappen**. Dan, navigeer aan het **Geavanceerde** lusje en onder **de sectie van de Configuratie**, verifieer dat de waarde van de Configuratie van de Wolk aan uw plaats-specifieke `conf` omslag richt.
 
-   ![Configuratie van Cloud Servicen toepassen op de site](assets/apply-cloud-services-config-to-site.png)
+   ![ pas Configuratie van Cloud Servicen op Plaats ](assets/apply-cloud-services-config-to-site.png) toe
 
-## Het laden van de eigenschap Tag op de pagina&#39;s Auteur en Publiceren controleren
+## Laden van eigenschap Tag op pagina&#39;s van Auteur en Publish controleren
 
 Nu is het tijd om te controleren dat de eigenschap Tag en de bijbehorende bibliotheken op de AEM sitepagina worden geladen.
 
-1. Open uw favoriete sitepagina in het dialoogvenster **Weergeven als gepubliceerd** in de browserconsole ziet u het logbericht. Het is hetzelfde bericht uit het JavaScript-codefragment van de tageigenschapregel dat wordt geactiveerd wanneer _Bibliotheek geladen (pagina boven)_ gebeurtenis wordt geactiveerd.
+1. Open uw favoriete plaatspagina in de **Mening zoals Gepubliceerde** wijze, in de browser console u het logboekbericht zou moeten zien. Het is het zelfde bericht van het de codefragment van JavaScript van de het bezitsregel van de Markering die in brand wordt gestoken wanneer _Geladen Bibliotheek (de Boven van de Pagina)_ gebeurtenis wordt teweeggebracht.
 
-1. Als u wilt controleren bij Publiceren, publiceert u eerst uw **tagcloudservice** en opent u de sitepagina in de instantie Publiceren.
+1. Om op Publish te verifiëren, publiceer eerst uw **configuratie van de de wolkendienst van markeringen** en open de plaatspagina op de instantie van Publish.
 
-   ![Eigenschap labelen op auteur- en publicatiepagina&#39;s](assets/tag-property-on-author-publish-pages.png)
+   ![ Bezit van de Markering op de Pagina&#39;s van de Auteur en van Publish ](assets/tag-property-on-author-publish-pages.png)
 
-Gefeliciteerd! U hebt AEM en gegevensverzameling integratie van de Tag voltooid die JavaScript-code in uw AEM-site injecteert zonder de AEM projectcode bij te werken.
+Gefeliciteerd! U hebt AEM en gegevensverzameling integratie van de Tag voltooid die de code van JavaScript in uw AEM plaats injecteert zonder de code van het AEM Project bij te werken.
 
 ## Uitdaging - regel bijwerken en publiceren in eigenschap Tag
 
-De lessen gebruiken die u hebt geleerd van het vorige [Een eigenschap voor een tag maken](./create-tag-property.md) om de eenvoudige uitdaging te voltooien, werk de bestaande Regel bij om extra consoleverklaring toe te voegen en het gebruiken _Publishing Flow_ implementeren op de AEM.
+De lessen van het gebruik die van vorige [ worden geleerd leiden tot een Bezit van de Markering ](./create-tag-property.md) om de eenvoudige uitdaging te voltooien, werk de bestaande Regel bij om extra consoleverklaring toe te voegen en het gebruiken van _het Publiceren Stroom_ stelt het op de AEM plaats op.
 
 ## Volgende stappen
 

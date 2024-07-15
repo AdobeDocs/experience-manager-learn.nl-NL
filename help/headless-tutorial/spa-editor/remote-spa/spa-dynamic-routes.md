@@ -23,23 +23,23 @@ ht-degree: 0%
 
 In dit hoofdstuk, laten wij twee dynamische routes van het Detail van het avontuur toe om editable componenten te steunen; __Bali Surf Camp__ en __Beervana in Portland__.
 
-![Dynamische routes en bewerkbare componenten](./assets/spa-dynamic-routes/intro.png)
+![ Dynamische routes en editable componenten ](./assets/spa-dynamic-routes/intro.png)
 
-De route van het Detail van het avontuur SPA wordt bepaald zoals `/adventure/:slug` waar `slug` is een uniek herkenningstekenbezit op het Fragment van de Inhoud van het Avontuur.
+De route van het Detail van het avontuur SPA wordt bepaald als `/adventure/:slug` waar `slug` een unieke herkenningstekenbezit op het Fragment van de Inhoud van het Avontuur is.
 
 ## De SPA URL&#39;s toewijzen aan AEM pagina&#39;s
 
-In de vorige twee hoofdstukken hebben we bewerkbare componentinhoud vanuit de SPA Home-weergave toegewezen aan de bijbehorende externe SPA hoofdpagina in AEM op `/content/wknd-app/us/en/`.
+In de vorige twee hoofdstukken hebben we bewerkbare componentinhoud vanuit de SPA Home-weergave toegewezen aan de corresponderende Remote SPA hoofdpagina in AEM op `/content/wknd-app/us/en/` .
 
 Het bepalen van afbeelding voor editable componenten voor de SPA dynamische routes is gelijkaardig maar wij moeten omhoog 1:1 toewijzingsschema tussen instanties van de route en AEM pagina&#39;s komen.
 
-In dit leerprogramma, nemen wij de naam van het Fragment van de Inhoud van het avontuur WKND, dat het laatste segment van de weg is, en brengen het aan een eenvoudig weg onder `/content/wknd-app/us/en/adventure`.
+In deze zelfstudie nemen we de naam van het WKND Adventure Content Fragment, het laatste segment van het pad, en wijzen we het toe aan een eenvoudig pad onder `/content/wknd-app/us/en/adventure` .
 
 | Externe SPA | Pad AEM |
 |------------------------------------|--------------------------------------------|
 | / | /content/wknd-app/us/nl/home |
-| /adventure/__bali-surf-kamp__ | /content/wknd-app/nl/home/adventure/__bali-surf-kamp__ |
-| /adventure/__beervana-portland__ | /content/wknd-app/nl/home/adventure/__beervana-in-portland__ |
+| /adventure/__bali-surf-kamp__ | /content/wknd-app/us/nl/home/adventure/__bali-surf-kamp__ |
+| /adventure/__beervana-portland__ | /content/wknd-app/us/nl/home/adventure/__beervana-in-portland__ |
 
 Op basis van deze afbeelding moeten we dus twee nieuwe AEM maken op:
 
@@ -48,63 +48,63 @@ Op basis van deze afbeelding moeten we dus twee nieuwe AEM maken op:
 
 ## Externe SPA
 
-De toewijzing voor verzoeken die de Verre SPA verlaten wordt gevormd via `setupProxy` configuratie uitgevoerd in [De SPA Bootstrappen](./spa-bootstrap.md).
+De afbeelding voor verzoeken die de Verre SPA verlaten wordt gevormd via de `setupProxy` configuratie die in [ wordt gedaan Bootstrap de SPA ](./spa-bootstrap.md).
 
 ## Toewijzing SPA Editor
 
-De afbeelding voor SPA verzoeken wanneer de SPA via AEM SPA Editor wordt geopend, wordt geconfigureerd via de configuratie Sling Mappings die in [AEM configureren](./aem-configure.md).
+De afbeelding voor SPA verzoeken wanneer de SPA via AEM SPA Redacteur wordt geopend wordt gevormd via het Verdelen configuratie van Toewijzingen die in [ wordt gedaan vormt AEM ](./aem-configure.md).
 
 ## Inhoudspagina&#39;s maken in AEM
 
-Maak eerst de tussenpersoon `adventure` Paginasegment:
+Maak eerst het tussenliggende paginasegment `adventure` :
 
 1. Aanmelden bij AEM auteur
-1. Navigeren naar __Sites > WKND App > us > en > WKND App Home Page__
+1. Navigeer aan __Plaatsen > WKND App > gebruiken > en > WKND App Homepage__
    + Deze AEM pagina wordt in kaart gebracht als wortel van de SPA, zodat is dit waar wij beginnen de AEM paginastructuur voor andere SPA routes te bouwen.
-1. Tikken __Maken__ en selecteert u __Pagina__
-1. Selecteer de __Externe SPA__ sjabloon, en tikken __Volgende__
+1. Tik __creeer__ en selecteer __Pagina__
+1. Selecteer het __Verre malplaatje van de SPA van de Pagina__, en Tik __daarna__
 1. Pagina-eigenschappen invullen
    + __Titel__: Adventure
    + __Naam__: `adventure`
       + Deze waarde bepaalt URL van de AEM pagina, en moet daarom het de routesegment van de SPA aanpassen.
-1. Tikken __Gereed__
+1. Tik __Gereed__
 
 Maak vervolgens de AEM pagina&#39;s die overeenkomen met elk van de SPA URL&#39;s waarvoor bewerkbare gebieden nodig zijn.
 
-1. Navigeer in het nieuwe __Adventure__ pagina in Sitebeheer
-1. Tikken __Maken__ en selecteert u __Pagina__
-1. Selecteer de __Externe SPA__ sjabloon, en tikken __Volgende__
+1. Navigeer in de nieuwe __pagina van het Adventure__ in Plaats Admin
+1. Tik __creeer__ en selecteer __Pagina__
+1. Selecteer het __Verre malplaatje van de SPA van de Pagina__, en Tik __daarna__
 1. Pagina-eigenschappen invullen
    + __Titel__: Bali Surf Camp
    + __Naam__: `bali-surf-camp`
       + Deze waarde bepaalt URL van de AEM pagina, en moet daarom het laatste segment van de SPA&#39; route aanpassen
-1. Tikken __Gereed__
-1. Herhaal stap 3-6 om de __Beervana in Portland__ pagina, met:
+1. Tik __Gereed__
+1. Herhaal de stappen 3-6 om __Beervana in Portland__ pagina tot stand te brengen, met:
    + __Titel__: Beervana in Portland
    + __Naam__: `beervana-in-portland`
       + Deze waarde bepaalt URL van de AEM pagina, en moet daarom het laatste segment van de SPA&#39; route aanpassen
 
-Deze twee AEM pagina&#39;s houden de respectieve-authored inhoud voor hun passende SPA routes. Als andere SPA routes auteursrecht vereisen, moeten de nieuwe AEMPagina&#39;s bij hun SPA URL onder de Verre de wortelpagina van SPA van de pagina (`/content/wknd-app/us/en/home`) in AEM.
+Deze twee AEM pagina&#39;s houden de respectieve-authored inhoud voor hun passende SPA routes. Als andere SPA routes auteursrecht vereisen, moeten de nieuwe AEMPagina&#39;s bij hun SPA URL onder de Verre de wortelpagina van SPA pagina (`/content/wknd-app/us/en/home`) in AEM worden gecreeerd.
 
 ## De WKND-app bijwerken
 
-Laten we de `<ResponsiveGrid...>` component die in het dialoogvenster [laatste hoofdstuk](./spa-container-component.md), in onze `AdventureDetail` SPA component, een bewerkbare container maken.
+Plaats de `<ResponsiveGrid...>` component die in het [ laatste hoofdstuk ](./spa-container-component.md) wordt gecreeerd, in onze `AdventureDetail` SPA component, die tot een editable container leiden.
 
 ### De SPA ResponsiveGrid plaatsen
 
-De `<ResponsiveGrid...>` in de `AdventureDetail` maakt een bewerkbare container in die route. De truc is omdat de veelvoudige routes gebruiken `AdventureDetail` -component die moet worden gerenderd, moeten we de  `<ResponsiveGrid...>'s pagePath` kenmerk. De `pagePath` moet worden afgeleid om aan de overeenkomstige AEM pagina te richten, die op het avontuur wordt gebaseerd de instantie van de route toont.
+Door `<ResponsiveGrid...>` in de `AdventureDetail` -component te plaatsen, wordt een bewerkbare container in die route gemaakt. De truc is dat meerdere routes de `AdventureDetail` -component gebruiken om te renderen, we het `<ResponsiveGrid...>'s pagePath` -kenmerk dynamisch moeten aanpassen. `pagePath` moet worden afgeleid om aan de overeenkomstige AEM pagina te richten, die op het avontuur wordt gebaseerd de instantie van de route toont.
 
 1. Openen en bewerken `react-app-/src/components/AdventureDetail.js`
-1. Het dialoogvenster Importeren `ResponsiveGrid` en plaatst deze boven de component `<h2>Itinerary</h2>` component.
-1. Stel de volgende kenmerken in op de knop `<ResponsiveGrid...>` component. Noteer de `pagePath` kenmerk voegt huidige `slug` die aan de avontuurpagina volgens de afbeelding die hierboven wordt bepaald in kaart brengt.
+1. Importeer de component `ResponsiveGrid` en plaats deze boven de component `<h2>Itinerary</h2>` .
+1. Stel de volgende kenmerken in voor de component `<ResponsiveGrid...>` . Het kenmerk `pagePath` voegt de huidige `slug` toe die aan de avontuurpagina wordt toegewezen volgens de bovenstaande toewijzing.
    + `pagePath = '/content/wknd-app/us/en/home/adventure/${slug}'`
    + `itemPath = 'root/responsivegrid'`
 
-   Dit instrueert het `ResponsiveGrid` component om zijn inhoud van het AEM middel terug te winnen:
+   Hierdoor krijgt de component `ResponsiveGrid` de opdracht om de inhoud ervan op te halen uit de AEM bron:
 
    + `/content/wknd-app/us/en/home/adventure/${slug}/jcr:content/root/responsivegrid`
 
-Bijwerken `AdventureDetail.js` met de volgende regels:
+Werk `AdventureDetail.js` bij met de volgende regels:
 
 ```javascript
 ...
@@ -136,38 +136,38 @@ function AdventureDetailRender(props) {
 }
 ```
 
-De `AdventureDetail.js` bestand moet er als volgt uitzien:
+Het bestand `AdventureDetail.js` moet er als volgt uitzien:
 
-![AdventureDetail.js](./assets/spa-dynamic-routes/adventure-detail-js.png)
+![ AdventureDetail.js ](./assets/spa-dynamic-routes/adventure-detail-js.png)
 
 ## Auteur van de container in AEM
 
-Met de `<ResponsiveGrid...>` en de `pagePath` dynamisch ingesteld op basis van het avontuur dat wordt gerenderd, proberen we er inhoud in te ontwerpen.
+Nu `<ResponsiveGrid...>` op zijn plaats is en de `pagePath` dynamisch is ingesteld op basis van het avontuur dat wordt gerenderd, proberen we de inhoud ervan te ontwerpen.
 
 1. Aanmelden bij AEM auteur
-1. Navigeren naar __Sites > WKND App > us > en__
-1. __Bewerken__ de __WKND App Home Page__ page
-   + Ga naar de __Bali Surf Camp__ route in de SPA om het uit te geven
-1. Selecteren __Voorvertoning__ in de moduskiezer rechtsboven
-1. Tik op de knop __Bali Surf Camp__ kaart in de SPA om aan zijn route te navigeren
-1. Selecteren __Bewerken__ in de modus Selector
-1. Zoek de __Layout Container__ bewerkbaar gebied rechts boven __Urinertie__
-1. Open de __Zijbalk van de pagina-editor__ en selecteert u de __Weergave Componenten__
-1. Sleep een aantal van de ingeschakelde componenten naar de __Layout Container__
+1. Navigeer aan __Plaatsen > App WKND > gebruiken > en__
+1. __geeft__ __WKND de pagina van het Huis van de App__ uit
+   + Navigeer aan de __Bali Surf Camp__ route in de SPA om het uit te geven
+1. Selecteer __Voorproef__ van de wijze-selecteur in top-right
+1. Tik op __Bali Surf Camp__ kaart in de SPA om aan zijn route te navigeren
+1. Selecteer __uitgeven__ van de wijze-selecteur
+1. Bepaal de plaats van de __Container van de Lay-out__ editable gebied recht boven de __Reis__
+1. Open de __zijbar van de Redacteur van de Pagina__, en selecteer de __mening van Componenten__
+1. Sleep enkele toegelaten componenten in de __Container van de Lay-out__
    + Afbeelding
    + Tekst
    + Titel
 
    En creeer wat promotiemateriaal. Het zou er ongeveer als volgt kunnen uitzien:
 
-   ![Bali Adventure Detail Authoring](./assets/spa-dynamic-routes/adventure-detail-edit.png)
+   ![ Bali Adventure Detail Authoring ](./assets/spa-dynamic-routes/adventure-detail-edit.png)
 
-1. __Voorvertoning__ uw wijzigingen in AEM paginaeditor
-1. De WKND-app vernieuwen die lokaal wordt uitgevoerd [http://localhost:3000](http://localhost:3000), navigeert u naar de __Bali Surf Camp__ route om de authored veranderingen te zien!
+1. __Voorproef__ uw veranderingen in AEM Redacteur van de Pagina
+1. Vernieuw de WKND App die plaatselijk op [ http://localhost:3000 ](http://localhost:3000) loopt, navigeer aan de __Bali Surf Camp__ route om de authored veranderingen te zien!
 
-   ![Externe SPA Bali](./assets/spa-dynamic-routes/remote-spa-final.png)
+   ![ Verre SPA Bali ](./assets/spa-dynamic-routes/remote-spa-final.png)
 
-Wanneer het navigeren aan een adventure detailroute die geen in kaart gebrachte AEM Pagina heeft, is er geen auteursbaarheid op die routeinstantie. Als u het ontwerpen op deze pagina&#39;s wilt inschakelen, maakt u gewoon een AEM pagina met de overeenkomende naam onder de __Adventure__ pagina!
+Wanneer het navigeren aan een adventure detailroute die geen in kaart gebrachte AEM Pagina heeft, is er geen auteursbaarheid op die routeinstantie. Om auteursrecht op deze pagina&#39;s toe te laten, maak eenvoudig een AEM Pagina met de passende naam onder de __pagina van het Vontuur__!
 
 ## Gefeliciteerd!
 

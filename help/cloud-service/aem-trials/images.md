@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # Afbeeldingsindex AEM proefdrukken
 
-Afbeeldingsbestanden moeten in het dialoogvenster `assets` map die zich naast dit bestand bevindt.
+Afbeeldingsbestanden moeten in de map `assets` naast dit bestand worden geplaatst.
 
 Elk afbeeldingsbestand dat moet worden gepubliceerd, moet via de syntaxis aan dit bestand worden gekoppeld:
 
-![Persoonlijke account voor e-mailafbeelding die klaar is voor proefversie](./assets/select-personal-account.png)
-![E-mailafbeelding Slack](./assets/Slack-email-image.png)
+![ Proefversie klaar de persoonlijke rekening van het e-mailbeeld ](./assets/select-personal-account.png)
+![ Slack e-mailbeeld ](./assets/Slack-email-image.png)

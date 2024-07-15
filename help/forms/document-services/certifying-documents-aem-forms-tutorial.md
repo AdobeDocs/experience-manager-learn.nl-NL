@@ -22,7 +22,7 @@ Een gecertificeerd document biedt ontvangers van PDF-documenten en formulieren e
 
 Als u een document wilt certificeren, kunt u Acrobat DC op het bureaublad of AEM Forms Document Services gebruiken als onderdeel van een geautomatiseerd proces op een server.
 
-In dit artikel vindt u voorbeeldversies van de OSGI-bundel voor het certificeren van PDF-documenten met AEM Forms Document Services. De code in het voorbeeld is [hier beschikbaar](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
+Dit artikel verstrekt u steekproefOSGI bundel om pdf- documenten te certificeren gebruikend het Document Services van AEM Forms.De code die in de steekproef wordt gebruikt is [ hier beschikbaar ](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 Als u documenten wilt certificeren met AEM Forms, moet u de volgende stappen uitvoeren
 
@@ -30,20 +30,20 @@ Als u documenten wilt certificeren met AEM Forms, moet u de volgende stappen uit
 
 Volg de onderstaande stappen om het certificaat toe te voegen aan het sleutelarchief in AEM
 
-* [Globale vertrouwde winkel initialiseren](http://localhost:4502/libs/granite/security/content/truststore.html)
-* [Zoeken naar fd-service](http://localhost:4502/security/users.html) user
-* **U zult de resultatenpagina moeten scrollen om alle gebruikers te laden om de fd-dienst gebruiker te vinden**
+* [ initialiseer globale vertrouwensopslag ](http://localhost:4502/libs/granite/security/content/truststore.html)
+* [ Onderzoek naar fd-dienst ](http://localhost:4502/security/users.html) gebruiker
+* **u zult de resultatenpagina moeten scrollen om alle gebruikers te laden om de fd-dienst gebruiker** te vinden
 * Dubbelklik op de gebruiker van de fd-service om het venster met gebruikersinstellingen te openen
 * Klik op &quot;Persoonlijke sleutel toevoegen uit het sleutelarchiefbestand&quot;.Geef de alias en het wachtwoord op die specifiek zijn voor uw certificaat
-  ![add-certificate](assets/adding-certificate-keystore.PNG)
+  ![ toe:voegen-certificaat ](assets/adding-certificate-keystore.PNG)
 * Uw wijzigingen opslaan
 
 ## OSGI-service maken
 
 U kunt uw eigen bundel OSGi schrijven en de AEM Forms Cliënt SDK gebruiken om de dienst uit te voeren om de documenten van de PDF te certificeren. De volgende verbindingen zouden nuttig zijn om uw eigen bundel te schrijven OSGi
 
-* [Uw eerste OSGi-bundel maken](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
-* [Documentservice-API gebruiken](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
+* [ Creërend uw eerste bundel OSGi ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
+* [ de Dienst API van het Document van het Gebruik ](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 U kunt de voorbeeldbundel ook gebruiken als onderdeel van deze zelfstudie-elementen.
 
@@ -53,15 +53,15 @@ U kunt de voorbeeldbundel ook gebruiken als onderdeel van deze zelfstudie-elemen
 
 ## Het voorbeeld op uw lokale systeem testen
 
-* Downloaden en installeren [Pakket voor aangepaste documentservices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Downloaden en installeren [Ontwikkelen met de Bundel van de Gebruiker van de Dienst](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Controleer of u de volgende vermelding hebt toegevoegd aan de Apache Sling Service User Mapper Service](http://localhost:4502/system/console/configMgr)
-  **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** zoals weergegeven in onderstaande schermafbeelding
-  ![Gebruikerskaart](assets/user-mapper-service.PNG)
+* De download en installeert [ Bundel van de Diensten van het Document van de Douane ](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Download en installeer [ Ontwikkelen met de Bundel van de Gebruiker van de Dienst ](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [ zorg ervoor u de volgende ingang in de Dienst van het Mapper van de Gebruiker van de Dienst Apache Sling ](http://localhost:4502/system/console/configMgr) hebt toegevoegd
+  **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** zoals aangetoond in het hieronder scherm
+  ![ gebruiker-Mapper ](assets/user-mapper-service.PNG)
 * [Voorbeeld van adaptief formulier importeren](assets/certify-pdf-af.zip)
 * [Aangepast verzenden importeren en installeren](assets/custom-submit-certify.zip)
-* [Het adaptieve formulier openen](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
+* [ open de Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * PDF-document uploaden dat moet worden gecertificeerd
-  **optioneel** - Geef het handtekeningveld op dat u wilt gebruiken voor de certificering van het document
+  **facultatief** - specificeer het handtekeningsgebied dat u in het verklaren van het document wilt gebruiken
 * Klik op Verzenden.
 * Gecertificeerde PDF moet naar u worden teruggestuurd.

@@ -20,21 +20,21 @@ ht-degree: 0%
 
 # Hoe wordt de Rapid Development Environment gebruikt
 
-Meer informatie **gebruiken** Rapid Development Environment (RDE) in AEM as a Cloud Service. Stel code en inhoud voor snellere ontwikkelingscycli van uw bijna-definitieve code aan RDE, van uw favoriete Geïntegreerde Milieu van de Ontwikkeling (winde) op.
+Leer **hoe te om** Snelle Ontwikkelomgeving (RDE) in AEM as a Cloud Service te gebruiken. Stel code en inhoud voor snellere ontwikkelingscycli van uw bijna-definitieve code aan RDE, van uw favoriete Geïntegreerde Milieu van de Ontwikkeling (winde) op.
 
-Gebruiken [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) u leert hoe te om diverse AEM artefacten aan RDE op te stellen door AEM-RDE in werking te stellen `install` van uw favoriete winde.
+Gebruikend [ AEM het Project van Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) leert u hoe te om diverse AEM artefacten aan RDE op te stellen door het bevel van AEM-RDE `install` van uw favoriete winde in werking te stellen.
 
 - Implementatie van code en inhoud AEM (alle toepassingen, ui.apps)
 - Implementatie van OSGi-bundel- en configuratiebestanden
-- Apache en Dispatcher configureert de implementatie als een ZIP-bestand
-- Afzonderlijke bestanden, zoals HTML `.content.xml` (dialoogvenster XML)-implementatie
-- Andere RDE-opdrachten, zoals `status, reset and delete`
+- Apache en Dispatcher configureren de implementatie als een zip-bestand
+- Afzonderlijke bestanden, zoals HTML- en `.content.xml` (dialoogvenster XML)-implementatie
+- Andere RDE-opdrachten controleren, zoals `status, reset and delete`
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415491?quality=12&learn=on)
 
 ## Vereiste
 
-Klonen met [WKND-sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) en open het in uw favoriete winde om de AEM artefacten op RDE op te stellen.
+Kloon het [ project van de Plaatsen van WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) en open het in uw favoriete winde om de AEM artefacten op RDE op te stellen.
 
 ```shell
 $ git clone git@github.com:adobe/aem-guides-wknd.git
@@ -49,11 +49,11 @@ $ mvn clean package
 
 ## Implementeer AEM artefacten met de AEM-RDE plug-in
 
-Met de `aem:rde:install` bevel, stellen verschillende AEM artefacten op.
+Met de opdracht `aem:rde:install` implementeren we verschillende AEM artefacten.
 
-### Implementeren `all` en `dispatcher` pakketten
+### Pakketten `all` en `dispatcher` implementeren
 
-Een gemeenschappelijk uitgangspunt moet eerst opstellen `all` en `dispatcher` pakketten door de volgende bevelen in werking te stellen.
+Een gangbaar uitgangspunt is om eerst de pakketten `all` en `dispatcher` in te voeren door de volgende opdrachten uit te voeren.
 
 ```shell
 # Install the 'all' package
@@ -67,10 +67,10 @@ Verifieer de WKND-site op zowel de auteur- als de publicatieservices bij een ges
 
 ### Een component verbeteren en implementeren
 
-Laten we de `Hello World Component` en zet het aan RDE op.
+Verbeter `Hello World Component` en stel het aan RDE op.
 
-1. Het dialoogvenster XML openen (`.content.xml`) bestand van `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` map
-1. Voeg de `Description` tekstveld na het bestaande `Text` dialoogveld
+1. Dialoogvenster-XML (`.content.xml`) openen vanuit `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` -map
+1. Het tekstveld `Description` toevoegen na het bestaande dialoogvenster `Text`
 
    ```xml
    ...
@@ -82,8 +82,8 @@ Laten we de `Hello World Component` en zet het aan RDE op.
    ...
    ```
 
-1. Open de `helloworld.html` bestand van `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld` map
-1. Render de `Description` eigenschap na de bestaande `<div>` element van het `Text` eigenschap.
+1. Open het bestand `helloworld.html` vanuit de map `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld` .
+1. Render de eigenschap `Description` na het bestaande `<div>` -element van de eigenschap `Text` .
 
    ```html
    ...
@@ -96,7 +96,7 @@ Laten we de `Hello World Component` en zet het aan RDE op.
 
 1. Controleer de wijzigingen in de lokale AEM-SDK door de gemaakte build uit te voeren of afzonderlijke bestanden te synchroniseren.
 
-1. De wijzigingen in de RDE implementeren via `ui.apps` of door de afzonderlijke dialoogvensters en HTML-bestanden te implementeren.
+1. Implementeer de wijzigingen in de RDE via het `ui.apps` -pakket of door de afzonderlijke dialoogvensters en HTML-bestanden te implementeren.
 
    ```shell
    # Using 'ui.apps' package
@@ -113,24 +113,24 @@ Laten we de `Hello World Component` en zet het aan RDE op.
    $ aio aem:rde:install ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/.content.xml -t content-xml -p /apps/wknd/components/helloworld/_cq_dialog/.content.xml
    ```
 
-1. Verifieer veranderingen op RDE door toe te voegen of uit te geven `Hello World Component` op een WKND-sitepagina.
+1. Controleer de wijzigingen op de RDE door de `Hello World Component` toe te voegen of te bewerken op een WKND-sitepagina.
 
-### Controleer de `install` opdrachtopties
+### Controleer de opdrachtopties voor `install`
 
-In het bovenstaande voorbeeld met de afzonderlijke opdracht voor het implementeren van bestanden, `-t` en `-p` markeringen worden gebruikt om respectievelijk het type en de bestemming van het JCR-pad aan te geven. Laten we de beschikbare `install` de opties van het bevel door het volgende bevel in werking te stellen.
+In het bovenstaande voorbeeld met afzonderlijke opdrachten voor bestandsimplementatie worden de markeringen `-t` en `-p` gebruikt om respectievelijk het type en de bestemming van het JCR-pad aan te geven. Bekijk de beschikbare `install` bevelopties door het volgende bevel in werking te stellen.
 
 ```shell
 $ aio aem:rde:install --help
 ```
 
-De vlaggen zijn vanzelfsprekend, de `-s` De markering is nuttig om de plaatsing enkel aan de auteur te richten of de publicatieservices te publiceren. Gebruik de `-t` vlag wanneer het opstellen van **content-file of content-xml** samen met de `-p` markering om de weg van bestemmingsJCR in het milieu van AEM RDE te specificeren.
+De vlaggen zijn duidelijk, is de `-s` vlag nuttig om de plaatsing enkel aan de auteur of de publicatieservices te richten. Gebruik de `-t` vlag wanneer het opstellen van **inhoud-dossier of inhoud-xml** dossiers samen met de `-p` vlag om de weg van bestemmingsJCR in het milieu van AEMRDE te specificeren.
 
 ### OSGi-bundel implementeren
 
-Om te leren hoe te om de bundel op te stellen OSGi, verbeteren wij `HelloWorldModel` Java™-klasse en implementeren in de RDE.
+Om te leren hoe te om de bundel OSGi op te stellen, verbeteren wij de `HelloWorldModel` klasse Java™ en stellen het aan RDE op.
 
-1. Open de `HelloWorldModel.java` bestand van `core/src/main/java/com/adobe/aem/guides/wknd/core/models` map
-1. Werk de `init()` methode als hieronder:
+1. Open het bestand `HelloWorldModel.java` vanuit de map `core/src/main/java/com/adobe/aem/guides/wknd/core/models` .
+1. Werk de methode `init()` als volgt bij:
 
    ```java
    ...
@@ -141,7 +141,7 @@ Om te leren hoe te om de bundel op te stellen OSGi, verbeteren wij `HelloWorldMo
    ...
    ```
 
-1. Verifieer de veranderingen op lokaal AEM-SDK door op te stellen `core` bundelen via maven, opdracht
+1. Verifieer de veranderingen op lokale AEM-SDK door de {`core` bundel via maven bevel op te stellen
 1. Stel de veranderingen in RDE op door het volgende bevel in werking te stellen
 
    ```shell
@@ -150,7 +150,7 @@ Om te leren hoe te om de bundel op te stellen OSGi, verbeteren wij `HelloWorldMo
    $ aio aem:rde:install target/aem-guides-wknd.core-2.1.3-SNAPSHOT.jar
    ```
 
-1. Verifieer veranderingen op RDE door toe te voegen of uit te geven `Hello World Component` op een WKND-sitepagina.
+1. Controleer de wijzigingen op de RDE door de `Hello World Component` toe te voegen of te bewerken op een WKND-sitepagina.
 
 ### OSGi-configuratie implementeren
 
@@ -168,14 +168,14 @@ $ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
 
 >[!TIP]
 >
->Om een configuratie OSGi slechts op een auteur te installeren of te publiceren instantie, gebruik `-s` markering.
+>Gebruik de markering `-s` om een OSGi-configuratie alleen op een auteur- of publicatieinstantie te installeren.
 
 
 ### Apache- of Dispatcher-configuratie implementeren
 
-De Apache- of Dispatcher-configuratiebestanden **kan niet individueel worden ingezet**, maar de volledige mapstructuur van Dispatcher moet worden geïmplementeerd in de vorm van een ZIP-bestand.
+Apache of Dispatcher config- dossiers **kunnen niet individueel** worden opgesteld, maar de volledige de omslagstructuur van Dispatcher moet in de vorm van een dossier van het PIT worden opgesteld.
 
-1. Breng een gewenste wijziging aan in het configuratiebestand van het `dispatcher` voor demo-doeleinden de `dispatcher/src/conf.d/available_vhosts/wknd.vhost` om de `html` alleen gedurende 60 seconden.
+1. Breng een gewenste wijziging aan in het configuratiebestand van de module `dispatcher` en werk voor demodoeleinden de `dispatcher/src/conf.d/available_vhosts/wknd.vhost` bij om de bestanden van `html` slechts gedurende 60 seconden in cache te plaatsen.
 
    ```
    ...
@@ -188,7 +188,7 @@ De Apache- of Dispatcher-configuratiebestanden **kan niet individueel worden ing
    ...
    ```
 
-1. Controleer de wijzigingen lokaal. Zie [Verzending lokaal uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally) voor meer informatie .
+1. Verifieer de veranderingen plaatselijk, zie [ Looppas Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally) voor meer details.
 1. Stel de veranderingen in RDE op door het volgende bevel in werking te stellen:
 
    ```shell
@@ -223,13 +223,13 @@ Met behulp van de bovenstaande opdrachten kan uw RDE worden beheerd vanaf uw fav
 
 ## Volgende stap
 
-Meer informatie over de [ontwikkeling/implementatie van levenscyclus met RDE](./development-life-cycle.md) om snel functies te leveren.
+Leer over de [ ontwikkeling/de cyclus van het plaatsingsleven gebruikend RDE ](./development-life-cycle.md) om eigenschappen met snelheid te leveren.
 
 
 ## Aanvullende bronnen
 
-[Documentatie RDE-opdrachten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
+[ RDE bevelen documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
 
-[Adobe I/O Runtime CLI-insteekmodule voor interactie met AEM Rapid Development Environment](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[ Adobe I/O Runtime CLI Insteekmodule voor interactie met AEM Snelle Milieu&#39;s van de Ontwikkeling ](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Projectinstelling AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+[ AEM de opstelling van het Project ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)

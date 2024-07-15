@@ -26,13 +26,13 @@ ht-degree: 0%
 
 Voer de volgende stappen uit om deze mogelijkheid te testen op uw AEM Forms-exemplaar
 
-* Download en implementeer de [MySql Driver Jar](assets/mysqldriver.jar) bestanden met de [felix-webconsole](http://localhost:4502/system/console/bundles)
-* Download en implementeer de [OSGi-bundel](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) met de [felix-webconsole](http://localhost:4502/system/console/bundles)
-* Download en installeer de [pakket met clientbibliotheek, adaptieve formuliersjabloon en de aangepaste pagina-component](assets/store-and-fetch-af-with-data.zip) met de [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Het dialoogvenster Importeren [Adaptief voorbeeldformulier](assets/sample-adaptive-form.zip) met de [Interface FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Download en stel de [ Jar van de Bestuurder MySql ](assets/mysqldriver.jar) dossiers op gebruikend de [ felix Webconsole ](http://localhost:4502/system/console/bundles)
+* Download en stel de [ bundel OSGi ](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) op gebruikend de [ felix Webconsole ](http://localhost:4502/system/console/bundles)
+* Download en installeer het [ pakket dat cliëntlib, adaptief vormmalplaatje, en de component van de douanepagina ](assets/store-and-fetch-af-with-data.zip) bevat gebruikend de [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+* Invoer de [ steekproef Aangepaste vorm ](assets/sample-adaptive-form.zip) gebruikend de [ interface FormsAndDocuments ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Het dialoogvenster Importeren [form-data-db.sql](assets/form-data-db.sql) gebruiken van MySql Workbench. Dit zal tot het noodzakelijke schema en de lijsten in uw gegevensbestand voor dit leerprogramma leiden te werken.
-* Aanmelden bij [configMgr.](http://localhost:4502/system/console/configMgr) Zoek naar &quot;Apache Sling Connection Pooled DataSource. Maak een nieuw genaamd Apache Sling Connection Pooled Datasource-item **Opslaan en doorgaan** de volgende eigenschappen gebruiken:
+* Importeer [ vorm-gegeven-db.sql ](assets/form-data-db.sql) gebruikend MySql Workbench. Dit zal tot het noodzakelijke schema en de lijsten in uw gegevensbestand voor dit leerprogramma leiden te werken.
+* Login aan [ configMgr.](http://localhost:4502/system/console/configMgr) Zoek naar &quot;Apache Sling Connection Pooled DataSource. Creeer een nieuwe Apache het Schelen Verbinding Gepoolde ingang DataSource genoemd **SaveAndContinue** gebruikend de volgende eigenschappen:
 
 | Eigenschapnaam | Waarde |
 | ------------------------|---------------------------------------|
@@ -40,8 +40,8 @@ Voer de volgende stappen uit om deze mogelijkheid te testen op uw AEM Forms-exem
 | JDBC-stuurprogramma, klasse | `com.mysql.cj.jdbc.Driver` |
 | JDBC-verbindingsuri | `jdbc:mysql://localhost:3306/aemformstutorial` |
 
-* Open de [Adaptief formulier](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
+* Open de [ Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
 * Vul enkele details in en klik op de knop &quot;Opslaan en verdergaan&quot;.
 * U zou terug een URL met een GUID in het moeten krijgen.
-* Kopieer de URL en plak deze in een nieuw browsertabblad. **Zorg ervoor dat er geen lege ruimte aan het einde van de URL is.**
+* Kopieer de URL en plak deze in een nieuw browsertabblad. **zorg ervoor er geen lege ruimte aan het eind van URL zijn.**
 * Het adaptieve formulier moet worden gevuld met de gegevens uit de vorige stap.

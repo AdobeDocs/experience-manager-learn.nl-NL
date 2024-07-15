@@ -24,18 +24,18 @@ Breng snel invloed uit op uw organisatie door het voor creatieve en marketingtea
 
 ## Asset Link instellen voor AEM as a Cloud Service
 
-Leer hoe te opstelling de Verbinding van Activa van de Adobe voor AEM as a Cloud Service, vormend gebruikersrechten en AEM as a Cloud Service, en hoe te om de Verbinding van Activa van de Adobe te installeren en te gebruiken.
+Leer hoe u de Adobe Asset Link voor AEM as a Cloud Service instelt, gebruikersrechten en AEM as a Cloud Service configureert en hoe u de Adobe Asset Link installeert en gebruikt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
 
-Niet weergegeven in de bovenstaande video. U kunt de Adobe Asset Link toevoegen via het dialoogvenster __Beheerd pakket__ Creative Cloud package manager:
+Niet getoond in de video hierboven, kan de Verbinding van de Activa van de Adobe via de __Beheerde pakketoptie__ van de pakketmanager van het Creative Cloud worden toegevoegd:
 
-1. Kies __Adobe Asset Link CEP__ in __Plug-ins kiezen__ stap
-2. Op de __Optiestap__ selecteren __De installatie van de zelfbediening inschakelen__ en __Niet-beheerders toestaan apps bij te werken en te installeren__ om niet-beheerders de mogelijkheid te bieden om rechten te hebben voor het beheer van Creative Cloud-apps en -plug-ins.
+1. Kies __CEP van de Activa van de Adobe 1} in__ kiezen Insteekmodules __stap__
+2. Op de __uitgezochte stap van de Optie 0}__ laat zelfbediening toe installeert __en__ staat niet-admins toe om apps __bij te werken en te installeren om niet-admins toe te laten om voorrechten te hebben om Creative Cloud apps en stop- ins te beheren.__
 
 ## Asset Link instellen voor Managed Services en On-premise
 
-Leer hoe te opstelling de Verbinding van Activa van de Adobe voor AEM 6 die in Adobe Managed Services of op-gebouw lopen, gebruikersrechten en AEM as a Cloud Service vormen, en hoe te om de Verbinding van Activa van de Adobe te installeren en te gebruiken.
+Leer hoe te opstelling de Verbinding van Activa van de Adobe voor AEM 6 die in Adobe Managed Services of op-gebouw, gebruikersrechten en AEM as a Cloud Service vormen, en hoe te om de Verbinding van Activa van de Adobe te installeren en te gebruiken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
 

@@ -1,6 +1,6 @@
 ---
 title: Indexconversie
-description: Leer hoe de Convertor van de Index bestaande AEM indexdefinities automatisch omzet om as a Cloud Service compatibel AEM te zijn.
+description: Leer hoe de Convertor van de Index bestaande AEM indexdefinities automatisch omzet om compatibel met AEM as a Cloud Service te zijn.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Indexconversie
 
-Leer hoe de Convertor van de Index bestaande AEM indexdefinities automatisch omzet om as a Cloud Service compatibel AEM te zijn.
+Leer hoe de Convertor van de Index bestaande AEM indexdefinities automatisch omzet om compatibel met AEM as a Cloud Service te zijn.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336696?quality=12&learn=on)

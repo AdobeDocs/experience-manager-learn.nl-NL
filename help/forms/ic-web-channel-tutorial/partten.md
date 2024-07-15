@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * Open het 401KStatement-document in de bewerkingsmodus.
 
-**Doelgebied van LeftPanel configureren**
+**vorm LeftPanel doelgebied**
 
 * Tik op het doelgebied LeftPanel aan de rechterkant en klik op het pictogram &quot;+&quot; om het dialoogvenster Component invoegen weer te geven.
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 
 * Selecteer het pictogram &#39;Potlood&#39; om de standaardtekst te bewerken.
 
-* De standaardtekst vervangen door &quot;**Uw Outlook Inkomensresultaten voor pensionering&quot;**
+* Vervang de standaardtekst met &quot;**Uw Vooruitzichten van het Inkomen van de Ouder &quot;**
 
-**Doelgebied van RightPanel configureren**
+**vorm RightPanel doelgebied**
 
 * Tik op het doelgebied van RightPanel aan de rechterkant en klik op het pictogram &quot;+&quot; om het dialoogvenster Component invoegen te openen.
 
@@ -49,25 +49,25 @@ ht-degree: 0%
 
 * Selecteer het pictogram &#39;Potlood&#39; om de standaardtekst te bewerken.
 
-* De standaardtekst vervangen door &quot;**Geschat maandelijks pensioeninkomen&quot;**
+* Vervang de standaardtekst met &quot;**Geschatte Maandelijkse Inkomsten van de Pensionering&quot;**
 
 ## Outlook-documentfragment voor inkomens verhogen {#add-retirement-income-outlook-document-fragment}
 
-* Klik op het middelenpictogram en pas het filter toe om elementen van het type &quot;Documentfragmenten&quot; weer te geven. Sleep RetirementIncomeOutlook-documentfragment naar het doelgebied van het linkerdeelvenster.
+* Klik op het Assets-pictogram en pas het filter toe om elementen van het type &quot;Documentfragmenten&quot; weer te geven. Sleep RetirementIncomeOutlook-documentfragment naar het doelgebied van het linkerdeelvenster.
 
-* U kunt [op deze pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) bij het toevoegen van documentfragment aan inhoudsgebieden.
+* U kunt [ naar deze pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) bij het toevoegen van documentfragment aan inhoudsgebieden verwijzen.
 
 ## Geschatte maandelijkse inkomensgrafiek toevoegen {#adding-estimated-monthly-income-chart}
 
 * Klik op het doelgebied van RightPanel aan de rechterkant. Klik op het pictogram &quot;+&quot; om de diagramcomponent in te voegen. We gebruiken een kolomdiagram om het geschatte maandinkomen weer te geven. Tik zachtjes op de nieuw ingevoegde diagramcomponent. Selecteer het pictogram &quot;Sleutel&quot;om de configuratie eigenschappen sheet te openen.Vorm de grafiek met de volgende eigenschappen zoals aangetoond in het hieronder screenshot.
 
-**AEM Forms 6.4 - Vormende Geschatte maandelijkse grafiek van de Inkomstenkolom**
+**AEM Forms 6.4 - het Vormen Geschatte Maandelijkse Grafiek van de Kolom van het Inkomen**
 
-![form64](assets/estimatedmonthlyincomechart.png)
+![ form64 ](assets/estimatedmonthlyincomechart.png)
 
-**AEM Forms 6.5 - Vormende Geschatte maandelijkse grafiek van de Inkomstenkolom**
+**AEM Forms 6.5 - het Vormen Geschatte Maandelijkse Grafiek van de Kolom van het Inkomen**
 
-![forms65](assets/estimatedmonthlyincomechart65.PNG)
+![ forms65 ](assets/estimatedmonthlyincomechart65.PNG)
 
 ## Volgende stappen
 

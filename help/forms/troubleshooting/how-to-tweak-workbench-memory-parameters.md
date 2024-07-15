@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Workbench-geheugenparameters aanpassen
 
-*Deze video doorloopt het proces om Workbench-geheugenparameters aan te passen.*
+*Deze video loopt door het proces om het geheugenparameters van Workbench te tweken.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335509?quality=12&learn=on)

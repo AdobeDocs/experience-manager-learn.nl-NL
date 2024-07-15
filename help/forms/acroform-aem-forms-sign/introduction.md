@@ -31,14 +31,14 @@ Organisaties hebben een grote verscheidenheid aan formulieren. Sommige van deze 
 
 ### Hieronder vindt u de volgende vereisten om deze functie op uw systeem te laten werken
 
-* De bundels downloaden en implementeren met de [Felix-webconsole](http://localhost:4502/system/console/bundles)
+* Download en stel de bundels op gebruikend de [ Console van het Web van de Felix ](http://localhost:4502/system/console/bundles)
 * [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
-* [Download en importeer dit pakket in AEM](assets/acro-form-aem-form.zip). Dit pakket bevat de voorbeeldworkflow en de HTML-pagina om XSD te maken van acroform
-* Open de [configMgr](http://localhost:4502/system/console/configMgr)
+* [ AcroFormsToAEMFormsBundle ](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
+* [ Download en voer dit pakket in AEM ](assets/acro-form-aem-form.zip) in. Dit pakket bevat de voorbeeldworkflow en de HTML-pagina om XSD te maken van acroform
+* Open [ configMgr ](http://localhost:4502/system/console/configMgr)
    * Zoek naar &#39;Apache Sling Service User Mapper Service&#39; en klik om de eigenschappen te openen
-   * Klik op de knop `+` pictogram (plus) om de volgende Toewijzing van de Dienst toe te voegen
+   * Klik op het pictogram `+` (plus) om de volgende servicetoewijzing toe te voegen
       * `DevelopingWithServiceUser.core:getresourceresolver=data`
       * `DevelopingWithServiceUser.core:getformsresourceresolver=fd-service`
    * Klik op Opslaan

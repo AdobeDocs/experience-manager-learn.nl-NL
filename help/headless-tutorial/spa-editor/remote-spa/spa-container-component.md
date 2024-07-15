@@ -21,9 +21,9 @@ ht-degree: 0%
 
 # Bewerkbare containercomponenten
 
-[Vaste componenten](./spa-fixed-component.md) biedt enige flexibiliteit voor het ontwerpen SPA inhoud, maar deze aanpak is star en vereist dat ontwikkelaars de exacte samenstelling van de bewerkbare inhoud definiëren. Om het creëren van uitzonderlijke ervaringen door auteurs te steunen, steunt SPA Redacteur het gebruik van containercomponenten in de SPA. Met containercomponenten kunnen auteurs toegestane componenten naar de container slepen en neerzetten, en ze ontwerpen, net als bij traditionele AEM Sites-ontwerpen!
+[ Vaste componenten ](./spa-fixed-component.md) verstrekken wat flexibiliteit voor het ontwerpen SPA inhoud, nochtans is deze benadering stijf en vereist ontwikkelaars om de nauwkeurige samenstelling van de editable inhoud te bepalen. Om het creëren van uitzonderlijke ervaringen door auteurs te steunen, steunt SPA Redacteur het gebruik van containercomponenten in de SPA. Met containercomponenten kunnen auteurs toegestane componenten naar de container slepen en neerzetten, en ze ontwerpen, net als bij traditionele AEM Sites-ontwerpen!
 
-![Bewerkbare containercomponenten](./assets/spa-container-component/intro.png)
+![ Bewerkbare containercomponenten ](./assets/spa-container-component/intro.png)
 
 In dit hoofdstuk, voegen wij een editable container aan de huismening toe die auteurs toestaat om rijke inhoudservaringen samen te stellen en te lay-out gebruikend de Bewerkbare componenten van het Reageren direct in de SPA.
 
@@ -31,7 +31,7 @@ In dit hoofdstuk, voegen wij een editable container aan de huismening toe die au
 
 Een containercomponent toevoegen aan de weergave Home:
 
-+ De AEM bewerkbare component React importeren `ResponsiveGrid` component
++ De component `ResponsiveGrid` van de component React Editable AEM importeren
 + Aangepaste bewerkbare reactiecomponenten (tekst en afbeelding) importeren en registreren voor gebruik in de component ResponsiveGrid
 
 ### De component ResponsiveGrid gebruiken
@@ -39,18 +39,18 @@ Een containercomponent toevoegen aan de weergave Home:
 Een bewerkbaar gebied toevoegen aan de weergave Home:
 
 1. Openen en bewerken `react-app/src/components/Home.js`
-1. Het dialoogvenster Importeren `ResponsiveGrid` component van `@adobe/aem-react-editable-components` en voeg het toe aan `Home` component.
-1. Stel de volgende kenmerken in op de knop `<ResponsiveGrid...>` component
+1. Importeer de `ResponsiveGrid` -component vanuit `@adobe/aem-react-editable-components` en voeg deze toe aan de `Home` -component.
+1. De volgende kenmerken instellen voor de component `<ResponsiveGrid...>`
    + `pagePath = '/content/wknd-app/us/en/home'`
    + `itemPath = 'root/responsivegrid'`
 
-   Dit instrueert het `ResponsiveGrid` component om zijn inhoud van het AEM middel terug te winnen:
+   Hierdoor krijgt de component `ResponsiveGrid` de opdracht om de inhoud ervan op te halen uit de AEM bron:
 
    + `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
-   De `itemPath` worden toegewezen aan `responsivegrid` knooppunt gedefinieerd in `Remote SPA Page` AEM Sjabloon en wordt automatisch gemaakt op nieuwe AEM pagina&#39;s die zijn gemaakt op basis van de `Remote SPA Page` AEM sjabloon.
+   De `itemPath` verwijst naar het knooppunt `responsivegrid` dat is gedefinieerd in de AEM `Remote SPA Page` en wordt automatisch gemaakt op nieuwe AEM pagina&#39;s die zijn gemaakt op basis van de AEM `Remote SPA Page` .
 
-   Bijwerken `Home.js` om de `<ResponsiveGrid...>` component.
+   Werk `Home.js` bij om de component `<ResponsiveGrid...>` toe te voegen.
 
    ```javascript
    ...
@@ -74,15 +74,15 @@ Een bewerkbaar gebied toevoegen aan de weergave Home:
    }
    ```
 
-De `Home.js` bestand moet er als volgt uitzien:
+Het bestand `Home.js` moet er als volgt uitzien:
 
-![Home.js](./assets/spa-container-component/home-js.png)
+![ Home.js ](./assets/spa-container-component/home-js.png)
 
 ## Bewerkbare componenten maken
 
 Om het volledige effect van de flexibele auteurservaringscontainers in SPA Redacteur te krijgen. We hebben al een bewerkbare component Titel gemaakt, maar laten we er nog een paar maken waarmee auteurs bewerkbare componenten Tekst en Afbeelding kunnen gebruiken in de zojuist toegevoegde component ResponsiveGrid.
 
-De nieuwe bewerkbare componenten voor tekst en reageren op afbeeldingen worden gemaakt met het bewerkbare componentdefinitiepatroon dat in [bewerkbare vaste componenten](./spa-fixed-component.md).
+De nieuwe editable componenten van het Reageren van de Tekst en van het Beeld worden gecreeerd gebruikend het editable patroon van de componentendefinitie die in [ wordt uitgevoerd editable vaste componenten ](./spa-fixed-component.md).
 
 ### Bewerkbare tekstcomponent
 
@@ -147,7 +147,7 @@ De nieuwe bewerkbare componenten voor tekst en reageren op afbeeldingen worden g
 
 De bewerkbare implementatie van de component Text moet er als volgt uitzien:
 
-![Bewerkbare tekstcomponent](./assets/spa-container-component/text-js.png)
+![ Editable tekstcomponent ](./assets/spa-container-component/text-js.png)
 
 ### Afbeeldingscomponent
 
@@ -234,8 +234,8 @@ export default EditableImage;
 ```
 
 
-1. Een SCSS-bestand maken `src/components/editable/EditableImage.scss` die aangepaste stijlen voor de `EditableImage.scss`. Deze stijlen zijn gericht op de CSS-klassen van de bewerkbare component React.
-1. Voeg volgende SCSS toe aan `EditableImage.scss`
+1. Maak een SCSS-bestand `src/components/editable/EditableImage.scss` dat aangepaste stijlen voor de `EditableImage.scss` bevat. Deze stijlen zijn gericht op de CSS-klassen van de bewerkbare component React.
+1. Voeg de volgende SCSS toe aan `EditableImage.scss`
 
    ```css
    .cmp-image__image {
@@ -255,12 +255,12 @@ export default EditableImage;
 
 De bewerkbare implementatie van de component Image moet er als volgt uitzien:
 
-![Bewerkbare afbeeldingscomponent](./assets/spa-container-component/image-js.png)
+![ Bewerkbare beeldcomponent ](./assets/spa-container-component/image-js.png)
 
 
 ### De bewerkbare componenten importeren
 
-De nieuwe `EditableText` en `EditableImage` In de SPA wordt naar React-componenten verwezen en deze worden dynamisch geïnstantieerd op basis van de JSON die door AEM is geretourneerd. Als u ervoor wilt zorgen dat deze componenten beschikbaar zijn voor de SPA, maakt u voor deze componenten importinstructies in `Home.js`
+Naar de nieuwe `EditableText` - en `EditableImage` React-componenten wordt in de SPA verwezen en deze worden dynamisch geïnstantieerd op basis van de JSON die door AEM wordt geretourneerd. Om ervoor te zorgen dat deze componenten beschikbaar zijn voor de SPA, maakt u importinstructies voor deze componenten in `Home.js`
 
 1. Open het SPA project in uw winde
 1. Het bestand openen `src/Home.js`
@@ -276,9 +276,9 @@ De nieuwe `EditableText` en `EditableImage` In de SPA wordt naar React-component
 
 Het resultaat moet er als volgt uitzien:
 
-![Home.js](./assets/spa-container-component/home-js-imports.png)
+![ Home.js ](./assets/spa-container-component/home-js-imports.png)
 
-Indien deze invoer _niet_ toegevoegd, `EditableText` en `EditableImage` de code wordt niet aangehaald door SPA, en zo, worden de componenten niet in kaart gebracht aan de verstrekte middeltypes.
+Als deze invoer _niet_ wordt toegevoegd, wordt de `EditableText` en `EditableImage` code niet aangehaald door SPA, en zo, worden de componenten niet in kaart gebracht aan de verstrekte middeltypes.
 
 ## De container configureren in AEM
 
@@ -291,86 +291,86 @@ AEM containercomponenten gebruiken beleid om hun toegestane componenten te dicte
 De reponsivegrid-container van de sjabloon Externe SPA pagina configureren:
 
 1. Aanmelden bij AEM auteur
-1. Navigeren naar __Gereedschappen > Algemeen > Sjablonen > WKND App__
-1. Bewerken __SPA pagina rapporteren__
+1. Navigeer aan __Hulpmiddelen > Algemeen > Malplaatjes > app WKND__
+1. Bewerk __Rapport SPA Pagina__
 
-   ![Beleid voor responsieve rasters](./assets/spa-container-component/templates-remote-spa-page.png)
+   ![ Responsief beleid van het Net ](./assets/spa-container-component/templates-remote-spa-page.png)
 
-1. Selecteren __Structuur__ in de modusschakelaar rechtsboven
-1. Tik om de __Layout Container__
-1. Tik op de knop __Beleid__ pictogram in de pop-upbalk
+1. Selecteer __Structuur__ op de wijzeschakelaar in het hoogste recht
+1. Tik om de __Container van de Lay-out__ te selecteren
+1. Tik het __pictogram van het Beleid__ in popup bar
 
-   ![Beleid voor responsieve rasters](./assets/spa-container-component/templates-policies-action.png)
+   ![ Responsief beleid van het Net ](./assets/spa-container-component/templates-policies-action.png)
 
-1. Rechts, onder de __Toegestane componenten__ tab, uitbreiden __WKND APP - INHOUD__
+1. Op het recht, onder __Toegestane Componenten__ lusje, breid __APP WKND uit - INHOUD__
 1. Zorg ervoor dat alleen het volgende is geselecteerd:
    + Afbeelding
    + Tekst
    + Titel
 
-   ![Externe SPA](./assets/spa-container-component/templates-allowed-components.png)
+   ![ Verre SPA Pagina ](./assets/spa-container-component/templates-allowed-components.png)
 
-1. Tikken __Gereed__
+1. Tik __Gereed__
 
 ## De container ontwerpen in AEM
 
-Nadat de SPA is bijgewerkt om de `<ResponsiveGrid...>`, omvat drie bewerkbare React-componenten (`EditableTitle`, `EditableText`, en `EditableImage`), en AEM wordt bijgewerkt met een passend beleid van het Malplaatje, kunnen wij beginnen inhoud in de containercomponent te ontwerpen.
+Nadat de SPA is bijgewerkt om `<ResponsiveGrid...>` in te sluiten, de inhoud van drie bewerkbare React-componenten (`EditableTitle`, `EditableText` en `EditableImage`) inpakt en AEM wordt bijgewerkt met een overeenkomend sjabloonbeleid, kunnen we beginnen met het ontwerpen van inhoud in de containercomponent.
 
 1. Aanmelden bij AEM auteur
-1. Navigeren naar __Sites > WKND App__
-1. Tikken __Home__ en selecteert u __Bewerken__ van de bovenste actiebalk
+1. Navigeer aan __Plaatsen > app WKND__
+1. Tik __Huis__ en selecteer __uitgeven__ van de hoogste actiebar
    + De componentenvertoningen van de Tekst van de &quot;Wereld van Hello&quot;aangezien dit automatisch werd toegevoegd toen het produceren van het project van het archetype van het AEM Project
-1. Selecteren __Bewerken__ in de modus Selecteren rechtsboven in de Pagina-editor
-1. Zoek de __Layout Container__ bewerkbaar gebied onder Titel
-1. Open de __Zijbalk van de pagina-editor__ en selecteert u de __Weergave Componenten__
-1. Sleep de volgende componenten naar de __Layout Container__
+1. Selecteer __uitgeven__ van de wijze-selecteur in het hoogste recht van de Redacteur van de Pagina
+1. Bepaal de plaats van de __Container van de Lay-out__ editable gebied onder de Titel
+1. Open de __zijbar van de Redacteur van de Pagina__, en selecteer de __mening van Componenten__
+1. Sleep de volgende componenten in de __Container van de Lay-out__
    + Afbeelding
    + Titel
 1. Sleep de componenten om deze in de volgende volgorde te plaatsen:
    1. Titel
    1. Afbeelding
    1. Tekst
-1. __Auteur__ de __Titel__ component
-   1. Tik op de component Title en tik op de knop __moersleutel__ pictogram naar __bewerken__ de component Title
+1. __Auteur__ de __3 component van de Titel {__
+   1. Tik de component van de Titel, en tik het __moersleutelpictogram__ ____ de component van de Titel uitgeven
    1. Voeg de volgende tekst toe:
-      + Titel: __De zomer komt eraan. Laten we er het beste van maken!__
+      + Titel: __Zomer komt, laten we het meesten van het maken!__
       + Type: __H1__
-   1. Tikken __Gereed__
-1. __Auteur__ de __Afbeelding__ component
-   1. Sleep een afbeelding vanuit de zijbalk (na het schakelen naar de weergave Elementen) naar de component Afbeelding
-   1. Tik op de component Image en tik op de __moersleutel__ pictogram dat u wilt bewerken
-   1. Controleer de __Afbeelding is decoratief__ selectievakje
-   1. Tikken __Gereed__
-1. __Auteur__ de __Tekst__ component
-   1. Bewerk de component Text door op de component Text te tikken en op de component Text te tikken __moersleutel__ pictogram
+   1. Tik __Gereed__
+1. __Auteur__ de __component van het Beeld__
+   1. Sleep een afbeelding vanuit de zijbalk (na het schakelen naar de Assets-weergave) naar de afbeeldingscomponent
+   1. Tik de component van het Beeld, en tik het __moersleutel__ pictogram om uit te geven
+   1. Controle het __Beeld is decoratieve__ checkbox
+   1. Tik __Gereed__
+1. __Auteur__ de ____ component van de Tekst
+   1. Bewerk de component van de Tekst door de component van de Tekst te tikken, en het tikken van het __moersleutelpictogram__
    1. Voeg de volgende tekst toe:
-      + _Op dit moment kunt u 15% krijgen voor alle avonturen van één week, en 20% voor alle avonturen die 2 weken of langer zijn! Voeg bij de kassa de campagnecode SUMMERISCOMING toe om uw kortingen te krijgen!_
-   1. Tikken __Gereed__
+      + _Op dit ogenblik, kunt u 15% op alle avonturen van 1 week krijgen, en 20% korting op alle avonturen die 2 weken of langer zijn! Bij controle, voeg de campagnecode toe SUMMERISCOMING om uw kortingen te krijgen!_
+   1. Tik __Gereed__
 
 1. Uw componenten zijn nu ontworpen, maar worden verticaal gestapeld.
 
-   ![Gemaakte componenten](./assets/spa-container-component/authored-components.png)
+   ![ Authored componenten ](./assets/spa-container-component/authored-components.png)
 
-Gebruik AEM lay-outmodus om de grootte en lay-out van de componenten aan te passen.
+Gebruik AEM modus Lay-out om de grootte en lay-out van de componenten aan te passen.
 
-1. Overschakelen op __Lay-outmodus__ met de moduskiezer rechtsboven
-1. __Formaat wijzigen__ de componenten Afbeelding en Tekst, zodat deze naast elkaar staan
-   + __Afbeelding__ onderdeel moet __8 kolommen breed__
-   + __Tekst__ onderdeel moet __3 kolommen breed__
+1. Schakelaar aan __Wijze van de Lay-out__ gebruikend de wijze-selecteur in top-right
+1. __vergroot__ de componenten van het Beeld en van de Tekst, dusdanig dat zij zij aan zij zijn
+   + __de component van het 1} Beeld__ zou 8 kolommen breed __moeten zijn__
+   + __de component van de Tekst__ __3 kolommen breed__ zou moeten zijn
 
-   ![Indelingscomponenten](./assets/spa-container-component/layout-components.png)
+   ![ componenten van de Lay-out ](./assets/spa-container-component/layout-components.png)
 
-1. __Voorvertoning__ uw wijzigingen in AEM paginaeditor
-1. De WKND-app vernieuwen die lokaal wordt uitgevoerd [http://localhost:3000](http://localhost:3000) om de gemaakte wijzigingen te zien!
+1. __Voorproef__ uw veranderingen in AEM Redacteur van de Pagina
+1. Vernieuw de WKND App die plaatselijk op [ http://localhost:3000 ](http://localhost:3000) loopt om de authored veranderingen te zien!
 
-   ![Containercomponent in SPA](./assets/spa-container-component/localhost-final.png)
+   ![ component van de Container in SPA ](./assets/spa-container-component/localhost-final.png)
 
 
 ## Gefeliciteerd!
 
 U hebt een containercomponent toegevoegd waarmee bewerkbare componenten door auteurs aan de WKND App kunnen worden toegevoegd! Nu weet u hoe:
 
-+ De bewerkbare component AEM React gebruiken `ResponsiveGrid` in de SPA
++ De component AEM React Editable Component `ResponsiveGrid` in de SPA gebruiken
 + Bewerkbare React-componenten (tekst en afbeelding) maken en registreren voor gebruik in de SPA via de containercomponent
 + Vorm het Verre malplaatje van de Pagina van de SPA om de SPA-toegelaten componenten toe te staan
 + Bewerkbare componenten toevoegen aan de containercomponent
@@ -378,4 +378,4 @@ U hebt een containercomponent toegevoegd waarmee bewerkbare componenten door aut
 
 ## Volgende stappen
 
-In de volgende stap wordt dezelfde techniek gebruikt om [Voeg een editable component aan een route van de Details van het Avontuur toe](./spa-dynamic-routes.md) in de SPA.
+De volgende stap gebruikt deze zelfde techniek om [ een editable component aan een route van de Details van het Avontuur ](./spa-dynamic-routes.md) in de SPA toe te voegen.

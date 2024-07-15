@@ -21,39 +21,39 @@ ht-degree: 0%
 
 # AEM Gebeurtenissen verwerken met Adobe I/O Runtime Action
 
-Leer hoe u ontvangen AEM gebeurtenissen verwerkt met [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Actie. In dit voorbeeld wordt het eerdere voorbeeld verbeterd [Adobe I/O Runtime Action and AEM Events](runtime-action.md), moet u controleren of u het document hebt voltooid voordat u verdergaat met deze versie.
+Leer hoe te om ontvangen AEM Gebeurtenissen te verwerken gebruikend [ Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Actie. Dit voorbeeld verbetert het vroegere voorbeeld [ Actie van Adobe I/O Runtime en AEM Gebeurtenissen ](runtime-action.md), zorg ervoor u het alvorens met dit hebt voltooid.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427054?quality=12&learn=on)
 
-In dit voorbeeld worden de oorspronkelijke gebeurtenisgegevens en de ontvangen gebeurtenis opgeslagen als een activiteitenbericht in Adobe I/O Runtime-opslag. Als de gebeurtenis echter _Inhoudsfragment gewijzigd_ type, dan roept het ook AEM auteursdienst om de wijzigingsdetails te vinden. Tot slot worden de gebeurtenisdetails weergegeven in één paginatoepassing (SPA).
+In dit voorbeeld worden de oorspronkelijke gebeurtenisgegevens en de ontvangen gebeurtenis opgeslagen als een activiteitenbericht in Adobe I/O Runtime-opslag. Nochtans, als de gebeurtenis van _Gewijzigd het Fragment van de Inhoud_ type is, dan roept het ook AEM auteursdienst om de wijzigingsdetails te vinden. Tot slot worden de gebeurtenisdetails weergegeven in één paginatoepassing (SPA).
 
 ## Voorwaarden
 
 U hebt het volgende nodig om deze zelfstudie te voltooien:
 
-- as a Cloud Service omgeving AEM met [AEM Event ingeschakeld](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook het voorbeeld [WKND-sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) het project moet worden uitgevoerd .
+- Het milieu van AEM as a Cloud Service met [ toegelaten AEM Gebeurtenis ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Ook, moet het steekproef ](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) project van de Plaatsen WKND [ worden opgesteld aan het.
 
-- Toegang tot [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
-- [ADOBE DEVELOPER CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) op uw lokale computer is geïnstalleerd.
+- [ Adobe Developer CLI ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) geïnstalleerd op uw lokale machine.
 
-- Lokaal geïnitialiseerd project uit het vorige voorbeeld [Adobe I/O Runtime Action and AEM Events](./runtime-action.md#initialize-project-for-local-development).
+- Lokaal geïnitialiseerd project van het vroegere voorbeeld [ de Actie van Adobe I/O Runtime en AEM Gebeurtenissen ](./runtime-action.md#initialize-project-for-local-development).
 
 >[!IMPORTANT]
 >
->AEM as a Cloud Service gebeurtenis is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Om AEM gebeurtenis op uw AEM as a Cloud Service milieu toe te laten, contacteer [AEM-team](mailto:grp-aem-events@adobe.com).
+>AEM as a Cloud Service Event is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Om AEM gebeurtenis op uw milieu van AEM as a Cloud Service toe te laten, contacteer [ AEM-Toevend team ](mailto:grp-aem-events@adobe.com).
 
 ## Actie AEM Events-processor
 
-In dit voorbeeld, de gebeurtenisbewerker [action](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) voert de volgende taken uit:
+In dit voorbeeld, voert de actie van de gebeurtenisbewerker [ ](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) volgende taken uit:
 
 - Parseert ontvangen gebeurtenis in een activiteitenbericht.
-- Indien ontvangen gebeurtenis van _Inhoudsfragment gewijzigd_ type, vraag terug aan AEM auteursdienst om de wijzigingsdetails te vinden.
+- Als de ontvangen gebeurtenis van _Gewijzigd het Fragment van de Inhoud_ type is, vraag terug naar AEM auteursdienst om de wijzigingsdetails te vinden.
 - Hiermee worden de oorspronkelijke gebeurtenisgegevens, het activiteitenbericht en eventuele wijzigingsgegevens in Adobe I/O Runtime-opslag gehandhaafd.
 
-Om bovengenoemde taken uit te voeren, laten wij beginnen door een actie aan het project toe te voegen, modules te ontwikkelen JavaScript om de bovengenoemde taken uit te voeren, en tenslotte de actiecode bij te werken om de ontwikkelde modules te gebruiken.
+Om bovengenoemde taken uit te voeren, laten wij beginnen door een actie aan het project toe te voegen, JavaScript modules te ontwikkelen om de bovengenoemde taken uit te voeren, en tenslotte de actiecode bij te werken om de ontwikkelde modules te gebruiken.
 
-Zie de bijgevoegde [WKND-AEM-Event-Runtime-Action.zip](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) voor de volledige code, en onder sectie benadrukt de belangrijkste dossiers.
+Verwijs naar het in bijlage [ WKND-AEM-Eventing-Runtime-Action.zip ](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) dossier voor de volledige code, en onder sectie benadrukt de belangrijkste dossiers.
 
 ### Handeling toevoegen
 
@@ -63,15 +63,15 @@ Zie de bijgevoegde [WKND-AEM-Event-Runtime-Action.zip](../assets/examples/event-
   aio app add action
   ```
 
-- Selecteren `@adobe/generator-add-action-generic` als actiesjabloon de handeling een naam geven `aem-event-processor`.
+- Selecteer `@adobe/generator-add-action-generic` als actiesjabloon en geef de handeling de naam `aem-event-processor` .
 
-  ![Handeling toevoegen](../assets/examples/event-processing-using-runtime-action/add-action-template.png)
+  ![ voeg actie ](../assets/examples/event-processing-using-runtime-action/add-action-template.png) toe
 
 ### JavaScript-modules ontwikkelen
 
-Om de hierboven vermelde taken uit te voeren, ontwikkelen de volgende modules JavaScript.
+Om de hierboven vermelde taken uit te voeren, ontwikkelen de volgende modules van JavaScript.
 
-- De `src/dx-excshell-1/actions/aem-event-processor/eventValidator.js` bepaalt als de ontvangen gebeurtenis van is _Inhoudsfragment gewijzigd_ type.
+- De `src/dx-excshell-1/actions/aem-event-processor/eventValidator.js` module bepaalt als de ontvangen gebeurtenis van _Gewijzigd het Fragment van de Inhoud_ type is.
 
   ```javascript
   async function needsAEMCallback(aemEvent) {
@@ -98,7 +98,7 @@ Om de hierboven vermelde taken uit te voeren, ontwikkelen de volgende modules Ja
   module.exports = needsAEMCallback;
   ```
 
-- De `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` de modulevraag AEM de auteursdienst om de wijzigingsdetails te vinden.
+- De module `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` roept AEM auteurservice aan om de wijzigingsdetails te vinden.
 
   ```javascript
   ...
@@ -166,9 +166,9 @@ Om de hierboven vermelde taken uit te voeren, ontwikkelen de volgende modules Ja
   ...
   ```
 
-  Zie [Zelfstudie AEM serviceresulentie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) voor meer informatie. Ook de [Configuratiebestanden van App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) voor het beheren van geheimen en actieparameters.
+  Verwijs naar [ AEM de zelfstudie van de Referenties van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) om meer over het te leren. Ook, de [ Dossiers van de Configuratie van App Builder ](https://developer.adobe.com/app-builder/docs/guides/configuration/) voor het beheren van geheimen en actieparameters.
 
-- De `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` slaat de oorspronkelijke gebeurtenisgegevens, het activiteitenbericht en eventuele wijzigingsdetails (indien van toepassing) op in Adobe I/O Runtime-opslag.
+- In de module `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` worden de oorspronkelijke gebeurtenisgegevens, het activiteitenbericht en eventuele wijzigingsgegevens opgeslagen in Adobe I/O Runtime.
 
   ```javascript
   ...
@@ -193,7 +193,7 @@ Om de hierboven vermelde taken uit te voeren, ontwikkelen de volgende modules Ja
 
 ### Handelingscode bijwerken
 
-Werk ten slotte de actiecode bij op `src/dx-excshell-1/actions/aem-event-processor/index.js` de ontwikkelde modules te gebruiken.
+Werk ten slotte de actiecode bij in `src/dx-excshell-1/actions/aem-event-processor/index.js` om de ontwikkelde modules te gebruiken.
 
 ```javascript
 ...
@@ -251,10 +251,10 @@ if (params.challenge) {
 
 ## Aanvullende bronnen
 
-- De `src/dx-excshell-1/actions/model` map bevat `aemEvent.js` en `errors.js` bestanden, die door de handeling worden gebruikt om respectievelijk de ontvangen gebeurtenis te parseren en fouten te verwerken.
-- De `src/dx-excshell-1/actions/load-processed-aem-events` Deze handeling wordt door de SPA gebruikt om de verwerkte AEM Events vanuit Adobe I/O Runtime-opslag te laden.
-- De `src/dx-excshell-1/web-src` Deze map bevat de SPA code waarmee de verwerkte AEM Events worden weergegeven.
-- De `src/dx-excshell-1/ext.config.yaml` bestand bevat actieconfiguratie en parameters.
+- De map `src/dx-excshell-1/actions/model` bevat `aemEvent.js` - en `errors.js` -bestanden, die door de handeling worden gebruikt om respectievelijk de ontvangen gebeurtenis te parseren en fouten af te handelen.
+- De map `src/dx-excshell-1/actions/load-processed-aem-events` bevat actiecode. Deze handeling wordt door de SPA gebruikt om de verwerkte AEM Events vanuit de Adobe I/O Runtime-opslag te laden.
+- De map `src/dx-excshell-1/web-src` bevat de SPA code waarmee de verwerkte AEM Events wordt weergegeven.
+- Het bestand `src/dx-excshell-1/ext.config.yaml` bevat actieconfiguratie en parameters.
 
 ## Concept en toetsaanslagen
 

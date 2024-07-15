@@ -28,12 +28,12 @@ De mogelijkheden van AEM Sites voor het wijzigen van pagina&#39;s geven een snel
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
-**Wijzigingen in HTML**
+**de veranderingen van de HTML**
 
 * **Groen**: Nieuwe inhoud
 * **Rood**: Verwijderde inhoud
 
-**Componentwijzigingen**
+**de veranderingen van de Component**
 
 * **Groen**: Nieuwe component
 * **Rood**: Verwijderd component
@@ -47,4 +47,4 @@ De functie Paginaverschil kan ook worden gebruikt om het verschil tussen blauwdr
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie pagina Diff](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [ de Documentatie van Diff van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)

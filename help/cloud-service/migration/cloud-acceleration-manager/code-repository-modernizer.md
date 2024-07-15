@@ -1,6 +1,6 @@
 ---
 title: Modernizer van opslagplaats voor code
-description: Leer hoe de Modernizer van de Bewaarplaats van de Kern bestaande AEM Gemaakt projecten automatisch om as a Cloud Service compatibel AEM bijwerken.
+description: Leer hoe de Core Repository Modernizer bestaande AEM Maven-projecten automatisch bijwerkt om compatibel te zijn met AEM as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Modernizer van opslagplaats voor code
 
-Leer hoe de Modernizer van de Bewaarplaats van de Kern bestaande AEM Gemaakt projecten automatisch om as a Cloud Service compatibel AEM bijwerken.
+Leer hoe de Core Repository Modernizer bestaande AEM Maven-projecten automatisch bijwerkt om compatibel te zijn met AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336694?quality=12&learn=on)

@@ -24,7 +24,7 @@ In de video worden de verschillende stappen beschreven die nodig zijn om een ada
 
 >[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
 
-Elementen die betrekking hebben op deze video kunnen worden gedownload van de volgende koppelingen
+Assets voor deze video kan worden gedownload van de volgende koppelingen
 
 * [Adaptief formuliersjabloon](assets/tenancy-agreement-template.zip)
 * [Vorm van de huurkoopovereenkomst](assets/rental-agreement-form.zip)

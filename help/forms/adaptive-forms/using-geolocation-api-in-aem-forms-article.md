@@ -22,7 +22,7 @@ In dit artikel bekijken we het gebruik van de Google Geolocation API om velden v
 
 De volgende stappen zijn uitgevoerd voor het gebruik van de Geolocation API in Adaptive Forms.
 
-1. [API-sleutel ophalen](https://developers.google.com/maps/documentation/javascript/get-api-key) vanuit Google om het Google Maps-platform te gebruiken. U kunt een proefsleutel ophalen die 1 jaar geldig is.
+1. [ krijg API Sleutel ](https://developers.google.com/maps/documentation/javascript/get-api-key) van Google om het platform van Kaarten van Google te gebruiken. U kunt een proefsleutel ophalen die 1 jaar geldig is.
 
 1. Het adaptief formulierfragment is gemaakt met velden voor het huidige adres
 
@@ -75,7 +75,7 @@ var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.c
 }
 ```
 
-![Velden vullen met geolocatieapi](assets/capture-4.gif)
+![ Gebieden bevolken met geoloaction api ](assets/capture-4.gif)
 
 In regel 1 gebruiken we de HTML Geolocation-API om de huidige locatie op te halen. Zodra de huidige plaats wordt verkregen gaan wij de huidige plaats over om functie te tonenPosition.
 
@@ -94,13 +94,13 @@ De JSON die door de API wordt geretourneerd, wordt vervolgens geparseerd om de v
 Voer de volgende stappen uit om deze functie op uw server te plaatsen
 
 * AEM Forms-server installeren en starten.
-> Deze mogelijkheid is getest op AEM Forms 6.3 en hoger
-* [Google API-sleutel ophalen](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [Importeer de aan dit artikel gerelateerde elementen in AEM.](assets/geolocationapi.zip)
-* [Open het fragment Adaptief formulier in de bewerkingsmodus.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+> Deze functie is getest op AEM Forms 6.3 en hoger
+* [ krijgt Google API Sleutel ](https://developers.google.com/maps/documentation/javascript/get-api-key).
+* [ voer de activa met betrekking tot dit artikel in AEM in.](assets/geolocationapi.zip)
+* [ open het Adaptieve fragment van de Vorm op geef wijze uit.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Open de regeleditor voor de component Afbeeldingskeuze.
-* Vervang de &lt;your_api_key> met de Google API-sleutel.
+* Vervang &lt;your_api_key> door de Google API Key.
 * Sla uw wijzigingen op.
-* [Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+* [ voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * Klik op het pictogram voor &quot;geolocatie&quot;.
 * Uw formulier moet worden ingevuld met uw huidige locatie.

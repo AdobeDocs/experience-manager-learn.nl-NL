@@ -1,6 +1,6 @@
 ---
 title: Ontdek GraphQL API's - Aan de slag met AEM headless - GraphQL
-description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Ontdek AEM GraphQL API's met de ingebouwde GrapiQL IDE. Leer hoe AEM automatisch een GraphQL-schema genereert op basis van een model voor inhoudsfragmenten. Experimenteer met het samenstellen van basisquery's met de GraphQL-syntaxis.
+description: Ga aan de slag met Adobe Experience Manager (AEM) en GraphQL. Ontdek AEM GraphQL API's met behulp van de ingebouwde GrapiQL IDE. Leer hoe AEM automatisch een GraphQL-schema genereert op basis van een model voor inhoudsfragmenten. Experimenteer met het samenstellen van basisquery's met de GraphQL-syntaxis.
 version: Cloud Service
 mini-toc-levels: 1
 jira: KT-6714
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 De GraphQL API van AEM biedt een krachtige querytaal om gegevens van Content Fragments toegankelijk te maken voor downstreamtoepassingen. De modellen van het Fragment van de inhoud bepalen het gegevensschema dat door de Fragmenten van de Inhoud wordt gebruikt. Wanneer een Content Fragment Model wordt gemaakt of bijgewerkt, wordt het schema vertaald en toegevoegd aan de &quot;grafiek&quot; die de GraphQL API vormt.
 
-In dit hoofdstuk, onderzoeken sommige gemeenschappelijke vragen van GraphQL om inhoud te verzamelen gebruikend winde riep [GraphiQL](https://github.com/graphql/graphiql). Met GraphiQL IDE kunt u snel de geretourneerde query&#39;s en gegevens testen en verfijnen. Het biedt ook eenvoudige toegang tot de documentatie, waardoor u gemakkelijk kunt leren en begrijpen welke methoden beschikbaar zijn.
+In dit hoofdstuk, onderzoeken sommige gemeenschappelijke vragen van GraphQL om inhoud te verzamelen gebruikend winde genoemd [ GraphiQL ](https://github.com/graphql/graphiql). Met GraphiQL IDE kunt u snel de geretourneerde query&#39;s en gegevens testen en verfijnen. Het biedt ook eenvoudige toegang tot de documentatie, waardoor u gemakkelijk kunt leren en begrijpen welke methoden beschikbaar zijn.
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in het dialoogvenster [Inhoudsfragmenten ontwerpen](./author-content-fragments.md) zijn voltooid.
+Dit is een meerdelig leerprogramma en het wordt verondersteld dat de stappen die in [ worden geschetst de Begeleidende Fragmenten van de Inhoud ](./author-content-fragments.md) zijn voltooid.
 
 ## Doelstellingen {#objectives}
 
@@ -40,20 +40,20 @@ Dit is een meerdelige zelfstudie en er wordt aangenomen dat de stappen die in he
 
 Een eindpunt van GraphQL moet worden gevormd om GraphQL API vragen voor de Fragments van de Inhoud toe te laten.
 
-1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **GraphQL**.
+1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **GraphQL**.
 
-   ![Navigeren naar GraphQL-eindpunt](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
+   ![ ga aan het eindpunt van GraphQL ](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
-1. Tikken **Maken** Voer in de rechterbovenhoek van het dialoogvenster dat wordt weergegeven de volgende waarden in:
+1. Tik **creeer** in de hoger-juiste hoek, in de resulterende dialoog ga de volgende waarden in:
 
-   * Naam*: **Mijn eindpunt van project**.
-   * GraphQL-schema gebruiken dat is opgegeven door ... *: **Mijn project**
+   * Naam*: **Mijn Eindpunt van het Project**.
+   * Het schema van GraphQL van het gebruik door... * wordt verstrekt: **Mijn Project**
 
-   ![GraphQL-eindpunt maken](assets/explore-graphql-api/create-graphql-endpoint.png)
+   ![ creeer het eindpunt van GraphQL ](assets/explore-graphql-api/create-graphql-endpoint.png)
 
-   Tikken **Maken** om het eindpunt te bewaren.
+   Tik **creeer** om het eindpunt te bewaren.
 
-   De GraphQL eindpunten die op een projectconfiguratie worden gecreeerd laten slechts vragen tegen modellen toe die tot dat project behoren. In dit geval zijn de enige vragen tegen de **Persoon** en **Team** modellen kunnen worden gebruikt.
+   De GraphQL eindpunten die op een projectconfiguratie worden gecreeerd laten slechts vragen tegen modellen toe die tot dat project behoren. In dit geval, kunnen de enige vragen tegen de **Persoon** en **modellen van het Team** worden gebruikt.
 
    >[!NOTE]
    >
@@ -61,27 +61,27 @@ Een eindpunt van GraphQL moet worden gevormd om GraphQL API vragen voor de Fragm
 
 1. Er moet nu één GraphQL-eindpunt worden weergegeven dat op uw omgeving is ingeschakeld.
 
-   ![Grafische eindpunten ingeschakeld](assets/explore-graphql-api/enabled-graphql-endpoints.png)
+   ![ Toegelaten grafische eindpunten ](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
 ## GraphiQL IDE gebruiken
 
-De [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) kunnen ontwikkelaars query&#39;s maken en testen op inhoud in de huidige AEM. Met het gereedschap GraphiQL kunnen gebruikers ook **aanhouden of opslaan** vragen die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
+Het [ GraphiQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) hulpmiddel laat ontwikkelaars toe om vragen tegen inhoud op het huidige AEM milieu tot stand te brengen en te testen. Het hulpmiddel GraphiQL laat ook gebruikers toe om **voort te zetten of** vragen te bewaren die door cliënttoepassingen in een productie het plaatsen moeten worden gebruikt.
 
-Verken vervolgens de kracht van AEM GraphQL API met behulp van de ingebouwde GraphiQL IDE.
+Verken vervolgens de kracht van het AEM van GraphQL API met behulp van de ingebouwde GraphiQL IDE.
 
-1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**.
+1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**.
 
-   ![Navigeer aan GrahiQL winde](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+   ![ navigeer aan GrahiQL winde ](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
    >[!NOTE]
    >
-   > In, kunnen de oudere versies van AEM GrahiQL winde niet worden ingebouwd. Hierna kunt u het programma handmatig installeren [instructies](#install-graphiql).
+   > In, kunnen de oudere versies van AEM GrahiQL winde niet worden ingebouwd. Het kan manueel na deze [ instructies ](#install-graphiql) worden geïnstalleerd.
 
-1. Zorg ervoor dat in de rechterbovenhoek het eindpunt is ingesteld op **Mijn eindpunt van project**.
+1. In de hoger-juiste hoek, zorg ervoor dat het Eindpunt aan **Mijn Eindpunt van het Project** wordt geplaatst.
 
-   ![GraphQL-eindpunt instellen](assets/explore-graphql-api/set-my-project-endpoint.png)
+   ![ plaats GraphQL Eindpunt ](assets/explore-graphql-api/set-my-project-endpoint.png)
 
-Dit zal alle vragen aan modellen behandelen die in **Mijn project** project.
+Dit zal werkingsgebied alle vragen aan modellen die in het **Mijn project van het Project** worden gecreeerd.
 
 ### Een query uitvoeren op een lijst met inhoudsfragmenten {#query-list-cf}
 
@@ -100,25 +100,25 @@ Een algemene vereiste is om te zoeken naar meerdere inhoudsfragmenten.
    } 
    ```
 
-1. Druk op **Afspelen** in het bovenste menu om de query uit te voeren. De resultaten van de inhoudsfragmenten uit het vorige hoofdstuk worden weergegeven:
+1. Druk de **knoop van het Spel** in het hoogste menu om de vraag uit te voeren. De resultaten van de inhoudsfragmenten uit het vorige hoofdstuk worden weergegeven:
 
-   ![Resultaten personenlijst](assets/explore-graphql-api/all-teams-list.png)
+   ![ Resultaten van de Lijst van de Persoon ](assets/explore-graphql-api/all-teams-list.png)
 
-1. De cursor onder de cursor plaatsen `title` tekst en typ **CTRL+Space** om coderingstips te activeren. Toevoegen `shortname` en `description` naar de query.
+1. Plaats de curseur onder de `title` tekst en ga **CTRL+Space** in om coderingstips teweeg te brengen. Voeg `shortname` en `description` toe aan de query.
 
-   ![Query bijwerken met coderingstips](assets/explore-graphql-api/update-query-codehinting.png)
+   ![ Vraag van de Update met code het hiting ](assets/explore-graphql-api/update-query-codehinting.png)
 
-1. Voer de vraag opnieuw uit door te duwen **Afspelen** en u zou moeten zien de resultaten de extra eigenschappen omvatten van `shortname` en `description`.
+1. Voer opnieuw de vraag uit door de **Spel** knoop te drukken en u zou moeten zien dat de resultaten de extra eigenschappen van `shortname` en `description` omvatten.
 
-   ![korte naam en beschrijvingsresultaten](assets/explore-graphql-api/updated-query-shortname-description.png)
+   ![ kortere naam en beschrijvingsresultaten ](assets/explore-graphql-api/updated-query-shortname-description.png)
 
-   De `shortname` is een eenvoudige eigenschap en `description` is een tekstveld met meerdere regels en met de GraphQL API kunnen we verschillende indelingen kiezen voor de resultaten, zoals `html`, `markdown`, `json`, of `plaintext`.
+   `shortname` is een eenvoudige eigenschap en `description` is een tekstveld met meerdere regels en met de GraphQL API kunnen we verschillende indelingen kiezen voor de resultaten zoals `html` , `markdown` , `json` of `plaintext` .
 
 ### Query voor geneste fragmenten
 
-Experimenteer vervolgens met vragen om geneste fragmenten op te halen. Vergeet niet dat de **Team** model verwijst naar de **Persoon** model.
+Daarna, experiment met het vragen wint genestelde fragmenten terug, herinner eraan dat het **Team** modelverwijzingen het **Person** model.
 
-1. Werk de vraag bij om te omvatten `teamMembers` eigenschap. Er zij aan herinnerd dat dit een **Fragmentverwijzing** aan het Person Model. Eigenschappen van het Person-model kunnen worden geretourneerd:
+1. Werk de query bij om de eigenschap `teamMembers` op te nemen. Rappel dat dit a **gebied van de Verwijzing van het 0} Fragment {aan het Model van de Persoon is.** Eigenschappen van het Person-model kunnen worden geretourneerd:
 
    ```graphql
    query allTeams {
@@ -175,7 +175,7 @@ Experimenteer vervolgens met vragen om geneste fragmenten op te halen. Vergeet n
    }
    ```
 
-   De mogelijkheid om te zoeken op geneste fragmenten is een krachtige functie van de AEM GraphQL API. In dit eenvoudige voorbeeld is het nesten slechts twee niveaus diep. Maar het is mogelijk om fragmenten nog verder te nesten. Als er bijvoorbeeld een **Adres** model gekoppeld aan **Persoon** het zou mogelijk zijn om gegevens van alle drie modellen in één enkele vraag terug te keren.
+   De mogelijkheid om te zoeken op geneste fragmenten is een krachtige functie van de AEM GraphQL API. In dit eenvoudige voorbeeld is het nesten slechts twee niveaus diep. Maar het is mogelijk om fragmenten nog verder te nesten. Bijvoorbeeld, als er een **1} model van het Adres {verbonden aan a** Persoon **was zou het mogelijk zijn om gegevens van alle drie modellen in één enkele vraag terug te keren.**
 
 ### Een lijst met inhoudsfragmenten filteren {#filter-list-cf}
 
@@ -204,19 +204,19 @@ Daarna, kijken hoe het mogelijk is om de resultaten aan een ondergroep van Inhou
    }  
    ```
 
-   De bovenstaande query voert een zoekopdracht uit tegen alle Person-fragmenten in het systeem. Het toegevoegde filter aan het begin van de vraag voert een vergelijking op uit `name` veld en variabele tekenreeks `$name`.
+   De bovenstaande query voert een zoekopdracht uit tegen alle Person-fragmenten in het systeem. Het toegevoegde filter aan het begin van de query voert een vergelijking uit op het veld `name` en de variabele tekenreeks `$name` .
 
-1. In de **Query-variabelen** voert u het volgende in:
+1. In het **paneel van de Variabelen van de Vraag** ga het volgende in:
 
    ```json
    {"name": "John Doe"}
    ```
 
-1. Voer de vraag uit, wordt het verwacht dat slechts **Personen** Content Fragment wordt geretourneerd met de waarde `John Doe`.
+1. Voer de vraag uit, wordt het verwacht dat slechts **het Fragment van de Inhoud van de Personen** met een waarde van `John Doe` is teruggekeerd.
 
-   ![Query-variabelen gebruiken om te filteren](assets/explore-graphql-api/using-query-variables-filter.png)
+   ![ de Variabelen van de Vraag van het Gebruik aan filter ](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Er zijn veel andere opties voor het filteren en maken van complexe query&#39;s. Zie [GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+   Er zijn vele andere opties voor het filtreren en het creëren van complexe vragen, zie [ Lerend om GraphQL met AEM te gebruiken - de Inhoud en Vragen van de Steekproef ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 1. Verbeter bovenstaande query om profielafbeelding op te halen
 
@@ -251,7 +251,7 @@ Daarna, kijken hoe het mogelijk is om de resultaten aan een ondergroep van Inhou
    } 
    ```
 
-   De `profilePicture` is een inhoudsverwijzing en wordt verwacht dat het een afbeelding is, en daarom is ingebouwd `ImageRef` wordt gebruikt. Op deze manier kunnen we aanvullende gegevens opvragen over de afbeelding waarnaar wordt verwezen, zoals de `width` en `height`.
+   `profilePicture` is een inhoudsverwijzing en wordt verwacht dat het een afbeelding is; daarom wordt een ingebouwd `ImageRef` -object gebruikt. Op deze manier kunnen we aanvullende gegevens opvragen over de afbeelding waarnaar wordt verwezen, zoals de `width` en `height` .
 
 ### Een query uitvoeren op één inhoudsfragment {#query-single-cf}
 
@@ -270,7 +270,7 @@ Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragmen
    }
    ```
 
-1. Voer het volgende in voor de **Query-variabelen**:
+1. Ga het volgende voor de **Variabelen van de Vraag** in:
 
    ```json
    {"path": "/content/dam/my-project/en/alison-smith"}
@@ -280,7 +280,7 @@ Het is ook mogelijk rechtstreeks een query uit te voeren op één inhoudsfragmen
 
 ## Zoekopdrachten behouden {#persist-queries}
 
-Zodra een ontwikkelaar met de vraag en resultaatgegevens tevreden is die van de vraag zijn teruggekeerd, moet de volgende stap de vraag opslaan of voortzetten aan AEM. De [Blijvende query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) zijn het voorkeursmechanisme voor het toegankelijk maken van de GraphQL API voor clienttoepassingen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van de GET en in het voorgeheugen ondergebracht bij de lagen van de Verzender en CDN. De prestaties van de gepresteerde vragen zijn veel beter. Naast prestatievoordelen zorgen permanente query&#39;s ervoor dat extra gegevens niet per ongeluk aan clienttoepassingen worden blootgesteld. Meer informatie over [Hier kunt u permanente query&#39;s vinden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+Zodra een ontwikkelaar met de vraag en resultaatgegevens tevreden is die van de vraag zijn teruggekeerd, moet de volgende stap de vraag opslaan of voortzetten aan AEM. De [ Verlengde vragen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) zijn het aangewezen mechanisme om GraphQL API aan cliënttoepassingen bloot te stellen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van de GET en in het voorgeheugen ondergebracht bij de lagen van Dispatcher en CDN. De prestaties van de gepresteerde vragen zijn veel beter. Naast prestatievoordelen zorgen permanente query&#39;s ervoor dat extra gegevens niet per ongeluk aan clienttoepassingen worden blootgesteld. Meer details over [ Verblijfsde vragen kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) worden gevonden.
 
 Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende hoofdstuk.
 
@@ -307,14 +307,14 @@ Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende 
 
    Controleer of de query werkt.
 
-1. Volgende tikken **Opslaan als** en betreden `all-teams` als de **Naam query**.
+1. De volgende tikken **sparen als** en gaan `all-teams` als **Naam van de Vraag** in.
 
-   De query moet worden weergegeven onder **Blijvende query&#39;s** in het linkerspoor.
+   De vraag zou onder **Verlengde Vragen** in het linkerspoor moeten worden getoond.
 
-   ![Alle teams blijven query uitvoeren](assets/explore-graphql-api/all-teams-persisted-query.png)
-1. Tik vervolgens op de ovalen **...** naast de permanente query en tik op **URL kopiëren** om het pad naar het klembord te kopiëren.
+   ![ Alle Teams bleef Vraag ](assets/explore-graphql-api/all-teams-persisted-query.png)
+1. Tik daarna de ellipsen **...** naast de blijvende vraag en tik **Exemplaar URL** om de weg aan uw klembord te kopiëren.
 
-   ![URL van permanente query kopiëren](assets/explore-graphql-api/copy-persistent-query-url.png)
+   ![ de Persistente Vraag URL van het Exemplaar ](assets/explore-graphql-api/copy-persistent-query-url.png)
 
 1. Open een nieuw tabblad en plak het gekopieerde pad in uw browser:
 
@@ -332,7 +332,7 @@ Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende 
    | `/my-project` | Projectconfiguratie voor `/conf/my-project` |
    | `/all-teams` | Naam van de voortgezette query |
 
-1. Terugkeer naar GrahiQL winde en gebruik de plus knoop **+** om de NIEUWE query voort te zetten
+1. Terugkeer naar GrahiQL winde en gebruik de plus knoop **+** om de NIEUWE vraag voort te zetten
 
    ```graphql
    query personByName($name: String!) {
@@ -369,34 +369,34 @@ Daarna, persisteert twee eenvoudige vragen, worden zij gebruikt in het volgende 
 1. Sla de query op als: `person-by-name`.
 1. Er moeten twee doorlopende query&#39;s worden opgeslagen:
 
-   ![Laatste voortgeduurde vragen](assets/explore-graphql-api/final-persisted-queries.png)
+   ![ Definitief voortgeduurde vragen ](assets/explore-graphql-api/final-persisted-queries.png)
 
 
-## GraphQL-eindpunt en doorlopende query&#39;s publiceren
+## Publish GraphQL Endpoint &amp; Persisted Queries
 
-Na revisie en verificatie publiceert u de `GraphQL Endpoint` &amp; `Persisted Queries`
+Publiceer na revisie en verificatie de `GraphQL Endpoint` &amp; `Persisted Queries`
 
-1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **GraphQL**.
+1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **GraphQL**.
 
-1. Tik op het selectievakje naast **Mijn eindpunt van project** en tikken **Publiceren**
+1. Tik checkbox naast **Mijn Eindpunt van het Project** en tik **Publish**
 
-   ![GraphQL-eindpunt publiceren](assets/explore-graphql-api/publish-graphql-endpoint.png)
+   ![ Publish GraphQL Endpoint ](assets/explore-graphql-api/publish-graphql-endpoint.png)
 
-1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**
+1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**
 
-1. Tik op de knop **alle teams** query uit deelvenster Blijvende query&#39;s en tik **Publiceren**
+1. Tik **alle-teams** vraag van het Persisted paneel van Vragen en ontvang **Publish**
 
-   ![Blijvende query&#39;s publiceren](assets/explore-graphql-api/publish-persisted-query.png)
+   ![ Publish Blijven Vragen ](assets/explore-graphql-api/publish-persisted-query.png)
 
-1. Herhaal bovenstaande stap voor `person-by-name` query
+1. Bovenste stap herhalen voor `person-by-name` -query
 
 ## Oplossingsbestanden {#solution-files}
 
-Download de inhoud, de modellen, en de voortgezette vragen die in de laatste drie hoofdstukken worden gecreeerd: [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip)
+Download de inhoud, de modellen, en de voortgezette vragen die in de laatste drie hoofdstukken worden gecreeerd: [ basis-tutorial-solution.content.zip ](assets/explore-graphql-api/basic-tutorial-solution.content.zip)
 
 ## Aanvullende bronnen
 
-Meer informatie over GraphQL-query&#39;s vindt u op [GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+Leer meer over de vragen van GraphQL bij [ het Leren om GraphQL met AEM te gebruiken - de Inhoud van de Steekproef en Vragen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -404,9 +404,9 @@ U hebt verschillende GraphQL-query&#39;s gemaakt en uitgevoerd.
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk: [React-app ontwikkelen](./graphql-and-react-app.md), onderzoekt u hoe een externe toepassing AEM eindpunten van GraphQL kan vragen en deze twee persisted query&#39;s kan gebruiken. Er is ook een aantal standaardfoutafhandeling geïntroduceerd tijdens het uitvoeren van GraphQL-query&#39;s.
+In het volgende hoofdstuk, [ bouwt Reageren app ](./graphql-and-react-app.md), verkent u hoe een externe toepassing AEM GraphQL endpoints kan vragen en deze twee voortgeduurde vragen gebruiken. Er is ook een aantal standaardfoutafhandeling geïntroduceerd tijdens het uitvoeren van GraphQL-query&#39;s.
 
 ## GraphiQL installeren (optioneel) {#install-graphiql}
 
-In sommige versies van AEM (6.X.X) moet het GraphiQL IDE-gereedschap handmatig worden geïnstalleerd, kunt u het [instructies van hier](../how-to/install-graphiql-aem-6-5.md).
+In, moeten sommige versies van AEM (6.X.X) het hulpmiddel van winde GraphiQL manueel worden geïnstalleerd, gebruik de [ instructies van hier ](../how-to/install-graphiql-aem-6-5.md).
 

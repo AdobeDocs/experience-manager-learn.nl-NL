@@ -24,7 +24,7 @@ Met de regeleditor kunnen gebruikers logica toevoegen aan AEM Adaptieve Forms. A
 
 >[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
-**Enkele verbeteringen aan de Redacteur van de Regel omvatten:**
+**enkele verbeteringen aan de Redacteur van de Regel omvatten:**
 
 * Formuliercomponenten met meerdere waarden geven de componentopties automatisch weer
 * De mogelijkheid om een WSDL-webservice op te geven in de visuele editor

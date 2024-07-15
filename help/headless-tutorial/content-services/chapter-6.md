@@ -1,6 +1,6 @@
 ---
-title: Hoofdstuk 6 - De inhoud voor AEM publiceren beschikbaar maken als JSON - Content Services
-description: Hoofdstuk 6 van de AEM zelfstudie zonder koppen omvat de verzekering dat alle benodigde pakketten, configuratie en inhoud op AEM Publiceren staan zodat gebruikers van de mobiele app mogelijk zijn.
+title: Hoofdstuk 6 - De inhoud op AEM Publish beschikbaar maken als JSON - Content Services
+description: Hoofdstuk 6 van de AEM zelfstudie zonder koppen omvat de verzekering dat alle benodigde pakketten, configuratie en inhoud zich op AEM Publish bevinden om het gebruik van de mobiele app mogelijk te maken.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
@@ -15,60 +15,60 @@ ht-degree: 0%
 
 ---
 
-# Hoofdstuk 6 - De inhoud beschikbaar maken bij AEM publiceren voor levering
+# Hoofdstuk 6 - De inhoud op AEM Publish beschikbaar maken voor levering
 
-Hoofdstuk 6 van de AEM zelfstudie zonder koppen omvat de verzekering dat alle benodigde pakketten, configuratie en inhoud op AEM Publiceren staan om consumptie door de mobiele app mogelijk te maken.
+Hoofdstuk 6 van de AEM zelfstudie zonder koppen omvat de verzekering dat alle benodigde pakketten, configuratie en inhoud zich op AEM Publish bevinden om het gebruik door de mobiele app mogelijk te maken.
 
 ## De inhoud voor AEM Content Services publiceren
 
-De configuratie en de inhoud die zijn gemaakt om de gebeurtenissen te sturen via AEM Content Services moeten worden gepubliceerd om te AEM publiceren zodat de Mobile App er toegang toe heeft.
+De configuratie en de inhoud die zijn gemaakt om de gebeurtenissen te sturen via AEM Content Services moeten worden gepubliceerd naar AEM Publish zodat de Mobile App er toegang toe heeft.
 
-Omdat AEM Content Services is samengesteld uit Configuration (Content Fragment Models, Editable Templates), Assets (Content Fragments, Images) en Pages, genieten al deze onderdelen automatisch van AEM mogelijkheden voor inhoudsbeheer, waaronder:
+Omdat AEM Content Services is samengesteld op basis van Configuratie (Content Fragment Models, Editable Templates), Assets (Content Fragments, Images) en Pagina&#39;s, genieten al deze onderdelen automatisch van AEM mogelijkheden voor inhoudsbeheer, waaronder:
 
 * Workflow voor revisie en verwerking
-* en activering/deactivering voor het duwen en trekken van inhoud van de eindpunten van de AEM Content Services van de AEM publiceren
+* en activering/deactivatie voor het duwen en trekken van inhoud van de AEM Publish AEM Content Services eindpunten
 
-1. Zorg ervoor dat **[!DNL WKND Mobile]Toepassingspakketten**, vermeld in [Hoofdstuk 1](./chapter-1.md#wknd-mobile-application-packages), worden geïnstalleerd op **AEM publiceren** gebruiken [!UICONTROL Package Manager].
-   * [http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
+1. Verzeker de **[!DNL WKND Mobile]Pakketten van de Toepassing**, die in [ Hoofdstuk 1 ](./chapter-1.md#wknd-mobile-application-packages) worden vermeld, geïnstalleerd op **AEM Publish** gebruikend [!UICONTROL Package Manager].
+   * [ http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
 
-1. Publiceer de **[!DNL WKND Mobile Events API]Bewerkbare sjabloon**
-   1. Navigeren naar **[!UICONTROL AEM]> [!UICONTROL Tools] > [!UICONTROL General] > [!UICONTROL Templates] >[!DNL WKND Mobile]**
-   1. Selecteer de **[!DNL Event API]** template
-   1. Tikken **[!UICONTROL Publish]** in de bovenste actiebalk
-   1. Publiceer de **template** en **alle verwijzingen** (inhoudsbeleid, inhoudspolitieke toewijzingen en sjablonen)
+1. Publish the **[!DNL WKND Mobile Events API]Editable Template**
+   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Tools] > [!UICONTROL General] > [!UICONTROL Templates] >[!DNL WKND Mobile]**
+   1. Selecteer de sjabloon **[!DNL Event API]**
+   1. Tik **[!UICONTROL Publish]** op de bovenste actiebalk
+   1. Publish het **malplaatje** en **alle verwijzingen** (inhoudsbeleid, inhoudspolitieke afbeeldingen, en malplaatjes)
 
-1. Publiceer de **[!DNL WKND Mobile Events]inhoudsfragmenten**.
+1. Publish de **[!DNL WKND Mobile Events]inhoudsfragmenten** .
 
    Dit is vereist omdat de API voor gebeurtenissen de component Lijst met inhoudsfragmenten gebruikt, die niet specifiek verwijst naar inhoudsfragmenten.
 
-   1. Navigeren naar **[!UICONTROL AEM]> [!UICONTROL Assets] > [!UICONTROL Files] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**
-   1. Alle opties selecteren **[!DNL Event]** inhoudsfragmenten
-   1. Tik op de knop **[!UICONTROL Manage Publication]** in de bovenste actiebalk
-   1. De standaardinstelling behouden **Publiceren** handeling ongewijzigd, tikken **[!UICONTROL Next]** in de bovenste actiebalk
-   1. Selecteren **alles** inhoudsfragmenten
-   1. Tikken **[!UICONTROL Publish]** in de bovenste actiebalk
-      * *De [!DNL Events] Content Fragment Model and references Event Images will automatically be published with the content fragments.*
+   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Assets] > [!UICONTROL Files] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**
+   1. Alle **[!DNL Event]** inhoudsfragmenten selecteren
+   1. Tik op de **[!UICONTROL Manage Publication]** in de bovenste actiebalk
+   1. Verlaat standaard **Publish** actie zoals-is, tikken **[!UICONTROL Next]** in de hoogste actiebar
+   1. Selecteer **alle** inhoudsfragmenten
+   1. Tik **[!UICONTROL Publish]** op de bovenste actiebalk
+      * *het [!DNL Events] Model van het Fragment van de Inhoud en de beelden van de verwijzingenGebeurtenis zullen automatisch samen met de inhoudsfragmenten worden gepubliceerd.*
 
-1. Publiceer de **[!DNL Events API]page**.
-   1. Navigeren naar **[!UICONTROL AEM]> [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**
-   1. Selecteer de **[!DNL Events]** page
-   1. Tik op de knop **[!UICONTROL Manage Publication]** in de bovenste actiebalk
-   1. De standaardinstelling behouden **Publiceren** handeling ongewijzigd, tikken **[!UICONTROL Next]** in de bovenste actiebalk
-   1. Selecteer de **[!DNL Events]** page
-   1. Tikken **[!DNL Publish]** in de bovenste actiebalk
+1. Publish de **[!DNL Events API]pagina**.
+   1. Ga naar **[!UICONTROL AEM]> [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**
+   1. Selecteer de pagina **[!DNL Events]**
+   1. Tik op de **[!UICONTROL Manage Publication]** in de bovenste actiebalk
+   1. Verlaat standaard **Publish** actie zoals-is, tikken **[!UICONTROL Next]** in de hoogste actiebar
+   1. Selecteer de pagina **[!DNL Events]**
+   1. Tik **[!DNL Publish]** op de bovenste actiebalk
 
 >[!VIDEO](https://video.tv.adobe.com/v/28343?quality=12&learn=on)
 
-## AEM publiceren verifiëren
+## AEM Publish verifiëren
 
-1. In een nieuwe browser van het Web, zorg ervoor u uit AEM wordt geregistreerd publiceren en om de volgende URLs (vervangend `http://localhost:4503` voor elke host (poort AEM Publish wordt uitgevoerd).
+1. In nieuwe browser van het Web, zorg ervoor u uit AEM Publish wordt geregistreerd en verzoek volgende URLs (die `http://localhost:4503` voor om het even welke gastheer vervangt:haven AEM Publish loopt).
 
-   * [http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
+   * [ http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
 
-   Deze verzoeken moeten dezelfde JSON-reactie retourneren als wanneer de overeenkomstige eindpunten van AEM auteur werden herzien. Als dat niet het geval is, zorgt u ervoor dat alle publicaties zijn geslaagd (controleer de Replication-wachtrijen). [!DNL WKND Mobile] `ui.apps` is geïnstalleerd op AEM Publiceren en bekijk de `error.log` voor AEM Publiceren.
+   Deze verzoeken moeten dezelfde JSON-reactie retourneren als wanneer de overeenkomstige eindpunten van AEM auteur werden herzien. Als dat niet het geval is, zorgt u ervoor dat alle publicaties zijn geslaagd (controleer de Replication-wachtrijen), wordt het [!DNL WKND Mobile] `ui.apps` -pakket geïnstalleerd op AEM Publish en controleert u de `error.log` for AEM Publish.
 
 ## Volgende stap
 
-Er zijn geen extra pakketten om te installeren. Zorg ervoor dat de inhoud en configuratie die in deze sectie worden beschreven wordt gepubliceerd om te AEM publiceren, anders zullen de verdere hoofdstukken niet werken.
+Er zijn geen extra pakketten om te installeren. Zorg ervoor dat de inhoud en configuratie die in deze sectie worden geschetst naar AEM Publish wordt gepubliceerd, anders werken volgende hoofdstukken niet.
 
 * [Hoofdstuk 7 - AEM inhoudsservices van een mobiele app gebruiken](./chapter-7.md)

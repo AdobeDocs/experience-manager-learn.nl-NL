@@ -26,8 +26,8 @@ Leer hoe u servicegebruikers in uw AEM code kunt maken en gebruiken om gecontrol
 
 ## Bronnen
 
-+ [Initialisatiedocumentatie (repoint-it) voor opslagplaats](https://sling.apache.org/documentation/bundles/repository-initialization.html)
-+ [Documentatie voor verificatie van verkoopservice](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
++ [ het Sling Repository Initialization (repoinit) documentatie ](https://sling.apache.org/documentation/bundles/repository-initialization.html)
++ [ het Verdelen de documentatie van de Authentificatie van de Dienst ](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
 ## Code
 

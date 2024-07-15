@@ -1,6 +1,6 @@
 ---
-title: Veelgestelde vragen over migratie van as a Cloud Service inhoud AEM
-description: Hiermee krijgt u antwoorden op veelgestelde vragen over de migratie van inhoud naar AEM as a Cloud Service.
+title: Veelgestelde vragen over migratie van AEM as a Cloud Service-inhoud
+description: Antwoorden op veelgestelde vragen over de migratie van inhoud naar AEM as a Cloud Service.
 version: Cloud Service
 doc-type: article
 topic: Migration
@@ -18,22 +18,22 @@ ht-degree: 0%
 
 ---
 
-# Veelgestelde vragen over migratie van as a Cloud Service inhoud AEM
+# Veelgestelde vragen over migratie van AEM as a Cloud Service-inhoud
 
-Hiermee krijgt u antwoorden op veelgestelde vragen over de migratie van inhoud naar AEM as a Cloud Service.
+Antwoorden op veelgestelde vragen over de migratie van inhoud naar AEM as a Cloud Service.
 
 ## Terminologie
 
-+ **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html)
-+ **BPA**: [Analysator van best practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
-+ **CTT**: [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
-+ **CAM**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
-+ **IMS**: [Identity Management-systeem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
-+ **DM**: [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
++ **AEMaaCS**: [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html)
++ **BPA**: [ Analysator van Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
++ **CTT**: [ Het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
++ **CAM**: [ Cloud Acceleration Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
++ **IMS**: [ Systeem van Identity Management ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
++ **DM**: [ Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
 
 Gebruik de onderstaande sjabloon voor het opgeven van meer informatie tijdens het maken van CTT-gerelateerde ondersteuningstickets voor Adoben.
 
-![Ondersteuningstabel voor Adobe voor inhoudsmigratie](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot; }
+](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot;} het Malplaatje van het Ticket van de Steun van de Migratie van de Inhoud ![
 
 ## Algemene vragen over migratie van inhoud
 
@@ -43,17 +43,17 @@ Er zijn drie verschillende methoden beschikbaar
 
 + Het gereedschap Inhoud overbrengen gebruiken (AEM 6.3+ → AEMaaCS)
 + Via pakketbeheer (AEM → AEMaaCS)
-+ Buiten de box Bulk Import Service for Assets (S3/Azure → AEMaaCS)
++ Buiten de box Bulk Import Service voor Assets (S3/Azure → AEMaaCS)
 
 ### Q: Is er een grens op de hoeveelheid inhoud die kan worden overgebracht gebruikend CTT?
 
 Nee. CTT als gereedschap kan uit AEM bron worden gehaald en in AEMaaCS worden opgenomen. Er zijn echter specifieke limieten voor het AEMaaCS-platform die vóór de migratie in overweging moeten worden genomen.
 
-Zie voor meer informatie [vereisten voor cloudmigratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html).
+Voor meer info, verwijs naar [ de eerste vereisten van de wolkenmigratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html).
 
 ### V: Ik heb het laatste BPA-rapport van mijn bronsysteem, wat moet ik ermee doen?
 
-Exporteer het rapport als CSV en upload het vervolgens naar Cloud Acceleration Manager. [gekoppeld aan uw IMS-organisatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html). Doorloop vervolgens het revisieproces als [beschreven in de gereedheidsfase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+Exporteer het rapport als CSV en upload het vervolgens naar Cloud Acceleration Manager, [ gekoppeld aan uw IMS-organisatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html) . Dan ga door het overzichtsproces zoals [ die in de Fase van de Bereidheid ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html) wordt geschetst.
 
 Controleer de evaluatie van de complexiteit van de code en inhoud die door het gereedschap wordt geleverd en noteer de bijbehorende actiepunten die leiden tot de evaluatie van de achtergrondcode voor het vernieuwen van code of de cloudmigratie.
 
@@ -79,9 +79,9 @@ Als kloonomgevingen worden gebruikt voor migratie, heeft dit geen invloed op het
 
 ### Q: Wat betekenen de termen &quot;veeggen&quot; en &quot;overschrijven&quot; in de context van CTT?
 
-In de context van [extractiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase)De opties zijn of om de gegevens in de testcontainer van vorige extractiecycli te overschrijven of het differentieel (toegevoegd/bijgewerkt/verwijderd) in de container toe te voegen. De container van het opvoeren is niets, maar de blob opslagcontainer verbonden aan migratiereeks. Elke migratieset krijgt een eigen staging container.
+In de context van [ extractiefase ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase), zijn de opties of om de gegevens in de het opvoeren container van vorige extractiecycli te beschrijven of het verschil (toegevoegd/bijgewerkt/geschrapt) in het toe te voegen. De container van het opvoeren is niets, maar de blob opslagcontainer verbonden aan migratiereeks. Elke migratieset krijgt een eigen staging container.
 
-In de context van [innamefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html), De opties zijn + waarmee de volledige inhoudsopslagplaats van AEMaaCS wordt vervangen of de differentiële (toegevoegde/bijgewerkte/verwijderde) inhoud van de testmigratiecontainer wordt gesynchroniseerd.
+In de context van [ innamefase ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html), zijn de opties + om de volledige inhoudsbewaarplaats van AEMaaCS te vervangen of de differentiële (toegevoegde/bijgewerkte/geschrapte) inhoud van de opvoerende migratiecontainer te synchroniseren.
 
 ### Q: Er zijn veelvoudige websites, bijbehorende activa, gebruikers, groepen in het bronsysteem. Is het mogelijk om ze in fasen te migreren naar AEMaaCS?
 
@@ -103,21 +103,21 @@ Ja. Eindgebruikersverkeer wordt niet onderbroken door de activiteit van de inhou
 
 Ja. De ontbrekende oorspronkelijke vertoning betekent dat het binaire element niet correct is geüpload. Beschouw het als slechte gegevens, gelieve te herzien, steun gebruikend de Manager van het Pakket (zoals vereist) en hen te verwijderen uit bron AEM alvorens extractie in werking te stellen. De onjuiste gegevens hebben negatieve resultaten bij de verwerking van de elementen.
 
-### Q: Het BPA-rapport bevat items die verband houden met het ontbreken `jcr:content` knooppunt voor mappen. Wat moet ik met hen doen?
+### Q: Het BPA-rapport bevat items die verwant zijn aan het ontbrekende `jcr:content` knooppunt voor mappen. Wat moet ik met hen doen?
 
-Wanneer `jcr:content` ontbreekt op mapniveau, elke actie voor het doorgeven van instellingen zoals verwerkingsprofielen, enz. de ouders zullen op dit niveau breken . Controleer de reden voor het ontbreken `jcr:content`. Hoewel deze mappen kunnen worden gemigreerd, wordt de gebruikerservaring door deze mappen afgebroken en worden later onnodige cycli voor probleemoplossing veroorzaakt.
+Als `jcr:content` ontbreekt op mapniveau, moet u een actie uitvoeren om instellingen zoals verwerkingsprofielen, enz. door te geven. de ouders zullen op dit niveau breken . Controleer de reden waarom `jcr:content` ontbreekt. Hoewel deze mappen kunnen worden gemigreerd, wordt de gebruikerservaring door deze mappen afgebroken en worden later onnodige cycli voor probleemoplossing veroorzaakt.
 
 ### V: Ik heb een migratieset gemaakt. is het mogelijk de omvang ervan te controleren ?
 
-Ja, er is een [Formaat controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) onderdeel van de CTT.
+Ja, is er de eigenschap van de Grootte van de Controle van de a [ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) die deel van CTT uitmaakt.
 
 ### Q: Ik voer de migratie uit (extractie, inname). Kan worden gecontroleerd of al mijn geëxtraheerde inhoud in het doel is opgenomen?
 
-Ja, er is een [validatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html) onderdeel van de CTT.
+Ja, is er a [ bevestiging ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html) eigenschap die deel van CTT uitmaakt.
 
 ### Q: Mijn klant heeft de vereiste om inhoud te verplaatsen tussen AEMaaCS-omgevingen, zoals van AEMaaCS Dev naar AEMaaCS Stage of naar AEMaaCS Prod. Kan ik het hulpmiddel van de inhoudoverdracht voor deze gebruiksgevallen gebruiken?
 
-Helaas, nee. De gebruikscase van CTT is om inhoud van op-gebouw/AMS-ontvangen bron AEM 6.3+ aan AEMaaCS wolkenmilieu&#39;s te migreren. [Lees de CTT-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
+Helaas, nee. De gebruikscase van CTT is om inhoud van op-gebouw/AMS-ontvangen bron AEM 6.3+ aan AEMaaCS wolkenmilieu&#39;s te migreren. [ gelieve te lezen CTT documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
 
 ### V: Welke problemen worden verwacht tijdens de extractie?
 
@@ -125,7 +125,7 @@ De Fase van de extractie is een betrokken proces dat veelvoudige aspecten vereis
 
 De openbare documentatie wordt voortdurend verbeterd op basis van de lessen, maar er zijn enkele probleemcategorieën op hoog niveau en mogelijke onderliggende redenen.
 
-![Problemen met het uitpakken van as a Cloud Service content AEM](../../assets/faq/extraction-issues.jpg) { align=&quot;center&quot; }
+](../../assets/faq/extraction-issues.jpg) { align= &quot;center&quot;} de kwesties van de de inhoudsmigratie van AEM as a Cloud Service![
 
 ### V: Welke problemen worden verwacht tijdens inname?
 
@@ -133,20 +133,20 @@ De inbraakfase komt volledig voor in het wolkenplatform en vereist hulp van de m
 
 Hier zijn mogelijke categorieën van kwesties (gelieve te beschouwen dit niet als een exclusieve lijst)
 
-![Problemen met het opnemen van as a Cloud Service content AEM](../../assets/faq/ingestion-issues.jpg) { align=&quot;center&quot; }
+![ de kwesties van de de inhoudsmigratie van AEM as a Cloud Service ](../../assets/faq/ingestion-issues.jpg) { align= &quot;centrum&quot;}
 
 
 
 ### V: Moet mijn bronserver een uitgaande internetverbinding hebben om CTT te kunnen gebruiken?
 
-Het korte antwoord is: &quot;**Ja**&quot;.
+Het korte antwoord is &quot;**ja**&quot;.
 
 Het proces CTT vereist connectiviteit aan de hieronder middelen:
 
-+ Doel AEM as a Cloud Service omgeving: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
++ De AEM as a Cloud Service-doelomgeving: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
 
-Raadpleeg de documentatie voor meer informatie over [bronconnectiviteit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
+Verwijs naar de documentatie voor meer informatie over [ bronconnectiviteit ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
 
 ## Dynamic Media-gerelateerde vragen over verwerking van bedrijfsmiddelen
 
@@ -166,7 +166,7 @@ Ja, bedenk het volgende wanneer de bron AEM Dynamic Media Integration heeft.
 + Als de benadering uit bronklooninstanties moet migreren, dan is het veilig om integratie DM op kloon onbruikbaar te maken die voor CTT zou worden gebruikt. Deze stap is puur om het even welk schrijven aan DM te vermijden of lading op verkeer te vermijden DM.
 + Houd er rekening mee dat CTT knooppunten, metagegevens van een migratieset van bron-AEM naar AEMaaCS migreert. Het zal geen handelingen op DM direct uitvoeren.
 
-### Q: Wat zijn verschillende migratiebenaderingen wanneer de integratie DM op Bron AEM aanwezig is?
+### Q: Wat zijn verschillende migratiebenaderingen wanneer de integratie van DM op Source AEM?
 
 Lees de bovenstaande vraag en beantwoord deze eerder
 
@@ -180,7 +180,7 @@ Als het aantal elementen/knooppunten in de bronomgeving zich op een lager niveau
 + Een eerste extractie en opname uitvoeren in AEMaaCS met `wipe=true`
    + Deze stap migreert alle knopen en binaire getallen
 + Doorgaan met werken aan on-premise / AMS Prod-auteur
-+ Voer vanaf nu alle andere proefdrukken van migratiecycli uit met `wipe=true`
++ Voer vanaf nu alle andere migratiecycli uit met `wipe=true`
    + Merk op deze verrichting migreert volledige knooppuntenopslag, maar slechts gewijzigde vlekken in tegenstelling tot volledige vlekken. De vorige set lobs is te vinden in de Azure blob store van de AEMaaCS-doelinstantie.
    + Gebruik dit bewijs van migraties voor het meten van de migratieduur, het testen en valideren van alle andere functies
 + Tot slot, vóór de week van go-live, voer vepe=ware migratie uit
@@ -207,8 +207,8 @@ De bovenstaande aanpak kan alleen worden gebruikt voor het meten van de migratie
 
 ## Aanvullende bronnen
 
-+ [Tips en trucs voor migreren naar Experience Manager in de cloud (top 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
++ [ Uiteinden en Tricks voor het Migreren aan Experience Manager in de Wolk (Top 2022) ](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
-+ [CTT-video met experts](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
++ [ CTT de Video van de Reeks van de Deskundige ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
 
-+ [Video&#39;s over andere AEMaaCS-onderwerpen in de Expert-reeks](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-experts-series.html)
++ [ de Video&#39;s van de Reeks van de Deskundige op andere onderwerpen AEMaaCS ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-experts-series.html)

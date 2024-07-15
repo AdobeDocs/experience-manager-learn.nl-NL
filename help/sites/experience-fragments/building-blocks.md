@@ -29,7 +29,7 @@ Bouwstenen zijn een onderdeel van Experience Fragments. Bouwstenen laten inhouds
 
 >[!NOTE]
 >
-> De sjabloon die wordt gebruikt voor Experience Fragments moet **Bouwstenen** als een toegestane component.
+> Het malplaatje dat voor de Fragmenten van de Ervaring wordt gebruikt moet **de Blokken van de Bouw** als toegestane component omvatten.
 
 * Met bouwblokken kunt u eenvoudig componenten hergebruiken in verschillende variaties.
 * Wijzigingen in het hoofdbouwblok worden automatisch doorgevoerd in verwijzingen. Wijzigingen in de lay-out van het bouwblok worden niet doorgevoerd.

@@ -26,11 +26,11 @@ ht-degree: 0%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#how-to-set-up" text="Gebruikers aan boord in Admin Console"
 >additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Adobe Admin Console-identiteitsoverzicht"
 
-Gebruikers die toegang tot AEM Auteur-service nodig hebben, worden beheerd als [Adobe IMS-gebruikers](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [Admin Console Adobe](https://adminconsole.adobe.com). Leer wat Adobe IMS-gebruikers zijn en hoe ze in de Admin Console worden benaderd en beheerd.
+De gebruikers die toegang tot AEM dienst van de Auteur vereisen worden beheerd als [ gebruikers van Adobe IMS ](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) in [ Admin Console van de Adobe ](https://adminconsole.adobe.com). Leer wat Adobe IMS-gebruikers zijn en hoe ze in de Admin Console worden benaderd en beheerd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39149?quality=12&learn=on)
 
 ## Aanvullende bronnen
 
-+ [Gebruikers aan boord nemen in documentatie over Admin Consoles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
-+ [Adobe Admin Console Identity-overzicht](https://helpx.adobe.com/enterprise/using/identity.html)
++ [ Onboarding Gebruikers in de documentatie van de Admin Console ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
++ [ het overzichtsdocumentatie van de Identiteit van Adobe Admin Console ](https://helpx.adobe.com/enterprise/using/identity.html)

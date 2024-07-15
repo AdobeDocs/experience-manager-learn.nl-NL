@@ -25,9 +25,9 @@ HTML5-formulieren kunnen worden ingediend bij servlet die in AEM wordt gehost. D
 
 ## Verzendhandler maken
 
-U kunt een eenvoudige servlet maken voor het verzenden van het HTML5-formulier. De ingediende gegevens kunnen vervolgens worden geëxtraheerd met de volgende code. Dit [servlet](assets/html5-submit-handler.zip) wordt beschikbaar gesteld als onderdeel van deze zelfstudie. Installeer de [servlet](assets/html5-submit-handler.zip) gebruiken [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+U kunt een eenvoudige servlet maken voor het verzenden van het HTML5-formulier. De ingediende gegevens kunnen vervolgens worden geëxtraheerd met de volgende code. Dit [ servlet ](assets/html5-submit-handler.zip) wordt ter beschikking gesteld aan u als deel van dit leerprogramma. Gelieve te installeren [ servlet ](assets/html5-submit-handler.zip) gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 
-De code van lijn 9 kan worden gebruikt om J2EE proces aan te halen. Zorg ervoor dat u bent geconfigureerd [Adobe LiveCycle client SDK Configuration](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) als u de code wilt gebruiken om J2EE-proces aan te roepen.
+De code van lijn 9 kan worden gebruikt om J2EE proces aan te halen. Gelieve te zorgen u {de Configuratie van SDK van de Cliënt van het LiveCycle van de Adobe ](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) hebt gevormd als u van plan bent de code te gebruiken om J2EE proces aan te halen.[
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -59,16 +59,16 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ## De verzendURL van het HTML5-formulier configureren
 
-![submit-url](assets/submit-url.PNG)
+![ voorleggen-url ](assets/submit-url.PNG)
 
-* Tik op de xdp en klik op _Eigenschappen_->_Geavanceerd_
+* Tik op xdp en klik _Eigenschappen_ -> _Geavanceerd_
 * http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html kopiëren en plakken in het tekstveld URL verzenden
-* Klikken _SaveAndClose_ knop.
+* Klik _SaveAndClose_ knoop.
 
 ### Item toevoegen in Paden uitsluiten
 
-* Navigeren naar [configMgr](http://localhost:4502/system/console/configMgr).
-* Zoeken naar _Adobe graniet-CSRF-filter_
+* Navigeer aan [ configMgr ](http://localhost:4502/system/console/configMgr).
+* Onderzoek naar _de Filter van Granite CSRF van de Adobe_
 * De volgende vermelding toevoegen in de sectie Uitgesloten paden
 * _/content/AemFormsSamples/handlehml5formsubmission_
 * Uw wijzigingen opslaan
@@ -76,10 +76,10 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 ### Het formulier testen
 
 * Tik op de xdp-sjabloon.
-* Klikken op _Voorvertoning_->Voorvertonen als HTML
+* Klik op _Voorproef_ ->Voorproef als HTML
 * Voer gegevens in het formulier in en klik op Verzenden
 * De verzonden gegevens worden naar het bestand stdout.log van de server geschreven
 
 ### Extra lezingen
 
-Dit [artikel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) bij het genereren van PDF op basis van het indienen van HTML5-formulieren wordt ook aanbevolen.
+Dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) bij het produceren van PDF van HTML5 vormvoorlegging wordt ook geadviseerd.

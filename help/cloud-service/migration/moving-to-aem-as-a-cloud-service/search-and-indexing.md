@@ -19,24 +19,24 @@ ht-degree: 0%
 
 # Zoeken en indexeren
 
-Leer over AEM as a Cloud Service onderzoeksindexen, hoe te om AEM 6 indexdefinities om te zetten om as a Cloud Service compatibel AEM te zijn, en hoe te om indexen op te stellen om as a Cloud Service te AEM.
+Leer over AEM as a Cloud Service onderzoeksindexen, hoe te om AEM 6 indexdefinities om te zetten om compatibel met AEM as a Cloud Service, en hoe te om indexen aan AEM as a Cloud Service op te stellen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336963?quality=12&learn=on)
 
 ## Indexconversie
 
-![Indexconversie](./assets/index-converter.png)
+![ het Hulpmiddel van de Convertor van de Index ](./assets/index-converter.png)
 
-Als deel van het refactoring van uw codebasis, gebruik [Gereedschap Index omzetten](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) om aangepaste Eak-indexdefinities om te zetten in AEM as a Cloud Service compatibele indexdefinities.
+Als deel van het refactoring van uw codebasis, gebruik het [ omzetter van de Index hulpmiddel ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) om de indexdefinities van douaneOak in AEM as a Cloud Service compatibele indexdefinities om te zetten.
 
-Controleer de [documentatie over indexconverter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html) voor de volledige en huidige set mogelijkheden van Index Converter.
+Herzie de [ documentatie van de indexomzetter ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html) voor de volledige en huidige reeks mogelijkheden van de Convertor van de Index.
 
 ## Belangrijkste activiteiten
 
-+ Gebruik de [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) hulpmiddel om werkstromen voor middelenverwerking te migreren voor het gebruik van de Asset compute microservices.
-+ Een [plaatselijke ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) en implementeer de aangepaste indexen. Zorg ervoor dat de bijgewerkte indexen up-to-date zijn.
-+ Implementeer de bijgewerkte codebasis in een AEM as a Cloud Service ontwikkelomgeving en blijf valideren.
-+ Indien een waarde uit de index van het vak wordt gewijzigd **ALTIJD** kopieer de meest recente indexdefinitie van een AEM as a Cloud Service omgeving die op de meest recente release wordt uitgevoerd. Pas de gekopieerde indexdefinitie aan uw behoeften aan.
++ Gebruik het ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) hulpmiddel van de Migrator van het Werkschema 0} Adobe I/O om werkschema&#39;s van de activaverwerking te migreren om de microdiensten van de Asset compute te gebruiken.[
++ Opstelling a [ lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) en stel de aangepaste indexen op. Zorg ervoor dat de bijgewerkte indexen up-to-date zijn.
++ Implementeer de bijgewerkte codebasis in een AEM as a Cloud Service-ontwikkelomgeving en blijf valideren.
++ Als het wijzigen van een uit de doos index **** altijd kopieert de recentste indexdefinitie van een milieu van AEM as a Cloud Service dat op de recentste versie loopt. Pas de gekopieerde indexdefinitie aan uw behoeften aan.
 
 ## Handbeweging
 
@@ -44,7 +44,7 @@ Pas je kennis toe door uit te proberen wat je geleerd hebt met deze praktische o
 
 Voordat u de praktische oefening probeert, moet u controleren of u de bovenstaande video en de volgende materialen hebt bekeken en begrepen:
 
-+ [ anders denken over AEM as a Cloud Service](./introduction.md)
++ [AEM as a Cloud Service anders denken](./introduction.md)
 + [Modernisering opslagplaats](./repository-modernization.md)
 
 Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
@@ -62,12 +62,12 @@ Zorg er ook voor dat u de vorige hands-on oefening hebt uitgevoerd:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Hands-on met indexen</div>
             <p style="margin:1rem 0">
-                Ontdek het definiëren en implementeren van eiken-indexen om as a Cloud Service te AEM.
+                Ontdek het definiëren en implementeren van Oak-indexen voor AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session7-indexes#cloud-acceleration-bootcamp---session-7-search-and-indexing" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Index uitproberen</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> probeert uit het indexeren </span>
             </a>
         </td>
     </tr>

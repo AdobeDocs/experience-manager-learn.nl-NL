@@ -28,4 +28,4 @@ Adobe Experience Manager Sites stelt een auteur in staat de breedte van een comp
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie voor responsieve lay-out](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)
+* [ Responsieve Documentatie van de Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)

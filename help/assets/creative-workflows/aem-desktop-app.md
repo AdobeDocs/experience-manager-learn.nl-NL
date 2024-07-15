@@ -32,8 +32,8 @@ Gebruik AEM Desktop App om de toegang tot middelen te vereenvoudigen die in AEM 
 
 >[!NOTE]
 >
-> [Adobe-itemkoppeling](./adobe-asset-link.md) is de speciale oplossing van Adobe voor het werken met AEM middelen binnen Adobe Creative Cloud toepassingen: Photoshop, Illustrator, InDesign. Als u AEM Assets in deze toepassingen gebruikt, heeft de Adobe Asset Link de voorkeur boven AEM Desktop App.
+> [ de Verbinding van Activa van de Adobe ](./adobe-asset-link.md) is de specifieke oplossing van de Adobe voor het werken met AEM activa binnen de toepassingen van Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Als u AEM Assets in deze toepassingen gebruikt, heeft de Adobe Asset Link de voorkeur boven AEM Desktop App.
 
 ## Aanvullende bronnen
 
-+ [Download de nieuwste AEM Desktop App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [ Download recentste AEM Desktop App ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)

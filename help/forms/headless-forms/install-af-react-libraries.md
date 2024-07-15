@@ -32,11 +32,11 @@ Werk package.json bij om de volgende gebiedsdelen te omvatten. Op het moment van
 
 >[!NOTE]
 >
->De vervolgkeuzelijst en de kaartlay-out in deze zelfstudie zijn gemaakt met [Materiële UI-bibliotheek](https://mui.com/). U moet de juiste Materiële UI-pakketten downloaden om de code op uw systeem te laten werken.
+>De drop-down lijst en de kaartlay-out in dit leerprogramma werden gecreeerd gebruikend [ Materiële bibliotheek UI ](https://mui.com/). U moet de juiste Materiële UI-pakketten downloaden om de code op uw systeem te laten werken.
 
 ## Proxy instellen
 
-Cross-Origin Resource Sharing (CORS) is een beveiligingsmechanisme dat webbrowsers beperkt om aanvragen in te dienen op een ander domein dan het domein waarop de app wordt gehost. Er kunnen CORS-fouten optreden wanneer u gegevens probeert op te halen van een API die wordt gehost op een ander domein. Door een proxy in te stellen, kunt u de CORS-beperkingen omzeilen en aanvragen indienen bij de API vanuit de React-app. Ik heb de volgende code in een dossier genoemd setUpProxy.js in de src omslag gebruikt. **Zorg ervoor dat u het doel wijzigt zodat dit naar de publicatie-instantie verwijst.**
+Cross-Origin Resource Sharing (CORS) is een beveiligingsmechanisme dat webbrowsers beperkt om aanvragen in te dienen op een ander domein dan het domein waarop de app wordt gehost. Er kunnen CORS-fouten optreden wanneer u gegevens probeert op te halen van een API die wordt gehost op een ander domein. Door een proxy in te stellen, kunt u de CORS-beperkingen omzeilen en aanvragen indienen bij de API vanuit de React-app. Ik heb de volgende code in een dossier genoemd setUpProxy.js in de src omslag gebruikt. **zorg ervoor u het doel verandert om aan uw te richten publiceert instantie.**
 
 ```
 const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -56,7 +56,7 @@ module.exports = function(app) {
 };
 ```
 
-U moet ook de **http-proxy-middleware** aan uw project.
+U zult ook **http-proxy-middleware** module aan uw project moeten installeren en toevoegen.
 
 ## Volgende stappen
 

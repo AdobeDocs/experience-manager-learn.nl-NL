@@ -20,166 +20,166 @@ ht-degree: 0%
 
 # Modellen voor inhoudsfragmenten definiëren {#content-fragment-models}
 
-In dit hoofdstuk leert u hoe u inhoud kunt modelleren en een schema kunt maken met **Modellen van inhoudsfragmenten**. U leert over de verschillende gegevenstypen die kunnen worden gebruikt om een schema als deel van het model te bepalen.
+In dit hoofdstuk, leer hoe te om inhoud te modelleren en een schema met **Modellen van het Fragment van de Inhoud te bouwen**. U leert over de verschillende gegevenstypen die kunnen worden gebruikt om een schema als deel van het model te bepalen.
 
-We maken twee eenvoudige modellen. **Team** en **Persoon**. De **Team** gegevensmodel heeft naam, korte naam en beschrijving en verwijst naar het **Persoon** gegevensmodel met volledige naam, biodetails, profielafbeelding en lijst van beroepen.
+Wij creëren twee eenvoudige modellen, **Team** en **Persoon**. Het **gegevensmodel van het 0} Team {heeft naam, korte naam, en beschrijving en verwijzingen het** Person **gegevensmodel, dat volledige naam, biodetails, profielbeeld, en bezettingenlijst heeft.**
 
 U kunt ook uw eigen model maken aan de hand van de basisstappen en de respectieve stappen aanpassen, zoals GraphQL-query&#39;s, en de App-code Reageren of gewoon de stappen volgen die in deze hoofdstukken worden beschreven.
 
 ## Vereisten {#prerequisites}
 
-Dit is een meerdelige zelfstudie en er wordt aangenomen dat een [AEM auteursomgeving is beschikbaar](./overview.md#prerequisites).
+Dit is een meerdelig leerprogramma en het wordt verondersteld dat een [ AEM auteursmilieu ](./overview.md#prerequisites) beschikbaar is.
 
 ## Doelstellingen {#objectives}
 
 * Maak een inhoudsfragmentmodel.
 * Beschikbare gegevenstypen en validatieopties identificeren voor het samenstellen van modellen.
-* Begrijp hoe het model van het Inhoudsfragment bepaalt **beide** het gegevensschema en het auteursmalplaatje voor een Fragment van de Inhoud.
+* Begrijp hoe het Model van het Fragment van de Inhoud **zowel** het gegevensschema als het auteursmalplaatje voor een Fragment van de Inhoud bepaalt.
 
 ## Een projectconfiguratie maken
 
-Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbonden aan een bepaald project en verstrekt een middel om modellen te organiseren. Er moet ten minste één project worden gemaakt **voor** maken, inhoudsfragmentmodel.
+Een projectconfiguratie bevat alle modellen van het Fragment van de Inhoud verbonden aan een bepaald project en verstrekt een middel om modellen te organiseren. Minstens één project moet worden gecreeerd **alvorens** het creëren van het Model van het Fragment van de Inhoud.
 
-1. Aanmelden bij de AEM **Auteur** milieu (bijv. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
-1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
+1. Login aan het AEM **milieu van de Auteur** (zoals `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
+1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
 
-   ![Navigeren naar de configuratiebrowser](assets/content-fragment-models/navigate-config-browser.png)
-1. Klikken **Maken** in de rechterbovenhoek
+   ![ ga aan Browser van de Configuratie ](assets/content-fragment-models/navigate-config-browser.png)
+1. Klik **creëren**, in de hoger-juiste hoek
 1. In het resulterende dialoogvenster voert u in:
 
-   * Titel*: **Mijn project**
-   * Naam*: **mijn-project** (Gebruik bij voorkeur alleen kleine letters als u woorden van elkaar scheidt. Deze tekenreeks beïnvloedt het unieke GraphQL-eindpunt waarop clienttoepassingen aanvragen uitvoeren.)
-   * Controleren **Modellen van inhoudsfragmenten**
-   * Controleren **Blijvende GraphQL-query&#39;s**
+   * Titel*: **Mijn Project**
+   * Naam*: **mijn-project** (verkies om alle kleine letters te gebruiken gebruikend koppeltekens aan afzonderlijke woorden. Deze tekenreeks beïnvloedt het unieke GraphQL-eindpunt waarop clienttoepassingen aanvragen uitvoeren.)
+   * De Modellen van het Fragment van de controle **Inhoud**
+   * Controle **de Blijvende Vragen van GraphQL**
 
-   ![Mijn projectconfiguratie](assets/content-fragment-models/my-project-configuration.png)
+   ![ Mijn Configuratie van het Project ](assets/content-fragment-models/my-project-configuration.png)
 
 ## Modellen voor inhoudsfragmenten maken
 
-Maak vervolgens twee modellen voor een **Team** en **Persoon**.
+Daarna, creeer twee modellen voor a **Team** en a **Persoon**.
 
 ### Het personenmodel maken
 
-Een model maken voor een **Persoon**, dit is het gegevensmodel dat een persoon vertegenwoordigt die deel uitmaakt van een team.
+Creeer een model voor a **Persoon**, dat het gegevensmodel is dat een persoon vertegenwoordigt die deel van een team uitmaakt.
 
-1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**.
+1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **Modellen van het Fragment van de Inhoud**.
 
-   ![Navigeren naar Modellen van inhoudsfragmenten](assets/content-fragment-models/navigate-cf-models.png)
+   ![ ga aan de Modellen van het Fragment van de Inhoud ](assets/content-fragment-models/navigate-cf-models.png)
 
-1. Ga in **Mijn project** map.
-1. Tikken **Maken** in de rechterbovenhoek **Model maken** wizard.
-1. In **Modeltitel** veld, Enter **Persoon** en tikken **Maken**. Tik in het resulterende dialoogvenster op **Openen** om het model te bouwen.
+1. Navigeer in de **Mijn omslag van het Project**.
+1. Tik **creeer** in de hoger-juiste hoek om **te brengen creeer Model** tovenaar.
+1. Op **ModelTitel** gebied, ga **Persoon** in en tik **creeer**. In de resulterende dialoog, tik **Open**, om het model te bouwen.
 
-1. Sleep een **Tekst met één regel** element aan het belangrijkste paneel. Voer de volgende eigenschappen in op de knop **Eigenschappen** tab:
+1. De belemmering en laat vallen a **Enige lijntekst** element op aan het belangrijkste paneel. Ga de volgende eigenschappen op het **Eigenschappen** lusje in:
 
-   * **Veldlabel**: **Volledige naam**
-   * **Eigenschapnaam**: `fullName`
-   * Controleren **Vereist**
+   * **Etiket van het Gebied**: **Volledige Naam**
+   * **de Naam van het Bezit**: `fullName`
+   * Controle **Vereiste**
 
-   ![Eigenschappenveld Volledige naam](assets/content-fragment-models/full-name-property-field.png)
+   ![ Volledige het bezitsgebied van de Naam ](assets/content-fragment-models/full-name-property-field.png)
 
-   De **Eigenschapnaam** Hiermee definieert u de naam van de eigenschap die wordt AEM. De **Eigenschapnaam** definieert ook de **key** name for this property as part of the data schema. Dit **key** wordt gebruikt wanneer de gegevens van het Fragment van de Inhoud via GraphQL APIs worden blootgesteld.
+   De **Naam van het Bezit** bepaalt de naam van het bezit dat aan AEM wordt voortgeduurd. De **Naam van het Bezit** bepaalt ook de **zeer belangrijke** naam voor dit bezit als deel van het gegevensschema. Deze **sleutel** wordt gebruikt wanneer de gegevens van het Fragment van de Inhoud via GraphQL APIs worden blootgesteld.
 
-1. Tik op de knop **Gegevenstypen** en sleep een **Tekst met meerdere regels** veld onder de **Volledige naam** veld. Voer de volgende eigenschappen in:
+1. Tik het **lusje van de Types van Gegevens 0} {en sleep en laat vallen a** Meerdere lijntekst **gebied onder het** Volledige gebied van de Naam **.** Voer de volgende eigenschappen in:
 
-   * **Veldlabel**: **Biografie**
-   * **Eigenschapnaam**: `biographyText`
-   * **Standaardtype**: **RTF**
+   * **Etiket van het Gebied**: **Biografie**
+   * **de Naam van het Bezit**: `biographyText`
+   * **StandaardType**: **Rijke Tekst**
 
-1. Klik op de knop **Gegevenstypen** en sleep een **Content Reference** veld. Voer de volgende eigenschappen in:
+1. Klik het **lusje van de Types van Gegevens 0} {en belemmering en laat vallen het gebied van de Verwijzing van de a** Inhoud **.** Voer de volgende eigenschappen in:
 
-   * **Veldlabel**: **Profielafbeelding**
-   * **Eigenschapnaam**: `profilePicture`
-   * **Hoofdpad**: `/content/dam`
+   * **Etiket van het Gebied**: **Beeld van het Profiel**
+   * **de Naam van het Bezit**: `profilePicture`
+   * **Weg van de wortel**: `/content/dam`
 
-   Wanneer het vormen van **Hoofdpad**, kunt u op de knop **map** pictogram om een modaal weer te geven om het pad te selecteren. Hierdoor wordt beperkt welke mappen auteurs kunnen gebruiken om het pad te vullen. `/content/dam` is de basis waarin alle AEM Assets (afbeeldingen, video&#39;s, andere inhoudsfragmenten) worden opgeslagen.
+   Wanneer het vormen van de **Weg van de Weg van de Wortel**, kunt u het **omslag** pictogram klikken om modaal omhoog te brengen om de weg te selecteren. Hierdoor wordt beperkt welke mappen auteurs kunnen gebruiken om het pad te vullen. `/content/dam` is de basis waarin alle AEM Assets (afbeeldingen, video&#39;s, andere inhoudsfragmenten) wordt opgeslagen.
 
-1. Een validatie toevoegen aan de **Referentie afbeelding** zodat alleen inhoudstypen **Afbeeldingen** kan worden gebruikt om het veld te vullen.
+1. Voeg een bevestiging aan de **Verwijzing van het Beeld** toe zodat slechts inhoudstypes van **Beelden** kunnen worden gebruikt om het gebied te bevolken.
 
-   ![Beperken tot afbeeldingen](assets/content-fragment-models/picture-reference-content-types.png)
+   ![ Beperk tot Beelden ](assets/content-fragment-models/picture-reference-content-types.png)
 
-1. Klik op de knop **Gegevenstypen** en sleep een **Opsomming**  gegevenstype onder de **Referentie afbeelding** veld. Voer de volgende eigenschappen in:
+1. Klik het **lusje van de Types van Gegevens 0} {en sleep en laat vallen een** Opsomming **gegevenstype onder het** **gebied van de Verwijzing van het Beeld.** Voer de volgende eigenschappen in:
 
-   * **Renderen als**: **Selectievakjes**
-   * **Veldlabel**: **Beroep**
-   * **Eigenschapnaam**: `occupation`
+   * **geeft terug als**: **checkboxes**
+   * **Etiket van het Gebied**: **Bezetting**
+   * **de Naam van het Bezit**: `occupation`
 
-1. Diverse toevoegen **Opties** met de **Een optie toevoegen** knop. Dezelfde waarde gebruiken voor **Option-label** en **Optiewaarde**:
+1. Voeg verscheidene **Opties** toe gebruikend **voeg een optie** knoop toe. Gebruik de zelfde waarde voor **Etiket van de Optie** en **Waarde van de Optie**:
 
-   **Artiest**, **Influencer**, **Fotograaf**, **Reizen**, **Schrijver**, **YouTuber**
+   **Kunstenaar**, **Influencer**, **Fotograaf**, **Reiziger**, **Schrijver**, **YouTuber**
 
-1. De definitieve **Persoon** Het model moet er als volgt uitzien:
+1. Het definitieve **model van de Persoon** zou als het volgende moeten kijken:
 
-   ![Model eindpersoon](assets/content-fragment-models/final-author-model.png)
+   ![ Eind Person Model ](assets/content-fragment-models/final-author-model.png)
 
-1. Klikken **Opslaan** om de wijzigingen op te slaan
+1. Klik **sparen** om de veranderingen te bewaren.
 
 ### Het teammodel maken
 
-Een model maken voor een **Team**, het gegevensmodel voor een team van mensen. Het model van het Team verwijzingen het model van de Persoon om de leden van het team te vertegenwoordigen.
+Creeer een model voor a **Team**, dat het gegevensmodel voor een team van mensen is. Het model van het Team verwijzingen het model van de Persoon om de leden van het team te vertegenwoordigen.
 
-1. In de **Mijn project** map, tikken **Maken** in de rechterbovenhoek **Model maken** wizard.
-1. In **Modeltitel** veld, Enter **Team** en tikken **Maken**.
+1. In de **Mijn omslag van het Project**, leidt de kraan **** tot in de hogere juiste hoek om **te brengen tot modeltovenaar**.
+1. Op **ModelTitel** gebied, ga **Team** in en tik **creeer**.
 
-   Tikken **Openen** in het resulterende dialoogvenster om het nieuwe model te openen.
+   Tik **Open** in de resulterende dialoog, om het pas gecreëerde model te openen.
 
-1. Sleep een **Tekst met één regel** element aan het belangrijkste paneel. Voer de volgende eigenschappen in op de knop **Eigenschappen** tab:
+1. De belemmering en laat vallen a **Enige lijntekst** element op aan het belangrijkste paneel. Ga de volgende eigenschappen op het **Eigenschappen** lusje in:
 
-   * **Veldlabel**: **Titel**
-   * **Eigenschapnaam**: `title`
-   * Controleren **Vereist**
+   * **Etiket van het Gebied**: **Titel**
+   * **de Naam van het Bezit**: `title`
+   * Controle **Vereiste**
 
-1. Tik op de knop **Gegevenstypen** en sleep een **Tekst met één regel** element aan het belangrijkste paneel. Voer de volgende eigenschappen in op de knop **Eigenschappen** tab:
+1. Tik het **lusje van de Types van Gegevens 0} {en sleep en versleep a** Enige lijntekst **element op het belangrijkste paneel.** Ga de volgende eigenschappen op het **Eigenschappen** lusje in:
 
-   * **Veldlabel**: **Korte naam**
-   * **Eigenschapnaam**: `shortName`
-   * Controleren **Vereist**
-   * Controleren **Uniek**
-   * Onder, **Validatietype** > kiezen **Aangepast**
-   * Onder, **Aangepast validatieoverzicht** > Enter `^[a-z0-9\-_]{5,40}$` - Dit zorgt ervoor dat alleen alfanumerieke waarden in kleine letters en streepjes van 5 tot en met 40 tekens kunnen worden ingevoerd.
+   * **Etiket van het Gebied**: **Korte Naam**
+   * **de Naam van het Bezit**: `shortName`
+   * Controle **Vereiste**
+   * Controle **Uniek**
+   * Onder, **Type van Bevestiging** > kies **Douane**
+   * Onder, **Regex van de Bevestiging van de Douane** > ga `^[a-z0-9\-_]{5,40}$` in - dit zorgt ervoor dat slechts de waarden en de streepjes van kleine letters van 5 door 40 karakters kunnen worden ingegaan.
 
-   De `shortName` bezit verstrekt ons een manier om een individueel team te vragen dat op een verkort weg wordt gebaseerd. De **Uniek** Met deze instelling zorgt u ervoor dat de waarde altijd uniek is per inhoudsfragment van dit model.
+   De eigenschap `shortName` biedt ons een manier om een query uit te voeren voor een afzonderlijk team op basis van een verkort pad. Het **Unieke** plaatsen zorgt ervoor dat de waarde altijd uniek per het Fragment van de Inhoud van dit model is.
 
-1. Tik op de knop **Gegevenstypen** en sleep een **Tekst met meerdere regels** veld onder de **Korte naam** veld. Voer de volgende eigenschappen in:
+1. Tik het **lusje van de Types van Gegevens 0} {en sleep en laat vallen a** Meerdere lijntekst **gebied onder het** Korte Naam **gebied.** Voer de volgende eigenschappen in:
 
-   * **Veldlabel**: **Beschrijving**
-   * **Eigenschapnaam**: `description`
-   * **Standaardtype**: **RTF**
+   * **Etiket van het Gebied**: **Beschrijving**
+   * **de Naam van het Bezit**: `description`
+   * **StandaardType**: **Rijke Tekst**
 
-1. Klik op de knop **Gegevenstypen** en sleep een **Fragmentverwijzing** veld. Voer de volgende eigenschappen in:
+1. Klik het **lusje van de Types van Gegevens 0} {en belemmering en laat vallen het gebied van de Verwijzing van het a** Fragment **.** Voer de volgende eigenschappen in:
 
-   * **Renderen als**: **Meerdere velden**
-   * **Veldlabel**: **Teamleden**
-   * **Eigenschapnaam**: `teamMembers`
-   * **Modellen voor toegestane inhoudsfragmenten**: Gebruik het mappictogram om de optie **Persoon** model.
+   * **geeft terug als**: **Veelvoudig Gebied**
+   * **Etiket van het Gebied**: **Leden van het Team**
+   * **de Naam van het Bezit**: `teamMembers`
+   * **Toegestane Modellen van het Fragment van de Inhoud**: Gebruik het omslagpictogram om het **Person** model te selecteren.
 
-1. De definitieve **Team** Het model moet er als volgt uitzien:
+1. Het definitieve **model van het Team** zou als het volgende moeten kijken:
 
-   ![Eindteammodel](assets/content-fragment-models/final-team-model.png)
+   ![ Definitief Model van het Team ](assets/content-fragment-models/final-team-model.png)
 
-1. Klikken **Opslaan** om de wijzigingen op te slaan
+1. Klik **sparen** om de veranderingen te bewaren.
 
 1. U moet nu twee modellen hebben waaruit u kunt werken:
 
-   ![Twee modellen](assets/content-fragment-models/two-new-models.png)
+   ![ Twee Modellen ](assets/content-fragment-models/two-new-models.png)
 
-## Projectconfiguratie en modellen voor inhoudsfragmenten publiceren
+## Publish-modellen voor projectconfiguratie en inhoudsfragmenten
 
-Na revisie en verificatie publiceert u de `Project Configuration` &amp; `Content Fragment Model`
+Publiceer na revisie en verificatie de `Project Configuration` &amp; `Content Fragment Model`
 
-1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
+1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**.
 
-1. Tik op het selectievakje naast **Mijn project** en tikken **Publiceren**
+1. Tik checkbox naast **Mijn Project** en tik **Publish**
 
-   ![Projectconfiguratie publiceren](assets/content-fragment-models/publish-project-config.png)
+   ![ Config van het Project van Publish ](assets/content-fragment-models/publish-project-config.png)
 
-1. Navigeer in het scherm AEM starten naar **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**.
+1. Van het AEM scherm van het Begin, navigeer aan **Hulpmiddelen** > **Algemeen** > **Modellen van het Fragment van de Inhoud**.
 
-1. Ga in **Mijn project** map.
+1. Navigeer in de **Mijn omslag van het Project**.
 
-1. Tikken **Persoon** en **Team** modellen en tikken **Publiceren**
+1. Tik **Persoon** en **Team** modellen en tik **Publish**
 
-   ![Modellen voor inhoudsfragmenten publiceren](assets/content-fragment-models/publish-content-fragment-model.png)
+   ![ Modellen van het Fragment van de Inhoud van Publish ](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Gefeliciteerd! {#congratulations}
 
@@ -187,7 +187,7 @@ Gefeliciteerd, u hebt zojuist uw eerste modellen van inhoudsfragmenten gemaakt!
 
 ## Volgende stappen {#next-steps}
 
-In het volgende hoofdstuk: [Modellen voor inhoudsfragmenten ontwerpen](author-content-fragments.md), maakt u een nieuw inhoudsfragment en bewerkt u dit op basis van een inhoudsfragmentmodel. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
+In het volgende hoofdstuk, [ het Authoring Modellen van het Fragment van de Inhoud ](author-content-fragments.md), creeert en geeft u een nieuw die Fragment van de Inhoud uit op een Model van het Fragment van de Inhoud wordt gebaseerd. U leert ook hoe u variaties van inhoudsfragmenten kunt maken.
 
 ## Verwante documentatie
 

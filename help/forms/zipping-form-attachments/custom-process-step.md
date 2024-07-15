@@ -19,7 +19,7 @@ ht-degree: 0%
 # Aangepaste processtap
 
 
-Er is een aangepaste processtap geïmplementeerd om het ZIP-bestand te maken dat de formulierbijlagen bevat. Als u niet bekend bent met het maken van een OSGi-bundel, [Volg deze instructies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Er is een aangepaste processtap geïmplementeerd om het ZIP-bestand te maken dat de formulierbijlagen bevat. Als u niet vertrouwd met het creëren van bundel OSGi bent, gelieve [ deze instructies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en) te volgen
 
 De code in de stap van het douaneproces doet het volgende
 
@@ -160,7 +160,7 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Zorg ervoor dat u een variabele hebt met de naam  *no_of_attachments* van het type Dubbelklik in de workflow om deze code te laten werken.
+> Gelieve te zorgen u een variabele genoemd *no_of_attachments* van typeDubbel in uw werkschema voor deze code heeft om te werken.
 
 ## Volgende stappen
 

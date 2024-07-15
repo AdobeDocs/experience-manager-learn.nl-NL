@@ -20,7 +20,7 @@ ht-degree: 0%
 # Exchange JWT voor toegangstoken
 
 
-De JWT die in de vorige stap is gemaakt, wordt uitgewisseld met Adobe IMS API&#39;s voor een toegangstoken, dat vervolgens kan worden gebruikt voor toegang tot AEM as a Cloud Service. Om een Token van de Toegang te verzoeken verzend een verzoek van de POST die JWT, client_id, client_geheime aan de IMS authentificatiedienst bevat.
+De JWT die in de vorige stap is gemaakt, wordt uitgewisseld met Adobe IMS API&#39;s voor een toegangstoken, dat vervolgens kan worden gebruikt om toegang te krijgen tot AEM as a Cloud Service. Om een Token van de Toegang te verzoeken verzend een verzoek van de POST die JWT, client_id, client_geheime aan de IMS authentificatiedienst bevat.
 
 De volgende code is gebruikt om uitwisseling JWT voor Toegangstoken te produceren
 

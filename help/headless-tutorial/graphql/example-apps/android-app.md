@@ -1,5 +1,5 @@
 ---
-title: Android-toepassing - Voorbeeld AEM zonder kop
+title: Android-toepassing - voorbeeld zonder kop AEM
 description: Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze Android-toepassing laat zien hoe u inhoud kunt opvragen met de GraphQL API's van AEM.
 version: Cloud Service
 mini-toc-levels: 2
@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM zonder hoofd as a Cloud Service" before-title="false"
+badgeVersions: label="AEM, hoofdloos as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
 duration: 160
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
@@ -20,48 +20,48 @@ ht-degree: 0%
 
 ---
 
-# Android-toepassing
+# Android App
 
-Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze Android-toepassing laat zien hoe u inhoud kunt opvragen met de GraphQL API&#39;s van AEM. De [AEM headless-client voor Java](https://github.com/adobe/aem-headless-client-java) wordt gebruikt om GraphQL-query&#39;s uit te voeren en gegevens toe te wijzen aan Java-objecten om de app te activeren.
+Voorbeeldtoepassingen zijn een geweldige manier om de mogelijkheden zonder kop van Adobe Experience Manager (AEM) te verkennen. Deze Android-toepassing laat zien hoe u inhoud kunt opvragen met de GraphQL API&#39;s van AEM. De [ AEM Zwaarloze Cliënt voor Java ](https://github.com/adobe/aem-headless-client-java) wordt gebruikt om de vragen van GraphQL uit te voeren en gegevens in kaart te brengen aan de voorwerpen van Java om app te drijven.
 
-![Android Java-app met AEM headless](./assets/android-java-app/android-app.png)
+![ Android Java app met AEM Headless ](./assets/android-java-app/android-app.png)
 
 
-De weergave [broncode op GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)
+Bekijk de [ broncode op GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)
 
 ## Vereisten {#prerequisites}
 
 De volgende gereedschappen moeten lokaal worden geïnstalleerd:
 
-+ [Android Studio](https://developer.android.com/studio)
-+ [Git](https://git-scm.com/)
++ [ de Studio van Android ](https://developer.android.com/studio)
++ [ Git ](https://git-scm.com/)
 
 ## AEM
 
-De Android-toepassing werkt met de volgende AEM implementatieopties. Alle implementaties vereisen de [WKND-site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) te installeren.
+De Android-toepassing werkt met de volgende AEM implementatieopties. Alle plaatsingen vereisen de [ Plaats van WKND v3.0.0+ ](https://github.com/adobe/aem-guides-wknd/releases/latest) om worden geïnstalleerd.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [ AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 
-De Android-toepassing is ontworpen voor verbinding met een __AEM publiceren__ -omgeving, maar de toepassing kan inhoud van AEM auteur aanmaken als de configuratie van de Android-toepassing verificatie bevat.
+De toepassing van Android wordt ontworpen om met een __AEM het milieu van Publish__ te verbinden, nochtans kan het inhoud van AEM Auteur als de authentificatie in de configuratie van de toepassing van Android wordt verstrekt.
 
 ## Hoe wordt het gebruikt
 
-1. Klonen met `adobe/aem-guides-wknd-graphql` opslagplaats:
+1. De gegevensopslagruimte `adobe/aem-guides-wknd-graphql` klonen:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Openen [Android Studio](https://developer.android.com/studio) en opent u de map `android-app`
-1. Het bestand wijzigen `config.properties` om `app/src/main/assets/config.properties` en bijwerken `contentApi.endpoint` om aan uw doel AEM milieu aan te passen:
+1. Open [ Studio van Android ](https://developer.android.com/studio) en open de omslag `android-app`
+1. Wijzig het bestand `config.properties` bij `app/src/main/assets/config.properties` en werk het `contentApi.endpoint` bij zodat dit overeenkomt met de AEM van het doel:
 
    ```plain
    contentApi.endpoint=https://publish-p123-e456.adobeaemcloud.com
    ```
 
-   __Basisverificatie__
+   __Basisauthentificatie__
 
-   De `contentApi.user` en `contentApi.password` Een lokale AEM verifiëren met toegang tot WKND GraphQL-inhoud.
+   Met `contentApi.user` en `contentApi.password` kunt u een lokale AEM verifiëren met toegang tot WKND GraphQL-inhoud.
 
    ```plain
    contentApi.endpoint=https://author-p123-e456.adobeaemcloud.com
@@ -69,13 +69,13 @@ De Android-toepassing is ontworpen voor verbinding met een __AEM publiceren__ -o
    contentApi.password=password123
    ```
 
-1. Download een [Virtueel Android-apparaat](https://developer.android.com/studio/run/managing-avds) (minimum API 28).
-1. De app ontwikkelen en implementeren met de Android-emulator.
+1. Download een [ Virtuele Apparaat van Android ](https://developer.android.com/studio/run/managing-avds) (minimum API 28).
+1. Ontwikkel en implementeer de app met de Android-emulator.
 
 
 ### Verbinding maken met AEM omgevingen
 
-Als u verbinding maakt met een AEM-ontwerpomgeving [autorisatie](https://github.com/adobe/aem-headless-client-java#using-authorization) is vereist. De [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) biedt de mogelijkheid [tokenverificatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). Om op teken-gebaseerde cliënt van de authentificatieupdate binnen te gebruiken `AdventureLoader.java` en `AdventuresLoader.java`:
+Als het verbinden met een AEM auteursmilieu [ vergunning ](https://github.com/adobe/aem-headless-client-java#using-authorization) wordt vereist. [ AEMHeadlessClientBuilder ](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) verstrekt de capaciteit om [ op teken-gebaseerde authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) te gebruiken. Om op een token gebaseerde verificatie-update-clientbuilder te gebruiken in `AdventureLoader.java` en `AdventuresLoader.java` :
 
 ```java
 /* Comment out basicAuth
@@ -90,7 +90,7 @@ builder.tokenAuth(token)
 
 ## De code
 
-Hieronder volgt een korte samenvatting van de belangrijke bestanden en code die worden gebruikt om de toepassing te besturen. U vindt de volledige code op [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app).
+Hieronder volgt een korte samenvatting van de belangrijke bestanden en code die worden gebruikt om de toepassing te besturen. De volledige code kan op [ GitHub ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app) worden gevonden.
 
 ### Blijvende query&#39;s
 
@@ -119,7 +119,7 @@ Na AEM Beste praktijken zonder hoofd, gebruikt de toepassing van iOS AEM GraphQL
 }
 ```
 
-+ `wknd/adventure-by-slug` persistente query, die één avontuur retourneert door `slug` (een douanebezit dat uniek een avontuur identificeert) met een volledige reeks eigenschappen. Dit bleef vraagbevoegdheden de meningen van het avontuurdetail.
++ `wknd/adventure-by-slug` persisted query, die één avontuur retourneert van `slug` (een aangepaste eigenschap die een avontuur op unieke wijze identificeert) met een volledige set eigenschappen. Dit bleef vraagbevoegdheden de meningen van het avontuurdetail.
 
 ```
 # Retrieves an adventure Content Fragment based on it's slug
@@ -175,17 +175,17 @@ query($slug: String!) {
 
 ### GraphQL-query uitgevoerd
 
-AEM voortgeduurde vragen worden uitgevoerd over de GET van HTTP en zo, [AEM headless-client voor Java](https://github.com/adobe/aem-headless-client-java) wordt gebruikt om de aanhoudend GraphQL-query&#39;s uit te voeren tegen AEM en de avontuurlijke inhoud in de app te laden.
+AEM blijvende vragen worden uitgevoerd over de GET van HTTP en zo, wordt de [ AEM Zwaardeloze cliënt voor Java ](https://github.com/adobe/aem-headless-client-java) gebruikt om de voortgezette vragen van GraphQL tegen AEM uit te voeren en de avontuurinhoud in app te laden.
 
-Elke persistente query heeft een corresponderende &quot;loader&quot;-klasse, die asynchroon het eindpunt van de AEM HTTP-GET aanroept en de avontuurgegevens retourneert met behulp van de aangepaste definitie [gegevensmodel](#data-models).
+Elke voortgeduurde vraag heeft een overeenkomstige &quot;lader&quot;klasse, die asynchroon het AEM eindpunt van de GET van HTTP roept, en de avontuurgegevens terugkeert gebruikend de douane bepaalde [ gegevensmodel ](#data-models).
 
 + `loader/AdventuresLoader.java`
 
-  Hiermee wordt de lijst met avonturen opgehaald op het beginscherm van de toepassing met de functie `wknd-shared/adventures-all` voortgezette query.
+  Hiermee wordt de lijst met avonturen opgehaald op het beginscherm van de toepassing met de `wknd-shared/adventures-all` permanente query.
 
 + `loader/AdventureLoader.java`
 
-  Hiermee wordt één avontuur opgehaald en geselecteerd via de `slug` parameter, gebruiken `wknd-shared/adventure-by-slug` voortgezette query.
+  Hiermee wordt één avontuur opgehaald dat het via de parameter `slug` selecteert en de query `wknd-shared/adventure-by-slug` persisted gebruikt.
 
 ```java
 //AdventuresLoader.java
@@ -209,7 +209,7 @@ GraphQlResponse response = client.runPersistedQuery(PERSISTED_QUERY_NAME);
 
 ### GraphQL-responsgegevensmodellen{#data-models}
 
-`Adventure.java` is een Java POJO die wordt geïnitialiseerd met de JSON-gegevens van de GraphQL-aanvraag en een avontuur modelleert voor gebruik in de weergaven van de Android-toepassing.
+`Adventure.java` is een Java POJO die wordt geïnitialiseerd met de JSON-gegevens uit de GraphQL-aanvraag en een avontuur modelleert voor gebruik in de weergaven van de Android-toepassing.
 
 ### Weergaven
 
@@ -217,17 +217,17 @@ De Android-toepassing gebruikt twee weergaven om de avontuurgegevens in de mobie
 
 + `AdventureListFragment.java`
 
-  Roept de `AdventuresLoader` en geeft de geretourneerde avonturen weer in een lijst.
+  Roept `AdventuresLoader` aan en geeft de geretourneerde avonturen in een lijst weer.
 
 + `AdventureDetailFragment.java`
 
-  Roept de `AdventureLoader` met de `slug` param werd via de avontuurselectie op de `AdventureListFragment` bekijken, en toont de details van één enkel avontuur.
+  Roept `AdventureLoader` aan gebruikend de `slug` param die via de avontuurselectie op de `AdventureListFragment` mening wordt overgegaan, en toont de details van één enkel avontuur.
 
 ### Externe afbeeldingen
 
-`loader/RemoteImagesCache.java` is een hulpprogrammaklasse waarmee externe afbeeldingen in een cache kunnen worden voorbereid, zodat deze kunnen worden gebruikt met Android-UI-elementen. De avontuurinhoud verwijst naar afbeeldingen in AEM Assets via een URL en deze klasse wordt gebruikt om die inhoud weer te geven.
+`loader/RemoteImagesCache.java` is een hulpprogrammaklasse waarmee externe afbeeldingen in een cache kunnen worden voorbereid, zodat ze kunnen worden gebruikt met Android UI-elementen. De avontuurinhoud verwijst naar afbeeldingen in AEM Assets via een URL en deze klasse wordt gebruikt om die inhoud weer te geven.
 
 ## Aanvullende bronnen
 
-+ [Aan de slag met AEM headless - zelfstudie voor GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
-+ [AEM headless-client voor Java](https://github.com/adobe/aem-headless-client-java)
++ [ Begonnen het worden met AEM Zwaartepunt - het Leerprogramma van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [ AEM Zwaarloze Cliënt voor Java ](https://github.com/adobe/aem-headless-client-java)

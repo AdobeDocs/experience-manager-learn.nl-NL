@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Leer hoe u AEM CSRF-tokens kunt genereren en toevoegen aan toegestane POST-, PUT- en verwijderverzoeken om AEM voor geverifieerde gebruikers.
 
-AEM vereist een geldig CSRF-token voor __geverifieerd__ __POST__, __PUT, of __DELETE__ HTTP-aanvragen bij zowel AEM Auteur- als publicatieservices.
+AEM vereist een geldig teken CSRF dat voor __wordt verzonden voor authentiek verklaarde__ __POST__, __PUT, of __DELETE__ HTTP- verzoeken aan zowel AEM Auteur als de diensten van Publish.
 
-De token CSRF is niet vereist voor __GET__ verzoeken, of __anoniem__ verzoeken.
+Het teken CSRF wordt niet vereist voor __GET__ verzoeken, of __anonieme__ verzoeken.
 
 Als een teken CSRF niet samen met een POST, een PUT, of een verzoek van DELETE wordt verzonden, AEM keert een 403 Verboden reactie terug, en AEM registreert de volgende fout:
 
@@ -34,20 +34,20 @@ Als een teken CSRF niet samen met een POST, een PUT, of een verzoek van DELETE w
 [INFO][POST /path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] doFilter: the provided CSRF token is invalid
 ```
 
-Zie de [documentatie voor meer informatie over AEM CSRF-bescherming](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html).
+Zie de [ documentatie voor meer details over AEM CSRF bescherming ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html).
 
 
 ## CSRF-clientbibliotheek
 
-AEM biedt een clientbibliotheek die kan worden gebruikt om CSRF-tokens XHR- en form POST-aanvragen te genereren en toe te voegen, door kernprototypefuncties te patchen. De functionaliteit wordt geleverd door de `granite.csrf.standalone` clientbibliotheekcategorie.
+AEM biedt een clientbibliotheek die kan worden gebruikt om CSRF-tokens XHR- en form POST-aanvragen te genereren en toe te voegen, door kernprototypefuncties te patchen. De functionaliteit wordt geleverd door de categorie van de `granite.csrf.standalone` clientbibliotheek.
 
-Als u deze methode wilt gebruiken, voegt u `granite.csrf.standalone` als een afhankelijkheid van de clientbibliotheek die op uw pagina wordt geladen. Als u bijvoorbeeld de opdracht `wknd.site` clientbibliotheekcategorie, toevoegen `granite.csrf.standalone` als een afhankelijkheid van de clientbibliotheek die op uw pagina wordt geladen.
+Als u deze methode wilt gebruiken, voegt u `granite.csrf.standalone` toe als een afhankelijkheid van de clientbibliotheek die op uw pagina wordt geladen. Als u bijvoorbeeld de categorie `wknd.site` clientbibliotheek gebruikt, voegt u `granite.csrf.standalone` toe als een afhankelijkheid van de clientbibliotheek die op uw pagina wordt geladen.
 
 ## Aangepast formulier verzenden met CSRF-beveiliging
 
-Als het gebruik van [`granite.csrf.standalone` clientbibliotheek](#csrf-client-library) Kan niet worden gebruikt, u kunt handmatig een CSRF-token toevoegen aan een formulier dat wordt verzonden. In het volgende voorbeeld ziet u hoe u een CSRF-token toevoegt aan een formulierverzending.
+Als het gebruik van de [`granite.csrf.standalone` clientbibliotheek ](#csrf-client-library) niet geschikt is voor uw gebruiksscenario, kunt u handmatig een CSRF-token toevoegen aan een formulierverzending. In het volgende voorbeeld ziet u hoe u een CSRF-token toevoegt aan een formulierverzending.
 
-Dit codefragment demonstreert hoe bij het verzenden van formulieren de CSRF-token kan worden opgehaald van AEM en toegevoegd aan een formulierinvoer met de naam `:cq_csrf_token`. Omdat de token CSRF een korte levensduur heeft, is het beter om de token CSRF op te halen en in te stellen direct voordat het formulier wordt verzonden, zodat de geldigheid van de token gegarandeerd is.
+Dit codefragment demonstreert hoe bij het verzenden van formulieren de CSRF-token kan worden opgehaald van AEM en toegevoegd aan een formulierinvoer met de naam `:cq_csrf_token` . Omdat de token CSRF een korte levensduur heeft, is het beter om de token CSRF op te halen en in te stellen direct voordat het formulier wordt verzonden, zodat de geldigheid van de token gegarandeerd is.
 
 ```javascript
 // Attach submit handler event to form onSubmit
@@ -74,9 +74,9 @@ document.querySelector('form').addEventListener('submit', async (event) => {
 
 ## Ophalen met KVP-beveiliging
 
-Als het gebruik van [`granite.csrf.standalone` clientbibliotheek](#csrf-client-library) is niet geschikt voor uw gebruiksgeval, kunt u een symbolisch CSRF aan een XHR manueel toevoegen of verzoeken halen. In het volgende voorbeeld ziet u hoe u een CSRF-token toevoegt aan een XHR die is gemaakt met ophalen.
+Als het gebruik van [`granite.csrf.standalone` cliëntbibliotheek ](#csrf-client-library) niet aan uw gebruiksgeval toegankelijk is, kunt u een symbolisch CSRF aan XHR manueel toevoegen of verzoeken halen. In het volgende voorbeeld ziet u hoe u een CSRF-token toevoegt aan een XHR die is gemaakt met ophalen.
 
-Dit codefragment toont aan hoe te om een symbolisch CSRF van AEM te halen, en het toe te voegen aan een haalverzoek `CSRF-Token` HTTP request header. Omdat het teken CSRF een kort leven heeft, is het best om het teken terug te winnen en te plaatsen CSRF onmiddellijk alvorens het haalverzoek wordt gemaakt, die zijn geldigheid verzekeren.
+Dit codefragment demonstreert hoe u een CSRF-token kunt ophalen van AEM en toevoegen aan de HTTP-aanvraagheader van een ophaalaanvraag `CSRF-Token` . Omdat het teken CSRF een kort leven heeft, is het best om het teken terug te winnen en te plaatsen CSRF onmiddellijk alvorens het haalverzoek wordt gemaakt, die zijn geldigheid verzekeren.
 
 ```javascript
 /**
@@ -102,7 +102,7 @@ await fetch('/path/to/aem/endpoint', {
 
 ## Dispatcher-configuratie
 
-Wanneer het gebruiken van tokens CSRF op AEM publicatiedienst, moet de configuratie van de Verzender worden bijgewerkt om GET- verzoeken aan het symbolische eindpunt toe te staan CSRF. De volgende configuratie staat GET verzoeken aan het symbolische eindpunt CSRF op de AEM toe publiceren dienst. Als deze configuratie niet wordt toegevoegd, keert het symbolische eindpunt CSRF een 404 niet Gevonden reactie terug.
+Wanneer het gebruiken van tokens CSRF op AEM dienst van Publish, moet de configuratie van Dispatcher worden bijgewerkt om GET verzoeken aan het symbolische eindpunt toe te staan CSRF. De volgende configuratie staat GET verzoeken aan het symbolische eindpunt CSRF op de dienst van AEM Publish toe. Als deze configuratie niet wordt toegevoegd, keert het symbolische eindpunt CSRF een 404 niet Gevonden reactie terug.
 
 * `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 

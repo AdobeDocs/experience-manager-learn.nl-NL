@@ -1,6 +1,6 @@
 ---
-title: De gereedschappen van Cloud Acceleration Manager gebruiken
-description: Een doorhaling van het gebruik van de gereedschappen van Cloud Acceleration Manager.
+title: Cloud Acceleration Manager-gereedschappen gebruiken
+description: Een doorgelichte doorloop van Cloud Acceleration Manager-gereedschappen.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# De gereedschappen van Cloud Acceleration Manager gebruiken
+# Cloud Acceleration Manager-gereedschappen gebruiken
 
-Een doorhaling van het gebruik van de gereedschappen van Cloud Acceleration Manager.
+Een doorgelichte doorloop van Cloud Acceleration Manager-gereedschappen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336699?quality=12&learn=on)

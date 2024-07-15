@@ -23,11 +23,11 @@ ht-degree: 0%
 
 # Basic React-app
 
-Dit [Reageren](https://reactjs.org/) toont hoe u inhoud kunt zoeken met behulp van AEM GraphQL API&#39;s met behulp van doorlopende query&#39;s. Deze toepassing geeft filterbaar van avonturen WKND terug, en na het selecteren van een avontuur, toont de avonturen volledige details.
+Deze [ Reactie ](https://reactjs.org/) app toont aan hoe te om inhoud te vragen gebruikend AEM GraphQL APIs gebruikend persisted vragen. Deze toepassing geeft filterbaar van avonturen WKND terug, en na het selecteren van een avontuur, toont de avonturen volledige details.
 
 Deze code:
 
-+ Verbindt met de AEM publicatieservice, en vereist geen authentificatie
-+ Gebruikt de hardnekkige vragen van WKND: `wknd-shared/adventures-all` en `wknd-shared/adventures-by-slug`
++ Maakt verbinding met een AEM Publish-service en vereist geen verificatie
++ Gebruikt de aanhoudend vragen van WKND: `wknd-shared/adventures-all` en `wknd-shared/adventures-by-slug`
 
-Voor een diepgaande beoordeling van de manier waarop deze Next.js-app is gemaakt, raadpleegt u de [voorbeeld Documentatie voor toepassing Reageren](../example-apps/react-app.md).
+Voor een meer diepgaande overzicht van hoe deze app Next.js wordt gebouwd, herzie het [ voorbeeld Reageer app documentatie ](../example-apps/react-app.md).

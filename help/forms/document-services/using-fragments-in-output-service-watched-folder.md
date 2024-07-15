@@ -20,19 +20,19 @@ ht-degree: 0%
 # PDF-document met fragmenten genereren met behulp van ECMA-script{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-In dit artikel gebruiken we de uitvoerservice om PDF-bestanden te genereren met xdp-fragmenten. De hoofd xdp en de fragmenten verblijven in de crx bewaarplaats. Het is belangrijk dat u de mapstructuur van het bestandssysteem in AEM nabootst. Als u bijvoorbeeld een fragment in de fragmentmap in uw xdp gebruikt, moet u een map maken met de naam **fragmenten** onder de basismap in AEM. De basismap bevat uw basis-xdp-sjabloon. Bijvoorbeeld, als u de volgende structuur op uw dossiersysteem hebt
+In dit artikel gebruiken we de uitvoerservice om PDF-bestanden te genereren met xdp-fragmenten. De hoofd xdp en de fragmenten verblijven in de crx bewaarplaats. Het is belangrijk dat u de mapstructuur van het bestandssysteem in AEM nabootst. Bijvoorbeeld als u een fragment in fragmentomslag in uw xdp gebruikt moet u een omslag creëren genoemd **fragmenten** onder uw basisomslag in AEM. De basismap bevat uw basis-xdp-sjabloon. Bijvoorbeeld, als u de volgende structuur op uw dossiersysteem hebt
 * c:\xdptemplates - Deze bevat uw basis-xdp-sjabloon
 * c:\xdptemplates\fragments - Deze map bevat fragmenten en de hoofdsjabloon verwijst naar het fragment zoals hieronder wordt weergegeven
-  ![fragment-xdp](assets/survey-fragment.png).
-* De map xdpdocuments bevat uw basissjabloon en de fragmenten in **fragmenten** map
+  ![ fragment-xdp ](assets/survey-fragment.png).
+* De omslag xdpdocuments zal uw basissjabloon en de fragmenten in **fragments** omslag bevatten
 
-U kunt de vereiste structuur maken met de [formulieren en document-ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+U kunt de vereiste structuur tot stand brengen gebruikend [ vormen en document ui ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
 Hier volgt de mapstructuur voor de voorbeeld-xdp die 2 fragmenten gebruikt
-![formulieren&amp;document](assets/fragment-folder-structure-ui.png)
+![ vormen&amp;document ](assets/fragment-folder-structure-ui.png)
 
 
-* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de xdp-sjabloon of pdf om samengevoegde pdf te genereren. Raadpleeg voor meer informatie de [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) voor de service Uitvoer. In dit voorbeeld gebruiken we fragmenten die zich in de crx-opslagplaats bevinden.
+* Uitvoerservice - Deze service wordt doorgaans gebruikt om XML-gegevens samen te voegen met de xdp-sjabloon of pdf om samengevoegde pdf te genereren. Voor meer details, gelieve te verwijzen naar [ javadoc ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) voor de dienst van de Output. In dit voorbeeld gebruiken we fragmenten die zich in de crx-opslagplaats bevinden.
 
 
 Het volgende ECMA-script is gebruikt om PDF te genereren. Bericht het gebruik van ResourceResolver en ResourceResolverHelper in de code. ResourceReolver is nodig aangezien deze code buiten om het even welke gebruikerscontext loopt.
@@ -65,13 +65,13 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
  });
 ```
 
-**De monsterverpakking op uw systeem testen**
+**om het steekproefpakket op uw systeem** te testen
 * [Implementeer de DevelopingWithServiceUSer-bundel](assets/DevelopingWithServiceUser.jar)
-* De vermelding toevoegen **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** in de gebruikerstoewijzingswijziging zoals weergegeven in onderstaande screenshot
-  ![wijziging gebruikershandtekening](assets/user-mapper-service-amendment.png)
-* [Download en importeer de voorbeeld-xdp-bestanden en de ECMA-scripts](assets/watched-folder-fragments-ecma.zip).
+* Voeg de ingang **DevelopingWithServiceUser.core toe:getformsresourceresolver=fd-service** in het de dienstamendement van de gebruikershandkaart zoals aangetoond in hieronder het scherm
+  ![ gebruiker mapper amendement ](assets/user-mapper-service-amendment.png)
+* [ Download en voer de steekproefXdp- dossiers en manuscripten ECMA ](assets/watched-folder-fragments-ecma.zip) in.
 Hiermee wordt een gecontroleerde mapstructuur gemaakt in de map c:/fragmentsandoutputservice
 
-* [Het bestand met voorbeeldgegevens extraheren](assets/usingFragmentsSampleData.zip) en plaats deze in de installatiemap van uw gecontroleerde map (c:\fragmentsandoutputservice\install)
+* [ extraheert het dossier van steekproefgegevens ](assets/usingFragmentsSampleData.zip) en plaatst het in de installatiemap van uw gelete op omslag (c:\fragmentsandoutputdienst \ installeert)
 
 * Controleer de resultatenmap van de configuratie van de gecontroleerde map op het gegenereerde PDF-bestand

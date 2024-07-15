@@ -21,28 +21,28 @@ ht-degree: 0%
 
 # Aangepaste domeinnaam toevoegen
 
-Leer hoe u een aangepaste domeinnaam aan AEM as a Cloud Service website kunt toevoegen.
+Leer hoe u een aangepaste domeinnaam aan de AEM as a Cloud Service-website kunt toevoegen.
 
-In deze zelfstudie wordt de branding van het voorbeeld [AEM WKND](https://github.com/adobe/aem-guides-wknd) site wordt verbeterd door een voor HTTPS adresseerbare aangepaste domeinnaam toe te voegen `wknd.enablementadobe.com` met TLS (Transport Layer Security).
+In dit leerprogramma, wordt het branding van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats verbeterd door een HTTPS-Adressable naam van het douanedomein `wknd.enablementadobe.com` met de Veiligheid van de Laag van het Vervoer (TLS) toe te voegen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427903?quality=12&learn=on)
 
 De stappen op hoog niveau zijn:
 
-![Aangepaste domeinnaam](./assets/add-custom-domain-name-steps.png){width="800" zoomable="yes"}
+![ Hoge Naam van het Domein van de Douane ](./assets/add-custom-domain-name-steps.png){width="800" zoomable="yes"}
 
 ## Vereisten
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427909?quality=12&learn=on)
 
-- [OpenSSL](https://www.openssl.org/) en [graven](https://www.isc.org/blogs/dns-checker/) zijn geïnstalleerd op uw lokale computer.
+- [ OpenSSL ](https://www.openssl.org/) en [ graven ](https://www.isc.org/blogs/dns-checker/) zijn geïnstalleerd op uw lokale machine.
 - Toegang tot diensten van derden:
-   - Certificaatinstantie (CA) - voor het aanvragen van het ondertekende certificaat voor uw sitedomein, zoals [DigitCert](https://www.digicert.com/)
+   - De Autoriteit van het certificaat (CA) - om het ondertekende certificaat voor uw plaatsdomein, als [ DigitCert ](https://www.digicert.com/) te verzoeken
    - De het ontvangen dienst van het Systeem van de Naam van het domein (DNS) - om DNS verslagen voor uw douanedomein, zoals Azure DNS, of Route 53 van AWS toe te voegen.
-- Toegang tot [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) als Business Owner of Deployment Manager.
-- Monster [AEM WKND](https://github.com/adobe/aem-guides-wknd) site wordt geïmplementeerd in de AEMCS-omgeving van [productieprogramma](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) type.
+- Toegang tot [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com/) als BedrijfsEigenaar of de rol van de Manager van de Plaatsing.
+- De steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats wordt opgesteld aan milieu AEMCS van [ het type van het productieprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
-Als u geen toegang hebt tot services van derden, _samenwerken met uw beveiligings- of hostingteam om de stappen te voltooien_.
+Als u geen toegang tot derdediensten hebt, _samenwerken met uw veiligheid of het ontvangen team om de stappen_ te voltooien.
 
 ## SSL-certificaat genereren
 
@@ -50,7 +50,7 @@ Als u geen toegang hebt tot services van derden, _samenwerken met uw beveiliging
 
 U hebt twee opties:
 
-- Gebruiken `openssl` opdrachtregelprogramma - u kunt een persoonlijke sleutel en een CSR-bestand (Certificate Signing Request) voor uw sitedomein genereren. Om een ondertekend certificaat aan te vragen, dient u de CSR in bij een certificeringsinstantie (CA).
+- Met het opdrachtregelprogramma van `openssl` kunt u een persoonlijke sleutel en een CSR-bestand (Certificate Signing Request) voor uw sitedomein genereren. Om een ondertekend certificaat aan te vragen, dient u de CSR in bij een certificeringsinstantie (CA).
 
 - Uw hostingteam beschikt over de vereiste persoonlijke sleutel en het vereiste ondertekende certificaat voor uw site.
 
@@ -67,7 +67,7 @@ Om een ondertekend certificaat aan te vragen, verstrek geproduceerde CSR aan CA 
 
 ### Ondertekend certificaat bekijken
 
-U kunt het beste het ondertekende certificaat controleren voordat u het toevoegt aan Cloud Manager. U kunt de certificaatdetails bekijken met de volgende opdracht:
+Het is een goede gewoonte om het ondertekende certificaat te beoordelen voordat u het aan de Cloud Manager toevoegt. U kunt de certificaatdetails bekijken met de volgende opdracht:
 
 ```bash
 # Review the certificate details
@@ -76,15 +76,15 @@ $ openssl crl2pkcs7 -nocrl -certfile <YOUR-SIGNED-CERT>.crt | openssl pkcs7 -pri
 
 Het ondertekende certificaat kan de certificaatketen bevatten, die de basis- en tussenliggende certificaten bevat, samen met het certificaat van de eindentiteit.
 
-De Adobe Cloud Manager accepteert het certificaat van de eindentiteit en de certificaatketen _in afzonderlijke formuliervelden_, dus moet u het certificaat van de eindentiteit en de certificaatketen uit het ondertekende certificaat extraheren.
+De Adobe Cloud Manager keurt het eindentiteitcertificaat en de certificaatketting _in afzonderlijke vormgebieden_ goed, zodat moet u het eindentiteitcertificaat en de certificaatketting van het ondertekende certificaat halen.
 
-In deze zelfstudie [DigitCert](https://www.digicert.com/) ondertekend certificaat uitgegeven tegen `*.enablementadobe.com` domein wordt als voorbeeld gebruikt. De eindentiteit- en certificaatketen wordt geëxtraheerd door het ondertekende certificaat te openen in een teksteditor en de inhoud te kopiëren tussen de `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` markeringen.
+In dit leerprogramma, wordt het ](https://www.digicert.com/) ondertekende certificaat DigitCert [ dat tegen `*.enablementadobe.com` domein wordt uitgegeven gebruikt als voorbeeld. De eindentiteit- en certificaatketen wordt geëxtraheerd door het ondertekende certificaat te openen in een teksteditor en de inhoud te kopiëren tussen de markeringen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` .
 
 ## SSL-certificaat toevoegen in Cloud Manager
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427906?quality=12&learn=on)
 
-Ga als volgt te werk om het SSL-certificaat toe te voegen in Cloud Manager [SSL-certificaat toevoegen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate) documentatie.
+Om het SSL certificaat in Cloud Manager toe te voegen, volg [ SSL Certificaat ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate) documentatie toevoegen.
 
 ## Domeinnaamverificatie
 
@@ -92,9 +92,9 @@ Ga als volgt te werk om het SSL-certificaat toe te voegen in Cloud Manager [SSL-
 
 Voer de volgende stappen uit om de domeinnaam te controleren:
 
-- Domeinnaam toevoegen in Cloud Manager door de instelling [Aangepaste domeinnaam toevoegen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) documentatie.
-- Een AEM toevoegen [TXT-record](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) in uw DNS-hostingservice.
-- Verifieer de bovenstaande stappen door de DNS servers te vragen die DNS gebruiken `dig` gebruiken.
+- Voeg domeinnaam in Cloud Manager toe door [ te volgen voeg de documentatie van de Naam van het Domein van de Douane ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) toe.
+- Voeg een AEM-specifiek [ TXT verslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) in uw DNS het ontvangen dienst toe.
+- Verifieer de bovenstaande stappen door de DNS servers te vragen gebruikend het `dig` bevel.
 
 ```bash
 # General syntax, the `_aemverification` is prefix provided by Adobe
@@ -129,7 +129,7 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 In dit leerprogramma, wordt Azure DNS gebruikt als voorbeeld. Om het TXT- verslag toe te voegen, moet u de documentatie van uw DNS het ontvangen dienst volgen.
 
-Controleer de [Status domeinnaam controleren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status) documentatie als er een probleem is.
+Herzie de [ Controlerende de Status van de Naam van het Domein ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status) documentatie als er een kwestie is.
 
 ## DNS-record configureren
 
@@ -137,13 +137,13 @@ Controleer de [Status domeinnaam controleren](https://experienceleague.adobe.com
 
 Om het DNS verslag voor uw douanedomein te vormen volg deze stappen:
 
-- Bepaal het DNS verslagtype (CNAME of APEX) dat op het domeintype, zoals worteldomein (APEX) of subdomain (CNAME) wordt gebaseerd, en volg [DNS-instellingen configureren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings) documentatie.
+- Bepaal het DNS verslagtype (CNAME of APEX) dat op het domeintype, zoals worteldomein (APEX) of subdomain (CNAME) wordt gebaseerd, en volg de [ Vormende DNS documentatie van Montages ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings).
 - Voeg het DNS-record toe aan uw DNS-hostingservice.
-- Trigger de DNS verslagbevestiging door te volgen [DNS-recordstatus controleren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status) documentatie.
+- Trigger de DNS verslagbevestiging door de [ controlerende DNS documentatie van de Status van het Verslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status) te volgen.
 
-In deze zelfstudie, als **subdomein** `wknd.enablementadobe.com` wordt gebruikt, het CNAME- verslagtype dat aan richt `cdn.adobeaemcloud.com` wordt toegevoegd.
+In dit leerprogramma, aangezien a **subdomain** `wknd.enablementadobe.com` wordt gebruikt, wordt het CNAME- verslagtype dat aan `cdn.adobeaemcloud.com` richt toegevoegd.
 
-Als u echter de opdracht **hoofddomein**, moet u APEX-recordtype (ook wel A, ALIAS of ANAME genoemd) toevoegen dat naar de specifieke IP-adressen verwijst die door de Adobe worden opgegeven.
+Nochtans, als u het **worteldomein** gebruikt, moet u APEX- verslagtype (alias A, ALIAS, of ANAME) toevoegen dat aan de specifieke IP adressen richt die door Adobe worden verstrekt.
 
 ## Site-verificatie
 
@@ -153,6 +153,6 @@ Als u wilt controleren of de site toegankelijk is met de aangepaste domeinnaam, 
 
 ## Video beëindigen tot einde
 
-U kunt de video van begin tot eind ook bekijken die het overzicht, de eerste vereisten, en bovenstaande stappen aantoont om een naam van het douanedomein aan AEM as a Cloud Service-ontvangen plaats toe te voegen.
+U kunt ook de end-to-end video bekijken die het overzicht, de eerste vereisten, en bovenstaande stappen toont om een douanedomeinaam aan AEM as a Cloud Service-ontvangen plaats toe te voegen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427817?quality=12&learn=on)

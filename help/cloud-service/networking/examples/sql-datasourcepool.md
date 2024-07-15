@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # SQL-verbindingen met JDBC DataSourcePool
 
-Verbindingen met SQL gegevensbestanden (en andere niet-HTTP/HTTPS diensten) moeten uit AEM worden proxied, met inbegrip van die gemaakt die de dienst DataSourcePool OSGi gebruiken om de verbindingen te beheren.
+Verbindingen met SQL gegevensbestanden (en andere niet-HTTP/HTTPS diensten) moeten uit AEM worden proxied, met inbegrip van die gemaakt gebruikend de AEM dienst DataSourcePool OSGi om de verbindingen te beheren.
 
 ## Geavanceerde netwerkondersteuning
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
-Zorg ervoor dat de [passend](../advanced-networking.md#advanced-networking) de geavanceerde voorzien van een netwerkconfiguratie is opstelling voorafgaand aan het volgen van dit leerprogramma.
+Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
 
-| Geen geavanceerde netwerken | [Flexibele poortuitgang](../flexible-port-egress.md) | [IP-adres van specifiek egress](../dedicated-egress-ip-address.md) | [Virtueel privé netwerk](../vpn.md) |
+| Geen geavanceerde netwerken | [ Flexibele havenuitgang ](../flexible-port-egress.md) | [ Dedicated egress IP adres ](../dedicated-egress-ip-address.md) | [ Virtueel Privé Netwerk ](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
@@ -35,10 +35,10 @@ Zorg ervoor dat de [passend](../advanced-networking.md#advanced-networking) de g
 
 Het verbindingskoord van de configuratie OSGi gebruikt:
 
-+ `AEM_PROXY_HOST` waarde via de [OSGi-variabele voor configuratieomgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` als de host van de verbinding
-+ `30001` de `portOrig` waarde voor voorwaartse toewijzing van de poort van Cloud Manager `30001` → `mysql.example.com:3306`
++ `AEM_PROXY_HOST` waarde via de [ OSGi variabele van het configuratiemilieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` als gastheer van de verbinding
++ `30001` dat de `portOrig` waarde is voor de voorwaartse toewijzing van de Cloud Manager-poort `30001` → `mysql.example.com:3306`
 
-Aangezien geheimen niet in code moeten worden opgeslagen, zijn de gebruikersbenaming en het wachtwoord van de SQL verbinding best verstrekt via OSGi configuratievariabelen, plaatsen gebruikend AIO CLI, of de Manager APIs van de Wolk.
+Aangezien geheimen niet in code moeten worden opgeslagen, zijn de gebruikersbenaming en het wachtwoord van de SQL verbinding best verstrekt via OSGi configuratievariabelen, plaatsen gebruikend AIO CLI, of Cloud Manager APIs.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/config/com.day.commons.datasource.jdbcpool.JdbcPoolService~wknd-examples-mysql.cfg.json`
 
@@ -60,8 +60,8 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Codevoorbeeld
 
-Dit Java™ codevoorbeeld is van de dienst OSGi die een verbinding met een extern gegevensbestand MySQL via AEM dienst DataSourcePool OSGi maakt.
-De OSGi-fabrieksconfiguratie van DataSourcePool geeft op zijn beurt een poort aan (`30001`) die via de `portForwards` in de [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) exploitatie naar de externe host en poort; `mysql.example.com:3306`.
+Dit Java™ codevoorbeeld is van de dienst OSGi die een verbinding met een extern gegevensbestand MySQL via AEM de dienst van DataSourcePool OSGi maakt.
+De DataSourcePool OSGi fabrieksconfiguratie specificeert beurtelings een haven (`30001`) die door de `portForwards` regel in de [ enableEnvironmentAdvancedNetworkingConfiguration ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting aan de externe gastheer en haven, `mysql.example.com:3306` in kaart wordt gebracht.
 
 ```json
 ...
@@ -134,11 +134,11 @@ public class JdbcExternalServiceImpl implements ExternalService {
 
 ## MySQL-stuurprogramma-afhankelijkheden
 
-AEM as a Cloud Service vereist vaak dat u Java™ databasestuurprogramma&#39;s aanbiedt ter ondersteuning van de verbindingen. De stuurprogramma&#39;s kunt u het beste bereiken door de OSGi-bundelartefacten met deze stuurprogramma&#39;s in te sluiten in het AEM-project via de `all` pakket.
+AEM as a Cloud Service vereist vaak dat u Java™ databasestuurprogramma&#39;s aanbiedt ter ondersteuning van de verbindingen. De stuurprogramma&#39;s kunt u het beste leveren door de OSGi-bundelartefacten met deze stuurprogramma&#39;s in te sluiten in het AEM project via het `all` -pakket.
 
 ### Reactor pom.xml
 
-De afhankelijkheid van het databasestuurprogramma in de reactor opnemen `pom.xml` en verwijst u naar de `all` subprojecten.
+Neem de afhankelijkheden van het databasestuurprogramma op in de reactor `pom.xml` en verwijs deze naar de subprojecten van `all` .
 
 + `pom.xml`
 
@@ -160,7 +160,7 @@ De afhankelijkheid van het databasestuurprogramma in de reactor opnemen `pom.xml
 
 ## Alle pom.xml
 
-Sluit de afhankelijkheidsartefacten van het databasestuurprogramma in de `all` het pakket aan hen wordt opgesteld en beschikbaar op AEM as a Cloud Service. Deze artefacten __moet__ zijn OSGi-bundels die de Java™-klasse van het databasestuurprogramma exporteren.
+Sluit de afhankelijkheidsartefacten van het databasestuurprogramma in het `all` -pakket in zodat deze kunnen worden geïmplementeerd en beschikbaar zijn op AEM as a Cloud Service. Deze artefacten __moeten__ bundels OSGi zijn die de klasse van Java™ van de gegevensbestandbestuurder uitvoeren.
 
 + `all/pom.xml`
 

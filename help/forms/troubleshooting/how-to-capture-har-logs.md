@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # HAR-logbestanden (HTTP-archief) vastleggen
 
-*Deze video doorloopt de stappen om HAR (HTTP-archief)-logboeken vast te leggen.*
+*Deze video loopt door de stappen om HAR (het archief van HTTP) logboeken te vangen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335488?quality=12&learn=on)

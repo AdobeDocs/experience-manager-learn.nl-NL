@@ -36,13 +36,13 @@ ht-degree: 0%
 >* Microsoft Visual C++ 2012 herdistribueerbaar
 >* Microsoft Visual C++ 2013 herdistribueerbaar (vanaf 6.5)
 
-Hoewel we het volgende aanbevelen [officiële documentatie](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) voor het installeren van AEM Forms. U kunt de volgende stappen volgen om AEM Forms in Windows-omgeving te installeren en configureren:
+Hoewel wij na de [ officiële documentatie ](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) voor het installeren van AEM Forms adviseren. U kunt de volgende stappen volgen om AEM Forms in Windows-omgeving te installeren en configureren:
 
 * Zorg ervoor dat de juiste JDK is geïnstalleerd
    * AEM 6.2 hebt u nodig: Oracle SE 8 JDK 1.8.x (64 bits)
    * AEM 6.3 en AEM 6.4 hebt u nodig: Oracle SE 8 JDK 1.8.x (64-bits)
    * AEM 6.5 hebt u JDK 8 of JDK 11 nodig
-   * [Officiële JDK-vereisten](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=en) hier vermeld
+   * [ Officiële JDK Vereisten ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=en) zijn hier vermeld
 * Zorg ervoor JAVA_HOME wordt geplaatst om aan JDK te richten u hebt geïnstalleerd.
    * Volg onderstaande stappen om de JAVA_HOME-variabele in vensters te maken:
       * Klik met de rechtermuisknop op Deze computer en selecteer Eigenschappen
@@ -57,7 +57,7 @@ Hoewel we het volgende aanbevelen [officiële documentatie](https://helpx.adobe.
       * Hier AEM_6.5_Quickstart.jar is de naam van mijn AEM quickstart jar.
    * U kunt de naam van de jar wijzigen, maar zorg dat de naam wordt weergegeven in het batchbestand. Sla het batchbestand op in de map AEMForms.
 
-* Een nieuwe opdrachtprompt openen en naar _c:\aemforms_.
+* Open een nieuwe bevelherinnering, en navigeer aan _c:\ aemforms_.
 
 * Voer het StartAemForms.bat- dossier van de bevelherinnering uit.
 
@@ -69,21 +69,21 @@ Hoewel we het volgende aanbevelen [officiële documentatie](https://helpx.adobe.
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * Deze twee eigenschappen zijn vereist voor documentservices die werken
 * Het bestand sling.properties opslaan
-* [Download het juiste adrespakket voor formulieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
-* De toegevoegde formulieren op het pakket installeren met [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp).
+* [ Download de aangewezen vormen addon pakket ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
+* Installeer de vormen toevoegen op pakket gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp).
 * Nadat u het pakket hebt geïnstalleerd, moet u de volgende stappen volgen
 
-   * **Zorg ervoor dat alle bundels actief zijn. (Met uitzondering van de bundel voor AEMFD-handtekeningen).**
-   * **Doorgaans duurt het 5 of meer minuten voordat alle bundels actief worden.**
+   * **zorg ervoor alle bundels in actieve staat zijn. (Met uitzondering van de AEMFD-bundel Handtekeningen).**
+   * **het zou typisch 5 of meer notulen voor alle bundels nemen om aan actieve staat te krijgen.**
 
-   * **Zodra alle bundels actief zijn (behalve de bundel van Handtekeningen AEMFD), begin uw systeem opnieuw om de installatie van AEM Forms te voltooien**
+   * **Zodra alle bundels (behalve de bundel van de Handtekeningen AEMFD) actief zijn, nieuw begin uw systeem om de installatie van AEM Forms te voltooien**
 
 ## sun.util.agenda-pakket aan de lijst van gewenste personen
 
-1. Felix-webconsole openen in uw [browservenster](http://localhost:4502/system/console/configMgr)
-1. Configuratie van firewall voor zoeken en openen: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-1. Toevoegen `sun.util.calendar` als nieuwe vermelding onder `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
+1. Open het Webconsole van Felix in uw [ browser venster ](http://localhost:4502/system/console/configMgr)
+1. Firewall-configuratie deserialization zoeken en openen: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+1. `sun.util.calendar` toevoegen als een nieuw item onder `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
 1. Sla de wijzigingen op.
 
 Gefeliciteerd!! U hebt nu AEM Forms op uw systeem geïnstalleerd en geconfigureerd.
-Afhankelijk van uw behoeften kunt u configureren  [Reader-extensies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) of [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) op uw server
+Afhankelijk van uw behoeften kunt u {de Uitbreidingen van de Reader 0} vormen ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) of [ PDFG ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) op uw server[

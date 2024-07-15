@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot Thema's in Commons voor het Aandeel van Activa
-description: Materialen voor zowel de functionele als de technische overeenkomst Activa Share Commons
+description: Materialen voor zowel de functionele als de technische kennis van Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
 feature: Asset Distribution
@@ -76,9 +76,9 @@ In deze video wordt een nieuw thema gemaakt op basis van het donkere thema Commo
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Downloaden [Thema aangepaste clientbibliotheek](assets/asc-theme-demo.zip)
+Het Thema van de Bibliotheek van de Cliënt van de download [ ](assets/asc-theme-demo.zip)
 
 ## Aanvullende bronnen{#additional-resources}
 
-* [Downloads voor de release van Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
-* [ACS AEM Commons 3.11.0+ versiedownloads](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [ de versiedownloads van de Commons van het Aandeel van activa ](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
+* [ ACS AEM Commons 3.11.0+ versiedownloads ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)

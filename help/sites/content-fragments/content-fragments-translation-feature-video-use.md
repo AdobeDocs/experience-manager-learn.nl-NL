@@ -28,15 +28,15 @@ Leer hoe u Content Fragments kunt lokaliseren en vertalen met Adobe Experience M
 
 Inhoudsfragmenten zijn een herkend inhoudstype dat extracten AEM die naar een externe vertaalservice moeten worden verzonden. Verschillende gebruiksgevallen worden vanuit het vak ondersteund:
 
-1. Een inhoudsfragment kan [rechtstreeks geselecteerd in de middelenconsole voor het kopiëren en vertalen van talen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+1. Een tevreden Fragment kan [ direct in de console van Assets voor taalexemplaar en vertaling ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html) worden geselecteerd.
 2. Inhoudsfragmenten waarnaar op een sitepagina wordt verwezen, worden naar de juiste taalmap gekopieerd en voor vertaling uitgepakt wanneer de sitepagina is geselecteerd voor een taalkopie.
 3. Inline media-elementen die zijn ingesloten in een inhoudsfragment, kunnen worden geëxtraheerd en vertaald.
 4. Verzamelingen van middelen die aan een inhoudsfragment zijn gekoppeld, kunnen worden uitgepakt en vertaald.
 
 ## Editor voor omzettingsregels {#translation-rules-editor}
 
-Het vertaalgedrag van de Experience Manager kan worden bijgewerkt door **Editor voor omzettingsregels**. Als u de vertaling wilt bijwerken, navigeert u naar **Gereedschappen** > **Algemeen** > **Omzetconfiguratie** om [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
+Het vertaalgedrag van de Experience Manager kan worden bijgewerkt door de **Redacteur van de Regels van de Vertaling** te gebruiken. Om de vertaling bij te werken, navigeer aan **Hulpmiddelen** > **Algemeen** > **Vertaalconfiguratie** in [ http://localhost:4502/libs/cq/translation/translationrules/contexts.html ](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
 
-Verwijs uit de doos configuraties de Fragmenten van de verwijzingsInhoud bij `fragmentPath` met een type resource `core/wcm/components/contentfragment/v1/contentfragment`. Alle componenten die van het `v1/contentfragment` worden herkend door de standaardconfiguratie.
+Verwijs vanuit de box configuraties naar Content Fragments bij `fragmentPath` met een middeltype van `core/wcm/components/contentfragment/v1/contentfragment`. Alle componenten die van `v1/contentfragment` erven worden erkend door de standaardconfiguratie.
 
-![Editor voor omzettingsregels](assets/translation-configuration.png)
+![ Redacteur van de Regels van de Vertaling ](assets/translation-configuration.png)

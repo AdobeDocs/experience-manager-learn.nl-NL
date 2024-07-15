@@ -1,6 +1,6 @@
 ---
 title: Adobe Cloud Manager gebruiken - Activiteit
-description: Cloud Manager biedt een geconsolideerde weergave van de activiteit van een programma, waarin alle uitvoer van CI-/CD-pijplijnen, zowel de productie als de niet-productie, wordt vermeld. Dit staat gebruikers toe om het even welke pijpleidingen te bekijken momenteel lopend en vorige plaatsingen te herzien.
+description: Cloud Manager geeft een geconsolideerd beeld van de activiteiten van een programma, waarin alle uitvoeringen van de CBI/CD-pijpleiding, zowel de productie als de niet-productie, worden vermeld. Dit staat gebruikers toe om het even welke pijpleidingen te bekijken momenteel lopend en vorige plaatsingen te herzien.
 doc-type: feature video
 version: Cloud Service
 jira: KT-6874
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 # Adobe Cloud Manager gebruiken - Activiteit
 
-Cloud Manager biedt een geconsolideerde weergave van de activiteit van een programma, waarin alle uitvoer van CI-/CD-pijplijnen, zowel de productie als de niet-productie, wordt vermeld. Dit staat gebruikers toe om het even welke pijpleidingen te bekijken momenteel lopend en vorige plaatsingen te herzien.
+Cloud Manager geeft een geconsolideerd beeld van de activiteiten van een programma, waarin alle uitvoeringen van de CBI/CD-pijpleiding, zowel de productie als de niet-productie, worden vermeld. Dit staat gebruikers toe om het even welke pijpleidingen te bekijken momenteel lopend en vorige plaatsingen te herzien.
 
-Cloud Manager kan ook per gebruiker worden geïntegreerd met [Adobe Experience Cloud-meldingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html), die een alomtegenwoordig beeld geven van evenementen en acties van belang.
+Cloud Manager integreert ook op een per-gebruikersniveau met [ Meldingen van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html), die een alomtegenwoordige mening in gebeurtenissen en acties van belang verstrekken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)

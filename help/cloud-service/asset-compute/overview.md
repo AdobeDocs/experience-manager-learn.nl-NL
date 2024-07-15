@@ -1,6 +1,6 @@
 ---
-title: Asset compute microservices uitbreidbaarheid voor AEM as a Cloud Service
-description: Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die een elementuitvoering maakt door het oorspronkelijke element aan een cirkel uit te snijden en configureerbare contrast en helderheid toepast. Hoewel de worker zelf een basis is, wordt deze zelfstudie gebruikt om het maken, ontwikkelen en implementeren van een aangepaste Asset compute-worker voor gebruik met AEM as a Cloud Service te verkennen.
+title: Uitbreidbaarheid van asset compute microservices voor AEM as a Cloud Service
+description: Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die een elementuitvoering maakt door het oorspronkelijke element aan een cirkel uit te snijden en configureerbare contrast en helderheid toepast. Hoewel de worker zelf van fundamenteel belang is, wordt deze zelfstudie gebruikt om het maken, ontwikkelen en implementeren van een aangepaste Asset compute-worker voor gebruik met AEM as a Cloud Service te verkennen.
 feature: Asset Compute Microservices
 version: Cloud Service
 doc-type: Tutorial
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 AEM als Asset compute microservices van de Cloud Service ondersteunen de ontwikkeling en implementatie van aangepaste workers die worden gebruikt om binaire gegevens van elementen die zijn opgeslagen in AEM te lezen en te manipuleren, meestal om aangepaste elementuitvoeringen te maken.
 
-Terwijl in AEM 6.x de processen van het AEMWerkschema werden gebruikt om, activa te lezen om te transformeren en terug te schrijven uitvoeringen, in AEM as a Cloud Service Asset compute voldoen de arbeiders aan deze behoefte.
+Terwijl in AEM 6.x de processen van het AEMWerkschema werden gebruikt om, activa te lezen om te transformeren en terug te schrijven uitvoeringen, in de Asset compute van AEM as a Cloud Service voldoen de arbeiders aan deze behoefte.
 
 ## Wat u gaat doen
 
 >[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
 
-Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die een elementuitvoering maakt door het oorspronkelijke element aan een cirkel uit te snijden en configureerbare contrast en helderheid toepast. Hoewel de worker zelf een basis is, wordt deze zelfstudie gebruikt om het maken, ontwikkelen en implementeren van een aangepaste Asset compute-worker voor gebruik met AEM as a Cloud Service te verkennen.
+Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die een elementuitvoering maakt door het oorspronkelijke element aan een cirkel uit te snijden en configureerbare contrast en helderheid toepast. Hoewel de worker zelf van fundamenteel belang is, wordt deze zelfstudie gebruikt om het maken, ontwikkelen en implementeren van een aangepaste Asset compute-worker voor gebruik met AEM as a Cloud Service te verkennen.
 
 ### Doelstellingen {#objective}
 
@@ -37,7 +37,7 @@ Deze zelfstudie doorloopt het maken van een eenvoudige Asset compute-worker die 
 1. Een Asset compute-project maken en configureren
 1. Een Asset compute-worker ontwikkelen die een aangepaste uitvoering genereert
 1. Schrijf tests voor, en leer hoe te om de arbeider van de douane Asset compute te zuiveren
-1. Implementeer de Asset compute-worker en integreer deze AEM de as a Cloud Service Auteur-service via het verwerken van profielen
+1. Implementeer de Asset compute-worker en integreer deze met de AEM as a Cloud Service Author-service via het verwerken van profielen
 
 ## Instellen
 
@@ -45,7 +45,7 @@ Leer hoe te om behoorlijk voor te bereiden op het uitbreiden van de arbeiders va
 
 ### Account en service-provisioning{#accounts-and-services}
 
-De volgende accounts en services vereisen provisioning en toegang tot deze services om de zelfstudie, AEM as a Cloud Service ontwikkelomgeving of het Sandbox-programma, toegang tot App Builder en Microsoft Azure Blob Storage te voltooien.
+De volgende accounts en services vereisen provisioning en toegang tot deze services om de zelfstudie, AEM as a Cloud Service Dev-omgeving of Sandbox-programma, toegang tot App Builder en Microsoft Azure Blob Storage te voltooien.
 
 + [Rekeningen en diensten](./set-up/accounts-and-services.md)
 
@@ -57,7 +57,7 @@ De lokale ontwikkeling van de projecten van de Asset compute vereist een specifi
 
 ### App Builder
 
-De projecten van de asset compute zijn speciaal bepaalde projecten App Builder, en als dusdanig, vereisen toegang tot App Builder in de Console van Adobe Developer om hen te opstelling en op te stellen.
+Asset compute-projecten zijn speciaal gedefinieerde App Builder-projecten en hebben als zodanig toegang tot App Builder in de Adobe Developer Console nodig om ze op te zetten en te implementeren.
 
 + [App Builder instellen](./set-up/app-builder.md)
 
@@ -67,13 +67,13 @@ Leer om een project van de Asset compute tot stand te brengen en te vormen en da
 
 ### Een nieuw Asset compute-project maken
 
-De projecten van de asset compute, die één of meerdere arbeiders van de Asset compute bevatten, worden geproduceerd gebruikend interactieve Adobe I/O CLI. De projecten van de asset compute zijn speciaal gestructureerde projecten App Builder, die beurtelings projecten Node.js zijn.
+De projecten van de asset compute, die één of meerdere arbeiders van de Asset compute bevatten, worden geproduceerd gebruikend interactieve Adobe I/O CLI. Asset compute-projecten zijn speciaal gestructureerde App Builder-projecten, die op hun beurt weer Node.js-projecten zijn.
 
 + [Een nieuw Asset compute-project maken](./develop/project.md)
 
 ### Omgevingsvariabelen configureren
 
-Omgevingsvariabelen blijven behouden in de `.env` bestand voor lokale ontwikkeling en worden gebruikt om gegevens over Adobe I/O en cloudopslag te verstrekken die vereist zijn voor lokale ontwikkeling.
+Omgevingsvariabelen worden bijgehouden in het `.env` -bestand voor lokale ontwikkeling en worden gebruikt om gegevens voor Adobe I/O- en cloudopslag te verstrekken die vereist zijn voor lokale ontwikkeling.
 
 + [Omgevingsvariabelen configureren](./develop/environment-variables.md)
 
@@ -107,13 +107,13 @@ Asset compute biedt een testkader voor het maken van testreeksen voor werknemers
 
 ### Fouten opsporen in een worker
 
-De arbeiders van de asset compute verstrekken diverse niveaus van het zuiveren van traditioneel `console.log(..)` uitvoer, naar integratie met __VS-code__ en  __wskdebug__, zodat ontwikkelaars de code van de worker stap voor stap kunnen doorlopen terwijl deze in real-time wordt uitgevoerd.
+De arbeiders van de asset compute verstrekken diverse niveaus van het zuiveren van traditionele `console.log(..)` output, aan integratie met __VS Code__ en __wskdebug__, toestaand ontwikkelaars stap door arbeiderscode aangezien het in echt - tijd uitvoert.
 
 + [Fouten opsporen in een worker](./test-debug/debug.md)
 
 ## Implementeren
 
-Leer hoe u medewerkers van aangepaste Asset computen integreert met AEM as a Cloud Service, door deze eerst te implementeren in Adobe I/O Runtime en vervolgens bij AEM as a Cloud Service auteur aan te roepen via AEM Assets&#39; Processing Profiles.
+Leer hoe u medewerkers van aangepaste Asset computen kunt integreren met AEM as a Cloud Service door deze eerst te implementeren in Adobe I/O Runtime en vervolgens een beroep te doen op AEM as a Cloud Service Author via AEM Assets&#39; Processing Profiles.
 
 ### Distribueren naar Adobe I/O Runtime
 
@@ -123,7 +123,7 @@ Asset compute werknemers moeten in Adobe I/O Runtime worden ingezet om met AEM a
 
 ### Workers integreren via AEM verwerkingsprofielen
 
-Als ze eenmaal zijn geïmplementeerd in Adobe I/O Runtime, kunnen Asset compute-workers in AEM as a Cloud Service worden geregistreerd via [Elementen verwerken profielen](../../assets/configuring/processing-profiles.md). Verwerkingsprofielen worden op hun beurt toegepast op de mappen met elementen die op de elementen ervan van toepassing zijn.
+Zodra opgesteld aan Adobe I/O Runtime, kunnen de arbeiders van de Asset compute in AEM as a Cloud Service via [ Assets Verwerkingsprofielen ](../../assets/configuring/processing-profiles.md) worden geregistreerd. Verwerkingsprofielen worden op hun beurt toegepast op de mappen met elementen die op de elementen ervan van toepassing zijn.
 
 + [Integreren met AEM verwerkingsprofielen](./deploy/processing-profiles.md)
 
@@ -131,15 +131,15 @@ Als ze eenmaal zijn geïmplementeerd in Adobe I/O Runtime, kunnen Asset compute-
 
 Deze verkorte zelfstudies behandelen geavanceerdere gebruiksgevallen, voortbouwend op basiskennis die in de voorgaande hoofdstukken is vastgelegd.
 
-+ [Een Asset compute metagegevensworker ontwikkelen](./advanced/metadata.md) die metagegevens naar de
++ [ ontwikkelt een worker van de meta-gegevens van de Asset compute ](./advanced/metadata.md) die meta-gegevens terug naar kan schrijven
 
 ## Codebase op Github
 
 De zelfstudie is beschikbaar op Github op:
 
-+ [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ hoofdvertakking
++ [ adobe/aem-guides-wknd-asset-compute ](https://github.com/adobe/aem-guides-wknd-asset-compute) @ hoofdtak
 
-De broncode bevat niet de vereiste `.env` of `config.json` bestanden. Deze moeten worden toegevoegd en gevormd gebruikend uw [rekeningen en diensten](#accounts-and-services) informatie.
+De broncode bevat niet de vereiste `.env` - of `config.json` -bestanden. Deze moeten worden toegevoegd en worden gevormd gebruikend uw [ rekeningen en de diensten ](#accounts-and-services) informatie.
 
 ## Aanvullende bronnen
 
@@ -147,15 +147,15 @@ Hieronder vindt u diverse bronnen voor Adobe die aanvullende informatie en nutti
 
 ### Documentatie
 
-+ [Asset compute Service-documentatie](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
-+ [Gereedschap asset compute ontwikkelen Lees mij](https://github.com/adobe/asset-compute-devtool)
-+ [Asset compute voorbeeldworkers](https://github.com/adobe/asset-compute-example-workers)
++ [ documentatie van de Dienst van de Asset compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
++ [ Rereadme van het Hulpmiddel van de Ontwikkeling van de Asset compute ](https://github.com/adobe/asset-compute-devtool)
++ [ de voorbeeldarbeiders van de Asset compute ](https://github.com/adobe/asset-compute-example-workers)
 
 ### API&#39;s en SDK&#39;s
 
-+ [ASSET COMPUTE SDK](https://github.com/adobe/asset-compute-sdk)
-   + [Asset compute Commons](https://github.com/adobe/asset-compute-commons)
-   + [Asset compute XMP](https://github.com/adobe/asset-compute-xmp#readme)
-+ [Adobe Cloud Blobstore Wrapper library](https://github.com/adobe/node-cloud-blobstore-wrapper)
-+ [Adobe Node Fetch Opnieuw proberen bibliotheek](https://github.com/adobe/node-fetch-retry)
-+ [Asset compute voorbeeldworkers](https://github.com/adobe/asset-compute-example-workers)
++ [ Asset compute SDK ](https://github.com/adobe/asset-compute-sdk)
+   + [ Commons van de Asset compute ](https://github.com/adobe/asset-compute-commons)
+   + [ Asset compute XMP ](https://github.com/adobe/asset-compute-xmp#readme)
++ [ Adobe Cloud Blobstore Wrapper library ](https://github.com/adobe/node-cloud-blobstore-wrapper)
++ [ de Vetch van de Knoop van de Adobe probeert bibliotheek ](https://github.com/adobe/node-fetch-retry) opnieuw
++ [ de voorbeeldarbeiders van de Asset compute ](https://github.com/adobe/asset-compute-example-workers)

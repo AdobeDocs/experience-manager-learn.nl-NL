@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Cloud 5 - Repository Modernizer
 
-De jongens kijken hoe de moderator van de gegevensopslagplaats u helpt as a Cloud Service over te gaan AEM met nuttig overzicht van hoe het werkt en waarom.
+De jongens kijken hoe de moderator van de repository u helpt om over te stappen naar AEM as a Cloud Service met een handig overzicht van hoe het werkt en waarom.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342865?quality=12&learn=on)
 
 ## Inhoud die in deze video wordt behandeld
 
-+ [AIO CLI](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
-+ [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)
++ [ AIO CLI ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
++ [ Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)

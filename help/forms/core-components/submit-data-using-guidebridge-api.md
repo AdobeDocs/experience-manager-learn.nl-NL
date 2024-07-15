@@ -23,7 +23,7 @@ Met &quot;Opslaan en hervatten&quot; voor een formulier kunnen gebruikers de inv
 Om dit te verwezenlijken gebruiken wij het geval, moeten wij tot de vormgegevens toegang hebben en verzenden gebruikend GuideBridge API aan het REST eindpunt voor opslag en herwinning.
 
 De formuliergegevens worden opgeslagen in de gebeurtenis click van een knop met de regeleditor
-![regelaar](assets/rule-editor.png)
+![ regel-redacteur ](assets/rule-editor.png)
 
 De volgende JavaScript-functie is geschreven om de gegevens naar het opgegeven eindpunt te verzenden
 
@@ -70,7 +70,7 @@ De volgende JavaScript-functie is geschreven om de gegevens naar het opgegeven e
 
 ## Code aan serverzijde
 
-De volgende Java-code aan de serverzijde is geschreven om de formuliergegevens af te handelen. Hier volgt de Java-servlet die wordt uitgevoerd in AEM die wordt aangeroepen via de XHR-aanroep in het JavaScript hierboven.
+De volgende Java-code aan de serverzijde is geschreven om de formuliergegevens af te handelen. Hier volgt de Java-servlet die wordt uitgevoerd in AEM die wordt aangeroepen via de XHR-aanroep in de bovenstaande JavaScript.
 
 ```java
 package com.azuredemo.core.servlets;

@@ -21,15 +21,15 @@ ht-degree: 0%
 
 [Inhoudsopgave](./overview.md)
 
-[&lt;- Vorige: health check van Dispatcher](./health-check.md)
+[&lt;- Vorige: Dispatcher Health Check](./health-check.md)
 
 In AMS krijgt u een vooraf ingevulde GIT-opslagplaats die de broncode van uw verzender bevat en die klaar is voor u om de ontwikkeling en aanpassing te starten.
 
-Nadat u de eerste `.vhost` bestand of hoofdniveau `farm.any` moet u een symbolische koppeling maken vanuit het `available_*` aan de `enabled_*` directory. Het gebruiken van het juiste verbindingstype zal zeer belangrijk aan een succesvolle plaatsing door de pijpleiding van de Manager van de Wolk zijn. Deze pagina helpt u te weten hoe u dit kunt doen.
+Nadat u het eerste `.vhost` -bestand of het bovenste `farm.any` -bestand hebt gemaakt, moet u een symbolische koppeling maken vanuit de map `available_*` naar de map `enabled_*` . Het gebruiken van het juiste verbindingstype zal zeer belangrijk aan een succesvolle plaatsing door de pijpleiding van Cloud Manager zijn. Deze pagina helpt u te weten hoe u dit kunt doen.
 
 ## Dispatcher Archetype
 
-De AEM ontwikkelaar begint hun project typisch van [AEM](https://github.com/adobe/aem-project-archetype)
+De AEM ontwikkelaar begint typisch hun project van [ AEM archetype ](https://github.com/adobe/aem-project-archetype)
 
 Hier volgt een voorbeeld van het gebied van de broncode waar u de gebruikte symlinks kunt zien:
 
@@ -67,9 +67,9 @@ dispatcher
 17 directories, 60 files
 ```
 
-Als voorbeeld `/etc/httpd/conf.d/available_vhosts/` map bevat het gefaseerde potentieel `.vhost` bestanden die we kunnen gebruiken in onze actieve configuratie.
+De map `/etc/httpd/conf.d/available_vhosts/` bevat bijvoorbeeld de gefaseerde potentiële `.vhost` -bestanden die we in onze actieve configuratie kunnen gebruiken.
 
-Ingeschakeld `.vhost` bestanden worden weergegeven als relatieve paden `symlinks` in de `/etc/httpd/conf.d/enabled_vhosts/` directory.
+De ingeschakelde `.vhost` bestanden worden weergegeven als relatieve paden `symlinks` in de map `/etc/httpd/conf.d/enabled_vhosts/` .
 
 ## Een symlink maken
 
@@ -79,7 +79,7 @@ Erken dat uw geïmplementeerde configuraties zich richten op een Linux-host.  He
 
 Als uw werkstation geen Linux-computer is, vraagt u zich waarschijnlijk af met welke opdrachten deze koppelingen op de juiste wijze kunnen worden gemaakt, zodat ze zich kunnen vastleggen op GIT.
 
-> `TIP:` Het is belangrijk relatieve koppelingen te gebruiken, omdat de koppelingen nog steeds werken als u een lokale kopie van Apache Webserver hebt geïnstalleerd en een andere installatiebasis hebt.  Als u een absoluut pad gebruikt, moeten uw werkstation of andere systemen precies overeenkomen met dezelfde mapstructuur.
+> `TIP:` Het is belangrijk relatieve koppelingen te gebruiken, omdat als u een lokale kopie van Apache Webserver hebt geïnstalleerd en een andere installatielocatie hebt, de koppelingen nog steeds werken.  Als u een absoluut pad gebruikt, moeten uw werkstation of andere systemen precies overeenkomen met dezelfde mapstructuur.
 
 ### OSX/Linux
 
@@ -98,7 +98,7 @@ $ cd aem-project-archetype/src/main/archetype/dispatcher.ams/src/conf.d/enabled_
 $ ln -s ../available_vhosts/aem_flush.vhost aem_flush.vhost
 ```
 
-Hier is een voorbeeld van de koppeling die u nu gebruikt als u het bestand opsomt met de opdracht `ls` opdracht:
+Hier volgt een voorbeeld van de koppeling als u het bestand opsomt met de opdracht `ls` :
 
 ```
 ls -l
@@ -108,15 +108,15 @@ lrwxrwxrwx. 1 root root 35 Oct 13 21:38 aem_flush.vhost -> ../available_vhosts/a
 
 ### Windows
 
-> `Note:` Het blijkt dat MS Windows (beter, NTFS) symbolische verbindingen steunt aangezien.. Windows Vista!
+> `Note:` Geeft aan dat MS Windows (beter, NTFS) symbolische koppelingen ondersteunt sinds.. Windows Vista!
 
-![Beeld van de Herinnering van het Bevel van Vensters die de hulpoutput van het mklink bevel toont](./assets/git-symlinks/windows-terminal-mklink.png)
+![ Beeld van de Herinnering van het Bevel van Vensters die de hulpoutput van het mklink bevel tonen ](./assets/git-symlinks/windows-terminal-mklink.png)
 
-> `Warning:` voor de mklink-opdracht voor het maken van symlinks zijn beheerdersrechten vereist om correct te kunnen worden uitgevoerd. Zelfs als Admin-account, moet u de opdrachtprompt &quot;Als beheerder&quot; uitvoeren, tenzij de ontwikkelaarsmodus is ingeschakeld
+> Voor het uitvoeren van de opdracht mklink voor het maken van symlinks zijn beheerdersrechten vereist. `Warning:` Zelfs als Admin-account, moet u de opdrachtprompt &quot;Als beheerder&quot; uitvoeren, tenzij de ontwikkelaarsmodus is ingeschakeld
 > <br/>Onjuiste machtigingen:
-> ![Beeld van de Herinnering van het Bevel van Vensters die het bevel toont ontbreekt toe te schrijven aan toestemmingen](./assets/git-symlinks/windows-mklink-underpriv.png)
+> ![Beeld van de Herinnering van het Bevel van Vensters die het bevel tonen ontbreekt toe te schrijven aan toestemmingen ](./assets/git-symlinks/windows-mklink-underpriv.png)
 > <br/>Juiste machtigingen:
-> ![Beeld van Windows Opdrachtprompt uitgevoerd als beheerder](./assets/git-symlinks/windows-mklink-properpriv.png)
+> ![Beeld van de Herinnering van het Bevel van Vensters liep als Beheerder ](./assets/git-symlinks/windows-mklink-properpriv.png)
 
 Hier volgt de opdracht(en) om de koppeling te maken:
 
@@ -136,7 +136,7 @@ symbolic link created for aem_flush.vhost <<===>> ..\available_vhosts\aem_flush.
 
 #### Modus Ontwikkelaar (Windows 10)
 
-Wanneer deze [Modus voor ontwikkelaars](https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development)Met Windows 10 kunt u toepassingen die u ontwikkelt gemakkelijker testen, de Ubuntu Bash-shell-omgeving gebruiken, verschillende ontwikkelaarsinstellingen wijzigen en dergelijke handelingen uitvoeren.
+Wanneer gezet in [ Wijze van de Ontwikkelaar ](https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development), staat Vensters 10 u toe om apps gemakkelijker te testen u ontwikkelt, het shell milieu van Ubuntu Bash gebruiken, een verscheidenheid van ontwikkelaar-gerichte montages veranderen, en andere dergelijke dingen doen.
 
 Microsoft lijkt eigenschappen aan de Wijze van de Ontwikkelaar te blijven toevoegen, of sommige van die eigenschappen toe te laten door gebrek zodra zij een meer wijdverspreide goedkeuring bereiken en als stabiel (bijvoorbeeld met de Update van Scheppers, vereist het milieu van Ubuntu Bash Shell niet meer de Wijze van de Ontwikkelaar) worden beschouwd.
 
@@ -146,11 +146,11 @@ Hoe zit het met symlinks? Met INGESCHAKELDE Wijze van de Ontwikkelaar, is er gee
 
 Nu kunt u zonder als Beheerder te lopen zien het bevel werkt
 
-![Beeld van de Herinnering van het Bevel van Vensters looppas als normale gebruiker met toegelaten Wijze van de Ontwikkelaar](./assets/git-symlinks/windows-mklink-devmode.png)
+![ Beeld van de Herinnering van het Bevel van Vensters in werking gesteld als normale gebruiker met toegelaten de Wijze van de Ontwikkelaar ](./assets/git-symlinks/windows-mklink-devmode.png)
 
 #### Alternatieve/programmatische aanpak
 
-Er is een specifiek beleid waarmee bepaalde gebruikers symbolische koppelingen kunnen maken → [Symbolische koppelingen maken (Windows 10) - Windows-beveiliging | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links)
+Er is een specifiek beleid dat bepaalde gebruikers kan toestaan om symbolische verbindingen tot stand te brengen → [ creeer symbolische verbindingen (Vensters 10) - de veiligheid van Vensters | Microsoft Docs ](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links)
 
 PRO&#39;s:
 - Dit zou door klanten kunnen worden leveraged om symbolische verbindingen verwezenlijking aan alle ontwikkelaars binnen hun (d.w.z. Actieve Folder) programmatically toe te staan zonder het moeten de Wijze van de Ontwikkelaar op elk apparaat manueel toelaten.
@@ -161,33 +161,33 @@ CON&#39;s:
 
 > De gebruiker logoff/opening van een sessie zal worden vereist voor de veranderingen in het lokale/groepsbeleid om van kracht te worden.
 
-Uitvoeren `gpedit.msc`, voegt u gebruikers toe of wijzigt u deze. Beheerders zijn er standaard
+Voer `gpedit.msc` uit, voeg gebruikers toe of wijzig gebruikers naar wens. Beheerders zijn er standaard
 
-![Het venster van de Redacteur van het Beleid van de groep die toestemming toont om aan te passen](./assets/git-symlinks/windows-localpolicies-symlinks.png)
+![ het venster van de Redacteur van het Beleid van de Groep die toestemming toont om ](./assets/git-symlinks/windows-localpolicies-symlinks.png) aan te passen
 
 #### Symbolen inschakelen in GIT
 
 De handvatten van de it volgens de core.symlinks optie
 
-Bron: [Git - git-config Documentatie](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coresymlinks)
+Source: [ it - git-config Documentatie ](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coresymlinks)
 
-*Als core.symlinks false is, worden symbolische koppelingen uitgecheckt als kleine normale bestanden die de koppelingstekst bevatten. `git-update-index[1]` en `git-add[1]` wijzigt het opgenomen type niet in een normaal bestand. Nuttig op bestandssystemen zoals FAT die geen ondersteuning bieden voor symbolische koppelingen.
-De standaardwaarde is true, behalve `git-clone[1]` of `git-init[1] will probe and set core.symlinks false if appropriate when the repository is created.` In de meeste gevallen, zal Git veronderstellen Vensters niet goed voor symlinks is en zal dit aan vals plaatsen.*
+*als core.symlinks vals is, worden de symbolische verbindingen gecontroleerd als kleine gewone dossiers die de verbindingstekst bevatten. `git-update-index[1]` en `git-add[1]` veranderen het opgenomen type niet in een normaal bestand. Nuttig op bestandssystemen zoals FAT die geen ondersteuning bieden voor symbolische koppelingen.
+Het gebrek is waar, behalve `git-clone[1]` of `git-init[1] will probe and set core.symlinks false if appropriate when the repository is created.` in de meeste gevallen, Git zal veronderstellen Vensters niet goed voor symlinks is en zal dit aan vals plaatsen.*
 
 Het gedrag van Git op Vensters wordt duidelijk hier: Symbolische Verbindingen ・ git-for-windows/git Wiki ・ GitHub
 
-> `Info`: De veronderstellingen die worden vermeld in de documentatie verbonden hierboven lijken O.K. met een mogelijke opstelling van AEM Ontwikkelaar op Vensters, met name NTFS en het feit dat wij slechts dossiersymlinks vs. de symlinks van de Folder hebben
+> `Info`: De veronderstellingen die in de documentatie verbonden hierboven worden vermeld lijken O.K. met een mogelijke opstelling van AEM Ontwikkelaar op Vensters, met name NTFS en het feit dat wij slechts dossiersymlinks vs. de symlinks van de Folder hebben
 
-Hier is het goede nieuws, want [Git voor Windows versie 2.10.2](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1) de installateur heeft een [expliciete optie om ondersteuning voor symbolische koppelingen in te schakelen.](https://github.com/git-for-windows/git/issues/921)
+Hier is het goede nieuws, aangezien [ Git voor versie 2.10.2 van Vensters ](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1) de installateur een [ expliciete optie heeft om symbolische verbindingssteun toe te laten.](https://github.com/git-for-windows/git/issues/921)
 
-> `Warning`: De optie core.symlink kan bij uitvoering worden opgegeven terwijl de opslagplaats wordt gekloond, of kan anders als een globale config worden opgeslagen.
+> `Warning`: De optie core.symlink kan bij uitvoering worden opgegeven terwijl de gegevensopslagruimte wordt gekloond, of anders als een algemene configuratie worden opgeslagen.
 
-![GIT-installatieprogramma weergeven met ondersteuning voor symlinks](./assets/git-symlinks/windows-git-install-symlink.png)
+![ tonend de installateur van GIT die steun voor symlinks toont ](./assets/git-symlinks/windows-git-install-symlink.png)
 
 Git voor Windows slaat algemene voorkeuren op in `"C:\Program Files\Git\etc\gitconfig"` . Deze instellingen worden mogelijk niet in aanmerking genomen door andere Git-bureaubladclient-apps.
 Hier is vangst, niet zullen alle ontwikkelaars de inheemse cliënt van het Git (d.w.z. Cmd van het Git, Bash) gebruiken, en sommige van de Apps van de Desktop van het Git (b.v. Desktop GitHub, Atlassian Bronree) kunnen verschillende montages/gebreken hebben om Systeem of een ingebedde Git te gebruiken
 
-Hier is een voorbeeld van wat er in de `gitconfig` file
+Hier volgt een voorbeeld van wat zich in het `gitconfig` -bestand bevindt
 
 ```
 [diff "astextplain"]
@@ -220,7 +220,7 @@ Er kunnen scenario&#39;s zijn waar u nieuwe symbolische verbindingen (b.v. het t
 
 In de bovenstaande documentatie hebben we gezien dat Windows de opdracht &quot;mklink&quot; biedt om symbolische koppelingen te maken.
 
-Als u in een Git Bash-omgeving werkt, kunt u in plaats daarvan de opdracht Standaard `ln -s` maar het moet worden voorafgegaan door een speciale instructie zoals het voorbeeld hier :
+Als u in een Git Bash-omgeving werkt, kunt u in plaats daarvan de standaard Bash-opdracht `ln -s` gebruiken, maar deze moet vooraf worden gegaan door een speciale instructie zoals in het volgende voorbeeld:
 
 ```
 MSYS=winsymlinks:nativestrict ln -s test_vhost_symlink ../dispatcher/src/conf.d/available_vhosts/default.vhost
@@ -234,8 +234,8 @@ Als u de symlinks voor de verwerking van de it correct wilt hebben (ten minste v
 |------|---------------------------------|-------------------------------------|
 | Besturingssysteem | Windows Vista of hoger | Windows 10 Creator-update of nieuwer |
 | Bestandssysteem | NTFS | NTFS |
-| Mogelijkheid om symlinks voor de Windows-gebruiker af te handelen | `"Create symbolic links"` groep/lokaal beleid `under "Group Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment"` | Windows 10 Developer Mode ingeschakeld |
+| Mogelijkheid om symlinks voor de Windows-gebruiker af te handelen | `"Create symbolic links"` group / local Policy `under "Group Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment"` | Windows 10 Developer Mode ingeschakeld |
 | GIT | Systeemeigen clientversie 1.5.3 | Systeemeigen clientversie 2.10.2 of hoger |
-| Git Config | `--core.symlinks=true` optie bij het maken van een kloon van de opdrachtregel | Globale configuratie ophalen<br/>`[core]`<br/>    symlinks = true <br/> Systeemeigen configuratiepad client: `C:\Program Files\Git\etc\gitconfig` <br/>Standaardlocatie voor Git Desktop-clients: `%HOMEPATH%\.gitconfig` |
+| Git Config | `--core.symlinks=true` wanneer u een kloon maakt via de opdrachtregel | Globale configuratie ophalen <br/>`[core]`<br/>    symlinks = true <br/> Native Git client config path: `C:\Program Files\Git\etc\gitconfig` <br/> Standaardlocatie voor Git Desktop-clients: `%HOMEPATH%\.gitconfig` |
 
 > `Note:` Als u al een lokale opslagplaats hebt, moet u een nieuwe kloon maken van de oorsprong. U kunt klonen naar een nieuwe locatie en uw niet-vastgelegde/niet-gestarte lokale wijzigingen handmatig samenvoegen in de nieuw gekloonde opslagplaats.

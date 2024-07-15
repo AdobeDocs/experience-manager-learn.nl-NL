@@ -24,11 +24,11 @@ Wanneer uw formulier navigatietabels links heeft en een van de tabbladen meerder
 
 ## Adaptief formulier maken
 
-Maak een adaptief formulier met de volgende structuur. Het hoofddeelvenster bevat onderliggende deelvensters die links als tabbladen worden weergegeven. Sommige van deze &quot;**tabs**&quot; hebt extra onderliggende deelvensters. Het tabblad Familie heeft bijvoorbeeld twee onderliggende deelvensters: Echtgenote en Onderliggende deelvensters.
+Maak een adaptief formulier met de volgende structuur. Het hoofddeelvenster bevat onderliggende deelvensters die links als tabbladen worden weergegeven. Sommige van deze &quot;**lusjes**&quot;hebben extra kindpanelen. Het tabblad Familie heeft bijvoorbeeld twee onderliggende deelvensters: Echtgenote en Onderliggende deelvensters.
 
 Er wordt ook een werkbalk toegevoegd onder de FormContainer met de knoppen Vorige en Volgende
 
-![werkbalkafstand](assets/multiple-panels.png)
+![ toolbar-uit elkaar plaatsen ](assets/multiple-panels.png)
 
 
 
@@ -39,13 +39,13 @@ Om dit standaardgedrag te veranderen, moeten wij het volgende doen
 >[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
-Voeg de volgende code toe de klikgebeurtenis van **Volgende** knop met de code-editor
+Voeg de volgende code toe de klikgebeurtenis van de **Volgende** knoop gebruikend de coderedacteur
 
 ```javascript
 window.guideBridge.setFocus(null, 'nextItemDeep', true);
 ```
 
-Voeg de volgende code toe de klikgebeurtenis van **Vorige** knop met de code-editor
+Voeg de volgende code toe de klikgebeurtenis van de **Vorige** knoop gebruikend de coderedacteur
 
 ```javascript
 window.guideBridge.setFocus(null, 'prevItemDeep', true);

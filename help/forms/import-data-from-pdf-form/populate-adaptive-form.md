@@ -58,8 +58,8 @@ function handleFiles(formData) {
 }
 ```
 
-De servlet gemonteerd op **_/bin/ExtractDataFromPDF_** extraheert de gegevens uit het PDF-bestand en retourneert het pad van het crx-knooppunt waar de geëxtraheerde gegevens zijn opgeslagen.
-De [GuideBridge setData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) wordt vervolgens gebruikt om de gegevens van het adaptieve formulier in te stellen.
+De servlet op **_/bin/ExtractDataFromPDF_** haalt de gegevens uit het dossier van de PDF en keert de weg van de crx knoop terug waar de gehaalde gegevens worden opgeslagen.
+De [ GuideBridge setData ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) methode wordt dan gebruikt om de gegevens van de adaptieve vorm te plaatsen.
 
 ## Volgende stappen
 

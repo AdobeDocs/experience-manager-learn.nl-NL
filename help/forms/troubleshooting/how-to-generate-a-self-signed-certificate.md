@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Een zelfondertekend certificaat genereren
 
-*Deze video doorloopt de stappen voor het genereren van een zelfondertekend certificaat.*
+*Deze video loopt door de stappen om een zelf ondertekend certificaat te produceren.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335539?quality=12&learn=on)

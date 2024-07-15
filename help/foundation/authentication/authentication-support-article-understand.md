@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen (en soms autorisaties).
 
-*In de volgende tabel wordt beschreven hoe gebruikers zich in AEM kunnen verifiëren.*
+*de volgende lijst beschrijft hoe de gebruikers in AEM voor authentiek kunnen verklaren.*
 
 <table>
     <tbody>
@@ -52,7 +52,7 @@ Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen
             <td>✔</td>
         </tr>
         <tr>
-            <td>Op basis van token (w/ <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">ingekapseld token</a>)</td>
+            <td>Op token-gebaseerd (met <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank"> ingekapseld teken </a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -95,4 +95,4 @@ Een geconsolideerde weergave van de door AEM ondersteunde verificatiemechanismen
     </tbody>
 </table>
 
-⁕ *Via gemeenschapsprojecten verstrekt, maar niet rechtstreeks ondersteund door Adobe.*
+⁕ *die via communautaire projecten, maar niet direct door Adobe wordt verstrekt.*

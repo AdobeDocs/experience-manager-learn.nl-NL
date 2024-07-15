@@ -1,6 +1,6 @@
 ---
-title: Configuratie-instellingen gegevensbron wijzigen.
-description: Wijzig de gastheernaam en andere montages in de Montages van de Configuratie van de Gegevensbron.
+title: Source-configuratie-instellingen voor gegevens wijzigen.
+description: Wijzig de hostnaam en andere instellingen in Source-configuratie-instellingen voor gegevens.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Mogelijkheid om configuratie-instellingen gegevensbron te wijzigen{#ability-to-modify-data-source-configuration-settings}
+# Mogelijkheid om Source-configuratie-instellingen voor gegevens te wijzigen{#ability-to-modify-data-source-configuration-settings}
 
 Tot de versie van AEM Forms 6.4, zodra een gegevensbron werd gevormd kon u geen regeling, Gastheer, de Weg van de Basis voor de dienst RESTful veranderen. Dit was problematisch als u uw gegevensbronnen tegen verschillende milieu&#39;s wilde testen.
 
@@ -24,8 +24,8 @@ Met de release van AEM Forms 6.5 kunt u nu gemakkelijk de bovengenoemde eigensch
 
 De onderstaande schermafbeeldingen tonen de configuratie-instellingen voor de gegevensbron in AEM Forms 6.4 en Forms 6.5
 
-**Configuratie gegevensbron in AEM 6.4**
+**Configuratie van Gegevens Source in AEM 6.4**
 
-![64Configuratie gegevensbron](assets/64release.gif)
-**Bewerkbare gegevensbronconfiguratie in AEM 6.5 en hoger**
-![65Configuratie gegevensbron](assets/modifiable_data_source.png)
+![ 64DataSource Configuratie ](assets/64release.gif)
+**Bewerkbare Configuratie van Gegevens Source in AEM 6.5 en hierboven**
+![ 65DataSource Configuratie ](assets/modifiable_data_source.png)

@@ -21,32 +21,32 @@ ht-degree: 0%
 
 In AEM 6.5 moet het hulpmiddel GraphiQL IDE manueel worden geïnstalleerd.
 
-1. Ga naar de **[Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Zoek naar &quot;GraphiQL&quot; (zorg ervoor dat u de **i** in **GraphiQL**).
-1. Download de nieuwste **GraphiQL Content Package v.x.x.x**.
+1. Navigeer aan het **[Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
+1. Onderzoek naar &quot;GraphiQL&quot;(ben zeker om **i** in **GraphiQL** te omvatten).
+1. Download het recentste **GrahiQL Pakket van de Inhoud v.x.x.x.x**.
 
-   ![GraphiQL-pakket downloaden](assets/graphiql/software-distribution.png)
+   ![ Pakket GraphiQL van de Download {](assets/graphiql/software-distribution.png)
 
    Het ZIP-bestand is een AEM pakket dat rechtstreeks kan worden geïnstalleerd.
 
-1. Navigeer in het menu AEM Start naar **Gereedschappen** > **Implementatie** > **Pakketten**.
-1. Klikken **Pakket uploaden** en kiest u het pakket dat u eerder hebt gedownload. Klikken **Installeren** het pakket installeren.
+1. Van het AEM menu van het Begin, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Pakketten**.
+1. Klik **Upload Pakket** en kies het pakket in de vroegere stap wordt gedownload dat. Klik **installeren** om het pakket te installeren.
 
-   ![GraphiQL-pakket installeren](assets/graphiql/install-graphiql-package.png)
+   ![ installeer GrahiQL Pakket ](assets/graphiql/install-graphiql-package.png)
 
-1. Navigeren naar **CRXDE Lite** > **Deelvenster Opslagplaats** > selecteren `/content/graphiql` node (bijvoorbeeld <http://localhost:4502/crx/de/index.jsp#/content/graphiql>).
-1. In de **Eigenschappen** tabwijzigingswaarde van `endpoint` eigenschap aan `/content/_cq_graphql/wknd-shared/endpoint.json`.
-   ![Waarde van eindpunteigenschap wijzigen](assets/graphiql/endpoint-prop-value-change.png)
+1. Navigeer aan **CRXDE Lite** > **het Comité van de Bewaarplaats** > selecteert `/content/graphiql` knoop (bijvoorbeeld, <http://localhost:4502/crx/de/index.jsp#/content/graphiql>).
+1. In het **bezit van Eigenschappen** lusje verandert waarde van `endpoint` bezit in `/content/_cq_graphql/wknd-shared/endpoint.json`.
+   ![ Verandering van de Waarde van het Eindpuntbezit ](assets/graphiql/endpoint-prop-value-change.png)
 
-1. Ga naar de **Webconsoleconfiguratie** UI > Zoeken naar **CSRF-filter** configuratie (bijvoorbeeld<http://localhost:4502/system/console/configMgr/com.adobe.granite.csrf.impl.CSRFFilter)>
-1. In de `Excluded Paths` eigenschap naam veld update, WKND GraphQL eindpuntpad naar `/content/cq:graphql/wknd-shared/endpoint`.
+1. Navigeer aan de **Configuratie van de Console van het Web** UI > Onderzoek naar **CSRF de configuratie van de Filter** (bijvoorbeeld, <http://localhost:4502/system/console/configMgr/com.adobe.granite.csrf.impl.CSRFFilter)>
+1. In de `Excluded Paths` update van het gebied van de bezitsnaam, het WKND GraphQL eindpuntweg aan `/content/cq:graphql/wknd-shared/endpoint`.
 
-![Waarde van padeigenschap uitsluiten](assets/graphiql/exclude-paths-value-change.png)
+![ sluit de Verandering van de Waarde van het Bezit van Wegen ](assets/graphiql/exclude-paths-value-change.png) uit
 
-1. Heb toegang tot de redacteur GraphiQL gebruikend `//HOST:PORT/content/graphiql.html`en verifieer u kunt een nieuwe query samenstellen of een bestaande query uitvoeren. (bijvoorbeeld <http://localhost:4502/content/graphiql.html>)
+1. Heb toegang tot de redacteur GraphiQL gebruikend `//HOST:PORT/content/graphiql.html`, en verifieer u een nieuwe vraag kunt construeren of een bestaande vraag uitvoeren. (bijvoorbeeld <http://localhost:4502/content/graphiql.html>)
 
-![GraphiQL Editor](assets/graphiql/graphiql-editor.png)
+![ GraphiQL Redacteur ](assets/graphiql/graphiql-editor.png)
 
 >[!TIP]
 >
->Als u uw projectspecifieke GraphQL-schema en queryuitvoering wilt ondersteunen, moet u de bijbehorende wijzigingen aanbrengen voor het `endpoint` en `Excluded Paths` waarden in bovenstaande stappen.
+>Als u uw projectspecifieke GraphQL-schema en query-uitvoering wilt ondersteunen, moet u de overeenkomende wijzigingen voor de `endpoint` - en `Excluded Paths` -waarden in de bovenstaande stappen doorvoeren.

@@ -80,13 +80,13 @@ Een metagegevensmodel is gewoonlijk ontworpen om aan de volgende gebruiksgevalle
 * Kruisverwijzing: associatieve metagegevens die de relatie van twee of meer elementen met elkaar vastleggen (de synthese van metagegevens maakt kruisverwijzingen en coherente groepsorganisatie mogelijk)
 * Navigeren: de mapstructuur waarin elementen zijn opgeslagen (gebruikt om informatie op te halen door te bladeren)
 
-*Metagegevens van auteurs ondersteunen hoofdzakelijk operationele processen. Publiceren ondersteunt Gebruiksscenario&#39;s voor ophalen en distribueren.*
+*de meta-gegevens van de Auteur steunen hoofdzakelijk operationele processen. Publish steunt herwinning en distributie gebruiksgevallen.*
 
 ## Labels als vooraf gedefinieerde termen gebruiken
 
 Een tag is een trefwoord of term die is toegewezen aan een informatie.vIn plaats van &quot;auto&quot;, &quot;voertuig&quot;, &quot;auto&quot; in te voeren, kan een labelsysteem bijvoorbeeld maar één waarde kiezen, waardoor het zoeken voorspelbaarder wordt.  Met labels wordt de categorisering van elementen genormaliseerd en vereenvoudigd.
 
-*Opmerking: hoewel AEM ad-hoclabelen toestaat, is het verstandig om hier niet mee te werken, omdat dit tot een ongedefinieerde en onhandige taxonomie kan leiden.*
+*Nota: Hoewel AEM ad-hoc het etiketteren toestaat is het beste praktijken om van dit te blijven aangezien het tot onbepaalde en onhandelbare taxonomie zou kunnen leiden.*
 
 Veelvoorkomende toepassingen van tags:
 
@@ -111,19 +111,31 @@ Als tags worden gebruikt in AEM, kan dit een veel kortere implementatie van de c
 Een taxonomie is een systeem om markeringen te organiseren die op gedeelde kenmerken worden gebaseerd, die gewoonlijk hiërarchisch gestructureerd per organisatorische behoefte zijn. De structuur kan u helpen om sneller een tag te vinden of een generalisatie op te leggen.
 Voorbeeld: Het is nodig om de beeldvorming van auto&#39;s te subcategoriseren.  De taxonomie kan er als volgt uitzien:
 
-/subject/car//subject/car/sportscar /subject/car/sportscar/porsche /subject/car/sportscar/ferrari ... /subject/car/minivan /subject/car/minivan/mercedes /subject/car/minivan/volkswagen .../subject/car/limousine ...
+/subject/car/
+/subject/car/sportscar
+/subject/car/sportscar/porsche
+/subject/car/sportscar/ferrari
+...
+/subject/car/minibus
+/subject/car/minivan/mercedes
+/subject/car/minivan/volkswagen
+...
+/onderwerp/auto/limousine
+...
 
 Nu kan een gebruiker kiezen of hij beelden van sportscars in het algemeen of een &quot;Porsche&quot; in het bijzonder wil opzoeken. Het zijn immers allebei sportliters.
 Beste praktijken: vermijd vlakke taxonomieën. Platte taxonomieën hebben niet de hierboven beschreven voordelen en vereisen constant onderhoud
 
-**Een taxonomie als synoniemenlijst gebruiken.**  Wanneer een gebruiker naar een sleutelwoord zoekt, leidt het systeem tot een tweede onderzoek naar alle synoniemen die daar worden gevonden.
+**Gebruikend een Taxonomie als Synoniemenlijst.** Wanneer een gebruiker naar een trefwoord zoekt, maakt het systeem een tweede zoekopdracht naar alle synoniemen die daar worden gevonden.
 Bovendien kan het systeem in plaats van &quot;auto&quot; handmatig te typen een lijst met trefwoorden leveren om de consistentie te verbeteren.
 
-**Een Taxonomy als woordenboek gebruiken.** In plaats van alleen maar &#39;car&#39; af te drukken, kunt u de enkele tag uitbreiden en alle synoniemen van de tag gebruiken.
+**Gebruikend een Taxonomie als Woordenboek.** In plaats van alleen maar &quot;car&quot; af te drukken, kunt u de enkele tag uitvouwen en alle synoniemen van de tag gebruiken.
 
-**Meerdere categorieën.** In tegenstelling tot een mappenhiërarchie kunnen tags worden gebruikt om meerdere categorieën tegelijk uit te drukken. Een element dat is gelabeld met:
+**veelvoudige Categorieën.** In tegenstelling tot een mappenhiërarchie kunnen tags worden gebruikt om meerdere categorieën tegelijk uit te drukken. Een element dat is gelabeld met:
 
-/subject/car/minivan/mercedes/subject/people/family/color/red
+/subject/car/minivan/mercedes
+/subject/people/family
+/color/red
 
 ## Metagegevens vs. tag
 
@@ -145,13 +157,13 @@ Zorg ervoor dat gebruikers die inhoud leveren weten hoe ze wijzigingen kunnen vo
 
 ## Beste praktijken met Markeringen en Taxonomieën
 
-**Tags standaardiseren.** Creeer verklarende woordenlijst die een gebiedende woordenlijst verstrekt. Als er geen normen worden vastgesteld, zal er sprake zijn van dubbel werk. Daarnaast wordt aanbevolen niet alleen de taxonomie maar ook het gebruik van de labels te controleren.
+**normaliseer Markeringen.** Maak een verklarende woordenlijst die een gezaghebbende woordenlijst biedt. Als er geen normen worden vastgesteld, zal er sprake zijn van dubbel werk. Daarnaast wordt aanbevolen niet alleen de taxonomie maar ook het gebruik van de labels te controleren.
 
-**Niet te veel tags toepassen.** Tags kunnen hun betekenis verliezen als ze te vaak worden verdeeld.Verwijder vreemde tags voor optimale efficiëntie.
+**niet over-markering.** Tags kunnen hun betekenis verliezen als ze te vaak worden gedistribueerd.Verwijder vreemde tags voor optimale efficiëntie.
 
-**Tags na verloop van tijd opnieuw evalueren.** Herinner dat de bedrijfsterminologie en de bedrijfscontext zelden statisch blijven. Mogelijk is het nodig om tags opnieuw te standaardiseren en opnieuw toe te passen.
+**herevalueer markeringen in tijd.** Houd er rekening mee dat de bedrijfsterminologie en de zakelijke context zelden statisch blijven. Mogelijk is het nodig om tags opnieuw te standaardiseren en opnieuw toe te passen.
 
-**Slimme tags toepassen met behulp van AI** Slimme tags toepassen [zie koppeling] is een AI-mogelijkheid in AEM om het handmatig labelen van activa te beperken. Slimme tags toepassen gebruikt een AI om informatie over het onderwerp van een afbeelding af te leiden. Er worden beschrijvende codes gemaakt die de inhoud van een afbeelding beschrijven.
+**Gebruikend AI-aangedreven Slimme Tags.** het Slimme etiketteren [ zie verbinding ] is een vermogen AI in AEM om de inspanning te verminderen om activa manueel te etiketteren. Slimme tags toepassen gebruikt een AI om informatie over het onderwerp van een afbeelding af te leiden. Er worden beschrijvende codes gemaakt die de inhoud van een afbeelding beschrijven.
 
 ## Metagegevenskwaliteit en -onderhoud
 
@@ -159,7 +171,7 @@ Het begrip van bedrijfsvereisten is een belangrijke stap in het uitvoeren van ee
 
 Bovendien moeten metagegevens zo vroeg mogelijk worden vastgelegd tijdens het maken van de inhoud. Als metagegevens niet op het juiste moment worden toegepast, is er weinig kans om deze retroactief toe te passen.
 
-**Metagegevens gebruiken** om de samenwerking te verbeteren: Gebruik Adobe Asset Link, Adobe Bridge en de AEM Desktop om creatief proces samen te voegen en metagegevens te gebruiken om creatieve workflows te stroomlijnen. Met deze gereedschappen verrijkt u metagegevens en de gebruikerservaring in uw creatieve proces.
+**gebruik meta-gegevens** om samenwerking te verbeteren: Gebruik de Verbinding van Activa van de Adobe, Adobe Bridge en de Desktop van de AEM om creatief proces samen te binden en meta-gegevens te gebruiken om creatieve werkschema&#39;s te stroomlijnen. Met deze gereedschappen verrijkt u metagegevens en de gebruikerservaring in uw creatieve proces.
 
 ## Aanbevolen procedures voor metagegevensbeheer
 
@@ -174,19 +186,19 @@ Bovendien moeten metagegevens zo vroeg mogelijk worden vastgelegd tijdens het ma
 
 Een paar richtlijnen kunnen u helpen om te beslissen hoe te om meta-gegevens te categoriseren:
 
-**Beschrijving** - Als de gegevens het element of de inhoud beschrijven, moet het onderdeel zijn van de bijgevoegde metagegevens.
+**Beschrijving** - als het gegeven het element of het stuk van inhoud beschrijft zou het deel van de meta-gegevens in bijlage moeten zijn.
 
-**Zoeken** - Indien de metagegevens bij de zoekactie worden gebruikt, moeten zij als bijlage worden gevoegd.
+**Onderzoek** - als de meta-gegevens in onderzoek zullen worden gebruikt moet het in bijlage zijn.
 
-**Belichting** - Als u de metagegevens op een verspreidingsplatform toegankelijk maakt voor derden, moet u ervoor zorgen dat u de &#39;interne&#39; metagegevens niet toegankelijk maakt.
+**Blootstelling** - als u de meta-gegevens op een distributieplatform aan een derde blootstelt, ben zorgvuldig om &quot;interne&quot;meta-gegevens niet ook bloot te stellen.
 
-**Duur** - Hoe langer de metagegevens moeten leven, des te groter de kans dat ze geschikt zijn voor de metagegevens in de bijlage.
+**Duur** - langer wordt de meta-gegevens verondersteld om te leven, waarschijnlijker is het een goede kandidaat voor meta-gegevens in bijlage te zijn.
 
-**Verwante bedrijfsprocessen** - Het is zeker handig om een permanente product-id te hebben als onderdeel van de metagegevens. Maar de categorie van een item in relatie tot de productcatalogus is een twijfelachtige metagegevens voor het element.
+**Verwante BedrijfsProcessen** - het is beslist nuttig om een permanente productidentiteitskaart als deel van de meta-gegevens te hebben. Maar de categorie van een item in relatie tot de productcatalogus is een twijfelachtige metagegevens voor het element.
 
-**Organisatie en verwerking** - Als de aard van de metagegevens van organisatorische aard is, zoals de status in een goedkeuringswerkstroom of de eigendom van een bepaalde afdeling, moeten externe metagegevens worden overwogen over het koppelen van de metagegevens aan het element.
+**Organisatie en Verwerking** - als de aard van de meta-gegevens van organisatorische aard, zoals staat in een goedkeuringswerkschema of eigendom van een bepaalde afdeling is, zouden de externe meta-gegevens over het vastmaken van de meta-gegevens aan het middel moeten worden overwogen.
 
-*Stel de volgende vragen om de strategie te maken:*
+*om de strategie tot stand te brengen, stel de volgende vragen:*
 
 * Welk type van inhoud en &quot;extra informatie&quot; (= meta-gegevens) is nodig om bedrijfsproblemen/bedrijfsvragen/bedrijfskwesties op te lossen?
 * Wat zijn de variabelen, de &quot;gebieden&quot;in het schema, en wat zijn mogelijke waarden? Welke variabelen een vrije-tekstinput nodig hebben, die op type (aantal, datum, boolean, ...), een reeks vaste waarden (bijvoorbeeld landen) of markeringen van een bepaalde taxonomie kan worden versmald. Hoeveel tags zijn vereist, toegestaan?

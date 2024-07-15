@@ -25,42 +25,43 @@ Een trapsgewijze drop-down lijst is een reeks afhankelijke controles DropDownLis
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-Voor deze zelfstudie heb ik [Geonames REST API](https://www.geonames.org/export/web-services.html) om deze bekwaamheid aan te tonen.
+Voor dit leerprogramma, heb ik [ Geonames REST API ](https://www.geonames.org/export/web-services.html) gebruikt om dit vermogen aan te tonen.
 Er zijn een aantal organisaties die dit soort service aanbieden en zolang ze beschikken over goed gedocumenteerde REST API&#39;s kunt u eenvoudig integreren met AEM Forms met behulp van de mogelijkheden voor gegevensintegratie
 
 De volgende stappen zijn uitgevoerd voor het implementeren van trapsgewijze vervolgkeuzelijsten in AEM Forms
 
 ## Ontwikkelaarsaccount maken
 
-Een ontwikkelaarsaccount maken met [Geonames](https://www.geonames.org/login). Noteer de gebruikersnaam. Deze gebruikersnaam is nodig om REST API&#39;s van de map geonames.org aan te roepen.
+Creeer een ontwikkelaarrekening met [ Geonames ](https://www.geonames.org/login). Noteer de gebruikersnaam. Deze gebruikersnaam is nodig om REST API&#39;s van de map geonames.org aan te roepen.
 
 ## Swagger/OpenAPI-bestand maken
 
 De OpenAPI-specificatie (voorheen Swagger Specification) is een API-beschrijvingsindeling voor REST API&#39;s. Met een OpenAPI-bestand kunt u de volledige API beschrijven, inclusief:
 
 * Beschikbare eindpunten (/gebruikers) en verrichtingen op elk eindpunt (GET /users, POST /users)
-* Operatieparameters Invoer en uitvoer voor elke bewerkingsverificatiemethode
+* Operatieparameters Invoer en uitvoer voor elke bewerking
+Verificatiemethoden
 * Contactgegevens, licentie, gebruiksvoorwaarden en andere informatie.
 * API-specificaties kunnen worden geschreven in YAML of JSON. De indeling is gemakkelijk te leren en kan zowel voor mensen als voor machines worden gelezen.
 
-Als u uw eerste wagger/OpenAPI-bestand wilt maken, volgt u de [OpenAPI-documentatie](https://swagger.io/docs/specification/2-0/basic-structure/)
+Om uw eerste swagger/OpenAPI dossier tot stand te brengen, te volgen gelieve de [ documentatie OpenAPI ](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
 > AEM Forms ondersteunt OpenAPI Specification versie 2.0 (FKA Swagger).
 
-Gebruik de [wagenbewerker](https://editor.swagger.io/) om uw wagerbestand te maken waarin de bewerkingen worden beschreven die alle landen en onderliggende elementen van het land of de staat ophalen. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt.
+Gebruik de [ kwikredacteur ](https://editor.swagger.io/) om uw kwikdossier tot stand te brengen om de verrichtingen te beschrijven die alle landen en kindelementen van het land of de staat halen. Het wagerbestand kan in JSON- of YAML-indeling worden gemaakt.
 
 ## Gegevensbronnen maken
 
-Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [gegevensbron maken](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van cloudservices. Gebruik de [wagenbestanden](assets/geonames-swagger-files.zip) om uw gegevensbronnen te maken.
+Om AEM/AEM Forms met derdetoepassingen te integreren, moeten wij [ gegevensbron ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in de configuratie van de wolkendiensten tot stand brengen. Gelieve te gebruiken de [ kwikdossiers ](assets/geonames-swagger-files.zip) om uw gegevensbronnen tot stand te brengen.
 U moet twee gegevensbronnen maken (één om alle landen en andere op te halen om onderliggende elementen op te halen)
 
 
 ## Formuliergegevensmodel maken
 
-AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met [formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Baseer het model van vormgegevens op de gegevensbronnen die in de vroegere stap worden gecreeerd. Formuliergegevensmodel met twee gegevensbronnen
+De gegevensintegratie van AEM Forms verstrekt een intuïtief gebruikersinterface om tot stand te brengen en met [ modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) te werken. Baseer het model van vormgegevens op de gegevensbronnen die in de vroegere stap worden gecreeerd. Formuliergegevensmodel met twee gegevensbronnen
 
-![fdm](assets/geonames-fdm.png)
+![ fdm ](assets/geonames-fdm.png)
 
 
 ## Adaptief formulier maken
@@ -71,24 +72,25 @@ Maak een adaptief formulier met twee vervolgkeuzelijsten. Eén om de landen weer
 ### Vervolgkeuzelijst Landen vullen
 
 De lijst met landen wordt gevuld wanneer het formulier voor het eerst wordt geïnitialiseerd. Het volgende het schermschot toont u de regelredacteur die wordt gevormd om de opties van de landdrop-down lijst te bevolken. Dit werkt alleen als u uw gebruikersnaam de account met de geonames opgeeft.
-![landen](assets/get-countries-rule-editor.png)
+![ get-countries ](assets/get-countries-rule-editor.png)
 
 #### De vervolgkeuzelijst Staat/provincie vullen
 
 De vervolgkeuzelijst Staat/provincie moet worden ingevuld op basis van het geselecteerde land. Het volgende scherm-schot toont u de configuratie van de regelredacteur
-![state-Province-options](assets/state-province-options.png)
+![ staat-provincie-opties ](assets/state-province-options.png)
 
 ### Uitoefening
 
 Voeg twee vervolgkeuzelijsten met de naam provincies en steden toe in het formulier om de provincies en steden weer te geven op basis van het geselecteerde land en de geselecteerde staat/provincie.
-![oefening](assets/cascading-drop-down-exercise.png)
+![ oefening ](assets/cascading-drop-down-exercise.png)
 
 
-### Voorbeeldelementen
+### Voorbeeld-Assets
 
-U kunt de volgende middelen downloaden om een begin te maken met het maken van het trapsgewijze vervolgkeuzemenu. De voltooide wagerbestanden kunnen worden gedownload van [hier](assets/geonames-swagger-files.zip)
+U kunt de volgende elementen downloaden om een begin te maken met het maken van het trapsgewijze vervolgkeuzelijstvoorbeeld
+De voltooide swaggerdossiers kunnen van [ hier ](assets/geonames-swagger-files.zip) worden gedownload
 De kwikbestanden beschrijven de volgende REST API
-* [Alle landen ophalen](https://secure.geonames.org/countryInfoJSON?username=yourusername)
-* [Onderliggende items van Geoname-object ophalen](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [ krijgt Alle Landen ](https://secure.geonames.org/countryInfoJSON?username=yourusername)
+* [ krijgt Kinderen van voorwerp Geoname ](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
-De voltooide [Formuliergegevensmodel kan hier worden gedownload](assets/geonames-api-form-data-model.zip)
+Het voltooide [ Model van de Gegevens van de Vorm kan van hier worden gedownload ](assets/geonames-api-form-data-model.zip)

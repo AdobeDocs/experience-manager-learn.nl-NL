@@ -1,6 +1,6 @@
 ---
 title: Verbeterde vertaalfuncties in AEM
-description: AEM robuust vertaalframework kan AEM inhoud naadloos worden vertaald door ondersteunde vertalers. Leer meer over de nieuwste verbeteringen.
+description: Door AEM robuuste vertaalframework kunnen AEM inhoud naadloos worden vertaald door ondersteunde vertalers. Leer meer over de nieuwste verbeteringen.
 version: 6.4, 6.5
 topic: Localization
 feature: Multi Site Manager, Language Copy
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Verbeteringen op gebied van vertaling met beheer voor meerdere sites {#translation-enhancements}
 
-AEM robuust vertaalframework kan AEM inhoud naadloos worden vertaald door ondersteunde vertalers.
+Door AEM robuuste vertaalframework kunnen AEM inhoud naadloos worden vertaald door ondersteunde vertalers.
 
 ## Verbeterde vertalingen in AEM 6.5
 
@@ -26,13 +26,13 @@ AEM robuust vertaalframework kan AEM inhoud naadloos worden vertaald door onders
 
 AEM 6.5 vertaalverbeteringen zijn onder meer:
 
-**Vertaaltaken automatisch goedkeuren**: De goedkeuringsvlag in de vertaalbaan is een binaire bezit. Het bestuurt niet of integreert niet met uit-van-de-doos overzicht en goedkeuringswerkschema&#39;s. Als u het aantal stappen in een vertaaltaak minimaal wilt houden, wordt Standaard ingesteld op &quot;automatisch goedkeuren&quot; in [!UICONTROL Advanced Properties] van een vertaalproject. Als uw organisatie goedkeuring voor een vertaaltaak vereist, kunt u de optie &quot;automatisch goedkeuren&quot; uitschakelen in [!UICONTROL Advanced Properties] van een vertaalproject.
+**auto-keurt vertaalbanen** goed: De goedkeuringsvlag in de vertaalbaan is een binair bezit. Het bestuurt niet of integreert niet met uit-van-de-doos overzicht en goedkeuringswerkschema&#39;s. Als u het aantal stappen in een vertaaltaak minimaal wilt houden, is de standaardinstelling &#39;automatisch goedkeuren&#39; in [!UICONTROL Advanced Properties] van een vertaalproject ingesteld. Als uw organisatie goedkeuring voor een vertaalbaan vereist, kunt u de optie &quot;automatisch goedkeuren&quot;in [!UICONTROL Advanced Properties] van een Vertaalproject schrappen.
 
-**Laden van vertalingen automatisch verwijderen**: In plaats van na deze gebeurtenis handmatig de lanceringen van vertalingen te verwijderen in Launches Admin, is het nu mogelijk om gelanceerde vertalingen automatisch te verwijderen nadat deze zijn gepromoveerd.
+**schrapt automatisch vertaallanceringen**: Eerder dan manueel het schrappen van vertaallanceringen in Lanceert Admin na het feit, is het nu mogelijk om vertaallanceringen automatisch te schrappen nadat zij werden bevorderd.
 
-**Vertaalobjecten exporteren in JSON-indeling**: AEM 6.4 en eerdere versies ondersteunen XML- en XLIFF-indelingen van omzettingsobjecten. U kunt de exportindeling nu configureren naar de JSON-indeling met behulp van uw systeemconsole [!UICONTROL Config Manager]. Zoeken naar [!UICONTROL Translation Platform Configuration]en vervolgens kunt u de exportindeling selecteren als JSON.
+**de voorwerpen van de Vertaling van de Uitvoer in formaat JSON**: AEM 6.4 en vroegere versies steunen de formaten van XML en XLIFF van omzettingsvoorwerpen. U kunt de exportindeling nu configureren naar de JSON-indeling met behulp van uw systeemconsole [!UICONTROL Config Manager] . Zoek [!UICONTROL Translation Platform Configuration] en selecteer vervolgens de exportindeling als JSON.
 
-**Vertaalde AEM in het vertaalgeheugen (TMS) bijwerken**: lokale auteur die geen toegang tot AEM heeft, kan updates uitvoeren naar vertaalde inhoud die al in AEM was opgenomen, rechtstreeks in de TM (vertaalgeheugen, in TMS) en de vertalingen in AEM bijwerken door de vertaaltaak van TMS naar AEM te verplaatsen
+**Update vertaalde AEM inhoud in het Geheugen van de Vertaling (TMS)**: de lokale auteur die geen toegang tot AEM heeft kan updates aan vertaalde inhoud maken, die reeds in AEM, direct in TM (Vertaalgeheugen, in TMS) werd opgenomen, en de vertalingen in AEM bijwerken door vertaalbaan van TMS aan AEM opnieuw te richten
 
 ## Verbeteringen op gebied van vertaling in AEM 6.4
 
@@ -42,6 +42,6 @@ Auteurs kunnen nu snel en gemakkelijk meertalige vertaalprojecten direct van of 
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Inhoud vertalen voor meertalige sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
-* [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
-* [Aanbevolen werkwijzen voor vertaling](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
+* [ Vertaal Inhoud voor Meertalige Plaatsen ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
+* [ https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
+* ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html) Beste praktijken van de Vertaling 0}[

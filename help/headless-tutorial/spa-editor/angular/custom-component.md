@@ -26,19 +26,19 @@ Leer hoe u een aangepaste component maakt die wordt gebruikt met de AEM SPA Edit
 
 1. Begrijp de rol van Sling Models in het manipuleren van JSON model API die door AEM wordt verstrekt.
 2. Begrijp hoe u AEM componentdialoogvensters maakt.
-3. Leer een **aangepast** AEM Component die met het SPA redacteurskader compatibel is.
+3. Leer om a **douane** AEM Component tot stand te brengen die met het SPA redacteurskader compatibel is.
 
 ## Wat u gaat maken
 
-De focus van vorige hoofdstukken was het ontwikkelen van SPA componenten en het in kaart brengen ervan aan *bestaand* AEM Core Components. Dit hoofdstuk richt zich op het creëren en uitbreiden van *new* AEM componenten en bewerk het JSON-model dat AEM aanbiedt.
+De nadruk van vorige hoofdstukken ontwikkelde SPA componenten en in kaart brengend hen aan *bestaande* AEM de Componenten van de Kern. Dit hoofdstuk concentreert zich op hoe te om *nieuwe* AEM componenten tot stand te brengen en uit te breiden en het model te manipuleren JSON dat door AEM wordt gediend.
 
-Een eenvoudig `Custom Component` illustreert de stappen nodig om een net-nieuwe AEM component tot stand te brengen.
+Met een eenvoudige `Custom Component` worden de stappen geïllustreerd die nodig zijn om een nieuwe AEM te maken.
 
-![Bericht weergegeven in Kapitalen](assets/custom-component/message-displayed.png)
+![ Bericht dat in Alle Kapitalen ](assets/custom-component/message-displayed.png) wordt getoond
 
 ## Vereisten
 
-Controleer de vereiste gereedschappen en instructies voor het instellen van een [plaatselijke ontwikkelomgeving](overview.md#local-dev-environment).
+Herzie het vereiste tooling en de instructies voor vestiging a [ lokale ontwikkelomgeving ](overview.md#local-dev-environment).
 
 ### De code ophalen
 
@@ -56,29 +56,29 @@ Controleer de vereiste gereedschappen en instructies voor het instellen van een 
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Als u [AEM 6,x](overview.md#compatibility) voeg toe `classic` profiel:
+   Als het gebruiken van [ AEM 6.x ](overview.md#compatibility) het `classic` profiel toevoegt:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-3. Het voltooide pakket installeren voor de traditionele [WKND-referentiesite](https://github.com/adobe/aem-guides-wknd/releases/latest). De afbeeldingen van [WKND-referentiesite](https://github.com/adobe/aem-guides-wknd/releases/latest) worden opnieuw gebruikt op de WKND-SPA. Het pakket kan worden geïnstalleerd met [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp).
+3. Installeer het gebeëindigde pakket voor de traditionele [ WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest). De beelden die door [ worden verstrekt WKND verwijzingsplaats ](https://github.com/adobe/aem-guides-wknd/releases/latest) worden opnieuw gebruikt op de SPA WKND. Het pakket kan worden geïnstalleerd gebruikend [ AEM de Manager van het Pakket ](http://localhost:4502/crx/packmgr/index.jsp).
 
-   ![Pakketbeheer installeren wknd.all](./assets/map-components/package-manager-wknd-all.png)
+   ![ Manager van het Pakket installeert wknd.all ](./assets/map-components/package-manager-wknd-all.png)
 
-U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/custom-component-solution) of controleer de code plaatselijk door aan de tak over te schakelen `Angular/custom-component-solution`.
+U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/custom-component-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `Angular/custom-component-solution` te schakelen.
 
 ## De AEM component definiëren
 
-Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het project worden deze knooppunten en eigenschappen vertegenwoordigd als XML-bestanden in de `ui.apps` -module. Maak vervolgens de AEM component in het dialoogvenster `ui.apps` -module.
+Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het project, worden deze knopen en eigenschappen vertegenwoordigd als dossiers van XML in de `ui.apps` module. Maak vervolgens de AEM component in de module `ui.apps` .
 
 >[!NOTE]
 >
-> Een snelle herhaling op de [de grondbeginselen van AEM componenten kunnen nuttig zijn](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
+> Een snelle verfrisser op de [ grondbeginselen van AEM componenten kan nuttig zijn ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
-1. Open de `ui.apps` in IDE van uw keuze.
-2. Navigeren naar `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components` en maak een map met de naam `custom-component`.
-3. Een bestand met de naam `.content.xml` onder de `custom-component` map. Vul de `custom-component/.content.xml` met het volgende:
+1. Open de map `ui.apps` in de IDE van uw keuze.
+2. Ga naar `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components` en maak een map met de naam `custom-component` .
+3. Maak een bestand met de naam `.content.xml` onder de map `custom-component` . Vul de `custom-component/.content.xml` met het volgende:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -88,14 +88,14 @@ Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
        componentGroup="WKND SPA Angular - Content"/>
    ```
 
-   ![Aangepaste componentdefinitie maken](assets/custom-component/aem-custom-component-definition.png)
+   ![ creeer de definitie van de Component van de Douane ](assets/custom-component/aem-custom-component-definition.png)
 
    `jcr:primaryType="cq:Component"` - identificeert dat dit knooppunt een AEM component is.
 
-   `jcr:title` Dit is de waarde die wordt weergegeven voor auteurs van inhoud en de `componentGroup` bepaalt de groepering van componenten in auteursUI.
+   `jcr:title` is de waarde die wordt weergegeven aan Content Authors en `componentGroup` bepaalt de groepering van componenten in de ontwerpinterface.
 
-4. Onder de `custom-component` map, een andere map maken met de naam `_cq_dialog`.
-5. Onder de `_cq_dialog` map maken een bestand met de naam `.content.xml` en vult deze met het volgende:
+4. Maak onder de map `custom-component` een andere map met de naam `_cq_dialog` .
+5. Onder de map `_cq_dialog` maakt u een bestand met de naam `.content.xml` en vult u dit met het volgende:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -146,37 +146,37 @@ Een AEM component wordt gedefinieerd als een knooppunt en eigenschappen. In het 
    </jcr:root>
    ```
 
-   ![Aangepaste componentdefinitie](assets/custom-component/dialog-custom-component-defintion.png)
+   ](assets/custom-component/dialog-custom-component-defintion.png) de definitie van de Component van 0} Douane![
 
-   Het bovenstaande XML-bestand genereert een eenvoudig dialoogvenster voor het `Custom Component`. Het kritieke deel van het bestand is de binnenzijde `<message>` knooppunt. Dit dialoogvenster bevat een eenvoudig `textfield` benoemd `Message` en blijft de waarde van het tekstveld behouden in een eigenschap met de naam `message`.
+   Het bovenstaande XML-bestand genereert een eenvoudig dialoogvenster voor de `Custom Component` . Het kritieke deel van het bestand is de binnenste `<message>` -node. Dit dialoogvenster bevat een eenvoudige `textfield` naam `Message` en blijft de waarde van het veld textiel bevatten voor een eigenschap met de naam `message` .
 
-   Naast de waarde van de optie `message` via het JSON-model.
+   Er wordt een verkoopmodel gemaakt naast de waarde van de eigenschap `message` via het JSON-model.
 
    >[!NOTE]
    >
-   > Je kunt nog veel meer bekijken [voorbeelden van dialoogvensters door de definities van de Component van de Kern te bekijken](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). U kunt ook aanvullende formuliervelden weergeven, zoals `select`, `textarea`, `pathfield`, beschikbaar onder `/libs/granite/ui/components/coral/foundation/form` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
+   > U kunt veel meer [ voorbeelden van dialogen bekijken door de definities van de Component van de Kern te bekijken ](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). U kunt extra vormgebieden, zoals `select`, `textarea`, `pathfield` ook bekijken, beschikbaar onder `/libs/granite/ui/components/coral/foundation/form` in [ CRXDE-Lite ](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Met een traditionele AEM [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) is doorgaans vereist. Aangezien de SPA de component rendert, is er geen HTML-script nodig.
+   Met een traditionele AEM component, wordt een [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) manuscript typisch vereist. Aangezien de SPA de component rendert, is er geen HTML-script nodig.
 
 ## Het verkoopmodel maken
 
-Sling-modellen zijn annotaties die worden aangedreven door Java™ &quot;POJO&#39;s&quot; (gewone oude Java™-objecten) en die het gemakkelijker maken gegevens van de JCR aan Java™-variabelen toe te wijzen. [Verkoopmodellen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models) typisch functie om complexe server-kant bedrijfslogica voor AEM Componenten in te kapselen.
+Sling-modellen zijn annotaties die worden aangedreven door Java™ &quot;POJO&#39;s&quot; (gewone oude Java™-objecten) en die het gemakkelijker maken gegevens van de JCR aan Java™-variabelen toe te wijzen. [ het Sling Modellen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models) functioneren typisch om complexe server-kant bedrijfslogica voor AEM Componenten in te kapselen.
 
-In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud van een component door het model JSON door een eigenschap bloot gebruikend [Verkoopmodel exporteren](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+In de context van de SPA Redacteur, blootstellen het Verdelen Modellen de inhoud van een component door het model JSON door een eigenschap gebruikend [ het Verdelen ModelExporter ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
-1. Open in de IDE van uw keuze de `core` -module. `CustomComponent.java` en `CustomComponentImpl.java` zijn al gemaakt en uitgestald als onderdeel van de hoofdstukstartcode.
+1. Open de module `core` in de IDE van uw keuze. `CustomComponent.java` en `CustomComponentImpl.java` zijn al gemaakt en uitgestald als onderdeel van de begincode van het hoofdstuk.
 
    >[!NOTE]
    >
-   > Als het gebruiken van winde van de Code van Visual Studio, kan het nuttig zijn om te installeren [extensies voor Java™](https://code.visualstudio.com/docs/java/extensions).
+   > Als het gebruiken van winde van de Code van Visual Studio, kan het nuttig zijn om [ uitbreidingen voor Java™ ](https://code.visualstudio.com/docs/java/extensions) te installeren.
 
-2. De Java™-interface openen `CustomComponent.java` om `core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/CustomComponent.java`:
+2. Open de Java™-interface `CustomComponent.java` op `core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/CustomComponent.java` :
 
-   ![CustomComponent.java-interface](assets/custom-component/custom-component-interface.png)
+   ![ interface CustomComponent.java ](assets/custom-component/custom-component-interface.png)
 
    Dit is de Java™ interface die door het het Verkopen Model wordt uitgevoerd.
 
-3. Bijwerken `CustomComponent.java` zodat het de `ComponentExporter` interface:
+3. Werk `CustomComponent.java` bij zodat de interface van `ComponentExporter` wordt uitgebreid:
 
    ```java
    package com.adobe.aem.guides.wknd.spa.angular.core.models;
@@ -189,15 +189,15 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
    }
    ```
 
-   De uitvoering van `ComponentExporter` -interface is een vereiste dat het Sling-model automatisch wordt opgenomen door de JSON-model-API.
+   Het implementeren van de interface `ComponentExporter` is een vereiste dat het Sling-model automatisch wordt opgenomen door de JSON-model-API.
 
-   De `CustomComponent` interface bevat één methode getter `getMessage()`. Dit is de methode die de waarde van de auteurdialoog door het model JSON blootstelt. Alleen methoden getter met lege parameters `()` worden geëxporteerd in het JSON-model.
+   De interface `CustomComponent` bevat één methode getter `getMessage()` . Dit is de methode die de waarde van de auteurdialoog door het model JSON blootstelt. Alleen methoden getter met lege parameters `()` worden geëxporteerd in het JSON-model.
 
-4. Openen `CustomComponentImpl.java` om `core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java`.
+4. Open `CustomComponentImpl.java` om `core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java` .
 
-   Dit is de uitvoering van de `CustomComponent` interface. De `@Model` Met aantekening wordt de Java™-klasse aangeduid als een Sling Model. De `@Exporter` Met aantekening kan de Java™-klasse via serienummering worden geserialiseerd en geëxporteerd via de Sling Model Exporter.
+   Dit is de implementatie van de interface `CustomComponent` . In de annotatie `@Model` wordt de Java™-klasse aangeduid als een Sling Model. Met de `@Exporter` -annotatie kan de Java™-klasse via serienummering worden geserialiseerd en geëxporteerd via de Sling Model Exporter.
 
-5. De variabele static bijwerken `RESOURCE_TYPE` naar de AEM-component `wknd-spa-angular/components/custom-component` gemaakt in de vorige oefening.
+5. Werk de statische variabele `RESOURCE_TYPE` bij om naar de AEM component `wknd-spa-angular/components/custom-component` te wijzen die in de vorige oefening is gemaakt.
 
    ```java
    static final String RESOURCE_TYPE = "wknd-spa-angular/components/custom-component";
@@ -205,7 +205,7 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
 
    Het middeltype van de component is wat het Sling Model aan de AEM component bindt en uiteindelijk aan de component van de Angular in kaart brengt.
 
-6. Voeg de `getExportedType()` aan de `CustomComponentImpl` klasse om het type van componentenmiddel terug te keren:
+6. Voeg de methode `getExportedType()` toe aan de klasse `CustomComponentImpl` om het type van componentbron te retourneren:
 
    ```java
    @Override
@@ -214,9 +214,9 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
    }
    ```
 
-   Deze methode is vereist bij de implementatie van de `ComponentExporter` en stelt het middeltype bloot dat de afbeelding aan de component van de Angular toestaat.
+   Deze methode is vereist wanneer het uitvoeren van de `ComponentExporter` interface en stelt het middeltype bloot dat de afbeelding aan de component van de Angular toestaat.
 
-7. Werk de `getMessage()` methode om de waarde van de `message` eigenschap is door het dialoogvenster van de auteur blijvend. Gebruik de `@ValueMap` annotatie wordt toegewezen aan de JCR-waarde `message` aan een Java™-variabele:
+7. Werk de methode `getMessage()` bij om de waarde te retourneren van de eigenschap `message` die door het dialoogvenster van de auteur wordt voortgezet. Gebruik de `@ValueMap` -annotatie om de JCR-waarde `message` toe te wijzen aan een Java™-variabele:
 
    ```java
    import org.apache.commons.lang3.StringUtils;
@@ -235,15 +235,15 @@ In de context van de Redacteur van de SPA, stelt het Verdelen Modellen de inhoud
 
    >[!NOTE]
    >
-   > U kunt de [voltooid CustomComponentImpl.java hier](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
+   > U kunt [ gebeëindigd CustomComponentImpl.java hier bekijken ](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## De component Angular bijwerken
 
 De code van de Angular voor de Component van de Douane is reeds gecreeerd. Voer vervolgens een aantal updates uit om de component Angular toe te wijzen aan de AEM.
 
-1. In de `ui.frontend` -module het bestand openen `ui.frontend/src/app/components/custom/custom.component.ts`
-2. Waarnemen van `@Input() message: string;` lijn. Verwacht wordt dat de getransformeerde hoofdletterwaarde aan deze variabele wordt toegewezen.
-3. Het dialoogvenster Importeren `MapTo` -object van de AEM SPA Editor JS SDK en deze gebruiken om toe te wijzen aan de AEM-component:
+1. Open het bestand in de module `ui.frontend` `ui.frontend/src/app/components/custom/custom.component.ts`
+2. Bekijk de regel `@Input() message: string;` . Verwacht wordt dat de getransformeerde hoofdletterwaarde aan deze variabele wordt toegewezen.
+3. Importeer het `MapTo` -object van de AEM SPA Editor JS SDK en gebruik dit om het toe te wijzen aan de AEM component:
 
    ```diff
    + import {MapTo} from '@adobe/cq-angular-editable-components';
@@ -256,8 +256,8 @@ De code van de Angular voor de Component van de Douane is reeds gecreeerd. Voer 
    + MapTo('wknd-spa-angular/components/custom-component')(CustomComponent, CustomEditConfig);
    ```
 
-4. Openen `cutom.component.html` en merkt op dat de `{{message}}` wordt weergegeven op een zijde van `<h2>` -tag.
-5. Openen `custom.component.css` en voeg de volgende regel toe:
+4. Open `cutom.component.html` en controleer of de waarde van `{{message}}` wordt weergegeven naast een `<h2>` -tag.
+5. Open `custom.component.css` en voeg de volgende regel toe:
 
    ```css
    :host-context {
@@ -265,7 +265,7 @@ De code van de Angular voor de Component van de Douane is reeds gecreeerd. Voer 
    }
    ```
 
-   De tijdelijke aanduiding voor de AEM Editor moet correct worden weergegeven wanneer de component leeg is. `:host-context` of een `<div>` moet worden ingesteld op `display: block;`.
+   De tijdelijke aanduiding voor de AEM Editor wordt alleen correct weergegeven wanneer de component leeg is, als `:host-context` of een andere `<div>` is ingesteld op `display: block;` .
 
 6. Stel de updates aan een lokaal AEM milieu van de wortel van de projectfolder op, gebruikend uw Maven vaardigheden:
 
@@ -276,9 +276,9 @@ De code van de Angular voor de Component van de Douane is reeds gecreeerd. Voer 
 
 ## Sjabloonbeleid bijwerken
 
-Navigeer vervolgens naar AEM om de updates te controleren en de `Custom Component` aan de SPA toe te voegen.
+Navigeer vervolgens naar AEM om de updates te controleren en `Custom Component` toe te staan om aan de SPA te worden toegevoegd.
 
-1. Controleer de registratie van het nieuwe verkoopmodel door naar [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels).
+1. Verifieer de registratie van het nieuwe Verschuivende Model door aan [ http://localhost:4502/system/console/status-slingmodels ](http://localhost:4502/system/console/status-slingmodels) te navigeren.
 
    ```plain
    com.adobe.aem.guides.wknd.spa.angular.core.models.impl.CustomComponentImpl - wknd-spa-angular/components/custom-component
@@ -286,37 +286,37 @@ Navigeer vervolgens naar AEM om de updates te controleren en de `Custom Componen
    com.adobe.aem.guides.wknd.spa.angular.core.models.impl.CustomComponentImpl exports 'wknd-spa-angular/components/custom-component' with selector 'model' and extension '[Ljava.lang.String;@6fb4a693' with exporter 'jackson'
    ```
 
-   De bovenstaande twee regels geven de `CustomComponentImpl` is gekoppeld aan de `wknd-spa-angular/components/custom-component` en dat deze is geregistreerd via de verkoopmodel-exportfunctie.
+   De bovenstaande twee regels geven aan dat de `CustomComponentImpl` is gekoppeld aan de `wknd-spa-angular/components/custom-component` -component en dat deze is geregistreerd via de Sling Model Exporter.
 
-2. Navigeer naar de SPA paginasjabloon op [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
-3. Werk het beleid van de Container van de Lay-out bij om nieuwe toe te voegen `Custom Component` als toegestane component:
+2. Navigeer aan het Malplaatje van de SPA Pagina in [ http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html ](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
+3. Werk het beleid van de Container van de Lay-out bij om nieuwe `Custom Component` als toegestane component toe te voegen:
 
-   ![Layoutcontainerbeleid bijwerken](assets/custom-component/custom-component-allowed.png)
+   ![ het beleid van de Container van de Lay-out van de Update ](assets/custom-component/custom-component-allowed.png)
 
-   Sla de wijzigingen in het beleid op en bekijk de `Custom Component` als toegestane component:
+   Sla de wijzigingen in het beleid op en bekijk de `Custom Component` als een toegestane component:
 
-   ![Aangepaste component als toegestane component](assets/custom-component/custom-component-allowed-layout-container.png)
+   ![ Component van de Douane als toegestane component ](assets/custom-component/custom-component-allowed-layout-container.png)
 
 ## Auteur van de aangepaste component
 
-Nu, auteur `Custom Component` met de AEM SPA Editor.
+Maak vervolgens de `Custom Component` met de AEM SPA Editor.
 
-1. Navigeren naar [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
-2. In `Edit` in de modus, voegt u de `Custom Component` aan de `Layout Container`:
+1. Navigeer aan [ http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html ](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
+2. Voeg in de modus `Edit` de `Custom Component` toe aan de `Layout Container` :
 
-   ![Nieuwe component invoegen](assets/custom-component/insert-custom-component.png)
+   ![ Tussenvoegsel Nieuwe Component ](assets/custom-component/insert-custom-component.png)
 
 3. Open het dialoogvenster van de component en voer een bericht in dat kleine letters bevat.
 
-   ![De aangepaste component configureren](assets/custom-component/enter-dialog-message.png)
+   ![ vorm de Component van de Douane ](assets/custom-component/enter-dialog-message.png)
 
    Dit is het dialoogvenster dat is gemaakt op basis van het XML-bestand dat eerder in het hoofdstuk is opgenomen.
 
 4. Sla de wijzigingen op. Merk op dat het getoonde bericht in alle gekapitaliseerd is.
 
-   ![Bericht weergegeven in Kapitalen](assets/custom-component/message-displayed.png)
+   ![ Bericht dat in Alle Kapitalen ](assets/custom-component/message-displayed.png) wordt getoond
 
-5. U kunt het JSON-model weergeven door naar [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json). Zoeken naar `wknd-spa-angular/components/custom-component`:
+5. Bekijk het model JSON door aan [ http://localhost:4502/content/wknd-spa-angular/us/en.model.json ](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) te navigeren. Zoeken naar `wknd-spa-angular/components/custom-component` :
 
    ```json
    "custom_component_208183317": {
@@ -331,8 +331,8 @@ Nu, auteur `Custom Component` met de AEM SPA Editor.
 
 Gefeliciteerd, hebt u geleerd hoe u een aangepaste AEM component kunt maken en hoe de modellen en dialoogvensters voor verkopers werken met het JSON-model.
 
-U kunt de voltooide code altijd weergeven op [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/custom-component-solution) of controleer de code plaatselijk door aan de tak over te schakelen `Angular/custom-component-solution`.
+U kunt de gebeëindigde code op [ GitHub ](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/custom-component-solution) altijd bekijken of de code plaatselijk controleren door aan de tak `Angular/custom-component-solution` te schakelen.
 
 ### Volgende stappen {#next-steps}
 
-[Een kerncomponent uitbreiden](extend-component.md) - Leer hoe u een bestaande Core Component kunt uitbreiden voor gebruik met de AEM SPA Editor. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden.
+[ breidt een Component van de Kern ](extend-component.md) uit - leer hoe te om een bestaande Component van de Kern uit te breiden die met de AEM SPARedacteur moet worden gebruikt. Het begrip hoe te om eigenschappen en inhoud aan een bestaande component toe te voegen is een krachtige techniek om de mogelijkheden van een implementatie van AEM SPARedacteur uit te breiden.

@@ -1,6 +1,6 @@
 ---
 title: Gereedschappen voor het verfijnen van code
-description: Leer hoe AEM de Hulpmiddelen van de Refactoring van de Code de omzetting van bestaande AEM projecten automatiseren om as a Cloud Service compatibel AEM te zijn.
+description: Leer hoe AEM de Hulpmiddelen van de Refactoring van de Code de omzetting van bestaande AEM projecten helpen automatiseren om compatibel met AEM as a Cloud Service te zijn.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Gereedschappen voor het verfijnen van code
 
-Leer hoe AEM de Hulpmiddelen van de Refactoring van de Code de omzetting van bestaande AEM projecten automatiseren om as a Cloud Service compatibel AEM te zijn.
+Leer hoe AEM de Hulpmiddelen van de Refactoring van de Code de omzetting van bestaande AEM projecten helpen automatiseren om compatibel met AEM as a Cloud Service te zijn.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336693?quality=12&learn=on)

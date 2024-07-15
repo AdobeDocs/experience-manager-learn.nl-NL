@@ -39,31 +39,31 @@ Er zijn verscheidene punten u moet controleren om probleem-vrije verrichting te 
 
 ### Routine Maintenance
 
-#### [indexonderhoud](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
+#### [ indexonderhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
 
 Met indexen kunnen query&#39;s zo snel mogelijk worden uitgevoerd, waardoor bronnen voor andere bewerkingen vrijkomen. Zorg ervoor dat de indexen de top-top vorm hebben! AEM annuleert vragen die in plaats van het gebruiken van een index reizen om één slechte vraag te houden van het beïnvloeden van algemene AEM prestaties.
 
-#### [Tar Compaction/Revision Clearing](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
+#### [ Opschonen van de Compactie/van de Revisie van de Tar ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
 
 Bij elke update van de opslagplaats wordt een nieuwe inhoudsrevisie gemaakt. Als gevolg hiervan neemt de grootte van de gegevensopslagruimte bij elke update toe. Om ongecontroleerde groei van opslagplaatsen te voorkomen, moeten oude revisies worden opgeschoond tot vrije schijfmiddelen.
 
-#### [Opruimen van Lucene-binaire stoffen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
+#### [ Lucene binaries schoonmaakbeurt ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
 
 Wis lucene binaire binaire getallen en verlaag de vereiste opslaggrootte voor de actieve gegevens.
 
-#### [Opruiming gegevensopslag](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
+#### [ de Afval van de Opslag van Gegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
 
 Wanneer een middel in AEM wordt geschrapt, kan de verwijzing naar het onderliggende verslag van de gegevensopslag uit de knoophiërarchie worden verwijderd, maar het verslag van de gegevensopslag zelf blijft. Deze gegevensopslagrecord zonder referenties wordt &#39;garbage&#39; die niet hoeft te worden bewaard. In gevallen waarin een aantal middelen zonder referenties bestaat, is het nuttig deze te verwijderen, ruimte te behouden, back-up en onderhoudsprestaties van het bestandssysteem te optimaliseren.
 
-#### [Werkstroom leegmaken](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
+#### [ Wissen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen.
 
-#### [Controle van logboekonderhoud](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
+#### [ het Onderhoud van het Logboek van de Controle ] (https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
 
 AEM gebeurtenissen die in aanmerking komen voor accountlogboekregistratie, genereren veel gearchiveerde gegevens. Deze gegevens kunnen na verloop van tijd snel groeien als gevolg van replicaties, het uploaden van bedrijfsmiddelen en andere systeemactiviteiten.
 
-#### [Beveiliging](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
+#### [ Veiligheid ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
 
 Zorg ervoor dat de best practices van de lijst met beveiligingscontroles nauwlettend worden gevolgd om ervoor te zorgen dat de AEM het veiligst is.
 
@@ -73,13 +73,13 @@ Monitor diskspace om er zeker van te zijn dat u voldoende hebt voor de JCR Repos
 
 ## Developer
 
-Probeer geen aangepaste componenten te gebruiken - gebruik [kerncomponenten](https://www.aemcomponents.dev/). U moet kerncomponenten 80-90% van de tijd en aangepaste componenten slechts spaarzaam gebruiken. Dit vereist vaak een nieuwe manier om naar de componenten op een pagina te kijken - u moet zich realiseren dat de componenten gemakkelijk door een front-end ontwikkelaar kunnen worden hervormd gebruikend CSS. Houd er ook rekening mee dat deze kerncomponenten in elkaar kunnen worden ingesloten om vrij complexe resultaten te bereiken. Creatief!
+Probeer om douanecomponenten niet te gebruiken - gebruik [ kerncomponenten ](https://www.aemcomponents.dev/). U moet kerncomponenten 80-90% van de tijd en aangepaste componenten slechts spaarzaam gebruiken. Dit vereist vaak een nieuwe manier om naar de componenten op een pagina te kijken - u moet zich realiseren dat de componenten gemakkelijk door een front-end ontwikkelaar kunnen worden hervormd gebruikend CSS. Houd er ook rekening mee dat deze kerncomponenten in elkaar kunnen worden ingesloten om vrij complexe resultaten te bereiken. Creatief!
 
-### [Stijlsystemen](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
+### [ Systemen van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
 
 Met stijlsystemen kunnen de basiscomponenten, en zelfs aangepaste componenten, naar eigen goeddunken naar wens van de auteur hun uiterlijk veranderen om geheel nieuwe, kijkende componenten te maken. Deze stilistische veranderingen impliceren over het algemeen slechts een front-end ontwerper en een goed geïnformeerde auteur (die vaak naar een &quot;Super Auteur&quot;wordt verwezen
 
-### [Starten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=en)
+### [ Lanceringen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=en)
 
 Met Starten kan het werk worden voltooid voor een nieuwe promotie-, verkoop- of websiteuitrol zonder dat dit gevolgen heeft voor de momenteel geïmplementeerde pagina&#39;s. Bovendien kunnen ze automatisch, zonder aanwezigheid of toezicht, live gaan, zodat auteurs nu hun werk van volgende week (of volgend kwartaal) kunnen doen en niet de dag voor het leven op de pagina komen - het is echt de gave van TIME!)
 
@@ -95,8 +95,8 @@ Denk vooruit en bekijk wat opnieuw gebruikt kan worden. Voettekst? Een disclaime
 
 ## Algemeen
 
-Blijf op de hoogte van veranderingen AEM door voortdurend leren - blijf niet vastzitten in het verleden. Gebruiken [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) en [ADLS (Adobe Digital Learning Services)](https://learning.adobe.com/) om uw vaardigheden te verbeteren.
+Blijf op de hoogte van veranderingen AEM door voortdurend leren - blijf niet vastzitten in het verleden. Het Experience League van het gebruik ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) en [ Digitale het Leren van de Adobe de Diensten (ADLS) ](https://learning.adobe.com/) om uw vaardigheden te kweken.[
 
 ## Conclusie
 
-AEM kan een groot systeem zijn, en het kost veel mensen om het &quot;zingen&quot; te maken. Van Admins aan Ontwikkelaars (zowel front-end als hardcore Java-ontwikkelaars) aan Auteurs - er is iets voor iedereen! En als je je niet voelt om de dagelijkse administratie te beheren, is er altijd AMS en AEM as a Cloud Service.
+AEM kan een groot systeem zijn, en het kost veel mensen om het &quot;zingen&quot; te maken. Van Admins aan Ontwikkelaars (zowel front-end als hardcore Java-ontwikkelaars) aan Auteurs - er is iets voor iedereen! En als je je niet voelt om het dagelijks bestuur te beheren, zijn er altijd AMS en AEM as a Cloud Service.

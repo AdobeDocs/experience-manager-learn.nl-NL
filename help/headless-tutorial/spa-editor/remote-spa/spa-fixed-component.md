@@ -23,30 +23,30 @@ ht-degree: 0%
 
 Bewerkbare React-componenten kunnen &#39;vast&#39; zijn of hard gecodeerd in de SPA weergaven. Op deze manier kunnen ontwikkelaars SPA met de Editor compatibele componenten in de SPA weergaven plaatsen en kunnen gebruikers de inhoud van de componenten schrijven in AEM SPA Editor.
 
-![Vaste componenten](./assets/spa-fixed-component/intro.png)
+![ Vaste componenten ](./assets/spa-fixed-component/intro.png)
 
-In dit hoofdstuk vervangen we de titel &quot;Huidige avonturen&quot; van de weergave Home. Dit is een harde tekst in `Home.js` met een vaste, maar bewerkbare component Titel. Vaste componenten garanderen de plaatsing van de titel, maar staan ook toe dat de tekst van de titel wordt geschreven en dat de titel buiten de ontwikkelingscyclus wordt gewijzigd.
+In dit hoofdstuk vervangen we de titel &#39;Huidige avonturen&#39; van de weergave Home. Dit is een vaste, maar bewerkbare titel in `Home.js` . Vaste componenten garanderen de plaatsing van de titel, maar staan ook toe dat de tekst van de titel wordt geschreven en dat de titel buiten de ontwikkelingscyclus wordt gewijzigd.
 
 ## De WKND-app bijwerken
 
-Als u een __Vast__ aan de mening van het Huis:
+Om a __Vaste__ component aan de mening van het Huis toe te voegen:
 
 + Creeer een douane editable component van de Titel en registreer het aan het middeltype van de Titel van het project
 + Plaats de bewerkbare component Titel in de SPA Home-weergave
 
 ### Een bewerkbare component React Title maken
 
-Vervang de tekst met harde codes in de SPA Home `<h2>Current Adventures</h2>` met een aangepaste bewerkbare component Title. Voordat de component Titel kan worden gebruikt, moeten we:
+Vervang in de SPA Home-weergave de tekst met harde codes `<h2>Current Adventures</h2>` door een aangepaste bewerkbare component Title. Voordat de component Titel kan worden gebruikt, moeten we:
 
 1. Een aangepaste component Title React maken
-1. De aangepaste component Title decorteren met methoden uit `@adobe/aem-react-editable-components` om het bewerkbaar te maken.
-1. De bewerkbare titelcomponent registreren met `MapTo` zodat het kan worden gebruikt in [containercomponent later](./spa-container-component.md).
+1. Decoreer de component van de Titel van de douane gebruikend methodes van `@adobe/aem-react-editable-components` om het editable te maken.
+1. Registreer de editable component van de Titel met `MapTo` zodat kan het in [ containercomponent later ](./spa-container-component.md) worden gebruikt.
 
 Dit doet u als volgt:
 
-1. Externe SPA openen bij `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` in uw IDE
+1. Open Verre SPA project bij `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` in uw winde
 1. Een component React maken op `react-app/src/components/editable/core/Title.js`
-1. De volgende code toevoegen aan `Title.js`.
+1. Voeg de volgende code toe aan `Title.js` .
 
    ```javascript
    import React from 'react'
@@ -96,7 +96,7 @@ Dit doet u als volgt:
    Lees de opmerkingen van de code voor de implementatiedetails.
 
 1. Een component React maken op `react-app/src/components/editable/EditableTitle.js`
-1. De volgende code toevoegen aan `EditableTitle.js`.
+1. Voeg de volgende code toe aan `EditableTitle.js` .
 
    ```javascript
    // Import the withMappable API provided bu the AEM SPA Editor JS SDK
@@ -132,14 +132,14 @@ Dit doet u als volgt:
    export default EditableTitle;
    ```
 
-   Dit `EditableTitle` React component verpakt `Title` Reageer de component, wikkelen en decoreren zodat deze in AEM SPA Editor kan worden bewerkt.
+   Met deze `EditableTitle` React-component wordt de `Title` React-component verpakt, verpakt en decoreert deze zodat deze bewerkbaar is in AEM SPA Editor.
 
 ### De component React EditableTitle gebruiken
 
 Nu de component EditableTitle React is geregistreerd in en beschikbaar is voor gebruik in de React-app, vervangt u de tekst van de hard-gecodeerde titel in de weergave Home.
 
 1. Bewerken `react-app/src/components/Home.js`
-1. In de `Home()` onderaan, importeren `EditableTitle` en vervang de hard-gecodeerde titel door de nieuwe `AEMTitle` component:
+1. Importeer `EditableTitle` in de `Home()` onderaan en vervang de hard-gecodeerde titel door de nieuwe `AEMTitle` -component:
 
    ```javascript
    ...
@@ -159,32 +159,32 @@ Nu de component EditableTitle React is geregistreerd in en beschikbaar is voor g
    }
    ```
 
-De `Home.js` bestand moet er als volgt uitzien:
+Het bestand `Home.js` moet er als volgt uitzien:
 
-![Home.js](./assets/spa-fixed-component/home-js-update.png)
+![ Home.js ](./assets/spa-fixed-component/home-js-update.png)
 
 ## De component Titel in AEM maken
 
 1. Aanmelden bij AEM auteur
-1. Navigeren naar __Sites > WKND App__
-1. Tikken __Home__ en selecteert u __Bewerken__ van de bovenste actiebalk
-1. Selecteren __Bewerken__ in de bewerkingsmoduskiezer rechtsboven in de Pagina-editor
+1. Navigeer aan __Plaatsen > app WKND__
+1. Tik __Huis__ en selecteer __uitgeven__ van de hoogste actiebar
+1. Selecteer __uitgeven__ van uitgeeft wijzesselecteur in het hoogste recht van de Redacteur van de Pagina
 1. Houd de muisaanwijzer boven de standaardtiteltekst onder het WKND-logo en boven de lijst met avonturen totdat de omtrek voor blauwe bewerking wordt weergegeven
-1. Tik om de actiebalk van de component zichtbaar te maken en tik vervolgens op de __moersleutel__  bewerken
+1. Tik om de actiebar van de component bloot te stellen, en dan de __moersleutel__ te ontsteken om uit te geven
 
-   ![De component Title, actiebalk](./assets/spa-fixed-component/title-action-bar.png)
+   ![ de componentenactiebar van de Titel ](./assets/spa-fixed-component/title-action-bar.png)
 
 1. Auteur van de component Title:
-   + Titel: __WKND Adventures__
-   + Type/grootte: __H2__
+   + Titel: __WKND avonturen__
+   + Type/Grootte: __H2__
 
-     ![Dialoogvenster Titel](./assets/spa-fixed-component/title-dialog.png)
+     ![ de componentendialoog van de Titel ](./assets/spa-fixed-component/title-dialog.png)
 
-1. Tikken __Gereed__ opslaan
+1. Tik __Gedaan__ om te bewaren
 1. Wijzigingen voorvertonen in AEM SPA Editor
-1. De WKND-app vernieuwen die lokaal wordt uitgevoerd [http://localhost:3000](http://localhost:3000) en zie de veranderingen van de geschreven titel onmiddellijk weerspiegeld.
+1. Vernieuw de WKND App die plaatselijk op [ http://localhost:3000 ](http://localhost:3000) loopt en zie de authored onmiddellijk weerspiegelde titelveranderingen.
 
-   ![Titelcomponent in SPA](./assets/spa-fixed-component/title-final.png)
+   ![ component van de Titel in SPA ](./assets/spa-fixed-component/title-final.png)
 
 ## Gefeliciteerd!
 
@@ -196,4 +196,4 @@ U hebt een vaste, bewerkbare component toegevoegd aan de WKND-app! Nu weet u hoe
 
 ## Volgende stappen
 
-De volgende stappen zijn: [een AEM component ResponsiveGrid toevoegen](./spa-container-component.md) aan de SPA die auteur toestaat om en editable componenten aan de SPA toe te voegen!
+De volgende stappen moeten [ een AEM container ResponsiveGrid component ](./spa-container-component.md) aan de SPA toevoegen die auteur toestaat om en editable componenten aan de SPA toe te voegen!

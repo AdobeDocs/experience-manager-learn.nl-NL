@@ -131,7 +131,7 @@ MarketoConfigurationService config;
 
 De scherm-schot hieronder toont de configuratieeigenschappen die moeten worden geplaatst. Deze configuratieeigenschappen worden gelezen in de code hierboven vermeld om access_token te krijgen
 
-![config](assets/configuration-settings.png)
+![ config ](assets/configuration-settings.png)
 
 ### Configuratie
 
@@ -202,7 +202,7 @@ public class MarketoConfigurationService {
 ```
 
 1. De bundel op uw AEM server bouwen en implementeren.
-1. [Wijs uw browser aan configMgr aan](http://localhost:4502/system/console/configMgr) en zoek naar &quot;Marketo Credentials Service Configuration&quot;
+1. [ Punt uw browser aan configMgr ](http://localhost:4502/system/console/configMgr) en onderzoek naar &quot;Configuratie van de Dienst van de Credentials van Marketo&quot;
 1. Geef de juiste eigenschappen op die specifiek zijn voor uw Marketo-instantie
 
 ## Volgende stappen

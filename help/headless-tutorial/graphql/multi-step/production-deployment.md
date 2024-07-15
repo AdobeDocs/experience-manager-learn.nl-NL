@@ -1,6 +1,6 @@
 ---
-title: Implementatie van de productie met behulp van een AEM publicatieservice - Aan de slag met AEM headless - GraphQL
-description: Meer informatie over AEM services voor auteurs en publiceren en het aanbevolen implementatiepatroon voor toepassingen zonder kop. In deze zelfstudie leert u omgevingsvariabelen te gebruiken om een GraphQL-eindpunt dynamisch te wijzigen op basis van de doelomgeving. Leer om AEM voor het delen van bronnen tussen verschillende oorsprong (CORS) behoorlijk te vormen.
+title: Implementatie van de productie met behulp van een AEM Publish-service - Aan de slag met AEM headless - GraphQL
+description: Meer informatie over AEM services van Auteur en Publish en het aanbevolen implementatiepatroon voor toepassingen zonder koppen. In deze zelfstudie leert u omgevingsvariabelen te gebruiken om een GraphQL-eindpunt dynamisch te wijzigen op basis van de doelomgeving. Leer om AEM voor het delen van bronnen tussen verschillende oorsprong (CORS) behoorlijk te vormen.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 ---
 
-# Implementatie van productie met een AEM publicatieservice
+# Implementatie van productie met een AEM Publish-service
 
-In deze zelfstudie stelt u een lokale omgeving in om inhoud te simuleren die wordt gedistribueerd van een instantie Auteur naar een instantie Publish. U genereert ook een productiebuild van een React-app die is geconfigureerd om inhoud te verbruiken vanuit de AEM-publicatieomgeving met behulp van de GraphQL API&#39;s. Langs de manier, zult u leren hoe te om milieuvariabelen effectief te gebruiken en hoe te om de configuraties van AEM CORS bij te werken.
+In deze zelfstudie stelt u een lokale omgeving in om inhoud te simuleren die van een instantie Auteur naar een instantie Publish wordt gedistribueerd. U genereert ook een productiebuild van een React-app die is geconfigureerd om inhoud te verbruiken vanuit de AEM Publish-omgeving met de GraphQL API&#39;s. Langs de manier, zult u leren hoe te om milieuvariabelen effectief te gebruiken en hoe te om de configuraties van AEM CORS bij te werken.
 
 ## Vereisten
 
@@ -30,44 +30,44 @@ Deze zelfstudie maakt deel uit van een meerdelige zelfstudie. Aangenomen wordt d
 
 Leer hoe u:
 
-* Begrijp de AEM Auteur en publiceer architectuur.
+* Begrijp de AEM Auteur en de architectuur van Publish.
 * Leer beste praktijken voor het beheren van omgevingsvariabelen.
 * Leer hoe u AEM voor het delen van bronnen tussen verschillende oorsprong (CORS) correct configureert.
 
-## Implementatiepatroon voor auteur publiceren {#deployment-pattern}
+## Implementatiepatroon voor Publish-auteur {#deployment-pattern}
 
-Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. In deze service maken, beheren en voorvertonen interne gebruikers inhoud. De publicatieservice wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de omgeving waarmee eindgebruikers werken. Inhoud wordt na bewerking en goedkeuring in de service Auteur gedistribueerd naar de service Publiceren.
+Een volledige AEM omgeving bestaat uit een auteur, Publish en Dispatcher. In deze service maken, beheren en voorvertonen interne gebruikers inhoud. De Publish-service wordt beschouwd als de &quot;Live&quot;-omgeving en is doorgaans de omgeving waarmee eindgebruikers communiceren. Inhoud wordt na bewerking en goedkeuring op de service Auteur gedistribueerd naar de Publish-service.
 
-Het gemeenschappelijkste plaatsingspatroon met AEM hoofdloze toepassingen moet de productieversie van de toepassing hebben met de AEM publicatieservice verbinden.
+Het meest gangbare implementatiepatroon met AEM toepassingen zonder kop is dat de productieversie van de toepassing verbinding maakt met een AEM Publish-service.
 
-![Implementatiepatroon op hoog niveau](assets/publish-deployment/high-level-deployment.png)
+![ het Patroon van de Plaatsing op hoog niveau ](assets/publish-deployment/high-level-deployment.png)
 
 Het diagram hierboven toont dit gemeenschappelijke plaatsingspatroon.
 
-1. A **Inhoudsauteur** gebruikt de AEM-auteurservice voor het maken, bewerken en beheren van inhoud.
-2. De **Inhoudsauteur** en andere interne gebruikers kunnen de inhoud rechtstreeks op de service Auteur voorvertonen. Er kan een voorvertoningsversie van de toepassing worden ingesteld die verbinding maakt met de service Auteur.
-3. Nadat de inhoud is goedgekeurd, kan deze **gepubliceerd** naar de AEM publicatieservice.
-4. **Eindgebruikers** de productieversie van de toepassing beïnvloeden. De productietoepassing maakt verbinding met de publicatieservice en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te gebruiken.
+1. A **de auteur van de Inhoud** gebruikt de AEM auteursdienst om, inhoud tot stand te brengen uit te geven en te beheren.
+2. De **auteur van de Inhoud** en andere interne gebruikers kunnen de inhoud op de dienst van de Auteur direct voorproef. Er kan een voorvertoningsversie van de toepassing worden ingesteld die verbinding maakt met de service Auteur.
+3. Zodra de inhoud is goedgekeurd, kan het **worden gepubliceerd** aan de dienst van AEM Publish.
+4. **Eindgebruikers** interactie met de versie van de Productie van de toepassing. De productietoepassing maakt verbinding met de Publish-service en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te gebruiken.
 
-De zelfstudie simuleert de bovenstaande implementatie door een AEM Publish-instantie toe te voegen aan de huidige installatie. In vorige hoofdstukken werkte de React App als voorproef door rechtstreeks met de instantie van de Auteur te verbinden. Een productie bouwt van React App wordt opgesteld aan een statische server Node.js die met de nieuwe Publish instantie verbindt.
+De zelfstudie simuleert de bovenstaande implementatie door een AEM Publish-exemplaar toe te voegen aan de huidige installatie. In vorige hoofdstukken werkte de React App als voorproef door rechtstreeks met de instantie van de Auteur te verbinden. Een productiebouwstijl van React App wordt opgesteld aan een statische server Node.js die met de nieuwe instantie van Publish verbindt.
 
 Uiteindelijk worden drie lokale servers uitgevoerd:
 
 * http://localhost:4502 - Auteur-instantie
-* http://localhost:4503 - Instantie publiceren
-* http://localhost:5000 - React App in productiemodus, verbindend met de Publish instantie.
+* http://localhost:4503 - Publish Instance
+* http://localhost:5000 - Reageer App in de productiemodus en verbind met de Publish-instantie.
 
-## AEM SDK installeren - Publicatiemodus {#aem-sdk-publish}
+## AEM SDK installeren - Publish-modus {#aem-sdk-publish}
 
-Er is momenteel een actieve versie van de SDK in **Auteur** -modus. De SDK kan ook worden gestart in **Publiceren** om een AEM publicatieomgeving te simuleren.
+Momenteel hebben wij een lopende geval van SDK op **Auteur** wijze. SDK kan ook op **Publish** wijze worden begonnen om een AEM milieu van Publish te simuleren.
 
-Een meer gedetailleerde gids voor het opzetten van een lokale ontwikkelomgeving [hier te vinden](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up).
+Een meer gedetailleerde gids voor vestiging een lokale ontwikkelomgeving [ kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) worden gevonden.
 
-1. Maak in uw lokale bestandssysteem een specifieke map voor de installatie van de instantie Publiceren, die een naam heeft `~/aem-sdk/publish`.
-1. Kopieer het QuickStart-jar-bestand dat in vorige hoofdstukken voor de instantie Auteur is gebruikt en plak het in het dialoogvenster `publish` directory. U kunt ook naar de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en download de nieuwste SDK en extraheer het QuickStart-jar-bestand.
-1. De naam van het jar-bestand wijzigen in `aem-publish-p4503.jar`.
+1. Maak in uw lokale bestandssysteem een speciale map voor de installatie van de Publish-instantie, met de naam `~/aem-sdk/publish` .
+1. Kopieer het QuickStart-jar-bestand dat in vorige hoofdstukken voor de instantie Auteur is gebruikt en plak het in de map `publish` . Alternatief navigeer aan het [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en download recentste SDK en haal het Jar dossier van QuickStart.
+1. Wijzig de naam van het jar-bestand in `aem-publish-p4503.jar` .
 
-   De `publish` tekenreeks geeft aan dat de Quickstart-jar begint in de publicatiemodus. De `p4503` Geeft aan dat de Quickstart-server wordt uitgevoerd op poort 4503.
+   De tekenreeks `publish` geeft aan dat de Quickstart-jar begint in de Publish-modus. `p4503` geeft aan dat de Quickstart-server wordt uitgevoerd op poort 4503.
 
 1. Open een nieuw terminalvenster en navigeer naar de map die het jar-bestand bevat. Installeer en start de AEM-instantie:
 
@@ -76,72 +76,72 @@ Een meer gedetailleerde gids voor het opzetten van een lokale ontwikkelomgeving 
    $ java -jar aem-publish-p4503.jar
    ```
 
-1. Een beheerderswachtwoord opgeven als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans wordt het geadviseerd om het gebrek voor lokale ontwikkeling te gebruiken om extra configuraties te vermijden.
-1. Wanneer het AEM-exemplaar is geïnstalleerd, wordt een nieuw browservenster geopend op [http://localhost:4503/content.html](http://localhost:4503/content.html)
+1. Geef een beheerderswachtwoord op als `admin` . Om het even welk admin wachtwoord is aanvaardbaar, nochtans wordt het geadviseerd om het gebrek voor lokale ontwikkeling te gebruiken om extra configuraties te vermijden.
+1. Wanneer de AEM instantie het installeren heeft gebeëindigd, zal een nieuw browser venster in [ http://localhost:4503/content.html ](http://localhost:4503/content.html) openen
 
    De verwachting is dat deze een pagina van 404 niet gevonden retourneert. Dit is een gloednieuw AEM-exemplaar en er is geen inhoud geïnstalleerd.
 
 ## Voorbeeldinhoud en GraphQL-eindpunten installeren {#wknd-site-content-endpoints}
 
-Net als bij de instantie Auteur moet de instantie Publiceren de GraphQL-eindpunten hebben ingeschakeld en voorbeeldinhoud nodig hebben. Installeer vervolgens de WKND Reference Site op de instantie Publish.
+Net als bij de instantie Auteur moet de Publish-instantie de GraphQL-eindpunten hebben ingeschakeld en voorbeeldinhoud nodig hebben. Installeer vervolgens de WKND Reference Site op de Publish-instantie.
 
-1. Download het nieuwste gecompileerde AEM Package voor WKND Site: [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
+1. Download het recentste gecompileerde AEM Pakket voor Plaats WKND: [ aem-guides-wknd.all-x.x.x.zip ](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
    >[!NOTE]
    >
-   > Zorg ervoor dat de standaardversie compatibel is met AEM as a Cloud Service en **niet** de `classic` versie.
+   > Zorg ervoor om de standaardversie compatibel met AEM as a Cloud Service te downloaden en **niet** de `classic` versie.
 
-1. Meld u aan bij de instantie Publiceren door rechtstreeks naar: [http://localhost:4503/libs/granite/core/content/login.html](http://localhost:4503/libs/granite/core/content/login.html) met de gebruikersnaam `admin` en wachtwoord `admin`.
-1. Navigeer vervolgens naar Package Manager op [http://localhost:4503/crx/packmgr/index.jsp](http://localhost:4503/crx/packmgr/index.jsp).
-1. Klikken **Pakket uploaden** en kiest u het WKND-pakket dat u in de vorige stap hebt gedownload. Klikken **Installeren** het pakket installeren.
-1. Na de installatie van het pakket is de WKND-referentiesite nu beschikbaar op [http://localhost:4503/content/wknd/us/en.html](http://localhost:4503/content/wknd/us/en.html).
-1. Afmelden als de `admin` door op de knop Afmelden op de menubalk te klikken.
+1. Login aan de instantie van Publish door rechtstreeks te navigeren aan: [ http://localhost:4503/libs/granite/core/content/login.html ](http://localhost:4503/libs/granite/core/content/login.html) met de gebruikersnaam `admin` en het wachtwoord `admin`.
+1. Daarna, navigeer aan de Manager van het Pakket in [ http://localhost:4503/crx/packmgr/index.jsp ](http://localhost:4503/crx/packmgr/index.jsp).
+1. Klik **Upload Pakket** en kies het pakket WKND dat in de vroegere stap wordt gedownload. Klik **installeren** om het pakket te installeren.
+1. Na het installeren van het pakket, is de WKND verwijzingsplaats nu beschikbaar in [ http://localhost:4503/content/wknd/us/en.html ](http://localhost:4503/content/wknd/us/en.html).
+1. Meld u af als de `admin` -gebruiker door op de knop Afmelden op de menubalk te klikken.
 
-   ![WKND-aanmeldreferentiesite](assets/publish-deployment/sign-out-wknd-reference-site.png)
+   ![ WKND plaats van de Verwijzing van de Teken ](assets/publish-deployment/sign-out-wknd-reference-site.png)
 
-   In tegenstelling tot de AEM instantie Auteur worden in de AEM Publish-instanties anonieme alleen-lezen toegang standaard ingesteld. Wij willen de ervaring van een anonieme gebruiker wanneer het runnen van de React toepassing simuleren.
+   In tegenstelling tot de instantie AEM Auteur, blijven de AEM Publish-instanties in gebreke bij anonieme alleen-lezen toegang. Wij willen de ervaring van een anonieme gebruiker wanneer het runnen van de React toepassing simuleren.
 
-## Omgevingsvariabelen bijwerken om naar de instantie Publiceren te verwijzen {#react-app-publish}
+## Omgevingsvariabelen bijwerken om de Publish-instantie te wijzen {#react-app-publish}
 
-Werk vervolgens de omgevingsvariabelen bij die door de toepassing React worden gebruikt om naar de instantie Publish te verwijzen. De React App zou moeten **alleen** Maak verbinding met de instantie Publiceren in de productiemodus.
+Werk vervolgens de omgevingsvariabelen bij die door de toepassing React worden gebruikt om naar de Publish-instantie te verwijzen. React App zou **slechts** met de instantie van Publish op productiemodus moeten verbinden.
 
-Voeg vervolgens een nieuw bestand toe `.env.production.local` om de ervaring met de productie te simuleren.
+Voeg vervolgens een nieuw bestand `.env.production.local` toe om de productieervaring te simuleren.
 
 1. Open de WKND GraphQL React-app in uw IDE.
 
-1. Beneath `aem-guides-wknd-graphql/react-app`, voegt u een bestand met de naam `.env.production.local`.
-1. Vullen `.env.production.local` met het volgende:
+1. Voeg onder `aem-guides-wknd-graphql/react-app` een bestand met de naam `.env.production.local` toe.
+1. Vul `.env.production.local` met het volgende:
 
    ```plain
    REACT_APP_HOST_URI=http://localhost:4503
    REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json
    ```
 
-   ![Nieuw omgevingsvariabele-bestand toevoegen](assets/publish-deployment/env-production-local-file.png)
+   ![ voeg nieuw milieu veranderlijk dossier ](assets/publish-deployment/env-production-local-file.png) toe
 
-   Met behulp van omgevingsvariabelen kunt u eenvoudig het GraphQL-eindpunt tussen een auteur- of publicatieomgeving schakelen zonder extra logica toe te voegen in de toepassingscode. Meer informatie over [Hier vindt u aangepaste omgevingsvariabelen voor React](https://create-react-app.dev/docs/adding-custom-environment-variables).
+   Met behulp van omgevingsvariabelen kunt u eenvoudig het GraphQL-eindpunt tussen een Auteur- of Publish-omgeving schakelen zonder extra logica toe te voegen in de toepassingscode. Meer informatie over [ variabelen van het douanemilieu voor React kan hier ](https://create-react-app.dev/docs/adding-custom-environment-variables) worden gevonden.
 
    >[!NOTE]
    >
-   > Merk op dat geen authentificatieinformatie inbegrepen is aangezien de Publish milieu&#39;s anonieme toegang tot inhoud door gebrek verlenen.
+   > Merk op dat geen authentificatieinformatie wordt omvat aangezien de milieu&#39;s van Publish anonieme toegang tot inhoud door gebrek verlenen.
 
 ## Een statische Node-server implementeren {#static-server}
 
-De React-app kan worden gestart met behulp van de webpack-server, maar dit is alleen voor ontwikkeling. Daarna, simuleer een productiesplaatsing door te gebruiken [serveren](https://github.com/vercel/serve) om een productiebuild van de React-app te hosten met Node.js.
+De React-app kan worden gestart met behulp van de webpack-server, maar dit is alleen voor ontwikkeling. Daarna, simuleer een productieplaatsing door [ te gebruiken dient ](https://github.com/vercel/serve) om een productie te ontvangen bouwt van React app gebruikend Node.js.
 
-1. Open een nieuw terminalvenster en ga naar het `aem-guides-wknd-graphql/react-app` directory
+1. Open een nieuw terminalvenster en ga naar de map `aem-guides-wknd-graphql/react-app`
 
    ```shell
    $ cd aem-guides-wknd-graphql/react-app
    ```
 
-1. Installeren [serveren](https://github.com/vercel/serve) met de volgende opdracht:
+1. Installeer [ server ](https://github.com/vercel/serve) met het volgende bevel:
 
    ```shell
    $ npm install serve --save-dev
    ```
 
-1. Het bestand openen `package.json` om `react-app/package.json`. Een script toevoegen met de naam `serve`:
+1. Open het bestand `package.json` om `react-app/package.json` . Voeg een script met de naam `serve` toe:
 
    ```diff
     "scripts": {
@@ -153,7 +153,7 @@ De React-app kan worden gestart met behulp van de webpack-server, maar dit is al
    },
    ```
 
-   De `serve` -script voert twee handelingen uit. Ten eerste wordt een productiebuild van de React App gegenereerd. Ten tweede, begint de server Node.js en gebruikt de productie bouwt.
+   Het `serve` -script voert twee handelingen uit. Ten eerste wordt een productiebuild van de React App gegenereerd. Ten tweede, begint de server Node.js en gebruikt de productie bouwt.
 
 1. Terugkeer aan de terminal en ga het bevel in om de statische server te beginnen:
 
@@ -172,29 +172,29 @@ De React-app kan worden gestart met behulp van de webpack-server, maar dit is al
    └────────────────────────────────────────────────────┘
    ```
 
-1. Een nieuwe browser openen en naar [http://localhost:5000/](http://localhost:5000/). De React App moet worden weergegeven.
+1. Open nieuwe browser en navigeer aan [ http://localhost:5000/ ](http://localhost:5000/). De React App moet worden weergegeven.
 
-   ![React App Served](assets/publish-deployment/react-app-served-port5000.png)
+   ![ Reageerde Bediende App ](assets/publish-deployment/react-app-served-port5000.png)
 
-   De GraphQL-query werkt op de homepage. Inspect the **XHR** aanvragen met gebruik van de ontwikkelaarsgereedschappen. Merk op dat de POST van GraphQL op de Publish instantie is `http://localhost:4503/content/graphql/global/endpoint.json`.
+   De GraphQL-query werkt op de homepage. Inspect het **XHR** verzoek gebruikend uw ontwikkelaarshulpmiddelen. Merk op dat de GraphQL-POST naar de Publish-instantie op `http://localhost:4503/content/graphql/global/endpoint.json` gaat.
 
    Alle afbeeldingen worden echter wel afgebroken op de startpagina!
 
 1. Klik in één van de pagina&#39;s van het Detail van het avontuur.
 
-   ![Adventure-detailfout](assets/publish-deployment/adventure-detail-error.png)
+   ![ Fout van het Detail van het avontuur ](assets/publish-deployment/adventure-detail-error.png)
 
-   Er wordt een GraphQL-fout gegenereerd voor `adventureContributor`. In de volgende oefeningen, de gebroken beelden en `adventureContributor` problemen zijn opgelost.
+   Er wordt een GraphQL-fout gegenereerd voor `adventureContributor` . In de volgende oefeningen zijn de verbroken afbeeldingen en de `adventureContributor` -problemen opgelost.
 
 ## Absolute verwijzingen naar afbeeldingen {#absolute-image-references}
 
-De afbeeldingen worden verbroken weergegeven omdat de `<img src` Het kenmerk is ingesteld op een relatief pad en verwijst naar de statische server van Node op `http://localhost:5000/`. In plaats daarvan moeten deze afbeeldingen verwijzen naar de AEM Publish-instantie. Hiervoor bestaan verschillende mogelijke oplossingen. Als u de webpack-ontwikkelserver gebruikt, wordt het bestand `react-app/src/setupProxy.js` Stel een proxy in tussen de webpack-server en de AEM auteur voor alle aanvragen om `/content`. Een volmachtsconfiguratie kan in een productiemilieu worden gebruikt maar moet op het niveau van de Webserver worden gevormd. Bijvoorbeeld: [Apache&#39;s proxymodule](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
+De afbeeldingen worden verbroken weergegeven omdat het kenmerk `<img src` is ingesteld op een relatief pad en uiteindelijk naar de statische Node-server op `http://localhost:5000/` verwijst. In plaats daarvan moeten deze afbeeldingen verwijzen naar de AEM Publish-instantie. Hiervoor bestaan verschillende mogelijke oplossingen. Wanneer u de webpack-ontwikkelserver gebruikt, stelt het bestand `react-app/src/setupProxy.js` een proxy in tussen de webpack-server en de AEM auteurinstantie voor verzoeken aan `/content` . Een volmachtsconfiguratie kan in een productiemilieu worden gebruikt maar moet op het niveau van de Webserver worden gevormd. Bijvoorbeeld, [ de volmachtsmodule van Apache ](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
 
-De app kan worden bijgewerkt en een absolute URL bevatten met behulp van de `REACT_APP_HOST_URI` omgevingsvariabele. Laten we in plaats daarvan een functie van AEM GraphQL API gebruiken om een absolute URL naar de afbeelding aan te vragen.
+De toepassing kan worden bijgewerkt en een absolute URL bevatten met behulp van de omgevingsvariabele `REACT_APP_HOST_URI` . Laten we in plaats daarvan een functie gebruiken om de GraphQL API te AEM en een absolute URL naar de afbeelding aan te vragen.
 
 1. Stop de Node.js-server.
-1. Terugkeren naar IDE en het bestand openen `Adventures.js` om `react-app/src/components/Adventures.js`.
-1. Voeg de `_publishUrl` eigenschap aan de `ImageRef` binnen de `allAdventuresQuery`:
+1. Ga terug naar de IDE en open het bestand `Adventures.js` om `react-app/src/components/Adventures.js` .
+1. Voeg de eigenschap `_publishUrl` toe aan de `ImageRef` in de `allAdventuresQuery` :
 
    ```diff
    const allAdventuresQuery = `
@@ -220,18 +220,18 @@ De app kan worden bijgewerkt en een absolute URL bevatten met behulp van de `REA
    `;
    ```
 
-   `_publishUrl` en `_authorUrl` zijn waarden die zijn ingebouwd in de `ImageRef` object om het gemakkelijker te maken absolute URL&#39;s op te nemen.
+   `_publishUrl` en `_authorUrl` zijn waarden die zijn ingebouwd in het `ImageRef` -object om het gemakkelijker te maken absolute URL&#39;s op te nemen.
 
-1. Herhaal bovenstaande stappen om de query die wordt gebruikt in de `filterQuery(activity)` functie om de `_publishUrl` eigenschap.
-1. Wijzig de `AdventureItem` component bij `function AdventureItem(props)` de `_publishUrl` in plaats van de `_path` eigenschap bij het samenstellen van de `<img src=''>` tag:
+1. Herhaal bovenstaande stappen om de query die in de functie `filterQuery(activity)` wordt gebruikt, te wijzigen en de eigenschap `_publishUrl` op te nemen.
+1. Wijzig de component `AdventureItem` bij `function AdventureItem(props)` om naar de eigenschap `_publishUrl` te verwijzen in plaats van naar de eigenschap `_path` wanneer u de tag `<img src=''>` samenstelt:
 
    ```diff
    - <img className="adventure-item-image" src={props.adventurePrimaryImage._path} alt={props.adventureTitle}/>
    + <img className="adventure-item-image" src={props.adventurePrimaryImage._publishUrl} alt={props.adventureTitle}/>
    ```
 
-1. Het bestand openen `AdventureDetail.js` om `react-app/src/components/AdventureDetail.js`.
-1. Herhaal dezelfde stappen om de GraphQL-query te wijzigen en de `_publishUrl` bezit voor het avontuur
+1. Open het bestand `AdventureDetail.js` om `react-app/src/components/AdventureDetail.js` .
+1. Herhaal dezelfde stappen om de GraphQL-query te wijzigen en de eigenschap `_publishUrl` voor het avontuur toe te voegen
 
    ```diff
     adventureByPath (_path: "${_path}") {
@@ -275,7 +275,7 @@ De app kan worden bijgewerkt en een absolute URL bevatten met behulp van de `REA
    } 
    ```
 
-1. De twee opties wijzigen `<img>` -tags voor de primaire afbeelding van het avontuur en de naslaggids voor de bijdrager in `AdventureDetail.js`:
+1. Wijzig de twee `<img>` -tags voor de primaire afbeelding van Adventure en de naslaggids voor Contribute in `AdventureDetail.js` :
 
    ```diff
    /* AdventureDetail.js */
@@ -297,63 +297,63 @@ De app kan worden bijgewerkt en een absolute URL bevatten met behulp van de `REA
    $ npm run serve
    ```
 
-1. Navigeren naar [http://localhost:5000/](http://localhost:5000/) en ziet u dat er afbeeldingen worden weergegeven en dat de `<img src''>` kenmerkpunten naar `http://localhost:4503`.
+1. Navigeer aan [ http://localhost:5000/ ](http://localhost:5000/) en neem waar dat de beelden verschijnen en dat het `<img src''>` attribuut aan `http://localhost:4503` richt.
 
-   ![Gebroken afbeeldingen hersteld](assets/publish-deployment/broken-images-fixed.png)
+   ![ Gebroken Beelden vaste ](assets/publish-deployment/broken-images-fixed.png)
 
 ## Publiceren van inhoud simuleren {#content-publish}
 
-Er wordt een GraphQL-fout gegenereerd `adventureContributor` wanneer een pagina van de Details van het Avontuur wordt gevraagd. De **Medewerker** Inhoudsfragmentmodel bestaat nog niet in de instantie Publiceren. Updates van de **Adventure** Content Fragment Model is ook niet beschikbaar in de instantie Publish. Deze wijzigingen zijn rechtstreeks aangebracht in de instantie Auteur en moeten worden verspreid naar de instantie Publiceren.
+Er wordt een GraphQL-fout gegenereerd voor `adventureContributor` wanneer een pagina Adventure Details wordt opgevraagd. Het **Model van het Fragment van de Inhoud 0} Medewerker {bestaat nog niet op de instantie van Publish.** De updates die aan het **Model van het Fragment van de Adventure** worden gemaakt van de Inhoud zijn ook niet beschikbaar op de instantie van Publish. Deze wijzigingen zijn rechtstreeks doorgevoerd in de instantie Auteur en moeten worden doorgestuurd naar de instantie Publish.
 
 Dit is iets waarmee u rekening moet houden wanneer u nieuwe updates wilt uitvoeren voor een toepassing die afhankelijk is van updates van een inhoudsfragment of een inhoudsfragmentmodel.
 
-Vervolgens kunt u het publiceren van inhoud simuleren tussen de lokale auteur- en publicatie-instanties.
+Vervolgens kunt u het publiceren van inhoud simuleren tussen de lokale auteur en Publish-instanties.
 
-1. Start de instantie Auteur (indien nog niet gestart) en navigeer naar Package Manager op [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
-1. Het pakket downloaden [EnableReplicationAgent.zip](./assets/publish-deployment/EnableReplicationAgent.zip) en installeer deze met Package Manager.
+1. Begin de instantie van de Auteur (als niet reeds begonnen) en navigeer aan de Manager van het Pakket in [ http://localhost:4502/crx/packmgr/index.jsp ](http://localhost:4502/crx/packmgr/index.jsp)
+1. Download het pakket [ EnableReplicationAgent.zip ](./assets/publish-deployment/EnableReplicationAgent.zip) en installeer het gebruikend de Manager van het Pakket.
 
-   Met dit pakket wordt een configuratie geïnstalleerd waarmee de instantie Auteur inhoud kan publiceren naar de instantie Publiceren. Handmatige stappen voor [deze configuratie is hier te vinden](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#content-distribution).
+   Met dit pakket wordt een configuratie geïnstalleerd waarmee de instantie Auteur inhoud kan publiceren naar de instantie Publish. De handstappen voor [ deze configuratie kunnen hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#content-distribution) worden gevonden.
 
    >[!NOTE]
    >
-   > In een AEM as a Cloud Service omgeving wordt de laag Auteur automatisch ingesteld op het distribueren van inhoud naar de laag Publiceren.
+   > In een AEM as a Cloud Service-omgeving wordt de Auteur-laag automatisch ingesteld op het distribueren van inhoud naar de Publish-laag.
 
-1. Van de **AEM starten** menu, navigeren naar **Gereedschappen** > **Activa** > **Modellen van inhoudsfragmenten**.
+1. Van het **AEM** menu van het Begin, navigeer aan **Hulpmiddelen** > **Assets** > **Modellen van het Fragment van de Inhoud**.
 
-1. Klik in het dialoogvenster **WKND-site** map.
+1. Klik in de **omslag van de Plaats WKND**.
 
-1. Selecteer alle drie de modellen en klik **Publiceren**:
+1. Selecteer alle drie modellen en klik **Publish**:
 
-   ![Modellen voor inhoudsfragmenten publiceren](assets/publish-deployment/publish-contentfragment-models.png)
+   ![ Modellen van het Fragment van de Inhoud van Publish ](assets/publish-deployment/publish-contentfragment-models.png)
 
-   Er verschijnt een bevestigingsvenster en klik op **Publiceren**.
+   Een bevestigingsdialoog verschijnt, klik **Publish**.
 
-1. Navigeer naar het Bali Surf Camp Content Fragment bij [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp).
+1. Navigeer aan het Fragment van de Inhoud van de Camp Bali Surf in [ http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp ](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp).
 
-1. Klik op de knop **Publiceren** in de bovenste menubalk.
+1. Klik de **knoop van Publish** in de hoogste menubar.
 
-   ![Klik op de knop Publiceren in de Content Fragment Editor](assets/publish-deployment/publish-bali-content-fragment.png)
+   ![ klik Publish Knoop in de Redacteur van het Fragment van de Inhoud ](assets/publish-deployment/publish-bali-content-fragment.png)
 
-1. De wizard Publiceren toont alle afhankelijke elementen die moeten worden gepubliceerd. In dit geval wordt het fragment waarnaar wordt verwezen **stapelroswellen** wordt weergegeven en er wordt ook naar verschillende afbeeldingen verwezen. De middelen waarnaar wordt verwezen, worden samen met het fragment gepubliceerd.
+1. De wizard Publish toont alle afhankelijke elementen die moeten worden gepubliceerd. In dit geval, wordt het referenced fragment **stapel-roswells** vermeld en verscheidene beelden worden ook van verwijzingen voorzien. De middelen waarnaar wordt verwezen, worden samen met het fragment gepubliceerd.
 
-   ![Verwezen elementen om te publiceren](assets/publish-deployment/referenced-assets.png)
+   ![ Verwezen Assets om te publiceren ](assets/publish-deployment/referenced-assets.png)
 
-   Klik op de knop **Publiceren** nogmaals klikken om het inhoudsfragment en afhankelijke elementen te publiceren.
+   Klik opnieuw de **Publish** knoop om het Fragment van de Inhoud en afhankelijke activa te publiceren.
 
-1. Terug naar de React-app die wordt uitgevoerd op [http://localhost:5000/](http://localhost:5000/). U kunt nu in de Camp van Bali Surf klikken om de avontuurdetails te zien.
+1. Terugkeer aan React App die in [ http://localhost:5000/ ](http://localhost:5000/) loopt. U kunt nu in de Camp van Bali Surf klikken om de avontuurdetails te zien.
 
-1. Ga terug naar de AEM Author-instantie op [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) en de **Titel** van het fragment. **Opslaan en sluiten** het fragment. Vervolgens **publish** het fragment.
-1. Terug naar [http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) en de gepubliceerde wijzigingen in acht te nemen.
+1. De schakelaar terug naar de AEM instantie van de Auteur in [ http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp ](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) en werkt de **Titel** van het fragment bij. **sparen en sluit** het fragment. Dan **publiceer** het fragment.
+1. Terugkeer aan [ http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp ](http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) en bekijk de gepubliceerde veranderingen.
 
-   ![Bali Surf Camp Publish Update](assets/publish-deployment/bali-surf-camp-update.png)
+   ![ Bali Surf Camp Publish Update ](assets/publish-deployment/bali-surf-camp-update.png)
 
 ## COR-configuratie bijwerken
 
-AEM is standaard beveiligd en staat niet toe dat niet-AEM wegeigenschappen aanroepen aan de clientzijde uitvoeren. AEM configuratie het Delen van het Middel van de Cross-Origin (CORS) kan specifieke domeinen toestaan om vraag aan AEM te maken.
+AEM is standaard beveiligd en staat niet toe dat niet-AEM wegeigenschappen aanroepen aan de clientzijde uitvoeren. AEM de configuratie het Delen van het Middel van de Cross-Origin (CORS) kan specifieke domeinen toestaan om vraag aan AEM te maken.
 
 Experimenteer vervolgens met de CORS-configuratie van de AEM Publish-instantie.
 
-1. Terugkeer aan het eindvenster waar React App met het bevel loopt `npm run serve`:
+1. Keer terug naar het eindvenster waar React App met het bevel `npm run serve` loopt:
 
    ```shell
    ┌────────────────────────────────────────────────────┐
@@ -368,47 +368,47 @@ Experimenteer vervolgens met de CORS-configuratie van de AEM Publish-instantie.
    └────────────────────────────────────────────────────┘
    ```
 
-   Controleer of er twee URL&#39;s zijn opgegeven. Eén met `localhost` en een andere die het lokale netwerkIP adres gebruiken.
+   Controleer of er twee URL&#39;s zijn opgegeven. Het ene gebruik van `localhost` en het andere gebruik van het lokale IP-adres van het netwerk.
 
-1. Navigeer naar het adres dat begint met [http://192.168.86.XXX:5000](http://192.168.86.XXX:5000). Het adres is iets verschillend voor elke lokale computer. Merk op dat er een fout CORS wanneer het halen van de gegevens is. Dit is omdat de huidige configuratie CORS slechts verzoeken van toestaat `localhost`.
+1. Navigeer aan het adres dat met [ http://192.168.86.XXX:5000 ](http://192.168.86.XXX:5000) begint. Het adres is iets verschillend voor elke lokale computer. Merk op dat er een fout CORS wanneer het halen van de gegevens is. Dit komt doordat de huidige CORS-configuratie alleen aanvragen van `localhost` toestaat.
 
-   ![CORS-fout](assets/publish-deployment/cors-error-not-fetched.png)
+   ![ fout CORS ](assets/publish-deployment/cors-error-not-fetched.png)
 
-   Werk vervolgens de AEM configuratie voor het publiceren van CORS bij om aanvragen van het IP-adres van het netwerk toe te staan.
+   Werk vervolgens de AEM Publish CORS-configuratie bij om aanvragen van het IP-adres van het netwerk toe te staan.
 
-1. Navigeren naar [http://localhost:4503/content/wknd/us/en/errors/sign-in.html](http://localhost:4503/content/wknd/us/en/errors/sign-in.html) en aanmelden met de gebruikersnaam `admin` en wachtwoord `admin`.
+1. Navigeer aan [ http://localhost:4503/content/wknd/us/en/errors/sign-in.html ](http://localhost:4503/content/wknd/us/en/errors/sign-in.html) en onderteken binnen met de gebruikersnaam `admin` en het wachtwoord `admin`.
 
-1. Navigeren naar [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr) en zoek de WKND GraphQL-configuratie op `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql`.
+1. Navigeer aan [ http://localhost:4503/system/console/configMgr ](http://localhost:4503/system/console/configMgr) en vind de configuratie van WKND GraphQL bij `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql`.
 
-1. Werk de **Toegestane oorsprong** gebied om het netwerkIP adres te omvatten:
+1. Werk het **Toegestane gebied van Oorsprong** bij om het netwerkIP adres te omvatten:
 
-   ![CORS-configuratie bijwerken](assets/publish-deployment/cors-update.png)
+   ![ Update de configuratie van CORS ](assets/publish-deployment/cors-update.png)
 
    Het is ook mogelijk een reguliere expressie op te nemen om alle aanvragen van een specifiek subdomein toe te staan. Sla de wijzigingen op.
 
-1. Zoeken naar **Filter Apache Sling Referrer** en bekijk de configuratie. De **Lege waarden toestaan** De configuratie is ook nodig om GraphQL-aanvragen van een extern domein in te schakelen.
+1. Onderzoek naar **Apache het Verdelen Filter van de Referateur** en herzie de configuratie. **staat Lege** configuratie toe is ook nodig om de verzoeken van GraphQL van een extern domein toe te laten.
 
-   ![Filter Verschuivingsverwijzing](assets/publish-deployment/sling-referrer-filter.png)
+   ![ het Verkopen Filter van de Verwijzer ](assets/publish-deployment/sling-referrer-filter.png)
 
-   Deze zijn gevormd als deel van de WKND verwijzingsplaats. U kunt de volledige reeks configuraties OSGi via bekijken [de GitHub-opslagplaats](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig).
+   Deze zijn gevormd als deel van de WKND verwijzingsplaats. U kunt de volledige reeks configuraties bekijken OSGi via [ de bewaarplaats GitHub ](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig).
 
    >[!NOTE]
    >
-   > De configuraties OSGi worden beheerd in een AEM project dat aan broncontrole wordt geëngageerd. Met Cloud Manager kunt u een AEM-project implementeren om AEM te maken als een Cloud Service. De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) kan helpen een project voor een specifieke implementatie te produceren.
+   > De configuraties OSGi worden beheerd in een AEM project dat aan broncontrole wordt geëngageerd. Een AEM Project kan aan AEM als milieu&#39;s van de Cloud Service worden opgesteld gebruikend Cloud Manager. [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) kan helpen een project voor een specifieke implementatie produceren.
 
-1. Terug naar de React-app die begint met [http://192.168.86.XXX:5000](http://192.168.86.XXX:5000) en merk op dat de toepassing niet meer een fout CORS veroorzaakt.
+1. Terugkeer aan React App die met [ http://192.168.86.XXX:5000 ](http://192.168.86.XXX:5000) begint en merk op dat de toepassing niet meer een fout CORS veroorzaakt.
 
-   ![CORS-fout gecorrigeerd](assets/publish-deployment/cors-error-corrected.png)
+   ![ Correcte Fout CORS ](assets/publish-deployment/cors-error-corrected.png)
 
 ## Gefeliciteerd! {#congratulations}
 
-Gefeliciteerd! U hebt nu een volledige productieplaatsing gesimuleerd gebruikend een AEM publiceer milieu. U leerde ook hoe te om de configuratie CORS in AEM te gebruiken.
+Gefeliciteerd! U hebt nu een volledige productieplaatsing gesimuleerd gebruikend een milieu van AEM Publish. U leerde ook hoe te om de configuratie CORS in AEM te gebruiken.
 
 ## Overige bronnen
 
 Zie de volgende bronnen voor meer informatie over Content Fragments en GraphQL:
 
-* [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-* [GraphQL API AEM voor gebruik met inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-* [Verificatie op basis van token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)
-* [Code implementeren om as a Cloud Service te AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=en#cloud-manager)
+* [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+* [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
+* [ symbolisch-Gebaseerde Authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)
+* [ het Opstellen van code aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=en#cloud-manager)

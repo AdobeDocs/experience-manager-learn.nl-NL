@@ -1,5 +1,5 @@
 ---
-title: 3D-middelen
+title: 3D Assets
 description: Meer informatie over ondersteuning voor 3D-middelen in AEM Assets as a Cloud Service.
 version: Cloud Service
 feature: 3D Assets

@@ -26,15 +26,15 @@ Afhankelijk van de client en hoe deze wordt geïmplementeerd, hebben AEM headles
 
 ## AEM
 
-Alvorens plaatsingsoverwegingen te onderzoeken, is het noodzakelijk om AEM logische architectuur, en de scheiding en de rollen van AEM as a Cloud Service de dienstrijen te begrijpen. AEM as a Cloud Service bestaat uit twee logische diensten:
+Alvorens plaatsingsoverwegingen te onderzoeken, is het noodzakelijk om AEM AEM as a Cloud Service logische architectuur, en de scheiding en de rollen van de de dienstrijen van te begrijpen. AEM as a Cloud Service bestaat uit twee logische services:
 
-+ __AEM auteur__ Dit is de service waar teams Content Fragments (en andere elementen) maken, samenwerken en publiceren.
-+ __AEM publiceren__ is de dienst die gepubliceerde Contentfragmenten (en andere activa) werden herhaald voor algemeen gebruik.
-+ __Voorvertoning AEM__ Dit is de service die AEM Publiceren in gedrag bootst, maar inhoud heeft die er voor voorvertoning of revisiedoeleinden aan wordt gepubliceerd. AEM Voorvertoning is bedoeld voor intern publiek en niet voor de algemene levering van inhoud. Het gebruik van AEM voorvertoning is optioneel op basis van de gewenste workflow.
++ __AEM de Auteur__ is de dienst waar de teams creeren, samenwerken, en de Fragmenten van de Inhoud (en andere activa) publiceren.
++ __AEM Publish__ is de dienst die de gepubliceerde Fragmenten van de Inhoud (en andere activa) voor algemeen gebruik worden herhaald.
++ __AEM de Voorproef__ is de dienst die Publish in gedrag nabootst, maar inhoud heeft die aan het voor voorproef of overzichtsdoeleinden wordt gepubliceerd. AEM Voorvertoning is bedoeld voor intern publiek en niet voor de algemene levering van inhoud. Het gebruik van AEM voorvertoning is optioneel op basis van de gewenste workflow.
 
-![AEM](./assets/overview/aem-service-architecture.png)
+![ AEM de dienstarchitectuur ](./assets/overview/aem-service-architecture.png)
 
-Typische AEM as a Cloud Service implementatiearchitectuur zonder kop_
+Typische AEM as a Cloud Service-implementatie zonder kop_
 
 AEM Koploze klanten die in een productiecapaciteit werken, werken doorgaans samen met AEM Publish, dat de goedgekeurde, gepubliceerde inhoud bevat. Clients die met AEM auteur werken, moeten speciale aandacht besteden, aangezien AEM auteur standaard veilig is en toestemming voor alle aanvragen vereist, en kunnen ook werk in uitvoering of niet-goedgekeurde inhoud bevatten.
 
@@ -56,7 +56,7 @@ AEM Koploze klanten die in een productiecapaciteit werken, werken doorgaans same
                    <p class="headline is-size-6 has-text-weight-bold"><a href="./spa.md" title="App van één pagina (SPA)">App van één pagina (SPA)</a></p>
                    <p class="is-size-6">Meer informatie over implementatieoverwegingen voor apps van één pagina (SPA).</p>
                    <a href="./spa.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Meer informatie</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leren </span>
                    </a>
                </div>
            </div>
@@ -75,9 +75,9 @@ AEM Koploze klanten die in een productiecapaciteit werken, werken doorgaans same
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./web-component.md" title="Webcomponent/JS">Webcomponent/JS</a></p>
-               <p class="is-size-6">Meer informatie over implementatieoverwegingen voor webcomponenten en JavaScript-gebruikers zonder kop in een browser.</p>
+               <p class="is-size-6">Meer informatie over implementatieoverwegingen voor webcomponenten en op een browser gebaseerde JavaScript-gebruikers zonder kop.</p>
                <a href="./web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Meer informatie</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leren </span>
                </a>
            </div>
        </div>
@@ -98,7 +98,7 @@ AEM Koploze klanten die in een productiecapaciteit werken, werken doorgaans same
                <p class="headline is-size-6 has-text-weight-bold"><a href="./mobile.md" title="Mobiele apps">Mobiele app</a></p>
                <p class="is-size-6">Meer informatie over implementatieoverwegingen voor mobiele apps.</p>
                <a href="./mobile.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Meer informatie</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leren </span>
                </a>
            </div>
        </div>
@@ -119,7 +119,7 @@ AEM Koploze klanten die in een productiecapaciteit werken, werken doorgaans same
                <p class="headline is-size-6 has-text-weight-bold"><a href="./server-to-server.md" title="Server-naar-server apps">Server-naar-server-app</a></p>
                <p class="is-size-6">Meer informatie over implementatieoverwegingen voor server-naar-server-apps</p>
                <a href="./server-to-server.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Meer informatie</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leren </span>
                </a>
            </div>
        </div>

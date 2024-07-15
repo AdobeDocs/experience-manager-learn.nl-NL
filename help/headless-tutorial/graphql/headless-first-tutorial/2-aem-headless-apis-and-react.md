@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Koploze API&#39;s AEM en reageren
 
-Welkom bij dit zelfstudie-hoofdstuk waarin we de configuratie van een React-app voor verbinding met Adobe Experience Manager (AEM) Headless API&#39;s met behulp van de AEM Headless SDK onderzoeken. We gaan het ophalen van gegevens van inhoudsfragmenten van AEM GraphQL API&#39;s en het weergeven ervan in de React-app behandelen.
+Welkom bij dit zelfstudie-hoofdstuk waarin we de configuratie van een React-app voor verbinding met Adobe Experience Manager (AEM) Headless API&#39;s met behulp van de AEM Headless SDK onderzoeken. Het ophalen van gegevens van inhoudsfragmenten uit AEM GraphQL API&#39;s en het weergeven ervan in de React-app wordt behandeld.
 
 AEM Headless-API&#39;s bieden toegang tot AEM inhoud van elke client-app. We begeleiden u bij het configureren van uw React-app om verbinding te maken met AEM headless API&#39;s met behulp van de AEM Headless SDK. Met deze instelling wordt een herbruikbaar communicatiekanaal tot stand gebracht tussen uw React-app en AEM.
 
-Vervolgens gebruiken we de AEM Headless SDK om gegevens van inhoudsfragmenten van AEM GraphQL API&#39;s op te halen. Inhoudsfragmenten in AEM bieden gestructureerd inhoudsbeheer. Met de SDK AEM Headless kunt u gemakkelijk zoeken naar gegevens van inhoudsfragmenten en deze ophalen met GraphQL.
+Vervolgens gebruiken we de AEM Headless SDK om gegevens van inhoudsfragmenten op te halen van AEM GraphQL API&#39;s. Inhoudsfragmenten in AEM bieden gestructureerd inhoudsbeheer. Met de SDK AEM Headless kunt u gemakkelijk zoeken naar gegevens van inhoudsfragmenten en deze ophalen met GraphQL.
 
 Zodra we de gegevens van het inhoudsfragment hebben, integreren we deze in uw React-app. U leert de gegevens op een aantrekkelijke manier opmaken en weergeven. We bieden tips en trucs voor het verwerken en renderen van gegevens over inhoudsfragmenten in React-componenten, zodat u verzekerd bent van een naadloze integratie met de gebruikersinterface van uw app.
 
@@ -34,13 +34,13 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 ## De React-app klonen
 
-1. De app klonen vanuit [Github](https://github.com/lamontacrook/headless-first/tree/main) door de volgende opdracht op de opdrachtregel uit te voeren.
+1. Kloon app van [ Github ](https://github.com/lamontacrook/headless-first/tree/main) door het volgende bevel op de bevellijn uit te voeren.
 
    ```
    $ git clone git@github.com:lamontacrook/headless-first.git
    ```
 
-1. Wijzigen in de `headless-first` en installeer de afhankelijkheden.
+1. Ga naar de map `headless-first` en installeer de afhankelijkheden.
 
    ```
    $ cd headless-first
@@ -49,7 +49,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
 ## De React-app configureren
 
-1. Een bestand met de naam `.env` aan de basis van het project. In `.env` Stel de volgende waarden in:
+1. Maak een bestand met de naam `.env` in de hoofdmap van het project. Stel in `.env` de volgende waarden in:
 
    ```
    REACT_APP_AEM=<URL of the AEM instance>
@@ -58,37 +58,37 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    REACT_APP_TOKEN=<developer token>
    ```
 
-1. U kunt een ontwikkelaarstoken ophalen in Cloud Manager. Aanmelden bij [Adobe Cloud Manager](https://experience.adobe.com/). Klikken __Experience Manager > Cloud Manager__. Kies het aangewezen Programma en klik dan de ellipsen naast het Milieu.
+1. U kunt een ontwikkelaarstoken in Cloud Manager terugwinnen. Login aan [ Adobe Cloud Manager ](https://experience.adobe.com/). Klik __Experience Manager > Cloud Manager__. Kies het aangewezen Programma en klik dan de ellipsen naast het Milieu.
 
-   ![AEM Developer Console](./assets/2/developer-console.png)
+   ![ AEM Developer Console ](./assets/2/developer-console.png)
 
-   1. Klik in het dialoogvenster __Integraties__ tab
-   1. Klikken __Lokaal token, tabblad en lokaal ontwikkelingstoken ophalen__ knop
+   1. Klik in het __lusje van de Integraties__
+   1. Klik __Lokale Symbolische lusje &amp; krijg de Lokale Token van de Ontwikkeling__ knoop
    1. Kopieer het toegangstoken dat begint na het open citaat tot vóór het dichte citaat.
-   1. Plak de gekopieerde token als waarde voor `REACT_APP_TOKEN` in de `.env` bestand.
-   1. Laten we de app nu maken door deze uit te voeren `npm ci` op de opdrachtregel.
-   1. Start nu de React-app en voer deze uit `npm run start` op de opdrachtregel.
-   1. In [./src/utils](https://github.com/lamontacrook/headless-first/tree/main/src/utils) een bestand met de naam `context.js`  bevat de code waarmee de waarden in het dialoogvenster `.env` in de context van de app.
+   1. Plak het gekopieerde token als de waarde voor `REACT_APP_TOKEN` in het `.env` -bestand.
+   1. Laten we de app nu maken door `npm ci` uit te voeren op de opdrachtregel.
+   1. Start nu de React-app en door `npm run start` uit te voeren op de opdrachtregel.
+   1. In [ ./src/utils ](https://github.com/lamontacrook/headless-first/tree/main/src/utils) een dossier genoemd `context.js` omvat de code om de waarden in het `.env` dossier in de context van app te plaatsen.
 
 ## De React-app uitvoeren
 
-1. Start de React-app via uitvoeren `npm run start` op de opdrachtregel.
+1. Start de React-app door `npm run start` uit te voeren op de opdrachtregel.
 
    ```
    $ npm run start
    ```
 
-   De React-app start en opent een browservenster waarin `http://localhost:3000`. Wijzigingen in de React-app worden automatisch opnieuw geladen in de browser.
+   De React-app start en opent een browservenster naar `http://localhost:3000` . Wijzigingen in de React-app worden automatisch opnieuw geladen in de browser.
 
 ## Verbinding maken met AEM headless API&#39;s
 
-1. Als u de React-app wilt aansluiten op AEM as a Cloud Service, kunt u het volgende toevoegen: `App.js`. In de `React` importeren, toevoegen `useContext`.
+1. Als u de React-app wilt verbinden met AEM as a Cloud Service, voegt u een paar dingen toe aan `App.js` . Voeg `useContext` toe in het dialoogvenster `React` importeren.
 
    ```javascript
    import React, {useContext} from 'react';
    ```
 
-   Importeren `AppContext` van de `context.js` bestand.
+   Importeer `AppContext` uit het `context.js` -bestand.
 
    ```javascript
    import { AppContext } from './utils/context';
@@ -100,7 +100,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    const context = useContext(AppContext);
    ```
 
-   En ten slotte plaatst u de retourcode in `<AppContext.Provider> ... </AppContext.Provider>`.
+   Plaats ten slotte de retourcode in `<AppContext.Provider> ... </AppContext.Provider>` .
 
    ```javascript
    ...
@@ -111,7 +111,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    </div>);
    ```
 
-   Ter referentie: `App.js` zou nu zo moeten zijn.
+   Ter referentie: de `App.js` zou nu zo moeten zijn.
 
    ```javascript
    import React, {useContext} from 'react';
@@ -138,27 +138,27 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    export default App;
    ```
 
-1. Het dialoogvenster Importeren `AEMHeadless` SDK. Deze SDK is een hulpbibliotheek die door de app wordt gebruikt voor interactie met AEM headless API&#39;s.
+1. Importeer de `AEMHeadless` SDK. Deze SDK is een hulpbibliotheek die door de app wordt gebruikt voor interactie met AEM koploze API&#39;s.
 
-   Deze importinstructie toevoegen aan de `home.js`.
+   Voeg deze importinstructie toe aan de `home.js` .
 
    ```javascript
    import AEMHeadless from '@adobe/aem-headless-client-js';
    ```
 
-   Voeg het volgende toe `{ useContext, useEffect, useState }` aan de` React` import, instructie.
+   Voeg de volgende `{ useContext, useEffect, useState }` aan de ` React` de invoerverklaring toe.
 
    ```javascript
    import React, { useContext, useEffect, useState } from 'react';
    ```
 
-   Het dialoogvenster Importeren `AppContext`.
+   Importeer de `AppContext` .
 
    ```javascript
    import { AppContext } from '../../utils/context';
    ```
 
-   Binnen de `Home` component, ophalen `context` variabele uit de `AppContext`.
+   In de component `Home` haalt u de variabele `context` op vanuit de variabele `AppContext` .
 
    ```javascript
    const Home = () => {
@@ -167,7 +167,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    }
    ```
 
-1. Initialiseer de AEM Headless SDK in een  `useEffect()`, aangezien de AEM Headless SDK moet veranderen wanneer de  `context` variabele wijzigingen.
+1. Initialiseer de AEM Headless SDK in een `useEffect()` , omdat de AEM Headless SDK moet wijzigen wanneer de variabele `context` verandert.
 
    ```javascript
    useEffect(() => {
@@ -181,7 +181,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    >[!NOTE]
    >
-   > Er is een `context.js` bestand onder `/utils` dat elementen leest uit de `.env` bestand. Ter referentie: `context.url` is de URL van de AEM as a Cloud Service omgeving. De `context.endpoint` is de volledige weg aan het eindpunt dat in de vorige les wordt gecreeerd. Tot slot `context.token` is het ontwikkelaarstoken.
+   > Er is een `context.js` -bestand onder `/utils` dat elementen uit het `.env` -bestand leest. Ter referentie is `context.url` de URL van de AEM as a Cloud Service-omgeving. `context.endpoint` is de volledige weg aan het eindpunt dat in de vorige les wordt gecreeerd. Tot slot is `context.token` de ontwikkelaarstoken.
 
 
 1. Creeer React staat die de inhoud blootstelt die uit AEM Headless SDK komt.
@@ -193,7 +193,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
    }
    ```
 
-1. Sluit de app aan op AEM. Gebruik de voortgezette vraag die in de vorige les wordt gecreeerd. Voeg de volgende code toe in de `useEffect` nadat de AEM Headless SDK is geïnitialiseerd. Maak de `useEffect` afhankelijk van de  `context` variabel, zoals hieronder weergegeven.
+1. Sluit de app aan op AEM. Gebruik de voortgezette vraag die in de vorige les wordt gecreeerd. Voeg de volgende code toe in de `useEffect` nadat de AEM Headless SDK is geïnitialiseerd. Maak de `useEffect` afhankelijk van de `context` -variabele, zoals hieronder wordt weergegeven.
 
 
    ```javascript
@@ -215,7 +215,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    `<url to environment>/graphql/execute.json/pure-headless/teaser%3Bpath%3D%2Fcontent%2Fdam%2Fpure-headless%2Fhero`
 
-   ![Chrome Dev-gereedschappen](./assets/2/dev-tools.png)
+   ![ Chrome Dev Hulpmiddelen ](./assets/2/dev-tools.png)
 
    De AEM Headless SDK codeert de aanvraag voor GraphQL en voegt de opgegeven parameters toe. U kunt de aanvraag openen in de browser.
 
@@ -238,7 +238,7 @@ Tijdens de gehele zelfstudie geven we uitleg, codevoorbeelden en praktische tips
 
    Het titelveld van de taser wordt weergegeven op het scherm.
 
-1. De laatste stap bestaat uit het toevoegen van het gummetje aan de pagina. In het pakket is een component React teaser opgenomen. Eerst, laten wij de invoer omvatten. Aan de bovenkant van de `home.js` bestand, voeg de regel toe:
+1. De laatste stap bestaat uit het toevoegen van het gummetje aan de pagina. In het pakket is een component React teaser opgenomen. Eerst, laten wij de invoer omvatten. Voeg boven aan het bestand `home.js` de regel toe:
 
    `import Teaser from '../../components/teaser/teaser';`
 

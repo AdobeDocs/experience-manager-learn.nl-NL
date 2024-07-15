@@ -20,7 +20,8 @@ ht-degree: 0%
 
 {{aem-headless-trials-promo}}
 
-AEM GraphQL API&#39;s voor Content Fragments ondersteunen CMS-scenario&#39;s zonder kop waarbij externe clienttoepassingen ervaringen renderen met inhoud die wordt beheerd in AEM.
+GraphQL API&#39;s voor inhoudsfragmenten AEM
+ondersteunt CMS-scenario&#39;s zonder kop waarbij externe clienttoepassingen ervaringen renderen met inhoud die in AEM wordt beheerd.
 
 Een moderne API voor het leveren van inhoud is essentieel voor de efficiëntie en prestaties van op JavaScript gebaseerde frontendtoepassingen. Het gebruiken van REST API introduceert uitdagingen:
 
@@ -41,7 +42,7 @@ Deze video is een overzicht van de GraphQL API die in AEM is geïmplementeerd. D
 
 ## AEM GraphQL-videoreeks zonder hoofd
 
-Meer informatie over AEM GraphQL-mogelijkheden via de diepgaande doorlichting van Content Fragments en AEM GraphQL API&#39;s en ontwikkelingstools.
+Leer hoe u de GraphQL-mogelijkheden kunt AEM via de diepgaande doorloop van Content Fragments en het AEM van GraphQL API&#39;s en ontwikkelingsprogramma&#39;s.
 
 * [AEM GraphQL-videoreeks zonder hoofd](./video-series/modeling-basics.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Voorbeelden en resultaatanalyse van de regels van de Filter van het Verkeer met inbegrip van de regels van WAF
-description: Leer diverse regels van de Filter van het Verkeer met inbegrip van de regelvoorbeelden van WAF. Ook, hoe te om de resultaten te analyseren gebruikend AEM as a Cloud Service (AEMCS) CDN- logboeken.
+description: Leer diverse regels van de Filter van het Verkeer met inbegrip van de regelvoorbeelden van WAF. Ook, hoe te om de resultaten te analyseren gebruikend de logboeken van CDN van AEM as a Cloud Service (AEMCS).
 version: Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe te om diverse types van de regels van de verkeersfilter te verklaren en de resultaten te analyseren gebruikend de logboeken van CDN van Adobe Experience Manager as a Cloud Service (AEMCS) en dashboard tooling.
 
-In deze sectie, zult u praktische voorbeelden van de regels van de verkeersfilter, met inbegrip van de regels van WAF onderzoeken. U zult leren om, verzoeken te registreren toe te staan en te blokkeren die op URI (of weg) worden gebaseerd, IP adres, het aantal verzoeken, en verschillende aanvalstypes gebruiken [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+In deze sectie, zult u praktische voorbeelden van de regels van de verkeersfilter, met inbegrip van de regels van WAF onderzoeken. U zult leren om, verzoeken te registreren toe te staan en te blokkeren die op URI (of weg) worden gebaseerd, IP adres, het aantal verzoeken, en verschillende aanvalstypes gebruikend het [ AEM Project van Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 Bovendien zult u ontdekken hoe te om dashboardtooling te gebruiken die de logboeken van AEMCS CDN opneemt om essentiële metriek door Adobe te visualiseren verstrekte steekproefdashboards.
 
@@ -33,13 +33,13 @@ Om zich aan uw specifieke vereisten te richten, kunt u verbeteren en douanedashb
 
 ## Voorbeelden
 
-Laten we verschillende voorbeelden van verkeersfilterregels onderzoeken, waaronder WAF-regels. Zorg ervoor dat u het vereiste installatieproces hebt voltooid zoals in het vorige [instellen](./how-to-setup.md) en dat u het [AEM WKND-siteproject](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Laten we verschillende voorbeelden van verkeersfilterregels onderzoeken, waaronder WAF-regels. Zorg ervoor u het vereiste opstellingsproces zoals die in vroeger [ wordt beschreven hoe te opstelling ](./how-to-setup.md) hoofdstuk hebt voltooid en dat u het [ AEM Project van Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) hebt gekloond.
 
 ### Registratieverzoeken
 
-Beginnen met **het registreren verzoeken van login WKND en logout wegen** op de service AEM publiceren.
+Begin door **het registreren verzoeken van login WKND en logout wegen** tegen de dienst van AEM Publish.
 
-- Voeg de volgende regel aan WKND project toe `/config/cdn.yaml` bestand.
+- Voeg de volgende regel toe aan het WKND-projectbestand `/config/cdn.yaml` .
 
 ```yaml
 kind: CDN
@@ -65,53 +65,53 @@ data:
         action: log
 ```
 
-- Leg de wijzigingen vast en duw deze naar de gegevensopslagruimte van Cloud Manager.
+- Leg de wijzigingen vast en duw deze naar de Cloud Manager Git-opslagplaats.
 
-- De wijzigingen in AEM ontwikkelomgeving implementeren met Cloud Manager `Dev-Config` configuratiepijplijn [eerder gemaakt](how-to-setup.md#deploy-rules-through-cloud-manager).
+- Stel de veranderingen in het milieu van AEM Dev op gebruikend de de configuratiepijplijn van Cloud Manager [ vroeger gecreeerd ](how-to-setup.md#deploy-rules-through-cloud-manager).`Dev-Config`
 
-  ![Cloud Manager Config Pipeline](./assets/cloud-manager-config-pipeline.png)
+  ![ Cloud Manager Config Pipeline ](./assets/cloud-manager-config-pipeline.png)
 
-- Test de regel door u aan te melden en af te melden bij de WKND-site van uw programma op de service Publiceren (bijvoorbeeld `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). U kunt `asmith/asmith` als de gebruikersnaam en het wachtwoord.
+- Test de regel door u aan te melden en af te melden bij de WKND-site van uw programma op de Publish-service (bijvoorbeeld `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html` ). U kunt `asmith/asmith` gebruiken als gebruikersnaam en wachtwoord.
 
-  ![WKND-aanmelding](./assets/wknd-login.png)
+  ![ Login WKND ](./assets/wknd-login.png)
 
 #### Analyseren{#analyzing}
 
-Analyseer de resultaten van de `publish-auth-requests` regel door de AEMCS CDN-logbestanden te downloaden van Cloud Manager en de [dashboardgereedschap](how-to-setup.md#analyze-results-using-elk-dashboard-tool), die u hebt ingesteld in het vorige hoofdstuk.
+Analyseer de resultaten van de `publish-auth-requests` regel door de logboeken AEMCS CDN van Cloud Manager te downloaden en het [ dashboard tooling ](how-to-setup.md#analyze-results-using-elk-dashboard-tool) te gebruiken, die u opstelling in het vroegere hoofdstuk.
 
-- Van [Cloud Manager](https://my.cloudmanager.adobe.com/)s **Omgevingen** kaart, download de AEMCS **Publiceren** CDN-logbestanden van de service.
+- Van [ de 2} kaart van de Milieu&#39;s van Cloud Manager ](https://my.cloudmanager.adobe.com/) **, download de 4} van AEMCS {** dienst CDN van de dienst van Publish.****
 
-  ![CDN-logbestanden voor cloudbeheer](./assets/cloud-manager-cdn-log-downloads.png)
+  ![ Cloud Manager CDN Logs Downloads ](./assets/cloud-manager-cdn-log-downloads.png)
 
   >[!TIP]
   >
   >    Het kan tot 5 minuten duren voor de nieuwe verzoeken om in de CDN- logboeken te verschijnen.
 
-- Kopieer het gedownloade logbestand (bijvoorbeeld `publish_cdn_2023-10-24.log` in de onderstaande schermafbeelding) in de `logs/dev` map van het project Elastic dashboard.
+- Kopieer het gedownloade logbestand (bijvoorbeeld `publish_cdn_2023-10-24.log` in de onderstaande schermafbeelding) naar de map `logs/dev` van het project voor het gereedschap Elastisch dashboard.
 
-  ![Logboekmap ELK-gereedschap](./assets/elk-tool-logs-folder.png){width="800" zoomable="yes"}
+  ![ de Omslag van de Logboeken van het Hulpmiddel ELK ](./assets/elk-tool-logs-folder.png){width="800" zoomable="yes"}
 
 - Vernieuw de gereedschapspagina Elastic dashboard.
-   - Bovenaan **Globaal, filter** sectie, bewerken `aem_env_name.keyword` filter en selecteer de `dev` omgevingswaarde.
+   - In de hoogste **Globale filter** sectie, geef de `aem_env_name.keyword` filter uit en selecteer de `dev` milieuwaarde.
 
-     ![Globaal filter ELK](./assets/elk-tool-global-filter.png)
+     ![ Globale Filter van het Hulpmiddel ELK ](./assets/elk-tool-global-filter.png)
 
    - Als u het tijdsinterval wilt wijzigen, klikt u op het kalenderpictogram in de rechterbovenhoek en selecteert u het gewenste tijdinterval.
 
-     ![Tijdinterval ELK](./assets/elk-tool-time-interval.png)
+     {het Interval van de Tijd van het Hulpmiddel 0} ELK ](./assets/elk-tool-time-interval.png)![
 
-- Controleer de bijgewerkte dashboardbestanden  **Geanalyseerde verzoeken**, **Gemarkeerde aanvragen**, en **Gegevens gemarkeerde verzoeken** deelvensters. Voor passende CDN logboekingangen, zou het de waarden van de cliëntIP van elke ingang (cli_ip), gastheer, url, actie (waf_action), en regel-naam (waf_match) moeten tonen.
+- Herzie de bijgewerkte versie van het dashboard **geanalyseerde verzoeken**, **Vervroegingen met vlag**, en **Gegrafeerde verzoeken details** panelen. Voor passende CDN logboekingangen, zou het de waarden van de cliëntIP van elke ingang (cli_ip), gastheer, url, actie (waf_action), en regel-naam (waf_match) moeten tonen.
 
-  ![ELK-gereedschapdashboard](./assets/elk-tool-dashboard.png)
+  ![ het Dashboard van het Hulpmiddel van het ELK ](./assets/elk-tool-dashboard.png)
 
 
 ### Blokkeringsaanvragen
 
-In dit voorbeeld, laten wij een pagina in toevoegen _internal_ map op het pad `/content/wknd/internal` in het geïmplementeerde WKND-project. Dan verklaar een regel van de verkeersfilter die **blokkeert verkeer** aan subpagina&#39;s van overal buiten een gespecificeerd IP adres dat uw organisatie (bijvoorbeeld, een collectief VPN) aanpast.
+In dit voorbeeld, voegen een pagina in een _interne_ omslag bij de weg `/content/wknd/internal` in het opgestelde project WKND toe. Dan verklaar een regel van de verkeersfilter dat **verkeer** aan subpages van overal buiten een gespecificeerd IP adres blokkeert dat uw organisatie (bijvoorbeeld, collectieve VPN) aanpast.
 
-U kunt uw eigen interne pagina maken (bijvoorbeeld `demo-page.html`) of de [bijgevoegd pakket](./assets/demo-internal-pages-package.zip).
+U kunt of uw eigen interne pagina (bijvoorbeeld, `demo-page.html`) tot stand brengen of het [ pakket in bijlage ](./assets/demo-internal-pages-package.zip) gebruiken.
 
-- Voeg de volgende regel in het WKND-project toe `/config/cdn.yaml` bestand:
+- Voeg de volgende regel toe in het bestand `/config/cdn.yaml` van het WKND-project:
 
 ```yaml
 kind: CDN
@@ -138,9 +138,9 @@ data:
         action: block
 ```
 
-- Leg de wijzigingen vast en duw deze naar de gegevensopslagruimte van Cloud Manager.
+- Leg de wijzigingen vast en duw deze naar de Cloud Manager Git-opslagplaats.
 
-- Implementeer de wijzigingen in de AEM Dev-omgeving met de [eerder gemaakt](how-to-setup.md#deploy-rules-through-cloud-manager) `Dev-Config` configuratiepijplijn in Cloud Manager.
+- Stel de veranderingen in het milieu van de AEM Dev op gebruikend de [ vroeger gecreeerd ](how-to-setup.md#deploy-rules-through-cloud-manager) `Dev-Config` configuratiepijplijn in Cloud Manager.
 
 - Test de regel door de interne pagina van de WKND-site te openen, bijvoorbeeld `https://publish-pXXXX-eYYYY.adobeaemcloud.com/content/wknd/internal/demo-page.html` of met de onderstaande CURL-opdracht:
 
@@ -152,18 +152,18 @@ data:
 
 #### Analyseren
 
-De resultaten van het `block-internal-paths` regel, dezelfde stappen volgen als in het dialoogvenster [vroeger voorbeeld](#analyzing).
+Om de resultaten van de `block-internal-paths` regel te analyseren, volg de zelfde stappen zoals die in het [ vroegere voorbeeld ](#analyzing) worden beschreven.
 
-Deze keer moet u echter de **Geblokkeerde aanvragen** en corresponderende waarden in client-IP (cli_ip), host, URL, action (waf_action) en regel-name (waf_match) kolommen.
+Nochtans, zou dit keer u de **Geblokkeerde verzoeken** en overeenkomstige waarden in cliëntIP (cli_ip), gastheer, URL, actie (waf_action), en regel-name (waf_match) kolommen moeten zien.
 
-![Verzoek om geblokkeerd ELK-dashboard](./assets/elk-tool-dashboard-blocked.png)
+![ Geblokkeerd Verzoek van het Dashboard van het Hulpmiddel van het ELK ](./assets/elk-tool-dashboard-blocked.png)
 
 
 ### DoS-aanvallen voorkomen
 
-Laten we **DoS-aanvallen voorkomen** door verzoeken van een IP adres te blokkeren die 100 verzoeken per seconde maken, die het veroorzaken om 5 minuten worden geblokkeerd.
+Laat **aanvallen van Dos** verhinderen door verzoeken van een IP adres te blokkeren die 100 verzoeken per seconde maken, die het veroorzaken om voor 5 minuten worden geblokkeerd.
 
-- Voeg het volgende toe [regel van de snelheidsbeperking van het verkeersfilter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) in het WKND-project `/config/cdn.yaml` bestand.
+- Voeg de volgende [ regel van de de filterfilter van de tariefgrens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) in het 2} dossier van het WKND project {toe.`/config/cdn.yaml`
 
 ```yaml
 kind: CDN
@@ -193,11 +193,11 @@ data:
 
 >[!WARNING]
 >
->Voor uw productiemilieu, werk met uw team van de Veiligheid van het Web samen om de aangewezen waarden voor te bepalen `rateLimit`,
+>Voor uw productieomgeving werkt u samen met uw webbeveiligingsteam om de juiste waarden voor `rateLimit` te bepalen.
 
-- Breng, duw, en stel veranderingen zoals vermeld in [eerdere voorbeelden](#logging-requests).
+- Leg, duw, en stel veranderingen zoals vermeld in [ vroegere voorbeelden ](#logging-requests) vast.
 
-- Om de aanval van Dos te simuleren, gebruik het volgende [Vegeta](https://github.com/tsenart/vegeta) gebruiken.
+- Om de aanval van Dos te simuleren, gebruik het volgende [ bevel van Vegeta ](https://github.com/tsenart/vegeta).
 
   ```shell
   $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=5s | vegeta report
@@ -205,21 +205,21 @@ data:
 
   Dit bevel maakt 120 verzoeken om 5 seconden en output een rapport. Zoals u kunt zien, is het succestarief 32.5%; een 406 de reactiecode van HTTP wordt ontvangen voor de rest, die aantoont dat het verkeer werd geblokkeerd.
 
-  ![Vegeta DoS-aanval](./assets/vegeta-dos-attack.png)
+  ![ Vegeta Dos aanval ](./assets/vegeta-dos-attack.png)
 
 #### Analyseren
 
-De resultaten van het `prevent-dos-attacks` regel, dezelfde stappen volgen als in het dialoogvenster [vroeger voorbeeld](#analyzing).
+Om de resultaten van de `prevent-dos-attacks` regel te analyseren, volg de zelfde stappen zoals die in het [ vroegere voorbeeld ](#analyzing) worden beschreven.
 
-Deze keer ziet u er veel **Geblokkeerde aanvragen** en corresponderende waarden in client-IP (cli_ip), host, url, action (waf_action) en regel-name (waf_match) kolommen.
+Deze tijd zou u vele **Geblokkeerde verzoeken** en overeenkomstige waarden in cliëntIP (cli_ip), gastheer, url, actie (waf_action), en regel-name (waf_match) kolommen moeten zien.
 
-![Aanvraag voor Dashboard DoS van ELK-hulpprogramma](./assets/elk-tool-dashboard-dos.png)
+![ het Dashboard van het Hulpmiddel van het Hulpmiddel verzoekt ](./assets/elk-tool-dashboard-dos.png)
 
-Ook de **De hoogste 100 aanvallen door cliëntIP, land, en gebruiker-agent** de panelen tonen extra details, die kunnen worden gebruikt om de regelconfiguratie verder te optimaliseren.
+Ook, tonen de **Hoogste 100 aanvallen door cliëntIP, land, en gebruiker-agent** panelen extra details, die kunnen worden gebruikt om de regelconfiguratie verder te optimaliseren.
 
-![Dashboard DoS Top 100 van ELK-hulpprogramma](./assets/elk-tool-dashboard-dos-top-100.png)
+![ het Dashboard van het Hulpmiddel van het Hulpmiddel 100 verzoeken ](./assets/elk-tool-dashboard-dos-top-100.png)
 
-Voor meer informatie over hoe te om aanvallen van Dos en van DDoS te verhinderen, herzie [Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter](../blocking-dos-attack-using-traffic-filter-rules.md) zelfstudie.
+Voor meer informatie over hoe te om aanvallen te verhinderen DoS en DDoS, herzie het [ Blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter ](../blocking-dos-attack-using-traffic-filter-rules.md) leerprogramma.
 
 ### WAF-regels
 
@@ -227,46 +227,46 @@ De de regelvoorbeelden van de verkeersfilter tot nu toe kunnen door alle Sites e
 
 Daarna, onderzoeken wij de ervaring voor een klant die een vergunning van de Bescherming van Uitgebreide Veiligheid of WAF-DDoS heeft verworven, die hen geavanceerde regels laat vormen om websites tegen verfijnde aanvallen te beschermen.
 
-Alvorens verder te gaan, laat de bescherming WAF-DDoS voor uw programma, zoals die in de documentatie van de regels van de verkeersfilter wordt beschreven toe [installatiestappen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
+Alvorens verder te gaan, laat de bescherming WAF-DDoS voor uw programma toe, zoals die in de documentatie van de verkeersfilterregels [ opstellingsstappen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup) wordt beschreven.
 
 #### Zonder WAFFlags
 
 Laten we eerst de ervaring zien, zelfs voordat WAF Rules wordt gedeclareerd. Wanneer WAF-DDoS op uw programma wordt toegelaten, registreert uw CDN door standaardlogboek om het even welke gelijken van kwaadwillig verkeer, zodat hebt u de juiste informatie om omhoog met aangewezen regels te komen.
 
-Laten we beginnen door de WKND-site aan te vallen zonder een WAF-regel toe te voegen (of door de `wafFlags` eigenschap) en de resultaten analyseren.
+Laten we eerst de WKND-site aanvallen zonder een WAF-regel toe te voegen (of de eigenschap `wafFlags` te gebruiken) en de resultaten analyseren.
 
-- Om een aanval te simuleren, gebruik [Nikto](https://github.com/sullo/nikto) hieronder, dat het ongeveer 700 kwaadwillige verzoeken in 6 minuten verzendt.
+- Om een aanval te simuleren, gebruik het [ Nikto ](https://github.com/sullo/nikto) bevel hieronder, dat het ongeveer 700 kwaadwillige verzoeken in 6 minuten verzendt.
 
   ```shell
   $ ./nikto.pl -useragent "AttackSimulationAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html
   ```
 
-  ![Nikto Attack Simulation](./assets/nikto-attack.png)
+  ![ Nikto de Simulatie van de Aanval ](./assets/nikto-attack.png)
 
-  Om over aanvalsimulatie te leren, herzie [Nikto - Scannen](https://github.com/sullo/nikto/wiki/Scan-Tuning) documentatie, die u vertelt hoe te om het type van testaanvallen te specificeren om te omvatten of uit te sluiten.
+  Om over aanvalsimulatie te leren, herzie [ Nikto - Scannen ](https://github.com/sullo/nikto/wiki/Scan-Tuning) documentatie, die u vertelt hoe te om het type van testaanvallen te specificeren om te omvatten of uit te sluiten.
 
 ##### Analyseren
 
-Om de resultaten van aanvalsimulatie te analyseren, volg de zelfde stappen zoals die in [vroeger voorbeeld](#analyzing).
+Om de resultaten van aanvalssimulatie te analyseren, volg de zelfde stappen zoals die in het [ vroegere voorbeeld ](#analyzing) worden beschreven.
 
-Deze keer moet u echter de **Gemarkeerde aanvragen** en corresponderende waarden in client IP (cli_ip), host, url, action (waf_action) en rule-name (waf_match) kolommen. Met deze informatie kunt u de resultaten analyseren en de regelconfiguratie optimaliseren.
+Nochtans, zou dit keer u de **Gemarkeerde verzoeken** en overeenkomstige waarden in cliëntIP (cli_ip), gastheer, url, actie (waf_action), en regel-name (waf_match) kolommen moeten zien. Met deze informatie kunt u de resultaten analyseren en de regelconfiguratie optimaliseren.
 
-![Aanvraag voor gemarkeerde GOF-markering van ELK-gereedschapdashboard](./assets/elk-tool-dashboard-waf-flagged.png)
+![ het Dashboard van het Hulpmiddel van het KIEZEN WAF Vlaged Verzoek ](./assets/elk-tool-dashboard-waf-flagged.png)
 
-Let op het volgende: **WAF-vlagverdeling** en **Bovenste aanvallen** de panelen tonen extra details, die kunnen worden gebruikt om de regelconfiguratie verder te optimaliseren.
+Merk op hoe de **distributie van de Vlaggen van WAF** en **Hoogste aanvallen** panelen extra details tonen, die kunnen worden gebruikt om de regelconfiguratie verder te optimaliseren.
 
-![Aanvraag voor WAF-vlaggen van het ELK-hulpprogramma](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
+![ Verzoek van de Aanvallen van de Vlaggen van het Hulpmiddel van het Hulpmiddel van het KIEZEN ](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
 
-![Aanvraag voor bovenste WAF-aanvallen op het ELK-hulpprogramma](./assets/elk-tool-dashboard-waf-flagged-top-attacks-2.png)
+![ het Dashboard van het Hulpmiddel van het Hulpmiddel van het KIEZEN het Hoogste Verzoek van de Aanvallen WAF ](./assets/elk-tool-dashboard-waf-flagged-top-attacks-2.png)
 
 
 #### Met WAFFlags
 
-Nu een WAF-regel toevoegen die `wafFlags` eigenschap als onderdeel van het `action` eigendom en **blokkeren de gesimuleerde aanvalsverzoeken**.
+Voeg nu een regel van WAF toe die `wafFlags` bezit als deel van het `action` bezit bevat en **blokkeer de gesimuleerde aanvalsverzoeken**.
 
-Vanuit een syntaxisperspectief zijn de WAF-regels vergelijkbaar met de regels die eerder werden gezien, maar de `action` eigenschapverwijzingen een of meer `wafFlags` waarden. Meer informatie over de `wafFlags`, de [Lijst met WAF-markeringen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list) sectie.
+Vanuit syntaxisperspectief zijn de WAF-regels vergelijkbaar met die van eerder, maar de eigenschap `action` verwijst naar een of meer `wafFlags` -waarden. Meer over `wafFlags` leren, herzie de [ sectie van de Lijst van de Vlaggen van WAF ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list).
 
-- Voeg de volgende regel in het WKND-project toe `/config/cdn.yaml` bestand. Let op het volgende: `block-waf-flags` de regel omvat enkele wafFlags die in het dashboard tooling toen aangevallen met gesimuleerd kwaadwillig verkeer waren verschenen. Het is inderdaad een goede praktijk om logboeken te analyseren om te bepalen welke nieuwe regels moeten worden verklaard, aangezien het bedreigingslandschap evolueert.
+- Voeg de volgende regel toe in het WKND-projectbestand `/config/cdn.yaml` . De regel `block-waf-flags` bevat enkele wafFlags die in de dashboardwerkset waren weergegeven toen deze met gesimuleerd kwaadaardig verkeer werden aangevallen. Het is inderdaad een goede praktijk om logboeken te analyseren om te bepalen welke nieuwe regels moeten worden verklaard, aangezien het bedreigingslandschap evolueert.
 
 ```yaml
 kind: CDN
@@ -307,9 +307,9 @@ data:
             - UTF8
 ```
 
-- Breng, duw, en stel veranderingen zoals vermeld in [eerdere voorbeelden](#logging-requests).
+- Leg, duw, en stel veranderingen zoals vermeld in [ vroegere voorbeelden ](#logging-requests) vast.
 
-- Om een aanval te simuleren, gebruik het zelfde [Nikto](https://github.com/sullo/nikto) gebruiken zoals voorheen.
+- Om een aanval te simuleren, gebruik het zelfde [ Nikto ](https://github.com/sullo/nikto) bevel zoals voordien.
 
   ```shell
   $ ./nikto.pl -useragent "AttackSimulationAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html
@@ -317,21 +317,21 @@ data:
 
 ##### Analyseren
 
-Herhaal dezelfde stappen als in het dialoogvenster [vroeger voorbeeld](#analyzing).
+Herhaal de zelfde stappen zoals die in het [ worden beschreven vroeger voorbeeld ](#analyzing).
 
-Dit keer moet u de vermeldingen onder **Geblokkeerde aanvragen** en de overeenkomstige waarden in client-IP (cli_ip), host, url, action (waf_action) en regel-name (waf_match) kolommen.
+Dit keer zou u ingangen onder **Geblokkeerde verzoeken** en de overeenkomstige waarden in cliëntIP (cli_ip), gastheer, url, actie (waf_action), en regel-name (waf_match) kolommen moeten zien.
 
-![Aanvraag voor geblokkeerde WAF-bestanden van ELK-dashboard](./assets/elk-tool-dashboard-waf-blocked.png)
+![ Geblokkeerd Verzoek van het Dashboard van het Hulpmiddel van het ELK ](./assets/elk-tool-dashboard-waf-blocked.png)
 
-Ook de **WAF-vlagverdeling** en **Bovenste aanvallen** extra details worden weergegeven in de deelvensters.
+Ook, tonen de **distributie van de Vlaggen van WAF** en **Hoogste aanvallen** panelen extra details.
 
-![Aanvraag voor WAF-vlaggen van het ELK-hulpprogramma](./assets/elk-tool-dashboard-waf-blocked-top-attacks-1.png)
+![ Verzoek van de Aanvallen van de Vlaggen van het Hulpmiddel van het Hulpmiddel van het KIEZEN ](./assets/elk-tool-dashboard-waf-blocked-top-attacks-1.png)
 
-![Aanvraag voor bovenste WAF-aanvallen op het ELK-hulpprogramma](./assets/elk-tool-dashboard-waf-blocked-top-attacks-2.png)
+![ het Dashboard van het Hulpmiddel van het Hulpmiddel van het KIEZEN het Hoogste Verzoek van de Aanvallen WAF ](./assets/elk-tool-dashboard-waf-blocked-top-attacks-2.png)
 
 ### Uitgebreide analyse
 
-In het bovenstaande _analyse_ secties hebt u geleerd hoe u de resultaten van specifieke regels kunt analyseren met het dashboardgereedschap. U kunt de resultaten verder analyseren met andere dashboarddeelvensters, zoals:
+In de bovengenoemde _analyse_ secties, leerde u hoe te om de resultaten van specifieke regels te analyseren gebruikend het dashboardhulpmiddel. U kunt de resultaten verder analyseren met andere dashboarddeelvensters, zoals:
 
 
 - Geanalyseerde, gemarkeerde en geblokkeerde aanvragen
@@ -341,18 +341,18 @@ In het bovenstaande _analyse_ secties hebt u geleerd hoe u de resultaten van spe
 - Bovenste getriggerde verkeersfilter
 - De hoogste 100 aanvallers door cliëntIP, land, en gebruiker-agent
 
-![Uitgebreide analyse van het Dashboard van het gereedschap ELK](./assets/elk-tool-dashboard-comprehensive-analysis-1.png)
+](./assets/elk-tool-dashboard-comprehensive-analysis-1.png) Uitgebreide Analyse van het Dashboard van het Hulpmiddel 0} ELK {![
 
-![Uitgebreide analyse van het Dashboard van het gereedschap ELK](./assets/elk-tool-dashboard-comprehensive-analysis-2.png)
+](./assets/elk-tool-dashboard-comprehensive-analysis-2.png) Uitgebreide Analyse van het Dashboard van het Hulpmiddel 0} ELK {![
 
 
 ## Volgende stap
 
-Ga vertrouwd met aanbevolen [best practices](./best-practices.md) het risico van inbreuken op de beveiliging te verminderen.
+Krijg vertrouwd met geadviseerde [ beste praktijken ](./best-practices.md) om het risico van veiligheidsbreuken te verminderen.
 
 ## Aanvullende bronnen
 
-[Syntaxis verkeersfilterregels](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
+[ Syntaxis van de Regels van de Filter van het Verkeer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
 
-[CDN-logboekindeling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
+[ CDN het Formaat van het Logboek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
 

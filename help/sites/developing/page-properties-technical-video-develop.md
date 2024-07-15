@@ -24,12 +24,12 @@ Het aanpassen van de meta-gegevensgebieden voor de Eigenschappen van de Pagina i
 
 >[!VIDEO](https://video.tv.adobe.com/v/25173?quality=12&learn=on)
 
-In de video hierboven ziet u hoe u de pagina-eigenschappen voor de [WKND-naslagsite](https://github.com/adobe/aem-guides-wknd).
+De bovenstaande video toont het aanpassen van de paginaeigenschappen voor de [ Plaats van de Verwijzing van WKND ](https://github.com/adobe/aem-guides-wknd).
 
 ## Voorbeeld van pakket met WKND-pagina-eigenschappen
 
-U kunt de beschikbare [voorbeeld WKND-pagina-eigenschappenpakket](./assets/WKND-PageProperties-Example-Dialog-1.0.zip) bevattende **WKND** en **Basis** tabaanpassingen die in bovenstaande video worden weergegeven. De **SocialMedia** tabaanpassing is niet beschikbaar zoals [WKND-paginacomponent](https://github.com/adobe/aem-guides-wknd/blob/main/ui.apps/src/main/content/jcr_root/apps/wknd/components/page/.content.xml#L5) gebruikt nu de V3-versie van WCM Core Components en in de V3-versie de [delen via sociale media is afgekeurd](https://github.com/adobe/aem-core-wcm-components/pull/1930).
+U kunt het verstrekte [ pakket van de de paginaaigenschappen van de steekproefWKND ](./assets/WKND-PageProperties-Example-Dialog-1.0.zip) gebruiken die **WKND** en **Basis** lusjeverbeteringen bevatten die in hierboven video worden getoond. De **tabaanpassing 0} SocialMedia {wordt niet verstrekt aangezien [ de component van de Pagina van WKND ](https://github.com/adobe/aem-guides-wknd/blob/main/ui.apps/src/main/content/jcr_root/apps/wknd/components/page/.content.xml#L5) nu V3 versie van de Componenten van de Kern WCM en in V3 versie het [ sociale delen ](https://github.com/adobe/aem-core-wcm-components/pull/1930) wordt afgekeurd.**
 
-Voor leerdoeleinden kunt u echter de WKND-paginacomponent verwijzen naar de V2-versie van WCM Core-componenten met de functie `sling:resourceSuperType` eigenschapswaarde en bedekking de [Sociale media](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page/_cq_dialog/.content.xml#L95) tab. Zie voor meer informatie [De pagina-eigenschappen configureren](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/page-properties-views.html#configuring-your-page-properties)
+Nochtans voor het leren doeleinden, kunt u de component van de Pagina WKND aan V2 versie van de Componenten van de Kern van WCM richten gebruikend de `sling:resourceSuperType` bezitswaarde en bedekking de [ Sociale Media ](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page/_cq_dialog/.content.xml#L95) tabel. Voor meer informatie, zie [ Vormend uw Eigenschappen van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/page-properties-views.html#configuring-your-page-properties)
 
 Dit voorbeeldpakket moet worden geïnstalleerd op de lokale AEM SDK of AEM 6.X.X-instantie voor leerdoeleinden.

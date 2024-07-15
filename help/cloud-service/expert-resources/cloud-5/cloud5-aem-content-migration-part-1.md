@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # Migreren naar de cloud - Deel 1
 
-Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief enkele goede werkwijzen en verschillen van AMS/On-Prem. Ze raken ook aan de migratie naar de cloud.
+Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief een aantal beste praktijken en verschillen van AMS/On-Prem. Ze raken ook aan de migratie naar de cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
 
@@ -28,6 +28,6 @@ Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief enkele goede w
 + evaluatie van de exemplaren die u wilt migreren
    + BPA - analyse van best practices
    + CAM - beheer van cloudversnelling
-+ [republieken](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
++ [ repostats ](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [AEM-moderniseringstools](https://opensource.adobe.com/aem-modernize-tools/)
-+ [Cloud Service-migratiehulpmiddelen](https://github.com/adobe/aem-cloud-service-source-migration)
++ [ Hulpmiddelen van de Migratie van de Cloud Service ](https://github.com/adobe/aem-cloud-service-source-migration)

@@ -34,7 +34,7 @@ Als u optimaal wilt profiteren van deze zelfstudie, kunt u het beste aan de volg
 
 Deze zelfstudie maakt gebruik van een eenvoudig adaptief formulier dat in AEM Forms is ingebouwd en meet de manier waarop inzendingen worden verzonden voor waarden voor de status van ingezetenschap, en velden die validatiefouten genereren.
 
-![adaptieve vorm](assets/use-case.png)
+![ adaptive-form ](assets/use-case.png)
 
 ## Volgende stappen
 

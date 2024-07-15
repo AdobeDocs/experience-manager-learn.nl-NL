@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Hoe kan ik Verbindingspompen van een JVM vastleggen op een Windows-server?
 
-*Deze video doorloopt de stappen om heapdumps van een JVM op een vensterserver vast te leggen.*
+*Deze video loopt door de stappen om heap dumps van een JVM op een vensterserver te vangen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335493?quality=12&learn=on)

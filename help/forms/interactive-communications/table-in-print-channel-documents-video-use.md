@@ -23,13 +23,13 @@ In de volgende video worden de stappen doorlopen die zijn vereist om tabelcompon
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
-Tabellen worden gebruikt om gegevens in tabelvorm weer te geven. De rijen in de lijst moeten afhankelijk van de gegevens groeien of krimpen die door de gegevensbron zijn teruggekeerd. Als u een tabel wilt gebruiken in een document met afdrukkanalen, moet u een lay-outbestand (xdp-bestand) maken met AEM Forms Designer. In dit lay-outdossier, voegen wij de lijst met het vereiste aantal kolommen toe. Zorg ervoor dat het objecttype van het kolomveld, afhankelijk van uw vereisten, TextField of Numeriek veld is. Voor elke kolom zorgen de velden ervoor dat de gegevensbinding is ingesteld op Naam gebruiken.
+Tabellen worden gebruikt om gegevens in tabelvorm weer te geven. De rijen in de lijst moeten afhankelijk van de gegevens groeien of krimpen die door de gegevensbron zijn teruggekeerd. Als u een tabel in een document met afdrukkanalen wilt gebruiken, moet u een lay-outbestand (xdp-bestand) maken met AEM Forms Designer. In dit lay-outdossier, voegen wij de lijst met het vereiste aantal kolommen toe. Zorg ervoor dat het objecttype van het kolomveld, afhankelijk van uw vereisten, TextField of Numeriek veld is. Voor elke kolom zorgen de velden ervoor dat de gegevensbinding is ingesteld op Naam gebruiken.
 
 >[!NOTE]
 >
 >Als u een tabel dynamisch wilt maken, moet u de rij als herhalend hebben gemarkeerd.
 
-**Probeer het op uw eigen server**
+**probeer het op uw eigen server**
 
 * [Download en decomprimeer het bestand assets op de vaste schijf](assets/usingtablesinprintchannel.zip)
 
@@ -44,7 +44,7 @@ Tabellen worden gebruikt om gegevens in tabelvorm weer te geven. De rijen in de 
    * Interactief communicatiedocument
    * sampleretirementaccountdata.json
 
-* Open het interactieve communicatiedocument in [bewerkingsmodus](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* Open het Interactieve Communicatie Document op [ geeft wijze ](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html) uit.
 
 * Voeg het de lay-outfragment TableDemo aan de bijdragesectie toe.
 * De tabelcellen binden aan de juiste formuliergegevensmodelelementen, zoals in de video wordt getoond

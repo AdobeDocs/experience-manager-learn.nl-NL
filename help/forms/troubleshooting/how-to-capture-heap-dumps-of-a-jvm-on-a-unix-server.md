@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Hoe kan ik heapdumpen van een JVM vastleggen op een unix-server
 
-*Deze video doorloopt de stappen om heapdumps van een JVM op een unix-server vast te leggen.*
+*Deze video loopt door de stappen om heap dumps van een JVM op een unix server te vangen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335489?quality=12&learn=on)

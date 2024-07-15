@@ -28,9 +28,9 @@ Een inleiding aan gemeenschappelijke hulpmiddelen en technieken die worden gebru
 
 ## Foutopsporing aan de clientzijde via satellietobject
 
-Foutopsporing op de client is handig om het laden of de volgorde van uitvoering van de regel met tageigenschappen te controleren. Wanneer een eigenschap Tag aan de website wordt toegevoegd, `_satellite` JavaScript-object is aanwezig in de browser om het bijhouden van gebeurtenissen en gegevens op de client mogelijk te maken.
+Foutopsporing op de client is handig om het laden of de volgorde van uitvoering van de regel met tageigenschappen te controleren. Wanneer een eigenschap Tag aan de website wordt toegevoegd, is het `_satellite` JavaScript-object aanwezig in de browser om het bijhouden van gebeurtenissen en gegevens op de client te vergemakkelijken.
 
-Als u foutopsporing op de client wilt inschakelen, roept u de `setDebug(true)` op de `_satellite` object.
+Als u foutopsporing op de client wilt inschakelen, roept u de methode `setDebug(true)` op het `_satellite` -object aan.
 
 1. Open de browserconsole en voer de opdracht onder uit.
 
@@ -38,22 +38,22 @@ Als u foutopsporing op de client wilt inschakelen, roept u de `setDebug(true)` o
        _satellite.setDebug(true);
    ```
 
-1. Laad de AEM sitepagina opnieuw en verifieer de presentaties van het consolelogboek _regel geactiveerd_ bericht zoals hieronder.
+1. Laad de AEM sitepagina opnieuw, en verifieer consolelogboek toont _in brand gestoken regel_ bericht zoals hieronder.
 
-   ![Eigenschap labelen op auteur- en publicatiepagina&#39;s](assets/satellite-object-debugging.png)
+   ![ Bezit van de Markering op de Pagina&#39;s van de Auteur en van Publish ](assets/satellite-object-debugging.png)
 
 ## Foutopsporing via Adobe Experience Platform Debugger
 
-Adobe biedt Adobe Experience Platform Debugger [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om fouten op te sporen, te begrijpen en inzicht te krijgen in de integratie.
+Adobe verstrekt de uitbreiding van Chrome van het Adobe Experience Platform Debugger [ ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om, inzicht in de integratie te zuiveren te begrijpen en te krijgen.
 
-1. Open de extensie Adobe Experience Platform Debugger en open de sitepagina op de instantie Publiceren
+1. Open de extensie Adobe Experience Platform Debugger en open de sitepagina op de Publish-instantie
 
-2. In de **Adobe Experience Platform Debugger > Samenvatting > Adobe Experience Platform-tags** sectie, verifieer uw de bezitsdetails van de Markering zoals Naam, Versie, Bouwstijl Datum, Milieu, en Uitbreidingen.
+2. In het **Adobe Experience Platform Debugger > Samenvatting > de sectie van de Markeringen van Adobe Experience Platform**, verifieer uw het bezitsdetails van de Markering zoals Naam, Versie, Bouwstijl Datum, Milieu, en Uitbreidingen.
 
-   ![Eigenschappengegevens Adobe Experience Platform Debugger en label](assets/tag-property-details.png)
+   ![ Adobe Experience Platform Debugger en de Details van het Bezit van de Markering ](assets/tag-property-details.png)
 
 ## Aanvullende bronnen {#additional-resources}
 
-+ [Inleiding tot het Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [ Inleiding aan het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
 
-+ [Verwijzing naar satellietobject](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)
++ [ Satellite objecten verwijzing ](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)

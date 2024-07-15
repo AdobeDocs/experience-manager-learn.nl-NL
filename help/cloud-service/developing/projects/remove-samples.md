@@ -26,7 +26,7 @@ Leer hoe u gegenereerde voorbeeldcode kunt opschonen en verwijderen uit een AEM 
 
 ## Bronnen
 
-+ [AEM Maven Project Archetype](https://github.com/adobe/aem-project-archetype)
++ [AEM Maven Project Archetype ](https://github.com/adobe/aem-project-archetype)
 
 ## Opdrachten
 
@@ -46,13 +46,13 @@ rm -rf ui.frontend/src/main/webpack/components/_helloworld.css
 
 ## Bewerkingen
 
-Verwijder de `<div class="helloworld" ...></div>` van:
+Verwijder `<div class="helloworld" ...></div>` uit:
 
 ```
 ui.frontend/src/main/webpack/static/index.html
 ```
 
-Verwijder de `<helloworld>` definitie van componentinstantie van:
+Verwijder de definitie van de componentinstantie `<helloworld>` uit:
 
 ```
 ui.content/src/main/content/jcr_root/content/wknd-examples/us/en/.content.xml

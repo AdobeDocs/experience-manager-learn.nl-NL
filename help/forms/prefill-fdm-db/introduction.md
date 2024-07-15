@@ -25,7 +25,7 @@ Na voltooiing van deze cursus zult u het volgende geleerd hebben.
 
 * Formuliergegevensmodel maken met RDBMS-ondersteuning
 * Koppeling maken tussen 2 entiteiten
-* Tabel vullen met gegevens die zijn geretourneerd door _get_ service van het formuliergegevensmodel
+* Vul lijst met gegevens die door _worden teruggekeerd krijgt_ dienst van het Model van de Gegevens van de Vorm
 * Aanvraagkenmerk van formuliergegevensmodel gebruiken
 
 In de volgende video ziet u een overzicht van de cursus

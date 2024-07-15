@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## Een voorbeeld van het herfinancieringsformulier bekijken
 
-Het gebruiksgeval wordt teweeggebracht wanneer de agent van de klantendienst vult en voorlegt [herfinancieringsformulier](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+Het gebruiksgeval wordt teweeggebracht wanneer de agent van de klantendienst vult en [ overlegt herfinanciert vorm ](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
 De workflow Meerdere Forms ondertekenen leidt tot het verzenden van dit formulier en de klant ontvangt een e-mailmelding met een koppeling om het invullen en ondertekenen van het formulier te starten.
 
 ## Formulieren invullen in het pakket
 
-De klant wordt voorgesteld om het eerste formulier in het pakket in te vullen en te ondertekenen. Nadat het formulier is ondertekend, kan de klant naar het volgende formulier in het pakket navigeren. Nadat alle formulieren zijn ingevuld en ondertekend, krijgt de klant de aanduiding &quot;**AllDone**&quot;formulier.
+De klant wordt voorgesteld om het eerste formulier in het pakket in te vullen en te ondertekenen. Nadat het formulier is ondertekend, kan de klant naar het volgende formulier in het pakket navigeren. Zodra alle vormen worden gevuld en ondertekend wordt de klant voorgesteld met &quot;**AllDone**&quot;vorm.
 
 ## Problemen oplossen
 
@@ -50,4 +50,4 @@ Wanneer een formulier met succes is ondertekend in het pakket, wordt de workflow
 
 ### Het AllDone-formulier niet zien
 
-Wanneer het pakket geen formulieren meer bevat om te ondertekenen, wordt het AllDone-formulier aan de gebruiker gepresenteerd. Als u het AllDone-formulier niet ziet, controleert u de URL die wordt gebruikt in regel 33 van het GetNextFormToSign.js-bestand dat deel uitmaakt van het **getnextform** client lib.
+Wanneer er geen meer vormen in het pakket zijn te ondertekenen, wordt de vorm AllDone voorgesteld aan de gebruiker.Als u niet de vorm AllDone ziet, gelieve URL te controleren die in lijn 33 van het GetNextFormToSign.js- dossier wordt gebruikt dat deel van **getnextform** cliëntlib uitmaakt.

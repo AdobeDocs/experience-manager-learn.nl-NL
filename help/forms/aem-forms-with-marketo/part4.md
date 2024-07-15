@@ -33,11 +33,11 @@ De gebruiker voert de Lead-id in en bij het uitlijnen van de Marketo-service om 
 
 Het volgende schermschot verklaart de montages van de regelredacteur
 
-![ruleeditor](assets/ruleeditor.png)
+![ ruleeditor ](assets/ruleeditor.png)
 
 ## Foutopsporing
 
-Als u de bundels gebruikt die bij dit artikel worden geleverd, kunt u [foutopsporingslogboeken](http://localhost:4502/system/console/slinglog) voor de volgende klassen:
+Als u de bundels gebruikt die van dit artikel worden voorzien, kunt u [ willen toelaten zuiveren logboeken ](http://localhost:4502/system/console/slinglog) voor de volgende klassen:
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Hoe te om kwesties met betrekking tot de configuratie van de Jetty in AEM problemen op te lossen
 
-*Deze video doorloopt de stappen om kwesties met betrekking tot de configuratie van de Jetty in AEM problemen op te lossen.*
+*Deze video loopt door de stappen om kwesties met betrekking tot de configuratie van de Jetty in AEM problemen op te lossen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335470?quality=12&learn=on)

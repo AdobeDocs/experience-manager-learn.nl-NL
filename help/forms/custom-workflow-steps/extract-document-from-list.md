@@ -31,12 +31,12 @@ Er moet een workflow worden gemaakt voor het verzenden van formulieren. Voor de 
 * Een variabele van het type Document.(Deze variabele bevat het document dat uit de ArrayList is geëxtraheerd)
 
 * De aangepaste component aan uw workflow toevoegen en de eigenschappen ervan configureren
-  ![extractie-item-workflow](assets/extract-document-array-list.png)
+  ![ extract-punt-werkschema ](assets/extract-document-array-list.png)
 
 ## Adaptief formulier configureren
 
 * De verzendactie van het aangepaste formulier configureren om de AEM te activeren
-  ![voorlegging](assets/store-attachments.png)
+  ![ voorleggen-actie ](assets/store-attachments.png)
 
 ## De oplossing testen
 
@@ -48,7 +48,7 @@ Er moet een workflow worden gemaakt voor het verzenden van formulieren. Voor de 
 
 [Het adaptieve formulier importeren](assets/test-attachment-extractions-adaptive-form.zip)
 
-[Een voorbeeld van het formulier bekijken](http://localhost:4502/content/dam/formsanddocuments/testattachmentsextractions/jcr:content?wcmmode=disabled)
+[ Voorproef de vorm ](http://localhost:4502/content/dam/formsanddocuments/testattachmentsextractions/jcr:content?wcmmode=disabled)
 
 Voeg een bijlage aan het formulier toe en verzend het.
 

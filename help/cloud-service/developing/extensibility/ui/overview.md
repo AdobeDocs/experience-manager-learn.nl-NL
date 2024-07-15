@@ -1,6 +1,6 @@
 ---
 title: Uitbreidbaarheid AEM UI
-description: Meer informatie over AEM uitbreidbaarheid met de App Builder voor het maken van extensies.
+description: Meer informatie over AEM uitbreidbaarheid met de gebruikersinterface van App Builder voor het maken van extensies.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Uitbreidbaarheid AEM UI
 
-Adobe Experience Manager (AEM) biedt een krachtige gebruikersinterface (UI) voor het creëren van digitale ervaringen. Om UI aan te passen en uit te breiden, introduceerde de Adobe App Builder. Met dit gereedschap kunnen ontwikkelaars de gebruikerservaring verbeteren zonder complexe codering met JavaScript en Reageren.
+Adobe Experience Manager (AEM) biedt een krachtige gebruikersinterface (UI) voor het creëren van digitale ervaringen. Om UI aan te passen en uit te breiden, introduceerde de Adobe App Builder. Met dit gereedschap kunnen ontwikkelaars de gebruikerservaring verbeteren zonder dat ze complexe codering gebruiken met JavaScript en Reageren.
 
 App Builder biedt een implementatielaag voor het maken van extensies die in AEM extensiepunten moeten definiëren. App Builder kan naadloos worden geïntegreerd met AEM, zodat u in real-time voorvertoningen en tests kunt uitvoeren. Wijzigingen in AEM implementeren is snel en gestroomlijnd. Door App Builder te gebruiken besparen ontwikkelaars tijd en moeite, waardoor ze snel prototypen kunnen maken en kunnen samenwerken met belanghebbenden.
 
@@ -45,4 +45,4 @@ De video&#39;s en doorlopen die hieronder zijn gekoppeld, laten zien hoe een ext
 
 ## Adobe Developer-documentatie
 
-Adobe Developer bevat ontwikkelaardetails over AEM uitbreidbaarheid van de gebruikersinterface. Controleer de [Adobe Developer-inhoud voor verdere technische details](https://developer.adobe.com/uix/docs/).
+Adobe Developer bevat ontwikkelaardetails over AEM uitbreidbaarheid van de gebruikersinterface. Gelieve te herzien de [ inhoud van Adobe Developer voor verdere technische details ](https://developer.adobe.com/uix/docs/).

@@ -20,9 +20,9 @@ ht-degree: 1%
 
 # Adobe I/O Runtime-actie
 
-![Handelingen in runtime voor UI-extensie AEM](./assets/runtime-action/action-runtime-flow.png){align="center"}
+![ AEM UI van de uitbreidingsruntime acties ](./assets/runtime-action/action-runtime-flow.png){align="center"}
 
-AEM UI-extensies kunnen optioneel een willekeurig aantal bevatten [Adobe I/O Runtime-acties](https://developer.adobe.com/runtime/docs/).
+AEM uitbreidingen UI kunnen naar keuze om het even welk aantal [ acties van Adobe I/O Runtime ](https://developer.adobe.com/runtime/docs/) omvatten.
 
 Adobe I/O Runtime-handelingen zijn serverloze functies die door de extensie kunnen worden aangeroepen. Handelingen zijn handig voor het uitvoeren van werk waarvoor interactie met AEM of andere webservices van de Adobe vereist is. Handelingen zijn meestal handig voor het uitvoeren van langdurige (iets langer dan een paar seconden) taken of voor het indienen van HTTP-aanvragen bij AEM of andere webservices.
 
@@ -32,7 +32,7 @@ De voordelen van Adobe I/O Runtime-handelingen voor het uitvoeren van bewerkinge
 + Handelingen kunnen niet worden onderbroken door de gebruiker (bijvoorbeeld de browser vernieuwen)
 + Handelingen zijn asynchroon, zodat ze zo lang als nodig kunnen worden uitgevoerd zonder de gebruiker te blokkeren
 
-In de context van AEM uitbreidingen UI, worden de acties vaak gebruikt om met AEM direct te communiceren as a Cloud Service:
+In de context van AEM UI-extensies worden handelingen vaak gebruikt om rechtstreeks met AEM as a Cloud Service te communiceren:
 
 + Verwante gegevens verzamelen van AEM over de geselecteerde of huidige inhoud
 + Aangepaste bewerkingen op inhoud uitvoeren
@@ -44,12 +44,12 @@ Terwijl de AEM UI-extensie wordt weergegeven in specifieke AEM UI&#39;s, kunnen 
 
 Adobe I/O Runtime-handelingen worden voornamelijk aangeroepen vanuit twee plaatsen in een AEM UI-extensie:
 
-1. De [extensieregistratie](./extension-registration.md) `onClick(..)` handler
-1. Binnen een [modaal](./modal.md)
+1. De ](./extension-registration.md) `onClick(..)` manager van de de uitbreidingsregistratie [ uitbreiding
+1. Binnen a [ modal ](./modal.md)
 
 ### Vanaf uitbreidingsregistratie
 
-Adobe I/O Runtime-handelingen kunnen rechtstreeks vanuit de registratiecode voor extensies worden aangeroepen. De meest gebruikelijke manier om een handeling aan een [kopmenu](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/)s-knop die niet wordt gebruikt [modaliteiten](./modal.md).
+Adobe I/O Runtime-handelingen kunnen rechtstreeks vanuit de registratiecode voor extensies worden aangeroepen. Het gemeenschappelijkste gebruiksgeval moet een actie aan de knoop van het a [ kopbalmenu ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/) binden die niet [ modals ](./modal.md) gebruikt.
 
 + `./src/aem-ui-extension/web-src/src/components/ExtensionRegistration.js`
 
@@ -110,7 +110,7 @@ export default ExtensionRegistration;
 
 ### Van modaal
 
-Adobe I/O Runtime-acties kunnen rechtstreeks via modals worden aangeroepen om meer betrokken taken uit te voeren, met name werk dat afhankelijk is van communicatie met AEM as a Cloud Service, Adobe webservice of zelfs met externe services.
+Adobe I/O Runtime-acties kunnen rechtstreeks via modals worden aangeroepen om meer betrokken taken uit te voeren, met name werk dat afhankelijk is van communicatie met AEM as a Cloud Service, Adobe webservice of zelfs services van derden.
 
 Adobe I/O Runtime-acties zijn JavaScript-toepassingen die zijn gebaseerd op Node.js en die worden uitgevoerd in de Adobe I/O Runtime-omgeving zonder server. Deze handelingen kunnen via HTTP worden uitgevoerd via de SPA extensie.
 
@@ -306,26 +306,26 @@ async function main (params) {
 
 De volgende AEM HTTP-API&#39;s worden vaak gebruikt voor interactie met AEM van extensies:
 
-+ [GraphQL API&#39;s AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-+ [AEM ASSETS HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
++ [ AEM GraphQL APIs ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
++ [ HTTP API van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
    + [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html)
-+ [AEM QueryBuilder-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
-+ [Volledige AEM as a Cloud Service API-referentie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
++ [ AEM QueryBuilder API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
++ [ Volledige verwijzing van AEM as a Cloud Service API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
 
 
 ## Npm-modules voor Adobe
 
 Hieronder vindt u nuttige npm-modules voor het ontwikkelen van Adobe I/O Runtime-acties:
 
-+ [@adobe/aio-sdk](https://www.npmjs.com/package/@adobe/aio-sdk)
-   + [Core SDK](https://github.com/adobe/aio-sdk-core)
-   + [Framebibliotheek](https://github.com/adobe/aio-lib-state)
-   + [Bestandsbibliotheek](https://github.com/adobe/aio-lib-files)
-   + [Adobe Target Library](https://github.com/adobe/aio-lib-target)
-   + [Adobe Analytics Library](https://github.com/adobe/aio-lib-analytics)
-   + [Adobe Campaign Standard Library](https://github.com/adobe/aio-lib-campaign-standard)
-   + [Adobe Klantprofielbibliotheek](https://github.com/adobe/aio-lib-customer-profile)
-   + [Adobe Audience Manager Customer Data Library](https://github.com/adobe/aio-lib-audience-manager-cd)
-   + [Adobe I/O Events](https://github.com/adobe/aio-lib-events)
-+ [@adobe/aio-lib-core-networking](https://github.com/adobe/aio-lib-core-networking)
-+ [@adobe/node-httptransfer](https://github.com/adobe/node-httptransfer)
++ [@adobe/aio-sdk ](https://www.npmjs.com/package/@adobe/aio-sdk)
+   + [ Kern SDK ](https://github.com/adobe/aio-sdk-core)
+   + [ Bibliotheek van de Staat ](https://github.com/adobe/aio-lib-state)
+   + [ Bibliotheek van Dossiers ](https://github.com/adobe/aio-lib-files)
+   + [ de Bibliotheek van Adobe Target ](https://github.com/adobe/aio-lib-target)
+   + [ de Bibliotheek van Adobe Analytics ](https://github.com/adobe/aio-lib-analytics)
+   + [ de Bibliotheek van Adobe Campaign Standard ](https://github.com/adobe/aio-lib-campaign-standard)
+   + [ Bibliotheek van het Profiel van de Klant van de Adobe ](https://github.com/adobe/aio-lib-customer-profile)
+   + [ de Bibliotheek van de Gegevens van de Klant van Adobe Audience Manager ](https://github.com/adobe/aio-lib-audience-manager-cd)
+   + [ Adobe I/O Gebeurtenissen ](https://github.com/adobe/aio-lib-events)
++ [@adobe/aio-lib-core-networking ](https://github.com/adobe/aio-lib-core-networking)
++ [@adobe/node-httptransfer ](https://github.com/adobe/node-httptransfer)

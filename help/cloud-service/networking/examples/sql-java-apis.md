@@ -21,21 +21,21 @@ ht-degree: 0%
 
 Verbindingen met SQL-databases (en andere niet-HTTP/HTTPS-services) moeten buiten AEM worden gesteld.
 
-De uitzondering op deze regel is wanneer [toegewezen IP-adres egress](../dedicated-egress-ip-address.md) is in gebruik, en de dienst is op Adobe of Azure.
+De uitzondering op deze regel is wanneer [ specifiek adres van de uitgang ip ](../dedicated-egress-ip-address.md) in gebruik is, en de dienst op Adobe of Azure is.
 
 ## Geavanceerde netwerkondersteuning
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
-Zorg ervoor dat de [passend](../advanced-networking.md#advanced-networking) de geavanceerde voorzien van een netwerkconfiguratie is opstelling voorafgaand aan het volgen van dit leerprogramma.
+Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
 
-| Geen geavanceerde netwerken | [Flexibele poortuitgang](../flexible-port-egress.md) | [IP-adres van specifiek egress](../dedicated-egress-ip-address.md) | [Virtueel privé netwerk](../vpn.md) |
+| Geen geavanceerde netwerken | [ Flexibele havenuitgang ](../flexible-port-egress.md) | [ Dedicated egress IP adres ](../dedicated-egress-ip-address.md) | [ Virtueel Privé Netwerk ](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
 ## OSGi-configuratie
 
-Aangezien geheimen niet in code moeten worden opgeslagen, kunnen de gebruikersnaam en het wachtwoord van de SQL-verbinding het beste via [geheime OSGi configuratievariabelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), instellen met de API&#39;s van AIO CLI of Cloud Manager.
+Aangezien de geheimen niet in code moeten worden opgeslagen, zijn de SQL gebruikersbenaming en het wachtwoord van de verbinding best verstrekt via [ geheime OSGi configuratievariabelen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), plaats gebruikend AIO CLI, of Cloud Manager APIs.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 
@@ -54,7 +54,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Codevoorbeeld
 
-Dit Java™-codevoorbeeld is van een OSGi-service die een verbinding maakt met een externe SQL Server-webserver via de volgende Cloud Manager `portForwards` van de [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) -bewerking.
+Dit Java™ codevoorbeeld is van de dienst OSGi die een verbinding met een externe SQL serverWebserver, als volgende Cloud Manager `portForwards` regel van de [ enableEnvironmentAdvancedNetworkingConfiguration ](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) verrichting maakt.
 
 ```json
 ...
@@ -151,11 +151,11 @@ public class MySqlExternalServiceImpl implements ExternalService {
 
 ## MySQL-stuurprogramma-afhankelijkheden
 
-AEM as a Cloud Service vereist vaak dat u Java™ databasestuurprogramma&#39;s aanbiedt ter ondersteuning van de verbindingen. De stuurprogramma&#39;s kunt u het beste bereiken door de OSGi-bundelartefacten met deze stuurprogramma&#39;s in te sluiten in het AEM-project via de `all` pakket.
+AEM as a Cloud Service vereist vaak dat u Java™ databasestuurprogramma&#39;s aanbiedt ter ondersteuning van de verbindingen. De stuurprogramma&#39;s kunt u het beste leveren door de OSGi-bundelartefacten met deze stuurprogramma&#39;s in te sluiten in het AEM project via het `all` -pakket.
 
 ### Reactor pom.xml
 
-De afhankelijkheid van het databasestuurprogramma in de reactor opnemen `pom.xml` en verwijst u naar de `all` subprojecten.
+Neem de afhankelijkheden van het databasestuurprogramma op in de reactor `pom.xml` en verwijs deze naar de subprojecten van `all` .
 
 + `pom.xml`
 
@@ -177,7 +177,7 @@ De afhankelijkheid van het databasestuurprogramma in de reactor opnemen `pom.xml
 
 ## Alle pom.xml
 
-Sluit de afhankelijkheidsartefacten van het databasestuurprogramma in de `all` het pakket aan hen wordt opgesteld en beschikbaar op AEM as a Cloud Service. Deze artefacten __moet__ zijn OSGi-bundels die de Java™-klasse van het databasestuurprogramma exporteren.
+Sluit de afhankelijkheidsartefacten van het databasestuurprogramma in het `all` -pakket in zodat deze kunnen worden geïmplementeerd en beschikbaar zijn op AEM as a Cloud Service. Deze artefacten __moeten__ bundels OSGi zijn die de klasse van Java™ van de gegevensbestandbestuurder uitvoeren.
 
 + `all/pom.xml`
 

@@ -40,7 +40,7 @@ Om aan het gebruiksgeval te voldoen, werd een douane verzend dienst gecreeerd om
 }
 ```
 
-Het element _**contractkopie**_ vertegenwoordigt een bestandsbijlage en wordt gebruikt om bijlagen vast te leggen die met het formulier zijn ingediend.
+Het element _**contractexemplaar**_ vertegenwoordigt een component van de dossiergehechtheid en wordt gebruikt om gehechtheid te vangen die met de vorm wordt voorgelegd.
 Als u het adaptieve formulier vooraf wilt kunnen invullen met de gegevens en de bijlagen, worden de verzonden bijlagen opgeslagen in het Azure-portaal en wordt het gegevenselement van het contractkopieobject bijgewerkt met de URL van de opgeslagen bijlage.
 De aangepaste verzendservice extraheert en slaat de bijlagen op in het Azure-portaal.  De bijgewerkte ingediende gegevens zien er als volgt uit
 
@@ -66,7 +66,7 @@ De aangepaste verzendservice extraheert en slaat de bijlagen op in het Azure-por
 ```
 
 
-[Hier is de voorbeeldaangepaste verzendhandler voor op kerncomponenten gebaseerde adaptieve formulieren beschikbaar](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
+[ de steekproefdouane voorlegt manager voor kerncomponenten gebaseerde adaptieve vorm is hier beschikbaar ](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). De volgende aangepaste verzendmethode is geschreven voor het verzenden van het formulier
 
 ```java
 package com.azuredemo.core;

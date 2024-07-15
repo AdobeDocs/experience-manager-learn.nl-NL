@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Stappen om handmatig op te starten als de database niet werkt
 
-*Deze video doorloopt het proces om manueel te bootstrap als het gegevensbestand initialiseert niet werkt.*
+*Deze video loopt door het proces om manueel te laarzen als het gegevensbestand initialiseert niet werkt.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335515?quality=12&learn=on)

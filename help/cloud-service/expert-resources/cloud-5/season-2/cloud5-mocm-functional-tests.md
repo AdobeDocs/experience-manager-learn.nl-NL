@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # Wolk 5 - Mysteries van Cloud Manager - Functionele tests
 
-AEM as a Cloud Service voltooit vele functionele tests door gebrek met uw toepassing die bovenop wordt gebouwd. Deze test heeft echter mogelijk niet betrekking op alle vereiste tests die u nodig hebt. Aangepaste functionele tests worden afgevuurd.
+AEM as a Cloud Service voert standaard veel functionele tests uit met uw toepassing die op de voorgrond is gebouwd. Deze test heeft echter mogelijk niet betrekking op alle vereiste tests die u nodig hebt. Aangepaste functionele tests worden afgevuurd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343624?quality=12&learn=on)
 
 ## Inhoud die in deze video wordt behandeld
 
-+ [Functionele tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
-+ [AEM Rooktests](https://github.com/adobe/aem-test-samples/)
-+ [Clients AEM testen](https://github.com/adobe/aem-testing-clients/)
++ [ Functioneel het Testen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
++ [ AEM de Tests van de Rook ](https://github.com/adobe/aem-test-samples/)
++ [ AEM het testen van Cliënten ](https://github.com/adobe/aem-testing-clients/)

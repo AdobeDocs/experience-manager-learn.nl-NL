@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Registratie van extensies
 
-AEM UI-extensies zijn gespecialiseerde App Builder-apps, gebaseerd op React en gebruiken de extensies [Spectrum reageren](https://react-spectrum.adobe.com/react-spectrum/) UI-framework.
+AEM de uitbreidingen UI zijn gespecialiseerde toepassing van App Builder, die op React wordt gebaseerd en het [ React Spectrum ](https://react-spectrum.adobe.com/react-spectrum/) kader UI gebruikt.
 
-Om te bepalen waar en hoe de AEM UI uitbreiding verschijnt, worden twee configuraties vereist in App Builder app van de uitbreiding: app het verpletteren en de uitbreidingsregistratie.
+Om te bepalen waar en hoe de AEM UI-extensie wordt weergegeven, zijn twee configuraties vereist in de App Builder-app van de extensie: toepassingsroutering en de registratie van de extensie.
 
 ## Toepassingsroutes{#app-routes}
 
-De extensies `App.js` declareert de [Reageren router](https://reactrouter.com/en/main) dat een indexroute omvat die de uitbreiding in AEM UI registreert.
+De uitbreiding `App.js` verklaart de [ React router ](https://reactrouter.com/en/main) die een indexroute omvat die de uitbreiding in AEM UI registreert.
 
 De indexroute wordt aangehaald wanneer AEM UI aanvankelijk laadt, en het doel van deze route bepaalt hoe de uitbreiding in de console wordt blootgesteld.
 
@@ -53,15 +53,15 @@ function App(props) {
 
 ## Registratie van extensies
 
-`ExtensionRegistration.js` moet onmiddellijk via de indexroute van de uitbreiding worden geladen, en handelt het registratiepunt van de uitbreiding in werking.
+`ExtensionRegistration.js` moet onmiddellijk worden geladen via de indexroute van de extensie en moet het registratiepunt van de extensie gebruiken.
 
-Gebaseerd op de geselecteerde AEM UI-extensiesjabloon wanneer [initialiseren App Builder-app-extensie](./app-initialization.md), worden verschillende extensiepunten ondersteund.
+Gebaseerd op het AEM UI die uitbreidingsmalplaatje wordt geselecteerd wanneer [ de App Builder app uitbreiding ](./app-initialization.md) initialiseert, worden de verschillende uitbreidingspunten gesteund.
 
 + [UI-extensiepunten voor inhoudsfragmenten](./content-fragments/overview.md#extension-points)
 
 ## Extensies voorwaardelijk opnemen
 
-AEM UI-extensies kunnen aangepaste logica uitvoeren om de AEM omgevingen waarin de extensie wordt weergegeven, te beperken. Deze controle wordt uitgevoerd vóór de `register` oproepen in `ExtensionRegistration` en wordt onmiddellijk geretourneerd als de extensie niet moet worden weergegeven.
+AEM UI-extensies kunnen aangepaste logica uitvoeren om de AEM omgevingen waarin de extensie wordt weergegeven, te beperken. Deze controle wordt uitgevoerd vóór de `register` -aanroep in de `ExtensionRegistration` -component en wordt onmiddellijk geretourneerd als de extensie niet moet worden weergegeven.
 
 Voor deze controle is een beperkte context beschikbaar:
 
@@ -70,12 +70,12 @@ Voor deze controle is een beperkte context beschikbaar:
 
 De meest gebruikte controles voor het laden van een extensie zijn:
 
-+ De AEM host (`new URLSearchParams(window.location.search).get('repo')`) om te bepalen of de extensie moet worden geladen.
++ Het gebruiken van de AEM (`new URLSearchParams(window.location.search).get('repo')`) om te bepalen als de uitbreiding zou moeten laden.
    + Alleen de extensie weergeven in AEM omgevingen die deel uitmaken van een specifiek programma (zoals in het onderstaande voorbeeld wordt getoond).
    + Alleen de extensie weergeven in een specifieke AEM (AEM host).
-+ Een [Adobe I/O Runtime-actie](./runtime-action.md) om een vraag van HTTP aan AEM te maken om te bepalen of de huidige gebruiker de uitbreiding zou moeten zien.
++ Gebruikend een [ actie van Adobe I/O Runtime ](./runtime-action.md) om een vraag van HTTP te maken om te AEM te bepalen als de huidige gebruiker de uitbreiding zou moeten zien.
 
-In het onderstaande voorbeeld ziet u hoe u de extensie beperkt tot alle omgevingen in het programma `p12345`.
+In het onderstaande voorbeeld ziet u hoe u de extensie beperkt tot alle omgevingen in het programma `p12345` .
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 

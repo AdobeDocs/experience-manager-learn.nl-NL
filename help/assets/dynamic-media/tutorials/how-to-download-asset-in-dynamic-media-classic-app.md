@@ -1,5 +1,5 @@
 ---
-title: Middelen downloaden in AEM Dynamic Media Classic App
+title: Assets downloaden in AEM Dynamic Media Classic App
 description: Stappen om middelen te downloaden in Dynamic Media Classic App
 version: Cloud Service
 role: Developer
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Middelen downloaden in AEM Dynamic Media Classic App
+# Assets downloaden in AEM Dynamic Media Classic App
 
 Deze video doorloopt de stappen voor het downloaden van middelen in Dynamic Media Classic App.
 

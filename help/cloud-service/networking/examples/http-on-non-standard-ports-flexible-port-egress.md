@@ -1,6 +1,6 @@
 ---
 title: HTTP/HTTPS-verbindingen op niet-standaardpoorten voor flexibel poortcontact
-description: Leer hoe u HTTP/HTTPS-aanvragen kunt maken van AEM as a Cloud Service aan externe webservices die op niet-standaard poorten voor Flexible Port Egress worden uitgevoerd.
+description: Leer hoe u HTTP/HTTPS-aanvragen van AEM as a Cloud Service naar externe webservices kunt uitvoeren op niet-standaard poorten voor Flexible Port Egress.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -19,28 +19,28 @@ ht-degree: 0%
 
 # HTTP/HTTPS-verbindingen op niet-standaardpoorten voor flexibel poortcontact
 
-HTTP/HTTPS-verbindingen op niet-standaardpoorten (niet 80/443) moeten worden uitgebreid uit AEM as a Cloud Service, maar hebben geen speciale `portForwards` regels, en kan AEM geavanceerde voorzien van een netwerkengebruik `AEM_PROXY_HOST` en een gereserveerde proxypoort `AEM_HTTP_PROXY_PORT` of `AEM_HTTPS_PROXY_PORT` afhankelijk van is de bestemming HTTP/HTTPS is.
+HTTP/HTTPS-verbindingen op niet-standaardpoorten (niet 80/443) moeten vanuit AEM as a Cloud Service worden vernieuwd, maar ze hebben geen speciale `portForwards` -regels nodig en kunnen gebruikmaken van AEM geavanceerde netwerkfuncties `AEM_PROXY_HOST` en een gereserveerde proxypoort `AEM_HTTP_PROXY_PORT` of `AEM_HTTPS_PROXY_PORT` , afhankelijk van de bestemming is HTTP/HTTPS.
 
 ## Geavanceerde netwerkondersteuning
 
 Het volgende codevoorbeeld wordt gesteund door de volgende geavanceerde voorzien van een netwerkopties.
 
-Zorg ervoor dat de [passend](../advanced-networking.md#advanced-networking) de geavanceerde voorzien van een netwerkconfiguratie is opstelling voorafgaand aan het volgen van dit leerprogramma.
+Verzeker [ aangewezen ](../advanced-networking.md#advanced-networking) geavanceerde voorzien van een netwerkconfiguratie voorafgaand aan het volgen van dit leerprogramma is opstelling.
 
-| Geen geavanceerde netwerken | [Flexibele poortuitgang](../flexible-port-egress.md) | [IP-adres van specifiek egress](../dedicated-egress-ip-address.md) | [Virtueel privé netwerk](../vpn.md) |
+| Geen geavanceerde netwerken | [ Flexibele havenuitgang ](../flexible-port-egress.md) | [ Dedicated egress IP adres ](../dedicated-egress-ip-address.md) | [ Virtueel Privé Netwerk ](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✘ | ✘ |
 
 >[!CAUTION]
 >
-> Dit codevoorbeeld is alleen bedoeld voor [Flexibele poortuitgang](../flexible-port-egress.md). Een vergelijkbaar, maar ander codevoorbeeld is beschikbaar voor [HTTP/HTTPS-verbindingen op niet-standaardpoorten voor specifiek IP-adres en VPN](./http-dedicated-egress-ip-vpn.md).
+> Dit codevoorbeeld is slechts voor [ de Flexibele Groepen van de Haven ](../flexible-port-egress.md). Een gelijkaardig, maar verschillend codevoorbeeld is beschikbaar voor [ verbindingen HTTP/HTTPS op niet-standaardhavens voor het Specifieke IP van de Gastheer adres en VPN ](./http-dedicated-egress-ip-vpn.md).
 
 ## Codevoorbeeld
 
 Dit Java™ codevoorbeeld is van de dienst OSGi die in AEM as a Cloud Service kan lopen die een verbinding van HTTP met een externe Webserver op 8080 maakt. Verbindingen met HTTPS-webservers gebruiken de omgevingsvariabelen `AEM_PROXY_HOST` en `AEM_HTTPS_PROXY_PORT` (standaard `proxy.tunnel:3128` in AEM releases &lt; 6094).
 
 >[!NOTE]
-> Het wordt aanbevolen [Java™ 11 HTTP API&#39;s](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) worden gebruikt om HTTP/HTTPS-aanroepen vanuit AEM te maken.
+> Het wordt geadviseerd [ Java™ 11 HTTP APIs ](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) wordt gebruikt om HTTP/HTTPS vraag van AEM te maken.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

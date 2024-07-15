@@ -28,19 +28,19 @@ Leer hoe te om te laden, parameters tot paginaverzoek over te gaan, en een vraag
 
 ## Regel bij laden van pagina
 
-De gegevenslaag van de Cliënt van de Adobe is een gebeurtenis-gedreven gegevenslaag. Wanneer de gegevenslaag AEM pagina is geladen, wordt een gebeurtenis geactiveerd `cmp:show` . In de video worden de `tags Library Loaded` regel wordt aangeroepen via een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
+De gegevenslaag van de Cliënt van de Adobe is een gebeurtenis-gedreven gegevenslaag. Wanneer de gegevenslaag AEM pagina is geladen, wordt een gebeurtenis `cmp:show` geactiveerd. In de video wordt de regel `tags Library Loaded` aangeroepen met behulp van een aangepaste gebeurtenis. Hieronder vindt u de codefragmenten die worden gebruikt in de video voor de aangepaste gebeurtenis en voor de gegevenselementen.
 
 ### Aangepaste weergegeven pagina-gebeurtenis{#page-event}
 
-![Pagina weergegeven gebeurtenisconfiguratie en aangepaste code](assets/load-and-fire-target-call.png)
+![ Pagina getoonde gebeurtenisconfiguratie en douanecode ](assets/load-and-fire-target-call.png)
 
-Voeg een nieuwe eigenschap toe aan de eigenschap tags **Gebeurtenis** aan de **Regel**
+In het markeringsbezit, voeg een nieuwe **Gebeurtenis** aan de **Regel** toe
 
-+ __Extensie:__ Kern
-+ __Type gebeurtenis:__ Aangepaste code
-+ __Naam:__ Pagina weergeven, gebeurtenishandler (of iets beschrijends)
++ __Uitbreiding:__ Kern
++ __Type van Gebeurtenis:__ de Code van de Douane
++ __Naam:__ de Handler van de Gebeurtenis van de Show van de Pagina (of iets beschrijvend)
 
-Tik op de knop __Editor openen__ en plak in het volgende codefragment. Deze code __moet__ worden toegevoegd aan __Gebeurtenisconfiguratie__ en daarna __Handeling__.
+Tik de __Open knoop van de Redacteur__ en deeg in het volgende codefragment. Deze code __moet__ aan de __Configuratie van de Gebeurtenis__ en een verdere __Actie__ worden toegevoegd.
 
 ```javascript
 // Define the event handler function
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Een aangepaste functie definieert de `pageShownEventHandler`en luistert naar gebeurtenissen die door AEM Core Components worden uitgegeven, leidt de relevante informatie van de Component van de Kern af, verpakt het in een gebeurtenisvoorwerp, en brengt de gebeurtenissen van de markeringenGebeurtenis met de afgeleide gebeurtenisinfo bij zijn lading teweeg.
+Een douanefunctie bepaalt `pageShownEventHandler`, en luistert naar gebeurtenissen die door AEM Componenten van de Kern worden uitgegeven, leidt de relevante informatie tot de Component van de Kern af, verpakt het in een gebeurtenisvoorwerp, en brengt de etikettenGebeurtenis met de afgeleide gebeurtenisinfo bij zijn lading teweeg.
 
-De tagregel wordt geactiveerd via de tags `trigger(...)` functie die __alleen__ beschikbaar vanuit de definitie van het codefragment Aangepaste code van een regel.
+De markeringsregel wordt teweeggebracht gebruikend de functie van de markeringen `trigger(...)` die __slechts__ beschikbaar van binnen de de codefragmentdefinitie van de Code van de Gebeurtenis van een Regel is.
 
-De `trigger(...)` function neemt een gebeurtenisobject als een parameter die op zijn beurt weer wordt weergegeven in de labels Data Elements, door een andere gereserveerde naam in de tags genaamd `event`. Data Elements in tags kunnen nu verwijzen naar gegevens van dit gebeurtenisobject vanuit de `event` object gebruiken als syntaxis `event.component['someKey']`.
+De functie `trigger(...)` neemt een gebeurtenisobject als een parameter die op zijn beurt weer wordt weergegeven in de labels Data Elements, door een andere gereserveerde naam in de tags `event` . Data Elements in tags kunnen nu met behulp van syntaxis als `event.component['someKey']` verwijzen naar gegevens van dit gebeurtenisobject van het `event` -object.
 
-Indien `trigger(...)` wordt gebruikt buiten de context van het gebeurtenistype Aangepaste code van een gebeurtenis van het type van de Code van de Gebeurtenis (bijvoorbeeld, in een Actie), de fout JavaScript `trigger is undefined` wordt geworpen op de Website die met het markeringsbezit wordt geïntegreerd.
+Als `trigger(...)` buiten de context van het gebeurtenistype van de Code van de Douane van een Gebeurtenis (bijvoorbeeld, in een Actie) wordt gebruikt, wordt de fout van JavaScript `trigger is undefined` geworpen op de Website die met het markeringsbezit wordt geïntegreerd.
 
 
 ### Gegevenselementen
 
-![Gegevenselementen](assets/data-elements.png)
+![ Elementen van Gegevens ](assets/data-elements.png)
 
-Tags Data Elements koppelen de gegevens van het gebeurtenisobject [geactiveerd in de aangepaste gebeurtenis Page Shown](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van Gegevens van het Element van de Code van de uitbreiding van de Kern.
+De Elementen van de Gegevens van markeringen brengen de gegevens van het gebeurtenisvoorwerp [ in de douanePagina in kaart getoonde gebeurtenis ](#page-event) aan variabelen beschikbaar in Adobe Target, via het Type van het Element van de Gegevens van de Code van de uitbreiding van de Kern.
 
 #### Pagina-ID-gegevenselement
 
@@ -105,7 +105,7 @@ if (event && event.id) {
 
 Deze code retourneert de unieke id van de Core Component genereren.
 
-![Pagina-id](assets/pageid.png)
+![ identiteitskaart van de Pagina ](assets/pageid.png)
 
 ### Gegevenselement paginapad
 
@@ -117,7 +117,7 @@ if (event && event.component && event.component.hasOwnProperty('repo:path')) {
 
 Deze code retourneert het pad van de AEM pagina.
 
-![Paginapad](assets/pagepath.png)
+![ Pad van de Pagina ](assets/pagepath.png)
 
 ### Gegevenselement paginatitel
 
@@ -129,7 +129,7 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 
 Deze code retourneert de titel van de AEM pagina.
 
-![Paginatitel](assets/pagetitle.png)
+![ Titel van de Pagina ](assets/pagetitle.png)
 
 ## Problemen oplossen
 
@@ -137,7 +137,7 @@ Deze code retourneert de titel van de AEM pagina.
 
 #### Foutbericht wanneer cookie niet is ingesteld
 
-![Fout doelcookie](assets/target-cookie-error.png)
+![ Fout van het Domein van de Koekjestaal van het Doel ](assets/target-cookie-error.png)
 
 ```
 > AT: [page-init] Adobe Target content delivery is disabled. Ensure that you can save cookies to your current domain, there is no "mboxDisable" cookie and there is no "mboxDisable" parameter in the query string.
@@ -146,7 +146,7 @@ Deze code retourneert de titel van de AEM pagina.
 #### Oplossing
 
 Doelklanten gebruiken soms cloudgebaseerde instanties met Target voor testdoeleinden of eenvoudige concepttest. Deze domeinen, en vele anderen, maken deel uit van de Openbare Lijst van het Achtervoegsel.
-Moderne browsers slaan cookies niet op als u deze domeinen gebruikt, tenzij u de opties `cookieDomain` instellen met `targetGlobalSettings()`.
+In moderne browsers worden cookies niet opgeslagen als u deze domeinen gebruikt, tenzij u de instelling `cookieDomain` aanpast met `targetGlobalSettings()` .
 
 ```
 window.targetGlobalSettings = {  
@@ -160,7 +160,7 @@ window.targetGlobalSettings = {
 
 ## Ondersteunende koppelingen
 
-+ [Documentatie over de gegevenslaag van de client Adoben](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud-foutopsporing - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [Het gebruiken van de Laag van Gegevens van de Cliënt van de Adobe en de Documentatie van de Componenten van de Kern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
-+ [Inleiding tot het Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [ de Documentatie van de Laag van Gegevens van de Cliënt van de Adobe ](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [ Foutopsporing van Adobe Experience Cloud - Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [ Gebruikend de Laag van Gegevens van de Cliënt van de Adobe en de Documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
++ [ Inleiding aan het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

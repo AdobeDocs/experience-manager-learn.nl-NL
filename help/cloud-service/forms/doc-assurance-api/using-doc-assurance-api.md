@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Document Services
 topic: Development
 jira: KT-15508
-source-git-commit: 97fbe450823c6122a25dc46c851296094894683e
+exl-id: 40617082-4d23-4c91-a016-2d947187052b
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -17,17 +18,17 @@ ht-degree: 0%
 
 # DocAssurance API gebruiken
 
-De [DocAssurance-service](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) biedt de mogelijkheid om verschillende digitale handtekening- of coderingsbewerkingen uit te voeren met PDF-documenten, zoals ondertekenen, certificering, toevoeging van handtekeningvelden, versleuteling, decodering, enz.
-In dit artikel vindt u Java-codefragmenten waarmee u de API kunt gaan gebruiken. Het codefragment maakt gebruik van toegangstoken. [Dit artikel verklaart de stappen nodig om toegangstoken te produceren](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction)
+De [ dienst DocAssurance ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) verstrekt de capaciteit om diverse digitale handtekening of encryptieverrichtingen met de documenten van PDF uit te voeren, zoals het ondertekenen, certificatie, toevoeging van handtekeningsgebieden, encryptie, decryptie enz.
+In dit artikel vindt u Java-codefragmenten waarmee u de API kunt gaan gebruiken. Het codefragment maakt gebruik van toegangstoken. [ Dit artikel verklaart de stappen nodig om toegangstoken ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction) te produceren
 
 
-<span class="preview">Deze functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adopters en toegang tot deze functie aanvragen</span>
+<span class="preview"> Deze eigenschap is beschikbaar onder vroege adopterprogramma. U kunt aan aem-forms-ea@adobe.com van uw officiële e-mailidentiteitskaart schrijven om zich bij het vroege adopterprogramma aan te sluiten en toegang tot deze functionaliteit te verzoeken </span>
 
 
 ## Vereisten
 
 * Ervaring met AEM Forms Cloud Service
-* Ervaring met het gebruik [Apache HTTP Components](https://hc.apache.org/httpcomponents-client-4.5.x/)
+* Ervaring in het gebruiken van [ de Componenten van HTTP Apache ](https://hc.apache.org/httpcomponents-client-4.5.x/)
 * Toegang tot de omgeving van AEM Forms Cloud Service
 
 ## Inspect-document
@@ -157,4 +158,4 @@ if (response.getStatusLine().getStatusCode() == 200) {
 
 ### Postman-collectie
 
-Een Postman-verzameling van de API kan [hier gedownload voor testdoeleinden](assets/DocAssuranceAPI.postman_collection.json). U kunt Basisauthentificatie of het Symbolische type van Symbolische authentificatie gebruiken om API aan te halen.
+Een inzameling van Postman van API kan [ van hier voor het testen doeleinden ](assets/DocAssuranceAPI.postman_collection.json) worden gedownload. U kunt Basisauthentificatie of het Symbolische type van Symbolische authentificatie gebruiken om API aan te halen.

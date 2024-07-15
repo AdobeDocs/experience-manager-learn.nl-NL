@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Stappen om sleutelarchiefwachtwoord te coderen dat in lc_turnkey.xml moet worden gebruikt
 
-*Deze video doorloopt de stappen om het keystore-wachtwoord te coderen dat in lc_turnkey.xml moet worden gebruikt.*
+*Deze video loopt door de stappen om het wachtwoord van het Toetsenarchief te coderen dat in lc_turnkey.xml moet worden gebruikt.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335538?quality=12&learn=on)

@@ -19,23 +19,23 @@ ht-degree: 0%
 
 # Aangepaste functies
 
-AEM Forms 6.5 introduceerde de capaciteit om functies te bepalen JavaScript die in het bepalen van complexe bedrijfsregels kunnen worden gebruikt gebruikend de regelredacteur.
+AEM Forms 6.5 introduceerde de capaciteit om de functies van JavaScript te bepalen die in het bepalen van complexe bedrijfsregels kunnen worden gebruikt gebruikend de regelredacteur.
 AEM Forms biedt een aantal van dergelijke aangepaste functies uit de verpakking, maar u hebt de behoefte om uw eigen aangepaste functies te definiëren en deze in meerdere formulieren te gebruiken.
 
 Voer de volgende stappen uit om uw eerste aangepaste functie te definiëren:
-* [Aanmelden bij crx](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
+* [ Logboek in crx ](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
 * Een nieuwe map maken onder de apps met de naam Experience-League (deze mapnaam kan een naam naar keuze zijn)
 * Sla uw wijzigingen op.
 * Maak in de map Experience-League een nieuw knooppunt van het type cq:ClientLibraryFolder genaamd clientlibs.
 * Selecteer de map Clientlibs die u net hebt gemaakt en voeg de eigenschappen allowProxy en category toe, zoals weergegeven in de schermafbeelding, en sla uw wijzigingen op.
 
-![client-lib](assets/custom-functions.png)
-* Een map maken met de naam **js** onder de **clientlibs** map
-* Een bestand maken met de naam **functies.js** onder de **js** map
-* Een bestand maken met de naam **js.txt** onder de **clientlibs** map. Sla uw wijzigingen op.
+![ cliënt-lib ](assets/custom-functions.png)
+* Creeer een omslag genoemd **js** onder de **clientlibs** omslag
+* Creeer een dossier genoemd **functions.js** onder de **js** omslag
+* Creeer een dossier genoemd **js.txt** onder de **clientlibs** omslag. Sla uw wijzigingen op.
 * De mapstructuur moet eruitzien als de onderstaande schermafbeelding.
 
-![Regeleditor](assets/folder-structure.png)
+![ Redacteur van de Regel ](assets/folder-structure.png)
 
 * Dubbelklik op functions.js om de editor te openen.
 Kopieer de volgende code naar functions.js en sla uw wijzigingen op.
@@ -72,10 +72,10 @@ function convertUTC(strUTCString)
 }
 ```
 
-Gelieve [verwijzen naar jsdoc](https://jsdoc.app/index.html)voor meer informatie over het annoteren van javascript-functies.
+Gelieve te verwijzen [ naar jsdoc ](https://jsdoc.app/index.html) voor meer details bij het annoteren van functies javascript.
 De bovenstaande code heeft twee functies:
-**getCountyNamesList** - retourneert een array met tekenreeks
-**convertUTC** - UTC-tijdstempel converteren naar lokale tijdzone
+**getCountyNamesList** - keert een serie van koord terug
+**convertUTC** - zet UTC tijdstempel in lokale tijdzone om
 
 Open js.txt, plak de volgende code en sla uw wijzigingen op.
 
@@ -87,7 +87,7 @@ functions.js
 De regel #base=js geeft aan in welke map de JavaScript-bestanden zich bevinden.
 De onderstaande regels geven de locatie van het JavaScript-bestand aan ten opzichte van de basislocatie.
 
-Als u problemen hebt met het maken van aangepaste functies, kunt u [dit pakket downloaden en installeren](assets/custom-functions.zip) in uw AEM.
+Als u problemen in het creëren van de douanefuncties hebt, voel vrij om [ dit pakket ](assets/custom-functions.zip) in uw AEM instantie te downloaden en te installeren.
 
 ## De aangepaste functies gebruiken
 

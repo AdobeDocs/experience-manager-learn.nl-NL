@@ -1,6 +1,6 @@
 ---
 title: Slimme tags voor afbeeldingen met AEM Assets
-description: Slimme tags voor afbeeldingen vergroten AEM zoekmogelijkheden door automatisch en intelligent metagegevenstags toe te voegen aan afbeeldingselementen op basis van de inhoud van de afbeelding.
+description: Met slimme tags voor afbeeldingen wordt AEM zoekmogelijkheden uitgebreid doordat automatisch en op intelligente wijze metagegevenstags worden toegevoegd aan afbeeldingselementen op basis van de inhoud van de afbeelding.
 topic: Content Management
 feature: Smart Tags
 role: User
@@ -46,4 +46,4 @@ In de video worden de volgende taken beschreven die nodig zijn om de service Ado
 
 ## Aanvullende bronnen
 
-* [Documentatie over slimme AEM Assets-tags](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
+* [ de Slimme documentatie van Markeringen van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)

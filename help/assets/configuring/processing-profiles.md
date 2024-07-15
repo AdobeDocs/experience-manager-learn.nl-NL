@@ -1,6 +1,6 @@
 ---
 title: Profielen verwerken
-description: Met verwerkingsprofielen worden de uitvoeringen gedefinieerd die moeten worden gemaakt voor elementen in AEM as a Cloud Service.
+description: Met verwerkingsprofielen worden de uitvoeringen gedefinieerd die voor elementen in AEM as a Cloud Service moeten worden gemaakt.
 feature: Asset Compute Microservices
 version: Cloud Service
 jira: KT-4993
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Profielen verwerken
 
-Met verwerkingsprofielen worden de uitvoeringen gedefinieerd die moeten worden gemaakt voor elementen in AEM as a Cloud Service.
+Met verwerkingsprofielen worden de uitvoeringen gedefinieerd die voor elementen in AEM as a Cloud Service moeten worden gemaakt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35597?quality=12&learn=on)

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # De time-out UM-sessie verhogen
 
-*Deze video doorloopt het proces om sessieonderbreking UM te verhogen.*
+*Deze video loopt door het proces om sessieonderbreking UM te verhogen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335503?quality=12&learn=on)

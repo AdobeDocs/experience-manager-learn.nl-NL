@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Workbench-prestatieparameters afstemmen
 
-*Deze video doorloopt het proces om de prestatieparameters van Workbench aan te passen.*
+*Deze video loopt door het proces om de prestatieparameters van Workbench te tweken.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335511?quality=12&learn=on)

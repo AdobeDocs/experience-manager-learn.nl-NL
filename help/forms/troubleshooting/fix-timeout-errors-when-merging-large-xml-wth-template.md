@@ -30,16 +30,20 @@ Ga als volgt te werk om de bovenstaande fout op te lossen
 ## De time-out voor het bestand aries wijzigen
 
 * AEM server stoppen
-* Een map maken met de naam **installeren** onder de crx-quickstart-map van uw AEM-installatie
-* Een bestand maken met de naam **org.apache.aries.transaction.config** met de volgende inhoud aries.transaction.timeout=&quot;1200&quot; in de installatiemap. U kunt de time-outwaarde naar wens wijzigen. De time-outwaarde is in seconden
+* Creeer een omslag genoemd **installeer** onder de crx-quickstart omslag van uw AEM installatie
+* Creeer een dossier genoemd **org.apache.aries.transaction.config** met de volgende inhoud
+aries.transaction.timeout=&quot;1200&quot;
+onder installatiemap. U kunt de time-outwaarde naar wens wijzigen. De time-outwaarde is in seconden
 
 >[!NOTE]
-> Als u de configuratie org.apache.aries.transaction hebt gemaakt, kunt u de time-outwaarden voor de transactie bewerken vanuit het menu [configMgr](http://localhost:4502/system/console/configMgr) en niet het bestand bewerken
+> Zodra u de configuratie org.apache.aries.transaction creeert kunt u de waarden van de transactieduur uit [ configMgr ](http://localhost:4502/system/console/configMgr) in plaats van het uitgeven van het dossier uitgeven
 
 
 ## De instellingen van de Jacorb ORB-provider wijzigen
 
-* [Open OSGi ConfigMgr](http://localhost:4502/system/console/configMgr)
-* Zoeken naar **Jacorb ORB Provider**
-* Voeg de volgende ingang jacorb.connection.client.pending_response_timeout=600000 toe Bovenstaand plaatsen plaatst de hangende reactieonderbreking (ook genoemd geworden, cliëntonderbreking CORBA) aan 600 seconden.
+* [ Open OSGi ConfigMgr ](http://localhost:4502/system/console/configMgr)
+* Onderzoek naar **Jacorb ORB Provider**
+* De volgende vermelding toevoegen
+jacorb.connection.client.pending_response_timeout=600000
+De bovenstaande instelling stelt de wachttijd voor de antwoordtime-out (ook wel CORBA-client-timeout genoemd) in op 600 seconden.
 * Uw wijzigingen opslaan

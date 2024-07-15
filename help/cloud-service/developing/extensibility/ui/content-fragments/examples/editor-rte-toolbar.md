@@ -25,36 +25,36 @@ Leer hoe u een aangepaste knop toevoegt aan de Rich Text Editor (RTE)-werkbalk i
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 
-U kunt aangepaste knoppen toevoegen aan de **RTE, werkbalk** in de Inhoudsfragmenteditor met behulp van de `rte` extensiepunt. In dit voorbeeld wordt getoond hoe u een aangepaste knop met de naam _Tip toevoegen_ aan de toolbar van RTE en wijzig de inhoud binnen RTE.
+De knopen van de douane kunnen aan de **toolbar van RTE** in de Redacteur van het Fragment van de Inhoud worden toegevoegd gebruikend het `rte` uitbreidingspunt. Dit voorbeeld toont hoe te om een douaneknoop toe te voegen genoemd _Uiteinde_ aan de toolbar van RTE en de inhoud binnen RTE te wijzigen.
 
-Gebruiken `rte` extensiepunt `getCustomButtons()` methode één of vele douaneknopen kan aan worden toegevoegd **RTE, werkbalk**. Het is ook mogelijk om standaardRTE knopen zoals toe te voegen of te verwijderen _Kopiëren, Plakken, Vet en Cursief_ gebruiken `getCoreButtons()` en `removeButtons)` respectievelijk methoden.
+Het gebruiken van `getCustomButtons()` methode van het 0} uitbreidingspunt van de uitbreiding één of vele douaneknopen kan aan de **toolbar van RTE** worden toegevoegd. `rte` Het is ook mogelijk om standaardRTE knopen zoals _Kopiëren, Deeg, Vet, en Cursief_ toe te voegen of te verwijderen gebruikend `getCoreButtons()` en `removeButtons)` methodes respectievelijk.
 
-In dit voorbeeld ziet u hoe u een gemarkeerde notitie of tip invoegt met behulp van aangepaste _Tip toevoegen_ werkbalkknop Voor de gemarkeerde notitie of de inhoud van het uiteinde wordt een speciale opmaak toegepast via HTML-elementen en de bijbehorende CSS-klassen. De inhoud en de HTML-code van de tijdelijke aanduiding worden ingevoegd met de `onClick()` callback-methode van de `getCustomButtons()`.
+Dit voorbeeld toont hoe te om een benadrukte nota of uiteinde op te nemen gebruikend douane _voeg de toolbarknoop van het Uiteinde_ toe. Voor de gemarkeerde notitie of de inhoud van het uiteinde wordt een speciale opmaak toegepast via HTML-elementen en de bijbehorende CSS-klassen. De inhoud en de HTML-code van de plaatsaanduiding worden ingevoegd met de callbackmethode `onClick()` van de `getCustomButtons()` .
 
 ## Extensiepunt
 
-In dit voorbeeld wordt het uitbreidingspunt uitgebreid `rte` om een aangepaste knop toe te voegen aan de RTE-werkbalk in de Inhoudsfragmenteditor.
+Dit voorbeeld breidt zich tot uitbreidingspunt `rte` uit om douaneknoop aan RTE toolbar in de Redacteur van het Fragment van de Inhoud toe te voegen.
 
 | AEM UI uitgebreid | Extensiepunt |
 | ------------------------ | --------------------- | 
-| [Inhoudsfragmenteditor](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Werkbalk RTF-editor](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
+| [ de Redacteur van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [ rijke Toolbar van de Redacteur van de Tekst ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
 ## Voorbeeldextensie
 
-In het volgende voorbeeld wordt een _Tip toevoegen_ douaneknoop in de toolbar van RTE. De klikactie neemt de placeholder tekst bij de huidige inlasteken positie in RTE op.
+Het volgende voorbeeld leidt tot _voegt de douaneknoop van het Uiteinde_ in RTE toolbar toe. De klikactie neemt de placeholder tekst bij de huidige inlasteken positie in RTE op.
 
 De code toont hoe te om de douaneknoop met een pictogram toe te voegen en de functie van de klikmanager te registreren.
 
 ### Registratie van extensies
 
-`ExtensionRegistration.js`, toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
+`ExtensionRegistration.js` , toegewezen aan de route index.html, is het ingangspunt voor de AEM uitbreiding en bepaalt:
 
-+ De definitie van de RTE toolbarknoop in `getCustomButtons()` functie met `id, tooltip and icon` kenmerken.
-+ De klikmanager voor de knoop, in `onClick()` functie.
-+ De functie click handler ontvangt de `state` object als een argument om de inhoud van de RTE op te halen in HTML- of tekstindeling. In dit voorbeeld wordt het echter niet gebruikt.
-+ De functie van de klikmanager keert een instructieserie terug. Deze array bevat een object met `type` en `value` kenmerken. Als u de inhoud wilt invoegen, `value` attributen HTML code fragment, the `type` het attribuut gebruikt `insertContent`. Als er een gebruiksgeval is om de inhoud te vervangen, gebruikt u de optie `replaceContent` type instructie.
++ De definitie van de RTE-werkbalkknop in de functie `getCustomButtons()` met `id, tooltip and icon` -kenmerken.
++ De klikmanager voor de knoop, in de `onClick()` functie.
++ De functie clickHandler ontvangt het `state` -object als een argument om de inhoud van RTE op te halen in HTML- of tekstindeling. In dit voorbeeld wordt het echter niet gebruikt.
++ De functie van de klikmanager keert een instructieserie terug. Deze array heeft een object met `type` - en `value` -kenmerken. Om de inhoud in te voegen, gebruikt het codefragment `value` attributes HTML, het kenmerk `type` de eigenschap `insertContent` . Als de inhoud door gebruik kan worden vervangen, gebruikt u het instructietype `replaceContent` .
 
-De `insertContent` value is a HTML string, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. De CSS-klassen `cmp-contentfragment__element-tip` gebruikt om de waarde weer te geven, worden niet gedefinieerd in de widget, maar geïmplementeerd op het web. Dit veld Inhoudsfragment wordt weergegeven.
+De `insertContent` -waarde is een HTML-tekenreeks, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>` . De CSS-klassen `cmp-contentfragment__element-tip` die worden gebruikt om de waarde weer te geven, zijn niet gedefinieerd in de widget, maar geïmplementeerd op het web. Dit veld Inhoudsfragment wordt weergegeven.
 
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`

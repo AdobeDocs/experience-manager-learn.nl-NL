@@ -1,6 +1,6 @@
 ---
 title: Assets Essentials voor provisioning
-description: Leer hoe u Assets Essentials kunt implementeren met gebruik van Cloud Manager en toegang voor gebruikers.
+description: Leer hoe u Assets Essentials kunt implementeren met Cloud Manager en toegang voor gebruikers kunt bieden.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Assets Essentials voor provisioning
 
-Leer hoe u Assets Essentials kunt implementeren met gebruik van Cloud Manager en toegang voor gebruikers.
+Leer hoe u Assets Essentials kunt implementeren met Cloud Manager en toegang voor gebruikers kunt bieden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335952?quality=12&learn=on)

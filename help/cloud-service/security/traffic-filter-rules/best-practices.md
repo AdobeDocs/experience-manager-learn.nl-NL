@@ -29,16 +29,16 @@ Leer geadviseerde beste praktijken voor de regels van de verkeersfilter, met inb
 
 - Om te bepalen welke regels voor uw organisatie aangewezen zijn, werk met uw veiligheidsteam samen.
 - Test altijd regels in Dev-omgevingen voordat u ze implementeert in werkgebied- en productieomgevingen.
-- Beginnen bij het declareren en valideren van regels altijd met `action` type `log` om ervoor te zorgen dat de regel geen legitiem verkeer blokkeert.
-- Voor bepaalde regels geldt de overgang van `log` tot `block` dient uitsluitend gebaseerd te zijn op een analyse van voldoende verkeer ter plaatse.
+- Wanneer u regels declareert en valideert, moet u altijd beginnen met `action` type `log` om te zorgen dat de regel het legitieme verkeer niet blokkeert.
+- Voor bepaalde regels moet de overgang van `log` naar `block` uitsluitend gebaseerd zijn op een analyse van voldoende siteverkeer.
 - Introduceer regels incrementeel, en overweeg het betrekken van uw testteams (QA, prestaties, penetratietests) in het proces.
-- De impact van regels regelmatig analyseren met behulp van de [dashboardgereedschap](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Afhankelijk van het verkeersvolume van uw site kan de analyse dagelijks, wekelijks of maandelijks worden uitgevoerd.
+- Analyseer regelmatig het effect van regels gebruikend het [ dashboard tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Afhankelijk van het verkeersvolume van uw site kan de analyse dagelijks, wekelijks of maandelijks worden uitgevoerd.
 - Om kwaadwillig verkeer te blokkeren dat u zich na de analyse kunt bewust zijn, voeg om het even welke extra regels toe. Bijvoorbeeld, bepaalde IPs die uw plaats hebben aangevallen.
 - Het creëren, de plaatsing, en de analyse van de regel zouden een lopend, herhalend proces moeten zijn. Het is geen eenmalige activiteit.
 
 ## Beste werkwijzen voor verkeersfilterregels
 
-Laat de hieronder regels van de verkeersfilter voor uw AEM project toe. De gewenste waarden voor `rateLimit` en `clientCountry` moeten worden bepaald in samenwerking met uw beveiligingsteam.
+Laat de hieronder regels van de verkeersfilter voor uw AEM project toe. De gewenste waarden voor de eigenschappen `rateLimit` en `clientCountry` moeten echter worden bepaald in samenwerking met uw beveiligingsteam.
 
 ```yaml
 kind: CDN
@@ -87,13 +87,13 @@ data:
 
 >[!WARNING]
 >
->Voor uw productiemilieu, werk met uw team van de Veiligheid van het Web samen om de aangewezen waarden voor te bepalen `rateLimit`
+>Voor uw productieomgeving werkt u samen met uw webbeveiligingsteam om de juiste waarden voor `rateLimit` te bepalen
 
 ## Aanbevolen procedures voor WAF-regels
 
 Zodra WAF vergunning en toegelaten voor uw programma wordt gegeven, verschijnen de vlaggen van WAF van het verkeer passende in grafieken en verzoeklogboeken, zelfs als u hen niet in een regel verklaarde. Zo, bent u zich altijd bewust van potentieel nieuw kwaadwillig verkeer en kan regels tot stand brengen zoals nodig. Bekijk de vlaggen van WAF die niet in de verklaarde regels worden weerspiegeld en denk na verklarend hen.
 
-Overweeg de WAF regels hieronder voor uw AEM project. De gewenste waarden voor `action` en `wafFlags` moet worden bepaald in samenwerking met uw beveiligingsteam.
+Overweeg de WAF regels hieronder voor uw AEM project. De gewenste waarden voor de eigenschappen `action` en `wafFlags` moeten echter worden bepaald in samenwerking met uw beveiligingsteam.
 
 ```yaml
 kind: CDN

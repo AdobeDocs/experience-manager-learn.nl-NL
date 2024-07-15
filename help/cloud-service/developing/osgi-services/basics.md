@@ -28,9 +28,9 @@ Leer de grondbeginselen van de dienstenontwikkeling OSGi, die omvatten:
 
 ## Bronnen
 
-+ [@Component JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
-+ [@ProviderType JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
-+ [@Version JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
++ [@Component JavaDocs ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
++ [@ProviderType JavaDocs ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/ProviderType.html)
++ [@Version JavaDocs ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/annotation/versioning/Version.html)
 
 ## Code
 
@@ -95,4 +95,4 @@ package com.adobe.aem.wknd.examples.core.adventures;
 import org.osgi.annotation.versioning.Version;
 ```
 
-Een `package-info.java` is vereist om andere bundels OSGi in AEM te verzekeren kan de OSGi de dienstinterface (of om het even welke klasse van Java) oplossen. Als de `package-info.java` ontbreekt, worden het Java-pakket en de bijbehorende Java-interfaces of -klassen niet geëxporteerd. Andere OSGi-bundels die proberen deze Java-interfaces of -klassen te importeren vanuit dit Java-pakket, zullen een fout maken met het bericht __Kan niet worden opgelost__ in AEM OSGi Bundle console.
+Het toevoegen van a `package-info.java` wordt vereist om andere bundels OSGi in AEM te verzekeren kan de OSGi de dienstinterface (of om het even welke klasse van Java) oplossen. Als `package-info.java` ontbreekt, worden het Java-pakket en de bijbehorende Java-interfaces of -klassen niet geëxporteerd. Andere bundels OSGi die proberen om deze interfaces of klassen van Java van dit pakket van Java in te voeren, zullen fout met het bericht __niet__ in AEM console van de Bundel worden opgelost OSGi.

@@ -23,7 +23,7 @@ Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren
 Relationele databases - MySQL, Microsoft SQL Server, IBM DB2 en Oracle RDBMS
 1. Gebruikersprofiel AEM
 1. RESTful-webservices
-1. SOAP-webservices
+1. SOAP webservices
 1. OData-diensten
 
 Deze video bespreekt een werkschema dat toont hoe AEM Forms met de Dynamica van Microsoft als achterste gegevensbron kan werken om interactieve, gepersonaliseerde mededelingen te leveren.

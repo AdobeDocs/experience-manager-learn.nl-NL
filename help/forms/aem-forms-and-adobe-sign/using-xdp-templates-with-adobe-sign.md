@@ -24,7 +24,7 @@ Bestaande XDP-sjablonen gebruiken met AEM Forms en de integratie Ondertekenen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39705?quality=12&learn=on)
 
-Elementen die betrekking hebben op deze video kunnen worden gedownload van de volgende koppelingen
+Assets voor deze video kan worden gedownload van de volgende koppelingen
 
 * [NDA-sjabloon](assets/nda-agreement-xdp-template.zip)
 * [Adaptief formulier](assets/nda-agreement-af-with-xdp-template.zip)

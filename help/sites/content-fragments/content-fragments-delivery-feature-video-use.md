@@ -22,17 +22,17 @@ Adobe Experience Manager (AEM) Content Fragments zijn tekstgebaseerde redactione
 
 Inhoudsfragmenten, onafhankelijk van de lay-out, kunnen direct in AEM Sites met Core Components worden gebruikt of kunnen zonder kop aan downstreamkanalen worden geleverd.
 
-Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmenten van de Inhoud. Details over het definiëren en [authoring Content Fragments can be found here](content-fragments-feature-video-use.md).
+Deze videoreeks behandelt de leveringsopties voor het gebruiken van de Fragmenten van de Inhoud. De details over het bepalen van en [ authoring de Fragments van de Inhoud kunnen hier ](content-fragments-feature-video-use.md) worden gevonden.
 
 1. Inhoudsfragmenten op webpagina&#39;s gebruiken
 2. Inhoudsfragmenten beschikbaar maken als JSON met AEM Content Services
-3. De HTTP-API voor middelen gebruiken
+3. De Assets HTTP-API gebruiken
 
 ## Inhoudsfragmenten op webpagina&#39;s gebruiken {#using-content-fragments-in-web-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
 
-Inhoudsfragmenten kunnen worden gebruikt op AEM Sites-pagina&#39;s of op een vergelijkbare manier op Experience Fragments, met behulp van de AEM WCM Core Components&#39; [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
+De Fragmenten van de inhoud kunnen op de pagina&#39;s van AEM Sites, of op een gelijkaardige manier, de Fragmenten van de Ervaring worden gebruikt, gebruikend de AEM componenten van de Kern WCM [ de component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
 
 Componenten van inhoudsfragmenten kunnen worden opgemaakt met AEM stijlsysteem om de inhoud zo nodig weer te geven.
 
@@ -42,18 +42,18 @@ Componenten van inhoudsfragmenten kunnen worden opgemaakt met AEM stijlsysteem o
 
 AEM Content Services vereenvoudigt het maken van AEM op pagina gebaseerde HTTP-eindpunten waarmee inhoud wordt weergegeven in een genormaliseerde JSON-indeling.
 
-In de bovenstaande video wordt het [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) om afzonderlijke inhoudsfragmenten zichtbaar te maken. De [Component lijst met inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) is een nieuwe component waarmee een auteur een query kan definiëren waarmee de pagina dynamisch wordt gevuld met een lijst met inhoudsfragmenten. De component Lijst met inhoudsfragmenten heeft de voorkeur wanneer meerdere inhoudsfragmenten moeten worden weergegeven.
+De bovenstaande video gebruikt de [ Component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) om individuele Fragmenten van de Inhoud bloot te stellen. De [ Component van de Lijst van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) is een nieuwe component die een auteur toestaat om een vraag te bepalen die dynamisch de pagina met een lijst van de Fragmenten van de Inhoud zal bevolken. De component Lijst met inhoudsfragmenten heeft de voorkeur wanneer meerdere inhoudsfragmenten moeten worden weergegeven.
 
-*Voorbeeld van JSON-nuttige last voor inhoudsservices:*\
-**[atleten.json](assets/athletes.json)**
+*Eind-punt JSON nuttige load van de Diensten van de Inhoud van het Voorbeeld:*\
+**[atletes.json](assets/athletes.json)**
 
-## De HTTP-API voor middelen gebruiken
+## De Assets HTTP-API gebruiken
 
 >[!VIDEO](https://video.tv.adobe.com/v/26390?quality=12&learn=on)
 
-Voor het eerst geïntroduceerd in AEM 6.5, wordt verbeterde ondersteuning voor Content Fragments met de middelen HTTP API. Op deze manier kunnen ontwikkelaars op eenvoudige wijze de bewerkingen Maken, Lezen, Bijwerken en Verwijderen (CRUD) uitvoeren op Content Fragments.
+Voor het eerst geïntroduceerd in AEM 6.5, wordt verbeterde ondersteuning voor Content Fragments met de Assets HTTP API. Op deze manier kunnen ontwikkelaars op eenvoudige wijze de bewerkingen Maken, Lezen, Bijwerken en Verwijderen (CRUD) uitvoeren op Content Fragments.
 
-*Voorbeeld POSTMAN-verzoeken:*
+*Verzoeken van POSTMAN van het Voorbeeld:*
 **[CRUD-CFM-API-We.Retail.postman_collection.json](assets/CRUD-CFM-API-We.Retail.postman_collection.json)**
 
 ## Welke leveringsmethode moet worden gebruikt
@@ -68,13 +68,13 @@ Er zijn twee opties om Content Fragment toegankelijk te maken als JSON voor onde
 
 1. Gebruik AEM Content Services en Proxy API-pagina&#39;s (Video #2) wanneer het hoofdgebruik bestaat uit het leveren van Content Fragments voor gebruik (alleen-lezen) door een kanaal van een andere fabrikant. Het Content Services-framework biedt meer flexibiliteit en opties voor de gegevens die worden vrijgegeven. Ontwikkelaars kunnen het Content Services-framework ook uitbreiden om de gegevens te vergroten en/of te verrijken.
 
-2. Gebruik de HTTP-API voor middelen (Video #3) wanneer het kanaal van een derde partij inhoudsfragmenten moet wijzigen en/of bijwerken. Doorgaans wordt inhoud van derden in een AEM-auteursomgeving opgenomen.
+2. Gebruik de Assets HTTP API (Video #3) wanneer het kanaal van de derde partij inhoudsfragmenten moet wijzigen en/of bijwerken. Doorgaans wordt inhoud van derden in een AEM-auteursomgeving opgenomen.
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inhoudsfragmenten ontwerpen](content-fragments-feature-video-use.md)
-* [AEM WCM Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [AEM WCM Core-inhoudsfragmentcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [ AEM de Componenten van de Kern WCM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ AEM de Component van het Fragment van de Inhoud van WCM Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 U kunt als volgt het pakket hieronder downloaden en installeren op een AEM 6.4+-instantie voor de uiteindelijke status van de videoreeks:\
-**[aem_demo_liquid-experienceContent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**
+**[aem_demo_liquid-ExperienceContent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

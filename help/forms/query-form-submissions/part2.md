@@ -30,9 +30,9 @@ Er is een aangepaste verzendhandler geschreven voor het verzenden van formuliere
 
 Het volgende schermschot toont u de blob indexmarkeringen in Azure portaal
 
-![blob-index-tags](assets/blob-index-tags.png)
+![ blob-index-markeringen ](assets/blob-index-tags.png)
 
-De aangepaste verzendcode bevindt zich in **_StoreFormDataWithBlobIndexTagsInAzure_** en de code voor het opslaan van en het terugwinnen van gegevens uit Azure is in de component **_SaveAndFetchFromAzure_**
+De douane legt code voor is in **_StoreFormDataWithBlobIndexTagsInAzure_** en de code voor het opslaan van en het terugwinnen van gegevens van Azure is in de component **_SaveAndFetchFromAzure_**
 
 ## Volgende stappen
 

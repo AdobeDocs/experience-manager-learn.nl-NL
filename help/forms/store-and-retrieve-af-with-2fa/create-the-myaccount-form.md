@@ -20,35 +20,35 @@ ht-degree: 0%
 
 # Het MyAccountForm maken
 
-Het formulier **MyAccountForm** wordt gebruikt om het gedeeltelijk ingevulde adaptieve formulier op te halen nadat de gebruiker de toepassings-id en het mobiele nummer dat aan de toepassings-id is gekoppeld, heeft geverifieerd.
+De vorm **MyAccountForm** wordt gebruikt om de gedeeltelijk voltooide adaptieve vorm terug te winnen nadat de gebruiker toepassings identiteitskaart en het mobiele aantal verbonden aan toepassings identiteitskaart heeft geverifieerd.
 
-![Mijn rekeningformulier](assets/6599.JPG)
+![ mijn rekeningsvorm ](assets/6599.JPG)
 
-Wanneer de gebruiker de toepassings-id invoert en op de knop **FetchApplication** wordt het mobiele nummer dat aan de toepassings-id is gekoppeld, opgehaald uit de database met de functie Ophalen van het formuliergegevensmodel.
+Wanneer de gebruiker toepassingsidentiteitskaart ingaat en de **knoop FetchApplication** klikt, wordt het mobiele aantal verbonden aan toepassingsidentiteitskaart opgehaald van het gegevensbestand gebruikend de Get verrichting van het model van vormgegevens.
 
-In dit formulier wordt gebruikgemaakt van de aanroep van de POST van het formuliergegevensmodel om het mobiele nummer te verifiëren met OTP. De verzendactie van het formulier wordt geactiveerd nadat het mobiele nummer met de volgende code is geverifieerd. De gebeurtenis click van de verzendknop met de naam **submitForm**.
+In dit formulier wordt gebruikgemaakt van de aanroep van de POST van het formuliergegevensmodel om het mobiele nummer te verifiëren met OTP. De verzendactie van het formulier wordt geactiveerd nadat het mobiele nummer met de volgende code is geverifieerd. Wij teweegbrengen de klikgebeurtenis van voorlegt genoemde knoop **submitForm**.
 
 >[!NOTE]
-> U moet de API-sleutel en de specifieke API-beveiligingswaarden opgeven voor uw [Nexmo](https://dashboard.nexmo.com/) account in de betreffende velden van het MyAccountForm
+> U zult API Sleutel en de API Geheime waarden specifiek voor uw [ Nexmo ](https://dashboard.nexmo.com/) rekening op de aangewezen gebieden van MyAccountForm moeten verstrekken
 
-![trigger-submit](assets/trigger-submit.JPG)
+![ trigger-submit ](assets/trigger-submit.JPG)
 
 
 
-Dit formulier is gekoppeld aan een aangepaste verzendactie waarmee de formulierverzending wordt doorgestuurd naar het servlet dat is geïnstalleerd op **/bin/renderaf**
+Dit formulier is gekoppeld aan een aangepaste verzendactie waarmee de formulierverzending wordt doorgestuurd naar het servlet dat op **/bin/renderaf** is gemonteerd.
 
 ```java
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/renderaf",null,null);
 ```
 
-De code in het servlet gemonteerd op **/bin/renderaf** stuurt de aanvraag door om de opslagbijlagen een adaptief formulier te geven dat vooraf is ingevuld met de opgeslagen gegevens.
+De code in servlet op **/bin/renderaf** door:sturen het verzoek om de storeafwithattachments aanpassende vorm terug te geven vooraf bevolkt met de bewaarde gegevens.
 
 
-* Het MyAccountForm kan [hier gedownload](assets/my-account-form.zip)
+* MyAccountForm kan [ van hier worden gedownload ](assets/my-account-form.zip)
 
-* Voorbeeldformulieren zijn gebaseerd op [aangepaste adaptieve formuliersjabloon](assets/custom-template-with-page-component.zip) die in AEM moeten worden geïmporteerd om de voorbeeldformulieren correct te kunnen weergeven.
+* De vormen van de steekproef zijn gebaseerd op [ douane adaptieve vormmalplaatje ](assets/custom-template-with-page-component.zip) dat in AEM voor de steekproefvormen moet worden ingevoerd om correct terug te geven.
 
-* [Aangepaste verzendhandler](assets/custom-submit-my-account-form.zip) die zijn gekoppeld aan het verzenden van het MyAccountForm-formulier, moet worden geïmporteerd in AEM.
+* [ Douane legt manager ](assets/custom-submit-my-account-form.zip) verbonden aan de voorlegging MyAccountForm moet in AEM worden ingevoerd.
 
 ## Volgende stappen
 

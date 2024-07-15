@@ -27,21 +27,21 @@ U ziet de syntaxis voor het invoegen van waarden voor formuliervelden in de e-ma
 
 Wanneer het adaptieve formulier wordt verzonden, ontvangt de ontvanger een e-mail.
 
-![SendEmail](assets/sendemailaction.gif)
+![ SendEmail ](assets/sendemailaction.gif)
 
 ## Benodigde configuraties {#configurations-needed}
 
-U moet de CQ-mailservice op de dag configureren. Dit kan worden gevormd door uw browser aan te wijzen [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+U moet de CQ-mailservice op de dag configureren. Dit kan worden gevormd door uw browser aan {de Manager van de Configuratie van 0} Felix ](http://localhost:4502/system/console/configMgr) te richten[
 
 In de schermafbeelding ziet u de configuratie-eigenschappen voor de Adobe-mailserver.
 
-![mailservice](assets/mailservice.png)
+![ mailservice ](assets/mailservice.png)
 
 Volg de onderstaande instructies om dit op uw server te proberen:
 
-* [Elementen importeren](assets/timeoffrequest.zip) gekoppeld aan dit artikel in AEM met de pakketmanager.
+* [ voer de activa ](assets/timeoffrequest.zip) verbonden aan dit artikel in AEM gebruikend de pakketmanager in.
 
-* Open de [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* Open [ TimeOffRequestForm ](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
 * Vul de gegevens in.Geef een geldig e-mailadres op in het veld E-mail.
 

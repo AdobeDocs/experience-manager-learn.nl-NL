@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Hoe te om netwerklogboeken/te gebruiken Hulpmiddelen te vangen
 
-*Deze video doorloopt de stappen om netwerklogboeken/te gebruiken Hulpmiddelen te vangen.*
+*Deze video loopt door de stappen om netwerklogboeken/te gebruiken Hulpmiddelen te vangen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335491?quality=12&learn=on)

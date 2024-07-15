@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # Elementen op uw systeem implementeren
 
-Implementeer de [overzicht-component](assets/summarize-component.zip).
+Stel [ samen vat-component ](assets/summarize-component.zip) op.
 
-[Het adaptieve voorbeeldformulier implementeren](assets/sample-adaptive-form.zip).
+[ stel de steekproef aanpassende vorm ](assets/sample-adaptive-form.zip) op.
 
-[Voorbeeldformulier bekijken](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
+[ voorproef de steekproefvorm ](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
 
-Vul de formuliervelden in en navigeer naar het overzichtsscherm door op het pictogram **next** om de formuliergegevens te bekijken. U kunt de formuliergegevens ook bewerken door op het potloodpictogram te klikken.
+Vul de vormgebieden in en navigeer aan het summiere scherm door de **volgende** knoop te klikken om de vormgegevens te zien. U kunt de formuliergegevens ook bewerken door op het potloodpictogram te klikken.

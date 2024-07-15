@@ -29,5 +29,5 @@ Leer hoe u basisbewerkingen voor paginabeheer uitvoert voor een Adobe Experience
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie over pagina-inhoud bewerken](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [ het uitgeven Documentatie van de Inhoud van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

@@ -1,6 +1,6 @@
 ---
 title: Een meertalig vertaalproject maken
-description: Leer hoe u een meertalig vertaalproject voor uw Taalkopie van AEM projectconsole maakt, bewerkt en beheert
+description: Leer hoe u een meertalig vertaalproject voor uw Taalkopie kunt maken, bewerken en beheren vanuit AEM projectconsole
 feature: Language Copy, Multi Site Manager
 doc-type: Feature Video
 version: 6.4, 6.5, Cloud Service
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Een meertalig vertaalproject maken {#create-multi-language-translation-projects}
 
-Leer hoe u een meertalig vertaalproject voor uw Taalkopie van AEM projectconsole maakt, bewerkt en beheert
+Leer hoe u een meertalig vertaalproject voor uw Taalkopie kunt maken, bewerken en beheren vanuit AEM projectconsole
 
 >[!VIDEO](https://video.tv.adobe.com/v/36485?quality=12&learn=on)

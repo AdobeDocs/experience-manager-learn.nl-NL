@@ -33,5 +33,5 @@ Adobe Experience Manager 6.4 herstelt de personalisatieworkflow tussen AEM en Ta
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie over fragmenten voor ervaring](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
+* [ de Documentatie van Fragmenten van de Ervaring ](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
 * [Beleidsfragmenten gebruiken](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

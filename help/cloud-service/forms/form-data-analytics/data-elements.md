@@ -24,14 +24,14 @@ ht-degree: 0%
 
 In het bezit van Markeringen hebben wij twee nieuwe gegevenselementen (ApplicantsStateOfResidence en validationError) toegevoegd.
 
-![adaptieve vorm](assets/data_elements.png)
+![ adaptive-form ](assets/data_elements.png)
 
 ## Verzoekende partijStateOfResidence
 
-De **Verzoekende partijStateOfResidence** data element was gevormd door te selecteren **Kern** in de vervolgkeuzelijst met extensies en **Aangepaste code** voor het type gegevenselement, zoals hieronder weergegeven in het scherm
-![ingezetene van de verzoekende staat](assets/applicantstateofresidence.png)
+Het **ApplicationStateOfResidence** gegevenselement werd gevormd door **Kern** in de uitbreidingsdrop-down en **Douane Code** voor het Type van Element van Gegevens zoals aangetoond in het hieronder ontsproten scherm te selecteren
+![ aanvrager-staat-verblijf ](assets/applicantstateofresidence.png)
 
-De volgende aangepaste code is gebruikt om de waarde van de **_state_** adaptief formulierveld.
+De volgende douanecode werd gebruikt om de waarde van het **_staat_** adaptieve vormgebied te vangen.
 
 ```javascript
 // use the GuideBridge API to access adaptive form elements
@@ -43,11 +43,11 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-De **ValidationError** data element was gevormd door te selecteren **Kern** in de vervolgkeuzelijst met extensies en **Aangepaste code** voor het type gegevenselement, zoals hieronder weergegeven in het scherm
+Het **ValidationError** gegevenselement werd gevormd door **Kern** in de uitbreidingsdrop-down en **Douane Code** voor het Type van Element van Gegevens zoals aangetoond in het scherm hieronder ontsproten
 
-![validatiefout](assets/validation-error.png)
+![ bevestiging-fout ](assets/validation-error.png)
 
-De volgende aangepaste code is geschreven om de `validationError` waarde gegevenselement.
+De volgende aangepaste code is geschreven om de waarde van het gegevenselement `validationError` in te stellen.
 
 ```javascript
 var validationError = "";

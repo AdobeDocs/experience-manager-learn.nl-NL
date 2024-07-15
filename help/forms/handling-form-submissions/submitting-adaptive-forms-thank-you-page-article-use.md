@@ -28,15 +28,15 @@ Verzenden naar de eindpuntoptie REST geeft de gegevens die in het formulier zijn
 
 In de onderstaande schermafbeelding sturen we het adaptieve formulier om u te bedanken op de pagina /content/thankyou. Voor deze dankbetuigingen geven we 3 aanvraagkenmerken door die de waarden van de formuliervelden bevatten.
 
-![Bedankt, pagina](assets/thankyoupage.gif)
+![ Dank u pagina ](assets/thankyoupage.gif)
 
 U kunt ook naar het externe eindpunt verzenden via POST. Om dat te verwezenlijken, moet u enkel &quot;toelaten postverzoek&quot;checkbox en URL voor het externe eindpunt verstrekken. Wanneer u het formulier verzendt, wordt de pagina &quot;Bedankt&quot; weergegeven en wordt het eindpunt van de POST tegelijkertijd aangeroepen.
 
-![Vastlegconfiguratie](assets/capture.gif)
+![ Vastlegconfiguratie ](assets/capture.gif)
 
 Volg de onderstaande instructies om deze mogelijkheid op uw server te testen:
 
-* Het dialoogvenster Importeren [bestand met elementen dat aan dit artikel is gekoppeld, AEM met pakketbeheer](assets/submittingtorestendpoint.zip)
-* Wijs uw browser aan [Formulier voor time-out](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Invoer het [ activa dossier verbonden aan dit artikel in AEM gebruikend pakketmanager ](assets/submittingtorestendpoint.zip)
+* Punt uw browser aan de [ Tijd van de Vorm van het Verzoek ](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Vul het vereiste veld in en verzend het formulier
 * Je moet een pagina voor bedankt openen waarop je gegevens op de pagina zijn ingevuld

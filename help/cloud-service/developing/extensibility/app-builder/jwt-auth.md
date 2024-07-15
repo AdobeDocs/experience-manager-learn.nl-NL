@@ -1,6 +1,6 @@
 ---
 title: JWT-toegangstoken genereren in App Builder-actie
-description: Leer hoe te om een toegangstoken te produceren door geloofsbrieven te gebruiken JWT voor gebruik in een actie van de Bouwer van de App.
+description: Leer hoe u een toegangstoken genereert door JWT-referenties te gebruiken voor gebruik in een App Builder-handeling.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -19,22 +19,22 @@ ht-degree: 0%
 
 # JWT-toegangstoken genereren in App Builder-actie
 
-App Builder-acties moeten mogelijk communiceren met Adobe-API&#39;s die zijn gekoppeld aan Adobe Developer-consoleprojecten waaraan de App Builder-app is toegewezen.
+App Builder-acties moeten mogelijk communiceren met Adobe-API&#39;s die zijn gekoppeld aan Adobe Developer Console-projecten die de App Builder-app ook implementeert.
 
-Dit kan de actie van de Bouwer van de App vereisen om zijn eigen JWT toegangstoken te produceren verbonden aan het gewenste project van de Console van Adobe Developer.
+Dit kan de actie van App Builder vereisen om zijn eigen toegangstoken JWT verbonden aan het gewenste project van Adobe Developer Console te produceren.
 
 >[!IMPORTANT]
 >
-> Controleren [Beveiligingsdocumentatie van App Builder](https://developer.adobe.com/app-builder/docs/guides/security/) om te begrijpen wanneer het aangewezen is om toegangstokens tegenover het gebruiken van verstrekte toegangstokens te produceren.
+> Het overzicht [ de veiligheidsdocumentatie van App Builder ](https://developer.adobe.com/app-builder/docs/guides/security/) om te begrijpen wanneer het aangewezen is om toegangstokens tegenover het gebruiken van verstrekte toegangstokens te produceren.
 >
-> De aangepaste handeling moet mogelijk eigen beveiligingscontroles uitvoeren om ervoor te zorgen dat alleen toegestane gebruikers toegang hebben tot de handeling App Builder en de Adobe-services die eraan ten grondslag liggen.
+> De aangepaste actie moet mogelijk eigen beveiligingscontroles uitvoeren om ervoor te zorgen dat alleen gebruikers die toegang hebben tot de App Builder-actie en de Adobe-services die eraan ten grondslag liggen, toegang hebben tot deze actie.
 
 
 ## .env-bestand
 
-In het project App Builder `.env` voeg aangepaste sleutels toe voor elk van de JWT-referenties van het Adobe Developer Console-project. De JWT-referentiewaarden kunnen worden verkregen via het Adobe Developer Console-project __Credentials__ > __Serviceaccount (JWT)__ voor een bepaalde werkruimte.
+Voeg in het `.env` -bestand van het App Builder-project aangepaste sleutels toe voor elk van de JWT-referenties van het Adobe Developer Console-project. De geloofsbrieven JWT kunnen van de geloofsbrieven van het Adobe Developer Console-project __worden verkregen >__ Rekening van de Dienst (JWT) __voor een bepaalde werkruimte.__
 
-![Adobe Developer Console JWT Service Credentials](./assets/jwt-auth/jwt-credentials.png)
+![ Adobe Developer Console JWT de Credentials van de Dienst ](./assets/jwt-auth/jwt-credentials.png)
 
 ```
 ...
@@ -46,14 +46,14 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-De waarden voor `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, `JWT_IMS_ORG` kan rechtstreeks worden gekopieerd vanuit het JWT Credentials-scherm van het Adobe Developer Console-project.
+De waarden voor `JWT_CLIENT_ID` , `JWT_CLIENT_SECRET` , `JWT_TECHNICAL_ACCOUNT_ID` , `JWT_IMS_ORG` kunnen rechtstreeks worden gekopieerd vanuit het JWT Credentials-scherm van het Adobe Developer Console-project.
 
 ### Metaretten
 
-Bepaal de Adobe APIs en hun metareeksen de actie App Builder met interactie. Metatomen met komma-scheidingstekens weergeven in het dialoogvenster `JWT_METASCOPES` toets. Geldige metafoons worden vermeld in [JWT Metascope-documentatie van Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
+Bepaal de Adobe-API&#39;s en de bijbehorende metafoons met de App Builder-actie. U kunt metatomen met komma&#39;s als scheidingsteken weergeven in de `JWT_METASCOPES` -toets. De geldige metarealen zijn vermeld in [ JWT van de Adobe documentatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
 
 
-De volgende waarde kan bijvoorbeeld worden toegevoegd aan de `JWT_METASCOPES` in de `.env`:
+De volgende waarde kan bijvoorbeeld worden toegevoegd aan de `JWT_METASCOPES` -toets in de `.env` :
 
 ```
 ...
@@ -63,35 +63,35 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 
 ### Persoonlijke sleutel
 
-De `JWT_PRIVATE_KEY` moet speciaal zijn opgemaakt omdat het een native waarde van meerdere regels betreft, die niet wordt ondersteund in `.env` bestanden. De gemakkelijkste manier is om base64 de privé sleutel te coderen. Base64-codering van de persoonlijke sleutel (`-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----`) kunt u uitvoeren met de native gereedschappen die door het besturingssysteem worden geleverd.
+De `JWT_PRIVATE_KEY` moet speciaal zijn opgemaakt omdat deze een waarde met meerdere regels is. Deze waarde wordt niet ondersteund in `.env` -bestanden. De gemakkelijkste manier is om base64 de privé sleutel te coderen. Base64 die de privé sleutel (`-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----`) coderen kan worden gedaan gebruikend inheemse hulpmiddelen die door uw werkend systeem worden verstrekt.
 
 >[!BEGINTABS]
 
->[!TAB macOS]
+>[!TAB  macOS ]
 
 1. Openen `Terminal`
 1. De opdracht uitvoeren `base64 -i /path/to/private.key | pbcopy`
 1. De base64-uitvoer wordt automatisch gekopieerd naar het klembord
-1. Plakken in `.env` als waarde voor corresponderende sleutel
+1. Plakken in `.env` als waarde op corresponderende toets
 
->[!TAB Windows]
+>[!TAB  Vensters ]
 
 1. Openen `Command Prompt`
 1. De opdracht uitvoeren `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
 1. De opdracht uitvoeren `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
 1. De base64-uitvoer naar het klembord kopiëren
-1. Plakken in `.env` als waarde voor corresponderende sleutel
+1. Plakken in `.env` als waarde op corresponderende toets
 
->[!TAB Linux®]
+>[!TAB  Linux® ]
 
 1. Open terminal
 1. De opdracht uitvoeren `base64 private.key`
 1. De base64-uitvoer naar het klembord kopiëren
-1. Plakken in `.env` als waarde voor corresponderende sleutel
+1. Plakken in `.env` als waarde op corresponderende toets
 
 >[!ENDTABS]
 
-De volgende persoonlijke sleutel met base64-codering kan bijvoorbeeld worden toegevoegd aan de `JWT_PRIVATE_KEY` in de `.env`:
+De volgende privé-sleutel met base64-codering kan bijvoorbeeld worden toegevoegd aan de `JWT_PRIVATE_KEY` -toets in de `.env` :
 
 ```
 ...
@@ -100,7 +100,7 @@ JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 
 ## Invoer toewijzen
 
-Als de JWT-referentiewaarde is ingesteld in het dialoogvenster `.env` , moeten ze worden toegewezen aan invoer van de AppBuilder-actie zodat ze in de handeling zelf kunnen worden gelezen. Hiervoor voegt u items toe voor elke variabele in het dialoogvenster `ext.config.yaml` action `inputs` in het formaat: `PARAMS_INPUT_NAME: $ENV_KEY`.
+Als de JWT-referentie in het `.env` -bestand is ingesteld, moeten deze worden toegewezen aan invoer van de AppBuilder-actie zodat deze in de handeling zelf kan worden gelezen. Hiervoor voegt u items toe voor elke variabele in de `ext.config.yaml` handeling `inputs` in de notatie: `PARAMS_INPUT_NAME: $ENV_KEY` .
 
 Bijvoorbeeld:
 
@@ -131,12 +131,12 @@ runtimeManifest:
             final: true
 ```
 
-De toetsen die worden gedefinieerd onder `inputs` zijn beschikbaar op `params` object dat aan de handeling App Builder wordt geleverd.
+De sleutels die onder `inputs` worden gedefinieerd, zijn beschikbaar voor het `params` -object dat aan de App Builder-handeling wordt geleverd.
 
 
 ## JWT-referenties voor toegang tot token
 
-In de handeling App Builder zijn de JWT-gegevens beschikbaar in het dialoogvenster `params` object, en kan worden gebruikt door [`@adobe/jwt-auth`](https://www.npmjs.com/package/@adobe/jwt-auth) om een toegangstoken te produceren, dat beurtelings tot andere Adobe APIs en de diensten kan toegang hebben.
+In de actie van App Builder, zijn de geloofsbrieven JWT beschikbaar in het `params` voorwerp, en bruikbaar door [`@adobe/jwt-auth` ](https://www.npmjs.com/package/@adobe/jwt-auth) om een toegangstoken te produceren, die beurtelings tot andere Adobe APIs en de diensten kan toegang hebben.
 
 ```javascript
 const fetch = require("node-fetch");

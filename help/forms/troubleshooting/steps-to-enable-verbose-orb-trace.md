@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen om verbose ORB spoor toe te laten
 
-*Deze video loopt door de stappen om verbose spoor ORB toe te laten.*
+*Deze video loopt door de stappen om verboseORB spoor toe te laten.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335526?quality=12&learn=on)

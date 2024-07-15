@@ -23,13 +23,13 @@ Interactieve communicatie is nieuw voor AEM Forms 6.4. In dit document worden de
 
 ## Vereisten {#prerequistes}
 
-[Download en importeer het element dat aan deze zelfstudie is gerelateerd, in AEM met de pakketbeheer.](assets/gettingstartedassets.zip)Dit ZIP-bestand bevat afbeeldingen, documentfragmenten, gecontroleerde mapconfiguratie en lay-outbestand (xdp) als onderdeel van het middelenpakket
+[ Download en voer activa met betrekking tot dit leerprogramma in AEM gebruikend pakketmanager in.](assets/gettingstartedassets.zip) Dit ZIP dossier bevat beelden, documentfragmenten, gecontroleerde omslagconfiguratie en lay-outdossier (xdp) als deel van het middelenpakket
 
-[Download en decomprimeer dit bestand.](assets/warfileandswaggerfile.zip) Dit bestand bevat het bestand SampleRest.war dat moet worden geïmplementeerd op Tomcat- en swagger-bestand dat moet worden gebruikt voor het configureren van de gegevensbron.
+[ Download en unzip dit dossier.](assets/warfileandswaggerfile.zip) Dit bestand bevat het bestand SampleRest.war dat moet worden geïmplementeerd op Tomcat- en kwikgingbestand dat moet worden gebruikt voor het configureren van de gegevensbron.
 
 Na voltooiing van deze zelfstudie hebt u het volgende geleerd:
 
-* Gegevensbron maken
+* Source voor gegevens maken
 * Formuliergegevensmodel maken
 * Documentfragmenten maken
 * Tabellen en grafieken configureren

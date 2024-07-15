@@ -1,5 +1,5 @@
 ---
-title: Een Adobe Developer Console-project maken voor AEM uitbreidbaarheid van de gebruikersinterface
+title: Een Adobe Developer Console-project maken voor AEM UI-uitbreidbaarheid
 description: Leer hoe u een Adobe Developer Console-project maakt dat de toegang tot andere Adobe-services definieert en de implementaties ervan beheert.
 version: Cloud Service
 feature: Developer Tools
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Adobe Developer Console-project maken
 
-Maak een Adobe Developer Console-project waarin de toegang tot andere Adobe-services wordt gedefinieerd en waarin de implementaties worden beheerd.
+Maak een Adobe Developer Console-project dat de toegang tot andere Adobe-services definieert en de implementaties ervan beheert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412875?quality=12&learn=on)
 
@@ -30,4 +30,4 @@ Maak een Adobe Developer Console-project waarin de toegang tot andere Adobe-serv
 >
 > In de bovenstaande video ziet u hoe u een extensie van een Content Fragment Console gebruikt om het maken van Adobe Developer Console-projecten te illustreren. Nochtans, is het belangrijk om op te merken dat de behandelde concepten op alle AEM uitbreidingen kunnen worden toegepast UI.
 
-Zie de Adobe Developer documentatie voor een [gedetailleerd doorlopen van het maken van een Adobe Developer Console-project](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console).
+Zie de documentatie van Adobe Developer voor a [ gedetailleerde looppas-door van het creëren van een project van Adobe Developer Console ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console).

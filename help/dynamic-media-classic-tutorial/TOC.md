@@ -9,7 +9,7 @@ index: y
 source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 44%
+ht-degree: 41%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 44%
 
 + [Overzicht van Dynamic Media Classic](./overview.md)
 + [Workflow en voorvertoning van middelen](./main-workflow.md)
-+ [Bepaal de structuur van uw map en de naamgevingsconventie voor bestanden](./folder-structure-filenaming.md)
++ [Bepaal de structuur van uw map en de naamgevingsconventie voor uw bestand](./folder-structure-filenaming.md)
 + [Voorinstellingen afbeelding](./image-presets.md)
 + [Afbeeldings-, staal-, centrifuge- en gemengde-mediasets](./media-sets.md)
 + [Uitsnijden, Aangepaste afbeeldingen en Zoomdoelen](./crop-adjusted-zoom-targets.md)
 + [Inleiding tot basissjablonen](./basic-templates.md)
 + [Video-overzicht](./video-overview.md)
-+ [Smart Imaging](./smart-imaging.md)
++ [Slimme afbeeldingen](./smart-imaging.md)
 + [Waardevolle rapporten voor beheerders](./valuable-reports.md)

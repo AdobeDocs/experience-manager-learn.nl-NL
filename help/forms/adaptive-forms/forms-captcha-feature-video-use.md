@@ -22,7 +22,7 @@ Een CAPTCHA toevoegen en gebruiken met AEM Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
 
-*Deze video doorloopt het proces om een CAPTCHA aan een AEM AanpassingsVorm toe te voegen gebruikend zowel de ingebouwde AEM dienst CAPTCHA als de dienst van Google reCAPTCHA.*
+*Deze video loopt door het proces om een CAPTCHA aan een AEM Aangepaste Vorm toe te voegen gebruikend zowel de ingebouwde AEM dienst CAPTCHA evenals de dienst van Google reCAPTCHA.*
 
 >[!NOTE]
 >
@@ -30,11 +30,11 @@ Een CAPTCHA toevoegen en gebruiken met AEM Adaptive Forms.
 
 >[!NOTE]
 >
->**Volg de stappen om reCaptcha op een publicatieexemplaar te configureren**
+>**om reCaptcha op te vormen publiceer instantie gelieve de stappen te volgen**
 >
 >Vastleggen op auteurinstantie configureren
 >
->De Felix openen [webconsole](http://localhost:4502/system/console/bundles) op de auteurinstantie
+>open de Felix [ Webconsole ](http://localhost:4502/system/console/bundles) op de auteursinstantie
 >
 >zoeken naar com.adobe.granite.crypto.file bundle
 >
@@ -42,10 +42,10 @@ Een CAPTCHA toevoegen en gebruiken met AEM Adaptive Forms.
 >
 >Navigeer naar de bundel-id op het bestandssysteem op de auteurinstantie
 >
->* &lt;author-aem-install-dir>/crx-quickstart/launch/felix/bundle20/data
+>* &lt;schrijver-aem-install-dir>/crx-quickstart/launch/felix/bundle20/data
 * De HMAC- en hoofdbestanden kopiëren
 >
-Open de [felix-webconsole](http://localhost:4502/system/console/bundles) op uw publicatieexemplaar. Zoek naar com.adobe.granite.crypto.file bundle. De bundle-id noteren
+Open de [ felix Webconsole ](http://localhost:4502/system/console/bundles) op uw publiceer instantie. Zoek naar com.adobe.granite.crypto.file bundle. De bundle-id noteren
 >
 Navigeer naar de bundel-id in het bestandssysteem van uw publicatie-instantie
 >
@@ -57,4 +57,4 @@ Start AEM publicatieserver opnieuw
 
 ## Ondersteunende materialen {#supporting-materials}
 
-* [Google reCAPTCHA](https://www.google.com/recaptcha)
+* [ Google reCAPTCHA ](https://www.google.com/recaptcha)

@@ -23,14 +23,14 @@ ht-degree: 0%
 
 # AEM tags, aan een project gekoppelde mappen en mapmetagegevens
 
-![AEM Deskundigenreeks](./assets/banner.png)
+![ AEM de Reeks van Deskundigen ](./assets/banner.png)
 
 Leer hoe u AEM Tags kunt gebruiken voor elementen via Workfront-gegevens, hoe u projectgekoppelde mappen kunt instellen en gebruiken en hoe u Workfront-gegevens kunt gebruiken voor AEM metagegevensschema&#39;s voor mappen met elementen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_Deel drie van een [vier deskundigenreeksen voor onderdelen op de Workfront for Experience Manager Enhanced connector](./overview.md)_
+_Deel drie van a [ vier Deel deskundige reeksen op Workfront voor Experience Manager verbeterde schakelaar](./overview.md)_
 
 ## Correcties
 
-+ __@ 4:34 en 6:20__ AEM syntaxis van tags is onjuist. Videoweergaven `we-retail:apparel/footwear`. De juiste syntaxis is `["we-retail:apparel/footwear"]` of meer algemeen `["namespace:tag/childtag"]`.
++ __@ 4:34 en 6:20__ syntaxis AEM tags is onjuist. Video wordt weergegeven `we-retail:apparel/footwear`. De juiste syntaxis is `["we-retail:apparel/footwear"]` of meer in het algemeen `["namespace:tag/childtag"]` .

@@ -21,28 +21,28 @@ ht-degree: 0%
 
 AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 
-**Zoeken en registreren**: Met deze component kunt u formulieren weergeven vanuit de formulieropslagplaats naar uw portalpagina en configuratieopties voor het weergeven van formulieren op basis van opgegeven criteria.
+**Onderzoek &amp; van het Registreertoestel**: Deze component staat u toe om vormen van de vormenbewaarplaats op uw portalpagina een lijst te maken en verstrekt configuratieopties om van vormen een lijst te maken die op gespecificeerde criteria worden gebaseerd.
 
-**Concepten en verzendingen**: In de component Zoeken en opslaan worden formulieren weergegeven die door de auteur van Forms openbaar zijn gemaakt, maar in de component Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Deze component verstrekt gepersonaliseerde ervaring aan om het even welke aangemelde gebruiker.
+**Concepten &amp; Verzendingen**: Terwijl de component van het Onderzoek &amp; van het Registreertoestel vormen toont die door de auteur van Forms openbaar worden gemaakt, toont de componenten Concepten &amp; van Verzending vormen die als ontwerp voor de voltooiing later en ingediende vormen worden bewaard. Deze component verstrekt gepersonaliseerde ervaring aan om het even welke aangemelde gebruiker.
 
-**Koppeling**: Met deze component kunt u overal op de pagina een koppeling naar een formulier maken.
+**Verbinding**: Deze component staat u toe om een verbinding aan een vorm overal op de pagina tot stand te brengen.
 
 ## Forms Portal-componenten inschakelen
 
-Start IntelliJ en open het BankingApplication-project dat in het dialoogvenster [eerder.](./getting-started.md) De ui.apps->src->main->content->jcr_root->apps.bankingapplication->componenten uitbreiden
+Start IntelliJ en open het BankingApplication-project dat in de [ vroegere stap is gemaakt.](./getting-started.md) De ui.apps->src->main->content->jcr_root->apps.bankingapplication->componenten uitbreiden
 
 Als u een kerncomponent (inclusief de onderdelen van de out-of-the-box portal) wilt gebruiken op een Adobe Experience Manager-site (AEM), moet u een proxycomponent maken en deze inschakelen voor uw site.
 De nieuwe proxycomponent moet naar de uitpunt van de box form component verwijzen, zodat deze alles van de component overerft. Dit wordt gedaan door resourceSuperType in content.xml van de volmachtscomponent te veranderen. In content.xml geven we ook de titel en de componentgroep op.
 >[!NOTE]
 >
-> U kunt het resource super type voor elk van [deze componenten van hier](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/formsportal)
+> U kunt het middel super type voor elk van [ deze componenten van hier construeren ](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/formsportal)
 
 
 ### Concepten en verzendingen
 
-Kopie maken van een bestaande component (bijvoorbeeld `button`) en noemt het als _ontwerpdocumenten en opmerkingen_.
-![ontwerpdocumenten en opmerkingen](assets/forms-portal-components2.png)
-De inhoud in het dialoogvenster `.content.xml` met de volgende XML:
+Maak een exemplaar van een bestaande component (bijvoorbeeld `button`) en noem het als _concepten en voorlegging_.
+![ concepten en voorlegging ](assets/forms-portal-components2.png)
+Vervang de inhoud in de `.content.xml` door de volgende XML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -55,8 +55,8 @@ De inhoud in het dialoogvenster `.content.xml` met de volgende XML:
 
 ### Zoeken en registreren
 
-Een kopie van de knopcomponent maken en de naam ervan wijzigen in _zoekmachine_.
-De inhoud in het dialoogvenster `.content.xml` met de volgende XML:
+Maak een exemplaar van knoopcomponent en noem het aan _onderzoek andlister_ anders.
+Vervang de inhoud in de `.content.xml` door de volgende XML:
 
 
 ```xml
@@ -70,8 +70,8 @@ De inhoud in het dialoogvenster `.content.xml` met de volgende XML:
 
 ### Component koppelen
 
-Een kopie van de knopcomponent maken en de naam ervan wijzigen in _link_.
-De inhoud in het dialoogvenster `.content.xml` met de volgende XML:
+Maak een exemplaar van knoopcomponent en noem het aan _verbinding_ anders.
+Vervang de inhoud in de `.content.xml` door de volgende XML:
 
 
 ```xml

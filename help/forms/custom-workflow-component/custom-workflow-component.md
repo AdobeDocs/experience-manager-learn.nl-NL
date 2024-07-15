@@ -21,49 +21,50 @@ ht-degree: 0%
 Deze zelfstudie is bedoeld voor AEM Forms-klanten die een aangepaste workflowcomponent moeten maken. De workflowcomponent wordt geconfigureerd om de code uit te voeren die in de vorige stap is geschreven. De workflowcomponent kan procesargumenten voor de code opgeven. In dit artikel bekijken we de workflowcomponent die aan de code is gekoppeld.
 
 
-[De aangepaste workflowcomponent downloaden](assets/saveFiles.zip)
-De workflowcomponent importeren [gebruiken, pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
+[ Download de component van het douanewerkschema ](assets/saveFiles.zip)
+Invoer de werkschemacomponent [ gebruikend pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 
 De aangepaste workflowcomponent bevindt zich in /apps/AEMFormsDemoListings/workflowcomponent/SaveFiles
 
 Selecteer de knoop SaveFiles en onderzoek zijn eigenschappen
 
-**componentGroup** - De waarde van deze eigenschap bepaalt de categorie van de workflowcomponent.
+**componentGroup** - de waarde van dit bezit bepaalt de categorie van de werkschemacomponent.
 
-**jcr:Titel** - Dit is de titel van de workflowcomponent.
+**jcr:Titel** - dit is de titel van de werkschemacomponent.
 
-**sling:resourceSuperType** De waarde van deze eigenschap bepaalt de overerving van deze component. In dit geval nemen wij van de procescomponent over
+**sling:resourceSuperType** De waarde van dit bezit zal de overerving van deze component bepalen. In dit geval nemen wij van de procescomponent over
 
 
-![componenteigenschappen](assets/component-properties1.png)
+![ component-eigenschappen ](assets/component-properties1.png)
 
 ## cq:dialoogvenster
 
 Dialogen worden gebruikt om auteur toe te staan om met de component in wisselwerking te staan. De cq:dialog bevindt zich onder het knooppunt SaveFiles
-![cq-dialoog](assets/cq-dialog.png)
+![ cq-dialoog ](assets/cq-dialog.png)
 
 De knopen onder de puntenknoop vertegenwoordigen de lusjes van de component waardoor de auteurs met de component zullen communiceren. De algemene tabbladen en procestabbladen zijn verborgen. De tabbladen Algemeen en Argumenten zijn zichtbaar.
 
 De procesargumenten voor het proces bevinden zich onder het procesknooppunt
 
-![procesmarkeringen](assets/process-arguments.png)
+![ proces-args ](assets/process-arguments.png)
 
 De auteur specificeert de argumenten zoals aangetoond in het hieronder ontsproten scherm
-![workflowcomponent](assets/custom-workflow-component.png)
+![ werkschema-component ](assets/custom-workflow-component.png)
 
-De waarden worden opgeslagen als eigenschappen van het metagegevensknooppunt. De waarde **c:\formsattachments** wordt opgeslagen in de eigenschap saveToLocation van het metagegevensknooppunt
-![opslaglocatie](assets/save-to-location.png)
+De waarden worden opgeslagen als eigenschappen van het metagegevensknooppunt. Bijvoorbeeld de waarde **c:\formsattachments** zal in het bezit saveToLocation van de meta-gegevensknoop worden opgeslagen
+![ sparen-plaats ](assets/save-to-location.png)
 
 ## cq:editConfig
 
-De cq:EditConfig is eenvoudig een knoop met het primaire type cq:EditConfig en de naam cq:editConfig onder de componentenwortel het uitgeven gedrag van een component wordt gevormd door een knoop cq:editConfig van type cq:EditConfig onder de componentenknoop (van type cq:Component) toe te voegen
+Cq:EditConfig is eenvoudig een knoop met het primaire type cq:EditConfig en de naam cq:editConfig onder de componentenwortel
+Het bewerkingsgedrag van een component wordt geconfigureerd door een cq:editConfig-knooppunt van het type cq:EditConfig toe te voegen onder het componentknooppunt (van het type cq:Component)
 
-![bewerken-config](assets/cq-edit-config.png)
+![ geef-config uit ](assets/cq-edit-config.png)
 
 cq:formParameters (knooppunttype nt:unStructured): definieert aanvullende parameters die aan het dialoogvenster worden toegevoegd.
 
 
 De eigenschappen van het knooppunt cq:formParameters
-![from-parameters-properties](assets/form-parameters-properties.png)
+![ van-parameters-eigenschappen ](assets/form-parameters-properties.png)
 
 De waarde van de eigenschap PROCESS geeft de Java-code aan die aan de workflowcomponent wordt gekoppeld.

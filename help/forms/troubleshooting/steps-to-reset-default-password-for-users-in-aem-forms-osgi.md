@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Stappen om standaardwachtwoord voor admin in AEM Forms OSGi opnieuw in te stellen
 
-*Deze video doorloopt de stappen om standaardwachtwoord voor admin in AEM Forms OSGi terug te stellen.*
+*Deze video loopt door de stappen om standaardwachtwoord voor admin in AEM Forms OSGi terug te stellen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335542?quality=12&learn=on)

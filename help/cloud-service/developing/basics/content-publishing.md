@@ -1,6 +1,6 @@
 ---
 title: Hoe werkt het publiceren van inhoud in AEM as a Cloud Service?
-description: Onderzoek hoe de inhoud het publiceren in AEM as a Cloud Service werken, met inbegrip van concepten de Distributie van de Inhoud en de Pijpleiding van de Adobe.
+description: Onderzoek hoe de inhoud het publiceren in AEM as a Cloud Service werkt, met inbegrip van concepten van de Distributie van de Inhoud en de Pijpleiding van de Adobe.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Inhoud publiceren
 
-Onderzoek hoe de inhoud het publiceren in AEM as a Cloud Service werken, met inbegrip van concepten de Distributie van de Inhoud en de Pijpleiding van de Adobe.
+Onderzoek hoe de inhoud het publiceren in AEM as a Cloud Service werkt, met inbegrip van concepten van de Distributie van de Inhoud en de Pijpleiding van de Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330554?quality=12&learn=on)

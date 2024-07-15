@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Forms en Adobe Campaign Standard integreren
 
-![formsandcampagne](assets/helpx-cards-forms.png)
+![ formsandcampagne ](assets/helpx-cards-forms.png)
 
 Leer hoe u AEM Forms kunt integreren met Adobe Campaign Standard (ACS).
 
@@ -28,7 +28,7 @@ ACS heeft een rijke reeks blootgestelde API&#39;s die ACS om met de technologie 
 
 Om AEM Forms met ACS te integreren zult u de volgende stappen moeten volgen:
 
-* [Opstelling API toegang op uw instantie ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
+* [ de toegang van opstelling API op uw instantie ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
 * JSON-webtoken maken.
 * Uitwisseling de Token van het Web JSON met de Dienst van Adobe Identity Management voor een Token van de Toegang.
 * Neem dit toegangstoken op in HTTP-header voor autorisatie, samen met de X-API-sleutel in elke aanvraag voor een ACS-instantie.
@@ -36,11 +36,11 @@ Om AEM Forms met ACS te integreren zult u de volgende stappen moeten volgen:
 Volg de volgende instructies om aan de slag te gaan
 
 * [Download en decomprimeer de middelen die aan deze zelfstudie zijn gekoppeld.](assets/aem-forms-and-acs-bundles.zip)
-* De bundels implementeren met [Felix-webconsole](http://localhost:4502/system/console/bundles)
+* Stel de bundels op gebruikend [ het Webconsole van de Felix ](http://localhost:4502/system/console/bundles)
 * Geef de juiste instellingen op voor Adobe Campaign in Felix OSGI Configuration.
-* [Een servicegebruiker maken zoals vermeld in dit artikel](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Zorg ervoor om de bundel OSGi op te stellen verbonden aan het artikel.
+* [ creeer een de dienstgebruiker zoals vermeld in dit artikel ](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Zorg ervoor om de bundel OSGi op te stellen verbonden aan het artikel.
 * Sla de persoonlijke ACS-sleutel op in etc/key/campaign/private.key. U moet een map maken met de naam Campagne onder e.d./key.
-* [Leestoegang tot de campagnemap aan de de dienstgebruiker &quot;gegevens&quot;verlenen.](http://localhost:4502/useradmin)
+* [ verstrek gelezen toegang tot de campagnemap aan de de dienstgebruiker &quot;gegevens&quot;.](http://localhost:4502/useradmin)
 
 ## Volgende stappen
 

@@ -1,6 +1,6 @@
 ---
 title: Gebruik de Mening van de Kalender met AEM Projecten en Inbox
-description: AEM de Mening van de Kalender volgt projecten en taken in een kalendermening voor gemakkelijker projectbeheer en het plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
+description: AEM de Mening van de Kalender projecten en taken in een kalendermening volgt voor gemakkelijker projectbeheer en het plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
 version: 6.4, 6.5
 feature: Workflow, Projects
 doc-type: Feature Video
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Gebruik de Mening van de Kalender met AEM Projecten en Inbox
 
-AEM de Mening van de Kalender volgt projecten en taken in een kalendermening voor gemakkelijker projectbeheer en het plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
+AEM de Mening van de Kalender projecten en taken in een kalendermening volgt voor gemakkelijker projectbeheer en het plannen. In de kalenderweergave zou de gebruiker over het geheel genomen inzicht hebben in projecten en taken die momenteel in uitvoering zijn, gepland zijn en binnenkort en achterstallig zijn.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
 

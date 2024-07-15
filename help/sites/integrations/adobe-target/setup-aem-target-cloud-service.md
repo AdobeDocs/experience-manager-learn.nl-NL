@@ -21,12 +21,12 @@ ht-degree: 0%
 
 # Adobe Target Cloud Service-account maken {#adobe-target-cloud-service}
 
-In de volgende video wordt uitgelegd hoe u verbinding kunt maken AEM as a Cloud Service met Adobe Target.
+In de volgende video ziet u hoe u AEM as a Cloud Service kunt verbinden met Adobe Target.
 
-Dankzij deze integratie kan de AEM Auteur rechtstreeks communiceren met Adobe Target en kan de Experience Fragments van AEM naar Target worden gestuurd als aanbiedingen.  Deze integratie doet *niet* Voeg Adobe Target JavaScript (AT.js) toe aan AEM Sites-webpagina&#39;s, voor die integratie [AEM en tags met de extensie Doel](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
+Dankzij deze integratie kan de AEM Auteur rechtstreeks communiceren met Adobe Target en kan de Experience Fragments van AEM naar Target worden gestuurd als aanbiedingen.  Deze integratie voegt ** geen Adobe Target JavaScript (AT.js) aan de Web-pagina&#39;s van AEM Sites toe, voor dat integreert [ AEM en markeringen gebruikend de uitbreiding van het Doel ](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Er is een bekend probleem met de configuratie van Adobe Target-Cloud Servicen die in de video wordt weergegeven. Voer dezelfde stappen in de video uit totdat dit probleem is opgelost, maar gebruik de [configuratie van oudere Adobe Target-Cloud Servicen](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>Er is een bekend probleem met de configuratie van Adobe Target-Cloud Servicen die in de video wordt weergegeven. Tot dit probleem wordt opgelost, volg de zelfde stappen in de video maar gebruik de [ Cloud Servicen van erfenisAdobe Target configuratie ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).

@@ -1,6 +1,6 @@
 ---
 title: De SPA Editor gebruiken met AEM Sites
-description: AEM het Editor-framework voor één pagina biedt auteurs de mogelijkheid om inhoud te bewerken voor een toepassing of SPA voor één pagina. Ontwikkelaars die React-frameworks gebruiken, maken een SPA en wijzen vervolgens gebieden van de SPA toe aan AEM componenten, zodat auteurs vertrouwde AEM Sites-bewerkingsgereedschappen kunnen gebruiken.
+description: AEM toepassingseditorframework voor één pagina biedt auteurs de mogelijkheid om inhoud te bewerken voor een toepassing of SPA voor één pagina. Ontwikkelaars die React-frameworks gebruiken, maken een SPA en wijzen vervolgens gebieden van de SPA toe aan AEM componenten, zodat auteurs vertrouwde AEM Sites-bewerkingsgereedschappen kunnen gebruiken.
 version: 6.4, 6.5, Cloud Service
 topic: SPA
 feature: SPA Editor
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Video-overzicht van het ontwerpen van inhoud voor een toepassing voor één pagina in AEM Sites.
 
-AEM SPA Editor biedt auteurs de mogelijkheid om inhoud te bewerken voor een toepassing of SPA van één pagina. Ontwikkelaars die het React-framework gebruiken, maken een SPA en wijzen gebieden van de SPA vervolgens toe aan AEM componenten, zodat auteurs vertrouwde AEM Sites-bewerkingsgereedschappen kunnen gebruiken. In de onderstaande video ziet u een aantal van de functies voor contextbewerking van de WKND-SPA voorbeeldsite. Het WKND SPA project omvat zowel een React implementatie.
+AEM de SPA Editor biedt auteurs de mogelijkheid om inhoud te bewerken voor een toepassing of SPA van één pagina. Ontwikkelaars die het React-framework gebruiken, maken een SPA en wijzen gebieden van de SPA vervolgens toe aan AEM componenten, zodat auteurs vertrouwde AEM Sites-bewerkingsgereedschappen kunnen gebruiken. In de onderstaande video ziet u een aantal van de functies voor contextbewerking van de WKND-SPA voorbeeldsite. Het WKND SPA project omvat zowel een React implementatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
 
@@ -36,8 +36,8 @@ AEM SPA Editor biedt auteurs de mogelijkheid om inhoud te bewerken voor een toep
 
 De WKND SPA-implementatie biedt alleen ondersteuning voor AEM 6.4.8+, AEM 6.5.5+ en AEM as a Cloud Service.
 
-Download en installeer de juiste [WKND-SPA](https://github.com/adobe/aem-guides-wknd-spa/releases) op basis van uw versie van AEM. Er zijn verschillende versies voor **Reageren**.
+De download en installeert het aangewezen [ pakket van de SPA WKND ](https://github.com/adobe/aem-guides-wknd-spa/releases) dat op uw versie van AEM wordt gebaseerd. Er zijn afzonderlijke versies voor **Reageren**.
 
 Zie voor een gedetailleerde zelfstudie over het ontwikkelen met de SPA Editor:
 
-* [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [ Begonnen het Worden met de Redacteur van de SPA van de AEM en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)

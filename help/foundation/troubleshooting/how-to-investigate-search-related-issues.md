@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Hoe te onderzoek verwante kwesties in AEM onderzoeken
 
-*Deze video doorloopt de stappen om zoekgerelateerde problemen in AEM te onderzoeken.*
+*Deze video loopt door de stappen om onderzoek verwante kwesties in AEM te onderzoeken.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335467?quality=12&learn=on)

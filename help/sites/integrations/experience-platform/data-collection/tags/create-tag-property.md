@@ -30,58 +30,58 @@ Leer hoe te om een bezit van de Markering met de kale-minimumconfiguratie tot st
 
 Voer de volgende stappen uit om een eigenschap Tag te maken.
 
-1. Navigeer in de browser naar de knop [Adobe Experience Cloud Home](https://experience.adobe.com/) pagina en login die u Adobe ID gebruiken.
+1. In browser, navigeer aan het [ Huis van Adobe Experience Cloud ](https://experience.adobe.com/) pagina en login gebruikend u Adobe ID.
 
-1. Klik op de knop **Gegevensverzameling** van de _Snelle toegang_ van de startpagina van Adobe Experience Cloud.
+1. Klik de **toepassing van de Inzameling van 0} Gegevens van de _Snelle toegang_ sectie van de Homepage van Adobe Experience Cloud.**
 
-1. Klik op de knop **Tags** menu-item in de linkernavigatie en klik vervolgens op **Nieuwe eigenschap** in de rechterbovenhoek.
+1. Klik het **het menupunt van Markeringen** van de linkernavigatie, dan klik **Nieuw Bezit** van top-right hoek.
 
-1. Geef de eigenschap Tag een naam met de opdracht **Naam** vereist veld. Voer bij Domeinen uw domeinnaam in of voer AEM as a Cloud Service omgeving in `adobeaemcloud.com` en klik op **Opslaan**.
+1. Noem uw bezit van de Markering gebruikend het **Naam** vereiste gebied. Voor het gebied van Domeinen, ga uw domeinnaam in of als het gebruiken van het milieu van AEM as a Cloud Service `adobeaemcloud.com` ingaat en **sparen** klikt.
 
-   ![Eigenschappen van label](assets/tag-properties.png)
+   ![ Eigenschappen van de Markering ](assets/tag-properties.png)
 
 ## Een nieuwe regel maken
 
-Open de nieuwe eigenschap Tag door op de naam ervan te klikken in het dialoogvenster **Eigenschappen van label** weergeven. ook onder _Mijn recente activiteiten_ in de kop ziet u dat de Core-extensie eraan is toegevoegd. De extensie van de tag Core is de standaardextensie en biedt basisgebeurtenistypen zoals page-load, browser, formulier en andere gebeurtenistypen, zie [Overzicht van kernextensies](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html) voor meer informatie .
+Open het onlangs gecreeerde bezit van de Markering door zijn naam in de **mening van de Eigenschappen van de Markering** te klikken. Ook onder _Mijn Recente rubriek van de Activiteit_ zou u moeten zien dat de uitbreiding van de Kern aan het werd toegevoegd. De de markeringsuitbreiding van de Kern is de standaarduitbreiding en het verstrekt fundamentele gebeurtenistypen zoals pagina-lading, browser, vorm, en andere gebeurtenistypen, zie [ de uitbreidingsoverzicht van de Kern ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html) voor meer informatie.
 
 Met regels kunt u opgeven wat er moet gebeuren als de bezoeker communiceert met uw AEM site. Om dingen eenvoudig te houden, laten wij twee berichten aan de browser console registreren om aan te tonen hoe de integratie van de Markering van de gegevensverzameling JavaScript code in uw AEM plaats kan injecteren zonder AEM de code van het Project bij te werken.
 
 Voer de volgende stappen uit om een regel te maken.
 
-1. Klikken **Regels** van de _AUTHORING_ van de linkernavigatie en klik dan **Nieuwe regel maken**
+1. Klik **Regels** van de _AUTHORING_ sectie van de linkernavigatie en klik dan **creeer Nieuwe Regel**
 
-1. Noem uw regel gebruikend **Naam** vereist veld.
+1. Noem uw regel gebruikend het **Vereiste gebied van de Naam**.
 
-1. Klikken **Toevoegen** van de _EVENTS_ en vervolgens in de _Gebeurtenisconfiguratie_ in het **Type gebeurtenis** vervolgkeuzelijst selecteren _Bibliotheek geladen (pagina boven)_ en klik op **Wijzigingen behouden**.
+1. Klik **toevoegen** van de _GEBEURTENISSEN_ sectie, dan in de _vorm van de Configuratie van de Gebeurtenis_, in het **drop-down uitgezochte Type van Gebeurtenis** Bibliotheek 8} (de Boven van de Pagina) _optie en klik **houden Veranderingen**._
 
-1. Klikken **Toevoegen** van de _ACTIES_ en vervolgens in de _Configuratie van handelingen_ in het **Type handeling** vervolgkeuzelijst selecteren _Aangepaste code_ en klik op **Editor openen**.
+1. Klik **toevoegen** van de _sectie van Acties_, dan in de _Vorm van de Configuratie van de Actie_, in de **drop-down uitgezochte _optie van het Type van Actie_ en klik** Open Redacteur **.**
 
-1. In de _Code bewerken_ modal, voer het volgende JavaScript-codefragment in en klik op **Opslaan** en klik op **Wijzigingen behouden**.
+1. In _geef Code_ modaal uit, ga na het codefragment van JavaScript in, dan klik **sparen**, en klik definitief **houden Veranderingen**.
 
    ```javascript
    console.log('Tags Property loaded, all set for...');
    console.log('capabilities such as capturing data, conversion tracking and delivering unique and personalized experiences');
    ```
 
-1. Klikken **Opslaan** om het proces voor het maken van regels te voltooien.
+1. Klik **sparen** om het proces van de regelverwezenlijking te beëindigen.
 
-   ![Nieuwe regel](assets/new-rule.png)
+   ![ Nieuwe Regel ](assets/new-rule.png)
 
 ## Bibliotheek toevoegen en publiceren
 
-De eigenschap Tag _Regels_ worden geactiveerd met een bibliotheek. U kunt de bibliotheek zien als een pakket met JavaScript-code. Activeer de nieuwe regel door de stappen te volgen.
+Het bezit van de Markering _Regels_ wordt geactiveerd gebruikend een bibliotheek, denk aan de bibliotheek als pakket dat de code van JavaScript bevat. Activeer de nieuwe regel door de stappen te volgen.
 
-1. Klikken **Publishing Flow** van de _PUBLICEREN_ van de linkernavigatie en klik vervolgens op **Bibliotheek toevoegen**
+1. Klik **het Publiceren Stroom** van _PUBLICEREN_ sectie van de linkernavigatie, dan klik **toevoegen Bibliotheek**
 
-1. Geef uw bibliotheek een naam met de **Naam** veld en selecteer _Ontwikkeling (ontwikkeling)_ optie voor **Omgeving** vervolgkeuzelijst.
+1. Noem uw bibliotheek gebruikend het **gebied van de Naam 0} en selecteer _Ontwikkeling (ontwikkeling)_ optie voor** Milieu **dropdown.**
 
-1. Als u alle gewijzigde bronnen wilt selecteren sinds het maken van de eigenschap Tag, klikt u **+ Alle gewijzigde bronnen toevoegen**. Deze actie voegt de pas gecreëerde regel en de bron van de kernuitbreiding aan de bibliotheek toe. Klik op Tot slot **Opslaan en samenstellen tot ontwikkeling**.
+1. Als u alle gewijzigde bronnen wilt selecteren sinds het maken van de eigenschap Tag, klikt u op **+ Alle gewijzigde bronnen toevoegen** . Deze actie voegt de pas gecreëerde regel en de bron van de kernuitbreiding aan de bibliotheek toe. Tot slot klik **sparen &amp; bouwen aan Ontwikkeling**.
 
-1. Nadat de bibliotheek voor de **Ontwikkeling** swim lane, gebruiken _ovalen_ Selecteer de **Ter goedkeuring verzenden**
+1. Zodra de bibliotheek voor de **ontwikkeling** wordt gebouwd zwemweg, gebruikend _ellipsen_ selecteer **voorleggen voor Goedkeuring**
 
-1. Dan in **Verzonden** zwembaan met _ovalen_ Selecteer de **Goedkeuren voor publicatie**, eveneens **Samenstellen en publiceren naar productie** in de **Goedgekeurd** zwembaan.
+1. Dan in **Voorgelegde** zwemweg gebruikend _ellipsen_ selecteer **goedkeuren voor het Publiceren**, eveneens **Bouwstijl &amp; Publish aan Productie** in **Goedgekeurde** zwemweg.
 
-![Gepubliceerde bibliotheek](assets/published-library.png)
+![ Gepubliceerde bibliotheek ](assets/published-library.png)
 
 
 Met de bovenstaande stap wordt het maken van de eenvoudige eigenschap Tag met een regel voltooid voor het vastleggen van een bericht aan de browserconsole wanneer de pagina wordt geladen. De regel- en kernextensie worden ook gepubliceerd door een bibliotheek te maken.
@@ -93,4 +93,4 @@ Met de bovenstaande stap wordt het maken van de eenvoudige eigenschap Tag met ee
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Een eigenschap voor een tag maken](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)
+* [ creeer een Bezit van de Markering ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)

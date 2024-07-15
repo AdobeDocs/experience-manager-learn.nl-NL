@@ -1,6 +1,6 @@
 ---
 title: AEM Champion Tips en Tricks - Cloud Manager-omgevingstypen
-description: Lees deze tips over de omgevingstypen van Cloud Manager van AEM kampioen en expert, Rakesh Pasupuleti.
+description: Lees deze tips over Cloud Manager-omgevingstypen van AEM kampioen en expert, Rakesh Pasupuleti.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # AEM Champion Tips en Tricks - Cloud Manager-omgevingstypen
 
-Ontdek deze tips van uw technische collega, Rakesh Pasupuleti. Rakesh is een Adobe Experience Manager-kampioen en legt uit hoe u de omgevingstypen van Cloud Manager kunt begrijpen.
+Ontdek deze tips van uw technische collega, Rakesh Pasupuleti. Rakesh is een Adobe Experience Manager-kampioen en legt uit hoe u Cloud Manager-omgevingstypen kunt begrijpen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419297?quality=12&learn=on)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) - Documentatie over milieubeheer in AEM as a Cloud Service
-* [Snelle ontwikkelomgevingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html) - Documentatie over RDE&#39;s in AEM as a Cloud Service
+* [ het Leiden Milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) - Documentatie over milieubeheer in AEM as a Cloud Service
+* [ Snelle Milieu&#39;s van de Ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html) - Documentatie op RDEs in AEM as a Cloud Service

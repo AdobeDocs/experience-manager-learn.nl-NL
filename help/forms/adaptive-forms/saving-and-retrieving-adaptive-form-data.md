@@ -20,7 +20,7 @@ ht-degree: 0%
 
 In dit artikel worden de stappen beschreven die nodig zijn voor het opslaan en ophalen van adaptieve formuliergegevens uit de database. MySQL-database is gebruikt om de Adaptief-formuliergegevens op te slaan. Op hoog niveau zijn de volgende stappen om het gebruiksgeval te bereiken:
 
-* [Gegevensbron configureren](#Configure-Data-Source)
+* [Source van gegevens configureren](#Configure-Data-Source)
 * [Servlet maken om gegevens naar de database te schrijven](#create-servlet)
 * [OSGI-service maken om opgeslagen gegevens op te halen](#create-osgi-service)
 * [Clientbibliotheek maken](#create-client-library)
@@ -28,7 +28,7 @@ In dit artikel worden de stappen beschreven die nodig zijn voor het opslaan en o
 * [Capability Demonstratie](#capability-demo)
 * [Distribueren op uw server](#deploy-on-your-server)
 
-## Gegevensbron configureren {#Configure-Data-Source}
+## Source van gegevens configureren {#Configure-Data-Source}
 
 Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar de database die wordt gebruikt om de Adaptive Form-gegevens op te slaan. Het volgende schermafbeelding toont de configuratie voor mijn instantie. U kunt de volgende eigenschappen kopiëren en plakken
 
@@ -38,7 +38,7 @@ Apache Sling Connection Pooled DataSource is geconfigureerd om te verwijzen naar
 
 * `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
-![connectionpool](assets/storingdata.PNG)
+![ connectionpool ](assets/storingdata.PNG)
 
 ### Servlet maken {#create-servlet}
 

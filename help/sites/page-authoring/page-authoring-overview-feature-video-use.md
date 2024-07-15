@@ -40,12 +40,12 @@ In deze video worden de volgende mogelijkheden of functies behandeld:
 * Inhoud toevoegen aan een bestaande component
 * Een nieuwe component aan de pagina toevoegen
 * Pagina-eigenschappen
-   * Pagina publiceren
+   * Publish-pagina
    * Publicatie van pagina ongedaan maken
    * Sjabloon bewerken
    * Weergeven als gepubliceerd
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie over pagina-inhoud bewerken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [ het uitgeven Documentatie van de Inhoud van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
 * [Handleiding Snel aan de slag met de authoring van pagina&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

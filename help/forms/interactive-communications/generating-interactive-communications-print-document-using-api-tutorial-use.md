@@ -27,17 +27,17 @@ Wanneer u een bestand neerzet in de controlemap, wordt een script uitgevoerd dat
 
 Het bestand dat naar de gecontroleerde map is neergezet, heeft de volgende structuur. De code genereert instructies voor alle accountnummers die in het XML-document worden vermeld.
 
-&lt;accountnumbers>
+&lt;accountnummers>
 
-&lt;accountnumber>509840&lt;/accountnumber>
+&lt;accountnummer>509840&lt;/accountnummer>
 
-&lt;accountnumber>948576&lt;/accountnumber>
+&lt;accountnummer>948576&lt;/accountnummer>
 
-&lt;accountnumber>398762&lt;/accountnumber>
+&lt;accountnummer>398762&lt;/accountnummer>
 
-&lt;accountnumber>291723&lt;/accountnumber>
+&lt;accountnummer>291723&lt;/accountnummer>
 
-&lt;/accountnumbers>
+&lt;/accountnummers>
 
 In de onderstaande code ziet u het volgende:
 
@@ -57,7 +57,7 @@ Lijnen 39-40 - Slaat het geproduceerde document aan het dossiersysteem op.
 
 Het REST-eindpunt van het Form Data Model verwacht een id als invoerparameter. deze id wordt in kaart gebracht aan een Attribuut van het Verzoek genoemd accountnummer zoals aangetoond in het hieronder schroevingsschot.
 
-![requestAttribute](assets/requestattributeprintchannel.gif)
+![ requestAttribute ](assets/requestattributeprintchannel.gif)
 
 ```java
 var interactiveCommunicationsDocument = "/content/forms/af/retirementstatementprint/channels/print/";
@@ -107,11 +107,11 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 ```
 
 
-**Volg de onderstaande instructies om dit op uw lokale systeem te testen:**
+**om dit op uw lokaal systeem te testen gelieve de volgende instructies te volgen:**
 
-* Setup Tomcat zoals beschreven in deze [artikel.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat heeft het oorlogsdossier dat de steekproefgegevens produceert.
-* Service aka-systeemgebruiker instellen zoals beschreven in deze [artikel](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop heeft. Aanmelden voor machtigingen [gebruikersbeheerder](https://localhost:4502/useradmin) en zoek naar &quot;gegevens&quot; van de systeemgebruiker en geef de leesmachtigingen voor het volgende knooppunt door op het tabblad Machtigingen te klikken
+* Opstelling Tomcat zoals die in dit [ artikel wordt beschreven.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat heeft het oorlogsdossier dat de steekproefgegevens produceert.
+* De dienst van de opstelling alias systeemgebruiker zoals die in dit [ wordt beschreven artikel ](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop heeft. Om de toestemmingenlogin aan [ gebruiker te geven admin ](https://localhost:4502/useradmin) en onderzoek naar de systeemgebruiker &quot;gegevens&quot;en de gelezen toestemmingen op de volgende knoop te geven door aan het toestemmingenlusje van labels te voorzien
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
@@ -120,7 +120,7 @@ Zorg ervoor dat deze systeemgebruiker lees toestemmingen op de volgende knoop he
 
 * [Voorbeeld van interactief communicatiedocument](assets/retirementstatementprint.zip)
 * [Script voor gecontroleerde mappen](assets/printchanneldocumentusingwatchedfolder.zip)
-* [Configuratie gegevensbron](assets/datasource.zip)
+* [Source-configuratie van gegevens](assets/datasource.zip)
 
 * Open het bestand /etc/fd/watchfolder/scripts/PrintPDF.ecma. Zorg ervoor dat het pad naar het interactiveCommunicationsDocument in regel 1 naar het juiste document verwijst dat u wilt afdrukken
 

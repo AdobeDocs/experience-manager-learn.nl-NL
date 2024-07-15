@@ -21,31 +21,31 @@ ht-degree: 0%
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten.
 
-[Meer informatie over de API voor het genereren van batch](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
+[ Leer meer op de Generatie API van de Partij ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
 
 Dit artikel bevat voorbeeldelementen voor het genereren van interactieve communicatiedocumenten met de Batch-API.
 
 ## Batchgeneratie met gecontroleerde map
 
-* Het dialoogvenster Importeren [Interactieve communicatiesjabloon](assets/Beneficiaries-confirmation.zip) op uw AEM Forms-server.
-* Het dialoogvenster Importeren [gecontroleerde mapconfiguratie](assets/batch-generation-api.zip). Hiermee wordt een map gemaakt met de naam `batchAPI` in uw C-station.
+* Importeer het [ Interactieve Communicatie malplaatje ](assets/Beneficiaries-confirmation.zip) in uw server van AEM Forms.
+* Importeer de [ gecontroleerde omslagconfiguratie ](assets/batch-generation-api.zip). Hiermee maakt u een map met de naam `batchAPI` in het station C.
 
-**Als u AEM Forms uitvoert op een ander besturingssysteem dan Windows, voert u de volgende drie stappen uit:**
+**als u AEM Forms op niet-vensters werkend systeem in werking stelt, gelieve de 3 hieronder vermelde stappen te volgen:**
 
-1. [Gecontroleerde map openen](http://localhost:4502/libs/fd/core/WatchfolderUI/content/UI.html)
+1. [ Open gecontroleerde omslag ](http://localhost:4502/libs/fd/core/WatchfolderUI/content/UI.html)
 2. Selecteer BatchAPIWatchedFolder en klik uitgeven.
 3. Wijzig het pad zodat dit overeenkomt met uw besturingssysteem.
 
-![pad](assets/watched-folder-batch-api-basic.PNG)
+![ weg ](assets/watched-folder-batch-api-basic.PNG)
 
-* Inhoud van [zip-bestand](assets/jsonfile.zip). Het ZIP-bestand bevat een map met de naam `jsonfile` bevat `beneficiaries.json` bestand. Dit bestand bevat de gegevens die moeten worden gegenereerd in 3 documenten.
+* De download en haalt de inhoud van [ zip dossier ](assets/jsonfile.zip). Het ZIP-bestand bevat de map `jsonfile` die het `beneficiaries.json` -bestand bevat. Dit bestand bevat de gegevens die moeten worden gegenereerd in 3 documenten.
 
-* Zet de `jsonfile` in de invoermap van uw controlemap.
+* Zet de map `jsonfile` neer in de invoermap van de gecontroleerde map.
 * Als de map is opgepikt voor verwerking, controleert u de resultatenmap van de gecontroleerde map. Gegenereerde 3 PDF-bestanden bekijken
 
 ## Batchgeneratie met REST-verzoeken
 
-U kunt de [Batch-API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) via REST-verzoeken. U kunt REST-eindpunten voor andere toepassingen toegankelijk maken om de API aan te roepen om documenten te genereren.
+U kunt de [ Partij API ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) door REST verzoeken aanhalen. U kunt REST-eindpunten voor andere toepassingen toegankelijk maken om de API aan te roepen om documenten te genereren.
 De verstrekte steekproefactiva stellen REST eindpunt voor het produceren van Interactieve Communicatie documenten bloot. De servlet accepteert de volgende parameters:
 
 * fileName - Locatie van het gegevensbestand op het dossiersysteem.
@@ -55,12 +55,12 @@ De verstrekte steekproefactiva stellen REST eindpunt voor het produceren van Int
 * recordId - JSON-pad naar element om de naam van een interactieve communicatie in te stellen
 
 De volgende schermafbeelding toont de parameters en de bijbehorende waarden
-![voorbeeldverzoek](assets/generate-ic-batch-servlet.PNG)
+![ steekproefverzoek ](assets/generate-ic-batch-servlet.PNG)
 
 ## Stel steekproefactiva op uw server op
 
-* Importeren [ICTemplate](assets/ICTemplate.zip) gebruiken [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Importeren [Aangepast verzenden, handler](assets/BatchAPICustomSubmit.zip) gebruiken [pakketbeheer](http://localhost:4502/crx/packmgr/index.jsp)
-* Importeren [Adaptief formulier](assets/BatchGenerationAPIAF.zip) met de [Forms- en Document-interface](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Implementeren en starten [Aangepaste OSGI-bundel](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) gebruiken [Felix-webconsole](http://localhost:4502/system/console/bundles)
-* [Batchgeneratie activeren door het formulier te verzenden](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)
+* De invoer [ ICTemplate ](assets/ICTemplate.zip) gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+* De invoer [ Verzenden van de Douane manager ](assets/BatchAPICustomSubmit.zip) gebruikend [ pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+* De Invoer [ Aangepaste Vorm ](assets/BatchGenerationAPIAF.zip) gebruikend de [ interface van Forms en van het Document ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Stel en begin [ de bundel van Aangepaste OSGI ](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) op gebruikend [ de Webconsole van de Felix ](http://localhost:4502/system/console/bundles)
+* [ de Generatie van de Batch van de Trekker door de vorm ](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled) voor te leggen

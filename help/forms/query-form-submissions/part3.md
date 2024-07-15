@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Er is een eenvoudige query-interface gemaakt waarmee de beheerder zoekcriteria kan invoeren om bepaalde formulierverzendingen op te halen. De resultaten worden vervolgens weergegeven in een eenvoudige tabelindeling met de optie om een bepaald formulier te verzenden.
 
-![vragen](assets/query-submissions.png)
+![ vraag-voorlegging ](assets/query-submissions.png)
 
 De dropdowns in deze interface zijn trapsgewijs dropdown. De opties die beschikbaar zijn in het vervolgkeuzemenu worden gewijzigd op basis van de selecties die zijn gemaakt in het vorige vervolgkeuzemenu.
 

@@ -21,9 +21,10 @@ ht-degree: 0%
 OutputService biedt een aantal methoden om documenten te maken met behulp van een formulierontwerp en gegevens om samen te voegen met het formulierontwerp. In het volgende artikel wordt uitgelegd hoe u meerdere pdf&#39;s kunt genereren op basis van één groot XML-bestand met meerdere afzonderlijke records.
 Hier volgt een schermafbeelding van een XML-bestand dat meerdere records bevat.
 
-![multi-record-xml](assets/multi-record-xml.PNG)
+![ multi-record-xml ](assets/multi-record-xml.PNG)
 
-Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Dit XML-bestand wordt doorgegeven aan de OutputService [generatePDFOutputBatch, methode](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) er wordt een lijst met pdf-documenten weergegeven (één per record) De handtekening van de methode generatePDFOutputBatch heeft de volgende parameters
+Data xml heeft 2 records. Elke record wordt vertegenwoordigd door het form1-element. Dit xml wordt overgegaan tot de methode OutputService [ generatePDFOutputBatch ](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) wij krijgen lijst van pdf- documenten (één per verslag)
+Voor de handtekening van de methode generatePDFOutputBatch worden de volgende parameters gebruikt
 
 * sjablonen - kaart met de sjabloon, geïdentificeerd door een sleutel
 * data - Map met XML-gegevensdocumenten, geïdentificeerd door sleutel
@@ -126,13 +127,13 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen:
 
-* [ZIP-bestandsinhoud downloaden en uitpakken naar uw bestandssysteem](assets/mult-records-template-and-xml-file.zip).This zip file contains the template and xml data file.
-* [De browser naar de Felix-webconsole sturen](http://localhost:4502/system/console/bundles)
-* [DevelopingWithServiceUser Bundle implementeren](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* [Aangepaste AEMFormsDocumentServices-bundel implementeren](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Aangepaste bundel die de pdf&#39;s genereert met de OutputService-API
-* [De browser naar pakketbeheer verwijzen](http://localhost:4502/crx/packmgr/index.jsp)
-* [Het pakket importeren en installeren](assets/generate-multiple-pdf-from-xml.zip). Dit pakket bevat HTML-pagina waarmee u de sjabloon en gegevensbestanden kunt neerzetten.
-* [Wijs uw browser naar MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html?)
+* [ Download en extract zip dossierinhoud aan uw dossiersysteem ](assets/mult-records-template-and-xml-file.zip).Dit zip dossier bevat het malplaatje en het dossier van xmlgegevens.
+* [ Punt uw browser aan het Webconsole van Felix ](http://localhost:4502/system/console/bundles)
+* [ stelt DevelopingWithServiceUser Bundel ](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) op.
+* [ stelt de Bundel van AEMFormsDocumentServices van de Douane AEMForms ](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) op.De bundel van de Douane die pdf produceert gebruikend OutputService API
+* [ Punt uw browser aan pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
+* [ de Invoer en installeert het pakket ](assets/generate-multiple-pdf-from-xml.zip). Dit pakket bevat HTML-pagina waarmee u de sjabloon en gegevensbestanden kunt neerzetten.
+* [ Punt uw browser aan MultiRecords.html ](http://localhost:4502/content/DocumentServices/Multirecord.html?)
 * Sleep de sjabloon en het XML-gegevensbestand samen
 * Download het gemaakte zip-bestand. Dit ZIP-bestand bevat de PDF-bestanden die door de uitvoerservice zijn gegenereerd.
 

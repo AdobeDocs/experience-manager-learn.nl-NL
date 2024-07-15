@@ -27,18 +27,18 @@ Met bewerkbare sjablonen kunnen gespecialiseerde auteurs paginasjablonen maken e
 
 Bewerkbare sjablonen zijn de aanbevelingen voor het bouwen van nieuwe AEM Sites.
 
-**Consistente ontwerpervaring** - Verbeteringen in het ontwerpen van AEM Sites worden overgedragen naar Sjabloonbewerking, zoals de inline-modus en het deelvenster Inhoudsstructuur.
+**Consistente auteurservaring** - de Verbeteringen in het auteursrecht van AEM Sites worden overgebracht naar het uitgeven van het Malplaatje met inbegrip van de wijze van de Lay-out in line en het Comité van de Boom van de Inhoud.
 
-**Geavanceerde beleidsconfiguraties** - In het volgende voorbeeld worden enkele geavanceerde beleidsconfiguraties gemarkeerd die beschikbaar zijn gesteld met Bewerkbare sjablonen:
+**Geavanceerde configuraties van het Beleid** - de volgende hoogtepunten sommige geavanceerde beleidsconfiguraties die met Bewerkbare Malplaatjes beschikbaar worden gemaakt:
 
-* **Layout Container** - de mogelijkheid om toegestane componenten te configureren, de toewijzing Slepen + neerzetten van elementen en responsieve rasterkolommen te beheren.
-* **Tekstcomponent** - de capaciteit om de Insteekmodules van de Redacteur van de RTF met een nieuwe UI te vormen en het beleid van RTE over malplaatjes opnieuw te gebruiken.
-* **Afbeeldingscomponent** - de mogelijkheid om functies zoals uitsnijden, het uploaden van bestanden op het bureaublad in te schakelen of uit te schakelen met een nieuwe gebruikersinterface en het afbeeldingsbeleid te hergebruiken in sjablonen.
+* **de Container van de Lay-out** - capaciteit om Toegestane Componenten te vormen, belemmering te beheren + afbeelding van de Daling van Assets, en de Responsieve kolommen van het Net.
+* **Component van de Tekst** - capaciteit om de Insteekmodules van de Redacteur van de RTF met een nieuwe UI te vormen en het beleid van RTE over malplaatjes opnieuw te gebruiken.
+* **Component van het Beeld** - capaciteit om eigenschappen zoals het bebouwen, Desktop dossier-upload met een nieuwe UI aan te zetten/uit te zetten en het beleid van het Beeld over malplaatjes opnieuw te gebruiken.
 
-Bewerkbare sjablonen vindt u onder **Gereedschappen** `>` **Algemeen** `>` **Sjablonen**.\
-Bewerkbare URL voor sjablonen (lokale AEM): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+Bewerkbare Malplaatjes kunnen onder **Hulpmiddelen** worden gevonden `>` **Algemene** `>` **Malplaatjes**.\
+Editable Templates URL (lokale AEM instantie): [ http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf ](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Bewerkbare paginasjablonen - Documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
-* [Paginasjablonen maken - Documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
+* [ Bewerkbare Malplaatjes van de Pagina - Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+* [ Creërend de Malplaatjes van de Pagina - Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)

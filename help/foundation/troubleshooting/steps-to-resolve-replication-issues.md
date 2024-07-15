@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Stappen om replicatieproblemen in AEM op te lossen
 
-*Deze video doorloopt de stappen om replicatieproblemen in AEM op te lossen.*
+*Deze video loopt door de stappen om replicatiekwesties in AEM op te lossen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335471?quality=12&learn=on)

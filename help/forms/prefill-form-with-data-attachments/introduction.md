@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Inleiding
 
-In deze zelfstudie leert u hoe u een eenvoudig gebruiksgeval van prefilling implementeert **kerncomponent** gebaseerd formulier met ingediende gegevens en bijlagen.
+In dit leerprogramma, leert u hoe te om een eenvoudig gebruiksgeval uit te voeren van het prefilling **basiscomponent** gebaseerde vorm met voorgelegde gegevens en gehechtheid.
 
 ## Voorwaarden
 
@@ -30,7 +30,7 @@ In deze zelfstudie leert u hoe u een eenvoudig gebruiksgeval van prefilling impl
 Voor het implementeren van het bovenstaande gebruiksgeval in AEM Forms hebt u het volgende nodig
 
 * AEM Forms 6.5.19 of hoger
-* [Azure Portal-account](https://portal.azure.com/)
+* [ Azure poortrekening ](https://portal.azure.com/)
 
 
 ### Volgende stappen

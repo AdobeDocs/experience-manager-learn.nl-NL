@@ -1,5 +1,5 @@
 ---
-title: Hoe te om gebiedsdeelkwesties met C++ bibliotheken in Ontwerper problemen op te lossen
+title: Hoe te om gebiedsdeelkwesties met C++ bibliotheken in Designer problemen op te lossen
 description: De vereiste C++-bibliotheken voor Designer installeren
 type: Troubleshooting
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Hoe te om gebiedsdeelkwesties met C++ bibliotheken in Ontwerper problemen op te lossen
+# Hoe te om gebiedsdeelkwesties met C++ bibliotheken in Designer problemen op te lossen
 
-*Deze video doorloopt de stappen om afhankelijkheidsproblemen met C++ bibliotheken in Designer op te lossen.*
+*Deze video loopt door de stappen om gebiedsdeelkwesties met C++ bibliotheken in Designer problemen op te lossen.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335576?quality=12&learn=on)

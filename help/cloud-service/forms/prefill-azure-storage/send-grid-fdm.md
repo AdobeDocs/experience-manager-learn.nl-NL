@@ -27,8 +27,8 @@ We hebben de SendGrid-API gebruikt om e-mails te verzenden met behulp van een dy
 
 Voer de volgende stappen uit om de integratie tussen AEM Forms en SendGrid te maken
 
-* Een RESTful-gegevensbron maken met de [wagenbestand](./assets/SendGridWithDynamicTemplate.yaml). [Volg deze video voor gedetailleerde instructies](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) over het maken van gegevensbronnen in AEM Forms
-* Maak een formuliergegevensmodel op basis van de gegevensbron die u in de vorige stap hebt gemaakt.[Volg de gedetailleerde documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) op het maken van een formuliergegevensmodel.
+* Creeer een RESTful gegevensbron gebruikend het [ wagerdossier ](./assets/SendGridWithDynamicTemplate.yaml). [ volg deze video voor gedetailleerde instructies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) bij het creëren van gegevensbronnen in AEM Forms
+* Maak een formuliergegevensmodel op basis van de gegevensbron die u in de vorige stap hebt gemaakt.[ volg de gedetailleerde documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) bij het creëren van het Model van de Gegevens van de Vorm.
 
 Het formuliergegevensmodel dat voor deze zelfstudie is gemaakt, maakt deel uit van de artikelelementen.
 

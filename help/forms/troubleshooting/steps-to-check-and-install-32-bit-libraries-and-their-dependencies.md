@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Stappen om vereiste Microsoft Visual C++ redistributables met 32 bits te controleren en te installeren
 
-*Deze video doorloopt het proces om vereiste Microsoft Visual C++ redistributables met 32 bits te controleren en te installeren.*
+*Deze video loopt door het proces om het vereiste Microsoft Visual C++ redistributables met 32 bits te controleren en te installeren.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335520?quality=12&learn=on)

@@ -165,7 +165,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Volgend formulier ophalen om te ondertekenen
 
-De volgende code is gebruikt om het volgende formulier voor ondertekening voor een bepaalde customerID met de status 0 op te halen. Als de sql-query geen rijen retourneert, wordt de tekenreeks geretourneerd **&quot;AllDone&quot;** Dit geeft aan dat er geen formulieren meer zijn voor ondertekening voor de opgegeven id van de klant.
+De volgende code is gebruikt om het volgende formulier voor ondertekening voor een bepaalde customerID met de status 0 op te halen. Als sql de vraag geen rijen terugkeert keren wij het koord **&quot;AllDone&quot;** dat erop wijst dat er geen meer vormen voor het ondertekenen voor bepaalde klant identiteitskaart zijn.
 
 ```java
 @Override
@@ -205,7 +205,7 @@ public String getNextFormToSign(int customerID) {
 
 ## Assets
 
-De OSGi-bundel met bovengenoemde diensten kan [hier gedownload](assets/sign-multiple-forms.jar)
+De bundel OSGi met de bovengenoemde diensten kan [ van hier worden gedownload ](assets/sign-multiple-forms.jar)
 
 ## Volgende stappen
 
