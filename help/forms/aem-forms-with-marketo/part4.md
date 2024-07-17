@@ -10,20 +10,24 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
-# Adaptief formulier maken met formuliergegevensmodel
+# Integratie testen
 
-De volgende stap bestaat uit het maken van een adaptief formulier en het baseren op het formuliergegevensmodel dat in de vorige stap is gemaakt.
-De gebruiker voert de Lead-id in en bij het uitlijnen van de Marketo-service om de leads te ontvangen met de id, wordt aangeroepen. De resultaten van de servicebewerking worden vervolgens toegewezen aan de desbetreffende velden van de Adaptive Forms.
+We zullen de integratie testen door een eenvoudige formulieropname te maken en een hoofdobject van Market weer te geven.
+>[!NOTE]
+>
+>Deze functionaliteit is getest op formulier op basis van basiscomponenten.
+
+## Adaptief formulier maken
 
 1. Maak een adaptief formulier en baseer dit op &quot;Lege formuliersjabloon&quot; en koppel het formulier aan het formuliergegevensmodel dat u in de vorige stap hebt gemaakt.
-1. Het formulier openen in de bewerkingsmodus
+1. Open het formulier in de bewerkingsmodus.
 1. Sleep een component TextField en een component Panel naar het adaptieve formulier. Stel de titel van de component TextField &quot;Enter Lead Id&quot; in en stel de naam ervan in op &quot;LeadId&quot;
 1. Sleep 2 TextField-componenten naar de component Panel.
 1. Plaats de Naam en de Titel van de 2 componenten TextField als FirstName en LastName
@@ -35,12 +39,6 @@ Het volgende schermschot verklaart de montages van de regelredacteur
 
 ![ ruleeditor ](assets/ruleeditor.png)
 
-## Foutopsporing
-
-Als u de bundels gebruikt die van dit artikel worden voorzien, kunt u [ willen toelaten zuiveren logboeken ](http://localhost:4502/system/console/slinglog) voor de volgende klassen:
-
-+ `com.marketoandforms.core.impl.MarketoServiceImpl`
-+ `com.marketoandforms.core.MarketoConfigurationService`
 
 ## Gefeliciteerd
 

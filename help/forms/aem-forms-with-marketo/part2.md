@@ -10,200 +10,43 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
 duration: 137
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
 
-# Marketo-verificatieservice
+# Source voor gegevens maken
 
-Marketo REST API&#39;s worden geverifieerd met OAuth 2.0 met twee poten. We moeten aangepaste verificatie maken voor verificatie op basis van Marketo. Deze aangepaste verificatie wordt doorgaans in een OSGI-bundel geschreven. De volgende code toont de aangepaste authenticator die is gebruikt als onderdeel van deze zelfstudie.
+Marketo REST API&#39;s worden geverifieerd met OAuth 2.0 met twee poten. We kunnen eenvoudig een gegevensbron maken met behulp van het wagerbestand dat u in de vorige stap hebt gedownload
 
-## Custom Authentication Service
+## Configuratiecontainer maken
 
-Met de volgende code wordt het object AuthenticationDetails gemaakt met het toegangs_token dat nodig is voor verificatie met Marketo
+* Meld u aan bij AEM.
+* Klik op het hulpmiddelenmenu en dan **Browser van de Configuratie** zoals hieronder getoond
 
-```java
-package com.marketoandforms.core;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
- 
-import com.adobe.aemfd.dermis.authentication.api.IAuthentication;
-import com.adobe.aemfd.dermis.authentication.exception.AuthenticationException;
-import com.adobe.aemfd.dermis.authentication.model.AuthenticationDetails;
-import com.adobe.aemfd.dermis.authentication.model.Configuration;
-@Component(service={IAuthentication.class}, immediate=true)
-public class MarketoAuthenticationService implements IAuthentication {
-@Reference
-MarketoService marketoService;
-    @Override
-    public AuthenticationDetails getAuthDetails(Configuration arg0) throws AuthenticationException
-    {
-        AuthenticationDetails auth = new AuthenticationDetails();
-        auth.addHttpHeader("Cache-Control", "no-cache");
-        auth.addHttpHeader("Authorization", "Bearer " + marketoService.getAccessToken());
-        return auth
-    }
- 
-    @Override
-    public String getAuthenticationType() {
-        // TODO Auto-generated method stub
-        return "AemForms With Marketo";
-    }
-}
-```
+* ![ hulpmiddelmenu ](assets/datasource3.png)
 
-MarketoAuthenticationService implementeert de IAuthentication-interface. Deze interface maakt deel uit van de AEM Forms Client SDK. De dienst krijgt het toegangstoken en neemt het teken in HttpHeader van AuthenticationDetails op. Zodra HttpHeaders van het voorwerp AuthenticationDetails wordt bevolkt wordt het voorwerp AuthenticationDetails teruggekeerd aan de laag van de Dermis van het Model van de Gegevens van de Vorm.
+* Klik op **creeer** en verstrek een betekenisvolle naam zoals hieronder getoond. Controleer of de optie Cloud Configurations (Cloud Configurations) is geselecteerd, zoals hieronder wordt weergegeven
 
-Let op de tekenreeks die door de methode getAuthenticationType wordt geretourneerd. Deze tekenreeks wordt gebruikt wanneer u de gegevensbron configureert.
+* ![ configuratiecontainer ](assets/datasource4.png)
 
-### Toegangstoken ophalen
+## Cloudservices maken
 
-Een eenvoudige interface wordt bepaald met één methode die access_token terugkeert. De code voor de klasse die deze interface implementeert, wordt verderop op op de pagina weergegeven.
+* Navigeer naar het menu Gereedschappen en klik vervolgens op cloudservices -> Gegevensbronnen
 
-```java
-package com.marketoandforms.core;
-public interface MarketoService {
-    String getAccessToken();
-}
-```
+* ![ wolk-diensten ](assets/datasource5.png)
 
-De volgende code is van de dienst die access_token terugkeert die in het maken van REST API vraag moet worden gebruikt. De code in deze dienst heeft toegang tot de configuratieparameters nodig om de vraag van de GET te maken. Aangezien u kunt zien wij client_id, client_gehechtheid in GET URL overgaan om access_token te produceren. Dit access_token wordt vervolgens geretourneerd aan de aanroepende toepassing.
+* Selecteer de configuratiecontainer die in de vroegere stap wordt gecreeerd en klik op **creeer** om een nieuwe gegevensbron tot stand te brengen.Verstrek een betekenisvolle naam en de uitgezochte dienst RESTful van de drop-down lijst van het Type van de Dienst en klik **daarna**
+* ![ nieuw-gegeven-bron ](assets/datasource6.png)
 
-```java
-package com.marketoandforms.core.impl;
-import java.io.IOException;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.ParseException;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONException;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import com.marketoandforms.core.*; 
-@Component(service=MarketoService.class,immediate = true)
-public class MarketoServiceImpl implements MarketoService {
-    private final Logger log = LoggerFactory.getLogger(getClass());
-@Reference
-MarketoConfigurationService config;
-    @Override
-    public String getAccessToken()
-    {
-        String AUTH_URL = config.getAUTH_URL();
-        String CLIENT_ID = config.getCLIENT_ID();
-        String CLIENT_SECRET = config.getCLIENT_SECRET();
-        String AUTH_PATH = config.getAUTH_PATH();
-        HttpClient httpClient = HttpClientBuilder.create().build();
-        String getURL = AUTH_URL+AUTH_PATH+"&client_id="+CLIENT_ID+"&client_secret="+CLIENT_SECRET;
-        log.debug("The url to get the access token is "+getURL);
-        HttpGet httpGet = new HttpGet(getURL);
-        httpGet.addHeader("Cache-Control","no-cache");
-        try {
-            HttpResponse httpResponse = httpClient.execute(httpGet);
-            HttpEntity httpEntity = httpResponse.getEntity();
-            org.json.JSONObject responseJSON = new org.json.JSONObject(EntityUtils.toString(httpEntity))
-            return (String)responseJSON.get("access_token");
-        } catch (ClientProtocolException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (ParseException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (JSONException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return null;
-    }
-}
-```
+* Upload het wagerbestand en geef het giftype, de Client Id, de Client Secret en Access Token-URL op die specifiek zijn voor uw Marketo-instantie, zoals wordt weergegeven in de onderstaande schermafbeelding.
 
-De scherm-schot hieronder toont de configuratieeigenschappen die moeten worden geplaatst. Deze configuratieeigenschappen worden gelezen in de code hierboven vermeld om access_token te krijgen
+* Test de verbinding en als de verbinding succesvol is zorg ervoor u op de blauwe **creeert** knoop klikt om het proces te beëindigen om de gegevensbron tot stand te brengen.
 
-![ config ](assets/configuration-settings.png)
+* ![ gegeven-bron-config ](assets/datasource1.png)
 
-### Configuratie
-
-De volgende code is gebruikt om de configuratie-eigenschappen te maken. Deze eigenschappen zijn specifiek voor uw Marketo-instantie
-
-```java
-package com.marketoandforms.core;
- 
-import org.osgi.service.metatype.annotations.AttributeDefinition;
-import org.osgi.service.metatype.annotations.ObjectClassDefinition;
- 
-@ObjectClassDefinition(name="Marketo Credentials Service Configuration", description = "Connect Form With Marketo")
-public @interface MarketoConfiguration {
-     @AttributeDefinition(name="Identity Endpoint", description="URL of Marketo Identity Endpoint")
-     String identityEndpoint() default "";
-      @AttributeDefinition(name="Authentication path", description="Marketo authentication path")
-      String authPath() default "";
-      @AttributeDefinition(name="Client ID", description="Client ID")
-      String clientID() default "";
-      @AttributeDefinition(name="Client Secret", description="Client Secret")
-      String clientSecret() default "";
-}
-```
-
-De volgende code leest de configuratie-eigenschappen en retourneert hetzelfde via de methoden getter
-
-```java
-package com.marketoandforms.core;
- 
-import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.metatype.annotations.Designate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-@Component(immediate=true, service={MarketoConfigurationService.class})
-@Designate(ocd=MarketoConfiguration.class)
-public class MarketoConfigurationService {
-    private final Logger log = LoggerFactory.getLogger(getClass());
-    private MarketoConfiguration config;
-    private String AUTH_URL;
-    private String  AUTH_PATH;
-    private String CLIENT_ID ;
-    private String CLIENT_SECRET;
-     @Activate
-      protected final void activate(MarketoConfiguration config) {
-        System.out.println("####In my marketo activating auth service");
-        AUTH_URL = config.identityEndpoint();
-        AUTH_PATH = config.authPath();
-        CLIENT_ID = config.clientID();
-        CLIENT_SECRET = config.clientSecret();
-        log.info("clientID:" + CLIENT_ID);
-        System.out.println("The client id is "+CLIENT_ID+"AUTH PATH"+AUTH_PATH);
-      }
-    public String getAUTH_URL() {
-        return AUTH_URL;
-    }
-   public String getAUTH_PATH() {
-        return AUTH_PATH;
-    }
-    public String getCLIENT_ID() {
-        return CLIENT_ID;
-    }
-
-    public String getCLIENT_SECRET() {
-        return CLIENT_SECRET;
-    }
-}
-```
-
-1. De bundel op uw AEM server bouwen en implementeren.
-1. [ Punt uw browser aan configMgr ](http://localhost:4502/system/console/configMgr) en onderzoek naar &quot;Configuratie van de Dienst van de Credentials van Marketo&quot;
-1. Geef de juiste eigenschappen op die specifiek zijn voor uw Marketo-instantie
 
 ## Volgende stappen
 

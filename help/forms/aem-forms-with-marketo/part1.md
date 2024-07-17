@@ -11,9 +11,9 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -53,12 +53,14 @@ De eerste stap bij de integratie van Marketo met AEM Forms is het verkrijgen van
 
 **alvorens u** begint
 
-[ Download en unzip de activa met betrekking tot dit artikel.](assets/aemformsandmarketo.zip) Het ZIP-bestand bevat het volgende:
+* [De aan deze zelfstudie gerelateerde elementen downloaden en decomprimeren](assets/marketo-integration-assets.zip)
+
+Het ZIP-bestand bevat het volgende:
 
 1. BlankTemplatePackage.zip - dit is het Adaptieve malplaatje van de Vorm. Importeer dit met het pakketbeheer.
 1. marketo.json - Dit is het wagerbestand dat wordt gebruikt om de gegevensbron te configureren.
-1. MarketoAndForms.MarketoAndForms.core-1.0-SNAPSHOT.jar - Dit is de bundel die de douaneauthentificatie doet. U kunt dit gratis gebruiken als u de zelfstudie niet kunt voltooien of als uw bundel niet naar behoren werkt.
+1. Zorg ervoor u het gastheerbezit in marketo.json verandert om aan uw instantie te richten Marketo
 
 ## Volgende stappen
 
-[Aangepaste verificatie maken](./part2.md)
+[Source voor gegevens maken](./part2.md)
