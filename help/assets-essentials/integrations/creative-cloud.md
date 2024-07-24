@@ -12,18 +12,19 @@ last-substantial-update: 2022-10-12T00:00:00Z
 doc-type: Feature Video
 exl-id: 74eb8b3c-b521-4fd1-9859-43c06f754005
 duration: 396
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
 workflow-type: tm+mt
-source-wordcount: '55'
+source-wordcount: '56'
 ht-degree: 0%
 
 ---
 
-# Creative Cloud en Assets Essentials
 
-Leer hoe u Assets Essentials kunt integreren met Adobe Creative Cloud Libraries, zodat:
+# Creative Cloud Libraries en AEM Assets
 
-+ Bestanden van Assets Essentials die naadloos kunnen worden geopend via Creative Cloud Libraries
-+ Bestanden van Creative Cloud Libraries die moeten worden gedeeld aan Assets Essentials
+Leer hoe u AEM Assets kunt integreren met Adobe Creative Cloud Libraries, zodat:
+
++ Bestanden van AEM Assets die naadloos kunnen worden geopend via Creative Cloud Libraries
++ Bestanden van Creative Cloud Libraries die naar AEM Assets moeten worden gedeeld
 
 >[!VIDEO](https://video.tv.adobe.com/v/336069?quality=12&learn=on)

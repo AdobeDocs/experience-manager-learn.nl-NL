@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 82ef2988d55012ae730e9bbc7adeea547863ba51
+source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2086'
 ht-degree: 1%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 1%
    + [Op JDBC gebaseerd formuliergegevensmodel](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Koppelingen maken tussen 2 entiteiten in formuliergegevensmodel](adaptive-forms/association-data-model-technical-video-use.md)
    + [De aanroepservice van het formuliergegevensmodel gebruiken in de regeleditor](adaptive-forms/service-data-model-technical-video-use.md)
-   + [Binaire gegevens van Post aan AEM DAM die het Model van de Gegevens van de Vorm gebruiken](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [Binaire gegevens naar DAM AEM met formuliergegevensmodel](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Opnieuw bruikbare workflowmodellen maken](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [Aangepaste processtap AEM workflow](adaptive-forms/custom-process-step-aem-workflow.md)
    + [HTML5-Forms vooraf vullen](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
@@ -240,8 +240,8 @@ ht-degree: 1%
    + [Part2 - Aangepaste sjabloon maken](listing-custom-asset-types/part2.md)
 + AEM Forms met Marketo {#aem-forms-with-marketo}
    + [Deel 1 - Inleiding](aem-forms-with-marketo/part1.md)
-   + [Part2 - Aangepaste verificatie](aem-forms-with-marketo/part2.md)
-   + [Deel 3 - Data Source](aem-forms-with-marketo/part3.md)
+   + [Deel 2 - Data Source](aem-forms-with-marketo/part2.md)
+   + [Deel 3 - Formuliergegevensmodel](aem-forms-with-marketo/part3.md)
    + [Deel4 - Alles bijeenbrengen](aem-forms-with-marketo/part4.md)
 
 + AEM Forms met Adobe Campaign Standard {#aem-forms-with-adobe-campaign}
@@ -280,6 +280,7 @@ ht-degree: 1%
    + [Controlemap gebruiken in AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Streepjescodeservice gebruiken in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [PDFG-service gebruiken in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
+   + [PDF versleutelen met wachtwoord voor machtigingen](document-services/encrypt-pdf-permissions-password.md)
    + [Uitvoer- en Forms-service gebruiken in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [xdp-fragmenten gebruiken in uitvoerservice](document-services/using-fragments-in-output-service.md)
    + [ECMA-script voor het genereren van pdf met fragmenten](document-services/using-fragments-in-output-service-watched-folder.md)

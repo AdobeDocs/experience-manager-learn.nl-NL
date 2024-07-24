@@ -11,7 +11,7 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e29eaefb20d466126d0d31ad8eb598b63a0cebcd
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -91,7 +91,7 @@ Ja, dat is mogelijk, maar er is een zorgvuldige planning nodig met betrekking to
    + Verifieer of het aanvaardbaar is om alle activa als deel van één migratiereeks te migreren en dan plaatsen te brengen die hen in fasen gebruiken
 + In de huidige staat maakt het auteursinvoerproces de auteursinstantie voor inhoudcreatie onbeschikbaar alhoewel de publicatielaag nog de inhoud kan dienen
    + Dit betekent dat de activiteiten voor het schrijven van inhoud worden bevroren totdat de opname is voltooid
-+ Gebruikers worden niet meer gemigreerd, hoewel groepen
++ De gebruikers worden niet meer gemigreerd, hoewel de groepen.
 
 Controleer het extractie- en innameproces voor de top-up zoals beschreven voordat u de migraties plant.
 

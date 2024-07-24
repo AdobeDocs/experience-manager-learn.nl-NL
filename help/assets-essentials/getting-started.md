@@ -12,15 +12,15 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Feature Video
 exl-id: a0accb94-ceef-4ecf-b1f6-f47751114242
 duration: 251
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '37'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met Assets Essentials
+# Aan de slag
 
-Leer hoe u Assets Essentials kunt openen en de belangrijkste functies van de gebruikersinterface kunt verkennen.
+Leer hoe u AEM Assets kunt openen en de belangrijkste functies van de gebruikersinterface van kunt verkennen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336005?quality=12&learn=on)
