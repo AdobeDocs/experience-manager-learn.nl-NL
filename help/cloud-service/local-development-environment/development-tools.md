@@ -11,7 +11,7 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3508
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -24,8 +24,8 @@ ht-degree: 0%
 >id="aemcloud_localdev_devtools"
 >title="Gereedschappen voor ontwikkelingstools instellen"
 >abstract="Voor de ontwikkeling van Adobe Experience Manager (AEM) is een minimale set ontwikkelingstools vereist die op de ontwikkelcomputer moet worden geïnstalleerd en ingesteld. Deze hulpmiddelen omvatten Java, Maven, Adobe I/O CLI, Ontwikkeling IDE en meer."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html" text="Richtlijnen voor ontwikkeling"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="Grondbeginselen van ontwikkeling"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines" text="Richtlijnen voor ontwikkeling"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk" text="Grondbeginselen van ontwikkeling"
 
 Voor de ontwikkeling van Adobe Experience Manager (AEM) is een minimale set ontwikkelingstools vereist die op de ontwikkelcomputer moet worden geïnstalleerd en ingesteld. Deze instrumenten ondersteunen de ontwikkeling en de bouw van AEM projecten.
 
