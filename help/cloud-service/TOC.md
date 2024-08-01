@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
+source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1234'
 ht-degree: 5%
 
 ---
@@ -107,6 +107,7 @@ ht-degree: 5%
       + [ Caching de Varianten van de Pagina ](./developing/advanced/variant-caching.md)
       + [CSRF-beveiliging](./developing/advanced/csrf-protection.md)
       + [Aangepaste naamruimten](./developing/advanced/custom-namespaces.md)
+      + [Geheimen](./developing/advanced/secrets.md)
       + [Servicegebruikers](./developing/advanced/service-users.md)
       + [Web-geoptimaliseerde beeld APIs](./developing/advanced/web-optimized-image-delivery-java-apis.md)
    + Snelle ontwikkelomgeving {#rde}
@@ -283,6 +284,10 @@ ht-degree: 5%
       + [PDF/A-hulpprogramma](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [De oplossing testen](./forms/forms-cs-assembler/test.md)
       + [Uitdaging](./forms/forms-cs-assembler/challenge.md)
+   + Integreren met Marketo {#froms-cs-with-marketo}
+      + [Inleiding](./forms/forms-cs-with-marketo/part1.md)
+      + [Source voor gegevens maken](./forms/forms-cs-with-marketo/part2.md)
+      + [Formuliergegevensmodel maken](./forms/forms-cs-with-marketo/part3.md)
    + Formulierverzendingen opslaan met BLOB-indexcodes {#store-submiited-data-with-metadata-tags}
       + [Inleiding](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Uitbreiden keuzegroep](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)

@@ -12,9 +12,9 @@ last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
 exl-id: b1c127a8-24e7-4521-b535-60589a1391bf
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -46,10 +46,6 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 - Toegang tot [ Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
 - [ Adobe Developer CLI ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) geïnstalleerd op uw lokale machine.
-
->[!IMPORTANT]
->
->AEM as a Cloud Service Event is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Om AEM gebeurtenis op uw milieu van AEM as a Cloud Service toe te laten, contacteer [ AEM-Toevend team ](mailto:grp-aem-events@adobe.com).
 
 ## Project maken in Adobe Developer Console
 

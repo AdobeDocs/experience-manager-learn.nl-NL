@@ -9,9 +9,9 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b1de5c163607163bc702ea7b8ea4916c414f2a3a
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,16 @@ Selecteer het knooppunt ``zip`` en stel de eigenschappen ervan in zoals hieronde
 
 Selecteer het knooppunt ``state`` en stel de eigenschappen ervan in zoals hieronder weergegeven. Let op het fieldType van de status - deze is ingesteld op een vervolgkeuzelijst
 ![ staat ](assets/state.png)
+
+## Standaardwaarden instellen voor het statusveld
+
+Selecteer het knooppunt ``state`` en voeg de volgende eigenschappen toe.
+
+| Naam | Type | Waarde |
+|----------|----------|---------------------|
+| enum | String [] | CA,NY |
+| enumNames | String [] | Californië, New York |
+
 
 De uiteindelijke adresblokcomponent ziet er als volgt uit
 

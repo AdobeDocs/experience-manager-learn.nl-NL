@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,6 @@ Laten we eens kijken naar enkele aanvullende, aanbevolen maatregelen die klanten
 - Vorm **alarm** op de regels van de het verkeersfilter van de tariefgrens door een &quot;waakzame actie&quot;zodat wanneer de regel wordt teweeggebracht, wordt een bericht van het Centrum van Acties verzonden.
 - Verhoog geheim voorgeheugendekking door **verzoektransformaties** te verklaren om vraagparameters te negeren.
 
->[!NOTE]
->
->Het [ alarm van de de regelregel van de verkeersfilter ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) eigenschap is nog niet vrijgegeven. E-mail **<aemcs-waf-adopter@adobe.com>** voor toegang via het programma voor vroege adoptie.
-
 ### Snelheidlimiet verkeersregelvariaties {#rate-limit-variations}
 
 Er zijn twee variaties van tarief grensverkeersregels:
@@ -72,7 +68,6 @@ Zoals eerder vermeld, blokkeert de Adobe door gebrek verkeer bij CDN die een bep
 Idealiter configureert u de regels voordat u live gaat naar productie. In de praktijk, verklaren vele organisaties reactief regels slechts één keer gealarmeerd aan een verkeerspiek die op een waarschijnlijke aanval wijst.
 
 De Adobe verzendt een verkeerspiek bij oorsprongsalarm als [ Bericht van het Centrum van Acties ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center) wanneer een standaarddrempel van verkeer van één enkel IP adres, voor bepaalde PoP wordt overschreden. Als u zulk een alarm ontving, wordt het geadviseerd om een regel van de de verkeersfilter van de tariefgrens te vormen. Dit standaardalarm is verschillend van het alarm dat uitdrukkelijk door klanten moet worden toegelaten wanneer het bepalen van de regels van de verkeersfilter, die u over in een toekomstige sectie zult leren.
-
 
 ## Verkeerspatronen analyseren {#analyze-traffic}
 

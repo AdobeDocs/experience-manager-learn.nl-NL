@@ -12,9 +12,9 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -38,10 +38,6 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 - [ Adobe Developer CLI ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) geïnstalleerd op uw lokale machine.
 
 - Lokaal geïnitialiseerd project van het vroegere voorbeeld [ de Actie van Adobe I/O Runtime en AEM Gebeurtenissen ](./runtime-action.md#initialize-project-for-local-development).
-
->[!IMPORTANT]
->
->AEM as a Cloud Service Event is alleen beschikbaar voor geregistreerde gebruikers in de pre-releasemodus. Om AEM gebeurtenis op uw milieu van AEM as a Cloud Service toe te laten, contacteer [ AEM-Toevend team ](mailto:grp-aem-events@adobe.com).
 
 ## Actie AEM Events-processor
 
