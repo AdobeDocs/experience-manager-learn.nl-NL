@@ -11,7 +11,7 @@ jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 364d055b7b2e4f273f906c66328fc14f95321611
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -38,14 +38,15 @@ U bevindt zich in de standaardstatus wanneer u de stijleditor voor de tab opent,
 ![ navigatie-lusje ](assets/navigation-tab.png)
 
 CSS-eigenschappen instellen voor de standaardstatus zoals hieronder wordt weergegeven
-| Categorie | Eigenschapnaam  |  Waarde van eigenschap |
-|:—|:—|:—|
+
+| Categorie | Eigenschapnaam | Waarde van eigenschap |
+|:---|:---|:---|
 | Dimensionen en positie | Breedte | 50 px |
-| Tekst | Tekendikte| Vet |
+| Tekst | Dikte lettertype | Vet |
 | Tekst | Kleur | #FFF |
-|Tekst | Lijnhoogte| 3 |
-|Tekst  | Tekst uitlijnen | Links |
-|Achtergrond| Kleur | #056dae |
+| Tekst | Lijnhoogte | 3 |
+| Tekst | Tekst uitlijnen | Links |
+| Achtergrond | Kleur | #056dae |
 
 Uw wijzigingen opslaan
 
