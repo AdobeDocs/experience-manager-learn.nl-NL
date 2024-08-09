@@ -10,10 +10,10 @@ jira: KT-6060
 thumbnail: 39151.jpg
 exl-id: 7d7942ae-7e38-4abd-9900-5b8e3542f5e1
 duration: 315
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 1fcfbc85650d0eb6b6b184883c7178a3b1e0ed93
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 5%
+source-wordcount: '204'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en" text="IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service"
 >additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Door AEM opgegeven gebruikersgroepen en hun machtigingen"
 
-Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen om gebruikers aanpasbare toegang tot AEM te bieden. Leer hoe u AEM groepen en machtigingen definieert en hoe ze samenwerken met Adobe IMS-abstracties om een naadloze en aanpasbare toegang tot AEM te bieden.
+Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen om gebruikers aanpasbare toegang tot AEM te bieden. Leer hoe te om AEM groepen en toestemmingen te bepalen, die op [ voortbouwen AEM verstrekte gebruikersgroepen ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security#built-in-users-and-groups), en hoe zij in overleg met de abstracties van Adobe IMS werken om naadloze en klantgerichte toegang tot AEM te verlenen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39151?quality=12&learn=on)
 
