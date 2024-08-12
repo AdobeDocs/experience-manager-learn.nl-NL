@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
+source-git-commit: 13657903c37b90c6d854dcba317dc1801d869de0
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1254'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,6 @@ ht-degree: 5%
    + [Productiepijpleiding CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Niet-productiepijpleiding CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activiteit](./cloud-manager/activity.md)
-   + [Aangepaste domeinnamen](./cloud-manager/custom-domain-names.md)
    + OPS ontwikkelen {#devops}
       + [Code implementeren](./cloud-manager/devops/deploy-code.md)
       + [Projecten samenvoegen](./cloud-manager/devops/merge-projects.md)
@@ -107,6 +106,7 @@ ht-degree: 5%
       + [ Caching de Varianten van de Pagina ](./developing/advanced/variant-caching.md)
       + [CSRF-beveiliging](./developing/advanced/csrf-protection.md)
       + [Aangepaste naamruimten](./developing/advanced/custom-namespaces.md)
+      + [Sling-modellen parametereren op basis van HTML](./developing/advanced/sling-model-parameters.md)
       + [Geheimen](./developing/advanced/secrets.md)
       + [Servicegebruikers](./developing/advanced/service-users.md)
       + [Web-geoptimaliseerde beeld APIs](./developing/advanced/web-optimized-image-delivery-java-apis.md)
@@ -138,6 +138,10 @@ ht-degree: 5%
       + Risks {#risks}
          + [Traversale waarschuwingen](./debugging/cloud-service/risks/traversals.md)
 + Inhoud leveren {#content-delivery}
+   + [Aangepaste domeinnaam](./content-delivery/custom-domain-names.md)
+   + [De domeinnaam van de douane met Adobe beheerde CDN](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
+   + [Aangepaste domeinnaam met CDN van klant](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
+   + [ Caching ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview) {target=_blank}
    + [ opnieuw richt URL ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html) {target=_blank}
 + Caching{#caching}
    + [Overzicht](./caching/overview.md)
