@@ -1,6 +1,6 @@
 ---
 title: Adobe CDN - Geavanceerde functies naast caching
-description: Leer over geavanceerde eigenschappen van Adobe CDN voorbij caching, zoals het vormen van verkeer bij CDN, CDN foutenpagina's en meer.
+description: Leer over geavanceerde eigenschappen van Adobe CDN voorbij caching, zoals het vormen van verkeer bij CDN, vestiging tokens en geloofsbrieven, CDN foutenpagina's en meer.
 version: Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: cc7fa9bbaa775b0216c839be079504c2b5467878
+source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Adobe CDN - Geavanceerde functies naast caching
 
-Leer over geavanceerde eigenschappen van Adobe CDN voorbij caching, zoals het vormen van verkeer bij CDN, CDN foutenpagina&#39;s en meer.
+Leer over geavanceerde eigenschappen van het Netwerk van de Levering van de Inhoud van de Adobe (CDN) voorbij caching, zoals het vormen van verkeer bij CDN, vestiging tokens en geloofsbrieven, CDN foutenpagina&#39;s en meer.
 
 Naast het in cache plaatsen van inhoud, biedt Adobe CDN verschillende geavanceerde functies die u kunnen helpen uw websiteprestaties te optimaliseren. Deze functies zijn onder andere:
 
@@ -50,8 +50,7 @@ Begrijp de belangrijkste mogelijkheden met betrekking tot _het Vormen CDN geloof
 
 - **zuiveren API Token**: Laat u toe om uw eigen zuiveringssleutel tot stand te brengen voor het zuiveren van enige of groep of alle middelen van het geheime voorgeheugen.
 - **Basisauthentificatie**: Een lichtgewichtauthentificatiemechanisme wanneer u toegang tot uw website of een deel van het wilt beperken. Meestal vereist als onderdeel van verschillende evaluatieprocessen voordat u live gaat.
-- **bevestiging van de Kopbal van HTTP**: Gebruikt wanneer een klant beheerde CDN verkeer aan Adobe CDN verplettert. De Adobe-CDN valideert de binnenkomende aanvraag op basis van de headerwaarde `X-AEM-Edge-Key` .
-Hiermee kunt u uw eigen waarde voor de koptekst van `X-AEM-Edge-Key` maken.
+- **bevestiging van de Kopbal van HTTP**: Gebruikt wanneer een klant beheerde CDN verkeer aan Adobe CDN verplettert. De Adobe-CDN valideert de binnenkomende aanvraag op basis van de headerwaarde `X-AEM-Edge-Key` . Hiermee kunt u uw eigen waarde voor de koptekst van `X-AEM-Edge-Key` maken.
 
 ## CDN-foutpagina&#39;s
 
@@ -87,7 +86,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## Aanvullende bronnen
+## Verwante Tutorials
 
 [ Beschermend websites met de regels van de verkeersfilter ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
@@ -100,7 +99,3 @@ data:
 [ het Vormen CDN geloofsbrieven en Authentificatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 
 [ Vormend CDN de Pagina&#39;s van de Fout ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
-
-
-
-
