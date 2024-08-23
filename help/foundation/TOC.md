@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials voor AEM Foundation
 user-guide-description: Een verzameling video's en tutorials voor Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: a504ace72b1b90c6e7c711a939595b95f24733e6
+source-git-commit: 1e1a33986e202ce2af9cf2d03eca7895514465df
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 12%
+source-wordcount: '241'
+ht-degree: 11%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 12%
 # AEM Foundation-video&#39;s en -tutorials {#foundation}
 
 + [Overzicht](./overview.md)
++ [POC](./poc.md)
 + Beheer {#administration}
    + [Redenen voor upgrade-AEM begrijpen](./administration/understand-reasons-to-upgrade.md)
    + [Gebruik oak-run.jar om indexen te beheren](./administration/use-oak-run-jar-to-manage-indexes.md)
@@ -26,6 +27,7 @@ ht-degree: 12%
    + [OAutbereik](authentication/oauth-code-sample-develop.md)
    + [Verificatie](authentication/authentication-support-article-understand.md)
    + [IMS-verificatie begrijpen op AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
+   + [JWT-To-OAuth-referentie-migratie](authentication/jwt-to-oauth-migration.md)
 + Adobe Cloud Manager {#cloud-manager}
    + [Adobe Cloud Manager begrijpen](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [CI/CD-pijpleidingen](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
@@ -48,6 +50,7 @@ ht-degree: 12%
    + [ModSecurity CRS DoS-beveiliging tegen aanvallen](./security/modsecurity-crs-dos-attack-protection.md)
    + [HTTPS-verbindingen met API&#39;s met persoonlijke certificaten](./security/call-internal-apis-having-private-certificate.md)
    + [Mutual TLS (mTLS) Authentication from AEM](./security/mutual-tls-authentication.md)
+   + [ JWT-aan-OAuth credential migratie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration) {target=_blank}
 + Workflow {#workflow}
    + [De Workfloweditor gebruiken](./workflow/use-the-workflow-editor.md)
    + [Workflow gebruiken](./workflow/use-workflow.md)
