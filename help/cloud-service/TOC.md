@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1275'
 ht-degree: 5%
 
 ---
@@ -151,7 +151,8 @@ ht-degree: 5%
    + [Analyse van hoogte-breedteverhouding CDN-cache](./caching/cdn-cache-hit-ratio-analysis.md)
    + Procedure {#how-to}
       + [Opslaan in cache inschakelen](./caching/how-to/enable-caching.md)
-      + [ maak caching ](./caching/how-to/disable-caching.md) onbruikbaar
+      + [Cache uitschakelen](./caching/how-to/disable-caching.md)
+      + [Cache leegmaken](./caching/how-to/purge-cache.md)
 + Toegang tot AEM {#accessing}
    + [Overzicht](./accessing/overview.md)
    + [Adobe IMS-gebruikers](./accessing/adobe-ims-users.md)
@@ -259,6 +260,10 @@ ht-degree: 5%
       + [2 - Instellen](./forms/create-address-block-component/set-up.md)
       + [3 - Component maken](./forms/create-address-block-component/creating-address-component.md)
       + [4 - Component implementeren](./forms/create-address-block-component/deploy-your-project.md)
+   + Aanklikbare afbeeldingscomponent maken {#clickable-image-component}
+      + [1 - Inleiding](./forms/clickable-image-component/introduction.md)
+      + [2 - Component maken](./forms/clickable-image-component/create-component.md)
+      + [3 - Handle click-gebeurtenis](./forms/clickable-image-component/handle-click-event.md)
    + AEM Forms en Analytics {#forms-and-analytics}
       + [Inleiding](./forms/form-data-analytics/introduction.md)
       + [Gegevenselementen maken](./forms/form-data-analytics/data-elements.md)
@@ -421,3 +426,4 @@ ht-degree: 5%
          + [AEM Assets integreren](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
          + [Generatieve AI voor AEM Sites](./expert-resources/cloud-5/season-3/cloud5-generative-ai-for-aem-sites.md)
          + [Universele editor verkennen](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
+         + [Sites importeren](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)
