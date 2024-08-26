@@ -9,9 +9,9 @@ level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -196,10 +196,18 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
 Voer de volgende stappen uit om dit op uw lokale server te testen:
 1. [Download en installeer de DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [ Download en installeer de bundel ares.ares.core-ares ](assets/ares.ares.core-ares.jar). Dit heeft de douanedienst en servlet om gebruiksrechten toe te passen en pdf terug te stromen
+
+1. Voeg de volgende vermelding toe aan Apache Sling User Mapper Service met behulp van de configMgr console zoals hieronder wordt getoond
+
+```
+       DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+```
+
+![ gebruiker-mapper ](assets/user-mapper-service.PNG)
+1. [ Download en installeer de bundel ares.ares.core-ares ](assets/ares.ares.core-ares.jar). Dit heeft de douanedienst en servlet om gebruiksrechten toe te passen en pdf terug te stromen.
 1. [Clientbibliotheken importeren en naar Aangepast verzenden](assets/applyaresdemo.zip)
 1. [Het adaptieve formulier importeren](assets/applyaresform.zip)
-1. Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. Zorg ervoor dat de alias &quot;ares&quot; is.
+1. Voeg het certificaat van de Uitbreidingen van de Reader aan &quot;fd-dienst&quot;gebruiker toe. Zorg ervoor alias is &quot;**aren**&quot;.
 1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Selecteer de juiste rechten en upload het PDF-bestand
 1. Klik op Verzenden om Reader Extended PDF te verkrijgen
