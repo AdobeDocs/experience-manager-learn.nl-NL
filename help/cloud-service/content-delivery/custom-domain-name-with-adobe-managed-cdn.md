@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: f92e66d6edc929bff1e8cae6adb7f408352aeb77
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ Nochtans, als u het **worteldomein** gebruikt, moet u een APEX- verslagtype (ali
 
 Als u wilt controleren of de site toegankelijk is met de aangepaste domeinnaam, opent u een webbrowser en navigeert u naar de URL van het aangepaste domein. Controleer of de site toegankelijk is en of de browser een veilige verbinding met het hangslotpictogram heeft.
 
-## Video beëindigen tot einde
+## End-to-end video
 
 U kunt ook de end-to-end video bekijken die het overzicht, de eerste vereisten, en bovenstaande stappen toont om een douanedomeinaam aan AEM as a Cloud Service-ontvangen plaats toe te voegen.
 
