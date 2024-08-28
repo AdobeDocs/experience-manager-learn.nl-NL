@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
+source-git-commit: 65e77a329226ca7c7ccb1e583d2a045074feeb3d
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -31,12 +31,13 @@ Naast het in cache plaatsen van inhoud, biedt Adobe CDN verschillende geavanceer
 
 Deze eigenschappen zijn **zelfbediening** eigenschappen. Gevormd in het `cdn.yaml` dossier van uw AEM project en opgesteld gebruikend de configuratiepijpleiding van Cloud Manager.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+
 ## Het vormen verkeer bij CDN
 
 Begrijp de belangrijkste mogelijkheden met betrekking tot _het Vormen verkeer bij CDN_:
 
-- **de aanvalspreventie van Dos:** Adobe CDN absorbeert de aanvallen van Dos bij het netwerk
-laag, zodat deze niet op de oorspronkelijke server terechtkomen.
+- **de aanvalspreventie van Dos:** Adobe CDN absorbeert de aanvallen van Dos bij de netwerklaag, die hen verhinderen uw oorsprongsserver te bereiken.
 - **het Beperken van het Tarief:** om uw oorsprongsserver tegen wordt overweldigd met teveel verzoeken te beschermen, kunt u tarief vormen die op CDN beperken.
 - **Firewall van de Toepassing van het Web (WAF):** WAF beschermt uw website tegen gemeenschappelijke kwetsbaarheid van de Webtoepassing, zoals SQL injectie, dwars-plaats scripting, en meer. Voor het gebruik van deze functie is de licentie voor uitgebreide beveiliging of WAF-DDoS-beveiliging vereist.
 - **transformatie van het Verzoek:** wijzig inkomende verzoeken zoals het plaatsen of het unsetting kopballen, het wijzigen van vraagparameters, koekjes en meer.
