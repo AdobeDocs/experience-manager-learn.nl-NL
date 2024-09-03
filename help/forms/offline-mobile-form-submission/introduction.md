@@ -1,5 +1,5 @@
 ---
-title: Triggerwerkstroom AEM HTM5 Form Submission Introduction
+title: Trigger-AEM-workflow voor introductie van HTML5-formulier
 description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
 feature: Mobile Forms
 doc-type: article
@@ -9,10 +9,12 @@ role: Developer
 level: Experienced
 exl-id: 88295af5-3022-4462-9194-46d8c979bc8b
 last-substantial-update: 2021-04-07T00:00:00Z
+jira: kt-16133
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 342
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -26,8 +28,12 @@ Voor dit gebruiksgeval moeten de volgende stappen worden uitgevoerd:
 * De PDF-verzending van Acrobat/Reader afhandelen
 * De Adobe Experience Manager-workflow (AEM) activeren om de verzonden PDF te bekijken
 
-Deze zelfstudie doorloopt de stappen die nodig zijn voor het uitvoeren van het bovenstaande gebruiksgeval. De code van de steekproef en de activa met betrekking tot dit leerprogramma zijn [ hier beschikbaar.](part-four.md)
+Deze zelfstudie doorloopt de stappen die nodig zijn voor het uitvoeren van het bovenstaande gebruiksgeval. De code van de steekproef en de activa met betrekking tot dit leerprogramma zijn [ hier beschikbaar.](./deploy-assets.md)
 
 In de volgende video ziet u een overzicht van het gebruik
 
 >[!VIDEO](https://video.tv.adobe.com/v/29677?quality=12&learn=on)
+
+## Volgende stappen
+
+[Aangepast profiel maken](./custom-profile.md)

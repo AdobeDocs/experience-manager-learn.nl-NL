@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '2086'
+source-wordcount: '2089'
 ht-degree: 1%
 
 ---
@@ -224,10 +224,11 @@ ht-degree: 1%
    + [Voorbeeldelementen implementeren](storing-retrieving-form-data/part6.md)
 + Het teweegbrengen AEM Workflow van de Mobiele voorlegging van het Vorm {#offline-mobile-form-submission}
    + [Inleiding](offline-mobile-form-submission/introduction.md)
-   + [Aangepast profiel](offline-mobile-form-submission/part-one.md)
-   + [PDF-verzending verwerken](offline-mobile-form-submission/part-two.md)
-   + [Workflow voor revisie PDF](offline-mobile-form-submission/part-three.md)
-   + [Implementeren op uw systeem](offline-mobile-form-submission/part-four.md)
+   + [Aangepast profiel](offline-mobile-form-submission/custom-profile.md)
+   + [Formulierverzending verwerken](offline-mobile-form-submission/handle-form-submission.md)
+   + [Verzonden gegevens opslaan](offline-mobile-form-submission/author-servlet.md)
+   + [Workflow voor revisie PDF](offline-mobile-form-submission/review-workflow.md)
+   + [Implementeren op uw systeem](offline-mobile-form-submission/deploy-assets.md)
 + Formulierverzendingen aanvragen {#query-form-submissions}
    + [Inleiding](query-form-submissions/introduction.md)
    + [Doorzoekbare velden maken](query-form-submissions/part1.md)

@@ -11,7 +11,8 @@ duration: 130
 last-substantial-update: 2024-08-09T00:00:00Z
 jira: KT-15946
 thumbnail: KT-15946.jpeg
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+exl-id: e11ff38c-e823-4631-a5b0-976c2d11353e
+source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -83,4 +84,3 @@ Nu u het beheerproces voor domeinnamen begrijpt, kunt u aangepaste domeinnamen v
 
 **[Namen van het Domein van de Douane met Adobe-geleide CDN](./custom-domain-name-with-adobe-managed-cdn.md)**: In dit leerprogramma, leert u hoe te om een naam van het douanedomein aan een **website van AEM as a Cloud Service met Adobe-beheerde CDN** toe te voegen.
 **[Namen van het Domein van de Douane met klant-geleide CDN](./custom-domain-names-with-customer-managed-cdn.md)**: In dit leerprogramma, leert u hoe te om een naam van het douanedomein aan een **website van AEM as a Cloud Service met klant-beheerde CDN** toe te voegen.
-

@@ -9,9 +9,9 @@ level: Experienced
 exl-id: 58582acd-cabb-4e28-9fd3-598d3cbac43c
 last-substantial-update: 2020-01-07T00:00:00Z
 duration: 138
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -127,9 +127,18 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Volg onderstaande instructies om deze mogelijkheid op uw server te testen:
 
-* [ Download en extract zip dossierinhoud aan uw dossiersysteem ](assets/mult-records-template-and-xml-file.zip).Dit zip dossier bevat het malplaatje en het dossier van xmlgegevens.
+* [ Download de steekproefactiva ](assets/mult-records-template-and-xml-file.zip).Dit zip dossier bevat het malplaatje en xml- gegevensdossier.
+* [ de Invoer ]
 * [ Punt uw browser aan het Webconsole van Felix ](http://localhost:4502/system/console/bundles)
 * [ stelt DevelopingWithServiceUser Bundel ](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) op.
+* Voeg de volgende ingang in de Dienst van het Mapper van de Gebruiker van de Dienst van Apache Sling toe gebruikend configMgr.
+
+```java
+DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+```
+
+![ gebruiker-in kaart:brengen-dienst ](assets/user-mapper-service-fd-service.png)
+
 * [ stelt de Bundel van AEMFormsDocumentServices van de Douane AEMForms ](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) op.De bundel van de Douane die pdf produceert gebruikend OutputService API
 * [ Punt uw browser aan pakketmanager ](http://localhost:4502/crx/packmgr/index.jsp)
 * [ de Invoer en installeert het pakket ](assets/generate-multiple-pdf-from-xml.zip). Dit pakket bevat HTML-pagina waarmee u de sjabloon en gegevensbestanden kunt neerzetten.
