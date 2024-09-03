@@ -14,20 +14,20 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1303
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: b57fb7ce9483dbfe206de7b89e6cf8dba72429a7
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
 
 # AEM Sites en Experience Platform Web SDK integreren
 
-Leer hoe te om AEM as a Cloud Service met Experience Platform [ SDK van het Web ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) te integreren. Deze fundamentele stap is essentieel voor de integratie van Adobe Experience Cloud-producten, zoals Adobe Analytics, Target of recente innovatieve producten zoals Real-time Customer Data Platform, Customer Journey Analytics en Journey Optimizer.
+Leer hoe te om AEM as a Cloud Service met Experience Platform [ SDK van het Web ](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html) te integreren. Deze fundamentele stap is essentieel voor de integratie van Adobe Experience Cloud-producten, zoals Adobe Analytics, Target of recente innovatieve producten zoals Real-time Customer Data Platform, Customer Journey Analytics en Journey Optimizer.
 
-U leert ook hoe te om [ WKND te verzamelen en te verzenden - het project van de steekproefAdobe Experience Manager ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) voorproefgegevens in het [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
+U leert ook hoe te om [ WKND te verzamelen en te verzenden - het project van de steekproefAdobe Experience Manager ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) voorproefgegevens in het [ Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home).
 
-Na voltooiing van deze opstelling, hebt u een stevige stichting uitgevoerd. Ook, bent u bereid om de implementatie van het Experience Platform te bevorderen gebruikend toepassingen zoals [ Real-time Customer Data Platform (Real-Time CDP) ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html), [ Customer Journey Analytics (CJA) ](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), en [ Adobe Journey Optimizer (AJO) ](https://experienceleague.adobe.com/docs/journey-optimizer.html). De geavanceerde implementatie draagt bij aan een betere betrokkenheid van klanten door het web en de gegevens van klanten te standaardiseren.
+Na voltooiing van deze opstelling, hebt u een stevige stichting uitgevoerd. Ook, bent u bereid om de implementatie van het Experience Platform te bevorderen gebruikend toepassingen zoals [ Real-time Customer Data Platform (Real-Time CDP) ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html), [ Customer Journey Analytics (CJA) ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics), en [ Adobe Journey Optimizer (AJO) ](https://experienceleague.adobe.com/en/docs/journey-optimizer). De geavanceerde implementatie draagt bij aan een betere betrokkenheid van klanten door het web en de gegevens van klanten te standaardiseren.
 
 ## Vereisten
 
@@ -47,7 +47,7 @@ In **Experience Platform**:
 + Toegang tot **gegevensstromen** onder de Inzameling van Gegevens
 + Toegang tot **Markeringen** onder de Inzameling van Gegevens
 
-Voor het geval u noodzakelijke toestemmingen niet hebt, kan uw systeembeheerder die [ Adobe Admin Console ](https://adminconsole.adobe.com/) gebruiken noodzakelijke toestemmingen verlenen.
+Voor het geval u niet de noodzakelijke toestemmingen hebt, kan uw systeembeheerder die [ Adobe Admin Console ](https://adminconsole.adobe.com/) gebruiken de noodzakelijke toestemmingen verlenen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418856?quality=12&learn=on)
 
@@ -55,14 +55,14 @@ Voor het geval u noodzakelijke toestemmingen niet hebt, kan uw systeembeheerder 
 
 Het schema van de Gegevens van de Ervaring Model (XDM) helpt u om de gegevens van de klantenervaring te standaardiseren. Om de **WKND Pageiew** gegevens te verzamelen, creeer een Schema XDM en gebruik de Adobe verstrekte gebiedsgroepen `AEP Web SDK ExperienceEvent` voor de inzameling van Webgegevens.
 
-Er zijn generische en industrieën specifiek voor bijvoorbeeld Detailhandel, Financiële Diensten, Gezondheid, en meer, reeks van verwijzingsgegevensmodellen, zie [ overzicht van de gegevensmodellen van de Industrie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/industries/overview.html) voor meer informatie.
+Er zijn generische en industrieën specifiek voor bijvoorbeeld Detailhandel, Financiële Diensten, Gezondheid, en meer, reeks van verwijzingsgegevensmodellen, zie [ overzicht van de gegevensmodellen van de Industrie ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/industries/overview) voor meer informatie.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418894?quality=12&learn=on)
 
-Leer over het Schema XDM en verwante concepten zoals gebiedsgroepen, types, klassen, en gegevenstypes van [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+Leer over het Schema XDM en verwante concepten zoals gebiedsgroepen, types, klassen, en gegevenstypes van het [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
-Het [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) is een groot middel om over het Schema XDM en verwante concepten zoals gebiedsgroepen, types, klassen, en gegevenstypes te leren. Het biedt een uitgebreid inzicht in het XDM-gegevensmodel en hoe u XDM-schema&#39;s kunt maken en beheren om gegevens in de hele onderneming te standaardiseren. Onderzoek het om een dieper inzicht in het schema te verkrijgen XDM en hoe het uw gegevensinzameling en beheersprocessen kan ten goede komen.
+Het [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) is een groot middel om over het Schema XDM en verwante concepten zoals gebiedsgroepen, types, klassen, en gegevenstypes te leren. Het biedt een uitgebreid inzicht in het XDM-gegevensmodel en hoe u XDM-schema&#39;s kunt maken en beheren om gegevens in de hele onderneming te standaardiseren. Onderzoek het om een dieper inzicht in het Schema te verkrijgen XDM en hoe het uw gegevensinzameling en beheersprocessen kan ten goede komen.
 
 ## DataStream maken - Experience Platform
 
@@ -71,14 +71,14 @@ Een DataStream instrueert de Edge Network van het Platform waar te om de verzame
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418895?quality=12&learn=on)
 
-Vertrouwt u met het concept van gegevensstromen en verwante onderwerpen zoals gegevensbeheer en configuratie door de [ overzichtspagina van de Gegevensstromen van Gegevensstromen ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) te bezoeken.
+Vertrouwt u met het concept van gegevensstromen en verwante onderwerpen zoals gegevensbeheer en configuratie door de [ overzichtspagina van de Gegevensstromen van Gegevensstromen ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) te bezoeken.
 
 ## Tag-eigenschap maken - Experience Platform
 
-Leer hoe u een eigenschap tag maakt in Experience Platform om de Web SDK JavaScript-bibliotheek aan de WKND-website toe te voegen. De nieuw gedefinieerde eigenschap tag heeft de volgende bronnen:
+Leer hoe u een eigenschap tag maakt in Experience Platform om de Web SDK JavaScript-bibliotheek aan de WKND-website toe te voegen. De zojuist gedefinieerde eigenschap tag heeft de volgende bronnen:
 
 + De Uitbreidingen van de markering: [ Kern ](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) en [ SDK van het Web van Adobe Experience Platform ](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
-+ Gegevenselementen: de gegevenselementen van het type van douanecode die pagina-naam, plaats-sectie, en gastheer-naam gebruikend de Laag van de Gegevens van de Cliënt van de Adobe van de plaats WKND halen. Ook, leidt het het type van Objecten XDM gegevenselement dat met onlangs gecreeerd schema van WKND XDM bouwt-binnen [ tot XDM Schema ](#create-xdm-schema---experience-platform) stap.
++ Gegevenselementen: de gegevenselementen van het type van douanecode die pagina-naam, plaats-sectie, en gastheer-naam gebruikend de Laag van de Gegevens van de Cliënt van de Adobe van de plaats WKND halen. Ook, leidt het het type van Objecten XDM gegevenselement dat met het onlangs gecreeerde Schema XDM bouwt-binnen WKND [ voldoet tot XDM Schema ](#create-xdm-schema---experience-platform) stap.
 + Regel: verzend gegevens naar de Edge Network van het Platform wanneer een WebND website wordt bezocht gebruikend de Adobe de  van de Gegevens van de Cliënt teweeggebrachte `cmp:show` gebeurtenis.
 
 Terwijl het bouwen van en het publiceren van de markeringsbibliotheek die de **het Publiceren Stroom** gebruiken, kunt u **gebruiken voeg Alle Gewijzigde Middelen** knoop toe. Om alle middelen zoals het Element van Gegevens, Regel, en de Uitbreidingen van de Markering in plaats van het identificeren van en het plukken van een individuele middel te selecteren. Ook, tijdens de ontwikkelingsfase, kunt u de bibliotheek enkel aan het _milieu van de Ontwikkeling_ publiceren, dan het verifiëren en bevorderen aan het _Stadium_ of _milieu van de Productie_.
@@ -168,19 +168,23 @@ Terwijl het bouwen van en het publiceren van de markeringsbibliotheek die de **h
 +++
 
 
-Het [ overzicht van Markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) verstrekt diepgaande kennis over belangrijke concepten zoals de Elementen van Gegevens, Regels, en Uitbreidingen.
+Het [ overzicht van Markeringen ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) verstrekt diepgaande kennis over belangrijke concepten zoals de Elementen van Gegevens, Regels, en Uitbreidingen.
 
-Voor extra informatie bij het integreren AEM de Componenten van de Kern met de Laag van de Gegevens van de Cliënt van de Adobe, verwijs naar [ Gebruikend de Laag van de Gegevens van de Cliënt van de Adobe met de gids van de Componenten van de Kern AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
+Voor extra informatie bij het integreren AEM de Componenten van de Kern met de Laag van de Gegevens van de Cliënt van de Adobe, verwijs naar [ Gebruikend de Laag van de Gegevens van de Cliënt van de Adobe met de gids van de Componenten van de Kern AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview).
 
 ## Eigenschap van Connect-tag AEM
 
-Ontdek hoe u de onlangs gemaakte eigenschap tag koppelt aan AEM via Adobe IMS en -tags in Adobe Experience Platform Configuration in AEM. Wanneer een AEM as a Cloud Service-omgeving tot stand is gebracht, worden automatisch verschillende configuraties van de technische account van Adobe IMS gegenereerd, waaronder codes. Nochtans, voor AEM versie 6.5, moet u manueel vormen.
+Ontdek hoe u de onlangs gemaakte eigenschap tag koppelt aan AEM via Adobe IMS en -tags in Adobe Experience Platform Configuration in AEM. Wanneer een AEM as a Cloud Service-omgeving tot stand is gebracht, worden automatisch verschillende configuraties van de technische account van Adobe IMS gegenereerd, waaronder codes. Voor geleidelijke instructies, zie [ AEM Sites met het Bezit van de Markering verbinden gebruikend IMS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
+
+Nochtans, voor AEM versie 6.5, moet u manueel vormen.
+
+
 
 Nadat de eigenschap tag is gekoppeld, kan de WKND-site de JavaScript-bibliotheek van de eigenschap tag op de webpagina&#39;s laden met de tags in de configuratie van de Adobe Experience Platform-cloudservice.
 
 ### Eigenschappen van tag verifiëren bij laden van WKND
 
-Gebruikend Adobe Experience Platform Debugger [ Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) uitbreiding, verifieer als het markeringsbezit op WKND pagina&#39;s laadt. U kunt verifiëren,
+Gebruikend de Adobe Experience Platform Debugger [ Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) uitbreiding, verifieer als het markeringsbezit op WKND pagina&#39;s laadt. U kunt verifiëren,
 
 + Eigenschappen van tags, zoals extensie, versie, naam en meer.
 + Platform Web SDK bibliotheekversie, DataStream ID
@@ -190,12 +194,12 @@ Gebruikend Adobe Experience Platform Debugger [ Chrome ](https://chrome.google.c
 
 ## Dataset maken - Experience Platform
 
-De gegevens van de voorproef die het gebruiken van Web SDK worden verzameld worden opgeslagen in de gegevens van het Experience Platform meer als datasets. De dataset is een opslag en beheersconstructie voor een inzameling van gegevens zoals een gegevensbestandlijst die een schema volgt. Leer hoe te om een Dataset tot stand te brengen en vroeger te vormen DataStream om gegevens naar het Experience Platform te verzenden.
+De gegevens van de voorproef die gebruikend Web SDK worden verzameld worden opgeslagen in het de gegevensmeer van het Experience Platform als datasets. De dataset is een opslag en beheersconstructie voor een inzameling van gegevens zoals een gegevensbestandlijst die een schema volgt. Leer hoe te om een Dataset tot stand te brengen en vroeger te vormen DataStream om gegevens naar het Experience Platform te verzenden.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418898?quality=12&learn=on)
 
-Het [ overzicht van Datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) verstrekt meer informatie over concepten, configuraties, en andere inspraakmogelijkheden.
+Het [ overzicht van Datasets ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) verstrekt meer informatie over concepten, configuraties, en andere inspraakmogelijkheden.
 
 
 ## WKND-voorvertoningsgegevens in Experience Platform
@@ -218,8 +222,8 @@ Geweldig werk! U hebt de opstelling van AEM met het Web SDK van het Experience P
 
 ## Aanvullende bronnen
 
-+ [ Gebruikend de Laag van de Gegevens van de Cliënt van de Adobe met de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html)
-+ [ het Integreren de Markeringen en de AEM van de Inzameling van de Gegevens van het Experience Platform ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-+ [ SDK van het Web van Adobe Experience Platform en overzicht van de Edge Network ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [ leerprogramma&#39;s van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [ overzicht van het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [ Gebruikend de Laag van de Gegevens van de Cliënt van de Adobe met de Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview)
++ [ het Integreren de Markeringen en de AEM van de Inzameling van de Gegevens van het Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview)
++ [ SDK van het Web van Adobe Experience Platform en overzicht van de Edge Network ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)
++ [ leerprogramma&#39;s van de Inzameling van Gegevens ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview)
++ [ overzicht van het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)
