@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 240
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 6922d885c25d0864560ab3b8e38907060ff3cc70
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -187,7 +187,7 @@ Over het algemeen kunnen dezelfde overwegingen voor het in cache plaatsen van in
 
 ### CORS-aanvraagheaders toestaan
 
-Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) over te gaan, moeten zij in de 2} configuratie van Disaptcher worden toegestaan.`/clientheaders`
+Om de vereiste [ HTTP- verzoekkopballen toe te staan om tot AEM voor verwerking ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) over te gaan, moeten zij in de Dispatcher `/clientheaders` configuratie worden toegestaan.
 
 ```
 /clientheaders {
