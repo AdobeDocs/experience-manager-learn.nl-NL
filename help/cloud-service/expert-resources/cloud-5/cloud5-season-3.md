@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
+source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -206,6 +206,21 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 <br/>                
                  Leer hoe u de Admin API in Edge Delivery Services gebruikt om de levenscyclus van inhoud en code te beheren.
             </p>
-        </td>    
+        </td>   
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <img alt="Optimalisatie van Lightroom-score" 
+                     src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <strong> Optimalisering van de Score van de Lithouse </strong> </a>        
+                <br/><em> met James Talbot &amp; Varun Mitra, Cloud Architect </em>
+            </div>
+            <p>
+                <br/>                
+                 Leer wat een vuurtoren score is en technieken om de best mogelijke vuurtoren score te halen.
+            </p>
+        </td>            
     </tr>    
 </table>
