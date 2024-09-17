@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
+source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -208,13 +208,13 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </p>
         </td>   
         <td>
-            <a href="./season-3/cloud5-lighthouse-score-optimization.md">
-                <img alt="Optimalisatie van Lightroom-score" 
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
+                <img alt="Score-optimalisatie voor Lighthouders - Deel 1" 
                      src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
             </a>
             <div>
-                <a href="./season-3/cloud5-lighthouse-score-optimization.md">
-                <strong> Optimalisering van de Score van de Lithouse </strong> </a>        
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
+                <strong> de Optimalisering van de Score van de Lithouse - Deel 1 </strong> </a>
                 <br/><em> met James Talbot &amp; Varun Mitra, Cloud Architect </em>
             </div>
             <p>
@@ -222,5 +222,22 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                  Leer wat een vuurtoren score is en technieken om de best mogelijke vuurtoren score te halen.
             </p>
         </td>            
-    </tr>    
+    </tr> 
+    <tr>
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
+                <img alt="Score-optimalisatie voor Lighthouders - Deel 2"
+                     src="https://video.tv.adobe.com/v/3434042?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
+                <strong> Optimalisering van de Score van de Lithouse - Deel 2 </strong> </a>
+                <br/><em> met James Talbot &amp; Varun Mitra, Cloud Architect </em>
+            </div>
+            <p>
+                <br/>                
+                 Meer informatie over technieken om de totale blokkeertijd te verbeteren.
+            </p>
+        </td>            
+    </tr>        
 </table>
