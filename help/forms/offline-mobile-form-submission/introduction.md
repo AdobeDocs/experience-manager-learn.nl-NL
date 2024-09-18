@@ -1,5 +1,5 @@
 ---
-title: Trigger-AEM-workflow voor introductie van HTML5-formulier
+title: AEM activeren bij verzenden van PDF-formulier
 description: Mobiel formulier blijven invullen in offline modus en mobiel formulier verzenden om AEM workflow te activeren
 feature: Mobile Forms
 doc-type: article
@@ -12,14 +12,14 @@ last-substantial-update: 2021-04-07T00:00:00Z
 jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 342
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-# Gedeeltelijk ingevuld mobiel formulier downloaden en verzenden naar AEM workflow
+# Gedeeltelijk ingevuld mobiel formulier downloaden en verzenden om een AEM workflow te activeren
 
 Een algemeen gebruiksgeval moet de capaciteit hebben om XDP als HTML voor de activiteiten van de gegevensvangst terug te geven. Dit werkt goed als de formulieren eenvoudig zijn en online kunnen worden ingevuld en verzonden. Als het formulier echter complex is en gebruikers het formulier mogelijk niet online kunnen invullen, moeten we de gebruikers de mogelijkheid bieden om interactieve versies van het formulier te downloaden en vervolgens via Acrobat/Reader offline in te vullen. Nadat het formulier is ingevuld, kan de gebruiker het online verzenden.
 Voor dit gebruiksgeval moeten de volgende stappen worden uitgevoerd:

@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials voor AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2101'
 ht-degree: 1%
 
 ---
@@ -222,13 +222,19 @@ ht-degree: 1%
    + [Clientbibliotheek](storing-retrieving-form-data/part4.md)
    + [Adaptief formuliersjabloon](storing-retrieving-form-data/part5.md)
    + [Voorbeeldelementen implementeren](storing-retrieving-form-data/part6.md)
-+ Het teweegbrengen AEM Workflow van de Mobiele voorlegging van het Vorm {#offline-mobile-form-submission}
-   + [Inleiding](offline-mobile-form-submission/introduction.md)
-   + [Aangepast profiel](offline-mobile-form-submission/custom-profile.md)
-   + [Formulierverzending verwerken](offline-mobile-form-submission/handle-form-submission.md)
-   + [Verzonden gegevens opslaan](offline-mobile-form-submission/author-servlet.md)
-   + [Workflow voor revisie PDF](offline-mobile-form-submission/review-workflow.md)
-   + [Implementeren op uw systeem](offline-mobile-form-submission/deploy-assets.md)
++ Het teweegbrengen AEM Workflow op de verzending van de Vorm van de PDF {#offline-mobile-form-submission}
+   + [Deel 1](offline-mobile-form-submission/introduction.md)
+   + [Deel 2](offline-mobile-form-submission/custom-profile.md)
+   + [Deel 3](offline-mobile-form-submission/handle-form-submission.md)
+   + [Deel 4](offline-mobile-form-submission/author-servlet.md)
+   + [Deel 5](offline-mobile-form-submission/review-workflow.md)
+   + [Deel 6](offline-mobile-form-submission/deploy-assets.md)
++ De AEM van de trekker op Mobiele Verzending van het Vorm {#trigger-aem-workflow-on-mobile-form-submission}
+   + [Deel 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
+   + [Deel 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
+   + [Deel 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
+   + [Deel 4](trigger-aem-workflow-on-mobile-form-submission/review-workflow.md)
+   + [Deel 5](trigger-aem-workflow-on-mobile-form-submission/deploy-assets.md)
 + Formulierverzendingen aanvragen {#query-form-submissions}
    + [Inleiding](query-form-submissions/introduction.md)
    + [Doorzoekbare velden maken](query-form-submissions/part1.md)
