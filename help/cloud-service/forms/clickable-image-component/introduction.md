@@ -1,6 +1,6 @@
 ---
-title: Aanklikbare afbeeldingscomponent maken
-description: Aanklikbare afbeeldingscomponent maken in AEM Forms Cloud Service
+title: Een component voor klikbare afbeeldingen maken
+description: Aanklikbare afbeeldingscomponenten maken in AEM Forms Cloud Service.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,14 +10,14 @@ topic: Development
 jira: KT-15968
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: c451472f-d282-4662-9852-8a3e73c5c853
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 1fa202910e6c9d21532c6027647c5f3909931e0e
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
-# Inleiding
+# Inleiding tot klikbare afbeeldingen
 
 Door klikbare afbeeldingen in Forms te gebruiken, kunt u een boeiender, intuïtiever en visueel aantrekkelijke gebruikerservaring creëren. In het kader van dit artikel hebben we SVG gebruikt voor klikbare afbeeldingen, omdat dit verschillende voordelen biedt, met name op het gebied van ontwerpflexibiliteit, prestaties en gebruikerservaring.
 SVG kan worden gemaakt met Adobe Illustrator of een van de gratis onlinegereedschappen. Ik heb de [ Kaart van de V.S. van ](https://simplemaps.com/resources/svg-us) vereenvoudigingen gebruikt om het gebruiksgeval aan te tonen.
