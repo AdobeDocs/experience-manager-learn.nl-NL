@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-09-24T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: d11b07441d8c46ce9a352e4c623ddc1781b9b9be
+source-git-commit: 01e6ef917d855e653eccfe35a2d7548f12628604
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1566'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Leer hoe u aangepaste foutpagina&#39;s implementeert voor uw door AEM as a Cloud
 In deze zelfstudie leert u:
 
 - Standaardfoutpagina&#39;s
-- Foutpagina&#39;s aangeboden door
+- Vanaf waar de foutpagina&#39;s worden weergegeven
    - AEM servicetype - auteur, publiceren, voorvertoning
    - CDN met beheerde Adobe
 - Opties om foutpagina&#39;s aan te passen
@@ -50,8 +50,14 @@ De standaardfoutenpagina _wordt gediend_ van het _AEM diensttype_ (auteur, publi
 
 | Foutpagina aangeboden door | Details |
 |---------------------|:-----------------------:|
-| AEM servicetype - auteur, publiceren, voorvertoning | Wanneer het paginaverzoek door het AEM diensttype wordt gediend, wordt de foutenpagina gediend van het AEM diensttype. |
-| CDN met beheerde Adobe | Wanneer Adobe-geleide CDN _niet het AEM diensttype_ (oorsprongserver) kan bereiken, wordt de foutenpagina gediend van Adobe-geleide CDN. **het is een onwaarschijnlijke gebeurtenis maar het vermelden waard.** |
+| AEM servicetype - auteur, publiceren, voorvertoning | Wanneer het paginaverzoek door het AEM de diensttype wordt gediend en om het even welke bovengenoemde foutenscenario&#39;s voorkomen, wordt de foutenpagina gediend van het AEM de diensttype. |
+| CDN met beheerde Adobe | Wanneer Adobe-geleide CDN _niet het AEM diensttype_ (oorsprongserver) kan bereiken, wordt de foutenpagina gediend van Adobe-geleide CDN. **het is een onwaarschijnlijke gebeurtenis maar de moeite waard om voor te plannen.** |
+
+
+Bijvoorbeeld, zijn de standaardfoutenpagina&#39;s die van het de diensttype en Adobe-beheerde CDN worden gediend als volgt:
+
+![ Standaard AEM de Pagina&#39;s van de Fout ](./assets/aem-default-error-pages.png)
+
 
 Nochtans, kunt u _zowel AEM diensttype als Adobe-beheerde_ CDN foutenpagina&#39;s aanpassen om uw merk aan te passen en een betere gebruikerservaring te verstrekken.
 
@@ -89,9 +95,13 @@ In dit leerprogramma, leert u hoe te om foutenpagina&#39;s aan te passen gebruik
 
 - Controleer of de WKND-sitepagina&#39;s correct worden weergegeven.
 
-## ErrorDocument Apache instructie to customize error pages{#errordocument-directive}
+## ErrorDocument Apache instructie to customize AEM serving error pages{#errordocument}
 
-Laten wij herzien hoe [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) project de `ErrorDocument` richtlijn Apache gebruikt om de pagina&#39;s van de douanefout te tonen.
+Met de Apache-instructie `ErrorDocument` kunt u pagina&#39;s met AEM fouten aanpassen.
+
+In AEM as a Cloud Service is de Apache-instructie-optie `ErrorDocument` alleen van toepassing op de servicetypen Publiceren en Voorvertonen. Het is niet van toepassing op het type van de auteursdienst aangezien Apache + Dispatcher geen deel van de plaatsingsarchitectuur uitmaakt.
+
+Laten wij herzien hoe het [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) project de `ErrorDocument` richtlijn Apache gebruikt om de pagina&#39;s van de douanefout te tonen.
 
 - De `ui.content.sample` module bevat de brandde [ foutenpagina&#39;s ](https://github.com/adobe/aem-guides-wknd/tree/main/ui.content.sample/src/main/content/jcr_root/content/wknd/language-masters/en/errors) @ `/content/wknd/language-masters/en/errors`. Herzie hen in uw [ lokale AEM ](http://localhost:4502/sites.html/content/wknd/language-masters/en/errors) of milieu van AEM as a Cloud Service `https://author-p<ID>-e<ID>.adobeaemcloud.com/ui#/aem/sites.html/content/wknd/language-masters/en/errors`.
 
@@ -123,28 +133,61 @@ Laten wij herzien hoe [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) pro
 
 - Herzie de pagina&#39;s van de douanefout van de plaats WKND door een onjuiste paginanaam of een weg in uw milieu in te gaan, bijvoorbeeld [ https://publish-p105881-e991000.adobeaemcloud.com/us/en/foo/bar.html ](https://publish-p105881-e991000.adobeaemcloud.com/us/en/foo/bar.html).
 
-## ACS AEM Commons-Fout de Handler van de Pagina om foutenpagina&#39;s aan te passen{#acs-aem-commons-error-page-handler}
+## ACS AEM Commons-Fout de Handler van de Pagina om AEM gediende foutenpagina&#39;s aan te passen{#acs-aem-commons}
 
-Om foutenpagina&#39;s aan te passen die de manager van de Pagina van de Fout ACS AEM Commons gebruiken, herzie [ hoe te ](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html#how-to-use) sectie gebruiken.
+Om AEM gediende foutenpagina&#39;s over _aan te passen alle AEM de diensttypes_, kunt u de [ ACS AEM de Handler van de Pagina van de Fout van de Opdrachten van de Opdracht ](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) optie gebruiken.
 
-## CDN-foutpagina&#39;s om foutpagina&#39;s aan te passen{#cdn-error-pages}
+. Voor gedetailleerde geleidelijke instructies, zie [ hoe te ](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html#how-to-use) sectie gebruiken.
+
+## CDN-foutpagina&#39;s om door CDN bediende foutpagina&#39;s aan te passen{#cdn-error-pages}
+
+Om foutenpagina&#39;s aan te passen die door Adobe-geleide CDN worden gediend, gebruik de CDN foutenpagina&#39;s optie.
 
 Laten wij CDN foutenpagina&#39;s uitvoeren om foutenpagina&#39;s aan te passen wanneer Adobe-geleide CDN niet het AEM diensttype (oorsprongserver) kan bereiken.
 
 >[!IMPORTANT]
 >
-> Merk op dat Adobe-geleide CDN niet het AEM diensttype (oorsprongserver) kan bereiken een onwaarschijnlijke gebeurtenis maar de moeite waard is voor planning.
+> _Adobe-geleide CDN kan niet het AEM diensttype_ (oorsprongserver) bereiken is een **onwaarschijnlijke gebeurtenis** maar de moeite waard van planning voor.
+
+De stappen op hoog niveau voor het implementeren van CDN-foutpagina&#39;s zijn:
+
+- Ontwikkelen van een aangepaste pagina met foutpagina-inhoud als een toepassing voor één pagina (SPA).
+- Host de statische dossiers die voor de CDN foutenpagina worden vereist in een openbaar toegankelijke plaats.
+- Configureer de CDN-regel (errorPages) en verwijs naar de bovenstaande statische bestanden.
+- Stel de gevormde CDN regel aan het milieu van AEM as a Cloud Service op gebruikend de pijpleiding van Cloud Manager.
+- Test de CDN-foutpagina&#39;s.
 
 
 ### Overzicht van CDN-foutpagina&#39;s
 
-De CDN foutenpagina wordt uitgevoerd als Enige Toepassing van de Pagina (SPA) door Adobe-geleide CDN.
+De CDN foutenpagina wordt uitgevoerd als Enige Toepassing van de Pagina (SPA) door Adobe-geleide CDN. Het SPA document van de HTML dat door Adobe-beheerde CDN wordt geleverd bevat het absolute minimum HTML fragment. De inhoud van de aangepaste foutpagina wordt dynamisch gegenereerd met een JavaScript-bestand. Het JavaScript-bestand moet door de klant worden ontwikkeld en gehost op een openbaar toegankelijke locatie.
 
-De WKND-specifieke inhoud met branding moet dynamisch worden gegenereerd met het JavaScript-bestand. Het JavaScript-bestand moet worden gehost op een openbaar toegankelijke locatie. De volgende statische bestanden moeten dus worden ontwikkeld en gehost op een openbaar toegankelijke locatie:
+Het fragment van HTML dat door Adobe-beheerde CDN wordt geleverd heeft de volgende structuur:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    ...
+
+    <title>{title}</title>
+    <link rel="icon" href="{icoUrl}">
+    <link rel="stylesheet" href="{cssUrl}">
+  </head>
+  <body>
+    <script src="{jsUrl}"></script>
+  </body>
+</html>
+```
+
+Het HTML-fragment bevat de volgende plaatsaanduidingen:
 
 1. **jsUrl**: De absolute URL van het dossier van JavaScript om de inhoud van de foutenpagina terug te geven door HTML elementen dynamisch te creëren.
 1. **cssUrl**: De absolute URL van het CSS dossier om de inhoud van de foutenpagina te stileren.
 1. **icoUrl**: Absolute URL van het favicon.
+
+
 
 ### Een aangepaste foutpagina ontwikkelen
 
@@ -339,9 +382,11 @@ Voer de volgende stappen uit om de CDN-foutpagina&#39;s te testen:
 
 ## Samenvatting
 
-In deze zelfstudie hebt u geleerd hoe u aangepaste foutpagina&#39;s voor uw door AEM as a Cloud Service gehoste website kunt implementeren.
+In deze zelfstudie hebt u meer geleerd over standaardfoutpagina&#39;s, waar de foutpagina&#39;s vandaan komen, en over opties voor het aanpassen van foutpagina&#39;s. U hebt geleerd hoe u aangepaste foutpagina&#39;s kunt implementeren met de opties `ErrorDocument` Apache, `ACS AEM Commons Error Page Handler` en `CDN Error Pages` .
 
-U leerde ook de gedetailleerde stappen voor de CDN foutenpagina&#39;s optie om foutenpagina&#39;s aan te passen wanneer Adobe-geleide CDN niet het AEM diensttype (oorsprongserver) kan bereiken.
+## Aanvullende bronnen
 
+- [ Vormend CDN de Pagina&#39;s van de Fout ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
+- [ Cloud Manager - Config pijpleidingen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
 
