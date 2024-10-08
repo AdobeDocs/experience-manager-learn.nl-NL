@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
+source-git-commit: 4806312931038cc31e6bcf67f242483f62723387
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -237,6 +237,21 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             <p>
                 <br/>                
                  Meer informatie over technieken om de totale blokkeertijd te verbeteren.
+            </p>
+        </td>            
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
+                <img alt="Score-optimalisatie voor Lighthouders - Deel 3"
+                     src="https://video.tv.adobe.com/v/3435001?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
+                <strong> Optimalisering van de Score van de Lithouse - Deel 3 </strong> </a>
+                <br/><em> met James Talbot &amp; Varun Mitra, Cloud Architect </em>
+            </div>
+            <p>
+                <br/>                
+                 Leer over technieken om de Grootste Inhoudelijke Verf (LCP) te verbeteren.
             </p>
         </td>            
     </tr>        
