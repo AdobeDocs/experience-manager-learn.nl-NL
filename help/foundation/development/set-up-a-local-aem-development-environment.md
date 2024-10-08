@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: d731a7131b997fa272013e8d62aa2251e25c08e4
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2394'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Het opzetten van een lokale ontwikkelomgeving is de eerste stap bij het ontwikke
 
 Wanneer we naar een lokale AEM verwijzen, hebben we het over een kopie van Adobe Experience Manager die op de persoonlijke machine van een ontwikkelaar draait. ***allen*** AEM ontwikkeling zou moeten beginnen door code tegen een lokale AEM instantie te schrijven en in werking te stellen.
 
-Als u nieuw aan AEM bent, zijn er twee basis in werking gestelde wijzen kan worden geïnstalleerd: ***Auteur*** en ***Publish***. De ***Auteur*** [ runmode ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) is het milieu dat de digitale marketers gebruiken om inhoud tot stand te brengen en te beheren. Wanneer het ontwikkelen van het grootste deel van de tijd, stelt u code aan een instantie van de Auteur op. Zo kunt u pagina&#39;s maken en componenten toevoegen en configureren. AEM Sites is een WYSIWYG-ontwerptoepassing voor CMS en daarom kunnen de meeste CSS en JavaScript worden getest op basis van een ontwerpinstantie.
+Als u nieuw aan AEM bent, zijn er twee basis in werking gestelde wijzen kan worden geïnstalleerd: ***Auteur*** en ***Publish***. De ***Auteur*** [ runmode ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) is het milieu dat de digitale marketers gebruiken om inhoud tot stand te brengen en te beheren. Wanneer het ontwikkelen van het grootste deel van de tijd, stelt u code aan een instantie van de Auteur op. Zo kunt u pagina&#39;s maken en componenten toevoegen en configureren. AEM Sites is een WYSIWYG-ontwerpversie van CMS en daarom kunnen de meeste CSS en JavaScript worden getest op basis van een ontwerpinstantie.
 
 Het is ook *kritieke* testcode tegen een lokale ***Publish*** instantie. De ***Publish*** instantie is het AEM milieu dat de bezoekers aan uw website met in wisselwerking staan. Terwijl ***Publish*** instantie de zelfde technologiestapel zoals de ***3} instantie van de Auteur {is, zijn er één of ander belangrijk onderscheid met configuraties en toestemmingen.*** De code moet tegen een lokale ***Publish*** instantie worden getest alvorens aan milieu&#39;s op hoger niveau wordt bevorderd.
 
@@ -181,6 +181,7 @@ Wanneer u een IDE gebruikt, moet u `classic` controleren op het tabblad Geweven 
 * **[repo ](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - FTP-als hulpmiddel voor inhoud JCR
 * **[geaemfed ](https://aemfed.io/)** - versneller uw AEM front-end werkschema
 * **[AEM Synchronisatie ](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Communautaire gesteunde &#42; uitbreiding voor de Code van Visual Studio
+* **[WKND project ](https://github.com/adobe/aem-guides-wknd)** - Voorbeeld AEM project dat in deze video wordt getoond.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
