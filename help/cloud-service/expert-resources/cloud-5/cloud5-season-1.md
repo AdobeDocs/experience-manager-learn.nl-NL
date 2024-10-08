@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
 duration: 112
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: ffd90bec7ef63cac96590e59b1b5a92d043cbc03
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -105,47 +105,6 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
       <p>
         <br/>
          Deel één (van twee) van onze tips en trucs voor het migreren naar de cloud. Onze belangrijkste focus in deel één is de beste praktijken en voorbereidend werk die u klaar maken voor migratie.
-      </p>
-   </td> 
-  </tr>
-<tr>
-   <td>
-        <a href="./cloud5-aem-content-migration-part-2.md">
-            <img alt="Migratie (deel 2)" src="./imgs/007-thumb.png"/>
-        </a>
-      <div>
-        <a href="./cloud5-aem-content-migration-part-2.md"><strong> Migratie (deel 2) </strong></a>     
-         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
-      </div>
-      <p>
-        <br/>
-         Deel twee (van twee) van onze tips en trucs voor migratie naar de cloud. Deel twee gaat voornamelijk over het gebruik van de beschikbare instrumenten voor migratie.
-      </p>
-     </td>   
-     <td>
-        <a href="./cloud5-aem-dispatcher-validator.md">
-            <img alt="Dispatcher Validator" src="./imgs/008-thumb.png"/>
-        </a>
-      <div>
-         <a href="./cloud5-aem-dispatcher-validator.md"><strong> Validator van Dispatcher </strong></a>
-         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
-      </div>
-      <p>
-        <br/>
-         Als onderdeel van de eerdere migratiebesprekingen kijken we naar de validator van de verzender en naar een aantal taken die deze kan uitvoeren.
-      </p>
-   </td>
-     <td>
-        <a href="./cloud5-aem-search-and-indexing.md">
-            <img alt="Tips voor indexeren en zoeken" src="./imgs/009-thumb.png"/>
-        </a>
-      <div>
-         <a href="./cloud5-aem-search-and-indexing.md"><strong> het Indexeren en van het Onderzoek Uiteinden </strong></a>
-         <br/><em> met Darin Kuntze &amp; James Talbot, de Hogere Architecten van de Wolk </em>
-      </div>
-      <p>
-        <br/>
-         Voor iets zo complex zoals indexeren en onderzoek, toont het team u wat gemakkelijke wins voor het optimaliseren van uw ontwikkelingstijd en het oplossen van dingen alvorens zij problemen worden.
       </p>
    </td> 
   </tr>
