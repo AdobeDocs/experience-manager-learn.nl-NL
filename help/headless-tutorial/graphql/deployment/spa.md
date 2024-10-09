@@ -11,7 +11,7 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: f1b13bba9e83ac1d25f2af23ff2673554726eb19
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Hoe SPA en AEM verkeer op het gedeelde domein wordt verpletterd, is aan u: CDN m
 
 Hieronder vindt u implementatieconfiguraties die vereist zijn voor SPA productieimplementaties, wanneer deze worden gehost op hetzelfde domein als AEM.
 
-| SPA maakt verbinding met | AEM auteur | AEM Publish | Voorvertoning AEM |
+| SPA maakt verbinding met → | AEM auteur | AEM Publish | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Delen van bronnen van oorsprong (CORS) | ✘ | ✘ | ✘ |
@@ -70,7 +70,7 @@ Aangezien AEM en de SPA van verschillende domeinen worden betreden, Webbrowsers 
 
 Hieronder vindt u implementatieconfiguraties die vereist zijn voor SPA productieimplementaties, wanneer deze worden gehost op een ander domein dan AEM.
 
-| SPA maakt verbinding met | AEM auteur | AEM Publish | Voorvertoning AEM |
+| SPA maakt verbinding met → | AEM auteur | AEM Publish | Voorvertoning AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [ de filters van Dispatcher ](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [ bron het delen van de kruis-oorsprong (CORS) ](./configurations/cors.md) | ✔ | ✔ | ✔ |
