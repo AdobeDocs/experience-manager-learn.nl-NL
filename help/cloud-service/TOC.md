@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 8d9e6bc44164ff3acfa2c7eadffc60bbc5e8306e
+source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1307'
 ht-degree: 4%
 
 ---
@@ -269,6 +269,11 @@ ht-degree: 4%
       + [Gegevenselementen maken](./forms/form-data-analytics/data-elements.md)
       + [Regels maken](./forms/form-data-analytics/rules.md)
       + [De oplossing testen](./forms/form-data-analytics/test.md)
+   + Knopvariaties maken {#style-system}
+      + [Inleiding](./forms/style-system/introduction.md)
+      + [Beleid definiëren](./forms/style-system/style-policy.md)
+      + [Variaties definiëren](./forms/style-system/create-variations.md)
+      + [Variaties testen](./forms/style-system/build.md)
    + Verticale tabbladen gebruiken {#using-vertical-tabs}
       + [1. Inleiding](./forms/using-vertical-tabs/introduction.md)
       + [2. Formulier maken](./forms/using-vertical-tabs/create-af.md)
