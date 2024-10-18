@@ -9,9 +9,9 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: ed64dd303a384d48f76c9b8e8e925f5d3b8f3247
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Selecteer het knooppunt ``zip`` en stel de eigenschappen ervan in zoals hieronde
 Selecteer het knooppunt ``state`` en stel de eigenschappen ervan in zoals hieronder weergegeven. Let op het fieldType van de status - deze is ingesteld op een vervolgkeuzelijst
 ![ staat ](assets/state.png)
 
-## Standaardwaarden instellen voor het statusveld
+## Opties instellen voor het statusveld
 
 Selecteer het knooppunt ``state`` en voeg de volgende eigenschappen toe.
 
