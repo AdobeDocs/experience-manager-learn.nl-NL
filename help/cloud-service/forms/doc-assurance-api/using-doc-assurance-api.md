@@ -8,9 +8,9 @@ version: Cloud Service
 feature: Document Services
 topic: Development
 jira: KT-15508
-badgeVersions: label="AEM Forms Cloud Service" before-title="false"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 40617082-4d23-4c91-a016-2d947187052b
-source-git-commit: ed64dd303a384d48f76c9b8e8e925f5d3b8f3247
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -28,9 +28,9 @@ In dit artikel vindt u Java-codefragmenten waarmee u de API kunt gaan gebruiken.
 
 ## Vereisten
 
-* Ervaring met AEM Forms Cloud Service
+* Ervaring met AEM Forms as a Cloud Service
 * Ervaring in het gebruiken van [ de Componenten van HTTP Apache ](https://hc.apache.org/httpcomponents-client-4.5.x/)
-* Toegang tot de omgeving van AEM Forms Cloud Service
+* Toegang tot de as a Cloud Service omgeving van AEM Forms
 
 ## Inspect-document
 

@@ -1,6 +1,6 @@
 ---
 title: Adrescomponent maken
-description: Nieuwe adreskern-component maken in AEM Forms Cloud Service
+description: Nieuwe adreskern-component maken in AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -9,16 +9,16 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: be25be52-2914-4820-9356-678a326f8edc
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
 # Uw project implementeren
 
-Voordat u het project implementeert op uw AEM Forms-Cloud Service, is het raadzaam het project te implementeren in uw lokale, voor de cloud geschikte instantie van AEM Forms.
+Voordat u het project gaat implementeren op uw AEM Forms-as a Cloud Service, wordt u aangeraden het project te implementeren in uw lokale cloudinstantie van AEM Forms.
 
 ## Wijzigingen synchroniseren met uw AEM project
 

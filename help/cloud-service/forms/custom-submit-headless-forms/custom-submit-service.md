@@ -11,9 +11,9 @@ topic: Development
 jira: KT-13520
 exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Om een douane te schrijven verzend de dienst, werden de volgende stappen gevolgd
 
 ## AEM project maken
 
-Als u reeds een bestaand project van de Cloud Service van AEM Forms hebt kunt u [ springen aan het schrijven van douane voorlegt dienst ](#Write-the-custom-submit-service)
+Als u reeds een bestaand as a Cloud Service project van AEM Forms hebt kunt u [ springen aan het schrijven van douane voorlegt dienst ](#Write-the-custom-submit-service)
 
 * Maak een map met de naam cloudmanager op het station C.
 * Naar deze nieuwe map navigeren

@@ -1,6 +1,6 @@
 ---
 title: Adrescomponent maken
-description: Nieuwe adreskern-component maken in AEM Forms Cloud Service
+description: Nieuwe adreskern-component maken in AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,7 +10,7 @@ topic: Development
 jira: KT-15752
 exl-id: 21b6640e-5cfa-4902-9660-a2b1c91b285d
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: ed64dd303a384d48f76c9b8e8e925f5d3b8f3247
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
@@ -27,7 +27,7 @@ In deze zelfstudie maken we een adresblokcomponent. De component van het adresbl
 
 ## Vereisten
 
-* Toegang tot AEM Forms Cloud Service Instance
+* Toegang tot AEM Forms as a Cloud Service Instance
 * Enige ervaring met het ontwikkelen van formulieren met de AEM Forms-module
 * Ervaring met het opzetten van een ontwikkelomgeving voor AEM/AEM Forms (Git, IntelliJ, enz.)
 
