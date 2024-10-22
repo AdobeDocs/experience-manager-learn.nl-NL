@@ -10,9 +10,9 @@ topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
+source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ ht-degree: 0%
 # Wijzigingen testen
 
 Creeer een adaptieve vorm die op **&quot;Leeg met de malplaatje van de Componenten van de Kern&quot;wordt gebaseerd**. Sleep drie knoppen naar het formulier en geef deze het label &#39;&#39;Corporate&#39;&#39;, &#39;&#39;Marketing&#39;&#39; en &#39;&#39;Default&#39;&#39;.
-Wijs de juiste stijlvarianten toe aan de bedrijfs- en marketingknoppen door het verfpenseel te selecteren zoals wordt weergegeven
+Wijs de juiste stijlvarianten toe aan de bedrijfs- en marketingknoppen door het penseel hieronder te selecteren.
 
 ![ stijlen ](assets/marketing-variation.png)
+
+Op de derde knop wordt de standaardstijl toegepast.
 
 ## Het themaproject samenstellen
 
