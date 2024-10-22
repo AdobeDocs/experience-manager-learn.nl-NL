@@ -7,14 +7,14 @@ feature: Operations, Dispatcher
 role: Developer, Architect
 level: Intermediate
 jira: KT-11466
-last-substantial-update: 2022-10-14T00:00:00Z
+last-substantial-update: 2024-10-22T00:00:00Z
 index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 3cc9b4fa0a30d36638a8c28a73663ffa455ba4a3
+source-git-commit: 9e093e87c8c369ddd750be4a7dc30e2bf86495d5
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ AEM URL-omleidingsoplossingen zijn als volgt:
 | [ bij Edge via AEM-geleide CDN ](#at-edge-via-aem-managed-cdn) | ✔ | ✘ | ✔ | Edge/CDN (ingebouwde) |
 | [ bij Edge via breng uw eigen CDN (BYOCDN) ](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN (BYOCDN) |
 | [ Apache `mod_rewrite` regels als Dispatcher config ](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
-| [ ACS Commons - richt de Manager van de Kaart ](#redirect-map-manager) | ✘ | ✔ | ✘ | Dispatcher |
+| [ ACS Commons - richt de Manager van de Kaart ](#redirect-map-manager) | ✘ | ✔ | ✔ | Dispatcher |
 | [ ACS Commons - richt Manager ](#redirect-manager) opnieuw | ✘ | ✔ | ✔ | AEM |
 | [ het `Redirect` paginabezit ](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
 
@@ -76,7 +76,7 @@ Er zijn twee eigenschappen beschikbaar binnen [ ACS AEM Commons ](https://adobe-
 
 #### Omleiden Map Manager
 
-[ Redirect de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) hulp AEM 6.x beheerders om [ Apache te handhaven en te publiceren RewriteMap ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) dossiers zonder de server van het Web van Apache direct tot toegang te hebben of een Apache de servernieuw begin van het Web te vereisen. Deze eigenschap staat toestemmingengebruikers toe om, omleidingsregels van een console in AEM tot stand te brengen bij te werken en te schrappen, zonder de hulp van het ontwikkelingsteam of een AEM plaatsing. Redirect de Manager van de Kaart is **NIET compatibel met AEM as a Cloud Service**.
+[ Redirect de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) helpt AEM beheerders om [ Apache te handhaven en te publiceren RewriteMap ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) dossiers zonder de server van het Web van Apache direct tot toegang te hebben of een Apache de servernieuw begin van het Web te vereisen. Deze eigenschap staat toestemmingengebruikers toe om, omleidingsregels van een console in AEM tot stand te brengen bij te werken en te schrappen, zonder de hulp van het ontwikkelingsteam of een AEM plaatsing. Redirect Manager is zowel **AEM as a Cloud Service** als **AEM 6.x** compatibel.
 
 #### Omleidingsbeheer
 
