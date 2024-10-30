@@ -10,9 +10,9 @@ topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
+source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Op de derde knop wordt de standaardstijl toegepast.
 
 ## Het themaproject samenstellen
 
-De volgende stap is het themaproject te bouwen. Navigeer aan de wortelomslag van uw themaproject en stel in werking bevel _**npm looppas bouwt**_ zoals aangetoond in het hieronder ontsproten scherm
+De volgende stap is het themaproject te bouwen. Navigeer aan de wortelomslag van uw themaproject en stel in werking bevel _**npm looppas bouwt**_ zoals aangetoond in het hieronder ontsproten scherm.
 
 ![ bouwstijl-thema ](assets/build-theme.png)
 
@@ -46,4 +46,8 @@ Zodra het themaproject met succes wordt gebouwd, zijn uw bereid om de veranderin
 * De knoppen moeten worden bijgewerkt met de juiste stijlen, zoals hieronder wordt weergegeven.
 
 ![ definitief-knopen ](assets/final-state-buttons.png)
+
+## De wijzigingen verschuiven
+
+Als u met de veranderingen wordt tevredengesteld, kunt u de veranderingen in uw wolkeninstantie duwen gebruikend de [ front-end pijpleiding ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
 
