@@ -13,7 +13,7 @@ exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integratie" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
 duration: 443
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 606607b85fae012e76d57b0b35820247a6862e32
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Leer hoe u gegevens die vanaf een Adobe Experience Manager-site zijn vastgelegd,
 
 ## Wat u gaat bouwen {#what-build}
 
-Het WKND-marketingteam is geïnteresseerd in de vraag welke `Call to Action (CTA)` -knoppen het beste op de startpagina uitvoeren. In dit leerprogramma, creeer een project in **Analysis Workspace** om de prestaties van verschillende knopen te visualiseren CTA en gebruikersgedrag op de plaats te begrijpen. De volgende informatie wordt gevangen gebruikend Adobe Analytics wanneer een gebruiker een Vraag aan de knoop van de Actie (CTA) op de WKND homepage klikt.
+Het WKND-marketingteam is geïnteresseerd in de vraag welke `Call to Action (CTA)` -knoppen het beste op de startpagina uitvoeren. In dit leerprogramma, creeer een project in **Analysis Workspace** om de prestaties van verschillende knopen van CTA te visualiseren en gebruikersgedrag op de plaats te begrijpen. De volgende informatie wordt gevangen gebruikend Adobe Analytics wanneer een gebruiker een Vraag aan de knoop van de Actie (CTA) op de WKND homepage klikt.
 
 **Variabelen van Analytics**
 
@@ -45,7 +45,7 @@ Hieronder vindt u een overzicht van de analytische variabelen die momenteel word
 ### Doelstellingen {#objective}
 
 1. Maak een rapportsuite of gebruik een bestaande set.
-1. Vorm [ Variabelen van de Omzetting (eVars) ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) en [ Gebeurtenissen van het Succes (Gebeurtenissen) ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) in de Reeks van het Rapport.
+1. Vorm [ Variabelen van de Omzetting (eVars) ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) en [ Gebeurtenissen van het Succes (Gebeurtenissen) ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event) in de Reeks van het Rapport.
 1. Creeer een [ project van Analysis Workspace ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) om gegevens met de hulp van hulpmiddelen te analyseren die u toestaan om, inzichten snel te bouwen te analyseren en te delen.
 1. Deel het Analysis Workspace-project met andere teamleden.
 
@@ -101,11 +101,11 @@ Gebeurtenissen met succes zijn handelingen die kunnen worden bijgehouden. U bepa
 
 ### Succesgebeurtenissen configureren
 
-Daarna, creëren wij een gebeurtenis om de Knoop te volgen CTA klikt.
+Laten we nu een gebeurtenis maken om de klik op de CTA Button bij te houden.
 
 1. Van het **venster van de Manager van de Reeks van het 0} Rapport {, selecteer** Identiteitskaart van de Reeks van het Rapport **en klik** uitgeven Montages **.**
 1. Klik **Omzetting** > **Gebeurtenissen van het Succes**
-1. Gebruikend **voeg Nieuwe** optie toe, creeer een gebeurtenis van het douanesucces om de Knoop te volgen CTA klikt en dan **sparen** uw veranderingen.
+1. Gebruikend **voeg Nieuwe** optie toe, creeer een gebeurtenis van het douanesucces om de Knoop van CTA te volgen en dan **sparen** uw veranderingen.
    * `Event` : `event8`
    * `Name`:`CTA Click`
    * `Type`:`Counter`
@@ -116,7 +116,7 @@ Daarna, creëren wij een gebeurtenis om de Knoop te volgen CTA klikt.
 
 Analysis Workspace is een flexibel browserprogramma waarmee u snel analyses kunt maken en inzichten kunt delen. Gebruikend de belemmering-en-dalingsinterface, kunt u uw analyse ambachtelijk maken, visualisaties toevoegen om gegevens aan het leven te brengen, een dataset in werking te stellen, delen, en planningsprojecten met iedereen in uw organisatie.
 
-Daarna, creeer a [ project ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) om een dashboard te bouwen om de prestaties van de knopen CTA door de plaats te analyseren.
+Daarna, creeer a [ project ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) om een dashboard te bouwen om de prestaties van de knopen van CTA door de plaats te analyseren.
 
 1. Van de toolbar van Analytics, uitgezochte **Workspace** en klik om **een Nieuw Project** tot stand te brengen.
 
@@ -148,9 +148,9 @@ Daarna, bouwt een lijst om een visuele vertegenwoordiging van te creëren hoe de
 
    ![ Dimension van de Pagina ](assets/create-analytics-workspace/evar9-dimension.png)
 
-1. De belemmering-daling **CTA klikt** (event8) metrisch op metrische voorkomen en vervangt het. U kon nu een visualisatie bekijken die de Naam van de Pagina (eVar9) en een overeenkomstige telling van CTA klikgebeurtenissen op een pagina toont.
+1. De belemmering-daling **CTA klikt** (event8) metrisch op metrische voorkomen en vervangt het. U kunt nu een visualisatie weergeven die de paginanaam (eVar9) en een corresponderende telling van CTA Click-gebeurtenissen op een pagina weergeeft.
 
-   ![ Metrisch van de Pagina - CTA klikt ](assets/create-analytics-workspace/evar8-cta-click.png)
+   ![ Metrische Pagina - CTA klikt ](assets/create-analytics-workspace/evar8-cta-click.png)
 
 1. Laten we de pagina onderverdelen op basis van het sjabloontype. Selecteer de metrische waarde van de paginasjabloon uit componenten en sleep de metrische waarde van het paginasjabloon naar de dimensie Paginanaam. U kunt de paginanaam nu bekijken, uitgesplitst naar het sjabloontype.
 
@@ -160,11 +160,11 @@ Daarna, bouwt een lijst om een visuele vertegenwoordiging van te creëren hoe de
    * **na**
      ![ eVar5 Metrics ](assets/create-analytics-workspace/evar5-metrics.png)
 
-1. Om te begrijpen hoe de gebruikers met Knopen CTA in wisselwerking staan wanneer zij op de pagina&#39;s van de Plaats WKND zijn, is de verdere verdeling door de metrisch van Knoop identiteitskaart (eVar8) toe te voegen nodig.
+1. Om te begrijpen hoe de gebruikers met de Knopen van CTA in wisselwerking staan wanneer zij op de pagina&#39;s van de Plaats WKND zijn, is verdere verdeling door de metrische van Knoop ID (eVar8) toe te voegen nodig.
 
    ![ eVar8 ](assets/create-analytics-workspace/evar8.png)
 
-1. Hieronder ziet u een visuele vertegenwoordiging van de Plaats WKND die door zijn paginasjabloon wordt verdeeld en verder door gebruikersinteractie met de KND van de Plaats klikt aan de Knopen van de Actie (CTA) wordt verdeeld.
+1. Hieronder ziet u een visuele voorstelling van de WKND-site die is opgesplitst naar de paginasjabloon en verder is onderverdeeld op basis van gebruikersinteractie met de knoppen voor klikken op WKND-site op handeling (CTA).
 
    ![ eVar8 ](assets/create-analytics-workspace/evar8-metric.png)
 
@@ -240,19 +240,19 @@ Vervolgens downloaden we de classificatiesjabloon voor de variabele Button Id (e
 
    ![ identiteitskaart van de Knoop van Workspace ](assets/create-analytics-workspace/workspace-report-button-id.png)
 
-1. Daarna, vervang **Identiteitskaart van de Knoop** metrisch in uw werkruimte die identiteitskaart van een Vraag aan de knoop van de Actie (CTA) met de classificatienaam toont die in de vorige stap wordt gecreeerd.
+1. Daarna, vervang **identiteitskaart van de Knoop** metrisch in uw werkruimte die identiteitskaart van een Vraag aan de knoop van de Actie (CTA) met de classificatienaam toont die in de vorige stap wordt gecreeerd.
 
-1. Van de componentenvinder, onderzoek naar **de Knopen van WKND CTA** en belemmering-daling de **Knopen WKND CTA (Identiteitskaart van de Knoop)** dimensie op metrische identiteitskaart van de Knoop en vervang het.
+1. Van de componentenvinder, onderzoek naar **de Knopen van CTA van WKND** en belemmering-daling de **Knopen van CTA WKND (Identiteitskaart van de Knoop)** dimensie op metrische identiteitskaart van de Knoop en vervang het.
 
    * **vóór**
      ![ Knop van Workspace vóór ](assets/create-analytics-workspace/wknd-button-before.png)
    * **na**
      ![ Knop van Workspace na ](assets/create-analytics-workspace/wknd-button-after.png)
 
-1. U kunt zien dat metrisch van Knoop ID die knoopidentiteitskaart van een Vraag aan de knoop van de Actie (CTA) bevatte nu met een overeenkomstige naam wordt vervangen die in het Malplaatje van de Indeling wordt verstrekt.
-1. Laten we de Workspace-tabel Analytics vergelijken met de startpagina van WKND en de CTA Button-kliktelling en de bijbehorende analyse begrijpen. Gebaseerd op de gegevens van de de lijstlijst van de werkruimte vrije vorm, is het duidelijk dat 22 keer de gebruikers **SKI** knoop en vier keer voor de Camping van de Pagina van het Huis WKND in West Australië **Meer** knoop gelezen hebben geklikt.
+1. U kunt zien dat metrisch van identiteitskaart van de Knoop die knoopidentiteitskaart van een Vraag aan de knoop van de Actie (CTA) bevatte nu met een overeenkomstige naam die in het Malplaatje van de Indeling wordt verstrekt wordt vervangen.
+1. Laten we de Analytics Workspace-tabel vergelijken met de WKND Home-pagina en de CTA Button-kliktelling en de bijbehorende analyse begrijpen. Gebaseerd op de gegevens van de de lijstlijst van de werkruimte vrije vorm, is het duidelijk dat 22 keer de gebruikers **SKI** knoop en vier keer voor de Camping van de Pagina van het Huis WKND in West Australië **Meer** knoop gelezen hebben geklikt.
 
-   ![ CTA- Rapport ](assets/create-analytics-workspace/workspace-report-buttons-wknd.png)
+   ![ het Rapport van CTA ](assets/create-analytics-workspace/workspace-report-buttons-wknd.png)
 
 1. Sla uw Adobe Analytics Workspace-project op en geef een juiste naam en beschrijving op. U kunt desgewenst codes toevoegen aan een werkruimteproject.
 
