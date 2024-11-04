@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: ef9c70e7895176e3cd535141a5de3c49886e666e
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Bij het uitbreiden van functionaliteit en configuraties in Apache Webserver die 
 
 ### Inclusief basislijn Apache
 
-![](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
+![ de Web van HTTPD- Webserver basislijn omvat ](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
 
 Zoals in het diagram boven het httpd binaire getal wordt gezien kijkt slechts aan het httpd.conf- dossier aangezien het configuratiedossier is.  Dat bestand bevat de volgende instructies:
 
