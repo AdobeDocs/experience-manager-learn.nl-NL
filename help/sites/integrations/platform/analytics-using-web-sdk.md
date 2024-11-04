@@ -14,7 +14,7 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 774267b4f4c65c79f185fa3b33383ce9ddd136cb
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 # AEM Sites en Adobe Analytics integreren met Platform Web SDK
 
-Leer de **moderne benadering** op hoe te om Adobe Experience Manager (AEM) en Adobe Analytics te integreren gebruikend het Web SDK van het Platform. Deze uitvoerige zelfstudie begeleidt u door het proces om [ WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) pagina te verzamelen over een periode en CTA klikt gegevens. Vergroot waardevolle inzichten door de verzamelde gegevens te visualiseren in Adobe Analysis Workspace, waar u verschillende meeteenheden en dimensies kunt verkennen. Ook, verken de Dataset van het Platform om de gegevens te verifiëren en te analyseren. Doe mee aan deze reis om de kracht van AEM en Adobe Analytics te benutten voor gegevensgestuurde besluitvorming.
+Leer de **moderne benadering** op hoe te om Adobe Experience Manager (AEM) en Adobe Analytics te integreren gebruikend het Web SDK van het Platform. Deze uitvoerige zelfstudie begeleidt u door het proces om [ WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) paageview en CTA naadloos te verzamelen klikt gegevens. Vergroot waardevolle inzichten door de verzamelde gegevens te visualiseren in Adobe Analysis Workspace, waar u verschillende meeteenheden en dimensies kunt verkennen. Ook, verken de Dataset van het Platform om de gegevens te verifiëren en te analyseren. Doe mee aan deze reis om de kracht van AEM en Adobe Analytics te benutten voor gegevensgestuurde besluitvorming.
 
 ## Overzicht
 
-Het verzamelen van inzichten in gebruikersgedrag is een cruciaal doel voor elk marketingteam. Door te begrijpen hoe de gebruikers met hun inhoud in wisselwerking staan, kunnen de teams geïnformeerde besluiten nemen, strategieën optimaliseren, en betere resultaten drijven. Het WKND-marketingteam, een fictieve entiteit, heeft zich voorgenomen Adobe Analytics op hun website te implementeren om dit doel te bereiken. De primaire doelstelling is gegevens te verzamelen over twee zeer belangrijke metriek: pagina&#39;s en homepage vraag-aan-actie (CTA) klikken.
+Het verzamelen van inzichten in gebruikersgedrag is een cruciaal doel voor elk marketingteam. Door te begrijpen hoe de gebruikers met hun inhoud in wisselwerking staan, kunnen de teams geïnformeerde besluiten nemen, strategieën optimaliseren, en betere resultaten drijven. Het WKND-marketingteam, een fictieve entiteit, heeft zich voorgenomen Adobe Analytics op hun website te implementeren om dit doel te bereiken. Het primaire doel is gegevens te verzamelen over twee belangrijke metriek: pagina&#39;s en homepage vraag-aan-actie (CTA) klikken.
 
-Door pagina&#39;s bij te houden, kan het team analyseren welke pagina&#39;s de meeste aandacht van gebruikers krijgen. Ook, verstrekt het volgen van homepageCTA klikken waardevolle inzichten in de doeltreffendheid van vraag-aan-actie van het team elementen. Deze gegevens kunnen onthullen welke CTA&#39;s met gebruikers resoneren, welke degenen aanpassing nodig hebben, en potentieel nieuwe kansen ontdekken om gebruikersbetrokkenheid en aandrijvingsomzettingen te verbeteren.
+Door pagina&#39;s bij te houden, kan het team analyseren welke pagina&#39;s de meeste aandacht van gebruikers krijgen. Ook, verstrekt het volgen van homepage CTA klikken waardevolle inzichten in de doeltreffendheid van vraag-aan-actie van het team elementen. Deze gegevens kunnen onthullen welke CTA&#39;s met gebruikers resoneren, welke degenen aanpassing nodig hebben, en potentieel nieuwe kansen ontdekken om gebruikersbetrokkenheid en aandrijvingsomzettingen te verbeteren.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419872?quality=12&learn=on)
@@ -82,7 +82,7 @@ Voor meer informatie over concepten en diverse elementen die in het SDR- documen
 
 De eerste stap bestaat uit het instellen van Adobe Analytics, met name het rapporteren van een suite met conversievariabelen (of eVar) en succesgebeurtenissen. De omzettingsvariabelen worden gebruikt om oorzaak en effect te meten. De succesgebeurtenissen worden gebruikt om acties bij te houden.
 
-In dit leerprogramma, `eVar5, eVar6, and eVar7` spoor _WKND de Naam van de Pagina, identiteitskaart van WKND CTA, en de Naam van WKND CTA_ respectievelijk, en `event7` wordt gebruikt om _WKND CTA te volgen klikt Gebeurtenis_.
+In dit leerprogramma, `eVar5, eVar6, and eVar7` spoor _WKND de Naam van de Pagina, identiteitskaart van CTA WKND, en de Naam van CTA WKND_ respectievelijk, en `event7` wordt gebruikt om _WKND CTA te volgen klikt Gebeurtenis_.
 
 Om die inzichten te analyseren, te verzamelen en te delen met anderen uit de verzamelde gegevens, wordt een project in Analysis Workspace gemaakt.
 
@@ -92,7 +92,7 @@ Om meer over de opstelling en de concepten van Analytics te leren, worden de vol
 
 + [ Reeks van het Rapport ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
 + [ Variabelen van de Omzetting ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
-+ [ Gebeurtenissen van het Succes ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html)
++ [ Gebeurtenissen van het Succes ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
 + [ Analysis Workspace ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
 
 ## DataStream bijwerken - Analyseservice toevoegen
@@ -118,8 +118,8 @@ In het [ vorige leerprogramma ](./web-sdk.md), wordt een markeringsbezit gecreee
 
 + De paginanaam toewijzen aan `eVar5`
 + Het teweegbrengen van de **paginaView** vraag van Analytics (of verzend baken)
-+ Het verzamelen van gegevens CTA gebruikend de Laag van de Gegevens van de Cliënt van de Adobe
-+ Wijs de CTA-id en -naam toe aan respectievelijk `eVar6` en `eVar7` . Ook, klikt CTA telling aan `event7`
++ CTA-gegevens verzamelen met de gegevenslaag voor Adobe client
++ Wijs de CTA-id en -naam toe aan respectievelijk `eVar6` en `eVar7` . Ook, klikt CTA tellen aan `event7`
 + Het teweegbrengen van de **verbinding klikt** vraag van Analytics (of verzendt baken)
 
 
@@ -229,7 +229,7 @@ Om ervoor te zorgen dat de bijgewerkte markeringseigenschap op de WKND-sitepagin
 
 + Om ervoor te zorgen dat het markeringsbezit de recentste versie is, controleer de bouwstijldatum.
 
-+ Om de XDM gebeurtenisgegevens voor zowel PageView als HomePage te verifiëren klikt CTA, gebruik de het menuoptie van SDK van het Web van het Experience Platform binnen de uitbreiding.
++ Om de XDM gebeurtenisgegevens voor zowel PageView als HomePage CTA Click te verifiëren, gebruik de het menuoptie van SDK van het Web van het Experience Platform binnen de uitbreiding.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419883?quality=12&learn=on)
 
@@ -249,7 +249,7 @@ De dataset is een opslag en beheersconstructie voor een inzameling van gegevens 
 
 Analysis Workspace is een krachtig hulpmiddel in Adobe Analytics waarmee gegevens op een flexibele en interactieve manier kunnen worden verkend en weergegeven. Het verstrekt een belemmering-en-dalingsinterface om douanerapporten tot stand te brengen, geavanceerde segmentatie uit te voeren, en diverse gegevensvisualisaties toe te passen.
 
-Laten wij het project van Analysis Workspace heropenen dat in de [ Analytische ](#setup-analytics---report-suite-analysis-workspace) stap van de Opstelling wordt gecreeerd. In de **Hoogste sectie van Pagina&#39;s**, onderzoek diverse metriek zoals bezoeken, unieke bezoekers, ingangen, stuittarief, en meer. Om de prestaties van WKND pagina&#39;s en homepageCTAs te beoordelen, sleep-en-daling de WKND-specifieke afmetingen (de Naam van de Pagina WKND, de Naam van WKND CTA) en metriek (de Gebeurtenis van de Klik van WKND CTA). Deze inzichten zijn van groot belang voor de marktpartijen om te begrijpen welke CTA&#39;s effectiever zijn en gegevensgestuurde beslissingen nemen, in overeenstemming met hun bedrijfsdoelstellingen.
+Laten wij het project van Analysis Workspace heropenen dat in de [ Analytische ](#setup-analytics---report-suite-analysis-workspace) stap van de Opstelling wordt gecreeerd. In de **Hoogste sectie van Pagina&#39;s**, onderzoek diverse metriek zoals bezoeken, unieke bezoekers, ingangen, stuittarief, en meer. Als u de prestaties van WKND-pagina&#39;s en CTA&#39;s van de homepage wilt beoordelen, sleept u de WKND-specifieke afmetingen (WKND-paginanaam, WKND CTA-naam) en de afmetingen (WKND CTA Click Event). Deze inzichten zijn van groot belang voor de marktpartijen om te begrijpen welke CTA&#39;s effectiever zijn en gegevensgestuurde beslissingen nemen, in overeenstemming met hun bedrijfsdoelstellingen.
 
 Om gebruikersreizen visualiseren, gebruik de visualisatie van de Stroom, die met de **Naam van de Pagina WKND** begint en zich in diverse wegen uitbreidt.
 
@@ -257,7 +257,7 @@ Om gebruikersreizen visualiseren, gebruik de visualisatie van de Stroom, die met
 
 ## Samenvatting
 
-Geweldig werk! U hebt de opstelling van AEM en Adobe Analytics gebruikend het Web SDK van het Platform voltooid om de voorproef en CTA klikgegevens te verzamelen, te analyseren.
+Geweldig werk! U hebt de installatie van AEM en Adobe Analytics voltooid met de Platform Web SDK voor het verzamelen, analyseren van de paginaweergave en het klikken op CTA-gegevens.
 
 Het implementeren van Adobe Analytics is van cruciaal belang voor marketingteams om inzicht te krijgen in gebruikersgedrag, geïnformeerde beslissingen te nemen, zodat ze hun inhoud kunnen optimaliseren en gegevensgestuurde beslissingen kunnen nemen.
 
