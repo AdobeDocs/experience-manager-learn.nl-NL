@@ -12,9 +12,9 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: d5dff9378f31acb0fbce0bb86e2d0022ee725f83
+source-git-commit: 50ddda35adbb3af0b66a6e24a135fd5b94a3fb3a
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '885'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Er zijn twee eigenschappen beschikbaar binnen [ ACS AEM Commons ](https://adobe-
 
 #### Omleiden Map Manager
 
-[ Redirect de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) helpt AEM beheerders om [ Apache te handhaven en te publiceren RewriteMap ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) dossiers zonder de server van het Web van Apache direct tot toegang te hebben of een Apache de servernieuw begin van het Web te vereisen. Deze eigenschap staat toestemmingengebruikers toe om, omleidingsregels van een console in AEM tot stand te brengen bij te werken en te schrappen, zonder de hulp van het ontwikkelingsteam of een AEM plaatsing. Redirect Manager is zowel **AEM as a Cloud Service** (zie [ Pijpleiding-vrije URL richt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) strategie) als **AEM 6.x** compatibel.
+[ Redirect de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) helpt AEM beheerders om [ Apache te handhaven en te publiceren RewriteMap ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) dossiers zonder de server van het Web van Apache direct tot toegang te hebben of een Apache de servernieuw begin van het Web te vereisen. Deze eigenschap staat toestemmingengebruikers toe om, omleidingsregels van een console in AEM tot stand te brengen bij te werken en te schrappen, zonder de hulp van het ontwikkelingsteam of een AEM plaatsing. Redirect de Manager van de Kaart is zowel **AEM as a Cloud Service** (zie [ Pijpleiding-vrije URL richt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) strategie) als **AEM 6.x** compatibel.
 
 #### Omleidingsbeheer
 
