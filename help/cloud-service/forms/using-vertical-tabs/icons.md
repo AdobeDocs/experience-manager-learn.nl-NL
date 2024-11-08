@@ -1,5 +1,5 @@
 ---
-title: Verticale tabbladen gebruiken in AEM Forms as a Cloud Service
+title: Aangepaste pictogrammen toevoegen
 description: Aangepaste pictogrammen toevoegen aan verticale tabbladen
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -11,9 +11,10 @@ feature: Adaptive Forms
 thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
+source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Het toevoegen van aangepaste pictogrammen aan tabbladen kan de gebruikerservarin
 
 * Verbeterde bruikbaarheid: pictogrammen kunnen snel het doel van elk tabblad overbrengen, zodat gebruikers gemakkelijker kunnen zien wat ze in één oogopslag zoeken. Visuele aanwijzingen zoals pictogrammen helpen gebruikers intuïtiever te navigeren.
 
-* Visuele hiërarchie en focus: pictogrammen maken een duidelijker scheiding tussen tabbladen, waardoor de visuele hiërarchie wordt verbeterd. Hierdoor kunnen belangrijke tabbladen beter opvallen en de aandacht van gebruikers effectiever sturen.
+* Visuele hiërarchie en focus: pictogrammen maken een duidelijker scheiding tussen tabbladen, waardoor de visuele hiërarchie wordt verbeterd. Hierdoor kunnen belangrijke tabbladen beter opvallen en de aandacht van de gebruikers effectief sturen.
 Als u dit artikel volgt, kunt u de pictogrammen zoals hieronder weergegeven plaatsen
 
 ![ pictogrammen ](assets/icons.png)
@@ -42,9 +43,9 @@ De rood gemarkeerde pictogrammen zijn de nieuwe pictogrammen die worden toegevoe
 
 ## Pictogramafbeelding maken om de pictogrammen op te slaan
 
-Maak de pictogramtoewijzing aan het bestand _variable.scss. De kaart SCSS $icon-map is een inzameling van zeer belangrijk-waardeparen, waar elke sleutel een pictogramnaam (zoals huis, familie, enz.) vertegenwoordigt, en elke waarde is de weg aan het beelddossier verbonden aan dat pictogram.
+Maak de pictogramkaart in het bestand _variable.scss. De kaart SCSS $icon-map is een inzameling van zeer belangrijk-waardeparen, waar elke sleutel een pictogramnaam (zoals huis, familie, enz.) vertegenwoordigt, en elke waarde is de weg aan het beelddossier verbonden aan dat pictogram.
 
-![ veranderlijk-scss ](assets/variable.scss)
+![ veranderlijk-scss ](assets/variable_scss.png)
 
 ```css
 $icon-map: (
@@ -81,8 +82,7 @@ De volgende code toevoegen aan _mixin.scss
 
 De add-icon-to-vertical-tab-mix is ontworpen om een aangepast pictogram naast de tekst op een verticaal tabblad toe te voegen. Zo kunt u eenvoudig een afbeelding als een pictogram op tabbladen plaatsen, naast de tekst plaatsen en de afbeelding opmaken om de consistentie en uitlijning te garanderen.
 
-Uitsplitsing van het mengsel
-Dit is wat elk deel van de mix doet:
+Onderverdeling van de mixin, dit is wat elk deel van de mix doet:
 
 Parameters:
 
