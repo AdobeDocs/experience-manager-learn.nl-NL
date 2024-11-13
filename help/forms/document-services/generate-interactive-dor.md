@@ -10,9 +10,9 @@ jira: KT-9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 2625a9127c36ee191eb67128546864c9f6901663
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ U kunt om het even welke vrije online hulpmiddelen gebruiken om [ XSD ](https://
 
 ### Adaptief formulier maken
 
-Maak een adaptief formulier op basis van de XSD van de vorige stap. Koppel het formulier aan het gebruik van de clientbibliotheek &quot;irs&quot;. Deze cliëntbibliotheek heeft de code om een POST te maken vraag aan servlet die de PDF aan de roepende toepassing terugkeert
+Maak een adaptief formulier op basis van de XSD van de vorige stap. Koppel het formulier aan het gebruik van de clientbibliotheek &quot;irs&quot;. Deze cliëntbibliotheek heeft de code om een POST te maken vraag aan servlet die de PDF aan de roepende toepassing terugkeert.
 De volgende code wordt teweeggebracht wanneer de _PDF van de Download_ wordt geklikt
 
 ```javascript
@@ -211,7 +211,7 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-In de voorbeeldcode extraheren we de xdp-naam en andere parameters uit het aanvraagobject. Als het formulier niet is gebaseerd op XSD, wordt het XML-document gemaakt dat met de xdp moet worden samengevoegd. Als het formulier is gebaseerd op XSD, extraheren we gewoon het juiste knooppunt uit de aangepaste formulierverzendgegevens om XML-document te genereren voor samenvoeging met de xdp-sjabloon.
+In deze voorbeeldcode worden de xdp-naam en andere parameters uit het aanvraagobject geëxtraheerd. Als het formulier niet is gebaseerd op een XSD, wordt een nieuw XML-document gemaakt om samen te voegen met het xdp. Als het formulier echter is gebaseerd op XSD, wordt het relevante knooppunt rechtstreeks uit de ingediende gegevens van het adaptieve formulier geëxtraheerd en wordt er een XML-document gegenereerd dat dienovereenkomstig wordt samengevoegd met de xdp-sjabloon.
 
 ## Het voorbeeld op de server implementeren
 
@@ -226,6 +226,11 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [ Voorproef Aangepaste Vorm ](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Vul slechts enkele formuliervelden in.
 1. Klik op PDF downloaden om de PDF op te halen. U moet mogelijk een paar seconden wachten voordat de PDF kan worden gedownload.
+
+>[!NOTE]
+>
+>Wanneer u de gedownloade PDF opent met de PDF-viewer van de browser, worden de gegevens niet weergegeven in de PDF. Open de gedownloade PDF met Adobe Acrobat of Adobe Reader.
+
 
 >[!NOTE]
 >
