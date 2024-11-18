@@ -9,14 +9,14 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 924b3bab-e0ed-4b07-bded-344aab61eac5
-source-git-commit: 74e9962dfb7f451d395a3ec1a56989e3cbc4295b
+source-git-commit: 0905e084001dafa5445d3ea9d42b07c592af9149
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# Video over afspeellijsten van de AEM Assets Admin-weergave
+# Afspeellijsten voor videoweergave in AEM Assets Admin
 
 Bekijk deze afspeellijsten om de AEM Assets as a Cloud Service Admin-weergave onder de knie te krijgen: configuratie, optimalisatie, gebruik en naadloze integratie met creatieve workflows. Bekijk de inzichten die je nodig hebt om te slagen met AEM Assets as a Cloud Service.
 
