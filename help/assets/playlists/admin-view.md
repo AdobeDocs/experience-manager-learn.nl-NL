@@ -9,16 +9,16 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 924b3bab-e0ed-4b07-bded-344aab61eac5
-source-git-commit: d95c0cfc64f22efa1490fb1e0d787b8d76006add
+source-git-commit: 33e0ded0cdcb5d8ed146fdc59c6f37495cd251eb
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
 
 # Videoafspeellijsten voor beheerweergave
 
-![ de mening van Admin van AEM Assets ](./assets/admin-view.png) {align=center}
+![ de Admin mening van AEM Assets ](./assets/admin-view.png){align="center"}
 
 Bekijk deze afspeellijsten om de AEM Assets as a Cloud Service Admin-weergave onder de knie te krijgen: configuratie, optimalisatie, gebruik en naadloze integratie met creatieve workflows. Bekijk de inzichten die je nodig hebt om te slagen met AEM Assets as a Cloud Service.
 
