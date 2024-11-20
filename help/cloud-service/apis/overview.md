@@ -11,13 +11,13 @@ jira: KT-16515
 thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
-source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
+exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
+source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van AEM API&#39;s{#aem-apis-overview}
 
@@ -71,7 +71,7 @@ De [ Specificatie OpenAPI ](https://swagger.io/specification/) (die vroeger als 
 
 **Forms**
 
-- [ Forms Acrobat Services ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): APIs voor het werken met vormen en documenten.
+- [ Communicatie APIs van Forms ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): APIs voor het werken met vormen en documenten.
 
 In toekomstige versies worden meer op OpenAPI gebaseerde AEM-API&#39;s toegevoegd ter ondersteuning van extra gebruiksgevallen.
 
@@ -89,7 +89,7 @@ De op OpenAPI gebaseerde AEM API&#39;s ondersteunen de volgende verificatiemetho
 
 Voordat u Adobe-API&#39;s opent, is het van essentieel belang dat u deze belangrijke concepten begrijpt:
 
-- **[Adobe Developer Console ](https://developer.adobe.com/)**: De ontwikkelaarshub voor de toegang tot van Adobe APIs, SDKs, gebeurtenissen in real time, serverless functies, en meer. Merk op dat dit van _AEM_ Developer Console verschillend is, die voor het zuiveren AEM toepassingen wordt gebruikt.
+- **[Adobe Developer Console ](https://developer.adobe.com/)**: De ontwikkelaarshub voor de toegang tot van Adobe APIs, SDKs, gebeurtenissen in real time, serverless functies, en meer. Merk op dat het van _AEM_ Developer Console verschillend is, die voor het zuiveren AEM toepassingen wordt gebruikt.
 
 - **[Project van Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/projects/)**: Centrale plaats voor het beheren van API integratie, gebeurtenissen, en runtime functies. Hier, vormt u APIs, plaatst authentificatie, en produceert vereiste geloofsbrieven.
 

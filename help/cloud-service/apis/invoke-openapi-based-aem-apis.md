@@ -1,6 +1,6 @@
 ---
 title: API's voor OpenAPI's AEM
-description: Leer hoe u op OpenAPI gebaseerde AEM API's aanroept vanuit uw toepassing.
+description: Leer hoe u op OpenAPI gebaseerde API's voor AEM op AEM as a Cloud Service configureert en oproept vanuit aangepaste toepassingen.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -11,17 +11,17 @@ jira: KT-16516
 thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
-source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
+exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
+source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
 
-
 # API&#39;s voor OpenAPI&#39;s AEM{#invoke-openapi-based-aem-apis}
 
-Leer hoe u op OpenAPI gebaseerde API&#39;s voor AEM op AEM as a Cloud Service kunt aanroepen vanuit aangepaste toepassingen.
+Leer hoe u op OpenAPI gebaseerde API&#39;s voor AEM op AEM as a Cloud Service configureert en oproept vanuit aangepaste toepassingen.
 
 >[!AVAILABILITY]
 >
@@ -501,4 +501,3 @@ De belangrijkste callouts van de code van de steekproeftoepassing NodeJS zijn:
 
 In deze zelfstudie hebt u geleerd hoe u op OpenAPI gebaseerde AEM-API&#39;s kunt aanroepen vanuit aangepaste toepassingen. U hebt AEM APIs-toegang ingeschakeld en een Adobe Developer Console-project (ADC) gemaakt en geconfigureerd.
 In het ADC-project hebt u de AEM-API&#39;s toegevoegd, het verificatietype geconfigureerd en het productprofiel gekoppeld. U vormde ook de AEM instantie om de communicatie van het Project van ADC toe te laten en ontwikkelde een toepassing van de steekproef NodeJS die de Auteur API van Assets roept.
-
