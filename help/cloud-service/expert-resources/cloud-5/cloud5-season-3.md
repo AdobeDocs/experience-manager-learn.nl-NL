@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 4806312931038cc31e6bcf67f242483f62723387
+source-git-commit: e4a9ed215603e1a1726a5a031c1c18f93d438355
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -44,36 +44,6 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
             </p>
         </td>   
         <td>
-            <a href="./season-3/cloud5-rum.md">
-                <img alt="Real User Monitoring (RUM)" src="https://video.tv.adobe.com/v/3427495?format=jpeg"/>
-            </a>
-            <div>
-                <a href="./season-3/cloud5-rum.md">
-                <strong> Echte Controle van de Gebruiker (RUM) </strong> </a>        
-                <br/><em> met James Talbot &amp; Damian Langsweirdt, AEM Engineering </em>
-            </div>
-            <p>
-                <br/>
-                Onderzoek Real User Monitoring (RUM) werkt met Edge Delivery Services.
-            </p>
-        </td>   
-        <!--
-        <td>
-            <a href="./season-3/cloud5-rum-explorer.md">
-                <img alt="Real User Monitoring (RUM) Explorer" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
-            </a>
-            <div>
-                <a href="./season-3/cloud5-rum-explorer.md">
-                <strong>Real User Monitoring (RUM) Explorer</strong></a>        
-                <br/><em>with James Talbot & Damian Langsweirdt, AEM Engineering</em>
-            </div>
-            <p>
-                <br/>
-                Learn about Real User Monitoring (RUM) Explorer and how to access it.
-            </p>
-        </td>   
-        -->
-        <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="Edge Workers" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
             </a>
@@ -87,8 +57,6 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 Onderzoek het belang van randarbeiders met Edge Delivery Services.
             </p>
         </td>   
-    </tr>
-    <tr>
         <td>
             <a href="./season-3/cloud5-publish-events.md">
                 <img alt="Publish, publiceren van gebeurtenissen in Edge Delivery Services ongedaan maken" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
@@ -103,6 +71,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 Verken gebeurtenissen die worden geactiveerd bij het publiceren en ongedaan maken van publicatie in Edge Delivery Services en gebruik gevallen en voorbeelden voor het gebruik van deze gebeurtenissen.
             </p>
         </td>  
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
                 <img alt="De indexen van de vraag en de formules van Excel in Edge Delivery Services" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
@@ -131,8 +101,6 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 Onderzoek hoe te om uw eigen CDN van het Klantflare in Edge Delivery Services te vormen.
             </p>
         </td>           
-    </tr>  
-    <tr>
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
                 <img alt="AEM Assets integreren met het maken van documenten" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
@@ -146,7 +114,9 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 <br/>
                 Ontdek hoe u AEM Assets kunt integreren met het ontwerpen van documenten.
             </p>
-        </td>        
+        </td>
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
                 <img alt="Generatieve AI in AEM Sites" src="https://video.tv.adobe.com/v/3428436?format=jpeg"/>
@@ -175,8 +145,6 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                  Meer informatie over de Universal Editor en AEM met Edge Delivery Services.
             </p>
         </td>
-    </tr>  
-    <tr>
         <td>
             <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
                 <img alt="Sites met Edge Delivery Services importeren naar AEM Sites" 
@@ -192,6 +160,8 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                  Meer informatie over het importeren van sites naar AEM Sites met Edge Delivery Services.
             </p>
         </td>
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-using-admin-api.md">
                 <img alt="De Admin API met Edge Delivery Services gebruiken" 
@@ -222,8 +192,6 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                  Leer wat een vuurtoren score is en technieken om de best mogelijke vuurtoren score te halen.
             </p>
         </td>            
-    </tr> 
-    <tr>
         <td>
             <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
                 <img alt="Score-optimalisatie voor Lighthouders - Deel 2"
@@ -238,7 +206,9 @@ Elk seizoen varieert in lengte en wordt vrijgegeven volgens een vast tijdschema.
                 <br/>                
                  Meer informatie over technieken om de totale blokkeertijd te verbeteren.
             </p>
-        </td>            
+        </td>   
+    </tr>
+    <tr>
         <td>
             <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
                 <img alt="Score-optimalisatie voor Lighthouders - Deel 3"
