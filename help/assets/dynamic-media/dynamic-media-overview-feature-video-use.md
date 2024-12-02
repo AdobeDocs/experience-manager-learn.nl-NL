@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: fd372c7ee387504e4316a6ca657a77fe0a0c511e
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,13 @@ ht-degree: 0%
 
 Deze videoreeks met meerdere delen geeft u een overzicht van hoe media-inhoud wordt beheerd en geopend met Adobe Experience Manager Dynamic Media als een service voor inhoud. Met Dynamic Media kunt u dynamische digitale ervaringen beheren en publiceren. Dit is een unieke functie voor Experience Manager Assets. Met ons framework en onze reeks componenten kunnen marketers interactieve multimedia-ervaringen op alle apparaten aanpassen en leveren.
 
-## Dynamic Media - Overzicht
+## Live demo van Dynamic Media
+
+[![ AEM Assets Dynamic Media levende demo ](./assets/overview/live-demo.png) ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+
+Onderzoek de mogelijkheden van Adobe Dynamic Media met onze [**Levende Demo** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), waar de meest geavanceerde oplossingen aan het leven komen. Leer hoe [**Dynamische Assets** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) werkschema&#39;s stroomlijnt en inhoudsbeheer opheft, en [**Interactieve Ervaringen** ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) ontdekt die publiek over elk kanaal fascineren. [ zie hoe Dynamic Media uw inhoudsstrategie ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) kan transformeren!
+
+## Dynamic Media-overzicht
 
 >[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
