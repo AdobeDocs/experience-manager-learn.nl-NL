@@ -12,7 +12,7 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 315bc1029b133f2ae857196f65e39229caaecaa1
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -259,3 +259,4 @@ De vereisten voor gebeurtenisverwerking verschillen van project tot project, maa
 - De gebeurtenisverwerking kan worden uitgevoerd met Adobe I/O Runtime Action.
 - De Runtime Actie kan met systemen zoals uw interne toepassingen, derdeoplossingen, en Adobe oplossingen communiceren.
 - De runtimeactie dient als ingangspunt voor een bedrijfsproces dat rond een inhoudsverandering wordt ontworpen.
+
