@@ -8,16 +8,16 @@ role: Developer
 level: Beginner, Intermediate
 doc-type: Tutorial
 duration: 0
-last-substantial-update: 2024-09-24T00:00:00Z
+last-substantial-update: 2024-12-04T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: 01e6ef917d855e653eccfe35a2d7548f12628604
+exl-id: c3bfbe59-f540-43f9-81f2-6d7731750fc6
+source-git-commit: 97680d95d4cd3cb34956717a88c15a956286c416
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1657'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste foutpagina&#39;s
 
@@ -50,14 +50,18 @@ De standaardfoutenpagina _wordt gediend_ van het _AEM diensttype_ (auteur, publi
 
 | Foutpagina aangeboden door | Details |
 |---------------------|:-----------------------:|
-| AEM servicetype - auteur, publiceren, voorvertoning | Wanneer het paginaverzoek door het AEM de diensttype wordt gediend en om het even welke bovengenoemde foutenscenario&#39;s voorkomen, wordt de foutenpagina gediend van het AEM de diensttype. |
+| AEM servicetype - auteur, publiceren, voorvertoning | Wanneer het paginaverzoek door het AEM de diensttype wordt gediend en om het even welke bovengenoemde foutenscenario&#39;s voorkomen, wordt de foutenpagina gediend van het AEM de diensttype. Standaard wordt de 5XX-foutpagina overschreven door de CDN-foutpagina met beheerde Adobe, tenzij de header `x-aem-error-pass: true` is ingesteld. |
 | CDN met beheerde Adobe | Wanneer Adobe-geleide CDN _niet het AEM diensttype_ (oorsprongserver) kan bereiken, wordt de foutenpagina gediend van Adobe-geleide CDN. **het is een onwaarschijnlijke gebeurtenis maar de moeite waard om voor te plannen.** |
+
+>[!NOTE]
+>
+>In AEM als Cloud Service, dient CDN een generische foutenpagina wanneer een 5XX fout van het achtereind wordt ontvangen. Als u wilt dat de werkelijke reactie van de backend kan worden doorgegeven, moet u de volgende koptekst toevoegen aan de reactie: `x-aem-error-pass: true` .
+>Dit werkt alleen voor reacties die afkomstig zijn van AEM of de laag Apache/Dispatcher. Andere onverwachte fouten die afkomstig zijn van tussenliggende infrastructuurlagen tonen nog steeds de algemene foutpagina.
 
 
 Bijvoorbeeld, zijn de standaardfoutenpagina&#39;s die van het de diensttype en Adobe-beheerde CDN worden gediend als volgt:
 
 ![ Standaard AEM de Pagina&#39;s van de Fout ](./assets/aem-default-error-pages.png)
-
 
 Nochtans, kunt u _zowel AEM diensttype als Adobe-beheerde_ CDN foutenpagina&#39;s aanpassen om uw merk aan te passen en een betere gebruikerservaring te verstrekken.
 
@@ -110,22 +114,33 @@ Laten wij herzien hoe het [ AEM WKND ](https://github.com/adobe/aem-guides-wknd)
    - De ](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L133) waarde 0} DispatcherPassError wordt geplaatst aan 1 zodat Dispatcher laat Apache alle fouten behandelen.[
 
   ```
+  # In `wknd.vhost` file:
+  
   ...
-  # ErrorDocument directive in wknd.vhost file
+  
+  ## ErrorDocument directive
   ErrorDocument 404 ${404_PAGE}
   ErrorDocument 500 ${500_PAGE}
   ErrorDocument 502 ${500_PAGE}
   ErrorDocument 503 ${500_PAGE}
   ErrorDocument 504 ${500_PAGE}
   
+  ## Add Header for 5XX error page response
+  <IfModule mod_headers.c>
+    ### By default, CDN overrides 5XX error pages. To allow the actual response of the backend to pass through, add the header x-aem-error-pass: true
+    Header set x-aem-error-pass "true" "expr=%{REQUEST_STATUS} >= 500 && %{REQUEST_STATUS} < 600"
+  </IfModule>
+  
   ...
-  # DispatcherPassError value in wknd.vhost file
+  ## DispatcherPassError directive
   <IfModule disp_apache2.c>
       ...
       DispatcherPassError        1
   </IfModule>
   
-  # Custom error pages path in custom.vars file
+  # In `custom.vars` file
+  ...
+  ## Define the error page paths
   Define 404_PAGE /content/wknd/us/en/errors/404.html
   Define 500_PAGE /content/wknd/us/en/errors/500.html
   ...
@@ -370,7 +385,7 @@ Tot slot stel de gevormde CDN regel aan het milieu van AEM as a Cloud Service op
 
 Voer de volgende stappen uit om de CDN-foutpagina&#39;s te testen:
 
-- Open browser en navigeer aan het milieu URL van Publish, voeg `cdnstatus?code=404` aan URL toe, bijvoorbeeld, [ https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404 ](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404) of toegang gebruikend [ douanedomein URL ](https://wknd.enablementadobe.com/cdnstatus?code=404)
+- In browser, navigeer aan AEM as a Cloud Service Publish URL, voeg `cdnstatus?code=404` aan URL toe, bijvoorbeeld, [ https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404 ](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404) of toegang gebruikend [ douanedomein URL ](https://wknd.enablementadobe.com/cdnstatus?code=404)
 
   ![ WKND - CDN de Pagina van de Fout ](./assets/wknd-cdn-error-page.png)
 
@@ -389,4 +404,3 @@ In deze zelfstudie hebt u meer geleerd over standaardfoutpagina&#39;s, waar de f
 - [ Vormend CDN de Pagina&#39;s van de Fout ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
 - [ Cloud Manager - Config pijpleidingen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
-
