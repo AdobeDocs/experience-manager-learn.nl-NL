@@ -10,9 +10,9 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: e95e7530-100d-4495-abae-4c568e7978b3
 duration: 310
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: '76'
 ht-degree: 0%
 
 ---
@@ -29,3 +29,7 @@ Een kort voorbeeld van hoe u de dispatchervalidator in uw AEM ontwikkelingswerks
 + [ de Hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
 + Problemen met fouten oplossen
 + De logboeken en runmodi van de verzender gebruiken voor foutopsporing
+
+## Aanvullende bronnen
+
+Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.

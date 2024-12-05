@@ -13,9 +13,9 @@ jira: KT-15083
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 5f122412-ab70-4b54-b20b-726bc6138b2b
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,7 @@ ht-degree: 0%
 Verken gebeurtenissen die worden geactiveerd bij het publiceren en ongedaan maken van publicatie in Edge Delivery Services en gebruik gevallen en voorbeelden voor het gebruik van deze gebeurtenissen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427681?learn=on)
+
+## Aanvullende bronnen
+
+Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 3 ](../cloud5-season-3.md) pagina.

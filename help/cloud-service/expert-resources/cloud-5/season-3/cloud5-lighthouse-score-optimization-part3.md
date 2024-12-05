@@ -12,16 +12,20 @@ last-substantial-update: 2024-10-08T00:00:00Z
 jira: KT-16300
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: 5e7ed607cae211f989ed50c10ae3be47876868cf
+exl-id: 0f74a746-b16e-4b95-97f1-55e3002d7f7f
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '66'
 ht-degree: 0%
 
 ---
-
 
 # Score-optimalisatie voor Lighthouders - Deel 3
 
 Leer over technieken om de Grootste Inhoudelijke Verf (LCP) te verbeteren en de hoogst mogelijke aanstekersscores op uw project van Edge Delivery Services te krijgen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435001/?learn=on)
+
+## Aanvullende bronnen
+
+Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 3 ](../cloud5-season-3.md) pagina.

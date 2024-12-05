@@ -10,9 +10,9 @@ recommendations: noDisplay, noCatalog
 thumbnail: 342133.jpeg
 exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
 duration: 315
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '100'
 ht-degree: 4%
 
 ---
@@ -31,3 +31,7 @@ Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief een aantal bes
 + [ repostats ](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [AEM-moderniseringstools](https://opensource.adobe.com/aem-modernize-tools/)
 + [ Hulpmiddelen van de Migratie van de Cloud Service ](https://github.com/adobe/aem-cloud-service-source-migration)
+
+## Aanvullende bronnen
+
+Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.

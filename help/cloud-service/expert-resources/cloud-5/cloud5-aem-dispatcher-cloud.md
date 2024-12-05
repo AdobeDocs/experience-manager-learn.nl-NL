@@ -10,9 +10,9 @@ recommendations: noDisplay, noCatalog
 thumbnail: 342067.jpeg
 exl-id: 90c61bfb-46ff-4941-b89e-ce38d1025de8
 duration: 311
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,7 @@ Darin en James bespreken de Dispatcher in de AEM Cloud, inclusief een aantal bes
    + [ Docs van de Migratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
    + [ Blog ](https://medium.com/adobetech/migrating-a-dispatcher-configuration-from-managed-services-to-aem-as-a-cloud-service-fa8a80d242ee)
 + [ Hulpmiddelen van de Migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
+
+## Aanvullende bronnen
+
+Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.

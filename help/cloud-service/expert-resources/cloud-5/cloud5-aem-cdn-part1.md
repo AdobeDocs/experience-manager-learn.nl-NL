@@ -11,9 +11,9 @@ jira: KT-9797
 thumbnail: 340760.jpeg
 exl-id: 8b608b05-48ee-434f-8d5a-6c5ff1969dcf
 duration: 297
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,12 @@ Dit is een diepe duik in CDN die als deel van AEM as a Cloud Service wordt verst
 ## Inhoud van deel 1 van deze reeks
 
 + AEM CDN [ Overzicht ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
-+ WAF-mogelijkheden (Web Application Firewall)
++ Mogelijkheden van Web Application Firewall (WAF)
 + IP-beperkingen
 + DDOS-beveiliging
 
 [Deel twee weergeven](cloud5-aem-cdn-part2.md)
+
+## Aanvullende bronnen
+
+Bekijk verwante video&#39;s op de [ Wolk 5 seizoen 1 ](cloud5-season-1.md) pagina.
