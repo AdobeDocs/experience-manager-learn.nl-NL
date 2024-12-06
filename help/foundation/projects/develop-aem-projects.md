@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Deze zelfstudie doorloopt de code die nodig is om een aangepaste projectsjabloon
 * [Pakket met voltooide zelfstudies](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [ Volledige Bewaarplaats van de Code op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Dit leerprogramma veronderstelt wat basiskennis van [ AEM ontwikkelingspraktijken ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) en wat vertrouwdheid met [ AEM Maven projectopstelling ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). Alle vermelde code is bedoeld om als verwijzing worden gebruikt en zou slechts aan a [ lokale AEM instantie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy) moeten worden opgesteld.
+Dit leerprogramma veronderstelt wat basiskennis van [ AEM ontwikkelingspraktijken ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) en wat vertrouwdheid met [ AEM Maven projectopstelling ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Alle vermelde code is bedoeld om als verwijzing worden gebruikt en zou slechts aan a [ lokale AEM instantie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy) moeten worden opgesteld.
 
 ## Structuur van een projectsjabloon
 
