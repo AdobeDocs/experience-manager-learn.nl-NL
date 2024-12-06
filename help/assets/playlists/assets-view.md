@@ -9,9 +9,9 @@ last-substantial-update: 2024-11-20T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: b98f5321a4545d8b9d89d8d599723acc296cf0d4
+source-git-commit: 9630faead73bf337c3a0f2b56c6d1173ed700dd6
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Ga aan de slag met de essentiële instellingen en configuraties om AEM Assets as
 <!-- CARDS
 
 * https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials
+* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials {title=Get started with Assets view}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -70,7 +70,7 @@ Ga aan de slag met de essentiële instellingen en configuraties om AEM Assets as
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" title="Aan de slag met AEM Assets Essentials"> krijgen Begonnen met de Hoofdzaak van AEM Assets </a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" title="Aan de slag met de Assets-weergave"> worden begonnen met de mening van Assets </a>
                     </p>
                     <p class="is-size-6">Leer hoe AEM Assets Essentials het beheer van bedrijfsmiddelen voor uw afdeling kan stroomlijnen.</p>
                 </div>
