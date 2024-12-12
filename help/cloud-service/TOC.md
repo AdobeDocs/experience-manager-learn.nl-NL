@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+source-git-commit: 891fd1cfdcb82a6d4f1bb031cfa11893a69d0546
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1356'
 ht-degree: 4%
 
 ---
@@ -416,9 +416,10 @@ ht-degree: 4%
    + [AEM Deskundigenreeks](./expert-resources/expert-series/aem-experts-series.md)
    + Wolk 5 {#cloud-5}
       + [Inleiding](./expert-resources/cloud-5/cloud5-introduction.md)
+      + [Seizoen 4](./expert-resources/cloud-5/cloud5-season-4.md)
       + [Seizoen 1](./expert-resources/cloud-5/cloud5-season-1.md)
-      + [Seizoen 2](./expert-resources/cloud-5/cloud5-season-2.md)
       + [Seizoen 3](./expert-resources/cloud-5/cloud5-season-3.md)
+      + [Seizoen 2](./expert-resources/cloud-5/cloud5-season-2.md)
       + [AEM CDN Deel 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
       + [AEM CDN Deel 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
       + [Logbestanden AEM](./expert-resources/cloud-5/cloud5-aem-log-files.md)
@@ -453,4 +454,7 @@ ht-degree: 4%
          + [Score-optimalisatie voor Lighthouders - Deel 1](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part1.md)
          + [Score-optimalisatie voor Lighthouders - Deel 2](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part2.md)
          + [Score-optimalisatie voor Lighthouders - Deel 3](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part3.md)
-
+      + Seizoen 4 {#season-4}
+         + [Aanbevolen procedures](./expert-resources/cloud-5/season-4/cloud5-edge-delivery-services-best-practices.md)
+         + [Optimalisaties zoeken](./expert-resources/cloud-5/season-4/cloud5-search-optimization.md)
+         + [Google-kaarten](./expert-resources/cloud-5/season-4/cloud5-google-maps.md)
