@@ -11,14 +11,15 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
+source-git-commit: e02c3f66787c78152700b24236c29e9796f721de
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # AEM Forms en Marketo integreren
+
 
 Marketo, een onderdeel van de Adobe, beschikt over software voor marketingautomatisering die is gericht op marketing op basis van account, zoals e-mail, mobiele, sociale, digitale advertenties, webbeheer en analyses.
 
@@ -27,6 +28,10 @@ Met het formuliergegevensmodel van AEM Forms kunnen we nu AEM formulier naadloos
 [ leer meer over het Model van de Gegevens van de Vorm ](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
 Marketo maakt een REST API beschikbaar waarmee een groot aantal mogelijkheden van het systeem op afstand kan worden uitgevoerd. Er zijn veel opties, variërend van het maken van programma&#39;s tot het bulksgewijs importeren van leads, waarmee u een Marketo-instantie met fijnkorrelige besturing kunt besturen. Met behulp van het formuliergegevensmodel is het heel eenvoudig om AEM Forms te integreren met Marketo.
+
+>[!NOTE]
+>
+>Deze zelfstudie is specifiek op AEM Forms 6.5 toegesneden. Als u AEM Forms as a Cloud Service met Adobe Marketo Engage wilt integreren, gelieve te verwijzen naar de [ specifieke documentatie voor die integratie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage).
 
 In deze zelfstudie worden de stappen besproken die nodig zijn voor de integratie van AEM Forms met Marketo met behulp van het formuliergegevensmodel. Bij het voltooien van de zelfstudie hebt u een OSGi-bundel die de aangepaste verificatie uitvoert tegen Marketo. U hebt ook de gegevensbron geconfigureerd met behulp van het meegeleverde wagerbestand.
 
