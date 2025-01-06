@@ -12,9 +12,9 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 50ddda35adbb3af0b66a6e24a135fd5b94a3fb3a
+source-git-commit: 907a313a9ed7e92358f0aa2503f8333fb26ba35d
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ AEM URL-omleidingsoplossingen zijn als volgt:
 | [ bij Edge via breng uw eigen CDN (BYOCDN) ](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN (BYOCDN) |
 | [ Apache `mod_rewrite` regels als Dispatcher config ](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
 | [ ACS Commons - richt de Manager van de Kaart ](#redirect-map-manager) | ✘ | ✔ | ✔ | Dispatcher |
-| [ ACS Commons - richt Manager ](#redirect-manager) opnieuw | ✘ | ✔ | ✔ | AEM |
+| [ ACS Commons - richt Manager ](#redirect-manager) opnieuw | ✘ | ✔ | ✔ | AEM/Dispatcher |
 | [ het `Redirect` paginabezit ](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
 
 
@@ -81,6 +81,8 @@ Er zijn twee eigenschappen beschikbaar binnen [ ACS AEM Commons ](https://adobe-
 #### Omleidingsbeheer
 
 [ Redirect Manager ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) staat de gebruikers in AEM toe om redirects van AEM gemakkelijk te handhaven en te publiceren. De implementatie is gebaseerd op het Java™ servlet-filter, wat een typisch JVM-bronnengebruik is. Deze eigenschap elimineert ook de afhankelijkheid van het AEM ontwikkelingsteam en de AEM plaatsingen. Redirect Manager is zowel **AEM as a Cloud Service** als **AEM 6.x** compatibel. Terwijl het aanvankelijke opnieuw gerichte verzoek de dienst van AEMPublish moet raken om 301/302 (de meeste) geheime voorgeheugen 301/302 van CDNs door gebrek te produceren, toestaand verdere verzoeken om bij edge/CDN worden opnieuw gericht.
+
+[ Redirect Manager ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) steunt ook [ Pijpleiding-vrije URL richt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) strategie voor **AEM as a Cloud Service** door [ het compileren richt zich in een tekstdossier ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) voor [ Apache RewriteMap ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html), zodat staat het voor het bijwerken van redirects toe die in de server van het Web Apache worden gebruikt zonder het direct tot toegang te hebben of zijn nieuw begin te vereisen. In dit scenario raakt het aanvankelijke omleidingsverzoek de server van het Web van Apache, en niet AEM de dienst van Publish.
 
 ### De eigenschap `Redirect` page
 
