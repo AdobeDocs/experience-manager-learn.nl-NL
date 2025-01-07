@@ -1,6 +1,6 @@
 ---
 title: Dispatcher Tools instellen voor AEM as a Cloud Service Development
-description: AEM Dispatcher Tools van SDK vergemakkelijkt de lokale ontwikkeling van Adobe Experience Manager (AEM) projecten door het gemakkelijk te maken om, Dispatcher plaatselijk te installeren in werking te stellen en problemen op te lossen.
+description: AEM SDK Dispatcher Tools vergemakkelijkt de lokale ontwikkeling van Adobe Experience Manager (AEM) projecten door het gemakkelijk te maken om, Dispatcher plaatselijk te installeren in werking te stellen en problemen op te lossen.
 version: Cloud Service
 topic: Development
 feature: Dispatcher, Developer Tools
@@ -23,13 +23,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_dispatcher"
 >title="Lokale Dispatcher-gereedschappen"
->abstract="Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet deel uitmaken van de plaatselijke ontwikkelingsstructuur. De SDK van AEM as a Cloud Service bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren en het lokaal simuleren van Dispatcher kunt configureren."
+>abstract="Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet deel uitmaken van de plaatselijke ontwikkelingsstructuur. De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren en het lokaal simuleren van Dispatcher kunt configureren."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html" text="Dispatcher in de cloud"
 >additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html" text="AEM as a Cloud Service SDK downloaden"
 
 Dispatcher van Adobe Experience Manager (AEM) is een Apache HTTP Web server module die een veiligheid en prestatieslaag tussen CDN en AEM Publish rij verstrekt. Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet deel uitmaken van de plaatselijke ontwikkelingsstructuur.
 
-De SDK van AEM as a Cloud Service bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren en het lokaal simuleren van Dispatcher kunt configureren. Dispatcher Tools bestaat uit:
+De AEM as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools waarmee u het valideren en het lokaal simuleren van Dispatcher kunt configureren. Dispatcher Tools bestaat uit:
 
 + een basislijnset van Apache HTTP Web server- en Dispatcher-configuratiebestanden op `.../dispatcher-sdk-x.x.x/src`
 + een CLI-hulpprogramma voor configuratievalidatie, dat zich bevindt op `.../dispatcher-sdk-x.x.x/bin/validate`
@@ -55,7 +55,7 @@ De SDK van AEM as a Cloud Service bevat de aanbevolen versie van Dispatcher Tool
 
 ## Download de Dispatcher Tools (als onderdeel van de AEM SDK)
 
-De SDK van AEM as a Cloud Service, of AEM SDK, bevat de Dispatcher Tools die worden gebruikt om Apache HTTP Web-server met de Dispatcher-module lokaal uit te voeren voor ontwikkeling, en de compatibele QuickStart Jar.
+AEM as a Cloud Service SDK, of AEM SDK, bevat de Dispatcher Tools die worden gebruikt om Apache HTTP Web-server met de module Dispatcher plaatselijk voor ontwikkeling in werking te stellen, en compatibele Jar QuickStart.
 
 Als AEM as a Cloud Service SDK reeds aan [ opstelling lokale AEM runtime ](./aem-runtime.md) is gedownload, te hoeven het niet opnieuw worden gedownload.
 
@@ -63,13 +63,13 @@ Als AEM as a Cloud Service SDK reeds aan [ opstelling lokale AEM runtime ](./aem
    + Uw Organisatie van de Adobe __moet__ voor AEM as a Cloud Service worden provisioned om AEM as a Cloud Service SDK te downloaden
 1. Klik op de recentste __AEM SDK__ resultaatrij om te downloaden
 
-## De Dispatcher-gereedschappen extraheren uit het ZIP-bestand van de AEM SDK
+## De Dispatcher-gereedschappen extraheren uit het AEM SDK zip
 
 >[!TIP]
 >
 > Windows-gebruikers kunnen geen spaties of speciale tekens gebruiken in het pad naar de map met de lokale Dispatcher-gereedschappen. Als het pad spaties bevat, mislukt `docker_run.cmd` .
 
-De versie van Dispatcher Tools verschilt van die van de AEM SDK. Zorg ervoor dat de versie van Dispatcher Tools wordt geleverd via de AEM SDK-versie die overeenkomt met de AEM as a Cloud Service-versie.
+De versie van Dispatcher Tools verschilt van die van de AEM SDK. Zorg ervoor dat de versie van Dispatcher Tools beschikbaar is via de versie van AEM SDK die overeenkomt met de AEM as a Cloud Service-versie.
 
 1. Het gedownloade `aem-sdk-xxx.zip` bestand uitpakken
 1. Pak de Dispatcher-gereedschappen uit in `~/aem-sdk/dispatcher`
@@ -199,7 +199,7 @@ $ ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 8080
 
 >[!ENDTABS]
 
-De Publish Service van de AEM as a Cloud Service SDK, die lokaal wordt uitgevoerd op poort 4503, is beschikbaar via Dispatcher op `http://localhost:8080` .
+De Publish Service van AEM as a Cloud Service SDK, die lokaal wordt uitgevoerd op poort 4503, is beschikbaar via Dispatcher op `http://localhost:8080` .
 
 Om Dispatcher Tools tegen de configuratie van Dispatcher van een project van de Experience Manager in werking te stellen, richt aan de omslag van uw project `dispatcher/src`.
 

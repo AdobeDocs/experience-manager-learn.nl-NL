@@ -10,7 +10,7 @@ jira: KT-6060
 thumbnail: 39151.jpg
 exl-id: 7d7942ae-7e38-4abd-9900-5b8e3542f5e1
 duration: 315
-source-git-commit: 1fcfbc85650d0eb6b6b184883c7178a3b1e0ed93
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 4%
@@ -23,8 +23,8 @@ ht-degree: 4%
 >id="aemcloud_adobeims_aem_users_groups"
 >title="Gebruikers, groepen en machtigingen AEM"
 >abstract="Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen om gebruikers aanpasbare toegang tot AEM te bieden. Leer hoe u AEM groepen en machtigingen definieert en hoe ze samenwerken met Adobe IMS-abstracties om een naadloze en aanpasbare toegang tot AEM te bieden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en" text="IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service"
->additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Door AEM opgegeven gebruikersgroepen en hun machtigingen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en" text="IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service"
+>additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.html" text="Door AEM opgegeven gebruikersgroepen en hun machtigingen"
 
 Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen om gebruikers aanpasbare toegang tot AEM te bieden. Leer hoe te om AEM groepen en toestemmingen te bepalen, die op [ voortbouwen AEM verstrekte gebruikersgroepen ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security#built-in-users-and-groups), en hoe zij in overleg met de abstracties van Adobe IMS werken om naadloze en klantgerichte toegang tot AEM te verlenen.
 
@@ -32,5 +32,5 @@ Adobe Experience Manager bouwt verder op Adobe IMS-gebruikers, -gebruikersgroepe
 
 ## Aanvullende bronnen
 
-+ [ IMS Steun voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)
-+ [ AEM-verstrekte gebruikersgroepen en hun toestemmingen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)
++ [ IMS Steun voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
++ [ AEM-verstrekte gebruikersgroepen en hun toestemmingen ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/security.html)

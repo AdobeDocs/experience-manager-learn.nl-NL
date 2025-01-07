@@ -1,6 +1,6 @@
 ---
-title: De lokale AEM SDK voor AEM as a Cloud Service-ontwikkeling instellen
-description: Stel de lokale AEM SDK-runtime in met behulp van de QuickStart Jar van de AEM as a Cloud Service SDK.
+title: Lokale AEM SDK instellen voor AEM as a Cloud Service Development
+description: Stel de lokale AEM SDK-runtime in met AEM as a Cloud Service SDK QuickStart Jar.
 feature: Developer Tools
 version: Cloud Service
 kt: 4678, 4677
@@ -18,22 +18,22 @@ ht-degree: 0%
 
 ---
 
-# SDK voor lokale AEM instellen {#set-up-local-aem-sdk}
+# Lokale AEM SDK instellen {#set-up-local-aem-sdk}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
 >title="Lokale AEM Runtime"
->abstract="Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de Quickstart Jar van de AEM as a Cloud Service SDK. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie, en inhoud te testen alvorens het aan broncontrole te bevestigen, en het op te stellen aan een milieu van AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM AS A CLOUD SERVICE SDK"
+>abstract="Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de AEM as a Cloud Service SDK QuickStart Jar. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie, en inhoud te testen alvorens het aan broncontrole te bevestigen, en het op te stellen aan een milieu van AEM as a Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html" text="AEM as a Cloud Service SDK"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="AEM as a Cloud Service SDK downloaden"
 
-Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de Quickstart Jar van de AEM as a Cloud Service SDK. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie, en inhoud te testen alvorens het aan broncontrole te bevestigen, en het op te stellen aan een milieu van AEM as a Cloud Service.
+Adobe Experience Manager (AEM) kan lokaal worden uitgevoerd met de AEM as a Cloud Service SDK QuickStart Jar. Dit staat ontwikkelaars toe om op te stellen aan, en douanecode, configuratie, en inhoud te testen alvorens het aan broncontrole te bevestigen, en het op te stellen aan een milieu van AEM as a Cloud Service.
 
 `~` wordt gebruikt als steno voor de gebruikerslijst. In Windows is dit het equivalent van `%HOMEPATH%` .
 
 ## Java™ installeren
 
-Experience Manager is een Java™-toepassing en daarom is de Oracle Java™ SDK vereist voor ondersteuning van de ontwikkelingstool.
+Experience Manager is een Java™-toepassing en vereist daarom de Oracle Java™ SDK voor ondersteuning van de ontwikkelingstool.
 
 1. [ Download en installeer recentste Java™ SDK 11 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2 Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 1. Controleer of Oracle Java™ 11 SDK is geïnstalleerd door de opdracht uit te voeren:
@@ -62,9 +62,9 @@ $ java --version
 
 ![ Java ](./assets/aem-runtime/java.png)
 
-## De SDK van AEM as a Cloud Service downloaden
+## Download de AEM as a Cloud Service SDK
 
-De SDK van AEM as a Cloud Service, of AEM SDK, bevat de Quickstart Jar die wordt gebruikt om AEM Auteur en Publish lokaal uit te voeren voor ontwikkeling, evenals de compatibele versie van de Dispatcher Tools.
+De AEM as a Cloud Service SDK, of AEM SDK, bevat de Quickstart Jar die wordt gebruikt om AEM Auteur en Publish lokaal voor ontwikkeling in werking te stellen, evenals de compatibele versie van Dispatcher Tools.
 
 1. Login aan [ https://experience.adobe.com/#/downloads ](https://experience.adobe.com/#/downloads) met uw Adobe ID
    + Merk op dat uw organisatie van de Adobe ____ voor AEM as a Cloud Service moet worden provisioned om AEM as a Cloud Service SDK te downloaden.
@@ -73,7 +73,7 @@ De SDK van AEM as a Cloud Service, of AEM SDK, bevat de Quickstart Jar die wordt
 1. Klik op de recentste __AEM SDK__ resultaatrij
 1. Herzie en keur EULA goed, en tik de __Download__ knoop
 
-## Haal de QuickStart Jar uit het ZIP van de AEM SDK
+## De QuickStart-jar extraheren uit het ZIP van AEM SDK
 
 1. Het gedownloade `aem-sdk-XXX.zip` bestand uitpakken
 
@@ -124,7 +124,7 @@ $ java -jar aem-author-p4502.jar
 
 ## Lokale AEM Publish-service instellen
 
-De lokale AEM Publish Service biedt ontwikkelaars de lokale ervaring die eindgebruikers van de AEM zullen hebben, zoals bladeren door de website die op AEM wordt gehost. Een lokale AEMDienst van Publish is belangrijk aangezien het met de hulpmiddelen van Dispatcher van AEM SDK [ ](./dispatcher-tools.md) integreert en ontwikkelaars toestaat om de definitieve eindgebruiker te roken-testen en te verfijnen die ervaring onder ogen ziet.
+De lokale AEM Publish Service biedt ontwikkelaars de lokale ervaring die eindgebruikers van de AEM zullen hebben, zoals bladeren door de website die op AEM wordt gehost. Een lokale AEMDienst van Publish is belangrijk aangezien het met AEM SDK [ hulpmiddelen van Dispatcher ](./dispatcher-tools.md) integreert en ontwikkelaars toestaat om de definitieve eindgebruiker te roken-test en te verfijnen die ervaring onder ogen ziet.
 
 1. De map maken `~/aem-sdk/publish`
 1. Kopieer het __QuickStart JAR__ dossier aan `~/aem-sdk/publish` en noem het aan `aem-publish-p4503.jar` anders
@@ -263,7 +263,7 @@ Merk op dat het havenaantal om het even welke beschikbare haven op de lokale ont
 + De haven __4502__ wordt gebruikt voor de __lokale AEM dienst van de Auteur__
 + De haven __4503__ wordt gebruikt voor de __lokale dienst van AEMPublish__
 
-Het wijzigen van deze instellingen kan aanpassingen in AEM SDK-configuraties vereisen
+Als u deze instellingen wijzigt, moet u mogelijk AEM SDK-configuraties aanpassen
 
 ## Een lokale AEM-runtime stoppen
 
@@ -275,21 +275,21 @@ Als u een lokale AEM-runtime wilt stoppen, AEM de Auteur of de Publish-service, 
 
 ## Wanneer werkt u de QuickStart-jar bij
 
-Werk de AEM SDK ten minste maandelijks bij op of kort na de laatste donderdag van elke maand. Dit is de releasehandleiding voor AEM as a Cloud Service &quot;feature releases&quot;.
+Werk de AEM SDK ten minste maandelijks bij op of kort na de laatste donderdag van elke maand. Dit is de releasekaart voor de &quot;feature releases&quot; van AEM as a Cloud Service.
 
 >[!WARNING]
 >
 > Als u de QuickStart-jar wilt bijwerken naar een nieuwe versie, moet u de volledige lokale ontwikkelomgeving vervangen. Dit leidt tot verlies van alle code, configuratie en inhoud in de lokale AEM. Zorg ervoor dat om het even welke code, config of inhoud die niet zou moeten worden vernietigd veilig aan Git wordt begaan, of uit de lokale AEM instantie als AEM Pakketten wordt uitgevoerd.
 
-### Hoe te om inhoudsverlies te vermijden wanneer het bevorderen van de AEM SDK
+### Hoe te vermijden inhoudsverlies wanneer het bevorderen van de AEM SDK
 
-Door de upgrade van de AEM SDK wordt in feite een geheel nieuwe AEM-runtime gemaakt, waaronder een nieuwe opslagplaats. Dit betekent dat eventuele wijzigingen in de opslagplaats van een eerdere AEM SDK verloren gaan. Hieronder volgen levensvatbare strategieën voor het ondersteunen van blijvende inhoud tussen AEM SDK-upgrades en u kunt deze op discrete wijze of in overleg gebruiken:
+Door de upgrade van de AEM SDK wordt in feite een geheel nieuwe AEM-runtime gemaakt, waaronder een nieuwe opslagplaats. Dit betekent dat eventuele wijzigingen in een eerdere AEM SDK-opslagplaats verloren gaan. Hieronder vindt u levensvatbare strategieën voor het ondersteunen van blijvende inhoud tussen AEM SDK-upgrades. U kunt deze strategieën op discrete wijze of in overleg gebruiken:
 
-1. Maak een inhoudspakket dat gewijd is aan het bevatten van &#39;sample&#39;-inhoud voor hulp bij ontwikkeling en onderhoud dit in Git. Alle inhoud die via AEM SDK-upgrades moet worden voortgezet, blijft in dit pakket aanwezig en wordt opnieuw geïmplementeerd nadat de AEM SDK is bijgewerkt.
-1. Gebruik [ eiken-verbetering ](https://jackrabbit.apache.org/oak/docs/migration.html) met de `includepaths` richtlijn, om inhoud van de vroegere AEM bewaarplaats van SDK aan de nieuwe bewaarplaats van AEMSDK te kopiëren.
-1. Maak een back-up van alle inhoud met AEM pakketbeheer en inhoudspakketten op de vorige AEM SDK en installeer deze opnieuw op de nieuwe AEM SDK.
+1. Maak een inhoudspakket dat gewijd is aan het bevatten van &#39;sample&#39;-inhoud voor hulp bij ontwikkeling en onderhoud dit in Git. Alle inhoud die via AEM SDK-upgrades zou moeten worden voortgezet, blijft in dit pakket aanwezig en wordt opnieuw geïmplementeerd na de upgrade van de AEM SDK.
+1. Gebruik [ eiken-verbetering ](https://jackrabbit.apache.org/oak/docs/migration.html) met de `includepaths` richtlijn, om inhoud van de vroegere AEM bewaarplaats van SDK aan de nieuwe bewaarplaats van SDK van AEM te kopiëren.
+1. Maak een back-up van alle inhoud met AEM Package Manager en inhoudspakketten op de vorige AEM SDK en installeer deze opnieuw op de nieuwe AEM SDK.
 
-Herinner me, gebruikend de bovengenoemde benaderingen om code tussen AEM verbeteringen van SDK te handhaven, wijst op een ontwikkelantipatroon. De niet-besteedbare code zou in uw Ontwikkeling winde moeten voortkomen en in AEM SDK via plaatsingen stromen.
+Herinner me, gebruikend de bovengenoemde benaderingen om code tussen AEM verbeteringen van SDK te handhaven, wijst op een ontwikkelantipatroon. De niet-wegwerpcode zou in uw Ontwikkeling winde moeten voortkomen en in AEM SDK via plaatsingen stromen.
 
 ## Problemen oplossen
 
