@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -79,11 +79,21 @@ In toekomstige versies worden meer op OpenAPI gebaseerde AEM-API&#39;s toegevoeg
 
 De op OpenAPI gebaseerde AEM API&#39;s ondersteunen de volgende verificatiemethoden:
 
-- **OAuth Server-aan-Server Referentie**: Ideaal voor backend de diensten die API toegang zonder gebruikersinteractie vereisen. Het gebruikt _client_credentials_ giftype, toelatend veilig toegangsbeheer op het serverniveau. Voor meer informatie, zie [ Server-aan-Server referentie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#oauth-server-to-server-credential).
+- **OAuth Server-aan-Server credential**: Ideaal voor backend diensten die API toegang zonder gebruikersinteractie vereisen. Het gebruikt _client_credentials_ giftype, toelatend veilig toegangsbeheer op het serverniveau. Voor meer informatie, zie [ Server-aan-Server referentie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#oauth-server-to-server-credential).
 
 - **OAuth App credential van het Web**: Geschikt voor Webtoepassingen met front-end en _achterste_ componenten die tot APIs namens gebruikers toegang hebben. Het gebruikt het _authentication_code_ subsidietype, waar de backendserver veilig geheimen en tokens beheert. Voor meer informatie, zie {de referentie van de App van 0} OAuth Web ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-web-app-credential).[
 
 - **OAuth de Enige referentie van de App van de Pagina**: Ontworpen voor SPA die in browser lopen, die tot APIs namens een gebruiker zonder een achtergrondserver moet toegang hebben. Het gebruikt _authentication_code_ verlenen type en baseert zich op cliënt-zijveiligheidsmechanismen gebruikend PKCE (Sleutel van het Bewijs voor de Uitwisseling van de Code) om de stroom van de vergunningscode te beveiligen. Voor meer informatie, zie [ OAuth Enige de credentie van de Pagina App ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential).
+
+### Verschil tussen OAuth Server-aan-Server en OAuth Web App/Single Page App geloofsbrieven{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
+
+| | OAuth server-aan-server | OAuth-gebruikersverificatie (web-app) |
+| --- | --- | --- |
+| Verificatiedoel | Ontworpen voor machine-aan-machine interactie. | Ontworpen voor gebruikersgestuurde interacties. |
+| Gedrag token | Geeft toegangstokens uit die de cliënttoepassing zelf vertegenwoordigen. | Geeft toegangstokens uit namens een geverifieerde gebruiker. |
+| Gevallen gebruiken | Ondersteuningsservices die API-toegang zonder gebruikersinteractie nodig hebben. | Webtoepassingen met front-end en backendcomponenten die API&#39;s benaderen namens gebruikers. |
+| Beveiligingsoverwegingen | Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen. | De gebruiker verklaart voor authentiek en wordt verleend hun eigen tijdelijk toegangstoken. Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen. |
+| Type subsidie | _client_credentials_ | _authentication_code_ |
 
 ## Toegang tot Adobe-API&#39;s en verwante concepten{#accessing-adobe-apis-and-related-concepts}
 
@@ -102,4 +112,7 @@ Voordat u Adobe-API&#39;s opent, is het van essentieel belang dat u deze belangr
 Met inzicht in de verschillende AEM API-typen, waaronder
 AEM API&#39;s die zijn gebaseerd op OpenAPI&#39;s en de belangrijkste concepten voor toegang tot Adobe-API&#39;s zijn nu klaar om aangepaste toepassingen te maken die met AEM werken.
 
-Laten we beginnen met [ hoe te om op OpenAPI-Gebaseerde AEM APIs ](invoke-openapi-based-aem-apis.md) leerprogramma aan te halen.
+Laten we beginnen met:
+
+- [ roept op OpenAPI-Gebaseerde AEM APIs voor server aan serverauthentificatie ](invoke-openapi-based-aem-apis.md) leerprogramma aan, dat aantoont hoe te om tot op OpenAPI-Gebaseerde AEM toegang te hebben _gebruikend OAuth Server-aan-Server geloofsbrieven_.
+- [ roept op OpenAPI-Gebaseerde AEM APIs met gebruikersauthentificatie van een Web app ](invoke-openapi-based-aem-apis-from-web-app.md) leerprogramma aan, dat aantoont hoe te om tot op OpenAPI-Gebaseerde AEM APIs van a _Webtoepassing toegang te hebben gebruikend de geloofsbrieven van de Toepassing van het Web OAuth_.

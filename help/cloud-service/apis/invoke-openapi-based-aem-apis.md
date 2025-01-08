@@ -1,6 +1,6 @@
 ---
 title: API's voor OpenAPI's AEM
-description: Leer hoe u op OpenAPI gebaseerde API's voor AEM op AEM as a Cloud Service configureert en oproept vanuit aangepaste toepassingen.
+description: Leer hoe u op OpenAPI gebaseerde API's voor AEM op AEM as a Cloud Service configureert en oproept vanuit aangepaste toepassingen met OAuth Server-to-Server-verificatie.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -12,16 +12,18 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1800'
 ht-degree: 0%
 
 ---
 
-# API&#39;s voor OpenAPI&#39;s AEM{#invoke-openapi-based-aem-apis}
+# Op OpenAPI gebaseerde AEM-API&#39;s aanroepen voor serververificatie{#invoke-openapi-based-aem-apis}
 
-Leer hoe u op OpenAPI gebaseerde API&#39;s voor AEM op AEM as a Cloud Service configureert en oproept vanuit aangepaste toepassingen.
+Leer hoe te om op OpenAPI-Gebaseerde AEM APIs op AEM as a Cloud Service van douanetoepassingen te vormen en aan te halen gebruikend _Server-aan-Server_ authentificatie.
+
+De verificatie van server-naar-server OAuth is ideaal voor back-endservices die API-toegang zonder gebruikersinteractie nodig hebben. Het gebruikt OAuth 2.0 _client_credentials_ giftype om de cliënttoepassing voor authentiek te verklaren.
 
 >[!AVAILABILITY]
 >
@@ -30,7 +32,7 @@ Leer hoe u op OpenAPI gebaseerde API&#39;s voor AEM op AEM as a Cloud Service co
 In deze zelfstudie leert u hoe u:
 
 - Schakel op OpenAPI gebaseerde AEM API&#39;s toegang voor uw AEM as a Cloud Service-omgeving in.
-- Creeer en vorm een project van Adobe Developer Console (ADC) om tot AEM APIs toegang te hebben gebruikend Server-aan-Server authentificatie OAuth.
+- Creeer en vorm een project van Adobe Developer Console (ADC) om tot AEM APIs toegang te hebben gebruikend _Server-aan-Server authentificatie_.
 - Ontwikkelen van een voorbeeldtoepassing NodeJS die de Assets-auteur-API aanroept om metagegevens voor een bepaald element op te halen.
 
 Alvorens u begint, zorg ervoor u de [ Toegang tot Adobe APIs en verwante concepten ](overview.md#accessing-adobe-apis-and-related-concepts) sectie herzien.
