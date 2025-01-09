@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
 exl-id: dc35256a-3873-413f-b282-90948efd5f31
-source-git-commit: 3e91387368943b1b0d62c57f8172a0306758b28f
+source-git-commit: 52749190860961ed2baf4c3c3cd7a6b55a87af58
 workflow-type: tm+mt
 source-wordcount: '2433'
 ht-degree: 0%
@@ -37,7 +37,8 @@ De WKND PIM-app is een voorbeeldwebtoepassing die is ontworpen voor het beheer v
 
 Het Adobe Developer Console-project (ADC) is geconfigureerd voor toegang tot de Assets Author API met behulp van de OAuth Web App-verificatie. Het verstrekt noodzakelijke _client_id_ en _client_geheime_ aan het Web WKND-PIM app om de _authentication_code_ subsidiestroom in werking te stellen.
 
->[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)
+
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 Het volgende diagram illustreert de functionele stroom van WKND-PIM Web app _die gebruikerspecifieke toegangstokens krijgt om met de Auteur API van Assets in wisselwerking te staan_.
 
