@@ -1,5 +1,5 @@
 ---
-title: API's voor OpenAPI-AEM aanroepen vanuit een webtoepassing
+title: AEM-API's op basis van OpenAPI aanroepen met gebruikersverificatie vanuit een webtoepassing
 description: Leer hoe u op OpenAPI gebaseerde API's voor AEM op AEM as a Cloud Service aanroept vanuit een aangepaste webtoepassing met OAuth Web App-verificatie.
 version: Cloud Service
 feature: Developing
@@ -9,15 +9,15 @@ level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
 thumbnail: KT-16718.jpeg
-last-substantial-update: 2024-12-17T00:00:00Z
+last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+exl-id: dc35256a-3873-413f-b282-90948efd5f31
+source-git-commit: 3e91387368943b1b0d62c57f8172a0306758b28f
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2433'
 ht-degree: 0%
 
 ---
-
 
 # AEM-API&#39;s op basis van OpenAPI aanroepen met gebruikersverificatie vanuit een webtoepassing{#invoke-openapi-based-aem-apis-from-web-app}
 
@@ -36,6 +36,8 @@ Voordat u begint, moeten we de voorbeeldwebtoepassing, het WKND-productinformati
 De WKND PIM-app is een voorbeeldwebtoepassing die is ontworpen voor het beheer van productkenmerken en de metagegevens van bedrijfsmiddelen die in AEM as a Cloud Service zijn opgeslagen. In dit voorbeeld wordt getoond hoe webtoepassingen naadloos kunnen integreren met Adobe-API&#39;s om efficiënte, gebruikersgerichte workflows te leveren.
 
 Het Adobe Developer Console-project (ADC) is geconfigureerd voor toegang tot de Assets Author API met behulp van de OAuth Web App-verificatie. Het verstrekt noodzakelijke _client_id_ en _client_geheime_ aan het Web WKND-PIM app om de _authentication_code_ subsidiestroom in werking te stellen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)
 
 Het volgende diagram illustreert de functionele stroom van WKND-PIM Web app _die gebruikerspecifieke toegangstokens krijgt om met de Auteur API van Assets in wisselwerking te staan_.
 
@@ -66,7 +68,7 @@ Alvorens u begint, zorg ervoor u de [ Toegang tot Adobe APIs en verwante concept
 
 ## Deze zelfstudie gebruiken{#how-to-use-this-tutorial}
 
-U kunt of [ het Web van het Overzicht app zeer belangrijke codefragmenten ](#review-web-app-key-code-snippets) sectie om de de authentificatiestroom van de App van het Web te begrijpen OAuth en API vraagcodefragmenten die in WKND-PIM Web worden gebruikt. Of ga direct aan de [ Opstelling te werk en Web in werking te stellen app ](#setup-run-web-app) sectie aan opstelling en WKND-PIM Web app op uw lokale machine in werking te stellen.
+U kunt of [ het Web van het Overzicht app zeer belangrijke codefragmenten ](#review-web-app-key-code-snippets) sectie {om de de authentificatiestroom van de App van het Web te begrijpen OAuth en API codefragmenten roepen die in WKND-PIM Web worden gebruikt app. Of ga direct aan de [ Opstelling te werk en Web app ](#setup-run-web-app) sectie in werking te stellen aan opstelling en Web-app WKND-PIM op uw lokale machine in werking te stellen.
 
 ## Codefragmenten voor webapps bekijken{#review-web-app-key-code-snippets}
 
@@ -404,6 +406,11 @@ De op OpenAPI-gebaseerde AEM API-aanroepen worden gemaakt vanaf de server-kant (
 
 Om het toegangstoken te verfrissen alvorens het verloopt, kunt u uitvoeren verfrist symbolische stroom. Om de zelfstudie echter eenvoudig te houden, implementeert de WKND-PIM-webapp de token-flow voor vernieuwen niet.
 
+
+>[!TIP]
+>
+>U kunt de volgende sectie volgen om de WKND-PIM Web-app op uw lokale computer uit te proberen en praktijkervaring met de OAuth Web App authentificatiestroom en API vraag te krijgen.
+
 ## Webtoepassing instellen en uitvoeren
 
 Configureer en voer de WKND-PIM-webapp op uw lokale computer uit om de OAuth Web App-verificatiestroom en API-aanroepen te begrijpen.
@@ -526,7 +533,7 @@ Door gebrek, heeft het project van Plaatsen WKND niet het vereiste schema van ac
 
    ![ ga aan omslag ](assets/web-app/navigate-to-folder.png)
 
-1. Creeer **PIM** en binnen het leiden tot de **Camping** omslag, dan uploadt [ steekproefbeelden ](./assets/web-app/camping-gear-imgs.zip) in de **Camping** omslag.
+1. Creeer a **PIM** en binnen het leiden tot de **Camping** omslag, dan uploadt [ steekproefbeelden ](./assets/web-app/camping-gear-imgs.zip) in de **Camping** omslag.
 
    ![ Omslag PIM ](assets/web-app/pim-folder.png)
 
@@ -644,7 +651,7 @@ Met de bovengenoemde stappen, zijn de activa van de **PIM** omslag klaar om de m
 
 >[!IMPORTANT]
 >
->Als de geverifieerde gebruiker niet beschikt over de benodigde machtigingen om metagegevens van middelen te controleren of bij te werken, retourneren de op OpenAPI gebaseerde AEM API&#39;s een fout van 403 Verboden. Dit zorgt ervoor dat, zelfs als de gebruiker voor authentiek wordt verklaard en een geldig toegangstoken IMS heeft, zij tot geen middelen zonder de vereiste toestemmingen toegang hebben AEM.
+>Als de geverifieerde gebruiker niet beschikt over de benodigde machtigingen om metagegevens van middelen te controleren of bij te werken, retourneren de op OpenAPI gebaseerde AEM API&#39;s een fout van 403. Het zorgt ervoor dat, zelfs als de gebruiker voor authentiek wordt verklaard en een geldig toegangstoken IMS heeft, zij tot geen middelen zonder de vereiste toestemmingen toegang hebben AEM.
 
 
 ### De toepassingscode controleren
