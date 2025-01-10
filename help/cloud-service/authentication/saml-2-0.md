@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 87dd4873152d4690abb1efcfebd43d10033afa0a
+source-git-commit: a1f7395cc5f83174259d7a993fefc9964368b4bc
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '4037'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ De doorstroming van een AEM integratie van Publish SAML is als volgt:
    + De gebruiker wordt veroorzaakt door IDP voor geloofsbrieven.
    + De gebruiker is reeds voor authentiek verklaard met IDP en moet geen verdere geloofsbrieven verstrekken.
 1. IDP produceert een bevestiging van SAML die de gegevens van de gebruiker bevat, en ondertekent het gebruikend het privé certificaat van IDP.
-1. IDP verzendt de bevestiging van SAML via de POST van HTTP, als Webbrowser van de gebruiker, naar AEM Publish.
+1. IDP verzendt de bevestiging van SAML via de POST van HTTP, als Webbrowser van de gebruiker (RESPECTIVE_PROTECTED_PATH/saml_login), naar AEM Publish.
 1. AEM Publish ontvangt de bevestiging van SAML, en bevestigt de integriteit en de authenticiteit van de bevestiging van SAML gebruikend het openbare certificaat IDP.
 1. AEM Publish beheert het AEM gebruikersverslag dat op de configuratie van SAML 2.0 OSGi, en de inhoud van de Assertion van SAML wordt gebaseerd.
    + Maakt gebruiker
@@ -402,7 +402,7 @@ Tijdens het SAML authentificatieproces, stelt IDP een cliënt-kant POST van HTTP
 
 De header `Origin` van deze HTTP POST request heeft gewoonlijk een andere waarde dan de AEM Publish host, waardoor CORS-configuratie vereist is.
 
-Bij het testen van SAML-verificatie op de lokale AEM-SDK (`localhost:4503`), kan de IDP de `Origin` header instellen op `null` . Als dat het geval is, voegt u `"null"` toe aan de lijst `alloworigin` .
+Bij het testen van SAML-verificatie op de lokale AEM SDK (`localhost:4503`), kan de IDP de `Origin` header instellen op `null` . Als dat het geval is, voegt u `"null"` toe aan de lijst `alloworigin` .
 
 1. Creeer een OSGi configuratiedossier in uw project bij `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.cors.impl.CORSPolicyImpl~saml.cfg.json`
    + Wijzig `/wknd-examples/` in uw projectnaam
@@ -439,6 +439,9 @@ Na succesvolle authentificatie aan IDP, zal IDP een POST van HTTP terug naar AEM
 # Allow SAML HTTP POST to ../saml_login end points
 /0190 { /type "allow" /method "POST" /url "*/saml_login" }
 ```
+
+>[!NOTE]
+>Wanneer het opstellen van veelvoudige configuraties SAML in AEM voor diverse beschermde wegen en verschillende eindpunten IDP, zorg ervoor dat IDP aan RESPECTIVE_PROTECTED_PATH/saml_login eindpunt posten om de aangewezen configuratie van SAML op de AEM te selecteren. Als er dubbele configuraties SAML voor de zelfde beschermde weg zijn, zal de selectie van de configuratie van SAML willekeurig voorkomen.
 
 Als URL die bij de Apache webserver herschrijft (`dispatcher/src/conf.d/rewrites/rewrite.rules`) wordt gevormd, zorg ervoor dat de verzoeken aan de `.../saml_login` eindpunten niet per ongeluk worden beheerd.
 
@@ -561,6 +564,12 @@ Implementeer de Cloud Manager Git-doelvertakking (in dit voorbeeld `develop` ) m
 ## De SAML-verificatie aanroepen
 
 De SAML authentificatiestroom kan van een AEM Web-pagina van de Plaats worden aangehaald, door een speciaal gemaakte verbindingen, of een knopen te creëren. De hieronder beschreven parameters kunnen indien nodig via programmacode worden ingesteld, dus een aanmeldknop kan `saml_request_path` bijvoorbeeld instellen op verschillende AEM pagina&#39;s, op basis van de context van de knop.
+
+## Beveiligd in cache plaatsen tijdens gebruik van SAML
+
+Op de AEM-publicatie-instantie worden de meeste pagina&#39;s doorgaans in cache geplaatst. Nochtans, voor SAML-Beschermde wegen, zou caching of moeten worden onbruikbaar gemaakt of beveiligd caching toegelaten gebruikend de configuratie auth_checker. Voor meer informatie, gelieve te verwijzen naar de details [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/permissions-cache) worden verstrekt
+
+Houd er rekening mee dat als u beveiligde paden in de cache plaatst zonder de AUth_checker in te schakelen, dit onvoorspelbaar gedrag kan veroorzaken.
 
 ### Verzoek om GET
 
