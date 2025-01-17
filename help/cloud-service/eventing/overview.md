@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
+source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -125,5 +125,14 @@ Voor meer informatie, zie [ AEM Gebeurtenissen die via de Gebeurtenissen van de 
           Leer hoe u ontvangen AEM Gebeurtenissen verwerkt met Adobe I/O Runtime Action. De gebeurtenisverwerking omvat AEM callback, persistentie van gebeurtenisgegevens en het weergeven van deze gegevens in de SPA.
         </p>
       </td>
-  </tr>    
+  </tr>
+  <tr>
+    <td>
+        <a  href="./examples/assets-pim-integration.md"><img alt="AEM Assets-gebeurtenissen voor PIM-integratie" src="./assets/examples/assets-pim-integration/PIM-integration-tile.png"/></a>
+        <div><strong><a href="./examples/assets-pim-integration.md"> de gebeurtenissen van AEM Assets voor PIM integratie </a></strong></div>
+        <p>
+          Leer hoe u AEM Assets en PIM-systemen (Product Information Management) kunt integreren voor updates van metagegevens.
+        </p>
+      </td>
+  </tr> 
 </table>
