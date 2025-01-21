@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: a1f7395cc5f83174259d7a993fefc9964368b4bc
+source-git-commit: 6f8d2bdd4ffb1c643cebcdd59fb529d8da1c44cf
 workflow-type: tm+mt
-source-wordcount: '4037'
+source-wordcount: '4262'
 ht-degree: 0%
 
 ---
@@ -445,6 +445,10 @@ Na succesvolle authentificatie aan IDP, zal IDP een POST van HTTP terug naar AEM
 
 Als URL die bij de Apache webserver herschrijft (`dispatcher/src/conf.d/rewrites/rewrite.rules`) wordt gevormd, zorg ervoor dat de verzoeken aan de `.../saml_login` eindpunten niet per ongeluk worden beheerd.
 
+## Dynamisch groepslidmaatschap
+
+Het dynamische Lidmaatschap van de Groep is een eigenschap in [ Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) die de prestaties van groepsevaluatie en levering verhoogt. Deze sectie beschrijft hoe de gebruikers en de groepen worden opgeslagen wanneer deze eigenschap wordt toegelaten en hoe te om de configuratie van de Handler van de Authentificatie van SAML te wijzigen om het voor nieuwe of bestaande milieu&#39;s toe te laten.
+
 ### Hoe te om Dynamisch Lidmaatschap van de Groep voor de Gebruikers van SAML in nieuwe milieu&#39;s toe te laten
 
 Om de prestaties van de groepsevaluatie in nieuwe AEM as a Cloud Service-omgevingen aanzienlijk te verbeteren, wordt de activering van de functie Dynamic Group Membership aanbevolen in nieuwe omgevingen.
@@ -518,7 +522,17 @@ Dit is de knoop voor een gebruikerslid van die groep:
 }
 ```
 
-### Automatische migratie naar dynamisch groepslidmaatschap voor bestaande omgevingen
+### Hoe te om Dynamisch Lidmaatschap van de Groep voor de Gebruikers van SAML in bestaande milieu&#39;s toe te laten
+
+Zoals in de vorige sectie wordt uitgelegd, wijkt de indeling van externe gebruikers en groepen enigszins af van de indeling die wordt gebruikt voor lokale gebruikers en groepen. Het is mogelijk om nieuwe ACL voor externe groepen en voorziening nieuwe externe gebruikers te bepalen, of het migratiehulpmiddel te gebruiken zoals hieronder beschreven.
+
+#### Dynamisch groepslidmaatschap voor bestaande omgevingen met externe gebruikers inschakelen
+
+De SAML-verificatiehandler maakt externe gebruikers wanneer de volgende eigenschap wordt opgegeven: `"identitySyncType": "idp"` . In dit geval kan dynamisch groepslidmaatschap worden ingeschakeld waarbij deze eigenschap wordt gewijzigd in: `"identitySyncType": "idp_dynamic"` . Er is geen migratie vereist.
+
+#### Automatische migratie naar dynamisch groepslidmaatschap voor bestaande omgevingen met lokale gebruikers
+
+De SAML-verificatiehandler maakt lokale gebruikers wanneer de volgende eigenschap wordt opgegeven: `"identitySyncType": "default"` . Dit is ook de standaardwaarde wanneer de eigenschap niet wordt opgegeven. In deze sectie beschrijven we de stappen die worden uitgevoerd door de automatische migratieprocedure.
 
 Wanneer deze migratie is ingeschakeld, wordt deze uitgevoerd tijdens gebruikersverificatie en bestaat deze uit de volgende stappen:
 1. De lokale gebruiker wordt gemigreerd naar een externe gebruiker met behoud van de oorspronkelijke gebruikersnaam. Dit betekent dat gemigreerde lokale gebruikers, die nu als externe gebruikers fungeren, hun oorspronkelijke gebruikersnaam behouden in plaats van de naamgevingssyntaxis te volgen die in de vorige sectie wordt vermeld. Er wordt een extra eigenschap toegevoegd, namelijk `rep:externalId` met de waarde van `[user name];[idp]` . De gebruiker `PrincipalName` wordt niet gewijzigd.
@@ -533,18 +547,20 @@ Als vóór de migratie `user1` bijvoorbeeld een lokale gebruiker en een lid van 
 `group1;idp` is lid van de lokale groep: `group1` .
 `user1` is dan lid van de lokale groep: `group1` hoewel overerving
 
-Het groepslidmaatschap voor externe groepen wordt opgeslagen in het gebruikersprofiel in het kenmerk `rep:authorizableId`
+Het groepslidmaatschap voor externe groepen wordt opgeslagen in het gebruikersprofiel in de eigenschap `rep:externalPrincipalNames`
 
 ### Automatische migratie naar dynamisch groepslidmaatschap configureren
 
-1. De eigenschap `"identitySyncType": "idp_dynamic_simplified_id"` inschakelen in het SAML OSGI-configuratiebestand: `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json`
-2. Vorm de nieuwe dienst OSGI met PID: `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~...` met het bezit:
+1. Schakel de eigenschap `"identitySyncType": "idp_dynamic_simplified_id"` in het SAML OSGi-configuratiebestand in: `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json`
+2. Vorm de nieuwe dienst OSGi met PID van de Fabriek die met begint: `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~`. Een PID kan bijvoorbeeld: `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~myIdP` zijn. Stel de volgende eigenschap in:
 
 ```
 {
-  "idpIdentifier": "<vaule of identitySyncType of saml configuration to be migrated>"
+  "idpIdentifier": "<value of IDP Identifier (idpIdentifier)" property from the "com.adobe.granite.auth.saml.SamlAuthenticationHandler" configuration to be migrated>"
 }
 ```
+
+Als u meerdere SAML-configuraties wilt migreren, moeten er meerdere OSGi-fabrieksconfiguraties voor `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration` worden gemaakt. Elke configuratie geeft een `idpIdentifier` op die moet worden gemigreerd.
 
 ## SAML-configuratie implementeren
 
