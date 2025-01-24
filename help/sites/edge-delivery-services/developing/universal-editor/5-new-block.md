@@ -1,0 +1,437 @@
+---
+title: Een blok maken
+description: Bouw een blok voor een website van Edge Delivery Services die met Universal Editor editable is.
+version: Cloud Service
+feature: Edge Delivery Services
+topic: Development
+role: Developer
+level: Beginner
+doc-type: Tutorial
+jira: KT-15832
+duration: 900
+source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+workflow-type: tm+mt
+source-wordcount: '1566'
+ht-degree: 0%
+
+---
+
+
+# Een nieuw blok maken
+
+In dit hoofdstuk wordt beschreven hoe u met de Universal Editor een nieuw, bewerkbaar teasblok voor een website van Edge Delivery Services maakt.
+
+![ Nieuw teaser blok ](./assets//5-new-block/teaser-block.png)
+
+In het blok met de naam `teaser` worden de volgende elementen weergegeven:
+
+- **Beeld**: Een visueel aansprekend beeld.
+- **inhoud van de Tekst**:
+   - **Titel**: Een dwingende kop om nadruk te trekken.
+   - **tekst van het Lichaam**: De beschrijvende inhoud die context of details, met inbegrip van facultatieve termijnen en voorwaarden verstrekt.
+   - **vraag-aan-actie (CTA) knoop**: Een verbinding die wordt ontworpen om gebruikersinteractie te veroorzaken en hen te begeleiden aan verdere betrokkenheid.
+
+De inhoud van het `teaser` -blok kan worden bewerkt in de Universal Editor, zodat u op de hele website gemakkelijk kunt gebruiken en opnieuw kunt gebruiken.
+
+Het blok `teaser` is vergelijkbaar met het blok `hero` van de bouwsteen. Het blok `teaser` is dus alleen bedoeld als eenvoudig voorbeeld ter illustratie van ontwikkelingsconcepten.
+
+## Een nieuwe Git-vertakking maken
+
+Om een schone en georganiseerde werkstroom te handhaven, creeer een nieuwe tak voor elke specifieke ontwikkelingstaak. Dit helpt problemen met de implementatie van onvolledige of niet-geteste code voor productie te voorkomen.
+
+1. **Begin van de belangrijkste tak**: Het werken van de meest bijgewerkte productiecode verzekert een stevige stichting.
+2. **Vetch verre veranderingen**: Het Vetsen van de recentste updates van GitHub zorgt ervoor dat de huidigste code vóór beginnende ontwikkeling beschikbaar is.
+   - Voorbeeld: na het samenvoegen van wijzigingen van de `wknd-styles` -vertakking in `main` , haalt u de meest recente updates op.
+3. **creeer een nieuwe tak**:
+
+```bash
+# ~/Code/aem-wknd-eds-ue
+
+$ git fetch origin  
+$ git checkout -b teaser origin/main  
+```
+
+Wanneer de `teaser` -vertakking is gemaakt, kunt u beginnen met het ontwikkelen van het laserblok.
+
+## Blokmap
+
+Maak een nieuwe map met de naam `teaser` in de map `blocks` van het project. Deze map bevat de JSON-, CSS- en JavaScript-bestanden van het blok, waarbij de bestanden van het blok op één locatie worden gerangschikt:
+
+```
+# ~/Code/aem-wknd-eds-ue
+
+/blocks/teaser
+```
+
+De naam van de blokmap fungeert als de id van het blok en wordt gebruikt om tijdens de ontwikkeling naar het blok te verwijzen.
+
+## Block JSON
+
+Het blok JSON definieert drie belangrijke aspecten van het blok:
+
+- **Definitie**: Registreert het blok als editable component in de Universele Redacteur, die het met een blokmodel en naar keuze een filter verbindt.
+- **Model**: Specificeert de auteursgebieden van het blok en hoe deze gebieden als semantische HTML van Edge Delivery Services worden teruggegeven.
+- **Filter**: Vormt het filtreren regels om te beperken welke containers het blok aan via de Universele Redacteur kan worden toegevoegd. De meeste blokken zijn geen containers, maar hun id&#39;s worden toegevoegd aan de filters van andere containerblokken.
+
+Maak een nieuw bestand bij `/blocks/teaser/_teaser.json` met de volgende initiële structuur, in de exacte volgorde. Als de toetsen niet op de juiste wijze zijn, kunnen ze niet goed worden gemaakt.
+
+[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+
+```json
+{
+    "definitions": [],
+    "models": [],
+    "filters": []
+}
+```
+
+### Blokmodel
+
+Het blokmodel is een kritiek deel van de configuratie van het blok, aangezien het bepaalt:
+
+1. De ontwerpervaring door de velden te definiëren die beschikbaar zijn voor bewerken.
+
+   ![ Universele gebieden van de Redacteur ](./assets/5-new-block/fields-in-universal-editor.png)
+
+2. De manier waarop de waarden van het veld worden gerenderd in HTML van Edge Delivery Services.
+
+De modellen worden toegewezen een `id` die aan de [ definitie van het blok ](#block-definition) beantwoordt en een `fields` serie omvat om de editable gebieden te specificeren.
+
+Elk veld in de array `fields` heeft een JSON-object dat de volgende vereiste eigenschappen bevat:
+
+| JSON, eigenschap | Beschrijving |
+|---------------|-----------------------------------------------------------------------------------------------------------------------|
+| `component` | Het [ gebiedstype ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types), zoals `text`, `reference`, of `aem-content`. |
+| `name` | The name of the field, mapping to the JCR property where the value is stored in AEM. |
+| `label` | Het label dat aan auteurs in de Universele Redacteur wordt getoond. |
+
+Voor een uitvoerige lijst van eigenschappen, met inbegrip van facultatief, herzie de [ Universele de gebiedsdocumentatie van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields).
+
+#### Blokontwerp
+
+![ het Blok van de Teaser ](./assets/5-new-block/block-design.png)
+
+Het teasblok bevat de volgende bewerkbare elementen:
+
+1. **Beeld**: Vertegenwoordigt de visuele inhoud van het meetapparaat.
+2. **inhoud van de Tekst**: Omvat de titel, lichaamstekst, en vraag-aan-actie knoop, en zit in een witte rechthoek.
+   - De **titel** en **lichaamstekst** kan via de zelfde rijke tekstredacteur worden geschreven.
+   - **CTA** kan via a `text` gebied voor het **etiket**, en `aem-content` gebied voor de **verbinding** worden authored.
+
+Het ontwerp van het teasblok is opgedeeld in deze twee logische componenten (afbeelding en tekstinhoud) en zorgt voor een gestructureerde en intuïtieve ontwerpervaring voor gebruikers.
+
+### Velden blokkeren
+
+Definieer de velden die nodig zijn voor het blok: afbeelding, alternatieve afbeeldingstekst, tekst, CTA-label en CTA-koppeling.
+
+>[!BEGINTABS]
+
+>[!TAB  de juiste manier ]
+
+**Dit lusje illustreert de juiste manier om het teaser blok te modelleren.**
+
+De teaser bestaat uit twee logische gebieden: afbeelding en tekst. Om de code te vereenvoudigen nodig om de HTML van de Edge Delivery Services als gewenste Webervaring te tonen, zou het blokmodel deze structuur moeten weerspiegelen.
+
+- Groepeer het **beeld** en **beeld alt tekst** samen gebruikend [ gebiedsondergang ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
+- Groepeer de gebieden van de tekstinhoud samen gebruikend [ element groeperend ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping), en [ gebiedsondergang voor CTA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
+
+Als u niet vertrouwd met [ gebiedsondergang ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) bent, [ element groeperend ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping), of [ typegevolgtrekking ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) herziet de verbonden documentatie alvorens verder te gaan, aangezien zij essentieel aan het creëren van een goed-gestructureerd blokmodel zijn.
+
+[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+
+```json
+{
+    "definitions": [],
+    "models": [
+        {
+            "id": "teaser", 
+            "fields": [
+                {
+                    "component": "reference",
+                    "valueType": "string",
+                    "name": "image",
+                    "label": "Image",
+                    "multi": false
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "imageAlt",
+                    "label": "Image alt text",
+                    "required": true
+                },
+                {
+                    "component": "richtext",
+                    "name": "textContent_text",
+                    "label": "Text",
+                    "valueType": "string",
+                    "required": true
+                },
+                {
+                    "component": "aem-content",
+                    "name": "textContent_cta",
+                    "label": "CTA",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "textContent_ctaText",
+                    "label": "CTA label",
+                    "valueType": "string"
+                }
+            ]
+        }
+    ],
+    "filters": []
+}
+```
+
+Dit model bepaalt de auteursinput in Universele Redacteur voor het blok.
+
+De resulterende HTML van Edge Delivery Services voor dit blok plaatst de afbeelding in de eerste div en de velden voor de elementengroep `textContent` in de tweede div.
+
+```html
+<div>
+    <div>
+        <!-- This div contains the field-collapsed image fields  -->
+        <picture>
+            ...
+            <source .../>            
+            <img src="..." alt="The authored alt text"/>
+        </picture>
+    </div>
+    <div>
+        <!-- This div, via element grouping contains the textContent fields -->
+        <h2>The authored title</h2>
+        <p>The authored body text</p>
+        <a href="/authored/cta/link">The authored CTA label</a>
+    </div>
+</div>        
+```
+
+Zoals aangetoond [ in het volgende hoofdstuk ](./7a-block-css.md), vereenvoudigt deze structuur van HTML het stileren van het blok als samenhangende eenheid.
+
+Om de gevolgen te begrijpen van het niet gebruiken van gebiedsondergang en element groeperen, zie **de verkeerde manier** hierboven tabel.
+
+>[!TAB  De verkeerde manier ]
+
+**dit lusje illustreert een suboptimale manier om het teaser blok te modelleren, en is slechts een juxtapositie aan de juiste manier.**
+
+Het bepalen van elk gebied als standalone gebied in het blokmodel zonder [ gebied te gebruiken doen ineenstorten ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) en [ element groeperen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) kan verleidelijk lijken. Dit overzicht bemoeilijkt echter het opmaken van het blok als een samenhangend geheel.
+
+Bijvoorbeeld, kon het teaser model **zonder** gebiedsondergang of element groepering als volgt worden bepaald:
+
+[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+
+```json
+{
+    "definitions": [],
+    "models": [
+        {
+            "id": "teaser", 
+            "fields": [
+                {
+                    "component": "reference",
+                    "valueType": "string",
+                    "name": "image",
+                    "label": "Image",
+                    "multi": false
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "alt",
+                    "label": "Image alt text",
+                    "required": true
+                },
+                {
+                    "component": "richtext",
+                    "name": "text",
+                    "label": "Text",
+                    "valueType": "string",
+                    "required": true
+                },
+                {
+                    "component": "aem-content",
+                    "name": "link",
+                    "label": "CTA",
+                    "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "label",
+                    "label": "CTA label",
+                    "valueType": "string"
+                }
+            ]
+        }
+    ],
+    "filters": []
+}
+```
+
+De HTML Edge Delivery Services voor het blok geeft de waarde van elk veld in een aparte `div` weer, waardoor het begrip van de inhoud, de stijltoepassing en de structuuraanpassingen van de HTML worden gecompliceerd om het gewenste ontwerp te verkrijgen.
+
+```html
+<div>
+    <div>
+        <!-- This div contains the field-collapsed image  -->
+        <picture>
+            ...
+            <source .../>            
+            <img src="/authored/image/reference"/>
+        </picture>
+    </div>
+    <div>
+        <p>The authored alt text</p>
+    </div>
+    <div>
+        <h2>The authored title</h2>
+        <p>The authored body text</p>
+    </div>
+    <div>
+        <a href="/authored/cta/link">/authored/cta/link</a>
+    </div>
+    <div>
+        The authored CTA label
+    </div>
+</div>        
+```
+
+Elk veld wordt geïsoleerd in een eigen `div`, waardoor het moeilijk is om de afbeeldings- en tekstinhoud op te maken als een consistente eenheid. Het bereiken van het gewenste ontwerp met inspanning en creativiteit is mogelijk, maar het gebruiken van [ element groeperend ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) om de gebieden van de tekstinhoud en [ gebiedsondergang ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) te groeperen om authored waarden als elementenattributen toe te voegen is eenvoudiger, gemakkelijker, en semantisch correct.
+
+Zie **de schrijfmanier** hierboven voor hoe te om het teaser blok beter te modelleren.
+
+>[!ENDTABS]
+
+
+### Blokdefinitie
+
+De blokdefinitie registreert het blok in Universele Redacteur. Hier volgt een uitsplitsing van de JSON-eigenschappen die worden gebruikt in de blokdefinitie:
+
+| JSON, eigenschap | Beschrijving |
+|---------------|-------------|
+| `definition.title` | De titel van het blok aangezien het in Universele **wordt getoond voegt** blokken toe. |
+| `definition.id` | A unique ID for the block, used to control its use in `filters` . |
+| `definition.plugins.xwalk.page.resourceType` | Bepaalt het het Verschuiven middeltype voor het teruggeven van de component in de Universele Redacteur. Gebruik altijd een `core/franklin/components/block/v#/block` resource type. |
+| `definition.plugins.xwalk.page.template.name` | De naam van het blok. De naam moet lager zijn en worden afgebroken, zodat deze overeenkomt met de mapnaam van het blok. Deze waarde wordt ook gebruikt om het exemplaar van het blok in de Universele Redacteur te etiketteren. |
+| `definition.plugins.xwalk.page.template.model` | Koppelt deze definitie aan de bijbehorende `model` -definitie, die de ontwerpvelden bepaalt die voor het blok in de Universal Editor worden weergegeven. De waarde hier moet overeenkomen met een `model.id` -waarde. |
+
+Hier is een voorbeeld van JSON voor de blokdefinitie:
+
+[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+
+```json
+{
+    "definitions": [{
+      "title": "Teaser",
+      "id": "teaser",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Teaser",
+              "model": "teaser",
+              "textContent_text": "<h2>Enter a title</h2><p>...and body text here!</p>",
+              "textContent_cta": "/",
+              "textContent_ctaText": "Click me!"
+            }
+          }
+        }
+      }
+    }],
+    "models": [... from previous section ...],
+    "filters": []
+}
+```
+
+In dit voorbeeld:
+
+- Het blok heeft de naam &#39;Taser&#39; en gebruikt het `teaser` -model dat bepaalt welke velden beschikbaar zijn voor bewerking in de Universal Editor.
+- Het blok bevat standaardinhoud voor het veld `textContent_text` . Dit is een RTF-gebied voor de titel en de hoofdtekst en `textContent_cta` en `textContent_ctaText` voor de koppeling en het label voor de CTA-koppeling (call-to-action). De het gebiedsnamen van het malplaatje die aanvankelijke inhoud bevatten, passen de gebiedsnamen aan die in de [ de gebiedsserie van het inhoudsmodel ](#block-model) worden bepaald;
+
+Deze structuur zorgt ervoor dat het blok in de Universele Redacteur met de juiste gebieden, inhoudsmodel, en middeltype voor het teruggeven wordt opgesteld.
+
+### Blokkeringsfilters
+
+De serie van het blok `filters` bepaalt, voor [ containerblokken ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), welke andere blokken aan de container kunnen worden toegevoegd. Filters definiëren een lijst met blok-id&#39;s (`model.id`) die aan de container kunnen worden toegevoegd.
+
+[!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+
+```json
+{
+  "definitions": [... populated from previous section ...],
+  "models": [... populated from previous section ...],
+  "filters": []
+}
+```
+
+De lasercomponent is geen a [ containerblok ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), betekenend kunt u geen andere blokken aan het toevoegen. Hierdoor blijft de array `filters` leeg. Voeg in plaats daarvan de teaser-id toe aan de filterlijst van het sectieblok, zodat het teaser-object aan een sectie kan worden toegevoegd.
+
+![ de filters van het Blok ](./assets/5-new-block/filters.png)
+
+Door Adobe verschafte blokken, zoals het sectieblok, slaan filters op in de map `models` van het project. Als u de instellingen wilt aanpassen, zoekt u het JSON-bestand naar het door de Adobe verschafte blok (bijvoorbeeld `/models/_section.json` ) en voegt u de id van de teaser ( `teaser` ) toe aan de lijst met filters. De configuratie signaleert de Universele Redacteur dat de lasercomponent aan het blok van de sectiecontainer kan worden toegevoegd.
+
+[!BADGE  /models/_section.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
+
+```json
+{
+  "definitions": [],
+  "models": [],
+  "filters": [
+    {
+      "id": "section",
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title",
+        "hero",
+        "cards",
+        "columns",
+        "fragment",
+        "teaser"
+      ]
+    }
+  ]
+}
+```
+
+De definitie-id van het teasblok `teaser` wordt toegevoegd aan de array `components` .
+
+## JSON-bestanden plaatsen
+
+Zorg ervoor u [ vaak ](./3-local-development-environment.md#linting) kleint uw veranderingen om het schoon en verenigbaar te verzekeren. Door regelmatig te koppelen worden problemen vroegtijdig afgevangen en neemt de totale ontwikkelingstijd af. Met de opdracht `npm run lint:js` kunt u ook JSON-bestanden koppelen en syntaxisfouten afvangen.
+
+```bash
+# ~/Code/aem-wknd-eds-ue
+
+$ npm run lint:js
+```
+
+## Het JSON-project bouwen
+
+Nadat u de JSON-blokbestanden (`blocks/teaser/_teaser.json`, `models/_section.json` ) hebt geconfigureerd, moeten deze worden gecompileerd in de bestanden `component-models.json` , `component-definitions.json` en `component-filters.json` van het project. De compilatie wordt gedaan door de manuscripten van JSON ](./3-local-development-environment.md#build-json-fragments) in werking te stellen npm van het project [ bouwt.
+
+```bash
+# ~/Code/aem-wknd-eds-ue
+
+$ npm run build:json
+```
+
+## De blokdefinitie implementeren
+
+Om het blok beschikbaar te maken in de Universele Redacteur, moet het project worden begaan en aan de tak van een bewaarplaats GitHub, in dit geval de `teaser` tak worden geduwd.
+
+De exacte vertakkingsnaam die Universal Editor gebruikt, kan per gebruiker worden aangepast via de URL van de Universal Editor.
+
+```bash
+# ~/Code/aem-wknd-eds-ue
+
+$ git add .
+$ git commit -m "Add teaser block JSON files so it is available in Universal Editor"
+$ git push origin teaser
+```
+
+Wanneer de Universele Redacteur met de vraagparameter `?ref=teaser` wordt geopend, verschijnt het nieuwe `teaser` blok in het blokpalet. Merk op dat het blok geen het stileren heeft; het geeft de gebieden van het blok als semantische HTML terug, die slechts via [ globale CSS ](./4-website-branding.md#global-css) wordt gestileerd.

@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
+source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '582'
 ht-degree: 5%
 
 ---
@@ -98,6 +98,16 @@ ht-degree: 5%
       + [Documentstructuur](edge-delivery-services/developing/document-structure.md)
       + [Lokale ontwikkeling](edge-delivery-services/developing/local-development.md)
       + [Git](edge-delivery-services/developing/git.md)
+      + Universele editor {#universal-editor}
+         + [Overzicht](./edge-delivery-services/developing/universal-editor/0-overview.md)
+         + [Nieuw codeproject](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
+         + [Nieuwe AEM](./edge-delivery-services/developing/universal-editor/2-new-aem-site.md)
+         + [Lokale ontwikkelomgeving](./edge-delivery-services/developing/universal-editor/3-local-development-environment.md)
+         + [Branding van websites](./edge-delivery-services/developing/universal-editor/4-website-branding.md)
+         + [Nieuw blok](./edge-delivery-services/developing/universal-editor/5-new-block.md)
+         + [Auteur van het blok](./edge-delivery-services/developing/universal-editor/6-author-block.md)
+         + [Blokkeren met alleen CSS](./edge-delivery-services/developing/universal-editor/7a-block-css.md)
+         + [Blokkeren met CSS en JS](./edge-delivery-services/developing/universal-editor/7b-block-js-css.md)
    + Procedure {#how-to}
       + [RSS-feeds](edge-delivery-services/how-to/rss.md)
       + [Delen via sociale media](edge-delivery-services/how-to/social-media-sharing.md)
@@ -156,7 +166,7 @@ ht-degree: 5%
    + Experience Platform {#experience-platform}
       + [FPID&#39;s genereren](integrations/platform/fpid.md)
       + [Web SDK](integrations/platform/web-sdk.md)
-      + [Analyses die gebruikmaken van Platform Web SDK](integrations/platform/analytics-using-web-sdk.md)
+      + [Analyses met gebruik van Platform Web SDK](integrations/platform/analytics-using-web-sdk.md)
    + Labels in Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Overzicht](integrations/experience-platform/data-collection/tags/overview.md)
       + [Een eigenschap voor een tag maken](integrations/experience-platform/data-collection/tags/create-tag-property.md)
