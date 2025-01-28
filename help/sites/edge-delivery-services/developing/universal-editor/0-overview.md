@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 doc-type: Catalog
 jira: KT-15832
-duration: 89
+duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: aa8ea183639c4c63be74f7ef1ce099c89454c099
+source-git-commit: 9dd07383a3d46d1bbecd2dc8574e6d06a0535fee
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -27,7 +27,7 @@ In deze zelfstudie leert u de grondbeginselen van het bouwen van een AEM website
 
 Leer hoe u een codeproject maakt en een nieuwe site configureert in AEM as a Cloud Service. Deze instelling maakt naadloze ontwikkeling mogelijk met de Universal Editor voor het maken van inhoud en snelle levering van inhoud via Edge Delivery Services.
 
-<!-- XCARDS 
+<!-- CARDS 
 
 * ./1-new-code-project.md
 * ./2-new-aem-site.md
@@ -87,7 +87,7 @@ Leer hoe u een codeproject maakt en een nieuwe site configureert in AEM as a Clo
 ## Ontwikkelinstellingen
 
 Leer hoe u uw lokale ontwikkelomgeving configureert voor een snelle ontwikkeling van websites. Met deze setup kunt u probleemloos sites maken met de Universal Editor en content op efficiënte wijze leveren via Edge Delivery Services, waardoor een soepele en geoptimaliseerde ontwikkelingsworkflow wordt gegarandeerd.
-<!-- XCARDS 
+<!-- CARDS 
 
 * ./3-local-development-environment.md
 * ./4-website-branding.md
@@ -163,7 +163,7 @@ Leer hoe u een nieuw blok kunt maken door het inhoudsmodel te definiëren en voo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./5-new-block.md" title="Een blok maken" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/5-new-block/teaser-block.png" alt="Een blok maken"
+                        <img class="is-bordered-r-small" src="./assets/5-new-block/card.png" alt="Een blok maken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Leer hoe u een nieuw blok kunt maken door het inhoudsmodel te definiëren en voo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./6-author-block.md" title="Auteur van een blok" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/6-author-block/open-new-site.png" alt="Auteur van een blok"
+                        <img class="is-bordered-r-small" src="./assets/6-author-block/card.png" alt="Auteur van een blok"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ Leer hoe u een nieuw blok kunt maken door het inhoudsmodel te definiëren en voo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./7a-block-css.md" title="Een blok met CSS ontwikkelen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/7a-block-css/inspect-block-dom.png" alt="Een blok met CSS ontwikkelen"
+                        <img class="is-bordered-r-small" src="./assets/7a-block-css/card.png" alt="Een blok met CSS ontwikkelen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -232,7 +232,7 @@ Leer hoe u een nieuw blok kunt maken door het inhoudsmodel te definiëren en voo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./7b-block-js-css.md" title="Een blok ontwikkelen met CSS en JS" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/7a-block-css/inspect-block-dom.png" alt="Een blok ontwikkelen met CSS en JS"
+                        <img class="is-bordered-r-small" src="./assets/7b-block-js-css/card.png" alt="Een blok ontwikkelen met CSS en JS"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
