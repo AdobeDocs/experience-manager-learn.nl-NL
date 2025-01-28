@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 900
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
+source-git-commit: fcd2d7ae7a0bddb0d80aada2f206be7629b676e3
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1705'
 ht-degree: 0%
 
 ---
-
 
 # Een nieuw blok maken
 
@@ -136,6 +136,12 @@ De teaser bestaat uit twee logische gebieden: afbeelding en tekst. Om de code te
 - Groepeer de gebieden van de tekstinhoud samen gebruikend [ element groeperend ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping), en [ gebiedsondergang voor CTA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
 
 Als u niet vertrouwd met [ gebiedsondergang ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) bent, [ element groeperend ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping), of [ typegevolgtrekking ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) herziet de verbonden documentatie alvorens verder te gaan, aangezien zij essentieel aan het creëren van een goed-gestructureerd blokmodel zijn.
+
+In het onderstaande voorbeeld:
+
+- [ de conclusie van het Type ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) wordt gebruikt om een `<img>` HTML element van het `image` gebied automatisch tot stand te brengen. Veldsamenvouwen wordt gebruikt met de velden `image` en `imageAlt` om een HTML-element `<img>` te maken. Het kenmerk `src` wordt ingesteld op de waarde van het veld `image` , terwijl het kenmerk `alt` wordt ingesteld op de waarde van het veld `imageAlt` .
+- `textContent` is een groepsnaam waarmee velden worden gecategoriseerd. Het zou semantisch moeten zijn, maar kan iets uniek voor dit blok zijn. Hiermee wordt de Universal Editor geïnformeerd alle velden met dit voorvoegsel te renderen binnen hetzelfde `<div>` -element in de uiteindelijke HTML-uitvoer.
+- Het samenvouwen van velden wordt ook toegepast binnen de `textContent` -groep voor de oproep tot actie (CTA). CTA wordt gecreeerd als a `<a>` via [ typegevolgtrekking ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Het veld `cta` wordt gebruikt om het kenmerk `href` van het element `<a>` in te stellen en het veld `ctaText` bevat de tekstinhoud voor de koppeling binnen de tags `<a ...>` .
 
 [!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
