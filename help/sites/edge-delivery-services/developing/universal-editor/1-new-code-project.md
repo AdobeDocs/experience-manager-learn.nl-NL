@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 900
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: e1fb7a58-2bba-4952-ad53-53ecf80836db
+source-git-commit: 9b10d79190d805b86884f033e040891655c3c890
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
-
 
 # Een codeproject voor Edge Delivery Services maken
 
@@ -32,7 +32,7 @@ Voer de onderstaande stappen uit om een Edge Delivery Services-codeproject te ma
 3. **installeer de AEM toepassing GitHub van de Synchronisatie van de Code** en verleent toegang tot de bewaarplaats. U kunt [ hier vinden app ](https://github.com/apps/aem-code-sync).
 4. **vorm uw nieuw project`fstab.yaml`** om aan de correcte AEM dienst van de Auteur te richten.
 
-   * Als u wilt experimenteren, kunt u lagere AEM as a Cloud Service-omgevingen gebruiken (Stage, Dev of RDE), maar echte websites-implementaties moeten worden geconfigureerd om een productie AEM Auteur-service te gebruiken.
+   * Als u wilt experimenteren, kunt u lagere AEM as a Cloud Service-omgevingen gebruiken (Stage of Dev), maar echte implementaties van websites moeten worden geconfigureerd voor het gebruik van een productie AEM service.
 
 5. **geef uw nieuw project`paths.json`** uit om de de dienstweg van de AEMAuteur aan de wortel van uw website in kaart te brengen.
 
