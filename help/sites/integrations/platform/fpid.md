@@ -13,9 +13,9 @@ badgeIntegration: label="Integratie" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
 duration: 266
-source-git-commit: c638c1e012952f2f43806a325d729cde088ab9f5
+source-git-commit: 241c56d34c851cf9bac553cb9fc545a835e495d2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 0%
 # Experience Platform-FPID&#39;s genereren met AEM Sites
 
 Als u Adobe Experience Manager (AEM)-sites die via AEM Publish worden geleverd, integreert met Adobe Experience Platform (AEP), moet AEM een unieke FPID-cookie (FPID) genereren en onderhouden om de gebruikersactiviteit op unieke wijze bij te houden.
+
+Het FPID-cookie moet worden ingesteld door de server (AEM Publish) in plaats van JavaScript te gebruiken om een client-side cookie te maken. Dit komt omdat moderne browsers, zoals Safari en Firefox, cookies die door JavaScript zijn gegenereerd, kunnen blokkeren of snel verlopen.
 
 Lees de ondersteunende documentatie aan [ leren over de details van hoe eerste-deel apparaat IDs en Experience Cloud IDs samenwerken ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
 
@@ -47,7 +49,7 @@ In het volgende diagram wordt beschreven hoe AEM Publish-service FPID&#39;s behe
 1. De webpagina wordt vervolgens teruggestuurd naar de webbrowser en vult de caches in die de aanvraag niet konden uitvoeren. Met AEM, verwacht CDN en AEM Dispatcher geheim voorgeheugenklaptarieven groter zijn dan 90%.
 1. De webpagina bevat JavaScript dat een ongecachebaar asynchroon XHR-verzoek (AJAX) indient bij een aangepaste FPID-server in AEM Publish-service. Omdat dit een uncacheable verzoek (door het is willekeurige vraagparameter en Cachebeheer kopballen) is, wordt het nooit in het voorgeheugen ondergebracht door CDN of AEM Dispatcher, en bereikt altijd AEM dienst van Publish om de reactie te produceren.
 1. De aangepaste FPID-server in AEM Publish-service verwerkt de aanvraag, genereert een nieuwe FPID wanneer er geen bestaande FPID-cookie wordt gevonden, of verlengt de levensduur van bestaande FPID-cookie. De servlet retourneert ook de FPID in de antwoordinstantie voor gebruik door client-side JavaScript. Gelukkig is de aangepaste FPID servlet-logica lichtgewicht, waardoor deze aanvraag geen invloed kan hebben op AEM Publish-serviceprestaties.
-1. De reactie voor het XHR- verzoek keert aan browser met het koekje FPID en FPID als JSON in het antwoordlichaam voor gebruik door het Web SDK van het Platform terug.
+1. De reactie voor het XHR-verzoek retourneert naar de browser met het FPID-cookie en de FPID als JSON in de antwoordhoofdtekst voor gebruik door de Platform Web SDK.
 
 ## Codevoorbeeld
 
@@ -170,7 +172,7 @@ Als dit gebeurt, wordt hetzelfde proces opnieuw gestart bij het laden van de vol
 De GET van HTTP aan AEM FPID servlet (`/bin/aep/fpid`) wordt bepaald met een willekeurige vraagparameter om ervoor te zorgen dat om het even welke infrastructuur tussen browser en de AEM dienst van Publish niet de reactie van het verzoek in het voorgeheugen onderbrengt.
 Op dezelfde manier wordt de aanvraagheader van `Cache-Control: no-store` toegevoegd om caching te voorkomen.
 
-Op een aanroeping van AEM FPID servlet, wordt FPID teruggewonnen van de reactie JSON en door ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) gebruikt van het Web SDK van het 0} Platform om het naar Experience Platform APIs te verzenden.[
+Op een aanroeping van AEM FPID servlet, wordt FPID teruggewonnen van de reactie JSON en gebruikt door het [ Web SDK van het Platform ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) om het naar Experience Platform APIs te verzenden.
 
 Zie de documentatie van het Experience Platform voor meer informatie over [ gebruikend FPIDs in identityMap ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html#identityMap)
 
@@ -235,7 +237,7 @@ Als deze Dispatcher-configuratie niet correct is geïmplementeerd, resulteert de
 
 ## Bronnen voor Experience Platform
 
-Herzie de volgende documentatie van het Experience Platform voor First-party apparaat IDs (FPIDs) en het beheren van identiteitsgegevens met het Web SDK van het Platform.
+Bekijk de volgende documentatie van het Experience Platform voor apparaat IDs van de Eerste partij (FPIDs) en het beheren van identiteitsgegevens met het Web SDK van het Platform.
 
 + [ produceer eerste-partijapparaat IDs ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html)
 + [ Eerste-partij apparaat IDs in het Web SDK van het Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
