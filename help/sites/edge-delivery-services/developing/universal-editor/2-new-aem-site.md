@@ -9,9 +9,10 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
+source-git-commit: 567d2803c5cee274104b38f847820f7665320195
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -43,3 +44,4 @@ Na het creëren van de plaats in AEM Auteur, publiceer het aan de Edge Delivery 
 3. Kies **Voorproef** onder **Doelen** en klik daarna **.**
 4. Onder **omvat de Montages van Kinderen**, uitgezochte **omvat kinderen**, schrap andere opties, en klik **O.K.**.
 5. Klik **Publish** om de inhoud van de plaats aan voorproef te publiceren.
+6. Als de pagina&#39;s eenmaal zijn gepubliceerd om een voorvertoning weer te geven, zijn ze beschikbaar in de voorvertoningsomgeving van Edge Delivery Services (de pagina&#39;s worden niet weergegeven op de service AEM Voorvertoning).
