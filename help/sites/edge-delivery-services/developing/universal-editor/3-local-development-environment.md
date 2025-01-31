@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: 6f0cbdd638ed909b5897521557b65dcf74ac1012
+source-git-commit: ecf37e1f964d0cda90eeca11b224ab950727d2ad
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
@@ -187,8 +187,8 @@ Deze scripts zijn niet vooraf geconfigureerd met de AEM sjabloon Boilerplate XWa
 
 | NPM-script | Opdracht | Beschrijving |
 |------------------|------------------------------------------------|-------------------------------------------------------|
-| `lint:js:fix` | `npm run lint:js --fix` | Hiermee worden problemen met JavaScript-koppelingen automatisch opgelost. |
-| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css --fix` | Hiermee worden problemen met CSS-koppelingen automatisch opgelost. |
+| `lint:js:fix` | `npm run lint:js -- --fix` | Hiermee worden problemen met JavaScript-koppelingen automatisch opgelost. |
+| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css -- --fix` | Hiermee worden problemen met CSS-koppelingen automatisch opgelost. |
 | `lint:fix` | `npm run lint:js:fix && npm run lint:css:fix` | Hiermee worden zowel JS- als CSS-correctiescripts uitgevoerd voor snelle opschoning. |
 
 >[!TAB  package.json voorbeeld ]
@@ -200,8 +200,8 @@ De volgende scriptitems kunnen worden toegevoegd aan de array `package.json` `sc
   ...
   "scripts": [
     ...,
-    "lint:js:fix": "npm run lint:js --fix",
-    "lint:css:fix": "npm run lint:css --fix",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:css:fix": "npm run lint:css -- --fix",
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
     ...
   ]
