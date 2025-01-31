@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: fcd2d7ae7a0bddb0d80aada2f206be7629b676e3
+source-git-commit: 775821f37df87905ea176b11ecf0ed4a42d00940
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1742'
 ht-degree: 0%
 
 ---
@@ -322,6 +322,8 @@ De blokdefinitie registreert het blok in Universele Redacteur. Hier volgt een ui
 | `definition.plugins.xwalk.page.resourceType` | Bepaalt het het Verschuiven middeltype voor het teruggeven van de component in de Universele Redacteur. Gebruik altijd een `core/franklin/components/block/v#/block` resource type. |
 | `definition.plugins.xwalk.page.template.name` | De naam van het blok. De naam moet lager zijn en worden afgebroken, zodat deze overeenkomt met de mapnaam van het blok. Deze waarde wordt ook gebruikt om het exemplaar van het blok in de Universele Redacteur te etiketteren. |
 | `definition.plugins.xwalk.page.template.model` | Koppelt deze definitie aan de bijbehorende `model` -definitie, die de ontwerpvelden bepaalt die voor het blok in de Universal Editor worden weergegeven. De waarde hier moet overeenkomen met een `model.id` -waarde. |
+| `definition.plugins.xwalk.page.template.classes` | Optionele eigenschap, waarvan de waarde wordt toegevoegd aan het kenmerk `class` van het element block HTML. Dit maakt varianten van hetzelfde blok mogelijk. De `classes` waarde kan worden gemaakt editable door [ toevoegend een klassengebied ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) aan het 3} model van het blok ](#block-model).[ |
+
 
 Hier is een voorbeeld van JSON voor de blokdefinitie:
 
