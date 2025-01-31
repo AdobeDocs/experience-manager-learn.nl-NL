@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: e1fb7a58-2bba-4952-ad53-53ecf80836db
-source-git-commit: 48b402642738abf512edab68b6074935cb7dd444
+source-git-commit: 176be4209409763b69ceff5e893d0e857efa6d30
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Herinner me, [ AEM websites die door Edge Delivery Services ](https://experience
 
 ![ Nieuw project van Edge Delivery Services ](./assets/1-new-project/new-project.png)
 
-Volg de [ gedetailleerde stappen die in documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) worden geschetst een project van de code van Edge Delivery Services de waarvan inhoud in Universele Redacteur editable is.  Hieronder vindt u een overzicht van de stappen, inclusief de waarden die in deze zelfstudie worden gebruikt.
+Volg de [ gedetailleerde stappen die in documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) worden geschetst voor het creëren van een project van de code van Edge Delivery Services de waarvan inhoud in Universele Redacteur editable is.  Hieronder vindt u een overzicht van de stappen, inclusief de waarden die in deze zelfstudie worden gebruikt.
 
 1. **opstelling een rekening GitHub.** Als u een project voor uw organisatie creeert, zorg ervoor dat de organisatie een rekening GitHub heeft, en u bent een lid.
 2. **creeer een nieuw codeproject** gebruikend het [ AEM Boilerplate XWalk projectmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
