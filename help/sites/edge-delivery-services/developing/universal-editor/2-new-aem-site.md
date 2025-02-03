@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 500
 exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
-source-git-commit: 567d2803c5cee274104b38f847820f7665320195
+source-git-commit: b40bf5afc28cb350c470336e38f8ca127fb05d79
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,15 @@ De AEM site is waar de inhoud van de website wordt opgeslagen en geschreven. De 
 
 ![ Nieuwe AEM Plaats voor Edge Delivery Services en Universele Redacteur ](./assets/2-new-aem-site/new-site.png)
 
-Ga als volgt te werk om een nieuwe AEM site te maken:
-
+Volg de [ gedetailleerde stappen die in documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) worden geschetst om een nieuwe AEM plaats tot stand te brengen.  Hieronder vindt u een overzicht van de stappen, inclusief de waarden die in deze zelfstudie worden gebruikt.
 1. **creeer een nieuwe plaats** in AEM Auteur. In deze zelfstudie wordt de volgende sitenaam gebruikt:
    * Titel van site: `WKND (Universal Editor)`
    * Sitenaam: `aem-wknd-eds-ue`
+
+      * De waarde van de plaatsnaam moet de naam van de plaatsweg [ aanpassen die aan `paths.json` ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping) wordt toegevoegd.
+
 2. **voer het recentste malplaatje** van de [ Edge Delivery Services met AEM creërende plaatsmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) in.
 3. **Naam de plaats** om de naam van de bewaarplaats aan te passen GitHub en plaats GitHub URL als URL van de bewaarplaats.
-
-Voor gedetailleerde instructies, controleer [ creeer en geef een nieuwe AEM plaatssectie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) in de begonnen gids uit.
 
 ## De nieuwe site op Publish plaatsen voor een voorvertoning
 
