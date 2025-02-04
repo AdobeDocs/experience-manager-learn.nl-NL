@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: ecf37e1f964d0cda90eeca11b224ab950727d2ad
+source-git-commit: 66bc4cb6f992c64b1a7e32310ce3e26515f3d380
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,11 @@ De ontwikkelingstools en -processen voor een website-project voor Edge Delivery 
 
 ## Ontwikkelingstopologie
 
-De ontwikkelingstopologie voor een de websiteproject van Edge Delivery Services dat met Universele Redacteur editable is bestaat uit de volgende aspecten:
+Deze video verstrekt een overzicht van de ontwikkelingstopologie voor een Edge Delivery Services websiteproject dat met Universele Redacteur editable is.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
+
++++Zie extra details van de ontwikkelingstopologie
 
 - **bewaarplaats GitHub**:
    - **Doel**: Gastheren de code van de website (CSS en JavaScript).
@@ -54,6 +58,8 @@ De ontwikkelingstopologie voor een de websiteproject van Edge Delivery Services 
       - Een lokale kloon van de **bewaarplaats GitHub** voor op tak-gebaseerde ontwikkeling.
       - **AEM CLI**, die als ontwikkelingsserver dienst doet, past lokale codeveranderingen op het **milieu van de Voorproef** voor een heet-herladenervaring toe.
    - **Werkschema**: De ontwikkelaars schrijven code plaatselijk, begaan veranderingen in een werkende tak, duw de tak aan GitHub, bevestigen het in de **Universele Redacteur** (gebruikend de gespecificeerde tak), en voegen het in de **belangrijkste tak** samen wanneer klaar voor productieplaatsing.
+
++++
 
 ## Vereisten
 
