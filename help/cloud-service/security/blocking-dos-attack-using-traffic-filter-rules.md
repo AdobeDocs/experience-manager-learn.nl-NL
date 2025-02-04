@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
+source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ De volgende visualisaties zijn beschikbaar in de dashboards van de Elk en van de
   **ELK Dashboard**:
   ![ ELK dashboard - Max Verzoeken per IP/POP ](./assets/elk-edge-max-per-ip-pop.png)
 
-  **Splunk Dashboard**:\
+  **Splunk Dashboard**:
   ![ Splunk dashboard - Max Verzoeken per IP/POP ](./assets/splunk-edge-max-per-ip-pop.png)
 
 - **Oorsprong RPS per Cliënt IP en POP**: Deze visualisatie toont het maximumaantal verzoeken per IP/POP **bij de oorsprong**. De piek in visualisatie wijst op het maximumverzoekaantal.
@@ -168,10 +168,10 @@ data:
           count: all # count all requests
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true
-    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average            
+          alert: true
+    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average
       - name: prevent-dos-attacks-origin
         when:
           reqProperty: tier
@@ -183,17 +183,12 @@ data:
           count: fetches # count only fetches
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true   
-          
+          alert: true
 ```
 
 Merk op dat zowel de oorsprong als de randregels worden verklaard, en dat het waakzame bezit aan `true` wordt geplaatst zodat kunt u alarm ontvangen wanneer de drempel wordt bereikt, die op een aanval wijzen.
-
->[!NOTE]
->
->Het _experimentele_ prefix_ voor experimentele_alert zal worden verwijderd wanneer de waakzame eigenschap wordt vrijgegeven. E-mail **<aemcs-waf-adopter@adobe.com>** om deel te nemen aan het programma voor vroege adoptie.
 
 Men adviseert dat het handelingstype aan logboek aanvankelijk wordt geplaatst zodat kunt u verkeer voor een paar uren of dagen controleren, ervoor zorgen dat het wettige verkeer deze tarieven niet overschrijdt. Schakel na een paar dagen over naar de blokmodus.
 
@@ -211,13 +206,13 @@ Naast de regels van de het verkeersfilter van de tariefgrens, wordt het geadvise
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: 
+  envTypes:
     - dev
     - stage
-    - prod  
-data:  
-  experimental_requestTransformations:
-    rules:            
+    - prod
+data:
+  requestTransformations:
+    rules:
       - name: unset-all-query-params-except-those-needed
         when:
           reqProperty: tier
@@ -229,7 +224,7 @@ data:
 
 ## Waarschuwingen over verkeersfilterregels ontvangen {#receiving-alerts}
 
-Zoals hierboven vermeld, als de regel van de verkeersfilter *experimentele_alert omvat: waar*, wordt een alarm ontvangen wanneer de regel wordt aangepast.
+Zoals hierboven vermeld, als de regel van de verkeersfilter *alarm omvat: waar*, wordt een alarm ontvangen wanneer de regel wordt aangepast.
 
 ## Actie inzake signaleringen {#acting-on-alerts}
 
@@ -242,7 +237,7 @@ Deze sectie beschrijft methodes om een aanval van Dos te simuleren, die kan word
 >[!CAUTION]
 >
 > Voer deze stappen niet uit in een productieomgeving. De volgende stappen dienen alleen voor simulatiedoeleinden.
-> 
+>
 >Als u een alarm die op een piek in verkeer wijst ontving, ga aan de [ Analyserende sectie van verkeerspatronen ](#analyzing-traffic-patterns) te werk.
 
 Om een aanval te simuleren, kunnen de hulpmiddelen zoals [ Apache Benchmark ](https://httpd.apache.org/docs/2.4/programs/ab.html), [ Apache JMeter ](https://jmeter.apache.org/), [ Vegeta ](https://github.com/tsenart/vegeta), en anderen worden gebruikt.
