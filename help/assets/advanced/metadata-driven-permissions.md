@@ -11,22 +11,22 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 6e08e6830c4e2ab27e813d262f4f51c6aae2909b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # Machtigingen met metagegevens{#metadata-driven-permissions}
 
-Machtigingen met metagegevens zijn een functie waarmee toegangsbeheerbeslissingen van AEM Assets Author kunnen worden gebaseerd op eigenschappen van metagegevens van elementen in plaats van op mapstructuur. Met dit vermogen, kunt u toegangsbeheerbeleid bepalen dat attributen zoals activa status, type, of om het even welk bezit van douanemetagegevens evalueert u bepaalt.
+Machtigingen met metagegevens zijn een functie waarmee toegangsbeheerbeslissingen van AEM Assets Author kunnen worden gebaseerd op de inhoud van elementen of metagegevenseigenschappen in plaats van op de mapstructuur. Met dit vermogen, kunt u toegangsbeheerbeleid bepalen dat attributen zoals activastatus, type, of om het even welk douanebezit evalueert u bepaalt.
 
-Laten we een voorbeeld zien. Creatieve gebruikers kunnen hun werk naar AEM Assets uploaden naar de map met betrekking tot de campagne. Dit is mogelijk een werk in uitvoering dat niet is goedgekeurd voor gebruik. We willen ervoor zorgen dat de marketeers alleen goedgekeurde middelen voor deze campagne zien. Met de eigenschap metadata kunnen we aangeven dat een element is goedgekeurd en kan worden gebruikt door de marketeers.
+Laten we een voorbeeld zien. Creatieve gebruikers kunnen hun werk naar AEM Assets uploaden naar de map met betrekking tot de campagne. Dit is mogelijk een werk in uitvoering dat niet is goedgekeurd voor gebruik. We willen ervoor zorgen dat de marketeers alleen goedgekeurde middelen voor deze campagne zien. We kunnen een eigenschap metadata gebruiken om aan te geven dat een middel is goedgekeurd en kan worden gebruikt door de marketeers.
 
 ## Hoe het werkt
 
-Als u Metagegevens-gestuurde machtigingen inschakelt, moet u bepalen welke metagegevenseigenschappen van elementen toegangsbeperkingen bepalen, zoals &quot;status&quot; of &quot;merk&quot;. Deze eigenschappen kunnen dan worden gebruikt om toegangsbeheeringangen tot stand te brengen die specificeren welke gebruikersgroepen toegang tot activa met specifieke bezitswaarden hebben.
+Als u Metagegevens-gestuurde machtigingen inschakelt, moet u definiëren welke elementen of metagegevenseigenschappen de toegangsbeperkingen bepalen, zoals status of merk. Deze eigenschappen kunnen dan worden gebruikt om toegangsbeheeringangen tot stand te brengen die specificeren welke gebruikersgroepen toegang tot activa met specifieke bezitswaarden hebben.
 
 ## Vereisten
 
@@ -34,9 +34,9 @@ Toegang tot een AEM as a Cloud Service-omgeving die is bijgewerkt naar de nieuws
 
 ## OSGi-configuratie {#configure-permissionable-properties}
 
-Om Metadata-Driven Toestemmingen uit te voeren moet een ontwikkelaar een configuratie OSGi aan AEM as a Cloud Service opstellen, die specifieke eigenschappen van activameta-gegevens aan macht meta-gegeven toestemmingen toelaat.
+Om Metadata-Driven Toestemmingen uit te voeren moet een ontwikkelaar een configuratie OSGi aan AEM as a Cloud Service opstellen, die specifieke activa of meta-gegevenseigenschappen aan macht meta-gegeven toestemmingen toelaat.
 
-1. Bepaal welke eigenschappen van elementmetagegevens worden gebruikt voor toegangsbeheer. De eigenschapsnamen zijn de JCR-eigenschapnamen op de `jcr:content/metadata` -bron van het element. In ons geval wordt het een eigenschap met de naam `status` .
+1. Bepaal welke element- of metagegevenseigenschappen worden gebruikt voor toegangsbeheer. De eigenschapsnamen zijn de JCR-eigenschapnamen op de bron `jcr:content` of `jcr:content/metadata` van het element. In ons geval wordt het een eigenschap met de naam `status` .
 1. Creeer een configuratie OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` in uw AEM Maven project.
 1. Plak de volgende JSON in het gemaakte bestand:
 
@@ -46,11 +46,12 @@ Om Metadata-Driven Toestemmingen uit te voeren moet een ontwikkelaar een configu
        "status",
        "brand"
      ],
+     "restrictionContentPropertyNames":[],
      "enabled":true
    }
    ```
 
-1. Vervang de eigenschapsnamen door de vereiste waarden.
+1. Vervang de eigenschapsnamen door de vereiste waarden.  De eigenschap `restrictionContentPropertyNames` configuration wordt gebruikt om machtigingen voor `jcr:content` resource-eigenschappen in te schakelen, terwijl de `restrictionPropertyNames` configuration-eigenschap machtigingen voor `jcr:content/metadata` resource-eigenschappen inschakelt voor elementen.
 
 ## Rechten voor basiselementen opnieuw instellen
 
@@ -90,7 +91,7 @@ De voorbeeldmap bevat een aantal elementen.
 
 ![ Admin Mening ](./assets/metadata-driven-permissions/admin-view.png)
 
-Zodra u toestemmingen vormt en de eigenschappen van activa meta-gegevens dienovereenkomstig plaatst zullen de gebruikers (Gebruiker van de Marktspeler in ons geval) slechts goedgekeurde activa zien.
+Wanneer u machtigingen configureert en de eigenschappen van de metagegevens van de elementen dienovereenkomstig instelt, zien gebruikers (in ons geval de Marketeer-gebruiker) alleen de goedgekeurde elementen.
 
 ![ Mening van de Marktspeler ](./assets/metadata-driven-permissions/marketeer-view.png)
 
@@ -100,13 +101,13 @@ De voordelen van metagegevensgestuurde machtigingen zijn onder meer:
 
 - Fijne controle over toegang tot elementen op basis van specifieke kenmerken.
 - Ontkoppeling van toegangsbeheerbeleid van omslagstructuur, die voor flexibelere middelenorganisatie toestaat.
-- Mogelijkheid om complexe toegangsbeheerregels te definiëren die zijn gebaseerd op meerdere metagegevenseigenschappen.
+- Mogelijkheid om complexe toegangsbeheerregels te bepalen die op veelvoudige inhoud of meta-gegevenseigenschappen worden gebaseerd.
 
 >[!NOTE]
 >
 > Het is belangrijk om op te merken:
 > 
-> - De eigenschappen van meta-gegevens worden geëvalueerd tegen de beperkingen gebruikend __gelijkheid van het Koord__ (`=`) (andere gegevenstypes of exploitanten worden nog niet gesteund, voor groter dan (`>`) of de eigenschappen van de Datum)
+> - De eigenschappen worden geëvalueerd tegen de beperkingen gebruikend __gelijkheid van het Koord__ (`=`) (andere gegevenstypes of exploitanten worden nog niet gesteund, voor groter dan (`>`) of de eigenschappen van de Datum)
 > - Om veelvoudige waarden voor een beperkingsbezit toe te staan, kunnen de extra beperkingen aan de ingang van het Toegangsbeheer worden toegevoegd door het zelfde bezit van de &quot;Uitgezochte Type&quot;drop-down te selecteren en een nieuwe Waarde van de Beperking (b.v. `status=approved`, `status=wip`) in te gaan en &quot;+&quot;te klikken om de beperking aan de ingang toe te voegen
 > ![Meerdere waarden toestaan ](./assets/metadata-driven-permissions/allow-multiple-values.png)
 > - __EN de beperkingen__ worden gesteund, via veelvoudige beperkingen in één enkel Ingang van het Toegangsbeheer met verschillende bezitsnamen (b.v. `status=approved`, `brand=Adobe`) zullen als EN voorwaarde worden geëvalueerd, d.w.z. de geselecteerde gebruikersgroep zal lees toegang tot activa met `status=approved AND brand=Adobe` worden verleend
