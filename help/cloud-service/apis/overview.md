@@ -12,7 +12,7 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 0%
@@ -75,7 +75,7 @@ De [ Specificatie OpenAPI ](https://swagger.io/specification/) (die vroeger als 
 
 In toekomstige versies worden meer op OpenAPI gebaseerde AEM-API&#39;s toegevoegd ter ondersteuning van extra gebruiksgevallen.
 
-## Verificatieondersteuning{#authentication-support}
+### Verificatieondersteuning{#authentication-support}
 
 De op OpenAPI gebaseerde AEM API&#39;s ondersteunen de volgende verificatiemethoden:
 
@@ -95,7 +95,7 @@ De op OpenAPI gebaseerde AEM API&#39;s ondersteunen de volgende verificatiemetho
 | Beveiligingsoverwegingen | Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen. | De gebruiker verklaart voor authentiek en wordt verleend hun eigen tijdelijk toegangstoken. Sla gevoelige gegevens (`client_id`, `client_secret` ) veilig op in back-endsystemen. |
 | Type subsidie | _client_credentials_ | _authentication_code_ |
 
-## Toegang tot Adobe-API&#39;s en verwante concepten{#accessing-adobe-apis-and-related-concepts}
+### Toegang tot Adobe-API&#39;s en verwante concepten{#accessing-adobe-apis-and-related-concepts}
 
 Voordat u Adobe-API&#39;s opent, is het van essentieel belang dat u deze belangrijke concepten begrijpt:
 

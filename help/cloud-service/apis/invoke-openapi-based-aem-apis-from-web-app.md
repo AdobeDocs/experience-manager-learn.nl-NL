@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
 exl-id: dc35256a-3873-413f-b282-90948efd5f31
-source-git-commit: 7fe1116de7cf69b3b7ce14ac0b97906f8986546b
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -410,7 +410,7 @@ Om het toegangstoken te verfrissen alvorens het verloopt, kunt u uitvoeren verfr
 
 >[!TIP]
 >
->U kunt de volgende sectie volgen om de WKND-PIM Web-app op uw lokale computer uit te proberen en praktijkervaring met de OAuth Web App authentificatiestroom en API vraag te krijgen.
+>U kunt de volgende sectie volgen om WKND-PIM Web app op uw lokale machine uit te proberen en praktijkervaring met de OAuth Web App authentificatiestroom en API vraag te krijgen.
 
 ## Webtoepassing instellen en uitvoeren
 
@@ -519,6 +519,11 @@ Hiervoor definieert u de configuratie in het `config.yaml` -bestand in het AEM P
    ```
 
    Vervang `<ADC Project's OAuth Web App credential ClientID>` door de werkelijke ClientID van de OAuth Web App-referentie van het ADC-project. Het API eindpunt dat in dit leerprogramma wordt gebruikt is beschikbaar slechts op de auteurslaag, maar voor andere APIs, kan yaml config ook a _hebben publiceren_ of _voorproef_ knoop.
+
+   >[!CAUTION]
+   >
+   > Voor demo-doeleinden wordt dezelfde ClientID gebruikt voor alle omgevingen. Het wordt aanbevolen afzonderlijke ClientID per omgeving (dev, stage, prod) te gebruiken voor betere beveiliging en controle.
+
 
 1. Leg de configuratiewijzigingen vast in de Git-opslagplaats en duw op de wijzigingen in de externe opslagplaats.
 

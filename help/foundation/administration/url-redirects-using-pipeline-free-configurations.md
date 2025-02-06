@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
-source-git-commit: f3e1bef93e53de19cf917a915c0fb836f7d3c194
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,13 @@ Zodra de plaatsing succesvol is, zijn de omleidingen URL actief en het marketing
 
 Test de URL-omleidingen met de browser of de opdracht `curl` . Open de URL van `/ski/westcoast` en controleer of deze wordt doorgestuurd naar `/us/en/adventures/tahoe-skiing.html` .
 
-
 ## Samenvatting
 
 In deze zelfstudie hebt u geleerd hoe u URL-omleidingen kunt beheren met behulp van configuraties zonder pijplijn in AEM as a Cloud Service-omgeving.
 
 Het marketingteam kan de URL omleiden als sleutel-waardeparen in een tekstbestand en deze uploaden naar DAM of de ACS-commons - Redirect Map Manager of Redirect Manager gebruiken. De configuraties van Dispatcher worden bijgewerkt om URL te laden herleidt als RewriteMap en hen op de inkomende verzoeken toe te passen.
 
+## Aanvullende bronnen
+
+- [ lijn-vrije URL richt zich opnieuw ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [URL-omleidingen](url-redirection.md)

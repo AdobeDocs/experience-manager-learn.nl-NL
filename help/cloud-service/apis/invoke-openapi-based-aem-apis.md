@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 3e91387368943b1b0d62c57f8172a0306758b28f
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -194,6 +194,10 @@ Hiervoor definieert u de configuratie in het `config.yaml` -bestand in het AEM P
    ```
 
    Vervang `<ADC Project's OAuth Server-to-Server credential ClientID>` door werkelijke ClientID van de OAuth Server-to-Server referentie van het ADC-project. Het API eindpunt dat in dit leerprogramma wordt gebruikt is beschikbaar slechts op de auteurslaag, maar voor andere APIs, kan yaml config ook a _hebben publiceren_ of _voorproef_ knoop.
+
+   >[!CAUTION]
+   >
+   > Voor demo-doeleinden wordt dezelfde ClientID gebruikt voor alle omgevingen. Het wordt aanbevolen afzonderlijke ClientID per omgeving (dev, stage, prod) te gebruiken voor betere beveiliging en controle.
 
 1. Leg de configuratiewijzigingen vast in de Git-opslagplaats en duw op de wijzigingen in de externe opslagplaats.
 
