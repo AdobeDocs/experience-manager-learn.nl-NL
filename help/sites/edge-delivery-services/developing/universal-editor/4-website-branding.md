@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ceb82c48af10191cece72fe5f53dd79287f805d0
+source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -292,6 +292,8 @@ Werk ten slotte de CSS-variabelen van `styles/styles.css` bij om de nieuwe lette
 Weblettertypen zijn vaak van invloed op de prestaties vanwege hun grootte, waardoor Cumulatieve CLS-scores (Layout Shift) worden verhoogd en de totale Lightroom-scores afnemen. Voor directe tekstweergave tijdens het laden van weblettertypen gebruiken Edge Delivery Services voor projecten browsereigen fallback-lettertypen. Deze aanpak zorgt voor een vloeiende gebruikerservaring terwijl het gewenste lettertype van toepassing is.
 
 Om de beste fallback doopvont te selecteren, de uitbreiding van Chrome van de Doopvont van de gebruiksAdobe [ Hallback ](https://www.aem.live/developer/font-fallback), die een dicht passende doopvont voor browsers bepaalt om te gebruiken alvorens de ladingen van de douanedoopvont. De resulterende fontdeclaraties voor fallback moeten aan het `styles/styles.css` -bestand worden toegevoegd om de prestaties te verbeteren en gebruikers een naadloze ervaring te bieden.
+
+![ de uitbreiding van Chrome van de Fallback van de Doopvont 1} {align=center}](./assets/4-website-branding/font-fallback-chrome-plugin.png)
 
 Om de [ extensie van Chrome van de Fontfallback van de Helix te gebruiken ](https://www.aem.live/developer/font-fallback), zorg ervoor dat de Web-pagina weblettertypen heeft die in de zelfde variaties worden toegepast die op de website van Edge Delivery Services worden gebruikt. Dit leerprogramma toont de uitbreiding op [ wknd.site ](http://wknd.site/us/en.html) aan. Wanneer het ontwikkelen van een website, pas de uitbreiding op de plaats toe die aan eerder dan aan [ wknd.site ](http://wknd.site/us/en.html) wordt gewerkt.
 
