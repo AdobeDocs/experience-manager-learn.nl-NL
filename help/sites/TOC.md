@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 5%
       + [Alternatieve tekst voor afbeelding](./document-authoring/how-to/image-alt-text.md)
       + [Indexering van zoekprogramma&#39;s voorkomen](./document-authoring/how-to/no-index.md)
       + [Responsieve navigatie](document-authoring/how-to/responsive-navigation.md)
-      + [Dynamic Media](./document-authoring/how-to/using-dynamic-media.md)
+      + [Dynamische media](./document-authoring/how-to/using-dynamic-media.md)
       + [Sitemigratie met Importer](./document-authoring/how-to/migration-using-importer.md)
       + [De importmodule aanpassen](./document-authoring/how-to/customizing-importer.md)
       + [Bulkimport met behulp van importmodule](./document-authoring/how-to/bulk-importing-using-importer.md)
@@ -87,11 +87,11 @@ ht-degree: 5%
    + [Beleidsfragmenten gebruiken](experience-fragments/experience-fragments-feature-video-use.md)
    + [Bouwstenen](experience-fragments/building-blocks.md)
    + [ de Fragmenten van de Inhoud tegenover de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html) {target=_blank}
-+ Edge Delivery Services {#edge-delivery-services}
++ Edge Delivery Services{#edge-delivery-services}
    + [Overzicht](./edge-delivery-services/overview.md)
    + Ontwikkelen {#developing}
       + [Vereisten](edge-delivery-services/developing/prerequisites.md)
-      + [AEM](edge-delivery-services/developing/aem-boilerplate.md)
+      + [AEM boilerplate](edge-delivery-services/developing/aem-boilerplate.md)
       + [Inhoudsopslagplaats](edge-delivery-services/developing/content-repository.md)
       + [Voorvertonen en publiceren](edge-delivery-services/developing/preview-and-publish.md)
       + [AEM Sidekick](edge-delivery-services/developing/sidekick.md)
@@ -101,28 +101,30 @@ ht-degree: 5%
       + Universele editor {#universal-editor}
          + [Overzicht](./edge-delivery-services/developing/universal-editor/0-overview.md)
          + [Nieuw codeproject](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
-         + [Nieuwe AEM](./edge-delivery-services/developing/universal-editor/2-new-aem-site.md)
+         + [Nieuwe AEM-site](./edge-delivery-services/developing/universal-editor/2-new-aem-site.md)
          + [Lokale ontwikkelomgeving](./edge-delivery-services/developing/universal-editor/3-local-development-environment.md)
          + [Branding van websites](./edge-delivery-services/developing/universal-editor/4-website-branding.md)
          + [Nieuw blok](./edge-delivery-services/developing/universal-editor/5-new-block.md)
          + [Auteur van het blok](./edge-delivery-services/developing/universal-editor/6-author-block.md)
          + [Blokkeren met alleen CSS](./edge-delivery-services/developing/universal-editor/7a-block-css.md)
          + [Blokkeren met CSS en JS](./edge-delivery-services/developing/universal-editor/7b-block-js-css.md)
+         + Procedure {#how-to}
+            + [Blokopties](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
    + Procedure {#how-to}
       + [RSS-feeds](edge-delivery-services/how-to/rss.md)
       + [Delen via sociale media](edge-delivery-services/how-to/social-media-sharing.md)
       + [Pagina&#39;s verwijderen](edge-delivery-services/how-to/delete-page.md)
 + Ontwikkeling {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
-   + [Projectarchetype AEM](developing/aem-project-archetype.md)
+   + [AEM Project Archetype](developing/aem-project-archetype.md)
    + [ Begonnen het worden met AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) {target=_blank}
-   + [ Begonnen het worden met AEM Zwaartepunt ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) {target=_blank}
-   + [ Begonnen het Worden met AEM Redacteur SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html) {target=_blank}
+   + [ Begonnen het worden met de Zetel van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) {target=_blank}
+   + [ Begonnen het Worden met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html) {target=_blank}
    + [Pagina-eigenschappen uitbreiden](developing/page-properties-technical-video-develop.md)
    + [Responsieve onderbrekingspunten](developing/responsive-breakpoints.md)
    + [Ontwikkelen met het Stijlsysteem](developing/style-system-technical-video-understand.md)
    + [Aanbevolen werkwijzen voor stijlsystemen](developing/style-organization-style-system-understand-article.md)
-   + [De snelheid van de inhoud versnellen met AEM stijlsystemen](developing/accelerate-content-velocity-aem-style-system.md)
+   + [Snelheid van inhoud versnellen met AEM-stijlsystemen](developing/accelerate-content-velocity-aem-style-system.md)
    + [Ontwikkelen voor paginaverschil](developing/page-diff-technical-video-develop.md)
    + [Eenvoudig zoeken implementeren](developing/search-tutorial-develop.md)
    + [Delen van sociale media](developing/social-media-sharing-technical-video-use.md)
@@ -140,8 +142,8 @@ ht-degree: 5%
 + SEO {#seo}
    + [Sitemaps](./seo/sitemaps.md)
 + Toepassingen voor één pagina {#spa-editor}
-   + [De SPA Editor gebruiken](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [ Begonnen het Worden met AEM Redacteur SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html) {target=_blank}
+   + [Het gebruiken van de Redacteur van het KUUROORD](spa-editor/spa-editor-framework-feature-video-use.md)
+   + [ Begonnen het Worden met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html) {target=_blank}
 + Beheer van meerdere sites {#multi-site-management}
    + [Inleiding tot het kopiëren van talen](./multi-site-management/language-copy-overview.md)
    + [Live kopiëren en vervagen](./multi-site-management/live-copy-and-blueprint.md)
@@ -171,11 +173,11 @@ ht-degree: 5%
       + [Overzicht](integrations/experience-platform/data-collection/tags/overview.md)
       + [Een eigenschap voor een tag maken](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [AEM verbinden en eigenschappen labelen met IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
-      + [Cloud Service AEM maken](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [AEM Tags Cloud Service maken](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
       + [Fouten opsporen in een implementatie van tags](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
-   + Gegevenslaag client Adoben {#adobe-client-data-layer}
-      + [De gegevenslaag van de client Adoben gebruiken](integrations/adobe-client-data-layer/data-layer-overview.md)
-      + [De gegevenslaag van de client van de Adobe aanpassen](integrations/adobe-client-data-layer/data-layer-customize.md)
+   + Adobe Client Data Layer {#adobe-client-data-layer}
+      + [De gegevenslaag van de Adobe-client gebruiken](integrations/adobe-client-data-layer/data-layer-overview.md)
+      + [De gegevenslaag van de Adobe-client aanpassen](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Analytics {#analytics}
       + [Paginagegevens verzamelen met Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Aangeklikte component bijhouden met Adobe Analytics](integrations/analytics/track-clicked-component.md)

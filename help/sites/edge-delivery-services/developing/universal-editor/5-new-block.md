@@ -1,6 +1,6 @@
 ---
 title: Een blok maken
-description: Bouw een blok voor een website van Edge Delivery Services die met Universal Editor editable is.
+description: Bouw een blok voor een Edge Delivery Services-website die bewerkbaar is met Universal Editor.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,16 +10,16 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: 775821f37df87905ea176b11ecf0ed4a42d00940
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
 
 # Een nieuw blok maken
 
-In dit hoofdstuk wordt beschreven hoe u met de Universal Editor een nieuw, bewerkbaar teasblok voor een website van Edge Delivery Services maakt.
+In dit hoofdstuk wordt beschreven hoe u met de Universal Editor een nieuw, bewerkbaar teasblok voor een Edge Delivery Services-website maakt.
 
 ![ Nieuw teaser blok ](./assets//5-new-block/teaser-block.png)
 
@@ -70,7 +70,7 @@ De naam van de blokmap fungeert als de id van het blok en wordt gebruikt om tijd
 Het blok JSON definieert drie belangrijke aspecten van het blok:
 
 - **Definitie**: Registreert het blok als editable component in de Universele Redacteur, die het met een blokmodel en naar keuze een filter verbindt.
-- **Model**: Specificeert de auteursgebieden van het blok en hoe deze gebieden als semantische HTML van Edge Delivery Services worden teruggegeven.
+- **Model**: Specificeert de auteursgebieden van het blok en hoe deze gebieden als semantische Edge Delivery Services HTML worden teruggegeven.
 - **Filter**: Vormt het filtreren regels om te beperken welke containers het blok aan via de Universele Redacteur kan worden toegevoegd. De meeste blokken zijn geen containers, maar hun id&#39;s worden toegevoegd aan de filters van andere containerblokken.
 
 Maak een nieuw bestand bij `/blocks/teaser/_teaser.json` met de volgende initiële structuur, in de exacte volgorde. Als de toetsen niet op de juiste wijze zijn, kunnen ze niet goed worden gemaakt.
@@ -93,7 +93,7 @@ Het blokmodel is een kritiek deel van de configuratie van het blok, aangezien he
 
    ![ Universele gebieden van de Redacteur ](./assets/5-new-block/fields-in-universal-editor.png)
 
-2. De manier waarop de waarden van het veld worden gerenderd in HTML van Edge Delivery Services.
+2. De manier waarop de waarden van het veld worden gerenderd naar Edge Delivery Services HTML.
 
 De modellen worden toegewezen een `id` die aan de [ definitie van het blok ](#block-definition) beantwoordt en een `fields` serie omvat om de editable gebieden te specificeren.
 
@@ -130,7 +130,7 @@ Definieer de velden die nodig zijn voor het blok: afbeelding, alternatieve afbee
 
 **Dit lusje illustreert de juiste manier om het teaser blok te modelleren.**
 
-De teaser bestaat uit twee logische gebieden: afbeelding en tekst. Om de code te vereenvoudigen nodig om de HTML van de Edge Delivery Services als gewenste Webervaring te tonen, zou het blokmodel deze structuur moeten weerspiegelen.
+De teaser bestaat uit twee logische gebieden: afbeelding en tekst. Om de code te vereenvoudigen die nodig is om de Edge Delivery Services HTML weer te geven als de gewenste webervaring, moet het blokmodel deze structuur weerspiegelen.
 
 - Groepeer het **beeld** en **beeld alt tekst** samen gebruikend [ gebiedsondergang ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
 - Groepeer de gebieden van de tekstinhoud samen gebruikend [ element groeperend ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping), en [ gebiedsondergang voor CTA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
@@ -139,8 +139,8 @@ Als u niet vertrouwd met [ gebiedsondergang ](https://experienceleague.adobe.com
 
 In het onderstaande voorbeeld:
 
-- [ de conclusie van het Type ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) wordt gebruikt om een `<img>` HTML element van het `image` gebied automatisch tot stand te brengen. Veldsamenvouwen wordt gebruikt met de velden `image` en `imageAlt` om een HTML-element `<img>` te maken. Het kenmerk `src` wordt ingesteld op de waarde van het veld `image` , terwijl het kenmerk `alt` wordt ingesteld op de waarde van het veld `imageAlt` .
-- `textContent` is een groepsnaam waarmee velden worden gecategoriseerd. Het zou semantisch moeten zijn, maar kan iets uniek voor dit blok zijn. Hiermee wordt de Universal Editor geïnformeerd alle velden met dit voorvoegsel te renderen binnen hetzelfde `<div>` -element in de uiteindelijke HTML-uitvoer.
+- [ de conclusie van het Type ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) wordt gebruikt om een `<img>` element van HTML van het `image` gebied automatisch tot stand te brengen. Het samenvouwen van velden wordt samen met de velden `image` en `imageAlt` gebruikt om een HTML-element voor `<img>` te maken. Het kenmerk `src` wordt ingesteld op de waarde van het veld `image` , terwijl het kenmerk `alt` wordt ingesteld op de waarde van het veld `imageAlt` .
+- `textContent` is een groepsnaam waarmee velden worden gecategoriseerd. Het zou semantisch moeten zijn, maar kan iets uniek voor dit blok zijn. Hiermee wordt de Universal Editor geïnformeerd alle velden met dit voorvoegsel in hetzelfde `<div>` -element in de uiteindelijke HTML-uitvoer te renderen.
 - Het samenvouwen van velden wordt ook toegepast binnen de `textContent` -groep voor de oproep tot actie (CTA). CTA wordt gecreeerd als a `<a>` via [ typegevolgtrekking ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Het veld `cta` wordt gebruikt om het kenmerk `href` van het element `<a>` in te stellen en het veld `ctaText` bevat de tekstinhoud voor de koppeling binnen de tags `<a ...>` .
 
 [!BADGE  /blocks/teaser/_teaser.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
@@ -194,7 +194,7 @@ In het onderstaande voorbeeld:
 
 Dit model bepaalt de auteursinput in Universele Redacteur voor het blok.
 
-De resulterende HTML van Edge Delivery Services voor dit blok plaatst de afbeelding in de eerste div en de velden voor de elementengroep `textContent` in de tweede div.
+De resulterende Edge Delivery Services HTML voor dit blok plaatst de afbeelding in de eerste div en de velden voor de elementgroep `textContent` in de tweede div.
 
 ```html
 <div>
@@ -276,7 +276,7 @@ Bijvoorbeeld, kon het teaser model **zonder** gebiedsondergang of element groepe
 }
 ```
 
-De HTML Edge Delivery Services voor het blok geeft de waarde van elk veld in een aparte `div` weer, waardoor het begrip van de inhoud, de stijltoepassing en de structuuraanpassingen van de HTML worden gecompliceerd om het gewenste ontwerp te verkrijgen.
+De Edge Delivery Services HTML voor het blok geeft de waarde van elk veld in een aparte `div` weer, waardoor het begrip van de inhoud, de stijltoepassing en de HTML-structuuraanpassingen moeilijker worden om het gewenste ontwerp te verkrijgen.
 
 ```html
 <div>
@@ -322,7 +322,7 @@ De blokdefinitie registreert het blok in Universele Redacteur. Hier volgt een ui
 | `definition.plugins.xwalk.page.resourceType` | Bepaalt het het Verschuiven middeltype voor het teruggeven van de component in de Universele Redacteur. Gebruik altijd een `core/franklin/components/block/v#/block` resource type. |
 | `definition.plugins.xwalk.page.template.name` | De naam van het blok. De naam moet lager zijn en worden afgebroken, zodat deze overeenkomt met de mapnaam van het blok. Deze waarde wordt ook gebruikt om het exemplaar van het blok in de Universele Redacteur te etiketteren. |
 | `definition.plugins.xwalk.page.template.model` | Koppelt deze definitie aan de bijbehorende `model` -definitie, die de ontwerpvelden bepaalt die voor het blok in de Universal Editor worden weergegeven. De waarde hier moet overeenkomen met een `model.id` -waarde. |
-| `definition.plugins.xwalk.page.template.classes` | Optionele eigenschap, waarvan de waarde wordt toegevoegd aan het kenmerk `class` van het element block HTML. Dit maakt varianten van hetzelfde blok mogelijk. De `classes` waarde kan worden gemaakt editable door [ toevoegend een klassengebied ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) aan het 3} model van het blok ](#block-model).[ |
+| `definition.plugins.xwalk.page.template.classes` | Optionele eigenschap, waarvan de waarde wordt toegevoegd aan het kenmerk `class` van het blok HTML-element. Dit maakt varianten van hetzelfde blok mogelijk. De `classes` waarde kan worden gemaakt editable door [ toevoegend een klassengebied ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) aan het 3} model van het blok ](#block-model).[ |
 
 
 Hier is een voorbeeld van JSON voor de blokdefinitie:
@@ -379,7 +379,7 @@ De lasercomponent is geen a [ containerblok ](https://experienceleague.adobe.com
 
 ![ de filters van het Blok ](./assets/5-new-block/filters.png)
 
-Door Adobe verschafte blokken, zoals het sectieblok, slaan filters op in de map `models` van het project. Als u de instellingen wilt aanpassen, zoekt u het JSON-bestand naar het door de Adobe verschafte blok (bijvoorbeeld `/models/_section.json` ) en voegt u de id van de teaser ( `teaser` ) toe aan de lijst met filters. De configuratie signaleert de Universele Redacteur dat de lasercomponent aan het blok van de sectiecontainer kan worden toegevoegd.
+In door Adobe verschafte blokken, zoals het sectieblok, worden filters opgeslagen in de map `models` van het project. Als u de instellingen wilt aanpassen, zoekt u het JSON-bestand voor het door Adobe opgegeven blok (bijvoorbeeld `/models/_section.json` ) en voegt u de id van het gummetje ( `teaser` ) toe aan de lijst met filters. De configuratie signaleert de Universele Redacteur dat de lasercomponent aan het blok van de sectiecontainer kan worden toegevoegd.
 
 [!BADGE  /models/_section.json]{type=Neutral tooltip="Bestandsnaam van codevoorbeeld hieronder."}
 
@@ -420,15 +420,11 @@ $ npm run lint:js
 
 ## Het JSON-project bouwen
 
-Nadat u de JSON-blokbestanden (`blocks/teaser/_teaser.json`, `models/_section.json` ) hebt geconfigureerd, moeten deze worden gecompileerd in de bestanden `component-models.json` , `component-definitions.json` en `component-filters.json` van het project. De compilatie wordt gedaan door de manuscripten van JSON ](./3-local-development-environment.md#build-json-fragments) in werking te stellen npm van het project [ bouwt.
+Nadat de JSON-blokbestanden (bijvoorbeeld `blocks/teaser/_teaser.json` , `models/_section.json` ) zijn geconfigureerd, worden deze automatisch gecompileerd in de `component-models.json` -, `component-definitions.json` - en `component-filters.json` -bestanden van het project. Deze compilatie wordt automatisch behandeld door a [ Echtgenoot ](https://typicode.github.io/husky/) precommit haak inbegrepen in het [ AEM Boilerplate XWalk projectmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
-```bash
-# ~/Code/aem-wknd-eds-ue
+Bouwt kan ook manueel of programmatically worden teweeggebracht gebruikend de manuscripten JSON ](./3-local-development-environment.md#build-json-fragments) NPM van het project [ bouwen.
 
-$ npm run build:json
-```
-
-## De blokdefinitie implementeren
+## Het blok JSON implementeren
 
 Om het blok beschikbaar te maken in de Universele Redacteur, moet het project worden begaan en aan de tak van een bewaarplaats GitHub, in dit geval de `teaser` tak worden geduwd.
 
@@ -439,6 +435,7 @@ De exacte vertakkingsnaam die Universal Editor gebruikt, kan per gebruiker worde
 
 $ git add .
 $ git commit -m "Add teaser block JSON files so it is available in Universal Editor"
+# JSON files are compiled automatically and added to the commit via a husky precommit hook
 $ git push origin teaser
 ```
 

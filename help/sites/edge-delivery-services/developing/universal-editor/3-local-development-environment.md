@@ -10,22 +10,22 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: 66bc4cb6f992c64b1a7e32310ce3e26515f3d380
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
 # Een lokale ontwikkelomgeving instellen
 
-Een lokale ontwikkelomgeving is essentieel voor het snel ontwikkelen van websites die door Edge Delivery Services worden geleverd. De omgeving gebruikt lokaal ontwikkelde code terwijl inhoud wordt opgehaald van Edge Delivery Services, zodat ontwikkelaars direct wijzigingen in de code kunnen bekijken. Een dergelijke installatie ondersteunt snelle, iteratieve ontwikkeling en tests.
+Een lokale ontwikkelomgeving is essentieel voor het snel ontwikkelen van websites die door Edge Delivery Services worden geleverd. De omgeving gebruikt lokaal ontwikkelde code terwijl inhoud van Edge Delivery Services wordt opgehaald, zodat ontwikkelaars direct wijzigingen in de code kunnen bekijken. Een dergelijke installatie ondersteunt snelle, iteratieve ontwikkeling en tests.
 
-De ontwikkelingstools en -processen voor een website-project voor Edge Delivery Services zijn ontworpen om vertrouwd te zijn met webontwikkelaars en een snelle en efficiënte ontwikkelervaring te bieden.
+De ontwikkelingstools en -processen voor een Edge Delivery Services-websiteproject zijn ontworpen om vertrouwd te zijn met webontwikkelaars en een snelle en efficiënte ontwikkelervaring te bieden.
 
 ## Ontwikkelingstopologie
 
-Deze video verstrekt een overzicht van de ontwikkelingstopologie voor een Edge Delivery Services websiteproject dat met Universele Redacteur editable is.
+Deze video biedt een overzicht van de ontwikkelingstopologie voor een Edge Delivery Services-websiteproject dat kan worden bewerkt met Universal Editor.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
 
@@ -36,21 +36,21 @@ Deze video verstrekt een overzicht van de ontwikkelingstopologie voor een Edge D
    - **Structuur**: De **belangrijkste tak** bevat productie-klaar code, terwijl andere takken werkende code houden.
    - **Functionaliteit**: De code van om het even welke tak kan tegen de **productie** lopen of **voorproef** milieu&#39;s zonder de levende website te beïnvloeden.
 
-- **AEM de dienst van de Auteur**:
+- **de dienst van de Auteur van AEM**:
    - **Doel**: dient als canonieke inhoudsbewaarplaats waar de website inhoud wordt uitgegeven en wordt geleid.
    - **Functionaliteit**: De inhoud wordt gelezen en geschreven door de **Universele Redacteur**. Bewerkte inhoud wordt gepubliceerd aan **Edge Delivery Services** in **productie** of **voorproef** milieu&#39;s.
 
 - **Universele Redacteur**:
    - **Doel**: Verstrekt een interface van WYSIWYG voor het uitgeven van website inhoud.
-   - **Functionaliteit**: Leest van en schrijft aan de **AEM dienst van de Auteur**. Kan worden gevormd om code van om het even welke tak in de **bewaarplaats GitHub** te gebruiken om veranderingen te testen en te bevestigen.
+   - **Functionaliteit**: Leest van en schrijft aan de **dienst van de Auteur van AEM**. Kan worden gevormd om code van om het even welke tak in de **bewaarplaats GitHub** te gebruiken om veranderingen te testen en te bevestigen.
 
 - **Edge Delivery Services**:
    - **het milieu van de Productie**:
       - **Doel**: Levert de levende website inhoud en de code aan eind - gebruikers.
-      - **Functionaliteit**: Dient inhoud die van de **AEM dienst van de Auteur** wordt gepubliceerd gebruikend code van de **belangrijkste tak** van de **bewaarplaats GitHub**.
+      - **Functionaliteit**: Dient inhoud die van de **dienst van de Auteur van AEM** wordt gepubliceerd gebruikend code van de **belangrijkste tak** van de **bewaarplaats GitHub**.
    - **Milieu van de Voorproef**:
       - **Doel**: Verstrekt een het opvoeren milieu om inhoud en code vóór plaatsing te testen en te voorproef.
-      - **Functionaliteit**: Dient inhoud die van de **AEM dienst van de Auteur** wordt gepubliceerd gebruikend code van om het even welke tak van de **bewaarplaats GitHub**, toelatend grondig het testen zonder de levende website te beïnvloeden.
+      - **Functionaliteit**: Dient inhoud die van de **dienst van de Auteur van AEM** wordt gepubliceerd gebruikend code van om het even welke tak van de **bewaarplaats GitHub**, toelatend grondig het testen zonder de levende website te beïnvloeden.
 
 - **Lokale ontwikkelaarmilieu**:
    - **Doel**: Staat ontwikkelaars toe om code (CSS en JavaScript) plaatselijk te schrijven en te testen.
@@ -71,7 +71,7 @@ Installeer het volgende op uw computer voordat u de ontwikkeling start:
 
 ## Clone the GitHub repository
 
-Kloon de [ bewaarplaats GitHub die in het nieuwe hoofdstuk van het codeproject ](./1-new-code-project.md) wordt gecreeerd dat het AEM codeproject van Edge Delivery Services aan uw lokale ontwikkelomgeving bevat.
+Kloon de [ bewaarplaats GitHub die in het nieuwe hoofdstuk van het codeproject ](./1-new-code-project.md) wordt gecreeerd dat het de codeproject van AEM Edge Delivery Services aan uw lokale ontwikkelomgeving bevat.
 
 ![ GitHub bewaart kloon ](./assets/3-local-development-environment/github-clone.png)
 
@@ -84,7 +84,7 @@ Er wordt een nieuwe map `aem-wknd-eds-ue` gemaakt in de map `Code` , die als hoo
 
 ## Projectafhankelijkheden installeren
 
-Navigeer naar de projectmap en installeer de vereiste afhankelijkheden met `npm install` . Hoewel de projecten van Edge Delivery Services geen traditionele Node.js bouwt systemen zoals Webpack of Vite gebruiken, vereisen zij nog verscheidene gebiedsdelen voor lokale ontwikkeling.
+Navigeer naar de projectmap en installeer de vereiste afhankelijkheden met `npm install` . Hoewel Edge Delivery Services-projecten geen gebruik maken van traditionele Node.js-constructiesystemen zoals Webpack of Vite, vereisen ze nog steeds verschillende afhankelijkheden voor lokale ontwikkeling.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -92,9 +92,9 @@ Navigeer naar de projectmap en installeer de vereiste afhankelijkheden met `npm 
 $ npm install
 ```
 
-## De AEM CLI installeren
+## AEM CLI installeren
 
-AEM CLI is een Node.js bevel-lijn hulpmiddel dat wordt ontworpen om de ontwikkeling van op Edge Delivery Services-gebaseerde AEM websites te stroomlijnen, die een lokale ontwikkelingsserver voor snelle ontwikkeling en het testen van uw website verstrekken.
+De AEM CLI is een opdrachtregelprogramma Node.js dat is ontworpen om de ontwikkeling van AEM-websites in Edge Delivery Services te stroomlijnen en een lokale ontwikkelingsserver te bieden voor snelle ontwikkeling en het testen van uw website.
 
 Voer de volgende handelingen uit om de AEM CLI te installeren:
 
@@ -104,11 +104,11 @@ Voer de volgende handelingen uit om de AEM CLI te installeren:
 $ npm install @adobe/aem-cli
 ```
 
-De AEM CLI kan ook globaal worden geïnstalleerd gebruikend `npm install --global @adobe/aem-cli`.
+De AEM CLI kan ook globaal worden geïnstalleerd met `npm install --global @adobe/aem-cli`.
 
-## De lokale AEM ontwikkelingsserver starten
+## De lokale AEM-ontwikkelingsserver starten
 
-Met de opdracht `aem up` wordt de lokale ontwikkelingsserver gestart en wordt automatisch een browservenster naar de URL van de server geopend. Deze server fungeert als een reverse-proxy voor de omgeving van de Edge Delivery Services, waarbij inhoud van die server wordt aangeboden terwijl uw lokale codebasis voor ontwikkeling wordt gebruikt.
+Met de opdracht `aem up` wordt de lokale ontwikkelingsserver gestart en wordt automatisch een browservenster naar de URL van de server geopend. Deze server fungeert als een reverse-proxy voor de Edge Delivery Services-omgeving, zodat inhoud van die server wordt aangeboden terwijl uw lokale codebasis voor ontwikkeling wordt gebruikt.
 
 ```bash
 $ cd ~/Code/aem-wknd-eds-ue 
@@ -131,14 +131,17 @@ Als de website met een 404 pagina opent, is het waarschijnlijk [ fstab.yaml of p
 
 ## JSON-fragmenten maken
 
-De projecten van Edge Delivery Services, die gebruikend het [ AEM malplaatje Boilerplate XWalk ](https://github.com/adobe-rnd/aem-boilerplate-xwalk) worden gecreeerd, baseren zich op configuraties JSON die blokcreatie in de Universele Redacteur toelaten.
+De projecten van Edge Delivery Services, die gebruikend het [ malplaatje van AEM Boilerplate XWalk ](https://github.com/adobe-rnd/aem-boilerplate-xwalk) worden gecreeerd, baseren zich op configuraties JSON die blokauthoring in de Universele Redacteur toelaten.
 
 - **JSON fragments**: Opgeslagen met hun bijbehorende blokken en bepalen de blokmodellen, de definities, en de filters.
    - **Modelfragmenten**: Opgeslagen bij `/blocks/example/_example.json`.
    - **de fragmenten van de Definitie**: Opgeslagen bij `/blocks/example/_example.json`.
    - **de fragmenten van de Filter**: Opgeslagen bij `/blocks/example/_example.json`.
 
-De manuscripten NPM compileren deze fragmenten JSON en plaatsen hen in de aangewezen plaatsen in de projectwortel. Gebruik de meegeleverde NPM-scripts om JSON-bestanden te maken. Als u bijvoorbeeld alle fragmenten wilt compileren, voert u de volgende handelingen uit:
+
+Het [ AEM Boilerplate XWalk projectmalplaatje ](https://github.com/adobe-rnd/aem-boilerplate-xwalk) omvat a [ Eigen ](https://typicode.github.io/husky/) precommit haak die veranderingen in fragmenten JSON ontdekt en hen compileert in de aangewezen `component-*.json` dossiers op `git commit`.
+
+Hoewel de volgende NPM-scripts handmatig via `npm run` kunnen worden uitgevoerd om de JSON-bestanden samen te stellen, is dit gewoonlijk niet nodig omdat deze automatisch door de husky pre-commit haak wordt afgehandeld.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -159,7 +162,7 @@ npm run build:json
 
 ## Koppeling
 
-De verbinding verzekert codekwaliteit en consistentie, die voor Edge Delivery Services projecten alvorens veranderingen in de `main` tak samen te voegen wordt vereist.
+Koppelingen zorgen voor kwaliteit en consistentie van de code. Dit is vereist voor Edge Delivery Services-projecten voordat wijzigingen worden samengevoegd in de `main` -vertakking.
 
 De NPM-scripts kunnen bijvoorbeeld via `npm run` worden uitgevoerd:
 
@@ -185,7 +188,7 @@ U kunt problemen met koppelingen automatisch oplossen door de volgende `scripts`
 $ npm run lint:fix
 ```
 
-Deze scripts zijn niet vooraf geconfigureerd met de AEM sjabloon Boilerplate XWalk, maar kunnen wel aan het `package.json` -bestand worden toegevoegd:
+Deze scripts zijn niet vooraf geconfigureerd met de AEM Boilerplate XWalk-sjabloon, maar kunnen wel aan het `package.json` -bestand worden toegevoegd:
 
 >[!BEGINTABS]
 
