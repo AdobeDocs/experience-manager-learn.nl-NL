@@ -1,6 +1,6 @@
 ---
-title: Zelfstudie voor Edge Delivery Services en Universal Editor
-description: Leer de basisbeginselen van het ontwikkelen van een nieuwe website die in AEM Universal Editor is ontworpen en met behulp van Edge Delivery Services wordt geleverd.
+title: Zelfstudie voor ontwikkelaars van Edge Delivery Services en Universal Editor
+description: Leer de basisbeginselen van het ontwikkelen van een nieuwe website die in AEM Universal Editor is ontworpen en die met Edge Delivery Services wordt geleverd.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,22 +10,22 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: 9dd07383a3d46d1bbecd2dc8574e6d06a0535fee
+source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
 
-# Zelfstudie voor Edge Delivery Services en Universal Editor
+# Zelfstudie voor ontwikkelaars van Edge Delivery Services en Universal Editor
 
 ![ Edge Delivery Services en Universele de ontwikkelaarsleerprogramma van de Redacteur ](./assets/0-overview/hero.png)
 
-In deze zelfstudie leert u de grondbeginselen van het bouwen van een AEM website die krachtige creatie met Universele Redacteur en bliksemsnelle levering gebruikend Edge Delivery Services combineert. Tegen het eind, zult u basisinzicht in hoe te om een nieuw project tot stand te brengen, opstelling een lokale ontwikkelomgeving, en een nieuw blok bouwen.
+In deze zelfstudie leert u de grondbeginselen van het bouwen van een AEM-website die krachtige authoring combineert met Universal Editor en bliksemsnelle levering met Edge Delivery Services. Tegen het eind, zult u basisinzicht in hoe te om een nieuw project tot stand te brengen, opstelling een lokale ontwikkelomgeving, en een nieuw blok bouwen.
 
 ## Projectinstelling
 
-Leer hoe u een codeproject maakt en een nieuwe site configureert in AEM as a Cloud Service. Deze instelling maakt naadloze ontwikkeling mogelijk met de Universal Editor voor het maken van inhoud en snelle levering van inhoud via Edge Delivery Services.
+Leer hoe u een codeproject maakt en een nieuwe site configureert in AEM as a Cloud Service. Met deze setup kunt u naadloos ontwikkelen met de Universal Editor voor het maken van inhoud en het snel leveren van inhoud via Edge Delivery Services.
 
 <!-- CARDS 
 
@@ -50,7 +50,7 @@ Leer hoe u een codeproject maakt en een nieuwe site configureert in AEM as a Clo
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./1-new-code-project.md" target="_blank" rel="referrer" title="Een codeproject maken"> creeer een codeproject </a>
                     </p>
-                    <p class="is-size-6">Creeer een codeproject voor Edge Delivery Services, editable gebruikend de Universele Redacteur.</p>
+                    <p class="is-size-6">Maak een codeproject voor Edge Delivery Services dat u kunt bewerken met de Universal Editor.</p>
                 </div>
                 <a href="./1-new-code-project.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
@@ -62,8 +62,8 @@ Leer hoe u een codeproject maakt en een nieuwe site configureert in AEM as a Clo
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./2-new-aem-site.md" title="Een AEM site maken" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/2-new-aem-site/new-site.png" alt="Een AEM site maken"
+                    <a href="./2-new-aem-site.md" title="Een AEM-site maken" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="assets/2-new-aem-site/new-site.png" alt="Een AEM-site maken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +71,7 @@ Leer hoe u een codeproject maakt en een nieuwe site configureert in AEM as a Clo
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./2-new-aem-site.md" target="_blank" rel="referrer" title="Een AEM site maken"> creeer een AEM plaats </a>
+                        <a href="./2-new-aem-site.md" target="_blank" rel="referrer" title="Een AEM-site maken"> creeer een plaats van AEM </a>
                     </p>
                     <p class="is-size-6">Maak een site in AEM Sites for Edge Delivery Services die u kunt bewerken met de Universal Editor.</p>
                 </div>
@@ -100,7 +100,7 @@ Leer hoe u uw lokale ontwikkelomgeving configureert voor een snelle ontwikkeling
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Een lokale ontwikkelomgeving instellen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/3-local-development-environment/github-clone.png" alt="Een lokale ontwikkelomgeving instellen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1739374885708" alt="Een lokale ontwikkelomgeving instellen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -133,7 +133,7 @@ Leer hoe u uw lokale ontwikkelomgeving configureert voor een snelle ontwikkeling
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./4-website-branding.md" target="_blank" rel="referrer" title="Websitemarkering toevoegen"> voeg website branding </a> toe
                     </p>
-                    <p class="is-size-6">Definieer algemene CSS-, CSS-variabelen en weblettertypen voor een site Edge Delivery Services.</p>
+                    <p class="is-size-6">Definieer algemene CSS, CSS-variabelen en weblettertypen voor een Edge Delivery Services-site.</p>
                 </div>
                 <a href="./4-website-branding.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
@@ -173,7 +173,7 @@ Leer hoe u een nieuw blok kunt maken door het inhoudsmodel te definiëren en voo
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./5-new-block.md" target="_blank" rel="referrer" title="Een blok maken"> creeer een blok </a>
                     </p>
-                    <p class="is-size-6">Bouw een blok voor een website van Edge Delivery Services die met Universal Editor editable is.</p>
+                    <p class="is-size-6">Bouw een blok voor een Edge Delivery Services-website die bewerkbaar is met Universal Editor.</p>
                 </div>
                 <a href="./5-new-block.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
@@ -196,7 +196,7 @@ Leer hoe u een nieuw blok kunt maken door het inhoudsmodel te definiëren en voo
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./6-author-block.md" target="_blank" rel="referrer" title="Auteur van een blok"> Auteur een blok </a>
                     </p>
-                    <p class="is-size-6">Auteur een blok van Edge Delivery Services met Universele Redacteur.</p>
+                    <p class="is-size-6">Schrijf een Edge Delivery Services-blok met Universal Editor.</p>
                 </div>
                 <a href="./6-author-block.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
@@ -245,6 +245,43 @@ Leer hoe u een nieuw blok kunt maken door het inhoudsmodel te definiëren en voo
                     <p class="is-size-6">Ontwikkel een blok met CSS en JavaScript voor Edge Delivery Services, editable gebruikend de Universele Redacteur.</p>
                 </div>
                 <a href="./7b-block-js-css.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+## Volgende stappen
+
+Nu u deze zelfstudie hebt voltooid, bouwt u voort op wat u hebt geleerd met deze gefocuste Hoe-kan-ik&#39;s. Deze gidsen breiden zich op de code en de concepten uit die hier worden behandeld, het onderzoeken van rol-specifieke gebruiksgevallen, geavanceerde technieken, en extra uiteinden om Edge Delivery Services en Universele redacteur ontwikkelingsvaardigheden te verbeteren.
+
+<!-- CARDS 
+
+* ./how-to/block-options.md
+
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Block options">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./how-to/block-options.md" title="Blokopties" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="how-to/assets/block-options/main.png" alt="Blokopties"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./how-to/block-options.md" target="_blank" rel="referrer" title="Blokopties"> de opties van het Blok </a>
+                    </p>
+                    <p class="is-size-6">Leer hoe u een blok maakt met meerdere weergaveopties.</p>
+                </div>
+                <a href="./how-to/block-options.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Leer meer </span>
                 </a>
             </div>
