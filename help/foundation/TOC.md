@@ -4,9 +4,9 @@ breadcrumb-title: Tutorials voor AEM Foundation
 user-guide-description: Een verzameling video's en tutorials voor Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: 515c4020e1c358b5ee044a81affc8d7e1e4ff4eb
+source-git-commit: bc2f4655631f28323a39ed5b4c7878613296a0ba
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '248'
 ht-degree: 11%
 
 ---
@@ -16,11 +16,12 @@ ht-degree: 11%
 
 + [Overzicht](./overview.md)
 + Beheer {#administration}
-   + [Redenen voor upgrade-AEM begrijpen](./administration/understand-reasons-to-upgrade.md)
+   + [Redenen begrijpen voor upgrade van AEM](./administration/understand-reasons-to-upgrade.md)
    + [Gebruik oak-run.jar om indexen te beheren](./administration/use-oak-run-jar-to-manage-indexes.md)
    + [Onlinerevisie opschonen gebruiken](./administration/use-online-revision-clean-up.md)
    + [Het dashboard Systeemoverzicht gebruiken](./administration/use-the-system-overview-dashboard.md)
    + [URL-omleidingen](./administration/url-redirection.md)
+   + [Het uitvoeren van pijpleidingsvrije URL richt](./administration/implementing-pipeline-free-url-redirects.md)
 + Verificatie {#authentication}
    + [OKTA en AEM](authentication/okta-saml-integration.md)
    + [OAutbereik](authentication/oauth-code-sample-develop.md)
@@ -33,14 +34,14 @@ ht-degree: 11%
    + [Aangepaste machtigingen](./cloud-manager/cloud-permissions.md)
 + Ontwikkeling {#development}
    + [Exporteurs van verkoopmodellen ontwikkelen](./development/develop-sling-model-exporter.md)
-   + [Een lokale AEM ontwikkelomgeving instellen](./development/set-up-a-local-aem-development-environment.md)
+   + [Een lokale AEM Development Environment instellen](./development/set-up-a-local-aem-development-environment.md)
    + [Dynamische include-bestanden instellen](./development/set-up-sling-dynamic-include.md)
    + [Tips en trucs voor Java API](./development/understand-java-api-best-practices.md)
    + [Uitvoer van stijlmodel begrijpen](./development/understand-sling-model-exporter.md)
    + [Indexeren van beste praktijken in Oak begrijpen](./development/understand-indexing-best-practices.md)
    + [Artefacten van derden installeren](./development/install-third-party-artifacts.md)
 + Projecten {#projects}
-   + [Ontwikkelen AEM projecten](./projects/develop-aem-projects.md)
+   + [AEM-projecten ontwikkelen](./projects/develop-aem-projects.md)
    + [Projectstramienen gebruiken](./projects/use-project-masters.md)
 + Beveiliging {#security}
    + [Inzicht in DoS/DDoS-preventie](./security/understanding-dos-and-prevention-approaches.md)
@@ -57,10 +58,10 @@ ht-degree: 11%
    + [Inbox gebruiken](./workflow/use-the-inbox.md)
 + Problemen oplossen {#troubleshooting}
    + [Rapport voor het downloaden van bedrijfsmiddelen inschakelen](./troubleshooting/how-to-enable-asset-download-report.md)
-   + [Hoe wordt de recompilatie afgedwongen in AEM6.4](./troubleshooting/how-to-force-recompilation.md)
-   + [Hoe te om indexerende verwante kwesties in AEM te onderzoeken](./troubleshooting/how-to-investigate-indexing-related-issues.md)
-   + [Hoe te om SAML verwante kwesties in AEM te onderzoeken](./troubleshooting/how-to-investigate-saml-related-issues.md)
-   + [Hoe te onderzoek verwante kwesties in AEM onderzoeken](./troubleshooting/how-to-investigate-search-related-issues.md)
+   + [Hoe kan ik opnieuw compileren afdwingen in AEM6.4](./troubleshooting/how-to-force-recompilation.md)
+   + [Hoe indexeerproblemen in AEM te onderzoeken](./troubleshooting/how-to-investigate-indexing-related-issues.md)
+   + [Hoe SAML-gerelateerde problemen in AEM onderzoeken](./troubleshooting/how-to-investigate-saml-related-issues.md)
+   + [Hoe te om onderzoek verwante kwesties in AEM te onderzoeken](./troubleshooting/how-to-investigate-search-related-issues.md)
    + [De vervaldatum van de Oak-aanmeldingstoken instellen](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
    + [Hoe te om kwesties met betrekking tot de configuratie van de Jetty problemen op te lossen](./troubleshooting/how-to-troubleshoot-issues-related-to-jetty-configuration.md)
    + [Hoe te om prestatiesverwante kwesties problemen op te lossen](./troubleshooting/how-to-troubleshoot-performance-related-issues.md)
