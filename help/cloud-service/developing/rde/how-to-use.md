@@ -11,7 +11,7 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
+source-git-commit: 98d67d5b624b386c6a579cd03117372bc9058acb
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Leer **hoe te om** het Snelle Milieu van de Ontwikkeling (RDE) in AEM as a Cloud Service te gebruiken. Stel code en inhoud voor snellere ontwikkelingscycli van uw bijna-definitieve code aan RDE, van uw favoriete Geïntegreerde Milieu van de Ontwikkeling (winde) op.
 
-Gebruikend [ AEM het Project van Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) leert u hoe te om diverse AEM artefacten aan RDE op te stellen door het bevel van AEM-RDE `install` van uw favoriete winde in werking te stellen.
+Gebruikend [ AEM WKND Project van Plaatsen ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) leert u hoe te om diverse artefacten van AEM aan RDE op te stellen door AEM-RDE `install` bevel van uw favoriete winde in werking te stellen.
 
-- Implementatie van code en inhoud AEM (alle toepassingen, ui.apps)
+- Implementatie van AEM-code en -inhoudspakket (alle, ui.apps)
 - Implementatie van OSGi-bundel- en configuratiebestanden
 - Implementatie van Apache- en Dispatcher-configuraties als ZIP-bestand
 - Afzonderlijke bestanden, zoals HTML- en `.content.xml` (dialoogvenster XML)-implementatie
@@ -34,24 +34,24 @@ Gebruikend [ AEM het Project van Plaatsen WKND ](https://github.com/adobe/aem-gu
 
 ## Vereiste
 
-Kloon het [ project van de Plaatsen van WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) en open het in uw favoriete winde om de AEM artefacten op RDE op te stellen.
+Kloon het [ WKND 1} project van Plaatsen {en open het in uw favoriete winde om de artefacten van AEM op RDE op te stellen.](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project)
 
 ```shell
 $ git clone git@github.com:adobe/aem-guides-wknd.git
 ```
 
-Dan, bouw en stel het aan lokale AEM-SDK op door het volgende gemaven bevel in werking te stellen.
+Vervolgens bouwt u de toepassing en implementeert u deze in de lokale AEM-SDK door de volgende gemodelleerde opdracht uit te voeren.
 
 ```
 $ cd aem-guides-wknd/
 $ mvn clean package
 ```
 
-## Implementeer AEM artefacten met de AEM-RDE plug-in
+## AEM-artefacten implementeren met de AEM-RDE-plug-in
 
 Eerst, zorg ervoor u de [ recentste geïnstalleerde `aio` CLI module ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli) hebt.
 
-Gebruik vervolgens de opdracht `aio aem:rde:install` om verschillende AEM artefacten te implementeren. Nu moet u
+Gebruik vervolgens de opdracht `aio aem:rde:install` om verschillende AEM-artefacten te implementeren. Nu moet u
 
 ### Pakketten `all` en `dispatcher` implementeren
 
@@ -126,7 +126,7 @@ In het bovenstaande voorbeeld met afzonderlijke opdrachten voor bestandsimplemen
 $ aio aem:rde:install --help
 ```
 
-De vlaggen zijn duidelijk, is de `-s` vlag nuttig om de plaatsing enkel aan de auteur of de publicatieservices te richten. Gebruik de `-t` vlag wanneer het opstellen van **inhoud-dossier of inhoud-xml** dossiers samen met de `-p` vlag om de weg van bestemmingsJCR in het milieu van AEMRDE te specificeren.
+De vlaggen zijn duidelijk, is de `-s` vlag nuttig om de plaatsing enkel aan de auteur of de publicatieservices te richten. Gebruik de `-t` vlag wanneer het opstellen van **inhoud-dossier of inhoud-xml** dossiers samen met de `-p` vlag om de weg van bestemmingsJCR in het milieu van AEM te specificeren RDE.
 
 ### OSGi-bundel implementeren
 
@@ -204,7 +204,7 @@ Apache of Dispatcher config- dossiers **kunnen niet individueel** worden opgeste
 
 ### Configuratiebestanden (YAML) implementeren
 
-CDN, onderhoudstaken, logboek door:sturen en AEM API de configuratiedossiers van de authentificatieconfiguratie kunnen aan RDE worden opgesteld gebruikend het `install` bevel. Deze configuraties worden beheerd als dossiers YAML in de `config` omslag van het AEM project, zie [ Ondersteunde Configuraties ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) voor meer details.
+De CDN, onderhoudstaken, het logboek door:sturen en de configuratiedossiers van de AEM API authentificatie kunnen aan RDE worden opgesteld gebruikend het `install` bevel. Deze configuraties worden beheerd als dossiers YAML in de `config` omslag van het project van AEM, zie [ Ondersteunde Configuraties ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) voor meer details.
 
 Om te leren hoe te om de configuratiedossiers op te stellen, verbeteren wij het `cdn` configuratiedossier en stellen het aan RDE op.
 
@@ -238,15 +238,15 @@ Om te leren hoe te om de configuratiedossiers op te stellen, verbeteren wij het 
 1. Stel de veranderingen in RDE op door het volgende bevel in werking te stellen
 
    ```shell
-   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   $ aio aem:rde:install -t env-config ./config
    ```
 
 1. Wijzigingen op de RDE controleren
 
 
-## Aanvullende opdrachten AEM RDE-insteekmodule
+## Aanvullende opdrachten voor AEM RDE-insteekmodule
 
-Laten we de extra opdrachten voor AEM RDE-plug-in die u wilt beheren, bekijken en communiceren met de RDE van uw lokale computer.
+Laten we de extra opdrachten voor AEM RDE-insteekmodules bekijken die u kunt beheren en communiceren met de RDE van uw lokale computer.
 
 ```shell
 $ aio aem:rde --help
@@ -275,6 +275,6 @@ Leer over de [ ontwikkeling/de cyclus van het plaatsingsleven gebruikend RDE ](.
 
 [ RDE bevelen documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
-[ Adobe I/O Runtime CLI Insteekmodule voor interactie met AEM Snelle Milieu&#39;s van de Ontwikkeling ](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[ Adobe I/O Runtime CLI Insteekmodule voor interactie met de Milieu&#39;s van de Snelle Ontwikkeling van AEM ](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[ AEM de opstelling van het Project ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
+[ de opstelling van het Project van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
