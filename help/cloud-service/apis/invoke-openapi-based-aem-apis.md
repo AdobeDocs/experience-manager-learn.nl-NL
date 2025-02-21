@@ -1,6 +1,6 @@
 ---
-title: Op OpenAPI gebaseerde AEM-API's aanroepen voor serververificatie
-description: Leer hoe u op OpenAPI gebaseerde API's voor AEM op AEM as a Cloud Service configureert en oproept vanuit aangepaste toepassingen met OAuth Server-to-Server-verificatie.
+title: AEM API's op basis van OpenAPI aanroepen voor server-naar-serververificatie
+description: Leer hoe u op OpenAPI gebaseerde AEM API's op AEM as a Cloud Service configureert en oproept vanuit aangepaste toepassingen met OAuth Server-to-Server-verificatie.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -12,14 +12,14 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: b3d053a09dfc8989441a21bf0d8c4771d816106f
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1855'
 ht-degree: 0%
 
 ---
 
-# Op OpenAPI gebaseerde AEM-API&#39;s aanroepen voor serververificatie{#invoke-openapi-based-aem-apis}
+# AEM API&#39;s op basis van OpenAPI aanroepen voor server-naar-serververificatie{#invoke-openapi-based-aem-apis}
 
 Leer hoe te om op OpenAPI-Gebaseerde AEM APIs op AEM as a Cloud Service van douanetoepassingen te vormen en aan te halen gebruikend _Server-aan-Server_ authentificatie.
 
@@ -27,11 +27,11 @@ De verificatie van server-naar-server OAuth is ideaal voor back-endservices die 
 
 >[!AVAILABILITY]
 >
->API&#39;s die zijn gebaseerd op OpenAPI zijn beschikbaar als onderdeel van een programma voor vroege toegang. Als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
+>AEM API&#39;s die zijn gebaseerd op OpenAPI zijn beschikbaar als onderdeel van een vroegtijdig toegangsprogramma. Als u in de toegang tot van hen geinteresseerd bent, moedigen wij u aan om [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) met een beschrijving van uw gebruiksgeval te e-mailen.
 
 In deze zelfstudie leert u hoe u:
 
-- Schakel op OpenAPI gebaseerde AEM API&#39;s toegang voor uw AEM as a Cloud Service-omgeving in.
+- OpenAPI-gebaseerde AEM API&#39;s toegang geven tot uw AEM as a Cloud Service-omgeving.
 - Creeer en vorm een project van Adobe Developer Console (ADC) om tot AEM APIs toegang te hebben gebruikend _Server-aan-Server authentificatie_.
 - Ontwikkelen van een voorbeeldtoepassing NodeJS die de Assets-auteur-API aanroept om metagegevens voor een bepaald element op te halen.
 
@@ -59,10 +59,10 @@ De ontwikkelingsstappen op hoog niveau zijn:
 1. Toegang tot AEM API&#39;s inschakelen.
 1. Maak een Adobe Developer Console-project (ADC).
 1. ADC-project configureren
-   1. Voeg gewenste AEM-API&#39;s toe
+   1. Voeg gewenste AEM API&#39;s toe
    1. De verificatie configureren
    1. Productprofiel koppelen aan de verificatieconfiguratie
-1. Vorm de AEM instantie om de mededeling van het Project van ADC toe te laten
+1. De AEM-instantie configureren om ADC-projectcommunicatie in te schakelen
 1. Een voorbeeld van een NodeJS-toepassing ontwikkelen
 1. Verifieer de stroom van begin tot eind
 
@@ -72,30 +72,30 @@ Laten we beginnen met het moderniseren van de AEM as a Cloud Service-omgeving. D
 
 De modernisering van de AEM as a Cloud Service-omgeving is een proces in twee stappen,
 
-- Bijwerken naar de nieuwste versie AEM release
+- Bijwerken naar de nieuwste AEM-releaseversie
 - Voeg nieuwe productprofielen toe.
 
-### AEM bijwerken
+### AEM-instantie bijwerken
 
-Om de AEM instantie bij te werken, in de Adobe [ Cloud Manager _de sectie van Milieu&#39;s_, selecteert het _ellips_ pictogram naast de milieunaam en selecteert **Update** optie.](https://my.cloudmanager.adobe.com/)
+Om de instantie van AEM bij te werken, in de Adobe [ Cloud Manager _van de Milieu_ sectie van 1} {, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **optie van de Update**.](https://my.cloudmanager.adobe.com/)
 
 ![ Update AEM instantie ](assets/update-aem-instance.png)
 
 Dan klik **voorleggen** knoop en stel de voorgestelde FullstackPipeline in werking.
 
-![ Uitgezochte recentste versie AEM ](assets/select-latest-aem-release.png)
+![ Uitgezochte recentste versie van de versie van AEM ](assets/select-latest-aem-release.png)
 
-In mijn geval, is de naam van Pijpleiding Fullstack _Dev:: Fullstack-Deploy_ en de AEM milieunaam is _wknd-programma-dev_ het kan in uw geval variëren.
+In mijn geval, is de naam van de Pijpleiding Fullstack _Dev:: Fullstack-Deploy_ en de het omgevingsnaam van AEM is _wknd-programma-dev_ het kan in uw geval variëren.
 
 ### Nieuwe productprofielen toevoegen
 
-Om nieuwe Profielen van het Product aan de AEM instantie toe te voegen, in de 2} sectie van de Milieu&#39;s ](https://my.cloudmanager.adobe.com/) van de Adobe [ Cloud Manager _, selecteer het_ ellips _pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**._
+Om nieuwe Profielen van het Product aan de instantie van AEM toe te voegen, in de 2} sectie van de Milieu&#39;s ](https://my.cloudmanager.adobe.com/) van Adobe __, selecteer het _ellips_ pictogram naast de milieunaam en selecteer **toevoegen de optie van de Profielen van het Product**.[
 
 ![ voeg nieuwe Profielen van het Product ](assets/add-new-product-profiles.png) toe
 
 U kunt de onlangs toegevoegde Profielen van het Product herzien door op het _ellips_ pictogram naast de milieunaam te klikken en **te selecteren beheert Toegang** > **Profielen van de Auteur**.
 
-Het _venster van de Admin Console_ toont de onlangs toegevoegde Profielen van het Product.
+Het _Admin Console_ venster toont de onlangs toegevoegde Profielen van het Product.
 
 ![ Herzie nieuwe Profielen van het Product ](assets/review-new-product-profiles.png)
 
@@ -103,9 +103,9 @@ Met de bovenstaande stappen wordt de modernisering van de AEM as a Cloud Service
 
 ## Toegang tot AEM API&#39;s inschakelen
 
-Met nieuwe productprofielen hebt u toegang tot de API (OpenAPI) op basis van AEM.
+Met nieuwe productprofielen hebt u toegang tot de AEM API van OpenAPI in de Adobe Developer Console (ADC).
 
-De onlangs toegevoegde Profielen van het Product worden geassocieerd met de _Diensten_ die AEM gebruikersgroepen met vooraf bepaalde Lijsten van het Toegangsbeheer (ACLs) vertegenwoordigen. De _Diensten_ worden gebruikt om het niveau van toegang tot AEM APIs te controleren.
+De onlangs toegevoegde Profielen van het Product worden geassocieerd met de _Diensten_ die de gebruikersgroepen van AEM met vooraf bepaalde Lijsten van het Toegangsbeheer (ACLs) vertegenwoordigen. De _Diensten_ worden gebruikt om het niveau van toegang tot AEM APIs te controleren.
 
 U kunt de _Diensten_ ook selecteren of schrappen verbonden aan het Profiel van het Product om het niveau van toegang te verminderen of te verhogen.
 
@@ -113,11 +113,11 @@ Herzie de vereniging door op het _pictogram van de Details van de Mening_ naast 
 
 {de diensten van het 0} Overzicht verbonden aan het Profiel van het Product ](assets/review-services-associated-with-product-profile.png)![
 
-Door gebrek, wordt de **AEM Assets API Gebruikers** Dienst niet geassocieerd met om het even welk Profiel van het Product. Laat ons het met de onlangs toegevoegde **AEM Beheerders - auteur - Programma XXX - Milieu XXX** Profiel van het Product associëren. Na deze vereniging, kan de 20} ActivaAuteur API van het Project ADC _de Server-aan-Server authentificatie van OAuth plaatsen en de authentificatierekening met het Profiel van het Product associëren._
+Door gebrek, wordt de **AEM Assets API Gebruikers** Dienst niet geassocieerd met om het even welk Profiel van het Product. Laat ons het met de onlangs toegevoegde **Beheerders van AEM associëren - auteur - Programma XXX - Milieu XXX** Profiel van het Product. Na deze vereniging, kan de 20} ActivaAuteur API van het Project ADC _de Server-aan-Server authentificatie van OAuth plaatsen en de authentificatierekening met het Profiel van het Product associëren._
 
 ![ associeerde de Dienst van de Gebruikers van AEM Assets API met het Profiel van het Product ](assets/associate-aem-assets-api-users-service-with-product-profile.png)
 
-Het is belangrijk om op te merken dat vóór de modernisering, in AEM instantie van de Auteur, twee Profielen van het Product beschikbaar waren, **AEM beheerders-XXX** en **AEM gebruikers-XXX**. Het is ook mogelijk om deze bestaande Profielen van het Product met de nieuwe Diensten te associëren.
+Het is belangrijk om op te merken dat vóór de modernisering, in de instantie van de Auteur van AEM, twee Profielen van het Product beschikbaar waren, **AEM beheerders-XXX** en **AEM Users-XXX**. Het is ook mogelijk om deze bestaande Profielen van het Product met de nieuwe Diensten te associëren.
 
 ## Adobe Developer Console-project (ADC) maken
 
@@ -141,9 +141,9 @@ Maak vervolgens een ADC-project voor toegang tot AEM API&#39;s.
 
 ## ADC-project configureren
 
-Vervolgens configureert u het ADC-project om AEM API&#39;s toe te voegen, de verificatie ervan te configureren en het productprofiel te koppelen.
+Configureer vervolgens het ADC-project om AEM API&#39;s toe te voegen, de verificatie ervan te configureren en het productprofiel te koppelen.
 
-1. Om AEM APIs toe te voegen, klik op **API** knoop toevoegen.
+1. Om AEM APIs toe te voegen, klik op **voeg API** knoop toe.
 
    ![ voeg API ](assets/add-api.png) toe
 
@@ -159,22 +159,26 @@ Vervolgens configureert u het ADC-project om AEM API&#39;s toe te voegen, de ver
 
    ![ noem referentie ](assets/rename-credential.png) anders
 
-1. Selecteer de **AEM Beheerders - auteur - Programma XXX - Milieu XXX** Profiel van het Product en klik **sparen**. Zoals u ziet, is alleen het productprofiel dat is gekoppeld aan de AEM Assets API-gebruikersservice beschikbaar voor selectie.
+1. Selecteer de **Beheerders van AEM - auteur - Programma XXX - het Profiel van het Product van Milieu XXX** en klik **sparen**. Zoals u ziet, is alleen het productprofiel dat is gekoppeld aan de AEM Assets API-gebruikersservice beschikbaar voor selectie.
 
    ![ Uitgezochte Profiel van het Product ](assets/select-product-profile.png)
 
+   >[!CAUTION]
+   >
+   >    Merk op dat de gebruiker van de de dienstrekening (alias technische rekening) VOLLEDIGE toegang krijgt aangezien het met de **Beheerders van AEM - XX - XX wordt geassocieerd** Profiel van het Product.
+
+
 1. Controleer de AEM API- en verificatieconfiguratie.
 
-   ![ AEM API configuratie ](assets/aem-api-configuration.png)
+   ![ de configuratie van AEM API ](assets/aem-api-configuration.png)
 
    ![ configuratie van de Authentificatie ](assets/authentication-configuration.png)
 
+## AEM-instantie configureren om ADC-projectcommunicatie in te schakelen
 
-## AEM instantie configureren om ADC-projectcommunicatie in te schakelen
+Om OAuth server-aan-server van het Project van ADC Server-aan-Server referentie ClientID aan communicatie met de instantie van AEM toe te laten, moet u de instantie van AEM vormen.
 
-Om OAuth server-aan-Server van het Project van ADC toe te laten credential ClientID aan communicatie met de AEM instantie, moet u de AEM instantie vormen.
-
-Hiervoor definieert u de configuratie in het `config.yaml` -bestand in het AEM Project. Implementeer vervolgens het `config.yaml` -bestand met behulp van de Config Pipeline in de Cloud Manager.
+Hiervoor definieert u de configuratie in het `config.yaml` -bestand in het AEM-project. Implementeer vervolgens het `config.yaml` -bestand met behulp van de Config Pipeline in de Cloud Manager.
 
 1. Zoek in AEM Project het `config.yaml` -bestand in de map `config` of maak dit.
 
@@ -221,15 +225,15 @@ Alvorens de toepassing te ontwikkelen, laten wij overzicht [ leveren het gespeci
 GET https://{bucket}.adobeaemcloud.com/adobe/assets/{assetId}/metadata
 ```
 
-Als u de metagegevens van een specifiek element wilt ophalen, hebt u de waarden `bucket` en `assetId` nodig. `bucket` is de AEM instantienaam zonder de Adobe domeinnaam (.adobeaemcloud.com), bijvoorbeeld `author-p63947-e1420428`.
+Als u de metagegevens van een specifiek element wilt ophalen, hebt u de waarden `bucket` en `assetId` nodig. `bucket` is de AEM-instantienaam zonder de Adobe-domeinnaam (.adobeaemcloud.com), bijvoorbeeld `author-p63947-e1420428` .
 
 De `assetId` is de JCR-UUID van het element met het voorvoegsel `urn:aaid:aem:` , bijvoorbeeld `urn:aaid:aem:a200faf1-6d12-4abc-bc16-1b9a21f870da` . Er zijn meerdere manieren om de `assetId` op te halen:
 
-- Voeg de extensie AEM elementpad `.json` toe om de metagegevens van het element op te halen. Bijvoorbeeld `https://author-p63947-e1420429.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/cycling-southern-utah/adobestock-221043703.jpg.json` en zoek naar de eigenschap `jcr:uuid` .
+- Voeg de extensie AEM-elementpad `.json` toe voor de metagegevens van het element. Bijvoorbeeld `https://author-p63947-e1420429.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/cycling-southern-utah/adobestock-221043703.jpg.json` en zoek naar de eigenschap `jcr:uuid` .
 
 - U kunt de `assetId` ook ophalen door het element te inspecteren in de elementencontrole van de browser. Zoek het kenmerk `data-id="urn:aaid:aem:..."` .
 
-  ![ activa van Inspect ](assets/inspect-asset.png)
+  ![ inspecteer activa ](assets/inspect-asset.png)
 
 ### De API aanroepen met de browser
 
@@ -243,7 +247,7 @@ Alvorens de toepassing te ontwikkelen, laten wij API gebruiken aanhalen gebruike
    ![ API documentatie ](assets/api-documentation.png)
 
 1. Voer de volgende waarden in:
-   1. De `bucket` -waarde is de AEM instantienaam zonder de Adobe domeinnaam (.adobeaemcloud.com), bijvoorbeeld `author-p63947-e1420428` .
+   1. De `bucket` -waarde is de AEM-instantienaam zonder de Adobe-domeinnaam (.adobeaemcloud.com), bijvoorbeeld `author-p63947-e1420428` .
 
    1. De **Verwante sectie van de Veiligheid** `Bearer Token` en `X-Api-Key` waarden worden verkregen uit de Server-aan-Server referentie van het Project van ADC. Klik **produceer toegangstoken** om de `Bearer Token` waarde te krijgen en de `ClientID` waarde als `X-Api-Key` te gebruiken.
       ![ produceer toegangstoken ](assets/generate-access-token.png)
@@ -258,7 +262,7 @@ Alvorens de toepassing te ontwikkelen, laten wij API gebruiken aanhalen gebruike
 
    ![ Oproep API - reactie ](assets/invoke-api-response.png)
 
-De bovenstaande stappen bevestigen de modernisering van de AEM as a Cloud Service-omgeving, waardoor AEM API&#39;s toegang krijgen. Het bevestigt ook de succesvolle configuratie van het Project ADC, en de Server-aan-Server communicatie van OAuth ClientID met de AEM auteursinstantie.
+De bovenstaande stappen bevestigen de modernisering van de AEM as a Cloud Service-omgeving, waardoor AEM API&#39;s toegang hebben. Het bevestigt ook de succesvolle configuratie van het Project ADC, en de Server-aan-Server communicatie van OAuth ClientID met de auteursinstantie van AEM.
 
 ### Sample NodeJS-toepassing
 
@@ -505,5 +509,5 @@ De belangrijkste callouts van de code van de steekproeftoepassing NodeJS zijn:
 
 ## Samenvatting
 
-In deze zelfstudie hebt u geleerd hoe u op OpenAPI gebaseerde AEM-API&#39;s kunt aanroepen vanuit aangepaste toepassingen. U hebt AEM APIs-toegang ingeschakeld en een Adobe Developer Console-project (ADC) gemaakt en geconfigureerd.
-In het ADC-project hebt u de AEM-API&#39;s toegevoegd, het verificatietype geconfigureerd en het productprofiel gekoppeld. U vormde ook de AEM instantie om de communicatie van het Project van ADC toe te laten en ontwikkelde een toepassing van de steekproef NodeJS die de Auteur API van Assets roept.
+In deze zelfstudie hebt u geleerd hoe u op OpenAPI gebaseerde AEM API&#39;s kunt aanroepen vanuit aangepaste toepassingen. U hebt toegang tot AEM API&#39;s ingeschakeld, een Adobe Developer Console-project (ADC) gemaakt en geconfigureerd.
+In het ADC-project hebt u de AEM API&#39;s toegevoegd, het verificatietype van de API geconfigureerd en het productprofiel gekoppeld. U hebt de AEM-instantie ook geconfigureerd om ADC-projectcommunicatie in te schakelen en een voorbeeld-NodeJS-toepassing ontwikkeld die de Assets Author API aanroept.
