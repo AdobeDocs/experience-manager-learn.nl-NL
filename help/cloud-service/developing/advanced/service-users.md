@@ -1,6 +1,6 @@
 ---
 title: Servicegebruikers
-description: Leer hoe u servicegebruikers in uw AEM code kunt maken en gebruiken om gecontroleerde, programmatische toegang tot de AEM opslagplaats te bieden.
+description: Leer hoe u servicegebruikers in uw AEM-code kunt maken en gebruiken om gecontroleerde, programmatische toegang tot de AEM-opslagplaats te bieden.
 version: Cloud Service
 topic: Development
 feature: OSGI, Security
@@ -11,16 +11,16 @@ thumbnail: 337530.jpeg
 last-substantial-update: 2022-10-10T00:00:00Z
 exl-id: 66f627e4-863d-45d7-bc68-7ec108a1c271
 duration: 1053
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 7d114e59c0fb975994540e0af2e3d31a09c5a38f
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '96'
 ht-degree: 1%
 
 ---
 
 # Servicegebruikers
 
-Leer hoe u servicegebruikers in uw AEM code kunt maken en gebruiken om gecontroleerde, programmatische toegang tot de AEM opslagplaats te bieden.
+Leer hoe u servicegebruikers in uw AEM-code kunt maken en gebruiken om gecontroleerde, programmatische toegang tot de AEM-opslagplaats te bieden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337530?quality=12&learn=on)
 
@@ -121,6 +121,8 @@ public class ContentStatisticsImpl implements ContentStatistics {
 ```
 
 ### org.apache.sling.jcr.repoinit.RepositoryInitializer-wknd-examples-statistics.config
+
+Niet alle Sling Repository Initializer-instructies worden ondersteund met de extensie `.config` , zoals `ACLOptions` . Als u geavanceerde instructies wilt gebruiken, gebruikt u de `.cfg.json` -indeling, waarbij elke regel van de instructie Stling Repository Initializer een afzonderlijke letterlijke tekenreeks is.
 
 `/ui.config/src/main/content/jcr_root/apps/wknd-examples/osgiconfig/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-wknd-examples-statistics.config`
 
