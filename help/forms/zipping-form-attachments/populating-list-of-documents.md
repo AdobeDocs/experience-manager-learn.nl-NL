@@ -1,6 +1,6 @@
 ---
 title: Aangepaste processtap om lijstvariabelen te vullen
-description: Aangepaste processtap voor het invullen van lijstvariabelen van het type document en tekenreeks
+description: Leer hoe u een aangepaste processtap maakt om lijstvariabelen van het type document en tekenreeks in Adobe Experience Manager in te vullen.
 feature: Workflow
 topic: Development
 version: 6.5
@@ -9,28 +9,29 @@ level: Beginner
 kt: kt-8063
 exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
+
 # Aangepaste processtap
 
+Deze gids zal u door het creëren van een stap van het douaneproces lopen om lijstvariabelen van het typeLijst van de Serie met gehechtheid en gehechtheidsnamen in Adobe Experience Manager te bevolken. Deze variabelen zijn essentieel voor de workflowcomponent E-mail verzenden.
 
-Er is een aangepaste processtap geïmplementeerd om workflowvariabelen van het type Array List te vullen met de bijlagen en bijlagenamen. Deze variabele wordt vervolgens gebruikt in de workflowcomponent E-mail verzenden. Als u niet vertrouwd met het creëren van bundel OSGi bent, gelieve [ deze instructies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en) te volgen
+Als u met het creëren van een bundel OSGi onbekend bent, volg deze [ instructies ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
 
-De code in de stap van het douaneproces doet het volgende
+De code in de stap van het douaneproces voert de volgende acties uit:
 
-* Vraag naar alle adaptieve formulierbijlagen in de payload-map. De mapnaam wordt als procesargument doorgegeven aan de processtap.
-
-* Variabele voor `listOfDocuments` workflow invullen
-* Variabele voor `attachmentNames` workflow invullen
-* De waarde van een workflowvariabele instellen (`no_of_attachments`)
+1. Hiermee wordt gevraagd om alle adaptieve formulierbijlagen in de payload-map. De mapnaam wordt als een procesargument aan de stap doorgegeven.
+2. Hiermee wordt de `listOfDocuments` workflowvariabele gevuld.
+3. Hiermee wordt de `attachmentNames` workflowvariabele gevuld.
+4. Hiermee wordt de waarde van de workflowvariabele `no_of_attachments` ingesteld.
 
 ```java
- package com.aemforms.formattachments.core;
+package com.aemforms.formattachments.core;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -57,9 +58,8 @@ import com.day.cq.search.result.SearchResult;
 
 @Component(property = {
         Constants.SERVICE_DESCRIPTION + "=PopulateListOfDocuments",
-        "process.label" + "=PopulateListOfDocuments"
+        "process.label=PopulateListOfDocuments"
 })
-
 public class PopulateListOfDocuments implements WorkflowProcess {
 
         private static final Logger log = LoggerFactory.getLogger(PopulateListOfDocuments.class);
@@ -70,7 +70,7 @@ public class PopulateListOfDocuments implements WorkflowProcess {
         public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException
         {
                 String payloadPath = workItem.getWorkflowData().getPayload().toString();
-                log.debug("The payload path  is" + payloadPath);
+                log.debug("The payload path is" + payloadPath);
                 MetaDataMap metaDataMap = workItem.getWorkflow().getWorkflowData().getMetaDataMap();
                 Session session = workflowSession.adaptTo(Session.class);
                 Map < String, String > map = new HashMap < String, String > ();
@@ -112,10 +112,11 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Zorg ervoor dat de code werkt met de volgende variabelen in uw workflow
-> *listOfDocuments* - variabele van type ArrayList van Documenten
-> *gehechtheidNames* - variabele van type ArrayList van Koord
-> *no_of_attachments* - variabele van type Double
+> Zorg ervoor dat de code werkt als de volgende variabelen in de workflow zijn gedefinieerd:
+> 
+> - `listOfDocuments`: variabele van het type ArrayList of Documents
+> - `attachmentNames`: variabele van het type ArrayList of String
+> - `no_of_attachments`: variabele van het type Double
 
 ## Volgende stappen
 
