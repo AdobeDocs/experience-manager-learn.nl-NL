@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
+source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1377'
 ht-degree: 4%
 
 ---
@@ -17,29 +17,29 @@ ht-degree: 4%
 # Tutorials voor Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Overzicht](./overview.md)
-+ AEM {#aem-trials}
++ AEM-proefversies {#aem-trials}
    + [Afbeeldingen](./aem-trials/images.md)
 + Afspeellijsten {#playlists}
-   + [AEM](./playlists/development.md)
+   + [AEM-ontwikkeling](./playlists/development.md)
 + Inleiding tot AEM as a Cloud Service {#introduction}
    + [Wat is AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Architectuur](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Strategie en leiderschap bij gedachte {#strategy}
-      + [Experience Manager - Bestuur en personeelsmodellen en archetypen](./introduction/experience-manager-governance-and-staffing-models.md)
+      + [Experience Manager - Governance en personeelsmodellen en archetypen](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Snelheid van inhoud besturen met Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
-+ Integraties van Experiencen Cloud {#integrations}
++ Experience Cloud-integratie {#integrations}
    + [Integrations](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
 + Onderliggende technologie {#underlying-technology}
-   + [AEM architectuur](./underlying-technology/introduction-architecture.md)
+   + [AEM-architectuur](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Java Content Repository](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
-   + [Auteur en Publish Services](./underlying-technology/introduction-author-publish.md)
+   + [Auteur- en publicatieservices](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [ de insteekmodule van de Sidekick van AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html) {target=_blank}
+   + [ AEM Assets Sidekick plugin ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html) {target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programma&#39;s](./cloud-manager/programs.md)
    + [Omgevingen](./cloud-manager/environments.md)
@@ -59,7 +59,7 @@ ht-degree: 4%
 + Local Development Environment Setup {#local-development-environment-set-up}
    + [Overzicht](./local-development-environment/overview.md)
    + [Ontwikkelingsinstrumenten](./local-development-environment/development-tools.md)
-   + [Lokale AEM SDK](./local-development-environment/aem-runtime.md)
+   + [Local AEM SDK](./local-development-environment/aem-runtime.md)
    + [Lokale Dispatcher-gereedschappen](./local-development-environment/dispatcher-tools.md)
 + Ontwikkelen {#developing}
    + Uitbreidbaarheid {#extensibility}
@@ -90,14 +90,14 @@ ht-degree: 4%
    + Grondbeginselen van ontwikkeling {#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Lokale ontwikkelomgeving](./developing/basics/local-development-environment.md)
-      + [Projectarchetype AEM](./developing/basics/aem-project-archetype.md)
-      + [AEM projectstructuur](./developing/basics/project-structure.md)
+      + [AEM Project Archetype](./developing/basics/aem-project-archetype.md)
+      + [AEM-projectstructuur](./developing/basics/project-structure.md)
       + [Mutable versus Immuable Content](./developing/basics/mutable-immutable.md)
       + [Structuurpakket opslagplaats](./developing/basics/repository-structure-package.md)
       + [Inhoud publiceren](./developing/basics/content-publishing.md)
       + [OSGi-configuraties](./developing/basics/osgi-configurations.md)
       + [Dispatcher-configuratiemigratie](./developing/basics/dispatcher-configuration.md)
-   + AEM projecten {#aem-projects}
+   + AEM-projecten {#aem-projects}
       + [AEM Maven Project](./developing/projects/maven-project-structure.md)
       + [Een AEM Maven-project opschonen](./developing/projects/remove-samples.md)
    + OSGi Services {#osgi-services}
@@ -113,7 +113,7 @@ ht-degree: 4%
       + [Geheimen](./developing/advanced/secrets.md)
       + [Servicegebruikers](./developing/advanced/service-users.md)
       + [Web-geoptimaliseerde beeld APIs](./developing/advanced/web-optimized-image-delivery-java-apis.md)
-      + [Taak uitvoeren op instantie leader in AEM auteur](./developing/advanced/run-job-on-leader-instance-in-aem-author.md)
+      + [Taak uitvoeren op instantie leader in AEM Auteur](./developing/advanced/run-job-on-leader-instance-in-aem-author.md)
    + Snelle ontwikkelomgeving {#rde}
       + [Overzicht](./developing/rde/overview.md)
       + [Hoe kan ik-instellingen](./developing/rde/how-to-setup.md)
@@ -125,7 +125,7 @@ ht-degree: 4%
          + [Instelling voor lokale ontwikkeling](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrument React App](./developing/universal-editor/react-app/instrument-to-edit-content.md)
    + [ AEM SDK API JavaDocs ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html) {target=_blank}
-+ Foutopsporing AEM{#debugging}
++ Foutopsporing in AEM {#debugging}
    + Fouten opsporen in de AEM SDK {#debugging-aem-sdk}
       + [Overzicht](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Logboeken](./debugging/aem-sdk-local-quickstart/logs.md)
@@ -141,13 +141,19 @@ ht-degree: 4%
       + [Browser voor opslagplaats](./debugging/cloud-service/repository-browser.md)
       + Risks {#risks}
          + [Traversale waarschuwingen](./debugging/cloud-service/risks/traversals.md)
-+ API&#39;s AEM {#aem-apis}
++ AEM API&#39;s {#aem-apis}
    + [Overzicht](./apis/overview.md)
-   + [Op OpenAPI gebaseerde AEM API&#39;s (server-naar-server)](./apis/invoke-openapi-based-aem-apis.md)
-   + [Op OpenAPI gebaseerde AEM-API&#39;s (door de gebruiker geverifieerd)](./apis/invoke-openapi-based-aem-apis-from-web-app.md)
+   + OpenAPIs {#openapis}
+      + [Overzicht](./apis/openapis/overview.md)
+      + [Hoe kan ik-instellingen](./apis/openapis/setup.md)
+      + [Server-naar-server verificatie](./apis/openapis/use-cases/invoke-api-using-oauth-s2s.md)
+      + [Gebruikersverificatie (webtoepassing)](./apis/openapis/use-cases/invoke-api-using-oauth-web-app.md)
+      + Procedure {#how-to}
+         + [Referenties en productprofielbeheer](./apis/openapis/how-to/credentials-and-product-profile-management.md)
+         + [Machtigingsbeheer](./apis/openapis/how-to/services-user-group-permission-management.md)
 + Inhoud leveren {#content-delivery}
    + [Aangepaste domeinnaam](./content-delivery/custom-domain-names.md)
-   + [De domeinnaam van de douane met Adobe beheerde CDN](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
+   + [Aangepaste domeinnaam met door Adobe beheerde CDN](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
    + [Aangepaste domeinnaam met CDN van klant](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
    + [ Caching ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview) {target=_blank}
    + [ Adobe CDN - voorbij caching ](./content-delivery/adobe-cdn-beyond-caching.md)
@@ -155,8 +161,8 @@ ht-degree: 4%
    + [ opnieuw richt URL ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html) {target=_blank}
 + Caching{#caching}
    + [Overzicht](./caching/overview.md)
-   + [AEM Publish-service](./caching/publish.md)
-   + [AEM Auteur-service](./caching/author.md)
+   + [AEM-publicatieservice](./caching/publish.md)
+   + [AEM Author-service](./caching/author.md)
    + [Analyse van hoogte-breedteverhouding CDN-cache](./caching/cdn-cache-hit-ratio-analysis.md)
    + Procedure {#how-to}
       + [Opslaan in cache inschakelen](./caching/how-to/enable-caching.md)
@@ -167,8 +173,8 @@ ht-degree: 4%
    + [Adobe IMS-gebruikers](./accessing/adobe-ims-users.md)
    + [Adobe IMS-gebruikersgroepen](./accessing/adobe-ims-user-groups.md)
    + [Adobe IMS-productprofielen](./accessing/adobe-ims-product-profiles.md)
-   + [AEM gebruikers, groepen en machtigingen](./accessing/aem-users-groups-and-permissions.md)
-   + [Toegang tot AEM doorlopen configureren](./accessing/walk-through.md)
+   + [AEM-gebruikers, -groepen en -machtigingen](./accessing/aem-users-groups-and-permissions.md)
+   + [Toegang tot AEM-doorloop configureren](./accessing/walk-through.md)
 + Verificatie {#authentication}
    + [Overzicht](./authentication/authentication.md)
    + [SAML 2.0](./authentication/saml-2-0.md)
@@ -190,13 +196,13 @@ ht-degree: 4%
       + [Hoe kan ik-instellingen](./security/traffic-filter-rules/how-to-setup.md)
       + [Voorbeelden en resultaatanalyse](./security/traffic-filter-rules/examples-and-analysis.md)
       + [Aanbevolen procedures](./security/traffic-filter-rules/best-practices.md)
-+ AEM {#aem-eventing}
++ AEM Event {#aem-eventing}
    + [Overzicht](./eventing/overview.md)
    + Voorbeelden {#examples}
-      + [Webhaak - Ontvang AEM gebeurtenissen](./eventing/examples/webhook.md)
-      + [Journaling - AEM gebeurtenissen laden](./eventing/examples/journaling.md)
-      + [Adobe I/O Runtime-actie - AEM gebeurtenissen ontvangen](./eventing/examples/runtime-action.md)
-      + [Adobe I/O Runtime-actie - Procesgebeurtenissen AEM](./eventing/examples/event-processing-using-runtime-action.md)
+      + [Webhaak - AEM-gebeurtenissen ontvangen](./eventing/examples/webhook.md)
+      + [Journaling - AEM-gebeurtenissen laden](./eventing/examples/journaling.md)
+      + [Adobe I/O Runtime-actie - AEM-gebeurtenissen ontvangen](./eventing/examples/runtime-action.md)
+      + [Adobe I/O Runtime-actie - AEM-gebeurtenissen verwerken](./eventing/examples/event-processing-using-runtime-action.md)
       + [AEM Assets Events - PIM-integratie](./eventing/examples/assets-pim-integration.md)
 + Migratie {#migration}
    + [Inhoud overbrengen](./migration/content-transfer-tool.md)
@@ -206,9 +212,9 @@ ht-degree: 4%
       + [Onboarding](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
       + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA en CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
-      + [AEM Moderniseringsinstrumenten](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
+      + [AEM-moderniseringsgereedschappen](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernisering opslagplaats](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [Asset compute microservices](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [Asset Compute Microservices](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [Zoeken en indexeren](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Inhoud migreren {#content-migration}
@@ -237,12 +243,12 @@ ht-degree: 4%
       + [1 - Aan de slag](./forms/developing-for-cloud-service/getting-started.md)
       + [2 - Installeer IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
       + [3 - Instellingsopening](./forms/developing-for-cloud-service/setup-git.md)
-      + [4 - Sync IntelliJ met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [4 - Synchroniseer IntelliJ met AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [5 - Een formulier maken](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Aangepaste verzendhandler](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - servlet registreren met behulp van brontype](./forms/developing-for-cloud-service/registering-servlet-using-resourcetype.md)
       + [8 - Forms Portal-componenten inschakelen](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [9 - Inclusief Cloud Servicen en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [9 - Inclusief cloudservices en FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [10 - cloudconfiguratie met behoud van context](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [11 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [12 - Distribueren naar ontwikkelomgeving](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
@@ -317,7 +323,7 @@ ht-degree: 4%
       + [JWT-token maken](./forms/forms-cs-assembler/create-jwt.md)
       + [Toegangstoken maken](./forms/forms-cs-assembler/create-access-token.md)
       + [PDF-bestanden samenstellen](./forms/forms-cs-assembler/assemble-pdf-files.md)
-      + [PDF/A-hulpprogramma](./forms/forms-cs-assembler/pdfa-utilities.md)
+      + [PDF/A-hulpprogramma&#39;s](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [De oplossing testen](./forms/forms-cs-assembler/test.md)
       + [Uitdaging](./forms/forms-cs-assembler/challenge.md)
    + Integreren met Marketo {#froms-cs-with-marketo}
@@ -382,14 +388,14 @@ ht-degree: 4%
       + [Formuliergegevens opslaan in SharePoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [Formulier vooraf invullen met gegevens uit SharePoint-lijst](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
       + [Gegevens in SharePoint-lijst invoegen met behulp van workflow](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
-+ Uitbreidbaarheid asset compute {#asset-compute}
++ Uitbreidbaarheid Asset Compute {#asset-compute}
    + [Overzicht](./asset-compute/overview.md)
    + Instellen {#set-up}
       + [Account en service-provisioning](./asset-compute/set-up/accounts-and-services.md)
       + [Lokale ontwikkelomgeving](./asset-compute/set-up/development-environment.md)
       + [App Builder](./asset-compute/set-up/app-builder.md)
    + Ontwikkelen {#develop}
-      + [Een Asset compute maken](./asset-compute/develop/project.md)
+      + [Een Asset Compute-project maken](./asset-compute/develop/project.md)
       + [Omgevingsvariabelen configureren](./asset-compute/develop/environment-variables.md)
       + [Vorm manifest.yml](./asset-compute/develop/manifest.md)
       + [Een worker ontwikkelen](./asset-compute/develop/worker.md)
@@ -404,10 +410,10 @@ ht-degree: 4%
       + [Metagegevensworkers](./asset-compute/advanced/metadata.md)
    + [Problemen oplossen](./asset-compute/troubleshooting.md)
 
-+ Tutorials met meerdere stappen {#multi-step-tutorials}
++ Zelfstudies met meerdere stappen {#multi-step-tutorials}
    + [ de ontwikkeling van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) {target=_blank}
    + [ GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) {target=_blank}
-   + [ SPA Redacteur (Reageren) ](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html) {target=_blank}
+   + [ Redacteur van het KUUROORD (Reageren) ](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html) {target=_blank}
    + [ AEM Sites en Adobe Target ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html) {target=_blank}
    + [ Op token-gebaseerde authentificatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) {target=_blank}
 + Expert Resources {#expert-resources}
@@ -415,7 +421,7 @@ ht-degree: 4%
       + [Cloud Manager on boarding Playbook](./expert-resources/aem-champions/onboarding-playbook.md)
       + [Cloud Manager-omgevingstypen](./expert-resources/aem-champions/environment-types.md)
       + [CLOUD MANAGER UI](./expert-resources/aem-champions/cloud-manager-ui.md)
-   + [AEM Deskundigenreeks](./expert-resources/expert-series/aem-experts-series.md)
+   + [AEM Experts-reeks](./expert-resources/expert-series/aem-experts-series.md)
    + Wolk 5 {#cloud-5}
       + [Inleiding](./expert-resources/cloud-5/cloud5-introduction.md)
       + [Seizoen 4](./expert-resources/cloud-5/cloud5-season-4.md)
@@ -424,7 +430,7 @@ ht-degree: 4%
       + [Seizoen 1](./expert-resources/cloud-5/cloud5-season-1.md)
       + [AEM CDN Deel 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
       + [AEM CDN Deel 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
-      + [Logbestanden AEM](./expert-resources/cloud-5/cloud5-aem-log-files.md)
+      + [AEM-logbestanden](./expert-resources/cloud-5/cloud5-aem-log-files.md)
       + [Aanmeldingspunten](./expert-resources/cloud-5/cloud5-getting-login-token-integrations.md)
       + [Cloud Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-cloud.md)
       + [Migratie 1](./expert-resources/cloud-5/cloud5-aem-content-migration-part-1.md)
@@ -445,7 +451,7 @@ ht-degree: 4%
       + Seizoen 3 {#season-3}
          + [Zoeken van derden](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [Edge Workers](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
-         + [Publish, publiceren van gebeurtenissen in Edge Delivery Services ongedaan maken](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
+         + [Publiceren, publicatie van gebeurtenissen in Edge Delivery Services ongedaan maken](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Query-indexen en Excel-formules](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [Uw eigen CDN van Cloudflare maken](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
          + [AEM Assets integreren](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
