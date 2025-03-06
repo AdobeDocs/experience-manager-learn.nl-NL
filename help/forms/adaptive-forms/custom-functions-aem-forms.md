@@ -10,7 +10,7 @@ jira: KT-9685
 exl-id: 07fed661-0995-41ab-90c4-abde35a14a4c
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 286
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: a72f533b36940ce735d5c01d1625c6f477ef4850
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -44,18 +44,11 @@ Kopieer de volgende code naar functions.js en sla uw wijzigingen op.
 /**
 * Get List of County names
 * @name getCountyNamesList Get list of county names
-* @return {OPTIONS} drop down options 
+* @returns {string[]} An array of county names
  */
 function getCountyNamesList()
 {
-    var countyNames= [];
-    countyNames[0] = "Santa Clara";
-    countyNames[1] = "Alameda";
-    countyNames[2] = "Buxor";
-    countyNames[3] = "Contra Costa";
-    countyNames[4] = "Merced";
-
-    return countyNames;
+    return ["Santa Clara", "Alameda", "Buxor", "Contra Costa", "Merced"];
 
 }
 /**
@@ -87,7 +80,7 @@ functions.js
 De regel #base=js geeft aan in welke map de JavaScript-bestanden zich bevinden.
 De onderstaande regels geven de locatie van het JavaScript-bestand aan ten opzichte van de basislocatie.
 
-Als u problemen in het creëren van de douanefuncties hebt, voel vrij om [ dit pakket ](assets/custom-functions.zip) in uw AEM instantie te downloaden en te installeren.
+Als u in het creëren van de douanefuncties problemen hebt, voel vrij om [ dit pakket ](assets/custom-functions.zip) in uw instantie van AEM te downloaden en te installeren.
 
 ## De aangepaste functies gebruiken
 

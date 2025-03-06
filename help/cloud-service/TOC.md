@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+source-git-commit: a72f533b36940ce735d5c01d1625c6f477ef4850
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1387'
 ht-degree: 4%
 
 ---
@@ -309,8 +309,12 @@ ht-degree: 4%
       + [Gegevens samenvoegen met sjabloon](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [De oplossing testen](./forms/doc-gen-forms-cs/test.md)
       + [Uitdaging](./forms/doc-gen-forms-cs/challenge.md)
-   + DocAssurance API gebruiken {#doc-assurance-api}
-      + [Voorbeeldcodefragmenten](./forms/doc-assurance-api/using-doc-assurance-api.md)
+   + Forms Document Services API gebruiken {#forms-document-services-api}
+      + [Inleiding](./forms/forms-document-services/introduction.md)
+      + [OpenAPI configureren](./forms/forms-document-services/using-open-api.md)
+      + [Toegangstoken genereren](./forms/forms-document-services/generate-access-token.md)
+      + [Gebruiksrechten toepassen](./forms/forms-document-services/make-api-calls.md)
+      + [Voorbeeldcode](./forms/forms-document-services/sample-project.md)
    + Documentgeneratie met gebruik van batch-API {#formscs-batch-api}
       + [Inleiding](./forms/formscs-batch-api/introduction.md)
       + [Azure-opslag configureren](./forms/formscs-batch-api/configure-azure-storage.md)
