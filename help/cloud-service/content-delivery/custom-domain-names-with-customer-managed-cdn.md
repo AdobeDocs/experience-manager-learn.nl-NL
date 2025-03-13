@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 98f1996dbeb6a683f98ae654e8fa13f6c7a2f9b2
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Leer hoe te om een naam van het douanedomein aan een website van AEM as a Cloud Service toe te voegen die a **klant-geleide CDN** gebruikt.
 
-In dit leerprogramma, wordt het branding van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats verbeterd door een HTTPS-Adressable naam van het douanedomein `wkndviaawscdn.enablementadobe.com` met de Veiligheid van de Laag van het Vervoer (TLS) toe te voegen gebruikend een klant-beheerde CDN. In deze zelfstudie wordt AWS CloudFront gebruikt als door de klant beheerde CDN, maar elke CDN-provider moet compatibel zijn met AEM as a Cloud Service.
+In dit leerprogramma, wordt het branding van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats verbeterd door een HTTPS-adresseerbare naam van het douanedomein `wkndviaawscdn.enablementadobe.com` met de Veiligheid van de Laag van het Vervoer (TLS) toe te voegen gebruikend een klant-beheerde CDN. In deze zelfstudie wordt AWS CloudFront gebruikt als door de klant beheerde CDN, maar elke CDN-provider moet compatibel zijn met AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432561?quality=12&learn=on)
 
@@ -40,8 +40,8 @@ De stappen op hoog niveau zijn:
    - De Autoriteit van het certificaat (CA) - om het ondertekende certificaat voor uw plaatsdomein, als [ DigitCert ](https://www.digicert.com/) te verzoeken
    - CDN van de klant - aan opstelling CDN van de klant en voeg SSL certificaten en domeindetails toe, zoals AWS CloudFront, Azure CDN, of Akamai.
    - De het ontvangen dienst van het Systeem van de Naam van het domein (DNS) - om DNS verslagen voor uw douanedomein, zoals Azure DNS, of Route 53 van AWS toe te voegen.
-- De toegang tot [ Adobe Cloud Manager ](https://my.cloudmanager.adobe.com/) om de regel van CDN van de bevestiging van de Kopbal van HTTP op het milieu van AEM as a Cloud Service op te stellen.
-- De steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) plaats wordt opgesteld aan het milieu van AEM as a Cloud Service van [ het type van het productieprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- De toegang tot [ Cloud Manager van Adobe ](https://my.cloudmanager.adobe.com/) om de bevestigingsregel CDN van de Kopbal van HTTP op te stellen aan het milieu van AEM as a Cloud Service.
+- De plaats van de steekproef [ AEM WKND ](https://github.com/adobe/aem-guides-wknd) wordt opgesteld aan het milieu van AEM as a Cloud Service van [ het type van het productieprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Als u geen toegang tot derdediensten hebt, _samenwerken met uw veiligheid of het ontvangen team om de stappen_ te voltooien.
 
@@ -76,7 +76,7 @@ $ openssl crl2pkcs7 -nocrl -certfile <YOUR-SIGNED-CERT>.crt | openssl pkcs7 -pri
 
 Het ondertekende certificaat kan de certificaatketen bevatten, die de basis- en tussenliggende certificaten bevat, samen met het certificaat van de eindentiteit.
 
-De Adobe Cloud Manager keurt het eindentiteitcertificaat en de certificaatketting _in afzonderlijke vormgebieden_ goed, zodat moet u het eindentiteitcertificaat en de certificaatketting van het ondertekende certificaat halen.
+Adobe Cloud Manager keurt het eindentiteitcertificaat en de certificaatketting _in afzonderlijke vormgebieden_ goed, zodat moet u het eindentiteitcertificaat en de certificaatketting van het ondertekende certificaat halen.
 
 In dit leerprogramma, wordt het ](https://www.digicert.com/) ondertekende certificaat DigitCert [ dat tegen `*.enablementadobe.com` domein wordt uitgegeven gebruikt als voorbeeld. De eindentiteit- en certificaatketen wordt geëxtraheerd door het ondertekende certificaat te openen in een teksteditor en de inhoud te kopiëren tussen de markeringen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` .
 
@@ -90,7 +90,7 @@ Stel de CDN van de klant in, zoals AWS CloudFront, Azure CDN of Akamai, en voeg 
 - Voeg de aangepaste domeinnaam toe aan de CDN.
 - Configureer de CDN om de inhoud in cache te plaatsen, zoals afbeeldingen, CSS- en JavaScript-bestanden.
 - Voeg de header `X-Forwarded-Host` HTTP toe aan de CDN-instellingen, zodat de CDN deze header opneemt in alle aanvragen die het naar de AEMCD-oorsprong verzendt.
-- Zorg ervoor dat de headerwaarde `Host` is ingesteld op het standaard AEM as a Cloud Service-domein met de programma- en omgeving-id en dat eindigt met `adobeaemcloud.com` . De HTTP-hostheaderwaarde die door de klant CDN wordt doorgegeven aan de Adobe CDN, moet het standaard AEM as a Cloud Service-domein zijn. Elke andere waarde resulteert in een foutstatus.
+- Zorg ervoor dat de headerwaarde `Host` is ingesteld op het standaard AEM as a Cloud Service-domein met de programma- en omgeving-id en dat eindigt met `adobeaemcloud.com` . De HTTP-hostheaderwaarde die door de CDN van de klant aan de CDN van de Adobe wordt doorgegeven, moet het standaard AEM as a Cloud Service-domein zijn. Elke andere waarde resulteert in een foutstatus.
 
 ## DNS-records configureren
 
@@ -113,7 +113,7 @@ Een cruciale beveiligingsstap is het implementeren van de CDN-regel voor HTTP-he
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432565?quality=12&learn=on)
 
-Zonder de CDN-regel voor HTTP-headervalidatie wordt de `Host` -headerwaarde ingesteld op het standaard AEM as a Cloud Service-domein dat de programma- en milieu-id bevat en eindigt met `adobeaemcloud.com` . Adobe CDN transformeert de headerwaarde `Host` alleen naar de waarde van de `X-Forwarded-Host` die van de CDN-naam van de klant is ontvangen als de CDN-regel voor HTTP-headervalidatie is geïmplementeerd. Anders wordt de headerwaarde van `Host` op dezelfde manier doorgegeven aan de AEM as a Cloud Service-omgeving en wordt de header van `X-Forwarded-Host` niet gebruikt.
+Zonder de CDN-regel voor HTTP-headervalidatie wordt de `Host` -headerwaarde ingesteld op het standaard AEM as a Cloud Service-domein dat de programma- en milieu-id bevat en eindigt met `adobeaemcloud.com` . Adobe CDN transformeert de headerwaarde `Host` alleen naar de waarde van de `X-Forwarded-Host` die wordt ontvangen van de CDN van de klant als de CDN-regel voor HTTP-headervalidatie wordt geïmplementeerd. Anders wordt de headerwaarde van `Host` op dezelfde manier doorgegeven aan de AEM as a Cloud Service-omgeving en wordt de header van `X-Forwarded-Host` niet gebruikt.
 
 ### Voorbeeldservletcode om de headerwaarde van de host af te drukken
 
@@ -201,16 +201,16 @@ Voer de volgende stappen uit om de CDN-regel voor HTTP-headervalidatie te config
   kind: "CDN"
   version: "1"
   metadata:
-  envTypes: ["prod"]
+    envTypes: ["prod"]
   data:
-  authentication:
+    authentication:
       authenticators:
-      - name: edge-auth
+        - name: edge-auth
           type: edge
           edgeKey1: ${{CDN_EDGEKEY_080124}}
           edgeKey2: ${{CDN_EDGEKEY_110124}}
       rules:
-      - name: edge-auth-rule
+        - name: edge-auth-rule
           when: { reqProperty: tier, equals: "publish" }
           action:
           type: authenticate
@@ -220,11 +220,11 @@ Voer de volgende stappen uit om de CDN-regel voor HTTP-headervalidatie te config
 - Creeer geheim-type milieuvariabelen (CDN_EDGEKEY_080124, CDN_EDGEKEY_110124) gebruikend Cloud Manager UI.
 - Implementeer de CDN-regel voor HTTP-headervalidatie in de AEM as a Cloud Service-omgeving met behulp van de Cloud Manager-pijplijn.
 
-## Geef het geheim in de X-AEM-Edge-Zeer belangrijke Kopbal van HTTP door
+## Geef het geheim door in de X-AEM-Edge-Key HTTP-header
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
-Werk de CDN van de klant bij om het geheim in de `X-AEM-Edge-Key` Kopbal van HTTP over te gaan. Het geheim wordt gebruikt door Adobe CDN om het verzoek te bevestigen komt van klant CDN en zet de `Host` kopbalwaarde in de waarde van `X-Forwarded-Host` om die van klant CDN wordt ontvangen.
+Werk de CDN van de klant bij om het geheim in de `X-AEM-Edge-Key` Kopbal van HTTP over te gaan. Het geheim wordt gebruikt door CDN van Adobe om te bevestigen het verzoek komt van CDN van de klant en zet de `Host` kopbalwaarde in de waarde van `X-Forwarded-Host` om die van CDN van de klant wordt ontvangen.
 
 ## Video beëindigen tot einde
 
