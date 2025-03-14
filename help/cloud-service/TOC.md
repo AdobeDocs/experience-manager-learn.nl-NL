@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: a72f533b36940ce735d5c01d1625c6f477ef4850
+source-git-commit: a11dd10cedbc8e77fa23d128562d6b3a3ae23c14
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1389'
 ht-degree: 4%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 4%
    + [Niet-productiepijpleiding CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activiteit](./cloud-manager/activity.md)
    + [ Namen van het Domein van de Douane ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names) {target=_blank}
+   + [ Inhoud herstelt ](./cloud-manager/content-restore.md)
    + OPS ontwikkelen {#devops}
       + [Code implementeren](./cloud-manager/devops/deploy-code.md)
       + [Projecten samenvoegen](./cloud-manager/devops/merge-projects.md)
