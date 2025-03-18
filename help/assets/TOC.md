@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: efaf77a9f8e68f679be3469c39697b57366684b3
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 6%
 
 ---
@@ -60,9 +60,9 @@ ht-degree: 6%
 
 + Geavanceerde mogelijkheden {#advanced}
    + [ 3D activa ](./advanced/3d-assets.md)
-   + [PDF-uitvoer van annotaties](./advanced/customizing-annotations-pdf-output.md)
+   + [Annotaties PDF-uitvoer](./advanced/customizing-annotations-pdf-output.md)
    + [Assets-rapporten](./advanced/asset-reports.md)
-   + [Content credentials](./advanced/content-credentials.md)
+   + [Inhoudsreferenties](./advanced/content-credentials.md)
    + [Geblokkeerde tags](./advanced/blocked-tags.md)
    + [Archief extraheren](./advanced/extract-archive.md)
    + [Machtigingen (CUG&#39;s)](./advanced/closed-user-groups.md)
@@ -87,16 +87,16 @@ ht-degree: 6%
    + [Verzamelingen](./content-hub/collections.md)
    + [Delen](./content-hub/share.md)
 
-+ Edge Delivery Services {#edge-delivery-services}
++ Edge Delivery Services{#edge-delivery-services}
    + [Sidekick-insteekmodule](./edge-delivery-services/sidekick-plugin.md)
 
-+ Adobe GenStudio {#adobe-genstudio}
++ Adobe GenStudio{#adobe-genstudio}
    + [ AEM Assets en GenStudio for Performance Marketing ](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Delen en distributie {#sharing}
    + [Elementen downloaden](./sharing/download.md)
    + [Elementen exporteren](./sharing/export.md)
-   + [Publish-middelen](./sharing/publish.md)
+   + [Elementen publiceren](./sharing/publish.md)
 
    + Brand Portal{#brand-portal}
       + [Brand Portal](./sharing/brand-portal.md)
@@ -105,20 +105,20 @@ ht-degree: 6%
 
    + Elementaandeel {#assets-share}
       + [Commentaar voor het delen van bedrijfsmiddelen](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
-      + [Opdrachten voor het delen van bedrijfsmiddelen instellen op lokale AEM](./sharing/asset-share-commons-technical-video-setup.md)
+      + [Commentaar voor het delen van bedrijfsmiddelen instellen op lokale AEM](./sharing/asset-share-commons-technical-video-setup.md)
       + [Commentaar voor het delen van elementen](./sharing/asset-share-commons-feature-video-theming.md)
       + [Asset Share Commons-assetsets](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Creatieve workflows {#creative-workflows}
++ Creative-workflows {#creative-workflows}
    + [Adobe Express-integratie](./creative-workflows/adobe-express.md)
    + [Adobe Express en AEM Assets](./creative-workflows/adobe-express-aem-assets.md)
-   + [App AEM](./creative-workflows/aem-desktop-app.md)
-   + [Adobe-itemkoppeling](./creative-workflows/adobe-asset-link.md)
+   + [AEM Desktop App](./creative-workflows/aem-desktop-app.md)
+   + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
 + Adobe Asset Link {#adobe-asset-link}
    + [Instellen](./adobe-asset-link/setup.md)
-   + [Koppeling met Adobe-elementen openen](./adobe-asset-link/launch-adobe-asset-link.md)
+   + [Koppeling met Adobe-middelen openen](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Overzicht van deelvensters](./adobe-asset-link/panel-overview.md)
    + [Bestanden en verzamelingen](./adobe-asset-link/files-and-collections.md)
    + [Download en upload](./adobe-asset-link/download-and-upload.md)
@@ -131,14 +131,15 @@ ht-degree: 6%
 
 + Inhoud automatiseren {#content-automation}
    + [Overzicht](./content-automation/overview.md)
-   + [Creatieve bewerkingen](./content-automation/creative-operations.md)
+   + [Creative-bewerkingen](./content-automation/creative-operations.md)
    + [Photoshop-acties](./content-automation/photoshop-actions.md)
 
-+ Dynamic Media{#dynamic-media}
-   + [Dynamic Media-overzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
++ Dynamische media {#dynamic-media}
+   + [Dynamisch mediaoverzicht](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Dynamic Media Classic Desktop-toepassing](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Afbeeldingen {#images}
-      + [Dynamic Media-momentopname](dynamic-media/dynamic-media-snapshot.md)
+      + [Dynamische mediasjablonen](dynamic-media/dynamic-media-templates.md)
+      + [Dynamische mediaopname](dynamic-media/dynamic-media-snapshot.md)
       + [Slim uitsnijden](dynamic-media/smart-crop-feature-video-use.md)
       + [Afbeelding verscherpen](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [ het beheer van de Kleur ](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
@@ -146,19 +147,19 @@ ht-degree: 6%
       + [360 video](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
       + [Aangepaste videominiaturen](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
       + [Aangepaste DASH-streaming](dynamic-media/dynamic-media-dash.md)
-      + [Dynamic Media Smart Crop-video](dynamic-media/dynamic-media-smart-crop-video.md)
+      + [Video over Smart Crop van dynamische media](dynamic-media/dynamic-media-smart-crop-video.md)
       + [Videospeler](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + Viewers {#viewers}
       + [Viewers](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [Panoramische en verticale beeldviewers](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
       + [Viewers met Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
-      + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
+      + [Dynamische media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + Werken met AEM Sites {#dm-with-aem-sites}
       + [Ervaar fragmenten](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
-      + [Dynamic Media Core-componenten](dynamic-media/dynamic-media-core-components.md)
+      + [Dynamische Media Core-componenten](dynamic-media/dynamic-media-core-components.md)
 
-   + Tutorials {#tutorials}
+   + Zelfstudies {#tutorials}
       + [Carousel-sets maken](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Afbeeldingssets maken](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [Voorinstellingen voor afbeeldingen maken](dynamic-media/tutorials/creating-image-presets.md)
@@ -169,8 +170,8 @@ ht-degree: 6%
       + [URL&#39;s genereren en codes insluiten](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [Een exporttaak activeren](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [De CDN-cache ongeldig maken](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
-      + [Dynamic Media Core-componenten gebruiken](dynamic-media/tutorials/using-dm-components-on-site-page.md)
-      + [Dynamic Media-configuratie verwijderen](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
+      + [Dynamische Media Core-componenten gebruiken](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Dynamische mediaconfiguratie verwijderen](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Assets downloaden in Dynamic Media Classic App](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [Dynamic Media Classic IPS-API&#39;s](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
@@ -178,10 +179,10 @@ ht-degree: 6%
    + Verbeterde connector {#enhanced-connector}
       + [Verbeterde verbindingsgrondbeginselen](./workfront/enhanced-connector/basics.md)
       + [Projectmappen](./workfront/enhanced-connector/project-folders.md)
-      + AEM Deskundigenreeks {#aem-experts-series}
+      + AEM Experts-reeks {#aem-experts-series}
          + [Overzicht](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Instellen](./workfront/enhanced-connector/aem-experts-series/setup.md)
-         + [Workfront-formulieren en AEM metagegevens](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
+         + [Workfront-formulieren en AEM-metagegevens](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
          + [Tags, aan een project gekoppelde mappen en metagegevens van mappen](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
          + [Geavanceerde instellingen en workflows](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 
@@ -197,4 +198,4 @@ ht-degree: 6%
 + Implementatie {#deployment}
    + [Meerdere huurders en gelijktijdige ontwikkeling](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [ Assets Essentials ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html) {target=_blank}
++ [ Hoofdzaak van Activa ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html) {target=_blank}

@@ -1,6 +1,6 @@
 ---
 title: Auteur van een blok
-description: Auteur een blok van Edge Delivery Services met Universele Redacteur.
+description: Schrijf een Edge Delivery Services-blok met Universal Editor.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -9,27 +9,27 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: ca356d38-262d-4c30-83a0-01c8a1381ee6
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
-
 # Auteur van een blok
 
-Na het duwen van JSON ](./5-new-block.md) van het [ laserblok aan de `teaser` tak, wordt het blok editable in de AEM Universele Redacteur.
+Na het duwen van JSON ](./5-new-block.md) van het [ laserblok aan de `teaser` tak, wordt het blok editable in de Universele Redacteur van AEM.
 
 Het ontwerpen van een ontwikkelingsblok is om verschillende redenen belangrijk:
 
 1. Het verifieert dat de definitie en het model van het blok nauwkeurig zijn.
 1. Het stelt ontwikkelaars in staat om de semantische HTML van het blok te herzien, die als basis voor ontwikkeling dient.
-1. Hierdoor kunnen zowel de inhoud als de semantische HTML worden geïmplementeerd in de voorvertoningsomgeving, waardoor de blokontwikkeling sneller verloopt.
+1. Hierdoor kunnen zowel de inhoud als semantische HTML worden geïmplementeerd in de voorvertoningsomgeving, waardoor de blokontwikkeling sneller verloopt.
 
 ## Universal Editor openen met code uit de `teaser` -vertakking
 
-1. Log in bij AEM auteur.
+1. Meld u aan bij AEM Author.
 2. Navigeer aan **Plaatsen** en selecteer de plaats (WKND (Universele Redacteur)) die in het [ vorige hoofdstuk ](./2-new-aem-site.md) wordt gecreeerd.
 
    ![AEM Sites](./assets/6-author-block/open-new-site.png)
@@ -54,11 +54,11 @@ Het ontwerpen van een ontwikkelingsblok is om verschillende redenen belangrijk:
 
    ![ Universele Redacteur - het Blok van de Auteur ](./assets/6-author-block/author-block.png)
 
-8. Na voltooiing creatie, schakelaar aan het vorige browser lusje (AEM Sites Admin), selecteer de pagina van het Taser, klik **leidt Publicaties**, kiest **Voorproef**, en publiceert de veranderingen in het voorproefmilieu. De wijzigingen worden vervolgens gepubliceerd naar het `aem.page` -domein voor de website.
-   ![ AEM Sites - Publish of Voorproef ](./assets/6-author-block/publish-to-preview.png)
+8. Na voltooiing creatie, selecteer **publiceren** knoop in het hoogste recht van Universele Redacteur, kies publiceren aan **Voorproef**, en publiceer de veranderingen in het voorproefmilieu. De wijzigingen worden vervolgens gepubliceerd naar het `aem.page` -domein voor de website.
+   ![ AEM Sites - publiceer of Voorproef ](./assets/6-author-block/publish-to-preview.png)
 
-9. Wacht op de veranderingen om aan voorproef te publiceren, dan de webpagina via [ AEM CLI ](./3-local-development-environment.md#install-the-aem-cli) in [ http://localhost:3000/branches/teaser ](http://localhost:3000/branches/teaser) te openen.
+9. Wacht op de veranderingen om aan voorproef te publiceren, dan open webpage via [ AEM CLI ](./3-local-development-environment.md#install-the-aem-cli) in [ http://localhost:3000/branches/teaser ](http://localhost:3000/branches/teaser).
 
    ![ Lokale Plaats - verfrist zich ](./assets/6-author-block/preview.png)
 
-De inhoud en de semantische HTML van het ontwerpblok zijn nu beschikbaar op de voorvertoningswebsite en zijn klaar voor ontwikkeling met de AEM CLI in de lokale ontwikkelomgeving.
+De inhoud en semantische HTML van het ontwerpblok zijn nu beschikbaar op de voorvertoningswebsite en zijn klaar voor ontwikkeling met de AEM CLI in de lokale ontwikkelomgeving.
