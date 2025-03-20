@@ -1,6 +1,6 @@
 ---
-title: Voorbeelden en resultaatanalyse van de regels van de Filter van het Verkeer met inbegrip van de regels van WAF
-description: Leer diverse regels van de Filter van het Verkeer met inbegrip van de regelvoorbeelden van WAF. Ook, hoe te om de resultaten te analyseren gebruikend de logboeken van CDN van AEM as a Cloud Service (AEMCS).
+title: Voorbeelden en resultaatanalyse van verkeersfilterregels inclusief WAF-regels
+description: Leer verschillende regels van de Filter van het Verkeer met inbegrip van WAF regelvoorbeelden. Ook, hoe te om de resultaten te analyseren gebruikend de logboeken van CDN van AEM as a Cloud Service (AEMCS).
 version: Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -12,32 +12,32 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 532
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 67091c068634e6c309afaf78942849db626128f6
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
 
 ---
 
-# Voorbeelden en resultaatanalyse van verkeersfilterregels inclusief WAF-regels
+# Voorbeelden en resultaatanalyse van verkeersfilterregels, inclusief WAF-regels
 
 Leer hoe te om diverse types van de regels van de verkeersfilter te verklaren en de resultaten te analyseren gebruikend de logboeken van CDN van Adobe Experience Manager as a Cloud Service (AEMCS) en dashboard tooling.
 
-In deze sectie, zult u praktische voorbeelden van de regels van de verkeersfilter, met inbegrip van de regels van WAF onderzoeken. U zult leren om, verzoeken te registreren toe te staan en te blokkeren die op URI (of weg) worden gebaseerd, IP adres, het aantal verzoeken, en verschillende aanvalstypes gebruikend het [ AEM Project van Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+In deze sectie, zult u praktische voorbeelden van de regels van de verkeersfilter, met inbegrip van de regels van WAF onderzoeken. U zult leren om, verzoeken te registreren toe te staan en te blokkeren die op URI (of weg), IP adres, het aantal verzoeken, en verschillende aanvalstypes worden gebaseerd die het [ Project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) gebruiken.
 
 Bovendien zult u ontdekken hoe te om dashboardtooling te gebruiken die de logboeken van AEMCS CDN opneemt om essentiële metriek door Adobe te visualiseren verstrekte steekproefdashboards.
 
-Om zich aan uw specifieke vereisten te richten, kunt u verbeteren en douanedashboards tot stand brengen, waarbij diepgaande inzichten en het optimaliseren van de regelconfiguraties voor uw AEM plaatsen worden verkregen.
+Om aan uw specifieke vereisten te richten, kunt u verbeteren en douanedashboards tot stand brengen, waarbij diepgaande inzichten en optimaliserend de regelconfiguraties voor uw plaatsen van AEM worden verkregen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425404?quality=12&learn=on)
 
 ## Voorbeelden
 
-Laten we verschillende voorbeelden van verkeersfilterregels onderzoeken, waaronder WAF-regels. Zorg ervoor u het vereiste opstellingsproces zoals die in vroeger [ wordt beschreven hoe te opstelling ](./how-to-setup.md) hoofdstuk hebt voltooid en dat u het [ AEM Project van Plaatsen WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) hebt gekloond.
+Laten we verschillende voorbeelden bekijken van verkeersfilterregels, waaronder WAF-regels. Zorg ervoor u het vereiste opstellingsproces zoals die in vroeger [ wordt beschreven hoe te opstelling ](./how-to-setup.md) hoofdstuk hebt voltooid en dat u het [ Project van de Plaatsen van AEM WKND ](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) hebt gekloond.
 
 ### Registratieverzoeken
 
-Begin door **het registreren verzoeken van login WKND en logout wegen** tegen de dienst van AEM Publish.
+Begin door **het registreren verzoeken van login WKND en logout wegen** tegen de publicatiedienst van AEM.
 
 - Voeg de volgende regel toe aan het WKND-projectbestand `/config/cdn.yaml` .
 
@@ -67,11 +67,11 @@ data:
 
 - Leg de wijzigingen vast en duw deze naar de Cloud Manager Git-opslagplaats.
 
-- Stel de veranderingen in het milieu van AEM Dev op gebruikend de de configuratiepijplijn van Cloud Manager [ vroeger gecreeerd ](how-to-setup.md#deploy-rules-through-cloud-manager).`Dev-Config`
+- Stel de veranderingen in het milieu van AEM Dev op gebruikend de Cloud Manager `Dev-Config` configuratiepijplijn [ vroeger gecreeerd ](how-to-setup.md#deploy-rules-through-cloud-manager).
 
   ![ Cloud Manager Config Pipeline ](./assets/cloud-manager-config-pipeline.png)
 
-- Test de regel door u aan te melden en af te melden bij de WKND-site van uw programma op de Publish-service (bijvoorbeeld `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html` ). U kunt `asmith/asmith` gebruiken als gebruikersnaam en wachtwoord.
+- Test de regel door u aan te melden en af te melden bij de WKND-site van uw programma op de service Publiceren (bijvoorbeeld `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html` ). U kunt `asmith/asmith` gebruiken als gebruikersnaam en wachtwoord.
 
   ![ Login WKND ](./assets/wknd-login.png)
 
@@ -79,7 +79,7 @@ data:
 
 Analyseer de resultaten van de `publish-auth-requests` regel door de logboeken AEMCS CDN van Cloud Manager te downloaden en het [ dashboard tooling ](how-to-setup.md#analyze-results-using-elk-dashboard-tool) te gebruiken, die u opstelling in het vroegere hoofdstuk.
 
-- Van [ de 2} kaart van de Milieu&#39;s van Cloud Manager ](https://my.cloudmanager.adobe.com/) **, download de 4} van AEMCS {** dienst CDN van de dienst van Publish.****
+- Van [ Cloud Manager ](https://my.cloudmanager.adobe.com/) **de kaart van Milieu&#39;s**, download de **publiceren** CDN van de dienst van AEMCS logboeken.
 
   ![ Cloud Manager CDN Logs Downloads ](./assets/cloud-manager-cdn-log-downloads.png)
 
@@ -140,7 +140,7 @@ data:
 
 - Leg de wijzigingen vast en duw deze naar de Cloud Manager Git-opslagplaats.
 
-- Stel de veranderingen in het milieu van de AEM Dev op gebruikend de [ vroeger gecreeerd ](how-to-setup.md#deploy-rules-through-cloud-manager) `Dev-Config` configuratiepijplijn in Cloud Manager.
+- Stel de veranderingen in het milieu van AEM Dev op gebruikend de [ vroeger gecreeerd ](how-to-setup.md#deploy-rules-through-cloud-manager) `Dev-Config` configuratiepijplijn in Cloud Manager.
 
 - Test de regel door de interne pagina van de WKND-site te openen, bijvoorbeeld `https://publish-pXXXX-eYYYY.adobeaemcloud.com/content/wknd/internal/demo-page.html` of met de onderstaande CURL-opdracht:
 
@@ -200,7 +200,7 @@ data:
 - Om de aanval van Dos te simuleren, gebruik het volgende [ bevel van Vegeta ](https://github.com/tsenart/vegeta).
 
   ```shell
-  $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=5s | vegeta report
+  $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=60s | vegeta report
   ```
 
   Dit bevel maakt 120 verzoeken om 5 seconden en output een rapport. Zoals u kunt zien, is het succestarief 32.5%; een 406 de reactiecode van HTTP wordt ontvangen voor de rest, die aantoont dat het verkeer werd geblokkeerd.
@@ -225,13 +225,13 @@ Voor meer informatie over hoe te om aanvallen te verhinderen DoS en DDoS, herzie
 
 De de regelvoorbeelden van de verkeersfilter tot nu toe kunnen door alle Sites en klanten van Forms worden gevormd.
 
-Daarna, onderzoeken wij de ervaring voor een klant die een vergunning van de Bescherming van Uitgebreide Veiligheid of WAF-DDoS heeft verworven, die hen geavanceerde regels laat vormen om websites tegen verfijnde aanvallen te beschermen.
+Daarna, onderzoeken wij de ervaring voor een klant die een vergunning van de Bescherming van de Verbeterde Veiligheid of van WAF-DDoS heeft verworven, die hen geavanceerde regels laat vormen om websites tegen verfijnde aanvallen te beschermen.
 
-Alvorens verder te gaan, laat de bescherming WAF-DDoS voor uw programma toe, zoals die in de documentatie van de verkeersfilterregels [ opstellingsstappen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup) wordt beschreven.
+Alvorens verder te gaan, laat de bescherming van WAF-DDoS voor uw programma toe, zoals die in de documentatie van de verkeersfilterregels [ opstellingsstappen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup) wordt beschreven.
 
 #### Zonder WAFFlags
 
-Laten we eerst de ervaring zien, zelfs voordat WAF Rules wordt gedeclareerd. Wanneer WAF-DDoS op uw programma wordt toegelaten, registreert uw CDN door standaardlogboek om het even welke gelijken van kwaadwillig verkeer, zodat hebt u de juiste informatie om omhoog met aangewezen regels te komen.
+Laten we eerst de ervaring zien, zelfs voordat WAF Rules wordt gedeclareerd. Wanneer WAF-DDoS op uw programma wordt toegelaten, registreert uw CDN door gebrek om het even welke gelijken van kwaadwillig verkeer, zodat hebt u de juiste informatie om omhoog met aangewezen regels te komen.
 
 Laten we eerst de WKND-site aanvallen zonder een WAF-regel toe te voegen (of de eigenschap `wafFlags` te gebruiken) en de resultaten analyseren.
 
@@ -251,20 +251,20 @@ Om de resultaten van aanvalssimulatie te analyseren, volg de zelfde stappen zoal
 
 Nochtans, zou dit keer u de **Gemarkeerde verzoeken** en overeenkomstige waarden in cliëntIP (cli_ip), gastheer, url, actie (waf_action), en regel-name (waf_match) kolommen moeten zien. Met deze informatie kunt u de resultaten analyseren en de regelconfiguratie optimaliseren.
 
-![ het Dashboard van het Hulpmiddel van het KIEZEN WAF Vlaged Verzoek ](./assets/elk-tool-dashboard-waf-flagged.png)
+![ het Dashboard van het Hulpmiddel van het KIEZEN WAF Gemarkeerd Verzoek ](./assets/elk-tool-dashboard-waf-flagged.png)
 
 Merk op hoe de **distributie van de Vlaggen van WAF** en **Hoogste aanvallen** panelen extra details tonen, die kunnen worden gebruikt om de regelconfiguratie verder te optimaliseren.
 
-![ Verzoek van de Aanvallen van de Vlaggen van het Hulpmiddel van het Hulpmiddel van het KIEZEN ](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
+![ het Dashboard van het Hulpmiddel van het Hulpmiddel WAF het Verzoek van de Aanvallen van de Vlaggen ](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
 
-![ het Dashboard van het Hulpmiddel van het Hulpmiddel van het KIEZEN het Hoogste Verzoek van de Aanvallen WAF ](./assets/elk-tool-dashboard-waf-flagged-top-attacks-2.png)
+![ het Dashboard van het Hulpmiddel van het Hulpmiddel WAF het Hoogste Aanvraag van Aanvallen ](./assets/elk-tool-dashboard-waf-flagged-top-attacks-2.png)
 
 
 #### Met WAFFlags
 
 Voeg nu een regel van WAF toe die `wafFlags` bezit als deel van het `action` bezit bevat en **blokkeer de gesimuleerde aanvalsverzoeken**.
 
-Vanuit syntaxisperspectief zijn de WAF-regels vergelijkbaar met die van eerder, maar de eigenschap `action` verwijst naar een of meer `wafFlags` -waarden. Meer over `wafFlags` leren, herzie de [ sectie van de Lijst van de Vlaggen van WAF ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list).
+Vanuit syntaxisoogpunt zijn de WAF-regels vergelijkbaar met die van eerdere versies, maar de eigenschap `action` verwijst naar een of meer `wafFlags` -waarden. Meer over `wafFlags` leren, herzie de [ sectie van de Lijst van de Vlaggen van WAF ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list).
 
 - Voeg de volgende regel toe in het WKND-projectbestand `/config/cdn.yaml` . De regel `block-waf-flags` bevat enkele wafFlags die in de dashboardwerkset waren weergegeven toen deze met gesimuleerd kwaadaardig verkeer werden aangevallen. Het is inderdaad een goede praktijk om logboeken te analyseren om te bepalen welke nieuwe regels moeten worden verklaard, aangezien het bedreigingslandschap evolueert.
 
@@ -321,13 +321,13 @@ Herhaal de zelfde stappen zoals die in het [ worden beschreven vroeger voorbeeld
 
 Dit keer zou u ingangen onder **Geblokkeerde verzoeken** en de overeenkomstige waarden in cliëntIP (cli_ip), gastheer, url, actie (waf_action), en regel-name (waf_match) kolommen moeten zien.
 
-![ Geblokkeerd Verzoek van het Dashboard van het Hulpmiddel van het ELK ](./assets/elk-tool-dashboard-waf-blocked.png)
+![ het Dashboard van het Hulpmiddel van het Hulpmiddel WAF Geblokkeerd Verzoek ](./assets/elk-tool-dashboard-waf-blocked.png)
 
 Ook, tonen de **distributie van de Vlaggen van WAF** en **Hoogste aanvallen** panelen extra details.
 
-![ Verzoek van de Aanvallen van de Vlaggen van het Hulpmiddel van het Hulpmiddel van het KIEZEN ](./assets/elk-tool-dashboard-waf-blocked-top-attacks-1.png)
+![ het Dashboard van het Hulpmiddel van het Hulpmiddel WAF het Verzoek van de Aanvallen van de Vlaggen ](./assets/elk-tool-dashboard-waf-blocked-top-attacks-1.png)
 
-![ het Dashboard van het Hulpmiddel van het Hulpmiddel van het KIEZEN het Hoogste Verzoek van de Aanvallen WAF ](./assets/elk-tool-dashboard-waf-blocked-top-attacks-2.png)
+![ het Dashboard van het Hulpmiddel van het Hulpmiddel WAF het Hoogste Aanvraag van Aanvallen ](./assets/elk-tool-dashboard-waf-blocked-top-attacks-2.png)
 
 ### Uitgebreide analyse
 
@@ -335,9 +335,9 @@ In de bovengenoemde _analyse_ secties, leerde u hoe te om de resultaten van spec
 
 
 - Geanalyseerde, gemarkeerde en geblokkeerde aanvragen
-- WAF Vlaggen worden in de loop der tijd gedistribueerd
+- WAF-vlagverdeling in de tijd
 - Regels voor gestuurde verkeersfilters in de loop der tijd
-- Bovenste aanvallen door WAF-vlaggen-id
+- Bovenste aanvallen door WAF Flag ID
 - Bovenste getriggerde verkeersfilter
 - De hoogste 100 aanvallers door cliëntIP, land, en gebruiker-agent
 

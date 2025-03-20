@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 67091c068634e6c309afaf78942849db626128f6
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 0%
@@ -21,24 +21,24 @@ ht-degree: 0%
 
 # Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter
 
-Leer hoe te ontkenning van de Dienst (Dos) en Verspreide Ontkenning van de aanvallen van de Dienst (DDoS) gebruikend **regels van de het verkeersfilter van de tariefgrens 1} en andere strategieën bij AEM as a Cloud Service (AEMCS) beheerde CDN blokkeren.** Deze aanvallen veroorzaken verkeerspikes bij CDN en potentieel bij de dienst van AEM Publish (alias oorsprong) en kunnen plaatsontvankelijkheid en beschikbaarheid beïnvloeden.
+Leer hoe te ontkenning van de Dienst (Dos) en Verspreide Ontkenning van de aanvallen van de Dienst (DDoS) gebruikend **regels van de het verkeersfilter van de tariefgrens 1} en andere strategieën bij AEM as a Cloud Service (AEMCS) beheerde CDN blokkeren.** Deze aanvallen veroorzaken verkeerspikes bij CDN en potentieel bij de de Publish dienst van AEM (alias oorsprong) en kunnen plaatsontvankelijkheid en beschikbaarheid beïnvloeden.
 
 Dit leerprogramma dient als gids op _hoe te om uw verkeerspatronen te analyseren en tariefgrens [ regels van de verkeersfilter ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) te vormen_ om die aanvallen te verlichten. Het leerprogramma beschrijft ook hoe te om [ alarm ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) te vormen zodat u wordt meegedeeld wanneer er een vermoedelijke aanval is.
 
 ## Bescherming
 
-Laten we de standaard DoS-beveiliging voor uw AEM website begrijpen:
+Laten we de standaard DoS-beveiliging voor uw AEM-website begrijpen:
 
 - **Caching:** met goed caching beleid, is het effect van een aanval DDoS beperkter omdat CDN de meeste verzoeken verhindert naar de oorsprong te gaan en prestatiesdegradatie te veroorzaken.
-- **Autoscaling:** de AEM auteur en publiceert de diensten autoscale om verkeerspikes te behandelen, hoewel zij nog door plotselinge, massale verhogingen van verkeer kunnen worden beïnvloed.
-- **Blokkerend:** de Adobe CDN blokkeert verkeer aan de oorsprong als het een Adobe-bepaald tarief van een bepaald IP adres, per CDN PoP (Punt van Aanwezigheid) overschrijdt.
+- **Autoscaling:** de auteur en publiceert de diensten autoscale van AEM om verkeerspikes te behandelen, hoewel zij nog door plotselinge, massale verhogingen van verkeer kunnen worden beïnvloed.
+- **Blokkerend:** Adobe CDN blokkeert verkeer aan de oorsprong als het een Adobe-bepaald tarief van een bepaald IP adres, per CDN PoP (Punt van Aanwezigheid) overschrijdt.
 - **het Alarm:** het Centrum van Acties verzendt een verkeerspiek bij het bericht van de oorsprongsalarm wanneer het verkeer een bepaald tarief overschrijdt. Deze waakzame brand weg wanneer het verkeer aan om het even welk bepaalde CDN PoP een _Adobe-bepaalde_ verzoektarief per IP adres overschrijdt. Zie [ Alarm van de Regels van de Filter van het Verkeer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) voor meer details.
 
 Deze ingebouwde bescherming zou als basislijn voor de capaciteit van een organisatie moeten worden beschouwd om het prestatieseffect van een aanval te minimaliseren DDoS. Aangezien elke website verschillende prestatieskenmerken heeft en kan zien dat de prestatiesdegradatie alvorens de Adobe-bepaalde tariefgrens wordt voldaan, wordt het geadviseerd om de standaardbescherming door _klantenconfiguratie_ uit te breiden.
 
 Laten we eens kijken naar enkele aanvullende, aanbevolen maatregelen die klanten kunnen nemen om hun websites te beschermen tegen aanvallen van Digital Publishing Suite:
 
-- Declareer **de regels van de het verkeersfilter van de tariefgrens** om verkeer te blokkeren dat een bepaald tarief van één enkel IP adres, per PoP overschrijdt. Dit is doorgaans een lagere drempelwaarde dan de door de Adobe gedefinieerde tarieflimiet.
+- Declareer **de regels van de het verkeersfilter van de tariefgrens** om verkeer te blokkeren dat een bepaald tarief van één enkel IP adres, per PoP overschrijdt. Dit is doorgaans een lagere drempelwaarde dan de door Adobe gedefinieerde tarieflimiet.
 - Vorm **alarm** op de regels van de het verkeersfilter van de tariefgrens door een &quot;waakzame actie&quot;zodat wanneer de regel wordt teweeggebracht, wordt een bericht van het Centrum van Acties verzonden.
 - Verhoog geheim voorgeheugendekking door **verzoektransformaties** te verklaren om vraagparameters te negeren.
 
@@ -53,7 +53,7 @@ Er zijn twee variaties van tarief grensverkeersregels:
 
 De onderstaande stappen weerspiegelen het proces dat klanten waarschijnlijk zullen doorlopen om hun websites te beschermen.
 
-1. Erken de behoefte aan een regel van de het verkeersfilter van de snelheidsbeperking. Dit kan het gevolg zijn van het ontvangen van de uit-van-de-doos verkeersopwinding bij oorsprongsalarm van de Adobe, of het kan een pro-actieve beslissing zijn om voorzorgsmaatregelen te nemen om het risico van een succesvolle DDoS te verminderen.
+1. Erken de behoefte aan een regel van de het verkeersfilter van de snelheidsbeperking. Dit kan het gevolg zijn van het ontvangen van een Adobe-verkeersspike buiten de doos bij de oorsprongswaarschuwing, of het kan een pro-actieve beslissing zijn om voorzorgsmaatregelen te nemen om het risico van een succesvolle DDoS te verminderen.
 1. Analyseer verkeerspatronen gebruikend een dashboard, als uw plaats reeds levend is, om de optimale drempels voor uw regels van de de filterfilter van de tariefgrens te bepalen. Als uw site nog niet actief is, kiest u waarden op basis van uw verkeersverwachtingen.
 1. Gebruikend de waarden van de vorige stap, vorm de regels van de de filterfilter van de snelheidsgrensverkeer. Zorg ervoor dat u de bijbehorende waarschuwingen inschakelt, zodat u op de hoogte wordt gesteld wanneer de drempelwaarde is bereikt.
 1. Ontvang berichten van de de filterregels van het verkeersfilter wanneer de verkeerspikes voorkomen, die u van waardevol inzicht voorzien over of uw organisatie potentieel door kwaadwillige actoren wordt gericht.
@@ -63,11 +63,11 @@ De rest van deze zelfstudie begeleidt u door dit proces.
 
 ## Het erkennen van de behoefte om regels te vormen {#recognize-the-need}
 
-Zoals eerder vermeld, blokkeert de Adobe door gebrek verkeer bij CDN die een bepaald tarief overschrijdt, echter, sommige websites kunnen degraded prestaties onder die drempel ervaren. Aldus, zouden de regels van de het verkeersfilter van de tariefgrens moeten worden gevormd.
+Zoals eerder vermeld, blokkeert Adobe door gebrek verkeer bij CDN dat een bepaald tarief overschrijdt, echter, sommige websites kunnen degraded prestaties onder die drempel ervaren. Aldus, zouden de regels van de het verkeersfilter van de tariefgrens moeten worden gevormd.
 
 Idealiter configureert u de regels voordat u live gaat naar productie. In de praktijk, verklaren vele organisaties reactief regels slechts één keer gealarmeerd aan een verkeerspiek die op een waarschijnlijke aanval wijst.
 
-De Adobe verzendt een verkeerspiek bij oorsprongsalarm als [ Bericht van het Centrum van Acties ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center) wanneer een standaarddrempel van verkeer van één enkel IP adres, voor bepaalde PoP wordt overschreden. Als u zulk een alarm ontving, wordt het geadviseerd om een regel van de de verkeersfilter van de tariefgrens te vormen. Dit standaardalarm is verschillend van het alarm dat uitdrukkelijk door klanten moet worden toegelaten wanneer het bepalen van de regels van de verkeersfilter, die u over in een toekomstige sectie zult leren.
+Adobe verzendt een verkeerspiek bij oorsprongsalarm als [ Bericht van het Centrum van Acties ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center) wanneer een standaarddrempel van verkeer van één enkel IP adres, voor bepaalde PoP wordt overschreden. Als u zulk een alarm ontving, wordt het geadviseerd om een regel van de de verkeersfilter van de tariefgrens te vormen. Dit standaardalarm is verschillend van het alarm dat uitdrukkelijk door klanten moet worden toegelaten wanneer het bepalen van de regels van de verkeersfilter, die u over in een toekomstige sectie zult leren.
 
 ## Verkeerspatronen analyseren {#analyze-traffic}
 
@@ -81,12 +81,12 @@ Vorm het dashboard tooling gebruikend _één van de volgende opties_:
 
 ### ELK - dashboardgereedschappen configureren
 
-De **Elasticsearch, Logstash, en Kibana (ELK)** dashboardtooling die door Adobe wordt verstrekt kan worden gebruikt om de CDN- logboeken te analyseren. Dit tooling omvat een dashboard dat de verkeerspatronen visualiseert, makend het gemakkelijker om de optimale drempels voor uw regels van de de filterfilter van de tariefgrens te bepalen.
+Het **Elasticsearch, Logstash, en Kibana (ELK)** dashboardhulpmiddel dat door Adobe wordt verstrekt kan worden gebruikt om de CDN- logboeken te analyseren. Dit tooling omvat een dashboard dat de verkeerspatronen visualiseert, makend het gemakkelijker om de optimale drempels voor uw regels van de de filterfilter van de tariefgrens te bepalen.
 
 - Kloon de [ AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats GitHub.
 - Opstelling het tooling door [ te volgen hoe te opstelling de de container ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) stappen van de container van het Docker ELK.
 - Als onderdeel van de instelling importeert u het `traffic-filter-rules-analysis-dashboard.ndjson` -bestand om de gegevens te visualiseren. Het _dashboard van het Verkeer 0} CDN {omvat visualisaties die het maximumaantal verzoeken per IP/POP bij CDN Edge en Oorsprong tonen._
-- Van de [ 2} kaart van de Milieu&#39;s van Cloud Manager ](https://my.cloudmanager.adobe.com/) _, download de CDN van CDN van de dienst van AEMCS Publish._
+- Van de [ 2} kaart van de Milieu&#39;s van Cloud Manager ](https://my.cloudmanager.adobe.com/) _, download de AEMCS CDN van de Publish dienst van CDN._
 
   ![ Cloud Manager CDN Logs Downloads ](./assets/cloud-manager-cdn-log-downloads.png)
 
@@ -142,7 +142,7 @@ Als uw site nog niet actief is, zijn er geen gegevens om te analyseren en moet u
 
 Vorm de **regels van de het verkeersfilter van de tariefgrens** in het dossier van uw AEM project `/config/cdn.yaml`, met waarden die op de bespreking hierboven worden gebaseerd. Indien nodig, raadpleeg uw team van de Veiligheid van het Web om ervoor te zorgen de tariefgrenswaarden aangewezen zijn en geen wettig verkeer blokkeren.
 
-Verwijs naar [ tot regels in uw AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#create-rules-in-your-aem-project) voor meer details leiden.
+Verwijs naar [ creeer regels in uw project van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#create-rules-in-your-aem-project) voor meer details.
 
 ```yaml
 kind: CDN
@@ -247,12 +247,12 @@ Om een aanval te simuleren, kunnen de hulpmiddelen zoals [ Apache Benchmark ](ht
 Gebruikend het volgende [ bevel van groente ](https://github.com/tsenart/vegeta) kunt u vele verzoeken aan uw website doen:
 
 ```shell
-$ echo "GET https://<YOUR-WEBSITE-DOMAIN>" | vegeta attack -rate=120 -duration=5s | vegeta report
+$ echo "GET https://<YOUR-WEBSITE-DOMAIN>" | vegeta attack -rate=120 -duration=60s | vegeta report
 ```
 
 Het bovenstaande bevel maakt 120 verzoeken om 5 seconden en output een rapport. Ervan uitgaande dat de snelheid van de website niet beperkt is, kan dit tot een toename van het verkeer leiden.
 
 ### Oorsprongsverzoeken
 
-Als u de CDN-cache wilt overslaan en aanvragen wilt indienen bij de oorspronkelijke server (AEM Publish-service), kunt u een unieke queryparameter aan de URL toevoegen. Verwijs naar het manuscript van steekproefApache JMeter van de [ Simulate Dos- aanval gebruikend manuscript JMeter ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection#simulate-dos-attack-using-jmeter-script)
+Als u de CDN-cache wilt overslaan en aanvragen bij de oorspronkelijke server wilt indienen (AEM-publicatieservice), kunt u een unieke queryparameter aan de URL toevoegen. Verwijs naar het manuscript van steekproefApache JMeter van de [ Simulate Dos- aanval gebruikend manuscript JMeter ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection#simulate-dos-attack-using-jmeter-script)
 
